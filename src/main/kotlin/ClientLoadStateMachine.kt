@@ -215,8 +215,8 @@ object ClientLoadStateMachine {
             method3038(-1)
             method4011(i + 29684, GraphicsOptionState.aClass45_3146)
             Class348_Sub29.method3004(RasterSprite.aClass45_5207, false, Class348_Sub40_Sub4.aRenderConfig9113)
-            val class296 = Class296(SceneTilePlaneManager.aClass45_233!!.method391("huffman", "", -29832)!!)
-            method3896(class296, 13.toByte())
+            val huffmanCodec = HuffmanCodec(SceneTilePlaneManager.aClass45_233!!.method391("huffman", "", -29832)!!)
+            method3896(huffmanCodec, 13.toByte())
             try {
                 init()
             } catch (throwable: Throwable) {

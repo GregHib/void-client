@@ -1001,7 +1001,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 class64_sub2_154_.aBufferToggleState_5482!!.aBoolean3709 = true
                 class64_sub2_154_.aBufferToggleState_5482!!.aBoolean3714 = aBufferToggleState_5482!!.aBoolean3714
                 class64_sub2_154_.aBufferToggleState_5482!!.anInterface5_Impl1_3711 = aBufferToggleState_5482!!.anInterface5_Impl1_3711
-            } else if (Class296.method2224(i, 117.toByte(), anInt5472)) class64_sub2_154_.aBufferToggleState_5482 = aBufferToggleState_5482
+            } else if (HuffmanCodec.method2224(i, 117.toByte(), anInt5472)) class64_sub2_154_.aBufferToggleState_5482 = aBufferToggleState_5482
             else class64_sub2_154_.aBufferToggleState_5482 = null
             if (LocalizedText.method2058(i, anInt5472, 116)) {
                 if (class64_sub2_153_!!.aShortArray5493 == null || (anInt5475 > class64_sub2_153_.aShortArray5493!!.size)) {
@@ -3347,7 +3347,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             aHa_Sub3_5419 = var_ha_Sub3
             if (bool || ServerConnectionInfo.method1258(anInt5463, -9301, anInt5472)) aBufferToggleState_5520 = BufferToggleState(CompassSmoother.method2015(anInt5463, anInt5472, 7))
             if (bool || method1837(anInt5472, 102, anInt5463)) aBufferToggleState_5460 = BufferToggleState(ParticleDefLoader.method1379(4, anInt5472, anInt5463))
-            if (bool || Class296.method2224(anInt5463, 110.toByte(), anInt5472)) aBufferToggleState_5482 = BufferToggleState(Class348_Sub42_Sub8_Sub2.method3200(anInt5463, anInt5472, (-82).toByte()))
+            if (bool || HuffmanCodec.method2224(anInt5463, 110.toByte(), anInt5472)) aBufferToggleState_5482 = BufferToggleState(Class348_Sub42_Sub8_Sub2.method3200(anInt5463, anInt5472, (-82).toByte()))
             if (bool || GlowPostProcessor.method1412((-35).toByte(), anInt5472, anInt5463)) aBufferToggleState_5424 = BufferToggleState(Crc64Hashable.method1113(anInt5463, anInt5472, -21))
             if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aAsyncTaskHandle_5485 = AsyncTaskHandle(Class348_Sub9.method2783(anInt5472, (-97).toByte(), anInt5463))
         } catch (runtimeexception: RuntimeException) {

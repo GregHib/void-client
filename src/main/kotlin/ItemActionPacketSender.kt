@@ -20,7 +20,7 @@ object ItemActionPacketSender {
         anInt2108++
         if (i < 69) ItemActionPacketSender.method1236((-52).toByte())
         if (RenderNode.aBoolean9722) {
-            Class296.anInt3775++
+            HuffmanCodec.anInt3775++
             if (class46.anObjectArray679 != null) {
                 val class46_0_ = Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                 if (class46_0_ != null) {

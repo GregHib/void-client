@@ -718,7 +718,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class93.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 FogOptionState.anInt6048 = 2
-                                Class296.anInt3768++
+                                HuffmanCodec.anInt3768++
                                 Class348.anInt4292 = 0
                                 val class348_sub47 = method2148((ConfigFlagUtil.aClass351_3232), (Class348_Sub23_Sub2.aClass77_9029), -84)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -128)) 0 else 1))

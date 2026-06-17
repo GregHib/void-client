@@ -444,7 +444,7 @@ public abstract class Class64 {
         @JvmField
         var anInt1130: Int = 0
         @JvmField
-        var aClass296_1131: Class296? = null
+        var aHuffmanCodec_1131: HuffmanCodec? = null
         @JvmField
         var anInt1132: Int = 0
         @JvmField
@@ -538,7 +538,7 @@ public abstract class Class64 {
         @JvmStatic
         fun method609(i: Byte) {
             if (i <= -7) {
-                aClass296_1131 = null
+                aHuffmanCodec_1131 = null
                 anIntArray1127 = null
             }
         }

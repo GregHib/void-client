@@ -54,7 +54,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
         fun method3200(i: Int, i_0_: Int, i_1_: Byte): Boolean {
             anInt10433++
             val i_2_ = 18 / ((i_1_ - 30) / 42)
-            if (!Class296.method2224(i, (-118).toByte(), i_0_)) return false
+            if (!HuffmanCodec.method2224(i, (-118).toByte(), i_0_)) return false
             if (DetailLevelOptionState.method1833((-118).toByte(), i, i_0_) or ((0x9000 and i) != 0) or Class348_Sub23_Sub4.method2985(-31735, i_0_, i)) return true
             return (((0x37 and i_0_) == 0) and (((0x2000 and i) != 0) or LocalizedText.method2058(i, i_0_, 88) or method3203(i_0_, 127.toByte(), i)))
         }
@@ -357,7 +357,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class348_Sub3.aIntRange_6584 == Class296.aIntRange_3773) {
+            if (Class348_Sub3.aIntRange_6584 == HuffmanCodec.aIntRange_3773) {
                 Class348_Sub40_Sub34.method3141(false, 11.toByte())
                 Class348_Sub3.aIntRange_6584 = null
                 return false

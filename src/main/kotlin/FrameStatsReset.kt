@@ -267,7 +267,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             IntRange.anInt1748 = 0
             Class64_Sub2.anInt5417 = 0
             Class98.anInt1570 = 0
-            Class296.anInt3775 = 0
+            HuffmanCodec.anInt3775 = 0
             LoadingBarRenderer.anInt5049 = 0
             NoOpGraphicsOptionState.anInt6045 = 0
             Class377.anInt9854 = 0
@@ -572,7 +572,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub23_Sub4.anInt9049 = 0
             NpcDefinitionCache.anInt3313 = 0
             LocalizedText.anInt3480 = 0
-            Class296.anInt3770 = 0
+            HuffmanCodec.anInt3770 = 0
             Class42.anInt608 = 0
             NativeRenderer.anInt7997 = 0
             GlSpriteRenderer.anInt8448 = 0
@@ -683,7 +683,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7600 = 0
             GameAppletFrame.anInt4 = 0
             Class348_Sub43.anInt7078 = 0
-            Class296.anInt3771 = 0
+            HuffmanCodec.anInt3771 = 0
             GlTexture.anInt4853 = 0
             Npc.anInt10513 = 0
             Class355.anInt4371 = 0
@@ -2040,7 +2040,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             HudTabPanel.anInt2994 = 0
             MapAreaDefinition.anInt2532 = 0
             Npc.anInt10514 = 0
-            Class296.anInt3765 = 0
+            HuffmanCodec.anInt3765 = 0
             Class348_Sub40.anInt7029 = 0
             GlRectangleTexture.anInt8635 = 0
             Class46.anInt837 = 0
@@ -2270,7 +2270,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub6.anInt9539 = 0
             Class377.anInt9828 = 0
             ClanChatRequestSender.anInt3645 = 0
-            Class296.anInt3768 = 0
+            HuffmanCodec.anInt3768 = 0
             ShadowQualityOptionState.anInt6007 = 0
             Class5_Sub2.anInt8362 = 0
             Class348_Sub16_Sub3.anInt8917 = 0
@@ -3005,7 +3005,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub3.anInt5574 = 0
             Class377.anInt9887 = 0
             OpenGlRenderer.anInt7649 = 0
-            Class296.anInt3772 = 0
+            HuffmanCodec.anInt3772 = 0
             Client.anInt5188 = 0
             Class348_Sub18.anInt6807 = 0
             OpenGlRenderer.anInt7726 = 0

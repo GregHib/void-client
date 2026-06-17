@@ -1268,7 +1268,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                     if (TextureGenerator.aBoolean2492) i_305_ = i_305_ or 0x2
                     if (Class369.aBoolean4972) i_306_ = i_306_ or 0x8
                     if (CutsceneSequenceData.anInt3720 != 0) {
-                        if ((i_304_ == 0) or Class296.aBoolean3767) i_306_ = i_306_ or 0x10
+                        if ((i_304_ == 0) or HuffmanCodec.aBoolean3767) i_306_ = i_306_ or 0x10
                         i_305_ = i_305_ or 0x1
                     }
                 }

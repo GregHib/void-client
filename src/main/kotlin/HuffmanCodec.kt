@@ -5,7 +5,7 @@ import Class369_Sub1.Companion.method3570
 /* Class296 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class296 internal constructor(`is`: ByteArray) {
+class HuffmanCodec internal constructor(`is`: ByteArray) {
     private val anIntArray3766: IntArray
     private val aByteArray3769: ByteArray
     private var anIntArray3774: IntArray?

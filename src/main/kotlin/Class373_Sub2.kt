@@ -248,7 +248,7 @@ class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseLis
                 var i_12_ = class348_sub49!!.readSmart(-122)
                 if (i < i_12_) i_12_ = i
                 val `is` = ByteArray(i_12_)
-                class348_sub49.anInt7197 += (Class64.aClass296_1131!!.method2226(`is`, class348_sub49.anInt7197, class348_sub49.aByteArray7154, i_12_, -1, 0))
+                class348_sub49.anInt7197 += (Class64.aHuffmanCodec_1131!!.method2226(`is`, class348_sub49.anInt7197, class348_sub49.aByteArray7154, i_12_, -1, 0))
                 val string = Class367_Sub8.method3546(`is`, 0, i_12_, 0)
                 return string
             } catch (exception: Exception) {

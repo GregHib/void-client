@@ -2966,15 +2966,15 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
 
         @JvmStatic
-        fun method3896(class296: Class296?, i: Byte) {
+        fun method3896(huffmanCodec: HuffmanCodec?, i: Byte) {
             do {
                 try {
                     anInt8028++
-                    Class64.aClass296_1131 = class296
+                    Class64.aHuffmanCodec_1131 = huffmanCodec
                     if (i.toInt() == 13) break
                     method3873(null, -3)
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("wga.DI(" + (if (class296 != null) "{...}" else "null") + ',' + i + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("wga.DI(" + (if (huffmanCodec != null) "{...}" else "null") + ',' + i + ')'))
                 }
                 break
             } while (false)

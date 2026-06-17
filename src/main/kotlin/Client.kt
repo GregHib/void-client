@@ -220,8 +220,8 @@ import CutsceneSequenceData.Companion.method2199
 import MapArchiveSource.Companion.method2202
 import LoadingBarRenderer.Companion.method2214
 import LocalizedTextTriple.Companion.method2223
-import Class296.Companion.method2225
-import Class296.Companion.method2228
+import HuffmanCodec.Companion.method2225
+import HuffmanCodec.Companion.method2228
 import Class298.method2251
 import Class299.Companion.method2254
 import Class299_Sub1_Sub2.Companion.method2265
