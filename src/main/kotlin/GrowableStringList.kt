@@ -116,7 +116,7 @@ class GrowableStringList internal constructor(private val anInt2365: Int, bool: 
                         if (string_4_ == null || string_4_ != "1") {
                             val class144 = method2862(class297, string, -117, 0)
                             Class318_Sub1_Sub5.aLinkedQueueNode_8766 = class144
-                            Class195.aClass297_5017 = class297
+                            RenderableGroup.aClass297_5017 = class297
                             Class348_Sub42_Sub8.aString9554 = string
                             return
                         }

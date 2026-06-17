@@ -5,7 +5,7 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
     override fun method2382(i: Byte): Boolean {
         if (i > -51) return false
         anInt8733++
-        val class148 = Class195.method1449(this.plane.toInt(), (this.x shr Class362.anInt4459), (this.y shr Class362.anInt4459))
+        val class148 = RenderableGroup.method1449(this.plane.toInt(), (this.x shr Class362.anInt4459), (this.y shr Class362.anInt4459))
         if (class148 == null || !class148.aClass318_Sub1_Sub3_2040!!.aBoolean8741) return IndexedSprite.method164(this.plane.toInt(), (this.x shr Class362.anInt4459), (-97).toByte(), (this.y shr Class362.anInt4459))
         return (MinimapSpriteRenderer.method1110(this.y shr Class362.anInt4459, class148.aClass318_Sub1_Sub3_2040!!.method2394(true) + this.method2394(true), this.plane.toInt(), (-79).toByte(), this.x shr Class362.anInt4459))
     }

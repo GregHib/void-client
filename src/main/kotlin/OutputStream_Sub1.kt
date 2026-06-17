@@ -60,7 +60,7 @@ class OutputStream_Sub1 : OutputStream() {
                     var i_4_ = Class76.aFloat1287.toInt()
                     if (Class348_Sub35.anInt6979 shr 8 > i_4_) i_4_ = Class348_Sub35.anInt6979 shr 8
                     if (SpotAnimDefinition.aBooleanArray2374!![4] && Class255.anIntArray3273!![4] + 128 > i_4_) i_4_ = Class255.anIntArray3273!![4] + 128
-                    val i_5_ = Class314.aFloat3938.toInt() + Class195.anInt5016 and 0x3fff
+                    val i_5_ = Class314.aFloat3938.toInt() + RenderableGroup.anInt5016 and 0x3fff
                     Class17.method268(i_4_, -200 + (Class275.method2064((LocalPlayerState.aPlayer_1907!!.x), Class355.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_5_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, (i_4_ shr 3) * 3 + 600 shl 2)
                 } else if (Class348_Sub40_Sub21.anInt9282 == 4) {
                     var i_6_ = Class76.aFloat1287.toInt()

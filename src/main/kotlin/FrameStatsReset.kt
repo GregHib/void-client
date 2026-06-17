@@ -605,7 +605,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class217.anInt2843 = 0
             Class318_Sub1_Sub5_Sub1.anInt10146 = 0
             Class66.anInt1162 = 0
-            Class195.anInt5009 = 0
+            RenderableGroup.anInt5009 = 0
             Class294.anInt5048 = 0
             Class66.anInt1165 = 0
             Class273.anInt5166 = 0
@@ -739,7 +739,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class258_Sub4.anInt8554 = 0
             Class64_Sub3.anInt5588 = 0
             Class348.anInt4287 = 0
-            Class195.anInt5004 = 0
+            RenderableGroup.anInt5004 = 0
             Class367_Sub11.anInt7409 = 0
             Class64_Sub3.anInt5616 = 0
             OpenGlRenderer.anInt7686 = 0
@@ -1062,7 +1062,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub2.anInt9097 = 0
             Class46.anInt712 = 0
             Class348_Sub23_Sub4.anInt9047 = 0
-            Class195.anInt5008 = 0
+            RenderableGroup.anInt5008 = 0
             Class348_Sub4.anInt6593 = 0
             Class239_Sub13.anInt5978 = 0
             Class318_Sub1_Sub3_Sub4.anInt10357 = 0
@@ -1649,7 +1649,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7606 = 0
             Class348_Sub49_Sub2.anInt9766 = 0
             HitsplatDefinition.anInt2017 = 0
-            Class195.anInt5014 = 0
+            RenderableGroup.anInt5014 = 0
             Class64_Sub3.anInt5582 = 0
             Class239_Sub11.anInt5952 = 0
             Class45.anInt663 = 0
@@ -1864,7 +1864,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class286_Sub8.anInt6300 = 0
             Class237_Sub1.anInt5815 = 0
             Class348_Sub40_Sub34.anInt9437 = 0
-            Class195.anInt5018 = 0
+            RenderableGroup.anInt5018 = 0
             Class318_Sub1_Sub1_Sub2.anInt9982 = 0
             Class318.anInt3972 = 0
             VarpStore.anInt5079 = 0
@@ -1960,7 +1960,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TextureDefinitionLoader.anInt1968 = 0
             Class377.anInt9865 = 0
             Class285.anInt4758 = 0
-            Class195.anInt5003 = 0
+            RenderableGroup.anInt5003 = 0
             Class234.anInt3045 = 0
             Class348_Sub49_Sub2.anInt9760 = 0
             Class16.anInt234 = 0
@@ -2499,7 +2499,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class48.anInt848 = 0
             OpenGlRenderer.anInt7589 = 0
             Class348_Sub13.anInt6754 = 0
-            Class195.anInt5005 = 0
+            RenderableGroup.anInt5005 = 0
             Class237.anInt3115 = 0
             Class361.anInt4432 = 0
             Player.anInt10563 = 0
@@ -4114,7 +4114,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class260.anInt3310 = -55 + (Math.random() * 110.0).toInt()
             Class314.aFloat3938 = (0x3fff and -80 + (160.0 * Math.random()).toInt()).toFloat()
             Class348_Sub49_Sub1.anInt9750 = (30.0 * Math.random()).toInt() + -20
-            Class195.anInt5016 = (80.0 * Math.random()).toInt() - 40
+            RenderableGroup.anInt5016 = (80.0 * Math.random()).toInt() - 40
             Class20.anInt319 = (Math.random() * 100.0).toInt() - 50
             method3089(-126)
             for (k in 0..2047) Class294.aPlayerArray5058!![k] = null

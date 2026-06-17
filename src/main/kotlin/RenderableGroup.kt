@@ -3,7 +3,7 @@ import Class62.method599
 /* Class195 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class195 internal constructor(class287: Class287?, dualMaterialContainer: DualMaterialContainer?) : Interface16 {
+class RenderableGroup internal constructor(class287: Class287?, dualMaterialContainer: DualMaterialContainer?) : Interface16 {
     private val aClass287_5006: Class287?
     private var aRenderer5010: Renderer? = null
     private var aBoolean5011 = false

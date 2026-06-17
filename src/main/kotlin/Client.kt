@@ -99,7 +99,7 @@ import SpriteSheetCache.Companion.method1431
 import AsyncTaskHandle.Companion.method1438
 import TextureHandle.Companion.method1440
 import VarbitDefLoader.Companion.method1441
-import Class195.Companion.method1447
+import RenderableGroup.Companion.method1447
 import Class199.Companion.method1461
 import Class2.Companion.method171
 import Class20.method287

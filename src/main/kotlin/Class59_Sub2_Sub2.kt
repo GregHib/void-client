@@ -70,7 +70,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 i_2_++
             }
             Class5_Sub1.anInt8349 = class348_sub49.readInt((-126).toByte())
-            Class195.aBoolean5013 = true
+            RenderableGroup.aBoolean5013 = true
         }
 
         @JvmStatic

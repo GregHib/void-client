@@ -95,7 +95,7 @@ object ClientLoadStateMachine {
                 LoadProgressCounters.anInterface16Array2447 = arrayOfNulls<Interface16>(`is`.size)
                 var i_4_ = 0
                 while ((LoadProgressCounters.anInterface16Array2447!!.size > i_4_)) {
-                    LoadProgressCounters.anInterface16Array2447!![i_4_] = Class195(PerlinTextureProvider.aCollisionMapRegion_5813!!.method1043(`is`[i_4_], 102.toByte()), dualMaterialContainer)
+                    LoadProgressCounters.anInterface16Array2447!![i_4_] = RenderableGroup(PerlinTextureProvider.aCollisionMapRegion_5813!!.method1043(`is`[i_4_], 102.toByte()), dualMaterialContainer)
                     i_4_++
                 }
             }
