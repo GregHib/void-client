@@ -142,7 +142,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
             ItemDefinitionLoader.aClass262_2187!!.method1988(Class348_Sub40_Sub4.aClass262_9111, (-115).toByte())
             Class348_Sub40_Sub38.aClass262_9478!!.method1988(Class348_Sub40_Sub4.aClass262_9111, (-115).toByte())
             if (Class73.anInt4776 > 1) {
-                if (!InputSettingsState.shiftClick || !Class182.aClass346_2449!!.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
+                if (!InputSettingsState.shiftClick || !LoadProgressCounters.aClass346_2449!!.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
                 else Class316.aClass348_Sub42_Sub12_3963 = (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334.aClass348_4295!!.aClass348_4295 as Class348_Sub42_Sub12?)
                 GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = (Class348_Sub40_Sub4.aClass262_9111!!.aClass348_3334.aClass348_4295 as Class348_Sub42_Sub12?)
             } else {

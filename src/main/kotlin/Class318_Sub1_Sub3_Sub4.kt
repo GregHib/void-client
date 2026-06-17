@@ -286,7 +286,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
                         Class59_Sub1_Sub2.anInt8665 = Class245.anInt3170 + -(i_13_.toFloat() / Class75.aFloat1247).toInt()
                         Class368.anInt4509 = (Class348_Sub36.anInt6992 + -(i_12_.toFloat() / Class75.aFloat1247).toInt())
                         val i_21_ = (Class245.anInt3170 + -(i_13_.toFloat() / Class75.aFloat1247).toInt())
-                        Class182.anInt2446 = ((2 * i_13_).toFloat() / Class75.aFloat1247).toInt()
+                        LoadProgressCounters.anInt2446 = ((2 * i_13_).toFloat() / Class75.aFloat1247).toInt()
                         Class25.anInt370 = ((i_12_ * 2).toFloat() / Class75.aFloat1247).toInt()
                         method751(i_18_ + Class75.anInt1266, i_19_ + Class75.anInt1263, i_20_ - -Class75.anInt1266, Class75.anInt1263 + i_21_, i_11_, i_14_, i_12_ + i_11_, i_13_ + i_14_ + 1)
                         Class75.method748(var_renderer)

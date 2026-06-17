@@ -10,10 +10,10 @@ class CompositeNpcModelBuilder {
     var aBoolean2100: Boolean = false
     private var aLong2102: Long = 0
     private var anInt2103 = 0
-    fun method1226(interface17: Interface17?, class17: Class17?, class182s: Array<Class182?>?, bool: Boolean, class255: Class255?, i: Int, class17_0_: Class17?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, modelDefinitionLoader: ModelDefinitionLoader?, i_5_: Int, var_renderer: Renderer?, class278: Class278?, class87: Class87?, i_6_: Int, i_7_: Int, i_8_: Int, class261: Class261?): Class64? {
+    fun method1226(interface17: Interface17?, class17: Class17?, loadProgressCounters: Array<LoadProgressCounters?>?, bool: Boolean, class255: Class255?, i: Int, class17_0_: Class17?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, modelDefinitionLoader: ModelDefinitionLoader?, i_5_: Int, var_renderer: Renderer?, class278: Class278?, class87: Class87?, i_6_: Int, i_7_: Int, i_8_: Int, class261: Class261?): Class64? {
         try {
             anInt2097++
-            if (this.anInt2093 != -1) return (class278!!.method2079(this.anInt2093, -1).method800(i, class182s, class87, !bool_2_, class17, i_8_, class261, i_7_, class17_0_, interface17, var_renderer, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
+            if (this.anInt2093 != -1) return (class278!!.method2079(this.anInt2093, -1).method800(i, loadProgressCounters, class87, !bool_2_, class17, i_8_, class261, i_7_, class17_0_, interface17, var_renderer, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
             var i_9_ = i_4_
             var l = aLong2102
             var is_10_ = anIntArray2092
@@ -43,17 +43,17 @@ class CompositeNpcModelBuilder {
             var bool_13_ = false
             var bool_14_ = false
             var bool_15_ = class17_0_ != null || class17 != null
-            val i_16_ = if (class182s != null) class182s.size else 0
+            val i_16_ = if (loadProgressCounters != null) loadProgressCounters.size else 0
             var i_17_ = 0
             while (i_16_ > i_17_) {
                 Class95.aClass348_Sub42_Sub17Array1543!![i_17_] = null
-                if (class182s!![i_17_] != null) {
-                    val class17_18_ = class87!!.method835((class182s[i_17_]!!.anInt2454), 7)
+                if (loadProgressCounters!![i_17_] != null) {
+                    val class17_18_ = class87!!.method835((loadProgressCounters[i_17_]!!.anInt2454), 7)
                     if (class17_18_.anIntArray237 != null) {
                         bool_15_ = true
                         Class57.aClass17Array1048!![i_17_] = class17_18_
-                        val i_19_ = class182s[i_17_]!!.anInt2451
-                        val i_20_ = class182s[i_17_]!!.anInt2455
+                        val i_19_ = loadProgressCounters[i_17_]!!.anInt2451
+                        val i_20_ = loadProgressCounters[i_17_]!!.anInt2455
                         var i_21_ = class17_18_.anIntArray237[i_19_]
                         Class95.aClass348_Sub42_Sub17Array1543!![i_17_] = class87.method839(i_21_ ushr 16, 3)
                         i_21_ = i_21_ and 0xffff
@@ -65,7 +65,7 @@ class CompositeNpcModelBuilder {
                         }
                         if ((class17_18_.aBoolean241 || Class28.aBoolean5002) && i_20_ != -1 && (class17_18_.anIntArray237.size > i_20_)) {
                             MinimapRenderer.anIntArray1583!![i_17_] = class17_18_.anIntArray267!![i_19_]
-                            Class50_Sub3.anIntArray5241!![i_17_] = class182s[i_17_]!!.anInt2456
+                            Class50_Sub3.anIntArray5241!![i_17_] = loadProgressCounters[i_17_]!!.anInt2456
                             var i_22_ = class17_18_.anIntArray237[i_20_]
                             Class295.aClass348_Sub42_Sub17Array3753!![i_17_] = class87.method839(i_22_ ushr 16, 3)
                             i_22_ = i_22_ and 0xffff
@@ -279,7 +279,7 @@ class CompositeNpcModelBuilder {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("oo.C(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (class182s != null) "{...}" else "null") + ',' + bool + ',' + (if (class255 != null) "{...}" else "null") + ',' + i + ',' + (if (class17_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (class261 != null) "{...}" else "null") + ')')
+                ("oo.C(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (class17 != null) "{...}" else "null") + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + bool + ',' + (if (class255 != null) "{...}" else "null") + ',' + i + ',' + (if (class17_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class278 != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (class261 != null) "{...}" else "null") + ')')
             )
         }
     }

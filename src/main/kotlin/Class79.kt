@@ -340,13 +340,13 @@ class Class79 {
         }
     }
 
-    fun method800(i: Int, class182s: Array<Class182?>?, class87: Class87?, bool: Boolean, class17: Class17?, i_34_: Int, class261: Class261?, i_35_: Int, class17_36_: Class17?, interface17: Interface17?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): Class64? {
+    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, class87: Class87?, bool: Boolean, class17: Class17?, i_34_: Int, class261: Class261?, i_35_: Int, class17_36_: Class17?, interface17: Interface17?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): Class64? {
         try {
             anInt1341++
             if (this.anIntArray1377 != null) {
                 val class79_42_ = method794(interface17!!, -1)
                 if (class79_42_ == null) return null
-                return class79_42_.method800(i, class182s, class87, false, class17, i_34_, class261, i_35_, class17_36_, interface17, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
+                return class79_42_.method800(i, loadProgressCounters, class87, false, class17, i_34_, class261, i_35_, class17_36_, interface17, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
             }
             var i_43_ = i_40_
             if (anInt1358 != 128) i_43_ = i_43_ or 0x2
@@ -356,16 +356,16 @@ class Class79 {
             var bool_46_ = false
             var bool_47_ = false
             var bool_48_ = bool
-            val i_49_ = if (class182s == null) 0 else class182s.size
+            val i_49_ = if (loadProgressCounters == null) 0 else loadProgressCounters.size
             for (i_50_ in 0..<i_49_) {
                 Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_50_] = null
-                if (class182s!![i_50_] != null) {
-                    val class17_51_ = class87!!.method835((class182s[i_50_]!!.anInt2454), 7)
+                if (loadProgressCounters!![i_50_] != null) {
+                    val class17_51_ = class87!!.method835((loadProgressCounters[i_50_]!!.anInt2454), 7)
                     if (class17_51_.anIntArray237 != null) {
                         bool_44_ = true
                         AudioResampler.aClass17Array2169!![i_50_] = class17_51_
-                        val i_52_ = class182s[i_50_]!!.anInt2451
-                        val i_53_ = class182s[i_50_]!!.anInt2455
+                        val i_52_ = loadProgressCounters[i_50_]!!.anInt2451
+                        val i_53_ = loadProgressCounters[i_50_]!!.anInt2455
                         var i_54_ = class17_51_.anIntArray237[i_52_]
                         Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_50_] = class87.method839(i_54_ ushr 16, 3)
                         i_54_ = i_54_ and 0xffff
@@ -378,7 +378,7 @@ class Class79 {
                         }
                         if ((class17_51_.aBoolean241 || Class28.aBoolean5002) && i_53_ != -1 && i_53_ < (class17_51_.anIntArray237).size) {
                             Class348_Sub23_Sub4.anIntArray9050!![i_50_] = class17_51_.anIntArray267!![i_52_]
-                            Class67.anIntArray4648!![i_50_] = class182s[i_50_]!!.anInt2456
+                            Class67.anIntArray4648!![i_50_] = loadProgressCounters[i_50_]!!.anInt2456
                             var i_55_ = class17_51_.anIntArray237[i_53_]
                             Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_] = class87.method839(i_55_ ushr 16, 3)
                             i_55_ = i_55_ and 0xffff
@@ -613,7 +613,7 @@ class Class79 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("bb.F(" + i + ',' + (if (class182s != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + bool + ',' + (if (class17 != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (class261 != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (class17_36_ != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
+                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + bool + ',' + (if (class17 != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (class261 != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (class17_36_ != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
             )
         }
     }

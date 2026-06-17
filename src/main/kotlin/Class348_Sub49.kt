@@ -1,6 +1,6 @@
 import LinkedNodeListIterator.Companion.method1006
 import HeadIconRenderer.Companion.method1213
-import Class182.Companion.method1372
+import LoadProgressCounters.Companion.method1372
 import Class253.Companion.method1922
 import Class315.Companion.method2355
 import Class340.Companion.method2672

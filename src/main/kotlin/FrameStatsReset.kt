@@ -2435,7 +2435,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class59_Sub1.anInt5282 = 0
             Class292.anInt4805 = 0
             Class248.anInt3189 = 0
-            Class182.anInt2452 = 0
+            LoadProgressCounters.anInt2452 = 0
             Class367_Sub3.anInt7307 = 0
             Class318_Sub1_Sub3_Sub2.anInt10043 = 0
             Class215.anInt2839 = 0
@@ -3096,7 +3096,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub8.anInt7357 = 0
             Class318_Sub1_Sub3_Sub2.anInt10057 = 0
             Class318_Sub1_Sub1_Sub1.anInt9961 = 0
-            Class182.anInt2453 = 0
+            LoadProgressCounters.anInt2453 = 0
             Class189.anInt2528 = 0
             Class239_Sub15.anInt5998 = 0
             Class239_Sub3.anInt5867 = 0
@@ -3924,7 +3924,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             HeadIconRenderer.anInt2059 = 0
             Class318_Sub1_Sub1_Sub1.anInt9954 = 0
             Class318_Sub1_Sub5_Sub1.anInt10144 = 0
-            Class182.anInt2450 = 0
+            LoadProgressCounters.anInt2450 = 0
             ObjectSpawnDecoder.anInt1802 = 0
             WidgetComponentNode.anInt4658 = 0
             Class243.anInt3161 = 0

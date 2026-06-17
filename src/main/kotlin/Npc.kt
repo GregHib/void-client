@@ -315,7 +315,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
         val bool = (this.aByte10279.toInt() != 0 && (Class367_Sub11.anInt7396 >= this.anInt10248) && (Class367_Sub11.anInt7396 < this.anInt10250))
         if (bool) i_34_ = i_34_ or 0x80000
         val i_39_ = this.aClass264_10217.method2019((-25).toByte())
-        val class64 = (this.aClass79_10505!!.method800(i_39_, this.aClass182Array10308, ParticleEmitterNode.aClass87_191, false, class17_36_, this.anInt10203, Class64_Sub3.aClass261_5558, this.anInt10267, class17, aVarpStore_10209, var_renderer, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232).also { this.aClass64Array10323[0] = it })
+        val class64 = (this.aClass79_10505!!.method800(i_39_, this.aLoadProgressCountersArray10308, ParticleEmitterNode.aClass87_191, false, class17_36_, this.anInt10203, Class64_Sub3.aClass261_5558, this.anInt10267, class17, aVarpStore_10209, var_renderer, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232).also { this.aClass64Array10323[0] = it })
         if (class64 == null) return false
         this.anInt10207 = class64.fa()
         this.anInt10230 = class64.ma()

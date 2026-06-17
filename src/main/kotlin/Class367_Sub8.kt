@@ -157,21 +157,21 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, class269: 
                     var i_11_ = `is`!![i_9_]
                     val i_12_ = is_8_!![i_9_]
                     var i_13_ = 0
-                    while (i_11_ != 0 && ((npc!!.aClass182Array10308)!!.size > i_13_)) {
+                    while (i_11_ != 0 && ((npc!!.aLoadProgressCountersArray10308)!!.size > i_13_)) {
                         if ((0x1 and i_11_) != 0) {
                             if (i_10_ != -1) {
                                 val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_10_, i + 7394)
                                 val i_14_ = class17.anInt248
-                                var class182 = (npc.aClass182Array10308!![i_13_])
+                                var class182 = (npc.aLoadProgressCountersArray10308!![i_13_])
                                 if (class182 != null) {
                                     if (i_10_ != class182.anInt2454) {
                                         if (ParticleEmitterNode.aClass87_191!!.method835(class182.anInt2454, 7).anInt239 <= class17.anInt239) {
-                                            npc.aClass182Array10308!![i_13_] = null
-                                            class182 = npc.aClass182Array10308!![i_13_]
+                                            npc.aLoadProgressCountersArray10308!![i_13_] = null
+                                            class182 = npc.aLoadProgressCountersArray10308!![i_13_]
                                         }
                                     } else if (i_14_ == 0) {
-                                        npc.aClass182Array10308!![i_13_] = null
-                                        class182 = npc.aClass182Array10308!![i_13_]
+                                        npc.aLoadProgressCountersArray10308!![i_13_] = null
+                                        class182 = npc.aLoadProgressCountersArray10308!![i_13_]
                                     } else if (i_14_ == 1) {
                                         class182.anInt2448 = i_12_
                                         class182.anInt2456 = 0
@@ -182,8 +182,8 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, class269: 
                                     } else if (i_14_ == 2) class182.anInt2445 = 0
                                 }
                                 if (class182 == null) {
-                                    npc.aClass182Array10308!![i_13_] = Class182()
-                                    class182 = npc.aClass182Array10308!![i_13_]!!
+                                    npc.aLoadProgressCountersArray10308!![i_13_] = LoadProgressCounters()
+                                    class182 = npc.aLoadProgressCountersArray10308!![i_13_]!!
                                     class182.anInt2455 = 1
                                     class182.anInt2454 = i_10_
                                     class182.anInt2456 = 0
@@ -192,7 +192,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, class269: 
                                     class182.anInt2448 = i_12_
                                     if (!npc.aBoolean10309) Class287.method2178(npc, 0, class17, -19)
                                 }
-                            } else npc.aClass182Array10308!![i_13_] = null
+                            } else npc.aLoadProgressCountersArray10308!![i_13_] = null
                         }
                         i_11_ = i_11_ ushr 1
                         i_13_++

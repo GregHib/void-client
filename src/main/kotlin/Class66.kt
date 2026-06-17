@@ -556,7 +556,7 @@ object Class66 {
             }
         } else if (i < 5200) {
             if (i == 5100) {
-                if (Class182.aClass346_2449!!.method2696(86, -121)) anIntArray1149!![anInt1173++] = 1
+                if (LoadProgressCounters.aClass346_2449!!.method2696(86, -121)) anIntArray1149!![anInt1173++] = 1
                 else {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -564,7 +564,7 @@ object Class66 {
                 return
             }
             if (i == 5101) {
-                if (Class182.aClass346_2449!!.method2696(82, -126)) anIntArray1149!![anInt1173++] = 1
+                if (LoadProgressCounters.aClass346_2449!!.method2696(82, -126)) anIntArray1149!![anInt1173++] = 1
                 else {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -572,7 +572,7 @@ object Class66 {
                 return
             }
             if (i == 5102) {
-                if (Class182.aClass346_2449!!.method2696(81, -128)) anIntArray1149!![anInt1173++] = 1
+                if (LoadProgressCounters.aClass346_2449!!.method2696(81, -128)) anIntArray1149!![anInt1173++] = 1
                 else {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -613,7 +613,7 @@ object Class66 {
             }
             if (i == 5208) {
                 anIntArray1149!![anInt1173++] = Class25.anInt370
-                anIntArray1149!![anInt1173++] = Class182.anInt2446
+                anIntArray1149!![anInt1173++] = LoadProgressCounters.anInt2446
                 return
             }
             if (i == 5209) {

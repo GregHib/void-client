@@ -99,19 +99,19 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
             if (bool == true) {
                 if (Class51.Companion.aClass311_897 != null) {
                     Class51.Companion.aClass311_897!!.method2316((Class348_Sub42_Sub15.aClass56_9660), Class64_Sub2.aString5420, Class251.anInt3236, Class283.aLong3660, false)
-                    if (Class182.anInterface16Array2447 != null) {
+                    if (LoadProgressCounters.anInterface16Array2447 != null) {
                         var i_5_ = Class375.anInt4544 - -1
-                        while ((Class182.anInterface16Array2447!!.size > i_5_)) {
-                            if (Class182.anInterface16Array2447!![i_5_]!!.method60(-19079) >= 100 && Class375.anInt4544 == -1 + i_5_ && Class240.anInt4674 >= 1 && Class51.Companion.aClass311_897!!.method2322(0)) {
+                        while ((LoadProgressCounters.anInterface16Array2447!!.size > i_5_)) {
+                            if (LoadProgressCounters.anInterface16Array2447!![i_5_]!!.method60(-19079) >= 100 && Class375.anInt4544 == -1 + i_5_ && Class240.anInt4674 >= 1 && Class51.Companion.aClass311_897!!.method2322(0)) {
                                 try {
-                                    Class182.anInterface16Array2447!![i_5_]!!.method57(117)
+                                    LoadProgressCounters.anInterface16Array2447!![i_5_]!!.method57(117)
                                 } catch (exception: Exception) {
-                                    Class182.anInterface16Array2447 = null
+                                    LoadProgressCounters.anInterface16Array2447 = null
                                     break
                                 }
-                                Class51.Companion.aClass311_897!!.method2321(10559, Class182.anInterface16Array2447!![i_5_]!!)
+                                Class51.Companion.aClass311_897!!.method2321(10559, LoadProgressCounters.anInterface16Array2447!![i_5_]!!)
                                 Class375.anInt4544++
-                                if ((Class375.anInt4544 >= (-1 + Class182.anInterface16Array2447!!.size)) && Class182.anInterface16Array2447!!.size > 1) Class375.anInt4544 = if (!Class186_Sub1.aCollisionMapRegion_5813!!.method1044(26)) -1 else 0
+                                if ((Class375.anInt4544 >= (-1 + LoadProgressCounters.anInterface16Array2447!!.size)) && LoadProgressCounters.anInterface16Array2447!!.size > 1) Class375.anInt4544 = if (!Class186_Sub1.aCollisionMapRegion_5813!!.method1044(26)) -1 else 0
                             }
                             i_5_++
                         }

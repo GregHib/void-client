@@ -182,17 +182,17 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
                     var i_11_ = `is`!![i_9_]
                     val i_12_ = is_8_!![i_9_]
                     var i_13_ = 0
-                    while (i_11_ != 0 && i_13_ < (player!!.aClass182Array10308)!!.size) {
+                    while (i_11_ != 0 && i_13_ < (player!!.aLoadProgressCountersArray10308)!!.size) {
                         if ((i_11_ and 0x1) != 0) {
                             if (i_10_ != -1) {
                                 val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_10_, 7)
                                 val i_14_ = class17.anInt248
-                                var class182 = (player.aClass182Array10308!![i_13_])
+                                var class182 = (player.aLoadProgressCountersArray10308!![i_13_])
                                 if (class182 != null) {
                                     if (class182.anInt2454 == i_10_) {
                                         if (i_14_ == 0) {
-                                            player.aClass182Array10308!![i_13_] = null
-                                            class182 = player.aClass182Array10308!![i_13_]
+                                            player.aLoadProgressCountersArray10308!![i_13_] = null
+                                            class182 = player.aLoadProgressCountersArray10308!![i_13_]
                                         } else if (i_14_ == 1) {
                                             class182.anInt2448 = i_12_
                                             class182.anInt2455 = 1
@@ -202,13 +202,13 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
                                             if (!player.aBoolean10309) Class287.method2178(player, 0, class17, -54)
                                         } else if (i_14_ == 2) class182.anInt2445 = 0
                                     } else if (class17.anInt239 >= ParticleEmitterNode.aClass87_191!!.method835((class182.anInt2454), 7).anInt239) {
-                                        player.aClass182Array10308!![i_13_] = null
-                                        class182 = player.aClass182Array10308!![i_13_]
+                                        player.aLoadProgressCountersArray10308!![i_13_] = null
+                                        class182 = player.aLoadProgressCountersArray10308!![i_13_]
                                     }
                                 }
                                 if (class182 == null) {
-                                    player.aClass182Array10308!![i_13_] = Class182()
-                                    class182 = player.aClass182Array10308!![i_13_]
+                                    player.aLoadProgressCountersArray10308!![i_13_] = LoadProgressCounters()
+                                    class182 = player.aLoadProgressCountersArray10308!![i_13_]
                                     class182!!.anInt2445 = 0
                                     class182.anInt2455 = 1
                                     class182.anInt2448 = i_12_
@@ -217,7 +217,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
                                     class182.anInt2451 = 0
                                     if (!player.aBoolean10309) Class287.method2178(player, 0, class17, -123)
                                 }
-                            } else player.aClass182Array10308!![i_13_] = null
+                            } else player.aLoadProgressCountersArray10308!![i_13_] = null
                         }
                         i_13_++
                         i_11_ = i_11_ ushr 1

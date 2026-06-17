@@ -151,7 +151,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
     @JvmField
     var anInt10306: Int = 0
     @JvmField
-    var aClass182Array10308: Array<Class182?>?
+    var aLoadProgressCountersArray10308: Array<LoadProgressCounters?>?
     @JvmField
     var aBoolean10309: Boolean = true
     @JvmField
@@ -705,7 +705,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         this.anIntArray10303 = IntArray(LocalPlayerState.anInt1905)
         this.anInt10286 = -1
         this.anInt10283 = -1
-        this.aClass182Array10308 = arrayOfNulls<Class182>(12)
+        this.aLoadProgressCountersArray10308 = arrayOfNulls<LoadProgressCounters>(12)
         this.anInt10312 = -1
         this.anInt10207 = -32768
         this.anIntArray10304 = IntArray(LocalPlayerState.anInt1905)

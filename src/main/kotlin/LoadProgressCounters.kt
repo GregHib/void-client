@@ -4,7 +4,7 @@ import Class98.Companion.method878
 /* Class182 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class182 {
+class LoadProgressCounters {
     @JvmField
     var anInt2445: Int = 0
     @JvmField

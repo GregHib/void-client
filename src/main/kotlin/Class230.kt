@@ -511,13 +511,13 @@ class Class230 internal constructor(string: String?, i: Int) {
                 val i_72_ = -86 / ((-18 - i) / 51)
                 if (class318_sub1_sub3_sub3.anInt10218 > 0) class318_sub1_sub3_sub3.anInt10218--
                 var i_73_ = 0
-                while (((class318_sub1_sub3_sub3.aClass182Array10308)!!.size > i_73_)) {
-                    val class182 = (class318_sub1_sub3_sub3.aClass182Array10308!![i_73_])
+                while (((class318_sub1_sub3_sub3.aLoadProgressCountersArray10308)!!.size > i_73_)) {
+                    val class182 = (class318_sub1_sub3_sub3.aLoadProgressCountersArray10308!![i_73_])
                     if (class182 != null) {
                         if (class182.anInt2448 > 0) class182.anInt2448--
                         else {
                             val class17 = ParticleEmitterNode.aClass87_191!!.method835((class182.anInt2454), 7)
-                            if (class17 == null || class17.anIntArray237 == null) class318_sub1_sub3_sub3.aClass182Array10308!![i_73_] = null
+                            if (class17 == null || class17.anIntArray237 == null) class318_sub1_sub3_sub3.aLoadProgressCountersArray10308!![i_73_] = null
                             else {
                                 class182.anInt2456++
                                 if ((class17.anIntArray237.size > class182.anInt2451) && (class182.anInt2456 > (class17.anIntArray267!![class182.anInt2451]))) {
@@ -529,9 +529,9 @@ class Class230 internal constructor(string: String?, i: Int) {
                                     class182.anInt2451 -= class17.anInt238
                                     class182.anInt2445++
                                     if (class17.anInt244 > class182.anInt2445) {
-                                        if (class182.anInt2451 < 0 || ((class17.anIntArray237).size <= (class182.anInt2451))) class318_sub1_sub3_sub3.aClass182Array10308!![i_73_] = null
+                                        if (class182.anInt2451 < 0 || ((class17.anIntArray237).size <= (class182.anInt2451))) class318_sub1_sub3_sub3.aLoadProgressCountersArray10308!![i_73_] = null
                                         else if (!class318_sub1_sub3_sub3.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3, class182.anInt2451, class17, -46)
-                                    } else class318_sub1_sub3_sub3.aClass182Array10308!![i_73_] = null
+                                    } else class318_sub1_sub3_sub3.aLoadProgressCountersArray10308!![i_73_] = null
                                 }
                                 class182.anInt2455 = 1 + class182.anInt2451
                                 if (class182.anInt2455 >= class17.anIntArray237.size) {

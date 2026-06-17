@@ -45,7 +45,7 @@ class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
                 while_214_@ do {
                     do {
                         if (i_9_ == 0) {
-                            aClass50Array9481!![i_7_] = Class182.method1374(107, class348_sub49)
+                            aClass50Array9481!![i_7_] = LoadProgressCounters.method1374(107, class348_sub49)
                             i_7_++
                             continue@while_216_
                         } else if (i_9_ != 1) {

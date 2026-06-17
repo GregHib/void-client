@@ -92,10 +92,10 @@ object ClientLoadStateMachine {
             if (`is`!!.size == 0) `is` = Class186_Sub1.aCollisionMapRegion_5813!!.method1046(0, 0)
             val dualMaterialContainer = DualMaterialContainer(Class286_Sub7.aClass45_6277, SoftwareSpriteRaster.aClass45_1627)
             if (`is`!!.size > 0) {
-                Class182.anInterface16Array2447 = arrayOfNulls<Interface16>(`is`.size)
+                LoadProgressCounters.anInterface16Array2447 = arrayOfNulls<Interface16>(`is`.size)
                 var i_4_ = 0
-                while ((Class182.anInterface16Array2447!!.size > i_4_)) {
-                    Class182.anInterface16Array2447!![i_4_] = Class195(Class186_Sub1.aCollisionMapRegion_5813!!.method1043(`is`[i_4_], 102.toByte()), dualMaterialContainer)
+                while ((LoadProgressCounters.anInterface16Array2447!!.size > i_4_)) {
+                    LoadProgressCounters.anInterface16Array2447!![i_4_] = Class195(Class186_Sub1.aCollisionMapRegion_5813!!.method1043(`is`[i_4_], 102.toByte()), dualMaterialContainer)
                     i_4_++
                 }
             }
@@ -107,9 +107,9 @@ object ClientLoadStateMachine {
             if (i_6_ > i_5_) return 100 * i_5_ / i_6_
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1028) {
-            if (Class182.anInterface16Array2447 != null && (Class182.anInterface16Array2447!!.size > 0)) {
-                if (Class182.anInterface16Array2447!![0]!!.method60(-19079) < 100) return 0
-                if (Class182.anInterface16Array2447!!.size > 1 && Class186_Sub1.aCollisionMapRegion_5813!!.method1044(86) && (Class182.anInterface16Array2447!![1]!!.method60(i + 9581) < 100)) return 0
+            if (LoadProgressCounters.anInterface16Array2447 != null && (LoadProgressCounters.anInterface16Array2447!!.size > 0)) {
+                if (LoadProgressCounters.anInterface16Array2447!![0]!!.method60(-19079) < 100) return 0
+                if (LoadProgressCounters.anInterface16Array2447!!.size > 1 && Class186_Sub1.aCollisionMapRegion_5813!!.method1044(86) && (LoadProgressCounters.anInterface16Array2447!![1]!!.method60(i + 9581) < 100)) return 0
             }
             VarpStore.method1311(5139, Class348_Sub8.aRenderer6654!!)
             method3568(Class348_Sub8.aRenderer6654, 4)
@@ -283,7 +283,7 @@ object ClientLoadStateMachine {
             Class186_Sub1.aCollisionMapRegion_5813 = null
             Class348_Sub40_Sub17_Sub1.aClass45_10426 = null
             Class51.aClass311_897 = null
-            Class182.anInterface16Array2447 = null
+            LoadProgressCounters.anInterface16Array2447 = null
             Class348_Sub32.aThread6946 = null
             Class286_Sub7.aClass45_6277 = null
             method3886(i + 28556)
