@@ -11,7 +11,10 @@ import com.ms.win32.User32.SetWindowLong
 import java.awt.Component
 import kotlin.concurrent.Volatile
 
-class Callback_Sub1 : Callback() {
+/*
+ * Callback_Sub1
+ */
+class NativeCursorCallback : Callback() {
     @Volatile
     private var aBoolean7460 = true
 

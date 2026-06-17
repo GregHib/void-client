@@ -15,7 +15,7 @@ import java.util.*
 import kotlin.concurrent.Volatile
 
 class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bool: Boolean) : Runnable {
-    private var aCallback_Sub1_3776: Callback_Sub1? = null
+    private var aNativeCursorCallback__3776: NativeCursorCallback? = null
     @JvmField
     var aBoolean3777: Boolean = false
     @JvmField
@@ -145,12 +145,12 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                         } else if ((this.aBoolean3777) && i == 14) {
                             val i_5_ = (class144.anInt2000)
                             val i_6_ = (class144.anInt1999)
-                            if (this.aBoolean3794) aCallback_Sub1_3776!!.method3621(i_5_, 115.toByte(), i_6_)
+                            if (this.aBoolean3794) aNativeCursorCallback__3776!!.method3621(i_5_, 115.toByte(), i_6_)
                             else (anObject3791 as Class165).method1280((i_5_), (i_6_))
                         } else if ((this.aBoolean3777) && (i == 15)) {
                             val bool = ((class144.anInt2000) != 0)
                             val component = ((class144.anObject1996) as Component?)
-                            if (this.aBoolean3794) aCallback_Sub1_3776!!.method3622(bool, 13259, component!!)
+                            if (this.aBoolean3794) aNativeCursorCallback__3776!!.method3622(bool, 13259, component!!)
                             else (anObject3791 as Class165).method1281(component, (bool))
                         } else if (!(this.aBoolean3794) && (i == 17)) {
                             val objects = ((class144.anObject1996) as Array<Any?>?)
@@ -406,7 +406,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
             }
             try {
                 if (!this.aBoolean3794) anObject3791 = Class165()
-                else aCallback_Sub1_3776 = Callback_Sub1()
+                else aNativeCursorCallback__3776 = NativeCursorCallback()
             } catch (throwable: Throwable) {
                 /* empty */
             }
