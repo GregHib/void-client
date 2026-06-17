@@ -152,7 +152,7 @@ class SynthVoiceGroup internal constructor(private val aClass348_Sub16_Sub3_8852
         @JvmField
         var anInt8856: Int = 0
         @JvmField
-        var aClass351_8857: Class351? = Class351(54, 15)
+        var aFontMetaRef_8857: FontMetaRef? = FontMetaRef(54, 15)
         @JvmField
         var anInt8858: Int = 0
         @JvmField
@@ -173,7 +173,7 @@ class SynthVoiceGroup internal constructor(private val aClass348_Sub16_Sub3_8852
         @JvmStatic
         fun method2823(i: Int) {
             if (i != 0) method2823(33)
-            aClass351_8857 = null
+            aFontMetaRef_8857 = null
             aClass74_8853 = null
         }
 

@@ -14,7 +14,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
         @JvmField
         var anInt4600: Int = 52
         @JvmField
-        var aClass351_4601: Class351?
+        var aFontMetaRef_4601: FontMetaRef?
         @JvmField
         var aFloatArray4602: FloatArray?
         @JvmField
@@ -44,7 +44,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
             if (i == -3) {
                 anIntArray4603 = null
                 aFloatArray4602 = null
-                aClass351_4601 = null
+                aFontMetaRef_4601 = null
             }
         }
 
@@ -109,7 +109,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
             anInt4596 = -1
             aFloatArray4602 = FloatArray(4)
             aBoolean4604 = false
-            aClass351_4601 = Class351(65, 3)
+            aFontMetaRef_4601 = FontMetaRef(65, 3)
         }
     }
 }

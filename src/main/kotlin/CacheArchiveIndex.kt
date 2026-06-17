@@ -106,7 +106,7 @@ class CacheArchiveIndex {
         @JvmField
         var anInt1765: Int = 0
         @JvmField
-        var aClass351_1766: Class351? = Class351(74, -1)
+        var aFontMetaRef_1766: FontMetaRef? = FontMetaRef(74, -1)
         @JvmField
         var anInt1768: Int = 0
         @JvmField
@@ -128,8 +128,8 @@ class CacheArchiveIndex {
 
         @JvmStatic
         fun method1064(i: Int) {
-            if (i != -3) aClass351_1766 = null
-            aClass351_1766 = null
+            if (i != -3) aFontMetaRef_1766 = null
+            aFontMetaRef_1766 = null
         }
 
         @JvmStatic

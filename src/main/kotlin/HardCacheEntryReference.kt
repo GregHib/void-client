@@ -251,7 +251,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     }
                     if (i <= 1) {
                         if ((RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || Class50_Sub2.aBoolean5233) bool_20_ = true
-                        else if (Class351.method3455(string_16_, 28280)) bool_20_ = true
+                        else if (FontMetaRef.method3455(string_16_, 28280)) bool_20_ = true
                     }
                 } while (false)
                 if (!bool_20_ && BackgroundWorkerThread.anInt3227 == 0) {
@@ -728,7 +728,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 var bool_83_ = false
                 if (i <= 1) {
                     if (RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915 || Class50_Sub2.aBoolean5233) bool_83_ = true
-                    else if (i <= 1 && Class351.method3455(string_82_, 28280)) bool_83_ = true
+                    else if (i <= 1 && FontMetaRef.method3455(string_82_, 28280)) bool_83_ = true
                 }
                 if (!bool_83_ && BackgroundWorkerThread.anInt3227 == 0) {
                     val string_84_ = (Class59_Sub2_Sub2.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
@@ -832,7 +832,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     var bool_94_ = false
                     if (i_92_ <= 1) {
                         if (!bool_93_ && ((RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || Class50_Sub2.aBoolean5233)) bool_94_ = true
-                        else if (Class351.method3455(player.aString10544, 28280)) bool_94_ = true
+                        else if (FontMetaRef.method3455(player.aString10544, 28280)) bool_94_ = true
                     }
                     if (!bool_94_ && BackgroundWorkerThread.anInt3227 == 0) {
                         var i_95_ = -1
@@ -878,7 +878,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     }
                     if (i <= 1) {
                         if ((RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || Class50_Sub2.aBoolean5233) bool_101_ = true
-                        else if (Class351.method3455(string_98_, 28280)) bool_101_ = true
+                        else if (FontMetaRef.method3455(string_98_, 28280)) bool_101_ = true
                     }
                 } while (false)
                 if (!bool_101_ && BackgroundWorkerThread.anInt3227 == 0) {
@@ -989,7 +989,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                             break@while_219_
                         }
                     }
-                    if (i <= 1 && Class351.method3455(string_114_, 28280)) bool_119_ = true
+                    if (i <= 1 && FontMetaRef.method3455(string_114_, 28280)) bool_119_ = true
                 } while (false)
                 if (!bool_119_ && BackgroundWorkerThread.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_118_
@@ -1150,7 +1150,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 if (i == 99) method94(string_142_, -93)
                 else if (i == 98) set(string_142_)
                 else {
-                    if (string_141_ != "" && Class351.method3455(string_141_, 28280)) {
+                    if (string_141_ != "" && FontMetaRef.method3455(string_141_, 28280)) {
                         ModelVertexColorBuffer.aIntRange_6584 = null
                         return true
                     }
@@ -1387,7 +1387,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                             break@while_220_
                         }
                     }
-                    if (i <= 1 && Class351.method3455(string_175_, 28280)) bool_179_ = true
+                    if (i <= 1 && FontMetaRef.method3455(string_175_, 28280)) bool_179_ = true
                 } while (false)
                 if (!bool_179_ && BackgroundWorkerThread.anInt3227 == 0) {
                     Class357.aLongArray4410!![Class79.anInt1359] = l_178_
@@ -1710,7 +1710,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_229_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 var bool_230_ = false
-                if (i <= 1 && Class351.method3455(string_228_, 28280)) bool_230_ = true
+                if (i <= 1 && FontMetaRef.method3455(string_228_, 28280)) bool_230_ = true
                 if (!bool_230_ && BackgroundWorkerThread.anInt3227 == 0) {
                     val string_231_ = (BrightnessOptionState.aClass355_5900!!.method3471(i_229_, (-108).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 93.toByte()))
                     if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_228_, string_231_, (-127).toByte(), i_229_, "<img=1>" + string, null, 25, 0, string)

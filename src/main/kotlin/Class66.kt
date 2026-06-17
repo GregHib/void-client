@@ -190,7 +190,7 @@ object Class66 {
                 if (Class57.aBoxedIntHolder_1055 == null) Class57.aBoxedIntHolder_1055 = MinimapRenderer.aBoxedIntHolder_1591
                 BufferToggleState.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
-                val class348_sub47 = method2148(LongKeyNode.aClass351_6766, (TheoraVideoStream.aClass77_9029), -111)
+                val class348_sub47 = method2148(LongKeyNode.aFontMetaRef_6766, (TheoraVideoStream.aClass77_9029), -111)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, ShaderProgram.anInt7276)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, Class57.aBoxedIntHolder_1055!!.anInt2970)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, BufferToggleState.anInt3713)
@@ -207,7 +207,7 @@ object Class66 {
                 if (string_8_ == null) string_8_ = ""
                 if (string_8_.length > 80) string_8_ = string_8_.substring(0, 80)
                 anInt1157++
-                val class348_sub47 = method2148(FontDefinition.aClass351_1987, (TheoraVideoStream.aClass77_9029), -117)
+                val class348_sub47 = method2148(FontDefinition.aFontMetaRef_1987, (TheoraVideoStream.aClass77_9029), -117)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, (method1745(string, -65) + 2 + method1745(string_8_, -65)))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeString((-5).toByte(), string)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, i_9_ - 1)
@@ -242,7 +242,7 @@ object Class66 {
             }
             if (i == 5006) {
                 val i_14_ = anIntArray1149!![--anInt1173]
-                val class348_sub47 = method2148(AbstractFrameBufferSurface.aClass351_6925, (TheoraVideoStream.aClass77_9029), -100)
+                val class348_sub47 = method2148(AbstractFrameBufferSurface.aFontMetaRef_6925, (TheoraVideoStream.aClass77_9029), -100)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_14_)
                 InterfaceComponentGroup.method3243(-70, class348_sub47)
                 return
@@ -258,7 +258,7 @@ object Class66 {
                 val string_15_ = aStringArray1152!![anInt1170 + 1]
                 if (AsyncTaskHandle.anInt2581 != 0 || ((!RangeThresholdTextureNode.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
                     anInt1159++
-                    val class348_sub47 = method2148((CellNoiseTextureNode.aClass351_9304), (TheoraVideoStream.aClass77_9029), -116)
+                    val class348_sub47 = method2148((CellNoiseTextureNode.aFontMetaRef_9304), (TheoraVideoStream.aClass77_9029), -116)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                     val i_16_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
@@ -427,7 +427,7 @@ object Class66 {
             }
             if (i == 5059) {
                 anInt1165++
-                val class348_sub47 = method2148(Class45.aClass351_643, (TheoraVideoStream.aClass77_9029), -93)
+                val class348_sub47 = method2148(Class45.aFontMetaRef_643, (TheoraVideoStream.aClass77_9029), -93)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_41_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
@@ -440,7 +440,7 @@ object Class66 {
             if (i == 5060) {
                 val string = aStringArray1152!![--anInt1170]
                 anInt1166++
-                val class348_sub47 = method2148(ItemActionPacketSender.aClass351_2109, (TheoraVideoStream.aClass77_9029), -89)
+                val class348_sub47 = method2148(ItemActionPacketSender.aFontMetaRef_2109, (TheoraVideoStream.aClass77_9029), -89)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_42_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
@@ -452,7 +452,7 @@ object Class66 {
             }
             if (i == 5061) {
                 anInt1165++
-                val class348_sub47 = method2148(Class45.aClass351_643, (TheoraVideoStream.aClass77_9029), -104)
+                val class348_sub47 = method2148(Class45.aFontMetaRef_643, (TheoraVideoStream.aClass77_9029), -104)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_43_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 1)
@@ -954,7 +954,7 @@ object Class66 {
                 val string_106_ = aStringArray1152!![anInt1170 + 1]!!
                 val i_107_ = anIntArray1149!![--anInt1173]
                 anInt1171++
-                val class348_sub47 = method2148((SpriteTextureNode.aClass351_9234), (TheoraVideoStream.aClass77_9029), -101)
+                val class348_sub47 = method2148((SpriteTextureNode.aFontMetaRef_9234), (TheoraVideoStream.aClass77_9029), -101)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (method1745(string, -65) + method1745(string_106_, -65) + 1))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string_106_)
@@ -1928,7 +1928,7 @@ object Class66 {
                         if (WorldMapRenderer.aLong4683 > method599(-126) - 1000L) anIntArray1149!![anInt1173++] = 1
                         else {
                             ModelBatchBase.aBoolean1899 = true
-                            val class348_sub47 = method2148((TheoraVideoStream.aClass351_9034), (TheoraVideoStream.aClass77_9029), -115)
+                            val class348_sub47 = method2148((TheoraVideoStream.aFontMetaRef_9034), (TheoraVideoStream.aClass77_9029), -115)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(101.toByte(), Class5_Sub1.anInt8349)
                             InterfaceComponentGroup.method3243(118, class348_sub47)
                             anIntArray1149!![anInt1173++] = 0
@@ -2663,7 +2663,7 @@ object Class66 {
                 }
             }
             anInt1158++
-            val class348_sub47 = method2148(CircleDrawer.aClass351_2686, TheoraVideoStream.aClass77_9029, -88)
+            val class348_sub47 = method2148(CircleDrawer.aFontMetaRef_2686, TheoraVideoStream.aClass77_9029, -88)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
             val i_243_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_241_)
@@ -3738,7 +3738,7 @@ object Class66 {
                     var i_304_ = 0
                     if (method468(string, 73)) i_304_ = RegionSceneShifter.method3156(true, string)
                     anInt1163++
-                    val class348_sub47 = method2148((LongKeyNode.aClass351_6764), (TheoraVideoStream.aClass77_9029), -112)
+                    val class348_sub47 = method2148((LongKeyNode.aFontMetaRef_6764), (TheoraVideoStream.aClass77_9029), -112)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(102.toByte(), i_304_)
                     InterfaceComponentGroup.method3243(116, class348_sub47)
                     return
@@ -3746,7 +3746,7 @@ object Class66 {
                 if (i == 3105) {
                     val string = aStringArray1152!![--anInt1170]!!
                     anInt1162++
-                    val class348_sub47 = method2148(RsaPacketDecoder.aClass351_4225, (TheoraVideoStream.aClass77_9029), -96)
+                    val class348_sub47 = method2148(RsaPacketDecoder.aFontMetaRef_4225, (TheoraVideoStream.aClass77_9029), -96)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string.length + 1)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                     InterfaceComponentGroup.method3243(-81, class348_sub47)
@@ -3755,7 +3755,7 @@ object Class66 {
                 if (i == 3106) {
                     val string = aStringArray1152!![--anInt1170]!!
                     anInt1153++
-                    val class348_sub47 = method2148((VoronoiNoiseTextureNode.aClass351_9130), (TheoraVideoStream.aClass77_9029), -93)
+                    val class348_sub47 = method2148((VoronoiNoiseTextureNode.aFontMetaRef_9130), (TheoraVideoStream.aClass77_9029), -93)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string.length + 1)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                     InterfaceComponentGroup.method3243(35, class348_sub47)
@@ -3787,7 +3787,7 @@ object Class66 {
                 if (i == 3110) {
                     val i_311_ = anIntArray1149!![--anInt1173]
                     anInt1167++
-                    val class348_sub47 = method2148((GradientLookupEffect.aClass351_9189), (TheoraVideoStream.aClass77_9029), -121)
+                    val class348_sub47 = method2148((GradientLookupEffect.aFontMetaRef_9189), (TheoraVideoStream.aClass77_9029), -121)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_311_)
                     InterfaceComponentGroup.method3243(122, class348_sub47)
                     return
@@ -4341,7 +4341,7 @@ object Class66 {
                 if (i == 3623) {
                     var string = aStringArray1152!![--anInt1170]!!
                     if (string.startsWith("<img=0>") || string.startsWith("<img=1>")) string = string.substring(7)
-                    anIntArray1149!![anInt1173++] = if (Class351.method3455(string, 28280)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (FontMetaRef.method3455(string, 28280)) 1 else 0
                     return
                 }
                 if (i == 3624) {

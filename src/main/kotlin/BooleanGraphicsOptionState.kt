@@ -82,7 +82,7 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
                     val player = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_4_]])!!
                     if (player.aString10544 != null && player.aString10544.equals(string, ignoreCase = true) && (((player == LocalPlayerState.aPlayer_1907) && (0x10 and Class38.anInt500) != 0) || (player != null && (Class38.anInt500 and 0x8) != 0))) {
                         NativeLibraryUnloader.anInt2975++
-                        val class348_sub47 = WaterMaterialPass.method2148(Class52.aClass351_4907, (TheoraVideoStream.aClass77_9029), -102)
+                        val class348_sub47 = WaterMaterialPass.method2148(Class52.aFontMetaRef_4907, (TheoraVideoStream.aClass77_9029), -102)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(`is`[i_4_], 3.toByte())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(HeightMapNoise.anInt3829, 3.toByte())

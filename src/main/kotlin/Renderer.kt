@@ -331,7 +331,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
         var anInt4569: Int = 0
         @JvmField
         var anInt4570: Int = 0
-        var aClass351_4571: Class351?
+        var aFontMetaRef_4571: FontMetaRef?
         @JvmField
         var anInt4572: Int = 0
         @JvmField
@@ -390,7 +390,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
         fun method3680(i: Int) {
             if (i != -24016) anIntArray4578 = null
             anIntArray4578 = null
-            aClass351_4571 = null
+            aFontMetaRef_4571 = null
         }
 
         @JvmStatic
@@ -410,7 +410,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
         }
 
         init {
-            aClass351_4571 = Class351(73, -1)
+            aFontMetaRef_4571 = FontMetaRef(73, -1)
         }
     }
 }

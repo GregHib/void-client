@@ -91,7 +91,7 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
         var anInt9677: Int = 0
         @JvmField
         var anIntArrayArray9678: Array<IntArray?>? = null
-        var aClass351_9679: Class351? = Class351(27, 7)
+        var aFontMetaRef_9679: FontMetaRef? = FontMetaRef(27, 7)
         var anInt9680: Int = 0
 
         fun method3266(var_renderer: Renderer?, i: Int, locTypeConfig: LocTypeConfig?): Int {
@@ -113,7 +113,7 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
         @JvmStatic
         fun method3269(bool: Boolean) {
             aClass348_Sub42_Sub17Array9672 = null
-            aClass351_9679 = null
+            aFontMetaRef_9679 = null
             anIntArrayArray9678 = null
             if (bool != true) Companion.method3270((-116).toByte())
         }

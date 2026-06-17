@@ -150,7 +150,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
                             }
                             GlVertexBufferArb.anInt8493++
                             Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
-                            val class348_sub47 = method2148(Renderer.aClass351_4571, (TheoraVideoStream.aClass77_9029), -123)
+                            val class348_sub47 = method2148(Renderer.aFontMetaRef_4571, (TheoraVideoStream.aClass77_9029), -123)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                             InterfaceComponentGroup.method3243(118, class348_sub47)

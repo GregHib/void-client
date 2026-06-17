@@ -23,12 +23,12 @@ object ProjectileConfigUtil {
     @JvmField
     var anInt394: Int = 0
     @JvmField
-    var aClass351_395: Class351? = Class351(49, 6)
+    var aFontMetaRef_395: FontMetaRef? = FontMetaRef(49, 6)
     @JvmField
     var anInt396: Int = -1
     @JvmField
     var anInt397: Int = 0
-    var aClass351_398: Class351? = Class351(23, 8)
+    var aFontMetaRef_398: FontMetaRef? = FontMetaRef(23, 8)
     @JvmField
     var aTileRenderState_399: TileRenderState? = TileRenderState()
 
@@ -100,10 +100,10 @@ object ProjectileConfigUtil {
     @JvmStatic
     fun method316(i: Byte) {
         aClass356_389 = null
-        aClass351_398 = null
+        aFontMetaRef_398 = null
         aTileRenderState_399 = null
         if (i.toInt() != -94) method313(98L, -24)
-        aClass351_395 = null
+        aFontMetaRef_395 = null
     }
 
     @JvmStatic
@@ -148,7 +148,7 @@ object ProjectileConfigUtil {
                         if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_6_) method544((LocalizedText.aLocalizedText_3525!!.method2063(AnimationFrameDefinition.anInt6967, 544)), false, 4)
                         else {
                             Class5.anInt4628++
-                            val class348_sub47 = (method2148(MinimapAreaMarkerNode.aClass351_9687, TheoraVideoStream.aClass77_9029, -94))
+                            val class348_sub47 = (method2148(MinimapAreaMarkerNode.aFontMetaRef_9687, TheoraVideoStream.aClass77_9029, -94))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65) - -1)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!bool) 0 else 1)

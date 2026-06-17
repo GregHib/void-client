@@ -8,7 +8,7 @@ import RasterSprite.Companion.method166
 
 class OutgoingPacketNode : LinkedListNode() {
     var aClass348_Sub49_Sub2_7116: CipheredPacketBuffer? = null
-    var aClass351_7118: Class351? = null
+    var aFontMetaRef_7118: FontMetaRef? = null
     var anInt7119: Int = 0
     var anInt7122: Int = 0
     fun method3326(i: Byte) {

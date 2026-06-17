@@ -79,7 +79,7 @@ class MapRegionLoaderThread : Runnable {
         var anInt4200: Int = 0
         var anInt4202: Int = -1
         var anInt4203: Int = 0
-        var aClass351_4207: Class351? = Class351(29, 3)
+        var aFontMetaRef_4207: FontMetaRef? = FontMetaRef(29, 3)
         var anInt4208: Int = 0
         var anInt4209: Int = 0
         var anInt4210: Int = 0
@@ -87,7 +87,7 @@ class MapRegionLoaderThread : Runnable {
 
         @JvmStatic
         fun method2664(i: Int) {
-            if (i == 3) aClass351_4207 = null
+            if (i == 3) aFontMetaRef_4207 = null
         }
 
         fun method2665(i: Int, i_0_: Byte, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int) {

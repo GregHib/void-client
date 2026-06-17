@@ -406,7 +406,7 @@ import RegionTileNode.Companion.method2773
 import FacingDirectionNode.Companion.method2774
 import CharacterRenderState.Companion.method2780
 import FormantSynthFilter.Companion.method3450
-import Class351.Companion.method3457
+import FontMetaRef.Companion.method3457
 import Class352.Companion.method3458
 import Class353.Companion.method3462
 import Class354.Companion.method3466
@@ -1537,7 +1537,7 @@ class Client : GameAppletFrame() {
                     SceneRegionState.anInt193++
                     if (SceneRegionState.anInt193 > 50) {
                         IOException_Sub1.anInt88++
-                        val class348_sub47 = method2148((RangedGraphicsOptionState.aClass351_5938), (TheoraVideoStream.aClass77_9029), -104)
+                        val class348_sub47 = method2148((RangedGraphicsOptionState.aFontMetaRef_5938), (TheoraVideoStream.aClass77_9029), -104)
                         method3243(-49, class348_sub47)
                     }
                     try {

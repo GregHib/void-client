@@ -21,7 +21,7 @@ class InputStream_Sub1 : InputStream() {
         @JvmField
         var aLongArray76: LongArray? = LongArray(11)
         @JvmField
-        var aClass351_77: Class351?
+        var aFontMetaRef_77: FontMetaRef?
         @JvmField
         var anInt78: Int
         @JvmField
@@ -31,7 +31,7 @@ class InputStream_Sub1 : InputStream() {
         fun method124(i: Int) {
             aLongArrayArray75 = null
             if (i == 2) {
-                aClass351_77 = null
+                aFontMetaRef_77 = null
                 aLongArray76 = null
                 aIntRange_79 = null
             }
@@ -145,7 +145,7 @@ class InputStream_Sub1 : InputStream() {
                     )), FacingDirectionNode.method2777(aLongArrayArray75!![7]!![7 + i_15_], 255L)
                 ))
             }
-            aClass351_77 = Class351(8, 1)
+            aFontMetaRef_77 = FontMetaRef(8, 1)
             anInt78 = 0
             aIntRange_79 = IntRange(75, 6)
         }

@@ -27,14 +27,14 @@ class FloatBuffer internal constructor(i: Int) : Buffer(i) {
     companion object {
         var anInt9741: Int = 0
         var anInt9742: Int = 0
-        var aClass351_9743: Class351? = Class351(84, -1)
+        var aFontMetaRef_9743: FontMetaRef? = FontMetaRef(84, -1)
         var anInt9744: Int = 0
         var anInt9745: Int = 0
         var aBoolean9746: Boolean = true
         @JvmField
         var anInt9747: Int = 0
         var aRectangleRegion_9748: RectangleRegion? = RectangleRegion(7, 0, 1, 1)
-        var aClass351_9749: Class351?
+        var aFontMetaRef_9749: FontMetaRef?
         @JvmField
         var anInt9750: Int
         var anInt9751: Int = 0
@@ -209,14 +209,14 @@ class FloatBuffer internal constructor(i: Int) : Buffer(i) {
         fun method3403(i: Int) {
             if (i >= 58) {
                 aRectangleRegion_9748 = null
-                aClass351_9749 = null
-                aClass351_9743 = null
+                aFontMetaRef_9749 = null
+                aFontMetaRef_9743 = null
             }
         }
 
         init {
             anInt9750 = 0
-            aClass351_9749 = Class351(45, 7)
+            aFontMetaRef_9749 = FontMetaRef(45, 7)
         }
     }
 }

@@ -531,7 +531,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
         @JvmField
         var anInt642: Int = 0
         @JvmField
-        var aClass351_643: Class351? = Class351(3, -1)
+        var aFontMetaRef_643: FontMetaRef? = FontMetaRef(3, -1)
         @JvmField
         var anInt644: Int = 0
         @JvmField
@@ -581,7 +581,7 @@ class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boo
 
         @JvmStatic
         fun method390(i: Byte) {
-            aClass351_643 = null
+            aFontMetaRef_643 = null
             if (i.toInt() != 10) Companion.method390((-3).toByte())
         }
 

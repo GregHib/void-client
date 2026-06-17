@@ -639,7 +639,7 @@ class FloatCameraTransform : AbstractCameraTransform() {
         var anInt5697: Int = 0
         @JvmField
         var anInt5698: Int = 0
-        var aClass351_5699: Class351?
+        var aFontMetaRef_5699: FontMetaRef?
         @JvmField
         var anInt5701: Int = 0
         @JvmField
@@ -753,13 +753,13 @@ class FloatCameraTransform : AbstractCameraTransform() {
         @JvmStatic
         fun method925(i: Int) {
             if (i == -5997) {
-                aClass351_5699 = null
+                aFontMetaRef_5699 = null
                 aIntRange_5742 = null
             }
         }
 
         init {
-            aClass351_5699 = Class351(53, -1)
+            aFontMetaRef_5699 = FontMetaRef(53, -1)
             aIntRange_5742 = IntRange(119, 6)
         }
     }

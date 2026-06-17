@@ -13,7 +13,7 @@ object ScreenBorderFiller {
     var aIntRange_1959: IntRange? = IntRange(81, 6)
     var anInt1960: Int = 0
     @JvmField
-    var aClass351_1961: Class351? = Class351(77, -1)
+    var aFontMetaRef_1961: FontMetaRef? = FontMetaRef(77, -1)
     @JvmField
     var anInt1962: Int = 0
 
@@ -23,14 +23,14 @@ object ScreenBorderFiller {
         anInt1957++
         if (Buffer.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3707(rectangles, i, 0, 0)
         else CameraRotationStub.aRenderer326!!.method3707(rectangles, i, MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
-        if (i_0_ != 0) aClass351_1961 = null
+        if (i_0_ != 0) aFontMetaRef_1961 = null
     }
 
     @JvmStatic
     fun method1169(bool: Boolean) {
-        aClass351_1961 = null
+        aFontMetaRef_1961 = null
         aIntRange_1959 = null
-        if (bool != false) aClass351_1961 = null
+        if (bool != false) aFontMetaRef_1961 = null
     }
 
     @JvmStatic

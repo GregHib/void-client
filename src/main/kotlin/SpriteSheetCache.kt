@@ -90,7 +90,7 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
         fun method1428(bool: Boolean) {
             WidgetRedrawRegion.anImage4249 = null
             anInt2569++
-            Class351.aFont4329 = null
+            FontMetaRef.aFont4329 = null
             if (bool != true) method1431(-122)
         }
 

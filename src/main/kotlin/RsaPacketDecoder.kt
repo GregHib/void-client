@@ -119,14 +119,14 @@ class RsaPacketDecoder internal constructor(mediaStreamClient: MediaStreamClient
         var anInt4219: Int = 0
         var anInt4221: Int = 0
         var anInt4222: Int = 0
-        var aClass351_4223: Class351? = Class351(4, 0)
+        var aFontMetaRef_4223: FontMetaRef? = FontMetaRef(4, 0)
         var anInt4224: Int = 0
-        var aClass351_4225: Class351? = Class351(43, -1)
+        var aFontMetaRef_4225: FontMetaRef? = FontMetaRef(43, -1)
 
         @JvmStatic
         fun method2671(i: Int) {
-            aClass351_4225 = null
-            aClass351_4223 = null
+            aFontMetaRef_4225 = null
+            aFontMetaRef_4223 = null
             if (i != 0) method2672(92, 5)
         }
 

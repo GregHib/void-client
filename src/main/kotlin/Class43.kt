@@ -21,7 +21,7 @@ class Class43 {
         @JvmField
         var anInt616: Int = 0
         @JvmField
-        var aClass351_618: Class351? = Class351(5, 3)
+        var aFontMetaRef_618: FontMetaRef? = FontMetaRef(5, 3)
         @JvmField
         var anIntArray619: IntArray? = intArrayOf(0, 1, 2, 2, 1, 1, 2, 3, 1, 3, 3, 4, 2, 0, 4)
         @JvmField
@@ -29,7 +29,7 @@ class Class43 {
 
         @JvmStatic
         fun method380(i: Int) {
-            aClass351_618 = null
+            aFontMetaRef_618 = null
             anIntArray619 = null
             if (i == 0) aClass45_611 = null
         }

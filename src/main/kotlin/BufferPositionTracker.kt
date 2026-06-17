@@ -27,7 +27,7 @@ abstract class BufferPositionTracker {
         @JvmField
         var anInt3149: Int = 0
         @JvmField
-        var aClass351_3150: Class351? = Class351(71, 2)
+        var aFontMetaRef_3150: FontMetaRef? = FontMetaRef(71, 2)
 
         @JvmStatic
         fun method1857(i: Byte): Long {
@@ -38,7 +38,7 @@ abstract class BufferPositionTracker {
 
         @JvmStatic
         fun method1860(i: Byte) {
-            aClass351_3150 = null
+            aFontMetaRef_3150 = null
             val i_0_ = -52 / ((-22 - i) / 55)
         }
     }

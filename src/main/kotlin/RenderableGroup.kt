@@ -42,7 +42,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
 
     override fun method59(i: Int) {
         anInt5008++
-        if (i != -9719) aClass351_5015 = null
+        if (i != -9719) aFontMetaRef_5015 = null
     }
 
     override fun method55(i: Byte): Int {
@@ -99,7 +99,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
         var aBoolean5013: Boolean = false
         var anInt5014: Int = 0
         @JvmField
-        var aClass351_5015: Class351?
+        var aFontMetaRef_5015: FontMetaRef?
         @JvmField
         var anInt5016: Int = 0
         var aPrivilegedOperationWorker_5017: PrivilegedOperationWorker? = null
@@ -112,7 +112,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
             if (i == 76) {
                 anIntArray5007 = null
                 aPrivilegedOperationWorker_5017 = null
-                aClass351_5015 = null
+                aFontMetaRef_5015 = null
             }
         }
 
@@ -129,7 +129,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
         }
 
         init {
-            aClass351_5015 = Class351(76, 4)
+            aFontMetaRef_5015 = FontMetaRef(76, 4)
             anInt5019 = 0
         }
     }

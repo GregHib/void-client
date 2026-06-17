@@ -6,19 +6,19 @@ object ParserSpecialCharsHolder {
     var anInt1902: Int
     var aCharArray1903: CharArray? = charArrayOf('[', ']', '#')
     @JvmField
-    var aClass351_1904: Class351?
+    var aFontMetaRef_1904: FontMetaRef?
 
     @JvmStatic
     fun method1136(i: Byte) {
         aCharArray1903 = null
         if (i.toInt() == -98) {
             aIntRange_1901 = null
-            aClass351_1904 = null
+            aFontMetaRef_1904 = null
         }
     }
 
     init {
         anInt1902 = 0
-        aClass351_1904 = Class351(61, 11)
+        aFontMetaRef_1904 = FontMetaRef(61, 11)
     }
 }

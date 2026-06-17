@@ -46,7 +46,7 @@ class ModelOrSpriteHolder {
             try {
                 anInt120++
                 TerrainShadowBuilderGl3.anInt7009++
-                val class348_sub47 = method2148(CustomCursorsOptionState.aClass351_5934, TheoraVideoStream.aClass77_9029, -104)
+                val class348_sub47 = method2148(CustomCursorsOptionState.aFontMetaRef_5934, TheoraVideoStream.aClass77_9029, -104)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(112.toByte(), class46!!.anInt830)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(class46_0_!!.anInt704, 3.toByte())
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntMiddle(class46_0_.anInt830, 44.toByte())

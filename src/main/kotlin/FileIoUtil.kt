@@ -10,7 +10,7 @@ object FileIoUtil {
     var aBoundsConstraintEntry_4091: BoundsConstraintEntry? = BoundsConstraintEntry("", 10)
     var anInt4092: Int = 0
     var anInt4093: Int = 0
-    var aClass351_4094: Class351? = Class351(47, 4)
+    var aFontMetaRef_4094: FontMetaRef? = FontMetaRef(47, 4)
     @JvmField
     var anInt4095: Int = 0
     @JvmField
@@ -24,7 +24,7 @@ object FileIoUtil {
         aBoundsConstraintEntry_4091 = null
         if (i >= -49) method2606(31, -15L)
         aClass74_4098 = null
-        aClass351_4094 = null
+        aFontMetaRef_4094 = null
         anIntArray4096 = null
         anIntArray4097 = null
     }

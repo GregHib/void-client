@@ -205,7 +205,7 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, class51: Cla
         var anInt10132: Int = 0
         var anInt10133: Int = 0
         @JvmField
-        var aClass351_10134: Class351? = Class351(62, 3)
+        var aFontMetaRef_10134: FontMetaRef? = FontMetaRef(62, 3)
         var anInt10135: Int = 0
         var anInt10136: Int = 0
         var anInt10139: Int = 0
@@ -232,7 +232,7 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, class51: Cla
 
         @JvmStatic
         fun method2490(i: Int) {
-            aClass351_10134 = null
+            aFontMetaRef_10134 = null
             if (i != 4) method2490(-26)
             aNodeDeque_10125 = null
         }

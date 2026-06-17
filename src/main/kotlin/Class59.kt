@@ -170,7 +170,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
 
         @JvmStatic
         fun method545(i: Int, i_49_: Int) {
-            Class351.aClass60_4327!!.method578(2, i)
+            FontMetaRef.aClass60_4327!!.method578(2, i)
             anInt1077++
             Class358.aClass60_4417!!.method578(2, i)
             if (i_49_ != -1) aIntRange_1068 = null

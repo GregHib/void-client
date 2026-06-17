@@ -10,7 +10,7 @@ class SmoothingBuffer internal constructor(@JvmField var anInt3241: Int) {
 
     companion object {
         @JvmField
-        var aClass351_3237: Class351? = Class351(80, 7)
+        var aFontMetaRef_3237: FontMetaRef? = FontMetaRef(80, 7)
         var aIntRange_3240: IntRange? = IntRange(43, 4)
         var aFloat3242: Float = 0f
         var anInt3243: Int = 0
@@ -18,7 +18,7 @@ class SmoothingBuffer internal constructor(@JvmField var anInt3241: Int) {
         @JvmStatic
         fun method1917(i: Int) {
             if (i != 40960) aIntRange_3240 = null
-            aClass351_3237 = null
+            aFontMetaRef_3237 = null
             aIntRange_3240 = null
         }
 

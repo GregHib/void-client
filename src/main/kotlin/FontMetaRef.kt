@@ -1,6 +1,9 @@
 import java.awt.Font
 
-class Class351 internal constructor(private var anInt4326: Int, var anInt4323: Int) {
+/*
+ * Class351
+ */
+class FontMetaRef internal constructor(private var anInt4326: Int, var anInt4323: Int) {
     override fun toString(): String {
         anInt4325++
         throw IllegalStateException()

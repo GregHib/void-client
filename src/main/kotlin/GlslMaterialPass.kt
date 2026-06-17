@@ -129,7 +129,7 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83
         @JvmField
         var anInt6243: Int = 0
         @JvmField
-        var aClass351_6244: Class351? = Class351(9, 8)
+        var aFontMetaRef_6244: FontMetaRef? = FontMetaRef(9, 8)
         @JvmField
         var anInt6245: Int = 0
         @JvmField
@@ -163,8 +163,8 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83
 
         @JvmStatic
         fun method2156(i: Int) {
-            aClass351_6244 = null
-            if (i <= 57) aClass351_6244 = null
+            aFontMetaRef_6244 = null
+            if (i <= 57) aFontMetaRef_6244 = null
         }
 
         @JvmStatic

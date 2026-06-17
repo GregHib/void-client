@@ -310,7 +310,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
         var aRectangleRegion_9530: RectangleRegion? = RectangleRegion(6, 0, 4, 2)
         var aDouble9531: Double = 0.0
         var anInt9532: Int = 0
-        var aClass351_9533: Class351?
+        var aFontMetaRef_9533: FontMetaRef?
         @JvmField
         var anInterface6Array9534: Array<Interface6?>? = arrayOfNulls<Interface6>(128)
 
@@ -318,12 +318,12 @@ class ProceduralTextureGraph : HashLinkedListNode {
         fun method3187(i: Byte) {
             anInterface6Array9534 = null
             val i_55_ = 19 % ((76 - i) / 39)
-            aClass351_9533 = null
+            aFontMetaRef_9533 = null
             aRectangleRegion_9530 = null
         }
 
         init {
-            aClass351_9533 = Class351(57, 3)
+            aFontMetaRef_9533 = FontMetaRef(57, 3)
         }
     }
 }

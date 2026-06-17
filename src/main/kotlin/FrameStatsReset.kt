@@ -2403,7 +2403,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ParticleDetailOptionState.anInt6024 = 0
             VarpStore.anInt5077 = 0
             Class87.anInt1490 = 0
-            Class351.anInt4325 = 0
+            FontMetaRef.anInt4325 = 0
             PerlinTextureProvider.anInt5809 = 0
             LoadingScreenState.anInt2634 = 0
             OpenGlRenderer.anInt7698 = 0
@@ -3314,7 +3314,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ProjectedGroundDecor.anInt10297 = 0
             Class50_Sub2.anInt5234 = 0
             TextureDefinitionLoader.anInt1967 = 0
-            Class351.anInt4324 = 0
+            FontMetaRef.anInt4324 = 0
             Class45.anInt658 = 0
             Class87.anInt1485 = 0
             CurveTextureNode.anInt9207 = 0
@@ -3424,7 +3424,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlArrayBufferObject.anInt4714 = 0
             Class369.anInt4967 = 0
             GrowableStringList.anInt2359 = 0
-            Class351.anInt4322 = 0
+            FontMetaRef.anInt4322 = 0
             FontDefinition.anInt1981 = 0
             ParticleEmitterListNode.anInt9683 = 0
             Class377.anInt9849 = 0

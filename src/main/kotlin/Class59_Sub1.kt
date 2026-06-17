@@ -79,7 +79,7 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
         var anInt5284: Int = 0
         @JvmField
         var anInt5286: Int = 0
-        var aClass351_5288: Class351? = Class351(7, 6)
+        var aFontMetaRef_5288: FontMetaRef? = FontMetaRef(7, 6)
         @JvmField
         var anInt5291: Int = 0
         @JvmField
@@ -175,7 +175,7 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
         @JvmStatic
         fun method553(i: Int) {
             aAbstractModelRendererArray5294 = null
-            aClass351_5288 = null
+            aFontMetaRef_5288 = null
             if (i != 0) aPrivilegedOperationWorker_5297 = null
             aPrivilegedOperationWorker_5297 = null
         }

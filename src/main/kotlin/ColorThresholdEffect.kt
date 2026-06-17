@@ -113,14 +113,14 @@ class ColorThresholdEffect : AbstractProceduralTextureNode(1, false) {
         var anInt9087: Int = 0
         @JvmField
         var anInt9088: Int = 0
-        var aClass351_9089: Class351? = Class351(2, 6)
+        var aFontMetaRef_9089: FontMetaRef? = FontMetaRef(2, 6)
         @JvmField
         var aSpriteImage_9090: SpriteImage? = null
         @JvmField
         var anInt9093: Int = 0
         @JvmStatic
         fun method3050(bool: Boolean) {
-            aClass351_9089 = null
+            aFontMetaRef_9089 = null
             aSpriteImage_9090 = null
             if (bool != true) method3050(true)
         }
@@ -140,7 +140,7 @@ class ColorThresholdEffect : AbstractProceduralTextureNode(1, false) {
 
         @Throws(ClassNotFoundException::class)
         fun method3052(i: Int, string: String?): Class<*> {
-            if (i != 11012) aClass351_9089 = null
+            if (i != 11012) aFontMetaRef_9089 = null
             anInt9088++
             if (string == "B") return Byte.TYPE
             if (string == "I") return Integer.TYPE

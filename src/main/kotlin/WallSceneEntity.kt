@@ -203,7 +203,7 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, class51: Cla
             anInt9958++
             if (string != "") {
                 Class88.anInt1498++
-                val class348_sub47 = method2148(aClass351_8724, TheoraVideoStream.aClass77_9029, -124)
+                val class348_sub47 = method2148(aFontMetaRef_8724, TheoraVideoStream.aClass77_9029, -124)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                 InterfaceComponentGroup.method3243(121, class348_sub47)

@@ -92,7 +92,7 @@ class ModelLightingConfig {
     companion object {
         var anInt2537: Int = 0
         @JvmField
-        var aClass351_2539: Class351? = Class351(26, 7)
+        var aFontMetaRef_2539: FontMetaRef? = FontMetaRef(26, 7)
         var anInt2543: Int = 0
         var anInt2550: Int = 0
         @JvmField
@@ -220,7 +220,7 @@ class ModelLightingConfig {
 
         @JvmStatic
         fun method1426(i: Int) {
-            aClass351_2539 = null
+            aFontMetaRef_2539 = null
             aRectangleArray2554 = null
             anIntArray2552 = null
             if (i != 25165) aRectangleArray2554 = null

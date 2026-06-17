@@ -41,7 +41,7 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
         var anInt5215: Int = 0
         @JvmField
         var anInt5216: Int = 0
-        var aClass351_5217: Class351?
+        var aFontMetaRef_5217: FontMetaRef?
         @JvmField
         var anInt5218: Int = 0
         @JvmField
@@ -64,7 +64,7 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
             aAbstractCameraTransform_5209 = null
             aBooleanArrayArray5225 = null
             aStringArray5223 = null
-            aClass351_5217 = null
+            aFontMetaRef_5217 = null
         }
 
         @JvmStatic
@@ -116,7 +116,7 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
         }
 
         init {
-            aClass351_5217 = Class351(17, 8)
+            aFontMetaRef_5217 = FontMetaRef(17, 8)
             aBooleanArrayArray5225 = (arrayOf<BooleanArray?>(
                 BooleanArray(4),
                 booleanArrayOf(false, true, true, false),

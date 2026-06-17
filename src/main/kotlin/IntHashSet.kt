@@ -61,7 +61,7 @@ class IntHashSet internal constructor(`is`: IntArray) {
                 if (method2066(106.toByte())) {
                     if (ArbFogMaterialPass.aStringArray6200 == null) method249(2)
                     HeapDiagnosticsHolder.anInt2254 = 0
-                    Class351.aBoolean4328 = true
+                    FontMetaRef.aBoolean4328 = true
                 }
             }
         }

@@ -325,7 +325,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
 
     companion object {
         @JvmField
-        var aClass351_9189: Class351? = Class351(28, 2)
+        var aFontMetaRef_9189: FontMetaRef? = FontMetaRef(28, 2)
         @JvmField
         var anInt9190: Int = 0
         @JvmField
@@ -376,7 +376,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
 
         @JvmStatic
         fun method3077(i: Byte) {
-            aClass351_9189 = null
+            aFontMetaRef_9189 = null
             aIntRange_9197 = null
             if (i.toInt() != -98) method3077(27.toByte())
             aSeqDefinitionCache_9195 = null

@@ -65,7 +65,7 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
         @JvmField
         var anInt363: Int = 0
         @JvmField
-        var aClass351_364: Class351? = Class351(12, 3)
+        var aFontMetaRef_364: FontMetaRef? = FontMetaRef(12, 3)
         @JvmField
         var anInt365: Int = 0
         @JvmField
@@ -109,7 +109,7 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
         fun method305(i: Byte) {
             anIntArray369 = null
             if (i.toInt() != 79) method303(-22, -13)
-            aClass351_364 = null
+            aFontMetaRef_364 = null
             aAbstractModelRendererArray367 = null
         }
     }

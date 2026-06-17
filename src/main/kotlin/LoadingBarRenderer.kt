@@ -273,7 +273,7 @@ class LoadingBarRenderer : Interface16 {
         var anInt5049: Int = 0
         var anInt5052: Int = 0
         var anInt5055: Int = 0
-        var aClass351_5057: Class351? = Class351(10, -1)
+        var aFontMetaRef_5057: FontMetaRef? = FontMetaRef(10, -1)
         @JvmField
         var aPlayerArray5058: Array<Player?>? = arrayOfNulls<Player>(2048)
         @JvmField
@@ -282,7 +282,7 @@ class LoadingBarRenderer : Interface16 {
 
         @JvmStatic
         fun method2214(i: Int) {
-            aClass351_5057 = null
+            aFontMetaRef_5057 = null
             if (i != 0) aPlayerArray5058 = null
             aMapTileShapeArray5060 = null
             aPlayerArray5058 = null

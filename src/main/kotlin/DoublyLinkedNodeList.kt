@@ -102,13 +102,13 @@ class DoublyLinkedNodeList {
         var anInt3162: Int = 0
         var anInt3163: Int = 0
         var anInt3164: Int = 0
-        var aClass351_3165: Class351? = Class351(60, 8)
+        var aFontMetaRef_3165: FontMetaRef? = FontMetaRef(60, 8)
         var anInt3168: Int = 0
 
         @JvmStatic
         fun method1873(i: Byte) {
-            if (i > -111) aClass351_3165 = null
-            aClass351_3165 = null
+            if (i > -111) aFontMetaRef_3165 = null
+            aFontMetaRef_3165 = null
         }
 
         fun method1877(var_renderer: Renderer?, i: Int) {

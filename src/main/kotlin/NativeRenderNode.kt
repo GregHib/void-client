@@ -367,7 +367,7 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
         @JvmField
         var anInt10476: Int = 0
         @JvmField
-        var aClass351_10477: Class351? = Class351(22, 7)
+        var aFontMetaRef_10477: FontMetaRef? = FontMetaRef(22, 7)
         @JvmField
         var anIntArray10478: IntArray? = IntArray(1)
         @JvmField
@@ -377,7 +377,7 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
         fun method3288(i: Byte) {
             val i_14_ = 107 % ((i - 27) / 34)
             anIntArray10478 = null
-            aClass351_10477 = null
+            aFontMetaRef_10477 = null
             aNodeDeque_10479 = null
         }
 

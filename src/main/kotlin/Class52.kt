@@ -30,10 +30,10 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
         @JvmField
         var aFrame4904: Frame? = null
         @JvmField
-        var aClass351_4905: Class351?
+        var aFontMetaRef_4905: FontMetaRef?
         var anIntArray4906: IntArray?
         @JvmField
-        var aClass351_4907: Class351?
+        var aFontMetaRef_4907: FontMetaRef?
 
         fun method490(i: Byte, class348_sub49: Buffer): Class43 {
             anInt4897++
@@ -62,8 +62,8 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
 
         @JvmStatic
         fun method492(i: Int) {
-            aClass351_4905 = null
-            aClass351_4907 = null
+            aFontMetaRef_4905 = null
+            aFontMetaRef_4907 = null
             aFrame4904 = null
             if (i < -17) {
                 aBigInteger4896 = null
@@ -130,8 +130,8 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
         init {
             aRectangleRegion_4901 = RectangleRegion(12, 0, 1, 0)
             anIntArray4906 = IntArray(4)
-            aClass351_4905 = Class351(44, 3)
-            aClass351_4907 = Class351(48, 11)
+            aFontMetaRef_4905 = FontMetaRef(44, 3)
+            aFontMetaRef_4907 = FontMetaRef(48, 11)
         }
     }
 }

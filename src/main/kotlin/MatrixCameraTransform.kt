@@ -285,7 +285,7 @@ class MatrixCameraTransform : AbstractCameraTransform() {
         @JvmField
         var anInt5676: Int = 0
         @JvmField
-        var aClass351_5677: Class351? = Class351(56, 7)
+        var aFontMetaRef_5677: FontMetaRef? = FontMetaRef(56, 7)
         @JvmField
         var anInt5679: Int = 0
         @JvmField
@@ -307,7 +307,7 @@ class MatrixCameraTransform : AbstractCameraTransform() {
             aProjectileFactory_5689 = null
             aRenderConfig5684 = null
             aParticleEmitterFactory_5675 = null
-            aClass351_5677 = null
+            aFontMetaRef_5677 = null
         }
 
         @JvmStatic

@@ -15,7 +15,7 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
         var anInt2583: Int = 0
         var anInt2586: Int = 0
         @JvmField
-        var aClass351_2587: Class351? = Class351(38, 7)
+        var aFontMetaRef_2587: FontMetaRef? = FontMetaRef(38, 7)
         var anInt2588: Int = 0
         @JvmField
         var aSocketStreamWorker_2589: SocketStreamWorker? = null
@@ -79,7 +79,7 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
         fun method1440(i: Int) {
             aSocketStreamWorker_2589 = null
             val i_4_ = -79 / ((i - -45) / 46)
-            aClass351_2587 = null
+            aFontMetaRef_2587 = null
         }
     }
 }

@@ -7,7 +7,7 @@ import Class85.Companion.method831
 */
 object CircleDrawer {
     var anInt2685: Int = 0
-    var aClass351_2686: Class351?
+    var aFontMetaRef_2686: FontMetaRef?
     @JvmField
     var aFloat2687: Float = 0.0f
     var anInt2688: Int = 0
@@ -15,7 +15,7 @@ object CircleDrawer {
     var anInt2689: Int = 0
     var anInt2690: Int = 0
     @JvmField
-    var aClass351_2691: Class351?
+    var aFontMetaRef_2691: FontMetaRef?
     var aClass348_Sub44_2692: PackedFlagsAccessor?
     var aIntRange_2693: IntRange?
     @JvmField
@@ -125,15 +125,15 @@ object CircleDrawer {
     fun method1497(i: Int) {
         anIntArray2694 = null
         aClass348_Sub44_2692 = null
-        aClass351_2691 = null
+        aFontMetaRef_2691 = null
         aIntRange_2693 = null
         if (i != 16384) method1496(-23, 118, -17, -52, 33, 108, 2)
-        aClass351_2686 = null
+        aFontMetaRef_2686 = null
     }
 
     init {
-        aClass351_2686 = Class351(41, -1)
-        aClass351_2691 = Class351(46, 2)
+        aFontMetaRef_2686 = FontMetaRef(41, -1)
+        aFontMetaRef_2691 = FontMetaRef(46, 2)
         aClass348_Sub44_2692 = PackedFlagsAccessor(0, -1)
         anIntArray2694 = IntArray(4096)
         aIntRange_2693 = IntRange(94, -1)

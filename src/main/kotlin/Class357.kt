@@ -36,9 +36,9 @@ class Class357 internal constructor(i: Int) {
     companion object {
         var anInt4392: Int = 0
         var anInt4393: Int = 0
-        var aClass351_4394: Class351? = Class351(6, -1)
+        var aFontMetaRef_4394: FontMetaRef? = FontMetaRef(6, -1)
         var aDouble4404: Double = 0.0
-        var aClass351_4405: Class351? = Class351(64, -1)
+        var aFontMetaRef_4405: FontMetaRef? = FontMetaRef(64, -1)
         var aLongArray4410: LongArray? = LongArray(100)
 
         fun method3486(i: Int, bool: Boolean, i_0_: Int, l: Long, i_1_: Int): String {
@@ -87,9 +87,9 @@ class Class357 internal constructor(i: Int) {
         @JvmStatic
         fun method3487(i: Int) {
             aLongArray4410 = null
-            aClass351_4394 = null
-            if (i >= -45) aClass351_4405 = null
-            aClass351_4405 = null
+            aFontMetaRef_4394 = null
+            if (i >= -45) aFontMetaRef_4405 = null
+            aFontMetaRef_4405 = null
         }
     }
 }

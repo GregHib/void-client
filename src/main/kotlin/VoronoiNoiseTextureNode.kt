@@ -213,18 +213,18 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         @JvmField
         var anInt9128: Int = 0
         @JvmField
-        var aClass351_9130: Class351? = Class351(1, -1)
+        var aFontMetaRef_9130: FontMetaRef? = FontMetaRef(1, -1)
 
         @JvmStatic
         fun method3059(i: Int) {
-            aClass351_9130 = null
+            aFontMetaRef_9130 = null
             if (i >= -111) method3059(-83)
         }
 
         @JvmStatic
         fun method3060(i: Int, bool: Boolean): Int {
             anInt9128++
-            if (bool != true) aClass351_9130 = null
+            if (bool != true) aFontMetaRef_9130 = null
             return 0x7f and (i shr 11)
         }
     }

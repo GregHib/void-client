@@ -6,13 +6,13 @@ import Class66.method705
 */
 object ItemActionPacketSender {
     var anInt2108: Int = 0
-    var aClass351_2109: Class351? = Class351(19, -1)
+    var aFontMetaRef_2109: FontMetaRef? = FontMetaRef(19, -1)
     @JvmField
     var aBoolean2110: Boolean = false
 
     @JvmStatic
     fun method1236(i: Byte) {
-        aClass351_2109 = null
+        aFontMetaRef_2109 = null
     }
 
     @JvmStatic
@@ -31,7 +31,7 @@ object ItemActionPacketSender {
                     method705(class348_sub36)
                 }
             }
-            val class348_sub47 = method2148(ByteStore.aClass351_4266, TheoraVideoStream.aClass77_9029, -120)
+            val class348_sub47 = method2148(ByteStore.aFontMetaRef_4266, TheoraVideoStream.aClass77_9029, -120)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(100.toByte(), class46.anInt830)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-123, Class9.anInt169)

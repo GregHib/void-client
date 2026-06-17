@@ -14,7 +14,7 @@ class ConfigFlagUtil {
         var anInt3230: Int = 0
         var anInt3231: Int = 0
         @JvmField
-        var aClass351_3232: Class351? = Class351(51, 3)
+        var aFontMetaRef_3232: FontMetaRef? = FontMetaRef(51, 3)
         var anInt3233: Int = 0
         @JvmField
         var anInt3234: Int = 0
@@ -23,7 +23,7 @@ class ConfigFlagUtil {
 
         @JvmStatic
         fun method1912(i: Int) {
-            if (i == 8549) aClass351_3232 = null
+            if (i == 8549) aFontMetaRef_3232 = null
         }
 
         @JvmStatic

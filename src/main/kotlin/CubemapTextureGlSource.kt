@@ -203,7 +203,7 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
         @JvmField
         var anInt8705: Int = 0
         @JvmField
-        var aClass351_8706: Class351? = Class351(79, 3)
+        var aFontMetaRef_8706: FontMetaRef? = FontMetaRef(79, 3)
         @JvmStatic
         fun method2263(var_renderer: Renderer?, i: Int, i_4_: Int): AbstractModelRenderer? {
             anInt8705++
@@ -213,7 +213,7 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
                 class348_sub15.aBoolean6772 = true
                 if (class348_sub23_sub2 != null) return class348_sub23_sub2.method2975(var_renderer!!, 0)
             }
-            if (i != 0) aClass351_8706 = null
+            if (i != 0) aFontMetaRef_8706 = null
             return null
         }
 
@@ -228,8 +228,8 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
         @JvmStatic
         fun method2265(i: Int) {
             aClass348_Sub49_8698 = null
-            if (i != -10794) aClass351_8706 = null
-            aClass351_8706 = null
+            if (i != -10794) aFontMetaRef_8706 = null
+            aFontMetaRef_8706 = null
         }
     }
 }

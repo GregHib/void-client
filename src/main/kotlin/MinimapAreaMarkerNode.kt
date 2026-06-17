@@ -16,7 +16,7 @@ class MinimapAreaMarkerNode : HashLinkedListNode() {
     var anInt9697: Int = 0
 
     companion object {
-        var aClass351_9687: Class351? = Class351(14, -1)
+        var aFontMetaRef_9687: FontMetaRef? = FontMetaRef(14, -1)
         var anInt9698: Int = 0
         @JvmField
         var anInt9699: Int = 0
@@ -70,7 +70,7 @@ class MinimapAreaMarkerNode : HashLinkedListNode() {
 
         @JvmStatic
         fun method3278(i: Int) {
-            aClass351_9687 = null
+            aFontMetaRef_9687 = null
             if (i != 1) anInt9699 = -66
             aMapTileShapeArray9700 = null
         }

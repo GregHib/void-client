@@ -41,7 +41,7 @@ class CompletedResourceRequest : AsyncResourceRequest() {
         fun method3263(bool: Boolean): Boolean {
             if (bool != true) return false
             anInt10459++
-            return Class351.aBoolean4328
+            return FontMetaRef.aBoolean4328
         }
 
         @JvmStatic

@@ -3,11 +3,11 @@
 */
 object ShaderStateVariant : ShaderState() {
     @JvmField
-    var aClass351_8798: Class351? = Class351(69, -1)
+    var aFontMetaRef_8798: FontMetaRef? = FontMetaRef(69, -1)
     var anInt8799: Int = 0
 
     @JvmStatic
     fun method2611(i: Int) {
-        if (i < -121) aClass351_8798 = null
+        if (i < -121) aFontMetaRef_8798 = null
     }
 }

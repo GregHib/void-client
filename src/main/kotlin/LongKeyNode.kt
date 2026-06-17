@@ -29,9 +29,9 @@ class LongKeyNode : LinkedListNode {
         var anInt6760: Int = 0
         var anInt6761: Int = 0
         var anInt6763: Int = 0
-        var aClass351_6764: Class351? = Class351(32, 4)
+        var aFontMetaRef_6764: FontMetaRef? = FontMetaRef(32, 4)
         var anInt6765: Int = 0
-        var aClass351_6766: Class351? = Class351(75, 3)
+        var aFontMetaRef_6766: FontMetaRef? = FontMetaRef(75, 3)
 
         /*synthetic*/
         var aClass6767: Class<*>? = null
@@ -51,9 +51,9 @@ class LongKeyNode : LinkedListNode {
 
         @JvmStatic
         fun method2805(i: Byte) {
-            aClass351_6766 = null
+            aFontMetaRef_6766 = null
             val i_1_ = -14 % ((i - 72) / 32)
-            aClass351_6764 = null
+            aFontMetaRef_6764 = null
         }
 
         fun method2806(bool: Boolean, i: Int): Int {
@@ -66,18 +66,18 @@ class LongKeyNode : LinkedListNode {
             anInt6761++
             var class348_sub47: OutgoingPacketNode? = null
             if (i_4_ == 0) {
-                class348_sub47 = method2148(TextureGenerator.aClass351_2495, TheoraVideoStream.aClass77_9029, -100)
+                class348_sub47 = method2148(TextureGenerator.aFontMetaRef_2495, TheoraVideoStream.aClass77_9029, -100)
                 StringValueNode.anInt7112++
             }
             if (i_4_ == 1) {
-                class348_sub47 = method2148(HeightMapNoise.aClass351_3825, TheoraVideoStream.aClass77_9029, -93)
+                class348_sub47 = method2148(HeightMapNoise.aFontMetaRef_3825, TheoraVideoStream.aClass77_9029, -93)
                 ClickFeedbackTask.anInt4665++
             }
             class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i + Class90.regionTileY, 3.toByte())
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(78.toByte(), if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -124)) 0 else 1)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-124, ArbVertexProgram.regionTileX + i_2_)
             MediaStreamClient.anInt3203 = i_2_
-            if (i_3_ >= -88) aClass351_6764 = null
+            if (i_3_ >= -88) aFontMetaRef_6764 = null
             Class97.anInt1548 = i
             ModelKeyBuilder.Companion.aBoolean6759 = false
             method2264(false)

@@ -15,11 +15,11 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
 
     companion object {
         @JvmField
-        var aClass351_5200: Class351? = Class351(13, 2)
+        var aFontMetaRef_5200: FontMetaRef? = FontMetaRef(13, 2)
         @JvmField
         var anInt5203: Int = 0
         @JvmField
-        var aClass351_5204: Class351? = Class351(15, 8)
+        var aFontMetaRef_5204: FontMetaRef? = FontMetaRef(15, 8)
         @JvmField
         var anInt5205: Int = 0
         @JvmField
@@ -40,8 +40,8 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
         @JvmStatic
         fun method167(i: Int) {
             if (i != 19612) method167(-70)
-            aClass351_5200 = null
-            aClass351_5204 = null
+            aFontMetaRef_5200 = null
+            aFontMetaRef_5204 = null
             aClass348_Sub6_5206 = null
             aClass45_5207 = null
         }

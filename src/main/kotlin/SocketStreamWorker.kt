@@ -198,7 +198,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
         var anInt2655: Int = 0
         var anInt2660: Int = 0
         @JvmField
-        var aClass351_2661: Class351? = Class351(24, 7)
+        var aFontMetaRef_2661: FontMetaRef? = FontMetaRef(24, 7)
         var anInt2662: Int = 0
         var anInt2664: Int = 0
         var aIntRange_2665: IntRange? = IntRange(12, 0)
@@ -231,7 +231,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
             if (i >= 80) {
                 aClass60_2671 = null
                 aIntRange_2665 = null
-                aClass351_2661 = null
+                aFontMetaRef_2661 = null
             }
         }
 

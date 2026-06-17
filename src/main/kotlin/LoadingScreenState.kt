@@ -53,7 +53,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                 anInt2627++
                 try {
                     val graphics = ParticleSystemRenderer.aCanvas3869!!.getGraphics()
-                    if (Class351.aFont4329 == null) Class351.aFont4329 = Font("Helvetica", 1, 13)
+                    if (FontMetaRef.aFont4329 == null) FontMetaRef.aFont4329 = Font("Helvetica", 1, 13)
                     if (color == null) color = Color(140, 17, 17)
                     if (color_0_ == null) color_0_ = Color(140, 17, 17)
                     if (color_2_ == null) color_2_ = Color(255, 255, 255)
@@ -71,12 +71,12 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         graphics_3_.setColor(Color.black)
                         graphics_3_.drawRect(i_4_ + 1, 1 + i_5_, 301, 31)
                         graphics_3_.fillRect(3 * i + (i_4_ - -2), 2 + i_5_, 300 - i * 3, 30)
-                        graphics_3_.setFont(Class351.aFont4329)
+                        graphics_3_.setFont(FontMetaRef.aFont4329)
                         graphics_3_.setColor(color_2_)
                         if (i_1_ > -42) anIntArray2631 = null
                         graphics_3_.drawString(string, (i_4_ + (304 - string!!.length * 6) / 2), i_5_ + 22)
                         if (AsyncResourceRequest.aString9665 != null) {
-                            graphics_3_.setFont(Class351.aFont4329)
+                            graphics_3_.setFont(FontMetaRef.aFont4329)
                             graphics_3_.setColor(color_2_)
                             graphics_3_.drawString(AsyncResourceRequest.aString9665, (LocTypeDefinition.anInt4017 / 2 - (AsyncResourceRequest.aString9665!!.length * 6 / 2)), -26 + HardCacheEntryReference.anInt10432 / 2)
                         }
@@ -93,10 +93,10 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         graphics.setColor(Color.black)
                         graphics.drawRect(1 + i_6_, 1 + i_7_, 301, 31)
                         graphics.fillRect(3 * i + 2 + i_6_, 2 + i_7_, -(i * 3) + 300, 30)
-                        graphics.setFont(Class351.aFont4329)
+                        graphics.setFont(FontMetaRef.aFont4329)
                         graphics.setColor(color_2_)
                         if (AsyncResourceRequest.aString9665 != null) {
-                            graphics.setFont(Class351.aFont4329)
+                            graphics.setFont(FontMetaRef.aFont4329)
                             graphics.setColor(color_2_)
                             graphics.drawString(AsyncResourceRequest.aString9665, (LocTypeDefinition.anInt4017 / 2 + -(6 * AsyncResourceRequest.aString9665!!.length / 2)), HardCacheEntryReference.anInt10432 / 2 - 26)
                         }

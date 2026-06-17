@@ -13,7 +13,7 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
     }
 
     fun method695(bool: Boolean) {
-        if (bool != true) aClass351_1144 = null
+        if (bool != true) aFontMetaRef_1144 = null
         synchronized(aClass60_1145) {
             aClass60_1145.method590(0)
         }
@@ -70,7 +70,7 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         @JvmField
         var anInt1143: Int = 0
         @JvmField
-        var aClass351_1144: Class351?
+        var aFontMetaRef_1144: FontMetaRef?
         @JvmField
         var aClass110_Sub1Array1146: Array<MapLabelMenuEntry?>? = arrayOfNulls<MapLabelMenuEntry>(0)
         @JvmField
@@ -93,7 +93,7 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
 
         @JvmStatic
         fun method698(i: Int) {
-            aClass351_1144 = null
+            aFontMetaRef_1144 = null
             if (i != 2) aClass357ArrayArrayArray1148 = null
             aClass357ArrayArrayArray1148 = null
             aClass110_Sub1Array1146 = null
@@ -115,7 +115,7 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         }
 
         init {
-            aClass351_1144 = Class351(37, 2)
+            aFontMetaRef_1144 = FontMetaRef(37, 2)
         }
     }
 }

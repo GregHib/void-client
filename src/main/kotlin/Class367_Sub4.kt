@@ -161,7 +161,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
         @JvmField
         var anInt7316: Int = 0
         @JvmField
-        var aClass351_7318: Class351? = Class351(21, 2)
+        var aFontMetaRef_7318: FontMetaRef? = FontMetaRef(21, 2)
         @JvmField
         var anInt7319: Int = 104
         var aBoolean7320: Boolean = false
@@ -181,7 +181,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
             aIntRange_7323 = null
             aIntRange_7324 = null
             aLinkedNodeListIterator_7325 = null
-            if (i.toInt() == 23) aClass351_7318 = null
+            if (i.toInt() == 23) aFontMetaRef_7318 = null
         }
 
         @JvmStatic
@@ -357,7 +357,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Class367
         fun method3543(i: Byte) {
             anInt7309++
             if (i.toInt() == -89) {
-                Class351.aBoolean4328 = false
+                FontMetaRef.aBoolean4328 = false
                 Class354.method3466(i + 6)
             }
         }

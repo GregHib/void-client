@@ -24,7 +24,7 @@ abstract class CacheEntryReference internal constructor(@JvmField var anInt9545:
         @JvmField
         var aIntRange_9552: IntRange? = IntRange(72, 0)
         @JvmField
-        var aClass351_9553: Class351? = Class351(36, 7)
+        var aFontMetaRef_9553: FontMetaRef? = FontMetaRef(36, 7)
         @JvmField
         var aString9554: String? = null
         @JvmField
@@ -99,7 +99,7 @@ abstract class CacheEntryReference internal constructor(@JvmField var anInt9545:
             aIntRange_9550 = null
             if (i < 17) method3196(60, -85)
             aIntRange_9552 = null
-            aClass351_9553 = null
+            aFontMetaRef_9553 = null
             aString9554 = null
         }
     }
