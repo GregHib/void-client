@@ -1,7 +1,7 @@
 /* Class212 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class212 {
+object CompressedBlockDecoder {
     private var aClass40_2750: Class40? = Class40()
 
     private fun method1545(i: Int, class40: Class40): Int {
@@ -54,7 +54,7 @@ object Class212 {
             aClass40_2750!!.anInt554 = 0
             aClass40_2750!!.anInt536 = 0
             aClass40_2750!!.anInt524 = 0
-            Class212.method1552(aClass40_2750!!)
+            CompressedBlockDecoder.method1552(aClass40_2750!!)
             i -= aClass40_2750!!.anInt538
             aClass40_2750!!.aByteArray534 = null
             aClass40_2750!!.aByteArray527 = null
@@ -284,7 +284,7 @@ object Class212 {
                     if (class40.aByteArrayArray549!![i_70_]!![i_73_] > i_72_) i_72_ = (class40.aByteArrayArray549!![i_70_]!![i_73_])
                     if (class40.aByteArrayArray549!![i_70_]!![i_73_] < i_71_) i_71_ = (class40.aByteArrayArray549!![i_70_]!![i_73_]).toInt()
                 }
-                Class212.method1546(class40.anIntArrayArray556!![i_70_]!!, class40.anIntArrayArray553!![i_70_]!!, class40.anIntArrayArray529!![i_70_]!!, class40.aByteArrayArray549!![i_70_]!!, i_71_, i_72_.toInt(), i_57_)
+                CompressedBlockDecoder.method1546(class40.anIntArrayArray556!![i_70_]!!, class40.anIntArrayArray553!![i_70_]!!, class40.anIntArrayArray529!![i_70_]!!, class40.aByteArrayArray549!![i_70_]!!, i_71_, i_72_.toInt(), i_57_)
                 class40.anIntArray525[i_70_] = i_71_
             }
             val i_74_ = class40.anInt541 + 1
