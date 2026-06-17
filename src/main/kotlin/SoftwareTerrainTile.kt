@@ -7,7 +7,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     private var aFloat8212 = 0f
     private var aFloat8213 = 0f
     private var aFloat8214 = 0f
-    private var aClass102ArrayArray8215: Array<Array<Class102?>?>? = null
+    private var aVertexNormalArrayArray8215: Array<Array<VertexNormal?>?>? = null
     private var aFloat8216 = 0f
     private var aFloat8218 = 0f
     private var aClass198ArrayArray8219: Array<Array<Class198?>?>? = null
@@ -35,7 +35,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
             aClass266ArrayArray8230 = Array<Array<Class266?>?>(this.anInt4587) { arrayOfNulls<Class266?>(this.anInt4590) }
             aClass145ArrayArray8225 = Array<Array<Class145?>?>(this.anInt4587) { arrayOfNulls<Class145?>(this.anInt4590) }
         } else if (aClass198ArrayArray8219 == null && bool_11_) aClass198ArrayArray8219 = Array<Array<Class198?>?>(this.anInt4587) { arrayOfNulls<Class198?>(this.anInt4590) }
-        else check(aClass102ArrayArray8215 == null)
+        else check(aVertexNormalArrayArray8215 == null)
         if (`is` != null && `is`.size != 0) {
             for (i_12_ in is_4_.indices) {
                 if (is_4_[i_12_] == -1) is_4_[i_12_] = 0
@@ -337,8 +337,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     }
 
     override fun method3978(i: Int, i_60_: Int, `is`: IntArray, is_61_: IntArray, is_62_: IntArray, is_63_: IntArray, is_64_: IntArray, is_65_: IntArray, is_66_: IntArray, is_67_: IntArray, is_68_: IntArray, is_69_: IntArray, is_70_: IntArray, i_71_: Int, i_72_: Int, i_73_: Int, bool: Boolean) {
-        if (aClass102ArrayArray8215 == null) {
-            aClass102ArrayArray8215 = Array<Array<Class102?>?>(this.anInt4587) { arrayOfNulls<Class102?>(this.anInt4590) }
+        if (aVertexNormalArrayArray8215 == null) {
+            aVertexNormalArrayArray8215 = Array<Array<VertexNormal?>?>(this.anInt4587) { arrayOfNulls<VertexNormal?>(this.anInt4590) }
             aClass236ArrayArray8222 = Array<Array<Class236?>?>(this.anInt4587) { arrayOfNulls<Class236?>(this.anInt4590) }
         } else check(!(aClass266ArrayArray8230 != null || aClass198ArrayArray8219 != null))
         var bool_74_ = false
@@ -425,32 +425,32 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
             }
             aClass236ArrayArray8222!![i]!![i_60_] = class236
         } else if (is_67_[0] >= 0 || is_68_ != null && is_68_[0] >= 0) {
-            val class102 = Class102()
+            val vertexNormal = VertexNormal()
             val i_92_ = is_67_[0]
             val i_93_ = is_69_[0]
             if (is_68_ != null) {
-                class102.anInt1600 = Class291.method2198(0, (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]), Class25.method303(is_68_[0], 30).toInt())
-                if (i_92_ == -1) class102.aByte1606 = (class102.aByte1606.toInt() or 0x2).toByte()
+                vertexNormal.anInt1600 = Class291.method2198(0, (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]), Class25.method303(is_68_[0], 30).toInt())
+                if (i_92_ == -1) vertexNormal.aByte1606 = (vertexNormal.aByte1606.toInt() or 0x2).toByte()
             }
-            if ((this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_ + 1]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i]!![i_60_ + 1])) class102.aByte1606 = (class102.aByte1606.toInt() or 0x1).toByte()
+            if ((this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_ + 1]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i]!![i_60_ + 1])) vertexNormal.aByte1606 = (vertexNormal.aByte1606.toInt() or 0x1).toByte()
             var class12: Class12? = null
             if (i_93_ != -1) class12 = aHa_Sub1_8217.aRenderConfig4579!!.method3(i_93_, -6662)
-            if (class12 != null && (class102.aByte1606.toInt() and 0x2) == 0 && !class12.aBoolean209) {
-                class102.aShort1601 = (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]).toShort()
-                class102.aShort1603 = (aByteArrayArray8220!![i + 1]!![i_60_] - aByteArrayArray8232!![i + 1]!![i_60_]).toShort()
-                class102.aShort1602 = (aByteArrayArray8220!![i + 1]!![i_60_ + 1] - aByteArrayArray8232!![i + 1]!![i_60_ + 1]).toShort()
-                class102.aShort1604 = (aByteArrayArray8220!![i]!![i_60_ + 1] - aByteArrayArray8232!![i]!![i_60_ + 1]).toShort()
-                class102.aShort1605 = i_93_.toShort()
-                if (method3997(class12.aByte213.toInt()) || class12.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0) class102.aByte1606 = (class102.aByte1606.toInt() or 0x4).toByte()
+            if (class12 != null && (vertexNormal.aByte1606.toInt() and 0x2) == 0 && !class12.aBoolean209) {
+                vertexNormal.aShort1601 = (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]).toShort()
+                vertexNormal.aShort1603 = (aByteArrayArray8220!![i + 1]!![i_60_] - aByteArrayArray8232!![i + 1]!![i_60_]).toShort()
+                vertexNormal.aShort1602 = (aByteArrayArray8220!![i + 1]!![i_60_ + 1] - aByteArrayArray8232!![i + 1]!![i_60_ + 1]).toShort()
+                vertexNormal.aShort1604 = (aByteArrayArray8220!![i]!![i_60_ + 1] - aByteArrayArray8232!![i]!![i_60_ + 1]).toShort()
+                vertexNormal.aShort1605 = i_93_.toShort()
+                if (method3997(class12.aByte213.toInt()) || class12.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0) vertexNormal.aByte1606 = (vertexNormal.aByte1606.toInt() or 0x4).toByte()
             } else {
                 val i_94_ = Class25.method303(i_92_, 30)
-                class102.aShort1601 = Class291.method2198(0, ((aByteArrayArray8220!![i]!![i_60_]) - (aByteArrayArray8232!![i]!![i_60_])), i_94_.toInt()).toShort()
-                class102.aShort1603 = Class291.method2198(0, ((aByteArrayArray8220!![i + 1]!![i_60_]) - (aByteArrayArray8232!![i + 1]!![i_60_])), i_94_.toInt()).toShort()
-                class102.aShort1602 = Class291.method2198(0, ((aByteArrayArray8220!![i + 1]!![i_60_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_60_ + 1])), i_94_.toInt()).toShort()
-                class102.aShort1604 = Class291.method2198(0, ((aByteArrayArray8220!![i]!![i_60_ + 1]) - (aByteArrayArray8232!![i]!![i_60_ + 1])), i_94_.toInt()).toShort()
-                class102.aShort1605 = (-1).toShort()
+                vertexNormal.aShort1601 = Class291.method2198(0, ((aByteArrayArray8220!![i]!![i_60_]) - (aByteArrayArray8232!![i]!![i_60_])), i_94_.toInt()).toShort()
+                vertexNormal.aShort1603 = Class291.method2198(0, ((aByteArrayArray8220!![i + 1]!![i_60_]) - (aByteArrayArray8232!![i + 1]!![i_60_])), i_94_.toInt()).toShort()
+                vertexNormal.aShort1602 = Class291.method2198(0, ((aByteArrayArray8220!![i + 1]!![i_60_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_60_ + 1])), i_94_.toInt()).toShort()
+                vertexNormal.aShort1604 = Class291.method2198(0, ((aByteArrayArray8220!![i]!![i_60_ + 1]) - (aByteArrayArray8232!![i]!![i_60_ + 1])), i_94_.toInt()).toShort()
+                vertexNormal.aShort1605 = (-1).toShort()
             }
-            aClass102ArrayArray8215!![i]!![i_60_] = class102
+            aVertexNormalArrayArray8215!![i]!![i_60_] = vertexNormal
         }
     }
 
@@ -1190,7 +1190,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         val class167 = aHa_Sub1_8217.method3724(Thread.currentThread())
         class167!!.aClass109_2220!!.anInt1674 = 0
         if (aClass266ArrayArray8230 != null) method3990(i, i_255_, class167.aBoolean2195, class167, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
-        else if (aClass102ArrayArray8215 != null) method3994(i, i_255_, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232, i_256_)
+        else if (aVertexNormalArrayArray8215 != null) method3994(i, i_255_, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232, i_256_)
         else if (aClass198ArrayArray8219 != null) method3995(i, i_255_, class167.aBoolean2195, class167, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
     }
 
@@ -1296,7 +1296,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     }
 
     private fun method3994(i: Int, i_300_: Int, class109: Class109, `is`: IntArray, is_301_: IntArray, is_302_: IntArray, is_303_: IntArray?, i_304_: Int) {
-        val class102 = aClass102ArrayArray8215!![i]!![i_300_]
+        val class102 = aVertexNormalArrayArray8215!![i]!![i_300_]
         if (class102 == null) {
             val class236 = aClass236ArrayArray8222!![i]!![i_300_]
             if (class236 != null) {
@@ -1746,7 +1746,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         class109.aBoolean1671 = true
         aHa_Sub1_8217.ya()
         if (aClass266ArrayArray8230 != null || aClass198ArrayArray8219 != null) method3993(i, i_411_, i_412_, i_413_, i_414_, i_415_, i_416_, bools, class167, class109, class167.anIntArray2212!!, class167.anIntArray2228!!)
-        else if (aClass102ArrayArray8215 != null) method3996(i, i_411_, i_412_, i_413_, i_414_, i_415_, i_416_, bools, class167, class109, class167.anIntArray2212!!, class167.anIntArray2228!!)
+        else if (aVertexNormalArrayArray8215 != null) method3996(i, i_411_, i_412_, i_413_, i_414_, i_415_, i_416_, bools, class167, class109, class167.anIntArray2212!!, class167.anIntArray2228!!)
     }
 
     private fun method3995(i: Int, i_417_: Int, bool: Boolean, class167: Class167, class109: Class109, `is`: IntArray, is_418_: IntArray, is_419_: IntArray, is_420_: IntArray, i_421_: Int) {
@@ -1907,8 +1907,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         for (i_464_ in i_455_..<i_457_) {
             for (i_465_ in i_456_..<i_458_) {
                 if (bools[i_464_ - i_455_]!![i_465_ - i_456_]) {
-                    if (aClass102ArrayArray8215!![i_464_]!![i_465_] != null) {
-                        val class102 = aClass102ArrayArray8215!![i_464_]!![i_465_]!!
+                    if (aVertexNormalArrayArray8215!![i_464_]!![i_465_] != null) {
+                        val class102 = aVertexNormalArrayArray8215!![i_464_]!![i_465_]!!
                         if (class102.aShort1605.toInt() != -1 && (class102.aByte1606.toInt() and 0x2) == 0 && class102.anInt1600 == -1) {
                             val i_466_ = aHa_Sub1_8217.method3722(class102.aShort1605.toInt())
                             class109.method1022(

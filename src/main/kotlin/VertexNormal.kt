@@ -1,7 +1,7 @@
 /* Class102 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class102 {
+class VertexNormal {
     var anInt1600: Int = -1
     var aShort1601: Short = 0
     var aShort1602: Short = 0
