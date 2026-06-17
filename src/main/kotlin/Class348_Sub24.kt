@@ -433,13 +433,13 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     val i_32_ = (8.0 * Math.random()).toInt()
                                     if ((0x4 and i_32_) == 4) RenderableGroup.anInt5016 += ProjectileDefinition.anInt3844
                                     if ((i_32_ and 0x1) == 1) ConnectionStateRefs.anInt319 += WallEntity.anInt8775
-                                    if ((0x2 and i_32_) == 2) WalkingTypeUtil.anInt3310 += Class344.anInt4263
+                                    if ((0x2 and i_32_) == 2) WalkingTypeUtil.anInt3310 += ByteStore.anInt4263
                                 }
                                 if (ConnectionStateRefs.anInt319 < -50) WallEntity.anInt8775 = 2
                                 if (ConnectionStateRefs.anInt319 > 50) WallEntity.anInt8775 = -2
-                                if (WalkingTypeUtil.anInt3310 < -55) Class344.anInt4263 = 2
+                                if (WalkingTypeUtil.anInt3310 < -55) ByteStore.anInt4263 = 2
                                 if (RenderableGroup.anInt5016 < -40) ProjectileDefinition.anInt3844 = 1
-                                if (WalkingTypeUtil.anInt3310 > 55) Class344.anInt4263 = -2
+                                if (WalkingTypeUtil.anInt3310 > 55) ByteStore.anInt4263 = -2
                                 GlBufferObject.anInt4753++
                                 if (RenderableGroup.anInt5016 > 40) ProjectileDefinition.anInt3844 = -1
                                 if (GlBufferObject.anInt4753 > 500) {

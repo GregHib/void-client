@@ -88,9 +88,9 @@ class GrowableStringList internal constructor(private val anInt2365: Int, bool: 
             if (`is` == null) return null
             if (`is`.size > 136 && !WidgetDefinition.aBoolean247) {
                 try {
-                    val class344: Class344 = Class344_Sub1()
-                    class344.method2691(62.toByte(), `is`)
-                    return class344
+                    val byteStore: ByteStore = NioByteStore()
+                    byteStore.method2691(62.toByte(), `is`)
+                    return byteStore
                 } catch (throwable: Throwable) {
                     WidgetDefinition.aBoolean247 = true
                 }

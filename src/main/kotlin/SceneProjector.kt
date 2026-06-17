@@ -82,9 +82,9 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                         i_34_ = i_32_
                                     } else if (Class348_Sub49.anInt7207 == 1) {
                                         i_35_ = i_31_ / Class58.anInt1067
-                                        i_36_ = i_32_ / Class344.anInt4267
+                                        i_36_ = i_32_ / ByteStore.anInt4267
                                         i_33_ = i_35_ * Class58.anInt1067
-                                        i_34_ = i_36_ * Class344.anInt4267
+                                        i_34_ = i_36_ * ByteStore.anInt4267
                                         d_37_ = ((d + Class348_Sub42_Sub4.aDouble9517) * (i_32_ * i_34_ + i_33_ * i_31_).toDouble() / (i_32_ * i_32_ + i_31_ * i_31_).toDouble())
                                     }
                                     d_37_ = -d_37_
@@ -240,7 +240,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                             while ((ItemModelDefinition.anInt425 > i_67_)) {
                                                 val i_68_ = ((Class350.method3452(i_67_ + (SceneryDetailOptionState.anInt6095), (-15).toByte(), ItemModelDefinition.anInt425)) + i_66_)
                                                 val bool_69_ = (((i_38_ <= i_65_) && i_39_ + i_38_ > i_65_) || (i_65_ >= i_41_ && (i_65_ < i_41_ - -i_47_) && i_67_ >= i_40_ && (i_40_ - -i_42_ > i_67_)))
-                                                Class92.anInterface4Array1525!![i_68_]!!.method15(Class58.anInt1067 * i_67_, i_65_ * Class344.anInt4267, Class58.anInt1067, Class344.anInt4267, 0, 0, bool_69_, true)
+                                                Class92.anInterface4Array1525!![i_68_]!!.method15(Class58.anInt1067 * i_67_, i_65_ * ByteStore.anInt4267, Class58.anInt1067, ByteStore.anInt4267, 0, 0, bool_69_, true)
                                                 i_67_++
                                             }
                                         }

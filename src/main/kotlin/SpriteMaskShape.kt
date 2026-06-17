@@ -528,7 +528,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                             FogOptionState.anInt6048 = 2
                             Class93.anInt1534 = i_72_
                             CircleDrawer.anInt2689++
-                            val class348_sub47 = method2148(Class344.aClass351_4262, (Class348_Sub23_Sub2.aClass77_9029), -107)
+                            val class348_sub47 = method2148(ByteStore.aClass351_4262, (Class348_Sub23_Sub2.aClass77_9029), -107)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_74_ + ArbVertexProgram.regionTileX, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-107, i_77_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class9.anInt169, 3.toByte())
@@ -747,7 +747,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                             Class348.anInt4292 = 0
                             Class93.anInt1534 = i_72_
                             Client.anInt5187++
-                            val class348_sub47 = method2148(Class344.aClass351_4264, (Class348_Sub23_Sub2.aClass77_9029), -127)
+                            val class348_sub47 = method2148(ByteStore.aClass351_4264, (Class348_Sub23_Sub2.aClass77_9029), -127)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(ArbVertexProgram.regionTileX - -i_74_, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-85, HeightMapNoise.anInt3829)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class9.anInt169, 3.toByte())

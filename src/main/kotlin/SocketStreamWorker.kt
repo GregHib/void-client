@@ -220,7 +220,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
                 val i_2_ = ItemModelDefinition.anInt425 * i_1_
                 for (i_3_ in 0..<ItemModelDefinition.anInt425) {
                     val i_4_ = i_2_ - -i_3_
-                    Class92.anInterface4Array1525!![i_4_]!!.method15(i_3_ * Class58.anInt1067, i_1_ * Class344.anInt4267, Class58.anInt1067, Class344.anInt4267, 0, 0, true, true)
+                    Class92.anInterface4Array1525!![i_4_]!!.method15(i_3_ * Class58.anInt1067, i_1_ * ByteStore.anInt4267, Class58.anInt1067, ByteStore.anInt4267, 0, 0, true, true)
                 }
                 i_1_++
             }

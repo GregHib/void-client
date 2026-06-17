@@ -93,8 +93,8 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
             if (Class348_Sub49.anInt7207 == 1) {
                 var i_7_ = i_3_ / Class58.anInt1067
                 var i_8_ = i_4_ / Class58.anInt1067
-                var i_9_ = i_5_ / Class344.anInt4267
-                var i_10_ = i_6_ / Class344.anInt4267
+                var i_9_ = i_5_ / ByteStore.anInt4267
+                var i_10_ = i_6_ / ByteStore.anInt4267
                 if (i_7_ < ItemModelDefinition.anInt425 && i_8_ >= 0 && BackgroundWorkerThread.anInt3225 > i_9_ && i_10_ >= 0 && i == -5590) {
                     if (i_8_ >= ItemModelDefinition.anInt425) i_8_ = -1 + ItemModelDefinition.anInt425
                     if (i_9_ < 0) i_9_ = 0

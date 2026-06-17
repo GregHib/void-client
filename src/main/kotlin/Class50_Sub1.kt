@@ -77,7 +77,7 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
                 return `is`
             }
             if (i != 53146732) return null
-            if (`object` is Class344) {
+            if (`object` is ByteStore) {
                 val class344 = `object`
                 return class344.method2692(-3672)
             }

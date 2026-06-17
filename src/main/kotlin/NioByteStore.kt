@@ -1,6 +1,6 @@
 import java.nio.ByteBuffer
 
-class Class344_Sub1 : Class344() {
+class NioByteStore : ByteStore() {
     private var aByteBuffer6524: ByteBuffer? = null
 
     override fun method2689(i: Int, i_0_: Int, i_1_: Int): ByteArray {
