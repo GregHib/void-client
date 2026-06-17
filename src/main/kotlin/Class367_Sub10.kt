@@ -21,7 +21,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Class36
             this.aHa_Sub3_4479.method3850(96.toByte(), interface18_impl2)
             this.aHa_Sub3_4479.method3871(Class261.aCameraNodeList_3314, i + -15192)
             this.aHa_Sub3_4479.method3897(1, -4382)
-            this.aHa_Sub3_4479.method3874(Class328_Sub3.aClass229_6519, 104, Class248.aClass229_3196)
+            this.aHa_Sub3_4479.method3874(Class328_Sub3.aRenderConfigFactory_6519, 104, Class248.aRenderConfigFactory_3196)
             this.aHa_Sub3_4479.method3924(true, false, 2, (Class318_Sub1_Sub2.aClass70_8737), false)
             this.aHa_Sub3_4479.method3885(0, true, Class285_Sub2.aClass70_8503)
             val class101_sub2 = this.aHa_Sub3_4479.method3820(false)
@@ -38,7 +38,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Class36
         if (aBoolean7385) {
             this.aHa_Sub3_4479.method3897(1, -4382)
             this.aHa_Sub3_4479.method3871(ModelDefinitionLoader.aCameraNodeList_2047, i.toInt() xor 0x57)
-            this.aHa_Sub3_4479.method3874(ParticleSystemState.aClass229_2207, 103, (ParticleSystemState.aClass229_2207))
+            this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 103, (ParticleSystemState.aRenderConfigFactory_2207))
             this.aHa_Sub3_4479.method3849(47.toByte(), 2, Class348_Sub40_Sub39.aClass70_9485)
             this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
             this.aHa_Sub3_4479.method3879(-8629)
@@ -46,7 +46,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Class36
             this.aHa_Sub3_4479.method3897(0, -4382)
             aBoolean7385 = false
         } else this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
-        this.aHa_Sub3_4479.method3874(ParticleSystemState.aClass229_2207, i.toInt() xor 0x2c, ParticleSystemState.aClass229_2207)
+        this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, i.toInt() xor 0x2c, ParticleSystemState.aRenderConfigFactory_2207)
     }
 
     override fun method3526(i: Int, i_2_: Int, i_3_: Int) {
@@ -63,7 +63,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Class36
     override fun method3521(bool: Boolean, i: Byte) {
         if (i.toInt() == -103) {
             anInt7383++
-            this.aHa_Sub3_4479.method3874(Class328_Sub3.aClass229_6519, 99, ParticleSystemState.aClass229_2207)
+            this.aHa_Sub3_4479.method3874(Class328_Sub3.aRenderConfigFactory_6519, 99, ParticleSystemState.aRenderConfigFactory_2207)
         }
     }
 

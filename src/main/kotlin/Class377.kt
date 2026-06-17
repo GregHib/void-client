@@ -285,7 +285,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
 
     override fun method3935(i: Int) {
         anInt9861++
-        glTexEnvi(8960, 34162, Class348_Sub32.method3021(32.toByte(), (this.aClass229Array8092[(this.anInt8175)])))
+        glTexEnvi(8960, 34162, Class348_Sub32.method3021(32.toByte(), (this.aRenderConfigFactoryArray8092[(this.anInt8175)])))
         if (i >= -99) method3658(-123, -102, -33, -112)
     }
 
@@ -394,7 +394,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
     override fun method3920(i: Int) {
         anInt9862++
         if (i != 10) method3911(null, 34, null)
-        glTexEnvi(8960, 34161, Class348_Sub32.method3021(32.toByte(), (this.aClass229Array8086[(this.anInt8175)])))
+        glTexEnvi(8960, 34161, Class348_Sub32.method3021(32.toByte(), (this.aRenderConfigFactoryArray8086[(this.anInt8175)])))
     }
 
     override fun method3665(i: Int, i_19_: Int): Interface3? {

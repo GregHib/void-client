@@ -44,14 +44,14 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aClass101_Sub2_8083: FloatCameraTransform = FloatCameraTransform()
     private val aClass101_Sub2_8084 = FloatCameraTransform()
     private var aClass101_Sub2_8085: FloatCameraTransform = FloatCameraTransform()
-    lateinit var aClass229Array8086: Array<Class229?>
+    lateinit var aRenderConfigFactoryArray8086: Array<RenderConfigFactory?>
     var aFloat8087: Float = 1.0f
     private var aStream8088: Stream?
     @JvmField
     var aFloat8089: Float = 3584.0f
     var anInt8090: Int = 0
     var anInt8091: Int
-    lateinit var aClass229Array8092: Array<Class229?>
+    lateinit var aRenderConfigFactoryArray8092: Array<RenderConfigFactory?>
     @JvmField
     var aFloat8093: Float = 1.0f
     @JvmField
@@ -882,7 +882,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3864(81)
             method3850((-47).toByte(), interface18_impl3)
             method3817(99, 1)
-            method3874(Class328_Sub3.aClass229_6519, 114, Class328_Sub3.aClass229_6519)
+            method3874(Class328_Sub3.aRenderConfigFactory_6519, 114, Class328_Sub3.aRenderConfigFactory_6519)
             method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
             method3894(-28186, i)
             this.aClass101_Sub2_8074.method932(0.0f, this.anInt7962.toFloat(), this.anInt7931.toFloat(), (-52).toByte())
@@ -1144,26 +1144,26 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt8002++
     }
 
-    fun method3874(class229: Class229?, i: Int, class229_129_: Class229?) {
+    fun method3874(renderConfigFactory: RenderConfigFactory?, i: Int, renderConfigFactory_129_: RenderConfigFactory?) {
         do {
             try {
                 anInt7959++
                 var bool = false
-                if (class229_129_ != (this.aClass229Array8086[this.anInt8175])) {
-                    this.aClass229Array8086[(this.anInt8175)] = class229_129_
+                if (renderConfigFactory_129_ != (this.aRenderConfigFactoryArray8086[this.anInt8175])) {
+                    this.aRenderConfigFactoryArray8086[(this.anInt8175)] = renderConfigFactory_129_
                     method3920(10)
                     bool = true
                 }
                 if (i <= 97) method3888(89)
-                if ((this.aClass229Array8092[this.anInt8175]) != class229) {
-                    this.aClass229Array8092[(this.anInt8175)] = class229
+                if ((this.aRenderConfigFactoryArray8092[this.anInt8175]) != renderConfigFactory) {
+                    this.aRenderConfigFactoryArray8092[(this.anInt8175)] = renderConfigFactory
                     bool = true
                     method3935(-100)
                 }
                 if (!bool) break
                 anInt8100 = anInt8100 and 0x1d.inv()
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("wga.RI(" + (if (class229 != null) "{...}" else "null") + ',' + i + ',' + (if (class229_129_ != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("wga.RI(" + (if (renderConfigFactory != null) "{...}" else "null") + ',' + i + ',' + (if (renderConfigFactory_129_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -2085,11 +2085,11 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     fun method3923(bool: Boolean, i: Int) {
         if (i != 1) {
             if (i != 0) {
-                if (i == 2) method3874(Class328_Sub3.aClass229_6519, 117, Class248.aClass229_3196)
-                else if (i == 3) method3874(ParticleSystemState.aClass229_2207, 111, Class348_Sub23_Sub2.aClass229_9011)
-                else if (i == 4) method3874(Class348_Sub7.aClass229_6644, 126, Class348_Sub7.aClass229_6644)
-            } else method3874(ParticleSystemState.aClass229_2207, 120, ParticleSystemState.aClass229_2207)
-        } else method3874(Class328_Sub3.aClass229_6519, 127, Class328_Sub3.aClass229_6519)
+                if (i == 2) method3874(Class328_Sub3.aRenderConfigFactory_6519, 117, Class248.aRenderConfigFactory_3196)
+                else if (i == 3) method3874(ParticleSystemState.aRenderConfigFactory_2207, 111, Class348_Sub23_Sub2.aRenderConfigFactory_9011)
+                else if (i == 4) method3874(Class348_Sub7.aRenderConfigFactory_6644, 126, Class348_Sub7.aRenderConfigFactory_6644)
+            } else method3874(ParticleSystemState.aRenderConfigFactory_2207, 120, ParticleSystemState.aRenderConfigFactory_2207)
+        } else method3874(Class328_Sub3.aRenderConfigFactory_6519, 127, Class328_Sub3.aRenderConfigFactory_6519)
         anInt8034++
     }
 
@@ -2155,14 +2155,14 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     fun method3930(i: Byte) {
         this.aClass101_Sub2Array8131 = arrayOfNulls<FloatCameraTransform>(this.anInt8090)
         anInterface18Array8098 = arrayOfNulls<Interface18>(this.anInt8090)
-        this.aClass229Array8086 = arrayOfNulls<Class229>(this.anInt8090)
-        this.aClass229Array8092 = arrayOfNulls<Class229>(this.anInt8090)
+        this.aRenderConfigFactoryArray8086 = arrayOfNulls<RenderConfigFactory>(this.anInt8090)
+        this.aRenderConfigFactoryArray8092 = arrayOfNulls<RenderConfigFactory>(this.anInt8090)
         this.aClass251Array8113 = arrayOfNulls<Class251>(this.anInt8090)
         anInt7889++
         var i_263_ = 0
         while (this.anInt8090 > i_263_) {
-            this.aClass229Array8092[i_263_] = ParticleSystemState.aClass229_2207
-            this.aClass229Array8086[i_263_] = ParticleSystemState.aClass229_2207
+            this.aRenderConfigFactoryArray8092[i_263_] = ParticleSystemState.aRenderConfigFactory_2207
+            this.aRenderConfigFactoryArray8086[i_263_] = ParticleSystemState.aRenderConfigFactory_2207
             this.aClass251Array8113[i_263_] = Class348_Sub42_Sub18.aClass251_9685
             this.aClass101_Sub2Array8131[i_263_] = FloatCameraTransform()
             i_263_++

@@ -1,7 +1,7 @@
 /* Class229 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class229 {
+class RenderConfigFactory {
     companion object {
         var anInt2976: Int = 0
         var anInt2977: Int = 0

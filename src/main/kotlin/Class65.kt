@@ -105,9 +105,9 @@ class Class65 internal constructor(class230: Class230?, i: Int, class45: Class45
                 Class348_Sub40_Sub28.aClass45_9365 = class45_6_
                 anInt1147++
                 Class318_Sub1_Sub3.aClass45_8755 = class45_5_
-                Class229.aClass45_2978 = class45_4_
-                Class348_Sub40_Sub33.aClass46ArrayArray9427 = arrayOfNulls<Array<Class46?>>(Class229.aClass45_2978!!.method414(-1))
-                AudioResampler.aBooleanArray2162 = BooleanArray(Class229.aClass45_2978!!.method414(-1))
+                RenderConfigFactory.aClass45_2978 = class45_4_
+                Class348_Sub40_Sub33.aClass46ArrayArray9427 = arrayOfNulls<Array<Class46?>>(RenderConfigFactory.aClass45_2978!!.method414(-1))
+                AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactory.aClass45_2978!!.method414(-1))
                 val i_7_ = -72 % ((35 - i) / 41)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("kb.F(" + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + (if (class45_4_ != null) "{...}" else "null") + ',' + (if (class45_5_ != null) "{...}" else "null") + ',' + (if (class45_6_ != null) "{...}" else "null") + ')'))

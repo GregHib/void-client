@@ -467,7 +467,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239.anInt3137 = 0
             Class348_Sub40_Sub30.anInt9395 = 0
             Class59.anInt1080 = 0
-            Class229.anInt2976 = 0
+            RenderConfigFactory.anInt2976 = 0
             ModelDefinition.anInt1850 = 0
             Class278.anInt3582 = 0
             Class55_Sub1.anInt5268 = 0
@@ -669,7 +669,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class324.anInt4052 = 0
             Class348_Sub18.anInt6808 = 0
             ModelLightingConfig.anInt2543 = 0
-            Class229.anInt2977 = 0
+            RenderConfigFactory.anInt2977 = 0
             Class367.anInt4478 = 0
             Class367_Sub8.anInt7356 = 0
             Class247.anInt3184 = 0
@@ -2734,7 +2734,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class239_Sub7.anInt5906 = 0
             Class239_Sub24.anInt6090 = 0
             Class231.anInt2997 = 0
-            Class229.anInt2980 = 0
+            RenderConfigFactory.anInt2980 = 0
             GlTextureBase.anInt5094 = 0
             Player.anInt10528 = 0
             Class64_Sub2.anInt5466 = 0

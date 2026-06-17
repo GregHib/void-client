@@ -8,7 +8,7 @@ class Class348_Sub7 internal constructor(@JvmField var anInt6649: Int, @JvmField
         @JvmField
         var aSpriteImage_6643: SpriteImage? = null
         @JvmField
-        var aClass229_6644: Class229? = Class229()
+        var aRenderConfigFactory_6644: RenderConfigFactory? = RenderConfigFactory()
         @JvmField
         var anInt6646: Int = 0
         @JvmField
@@ -37,7 +37,7 @@ class Class348_Sub7 internal constructor(@JvmField var anInt6649: Int, @JvmField
         @JvmStatic
         fun method2773(i: Int) {
             aSpriteImage_6643 = null
-            aClass229_6644 = null
+            aRenderConfigFactory_6644 = null
             if (i == 0) aClass33_6653 = null
         }
     }

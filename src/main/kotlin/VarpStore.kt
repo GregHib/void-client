@@ -47,7 +47,7 @@ class VarpStore : Interface17 {
 
     override fun method62(i: Int, i_3_: Int): Int {
         anInt5068++
-        val class146 = Class229.aVarbitDefLoader_2981!!.method1446(i, -1)
+        val class146 = RenderConfigFactory.aVarbitDefLoader_2981!!.method1446(i, -1)
         val i_4_ = class146!!.anInt2019
         if (i_3_ != -65536) return -52
         val i_5_ = class146.anInt2016
@@ -59,7 +59,7 @@ class VarpStore : Interface17 {
     fun method1307(i: Int, i_8_: Int, i_9_: Int) {
         var i_9_ = i_9_
         anInt5074++
-        val class146 = Class229.aVarbitDefLoader_2981!!.method1446(i, -1)
+        val class146 = RenderConfigFactory.aVarbitDefLoader_2981!!.method1446(i, -1)
         val i_10_ = class146!!.anInt2019
         val i_11_ = class146.anInt2016
         val i_12_ = class146.anInt2020
@@ -104,7 +104,7 @@ class VarpStore : Interface17 {
     fun method1316(i: Byte, i_30_: Int, i_31_: Int) {
         var i_31_ = i_31_
         anInt5069++
-        val class146 = Class229.aVarbitDefLoader_2981!!.method1446(i_30_, -1)
+        val class146 = RenderConfigFactory.aVarbitDefLoader_2981!!.method1446(i_30_, -1)
         val i_32_ = class146!!.anInt2019
         val i_33_ = class146.anInt2016
         if (i < -56) {

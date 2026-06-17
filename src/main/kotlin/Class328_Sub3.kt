@@ -6,7 +6,7 @@ import Class318_Sub9_Sub1.Companion.method2516
 */
 object Class328_Sub3 : Class328() {
     @JvmField
-    var aClass229_6519: Class229? = Class229()
+    var aRenderConfigFactory_6519: RenderConfigFactory? = RenderConfigFactory()
     var anInt6520: Int = 0
     var anInt6521: Int = 0
     var anIntArray6522: IntArray? = IntArray(1000)
@@ -28,6 +28,6 @@ object Class328_Sub3 : Class328() {
     fun method2617(i: Byte) {
         anIntArray6522 = null
         val i_1_ = -3 / ((i - 3) / 54)
-        aClass229_6519 = null
+        aRenderConfigFactory_6519 = null
     }
 }

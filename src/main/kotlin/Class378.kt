@@ -552,7 +552,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
     }
 
     override fun method3920(i: Int) {
-        val i_54_ = (if (aBooleanArray9784[this.anInt8175]) method3955(24, (this.aClass229Array8086[this.anInt8175])) else 1)
+        val i_54_ = (if (aBooleanArray9784[this.anInt8175]) method3955(24, (this.aRenderConfigFactoryArray8086[this.anInt8175])) else 1)
         if (i != 10) I()
         this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 1, i_54_)
     }
@@ -676,7 +676,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3935(i: Int) {
         if (i <= -99) {
-            val i_71_ = (if (aBooleanArray9784[this.anInt8175]) method3955(50, (this.aClass229Array8092[this.anInt8175])) else 1)
+            val i_71_ = (if (aBooleanArray9784[this.anInt8175]) method3955(50, (this.aRenderConfigFactoryArray8092[this.anInt8175])) else 1)
             this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 4, i_71_)
         }
     }
@@ -778,12 +778,12 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             throw IllegalArgumentException("")
         }
 
-        private fun method3955(i: Int, class229: Class229?): Int {
-            if (Class328_Sub3.aClass229_6519 == class229) return 2
-            if (ParticleSystemState.aClass229_2207 == class229) return 4
-            if (Class248.aClass229_3196 != class229) {
-                if (class229 != Class348_Sub23_Sub2.aClass229_9011) {
-                    if (class229 == Class348_Sub7.aClass229_6644) return 10
+        private fun method3955(i: Int, renderConfigFactory: RenderConfigFactory?): Int {
+            if (Class328_Sub3.aRenderConfigFactory_6519 == renderConfigFactory) return 2
+            if (ParticleSystemState.aRenderConfigFactory_2207 == renderConfigFactory) return 4
+            if (Class248.aRenderConfigFactory_3196 != renderConfigFactory) {
+                if (renderConfigFactory != Class348_Sub23_Sub2.aRenderConfigFactory_9011) {
+                    if (renderConfigFactory == Class348_Sub7.aRenderConfigFactory_6644) return 10
                 } else return 7
             } else return 26
             if (i <= 16) method3955(-116, null)

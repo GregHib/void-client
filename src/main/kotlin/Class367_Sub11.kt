@@ -43,7 +43,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         anInt7408++
         this.aHa_Sub3_4479.method3897(1, -4382)
         this.aHa_Sub3_4479.method3850((-128).toByte(), null)
-        this.aHa_Sub3_4479.method3874(ParticleSystemState.aClass229_2207, 116, ParticleSystemState.aClass229_2207)
+        this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 116, ParticleSystemState.aRenderConfigFactory_2207)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class342.aClass70_4247)
         this.aHa_Sub3_4479.method3849(47.toByte(), 2, Class348_Sub40_Sub39.aClass70_9485)
         this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247)
@@ -125,7 +125,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         aBoolean7411 = bool
         this.aHa_Sub3_4479.method3897(1, i xor 0x2a45.inv())
         this.aHa_Sub3_4479.method3850((-32).toByte(), anInterface18_Impl3_7390)
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 109, Class248.aClass229_3196)
+        this.aHa_Sub3_4479.method3874((Class328_Sub3.aRenderConfigFactory_6519), 109, Class248.aRenderConfigFactory_3196)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
         if (i == 15192) {
             this.aHa_Sub3_4479.method3924(true, false, 2, Class342.aClass70_4247, false)

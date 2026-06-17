@@ -124,7 +124,7 @@ import NpcDefinition.Companion.method1619
 import TextureDefinitionCache.Companion.method1624
 import BoxedIntHolder.Companion.method1627
 import NativeLibraryUnloader.method1628
-import Class229.Companion.method1632
+import RenderConfigFactory.Companion.method1632
 import Class230.Companion.method1635
 import Class231.Companion.method1641
 import Class232.Companion.method1645

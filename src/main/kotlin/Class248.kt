@@ -355,7 +355,7 @@ class Class248 {
         var anInt3194: Int = 0
         var anInt3195: Int = 0
         @JvmField
-        var aClass229_3196: Class229? = Class229()
+        var aRenderConfigFactory_3196: RenderConfigFactory? = RenderConfigFactory()
         var anInt3198: Int = 0
         var anInt3199: Int = 0
         var anInt3200: Int = 0
@@ -371,7 +371,7 @@ class Class248 {
                 anInt3198++
                 val i_23_ = -(i_21_ shr 2)
                 i_21_ = -(0x3 and i_21_)
-                if (i_22_.toInt() != 121) aClass229_3196 = null
+                if (i_22_.toInt() != 121) aRenderConfigFactory_3196 = null
                 for (i_24_ in -i_16_..-1) {
                     for (i_25_ in i_23_..-1) {
                         `is`!![i_17_] = (`is`[i_17_++] + -is_20_!![i++]).toByte()
@@ -390,7 +390,7 @@ class Class248 {
 
         @JvmStatic
         fun method1897(i: Byte) {
-            if (i.toInt() == 119) aClass229_3196 = null
+            if (i.toInt() == 119) aRenderConfigFactory_3196 = null
         }
     }
 }

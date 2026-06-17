@@ -306,13 +306,13 @@ class Class348_Sub32 internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Su
             }
         }
 
-        fun method3021(i: Byte, class229: Class229?): Int {
+        fun method3021(i: Byte, renderConfigFactory: RenderConfigFactory?): Int {
             anInt6931++
-            if (class229 != Class328_Sub3.aClass229_6519) {
-                if (ParticleSystemState.aClass229_2207 == class229) return 8448
-                if (class229 == Class248.aClass229_3196) return 34165
-                if (Class348_Sub23_Sub2.aClass229_9011 == class229) return 260
-                if (class229 == Class348_Sub7.aClass229_6644) return 34023
+            if (renderConfigFactory != Class328_Sub3.aRenderConfigFactory_6519) {
+                if (ParticleSystemState.aRenderConfigFactory_2207 == renderConfigFactory) return 8448
+                if (renderConfigFactory == Class248.aRenderConfigFactory_3196) return 34165
+                if (Class348_Sub23_Sub2.aRenderConfigFactory_9011 == renderConfigFactory) return 260
+                if (renderConfigFactory == Class348_Sub7.aRenderConfigFactory_6644) return 34023
             } else return 7681
             if (i.toInt() != 32) Companion.method3021((-21).toByte(), null)
             throw IllegalArgumentException()

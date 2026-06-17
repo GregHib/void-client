@@ -184,7 +184,7 @@ object ClientLoadStateMachine {
             Class64_Sub3.aClass261_5558 = Class261(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class239.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             Class348_Sub7.aClass33_6653 = Class33(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class247.aClass45_3183)
-            Class229.aClass268_2979 = Class268(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
+            RenderConfigFactory.aClass268_2979 = Class268(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class362.aParticleDefLoader_4460 = ParticleDefLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class73.aModelDefinitionCache_4782 = ModelDefinitionCache(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             Class348_Sub40_Sub25.aModelDefinitionLoader_9342 = ModelDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, RasterSprite.aClass45_5207)
@@ -203,7 +203,7 @@ object ClientLoadStateMachine {
             SpriteLoadValidator.aClass65_4787 = Class65(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class91.aClass82_1523 = Class82(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class239_Sub14.aClass259_5995 = Class259(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class229.aVarbitDefLoader_2981 = VarbitDefLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926)
+            RenderConfigFactory.aVarbitDefLoader_2981 = VarbitDefLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926)
             Class269.aParticleAmountCache_3453 = ParticleAmountCache(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class65.method699(SoftwareSpriteRaster.aClass45_1627, (-100).toByte(), Class348_Sub35.aClass45_6980, CameraRotationStub.aClass45_322, RasterSprite.aClass45_5207)
             method85(0, Class262.aClass45_3323)
@@ -222,7 +222,7 @@ object ClientLoadStateMachine {
             } catch (throwable: Throwable) {
                 /* empty */
             }
-            Class348_Sub8.aClass241_6660 = Class229.method1631(false)
+            Class348_Sub8.aClass241_6660 = RenderConfigFactory.method1631(false)
             Class348_Sub40_Sub20.aClass348_Sub4_9264 = Class348_Sub4(true, Class348_Sub23_Sub1.aClass297_8992!!)
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1037) {
@@ -230,7 +230,7 @@ object ClientLoadStateMachine {
             val i_12_ = (Class288_Sub1.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
-        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, Class229.aClass268_2979, Class362.aParticleDefLoader_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)
+        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, RenderConfigFactory.aClass268_2979, Class362.aParticleDefLoader_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
             Class77.anIntArray1303 = (IntArray(Class239_Sub14.aClass259_5995!!.anInt3305 + 1000))

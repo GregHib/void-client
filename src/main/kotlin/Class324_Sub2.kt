@@ -157,10 +157,10 @@ class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: NativeRender
         aHa_Sub3_6494.method3927(true)
         aHa_Sub3_6494.method3850((-41).toByte(), anInterface18_Impl3_6492)
         if (aBoolean6493 || bool) {
-            aHa_Sub3_6494.method3874(ParticleSystemState.aClass229_2207, 112, Class328_Sub3.aClass229_6519)
+            aHa_Sub3_6494.method3874(ParticleSystemState.aRenderConfigFactory_2207, 112, Class328_Sub3.aRenderConfigFactory_6519)
             aHa_Sub3_6494.method3849(47.toByte(), 0, Class348_Sub40_Sub39.aClass70_9485)
             aHa_Sub3_6494.method3894(-28186, i_50_)
-        } else aHa_Sub3_6494.method3874(Class328_Sub3.aClass229_6519, 126, Class328_Sub3.aClass229_6519)
+        } else aHa_Sub3_6494.method3874(Class328_Sub3.aRenderConfigFactory_6519, 126, Class328_Sub3.aRenderConfigFactory_6519)
         val class101_sub2 = aHa_Sub3_6494.method3934(-99)
         class101_sub2!!.method894(i, i_49_, 0)
         aHa_Sub3_6494.method3915(0)

@@ -120,7 +120,7 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) :
 
     companion object {
         @JvmField
-        var aClass229_9011: Class229? = Class229()
+        var aRenderConfigFactory_9011: RenderConfigFactory? = RenderConfigFactory()
         @JvmField
         var anInt9012: Int = 0
         @JvmField
@@ -159,9 +159,9 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) :
         @JvmStatic
         fun method2974(i: Int) {
             aClass351_9034 = null
-            if (i != 1) aClass229_9011 = null
+            if (i != 1) aRenderConfigFactory_9011 = null
             aClass45_9033 = null
-            aClass229_9011 = null
+            aRenderConfigFactory_9011 = null
             aClass77_9029 = null
             aConfigDefinitionLoader_9031 = null
             aLocTypeDefLoader_9036 = null
