@@ -68,10 +68,10 @@ class MapAreaDefinition {
             var i_21_ = 0
             Class367_Sub11.anIntArray7397!![i_21_] = i_15_
             var i_22_ = 0
-            Class205.anIntArray2694!![i_21_++] = i_16_
+            CircleDrawer.anIntArray2694!![i_21_++] = i_16_
             val `is` = class361.anIntArrayArray4438!!
             while_56_@ while (i_22_ != i_21_) {
-                i_16_ = Class205.anIntArray2694!![i_22_]
+                i_16_ = CircleDrawer.anIntArray2694!![i_22_]
                 i_15_ = Class367_Sub11.anIntArray7397!![i_22_]
                 i_17_ = i_15_ + -i_19_
                 i_18_ = -i_20_ + i_16_
@@ -143,7 +143,7 @@ class MapAreaDefinition {
                             i_26_++
                         }
                         Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - 1
-                        Class205.anIntArray2694!![i_21_] = i_16_
+                        CircleDrawer.anIntArray2694!![i_21_] = i_16_
                         i_21_ = i_21_ - -1 and 0xfff
                         RenderNode.anIntArrayArray9723!![i_17_ - 1]!![i_18_] = 2
                         Class223.anIntArrayArray2900!![-1 + i_17_]!![i_18_] = i_25_
@@ -157,7 +157,7 @@ class MapAreaDefinition {
                             i_27_++
                         }
                         Class367_Sub11.anIntArray7397!![i_21_] = 1 + i_15_
-                        Class205.anIntArray2694!![i_21_] = i_16_
+                        CircleDrawer.anIntArray2694!![i_21_] = i_16_
                         RenderNode.anIntArrayArray9723!![1 + i_17_]!![i_18_] = 8
                         i_21_ = 0xfff and i_21_ - -1
                         Class223.anIntArrayArray2900!![i_17_ + 1]!![i_18_] = i_25_
@@ -171,7 +171,7 @@ class MapAreaDefinition {
                             i_28_++
                         }
                         Class367_Sub11.anIntArray7397!![i_21_] = i_15_
-                        Class205.anIntArray2694!![i_21_] = -1 + i_16_
+                        CircleDrawer.anIntArray2694!![i_21_] = -1 + i_16_
                         RenderNode.anIntArrayArray9723!![i_17_]!![-1 + i_18_] = 1
                         i_21_ = 0xfff and 1 + i_21_
                         Class223.anIntArrayArray2900!![i_17_]!![-1 + i_18_] = i_25_
@@ -185,7 +185,7 @@ class MapAreaDefinition {
                             i_29_++
                         }
                         Class367_Sub11.anIntArray7397!![i_21_] = i_15_
-                        Class205.anIntArray2694!![i_21_] = i_16_ - -1
+                        CircleDrawer.anIntArray2694!![i_21_] = i_16_ - -1
                         RenderNode.anIntArrayArray9723!![i_17_]!![1 + i_18_] = 4
                         i_21_ = i_21_ - -1 and 0xfff
                         Class223.anIntArrayArray2900!![i_17_]!![i_18_ + 1] = i_25_
@@ -199,7 +199,7 @@ class MapAreaDefinition {
                             i_30_++
                         }
                         Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - 1
-                        Class205.anIntArray2694!![i_21_] = -1 + i_16_
+                        CircleDrawer.anIntArray2694!![i_21_] = -1 + i_16_
                         i_21_ = 1 + i_21_ and 0xfff
                         RenderNode.anIntArrayArray9723!![i_17_ - 1]!![-1 + i_18_] = 3
                         Class223.anIntArrayArray2900!![i_17_ + -1]!![-1 + i_18_] = i_25_
@@ -213,7 +213,7 @@ class MapAreaDefinition {
                             i_31_++
                         }
                         Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - -1
-                        Class205.anIntArray2694!![i_21_] = -1 + i_16_
+                        CircleDrawer.anIntArray2694!![i_21_] = -1 + i_16_
                         RenderNode.anIntArrayArray9723!![1 + i_17_]!![-1 + i_18_] = 9
                         i_21_ = 0xfff and i_21_ - -1
                         Class223.anIntArrayArray2900!![1 + i_17_]!![-1 + i_18_] = i_25_
@@ -225,7 +225,7 @@ class MapAreaDefinition {
                             if ((`is`[-1 + i_23_]!![i_32_ + i_24_] and 0x4fa40000) != 0 || (`is`[i_32_ + (i_23_ + -1)]!![i_24_ - -i_12_] and 0x7e240000) != 0) break@while_55_
                         }
                         Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - 1
-                        Class205.anIntArray2694!![i_21_] = i_16_ - -1
+                        CircleDrawer.anIntArray2694!![i_21_] = i_16_ - -1
                         RenderNode.anIntArrayArray9723!![i_17_ - 1]!![i_18_ - -1] = 6
                         i_21_ = i_21_ - -1 and 0xfff
                         Class223.anIntArrayArray2900!![-1 + i_17_]!![i_18_ - -1] = i_25_
@@ -238,7 +238,7 @@ class MapAreaDefinition {
                         i_33_++
                     }
                     Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - -1
-                    Class205.anIntArray2694!![i_21_] = i_16_ - -1
+                    CircleDrawer.anIntArray2694!![i_21_] = i_16_ - -1
                     i_21_ = 0xfff and 1 + i_21_
                     RenderNode.anIntArrayArray9723!![i_17_ - -1]!![1 + i_18_] = 12
                     Class223.anIntArrayArray2900!![i_17_ + 1]!![i_18_ - -1] = i_25_

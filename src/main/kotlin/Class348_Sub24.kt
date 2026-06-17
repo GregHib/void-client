@@ -195,7 +195,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         if (Class348_Sub40_Sub21.anInt9282 == 2) method241(127.toByte())
                         else if (Class348_Sub40_Sub21.anInt9282 == 3) Class348_Sub21.Companion.method2954((-4).toByte())
                     }
-                    if (!KeyboardLayoutConfig.aBoolean2130) Class205.aFloat2687 /= 2.0f
+                    if (!KeyboardLayoutConfig.aBoolean2130) CircleDrawer.aFloat2687 /= 2.0f
                     else KeyboardLayoutConfig.aBoolean2130 = false
                     if (!Class50_Sub1.aBoolean5224) Class348_Sub27.Companion.aFloat6898 /= 2.0f
                     else Class50_Sub1.aBoolean5224 = false

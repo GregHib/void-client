@@ -1369,7 +1369,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
-            if (Class205.aIntRange_2693 == Class348_Sub3.aIntRange_6584) {
+            if (CircleDrawer.aIntRange_2693 == Class348_Sub3.aIntRange_6584) {
                 val bool_174_ = (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                 val string = Class299.aClass348_Sub49_Sub2_3813!!.readString(107.toByte())
                 var string_175_ = string

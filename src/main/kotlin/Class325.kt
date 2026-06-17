@@ -527,7 +527,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class348.anInt4292 = 0
                             Class239_Sub20.anInt6048 = 2
                             Class93.anInt1534 = i_72_
-                            Class205.anInt2689++
+                            CircleDrawer.anInt2689++
                             val class348_sub47 = method2148(Class344.aClass351_4262, (Class348_Sub23_Sub2.aClass77_9029), -107)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_74_ + ArbVertexProgram.regionTileX, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-107, i_77_)
@@ -641,7 +641,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class239_Sub20.anInt6048 = 2
                             Class348.anInt4292 = 0
                             Class26.anInt385 = i_73_
-                            val class348_sub47 = method2148(Class205.aClass351_2691, (Class348_Sub23_Sub2.aClass77_9029), -115)
+                            val class348_sub47 = method2148(CircleDrawer.aClass351_2691, (Class348_Sub23_Sub2.aClass77_9029), -115)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                             Class348_Sub42_Sub14.method3243(-60, class348_sub47)
                         }

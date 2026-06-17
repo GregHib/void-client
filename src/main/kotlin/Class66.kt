@@ -2663,7 +2663,7 @@ object Class66 {
                 }
             }
             anInt1158++
-            val class348_sub47 = method2148(Class205.aClass351_2686, Class348_Sub23_Sub2.aClass77_9029, -88)
+            val class348_sub47 = method2148(CircleDrawer.aClass351_2686, Class348_Sub23_Sub2.aClass77_9029, -88)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
             val i_243_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_241_)

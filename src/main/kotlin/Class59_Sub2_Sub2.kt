@@ -174,14 +174,14 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 var i_44_ = 0
                 if (i_18_.toInt() != 120) aIntRange_8683 = null
                 Class367_Sub11.anIntArray7397!![i_44_] = i_32_
-                Class205.anIntArray2694!![i_44_++] = i_33_
+                CircleDrawer.anIntArray2694!![i_44_++] = i_33_
                 var i_46_: Int
                 var i_45_ = (RenderNode.anIntArrayArray9723!![i_32_ + -i_30_]!![-i_31_ + i_33_].also { i_46_ = it })
                 while (i_32_ != i_20_ || i_33_ != i_21_) {
                     if (i_46_ != i_45_) {
                         Class367_Sub11.anIntArray7397!![i_44_] = i_32_
                         i_46_ = i_45_
-                        Class205.anIntArray2694!![i_44_++] = i_33_
+                        CircleDrawer.anIntArray2694!![i_44_++] = i_33_
                     }
                     if ((i_45_ and 0x2) == 0) {
                         if ((0x8 and i_45_) != 0) i_32_--
@@ -194,7 +194,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 var i_47_ = 0
                 while (i_44_-- > 0) {
                     is_22_!![i_47_] = Class367_Sub11.anIntArray7397!![i_44_]
-                    `is`!![i_47_++] = Class205.anIntArray2694!![i_44_]
+                    `is`!![i_47_++] = CircleDrawer.anIntArray2694!![i_44_]
                     if (is_22_.size <= i_47_) break
                 }
                 return i_47_

@@ -204,7 +204,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub4.anInt6413 = 0
             Class79.anInt1351 = 0
             Class348_Sub40_Sub29.anInt9371 = 0
-            Class205.anInt2689 = 0
+            CircleDrawer.anInt2689 = 0
             Class318_Sub1_Sub1_Sub1.anInt9962 = 0
             VarbitDefLoader.anInt2598 = 0
             Class377.anInt9824 = 0
@@ -851,7 +851,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class279.anInt3597 = 0
             Class286_Sub6.anInt6267 = 0
             Class239_Sub26.anInt6124 = 0
-            Class205.anInt2685 = 0
+            CircleDrawer.anInt2685 = 0
             HitsplatDefinition.anInt2014 = 0
             NativeRenderer.anInt8072 = 0
             Class318_Sub1_Sub4_Sub2.anInt10117 = 0
@@ -1228,7 +1228,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub31.anInt6922 = 0
             Class258.anInt4863 = 0
             Class377.anInt9833 = 0
-            Class205.anInt2690 = 0
+            CircleDrawer.anInt2690 = 0
             Class348_Sub16_Sub3.anInt8938 = 0
             OpenGlRenderer.anInt7695 = 0
             Class369_Sub2.anInt8588 = 0

@@ -122,8 +122,8 @@ class Class239_Sub24 : Class239 {
                     i_11_ = i + MinimapFlagRenderer.method1082(-81, false)
                     i_12_ = Class348_Sub23.method2960(false, -52) + i_4_
                 } else {
-                    var_renderer.DA(Class336.anInt4171, Class205.anInt2688, GlFramebufferBlitter.anInt282, Class305.anInt3861)
-                    i_8_ = Class205.anInt2688
+                    var_renderer.DA(Class336.anInt4171, CircleDrawer.anInt2688, GlFramebufferBlitter.anInt282, Class305.anInt3861)
+                    i_8_ = CircleDrawer.anInt2688
                     i_9_ = Class305.anInt3861
                     i_7_ = Class336.anInt4171
                     i_10_ = GlFramebufferBlitter.anInt282

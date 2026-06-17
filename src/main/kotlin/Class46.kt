@@ -854,7 +854,7 @@ class Class46 {
         this.anInt797 = InputStream_Sub1.anInt78
         this.anInt779 = -1
         this.anInt719 = -1
-        this.aClass348_Sub44_748 = Class205.aClass348_Sub44_2692
+        this.aClass348_Sub44_748 = CircleDrawer.aClass348_Sub44_2692
         this.anInt760 = -1
         this.aByte778 = 0.toByte()
         this.aByte724 = 0.toByte()

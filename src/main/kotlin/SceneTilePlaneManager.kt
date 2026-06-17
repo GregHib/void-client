@@ -68,7 +68,7 @@ object SceneTilePlaneManager {
         if (i != 0) aWidgetNodeLink_231 = null
         if (!KeyboardLayoutConfig.aBoolean2130) {
             KeyboardLayoutConfig.aBoolean2130 = true
-            Class205.aFloat2687 += (-Class205.aFloat2687 + -24.0f) / 2.0f
+            CircleDrawer.aFloat2687 += (-CircleDrawer.aFloat2687 + -24.0f) / 2.0f
             Class369_Sub3_Sub1.aBoolean10174 = true
         }
     }

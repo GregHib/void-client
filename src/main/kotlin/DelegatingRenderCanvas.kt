@@ -67,7 +67,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     FrameStatsReset.anInt5799 += i_3_
                 }
                 if (i == -1) {
-                    Class314.aFloat3938 += Class205.aFloat2687 * l.toFloat() / 6.0f
+                    Class314.aFloat3938 += CircleDrawer.aFloat2687 * l.toFloat() / 6.0f
                     if (i_1_ != AsyncTaskHandle.anInt2578) {
                         val i_4_ = i_1_ - AsyncTaskHandle.anInt2578
                         var i_5_ = (i_4_.toLong() * l / 320L).toInt()

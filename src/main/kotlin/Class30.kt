@@ -64,7 +64,7 @@ class Class30 internal constructor(private var anInt409: Int, private var anInt4
             Class336.anInt4171 = i_2_
             Class305.anInt3861 = i_0_
             GlFramebufferBlitter.anInt282 = i
-            Class205.anInt2688 = i_3_
+            CircleDrawer.anInt2688 = i_3_
         }
 
         @JvmStatic

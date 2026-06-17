@@ -5,7 +5,7 @@ import Class85.Companion.method831
 /* Class205 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class205 {
+object CircleDrawer {
     var anInt2685: Int = 0
     var aClass351_2686: Class351?
     @JvmField
