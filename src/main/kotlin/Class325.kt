@@ -834,7 +834,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class348_Sub42_Sub18.method3275(1, i_75_, i_74_)
                         }
                         if (i_76_ == 3) {
-                            Class151.anInt2065++
+                            HeadIconRenderer.anInt2065++
                             Class26.anInt385 = i_73_
                             Class348.anInt4292 = 0
                             Class239_Sub20.anInt6048 = 2

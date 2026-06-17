@@ -70,7 +70,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
     private var anInt5497 = 0
     private var aByteArray5499: ByteArray? = null
     private var aBoolean5502 = false
-    private var aClass151_5503: Class151? = null
+    private var aHeadIconRenderer_5503: HeadIconRenderer? = null
     private var aFloatArray5506: FloatArray? = null
     private var anInt5507 = 0
     private var aShortArray5508: ShortArray? = null
@@ -154,16 +154,16 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val is_12_: ShortArray?
                     val is_13_: ByteArray?
                     val is_14_: ShortArray?
-                    if (aClass151_5503 == null) {
+                    if (aHeadIconRenderer_5503 == null) {
                         is_13_ = aByteArray5499
                         `is` = aShortArray5436
                         is_14_ = aShortArray5493
                         is_12_ = aShortArray5438
                     } else {
-                        `is` = aClass151_5503!!.aShortArray2058
-                        is_12_ = aClass151_5503!!.aShortArray2060
-                        is_13_ = aClass151_5503!!.aByteArray2069
-                        is_14_ = aClass151_5503!!.aShortArray2067
+                        `is` = aHeadIconRenderer_5503!!.aShortArray2058
+                        is_12_ = aHeadIconRenderer_5503!!.aShortArray2060
+                        is_13_ = aHeadIconRenderer_5503!!.aByteArray2069
+                        is_14_ = aHeadIconRenderer_5503!!.aShortArray2067
                     }
                     aHa_Sub3_5419!!.aNativeInterface7924!!.copyLighting(aShortArray5486, aByteArray5515, aShortArray5423, is_14_, is_12_, `is`, is_13_, aShort5452.toInt(), aShort5427.toInt(), aShortArray5416, 0, 4, anInt5475, buffer.getAddress())
                 } else aHa_Sub3_5419!!.aNativeInterface7924!!.copyColours(aShortArray5486, aByteArray5515, aShortArray5423, aShort5452.toInt(), aShortArray5416, 0, 4, anInt5475, buffer.getAddress())
@@ -184,16 +184,16 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 val is_15_: ShortArray?
                 val is_16_: ByteArray?
                 val is_17_: ShortArray?
-                if (aClass151_5503 == null) {
+                if (aHeadIconRenderer_5503 == null) {
                     `is` = aShortArray5436
                     is_15_ = aShortArray5493
                     is_16_ = aByteArray5499
                     is_17_ = aShortArray5438
                 } else {
-                    is_16_ = aClass151_5503!!.aByteArray2069
-                    `is` = aClass151_5503!!.aShortArray2058
-                    is_15_ = aClass151_5503!!.aShortArray2067
-                    is_17_ = aClass151_5503!!.aShortArray2060
+                    is_16_ = aHeadIconRenderer_5503!!.aByteArray2069
+                    `is` = aHeadIconRenderer_5503!!.aShortArray2058
+                    is_15_ = aHeadIconRenderer_5503!!.aShortArray2067
+                    is_17_ = aHeadIconRenderer_5503!!.aShortArray2060
                 }
                 aHa_Sub3_5419!!.aNativeInterface7924!!.copyNormals(is_15_, is_17_, `is`, is_16_, 3.0f / aShort5427.toFloat(), 3.0f / (aShort5427 + aShort5427 / 2).toFloat(), 0, 12, anInt5475, buffer.getAddress())
                 if (interface5_impl1.method18(6331)) {
@@ -1017,8 +1017,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     class64_sub2_154_.aShortArray5493 = class64_sub2_153_.aShortArray5493
                     class64_sub2_154_.aShortArray5438 = class64_sub2_153_.aShortArray5438
                 }
-                if (aClass151_5503 == null) {
-                    class64_sub2_154_.aClass151_5503 = null
+                if (aHeadIconRenderer_5503 == null) {
+                    class64_sub2_154_.aHeadIconRenderer_5503 = null
                     var i_165_ = 0
                     while (anInt5475 > i_165_) {
                         class64_sub2_154_.aShortArray5493!![i_165_] = aShortArray5493!![i_165_]
@@ -1027,8 +1027,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         i_165_++
                     }
                 } else {
-                    if (class64_sub2_153_.aClass151_5503 == null) class64_sub2_153_.aClass151_5503 = Class151()
-                    val class151 = (class64_sub2_153_.aClass151_5503.also { class64_sub2_154_.aClass151_5503 = it })!!
+                    if (class64_sub2_153_.aHeadIconRenderer_5503 == null) class64_sub2_153_.aHeadIconRenderer_5503 = HeadIconRenderer()
+                    val class151 = (class64_sub2_153_.aHeadIconRenderer_5503.also { class64_sub2_154_.aHeadIconRenderer_5503 = it })!!
                     if (class151.aShortArray2067 == null || (class151.aShortArray2067!!.size < anInt5475)) {
                         val i_166_ = anInt5475
                         class151.aByteArray2069 = ByteArray(i_166_)
@@ -1040,16 +1040,16 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         class64_sub2_154_.aShortArray5493!![i_167_] = aShortArray5493!![i_167_]
                         class64_sub2_154_.aShortArray5438!![i_167_] = aShortArray5438!![i_167_]
                         class64_sub2_154_.aShortArray5436!![i_167_] = aShortArray5436!![i_167_]
-                        class151.aShortArray2067!![i_167_] = (aClass151_5503!!.aShortArray2067!![i_167_])
-                        class151.aShortArray2060!![i_167_] = (aClass151_5503!!.aShortArray2060!![i_167_])
-                        class151.aShortArray2058!![i_167_] = (aClass151_5503!!.aShortArray2058!![i_167_])
-                        class151.aByteArray2069!![i_167_] = (aClass151_5503!!.aByteArray2069!![i_167_])
+                        class151.aShortArray2067!![i_167_] = (aHeadIconRenderer_5503!!.aShortArray2067!![i_167_])
+                        class151.aShortArray2060!![i_167_] = (aHeadIconRenderer_5503!!.aShortArray2060!![i_167_])
+                        class151.aShortArray2058!![i_167_] = (aHeadIconRenderer_5503!!.aShortArray2058!![i_167_])
+                        class151.aByteArray2069!![i_167_] = (aHeadIconRenderer_5503!!.aByteArray2069!![i_167_])
                     }
                 }
                 class64_sub2_154_.aByteArray5499 = aByteArray5499
             } else {
                 class64_sub2_154_.aByteArray5499 = aByteArray5499
-                class64_sub2_154_.aClass151_5503 = aClass151_5503
+                class64_sub2_154_.aHeadIconRenderer_5503 = aHeadIconRenderer_5503
                 class64_sub2_154_.aShortArray5436 = aShortArray5436
                 class64_sub2_154_.aShortArray5493 = aShortArray5493
                 class64_sub2_154_.aShortArray5438 = aShortArray5438
@@ -1837,12 +1837,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         if (aClass290_5424 != null) aClass290_5424!!.aBoolean3709 = Crc64Hashable.method1113(i, anInt5472, -10)
         anInt5463 = i
         aBoolean5402 = true
-        if (aClass151_5503 != null && (anInt5463 and 0x10000) == 0) {
-            aShortArray5438 = aClass151_5503!!.aShortArray2060
-            aShortArray5436 = aClass151_5503!!.aShortArray2058
-            aShortArray5493 = aClass151_5503!!.aShortArray2067
-            aByteArray5499 = aClass151_5503!!.aByteArray2069
-            aClass151_5503 = null
+        if (aHeadIconRenderer_5503 != null && (anInt5463 and 0x10000) == 0) {
+            aShortArray5438 = aHeadIconRenderer_5503!!.aShortArray2060
+            aShortArray5436 = aHeadIconRenderer_5503!!.aShortArray2058
+            aShortArray5493 = aHeadIconRenderer_5503!!.aShortArray2067
+            aByteArray5499 = aHeadIconRenderer_5503!!.aByteArray2069
+            aHeadIconRenderer_5503 = null
         }
         method663(262144)
     }
@@ -2458,31 +2458,31 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 var is_494_: ShortArray?
                 var is_495_: ByteArray?
                 var is_496_: ShortArray?
-                if (aClass151_5503 == null) {
+                if (aHeadIconRenderer_5503 == null) {
                     is_493_ = null
                     is_494_ = null
                     is_495_ = null
                     is_496_ = null
                 } else {
-                    is_495_ = aClass151_5503!!.aByteArray2069
-                    is_493_ = aClass151_5503!!.aShortArray2060
-                    is_494_ = aClass151_5503!!.aShortArray2067
-                    is_496_ = aClass151_5503!!.aShortArray2058
+                    is_495_ = aHeadIconRenderer_5503!!.aByteArray2069
+                    is_493_ = aHeadIconRenderer_5503!!.aShortArray2060
+                    is_494_ = aHeadIconRenderer_5503!!.aShortArray2067
+                    is_496_ = aHeadIconRenderer_5503!!.aShortArray2058
                 }
                 var is_497_: ShortArray?
                 var is_498_: ByteArray?
                 var is_499_: ShortArray?
                 var is_500_: ShortArray?
-                if (class64_sub2_485_.aClass151_5503 == null) {
+                if (class64_sub2_485_.aHeadIconRenderer_5503 == null) {
                     is_497_ = null
                     is_498_ = null
                     is_499_ = null
                     is_500_ = null
                 } else {
-                    is_499_ = (class64_sub2_485_.aClass151_5503!!.aShortArray2058)
-                    is_498_ = (class64_sub2_485_.aClass151_5503!!.aByteArray2069)
-                    is_497_ = (class64_sub2_485_.aClass151_5503!!.aShortArray2060)
-                    is_500_ = (class64_sub2_485_.aClass151_5503!!.aShortArray2067)
+                    is_499_ = (class64_sub2_485_.aHeadIconRenderer_5503!!.aShortArray2058)
+                    is_498_ = (class64_sub2_485_.aHeadIconRenderer_5503!!.aByteArray2069)
+                    is_497_ = (class64_sub2_485_.aHeadIconRenderer_5503!!.aShortArray2060)
+                    is_500_ = (class64_sub2_485_.aHeadIconRenderer_5503!!.aShortArray2067)
                 }
                 val is_501_ = class64_sub2_485_.anIntArray5455
                 val is_502_ = class64_sub2_485_.aShortArray5439
@@ -2523,26 +2523,26 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                             }
                                             if (i_518_ != -1) {
                                                 if (is_494_ == null) {
-                                                    aClass151_5503 = Class151()
-                                                    aClass151_5503!!.aShortArray2067 = (Class50_Sub3.method470(aShortArray5493, (-123).toByte()))
-                                                    is_494_ = aClass151_5503!!.aShortArray2067
-                                                    aClass151_5503!!.aShortArray2060 = (Class50_Sub3.method470(aShortArray5438, (-126).toByte()))
-                                                    is_493_ = aClass151_5503!!.aShortArray2060
-                                                    aClass151_5503!!.aShortArray2058 = (Class50_Sub3.method470(aShortArray5436, (-111).toByte()))
-                                                    is_496_ = aClass151_5503!!.aShortArray2058
-                                                    aClass151_5503!!.aByteArray2069 = (Class309.method2309(-106, aByteArray5499))
-                                                    is_495_ = aClass151_5503!!.aByteArray2069
+                                                    aHeadIconRenderer_5503 = HeadIconRenderer()
+                                                    aHeadIconRenderer_5503!!.aShortArray2067 = (Class50_Sub3.method470(aShortArray5493, (-123).toByte()))
+                                                    is_494_ = aHeadIconRenderer_5503!!.aShortArray2067
+                                                    aHeadIconRenderer_5503!!.aShortArray2060 = (Class50_Sub3.method470(aShortArray5438, (-126).toByte()))
+                                                    is_493_ = aHeadIconRenderer_5503!!.aShortArray2060
+                                                    aHeadIconRenderer_5503!!.aShortArray2058 = (Class50_Sub3.method470(aShortArray5436, (-111).toByte()))
+                                                    is_496_ = aHeadIconRenderer_5503!!.aShortArray2058
+                                                    aHeadIconRenderer_5503!!.aByteArray2069 = (Class309.method2309(-106, aByteArray5499))
+                                                    is_495_ = aHeadIconRenderer_5503!!.aByteArray2069
                                                 }
                                                 if (is_500_ == null) {
-                                                    val class151 = (Class151().also { class64_sub2_485_.aClass151_5503 = it })
-                                                    class151.aShortArray2067 = (Class50_Sub3.method470(is_489_, (-120).toByte()))
-                                                    is_500_ = class151.aShortArray2067
-                                                    class151.aShortArray2060 = (Class50_Sub3.method470(is_490_, (-104).toByte()))
-                                                    is_497_ = class151.aShortArray2060
-                                                    class151.aShortArray2058 = (Class50_Sub3.method470(is_491_, (-118).toByte()))
-                                                    is_499_ = class151.aShortArray2058
-                                                    class151.aByteArray2069 = (Class309.method2309(-114, is_492_))
-                                                    is_498_ = class151.aByteArray2069
+                                                    val headIconRenderer = (HeadIconRenderer().also { class64_sub2_485_.aHeadIconRenderer_5503 = it })
+                                                    headIconRenderer.aShortArray2067 = (Class50_Sub3.method470(is_489_, (-120).toByte()))
+                                                    is_500_ = headIconRenderer.aShortArray2067
+                                                    headIconRenderer.aShortArray2060 = (Class50_Sub3.method470(is_490_, (-104).toByte()))
+                                                    is_497_ = headIconRenderer.aShortArray2060
+                                                    headIconRenderer.aShortArray2058 = (Class50_Sub3.method470(is_491_, (-118).toByte()))
+                                                    is_499_ = headIconRenderer.aShortArray2058
+                                                    headIconRenderer.aByteArray2069 = (Class309.method2309(-114, is_492_))
+                                                    is_498_ = headIconRenderer.aByteArray2069
                                                 }
                                                 var i_520_ = aShortArray5493!![i_513_]
                                                 var i_521_ = aShortArray5438!![i_513_]

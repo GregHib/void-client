@@ -3834,7 +3834,7 @@ object Class66 {
                     return
                 }
                 if (i == 3201) {
-                    Class151.method1212(255, anIntArray1149!![--anInt1173], -1, 50)
+                    HeadIconRenderer.method1212(255, anIntArray1149!![--anInt1173], -1, 50)
                     return
                 }
                 if (i == 3202) {
@@ -3849,7 +3849,7 @@ object Class66 {
                 }
                 if (i == 3204) {
                     anInt1173 -= 3
-                    Class151.method1212(anIntArray1149!![anInt1173 + 1], anIntArray1149!![anInt1173], -1, anIntArray1149!![anInt1173 + 2])
+                    HeadIconRenderer.method1212(anIntArray1149!![anInt1173 + 1], anIntArray1149!![anInt1173], -1, anIntArray1149!![anInt1173 + 2])
                     return
                 }
                 if (i == 3205) {

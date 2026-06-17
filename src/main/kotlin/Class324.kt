@@ -215,8 +215,8 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
                                             if (string.startsWith("shad=")) Class20.anInt320 = ((0xffffff.inv() and (Class348_Sub42_Sub1.anInt9492)) or (Class48.method450(-20188, string.substring(5), 16)))
                                             else if (string == "shad") Class20.anInt320 = (0xffffff.inv() and (Class348_Sub42_Sub1.anInt9492))
                                             else if (string != "/shad") {
-                                                if (string == "br") method2579((Class151.anInt2061), 117, (Class186_Sub1.anInt5807))
-                                            } else Class20.anInt320 = Class151.anInt2061
+                                                if (string == "br") method2579((HeadIconRenderer.anInt2061), 117, (Class186_Sub1.anInt5807))
+                                            } else Class20.anInt320 = HeadIconRenderer.anInt2061
                                         } else Class20.anInt320 = 0
                                     } else Class348_Sub40_Sub2.anInt9101 = -1
                                 } else Class348_Sub40_Sub2.anInt9101 = (Class348_Sub42_Sub1.anInt9492 and 0xffffff.inv())
@@ -292,8 +292,8 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, fontDefini
         val i_87_ = -28 / ((56 - i_85_) / 49)
         anInt4053++
         Player.anInt10567 = -1
-        Class151.anInt2061 = i
-        Class20.anInt320 = Class151.anInt2061
+        HeadIconRenderer.anInt2061 = i
+        Class20.anInt320 = HeadIconRenderer.anInt2061
     }
 
     private fun method2580(string: String, i: Int, i_88_: Int) {

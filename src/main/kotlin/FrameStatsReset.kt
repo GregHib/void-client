@@ -763,7 +763,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub42_Sub9_Sub1.anInt10439 = 0
             Class5.anInt4634 = 0
             LinkedNodeListIterator.anInt1654 = 0
-            Class151.anInt2065 = 0
+            HeadIconRenderer.anInt2065 = 0
             Class348_Sub42.anInt7062 = 0
             OpenGlRenderer.anInt7599 = 0
             Class318_Sub4.anInt6407 = 0
@@ -999,7 +999,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub3.anInt6576 = 0
             Class26.anInt378 = 0
             Class377.anInt9827 = 0
-            Class151.anInt2063 = 0
+            HeadIconRenderer.anInt2063 = 0
             Class239_Sub8.anInt5918 = 0
             HitsplatDefinition.anInt2012 = 0
             Class285_Sub2.anInt8506 = 0
@@ -2759,7 +2759,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class59_Sub2.anInt5301 = 0
             Class318_Sub1_Sub2.anInt8735 = 0
             Player.anInt10525 = 0
-            Class151.anInt2066 = 0
+            HeadIconRenderer.anInt2066 = 0
             Gl3dTexture.anInt8627 = 0
             Class377.anInt9886 = 0
             Class55.anInt1002 = 0
@@ -3107,7 +3107,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class156.anInt2120 = 0
             Class299_Sub2.anInt6324 = 0
             Class348_Sub42_Sub16_Sub2.anInt10462 = 0
-            Class151.anInt2064 = 0
+            HeadIconRenderer.anInt2064 = 0
             Class170.anInt5062 = 0
             Class348_Sub49.anInt7196 = 0
             Class331.anInt4137 = 0
@@ -3921,7 +3921,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class222.anInt2889 = 0
             NativeRenderer.anInt7933 = 0
             NativeRenderer.anInt7898 = 0
-            Class151.anInt2059 = 0
+            HeadIconRenderer.anInt2059 = 0
             Class318_Sub1_Sub1_Sub1.anInt9954 = 0
             Class318_Sub1_Sub5_Sub1.anInt10144 = 0
             Class182.anInt2450 = 0

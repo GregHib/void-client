@@ -1,4 +1,4 @@
-import Class151.Companion.method1211
+import HeadIconRenderer.Companion.method1211
 import Class19.Companion.method285
 import java.util.zip.CRC32
 import kotlin.math.atan2

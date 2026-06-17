@@ -184,7 +184,7 @@ abstract class Class318_Sub1 : Class318() {
                         var abstractModelRenderer: AbstractModelRenderer? = null
                         if (class42.anInt578 != -1) {
                             abstractModelRenderer = class42.method374(false, var_renderer!!, 127.toByte())
-                            if (abstractModelRenderer != null) Class151.method1211(i, abstractModelRenderer, i_6_, class46, var_sprite, i_8_, 2, i_5_)
+                            if (abstractModelRenderer != null) HeadIconRenderer.method1211(i, abstractModelRenderer, i_6_, class46, var_sprite, i_8_, 2, i_5_)
                         }
                         if (class42.aString597 == null) break
                         var i_29_ = 0
