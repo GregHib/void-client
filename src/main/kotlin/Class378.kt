@@ -841,7 +841,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         fun method3958(i: Int, class68: Class68?, class304: Class304?): Int {
             if (class68 == Class68.aClass68_1183) {
                 if (Class348_Sub45.aClass304_7103 != class304) {
-                    if (Class108.aClass304_1662 == class304) return 21
+                    if (GroundItemRenderState.aClass304_1662 == class304) return 21
                     if (Class348_Sub40_Sub38.aClass304_9471 == class304) return 28
                     if (Class348_Sub40_Sub22.aClass304_9303 == class304) return 50
                     if (class304 == Class191.aClass304_2571) return 51

@@ -21,7 +21,7 @@ class Class14_Sub1 : Class14, Interface18_Impl3 {
         return f / anInt8604.toFloat()
     }
 
-    internal constructor(class377: Class377?, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(class377, 3553, Class108.aClass304_1662, Class68.aClass68_1183, i * i_0_, bool) {
+    internal constructor(class377: Class377?, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(class377, 3553, GroundItemRenderState.aClass304_1662, Class68.aClass68_1183, i * i_0_, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_0_

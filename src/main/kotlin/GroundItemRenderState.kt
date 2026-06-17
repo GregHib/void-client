@@ -4,7 +4,7 @@ import Class89.Companion.method850
 /* Class108 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class108 {
+object GroundItemRenderState {
     @JvmField
     var anInt1656: Int = 0
     @JvmField

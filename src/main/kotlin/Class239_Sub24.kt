@@ -161,7 +161,7 @@ class Class239_Sub24 : Class239 {
                     val is_21_ = intArrayOf(i_18_, i_20_, i_16_)
                     abstractCameraTransform.method890(`is`)
                     abstractCameraTransform.method890(is_21_)
-                    val f = Class108.method1012(`is`[1].toFloat(), is_21_[0].toFloat(), `is`[2].toFloat(), is_21_[2].toFloat(), 4, `is`[0].toFloat(), 123.toByte(), is_21_[1].toFloat())
+                    val f = GroundItemRenderState.method1012(`is`[1].toFloat(), is_21_[0].toFloat(), `is`[2].toFloat(), is_21_[2].toFloat(), 4, `is`[0].toFloat(), 123.toByte(), is_21_[1].toFloat())
                     if (f > 0.0f) {
                         val i_22_ = is_21_[0] + -`is`[0]
                         val i_23_ = -`is`[2] + is_21_[2]

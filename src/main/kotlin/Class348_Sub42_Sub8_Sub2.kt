@@ -65,11 +65,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             anInt10430++
             if (Class348_Sub40_Sub8.aClass238_9165 == null) return false
             if (Class348_Sub3.aClass114_6584 == null) {
-                if (Class108.aBoolean1661) {
+                if (GroundItemRenderState.aBoolean1661) {
                     if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 119)) return false
                     Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, 6.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                     Class348_Sub50.anInt7213 = 0
-                    Class108.aBoolean1661 = false
+                    GroundItemRenderState.aBoolean1661 = false
                     Class13.anInt221++
                 }
                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
@@ -79,7 +79,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class13.anInt221++
                     Class348_Sub50.anInt7213 = 0
                 }
-                Class108.aBoolean1661 = true
+                GroundItemRenderState.aBoolean1661 = true
                 val class114s = Class14_Sub3.method248(-11271)
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.method3407(15295)
                 if (i < 0 || i >= class114s.size) throw IOException("invo:" + i + " ip:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197))

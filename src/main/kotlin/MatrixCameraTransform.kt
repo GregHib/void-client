@@ -314,7 +314,7 @@ class MatrixCameraTransform : AbstractCameraTransform() {
         fun method912(i: Int): Int {
             if (i != 0) return -41
             anInt5657++
-            return Class108.anInt1663
+            return GroundItemRenderState.anInt1663
         }
 
         @JvmStatic

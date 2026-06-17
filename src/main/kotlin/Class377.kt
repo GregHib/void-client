@@ -875,7 +875,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
             anInt9830++
             if (aBoolean9926 || Class192.method1436(103, i) && Class192.method1436(-53, i_63_)) return Class14_Sub1(this, i, i_63_, bool, `is`, i_61_, i_62_)
             if (!aBoolean9919) {
-                val class14_sub1 = Class14_Sub1(this, Class108.aClass304_1662, Class68.aClass68_1183, Class33.method340(i, 108.toByte()), Class33.method340(i_63_, 108.toByte()))
+                val class14_sub1 = Class14_Sub1(this, GroundItemRenderState.aClass304_1662, Class68.aClass68_1183, Class33.method340(i, 108.toByte()), Class33.method340(i_63_, 108.toByte()))
                 class14_sub1.method68(i_62_, 22809, `is`, 0, i_61_, i, 0, i_63_)
                 return class14_sub1
             }

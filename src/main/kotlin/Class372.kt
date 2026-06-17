@@ -27,7 +27,7 @@ class Class372(var_ha_Sub3: NativeRenderer?, var_renderConfig: RenderConfig?) {
         val interface18_impl3: Interface18_Impl3
         if (class12.aBoolean218 && aHa_Sub3_4526!!.method3666()) {
             val fs = aRenderConfig4528.method1(i_1_, 0.7f, false, -30824, i_1_, i_0_)
-            interface18_impl3 = aHa_Sub3_4526.method3891(fs, i_1_, i_1_, Class108.aClass304_1662, -109, class12.aByte205.toInt() != 0)!!
+            interface18_impl3 = aHa_Sub3_4526.method3891(fs, i_1_, i_1_, GroundItemRenderState.aClass304_1662, -109, class12.aByte205.toInt() != 0)!!
         } else {
             val `is`: IntArray?
             if (class12.anInt200 == 2 || !Class251.method1915(4.toByte(), class12.aByte213.toInt())) `is` = aRenderConfig4528.method6(-21540, i_1_, 0.7f, i_0_, false, i_1_)

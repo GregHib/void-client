@@ -343,8 +343,8 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 if (anInt4292 >= 400) Class239_Sub20.anInt6048 = 0
                             }
                             if (Class311.aClass46_3913 != null) {
-                                Class108.anInt1656++
-                                if (Class108.anInt1656 >= 15) {
+                                GroundItemRenderState.anInt1656++
+                                if (GroundItemRenderState.anInt1656 >= 15) {
                                     Class251.method1916(-9343, Class311.aClass46_3913!!)
                                     Class311.aClass46_3913 = null
                                 }

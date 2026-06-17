@@ -111,7 +111,7 @@ class Class348_Sub14 : Class348 {
                     `is`[i_12_] = -16777216
                     i_12_++
                 }
-                Class108.aAbstractModelRenderer_1664 = var_renderer!!.method3662(512, `is`, 94.toByte(), 0, 512, 512)
+                GroundItemRenderState.aAbstractModelRenderer_1664 = var_renderer!!.method3662(512, `is`, 94.toByte(), 0, 512, 512)
                 Class358.method3489(-3)
                 val i_13_ = (((-10 + (238 + (20.0 * Math.random()).toInt()) shl 8) + (-10 + (Math.random() * 20.0).toInt() + 238 shl 16) - (-(Math.random() * 20.0).toInt() + -228)) or 0xffffff.inv())
                 val i_14_ = (228 - -(20.0 * Math.random()).toInt() shl 16 or 0xffffff.inv())
@@ -181,7 +181,7 @@ class Class348_Sub14 : Class348 {
                             }
                         }
                         var_renderer.aa(i_18_, i_19_, 4 * RuntimeException_Sub1.anInt4600, RuntimeException_Sub1.anInt4600 * 4, i_15_, 2)
-                        Class108.aAbstractModelRenderer_1664!!.method979((-i_5_ + i_16_) * 4 + 48, (-(4 * (i_17_ - i_6_)) + 464 + -(RuntimeException_Sub1.anInt4600 * 4)), RuntimeException_Sub1.anInt4600 * 4, 4 * RuntimeException_Sub1.anInt4600, i_18_, i_19_)
+                        GroundItemRenderState.aAbstractModelRenderer_1664!!.method979((-i_5_ + i_16_) * 4 + 48, (-(4 * (i_17_ - i_6_)) + 464 + -(RuntimeException_Sub1.anInt4600 * 4)), RuntimeException_Sub1.anInt4600 * 4, 4 * RuntimeException_Sub1.anInt4600, i_18_, i_19_)
                         i_17_ += RuntimeException_Sub1.anInt4600
                     }
                     i_16_ += RuntimeException_Sub1.anInt4600

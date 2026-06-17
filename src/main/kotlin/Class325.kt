@@ -991,7 +991,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     Class348_Sub42_Sub18.method3275(1, i_75_, i_74_)
                                 }
                                 if (RenderNode.aBoolean9722) Class341.method2678(-2049)
-                                if (Class311.aClass46_3913 == null || Class108.anInt1656 != 0) break
+                                if (Class311.aClass46_3913 == null || GroundItemRenderState.anInt1656 != 0) break
                                 Class251.method1916(-9343, Class311.aClass46_3913!!)
                             }
                         }

@@ -81,7 +81,7 @@ object Class164 {
             i_2_ = i_2_ + (if (!bool) Class348_Sub40_Sub17_Sub1.aClass45_10426!!.method398((-31).toByte()) else 100)
             if (i_2_ != 400) return i_2_ / 4
             Class348_Sub31.anInt6924 = Class286_Sub7.aClass45_6277!!.method389(77)
-            Class108.anInt1663 = Class348_Sub40_Sub17_Sub1.aClass45_10426!!.method389(i + 28561)
+            GroundItemRenderState.anInt1663 = Class348_Sub40_Sub17_Sub1.aClass45_10426!!.method389(i + 28561)
             DualMaterialContainer.method1001(Class286_Sub7.aClass45_6277!!, 0)
             val i_3_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(i xor 0x11ae)
             Class186_Sub1.aClass111_5813 = Class111(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub40_Sub17_Sub1.aClass45_10426)

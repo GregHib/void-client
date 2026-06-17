@@ -435,7 +435,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         anInt8417 = i_118_
         anInt8411 = i
         aHa_Sub3_8407 = var_ha_Sub3
-        anInterface18_Impl3_8403 = var_ha_Sub3.method3861(i_118_, ((-84).toByte()).toByte(), i, Class68.aClass68_1183, (if (bool) Class108.aClass304_1662 else Class348_Sub45.aClass304_7103))
+        anInterface18_Impl3_8403 = var_ha_Sub3.method3861(i_118_, ((-84).toByte()).toByte(), i, Class68.aClass68_1183, (if (bool) GroundItemRenderState.aClass304_1662 else Class348_Sub45.aClass304_7103))
         anInterface18_Impl3_8403!!.method66(true, true, 25688)
         aBoolean8410 = (i != anInterface18_Impl3_8403.method69(false))
         aBoolean8408 = (i_118_ != anInterface18_Impl3_8403.method72(-39))

@@ -14,7 +14,7 @@ import MinimapDrawController.method949
 import SoftwareSpriteRaster.Companion.method953
 import DualMaterialContainer.Companion.method999
 import LinkedNodeListIterator.Companion.method1004
-import Class108.method1013
+import GroundItemRenderState.method1013
 import Class11.method221
 import Class110.Companion.method1030
 import Class110_Sub1.Companion.method1040
@@ -1318,7 +1318,7 @@ class Client : GameAppletFrame() {
             Class348_Sub40_Sub35.aClass161_9443!!.aString2147 = this.getParameter("demoaddress")
             Class8.aClass364_165 = (Class348_Sub8.method2776((-93).toByte(), this.getParameter("modewhere")!!.toInt()))
             if (Class76.aClass364_1279 == Class8.aClass364_165) {
-                Class8.aClass364_165 = Class108.aClass364_1657
+                Class8.aClass364_165 = GroundItemRenderState.aClass364_1657
             } else if (!method2354(Class8.aClass364_165, -1) && Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
                 Class8.aClass364_165 = Class55_Sub1.aClass364_5271
             }

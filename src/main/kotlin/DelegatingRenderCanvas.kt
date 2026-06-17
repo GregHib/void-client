@@ -267,7 +267,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class338.aClass237_Sub1_4197 = Class237_Sub1(4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, false)
                     if (Class312.anInt3931 != 0) Class44.method385(false, Class338.aClass237_Sub1_4197, Class347.aByteArrayArray4281)
                     else Class348_Sub1_Sub1.method2727((-65).toByte(), Class338.aClass237_Sub1_4197, (Class347.aByteArrayArray4281))
-                    Class108.method1015(Class367_Sub4.anInt7319 shr 4, (Class348_Sub40_Sub3.anInt9109 shr 4), true)
+                    GroundItemRenderState.method1015(Class367_Sub4.anInt7319 shr 4, (Class348_Sub40_Sub3.anInt9109 shr 4), true)
                     Class348_Sub42_Sub3.method3175((-77).toByte())
                     if (bool_25_) {
                         Class243.method1879(true)

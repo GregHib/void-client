@@ -10,7 +10,7 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
     var aBoolean6334: Boolean = false
     var aBoolean6335: Boolean = false
 
-    internal constructor(class378: Class378, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(class378, Class108.aClass304_1662!!, Class68.aClass68_1183!!, bool && class378.aBoolean9798, i_0_ * i) {
+    internal constructor(class378: Class378, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(class378, GroundItemRenderState.aClass304_1662!!, Class68.aClass68_1183!!, bool && class378.aBoolean9798, i_0_ * i) {
         var i_2_ = i_2_
         if (this.aClass378_3893.aBoolean9792) {
             anInt6331 = i_0_
@@ -69,7 +69,7 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
     }
 
     override fun method65(i: Int, `is`: IntArray, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Byte, i_12_: Int) {
-        if (Class108.aClass304_1662 != this.aClass304_3896 || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
+        if (GroundItemRenderState.aClass304_1662 != this.aClass304_3896 || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
         if (i_11_.toInt() != 112) this.aBoolean6334 = false
         val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
         val i_13_ = anIDirect3DTexture6332.LockRect(0, i, i_9_, i_8_, i_10_, 16, pixelbuffer)
@@ -118,7 +118,7 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
     }
 
     override fun method68(i: Int, i_22_: Int, `is`: IntArray?, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
-        if (this.aClass304_3896 != Class108.aClass304_1662 || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
+        if (this.aClass304_3896 != GroundItemRenderState.aClass304_1662 || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
         val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
         val i_28_ = anIDirect3DTexture6332.LockRect(0, i_23_, i_26_, i_25_, i_27_, 0, pixelbuffer)
         if (a(i_28_, false)) {

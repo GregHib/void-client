@@ -2168,7 +2168,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             i_263_++
         }
         this.aClass348_Sub1Array8132 = arrayOfNulls<Class348_Sub1>(-2 + this.anInt8138)
-        this.anInterface18_8147 = method3861(1, (-84).toByte(), 1, Class68.aClass68_1183, Class108.aClass304_1662)
+        this.anInterface18_8147 = method3861(1, (-84).toByte(), 1, Class68.aClass68_1183, GroundItemRenderState.aClass304_1662)
         method3651(ArbVertexProgram(262144))
         this.aClass130_8204 = method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078)))))
         this.aClass130_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076)))))

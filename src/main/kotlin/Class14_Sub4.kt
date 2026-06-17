@@ -17,7 +17,7 @@ class Class14_Sub4 : Class14, Interface18_Impl3 {
         return anInt8634
     }
 
-    internal constructor(class377: Class377?, i: Int, i_3_: Int, `is`: IntArray?, i_4_: Int, i_5_: Int) : super(class377, 34037, Class108.aClass304_1662, Class68.aClass68_1183, i * i_3_, false) {
+    internal constructor(class377: Class377?, i: Int, i_3_: Int, `is`: IntArray?, i_4_: Int, i_5_: Int) : super(class377, 34037, GroundItemRenderState.aClass304_1662, Class68.aClass68_1183, i * i_3_, false) {
         try {
             anInt8640 = i
             anInt8634 = i_3_

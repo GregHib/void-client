@@ -42,7 +42,7 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
         if (Class68.aClass68_1183 != this.aClass68_5088) {
             if (Class68.aClass68_1186 == this.aClass68_5088) {
                 if (this.aClass304_5084 == Class348_Sub45.aClass304_7103) return 34843
-                if (Class108.aClass304_1662 == this.aClass304_5084) return 34842
+                if (GroundItemRenderState.aClass304_1662 == this.aClass304_5084) return 34842
                 if (this.aClass304_5084 != Class348_Sub40_Sub38.aClass304_9471) {
                     if (this.aClass304_5084 != Class348_Sub40_Sub22.aClass304_9303) {
                         if (Class191.aClass304_2571 != this.aClass304_5084) {
@@ -52,7 +52,7 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
                 } else return 34844
             } else if (this.aClass68_5088 == Class68.aClass68_1187) {
                 if (Class348_Sub45.aClass304_7103 != this.aClass304_5084) {
-                    if (this.aClass304_5084 == Class108.aClass304_1662) return 34836
+                    if (this.aClass304_5084 == GroundItemRenderState.aClass304_1662) return 34836
                     if (this.aClass304_5084 != Class348_Sub40_Sub38.aClass304_9471) {
                         if (Class348_Sub40_Sub22.aClass304_9303 == this.aClass304_5084) return 34840
                         if (Class191.aClass304_2571 != this.aClass304_5084) {
@@ -62,7 +62,7 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
                 } else return 34837
             }
         } else if (this.aClass304_5084 != Class348_Sub45.aClass304_7103) {
-            if (this.aClass304_5084 != Class108.aClass304_1662) {
+            if (this.aClass304_5084 != GroundItemRenderState.aClass304_1662) {
                 if (this.aClass304_5084 != Class348_Sub40_Sub38.aClass304_9471) {
                     if (Class348_Sub40_Sub22.aClass304_9303 == this.aClass304_5084) return 6409
                     if (this.aClass304_5084 == Class191.aClass304_2571) return 6410
@@ -156,7 +156,7 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
         anInt5092++
         require(!(i > 0 && !Class192.method1436(-43, i))) { "" }
         require(!(i_23_ > 0 && !Class192.method1436(i_25_ xor 0xd2.inv(), i_23_))) { "" }
-        require(Class108.aClass304_1662 == this.aClass304_5084) { "" }
+        require(GroundItemRenderState.aClass304_1662 == this.aClass304_5084) { "" }
         var i_26_ = 0
         var i_27_ = min(i, i_23_)
         var i_28_ = i shr 1

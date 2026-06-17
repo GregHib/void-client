@@ -140,7 +140,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
             var string = "www"
             if (Class367_Sub8.aClass364_7361 != Class8.aClass364_165) {
                 if (Class8.aClass364_165 != Class26.aClass364_382) {
-                    if (Class8.aClass364_165 == Class108.aClass364_1657) string = "www-wtwip"
+                    if (Class8.aClass364_165 == GroundItemRenderState.aClass364_1657) string = "www-wtwip"
                 } else string = "www-wtqa"
             } else string = "www-wtrc"
             var string_2_ = ""

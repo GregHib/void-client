@@ -50,7 +50,7 @@ class Class269 internal constructor(private val aHa_Sub3_3457: NativeRenderer) {
                     }
                 }
             }
-            this.anInterface18_Impl1_3455 = aHa_Sub3_3457.method3872(16, 128, Class108.aClass304_1662, true, 128, is_0_)
+            this.anInterface18_Impl1_3455 = aHa_Sub3_3457.method3872(16, 128, GroundItemRenderState.aClass304_1662, true, 128, is_0_)
         }
         anInt3456++
         return this.anInterface18_Impl1_3455 != null

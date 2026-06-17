@@ -2248,7 +2248,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class239_Sub22.anInt6070 = 0
             Class348_Sub42_Sub17.anInt9680 = 0
             Class2.anInt121 = 0
-            Class108.anInt1660 = 0
+            GroundItemRenderState.anInt1660 = 0
             NativeRenderer.anInt8068 = 0
             Class14_Sub1.anInt8615 = 0
             Class348_Sub40_Sub17.anInt9239 = 0
@@ -2678,7 +2678,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class315.anInt3955 = 0
             Class348_Sub40_Sub28.anInt9361 = 0
             Class318_Sub1_Sub3_Sub3.anInt10313 = 0
-            Class108.anInt1658 = 0
+            GroundItemRenderState.anInt1658 = 0
             OpenGlRenderer.anInt7514 = 0
             Player.anInt10529 = 0
             Class318_Sub1_Sub3_Sub5.anInt10374 = 0
@@ -3788,7 +3788,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class322.anInt4023 = 0
             Class377.anInt9867 = 0
             Class163.anInt2168 = 0
-            Class108.anInt1659 = 0
+            GroundItemRenderState.anInt1659 = 0
             Class26.anInt376 = 0
             Class348_Sub18.anInt6816 = 0
             Class318_Sub1_Sub3_Sub5.anInt10377 = 0
