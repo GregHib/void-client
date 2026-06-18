@@ -55,19 +55,19 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                     i_6_ -= i_5_ shl 1
                     val i_10_ = -i_5_ + i_2_
                     val i_11_ = i_5_ + i_2_
-                    if (i_11_ >= LocalPlayerState.anInt1910 && Class38.anInt513 >= i_10_) {
+                    if (i_11_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_10_) {
                         val i_12_ = Class85.method831(CameraNodeList.anInt1745, i_4_ + i_0_, WorldMapLabel.anInt4960, 74)
                         val i_13_ = Class85.method831(CameraNodeList.anInt1745, i_0_ + -i_4_, WorldMapLabel.anInt4960, 98)
-                        if (i_11_ <= Class38.anInt513) GlElementArrayBuffer.method1156(-27, i_12_, (WidgetDefinition.anIntArrayArray255!![i_11_]!!), i_13_, i_1_)
+                        if (i_11_ <= WidgetTextConfig.anInt513) GlElementArrayBuffer.method1156(-27, i_12_, (WidgetDefinition.anIntArrayArray255!![i_11_]!!), i_13_, i_1_)
                         if (LocalPlayerState.anInt1910 <= i_10_) GlElementArrayBuffer.method1156(-27, i_12_, (WidgetDefinition.anIntArrayArray255!![i_10_]!!), i_13_, i_1_)
                     }
                 }
                 val i_14_ = -++i_4_ + i_2_
                 val i_15_ = i_2_ - -i_4_
-                if (LocalPlayerState.anInt1910 <= i_15_ && Class38.anInt513 >= i_14_) {
+                if (LocalPlayerState.anInt1910 <= i_15_ && WidgetTextConfig.anInt513 >= i_14_) {
                     val i_16_ = Class85.method831(CameraNodeList.anInt1745, i_0_ + i_5_, WorldMapLabel.anInt4960, 52)
                     val i_17_ = Class85.method831(CameraNodeList.anInt1745, i_0_ + -i_5_, WorldMapLabel.anInt4960, -106)
-                    if (i_15_ <= Class38.anInt513) GlElementArrayBuffer.method1156(-27, i_16_, WidgetDefinition.anIntArrayArray255!![i_15_]!!, i_17_, i_1_)
+                    if (i_15_ <= WidgetTextConfig.anInt513) GlElementArrayBuffer.method1156(-27, i_16_, WidgetDefinition.anIntArrayArray255!![i_15_]!!, i_17_, i_1_)
                     if (i_14_ >= LocalPlayerState.anInt1910) GlElementArrayBuffer.method1156(-27, i_16_, WidgetDefinition.anIntArrayArray255!![i_14_]!!, i_17_, i_1_)
                 }
             }

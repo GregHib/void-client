@@ -20,24 +20,24 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
         }
     }
 
-    fun method301(i: Int, i_2_: Int): Class38 {
+    fun method301(i: Int, i_2_: Int): WidgetTextConfig {
         anInt361++
-        var class38: Class38?
+        var widgetTextConfig: WidgetTextConfig?
         synchronized(aClass60_360!!) {
-            class38 = aClass60_360!!.method583(i.toLong(), -91) as Class38?
+            widgetTextConfig = aClass60_360!!.method583(i.toLong(), -91) as WidgetTextConfig?
         }
-        if (class38 != null) return class38
+        if (widgetTextConfig != null) return widgetTextConfig
         val `is`: ByteArray?
         synchronized(aClass45_366!!) {
             `is` = aClass45_366!!.method410(-1860, 30, i)
         }
         if (i_2_ < 6) aClass60_360 = null
-        class38 = Class38()
-        if (`is` != null) class38.method364(Buffer(`is`), 54.toByte())
+        widgetTextConfig = WidgetTextConfig()
+        if (`is` != null) widgetTextConfig.method364(Buffer(`is`), 54.toByte())
         synchronized(aClass60_360!!) {
-            aClass60_360!!.method582(class38, i.toLong(), (-109).toByte())
+            aClass60_360!!.method582(widgetTextConfig, i.toLong(), (-109).toByte())
         }
-        return class38
+        return widgetTextConfig
     }
 
     fun method302(i: Int) {

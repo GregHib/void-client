@@ -18,7 +18,7 @@ import SkeletalAnimFrameLoader.Companion.method349
 import DragDropController.Companion.method2708
 import HslAdjustTextureNode.Companion.method3127
 import ClampTextureNode.Companion.method3150
-import Class38.Companion.method362
+import WidgetTextConfig.Companion.method362
 import Class5_Sub2.Companion.method198
 import Class62.method599
 import Class64_Sub2.Companion.method661

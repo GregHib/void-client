@@ -100,7 +100,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
             var i = i
             var i_14_ = i_14_
             if (bool != true) method192(null, -119, 63, 12)
-            if (LocalPlayerState.anInt1910 <= i_15_ && Class38.anInt513 >= i_15_) {
+            if (LocalPlayerState.anInt1910 <= i_15_ && WidgetTextConfig.anInt513 >= i_15_) {
                 i_14_ = Class85.method831(CameraNodeList.anInt1745, i_14_, WorldMapLabel.anInt4960, 71)
                 i = Class85.method831(CameraNodeList.anInt1745, i, WorldMapLabel.anInt4960, -87)
                 NpcAppearanceFlags.method223(i, i_13_, i_15_, i_14_, 39.toByte())

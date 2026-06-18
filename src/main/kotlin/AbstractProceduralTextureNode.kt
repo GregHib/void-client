@@ -191,7 +191,7 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
             var i_40_ = i_31_ * (i_7_ + i_8_)
             var i_41_ = i_34_
             var i_42_ = i_33_ * (-1 + i_16_)
-            if (i_6_ >= LocalPlayerState.anInt1910 && Class38.anInt513 >= i_6_) {
+            if (i_6_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_6_) {
                 val `is` = WidgetDefinition.anIntArrayArray255!![i_6_]!!
                 val i_43_ = Class85.method831(CameraNodeList.anInt1745, i_5_ + -i, WorldMapLabel.anInt4960, 77)
                 val i_44_ = Class85.method831(CameraNodeList.anInt1745, i + i_5_, WorldMapLabel.anInt4960, -68)
@@ -248,7 +248,7 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
                 i_40_ -= i_31_
                 val i_47_ = -i_13_ + i_6_
                 val i_48_ = i_13_ + i_6_
-                if (i_48_ >= LocalPlayerState.anInt1910 && Class38.anInt513 >= i_47_) {
+                if (i_48_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_47_) {
                     val i_49_ = Class85.method831(CameraNodeList.anInt1745, i_12_ + i_5_, WorldMapLabel.anInt4960, 36)
                     val i_50_ = Class85.method831(CameraNodeList.anInt1745, -i_12_ + i_5_, WorldMapLabel.anInt4960, 97)
                     if (bool) {
@@ -260,7 +260,7 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
                             GlElementArrayBuffer.method1156(-27, i_51_, `is`, i_52_, i_9_)
                             GlElementArrayBuffer.method1156(i_7_ + -26, i_49_, `is`, i_51_, i_10_)
                         }
-                        if (Class38.anInt513 >= i_48_) {
+                        if (WidgetTextConfig.anInt513 >= i_48_) {
                             val `is` = WidgetDefinition.anIntArrayArray255!![i_48_]!!
                             GlElementArrayBuffer.method1156(i_7_ xor 0x1a, i_52_, `is`, i_50_, i_10_)
                             GlElementArrayBuffer.method1156(-27, i_51_, `is`, i_52_, i_9_)
@@ -268,7 +268,7 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
                         }
                     } else {
                         if (i_47_ >= LocalPlayerState.anInt1910) GlElementArrayBuffer.method1156(-27, i_49_, (WidgetDefinition.anIntArrayArray255!![i_47_]!!), i_50_, i_10_)
-                        if (i_48_ <= Class38.anInt513) GlElementArrayBuffer.method1156(-27, i_49_, (WidgetDefinition.anIntArrayArray255!![i_48_]!!), i_50_, i_10_)
+                        if (i_48_ <= WidgetTextConfig.anInt513) GlElementArrayBuffer.method1156(-27, i_49_, (WidgetDefinition.anIntArrayArray255!![i_48_]!!), i_50_, i_10_)
                     }
                 }
             }

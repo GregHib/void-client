@@ -53,7 +53,7 @@ object MinimapRectClipper {
                 else if (i_8_ - i_7_ == 1) MapElementDefinitionCache.aCacheIndexManagerArray3982!![Class75_Sub1.anInt5652 + i_7_]!!.method2353(class318_sub1, false)
                 else MapElementDefinitionCache.aCacheIndexManagerArray3982!![MapElementDefinitionCache.aCacheIndexManagerArray3982!!.size - 1]!!.method2353(class318_sub1, false)
             }
-        } else Class38.method365(class318_sub1, OverlayColorTable.aClass348_Sub1Array1752)
+        } else WidgetTextConfig.method365(class318_sub1, OverlayColorTable.aClass348_Sub1Array1752)
     }
 
     init {

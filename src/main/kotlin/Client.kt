@@ -439,7 +439,7 @@ import MouseInputTracker.Companion.method3609
 import BufferedFileReader.method3611
 import PlayerAppearanceUpdateDecoder.method3613
 import GlRenderDevice.Companion.method3968
-import Class38.Companion.method363
+import WidgetTextConfig.Companion.method363
 import Class39.Companion.method367
 import Class4.Companion.method177
 import Class40.Companion.method370
@@ -2196,7 +2196,7 @@ class Client : GameAppletFrame() {
                                                     i_66_ = ((LocalPlayerState.aPlayer_1907!!.x) - i_68_ shr 9) + (i_64_ shr 2)
                                                     i_67_ = ((LocalPlayerState.aPlayer_1907!!.y) - i_68_ shr 9) - (i_65_ shr 2)
                                                 }
-                                                if (RenderNode.aBoolean9722 && ((Class38.anInt500 and 0x40) != 0)) {
+                                                if (RenderNode.aBoolean9722 && ((WidgetTextConfig.anInt500 and 0x40) != 0)) {
                                                     val class46_69_ = (NpcReference.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046))
                                                     if (class46_69_ != null) Class50_Sub3.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), ItemNameResolver.aString5001, 1L, (FloatBuffer.anInt9747))
                                                     else method2678(-2049)

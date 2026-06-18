@@ -9,7 +9,10 @@ import java.awt.datatransfer.StringSelection
 import kotlin.math.max
 import kotlin.math.min
 
-class Class38 {
+/*
+ * Class38
+ */
+class WidgetTextConfig {
     @JvmField
     var anInt498: Int = 0
     @JvmField

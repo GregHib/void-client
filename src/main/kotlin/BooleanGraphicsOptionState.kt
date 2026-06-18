@@ -72,7 +72,7 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1721(string: String?, i: Byte) {
             anInt5849++
-            if (RenderNode.aBoolean9722 && (0x18 and Class38.anInt500) != 0) {
+            if (RenderNode.aBoolean9722 && (0x18 and WidgetTextConfig.anInt500) != 0) {
                 val i_2_ = -88 / ((i - -33) / 37)
                 var bool = false
                 val i_3_ = ShaderState.anInt6513
@@ -80,7 +80,7 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
                 var i_4_ = 0
                 while (i_3_ > i_4_) {
                     val player = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_4_]])!!
-                    if (player.aString10544 != null && player.aString10544.equals(string, ignoreCase = true) && (((player == LocalPlayerState.aPlayer_1907) && (0x10 and Class38.anInt500) != 0) || (player != null && (Class38.anInt500 and 0x8) != 0))) {
+                    if (player.aString10544 != null && player.aString10544.equals(string, ignoreCase = true) && (((player == LocalPlayerState.aPlayer_1907) && (0x10 and WidgetTextConfig.anInt500) != 0) || (player != null && (WidgetTextConfig.anInt500 and 0x8) != 0))) {
                         NativeLibraryUnloader.anInt2975++
                         val class348_sub47 = WaterMaterialPass.method2148(Class52.aFontMetaRef_4907, (TheoraVideoStream.aClass77_9029), -102)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)

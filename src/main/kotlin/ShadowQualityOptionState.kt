@@ -156,8 +156,8 @@ class ShadowQualityOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1792(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Byte, i_16_: Int) {
             anInt6013++
-            val i_17_ = Class85.method831(Class38.anInt513, i, LocalPlayerState.anInt1910, -90)
-            val i_18_ = Class85.method831(Class38.anInt513, i_13_, LocalPlayerState.anInt1910, -94)
+            val i_17_ = Class85.method831(WidgetTextConfig.anInt513, i, LocalPlayerState.anInt1910, -90)
+            val i_18_ = Class85.method831(WidgetTextConfig.anInt513, i_13_, LocalPlayerState.anInt1910, -94)
             val i_19_ = Class85.method831(CameraNodeList.anInt1745, i_12_, WorldMapLabel.anInt4960, 77)
             val i_20_ = Class85.method831(CameraNodeList.anInt1745, i_14_, WorldMapLabel.anInt4960, 59)
             val i_21_ = -27 / ((i_15_ - -6) / 55)

@@ -133,14 +133,14 @@ class MapRegionLoaderThread : Runnable {
             if (i_12_ < LocalPlayerState.anInt1910) {
                 i_11_ = (LocalPlayerState.anInt1910 + -i_8_ shl 12) / i_7_
                 i_12_ = LocalPlayerState.anInt1910
-            } else if (Class38.anInt513 < i_12_) {
-                i_11_ = (Class38.anInt513 - i_8_ shl 12) / i_7_
-                i_12_ = Class38.anInt513
+            } else if (WidgetTextConfig.anInt513 < i_12_) {
+                i_11_ = (WidgetTextConfig.anInt513 - i_8_ shl 12) / i_7_
+                i_12_ = WidgetTextConfig.anInt513
             }
             if (LocalPlayerState.anInt1910 <= i_9_) {
-                if (Class38.anInt513 < i_9_) {
-                    i_10_ = (Class38.anInt513 - i_8_ shl 12) / i_7_
-                    i_9_ = Class38.anInt513
+                if (WidgetTextConfig.anInt513 < i_9_) {
+                    i_10_ = (WidgetTextConfig.anInt513 - i_8_ shl 12) / i_7_
+                    i_9_ = WidgetTextConfig.anInt513
                 }
             } else {
                 i_10_ = (-i_8_ + LocalPlayerState.anInt1910 shl 12) / i_7_
@@ -161,7 +161,7 @@ class MapRegionLoaderThread : Runnable {
                 }
                 Tooltip.anInt4458 = class46.anInt695
                 ParticleEmitterFactory.anInt3176 = i
-                Class38.anInt500 = i_13_
+                WidgetTextConfig.anInt500 = i_13_
                 HeightMapNoise.anInt3829 = class46.anInt812
                 RenderNode.aBoolean9722 = true
                 Class9.anInt169 = class46.anInt704

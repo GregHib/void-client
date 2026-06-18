@@ -1,5 +1,5 @@
 import GlslMaterialPass.Companion.method2154
-import Class38.Companion.method365
+import WidgetTextConfig.Companion.method365
 import kotlin.concurrent.Volatile
 
 /* Class293 - Decompiled by JODE

@@ -35,7 +35,7 @@ class WorldMapPolygonIconLabel(screenAnchorAlignment: ScreenAnchorAlignment?, ti
             var i_2_ = i_2_
             var i_3_ = i_3_
             var i_4_ = i_4_
-            if (i_3_ <= Class38.anInt513 && i_2_ >= LocalPlayerState.anInt1910) {
+            if (i_3_ <= WidgetTextConfig.anInt513 && i_2_ >= LocalPlayerState.anInt1910) {
                 val bool: Boolean
                 if (WorldMapLabel.Companion.anInt4960 <= i_4_) {
                     if (i_4_ <= CameraNodeList.anInt1745) bool = true
@@ -57,8 +57,8 @@ class WorldMapPolygonIconLabel(screenAnchorAlignment: ScreenAnchorAlignment?, ti
                 } else bool_5_ = true
                 if (i_3_ < LocalPlayerState.anInt1910) i_3_ = LocalPlayerState.anInt1910
                 else GlElementArrayBuffer.method1156(-27, i_0_, WidgetDefinition.anIntArrayArray255!![i_3_++]!!, i_4_, i_1_)
-                if (Class38.anInt513 >= i_2_) GlElementArrayBuffer.method1156(-27, i_0_, WidgetDefinition.anIntArrayArray255!![i_2_--]!!, i_4_, i_1_)
-                else i_2_ = Class38.anInt513
+                if (WidgetTextConfig.anInt513 >= i_2_) GlElementArrayBuffer.method1156(-27, i_0_, WidgetDefinition.anIntArrayArray255!![i_2_--]!!, i_4_, i_1_)
+                else i_2_ = WidgetTextConfig.anInt513
                 if (!bool || !bool_5_) {
                     if (bool) {
                         for (i_7_ in i_3_..i_2_) WidgetDefinition.anIntArrayArray255!![i_7_]!![i_4_] = i_1_

@@ -234,7 +234,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                     }
                     if (RenderNode.aBoolean9722 && !bool) {
                         val class254 = (if (ParticleEmitterFactory.anInt3176 == -1) null else ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364))
-                        if ((Class38.anInt500 and 0x2) != 0 && (class254 == null || (class79.method805((class254.anInt3256), ParticleEmitterFactory.anInt3176, 61) != class254.anInt3256))) {
+                        if ((WidgetTextConfig.anInt500 and 0x2) != 0 && (class254 == null || (class79.method805((class254.anInt3256), ParticleEmitterFactory.anInt3176, 61) != class254.anInt3256))) {
                             Class50_Sub3.method466(false, ItemNameResolver.aString5000 + " -> <col=ffff00>" + string, 0, (-81).toByte(), false, 0, -1, true, 30, npc.anInt10290.toLong(), ItemNameResolver.aString5001, npc.anInt10290.toLong(), FloatBuffer.anInt9747)
                             TextureHandle.anInt2586++
                         }
@@ -247,7 +247,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                                 if (strings[i] != null && (class79.aByte1384.toInt() == 0 || !(strings[i].equals(LocalizedText.aLocalizedText_3506!!.method2063(AnimationFrameDefinition.anInt6967, 544), ignoreCase = true)))) {
                                     var i_16_ = 0
                                     if (i == 0) i_16_ = 25
-                                    var i_17_ = Class38.anInt506
+                                    var i_17_ = WidgetTextConfig.anInt506
                                     if (i == 1) i_16_ = 20
                                     if (i == 2) i_16_ = 44
                                     if (i == 3) i_16_ = 46

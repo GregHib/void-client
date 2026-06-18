@@ -15,8 +15,8 @@ object HslPaletteState {
         anInt4170++
         if (i_1_ < 66) HslPaletteState.method2656(119, -53, (-62).toByte(), 54, -62)
         if (i_0_ >= WorldMapLabel.anInt4960 && CameraNodeList.anInt1745 >= i_0_) {
-            i = method831(Class38.anInt513, i, LocalPlayerState.anInt1910, -123)
-            i_3_ = method831(Class38.anInt513, i_3_, LocalPlayerState.anInt1910, 123)
+            i = method831(WidgetTextConfig.anInt513, i, LocalPlayerState.anInt1910, -123)
+            i_3_ = method831(WidgetTextConfig.anInt513, i_3_, LocalPlayerState.anInt1910, 123)
             SoundCacheState.method2641(i_3_, i, -76, i_0_, i_2_)
         }
     }

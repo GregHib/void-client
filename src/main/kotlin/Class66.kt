@@ -186,7 +186,7 @@ object Class66 {
             if (i == 5001) {
                 anInt1173 -= 3
                 ShaderProgram.anInt7276 = anIntArray1149!![anInt1173]
-                Class57.aBoxedIntHolder_1055 = Class38.method360((-57).toByte(), anIntArray1149!![anInt1173 + 1])
+                Class57.aBoxedIntHolder_1055 = WidgetTextConfig.method360((-57).toByte(), anIntArray1149!![anInt1173 + 1])
                 if (Class57.aBoxedIntHolder_1055 == null) Class57.aBoxedIntHolder_1055 = MinimapRenderer.aBoxedIntHolder_1591
                 BufferToggleState.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
@@ -1087,7 +1087,7 @@ object Class66 {
             if (i == 5426) {
                 anInt1173 -= 2
                 StreamingResourceRequest.anInt10447 = anIntArray1149!![anInt1173]
-                Class38.anInt506 = anIntArray1149!![anInt1173 + 1]
+                WidgetTextConfig.anInt506 = anIntArray1149!![anInt1173 + 1]
                 return
             }
             if (i == 5427) {

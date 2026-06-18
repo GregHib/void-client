@@ -67,7 +67,7 @@ open class WidgetComponentNode(class45: Class45?, particleEmitterDef: ParticleEm
         }
 
         fun method1116(i: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Byte) {
-            if (WorldMapLabel.anInt4960 > i_9_ + -i_10_ || CameraNodeList.anInt1745 < i_10_ + i_9_ || LocalPlayerState.anInt1910 > i - i_10_ || i - -i_10_ > Class38.anInt513) method203(-107, i_9_, i_8_, i, i_10_)
+            if (WorldMapLabel.anInt4960 > i_9_ + -i_10_ || CameraNodeList.anInt1745 < i_10_ + i_9_ || LocalPlayerState.anInt1910 > i - i_10_ || i - -i_10_ > WidgetTextConfig.anInt513) method203(-107, i_9_, i_8_, i, i_10_)
             else method253(i, i_9_, -648, i_8_, i_10_)
             anInt4662++
             val i_12_ = -68 / ((40 - i_11_) / 36)
