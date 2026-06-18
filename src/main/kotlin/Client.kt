@@ -438,7 +438,7 @@ import CubemapTextureFactory.Companion.method3584
 import MouseInputTracker.Companion.method3609
 import BufferedFileReader.method3611
 import PlayerAppearanceUpdateDecoder.method3613
-import Class377.Companion.method3968
+import GlRenderDevice.Companion.method3968
 import Class38.Companion.method363
 import Class39.Companion.method367
 import Class4.Companion.method177

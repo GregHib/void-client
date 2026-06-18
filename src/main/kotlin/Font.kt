@@ -533,7 +533,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
         }
 
         @JvmStatic
-        fun method2582(class377: Class377?, class39s: Array<Class39?>?, i: Int): Class89? {
+        fun method2582(glRenderDevice: GlRenderDevice?, class39s: Array<Class39?>?, i: Int): Class89? {
             try {
                 anInt4065++
                 if (i != -2113) aRectangleRegion_4062 = null
@@ -568,9 +568,9 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                         return null
                     }
                 }
-                return Class89(class377, l, class39s)
+                return Class89(glRenderDevice, l, class39s)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("da.M(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class39s != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("da.M(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (class39s != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

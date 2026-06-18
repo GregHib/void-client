@@ -1,13 +1,13 @@
 /* Class39 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class39 internal constructor(class377: Class377?, l: Long, i: Int) {
+class Class39 internal constructor(glRenderDevice: GlRenderDevice?, l: Long, i: Int) {
     var aLong517: Long = 0
-    private val aClass377_519: Class377?
+    private val aGlRenderDevice_519: GlRenderDevice?
 
     @Throws(Throwable::class)
     protected fun finalize() {
-        aClass377_519!!.method3966(this.aLong517, 34192)
+        aGlRenderDevice_519!!.method3966(this.aLong517, 34192)
         anInt516++
 //        super.finalize()
     }
@@ -15,9 +15,9 @@ class Class39 internal constructor(class377: Class377?, l: Long, i: Int) {
     init {
         try {
             this.aLong517 = l
-            aClass377_519 = class377
+            aGlRenderDevice_519 = glRenderDevice
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ifa.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ifa.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
         }
     }
 

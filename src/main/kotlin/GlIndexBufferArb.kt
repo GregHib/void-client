@@ -1,6 +1,6 @@
 import jaclib.memory.Buffer
 
-class GlIndexBufferArb internal constructor(class377: Class377, class68: Class68?, bool: Boolean) : GlBufferObject(class377, 34963, bool), Interface5_Impl2 {
+class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, class68: Class68?, bool: Boolean) : GlBufferObject(glRenderDevice, 34963, bool), Interface5_Impl2 {
     private val aClass68_8504: Class68?
     override fun method23(i: Int, i_0_: Int) {
         super.method23(i, i_0_ * aClass68_8504!!.anInt1178)
@@ -10,7 +10,7 @@ class GlIndexBufferArb internal constructor(class377: Class377, class68: Class68
     override fun method24(bool: Boolean, bool_1_: Boolean): Buffer? {
         if (bool_1_ != false) aClass70_8503 = null
         anInt8500++
-        return super.method2120(0, (this.aClass377_4759.aMapBuffer9913), bool)
+        return super.method2120(0, (this.aGlRenderDevice_4759.aMapBuffer9913), bool)
     }
 
     override fun method16(bool: Boolean): Int {
@@ -22,7 +22,7 @@ class GlIndexBufferArb internal constructor(class377: Class377, class68: Class68
     override fun method22(i: Int): Boolean {
         anInt8501++
         if (i != -23) return false
-        return super.method2123((this.aClass377_4759.aMapBuffer9913), 0)
+        return super.method2123((this.aGlRenderDevice_4759.aMapBuffer9913), 0)
     }
 
     override fun method25(i: Byte): Class68 {
@@ -42,7 +42,7 @@ class GlIndexBufferArb internal constructor(class377: Class377, class68: Class68
         try {
             aClass68_8504 = class68
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("mw.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("mw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 

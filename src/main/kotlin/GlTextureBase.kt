@@ -11,9 +11,9 @@ import kotlin.math.min
 /*
  * Class14
  */
-abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: TextureFormatInfo?, class68: Class68?, i_66_: Int, bool: Boolean) : Interface18 {
+abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFormatInfo: TextureFormatInfo?, class68: Class68?, i_66_: Int, bool: Boolean) : Interface18 {
     @JvmField
-    var aClass377_5082: Class377? = null
+    var aGlRenderDevice_5082: GlRenderDevice? = null
     @JvmField
     var aTextureFormatInfo_5084: TextureFormatInfo? = null
     @JvmField
@@ -26,16 +26,16 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
     private var aClass209_5101: UnusedToStringStub? = Class71.aClass209_1212
     override fun method63(i: Byte) {
         anInt5104++
-        val i_0_ = this.aClass377_5082!!.method3877((-126).toByte())
-        if (i > -21) this.aClass377_5082 = null
-        val i_1_ = (this.aClass377_5082!!.anIntArray9927!![i_0_])
+        val i_0_ = this.aGlRenderDevice_5082!!.method3877((-126).toByte())
+        if (i > -21) this.aGlRenderDevice_5082 = null
+        val i_1_ = (this.aGlRenderDevice_5082!!.anIntArray9927!![i_0_])
         if (this.anInt5093 != i_1_) {
             if (i_1_ != 0) {
                 glBindTexture(i_1_, 0)
                 glDisable(i_1_)
             }
             glEnable(this.anInt5093)
-            this.aClass377_5082!!.anIntArray9927!![i_0_] = this.anInt5093
+            this.aGlRenderDevice_5082!!.anIntArray9927!![i_0_] = this.anInt5093
         }
         glBindTexture(this.anInt5093, anInt5096)
     }
@@ -78,7 +78,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
     }
 
     private fun method229(bool: Boolean) {
-        this.aClass377_5082!!.method3850(107.toByte(), this)
+        this.aGlRenderDevice_5082!!.method3850(107.toByte(), this)
         anInt5083++
         if (aClass209_5101 == Class71.aClass209_1212) {
             glTexParameteri(this.anInt5093, 10241, if (!aBoolean5099) 9729 else 9987)
@@ -168,7 +168,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
         var is_31_ = IntArray(i_29_ * i_28_)
         if (i_25_ != 255) aBoolean5099 = true
         while (true) {
-            glTexImage2Di(i_24_, i_26_, method228(112), i, i_23_, 0, 32993, (this.aClass377_5082!!.anInt9918), is_30_, 0)
+            glTexImage2Di(i_24_, i_26_, method228(112), i, i_23_, 0, 32993, (this.aGlRenderDevice_5082!!.anInt9918), is_30_, 0)
             if (i_27_ <= 1) break
             var i_32_ = 0
             var i_33_ = 0
@@ -219,7 +219,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
     private fun method234(i: Int) {
         if (i == 1617553025) {
             if (anInt5096 > 0) {
-                this.aClass377_5082!!.method3967(method231(-109), 59.toByte(), anInt5096)
+                this.aGlRenderDevice_5082!!.method3967(method231(-109), 59.toByte(), anInt5096)
                 anInt5096 = 0
             }
             anInt5097++
@@ -228,8 +228,8 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
 
     private fun method236(i: Int, i_47_: Byte) {
         anInt5098++
-        this.aClass377_5082!!.anInt8062 -= i
-        this.aClass377_5082!!.anInt8062 += method231(-119)
+        this.aGlRenderDevice_5082!!.anInt8062 -= i
+        this.aGlRenderDevice_5082!!.anInt8062 += method231(-119)
         if (i_47_ >= -124) aBoolean5099 = false
     }
 
@@ -307,7 +307,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
     init {
         try {
             anInt5090 = i_66_
-            this.aClass377_5082 = class377
+            this.aGlRenderDevice_5082 = glRenderDevice
             this.aTextureFormatInfo_5084 = textureFormatInfo
             this.aClass68_5088 = class68
             aBoolean5099 = bool
@@ -317,7 +317,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
             method229(true)
             method236(0, (-126).toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("hda.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i_66_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("hda.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i_66_ + ',' + bool + ')'))
         }
     }
 

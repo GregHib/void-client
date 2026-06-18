@@ -21,27 +21,27 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         return f / anInt8604.toFloat()
     }
 
-    internal constructor(class377: Class377?, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(class377, 3553, GroundItemRenderState.aTextureFormatInfo_1662, Class68.aClass68_1183, i * i_0_, bool) {
+    internal constructor(glRenderDevice: GlRenderDevice?, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(glRenderDevice, 3553, GroundItemRenderState.aTextureFormatInfo_1662, Class68.aClass68_1183, i * i_0_, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_0_
-            this.aClass377_5082!!.method3850(79.toByte(), this)
+            this.aGlRenderDevice_5082!!.method3850(79.toByte(), this)
             if (bool && i_2_ == 0 && i_1_ == 0) this.method233(i, i_0_, `is`!!, this.anInt5093, 255)
             else {
                 glPixelStorei(3314, i_2_)
-                glTexImage2Di(this.anInt5093, 0, 6408, anInt8612, anInt8604, 0, 32993, this.aClass377_5082!!.anInt9918, `is`, 4 * i_1_)
+                glTexImage2Di(this.anInt5093, 0, 6408, anInt8612, anInt8604, 0, 32993, this.aGlRenderDevice_5082!!.anInt9918, `is`, 4 * i_1_)
                 glPixelStorei(3314, 0)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
         }
     }
 
-    internal constructor(class377: Class377?, textureFormatInfo: TextureFormatInfo?, i: Int, i_6_: Int, bool: Boolean, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(class377, 3553, textureFormatInfo, Class68.aClass68_1183, i_6_ * i, bool) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_6_: Int, bool: Boolean, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(glRenderDevice, 3553, textureFormatInfo, Class68.aClass68_1183, i_6_ * i, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_6_
-            this.aClass377_5082!!.method3850((-102).toByte(), this)
+            this.aGlRenderDevice_5082!!.method3850((-102).toByte(), this)
             glPixelStorei(3317, 1)
             if (!bool || i_8_ != 0 || i_7_ != 0) {
                 glPixelStorei(3314, i_8_)
@@ -50,7 +50,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             } else this.method230(7365, i, `is`!!, i_6_, this.anInt5093)
             glPixelStorei(3317, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 
@@ -64,7 +64,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         try {
             val i_15_ = 108 / ((-45 - i_9_) / 49)
             anInt8614++
-            this.aClass377_5082!!.method3850((-106).toByte(), this)
+            this.aGlRenderDevice_5082!!.method3850((-106).toByte(), this)
             glPixelStorei(3314, i)
             glTexSubImage2Df(this.anInt5093, 0, i_12_, i_10_, i_13_, i_14_, method3055(106, textureFormatInfo), 5121, fs, i_11_)
             glPixelStorei(3314, 0)
@@ -76,7 +76,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
     override fun method70(i: Int, i_27_: Int, i_28_: Byte, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?) {
         try {
             anInt8608++
-            this.aClass377_5082!!.method3850((-24).toByte(), this)
+            this.aGlRenderDevice_5082!!.method3850((-24).toByte(), this)
             glPixelStorei(3317, 1)
             glPixelStorei(3314, i_29_)
             glTexSubImage2Dub(this.anInt5093, 0, i_32_, i, i_31_, i_30_, method3055(103, textureFormatInfo), 5121, `is`, i_27_)
@@ -91,7 +91,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
     override fun method65(i: Int, `is`: IntArray, i_33_: Int, i_34_: Int, i_35_: Int, i_36_: Byte, i_37_: Int) {
         anInt8613++
         val is_38_ = IntArray(anInt8612 * anInt8604)
-        this.aClass377_5082!!.method3850((-32).toByte(), this)
+        this.aGlRenderDevice_5082!!.method3850((-32).toByte(), this)
         glGetTexImagei(this.anInt5093, 0, 32993, 5121, is_38_, 0)
         if (i_36_.toInt() == 112) {
             var i_39_ = 0
@@ -120,45 +120,45 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
     }
 
     override fun method68(i: Int, i_41_: Int, `is`: IntArray?, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int, i_46_: Int) {
-        this.aClass377_5082!!.method3850((-116).toByte(), this)
+        this.aGlRenderDevice_5082!!.method3850((-116).toByte(), this)
         if (i_41_ != 22809) aString8605 = null
         anInt8616++
         glPixelStorei(3314, i)
-        glTexSubImage2Di(this.anInt5093, 0, i_42_, i_45_, i_44_, i_46_, 32993, (this.aClass377_5082!!.anInt9918), `is`, i_43_)
+        glTexSubImage2Di(this.anInt5093, 0, i_42_, i_45_, i_44_, i_46_, 32993, (this.aGlRenderDevice_5082!!.anInt9918), `is`, i_43_)
         glPixelStorei(3314, 0)
     }
 
-    internal constructor(class377: Class377?, textureFormatInfo: TextureFormatInfo?, class68: Class68?, i: Int, i_47_: Int) : super(class377, 3553, textureFormatInfo, class68, i_47_ * i, false) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, class68: Class68?, i: Int, i_47_: Int) : super(glRenderDevice, 3553, textureFormatInfo, class68, i_47_ * i, false) {
         try {
             anInt8612 = i
             anInt8604 = i_47_
-            this.aClass377_5082!!.method3850(110.toByte(), this)
+            this.aGlRenderDevice_5082!!.method3850(110.toByte(), this)
             glTexImage2Dub(this.anInt5093, 0, this.method228(113), i, i_47_, 0, method3055(113, this.aTextureFormatInfo_5084), method1128(-112, this.aClass68_5088), null, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i + ',' + i_47_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i + ',' + i_47_ + ')'))
         }
     }
 
     override fun method66(bool: Boolean, bool_48_: Boolean, i: Int) {
-        this.aClass377_5082!!.method3850((-29).toByte(), this)
+        this.aGlRenderDevice_5082!!.method3850((-29).toByte(), this)
         anInt8615++
         glTexParameteri(this.anInt5093, 10242, if (!bool) 33071 else 10497)
         glTexParameteri(this.anInt5093, 10243, if (!bool_48_) 33071 else 10497)
         if (i != 25688) anInt8604 = -90
     }
 
-    internal constructor(class377: Class377?, textureFormatInfo: TextureFormatInfo?, i: Int, i_49_: Int, bool: Boolean, fs: FloatArray?, i_50_: Int, i_51_: Int) : super(class377, 3553, textureFormatInfo, Class68.aClass68_1187, i * i_49_, bool) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_49_: Int, bool: Boolean, fs: FloatArray?, i_50_: Int, i_51_: Int) : super(glRenderDevice, 3553, textureFormatInfo, Class68.aClass68_1187, i * i_49_, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_49_
-            this.aClass377_5082!!.method3850((-67).toByte(), this)
+            this.aGlRenderDevice_5082!!.method3850((-67).toByte(), this)
             if (bool || i_51_ != 0 || i_50_ != 0) {
                 glPixelStorei(3314, i_51_)
                 glTexImage2Df(this.anInt5093, 0, this.method228(111), i, i_49_, 0, (method3055(106, this.aTextureFormatInfo_5084)), 5126, fs, 4 * i_50_)
                 glPixelStorei(3314, 0)
             } else this.method238(this.anInt5093, 1, i, fs, i_49_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_49_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_50_ + ',' + i_51_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_49_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_50_ + ',' + i_51_ + ')'))
         }
     }
 

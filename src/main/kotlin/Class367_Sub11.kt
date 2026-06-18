@@ -8,7 +8,7 @@ import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import ArbVertexProgram.Companion.method3442
 import java.awt.Container
 
-class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?) : AbstractRenderPass(class377) {
+class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, class45: Class45?) : AbstractRenderPass(glRenderDevice) {
     private var anInterface18_Impl3_7390: Interface18_Impl3? = null
     private val aBoolean7391: Boolean
     private var aTextureHandle_7392: TextureHandle? = null
@@ -104,11 +104,11 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
 
     init {
         try {
-            if (class45 != null && class377!!.aBoolean9923) {
-                aTextureHandle_7395 = method3442(34336, class45.method391("gl", "uw_ground_unlit", -29832), class377, 4)
-                aTextureHandle_7392 = method3442(34336, class45.method391("gl", "uw_ground_lit", -29832), class377, 4)
-                aTextureHandle_7404 = method3442(34336, class45.method391("gl", "uw_model_unlit", -29832), class377, 4)
-                aTextureHandle_7407 = method3442(34336, class45.method391("gl", "uw_model_lit", -29832), class377, 4)
+            if (class45 != null && glRenderDevice!!.aBoolean9923) {
+                aTextureHandle_7395 = method3442(34336, class45.method391("gl", "uw_ground_unlit", -29832), glRenderDevice, 4)
+                aTextureHandle_7392 = method3442(34336, class45.method391("gl", "uw_ground_lit", -29832), glRenderDevice, 4)
+                aTextureHandle_7404 = method3442(34336, class45.method391("gl", "uw_model_unlit", -29832), glRenderDevice, 4)
+                aTextureHandle_7407 = method3442(34336, class45.method391("gl", "uw_model_lit", -29832), glRenderDevice, 4)
                 if ((aTextureHandle_7395 != null) and (aTextureHandle_7392 != null) and (aTextureHandle_7404 != null) and (aTextureHandle_7407 != null)) {
                     anInterface18_Impl3_7390 = this.aHa_Sub3_4479.method3839(1, 2, -15137, false, (intArrayOf(0, -1)))
                     anInterface18_Impl3_7390!!.method66(false, false, 25688)
@@ -116,7 +116,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                 } else aBoolean7391 = false
             } else aBoolean7391 = false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("or.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("or.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -2,7 +2,7 @@ import MultiLevelOptionState.Companion.method1849
 import jaclib.memory.Buffer
 import jaclib.memory.Source
 
-class GlVertexBufferArb internal constructor(class377: Class377, bool: Boolean) : GlBufferObject(class377, 34962, bool), Interface5_Impl1 {
+class GlVertexBufferArb internal constructor(glRenderDevice: GlRenderDevice, bool: Boolean) : GlBufferObject(glRenderDevice, 34962, bool), Interface5_Impl1 {
     private var aByte8491: Byte = 0
     override fun method21(i: Int) {
         super.method21(i)
@@ -12,7 +12,7 @@ class GlVertexBufferArb internal constructor(class377: Class377, bool: Boolean) 
     override fun method18(i: Int): Boolean {
         if (i != 6331) anInt8492 = -14
         anInt8489++
-        return super.method2123((this.aClass377_4759.aMapBuffer9915), i xor 0x18bb)
+        return super.method2123((this.aGlRenderDevice_4759.aMapBuffer9915), i xor 0x18bb)
     }
 
     fun method2130(i: Int): Int {
@@ -24,7 +24,7 @@ class GlVertexBufferArb internal constructor(class377: Class377, bool: Boolean) 
     override fun method19(bool: Boolean, i: Int): Buffer? {
         anInt8490++
         if (i != 26775) aByte8491 = 7.toByte()
-        return super.method2120(0, (this.aClass377_4759.aMapBuffer9915), bool)
+        return super.method2120(0, (this.aGlRenderDevice_4759.aMapBuffer9915), bool)
     }
 
     override fun method16(bool: Boolean): Int {

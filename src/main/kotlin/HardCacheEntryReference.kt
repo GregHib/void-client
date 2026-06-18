@@ -13,7 +13,7 @@ import TileSceneEntity.Companion.method2396
 import Font.Companion.method2570
 import KeyedCacheEntryReference.Companion.method3203
 import Class367_Sub8.Companion.method3546
-import Class377.Companion.method3965
+import GlRenderDevice.Companion.method3965
 import InputStream_Sub2.Companion.method128
 import java.io.IOException
 

@@ -32,9 +32,9 @@ object Class93 {
             val l = opengl.init(canvas, 8, 8, 8, 24, 0, i_1_)
             if (l == 0L) throw RuntimeException("")
             if (i != 25542) return null
-            val class377 = Class377(opengl, canvas, l, var_renderConfig, class45, i_1_)
-            class377.method3930(26.toByte())
-            return class377
+            val glRenderDevice = GlRenderDevice(opengl, canvas, l, var_renderConfig, class45, i_1_)
+            glRenderDevice.method3930(26.toByte())
+            return glRenderDevice
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("lt.D(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
         }

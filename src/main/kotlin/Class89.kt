@@ -3,23 +3,23 @@ import RingBufferInputStream.Companion.method3620
 /* Class89 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array<Class39?>?) {
-    private val aClass377_1506: Class377?
+class Class89 internal constructor(glRenderDevice: GlRenderDevice?, l: Long, class39s: Array<Class39?>?) {
+    private val aGlRenderDevice_1506: GlRenderDevice?
     var aLong1510: Long = 0
 
     @Throws(Throwable::class)
     protected fun finalize() {
         anInt1509++
-        aClass377_1506!!.method3966(this.aLong1510, 34192)
+        aGlRenderDevice_1506!!.method3966(this.aLong1510, 34192)
 //        super.finalize()
     }
 
     init {
         try {
             this.aLong1510 = l
-            aClass377_1506 = class377
+            aGlRenderDevice_1506 = glRenderDevice
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lha.<init>(" + (if (class377 != null) "{...}" else "null") + ',' + l + ',' + (if (class39s != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lha.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + l + ',' + (if (class39s != null) "{...}" else "null") + ')'))
         }
     }
 

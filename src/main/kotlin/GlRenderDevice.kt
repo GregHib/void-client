@@ -65,7 +65,10 @@ import java.awt.Canvas
 import java.awt.Rectangle
 import java.util.*
 
-class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: RenderConfig?, class45: Class45?, i: Int) : NativeRenderer(canvas, l, var_renderConfig, class45, i, 1) {
+/*
+ * Class377
+ */
+class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: RenderConfig?, class45: Class45?, i: Int) : NativeRenderer(canvas, l, var_renderConfig, class45, i, 1) {
     private var anOpenGL9856: OpenGL? = null
     private val aNodeDeque_9869 = NodeDeque()
     private var aNodeDeque_9899: NodeDeque? = NodeDeque()

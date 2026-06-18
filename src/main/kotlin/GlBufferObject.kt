@@ -11,7 +11,7 @@ import jaggl.OpenGL.Companion.glGenBuffersARB
 /*
  * Class285
  */
-abstract class GlBufferObject internal constructor(var aClass377_4759: Class377, private val anInt4755: Int, private val aBoolean4750: Boolean) : Interface5 {
+abstract class GlBufferObject internal constructor(var aGlRenderDevice_4759: GlRenderDevice, private val anInt4755: Int, private val aBoolean4750: Boolean) : Interface5 {
     private var anInt4736 = 0
     private var anInt4739 = 0
     private var anInt4746 = -1
@@ -29,9 +29,9 @@ abstract class GlBufferObject internal constructor(var aClass377_4759: Class377,
             glBindBufferARB(anInt4755, anInt4746)
             if (bool) {
                 glBufferDataARBub(anInt4755, anInt4739, null, 0, if (aBoolean4750) 35040 else 35044)
-                if (anInt4747 <= (this.aClass377_4759.aNativeHeapBuffer7974!!.b)) {
+                if (anInt4747 <= (this.aGlRenderDevice_4759.aNativeHeapBuffer7974!!.b)) {
                     anInt4736 = 1
-                    return (this.aClass377_4759.aNativeHeapBuffer7974)
+                    return (this.aGlRenderDevice_4759.aNativeHeapBuffer7974)
                 }
             }
             if (!mapbuffer.a() && mapbuffer.a(anInt4755, anInt4747, 35001)) {
@@ -50,12 +50,12 @@ abstract class GlBufferObject internal constructor(var aClass377_4759: Class377,
             if (anInt4746 <= 0) throw RuntimeException("ARGH!")
             glBindBufferARB(anInt4755, anInt4746)
             glBufferDataARBa(anInt4755, i_3_, source.getAddress(), if (!aBoolean4750) 35044 else 35040)
-            this.aClass377_4759.anInt8063 += i_3_ - anInt4747
+            this.aGlRenderDevice_4759.anInt8063 += i_3_ - anInt4747
             anInt4739 = i_3_
         } else if (anInt4746 > 0) {
             glBindBufferARB(anInt4755, anInt4746)
             glBufferSubDataARBa(anInt4755, 0, anInt4747, source.getAddress())
-            this.aClass377_4759.anInt8063 += i_3_ - anInt4747
+            this.aGlRenderDevice_4759.anInt8063 += i_3_ - anInt4747
         } else throw RuntimeException("ARGH!")
         anInt4747 = i_3_
         return true
@@ -65,7 +65,7 @@ abstract class GlBufferObject internal constructor(var aClass377_4759: Class377,
         if (i != 23315) aSystemFontGlyphs_4754 = null
         anInt4749++
         if (anInt4746 > 0) {
-            this.aClass377_4759.method3969(anInt4747, anInt4746, 3089)
+            this.aGlRenderDevice_4759.method3969(anInt4747, anInt4746, 3089)
             anInt4746 = -1
         }
     }
@@ -84,7 +84,7 @@ abstract class GlBufferObject internal constructor(var aClass377_4759: Class377,
             if (anInt4746 > 0) {
                 glBindBufferARB(anInt4755, anInt4746)
                 if (anInt4736 != 1) bool = mapbuffer.b()
-                else glBufferSubDataARBa(anInt4755, 0, anInt4739, this.aClass377_4759.aNativeHeapBuffer7974!!.getAddress())
+                else glBufferSubDataARBa(anInt4755, 0, anInt4739, this.aGlRenderDevice_4759.aNativeHeapBuffer7974!!.getAddress())
             }
             anInt4736 = 0
         }
@@ -95,11 +95,11 @@ abstract class GlBufferObject internal constructor(var aClass377_4759: Class377,
         anInt4752++
         if (i_4_ > anInt4739) {
             method2126((-36).toByte())
-            if (anInt4746 <= 0) aNativeHeapBuffer4748 = this.aClass377_4759.method3869(47.toByte(), false, i_4_)
+            if (anInt4746 <= 0) aNativeHeapBuffer4748 = this.aGlRenderDevice_4759.method3869(47.toByte(), false, i_4_)
             else {
                 glBindBufferARB(anInt4755, anInt4746)
                 glBufferDataARBub(anInt4755, i_4_, null, 0, if (!aBoolean4750) 35044 else 35040)
-                this.aClass377_4759.anInt8063 += i_4_ - anInt4739
+                this.aGlRenderDevice_4759.anInt8063 += i_4_ - anInt4739
             }
             anInt4739 = i_4_
         }
@@ -110,7 +110,7 @@ abstract class GlBufferObject internal constructor(var aClass377_4759: Class377,
     fun method2125(i: Int) {
         anInt4742++
         if (i == 0) {
-            if (this.aClass377_4759.aBoolean9920) glBindBufferARB(anInt4755, anInt4746)
+            if (this.aGlRenderDevice_4759.aBoolean9920) glBindBufferARB(anInt4755, anInt4746)
         }
     }
 
@@ -131,7 +131,7 @@ abstract class GlBufferObject internal constructor(var aClass377_4759: Class377,
         anInt4757++
         if (i.toInt() != -36) anInt4736 = -3
         if (anInt4746 < 0) {
-            if (this.aClass377_4759.aBoolean9920) {
+            if (this.aGlRenderDevice_4759.aBoolean9920) {
                 glGenBuffersARB(1, WalkingTypeUtil.anIntArray3311, 0)
                 anInt4746 = WalkingTypeUtil.anIntArray3311!![0]
                 glBindBufferARB(anInt4755, anInt4746)
