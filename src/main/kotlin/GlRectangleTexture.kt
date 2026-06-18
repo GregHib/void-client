@@ -17,7 +17,7 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         return anInt8634
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, i: Int, i_3_: Int, `is`: IntArray?, i_4_: Int, i_5_: Int) : super(glRenderDevice, 34037, GroundItemRenderState.aTextureFormatInfo_1662, Class68.aClass68_1183, i * i_3_, false) {
+    internal constructor(glRenderDevice: GlRenderDevice?, i: Int, i_3_: Int, `is`: IntArray?, i_4_: Int, i_5_: Int) : super(glRenderDevice, 34037, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirection.aMovementDirection_1183, i * i_3_, false) {
         try {
             anInt8640 = i
             anInt8634 = i_3_
@@ -30,7 +30,7 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         }
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_6_: Int, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(glRenderDevice, 34037, textureFormatInfo, Class68.aClass68_1183, i * i_6_, false) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_6_: Int, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(glRenderDevice, 34037, textureFormatInfo, MovementDirection.aMovementDirection_1183, i * i_6_, false) {
         try {
             anInt8634 = i_6_
             anInt8640 = i
@@ -50,14 +50,14 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         anInt8639++
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, class68: Class68?, i: Int, i_10_: Int) : super(glRenderDevice, 34037, textureFormatInfo, class68, i_10_ * i, false) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, movementDirection: MovementDirection?, i: Int, i_10_: Int) : super(glRenderDevice, 34037, textureFormatInfo, movementDirection, i_10_ * i, false) {
         try {
             anInt8634 = i_10_
             anInt8640 = i
             this.aGlRenderDevice_5082!!.method3850(115.toByte(), this)
-            glTexImage2Dub(this.anInt5093, 0, this.method228(109), i, i_10_, 0, method3055(105, this.aTextureFormatInfo_5084), method1128(-54, this.aClass68_5088), null, 0)
+            glTexImage2Dub(this.anInt5093, 0, this.method228(109), i, i_10_, 0, method3055(105, this.aTextureFormatInfo_5084), method1128(-54, this.aMovementDirection_5088), null, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("tw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ')'))
         }
     }
 
@@ -80,7 +80,7 @@ class GlRectangleTexture : GlTextureBase, Interface18_Impl3 {
         return f
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_33_: Int, fs: FloatArray?, i_34_: Int, i_35_: Int) : super(glRenderDevice, 34037, textureFormatInfo, Class68.aClass68_1187, i_33_ * i, false) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_33_: Int, fs: FloatArray?, i_34_: Int, i_35_: Int) : super(glRenderDevice, 34037, textureFormatInfo, MovementDirection.aMovementDirection_1187, i_33_ * i, false) {
         try {
             anInt8640 = i
             anInt8634 = i_33_

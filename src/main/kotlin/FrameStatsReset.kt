@@ -1619,7 +1619,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DynamicSceneObjectEntity.anInt10198 = 0
             CombineTextureNode.anInt9228 = 0
             ObjectSpawnDecoder.anInt1805 = 0
-            Class68.anInt1180 = 0
+            MovementDirection.anInt1180 = 0
             SoundChannelMixer.anInt3606 = 0
             InputSettingsState.anInt1760 = 0
             GroundDecorRenderer.anInt3633 = 0

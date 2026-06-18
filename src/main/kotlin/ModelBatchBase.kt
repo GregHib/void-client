@@ -26,16 +26,16 @@ abstract class ModelBatchBase {
         }
 
         @JvmStatic
-        fun method1128(i: Int, class68: Class68?): Int {
+        fun method1128(i: Int, movementDirection: MovementDirection?): Int {
             anInt1896++
-            if (Class68.aClass68_1179 != class68) {
-                if (class68 != Class68.aClass68_1181) {
-                    if (class68 == Class68.aClass68_1182) return 5124
-                    if (Class68.aClass68_1183 != class68) {
-                        if (class68 != Class68.aClass68_1184) {
-                            if (class68 == Class68.aClass68_1185) return 5125
-                            if (Class68.aClass68_1186 != class68) {
-                                if (Class68.aClass68_1187 == class68) return 5126
+            if (MovementDirection.aMovementDirection_1179 != movementDirection) {
+                if (movementDirection != MovementDirection.aMovementDirection_1181) {
+                    if (movementDirection == MovementDirection.aMovementDirection_1182) return 5124
+                    if (MovementDirection.aMovementDirection_1183 != movementDirection) {
+                        if (movementDirection != MovementDirection.aMovementDirection_1184) {
+                            if (movementDirection == MovementDirection.aMovementDirection_1185) return 5125
+                            if (MovementDirection.aMovementDirection_1186 != movementDirection) {
+                                if (MovementDirection.aMovementDirection_1187 == movementDirection) return 5126
                             } else return 5131
                         } else return 5123
                     } else return 5121

@@ -60,7 +60,7 @@ abstract class GraphicsOptionState {
         fun method1709(i: Int): Array<HudTabPanel?> {
             if (i > -110) method1715(97)
             anInt3141++
-            return (arrayOf<HudTabPanel?>(Class68.aHudTabPanel_1189, NoiseTextureNode.aHudTabPanel_9263, ParticleEmitterDef.aHudTabPanel_4953))
+            return (arrayOf<HudTabPanel?>(MovementDirection.aHudTabPanel_1189, NoiseTextureNode.aHudTabPanel_9263, ParticleEmitterDef.aHudTabPanel_4953))
         }
 
         @JvmStatic

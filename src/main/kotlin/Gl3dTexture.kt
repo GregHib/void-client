@@ -4,7 +4,7 @@ import jaggl.OpenGL.Companion.glPixelStorei
 import jaggl.OpenGL.Companion.glTexImage3Dub
 import java.io.IOException
 
-class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_0_: Int, i_1_: Int, `is`: ByteArray?) : GlTextureBase(glRenderDevice, 32879, textureFormatInfo, Class68.aClass68_1183, i_0_ * (i * i_1_), false), Interface18_Impl1 {
+class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_0_: Int, i_1_: Int, `is`: ByteArray?) : GlTextureBase(glRenderDevice, 32879, textureFormatInfo, MovementDirection.aMovementDirection_1183, i_0_ * (i * i_1_), false), Interface18_Impl1 {
     private val anInt8626: Int
     private val anInt8629: Int
     private val anInt8631: Int
@@ -203,7 +203,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
             anInt8627++
             ArbFogMaterialPass.aStringArray6200 = arrayOfNulls<String>(500)
             ProducerImageSurface.anInt9077 = 2 + (WorldMapLabel.aFontDefinition_4962!!.anInt1993 + WorldMapLabel.aFontDefinition_4962!!.anInt1988)
-            Class68.anInt1188 = (ParticleEmitterFactory.aFontDefinition_3179!!.anInt1988 - (-ParticleEmitterFactory.aFontDefinition_3179!!.anInt1993 - i))
+            MovementDirection.anInt1188 = (ParticleEmitterFactory.aFontDefinition_3179!!.anInt1988 - (-ParticleEmitterFactory.aFontDefinition_3179!!.anInt1993 - i))
             var i_4_ = 0
             while ((i_4_ < ArbFogMaterialPass.aStringArray6200!!.size)) {
                 ArbFogMaterialPass.aStringArray6200!![i_4_] = ""

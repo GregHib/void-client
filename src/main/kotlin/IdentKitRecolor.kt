@@ -155,9 +155,9 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                     var_renderer!!.KA(i_35_, i_36_, LocTypeDefinition.anInt4017 + i_35_, i_36_ + 350)
                     var_renderer.aa(i_35_, i_36_, LocTypeDefinition.anInt4017, 350, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 1)
                     MapTileShape.method2663(-5590, i_35_, LocTypeDefinition.anInt4017 + i_35_, i_36_, i_36_ + 350)
-                    val i_37_ = 350 / Class68.anInt1188
+                    val i_37_ = 350 / MovementDirection.anInt1188
                     if (WorldMapTextLabel.anInt8587 > 0) {
-                        val i_38_ = 342 + -Class68.anInt1188
+                        val i_38_ = 342 + -MovementDirection.anInt1188
                         val i_39_ = (i_37_ * i_38_ / (-1 + (i_37_ - -WorldMapTextLabel.anInt8587)))
                         var i_40_ = 4
                         if (WorldMapTextLabel.anInt8587 > 1) i_40_ += ((WorldMapTextLabel.anInt8587 + (-1 + -ViewportTransform.anInt3676)) * (i_38_ - i_39_) / (WorldMapTextLabel.anInt8587 + -1))
@@ -169,7 +169,7 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                             for (i_43_ in strings.indices) {
                                 val i_44_ = i_42_ * i_43_ + 8
                                 var_renderer.KA(i_35_ + i_44_, i_36_, i_42_ + i_35_ - (-i_44_ - -8), i_36_ + 350)
-                                GameAppletFrame.aFont_20!!.method2576(BackgroundWorkerThread.method1909(31.toByte(), strings[i_43_]!!), -1, (-((-ViewportTransform.anInt3676 + i_41_) * Class68.anInt1188) + (-ProducerImageSurface.anInt9077 + i_36_ - (-350 - (-2 + -(ParticleEmitterFactory.aFontDefinition_3179!!.anInt1993))))), i_35_ + i_44_, -16777216, -110)
+                                GameAppletFrame.aFont_20!!.method2576(BackgroundWorkerThread.method1909(31.toByte(), strings[i_43_]!!), -1, (-((-ViewportTransform.anInt3676 + i_41_) * MovementDirection.anInt1188) + (-ProducerImageSurface.anInt9077 + i_36_ - (-350 - (-2 + -(ParticleEmitterFactory.aFontDefinition_3179!!.anInt1993))))), i_35_ + i_44_, -16777216, -110)
                             }
                             i_41_++
                         }

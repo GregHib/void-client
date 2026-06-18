@@ -1006,7 +1006,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    abstract fun method3861(i: Int, i_99_: Byte, i_100_: Int, class68: Class68?, textureFormatInfo: TextureFormatInfo?): Interface18_Impl3?
+    abstract fun method3861(i: Int, i_99_: Byte, i_100_: Int, movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?): Interface18_Impl3?
 
     abstract fun method3862(i: Int, modelBatchBase: ModelBatchBase?)
 
@@ -1315,7 +1315,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt8162 = i
     }
 
-    abstract fun method3880(class68: Class68?, textureFormatInfo: TextureFormatInfo?, i: Byte): Boolean
+    abstract fun method3880(movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?, i: Byte): Boolean
 
     abstract fun method3881(`object`: Any?, i: Byte, canvas: Canvas?)
 
@@ -2168,7 +2168,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             i_263_++
         }
         this.aClass348_Sub1Array8132 = arrayOfNulls<AbstractTileShape>(-2 + this.anInt8138)
-        this.anInterface18_8147 = method3861(1, (-84).toByte(), 1, Class68.aClass68_1183, GroundItemRenderState.aTextureFormatInfo_1662)
+        this.anInterface18_8147 = method3861(1, (-84).toByte(), 1, MovementDirection.aMovementDirection_1183, GroundItemRenderState.aTextureFormatInfo_1662)
         method3651(ArbVertexProgram(262144))
         this.aModelBatchBase_8204 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078)))))
         this.aModelBatchBase_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4076)))))
@@ -2207,7 +2207,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.method3673()
     }
 
-    abstract fun method3931(bool: Boolean, textureFormatInfo: TextureFormatInfo?, class68: Class68?): Boolean
+    abstract fun method3931(bool: Boolean, textureFormatInfo: TextureFormatInfo?, movementDirection: MovementDirection?): Boolean
 
     fun method3932(i: Byte) {
         if (this.aSingletonMarker_8184 != ModelDefinitionCache.aSingletonMarker_2864) {

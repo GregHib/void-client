@@ -486,7 +486,7 @@ import WorldMapImageBuilder.Companion.method698
 import ChatCommandProcessor.method705
 import ChatCommandProcessor.method713
 import TooltipComponentRenderer.Companion.method716
-import Class68.Companion.method719
+import MovementDirection.Companion.method719
 import Class69.Companion.method722
 import Class70.Companion.method725
 import Class71.method728
@@ -1323,7 +1323,7 @@ class Client : GameAppletFrame() {
                 Class8.aNamedIdRecord_165 = OggCacheStream.aNamedIdRecord_5271
             }
             SceneRegionState.aHudTabPanel_196 = (method1677(-121, this.getParameter("modewhat")!!.toInt()))
-            if (SceneRegionState.aHudTabPanel_196 != ParticleEmitterDef.aHudTabPanel_4953 && SceneRegionState.aHudTabPanel_196 != NoiseTextureNode.aHudTabPanel_9263 && Class68.aHudTabPanel_1189 != SceneRegionState.aHudTabPanel_196) SceneRegionState.aHudTabPanel_196 = Class68.aHudTabPanel_1189
+            if (SceneRegionState.aHudTabPanel_196 != ParticleEmitterDef.aHudTabPanel_4953 && SceneRegionState.aHudTabPanel_196 != NoiseTextureNode.aHudTabPanel_9263 && MovementDirection.aHudTabPanel_1189 != SceneRegionState.aHudTabPanel_196) SceneRegionState.aHudTabPanel_196 = MovementDirection.aHudTabPanel_1189
             try {
                 AnimationFrameDefinition.anInt6967 = this.getParameter("lang")!!.toInt()
             } catch (exception: Exception) {
@@ -1978,7 +1978,7 @@ class Client : GameAppletFrame() {
                     DirectionalLightTextureNode.aServerConnectionInfo_9443 = ServerConnectionInfo()
                     DirectionalLightTextureNode.aServerConnectionInfo_9443!!.anInt2143 = strings[2].toInt()
                     Class8.aNamedIdRecord_165 = Class76.aNamedIdRecord_1279
-                    if (strings[3] == "live") SceneRegionState.aHudTabPanel_196 = Class68.aHudTabPanel_1189
+                    if (strings[3] == "live") SceneRegionState.aHudTabPanel_196 = MovementDirection.aHudTabPanel_1189
                     else if (strings[3] != "rc") {
                         if (strings[3] == "wip") SceneRegionState.aHudTabPanel_196 = ParticleEmitterDef.aHudTabPanel_4953
                         else method518("modewhat", 41.toByte())

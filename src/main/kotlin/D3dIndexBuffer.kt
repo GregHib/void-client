@@ -5,15 +5,15 @@ import jagdx.ue.a
 /*
  * Class142
  */
-class D3dIndexBuffer internal constructor(private val aD3dRenderDevice_8515: D3dRenderDevice, private var aClass68_8518: Class68?, private val aBoolean8519: Boolean) : Interface5_Impl2 {
+class D3dIndexBuffer internal constructor(private val aD3dRenderDevice_8515: D3dRenderDevice, private var aMovementDirection_8518: MovementDirection?, private val aBoolean8519: Boolean) : Interface5_Impl2 {
     private var anInt8516 = 0
     var anIDirect3DIndexBuffer8517: IDirect3DIndexBuffer? = null
     private var aBoolean8520 = false
     private var anInt8521 = 0
 
-    override fun method25(i: Byte): Class68? {
-        if (i <= 19) aClass68_8518 = null
-        return aClass68_8518
+    override fun method25(i: Byte): MovementDirection? {
+        if (i <= 19) aMovementDirection_8518 = null
+        return aMovementDirection_8518
     }
 
     override fun method22(i: Int): Boolean {
@@ -27,7 +27,7 @@ class D3dIndexBuffer internal constructor(private val aD3dRenderDevice_8515: D3d
 
     override fun method23(i: Int, i_0_: Int) {
         if (i != 15959) anInt8516 = -78
-        anInt8516 = aClass68_8518!!.anInt1178 * i_0_
+        anInt8516 = aMovementDirection_8518!!.anInt1178 * i_0_
         if (anInt8521 < anInt8516) {
             var i_1_ = 8
             val i_2_: Int
@@ -36,7 +36,7 @@ class D3dIndexBuffer internal constructor(private val aD3dRenderDevice_8515: D3d
                 i_2_ = 0
             } else i_2_ = 1
             if (null != this.anIDirect3DIndexBuffer8517) this.anIDirect3DIndexBuffer8517!!.a(9275)
-            this.anIDirect3DIndexBuffer8517 = (aD3dRenderDevice_8515.anIDirect3DDevice9810!!.a(anInt8516, i_1_, if (aClass68_8518 != Class68.aClass68_1184) 102 else 101, i_2_, this.anIDirect3DIndexBuffer8517))
+            this.anIDirect3DIndexBuffer8517 = (aD3dRenderDevice_8515.anIDirect3DDevice9810!!.a(anInt8516, i_1_, if (aMovementDirection_8518 != MovementDirection.aMovementDirection_1184) 102 else 101, i_2_, this.anIDirect3DIndexBuffer8517))
             anInt8521 = anInt8516
         }
     }

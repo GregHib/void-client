@@ -1,9 +1,9 @@
 import jaclib.memory.Buffer
 
-class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, class68: Class68?, bool: Boolean) : GlBufferObject(glRenderDevice, 34963, bool), Interface5_Impl2 {
-    private val aClass68_8504: Class68?
+class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, movementDirection: MovementDirection?, bool: Boolean) : GlBufferObject(glRenderDevice, 34963, bool), Interface5_Impl2 {
+    private val aMovementDirection_8504: MovementDirection?
     override fun method23(i: Int, i_0_: Int) {
-        super.method23(i, i_0_ * aClass68_8504!!.anInt1178)
+        super.method23(i, i_0_ * aMovementDirection_8504!!.anInt1178)
         anInt8499++
     }
 
@@ -25,10 +25,10 @@ class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, clas
         return super.method2123((this.aGlRenderDevice_4759.aMapBuffer9913), 0)
     }
 
-    override fun method25(i: Byte): Class68 {
+    override fun method25(i: Byte): MovementDirection {
         anInt8506++
         if (i <= 19) aClass70_8503 = null
-        return aClass68_8504!!
+        return aMovementDirection_8504!!
     }
 
     override fun method21(i: Int) {
@@ -40,9 +40,9 @@ class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, clas
 
     init {
         try {
-            aClass68_8504 = class68
+            aMovementDirection_8504 = movementDirection
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("mw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("mw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 

@@ -407,7 +407,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                             val i_100_: Int
                             if (bool_94_) {
                                 is_96_ = ParticleEmitterNode.anIntArrayArray174!![i_76_.toInt()]!!
-                                is_97_ = Class68.anIntArrayArray1190!![i_76_.toInt()]!!
+                                is_97_ = MovementDirection.anIntArrayArray1190!![i_76_.toInt()]!!
                                 i_98_ = (if (class22 != null) MinimapTileEntry.anIntArray619!![i_76_.toInt()] else 0)
                                 is_99_ = (BoundingBoxNode.anIntArrayArray6740!![i_76_.toInt()]!!)
                                 i_100_ = (if (class277 == null) 0 else (ConstantColourTextureNode.anIntArray9249!![i_76_.toInt()]))
@@ -1127,7 +1127,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     i_270_ = method2483(i_226_, i_227_)
                                     i_271_ = method1457(i_226_, i_227_)
                                 }
-                                var_terrainTile_224_.method3978(i_226_, i_227_, is_248_, is_250_!!, is_249_, is_251_!!, ParticleEmitterNode.anIntArrayArray174!![i_228_.toInt()]!!, Class68.anIntArrayArray1190!![i_228_.toInt()]!!, (BoundingBoxNode.anIntArrayArray6740!![i_228_.toInt()]!!), is_238_, is_239_!!, is_240_, is_241_, i_269_, i_270_, i_271_, false)
+                                var_terrainTile_224_.method3978(i_226_, i_227_, is_248_, is_250_!!, is_249_, is_251_!!, ParticleEmitterNode.anIntArrayArray174!![i_228_.toInt()]!!, MovementDirection.anIntArrayArray1190!![i_228_.toInt()]!!, (BoundingBoxNode.anIntArrayArray6740!![i_228_.toInt()]!!), is_238_, is_239_!!, is_240_, is_241_, i_269_, i_270_, i_271_, false)
                                 method1394(i, i_226_, i_227_)
                             }
                         }

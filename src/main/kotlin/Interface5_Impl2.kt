@@ -9,5 +9,5 @@ interface Interface5_Impl2 : Interface5 {
 
     fun method24(bool: Boolean, bool_1_: Boolean): Buffer?
 
-    fun method25(i: Byte): Class68?
+    fun method25(i: Byte): MovementDirection?
 }

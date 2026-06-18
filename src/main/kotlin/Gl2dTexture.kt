@@ -21,7 +21,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         return f / anInt8604.toFloat()
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(glRenderDevice, 3553, GroundItemRenderState.aTextureFormatInfo_1662, Class68.aClass68_1183, i * i_0_, bool) {
+    internal constructor(glRenderDevice: GlRenderDevice?, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(glRenderDevice, 3553, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirection.aMovementDirection_1183, i * i_0_, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_0_
@@ -37,7 +37,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         }
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_6_: Int, bool: Boolean, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(glRenderDevice, 3553, textureFormatInfo, Class68.aClass68_1183, i_6_ * i, bool) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_6_: Int, bool: Boolean, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(glRenderDevice, 3553, textureFormatInfo, MovementDirection.aMovementDirection_1183, i_6_ * i, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_6_
@@ -128,14 +128,14 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         glPixelStorei(3314, 0)
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, class68: Class68?, i: Int, i_47_: Int) : super(glRenderDevice, 3553, textureFormatInfo, class68, i_47_ * i, false) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, movementDirection: MovementDirection?, i: Int, i_47_: Int) : super(glRenderDevice, 3553, textureFormatInfo, movementDirection, i_47_ * i, false) {
         try {
             anInt8612 = i
             anInt8604 = i_47_
             this.aGlRenderDevice_5082!!.method3850(110.toByte(), this)
-            glTexImage2Dub(this.anInt5093, 0, this.method228(113), i, i_47_, 0, method3055(113, this.aTextureFormatInfo_5084), method1128(-112, this.aClass68_5088), null, 0)
+            glTexImage2Dub(this.anInt5093, 0, this.method228(113), i, i_47_, 0, method3055(113, this.aTextureFormatInfo_5084), method1128(-112, this.aMovementDirection_5088), null, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i + ',' + i_47_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + i + ',' + i_47_ + ')'))
         }
     }
 
@@ -147,7 +147,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         if (i != 25688) anInt8604 = -90
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_49_: Int, bool: Boolean, fs: FloatArray?, i_50_: Int, i_51_: Int) : super(glRenderDevice, 3553, textureFormatInfo, Class68.aClass68_1187, i * i_49_, bool) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_49_: Int, bool: Boolean, fs: FloatArray?, i_50_: Int, i_51_: Int) : super(glRenderDevice, 3553, textureFormatInfo, MovementDirection.aMovementDirection_1187, i * i_49_, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_49_

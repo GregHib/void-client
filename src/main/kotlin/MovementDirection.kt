@@ -1,26 +1,26 @@
 /* Class68 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class68 private constructor(@JvmField var anInt1178: Int) {
+class MovementDirection private constructor(@JvmField var anInt1178: Int) {
     override fun toString(): String {
         anInt1180++
         throw IllegalStateException()
     }
 
     companion object {
-        var aClass68_1179: Class68? = Class68(1)
+        var aMovementDirection_1179: MovementDirection? = MovementDirection(1)
         @JvmField
         var anInt1180: Int = 0
-        var aClass68_1181: Class68? = Class68(2)
-        var aClass68_1182: Class68? = Class68(4)
+        var aMovementDirection_1181: MovementDirection? = MovementDirection(2)
+        var aMovementDirection_1182: MovementDirection? = MovementDirection(4)
         @JvmField
-        var aClass68_1183: Class68? = Class68(1)
+        var aMovementDirection_1183: MovementDirection? = MovementDirection(1)
         @JvmField
-        var aClass68_1184: Class68? = Class68(2)
-        var aClass68_1185: Class68? = Class68(4)
-        var aClass68_1186: Class68? = Class68(2)
+        var aMovementDirection_1184: MovementDirection? = MovementDirection(2)
+        var aMovementDirection_1185: MovementDirection? = MovementDirection(4)
+        var aMovementDirection_1186: MovementDirection? = MovementDirection(2)
         @JvmField
-        var aClass68_1187: Class68? = Class68(4)
+        var aMovementDirection_1187: MovementDirection? = MovementDirection(4)
         var anInt1188: Int = 0
         @JvmField
         var aHudTabPanel_1189: HudTabPanel?
@@ -29,17 +29,17 @@ class Class68 private constructor(@JvmField var anInt1178: Int) {
 
         @JvmStatic
         fun method719(i: Byte) {
-            aClass68_1183 = null
-            aClass68_1184 = null
-            aClass68_1181 = null
+            aMovementDirection_1183 = null
+            aMovementDirection_1184 = null
+            aMovementDirection_1181 = null
             if (i.toInt() == 72) {
-                aClass68_1182 = null
+                aMovementDirection_1182 = null
                 anIntArrayArray1190 = null
-                aClass68_1187 = null
+                aMovementDirection_1187 = null
                 aHudTabPanel_1189 = null
-                aClass68_1179 = null
-                aClass68_1186 = null
-                aClass68_1185 = null
+                aMovementDirection_1179 = null
+                aMovementDirection_1186 = null
+                aMovementDirection_1185 = null
             }
         }
 

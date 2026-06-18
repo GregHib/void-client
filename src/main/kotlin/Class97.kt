@@ -45,7 +45,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDeco
                 if (i != -12763) anInt1546 = -8
                 var i_13_ = 0
                 i_10_ = anInt1544 + anInt1559 * i_9_
-                if (aHa_Sub3_1561!!.method3880(Class68.aClass68_1183, (ClampTextureNode.aTextureFormatInfo_9471), 122.toByte())) {
+                if (aHa_Sub3_1561!!.method3880(MovementDirection.aMovementDirection_1183, (ClampTextureNode.aTextureFormatInfo_9471), 122.toByte())) {
                     if (Class367_Sub11.aByteArray7394 == null) Class367_Sub11.aByteArray7394 = ByteArray(16384)
                     val is_14_ = Class367_Sub11.aByteArray7394!!
                     for (i_15_ in -128..-1) {

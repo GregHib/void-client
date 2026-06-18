@@ -10,10 +10,10 @@ import WorldMapImageBuilder.Companion.method696
 /* Class325 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?) {
+class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection: MovementDirection?) {
     var anInt4069: Int = 0
     var anInt4070: Int = 0
-    private val aClass68_4071: Class68?
+    private val aMovementDirection_4071: MovementDirection?
     private val anInt4072: Int
     override fun toString(): String {
         anInt4066++
@@ -23,12 +23,12 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
     init {
         try {
             anInt4072 = i_78_
-            aClass68_4071 = class68
+            aMovementDirection_4071 = movementDirection
             this.anInt4070 = i
-            this.anInt4069 = aClass68_4071!!.anInt1178 * anInt4072
+            this.anInt4069 = aMovementDirection_4071!!.anInt1178 * anInt4072
             if (this.anInt4070 >= 16) throw RuntimeException()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("daa.<init>(" + i + ',' + i_78_ + ',' + (if (class68 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("daa.<init>(" + i + ',' + i_78_ + ',' + (if (movementDirection != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -36,14 +36,14 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
         var anInt4066: Int = 0
         var anInt4067: Int = 0
         var anInt4068: Int = 0
-        var aSpriteMaskShape_4073: SpriteMaskShape? = SpriteMaskShape(0, 3, Class68.aClass68_1187)
+        var aSpriteMaskShape_4073: SpriteMaskShape? = SpriteMaskShape(0, 3, MovementDirection.aMovementDirection_1187)
         var anInt4074: Int = 0
-        var aSpriteMaskShape_4075: SpriteMaskShape? = SpriteMaskShape(1, 3, Class68.aClass68_1187)
-        var aSpriteMaskShape_4076: SpriteMaskShape? = SpriteMaskShape(2, 4, Class68.aClass68_1183)
-        var aSpriteMaskShape_4077: SpriteMaskShape? = SpriteMaskShape(3, 1, Class68.aClass68_1187)
-        var aSpriteMaskShape_4078: SpriteMaskShape? = SpriteMaskShape(4, 2, Class68.aClass68_1187)
-        var aSpriteMaskShape_4079: SpriteMaskShape? = SpriteMaskShape(5, 3, Class68.aClass68_1187)
-        var aSpriteMaskShape_4080: SpriteMaskShape? = SpriteMaskShape(6, 4, Class68.aClass68_1187)
+        var aSpriteMaskShape_4075: SpriteMaskShape? = SpriteMaskShape(1, 3, MovementDirection.aMovementDirection_1187)
+        var aSpriteMaskShape_4076: SpriteMaskShape? = SpriteMaskShape(2, 4, MovementDirection.aMovementDirection_1183)
+        var aSpriteMaskShape_4077: SpriteMaskShape? = SpriteMaskShape(3, 1, MovementDirection.aMovementDirection_1187)
+        var aSpriteMaskShape_4078: SpriteMaskShape? = SpriteMaskShape(4, 2, MovementDirection.aMovementDirection_1187)
+        var aSpriteMaskShape_4079: SpriteMaskShape? = SpriteMaskShape(5, 3, MovementDirection.aMovementDirection_1187)
+        var aSpriteMaskShape_4080: SpriteMaskShape? = SpriteMaskShape(6, 4, MovementDirection.aMovementDirection_1187)
         var anInt4081: Int = method2253(16, 119)
         @JvmField
         var aRectangleRegion_4082: RectangleRegion? = RectangleRegion(8, 0, 4, 1)

@@ -11,13 +11,13 @@ import kotlin.math.min
 /*
  * Class14
  */
-abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFormatInfo: TextureFormatInfo?, class68: Class68?, i_66_: Int, bool: Boolean) : Interface18 {
+abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFormatInfo: TextureFormatInfo?, movementDirection: MovementDirection?, i_66_: Int, bool: Boolean) : Interface18 {
     @JvmField
     var aGlRenderDevice_5082: GlRenderDevice? = null
     @JvmField
     var aTextureFormatInfo_5084: TextureFormatInfo? = null
     @JvmField
-    var aClass68_5088: Class68? = null
+    var aMovementDirection_5088: MovementDirection? = null
     private val anInt5090: Int
     @JvmField
     var anInt5093: Int = 0
@@ -42,8 +42,8 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
 
     fun method228(i: Int): Int {
         anInt5085++
-        if (Class68.aClass68_1183 != this.aClass68_5088) {
-            if (Class68.aClass68_1186 == this.aClass68_5088) {
+        if (MovementDirection.aMovementDirection_1183 != this.aMovementDirection_5088) {
+            if (MovementDirection.aMovementDirection_1186 == this.aMovementDirection_5088) {
                 if (this.aTextureFormatInfo_5084 == TimedRecordAccessor.aTextureFormatInfo_7103) return 34843
                 if (GroundItemRenderState.aTextureFormatInfo_1662 == this.aTextureFormatInfo_5084) return 34842
                 if (this.aTextureFormatInfo_5084 != ClampTextureNode.aTextureFormatInfo_9471) {
@@ -53,7 +53,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
                         } else return 34847
                     } else return 34846
                 } else return 34844
-            } else if (this.aClass68_5088 == Class68.aClass68_1187) {
+            } else if (this.aMovementDirection_5088 == MovementDirection.aMovementDirection_1187) {
                 if (TimedRecordAccessor.aTextureFormatInfo_7103 != this.aTextureFormatInfo_5084) {
                     if (this.aTextureFormatInfo_5084 == GroundItemRenderState.aTextureFormatInfo_1662) return 34836
                     if (this.aTextureFormatInfo_5084 != ClampTextureNode.aTextureFormatInfo_9471) {
@@ -147,7 +147,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
 
     private fun method231(i: Int): Int {
         anInt5095++
-        val i_21_ = (anInt5090 * (this.aClass68_5088!!.anInt1178 * this.aTextureFormatInfo_5084!!.anInt3850))
+        val i_21_ = (anInt5090 * (this.aMovementDirection_5088!!.anInt1178 * this.aTextureFormatInfo_5084!!.anInt3850))
         if (i >= -105) method232(null, 118.toByte(), true, 16)
         if (aBoolean5099) return 4 * i_21_ / 3
         return i_21_
@@ -309,7 +309,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
             anInt5090 = i_66_
             this.aGlRenderDevice_5082 = glRenderDevice
             this.aTextureFormatInfo_5084 = textureFormatInfo
-            this.aClass68_5088 = class68
+            this.aMovementDirection_5088 = movementDirection
             aBoolean5099 = bool
             this.anInt5093 = i
             glGenTextures(1, TextureDefinitionLoader.anIntArray1975, 0)
@@ -317,7 +317,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
             method229(true)
             method236(0, (-126).toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("hda.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (class68 != null) "{...}" else "null") + ',' + i_66_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("hda.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + i_66_ + ',' + bool + ')'))
         }
     }
 

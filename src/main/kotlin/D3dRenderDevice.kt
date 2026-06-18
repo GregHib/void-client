@@ -266,10 +266,10 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         method3626(i_28_, i_29_)
     }
 
-    override fun method3931(bool: Boolean, textureFormatInfo: TextureFormatInfo?, class68: Class68?): Boolean {
+    override fun method3931(bool: Boolean, textureFormatInfo: TextureFormatInfo?, movementDirection: MovementDirection?): Boolean {
         val d3ddisplaymode = D3DDISPLAYMODE()
         if (bool != true) aBooleanArray9786 = null
-        return (a(anIDirect3D9793!!.a(anInt9799, d3ddisplaymode), !bool) && a((anIDirect3D9793!!.CheckDeviceFormat(anInt9799, anInt9807, d3ddisplaymode.Format, 0, 4, method3958(22, class68, textureFormatInfo))), false))
+        return (a(anIDirect3D9793!!.a(anInt9799, d3ddisplaymode), !bool) && a((anIDirect3D9793!!.CheckDeviceFormat(anInt9799, anInt9807, d3ddisplaymode.Format, 0, 4, method3958(22, movementDirection, textureFormatInfo))), false))
     }
 
     override fun method3881(`object`: Any?, i: Byte, canvas: Canvas?) {
@@ -422,7 +422,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
 
     override fun method3840(i: Int, bool: Boolean): Interface5_Impl2 {
         if (i != -28633) method3937(102.toByte())
-        return D3dIndexBuffer(this, Class68.aClass68_1184, bool)
+        return D3dIndexBuffer(this, MovementDirection.aMovementDirection_1184, bool)
     }
 
     override fun GA(i: Int) {
@@ -636,10 +636,10 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 11, this.anInt8175 or i_68_)
     }
 
-    override fun method3880(class68: Class68?, textureFormatInfo: TextureFormatInfo?, i: Byte): Boolean {
+    override fun method3880(movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?, i: Byte): Boolean {
         val d3ddisplaymode = D3DDISPLAYMODE()
         val i_69_ = 96 / ((i - 85) / 37)
-        return (a(anIDirect3D9793!!.a(anInt9799, d3ddisplaymode), false) && a((anIDirect3D9793!!.CheckDeviceFormat(anInt9799, anInt9807, d3ddisplaymode.Format, 0, 3, method3958(22, class68, textureFormatInfo))), false))
+        return (a(anIDirect3D9793!!.a(anInt9799, d3ddisplaymode), false) && a((anIDirect3D9793!!.CheckDeviceFormat(anInt9799, anInt9807, d3ddisplaymode.Format, 0, 3, method3958(22, movementDirection, textureFormatInfo))), false))
     }
 
     override fun method3882(i: Byte) {
@@ -700,8 +700,8 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         if (i != 1) aBoolean9801 = true
     }
 
-    override fun method3861(i: Int, i_73_: Byte, i_74_: Int, class68: Class68?, textureFormatInfo: TextureFormatInfo?): Interface18_Impl3 {
-        return D3DTexture2D(this, textureFormatInfo!!, class68!!, i_74_, i)
+    override fun method3861(i: Int, i_73_: Byte, i_74_: Int, movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?): Interface18_Impl3 {
+        return D3DTexture2D(this, textureFormatInfo!!, movementDirection!!, i_74_, i)
     }
 
     override fun method3844(i: Int, canvas: Canvas?, `object`: Any?) {
@@ -841,8 +841,8 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         }
 
         @JvmStatic
-        fun method3958(i: Int, class68: Class68?, textureFormatInfo: TextureFormatInfo?): Int {
-            if (class68 == Class68.aClass68_1183) {
+        fun method3958(i: Int, movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?): Int {
+            if (movementDirection == MovementDirection.aMovementDirection_1183) {
                 if (TimedRecordAccessor.aTextureFormatInfo_7103 != textureFormatInfo) {
                     if (GroundItemRenderState.aTextureFormatInfo_1662 == textureFormatInfo) return 21
                     if (ClampTextureNode.aTextureFormatInfo_9471 == textureFormatInfo) return 28

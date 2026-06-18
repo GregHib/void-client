@@ -41,7 +41,7 @@ class GlFontTextured internal constructor(private val aHa_Sub3_6494: NativeRende
                     }
                 }
             }
-            if (!aHa_Sub3_6494.method3880(Class68.aClass68_1183, ClampTextureNode.aTextureFormatInfo_9471, 126.toByte())) {
+            if (!aHa_Sub3_6494.method3880(MovementDirection.aMovementDirection_1183, ClampTextureNode.aTextureFormatInfo_9471, 126.toByte())) {
                 val is_19_ = IntArray(`is`.size)
                 for (i_20_ in `is`.indices) is_19_[i_20_] = `is`[i_20_].toInt() shl 24
                 anInterface18_Impl3_6492 = aHa_Sub3_6494.method3839(i_5_, i_5_, -15137, false, is_19_)
