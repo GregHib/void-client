@@ -158,7 +158,7 @@ class GlTexture3D : GlTexture {
                 for (i_42_ in 0..<CalendarUtil.anInt4135) WaterDetailOptionState.aSoundEnvelopeArray5993!![i_42_]!!.method1544(8688, bool, i)
             }
             if (VoronoiNoiseTextureNode.aBoolean9121) {
-                Class52.anIntArray4906 = Class9.aRenderer171!!.Y()
+                RsaVarbitHandler.anIntArray4906 = Class9.aRenderer171!!.Y()
                 Class9.aRenderer171!!.K(BrightnessContrastEffect.anIntArray9183)
                 val i_43_ = ((BrightnessContrastEffect.anIntArray9183!![2] - BrightnessContrastEffect.anIntArray9183!![0]) / Class75_Sub1.anInt5652)
                 for (i_44_ in 0..<Class75_Sub1.anInt5652 - 1) WidgetDefinition.anIntArray256!![i_44_] = i_43_ * (i_44_ + 1) + ParticleProcessor.anIntArray4271!![i_44_]

@@ -653,7 +653,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                                 NativeLibraryUnloader.anInt2975++
                                 LinkedListNode.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
-                                val class348_sub47 = method2148((Class52.aFontMetaRef_4907), (TheoraVideoStream.aClass77_9029), -93)
+                                val class348_sub47 = method2148((RsaVarbitHandler.aFontMetaRef_4907), (TheoraVideoStream.aClass77_9029), -93)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(HeightMapNoise.anInt3829, 3.toByte())
@@ -700,7 +700,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                                 LinkedListNode.anInt4292 = 0
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_
-                                val class348_sub47 = method2148((Class52.aFontMetaRef_4905), (TheoraVideoStream.aClass77_9029), -113)
+                                val class348_sub47 = method2148((RsaVarbitHandler.aFontMetaRef_4905), (TheoraVideoStream.aClass77_9029), -113)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(60.toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -121)) 0 else 1))
                                 InterfaceComponentGroup.method3243(118, class348_sub47)
@@ -894,7 +894,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                                 LinkedListNode.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 NativeLibraryUnloader.anInt2975++
-                                val class348_sub47 = method2148((Class52.aFontMetaRef_4907), (TheoraVideoStream.aClass77_9029), -127)
+                                val class348_sub47 = method2148((RsaVarbitHandler.aFontMetaRef_4907), (TheoraVideoStream.aClass77_9029), -127)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle((LocalPlayerState.aPlayer_1907!!.anInt10290), 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(HeightMapNoise.anInt3829, 3.toByte())

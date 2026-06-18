@@ -46,14 +46,14 @@ object ScreenBorderFiller {
                 if (i_1_ > 0 || i_3_ > 0 || i_2_ > 0 || i_4_ > 0) {
                     try {
                         val container: Container?
-                        if (Class52.aFrame4904 == null) {
+                        if (RsaVarbitHandler.aFrame4904 == null) {
                             if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
                             else container = Class93.anApplet1530 as? Container
-                        } else container = Class52.aFrame4904
+                        } else container = RsaVarbitHandler.aFrame4904
                         var i_5_ = 0
                         var i_6_ = 0
-                        if (container === Class52.aFrame4904) {
-                            val insets = Class52.aFrame4904!!.getInsets()
+                        if (container === RsaVarbitHandler.aFrame4904) {
+                            val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
                             i_5_ = insets.left
                             i_6_ = insets.top
                         }

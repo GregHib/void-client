@@ -27,7 +27,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     override fun getParameter(string: String?): String? {
         anInt3++
-        if (Class52.aFrame4904 != null) return null
+        if (RsaVarbitHandler.aFrame4904 != null) return null
         if (Class93.anApplet1530 != null && Class93.anApplet1530 !== this) return Class93.anApplet1530!!.getParameter(string)
         return null
     }
@@ -100,7 +100,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     override fun getDocumentBase(): URL? {
         anInt30++
-        if (Class52.aFrame4904 != null) return null
+        if (RsaVarbitHandler.aFrame4904 != null) return null
         if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getDocumentBase()
         return getCodeBase()
     }
@@ -120,18 +120,18 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         anInt7++
         val container: Container
         if (SkeletalAnimFrameLoader.aFrame476 == null) {
-            if (Class52.aFrame4904 == null) {
+            if (RsaVarbitHandler.aFrame4904 == null) {
                 if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169!!
                 else container = Class93.anApplet1530!!.getPulseComponent() as Container
-            } else container = Class52.aFrame4904 as Container
+            } else container = RsaVarbitHandler.aFrame4904 as Container
         } else container = SkeletalAnimFrameLoader.aFrame476 as Container
         container.setLayout(null)
         ParticleSystemRenderer.aCanvas3869 = DelegatingRenderCanvas(this)
         container.add(ParticleSystemRenderer.aCanvas3869)
         ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
         ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
-        if (container === Class52.aFrame4904) {
-            val insets = (Class52.aFrame4904 as Container).getInsets()
+        if (container === RsaVarbitHandler.aFrame4904) {
+            val insets = (RsaVarbitHandler.aFrame4904 as Container).getInsets()
             ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left + ModelResourceBundle.anInt7129), insets.top - -TimingCounters.anInt4167)
         } else ParticleSystemRenderer.aCanvas3869!!.setLocation(ModelResourceBundle.anInt7129, TimingCounters.anInt4167)
         ParticleSystemRenderer.aCanvas3869!!.addFocusListener(this)
@@ -174,8 +174,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             SpriteRenderable.aBoolean4726 = true
             ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
             ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
-            if (Class52.aFrame4904 != null && SkeletalAnimFrameLoader.aFrame476 == null) {
-                val insets = Class52.aFrame4904!!.getInsets()
+            if (RsaVarbitHandler.aFrame4904 != null && SkeletalAnimFrameLoader.aFrame476 == null) {
+                val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
                 ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left - -ModelResourceBundle.anInt7129), (insets.top + TimingCounters.anInt4167))
             } else ParticleSystemRenderer.aCanvas3869!!.setLocation(ModelResourceBundle.anInt7129, TimingCounters.anInt4167)
         }
@@ -257,10 +257,10 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             }
         }
         method91(108.toByte())
-        if (Class52.aFrame4904 != null) {
-            Class52.aFrame4904!!.setVisible(false)
-            Class52.aFrame4904!!.dispose()
-            Class52.aFrame4904 = null
+        if (RsaVarbitHandler.aFrame4904 != null) {
+            RsaVarbitHandler.aFrame4904!!.setVisible(false)
+            RsaVarbitHandler.aFrame4904!!.dispose()
+            RsaVarbitHandler.aFrame4904 = null
         }
         println("Shutdown complete - clean:" + bool)
     }
@@ -269,7 +269,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     override fun getCodeBase(): URL? {
         anInt29++
-        if (Class52.aFrame4904 != null) return null
+        if (RsaVarbitHandler.aFrame4904 != null) return null
         if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getCodeBase()
         return null
     }
@@ -398,14 +398,14 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             ModelResourceBundle.anInt7129 = 0
             ParticleTileShape.anInt8818 = i_21_
             FacingDirectionNode.anApplet6662 = null
-            Class52.aFrame4904 = Frame()
-            Class52.aFrame4904!!.setTitle("Jagex")
-            Class52.aFrame4904!!.setResizable(true)
-            Class52.aFrame4904!!.addWindowListener(this)
-            Class52.aFrame4904!!.setVisible(true)
-            Class52.aFrame4904!!.toFront()
-            val insets = Class52.aFrame4904!!.getInsets()
-            Class52.aFrame4904!!.setSize(insets.right + (insets.left + SocketFactory.anInt3473), (insets.bottom + (NpcReference.anInt6857 + insets.top)))
+            RsaVarbitHandler.aFrame4904 = Frame()
+            RsaVarbitHandler.aFrame4904!!.setTitle("Jagex")
+            RsaVarbitHandler.aFrame4904!!.setResizable(true)
+            RsaVarbitHandler.aFrame4904!!.addWindowListener(this)
+            RsaVarbitHandler.aFrame4904!!.setVisible(true)
+            RsaVarbitHandler.aFrame4904!!.toFront()
+            val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
+            RsaVarbitHandler.aFrame4904!!.setSize(insets.right + (insets.left + SocketFactory.anInt3473), (insets.bottom + (NpcReference.anInt6857 + insets.top)))
             VorbisOggDecoder.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i, string, i_22_, true)
             HudTabPanel.aPrivilegedOperationWorker_2993 = VorbisOggDecoder.aPrivilegedOperationWorker_8992
             val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2236(this, i_23_ + -33739, 1)

@@ -192,13 +192,13 @@ class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, js5Arc
                 synchronized(Class79.aClient1367!!) {
                     if (SkeletalAnimFrameLoader.aFrame476 == null) {
                         val container: Container
-                        if (Class52.aFrame4904 != null) container = Class52.aFrame4904!!
+                        if (RsaVarbitHandler.aFrame4904 != null) container = RsaVarbitHandler.aFrame4904!!
                         else if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169!!
                         else container = Class93.anApplet1530!! as Container
                         SocketFactory.anInt3473 = container.getSize().width
                         NpcReference.anInt6857 = container.getSize().height
-                        if (Class52.aFrame4904 === container) {
-                            val insets = Class52.aFrame4904!!.getInsets()
+                        if (RsaVarbitHandler.aFrame4904 === container) {
+                            val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
                             SocketFactory.anInt3473 -= insets.left - -insets.right
                             NpcReference.anInt6857 -= insets.bottom + insets.top
                         }
@@ -218,8 +218,8 @@ class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, js5Arc
                             if (Class59_Sub1.aBoolean5300) TerrainTile.method3980(120, ParticleSystemRenderer.aCanvas3869!!)
                             else FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
                         }
-                        if (Class52.aFrame4904 === container) {
-                            val insets = Class52.aFrame4904!!.getInsets()
+                        if (RsaVarbitHandler.aFrame4904 === container) {
+                            val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
                             ParticleSystemRenderer.aCanvas3869!!.setLocation(insets.left - -ModelResourceBundle.anInt7129, TimingCounters.anInt4167 + insets.top)
                         } else ParticleSystemRenderer.aCanvas3869!!.setLocation((ModelResourceBundle.anInt7129), TimingCounters.anInt4167)
                         if (RenderNode.anInt9721 != -1) method1713(true, 520)

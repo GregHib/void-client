@@ -16,7 +16,7 @@ class DualMaterialContainer internal constructor(js5Archive: Js5Archive?, js5Arc
         anInt1640++
         if (interface12 == null) return null
         val class223 = interface12.method51(120.toByte())
-        if (ModelDefinitionCache.aProjectileFactory_2868 == class223) return ClickFeedbackTask(interface12 as Class52)
+        if (ModelDefinitionCache.aProjectileFactory_2868 == class223) return ClickFeedbackTask(interface12 as RsaVarbitHandler)
         if (MatrixCameraTransform.aProjectileFactory_5689 == class223) return WorldMapRenderer(method998(-107), interface12 as MinimapSpriteRenderer)
         if (class223 == WeaveTextureNode.aProjectileFactory_9274) return WidgetComponentNode(aJs5Archive_1637, interface12 as ParticleEmitterDef)
         if (class223 == ItemNameResolver.aProjectileFactory_4997) return ScrollingWidgetComponentNode(aJs5Archive_1637, interface12 as ParticleEmitterDefExt)

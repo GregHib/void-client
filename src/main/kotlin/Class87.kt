@@ -1,6 +1,6 @@
 import CharCountUtil.method256
 import GraphicsOptionState.Companion.method1711
-import Class52.Companion.method494
+import RsaVarbitHandler.Companion.method494
 
 /* Class87 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

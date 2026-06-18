@@ -248,7 +248,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (SequencedActorEntity.anInt10096 != 0) ModelResourceBundle.method3328(WorldMapRenderer.aFont_4684)
                     else ModelResourceBundle.method3328(null)
                     for (i_28_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_28_]!!.method3500(i xor 0x2bc)
-                    Class52.method491((-86).toByte())
+                    RsaVarbitHandler.method491((-86).toByte())
                     FloatCameraTransform.method921(99.toByte(), false)
                     method3936(i + i)
                     KeyboardLayoutCache.aParticleSystemRenderer_3304 = null
@@ -332,7 +332,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     MapElementManager.method3514((-105).toByte())
                     InterfaceBounds.method2938(62.toByte())
                     FrameStatsReset.method1131(99)
-                    if (Class52.aFrame4904 != null && PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null && WorldMapRenderer.anInt4674 == 11) {
+                    if (RsaVarbitHandler.aFrame4904 != null && PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null && WorldMapRenderer.anInt4674 == 11) {
                         RenderableEntry.anInt4335++
                         val class348_sub47 = method2148(FileIoUtil.aFontMetaRef_4094, (TheoraVideoStream.aClass77_9029), i xor 0x55.inv())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(108.toByte(), 1057001181)

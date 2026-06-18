@@ -337,7 +337,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                Class79.aAbstractModelRenderer_1365 = var_renderer!!.method3691(SpriteImage.method1521(js5Archive, Class52.anInt4895, 0), bool)
+                Class79.aAbstractModelRenderer_1365 = var_renderer!!.method3691(SpriteImage.method1521(js5Archive, RsaVarbitHandler.anInt4895, 0), bool)
                 SceneryDetailOptionState.aAbstractModelRenderer_6097 = var_renderer.method3691(SpriteImage.method1521(js5Archive, (PerlinTextureProvider.anInt5814), 0), true)
                 spriteImages = SpriteImage.method1519(js5Archive, SpriteComponent.anInt8370, 0)
                 ScriptResources.aAbstractModelRendererArray2640 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)

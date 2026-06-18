@@ -40,16 +40,16 @@ object GameDisplayManager {
                 NpcReference.anInt6857 = i_3_
                 SocketFactory.anInt3473 = i_0_
                 container = SkeletalAnimFrameLoader.aFrame476
-            } else if (Class52.aFrame4904 == null) {
+            } else if (RsaVarbitHandler.aFrame4904 == null) {
                 if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
                 else container = Class93.anApplet1530 as? Container
                 SocketFactory.anInt3473 = container!!.getSize().width
                 NpcReference.anInt6857 = container.getSize().height
             } else {
-                val insets = Class52.aFrame4904!!.getInsets()
-                SocketFactory.anInt3473 = Class52.aFrame4904!!.getSize().width + (-insets.left + -insets.right)
-                NpcReference.anInt6857 = Class52.aFrame4904!!.getSize().height - (insets.top - -insets.bottom)
-                container = Class52.aFrame4904
+                val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
+                SocketFactory.anInt3473 = RsaVarbitHandler.aFrame4904!!.getSize().width + (-insets.left + -insets.right)
+                NpcReference.anInt6857 = RsaVarbitHandler.aFrame4904!!.getSize().height - (insets.top - -insets.bottom)
+                container = RsaVarbitHandler.aFrame4904
             }
             if (i_2_ == 1) {
                 LocTypeDefinition.anInt4017 = Class92.anInt1524
@@ -67,8 +67,8 @@ object GameDisplayManager {
                 ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
                 if (!Class59_Sub1.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
                 else method3980(86, ParticleSystemRenderer.aCanvas3869!!)
-                if (Class52.aFrame4904 === container) {
-                    val insets = Class52.aFrame4904!!.getInsets()
+                if (RsaVarbitHandler.aFrame4904 === container) {
+                    val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
                     ParticleSystemRenderer.aCanvas3869!!.setLocation((ModelResourceBundle.anInt7129 + insets.left), (insets.top - -TimingCounters.anInt4167))
                 } else ParticleSystemRenderer.aCanvas3869!!.setLocation(ModelResourceBundle.anInt7129, TimingCounters.anInt4167)
             }

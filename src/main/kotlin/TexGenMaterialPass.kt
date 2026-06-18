@@ -183,7 +183,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
             NamedIdRecord.anInt4469 = js5Archive.method417("scrollbar", 0)
             ClampTextureNode.anInt9473 = js5Archive.method417("name_icons", 0)
             LocTypeDefLoader.anInt2510 = js5Archive.method417("floorshadows", 0)
-            Class52.anInt4895 = js5Archive.method417("compass", 0)
+            RsaVarbitHandler.anInt4895 = js5Archive.method417("compass", 0)
             if (i > -72) method2161(106.toByte(), 125L)
             PerlinTextureProvider.anInt5814 = js5Archive.method417("otherlevel", 0)
             SpriteComponent.anInt8370 = js5Archive.method417("hint_mapedge", 0)

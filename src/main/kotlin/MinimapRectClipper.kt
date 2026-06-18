@@ -46,7 +46,7 @@ object MinimapRectClipper {
             if (bool) MapElementDefinitionCache.aCacheIndexManagerArray3982!![MapElementDefinitionCache.aCacheIndexManagerArray3982!!.size - 1]!!.method2353(class318_sub1, false)
             else {
                 val i = method2154(class318_sub1.anInt6386)
-                val i_6_ = (Class52.anIntArray4906!![2] * class318_sub1.method2379(-25675) / class318_sub1.anInt6389)
+                val i_6_ = (RsaVarbitHandler.anIntArray4906!![2] * class318_sub1.method2379(-25675) / class318_sub1.anInt6389)
                 val i_7_ = method2154((class318_sub1.anInt6386) - i_6_)
                 val i_8_ = method2154((class318_sub1.anInt6386) + i_6_)
                 if (i_7_ == i_8_) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i]!!.method2353(class318_sub1, false)

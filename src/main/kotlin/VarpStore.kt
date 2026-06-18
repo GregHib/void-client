@@ -175,11 +175,11 @@ class VarpStore : Interface17 {
         }
 
         @JvmStatic
-        fun method1312(i: Byte, class348_sub49: Buffer): Class52 {
+        fun method1312(i: Byte, class348_sub49: Buffer): RsaVarbitHandler {
             anInt5075++
             val i_23_ = class348_sub49.readInt((-126).toByte())
             if (i < 47) method1315(4)
-            return Class52(i_23_)
+            return RsaVarbitHandler(i_23_)
         }
 
         @JvmStatic

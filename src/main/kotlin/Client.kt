@@ -454,8 +454,8 @@ import MinimapShapeDrawer.Companion.method458
 import MinimapSquareDrawer.Companion.method460
 import MinimapLineDrawer.Companion.method471
 import NpcConfig.Companion.method486
-import Class52.Companion.method492
-import Class52.Companion.method493
+import RsaVarbitHandler.Companion.method492
+import RsaVarbitHandler.Companion.method493
 import Class54.Companion.method501
 import Class55.Companion.method518
 import Class55_Sub1.Companion.method523
@@ -1669,14 +1669,14 @@ class Client : GameAppletFrame() {
             }
             if (SkeletalAnimFrameLoader.aFrame476 == null) {
                 val container: Container?
-                if (Class52.aFrame4904 == null) {
+                if (RsaVarbitHandler.aFrame4904 == null) {
                     if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
                     else container = Class93.anApplet1530 as? Container
-                } else container = Class52.aFrame4904
+                } else container = RsaVarbitHandler.aFrame4904
                 var i = container!!.getSize().width
                 var i_119_ = container.getSize().height
-                if (container === Class52.aFrame4904) {
-                    val insets = Class52.aFrame4904!!.getInsets()
+                if (container === RsaVarbitHandler.aFrame4904) {
+                    val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
                     i -= insets.left + insets.right
                     i_119_ -= insets.top - -insets.bottom
                 }
@@ -2015,7 +2015,7 @@ class Client : GameAppletFrame() {
                     val var_client = Client()
                     Class79.aClient1367 = var_client
                     var_client.method96(SceneRegionState.aHudTabPanel_196!!.method1640(0) + 32, 1024, false, 634, 37, (HardCacheEntryReference.aSceneProjector_10434!!.aString2985), 23499, 768)
-                    Class52.aFrame4904!!.setLocation(40, 40)
+                    RsaVarbitHandler.aFrame4904!!.setLocation(40, 40)
                 } catch (exception: Exception) {
                     method1242(null, exception, 15004)
                 }

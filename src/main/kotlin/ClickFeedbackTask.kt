@@ -6,9 +6,9 @@ import AbstractBloomEffect.Companion.method2755
 /* Class177 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ClickFeedbackTask internal constructor(private val aClass52_4671: Class52) : Interface1 {
+class ClickFeedbackTask internal constructor(private val aRsaVarbitHandler_4671: RsaVarbitHandler) : Interface1 {
     override fun method9(i: Byte, bool: Boolean) {
-        if (bool) FacingDirectionNode.aRenderer6654!!.aa(0, 0, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432, aClass52_4671.anInt4899, 0)
+        if (bool) FacingDirectionNode.aRenderer6654!!.aa(0, 0, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432, aRsaVarbitHandler_4671.anInt4899, 0)
         anInt4668++
         if (i.toInt() != -49) anInt4666 = -20
     }

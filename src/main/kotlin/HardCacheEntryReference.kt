@@ -839,7 +839,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                         val string: String?
                         if (bool_93_) {
                             i_91_ = i_91_ and 0x7fff
-                            val class43 = Class52.method490((-104).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!))
+                            val class43 = RsaVarbitHandler.method490((-104).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!))
                             i_95_ = class43.anInt615
                             string = (class43.aClass348_Sub42_Sub10_614!!.method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 119.toByte()))
                         } else string = (Class59_Sub2_Sub2.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))

@@ -105,7 +105,7 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
                                     InterfaceComponentGroup.method3243(i_5_ xor 0x1c2a, class348_sub47)
                                 } else if (i == 4) {
                                     NpcActorEntity.anInt10073++
-                                    val class348_sub47 = (method2148(Class52.aFontMetaRef_4905, TheoraVideoStream.aClass77_9029, -88))
+                                    val class348_sub47 = (method2148(RsaVarbitHandler.aFontMetaRef_4905, TheoraVideoStream.aClass77_9029, -88))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), `is`[i_7_])
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-128).toByte(), 0)
                                     InterfaceComponentGroup.method3243(126, class348_sub47)

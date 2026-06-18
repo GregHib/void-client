@@ -104,14 +104,14 @@ class ResourceLoaderThread : Runnable {
                     }
                 }
                 val container: Container?
-                if (Class52.aFrame4904 != null) container = Class52.aFrame4904
+                if (RsaVarbitHandler.aFrame4904 != null) container = RsaVarbitHandler.aFrame4904
                 else if (Class93.anApplet1530 != null) {
                     container = Class93.anApplet1530!!.getPulseComponent() as? Container
                 }
                 else container = EdgeDetectTextureNode.anGameApplet_Frame_9169
                 container!!.getSize()
                 container.getSize()
-                if (Class52.aFrame4904 === container) Class52.aFrame4904!!.getInsets()
+                if (RsaVarbitHandler.aFrame4904 === container) RsaVarbitHandler.aFrame4904!!.getInsets()
                 aBoolean3908 = false
                 if (FacingDirectionNode.aRenderer6654 != null && (anInterface16_3907 !is LoadingBarRenderer) && (aClass56_3916!!.method525(-112) < Class56.aClass56_1041!!.method525(-127))) method3556(false)
             } catch (exception: Exception) {

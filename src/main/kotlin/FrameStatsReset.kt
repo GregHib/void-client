@@ -68,7 +68,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ConstantColourTextureNode.anInt9246 = 0
             SequencedWallEntity.anInt10154 = 0
             NodeDeque.anInt3332 = 0
-            Class52.anInt4902 = 0
+            RsaVarbitHandler.anInt4902 = 0
             VideoStreamDecoder.anInt4110 = 0
             GlBloomEffect.anInt8828 = 0
             OpenGlTerrainTile.anInt8262 = 0
@@ -1341,7 +1341,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Js5Archive.anInt652 = 0
             MapRegionLoaderThread.anInt4199 = 0
             Player.anInt10534 = 0
-            Class52.anInt4897 = 0
+            RsaVarbitHandler.anInt4897 = 0
             SolidFillComponent.anInt8355 = 0
             SpriteRenderable.anInt4721 = 0
             GlBufferObject.anInt4735 = 0
@@ -1509,7 +1509,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CacheStateResetter.anInt124 = 0
             FloatCameraTransform.anInt5709 = 0
             GlBufferObject.anInt4738 = 0
-            Class52.anInt4900 = 0
+            RsaVarbitHandler.anInt4900 = 0
             NativeRenderer.anInt8078 = 0
             CollisionMap.anInt4444 = 0
             WeaveTextureNode.anInt9271 = 0
@@ -3164,7 +3164,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlVertexBufferArb.anInt8486 = 0
             HeapInfoRecord.anInt4941 = 0
             SolidFillComponent.anInt8358 = 0
-            Class52.anInt4894 = 0
+            RsaVarbitHandler.anInt4894 = 0
             PlayerAppearanceUpdateDecoder.anInt4539 = 0
             AsyncTaskHandle.anInt2573 = 0
             SequencedActorEntity.anInt10109 = 0
@@ -3216,7 +3216,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             HslColorTableNode.anInt6639 = 0
             SpotAnimDefinition.anInt2409 = 0
             RemoveRoofsOptionState.anInt6068 = 0
-            Class52.anInt4898 = 0
+            RsaVarbitHandler.anInt4898 = 0
             Class64_Sub3.anInt5599 = 0
             OpenGlTerrainTile.anInt8248 = 0
             NpcActorEntity.anInt10088 = 0

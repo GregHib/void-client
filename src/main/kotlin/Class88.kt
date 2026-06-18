@@ -342,7 +342,7 @@ class Class88 {
                                 MinimapSpriteRenderer.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
                                 RangeThresholdTextureNode.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 PlayerUpdateDecoder.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
+                                RsaVarbitHandler.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 MinimapTriangleDrawer.aBoolean5233 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 CharCodeMap.anInt9591 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 FrameBufferObject.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1
@@ -359,7 +359,7 @@ class Class88 {
                                 MinimapSpriteRenderer.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
                                 RangeThresholdTextureNode.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 PlayerUpdateDecoder.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
+                                RsaVarbitHandler.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 InputSettingsState.anInt1758 = class348_sub49_sub2.readShort(13638)
                                 FrameBufferObject.aBoolean4888 = InputSettingsState.anInt1758 > 0
                                 GlArrayBufferObject.anInt4716 = class348_sub49_sub2.readUnsignedShort(842397944)
@@ -386,7 +386,7 @@ class Class88 {
                                 }
                                 if (Class8.aNamedIdRecord_165 != Class76.Companion.aNamedIdRecord_1279 && ((CacheStateResetter.aServerConnectionInfo_125!!.method1264(94.toByte(), GlElementArrayBuffer.aServerConnectionInfo_4839)) || (CacheStateResetter.aServerConnectionInfo_125!!.method1264(112.toByte(), (DirectionalLightTextureNode.aServerConnectionInfo_9443))))) SpriteRenderEntry.method3283(114)
                             }
-                            if ((!RangeThresholdTextureNode.aBoolean9103 || Class52.aBoolean4903) && !FrameBufferObject.aBoolean4888) {
+                            if ((!RangeThresholdTextureNode.aBoolean9103 || RsaVarbitHandler.aBoolean4903) && !FrameBufferObject.aBoolean4888) {
                                 try {
                                     JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "unzap")
                                 } catch (throwable: Throwable) {
