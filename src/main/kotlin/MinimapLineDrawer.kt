@@ -1,7 +1,7 @@
 /* Class50_Sub4 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class50_Sub4 internal constructor(private val anInt5255: Int, private val anInt5259: Int, private var anInt5264: Int, private val anInt5258: Int, i_13_: Int, i_14_: Int) : Class50(-1, i_13_, i_14_) {
+class MinimapLineDrawer internal constructor(private val anInt5255: Int, private val anInt5259: Int, private var anInt5264: Int, private val anInt5258: Int, i_13_: Int, i_14_: Int) : MinimapShapeDrawer(-1, i_13_, i_14_) {
     public override fun method455(i: Int, i_0_: Int, i_1_: Int) {
         anInt5256++
     }

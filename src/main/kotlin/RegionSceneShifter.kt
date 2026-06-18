@@ -5,7 +5,7 @@ import BackgroundWorkerThread.Companion.method1911
 import SlotBinding.Companion.method2028
 import MidiSequencePlayer.Companion.method2878
 import RenderListTextureNode.Companion.method3153
-import Class50_Sub2.Companion.method464
+import MinimapTriangleDrawer.Companion.method464
 import Class75.Companion.method766
 import Class76.Companion.method773
 import OpenGlRenderNode.Companion.method3297

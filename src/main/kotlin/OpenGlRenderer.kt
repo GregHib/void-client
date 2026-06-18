@@ -3035,7 +3035,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         var string = strings[i_102_]!!
                         try {
                             if (string.length > 0) {
-                                if (string.get(0) == 'x' && string.length >= 3 && (Class50_Sub3.method468(string.substring(1, 3), 111))) {
+                                if (string.get(0) == 'x' && string.length >= 3 && (MinimapPolygonDrawer.method468(string.substring(1, 3), 111))) {
                                     string = string.substring(1)
                                     bool_101_ = true
                                 }
@@ -3045,7 +3045,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         bool = true
                                         string = string.substring(2)
                                     }
-                                    if (string.length >= 4 && (Class50_Sub3.method468(string.substring(0, 4), 47))) {
+                                    if (string.length >= 4 && (MinimapPolygonDrawer.method468(string.substring(0, 4), 47))) {
                                         i_100_ = (RegionSceneShifter.method3156(true, string.substring(0, 4)))
                                         break
                                     }

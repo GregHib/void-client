@@ -278,7 +278,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         var_renderer.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0)
                         var_renderer.method3628(-152 + i_16_, i_17_, 304, 34, PerlinNoiseTextureNode.aColorArray9163!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
                         var_renderer.aa(i_16_ - 150, 2 + i_17_, LinkedListNode.anInt4290 * 3, 30, GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
-                        NodeDeque.aFont_3326!!.method2575((-116).toByte(), i_16_, Class50_Sub3.aColorArray5242!![UnderlayDefinition.anInt2884]!!.getRGB(), LocalizedText.aLocalizedText_3501!!.method2063(AnimationFrameDefinition.anInt6967, i + 551), -1, i_15_ + i_17_)
+                        NodeDeque.aFont_3326!!.method2575((-116).toByte(), i_16_, MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884]!!.getRGB(), LocalizedText.aLocalizedText_3501!!.method2063(AnimationFrameDefinition.anInt6967, i + 551), -1, i_15_ + i_17_)
                     } else {
                         val i_18_ = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / Class75.aFloat1247).toInt())
                         val i_19_ = ((i_13_.toFloat() / Class75.aFloat1247).toInt() + DebugOverlayRenderer.anInt3170)

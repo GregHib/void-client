@@ -122,10 +122,10 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
         var anInt7043: Int = 0
         @JvmField
         var anInt7044: Int = 0
-        fun method3036(class348_sub49: Buffer, i: Int): Class50_Sub2? {
+        fun method3036(class348_sub49: Buffer, i: Int): MinimapTriangleDrawer? {
             anInt7026++
             if (i > -4) return null
-            return Class50_Sub2(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
+            return MinimapTriangleDrawer(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
         }
 
         @JvmStatic

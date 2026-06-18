@@ -119,11 +119,11 @@ class WidgetTextConfig {
             if (HeapDiagnosticsHolder.anInt2254 < 102) HeapDiagnosticsHolder.anInt2254 += 6
             anInt512++
             if (MinimapFlagRenderer.anInt1794 != -1 && (CubemapTexture2dSource.aLong8694 < Class62.method599(-127))) {
-                for (i_4_ in MinimapFlagRenderer.anInt1794..<Class50_Sub1.aStringArray5223!!.size) {
-                    if (Class50_Sub1.aStringArray5223!![i_4_]!!.startsWith("pause")) {
+                for (i_4_ in MinimapFlagRenderer.anInt1794..<MinimapSquareDrawer.aStringArray5223!!.size) {
+                    if (MinimapSquareDrawer.aStringArray5223!![i_4_]!!.startsWith("pause")) {
                         var i_5_ = 5
                         try {
-                            i_5_ = Class50_Sub1.aStringArray5223!![i_4_]!!.substring(6).toInt()
+                            i_5_ = MinimapSquareDrawer.aStringArray5223!![i_4_]!!.substring(6).toInt()
                         } catch (exception: Exception) {
                             /* empty */
                         }
@@ -132,7 +132,7 @@ class WidgetTextConfig {
                         CubemapTexture2dSource.aLong8694 = (1000 * i_5_).toLong() + Class62.method599(-97)
                         return
                     } else {
-                        MapElementManager.aString4461 = Class50_Sub1.aStringArray5223!![i_4_]
+                        MapElementManager.aString4461 = MinimapSquareDrawer.aStringArray5223!![i_4_]
                         Class59_Sub1.method555(false, 0)
                     }
                 }

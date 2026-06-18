@@ -170,7 +170,7 @@ class ParameterizedText : HashLinkedListNode() {
             AbstractGameSocket.aIntRange_3133 = null
             method2296(-99)
             HslAdjustTextureNode.anInt9383 = 0
-            Class50.aString863 = null
+            MinimapShapeDrawer.aString863 = null
             ByteArrayPool.anInt496 = 0
             HostPingThread.aWorldListEntryArray2261 = null
             MinimapSpriteRenderer.anInt4930 = 0

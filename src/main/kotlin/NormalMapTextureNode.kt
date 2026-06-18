@@ -137,7 +137,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             GlArrayBufferObject.anInt4718 = 0
             ProjectedGroundDecor.aVarpStore_10209!!.method1314((-107).toByte())
             HeightMapNoise.method2282(-12648)
-            Class50_Sub3.method465(i + -1636518175)
+            MinimapPolygonDrawer.method465(i + -1636518175)
             FloatCameraTransform.aLong5745 = 0L
             LightingOptionState.aClass348_Sub26_5881 = null
             if (bool) Buffer.method3379(2, 12)

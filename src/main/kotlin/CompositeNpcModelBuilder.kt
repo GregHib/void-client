@@ -65,7 +65,7 @@ class CompositeNpcModelBuilder {
                         }
                         if ((class17_18_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_20_ != -1 && (class17_18_.anIntArray237.size > i_20_)) {
                             MinimapRenderer.anIntArray1583!![i_17_] = class17_18_.anIntArray267!![i_19_]
-                            Class50_Sub3.anIntArray5241!![i_17_] = loadProgressCounters[i_17_]!!.anInt2456
+                            MinimapPolygonDrawer.anIntArray5241!![i_17_] = loadProgressCounters[i_17_]!!.anInt2456
                             var i_22_ = class17_18_.anIntArray237[i_20_]
                             LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_17_] = class87.method839(i_22_ ushr 16, 3)
                             i_22_ = i_22_ and 0xffff
@@ -77,7 +77,7 @@ class CompositeNpcModelBuilder {
                             }
                         } else {
                             MinimapRenderer.anIntArray1583!![i_17_] = 0
-                            Class50_Sub3.anIntArray5241!![i_17_] = 0
+                            MinimapPolygonDrawer.anIntArray5241!![i_17_] = 0
                             LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_17_] = null
                             BoxedIntHolder.anIntArray2967!![i_17_] = -1
                         }
@@ -245,7 +245,7 @@ class CompositeNpcModelBuilder {
             var i_55_ = 0
             var i_56_ = 1
             while ( /**/i_16_ > i_55_) {
-                if (Class95.aClass348_Sub42_Sub17Array1543!![i_55_] != null) class64_51_!!.method603((-55).toByte(), -1 + Class50_Sub3.anIntArray5241!![i_55_], null, i_56_, ScanlineRasterFiller.anIntArray2471!![i_55_], BoxedIntHolder.anIntArray2967!![i_55_], LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_55_], 0, Class95.aClass348_Sub42_Sub17Array1543!![i_55_], false, MinimapRenderer.anIntArray1583!![i_55_])
+                if (Class95.aClass348_Sub42_Sub17Array1543!![i_55_] != null) class64_51_!!.method603((-55).toByte(), -1 + MinimapPolygonDrawer.anIntArray5241!![i_55_], null, i_56_, ScanlineRasterFiller.anIntArray2471!![i_55_], BoxedIntHolder.anIntArray2967!![i_55_], LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_55_], 0, Class95.aClass348_Sub42_Sub17Array1543!![i_55_], false, MinimapRenderer.anIntArray1583!![i_55_])
                 i_56_ = i_56_ shl 1
                 i_55_++
             }

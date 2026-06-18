@@ -1,4 +1,4 @@
-import Class50_Sub1.Companion.method462
+import MinimapSquareDrawer.Companion.method462
 
 /* Class160 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

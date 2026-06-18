@@ -36,7 +36,7 @@ class ChatScriptListNode internal constructor(var aClass318_Sub1_Sub3_Sub4_9538:
                                 /* empty */
                             }
                             method94(("Pausing for " + i_5_ + " seconds..."), -109)
-                            Class50_Sub1.aStringArray5223 = strings
+                            MinimapSquareDrawer.aStringArray5223 = strings
                             MinimapFlagRenderer.anInt1794 = i_4_ - -1
                             CubemapTexture2dSource.aLong8694 = (i_5_ * 1000).toLong() + method599(-104)
                             break

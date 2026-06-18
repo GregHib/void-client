@@ -58,7 +58,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
                 if (!bool) return null
             }
         }
-        val is_7_ = Class50_Sub1.method461(false, anObjectArrayArray664!![i]!![i_5_], 53146732)
+        val is_7_ = MinimapSquareDrawer.method461(false, anObjectArrayArray664!![i]!![i_5_], 53146732)
         if (this.anInt634 == 1) {
             anObjectArrayArray664!![i]!![i_5_] = null
             if (aCutsceneSequenceData_629!!.anIntArray3724[i] == 1) anObjectArrayArray664!![i] = null
@@ -88,9 +88,9 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         }
         if (bool) return true
         val is_14_: ByteArray
-        if (`is` == null || (`is`[0] == 0 && `is`[1] == 0 && `is`[2] == 0 && `is`[3] == 0)) is_14_ = Class50_Sub1.method461(false, anObjectArray656!![i_9_], 53146732)!!
+        if (`is` == null || (`is`[0] == 0 && `is`[1] == 0 && `is`[2] == 0 && `is`[3] == 0)) is_14_ = MinimapSquareDrawer.method461(false, anObjectArray656!![i_9_], 53146732)!!
         else {
-            is_14_ = Class50_Sub1.method461(true, anObjectArray656!![i_9_], 53146732)!!
+            is_14_ = MinimapSquareDrawer.method461(true, anObjectArray656!![i_9_], 53146732)!!
             val class348_sub49 = Buffer(is_14_)
             class348_sub49.method3367(607818341, `is`, 5, (class348_sub49.aByteArray7154)!!.size)
         }

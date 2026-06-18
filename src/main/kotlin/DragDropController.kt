@@ -32,7 +32,7 @@ class DragDropController {
             ConfigFlagUtil.method1916(-9343, RegionSceneLoader.aWidgetComponent_3701!!)
             anInt4280++
             SceneEntity.anInt6392++
-            if (!Class50_Sub1.aBoolean5221 || !ScrollingWidgetComponentNode.aBoolean8386) {
+            if (!MinimapSquareDrawer.aBoolean5221 || !ScrollingWidgetComponentNode.aBoolean8386) {
                 if (SceneEntity.anInt6392 > 1) RegionSceneLoader.aWidgetComponent_3701 = null
             } else {
                 var i_0_ = 0

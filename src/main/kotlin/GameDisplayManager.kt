@@ -72,7 +72,7 @@ object GameDisplayManager {
                     ParticleSystemRenderer.aCanvas3869!!.setLocation((ModelResourceBundle.anInt7129 + insets.left), (insets.top - -TimingCounters.anInt4167))
                 } else ParticleSystemRenderer.aCanvas3869!!.setLocation(ModelResourceBundle.anInt7129, TimingCounters.anInt4167)
             }
-            Class50_Sub1.aBoolean5219 = i_2_ >= 2
+            MinimapSquareDrawer.aBoolean5219 = i_2_ >= 2
             if (RenderNode.anInt9721 != -1) method1713(true, 520)
             if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null && CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) method2145(-24498)
             for (i_5_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_5_] = true

@@ -1,6 +1,6 @@
 import ObjectByteSerializerHolder.Companion.method1331
 import GrowableStringList.Companion.method1357
-import Class50_Sub1.Companion.method461
+import MinimapSquareDrawer.Companion.method461
 import SolidFillComponent.Companion.method194
 import kotlin.math.sqrt
 

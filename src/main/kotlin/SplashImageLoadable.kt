@@ -60,10 +60,10 @@ class SplashImageLoadable internal constructor(js5Archive: Js5Archive?, configVa
         var anInt4695: Int = 0
         var anInt4696: Int = 0
 
-        fun method2022(class348_sub49: Buffer, i: Int): Class50_Sub1? {
+        fun method2022(class348_sub49: Buffer, i: Int): MinimapSquareDrawer? {
             if (i != 0) return null
             anInt4691++
-            return Class50_Sub1(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(i + 13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
+            return MinimapSquareDrawer(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(i + 13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
         }
 
         @JvmStatic

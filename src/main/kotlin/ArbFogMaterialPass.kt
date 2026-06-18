@@ -1,4 +1,4 @@
-import Class50.Companion.method459
+import MinimapShapeDrawer.Companion.method459
 import jaggl.OpenGL.Companion.glBindProgramARB
 import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable

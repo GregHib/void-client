@@ -6,7 +6,7 @@ import TextureCubeProvider.Companion.method2269
 import ProjectedGroundDecor.Companion.method2433
 import RingBufferInputStream.Companion.method3616
 import Bzip2DecoderState.Companion.method369
-import Class50_Sub2.Companion.method464
+import MinimapTriangleDrawer.Companion.method464
 import Class66.method705
 import kotlin.math.max
 
@@ -139,7 +139,7 @@ class TileRenderState {
                             for (i_15_ in (npc.aClass64Array10323).indices) npc.aClass64Array10323[i_15_] = null
                         }
                     }
-                    Class50_Sub1.aAbstractCameraTransform_5209 = null
+                    MinimapSquareDrawer.aAbstractCameraTransform_5209 = null
                     SettingsCrcWriter.aAbstractCameraTransform_2123 = null
                     FacingDirectionNode.aRenderer6654!!.method3635(64.toByte())
                     FacingDirectionNode.aRenderer6654 = null

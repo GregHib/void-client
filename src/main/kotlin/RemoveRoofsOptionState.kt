@@ -87,7 +87,7 @@ class RemoveRoofsOptionState : GraphicsOptionState {
                     class357.aShort4398 = i_1_.toShort()
                     class357.aShort4397 = i_0_.toShort()
                 }
-                if (Class50_Sub1.aBoolean5226) WaterMaterialPass.method2152(false)
+                if (MinimapSquareDrawer.aBoolean5226) WaterMaterialPass.method2152(false)
             } else if (i_5_ == 8) {
                 val i_12_ = i shl Tooltip.anInt4459
                 val i_13_ = ArchiveFileConditionWrapper.anInt3465 + i_12_

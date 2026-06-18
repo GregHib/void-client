@@ -52,7 +52,7 @@ import Class367_Sub2.Companion.method3538
 import Class367_Sub4.Companion.method3544
 import WorldMapLabel.Companion.method3569
 import ColourAdjustment.Companion.method449
-import Class50_Sub3.Companion.method468
+import MinimapPolygonDrawer.Companion.method468
 import Class55_Sub1.Companion.method524
 import Class57.Companion.method529
 import Class58.Companion.method532
@@ -256,7 +256,7 @@ object Class66 {
                 anInt1170 -= 2
                 val string = aStringArray1152!![anInt1170]
                 val string_15_ = aStringArray1152!![anInt1170 + 1]
-                if (AsyncTaskHandle.anInt2581 != 0 || ((!RangeThresholdTextureNode.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
+                if (AsyncTaskHandle.anInt2581 != 0 || ((!RangeThresholdTextureNode.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !MinimapTriangleDrawer.aBoolean5233)) {
                     anInt1159++
                     val class348_sub47 = method2148((CellNoiseTextureNode.aFontMetaRef_9304), (TheoraVideoStream.aClass77_9029), -116)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
@@ -2549,7 +2549,7 @@ object Class66 {
 
     private fun method707(string: String, i: Int) {
         var string = string
-        if (AsyncTaskHandle.anInt2581 != 0 || ((!RangeThresholdTextureNode.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
+        if (AsyncTaskHandle.anInt2581 != 0 || ((!RangeThresholdTextureNode.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !MinimapTriangleDrawer.aBoolean5233)) {
             var string_240_ = string.lowercase(Locale.getDefault())
             var i_241_ = 0
             if (string_240_.startsWith(LocalizedText.aLocalizedText_3530!!.method2063(0, 544)!!)) {
@@ -4023,7 +4023,7 @@ object Class66 {
                     return
                 }
                 if (i == 3329) {
-                    anIntArray1149!![anInt1173++] = if (Class50_Sub2.aBoolean5233) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (MinimapTriangleDrawer.aBoolean5233) 1 else 0
                     return
                 }
                 if (i == 3330) {
@@ -4255,14 +4255,14 @@ object Class66 {
                     return
                 }
                 if (i == 3611) {
-                    if (Class50.aString863 == null) {
+                    if (MinimapShapeDrawer.aString863 == null) {
                         aStringArray1152!![anInt1170++] = ""
                         return
-                    } else aStringArray1152!![anInt1170++] = SettingsCrcWriter.method1245(Class50.aString863!!, false)
+                    } else aStringArray1152!![anInt1170++] = SettingsCrcWriter.method1245(MinimapShapeDrawer.aString863!!, false)
                     return
                 }
                 if (i == 3612) {
-                    if (Class50.aString863 == null) {
+                    if (MinimapShapeDrawer.aString863 == null) {
                         anIntArray1149!![anInt1173++] = 0
                         return
                     } else anIntArray1149!![anInt1173++] = ByteArrayPool.anInt496
@@ -4270,7 +4270,7 @@ object Class66 {
                 }
                 if (i == 3613) {
                     val i_364_ = anIntArray1149!![--anInt1173]
-                    if (Class50.aString863 != null && i_364_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_364_]!!.aString314!!)
+                    if (MinimapShapeDrawer.aString863 != null && i_364_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_364_]!!.aString314!!)
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -4279,7 +4279,7 @@ object Class66 {
                 }
                 if (i == 3614) {
                     val i_365_ = anIntArray1149!![--anInt1173]
-                    if (Class50.aString863 != null && i_365_ < ByteArrayPool.anInt496) anIntArray1149!![anInt1173++] = (HostPingThread.aWorldListEntryArray2261!![i_365_]!!.anInt308)
+                    if (MinimapShapeDrawer.aString863 != null && i_365_ < ByteArrayPool.anInt496) anIntArray1149!![anInt1173++] = (HostPingThread.aWorldListEntryArray2261!![i_365_]!!.anInt308)
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4288,7 +4288,7 @@ object Class66 {
                 }
                 if (i == 3615) {
                     val i_366_ = anIntArray1149!![--anInt1173]
-                    if (Class50.aString863 != null && i_366_ < ByteArrayPool.anInt496) anIntArray1149!![anInt1173++] = (HostPingThread.aWorldListEntryArray2261!![i_366_]!!.aByte310).toInt()
+                    if (MinimapShapeDrawer.aString863 != null && i_366_ < ByteArrayPool.anInt496) anIntArray1149!![anInt1173++] = (HostPingThread.aWorldListEntryArray2261!![i_366_]!!.aByte310).toInt()
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4362,7 +4362,7 @@ object Class66 {
                 }
                 if (i == 3626) {
                     val i_369_ = anIntArray1149!![--anInt1173]
-                    if (Class50.aString863 != null && i_369_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_369_]!!.aString313!!)
+                    if (MinimapShapeDrawer.aString863 != null && i_369_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_369_]!!.aString313!!)
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -4400,7 +4400,7 @@ object Class66 {
                 }
                 if (i == 3632) {
                     val i_372_ = anIntArray1149!![--anInt1173]
-                    if (Class50.aString863 != null && i_372_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_372_]!!.aString306!!)
+                    if (MinimapShapeDrawer.aString863 != null && i_372_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_372_]!!.aString306!!)
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return

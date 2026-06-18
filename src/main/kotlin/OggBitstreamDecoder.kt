@@ -124,7 +124,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
             FacingDirectionNode.aRenderer6654!!.method3650(10000)
             FacingDirectionNode.aRenderer6654!!.X(32)
             SettingsCrcWriter.aAbstractCameraTransform_2123 = FacingDirectionNode.aRenderer6654!!.method3654()
-            Class50_Sub1.aAbstractCameraTransform_5209 = FacingDirectionNode.aRenderer6654!!.method3654()
+            MinimapSquareDrawer.aAbstractCameraTransform_5209 = FacingDirectionNode.aRenderer6654!!.method3654()
             BufferToggleState.method2196((-9).toByte())
             FacingDirectionNode.aRenderer6654!!.method3630(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub2_7228!!.method1726(-32350) == 1)
             if (FacingDirectionNode.aRenderer6654!!.method3627()) WarpTextureNode.method3137(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) == 1, (-24).toByte())

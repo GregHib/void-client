@@ -467,28 +467,28 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 FacingDirectionNode.aRenderer6654!!.ya()
                                                 if (class46.aBoolean754) FacingDirectionNode.aRenderer6654!!.C(false)
                                                 if (class46.aBoolean784) {
-                                                    Class50_Sub1.aAbstractCameraTransform_5209!!.method899(class46.anInt757)
-                                                    Class50_Sub1.aAbstractCameraTransform_5209!!.method896(class46.anInt675)
-                                                    Class50_Sub1.aAbstractCameraTransform_5209!!.method908(class46.anInt717)
-                                                    Class50_Sub1.aAbstractCameraTransform_5209!!.method891((class46.anInt688), (class46.anInt799), (class46.anInt787))
+                                                    MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method899(class46.anInt757)
+                                                    MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method896(class46.anInt675)
+                                                    MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method908(class46.anInt717)
+                                                    MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method891((class46.anInt688), (class46.anInt799), (class46.anInt787))
                                                 } else {
                                                     val i_66_ = ((((class46.anInt716) shl 2) * (Class70.anIntArray1207!![(class46.anInt757 shl 3)])) shr 14)
                                                     val i_67_ = (((Class70.anIntArray1204!![((class46.anInt757) shl 3)]) * ((class46.anInt716) shl 2)) shr 14)
-                                                    Class50_Sub1.aAbstractCameraTransform_5209!!.method902(-(class46.anInt717) shl 3)
-                                                    Class50_Sub1.aAbstractCameraTransform_5209!!.method896((class46.anInt675) shl 3)
-                                                    Class50_Sub1.aAbstractCameraTransform_5209!!.method891(((class46.anInt808) shl 2), (((class46.anInt786) shl 2) + (i_66_ + i_60_)), ((class46.anInt786) shl 2) + i_67_)
-                                                    Class50_Sub1.aAbstractCameraTransform_5209!!.method900((class46.anInt757) shl 3)
+                                                    MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method902(-(class46.anInt717) shl 3)
+                                                    MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method896((class46.anInt675) shl 3)
+                                                    MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method891(((class46.anInt808) shl 2), (((class46.anInt786) shl 2) + (i_66_ + i_60_)), ((class46.anInt786) shl 2) + i_67_)
+                                                    MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method900((class46.anInt757) shl 3)
                                                 }
-                                                class46.method437(-20154, class64, FacingDirectionNode.aRenderer6654, Class367_Sub11.anInt7396, Class50_Sub1.aAbstractCameraTransform_5209)
+                                                class46.method437(-20154, class64, FacingDirectionNode.aRenderer6654, Class367_Sub11.anInt7396, MinimapSquareDrawer.aAbstractCameraTransform_5209)
                                                 if (SequencedGroundDecor.aBoolean10046) FacingDirectionNode.aRenderer6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (i_25_ + (class46.anInt789)))
                                                 if (!class46.aBoolean784) {
                                                     if (!class46.aBoolean689) {
-                                                        class64.method615((Class50_Sub1.aAbstractCameraTransform_5209), null, 1)
+                                                        class64.method615((MinimapSquareDrawer.aAbstractCameraTransform_5209), null, 1)
                                                         if ((class46.aClass318_Sub10_740) != null) FacingDirectionNode.aRenderer6654!!.method3684(class46.aClass318_Sub10_740!!.method2539())
-                                                    } else class64.method608((Class50_Sub1.aAbstractCameraTransform_5209), null, ((class46.anInt716) shl 2), 1)
-                                                } else if (class46.aBoolean689) class64.method608((Class50_Sub1.aAbstractCameraTransform_5209), null, (class46.anInt716), 1)
+                                                    } else class64.method608((MinimapSquareDrawer.aAbstractCameraTransform_5209), null, ((class46.anInt716) shl 2), 1)
+                                                } else if (class46.aBoolean689) class64.method608((MinimapSquareDrawer.aAbstractCameraTransform_5209), null, (class46.anInt716), 1)
                                                 else {
-                                                    class64.method615((Class50_Sub1.aAbstractCameraTransform_5209), null, 1)
+                                                    class64.method615((MinimapSquareDrawer.aAbstractCameraTransform_5209), null, 1)
                                                     if ((class46.aClass318_Sub10_740) != null) FacingDirectionNode.aRenderer6654!!.method3684(class46.aClass318_Sub10_740!!.method2539())
                                                 }
                                                 if (SequencedGroundDecor.aBoolean10046) FacingDirectionNode.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)

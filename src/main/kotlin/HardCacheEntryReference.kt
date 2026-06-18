@@ -161,7 +161,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-100)
                 val i_8_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-111)
                 WallSceneEntity.method2397((-126).toByte())
-                Class50_Sub3.method467(i_8_, -18075, i.toInt())
+                MinimapPolygonDrawer.method467(i_8_, -18075, i.toInt())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -250,7 +250,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                         }
                     }
                     if (i <= 1) {
-                        if ((RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || Class50_Sub2.aBoolean5233) bool_20_ = true
+                        if ((RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || MinimapTriangleDrawer.aBoolean5233) bool_20_ = true
                         else if (FontMetaRef.method3455(string_16_, 28280)) bool_20_ = true
                     }
                 } while (false)
@@ -727,7 +727,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 var bool_83_ = false
                 if (i <= 1) {
-                    if (RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915 || Class50_Sub2.aBoolean5233) bool_83_ = true
+                    if (RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915 || MinimapTriangleDrawer.aBoolean5233) bool_83_ = true
                     else if (i <= 1 && FontMetaRef.method3455(string_82_, 28280)) bool_83_ = true
                 }
                 if (!bool_83_ && BackgroundWorkerThread.anInt3227 == 0) {
@@ -831,7 +831,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 if ((player.aString10544) != null && player.aCompositeNpcModelBuilder_10536 != null) {
                     var bool_94_ = false
                     if (i_92_ <= 1) {
-                        if (!bool_93_ && ((RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || Class50_Sub2.aBoolean5233)) bool_94_ = true
+                        if (!bool_93_ && ((RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || MinimapTriangleDrawer.aBoolean5233)) bool_94_ = true
                         else if (FontMetaRef.method3455(player.aString10544, 28280)) bool_94_ = true
                     }
                     if (!bool_94_ && BackgroundWorkerThread.anInt3227 == 0) {
@@ -877,7 +877,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                         }
                     }
                     if (i <= 1) {
-                        if ((RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || Class50_Sub2.aBoolean5233) bool_101_ = true
+                        if ((RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || MinimapTriangleDrawer.aBoolean5233) bool_101_ = true
                         else if (FontMetaRef.method3455(string_98_, 28280)) bool_101_ = true
                     }
                 } while (false)
@@ -1693,7 +1693,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-124).toByte())
                 val i_226_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 WallSceneEntity.method2397((-124).toByte())
-                Class50_Sub3.method467(i_226_, -18075, i)
+                MinimapPolygonDrawer.method467(i_226_, -18075, i)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1732,7 +1732,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 SceneProjector.anInt2986 = ResourceLoaderThread.anInt3918
                 if (RadialTextureNode.anInt9341 == 0) {
                     ByteArrayPool.anInt496 = 0
-                    Class50.aString863 = null
+                    MinimapShapeDrawer.aString863 = null
                     HostPingThread.aWorldListEntryArray2261 = null
                     CameraSplineNode.aString6854 = null
                     ModelVertexColorBuffer.aIntRange_6584 = null
@@ -1742,7 +1742,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 var bool_233_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 if (bool_233_) CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(108.toByte())
                 val l = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readLong(-456577760)
-                Class50.aString863 = ProjectileConfigUtil.method313(l, -104)
+                MinimapShapeDrawer.aString863 = ProjectileConfigUtil.method313(l, -104)
                 ModelDefinitionCache.aByte2871 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-90)
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 if (i == 255) {

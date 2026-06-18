@@ -197,8 +197,8 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                     }
                     if (!KeyboardLayoutConfig.aBoolean2130) CircleDrawer.aFloat2687 /= 2.0f
                     else KeyboardLayoutConfig.aBoolean2130 = false
-                    if (!Class50_Sub1.aBoolean5224) MultiFieldRecord.Companion.aFloat6898 /= 2.0f
-                    else Class50_Sub1.aBoolean5224 = false
+                    if (!MinimapSquareDrawer.aBoolean5224) MultiFieldRecord.Companion.aFloat6898 /= 2.0f
+                    else MinimapSquareDrawer.aBoolean5224 = false
                     IntKeyNode.Companion.method3027(33.toByte())
                     if (WorldMapRenderer.anInt4674 == 10) {
                         LoadingScreenImageNode.method3175(55.toByte())
@@ -350,7 +350,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                                 }
                             }
                             MapElementDecor.aWidgetComponent_10336 = null
-                            Class50_Sub1.aBoolean5221 = false
+                            MinimapSquareDrawer.aBoolean5221 = false
                             HeapDiagnosticsHolder.aWidgetComponent_2249 = null
                             ScrollingWidgetComponentNode.aBoolean8386 = false
                             method198(null, false, -1, -1)

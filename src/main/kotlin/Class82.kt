@@ -16,7 +16,7 @@ import TurbulenceTextureNode.Companion.method3113
 import Class367_Sub10.Companion.method3553
 import Class367_Sub4.Companion.method3544
 import WidgetComponent.Companion.method427
-import Class50_Sub2.Companion.method464
+import MinimapTriangleDrawer.Companion.method464
 import Class62.method599
 import Class66.method706
 import Class66.method715

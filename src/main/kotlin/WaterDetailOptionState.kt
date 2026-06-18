@@ -112,9 +112,9 @@ class WaterDetailOptionState : GraphicsOptionState {
                     FacingDirectionNode.aRenderer6654!!.ya()
                     for (i_5_ in 15 downTo 0) {
                         for (i_6_ in 0..i_5_) {
-                            Class50_Sub1.aAbstractCameraTransform_5209!!.method894(((-(i_5_.toFloat() / 2.0f) + i_6_.toFloat()) * ArchiveFileConditionWrapper.anInt3465.toFloat()).toInt(), 0, (i_5_ + 1) * ArchiveFileConditionWrapper.anInt3465)
+                            MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method894(((-(i_5_.toFloat() / 2.0f) + i_6_.toFloat()) * ArchiveFileConditionWrapper.anInt3465.toFloat()).toInt(), 0, (i_5_ + 1) * ArchiveFileConditionWrapper.anInt3465)
                             i_3_++
-                            class64.method615(Class50_Sub1.aAbstractCameraTransform_5209, null, 0)
+                            class64.method615(MinimapSquareDrawer.aAbstractCameraTransform_5209, null, 0)
                             if (Class62.method599(-105) + -l >= i_2_.toLong()) break@while_80_
                         }
                     }

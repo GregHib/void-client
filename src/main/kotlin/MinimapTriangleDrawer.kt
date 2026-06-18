@@ -3,7 +3,7 @@ import WallEntity.Companion.method2486
 /* Class50_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class50_Sub2 internal constructor(private var anInt5231: Int, private val anInt5227: Int, private val anInt5232: Int, private val anInt5230: Int, i_9_: Int, i_10_: Int, i_11_: Int) : Class50(i_9_, i_10_, i_11_) {
+class MinimapTriangleDrawer internal constructor(private var anInt5231: Int, private val anInt5227: Int, private val anInt5232: Int, private val anInt5230: Int, i_9_: Int, i_10_: Int, i_11_: Int) : MinimapShapeDrawer(i_9_, i_10_, i_11_) {
     public override fun method455(i: Int, i_0_: Int, i_1_: Int) {
         anInt5228++
         val i_2_ = i * anInt5231 shr 12

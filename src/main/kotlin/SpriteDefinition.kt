@@ -49,7 +49,7 @@ class SpriteDefinition : LinkedListNode() {
                 if (LocalPlayerState.aPlayer_1907 == player) {
                     if (RenderNode.aBoolean9722 && (WidgetTextConfig.anInt500 and 0x10) != 0) {
                         LongHashTable.anInt450++
-                        Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> <col=ffffff>" + LocalizedText.aLocalizedText_3520!!.method2063(AnimationFrameDefinition.anInt6967, 544)), 0, (-109).toByte(), false, 0, -1, true, 50, player.anInt10290.toLong(), ItemNameResolver.aString5001, 0L, FloatBuffer.Companion.anInt9747)
+                        MinimapPolygonDrawer.method466(false, (ItemNameResolver.aString5000 + " -> <col=ffffff>" + LocalizedText.aLocalizedText_3520!!.method2063(AnimationFrameDefinition.anInt6967, 544)), 0, (-109).toByte(), false, 0, -1, true, 50, player.anInt10290.toLong(), ItemNameResolver.aString5001, 0L, FloatBuffer.Companion.anInt9747)
                     }
                 } else {
                     val string: String?
@@ -69,11 +69,11 @@ class SpriteDefinition : LinkedListNode() {
                     } else if (player.anInt10564 == -1) string = player.method2456(true, 255)
                     else string = (player.method2456(true, 255) + " (" + LocalizedText.aLocalizedText_3512!!.method2063(AnimationFrameDefinition.anInt6967, 544) + player.anInt10564 + ")")
                     if (RenderNode.aBoolean9722 && !bool && (0x8 and WidgetTextConfig.anInt500) != 0) {
-                        Class50_Sub3.method466(false, ItemNameResolver.aString5000 + " -> <col=ffffff>" + string, 0, (-109).toByte(), false, 0, -1, true, 51, player.anInt10290.toLong(), ItemNameResolver.aString5001, player.anInt10290.toLong(), FloatBuffer.Companion.anInt9747)
+                        MinimapPolygonDrawer.method466(false, ItemNameResolver.aString5000 + " -> <col=ffffff>" + string, 0, (-109).toByte(), false, 0, -1, true, 51, player.anInt10290.toLong(), ItemNameResolver.aString5001, player.anInt10290.toLong(), FloatBuffer.Companion.anInt9747)
                         TileRenderState.anInt4228++
                     }
                     if (i <= 89) anInt7068 = -113
-                    if (bool) Class50_Sub3.method466(true, "", 0, (-115).toByte(), false, 0, 0, false, -1, player.anInt10290.toLong(), "<col=cccccc>" + string, 0L, -1)
+                    if (bool) MinimapPolygonDrawer.method466(true, "", 0, (-115).toByte(), false, 0, 0, false, -1, player.anInt10290.toLong(), "<col=cccccc>" + string, 0L, -1)
                     else {
                         for (i_6_ in 7 downTo 0) {
                             if (DynamicSceneObjectEntity.aStringArray10195!![i_6_] != null) {
@@ -89,7 +89,7 @@ class SpriteDefinition : LinkedListNode() {
                                 }
                                 val i_8_ = (i_7_ + (CipheredPacketBuffer.Companion.aShortArray9768!![i_6_])).toShort()
                                 val i_9_ = (if (DelegatingRenderCanvas.anIntArray60!![i_6_] == -1) WidgetTextConfig.anInt506 else DelegatingRenderCanvas.anIntArray60!![i_6_])
-                                Class50_Sub3.method466(false, "<col=ffffff>" + string, 0, (-105).toByte(), false, 0, -1, true, i_8_.toInt(), player.anInt10290.toLong(), (DynamicSceneObjectEntity.aStringArray10195!![i_6_]), player.anInt10290.toLong(), i_9_)
+                                MinimapPolygonDrawer.method466(false, "<col=ffffff>" + string, 0, (-105).toByte(), false, 0, -1, true, i_8_.toInt(), player.anInt10290.toLong(), (DynamicSceneObjectEntity.aStringArray10195!![i_6_]), player.anInt10290.toLong(), i_9_)
                                 DelegatingRenderCanvas.anInt69++
                             }
                         }

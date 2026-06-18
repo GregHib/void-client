@@ -343,7 +343,7 @@ class Class88 {
                                 RangeThresholdTextureNode.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 PlayerUpdateDecoder.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                Class50_Sub2.aBoolean5233 = class348_sub49_sub2.readUnsignedByte(255) == 1
+                                MinimapTriangleDrawer.aBoolean5233 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 CharCodeMap.anInt9591 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 FrameBufferObject.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 ModelDataCache.anInt359 = class348_sub49_sub2.method3369(125.toByte())

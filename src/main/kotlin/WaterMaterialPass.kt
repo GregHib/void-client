@@ -1,5 +1,5 @@
 import TwoStateOptionState.Companion.method1847
-import Class50.Companion.method459
+import MinimapShapeDrawer.Companion.method459
 import jaggl.OpenGL.Companion.glBindProgramARB
 import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable
@@ -235,7 +235,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                     if (RenderNode.aBoolean9722 && !bool) {
                         val class254 = (if (ParticleEmitterFactory.anInt3176 == -1) null else ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364))
                         if ((WidgetTextConfig.anInt500 and 0x2) != 0 && (class254 == null || (class79.method805((class254.anInt3256), ParticleEmitterFactory.anInt3176, 61) != class254.anInt3256))) {
-                            Class50_Sub3.method466(false, ItemNameResolver.aString5000 + " -> <col=ffff00>" + string, 0, (-81).toByte(), false, 0, -1, true, 30, npc.anInt10290.toLong(), ItemNameResolver.aString5001, npc.anInt10290.toLong(), FloatBuffer.anInt9747)
+                            MinimapPolygonDrawer.method466(false, ItemNameResolver.aString5000 + " -> <col=ffff00>" + string, 0, (-81).toByte(), false, 0, -1, true, 30, npc.anInt10290.toLong(), ItemNameResolver.aString5001, npc.anInt10290.toLong(), FloatBuffer.anInt9747)
                             TextureHandle.anInt2586++
                         }
                     }
@@ -255,7 +255,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                                     if (i == 4) i_16_ = 60
                                     if (i == class79.anInt1385) i_17_ = class79.anInt1338
                                     RenderConfigFactory.anInt2976++
-                                    Class50_Sub3.method466(false, "<col=ffff00>" + string, 0, (-93).toByte(), false, 0, -1, true, i_16_, npc.anInt10290.toLong(), strings[i], npc.anInt10290.toLong(), (if (!(strings[i].equals(LocalizedText.aLocalizedText_3506!!.method2063(AnimationFrameDefinition.anInt6967, 544), ignoreCase = true))) i_17_ else class79.anInt1401))
+                                    MinimapPolygonDrawer.method466(false, "<col=ffff00>" + string, 0, (-93).toByte(), false, 0, -1, true, i_16_, npc.anInt10290.toLong(), strings[i], npc.anInt10290.toLong(), (if (!(strings[i].equals(LocalizedText.aLocalizedText_3506!!.method2063(AnimationFrameDefinition.anInt6967, 544), ignoreCase = true))) i_17_ else class79.anInt1401))
                                 }
                             }
                         }
@@ -272,7 +272,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                                     if (i == 4) i_19_ = 60.toShort()
                                     if (i_19_.toInt() != 0) i_19_ = (i_19_ + i_18_).toShort()
                                     LocConfigModelBuilder.anInt4510++
-                                    Class50_Sub3.method466(false, "<col=ffff00>" + string, 0, (-101).toByte(), false, 0, -1, true, i_19_.toInt(), npc.anInt10290.toLong(), strings[i], npc.anInt10290.toLong(), class79.anInt1401)
+                                    MinimapPolygonDrawer.method466(false, "<col=ffff00>" + string, 0, (-101).toByte(), false, 0, -1, true, i_19_.toInt(), npc.anInt10290.toLong(), strings[i], npc.anInt10290.toLong(), class79.anInt1401)
                                 }
                             }
                         }
@@ -280,7 +280,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                     CircleDrawer.anInt2690++
                     val npcX = (npc.x shr 9) + ArbVertexProgram.regionTileX - npc.aClass79_10505!!.anInt1399 + 1
                     val npcY = (npc.y shr 9) + Class90.regionTileY - npc.aClass79_10505!!.anInt1399 + 1
-                    Class50_Sub3.method466(bool, "<col=ffff00>" + string + Loader.getDebug(class79.anInt1344, npcX, npcY, npc.plane.toInt()), 0, (-105).toByte(), bool_14_, 0, -1, true, 1008, npc.anInt10290.toLong(), LocalizedText.aLocalizedText_3505!!.method2063(AnimationFrameDefinition.anInt6967, 544), npc.anInt10290.toLong(), CubeMapMaterialPass.Companion.anInt6299)
+                    MinimapPolygonDrawer.method466(bool, "<col=ffff00>" + string + Loader.getDebug(class79.anInt1344, npcX, npcY, npc.plane.toInt()), 0, (-105).toByte(), bool_14_, 0, -1, true, 1008, npc.anInt10290.toLong(), LocalizedText.aLocalizedText_3505!!.method2063(AnimationFrameDefinition.anInt6967, 544), npc.anInt10290.toLong(), CubeMapMaterialPass.Companion.anInt6299)
                 }
             }
         }
@@ -403,7 +403,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                 }
                 i++
             }
-            Class50_Sub1.aBoolean5226 = true
+            MinimapSquareDrawer.aBoolean5226 = true
         }
 
         @JvmStatic

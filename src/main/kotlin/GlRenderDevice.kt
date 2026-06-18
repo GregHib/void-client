@@ -654,7 +654,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                         var string_38_ = strings_36_[i_37_]!!
                         try {
                             if (string_38_.length > 0) {
-                                if (string_38_.get(0) == 'x' && string_38_.length >= 3 && (Class50_Sub3.method468(string_38_.substring(1, 3), -115))) {
+                                if (string_38_.get(0) == 'x' && string_38_.length >= 3 && (MinimapPolygonDrawer.method468(string_38_.substring(1, 3), -115))) {
                                     bool_35_ = true
                                     string_38_ = string_38_.substring(1)
                                 }
@@ -664,7 +664,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                                         bool = true
                                         string_38_ = string_38_.substring(2)
                                     }
-                                    if (string_38_.length >= 4 && (Class50_Sub3.method468(string_38_.substring(0, 4), 92))) {
+                                    if (string_38_.length >= 4 && (MinimapPolygonDrawer.method468(string_38_.substring(0, 4), 92))) {
                                         i_34_ = (RegionSceneShifter.method3156(true, string_38_.substring(0, 4)))
                                         break
                                     }

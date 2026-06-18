@@ -173,10 +173,10 @@ class ItemModelDefinition {
         @JvmStatic
         fun method326(i: Byte) {
             anInt442++
-            if (!Class50_Sub1.aBoolean5224) {
+            if (!MinimapSquareDrawer.aBoolean5224) {
                 WorldMapPolygonIconLabel.aBoolean10174 = true
                 MultiFieldRecord.aFloat6898 += (12.0f - MultiFieldRecord.aFloat6898) / 2.0f
-                Class50_Sub1.aBoolean5224 = true
+                MinimapSquareDrawer.aBoolean5224 = true
                 if (i.toInt() != 68) aCameraNodeList_430 = null
             }
         }

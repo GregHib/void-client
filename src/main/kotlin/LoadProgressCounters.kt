@@ -53,10 +53,10 @@ class LoadProgressCounters {
             }
         }
 
-        fun method1374(i: Int, class348_sub49: Buffer): Class50_Sub4 {
+        fun method1374(i: Int, class348_sub49: Buffer): MinimapLineDrawer {
             if (i < 106) aKeyboardInputSource_2449 = null
             anInt2453++
-            return Class50_Sub4(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
+            return MinimapLineDrawer(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
         }
 
         @JvmStatic

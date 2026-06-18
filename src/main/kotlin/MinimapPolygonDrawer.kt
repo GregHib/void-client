@@ -2,7 +2,7 @@ import Class367_Sub3.Companion.method3540
 import OpenGlRenderer.Companion.method3743
 import java.awt.Color
 
-class Class50_Sub3 internal constructor(private val anInt5246: Int, private val anInt5250: Int, private val anInt5245: Int, private var anInt5247: Int, private val anInt5236: Int, private val anInt5237: Int, private val anInt5243: Int, private val anInt5249: Int, i_29_: Int, i_30_: Int) : Class50(-1, i_29_, i_30_) {
+class MinimapPolygonDrawer internal constructor(private val anInt5246: Int, private val anInt5250: Int, private val anInt5245: Int, private var anInt5247: Int, private val anInt5236: Int, private val anInt5237: Int, private val anInt5243: Int, private val anInt5249: Int, i_29_: Int, i_30_: Int) : MinimapShapeDrawer(-1, i_29_, i_30_) {
     public override fun method457(i: Int, i_12_: Int, i_13_: Int) {
         anInt5254++
         val i_14_ = anInt5246 * i_12_ shr 12

@@ -24,7 +24,7 @@ class TypedRecordTable {
             if (projectileFactory == WeaveTextureNode.aProjectileFactory_9274) return ParticleEmitterDefExt.Companion.method2189(class348_sub49!!, 86)
             if (projectileFactory == SkyboxGradient.aProjectileFactory_3934) return WorldMapElement.method179(16533, class348_sub49!!)
             if (MapSceneDefLoader.aProjectileFactory_2489 == projectileFactory) return StringValueNode.method3322(0, class348_sub49!!)
-            if (projectileFactory == SpotAnimVector.aProjectileFactory_2307) return Class50_Sub4.method472(-27794, class348_sub49!!)
+            if (projectileFactory == SpotAnimVector.aProjectileFactory_2307) return MinimapLineDrawer.method472(-27794, class348_sub49!!)
             if (OrientationRotator.aProjectileFactory_2045 == projectileFactory) return MaterialTypeMarker.method2612(class348_sub49!!, true)
             if (LocTypeDefLoader.aProjectileFactory_2507 == projectileFactory) return GlVertexBufferArb.method2128(-1730, class348_sub49!!)
             return null

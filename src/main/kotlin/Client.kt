@@ -450,9 +450,9 @@ import Js5Archive.Companion.method395
 import NanoTimer.Companion.method445
 import SpriteRenderable.Companion.method453
 import WorldMapElement.Companion.method180
-import Class50.Companion.method458
-import Class50_Sub1.Companion.method460
-import Class50_Sub4.Companion.method471
+import MinimapShapeDrawer.Companion.method458
+import MinimapSquareDrawer.Companion.method460
+import MinimapLineDrawer.Companion.method471
 import Class51.Companion.method486
 import Class52.Companion.method492
 import Class52.Companion.method493
@@ -1235,7 +1235,7 @@ class Client : GameAppletFrame() {
         method1209(i + -51)
         method458(-14487)
         method471(i.toInt() xor 0x751c.inv())
-        Class50_Sub3.method469((-62).toByte())
+        MinimapPolygonDrawer.method469((-62).toByte())
         method460(i.toInt() xor 0x6e)
         method561(120)
         method568(true)
@@ -2062,7 +2062,7 @@ class Client : GameAppletFrame() {
                             i_52_ = method260(false)
                         }
                         if (class46 == RegionSceneLoader.aWidgetComponent_3701 && Exception_Sub1.method141(RegionSceneLoader.aWidgetComponent_3701!!, 125.toByte()) != null) {
-                            Class50_Sub1.aBoolean5221 = true
+                            MinimapSquareDrawer.aBoolean5221 = true
                             NativeRenderer.anInt8001 = i_43_
                             GrayscaleEffect.anInt9203 = i_44_
                         }
@@ -2198,11 +2198,11 @@ class Client : GameAppletFrame() {
                                                 }
                                                 if (RenderNode.aBoolean9722 && ((WidgetTextConfig.anInt500 and 0x40) != 0)) {
                                                     val class46_69_ = (NpcReference.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046))
-                                                    if (class46_69_ != null) Class50_Sub3.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), ItemNameResolver.aString5001, 1L, (FloatBuffer.anInt9747))
+                                                    if (class46_69_ != null) MinimapPolygonDrawer.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), ItemNameResolver.aString5001, 1L, (FloatBuffer.anInt9747))
                                                     else method2678(-2049)
                                                 } else {
-                                                    if ((HardCacheEntryReference.aSceneProjector_10434) == (GlRectangleTexture.aSceneProjector_8638)) Class50_Sub3.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (LocalizedText.aLocalizedText_3510!!.method2063((AnimationFrameDefinition.anInt6967), 544)), 1L, -1)
-                                                    Class50_Sub3.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, LightingOptionState.aString5882, 1L, MapElementLookup.anInt4144)
+                                                    if ((HardCacheEntryReference.aSceneProjector_10434) == (GlRectangleTexture.aSceneProjector_8638)) MinimapPolygonDrawer.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (LocalizedText.aLocalizedText_3510!!.method2063((AnimationFrameDefinition.anInt6967), 544)), 1L, -1)
+                                                    MinimapPolygonDrawer.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, LightingOptionState.aString5882, 1L, MapElementLookup.anInt4144)
                                                 }
                                             }
                                         }

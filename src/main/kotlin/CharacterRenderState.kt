@@ -228,7 +228,7 @@ class CharacterRenderState : LinkedListNode() {
                             val i_10_ = -80 / ((64 - i_7_) / 43)
                             if (i_8_ == 5) {
                                 FloatCameraTransform.anInt5714++
-                                val class348_sub47 = method2148((Class50_Sub1.aFontMetaRef_5217), (TheoraVideoStream.aClass77_9029), -94)
+                                val class348_sub47 = method2148((MinimapSquareDrawer.aFontMetaRef_5217), (TheoraVideoStream.aClass77_9029), -94)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(123, class348_sub47)
                             }

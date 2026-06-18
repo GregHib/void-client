@@ -84,7 +84,7 @@ class ColourAdjustment {
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), 0)
                     val i_3_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), 634)
-                    val `is`: IntArray = Class50_Sub1.Companion.method463(class348_sub47, false)
+                    val `is`: IntArray = MinimapSquareDrawer.Companion.method463(class348_sub47, false)
                     val i_4_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string_1_!!)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), SocketStreamWorker.anInt2670)

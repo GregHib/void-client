@@ -47,7 +47,7 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
         while (!aBoolean3750 && aBoolean3745) {
             if (aCacheIndexManager_3743 == null || aCacheIndexManager_3743!!.method2360(-112)) {
                 aBoolean3744 = false
-                aLong3742 = Class50_Sub4.aNanoTimer_5262!!.method446(1)
+                aLong3742 = MinimapLineDrawer.aNanoTimer_5262!!.method446(1)
                 synchronized(this) {
                     try {
                         (this as Object).wait()

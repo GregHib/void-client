@@ -2524,22 +2524,22 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                             if (i_518_ != -1) {
                                                 if (is_494_ == null) {
                                                     aHeadIconRenderer_5503 = HeadIconRenderer()
-                                                    aHeadIconRenderer_5503!!.aShortArray2067 = (Class50_Sub3.method470(aShortArray5493, (-123).toByte()))
+                                                    aHeadIconRenderer_5503!!.aShortArray2067 = (MinimapPolygonDrawer.method470(aShortArray5493, (-123).toByte()))
                                                     is_494_ = aHeadIconRenderer_5503!!.aShortArray2067
-                                                    aHeadIconRenderer_5503!!.aShortArray2060 = (Class50_Sub3.method470(aShortArray5438, (-126).toByte()))
+                                                    aHeadIconRenderer_5503!!.aShortArray2060 = (MinimapPolygonDrawer.method470(aShortArray5438, (-126).toByte()))
                                                     is_493_ = aHeadIconRenderer_5503!!.aShortArray2060
-                                                    aHeadIconRenderer_5503!!.aShortArray2058 = (Class50_Sub3.method470(aShortArray5436, (-111).toByte()))
+                                                    aHeadIconRenderer_5503!!.aShortArray2058 = (MinimapPolygonDrawer.method470(aShortArray5436, (-111).toByte()))
                                                     is_496_ = aHeadIconRenderer_5503!!.aShortArray2058
                                                     aHeadIconRenderer_5503!!.aByteArray2069 = (ConfigVarProgress.method2309(-106, aByteArray5499))
                                                     is_495_ = aHeadIconRenderer_5503!!.aByteArray2069
                                                 }
                                                 if (is_500_ == null) {
                                                     val headIconRenderer = (HeadIconRenderer().also { class64_sub2_485_.aHeadIconRenderer_5503 = it })
-                                                    headIconRenderer.aShortArray2067 = (Class50_Sub3.method470(is_489_, (-120).toByte()))
+                                                    headIconRenderer.aShortArray2067 = (MinimapPolygonDrawer.method470(is_489_, (-120).toByte()))
                                                     is_500_ = headIconRenderer.aShortArray2067
-                                                    headIconRenderer.aShortArray2060 = (Class50_Sub3.method470(is_490_, (-104).toByte()))
+                                                    headIconRenderer.aShortArray2060 = (MinimapPolygonDrawer.method470(is_490_, (-104).toByte()))
                                                     is_497_ = headIconRenderer.aShortArray2060
-                                                    headIconRenderer.aShortArray2058 = (Class50_Sub3.method470(is_491_, (-118).toByte()))
+                                                    headIconRenderer.aShortArray2058 = (MinimapPolygonDrawer.method470(is_491_, (-118).toByte()))
                                                     is_499_ = headIconRenderer.aShortArray2058
                                                     headIconRenderer.aByteArray2069 = (ConfigVarProgress.method2309(-114, is_492_))
                                                     is_498_ = headIconRenderer.aByteArray2069

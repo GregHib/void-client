@@ -36,7 +36,7 @@ abstract class TimedRecordAccessor : LinkedListNode() {
             SceneRegionState.anInt194 = ArchiveFileConditionWrapper.anInt3465
             MapElementDecor.aMapTileShapeArray10330 = arrayOfNulls<MapTileShape>(2000)
             OpenGlRenderer.anInt7714 = ArchiveFileConditionWrapper.anInt3465
-            Class50_Sub1.aBoolean5226 = false
+            MinimapSquareDrawer.aBoolean5226 = false
             HintArrowOrMessage.aMapTileShapeArray2034 = arrayOfNulls<MapTileShape>(500)
             Class69.anInt1200 = 0
             DetailLevelOptionState.anInt6115 = 0

@@ -2,7 +2,7 @@ import LinkedListIterator.Companion.method1242
 import BoundsConstraintEntry.Companion.method2057
 import CollisionMapAccessor.method2064
 import Class367_Sub4.Companion.method3542
-import Class50_Sub1.Companion.method462
+import MinimapSquareDrawer.Companion.method462
 
 /* Class348_Sub42_Sub11 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

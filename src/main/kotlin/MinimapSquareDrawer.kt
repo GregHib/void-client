@@ -4,7 +4,7 @@ import NativeRenderer.Companion.method3873
 /* Class50_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class50_Sub1 internal constructor(private var anInt5214: Int, private val anInt5212: Int, private val anInt5213: Int, private val anInt5222: Int, i_9_: Int, i_10_: Int, i_11_: Int) : Class50(i_9_, i_10_, i_11_) {
+class MinimapSquareDrawer internal constructor(private var anInt5214: Int, private val anInt5212: Int, private val anInt5213: Int, private val anInt5222: Int, i_9_: Int, i_10_: Int, i_11_: Int) : MinimapShapeDrawer(i_9_, i_10_, i_11_) {
     public override fun method455(i: Int, i_0_: Int, i_1_: Int) {
         anInt5220++
         if (i_1_ >= -98) aBoolean5221 = false

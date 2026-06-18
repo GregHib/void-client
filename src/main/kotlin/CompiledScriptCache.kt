@@ -70,8 +70,8 @@ class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, 
         fun method3470(i: Int) {
             if (i == 1) {
                 anInt4371++
-                if (!Class50_Sub1.aBoolean5224) {
-                    Class50_Sub1.aBoolean5224 = true
+                if (!MinimapSquareDrawer.aBoolean5224) {
+                    MinimapSquareDrawer.aBoolean5224 = true
                     WorldMapPolygonIconLabel.aBoolean10174 = true
                     MultiFieldRecord.aFloat6898 += (-12.0f - MultiFieldRecord.aFloat6898) / 2.0f
                 }

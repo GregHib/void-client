@@ -174,13 +174,13 @@ class SceneryDetailOptionState : GraphicsOptionState {
                     }
                     if (i_13_ != -1 && i_14_ != -1) {
                         if (!RenderNode.aBoolean9722 || (0x40 and WidgetTextConfig.anInt500) == 0) {
-                            if (ObjectSpawnDecoder.aBoolean1801) Class50_Sub3.method466(false, "", i_14_, (-109).toByte(), true, i_13_, -1, true, 12, (i_14_ or (i_13_ shl 0)).toLong(), (LocalizedText.aLocalizedText_3510!!.method2063(AnimationFrameDefinition.anInt6967, 544)), 0L, -1)
+                            if (ObjectSpawnDecoder.aBoolean1801) MinimapPolygonDrawer.method466(false, "", i_14_, (-109).toByte(), true, i_13_, -1, true, 12, (i_14_ or (i_13_ shl 0)).toLong(), (LocalizedText.aLocalizedText_3510!!.method2063(AnimationFrameDefinition.anInt6967, 544)), 0L, -1)
                             RenderableEntry.anInt4334++
-                            Class50_Sub3.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), LightingOptionState.aString5882, 0L, MapElementLookup.anInt4144)
+                            MinimapPolygonDrawer.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), LightingOptionState.aString5882, 0L, MapElementLookup.anInt4144)
                         } else {
                             val class46 = NpcReference.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                             if (class46 == null) TileRenderState.method2678(-2049)
-                            else Class50_Sub3.method466(false, " ->", i_14_, (-101).toByte(), true, i_13_, -1, true, 15, (i_13_ shl 0 or i_14_).toLong(), ItemNameResolver.aString5001, 0L, (FloatBuffer.anInt9747))
+                            else MinimapPolygonDrawer.method466(false, " ->", i_14_, (-101).toByte(), true, i_13_, -1, true, 15, (i_13_ shl 0 or i_14_).toLong(), ItemNameResolver.aString5001, 0L, (FloatBuffer.anInt9747))
                         }
                     }
                 }
@@ -313,7 +313,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             val class254 = (if (ParticleEmitterFactory.anInt3176 != -1) (ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364)) else null)
                                             if ((WidgetTextConfig.anInt500 and 0x1) != 0 && (class254 == null || ((class254.anInt3256) != (class213.method1567((class254.anInt3256), 29, ParticleEmitterFactory.anInt3176))))) {
                                                 Class97.anInt1555++
-                                                Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> <col=ff9040>" + (class213.aString2795)), i_32_, (-76).toByte(), false, i_33_, -1, true, 49, i_57_.toLong(), ItemNameResolver.aString5001, class348_sub34.anInt6973.toLong(), (FloatBuffer.anInt9747))
+                                                MinimapPolygonDrawer.method466(false, (ItemNameResolver.aString5000 + " -> <col=ff9040>" + (class213.aString2795)), i_32_, (-76).toByte(), false, i_33_, -1, true, 49, i_57_.toLong(), ItemNameResolver.aString5001, class348_sub34.anInt6973.toLong(), (FloatBuffer.anInt9747))
                                             }
                                         }
                                         if (class318_sub4.aClass318_Sub1_6410!!.plane == (LocalPlayerState.aPlayer_1907!!.plane)) {
@@ -329,13 +329,13 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                     if (i_58_ == (class213.anInt2752)) i_60_ = class213.anInt2759
                                                     if (i_58_ == 4) i_59_ = 5
                                                     if ((class213.anInt2764) == i_58_) i_60_ = class213.anInt2830
-                                                    Class50_Sub3.method466(false, ("<col=ff9040>" + (class213.aString2795)), i_32_, (-119).toByte(), false, i_33_, -1, true, i_59_, i_57_.toLong(), strings[i_58_], class348_sub34.anInt6973.toLong(), i_60_)
+                                                    MinimapPolygonDrawer.method466(false, ("<col=ff9040>" + (class213.aString2795)), i_32_, (-119).toByte(), false, i_33_, -1, true, i_59_, i_57_.toLong(), strings[i_58_], class348_sub34.anInt6973.toLong(), i_60_)
                                                     CacheEntryReference.anInt9548++
                                                 }
                                             }
                                         }
                                         AnimationFrameDefinition.anInt6956++
-                                        Class50_Sub3.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (LocalizedText.aLocalizedText_3505!!.method2063(AnimationFrameDefinition.anInt6967, 544)), class348_sub34.anInt6973.toLong(), CubeMapMaterialPass.anInt6299)
+                                        MinimapPolygonDrawer.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (LocalizedText.aLocalizedText_3505!!.method2063(AnimationFrameDefinition.anInt6967, 544)), class348_sub34.anInt6973.toLong(), CubeMapMaterialPass.anInt6299)
                                         class348_sub34 = (class348_sub37.aNodeDeque_6998.method2003(-127) as IntPair?)
                                         i_57_++
                                     }
@@ -350,7 +350,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         val class254 = (if (ParticleEmitterFactory.anInt3176 != -1) (ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364)) else null)
                                         if (((0x4 and WidgetTextConfig.anInt500) != 0) && (class254 == null || ((class254.anInt3256) != (class51.method487(ParticleEmitterFactory.anInt3176, (class254.anInt3256), 54))))) {
                                             TrigLookupInit.anInt2877++
-                                            Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> <col=00ffff>" + (class51.aString884)), i_32_, (-94).toByte(), false, i_33_, -1, true, 2, interface10.hashCode().toLong(), ItemNameResolver.aString5001, (WeaveTextureNode.method3107(95.toByte(), interface10, i_32_, i_33_)), FloatBuffer.anInt9747)
+                                            MinimapPolygonDrawer.method466(false, (ItemNameResolver.aString5000 + " -> <col=00ffff>" + (class51.aString884)), i_32_, (-94).toByte(), false, i_33_, -1, true, 2, interface10.hashCode().toLong(), ItemNameResolver.aString5001, (WeaveTextureNode.method3107(95.toByte(), interface10, i_32_, i_33_)), FloatBuffer.anInt9747)
                                         }
                                     }
                                     if (class318_sub4.aClass318_Sub1_6410!!.plane == (LocalPlayerState.aPlayer_1907!!.plane)) {
@@ -367,14 +367,14 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                     if (i_61_ == 4) i_62_ = 1007
                                                     if ((class51.anInt950) == i_61_) i_63_ = (class51.anInt869)
                                                     if (i_61_ == (class51.anInt951)) i_63_ = (class51.anInt877)
-                                                    Class50_Sub3.method466(false, ("<col=00ffff>" + (class51.aString884)), i_32_, (-100).toByte(), false, i_33_, -1, true, i_62_, interface10.hashCode().toLong(), strings[i_61_], (WeaveTextureNode.method3107((-116).toByte(), interface10, i_32_, i_33_)), i_63_)
+                                                    MinimapPolygonDrawer.method466(false, ("<col=00ffff>" + (class51.aString884)), i_32_, (-100).toByte(), false, i_33_, -1, true, i_62_, interface10.hashCode().toLong(), strings[i_61_], (WeaveTextureNode.method3107((-116).toByte(), interface10, i_32_, i_33_)), i_63_)
                                                     Class83.anInt1445++
                                                 }
                                             }
                                         }
                                         val x = i_33_ + ArbVertexProgram.regionTileX
                                         val y = i_32_ + Class90.regionTileY
-                                        Class50_Sub3.method466(
+                                        MinimapPolygonDrawer.method466(
                                             ((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane),
                                             ("<col=00ffff>" + class51.aString884 + Loader.getDebug(class51.anInt941, x, y, class318_sub4.aClass318_Sub1_6410!!.plane.toInt())),
                                             i_32_,

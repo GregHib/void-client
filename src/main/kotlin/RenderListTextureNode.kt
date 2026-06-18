@@ -4,7 +4,7 @@ import VorbisOggDecoder.Companion.method2970
 * Visit http://jode.sourceforge.net/
 */
 class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
-    private var aClass50Array9481: Array<Class50?>? = null
+    private var aMinimapShapeDrawerArray9481: Array<MinimapShapeDrawer?>? = null
     private fun method3151(`is`: Array<IntArray?>?, i: Byte) {
         anInt9487++
         if (i.toInt() != -27) method3152(86)
@@ -12,10 +12,10 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
         val i_1_ = FixedFunctionMaterialPass.anInt6212
         NpcAppearanceFlags.method224((-40).toByte(), `is`)
         MultiFieldRecord.method3000(SimpleBinaryOptionState.anInt6076, 0, TextureCubeProvider.anInt6325, 0, i.toInt() xor 0x28)
-        if (aClass50Array9481 != null) {
+        if (aMinimapShapeDrawerArray9481 != null) {
             var i_2_ = 0
-            while (aClass50Array9481!!.size > i_2_) {
-                val class50 = aClass50Array9481!![i_2_]!!
+            while (aMinimapShapeDrawerArray9481!!.size > i_2_) {
+                val class50 = aMinimapShapeDrawerArray9481!![i_2_]!!
                 val i_3_ = class50.anInt864
                 val i_4_ = class50.anInt865
                 if (i_3_ < 0) {
@@ -37,15 +37,15 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
     override fun method3049(class348_sub49: Buffer, i: Int, i_6_: Int) {
         if (i_6_ != 31015) aClass70_9485 = null
         if (i == 0) {
-            aClass50Array9481 = arrayOfNulls<Class50>(class348_sub49.readUnsignedByte(255))
+            aMinimapShapeDrawerArray9481 = arrayOfNulls<MinimapShapeDrawer>(class348_sub49.readUnsignedByte(255))
             var i_7_ = 0
-            while_216_@ while (aClass50Array9481!!.size > i_7_) {
+            while_216_@ while (aMinimapShapeDrawerArray9481!!.size > i_7_) {
                 val i_8_ = class348_sub49.readUnsignedByte(255)
                 val i_9_ = i_8_
                 while_214_@ do {
                     do {
                         if (i_9_ == 0) {
-                            aClass50Array9481!![i_7_] = LoadProgressCounters.method1374(107, class348_sub49)
+                            aMinimapShapeDrawerArray9481!![i_7_] = LoadProgressCounters.method1374(107, class348_sub49)
                             i_7_++
                             continue@while_216_
                         } else if (i_9_ != 1) {
@@ -57,15 +57,15 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
                             } else break
                             break@while_214_
                         }
-                        aClass50Array9481!![i_7_] = (method2970(CameraSplineNode.method2955(i_6_, 31013), class348_sub49))
+                        aMinimapShapeDrawerArray9481!![i_7_] = (method2970(CameraSplineNode.method2955(i_6_, 31013), class348_sub49))
                         i_7_++
                         continue@while_216_
                     } while (false)
-                    aClass50Array9481!![i_7_] = (method3036(class348_sub49, CameraSplineNode.method2955(i_6_, -31102)))
+                    aMinimapShapeDrawerArray9481!![i_7_] = (method3036(class348_sub49, CameraSplineNode.method2955(i_6_, -31102)))
                     i_7_++
                     continue@while_216_
                 } while (false)
-                aClass50Array9481!![i_7_] = SplashImageLoadable.method2022(class348_sub49, 0)
+                aMinimapShapeDrawerArray9481!![i_7_] = SplashImageLoadable.method2022(class348_sub49, 0)
                 i_7_++
             }
         } else if (i == 1) this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1

@@ -255,7 +255,7 @@ class LoadingBarRenderer : Interface16 {
 
     private fun method2219(i: Int) {
         anInt5031++
-        LoadingScreenState.method1455(Class51.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884], Class51.aResourceLoaderThread_897!!.method2318(-9324), (PerlinNoiseTextureNode.aColorArray9163!![UnderlayDefinition.anInt2884]), (-100).toByte(), Class50_Sub3.aColorArray5242!![UnderlayDefinition.anInt2884])
+        LoadingScreenState.method1455(Class51.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884], Class51.aResourceLoaderThread_897!!.method2318(-9324), (PerlinNoiseTextureNode.aColorArray9163!![UnderlayDefinition.anInt2884]), (-100).toByte(), MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884])
         if (i != 33) method55(1.toByte())
     }
 

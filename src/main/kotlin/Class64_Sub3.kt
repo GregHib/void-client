@@ -329,22 +329,22 @@ class Class64_Sub3 : Class64 {
                                             if (i_77_ != -1) {
                                                 if (is_55_ == null) {
                                                     aNpcSummaryDefinition_5572 = NpcSummaryDefinition()
-                                                    aNpcSummaryDefinition_5572!!.aShortArray1954 = (Class50_Sub3.method470(aShortArray5564, (-120).toByte()))
+                                                    aNpcSummaryDefinition_5572!!.aShortArray1954 = (MinimapPolygonDrawer.method470(aShortArray5564, (-120).toByte()))
                                                     is_55_ = aNpcSummaryDefinition_5572!!.aShortArray1954
-                                                    aNpcSummaryDefinition_5572!!.aShortArray1951 = (Class50_Sub3.method470(aShortArray5583, (-109).toByte()))
+                                                    aNpcSummaryDefinition_5572!!.aShortArray1951 = (MinimapPolygonDrawer.method470(aShortArray5583, (-109).toByte()))
                                                     is_53_ = aNpcSummaryDefinition_5572!!.aShortArray1951
-                                                    aNpcSummaryDefinition_5572!!.aShortArray1953 = (Class50_Sub3.method470(aShortArray5576, (-107).toByte()))
+                                                    aNpcSummaryDefinition_5572!!.aShortArray1953 = (MinimapPolygonDrawer.method470(aShortArray5576, (-107).toByte()))
                                                     is_52_ = aNpcSummaryDefinition_5572!!.aShortArray1953
                                                     aNpcSummaryDefinition_5572!!.aByteArray1948 = (ConfigVarProgress.method2309(-37, aByteArray5594))
                                                     is_54_ = aNpcSummaryDefinition_5572!!.aByteArray1948
                                                 }
                                                 if (is_58_ == null) {
                                                     val npcSummaryDefinition = (NpcSummaryDefinition().also { class64_sub3_44_.aNpcSummaryDefinition_5572 = it })
-                                                    npcSummaryDefinition.aShortArray1954 = (Class50_Sub3.method470(is_48_, (-127).toByte()))
+                                                    npcSummaryDefinition.aShortArray1954 = (MinimapPolygonDrawer.method470(is_48_, (-127).toByte()))
                                                     is_58_ = npcSummaryDefinition.aShortArray1954
-                                                    npcSummaryDefinition.aShortArray1951 = (Class50_Sub3.method470(is_49_, (-111).toByte()))
+                                                    npcSummaryDefinition.aShortArray1951 = (MinimapPolygonDrawer.method470(is_49_, (-111).toByte()))
                                                     is_57_ = npcSummaryDefinition.aShortArray1951
-                                                    npcSummaryDefinition.aShortArray1953 = (Class50_Sub3.method470(is_50_, (-120).toByte()))
+                                                    npcSummaryDefinition.aShortArray1953 = (MinimapPolygonDrawer.method470(is_50_, (-120).toByte()))
                                                     is_59_ = npcSummaryDefinition.aShortArray1953
                                                     npcSummaryDefinition.aByteArray1948 = (ConfigVarProgress.method2309(-91, is_51_))
                                                     is_56_ = npcSummaryDefinition.aByteArray1948

@@ -1,4 +1,4 @@
-import Class50_Sub1.Companion.method461
+import MinimapSquareDrawer.Companion.method461
 
 /* Class83 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
