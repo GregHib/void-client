@@ -1304,7 +1304,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (CompositeRgbNoiseTexture.aIntRange_8683 == ModelVertexColorBuffer.aIntRange_6584) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val `is` = ByteArray(RadialTextureNode.anInt9341)
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3409(RadialTextureNode.anInt9341, `is`, 0, -32769)
                 val string = method3546(`is`, 0, RadialTextureNode.anInt9341, 0)

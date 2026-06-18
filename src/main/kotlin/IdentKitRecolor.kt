@@ -44,8 +44,8 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
             var i_5_ = i_3_
             var i_6_ = -i_3_
             var i_7_ = -1
-            val i_8_ = Class85.method831(CameraNodeList.anInt1745, i_3_ + i_0_, WorldMapLabel.anInt4960, -108)
-            val i_9_ = Class85.method831(CameraNodeList.anInt1745, -i_3_ + i_0_, WorldMapLabel.anInt4960, 81)
+            val i_8_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_3_ + i_0_, WorldMapLabel.anInt4960, -108)
+            val i_9_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_3_ + i_0_, WorldMapLabel.anInt4960, 81)
             GlElementArrayBuffer.method1156(-27, i_8_, WidgetDefinition.anIntArrayArray255!![i_2_]!!, i_9_, i_1_)
             while (i_5_ > i_4_) {
                 i_7_ += 2
@@ -56,8 +56,8 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                     val i_10_ = -i_5_ + i_2_
                     val i_11_ = i_5_ + i_2_
                     if (i_11_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_10_) {
-                        val i_12_ = Class85.method831(CameraNodeList.anInt1745, i_4_ + i_0_, WorldMapLabel.anInt4960, 74)
-                        val i_13_ = Class85.method831(CameraNodeList.anInt1745, i_0_ + -i_4_, WorldMapLabel.anInt4960, 98)
+                        val i_12_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_4_ + i_0_, WorldMapLabel.anInt4960, 74)
+                        val i_13_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_0_ + -i_4_, WorldMapLabel.anInt4960, 98)
                         if (i_11_ <= WidgetTextConfig.anInt513) GlElementArrayBuffer.method1156(-27, i_12_, (WidgetDefinition.anIntArrayArray255!![i_11_]!!), i_13_, i_1_)
                         if (LocalPlayerState.anInt1910 <= i_10_) GlElementArrayBuffer.method1156(-27, i_12_, (WidgetDefinition.anIntArrayArray255!![i_10_]!!), i_13_, i_1_)
                     }
@@ -65,8 +65,8 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                 val i_14_ = -++i_4_ + i_2_
                 val i_15_ = i_2_ - -i_4_
                 if (LocalPlayerState.anInt1910 <= i_15_ && WidgetTextConfig.anInt513 >= i_14_) {
-                    val i_16_ = Class85.method831(CameraNodeList.anInt1745, i_0_ + i_5_, WorldMapLabel.anInt4960, 52)
-                    val i_17_ = Class85.method831(CameraNodeList.anInt1745, i_0_ + -i_5_, WorldMapLabel.anInt4960, -106)
+                    val i_16_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_0_ + i_5_, WorldMapLabel.anInt4960, 52)
+                    val i_17_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_0_ + -i_5_, WorldMapLabel.anInt4960, -106)
                     if (i_15_ <= WidgetTextConfig.anInt513) GlElementArrayBuffer.method1156(-27, i_16_, WidgetDefinition.anIntArrayArray255!![i_15_]!!, i_17_, i_1_)
                     if (i_14_ >= LocalPlayerState.anInt1910) GlElementArrayBuffer.method1156(-27, i_16_, WidgetDefinition.anIntArrayArray255!![i_14_]!!, i_17_, i_1_)
                 }

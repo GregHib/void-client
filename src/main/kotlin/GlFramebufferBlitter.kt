@@ -386,7 +386,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             WidgetDefinition.Companion.anInterface4_252 = null
             Buffer.anInt7207 = 1
             BloomGraphicsOptionState.anInt5965 = i
-            Class85.method828(38.toByte(), i_25_, i_21_)
+            WhirlpoolHash.method828(38.toByte(), i_25_, i_21_)
         }
     }
 }

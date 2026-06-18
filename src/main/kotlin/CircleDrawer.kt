@@ -1,6 +1,6 @@
 import CacheArchiveIndex.Companion.method1070
 import GlElementArrayBuffer.Companion.method1156
-import Class85.Companion.method831
+import WhirlpoolHash.Companion.method831
 
 /* Class205 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

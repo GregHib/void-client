@@ -889,12 +889,12 @@ object ChatCommandProcessor {
                 anInt1173 -= 2
                 val i_97_ = anIntArray1149!![anInt1173]
                 val i_98_ = anIntArray1149!![anInt1173 + 1]
-                Class85.method830(3, i_97_, 102.toByte(), false, i_98_)
+                WhirlpoolHash.method830(3, i_97_, 102.toByte(), false, i_98_)
                 anIntArray1149!![anInt1173++] = if (SkeletalAnimFrameLoader.aFrame476 != null) 1 else 0
                 return
             }
             if (i == 5301) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 return
             }
             if (i == 5302) {
@@ -931,7 +931,7 @@ object ChatCommandProcessor {
             if (i == 5307) {
                 val i_104_ = anIntArray1149!![--anInt1173]
                 if (i_104_ >= 1 && i_104_ <= 2) {
-                    Class85.method830(i_104_, -1, 102.toByte(), false, -1)
+                    WhirlpoolHash.method830(i_104_, -1, 102.toByte(), false, -1)
                     return
                 }
                 return
@@ -1002,7 +1002,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5411) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 if (RsaVarbitHandler.aFrame4904 == null) {
                     val string = (if (InputSettingsState.aString1761 != null) InputSettingsState.aString1761 else method2162(false))
                     GrowableStringList.method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
@@ -1027,7 +1027,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5421) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val string = aStringArray1152!![--anInt1170]
                 val bool_118_ = anIntArray1149!![--anInt1173] == 1
                 val string_119_ = method2162(false) + string

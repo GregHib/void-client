@@ -213,7 +213,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.equals("wm1", ignoreCase = true)) {
-                            Class85.Companion.method830(1, -1, 102.toByte(), false, -1)
+                            WhirlpoolHash.Companion.method830(1, -1, 102.toByte(), false, -1)
                             if (ContactEntry.method3229(-61) == 1) {
                                 method94("wm1 succeeded", -65)
                                 return
@@ -221,7 +221,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.equals("wm2", ignoreCase = true)) {
-                            Class85.Companion.method830(2, -1, 102.toByte(), false, -1)
+                            WhirlpoolHash.Companion.method830(2, -1, 102.toByte(), false, -1)
                             if (ContactEntry.method3229(-119) == 2) method94("wm2 succeeded", -109)
                             else {
                                 method94("wm2 failed", i + 154)
@@ -230,7 +230,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.equals("wm3", ignoreCase = true)) {
-                            Class85.Companion.method830(3, 1024, 102.toByte(), false, 768)
+                            WhirlpoolHash.Companion.method830(3, 1024, 102.toByte(), false, 768)
                             if (ContactEntry.method3229(i.toInt() xor 0x3d) == 3) method94("wm3 succeeded", 111)
                             else {
                                 method94("wm3 failed", 83)

@@ -1,4 +1,4 @@
-import Class85.Companion.method828
+import WhirlpoolHash.Companion.method828
 import java.awt.Canvas
 import java.util.*
 

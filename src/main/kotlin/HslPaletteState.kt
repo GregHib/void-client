@@ -1,4 +1,4 @@
-import Class85.Companion.method831
+import WhirlpoolHash.Companion.method831
 
 /* Class336 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

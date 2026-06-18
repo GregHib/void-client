@@ -502,7 +502,7 @@ import FogState.method810
 import WaterTextureSet.Companion.method815
 import MapSceneCache.Companion.method817
 import MapSceneCache.Companion.method825
-import Class85.Companion.method830
+import WhirlpoolHash.Companion.method830
 import Class88.Companion.method843
 import Class89.Companion.method851
 import Class9.method216

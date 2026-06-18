@@ -90,7 +90,7 @@ abstract class TerrainTile internal constructor(i: Int, i_60_: Int, i_61_: Int, 
             if (i > 85) {
                 anInt4586++
                 val dimension = canvas.getSize()
-                Class85.method828(38.toByte(), dimension.height, dimension.width)
+                WhirlpoolHash.method828(38.toByte(), dimension.height, dimension.width)
                 if (Buffer.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3669(canvas, GrayscaleNoiseTexture.anInt5283, LinkedNodeListIterator.anInt1651)
                 else CameraRotationStub.aRenderer326!!.method3669(canvas, SynthVoiceGroup.anInt8854, ShadowQualityOptionState.anInt6008)
             }

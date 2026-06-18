@@ -1,5 +1,5 @@
 import ScrollTexMaterialPass.Companion.method2169
-import Class85.Companion.method828
+import WhirlpoolHash.Companion.method828
 
 /* Class121 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

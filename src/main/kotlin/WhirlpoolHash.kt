@@ -5,7 +5,7 @@ import kotlin.math.min
 /* Class85 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class85 {
+class WhirlpoolHash {
     private var anInt1463 = 0
     private val aByteArray1465 = ByteArray(32)
     private var anInt1468 = 0

@@ -193,10 +193,10 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
             var i_42_ = i_33_ * (-1 + i_16_)
             if (i_6_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_6_) {
                 val `is` = WidgetDefinition.anIntArrayArray255!![i_6_]!!
-                val i_43_ = Class85.method831(CameraNodeList.anInt1745, i_5_ + -i, WorldMapLabel.anInt4960, 77)
-                val i_44_ = Class85.method831(CameraNodeList.anInt1745, i + i_5_, WorldMapLabel.anInt4960, -68)
-                val i_45_ = Class85.method831(CameraNodeList.anInt1745, i_5_ + -i_15_, WorldMapLabel.anInt4960, i_7_ + -115)
-                val i_46_ = Class85.method831(CameraNodeList.anInt1745, i_5_ + i_15_, WorldMapLabel.anInt4960, 97)
+                val i_43_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_5_ + -i, WorldMapLabel.anInt4960, 77)
+                val i_44_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i + i_5_, WorldMapLabel.anInt4960, -68)
+                val i_45_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_5_ + -i_15_, WorldMapLabel.anInt4960, i_7_ + -115)
+                val i_46_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_5_ + i_15_, WorldMapLabel.anInt4960, 97)
                 GlElementArrayBuffer.method1156(-27, i_45_, `is`, i_43_, i_10_)
                 GlElementArrayBuffer.method1156(-27, i_46_, `is`, i_45_, i_9_)
                 GlElementArrayBuffer.method1156(-27, i_44_, `is`, i_46_, i_10_)
@@ -249,11 +249,11 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
                 val i_47_ = -i_13_ + i_6_
                 val i_48_ = i_13_ + i_6_
                 if (i_48_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_47_) {
-                    val i_49_ = Class85.method831(CameraNodeList.anInt1745, i_12_ + i_5_, WorldMapLabel.anInt4960, 36)
-                    val i_50_ = Class85.method831(CameraNodeList.anInt1745, -i_12_ + i_5_, WorldMapLabel.anInt4960, 97)
+                    val i_49_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_12_ + i_5_, WorldMapLabel.anInt4960, 36)
+                    val i_50_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_12_ + i_5_, WorldMapLabel.anInt4960, 97)
                     if (bool) {
-                        val i_51_ = Class85.method831(CameraNodeList.anInt1745, i_5_ - -i_14_, WorldMapLabel.anInt4960, i_7_ xor 0x5c.inv())
-                        val i_52_ = Class85.method831(CameraNodeList.anInt1745, -i_14_ + i_5_, WorldMapLabel.anInt4960, 32)
+                        val i_51_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_5_ - -i_14_, WorldMapLabel.anInt4960, i_7_ xor 0x5c.inv())
+                        val i_52_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_14_ + i_5_, WorldMapLabel.anInt4960, 32)
                         if (LocalPlayerState.anInt1910 <= i_47_) {
                             val `is` = WidgetDefinition.anIntArrayArray255!![i_47_]!!
                             GlElementArrayBuffer.method1156(-27, i_52_, `is`, i_50_, i_10_)

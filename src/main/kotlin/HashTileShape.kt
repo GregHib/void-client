@@ -51,11 +51,11 @@ class HashTileShape internal constructor(i: Int, i_9_: Int, i_10_: Int, i_11_: I
                     i_7_++
                 }
             } else is_6_ = `is`
-            val class85 = Class85()
-            class85.method829(i + -4682)
-            class85.method832((i_5_ * 8).toLong(), is_6_, -69)
+            val whirlpoolHash = WhirlpoolHash()
+            whirlpoolHash.method829(i + -4682)
+            whirlpoolHash.method832((i_5_ * 8).toLong(), is_6_, -69)
             val is_8_ = ByteArray(64)
-            class85.method833(true, 0, is_8_)
+            whirlpoolHash.method833(true, 0, is_8_)
             return is_8_
         }
 

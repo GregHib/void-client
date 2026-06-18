@@ -385,7 +385,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             LocTypeDefinition.anInt4013 = 0
             CacheArchiveIndexLoader.anInt457 = 0
             CompositeRgbNoiseTexture.anInt8677 = 0
-            Class85.anInt1466 = 0
+            WhirlpoolHash.anInt1466 = 0
             MouseInputTracker.anInt7439 = 0
             Direct3dModel.anInt5405 = 0
             LightingOptionState.anInt5875 = 0
@@ -518,7 +518,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9873 = 0
             OggMediaStream.anInt989 = 0
             OpenGlRenderer.anInt7727 = 0
-            Class85.anInt1461 = 0
+            WhirlpoolHash.anInt1461 = 0
             GroundDecorSceneEntity.anInt9970 = 0
             NativeRenderer.anInt7946 = 0
             NpcConfig.anInt958 = 0
@@ -638,7 +638,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RenderbufferObject.anInt8566 = 0
             MapSceneDefLoader.anInt2485 = 0
             OpenGlRenderer.anInt7531 = 0
-            Class85.anInt1476 = 0
+            WhirlpoolHash.anInt1476 = 0
             Gl2dTexture.anInt8618 = 0
             BufferedMessageQueue.anInt3589 = 0
             ItemDefinition.anInt2829 = 0
@@ -1487,7 +1487,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DisplayModeOptionState.anInt6107 = 0
             AnimatedModelRenderer.anInt8402 = 0
             CubemapTextureImplSource.anInt8720 = 0
-            Class85.anInt1467 = 0
+            WhirlpoolHash.anInt1467 = 0
             CameraOrModelTransform.anInt4153 = 0
             TerrainShadowBuilderGl3.anInt7012 = 0
             DelegatingRenderCanvas.anInt63 = 0
@@ -1515,7 +1515,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WeaveTextureNode.anInt9271 = 0
             SpriteArchiveLoader.anInt373 = 0
             OpenGlRenderer.anInt7526 = 0
-            Class85.anInt1462 = 0
+            WhirlpoolHash.anInt1462 = 0
             EdgeDetectTextureNode.anInt9170 = 0
             ArbFogMaterialPass.anInt6195 = 0
             NativeRenderer.anInt7932 = 0
@@ -3231,7 +3231,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ClientLoadStateMachine.anInt2172 = 0
             GrayscaleNoiseTexture.anInt5284 = 0
             SimpleToggleOptionState.anInt5889 = 0
-            Class85.anInt1470 = 0
+            WhirlpoolHash.anInt1470 = 0
             ModelVertexColorBuffer.anInt6579 = 0
             NoOpGraphicsOptionState.anInt6040 = 0
             NativeRenderer.anInt8050 = 0
@@ -3270,7 +3270,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7949 = 0
             TextureMetadataProvider.anInt4612 = 0
             CollisionMap.anInt4446 = 0
-            Class85.anInt1464 = 0
+            WhirlpoolHash.anInt1464 = 0
             MatrixCameraTransform.anInt5657 = 0
             SpriteLoadValidator.anInt4794 = 0
             ProjectedGroundDecor.anInt10299 = 0

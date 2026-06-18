@@ -14,7 +14,7 @@ import WorldMapLabel.Companion.method3568
 import ScrollbarComponent.Companion.method184
 import GameClock.method599
 import MapRegionLoader.Companion.method752
-import Class85.Companion.method830
+import WhirlpoolHash.Companion.method830
 import RuntimeException_Sub1.Companion.method4011
 import NativeRenderer.Companion.method3886
 import NativeRenderer.Companion.method3896
