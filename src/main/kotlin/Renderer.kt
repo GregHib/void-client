@@ -45,7 +45,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun ya()
 
-    abstract fun method3634(interface3: Interface3?, marker: Marker?): Interface4?
+    abstract fun method3634(cameraMarker: CameraMarker?, marker: Marker?): Interface4?
 
     fun method3635(i: Byte) {
         val i_15_ = -90 % ((i - 8) / 33)
@@ -151,7 +151,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3663()
 
-    abstract fun method3665(i: Int, i_94_: Int): Interface3?
+    abstract fun method3665(i: Int, i_94_: Int): CameraMarker?
 
     abstract fun pa()
 

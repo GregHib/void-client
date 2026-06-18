@@ -400,7 +400,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         glTexEnvi(8960, 34161, TerrainShadowBuilderGl2.method3021(32.toByte(), (this.aRenderConfigFactoryArray8086[(this.anInt8175)])))
     }
 
-    override fun method3665(i: Int, i_19_: Int): Interface3? {
+    override fun method3665(i: Int, i_19_: Int): CameraMarker? {
         anInt9891++
         return null
     }
@@ -462,12 +462,12 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         if (i > -30) ya()
     }
 
-    override fun method3634(interface3: Interface3?, marker: Marker?): Interface4? {
+    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): Interface4? {
         try {
             anInt9897++
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.NB(" + (if (interface3 != null) "{...}" else "null") + ',' + (if (marker != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.NB(" + (if (cameraMarker != null) "{...}" else "null") + ',' + (if (marker != null) "{...}" else "null") + ')'))
         }
     }
 

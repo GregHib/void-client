@@ -2476,12 +2476,12 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return 4
     }
 
-    override fun method3634(interface3: Interface3?, marker: Marker?): Interface4? {
+    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): Interface4? {
         try {
             anInt7596++
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.NB(" + (if (interface3 != null) "{...}" else "null") + ',' + (if (marker != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.NB(" + (if (cameraMarker != null) "{...}" else "null") + ',' + (if (marker != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2778,7 +2778,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         require(i == 1) { "" }
     }
 
-    override fun method3665(i: Int, i_462_: Int): Interface3? {
+    override fun method3665(i: Int, i_462_: Int): CameraMarker? {
         anInt7561++
         return null
     }

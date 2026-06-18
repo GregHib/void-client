@@ -389,7 +389,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         aP5137!!.method3433(i, i_156_)
     }
 
-    override fun method3665(i: Int, i_157_: Int): Interface3 {
+    override fun method3665(i: Int, i_157_: Int): CameraMarker {
         return method3629(i, i_157_, false)
     }
 
@@ -469,8 +469,8 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     external override fun ZA(i: Int, f: Float, f_186_: Float, f_187_: Float, f_188_: Float, f_189_: Float)
 
-    override fun method3634(interface3: Interface3?, marker: Marker?): Interface4 {
-        return wa(this, (interface3 as j?)!!, (marker as xa?)!!)
+    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): Interface4 {
+        return wa(this, (cameraMarker as j?)!!, (marker as xa?)!!)
     }
 
     override fun method3687(interface4: Interface4?) {

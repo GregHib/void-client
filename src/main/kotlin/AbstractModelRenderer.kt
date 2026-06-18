@@ -4,7 +4,7 @@ import kotlin.math.sin
 /* Class105 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class AbstractModelRenderer : Interface3 {
+abstract class AbstractModelRenderer : CameraMarker {
     private fun method961(f: Float, f_0_: Float, f_1_: Float, f_2_: Float, i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
         if (i != 0) {
             val d = (i_3_ and 0xffff).toDouble() * 9.587379924285257E-5
