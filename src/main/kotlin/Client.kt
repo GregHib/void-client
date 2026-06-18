@@ -431,9 +431,9 @@ import Class367_Sub2.Companion.method3537
 import Class367_Sub4.Companion.method3541
 import Class367_Sub9.Companion.method3552
 import LocConfigModelBuilder.Companion.method3560
-import Class369.Companion.method3567
-import Class369_Sub2.Companion.method3572
-import Class369_Sub3.Companion.method3574
+import WorldMapLabel.Companion.method3567
+import WorldMapTextLabel.Companion.method3572
+import WorldMapIconLabel.Companion.method3574
 import Class371.Companion.method3584
 import Class373_Sub2.Companion.method3609
 import Class374.method3611

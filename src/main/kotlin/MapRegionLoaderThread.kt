@@ -105,9 +105,9 @@ class MapRegionLoaderThread : Runnable {
             val i_8_ = -(i_7_ * i shr 12) + i_2_
             var i_9_: Int
             var i_10_: Int
-            if (i < Class369.anInt4960) {
-                i_9_ = (i_7_ * Class369.anInt4960 shr 12) + i_8_
-                i_10_ = Class369.anInt4960
+            if (i < WorldMapLabel.anInt4960) {
+                i_9_ = (i_7_ * WorldMapLabel.anInt4960 shr 12) + i_8_
+                i_10_ = WorldMapLabel.anInt4960
             } else if (i > CameraNodeList.anInt1745) {
                 i_9_ = i_8_ - -(CameraNodeList.anInt1745 * i_7_ shr 12)
                 i_10_ = CameraNodeList.anInt1745
@@ -118,7 +118,7 @@ class MapRegionLoaderThread : Runnable {
             if (i_0_ < 56) anInt4202 = -57
             var i_11_: Int
             var i_12_: Int
-            if (Class369.anInt4960 <= i_4_) {
+            if (WorldMapLabel.anInt4960 <= i_4_) {
                 if (CameraNodeList.anInt1745 >= i_4_) {
                     i_11_ = i_4_
                     i_12_ = i_3_
@@ -127,8 +127,8 @@ class MapRegionLoaderThread : Runnable {
                     i_12_ = i_8_ + (CameraNodeList.anInt1745 * i_7_ shr 12)
                 }
             } else {
-                i_11_ = Class369.anInt4960
-                i_12_ = (i_7_ * Class369.anInt4960 shr 12) + i_8_
+                i_11_ = WorldMapLabel.anInt4960
+                i_12_ = (i_7_ * WorldMapLabel.anInt4960 shr 12) + i_8_
             }
             if (i_12_ < LocalPlayerState.anInt1910) {
                 i_11_ = (LocalPlayerState.anInt1910 + -i_8_ shl 12) / i_7_

@@ -174,7 +174,7 @@ class ItemModelDefinition {
         fun method326(i: Byte) {
             anInt442++
             if (!Class50_Sub1.aBoolean5224) {
-                Class369_Sub3_Sub1.aBoolean10174 = true
+                WorldMapPolygonIconLabel.aBoolean10174 = true
                 MultiFieldRecord.aFloat6898 += (12.0f - MultiFieldRecord.aFloat6898) / 2.0f
                 Class50_Sub1.aBoolean5224 = true
                 if (i.toInt() != 68) aCameraNodeList_430 = null

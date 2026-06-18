@@ -50,7 +50,7 @@ import SoundEngineInitializer.method352
 import Class367_Sub10.Companion.method3553
 import Class367_Sub2.Companion.method3538
 import Class367_Sub4.Companion.method3544
-import Class369.Companion.method3569
+import WorldMapLabel.Companion.method3569
 import Class48.Companion.method449
 import Class50_Sub3.Companion.method468
 import Class55_Sub1.Companion.method524
@@ -140,12 +140,12 @@ object Class66 {
         val class46 = method2570(1512932720, i)
         if (class46 != null) {
             val i_3_ = i ushr 16
-            var class46s = Class369_Sub2.aClass46ArrayArray8584!![i_3_]
+            var class46s = WorldMapTextLabel.aClass46ArrayArray8584!![i_3_]
             if (class46s == null) {
                 val class46s_4_: Array<Class46?> = WarpTextureNode.aClass46ArrayArray9427!![i_3_]!!
                 val i_5_ = class46s_4_.size
-                Class369_Sub2.aClass46ArrayArray8584!![i_3_] = arrayOfNulls<Class46>(i_5_)
-                class46s = Class369_Sub2.aClass46ArrayArray8584!![i_3_]!!
+                WorldMapTextLabel.aClass46ArrayArray8584!![i_3_] = arrayOfNulls<Class46>(i_5_)
+                class46s = WorldMapTextLabel.aClass46ArrayArray8584!![i_3_]!!
                 ArrayCopyUtil.method1575(class46s_4_, 0, class46s, 0, class46s_4_.size)
             }
             var i_6_: Int
@@ -5234,12 +5234,12 @@ object Class66 {
         val class46 = method2570(1512932720, i)
         if (class46 != null) {
             val i_520_ = i ushr 16
-            var class46s = Class369_Sub2.aClass46ArrayArray8584!![i_520_]
+            var class46s = WorldMapTextLabel.aClass46ArrayArray8584!![i_520_]
             if (class46s == null) {
                 val class46s_521_: Array<Class46?> = WarpTextureNode.aClass46ArrayArray9427!![i_520_]!!
                 val i_522_ = class46s_521_.size
-                Class369_Sub2.aClass46ArrayArray8584!![i_520_] = arrayOfNulls<Class46>(i_522_)
-                class46s = Class369_Sub2.aClass46ArrayArray8584!![i_520_]!!
+                WorldMapTextLabel.aClass46ArrayArray8584!![i_520_] = arrayOfNulls<Class46>(i_522_)
+                class46s = WorldMapTextLabel.aClass46ArrayArray8584!![i_520_]!!
                 ArrayCopyUtil.method1575(class46s_521_, 0, class46s, 0, class46s_521_.size)
             }
             var i_523_: Int

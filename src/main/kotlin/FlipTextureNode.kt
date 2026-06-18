@@ -2,7 +2,7 @@ import GlVertexBufferBase.Companion.method1151
 import WaterMaterialPass.Companion.method2148
 import GlslMaterialPass.Companion.method2157
 import CubemapTextureGlSource.Companion.method2263
-import Class369_Sub1.Companion.method3570
+import WorldMapAreaLabel.Companion.method3570
 import Class59.Companion.method544
 import OutputStream_Sub1.Companion.method132
 import kotlin.math.max

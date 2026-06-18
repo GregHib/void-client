@@ -71,7 +71,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                     }
                     if (string.equals("cls", ignoreCase = true)) {
                         ViewportTransform.anInt3676 = 0
-                        Class369_Sub2.anInt8587 = 0
+                        WorldMapTextLabel.anInt8587 = 0
                         return
                     }
                     if (string.equals("displayfps", ignoreCase = true)) {

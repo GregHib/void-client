@@ -35,10 +35,10 @@ object CircleDrawer {
         var i_12_ = -1
         if (i_0_ >= LocalPlayerState.anInt1910 && i_0_ <= Class38.anInt513) {
             val `is`: IntArray = WidgetDefinition.anIntArrayArray255!![i_0_]!!
-            val i_13_ = method831(CameraNodeList.anInt1745, -i_2_ + i_5_, Class369.anInt4960, -104)
-            val i_14_ = method831(CameraNodeList.anInt1745, i_5_ - -i_2_, Class369.anInt4960, i_3_ + -94)
-            val i_15_ = method831(CameraNodeList.anInt1745, i_5_ - i_7_, Class369.anInt4960, -82)
-            val i_16_ = method831(CameraNodeList.anInt1745, i_5_ - -i_7_, Class369.anInt4960, -96)
+            val i_13_ = method831(CameraNodeList.anInt1745, -i_2_ + i_5_, WorldMapLabel.anInt4960, -104)
+            val i_14_ = method831(CameraNodeList.anInt1745, i_5_ - -i_2_, WorldMapLabel.anInt4960, i_3_ + -94)
+            val i_15_ = method831(CameraNodeList.anInt1745, i_5_ - i_7_, WorldMapLabel.anInt4960, -82)
+            val i_16_ = method831(CameraNodeList.anInt1745, i_5_ - -i_7_, WorldMapLabel.anInt4960, -96)
             method1156(-27, i_15_, `is`, i_13_, i)
             method1156(-27, i_16_, `is`, i_15_, i_1_)
             method1156(-27, i_14_, `is`, i_16_, i)
@@ -62,16 +62,16 @@ object CircleDrawer {
                 val i_19_ = i_0_ + i_8_
                 if (LocalPlayerState.anInt1910 <= i_19_ && Class38.anInt513 >= i_18_) {
                     if (i_8_ >= i_7_) {
-                        val i_20_ = method831(CameraNodeList.anInt1745, i_6_ + i_5_, Class369.anInt4960, i_3_ xor 0x36)
-                        val i_21_ = method831(CameraNodeList.anInt1745, i_5_ - i_6_, Class369.anInt4960, 112)
+                        val i_20_ = method831(CameraNodeList.anInt1745, i_6_ + i_5_, WorldMapLabel.anInt4960, i_3_ xor 0x36)
+                        val i_21_ = method831(CameraNodeList.anInt1745, i_5_ - i_6_, WorldMapLabel.anInt4960, 112)
                         if (i_19_ <= Class38.anInt513) GlElementArrayBuffer.method1156(-27, i_20_, (WidgetDefinition.anIntArrayArray255!![i_19_]!!), i_21_, i)
                         if (LocalPlayerState.anInt1910 <= i_18_) GlElementArrayBuffer.method1156(-27, i_20_, (WidgetDefinition.anIntArrayArray255!![i_18_]!!), i_21_, i)
                     } else {
                         val i_22_ = CipheredPacketBuffer.anIntArray9757!![i_8_]
-                        val i_23_ = method831(CameraNodeList.anInt1745, i_6_ + i_5_, Class369.anInt4960, -123)
-                        val i_24_ = method831(CameraNodeList.anInt1745, -i_6_ + i_5_, Class369.anInt4960, 110)
-                        val i_25_ = method831(CameraNodeList.anInt1745, i_22_ + i_5_, Class369.anInt4960, 85)
-                        val i_26_ = method831(CameraNodeList.anInt1745, i_5_ - i_22_, Class369.anInt4960, 84)
+                        val i_23_ = method831(CameraNodeList.anInt1745, i_6_ + i_5_, WorldMapLabel.anInt4960, -123)
+                        val i_24_ = method831(CameraNodeList.anInt1745, -i_6_ + i_5_, WorldMapLabel.anInt4960, 110)
+                        val i_25_ = method831(CameraNodeList.anInt1745, i_22_ + i_5_, WorldMapLabel.anInt4960, 85)
+                        val i_26_ = method831(CameraNodeList.anInt1745, i_5_ - i_22_, WorldMapLabel.anInt4960, 84)
                         if (Class38.anInt513 >= i_19_) {
                             val `is`: IntArray = WidgetDefinition.anIntArrayArray255!![i_19_]!!
                             method1156(-27, i_26_, `is`, i_24_, i)
@@ -92,16 +92,16 @@ object CircleDrawer {
             if (LocalPlayerState.anInt1910 <= i_28_ && i_27_ <= Class38.anInt513) {
                 var i_29_ = i_8_ + i_5_
                 var i_30_ = i_5_ + -i_8_
-                if (Class369.anInt4960 <= i_29_ && i_30_ <= CameraNodeList.anInt1745) {
-                    i_29_ = method831(CameraNodeList.anInt1745, i_29_, Class369.anInt4960, 102)
-                    i_30_ = method831(CameraNodeList.anInt1745, i_30_, Class369.anInt4960, -100)
+                if (WorldMapLabel.anInt4960 <= i_29_ && i_30_ <= CameraNodeList.anInt1745) {
+                    i_29_ = method831(CameraNodeList.anInt1745, i_29_, WorldMapLabel.anInt4960, 102)
+                    i_30_ = method831(CameraNodeList.anInt1745, i_30_, WorldMapLabel.anInt4960, -100)
                     if (i_6_ >= i_7_) {
                         if (Class38.anInt513 >= i_28_) GlElementArrayBuffer.method1156(-27, i_29_, (WidgetDefinition.anIntArrayArray255!![i_28_]!!), i_30_, i)
                         if (i_27_ >= LocalPlayerState.anInt1910) GlElementArrayBuffer.method1156(-27, i_29_, (WidgetDefinition.anIntArrayArray255!![i_27_]!!), i_30_, i)
                     } else {
                         val i_31_ = (if (i_6_ > i_10_) CipheredPacketBuffer.anIntArray9757!![i_6_] else i_10_)
-                        val i_32_ = method831(CameraNodeList.anInt1745, i_31_ + i_5_, Class369.anInt4960, 71)
-                        val i_33_ = method831(CameraNodeList.anInt1745, -i_31_ + i_5_, Class369.anInt4960, 65)
+                        val i_32_ = method831(CameraNodeList.anInt1745, i_31_ + i_5_, WorldMapLabel.anInt4960, 71)
+                        val i_33_ = method831(CameraNodeList.anInt1745, -i_31_ + i_5_, WorldMapLabel.anInt4960, 65)
                         if (i_28_ <= Class38.anInt513) {
                             val `is`: IntArray = WidgetDefinition.anIntArrayArray255!![i_28_]!!
                             method1156(-27, i_33_, `is`, i_30_, i)

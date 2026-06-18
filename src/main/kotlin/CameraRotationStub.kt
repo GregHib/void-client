@@ -37,8 +37,8 @@ class CameraRotationStub {
 
         fun method289(i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {
             anInt324++
-            if (Class369_Sub1.anInt8583 != i_2_ || LocalizedTextTriple.anInt3760 != i_0_ || i_1_ != ProjectileConfigUtil.anInt396) {
-                Class369_Sub1.anInt8583 = i_2_
+            if (WorldMapAreaLabel.anInt8583 != i_2_ || LocalizedTextTriple.anInt3760 != i_0_ || i_1_ != ProjectileConfigUtil.anInt396) {
+                WorldMapAreaLabel.anInt8583 = i_2_
                 PcmStreamBuffer.aBoolean8870 = true
                 ProjectileConfigUtil.anInt396 = i_1_
                 LocalizedTextTriple.anInt3760 = i_0_

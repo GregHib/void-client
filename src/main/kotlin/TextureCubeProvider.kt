@@ -21,7 +21,7 @@ abstract class TextureCubeProvider : CircleRasterizer() {
             anInt6324++
             if (i != 10499) method2267(55, -44, 14, -122, 70, 0, 127, 112)
             if (i_6_ == i_0_) Npc.method2441(i_2_, i_6_, i_4_, -22728, i_5_, i_3_, i_1_)
-            else if (Class369.anInt4960 > -i_6_ + i_1_ || i_6_ + i_1_ > CameraNodeList.anInt1745 || -i_0_ + i_5_ < LocalPlayerState.anInt1910 || i_0_ + i_5_ > Class38.anInt513) AbstractProceduralTextureNode.method3041(i_6_, i_1_, i_5_, i xor 0x2903.inv(), i_0_, i_3_, i_2_, i_4_)
+            else if (WorldMapLabel.anInt4960 > -i_6_ + i_1_ || i_6_ + i_1_ > CameraNodeList.anInt1745 || -i_0_ + i_5_ < LocalPlayerState.anInt1910 || i_0_ + i_5_ > Class38.anInt513) AbstractProceduralTextureNode.method3041(i_6_, i_1_, i_5_, i xor 0x2903.inv(), i_0_, i_3_, i_2_, i_4_)
             else AbstractFrameBufferSurface.method3012(i_0_, i_3_, i_6_, i_2_, i_1_, (-117).toByte(), i_5_, i_4_)
         }
 

@@ -137,7 +137,7 @@ class Class38 {
             }
             if (Class98.anInt1565 != 0) {
                 ViewportTransform.anInt3676 -= Class98.anInt1565 * 5
-                if (ViewportTransform.anInt3676 >= Class369_Sub2.anInt8587) ViewportTransform.anInt3676 = -1 + Class369_Sub2.anInt8587
+                if (ViewportTransform.anInt3676 >= WorldMapTextLabel.anInt8587) ViewportTransform.anInt3676 = -1 + WorldMapTextLabel.anInt8587
                 Class98.anInt1565 = 0
                 if (ViewportTransform.anInt3676 < 0) ViewportTransform.anInt3676 = 0
             }

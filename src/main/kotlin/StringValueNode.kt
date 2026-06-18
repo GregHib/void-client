@@ -83,7 +83,7 @@ class StringValueNode : LinkedListNode {
             return HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_2_]!![i_3_]
         }
 
-        fun method3322(i: Int, class348_sub49: Buffer): Class369_Sub3 {
+        fun method3322(i: Int, class348_sub49: Buffer): WorldMapIconLabel {
             anInt7109++
             val class369 = PcmStreamBuffer.method2834((-125).toByte(), class348_sub49)
             val i_4_ = class348_sub49.readUnsignedShort(i xor 0x3235f8f8)
@@ -93,7 +93,7 @@ class StringValueNode : LinkedListNode {
             val i_7_ = class348_sub49.readUnsignedShort(i + 842397944)
             val i_8_ = class348_sub49.readUnsignedShort(842397944)
             val i_9_ = class348_sub49.readUnsignedShort(842397944)
-            return Class369_Sub3(class369.aScreenAnchorAlignment_4968, class369.aTileRenderState_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_4_, i_5_, i_6_, i_7_, i_8_, i_9_)
+            return WorldMapIconLabel(class369.aScreenAnchorAlignment_4968, class369.aTileRenderState_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_4_, i_5_, i_6_, i_7_, i_8_, i_9_)
         }
     }
 }

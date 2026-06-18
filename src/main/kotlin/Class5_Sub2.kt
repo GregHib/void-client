@@ -1,20 +1,20 @@
 /* Class5_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, class369_sub2: Class369_Sub2) : Class5(class45, class45_12_, class369_sub2) {
+class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, class369_sub2: WorldMapTextLabel) : Class5(class45, class45_12_, class369_sub2) {
     public override fun method178(i: Int, bool: Boolean, i_16_: Byte, i_17_: Int) {
-        FacingDirectionNode.aRenderer6654!!.method3628(-2 + i, i_17_, 4 + this.aClass369_4635!!.anInt4971, 2 + this.aClass369_4635!!.anInt4963, ((this.aClass369_4635 as Class369_Sub2).anInt8585), 0)
+        FacingDirectionNode.aRenderer6654!!.method3628(-2 + i, i_17_, 4 + this.aWorldMapLabel_4635!!.anInt4971, 2 + this.aWorldMapLabel_4635!!.anInt4963, ((this.aWorldMapLabel_4635 as WorldMapTextLabel).anInt8585), 0)
         anInt8360++
-        FacingDirectionNode.aRenderer6654!!.method3628(i - 1, 1 + i_17_, this.aClass369_4635!!.anInt4971 - -2, this.aClass369_4635!!.anInt4963, 0, 0)
+        FacingDirectionNode.aRenderer6654!!.method3628(i - 1, 1 + i_17_, this.aWorldMapLabel_4635!!.anInt4971 - -2, this.aWorldMapLabel_4635!!.anInt4963, 0, 0)
         if (i_16_ > -6) aIntRange_8365 = null
     }
 
     public override fun method182(i: Int, i_18_: Int, i_19_: Int, bool: Boolean) {
         anInt8355++
         val i_20_ = -110 / ((-20 - i) / 57)
-        val i_21_ = (this.method183(116) * this.aClass369_4635!!.anInt4971 / 10000)
-        FacingDirectionNode.aRenderer6654!!.aa(i_19_, 2 + i_18_, i_21_, (this.aClass369_4635!!.anInt4963) - 2, (this.aClass369_4635 as Class369_Sub2).anInt8591, 0)
-        FacingDirectionNode.aRenderer6654!!.aa(i_21_ + i_19_, 2 + i_18_, this.aClass369_4635!!.anInt4971 - i_21_, this.aClass369_4635!!.anInt4963 - 2, 0, 0)
+        val i_21_ = (this.method183(116) * this.aWorldMapLabel_4635!!.anInt4971 / 10000)
+        FacingDirectionNode.aRenderer6654!!.aa(i_19_, 2 + i_18_, i_21_, (this.aWorldMapLabel_4635!!.anInt4963) - 2, (this.aWorldMapLabel_4635 as WorldMapTextLabel).anInt8591, 0)
+        FacingDirectionNode.aRenderer6654!!.aa(i_21_ + i_19_, 2 + i_18_, this.aWorldMapLabel_4635!!.anInt4971 - i_21_, this.aWorldMapLabel_4635!!.anInt4963 - 2, 0, 0)
     }
 
     companion object {
@@ -101,8 +101,8 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
             var i_14_ = i_14_
             if (bool != true) method192(null, -119, 63, 12)
             if (LocalPlayerState.anInt1910 <= i_15_ && Class38.anInt513 >= i_15_) {
-                i_14_ = Class85.method831(CameraNodeList.anInt1745, i_14_, Class369.anInt4960, 71)
-                i = Class85.method831(CameraNodeList.anInt1745, i, Class369.anInt4960, -87)
+                i_14_ = Class85.method831(CameraNodeList.anInt1745, i_14_, WorldMapLabel.anInt4960, 71)
+                i = Class85.method831(CameraNodeList.anInt1745, i, WorldMapLabel.anInt4960, -87)
                 NpcAppearanceFlags.method223(i, i_13_, i_15_, i_14_, 39.toByte())
             }
             anInt8357++

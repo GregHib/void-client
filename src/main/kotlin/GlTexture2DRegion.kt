@@ -1,5 +1,5 @@
 import AbstractCameraTransform.Companion.method901
-import Class369.Companion.method3568
+import WorldMapLabel.Companion.method3568
 import Class376.Companion.method3616
 
 /* Class258_Sub3_Sub1 - Decompiled by JODE

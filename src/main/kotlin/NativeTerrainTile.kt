@@ -800,15 +800,15 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             anInt8292++
             val i_10_ = Class85.method831(Class38.anInt513, i_4_, LocalPlayerState.anInt1910, -118)
             val i_11_ = Class85.method831(Class38.anInt513, i, LocalPlayerState.anInt1910, 72)
-            val i_12_ = Class85.method831(CameraNodeList.anInt1745, i_8_, Class369.anInt4960, -80)
-            val i_13_ = Class85.method831(CameraNodeList.anInt1745, i_3_, Class369.anInt4960, -101)
+            val i_12_ = Class85.method831(CameraNodeList.anInt1745, i_8_, WorldMapLabel.anInt4960, -80)
+            val i_13_ = Class85.method831(CameraNodeList.anInt1745, i_3_, WorldMapLabel.anInt4960, -101)
             val i_14_ = Class85.method831(Class38.anInt513, i_4_ + i_6_, LocalPlayerState.anInt1910, -110)
             val i_15_ = Class85.method831(Class38.anInt513, i + -i_6_, LocalPlayerState.anInt1910, 28)
             if (i_7_ < -33) {
                 for (i_16_ in i_10_..<i_14_) GlElementArrayBuffer.method1156(-27, i_13_, WidgetDefinition.anIntArrayArray255!![i_16_]!!, i_12_, i_9_)
                 for (i_17_ in i_11_ downTo i_15_ + 1) GlElementArrayBuffer.method1156(-27, i_13_, WidgetDefinition.anIntArrayArray255!![i_17_]!!, i_12_, i_9_)
-                val i_18_ = Class85.method831(CameraNodeList.anInt1745, i_8_ + i_6_, Class369.anInt4960, 114)
-                val i_19_ = Class85.method831(CameraNodeList.anInt1745, -i_6_ + i_3_, Class369.anInt4960, 34)
+                val i_18_ = Class85.method831(CameraNodeList.anInt1745, i_8_ + i_6_, WorldMapLabel.anInt4960, 114)
+                val i_19_ = Class85.method831(CameraNodeList.anInt1745, -i_6_ + i_3_, WorldMapLabel.anInt4960, 34)
                 for (i_20_ in i_14_..i_15_) {
                     val `is` = WidgetDefinition.anIntArrayArray255!![i_20_]!!
                     GlElementArrayBuffer.method1156(-27, i_18_, `is`, i_12_, i_9_)

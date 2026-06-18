@@ -107,7 +107,7 @@ class OutputStream_Sub1 : OutputStream() {
                     if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2293(MapSceneDefLoader.anInt2481 shl 3, FacingDirectionNode.aRenderer6654!!, (-72).toByte(), i_1_, i_0_, i_3_, Class5.anInt4638, MinimapAreaMarkerNode.anInt9701, i_15_, i_2_)
                     else FacingDirectionNode.aRenderer6654!!.GA(i_15_)
                 }
-                Class369_Sub1.method3570(false)
+                WorldMapAreaLabel.method3570(false)
                 if (i >= 80) {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(GlslMaterialPass.anInt6246, ParticleSystemRenderer.anInt3855, Class59_Sub2_Sub2.anInt8685, -MinimapAreaMarkerNode.anInt9701 and 0x3fff, -Class5.anInt4638 and 0x3fff, 0x3fff and -MapTileShape.anInt4186)
                     FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
@@ -158,7 +158,7 @@ class OutputStream_Sub1 : OutputStream() {
                         0,
                         false
                     )
-                    Class369_Sub1.method3570(false)
+                    WorldMapAreaLabel.method3570(false)
                     if (WorldMapRenderer.anInt4674 == 10) {
                         WorldListEntry.method283(-127, i_0_, 256, i_2_, i_1_, i_3_, 256)
                         method3802(i_3_, i_2_, 2, i_1_, i_0_, 256, 256)

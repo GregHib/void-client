@@ -164,9 +164,9 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                         InterfaceComponentGroup.method3243(-49, class348_sub47)
                     }
                     if (HintArrowOrMessage.anInt2035 > 0) HintArrowOrMessage.anInt2035--
-                    if (Class369_Sub3_Sub1.aBoolean10174 && HintArrowOrMessage.anInt2035 <= 0) {
+                    if (WorldMapPolygonIconLabel.aBoolean10174 && HintArrowOrMessage.anInt2035 <= 0) {
                         LightDetailOptionState.anInt6033++
-                        Class369_Sub3_Sub1.aBoolean10174 = false
+                        WorldMapPolygonIconLabel.aBoolean10174 = false
                         HintArrowOrMessage.anInt2035 = 20
                         val class348_sub47 = method2148(ClanChatRequestSender.aFontMetaRef_3648, (TheoraVideoStream.aClass77_9029), i + -11549)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(i xor 0x3c4d, ResourceProvider.aFloat3938.toInt() shr 3)

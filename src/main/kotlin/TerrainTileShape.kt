@@ -1,4 +1,4 @@
-import Class369_Sub1.Companion.method3570
+import WorldMapAreaLabel.Companion.method3570
 
 /* Class348_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -936,7 +936,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                                     if (player != null) {
                                         FogOptionState.anInt6048 = 2
                                         Class93.anInt1534 = i_72_
-                                        Class369_Sub2.anInt8588++
+                                        WorldMapTextLabel.anInt8588++
                                         LinkedListNode.anInt4292 = 0
                                         SpriteArchiveLoader.anInt385 = i_73_
                                         val class348_sub47 = (method2148(ProceduralTextureGraph.aFontMetaRef_9533, TheoraVideoStream.aClass77_9029, -115))

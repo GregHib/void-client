@@ -342,7 +342,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                         i++
                     }
                     method88(-119)
-                    Class369_Sub3_Sub1.method3578((-42).toByte(), ParticleSystemRenderer.aCanvas3869, (VorbisOggDecoder.aPrivilegedOperationWorker_8992))
+                    WorldMapPolygonIconLabel.method3578((-42).toByte(), ParticleSystemRenderer.aCanvas3869, (VorbisOggDecoder.aPrivilegedOperationWorker_8992))
                 }
             } catch (throwable: Throwable) {
                 LinkedListIterator.method1242(method81(109.toByte()), throwable, 15004)
@@ -522,7 +522,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         @JvmStatic
         fun method85(i: Int, class45: Class45?) {
             anInt32++
-            Class369_Sub3.aClass45_8601 = class45
+            WorldMapIconLabel.aClass45_8601 = class45
             if (i != 0) anInt37 = 101
         }
 
@@ -556,7 +556,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             val string_11_ = ((i_8_ / 10).toString() + i_8_ % 10 + ":" + i_9_ / 10 + i_9_ % 10 + ":" + i_10_ / 10 + i_10_ % 10)
             val strings = TurbulenceTextureNode.method3113('\n', true, string)
             for (i_12_ in strings.indices) {
-                for (i_13_ in Class369_Sub2.anInt8587 downTo 1) ArbFogMaterialPass.aStringArray6200!![i_13_] = ArbFogMaterialPass.aStringArray6200!![-1 + i_13_]
+                for (i_13_ in WorldMapTextLabel.anInt8587 downTo 1) ArbFogMaterialPass.aStringArray6200!![i_13_] = ArbFogMaterialPass.aStringArray6200!![-1 + i_13_]
                 ArbFogMaterialPass.aStringArray6200!![0] = string_11_ + ": " + strings[i_12_]
                 if (Texture2DProvider.aFileOutputStream6323 != null) {
                     try {
@@ -565,8 +565,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                         /* empty */
                     }
                 }
-                if (-1 + ArbFogMaterialPass.aStringArray6200!!.size > Class369_Sub2.anInt8587) {
-                    Class369_Sub2.anInt8587++
+                if (-1 + ArbFogMaterialPass.aStringArray6200!!.size > WorldMapTextLabel.anInt8587) {
+                    WorldMapTextLabel.anInt8587++
                     if (ViewportTransform.anInt3676 > 0) ViewportTransform.anInt3676++
                 }
             }

@@ -48,8 +48,8 @@ class LoadProgressCounters {
         fun method1373(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int) {
             anInt2450++
             if (TextureLoaderUtil.method2547(i, 84.toByte()) && i_5_ == -1391) {
-                if (Class369_Sub2.aClass46ArrayArray8584!![i] == null) Client.method107((WarpTextureNode.aClass46ArrayArray9427!![i]!!), -1, i_1_, i_10_, i_2_, i_7_, i_0_, i_8_, i_4_, i_3_, i_6_, i_9_)
-                else Client.method107(Class369_Sub2.aClass46ArrayArray8584!![i]!!, -1, i_1_, i_10_, i_2_, i_7_, i_0_, i_8_, i_4_, i_3_, i_6_, i_9_)
+                if (WorldMapTextLabel.aClass46ArrayArray8584!![i] == null) Client.method107((WarpTextureNode.aClass46ArrayArray9427!![i]!!), -1, i_1_, i_10_, i_2_, i_7_, i_0_, i_8_, i_4_, i_3_, i_6_, i_9_)
+                else Client.method107(WorldMapTextLabel.aClass46ArrayArray8584!![i]!!, -1, i_1_, i_10_, i_2_, i_7_, i_0_, i_8_, i_4_, i_3_, i_6_, i_9_)
             }
         }
 

@@ -10,7 +10,7 @@ import AbstractProceduralTextureNode.Companion.method3038
 import DisplaceTextureNode.Companion.method3063
 import AsyncResourceRequest.Companion.method3256
 import Class367_Sub10.Companion.method3553
-import Class369.Companion.method3568
+import WorldMapLabel.Companion.method3568
 import Class5_Sub1.Companion.method184
 import Class62.method599
 import Class75.Companion.method752
@@ -72,9 +72,9 @@ object ClientLoadStateMachine {
             if (!SizeBoundedSoftCache.aRsaPacketDecoder_2327!!.method2674(7)) return 0
             method2965(null, 0, true, 0)
             ScrollTexMaterialPass.aBoolean6289 = !LongKeyNode.method2804((-63).toByte())
-            ScrollTexMaterialPass.aClass45_6277 = Class369_Sub2.method3571(false, (if (ScrollTexMaterialPass.aBoolean6289) 34 else 32), (-23).toByte(), 1)
-            SpriteRgbTextureNode.aClass45_10426 = Class369_Sub2.method3571(false, 33, (-23).toByte(), 1)
-            SoftwareSpriteRaster.aClass45_1627 = Class369_Sub2.method3571(false, 13, (-23).toByte(), 1)
+            ScrollTexMaterialPass.aClass45_6277 = WorldMapTextLabel.method3571(false, (if (ScrollTexMaterialPass.aBoolean6289) 34 else 32), (-23).toByte(), 1)
+            SpriteRgbTextureNode.aClass45_10426 = WorldMapTextLabel.method3571(false, 33, (-23).toByte(), 1)
+            SoftwareSpriteRaster.aClass45_1627 = WorldMapTextLabel.method3571(false, 13, (-23).toByte(), 1)
         }
         if (Class56.aClass56_1024 == TimedTileQueueEntry.aClass56_9660) {
             val bool = SpriteRgbTextureNode.aClass45_10426!!.method401(89)
@@ -119,38 +119,38 @@ object ClientLoadStateMachine {
             for (i_7_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_7_] = method988(RangeThresholdTextureNode.anInt9109, 1, Class367_Sub4.anInt7319)
         }
         if (TimedTileQueueEntry.aClass56_9660 == Class56.aClass56_1030) {
-            CameraRotationStub.aClass45_322 = Class369_Sub2.method3571(false, 8, (-23).toByte(), 1)
-            ShortKeyNode.aClass45_6909 = Class369_Sub2.method3571(false, 0, (-23).toByte(), 1)
-            TextureGenerator.aClass45_2490 = Class369_Sub2.method3571(false, 1, (-23).toByte(), 1)
-            Class95.aClass45_1541 = Class369_Sub2.method3571(false, 2, (-23).toByte(), 1)
-            IntKeyNode.aClass45_6980 = Class369_Sub2.method3571(false, 3, (-23).toByte(), 1)
-            ModelFacePriorityNode.aClass45_1878 = Class369_Sub2.method3571(false, 4, (-23).toByte(), 1)
-            Class367_Sub10.aClass45_7382 = Class369_Sub2.method3571(true, 5, (-23).toByte(), 1)
-            Class59_Sub2_Sub1.aClass45_8667 = Class369_Sub2.method3571(true, 6, (-23).toByte(), 1)
-            RasterSprite.aClass45_5207 = Class369_Sub2.method3571(false, 7, (-23).toByte(), 1)
-            Class369_Sub2.aClass45_8589 = Class369_Sub2.method3571(false, 9, (-23).toByte(), 1)
-            SceneTilePlaneManager.aClass45_233 = Class369_Sub2.method3571(false, 10, (-23).toByte(), 1)
-            TheoraVideoStream.aClass45_9033 = Class369_Sub2.method3571(false, 11, (-23).toByte(), 1)
-            CameraNodeList.aClass45_1743 = Class369_Sub2.method3571(false, 12, (-23).toByte(), 1)
-            LightingOptionState.aClass45_5878 = Class369_Sub2.method3571(false, 14, (-23).toByte(), 1)
-            HoverActionEntry.aClass45_1815 = Class369_Sub2.method3571(false, 15, (-23).toByte(), 1)
-            Class94.aClass45_1538 = Class369_Sub2.method3571(false, 16, (-23).toByte(), 1)
-            VideoAdChecker.aClass45_3183 = Class369_Sub2.method3571(false, 17, (-23).toByte(), 1)
-            FloatGrid.aClass45_4975 = Class369_Sub2.method3571(false, 18, (-23).toByte(), 1)
-            SpotAnimVector.aClass45_2306 = Class369_Sub2.method3571(false, 19, (-23).toByte(), 1)
-            OpenGlRenderNode.aClass45_10480 = Class369_Sub2.method3571(false, 20, (-23).toByte(), 1)
-            Class78.aClass45_1322 = Class369_Sub2.method3571(false, 21, (-23).toByte(), 1)
-            MidiSequencePlayer.aClass45_8926 = Class369_Sub2.method3571(false, 22, (-23).toByte(), 1)
-            TerrainShadowBuilderGl2.aClass45_6950 = Class369_Sub2.method3571(true, 23, (-23).toByte(), 1)
-            ModelBatchBase.aClass45_1897 = Class369_Sub2.method3571(false, 24, (-23).toByte(), 1)
-            Class82.aClass45_1434 = Class369_Sub2.method3571(false, 25, (-23).toByte(), 1)
-            KeyEventNode.aClass45_4770 = Class369_Sub2.method3571(true, 26, (-23).toByte(), 1)
-            GraphicsOptionState.aClass45_3146 = Class369_Sub2.method3571(false, 27, (-23).toByte(), 1)
-            Class367_Sub8.aClass45_7362 = Class369_Sub2.method3571(true, 28, (-23).toByte(), 1)
-            NodeDeque.aClass45_3323 = Class369_Sub2.method3571(false, 29, (-23).toByte(), 1)
-            Crc64Hashable.aClass45_4984 = Class369_Sub2.method3571(true, 30, (-23).toByte(), 1)
-            SpriteLoadValidator.aClass45_4796 = Class369_Sub2.method3571(true, 31, (-23).toByte(), 1)
-            HitsplatDefinition.aClass45_2015 = Class369_Sub2.method3571(true, 36, (-23).toByte(), 2)
+            CameraRotationStub.aClass45_322 = WorldMapTextLabel.method3571(false, 8, (-23).toByte(), 1)
+            ShortKeyNode.aClass45_6909 = WorldMapTextLabel.method3571(false, 0, (-23).toByte(), 1)
+            TextureGenerator.aClass45_2490 = WorldMapTextLabel.method3571(false, 1, (-23).toByte(), 1)
+            Class95.aClass45_1541 = WorldMapTextLabel.method3571(false, 2, (-23).toByte(), 1)
+            IntKeyNode.aClass45_6980 = WorldMapTextLabel.method3571(false, 3, (-23).toByte(), 1)
+            ModelFacePriorityNode.aClass45_1878 = WorldMapTextLabel.method3571(false, 4, (-23).toByte(), 1)
+            Class367_Sub10.aClass45_7382 = WorldMapTextLabel.method3571(true, 5, (-23).toByte(), 1)
+            Class59_Sub2_Sub1.aClass45_8667 = WorldMapTextLabel.method3571(true, 6, (-23).toByte(), 1)
+            RasterSprite.aClass45_5207 = WorldMapTextLabel.method3571(false, 7, (-23).toByte(), 1)
+            WorldMapTextLabel.aClass45_8589 = WorldMapTextLabel.method3571(false, 9, (-23).toByte(), 1)
+            SceneTilePlaneManager.aClass45_233 = WorldMapTextLabel.method3571(false, 10, (-23).toByte(), 1)
+            TheoraVideoStream.aClass45_9033 = WorldMapTextLabel.method3571(false, 11, (-23).toByte(), 1)
+            CameraNodeList.aClass45_1743 = WorldMapTextLabel.method3571(false, 12, (-23).toByte(), 1)
+            LightingOptionState.aClass45_5878 = WorldMapTextLabel.method3571(false, 14, (-23).toByte(), 1)
+            HoverActionEntry.aClass45_1815 = WorldMapTextLabel.method3571(false, 15, (-23).toByte(), 1)
+            Class94.aClass45_1538 = WorldMapTextLabel.method3571(false, 16, (-23).toByte(), 1)
+            VideoAdChecker.aClass45_3183 = WorldMapTextLabel.method3571(false, 17, (-23).toByte(), 1)
+            FloatGrid.aClass45_4975 = WorldMapTextLabel.method3571(false, 18, (-23).toByte(), 1)
+            SpotAnimVector.aClass45_2306 = WorldMapTextLabel.method3571(false, 19, (-23).toByte(), 1)
+            OpenGlRenderNode.aClass45_10480 = WorldMapTextLabel.method3571(false, 20, (-23).toByte(), 1)
+            Class78.aClass45_1322 = WorldMapTextLabel.method3571(false, 21, (-23).toByte(), 1)
+            MidiSequencePlayer.aClass45_8926 = WorldMapTextLabel.method3571(false, 22, (-23).toByte(), 1)
+            TerrainShadowBuilderGl2.aClass45_6950 = WorldMapTextLabel.method3571(true, 23, (-23).toByte(), 1)
+            ModelBatchBase.aClass45_1897 = WorldMapTextLabel.method3571(false, 24, (-23).toByte(), 1)
+            Class82.aClass45_1434 = WorldMapTextLabel.method3571(false, 25, (-23).toByte(), 1)
+            KeyEventNode.aClass45_4770 = WorldMapTextLabel.method3571(true, 26, (-23).toByte(), 1)
+            GraphicsOptionState.aClass45_3146 = WorldMapTextLabel.method3571(false, 27, (-23).toByte(), 1)
+            Class367_Sub8.aClass45_7362 = WorldMapTextLabel.method3571(true, 28, (-23).toByte(), 1)
+            NodeDeque.aClass45_3323 = WorldMapTextLabel.method3571(false, 29, (-23).toByte(), 1)
+            Crc64Hashable.aClass45_4984 = WorldMapTextLabel.method3571(true, 30, (-23).toByte(), 1)
+            SpriteLoadValidator.aClass45_4796 = WorldMapTextLabel.method3571(true, 31, (-23).toByte(), 1)
+            HitsplatDefinition.aClass45_2015 = WorldMapTextLabel.method3571(true, 36, (-23).toByte(), 2)
         }
         if (Class56.aClass56_1031 == TimedTileQueueEntry.aClass56_9660) {
             var i_8_ = 0
@@ -179,7 +179,7 @@ object ClientLoadStateMachine {
         if (i != -28660) return 2
         if (TimedTileQueueEntry.aClass56_9660 == Class56.aClass56_1035) {
             if (AbstractFrameBufferSurface.anInt6923 != -1 && !RasterSprite.aClass45_5207!!.method420(-10499, AbstractFrameBufferSurface.anInt6923, 0)) return 99
-            SourceRowTextureNode.aRenderConfig9113 = TextureMetadataProvider(KeyEventNode.aClass45_4770, Class369_Sub2.aClass45_8589, CameraRotationStub.aClass45_322)
+            SourceRowTextureNode.aRenderConfig9113 = TextureMetadataProvider(KeyEventNode.aClass45_4770, WorldMapTextLabel.aClass45_8589, CameraRotationStub.aClass45_322)
             ProjectionCameraTransform.aEmoteDefCache_5764 = EmoteDefCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aClass45_1541)
             Class64_Sub3.aNpcDefinitionCache_5558 = NpcDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aClass45_1541)
             GraphicsOptionState.aItemDefinitionLoader_3147 = ItemDefinitionLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)

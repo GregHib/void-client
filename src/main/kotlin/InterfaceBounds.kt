@@ -6,7 +6,7 @@ import ModelDataCache.method297
 import CompassSmoother.Companion.method2017
 import IntHashSet.Companion.method2368
 import SceneLinkedListNode.Companion.method2375
-import Class369_Sub3.Companion.method3573
+import WorldMapIconLabel.Companion.method3573
 import Class84.Companion.method821
 import java.awt.Component
 import java.lang.reflect.Constructor
@@ -121,7 +121,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 Class59_Sub2_Sub1.aClass45_8667!!.method412(64.toByte())
                 RasterSprite.aClass45_5207!!.method412(120.toByte())
                 CameraRotationStub.aClass45_322!!.method412(98.toByte())
-                Class369_Sub2.aClass45_8589!!.method412(43.toByte())
+                WorldMapTextLabel.aClass45_8589!!.method412(43.toByte())
                 SceneTilePlaneManager.aClass45_233!!.method412(20.toByte())
                 TheoraVideoStream.aClass45_9033!!.method412(89.toByte())
                 CameraNodeList.aClass45_1743!!.method412((-125).toByte())

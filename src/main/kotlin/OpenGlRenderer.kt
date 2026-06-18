@@ -3568,7 +3568,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     ModelKeyBuilder.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, 100.toByte())
                     if (RemoveRoofsOptionState.anIntArray6062!![0] >= 0) {
                         if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || ShaderProgram.anInt7276 == 0 || ShaderProgram.anInt7276 == 3 || (ShaderProgram.anInt7276 == 1 && (KeyEventNode.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && Class88.anInt1497 < ConfigVarProgress.anInt4814) {
-                            ConfigVarProgress.anIntArray4819!![Class88.anInt1497] = ((Class369.aFontDefinition_4962!!.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2)
+                            ConfigVarProgress.anIntArray4819!![Class88.anInt1497] = ((WorldMapLabel.aFontDefinition_4962!!.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2)
                             ConfigVarProgress.anIntArray4822!![Class88.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![0]
                             ConfigVarProgress.anIntArray4813!![Class88.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![1]
                             ConfigVarProgress.anIntArray4817!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10201
@@ -3609,7 +3609,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             if (class105s!!.size <= i_325_) i_325_ = 1
                             val class105 = class105s[0]!!
                             val class105_328_ = class105s[i_325_]!!
-                            i_323_ -= max((Class369.aFontDefinition_4962!!.anInt1988), class105.method969())
+                            i_323_ -= max((WorldMapLabel.aFontDefinition_4962!!.anInt1988), class105.method969())
                             val i_329_ = (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ + -(class105.method971() shr 1)))
                             var i_330_ = (class105.method971() * class318_sub1_sub3_sub3.anInt10295 / 255)
                             val i_331_ = class105.method969()
@@ -3619,7 +3619,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             class105_328_.method974(i_329_, i_323_)
                             FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i)
                             MapTileShape.method2663(-5590, i_329_, i_329_ + class105.method966(), i_323_, i_323_ + i_331_)
-                        } else i_323_ -= max((Class369.aFontDefinition_4962!!.anInt1988), TimedRecordAccessor.aAbstractModelRendererArray7107!![0]!!.method969())
+                        } else i_323_ -= max((WorldMapLabel.aFontDefinition_4962!!.anInt1988), TimedRecordAccessor.aAbstractModelRendererArray7107!![0]!!.method969())
                         i_323_ -= 2
                         if (!class318_sub1_sub3_sub3.aBoolean10309) {
                             if (class318_sub1_sub3_sub3.anInt10287 > Class367_Sub11.anInt7396) {
@@ -4014,7 +4014,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 else class318_sub1_sub3_sub3_436_ = LoadingBarRenderer.aPlayerArray5058!![i_435_]
                 SpriteSheetCache.method1430(--class318_sub1_sub3_sub3!!.anInt10261, 119.toByte(), i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3)
             }
-            val i_437_ = i_316_ + (Class369.aFontDefinition_4962!!.anInt1993 + Class369.aFontDefinition_4962!!.anInt1988)
+            val i_437_ = i_316_ + (WorldMapLabel.aFontDefinition_4962!!.anInt1993 + WorldMapLabel.aFontDefinition_4962!!.anInt1988)
             for (i_438_ in 0..<Class88.anInt1497) {
                 val i_439_ = ConfigVarProgress.anIntArray4822!![i_438_]
                 var i_440_ = ConfigVarProgress.anIntArray4813!![i_438_]
@@ -4033,11 +4033,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 }
                 ConfigVarProgress.anIntArray4813!![i_438_] = i_440_
                 val string = ConfigVarProgress.aStringArray4818!![i_438_]
-                val i_443_ = Class369.aFontDefinition_4962!!.method1183(true, string)
+                val i_443_ = WorldMapLabel.aFontDefinition_4962!!.method1183(true, string)
                 var i_444_ = i_439_ + i_317_
-                var i_445_ = -Class369.aFontDefinition_4962!!.anInt1988 + i_440_ + i
+                var i_445_ = -WorldMapLabel.aFontDefinition_4962!!.anInt1988 + i_440_ + i
                 var i_446_ = i_444_ - -i_443_
-                var i_447_ = i_440_ + i - -Class369.aFontDefinition_4962!!.anInt1993
+                var i_447_ = i_440_ + i - -WorldMapLabel.aFontDefinition_4962!!.anInt1993
                 if (TileTextureNode.anInt9408 == 0) {
                     var i_448_ = 16776960
                     if (ConfigVarProgress.anIntArray4817!![i_438_] < 6) i_448_ = (OverlayColorTable.anIntArray1757!![ConfigVarProgress.anIntArray4817!![i_438_]])
@@ -4093,7 +4093,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         i_445_ -= 7
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 4) {
-                        val i_453_ = ((150 + -ConfigVarProgress.anIntArray4812!![i_438_]) * (Class369.aFontDefinition_4962!!.method1183(true, string) + 100) / 150)
+                        val i_453_ = ((150 + -ConfigVarProgress.anIntArray4812!![i_438_]) * (WorldMapLabel.aFontDefinition_4962!!.method1183(true, string) + 100) / 150)
                         FacingDirectionNode.aRenderer6654!!.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_)
                         i_444_ += 50 - i_453_
                         i_446_ += -i_453_ + 50
@@ -4106,7 +4106,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         if (i_454_ >= 25) {
                             if (i_454_ > 125) i_455_ = i_454_ + -125
                         } else i_455_ = i_454_ - 25
-                        val i_456_ = (Class369.aFontDefinition_4962!!.anInt1993 + Class369.aFontDefinition_4962!!.anInt1988)
+                        val i_456_ = (WorldMapLabel.aFontDefinition_4962!!.anInt1993 + WorldMapLabel.aFontDefinition_4962!!.anInt1988)
                         FacingDirectionNode.aRenderer6654!!.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_447_ += i_455_

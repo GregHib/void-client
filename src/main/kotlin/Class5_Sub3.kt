@@ -4,38 +4,38 @@ import Class59.Companion.method544
 /* Class5_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, class369_sub1: Class369_Sub1?) : Class5(class45, class45_4_, class369_sub1) {
+class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, class369_sub1: WorldMapAreaLabel?) : Class5(class45, class45_4_, class369_sub1) {
     private var aAbstractModelRenderer_8366: AbstractModelRenderer? = null
     public override fun method178(i: Int, bool: Boolean, i_0_: Byte, i_1_: Int) {
         if (i_0_ >= -6) method202(-4, null)
         anInt8376++
-        FacingDirectionNode.aRenderer6654!!.method3628(-2 + i, i_1_, 4 + this.aClass369_4635!!.anInt4971, this.aClass369_4635!!.anInt4963 + 2, ((this.aClass369_4635 as Class369_Sub1).anInt8580), 0)
-        FacingDirectionNode.aRenderer6654!!.method3628(i + -1, i_1_ + 1, this.aClass369_4635!!.anInt4971 + 2, this.aClass369_4635!!.anInt4963, 0, 0)
+        FacingDirectionNode.aRenderer6654!!.method3628(-2 + i, i_1_, 4 + this.aWorldMapLabel_4635!!.anInt4971, this.aWorldMapLabel_4635!!.anInt4963 + 2, ((this.aWorldMapLabel_4635 as WorldMapAreaLabel).anInt8580), 0)
+        FacingDirectionNode.aRenderer6654!!.method3628(i + -1, i_1_ + 1, this.aWorldMapLabel_4635!!.anInt4971 + 2, this.aWorldMapLabel_4635!!.anInt4963, 0, 0)
     }
 
     public override fun method8(i: Byte): Boolean {
         val i_2_ = 2 % ((25 - i) / 52)
         anInt8373++
         if (!super.method8(82.toByte())) return false
-        return this.aClass45_4632!!.method421(false, ((this.aClass369_4635 as Class369_Sub1).anInt8582))
+        return this.aClass45_4632!!.method421(false, ((this.aWorldMapLabel_4635 as WorldMapAreaLabel).anInt8582))
     }
 
     public override fun method7(i: Int) {
         anInt8371++
         if (i == 10286) {
             super.method7(i)
-            aAbstractModelRenderer_8366 = Class369_Sub3_Sub1.method3577((this.aClass369_4635 as Class369_Sub1).anInt8582, (-96).toByte(), this.aClass45_4632!!)
+            aAbstractModelRenderer_8366 = WorldMapPolygonIconLabel.method3577((this.aWorldMapLabel_4635 as WorldMapAreaLabel).anInt8582, (-96).toByte(), this.aClass45_4632!!)
         }
     }
 
     public override fun method182(i: Int, i_8_: Int, i_9_: Int, bool: Boolean) {
         anInt8367++
-        val i_10_ = (this.method183(48) * this.aClass369_4635!!.anInt4971 / 10000)
+        val i_10_ = (this.method183(48) * this.aWorldMapLabel_4635!!.anInt4971 / 10000)
         val `is` = IntArray(4)
         val i_11_ = -50 % ((-20 - i) / 57)
         FacingDirectionNode.aRenderer6654!!.K(`is`)
-        FacingDirectionNode.aRenderer6654!!.KA(i_9_, 2 + i_8_, i_9_ - -i_10_, i_8_ - -(this.aClass369_4635!!.anInt4963))
-        aAbstractModelRenderer_8366!!.method972(i_9_, 2 + i_8_, (this.aClass369_4635!!.anInt4971), (this.aClass369_4635!!.anInt4963))
+        FacingDirectionNode.aRenderer6654!!.KA(i_9_, 2 + i_8_, i_9_ - -i_10_, i_8_ - -(this.aWorldMapLabel_4635!!.anInt4963))
+        aAbstractModelRenderer_8366!!.method972(i_9_, 2 + i_8_, (this.aWorldMapLabel_4635!!.anInt4971), (this.aWorldMapLabel_4635!!.anInt4963))
         FacingDirectionNode.aRenderer6654!!.KA(`is`[0], `is`[1], `is`[2], `is`[3])
     }
 
@@ -122,7 +122,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-119, `is`[i_7_])
                                     InterfaceComponentGroup.method3243(i_5_ + 7281, class348_sub47)
                                 } else if (i == 7) {
-                                    Class369_Sub2.anInt8588++
+                                    WorldMapTextLabel.anInt8588++
                                     val class348_sub47 = (method2148(ProceduralTextureGraph.aFontMetaRef_9533, TheoraVideoStream.aClass77_9029, -116))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(i_5_ xor 0x1c2c, `is`[i_7_])
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(92.toByte(), 0)

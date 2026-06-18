@@ -20,13 +20,13 @@ class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: 
         if (MatrixCameraTransform.aProjectileFactory_5689 == class223) return WorldMapRenderer(method998(-107), interface12 as MinimapSpriteRenderer)
         if (class223 == WeaveTextureNode.aProjectileFactory_9274) return WidgetComponentNode(aClass45_1637, interface12 as ParticleEmitterDef)
         if (class223 == ItemNameResolver.aProjectileFactory_4997) return ScrollingWidgetComponentNode(aClass45_1637, interface12 as ParticleEmitterDefExt)
-        if (class223 == Buffer.aProjectileFactory_7175) return Class5_Sub2(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub2)
-        if (class223 == SkyboxGradient.aProjectileFactory_3934) return Class5_Sub3(aClass45_1637, aClass45_1641!!, interface12 as Class369_Sub1)
-        if (class223 == MapSceneDefLoader.aProjectileFactory_2489) return Class5_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub3)
+        if (class223 == Buffer.aProjectileFactory_7175) return Class5_Sub2(aClass45_1637!!, aClass45_1641!!, interface12 as WorldMapTextLabel)
+        if (class223 == SkyboxGradient.aProjectileFactory_3934) return Class5_Sub3(aClass45_1637, aClass45_1641!!, interface12 as WorldMapAreaLabel)
+        if (class223 == MapSceneDefLoader.aProjectileFactory_2489) return Class5_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as WorldMapIconLabel)
         if (class223 == SpotAnimVector.aProjectileFactory_2307) return Class67(aClass45_1637, aClass45_1641, interface12 as HeapInfoRecord)
         if (bool != true) anIntArray1636 = null
         if (OrientationRotator.aProjectileFactory_2045 == class223) return SplashImageLoadable(aClass45_1637, interface12 as ConfigValueProvider)
-        if (LocTypeDefLoader.aProjectileFactory_2507 == class223) return Class5_Sub1_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as Class369_Sub3_Sub1)
+        if (LocTypeDefLoader.aProjectileFactory_2507 == class223) return Class5_Sub1_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as WorldMapPolygonIconLabel)
         return null
     }
 

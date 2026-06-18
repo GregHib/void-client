@@ -196,7 +196,7 @@ abstract class SceneEntity : SceneLinkedListNode() {
                             class143 = ParticleEmitterFactory.aFontDefinition_3179
                         }
                         if (class42.anInt576 == 2) {
-                            class143 = Class369.aFontDefinition_4962
+                            class143 = WorldMapLabel.aFontDefinition_4962
                             class324 = NodeDeque.aFont_3326
                         }
                         CameraOrModelTransform.method2650(class143, class42.anInt580, var_sprite, i_8_, i_6_, class42.aString597, i, class324, i_29_, class46, i_5_, 100)

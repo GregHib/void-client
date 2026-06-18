@@ -44,8 +44,8 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
             var i_5_ = i_3_
             var i_6_ = -i_3_
             var i_7_ = -1
-            val i_8_ = Class85.method831(CameraNodeList.anInt1745, i_3_ + i_0_, Class369.anInt4960, -108)
-            val i_9_ = Class85.method831(CameraNodeList.anInt1745, -i_3_ + i_0_, Class369.anInt4960, 81)
+            val i_8_ = Class85.method831(CameraNodeList.anInt1745, i_3_ + i_0_, WorldMapLabel.anInt4960, -108)
+            val i_9_ = Class85.method831(CameraNodeList.anInt1745, -i_3_ + i_0_, WorldMapLabel.anInt4960, 81)
             GlElementArrayBuffer.method1156(-27, i_8_, WidgetDefinition.anIntArrayArray255!![i_2_]!!, i_9_, i_1_)
             while (i_5_ > i_4_) {
                 i_7_ += 2
@@ -56,8 +56,8 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                     val i_10_ = -i_5_ + i_2_
                     val i_11_ = i_5_ + i_2_
                     if (i_11_ >= LocalPlayerState.anInt1910 && Class38.anInt513 >= i_10_) {
-                        val i_12_ = Class85.method831(CameraNodeList.anInt1745, i_4_ + i_0_, Class369.anInt4960, 74)
-                        val i_13_ = Class85.method831(CameraNodeList.anInt1745, i_0_ + -i_4_, Class369.anInt4960, 98)
+                        val i_12_ = Class85.method831(CameraNodeList.anInt1745, i_4_ + i_0_, WorldMapLabel.anInt4960, 74)
+                        val i_13_ = Class85.method831(CameraNodeList.anInt1745, i_0_ + -i_4_, WorldMapLabel.anInt4960, 98)
                         if (i_11_ <= Class38.anInt513) GlElementArrayBuffer.method1156(-27, i_12_, (WidgetDefinition.anIntArrayArray255!![i_11_]!!), i_13_, i_1_)
                         if (LocalPlayerState.anInt1910 <= i_10_) GlElementArrayBuffer.method1156(-27, i_12_, (WidgetDefinition.anIntArrayArray255!![i_10_]!!), i_13_, i_1_)
                     }
@@ -65,8 +65,8 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                 val i_14_ = -++i_4_ + i_2_
                 val i_15_ = i_2_ - -i_4_
                 if (LocalPlayerState.anInt1910 <= i_15_ && Class38.anInt513 >= i_14_) {
-                    val i_16_ = Class85.method831(CameraNodeList.anInt1745, i_0_ + i_5_, Class369.anInt4960, 52)
-                    val i_17_ = Class85.method831(CameraNodeList.anInt1745, i_0_ + -i_5_, Class369.anInt4960, -106)
+                    val i_16_ = Class85.method831(CameraNodeList.anInt1745, i_0_ + i_5_, WorldMapLabel.anInt4960, 52)
+                    val i_17_ = Class85.method831(CameraNodeList.anInt1745, i_0_ + -i_5_, WorldMapLabel.anInt4960, -106)
                     if (i_15_ <= Class38.anInt513) GlElementArrayBuffer.method1156(-27, i_16_, WidgetDefinition.anIntArrayArray255!![i_15_]!!, i_17_, i_1_)
                     if (i_14_ >= LocalPlayerState.anInt1910) GlElementArrayBuffer.method1156(-27, i_16_, WidgetDefinition.anIntArrayArray255!![i_14_]!!, i_17_, i_1_)
                 }
@@ -156,14 +156,14 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                     var_renderer.aa(i_35_, i_36_, LocTypeDefinition.anInt4017, 350, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 1)
                     MapTileShape.method2663(-5590, i_35_, LocTypeDefinition.anInt4017 + i_35_, i_36_, i_36_ + 350)
                     val i_37_ = 350 / Class68.anInt1188
-                    if (Class369_Sub2.anInt8587 > 0) {
+                    if (WorldMapTextLabel.anInt8587 > 0) {
                         val i_38_ = 342 + -Class68.anInt1188
-                        val i_39_ = (i_37_ * i_38_ / (-1 + (i_37_ - -Class369_Sub2.anInt8587)))
+                        val i_39_ = (i_37_ * i_38_ / (-1 + (i_37_ - -WorldMapTextLabel.anInt8587)))
                         var i_40_ = 4
-                        if (Class369_Sub2.anInt8587 > 1) i_40_ += ((Class369_Sub2.anInt8587 + (-1 + -ViewportTransform.anInt3676)) * (i_38_ - i_39_) / (Class369_Sub2.anInt8587 + -1))
+                        if (WorldMapTextLabel.anInt8587 > 1) i_40_ += ((WorldMapTextLabel.anInt8587 + (-1 + -ViewportTransform.anInt3676)) * (i_38_ - i_39_) / (WorldMapTextLabel.anInt8587 + -1))
                         var_renderer.aa(-16 + (LocTypeDefinition.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 2)
                         var i_41_ = ViewportTransform.anInt3676
-                        while (((i_41_ < i_37_ + ViewportTransform.anInt3676) && Class369_Sub2.anInt8587 > i_41_)) {
+                        while (((i_41_ < i_37_ + ViewportTransform.anInt3676) && WorldMapTextLabel.anInt8587 > i_41_)) {
                             val strings = (TurbulenceTextureNode.method3113('\u0008', true, ArbFogMaterialPass.aStringArray6200!![i_41_]!!))
                             val i_42_ = (-16 + LocTypeDefinition.anInt4017 + -8) / strings.size
                             for (i_43_ in strings.indices) {
@@ -177,11 +177,11 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                     WorldMapRenderer.aFont_4684!!.method2569("Build: 634", 350 + (i_36_ + -20), -1, (LocTypeDefinition.anInt4017 + i_35_ + -25), -121, -16777216)
                     var_renderer.KA(i_35_, i_36_, i_35_ - -LocTypeDefinition.anInt4017, i_36_ - -350)
                     var_renderer.method3649((-80).toByte(), LocTypeDefinition.anInt4017, -ProducerImageSurface.anInt9077 + (350 + i_36_), -1, i_35_)
-                    NodeDeque.aFont_3326!!.method2576("--> " + BackgroundWorkerThread.method1909(31.toByte(), MapElementManager.aString4461!!), -1, (i_36_ - (-350 + Class369.aFontDefinition_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)
+                    NodeDeque.aFont_3326!!.method2576("--> " + BackgroundWorkerThread.method1909(31.toByte(), MapElementManager.aString4461!!), -1, (i_36_ - (-350 + WorldMapLabel.aFontDefinition_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)
                     if (!SizeBoundedSoftCache.aBoolean2329) break
                     var i_45_ = -1
                     if (Class367_Sub11.anInt7396 % 30 > 15) i_45_ = 16777215
-                    var_renderer.method3660(10 + (i_35_ - -(Class369.aFontDefinition_4962!!.method1183(true, "--> " + (BackgroundWorkerThread.method1909(31.toByte(), MapElementManager.aString4461!!).substring(0, TerrainShadowBuilderGl3.anInt7006))))), i_45_, 12, 350 + (i_36_ + -Class369.aFontDefinition_4962!!.anInt1993 - 11), true)
+                    var_renderer.method3660(10 + (i_35_ - -(WorldMapLabel.aFontDefinition_4962!!.method1183(true, "--> " + (BackgroundWorkerThread.method1909(31.toByte(), MapElementManager.aString4461!!).substring(0, TerrainShadowBuilderGl3.anInt7006))))), i_45_, 12, 350 + (i_36_ + -WorldMapLabel.aFontDefinition_4962!!.anInt1993 - 11), true)
                 } catch (runtimeexception: RuntimeException) {
                     throw SoundBankPatch.method2929(runtimeexception, ("go.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
                 }

@@ -506,13 +506,13 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         var anInt8423: Int = 0
 
         @JvmStatic
-        fun method987(i: Int, class348_sub49: Buffer): Class369_Sub2 {
+        fun method987(i: Int, class348_sub49: Buffer): WorldMapTextLabel {
             anInt8405++
             val class369 = method2834(((-118).toByte()).toByte(), class348_sub49)
             if (i != 743571200) method989(-21, 36, 81)
             val i_8_ = class348_sub49.readInt(((-126).toByte()).toByte())
             val i_9_ = class348_sub49.readInt(((-126).toByte()).toByte())
-            return Class369_Sub2(class369.aScreenAnchorAlignment_4968, class369.aTileRenderState_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_8_, i_9_)
+            return WorldMapTextLabel(class369.aScreenAnchorAlignment_4968, class369.aTileRenderState_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_8_, i_9_)
         }
 
         @JvmStatic

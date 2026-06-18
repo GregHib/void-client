@@ -72,7 +72,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
             ResourceProvider.aFloat3938 = i_1_.toFloat()
             Class76.aFloat1287 = i.toFloat()
             method1725(262144)
-            Class369_Sub3_Sub1.aBoolean10174 = true
+            WorldMapPolygonIconLabel.aBoolean10174 = true
         }
     }
 }

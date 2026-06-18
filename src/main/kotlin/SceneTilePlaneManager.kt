@@ -69,7 +69,7 @@ object SceneTilePlaneManager {
         if (!KeyboardLayoutConfig.aBoolean2130) {
             KeyboardLayoutConfig.aBoolean2130 = true
             CircleDrawer.aFloat2687 += (-CircleDrawer.aFloat2687 + -24.0f) / 2.0f
-            Class369_Sub3_Sub1.aBoolean10174 = true
+            WorldMapPolygonIconLabel.aBoolean10174 = true
         }
     }
 }

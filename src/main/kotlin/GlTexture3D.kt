@@ -132,12 +132,12 @@ class GlTexture3D : GlTexture {
                     InterfaceComponentGroup.method3241(i_20_, 39.toByte(), Class9.aRenderer171!!)
                 }
             } else {
-                if (Class369_Sub3.aBooleanArrayArray8596 == null) Class369_Sub3.aBooleanArrayArray8596 = (Array<BooleanArray?>(SpotAnimEntity.anInt6451 + SpotAnimEntity.anInt6451 + 1) { BooleanArray((RegionSceneShifter.anInt7054 + SpotAnimEntity.anInt6451 + 1)) })
-                for (i_40_ in Class369_Sub3.aBooleanArrayArray8596!!.indices) {
-                    for (i_41_ in Class369_Sub3.aBooleanArrayArray8596!![0]!!.indices) Class369_Sub3.aBooleanArrayArray8596!![i_40_]!![i_41_] = true
+                if (WorldMapIconLabel.aBooleanArrayArray8596 == null) WorldMapIconLabel.aBooleanArrayArray8596 = (Array<BooleanArray?>(SpotAnimEntity.anInt6451 + SpotAnimEntity.anInt6451 + 1) { BooleanArray((RegionSceneShifter.anInt7054 + SpotAnimEntity.anInt6451 + 1)) })
+                for (i_40_ in WorldMapIconLabel.aBooleanArrayArray8596!!.indices) {
+                    for (i_41_ in WorldMapIconLabel.aBooleanArrayArray8596!![0]!!.indices) WorldMapIconLabel.aBooleanArrayArray8596!![i_40_]!![i_41_] = true
                 }
-                FacingDirectionNode.aBooleanArrayArray6656 = Class369_Sub3.aBooleanArrayArray8596
-                Class99.aBooleanArrayArray1572 = Class369_Sub3.aBooleanArrayArray8596!!
+                FacingDirectionNode.aBooleanArrayArray6656 = WorldMapIconLabel.aBooleanArrayArray8596
+                Class99.aBooleanArrayArray1572 = WorldMapIconLabel.aBooleanArrayArray8596!!
                 Class37.anInt492 = 0
                 IntPair.anInt6974 = 0
                 ProjectileConfigUtil.anInt387 = SpotAnimEntity.anInt6451

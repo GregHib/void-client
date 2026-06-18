@@ -26,7 +26,7 @@ open class WidgetComponentNode(class45: Class45?, particleEmitterDef: ParticleEm
 
     override fun method7(i: Int) {
         if (i != 10286) anInt4656 = -123
-        this.aAbstractModelRenderer_4655 = Class369_Sub3_Sub1.method3577((this.aParticleEmitterDef_4659!!.anInt4958), (-60).toByte(), aClass45_4661!!)
+        this.aAbstractModelRenderer_4655 = WorldMapPolygonIconLabel.method3577((this.aParticleEmitterDef_4659!!.anInt4958), (-60).toByte(), aClass45_4661!!)
         anInt4660++
     }
 
@@ -67,7 +67,7 @@ open class WidgetComponentNode(class45: Class45?, particleEmitterDef: ParticleEm
         }
 
         fun method1116(i: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Byte) {
-            if (Class369.anInt4960 > i_9_ + -i_10_ || CameraNodeList.anInt1745 < i_10_ + i_9_ || LocalPlayerState.anInt1910 > i - i_10_ || i - -i_10_ > Class38.anInt513) method203(-107, i_9_, i_8_, i, i_10_)
+            if (WorldMapLabel.anInt4960 > i_9_ + -i_10_ || CameraNodeList.anInt1745 < i_10_ + i_9_ || LocalPlayerState.anInt1910 > i - i_10_ || i - -i_10_ > Class38.anInt513) method203(-107, i_9_, i_8_, i, i_10_)
             else method253(i, i_9_, -648, i_8_, i_10_)
             anInt4662++
             val i_12_ = -68 / ((40 - i_11_) / 36)

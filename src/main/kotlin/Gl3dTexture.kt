@@ -132,7 +132,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 HuffmanCodec.aIntRange_3773,
                 WalkingTypeUtil.aIntRange_3307,
                 SpotAnimVector.aIntRange_2305,
-                Class369_Sub2.aIntRange_8590,
+                WorldMapTextLabel.aIntRange_8590,
                 ItemNameResolver.aIntRange_4998,
                 NpcCountAccessor.aIntRange_2279,
                 GradientLookupEffect.aIntRange_9197,
@@ -202,7 +202,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
         fun method249(i: Int) {
             anInt8627++
             ArbFogMaterialPass.aStringArray6200 = arrayOfNulls<String>(500)
-            ProducerImageSurface.anInt9077 = 2 + (Class369.aFontDefinition_4962!!.anInt1993 + Class369.aFontDefinition_4962!!.anInt1988)
+            ProducerImageSurface.anInt9077 = 2 + (WorldMapLabel.aFontDefinition_4962!!.anInt1993 + WorldMapLabel.aFontDefinition_4962!!.anInt1988)
             Class68.anInt1188 = (ParticleEmitterFactory.aFontDefinition_3179!!.anInt1988 - (-ParticleEmitterFactory.aFontDefinition_3179!!.anInt1993 - i))
             var i_4_ = 0
             while ((i_4_ < ArbFogMaterialPass.aStringArray6200!!.size)) {

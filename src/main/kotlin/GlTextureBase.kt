@@ -368,7 +368,7 @@ abstract class GlTextureBase(class377: Class377?, i: Int, textureFormatInfo: Tex
             if (i != -1 && AudioResampler.aBooleanArray2162!![i]) {
                 RenderConfigFactory.aClass45_2978!!.method411(i, -120)
                 WarpTextureNode.aClass46ArrayArray9427!![i] = null
-                Class369_Sub2.aClass46ArrayArray8584!![i] = null
+                WorldMapTextLabel.aClass46ArrayArray8584!![i] = null
                 if (i_46_ <= -94) AudioResampler.aBooleanArray2162!![i] = false
             }
         }

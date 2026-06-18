@@ -21,7 +21,7 @@ class Class83 internal constructor(var_ha_Sub2: OpenGlRenderer) {
             this.aClass258_Sub1_1446 = GlTexture3D(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)
             val class188 = var_ha_Sub2.aGlowPostProcessor_7736
             if (class188!!.method1414(35632)) {
-                `is` = method461(false, Class369_Sub2.anObject8592, 53146732)
+                `is` = method461(false, WorldMapTextLabel.anObject8592, 53146732)
                 this.aClass258_Sub1_1443 = GlTexture3D(var_ha_Sub2, 6408, 128, 128, 16)
                 val class258_sub1 = GlTexture3D(var_ha_Sub2, 6409, 128, 128, 16, `is`, 6409)
                 if (!class188.method1413(this.aClass258_Sub1_1443, class258_sub1, -114, 2.0f)) {

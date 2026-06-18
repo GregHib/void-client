@@ -1,6 +1,6 @@
 import GameDisplayManager.method1582
 import BoundsConstraintEntry.Companion.method2057
-import Class369_Sub1.Companion.method3570
+import WorldMapAreaLabel.Companion.method3570
 
 /* Class296 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

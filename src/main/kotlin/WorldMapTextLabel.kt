@@ -1,7 +1,7 @@
 /* Class369_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class369_Sub2(screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) : Class369(screenAnchorAlignment, tileRenderState, i, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_) {
+class WorldMapTextLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) : WorldMapLabel(screenAnchorAlignment, tileRenderState, i, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_) {
     @JvmField
     var anInt8585: Int = 0
     @JvmField

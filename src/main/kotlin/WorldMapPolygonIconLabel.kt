@@ -1,6 +1,6 @@
 import java.awt.event.ActionEvent
 
-class Class369_Sub3_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int) : Class369_Sub3(screenAnchorAlignment, tileRenderState, i, i_13_, i_14_, i_15_, i_16_, i_17_, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, i_24_) {
+class WorldMapPolygonIconLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int) : WorldMapIconLabel(screenAnchorAlignment, tileRenderState, i, i_13_, i_14_, i_15_, i_16_, i_17_, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, i_24_) {
     @JvmField
     var anInt10177: Int = 0
     override fun method51(i: Byte): ProjectileFactory? {
@@ -37,19 +37,19 @@ class Class369_Sub3_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, tileRend
             var i_4_ = i_4_
             if (i_3_ <= Class38.anInt513 && i_2_ >= LocalPlayerState.anInt1910) {
                 val bool: Boolean
-                if (Class369.Companion.anInt4960 <= i_4_) {
+                if (WorldMapLabel.Companion.anInt4960 <= i_4_) {
                     if (i_4_ <= CameraNodeList.anInt1745) bool = true
                     else {
                         bool = false
                         i_4_ = CameraNodeList.anInt1745
                     }
                 } else {
-                    i_4_ = Class369.Companion.anInt4960
+                    i_4_ = WorldMapLabel.Companion.anInt4960
                     bool = false
                 }
                 val bool_5_: Boolean
-                if (Class369.Companion.anInt4960 > i_0_) {
-                    i_0_ = Class369.Companion.anInt4960
+                if (WorldMapLabel.Companion.anInt4960 > i_0_) {
+                    i_0_ = WorldMapLabel.Companion.anInt4960
                     bool_5_ = false
                 } else if (CameraNodeList.anInt1745 < i_0_) {
                     i_0_ = CameraNodeList.anInt1745

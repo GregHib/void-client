@@ -1,13 +1,13 @@
 /* Class5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class369?) : Interface1 {
+abstract class Class5(class45: Class45?, class45_15_: Class45, worldMapLabel: WorldMapLabel?) : Interface1 {
     private var anInt4630 = 0
     private val aClass45_4631: Class45 = class45_15_
     @JvmField
     var aClass45_4632: Class45? = null
     @JvmField
-    var aClass369_4635: Class369? = null
+    var aWorldMapLabel_4635: WorldMapLabel? = null
     private var aFont_4637: Font? = null
     private var aLong4640: Long = 0
     abstract fun method178(i: Int, bool: Boolean, i_0_: Byte, i_1_: Int)
@@ -16,16 +16,16 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
         val i_2_ = -94 % ((i - 25) / 52)
         anInt4641++
         var bool = true
-        if (!this.aClass45_4632!!.method421(false, this.aClass369_4635!!.anInt4965)) bool = false
-        if (!aClass45_4631!!.method421(false, this.aClass369_4635!!.anInt4965)) bool = false
+        if (!this.aClass45_4632!!.method421(false, this.aWorldMapLabel_4635!!.anInt4965)) bool = false
+        if (!aClass45_4631!!.method421(false, this.aWorldMapLabel_4635!!.anInt4965)) bool = false
         return bool
     }
 
     override fun method7(i: Int) {
         anInt4639++
         if (i == 10286) {
-            val class143 = RangedGraphicsOptionState.method1766((-85).toByte(), (this.aClass369_4635!!.anInt4965), aClass45_4631)
-            aFont_4637 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aClass45_4632!!, (this.aClass369_4635!!.anInt4965)), true))
+            val class143 = RangedGraphicsOptionState.method1766((-85).toByte(), (this.aWorldMapLabel_4635!!.anInt4965), aClass45_4631)
+            aFont_4637 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aClass45_4632!!, (this.aWorldMapLabel_4635!!.anInt4965)), true))
         }
     }
 
@@ -33,7 +33,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
 
     fun method183(i: Int): Int {
         anInt4633++
-        if (i <= 16) this.aClass369_4635 = null
+        if (i <= 16) this.aWorldMapLabel_4635 = null
         val i_8_ = Class51.aResourceLoaderThread_897!!.method2320(106.toByte())
         var i_9_ = 100 * i_8_
         if (anInt4630 != i_8_ || i_8_ == 0) {
@@ -57,13 +57,13 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
     override fun method9(i: Byte, bool: Boolean) {
         if (i.toInt() == -49) {
             anInt4634++
-            val i_13_ = ((this.aClass369_4635!!.aScreenAnchorAlignment_4968!!.method1607(Class92.anInt1524, this.aClass369_4635!!.anInt4971, (-123).toByte())) + this.aClass369_4635!!.anInt4970)
-            val i_14_ = ((this.aClass369_4635!!.aTileRenderState_4973!!.method2679(OpenGlRenderer.anInt7666, this.aClass369_4635!!.anInt4963, i.toInt() xor 0x60b.inv())) + this.aClass369_4635!!.anInt4959)
+            val i_13_ = ((this.aWorldMapLabel_4635!!.aScreenAnchorAlignment_4968!!.method1607(Class92.anInt1524, this.aWorldMapLabel_4635!!.anInt4971, (-123).toByte())) + this.aWorldMapLabel_4635!!.anInt4970)
+            val i_14_ = ((this.aWorldMapLabel_4635!!.aTileRenderState_4973!!.method2679(OpenGlRenderer.anInt7666, this.aWorldMapLabel_4635!!.anInt4963, i.toInt() xor 0x60b.inv())) + this.aWorldMapLabel_4635!!.anInt4959)
             method178(i_13_, bool, (-84).toByte(), i_14_)
             method182(63, i_14_, i_13_, bool)
             var string = Class51.aResourceLoaderThread_897!!.method2318(i.toInt() xor 0x245b)
             if (-aLong4640 + Class62.method599(-100) > 10000L) string += " (" + Class51.aResourceLoaderThread_897!!.method2324(i + 149)!!.method525(-117) + ")"
-            aFont_4637!!.method2575(115.toByte(), (i_13_ + this.aClass369_4635!!.anInt4971 / 2), this.aClass369_4635!!.anInt4961, string, -1, (this.aClass369_4635!!.anInt4966 + 4 + (i_14_ - -(this.aClass369_4635!!.anInt4963 / 2))))
+            aFont_4637!!.method2575(115.toByte(), (i_13_ + this.aWorldMapLabel_4635!!.anInt4971 / 2), this.aWorldMapLabel_4635!!.anInt4961, string, -1, (this.aWorldMapLabel_4635!!.anInt4966 + 4 + (i_14_ - -(this.aWorldMapLabel_4635!!.anInt4963 / 2))))
         }
     }
 
@@ -71,9 +71,9 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
         try {
 
             this.aClass45_4632 = class45
-            this.aClass369_4635 = class369
+            this.aWorldMapLabel_4635 = worldMapLabel
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("gl.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_15_ != null) "{...}" else "null") + ',' + (if (class369 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("gl.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_15_ != null) "{...}" else "null") + ',' + (if (worldMapLabel != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -98,14 +98,14 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
         var anInt4641: Int = 0
 
         @JvmStatic
-        fun method179(i: Int, class348_sub49: Buffer): Class369_Sub1 {
+        fun method179(i: Int, class348_sub49: Buffer): WorldMapAreaLabel {
             anInt4629++
             val class369 = PcmStreamBuffer.method2834((-127).toByte(), class348_sub49)
             val i_3_ = class348_sub49.readInt((-126).toByte())
             val i_4_ = class348_sub49.readInt((-126).toByte())
             if (i != 16533) aClass60_4636 = null
             val i_5_ = class348_sub49.readUnsignedShort(842397944)
-            return Class369_Sub1(class369.aScreenAnchorAlignment_4968, class369.aTileRenderState_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_3_, i_4_, i_5_)
+            return WorldMapAreaLabel(class369.aScreenAnchorAlignment_4968, class369.aTileRenderState_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_3_, i_4_, i_5_)
         }
 
         @JvmStatic

@@ -1,7 +1,7 @@
 /* Class369_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-public open class Class369_Sub3(screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int) : Class369(screenAnchorAlignment, tileRenderState, i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_) {
+public open class WorldMapIconLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int) : WorldMapLabel(screenAnchorAlignment, tileRenderState, i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_) {
     @JvmField
     var anInt8595: Int = 0
     @JvmField

@@ -27,7 +27,7 @@ class MultiFieldRecord : LinkedListNode() {
         var anInt6901: Int = 0
         var anInt6906: Int = 0
         fun method3000(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
-            Class369.anInt4960 = i_2_
+            WorldMapLabel.anInt4960 = i_2_
             val i_4_ = -89 / ((i_3_ - 78) / 44)
             Class38.anInt513 = i_1_
             CameraNodeList.anInt1745 = i

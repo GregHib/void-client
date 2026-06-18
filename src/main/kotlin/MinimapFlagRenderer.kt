@@ -60,7 +60,7 @@ object MinimapFlagRenderer {
         method828(38.toByte(), i_3_, i_5_)
         ProjectileConfigUtil.anInt396 = -1
         LocalizedTextTriple.anInt3760 = -1
-        Class369_Sub1.anInt8583 = -1
+        WorldMapAreaLabel.anInt8583 = -1
         val i_6_ = 90 % ((70 - i_2_) / 33)
     }
 

@@ -898,7 +898,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FrameBufferObject.anInt4893 = 0
             OpenGlRenderer.anInt7655 = 0
             TextureCubeProvider.anInt6326 = 0
-            Class369_Sub3.anInt8598 = 0
+            WorldMapIconLabel.anInt8598 = 0
             Class377.anInt9816 = 0
             VarbitDefLoader.anInt2593 = 0
             MatrixCameraTransform.anInt5656 = 0
@@ -917,7 +917,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7728 = 0
             SoftwareSpriteRaster.anInt1621 = 0
             NativeTerrainTile.anInt8315 = 0
-            Class369.anInt4969 = 0
+            WorldMapLabel.anInt4969 = 0
             BrightnessTextureNode.anInt9217 = 0
             Class78.anInt1308 = 0
             FloatCameraTransform.anInt5734 = 0
@@ -960,7 +960,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Player.anInt10523 = 0
             Font.anInt4064 = 0
             NpcActorEntity.anInt10077 = 0
-            Class369_Sub1.anInt8581 = 0
+            WorldMapAreaLabel.anInt8581 = 0
             VarpStore.anInt5076 = 0
             MapElementDecor.anInt10354 = 0
             FlickeringEffectsOptionState.anInt5923 = 0
@@ -1074,7 +1074,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LocConfigModelBuilder.anInt4493 = 0
             FacingDirectionNode.anInt6667 = 0
             BloomGraphicsOptionState.anInt5962 = 0
-            Class369.anInt4964 = 0
+            WorldMapLabel.anInt4964 = 0
             FloatCameraTransform.anInt5692 = 0
             SineWaveTextureNode.anInt9450 = 0
             NativeRenderer.anInt8042 = 0
@@ -1231,7 +1231,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CircleDrawer.anInt2690 = 0
             MidiSequencePlayer.anInt8938 = 0
             OpenGlRenderer.anInt7695 = 0
-            Class369_Sub2.anInt8588 = 0
+            WorldMapTextLabel.anInt8588 = 0
             GrowableStringList.anInt2366 = 0
             Class45.anInt626 = 0
             OpenGlRenderer.anInt7657 = 0
@@ -1320,7 +1320,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt8037 = 0
             Buffer.anInt7145 = 0
             CubeMapMaterialPass.anInt6292 = 0
-            Class369_Sub3_Sub1.anInt10173 = 0
+            WorldMapPolygonIconLabel.anInt10173 = 0
             RangeThresholdTextureNode.anInt9110 = 0
             ProjectionCameraTransform.anInt5779 = 0
             Class51.anInt957 = 0
@@ -1924,7 +1924,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class50_Sub3.anInt5239 = 0
             Class44.anInt621 = 0
             TerrainTileGeometry.anInt3012 = 0
-            Class369_Sub3_Sub1.anInt10178 = 0
+            WorldMapPolygonIconLabel.anInt10178 = 0
             NativeTerrainTile.anInt8300 = 0
             CubeMapMaterialPass.anInt6298 = 0
             Class374.anInt4536 = 0
@@ -2809,7 +2809,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SceneTilePlaneManager.anInt232 = 0
             VarpStore.anInt5075 = 0
             Class5_Sub1.anInt8340 = 0
-            Class369_Sub3.anInt8594 = 0
+            WorldMapIconLabel.anInt8594 = 0
             SoundChannelMixer.anInt3599 = 0
             Class50_Sub1.anInt5210 = 0
             NativeIndexBuffer.anInt4700 = 0
@@ -3296,7 +3296,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MidiSequencePlayer.anInt8955 = 0
             BinaryGraphicsOptionState.anInt5957 = 0
             Class51.anInt927 = 0
-            Class369_Sub2.anInt8593 = 0
+            WorldMapTextLabel.anInt8593 = 0
             DoublyLinkedNodeList.anInt3168 = 0
             VideoAdChecker.anInt3180 = 0
             ServerConnectionInfo.anInt2150 = 0
@@ -3422,7 +3422,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SceneObjectEntity.anInt8730 = 0
             SizeBoundedSoftCache.anInt2314 = 0
             GlArrayBufferObject.anInt4714 = 0
-            Class369.anInt4967 = 0
+            WorldMapLabel.anInt4967 = 0
             GrowableStringList.anInt2359 = 0
             FontMetaRef.anInt4322 = 0
             FontDefinition.anInt1981 = 0
@@ -3486,7 +3486,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7901 = 0
             Class55.anInt982 = 0
             RenderListTextureNode.anInt9487 = 0
-            Class369_Sub2.anInt8586 = 0
+            WorldMapTextLabel.anInt8586 = 0
             GlslEnvMaterialPass.anInt6275 = 0
             anInt5796 = 0
             FlickeringEffectsOptionState.anInt5920 = 0
@@ -3494,7 +3494,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WorldMapScene.anInt3121 = 0
             Class55.anInt997 = 0
             AnimatedModelRenderer.anInt8395 = 0
-            Class369_Sub1.anInt8579 = 0
+            WorldMapAreaLabel.anInt8579 = 0
             FlickeringEffectsOptionState.anInt5922 = 0
             OutputStream_Sub2.anInt102 = 0
             AnimatedModelRenderer.anInt8399 = 0
@@ -3930,7 +3930,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             DoublyLinkedNodeList.anInt3161 = 0
             AwtKeyboardListener.anInt6540 = 0
             MapElementDefinitionCache.anInt3978 = 0
-            Class369_Sub3_Sub1.anInt10175 = 0
+            WorldMapPolygonIconLabel.anInt10175 = 0
             SkeletalAnimFrameLoader.anInt468 = 0
             TextureTileRenderer.anInt6834 = 0
             NativeRenderer.anInt8048 = 0
@@ -3994,7 +3994,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class56.anInt1020 = 0
             IndexedFileCache.anInt1936 = 0
             VoronoiNoiseTextureNode.anInt9127 = 0
-            Class369_Sub3_Sub1.anInt10176 = 0
+            WorldMapPolygonIconLabel.anInt10176 = 0
             NativeTerrainTile.anInt8316 = 0
             LoadingBarRenderer.anInt5044 = 0
             SingletonMarker.anInt2599 = 0
@@ -4175,7 +4175,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             }
 
             method773(true)
-            Class369_Sub3_Sub1.aBoolean10174 = true
+            WorldMapPolygonIconLabel.aBoolean10174 = true
             HslPaletteState.aShortArray4172 = ShortArray(256)
             LoadingScreenImageNode.aShortArray9502 = HslPaletteState.aShortArray4172
             NamedIdEntry.aShortArray6889 = LoadingScreenImageNode.aShortArray9502

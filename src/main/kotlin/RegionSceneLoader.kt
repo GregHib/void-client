@@ -1,6 +1,6 @@
 import LightDetailOptionState.Companion.method1802
 import WaterMaterialPass.Companion.method2148
-import Class369_Sub1.Companion.method3570
+import WorldMapAreaLabel.Companion.method3570
 import java.io.IOException
 
 /* Class289 - Decompiled by JODE
@@ -71,7 +71,7 @@ object RegionSceneLoader {
         anInt3696++
         if (i != -1) return -42
         val string = MenuActionNode.method2812(i + -43, class348_sub42_sub13!!)
-        return Class369.aFontDefinition_4962!!.method1186(string, TileRenderState.aAbstractModelRendererArray4234, false)
+        return WorldMapLabel.aFontDefinition_4962!!.method1186(string, TileRenderState.aAbstractModelRendererArray4234, false)
     }
 
     init {
