@@ -3,7 +3,7 @@ import ParticleTileShape.Companion.method2732
 /* Class40 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class40 internal constructor() {
+class Bzip2DecoderState internal constructor() {
     @JvmField
     var anInt522: Int = 0
     @JvmField

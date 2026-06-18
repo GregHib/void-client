@@ -255,7 +255,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SpriteDefinition.anInt7073 = 0
             SlotBinding.anInt3395 = 0
             Class69.anInt1192 = 0
-            Class40.anInt547 = 0
+            Bzip2DecoderState.anInt547 = 0
             MaterialTypeMarker.anInt6516 = 0
             Class64_Sub2.anInt5484 = 0
             ItemDefinitionLoader.anInt2184 = 0
@@ -2072,7 +2072,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             BlankTextureNode.anInt9256 = 0
             NativeRenderer.anInt7944 = 0
             AbstractCameraTransform.anInt1596 = 0
-            Class40.anInt551 = 0
+            Bzip2DecoderState.anInt551 = 0
             LocDefinitionCache.anInt3445 = 0
             Class66.anInt1171 = 0
             ProjectedGroundDecor.anInt10235 = 0
@@ -2831,7 +2831,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OutputStream_Sub2.anInt107 = 0
             TerrainShadowBuilderGl2.anInt6939 = 0
             AudioResampler.anInt2171 = 0
-            Class40.anInt542 = 0
+            Bzip2DecoderState.anInt542 = 0
             IntHashSet.anInt3964 = 0
             KaraokeSubtitleStream.anInt9060 = 0
             OpenGlRenderer.anInt7652 = 0

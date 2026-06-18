@@ -67,8 +67,8 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDeco
                         anInterface18_Impl3_1556!!.method66(false, false, i xor 0x5582.inv())
                     } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (Class367_Sub11.aByteArray7394), (ClampTextureNode.aTextureFormatInfo_9471))
                 } else {
-                    if (Class40.anIntArray543 == null) Class40.anIntArray543 = IntArray(16384)
-                    val is_18_ = Class40.anIntArray543!!
+                    if (Bzip2DecoderState.anIntArray543 == null) Bzip2DecoderState.anIntArray543 = IntArray(16384)
+                    val is_18_ = Bzip2DecoderState.anIntArray543!!
                     for (i_19_ in -128..-1) {
                         for (i_20_ in -128..-1) {
                             if (`is`[i_10_].toInt() == 0) {
@@ -84,9 +84,9 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDeco
                         i_10_ += -128 + aVideoStreamDecoder_1560.anInt4113
                     }
                     if (anInterface18_Impl3_1556 == null) {
-                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3839(128, 128, -15137, false, Class40.anIntArray543)
+                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3839(128, 128, -15137, false, Bzip2DecoderState.anIntArray543)
                         anInterface18_Impl3_1556!!.method66(false, false, i + 38451)
-                    } else anInterface18_Impl3_1556!!.method68(128, i + 35572, (Class40.anIntArray543), 0, 0, 128, 0, 128)
+                    } else anInterface18_Impl3_1556!!.method68(128, i + 35572, (Bzip2DecoderState.anIntArray543), 0, 0, 128, 0, 128)
                 }
             }
         }

@@ -442,7 +442,7 @@ import GlRenderDevice.Companion.method3968
 import WidgetTextConfig.Companion.method363
 import GlShaderObjectHandle.Companion.method367
 import NpcModelTransform.Companion.method177
-import Class40.Companion.method370
+import Bzip2DecoderState.Companion.method370
 import Class43.Companion.method380
 import Class44.method387
 import Class45.Companion.method390
@@ -2132,7 +2132,7 @@ class Client : GameAppletFrame() {
                             if (class46 == CalendarUtil.aClass46_4130) {
                                 ScrollingWidgetComponentNode.aBoolean8386 = true
                                 BoxBlurTextureNode.anInt9461 = i_43_
-                                Class40.anInt558 = i_44_
+                                Bzip2DecoderState.anInt558 = i_44_
                             }
                             if (class46.aBoolean682 || class46.anInt765 != 0) {
                                 if (bool && Class98.anInt1565 != 0 && (class46.anObjectArray803 != null)) {

@@ -1,6 +1,6 @@
 import SoftwareSpriteRaster.Companion.method960
 import SpriteRgbTextureNode.Companion.method3093
-import Class40.Companion.method368
+import Bzip2DecoderState.Companion.method368
 import kotlin.math.max
 
 /* Class151 - Decompiled by JODE
