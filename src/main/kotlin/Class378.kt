@@ -591,7 +591,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
     }
 
     override fun method3889(bool: Boolean, i: Int): Interface5_Impl1 {
-        return Class366(this, bool)
+        return D3dVertexBuffer(this, bool)
     }
 
     override fun method3921(i: Int) {
@@ -747,8 +747,8 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3925(i: Int, interface5_impl1: Interface5_Impl1?, i_89_: Int) {
         val i_90_ = -112 % ((i - -26) / 39)
-        val class366 = interface5_impl1 as Class366
-        this.anIDirect3DDevice9810!!.SetStreamSource(i_89_, class366.anIDirect3DVertexBuffer8511, 0, class366.method3519(3545))
+        val d3dVertexBuffer = interface5_impl1 as D3dVertexBuffer
+        this.anIDirect3DDevice9810!!.SetStreamSource(i_89_, d3dVertexBuffer.anIDirect3DVertexBuffer8511, 0, d3dVertexBuffer.method3519(3545))
     }
 
     override fun ya() {

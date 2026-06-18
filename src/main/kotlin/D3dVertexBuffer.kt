@@ -3,7 +3,10 @@ import jaclib.memory.Source
 import jagdx.IDirect3DVertexBuffer
 import jagdx.ue.a
 
-class Class366 internal constructor(private val aClass378_8512: Class378, private val aBoolean8509: Boolean) : Interface5_Impl1 {
+/*
+ * Class366
+ */
+class D3dVertexBuffer internal constructor(private val aClass378_8512: Class378, private val aBoolean8509: Boolean) : Interface5_Impl1 {
     private var anInt8508 = 0
     private var aBoolean8510 = false
     var anIDirect3DVertexBuffer8511: IDirect3DVertexBuffer? = null
