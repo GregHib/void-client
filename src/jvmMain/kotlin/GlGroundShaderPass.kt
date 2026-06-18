@@ -116,7 +116,7 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
                 } else aBoolean7391 = false
             } else aBoolean7391 = false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("or.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("or.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -181,7 +181,7 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
                 method2260(i_9_, i_8_, l, 0, bool, js5Archive, 126.toByte(), i_7_)
                 val i_10_ = -35 / ((-41 - i) / 38)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("or.Q(" + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + l + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("or.Q(" + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + l + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
             }
         }
 

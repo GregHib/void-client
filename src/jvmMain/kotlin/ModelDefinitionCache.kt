@@ -67,7 +67,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
             aJs5Archive_2866 = js5Archive
             aJs5Archive_2866!!.method407(0, 46)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_17_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("sb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_17_ != null) "{...}" else "null") + ')'))
         }
     }
 

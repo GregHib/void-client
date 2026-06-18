@@ -20,7 +20,7 @@ class GlShaderProgramHandle internal constructor(var_ha_Sub2: OpenGlRenderer?, l
             aHa_Sub2_4173 = var_ha_Sub2
             this.aLong4178 = l
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("dw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + l + ',' + (if (managedGlResources != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("dw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + l + ',' + (if (managedGlResources != null) "{...}" else "null") + ')'))
         }
     }
 

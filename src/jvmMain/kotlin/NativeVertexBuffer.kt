@@ -32,7 +32,7 @@ class NativeVertexBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i: I
         try {
             anInt4827 = i
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wv.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wv.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ')'))
         }
     }
 

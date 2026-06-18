@@ -71,7 +71,7 @@ class GlEnvMappedWaterPass internal constructor(glRenderDevice: GlRenderDevice, 
                 aBoolean7376 = (aNativeBufferHandle_7369 != null && aNormalMapGenerator_7375!!.method2041(120.toByte()))
             } else aBoolean7376 = false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ko.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ko.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
         }
     }
 

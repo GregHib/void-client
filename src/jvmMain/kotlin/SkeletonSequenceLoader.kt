@@ -30,7 +30,7 @@ object SkeletonSequenceLoader {
             }
             return smoothingBuffer
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wt.A(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wt.A(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i + ')'))
         }
     }
 

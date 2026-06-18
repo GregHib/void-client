@@ -1,4 +1,3 @@
-import SoundBankPatch.Companion.method2929
 import GameClock.method599
 import jaggl.OpenGL.Companion.glCompileShaderARB
 import jaggl.OpenGL.Companion.glCreateShaderObjectARB
@@ -95,7 +94,7 @@ class TimedTileQueueEntry internal constructor(i: Int, i_2_: Int) : HashLinkedLi
                 }
                 return ManagedGlResource(var_ha_Sub2, l, i)
             } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, ("et.G(" + i + ',' + i_0_ + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("et.G(" + i + ',' + i_0_ + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
             }
         }
     }

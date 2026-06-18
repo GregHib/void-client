@@ -79,7 +79,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
             this.aJs5Archive_2087 = js5Archive_10_
             aJs5Archive_2084!!.method407(0, 36)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("on.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_10_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("on.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_10_ != null) "{...}" else "null") + ')'))
         }
     }
 

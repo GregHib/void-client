@@ -124,7 +124,7 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
                 val i_8_ = aJs5Archive_3585.method414(-1) + -1
                 aJs5Archive_3585.method407(0, i_8_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("vda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_7_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("vda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_7_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

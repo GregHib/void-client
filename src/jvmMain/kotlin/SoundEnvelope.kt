@@ -265,7 +265,7 @@ class SoundEnvelope {
             if (this.anInt2734 != 31) method1542(32402)
             method1541(i_45_, var_renderer!!, i_44_, i_43_, 3, i_52_, i_46_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ro.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ro.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

@@ -29,7 +29,7 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
         try {
             anInt4708 = i
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("jt.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_2_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("jt.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_2_ + ',' + bool + ')'))
         }
     }
 
@@ -37,7 +37,7 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
         try {
             anInt4708 = i
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("jt.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (buffer != null) "{...}" else "null") + ',' + i_3_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("jt.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (buffer != null) "{...}" else "null") + ',' + i_3_ + ',' + bool + ')'))
         }
     }
 

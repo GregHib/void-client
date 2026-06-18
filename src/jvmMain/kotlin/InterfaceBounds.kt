@@ -141,7 +141,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 KeyEventNode.Companion.aJs5Archive_4770!!.method412(78.toByte())
                 GraphicsOptionState.aJs5Archive_3146!!.method412(88.toByte())
                 FixedFunctionWaterPass.aJs5Archive_7362!!.method412((-109).toByte())
-                NodeDeque.aJs5Archive_3323!!.method412(112.toByte())
+                NodeDequeStatics.aJs5Archive_3323!!.method412(112.toByte())
                 Crc64Hashable.aJs5Archive_4984!!.method412(85.toByte())
                 SpriteLoadValidator.aJs5Archive_4796!!.method412(93.toByte())
                 HitsplatDefinition.aJs5Archive_2015!!.method412((-122).toByte())

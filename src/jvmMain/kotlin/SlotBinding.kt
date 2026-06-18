@@ -138,7 +138,7 @@ class SlotBinding private constructor(private val aCollisionFlagQuery_3392: Coll
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("up.C(" + i + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("up.C(" + i + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
             }
         }
 

@@ -183,7 +183,7 @@ class MapRegionLoaderThread : Runnable {
                     TextureMipDescriptor.method3461(0, objects, -1 + ls!!.size, ls, 9455)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("eaa.E(" + (if (objects != null) "{...}" else "null") + ',' + (if (ls != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("eaa.E(" + (if (objects != null) "{...}" else "null") + ',' + (if (ls != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

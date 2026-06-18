@@ -54,7 +54,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
             if (i_1_ > -106) this.aBoolean10345 = false
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lf.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("lf.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
         }
     }
 
@@ -112,7 +112,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                     aClass318_Sub10_10341!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("lf.BA(" + (if (abstractModel != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("lf.BA(" + (if (abstractModel != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -278,7 +278,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         var_renderer.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0)
                         var_renderer.method3628(-152 + i_16_, i_17_, 304, 34, PerlinNoiseTextureNode.aColorArray9163!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
                         var_renderer.aa(i_16_ - 150, 2 + i_17_, LinkedListNodeStatics.anInt4290 * 3, 30, GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
-                        NodeDeque.aFont_3326!!.method2575((-116).toByte(), i_16_, MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884]!!.getRGB(), LocalizedText.aLocalizedText_3501!!.method2063(AnimationFrameDefinition.anInt6967, i + 551), -1, i_15_ + i_17_)
+                        NodeDequeStatics.aFont_3326!!.method2575((-116).toByte(), i_16_, MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884]!!.getRGB(), LocalizedText.aLocalizedText_3501!!.method2063(AnimationFrameDefinition.anInt6967, i + 551), -1, i_15_ + i_17_)
                     } else {
                         val i_18_ = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / MapRegionLoader.aFloat1247).toInt())
                         val i_19_ = ((i_13_.toFloat() / MapRegionLoader.aFloat1247).toInt() + DebugOverlayRenderer.anInt3170)
@@ -313,7 +313,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         i_23_ -= 15
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("lf.L(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_14_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("lf.L(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_14_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

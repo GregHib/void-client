@@ -1,6 +1,5 @@
 import LinkedListIterator.Companion.method1241
 import BooleanGraphicsOptionState.Companion.method1722
-import SoundBankPatch.Companion.method2929
 import NpcReference.Companion.method2959
 import GlShadowRenderPass.Companion.method3553
 import GameClock.method599
@@ -51,7 +50,7 @@ class OutgoingPacketNode : LinkedListNode() {
                         println("Emitters: " + ObjectSpawnDecoder.anInt1803 + " Particles: " + SkyboxGradient.anInt3936 + ". Time taken: " + (-l_1_ + method599(-112)) + "ms")
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw method2929(runtimeexception, ("wm.A(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + l + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("wm.A(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + l + ')'))
                 }
                 break
             } while (false)

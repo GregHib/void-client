@@ -1,4 +1,3 @@
-import SoundBankPatch.Companion.method2929
 
 /* Class358 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -16,7 +15,7 @@ class ParticleGeometry internal constructor(`is`: IntArray?, is_1_: IntArray?, i
             this.anIntArray4415 = is_1_
             this.anIntArray4416 = `is`
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("ew.<init>(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + (if (is_2_ != null) "{...}" else "null") + ',' + (if (fs != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ew.<init>(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + (if (is_2_ != null) "{...}" else "null") + ',' + (if (fs != null) "{...}" else "null") + ')'))
         }
     }
 

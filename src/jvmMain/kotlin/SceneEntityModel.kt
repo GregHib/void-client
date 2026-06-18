@@ -62,7 +62,7 @@ class SceneEntityModel : SceneLinkedListNode() {
                 }
                 return IndexedSprite(var_ha_Sub3, i_2_, i, is_7_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("jda.A(" + i + ',' + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i_2_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("jda.A(" + i + ',' + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i_2_ + ')'))
             }
         }
 

@@ -44,7 +44,7 @@ class MaterialTextureCache(var_ha_Sub3: NativeRenderer?, var_renderConfig: Rende
             aHa_Sub3_4526 = var_ha_Sub3
             aRenderConfig4528 = var_renderConfig
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fw.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fw.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
         }
     }
 

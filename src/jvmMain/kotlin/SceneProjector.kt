@@ -25,7 +25,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
             this.aString2985 = string
             this.anInt2987 = i
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sj.<init>(" + (if (string != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("sj.<init>(" + (if (string != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -318,7 +318,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                         anInt2986 = -82
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(
+                    throw TextureLoadException.method2929(
                         runtimeexception,
                         ("sj.D(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (is_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + i_6_ + ',' + i_7_ + ',' + (if (is_8_ != null) "{...}" else "null") + ',' + (if (is_9_ != null) "{...}" else "null") + ',' + i_10_ + ',' + (if (is_11_ != null) "{...}" else "null") + ',' + i_12_ + ',' + bool_13_ + ',' + i_14_ + ')')
                     )
@@ -546,7 +546,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                     i_73_++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("sj.A(" + i + ',' + (if (class318_sub1_sub3_sub3 != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("sj.A(" + i + ',' + (if (class318_sub1_sub3_sub3 != null) "{...}" else "null") + ')'))
             }
         }
 

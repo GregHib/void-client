@@ -57,7 +57,7 @@ class CubemapTexture2dSource internal constructor(private val aHa_Sub2_8693: Ope
                     if (i_6_ >= 54) break
                     method2260(36, 99, 61L, 90, false, null, 126.toByte(), -67)
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("dq.E(" + i + ',' + i_4_ + ',' + l + ',' + i_5_ + ',' + bool + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("dq.E(" + i + ',' + i_4_ + ',' + l + ',' + i_5_ + ',' + bool + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ')'))
                 }
                 break
             } while (false)

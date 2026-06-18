@@ -17,7 +17,7 @@ class GlShaderObjectHandle internal constructor(glRenderDevice: GlRenderDevice?,
             this.aLong517 = l
             aGlRenderDevice_519 = glRenderDevice
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ifa.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ifa.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
         }
     }
 
@@ -44,7 +44,7 @@ class GlShaderObjectHandle internal constructor(glRenderDevice: GlRenderDevice?,
                     if (i <= -97) break
                     method367(-67)
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("ifa.B(" + (if (objects != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("ifa.B(" + (if (objects != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

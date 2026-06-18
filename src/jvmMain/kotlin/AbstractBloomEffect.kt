@@ -83,7 +83,7 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
                 if (bool != true) aByteArray6624 = null
                 return SoftwareRenderer(canvas!!, var_renderConfig, i_4_, i)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("fba.M(" + bool + ',' + i + ',' + i_4_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("fba.M(" + bool + ',' + i + ',' + i_4_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
             }
         }
 

@@ -83,7 +83,7 @@ class StreamingResourceRequest : AsyncResourceRequest() {
                 val i_7_ = WaterMaterialPass.aCalendar6221!!.get(13)
                 return (JagGlToolkitFactory.aStringArray1531!![i_1_ - 1] + ", " + i_2_ / 10 + i_2_ % 10 + "-" + CalendarUtil.aStringArray4129!![i_3_] + "-" + i_4_ + " " + i_5_ / 10 + i_5_ % 10 + ":" + i_6_ / 10 + i_6_ % 10 + ":" + i_7_ / 10 + i_7_ % 10 + " GMT")
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "mba.I(" + l + ',' + i + ')')
+                throw TextureLoadException.method2929(runtimeexception, "mba.I(" + l + ',' + i + ')')
             }
         }
 

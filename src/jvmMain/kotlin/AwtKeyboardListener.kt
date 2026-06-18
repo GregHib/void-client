@@ -215,7 +215,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
         @JvmStatic
         fun method2703(i: Int, i_6_: Int, i_7_: Int, i_8_: Byte) {
             anInt6536++
-            val class190 = NodeDeque.aModelLightingConfigArrayArray3335!![i_6_]!![i_7_]
+            val class190 = NodeDequeStatics.aModelLightingConfigArrayArray3335!![i_6_]!![i_7_]
             if (i_8_.toInt() == -13) ServerConnectionInfo.method1260(false, i, (if (class190 == null) LocalizedText.aModelLightingConfig_3547 else class190))
         }
 

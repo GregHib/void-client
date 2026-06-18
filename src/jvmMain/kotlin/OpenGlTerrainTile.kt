@@ -104,7 +104,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             }
             U(i, i_5_, is_20_, is_26_, is_21_, is_27_, is_22_, is_23_, is_24_, is_25_, i_16_, i_17_, i_18_, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw TextureLoadException.method2929(
                 runtimeexception,
                 ("ed.E(" + i + ',' + i_5_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_6_ != null) "{...}" else "null") + ',' + (if (is_7_ != null) "{...}" else "null") + ',' + (if (is_8_ != null) "{...}" else "null") + ',' + (if (is_9_ != null) "{...}" else "null") + ',' + (if (is_10_ != null) "{...}" else "null") + ',' + (if (is_11_ != null) "{...}" else "null") + ',' + (if (is_12_ != null) "{...}" else "null") + ',' + (if (is_13_ != null) "{...}" else "null") + ',' + (if (is_14_ != null) "{...}" else "null") + ',' + (if (is_15_ != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ')')
             )
@@ -590,7 +590,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             anInt8271++
             aNodeDeque_8256.method1999(TerrainShadowBuilderGl2((this.aHa_Sub2_8272), this, class348_sub1, `is`), -20180)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ed.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ed.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -631,7 +631,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             if (is_180_.size > anInt8280) anInt8280 = is_180_.size
             anInt8284 += is_180_.size
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw TextureLoadException.method2929(
                 runtimeexception,
                 ("ed.U(" + i + ',' + i_176_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_177_ != null) "{...}" else "null") + ',' + (if (is_178_ != null) "{...}" else "null") + ',' + (if (is_179_ != null) "{...}" else "null") + ',' + (if (is_180_ != null) "{...}" else "null") + ',' + (if (is_181_ != null) "{...}" else "null") + ',' + (if (is_182_ != null) "{...}" else "null") + ',' + (if (is_183_ != null) "{...}" else "null") + ',' + i_184_ + ',' + i_185_ + ',' + i_186_ + ',' + bool + ')')
             )
@@ -753,7 +753,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 if ((0x10 and this.anInt8235) == 0) break
                 aSoftwareSpriteRaster_8266 = SoftwareSpriteRaster(this.aHa_Sub2_8272, this)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ed.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_133_ + ',' + i_134_ + ',' + i_135_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_136_ != null) "{...}" else "null") + ',' + i_137_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ed.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_133_ + ',' + i_134_ + ',' + i_135_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_136_ != null) "{...}" else "null") + ',' + i_137_ + ')'))
             }
             break
         } while (false)

@@ -71,7 +71,7 @@ class FixedFunctionMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer
                     if (i_0_ < -86) break
                     aStringArray6205 = null
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("di.G(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (string_2_ != null) "{...}" else "null") + ',' + (if (string_3_ != null) "{...}" else "null") + ',' + (if (string_4_ != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("di.G(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (string_2_ != null) "{...}" else "null") + ',' + (if (string_3_ != null) "{...}" else "null") + ',' + (if (string_4_ != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

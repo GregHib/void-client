@@ -65,7 +65,7 @@ class SpriteArchiveLoader internal constructor(js5Archive: Js5Archive?, js5Archi
             aJs5Archive_377 = js5Archive_9_
             aJs5Archive_379 = js5Archive
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("hs.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_9_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("hs.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_9_ != null) "{...}" else "null") + ')'))
         }
     }
 

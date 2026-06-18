@@ -21,7 +21,7 @@ class ManagedGlResource internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Lo
             aHa_Sub2_3153 = var_ha_Sub2
             this.aLong3156 = l
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("tba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
         }
     }
 

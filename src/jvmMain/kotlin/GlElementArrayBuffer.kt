@@ -42,7 +42,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
         try {
             anInt4837 = i
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("kaa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_8_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("kaa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_8_ + ',' + bool + ')'))
         }
     }
 
@@ -101,7 +101,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
             if (i_7_ < -77) {
                 BloomGraphicsOptionState.anInt5969 = 2
                 anInt4834++
-                TextureLoadException.anInt4596 = i
+                TextureLoadExceptionStatics.anInt4596 = i
                 var l = 0L
                 if (NullOggStream.aString9043 == null) {
                     GlRectangleTexture.method254(35, (-87).toByte())

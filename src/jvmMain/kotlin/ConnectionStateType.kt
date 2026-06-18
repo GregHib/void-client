@@ -42,7 +42,7 @@ class ConnectionStateType private constructor(i: Int, localizedText: LocalizedTe
             this.aBoolean1016 = bool_8_
             this.aBoolean1013 = bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("jj.<init>(" + i + ',' + (if (localizedText != null) "{...}" else "null") + ',' + (if (localizedText_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + bool + ',' + bool_8_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("jj.<init>(" + i + ',' + (if (localizedText != null) "{...}" else "null") + ',' + (if (localizedText_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + bool + ',' + bool_8_ + ')'))
         }
     }
 
@@ -141,7 +141,7 @@ class ConnectionStateType private constructor(i: Int, localizedText: LocalizedTe
                 frame!!.setVisible(bool)
                 frame.dispose()
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("jj.D(" + (if (frame != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("jj.D(" + (if (frame != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
 

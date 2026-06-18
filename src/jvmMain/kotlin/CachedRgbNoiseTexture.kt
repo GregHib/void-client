@@ -131,7 +131,7 @@ class CachedRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
                 }
                 return ParticleGeometry(is_1_, is_2_, is_3_, fs)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("dha.B(" + i + ',' + i_0_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("dha.B(" + i + ',' + i_0_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
             }
         }
 

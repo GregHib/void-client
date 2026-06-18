@@ -1,5 +1,4 @@
 import SpotAnimDefCache.method1943
-import NodeDeque.Companion.method1992
 import PositionedSceneNode.Companion.method2519
 import java.awt.Image
 
@@ -74,7 +73,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("eca.A(" + (if (systemFontGlyphs != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + (if (structConfig != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("eca.A(" + (if (systemFontGlyphs != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + (if (structConfig != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -112,7 +111,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
                             }
                             val class318_sub1_sub1 = class357.aClass318_Sub1_Sub1_4402
                             if (class318_sub1_sub1 != null && class318_sub1_sub1.method2388(-85)) {
-                                method1992(class318_sub1_sub1, i, i_8_, i_9_)
+                                NodeDequeStatics.method1992(class318_sub1_sub1, i, i_8_, i_9_)
                                 class318_sub1_sub1.method2392(true)
                             }
                         }

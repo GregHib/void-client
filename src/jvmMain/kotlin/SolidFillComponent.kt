@@ -61,7 +61,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
 
         @JvmStatic
         fun method192(modelLightingConfig: ModelLightingConfig?, i: Int, i_1_: Int, i_2_: Int) {
-            NodeDeque.aModelLightingConfigArrayArray3335!![i_1_]!![i_2_] = modelLightingConfig
+            NodeDequeStatics.aModelLightingConfigArrayArray3335!![i_1_]!![i_2_] = modelLightingConfig
             anInt8362++
             if (i != 10000) anInt8363 = 32
         }

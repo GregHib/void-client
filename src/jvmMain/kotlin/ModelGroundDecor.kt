@@ -67,7 +67,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
                 if (!aBoolean10019) break
                 this.aAbstractModel_10028 = this.aAbstractModel_10028!!.method614(0.toByte(), i_11_, false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("dm.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + bool_10_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("dm.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + bool_10_ + ')'))
             }
             break
         } while (false)
@@ -145,7 +145,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
                 if (i_17_ < -106) break
                 method2392(false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("dm.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("dm.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ')'))
             }
             break
         } while (false)

@@ -1,5 +1,4 @@
 import ConfigFlagUtil.Companion.method1915
-import SoundBankPatch.Companion.method2929
 
 /* Class354 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -50,7 +49,7 @@ class TextureCache internal constructor(var_ha_Sub2: OpenGlRenderer?, var_render
             aHa_Sub2_4355 = var_ha_Sub2
             aRenderConfig4359 = var_renderConfig
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("eo.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("eo.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
         }
     }
 

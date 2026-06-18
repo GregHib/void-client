@@ -294,7 +294,7 @@ class InputStream_Sub2 : InputStream() {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("sfa.A(" + (if (rgbColorPalette != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("sfa.A(" + (if (rgbColorPalette != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

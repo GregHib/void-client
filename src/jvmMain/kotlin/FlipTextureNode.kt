@@ -68,7 +68,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                 }
                 break
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("jia.F(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + i_72_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("jia.F(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + i_72_ + ')'))
             }
         } while (false)
     }
@@ -530,7 +530,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                 }
             } catch (runtimeexception: RuntimeException) {
                 runtimeexception.printStackTrace()
-                throw SoundBankPatch.method2929(runtimeexception, ("jia.B(" + i + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ',' + bool_15_ + ',' + (if (widgetComponents != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("jia.B(" + i + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ',' + bool_15_ + ',' + (if (widgetComponents != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ')'))
             }
         }
 

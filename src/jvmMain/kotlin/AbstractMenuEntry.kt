@@ -154,7 +154,7 @@ abstract class AbstractMenuEntry {
                     IntKeyNode.aNodeDeque_6978!!.method1999(class348_sub48, -20180)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("mr.E(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i_5_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("mr.E(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i_5_ + ')'))
             }
         }
 

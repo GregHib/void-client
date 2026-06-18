@@ -61,7 +61,7 @@ class CompletedResourceRequest : AsyncResourceRequest() {
                 linkedListNode.aLinkedListNode_4295!!.aLinkedListNode_4294 = linkedListNode
                 linkedListNode.aLinkedListNode_4294!!.aLinkedListNode_4295 = linkedListNode
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qh.K(" + i + ',' + (if (linkedListNode != null) "{...}" else "null") + ',' + (if (linkedListNode_0_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("qh.K(" + i + ',' + (if (linkedListNode != null) "{...}" else "null") + ',' + (if (linkedListNode_0_ != null) "{...}" else "null") + ')'))
             }
         }
     }

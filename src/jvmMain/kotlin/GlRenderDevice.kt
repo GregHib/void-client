@@ -199,7 +199,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9875++
             return FrameStatsReset(directionPaths)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.KD(" + i + ',' + (if (directionPaths != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.KD(" + i + ',' + (if (directionPaths != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -223,7 +223,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 if (!anOpenGL9856!!.setSurface(var_long)) throw RuntimeException()
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.UB(" + (if (`object` != null) "{...}" else "null") + ',' + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.UB(" + (if (`object` != null) "{...}" else "null") + ',' + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -241,7 +241,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 else glTexEnvi(8960, i + 34192, if (!bool_3_) 768 else 769)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.DD(" + bool + ',' + bool_2_ + ',' + i + ',' + (if (trigLookupTables != null) "{...}" else "null") + ',' + bool_3_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.DD(" + bool + ',' + bool_2_ + ',' + i + ',' + (if (trigLookupTables != null) "{...}" else "null") + ',' + bool_3_ + ')'))
         }
     }
 
@@ -251,7 +251,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val i_4_ = -21 / ((85 - i) / 37)
             return true
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.FB(" + (if (movementDirection != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.FB(" + (if (movementDirection != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -277,7 +277,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             linkedListNode.aLong4291 = l
             if (i == 34192) aNodeDeque_9905!!.method1999(linkedListNode, i xor 0xcb43.inv())
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "bga.N(" + l + ',' + i + ')')
+            throw TextureLoadException.method2929(runtimeexception, "bga.N(" + l + ',' + i + ')')
         }
     }
 
@@ -298,7 +298,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9832++
             return Gl3dTexture(this, textureFormatInfo, i_6_, i_7_, i, `is`)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.ND(" + i + ',' + i_6_ + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + bool + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.ND(" + i + ',' + i_6_ + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + bool + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -317,12 +317,12 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     }
 
     override fun method3928(i: Int) {
-        TextureLoadException.aFloatArray4602!![0] = this.aFloat8180 * this.aFloat8093
+        TextureLoadExceptionStatics.aFloatArray4602!![0] = this.aFloat8180 * this.aFloat8093
         anInt9864++
-        TextureLoadException.aFloatArray4602!![2] = this.aFloat8093 * this.aFloat8168
-        TextureLoadException.aFloatArray4602!![1] = this.aFloat8087 * this.aFloat8093
-        TextureLoadException.aFloatArray4602!![3] = 1.0f
-        glLightModelfv(2899, TextureLoadException.aFloatArray4602, i)
+        TextureLoadExceptionStatics.aFloatArray4602!![2] = this.aFloat8093 * this.aFloat8168
+        TextureLoadExceptionStatics.aFloatArray4602!![1] = this.aFloat8087 * this.aFloat8093
+        TextureLoadExceptionStatics.aFloatArray4602!![3] = 1.0f
+        glLightModelfv(2899, TextureLoadExceptionStatics.aFloatArray4602, i)
     }
 
     override fun method3843(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?, i_14_: Int, bool: Boolean): Renderable2dTexture {
@@ -337,7 +337,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             }
             return Gl2dTexture(this, textureFormatInfo, i_12_, i, bool, `is`, i_11_, i_13_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.B(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_14_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.B(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_14_ + ',' + bool + ')'))
         }
     }
 
@@ -364,7 +364,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.CD(" + (if (cameraNodeList != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.CD(" + (if (cameraNodeList != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -390,7 +390,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val i_18_ = 86 / ((i - -26) / 39)
             aClass285_Sub1Array9907!![i_17_] = (interface5_impl1 as GlVertexBufferArb?)!!
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.WB(" + i + ',' + (if (interface5_impl1 != null) "{...}" else "null") + ',' + i_17_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.WB(" + i + ',' + (if (interface5_impl1 != null) "{...}" else "null") + ',' + i_17_ + ')'))
         }
     }
 
@@ -467,7 +467,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9897++
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.NB(" + (if (cameraMarker != null) "{...}" else "null") + ',' + (if (marker != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.NB(" + (if (cameraMarker != null) "{...}" else "null") + ',' + (if (marker != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -479,7 +479,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             if (l == -1L) throw RuntimeException()
             return l
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.MC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.MC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -498,7 +498,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             if (f < 0.5f) return circleRasterizer
             return circleRasterizer_24_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.SD(" + (if (circleRasterizer != null) "{...}" else "null") + ',' + (if (circleRasterizer_24_ != null) "{...}" else "null") + ',' + f + ',' + (if (circleRasterizer_25_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.SD(" + (if (circleRasterizer != null) "{...}" else "null") + ',' + (if (circleRasterizer_24_ != null) "{...}" else "null") + ',' + f + ',' + (if (circleRasterizer_25_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -512,18 +512,18 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     }
 
     override fun method3842(bool: Boolean) {
-        TextureLoadException.aFloatArray4602!![2] = this.aFloat8168 * this.aFloat8174
-        TextureLoadException.aFloatArray4602!![3] = 1.0f
-        TextureLoadException.aFloatArray4602!![0] = this.aFloat8180 * this.aFloat8174
+        TextureLoadExceptionStatics.aFloatArray4602!![2] = this.aFloat8168 * this.aFloat8174
+        TextureLoadExceptionStatics.aFloatArray4602!![3] = 1.0f
+        TextureLoadExceptionStatics.aFloatArray4602!![0] = this.aFloat8180 * this.aFloat8174
         anInt9825++
-        TextureLoadException.aFloatArray4602!![1] = this.aFloat8087 * this.aFloat8174
-        glLightfv(16384, 4609, TextureLoadException.aFloatArray4602, 0)
-        TextureLoadException.aFloatArray4602!![0] = this.aFloat8180 * -this.aFloat8186
-        TextureLoadException.aFloatArray4602!![2] = -this.aFloat8186 * this.aFloat8168
+        TextureLoadExceptionStatics.aFloatArray4602!![1] = this.aFloat8087 * this.aFloat8174
+        glLightfv(16384, 4609, TextureLoadExceptionStatics.aFloatArray4602, 0)
+        TextureLoadExceptionStatics.aFloatArray4602!![0] = this.aFloat8180 * -this.aFloat8186
+        TextureLoadExceptionStatics.aFloatArray4602!![2] = -this.aFloat8186 * this.aFloat8168
         if (bool == true) {
-            TextureLoadException.aFloatArray4602!![3] = 1.0f
-            TextureLoadException.aFloatArray4602!![1] = -this.aFloat8186 * this.aFloat8087
-            glLightfv(16385, 4609, TextureLoadException.aFloatArray4602, 0)
+            TextureLoadExceptionStatics.aFloatArray4602!![3] = 1.0f
+            TextureLoadExceptionStatics.aFloatArray4602!![1] = -this.aFloat8186 * this.aFloat8087
+            glLightfv(16385, 4609, TextureLoadExceptionStatics.aFloatArray4602, 0)
         }
     }
 
@@ -570,10 +570,10 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         if (this.aFloat8173 < this.anInt8095.toFloat()) this.aFloat8173 = this.anInt8095.toFloat()
         glFogf(2915, this.aFloat8173)
         glFogf(2916, this.aFloat8115)
-        TextureLoadException.aFloatArray4602!![2] = (NpcSummaryDefinition.method1166(this.anInt8144, 255).toFloat() / 255.0f)
-        TextureLoadException.aFloatArray4602!![0] = (NpcSummaryDefinition.method1166(16711680, this.anInt8144).toFloat() / 1.671168E7f)
-        TextureLoadException.aFloatArray4602!![1] = (NpcSummaryDefinition.method1166(65280, this.anInt8144).toFloat() / 65280.0f)
-        glFogfv(2918, TextureLoadException.aFloatArray4602, 0)
+        TextureLoadExceptionStatics.aFloatArray4602!![2] = (NpcSummaryDefinition.method1166(this.anInt8144, 255).toFloat() / 255.0f)
+        TextureLoadExceptionStatics.aFloatArray4602!![0] = (NpcSummaryDefinition.method1166(16711680, this.anInt8144).toFloat() / 1.671168E7f)
+        TextureLoadExceptionStatics.aFloatArray4602!![1] = (NpcSummaryDefinition.method1166(65280, this.anInt8144).toFloat() / 65280.0f)
+        glFogfv(2918, TextureLoadExceptionStatics.aFloatArray4602, 0)
     }
 
     override fun method3671(): Boolean {
@@ -696,7 +696,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 throw RuntimeException("")
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.<init>(" + (if (opengl != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + l + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.<init>(" + (if (opengl != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + l + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -730,7 +730,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             class285_sub2.method2125(0)
             glDrawElements(i_44_, i_45_, ModelBatchBase.method1128(-20, class68), (class285_sub2.method2122(27819) + (i_41_ * (class68!!.anInt1178)).toLong()))
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.JC(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + (if (interface5_impl2 != null) "{...}" else "null") + ',' + i_40_ + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.JC(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + (if (interface5_impl2 != null) "{...}" else "null") + ',' + i_40_ + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ')'))
         }
     }
 
@@ -745,16 +745,16 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val i_48_ = class348_sub1.method2720(-1)
             val i_49_ = i_47_ + 16386
             val f = class348_sub1.method2721(-37) / 255.0f
-            TextureLoadException.aFloatArray4602!![0] = class348_sub1.method2724(-1).toFloat()
-            TextureLoadException.aFloatArray4602!![1] = class348_sub1.method2722(124).toFloat()
-            TextureLoadException.aFloatArray4602!![2] = class348_sub1.method2717(111.toByte()).toFloat()
-            TextureLoadException.aFloatArray4602!![3] = 1.0f
-            glLightfv(i_49_, 4611, TextureLoadException.aFloatArray4602, 0)
-            TextureLoadException.aFloatArray4602!![2] = NpcSummaryDefinition.method1166(255, i_48_).toFloat() * f
-            TextureLoadException.aFloatArray4602!![1] = f * (NpcSummaryDefinition.method1166(i_48_, 65338) shr 8).toFloat()
-            TextureLoadException.aFloatArray4602!![0] = NpcSummaryDefinition.method1166(255, i_48_ shr 16).toFloat() * f
-            TextureLoadException.aFloatArray4602!![3] = 1.0f
-            glLightfv(i_49_, 4609, TextureLoadException.aFloatArray4602, 0)
+            TextureLoadExceptionStatics.aFloatArray4602!![0] = class348_sub1.method2724(-1).toFloat()
+            TextureLoadExceptionStatics.aFloatArray4602!![1] = class348_sub1.method2722(124).toFloat()
+            TextureLoadExceptionStatics.aFloatArray4602!![2] = class348_sub1.method2717(111.toByte()).toFloat()
+            TextureLoadExceptionStatics.aFloatArray4602!![3] = 1.0f
+            glLightfv(i_49_, 4611, TextureLoadExceptionStatics.aFloatArray4602, 0)
+            TextureLoadExceptionStatics.aFloatArray4602!![2] = NpcSummaryDefinition.method1166(255, i_48_).toFloat() * f
+            TextureLoadExceptionStatics.aFloatArray4602!![1] = f * (NpcSummaryDefinition.method1166(i_48_, 65338) shr 8).toFloat()
+            TextureLoadExceptionStatics.aFloatArray4602!![0] = NpcSummaryDefinition.method1166(255, i_48_ shr 16).toFloat() * f
+            TextureLoadExceptionStatics.aFloatArray4602!![3] = 1.0f
+            glLightfv(i_49_, 4609, TextureLoadExceptionStatics.aFloatArray4602, 0)
             glLightf(i_49_, 4617, 1.0f / (class348_sub1.method2723(-1) * class348_sub1.method2723(-1)).toFloat())
             glEnable(i_49_)
             i_47_++
@@ -773,7 +773,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val var_long = `object` as Long
             anOpenGL9856!!.surfaceResized(var_long)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.FC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.FC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -788,7 +788,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9855++
             return true
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.RA(" + bool + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.RA(" + bool + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -819,7 +819,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             }
             glDrawArrays(i_52_, i_50_, i_51_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.V(" + i + ',' + i_50_ + ',' + (if (cameraRotationStub != null) "{...}" else "null") + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.V(" + i + ',' + i_50_ + ',' + (if (cameraRotationStub != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -829,7 +829,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9883++
             return GlCubeMapTexture(this, i_53_, bool, `is`)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.HB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_53_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.HB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_53_ + ')'))
         }
     }
 
@@ -844,7 +844,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             }
             return Gl2dTexture(this, textureFormatInfo, i, i_57_, bool, fs, i_54_, i_55_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.WC(" + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_54_ + ',' + (if (fs != null) "{...}" else "null") + ',' + bool + ',' + i_55_ + ',' + i_56_ + ',' + i_57_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.WC(" + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_54_ + ',' + (if (fs != null) "{...}" else "null") + ',' + bool + ',' + i_55_ + ',' + i_56_ + ',' + i_57_ + ')'))
         }
     }
 
@@ -884,7 +884,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             }
             return GlRectangleTexture(this, i, i_63_, `is`, i_61_, i_62_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.R(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_60_ + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.R(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_60_ + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ')'))
         }
     }
 
@@ -962,7 +962,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 glTexEnvi(8960, 34200 + i, if (bool) 771 else 770)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.AD(" + (if (trigLookupTables != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.AD(" + (if (trigLookupTables != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ',' + bool + ')'))
         }
     }
 
@@ -972,7 +972,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9823++
             method3626(i_72_, i_73_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.UA(" + (if (rectangles != null) "{...}" else "null") + ',' + i + ',' + i_72_ + ',' + i_73_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.UA(" + (if (rectangles != null) "{...}" else "null") + ',' + i + ',' + i_72_ + ',' + i_73_ + ')'))
         }
     }
 
@@ -1053,7 +1053,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 anInt9909 = i_74_
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.KC(" + i + ',' + (if (modelBatchBase != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.KC(" + i + ',' + (if (modelBatchBase != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1096,18 +1096,18 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             if (i != 1) this.anInt9918 = -120
             anOpenGL9856!!.releaseSurface(canvas, var_long)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.QD(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + (if (`object` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.QD(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + (if (`object` != null) "{...}" else "null") + ')'))
         }
     }
 
     override fun method3945(i: Int) {
-        TextureLoadException.aFloatArray4602!![1] = (NpcSummaryDefinition.method1166(65280, this.anInt8119).toFloat() / 65280.0f)
-        TextureLoadException.aFloatArray4602!![2] = (NpcSummaryDefinition.method1166(255, this.anInt8119).toFloat() / 255.0f)
-        TextureLoadException.aFloatArray4602!![3] = (this.anInt8119 ushr 24).toFloat() / 255.0f
+        TextureLoadExceptionStatics.aFloatArray4602!![1] = (NpcSummaryDefinition.method1166(65280, this.anInt8119).toFloat() / 65280.0f)
+        TextureLoadExceptionStatics.aFloatArray4602!![2] = (NpcSummaryDefinition.method1166(255, this.anInt8119).toFloat() / 255.0f)
+        TextureLoadExceptionStatics.aFloatArray4602!![3] = (this.anInt8119 ushr 24).toFloat() / 255.0f
         anInt9889++
-        TextureLoadException.aFloatArray4602!![0] = (NpcSummaryDefinition.method1166(16711680, this.anInt8119).toFloat() / 1.671168E7f)
+        TextureLoadExceptionStatics.aFloatArray4602!![0] = (NpcSummaryDefinition.method1166(16711680, this.anInt8119).toFloat() / 1.671168E7f)
         if (i >= -107) anInt9909 = -64
-        glTexEnvfv(8960, 8705, TextureLoadException.aFloatArray4602, 0)
+        glTexEnvfv(8960, 8705, TextureLoadExceptionStatics.aFloatArray4602, 0)
     }
 
     override fun method3892(i: Int) {
@@ -1144,7 +1144,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             if (!aBoolean9919) return Gl2dTexture(this, textureFormatInfo, movementDirection, CacheArchiveIndexLoader.method340(i_89_, 108.toByte()), CacheArchiveIndexLoader.method340(i, 108.toByte()))
             return GlRectangleTexture(this, textureFormatInfo, movementDirection, i_89_, i)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.NC(" + i + ',' + i_88_ + ',' + i_89_ + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bga.NC(" + i + ',' + i_88_ + ',' + i_89_ + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1192,7 +1192,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         try {
             anInt9816++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "bga.IA(" + (if (spriteDrawTarget != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "bga.IA(" + (if (spriteDrawTarget != null) "{...}" else "null") + ')')
         }
     }
 
@@ -1377,7 +1377,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 class348_sub42_sub15.method3246(-25490)
                 class348_sub42_sub15.aString9654 = string
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("bga.AA(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("bga.AA(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
             }
         }
 

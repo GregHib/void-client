@@ -15,7 +15,7 @@ abstract class BufferPositionTracker {
             if (i.toLong() < l_1_) TexGenMaterialPass.method2161(61.toByte(), l_1_)
             return method1859(71, l)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "tb.H(" + i + ',' + l + ')')
+            throw TextureLoadException.method2929(runtimeexception, "tb.H(" + i + ',' + l + ')')
         }
     }
 

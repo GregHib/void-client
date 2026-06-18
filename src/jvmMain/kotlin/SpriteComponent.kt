@@ -136,7 +136,7 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
                         method544(((LocalizedText.aLocalizedText_3504!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + string), false, 4)
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("tq.A(" + i + ',' + i_5_ + ',' + (if (string != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("tq.A(" + i + ',' + i_5_ + ',' + (if (string != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)
@@ -181,7 +181,7 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
                         }
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("tq.I(" + i + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("tq.I(" + i + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

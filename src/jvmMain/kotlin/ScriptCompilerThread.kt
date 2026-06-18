@@ -24,7 +24,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
             method1050(class348_sub42_sub16_sub2, i + -123)
             return class348_sub42_sub16_sub2
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("aca.G(" + (if (`is` != null) "{...}" else "null") + ',' + (if (indexedFileCache != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("aca.G(" + (if (`is` != null) "{...}" else "null") + ',' + (if (indexedFileCache != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ')'))
         }
     }
 

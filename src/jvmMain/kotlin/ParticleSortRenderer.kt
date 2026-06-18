@@ -130,7 +130,7 @@ class ParticleSortRenderer internal constructor() {
                 method1650(var_ha_Sub2, (-5).toByte())
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sn.G(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + (if (nodeDequeHolder != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("sn.G(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + (if (nodeDequeHolder != null) "{...}" else "null") + ')'))
         }
     }
 

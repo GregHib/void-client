@@ -40,7 +40,7 @@ abstract class MinimapShapeDrawer(@JvmField var anInt864: Int, @JvmField var anI
                 glBindProgramARB(i, 0)
                 return RefCountedHandle(var_ha_Sub2!!, i, i_6_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("iu.I(" + i + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("iu.I(" + i + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
     }

@@ -71,7 +71,7 @@ class TextureHandle internal constructor(private val aGlRenderDevice_2585: GlRen
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qr.A(" + i + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + (if (component != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("qr.A(" + i + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + (if (component != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ')'))
             }
         }
 

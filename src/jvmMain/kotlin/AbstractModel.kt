@@ -125,7 +125,7 @@ public abstract class AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ka.AC(" + i + ',' + (if (class348_sub33 != null) "{...}" else "null") + ',' + i_5_ + ',' + bool + ',' + i_6_ + ',' + (if (npcModelTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + (if (npcModelTransform_8_ != null) "{...}" else "null") + ',' + i_9_ + ',' + bool_10_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ka.AC(" + i + ',' + (if (class348_sub33 != null) "{...}" else "null") + ',' + i_5_ + ',' + bool + ',' + i_6_ + ',' + (if (npcModelTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + (if (npcModelTransform_8_ != null) "{...}" else "null") + ',' + i_9_ + ',' + bool_10_ + ')'))
         }
     }
 
@@ -149,7 +149,7 @@ public abstract class AbstractModel {
                 } else method621()
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ka.QB(" + i + ',' + i_40_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ',' + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i_44_ + ',' + (if (class348_sub42_sub17_45_ != null) "{...}" else "null") + ',' + bool + ',' + i_46_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ka.QB(" + i + ',' + i_40_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ',' + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i_44_ + ',' + (if (class348_sub42_sub17_45_ != null) "{...}" else "null") + ',' + bool + ',' + i_46_ + ')'))
         }
     }
 
@@ -243,7 +243,7 @@ public abstract class AbstractModel {
                 } else method621()
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ka.BC(" + i + ',' + i_83_ + ',' + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i_84_ + ',' + (if (class348_sub42_sub17_85_ != null) "{...}" else "null") + ',' + bool + ',' + bool_86_ + ',' + i_87_ + ',' + i_88_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ka.BC(" + i + ',' + i_83_ + ',' + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i_84_ + ',' + (if (class348_sub42_sub17_85_ != null) "{...}" else "null") + ',' + bool + ',' + bool_86_ + ',' + i_87_ + ',' + i_88_ + ')'))
         }
     }
 
@@ -312,7 +312,7 @@ public abstract class AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw TextureLoadException.method2929(
                 runtimeexception,
                 ("ka.VB(" + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i + ',' + i_101_ + ',' + i_102_ + ',' + (if (class348_sub42_sub17_103_ != null) "{...}" else "null") + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + (if (class348_sub42_sub17_107_ != null) "{...}" else "null") + ',' + bool + ',' + i_108_ + ',' + (if (class348_sub42_sub17_109_ != null) "{...}" else "null") + ',' + i_110_ + ',' + (if (bools != null) "{...}" else "null") + ',' + i_111_ + ')')
             )
@@ -420,7 +420,7 @@ public abstract class AbstractModel {
                 else I(i_147_, `is`, i_150_, i_146_, i_152_, bool, i_148_, is_151_)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ka.PB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_146_ + ',' + i_147_ + ',' + i_148_ + ',' + i_149_ + ',' + i_150_ + ',' + (if (is_151_ != null) "{...}" else "null") + ',' + i_152_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ka.PB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_146_ + ',' + i_147_ + ',' + i_148_ + ',' + i_149_ + ',' + i_150_ + ',' + (if (is_151_ != null) "{...}" else "null") + ',' + i_152_ + ')'))
         }
     }
 
@@ -531,7 +531,7 @@ public abstract class AbstractModel {
                 }
                 anInt1134++
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ka.UB(" + i + ',' + (if (strings != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_64_ + ',' + bool + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ka.UB(" + i + ',' + (if (strings != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_64_ + ',' + bool + ')'))
             }
         }
 

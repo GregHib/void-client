@@ -349,7 +349,7 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
         try {
             this.aByteArray10471 = ByteArray(i_19_ * i)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_19_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_19_ + ')'))
         }
     }
 

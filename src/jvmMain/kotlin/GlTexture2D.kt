@@ -53,7 +53,7 @@ open class GlTexture2D : GlTexture {
             }
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_9_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_9_ + ')'))
         }
     }
 
@@ -107,7 +107,7 @@ open class GlTexture2D : GlTexture {
             }
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + bool_26_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + bool_26_ + ')'))
         }
     }
 
@@ -144,7 +144,7 @@ open class GlTexture2D : GlTexture {
             glPixelStorei(3317, 4)
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_32_ + ',' + i_33_ + ',' + i_34_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_35_ + ',' + bool_36_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_32_ + ',' + i_33_ + ',' + i_34_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_35_ + ',' + bool_36_ + ')'))
         }
     }
 

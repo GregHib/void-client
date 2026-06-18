@@ -1,7 +1,6 @@
 import NpcSummaryDefinition.Companion.method1166
 import TwoStateOptionState.Companion.method1842
 import BoundsConstraintEntry.Companion.method2057
-import SoundBankPatch.Companion.method2929
 import LruByteCache.Companion.method589
 import MapRegionLoader.Companion.method751
 import kotlin.math.max
@@ -822,7 +821,7 @@ class CollisionMap {
                         }
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw method2929(runtimeexception, ("fe.E(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + bool + ',' + i_41_ + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("fe.E(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + bool + ',' + i_41_ + ')'))
                 }
                 break
             } while (false)

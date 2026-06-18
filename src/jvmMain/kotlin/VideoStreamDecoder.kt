@@ -291,7 +291,7 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
             anInt4121 = aS_Sub3_4116.anInt4587 shr anInt4124
             anInt4118 = aS_Sub3_4116.anInt4590 shr anInt4124
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("dg.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("dg.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ')'))
         }
     }
 

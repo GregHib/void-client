@@ -30,7 +30,7 @@ class TextureDefinitionCache internal constructor(i: Int, js5Archive: Js5Archive
                 if (aJs5Archive_2965 == null) break
                 aJs5Archive_2965!!.method407(0, 0)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("sga.<init>(" + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_3_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("sga.<init>(" + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_3_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

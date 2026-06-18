@@ -280,7 +280,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
             aClass348_Sub49_6936 = null
             aHashtable_6932 = null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.Companion.method2929(runtimeexception, ("qw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ',' + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ',' + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 

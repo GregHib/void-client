@@ -98,7 +98,7 @@ class ShadowQualityOptionState : GraphicsOptionState {
                 stringbuffer.setCharAt(0, stringbuffer.get(0).uppercaseChar())
                 return stringbuffer.toString()
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "sba.F(" + i + ',' + l + ')')
+                throw TextureLoadException.method2929(runtimeexception, "sba.F(" + i + ',' + l + ')')
             }
         }
 
@@ -147,7 +147,7 @@ class ShadowQualityOptionState : GraphicsOptionState {
                     player.anIntArray10236 = `is`
                     player.anInt10218 = i_8_
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("sba.E(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (player != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("sba.E(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (player != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

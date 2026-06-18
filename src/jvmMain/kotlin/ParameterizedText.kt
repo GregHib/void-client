@@ -1,6 +1,5 @@
 import BoundsConstraintEntry.Companion.method2057
 import ParticleSystemRenderer.Companion.method2296
-import SoundBankPatch.Companion.method2929
 import ModelVertexColorBuffer.Companion.method2739
 import TurbulenceTextureNode.Companion.method3113
 import AbstractBloomEffect.Companion.method2752
@@ -44,7 +43,7 @@ class ParameterizedText : HashLinkedListNode() {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, ("td.C(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("td.C(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

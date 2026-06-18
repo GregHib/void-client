@@ -72,7 +72,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             }
             return string
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oea.I(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_0_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oea.I(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_0_ + ')'))
         }
     }
 
@@ -104,7 +104,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             val i_15_ = (-1 + i_14_) * i_12_
             return (this.anInt1988 + (i_15_ + this.anInt1993))
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oea.A(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + i_12_ + ',' + i_13_ + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oea.A(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + i_12_ + ',' + i_13_ + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -159,7 +159,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             }
             return i_17_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oea.F(" + (if (string != null) "{...}" else "null") + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oea.F(" + (if (string != null) "{...}" else "null") + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -177,7 +177,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             }
             return i_23_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oea.K(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oea.K(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -311,7 +311,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             }
             return i_33_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oea.J(" + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (strings != null) "{...}" else "null") + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oea.J(" + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (strings != null) "{...}" else "null") + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -321,7 +321,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             if (i != 1) this.anInt1992 = -13
             return method1188(string, intArrayOf(i_42_), TextureGenerator.aStringArray2494, 87.toByte(), abstractModelRenderers)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oea.B(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_42_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oea.B(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_42_ + ')'))
         }
     }
 

@@ -130,7 +130,7 @@ class SpotAnimVector {
                 anInt2295++
                 method607(strings!!.size + -1, strings, `is`, 0, false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("po.B(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (strings != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("po.B(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (strings != null) "{...}" else "null") + ')'))
             }
         }
 

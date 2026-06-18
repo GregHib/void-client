@@ -110,7 +110,7 @@ class ColourAdjustment {
                     VideoStreamDecoder.aBoolean4127 = true
                     method2172(60)
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("iq.D(" + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + bool_2_ + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("iq.D(" + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + bool_2_ + ')'))
                 }
                 break
             } while (false)

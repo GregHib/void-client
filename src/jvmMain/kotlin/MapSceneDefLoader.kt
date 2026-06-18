@@ -52,7 +52,7 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
             aJs5Archive_2480 = js5Archive
             aJs5Archive_2480!!.method407(0, 31)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qf.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qf.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

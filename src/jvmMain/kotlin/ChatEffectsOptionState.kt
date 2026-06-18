@@ -173,7 +173,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
                 SoundCacheState.aLruByteCache_4139!!.method582(renderableEntry, i.toLong(), (-109).toByte())
                 return renderableEntry
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("jaa.K(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("jaa.K(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))
             }
         }
     }

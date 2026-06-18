@@ -64,7 +64,7 @@ class SequencedActorEntity internal constructor(var_renderer: Renderer?, npcConf
             this.aSceneObjectAnimator_10115 = SceneObjectAnimator(var_renderer, npcConfig, i_9_, i_10_, this.plane.toInt(), i_5_, this, bool, i_11_)
             aBoolean10114 = npcConfig!!.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ju.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ju.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'))
         }
     }
 
@@ -155,7 +155,7 @@ class SequencedActorEntity internal constructor(var_renderer: Renderer?, npcConf
             anInt10112++
             check(i_15_ >= -106)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ju.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ju.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ')'))
         }
     }
 

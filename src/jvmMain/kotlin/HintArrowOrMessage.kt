@@ -28,7 +28,7 @@ class HintArrowOrMessage internal constructor(i: Int, i_0_: Int, string: String?
             this.anInt2027 = i_0_
             this.anInt2026 = i_4_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("og.<init>(" + i + ',' + i_0_ + ',' + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + (if (string_2_ != null) "{...}" else "null") + ',' + (if (string_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (string_5_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("og.<init>(" + i + ',' + i_0_ + ',' + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + (if (string_2_ != null) "{...}" else "null") + ',' + (if (string_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (string_5_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -47,7 +47,7 @@ class HintArrowOrMessage internal constructor(i: Int, i_0_: Int, string: String?
             if (i_9_ != -18691) this.anInt2027 = -83
             this.anInt2026 = i_10_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("og.A(" + i + ',' + i_6_ + ',' + (if (string != null) "{...}" else "null") + ',' + (if (string_7_ != null) "{...}" else "null") + ',' + (if (string_8_ != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + (if (string_11_ != null) "{...}" else "null") + ',' + (if (string_12_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("og.A(" + i + ',' + i_6_ + ',' + (if (string != null) "{...}" else "null") + ',' + (if (string_7_ != null) "{...}" else "null") + ',' + (if (string_8_ != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + (if (string_11_ != null) "{...}" else "null") + ',' + (if (string_12_ != null) "{...}" else "null") + ')'))
         }
     }
 

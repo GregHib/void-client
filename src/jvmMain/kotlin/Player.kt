@@ -248,7 +248,7 @@ class Player : ProjectedGroundDecor() {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ke.OB(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_32_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_33_ + ',' + i_34_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_35_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ke.OB(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_32_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_33_ + ',' + i_34_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_35_ + ')'))
             }
             break
         } while (false)
@@ -269,7 +269,7 @@ class Player : ProjectedGroundDecor() {
                     var_renderer.C(true)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_42_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_43_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_42_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_43_ + ')'))
             }
             break
         } while (false)
@@ -293,7 +293,7 @@ class Player : ProjectedGroundDecor() {
             anInt10545++
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ke.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_47_ + ',' + i_48_ + ',' + i_49_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ke.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_47_ + ',' + i_48_ + ',' + i_49_ + ')'))
         }
     }
 
@@ -424,7 +424,7 @@ class Player : ProjectedGroundDecor() {
         var string: String? = ""
         if (GlEnvMappedWaterPass.aStringArray7378 != null) string += GlEnvMappedWaterPass.aStringArray7378!![aByte10552.toInt()]
         val `is`: IntArray?
-        if (aByte10538.toInt() != 1 || ParticleDetailOptionState.anIntArray6021 == null) `is` = TextureLoadException.anIntArray4603
+        if (aByte10538.toInt() != 1 || ParticleDetailOptionState.anIntArray6021 == null) `is` = TextureLoadExceptionStatics.anIntArray4603
         else `is` = ParticleDetailOptionState.anIntArray6021
         if (i != 255) anInt10567 = 81
         if (`is` != null && `is`[aByte10552.toInt()] != -1) {
@@ -720,7 +720,7 @@ class Player : ProjectedGroundDecor() {
                     if (i_105_.toInt() == 30) break
                     aHashtable10565 = null
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("ke.LB(" + f + ',' + i + ',' + f_100_ + ',' + i_101_ + ',' + i_102_ + ',' + f_103_ + ',' + (if (textureGenerator != null) "{...}" else "null") + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + f_107_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_108_ + ',' + f_109_ + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("ke.LB(" + f + ',' + i + ',' + f_100_ + ',' + i_101_ + ',' + i_102_ + ',' + f_103_ + ',' + (if (textureGenerator != null) "{...}" else "null") + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + f_107_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_108_ + ',' + f_109_ + ')'))
                 }
                 break
             } while (false)

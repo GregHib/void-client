@@ -80,7 +80,7 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterTe
                 aGlShaderProgramHandle_6234 = SequencedWallEntity.method2493((this.aHa_Sub2_3684), -1, (arrayOf<ManagedGlResource?>(class242, class242_6_)))
                 aBoolean6237 = aGlShaderProgramHandle_6234 != null
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("er.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("er.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

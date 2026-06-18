@@ -56,7 +56,7 @@ class ModelOrSpriteHolder {
                 if (i > -50) aTextureDefinitionLoader_117 = null
                 InterfaceComponentGroup.method3243(-100, class348_sub47)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ak.E(" + i + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + (if (widgetComponent_0_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ak.E(" + i + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + (if (widgetComponent_0_ != null) "{...}" else "null") + ')'))
             }
         }
 

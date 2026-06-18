@@ -74,7 +74,7 @@ class MinimapLineDrawer internal constructor(private val anInt5255: Int, private
                 if (bool_27_) return -i_30_
                 return i_30_
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("o.B(" + i + ',' + i_25_ + ',' + (if (class110_sub1 != null) "{...}" else "null") + ',' + i_26_ + ',' + bool + ',' + bool_27_ + ',' + (if (class110_sub1_28_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("o.B(" + i + ',' + i_25_ + ',' + (if (class110_sub1 != null) "{...}" else "null") + ',' + i_26_ + ',' + bool + ',' + bool_27_ + ',' + (if (class110_sub1_28_ != null) "{...}" else "null") + ')'))
             }
         }
     }

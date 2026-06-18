@@ -54,7 +54,7 @@ class WorldMapImageBuilder internal constructor(sceneProjector: SceneProjector?,
             aJs5Archive_1141 = js5Archive
             aJs5Archive_1141!!.method407(0, 26)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("kb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("kb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -110,7 +110,7 @@ class WorldMapImageBuilder internal constructor(sceneProjector: SceneProjector?,
                 AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactory.aJs5Archive_2978!!.method414(-1))
                 val i_7_ = -72 % ((35 - i) / 41)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("kb.F(" + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive_4_ != null) "{...}" else "null") + ',' + (if (js5Archive_5_ != null) "{...}" else "null") + ',' + (if (js5Archive_6_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("kb.F(" + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive_4_ != null) "{...}" else "null") + ',' + (if (js5Archive_5_ != null) "{...}" else "null") + ',' + (if (js5Archive_6_ != null) "{...}" else "null") + ')'))
             }
         }
 

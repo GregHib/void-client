@@ -56,7 +56,7 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
             aJs5Archive_2461 = js5Archive
             aJs5Archive_2461!!.method407(0, 1)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qe.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qe.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

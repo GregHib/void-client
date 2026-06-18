@@ -23,7 +23,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
                 aBoolean9439 = class348_sub49!!.readUnsignedByte(255) == 1
                 break
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("cfa.F(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("cfa.F(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ')'))
             }
         } while (false)
     }

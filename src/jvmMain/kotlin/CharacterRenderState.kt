@@ -264,7 +264,7 @@ class CharacterRenderState : LinkedListNode() {
                         }
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("hf.D(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("hf.D(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
                 }
                 break
             } while (false)

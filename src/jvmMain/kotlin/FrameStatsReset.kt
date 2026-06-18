@@ -372,7 +372,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             HintArrowOrMessage.anInt2036 = 0
             ConfigDefinitionLoader.anInt2086 = 0
             GlBufferObject.anInt4742 = 0
-            TextureLoadException.anInt4598 = 0
+            TextureLoadExceptionStatics.anInt4598 = 0
             BufferPositionTracker.anInt3149 = 0
             SpotAnimVector.anInt2300 = 0
             NativeRenderer.anInt8046 = 0
@@ -1502,7 +1502,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NpcConfig.anInt898 = 0
             ParticleEmitterDefExt.anInt8578 = 0
             TextureMapImageNode.anInt9381 = 0
-            NodeDeque.anInt3324 = 0
+            NodeDequeStatics.anInt3324 = 0
             TimedTileQueueEntry.anInt9655 = 0
             MediaStreamClient.anInt3190 = 0
             HudTabPanel.anInt2992 = 0
@@ -2113,7 +2113,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Renderer.anInt4575 = 0
             ModelDefinition.anInt1828 = 0
             IndexedSprite.anInt5194 = 0
-            TextureLoadException.anInt4605 = 0
+            TextureLoadExceptionStatics.anInt4605 = 0
             CacheArchiveIndex.anInt1775 = 0
             ByteBuffer.anInt7169 = 0
             ProjectileConfigUtil.anInt390 = 0
@@ -3332,7 +3332,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CacheArchiveIndex.anInt1771 = 0
             RangedGraphicsOptionState.anInt5942 = 0
             DelegatingRenderCanvas.anInt62 = 0
-            NodeDeque.anInt3338 = 0
+            NodeDequeStatics.anInt3338 = 0
             LightDetailOptionState.anInt6034 = 0
             LruByteCache.anInt1095 = 0
             RgbNoiseTexture.anInt5307 = 0
@@ -3501,7 +3501,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             AnimatedModelRenderer.anInt8399 = 0
             Direct3dModel.anInt5504 = 0
             FloatCameraTransform.anInt5706 = 0
-            SoundBankPatch.anInt6789 = 0
+            TextureLoadException.anInt6789 = 0
             ClickFeedbackTask.anInt4668 = 0
             OpenGlRenderer.anInt7579 = 0
             TurbulenceTextureNode.anInt9308 = 0
@@ -3610,7 +3610,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DirectionalStripeTextureNode.anInt9100 = 0
             GlowPostProcessor.anInt2518 = 0
             MinimapSquareDrawer.anInt5211 = 0
-            TextureLoadException.anInt4597 = 0
+            TextureLoadExceptionStatics.anInt4597 = 0
             Js5Archive.anInt665 = 0
             GlTexture2D.anInt8543 = 0
             NormalMapTextureNode.anInt9435 = 0

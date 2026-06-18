@@ -96,7 +96,7 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
                     } else RegionSceneShifter.aString7048 += "x86_64/"
                 } else RegionSceneShifter.aString7048 += "msjava/"
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("hw.A(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("hw.A(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

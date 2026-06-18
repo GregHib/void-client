@@ -81,7 +81,7 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
             val i_4_ = -1 + aJs5Archive_3979!!.method414(-1)
             aJs5Archive_3979.method407(0, i_4_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("cn.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_3_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("cn.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_3_ != null) "{...}" else "null") + ')'))
         }
     }
 

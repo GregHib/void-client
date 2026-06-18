@@ -30,7 +30,7 @@ open class ParticleEmitterDef internal constructor(i: Int, screenAnchorAlignment
             this.aScreenAnchorAlignment_4955 = screenAnchorAlignment
             this.aTileRenderState_4952 = tileRenderState
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("vr.<init>(" + i + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("vr.<init>(" + i + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ')'))
         }
     }
 

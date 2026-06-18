@@ -176,7 +176,7 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("cc.C(" + i + ',' + i_2_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (random != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("cc.C(" + i + ',' + i_2_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (random != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
         }
     }
 

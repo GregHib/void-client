@@ -56,7 +56,7 @@ object PlayerUpdateDecoder {
             IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub29_7229), 4)
             method3038(-1)
             method773(true)
-            TextureLoadException.aBoolean4604 = true
+            TextureLoadExceptionStatics.aBoolean4604 = true
         }
     }
 
@@ -232,7 +232,7 @@ object PlayerUpdateDecoder {
                     } else player.method2449(player.anInt10531, player.anInt10549, 84.toByte())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ns.A(" + (if (class348_sub49_sub2 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (player != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ns.A(" + (if (class348_sub49_sub2 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (player != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

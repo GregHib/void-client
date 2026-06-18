@@ -1,5 +1,4 @@
 import CircleDrawer.method1496
-import SoundBankPatch.Companion.method2929
 import NpcType.Companion.method802
 import ChatMessageStream.Companion.method136
 
@@ -22,7 +21,7 @@ class Npc : ProjectedGroundDecor() {
             anInt10513++
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("ff.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ff.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 

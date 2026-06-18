@@ -19,7 +19,7 @@ class HardKeyedCacheEntryReference internal constructor(keyedComparable: KeyedCo
         try {
             anObject10440 = `object`
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ct.<init>(" + (if (keyedComparable != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ct.<init>(" + (if (keyedComparable != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

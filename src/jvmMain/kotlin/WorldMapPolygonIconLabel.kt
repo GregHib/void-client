@@ -13,7 +13,7 @@ class WorldMapPolygonIconLabel(screenAnchorAlignment: ScreenAnchorAlignment?, ti
         try {
             this.anInt10177 = i_25_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fu.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fu.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ')'))
         }
     }
 
@@ -119,7 +119,7 @@ class WorldMapPolygonIconLabel(screenAnchorAlignment: ScreenAnchorAlignment?, ti
                     }
                     break
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("fu.F(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("fu.F(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ')'))
                 }
             } while (false)
         }

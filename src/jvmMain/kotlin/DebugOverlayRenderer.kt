@@ -24,7 +24,7 @@ object DebugOverlayRenderer {
             sceneLinkedListNode_0_.aSceneLinkedListNode_3976!!.aSceneLinkedListNode_3970 = sceneLinkedListNode_0_
             sceneLinkedListNode_0_.aSceneLinkedListNode_3970!!.aSceneLinkedListNode_3976 = sceneLinkedListNode_0_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("te.B(" + (if (sceneLinkedListNode != null) "{...}" else "null") + ',' + (if (sceneLinkedListNode_0_ != null) "{...}" else "null") + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("te.B(" + (if (sceneLinkedListNode != null) "{...}" else "null") + ',' + (if (sceneLinkedListNode_0_ != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 

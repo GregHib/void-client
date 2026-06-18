@@ -28,7 +28,7 @@ class ShortKeyNode : LinkedListNode {
                     if (bool == false) break
                     method3004(null, false, null)
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.Companion.method2929(runtimeexception, ("oia.B(" + (if (js5Archive != null) "{...}" else "null") + ',' + bool + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("oia.B(" + (if (js5Archive != null) "{...}" else "null") + ',' + bool + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

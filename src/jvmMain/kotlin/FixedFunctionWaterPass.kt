@@ -87,7 +87,7 @@ class FixedFunctionWaterPass internal constructor(var_ha_Sub3: NativeRenderer, n
         try {
             aNormalMapGenerator_7353 = normalMapGenerator
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("kl.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("kl.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -201,7 +201,7 @@ class FixedFunctionWaterPass internal constructor(var_ha_Sub3: NativeRenderer, n
                 }
                 anInt7359++
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("kl.E(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_7_ != null) "{...}" else "null") + ',' + (if (is_8_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("kl.E(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_7_ != null) "{...}" else "null") + ',' + (if (is_8_ != null) "{...}" else "null") + ')'))
             }
         }
 

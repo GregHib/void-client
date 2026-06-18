@@ -300,7 +300,7 @@ class LinkedNodeListIterator {
                     } else var_renderer.A(-16777216, var_aa, i, i_1_)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("mn.F(" + (if (widgetComponent != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + i_2_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("mn.F(" + (if (widgetComponent != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + i_2_ + ')'))
             }
         }
 

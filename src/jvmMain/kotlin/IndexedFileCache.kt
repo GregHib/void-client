@@ -145,7 +145,7 @@ class IndexedFileCache internal constructor(i: Int, bufferedRandomAccessFile: Bu
             aBufferedRandomAccessFile_1938 = bufferedRandomAccessFile_26_
             anInt1939 = i_27_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nw.<init>(" + i + ',' + (if (bufferedRandomAccessFile != null) "{...}" else "null") + ',' + (if (bufferedRandomAccessFile_26_ != null) "{...}" else "null") + ',' + i_27_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nw.<init>(" + i + ',' + (if (bufferedRandomAccessFile != null) "{...}" else "null") + ',' + (if (bufferedRandomAccessFile_26_ != null) "{...}" else "null") + ',' + i_27_ + ')'))
         }
     }
 

@@ -1,4 +1,3 @@
-import SoundBankPatch.Companion.method2929
 import AbstractBloomEffect.Companion.method2755
 
 /* Class348_Sub42_Sub14 - Decompiled by JODE
@@ -99,7 +98,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
             if (this.anInt9631 == 255) this.anInt9631 = 0
             this.aNodeDeque_9629 = NodeDeque()
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("dfa.<init>(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + (if (string_20_ != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + bool + ',' + i_23_ + ',' + i_24_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("dfa.<init>(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + (if (string_20_ != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + bool + ',' + i_23_ + ',' + i_24_ + ')'))
         }
     }
 

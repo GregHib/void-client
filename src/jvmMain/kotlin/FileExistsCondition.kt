@@ -22,7 +22,7 @@ class FileExistsCondition internal constructor(js5Archive: Js5Archive?, string: 
             aJs5Archive_4785 = js5Archive
             aString4778 = string
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("kk.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("kk.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 

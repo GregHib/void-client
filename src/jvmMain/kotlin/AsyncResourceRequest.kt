@@ -140,7 +140,7 @@ abstract class AsyncResourceRequest : HashLinkedListNode() {
                 }
                 return i_8_
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ffa.E(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_6_ + ',' + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i_7_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ffa.E(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_6_ + ',' + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i_7_ + ')'))
             }
         }
 

@@ -45,7 +45,7 @@ class SpriteRenderable internal constructor(var_ha_Sub1: SoftwareRenderer?, abst
                 if ((aFloatGrid_4724!!.anInt4974 != this.anInt4725) || (this.anInt4722 != aFloatGrid_4724!!.anInt4978)) throw RuntimeException()
                 this.aFloatArray4719 = aFloatGrid_4724!!.aFloatArray4980
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("it.<init>(" + (if (var_ha_Sub1 != null) "{...}" else "null") + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + (if (floatGrid != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("it.<init>(" + (if (var_ha_Sub1 != null) "{...}" else "null") + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + (if (floatGrid != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

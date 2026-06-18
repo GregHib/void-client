@@ -130,7 +130,7 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
                     InputStream_Sub2.aDoublyLinkedNodeList_83!!.method1869(-87, class318_sub6)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qk.G(" + i + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (class318_sub1_sub3_sub3 != null) "{...}" else "null") + ',' + (if (class318_sub1_sub3_sub3_8_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("qk.G(" + i + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (class318_sub1_sub3_sub3 != null) "{...}" else "null") + ',' + (if (class318_sub1_sub3_sub3_8_ != null) "{...}" else "null") + ')'))
             }
         }
 

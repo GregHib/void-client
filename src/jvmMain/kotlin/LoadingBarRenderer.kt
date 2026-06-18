@@ -74,7 +74,7 @@ class LoadingBarRenderer : CursorController {
             val field = var_class!!.getDeclaredField(string)
             return field.getInt(`object`)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wba.K(" + (if (`object` != null) "{...}" else "null") + ',' + (if (var_class != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wba.K(" + (if (`object` != null) "{...}" else "null") + ',' + (if (var_class != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -88,7 +88,7 @@ class LoadingBarRenderer : CursorController {
             field.set(JagGlToolkitFactory.anApplet1530, null)
             return `object`
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wba.C(" + (if (var_class != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wba.C(" + (if (var_class != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -104,7 +104,7 @@ class LoadingBarRenderer : CursorController {
             anInt5061++
             return true
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wba.I(" + i + ',' + l + ')')
+            throw TextureLoadException.method2929(runtimeexception, "wba.I(" + i + ',' + l + ')')
         }
     }
 
@@ -140,7 +140,7 @@ class LoadingBarRenderer : CursorController {
             val field = var_class!!.getDeclaredField(string)
             return field.getBoolean(`object`)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wba.H(" + (if (`object` != null) "{...}" else "null") + ',' + bool + ',' + (if (var_class != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wba.H(" + (if (`object` != null) "{...}" else "null") + ',' + bool + ',' + (if (var_class != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 

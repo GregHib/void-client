@@ -10,7 +10,7 @@ class IndexedSprite : Sprite {
             this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3944(`is`, i, ClampTextureNode.aTextureFormatInfo_9471, 2, false, i_16_)
             this.anInterface18_Impl3_5196!!.method66(false, false, 25688)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_16_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_16_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -19,7 +19,7 @@ class IndexedSprite : Sprite {
             this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3839(i_17_, i, -15137, false, `is`)
             this.anInterface18_Impl3_5196!!.method66(false, false, 25688)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_17_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_17_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -30,7 +30,7 @@ class LocConfigModelBuilder {
             anInt4505++
             return method3566(var_renderer, i_3_, i_1_, null, 0, widgetCache, i, 5.toByte(), null, 0, false, 0, (-68).toByte(), i_0_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_3_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_3_ + ')'))
         }
     }
 
@@ -51,7 +51,7 @@ class LocConfigModelBuilder {
             anInt4511++
             return method3566(var_renderer, i, i_6_, null, 0, widgetCache, i_5_, 2.toByte(), null, 0, false, 0, (-68).toByte(), i_7_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fk.A(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_8_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fk.A(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_8_ + ')'))
         }
     }
 
@@ -118,7 +118,7 @@ class LocConfigModelBuilder {
             if (i_21_ != -129) method3566(null, 36, -84, null, 43, null, 2, 54.toByte(), null, -17, true, -42, 95.toByte(), -81)
             return method3566(var_renderer, i_16_, i_18_, var_terrainTile, i_22_, widgetCache, i, 2.toByte(), var_terrainTile_23_, i_17_, bool, i_20_, (-68).toByte(), i_19_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (var_terrainTile_23_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (var_terrainTile_23_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -183,7 +183,7 @@ class LocConfigModelBuilder {
             class64_37_!!.s(i_24_)
             return class64_37_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fk.I(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_25_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_26_ + ',' + i_27_ + ',' + (if (var_terrainTile_28_ != null) "{...}" else "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fk.I(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_25_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_26_ + ',' + i_27_ + ',' + (if (var_terrainTile_28_ != null) "{...}" else "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'))
         }
     }
 

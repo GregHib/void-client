@@ -85,7 +85,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, water
             this.aHa_Sub2_3684.method3738(-15039, 0)
             aGlDisplayListFont_6254.method591(-1)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("gn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("gn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -209,7 +209,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, water
                     val i_13_ = 70 % ((i - -52) / 32)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "gn.D(" + i + ',' + l + ')')
+                throw TextureLoadException.method2929(runtimeexception, "gn.D(" + i + ',' + l + ')')
             }
         }
     }

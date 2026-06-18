@@ -317,7 +317,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
             method229(true)
             method236(0, (-126).toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("hda.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + i_66_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("hda.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + i_66_ + ',' + bool + ')'))
         }
     }
 

@@ -96,7 +96,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("da.V(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("da.V(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ')'))
         }
     }
 
@@ -108,7 +108,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                 method2583(0, i, 0, abstractModelRenderers, null, string, `is`, 25625, i_20_)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("da.R(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("da.R(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -158,7 +158,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             }
             return i_34_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw TextureLoadException.method2929(
                 runtimeexception,
                 ("da.W(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')')
             )
@@ -196,7 +196,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             method2566(abstractModelRenderers, null, i_52_, `is`, is_55_, i_51_, string, 174)
             return i_56_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("da.BA(" + i + ',' + i_48_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i_49_ + ',' + i_50_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_51_ + ',' + i_52_ + ',' + (if (random != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("da.BA(" + i + ',' + i_48_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i_49_ + ',' + i_50_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_51_ + ',' + i_52_ + ',' + (if (random != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -404,7 +404,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("da.AA(" + i + ',' + i_103_ + ',' + i_104_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_105_ + ',' + i_106_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("da.AA(" + i + ',' + i_103_ + ',' + i_104_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_105_ + ',' + i_106_ + ')'))
         }
     }
 
@@ -413,7 +413,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             aFontDefinition_4063 = fontDefinition
             aRenderer4048 = var_renderer
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("da.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (fontDefinition != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("da.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (fontDefinition != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -423,7 +423,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             anInt4057++
             return method2568(`is`, i_118_, 97.toByte(), var_sprite, i_120_, abstractModelRenderers, i_116_, i_119_, i_122_, i_117_, string, i_121_, i_123_, i_124_, i_115_, 0, i)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("da.J(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_115_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_119_ + ',' + i_120_ + ',' + i_121_ + ',' + i_122_ + ',' + i_123_ + ',' + bool + ',' + i_124_ + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("da.J(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_115_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_119_ + ',' + i_120_ + ',' + i_121_ + ',' + i_122_ + ',' + i_123_ + ',' + bool + ',' + i_124_ + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -466,7 +466,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             }
             return i_138_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw TextureLoadException.method2929(
                 runtimeexception,
                 ("da.P(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_125_ + ',' + i_126_ + ',' + i_127_ + ',' + i_128_ + ',' + (if (random != null) "{...}" else "null") + ',' + i_129_ + ',' + i_130_ + ',' + i_131_ + ',' + i_132_ + ',' + i_133_ + ',' + (if (string != null) "{...}" else "null") + ',' + (if (is_134_ != null) "{...}" else "null") + ')')
             )
@@ -570,7 +570,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                 }
                 return NativeBufferHandle(glRenderDevice, l, glShaderObjectHandles)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("da.M(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (glShaderObjectHandles != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("da.M(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (glShaderObjectHandles != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

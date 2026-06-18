@@ -53,7 +53,7 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
             aJs5Archive_366 = js5Archive
             aJs5Archive_366!!.method407(0, 30)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("hq.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("hq.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

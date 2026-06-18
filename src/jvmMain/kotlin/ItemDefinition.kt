@@ -172,7 +172,7 @@ class ItemDefinition {
             }
             this.aStringArray2763!![4] = LocalizedText.aLocalizedText_3489!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.G(" + (if (itemDefinition_9_ != null) "{...}" else "null") + ',' + i + ',' + (if (itemDefinition_10_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rq.G(" + (if (itemDefinition_9_ != null) "{...}" else "null") + ',' + i + ',' + (if (itemDefinition_10_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -294,7 +294,7 @@ class ItemDefinition {
             abstractModel!!.s(i)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.S(" + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rq.S(" + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
         }
     }
 
@@ -320,7 +320,7 @@ class ItemDefinition {
             if (class348_sub50 == null) return string
             return class348_sub50.aString7211
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.N(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_36_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rq.N(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_36_ + ')'))
         }
     }
 
@@ -416,7 +416,7 @@ class ItemDefinition {
             }
             return `is`
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_renderer_38_ != null) "{...}" else "null") + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_renderer_38_ != null) "{...}" else "null") + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'))
         }
     }
 
@@ -574,7 +574,7 @@ class ItemDefinition {
             } else anInt2756 = class348_sub49!!.readUnsignedShort(i + 842397940)
             anInt2754++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.L(" + i + ',' + i_57_ + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rq.L(" + i + ',' + i_57_ + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -597,7 +597,7 @@ class ItemDefinition {
             }
             anInt2800++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.I(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rq.I(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -621,7 +621,7 @@ class ItemDefinition {
             this.aString2795 = itemDefinition_94_.aString2795
             anInt2756 = itemDefinition_95_.anInt2756
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.F(" + i + ',' + (if (itemDefinition_94_ != null) "{...}" else "null") + ',' + (if (itemDefinition_95_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rq.F(" + i + ',' + (if (itemDefinition_94_ != null) "{...}" else "null") + ',' + (if (itemDefinition_95_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -636,7 +636,7 @@ class ItemDefinition {
             }
             anInt2790++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.M(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_96_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rq.M(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_96_ + ')'))
         }
     }
 
@@ -685,7 +685,7 @@ class ItemDefinition {
             }
             return is_101_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.K(" + i + ',' + i_100_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rq.K(" + i + ',' + i_100_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -758,7 +758,7 @@ class ItemDefinition {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("rq.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_73_ + ',' + i_74_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (is_75_ != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + i_79_ + ',' + i_80_ + ',' + i_81_ + ',' + (if (fs_82_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("rq.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_73_ + ',' + i_74_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (is_75_ != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + i_79_ + ',' + i_80_ + ',' + i_81_ + ',' + (if (fs_82_ != null) "{...}" else "null") + ')'))
             }
         }
     }

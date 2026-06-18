@@ -96,7 +96,7 @@ object AbstractCameraTransformStatics {
                 i_18_++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bca.RA(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bca.RA(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -109,7 +109,7 @@ object AbstractCameraTransformStatics {
             if (var_ha_Sub2.aBoolean7837) return GlTexture2DRegion(var_ha_Sub2, 34037, i_24_, i_25_, i_26_)
             return GlTexture2DRegion(var_ha_Sub2, i_24_, i_25_, i_26_, CacheArchiveIndexLoader.method340(i_25_, 108.toByte()), CacheArchiveIndexLoader.method340(i_26_, 108.toByte()))
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bca.TA(" + i + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bca.TA(" + i + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'))
         }
     }
 

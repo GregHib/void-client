@@ -45,7 +45,7 @@ object FileIoUtil {
                 /* empty */
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "de.A(" + i + ',' + l + ')')
+            throw TextureLoadException.method2929(runtimeexception, "de.A(" + i + ',' + l + ')')
         }
     }
 

@@ -1,4 +1,3 @@
-import SoundBankPatch.Companion.method2929
 
 /* Class355 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -37,7 +36,7 @@ class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, 
             }
             return l.toString()
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("aha.D(" + l + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (rectangleRegion != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("aha.D(" + l + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (rectangleRegion != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -53,7 +52,7 @@ class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, 
                 if (aJs5Archive_4369 == null) break
                 this.anInt4364 = aJs5Archive_4369.method407(0, 1)
             } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, ("aha.<init>(" + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_1_ != null) "{...}" else "null") + ',' + (if (textFormatter != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("aha.<init>(" + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_1_ != null) "{...}" else "null") + ',' + (if (textFormatter != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

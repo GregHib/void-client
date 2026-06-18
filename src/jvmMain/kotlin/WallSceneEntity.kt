@@ -75,7 +75,7 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: N
             if (i_5_ > -106) this.aSceneObjectAnimator_9955 = null
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("saa.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("saa.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'))
         }
     }
 
@@ -84,7 +84,7 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: N
             this.aSceneObjectAnimator_9955 = SceneObjectAnimator(var_renderer, npcConfig, 22, i_11_, i, i_7_, this, bool, i_12_)
             aBoolean9966 = npcConfig.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("saa.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("saa.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ')'))
         }
     }
 

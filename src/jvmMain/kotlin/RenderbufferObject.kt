@@ -1,7 +1,6 @@
 import DoublyLinkedNodeList.Companion.method1879
 import WalkingTypeUtil.method1978
 import SynthVoiceGroup.Companion.method2826
-import SoundBankPatch.Companion.method2929
 import TimedRecordAccessor.Companion.method3309
 import jaggl.OpenGL.Companion.glBindRenderbufferEXT
 import jaggl.OpenGL.Companion.glFramebufferRenderbufferEXT
@@ -67,7 +66,7 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             glRenderbufferStorageEXT(36161, anInt8567, (this.anInt8572), (this.anInt8565))
             anInt8571 = (this.anInt8565 * this.anInt8572 * aHa_Sub2_8564!!.method3798(anInt8567, 2))
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("kw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_11_ + ',' + i_12_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("kw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_11_ + ',' + i_12_ + ')'))
         }
     }
 
@@ -83,7 +82,7 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             glRenderbufferStorageMultisampleEXT(36161, i_15_, anInt8567, this.anInt8572, this.anInt8565)
             anInt8571 = (this.anInt8565 * this.anInt8572 * aHa_Sub2_8564!!.method3798(anInt8567, 2))
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("kw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("kw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ')'))
         }
     }
 

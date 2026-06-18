@@ -173,7 +173,7 @@ class OpenGlModel : AbstractModel {
             anInt5533++
             return method684(bool, 1566382404, -1, i_14_, i_15_, i, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.MA(" + i + ',' + i_14_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_15_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.MA(" + i + ',' + i_14_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_15_ + ')'))
         }
     }
 
@@ -399,7 +399,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.PA(" + (if (abstractModel != null) "{...}" else "null") + ',' + i + ',' + i_42_ + ',' + i_43_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.PA(" + (if (abstractModel != null) "{...}" else "null") + ',' + i + ',' + i_42_ + ',' + i_43_ + ',' + bool + ')'))
         }
     }
 
@@ -408,7 +408,7 @@ class OpenGlModel : AbstractModel {
             anInt5633++
             return method684(bool, 1566382404, i_89_, i_87_, i_88_, i, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.OA(" + i + ',' + i_87_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_88_ + ',' + i_89_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.OA(" + i + ',' + i_87_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_88_ + ',' + i_89_ + ')'))
         }
     }
 
@@ -472,7 +472,7 @@ class OpenGlModel : AbstractModel {
             aFloatArray5571!![anInt5529] = f_102_
             return (anInt5529++).toShort()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.R(" + i + ',' + i_97_ + ',' + l + ',' + i_98_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_99_ + ',' + f + ',' + i_100_ + ',' + i_101_ + ',' + f_102_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.R(" + i + ',' + i_97_ + ',' + l + ',' + i_98_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_99_ + ',' + f + ',' + i_100_ + ',' + i_101_ + ',' + f_102_ + ')'))
         }
     }
 
@@ -618,7 +618,7 @@ class OpenGlModel : AbstractModel {
             }
             return false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.SA(" + bool + ',' + i + ',' + i_108_ + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.SA(" + bool + ',' + i + ',' + i_108_ + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -671,7 +671,7 @@ class OpenGlModel : AbstractModel {
             method685(118.toByte(), var_r_Sub2_170_)
             return var_r_Sub2_170_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "paa.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "paa.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
         }
     }
 
@@ -751,7 +751,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.U(" + i + ',' + (if (var_r_Sub2 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.U(" + i + ',' + (if (var_r_Sub2 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1068,7 +1068,7 @@ class OpenGlModel : AbstractModel {
             class64_sub3_211_.aModelFacePriorityNodeArray5640 = aModelFacePriorityNodeArray5640
             return class64_sub3_211_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.K(" + (if (class64_sub3_211_ != null) "{...}" else "null") + ',' + i + ',' + i_212_ + ',' + bool + ',' + (if (class64_sub3_213_ != null) "{...}" else "null") + ',' + bool_214_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.K(" + (if (class64_sub3_211_ != null) "{...}" else "null") + ',' + i + ',' + i_212_ + ',' + bool + ',' + (if (class64_sub3_213_ != null) "{...}" else "null") + ',' + bool_214_ + ')'))
         }
     }
 
@@ -1176,7 +1176,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_235_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_235_ + ')'))
         }
     }
 
@@ -1271,7 +1271,7 @@ class OpenGlModel : AbstractModel {
                     aHoverActionEntry_5605!!.anByteBufferReader_1811 = null
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("paa.p(" + i + ',' + i_256_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_257_ != null) "{...}" else "null") + ',' + i_258_ + ',' + i_259_ + ',' + i_260_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("paa.p(" + i + ',' + i_256_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_257_ != null) "{...}" else "null") + ',' + i_258_ + ',' + i_259_ + ',' + i_260_ + ')'))
             }
             break
         } while (false)
@@ -1702,7 +1702,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -1874,7 +1874,7 @@ class OpenGlModel : AbstractModel {
                     i++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "paa.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
+                throw TextureLoadException.method2929(runtimeexception, "paa.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -2190,7 +2190,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.BB(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_386_ + ',' + i_387_ + ',' + i_388_ + ',' + i_389_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.BB(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_386_ + ',' + i_387_ + ',' + i_388_ + ',' + i_389_ + ',' + bool + ')'))
         }
     }
 
@@ -2406,7 +2406,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
         }
     }
 
@@ -2888,7 +2888,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.I(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_510_ + ',' + i_511_ + ',' + i_512_ + ',' + bool + ',' + i_513_ + ',' + (if (is_514_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.I(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_510_ + ',' + i_511_ + ',' + i_512_ + ',' + bool + ',' + i_513_ + ',' + (if (is_514_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2950,7 +2950,7 @@ class OpenGlModel : AbstractModel {
             aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
             aArchiveFileConditionWrapper_5575 = ArchiveFileConditionWrapper()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -3315,13 +3315,13 @@ class OpenGlModel : AbstractModel {
                                     val f_803_ = ((fs[5] * i_798_.toFloat() + (i_797_.toFloat() * fs[4] + fs[3] * i_796_.toFloat())) / f_800_)
                                     val f_804_ = ((i_798_.toFloat() * fs[8] + (fs[7] * i_797_.toFloat() + i_796_.toFloat() * fs[6])) / f_801_)
                                     i_747_ = CalendarUtil.method2635(f_803_, false, f_804_, f_802_)
-                                    NodeDeque.method1991(f_789_, f_787_, fs, (modelDefinition.anIntArray1852[i_780_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (modelDefinition.anIntArray1841[i_780_.toInt()]), (modelDefinition.anIntArray1847[i_780_.toInt()]), f_788_, GzipDecompressor.aFloatArray2075, i_784_, i_747_)
+                                    NodeDequeStatics.method1991(f_789_, f_787_, fs, (modelDefinition.anIntArray1852[i_780_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (modelDefinition.anIntArray1841[i_780_.toInt()]), (modelDefinition.anIntArray1847[i_780_.toInt()]), f_788_, GzipDecompressor.aFloatArray2075, i_784_, i_747_)
                                     f_740_ = GzipDecompressor.aFloatArray2075!![1]
                                     f = GzipDecompressor.aFloatArray2075!![0]
-                                    NodeDeque.method1991(f_789_, f_787_, fs, (modelDefinition.anIntArray1852[i_781_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (modelDefinition.anIntArray1841[i_781_.toInt()]), (modelDefinition.anIntArray1847[i_781_.toInt()]), f_788_, GzipDecompressor.aFloatArray2075!!, i_784_, i_747_)
+                                    NodeDequeStatics.method1991(f_789_, f_787_, fs, (modelDefinition.anIntArray1852[i_781_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (modelDefinition.anIntArray1841[i_781_.toInt()]), (modelDefinition.anIntArray1847[i_781_.toInt()]), f_788_, GzipDecompressor.aFloatArray2075!!, i_784_, i_747_)
                                     f_742_ = GzipDecompressor.aFloatArray2075!![1]
                                     f_741_ = GzipDecompressor.aFloatArray2075!![0]
-                                    NodeDeque.method1991(f_789_, f_787_, fs, (modelDefinition.anIntArray1852[i_782_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (modelDefinition.anIntArray1841[i_782_.toInt()]), (modelDefinition.anIntArray1847[i_782_.toInt()]), f_788_, GzipDecompressor.aFloatArray2075, i_784_, i_747_)
+                                    NodeDequeStatics.method1991(f_789_, f_787_, fs, (modelDefinition.anIntArray1852[i_782_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (modelDefinition.anIntArray1841[i_782_.toInt()]), (modelDefinition.anIntArray1847[i_782_.toInt()]), f_788_, GzipDecompressor.aFloatArray2075, i_784_, i_747_)
                                     f_743_ = GzipDecompressor.aFloatArray2075!![0]
                                     f_744_ = GzipDecompressor.aFloatArray2075!![1]
                                 } else if (i_748_.toInt() == 3) {
@@ -3449,7 +3449,7 @@ class OpenGlModel : AbstractModel {
                     if (i_823_ >= 0) anIntArrayArray5553!![i_823_]!![is_818_[i_823_]++] = i_822_
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_695_ + ',' + i_696_ + ',' + i_697_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_695_ + ',' + i_696_ + ',' + i_697_ + ')'))
             }
             break
         } while (false)

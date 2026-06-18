@@ -32,7 +32,7 @@ class GlWaterRenderPass internal constructor(glRenderDevice: GlRenderDevice, js5
             if (js5Archive == null || !aNormalMapGenerator_7294!!.method2039(100) || !aGlRenderDevice_7296!!.aBoolean9923) aTextureHandle_7293 = null
             else aTextureHandle_7293 = method3442(34336, js5Archive.method391("gl", "transparent_water", -29832), aGlRenderDevice_7296, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ov.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ov.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
         }
     }
 

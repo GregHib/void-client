@@ -43,7 +43,7 @@ class ResourceLoaderThread : Runnable {
             aLong3917 = l
             aConnectionStateType_3916 = connectionStateType
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ae.J(" + (if (connectionStateType != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + l + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ae.J(" + (if (connectionStateType != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + l + ',' + bool + ')'))
         }
     }
 

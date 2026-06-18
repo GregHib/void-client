@@ -32,7 +32,7 @@ abstract class KeyboardInputSource {
                 anInt4277++
                 return `is`
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("efa.L(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (fs != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("efa.L(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (fs != null) "{...}" else "null") + ')'))
             }
         }
     }

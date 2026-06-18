@@ -26,7 +26,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
                 if (aAbstractModel_9993 == null || class318_sub1_sub1_sub2_3_.aAbstractModel_9993 == null) break
                 aAbstractModel_9993!!.method613((class318_sub1_sub1_sub2_3_.aAbstractModel_9993), i_2_, i, i_0_, bool)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("uo.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("uo.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
             }
             break
         } while (false)
@@ -199,7 +199,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
                 if (!aBoolean9989) break
                 aAbstractModel_9993 = aAbstractModel_9993!!.method614(0.toByte(), i_26_, false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("uo.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + i_24_ + ',' + bool_25_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("uo.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + i_24_ + ',' + bool_25_ + ')'))
             }
             break
         } while (false)

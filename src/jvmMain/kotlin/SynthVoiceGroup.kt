@@ -120,7 +120,7 @@ class SynthVoiceGroup internal constructor(private val aClass348_Sub16_Sub3_8852
             }
             class348_sub43.aClass348_Sub16_Sub5_7081!!.method2817(`is`, i_9_, i_11_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bea.H(" + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bea.H(" + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 

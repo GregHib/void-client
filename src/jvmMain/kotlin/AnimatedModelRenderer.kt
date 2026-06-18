@@ -457,7 +457,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             aBoolean8396 = !aBoolean8410 && anInterface18_Impl3_8403.method73(91)
             aBoolean8391 = !aBoolean8408 && anInterface18_Impl3_8403.method73(101)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("jd.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_119_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_120_ + ',' + i_121_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("jd.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_119_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_120_ + ',' + i_121_ + ')'))
         }
     }
 

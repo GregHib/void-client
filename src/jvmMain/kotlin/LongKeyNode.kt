@@ -21,7 +21,7 @@ class LongKeyNode : LinkedListNode {
         try {
             this.aLong6762 = l
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.Companion.method2929(runtimeexception, "ij.<init>(" + l + ')')
+            throw TextureLoadException.method2929(runtimeexception, "ij.<init>(" + l + ')')
         }
     }
 
@@ -116,7 +116,7 @@ class LongKeyNode : LinkedListNode {
                 val i_13_ = (((-10 + (238 + (20.0 * Math.random()).toInt()) shl 8) + (-10 + (Math.random() * 20.0).toInt() + 238 shl 16) - (-(Math.random() * 20.0).toInt() + -228)) or 0xffffff.inv())
                 val i_14_ = (228 - -(20.0 * Math.random()).toInt() shl 16 or 0xffffff.inv())
                 val i_15_ = ((8.0 * Math.random()).toInt() or ((8.0 * Math.random()).toInt() shl 16 or ((8.0 * Math.random()).toInt() shl 8)))
-                val bools = (Array<BooleanArray?>(3 + TextureLoadException.anInt4600) { BooleanArray(TextureLoadException.anInt4600 - -1 + 2) })
+                val bools = (Array<BooleanArray?>(3 + TextureLoadExceptionStatics.anInt4600) { BooleanArray(TextureLoadExceptionStatics.anInt4600 - -1 + 2) })
                 var i_16_ = i_5_
                 while (i_16_ < i_5_ - -104) {
                     var i_17_ = i_6_
@@ -130,33 +130,33 @@ class LongKeyNode : LinkedListNode {
                         }
                         var i_21_ = i_17_
                         if (i_21_ > 0) i_21_--
-                        var i_22_ = TextureLoadException.anInt4600 + i_16_
+                        var i_22_ = TextureLoadExceptionStatics.anInt4600 + i_16_
                         if (i_22_ < 104) i_22_++
-                        var i_23_ = i_17_ - -TextureLoadException.anInt4600
+                        var i_23_ = i_17_ - -TextureLoadExceptionStatics.anInt4600
                         if (i_23_ < 104) {
                             i_23_++
                             i_19_ += 4
                         }
-                        var_renderer.KA(0, 0, TextureLoadException.anInt4600 * 4 + i_18_, TextureLoadException.anInt4600 * 4 + i_19_)
+                        var_renderer.KA(0, 0, TextureLoadExceptionStatics.anInt4600 * 4 + i_18_, TextureLoadExceptionStatics.anInt4600 * 4 + i_19_)
                         var_renderer.GA(-16777216)
                         for (i_24_ in i..3) {
-                            for (i_25_ in 0..TextureLoadException.anInt4600) {
+                            for (i_25_ in 0..TextureLoadExceptionStatics.anInt4600) {
                                 var i_26_ = 0
-                                while ((i_26_ <= TextureLoadException.anInt4600)) {
+                                while ((i_26_ <= TextureLoadExceptionStatics.anInt4600)) {
                                     bools[i_25_]!![i_26_] = method536(i_21_ + i_26_, false, i_20_ + i_25_, i, i_24_)
                                     i_26_++
                                 }
                             }
                             TerrainTileShape.aTerrainTileArray8801!![i_24_]!!.method3987(0, 0, 1024, i_20_, i_21_, i_22_, i_23_, bools)
                             if (!PlayerAppearanceUpdateDecoder.aBoolean4542) {
-                                for (i_27_ in -4..<TextureLoadException.anInt4600) {
-                                    for (i_28_ in -4..<TextureLoadException.anInt4600) {
+                                for (i_27_ in -4..<TextureLoadExceptionStatics.anInt4600) {
+                                    for (i_28_ in -4..<TextureLoadExceptionStatics.anInt4600) {
                                         val i_29_ = i_16_ + i_27_
                                         val i_30_ = i_28_ + i_17_
                                         if (i_5_ <= i_29_ && i_6_ <= i_30_ && method536(i_30_, false, i_29_, i, i_24_)) {
                                             var i_31_ = i_24_
                                             if (method802(i_30_, i_29_, true)) i_31_--
-                                            if (i_31_ >= 0) RegionSceneShifter.Companion.method3159(i_14_, ((-i_28_ + (TextureLoadException.anInt4600)) * 4 + i_19_ + -4), false, i_31_, i_30_, i_29_, var_renderer, 4 * i_27_ + i_18_, i_13_)
+                                            if (i_31_ >= 0) RegionSceneShifter.Companion.method3159(i_14_, ((-i_28_ + (TextureLoadExceptionStatics.anInt4600)) * 4 + i_19_ + -4), false, i_31_, i_30_, i_29_, var_renderer, 4 * i_27_ + i_18_, i_13_)
                                         }
                                     }
                                 }
@@ -164,27 +164,27 @@ class LongKeyNode : LinkedListNode {
                         }
                         if (PlayerAppearanceUpdateDecoder.aBoolean4542) {
                             val class361 = TimedRecordAccessor.aCollisionMapArray7108s!![i]
-                            for (i_32_ in 0..<TextureLoadException.anInt4600) {
+                            for (i_32_ in 0..<TextureLoadExceptionStatics.anInt4600) {
                                 var i_33_ = 0
-                                while ((TextureLoadException.anInt4600 > i_33_)) {
+                                while ((TextureLoadExceptionStatics.anInt4600 > i_33_)) {
                                     val i_34_ = i_16_ + i_32_
                                     val i_35_ = i_33_ + i_17_
                                     val i_36_ = (class361!!.anIntArrayArray4438!![(-class361.anInt4453 + i_34_)]!![(-class361.anInt4441 + i_35_)])
-                                    if ((0x40240000 and i_36_) != 0) var_renderer.method3675(4, (-125).toByte(), i_32_ * 4 + i_18_, -4 + (TextureLoadException.anInt4600 + -i_33_) * 4 + i_19_, 4, -1713569622)
+                                    if ((0x40240000 and i_36_) != 0) var_renderer.method3675(4, (-125).toByte(), i_32_ * 4 + i_18_, -4 + (TextureLoadExceptionStatics.anInt4600 + -i_33_) * 4 + i_19_, 4, -1713569622)
                                     else if ((0x800000 and i_36_) == 0) {
-                                        if ((i_36_ and 0x2000000) != 0) var_renderer.method3660(3 + (i_18_ - -(i_32_ * 4)), -1713569622, 4, (-4 + (4 * (-i_33_ + (TextureLoadException.anInt4600)) + i_19_)), true)
-                                        else if ((i_36_ and 0x8000000) != 0) var_renderer.method3649((-126).toByte(), 4, 3 + (i_19_ + ((TextureLoadException.anInt4600) - i_33_) * 4) + -4, -1713569622, i_18_ + 4 * i_32_)
-                                        else if ((0x20000000 and i_36_) != 0) var_renderer.method3660(i_18_ + 4 * i_32_, -1713569622, 4, (4 * (-i_33_ + (TextureLoadException.anInt4600)) + (i_19_ - 4)), bool)
-                                    } else var_renderer.method3649((-113).toByte(), 4, (-4 + i_19_ + 4 * (-i_33_ + (TextureLoadException.anInt4600))), -1713569622, i_32_ * 4 + i_18_)
+                                        if ((i_36_ and 0x2000000) != 0) var_renderer.method3660(3 + (i_18_ - -(i_32_ * 4)), -1713569622, 4, (-4 + (4 * (-i_33_ + (TextureLoadExceptionStatics.anInt4600)) + i_19_)), true)
+                                        else if ((i_36_ and 0x8000000) != 0) var_renderer.method3649((-126).toByte(), 4, 3 + (i_19_ + ((TextureLoadExceptionStatics.anInt4600) - i_33_) * 4) + -4, -1713569622, i_18_ + 4 * i_32_)
+                                        else if ((0x20000000 and i_36_) != 0) var_renderer.method3660(i_18_ + 4 * i_32_, -1713569622, 4, (4 * (-i_33_ + (TextureLoadExceptionStatics.anInt4600)) + (i_19_ - 4)), bool)
+                                    } else var_renderer.method3649((-113).toByte(), 4, (-4 + i_19_ + 4 * (-i_33_ + (TextureLoadExceptionStatics.anInt4600))), -1713569622, i_32_ * 4 + i_18_)
                                     i_33_++
                                 }
                             }
                         }
-                        var_renderer.aa(i_18_, i_19_, 4 * TextureLoadException.anInt4600, TextureLoadException.anInt4600 * 4, i_15_, 2)
-                        GroundItemRenderState.aAbstractModelRenderer_1664!!.method979((-i_5_ + i_16_) * 4 + 48, (-(4 * (i_17_ - i_6_)) + 464 + -(TextureLoadException.anInt4600 * 4)), TextureLoadException.anInt4600 * 4, 4 * TextureLoadException.anInt4600, i_18_, i_19_)
-                        i_17_ += TextureLoadException.anInt4600
+                        var_renderer.aa(i_18_, i_19_, 4 * TextureLoadExceptionStatics.anInt4600, TextureLoadExceptionStatics.anInt4600 * 4, i_15_, 2)
+                        GroundItemRenderState.aAbstractModelRenderer_1664!!.method979((-i_5_ + i_16_) * 4 + 48, (-(4 * (i_17_ - i_6_)) + 464 + -(TextureLoadExceptionStatics.anInt4600 * 4)), TextureLoadExceptionStatics.anInt4600 * 4, 4 * TextureLoadExceptionStatics.anInt4600, i_18_, i_19_)
+                        i_17_ += TextureLoadExceptionStatics.anInt4600
                     }
-                    i_16_ += TextureLoadException.anInt4600
+                    i_16_ += TextureLoadExceptionStatics.anInt4600
                 }
                 var_renderer.la()
                 var_renderer.GA(-16777215)
@@ -273,7 +273,7 @@ class LongKeyNode : LinkedListNode {
                 }
                 return true
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.Companion.method2929(runtimeexception, ("ij.E(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ij.E(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
     }

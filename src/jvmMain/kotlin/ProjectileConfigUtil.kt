@@ -71,7 +71,7 @@ object ProjectileConfigUtil {
             }
             return stringbuffer.reverse().toString()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "ht.A(" + l + ',' + i + ')')
+            throw TextureLoadException.method2929(runtimeexception, "ht.A(" + l + ',' + i + ')')
         }
     }
 

@@ -49,7 +49,7 @@ class ArbVertexProgram(i: Int) : ShaderProgram() {
                 if (i_0_ != 4) return null
                 return TextureHandle(glRenderDevice!!, i, i_1_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("cu.A(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (glRenderDevice != null) "{...}" else "null") + ',' + i_0_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("cu.A(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (glRenderDevice != null) "{...}" else "null") + ',' + i_0_ + ')'))
             }
         }
 

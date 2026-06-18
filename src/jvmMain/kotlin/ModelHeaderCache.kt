@@ -58,7 +58,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             }
             return abstractModelRenderer_9_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ub.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (if (var_renderer_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ub.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (if (var_renderer_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'))
         }
     }
 
@@ -180,7 +180,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             aCrc64Hashable_3289!!.anInt4993 = i
             return this.aSizeBoundedSoftCache_3288.method1340(123, aCrc64Hashable_3289!!) as AbstractModelRenderer?
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -207,7 +207,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             aStringArray3290 = (arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null))
             aStringArray3293 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (emoteDefCache != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_22_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (emoteDefCache != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_22_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -343,7 +343,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 ScriptResources.aAbstractModelRendererArray2640 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) ScriptResources.aAbstractModelRendererArray2640!![i] = var_renderer.method3691(spriteImages[i], true)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ub.N(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ub.N(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
 
@@ -356,7 +356,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                     circleHitbox!!.method320(abstractModel.EA(), abstractModel.fa(), (-4).toByte(), i_11_, abstractModel.na(), i, abstractModel.V(), abstractModel.G(), abstractModel.HA(), i_10_, abstractModel.RA())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ub.H(" + i + ',' + i_10_ + ',' + (if (circleHitbox != null) "{...}" else "null") + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + bool + ',' + i_11_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ub.H(" + i + ',' + i_10_ + ',' + (if (circleHitbox != null) "{...}" else "null") + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + bool + ',' + i_11_ + ')'))
             }
         }
 

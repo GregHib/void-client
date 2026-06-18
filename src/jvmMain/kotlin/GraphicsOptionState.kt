@@ -71,7 +71,7 @@ abstract class GraphicsOptionState {
                 if (i != 7) aJs5Archive_3146 = null
                 RectangleRegion.aJs5Archive_1940 = js5Archive
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("su.Q(" + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (js5Archive_1_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("su.Q(" + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (js5Archive_1_ != null) "{...}" else "null") + ')'))
             }
         }
 

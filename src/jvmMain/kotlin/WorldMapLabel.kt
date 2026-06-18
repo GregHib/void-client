@@ -39,7 +39,7 @@ public open class WorldMapLabel(screenAnchorAlignment: ScreenAnchorAlignment?, t
             this.aScreenAnchorAlignment_4968 = screenAnchorAlignment
             this.anInt4963 = i_5_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fn.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fn.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 
@@ -70,7 +70,7 @@ public open class WorldMapLabel(screenAnchorAlignment: ScreenAnchorAlignment?, t
             if (i != 4) aFontDefinition_4962 = null
             GameAppletFrame.aFont_20 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, WidgetDefinition.anInt235)
             ParticleEmitterFactory.aFontDefinition_3179 = GlVertexBufferBase.method1151(-25411, var_renderer, WidgetDefinition.anInt235)
-            NodeDeque.aFont_3326 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, CutsceneSequenceData.anInt3736)
+            NodeDequeStatics.aFont_3326 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, CutsceneSequenceData.anInt3736)
             aFontDefinition_4962 = GlVertexBufferBase.method1151(-25411, var_renderer, CutsceneSequenceData.anInt3736)
         }
 

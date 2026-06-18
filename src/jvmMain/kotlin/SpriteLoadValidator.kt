@@ -10,7 +10,7 @@ class SpriteLoadValidator internal constructor(js5Archive: Js5Archive?, string: 
             aString4788 = string
             aJs5Archive_4789 = js5Archive
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nv.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nv.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 

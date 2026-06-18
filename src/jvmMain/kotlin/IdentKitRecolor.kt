@@ -126,7 +126,7 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                 class318_sub5.anInt6420 = i_27_
                 NpcDefinition.aDoublyLinkedNodeList_2957!!.method1869(-103, class318_sub5)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("go.F(" + i + ',' + i_25_ + ',' + i_26_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("go.F(" + i + ',' + i_25_ + ',' + i_26_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ')'))
             }
         }
 
@@ -177,13 +177,13 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                     WorldMapRenderer.aFont_4684!!.method2569("Build: 634", 350 + (i_36_ + -20), -1, (LocTypeDefinition.anInt4017 + i_35_ + -25), -121, -16777216)
                     var_renderer.KA(i_35_, i_36_, i_35_ - -LocTypeDefinition.anInt4017, i_36_ - -350)
                     var_renderer.method3649((-80).toByte(), LocTypeDefinition.anInt4017, -ProducerImageSurface.anInt9077 + (350 + i_36_), -1, i_35_)
-                    NodeDeque.aFont_3326!!.method2576("--> " + BackgroundWorkerThread.method1909(31.toByte(), MapElementManager.aString4461!!), -1, (i_36_ - (-350 + WorldMapLabel.aFontDefinition_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)
+                    NodeDequeStatics.aFont_3326!!.method2576("--> " + BackgroundWorkerThread.method1909(31.toByte(), MapElementManager.aString4461!!), -1, (i_36_ - (-350 + WorldMapLabel.aFontDefinition_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)
                     if (!SizeBoundedSoftCache.aBoolean2329) break
                     var i_45_ = -1
                     if (GlGroundShaderPass.anInt7396 % 30 > 15) i_45_ = 16777215
                     var_renderer.method3660(10 + (i_35_ - -(WorldMapLabel.aFontDefinition_4962!!.method1183(true, "--> " + (BackgroundWorkerThread.method1909(31.toByte(), MapElementManager.aString4461!!).substring(0, TerrainShadowBuilderGl3.anInt7006))))), i_45_, 12, 350 + (i_36_ + -WorldMapLabel.aFontDefinition_4962!!.anInt1993 - 11), true)
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("go.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("go.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
                 }
                 break
             } while (false)

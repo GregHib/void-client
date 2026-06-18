@@ -28,7 +28,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
             this.anInt4069 = aMovementDirection_4071!!.anInt1178 * anInt4072
             if (this.anInt4070 >= 16) throw RuntimeException()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("daa.<init>(" + i + ',' + i_78_ + ',' + (if (movementDirection != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("daa.<init>(" + i + ',' + i_78_ + ',' + (if (movementDirection != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -765,7 +765,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 JagGlToolkitFactory.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 FogOptionState.anInt6048 = 2
-                                val class348_sub47 = (method2148(TextureLoadException.aFontMetaRef_4601, TheoraVideoStream.aIsaacCipher_9029, -123))
+                                val class348_sub47 = (method2148(TextureLoadExceptionStatics.aFontMetaRef_4601, TheoraVideoStream.aIsaacCipher_9029, -123))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-67).toByte(), (if (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -122)) 1 else 0))
                                 InterfaceComponentGroup.method3243(119, class348_sub47)
@@ -997,7 +997,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                         }
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("daa.A(" + i + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ',' + i_72_ + ',' + i_73_ + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("daa.A(" + i + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ',' + i_72_ + ',' + i_73_ + ')'))
                 }
                 break
             } while (false)

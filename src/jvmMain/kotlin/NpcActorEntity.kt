@@ -39,7 +39,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
                 if (!aBoolean10090) break
                 this.aAbstractModel_10071 = this.aAbstractModel_10071!!.method614(0.toByte(), i_7_, false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ge.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + bool_6_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ge.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + bool_6_ + ')'))
             }
             break
         } while (false)
@@ -127,7 +127,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
             anInt10083++
         } catch (runtimeexception: RuntimeException) {
             runtimeexception.printStackTrace()
-            throw SoundBankPatch.method2929(runtimeexception, ("ge.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ge.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
         }
     }
 

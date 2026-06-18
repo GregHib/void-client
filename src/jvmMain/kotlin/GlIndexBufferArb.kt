@@ -42,7 +42,7 @@ class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, move
         try {
             aMovementDirection_8504 = movementDirection
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("mw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("mw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 

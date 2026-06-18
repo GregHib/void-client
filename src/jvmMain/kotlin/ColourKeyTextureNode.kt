@@ -59,7 +59,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
                 if (i_23_ == 31015) break
                 method3118(96.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("uf.F(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + i_23_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("uf.F(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + i_23_ + ')'))
             }
             break
         } while (false)

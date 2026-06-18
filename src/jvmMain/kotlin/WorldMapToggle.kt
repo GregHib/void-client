@@ -21,7 +21,7 @@ object WorldMapToggle {
             anInt3875++
             return oa(canvas, var_renderConfig, i_1_, i_0_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ws.C(" + i + ',' + i_0_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_1_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ws.C(" + i + ',' + i_0_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_1_ + ')'))
         }
     }
 

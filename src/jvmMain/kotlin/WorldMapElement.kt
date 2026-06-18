@@ -73,7 +73,7 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
             this.aJs5Archive_4632 = js5Archive
             this.aWorldMapLabel_4635 = worldMapLabel
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("gl.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_15_ != null) "{...}" else "null") + ',' + (if (worldMapLabel != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("gl.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_15_ != null) "{...}" else "null") + ',' + (if (worldMapLabel != null) "{...}" else "null") + ')'))
         }
     }
 

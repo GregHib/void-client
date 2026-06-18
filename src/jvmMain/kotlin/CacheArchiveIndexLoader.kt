@@ -32,7 +32,7 @@ class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjecto
                 val i_6_ = -1 + aJs5Archive_458.method414(-1)
                 aJs5Archive_458.method407(0, i_6_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("iba.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("iba.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

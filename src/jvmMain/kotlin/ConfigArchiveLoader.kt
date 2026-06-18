@@ -38,7 +38,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
             aJs5Archive_1436 = js5Archive
             this.anInt1439 = aJs5Archive_1436!!.method407(0, 15)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lba.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("lba.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -700,7 +700,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                 }
                 method94(LocalizedText.aLocalizedText_3486!!.method2063(AnimationFrameDefinition.anInt6967, 544) + string, 57)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("lba.B(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + bool_0_ + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("lba.B(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + bool_0_ + ',' + i + ')'))
             }
         }
 
@@ -744,7 +744,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                     method1725(262144)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "lba.A(" + i + ',' + l + ')')
+                throw TextureLoadException.method2929(runtimeexception, "lba.A(" + i + ',' + l + ')')
             }
         }
     }

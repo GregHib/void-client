@@ -315,7 +315,7 @@ open class SoundChannelMixer {
                 }
                 anInt3594++
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("cba.K(" + i + ',' + i_25_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_26_ + ',' + (if (objects != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("cba.K(" + i + ',' + i_25_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_26_ + ',' + (if (objects != null) "{...}" else "null") + ')'))
             }
         }
     }

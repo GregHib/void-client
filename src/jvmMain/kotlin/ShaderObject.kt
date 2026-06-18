@@ -39,7 +39,7 @@ open class ShaderObject {
                 }
                 return GlShaderObjectHandle(glRenderDevice, l, i_0_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("dea.E(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("dea.E(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ')'))
             }
         }
 

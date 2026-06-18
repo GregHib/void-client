@@ -218,7 +218,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             `is`[0] = (i_3_.toFloat() - this.aFloat8126).toInt()
             `is`[1] = (i_2_.toFloat() - this.aFloat8103).toInt()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.da(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.da(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -228,7 +228,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             this.aNativeHeap7891 = (var_shaderProgram as ArbVertexProgram).aNativeHeap9782
             this.aNativeHeapBuffer7974 = this.aNativeHeap7891!!.a(32768, false)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "wga.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
         }
     }
 
@@ -343,7 +343,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             this.aBoolean8069 = false
             method3836(1)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.JH(" + i + ',' + (if (class101_sub2 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.JH(" + i + ',' + (if (class101_sub2 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -401,7 +401,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt7957++
             return SceneEntityModel.method2501(i_31_, this, `is`, (-42).toByte(), is_32_, i)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.RF(" + i + ',' + i_31_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_32_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.RF(" + i + ',' + i_31_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_32_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -493,7 +493,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 `is`[0] = `is`[1]
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.HA(" + i + ',' + i_44_ + ',' + i_45_ + ',' + i_46_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.HA(" + i + ',' + i_44_ + ',' + i_45_ + ',' + i_46_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -512,7 +512,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         try {
             anInt8000++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.Q(" + i + ',' + i_49_ + ',' + i_50_ + ',' + i_51_ + ',' + i_52_ + ',' + i_53_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_54_ + ',' + i_55_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.Q(" + i + ',' + i_49_ + ',' + i_50_ + ',' + i_51_ + ',' + i_52_ + ',' + i_53_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_54_ + ',' + i_55_ + ')'))
         }
     }
 
@@ -528,7 +528,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (!this.aSingletonMarker_8184.method1450(-112)) break
                 method3913(107.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "wga.DE(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
+                throw TextureLoadException.method2929(runtimeexception, "wga.DE(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -700,7 +700,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             fs[11] = this.aFloatArray8135[14]
             return fs
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.OA(" + (if (fs != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.OA(" + (if (fs != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -738,7 +738,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt7965++
             return method3830(i_64_, `is`, bool, 107.toByte(), 0, 0, i)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.JG(" + i + ',' + i_64_ + ',' + i_65_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.JG(" + i + ',' + i_64_ + ',' + i_65_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -827,7 +827,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt8036++
             method3924(false, false, i_76_, trigLookupTables, false)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.NJ(" + i + ',' + i_76_ + ',' + (if (trigLookupTables != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.NJ(" + i + ',' + i_76_ + ',' + (if (trigLookupTables != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -866,7 +866,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             val i_84_ = 96 / ((i - 20) / 42)
             anInt7900++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.WA(" + i + ',' + (if (renderable != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.WA(" + i + ',' + (if (renderable != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -896,7 +896,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3879(-8629)
             method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.A(" + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_85_ + ',' + i_86_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.A(" + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_85_ + ',' + i_86_ + ')'))
         }
     }
 
@@ -905,7 +905,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt8016++
             return Direct3dModel(this, modelDefinition, i, i_88_, i_89_, i_87_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.EG(" + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_87_ + ',' + i_88_ + ',' + i_89_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.EG(" + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_87_ + ',' + i_88_ + ',' + i_89_ + ')'))
         }
     }
 
@@ -921,7 +921,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (canvas !== aCanvas7910) break
                 method3917(false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.HF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_90_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("wga.HF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_90_ + ')'))
             }
             break
         } while (false)
@@ -950,7 +950,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             this.aConfigFlagUtilArray8113[this.anInt8175] = configFlagUtil
             method3905(111.toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.HI(" + i + ',' + (if (configFlagUtil != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.HI(" + i + ',' + (if (configFlagUtil != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1003,7 +1003,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3862(0, aModelBatchBase_8197)
             method3899(i, 0, cameraRotationStub, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.QI(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + i_98_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.QI(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + i_98_ + ')'))
         }
     }
 
@@ -1025,7 +1025,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             `is`[2] = this.anInt8183
             `is`[1] = this.anInt8165
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.K(" + (if (`is` != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "wga.K(" + (if (`is` != null) "{...}" else "null") + ')')
         }
     }
 
@@ -1076,7 +1076,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         try {
             anInt7914++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.IF(" + i + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + i_107_ + ',' + i_108_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + i_112_ + ',' + i_113_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.IF(" + i + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + i_107_ + ',' + i_108_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + i_112_ + ',' + i_113_ + ')'))
         }
     }
 
@@ -1133,7 +1133,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt8011++
             return NativeTerrainTile(this, i_125_, i_126_, i, i_122_, `is`, is_123_, i_124_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.VE(" + i + ',' + i_122_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_123_ != null) "{...}" else "null") + ',' + i_124_ + ',' + i_125_ + ',' + i_126_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.VE(" + i + ',' + i_122_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_123_ != null) "{...}" else "null") + ',' + i_124_ + ',' + i_125_ + ',' + i_126_ + ')'))
         }
     }
 
@@ -1164,7 +1164,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (!bool) break
                 anInt8100 = anInt8100 and 0x1d.inv()
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.RI(" + (if (renderConfigFactory != null) "{...}" else "null") + ',' + i + ',' + (if (renderConfigFactory_129_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("wga.RI(" + (if (renderConfigFactory != null) "{...}" else "null") + ',' + i + ',' + (if (renderConfigFactory_129_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -1366,7 +1366,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (bool == true) break
                 method3643(null, -42, 69)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.IH(" + i + ',' + bool + ',' + (if (trigLookupTables != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("wga.IH(" + i + ',' + bool + ',' + (if (trigLookupTables != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -1432,7 +1432,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt8052++
             return method3855(textureFormatInfo, i, 0, fs, bool, 0, 2, i_168_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.LI(" + (if (fs != null) "{...}" else "null") + ',' + i + ',' + i_168_ + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_169_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.LI(" + (if (fs != null) "{...}" else "null") + ',' + i + ',' + i_168_ + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_169_ + ',' + bool + ')'))
         }
     }
 
@@ -1445,7 +1445,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             if (i != 9179) this.aFloat8093 = -1.2765714f
             return aStream8088!!
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.FI(" + (if (buffer != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.FI(" + (if (buffer != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -1468,7 +1468,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             `is`[0] = this.anInt7931
             anInt8076++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.KE(" + (if (`is` != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "wga.KE(" + (if (`is` != null) "{...}" else "null") + ')')
         }
     }
 
@@ -1477,7 +1477,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             aClass299_Sub2_8171 = circleRasterizer as TextureCubeProvider?
             anInt7950++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.DF(" + (if (circleRasterizer != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "wga.DF(" + (if (circleRasterizer != null) "{...}" else "null") + ')')
         }
     }
 
@@ -1630,7 +1630,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (`object` == null) throw RuntimeException()
                 aHashtable8014!!.put(canvas, `object`)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.VF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_195_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("wga.VF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_195_ + ')'))
             }
             break
         } while (false)
@@ -1735,7 +1735,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             aGroundDecorRenderer_8136!!.method2101(this, nodeDequeHolder, i, 0)
             anInt7968++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.FG(" + (if (nodeDequeHolder != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.FG(" + (if (nodeDequeHolder != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -1772,7 +1772,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             abstractModelRenderer.method985(spriteImage.anInt2703, spriteImage.anInt2700, spriteImage.anInt2698, spriteImage.anInt2701)
             return abstractModelRenderer
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.GF(" + (if (spriteImage != null) "{...}" else "null") + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.GF(" + (if (spriteImage != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -1780,7 +1780,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         try {
             anInt7918++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.ME(" + i + ',' + i_217_ + ',' + i_218_ + ',' + i_219_ + ',' + i_220_ + ',' + i_221_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_222_ + ',' + i_223_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.ME(" + i + ',' + i_217_ + ',' + i_218_ + ',' + i_219_ + ',' + i_220_ + ',' + i_221_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_222_ + ',' + i_223_ + ')'))
         }
     }
 
@@ -1982,7 +1982,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3881(anObject8020, 99.toByte(), aCanvas7910)
             method3917(false)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.MF(" + (if (canvas != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "wga.MF(" + (if (canvas != null) "{...}" else "null") + ')')
         }
     }
 
@@ -2132,7 +2132,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 method3911(canvas, 1, aHashtable8014!!.get(canvas))
                 aHashtable8014!!.remove(canvas)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "wga.AG(" + (if (canvas != null) "{...}" else "null") + ')')
+                throw TextureLoadException.method2929(runtimeexception, "wga.AG(" + (if (canvas != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -2143,7 +2143,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt7944++
             return AnimatedModelRenderer(this, i_261_, i_262_, `is`, i, i_260_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.BE(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_260_ + ',' + i_261_ + ',' + i_262_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.BE(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_260_ + ',' + i_261_ + ',' + i_262_ + ',' + bool + ')'))
         }
     }
 
@@ -2239,7 +2239,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             `is`[0] = (i_267_.toFloat() - this.aFloat8126).toInt()
             `is`[2] = f.toInt()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.H(" + i + ',' + i_264_ + ',' + i_265_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.H(" + i + ',' + i_264_ + ',' + i_265_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2300,7 +2300,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt7952++
             return GlFontTextured(this, fontDefinition, spriteImages as Array<SpriteImage>, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (spriteImages != null) "{...}" else "null") + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (spriteImages != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -2313,7 +2313,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (!this.aSingletonMarker_8184.method1450(-94)) break
                 method3823(51.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.FF(" + i + ',' + (if (class348_sub1s != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("wga.FF(" + i + ',' + (if (class348_sub1s != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -2371,7 +2371,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt7929++
             return method3843(i_288_, 0, i, 0, `is`, textureFormatInfo, i_287_ xor 0x22, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.MG(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_287_ + ',' + bool + ',' + i_288_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.MG(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_287_ + ',' + bool + ',' + i_288_ + ')'))
         }
     }
 
@@ -2398,7 +2398,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             aGroundDecorRenderer_8136!!.method2101(this, nodeDequeHolder, -1, 0)
             anInt7984++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.EF(" + (if (nodeDequeHolder != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "wga.EF(" + (if (nodeDequeHolder != null) "{...}" else "null") + ')')
         }
     }
 
@@ -2528,7 +2528,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 throw RuntimeException("")
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + i_289_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wga.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + i_289_ + ')'))
         }
     }
 
@@ -2955,7 +2955,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 ArrayCopyUtil.method1577(`is`, i, is_128_, 0, i_127_)
                 return is_128_
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.GI(" + (if (`is` != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("wga.GI(" + (if (`is` != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
 
@@ -2975,7 +2975,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     if (i.toInt() == 13) break
                     method3873(null, -3)
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("wga.DI(" + (if (huffmanCodec != null) "{...}" else "null") + ',' + i + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("wga.DI(" + (if (huffmanCodec != null) "{...}" else "null") + ',' + i + ')'))
                 }
                 break
             } while (false)
@@ -2984,12 +2984,12 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         @JvmStatic
         fun method3936(i: Int) {
             anInt7990++
-            if (NodeDeque.aModelLightingConfigArrayArray3335 != null) {
+            if (NodeDequeStatics.aModelLightingConfigArrayArray3335 != null) {
                 var i_274_ = 0
-                while ((i_274_ < NodeDeque.aModelLightingConfigArrayArray3335!!.size)) {
+                while ((i_274_ < NodeDequeStatics.aModelLightingConfigArrayArray3335!!.size)) {
                     var i_275_ = 0
-                    while ((NodeDeque.aModelLightingConfigArrayArray3335!![i_274_]!!.size > i_275_)) {
-                        NodeDeque.aModelLightingConfigArrayArray3335!![i_274_]!![i_275_] = LocalizedText.aModelLightingConfig_3547
+                    while ((NodeDequeStatics.aModelLightingConfigArrayArray3335!![i_274_]!!.size > i_275_)) {
+                        NodeDequeStatics.aModelLightingConfigArrayArray3335!![i_274_]!![i_275_] = LocalizedText.aModelLightingConfig_3547
                         i_275_++
                     }
                     i_274_++

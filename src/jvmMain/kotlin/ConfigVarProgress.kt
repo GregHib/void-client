@@ -73,7 +73,7 @@ class ConfigVarProgress internal constructor(private val aString4807: String?) :
                     PixelBlender.method2252(true, i_0_, i, (-99).toByte(), i_5_, i_7_, i_6_, 0, 0)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("cf.B(" + i + ',' + l + ',' + i_0_ + ',' + i_1_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("cf.B(" + i + ',' + l + ',' + i_0_ + ',' + i_1_ + ')'))
             }
         }
 
@@ -133,7 +133,7 @@ class ConfigVarProgress internal constructor(private val aString4807: String?) :
                         aStringArray4818 = null
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("cf.G(" + i + ',' + i_14_ + ',' + (if (nodeDeque != null) "{...}" else "null") + ',' + i_15_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("cf.G(" + i + ',' + i_14_ + ',' + (if (nodeDeque != null) "{...}" else "null") + ',' + i_15_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

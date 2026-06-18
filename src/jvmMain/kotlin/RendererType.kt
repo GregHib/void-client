@@ -1,4 +1,3 @@
-import SoundBankPatch.Companion.method2929
 
 /* Class365 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -18,7 +17,7 @@ class RendererType internal constructor(i: Int, string: String?, i_0_: Int, stri
             this.aString4472 = string_1_
             this.aString4470 = string
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("fia.<init>(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + l + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fia.<init>(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + l + ')'))
         }
     }
 

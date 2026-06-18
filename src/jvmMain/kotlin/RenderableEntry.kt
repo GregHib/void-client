@@ -1,4 +1,3 @@
-import SoundBankPatch.Companion.method2929
 import CompletedResourceRequest.Companion.method3265
 
 /* Class352 - Decompiled by JODE
@@ -19,7 +18,7 @@ class RenderableEntry {
             this.aFontDefinition_4333 = fontDefinition
             this.aFont_4332 = font
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("el.<init>(" + (if (font != null) "{...}" else "null") + ',' + (if (fontDefinition != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("el.<init>(" + (if (font != null) "{...}" else "null") + ',' + (if (fontDefinition != null) "{...}" else "null") + ')'))
         }
     }
 

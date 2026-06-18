@@ -170,7 +170,7 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
                 }
                 break
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("vj.F(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + i_39_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("vj.F(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + i_39_ + ')'))
             }
         } while (false)
     }
@@ -285,7 +285,7 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
                         }
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("vj.B(" + i + ',' + (if (string != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("vj.B(" + i + ',' + (if (string != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

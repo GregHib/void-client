@@ -12,7 +12,7 @@ class LocalizedTextTriple internal constructor(string: String?, string_4_: Strin
             this.aString3758 = string_5_
             this.aString3756 = string
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wc.<init>(" + (if (string != null) "{...}" else "null") + ',' + (if (string_4_ != null) "{...}" else "null") + ',' + (if (string_5_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wc.<init>(" + (if (string != null) "{...}" else "null") + ',' + (if (string_4_ != null) "{...}" else "null") + ',' + (if (string_5_ != null) "{...}" else "null") + ')'))
         }
     }
 

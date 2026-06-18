@@ -214,7 +214,7 @@ class ModelLightingConfig {
                 }
                 return false
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("bp.C(" + i + ',' + (if (structConfig != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_6_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("bp.C(" + i + ',' + (if (structConfig != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_6_ + ')'))
             }
         }
 

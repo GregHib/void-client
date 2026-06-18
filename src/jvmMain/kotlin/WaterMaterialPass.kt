@@ -84,7 +84,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                     method2149(-25)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("em.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("em.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -214,7 +214,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                 class348_sub47.anInt7119 = 0
                 return class348_sub47
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("em.C(" + (if (fontMetaRef != null) "{...}" else "null") + ',' + (if (isaacCipher != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("em.C(" + (if (fontMetaRef != null) "{...}" else "null") + ',' + (if (isaacCipher != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
 

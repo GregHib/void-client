@@ -368,7 +368,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
                 if (aIndexedFileCache_6364 == null) break
                 aClass348_Sub42_Sub16_6355 = aScriptCompilerThread_6354!!.method1055(aIndexedFileCache_6364, anInt6350, (-112).toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("bja.<init>(" + i + ',' + (if (indexedFileCache != null) "{...}" else "null") + ',' + (if (indexedFileCache_23_ != null) "{...}" else "null") + ',' + (if (mediaStreamClient != null) "{...}" else "null") + ',' + (if (scriptCompilerThread != null) "{...}" else "null") + ',' + i_24_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("bja.<init>(" + i + ',' + (if (indexedFileCache != null) "{...}" else "null") + ',' + (if (indexedFileCache_23_ != null) "{...}" else "null") + ',' + (if (mediaStreamClient != null) "{...}" else "null") + ',' + (if (scriptCompilerThread != null) "{...}" else "null") + ',' + i_24_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))
             }
             break
         } while (false)

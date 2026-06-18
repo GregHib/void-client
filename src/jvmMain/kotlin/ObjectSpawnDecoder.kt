@@ -86,7 +86,7 @@ object ObjectSpawnDecoder {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nga.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class237_sub1 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nga.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class237_sub1 != null) "{...}" else "null") + ')'))
         }
     }
 

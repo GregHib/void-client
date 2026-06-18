@@ -39,7 +39,7 @@ class SplashImageLoadable internal constructor(js5Archive: Js5Archive?, configVa
             aJs5Archive_4694 = js5Archive
             aConfigValueProvider_4687 = configValueProvider
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("uk.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (configValueProvider != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("uk.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (configValueProvider != null) "{...}" else "null") + ')'))
         }
     }
 

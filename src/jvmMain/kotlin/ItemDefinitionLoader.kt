@@ -72,7 +72,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
             this.aJs5Archive_2180 = js5Archive_9_
             aJs5Archive_2188!!.method407(0, 33)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("pg.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_9_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("pg.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_9_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -101,7 +101,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
                     if (i == 64) break
                     aIntRange_2183 = null
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("pg.F(" + (if (file != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("pg.F(" + (if (file != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

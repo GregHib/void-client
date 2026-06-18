@@ -78,7 +78,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
                 class348_sub42_sub9_sub1.aLong7057 = 0L
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("pq.L(" + (if (`object` != null) "{...}" else "null") + ',' + (if (keyedComparable != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("pq.L(" + (if (`object` != null) "{...}" else "null") + ',' + (if (keyedComparable != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ')'))
         }
     }
 
@@ -146,7 +146,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
                 if (i > 62) break
                 aLinkedNodeListIterator_2316 = null
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("pq.K(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (keyedComparable != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("pq.K(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (keyedComparable != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

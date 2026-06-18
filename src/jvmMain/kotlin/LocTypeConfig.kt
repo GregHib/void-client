@@ -80,7 +80,7 @@ class LocTypeConfig {
             try {
                 return l or l_0_
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "vd.D(" + l + ',' + l_0_ + ')')
+                throw TextureLoadException.method2929(runtimeexception, "vd.D(" + l + ',' + l_0_ + ')')
             }
         }
 

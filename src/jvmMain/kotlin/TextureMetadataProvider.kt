@@ -162,7 +162,7 @@ class TextureMetadataProvider internal constructor(js5Archive: Js5Archive?, js5A
                 i++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tda.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_12_ != null) "{...}" else "null") + ',' + (if (js5Archive_13_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("tda.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_12_ != null) "{...}" else "null") + ',' + (if (js5Archive_13_ != null) "{...}" else "null") + ')'))
         }
     }
 

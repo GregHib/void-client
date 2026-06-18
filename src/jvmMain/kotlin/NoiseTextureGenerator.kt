@@ -316,7 +316,7 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("jp.I(" + i + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (structConfig != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("jp.I(" + i + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (structConfig != null) "{...}" else "null") + ')'))
             }
         }
     }

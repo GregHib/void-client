@@ -39,7 +39,7 @@ class SoundBankPatch : LinkedListNode {
             }
             return bool
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("jf.B(" + (if (spriteArchiveLoader != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("jf.B(" + (if (spriteArchiveLoader != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -396,7 +396,6 @@ class SoundBankPatch : LinkedListNode {
     companion object {
         @JvmField
         var aBoolean6788: Boolean = false
-        var anInt6789: Int = 0
         var anInt6790: Int = 0
         var aLong6791: Long = 0L
         var anInt6794: Int = 0
@@ -411,20 +410,6 @@ class SoundBankPatch : LinkedListNode {
                 anInt6790++
                 HintArrowOrMessage.anInt2021 = 0
             }
-        }
-
-        @JvmStatic
-        fun method2929(throwable: Throwable, string: String?): TextureLoadException {
-            anInt6789++
-            if (Loader.trace) {
-                throwable.printStackTrace()
-            }
-            val runtimeexception_sub1: TextureLoadException
-            if (throwable is TextureLoadException) {
-                runtimeexception_sub1 = throwable
-                runtimeexception_sub1.aString4594 += ' '.toString() + string
-            } else runtimeexception_sub1 = TextureLoadException(throwable, string)
-            return runtimeexception_sub1
         }
 
         @JvmStatic
@@ -476,7 +461,7 @@ class SoundBankPatch : LinkedListNode {
                     npc.anInt10218 = i
                     npc.anInt10322 = (npc.anInt10319)
                 } catch (runtimeexception: RuntimeException) {
-                    throw method2929(runtimeexception, ("jf.E(" + i + ',' + i_1_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (npc != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("jf.E(" + i + ',' + i_1_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (npc != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

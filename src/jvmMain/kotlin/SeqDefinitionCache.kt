@@ -150,7 +150,7 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 val i_30_ = aJs5Archive_3343.method414(-1) + -1
                 aJs5Archive_3343.method407(0, i_30_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("uha.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_29_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("uha.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_29_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -337,11 +337,11 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     is_28_[5] = class348_sub49.readUnsignedShort(842397944)
                 } else if (i_23_ == 4) {
                     val i_24_ = class348_sub49.readUnsignedByte(255)
-                    TextureLoadException.anIntArray4603 = IntArray(i_24_)
+                    TextureLoadExceptionStatics.anIntArray4603 = IntArray(i_24_)
                     var i_25_ = 0
                     while (i_24_ > i_25_) {
-                        TextureLoadException.anIntArray4603!![i_25_] = class348_sub49.readUnsignedShort(842397944)
-                        if (TextureLoadException.anIntArray4603!![i_25_] == 65535) TextureLoadException.anIntArray4603!![i_25_] = -1
+                        TextureLoadExceptionStatics.anIntArray4603!![i_25_] = class348_sub49.readUnsignedShort(842397944)
+                        if (TextureLoadExceptionStatics.anIntArray4603!![i_25_] == 65535) TextureLoadExceptionStatics.anIntArray4603!![i_25_] = -1
                         i_25_++
                     }
                 } else if (i_23_ == 5) {

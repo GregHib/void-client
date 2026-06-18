@@ -35,7 +35,7 @@ class DualMaterialContainer internal constructor(js5Archive: Js5Archive?, js5Arc
             aJs5Archive_1637 = js5Archive
             aJs5Archive_1641 = js5Archive_0_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("mia.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_0_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("mia.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_0_ != null) "{...}" else "null") + ')'))
         }
     }
 

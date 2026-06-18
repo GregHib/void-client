@@ -1,5 +1,4 @@
 import CollisionMapAccessor.method2064
-import SoundBankPatch.Companion.method2929
 import kotlin.math.atan2
 import kotlin.math.sqrt
 
@@ -38,7 +37,7 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
             this.aLong9600 = l_21_
             this.anInt9602 = i_18_
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("db.<init>(" + (if (string != null) "{...}" else "null") + ',' + (if (string_15_ != null) "{...}" else "null") + ',' + i + ',' + i_16_ + ',' + i_17_ + ',' + l + ',' + i_18_ + ',' + i_19_ + ',' + bool + ',' + bool_20_ + ',' + l_21_ + ',' + bool_22_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("db.<init>(" + (if (string != null) "{...}" else "null") + ',' + (if (string_15_ != null) "{...}" else "null") + ',' + i + ',' + i_16_ + ',' + i_17_ + ',' + l + ',' + i_18_ + ',' + i_19_ + ',' + bool + ',' + bool_20_ + ',' + l_21_ + ',' + bool_22_ + ')'))
         }
     }
 
@@ -83,7 +82,7 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
                     for (i_2_ in i..<CompositeRgbNoiseTexture.anIntArray8684!!.size) DisplaceTextureNode.aByteArrayArrayArray9134!![i_2_] = arrayOfNulls<ByteArray>(is_1_[i_2_])
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, ("db.D(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("db.D(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
 

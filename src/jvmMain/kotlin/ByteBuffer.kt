@@ -4,7 +4,6 @@ import LoadProgressCounters.Companion.method1372
 import CameraConfigDefinition.Companion.method1922
 import CacheIndexManager.Companion.method2355
 import RsaPacketDecoder.Companion.method2672
-import SoundBankPatch.Companion.method2929
 import AbstractFrameBufferSurface.Companion.method3007
 import CombineTextureNode.Companion.method3088
 import SpriteRgbTextureNode.Companion.method3093
@@ -247,7 +246,7 @@ open class ByteBuffer : LinkedListNode {
                 i_42_ -= 8
             }
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("cea.JB(" + i + ',' + l + ',' + i_40_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("cea.JB(" + i + ',' + l + ',' + i_40_ + ')'))
         }
     }
 
@@ -531,7 +530,7 @@ open class ByteBuffer : LinkedListNode {
             writeShort(107.toByte(), is_89_.size)
             writeBytes(is_89_.size, 0, is_89_, 85)
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("cea.SA(" + (if (biginteger != null) "{...}" else "null") + ',' + i + ',' + (if (biginteger_85_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("cea.SA(" + (if (biginteger != null) "{...}" else "null") + ',' + i + ',' + (if (biginteger_85_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -557,7 +556,7 @@ open class ByteBuffer : LinkedListNode {
             this.aByteArray7154!![this.anInt7197++] = (l shr 8).toInt().toByte()
             this.aByteArray7154!![this.anInt7197++] = l.toInt().toByte()
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, "cea.BB(" + l + ',' + i + ')')
+            throw TextureLoadException.method2929(runtimeexception, "cea.BB(" + l + ',' + i + ')')
         }
     }
 
@@ -725,8 +724,8 @@ open class ByteBuffer : LinkedListNode {
             anInt7201++
             if (i_71_ != WorldMapRenderer.anInt4674) {
                 if (i_71_ == 13) {
-                    if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157(TextureLoadException.anInt4596, (-81).toByte())
-                    else method1922(TextureGenerator.aString2496, TextureLoadException.anInt4596, OpenGlModel.aString5600, true)
+                    if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157(TextureLoadExceptionStatics.anInt4596, (-81).toByte())
+                    else method1922(TextureGenerator.aString2496, TextureLoadExceptionStatics.anInt4596, OpenGlModel.aString5600, true)
                 }
                 if (i_71_ != 13 && ItemDefinition.aAbstractGameSocket_2773 != null) {
                     ItemDefinition.aAbstractGameSocket_2773!!.method1700(36.toByte())
@@ -739,14 +738,14 @@ open class ByteBuffer : LinkedListNode {
                     else method1372(-1)
                 } else if (i_71_ != 6) {
                     if (i_71_ == 9) {
-                        if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157((TextureLoadException.anInt4596), (-120).toByte())
-                        else method1922(TextureGenerator.aString2496, TextureLoadException.anInt4596, OpenGlModel.aString5600, true)
+                        if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157((TextureLoadExceptionStatics.anInt4596), (-120).toByte())
+                        else method1922(TextureGenerator.aString2496, TextureLoadExceptionStatics.anInt4596, OpenGlModel.aString5600, true)
                     } else if (i_71_ == 12) {
                         if (NullOggStream.aString9043 == null) method1213(OpenGlModel.aString5600, TextureGenerator.aString2496, -98)
                         else method1372(-1)
                     }
-                } else if (NullOggStream.aString9043 == null) method1922(TextureGenerator.aString2496, TextureLoadException.anInt4596, OpenGlModel.aString5600, true)
-                else GlElementArrayBuffer.method1157(TextureLoadException.anInt4596, (-99).toByte())
+                } else if (NullOggStream.aString9043 == null) method1922(TextureGenerator.aString2496, TextureLoadExceptionStatics.anInt4596, OpenGlModel.aString5600, true)
+                else GlElementArrayBuffer.method1157(TextureLoadExceptionStatics.anInt4596, (-99).toByte())
                 if (GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
                     DirectionUtil.aJs5Archive_1541!!.anInt634 = 2
                     VideoAdChecker.aJs5Archive_3183!!.anInt634 = 2

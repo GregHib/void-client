@@ -296,7 +296,7 @@ class TerrainShadowBuilderGl3 internal constructor(var_ha_Sub3: NativeRenderer?,
             aStream7021 = null
             aHashtable_7011 = null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.Companion.method2929(runtimeexception, ("sea.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("sea.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 

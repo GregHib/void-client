@@ -21,7 +21,7 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
         try {
             aStringArray3481 = arrayOf<String?>(string, string_7_, string_8_, string_9_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("va.<init>(" + (if (string != null) "{...}" else "null") + ',' + (if (string_7_ != null) "{...}" else "null") + ',' + (if (string_8_ != null) "{...}" else "null") + ',' + (if (string_9_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("va.<init>(" + (if (string != null) "{...}" else "null") + ',' + (if (string_7_ != null) "{...}" else "null") + ',' + (if (string_8_ != null) "{...}" else "null") + ',' + (if (string_9_ != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -37,7 +37,7 @@ class TooltipComponentRenderer internal constructor(js5Archive: Js5Archive?, js5
             aHeapInfoRecord_4646 = heapInfoRecord
             aJs5Archive_4650 = js5Archive
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("kd.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_3_ != null) "{...}" else "null") + ',' + (if (heapInfoRecord != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("kd.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_3_ != null) "{...}" else "null") + ',' + (if (heapInfoRecord != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -257,7 +257,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(
+                throw TextureLoadException.method2929(
                     runtimeexception,
                     ("sr.M(" + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (is_2_ != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (locTypeConfig != null) "{...}" else "null") + ',' + (if (hslColorConfig != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
                 )
@@ -745,7 +745,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 i_71_++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sr.B(" + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_64_ != null) "{...}" else "null") + ',' + i + ',' + (if (var_terrainTile_65_ != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("sr.B(" + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_64_ != null) "{...}" else "null") + ',' + i + ',' + (if (var_terrainTile_65_ != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ')'))
         }
     }
 
@@ -899,7 +899,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sr.L(" + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + (if (var_terrainTile_179_ != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("sr.L(" + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + (if (var_terrainTile_179_ != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -929,7 +929,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 i_209_++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sr.I(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + (if (collisionMaps != null) "{...}" else "null") + ',' + i_197_ + ',' + i_198_ + ',' + i_199_ + ',' + i_200_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("sr.I(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + (if (collisionMaps != null) "{...}" else "null") + ',' + i_197_ + ',' + i_198_ + ',' + i_199_ + ',' + i_200_ + ')'))
         }
     }
 
@@ -1137,7 +1137,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 if (i_223_ >= 115) break
                 this.anInt3117 = 57
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("sr.H(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + i_223_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (var_terrainTile_224_ != null) "{...}" else "null") + ',' + (if (var_terrainTile_225_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("sr.H(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + i_223_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (var_terrainTile_224_ != null) "{...}" else "null") + ',' + (if (var_terrainTile_225_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -1235,7 +1235,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sr.E(" + i + ',' + i_272_ + ',' + i_273_ + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + i_274_ + ',' + i_275_ + ',' + i_276_ + ',' + (if (collisionMaps != null) "{...}" else "null") + ',' + i_277_ + ',' + i_278_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("sr.E(" + i + ',' + i_272_ + ',' + i_273_ + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + i_274_ + ',' + i_275_ + ',' + i_276_ + ',' + (if (collisionMaps != null) "{...}" else "null") + ',' + i_277_ + ',' + i_278_ + ')'))
         }
     }
 
@@ -1279,7 +1279,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 i_304_++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sr.J(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (collisionMaps != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("sr.J(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (collisionMaps != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1310,7 +1310,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
             aByteArrayArrayArray3126 = (Array<Array<ByteArray?>?>(this.anInt3130) { Array<ByteArray?>(this.anInt3117) { ByteArray(this.anInt3114) } })
             aByteArrayArrayArray3123 = (Array<Array<ByteArray?>?>(this.anInt3130) { Array<ByteArray?>(this.anInt3117) { ByteArray(this.anInt3114) } })
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sr.<init>(" + i + ',' + i_315_ + ',' + i_316_ + ',' + bool + ',' + (if (locDefinitionCache != null) "{...}" else "null") + ',' + (if (particleDefLoader != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("sr.<init>(" + i + ',' + i_315_ + ',' + i_316_ + ',' + bool + ',' + (if (locDefinitionCache != null) "{...}" else "null") + ',' + (if (particleDefLoader != null) "{...}" else "null") + ')'))
         }
     }
 

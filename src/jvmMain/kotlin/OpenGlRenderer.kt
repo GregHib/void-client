@@ -1,4 +1,3 @@
-import TextureLoadException.Companion.method4009
 import jaclib.memory.Buffer
 import jaclib.memory.Stream
 import jaclib.memory.heap.NativeHeap
@@ -356,7 +355,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7579++
             return OpenGlModel(this, modelDefinition, i, i_3_, i_4_, i_2_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.EG(" + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.EG(" + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'))
         }
     }
 
@@ -395,7 +394,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7550++
             aClass299_Sub1_7769 = circleRasterizer as Texture2DProvider?
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "qo.DF(" + (if (circleRasterizer != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "qo.DF(" + (if (circleRasterizer != null) "{...}" else "null") + ')')
         }
     }
 
@@ -406,7 +405,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             if (aBoolean7873 && (!bool || aBoolean7869)) return GlArrayBufferObject(this, i_8_, `is`, i_9_, bool)
             return NativeIndexBuffer(this, i_8_, `is`, i_9_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.VB(" + i + ',' + bool + ',' + i_8_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_9_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.VB(" + i + ',' + bool + ',' + i_8_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_9_ + ')'))
         }
     }
 
@@ -436,7 +435,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             if (aBoolean7873 && (!bool || aBoolean7869)) return GlElementArrayBuffer(this, i, `is`, i_15_, bool)
             return NativeVertexBuffer(this, i, `is`, i_15_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.G(" + i + ',' + i_14_ + ',' + i_15_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.G(" + i + ',' + i_14_ + ',' + i_15_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -496,7 +495,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             glEnd()
             method3762(5890, 768, (-87).toByte(), 0)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.ME(" + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_25_ + ',' + i_26_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.ME(" + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_25_ + ',' + i_26_ + ')'))
         }
     }
 
@@ -530,7 +529,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             if (aBoolean7873 && (!bool || aBoolean7869)) return GlArrayBufferObject(this, i_35_, buffer, i_36_, bool)
             return NativeIndexBuffer(this, i_35_, buffer)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.OG(" + i + ',' + (if (buffer != null) "{...}" else "null") + ',' + bool + ',' + i_35_ + ',' + i_36_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.OG(" + i + ',' + (if (buffer != null) "{...}" else "null") + ',' + bool + ',' + i_35_ + ',' + i_36_ + ')'))
         }
     }
 
@@ -579,7 +578,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 `is`[0] = `is`[1]
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.HA(" + i + ',' + i_37_ + ',' + i_38_ + ',' + i_39_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.HA(" + i + ',' + i_37_ + ',' + i_38_ + ',' + i_39_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -711,7 +710,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7580++
             `is`[2] = anInt7855
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "qo.K(" + (if (`is` != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "qo.K(" + (if (`is` != null) "{...}" else "null") + ')')
         }
     }
 
@@ -759,7 +758,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             method3775(false, 0, 770, 5890)
             method3775(false, 2, 770, 34166)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.Q(" + i + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + i_61_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_62_ + ',' + i_63_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.Q(" + i + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + i_61_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_62_ + ',' + i_63_ + ')'))
         }
     }
 
@@ -768,7 +767,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             aParticleSortRenderer_7711.method1651(this, (-119).toByte(), -1, nodeDequeHolder)
             anInt7569++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "qo.EF(" + (if (nodeDequeHolder != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "qo.EF(" + (if (nodeDequeHolder != null) "{...}" else "null") + ')')
         }
     }
 
@@ -793,7 +792,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (anInt7865 == 1) break
                 method3754(89.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "qo.DE(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
+                throw TextureLoadException.method2929(runtimeexception, "qo.DE(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -808,7 +807,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             }
             anInt7552++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.D(" + i + ',' + (if (byteBufferReader != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.D(" + i + ',' + (if (byteBufferReader != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -856,7 +855,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anStagedInitializer_7740 = stagedInitializer
             anStagedInitializer_7740!!.method47(-11421)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.NG(" + (if (stagedInitializer != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.NG(" + (if (stagedInitializer != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -876,7 +875,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7574++
             return GlFontDisplayList(this, fontDefinition, spriteImages!!, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (spriteImages != null) "{...}" else "null") + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (spriteImages != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -1067,7 +1066,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7653++
             glMultMatrixf(class101_sub3!!.method940(1), 0)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.WC(" + bool + ',' + (if (class101_sub3 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.WC(" + bool + ',' + (if (class101_sub3 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1086,7 +1085,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             method3793(1, byteArrayCodec)
             glDrawElements(i_119_, i, i_121_, (byteArrayCodec.method36(78.toByte()) + i_120_.toLong()))
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.MA(" + i + ',' + i_118_ + ',' + i_119_ + ',' + (if (byteArrayCodec != null) "{...}" else "null") + ',' + i_120_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.MA(" + i + ',' + i_118_ + ',' + i_119_ + ',' + (if (byteArrayCodec != null) "{...}" else "null") + ',' + i_120_ + ')'))
         }
     }
 
@@ -1258,7 +1257,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 anStagedInitializer_7740!!.method47(-11421)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.FA(" + i + ',' + (if (stagedInitializer != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.FA(" + i + ',' + (if (stagedInitializer != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1278,7 +1277,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (i.toInt() == 55) break
                 method3782(null, -47)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qo.GC(" + i + ',' + (if (class101_sub3 != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("qo.GC(" + i + ',' + (if (class101_sub3 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -1301,7 +1300,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 anOpenGL7664!!.releaseSurface(canvas, var_long)
                 aHashtable7577.remove(canvas)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "qo.AG(" + (if (canvas != null) "{...}" else "null") + ')')
+                throw TextureLoadException.method2929(runtimeexception, "qo.AG(" + (if (canvas != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -1453,7 +1452,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             linkedListNode.aLong4291 = l
             aNodeDeque_7756.method1999(linkedListNode, -20180)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "qo.CD(" + l + ',' + bool + ')')
+            throw TextureLoadException.method2929(runtimeexception, "qo.CD(" + l + ',' + bool + ')')
         }
     }
 
@@ -1480,7 +1479,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (i == -422613672) break
                 this.anInt7788 = 30
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qo.FD(" + i + ',' + (if (stagedInitializer != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("qo.FD(" + i + ',' + (if (stagedInitializer != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -1506,7 +1505,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             }
             anInt7765 = anInt7765 and 0x1.inv()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.VA(" + i + ',' + (if (glTexture != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.VA(" + i + ',' + (if (glTexture != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1587,7 +1586,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (l == -1L) throw RuntimeException()
                 aHashtable7577.put(canvas, l)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qo.VF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_177_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("qo.VF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_177_ + ')'))
             }
             break
         } while (false)
@@ -1614,7 +1613,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7600++
             return OpenGlTerrainTile(this, i_181_, i_182_, i, i_178_, `is`, is_179_, i_180_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.VE(" + i + ',' + i_178_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_179_ != null) "{...}" else "null") + ',' + i_180_ + ',' + i_181_ + ',' + i_182_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.VE(" + i + ',' + i_178_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_179_ != null) "{...}" else "null") + ',' + i_180_ + ',' + i_181_ + ',' + i_182_ + ')'))
         }
     }
 
@@ -1639,7 +1638,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 anStagedInitializer_7745!!.method46(-11762)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.JB(" + i + ',' + (if (stagedInitializer != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.JB(" + i + ',' + (if (stagedInitializer != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1763,7 +1762,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 method3762(5890, 768, (-87).toByte(), 0)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.IF(" + i + ',' + i_186_ + ',' + i_187_ + ',' + i_188_ + ',' + i_189_ + ',' + i_190_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_191_ + ',' + i_192_ + ',' + i_193_ + ',' + i_194_ + ',' + i_195_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.IF(" + i + ',' + i_186_ + ',' + i_187_ + ',' + i_188_ + ',' + i_189_ + ',' + i_190_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_191_ + ',' + i_192_ + ',' + i_193_ + ',' + i_194_ + ',' + i_195_ + ')'))
         }
     }
 
@@ -1781,9 +1780,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     override fun method3661(i: Int, i_210_: Int, `is`: IntArray?, is_211_: IntArray?): Sprite {
         try {
             anInt7589++
-            return method4009(i, `is`, is_211_, 0, this, i_210_)
+            return TextureLoadExceptionStatics.method4009(i, `is`, is_211_, 0, this, i_210_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.RF(" + i + ',' + i_210_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_211_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.RF(" + i + ',' + i_210_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_211_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1793,7 +1792,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7675++
             `is`[1] = this.anInt7641
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "qo.KE(" + (if (`is` != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "qo.KE(" + (if (`is` != null) "{...}" else "null") + ')')
         }
     }
 
@@ -1852,7 +1851,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 this.aHoverActionEntry_7833 = HoverActionEntry(anByteBufferReader_7797, 5126, 2, 12)
                 aParticleSortRenderer_7711.method1654(643267468, this)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "qo.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
+                throw TextureLoadException.method2929(runtimeexception, "qo.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -1883,7 +1882,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             glEnd()
             method3762(5890, 768, (-87).toByte(), 0)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.A(" + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_212_ + ',' + i_213_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.A(" + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_212_ + ',' + i_213_ + ')'))
         }
     }
 
@@ -1966,7 +1965,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (aCanvas7575 !== canvas) break
                 method3745(117.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qo.HF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_231_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("qo.HF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_231_ + ')'))
             }
             break
         } while (false)
@@ -1977,7 +1976,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7522++
             return GlSpriteRenderer(this, i_233_, i_234_, `is`, i, i_232_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.BE(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_232_ + ',' + i_233_ + ',' + i_234_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.BE(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_232_ + ',' + i_233_ + ',' + i_234_ + ',' + bool + ')'))
         }
     }
 
@@ -2051,7 +2050,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anStagedInitializerArray7741[++anInt7738] = stagedInitializer
             anStagedInitializer_7745!!.method49(-27141)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.HD(" + (if (stagedInitializer != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.HD(" + (if (stagedInitializer != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -2090,7 +2089,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 `is`[1] = (-this.aFloat7836 + i_249_.toFloat()).toInt()
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.H(" + i + ',' + i_246_ + ',' + i_247_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.H(" + i + ',' + i_246_ + ',' + i_247_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2167,7 +2166,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             aParticleSortRenderer_7711.method1651(this, (-116).toByte(), i, nodeDequeHolder)
             anInt7687++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.FG(" + (if (nodeDequeHolder != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.FG(" + (if (nodeDequeHolder != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -2235,7 +2234,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 `is`[0] = `is`[1]
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.da(" + i + ',' + i_254_ + ',' + i_255_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.da(" + i + ',' + i_254_ + ',' + i_255_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2252,7 +2251,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         try {
             anInt7590++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "qo.IA(" + (if (spriteDrawTarget != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "qo.IA(" + (if (spriteDrawTarget != null) "{...}" else "null") + ')')
         }
     }
 
@@ -2436,7 +2435,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     anByteArrayCodec_7817 = byteArrayCodec
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qo.OE(" + i + ',' + (if (byteArrayCodec != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("qo.OE(" + i + ',' + (if (byteArrayCodec != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -2468,7 +2467,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 } else glDisableClientState(32888)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.KB(" + (if (hoverActionEntry != null) "{...}" else "null") + ',' + (if (hoverActionEntry_279_ != null) "{...}" else "null") + ',' + i + ',' + (if (hoverActionEntry_280_ != null) "{...}" else "null") + ',' + (if (hoverActionEntry_281_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.KB(" + (if (hoverActionEntry != null) "{...}" else "null") + ',' + (if (hoverActionEntry_279_ != null) "{...}" else "null") + ',' + i + ',' + (if (hoverActionEntry_280_ != null) "{...}" else "null") + ',' + (if (hoverActionEntry_281_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2482,7 +2481,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7596++
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.NB(" + (if (cameraMarker != null) "{...}" else "null") + ',' + (if (marker != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.NB(" + (if (cameraMarker != null) "{...}" else "null") + ',' + (if (marker != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2542,7 +2541,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if (anInt7865 == 1) break
                 method3783(0)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qo.FF(" + i + ',' + (if (class348_sub1s != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("qo.FF(" + i + ',' + (if (class348_sub1s != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -2662,7 +2661,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             if (f < 0.5f) return circleRasterizer
             return circleRasterizer_305_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.SD(" + (if (circleRasterizer != null) "{...}" else "null") + ',' + (if (circleRasterizer_305_ != null) "{...}" else "null") + ',' + f + ',' + (if (circleRasterizer_306_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.SD(" + (if (circleRasterizer != null) "{...}" else "null") + ',' + (if (circleRasterizer_305_ != null) "{...}" else "null") + ',' + f + ',' + (if (circleRasterizer_306_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2683,7 +2682,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anOpenGL7664!!.setSurface(aLong7636)
             method3745(92.toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "qo.MF(" + (if (canvas != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "qo.MF(" + (if (canvas != null) "{...}" else "null") + ')')
         }
     }
 
@@ -2704,7 +2703,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             method3626(i_313_, i_314_)
             anInt7584++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.UA(" + (if (rectangles != null) "{...}" else "null") + ',' + i + ',' + i_313_ + ',' + i_314_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.UA(" + (if (rectangles != null) "{...}" else "null") + ',' + i + ',' + i_313_ + ',' + i_314_ + ')'))
         }
     }
 
@@ -2770,7 +2769,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.CA(" + i + ',' + (if (stagedInitializer != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.CA(" + i + ',' + (if (stagedInitializer != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2871,7 +2870,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             class105.method985(spriteImage.anInt2703, spriteImage.anInt2700, spriteImage.anInt2698, spriteImage.anInt2701)
             return class105
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.GF(" + (if (spriteImage != null) "{...}" else "null") + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.GF(" + (if (spriteImage != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -3098,7 +3097,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 throw RuntimeException("")
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qo.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -3537,7 +3536,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         ManagedGlResource.method1868((-39).toByte(), class348_sub42_sub13)
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("qo.VC(" + i + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("qo.VC(" + i + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)
@@ -4068,21 +4067,21 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     }
                     val i_452_ = 0xffffff.inv() or i_448_
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 0) {
-                        NodeDeque.aFont_3326!!.method2575(115.toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i)
+                        NodeDequeStatics.aFont_3326!!.method2575(115.toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_446_ -= i_443_ shr 1
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 1) {
                         i_446_ -= i_443_ shr 1
                         i_444_ -= i_443_ shr 1
-                        NodeDeque.aFont_3326!!.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, TextureQualityOptionState.anInt6006, false)
+                        NodeDequeStatics.aFont_3326!!.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, TextureQualityOptionState.anInt6006, false)
                         i_447_ += 5
                         i_445_ -= 5
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 2) {
                         i_447_ += 5
                         i_446_ -= -5 + (i_443_ shr 1)
-                        NodeDeque.aFont_3326!!.method2581(string, i_452_, (TextureQualityOptionState.anInt6006), i_440_ + i, (-112).toByte(), -16777216, i_317_ - -i_439_)
+                        NodeDequeStatics.aFont_3326!!.method2581(string, i_452_, (TextureQualityOptionState.anInt6006), i_440_ + i, (-112).toByte(), -16777216, i_317_ - -i_439_)
                         i_445_ -= 5
                         i_444_ -= (i_443_ shr 1) - -5
                     }
@@ -4090,7 +4089,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         i_446_ -= i_443_ shr 1
                         i_444_ -= i_443_ shr 1
                         i_447_ += 7
-                        NodeDeque.aFont_3326!!.method2577(TextureQualityOptionState.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -ConfigVarProgress.anIntArray4812!![i_438_], i_439_ + i_317_, -20509)
+                        NodeDequeStatics.aFont_3326!!.method2577(TextureQualityOptionState.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -ConfigVarProgress.anIntArray4812!![i_438_], i_439_ + i_317_, -20509)
                         i_445_ -= 7
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 4) {
@@ -4098,7 +4097,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         FacingDirectionNode.aRenderer6654!!.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_)
                         i_444_ += 50 - i_453_
                         i_446_ += -i_453_ + 50
-                        NodeDeque.aFont_3326!!.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125)
+                        NodeDequeStatics.aFont_3326!!.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125)
                         FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i + i_315_)
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 5) {
@@ -4111,7 +4110,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         FacingDirectionNode.aRenderer6654!!.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_447_ += i_455_
-                        NodeDeque.aFont_3326!!.method2575((-105).toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_))
+                        NodeDequeStatics.aFont_3326!!.method2575((-105).toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_))
                         i_445_ += i_455_
                         i_446_ -= i_443_ shr 1
                         FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i_315_ + i)
@@ -4119,7 +4118,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 } else {
                     i_444_ -= i_443_ shr 1
                     i_446_ -= i_443_ shr 1
-                    NodeDeque.aFont_3326!!.method2575(118.toByte(), i_439_ + i_317_, -256, string, -16777216, i_440_ + i)
+                    NodeDequeStatics.aFont_3326!!.method2575(118.toByte(), i_439_ + i_317_, -256, string, -16777216, i_440_ + i)
                 }
                 MapTileShape.method2663(i_316_ + -5592, i_444_, 1 + i_446_, i_445_, 1 + i_447_)
             }

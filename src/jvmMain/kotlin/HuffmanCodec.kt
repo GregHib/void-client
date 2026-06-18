@@ -82,7 +82,7 @@ class HuffmanCodec internal constructor(`is`: ByteArray) {
             }
             return i_8_ + 1 + -i
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wda.A(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wda.A(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'))
         }
     }
 
@@ -131,7 +131,7 @@ class HuffmanCodec internal constructor(`is`: ByteArray) {
             }
             return -i_12_ + (i_16_ - -7 shr 3)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wda.C(" + i + ',' + i_11_ + ',' + i_12_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_13_ + ',' + (if (is_14_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wda.C(" + i + ',' + i_11_ + ',' + i_12_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_13_ + ',' + (if (is_14_ != null) "{...}" else "null") + ')'))
         }
     }
 

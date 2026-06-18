@@ -1,4 +1,3 @@
-import SoundBankPatch.Companion.method2929
 
 /* Class357 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -80,7 +79,7 @@ class SceneCollisionEntry internal constructor(i: Int) {
                 if (i_1_ != 16980) aLongArray4410 = null
                 return stringbuffer.reverse().toString()
             } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, ("es.C(" + i + ',' + bool + ',' + i_0_ + ',' + l + ',' + i_1_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("es.C(" + i + ',' + bool + ',' + i_0_ + ',' + l + ',' + i_1_ + ')'))
             }
         }
 

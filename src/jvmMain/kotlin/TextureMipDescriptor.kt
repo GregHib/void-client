@@ -1,7 +1,6 @@
 import NpcSummaryDefinition.Companion.method1166
 import AsyncTaskHandle.Companion.method1436
 import BoundsConstraintEntry.Companion.method2057
-import SoundBankPatch.Companion.method2929
 import jaggl.OpenGL.Companion.glTexImage2Di
 import kotlin.math.min
 
@@ -122,7 +121,7 @@ class TextureMipDescriptor internal constructor(var anInt4342: Int, var anInt434
                     if (i_27_ == 9455) break
                     aLruByteCache_4346 = null
                 } catch (runtimeexception: RuntimeException) {
-                    throw method2929(runtimeexception, ("en.B(" + i + ',' + (if (objects != null) "{...}" else "null") + ',' + i_26_ + ',' + (if (ls != null) "{...}" else "null") + ',' + i_27_ + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("en.B(" + i + ',' + (if (objects != null) "{...}" else "null") + ',' + i_26_ + ',' + (if (ls != null) "{...}" else "null") + ',' + i_27_ + ')'))
                 }
                 break
             } while (false)

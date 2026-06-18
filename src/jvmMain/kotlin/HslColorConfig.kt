@@ -156,7 +156,7 @@ class HslColorConfig {
                     i_11_ += i
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("hk.E(" + i + ',' + i_11_ + ',' + i_12_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_13_ + ',' + (if (is_14_ != null) "{...}" else "null") + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("hk.E(" + i + ',' + i_11_ + ',' + i_12_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_13_ + ',' + (if (is_14_ != null) "{...}" else "null") + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ')'))
             }
         }
     }

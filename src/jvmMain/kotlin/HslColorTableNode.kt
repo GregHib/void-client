@@ -61,7 +61,7 @@ class HslColorTableNode internal constructor(@JvmField var anInt6630: Int, @JvmF
                 }
                 return false
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("gba.C(" + (if (var_class != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("gba.C(" + (if (var_class != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
             }
         }
 

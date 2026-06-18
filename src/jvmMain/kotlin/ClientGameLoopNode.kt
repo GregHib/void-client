@@ -528,7 +528,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                 }
                 return `is`
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.Companion.method2929(runtimeexception, ("ls.B(" + (if (string != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ls.B(" + (if (string != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
 

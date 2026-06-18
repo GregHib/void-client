@@ -58,7 +58,7 @@ class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, 
             if (aJs5Archive_2842 != null) this.anInt2845 = aJs5Archive_2842.method407(0, 16)
             else this.anInt2845 = 0
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rv.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rv.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

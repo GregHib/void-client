@@ -57,7 +57,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
             if (i < 30) method1449(-81, 10, -115)
             return l - -aTypedRecordTable_5006!!.anInt3690.toLong() <= method599(-97)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "qt.I(" + i + ',' + l + ')')
+            throw TextureLoadException.method2929(runtimeexception, "qt.I(" + i + ',' + l + ')')
         }
     }
 
@@ -85,7 +85,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
                 i++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qt.<init>(" + (if (typedRecordTable != null) "{...}" else "null") + ',' + (if (dualMaterialContainer != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qt.<init>(" + (if (typedRecordTable != null) "{...}" else "null") + ',' + (if (dualMaterialContainer != null) "{...}" else "null") + ')'))
         }
     }
 

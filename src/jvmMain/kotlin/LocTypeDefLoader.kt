@@ -58,7 +58,7 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
                 if (aJs5Archive_2498 == null) break
                 aJs5Archive_2498!!.method407(0, 35)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qga.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("qga.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

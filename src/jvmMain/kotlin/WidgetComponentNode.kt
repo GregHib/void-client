@@ -35,7 +35,7 @@ open class WidgetComponentNode(js5Archive: Js5Archive?, particleEmitterDef: Part
             aJs5Archive_4661 = js5Archive
             this.aParticleEmitterDef_4659 = particleEmitterDef
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nl.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (particleEmitterDef != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nl.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (particleEmitterDef != null) "{...}" else "null") + ')'))
         }
     }
 

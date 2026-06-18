@@ -29,7 +29,7 @@ class TypedRecordTable {
             if (LocTypeDefLoader.aProjectileFactory_2507 == projectileFactory) return GlVertexBufferArb.method2128(-1730, class348_sub49!!)
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("vp.F(" + bool + ',' + (if (projectileFactory != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("vp.F(" + bool + ',' + (if (projectileFactory != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -88,7 +88,7 @@ class TypedRecordTable {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("vp.A(" + (if (class318_sub1 != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_0_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("vp.A(" + (if (class318_sub1 != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_0_ + ')'))
             }
         }
 
@@ -134,7 +134,7 @@ class TypedRecordTable {
                     } else method1211(i, GrayscaleNoiseTexture.aAbstractModelRendererArray5294!![i_17_], i_15_, widgetComponent, var_sprite, i_14_, 2, i_16_)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("vp.D(" + l + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + (if (var_sprite != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("vp.D(" + l + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + (if (var_sprite != null) "{...}" else "null") + ')'))
             }
         }
 

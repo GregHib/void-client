@@ -97,7 +97,7 @@ class FacingDirectionNode internal constructor(@JvmField var aByteArray6657: Byt
             try {
                 return l and l_7_
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "gia.C(" + l + ',' + l_7_ + ')')
+                throw TextureLoadException.method2929(runtimeexception, "gia.C(" + l + ',' + l_7_ + ')')
             }
         }
 

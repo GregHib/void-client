@@ -58,7 +58,7 @@ class HeadIconRenderer {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ok.C(" + i + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ok.C(" + i + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
             }
         }
 
@@ -80,11 +80,11 @@ class HeadIconRenderer {
             try {
                 if (i > -48) aIntRange_2068 = null
                 anInt2063++
-                TextureLoadException.anInt4596 = -1
+                TextureLoadExceptionStatics.anInt4596 = -1
                 BloomGraphicsOptionState.anInt5969 = if (Loader.skipLobby) 2 else 1
                 LocalPlayerState.method1138(string, false, string_16_, (-95).toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ok.E(" + (if (string != null) "{...}" else "null") + ',' + (if (string_16_ != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ok.E(" + (if (string != null) "{...}" else "null") + ',' + (if (string_16_ != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

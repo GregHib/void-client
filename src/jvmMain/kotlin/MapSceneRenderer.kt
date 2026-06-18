@@ -78,7 +78,7 @@ object MapSceneRenderer {
                 if (bool == false) break
                 method387(26)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ik.D(" + bool + ',' + (if (class237_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ik.D(" + bool + ',' + (if (class237_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

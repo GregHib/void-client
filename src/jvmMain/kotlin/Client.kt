@@ -175,7 +175,6 @@ import SpriteArchiveLoader.Companion.method306
 import WalkingTypeUtil.method1979
 import NpcDefinitionCache.Companion.method1980
 import NpcDefinitionCache.Companion.method1987
-import NodeDeque.Companion.method1994
 import CompassSmoother.Companion.method2018
 import SlotBinding.Companion.method2026
 import SlotBinding.Companion.method2029
@@ -304,7 +303,6 @@ import MenuActionNode.Companion.method2810
 import SynthVoiceGroup.Companion.method2823
 import PcmStreamBuffer.Companion.method2830
 import MidiSequencePlayer.Companion.method2871
-import SoundBankPatch.Companion.method2929
 import InterfaceBounds.Companion.method2941
 import TerrainTileShape.Companion.method2728
 import TextureTileRenderer.Companion.method2950
@@ -517,7 +515,6 @@ import InputStream_Sub1.Companion.method124
 import InputStream_Sub2.Companion.method127
 import ChatMessageStream.Companion.method139
 import Player.Companion.method2458
-import TextureLoadException.Companion.method4010
 import NativeSprite.Companion.method161
 import RasterSprite.Companion.method167
 import Renderer.Companion.method3680
@@ -663,7 +660,7 @@ class Client : GameAppletFrame() {
         LoadingScreenImageNode.aShortArray9502 = HslPaletteState.aShortArray4172
         NamedIdEntry.aShortArray6889 = LoadingScreenImageNode.aShortArray9502
         SceneEffectMarker.aShortArray6428 = NamedIdEntry.aShortArray6889
-        if (HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) TextureLoadException.aBoolean4599 = false
+        if (HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) TextureLoadExceptionStatics.aBoolean4599 = false
         if (GlRectangleTexture.aSceneProjector_8638 == HardCacheEntryReference.aSceneProjector_10434) {
             InputSettingsState.shiftClick = true
             SpriteLoadValidator.aShortArrayArray4791 = FacingDirectionNode.aShortArrayArray6664
@@ -732,7 +729,7 @@ class Client : GameAppletFrame() {
         method3430(false)
         method2748(-86)
         method1310(true)
-        method1994(-13722)
+        NodeDequeStatics.method1994(-13722)
         method1471(124.toByte())
         method1897(119.toByte())
         ScriptCompilerThread.method1052((-124).toByte())
@@ -799,7 +796,7 @@ class Client : GameAppletFrame() {
         method2251(16711680)
         method1261(108.toByte())
         WorldMapToggle.method2299((-128).toByte())
-        method4010(-3)
+        TextureLoadExceptionStatics.method4010(-3)
         method883(66.toByte())
         CompletedResourceRequest.method3264((-24).toByte())
         method1325(-128)
@@ -1677,14 +1674,14 @@ class Client : GameAppletFrame() {
                     i -= insets.left + insets.right
                     i_119_ -= insets.top - -insets.bottom
                 }
-                if (i != SocketFactory.anInt3473 || i_119_ != NpcReference.anInt6857 || TextureLoadException.aBoolean4604) {
+                if (i != SocketFactory.anInt3473 || i_119_ != NpcReference.anInt6857 || TextureLoadExceptionStatics.aBoolean4604) {
                     if (FacingDirectionNode.aRenderer6654 == null || FacingDirectionNode.aRenderer6654!!.method3695()) method3556(false)
                     else {
                         NpcReference.anInt6857 = i_119_
                         SocketFactory.anInt3473 = i
                     }
                     PcmStreamBuffer.aLong8866 = method599(-66) - -500L
-                    TextureLoadException.aBoolean4604 = false
+                    TextureLoadExceptionStatics.aBoolean4604 = false
                 }
             }
             if (SkeletalAnimFrameLoader.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
@@ -2018,7 +2015,7 @@ class Client : GameAppletFrame() {
                 }
                 anInt5178++
             } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, "client.main(" + (if (strings != null) "{...}" else "null") + ')')
+                throw TextureLoadException.method2929(runtimeexception, "client.main(" + (if (strings != null) "{...}" else "null") + ')')
             }
         }
 

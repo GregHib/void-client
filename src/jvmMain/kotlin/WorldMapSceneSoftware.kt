@@ -306,7 +306,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("vaa.W(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (collisionMap != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("vaa.W(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (collisionMap != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -469,7 +469,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("vaa.AA(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("vaa.AA(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ')'))
             }
             break
         } while (false)
@@ -513,7 +513,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("vaa.S(" + i + ',' + i_73_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_74_ + ',' + i_75_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + (if (collisionMaps != null) "{...}" else "null") + ',' + i_79_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("vaa.S(" + i + ',' + i_73_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_74_ + ',' + i_75_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + (if (collisionMaps != null) "{...}" else "null") + ',' + i_79_ + ')'))
         }
     }
 
@@ -561,7 +561,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                         method2168(i_93_, i_94_, i_95_)
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("vaa.U(" + (if (collisionMap != null) "{...}" else "null") + ',' + i + ',' + i_93_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("vaa.U(" + (if (collisionMap != null) "{...}" else "null") + ',' + i + ',' + i_93_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ')'))
                 }
             } while (false)
             break
@@ -604,7 +604,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("vaa.R(" + (if (`is` != null) "{...}" else "null") + ',' + (if (collisionMaps != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_99_ + ',' + i_100_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("vaa.R(" + (if (`is` != null) "{...}" else "null") + ',' + (if (collisionMaps != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_99_ + ',' + i_100_ + ')'))
         }
     }
 
@@ -730,7 +730,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("vaa.O(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + i_119_ + ',' + i_120_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_121_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("vaa.O(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + i_119_ + ',' + i_120_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_121_ + ')'))
             }
             break
         } while (false)
@@ -812,7 +812,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
             }
             if (i < -6) this.aByteArrayArrayArray3108 = null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("vaa.T(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("vaa.T(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

@@ -33,7 +33,7 @@ class GzipDecompressor private constructor(i: Int, i_6_: Int, i_7_: Int) {
             }
             anInflater2072!!.reset()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ol.A(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ol.A(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
         }
     }
 

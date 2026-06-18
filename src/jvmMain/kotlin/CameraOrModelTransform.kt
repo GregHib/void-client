@@ -80,7 +80,7 @@ class CameraOrModelTransform {
                     if (-widgetComponent.anInt709 <= i_12_ && widgetComponent.anInt709 >= i_12_ && (i_13_ >= -widgetComponent.anInt789) && widgetComponent.anInt789 >= i_13_) font!!.method2584(null, 0, 0, null, i, 0, 50, var_sprite, (-i_4_ + (i_3_ + (widgetComponent.anInt789 / 2 + (-i_13_ - i_15_)))), i_2_, i_3_, i_14_, (widgetComponent.anInt709 / 2 + (i_2_ + i_12_)), false, 1, string)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("dk.H(" + (if (fontDefinition != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (font != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("dk.H(" + (if (fontDefinition != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (font != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ')'))
             }
         }
 

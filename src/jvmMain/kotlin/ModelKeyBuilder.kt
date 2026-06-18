@@ -28,7 +28,7 @@ class ModelKeyBuilder : LinkedListNode() {
             l = (ls[(0xffL and ((if (!bool) 0 else 1).toLong() xor l)).toInt()] xor (l ushr 8))
             return l
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.Companion.method2929(runtimeexception, ("ie.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (is_6_ != null) "{...}" else "null") + ',' + i_7_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ie.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (is_6_ != null) "{...}" else "null") + ',' + i_7_ + ')'))
         }
     }
 
@@ -141,7 +141,7 @@ class ModelKeyBuilder : LinkedListNode() {
             class64_41_!!.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, widgetDefinition.aBoolean242, i_23_, i_11_ + i_14_)
             return class64_41_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.Companion.method2929(runtimeexception, ("ie.B(" + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ',' + i_14_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ie.B(" + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ',' + i_14_ + ')'))
         }
     }
 

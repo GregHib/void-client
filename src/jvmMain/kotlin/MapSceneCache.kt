@@ -69,7 +69,7 @@ class MapSceneCache internal constructor(sceneProjector: SceneProjector?, i: Int
             aJs5Archive_1460 = js5Archive
             aJs5Archive_1460!!.method407(0, 29)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lca.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("lca.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

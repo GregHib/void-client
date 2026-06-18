@@ -65,7 +65,7 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
                 ScriptOpcodeHolder.method1356(true, string_0_, i_1_, i, bool, string, true)
                 anInt5845++
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("aj.G(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + (if (string_0_ != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("aj.G(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + (if (string_0_ != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
             }
         }
 

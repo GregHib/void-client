@@ -210,7 +210,7 @@ class SkeletalAnimFrameLoader {
                     method347(`is`, is_20_, i, -22222, -1 + i_24_)
                     method347(`is`, is_20_, i_24_ - -1, i_21_, i_22_)
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("ic.K(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_20_ != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + i_22_ + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("ic.K(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_20_ != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + i_22_ + ')'))
                 }
                 break
             } while (false)

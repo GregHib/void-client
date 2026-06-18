@@ -14,7 +14,7 @@ class GlCubeMapTexture internal constructor(glRenderDevice: GlRenderDevice?, i: 
                 for (i_0_ in 0..5) glTexImage2Di(34069 + i_0_, 0, this.method228(121), i, i, 0, method3055(110, this.aTextureFormatInfo_5084), (this.aGlRenderDevice_5082!!.anInt9918), `is`!![i_0_], 0)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("le.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("le.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 

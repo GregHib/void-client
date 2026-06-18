@@ -81,7 +81,7 @@ class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int
             aLinkedNodeListIterator_1089!!.method1005(true, class348_sub42_sub8_sub2)
             class348_sub42_sub8_sub2.aLong7057 = 0L
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("jr.E(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + l + ',' + i_5_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("jr.E(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + l + ',' + i_5_ + ')'))
         }
     }
 
@@ -97,7 +97,7 @@ class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int
             anInt1095++
             method580(31902, `object`, l, 1)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("jr.B(" + (if (`object` != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("jr.B(" + (if (`object` != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
         }
     }
 
@@ -127,7 +127,7 @@ class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int
             }
             return `object`
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "jr.K(" + l + ',' + i + ')')
+            throw TextureLoadException.method2929(runtimeexception, "jr.K(" + l + ',' + i + ')')
         }
     }
 
@@ -148,7 +148,7 @@ class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int
             val class348_sub42_sub8 = aHashtable_1100.method3480(l, -6008) as CacheEntryReference?
             method585(class348_sub42_sub8, -57)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "jr.J(" + l + ',' + i + ')')
+            throw TextureLoadException.method2929(runtimeexception, "jr.J(" + l + ',' + i + ')')
         }
     }
 

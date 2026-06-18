@@ -442,7 +442,7 @@ class WidgetComponent {
             }
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw TextureLoadException.method2929(
                 runtimeexception,
                 ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + i_24_ + ')')
             )
@@ -756,7 +756,7 @@ class WidgetComponent {
                 if (this.aClass318_Sub10_740 == null) break
                 this.aClass318_Sub10_740!!.method2536(var_renderer, i_63_.toLong(), class129s, class342s, false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("at.J(" + i + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_63_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("at.J(" + i + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_63_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -840,7 +840,7 @@ class WidgetComponent {
             }
             return particleSystemRenderer
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (spriteStore != null) "{...}" else "null") + ',' + (if (mapSceneCache != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (spriteStore != null) "{...}" else "null") + ',' + (if (mapSceneCache != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -936,7 +936,7 @@ class WidgetComponent {
                     var_renderer!!.Q(i_6_, i_9_, i_5_, i_8_, i_0_, i, `is`!![i_7_ - 1]!![i_4_], i_3_, i_2_)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("at.S(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("at.S(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
             }
         }
 

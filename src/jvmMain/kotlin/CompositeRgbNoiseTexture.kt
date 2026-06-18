@@ -115,7 +115,7 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
                 class348_sub42.aClass348_Sub42_7060!!.aClass348_Sub42_7063 = class348_sub42
                 class348_sub42.aClass348_Sub42_7063!!.aClass348_Sub42_7060 = class348_sub42
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wd.F(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + (if (class348_sub42_15_ != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("wd.F(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + (if (class348_sub42_15_ != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
 
@@ -199,7 +199,7 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
                 }
                 return i_47_
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wd.B(" + i + ',' + i_16_ + ',' + i_17_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (is_22_ != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (collisionMap != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("wd.B(" + i + ',' + i_16_ + ',' + i_17_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (is_22_ != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (collisionMap != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'))
             }
         }
     }

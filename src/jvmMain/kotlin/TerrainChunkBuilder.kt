@@ -184,7 +184,7 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                 this.anInt1563 = i_29_ / 3
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("mc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (videoStreamDecoder != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + i_27_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("mc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (videoStreamDecoder != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + i_27_ + ')'))
         }
     }
 
@@ -219,7 +219,7 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
 
         fun method873(i: Int, i_6_: Int, var_renderer: Renderer?, i_7_: Int) {
             LruByteCache.aRenderer1098 = var_renderer
-            NodeDeque.aModelLightingConfigArrayArray3335 = Array(i) { arrayOfNulls(i_7_) }
+            NodeDequeStatics.aModelLightingConfigArrayArray3335 = Array(i) { arrayOfNulls(i_7_) }
             if (i_6_ == 21719) {
                 anInt1549++
                 if (FogState.anIntArray1432 != null) ParameterizedText.aCircleRasterizer_9571 = SceneProjector.method1636(FogState.anIntArray1432!![4], FogState.anIntArray1432!![3], FogState.anIntArray1432!![0], FogState.anIntArray1432!![5], FogState.anIntArray1432!![1], -1, FogState.anIntArray1432!![2])

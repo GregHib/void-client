@@ -30,7 +30,7 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
             aJs5Archive_3299 = js5Archive
             this.anInt3305 = aJs5Archive_3299!!.method407(0, 19)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("uea.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("uea.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

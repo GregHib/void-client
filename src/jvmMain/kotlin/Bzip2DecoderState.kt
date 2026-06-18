@@ -125,7 +125,7 @@ class Bzip2DecoderState internal constructor() {
             CustomCursorsOptionState.aAbstractModelRendererArray5933 = null
             ScriptResources.aAbstractModelRendererArray2640 = null
             BoxBlurTextureNode.aAbstractModelRendererArray9467 = null
-            NodeDeque.aFont_3326 = null
+            NodeDequeStatics.aFont_3326 = null
             SceneryDetailOptionState.aAbstractModelRenderer_6097 = null
             GameAppletFrame.aFont_20 = null
             WorldMapRenderer.aFont_4684 = null

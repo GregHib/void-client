@@ -124,7 +124,7 @@ class ServerConnectionInfo {
             IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub29_7229), 2)
             method3038(-1)
             method773(bool)
-            TextureLoadException.aBoolean4604 = true
+            TextureLoadExceptionStatics.aBoolean4604 = true
         }
     }
 }

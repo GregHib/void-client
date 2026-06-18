@@ -14,7 +14,6 @@ import ScrollbarComponent.Companion.method184
 import GameClock.method599
 import MapRegionLoader.Companion.method752
 import WhirlpoolHash.Companion.method830
-import TextureLoadException.Companion.method4011
 import NativeRenderer.Companion.method3886
 import NativeRenderer.Companion.method3896
 import jagex3.jagmisc.jagmisc.init
@@ -147,7 +146,7 @@ object ClientLoadStateMachine {
             KeyEventNode.aJs5Archive_4770 = WorldMapTextLabel.method3571(true, 26, (-23).toByte(), 1)
             GraphicsOptionState.aJs5Archive_3146 = WorldMapTextLabel.method3571(false, 27, (-23).toByte(), 1)
             FixedFunctionWaterPass.aJs5Archive_7362 = WorldMapTextLabel.method3571(true, 28, (-23).toByte(), 1)
-            NodeDeque.aJs5Archive_3323 = WorldMapTextLabel.method3571(false, 29, (-23).toByte(), 1)
+            NodeDequeStatics.aJs5Archive_3323 = WorldMapTextLabel.method3571(false, 29, (-23).toByte(), 1)
             Crc64Hashable.aJs5Archive_4984 = WorldMapTextLabel.method3571(true, 30, (-23).toByte(), 1)
             SpriteLoadValidator.aJs5Archive_4796 = WorldMapTextLabel.method3571(true, 31, (-23).toByte(), 1)
             HitsplatDefinition.aJs5Archive_2015 = WorldMapTextLabel.method3571(true, 36, (-23).toByte(), 2)
@@ -174,7 +173,7 @@ object ClientLoadStateMachine {
             val i_10_ = BinaryGraphicsOptionState.method1770((-25).toByte())
             if (i_10_ < 100) return i_10_
             SeqDefinitionCache.method2013(FixedFunctionWaterPass.aJs5Archive_7362!!.method415(73.toByte(), 1), 112.toByte())
-            TextureLoadException.method4012(FixedFunctionWaterPass.aJs5Archive_7362!!.method415(73.toByte(), 3), (-111).toByte())
+            TextureLoadExceptionStatics.method4012(FixedFunctionWaterPass.aJs5Archive_7362!!.method415(73.toByte(), 3), (-111).toByte())
         }
         if (i != -28660) return 2
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1035) {
@@ -206,14 +205,14 @@ object ClientLoadStateMachine {
             RenderConfigFactory.aVarbitDefLoader_2981 = VarbitDefLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, MidiSequencePlayer.aJs5Archive_8926)
             NormalMapGenerator.aParticleAmountCache_3453 = ParticleAmountCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, DirectionUtil.aJs5Archive_1541)
             WorldMapImageBuilder.method699(SoftwareSpriteRaster.aJs5Archive_1627, (-100).toByte(), IntKeyNode.aJs5Archive_6980, CameraRotationStub.aJs5Archive_322, RasterSprite.aJs5Archive_5207)
-            method85(0, NodeDeque.aJs5Archive_3323)
+            method85(0, NodeDequeStatics.aJs5Archive_3323)
             ScriptResources.aTextureDefinitionCache_2639 = TextureDefinitionCache(AnimationFrameDefinition.anInt6967, ModelBatchBase.aJs5Archive_1897, ConfigArchiveLoader.aJs5Archive_1434)
             BrightnessOptionState.aCompiledScriptCache_5900 = CompiledScriptCache(AnimationFrameDefinition.anInt6967, ModelBatchBase.aJs5Archive_1897, ConfigArchiveLoader.aJs5Archive_1434, ItemNameResolver())
             method1202(0)
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2008(i + 28539, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)
             ProjectedGroundDecor.aVarpStore_10209 = VarpStore()
             method3038(-1)
-            method4011(i + 29684, GraphicsOptionState.aJs5Archive_3146)
+            TextureLoadExceptionStatics.method4011(i + 29684, GraphicsOptionState.aJs5Archive_3146)
             ShortKeyNode.method3004(RasterSprite.aJs5Archive_5207, false, SourceRowTextureNode.aRenderConfig9113)
             val huffmanCodec = HuffmanCodec(SceneTilePlaneManager.aJs5Archive_233!!.method391("huffman", "", -29832)!!)
             method3896(huffmanCodec, 13.toByte())
@@ -332,7 +331,7 @@ object ClientLoadStateMachine {
             if (bool != true) ClientLoadStateMachine.method1277((-20).toByte())
             return stringbuffer.toString()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("pea.C(" + bool + ',' + i + ',' + (if (strings != null) "{...}" else "null") + ',' + i_15_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("pea.C(" + bool + ',' + i + ',' + (if (strings != null) "{...}" else "null") + ',' + i_15_ + ')'))
         }
     }
 }

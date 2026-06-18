@@ -55,7 +55,7 @@ class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int
                 if (aJs5Archive_4085 == null) break
                 aJs5Archive_4085.method407(0, 11)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("dc.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("dc.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

@@ -10,7 +10,7 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
         try {
             anInt4697 = i
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("cw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_0_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("cw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_0_ + ')'))
         }
     }
 
@@ -18,7 +18,7 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
         try {
             anInt4697 = i
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("cw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (buffer != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("cw.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (buffer != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -100,7 +100,7 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
                 if (FileExistsCondition.anInt4776 > 2) string += ("<col=ffffff> / " + (FileExistsCondition.anInt4776 - 2) + LocalizedText.aLocalizedText_3508!!.method2063(AnimationFrameDefinition.anInt6967, 544))
                 if (WidgetActionEntry.aWidgetComponent_6990 != null) {
                     var class324 = WidgetActionEntry.aWidgetComponent_6990!!.method426(var_renderer, 68.toByte())
-                    if (class324 == null) class324 = NodeDeque.aFont_3326!!
+                    if (class324 == null) class324 = NodeDequeStatics.aFont_3326!!
                     class324.method2585(
                         SizeBoundedSoftCache.anIntArray2330,
                         WidgetActionEntry.aWidgetComponent_6990!!.anInt709,
@@ -120,7 +120,7 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
                     )
                     method226(RenderableGroup.anIntArray5007!![0], RenderableGroup.anIntArray5007!![2], RenderableGroup.anIntArray5007!![1], 0, RenderableGroup.anIntArray5007!![3])
                 } else if (CameraRotationStub.aWidgetComponent_323 != null && (HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186)) {
-                    val i_1_ = (NodeDeque.aFont_3326!!.method2571(-1, Hashtable.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, TileRenderState.aAbstractModelRendererArray4234, 16 + SocketGameConnection.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, FireParticleStream.aRandom93))
+                    val i_1_ = (NodeDequeStatics.aFont_3326!!.method2571(-1, Hashtable.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, TileRenderState.aAbstractModelRendererArray4234, 16 + SocketGameConnection.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, FireParticleStream.aRandom93))
                     method226(ConfigValueProvider.Companion.anInt4911 - -4, (WorldMapLabel.aFontDefinition_4962!!.method1183(true, string) + i_1_), SocketGameConnection.anInt5832, 0, 16)
                 }
             }

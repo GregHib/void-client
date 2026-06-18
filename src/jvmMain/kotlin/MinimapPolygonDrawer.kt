@@ -70,7 +70,7 @@ class MinimapPolygonDrawer internal constructor(private val anInt5246: Int, priv
                     method3743(6.toByte(), class348_sub42_sub12)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("hc.B(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool_4_ + ',' + i_5_ + ',' + l + ',' + (if (string_6_ != null) "{...}" else "null") + ',' + l_7_ + ',' + i_8_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("hc.B(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool_4_ + ',' + i_5_ + ',' + l + ',' + (if (string_6_ != null) "{...}" else "null") + ',' + l_7_ + ',' + i_8_ + ')'))
             }
         }
 

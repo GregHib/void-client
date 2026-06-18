@@ -221,7 +221,7 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
                 method129(i, i + -107, ls, ls!!.size - 1, `is`)
                 anInt8882++
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("iha.I(" + (if (`is` != null) "{...}" else "null") + ',' + (if (ls != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("iha.I(" + (if (`is` != null) "{...}" else "null") + ',' + (if (ls != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
 

@@ -99,7 +99,7 @@ abstract class SceneEntity : SceneLinkedListNode() {
                     ProportionalScrollbarComponent.aNodeDeque_9931!!.method1999(RegionTileNode(widgetComponent.anInt812, widgetComponent.anInt781, widgetComponent.anInt672, (0xffffff.inv() or widgetComponent.anInt809), widgetComponent.anInt678, widgetComponent.aBoolean720), i xor 0x4ed2)
                     ConfigFlagUtil.method1916(-9343, widgetComponent)
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("ga.QA(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (widgetComponent != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("ga.QA(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (widgetComponent != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)
@@ -197,12 +197,12 @@ abstract class SceneEntity : SceneLinkedListNode() {
                         }
                         if (class42.anInt576 == 2) {
                             class143 = WorldMapLabel.aFontDefinition_4962
-                            class324 = NodeDeque.aFont_3326
+                            class324 = NodeDequeStatics.aFont_3326
                         }
                         CameraOrModelTransform.method2650(class143, class42.anInt580, var_sprite, i_8_, i_6_, class42.aString597, i, class324, i_29_, widgetComponent, i_5_, 100)
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("ga.KA(" + (if (widgetComponent != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
+                    throw TextureLoadException.method2929(runtimeexception, ("ga.KA(" + (if (widgetComponent != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

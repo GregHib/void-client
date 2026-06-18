@@ -1,4 +1,3 @@
-import SoundBankPatch.Companion.method2929
 
 /* Class356 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -85,7 +84,7 @@ class Hashtable internal constructor(var anInt4377: Int) {
             aLinkedListNode_4389 = null
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, "eq.C(" + l + ',' + i + ')')
+            throw TextureLoadException.method2929(runtimeexception, "eq.C(" + l + ',' + i + ')')
         }
     }
 
@@ -134,7 +133,7 @@ class Hashtable internal constructor(var anInt4377: Int) {
             linkedListNode.aLinkedListNode_4294!!.aLinkedListNode_4295 = linkedListNode
             linkedListNode.aLong4291 = l
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("eq.K(" + i + ',' + l + ',' + (if (linkedListNode != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("eq.K(" + i + ',' + l + ',' + (if (linkedListNode != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -2,7 +2,6 @@ import MinimapFlagRenderer.method1083
 import FrameStatsReset.Companion.method1131
 import GlFramebufferBlitter.Companion.method282
 import RsaPacketDecoder.Companion.method2672
-import SoundBankPatch.Companion.method2929
 import KaraokeSubtitleStream.Companion.method2988
 import HslAdjustTextureNode.Companion.method3126
 import InvertTextureNode.Companion.method3134
@@ -151,7 +150,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
                 if (i >= -6) method3177(-36, true)
                 GlShaderObjectHandle.aJs5Archive_518 = js5Archive_15_
             } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, ("lk.F(" + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (js5Archive_15_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("lk.F(" + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (js5Archive_15_ != null) "{...}" else "null") + ')'))
             }
         }
 

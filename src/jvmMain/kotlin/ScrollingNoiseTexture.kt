@@ -305,7 +305,7 @@ class ScrollingNoiseTexture : GrayscaleNoiseTexture(8, 5, 8, 8, 2, 0.1f, 0.55f, 
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("hha.E(" + (if (class318_sub4 != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("hha.E(" + (if (class318_sub4 != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

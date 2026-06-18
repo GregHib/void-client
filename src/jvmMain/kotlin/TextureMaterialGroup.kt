@@ -1,5 +1,4 @@
 import ParticleDetailOptionState.Companion.method1796
-import SoundBankPatch.Companion.method2929
 import SpriteComponent.Companion.method202
 
 /* Class348_Sub42_Sub17 - Decompiled by JODE
@@ -106,7 +105,7 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
                 if (i <= 123) return -68
                 return locTypeConfig.anInt3563
             } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, ("gw.F(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (locTypeConfig != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("gw.F(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (locTypeConfig != null) "{...}" else "null") + ')'))
             }
         }
 

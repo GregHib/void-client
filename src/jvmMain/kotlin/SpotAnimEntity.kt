@@ -69,7 +69,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 class318_sub9_sub2_sub1 = this.aDoublyLinkedNodeList_6433!!.method1878(126.toByte()) as ProjectileNode?
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rba.F(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + l + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rba.F(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + l + ')'))
         }
     }
 
@@ -224,7 +224,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 if (i_9_ == 3) break
                 method2508(124)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("rba.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + l + ',' + i_9_ + ',' + bool + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("rba.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + l + ',' + i_9_ + ',' + bool + ')'))
             }
             break
         } while (false)
@@ -253,7 +253,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
             aViewportTransform_6449.anInt3672 = this.aViewportTransform_6444.anInt3672
             aViewportTransform_6449.anInt3679 = this.aViewportTransform_6444.anInt3679
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rba.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (modelFacePriorityNode != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ',' + l + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rba.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (modelFacePriorityNode != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ',' + l + ')'))
         }
     }
 
@@ -297,7 +297,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 for (i in 0..15) BasicGlRenderPass.anIntArray7299!![i] = 255
                 return true
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("rba.G(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + (if (js5Archive_5_ != null) "{...}" else "null") + ',' + bool + ',' + (if (soundChannelMixer != null) "{...}" else "null") + ',' + (if (js5Archive_6_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("rba.G(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + (if (js5Archive_5_ != null) "{...}" else "null") + ',' + bool + ',' + (if (soundChannelMixer != null) "{...}" else "null") + ',' + (if (js5Archive_6_ != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -449,7 +449,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("rba.A(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (var_renderer!! != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("rba.A(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (var_renderer!! != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

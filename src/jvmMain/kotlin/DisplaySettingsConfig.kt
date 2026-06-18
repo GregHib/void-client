@@ -1,5 +1,4 @@
 import AbstractMenuEntry.Companion.method1032
-import SoundBankPatch.Companion.method2929
 import java.util.*
 import kotlin.math.max
 
@@ -120,7 +119,7 @@ class DisplaySettingsConfig : LinkedListNode {
                 if (i_0_ < 22) break
                 this.aClass239_Sub19_7257 = NoOpGraphicsOptionState(class348_sub49.readUnsignedByte(255), this)
             } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, ("dh.I(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + i_0_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("dh.I(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + i_0_ + ')'))
             }
             break
         } while (false)
@@ -236,7 +235,7 @@ class DisplaySettingsConfig : LinkedListNode {
                 method3426(36.toByte())
             }
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("dh.C(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("dh.C(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -322,7 +321,7 @@ class DisplaySettingsConfig : LinkedListNode {
             graphicsOptionState!!.method1718(i_7_, 72)
             method3426(36.toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("dh.A(" + i + ',' + (if (graphicsOptionState != null) "{...}" else "null") + ',' + i_7_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("dh.A(" + i + ',' + (if (graphicsOptionState != null) "{...}" else "null") + ',' + i_7_ + ')'))
         }
     }
 
@@ -333,7 +332,7 @@ class DisplaySettingsConfig : LinkedListNode {
             this.aClass239_Sub25_7271 = DisplayModeOptionState(i, this)
             method3423(true, 31286)
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("dh.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("dh.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -344,7 +343,7 @@ class DisplaySettingsConfig : LinkedListNode {
             this.aClass239_Sub25_7271 = DisplayModeOptionState(i, this)
             method3424(925, class348_sub49)
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("dh.<init>(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("dh.<init>(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

@@ -461,7 +461,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 if ((this.anInt8294 and 0x10) == 0) break
                 aVideoStreamDecoder_8307 = VideoStreamDecoder(this.aHa_Sub3_8322, this)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qm.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_139_ + ',' + i_140_ + ',' + i_141_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_142_ != null) "{...}" else "null") + ',' + i_143_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("qm.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_139_ + ',' + i_140_ + ',' + i_141_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_142_ != null) "{...}" else "null") + ',' + i_143_ + ')'))
             }
             break
         } while (false)
@@ -544,7 +544,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             aNodeDeque_8286.method1999(TerrainShadowBuilderGl3((this.aHa_Sub3_8322), this, class348_sub1, `is`), -20180)
             anInt8287++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qm.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qm.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -585,7 +585,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             if (is_171_.size > anInt8331) anInt8331 = is_171_.size
             anInt8329 += is_171_.size
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw TextureLoadException.method2929(
                 runtimeexception,
                 ("qm.U(" + i + ',' + i_167_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_168_ != null) "{...}" else "null") + ',' + (if (is_169_ != null) "{...}" else "null") + ',' + (if (is_170_ != null) "{...}" else "null") + ',' + (if (is_171_ != null) "{...}" else "null") + ',' + (if (is_172_ != null) "{...}" else "null") + ',' + (if (is_173_ != null) "{...}" else "null") + ',' + (if (is_174_ != null) "{...}" else "null") + ',' + i_175_ + ',' + i_176_ + ',' + i_177_ + ',' + bool + ')')
             )
@@ -644,7 +644,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             }
             U(i, i_184_, is_199_, is_205_!!, is_200_, is_206_!!, is_201_, is_202_, is_203_, is_204_, i_195_, i_196_, i_197_, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw TextureLoadException.method2929(
                 runtimeexception,
                 ("qm.E(" + i + ',' + i_184_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_185_ != null) "{...}" else "null") + ',' + (if (is_186_ != null) "{...}" else "null") + ',' + (if (is_187_ != null) "{...}" else "null") + ',' + (if (is_188_ != null) "{...}" else "null") + ',' + (if (is_189_ != null) "{...}" else "null") + ',' + (if (is_190_ != null) "{...}" else "null") + ',' + (if (is_191_ != null) "{...}" else "null") + ',' + (if (is_192_ != null) "{...}" else "null") + ',' + (if (is_193_ != null) "{...}" else "null") + ',' + (if (is_194_ != null) "{...}" else "null") + ',' + i_195_ + ',' + i_196_ + ',' + i_197_ + ',' + bool + ')')
             )

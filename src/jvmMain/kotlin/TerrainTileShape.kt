@@ -95,7 +95,7 @@ class TerrainTileShape internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_: 
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("bg.E(" + i + ',' + (if (class237_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("bg.E(" + i + ',' + (if (class237_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
             }
         }
 

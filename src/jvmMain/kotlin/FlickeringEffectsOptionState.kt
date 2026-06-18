@@ -139,7 +139,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
                 }
                 return (class110_sub1!!.anInt5786 + -class110_sub1_0_!!.anInt5786)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("mfa.L(" + (if (class110_sub1 != null) "{...}" else "null") + ',' + (if (class110_sub1_0_ != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_1_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("mfa.L(" + (if (class110_sub1 != null) "{...}" else "null") + ',' + (if (class110_sub1_0_ != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_1_ + ')'))
             }
         }
 
@@ -244,7 +244,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
                 }
                 return -i_35_
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("mfa.K(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_22_ + ',' + i_23_ + ',' + (if (is_24_ != null) "{...}" else "null") + ',' + (if (is_25_ != null) "{...}" else "null") + ',' + (if (is_26_ != null) "{...}" else "null") + ',' + (if (is_27_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("mfa.K(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_22_ + ',' + i_23_ + ',' + (if (is_24_ != null) "{...}" else "null") + ',' + (if (is_25_ != null) "{...}" else "null") + ',' + (if (is_26_ != null) "{...}" else "null") + ',' + (if (is_27_ != null) "{...}" else "null") + ')'))
             }
         }
     }

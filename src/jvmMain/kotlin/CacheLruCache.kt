@@ -15,7 +15,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
             if (class348_sub42 != null) aLinkedNodeListIterator_3889!!.method1005(true, class348_sub42)
             return class348_sub42
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wu.D(" + l + ',' + i + ')')
+            throw TextureLoadException.method2929(runtimeexception, "wu.D(" + l + ',' + i + ')')
         }
     }
 
@@ -41,7 +41,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
                 if (i <= -110) break
                 method2304(36, -86L)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "wu.C(" + i + ',' + l + ')')
+                throw TextureLoadException.method2929(runtimeexception, "wu.C(" + i + ',' + l + ')')
             }
             break
         } while (false)
@@ -63,7 +63,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
             aHashtable_3888.method3483(37.toByte(), l, class348_sub42)
             aLinkedNodeListIterator_3889!!.method1005(true, class348_sub42!!)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wu.E(" + l + ',' + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("wu.E(" + l + ',' + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

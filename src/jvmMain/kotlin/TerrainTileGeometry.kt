@@ -99,7 +99,7 @@ class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, sof
                 aClass119_Sub2_3011 = NativeVertexBuffer(aHa_Sub2_3000, 5123, null, 1)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sm.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (softwareSpriteRaster != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("sm.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (softwareSpriteRaster != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))
         }
     }
 

@@ -103,7 +103,7 @@ class ProjectileFactory internal constructor(i: Int, var anInt2896: Int) {
                     MapSceneIconDef.aNodeDeque_2859!!.method1999(class348_sub9, -20180)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ad.B(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (player != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i_5_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ad.B(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (player != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i_5_ + ')'))
             }
         }
 

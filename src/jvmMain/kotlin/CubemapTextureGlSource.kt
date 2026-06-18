@@ -167,7 +167,7 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
             if (bool && !aHa_Sub2_8707.aBoolean7847) aClass258_Sub2_8701.method1950(69)
             return bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qda.L(" + (if (class258_sub2 != null) "{...}" else "null") + ',' + f + ',' + i + ',' + (if (class258_sub2_0_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("qda.L(" + (if (class258_sub2 != null) "{...}" else "null") + ',' + f + ',' + i + ',' + (if (class258_sub2_0_ != null) "{...}" else "null") + ')'))
         }
     }
 

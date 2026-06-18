@@ -185,7 +185,7 @@ class MidiSequencePlayer : AudioStreamNode {
             val i_33_ = (((class348_sub43.aClass348_Sub19_Sub1_7077!!.anInt8988 * 256).toDouble() * 2.0.pow(3.255208333333333E-4 * i_30_.toDouble()) / HslColorConfig.anInt339.toDouble()) + 0.5).toInt()
             return max(i_33_, 1)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.JA(" + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ma.JA(" + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -210,7 +210,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 if (bool == false) break
                 aClass348_Sub16_Sub1_8958 = null
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ma.T(" + bool + ',' + bool_34_ + ',' + (if (class348_sub2 != null) "{...}" else "null") + ',' + bool_35_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ma.T(" + bool + ',' + bool_34_ + ',' + (if (class348_sub2 != null) "{...}" else "null") + ',' + bool_35_ + ')'))
             }
             break
         } while (false)
@@ -229,7 +229,7 @@ class MidiSequencePlayer : AudioStreamNode {
             }
             return false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.W(" + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ma.W(" + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -241,7 +241,7 @@ class MidiSequencePlayer : AudioStreamNode {
             if (i_38_ >= 8192) return 16384 - ((-class348_sub43.anInt7074 + 128) * (16384 - i_38_) - -32 shr 6)
             return (class348_sub43.anInt7074 * i_38_ - -32 shr 6)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.GA(" + (if (class348_sub43 != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ma.GA(" + (if (class348_sub43 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -344,7 +344,7 @@ class MidiSequencePlayer : AudioStreamNode {
             class348_sub43.aClass348_Sub16_Sub5_7081!!.method2888(class348_sub43.anInt7086, method2868(class348_sub43, -76), method2848(class348_sub43, (-70).toByte()))
             return false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.U(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ',' + i_46_ + ',' + i_47_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ma.U(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ',' + i_46_ + ',' + i_47_ + ')'))
         }
     }
 
@@ -556,7 +556,7 @@ class MidiSequencePlayer : AudioStreamNode {
             }
             aClass348_Sub16_Sub1_8958!!.method2817(`is`, i, i_67_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_67_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ma.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_67_ + ')'))
         }
     }
 
@@ -637,7 +637,7 @@ class MidiSequencePlayer : AudioStreamNode {
             if (bool) class348_sub2.method2735()
             return bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.CA(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (spriteArchiveLoader != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_77_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ma.CA(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (spriteArchiveLoader != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_77_ + ')'))
         }
     }
 
@@ -687,7 +687,7 @@ class MidiSequencePlayer : AudioStreamNode {
             }
             return i_79_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.DA(" + (if (class348_sub43 != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ma.DA(" + (if (class348_sub43 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -697,7 +697,7 @@ class MidiSequencePlayer : AudioStreamNode {
             anInt8932++
             method2846(bool_88_, true, class348_sub2, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.L(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + bool + ',' + bool_88_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ma.L(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + bool + ',' + bool_88_ + ')'))
         }
     }
 
@@ -710,7 +710,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 method2876(aMidiTrackReader_8944!!.anInt2683.toLong() * l, -125)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.O(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + l + ',' + bool + ',' + bool_89_ + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ma.O(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + l + ',' + bool + ',' + bool_89_ + ',' + i + ')'))
         }
     }
 
@@ -764,7 +764,7 @@ class MidiSequencePlayer : AudioStreamNode {
             } else i_95_ = ((i_94_.toLong() * (this.anIntArray8914[(class348_sub43.anInt7067)]).toLong()) shr 6).toInt()
             if (i > 93) class348_sub43.aClass348_Sub16_Sub5_7081!!.method2924(i_95_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.WA(" + i + ',' + bool + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ma.WA(" + i + ',' + bool + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -814,7 +814,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "ma.UA(" + l + ',' + i + ')')
+            throw TextureLoadException.method2929(runtimeexception, "ma.UA(" + l + ',' + i + ')')
         }
     }
 
@@ -887,7 +887,7 @@ class MidiSequencePlayer : AudioStreamNode {
             method2843(256, -1, -7836)
             method2851(true, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.<init>(" + (if (class348_sub16_sub3_107_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ma.<init>(" + (if (class348_sub16_sub3_107_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1039,7 +1039,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 }
                 throw IllegalArgumentException()
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ma.EA(" + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ma.EA(" + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ')'))
             }
         }
 

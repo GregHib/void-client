@@ -301,7 +301,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             anInt5414++
             return method662(i, i_23_, -1, 127, i_22_, bool, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.MA(" + i + ',' + i_22_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_23_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.MA(" + i + ',' + i_22_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_23_ + ')'))
         }
     }
 
@@ -341,7 +341,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             method665(41, var_r_Sub1_29_)
             return var_r_Sub1_29_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "nca.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
+            throw TextureLoadException.method2929(runtimeexception, "nca.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
         }
     }
 
@@ -500,7 +500,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             }
             return false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.AB(" + i + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + i_33_ + ',' + bool + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.AB(" + i + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + i_33_ + ',' + bool + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -840,7 +840,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.B(" + i + ',' + (if (var_r_Sub1 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.B(" + i + ',' + (if (var_r_Sub1 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -917,7 +917,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
         }
     }
 
@@ -1199,7 +1199,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             class64_sub2_154_.aShortArray5470 = aShortArray5470
             return class64_sub2_154_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.U(" + bool + ',' + (if (class64_sub2_153_ != null) "{...}" else "null") + ',' + (if (class64_sub2_154_ != null) "{...}" else "null") + ',' + i + ',' + bool_155_ + ',' + i_156_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.U(" + bool + ',' + (if (class64_sub2_153_ != null) "{...}" else "null") + ',' + (if (class64_sub2_154_ != null) "{...}" else "null") + ',' + i + ',' + bool_155_ + ',' + i_156_ + ')'))
         }
     }
 
@@ -1251,7 +1251,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     i++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "nca.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
+                throw TextureLoadException.method2929(runtimeexception, "nca.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -1348,7 +1348,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_179_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_179_ + ')'))
         }
     }
 
@@ -1379,7 +1379,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             aFloatArray5506!![anInt5475] = f_205_
             return (anInt5475++).toShort()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.SA(" + i + ',' + l + ',' + i_200_ + ',' + i_201_ + ',' + i_202_ + ',' + i_203_ + ',' + f + ',' + i_204_ + ',' + f_205_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_206_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.SA(" + i + ',' + l + ',' + i_200_ + ',' + i_201_ + ',' + i_202_ + ',' + i_203_ + ',' + f + ',' + i_204_ + ',' + f_205_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_206_ + ')'))
         }
     }
 
@@ -1734,7 +1734,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.BB(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_212_ + ',' + i_213_ + ',' + i_214_ + ',' + i_215_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.BB(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_212_ + ',' + i_213_ + ',' + i_214_ + ',' + i_215_ + ',' + bool + ')'))
         }
     }
 
@@ -1849,7 +1849,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -2225,13 +2225,13 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                     val f_411_ = ((fs[5] * i_406_.toFloat() + (fs[3] * i_404_.toFloat() + i_405_.toFloat() * fs[4])) / f_408_)
                                     val f_412_ = ((i_405_.toFloat() * fs[7] + fs[6] * i_404_.toFloat() + fs[8] * i_406_.toFloat()) / f_409_)
                                     i_386_ = CalendarUtil.method2635(f_411_, false, f_412_, f_410_)
-                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_388_.toInt()]), (modelDefinition.anIntArray1847[i_388_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
+                                    NodeDequeStatics.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_388_.toInt()]), (modelDefinition.anIntArray1847[i_388_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
                                     f_379_ = DataHolder.aFloatArray3658!![1]
                                     f = DataHolder.aFloatArray3658!![0]
-                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_389_.toInt()]), (modelDefinition.anIntArray1847[i_389_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
+                                    NodeDequeStatics.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_389_.toInt()]), (modelDefinition.anIntArray1847[i_389_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
                                     f_381_ = DataHolder.aFloatArray3658!![1]
                                     f_380_ = DataHolder.aFloatArray3658!![0]
-                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_390_.toInt()]), (modelDefinition.anIntArray1847[i_390_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
+                                    NodeDequeStatics.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_390_.toInt()]), (modelDefinition.anIntArray1847[i_390_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
                                     f_382_ = DataHolder.aFloatArray3658!![0]
                                     f_383_ = DataHolder.aFloatArray3658!![1]
                                 } else if (i_387_.toInt() == 3) {
@@ -2384,7 +2384,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     i_464_++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_334_ + ',' + i_335_ + ',' + i_336_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_334_ + ',' + i_335_ + ',' + i_336_ + ')'))
             }
             break
         } while (false)
@@ -2447,7 +2447,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             anInt5517++
             return method662(i, i_479_, i_480_, 126, i_478_, bool, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.OA(" + i + ',' + i_478_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_479_ + ',' + i_480_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.OA(" + i + ',' + i_478_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_479_ + ',' + i_480_ + ')'))
         }
     }
 
@@ -2618,7 +2618,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.PA(" + (if (abstractModel != null) "{...}" else "null") + ',' + i + ',' + i_483_ + ',' + i_484_ + ',' + bool + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.PA(" + (if (abstractModel != null) "{...}" else "null") + ',' + i + ',' + i_483_ + ',' + i_484_ + ',' + bool + ')'))
         }
     }
 
@@ -2727,7 +2727,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 aBoolean5477 = false
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.p(" + i + ',' + i_534_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_535_ != null) "{...}" else "null") + ',' + i_536_ + ',' + i_537_ + ',' + i_538_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.p(" + i + ',' + i_534_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_535_ != null) "{...}" else "null") + ',' + i_536_ + ',' + i_537_ + ',' + i_538_ + ')'))
         }
     }
 
@@ -3359,7 +3359,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.I(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_590_ + ',' + i_591_ + ',' + i_592_ + ',' + bool + ',' + i_593_ + ',' + (if (is_594_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.I(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_590_ + ',' + i_591_ + ',' + i_592_ + ',' + bool + ',' + i_593_ + ',' + (if (is_594_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -3375,7 +3375,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             if (bool || GlowPostProcessor.method1412((-35).toByte(), anInt5472, anInt5463)) aBufferToggleState_5424 = BufferToggleState(Crc64Hashable.method1113(anInt5463, anInt5472, -21))
             if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aAsyncTaskHandle_5485 = AsyncTaskHandle(method2783(anInt5472, (-97).toByte(), anInt5463))
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_764_ + ',' + bool + ',' + bool_765_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_764_ + ',' + bool + ',' + bool_765_ + ')'))
         }
     }
 

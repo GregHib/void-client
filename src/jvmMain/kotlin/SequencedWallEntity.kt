@@ -137,7 +137,7 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, npcConfi
             this.aSceneObjectAnimator_10155 = SceneObjectAnimator(var_renderer, npcConfig, i_11_, i_12_, this.plane.toInt(), i_5_, this, bool, i_13_)
             aBoolean10153 = npcConfig!!.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("pw.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("pw.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
         }
     }
 
@@ -209,7 +209,7 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, npcConfi
                 }
                 return GlShaderProgramHandle(var_ha_Sub2, l, managedGlResources)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("pw.D(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (managedGlResources != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("pw.D(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (managedGlResources != null) "{...}" else "null") + ')'))
             }
         }
 

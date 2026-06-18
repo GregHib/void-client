@@ -19,7 +19,7 @@ class NativeBufferHandle internal constructor(glRenderDevice: GlRenderDevice?, l
             this.aLong1510 = l
             aGlRenderDevice_1506 = glRenderDevice
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lha.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + l + ',' + (if (glShaderObjectHandles != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("lha.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + l + ',' + (if (glShaderObjectHandles != null) "{...}" else "null") + ')'))
         }
     }
 

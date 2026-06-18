@@ -133,7 +133,7 @@ class GrowableStringList internal constructor(private val anInt2365: Int, bool: 
                 } else method2862(privilegedOperationWorker, string, -96, 3)
                 val i_6_ = -6 / ((i - 20) / 44)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("bo.C(" + (if (string != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ',' + bool_3_ + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("bo.C(" + (if (string != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ',' + bool_3_ + ',' + i + ')'))
             }
         }
 

@@ -199,7 +199,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                     val class243 = class76!!.aDoublyLinkedNodeList_1282
                     var class318_sub4 = class243.method1872(8) as SceneEntityModel?
                     while (class318_sub4 != null) {
-                        if ((TextureLoadException.aBoolean4599 || ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) && class318_sub4.method2504(i_29_, i_28_, var_renderer, -115)) {
+                        if ((TextureLoadExceptionStatics.aBoolean4599 || ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) && class318_sub4.method2504(i_29_, i_28_, var_renderer, -115)) {
                             val bool_30_ = false
                             val bool_31_ = false
                             val i_32_: Int

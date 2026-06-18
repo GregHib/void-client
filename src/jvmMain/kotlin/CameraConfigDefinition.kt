@@ -53,7 +53,7 @@ class CameraConfigDefinition {
                 }
                 anInt3250++
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("u.B(" + i + ',' + f + ',' + (if (`is` != null) "{...}" else "null") + ',' + f_0_ + ',' + i_1_ + ',' + f_2_ + ',' + (if (textureGenerator != null) "{...}" else "null") + ',' + f_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + f_7_ + ',' + i_8_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("u.B(" + i + ',' + f + ',' + (if (`is` != null) "{...}" else "null") + ',' + f_0_ + ',' + i_1_ + ',' + f_2_ + ',' + (if (textureGenerator != null) "{...}" else "null") + ',' + f_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + f_7_ + ',' + i_8_ + ')'))
             }
         }
 
@@ -69,12 +69,12 @@ class CameraConfigDefinition {
             try {
                 if (bool == true) {
                     anInt3247++
-                    TextureLoadException.anInt4596 = i
+                    TextureLoadExceptionStatics.anInt4596 = i
                     BloomGraphicsOptionState.anInt5969 = 2
                     LocalPlayerState.method1138(string_12_, false, string, (-45).toByte())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("u.E(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (string_12_ != null) "{...}" else "null") + ',' + bool + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("u.E(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (string_12_ != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
     }

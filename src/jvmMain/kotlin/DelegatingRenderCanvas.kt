@@ -84,7 +84,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     method1725(262144)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "vg.A(" + i + ',' + l + ')')
+                throw TextureLoadException.method2929(runtimeexception, "vg.A(" + i + ',' + l + ')')
             }
         }
 

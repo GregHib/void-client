@@ -496,7 +496,7 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("iaa.W(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class237_sub1 != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("iaa.W(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class237_sub1 != null) "{...}" else "null") + ')'))
             }
         }
 

@@ -59,7 +59,7 @@ class BrightnessTextureNode internal constructor(i: Int) : AbstractProceduralTex
                 method2732(i_6_, i_7_, bool, 96, js5Archive, i_5_)
                 GlBufferObject.aClass348_Sub16_Sub3_4743 = class348_sub16_sub3
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("pba.D(" + i + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + bool + ',' + i_6_ + ',' + i_7_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("pba.D(" + i + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + bool + ',' + i_6_ + ',' + i_7_ + ')'))
             }
         }
     }

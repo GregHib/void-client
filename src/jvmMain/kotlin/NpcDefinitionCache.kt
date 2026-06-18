@@ -58,7 +58,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             aJs5Archive_3319 = js5Archive
             aJs5Archive_3319!!.method407(0, 32)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("uga.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("uga.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -106,7 +106,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 stringbuffer.append(string.substring(i_6_))
                 return stringbuffer.toString()
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("uga.H(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + c + ',' + (if (string_0_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("uga.H(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + c + ',' + (if (string_0_ != null) "{...}" else "null") + ')'))
             }
         }
 

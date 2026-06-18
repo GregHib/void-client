@@ -68,7 +68,7 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
                 val i_5_ = aJs5Archive_2597.method414(-1) + -1
                 aJs5Archive_2597.method407(0, i_5_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qs.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("qs.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

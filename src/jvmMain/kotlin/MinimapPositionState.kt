@@ -75,7 +75,7 @@ class MinimapPositionState {
                     DisplaySettingsConfig.anInt7267 = 0
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "wo.B(" + i + ',' + l + ')')
+                throw TextureLoadException.method2929(runtimeexception, "wo.B(" + i + ',' + l + ')')
             }
         }
     }

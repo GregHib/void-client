@@ -385,7 +385,7 @@ class FloatCameraTransform : AbstractCameraTransform() {
             this.aFloat5710 = (class101_sub2_53_.aFloat5710 + ((class101_sub2_53_.aFloat5732 * class101_sub2_54_.aFloat5724) + ((class101_sub2_54_.aFloat5710 * class101_sub2_53_.aFloat5722) + (class101_sub2_53_.aFloat5708 * (class101_sub2_54_.aFloat5729)))))
             this.aFloat5724 = ((class101_sub2_53_.aFloat5691 * class101_sub2_54_.aFloat5710) + (class101_sub2_53_.aFloat5736 * class101_sub2_54_.aFloat5729) + (class101_sub2_54_.aFloat5724 * class101_sub2_53_.aFloat5716) + class101_sub2_53_.aFloat5724)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("haa.HA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (abstractCameraTransform_52_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("haa.HA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (abstractCameraTransform_52_ != null) "{...}" else "null") + ')'))
         }
     }
 

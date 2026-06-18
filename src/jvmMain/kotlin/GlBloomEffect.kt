@@ -168,7 +168,7 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
             this.aHa_Sub2_6618.method3738(-15039, 0)
             this.aHa_Sub2_6618.method3771((-82).toByte(), class258_sub3_2_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rda.H(" + (if (class258_sub3 != null) "{...}" else "null") + ',' + (if (class258_sub3_2_ != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rda.H(" + (if (class258_sub3 != null) "{...}" else "null") + ',' + (if (class258_sub3_2_ != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ')'))
         }
     }
 

@@ -1,6 +1,5 @@
 import MinimapRectClipper.method226
 import SceneTilePlaneManager.method260
-import SoundBankPatch.Companion.method2929
 import TextureAtlasState.Companion.method3490
 import Js5Archive.Companion.method395
 
@@ -82,7 +81,7 @@ object Tooltip {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("fg.A(" + bool + ',' + (if (class324 != null) "{...}" else "null") + ',' + (if (class143 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fg.A(" + bool + ',' + (if (class324 != null) "{...}" else "null") + ',' + (if (class143 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
         }
     }
 

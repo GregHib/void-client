@@ -115,7 +115,7 @@ object LinkedListNodeStatics {
             if (i_8_ != 0) abstractModel_13_.H(0, i_8_, 0)
             return abstractModel_13_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
         }
     }
 

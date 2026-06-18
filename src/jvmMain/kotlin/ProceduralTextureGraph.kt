@@ -1,4 +1,3 @@
-import SoundBankPatch.Companion.method2929
 import HashTableContainer.Companion.method3031
 import NpcType.Companion.method797
 
@@ -79,7 +78,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
             if (i_1_.toInt() != 11) anInt9532 = 97
             return `is`
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("lr.D(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + d + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_1_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("lr.D(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + d + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_1_ + ')'))
         }
     }
 
@@ -107,7 +106,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
             }
             return true
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("lr.B(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("lr.B(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -183,7 +182,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
             }
             return `is`
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("lr.C(" + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i_21_ + ',' + bool + ',' + d + ',' + bool_22_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_23_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("lr.C(" + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i_21_ + ',' + bool + ',' + d + ',' + bool_22_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_23_ + ')'))
         }
     }
 
@@ -245,7 +244,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
             }
             return fs
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("lr.A(" + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + bool + ',' + i_41_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_42_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("lr.A(" + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + bool + ',' + i_41_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_42_ + ')'))
         }
     }
 

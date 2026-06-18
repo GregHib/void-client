@@ -400,12 +400,12 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
                 anInt4576++
                 if (i_170_ == i_171_) return method2753(true, i_168_, i_169_, canvas, var_renderConfig)
                 if (i_171_ == 2) return WorldMapToggle.method2297(-6, i_168_, var_renderConfig, canvas, i_169_)
-                if (i_171_ == 1) return NodeDeque.method2000(3, i, canvas, var_renderConfig)
+                if (i_171_ == 1) return NodeDequeStatics.method2000(3, i, canvas, var_renderConfig)
                 if (i_171_ == 5) return JagGlToolkitFactory.method862(canvas, var_renderConfig, js5Archive, 25542, i)
                 if (i_171_ == 3) return JagDxToolkitFactory.method870(i, i_170_ xor 0x4a31, var_renderConfig!!, js5Archive!!, canvas!!)
                 throw IllegalArgumentException("UM")
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_170_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_171_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_170_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_171_ + ')'))
             }
         }
 

@@ -213,7 +213,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
                 else this.aClass318_Sub10_3081!!.method2540(GlGroundShaderPass.anInt7396.toLong())
                 this.aClass318_Sub10_3081!!.method2533(aByte3085.toInt(), i_8_, i, i_10_, i_7_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
             }
             break
         } while (false)
@@ -303,7 +303,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             if (i_18_ != -1) aBoolean3064 = true
             method1666(69.toByte(), i_18_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bv.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bv.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ')'))
         }
     }
 

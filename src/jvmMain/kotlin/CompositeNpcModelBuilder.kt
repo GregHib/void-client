@@ -277,7 +277,7 @@ class CompositeNpcModelBuilder {
             }
             return class64_51_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw TextureLoadException.method2929(
                 runtimeexception,
                 ("oo.C(" + (if (varResolver != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + bool + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ')')
             )
@@ -295,7 +295,7 @@ class CompositeNpcModelBuilder {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oo.H(" + i + ',' + i_61_ + ',' + i_62_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oo.H(" + i + ',' + i_61_ + ',' + i_62_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -310,7 +310,7 @@ class CompositeNpcModelBuilder {
             this.aBoolean2100 = bool
             method1234(-25)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oo.F(" + i + ',' + i_63_ + ',' + i_64_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + (if (is_65_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oo.F(" + i + ',' + i_63_ + ',' + i_64_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + (if (is_65_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -412,7 +412,7 @@ class CompositeNpcModelBuilder {
             class64_88_ = widgetDefinition.method269(123, abstractModel, i_67_, i_69_, i_68_, i_66_)
             return class64_88_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw TextureLoadException.method2929(
                 runtimeexception,
                 ("oo.J(" + (if (modelHeaderCache != null) "{...}" else "null") + ',' + i + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
             )
@@ -507,7 +507,7 @@ class CompositeNpcModelBuilder {
             abstractModel = widgetDefinition.method269(-32, abstractModel!!, i, i_96_, i_91_, i_97_)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -521,7 +521,7 @@ class CompositeNpcModelBuilder {
                 method1234(-54)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oo.D(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i + ',' + i_112_ + ',' + i_113_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oo.D(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i + ',' + i_112_ + ',' + i_113_ + ')'))
         }
     }
 

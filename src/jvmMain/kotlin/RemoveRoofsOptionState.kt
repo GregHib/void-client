@@ -177,7 +177,7 @@ class RemoveRoofsOptionState : GraphicsOptionState {
                 }
                 return 0
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("vu.F(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_18_ + ',' + (if (string_19_ != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("vu.F(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_18_ + ',' + (if (string_19_ != null) "{...}" else "null") + ')'))
             }
         }
 

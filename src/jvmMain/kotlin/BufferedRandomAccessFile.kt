@@ -175,7 +175,7 @@ class BufferedRandomAccessFile internal constructor(private val aRandomAccessFil
             val i_16_ = -67 / ((i - -49) / 34)
             aLong1324 = l
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "l.A(" + l + ',' + i + ')')
+            throw TextureLoadException.method2929(runtimeexception, "l.A(" + l + ',' + i + ')')
         }
     }
 

@@ -60,7 +60,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             aJs5Archive_3442 = js5Archive
             this.anInt3429 = aJs5Archive_3442!!.method407(0, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("cb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("cb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

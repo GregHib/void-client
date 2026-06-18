@@ -1,5 +1,4 @@
 import ProjectileDefinition.method2288
-import SoundBankPatch.Companion.method2929
 import VorbisOggDecoder.Companion.method2972
 
 /* Class348_Sub42_Sub20 - Decompiled by JODE
@@ -29,7 +28,7 @@ class SpriteRenderEntry internal constructor(widgetRedrawRegion: WidgetRedrawReg
             this.aSpotAnimVector_9704 = this.aWidgetRedrawRegion_9702!!.method2685((-13).toByte())
             method3279(2)
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("jo.<init>(" + (if (widgetRedrawRegion != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("jo.<init>(" + (if (widgetRedrawRegion != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ')'))
         }
     }
 
