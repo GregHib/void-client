@@ -78,10 +78,10 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
     init {
         try {
             aTypedRecordTable_5006 = typedRecordTable
-            anLifecycleArray5012 = arrayOfNulls<Lifecycle>((aTypedRecordTable_5006!!.anInterface12Array3688).size)
+            anLifecycleArray5012 = arrayOfNulls<Lifecycle>((aTypedRecordTable_5006!!.anConfigTypeProviderArray3688).size)
             var i = 0
             while ((i < anLifecycleArray5012.size)) {
-                anLifecycleArray5012[i] = dualMaterialContainer!!.method1000(true, (aTypedRecordTable_5006.anInterface12Array3688[i]))
+                anLifecycleArray5012[i] = dualMaterialContainer!!.method1000(true, (aTypedRecordTable_5006.anConfigTypeProviderArray3688[i]))
                 i++
             }
         } catch (runtimeexception: RuntimeException) {

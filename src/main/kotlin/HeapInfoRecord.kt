@@ -4,7 +4,7 @@ import java.io.File
 /*
  * Class158
  */
-class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) : Interface12 {
+class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) : ConfigTypeProvider {
     var anInt4931: Int = 0
     var anInt4932: Int = 0
     var anInt4935: Int = 0

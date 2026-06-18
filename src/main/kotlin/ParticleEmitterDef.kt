@@ -6,7 +6,7 @@ import AbstractModel.Companion.method616
 /* Class288 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class ParticleEmitterDef internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i_2_: Int, i_3_: Int) : Interface12 {
+open class ParticleEmitterDef internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i_2_: Int, i_3_: Int) : ConfigTypeProvider {
     @JvmField
     var anInt4950: Int = 0
     @JvmField

@@ -12,21 +12,21 @@ class DualMaterialContainer internal constructor(js5Archive: Js5Archive?, js5Arc
         return aMapRegionLoaderThread_1633!!
     }
 
-    fun method1000(bool: Boolean, interface12: Interface12?): Lifecycle? {
+    fun method1000(bool: Boolean, configTypeProvider: ConfigTypeProvider?): Lifecycle? {
         anInt1640++
-        if (interface12 == null) return null
-        val class223 = interface12.method51(120.toByte())
-        if (ModelDefinitionCache.aProjectileFactory_2868 == class223) return ClickFeedbackTask(interface12 as RsaVarbitHandler)
-        if (MatrixCameraTransform.aProjectileFactory_5689 == class223) return WorldMapRenderer(method998(-107), interface12 as MinimapSpriteRenderer)
-        if (class223 == WeaveTextureNode.aProjectileFactory_9274) return WidgetComponentNode(aJs5Archive_1637, interface12 as ParticleEmitterDef)
-        if (class223 == ItemNameResolver.aProjectileFactory_4997) return ScrollingWidgetComponentNode(aJs5Archive_1637, interface12 as ParticleEmitterDefExt)
-        if (class223 == Buffer.aProjectileFactory_7175) return SolidFillComponent(aJs5Archive_1637!!, aJs5Archive_1641!!, interface12 as WorldMapTextLabel)
-        if (class223 == SkyboxGradient.aProjectileFactory_3934) return SpriteComponent(aJs5Archive_1637, aJs5Archive_1641!!, interface12 as WorldMapAreaLabel)
-        if (class223 == MapSceneDefLoader.aProjectileFactory_2489) return ScrollbarComponent(aJs5Archive_1637!!, aJs5Archive_1641!!, interface12 as WorldMapIconLabel)
-        if (class223 == SpotAnimVector.aProjectileFactory_2307) return TooltipComponentRenderer(aJs5Archive_1637, aJs5Archive_1641, interface12 as HeapInfoRecord)
+        if (configTypeProvider == null) return null
+        val class223 = configTypeProvider.method51(120.toByte())
+        if (ModelDefinitionCache.aProjectileFactory_2868 == class223) return ClickFeedbackTask(configTypeProvider as RsaVarbitHandler)
+        if (MatrixCameraTransform.aProjectileFactory_5689 == class223) return WorldMapRenderer(method998(-107), configTypeProvider as MinimapSpriteRenderer)
+        if (class223 == WeaveTextureNode.aProjectileFactory_9274) return WidgetComponentNode(aJs5Archive_1637, configTypeProvider as ParticleEmitterDef)
+        if (class223 == ItemNameResolver.aProjectileFactory_4997) return ScrollingWidgetComponentNode(aJs5Archive_1637, configTypeProvider as ParticleEmitterDefExt)
+        if (class223 == Buffer.aProjectileFactory_7175) return SolidFillComponent(aJs5Archive_1637!!, aJs5Archive_1641!!, configTypeProvider as WorldMapTextLabel)
+        if (class223 == SkyboxGradient.aProjectileFactory_3934) return SpriteComponent(aJs5Archive_1637, aJs5Archive_1641!!, configTypeProvider as WorldMapAreaLabel)
+        if (class223 == MapSceneDefLoader.aProjectileFactory_2489) return ScrollbarComponent(aJs5Archive_1637!!, aJs5Archive_1641!!, configTypeProvider as WorldMapIconLabel)
+        if (class223 == SpotAnimVector.aProjectileFactory_2307) return TooltipComponentRenderer(aJs5Archive_1637, aJs5Archive_1641, configTypeProvider as HeapInfoRecord)
         if (bool != true) anIntArray1636 = null
-        if (OrientationRotator.aProjectileFactory_2045 == class223) return SplashImageLoadable(aJs5Archive_1637, interface12 as ConfigValueProvider)
-        if (LocTypeDefLoader.aProjectileFactory_2507 == class223) return ProportionalScrollbarComponent(aJs5Archive_1637!!, aJs5Archive_1641!!, interface12 as WorldMapPolygonIconLabel)
+        if (OrientationRotator.aProjectileFactory_2045 == class223) return SplashImageLoadable(aJs5Archive_1637, configTypeProvider as ConfigValueProvider)
+        if (LocTypeDefLoader.aProjectileFactory_2507 == class223) return ProportionalScrollbarComponent(aJs5Archive_1637!!, aJs5Archive_1641!!, configTypeProvider as WorldMapPolygonIconLabel)
         return null
     }
 

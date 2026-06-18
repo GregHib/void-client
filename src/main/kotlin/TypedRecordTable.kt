@@ -11,9 +11,9 @@ import kotlin.math.sin
  */
 class TypedRecordTable {
     var anInt3687: Int = 0
-    var anInterface12Array3688: Array<Interface12?> = emptyArray()
+    var anConfigTypeProviderArray3688: Array<ConfigTypeProvider?> = emptyArray()
     var anInt3690: Int = 0
-    private fun method2182(bool: Boolean, projectileFactory: ProjectileFactory?, class348_sub49: Buffer?): Interface12? {
+    private fun method2182(bool: Boolean, projectileFactory: ProjectileFactory?, class348_sub49: Buffer?): ConfigTypeProvider? {
         try {
             anInt3692++
             if (ModelDefinitionCache.aProjectileFactory_2868 == projectileFactory) return VarpStore.method1312(64.toByte(), class348_sub49!!)
@@ -37,12 +37,12 @@ class TypedRecordTable {
         this.anInt3690 = class348_sub49.readMedium(-1)
         anInt3693++
         this.anInt3687 = class348_sub49.readUnsignedShort(842397944)
-        this.anInterface12Array3688 = arrayOfNulls<Interface12>(class348_sub49.readUnsignedByte(i xor 0x557d))
+        this.anConfigTypeProviderArray3688 = arrayOfNulls<ConfigTypeProvider>(class348_sub49.readUnsignedByte(i xor 0x557d))
         val class223s = method285(-99)
         var i_27_ = 0
         if (i != 21890) method2180(25.toByte())
-        while ( /**/this.anInterface12Array3688.size > i_27_) {
-            this.anInterface12Array3688[i_27_] = method2182(true, class223s[(class348_sub49.readUnsignedByte(CameraSplineNode.method2955(i, 21885)))], class348_sub49)
+        while ( /**/this.anConfigTypeProviderArray3688.size > i_27_) {
+            this.anConfigTypeProviderArray3688[i_27_] = method2182(true, class223s[(class348_sub49.readUnsignedByte(CameraSplineNode.method2955(i, 21885)))], class348_sub49)
             i_27_++
         }
     }

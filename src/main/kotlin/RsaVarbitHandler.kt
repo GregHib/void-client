@@ -4,7 +4,7 @@ import java.math.BigInteger
 /*
  * Class52
  */
-class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Interface12 {
+class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : ConfigTypeProvider {
     override fun method51(i: Byte): ProjectileFactory? {
         anInt4894++
         if (i < 116) return null

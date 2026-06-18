@@ -1,7 +1,7 @@
 /* Class369 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-public open class WorldMapLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) : Interface12 {
+public open class WorldMapLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) : ConfigTypeProvider {
     @JvmField
     var anInt4959: Int = 0
     @JvmField

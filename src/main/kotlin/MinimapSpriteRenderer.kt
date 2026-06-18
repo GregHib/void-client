@@ -3,7 +3,7 @@ import MinimapFlagRenderer.method1084
 /* Class125 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean) : Interface12 {
+class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean) : ConfigTypeProvider {
     @JvmField
     var anInt4913: Int = 0
     @JvmField
