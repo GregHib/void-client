@@ -1,3 +1,8 @@
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import java.io.IOException
 import java.io.OutputStream
 
@@ -8,7 +13,7 @@ class BufferedOutputStreamWorker internal constructor(private var anOutputStream
     private var anIOException2704: IOException? = null
     private var anInt2705 = 0
     private val aByteArray2706: ByteArray
-    private val aThread2708: Thread
+    private val job: Job
     private var anInt2713 = 0
     private val anInt2715: Int
 
@@ -56,7 +61,9 @@ class BufferedOutputStreamWorker internal constructor(private var anOutputStream
         anInt2714++
         if (i.toInt() != -99) anIOException2704 = null
         try {
-            aThread2708.join()
+            runBlocking {
+                job.join()
+            }
         } catch (interruptedexception: InterruptedException) {
             /* empty */
         }
@@ -92,9 +99,7 @@ class BufferedOutputStreamWorker internal constructor(private var anOutputStream
     init {
         anInt2715 = 1 + i
         aByteArray2706 = ByteArray(anInt2715)
-        aThread2708 = Thread(this)
-        aThread2708.setDaemon(true)
-        aThread2708.start()
+        job = GlobalScope.launch(Dispatchers.Default) { run() }
     }
 
     companion object {

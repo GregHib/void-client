@@ -1,5 +1,7 @@
 import LinkedListIterator.Companion.method1242
 import TexGenMaterialPass.Companion.method2161
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.runBlocking
 import java.io.EOFException
 import java.io.IOException
 import java.io.InputStream
@@ -165,7 +167,9 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
                 while (aLinkedQueueNode_2658!!.anInt1997 == 0) method2161(105.toByte(), 1L)
                 if (aLinkedQueueNode_2658!!.anInt1997 == 1) {
                     try {
-                        (aLinkedQueueNode_2658!!.anObject1998 as Thread).join()
+                        runBlocking {
+                            (aLinkedQueueNode_2658!!.anObject1998 as Job).join()
+                        }
                     } catch (interruptedexception: InterruptedException) {
                         /* empty */
                     }

@@ -1,6 +1,12 @@
 import FileStoreLocator.method1464
 import FileStoreLocator.method1466
 import GameClock.method599
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.asCoroutineDispatcher
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import java.awt.*
 import java.awt.datatransfer.Transferable
 import java.io.DataInputStream
@@ -12,6 +18,7 @@ import java.net.InetAddress
 import java.net.Socket
 import java.net.URL
 import java.util.*
+import java.util.concurrent.Executors
 import kotlin.concurrent.Volatile
 
 /*
@@ -28,7 +35,8 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
     private var anObject3787: Any? = null
     @JvmField
     var aRandomAccessFileOnDisk_3788: RandomAccessFileOnDisk? = null
-    private val aThread3790: Thread
+    private val job: Job
+    private val dispatcher = Executors.newFixedThreadPool(1).asCoroutineDispatcher()
     private var anObject3791: Any? = null
     private var anObject3793: Any? = null
     @JvmField
@@ -98,11 +106,9 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                         throw ioexception_sub1
                     }
                 } else if (i == 2) {
-                    val thread = Thread((linkedQueueNode.anObject1996) as Runnable?)
-                    thread.setDaemon(true)
-                    thread.start()
-                    thread.setPriority(linkedQueueNode.anInt2000)
-                    linkedQueueNode.anObject1998 = thread
+                    val job = GlobalScope.launch(Dispatchers.Default) { ((linkedQueueNode.anObject1996) as Runnable?)?.run() }
+                    val priority = linkedQueueNode.anInt2000
+                    linkedQueueNode.anObject1998 = job
                 } else if (i == 4) {
                     if (method599(-73) < aLong3781) throw IOException()
                     linkedQueueNode.anObject1998 = DataInputStream(((linkedQueueNode.anObject1996) as URL).openStream())
@@ -198,7 +204,9 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
             (this as Object).notifyAll()
         }
         try {
-            aThread3790.join()
+            runBlocking {
+                job.join()
+            }
             if (i.toInt() != 103) this.aRandomAccessFileOnDisk_3788 = null
         } catch (interruptedexception: InterruptedException) {
             /* empty */
@@ -430,10 +438,9 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
             }
         }
         aBoolean3801 = false
-        aThread3790 = Thread(this)
-        aThread3790.setPriority(10)
-        aThread3790.setDaemon(true)
-        aThread3790.start()
+        job = GlobalScope.launch(dispatcher) {
+            run()
+        }
     }
 
     companion object {

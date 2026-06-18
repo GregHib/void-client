@@ -15,6 +15,11 @@ kotlin {
     jvm()
 
     sourceSets {
+        jvmMain {
+            dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
+            }
+        }
         jvmTest {
             dependencies {
                 implementation(kotlin("test"))

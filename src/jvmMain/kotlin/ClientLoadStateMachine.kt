@@ -20,6 +20,7 @@ import NativeRenderer.Companion.method3886
 import NativeRenderer.Companion.method3896
 import jagex3.jagmisc.jagmisc.init
 import NativeRenderNode.Companion.method3290
+import kotlinx.coroutines.runBlocking
 
 /*
  * Class164
@@ -276,7 +277,9 @@ object ClientLoadStateMachine {
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1042) {
             NpcConfig.aResourceLoaderThread_897!!.method2319((-56).toByte())
             try {
-                TerrainShadowBuilderGl2.aThread6946!!.join()
+                runBlocking {
+                    TerrainShadowBuilderGl2.job!!.join()
+                }
             } catch (interruptedexception: InterruptedException) {
                 return 0
             }
@@ -284,7 +287,7 @@ object ClientLoadStateMachine {
             SpriteRgbTextureNode.aJs5Archive_10426 = null
             NpcConfig.aResourceLoaderThread_897 = null
             LoadProgressCounters.anCursorControllerArray2447 = null
-            TerrainShadowBuilderGl2.aThread6946 = null
+            TerrainShadowBuilderGl2.job = null
             ScrollTexMaterialPass.aJs5Archive_6277 = null
             method3886(i + 28556)
             TheoraVideoStream.aBoolean9038 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(-32350) == 1

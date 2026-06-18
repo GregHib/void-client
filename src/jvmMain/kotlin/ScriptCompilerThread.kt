@@ -1,11 +1,13 @@
 import TexGenMaterialPass.Companion.method2161
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.runBlocking
 
 /* Class112 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
 class ScriptCompilerThread internal constructor(privilegedOperationWorker: PrivilegedOperationWorker) : Runnable {
     private val aLinkedNodeListIterator_1730 = LinkedNodeListIterator()
-    private var aThread1733: Thread?
+    private var job: Job?
     var anInt1734: Int = 0
     private var aBoolean1738 = false
 
@@ -43,11 +45,13 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
             (aLinkedNodeListIterator_1730 as Object).notifyAll()
         }
         try {
-            aThread1733!!.join()
+            runBlocking {
+                job!!.join()
+            }
         } catch (interruptedexception: InterruptedException) {
             /* empty */
         }
-        aThread1733 = null
+        job = null
     }
 
     fun method1054(indexedFileCache: IndexedFileCache?, i: Int, i_19_: Byte): CompletedResourceRequest? {
@@ -119,7 +123,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
         val class144 = privilegedOperationWorker.method2236(this, -10240, 5)
         while (class144.anInt1997 == 0) method2161(43.toByte(), 10L)
         if (class144.anInt1997 == 2) throw RuntimeException()
-        aThread1733 = class144.anObject1998 as Thread
+        job = class144.anObject1998 as Job
     }
 
     companion object {

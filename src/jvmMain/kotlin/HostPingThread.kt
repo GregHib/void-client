@@ -1,5 +1,10 @@
 import CircleRasterizer.Companion.method2253
 import jagex3.jagmisc.jagmisc.ping
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import java.net.InetAddress
 
 /*
@@ -7,7 +12,7 @@ import java.net.InetAddress
  */
 class HostPingThread : Runnable {
     private var aNodeDeque_2258: NodeDeque? = NodeDeque()
-    private var aThread2259: Thread? = Thread(this)
+    private var job: Job? = GlobalScope.launch(Dispatchers.Default) { run() }
     override fun run() {
         anInt2263++
         while (true) {
@@ -42,14 +47,9 @@ class HostPingThread : Runnable {
         return class348_sub26
     }
 
-    init {
-        aThread2259!!.setDaemon(true)
-        aThread2259!!.start()
-    }
-
     fun method1302(i: Int, string: String): NamedIdEntry {
         anInt2266++
-        checkNotNull(aThread2259) { "" }
+        checkNotNull(job) { "" }
         requireNotNull(string) { "" }
         if (i != -5255) aNodeDeque_2258 = null
         val class348_sub26 = NamedIdEntry(string)
@@ -59,14 +59,16 @@ class HostPingThread : Runnable {
 
     fun method1303(i: Byte) {
         anInt2257++
-        if (aThread2259 != null) {
+        if (job != null) {
             method1304(1000, LinkedListNode())
             try {
-                aThread2259!!.join()
+                runBlocking {
+                    job!!.join()
+                }
             } catch (interruptedexception: InterruptedException) {
                 /* empty */
             }
-            aThread2259 = null
+            job = null
             if (i.toInt() != 16) anInt2264 = 87
         }
     }

@@ -3,6 +3,10 @@ import ConfigFlagUtil.Companion.method1916
 import MinimapTileEntry.Companion.method381
 import SolidFillComponent.Companion.method196
 import ChatCommandProcessor.method705
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
 import java.io.BufferedReader
 import java.io.DataInputStream
 import java.io.IOException
@@ -20,7 +24,8 @@ class MapRegionLoaderThread : Runnable {
 
     @Volatile
     private var aBoolean4205 = false
-    private var aThread4206: Thread? = null
+    private var job: Job? = null
+
     override fun run() {
         anInt4203++
         try {
@@ -66,9 +71,8 @@ class MapRegionLoaderThread : Runnable {
         if (aLinkedQueueNode_4201 == null || aLinkedQueueNode_4201!!.anInt1997 == 2) return true
         if (i != -21913) return false
         if (aLinkedQueueNode_4201!!.anInt1997 != 1) return false
-        if (aThread4206 == null) {
-            aThread4206 = Thread(this)
-            aThread4206!!.start()
+        if (job == null) {
+            job = GlobalScope.launch(Dispatchers.Default) { run() }
         }
         return aBoolean4205
     }

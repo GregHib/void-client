@@ -1,3 +1,5 @@
+import kotlinx.coroutines.runBlocking
+
 /* Class59_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -39,10 +41,12 @@ class ScrollingNoiseTexture : GrayscaleNoiseTexture(8, 5, 8, 8, 2, 0.1f, 0.55f, 
             anInt8656++
             if (NpcConfig.aResourceLoaderThread_897 != null) NpcConfig.aResourceLoaderThread_897!!.method2319((-75).toByte())
             if (bool == false) {
-                if (TerrainShadowBuilderGl2.aThread6946 != null) {
+                if (TerrainShadowBuilderGl2.job != null) {
                     while (true) {
                         try {
-                            TerrainShadowBuilderGl2.aThread6946!!.join()
+                            runBlocking {
+                                TerrainShadowBuilderGl2.job!!.join()
+                            }
                             break
                         } catch (interruptedexception: InterruptedException) {
                             /* empty */

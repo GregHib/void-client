@@ -1,4 +1,5 @@
 import CacheArchiveIndexLoader.Companion.method340
+import kotlinx.coroutines.Job
 import kotlin.math.sqrt
 
 /* Class348_Sub32 - Decompiled by JODE
@@ -292,7 +293,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
         var anInt6938: Int = 0
         var anInt6939: Int = 0
         var anInt6941: Int = 0
-        var aThread6946: Thread? = null
+        var job: Job? = null
         var aJs5Archive_6950: Js5Archive? = null
         fun method3018(i: Int) {
             InterfaceBounds.Companion.anInt6818 = i
@@ -302,7 +303,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
         fun method3020(i: Byte) {
             if (i.toInt() == -64) {
                 aJs5Archive_6950 = null
-                aThread6946 = null
+                job = null
             }
         }
 

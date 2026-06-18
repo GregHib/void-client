@@ -8,6 +8,10 @@ import jaggl.OpenGL.Companion.glFramebufferRenderbufferEXT
 import jaggl.OpenGL.Companion.glGenRenderbuffersEXT
 import jaggl.OpenGL.Companion.glRenderbufferStorageEXT
 import jaggl.OpenGL.Companion.glRenderbufferStorageMultisampleEXT
+import kotlinx.coroutines.CoroutineName
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import kotlin.math.sqrt
 
 class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
@@ -153,8 +157,11 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
                 NativeLibraryState.aRenderer171!!.method3631((NormalMapTextureNode.aSceneLoaderThreadArray9432)!!.size + 1)
                 NativeLibraryState.aRenderer171!!.method3659(0)
                 for (i_6_ in NormalMapTextureNode.aSceneLoaderThreadArray9432!!.indices) {
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![i_6_] = SceneLoaderThread(i_6_ + 1, NativeLibraryState.aRenderer171!!)
-                    Thread(NormalMapTextureNode.aSceneLoaderThreadArray9432!![i_6_], "wr" + i_6_).start()
+                    val thread = SceneLoaderThread(i_6_ + 1, NativeLibraryState.aRenderer171!!)
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![i_6_] = thread
+                    GlobalScope.launch(Dispatchers.Default + CoroutineName("wr${i_6_}")) {
+                        thread.run()
+                    }
                 }
                 val i_7_: Int
                 if (Npc.anInt10503 == 2) {

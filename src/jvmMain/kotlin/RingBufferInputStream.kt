@@ -1,3 +1,8 @@
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import java.io.EOFException
 import java.io.IOException
 import java.io.InputStream
@@ -9,7 +14,7 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
     private var anInt4546: Int
     private val aByteArray4554: ByteArray
     private var anInt4556 = 0
-    private val aThread4557: Thread
+    private val job: Job
     private var anInt4558 = 0
     private var anIOException4560: IOException? = null
 
@@ -21,7 +26,9 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
         }
         anInt4552++
         try {
-            aThread4557.join()
+            runBlocking {
+                job.join()
+            }
         } catch (interruptedexception: InterruptedException) {
             /* empty */
         }
@@ -109,9 +116,7 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
     init {
         anInt4546 = i - -1
         aByteArray4554 = ByteArray(anInt4546)
-        aThread4557 = Thread(this)
-        aThread4557.setDaemon(true)
-        aThread4557.start()
+        job = GlobalScope.launch(Dispatchers.Default) { run() }
     }
 
     companion object {

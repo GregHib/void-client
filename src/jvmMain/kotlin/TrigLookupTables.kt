@@ -1,3 +1,6 @@
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import kotlin.math.cos
 import kotlin.math.sin
 
@@ -34,10 +37,10 @@ class TrigLookupTables {
             if (i <= 88) anIntArray1204 = null
             anInt1206++
             if (TimedTileQueueEntry.aConnectionStateType_9660 != null) {
-                NpcConfig.aResourceLoaderThread_897 = ResourceLoaderThread()
+                val thread = ResourceLoaderThread()
+                NpcConfig.aResourceLoaderThread_897 = thread
                 NpcConfig.aResourceLoaderThread_897!!.method2316(TimedTileQueueEntry.aConnectionStateType_9660, TimedTileQueueEntry.aConnectionStateType_9660!!.aLocalizedText_1012!!.method2063(AnimationFrameDefinition.anInt6967, 544), TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025, DataHolder.aLong3660, false)
-                TerrainShadowBuilderGl2.aThread6946 = Thread(NpcConfig.aResourceLoaderThread_897, "")
-                TerrainShadowBuilderGl2.aThread6946!!.start()
+                TerrainShadowBuilderGl2.job = GlobalScope.launch(Dispatchers.Default) { thread.run() }
             }
         }
 
