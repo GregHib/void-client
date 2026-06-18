@@ -27,7 +27,7 @@ class LocTypeConfig {
         anInt3571++
     }
 
-    private fun method2069(i: Int, class348_sub49: Buffer, i_1_: Int) {
+    private fun method2069(i: Int, class348_sub49: ByteBuffer, i_1_: Int) {
         anInt3567++
         if (i == -1) {
             if (i_1_ != 1) {
@@ -54,7 +54,7 @@ class LocTypeConfig {
         }
     }
 
-    fun method2070(bool: Boolean, class348_sub49: Buffer) {
+    fun method2070(bool: Boolean, class348_sub49: ByteBuffer) {
         if (bool != true) this.aBoolean3561 = false
         while (true) {
             val i = class348_sub49.readUnsignedByte(255)

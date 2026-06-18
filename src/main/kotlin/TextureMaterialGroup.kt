@@ -28,7 +28,7 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
         var bool = true
         for (i_2_ in aByteArrayArray9671!!.indices) {
             val `is` = aByteArrayArray9671!![i_2_]
-            val class348_sub49 = Buffer(`is`)
+            val class348_sub49 = ByteBuffer(`is`)
             class348_sub49.anInt7197 = 1
             val i_3_ = class348_sub49.readUnsignedShort(842397944)
             synchronized(GlElementArrayBuffer.aJs5Archive_4843!!) {
@@ -46,7 +46,7 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
         }
         for (i_5_ in `is`!!.indices) {
             val is_6_ = aByteArrayArray9671!![i_5_]
-            val class348_sub49 = Buffer(is_6_)
+            val class348_sub49 = ByteBuffer(is_6_)
             class348_sub49.anInt7197 = 1
             val i_7_ = class348_sub49.readUnsignedShort(842397944) //
             var class348_sub33: AnimationFrameDefinition? = null

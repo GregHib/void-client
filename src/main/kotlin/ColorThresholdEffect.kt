@@ -20,7 +20,7 @@ class ColorThresholdEffect : AbstractProceduralTextureNode(1, false) {
     private var anInt9092 = 4096
     private var anInt9094 = 409
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         anInt9087++
         if (i_0_ != 31015) anInt9094 = 115
         val i_1_ = i

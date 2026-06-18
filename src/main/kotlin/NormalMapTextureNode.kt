@@ -10,7 +10,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
     private var anInt9438 = 4096
     private var aBoolean9439 = true
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_5_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_5_: Int) {
         do {
             try {
                 if (i_5_ != 31015) method3140(-77, 55)
@@ -140,9 +140,9 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             MinimapPolygonDrawer.method465(i + -1636518175)
             FloatCameraTransform.aLong5745 = 0L
             LightingOptionState.aClass348_Sub26_5881 = null
-            if (bool) Buffer.method3379(2, 12)
+            if (bool) ByteBuffer.method3379(2, 12)
             else {
-                Buffer.method3379(i + -9, 3)
+                ByteBuffer.method3379(i + -9, 3)
                 try {
                     JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "loggedout")
                 } catch (throwable: Throwable) {

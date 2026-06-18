@@ -41,7 +41,7 @@ object InputSettingsState {
                     if (i_0_ == -1) throw IOException("EOF")
                     i_1_ += i_0_
                 }
-                method3014(Buffer(`is`), ((-40).toByte()).toByte())
+                method3014(ByteBuffer(`is`), ((-40).toByte()).toByte())
             }
         } catch (exception: Exception) {
             /* empty */

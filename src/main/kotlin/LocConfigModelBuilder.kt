@@ -34,7 +34,7 @@ class LocConfigModelBuilder {
         }
     }
 
-    fun method3559(i: Int, class348_sub49: Buffer) {
+    fun method3559(i: Int, class348_sub49: ByteBuffer) {
         anInt4497++
         if (i == 28105) {
             while (true) {
@@ -55,7 +55,7 @@ class LocConfigModelBuilder {
         }
     }
 
-    private fun method3564(i: Int, class348_sub49: Buffer, i_11_: Int) {
+    private fun method3564(i: Int, class348_sub49: ByteBuffer, i_11_: Int) {
         anInt4486++
         if (i < -119) {
             if (i_11_ == 1) anInt4506 = class348_sub49.readUnsignedShort(842397944)

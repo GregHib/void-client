@@ -55,7 +55,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                         if (i_2_ == -1) throw IOException("EOF")
                         i_3_ += i_2_
                     }
-                    class348_sub51 = DisplaySettingsConfig(Buffer(`is`), (HardCacheEntryReference.aSceneProjector_10434), 0)
+                    class348_sub51 = DisplaySettingsConfig(ByteBuffer(`is`), (HardCacheEntryReference.aSceneProjector_10434), 0)
                 }
             } catch (exception: Exception) {
                 /* empty */

@@ -189,7 +189,7 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
 
     companion object {
         @JvmField
-        var aClass348_Sub49_8698: Buffer? = null
+        var aClass348_Sub49_8698: ByteBuffer? = null
         @JvmField
         var anInt8699: Int = 0
         @JvmField

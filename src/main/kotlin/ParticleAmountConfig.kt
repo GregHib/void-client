@@ -6,13 +6,13 @@ import FlipTextureNode.Companion.method3064
 class ParticleAmountConfig {
     @JvmField
     var anInt2125: Int = 0
-    private fun method1251(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    private fun method1251(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         if (i == 5) this.anInt2125 = class348_sub49.readUnsignedShort(842397944)
         anInt2126++
         val i_1_ = 60 % ((i_0_ - 33) / 57)
     }
 
-    fun method1253(class348_sub49: Buffer, bool: Boolean) {
+    fun method1253(class348_sub49: ByteBuffer, bool: Boolean) {
         while (true) {
             val i = class348_sub49.readUnsignedByte(255)
             if (i == 0) break

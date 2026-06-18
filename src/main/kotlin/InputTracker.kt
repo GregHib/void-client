@@ -39,7 +39,7 @@ abstract class InputTracker {
             if (spotAnimDefinition != null) return spotAnimDefinition
             val `is` = BloomGraphicsOptionState.aJs5Archive_5964!!.method410(-1860, i_0_, i)
             spotAnimDefinition = SpotAnimDefinition()
-            if (`is` != null) spotAnimDefinition.method1370(24, Buffer(`is`))
+            if (`is` != null) spotAnimDefinition.method1370(24, ByteBuffer(`is`))
             spotAnimDefinition.method1371(4)
             WorldMapElement.aLruByteCache_4636!!.method582(spotAnimDefinition, i.toLong(), (-103).toByte())
             return spotAnimDefinition

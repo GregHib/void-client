@@ -44,7 +44,7 @@ class ClientMachineInfo : LinkedListNode {
         return i_0_
     }
 
-    fun method2747(i: Int, class348_sub49: Buffer) {
+    fun method2747(i: Int, class348_sub49: ByteBuffer) {
         class348_sub49.writeByte(false, 5)
         anInt6611++
         class348_sub49.writeByte(false, anInt6613)

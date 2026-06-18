@@ -38,7 +38,7 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         npcConfig = NpcConfig()
         npcConfig.anInt941 = i_0_
         npcConfig.aSeqDefinitionCache_933 = this
-        if (`is` != null) npcConfig.method479(0.toByte(), Buffer(`is`))
+        if (`is` != null) npcConfig.method479(0.toByte(), ByteBuffer(`is`))
         npcConfig.method488(-105)
         if (i != 0) this.aLruByteCache_3361 = null
         if (!this.aBoolean3359 && npcConfig.aBoolean942) {
@@ -322,7 +322,7 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
 
         fun method2013(`is`: ByteArray?, i: Byte) {
             anInt3357++
-            val class348_sub49 = Buffer(`is`)
+            val class348_sub49 = ByteBuffer(`is`)
             while (true) {
                 val i_23_ = class348_sub49.readUnsignedByte(255)
                 if (i_23_ == 0) break

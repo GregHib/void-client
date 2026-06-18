@@ -83,7 +83,7 @@ class StringValueNode : LinkedListNode {
             return HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_2_]!![i_3_]
         }
 
-        fun method3322(i: Int, class348_sub49: Buffer): WorldMapIconLabel {
+        fun method3322(i: Int, class348_sub49: ByteBuffer): WorldMapIconLabel {
             anInt7109++
             val class369 = PcmStreamBuffer.method2834((-125).toByte(), class348_sub49)
             val i_4_ = class348_sub49.readUnsignedShort(i xor 0x3235f8f8)

@@ -28,7 +28,7 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
             `is` = aJs5Archive_2461.method410(-1860, 1, i)
         }
         hslColorConfig = HslColorConfig()
-        if (`is` != null) hslColorConfig.method290(Buffer(`is`), -1)
+        if (`is` != null) hslColorConfig.method290(ByteBuffer(`is`), -1)
         synchronized(aLruByteCache_2458) {
             aLruByteCache_2458.method582(hslColorConfig, i.toLong(), (-124).toByte())
         }

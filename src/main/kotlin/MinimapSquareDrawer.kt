@@ -100,7 +100,7 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
         @JvmStatic
         fun method463(class348_sub47: OutgoingPacketNode, bool: Boolean): IntArray {
             anInt5210++
-            val class348_sub49 = Buffer(518)
+            val class348_sub49 = ByteBuffer(518)
             val `is` = IntArray(4)
             for (i in 0..3) `is`[i] = (Math.random() * 9.9999999E7).toInt()
             class348_sub49.writeByte(bool, 10)

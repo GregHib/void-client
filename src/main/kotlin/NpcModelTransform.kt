@@ -20,8 +20,8 @@ class NpcModelTransform internal constructor(`is`: ByteArray, class348_sub33: An
     init {
         this.aClass348_Sub33_134 = class348_sub33
         try {
-            val class348_sub49 = Buffer(`is`)
-            val class348_sub49_0_ = Buffer(`is`)
+            val class348_sub49 = ByteBuffer(`is`)
+            val class348_sub49_0_ = ByteBuffer(`is`)
             class348_sub49.readUnsignedByte(255)
             class348_sub49.anInt7197 += 2
             val i = class348_sub49.readUnsignedByte(255) //byte

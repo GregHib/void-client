@@ -11,7 +11,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
     private var aHashtable_6932: Hashtable? = null
     private var anInt6934 = 0
     private val anInt6935: Int
-    private var aClass348_Sub49_6936: Buffer? = null
+    private var aClass348_Sub49_6936: ByteBuffer? = null
     private val aClass348_Sub1_6937: AbstractTileShape?
     private var anInt6940 = 0
     private var anInt6942 = 0
@@ -207,7 +207,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
                 } else i_50_ += anInt6942 - anInt6935
             }
             if (anInt6934 > 0) {
-                aClass348_Sub49_6936 = Buffer(anInt6934 * 2)
+                aClass348_Sub49_6936 = ByteBuffer(anInt6934 * 2)
                 aClass348_Sub49_Sub1_6953 = FloatBuffer(anInt6934 * 16)
                 aHashtable_6932 = Hashtable(method340(anInt6934, 108.toByte()))
                 var i_56_ = 0

@@ -107,7 +107,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
                     GlRectangleTexture.method254(35, (-87).toByte())
                     return
                 } else {
-                    val class348_sub49 = (Buffer(method878((MapLabelMenuEntry.method1039(NullOggStream.aString9043!!, true)), -126)))
+                    val class348_sub49 = (ByteBuffer(method878((MapLabelMenuEntry.method1039(NullOggStream.aString9043!!, true)), -126)))
                     l = class348_sub49.readLong(-456577760)
                     AnimationFrameDefinition.aLong6966 = class348_sub49.readLong(-456577760)
                 }

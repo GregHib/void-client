@@ -12,7 +12,7 @@ class ScatterTextureNode : AbstractProceduralTextureNode(0, true) {
         if (i < 108) Companion.method3122((-111).toByte())
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         anInt9370++
         if (i_0_ != 31015) anInt9364 = -29
         val i_1_ = i

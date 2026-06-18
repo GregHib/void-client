@@ -903,7 +903,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
         }
     }
 
-    fun method1681(class348_sub49: Buffer?, i: Int, collisionMaps: Array<CollisionMap?>?, i_197_: Int, i_198_: Int, i_199_: Int, i_200_: Byte) {
+    fun method1681(class348_sub49: ByteBuffer?, i: Int, collisionMaps: Array<CollisionMap?>?, i_197_: Int, i_198_: Int, i_199_: Int, i_200_: Byte) {
         try {
             anInt3107++
             if (!this.aBoolean3109) {
@@ -933,7 +933,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
         }
     }
 
-    private fun method1682(bool: Boolean, i: Int, i_212_: Int, i_213_: Int, class348_sub49: Buffer, i_214_: Int, i_215_: Int, i_216_: Int, i_217_: Int, i_218_: Int, i_219_: Int) {
+    private fun method1682(bool: Boolean, i: Int, i_212_: Int, i_213_: Int, class348_sub49: ByteBuffer, i_214_: Int, i_215_: Int, i_216_: Int, i_217_: Int, i_218_: Int, i_219_: Int) {
         var i = i
         var i_214_ = i_214_
         anInt3125++
@@ -1143,7 +1143,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
         } while (false)
     }
 
-    fun method1684(i: Int, i_272_: Int, i_273_: Int, class348_sub49: Buffer?, i_274_: Int, i_275_: Int, i_276_: Int, collisionMaps: Array<CollisionMap?>?, i_277_: Int, i_278_: Int) {
+    fun method1684(i: Int, i_272_: Int, i_273_: Int, class348_sub49: ByteBuffer?, i_274_: Int, i_275_: Int, i_276_: Int, collisionMaps: Array<CollisionMap?>?, i_277_: Int, i_278_: Int) {
         try {
             if (i_273_ == -1) {
                 anInt3115++

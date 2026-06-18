@@ -37,7 +37,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
         return `is`
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_23_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_23_: Int) {
         do {
             try {
                 val i_24_ = i

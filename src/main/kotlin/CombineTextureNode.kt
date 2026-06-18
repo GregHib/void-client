@@ -7,7 +7,7 @@ import kotlin.math.min
 */
 class CombineTextureNode : AbstractProceduralTextureNode(2, false) {
     private var anInt9226 = 6
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         if (i_0_ != 31015) anInt9226 = -83
         val i_1_ = i
         do {

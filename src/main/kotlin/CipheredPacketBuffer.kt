@@ -4,7 +4,7 @@ import NpcType.Companion.method797
 /* Class348_Sub49_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class CipheredPacketBuffer internal constructor(i: Int) : Buffer(i) {
+class CipheredPacketBuffer internal constructor(i: Int) : ByteBuffer(i) {
     private var anInt9754 = 0
     private var aIsaacCipher_9756: IsaacCipher? = null
     fun method3404(i: Int): Boolean {

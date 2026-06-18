@@ -85,7 +85,7 @@ abstract class AbstractMenuEntry {
         }
 
         @JvmStatic
-        fun method1034(i: Int, class348_sub49: Buffer?, privilegedOperationWorker: PrivilegedOperationWorker?, i_5_: Int) {
+        fun method1034(i: Int, class348_sub49: ByteBuffer?, privilegedOperationWorker: PrivilegedOperationWorker?, i_5_: Int) {
             try {
                 anInt1710++
                 val class348_sub48 = ModelResourceBundle()

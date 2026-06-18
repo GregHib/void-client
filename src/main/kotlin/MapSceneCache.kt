@@ -32,7 +32,7 @@ class MapSceneCache internal constructor(sceneProjector: SceneProjector?, i: Int
             `is` = aJs5Archive_1460.method410(-1860, i_15_, i)
         }
         particleConfigParser = ParticleConfigParser()
-        if (`is` != null) particleConfigParser!!.method2275(Buffer(`is`), (-123).toByte())
+        if (`is` != null) particleConfigParser!!.method2275(ByteBuffer(`is`), (-123).toByte())
         synchronized(aLruByteCache_1449) {
             aLruByteCache_1449.method582(particleConfigParser, i.toLong(), (-106).toByte())
         }

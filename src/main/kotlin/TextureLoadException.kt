@@ -66,7 +66,7 @@ class TextureLoadException(@JvmField var aThrowable4595: Throwable?, @JvmField v
         @JvmStatic
         fun method4012(`is`: ByteArray?, i: Byte) {
             anInt4605++
-            val class348_sub49 = Buffer(`is`)
+            val class348_sub49 = ByteBuffer(`is`)
             val i_7_ = -91 % ((i - -51) / 42)
             var bool = false
             while (true) {

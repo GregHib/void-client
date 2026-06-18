@@ -37,7 +37,7 @@ class LoadProgressCounters {
                 GlRectangleTexture.method254(35, (-101).toByte())
                 return
             } else {
-                val class348_sub49 = Buffer(method878((MapLabelMenuEntry.method1039((NullOggStream.aString9043!!), true)), -125))
+                val class348_sub49 = ByteBuffer(method878((MapLabelMenuEntry.method1039((NullOggStream.aString9043!!), true)), -125))
                 l = class348_sub49.readLong(-456577760)
                 AnimationFrameDefinition.aLong6966 = class348_sub49.readLong(-456577760)
             }
@@ -53,7 +53,7 @@ class LoadProgressCounters {
             }
         }
 
-        fun method1374(i: Int, class348_sub49: Buffer): MinimapLineDrawer {
+        fun method1374(i: Int, class348_sub49: ByteBuffer): MinimapLineDrawer {
             if (i < 106) aKeyboardInputSource_2449 = null
             anInt2453++
             return MinimapLineDrawer(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))

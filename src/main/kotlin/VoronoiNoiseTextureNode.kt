@@ -151,7 +151,7 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         return `is`
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_17_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_17_: Int) {
         if (i_17_ == 31015) {
             val i_18_ = i
             while_145_@ do {

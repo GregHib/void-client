@@ -471,7 +471,7 @@ class WidgetComponent {
         if (i_30_ > -18) this.anInt779 = 13
     }
 
-    private fun method432(class348_sub49: Buffer, i: Int): Array<Any?>? {
+    private fun method432(class348_sub49: ByteBuffer, i: Int): Array<Any?>? {
         if (i != -1) return null
         anInt691++
         val i_33_ = class348_sub49.readUnsignedByte(255)
@@ -487,7 +487,7 @@ class WidgetComponent {
         return objects
     }
 
-    fun method433(class348_sub49: Buffer, bool: Boolean) {
+    fun method433(class348_sub49: ByteBuffer, bool: Boolean) {
         anInt743++
         var i = class348_sub49.readUnsignedByte(255)
         if (i == 255) i = -1
@@ -793,7 +793,7 @@ class WidgetComponent {
         }
     }
 
-    private fun method441(bool: Boolean, class348_sub49: Buffer): IntArray? {
+    private fun method441(bool: Boolean, class348_sub49: ByteBuffer): IntArray? {
         anInt722++
         val i = class348_sub49.readUnsignedByte(255)
         if (bool != false) return null

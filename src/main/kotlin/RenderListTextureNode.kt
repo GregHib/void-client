@@ -34,7 +34,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
         return `is`
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_6_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_6_: Int) {
         if (i_6_ != 31015) aTrigLookupTables_9485 = null
         if (i == 0) {
             aMinimapShapeDrawerArray9481 = arrayOfNulls<MinimapShapeDrawer>(class348_sub49.readUnsignedByte(255))

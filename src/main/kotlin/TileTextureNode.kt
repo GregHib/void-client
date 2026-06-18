@@ -39,7 +39,7 @@ class TileTextureNode : AbstractProceduralTextureNode(1, false) {
         return `is`
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_14_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_14_: Int) {
         if (i_14_ == 31015) {
             val i_15_ = i
             do {

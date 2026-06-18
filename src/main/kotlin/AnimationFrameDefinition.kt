@@ -11,7 +11,7 @@ class AnimationFrameDefinition internal constructor(@JvmField var anInt6958: Int
     var anInt6965: Int
 
     init {
-        val class348_sub49 = Buffer(`is`)
+        val class348_sub49 = ByteBuffer(`is`)
         this.anInt6965 = class348_sub49.readUnsignedByte(255)
         this.anIntArrayArray6959 = arrayOfNulls<IntArray>(this.anInt6965)
         this.anIntArray6957 = IntArray(this.anInt6965)

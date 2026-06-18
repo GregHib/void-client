@@ -32,7 +32,7 @@ class NativeShaderProgram(i: Int) : ShaderProgram() {
         fun method3439(i: Int): Int {
             anInt9771++
             if (i <= 92) return 99
-            if (Buffer.anInt7207 == 1) return SynthVoiceGroup.anInt8854
+            if (ByteBuffer.anInt7207 == 1) return SynthVoiceGroup.anInt8854
             return GrayscaleNoiseTexture.anInt5283
         }
 

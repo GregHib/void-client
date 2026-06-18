@@ -34,7 +34,7 @@ class HashTableContainer : LinkedListNode() {
         }
 
         @JvmStatic
-        fun method3031(i: Int, class348_sub49: Buffer): AbstractProceduralTextureNode? {
+        fun method3031(i: Int, class348_sub49: ByteBuffer): AbstractProceduralTextureNode? {
             anInt6996++
             class348_sub49.readUnsignedByte(255)
             val i_0_ = class348_sub49.readUnsignedByte(255)

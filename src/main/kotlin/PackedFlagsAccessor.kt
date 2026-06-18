@@ -54,7 +54,7 @@ class PackedFlagsAccessor internal constructor(@JvmField var anInt7098: Int, @Jv
         fun method3306(i: Byte): Int {
             if (i >= -90) anInt7101 = -7
             anInt7097++
-            if (Buffer.Companion.anInt7207 == 1) return ShadowQualityOptionState.anInt6008
+            if (ByteBuffer.Companion.anInt7207 == 1) return ShadowQualityOptionState.anInt6008
             return LinkedNodeListIterator.anInt1651
         }
     }

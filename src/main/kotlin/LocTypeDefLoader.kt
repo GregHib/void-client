@@ -26,7 +26,7 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
             `is` = aJs5Archive_2498!!.method410(-1860, 35, i_3_)
         }
         locTypeDefinition = LocTypeDefinition()
-        if (`is` != null) locTypeDefinition.method2551(-125, Buffer(`is`))
+        if (`is` != null) locTypeDefinition.method2551(-125, ByteBuffer(`is`))
         if (i != -12637) aLruByteCache_2501 = null
         locTypeDefinition.method2548(127.toByte())
         synchronized(aLruByteCache_2501!!) {

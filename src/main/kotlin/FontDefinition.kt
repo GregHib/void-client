@@ -326,7 +326,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
     }
 
     init {
-        val class348_sub49 = Buffer(`is`)
+        val class348_sub49 = ByteBuffer(`is`)
         val i = class348_sub49.readUnsignedByte(255)
         if (i != 0) throw RuntimeException("")
         val bool = class348_sub49.readUnsignedByte(255) == 1

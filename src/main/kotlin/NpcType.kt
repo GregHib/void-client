@@ -130,7 +130,7 @@ class NpcType {
         return this.aBufferedMessageQueue_1348!!.method2079(this.anIntArray1377!![i_2_], -1)
     }
 
-    private fun method795(class348_sub49: Buffer, i: Int, i_4_: Int) {
+    private fun method795(class348_sub49: ByteBuffer, i: Int, i_4_: Int) {
         if (i_4_ != 127) this.aBoolean1381 = true
         if (i == 1) {
             val i_5_ = class348_sub49.readUnsignedByte(255)
@@ -321,7 +321,7 @@ class NpcType {
         return i == 18627
     }
 
-    fun method798(i: Int, class348_sub49: Buffer) {
+    fun method798(i: Int, class348_sub49: ByteBuffer) {
         while (true) {
             val i_33_ = class348_sub49.readUnsignedByte(255)
             if (i_33_ == 0) break

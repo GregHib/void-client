@@ -46,7 +46,7 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
         locConfigModelBuilder = LocConfigModelBuilder()
         locConfigModelBuilder.aMapElementDefinitionCache_4513 = this
         locConfigModelBuilder.anInt4501 = i_1_
-        if (`is` != null) locConfigModelBuilder.method3559(28105, Buffer(`is`))
+        if (`is` != null) locConfigModelBuilder.method3559(28105, ByteBuffer(`is`))
         synchronized(aLruByteCache_3989) {
             aLruByteCache_3989.method582(locConfigModelBuilder, i_1_.toLong(), (-127).toByte())
         }

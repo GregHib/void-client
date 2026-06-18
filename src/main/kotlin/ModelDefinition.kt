@@ -205,11 +205,11 @@ class ModelDefinition {
         anInt1831++
         var bool = false
         var bool_52_ = false
-        val class348_sub49 = Buffer(`is`)
-        val class348_sub49_53_ = Buffer(`is`)
-        val class348_sub49_54_ = Buffer(`is`)
-        val class348_sub49_55_ = Buffer(`is`)
-        val class348_sub49_56_ = Buffer(`is`)
+        val class348_sub49 = ByteBuffer(`is`)
+        val class348_sub49_53_ = ByteBuffer(`is`)
+        val class348_sub49_54_ = ByteBuffer(`is`)
+        val class348_sub49_55_ = ByteBuffer(`is`)
+        val class348_sub49_56_ = ByteBuffer(`is`)
         class348_sub49.anInt7197 = -18 + `is`.size
         this.anInt1836 = class348_sub49.readUnsignedShort(i xor 0x3235f8f9)
         this.anInt1817 = class348_sub49.readUnsignedShort(842397944)
@@ -438,13 +438,13 @@ class ModelDefinition {
 
     private fun method1106(`is`: ByteArray, i: Byte) {
         anInt1828++
-        val class348_sub49 = Buffer(`is`)
-        val class348_sub49_118_ = Buffer(`is`)
-        val class348_sub49_119_ = Buffer(`is`)
-        val class348_sub49_120_ = Buffer(`is`)
-        val class348_sub49_121_ = Buffer(`is`)
-        val class348_sub49_122_ = Buffer(`is`)
-        val class348_sub49_123_ = Buffer(`is`)
+        val class348_sub49 = ByteBuffer(`is`)
+        val class348_sub49_118_ = ByteBuffer(`is`)
+        val class348_sub49_119_ = ByteBuffer(`is`)
+        val class348_sub49_120_ = ByteBuffer(`is`)
+        val class348_sub49_121_ = ByteBuffer(`is`)
+        val class348_sub49_122_ = ByteBuffer(`is`)
+        val class348_sub49_123_ = ByteBuffer(`is`)
         class348_sub49.anInt7197 = -23 + `is`.size
         this.anInt1836 = class348_sub49.readUnsignedShort(842397944)
         this.anInt1817 = class348_sub49.readUnsignedShort(842397944)
@@ -1107,7 +1107,7 @@ class ModelDefinition {
             val dimension = canvas.getSize()
             if (i.toInt() != -99) method1096(57)
             method828(38.toByte(), dimension.height, dimension.width)
-            if (Buffer.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3643(canvas, GrayscaleNoiseTexture.anInt5283, LinkedNodeListIterator.anInt1651)
+            if (ByteBuffer.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3643(canvas, GrayscaleNoiseTexture.anInt5283, LinkedNodeListIterator.anInt1651)
             else CameraRotationStub.aRenderer326!!.method3643(canvas, SynthVoiceGroup.anInt8854, ShadowQualityOptionState.anInt6008)
         }
     }

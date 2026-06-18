@@ -17,7 +17,7 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
         val `is` = aJs5Archive_1718!!.method410(-1860, 1, i)
         if (i_0_ < 12) return null
         val typedRecordTable = TypedRecordTable()
-        typedRecordTable.method2183(Buffer(`is`), 21890)
+        typedRecordTable.method2183(ByteBuffer(`is`), 21890)
         return typedRecordTable
     }
 
@@ -53,7 +53,7 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
         try {
             aJs5Archive_1718 = js5Archive
             aJs5Archive_1718!!.method407(0, 1)
-            val class348_sub49 = Buffer(aJs5Archive_1718.method410(-1860, 0, 0))
+            val class348_sub49 = ByteBuffer(aJs5Archive_1718.method410(-1860, 0, 0))
             val i_17_ = class348_sub49.readUnsignedByte(255)
             if (i_17_ > 3) {
                 anIntArrayArray1724 = arrayOfNulls(0)

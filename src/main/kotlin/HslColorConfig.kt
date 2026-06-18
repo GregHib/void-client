@@ -23,7 +23,7 @@ class HslColorConfig {
     @JvmField
     var anInt343: Int = 0
 
-    fun method290(class348_sub49: Buffer, i: Int) {
+    fun method290(class348_sub49: ByteBuffer, i: Int) {
         if (i != -1) this.anInt332 = 25
         while (true) {
             val i_0_ = class348_sub49.readUnsignedByte(255)
@@ -33,7 +33,7 @@ class HslColorConfig {
         anInt329++
     }
 
-    private fun method291(i: Int, i_1_: Int, class348_sub49: Buffer) {
+    private fun method291(i: Int, i_1_: Int, class348_sub49: ByteBuffer) {
         if (i == 1) {
             anInt337 = class348_sub49.readMedium(-1)
             method292(anInt337, 117.toByte())

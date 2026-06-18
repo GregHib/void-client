@@ -58,7 +58,7 @@ class DisplaySettingsConfig : LinkedListNode {
     @JvmField
     var aClass239_Sub25_7271: DisplayModeOptionState? = null
     var aClass239_Sub26_7272: DetailLevelOptionState? = null
-    private fun method3421(i: Int, class348_sub49: Buffer?, i_0_: Int) {
+    private fun method3421(i: Int, class348_sub49: ByteBuffer?, i_0_: Int) {
         do {
             try {
                 this.aClass239_Sub10_7232 = RangedGraphicsOptionState(class348_sub49!!.readUnsignedByte(255), this)
@@ -175,7 +175,7 @@ class DisplaySettingsConfig : LinkedListNode {
         if (bool || this.aClass239_Sub5_7240 == null) this.aClass239_Sub5_7240 = SimpleToggleOptionState(this)
     }
 
-    private fun method3424(i: Int, class348_sub49: Buffer?) {
+    private fun method3424(i: Int, class348_sub49: ByteBuffer?) {
         try {
             if (i == 925) {
                 anInt7266++
@@ -269,9 +269,9 @@ class DisplaySettingsConfig : LinkedListNode {
         }
     }
 
-    fun method3427(i: Int): Buffer {
+    fun method3427(i: Int): ByteBuffer {
         anInt7237++
-        val class348_sub49 = Buffer(method1032(i xor 0x18.inv()))
+        val class348_sub49 = ByteBuffer(method1032(i xor 0x18.inv()))
         class348_sub49.writeByte(false, i)
         class348_sub49.writeByte(false, this.aClass239_Sub20_7216!!.method1808(-32350))
         class348_sub49.writeByte(false, this.aClass239_Sub12_7243!!.method1771(-32350))
@@ -337,7 +337,7 @@ class DisplaySettingsConfig : LinkedListNode {
         }
     }
 
-    internal constructor(class348_sub49: Buffer?, sceneProjector: SceneProjector?, i: Int) {
+    internal constructor(class348_sub49: ByteBuffer?, sceneProjector: SceneProjector?, i: Int) {
         try {
             aSceneProjector_7269 = sceneProjector
             aLoadingScreenState_7221 = LoadingScreenState((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3777), TextureDefinitionCache.anInt2964, TextureMapImageNode.anInt9372, PrivilegedOperationWorker.aString3780!!.indexOf("arm") != -1)

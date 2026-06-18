@@ -31,7 +31,7 @@ object ProjectileDefinition {
         if (i != 114) anInt3844 = 87
     }
 
-    fun method2287(class348_sub49: Buffer, i: Byte): MinimapSpriteRenderer {
+    fun method2287(class348_sub49: ByteBuffer, i: Byte): MinimapSpriteRenderer {
         anInt3846++
         val i_1_ = class348_sub49.readUnsignedByte(255)
         val class221 = method1248(87)[class348_sub49.readUnsignedByte(255)]

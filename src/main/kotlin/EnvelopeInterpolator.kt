@@ -26,7 +26,7 @@ class EnvelopeInterpolator {
         return anInt2612 - anInt2608 shr 15
     }
 
-    fun method1452(class348_sub49: Buffer) {
+    fun method1452(class348_sub49: ByteBuffer) {
         this.anInt2603 = class348_sub49.readUnsignedByte(255)
         this.anInt2607 = class348_sub49.readInt((-126).toByte())
         this.anInt2606 = class348_sub49.readInt((-126).toByte())
@@ -49,7 +49,7 @@ class EnvelopeInterpolator {
         anIntArray2602[1] = 65535
     }
 
-    fun method1454(class348_sub49: Buffer) {
+    fun method1454(class348_sub49: ByteBuffer) {
         anInt2604 = class348_sub49.readUnsignedByte(255)
         anIntArray2605 = IntArray(anInt2604)
         anIntArray2602 = IntArray(anInt2604)

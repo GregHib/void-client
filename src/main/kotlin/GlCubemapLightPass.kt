@@ -363,7 +363,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
         }
 
         @JvmStatic
-        fun method3544(class348_sub49: Buffer?, i: Int, string: String?): Int {
+        fun method3544(class348_sub49: ByteBuffer?, i: Int, string: String?): Int {
             try {
                 anInt7321++
                 val i_38_ = class348_sub49!!.anInt7197

@@ -20,7 +20,7 @@ class DualMaterialContainer internal constructor(js5Archive: Js5Archive?, js5Arc
         if (MatrixCameraTransform.aProjectileFactory_5689 == class223) return WorldMapRenderer(method998(-107), configTypeProvider as MinimapSpriteRenderer)
         if (class223 == WeaveTextureNode.aProjectileFactory_9274) return WidgetComponentNode(aJs5Archive_1637, configTypeProvider as ParticleEmitterDef)
         if (class223 == ItemNameResolver.aProjectileFactory_4997) return ScrollingWidgetComponentNode(aJs5Archive_1637, configTypeProvider as ParticleEmitterDefExt)
-        if (class223 == Buffer.aProjectileFactory_7175) return SolidFillComponent(aJs5Archive_1637!!, aJs5Archive_1641!!, configTypeProvider as WorldMapTextLabel)
+        if (class223 == ByteBuffer.aProjectileFactory_7175) return SolidFillComponent(aJs5Archive_1637!!, aJs5Archive_1641!!, configTypeProvider as WorldMapTextLabel)
         if (class223 == SkyboxGradient.aProjectileFactory_3934) return SpriteComponent(aJs5Archive_1637, aJs5Archive_1641!!, configTypeProvider as WorldMapAreaLabel)
         if (class223 == MapSceneDefLoader.aProjectileFactory_2489) return ScrollbarComponent(aJs5Archive_1637!!, aJs5Archive_1641!!, configTypeProvider as WorldMapIconLabel)
         if (class223 == SpotAnimVector.aProjectileFactory_2307) return TooltipComponentRenderer(aJs5Archive_1637, aJs5Archive_1641, configTypeProvider as HeapInfoRecord)

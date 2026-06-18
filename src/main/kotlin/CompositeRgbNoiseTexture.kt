@@ -43,7 +43,7 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
         var anInt8685: Int = 0
 
         @JvmStatic
-        fun method569(i: Byte, class348_sub49: Buffer) {
+        fun method569(i: Byte, class348_sub49: ByteBuffer) {
             anInt8675++
             val i_0_ = class348_sub49.readSmart(-128)
             MouseInputTracker.aDataHolderArray7446 = arrayOfNulls<DataHolder>(i_0_)

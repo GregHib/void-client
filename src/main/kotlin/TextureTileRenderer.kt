@@ -201,10 +201,10 @@ class TextureTileRenderer internal constructor(private val aS_Sub2_6839: OpenGlT
         fun method2953(i: Byte) {
             if (i > -102) anIntArray6830 = null
             anInt6836++
-            if (WorldMapRenderer.anInt4674 == 3) Buffer.method3379(2, 4)
+            if (WorldMapRenderer.anInt4674 == 3) ByteBuffer.method3379(2, 4)
             else if (WorldMapRenderer.anInt4674 != 7) {
-                if (WorldMapRenderer.anInt4674 == 10) Buffer.method3379(2, 11)
-            } else Buffer.method3379(2, 8)
+                if (WorldMapRenderer.anInt4674 == 10) ByteBuffer.method3379(2, 11)
+            } else ByteBuffer.method3379(2, 8)
         }
     }
 }

@@ -11,7 +11,7 @@ class CacheArchiveIndex {
     private var aString1774: String? = "null"
     var aChar1778: Char = 0.toChar()
     var aChar1779: Char = 0.toChar()
-    private fun method1065(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    private fun method1065(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         if (i_0_ == 1) this.aChar1778 = method462(class348_sub49.readByte(-91), -128)
         else if (i_0_ == 2) this.aChar1779 = method462(class348_sub49.readByte(-119), -128)
         else if (i_0_ == 3) aString1774 = class348_sub49.readString(86.toByte())
@@ -63,7 +63,7 @@ class CacheArchiveIndex {
         }
     }
 
-    fun method1069(i: Int, class348_sub49: Buffer) {
+    fun method1069(i: Int, class348_sub49: ByteBuffer) {
         anInt1763++
         while (true) {
             val i_5_ = class348_sub49.readUnsignedByte(i + 255)

@@ -53,7 +53,7 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
         }
         hitsplatDefinition = HitsplatDefinition()
         if (i_4_ != -1) return null
-        if (`is` != null) hitsplatDefinition.method1191(i_4_ xor 0x800.inv(), Buffer(`is`))
+        if (`is` != null) hitsplatDefinition.method1191(i_4_ xor 0x800.inv(), ByteBuffer(`is`))
         synchronized(aLruByteCache_2594!!) {
             aLruByteCache_2594!!.method582(hitsplatDefinition, i.toLong(), (-105).toByte())
         }

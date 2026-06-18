@@ -187,7 +187,7 @@ class SceneNodeDeque {
                             return
                         }
                         CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                        val class348_sub49 = Buffer(518)
+                        val class348_sub49 = ByteBuffer(518)
                         val `is` = IntArray(4)
                         `is`[0] = (Math.random() * 9.9999999E7).toInt()
                         `is`[1] = (9.9999999E7 * Math.random()).toInt()
@@ -227,7 +227,7 @@ class SceneNodeDeque {
                             class348_sub49_sub2.writeByte(false, (class348_sub49_8_.anInt7197))
                             class348_sub49_sub2.writeBytes(class348_sub49_8_.anInt7197, 0, (class348_sub49_8_.aByteArray7154!!), 74)
                             RenderNode.aBoolean9719 = true
-                            val class348_sub49_9_ = Buffer(NoiseTextureNode.aClass348_Sub4_9264!!.method2746((-76).toByte()))
+                            val class348_sub49_9_ = ByteBuffer(NoiseTextureNode.aClass348_Sub4_9264!!.method2746((-76).toByte()))
                             NoiseTextureNode.aClass348_Sub4_9264!!.method2747(1, class348_sub49_9_)
                             class348_sub49_sub2.writeBytes((class348_sub49_9_.aByteArray7154!!).size, 0, (class348_sub49_9_.aByteArray7154!!), -73)
                             class348_sub49_sub2.writeShort(107.toByte(), GlArrayBufferObject.anInt4718)
@@ -420,7 +420,7 @@ class SceneNodeDeque {
                                 NpcDefinition.anInt2955 = 0
                                 GlRectangleTexture.method254(2, (-92).toByte())
                                 method1804(8839)
-                                Buffer.method3379(2, 7)
+                                ByteBuffer.method3379(2, 7)
                                 ModelVertexColorBuffer.aIntRange_6584 = null
                                 return
                             }

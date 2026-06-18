@@ -137,7 +137,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         itemDefinition.anInt2769 = i_13_
         itemDefinition.aStringArray2811 = arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null)
         itemDefinition.aStringArray2763 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
-        if (`is` != null) itemDefinition.method1569(768, Buffer(`is`))
+        if (`is` != null) itemDefinition.method1569(768, ByteBuffer(`is`))
         itemDefinition.method1563(92.toByte())
         val i_14_ = 4 / ((i - 13) / 59)
         if (itemDefinition.anInt2833 != -1) itemDefinition.method1570(1, method1940(90, itemDefinition.anInt2758), method1940(101, itemDefinition.anInt2833))

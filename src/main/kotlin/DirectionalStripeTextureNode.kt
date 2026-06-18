@@ -5,7 +5,7 @@ class DirectionalStripeTextureNode : AbstractProceduralTextureNode(0, true) {
     private var anInt9095 = 1
     private var anInt9098 = 204
     private var anInt9099 = 1
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         anInt9100++
         val i_1_ = i
         while_132_@ do {

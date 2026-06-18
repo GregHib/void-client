@@ -443,7 +443,7 @@ class ItemDefinition {
         return bool_56_
     }
 
-    private fun method1566(i: Int, i_57_: Int, class348_sub49: Buffer?) {
+    private fun method1566(i: Int, i_57_: Int, class348_sub49: ByteBuffer?) {
         try {
             if (i != 4) method1564(9)
             if (i_57_ != 1) {
@@ -587,7 +587,7 @@ class ItemDefinition {
         return class348_sub35.anInt6976
     }
 
-    fun method1569(i: Int, class348_sub49: Buffer?) {
+    fun method1569(i: Int, class348_sub49: ByteBuffer?) {
         try {
             if (i != 768) method1565(true, -71)
             while (true) {

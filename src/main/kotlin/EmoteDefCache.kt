@@ -17,7 +17,7 @@ class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int
             `is` = aJs5Archive_4085.method410(-1860, 11, i)
         }
         emoteDefinition = EmoteDefinition()
-        if (`is` != null) emoteDefinition.method1924(Buffer(`is`), (-127).toByte())
+        if (`is` != null) emoteDefinition.method1924(ByteBuffer(`is`), (-127).toByte())
         synchronized(aLruByteCache_4087!!) {
             aLruByteCache_4087!!.method582(emoteDefinition, i.toLong(), (-114).toByte())
         }

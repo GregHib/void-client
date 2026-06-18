@@ -70,7 +70,7 @@ class TerrainTileShape internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_: 
                 while (i_13_ > i_14_) {
                     val is_15_ = `is`[i_14_]
                     if (is_15_ != null) {
-                        val class348_sub49 = Buffer(is_15_)
+                        val class348_sub49 = ByteBuffer(is_15_)
                         val i_16_ = (NullOggStream.anIntArray9042!![i_14_] shr 8)
                         val i_17_ = 0xff and NullOggStream.anIntArray9042!![i_14_]
                         val i_18_ = -ArbVertexProgram.regionTileX + i_16_ * 64

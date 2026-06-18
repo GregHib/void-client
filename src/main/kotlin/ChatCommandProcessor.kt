@@ -1282,7 +1282,7 @@ object ChatCommandProcessor {
                     OpenGlModel.aString5600 = string
                     TextureGenerator.aString2496 = string_142_
                     TextureLoadException.anInt4596 = i_143_
-                    Buffer.method3379(2, 6)
+                    ByteBuffer.method3379(2, 6)
                     return
                 }
                 return
@@ -1343,7 +1343,7 @@ object ChatCommandProcessor {
                         PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
                     }
                     TextureLoadException.anInt4596 = i_144_
-                    Buffer.method3379(2, 9)
+                    ByteBuffer.method3379(2, 9)
                     return
                 }
                 return
@@ -1363,7 +1363,7 @@ object ChatCommandProcessor {
                     }
                     OpenGlModel.aString5600 = string
                     TextureGenerator.aString2496 = string_145_
-                    Buffer.method3379(2, 5)
+                    ByteBuffer.method3379(2, 5)
                     return
                 }
                 return

@@ -28,7 +28,7 @@ class ParameterizedText : HashLinkedListNode() {
         }
     }
 
-    fun method3210(i: Byte, `is`: IntArray?, class348_sub49: Buffer?) {
+    fun method3210(i: Byte, `is`: IntArray?, class348_sub49: ByteBuffer?) {
         while_221_@ do {
             try {
                 anInt9560++
@@ -65,7 +65,7 @@ class ParameterizedText : HashLinkedListNode() {
         return anIntArrayArray9565[i_5_]!![i]
     }
 
-    private fun method3214(i: Int, class348_sub49: Buffer, i_6_: Int) {
+    private fun method3214(i: Int, class348_sub49: ByteBuffer, i_6_: Int) {
         if (i_6_ == 60) {
             if (i != 1) {
                 if (i == 2) {
@@ -104,7 +104,7 @@ class ParameterizedText : HashLinkedListNode() {
         return anIntArray9574!!.size
     }
 
-    fun method3216(class348_sub49: Buffer, i: Byte): String {
+    fun method3216(class348_sub49: ByteBuffer, i: Byte): String {
         anInt9578++
         if (i < 33) method3219(-91)
         val stringbuffer = StringBuffer(80)
@@ -118,7 +118,7 @@ class ParameterizedText : HashLinkedListNode() {
         return stringbuffer.toString()
     }
 
-    fun method3218(class348_sub49: Buffer, i: Int) {
+    fun method3218(class348_sub49: ByteBuffer, i: Int) {
         anInt9568++
         while (true) {
             val i_14_ = class348_sub49.readUnsignedByte(i xor 0xff)

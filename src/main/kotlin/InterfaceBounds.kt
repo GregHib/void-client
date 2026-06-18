@@ -111,7 +111,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 ChatCommandProcessor.aLruByteCache_1174!!.method590(0)
                 FacingDirectionNode.aRenderer6654!!.method3663()
                 method1707(26469)
-                Buffer.method3354(-52)
+                ByteBuffer.method3354(-52)
                 ShortKeyNode.Companion.aJs5Archive_6909!!.method412((-124).toByte())
                 TextureGenerator.aJs5Archive_2490!!.method412((-119).toByte())
                 DirectionUtil.aJs5Archive_1541!!.method412(37.toByte())

@@ -120,7 +120,7 @@ class VorbisOggDecoder internal constructor(oggstreamstate: OggStreamState) : Og
         }
 
         @JvmStatic
-        fun method2970(i: Int, class348_sub49: Buffer): MinimapPolygonDrawer {
+        fun method2970(i: Int, class348_sub49: ByteBuffer): MinimapPolygonDrawer {
             anInt8998++
             if (i != 2) Companion.method2972(null, -114, 15)
             return MinimapPolygonDrawer(class348_sub49.readShort(13638), class348_sub49.readShort(i + 13636), class348_sub49.readShort(13638), class348_sub49.readShort(i xor 0x3544), class348_sub49.readShort(13638), class348_sub49.readShort(i + 13636), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))

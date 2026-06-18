@@ -31,7 +31,7 @@ class KaraokeSubtitleStream internal constructor(oggstreamstate: OggStreamState)
     override fun method2964(i: Byte, oggpacket: OggPacket) {
         anInt9063++
         if (this.anInt6868 <= 0 || "SUB" == aString9057) {
-            val class348_sub49 = Buffer(oggpacket.data)
+            val class348_sub49 = ByteBuffer(oggpacket.data)
             val i_2_ = class348_sub49.readUnsignedByte(255)
             if (this.anInt6868 <= 8) {
                 check((i_2_ or 0x80) != 0)
@@ -40,7 +40,7 @@ class KaraokeSubtitleStream internal constructor(oggstreamstate: OggStreamState)
                     anInt9055 = class348_sub49.method3359(-89)
                     anInt9054 = class348_sub49.method3359(-41)
                     check(!(anInt9055 == 0 || anInt9054 == 0))
-                    val class348_sub49_3_ = Buffer(16)
+                    val class348_sub49_3_ = ByteBuffer(16)
                     class348_sub49.method3389(2147483647, 0, 16, (class348_sub49_3_.aByteArray7154!!))
                     aString9051 = class348_sub49_3_.readString((-91).toByte())
                     class348_sub49_3_.anInt7197 = 0

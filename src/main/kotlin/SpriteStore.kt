@@ -33,7 +33,7 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
         }
         if (i_2_ < 6) aLruByteCache_360 = null
         widgetTextConfig = WidgetTextConfig()
-        if (`is` != null) widgetTextConfig.method364(Buffer(`is`), 54.toByte())
+        if (`is` != null) widgetTextConfig.method364(ByteBuffer(`is`), 54.toByte())
         synchronized(aLruByteCache_360!!) {
             aLruByteCache_360!!.method582(widgetTextConfig, i.toLong(), (-109).toByte())
         }

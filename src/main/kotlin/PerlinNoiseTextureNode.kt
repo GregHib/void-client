@@ -16,7 +16,7 @@ class PerlinNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
     private lateinit var aShortArray9162: ShortArray
     @JvmField
     var anInt9164: Int = 4
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         var i_1_ = i
         while_151_@ do {
             while_150_@ do {

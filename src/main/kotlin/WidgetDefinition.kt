@@ -99,7 +99,7 @@ class WidgetDefinition {
         return 0x20 or i_2_
     }
 
-    private fun method264(class348_sub49: Buffer, i: Int, i_10_: Int) {
+    private fun method264(class348_sub49: ByteBuffer, i: Int, i_10_: Int) {
         if (i_10_ == -14861) {
             if (i == 1) {
                 val i_11_ = class348_sub49.readUnsignedShort(842397944) //short
@@ -222,7 +222,7 @@ class WidgetDefinition {
         return class64_35_
     }
 
-    fun method267(class348_sub49: Buffer, bool: Boolean) {
+    fun method267(class348_sub49: ByteBuffer, bool: Boolean) {
         anInt243++
         while (true) {
             val i = class348_sub49.readUnsignedByte(255)

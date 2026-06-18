@@ -18,7 +18,7 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
             `is` = aJs5Archive_3299.method410(-1860, 19, i)
         }
         keyboardLayoutConfig = KeyboardLayoutConfig()
-        if (`is` != null) keyboardLayoutConfig.method1255(Buffer(`is`), -1)
+        if (`is` != null) keyboardLayoutConfig.method1255(ByteBuffer(`is`), -1)
         synchronized(aLruByteCache_3303) {
             aLruByteCache_3303.method582(keyboardLayoutConfig, i.toLong(), (-120).toByte())
         }

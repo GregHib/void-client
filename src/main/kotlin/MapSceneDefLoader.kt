@@ -25,7 +25,7 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         }
         cameraConfigDefinition = CameraConfigDefinition()
         val i_2_ = 50 / ((i - -63) / 56)
-        if (`is` != null) cameraConfigDefinition.method1921((-69).toByte(), Buffer(`is`))
+        if (`is` != null) cameraConfigDefinition.method1921((-69).toByte(), ByteBuffer(`is`))
         synchronized(aLruByteCache_2479) {
             aLruByteCache_2479.method582(cameraConfigDefinition, i_1_.toLong(), (-108).toByte())
         }

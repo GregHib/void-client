@@ -129,7 +129,7 @@ class SpotAnimDefinition {
     var aBoolean2443: Boolean = true
     private var anInt2444 = 0
 
-    private fun method1368(i: Int, class348_sub49: Buffer, i_16_: Int) {
+    private fun method1368(i: Int, class348_sub49: ByteBuffer, i_16_: Int) {
         if (i >= -43) Companion.method1369((-111).toByte())
         anInt2396++
         if (i_16_ == 1) {
@@ -224,7 +224,7 @@ class SpotAnimDefinition {
         }
     }
 
-    fun method1370(i: Int, class348_sub49: Buffer) {
+    fun method1370(i: Int, class348_sub49: ByteBuffer) {
         anInt2400++
         while (true) {
             val i_24_ = class348_sub49.readUnsignedByte(255)

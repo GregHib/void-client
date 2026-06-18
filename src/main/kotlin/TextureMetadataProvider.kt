@@ -20,7 +20,7 @@ class TextureMetadataProvider internal constructor(js5Archive: Js5Archive?, js5A
         val `is` = aJs5Archive_4619!!.method415(73.toByte(), i)
         if (`is` == null) return null
         if (bool != false) method1(-58, 1.9039171f, false, -106, -22, -18)
-        val class348_sub42_sub5 = ProceduralTextureGraph(Buffer(`is`))
+        val class348_sub42_sub5 = ProceduralTextureGraph(ByteBuffer(`is`))
         aCacheLruCache_4622.method2305(i.toLong(), class348_sub42_sub5, -1)
         return class348_sub42_sub5
     }
@@ -60,7 +60,7 @@ class TextureMetadataProvider internal constructor(js5Archive: Js5Archive?, js5A
         try {
             aJs5Archive_4619 = js5Archive_12_
             aJs5Archive_4624 = js5Archive_13_
-            val class348_sub49 = Buffer(js5Archive!!.method410(-1860, 0, 0))
+            val class348_sub49 = ByteBuffer(js5Archive!!.method410(-1860, 0, 0))
             anInt4625 = class348_sub49.readUnsignedShort(842397944)
             aNpcAppearanceFlagsArray4611 = arrayOfNulls<NpcAppearanceFlags>(anInt4625)
             run {

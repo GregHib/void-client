@@ -4,7 +4,7 @@
 class RangeThresholdTextureNode : AbstractProceduralTextureNode(1, true) {
     private var anInt9104 = 0
     private var anInt9107 = 4096
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         val i_1_ = i
         do {
             if (i_1_ == 0) {

@@ -42,7 +42,7 @@ class WorldMapImageBuilder internal constructor(sceneProjector: SceneProjector?,
             `is` = aJs5Archive_1141.method410(-1860, 26, i)
         }
         class348_sub42_sub1 = ParamMap()
-        if (`is` != null) class348_sub42_sub1.method3168(Buffer(`is`), (-101).toByte())
+        if (`is` != null) class348_sub42_sub1.method3168(ByteBuffer(`is`), (-101).toByte())
         synchronized(aLruByteCache_1145) {
             aLruByteCache_1145.method582(class348_sub42_sub1, i.toLong(), (-114).toByte())
         }

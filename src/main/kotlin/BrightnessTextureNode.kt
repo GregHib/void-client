@@ -5,7 +5,7 @@ import ParticleTileShape.Companion.method2732
 */
 class BrightnessTextureNode internal constructor(i: Int) : AbstractProceduralTextureNode(0, true) {
     private var anInt9220 = 4096
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         val i_1_ = i
         if (i_1_ == 0) anInt9220 = (class348_sub49.readUnsignedByte(255) shl 12) / 255
         if (i_0_ == 31015) anInt9217++

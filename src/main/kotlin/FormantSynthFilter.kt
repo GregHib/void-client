@@ -9,7 +9,7 @@ class FormantSynthFilter {
     private val anIntArrayArrayArray4300: Array<Array<IntArray?>?>
     private val anIntArrayArrayArray4302: Array<Array<IntArray?>?>
     private val anIntArray4304 = IntArray(2)
-    fun method3446(class348_sub49: Buffer, envelopeInterpolator: EnvelopeInterpolator) {
+    fun method3446(class348_sub49: ByteBuffer, envelopeInterpolator: EnvelopeInterpolator) {
         val i = class348_sub49.readUnsignedByte(255)
         this.anIntArray4299[0] = i shr 4
         this.anIntArray4299[1] = i and 0xf

@@ -7,7 +7,7 @@ import java.math.BigInteger
 class RsaPacketDecoder internal constructor(mediaStreamClient: MediaStreamClient?, scriptCompilerThread: ScriptCompilerThread?, biginteger: BigInteger?, biginteger_14_: BigInteger?) {
     private val aMediaStreamClient_4212: MediaStreamClient?
     private val aBigInteger4213: BigInteger?
-    private var aClass348_Sub49_4215: Buffer? = null
+    private var aClass348_Sub49_4215: ByteBuffer? = null
     private var aClass314_Sub1Array4216: Array<ArchiveResourceProvider?>? = null
     private var aScriptCompilerThread_4217: ScriptCompilerThread? = null
     private val aBigInteger4218: BigInteger?
@@ -50,7 +50,7 @@ class RsaPacketDecoder internal constructor(mediaStreamClient: MediaStreamClient
         if (aClass348_Sub42_Sub16_Sub1_4220!!.aBoolean9664) {
             return false
         }
-        val class348_sub49 = Buffer(aClass348_Sub42_Sub16_Sub1_4220!!.method3259(i xor 0x17))
+        val class348_sub49 = ByteBuffer(aClass348_Sub42_Sub16_Sub1_4220!!.method3259(i xor 0x17))
         class348_sub49.anInt7197 = 5
         val idxCount = class348_sub49.readUnsignedByte(i xor 0xf8)
         class348_sub49.anInt7197 += idxCount * 72

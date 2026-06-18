@@ -71,7 +71,7 @@ class SceneEntityModel : SceneLinkedListNode() {
             if (i >= -76) return null
             anInt6413++
             val class348_sub42_sub19 = MinimapAreaMarkerNode()
-            val class348_sub49 = Buffer(`is`)
+            val class348_sub49 = ByteBuffer(`is`)
             class348_sub49.anInt7197 = -2 + class348_sub49.aByteArray7154!!.size
             val i_11_ = class348_sub49.readUnsignedShort(842397944)
             val i_12_ = -12 + -i_11_ + (-2 + (class348_sub49.aByteArray7154)!!.size)

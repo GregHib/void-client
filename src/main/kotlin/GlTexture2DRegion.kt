@@ -146,11 +146,11 @@ class GlTexture2DRegion : GlTexture2D {
             method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
             TextureCache.method3466(i xor 0x4f.inv())
             AbstractProceduralTextureNode.method3038(-1)
-            if (WorldMapRenderer.anInt4674 == 3) Buffer.method3379(2, 4)
-            else if (WorldMapRenderer.anInt4674 == 7) Buffer.method3379(2, 8)
+            if (WorldMapRenderer.anInt4674 == 3) ByteBuffer.method3379(2, 4)
+            else if (WorldMapRenderer.anInt4674 == 7) ByteBuffer.method3379(2, 8)
             else if (WorldMapRenderer.anInt4674 != 10) {
                 if (WorldMapRenderer.anInt4674 == 1 || WorldMapRenderer.anInt4674 == 2) method3616(12639)
-            } else Buffer.method3379(2, 11)
+            } else ByteBuffer.method3379(2, 11)
         }
     }
 }

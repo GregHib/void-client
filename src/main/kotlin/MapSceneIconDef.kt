@@ -19,7 +19,7 @@ class MapSceneIconDef {
         return this.aTextureDefinitionLoader_2851!!.aJs5Archive_1965!!.method421(false, this.anInt2853)
     }
 
-    private fun method1595(i: Byte, i_17_: Int, class348_sub49: Buffer) {
+    private fun method1595(i: Byte, i_17_: Int, class348_sub49: ByteBuffer) {
         anInt2852++
         if (i >= 5) {
             if (i_17_ == 1) this.anInt2853 = class348_sub49.readUnsignedShort(842397944)
@@ -51,7 +51,7 @@ class MapSceneIconDef {
         return abstractModelRenderer
     }
 
-    fun method1597(i: Byte, class348_sub49: Buffer) {
+    fun method1597(i: Byte, class348_sub49: ByteBuffer) {
         anInt2850++
         while (true) {
             val i_20_ = class348_sub49.readUnsignedByte(255)

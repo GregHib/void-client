@@ -53,7 +53,7 @@ class ItemModelDefinition {
         return abstractModelRenderer
     }
 
-    private fun method329(class348_sub49: Buffer, i: Int, i_1_: Int) {
+    private fun method329(class348_sub49: ByteBuffer, i: Int, i_1_: Int) {
         if (i_1_ != 1) {
             if (i_1_ != 2) {
                 if (i_1_ == 3) anInt421 = class348_sub49.readUnsignedShort(842397944)
@@ -113,7 +113,7 @@ class ItemModelDefinition {
         return abstractModelRenderer
     }
 
-    fun method332(i: Int, class348_sub49: Buffer) {
+    fun method332(i: Int, class348_sub49: ByteBuffer) {
         if (i > -119) method333(119, -71)
         while (true) {
             val i_3_ = class348_sub49.readUnsignedByte(255)

@@ -11,10 +11,10 @@ class MediaStreamClient {
     private val aLinkedNodeListIterator_3205 = LinkedNodeListIterator()
     private val aLinkedNodeListIterator_3206 = LinkedNodeListIterator()
     private var aLong3207: Long = 0
-    private val aClass348_Sub49_3208 = Buffer(4)
+    private val aClass348_Sub49_3208 = ByteBuffer(4)
     private var aSocketStreamWorker_3209: SocketStreamWorker? = null
     private var anInt3210 = 0
-    private val aClass348_Sub49_3211: Buffer
+    private val aClass348_Sub49_3211: ByteBuffer
     private var aByte3212: Byte = 0
 
     @JvmField
@@ -154,7 +154,7 @@ class MediaStreamClient {
                             if (class348_sub42_sub16_sub1_14_ == null) throw IOException()
                             val i_15_ = if (i_13_ == 0) 5 else 9
                             aClass348_Sub42_Sub16_Sub1_3215 = class348_sub42_sub16_sub1_14_
-                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453 = (Buffer((aClass348_Sub42_Sub16_Sub1_3215!!.aByte10449) + i_15_ + i_12_))
+                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453 = (ByteBuffer((aClass348_Sub42_Sub16_Sub1_3215!!.aByte10449) + i_15_ + i_12_))
                             aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.writeByte(false, i_13_)
                             aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.writeInt(97.toByte(), i_12_)
                             aClass348_Sub49_3211.anInt7197 = 0
@@ -342,7 +342,7 @@ class MediaStreamClient {
     }
 
     init {
-        aClass348_Sub49_3211 = Buffer(8)
+        aClass348_Sub49_3211 = ByteBuffer(8)
     }
 
     companion object {

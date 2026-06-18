@@ -5,9 +5,9 @@ class OggCacheStream private constructor(i: Int, js5Archive: Js5Archive, i_1_: I
     private var anIntArray5269: IntArray? = null
     private var anInt5270 = 0
     private val anInt5272: Int
-    private val aClass348_Sub49_5274: Buffer
+    private val aClass348_Sub49_5274: ByteBuffer
     private var aByteArrayArray5275: Array<ByteArray?>? = arrayOfNulls<ByteArray>(10)
-    private val aClass348_Sub49_5276: Buffer
+    private val aClass348_Sub49_5276: ByteBuffer
 
     fun method522(i: Byte) {
         anInt5266++
@@ -21,8 +21,8 @@ class OggCacheStream private constructor(i: Int, js5Archive: Js5Archive, i_1_: I
     }
 
     init {
-        aClass348_Sub49_5274 = Buffer(null)
-        aClass348_Sub49_5276 = Buffer(null)
+        aClass348_Sub49_5274 = ByteBuffer(null)
+        aClass348_Sub49_5276 = ByteBuffer(null)
         aJs5Archive_5267 = js5Archive
         anInt5272 = i_1_
     }

@@ -23,7 +23,7 @@ class DisplaceTextureNode : AbstractProceduralTextureNode(3, false) {
         return `is`
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_11_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_11_: Int) {
         val i_12_ = i
         do {
             if (i_12_ == 0) {

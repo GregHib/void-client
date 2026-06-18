@@ -341,7 +341,7 @@ class SpriteImage {
         }
 
         private fun method1517(`is`: ByteArray): Array<SpriteImage> {
-            val class348_sub49 = Buffer(`is`)
+            val class348_sub49 = ByteBuffer(`is`)
             class348_sub49.anInt7197 = `is`.size - 2
             val i = class348_sub49.readUnsignedShort(842397944)
             val spriteImages: Array<SpriteImage> = Array<SpriteImage>(i) { SpriteImage() }

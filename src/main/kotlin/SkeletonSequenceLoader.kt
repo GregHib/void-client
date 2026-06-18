@@ -17,7 +17,7 @@ object SkeletonSequenceLoader {
             var i_1_ = 0
             var i_2_ = 0
             while (i_1_ < smoothingBuffer.anInt3241) {
-                val class348_sub49 = Buffer(js5Archive.method410(-1860, i_0_, `is`[i_2_++]))
+                val class348_sub49 = ByteBuffer(js5Archive.method410(-1860, i_0_, `is`[i_2_++]))
                 val i_3_ = class348_sub49.readInt((-126).toByte())
                 val i_4_ = class348_sub49.readUnsignedShort(i.toInt() xor 0x3235f8a2.inv())
                 val i_5_ = class348_sub49.readUnsignedByte(255)

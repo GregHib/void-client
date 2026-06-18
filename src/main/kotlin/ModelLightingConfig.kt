@@ -18,7 +18,7 @@ class ModelLightingConfig {
     var anInt2548: Int = 0
     var anInt2549: Int = 0
     var aFloat2551: Float = 1.0f
-    fun method1423(i: Int, class348_sub49: Buffer) {
+    fun method1423(i: Int, class348_sub49: ByteBuffer) {
         anInt2553++
         this.aFloat2545 = (class348_sub49.readUnsignedByte(255) * 8).toFloat() / 255.0f
         this.aFloat2542 = (8 * class348_sub49.readUnsignedByte(i + 247)).toFloat() / 255.0f
@@ -44,7 +44,7 @@ class ModelLightingConfig {
         this.aFloat2547 = 1.1523438f
     }
 
-    internal constructor(class348_sub49: Buffer) {
+    internal constructor(class348_sub49: ByteBuffer) {
         val i = class348_sub49.readUnsignedByte(255)
         if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) != 1 || LruByteCache.aRenderer1098!!.method3704() <= 0) {
             if ((0x1 and i) != 0) class348_sub49.readInt((-126).toByte())

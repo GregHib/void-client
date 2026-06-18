@@ -5,7 +5,7 @@ class BrightnessContrastEffect : AbstractProceduralTextureNode(1, false) {
     private var anInt9175 = 3072
     private var anInt9176 = 1024
     private var anInt9182 = 2048
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         anInt9179++
         val i_1_ = i
         while_152_@ do {

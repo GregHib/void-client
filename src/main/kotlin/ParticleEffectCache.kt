@@ -17,7 +17,7 @@ class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, 
         }
         class348_sub42_sub7 = ConfigShortValueNode()
         if (i < 78) method2046()
-        if (`is` != null) class348_sub42_sub7.method3192(16.toByte(), Buffer(`is`))
+        if (`is` != null) class348_sub42_sub7.method3192(16.toByte(), ByteBuffer(`is`))
         synchronized(aLruByteCache_3466) {
             aLruByteCache_3466.method582(class348_sub42_sub7, i_0_.toLong(), (-93).toByte())
         }

@@ -8,7 +8,7 @@ class CurveTextureNode : AbstractProceduralTextureNode(1, true) {
     private var anIntArray9214: IntArray? = null
     private var aShortArray9215: ShortArray? = ShortArray(257)
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         if (i == 0) {
             anInt9211 = class348_sub49.readUnsignedByte(i_0_ + -30760)
             anIntArrayArray9210 = Array<IntArray>(class348_sub49.readUnsignedByte(255)) { IntArray(2) }

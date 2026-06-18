@@ -187,7 +187,7 @@ open class MapRegionLoader {
             anIntArray1260 = null
         }
 
-        private fun method750(var_renderer: Renderer?, class348_sub49: Buffer, i: Int, i_21_: Int, i_22_: Int, i_23_: Int, `is`: IntArray, is_24_: IntArray) {
+        private fun method750(var_renderer: Renderer?, class348_sub49: ByteBuffer, i: Int, i_21_: Int, i_22_: Int, i_23_: Int, `is`: IntArray, is_24_: IntArray) {
             val i_25_ = class348_sub49.readUnsignedByte(255)
             if ((i_25_ and 0x1) == 0) {
                 val bool = (i_25_ and 0x2) == 0
@@ -431,7 +431,7 @@ open class MapRegionLoader {
 
         @JvmStatic
         fun method756(var_renderer: Renderer?, i: Int, i_75_: Int) {
-            val class348_sub49: Buffer = (Buffer(aJs5Archive_1237!!.method391((aClass348_Sub42_Sub14_1243!!.aString9625), "area", -29832)))
+            val class348_sub49: ByteBuffer = (ByteBuffer(aJs5Archive_1237!!.method391((aClass348_Sub42_Sub14_1243!!.aString9625), "area", -29832)))
             val i_76_ = class348_sub49.readUnsignedByte(255)
             val `is` = IntArray(i_76_)
             for (i_77_ in 0..<i_76_) `is`[i_77_] = class348_sub49.readUnsignedByte(255)

@@ -9,7 +9,7 @@ class HitsplatDefinition {
     @JvmField
     var anInt2020: Int = 0
 
-    fun method1191(i: Int, class348_sub49: Buffer) {
+    fun method1191(i: Int, class348_sub49: ByteBuffer) {
         if (i == 2048) {
             anInt2018++
             while (true) {
@@ -20,7 +20,7 @@ class HitsplatDefinition {
         }
     }
 
-    private fun method1192(i: Int, class348_sub49: Buffer, i_1_: Byte) {
+    private fun method1192(i: Int, class348_sub49: ByteBuffer, i_1_: Byte) {
         anInt2014++
         if (i_1_.toInt() != 17) method1194(-80)
         if (i == 1) {

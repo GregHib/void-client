@@ -828,7 +828,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
         }
 
         @JvmStatic
-        fun method4002(class348_sub49: Buffer, i: Byte) {
+        fun method4002(class348_sub49: ByteBuffer, i: Byte) {
             anInt8248++
             val `is` = ByteArray(24)
             if (i.toInt() == 55) {

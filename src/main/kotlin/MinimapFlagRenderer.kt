@@ -27,7 +27,7 @@ object MinimapFlagRenderer {
 
     fun method1082(i: Int, bool: Boolean): Int {
         anInt1795++
-        var i_1_ = Buffer.anInt7207
+        var i_1_ = ByteBuffer.anInt7207
         while_44_@ do {
             do {
                 if (i_1_ == 0) {
@@ -53,7 +53,7 @@ object MinimapFlagRenderer {
         MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
         RenderNode.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
         HardKeyedCacheEntryReference.anInt10444 = i_4_
-        Buffer.anInt7207 = 0
+        ByteBuffer.anInt7207 = 0
         SoundEnvelope.anInt2747 = i
         LocalPlayerState.anIntArray1909 = null
         NpcSpawnDecoder.anSpriteDrawTargetArray1525 = null

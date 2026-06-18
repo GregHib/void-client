@@ -54,7 +54,7 @@ class WeaveTextureNode : AbstractProceduralTextureNode(0, true) {
         return i_11_ > i + -i_9_ && -i_9_ + i > -i_11_
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_13_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_13_: Int) {
         anInt9268++
         if (i_13_ != 31015) method3042(72, 12)
         val i_14_ = i

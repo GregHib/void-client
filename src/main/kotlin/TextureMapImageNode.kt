@@ -57,7 +57,7 @@ class TextureMapImageNode : AbstractProceduralTextureNode(0, false) {
         anIntArray9375 = null
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_15_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_15_: Int) {
         if (i_15_ == 31015) {
             if (i == 0) anInt9380 = class348_sub49.readUnsignedShort(842397944)
             anInt9376++

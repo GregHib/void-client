@@ -63,7 +63,7 @@ class GradientMapTextureNode : AbstractProceduralTextureNode(0, true) {
         method3116((-111).toByte())
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_9_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_9_: Int) {
         anInt9331++
         val i_10_ = i
         while_198_@ do {

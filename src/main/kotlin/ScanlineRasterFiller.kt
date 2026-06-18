@@ -40,7 +40,7 @@ class ScanlineRasterFiller {
 
         fun method1385(bool: Boolean, `is`: ByteArray, i: Byte) {
             anInt2475++
-            if (CubemapTextureGlSource.aClass348_Sub49_8698 == null) CubemapTextureGlSource.aClass348_Sub49_8698 = Buffer(20000)
+            if (CubemapTextureGlSource.aClass348_Sub49_8698 == null) CubemapTextureGlSource.aClass348_Sub49_8698 = ByteBuffer(20000)
             CubemapTextureGlSource.aClass348_Sub49_8698!!.writeBytes(`is`.size, 0, `is`, 97)
             if (bool) {
                 ParticleSystemState.method1294((-113).toByte(), (CubemapTextureGlSource.aClass348_Sub49_8698!!.aByteArray7154))

@@ -6,7 +6,7 @@ import kotlin.math.min
 class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
     private var anInt9470 = 4096
     private var anInt9474 = 0
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         if (i_0_ != 31015) anInt9470 = -15
         val i_1_ = i
         while_213_@ do {

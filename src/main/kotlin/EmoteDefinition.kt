@@ -8,7 +8,7 @@ class EmoteDefinition {
     var aString3258: String? = null
     private var aChar3259 = 0.toChar()
     var aBoolean3261: Boolean = true
-    fun method1924(class348_sub49: Buffer, i: Byte) {
+    fun method1924(class348_sub49: ByteBuffer, i: Byte) {
         val i_0_ = -47 % ((i - -74) / 49)
         while (true) {
             val i_1_ = class348_sub49.readUnsignedByte(255)
@@ -24,7 +24,7 @@ class EmoteDefinition {
         return aChar3259.code == 115
     }
 
-    private fun method1927(bool: Boolean, class348_sub49: Buffer, i: Int) {
+    private fun method1927(bool: Boolean, class348_sub49: ByteBuffer, i: Int) {
         anInt3257++
         if (i != 1) {
             if (i == 2) this.anInt3256 = class348_sub49.readInt((-126).toByte())

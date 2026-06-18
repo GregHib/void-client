@@ -226,7 +226,7 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
         }
 
         @JvmStatic
-        fun method2834(i: Byte, class348_sub49: Buffer): WorldMapLabel {
+        fun method2834(i: Byte, class348_sub49: ByteBuffer): WorldMapLabel {
             anInt8876++
             val class221 = HeapInfoRecord.method1248(15)[class348_sub49.readUnsignedByte(255)]
             if (i > -113) aDouble8869 = -1.5911312034627048

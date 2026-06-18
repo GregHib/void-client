@@ -19,7 +19,7 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
         }
         skeletalAnimFrameLoader = SkeletalAnimFrameLoader()
         skeletalAnimFrameLoader.aModelDefinitionLoader_475 = this
-        if (`is` != null) skeletalAnimFrameLoader.method346(i.toInt().inv(), Buffer(`is`))
+        if (`is` != null) skeletalAnimFrameLoader.method346(i.toInt().inv(), ByteBuffer(`is`))
         synchronized(aLruByteCache_2050) {
             aLruByteCache_2050.method582(skeletalAnimFrameLoader, i_3_.toLong(), (-109).toByte())
         }
@@ -89,7 +89,7 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
 
         fun method1205(i: Int, bool: Boolean, js5Archive: Js5Archive, i_4_: Int): InterfaceComponentGroup {
             anInt2053++
-            val class348_sub49 = Buffer(js5Archive.method410(-1860, i_4_, i))
+            val class348_sub49 = ByteBuffer(js5Archive.method410(-1860, i_4_, i))
             if (bool != true) method1208(102)
             val class348_sub42_sub14 = InterfaceComponentGroup(i, class348_sub49.readString(88.toByte()), class348_sub49.readString(120.toByte()), class348_sub49.readInt((-126).toByte()), class348_sub49.readInt((-126).toByte()), class348_sub49.readUnsignedByte(255) == 1, class348_sub49.readUnsignedByte(255), class348_sub49.readUnsignedByte(255))
             val i_5_ = class348_sub49.readUnsignedByte(255)

@@ -51,7 +51,7 @@ class AudioClipDefinition {
         return `is`
     }
 
-    private constructor(class348_sub49: Buffer) {
+    private constructor(class348_sub49: ByteBuffer) {
         aSynthSoundGeneratorArray3969 = arrayOfNulls<SynthSoundGenerator>(10)
         for (i in 0..9) {
             val i_10_ = class348_sub49.readUnsignedByte(255)
@@ -73,7 +73,7 @@ class AudioClipDefinition {
         fun method2372(js5Archive: Js5Archive, i: Int, i_11_: Int): AudioClipDefinition? {
             val `is` = js5Archive.method410(-1860, i, i_11_)
             if (`is` == null) return null
-            return AudioClipDefinition(Buffer(`is`))
+            return AudioClipDefinition(ByteBuffer(`is`))
         }
     }
 }

@@ -241,7 +241,7 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
         @JvmField
         var anInt7457: Int = 0
         @JvmStatic
-        fun method3607(i: Int, class348_sub49: Buffer?, i_10_: Int): String {
+        fun method3607(i: Int, class348_sub49: ByteBuffer?, i_10_: Int): String {
             val i_11_ = 17 % ((9 - i_10_) / 59)
             anInt7451++
             try {

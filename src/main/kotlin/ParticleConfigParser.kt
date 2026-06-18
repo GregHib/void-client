@@ -5,7 +5,7 @@ class ParticleConfigParser {
     var anInt3817: Int
     var anIntArray3821: IntArray? = null
     var anInt3823: Int = -1
-    fun method2275(class348_sub49: Buffer, i: Byte) {
+    fun method2275(class348_sub49: ByteBuffer, i: Byte) {
         anInt3818++
         while (true) {
             val i_1_ = class348_sub49.readUnsignedByte(255)
@@ -15,7 +15,7 @@ class ParticleConfigParser {
         val i_2_ = -63 / ((72 - i) / 37)
     }
 
-    private fun method2276(i: Int, class348_sub49: Buffer, i_3_: Int) {
+    private fun method2276(i: Int, class348_sub49: ByteBuffer, i_3_: Int) {
         if (i_3_ == 1) this.anInt3817 = class348_sub49.readUnsignedShort(842397944)
         else if (i_3_ == 2) {
             this.anIntArray3821 = IntArray(class348_sub49.readUnsignedByte(255))

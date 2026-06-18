@@ -40,7 +40,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         locTypeConfig = LocTypeConfig()
         locTypeConfig.anInt3573 = i
         locTypeConfig.aLocDefinitionCache_3562 = this
-        if (`is` != null) locTypeConfig.method2070(true, Buffer(`is`))
+        if (`is` != null) locTypeConfig.method2070(true, ByteBuffer(`is`))
         locTypeConfig.method2067(-4860)
         synchronized(aLruByteCache_3433) {
             aLruByteCache_3433.method582(locTypeConfig, i.toLong(), (-111).toByte())

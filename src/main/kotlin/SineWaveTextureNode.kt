@@ -7,7 +7,7 @@ class SineWaveTextureNode : AbstractProceduralTextureNode(0, true) {
     private var anInt9451 = 0
     private var anInt9453 = 1
     private var anInt9455 = 0
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         anInt9450++
         if (i_0_ != 31015) anInt9451 = -15
         val i_1_ = i

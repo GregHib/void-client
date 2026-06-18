@@ -261,7 +261,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
         aClass348_Sub40_9527.anInt7036 = 1
     }
 
-    internal constructor(class348_sub49: Buffer) {
+    internal constructor(class348_sub49: ByteBuffer) {
         val i = class348_sub49.readUnsignedByte(255)
         var i_56_ = 0
         var i_57_ = 0

@@ -41,7 +41,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
         return `is`
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_11_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_11_: Int) {
         if (i_11_ != 31015) aWidgetComponentArrayArray9427 = null
         anInt9430++
         if (i == 0) this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1

@@ -506,7 +506,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         var anInt8423: Int = 0
 
         @JvmStatic
-        fun method987(i: Int, class348_sub49: Buffer): WorldMapTextLabel {
+        fun method987(i: Int, class348_sub49: ByteBuffer): WorldMapTextLabel {
             anInt8405++
             val class369 = method2834(((-118).toByte()).toByte(), class348_sub49)
             if (i != 743571200) method989(-21, 36, 81)

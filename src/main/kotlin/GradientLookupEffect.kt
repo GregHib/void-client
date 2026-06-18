@@ -4,7 +4,7 @@
 class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
     private var anIntArrayArray9194: Array<IntArray>? = null
     private val anIntArray9199 = IntArray(257)
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         if (i == 0) {
             val i_1_ = class348_sub49.readUnsignedByte(255)
             if (i_1_ == 0) {

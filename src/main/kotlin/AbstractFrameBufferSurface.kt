@@ -208,7 +208,7 @@ abstract class AbstractFrameBufferSurface : LinkedListNode() {
         }
 
         @JvmStatic
-        fun method3014(class348_sub49: Buffer, i: Byte) {
+        fun method3014(class348_sub49: ByteBuffer, i: Byte) {
             anInt6914++
             if ((class348_sub49.aByteArray7154!!.size - class348_sub49.anInt7197) >= 1) {
                 val i_89_ = class348_sub49.readUnsignedByte(255)

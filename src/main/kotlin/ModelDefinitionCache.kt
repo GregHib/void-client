@@ -33,7 +33,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
         }
         itemModelDefinition = ItemModelDefinition()
         itemModelDefinition.aModelDefinitionCache_438 = this
-        if (`is` != null) itemModelDefinition.method332(i xor 0x55.inv(), Buffer(`is`))
+        if (`is` != null) itemModelDefinition.method332(i xor 0x55.inv(), ByteBuffer(`is`))
         synchronized(aLruByteCache_2875) {
             aLruByteCache_2875.method582(itemModelDefinition, i_15_.toLong(), (-109).toByte())
         }

@@ -29,7 +29,7 @@ class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, 
             if (i >= -17) aLruByteCache_2848 = null
         }
         particleAmountConfig = ParticleAmountConfig()
-        if (`is` != null) particleAmountConfig.method1253(Buffer(`is`), true)
+        if (`is` != null) particleAmountConfig.method1253(ByteBuffer(`is`), true)
         synchronized(aLruByteCache_2848!!) {
             aLruByteCache_2848!!.method582(particleAmountConfig, i_1_.toLong(), (-124).toByte())
         }

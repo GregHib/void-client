@@ -8,7 +8,7 @@ class CameraConfigDefinition {
     var anInt3245: Int = 0
     var anInt3249: Int = 2048
     var anInt3251: Int = 0
-    fun method1921(i: Byte, class348_sub49: Buffer) {
+    fun method1921(i: Byte, class348_sub49: ByteBuffer) {
         anInt3255++
         while (true) {
             val i_11_ = class348_sub49.readUnsignedByte(255)
@@ -17,7 +17,7 @@ class CameraConfigDefinition {
         }
     }
 
-    private fun method1923(i: Int, i_13_: Int, class348_sub49: Buffer) {
+    private fun method1923(i: Int, i_13_: Int, class348_sub49: ByteBuffer) {
         anInt3254++
         if (i_13_ == 4) {
             if (i != 1) {

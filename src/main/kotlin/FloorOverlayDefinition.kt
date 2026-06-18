@@ -29,7 +29,7 @@ class FloorOverlayDefinition {
 
     constructor()
 
-    internal constructor(class348_sub49: Buffer) {
+    internal constructor(class348_sub49: ByteBuffer) {
         aByte966 = class348_sub49.readByte(-113)
         this.anInt969 = class348_sub49.readUnsignedShort(842397944)
         this.anInt976 = class348_sub49.readInt((-126).toByte())

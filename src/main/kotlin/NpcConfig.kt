@@ -330,7 +330,7 @@ class NpcConfig {
         return true
     }
 
-    fun method479(i: Byte, class348_sub49: Buffer) {
+    fun method479(i: Byte, class348_sub49: ByteBuffer) {
         anInt867++
         while (true) {
             val i_33_ = class348_sub49.readUnsignedByte(255)
@@ -368,7 +368,7 @@ class NpcConfig {
         return false
     }
 
-    private fun method482(class348_sub49: Buffer, i: Int, i_38_: Byte) {
+    private fun method482(class348_sub49: ByteBuffer, i: Int, i_38_: Byte) {
         anInt960++
         if (i == 1 || i == 5) {
             if (i == 5 && this.aSeqDefinitionCache_933!!.aBoolean3355) method484(class348_sub49, -528)
@@ -647,7 +647,7 @@ class NpcConfig {
         }
     }
 
-    private fun method484(class348_sub49: Buffer, i: Int) {
+    private fun method484(class348_sub49: ByteBuffer, i: Int) {
         if (i != -528) method486(79)
         anInt871++
         val i_74_ = class348_sub49.readUnsignedByte(255)

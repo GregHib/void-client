@@ -36,7 +36,7 @@ class WidgetCache internal constructor(sceneProjector: SceneProjector?, i: Int, 
         widgetDefinition = WidgetDefinition()
         widgetDefinition.anInt269 = i
         widgetDefinition.aWidgetCache_251 = this
-        if (`is` != null) widgetDefinition.method267(Buffer(`is`), false)
+        if (`is` != null) widgetDefinition.method267(ByteBuffer(`is`), false)
         widgetDefinition.method270(124.toByte())
         synchronized(aLruByteCache_1487!!) {
             aLruByteCache_1487!!.method582(widgetDefinition, i.toLong(), (-126).toByte())

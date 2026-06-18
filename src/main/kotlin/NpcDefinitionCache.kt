@@ -23,7 +23,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             `is` = aJs5Archive_3319.method410(-1860, i_9_, i)
         }
         npcDefinition = NpcDefinition()
-        if (`is` != null) npcDefinition.method1620(Buffer(`is`), -108)
+        if (`is` != null) npcDefinition.method1620(ByteBuffer(`is`), -108)
         synchronized(aLruByteCache_3321) {
             aLruByteCache_3321.method582(npcDefinition, i.toLong(), (-109).toByte())
         }

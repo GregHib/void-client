@@ -1,7 +1,7 @@
 /* Class348_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class MidiFileBuilder private constructor(class348_sub49: Buffer) : LinkedListNode() {
+class MidiFileBuilder private constructor(class348_sub49: ByteBuffer) : LinkedListNode() {
     @JvmField
     var aByteArray6564: ByteArray?
     @JvmField
@@ -187,7 +187,7 @@ class MidiFileBuilder private constructor(class348_sub49: Buffer) : LinkedListNo
         var i_68_ = class348_sub49.anInt7197
         class348_sub49.anInt7197 += i_18_ * 3
         this.aByteArray6564 = ByteArray(i_17_)
-        val class348_sub49_69_ = Buffer(this.aByteArray6564)
+        val class348_sub49_69_ = ByteBuffer(this.aByteArray6564)
         class348_sub49_69_.writeInt(124.toByte(), 1297377380)
         class348_sub49_69_.writeInt(89.toByte(), 6)
         class348_sub49_69_.writeShort(107.toByte(), if (i > 1) 1 else 0)
@@ -296,7 +296,7 @@ class MidiFileBuilder private constructor(class348_sub49: Buffer) : LinkedListNo
         fun method2734(js5Archive: Js5Archive, i: Int, i_15_: Int): MidiFileBuilder? {
             val `is` = js5Archive.method410(-1860, i, i_15_)
             if (`is` == null) return null
-            return MidiFileBuilder(Buffer(`is`))
+            return MidiFileBuilder(ByteBuffer(`is`))
         }
     }
 }

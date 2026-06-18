@@ -65,7 +65,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
         structConfig = StructConfig()
         structConfig.aConfigDefinitionLoader_593 = this
         structConfig.anInt581 = i
-        if (`is` != null) structConfig.method379(Buffer(`is`), 109)
+        if (`is` != null) structConfig.method379(ByteBuffer(`is`), 109)
         structConfig.method372(-25359)
         synchronized(aLruByteCache_2083) {
             aLruByteCache_2083.method582(structConfig, i.toLong(), (-106).toByte())

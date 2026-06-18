@@ -82,7 +82,7 @@ class SkeletalAnimFrameLoader {
         return modelDefinition
     }
 
-    private fun method344(i: Int, class348_sub49: Buffer, i_10_: Byte) {
+    private fun method344(i: Int, class348_sub49: ByteBuffer, i_10_: Byte) {
         if (i != 1) {
             if (i == 2) {
                 val i_11_ = class348_sub49.readUnsignedByte(i_10_ + 320)
@@ -114,7 +114,7 @@ class SkeletalAnimFrameLoader {
         if (i_10_.toInt() != -65) aLong482 = -90L
     }
 
-    fun method346(i: Int, class348_sub49: Buffer) {
+    fun method346(i: Int, class348_sub49: ByteBuffer) {
         anInt467++
         while (true) {
             val i_18_ = class348_sub49.readUnsignedByte(255)

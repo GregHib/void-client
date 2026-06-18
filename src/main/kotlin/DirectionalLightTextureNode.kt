@@ -68,7 +68,7 @@ class DirectionalLightTextureNode : AbstractProceduralTextureNode(1, true) {
         method3143(-119)
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_18_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_18_: Int) {
         val i_19_ = i
         while_210_@ do {
             do {

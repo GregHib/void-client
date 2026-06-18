@@ -321,7 +321,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
         return renderTarget
     }
 
-    fun method1691(i: Int, var_renderer: Renderer?, class348_sub49: Buffer?, `is`: IntArray?, i_39_: Int, i_40_: Byte) {
+    fun method1691(i: Int, var_renderer: Renderer?, class348_sub49: ByteBuffer?, `is`: IntArray?, i_39_: Int, i_40_: Byte) {
         do {
             try {
                 anInt5818++
@@ -479,7 +479,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
         try {
             anInt5826++
             if (i_78_ != 7) method1693('\uffb8', -54)
-            val class348_sub49 = Buffer(`is`)
+            val class348_sub49 = ByteBuffer(`is`)
             var i_80_ = -1
             while (true) {
                 val i_81_ = class348_sub49.method3334(-85)
@@ -572,7 +572,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
         try {
             anInt5820++
             if (i_100_ == 1359) {
-                val class348_sub49 = Buffer(`is`)
+                val class348_sub49 = ByteBuffer(`is`)
                 var i_101_ = -1
                 while (true) {
                     val i_102_ = class348_sub49.method3334(-57)
@@ -608,7 +608,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
         }
     }
 
-    fun method1696(class348_sub49: Buffer?, bool: Boolean, i: Int, i_116_: Int, i_117_: Int, i_118_: Int, i_119_: Int, i_120_: Int, var_renderer: Renderer?, `is`: IntArray?, i_121_: Int) {
+    fun method1696(class348_sub49: ByteBuffer?, bool: Boolean, i: Int, i_116_: Int, i_117_: Int, i_118_: Int, i_119_: Int, i_120_: Int, var_renderer: Renderer?, `is`: IntArray?, i_121_: Int) {
         do {
             try {
                 anInt5825++

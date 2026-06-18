@@ -5,7 +5,7 @@ import kotlin.math.sqrt
 */
 class EdgeDetectTextureNode : AbstractProceduralTextureNode(1, true) {
     private var anInt9167 = 4096
-    override fun method3049(class348_sub49: Buffer, i: Int, i_2_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_2_: Int) {
         if (i_2_ != 31015) method3042(-111, 25)
         anInt9170++
         if (i == 0) anInt9167 = class348_sub49.readUnsignedShort(842397944)

@@ -24,7 +24,7 @@ object TextureLoaderUtil {
                     val widgetComponent = (WidgetComponent().also { WarpTextureNode.aWidgetComponentArrayArray9427!![i]!![i_2_] = it })
                     widgetComponent.anInt830 = i_2_ + (i shl 16)
                     check(`is`[0].toInt() == -1) { "if1" }
-                    widgetComponent.method433(Buffer(`is`), true)
+                    widgetComponent.method433(ByteBuffer(`is`), true)
                 }
             }
             i_2_++

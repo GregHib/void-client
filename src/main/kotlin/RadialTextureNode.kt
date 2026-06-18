@@ -7,7 +7,7 @@ class RadialTextureNode : AbstractProceduralTextureNode(0, true) {
     private var anInt9340 = 1365
     private var anInt9343 = 20
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         val i_1_ = i
         while_200_@ do {
             while_199_@ do {

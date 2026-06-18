@@ -20,7 +20,7 @@ class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, 
         else `is` = aJs5Archive_4368!!.method410(-1860, 1, i)
         class348_sub42_sub10 = ParameterizedText()
         class348_sub42_sub10.aCompiledScriptCache_9567 = this
-        if (`is` != null) class348_sub42_sub10.method3218(Buffer(`is`), 0)
+        if (`is` != null) class348_sub42_sub10.method3218(ByteBuffer(`is`), 0)
         if (i_0_ >= -86) method3473(-12)
         if (i >= 32768) class348_sub42_sub10.method3209(false)
         aLruByteCache_4362.method582(class348_sub42_sub10, i.toLong(), (-125).toByte())

@@ -48,7 +48,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
         }
         underlayDefinition = UnderlayDefinition()
         underlayDefinition.aItemDefinitionLoader_2886 = this
-        if (`is` != null) underlayDefinition.method1611(Buffer(`is`), false)
+        if (`is` != null) underlayDefinition.method1611(ByteBuffer(`is`), false)
         synchronized(aLruByteCache_2185) {
             aLruByteCache_2185.method582(underlayDefinition, i_1_.toLong(), (-116).toByte())
         }

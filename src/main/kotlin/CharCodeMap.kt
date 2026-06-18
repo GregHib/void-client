@@ -14,7 +14,7 @@ class CharCodeMap : HashLinkedListNode() {
     lateinit var aCharArray9588: CharArray
     var anIntArray9592: IntArray? = null
 
-    fun method3221(i: Int, class348_sub49: Buffer) {
+    fun method3221(i: Int, class348_sub49: ByteBuffer) {
         val i_0_ = 81 / ((-39 - i) / 52)
         anInt9583++
         while (true) {
@@ -65,7 +65,7 @@ class CharCodeMap : HashLinkedListNode() {
         return -1
     }
 
-    private fun method3227(i: Int, class348_sub49: Buffer, i_24_: Int) {
+    private fun method3227(i: Int, class348_sub49: ByteBuffer, i_24_: Int) {
         if (i_24_ != 1) {
             if (i_24_ == 2) {
                 val i_25_ = class348_sub49.readUnsignedByte(255)

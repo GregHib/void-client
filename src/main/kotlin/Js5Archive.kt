@@ -91,7 +91,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         if (`is` == null || (`is`[0] == 0 && `is`[1] == 0 && `is`[2] == 0 && `is`[3] == 0)) is_14_ = MinimapSquareDrawer.method461(false, anObjectArray656!![i_9_], 53146732)!!
         else {
             is_14_ = MinimapSquareDrawer.method461(true, anObjectArray656!![i_9_], 53146732)!!
-            val class348_sub49 = Buffer(is_14_)
+            val class348_sub49 = ByteBuffer(is_14_)
             class348_sub49.method3367(607818341, `is`, 5, (class348_sub49.aByteArray7154)!!.size)
         }
         val is_15_: ByteArray?
@@ -107,7 +107,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
                 var i_30_ = is_15_.size
                 val i_31_ = 0xff and is_15_[--i_30_].toInt()
                 i_30_ -= 4 * (i_31_ * i_10_)
-                val class348_sub49 = Buffer(is_15_)
+                val class348_sub49 = ByteBuffer(is_15_)
                 var i_32_ = 0
                 var i_33_ = 0
                 class348_sub49.anInt7197 = i_30_
@@ -148,7 +148,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
                 var i_16_ = is_15_.size
                 val i_17_ = 0xff and is_15_[--i_16_].toInt()
                 i_16_ -= 4 * (i_10_ * i_17_)
-                val class348_sub49 = Buffer(is_15_)
+                val class348_sub49 = ByteBuffer(is_15_)
                 val is_18_ = IntArray(i_10_)
                 class348_sub49.anInt7197 = i_16_
                 for (i_19_ in 0..<i_17_) {
@@ -588,7 +588,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         @JvmStatic
         @Throws(ClientException::class)
         fun method395(i: Int) {
-            if (Buffer.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
+            if (ByteBuffer.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
             else CameraRotationStub.aRenderer326!!.method3626(0, 0)
             if (i >= 73) anInt642++
         }

@@ -12,7 +12,7 @@ class MapAreaDefinition {
     var anInt2533: Int = 1
     var anInt2534: Int = 2
 
-    private fun method1418(i: Int, i_0_: Int, class348_sub49: Buffer, i_1_: Byte) {
+    private fun method1418(i: Int, i_0_: Int, class348_sub49: ByteBuffer, i_1_: Byte) {
         if (i_1_.toInt() != 94) this.anInt2526 = -81
         anInt2532++
         if (i == 1) {
@@ -30,7 +30,7 @@ class MapAreaDefinition {
         } else class348_sub49.readByte(-106)
     }
 
-    fun method1419(i: Int, class348_sub49: Buffer, i_2_: Byte) {
+    fun method1419(i: Int, class348_sub49: ByteBuffer, i_2_: Byte) {
         anInt2528++
         val i_3_ = 93 / ((i_2_ - -24) / 55)
         while (true) {

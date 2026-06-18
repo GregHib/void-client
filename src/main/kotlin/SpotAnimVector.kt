@@ -31,7 +31,7 @@ class SpotAnimVector {
     @JvmField
     var anInt2304: Int = 0
     private var aBoolean2308 = false
-    private fun method1335(class348_sub49: Buffer, i: Int, i_8_: Byte) {
+    private fun method1335(class348_sub49: ByteBuffer, i: Int, i_8_: Byte) {
         anInt2287++
         if (i == 1) anInt2302 = class348_sub49.readUnsignedShort(842397944)
         else if (i == 2) class348_sub49.readUnsignedByte(255)
@@ -50,7 +50,7 @@ class SpotAnimVector {
         if (i_8_ >= -124) this.aLong2301 = 65L
     }
 
-    fun method1336(i: Int, class348_sub49: Buffer) {
+    fun method1336(i: Int, class348_sub49: ByteBuffer) {
         while (true) {
             val i_9_ = class348_sub49.readUnsignedByte(255)
             if (i_9_ == 0) break

@@ -131,7 +131,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
         @JvmStatic
         fun method1294(i: Byte, `is`: ByteArray?): Boolean {
             anInt2199++
-            val class348_sub49 = Buffer(`is`)
+            val class348_sub49 = ByteBuffer(`is`)
             if (i > -98) method1294(73.toByte(), null)
             val i_0_ = class348_sub49.readUnsignedByte(255)
             if (i_0_ != 2) return false

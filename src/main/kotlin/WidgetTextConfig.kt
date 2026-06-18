@@ -29,7 +29,7 @@ class WidgetTextConfig {
     var aBoolean507: Boolean = false
     @JvmField
     var anInt508: Int = 0
-    private fun method361(i: Int, class348_sub49: Buffer, i_2_: Int) {
+    private fun method361(i: Int, class348_sub49: ByteBuffer, i_2_: Int) {
         if (i != -6617) method363(95)
         anInt497++
         if (i_2_ == 1) this.anInt501 = class348_sub49.readUnsignedShort(842397944)
@@ -43,7 +43,7 @@ class WidgetTextConfig {
         else if (i_2_ == 6) this.anInt503 = class348_sub49.readMedium(-1)
     }
 
-    fun method364(class348_sub49: Buffer, i: Byte) {
+    fun method364(class348_sub49: ByteBuffer, i: Byte) {
         anInt511++
         if (i >= 22) {
             while (true) {

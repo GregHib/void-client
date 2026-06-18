@@ -146,7 +146,7 @@ class StructConfig {
         return class348_sub50.aString7211
     }
 
-    private fun method377(i: Int, class348_sub49: Buffer, i_7_: Int) {
+    private fun method377(i: Int, class348_sub49: ByteBuffer, i_7_: Int) {
         anInt571++
         if (i != 1) {
             if (i == 2) this.anInt605 = class348_sub49.readUnsignedShort(842397944)
@@ -237,7 +237,7 @@ class StructConfig {
         return class348_sub35.anInt6976
     }
 
-    fun method379(class348_sub49: Buffer, i: Int) {
+    fun method379(class348_sub49: ByteBuffer, i: Int) {
         if (i < 81) anInt590 = 17
         anInt610++
         while (true) {

@@ -3,7 +3,7 @@ import jaclib.memory.Stream.Companion.floatToRawIntBits
 import OpenGlTerrainTile.Companion.method4001
 import java.util.*
 
-class FloatBuffer internal constructor(i: Int) : Buffer(i) {
+class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
     fun method3399(i: Int, f: Float) {
         anInt9741++
         val i_23_ = floatToRawIntBits(f)

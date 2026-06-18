@@ -43,7 +43,7 @@ class RadialGradientMaskEffect : AbstractProceduralTextureNode(0, true) {
         return `is`
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_8_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_8_: Int) {
         anInt9188++
         if (i_8_ == 31015) {
             val i_9_ = i

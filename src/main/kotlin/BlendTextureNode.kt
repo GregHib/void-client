@@ -62,7 +62,7 @@ class BlendTextureNode : AbstractProceduralTextureNode(3, false) {
         return `is`
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_22_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_22_: Int) {
         anInt9358++
         if (i_22_ != 31015) anInt9360 = -16
         if (i == 0) this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1

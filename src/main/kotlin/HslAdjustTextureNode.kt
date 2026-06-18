@@ -148,7 +148,7 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
         }
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_39_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_39_: Int) {
         while_209_@ do {
             try {
                 anInt9384++

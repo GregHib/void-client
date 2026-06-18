@@ -80,7 +80,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
             var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
             try {
                 randomAccessFileOnDisk = PrivilegedOperationWorker.method2231("2", -1141472112)!!
-                val class348_sub49 = Buffer(3 + 6 * TimingCounters.anInt4168)
+                val class348_sub49 = ByteBuffer(3 + 6 * TimingCounters.anInt4168)
                 class348_sub49.writeByte(false, 1)
                 class348_sub49.writeShort(107.toByte(), TimingCounters.anInt4168)
                 val i_0_ = -4 % ((-12 - i) / 38)

@@ -393,7 +393,7 @@ import SpriteDefinition.Companion.method3300
 import TimedRecordAccessor.Companion.method3314
 import OutgoingPacketNode.Companion.method3323
 import OutgoingPacketNode.Companion.method3327
-import Buffer.Companion.method3376
+import ByteBuffer.Companion.method3376
 import FloatBuffer.Companion.method3403
 import CipheredPacketBuffer.Companion.method3414
 import AbstractBloomEffect.Companion.method2757
@@ -592,7 +592,7 @@ class Client : GameAppletFrame() {
                 }
                 if (NanoTimer.anInt846 == 2) {
                     TextureHandle.aSocketStreamWorker_2589 = SocketStreamWorker(Sprite.aLinkedQueueNode_114!!.anObject1998 as Socket?, VorbisOggDecoder.aPrivilegedOperationWorker_8992, 25000)
-                    val class348_sub49 = Buffer(5)
+                    val class348_sub49 = ByteBuffer(5)
                     class348_sub49.writeByte(false, (ScriptOpcodeHolder.aConfigIdPair_2341!!.anInt400))
                     class348_sub49.writeInt(103.toByte(), 634)
                     TextureHandle.aSocketStreamWorker_2589!!.method1470((class348_sub49.aByteArray7154!!), 5, 0, -1)
@@ -615,7 +615,7 @@ class Client : GameAppletFrame() {
                 if (NanoTimer.anInt846 == 4) {
                     val bool = (NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-100).toByte()) || method3196(WorldMapRenderer.anInt4674, -87) || method2672(WorldMapRenderer.anInt4674, -127))
                     val class267s = method2029(105)
-                    val class348_sub49 = Buffer(class267s!!.size * 4)
+                    val class348_sub49 = ByteBuffer(class267s!!.size * 4)
                     TextureHandle.aSocketStreamWorker_2589!!.method1474(class348_sub49.aByteArray7154!!, 0, (-72).toByte(), (class348_sub49.aByteArray7154)!!.size)
                     for (i_1_ in class267s.indices) class267s[i_1_]!!.method2030(1, class348_sub49.readInt((-126).toByte()))
                     ClientMachineInfo.aMediaStreamClient_6601!!.method1903(false, !bool, TextureHandle.aSocketStreamWorker_2589)

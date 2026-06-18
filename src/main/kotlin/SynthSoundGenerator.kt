@@ -36,7 +36,7 @@ class SynthSoundGenerator {
         return 0
     }
 
-    fun method807(class348_sub49: Buffer) {
+    fun method807(class348_sub49: ByteBuffer) {
         aEnvelopeInterpolator_1418 = EnvelopeInterpolator()
         aEnvelopeInterpolator_1418!!.method1452(class348_sub49)
         aEnvelopeInterpolator_1408 = EnvelopeInterpolator()

@@ -14,7 +14,7 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
     private var anInt9322 = 409
     private var anInt9323 = 819
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         anInt9308++
         if (i_0_ != 31015) aBoolean9307 = true
         val i_1_ = i

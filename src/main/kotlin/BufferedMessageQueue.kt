@@ -90,7 +90,7 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
         npcType = NpcType()
         npcType.anInt1344 = i
         npcType.aBufferedMessageQueue_1348 = this
-        if (`is` != null) npcType.method798(111, Buffer(`is`))
+        if (`is` != null) npcType.method798(111, ByteBuffer(`is`))
         npcType.method799(-117)
         synchronized(aLruByteCache_3577!!) {
             aLruByteCache_3577!!.method582(npcType, i.toLong(), (-102).toByte())

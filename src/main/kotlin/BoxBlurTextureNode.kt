@@ -4,7 +4,7 @@
 class BoxBlurTextureNode : AbstractProceduralTextureNode(1, false) {
     private var anInt9463 = 1
     private var anInt9466 = 1
-    override fun method3049(class348_sub49: Buffer, i: Int, i_11_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_11_: Int) {
         anInt9460++
         if (i_11_ != 31015) method3147(32.toByte())
         val i_12_ = i

@@ -13,11 +13,11 @@ class TypedRecordTable {
     var anInt3687: Int = 0
     var anConfigTypeProviderArray3688: Array<ConfigTypeProvider?> = emptyArray()
     var anInt3690: Int = 0
-    private fun method2182(bool: Boolean, projectileFactory: ProjectileFactory?, class348_sub49: Buffer?): ConfigTypeProvider? {
+    private fun method2182(bool: Boolean, projectileFactory: ProjectileFactory?, class348_sub49: ByteBuffer?): ConfigTypeProvider? {
         try {
             anInt3692++
             if (ModelDefinitionCache.aProjectileFactory_2868 == projectileFactory) return VarpStore.method1312(64.toByte(), class348_sub49!!)
-            if (Buffer.aProjectileFactory_7175 == projectileFactory) return AnimatedModelRenderer.method987(743571200, class348_sub49!!)
+            if (ByteBuffer.aProjectileFactory_7175 == projectileFactory) return AnimatedModelRenderer.method987(743571200, class348_sub49!!)
             if (MatrixCameraTransform.aProjectileFactory_5689 == projectileFactory) return ProjectileDefinition.method2287(class348_sub49!!, (-112).toByte())
             if (projectileFactory == ItemNameResolver.aProjectileFactory_4997) return GlShaderProgramHandle.method2660(26.toByte(), class348_sub49!!)
             if (bool != true) Companion.method2180((-104).toByte())
@@ -33,7 +33,7 @@ class TypedRecordTable {
         }
     }
 
-    fun method2183(class348_sub49: Buffer, i: Int) {
+    fun method2183(class348_sub49: ByteBuffer, i: Int) {
         this.anInt3690 = class348_sub49.readMedium(-1)
         anInt3693++
         this.anInt3687 = class348_sub49.readUnsignedShort(842397944)

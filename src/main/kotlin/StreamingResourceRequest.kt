@@ -4,7 +4,7 @@ class StreamingResourceRequest : AsyncResourceRequest() {
     @JvmField
     var aByte10449: Byte = 0
     @JvmField
-    var aClass348_Sub49_10453: Buffer? = null
+    var aClass348_Sub49_10453: ByteBuffer? = null
     @JvmField
     var anInt10456: Int = 0
 

@@ -39,7 +39,7 @@ object NpcSpawnDecoder {
                         WidgetRedrawRegion.anIntArray4250!![ProjectileConfigUtil.anInt388] = NullOggStream.anIntArray9042!![i_1_]
                         i_2_ = ProjectileConfigUtil.anInt388++
                     }
-                    val class348_sub49 = Buffer(StringCacheNode.aByteArrayArray7212!![i_1_])
+                    val class348_sub49 = ByteBuffer(StringCacheNode.aByteArrayArray7212!![i_1_])
                     var i_4_ = 0
                     while (class348_sub49.anInt7197 < StringCacheNode.aByteArrayArray7212!![i_1_]!!.size) {
                         if (i_4_ >= 511 || ModelDefinitionLoader.anInt2057 >= 1023) break

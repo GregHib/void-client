@@ -59,7 +59,7 @@ class SoundBankPatch : LinkedListNode {
         this.aClass348_Sub19_Sub1Array6800 = arrayOfNulls<PcmSampleData>(128)
         this.aSkeletalAnimFrameDataArray6796 = arrayOfNulls<SkeletalAnimFrameData>(128)
         anIntArray6793 = IntArray(128)
-        val class348_sub49 = Buffer(`is`)
+        val class348_sub49 = ByteBuffer(`is`)
         var i: Int
         i = 0
         while (((class348_sub49.aByteArray7154!![i + class348_sub49.anInt7197]).toInt() != 0)) {

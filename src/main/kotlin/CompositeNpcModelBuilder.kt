@@ -553,7 +553,7 @@ class CompositeNpcModelBuilder {
         var anInt2101: Int = 0
         var anInt2104: Int = 0
         @JvmField
-        var aClass348_Sub49Array2105: Array<Buffer?>? = arrayOfNulls<Buffer>(2048)
+        var aClass348_Sub49Array2105: Array<ByteBuffer?>? = arrayOfNulls<ByteBuffer>(2048)
         var anInt2106: Int = 0
         var anInt2107: Int = 0
 

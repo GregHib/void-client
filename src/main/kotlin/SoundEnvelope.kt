@@ -234,7 +234,7 @@ class SoundEnvelope {
         method1542(32402)
     }
 
-    internal constructor(var_renderer: Renderer?, class348_sub49: Buffer?, i: Int) {
+    internal constructor(var_renderer: Renderer?, class348_sub49: ByteBuffer?, i: Int) {
         try {
             if (CutsceneSequenceData.anIntArray3726 == null) method1177(122.toByte())
             this.anInt2731 = class348_sub49!!.readUnsignedByte(255)

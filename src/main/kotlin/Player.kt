@@ -126,7 +126,7 @@ class Player : ProjectedGroundDecor() {
         return bool
     }
 
-    fun method2452(i: Byte, class348_sub49: Buffer) {
+    fun method2452(i: Byte, class348_sub49: ByteBuffer) {
         anInt10547++
         class348_sub49.anInt7197 = 0
         val i_11_ = class348_sub49.readUnsignedByte(255)

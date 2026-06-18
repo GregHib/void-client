@@ -54,7 +54,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         anIntArray9297[anInt9301] = 4096
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_8_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_8_: Int) {
         anInt9292++
         if (i_8_ != 31015) method3111(106, 16)
         val i_9_ = i

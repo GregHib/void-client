@@ -57,7 +57,7 @@ class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, sof
             anInt3008 = i_9_
             if (i_9_ <= 0) aClass258_Sub3_2998 = null
             else {
-                val class348_sub49 = Buffer(i_9_ * 2)
+                val class348_sub49 = ByteBuffer(i_9_ * 2)
                 if (aHa_Sub2_3000!!.aBoolean7775) {
                     var i_19_ = 0
                     while (i_8_ > i_19_) {

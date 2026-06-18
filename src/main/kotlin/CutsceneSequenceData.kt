@@ -23,7 +23,7 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
 
     private fun method2200(i: Byte, `is`: ByteArray?) {
         anInt3731++
-        val class348_sub49 = Buffer(RegionSceneShifter.method3158(`is`, -105))
+        val class348_sub49 = ByteBuffer(RegionSceneShifter.method3158(`is`, -105))
         val i_2_ = class348_sub49.readUnsignedByte(255)
         if (i_2_ < 5 || i_2_ > 6) throw RuntimeException()
         if (i_2_ < 6) this.anInt3732 = 0

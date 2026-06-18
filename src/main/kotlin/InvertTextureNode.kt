@@ -42,7 +42,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
         return `is`
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_21_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_21_: Int) {
         anInt9414++
         if (i_21_ != 31015) aBoundsConstraintEntry_9415 = null
         if (i == 0) this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1
@@ -139,7 +139,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
             return class357.aClass318_Sub1_Sub5_4395
         }
 
-        fun method3136(i: Byte, class348_sub49: Buffer?): String {
+        fun method3136(i: Byte, class348_sub49: ByteBuffer?): String {
             anInt9416++
             if (i.toInt() != 64) aShortArray9423 = null
             return method3607(32767, class348_sub49, -77)

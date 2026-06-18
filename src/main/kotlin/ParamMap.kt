@@ -14,7 +14,7 @@ class ParamMap : HashLinkedListNode() {
         return class348_sub35.anInt6976
     }
 
-    private fun method3167(i: Int, class348_sub49: Buffer, i_2_: Byte) {
+    private fun method3167(i: Int, class348_sub49: ByteBuffer, i_2_: Byte) {
         if (i_2_.toInt() == -86) {
             anInt9489++
             if (i == 249) {
@@ -35,7 +35,7 @@ class ParamMap : HashLinkedListNode() {
         }
     }
 
-    fun method3168(class348_sub49: Buffer, i: Byte) {
+    fun method3168(class348_sub49: ByteBuffer, i: Byte) {
         while (true) {
             val i_7_ = class348_sub49.readUnsignedByte(255)
             if (i_7_ == 0) break

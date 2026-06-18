@@ -828,7 +828,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
         fun method4008(i: Byte): Int {
             anInt8289++
             if (i >= -121) aCameraRotationStub_8320 = null
-            if (Buffer.anInt7207 == 1) return MapRegionLoaderThread.anInt4211
+            if (ByteBuffer.anInt7207 == 1) return MapRegionLoaderThread.anInt4211
             return 0
         }
     }

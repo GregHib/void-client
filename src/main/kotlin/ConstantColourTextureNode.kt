@@ -38,7 +38,7 @@ class ConstantColourTextureNode private constructor(i: Int) : AbstractProcedural
         if (i >= -54) anInt9250 = -42
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_20_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_20_: Int) {
         val i_21_ = i
         if (i_21_ == 0) method3095(-124, class348_sub49.readMedium(-1))
         anInt9251++

@@ -40,7 +40,7 @@ class MinimapLineDrawer internal constructor(private val anInt5255: Int, private
         }
 
         @JvmStatic
-        fun method472(i: Int, class348_sub49: Buffer): HeapInfoRecord? {
+        fun method472(i: Int, class348_sub49: ByteBuffer): HeapInfoRecord? {
             anInt5263++
             val string = class348_sub49.readString(90.toByte())
             val class221 = HeapInfoRecord.method1248(127)[class348_sub49.readUnsignedByte(i xor 0x6c6e.inv())]

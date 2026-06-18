@@ -49,7 +49,7 @@ class GlShaderProgramHandle internal constructor(var_ha_Sub2: OpenGlRenderer?, l
             return ((0x70000 and i_0_) != 0) or method2709(i_1_, i_0_, -1) || method2187(i_0_, -84, i_1_)
         }
 
-        fun method2660(i: Byte, class348_sub49: Buffer): ParticleEmitterDefExt? {
+        fun method2660(i: Byte, class348_sub49: ByteBuffer): ParticleEmitterDefExt? {
             anInt4180++
             if (i.toInt() != 26) return null
             val class288 = method2189(class348_sub49, i + 59)

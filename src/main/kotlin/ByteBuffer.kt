@@ -14,7 +14,7 @@ import CacheEntryReference.Companion.method3196
 import ByteArrayPool.method359
 import java.math.BigInteger
 
-open class Buffer : LinkedListNode {
+open class ByteBuffer : LinkedListNode {
     @JvmField
     var aByteArray7154: ByteArray?
     var anInt7197: Int

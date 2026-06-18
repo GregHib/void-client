@@ -46,7 +46,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
         return `is`
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_72_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_72_: Int) {
         while_146_@ do {
             try {
                 anInt9146++

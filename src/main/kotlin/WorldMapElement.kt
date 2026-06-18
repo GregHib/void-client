@@ -98,7 +98,7 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
         var anInt4641: Int = 0
 
         @JvmStatic
-        fun method179(i: Int, class348_sub49: Buffer): WorldMapAreaLabel {
+        fun method179(i: Int, class348_sub49: ByteBuffer): WorldMapAreaLabel {
             anInt4629++
             val class369 = PcmStreamBuffer.method2834((-127).toByte(), class348_sub49)
             val i_3_ = class348_sub49.readInt((-126).toByte())

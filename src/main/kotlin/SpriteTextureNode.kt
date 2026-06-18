@@ -22,7 +22,7 @@ open class SpriteTextureNode : AbstractProceduralTextureNode(0, false) {
         return false
     }
 
-    override fun method3049(class348_sub49: Buffer, i: Int, i_0_: Int) {
+    override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         if (i_0_ == 31015) {
             if (i == 0) anInt9243 = class348_sub49.readUnsignedShort(842397944)
             anInt9236++

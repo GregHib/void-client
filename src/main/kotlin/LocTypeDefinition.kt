@@ -26,7 +26,7 @@ class LocTypeDefinition {
         if (aString4010 == null) aString4010 = aString4012
     }
 
-    private fun method2550(class348_sub49: Buffer, i: Int, i_0_: Byte) {
+    private fun method2550(class348_sub49: ByteBuffer, i: Int, i_0_: Byte) {
         if (i_0_.toInt() != 52) anIntArray4014 = null
         anInt4013++
         if (i != 1) {
@@ -130,7 +130,7 @@ class LocTypeDefinition {
         } else aString4012 = class348_sub49.method3371(-13487)
     }
 
-    fun method2551(i: Int, class348_sub49: Buffer) {
+    fun method2551(i: Int, class348_sub49: ByteBuffer) {
         val i_19_ = -14 / ((i - -56) / 61)
         anInt3995++
         while (true) {

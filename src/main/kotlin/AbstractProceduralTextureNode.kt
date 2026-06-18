@@ -82,7 +82,7 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
         return this.aClass348_Sub40Array7031[i_59_]!!.method3042(i, i_58_ + -633706082)
     }
 
-    open fun method3049(class348_sub49: Buffer, i: Int, i_60_: Int) {
+    open fun method3049(class348_sub49: ByteBuffer, i: Int, i_60_: Int) {
         anInt7028++
         if (i_60_ != 31015) method3038(-16)
     }
@@ -122,7 +122,7 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
         var anInt7043: Int = 0
         @JvmField
         var anInt7044: Int = 0
-        fun method3036(class348_sub49: Buffer, i: Int): MinimapTriangleDrawer? {
+        fun method3036(class348_sub49: ByteBuffer, i: Int): MinimapTriangleDrawer? {
             anInt7026++
             if (i > -4) return null
             return MinimapTriangleDrawer(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))

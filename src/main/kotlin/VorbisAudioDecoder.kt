@@ -22,7 +22,7 @@ class VorbisAudioDecoder private constructor(`is`: ByteArray?) : LinkedListNode(
     private var anInt6733 = 0
 
     private fun method2787(`is`: ByteArray?) {
-        val class348_sub49 = Buffer(`is`)
+        val class348_sub49 = ByteBuffer(`is`)
         anInt6702 = class348_sub49.readInt((-126).toByte())
         anInt6716 = class348_sub49.readInt((-126).toByte())
         anInt6723 = class348_sub49.readInt((-126).toByte())
