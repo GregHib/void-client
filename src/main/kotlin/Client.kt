@@ -497,7 +497,7 @@ import MapRegionLoader.Companion.method746
 import IsaacCipher.Companion.method782
 import BufferedRandomAccessFile.Companion.method786
 import NpcType.Companion.method804
-import Class80.Companion.method808
+import SynthSoundGenerator.Companion.method808
 import Class81.method810
 import Class83.Companion.method815
 import Class84.Companion.method817

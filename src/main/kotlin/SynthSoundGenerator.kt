@@ -2,7 +2,10 @@ import java.util.*
 import kotlin.math.pow
 import kotlin.math.sin
 
-class Class80 {
+/*
+ * Class80
+ */
+class SynthSoundGenerator {
     @JvmField
     var anInt1407: Int = 0
     private var aEnvelopeInterpolator_1408: EnvelopeInterpolator? = null
