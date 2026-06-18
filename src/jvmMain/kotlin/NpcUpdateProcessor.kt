@@ -25,7 +25,7 @@ object NpcUpdateProcessor {
 
     fun method856(i: Byte) {
         ParticleGeometry.anInt4411 = 0
-        AbstractCameraTransform.anInt1597 = 0
+        AbstractCameraTransformStatics.anInt1597 = 0
         anInt1522++
         NullOggStream.anInt9041++
         NpcSummaryDefinition.method1165(1)

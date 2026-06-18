@@ -1,5 +1,4 @@
 import GameAppletFrame.Companion.method85
-import AbstractCameraTransform.Companion.method901
 import AnimatedModelRenderer.Companion.method988
 import InputSettingsState.method1063
 import GlCubeMapTexture.Companion.method243
@@ -301,7 +300,7 @@ object ClientLoadStateMachine {
             VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
             method3568(FacingDirectionNode.aRenderer6654, i xor 0x6ff7.inv())
             ModelHeaderCache.method1933(CameraRotationStub.aJs5Archive_322, FacingDirectionNode.aRenderer6654, true)
-            method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
+            AbstractCameraTransformStatics.method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
         }
         return method3063(false)
     }

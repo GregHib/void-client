@@ -207,7 +207,7 @@ class VarpStore : VarResolver {
 
         fun method1318(i: Int) {
             if (i != -65536) method1310(false)
-            for (i_38_ in 0..<AbstractCameraTransform.anInt1597) {
+            for (i_38_ in 0..<AbstractCameraTransformStatics.anInt1597) {
                 val i_39_ = MinimapRectClipper.anIntArray224!![i_38_]
                 val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(i_39_.toLong(), -6008) as NpcReference).aNpc_6859)!!
                 var i_40_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)

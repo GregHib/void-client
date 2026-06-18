@@ -1,4 +1,3 @@
-import AbstractCameraTransform.Companion.method901
 import WorldMapLabel.Companion.method3568
 import RingBufferInputStream.Companion.method3616
 
@@ -143,7 +142,7 @@ class GlTexture2DRegion : GlTexture2D {
             method3568(FacingDirectionNode.aRenderer6654, 4)
             ModelHeaderCache.method1933(CameraRotationStub.aJs5Archive_322, FacingDirectionNode.aRenderer6654, true)
             LocalizedText.method2061(-128)
-            method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
+            AbstractCameraTransformStatics.method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
             TextureCache.method3466(i xor 0x4f.inv())
             AbstractProceduralTextureNode.method3038(-1)
             if (WorldMapRenderer.anInt4674 == 3) ByteBuffer.method3379(2, 4)

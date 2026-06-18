@@ -3,8 +3,6 @@ import DelegatingRenderCanvas.Companion.method123
 import ParticleEmitterNode.Companion.method218
 import MinimapRenderer.Companion.method886
 import MinimapRenderer.Companion.method887
-import AbstractCameraTransform.Companion.method906
-import AbstractCameraTransform.Companion.method909
 import MatrixCameraTransform.Companion.method911
 import MatrixCameraTransform.Companion.method913
 import FloatCameraTransform.Companion.method925
@@ -729,7 +727,7 @@ class Client : GameAppletFrame() {
         method98(i + 32609)
         BufferPositionTracker.method1860((-89).toByte())
         method1641(85.toByte())
-        method906(-31777)
+        AbstractCameraTransformStatics.method906(-31777)
         method3680(-24016)
         method3430(false)
         method2748(-86)
@@ -1476,7 +1474,7 @@ class Client : GameAppletFrame() {
         if (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0) {
             if (WeaveTextureNode.anInt9282 == 2) method241(127.toByte())
             else CameraSplineNode.method2954((-127).toByte())
-            if (GlslMaterialPass.anInt6246 shr 9 < 14 || (GlslMaterialPass.anInt6246 shr 9 >= -14 + GlCubemapLightPass.anInt7319) || (CompositeRgbNoiseTexture.anInt8685 shr 9 < 14) || (RangeThresholdTextureNode.anInt9109 + -14 <= CompositeRgbNoiseTexture.anInt8685 shr 9)) AbstractCameraTransform.method893((-49).toByte())
+            if (GlslMaterialPass.anInt6246 shr 9 < 14 || (GlslMaterialPass.anInt6246 shr 9 >= -14 + GlCubemapLightPass.anInt7319) || (CompositeRgbNoiseTexture.anInt8685 shr 9 < 14) || (RangeThresholdTextureNode.anInt9109 + -14 <= CompositeRgbNoiseTexture.anInt8685 shr 9)) AbstractCameraTransformStatics.method893((-49).toByte())
         }
         if (i.toInt() != 112) anInt5171 = 22
         while (true) {
@@ -1518,7 +1516,7 @@ class Client : GameAppletFrame() {
         if (RegionSceneLoader.aWidgetComponent_3701 != null) method2708(-30206)
         if (GlGroundShaderPass.anInt7396 % 1500 == 0) method3088(9)
         if (WorldMapRenderer.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) method1987(-124)
-        method909(3553)
+        AbstractCameraTransformStatics.method909(3553)
         if (ScanlineRasterFiller.aBoolean2469 && (SkeletalAnimFrameLoader.aLong482 < method599(-107) + -60000L)) method2405(41)
         var class318_sub9_sub1 = (InterfaceComponentGroup.aDoublyLinkedNodeList_9642!!.method1872(8) as NamedTimedNode?)
         while (class318_sub9_sub1 != null) {

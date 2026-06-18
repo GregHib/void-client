@@ -668,7 +668,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             if (player != null) {
                                 LinkedListNodeStatics.anInt4292 = 0
                                 JagGlToolkitFactory.anInt1534 = i_72_
-                                AbstractCameraTransform.anInt1596++
+                                AbstractCameraTransformStatics.anInt1596++
                                 FogOptionState.anInt6048 = 2
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 val class348_sub47 = method2148((CubemapTextureGlSource.aFontMetaRef_8706), (TheoraVideoStream.aIsaacCipher_9029), -84)

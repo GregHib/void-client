@@ -644,7 +644,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             BufferedMessageQueue.anInt3589 = 0
             ItemDefinition.anInt2829 = 0
             ScrollbarComponent.anInt8345 = 0
-            AbstractCameraTransform.anInt1594 = 0
+            AbstractCameraTransformStatics.anInt1594 = 0
             LoadingScreenImageNode.anInt9500 = 0
             ByteBuffer.anInt7170 = 0
             ItemDefinition.anInt2832 = 0
@@ -871,7 +871,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7592 = 0
             KaraokeSubtitleStream.anInt9063 = 0
             Hashtable.anInt4382 = 0
-            AbstractCameraTransform.anInt1595 = 0
+            AbstractCameraTransformStatics.anInt1595 = 0
             NativeRenderer.anInt8076 = 0
             ModelHeaderCache.anInt3281 = 0
             ChatCommandProcessor.anInt1163 = 0
@@ -1585,7 +1585,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TerrainShadowBuilderGl3.anInt7009 = 0
             NativeRenderer.anInt8010 = 0
             GlRenderDevice.anInt9840 = 0
-            AbstractCameraTransform.anInt1598 = 0
+            AbstractCameraTransformStatics.anInt1598 = 0
             OpenGlRenderer.anInt7709 = 0
             CacheEntryReference.anInt9548 = 0
             ModelGroundDecor.anInt10030 = 0
@@ -2072,7 +2072,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ProjectionCameraTransform.anInt5749 = 0
             BlankTextureNode.anInt9256 = 0
             NativeRenderer.anInt7944 = 0
-            AbstractCameraTransform.anInt1596 = 0
+            AbstractCameraTransformStatics.anInt1596 = 0
             Bzip2DecoderState.anInt551 = 0
             LocDefinitionCache.anInt3445 = 0
             ChatCommandProcessor.anInt1171 = 0
@@ -3136,7 +3136,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             LongKeyNode.anInt6760 = 0
             GlRenderDevice.anInt9830 = 0
             NodeDeque.anInt3327 = 0
-            AbstractCameraTransform.anInt1599 = 0
+            AbstractCameraTransformStatics.anInt1599 = 0
             RangedGraphicsOptionState.anInt5946 = 0
             MapSceneCache.anInt1457 = 0
             FloatCameraTransform.anInt5703 = 0

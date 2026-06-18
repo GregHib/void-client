@@ -447,7 +447,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             if (bool_37_ && f_38_ < i.toFloat() && f_39_ > i.toFloat() && f_40_ < i_33_.toFloat() && f_41_ > i_33_.toFloat()) {
                 if (bool) return true
                 if (anInt5475 > WallSceneEntity.anIntArray9949!!.size) {
-                    AbstractCameraTransform.anIntArray1593 = IntArray(anInt5475)
+                    AbstractCameraTransformStatics.anIntArray1593 = IntArray(anInt5475)
                     WallSceneEntity.anIntArray9949 = IntArray(anInt5475)
                 }
                 for (i_65_ in 0..<anInt5433) {
@@ -467,7 +467,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             val i_77_ = -1 + aShortArray5439!![i_76_]
                             if (i_77_ == -1) break
                             WallSceneEntity.anIntArray9949!![i_77_] = i_72_
-                            AbstractCameraTransform.anIntArray1593!![i_77_] = i_73_
+                            AbstractCameraTransformStatics.anIntArray1593!![i_77_] = i_73_
                         }
                     } else {
                         val i_78_ = anIntArray5455!![i_65_]
@@ -487,12 +487,12 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             i,
                             (WallSceneEntity.anIntArray9949!![aShortArray5512!![i_82_].toInt()]),
                             (WallSceneEntity.anIntArray9949!![aShortArray5495!![i_82_].toInt()]),
-                            (AbstractCameraTransform.anIntArray1593!![aShortArray5512!![i_82_].toInt()]),
-                            (AbstractCameraTransform.anIntArray1593!![aShortArray5508!![i_82_].toInt()]),
+                            (AbstractCameraTransformStatics.anIntArray1593!![aShortArray5512!![i_82_].toInt()]),
+                            (AbstractCameraTransformStatics.anIntArray1593!![aShortArray5508!![i_82_].toInt()]),
                             i_33_,
                             0,
                             (WallSceneEntity.anIntArray9949!![aShortArray5508!![i_82_].toInt()]),
-                            (AbstractCameraTransform.anIntArray1593!![aShortArray5495!![i_82_].toInt()])
+                            (AbstractCameraTransformStatics.anIntArray1593!![aShortArray5495!![i_82_].toInt()])
                         )
                     ) return true
                     i_82_++
@@ -803,7 +803,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
     private fun method665(i: Int, var_r_Sub1: NativeRenderNode) {
         try {
             if (anInt5475 > WallSceneEntity.anIntArray9949!!.size) {
-                AbstractCameraTransform.anIntArray1593 = IntArray(anInt5475)
+                AbstractCameraTransformStatics.anIntArray1593 = IntArray(anInt5475)
                 WallSceneEntity.anIntArray9949 = IntArray(anInt5475)
             }
             anInt5453++
@@ -818,7 +818,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         val i_129_ = aShortArray5439!![i_128_] - 1
                         if (i_129_ == -1) break
                         WallSceneEntity.anIntArray9949!![i_129_] = i_124_
-                        AbstractCameraTransform.anIntArray1593!![i_129_] = i_125_
+                        AbstractCameraTransformStatics.anIntArray1593!![i_129_] = i_125_
                     }
                     i_123_++
                 }
@@ -831,9 +831,9 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         val i_134_ = WallSceneEntity.anIntArray9949!![i_131_.toInt()]
                         val i_135_ = WallSceneEntity.anIntArray9949!![i_132_.toInt()]
                         val i_136_ = WallSceneEntity.anIntArray9949!![i_133_.toInt()]
-                        val i_137_ = AbstractCameraTransform.anIntArray1593!![i_131_.toInt()]
-                        val i_138_ = AbstractCameraTransform.anIntArray1593!![i_132_.toInt()]
-                        val i_139_ = AbstractCameraTransform.anIntArray1593!![i_133_.toInt()]
+                        val i_137_ = AbstractCameraTransformStatics.anIntArray1593!![i_131_.toInt()]
+                        val i_138_ = AbstractCameraTransformStatics.anIntArray1593!![i_132_.toInt()]
+                        val i_139_ = AbstractCameraTransformStatics.anIntArray1593!![i_133_.toInt()]
                         if ((-((i_136_ - i_135_) * (-i_137_ + i_138_)) + (i_138_ - i_139_) * (-i_135_ + i_134_)) > 0) var_r_Sub1.method3287(i_137_, 50, i_134_, i_135_, i_138_, i_139_, i_136_)
                     }
                     i_130_++

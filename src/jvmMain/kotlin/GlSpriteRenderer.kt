@@ -1,4 +1,3 @@
-import AbstractCameraTransform.Companion.method904
 import PerlinTextureProvider.Companion.method1401
 import InvertTextureNode.Companion.method3132
 import jaggl.OpenGL.Companion.glBegin
@@ -501,7 +500,7 @@ class GlSpriteRenderer : AbstractModelRenderer {
         anInt8447 = 0
         anInt8449 = 0
         aHa_Sub2_8430 = var_ha_Sub2
-        aClass258_Sub3_Sub1_8434 = method904(81, var_ha_Sub2, if (bool) 6408 else 6407, i, i_105_)
+        aClass258_Sub3_Sub1_8434 = AbstractCameraTransformStatics.method904(81, var_ha_Sub2, if (bool) 6408 else 6407, i, i_105_)
     }
 
     internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_106_: Int, i_107_: Int, i_108_: Int) {
