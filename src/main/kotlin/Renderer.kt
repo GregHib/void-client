@@ -8,7 +8,7 @@ import java.util.*
 abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: RenderConfig?) {
     @JvmField
     var anInt4567: Int
-    abstract fun method3624(i: Int, i_0_: Int): Interface13?
+    abstract fun method3624(i: Int, i_0_: Int): Marker?
 
     abstract fun b(i: Int, i_1_: Int, i_2_: Int, i_3_: Int, d: Double)
 
@@ -45,7 +45,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun ya()
 
-    abstract fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4?
+    abstract fun method3634(interface3: Interface3?, marker: Marker?): Interface4?
 
     fun method3635(i: Byte) {
         val i_15_ = -90 % ((i - 8) / 33)

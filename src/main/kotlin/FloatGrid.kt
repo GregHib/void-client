@@ -4,7 +4,7 @@ import LoadProgressCounters.Companion.method1373
 /* Class216 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class FloatGrid internal constructor(var anInt4974: Int, var anInt4978: Int) : Interface13 {
+class FloatGrid internal constructor(var anInt4974: Int, var anInt4978: Int) : Marker {
     var aFloatArray4980: FloatArray?
 
     init {

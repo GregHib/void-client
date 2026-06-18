@@ -1044,8 +1044,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return SoftwareFontPalette(this, fontDefinition, spriteImages, `is`, is_283_)
     }
 
-    override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4 {
-        return SpriteRenderable(this, interface3 as AbstractModelRenderer?, interface13 as FloatGrid?)
+    override fun method3634(interface3: Interface3?, marker: Marker?): Interface4 {
+        return SpriteRenderable(this, interface3 as AbstractModelRenderer?, marker as FloatGrid?)
     }
 
     public override fun C(bool: Boolean) {
@@ -1371,7 +1371,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return SoftwareModel(this, modelDefinition!!, i, i_367_, i_368_, i_366_)
     }
 
-    override fun method3624(i: Int, i_369_: Int): Interface13 {
+    override fun method3624(i: Int, i_369_: Int): Marker {
         return FloatGrid(i, i_369_)
     }
 

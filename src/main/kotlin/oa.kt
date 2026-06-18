@@ -469,8 +469,8 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     external override fun ZA(i: Int, f: Float, f_186_: Float, f_187_: Float, f_188_: Float, f_189_: Float)
 
-    override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4 {
-        return wa(this, (interface3 as j?)!!, (interface13 as xa?)!!)
+    override fun method3634(interface3: Interface3?, marker: Marker?): Interface4 {
+        return wa(this, (interface3 as j?)!!, (marker as xa?)!!)
     }
 
     override fun method3687(interface4: Interface4?) {
@@ -496,7 +496,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     external override fun C(bool: Boolean)
 
-    override fun method3624(i: Int, i_206_: Int): Interface13 {
+    override fun method3624(i: Int, i_206_: Int): Marker {
         return xa(i, i_206_)
     }
 

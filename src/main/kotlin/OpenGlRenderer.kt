@@ -1891,7 +1891,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return false
     }
 
-    override fun method3624(i: Int, i_215_: Int): Interface13? {
+    override fun method3624(i: Int, i_215_: Int): Marker? {
         anInt7679++
         return null
     }
@@ -2476,12 +2476,12 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return 4
     }
 
-    override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4? {
+    override fun method3634(interface3: Interface3?, marker: Marker?): Interface4? {
         try {
             anInt7596++
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.NB(" + (if (interface3 != null) "{...}" else "null") + ',' + (if (interface13 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.NB(" + (if (interface3 != null) "{...}" else "null") + ',' + (if (marker != null) "{...}" else "null") + ')'))
         }
     }
 

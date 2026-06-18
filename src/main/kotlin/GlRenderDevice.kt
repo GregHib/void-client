@@ -281,7 +281,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         }
     }
 
-    override fun method3624(i: Int, i_5_: Int): Interface13? {
+    override fun method3624(i: Int, i_5_: Int): Marker? {
         anInt9893++
         return null
     }
@@ -462,12 +462,12 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         if (i > -30) ya()
     }
 
-    override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4? {
+    override fun method3634(interface3: Interface3?, marker: Marker?): Interface4? {
         try {
             anInt9897++
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.NB(" + (if (interface3 != null) "{...}" else "null") + ',' + (if (interface13 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.NB(" + (if (interface3 != null) "{...}" else "null") + ',' + (if (marker != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -186,7 +186,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         aBoolean9801 = false
     }
 
-    override fun method3624(i: Int, i_17_: Int): Interface13? {
+    override fun method3624(i: Int, i_17_: Int): Marker? {
         return null
     }
 
@@ -248,7 +248,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         if (i_27_ < 46) method3931(true, null, null)
     }
 
-    override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4? {
+    override fun method3634(interface3: Interface3?, marker: Marker?): Interface4? {
         return null
     }
 
