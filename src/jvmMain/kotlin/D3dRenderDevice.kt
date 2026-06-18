@@ -672,9 +672,9 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         super.method3882(63.toByte())
     }
 
-    override fun c(): FriendChatMember {
+    override fun c(): RendererType {
         val d3dadapter_identifier = anIDirect3D9793!!.a(anInt9799, 0)
-        return FriendChatMember(d3dadapter_identifier.VendorID, "Direct3D", 9, d3dadapter_identifier.Description, d3dadapter_identifier.DriverVersion)
+        return RendererType(d3dadapter_identifier.VendorID, "Direct3D", 9, d3dadapter_identifier.Description, d3dadapter_identifier.DriverVersion)
     }
 
     override fun method3935(i: Int) {

@@ -56,7 +56,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3636(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Int, var_sprite: Sprite?, i_21_: Int, i_22_: Int)
 
-    abstract fun c(): FriendChatMember //c
+    abstract fun c(): RendererType //c
 
     abstract fun method3638(abstractCameraTransform: AbstractCameraTransform?)
 

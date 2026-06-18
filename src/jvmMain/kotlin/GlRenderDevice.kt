@@ -483,13 +483,13 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         }
     }
 
-    override fun c(): FriendChatMember {
+    override fun c(): RendererType {
         anInt9843++
         var i = -1
         if (aString9917.indexOf("nvidia") != -1) i = 4318
         else if (aString9917.indexOf("intel") != -1) i = 32902
         else if (aString9917.indexOf("ati") != -1) i = 4098
-        return FriendChatMember(i, "OpenGL", anInt9924, aString9916, 0L)
+        return RendererType(i, "OpenGL", anInt9924, aString9916, 0L)
     }
 
     override fun method3706(circleRasterizer: CircleRasterizer?, circleRasterizer_24_: CircleRasterizer?, f: Float, circleRasterizer_25_: CircleRasterizer?): CircleRasterizer? {

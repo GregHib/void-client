@@ -219,9 +219,9 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
             if (bool != true) aWidgetComponent_10336 = null
             class318_sub6.aClass318_Sub1_Sub3_Sub3_6431 = null
             anInt10361++
-            if (FriendChatMember.anInt4474 < 20) {
+            if (RendererType.anInt4474 < 20) {
                 GameClock.aDoublyLinkedNodeList_1114!!.method1869(-89, class318_sub6)
-                FriendChatMember.anInt4474++
+                RendererType.anInt4474++
             }
         }
 

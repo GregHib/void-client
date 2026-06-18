@@ -378,7 +378,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                                 method705(class348_sub36)
                             }
                             while (true) {
-                                val class348_sub36 = (FriendChatMember.aNodeDeque_4473!!.method1997(8) as? WidgetActionEntry?)
+                                val class348_sub36 = (RendererType.aNodeDeque_4473!!.method1997(8) as? WidgetActionEntry?)
                                 if (class348_sub36 == null) break
                                 val class46 = (class348_sub36.aWidgetComponent_6989)!!
                                 if (class46.anInt704 >= 0) {

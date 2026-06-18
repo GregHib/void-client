@@ -1083,7 +1083,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (FriendChatMember.aIntRange_4477 == ModelVertexColorBuffer.aIntRange_6584) {
+            if (RendererType.aIntRange_4477 == ModelVertexColorBuffer.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_134_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_135_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-109)

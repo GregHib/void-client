@@ -162,7 +162,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 GradientMapTextureNode.aIntRange_9324,
                 RegionSceneShifter.aIntRange_7052,
                 ParticleProcessor.aIntRange_4269,
-                FriendChatMember.aIntRange_4477,
+                RendererType.aIntRange_4477,
                 SimpleBinaryOptionState.aIntRange_6075,
                 ImageFrameCache.aIntRange_4027,
                 BrightnessTextureNode.aIntRange_9216,
