@@ -148,7 +148,7 @@ class RegionSceneShifter : LinkedListNode() {
                                     npc.method2448(null, -2)
                                     bool_24_ = true
                                     class348_sub22.method2715(113.toByte())
-                                } else Class74.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = (npc.anInt10290)
+                                } else RgbColorPalette.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = (npc.anInt10290)
                             }
                         }
                         i_27_++

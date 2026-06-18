@@ -25,7 +25,7 @@ class GlShaderObjectHandle internal constructor(glRenderDevice: GlRenderDevice?,
         @JvmField
         var anInt514: Int = 0
         @JvmField
-        var aClass74_515: Class74? = Class74(7, 7)
+        var aRgbColorPalette_515: RgbColorPalette? = RgbColorPalette(7, 7)
         @JvmField
         var anInt516: Int = 0
         @JvmField
@@ -53,7 +53,7 @@ class GlShaderObjectHandle internal constructor(glRenderDevice: GlRenderDevice?,
         @JvmStatic
         fun method367(i: Int) {
             aJs5Archive_518 = null
-            aClass74_515 = null
+            aRgbColorPalette_515 = null
             aSystemFontGlyphs_521 = null
             if (i == -15833) aScriptCompilerThread_520 = null
         }

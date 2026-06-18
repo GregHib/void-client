@@ -17,13 +17,13 @@ object FileIoUtil {
     var anIntArray4096: IntArray? = IntArray(32)
     @JvmField
     var anIntArray4097: IntArray? = IntArray(2)
-    var aClass74_4098: Class74? = Class74(4, 7)
+    var aRgbColorPalette_4098: RgbColorPalette? = RgbColorPalette(4, 7)
 
     @JvmStatic
     fun method2604(i: Byte) {
         aBoundsConstraintEntry_4091 = null
         if (i >= -49) method2606(31, -15L)
-        aClass74_4098 = null
+        aRgbColorPalette_4098 = null
         aFontMetaRef_4094 = null
         anIntArray4096 = null
         anIntArray4097 = null

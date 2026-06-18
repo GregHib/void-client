@@ -128,7 +128,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 CharCountUtil.aIntRange_229,
                 MinimapStateReset.aIntRange_1871,
                 SceneTileBounds.aIntRange_1120,
-                Class74.aIntRange_1234,
+                RgbColorPalette.aIntRange_1234,
                 HuffmanCodec.aIntRange_3773,
                 WalkingTypeUtil.aIntRange_3307,
                 SpotAnimVector.aIntRange_2305,

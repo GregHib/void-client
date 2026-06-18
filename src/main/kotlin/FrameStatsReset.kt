@@ -2391,7 +2391,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Buffer.anInt7152 = 0
             TheoraVideoStream.anInt9017 = 0
             LongHashTable.anInt455 = 0
-            Class74.anInt1235 = 0
+            RgbColorPalette.anInt1235 = 0
             OpenGlRenderer.anInt7530 = 0
             ItemDefinition.anInt2813 = 0
             ModelHeaderCache.anInt3270 = 0

@@ -50,7 +50,7 @@ class SplashImageLoadable internal constructor(js5Archive: Js5Archive?, configVa
     }
 
     companion object {
-        var aClass74_4689: Class74? = Class74(2, 4)
+        var aRgbColorPalette_4689: RgbColorPalette? = RgbColorPalette(2, 4)
         var anInt4690: Int = 0
         var anInt4691: Int = 0
         @JvmField
@@ -68,8 +68,8 @@ class SplashImageLoadable internal constructor(js5Archive: Js5Archive?, configVa
 
         @JvmStatic
         fun method2023(i: Byte) {
-            if (i > -13) aClass74_4689 = null
-            aClass74_4689 = null
+            if (i > -13) aRgbColorPalette_4689 = null
+            aRgbColorPalette_4689 = null
             anIntArray4692 = null
             aBooleanArrayArray4693 = null
         }

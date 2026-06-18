@@ -146,7 +146,7 @@ class SynthVoiceGroup internal constructor(private val aClass348_Sub16_Sub3_8852
         @JvmField
         var anInt8851: Int = 0
         @JvmField
-        var aClass74_8853: Class74? = Class74(11, 8)
+        var aRgbColorPalette_8853: RgbColorPalette? = RgbColorPalette(11, 8)
         @JvmField
         var anInt8854: Int = 0
         @JvmField
@@ -174,7 +174,7 @@ class SynthVoiceGroup internal constructor(private val aClass348_Sub16_Sub3_8852
         fun method2823(i: Int) {
             if (i != 0) method2823(33)
             aFontMetaRef_8857 = null
-            aClass74_8853 = null
+            aRgbColorPalette_8853 = null
         }
 
         @JvmStatic

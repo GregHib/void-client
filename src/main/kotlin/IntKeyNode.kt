@@ -13,7 +13,7 @@ class IntKeyNode : LinkedListNode {
 
     companion object {
         var anInt6975: Int = 0
-        var aClass74_6977: Class74? = Class74(8, 3)
+        var aRgbColorPalette_6977: RgbColorPalette? = RgbColorPalette(8, 3)
         var aNodeDeque_6978: NodeDeque?
         var anInt6979: Int = 0
         var aJs5Archive_6980: Js5Archive? = null
@@ -32,7 +32,7 @@ class IntKeyNode : LinkedListNode {
         @JvmStatic
         fun method3028(i: Int) {
             if (i != -11677) Companion.method3027((-80).toByte())
-            aClass74_6977 = null
+            aRgbColorPalette_6977 = null
             aJs5Archive_6980 = null
             aNodeDeque_6978 = null
         }

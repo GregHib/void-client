@@ -293,12 +293,12 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                 i_4_++
             }
             anInt4890++
-            if (Class74.aBoolean1236 && !method1296(true)) {
+            if (RgbColorPalette.aBoolean1236 && !method1296(true)) {
                 if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1) {
                     if (UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 != null) method3086(2, UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), CachedRgbNoiseTexture.aJs5Archive_8667, false, 0, SlotBinding.anInt3428)
                     else method2732(0, SlotBinding.anInt3428, false, 124, CachedRgbNoiseTexture.aJs5Archive_8667, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
                 }
-                Class74.aBoolean1236 = false
+                RgbColorPalette.aBoolean1236 = false
                 UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 = null
             } else if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1 && !method1296(true)) {
                 SceneLinkedListNode.anInt3973++

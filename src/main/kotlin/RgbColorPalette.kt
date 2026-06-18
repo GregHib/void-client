@@ -1,7 +1,7 @@
 /* Class74 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class74 internal constructor(i: Int, i_0_: Int) {
+class RgbColorPalette internal constructor(i: Int, i_0_: Int) {
     override fun toString(): String {
         anInt1235++
         throw IllegalStateException()

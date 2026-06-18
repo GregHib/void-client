@@ -27,7 +27,7 @@ class StaticNoiseTexture : GrayscaleNoiseTexture(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0
         @JvmField
         var anInt8661: Int = 0
         @JvmField
-        var aClass74_8662: Class74? = Class74(6, 5)
+        var aRgbColorPalette_8662: RgbColorPalette? = RgbColorPalette(6, 5)
         var anIntArray8663: IntArray? = IntArray(120)
         @JvmField
         var aBoundsConstraintEntry_8664: BoundsConstraintEntry?
@@ -38,7 +38,7 @@ class StaticNoiseTexture : GrayscaleNoiseTexture(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0
 
         @JvmStatic
         fun method561(i: Int) {
-            aClass74_8662 = null
+            aRgbColorPalette_8662 = null
             if (i != 120) method561(-85)
             anIntArray8666 = null
             anIntArray8663 = null

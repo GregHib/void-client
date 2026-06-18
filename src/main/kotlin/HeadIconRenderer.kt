@@ -66,8 +66,8 @@ class HeadIconRenderer {
             var i = i
             anInt2059++
             i = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) * i shr 8
-            if (i_14_ == i_13_ && !Class74.aBoolean1236) method960(1)
-            else if (i_13_ != -1 && (i_13_ != SlotBinding.anInt3428 || !ParticleSystemState.method1296(true)) && i != 0 && !Class74.aBoolean1236) {
+            if (i_14_ == i_13_ && !RgbColorPalette.aBoolean1236) method960(1)
+            else if (i_13_ != -1 && (i_13_ != SlotBinding.anInt3428 || !ParticleSystemState.method1296(true)) && i != 0 && !RgbColorPalette.aBoolean1236) {
                 method368(i, 18002, false, i_13_, CachedRgbNoiseTexture.aJs5Archive_8667, 0, i_15_)
                 method3093(93)
             }

@@ -230,10 +230,10 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         var anInt3284: Int = 0
         @JvmField
         var aServerConnectionInfo_3285: ServerConnectionInfo? = null
-        fun method1929(i: Byte): Array<Class74?> {
+        fun method1929(i: Byte): Array<RgbColorPalette?> {
             if (i.toInt() != -19) method1933(null, null, false)
             anInt3280++
-            return (arrayOf<Class74?>(HardCacheEntryReference.aClass74_10437, NamedIdEntry.aClass74_6891, SplashImageLoadable.aClass74_4689, BufferedFileReader.aClass74_4537, FileIoUtil.aClass74_4098, RectangleBounds.aClass74_2157, StaticNoiseTexture.aClass74_8662, GlShaderObjectHandle.aClass74_515, IntKeyNode.aClass74_6977, ArbFogMaterialPass.aClass74_6201, Class91.aClass74_1519, SynthVoiceGroup.aClass74_8853, ClampTextureNode.aClass74_9475, TextureGenerator.aClass74_2491))
+            return (arrayOf<RgbColorPalette?>(HardCacheEntryReference.aRgbColorPalette_10437, NamedIdEntry.aRgbColorPalette_6891, SplashImageLoadable.aRgbColorPalette_4689, BufferedFileReader.aRgbColorPalette_4537, FileIoUtil.aRgbColorPalette_4098, RectangleBounds.aRgbColorPalette_2157, StaticNoiseTexture.aRgbColorPalette_8662, GlShaderObjectHandle.aRgbColorPalette_515, IntKeyNode.aRgbColorPalette_6977, ArbFogMaterialPass.aRgbColorPalette_6201, Class91.aRgbColorPalette_1519, SynthVoiceGroup.aRgbColorPalette_8853, ClampTextureNode.aRgbColorPalette_9475, TextureGenerator.aRgbColorPalette_2491))
         }
 
         @JvmStatic

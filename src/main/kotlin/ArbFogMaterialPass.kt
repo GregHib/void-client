@@ -170,7 +170,7 @@ class ArbFogMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Mat
         @JvmField
         var aStringArray6200: Array<String?>? = null
         @JvmField
-        var aClass74_6201: Class74? = Class74(9, 19)
+        var aRgbColorPalette_6201: RgbColorPalette? = RgbColorPalette(9, 19)
         @JvmField
         var anInt6202: Int = 0
 
@@ -178,7 +178,7 @@ class ArbFogMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Mat
         fun method2142(i: Byte) {
             aStringArray6200 = null
             val i_1_ = 19 % ((i - -67) / 59)
-            aClass74_6201 = null
+            aRgbColorPalette_6201 = null
             anIntArray6189 = null
         }
     }

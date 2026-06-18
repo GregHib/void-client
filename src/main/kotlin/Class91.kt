@@ -7,7 +7,7 @@ import IdentKitRecolor.Companion.method204
 */
 object Class91 {
     @JvmField
-    var aClass74_1519: Class74?
+    var aRgbColorPalette_1519: RgbColorPalette?
     @JvmField
     var anInt1520: Int = 0
     var anIntArray1521: IntArray? = intArrayOf(7, 8, 9, 10, 11, 12, 13, 15)
@@ -49,10 +49,10 @@ object Class91 {
             NpcEntityUpdater.aHashtable_3654!!.method3477(3, TurbulenceTextureNode.aClass348_Sub22Array9319!! as Array<LinkedListNode?>)
         }
         if (RadialTextureNode.anInt9341 != CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("gnp1 pos:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + RadialTextureNode.anInt9341)
-        if (i <= 47) aClass74_1519 = null
+        if (i <= 47) aRgbColorPalette_1519 = null
         var i_4_ = 0
         while (ModelDefinitionLoader.anInt2057 > i_4_) {
-            if (NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_4_].toLong(), -6008) == null) throw RuntimeException("gnp2 pos:" + i_4_ + " size:" + ModelDefinitionLoader.anInt2057)
+            if (NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_4_].toLong(), -6008) == null) throw RuntimeException("gnp2 pos:" + i_4_ + " size:" + ModelDefinitionLoader.anInt2057)
             i_4_++
         }
         if (TerrainShadowBuilderGl2.anInt6930 - ModelDefinitionLoader.anInt2057 != 0) throw RuntimeException("gnp3 mis:" + (TerrainShadowBuilderGl2.anInt6930 - ModelDefinitionLoader.anInt2057))
@@ -65,11 +65,11 @@ object Class91 {
     fun method857(i: Int) {
         anIntArray1521 = null
         aClass82_1523 = null
-        aClass74_1519 = null
+        aRgbColorPalette_1519 = null
         if (i < 121) method856(((-72).toByte()).toByte())
     }
 
     init {
-        aClass74_1519 = Class74(10, 8)
+        aRgbColorPalette_1519 = RgbColorPalette(10, 8)
     }
 }

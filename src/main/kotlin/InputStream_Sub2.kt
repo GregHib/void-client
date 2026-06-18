@@ -29,10 +29,10 @@ class InputStream_Sub2 : InputStream() {
         }
 
         @JvmStatic
-        fun method128(class74: Class74?, i: Byte) {
+        fun method128(rgbColorPalette: RgbColorPalette?, i: Byte) {
             try {
                 anInt81++
-                if (class74 == NamedIdEntry.aClass74_6891) {
+                if (rgbColorPalette == NamedIdEntry.aRgbColorPalette_6891) {
                     val i_0_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-124).toByte())
                     val i_1_ = i_0_ shr 2
                     val i_2_ = 0x3 and i_0_
@@ -42,7 +42,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_6_ = BufferedMessageQueue.anInt3581 + (0x7 and (i_5_ shr 4))
                     val i_7_ = FileExistsCondition.anInt4786 - -(i_5_ and 0x7)
                     if (NpcEntityUpdater.method2112(126, WidgetRedrawTracker.anInt3931) || (i_6_ >= 0 && i_7_ >= 0 && Class367_Sub4.anInt7319 > i_6_ && (i_7_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_7_, -1, i_1_, i_3_, i_2_, i_4_, 121.toByte(), i_6_)
-                } else if (class74 == ClampTextureNode.aClass74_9475) {
+                } else if (rgbColorPalette == ClampTextureNode.aRgbColorPalette_9475) {
                     val i_8_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_9_ = BufferedMessageQueue.anInt3581 + ((0x7a and i_8_) shr 4)
                     val i_10_ = FileExistsCondition.anInt4786 - -(i_8_ and 0x7)
@@ -58,7 +58,7 @@ class InputStream_Sub2 : InputStream() {
                         val class318_sub1_sub3_sub4 = (MapElementDecor(i_11_, i_13_, Class367_Sub11.anInt7396, GradientLookupEffect.anInt9200, i_17_, i_15_, CollisionMapAccessor.method2064(i_15_, GradientLookupEffect.anInt9200, 11219, i_16_) + -i_12_, i_16_, i_9_, i_9_, i_10_, i_10_, i_14_))
                         OpenGlRenderNode.aNodeDeque_10492!!.method1999(ChatScriptListNode(class318_sub1_sub3_sub4), -20180)
                     }
-                } else if (class74 == Class91.aClass74_1519) {
+                } else if (rgbColorPalette == Class91.aRgbColorPalette_1519) {
                     val i_18_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_19_ = BufferedMessageQueue.anInt3581 - -(i_18_ shr 4 and 0x7)
                     val i_20_ = (0x7 and i_18_) + FileExistsCondition.anInt4786
@@ -83,11 +83,11 @@ class InputStream_Sub2 : InputStream() {
                             i_25_
                         )
                     }
-                } else if (class74 == IntKeyNode.aClass74_6977) {
+                } else if (rgbColorPalette == IntKeyNode.aRgbColorPalette_6977) {
                     val i_29_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     val i_30_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_29_).method478(i_30_, -31076)
-                } else if (SynthVoiceGroup.aClass74_8853 == class74) {
+                } else if (SynthVoiceGroup.aRgbColorPalette_8853 == rgbColorPalette) {
                     val i_31_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_32_ = BufferedMessageQueue.anInt3581 + ((i_31_ and 0x7b) shr 4)
                     val i_33_ = (i_31_ and 0x7) + FileExistsCondition.anInt4786
@@ -103,7 +103,7 @@ class InputStream_Sub2 : InputStream() {
                         val i_41_ = i_36_ + 1
                         if ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) >= i_32_ - i_41_ && (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) <= i_41_ + i_32_ && ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) >= -i_41_ + i_33_) && (i_33_ - -i_41_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]))) ByteArrayPool.method358(i_37_, (i_36_ + (i_33_ shl 8) + ((GradientLookupEffect.anInt9200 shl 24) + (i_32_ shl 16))), i_38_, i_39_, i_40_, i_34_, -29494)
                     }
-                } else if (SplashImageLoadable.aClass74_4689 == class74) {
+                } else if (SplashImageLoadable.aRgbColorPalette_4689 == rgbColorPalette) {
                     var i_42_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                     if (i_42_ == 65535) i_42_ = -1
                     val i_43_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(65.toByte())
@@ -114,7 +114,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_48_ = i_46_ and 0x3
                     val i_49_ = AnimationFrameTable.anIntArray487!![i_47_]
                     NativeRenderer.method3824(i_45_, i_42_, i_47_, i_44_, i_48_, 115, GradientLookupEffect.anInt9200, i_49_)
-                } else if (class74 == ArbFogMaterialPass.aClass74_6201) {
+                } else if (rgbColorPalette == ArbFogMaterialPass.aRgbColorPalette_6201) {
                     val i_50_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     var i_51_ = (i_50_ shr 4 and 0xf) + BufferedMessageQueue.anInt3581 * 2
                     var i_52_ = (i_50_ and 0xf) + FileExistsCondition.anInt4786 * 2
@@ -165,7 +165,7 @@ class InputStream_Sub2 : InputStream() {
                         class318_sub1_sub3_sub5.method2471((-103).toByte(), (-i_62_ + CollisionMapAccessor.method2064(i_56_, GradientLookupEffect.anInt9200, 11219, i_57_)), i_57_, i_63_ + Class367_Sub11.anInt7396, i_56_)
                         SpriteTextureNode.aNodeDeque_9240!!.method1999(ParticleEmitterListNode(class318_sub1_sub3_sub5), -20180)
                     }
-                } else if (class74 == HardCacheEntryReference.aClass74_10437) {
+                } else if (rgbColorPalette == HardCacheEntryReference.aRgbColorPalette_10437) {
                     val i_69_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-128)
                     val i_70_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(31.toByte())
                     val i_71_ = FileExistsCondition.anInt4786 + (i_70_ and 0x7)
@@ -185,7 +185,7 @@ class InputStream_Sub2 : InputStream() {
                         if (class348_sub37.aNodeDeque_6998.method2002(18.toByte())) class348_sub37.method2715(62.toByte())
                         if (i_73_ >= 0 && i_71_ >= 0 && Class367_Sub4.anInt7319 > i_73_ && RangeThresholdTextureNode.anInt9109 > i_71_) ProjectileSpawner.method1479(i_71_, (-125).toByte(), i_73_, GradientLookupEffect.anInt9200)
                     }
-                } else if (StaticNoiseTexture.aClass74_8662 == class74) {
+                } else if (StaticNoiseTexture.aRgbColorPalette_8662 == rgbColorPalette) {
                     val i_75_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                     val i_76_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                     val i_77_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
@@ -198,7 +198,7 @@ class InputStream_Sub2 : InputStream() {
                         RenderableEntry.method3459(IntPair(i_76_, i_75_), GradientLookupEffect.anInt9200, i_79_, i_81_, -2)
                         if (bool) ProjectileSpawner.method1479(i_78_, (-124).toByte(), i_80_, GradientLookupEffect.anInt9200)
                     }
-                } else if (class74 == BufferedFileReader.aClass74_4537) {
+                } else if (rgbColorPalette == BufferedFileReader.aRgbColorPalette_4537) {
                     val i_82_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(83.toByte())
                     val i_83_ = i_82_ shr 2
                     val i_84_ = 0x3 and i_82_
@@ -209,7 +209,7 @@ class InputStream_Sub2 : InputStream() {
                     if (NpcEntityUpdater.method2112(i.toInt() xor 0x73, WidgetRedrawTracker.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && Class367_Sub4.anInt7319 > i_87_ && (i_88_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
                 } else {
                     if (i.toInt() != 8) aIntRange_82 = null
-                    if (GlShaderObjectHandle.aClass74_515 == class74) {
+                    if (GlShaderObjectHandle.aRgbColorPalette_515 == rgbColorPalette) {
                         val i_89_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_90_ = FileExistsCondition.anInt4786 + (0x7 and i_89_)
                         val i_91_ = i_90_ + Class90.regionTileY
@@ -234,7 +234,7 @@ class InputStream_Sub2 : InputStream() {
                                 if (i_92_ >= 0 && i_90_ >= 0 && (i_92_ < Class367_Sub4.anInt7319) && (RangeThresholdTextureNode.anInt9109 > i_90_)) ProjectileSpawner.method1479(i_90_, (-125).toByte(), i_92_, (GradientLookupEffect.anInt9200))
                             }
                         }
-                    } else if (class74 == FileIoUtil.aClass74_4098) {
+                    } else if (rgbColorPalette == FileIoUtil.aRgbColorPalette_4098) {
                         val i_97_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                         val i_98_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_99_ = (0x7 and i_98_) + FileExistsCondition.anInt4786
@@ -250,7 +250,7 @@ class InputStream_Sub2 : InputStream() {
                                 if (bool) ProjectileSpawner.method1479(i_99_, (-120).toByte(), i_101_, (GradientLookupEffect.anInt9200))
                             }
                         }
-                    } else if (class74 == RectangleBounds.aClass74_2157) {
+                    } else if (rgbColorPalette == RectangleBounds.aRgbColorPalette_2157) {
                         val i_105_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                         val bool = (0x80 and i_105_) != 0
                         var i_106_ = BufferedMessageQueue.anInt3581 - -(i_105_ shr 3 and 0x7)
@@ -278,7 +278,7 @@ class InputStream_Sub2 : InputStream() {
                             class318_sub1_sub3_sub5.method2471((-103).toByte(), CollisionMapAccessor.method2064(i_108_, (GradientLookupEffect.anInt9200), 11219, i_109_) + -i_113_, i_109_, i_114_ + Class367_Sub11.anInt7396, i_108_)
                             SpriteTextureNode.aNodeDeque_9240!!.method1999(ParticleEmitterListNode(class318_sub1_sub3_sub5), -20180)
                         }
-                    } else if (TextureGenerator.aClass74_2491 == class74) {
+                    } else if (TextureGenerator.aRgbColorPalette_2491 == rgbColorPalette) {
                         CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_118_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                         val i_119_ = (i_118_ shr 4 and 0x7) + BufferedMessageQueue.anInt3581
@@ -289,12 +289,12 @@ class InputStream_Sub2 : InputStream() {
                         val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-126).toByte())
                         IdentKitRecolor.method205(i_121_, i_119_, i_123_, string, i_122_, -109, i_120_, GradientLookupEffect.anInt9200)
                     } else {
-                        LinkedListIterator.method1242("T3 - " + class74, null, 15004)
+                        LinkedListIterator.method1242("T3 - " + rgbColorPalette, null, 15004)
                         NormalMapTextureNode.method3141(false, 11.toByte())
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("sfa.A(" + (if (class74 != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("sfa.A(" + (if (rgbColorPalette != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

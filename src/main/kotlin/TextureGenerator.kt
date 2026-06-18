@@ -8,7 +8,7 @@ abstract class TextureGenerator {
         @JvmField
         var aJs5Archive_2490: Js5Archive? = null
         @JvmField
-        var aClass74_2491: Class74?
+        var aRgbColorPalette_2491: RgbColorPalette?
         @JvmField
         var aBoolean2492: Boolean = false
         @JvmField
@@ -25,7 +25,7 @@ abstract class TextureGenerator {
         @JvmStatic
         fun method1396(i: Int) {
             aJs5Archive_2490 = null
-            aClass74_2491 = null
+            aRgbColorPalette_2491 = null
             aStringArray2494 = null
             anIntArray2497 = null
             aString2496 = null
@@ -46,7 +46,7 @@ abstract class TextureGenerator {
                 }
             }
             for (i_2_ in i..<ModelDefinitionLoader.anInt2057) {
-                val l = Class74.anIntArray1233!![i_2_].toLong()
+                val l = RgbColorPalette.anIntArray1233!![i_2_].toLong()
                 val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(l, -6008) as? NpcReference?)
                 if (class348_sub22 != null) {
                     val npc = (class348_sub22.aNpc_6859)!!
@@ -59,7 +59,7 @@ abstract class TextureGenerator {
         }
 
         init {
-            aClass74_2491 = Class74(13, -1)
+            aRgbColorPalette_2491 = RgbColorPalette(13, -1)
             aStringArray2494 = arrayOfNulls<String>(100)
             aFontMetaRef_2495 = FontMetaRef(35, 5)
             aString2496 = ""

@@ -46,7 +46,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
         @JvmField
         var aClass76_10436: Class76? = Class76(true)
         @JvmField
-        var aClass74_10437: Class74? = Class74(0, 3)
+        var aRgbColorPalette_10437: RgbColorPalette? = RgbColorPalette(0, 3)
         @JvmField
         var anInt10438: Int = 0
 
@@ -153,7 +153,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == SceneEffectMarker.aIntRange_6424) {
-                method128(NamedIdEntry.aClass74_6891, 8.toByte())
+                method128(NamedIdEntry.aRgbColorPalette_6891, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -220,7 +220,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == VideoStreamDecoder.aIntRange_4126) {
-                method128(SynthVoiceGroup.aClass74_8853, 8.toByte())
+                method128(SynthVoiceGroup.aRgbColorPalette_8853, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -273,7 +273,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == InputStream_Sub2.aIntRange_82) {
-                method128(GlShaderObjectHandle.aClass74_515, 8.toByte())
+                method128(GlShaderObjectHandle.aRgbColorPalette_515, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -312,7 +312,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (WorldMapTextLabel.aIntRange_8590 == ModelVertexColorBuffer.aIntRange_6584) {
-                method128(BufferedFileReader.aClass74_4537, 8.toByte())
+                method128(BufferedFileReader.aRgbColorPalette_4537, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -540,7 +540,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == Class74.aIntRange_1234) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == RgbColorPalette.aIntRange_1234) {
                 ModelDataCache.anInt359 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3369(125.toByte())
                 RangeThresholdTextureNode.aBoolean9103 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 ModelVertexColorBuffer.aIntRange_6584 = null
@@ -686,7 +686,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (CompassSmoother.aIntRange_3371 == ModelVertexColorBuffer.aIntRange_6584) {
-                method128(StaticNoiseTexture.aClass74_8662, 8.toByte())
+                method128(StaticNoiseTexture.aRgbColorPalette_8662, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -740,7 +740,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (CharCountUtil.aIntRange_229 == ModelVertexColorBuffer.aIntRange_6584) {
-                method128(ArbFogMaterialPass.aClass74_6201, 8.toByte())
+                method128(ArbFogMaterialPass.aRgbColorPalette_6201, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -806,7 +806,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (WidgetRedrawTracker.aIntRange_3925 == ModelVertexColorBuffer.aIntRange_6584) {
-                method128(aClass74_10437, 8.toByte())
+                method128(aRgbColorPalette_10437, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1033,7 +1033,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (PlayerUpdateDecoder.aIntRange_1914 == ModelVertexColorBuffer.aIntRange_6584) {
-                method128(ClampTextureNode.aClass74_9475, 8.toByte())
+                method128(ClampTextureNode.aRgbColorPalette_9475, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1063,7 +1063,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == CacheEntryReference.Companion.aIntRange_9550) {
-                method128(FileIoUtil.aClass74_4098, 8.toByte())
+                method128(FileIoUtil.aRgbColorPalette_4098, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1099,7 +1099,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (RemoveRoofsOptionState.aIntRange_6058 == ModelVertexColorBuffer.aIntRange_6584) {
-                method128(TextureGenerator.aClass74_2491, 8.toByte())
+                method128(TextureGenerator.aRgbColorPalette_2491, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1340,7 +1340,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == GroundDecorRenderer.aIntRange_3641) {
-                method128(IntKeyNode.aClass74_6977, 8.toByte())
+                method128(IntKeyNode.aRgbColorPalette_6977, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1440,7 +1440,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == WaterDetailOptionState.aIntRange_5992) {
-                method128(SplashImageLoadable.aClass74_4689, 8.toByte())
+                method128(SplashImageLoadable.aRgbColorPalette_4689, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1584,7 +1584,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == NanoTimer.aIntRange_843) {
-                method128(Class91.aClass74_1519, 8.toByte())
+                method128(Class91.aRgbColorPalette_1519, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1647,7 +1647,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (WorldListEntry.aIntRange_315 == ModelVertexColorBuffer.aIntRange_6584) {
-                method128(RectangleBounds.aClass74_2157, 8.toByte())
+                method128(RectangleBounds.aRgbColorPalette_2157, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1797,7 +1797,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             if (i > 38) {
                 aLongArrayArrayArray10431 = null
                 aClass76_10436 = null
-                aClass74_10437 = null
+                aRgbColorPalette_10437 = null
             }
         }
     }

@@ -492,7 +492,7 @@ import TrigLookupTables.Companion.method725
 import PlayerSequenceSelector.method728
 import PlayerSequenceSelector.method729
 import HintArrowRenderer.Companion.method731
-import Class74.Companion.method744
+import RgbColorPalette.Companion.method744
 import Class75.Companion.method746
 import Class77.Companion.method782
 import Class78.Companion.method786
@@ -1662,7 +1662,7 @@ class Client : GameAppletFrame() {
             val l = (BufferPositionTracker.method1857((-45).toByte()) / 1000000L + -RenderbufferObject.aLong8573)
             RenderbufferObject.aLong8573 = BufferPositionTracker.method1857((-45).toByte()) / 1000000L
             val bool_118_ = method2163(!bool)
-            if (bool_118_ && Class74.aBoolean1236 && AbstractProceduralTextureNode.aSoundChannelMixer_7042 != null) AbstractProceduralTextureNode.aSoundChannelMixer_7042!!.method2087(-115)
+            if (bool_118_ && RgbColorPalette.aBoolean1236 && AbstractProceduralTextureNode.aSoundChannelMixer_7042 != null) AbstractProceduralTextureNode.aSoundChannelMixer_7042!!.method2087(-115)
             if (WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) {
                 if ((PcmStreamBuffer.aLong8866 != 0L) && method599(-98) > PcmStreamBuffer.aLong8866) method830(method3229(-128), LocTypeDefinition.anInt4005, 102.toByte(), false, RadialTextureNode.anInt9335)
                 else if (!FacingDirectionNode.aRenderer6654!!.method3655() && ProjectileSpawner.aBoolean2674) method3327(1406)
@@ -1881,7 +1881,7 @@ class Client : GameAppletFrame() {
             for (i_9_ in 0..<i_8_) {
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_9_ < i_7_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_9_]])
-                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_9_ - i_7_].toLong(), -6008) as NpcReference).aNpc_6859)
+                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_9_ - i_7_].toLong(), -6008) as NpcReference).aNpc_6859)
                 if (class318_sub1_sub3_sub3!!.plane.toInt() == i) {
                     class318_sub1_sub3_sub3.anInt10261 = 0
                     if ((class318_sub1_sub3_sub3.anInt10285) < 0) class318_sub1_sub3_sub3.aBoolean10309 = false
@@ -1941,7 +1941,7 @@ class Client : GameAppletFrame() {
         fun method106() {
             Js5Archive.anInt669 = 0
             for (i in 0..<ModelDefinitionLoader.anInt2057) {
-                val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i].toLong(), -6008) as NpcReference).aNpc_6859)
+                val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i].toLong(), -6008) as NpcReference).aNpc_6859)
                 if ((npc!!.aBoolean10309) && npc.method2425(-1) != -1) {
                     val i_20_ = ((npc.method2436(119.toByte()) - 1) * 256 + 252)
                     val i_21_ = (npc.x - i_20_) shr 9
@@ -2560,7 +2560,7 @@ class Client : GameAppletFrame() {
             for (i_93_ in 0..<i_92_) {
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_93_ < i) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_93_]])
-                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_93_ - i].toLong(), -6008) as NpcReference).aNpc_6859)
+                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_93_ - i].toLong(), -6008) as NpcReference).aNpc_6859)
                 if (class318_sub1_sub3_sub3!!.anInt10285 >= 0) {
                     val i_94_ = class318_sub1_sub3_sub3.method2436(74.toByte())
                     if ((i_94_ and 0x1) == 0) {
@@ -2604,7 +2604,7 @@ class Client : GameAppletFrame() {
                 }
             }
             for (i_115_ in 0..<ModelDefinitionLoader.anInt2057) {
-                val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_115_].toLong(), -6008) as NpcReference).aNpc_6859)
+                val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_115_].toLong(), -6008) as NpcReference).aNpc_6859)
                 if (!npc!!.method2445((-4).toByte()) || !(npc.aClass79_10505!!.method796(ProjectedGroundDecor.aVarpStore_10209!!, 18627))) npc.anInt10285 = -1
                 else {
                     npc.method2409((-118).toByte())
@@ -2650,7 +2650,7 @@ class Client : GameAppletFrame() {
             for (i_123_ in 0..<i_122_ + ModelDefinitionLoader.anInt2057) {
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_123_ < i_122_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_123_]])
-                else class318_sub1_sub3_sub3 = (NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i_123_ - i_122_].toLong(), -6008) as NpcReference).aNpc_6859
+                else class318_sub1_sub3_sub3 = (NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_123_ - i_122_].toLong(), -6008) as NpcReference).aNpc_6859
                 if (class318_sub1_sub3_sub3!!.plane.toInt() == i && (class318_sub1_sub3_sub3.anInt10285) >= 0) {
                     val i_124_ = class318_sub1_sub3_sub3.method2436(114.toByte())
                     if ((i_124_ and 0x1) == 0) {

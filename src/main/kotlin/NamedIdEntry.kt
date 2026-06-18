@@ -15,13 +15,13 @@ class NamedIdEntry internal constructor(@field:Volatile var aString6888: String?
         var aShortArray6889: ShortArray?
         @JvmField
         var anIntArray6890: IntArray? = IntArray(32)
-        var aClass74_6891: Class74?
+        var aRgbColorPalette_6891: RgbColorPalette?
 
         @JvmStatic
         fun method2998(i: Byte) {
             anIntArray6890 = null
             aClass348_Sub42_Sub14_6885 = null
-            aClass74_6891 = null
+            aRgbColorPalette_6891 = null
             aShortArray6889 = null
             if (i.toInt() != -35) Companion.method2999((-26).toByte(), -20)
         }
@@ -35,7 +35,7 @@ class NamedIdEntry internal constructor(@field:Volatile var aString6888: String?
 
         init {
             aShortArray6889 = ShortArray(256)
-            aClass74_6891 = Class74(1, 4)
+            aRgbColorPalette_6891 = RgbColorPalette(1, 4)
         }
     }
 }

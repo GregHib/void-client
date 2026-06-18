@@ -1524,10 +1524,10 @@ object ChatCommandProcessor {
                         if (i_150_ == 0 && SlotBinding.anInt3428 != -1) {
                             method2732(0, SlotBinding.anInt3428, false, 94, (CachedRgbNoiseTexture.aJs5Archive_8667), i_149_)
                             method3093(87)
-                            Class74.Companion.aBoolean1236 = false
+                            RgbColorPalette.Companion.aBoolean1236 = false
                         } else if (i_149_ == 0) {
                             SoftwareSpriteRaster.method960(1)
-                            Class74.Companion.aBoolean1236 = false
+                            RgbColorPalette.Companion.aBoolean1236 = false
                         } else SkeletalAnimFrameLoader.method345(i_149_, (-49).toByte())
                     }
                     IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260), i_149_)
@@ -1643,10 +1643,10 @@ object ChatCommandProcessor {
                         if (i_159_ == 0) {
                             method2732(0, SlotBinding.anInt3428, false, 127, (CachedRgbNoiseTexture.aJs5Archive_8667), i_158_)
                             method3093(118)
-                            Class74.Companion.aBoolean1236 = false
+                            RgbColorPalette.Companion.aBoolean1236 = false
                         } else if (i_158_ == 0) {
                             SoftwareSpriteRaster.method960(1)
-                            Class74.Companion.aBoolean1236 = false
+                            RgbColorPalette.Companion.aBoolean1236 = false
                         } else SkeletalAnimFrameLoader.method345(i_158_, (-52).toByte())
                     }
                     IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245), i_158_)

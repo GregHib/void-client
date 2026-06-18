@@ -82,7 +82,7 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
         @JvmField
         var anInt9473: Int = 0
         @JvmField
-        var aClass74_9475: Class74? = Class74(12, 7)
+        var aRgbColorPalette_9475: RgbColorPalette? = RgbColorPalette(12, 7)
         @JvmField
         var anInt9476: Int = 0
         var aConfigFlagUtil_9477: ConfigFlagUtil? = ConfigFlagUtil()
@@ -95,7 +95,7 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
 
         @JvmStatic
         fun method3149(i: Int) {
-            aClass74_9475 = null
+            aRgbColorPalette_9475 = null
             anIntArray9480 = null
             aTextureFormatInfo_9471 = null
             aConfigFlagUtil_9477 = null
@@ -109,7 +109,7 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
             var i = 0
             if (bool != true) method3150(false)
             while ( /**/ModelDefinitionLoader.anInt2057 > i) {
-                val i_14_ = Class74.anIntArray1233!![i]
+                val i_14_ = RgbColorPalette.anIntArray1233!![i]
                 val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_14_.toLong(), -6008) as NpcReference?)
                 if (class348_sub22 != null) {
                     val npc = (class348_sub22.aNpc_6859)!!

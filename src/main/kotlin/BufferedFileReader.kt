@@ -7,7 +7,7 @@ internal object BufferedFileReader {
     @JvmField
     var anInt4536: Int = 0
     @JvmField
-    var aClass74_4537: Class74? = Class74(3, 2)
+    var aRgbColorPalette_4537: RgbColorPalette? = RgbColorPalette(3, 2)
     @JvmField
     var aClass78_4538: Class78? = null
 
@@ -31,8 +31,8 @@ internal object BufferedFileReader {
 
     @JvmStatic
     fun method3611(bool: Boolean) {
-        if (bool != true) aClass74_4537 = null
-        aClass74_4537 = null
+        if (bool != true) aRgbColorPalette_4537 = null
+        aRgbColorPalette_4537 = null
         aClass78_4538 = null
     }
 }
