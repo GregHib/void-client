@@ -10,7 +10,7 @@ abstract class ModelBatchBase {
         @JvmField
         var anInt1896: Int = 0
         @JvmField
-        var aClass45_1897: Class45? = null
+        var aJs5Archive_1897: Js5Archive? = null
         @JvmField
         var anInt1898: Int = 0
         @JvmField
@@ -20,7 +20,7 @@ abstract class ModelBatchBase {
 
         @JvmStatic
         fun method1127(i: Int) {
-            aClass45_1897 = null
+            aJs5Archive_1897 = null
             aHashtable_1895 = null
             if (i == 5125) aClass60_1894 = null
         }

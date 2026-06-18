@@ -168,25 +168,25 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
         }
 
         @JvmStatic
-        fun method2159(i: Byte, class45: Class45) {
-            NpcReference.anInt6862 = class45.method417("hitmarks", 0)
+        fun method2159(i: Byte, js5Archive: Js5Archive) {
+            NpcReference.anInt6862 = js5Archive.method417("hitmarks", 0)
             anInt6258++
-            DualMaterialContainer.anInt1639 = class45.method417("hitbar_default", 0)
-            MouseInputTracker.anInt7429 = class45.method417("timerbar_default", 0)
-            Renderer.anInt4562 = class45.method417("headicons_pk", 0)
-            Class82.anInt1435 = class45.method417("headicons_prayer", 0)
-            OverlayColorTable.anInt1756 = class45.method417("hint_headicons", 0)
-            CutsceneSequenceData.anInt3739 = class45.method417("hint_mapmarkers", 0)
-            Class86.anInt1481 = class45.method417("mapflag", 0)
-            RangedGraphicsOptionState.anInt5948 = class45.method417("cross", 0)
-            CameraNodeList.anInt1742 = class45.method417("mapdots", 0)
-            NamedIdRecord.anInt4469 = class45.method417("scrollbar", 0)
-            ClampTextureNode.anInt9473 = class45.method417("name_icons", 0)
-            LocTypeDefLoader.anInt2510 = class45.method417("floorshadows", 0)
-            Class52.anInt4895 = class45.method417("compass", 0)
+            DualMaterialContainer.anInt1639 = js5Archive.method417("hitbar_default", 0)
+            MouseInputTracker.anInt7429 = js5Archive.method417("timerbar_default", 0)
+            Renderer.anInt4562 = js5Archive.method417("headicons_pk", 0)
+            Class82.anInt1435 = js5Archive.method417("headicons_prayer", 0)
+            OverlayColorTable.anInt1756 = js5Archive.method417("hint_headicons", 0)
+            CutsceneSequenceData.anInt3739 = js5Archive.method417("hint_mapmarkers", 0)
+            Class86.anInt1481 = js5Archive.method417("mapflag", 0)
+            RangedGraphicsOptionState.anInt5948 = js5Archive.method417("cross", 0)
+            CameraNodeList.anInt1742 = js5Archive.method417("mapdots", 0)
+            NamedIdRecord.anInt4469 = js5Archive.method417("scrollbar", 0)
+            ClampTextureNode.anInt9473 = js5Archive.method417("name_icons", 0)
+            LocTypeDefLoader.anInt2510 = js5Archive.method417("floorshadows", 0)
+            Class52.anInt4895 = js5Archive.method417("compass", 0)
             if (i > -72) method2161(106.toByte(), 125L)
-            PerlinTextureProvider.anInt5814 = class45.method417("otherlevel", 0)
-            Class5_Sub3.anInt8370 = class45.method417("hint_mapedge", 0)
+            PerlinTextureProvider.anInt5814 = js5Archive.method417("otherlevel", 0)
+            Class5_Sub3.anInt8370 = js5Archive.method417("hint_mapedge", 0)
         }
 
         @JvmStatic

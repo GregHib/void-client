@@ -4,9 +4,9 @@ import HashTileShape.Companion.method2729
 /* Class319 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_3_: Class45?) {
-    private val aClass45_3979: Class45?
-    var aClass45_3981: Class45? = null
+class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_3_: Js5Archive?) {
+    private val aJs5Archive_3979: Js5Archive?
+    var aJs5Archive_3981: Js5Archive? = null
     private val aClass60_3989 = Class60(64)
     var aClass60_3990: Class60 = Class60(60)
     var anInt3991: Int = 0
@@ -40,8 +40,8 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
         }
         if (locConfigModelBuilder != null) return locConfigModelBuilder
         val `is`: ByteArray?
-        synchronized(aClass45_3979!!) {
-            `is` = aClass45_3979.method410(-1860, method2419(127.toByte(), i_1_), method2729(i_1_, 16))
+        synchronized(aJs5Archive_3979!!) {
+            `is` = aJs5Archive_3979.method410(-1860, method2419(127.toByte(), i_1_), method2729(i_1_, 16))
         }
         locConfigModelBuilder = LocConfigModelBuilder()
         locConfigModelBuilder.aMapElementDefinitionCache_4513 = this
@@ -56,7 +56,7 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
     fun method2544(i: Int, i_2_: Byte) {
         synchronized(aClass60_3989) {
             aClass60_3989.method578(2, i)
-            if (i_2_ >= -11) this.aClass45_3981 = null
+            if (i_2_ >= -11) this.aJs5Archive_3981 = null
         }
         anInt3987++
         synchronized(this.aClass60_3990) {
@@ -76,12 +76,12 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
 
     init {
         try {
-            this.aClass45_3981 = class45_3_
-            aClass45_3979 = class45
-            val i_4_ = -1 + aClass45_3979!!.method414(-1)
-            aClass45_3979.method407(0, i_4_)
+            this.aJs5Archive_3981 = js5Archive_3_
+            aJs5Archive_3979 = js5Archive
+            val i_4_ = -1 + aJs5Archive_3979!!.method414(-1)
+            aJs5Archive_3979.method407(0, i_4_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("cn.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_3_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("cn.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_3_ != null) "{...}" else "null") + ')'))
         }
     }
 

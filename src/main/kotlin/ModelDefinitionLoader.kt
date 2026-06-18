@@ -1,21 +1,21 @@
 /* Class150 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_9_: Class45?) {
-    private var aClass45_2048: Class45? = null
+class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_9_: Js5Archive?) {
+    private var aJs5Archive_2048: Js5Archive? = null
     private val aClass60_2050 = Class60(64)
-    var aClass45_2054: Class45? = null
+    var aJs5Archive_2054: Js5Archive? = null
     fun method1203(i: Byte, i_3_: Int): SkeletalAnimFrameLoader {
         anInt2056++
-        if (i.toInt() != 33) aClass45_2048 = null
+        if (i.toInt() != 33) aJs5Archive_2048 = null
         var skeletalAnimFrameLoader: SkeletalAnimFrameLoader?
         synchronized(aClass60_2050) {
             skeletalAnimFrameLoader = aClass60_2050.method583(i_3_.toLong(), -58) as SkeletalAnimFrameLoader?
         }
         if (skeletalAnimFrameLoader != null) return skeletalAnimFrameLoader
         val `is`: ByteArray?
-        synchronized(aClass45_2048!!) {
-            `is` = aClass45_2048!!.method410(i + -1893, 3, i_3_)
+        synchronized(aJs5Archive_2048!!) {
+            `is` = aJs5Archive_2048!!.method410(i + -1893, 3, i_3_)
         }
         skeletalAnimFrameLoader = SkeletalAnimFrameLoader()
         skeletalAnimFrameLoader.aModelDefinitionLoader_475 = this
@@ -31,11 +31,11 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
             aClass60_2050.method587(-93)
         }
         anInt2049++
-        if (i != 0) aClass45_2048 = null
+        if (i != 0) aJs5Archive_2048 = null
     }
 
     fun method1206(i: Byte) {
-        if (i.toInt() != -37) aClass45_2048 = null
+        if (i.toInt() != -37) aJs5Archive_2048 = null
         anInt2051++
         synchronized(aClass60_2050) {
             aClass60_2050.method590(0)
@@ -53,11 +53,11 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
 
     init {
         try {
-            this.aClass45_2054 = class45_9_
-            aClass45_2048 = class45
-            aClass45_2048!!.method407(0, 3)
+            this.aJs5Archive_2054 = js5Archive_9_
+            aJs5Archive_2048 = js5Archive
+            aJs5Archive_2048!!.method407(0, 3)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oha.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_9_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oha.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_9_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -87,9 +87,9 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
             for (i_2_ in 0..<i_0_) SpriteStore.anIntArray369!![i_2_] = `is`[i_2_]
         }
 
-        fun method1205(i: Int, bool: Boolean, class45: Class45, i_4_: Int): InterfaceComponentGroup {
+        fun method1205(i: Int, bool: Boolean, js5Archive: Js5Archive, i_4_: Int): InterfaceComponentGroup {
             anInt2053++
-            val class348_sub49 = Buffer(class45.method410(-1860, i_4_, i))
+            val class348_sub49 = Buffer(js5Archive.method410(-1860, i_4_, i))
             if (bool != true) method1208(102)
             val class348_sub42_sub14 = InterfaceComponentGroup(i, class348_sub49.readString(88.toByte()), class348_sub49.readString(120.toByte()), class348_sub49.readInt((-126).toByte()), class348_sub49.readInt((-126).toByte()), class348_sub49.readUnsignedByte(255) == 1, class348_sub49.readUnsignedByte(255), class348_sub49.readUnsignedByte(255))
             val i_5_ = class348_sub49.readUnsignedByte(255)

@@ -445,8 +445,8 @@ import NpcModelTransform.Companion.method177
 import Bzip2DecoderState.Companion.method370
 import MinimapTileEntry.Companion.method380
 import MapSceneRenderer.method387
-import Class45.Companion.method390
-import Class45.Companion.method395
+import Js5Archive.Companion.method390
+import Js5Archive.Companion.method395
 import Class47.Companion.method445
 import Class49.Companion.method453
 import Class5.Companion.method180
@@ -597,7 +597,7 @@ class Client : GameAppletFrame() {
                     class348_sub49.writeInt(103.toByte(), 634)
                     TextureHandle.aSocketStreamWorker_2589!!.method1470((class348_sub49.aByteArray7154!!), 5, 0, -1)
                     Class47.anInt846++
-                    Class45.aLong667 = method599(-70)
+                    Js5Archive.aLong667 = method599(-70)
                 }
                 if (Class47.anInt846 == 3) {
                     if (NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-100).toByte()) || TextureHandle.aSocketStreamWorker_2589!!.method1467(83.toByte()) > 0) {
@@ -607,7 +607,7 @@ class Client : GameAppletFrame() {
                             return
                         }
                         Class47.anInt846++
-                    } else if (method599(-63) - Class45.aLong667 > 30000) {
+                    } else if (method599(-63) - Js5Archive.aLong667 > 30000) {
                         method103(1001, 85.toByte())
                         return
                     }
@@ -1939,7 +1939,7 @@ class Client : GameAppletFrame() {
         }
 
         fun method106() {
-            Class45.anInt669 = 0
+            Js5Archive.anInt669 = 0
             for (i in 0..<ModelDefinitionLoader.anInt2057) {
                 val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Class74.anIntArray1233!![i].toLong(), -6008) as NpcReference).aNpc_6859)
                 if ((npc!!.aBoolean10309) && npc.method2425(-1) != -1) {
@@ -1951,19 +1951,19 @@ class Client : GameAppletFrame() {
                         var i_23_ = (class318_sub1_sub3_sub3.anInt10290)
                         if (class318_sub1_sub3_sub3 is Npc) i_23_ += 2048
                         if ((class318_sub1_sub3_sub3.anInt10261) == 0 && class318_sub1_sub3_sub3.method2425(-1) != -1) {
-                            GlTexture1D.anIntArray8557!![Class45.anInt669] = i_23_
-                            LocDefinitionCache.anIntArray3432!![Class45.anInt669] = i_23_
-                            Class45.anInt669++
+                            GlTexture1D.anIntArray8557!![Js5Archive.anInt669] = i_23_
+                            LocDefinitionCache.anIntArray3432!![Js5Archive.anInt669] = i_23_
+                            Js5Archive.anInt669++
                             class318_sub1_sub3_sub3.anInt10261++
                         }
-                        GlTexture1D.anIntArray8557!![Class45.anInt669] = i_23_
-                        LocDefinitionCache.anIntArray3432!![Class45.anInt669] = npc.anInt10290 + 2048
-                        Class45.anInt669++
+                        GlTexture1D.anIntArray8557!![Js5Archive.anInt669] = i_23_
+                        LocDefinitionCache.anIntArray3432!![Js5Archive.anInt669] = npc.anInt10290 + 2048
+                        Js5Archive.anInt669++
                         class318_sub1_sub3_sub3.anInt10261++
                     }
                 }
             }
-            method347(LocDefinitionCache.anIntArray3432, GlTexture1D.anIntArray8557, 0, -22222, Class45.anInt669 - 1)
+            method347(LocDefinitionCache.anIntArray3432, GlTexture1D.anIntArray8557, 0, -22222, Js5Archive.anInt669 - 1)
         }
 
         @JvmStatic

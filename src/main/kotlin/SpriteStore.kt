@@ -1,11 +1,11 @@
 /* Class25 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private var aClass60_360: Class60? = Class60(16)
-    private var aClass45_366: Class45? = null
+    private var aJs5Archive_366: Js5Archive? = null
     fun method299(i: Int, i_0_: Int) {
-        if (i_0_ != 16) aClass45_366 = null
+        if (i_0_ != 16) aJs5Archive_366 = null
         synchronized(aClass60_360!!) {
             aClass60_360!!.method578(2, i)
         }
@@ -28,8 +28,8 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
         }
         if (widgetTextConfig != null) return widgetTextConfig
         val `is`: ByteArray?
-        synchronized(aClass45_366!!) {
-            `is` = aClass45_366!!.method410(-1860, 30, i)
+        synchronized(aJs5Archive_366!!) {
+            `is` = aJs5Archive_366!!.method410(-1860, 30, i)
         }
         if (i_2_ < 6) aClass60_360 = null
         widgetTextConfig = WidgetTextConfig()
@@ -50,10 +50,10 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
 
     init {
         try {
-            aClass45_366 = class45
-            aClass45_366!!.method407(0, 30)
+            aJs5Archive_366 = js5Archive
+            aJs5Archive_366!!.method407(0, 30)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("hq.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("hq.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

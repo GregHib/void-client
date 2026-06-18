@@ -1,7 +1,7 @@
 import java.io.IOException
 
-class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Class55(i) {
-    private val aClass45_5267: Class45
+class Class55_Sub1 private constructor(i: Int, js5Archive: Js5Archive, i_1_: Int) : Class55(i) {
+    private val aJs5Archive_5267: Js5Archive
     private var anIntArray5269: IntArray? = null
     private var anInt5270 = 0
     private val anInt5272: Int
@@ -14,7 +14,7 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
         if (anIntArray5269 != null && i < -27) {
             var i_0_ = 0
             while (i_0_ < 10 && anIntArray5269!!.size > anInt5270 + i_0_) {
-                if (aByteArrayArray5275!![i_0_] == null && aClass45_5267.method420(-10499, (anIntArray5269!![i_0_ + anInt5270]), 0)) aByteArrayArray5275!![i_0_] = aClass45_5267.method410(-1860, (anIntArray5269!![anInt5270 + i_0_]), 0)
+                if (aByteArrayArray5275!![i_0_] == null && aJs5Archive_5267.method420(-10499, (anIntArray5269!![i_0_ + anInt5270]), 0)) aByteArrayArray5275!![i_0_] = aJs5Archive_5267.method410(-1860, (anIntArray5269!![anInt5270 + i_0_]), 0)
                 i_0_++
             }
         }
@@ -23,7 +23,7 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
     init {
         aClass348_Sub49_5274 = Buffer(null)
         aClass348_Sub49_5276 = Buffer(null)
-        aClass45_5267 = class45
+        aJs5Archive_5267 = js5Archive
         anInt5272 = i_1_
     }
 
@@ -31,8 +31,8 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
     public override fun method516(i: Byte, `is`: ByteArray?): Int {
         anInt5273++
         if (anIntArray5269 == null) {
-            if (!aClass45_5267.method420(-10499, anInt5272, 0)) return 0
-            val is_4_ = aClass45_5267.method410(-1860, anInt5272, 0)
+            if (!aJs5Archive_5267.method420(-10499, anInt5272, 0)) return 0
+            val is_4_ = aJs5Archive_5267.method410(-1860, anInt5272, 0)
             checkNotNull(is_4_) { "" }
             aClass348_Sub49_5276.aByteArray7154 = is_4_
             aClass348_Sub49_5276.anInt7197 = 0
@@ -97,7 +97,7 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
             if (i_3_ > -108) aBoolean5265 = false
             if (ProjectileConfigUtil.aHashtable_389!!.method3480(i_2_.toLong(), -6008) == null) {
                 if (WidgetTextConfig.aBoolean510) {
-                    val class348_sub15 = MenuActionNode(i_2_, Class55_Sub1(4096, (HitsplatDefinition.aClass45_2015!!), i_2_), i, bool)
+                    val class348_sub15 = MenuActionNode(i_2_, Class55_Sub1(4096, (HitsplatDefinition.aJs5Archive_2015!!), i_2_), i, bool)
                     class348_sub15.aClass55_Sub1_6768!!.method509(-92, Class59_Sub2.aStringArray5305!![AnimationFrameDefinition.anInt6967])
                     ProjectileConfigUtil.aHashtable_389!!.method3483(35.toByte(), i_2_.toLong(), class348_sub15)
                 } else ProjectileDefinition.method2285(bool, (-90).toByte(), i_2_)

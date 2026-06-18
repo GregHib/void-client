@@ -4,11 +4,11 @@ import java.io.File
 /*
  * Class166
  */
-class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_9_: Class45?) {
+class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_9_: Js5Archive?) {
     @JvmField
-    var aClass45_2180: Class45? = null
+    var aJs5Archive_2180: Js5Archive? = null
     private val aClass60_2185 = Class60(64)
-    private val aClass45_2188: Class45?
+    private val aJs5Archive_2188: Js5Archive?
     @JvmField
     var aClass60_2190: Class60? = Class60(2)
 
@@ -29,7 +29,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
             aClass60_2185.method578(2, i)
         }
         synchronized(this.aClass60_2190!!) {
-            if (i_0_ != 8) this.aClass45_2180 = null
+            if (i_0_ != 8) this.aJs5Archive_2180 = null
             this.aClass60_2190!!.method578(i_0_ + -6, i)
         }
     }
@@ -43,8 +43,8 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
         if (underlayDefinition != null) return underlayDefinition
         if (i.toInt() != -104) this.aClass60_2190 = null
         val `is`: ByteArray?
-        synchronized(aClass45_2188!!) {
-            `is` = aClass45_2188.method410(-1860, 33, i_1_)
+        synchronized(aJs5Archive_2188!!) {
+            `is` = aJs5Archive_2188.method410(-1860, 33, i_1_)
         }
         underlayDefinition = UnderlayDefinition()
         underlayDefinition.aItemDefinitionLoader_2886 = this
@@ -68,11 +68,11 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
 
     init {
         try {
-            aClass45_2188 = class45
-            this.aClass45_2180 = class45_9_
-            aClass45_2188!!.method407(0, 33)
+            aJs5Archive_2188 = js5Archive
+            this.aJs5Archive_2180 = js5Archive_9_
+            aJs5Archive_2188!!.method407(0, 33)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("pg.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_9_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("pg.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_9_ != null) "{...}" else "null") + ')'))
         }
     }
 

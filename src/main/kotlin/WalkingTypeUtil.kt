@@ -5,7 +5,7 @@ object WalkingTypeUtil {
     var aIntRange_3307: IntRange? = IntRange(56, 2)
     var anInt3308: Int = 0
     @JvmField
-    var aClass45_3309: Class45? = null
+    var aJs5Archive_3309: Js5Archive? = null
     @JvmField
     var anInt3310: Int
     var anIntArray3311: IntArray?
@@ -26,7 +26,7 @@ object WalkingTypeUtil {
 
     @JvmStatic
     fun method1979(i: Byte) {
-        aClass45_3309 = null
+        aJs5Archive_3309 = null
         anIntArray3311 = null
         if (i < 105) method1978()
         aIntRange_3307 = null

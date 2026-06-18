@@ -409,7 +409,7 @@ class MidiSequencePlayer : AudioStreamNode {
     private fun method2854(i: Int, i_54_: Int, i_55_: Int) {
         anInt8943++
         anIntArray8945[i_54_] = i
-        if (i_55_ < 39) aClass45_8926 = null
+        if (i_55_ < 39) aJs5Archive_8926 = null
         anIntArray8947!![i_54_] = NpcSummaryDefinition.method1166(i, -128)
         method2873((-21).toByte(), i, i_54_)
     }
@@ -610,7 +610,7 @@ class MidiSequencePlayer : AudioStreamNode {
     }
 
     @Synchronized
-    fun method2866(class348_sub2: MidiFileBuilder?, i: Int, spriteArchiveLoader: SpriteArchiveLoader?, class45: Class45?, i_77_: Int): Boolean {
+    fun method2866(class348_sub2: MidiFileBuilder?, i: Int, spriteArchiveLoader: SpriteArchiveLoader?, js5Archive: Js5Archive?, i_77_: Int): Boolean {
         try {
             class348_sub2!!.method2733()
             anInt8954++
@@ -622,7 +622,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 val i_78_ = class348_sub8.aLong4291.toInt()
                 var class348_sub17 = (aHashtable_8891.method3480(i_78_.toLong(), -6008) as SoundBankPatch?)
                 if (class348_sub17 == null) {
-                    class348_sub17 = GlowPostProcessor.method1417(0, class45!!, i_78_)
+                    class348_sub17 = GlowPostProcessor.method1417(0, js5Archive!!, i_78_)
                     if (class348_sub17 == null) {
                         bool = false
                         class348_sub8 = class348_sub2.aHashtable_6565!!.method3482(0) as FacingDirectionNode?
@@ -637,7 +637,7 @@ class MidiSequencePlayer : AudioStreamNode {
             if (bool) class348_sub2.method2735()
             return bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.CA(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (spriteArchiveLoader != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_77_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ma.CA(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (spriteArchiveLoader != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_77_ + ')'))
         }
     }
 
@@ -941,7 +941,7 @@ class MidiSequencePlayer : AudioStreamNode {
         @JvmField
         var anInt8924: Int = 0
         @JvmField
-        var aClass45_8926: Class45? = null
+        var aJs5Archive_8926: Js5Archive? = null
         @JvmField
         var anInt8927: Int = 0
         @JvmField
@@ -1047,7 +1047,7 @@ class MidiSequencePlayer : AudioStreamNode {
         fun method2871(i: Int) {
             anIntArrayArray8910 = null
             if (i != -65) method2862(null, null, 96, -71)
-            aClass45_8926 = null
+            aJs5Archive_8926 = null
         }
 
         @JvmStatic

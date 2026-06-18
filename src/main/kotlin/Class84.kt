@@ -1,9 +1,9 @@
 /* Class84 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aClass60_1449 = Class60(16)
-    private val aClass45_1460: Class45?
+    private val aJs5Archive_1460: Js5Archive?
 
     fun method816(bool: Boolean) {
         anInt1455++
@@ -28,8 +28,8 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         }
         if (particleConfigParser != null) return particleConfigParser!!
         val `is`: ByteArray?
-        synchronized(aClass45_1460!!) {
-            `is` = aClass45_1460.method410(-1860, i_15_, i)
+        synchronized(aJs5Archive_1460!!) {
+            `is` = aJs5Archive_1460.method410(-1860, i_15_, i)
         }
         particleConfigParser = ParticleConfigParser()
         if (`is` != null) particleConfigParser!!.method2275(Buffer(`is`), (-123).toByte())
@@ -66,10 +66,10 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
 
     init {
         try {
-            aClass45_1460 = class45
-            aClass45_1460!!.method407(0, 29)
+            aJs5Archive_1460 = js5Archive
+            aJs5Archive_1460!!.method407(0, 29)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lca.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lca.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -161,13 +161,13 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
 
         @JvmStatic
         fun method826(i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, var_renderer: Renderer) {
-            if ((SpotAnimVector.aAbstractModelRenderer_2309 == null || TimedTileQueueEntry.aAbstractModelRenderer_9658 == null || TimedTileQueueEntry.aAbstractModelRenderer_9659 == null) && CameraRotationStub.aClass45_322!!.method421(false, ProjectedGroundDecor.anInt10257) && CameraRotationStub.aClass45_322!!.method421(false, SkyboxGradient.anInt3937) && CameraRotationStub.aClass45_322!!.method421(false, Class79.Companion.anInt1387)) {
-                val spriteImage = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, SkyboxGradient.anInt3937, 0)
+            if ((SpotAnimVector.aAbstractModelRenderer_2309 == null || TimedTileQueueEntry.aAbstractModelRenderer_9658 == null || TimedTileQueueEntry.aAbstractModelRenderer_9659 == null) && CameraRotationStub.aJs5Archive_322!!.method421(false, ProjectedGroundDecor.anInt10257) && CameraRotationStub.aJs5Archive_322!!.method421(false, SkyboxGradient.anInt3937) && CameraRotationStub.aJs5Archive_322!!.method421(false, Class79.Companion.anInt1387)) {
+                val spriteImage = SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, SkyboxGradient.anInt3937, 0)
                 TimedTileQueueEntry.aAbstractModelRenderer_9658 = var_renderer.method3691(spriteImage, true)
                 spriteImage!!.method1518()
                 ConfigVarProgress.aAbstractModelRenderer_4808 = var_renderer.method3691(spriteImage, true)
-                SpotAnimVector.aAbstractModelRenderer_2309 = (var_renderer.method3691(SpriteImage.method1521(CameraRotationStub.aClass45_322!!, ProjectedGroundDecor.anInt10257, 0), true))
-                val spriteImage_29_ = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, Class79.Companion.anInt1387, 0)
+                SpotAnimVector.aAbstractModelRenderer_2309 = (var_renderer.method3691(SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, ProjectedGroundDecor.anInt10257, 0), true))
+                val spriteImage_29_ = SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, Class79.Companion.anInt1387, 0)
                 TimedTileQueueEntry.aAbstractModelRenderer_9659 = var_renderer.method3691(spriteImage_29_, true)
                 spriteImage_29_!!.method1518()
                 AbstractMenuEntry.aAbstractModelRenderer_1706 = var_renderer.method3691(spriteImage_29_, true)

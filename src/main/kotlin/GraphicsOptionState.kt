@@ -52,7 +52,7 @@ abstract class GraphicsOptionState {
         @JvmField
         var aIntRange_3145: IntRange? = null
         @JvmField
-        var aClass45_3146: Class45? = null
+        var aJs5Archive_3146: Js5Archive? = null
         @JvmField
         var aItemDefinitionLoader_3147: ItemDefinitionLoader? = null
 
@@ -64,14 +64,14 @@ abstract class GraphicsOptionState {
         }
 
         @JvmStatic
-        fun method1711(i: Int, class45: Class45?, i_0_: Int, class45_1_: Class45?) {
+        fun method1711(i: Int, js5Archive: Js5Archive?, i_0_: Int, js5Archive_1_: Js5Archive?) {
             try {
-                GlElementArrayBuffer.aClass45_4843 = class45_1_
+                GlElementArrayBuffer.aJs5Archive_4843 = js5Archive_1_
                 anInt3140++
-                if (i != 7) aClass45_3146 = null
-                RectangleRegion.aClass45_1940 = class45
+                if (i != 7) aJs5Archive_3146 = null
+                RectangleRegion.aJs5Archive_1940 = js5Archive
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("su.Q(" + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (class45_1_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("su.Q(" + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (js5Archive_1_ != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -85,7 +85,7 @@ abstract class GraphicsOptionState {
         fun method1715(i: Int) {
             aIntRange_3145 = null
             aIntRange_3143 = null
-            aClass45_3146 = null
+            aJs5Archive_3146 = null
             aIntRange_3135 = null
             aByteArray3144 = null
             aItemDefinitionLoader_3147 = null

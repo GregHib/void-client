@@ -25,24 +25,24 @@ import java.io.File
 import java.io.FileNotFoundException
 import java.io.FileOutputStream
 
-class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
-    private val aClass45_1436: Class45?
+class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+    private val aJs5Archive_1436: Js5Archive?
     @JvmField
     var anInt1439: Int = 0
 
     init {
         Class60(64)
         try {
-            aClass45_1436 = class45
-            this.anInt1439 = aClass45_1436!!.method407(0, 15)
+            aJs5Archive_1436 = js5Archive
+            this.anInt1439 = aJs5Archive_1436!!.method407(0, 15)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lba.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lba.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 
     companion object {
         @JvmField
-        var aClass45_1434: Class45? = null
+        var aJs5Archive_1434: Js5Archive? = null
         @JvmField
         var anInt1435: Int = 0
         @JvmField
@@ -52,7 +52,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         @JvmStatic
         fun method811(i: Byte) {
             if (i > -109) anInt1435 = 69
-            aClass45_1434 = null
+            aJs5Archive_1434 = null
         }
 
         @JvmStatic
@@ -371,8 +371,8 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.equals("resetminimap", ignoreCase = true)) {
-                            CameraRotationStub.aClass45_322!!.method405(i.toInt() xor 0x4e.inv())
-                            CameraRotationStub.aClass45_322!!.method412(127.toByte())
+                            CameraRotationStub.aJs5Archive_322!!.method405(i.toInt() xor 0x4e.inv())
+                            CameraRotationStub.aJs5Archive_322!!.method412(127.toByte())
                             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1175(125.toByte())
                             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1219(7851)
                             method464(-1)
@@ -618,8 +618,8 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                         }
                         if (string.startsWith("orthotilesize ")) {
                             val i_23_ = (RegionSceneShifter.method3156(true, string.substring(1 + string.indexOf(' '))))
-                            Class45.anInt666 = i_23_
-                            PerlinTextureProvider.anInt5812 = Class45.anInt666
+                            Js5Archive.anInt666 = i_23_
+                            PerlinTextureProvider.anInt5812 = Js5Archive.anInt666
                             method94("ortho tile size=" + i_23_, -70)
                             LoadingScreenImageNode.method3179(0)
                             return

@@ -3,10 +3,10 @@ import Texture2DProvider.Companion.method2259
 /* Class153 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_10_: Class45?) {
+class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_10_: Js5Archive?) {
     private var aClass60_2083 = Class60(128)
-    private val aClass45_2084: Class45?
-    var aClass45_2087: Class45? = null
+    private val aJs5Archive_2084: Js5Archive?
+    var aJs5Archive_2087: Js5Archive? = null
     var aClass60_2089: Class60 = Class60(64)
 
     fun method1219(i: Int) {
@@ -59,8 +59,8 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
         if (structConfig != null) return structConfig
         if (i_9_ < 36) return null
         val `is`: ByteArray?
-        synchronized(aClass45_2084!!) {
-            `is` = aClass45_2084.method410(-1860, 36, i)
+        synchronized(aJs5Archive_2084!!) {
+            `is` = aJs5Archive_2084.method410(-1860, 36, i)
         }
         structConfig = StructConfig()
         structConfig.aConfigDefinitionLoader_593 = this
@@ -75,11 +75,11 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
 
     init {
         try {
-            aClass45_2084 = class45
-            this.aClass45_2087 = class45_10_
-            aClass45_2084!!.method407(0, 36)
+            aJs5Archive_2084 = js5Archive
+            this.aJs5Archive_2087 = js5Archive_10_
+            aJs5Archive_2084!!.method407(0, 36)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("on.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_10_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("on.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_10_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -102,7 +102,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
             var i_7_ = boundsConstraintEntry.anInt5167 or (i shl 10)
             var class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-91).toByte()) as MinimapAreaMarkerNode?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
-            var `is` = (CameraNodeList.aClass45_1743!!.method415(73.toByte(), CameraNodeList.aClass45_1743!!.method423(i_7_, (-90).toByte())))
+            var `is` = (CameraNodeList.aJs5Archive_1743!!.method415(73.toByte(), CameraNodeList.aJs5Archive_1743!!.method423(i_7_, (-90).toByte())))
             if (`is` != null) {
                 if (`is`.size <= 1) return null
                 try {
@@ -117,7 +117,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
             i_7_ = boundsConstraintEntry.anInt5167 or (65536 + i_5_ shl 10)
             class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-31).toByte()) as MinimapAreaMarkerNode?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
-            `is` = (CameraNodeList.aClass45_1743!!.method415(73.toByte(), CameraNodeList.aClass45_1743!!.method423(i_7_, (-107).toByte())))
+            `is` = (CameraNodeList.aJs5Archive_1743!!.method415(73.toByte(), CameraNodeList.aJs5Archive_1743!!.method423(i_7_, (-107).toByte())))
             if (`is` != null) {
                 if (`is`.size <= 1) return null
                 try {
@@ -132,7 +132,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
             i_7_ = boundsConstraintEntry.anInt5167 or 0x3fffc00
             class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-107).toByte()) as MinimapAreaMarkerNode?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
-            `is` = (CameraNodeList.aClass45_1743!!.method415(73.toByte(), CameraNodeList.aClass45_1743!!.method423(i_7_, 104.toByte())))
+            `is` = (CameraNodeList.aJs5Archive_1743!!.method415(73.toByte(), CameraNodeList.aJs5Archive_1743!!.method423(i_7_, 104.toByte())))
             if (`is` != null) {
                 if (`is`.size <= 1) return null
                 try {

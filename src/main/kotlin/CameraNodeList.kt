@@ -16,7 +16,7 @@ class CameraNodeList {
         @JvmField
         var anInt1742: Int = 0
         @JvmField
-        var aClass45_1743: Class45? = null
+        var aJs5Archive_1743: Js5Archive? = null
         @JvmField
         var aAbstractModelRendererArray1744: Array<AbstractModelRenderer?>? = null
         @JvmField
@@ -35,7 +35,7 @@ class CameraNodeList {
 
         @JvmStatic
         fun method1057(bool: Boolean) {
-            aClass45_1743 = null
+            aJs5Archive_1743 = null
             aAbstractModelRendererArray1744 = null
             if (bool != true) method1056(110, -57, '\uffd1')
         }

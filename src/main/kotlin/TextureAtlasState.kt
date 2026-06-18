@@ -17,23 +17,23 @@ class TextureAtlasState {
             anInt4419++
             var bool_0_ = bool
             if (ColorThresholdEffect.aSpriteImage_9090 == null) {
-                if (!CameraRotationStub.aClass45_322!!.method421(false, OutputStream_Sub1.anInt98)) bool_0_ = false
-                else ColorThresholdEffect.aSpriteImage_9090 = SpriteImage.method1512(CameraRotationStub.aClass45_322!!, OutputStream_Sub1.anInt98)
+                if (!CameraRotationStub.aJs5Archive_322!!.method421(false, OutputStream_Sub1.anInt98)) bool_0_ = false
+                else ColorThresholdEffect.aSpriteImage_9090 = SpriteImage.method1512(CameraRotationStub.aJs5Archive_322!!, OutputStream_Sub1.anInt98)
             }
             if (RegionTileNode.aSpriteImage_6643 == null) {
-                if (CameraRotationStub.aClass45_322!!.method421(!bool, TerrainShadowBuilderGl2.anInt6938)) RegionTileNode.aSpriteImage_6643 = SpriteImage.method1512(CameraRotationStub.aClass45_322!!, TerrainShadowBuilderGl2.anInt6938)
+                if (CameraRotationStub.aJs5Archive_322!!.method421(!bool, TerrainShadowBuilderGl2.anInt6938)) RegionTileNode.aSpriteImage_6643 = SpriteImage.method1512(CameraRotationStub.aJs5Archive_322!!, TerrainShadowBuilderGl2.anInt6938)
                 else bool_0_ = false
             }
             if (ScriptCompilerThread.aSpriteImage_1727 == null) {
-                if (!CameraRotationStub.aClass45_322!!.method421(false, LocalizedTextTriple.anInt3762)) bool_0_ = false
-                else ScriptCompilerThread.aSpriteImage_1727 = SpriteImage.method1512(CameraRotationStub.aClass45_322!!, LocalizedTextTriple.anInt3762)
+                if (!CameraRotationStub.aJs5Archive_322!!.method421(false, LocalizedTextTriple.anInt3762)) bool_0_ = false
+                else ScriptCompilerThread.aSpriteImage_1727 = SpriteImage.method1512(CameraRotationStub.aJs5Archive_322!!, LocalizedTextTriple.anInt3762)
             }
             if (ClanChatRequestSender.aFontDefinition_3649 == null) {
-                if (SoftwareSpriteRaster.aClass45_1627!!.method421(false, ConnectionStateRefs.anInt317)) ClanChatRequestSender.aFontDefinition_3649 = RangedGraphicsOptionState.method1766((-89).toByte(), ConnectionStateRefs.anInt317, SoftwareSpriteRaster.aClass45_1627!!)
+                if (SoftwareSpriteRaster.aJs5Archive_1627!!.method421(false, ConnectionStateRefs.anInt317)) ClanChatRequestSender.aFontDefinition_3649 = RangedGraphicsOptionState.method1766((-89).toByte(), ConnectionStateRefs.anInt317, SoftwareSpriteRaster.aJs5Archive_1627!!)
                 else bool_0_ = false
             }
             if (Class5_Sub1_Sub1.aSpriteImageArray9929 == null) {
-                if (CameraRotationStub.aClass45_322!!.method421(false, ConnectionStateRefs.anInt317)) Class5_Sub1_Sub1.aSpriteImageArray9929 = SpriteImage.method1523(CameraRotationStub.aClass45_322!!, ConnectionStateRefs.anInt317)
+                if (CameraRotationStub.aJs5Archive_322!!.method421(false, ConnectionStateRefs.anInt317)) Class5_Sub1_Sub1.aSpriteImageArray9929 = SpriteImage.method1523(CameraRotationStub.aJs5Archive_322!!, ConnectionStateRefs.anInt317)
                 else bool_0_ = false
             }
             return bool_0_

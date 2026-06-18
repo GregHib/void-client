@@ -14,7 +14,7 @@ class CameraRotationStub {
         @JvmField
         var anInt321: Int = 0
         @JvmField
-        var aClass45_322: Class45? = null
+        var aJs5Archive_322: Js5Archive? = null
         @JvmField
         var aClass46_323: Class46? = null
         @JvmField
@@ -28,7 +28,7 @@ class CameraRotationStub {
 
         @JvmStatic
         fun method288(i: Byte) {
-            aClass45_322 = null
+            aJs5Archive_322 = null
             if (i > 93) {
                 aRenderer326 = null
                 aClass46_323 = null

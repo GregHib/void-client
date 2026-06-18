@@ -2,7 +2,7 @@ import jagdx.IDirect3DPixelShader
 import jagdx.IDirect3DVertexShader
 import kotlin.math.abs
 
-class Class367_Sub7 internal constructor(private var aD3dRenderDevice_7346: D3dRenderDevice, class45: Class45?, private val aNormalMapGenerator_7348: NormalMapGenerator) : AbstractRenderPass(aD3dRenderDevice_7346) {
+class Class367_Sub7 internal constructor(private var aD3dRenderDevice_7346: D3dRenderDevice, js5Archive: Js5Archive?, private val aNormalMapGenerator_7348: NormalMapGenerator) : AbstractRenderPass(aD3dRenderDevice_7346) {
     private var anIDirect3DPixelShader7343: IDirect3DPixelShader? = null
     private var aBoolean7344 = false
     private var anIDirect3DVertexShader7345: IDirect3DVertexShader? = null
@@ -54,13 +54,13 @@ class Class367_Sub7 internal constructor(private var aD3dRenderDevice_7346: D3dR
     }
 
     init {
-        if (null == class45 || !this.aHa_Sub3_4479.aBoolean8101 || !this.aHa_Sub3_4479.aBoolean8159 || (aD3dRenderDevice_7346!!.aD3DCAPS9791!!.VertexShaderVersion and 0xffff) < 257) {
+        if (null == js5Archive || !this.aHa_Sub3_4479.aBoolean8101 || !this.aHa_Sub3_4479.aBoolean8159 || (aD3dRenderDevice_7346!!.aD3DCAPS9791!!.VertexShaderVersion and 0xffff) < 257) {
             anIDirect3DVertexShader7345 = null
             aBoolean7347 = false
             anIDirect3DPixelShader7343 = null
         } else {
-            anIDirect3DVertexShader7345 = (aD3dRenderDevice_7346!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "environment_mapped_water_v", -29832)))
-            anIDirect3DPixelShader7343 = (aD3dRenderDevice_7346!!.anIDirect3DDevice9810!!.a(class45.method391("dx", "environment_mapped_water_f", -29832)))
+            anIDirect3DVertexShader7345 = (aD3dRenderDevice_7346!!.anIDirect3DDevice9810!!.b(js5Archive.method391("dx", "environment_mapped_water_v", -29832)))
+            anIDirect3DPixelShader7343 = (aD3dRenderDevice_7346!!.anIDirect3DDevice9810!!.a(js5Archive.method391("dx", "environment_mapped_water_f", -29832)))
             aBoolean7347 = (anIDirect3DVertexShader7345 != null && null != anIDirect3DPixelShader7343 && aNormalMapGenerator_7348.method2041(49.toByte()))
         }
     }

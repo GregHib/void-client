@@ -4,9 +4,9 @@ import CacheEntryReference.Companion.method3194
 /* Class183 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aClass60_2458 = Class60(128)
-    private val aClass45_2461: Class45?
+    private val aJs5Archive_2461: Js5Archive?
     fun method1377(i: Int) {
         anInt2457++
         if (i != 2) method1376(null)
@@ -24,8 +24,8 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         }
         if (hslColorConfig != null) return hslColorConfig
         val `is`: ByteArray?
-        synchronized(aClass45_2461!!) {
-            `is` = aClass45_2461.method410(-1860, 1, i)
+        synchronized(aJs5Archive_2461!!) {
+            `is` = aJs5Archive_2461.method410(-1860, 1, i)
         }
         hslColorConfig = HslColorConfig()
         if (`is` != null) hslColorConfig.method290(Buffer(`is`), -1)
@@ -53,10 +53,10 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
 
     init {
         try {
-            aClass45_2461 = class45
-            aClass45_2461!!.method407(0, 1)
+            aJs5Archive_2461 = js5Archive
+            aJs5Archive_2461!!.method407(0, 1)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qe.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qe.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

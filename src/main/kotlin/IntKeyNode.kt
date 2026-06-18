@@ -16,7 +16,7 @@ class IntKeyNode : LinkedListNode {
         var aClass74_6977: Class74? = Class74(8, 3)
         var aNodeDeque_6978: NodeDeque?
         var anInt6979: Int = 0
-        var aClass45_6980: Class45? = null
+        var aJs5Archive_6980: Js5Archive? = null
         var anInt6981: Int = 0
 
         fun method3027(i: Byte) {
@@ -33,7 +33,7 @@ class IntKeyNode : LinkedListNode {
         fun method3028(i: Int) {
             if (i != -11677) Companion.method3027((-80).toByte())
             aClass74_6977 = null
-            aClass45_6980 = null
+            aJs5Archive_6980 = null
             aNodeDeque_6978 = null
         }
 

@@ -107,7 +107,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
                     val f_6_ = 1.0f - f
                     NativeIndexBuffer.anInt4703 = (((i_5_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2540) and 0xff00ff) + (GroundDecorEntity.anInt8739 and 0xff00ff) * i_4_) and 0xff00ff.inv()) - -(0xff0000 and (i_4_ * (0xff00 and GroundDecorEntity.anInt8739) + (0xff00 and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2540)) * i_5_))) ushr 8
                     RangedGraphicsOptionState.aFloat5945 = (GlTexture1D.aFloat8560 + f_6_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2551) - GlTexture1D.aFloat8560))
-                    ModelVertexColorBuffer.aFloat6586 = (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2545 - Class45.aFloat670) * f_6_ + Class45.aFloat670
+                    ModelVertexColorBuffer.aFloat6586 = (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2545 - Js5Archive.aFloat670) * f_6_ + Js5Archive.aFloat670
                     AnimationFrameTable.anInt486 = (i_4_ * NoOpGraphicsOptionState.anInt6042 + (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2546 * i_5_)) shr 8
                     KeyboardLayoutConfig.aFloat2137 = (TileSceneEntity.aFloat8725 + (-TileSceneEntity.aFloat8725 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2547)) * f_6_)
                     TextureMetadataProvider.aFloat4626 = (Class64.aFloat1136 + f_6_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2544) - Class64.aFloat1136))

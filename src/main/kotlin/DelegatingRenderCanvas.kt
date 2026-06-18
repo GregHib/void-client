@@ -130,7 +130,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             var class64 = CharCountUtil.aClass60_225!!.method583(l, 81) as Class64?
             val i_18_ = 2055
             if (class64 == null) {
-                val class124 = ParticleConfigParser.method2277(0, RasterSprite.aClass45_5207!!, i_16_, -1)
+                val class124 = ParticleConfigParser.method2277(0, RasterSprite.aJs5Archive_5207!!, i_16_, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 105)
                 class64 = var_renderer.method3625(class124, i_18_, RefCountedHandle.anInt2275, 64, 768)
@@ -153,35 +153,35 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             var i_19_ = 0
             while (DragDropController.aByteArrayArray4281!!.size > i_19_) {
                 if (NativeSprite.anIntArray5192!![i_19_] != -1 && DragDropController.aByteArrayArray4281!![i_19_] == null) {
-                    DragDropController.aByteArrayArray4281!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, NativeSprite.anIntArray5192!![i_19_], 0)
+                    DragDropController.aByteArrayArray4281!![i_19_] = Class367_Sub10.aJs5Archive_7382!!.method410(-1860, NativeSprite.anIntArray5192!![i_19_], 0)
                     if (DragDropController.aByteArrayArray4281!![i_19_] == null) {
                         bool = false
                         LocDefinitionCache.anInt3441++
                     }
                 }
                 if (GameAppletFrame.anIntArray38!![i_19_] != -1 && GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
-                    GlRectangleTexture.aByteArrayArray8642!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
+                    GlRectangleTexture.aByteArrayArray8642!![i_19_] = (Class367_Sub10.aJs5Archive_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
                         LocDefinitionCache.anInt3441++
                         bool = false
                     }
                 }
                 if (LocalizedTextTriple.anIntArray3759!![i_19_] != -1 && ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
-                    ModelFacePriorityNode.aByteArrayArray1887!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, LocalizedTextTriple.anIntArray3759!![i_19_], 0)
+                    ModelFacePriorityNode.aByteArrayArray1887!![i_19_] = Class367_Sub10.aJs5Archive_7382!!.method410(-1860, LocalizedTextTriple.anIntArray3759!![i_19_], 0)
                     if (ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
                         LocDefinitionCache.anInt3441++
                         bool = false
                     }
                 }
                 if (RenderNode.anIntArray9724!![i_19_] != -1 && VorbisOggDecoder.aByteArrayArray8996!![i_19_] == null) {
-                    VorbisOggDecoder.aByteArrayArray8996!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, RenderNode.anIntArray9724!![i_19_], 0)
+                    VorbisOggDecoder.aByteArrayArray8996!![i_19_] = Class367_Sub10.aJs5Archive_7382!!.method410(-1860, RenderNode.anIntArray9724!![i_19_], 0)
                     if (VorbisOggDecoder.aByteArrayArray8996!![i_19_] == null) {
                         bool = false
                         LocDefinitionCache.anInt3441++
                     }
                 }
                 if (ImageFrameCache.anIntArray4031 != null && StringCacheNode.aByteArrayArray7212!![i_19_] == null && ImageFrameCache.anIntArray4031!![i_19_] != -1) {
-                    StringCacheNode.aByteArrayArray7212!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(ImageFrameCache.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
+                    StringCacheNode.aByteArrayArray7212!![i_19_] = (Class367_Sub10.aJs5Archive_7382!!.method393(ImageFrameCache.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (StringCacheNode.aByteArrayArray7212!![i_19_] == null) {
                         bool = false
                         LocDefinitionCache.anInt3441++
@@ -190,8 +190,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                 i_19_++
             }
             if (OpenGlRenderNode.aSmoothingBuffer_10488 == null) {
-                if (NamedIdEntry.aClass348_Sub42_Sub14_6885 != null && (TerrainShadowBuilderGl2.aClass45_6950!!.method400(-18308, (NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"))) {
-                    if (TerrainShadowBuilderGl2.aClass45_6950!!.method413(100, (NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) OpenGlRenderNode.aSmoothingBuffer_10488 = SkeletonSequenceLoader.method2300(TerrainShadowBuilderGl2.aClass45_6950, ((NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), ModelBatchBase.aBoolean1900, (-91).toByte())
+                if (NamedIdEntry.aClass348_Sub42_Sub14_6885 != null && (TerrainShadowBuilderGl2.aJs5Archive_6950!!.method400(-18308, (NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"))) {
+                    if (TerrainShadowBuilderGl2.aJs5Archive_6950!!.method413(100, (NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) OpenGlRenderNode.aSmoothingBuffer_10488 = SkeletonSequenceLoader.method2300(TerrainShadowBuilderGl2.aJs5Archive_6950, ((NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), ModelBatchBase.aBoolean1900, (-91).toByte())
                     else {
                         bool = false
                         LocDefinitionCache.anInt3441++
@@ -346,8 +346,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         for (i_37_ in i_33_ - 1..i_34_ - -1) {
                             for (i_38_ in i_35_ + -1..i_36_ - -1) {
                                 if (i_33_ > i_37_ || i_34_ < i_37_ || i_38_ < i_35_ || i_38_ > i_36_) {
-                                    Class367_Sub10.aClass45_7382!!.method409("m" + i_37_ + "_" + i_38_, true)
-                                    Class367_Sub10.aClass45_7382!!.method409("l" + i_37_ + "_" + i_38_, true)
+                                    Class367_Sub10.aJs5Archive_7382!!.method409("m" + i_37_ + "_" + i_38_, true)
+                                    Class367_Sub10.aJs5Archive_7382!!.method409("l" + i_37_ + "_" + i_38_, true)
                                 }
                             }
                         }

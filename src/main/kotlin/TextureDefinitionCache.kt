@@ -1,22 +1,22 @@
 /* Class226 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class TextureDefinitionCache internal constructor(i: Int, class45: Class45?, class45_3_: Class45?) {
+class TextureDefinitionCache internal constructor(i: Int, js5Archive: Js5Archive?, js5Archive_3_: Js5Archive?) {
     private val aClass60_2960 = Class60(64)
-    private val aClass45_2961: Class45?
-    private var aClass45_2965: Class45? = null
+    private val aJs5Archive_2961: Js5Archive?
+    private var aJs5Archive_2965: Js5Archive? = null
 
     fun method1625(i: Int, i_0_: Int): CharCodeMap {
         anInt2963++
         var class348_sub42_sub11 = aClass60_2960.method583(i_0_.toLong(), -51) as CharCodeMap?
         if (class348_sub42_sub11 != null) return class348_sub42_sub11
         val `is`: ByteArray?
-        if (i_0_ < 32768) `is` = aClass45_2961!!.method410(-1860, 0, i_0_)
-        else `is` = aClass45_2965!!.method410(-1860, 0, 0x7fff and i_0_)
+        if (i_0_ < 32768) `is` = aJs5Archive_2961!!.method410(-1860, 0, i_0_)
+        else `is` = aJs5Archive_2965!!.method410(-1860, 0, 0x7fff and i_0_)
         class348_sub42_sub11 = CharCodeMap()
         if (`is` != null) class348_sub42_sub11.method3221(117, Buffer(`is`))
         if (i_0_ >= 32768) class348_sub42_sub11.method3224(104.toByte())
-        if (i != 0) aClass45_2965 = null
+        if (i != 0) aJs5Archive_2965 = null
         aClass60_2960.method582(class348_sub42_sub11, i_0_.toLong(), (-123).toByte())
         return class348_sub42_sub11
     }
@@ -24,13 +24,13 @@ class TextureDefinitionCache internal constructor(i: Int, class45: Class45?, cla
     init {
         do {
             try {
-                aClass45_2961 = class45
-                aClass45_2965 = class45_3_
-                if (aClass45_2961 != null) aClass45_2961.method407(0, 0)
-                if (aClass45_2965 == null) break
-                aClass45_2965!!.method407(0, 0)
+                aJs5Archive_2961 = js5Archive
+                aJs5Archive_2965 = js5Archive_3_
+                if (aJs5Archive_2961 != null) aJs5Archive_2961.method407(0, 0)
+                if (aJs5Archive_2965 == null) break
+                aJs5Archive_2965!!.method407(0, 0)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("sga.<init>(" + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_3_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("sga.<init>(" + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_3_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

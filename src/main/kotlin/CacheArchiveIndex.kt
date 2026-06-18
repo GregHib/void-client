@@ -139,9 +139,9 @@ class CacheArchiveIndex {
             if (CipheredPacketBuffer.anIntArray9757 == null || CipheredPacketBuffer.anIntArray9757!!.size < i_6_) CipheredPacketBuffer.anIntArray9757 = IntArray(i_6_)
         }
 
-        fun method1072(class45: Class45?, i: Byte) {
+        fun method1072(js5Archive: Js5Archive?, i: Byte) {
             if (i >= -91) method1070(((-93).toByte()).toByte(), 92)
-            BloomGraphicsOptionState.aClass45_5964 = class45
+            BloomGraphicsOptionState.aJs5Archive_5964 = js5Archive
             anInt1771++
         }
     }

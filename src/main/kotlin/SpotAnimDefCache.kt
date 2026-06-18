@@ -10,7 +10,7 @@ object SpotAnimDefCache {
         anInt3294++
         var spotAnimVector = (SceneObjectEntity.aClass60_8732!!.method583(i.toLong(), -78) as SpotAnimVector?)
         if (spotAnimVector != null) return spotAnimVector
-        val `is` = Class59_Sub2_Sub1.aClass45_8670!!.method410(-1860, 1, i)
+        val `is` = Class59_Sub2_Sub1.aJs5Archive_8670!!.method410(-1860, 1, i)
         spotAnimVector = SpotAnimVector()
         if (bool != false) method1944(64)
         spotAnimVector.anInt2303 = i

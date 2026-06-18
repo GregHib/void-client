@@ -3,8 +3,8 @@ import SceneTilePlaneManager.method259
 /* Class217 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
-    private val aClass45_2842: Class45?
+class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+    private val aJs5Archive_2842: Js5Archive?
     var anInt2845: Int = 0
     private var aClass60_2848: Class60? = Class60(64)
 
@@ -24,8 +24,8 @@ class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, 
         }
         if (particleAmountConfig != null) return particleAmountConfig
         val `is`: ByteArray?
-        synchronized(aClass45_2842!!) {
-            `is` = aClass45_2842.method410(-1860, 16, i_1_)
+        synchronized(aJs5Archive_2842!!) {
+            `is` = aJs5Archive_2842.method410(-1860, 16, i_1_)
             if (i >= -17) aClass60_2848 = null
         }
         particleAmountConfig = ParticleAmountConfig()
@@ -54,11 +54,11 @@ class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, 
 
     init {
         try {
-            aClass45_2842 = class45
-            if (aClass45_2842 != null) this.anInt2845 = aClass45_2842.method407(0, 16)
+            aJs5Archive_2842 = js5Archive
+            if (aJs5Archive_2842 != null) this.anInt2845 = aJs5Archive_2842.method407(0, 16)
             else this.anInt2845 = 0
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rv.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("rv.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -3,7 +3,7 @@ import TwoStateOptionState.Companion.method1842
 /* Class5_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: WorldMapIconLabel) : Class5(class45, class45_0_, class369_sub3) {
+open class Class5_Sub1(js5Archive: Js5Archive, js5Archive_0_: Js5Archive, class369_sub3: WorldMapIconLabel) : Class5(js5Archive, js5Archive_0_, class369_sub3) {
     private var aAbstractModelRenderer_8338: AbstractModelRenderer? = null
     private var aAbstractModelRenderer_8339: AbstractModelRenderer? = null
     private var aAbstractModelRenderer_8342: AbstractModelRenderer? = null
@@ -14,13 +14,13 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Wor
         anInt8351++
         if (!super.method8((-125).toByte())) return false
         val class369_sub3 = this.aWorldMapLabel_4635 as WorldMapIconLabel?
-        if (!this.aClass45_4632!!.method421(false, class369_sub3!!.anInt8599)) return false
-        if (!this.aClass45_4632!!.method421(false, class369_sub3.anInt8595)) return false
-        if (!this.aClass45_4632!!.method421(false, class369_sub3.anInt8603)) return false
-        if (!this.aClass45_4632!!.method421(false, class369_sub3.anInt8602)) return false
+        if (!this.aJs5Archive_4632!!.method421(false, class369_sub3!!.anInt8599)) return false
+        if (!this.aJs5Archive_4632!!.method421(false, class369_sub3.anInt8595)) return false
+        if (!this.aJs5Archive_4632!!.method421(false, class369_sub3.anInt8603)) return false
+        if (!this.aJs5Archive_4632!!.method421(false, class369_sub3.anInt8602)) return false
         val i_1_ = 47 / ((25 - i) / 52)
-        if (!this.aClass45_4632!!.method421(false, class369_sub3.anInt8600)) return false
-        return this.aClass45_4632!!.method421(false, class369_sub3.anInt8597)
+        if (!this.aJs5Archive_4632!!.method421(false, class369_sub3.anInt8600)) return false
+        return this.aJs5Archive_4632!!.method421(false, class369_sub3.anInt8597)
     }
 
     open fun method186(i: Int, i_3_: Int, i_4_: Byte, i_5_: Int, i_6_: Int) {
@@ -74,12 +74,12 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Wor
         super.method7(i)
         anInt8337++
         val class369_sub3 = this.aWorldMapLabel_4635 as WorldMapIconLabel?
-        this.aAbstractModelRenderer_8350 = WorldMapPolygonIconLabel.method3577((class369_sub3!!.anInt8599), (-19).toByte(), this.aClass45_4632!!)
-        aAbstractModelRenderer_8347 = WorldMapPolygonIconLabel.method3577((class369_sub3.anInt8595), 106.toByte(), this.aClass45_4632!!)
-        aAbstractModelRenderer_8342 = WorldMapPolygonIconLabel.method3577((class369_sub3.anInt8603), (-19).toByte(), this.aClass45_4632!!)
-        aAbstractModelRenderer_8339 = WorldMapPolygonIconLabel.method3577((class369_sub3.anInt8602), (-121).toByte(), this.aClass45_4632!!)
-        aAbstractModelRenderer_8343 = WorldMapPolygonIconLabel.method3577((class369_sub3.anInt8600), 124.toByte(), this.aClass45_4632!!)
-        aAbstractModelRenderer_8338 = WorldMapPolygonIconLabel.method3577((class369_sub3.anInt8597), 115.toByte(), this.aClass45_4632!!)
+        this.aAbstractModelRenderer_8350 = WorldMapPolygonIconLabel.method3577((class369_sub3!!.anInt8599), (-19).toByte(), this.aJs5Archive_4632!!)
+        aAbstractModelRenderer_8347 = WorldMapPolygonIconLabel.method3577((class369_sub3.anInt8595), 106.toByte(), this.aJs5Archive_4632!!)
+        aAbstractModelRenderer_8342 = WorldMapPolygonIconLabel.method3577((class369_sub3.anInt8603), (-19).toByte(), this.aJs5Archive_4632!!)
+        aAbstractModelRenderer_8339 = WorldMapPolygonIconLabel.method3577((class369_sub3.anInt8602), (-121).toByte(), this.aJs5Archive_4632!!)
+        aAbstractModelRenderer_8343 = WorldMapPolygonIconLabel.method3577((class369_sub3.anInt8600), 124.toByte(), this.aJs5Archive_4632!!)
+        aAbstractModelRenderer_8338 = WorldMapPolygonIconLabel.method3577((class369_sub3.anInt8597), 115.toByte(), this.aJs5Archive_4632!!)
     }
 
     companion object {

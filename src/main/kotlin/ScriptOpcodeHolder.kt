@@ -53,7 +53,7 @@ object ScriptOpcodeHolder {
         var string_2_ = string_2_
         try {
             anInt2337++
-            SpotAnimVector.Companion.aClass45_2306!!.anInt634 = 1
+            SpotAnimVector.Companion.aJs5Archive_2306!!.anInt634 = 1
             string_2_ = string_2_!!.lowercase(Locale.getDefault())
             var `is` = ShortArray(16)
             var i_4_ = -1
@@ -105,8 +105,8 @@ object ScriptOpcodeHolder {
                 i_10_++
             }
             SpotAnimVector.Companion.method1333(AsyncTaskHandle.aShortArray2579, 26073, strings)
-            SpotAnimVector.Companion.aClass45_2306!!.method412(116.toByte())
-            SpotAnimVector.Companion.aClass45_2306!!.anInt634 = 2
+            SpotAnimVector.Companion.aJs5Archive_2306!!.method412(116.toByte())
+            SpotAnimVector.Companion.aJs5Archive_2306!!.anInt634 = 2
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("qa.A(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + (if (string_2_ != null) "{...}" else "null") + ',' + bool_3_ + ')'))
         }

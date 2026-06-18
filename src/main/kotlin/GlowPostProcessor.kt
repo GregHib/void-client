@@ -159,10 +159,10 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             Class66.aClass60_1174!!.method578(2, 5)
         }
 
-        fun method1417(i: Int, class45: Class45, i_7_: Int): SoundBankPatch? {
+        fun method1417(i: Int, js5Archive: Js5Archive, i_7_: Int): SoundBankPatch? {
             anInt2516++
             if (i != 0) aBoolean2514 = true
-            val `is` = class45.method415(73.toByte(), i_7_)
+            val `is` = js5Archive.method415(73.toByte(), i_7_)
             if (`is` == null) return null
             return SoundBankPatch(`is`)
         }

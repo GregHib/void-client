@@ -120,11 +120,11 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
         var anInt2206: Int = 0
         @JvmField
         var aRenderConfigFactory_2207: RenderConfigFactory? = RenderConfigFactory()
-        var aClass45_2208: Class45? = null
+        var aJs5Archive_2208: Js5Archive? = null
         @JvmStatic
         fun method1293(i: Int) {
             aIntRange_2196 = null
-            aClass45_2208 = null
+            aJs5Archive_2208 = null
             aRenderConfigFactory_2207 = null
         }
 

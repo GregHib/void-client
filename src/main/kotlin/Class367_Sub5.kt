@@ -1,6 +1,6 @@
 import jagdx.IDirect3DVertexShader
 
-class Class367_Sub5 internal constructor(private var aD3dRenderDevice_7328: D3dRenderDevice, class45: Class45?) : AbstractRenderPass(aD3dRenderDevice_7328) {
+class Class367_Sub5 internal constructor(private var aD3dRenderDevice_7328: D3dRenderDevice, js5Archive: Js5Archive?) : AbstractRenderPass(aD3dRenderDevice_7328) {
     private var aBoolean7326 = false
     private val aBoolean7329: Boolean
     private var anIDirect3DVertexShader7330: IDirect3DVertexShader? = null
@@ -12,12 +12,12 @@ class Class367_Sub5 internal constructor(private var aD3dRenderDevice_7328: D3dR
     private var aBoolean7336 = false
 
     init {
-        if (null == class45 || ((aD3dRenderDevice_7328!!.aD3DCAPS9791!!.VertexShaderVersion) and 0xffff) < 257) aBoolean7329 = false
+        if (null == js5Archive || ((aD3dRenderDevice_7328!!.aD3DCAPS9791!!.VertexShaderVersion) and 0xffff) < 257) aBoolean7329 = false
         else {
-            anIDirect3DVertexShader7332 = aD3dRenderDevice_7328!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "uw_ground_unlit", -29832))
-            anIDirect3DVertexShader7330 = aD3dRenderDevice_7328!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "uw_ground_lit", -29832))
-            anIDirect3DVertexShader7334 = aD3dRenderDevice_7328!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "uw_model_unlit", -29832))
-            anIDirect3DVertexShader7335 = aD3dRenderDevice_7328!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "uw_model_lit", -29832))
+            anIDirect3DVertexShader7332 = aD3dRenderDevice_7328!!.anIDirect3DDevice9810!!.b(js5Archive.method391("dx", "uw_ground_unlit", -29832))
+            anIDirect3DVertexShader7330 = aD3dRenderDevice_7328!!.anIDirect3DDevice9810!!.b(js5Archive.method391("dx", "uw_ground_lit", -29832))
+            anIDirect3DVertexShader7334 = aD3dRenderDevice_7328!!.anIDirect3DDevice9810!!.b(js5Archive.method391("dx", "uw_model_unlit", -29832))
+            anIDirect3DVertexShader7335 = aD3dRenderDevice_7328!!.anIDirect3DDevice9810!!.b(js5Archive.method391("dx", "uw_model_lit", -29832))
             if ((null != anIDirect3DVertexShader7332) and (anIDirect3DVertexShader7330 != null) and (anIDirect3DVertexShader7334 != null) and (null != anIDirect3DVertexShader7335)) {
                 anInterface18_Impl3_7331 = (this.aHa_Sub3_4479.method3839(1, 2, -15137, false, intArrayOf(0, -1)))
                 anInterface18_Impl3_7331!!.method66(false, false, 25688)

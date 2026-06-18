@@ -110,8 +110,8 @@ class CipheredPacketBuffer internal constructor(i: Int) : Buffer(i) {
             var i_2_ = 0
             while (AbstractTileShape.anIntArray6547!!.size > i_2_) {
                 val i_3_ = AbstractTileShape.anIntArray6547!![i_2_]
-                if (GlShaderObjectHandle.aClass45_518!!.method421(false, i_3_)) i_1_++
-                if (TerrainTile.aClass45_4585!!.method421(false, i_3_)) i_1_++
+                if (GlShaderObjectHandle.aJs5Archive_518!!.method421(false, i_3_)) i_1_++
+                if (TerrainTile.aJs5Archive_4585!!.method421(false, i_3_)) i_1_++
                 i_2_++
             }
             return i_1_

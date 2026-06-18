@@ -33,7 +33,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Abstrac
     }
 
     override fun method3520(i: Byte) {
-        if (i.toInt() != 87) aClass45_7382 = null
+        if (i.toInt() != 87) aJs5Archive_7382 = null
         anInt7386++
         if (aBoolean7385) {
             this.aHa_Sub3_4479.method3897(1, -4382)
@@ -56,7 +56,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Abstrac
 
     override fun method3530(i: Int): Boolean {
         anInt7387++
-        if (i > -57) aClass45_7382 = null
+        if (i > -57) aJs5Archive_7382 = null
         return true
     }
 
@@ -71,7 +71,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Abstrac
         @JvmField
         var anInt7381: Int = 0
         @JvmField
-        var aClass45_7382: Class45? = null
+        var aJs5Archive_7382: Js5Archive? = null
         @JvmField
         var anInt7383: Int = 0
         @JvmField
@@ -94,8 +94,8 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: NativeRenderer) : Abstrac
 
         @JvmStatic
         fun method3554(i: Int) {
-            if (i != 1) aClass45_7382 = null
-            aClass45_7382 = null
+            if (i != 1) aJs5Archive_7382 = null
+            aJs5Archive_7382 = null
         }
     }
 }

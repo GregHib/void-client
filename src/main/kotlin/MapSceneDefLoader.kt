@@ -1,9 +1,9 @@
 /* Class185 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aClass60_2479 = Class60(64)
-    private val aClass45_2480: Class45?
+    private val aJs5Archive_2480: Js5Archive?
     fun method1390(i: Int) {
         synchronized(aClass60_2479) {
             val i_0_ = 25 / ((i - 69) / 33)
@@ -20,8 +20,8 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         }
         if (cameraConfigDefinition != null) return cameraConfigDefinition
         val `is`: ByteArray?
-        synchronized(aClass45_2480!!) {
-            `is` = aClass45_2480.method410(-1860, 31, i_1_)
+        synchronized(aJs5Archive_2480!!) {
+            `is` = aJs5Archive_2480.method410(-1860, 31, i_1_)
         }
         cameraConfigDefinition = CameraConfigDefinition()
         val i_2_ = 50 / ((i - -63) / 56)
@@ -49,10 +49,10 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
 
     init {
         try {
-            aClass45_2480 = class45
-            aClass45_2480!!.method407(0, 31)
+            aJs5Archive_2480 = js5Archive
+            aJs5Archive_2480!!.method407(0, 31)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qf.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qf.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -64,7 +64,7 @@ class LightingOptionState : GraphicsOptionState {
         @JvmField
         var anInt5877: Int = 0
         @JvmField
-        var aClass45_5878: Class45? = null
+        var aJs5Archive_5878: Js5Archive? = null
         @JvmField
         var anInt5879: Int = 0
         @JvmField
@@ -78,7 +78,7 @@ class LightingOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1738(i: Int) {
-            aClass45_5878 = null
+            aJs5Archive_5878 = null
             aFloatArray5874 = null
             aString5882 = null
             if (i != 21921) method1738(11)

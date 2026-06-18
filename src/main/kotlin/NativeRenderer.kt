@@ -14,7 +14,7 @@ import kotlin.math.max
 import kotlin.math.sin
 import kotlin.math.sqrt
 
-abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig: RenderConfig?, class45: Class45?, i: Int, i_289_: Int) : Renderer(var_renderConfig) {
+abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig: RenderConfig?, js5Archive: Js5Archive?, i: Int, i_289_: Int) : Renderer(var_renderConfig) {
     var aNativeHeap7891: NativeHeap? = null
     var aLong7905: Long = 0
     private var aCanvas7910: Canvas? = null
@@ -31,7 +31,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     private var anInt7987 = 0
     private var aHashtable8014: Hashtable<Any?, Any?>? = null
     private var anObject8020: Any? = null
-    var aClass45_8039: Class45? = null
+    var aJs5Archive_8039: Js5Archive? = null
     var anInt8062: Int = 0
     var anInt8063: Int = 0
     var aBoolean8069: Boolean = true
@@ -2496,7 +2496,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         try {
             try {
                 this.anInt8117 = i
-                this.aClass45_8039 = class45
+                this.aJs5Archive_8039 = js5Archive
                 this.aCanvas7925 = canvas
                 aCanvas7910 = this.aCanvas7925
                 this.anObject7919 = `object`
@@ -2527,7 +2527,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 throw RuntimeException("")
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + i_289_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("wga.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + i_289_ + ')'))
         }
     }
 

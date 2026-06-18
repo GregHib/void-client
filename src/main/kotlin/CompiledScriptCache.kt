@@ -3,12 +3,12 @@ import SoundBankPatch.Companion.method2929
 /* Class355 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class CompiledScriptCache internal constructor(i: Int, class45: Class45?, class45_1_: Class45?, interface15: Interface15?) {
+class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, js5Archive_1_: Js5Archive?, interface15: Interface15?) {
     private val aClass60_4362: Class60
     var anInt4364: Int = 0
     var anInt4365: Int = 0
-    private var aClass45_4368: Class45? = null
-    private val aClass45_4369: Class45?
+    private var aJs5Archive_4368: Js5Archive? = null
+    private val aJs5Archive_4369: Js5Archive?
     private var anInterface15_4373: Interface15?
 
     fun method3471(i: Int, i_0_: Byte): ParameterizedText {
@@ -16,8 +16,8 @@ class CompiledScriptCache internal constructor(i: Int, class45: Class45?, class4
         var class348_sub42_sub10 = aClass60_4362.method583(i.toLong(), 70) as ParameterizedText?
         if (class348_sub42_sub10 != null) return class348_sub42_sub10
         val `is`: ByteArray?
-        if (i >= 32768) `is` = aClass45_4369!!.method410(-1860, 1, 0x7fff and i)
-        else `is` = aClass45_4368!!.method410(-1860, 1, i)
+        if (i >= 32768) `is` = aJs5Archive_4369!!.method410(-1860, 1, 0x7fff and i)
+        else `is` = aJs5Archive_4368!!.method410(-1860, 1, i)
         class348_sub42_sub10 = ParameterizedText()
         class348_sub42_sub10.aCompiledScriptCache_9567 = this
         if (`is` != null) class348_sub42_sub10.method3218(Buffer(`is`), 0)
@@ -29,7 +29,7 @@ class CompiledScriptCache internal constructor(i: Int, class45: Class45?, class4
 
     fun method3472(l: Long, `is`: IntArray?, i: Int, rectangleRegion: RectangleRegion?): String {
         try {
-            if (i != -1) aClass45_4368 = null
+            if (i != -1) aJs5Archive_4368 = null
             anInt4370++
             if (anInterface15_4373 != null) {
                 val string = anInterface15_4373!!.method54(1, l, rectangleRegion, `is`)
@@ -47,13 +47,13 @@ class CompiledScriptCache internal constructor(i: Int, class45: Class45?, class4
         do {
             try {
                 anInterface15_4373 = interface15
-                aClass45_4368 = class45
-                aClass45_4369 = class45_1_
-                if (aClass45_4368 != null) this.anInt4365 = aClass45_4368!!.method407(0, 1)
-                if (aClass45_4369 == null) break
-                this.anInt4364 = aClass45_4369.method407(0, 1)
+                aJs5Archive_4368 = js5Archive
+                aJs5Archive_4369 = js5Archive_1_
+                if (aJs5Archive_4368 != null) this.anInt4365 = aJs5Archive_4368!!.method407(0, 1)
+                if (aJs5Archive_4369 == null) break
+                this.anInt4364 = aJs5Archive_4369.method407(0, 1)
             } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, ("aha.<init>(" + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_1_ != null) "{...}" else "null") + ',' + (if (interface15 != null) "{...}" else "null") + ')'))
+                throw method2929(runtimeexception, ("aha.<init>(" + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_1_ != null) "{...}" else "null") + ',' + (if (interface15 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

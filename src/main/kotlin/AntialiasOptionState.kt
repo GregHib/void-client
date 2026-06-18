@@ -66,9 +66,9 @@ class AntialiasOptionState : GraphicsOptionState {
         var anInt6083: Int = 0
 
         @JvmStatic
-        fun method1819(i: Int, i_1_: Int, i_2_: Int, class45: Class45): FontDefinition? {
+        fun method1819(i: Int, i_1_: Int, i_2_: Int, js5Archive: Js5Archive): FontDefinition? {
             anInt6081++
-            val `is` = class45.method410(-1860, i, i_1_)
+            val `is` = js5Archive.method410(-1860, i, i_1_)
             if (`is` == null) return null
             return FontDefinition(`is`)
         }

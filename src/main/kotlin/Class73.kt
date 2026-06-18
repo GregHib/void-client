@@ -1,13 +1,13 @@
 /* Class73 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class73 internal constructor(class45: Class45?, string: String?) : Interface7 {
+class Class73 internal constructor(js5Archive: Js5Archive?, string: String?) : Interface7 {
     private val aString4778: String?
-    private val aClass45_4785: Class45?
+    private val aJs5Archive_4785: Js5Archive?
     override fun method31(i: Int): Int {
         val i_1_ = -62 / ((i - -43) / 62)
         anInt4774++
-        if (aClass45_4785!!.method416((-74).toByte(), aString4778)) return 100
+        if (aJs5Archive_4785!!.method416((-74).toByte(), aString4778)) return 100
         return 0
     }
 
@@ -19,10 +19,10 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
 
     init {
         try {
-            aClass45_4785 = class45
+            aJs5Archive_4785 = js5Archive
             aString4778 = string
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("kk.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("kk.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -62,7 +62,7 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
             anInt4777++
             var mapAreaDefinition = ParticleAmountCache.aClass60_2844!!.method583(i_0_.toLong(), -104) as MapAreaDefinition?
             if (mapAreaDefinition != null) return mapAreaDefinition
-            val `is` = WorldMapIconLabel.aClass45_8601!!.method410(-1860, 0, i_0_)
+            val `is` = WorldMapIconLabel.aJs5Archive_8601!!.method410(-1860, 0, i_0_)
             if (i != 104) method741(98.toByte())
             mapAreaDefinition = MapAreaDefinition()
             if (`is` != null) mapAreaDefinition.method1419(i_0_, Buffer(`is`), 64.toByte())

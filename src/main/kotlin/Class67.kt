@@ -1,11 +1,11 @@
 /* Class67 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, heapInfoRecord: HeapInfoRecord?) : Interface1 {
+class Class67 internal constructor(js5Archive: Js5Archive?, js5Archive_3_: Js5Archive?, heapInfoRecord: HeapInfoRecord?) : Interface1 {
     private val aHeapInfoRecord_4646: HeapInfoRecord?
     private var aFont_4649: Font? = null
-    private val aClass45_4650: Class45?
-    private val aClass45_4651: Class45?
+    private val aJs5Archive_4650: Js5Archive?
+    private val aJs5Archive_4651: Js5Archive?
 
     override fun method9(i: Byte, bool: Boolean) {
         if (bool) {
@@ -19,25 +19,25 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, heap
     override fun method8(i: Byte): Boolean {
         anInt4644++
         var bool = true
-        if (!aClass45_4650!!.method421(false, aHeapInfoRecord_4646!!.anInt4944)) bool = false
-        if (!aClass45_4651!!.method421(false, aHeapInfoRecord_4646.anInt4944)) bool = false
+        if (!aJs5Archive_4650!!.method421(false, aHeapInfoRecord_4646!!.anInt4944)) bool = false
+        if (!aJs5Archive_4651!!.method421(false, aHeapInfoRecord_4646.anInt4944)) bool = false
         val i_2_ = -53 % ((i - 25) / 52)
         return bool
     }
 
     override fun method7(i: Int) {
         anInt4647++
-        val class143 = RangedGraphicsOptionState.method1766((-45).toByte(), aHeapInfoRecord_4646!!.anInt4944, aClass45_4651!!)
-        if (i == 10286) aFont_4649 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1523(aClass45_4650!!, aHeapInfoRecord_4646.anInt4944), true))
+        val class143 = RangedGraphicsOptionState.method1766((-45).toByte(), aHeapInfoRecord_4646!!.anInt4944, aJs5Archive_4651!!)
+        if (i == 10286) aFont_4649 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1523(aJs5Archive_4650!!, aHeapInfoRecord_4646.anInt4944), true))
     }
 
     init {
         try {
-            aClass45_4651 = class45_3_
+            aJs5Archive_4651 = js5Archive_3_
             aHeapInfoRecord_4646 = heapInfoRecord
-            aClass45_4650 = class45
+            aJs5Archive_4650 = js5Archive
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("kd.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_3_ != null) "{...}" else "null") + ',' + (if (heapInfoRecord != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("kd.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_3_ != null) "{...}" else "null") + ',' + (if (heapInfoRecord != null) "{...}" else "null") + ')'))
         }
     }
 

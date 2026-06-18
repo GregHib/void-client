@@ -212,14 +212,14 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                     class10.anInt188--
                     if (class10.anInt188 >= (if (!class10.method220((-66).toByte())) -10 else -1500)) {
                         if (class10.aByte180.toInt() == 1 && class10.aAudioClipDefinition_183 == null) {
-                            class10.aAudioClipDefinition_183 = AudioClipDefinition.method2372(ModelFacePriorityNode.aClass45_1878!!, class10.anInt185, 0)
+                            class10.aAudioClipDefinition_183 = AudioClipDefinition.method2372(ModelFacePriorityNode.aJs5Archive_1878!!, class10.anInt185, 0)
                             if (class10.aAudioClipDefinition_183 == null) {
                                 i_4_++
                                 continue
                             }
                             class10.anInt188 += class10.aAudioClipDefinition_183!!.method2370()
                         } else if (class10.method220((-39).toByte()) && ((class10.aClass348_Sub10_192 == null) || (class10.aClass348_Sub19_Sub1_189) == null)) {
-                            if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = VorbisAudioDecoder.method2793((LightingOptionState.aClass45_5878!!), (class10.anInt185))
+                            if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = VorbisAudioDecoder.method2793((LightingOptionState.aJs5Archive_5878!!), (class10.anInt185))
                             if (class10.aClass348_Sub10_192 == null) {
                                 i_4_++
                                 continue
@@ -295,8 +295,8 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
             anInt4890++
             if (Class74.aBoolean1236 && !method1296(true)) {
                 if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1) {
-                    if (UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 != null) method3086(2, UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), Class59_Sub2_Sub1.aClass45_8667, false, 0, SlotBinding.anInt3428)
-                    else method2732(0, SlotBinding.anInt3428, false, 124, Class59_Sub2_Sub1.aClass45_8667, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
+                    if (UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 != null) method3086(2, UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), Class59_Sub2_Sub1.aJs5Archive_8667, false, 0, SlotBinding.anInt3428)
+                    else method2732(0, SlotBinding.anInt3428, false, 124, Class59_Sub2_Sub1.aJs5Archive_8667, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
                 }
                 Class74.aBoolean1236 = false
                 UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 = null

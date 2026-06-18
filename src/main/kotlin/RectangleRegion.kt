@@ -9,7 +9,7 @@ class RectangleRegion internal constructor(var anInt1941: Int, @JvmField var anI
 
     companion object {
         @JvmField
-        var aClass45_1940: Class45? = null
+        var aJs5Archive_1940: Js5Archive? = null
         var aClass46Array1942: Array<Class46?>? = null
         @JvmField
         var aClass348_Sub42_Sub12_1946: ContactEntry? = null
@@ -18,7 +18,7 @@ class RectangleRegion internal constructor(var anInt1941: Int, @JvmField var anI
         @JvmStatic
         fun method1164(i: Byte) {
             if (i <= -42) {
-                aClass45_1940 = null
+                aJs5Archive_1940 = null
                 aClass348_Sub42_Sub12_1946 = null
                 aClass46Array1942 = null
             }

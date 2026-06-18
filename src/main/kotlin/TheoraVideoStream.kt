@@ -144,7 +144,7 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
         @JvmField
         var aConfigDefinitionLoader_9031: ConfigDefinitionLoader? = null
         @JvmField
-        var aClass45_9033: Class45? = null
+        var aJs5Archive_9033: Js5Archive? = null
         @JvmField
         var aFontMetaRef_9034: FontMetaRef? = FontMetaRef(30, 4)
         @JvmField
@@ -160,7 +160,7 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
         fun method2974(i: Int) {
             aFontMetaRef_9034 = null
             if (i != 1) aRenderConfigFactory_9011 = null
-            aClass45_9033 = null
+            aJs5Archive_9033 = null
             aRenderConfigFactory_9011 = null
             aClass77_9029 = null
             aConfigDefinitionLoader_9031 = null

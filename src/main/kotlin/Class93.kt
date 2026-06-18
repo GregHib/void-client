@@ -23,7 +23,7 @@ object Class93 {
         anApplet1530 = null
     }
 
-    fun method862(canvas: Canvas?, var_renderConfig: RenderConfig?, class45: Class45?, i: Int, i_1_: Int): Renderer? {
+    fun method862(canvas: Canvas?, var_renderConfig: RenderConfig?, js5Archive: Js5Archive?, i: Int, i_1_: Int): Renderer? {
         try {
             anInt1532++
             if (!method215(27165)) throw RuntimeException("")
@@ -32,11 +32,11 @@ object Class93 {
             val l = opengl.init(canvas, 8, 8, 8, 24, 0, i_1_)
             if (l == 0L) throw RuntimeException("")
             if (i != 25542) return null
-            val glRenderDevice = GlRenderDevice(opengl, canvas, l, var_renderConfig, class45, i_1_)
+            val glRenderDevice = GlRenderDevice(opengl, canvas, l, var_renderConfig, js5Archive, i_1_)
             glRenderDevice.method3930(26.toByte())
             return glRenderDevice
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lt.D(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lt.D(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
         }
     }
 

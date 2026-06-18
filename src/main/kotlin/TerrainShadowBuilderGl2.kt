@@ -293,7 +293,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
         var anInt6939: Int = 0
         var anInt6941: Int = 0
         var aThread6946: Thread? = null
-        var aClass45_6950: Class45? = null
+        var aJs5Archive_6950: Js5Archive? = null
         fun method3018(i: Int) {
             InterfaceBounds.Companion.anInt6818 = i
         }
@@ -301,7 +301,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
         @JvmStatic
         fun method3020(i: Byte) {
             if (i.toInt() == -64) {
-                aClass45_6950 = null
+                aJs5Archive_6950 = null
                 aThread6946 = null
             }
         }

@@ -284,20 +284,20 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
         }
 
         @JvmStatic
-        fun method2510(class45: Class45?, class348_sub16_sub3: MidiSequencePlayer?, class45_5_: Class45?, bool: Boolean, soundChannelMixer: SoundChannelMixer?, class45_6_: Class45?): Boolean {
+        fun method2510(js5Archive: Js5Archive?, class348_sub16_sub3: MidiSequencePlayer?, js5Archive_5_: Js5Archive?, bool: Boolean, soundChannelMixer: SoundChannelMixer?, js5Archive_6_: Js5Archive?): Boolean {
             try {
                 ActorEntity.aSoundChannelMixer_8764 = soundChannelMixer
                 Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
-                MinimapTileEntry.aClass45_611 = class45
-                Class367_Sub9.aClass45_7371 = class45_6_
-                MapElementLookup.aClass45_4147 = class45_5_
+                MinimapTileEntry.aJs5Archive_611 = js5Archive
+                Class367_Sub9.aJs5Archive_7371 = js5Archive_6_
+                MapElementLookup.aJs5Archive_4147 = js5Archive_5_
                 Class367_Sub3.anIntArray7299 = IntArray(16)
                 if (bool != false) anInt6451 = 71
                 anInt6442++
                 for (i in 0..15) Class367_Sub3.anIntArray7299!![i] = 255
                 return true
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("rba.G(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + (if (class45_5_ != null) "{...}" else "null") + ',' + bool + ',' + (if (soundChannelMixer != null) "{...}" else "null") + ',' + (if (class45_6_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("rba.G(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + (if (js5Archive_5_ != null) "{...}" else "null") + ',' + bool + ',' + (if (soundChannelMixer != null) "{...}" else "null") + ',' + (if (js5Archive_6_ != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -306,8 +306,8 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 anInt6440++
                 if (Class75.aClass348_Sub42_Sub14_1243 != null) {
                     if (LinkedListNode.anInt4290 < 10) {
-                        if (!Class75.aClass45_1237!!.method413(100, Class75.aClass348_Sub42_Sub14_1243!!.aString9625!!)) {
-                            LinkedListNode.anInt4290 = (TerrainShadowBuilderGl2.aClass45_6950!!.method397((Class75.aClass348_Sub42_Sub14_1243!!.aString9625!!), 0)) / 10
+                        if (!Class75.aJs5Archive_1237!!.method413(100, Class75.aClass348_Sub42_Sub14_1243!!.aString9625!!)) {
+                            LinkedListNode.anInt4290 = (TerrainShadowBuilderGl2.aJs5Archive_6950!!.method397((Class75.aClass348_Sub42_Sub14_1243!!.aString9625!!), 0)) / 10
                             return
                         }
                         method126(-16203)
@@ -396,9 +396,9 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                         method867(true)
                     } else if (i <= -43) {
                         if (LinkedListNode.anInt4290 == 60) {
-                            if (Class75.aClass45_1237!!.method400(-18308, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) {
-                                if (!Class75.aClass45_1237!!.method413(100, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) return
-                                Class75.aSmoothingBuffer_1246 = (SkeletonSequenceLoader.method2300(Class75.aClass45_1237, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements", ModelBatchBase.aBoolean1900, (-91).toByte()))
+                            if (Class75.aJs5Archive_1237!!.method400(-18308, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) {
+                                if (!Class75.aJs5Archive_1237!!.method413(100, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) return
+                                Class75.aSmoothingBuffer_1246 = (SkeletonSequenceLoader.method2300(Class75.aJs5Archive_1237, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements", ModelBatchBase.aBoolean1900, (-91).toByte()))
                             } else Class75.aSmoothingBuffer_1246 = SmoothingBuffer(0)
                             method761()
                             LinkedListNode.anInt4290 = 70

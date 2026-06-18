@@ -29,7 +29,7 @@ open class LinkedListNode {
         @JvmField
         var anInt4285: Int = 0
         @JvmField
-        var aClass45_4286: Class45? = null
+        var aJs5Archive_4286: Js5Archive? = null
         @JvmField
         var anInt4287: Int = 0
         @JvmField
@@ -160,7 +160,7 @@ open class LinkedListNode {
 
         @JvmStatic
         fun method2713(i: Int) {
-            aClass45_4286 = null
+            aJs5Archive_4286 = null
             aClass318_Sub1Array4293 = null
             if (i != 0) method2711(-47, 87, null, 85, false, -126, -116, -51, -44, null, 75, -69, 87, null)
             anIntArray4288 = null

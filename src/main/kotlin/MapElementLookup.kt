@@ -41,7 +41,7 @@ class MapElementLookup {
         @JvmField
         var anInt4144: Int = -1
         var anInt4145: Int = 0
-        var aClass45_4147: Class45? = null
+        var aJs5Archive_4147: Js5Archive? = null
         var anInt4149: Int = 0
         fun method2643(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             if (WidgetRedrawRegion.anIntArrayArray4253 != null) WidgetRedrawRegion.anIntArrayArray4253!![i]!![i_0_] = 0xffffff.inv() or i_1_
@@ -52,7 +52,7 @@ class MapElementLookup {
         @JvmStatic
         fun method2645(i: Int) {
             if (i != -16777216) method2643(-59, 61, -83, 34, -32)
-            aClass45_4147 = null
+            aJs5Archive_4147 = null
         }
     }
 }

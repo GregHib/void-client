@@ -1,8 +1,8 @@
 /* Class259 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
-    private val aClass45_3299: Class45?
+class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+    private val aJs5Archive_3299: Js5Archive?
     private val aClass60_3303 = Class60(64)
     var anInt3305: Int = 0
     fun method1976(i: Int, i_1_: Int): KeyboardLayoutConfig {
@@ -14,8 +14,8 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
         if (keyboardLayoutConfig != null) return keyboardLayoutConfig
         val i_2_ = 44 % ((-41 - i_1_) / 33)
         val `is`: ByteArray?
-        synchronized(aClass45_3299!!) {
-            `is` = aClass45_3299.method410(-1860, 19, i)
+        synchronized(aJs5Archive_3299!!) {
+            `is` = aJs5Archive_3299.method410(-1860, 19, i)
         }
         keyboardLayoutConfig = KeyboardLayoutConfig()
         if (`is` != null) keyboardLayoutConfig.method1255(Buffer(`is`), -1)
@@ -27,10 +27,10 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
 
     init {
         try {
-            aClass45_3299 = class45
-            this.anInt3305 = aClass45_3299!!.method407(0, 19)
+            aJs5Archive_3299 = js5Archive
+            this.anInt3305 = aJs5Archive_3299!!.method407(0, 19)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("uea.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("uea.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

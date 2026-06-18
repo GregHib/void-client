@@ -1,8 +1,8 @@
 /* Class65 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
-    private val aClass45_1141: Class45?
+class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+    private val aJs5Archive_1141: Js5Archive?
     private val aClass60_1145 = Class60(256)
     fun method694(i: Int) {
         anInt1140++
@@ -38,8 +38,8 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         }
         if (class348_sub42_sub1 != null) return class348_sub42_sub1
         val `is`: ByteArray?
-        synchronized(aClass45_1141!!) {
-            `is` = aClass45_1141.method410(-1860, 26, i)
+        synchronized(aJs5Archive_1141!!) {
+            `is` = aJs5Archive_1141.method410(-1860, 26, i)
         }
         class348_sub42_sub1 = ParamMap()
         if (`is` != null) class348_sub42_sub1.method3168(Buffer(`is`), (-101).toByte())
@@ -51,10 +51,10 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
 
     init {
         try {
-            aClass45_1141 = class45
-            aClass45_1141!!.method407(0, 26)
+            aJs5Archive_1141 = js5Archive
+            aJs5Archive_1141!!.method407(0, 26)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("kb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("kb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -100,17 +100,17 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         }
 
         @JvmStatic
-        fun method699(class45: Class45?, i: Byte, class45_4_: Class45?, class45_5_: Class45?, class45_6_: Class45?) {
+        fun method699(js5Archive: Js5Archive?, i: Byte, js5Archive_4_: Js5Archive?, js5Archive_5_: Js5Archive?, js5Archive_6_: Js5Archive?) {
             try {
-                ScatterTextureNode.aClass45_9365 = class45_6_
+                ScatterTextureNode.aJs5Archive_9365 = js5Archive_6_
                 anInt1147++
-                GroundDecorEntity.aClass45_8755 = class45_5_
-                RenderConfigFactory.aClass45_2978 = class45_4_
-                WarpTextureNode.aClass46ArrayArray9427 = arrayOfNulls<Array<Class46?>>(RenderConfigFactory.aClass45_2978!!.method414(-1))
-                AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactory.aClass45_2978!!.method414(-1))
+                GroundDecorEntity.aJs5Archive_8755 = js5Archive_5_
+                RenderConfigFactory.aJs5Archive_2978 = js5Archive_4_
+                WarpTextureNode.aClass46ArrayArray9427 = arrayOfNulls<Array<Class46?>>(RenderConfigFactory.aJs5Archive_2978!!.method414(-1))
+                AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactory.aJs5Archive_2978!!.method414(-1))
                 val i_7_ = -72 % ((35 - i) / 41)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("kb.F(" + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + (if (class45_4_ != null) "{...}" else "null") + ',' + (if (class45_5_ != null) "{...}" else "null") + ',' + (if (class45_6_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("kb.F(" + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive_4_ != null) "{...}" else "null") + ',' + (if (js5Archive_5_ != null) "{...}" else "null") + ',' + (if (js5Archive_6_ != null) "{...}" else "null") + ')'))
             }
         }
 

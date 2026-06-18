@@ -103,7 +103,7 @@ object GameDisplayManager {
                         Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
                         Class98.aClass348_Sub16_Sub3_1564!!.method2867(i xor 0x1eaf)
                         TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
-                        if (ModelDefinition.aClass45_1848 != null) SpriteDefinition.anInt7068 = 2
+                        if (ModelDefinition.aJs5Archive_1848 != null) SpriteDefinition.anInt7068 = 2
                         else SpriteDefinition.anInt7068 = 0
                         MaterialPass.aClass348_Sub2_3683 = null
                     }
@@ -120,7 +120,7 @@ object GameDisplayManager {
                 } catch (exception: Exception) {
                     exception.printStackTrace()
                     Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
-                    ModelDefinition.aClass45_1848 = null
+                    ModelDefinition.aJs5Archive_1848 = null
                     MaterialPass.aClass348_Sub2_3683 = null
                     GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                     TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null

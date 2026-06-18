@@ -35,10 +35,10 @@ class ModelOrSpriteHolder {
             if (i.toInt() != 72) method173(39, null, null)
         }
 
-        fun method172(i: Int, class45: Class45?) {
+        fun method172(i: Int, js5Archive: Js5Archive?) {
             if (i != 30284) method170(true)
             anInt116++
-            Class59_Sub2_Sub1.aClass45_8670 = class45
+            Class59_Sub2_Sub1.aJs5Archive_8670 = js5Archive
         }
 
         @JvmStatic

@@ -58,7 +58,7 @@ class Crc64Hashable : Interface14 {
         @JvmField
         var anIntArray4983: IntArray? = null
         @JvmField
-        var aClass45_4984: Class45? = null
+        var aJs5Archive_4984: Js5Archive? = null
         @JvmField
         var anInt4985: Int = 0
         @JvmField
@@ -74,14 +74,14 @@ class Crc64Hashable : Interface14 {
         @JvmStatic
         fun method1112(i: Int) {
             if (i != 1) aSlotBindingArray4987 = null
-            aClass45_4984 = null
+            aJs5Archive_4984 = null
             anIntArray4983 = null
             aSlotBindingArray4987 = null
         }
 
         fun method1113(i: Int, i_0_: Int, i_1_: Int): Boolean {
             anInt4995++
-            if (i_1_ >= -3) aClass45_4984 = null
+            if (i_1_ >= -3) aJs5Archive_4984 = null
             return (GlowPostProcessor.method1412((-35).toByte(), i_0_, i) and (LocalizedText.method2058(i, i_0_, 72) or ((i and 0x2000) != 0) or method3203(i_0_, 114.toByte(), i)))
         }
 

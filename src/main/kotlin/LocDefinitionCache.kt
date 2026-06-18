@@ -3,10 +3,10 @@ import WidgetDefinition.Companion.method268
 /* Class268 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     var anInt3429: Int = 0
     private val aClass60_3433 = Class60(64)
-    private val aClass45_3442: Class45?
+    private val aJs5Archive_3442: Js5Archive?
     @JvmField
     var anInt3447: Int = 0
     fun method2032(i: Int, i_3_: Int) {
@@ -34,8 +34,8 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         }
         if (locTypeConfig != null) return locTypeConfig
         val `is`: ByteArray?
-        synchronized(aClass45_3442!!) {
-            `is` = aClass45_3442.method410(-1860, 4, i)
+        synchronized(aJs5Archive_3442!!) {
+            `is` = aJs5Archive_3442.method410(-1860, 4, i)
         }
         locTypeConfig = LocTypeConfig()
         locTypeConfig.anInt3573 = i
@@ -57,10 +57,10 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
 
     init {
         try {
-            aClass45_3442 = class45
-            this.anInt3429 = aClass45_3442!!.method407(0, 4)
+            aJs5Archive_3442 = js5Archive
+            this.anInt3429 = aJs5Archive_3442!!.method407(0, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("cb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("cb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -3,11 +3,11 @@ import Class367_Sub1.Companion.method3533
 /* Class141 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_4_: Class45?) {
+class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_4_: Js5Archive?) {
     private var aClass60_1963 = Class60(64)
     @JvmField
-    var aClass45_1965: Class45? = null
-    private val aClass45_1971: Class45?
+    var aJs5Archive_1965: Js5Archive? = null
+    private val aJs5Archive_1971: Js5Archive?
     @JvmField
     var aClass60_1976: Class60 = Class60(64)
     fun method1173(i: Byte, i_0_: Int): MapSceneIconDef? {
@@ -18,8 +18,8 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
         }
         if (mapSceneIconDef != null) return mapSceneIconDef
         val `is`: ByteArray?
-        synchronized(aClass45_1971!!) {
-            `is` = aClass45_1971.method410(i + -1891, 34, i_0_)
+        synchronized(aJs5Archive_1971!!) {
+            `is` = aJs5Archive_1971.method410(i + -1891, 34, i_0_)
         }
         mapSceneIconDef = MapSceneIconDef()
         if (i.toInt() != 31) return null
@@ -75,11 +75,11 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
 
     init {
         try {
-            this.aClass45_1965 = class45_4_
-            aClass45_1971 = class45
-            aClass45_1971!!.method407(0, 34)
+            this.aJs5Archive_1965 = js5Archive_4_
+            aJs5Archive_1971 = js5Archive
+            aJs5Archive_1971!!.method407(0, 34)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_4_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("oda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_4_ != null) "{...}" else "null") + ')'))
         }
     }
 

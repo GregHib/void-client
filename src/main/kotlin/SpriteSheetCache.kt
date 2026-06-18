@@ -107,7 +107,7 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
                     val `object`: Any? = null
                     var abstractModelRenderer = (TerrainTileShape.aClass60_8807!!.method583(i_9_.toLong(), 118) as? AbstractModelRenderer?)
                     if (abstractModelRenderer == null) {
-                        val spriteImages = SpriteImage.method1519(CameraRotationStub.aClass45_322!!, i_9_, 0)
+                        val spriteImages = SpriteImage.method1519(CameraRotationStub.aJs5Archive_322!!, i_9_, 0)
                         if (spriteImages == null) return
                         abstractModelRenderer = FacingDirectionNode.aRenderer6654!!.method3691(spriteImages[0], true)
                         TerrainTileShape.aClass60_8807!!.method582(abstractModelRenderer, i_9_.toLong(), (-115).toByte())

@@ -2,7 +2,7 @@ import MinimapRectClipper.method226
 import SceneTilePlaneManager.method260
 import SoundBankPatch.Companion.method2929
 import TextureAtlasState.Companion.method3490
-import Class45.Companion.method395
+import Js5Archive.Companion.method395
 
 /* Class362 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

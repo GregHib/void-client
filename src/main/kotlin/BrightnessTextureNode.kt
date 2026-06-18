@@ -52,14 +52,14 @@ class BrightnessTextureNode internal constructor(i: Int) : AbstractProceduralTex
         }
 
         @JvmStatic
-        fun method3086(i: Int, class348_sub16_sub3: MidiSequencePlayer?, i_5_: Int, class45: Class45?, bool: Boolean, i_6_: Int, i_7_: Int) {
+        fun method3086(i: Int, class348_sub16_sub3: MidiSequencePlayer?, i_5_: Int, js5Archive: Js5Archive?, bool: Boolean, i_6_: Int, i_7_: Int) {
             try {
                 anInt9219++
                 if (i != 2) aIntRange_9216 = null
-                method2732(i_6_, i_7_, bool, 96, class45, i_5_)
+                method2732(i_6_, i_7_, bool, 96, js5Archive, i_5_)
                 GlBufferObject.aClass348_Sub16_Sub3_4743 = class348_sub16_sub3
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("pba.D(" + i + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + bool + ',' + i_6_ + ',' + i_7_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("pba.D(" + i + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + bool + ',' + i_6_ + ',' + i_7_ + ')'))
             }
         }
     }

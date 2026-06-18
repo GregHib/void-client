@@ -25,7 +25,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
         @JvmField
         var aClass348_Sub6_5206: HslColorTableNode? = HslColorTableNode(0, 0)
         @JvmField
-        var aClass45_5207: Class45? = null
+        var aJs5Archive_5207: Js5Archive? = null
 
         /*synthetic*/
         var aClass5208: Class<*>? = null
@@ -43,7 +43,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
             aFontMetaRef_5200 = null
             aFontMetaRef_5204 = null
             aClass348_Sub6_5206 = null
-            aClass45_5207 = null
+            aJs5Archive_5207 = null
         }
 
         fun method168(i: Byte) {

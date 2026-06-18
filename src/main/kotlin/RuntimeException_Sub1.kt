@@ -49,7 +49,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
         }
 
         @JvmStatic
-        fun method4011(i: Int, class45: Class45?) {
+        fun method4011(i: Int, js5Archive: Js5Archive?) {
             anInt4598++
             if (i != 1024) method4012(null, 68.toByte())
             Client.anInt5171 = 0
@@ -59,8 +59,8 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
             DisplaySettingsConfig.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>((KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637]) + 1)
             GlTexture2D.anInt8550 = 0
             RingBufferInputStream.anInt4559 = 0
-            CacheArchiveIndex.method1072(class45, (-107).toByte())
-            ModelOrSpriteHolder.method172(30284, class45)
+            CacheArchiveIndex.method1072(js5Archive, (-107).toByte())
+            ModelOrSpriteHolder.method172(30284, js5Archive)
         }
 
         @JvmStatic

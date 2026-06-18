@@ -74,10 +74,10 @@ object Class99 {
     @JvmStatic
     fun method882(i: Byte) {
         if (i.toInt() != 11) method882(((-62).toByte()).toByte())
-        WarpTextureNode.aClass46ArrayArray9427 = arrayOfNulls(RenderConfigFactory.aClass45_2978!!.method414(-1))
+        WarpTextureNode.aClass46ArrayArray9427 = arrayOfNulls(RenderConfigFactory.aJs5Archive_2978!!.method414(-1))
         anInt1573++
-        WorldMapTextLabel.aClass46ArrayArray8584 = arrayOfNulls(RenderConfigFactory.aClass45_2978!!.method414(-1))
-        AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactory.aClass45_2978!!.method414(-1))
+        WorldMapTextLabel.aClass46ArrayArray8584 = arrayOfNulls(RenderConfigFactory.aJs5Archive_2978!!.method414(-1))
+        AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactory.aJs5Archive_2978!!.method414(-1))
     }
 
     @JvmStatic

@@ -252,7 +252,7 @@ class LongKeyNode : LinkedListNode {
                         i_37_++
                     }
                     if (OpenGlRenderNode.aSmoothingBuffer_10488 != null) {
-                        Class95.aClass45_1541!!.anInt634 = 1
+                        Class95.aJs5Archive_1541!!.anInt634 = 1
                         TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1220(116.toByte(), 64, 1024)
                         for (i_51_ in 0..<OpenGlRenderNode.aSmoothingBuffer_10488!!.anInt3241) {
                             val i_52_ = (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3238!![i_51_])
@@ -267,8 +267,8 @@ class LongKeyNode : LinkedListNode {
                             }
                         }
                         TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1220(13.toByte(), 64, 128)
-                        Class95.aClass45_1541!!.anInt634 = 2
-                        Class95.aClass45_1541!!.method412((-126).toByte())
+                        Class95.aJs5Archive_1541!!.anInt634 = 2
+                        Class95.aJs5Archive_1541!!.method412((-126).toByte())
                     }
                 }
                 return true

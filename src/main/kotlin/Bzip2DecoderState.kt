@@ -97,20 +97,20 @@ class Bzip2DecoderState internal constructor() {
         var anInt558: Int = -1
 
         @JvmStatic
-        fun method368(i: Int, i_0_: Int, bool: Boolean, i_1_: Int, class45: Class45?, i_2_: Int, i_3_: Int) {
+        fun method368(i: Int, i_0_: Int, bool: Boolean, i_1_: Int, js5Archive: Js5Archive?, i_2_: Int, i_3_: Int) {
             if (i_0_ != 18002) anInt558 = 41
             anInt551++
             if (i_3_ > 0) {
                 KeyboardInputSource.aBoolean4275 = bool
                 SpriteDefinition.anInt7068 = 1
-                ModelDefinition.aClass45_1848 = class45
+                ModelDefinition.aJs5Archive_1848 = js5Archive
                 NpcActorEntity.anInt10074 = i_1_
                 GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                 SceneLinkedListNode.anInt3971 = i_2_
                 Class58.anInt1059 = i
                 WaterDetailOptionState.anInt5994 = (Class98.aClass348_Sub16_Sub3_1564!!.method2844(103.toByte()) / i_3_)
                 if (WaterDetailOptionState.anInt5994 < 1) WaterDetailOptionState.anInt5994 = 1
-            } else method2732(i_2_, i_1_, bool, 123, class45, i)
+            } else method2732(i_2_, i_1_, bool, 123, js5Archive, i)
         }
 
         @JvmStatic

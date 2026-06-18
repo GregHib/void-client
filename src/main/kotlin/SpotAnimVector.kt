@@ -85,7 +85,7 @@ class SpotAnimVector {
         var anInt2300: Int = 0
         var aIntRange_2305: IntRange? = IntRange(57, 10)
         @JvmField
-        var aClass45_2306: Class45? = null
+        var aJs5Archive_2306: Js5Archive? = null
         @JvmField
         var aProjectileFactory_2307: ProjectileFactory? = ProjectileFactory(7, 2)
         @JvmField
@@ -97,7 +97,7 @@ class SpotAnimVector {
             var bool_1_ = false
             var bool_2_ = false
             var i_3_ = 0
-            if (bool != true) aClass45_2306 = null
+            if (bool != true) aJs5Archive_2306 = null
             val i_4_ = string.length
             for (i_5_ in 0..<i_4_) {
                 var i_6_ = string.get(i_5_).code
@@ -140,7 +140,7 @@ class SpotAnimVector {
             if (i.toInt() != -110) method1333(null, -51, null)
             aIntRange_2305 = null
             aAbstractModelRenderer_2309 = null
-            aClass45_2306 = null
+            aJs5Archive_2306 = null
         }
     }
 }

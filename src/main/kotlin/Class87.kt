@@ -5,9 +5,9 @@ import Class52.Companion.method494
 /* Class87 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class87 internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_6_: Class45?, class45_7_: Class45?) {
+class Class87 internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_6_: Js5Archive?, js5Archive_7_: Js5Archive?) {
     private var aClass60_1487: Class60? = Class60(64)
-    private val aClass45_1488: Class45?
+    private val aJs5Archive_1488: Js5Archive?
     private var aClass60_1491: Class60? = Class60(100)
 
     fun method834(i: Byte) {
@@ -30,8 +30,8 @@ class Class87 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         if (i_0_ != 7) aClass60_1491 = null
         if (widgetDefinition != null) return widgetDefinition
         val `is`: ByteArray?
-        synchronized(aClass45_1488!!) {
-            `is` = aClass45_1488.method410(-1860, method256(i, 125.toByte()), method494(i_0_ xor 0x55, i))
+        synchronized(aJs5Archive_1488!!) {
+            `is` = aJs5Archive_1488.method410(-1860, method256(i, 125.toByte()), method494(i_0_ xor 0x55, i))
         }
         widgetDefinition = WidgetDefinition()
         widgetDefinition.anInt269 = i
@@ -83,14 +83,14 @@ class Class87 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
 
     init {
         try {
-            aClass45_1488 = class45
-            if (aClass45_1488 != null) {
-                val i_8_ = aClass45_1488.method414(-1) + -1
-                aClass45_1488.method407(0, i_8_)
+            aJs5Archive_1488 = js5Archive
+            if (aJs5Archive_1488 != null) {
+                val i_8_ = aJs5Archive_1488.method414(-1) + -1
+                aJs5Archive_1488.method407(0, i_8_)
             }
-            method1711(7, class45_6_, 2, class45_7_)
+            method1711(7, js5Archive_6_, 2, js5Archive_7_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lfa.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_6_ != null) "{...}" else "null") + ',' + (if (class45_7_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("lfa.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_6_ != null) "{...}" else "null") + ',' + (if (js5Archive_7_ != null) "{...}" else "null") + ')'))
         }
     }
 

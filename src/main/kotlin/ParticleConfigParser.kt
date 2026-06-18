@@ -63,10 +63,10 @@ class ParticleConfigParser {
             return -1
         }
 
-        fun method2277(i: Int, class45: Class45, i_5_: Int, i_6_: Int): ModelDefinition? {
+        fun method2277(i: Int, js5Archive: Js5Archive, i_5_: Int, i_6_: Int): ModelDefinition? {
             if (i_6_ != -1) aBoolean3819 = true
             anInt3815++
-            val `is` = class45.method410(-1860, i_5_, i)
+            val `is` = js5Archive.method410(-1860, i_5_, i)
             if (`is` == null) return null
             return ModelDefinition(`is`)
         }

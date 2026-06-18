@@ -83,7 +83,7 @@ class ServerConnectionInfo {
                     SceneryDetailOptionState.aCircleRasterizer_6098 = HeapInfoRecord.aCircleRasterizer_4938
                     Class64.aFloat1136 = TextureMetadataProvider.aFloat4626
                     DebugOverlayRenderer.aFloat3172 = NormalMapGenerator.aFloat3462
-                    Class45.aFloat670 = ModelVertexColorBuffer.aFloat6586
+                    Js5Archive.aFloat670 = ModelVertexColorBuffer.aFloat6586
                     GlTexture1D.aFloat8560 = RangedGraphicsOptionState.aFloat5945
                     ParticleEmitterFactory.aFloat3177 = CollisionMap.aFloat4455
                     GroundDecorEntity.anInt8739 = NativeIndexBuffer.anInt4703

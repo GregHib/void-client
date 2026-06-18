@@ -75,7 +75,7 @@ abstract class TerrainTile internal constructor(i: Int, i_60_: Int, i_61_: Int, 
 
     companion object {
         @JvmField
-        var aClass45_4585: Class45? = null
+        var aJs5Archive_4585: Js5Archive? = null
         @JvmField
         var anInt4586: Int = 0
         @JvmField
@@ -106,7 +106,7 @@ abstract class TerrainTile internal constructor(i: Int, i_60_: Int, i_61_: Int, 
         @JvmStatic
         fun method3988(i: Int) {
             val i_56_ = 49 / ((15 - i) / 40)
-            aClass45_4585 = null
+            aJs5Archive_4585 = null
         }
     }
 }

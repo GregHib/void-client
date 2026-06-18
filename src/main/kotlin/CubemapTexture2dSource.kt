@@ -40,11 +40,11 @@ class CubemapTexture2dSource internal constructor(private val aHa_Sub2_8693: Ope
         @JvmField
         var aFloat8696: Float = 0f
         @JvmStatic
-        fun method2260(i: Int, i_4_: Int, l: Long, i_5_: Int, bool: Boolean, class45: Class45?, i_6_: Byte, i_7_: Int) {
+        fun method2260(i: Int, i_4_: Int, l: Long, i_5_: Int, bool: Boolean, js5Archive: Js5Archive?, i_6_: Byte, i_7_: Int) {
             do {
                 try {
                     WaterDetailOptionState.anInt5994 = 10000
-                    ModelDefinition.aClass45_1848 = class45
+                    ModelDefinition.aJs5Archive_1848 = js5Archive
                     Class58.anInt1059 = i_7_
                     NpcActorEntity.anInt10074 = i
                     KeyboardInputSource.aBoolean4275 = bool
@@ -57,7 +57,7 @@ class CubemapTexture2dSource internal constructor(private val aHa_Sub2_8693: Ope
                     if (i_6_ >= 54) break
                     method2260(36, 99, 61L, 90, false, null, 126.toByte(), -67)
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("dq.E(" + i + ',' + i_4_ + ',' + l + ',' + i_5_ + ',' + bool + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("dq.E(" + i + ',' + i_4_ + ',' + l + ',' + i_5_ + ',' + bool + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ')'))
                 }
                 break
             } while (false)

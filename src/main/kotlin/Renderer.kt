@@ -395,17 +395,17 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
         @JvmStatic
         @Synchronized
-        fun method3692(i: Int, i_168_: Int, i_169_: Int, class45: Class45?, i_170_: Int, var_renderConfig: RenderConfig?, canvas: Canvas?, i_171_: Int): Renderer? {
+        fun method3692(i: Int, i_168_: Int, i_169_: Int, js5Archive: Js5Archive?, i_170_: Int, var_renderConfig: RenderConfig?, canvas: Canvas?, i_171_: Int): Renderer? {
             try {
                 anInt4576++
                 if (i_170_ == i_171_) return method2753(true, i_168_, i_169_, canvas, var_renderConfig)
                 if (i_171_ == 2) return WorldMapToggle.method2297(-6, i_168_, var_renderConfig, canvas, i_169_)
                 if (i_171_ == 1) return NodeDeque.method2000(3, i, canvas, var_renderConfig)
-                if (i_171_ == 5) return Class93.method862(canvas, var_renderConfig, class45, 25542, i)
-                if (i_171_ == 3) return Class96.method870(i, i_170_ xor 0x4a31, var_renderConfig!!, class45!!, canvas!!)
+                if (i_171_ == 5) return Class93.method862(canvas, var_renderConfig, js5Archive, 25542, i)
+                if (i_171_ == 3) return Class96.method870(i, i_170_ xor 0x4a31, var_renderConfig!!, js5Archive!!, canvas!!)
                 throw IllegalArgumentException("UM")
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_170_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_171_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_170_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_171_ + ')'))
             }
         }
 

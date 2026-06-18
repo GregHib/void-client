@@ -4,9 +4,9 @@ import MultiLevelOptionState.Companion.method1850
 /* Class263 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, class45: Class45?, class45_29_: Class45?) {
-    private val aClass45_3343: Class45?
-    var aClass45_3345: Class45? = null
+class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, js5Archive: Js5Archive?, js5Archive_29_: Js5Archive?) {
+    private val aJs5Archive_3343: Js5Archive?
+    var aJs5Archive_3345: Js5Archive? = null
     private var aClass60_3350: Class60?
     var aBoolean3355: Boolean = false
     var aBoolean3359: Boolean = false
@@ -32,8 +32,8 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         }
         if (class51 != null) return class51
         val `is`: ByteArray?
-        synchronized(aClass45_3343!!) {
-            `is` = aClass45_3343.method410(i + -1860, method1850(i_0_, 111), Class5_Sub1.method185(i_0_, (-90).toByte()))
+        synchronized(aJs5Archive_3343!!) {
+            `is` = aJs5Archive_3343.method410(i + -1860, method1850(i_0_, 111), Class5_Sub1.method185(i_0_, (-90).toByte()))
         }
         class51 = Class51()
         class51.anInt941 = i_0_
@@ -144,13 +144,13 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         do {
             try {
                 this.aBoolean3359 = bool
-                this.aClass45_3345 = class45_29_
-                aClass45_3343 = class45
-                if (aClass45_3343 == null) break
-                val i_30_ = aClass45_3343.method414(-1) + -1
-                aClass45_3343.method407(0, i_30_)
+                this.aJs5Archive_3345 = js5Archive_29_
+                aJs5Archive_3343 = js5Archive
+                if (aJs5Archive_3343 == null) break
+                val i_30_ = aJs5Archive_3343.method414(-1) + -1
+                aJs5Archive_3343.method407(0, i_30_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("uha.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_29_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("uha.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_29_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

@@ -58,7 +58,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
         var anInt4841: Int = 0
         var anInt4842: Int = 0
         @JvmField
-        var aClass45_4843: Class45? = null
+        var aJs5Archive_4843: Js5Archive? = null
         var anInt4844: Int = 0
         private var aCharArray4845: CharArray? = CharArray(64)
         @JvmField
@@ -69,7 +69,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
             aConfigFlagUtil_4835 = null
             aServerConnectionInfo_4839 = null
             val i_2_ = -29 / ((i - -49) / 43)
-            aClass45_4843 = null
+            aJs5Archive_4843 = null
             aCharArray4845 = null
             aClass348_Sub42_Sub12_4846 = null
         }

@@ -9,7 +9,7 @@ object SceneTilePlaneManager {
     @JvmField
     var anInt232: Int = 0
     @JvmField
-    var aClass45_233: Class45? = null
+    var aJs5Archive_233: Js5Archive? = null
     @JvmField
     var anInt234: Int = 0
 
@@ -49,7 +49,7 @@ object SceneTilePlaneManager {
 
     @JvmStatic
     fun method260(bool: Boolean): Int {
-        if (bool != false) aClass45_233 = null
+        if (bool != false) aJs5Archive_233 = null
         anInt232++
         if (Buffer.anInt7207 == 1) return PerlinNoiseTextureNode.anInt9157
         return 0
@@ -57,7 +57,7 @@ object SceneTilePlaneManager {
 
     @JvmStatic
     fun method261(i: Byte) {
-        aClass45_233 = null
+        aJs5Archive_233 = null
         aWidgetNodeLink_231 = null
         if (i.toInt() != -120) method262(-23)
     }

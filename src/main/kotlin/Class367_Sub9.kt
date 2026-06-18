@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glUniform4fARB
 import jaggl.OpenGL.Companion.glUseProgramObjectARB
 import kotlin.math.abs
 
-class Class367_Sub9 internal constructor(glRenderDevice: GlRenderDevice, class45: Class45?, normalMapGenerator: NormalMapGenerator?) : AbstractRenderPass(glRenderDevice) {
+class Class367_Sub9 internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?, normalMapGenerator: NormalMapGenerator?) : AbstractRenderPass(glRenderDevice) {
     private var aClass89_7369: Class89? = null
     private var aBoolean7373 = false
     private var aNormalMapGenerator_7375: NormalMapGenerator? = null
@@ -64,14 +64,14 @@ class Class367_Sub9 internal constructor(glRenderDevice: GlRenderDevice, class45
     init {
         try {
             aNormalMapGenerator_7375 = normalMapGenerator
-            if (class45 != null && glRenderDevice!!.aBoolean9921 && glRenderDevice.aBoolean9922) {
-                val class39 = (ShaderObject.method2608(glRenderDevice, class45.method391("gl", "environment_mapped_water_v", -29832), -108, 35633))
-                val class39_13_ = (ShaderObject.method2608(glRenderDevice, class45.method391("gl", "environment_mapped_water_f", -29832), -122, 35632))
+            if (js5Archive != null && glRenderDevice!!.aBoolean9921 && glRenderDevice.aBoolean9922) {
+                val class39 = (ShaderObject.method2608(glRenderDevice, js5Archive.method391("gl", "environment_mapped_water_v", -29832), -108, 35633))
+                val class39_13_ = (ShaderObject.method2608(glRenderDevice, js5Archive.method391("gl", "environment_mapped_water_f", -29832), -122, 35632))
                 aClass89_7369 = method2582(glRenderDevice, arrayOf<GlShaderObjectHandle?>(class39, class39_13_), -2113)
                 aBoolean7376 = (aClass89_7369 != null && aNormalMapGenerator_7375!!.method2041(120.toByte()))
             } else aBoolean7376 = false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ko.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ko.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -105,7 +105,7 @@ class Class367_Sub9 internal constructor(glRenderDevice: GlRenderDevice, class45
         @JvmField
         var anInt7370: Int = 0
         @JvmField
-        var aClass45_7371: Class45? = null
+        var aJs5Archive_7371: Js5Archive? = null
         @JvmField
         var anInt7372: Int = 0
         @JvmField
@@ -148,7 +148,7 @@ class Class367_Sub9 internal constructor(glRenderDevice: GlRenderDevice, class45
 
         @JvmStatic
         fun method3552(i: Int) {
-            aClass45_7371 = null
+            aJs5Archive_7371 = null
             aIntRange_7367 = null
             aStringArray7378 = null
             if (i != 87) anInt7379 = 80

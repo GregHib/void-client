@@ -154,13 +154,13 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
             try {
                 if (SpriteDefinition.anInt7068 == 2) {
                     if (MaterialPass.Companion.aClass348_Sub2_3683 == null) {
-                        MaterialPass.Companion.aClass348_Sub2_3683 = MidiFileBuilder.method2734(ModelDefinition.aClass45_1848!!, (NpcActorEntity.anInt10074), SceneLinkedListNode.anInt3971)
+                        MaterialPass.Companion.aClass348_Sub2_3683 = MidiFileBuilder.method2734(ModelDefinition.aJs5Archive_1848!!, (NpcActorEntity.anInt10074), SceneLinkedListNode.anInt3971)
                         if (MaterialPass.Companion.aClass348_Sub2_3683 == null) return false
                     }
-                    if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(MinimapTileEntry.aClass45_611, MapElementLookup.aClass45_4147)
+                    if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(MinimapTileEntry.aJs5Archive_611, MapElementLookup.aJs5Archive_4147)
                     var class348_sub16_sub3 = Class98.aClass348_Sub16_Sub3_1564!!
                     if (GlBufferObject.aClass348_Sub16_Sub3_4743 != null) class348_sub16_sub3 = GlBufferObject.aClass348_Sub16_Sub3_4743!!
-                    if (class348_sub16_sub3.method2866((MaterialPass.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, Class367_Sub9.aClass45_7371, -35)) {
+                    if (class348_sub16_sub3.method2866((MaterialPass.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, Class367_Sub9.aJs5Archive_7371, -35)) {
                         Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                         Class98.aClass348_Sub16_Sub3_1564!!.method2864(52.toByte())
                         if (DirectionalLightTextureNode.anInt9444 <= 0) {
@@ -185,7 +185,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
                             else Class98.aClass348_Sub16_Sub3_1564!!.method2870(MaterialPass.Companion.aClass348_Sub2_3683, BloomGraphicsOptionState.aLong5971, KeyboardInputSource.aBoolean4275, true, 24.toByte())
                         }
                         if (ActorEntity.aSoundChannelMixer_8764 != null) ActorEntity.aSoundChannelMixer_8764!!.method2088(bool, Class98.aClass348_Sub16_Sub3_1564)
-                        ModelDefinition.aClass45_1848 = null
+                        ModelDefinition.aJs5Archive_1848 = null
                         MaterialPass.Companion.aClass348_Sub2_3683 = null
                         BloomGraphicsOptionState.aLong5971 = 0L
                         TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
@@ -200,7 +200,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
                 GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                 TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
                 MaterialPass.Companion.aClass348_Sub2_3683 = null
-                ModelDefinition.aClass45_1848 = null
+                ModelDefinition.aJs5Archive_1848 = null
                 SpriteDefinition.anInt7068 = 0
             }
             return false

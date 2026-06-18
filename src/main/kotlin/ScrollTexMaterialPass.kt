@@ -145,7 +145,7 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
 
     companion object {
         @JvmField
-        var aClass45_6277: Class45? = null
+        var aJs5Archive_6277: Js5Archive? = null
         @JvmField
         var anInt6279: Int = 0
         @JvmField
@@ -210,7 +210,7 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
         @JvmStatic
         fun method2166(i: Int) {
             if (i == 6336) {
-                aClass45_6277 = null
+                aJs5Archive_6277 = null
                 anIntArray6290 = null
             }
         }

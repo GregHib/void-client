@@ -28,13 +28,13 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
 
     companion object {
         @JvmField
-        var aClass45_8667: Class45? = null
+        var aJs5Archive_8667: Js5Archive? = null
         @JvmField
         var anInt8668: Int = 0
         @JvmField
         var anInt8669: Int = 0
         @JvmField
-        var aClass45_8670: Class45? = null
+        var aJs5Archive_8670: Js5Archive? = null
         @JvmField
         var anInt8671: Int = 0
         @JvmField
@@ -46,7 +46,7 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
             try {
                 anInt8673++
                 var is_1_: IntArray? = null
-                if (i != 255) aClass45_8670 = null
+                if (i != 255) aJs5Archive_8670 = null
                 var is_2_: IntArray? = null
                 var is_3_: IntArray? = null
                 var fs: Array<FloatArray?>? = null
@@ -151,9 +151,9 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
 
         @JvmStatic
         fun method568(bool: Boolean) {
-            aClass45_8670 = null
-            aClass45_8667 = null
-            if (bool != true) aClass45_8670 = null
+            aJs5Archive_8670 = null
+            aJs5Archive_8667 = null
+            if (bool != true) aJs5Archive_8670 = null
         }
     }
 }

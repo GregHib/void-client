@@ -259,11 +259,11 @@ class Class78 internal constructor(private val aRandomAccessFileOnDisk_1312: Ran
         @JvmField
         var anInt1318: Int = 0
         @JvmField
-        var aClass45_1322: Class45? = null
+        var aJs5Archive_1322: Js5Archive? = null
         @JvmStatic
         fun method786(i: Byte) {
-            if (i.toInt() != 0) aClass45_1322 = null
-            aClass45_1322 = null
+            if (i.toInt() != 0) aJs5Archive_1322 = null
+            aJs5Archive_1322 = null
         }
     }
 }

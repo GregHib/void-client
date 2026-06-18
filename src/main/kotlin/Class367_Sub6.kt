@@ -1,6 +1,6 @@
 import jagdx.IDirect3DVertexShader
 
-class Class367_Sub6 internal constructor(private var aD3dRenderDevice_7340: D3dRenderDevice, class45: Class45?, private var aNormalMapGenerator_7339: NormalMapGenerator?) : AbstractRenderPass(aD3dRenderDevice_7340) {
+class Class367_Sub6 internal constructor(private var aD3dRenderDevice_7340: D3dRenderDevice, js5Archive: Js5Archive?, private var aNormalMapGenerator_7339: NormalMapGenerator?) : AbstractRenderPass(aD3dRenderDevice_7340) {
     private val anIDirect3DVertexShader7341: IDirect3DVertexShader?
 
     override fun method3527(i: Int, interface18: Interface18?, i_0_: Int) {
@@ -27,8 +27,8 @@ class Class367_Sub6 internal constructor(private var aD3dRenderDevice_7340: D3dR
     }
 
     init {
-        if (null == class45 || !aNormalMapGenerator_7339!!.method2039(123) || (257 > (aD3dRenderDevice_7340!!.aD3DCAPS9791!!.VertexShaderVersion and 0xffff))) anIDirect3DVertexShader7341 = null
-        else anIDirect3DVertexShader7341 = aD3dRenderDevice_7340!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "transparent_water", -29832))
+        if (null == js5Archive || !aNormalMapGenerator_7339!!.method2039(123) || (257 > (aD3dRenderDevice_7340!!.aD3DCAPS9791!!.VertexShaderVersion and 0xffff))) anIDirect3DVertexShader7341 = null
+        else anIDirect3DVertexShader7341 = aD3dRenderDevice_7340!!.anIDirect3DDevice9810!!.b(js5Archive.method391("dx", "transparent_water", -29832))
     }
 
     override fun method3523(i: Byte) {

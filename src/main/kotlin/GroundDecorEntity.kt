@@ -168,7 +168,7 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
         @JvmField
         var anInt8754: Int = 0
         @JvmField
-        var aClass45_8755: Class45? = null
+        var aJs5Archive_8755: Js5Archive? = null
         @JvmField
         var aIntRange_8756: IntRange? = IntRange(107, 6)
 
@@ -220,7 +220,7 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
 
         @JvmStatic
         fun method2412(bool: Boolean) {
-            aClass45_8755 = null
+            aJs5Archive_8755 = null
             aIntRange_8756 = null
             aNodeDeque_8744 = null
             if (bool != true) Companion.method2408((-121).toByte())

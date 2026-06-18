@@ -80,11 +80,11 @@ public abstract class AbstractCameraTransform {
                 while (((i_5_ + (RangeThresholdTextureNode.anInt9109 shr 4)) / 8 >= i_8_)) {
                     val i_9_ = i_8_ + (i_7_ shl 8)
                     NullOggStream.anIntArray9042!![i_6_] = i_9_
-                    NativeSprite.anIntArray5192!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
-                    GameAppletFrame.anIntArray38!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
-                    ImageFrameCache.anIntArray4031!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
-                    LocalizedTextTriple.anIntArray3759!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
-                    RenderNode.anIntArray9724!![i_6_] = (Class367_Sub10.aClass45_7382!!.method417("ul" + i_7_ + "_" + i_8_, CameraSplineNode.method2955(i.toInt(), -49)))
+                    NativeSprite.anIntArray5192!![i_6_] = Class367_Sub10.aJs5Archive_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
+                    GameAppletFrame.anIntArray38!![i_6_] = Class367_Sub10.aJs5Archive_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
+                    ImageFrameCache.anIntArray4031!![i_6_] = Class367_Sub10.aJs5Archive_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
+                    LocalizedTextTriple.anIntArray3759!![i_6_] = Class367_Sub10.aJs5Archive_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
+                    RenderNode.anIntArray9724!![i_6_] = (Class367_Sub10.aJs5Archive_7382!!.method417("ul" + i_7_ + "_" + i_8_, CameraSplineNode.method2955(i.toInt(), -49)))
                     if (ImageFrameCache.anIntArray4031!![i_6_] == -1) {
                         NativeSprite.anIntArray5192!![i_6_] = -1
                         GameAppletFrame.anIntArray38!![i_6_] = -1

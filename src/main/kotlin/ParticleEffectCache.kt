@@ -1,9 +1,9 @@
 /* Class271 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aClass60_3466 = Class60(64)
-    private val aClass45_3468: Class45?
+    private val aJs5Archive_3468: Js5Archive?
     fun method2044(i: Int, i_0_: Int): ConfigShortValueNode {
         anInt3469++
         var class348_sub42_sub7: ConfigShortValueNode?
@@ -12,8 +12,8 @@ class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, 
         }
         if (class348_sub42_sub7 != null) return class348_sub42_sub7
         val `is`: ByteArray?
-        synchronized(aClass45_3468!!) {
-            `is` = aClass45_3468.method410(-1860, 5, i_0_)
+        synchronized(aJs5Archive_3468!!) {
+            `is` = aJs5Archive_3468.method410(-1860, 5, i_0_)
         }
         class348_sub42_sub7 = ConfigShortValueNode()
         if (i < 78) method2046()
@@ -26,10 +26,10 @@ class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, 
 
     init {
         try {
-            aClass45_3468 = class45
-            aClass45_3468!!.method407(0, 5)
+            aJs5Archive_3468 = js5Archive
+            aJs5Archive_3468!!.method407(0, 5)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ut.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ut.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

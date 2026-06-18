@@ -427,7 +427,7 @@ object Class66 {
             }
             if (i == 5059) {
                 anInt1165++
-                val class348_sub47 = method2148(Class45.aFontMetaRef_643, (TheoraVideoStream.aClass77_9029), -93)
+                val class348_sub47 = method2148(Js5Archive.aFontMetaRef_643, (TheoraVideoStream.aClass77_9029), -93)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_41_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
@@ -452,7 +452,7 @@ object Class66 {
             }
             if (i == 5061) {
                 anInt1165++
-                val class348_sub47 = method2148(Class45.aFontMetaRef_643, (TheoraVideoStream.aClass77_9029), -104)
+                val class348_sub47 = method2148(Js5Archive.aFontMetaRef_643, (TheoraVideoStream.aClass77_9029), -104)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_43_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 1)
@@ -1063,11 +1063,11 @@ object Class66 {
                 Class79.anInt1387 = anIntArray1149!![anInt1173 + 8]
                 CharCodeMap.anInt9586 = anIntArray1149!![anInt1173 + 9]
                 Class5_Sub2.anInt8363 = anIntArray1149!![anInt1173 + 10]
-                CameraRotationStub.aClass45_322!!.method421(false, HudTabPanel.anInt2996)
-                CameraRotationStub.aClass45_322!!.method421(false, CombineTextureNode.anInt9231)
-                CameraRotationStub.aClass45_322!!.method421(false, ProjectedGroundDecor.anInt10257)
-                CameraRotationStub.aClass45_322!!.method421(false, SkyboxGradient.anInt3937)
-                CameraRotationStub.aClass45_322!!.method421(false, Class79.anInt1387)
+                CameraRotationStub.aJs5Archive_322!!.method421(false, HudTabPanel.anInt2996)
+                CameraRotationStub.aJs5Archive_322!!.method421(false, CombineTextureNode.anInt9231)
+                CameraRotationStub.aJs5Archive_322!!.method421(false, ProjectedGroundDecor.anInt10257)
+                CameraRotationStub.aJs5Archive_322!!.method421(false, SkyboxGradient.anInt3937)
+                CameraRotationStub.aJs5Archive_322!!.method421(false, Class79.anInt1387)
                 SpotAnimVector.aAbstractModelRenderer_2309 = null
                 AbstractMenuEntry.aAbstractModelRenderer_1706 = SpotAnimVector.aAbstractModelRenderer_2309
                 TimedTileQueueEntry.aAbstractModelRenderer_9659 = AbstractMenuEntry.aAbstractModelRenderer_1706
@@ -1519,7 +1519,7 @@ object Class66 {
                 if (i_149_ != i_150_) {
                     if (CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_150_ == 0 && SlotBinding.anInt3428 != -1) {
-                            method2732(0, SlotBinding.anInt3428, false, 94, (Class59_Sub2_Sub1.aClass45_8667), i_149_)
+                            method2732(0, SlotBinding.anInt3428, false, 94, (Class59_Sub2_Sub1.aJs5Archive_8667), i_149_)
                             method3093(87)
                             Class74.Companion.aBoolean1236 = false
                         } else if (i_149_ == 0) {
@@ -1638,7 +1638,7 @@ object Class66 {
                 if (i_158_ != i_159_ && SlotBinding.anInt3428 == ParticleProcessor.anInt4270) {
                     if (!CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_159_ == 0) {
-                            method2732(0, SlotBinding.anInt3428, false, 127, (Class59_Sub2_Sub1.aClass45_8667), i_158_)
+                            method2732(0, SlotBinding.anInt3428, false, 127, (Class59_Sub2_Sub1.aJs5Archive_8667), i_158_)
                             method3093(118)
                             Class74.Companion.aBoolean1236 = false
                         } else if (i_158_ == 0) {
@@ -4681,7 +4681,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_433_ = anIntArray1149!![anInt1173]
                     val i_434_ = anIntArray1149!![anInt1173 + 1]
-                    val class143 = method1819(i_434_, 0, -123, SoftwareSpriteRaster.aClass45_1627!!)
+                    val class143 = method1819(i_434_, 0, -123, SoftwareSpriteRaster.aJs5Archive_1627!!)
                     anIntArray1149!![anInt1173++] = class143!!.method1190(CameraNodeList.aAbstractModelRendererArray1744, 1, string, i_433_)
                     return
                 }
@@ -4690,7 +4690,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_435_ = anIntArray1149!![anInt1173]
                     val i_436_ = anIntArray1149!![anInt1173 + 1]
-                    val class143 = method1819(i_436_, 0, -79, SoftwareSpriteRaster.aClass45_1627!!)
+                    val class143 = method1819(i_436_, 0, -79, SoftwareSpriteRaster.aJs5Archive_1627!!)
                     anIntArray1149!![anInt1173++] = class143!!.method1187(string, false, i_435_, CameraNodeList.aAbstractModelRendererArray1744)
                     return
                 }
@@ -4801,7 +4801,7 @@ object Class66 {
                 if (i == 4125) {
                     val string = aStringArray1152!![--anInt1170]
                     val i_455_ = anIntArray1149!![--anInt1173]
-                    val class143 = method1819(i_455_, 0, -114, SoftwareSpriteRaster.aClass45_1627!!)
+                    val class143 = method1819(i_455_, 0, -114, SoftwareSpriteRaster.aJs5Archive_1627!!)
                     anIntArray1149!![anInt1173++] = class143!!.method1186(string, CameraNodeList.aAbstractModelRendererArray1744, false)
                     return
                 }

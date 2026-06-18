@@ -263,8 +263,8 @@ class Class51 {
                 var modelDefinition: ModelDefinition? = null
                 synchronized(TileRenderState.aModelDefinitionArray4236s!!) {
                     for (i_26_ in 0..<i_23_) {
-                        synchronized(this.aSeqDefinitionCache_933!!.aClass45_3345!!) {
-                            modelDefinition = ParticleConfigParser.method2277(0, (this.aSeqDefinitionCache_933!!.aClass45_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
+                        synchronized(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
+                            modelDefinition = ParticleConfigParser.method2277(0, (this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
                         }
                         if (modelDefinition == null) return null
                         if (modelDefinition.anInt1830 < 13) modelDefinition.method1092(2, 96)
@@ -313,13 +313,13 @@ class Class51 {
         if (i_30_ != -31076) return false
         anInt901++
         if (anIntArrayArray907 == null) return true
-        synchronized(this.aSeqDefinitionCache_933!!.aClass45_3345!!) {
+        synchronized(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
             var i_31_ = 0
             while (aByteArray885!!.size > i_31_) {
                 if (aByteArray885!![i_31_].toInt() == i) {
                     var i_32_ = 0
                     while ((anIntArrayArray907!![i_31_]!!.size > i_32_)) {
-                        if (!this.aSeqDefinitionCache_933!!.aClass45_3345!!.method420(i_30_ xor 0x5061, anIntArrayArray907!![i_31_]!![i_32_], 0)) return false
+                        if (!this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!.method420(i_30_ xor 0x5061, anIntArrayArray907!![i_31_]!![i_32_], 0)) return false
                         i_32_++
                     }
                     return true
@@ -663,11 +663,11 @@ class Class51 {
         if (i != 9773) method485(-109)
         if (anIntArrayArray907 == null) return true
         var bool = true
-        synchronized(this.aSeqDefinitionCache_933!!.aClass45_3345!!) {
+        synchronized(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
             for (i_77_ in anIntArrayArray907!!.indices) {
                 var i_78_ = 0
                 while ((anIntArrayArray907!![i_77_]!!.size > i_78_)) {
-                    bool = bool and (this.aSeqDefinitionCache_933!!.aClass45_3345!!.method420(-10499, anIntArrayArray907!![i_77_]!![i_78_], 0))
+                    bool = bool and (this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!.method420(-10499, anIntArrayArray907!![i_77_]!![i_78_], 0))
                     i_78_++
                 }
             }

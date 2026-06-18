@@ -116,21 +116,21 @@ class ScatterTextureNode : AbstractProceduralTextureNode(0, true) {
         @JvmField
         var anInt9363: Int = 0
         @JvmField
-        var aClass45_9365: Class45? = null
+        var aJs5Archive_9365: Js5Archive? = null
         @JvmField
         var anInt9366: Int = 0
         @JvmField
         var anInt9370: Int = 0
 
         fun method3122(i: Byte): Array<NamedIdRecord?> {
-            if (i < 86) aClass45_9365 = null
+            if (i < 86) aJs5Archive_9365 = null
             anInt9361++
             return (arrayOf<NamedIdRecord?>(Class55_Sub1.aNamedIdRecord_5271, Class367_Sub8.aNamedIdRecord_7361, SpriteArchiveLoader.aNamedIdRecord_382, GroundItemRenderState.aNamedIdRecord_1657, Class76.aNamedIdRecord_1279, WidgetRedrawRegion.aNamedIdRecord_4246))
         }
 
         @JvmStatic
         fun method3123(i: Int) {
-            aClass45_9365 = null
+            aJs5Archive_9365 = null
             if (i != 0) Companion.method3122((-98).toByte())
         }
     }

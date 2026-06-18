@@ -1,16 +1,16 @@
 /* Class136 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SpriteLoadValidator internal constructor(class45: Class45?, string: String?) : Interface7 {
+class SpriteLoadValidator internal constructor(js5Archive: Js5Archive?, string: String?) : Interface7 {
     private val aString4788: String?
-    private val aClass45_4789: Class45?
+    private val aJs5Archive_4789: Js5Archive?
 
     init {
         try {
             aString4788 = string
-            aClass45_4789 = class45
+            aJs5Archive_4789 = js5Archive
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nv.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nv.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -22,9 +22,9 @@ class SpriteLoadValidator internal constructor(class45: Class45?, string: String
 
     override fun method31(i: Int): Int {
         anInt4790++
-        if (aClass45_4789!!.method413(100, aString4788!!)) return 100
+        if (aJs5Archive_4789!!.method413(100, aString4788!!)) return 100
         val i_0_ = 31 % ((-43 - i) / 62)
-        return aClass45_4789.method397(aString4788, 0)
+        return aJs5Archive_4789.method397(aString4788, 0)
     }
 
     companion object {
@@ -38,13 +38,13 @@ class SpriteLoadValidator internal constructor(class45: Class45?, string: String
         var anInt4794: Int = 0
         var anInt4795: Int = 0
         @JvmField
-        var aClass45_4796: Class45? = null
+        var aJs5Archive_4796: Js5Archive? = null
 
         @JvmStatic
         fun method1159(i: Byte) {
             aShortArrayArray4791 = null
             aClass65_4787 = null
-            if (i >= 36) aClass45_4796 = null
+            if (i >= 36) aJs5Archive_4796 = null
         }
     }
 }

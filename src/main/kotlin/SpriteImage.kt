@@ -334,8 +334,8 @@ class SpriteImage {
 
     companion object {
         @JvmStatic
-        fun method1512(class45: Class45, i: Int): SpriteImage? {
-            val `is` = class45.method415(73.toByte(), i)
+        fun method1512(js5Archive: Js5Archive, i: Int): SpriteImage? {
+            val `is` = js5Archive.method415(73.toByte(), i)
             if (`is` == null) return null
             return method1517(`is`)[0]
         }
@@ -406,22 +406,22 @@ class SpriteImage {
         }
 
         @JvmStatic
-        fun method1519(class45: Class45, i: Int, i_105_: Int): Array<SpriteImage>? {
-            val `is` = class45.method410(-1860, i, i_105_)
+        fun method1519(js5Archive: Js5Archive, i: Int, i_105_: Int): Array<SpriteImage>? {
+            val `is` = js5Archive.method410(-1860, i, i_105_)
             if (`is` == null) return null
             return method1517(`is`)
         }
 
         @JvmStatic
-        fun method1521(class45: Class45, i: Int, i_112_: Int): SpriteImage? {
-            val `is` = class45.method410(-1860, i, i_112_)
+        fun method1521(js5Archive: Js5Archive, i: Int, i_112_: Int): SpriteImage? {
+            val `is` = js5Archive.method410(-1860, i, i_112_)
             if (`is` == null) return null
             return method1517(`is`)[0]
         }
 
         @JvmStatic
-        fun method1523(class45: Class45, i: Int): Array<SpriteImage>? {
-            val `is` = class45.method415(73.toByte(), i)
+        fun method1523(js5Archive: Js5Archive, i: Int): Array<SpriteImage>? {
+            val `is` = js5Archive.method415(73.toByte(), i)
             if (`is` == null) return null
             return method1517(`is`)
         }

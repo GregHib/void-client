@@ -1,8 +1,8 @@
 /* Class326 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
-    private val aClass45_4085: Class45?
+class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+    private val aJs5Archive_4085: Js5Archive?
     private var aClass60_4087: Class60? = Class60(64)
     fun method2600(i: Int, i_0_: Int): EmoteDefinition {
         anInt4084++
@@ -13,8 +13,8 @@ class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int
         if (emoteDefinition != null) return emoteDefinition
         if (i_0_ != 28364) anInt4086 = 117
         val `is`: ByteArray?
-        synchronized(aClass45_4085!!) {
-            `is` = aClass45_4085.method410(-1860, 11, i)
+        synchronized(aJs5Archive_4085!!) {
+            `is` = aJs5Archive_4085.method410(-1860, 11, i)
         }
         emoteDefinition = EmoteDefinition()
         if (`is` != null) emoteDefinition.method1924(Buffer(`is`), (-127).toByte())
@@ -51,11 +51,11 @@ class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int
     init {
         do {
             try {
-                aClass45_4085 = class45
-                if (aClass45_4085 == null) break
-                aClass45_4085.method407(0, 11)
+                aJs5Archive_4085 = js5Archive
+                if (aJs5Archive_4085 == null) break
+                aJs5Archive_4085.method407(0, 11)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("dc.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("dc.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

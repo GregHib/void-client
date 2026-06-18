@@ -3,9 +3,9 @@ import Class54.Companion.method500
 /* Class255 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, emoteDefCache: EmoteDefCache?, class45: Class45?, class45_22_: Class45?) {
-    private val aClass45_3267: Class45?
-    var aClass45_3268: Class45? = null
+class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, emoteDefCache: EmoteDefCache?, js5Archive: Js5Archive?, js5Archive_22_: Js5Archive?) {
+    private val aJs5Archive_3267: Js5Archive?
+    var aJs5Archive_3268: Js5Archive? = null
     private var aBoolean3269 = false
     var anInt3271: Int = 0
     private val aClass60_3278 = Class60(64)
@@ -104,7 +104,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         synchronized(this.aSizeBoundedSoftCache_3288) {
             this.aSizeBoundedSoftCache_3288.method1344((-124).toByte())
         }
-        if (i < 105) this.aClass45_3268 = null
+        if (i < 105) this.aJs5Archive_3268 = null
     }
 
     fun method1939(i: Int) {
@@ -129,8 +129,8 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         }
         if (itemDefinition != null) return itemDefinition
         val `is`: ByteArray?
-        synchronized(aClass45_3267!!) {
-            `is` = aClass45_3267.method410(-1860, method500(7, i_13_), ConfigFlagUtil.Companion.method1914(-23590, i_13_))
+        synchronized(aJs5Archive_3267!!) {
+            `is` = aJs5Archive_3267.method410(-1860, method500(7, i_13_), ConfigFlagUtil.Companion.method1914(-23590, i_13_))
         }
         itemDefinition = ItemDefinition()
         itemDefinition.aModelHeaderCache_2761 = this
@@ -197,17 +197,17 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         try {
             aBoolean3269 = bool
             aEmoteDefCache_3292 = emoteDefCache
-            this.aClass45_3268 = class45_22_
+            this.aJs5Archive_3268 = js5Archive_22_
             this.anInt3286 = i
-            aClass45_3267 = class45
-            if (aClass45_3267 != null) {
-                val i_23_ = -1 + aClass45_3267.method414(-1)
-                this.anInt3271 = aClass45_3267.method407(0, i_23_) + i_23_ * 256
+            aJs5Archive_3267 = js5Archive
+            if (aJs5Archive_3267 != null) {
+                val i_23_ = -1 + aJs5Archive_3267.method414(-1)
+                this.anInt3271 = aJs5Archive_3267.method407(0, i_23_) + i_23_ * 256
             } else this.anInt3271 = 0
             aStringArray3290 = (arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null))
             aStringArray3293 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (emoteDefCache != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_22_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (emoteDefCache != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_22_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -244,10 +244,10 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             aServerConnectionInfo_3285 = null
         }
 
-        fun method1933(class45: Class45?, var_renderer: Renderer?, bool: Boolean) {
+        fun method1933(js5Archive: Js5Archive?, var_renderer: Renderer?, bool: Boolean) {
             try {
                 anInt3279++
-                var spriteImages: Array<SpriteImage>? = SpriteImage.method1519(class45!!, NpcReference.anInt6862, 0)
+                var spriteImages: Array<SpriteImage>? = SpriteImage.method1519(js5Archive!!, NpcReference.anInt6862, 0)
                 HostPingThread.aAbstractModelRendererArray2260 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -256,7 +256,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(class45, DualMaterialContainer.anInt1639, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, DualMaterialContainer.anInt1639, 0)
                 TimedRecordAccessor.aAbstractModelRendererArray7107 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -265,7 +265,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(class45, MouseInputTracker.anInt7429, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, MouseInputTracker.anInt7429, 0)
                 CameraDistanceOptionState.aAbstractModelRendererArray5857 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -274,7 +274,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(class45, Renderer.anInt4562, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, Renderer.anInt4562, 0)
                 WallSceneEntity.aAbstractModelRendererArray9959 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -283,7 +283,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(class45, Class82.anInt1435, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, Class82.anInt1435, 0)
                 CompassSmoother.aAbstractModelRendererArray3378 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -292,10 +292,10 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(class45, OverlayColorTable.anInt1756, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, OverlayColorTable.anInt1756, 0)
                 CustomCursorsOptionState.aAbstractModelRendererArray5933 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) CustomCursorsOptionState.aAbstractModelRendererArray5933!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                spriteImages = SpriteImage.method1519(class45, CutsceneSequenceData.anInt3739, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, CutsceneSequenceData.anInt3739, 0)
                 Class59_Sub1.aAbstractModelRendererArray5294 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -304,7 +304,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(class45, Class86.anInt1481, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, Class86.anInt1481, 0)
                 SpriteStore.aAbstractModelRendererArray367 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -313,10 +313,10 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(class45, RangedGraphicsOptionState.anInt5948, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, RangedGraphicsOptionState.anInt5948, 0)
                 BoxBlurTextureNode.aAbstractModelRendererArray9467 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) BoxBlurTextureNode.aAbstractModelRendererArray9467!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                spriteImages = SpriteImage.method1519(class45, CameraNodeList.anInt1742, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, CameraNodeList.anInt1742, 0)
                 BoundingBoxNode.aAbstractModelRendererArray6742 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -325,10 +325,10 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(class45, NamedIdRecord.anInt4469, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, NamedIdRecord.anInt4469, 0)
                 WorldMapRenderer.aAbstractModelRendererArray4679 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) WorldMapRenderer.aAbstractModelRendererArray4679!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                spriteImages = SpriteImage.method1519(class45, ClampTextureNode.anInt9473, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, ClampTextureNode.anInt9473, 0)
                 CameraNodeList.aAbstractModelRendererArray1744 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -337,13 +337,13 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                Class79.aAbstractModelRenderer_1365 = var_renderer!!.method3691(SpriteImage.method1521(class45, Class52.anInt4895, 0), bool)
-                SceneryDetailOptionState.aAbstractModelRenderer_6097 = var_renderer.method3691(SpriteImage.method1521(class45, (PerlinTextureProvider.anInt5814), 0), true)
-                spriteImages = SpriteImage.method1519(class45, Class5_Sub3.anInt8370, 0)
+                Class79.aAbstractModelRenderer_1365 = var_renderer!!.method3691(SpriteImage.method1521(js5Archive, Class52.anInt4895, 0), bool)
+                SceneryDetailOptionState.aAbstractModelRenderer_6097 = var_renderer.method3691(SpriteImage.method1521(js5Archive, (PerlinTextureProvider.anInt5814), 0), true)
+                spriteImages = SpriteImage.method1519(js5Archive, Class5_Sub3.anInt8370, 0)
                 ScriptResources.aAbstractModelRendererArray2640 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) ScriptResources.aAbstractModelRendererArray2640!![i] = var_renderer.method3691(spriteImages[i], true)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ub.N(" + (if (class45 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ub.N(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
 

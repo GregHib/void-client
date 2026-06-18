@@ -20,7 +20,7 @@ class UnderlayDefinition {
         anInt2888++
         var spriteImage = this.aItemDefinitionLoader_2886!!.aClass60_2190!!.method583(anInt2891.toLong(), -70) as? SpriteImage?
         if (spriteImage != null) return spriteImage
-        spriteImage = SpriteImage.method1521(this.aItemDefinitionLoader_2886!!.aClass45_2180!!, anInt2891, 0)
+        spriteImage = SpriteImage.method1521(this.aItemDefinitionLoader_2886!!.aJs5Archive_2180!!, anInt2891, 0)
         if (i < 49) method1609(93.toByte())
         if (spriteImage != null) this.aItemDefinitionLoader_2886!!.aClass60_2190!!.method582(spriteImage, anInt2891.toLong(), (-120).toByte())
         return spriteImage

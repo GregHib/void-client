@@ -8,7 +8,7 @@ import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import ArbVertexProgram.Companion.method3442
 import java.awt.Container
 
-class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, class45: Class45?) : AbstractRenderPass(glRenderDevice) {
+class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?) : AbstractRenderPass(glRenderDevice) {
     private var anInterface18_Impl3_7390: Interface18_Impl3? = null
     private val aBoolean7391: Boolean
     private var aTextureHandle_7392: TextureHandle? = null
@@ -104,11 +104,11 @@ class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, class4
 
     init {
         try {
-            if (class45 != null && glRenderDevice!!.aBoolean9923) {
-                aTextureHandle_7395 = method3442(34336, class45.method391("gl", "uw_ground_unlit", -29832), glRenderDevice, 4)
-                aTextureHandle_7392 = method3442(34336, class45.method391("gl", "uw_ground_lit", -29832), glRenderDevice, 4)
-                aTextureHandle_7404 = method3442(34336, class45.method391("gl", "uw_model_unlit", -29832), glRenderDevice, 4)
-                aTextureHandle_7407 = method3442(34336, class45.method391("gl", "uw_model_lit", -29832), glRenderDevice, 4)
+            if (js5Archive != null && glRenderDevice!!.aBoolean9923) {
+                aTextureHandle_7395 = method3442(34336, js5Archive.method391("gl", "uw_ground_unlit", -29832), glRenderDevice, 4)
+                aTextureHandle_7392 = method3442(34336, js5Archive.method391("gl", "uw_ground_lit", -29832), glRenderDevice, 4)
+                aTextureHandle_7404 = method3442(34336, js5Archive.method391("gl", "uw_model_unlit", -29832), glRenderDevice, 4)
+                aTextureHandle_7407 = method3442(34336, js5Archive.method391("gl", "uw_model_lit", -29832), glRenderDevice, 4)
                 if ((aTextureHandle_7395 != null) and (aTextureHandle_7392 != null) and (aTextureHandle_7404 != null) and (aTextureHandle_7407 != null)) {
                     anInterface18_Impl3_7390 = this.aHa_Sub3_4479.method3839(1, 2, -15137, false, (intArrayOf(0, -1)))
                     anInterface18_Impl3_7390!!.method66(false, false, 25688)
@@ -116,7 +116,7 @@ class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, class4
                 } else aBoolean7391 = false
             } else aBoolean7391 = false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("or.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("or.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -175,13 +175,13 @@ class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, class4
         var aLongHashTable_7415: LongHashTable? = LongHashTable(8)
 
         @JvmStatic
-        fun method3555(class45: Class45?, i: Int, bool: Boolean, l: Long, i_7_: Int, i_8_: Int, i_9_: Int) {
+        fun method3555(js5Archive: Js5Archive?, i: Int, bool: Boolean, l: Long, i_7_: Int, i_8_: Int, i_9_: Int) {
             try {
                 anInt7410++
-                method2260(i_9_, i_8_, l, 0, bool, class45, 126.toByte(), i_7_)
+                method2260(i_9_, i_8_, l, 0, bool, js5Archive, 126.toByte(), i_7_)
                 val i_10_ = -35 / ((-41 - i) / 38)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("or.Q(" + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + l + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("or.Q(" + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + l + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
             }
         }
 

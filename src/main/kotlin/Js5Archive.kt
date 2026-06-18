@@ -3,7 +3,7 @@ import java.util.*
 /* Class45 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class45 internal constructor(resourceProvider: ResourceProvider, bool: Boolean, i: Int) {
+class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: Boolean, i: Int) {
     private var aCutsceneSequenceData_629: CutsceneSequenceData? = null
     @JvmField
     var anInt634: Int

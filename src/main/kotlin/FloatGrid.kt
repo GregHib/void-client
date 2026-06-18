@@ -13,7 +13,7 @@ class FloatGrid internal constructor(var anInt4974: Int, var anInt4978: Int) : I
 
     companion object {
         @JvmField
-        var aClass45_4975: Class45? = null
+        var aJs5Archive_4975: Js5Archive? = null
         var anInt4976: Int = 0
         var anInt4977: Int = 0
         @JvmField
@@ -44,7 +44,7 @@ class FloatGrid internal constructor(var anInt4974: Int, var anInt4978: Int) : I
         @JvmStatic
         fun method1584(i: Byte) {
             if (i.toInt() != -64) Companion.method1584((-48).toByte())
-            aClass45_4975 = null
+            aJs5Archive_4975 = null
         }
     }
 }

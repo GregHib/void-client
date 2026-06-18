@@ -36,7 +36,7 @@ class HitsplatDefinition {
         var aLongArray2013: LongArray? = LongArray(10)
         var anInt2014: Int = 0
         @JvmField
-        var aClass45_2015: Class45? = null
+        var aJs5Archive_2015: Js5Archive? = null
         var anInt2017: Int = 0
         var anInt2018: Int = 0
         @JvmStatic
@@ -50,7 +50,7 @@ class HitsplatDefinition {
         fun method1194(i: Int) {
             if (i != 10) method1193(91, -68, true)
             aLongArray2013 = null
-            aClass45_2015 = null
+            aJs5Archive_2015 = null
         }
     }
 }

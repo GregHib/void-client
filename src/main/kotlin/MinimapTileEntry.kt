@@ -13,7 +13,7 @@ class MinimapTileEntry {
 
     companion object {
         @JvmField
-        var aClass45_611: Class45? = null
+        var aJs5Archive_611: Js5Archive? = null
         @JvmField
         var anInt612: Int = 0
         @JvmField
@@ -31,7 +31,7 @@ class MinimapTileEntry {
         fun method380(i: Int) {
             aFontMetaRef_618 = null
             anIntArray619 = null
-            if (i == 0) aClass45_611 = null
+            if (i == 0) aJs5Archive_611 = null
         }
 
         @JvmStatic

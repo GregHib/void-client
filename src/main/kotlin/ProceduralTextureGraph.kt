@@ -12,11 +12,11 @@ class ProceduralTextureGraph : HashLinkedListNode {
     private val anIntArray9524: IntArray
     private val aClass348_Sub40_9527: AbstractProceduralTextureNode
     private val aClass348_Sub40_9528: AbstractProceduralTextureNode
-    fun method3183(var_renderConfig: RenderConfig?, i: Int, i_0_: Int, bool: Boolean, d: Double, class45: Class45?, i_1_: Byte): IntArray {
+    fun method3183(var_renderConfig: RenderConfig?, i: Int, i_0_: Int, bool: Boolean, d: Double, js5Archive: Js5Archive?, i_1_: Byte): IntArray {
         try {
             anInt9522++
             TexGenMaterialPass.aRenderConfig6247 = var_renderConfig
-            aClass45_4286 = class45
+            aJs5Archive_4286 = js5Archive
             var i_2_ = 0
             while (aClass348_Sub40Array9520.size > i_2_) {
                 aClass348_Sub40Array9520[i_2_]!!.method3045(i, i_0_, -256)
@@ -79,23 +79,23 @@ class ProceduralTextureGraph : HashLinkedListNode {
             if (i_1_.toInt() != 11) anInt9532 = 97
             return `is`
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("lr.D(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + d + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_1_ + ')'))
+            throw method2929(runtimeexception, ("lr.D(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + d + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_1_ + ')'))
         }
     }
 
-    fun method3184(var_renderConfig: RenderConfig?, class45: Class45?, i: Int): Boolean {
+    fun method3184(var_renderConfig: RenderConfig?, js5Archive: Js5Archive?, i: Int): Boolean {
         try {
             anInt9529++
             if (FloatCameraTransform.anInt5713 < 0) {
                 var i_17_ = 0
                 while ((anIntArray9524.size > i_17_)) {
-                    if (!class45!!.method421(false, anIntArray9524[i_17_])) return false
+                    if (!js5Archive!!.method421(false, anIntArray9524[i_17_])) return false
                     i_17_++
                 }
             } else {
                 var i_18_ = 0
                 while ((i_18_ < anIntArray9524.size)) {
-                    if (!class45!!.method420(-10499, FloatCameraTransform.anInt5713, anIntArray9524[i_18_])) return false
+                    if (!js5Archive!!.method420(-10499, FloatCameraTransform.anInt5713, anIntArray9524[i_18_])) return false
                     i_18_++
                 }
             }
@@ -107,14 +107,14 @@ class ProceduralTextureGraph : HashLinkedListNode {
             }
             return true
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("lr.B(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ')'))
+            throw method2929(runtimeexception, ("lr.B(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
-    fun method3185(i: Int, var_renderConfig: RenderConfig?, i_21_: Int, bool: Boolean, d: Double, bool_22_: Boolean, class45: Class45?, i_23_: Int): IntArray {
+    fun method3185(i: Int, var_renderConfig: RenderConfig?, i_21_: Int, bool: Boolean, d: Double, bool_22_: Boolean, js5Archive: Js5Archive?, i_23_: Int): IntArray {
         try {
             TexGenMaterialPass.aRenderConfig6247 = var_renderConfig
-            aClass45_4286 = class45
+            aJs5Archive_4286 = js5Archive
             anInt9526++
             var i_24_ = 0
             while (aClass348_Sub40Array9520.size > i_24_) {
@@ -183,14 +183,14 @@ class ProceduralTextureGraph : HashLinkedListNode {
             }
             return `is`
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("lr.C(" + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i_21_ + ',' + bool + ',' + d + ',' + bool_22_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_23_ + ')'))
+            throw method2929(runtimeexception, ("lr.C(" + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i_21_ + ',' + bool + ',' + d + ',' + bool_22_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_23_ + ')'))
         }
     }
 
-    fun method3186(i: Int, var_renderConfig: RenderConfig?, bool: Boolean, i_41_: Int, class45: Class45?, i_42_: Int): FloatArray {
+    fun method3186(i: Int, var_renderConfig: RenderConfig?, bool: Boolean, i_41_: Int, js5Archive: Js5Archive?, i_42_: Int): FloatArray {
         try {
             anInt9525++
-            aClass45_4286 = class45
+            aJs5Archive_4286 = js5Archive
             TexGenMaterialPass.aRenderConfig6247 = var_renderConfig
             if (i_42_ >= -1) method3183(null, -60, 98, false, -0.11623531533038078, null, (-72).toByte())
             var i_43_ = 0
@@ -245,7 +245,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
             }
             return fs
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("lr.A(" + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + bool + ',' + i_41_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_42_ + ')'))
+            throw method2929(runtimeexception, ("lr.A(" + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + bool + ',' + i_41_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_42_ + ')'))
         }
     }
 

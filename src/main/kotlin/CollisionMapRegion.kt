@@ -6,15 +6,15 @@ import java.util.*
 /*
  * Class111
  */
-class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val anInt1715: Int
-    private val aClass45_1718: Class45?
+    private val aJs5Archive_1718: Js5Archive?
     private var anIntArrayArray1724: Array<IntArray?>?
     private val aBooleanArray1725: BooleanArray
 
     fun method1043(i: Int, i_0_: Byte): TypedRecordTable? {
         anInt1721++
-        val `is` = aClass45_1718!!.method410(-1860, 1, i)
+        val `is` = aJs5Archive_1718!!.method410(-1860, 1, i)
         if (i_0_ < 12) return null
         val typedRecordTable = TypedRecordTable()
         typedRecordTable.method2183(Buffer(`is`), 21890)
@@ -51,9 +51,9 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
 
     init {
         try {
-            aClass45_1718 = class45
-            aClass45_1718!!.method407(0, 1)
-            val class348_sub49 = Buffer(aClass45_1718.method410(-1860, 0, 0))
+            aJs5Archive_1718 = js5Archive
+            aJs5Archive_1718!!.method407(0, 1)
+            val class348_sub49 = Buffer(aJs5Archive_1718.method410(-1860, 0, 0))
             val i_17_ = class348_sub49.readUnsignedByte(255)
             if (i_17_ > 3) {
                 anIntArrayArray1724 = arrayOfNulls(0)
@@ -119,7 +119,7 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("mt.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("mt.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

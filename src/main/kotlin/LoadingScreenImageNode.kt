@@ -143,15 +143,15 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             }
         }
 
-        fun method3178(class45: Class45?, i: Int, `is`: IntArray?, class45_15_: Class45?) {
+        fun method3178(js5Archive: Js5Archive?, i: Int, `is`: IntArray?, js5Archive_15_: Js5Archive?) {
             try {
                 anInt9506++
                 if (`is` != null) AbstractTileShape.anIntArray6547 = `is`
-                TerrainTile.aClass45_4585 = class45
+                TerrainTile.aJs5Archive_4585 = js5Archive
                 if (i >= -6) method3177(-36, true)
-                GlShaderObjectHandle.aClass45_518 = class45_15_
+                GlShaderObjectHandle.aJs5Archive_518 = js5Archive_15_
             } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, ("lk.F(" + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class45_15_ != null) "{...}" else "null") + ')'))
+                throw method2929(runtimeexception, ("lk.F(" + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (js5Archive_15_ != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -164,7 +164,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
                     method1083(FacingDirectionNode.aRenderer6654, 100, 9.toByte(), HardCacheEntryReference.anInt10432, 100, LocTypeDefinition.anInt4017)
                     break
                 } else if (i_16_ != 3) break
-                method282(2, FacingDirectionNode.aRenderer6654, LocTypeDefinition.anInt4017, 73.toByte(), Class45.anInt666, PerlinTextureProvider.anInt5812, HardCacheEntryReference.anInt10432, 2)
+                method282(2, FacingDirectionNode.aRenderer6654, LocTypeDefinition.anInt4017, 73.toByte(), Js5Archive.anInt666, PerlinTextureProvider.anInt5812, HardCacheEntryReference.anInt10432, 2)
             } while (false)
             if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)) TerrainTile.method3980(i + 93, ParticleSystemRenderer.aCanvas3869!!)
             if (FacingDirectionNode.aRenderer6654 != null) BufferToggleState.method2196((-9).toByte())

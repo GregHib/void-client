@@ -4,7 +4,7 @@ import Class59.Companion.method544
 /* Class5_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, class369_sub1: WorldMapAreaLabel?) : Class5(class45, class45_4_, class369_sub1) {
+class Class5_Sub3 internal constructor(js5Archive: Js5Archive?, js5Archive_4_: Js5Archive, class369_sub1: WorldMapAreaLabel?) : Class5(js5Archive, js5Archive_4_, class369_sub1) {
     private var aAbstractModelRenderer_8366: AbstractModelRenderer? = null
     public override fun method178(i: Int, bool: Boolean, i_0_: Byte, i_1_: Int) {
         if (i_0_ >= -6) method202(-4, null)
@@ -17,14 +17,14 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
         val i_2_ = 2 % ((25 - i) / 52)
         anInt8373++
         if (!super.method8(82.toByte())) return false
-        return this.aClass45_4632!!.method421(false, ((this.aWorldMapLabel_4635 as WorldMapAreaLabel).anInt8582))
+        return this.aJs5Archive_4632!!.method421(false, ((this.aWorldMapLabel_4635 as WorldMapAreaLabel).anInt8582))
     }
 
     public override fun method7(i: Int) {
         anInt8371++
         if (i == 10286) {
             super.method7(i)
-            aAbstractModelRenderer_8366 = WorldMapPolygonIconLabel.method3577((this.aWorldMapLabel_4635 as WorldMapAreaLabel).anInt8582, (-96).toByte(), this.aClass45_4632!!)
+            aAbstractModelRenderer_8366 = WorldMapPolygonIconLabel.method3577((this.aWorldMapLabel_4635 as WorldMapAreaLabel).anInt8582, (-96).toByte(), this.aJs5Archive_4632!!)
         }
     }
 

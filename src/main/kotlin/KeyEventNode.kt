@@ -45,10 +45,10 @@ class KeyEventNode : LinkedListNode(), Interface6 {
         var anInt4765: Int = 0
         var anInt4768: Int = 0
         var anInt4769: Int = 0
-        var aClass45_4770: Class45? = null
+        var aJs5Archive_4770: Js5Archive? = null
         @JvmStatic
         fun method2796(i: Byte) {
-            aClass45_4770 = null
+            aJs5Archive_4770 = null
             if (i.toInt() != 104) Companion.method2796((-6).toByte())
         }
 

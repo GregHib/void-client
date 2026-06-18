@@ -1,11 +1,11 @@
 /* Class5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class5(class45: Class45?, class45_15_: Class45, worldMapLabel: WorldMapLabel?) : Interface1 {
+abstract class Class5(js5Archive: Js5Archive?, js5Archive_15_: Js5Archive, worldMapLabel: WorldMapLabel?) : Interface1 {
     private var anInt4630 = 0
-    private val aClass45_4631: Class45 = class45_15_
+    private val aJs5Archive_4631: Js5Archive = js5Archive_15_
     @JvmField
-    var aClass45_4632: Class45? = null
+    var aJs5Archive_4632: Js5Archive? = null
     @JvmField
     var aWorldMapLabel_4635: WorldMapLabel? = null
     private var aFont_4637: Font? = null
@@ -16,16 +16,16 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, worldMapLabel: Wo
         val i_2_ = -94 % ((i - 25) / 52)
         anInt4641++
         var bool = true
-        if (!this.aClass45_4632!!.method421(false, this.aWorldMapLabel_4635!!.anInt4965)) bool = false
-        if (!aClass45_4631!!.method421(false, this.aWorldMapLabel_4635!!.anInt4965)) bool = false
+        if (!this.aJs5Archive_4632!!.method421(false, this.aWorldMapLabel_4635!!.anInt4965)) bool = false
+        if (!aJs5Archive_4631!!.method421(false, this.aWorldMapLabel_4635!!.anInt4965)) bool = false
         return bool
     }
 
     override fun method7(i: Int) {
         anInt4639++
         if (i == 10286) {
-            val class143 = RangedGraphicsOptionState.method1766((-85).toByte(), (this.aWorldMapLabel_4635!!.anInt4965), aClass45_4631)
-            aFont_4637 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aClass45_4632!!, (this.aWorldMapLabel_4635!!.anInt4965)), true))
+            val class143 = RangedGraphicsOptionState.method1766((-85).toByte(), (this.aWorldMapLabel_4635!!.anInt4965), aJs5Archive_4631)
+            aFont_4637 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aJs5Archive_4632!!, (this.aWorldMapLabel_4635!!.anInt4965)), true))
         }
     }
 
@@ -70,10 +70,10 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, worldMapLabel: Wo
     init {
         try {
 
-            this.aClass45_4632 = class45
+            this.aJs5Archive_4632 = js5Archive
             this.aWorldMapLabel_4635 = worldMapLabel
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("gl.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_15_ != null) "{...}" else "null") + ',' + (if (worldMapLabel != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("gl.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_15_ != null) "{...}" else "null") + ',' + (if (worldMapLabel != null) "{...}" else "null") + ')'))
         }
     }
 

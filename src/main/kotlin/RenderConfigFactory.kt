@@ -6,7 +6,7 @@ class RenderConfigFactory {
         var anInt2976: Int = 0
         var anInt2977: Int = 0
         @JvmField
-        var aClass45_2978: Class45? = null
+        var aJs5Archive_2978: Js5Archive? = null
         @JvmField
         var aLocDefinitionCache_2979: LocDefinitionCache? = null
         var anInt2980: Int = 0
@@ -29,7 +29,7 @@ class RenderConfigFactory {
 
         @JvmStatic
         fun method1632(i: Int) {
-            aClass45_2978 = null
+            aJs5Archive_2978 = null
             val i_1_ = -20 / ((-87 - i) / 34)
             aVarbitDefLoader_2981 = null
             aLocDefinitionCache_2979 = null

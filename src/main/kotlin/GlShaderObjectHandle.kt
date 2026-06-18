@@ -29,7 +29,7 @@ class GlShaderObjectHandle internal constructor(glRenderDevice: GlRenderDevice?,
         @JvmField
         var anInt516: Int = 0
         @JvmField
-        var aClass45_518: Class45? = null
+        var aJs5Archive_518: Js5Archive? = null
         @JvmField
         var aScriptCompilerThread_520: ScriptCompilerThread? = null
         @JvmField
@@ -52,7 +52,7 @@ class GlShaderObjectHandle internal constructor(glRenderDevice: GlRenderDevice?,
 
         @JvmStatic
         fun method367(i: Int) {
-            aClass45_518 = null
+            aJs5Archive_518 = null
             aClass74_515 = null
             aSystemFontGlyphs_521 = null
             if (i == -15833) aScriptCompilerThread_520 = null

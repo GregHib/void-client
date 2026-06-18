@@ -81,7 +81,7 @@ class ItemModelDefinition {
 
     private fun method330(var_renderer: Renderer, i: Int) {
         anInt446++
-        val class45 = this.aModelDefinitionCache_438!!.aClass45_2873!!
+        val class45 = this.aModelDefinitionCache_438!!.aJs5Archive_2873!!
         if (anInt421 >= 0 && this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt421.toLong(), 121) == null && class45.method421(false, anInt421)) {
             val spriteImage = SpriteImage.method1512(class45, anInt421)
             this.aModelDefinitionCache_438!!.aClass60_2862.method582(var_renderer.method3691(spriteImage, true), anInt421.toLong(), (-112).toByte())

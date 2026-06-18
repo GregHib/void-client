@@ -4,14 +4,14 @@ import Class6.Companion.method203
 /* Class127 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class WidgetComponentNode(class45: Class45?, particleEmitterDef: ParticleEmitterDef?) : Interface1 {
+open class WidgetComponentNode(js5Archive: Js5Archive?, particleEmitterDef: ParticleEmitterDef?) : Interface1 {
     var aAbstractModelRenderer_4655: AbstractModelRenderer? = null
     var aParticleEmitterDef_4659: ParticleEmitterDef? = null
-    private val aClass45_4661: Class45?
+    private val aJs5Archive_4661: Js5Archive?
     override fun method8(i: Byte): Boolean {
         val i_0_ = -79 / ((i - 25) / 52)
         anInt4658++
-        return aClass45_4661!!.method421(false, (this.aParticleEmitterDef_4659!!.anInt4958))
+        return aJs5Archive_4661!!.method421(false, (this.aParticleEmitterDef_4659!!.anInt4958))
     }
 
     override fun method9(i: Byte, bool: Boolean) {
@@ -26,16 +26,16 @@ open class WidgetComponentNode(class45: Class45?, particleEmitterDef: ParticleEm
 
     override fun method7(i: Int) {
         if (i != 10286) anInt4656 = -123
-        this.aAbstractModelRenderer_4655 = WorldMapPolygonIconLabel.method3577((this.aParticleEmitterDef_4659!!.anInt4958), (-60).toByte(), aClass45_4661!!)
+        this.aAbstractModelRenderer_4655 = WorldMapPolygonIconLabel.method3577((this.aParticleEmitterDef_4659!!.anInt4958), (-60).toByte(), aJs5Archive_4661!!)
         anInt4660++
     }
 
     init {
         try {
-            aClass45_4661 = class45
+            aJs5Archive_4661 = js5Archive
             this.aParticleEmitterDef_4659 = particleEmitterDef
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nl.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (particleEmitterDef != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nl.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (particleEmitterDef != null) "{...}" else "null") + ')'))
         }
     }
 

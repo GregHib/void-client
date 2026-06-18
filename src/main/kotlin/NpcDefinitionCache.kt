@@ -8,8 +8,8 @@ import Class99.method881
 /* Class261 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
-    private val aClass45_3319: Class45?
+class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+    private val aJs5Archive_3319: Js5Archive?
     private val aClass60_3321 = Class60(64)
     fun method1983(i: Int, i_9_: Int): NpcDefinition {
         anInt3320++
@@ -19,8 +19,8 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         }
         if (npcDefinition != null) return npcDefinition
         val `is`: ByteArray?
-        synchronized(aClass45_3319!!) {
-            `is` = aClass45_3319.method410(-1860, i_9_, i)
+        synchronized(aJs5Archive_3319!!) {
+            `is` = aJs5Archive_3319.method410(-1860, i_9_, i)
         }
         npcDefinition = NpcDefinition()
         if (`is` != null) npcDefinition.method1620(Buffer(`is`), -108)
@@ -55,10 +55,10 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
 
     init {
         try {
-            aClass45_3319 = class45
-            aClass45_3319!!.method407(0, 32)
+            aJs5Archive_3319 = js5Archive
+            aJs5Archive_3319!!.method407(0, 32)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("uga.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("uga.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -20,26 +20,26 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
             return class46.aClass46Array798!![i]
         }
 
-        fun method2958(i: Int, class45: Class45): Int {
+        fun method2958(i: Int, js5Archive: Js5Archive): Int {
             anInt6861++
             var i_2_ = 0
-            if (class45.method421(false, anInt6862)) i_2_++
-            if (class45.method421(false, DualMaterialContainer.anInt1639)) i_2_++
-            if (class45.method421(false, MouseInputTracker.anInt7429)) i_2_++
-            if (class45.method421(false, Renderer.anInt4562)) i_2_++
-            if (class45.method421(false, Class82.anInt1435)) i_2_++
-            if (class45.method421(false, OverlayColorTable.anInt1756)) i_2_++
-            if (class45.method421(false, CutsceneSequenceData.anInt3739)) i_2_++
-            if (class45.method421(false, Class86.anInt1481)) i_2_++
-            if (class45.method421(false, RangedGraphicsOptionState.anInt5948)) i_2_++
-            if (class45.method421(false, CameraNodeList.anInt1742)) i_2_++
-            if (class45.method421(false, NamedIdRecord.anInt4469)) i_2_++
+            if (js5Archive.method421(false, anInt6862)) i_2_++
+            if (js5Archive.method421(false, DualMaterialContainer.anInt1639)) i_2_++
+            if (js5Archive.method421(false, MouseInputTracker.anInt7429)) i_2_++
+            if (js5Archive.method421(false, Renderer.anInt4562)) i_2_++
+            if (js5Archive.method421(false, Class82.anInt1435)) i_2_++
+            if (js5Archive.method421(false, OverlayColorTable.anInt1756)) i_2_++
+            if (js5Archive.method421(false, CutsceneSequenceData.anInt3739)) i_2_++
+            if (js5Archive.method421(false, Class86.anInt1481)) i_2_++
+            if (js5Archive.method421(false, RangedGraphicsOptionState.anInt5948)) i_2_++
+            if (js5Archive.method421(false, CameraNodeList.anInt1742)) i_2_++
+            if (js5Archive.method421(false, NamedIdRecord.anInt4469)) i_2_++
             if (i != 22388) return 8
-            if (class45.method421(false, ClampTextureNode.anInt9473)) i_2_++
-            if (class45.method421(false, LocTypeDefLoader.anInt2510)) i_2_++
-            if (class45.method421(false, Class52.anInt4895)) i_2_++
-            if (class45.method421(false, PerlinTextureProvider.anInt5814)) i_2_++
-            if (class45.method421(false, Class5_Sub3.anInt8370)) i_2_++
+            if (js5Archive.method421(false, ClampTextureNode.anInt9473)) i_2_++
+            if (js5Archive.method421(false, LocTypeDefLoader.anInt2510)) i_2_++
+            if (js5Archive.method421(false, Class52.anInt4895)) i_2_++
+            if (js5Archive.method421(false, PerlinTextureProvider.anInt5814)) i_2_++
+            if (js5Archive.method421(false, Class5_Sub3.anInt8370)) i_2_++
             return i_2_
         }
 

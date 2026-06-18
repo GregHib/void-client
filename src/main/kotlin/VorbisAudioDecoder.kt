@@ -427,9 +427,9 @@ class VorbisAudioDecoder private constructor(`is`: ByteArray?) : LinkedListNode(
             aBoolean6724 = true
         }
 
-        private fun method2792(class45: Class45): Boolean {
+        private fun method2792(js5Archive: Js5Archive): Boolean {
             if (!aBoolean6724) {
-                val `is` = class45.method410(-1860, 0, 0)
+                val `is` = js5Archive.method410(-1860, 0, 0)
                 if (`is` == null) return false
                 method2790(`is`)
             }
@@ -437,23 +437,23 @@ class VorbisAudioDecoder private constructor(`is`: ByteArray?) : LinkedListNode(
         }
 
         @JvmStatic
-        fun method2793(class45: Class45, i: Int): VorbisAudioDecoder? {
-            if (!method2792(class45)) {
-                class45.method421(false, i)
+        fun method2793(js5Archive: Js5Archive, i: Int): VorbisAudioDecoder? {
+            if (!method2792(js5Archive)) {
+                js5Archive.method421(false, i)
                 return null
             }
-            val `is` = class45.method415(73.toByte(), i)
+            val `is` = js5Archive.method415(73.toByte(), i)
             if (`is` == null) return null
             return VorbisAudioDecoder(`is`)
         }
 
         @JvmStatic
-        fun method2795(class45: Class45, i: Int, i_115_: Int): VorbisAudioDecoder? {
-            if (!method2792(class45)) {
-                class45.method420(-10499, i, i_115_)
+        fun method2795(js5Archive: Js5Archive, i: Int, i_115_: Int): VorbisAudioDecoder? {
+            if (!method2792(js5Archive)) {
+                js5Archive.method420(-10499, i, i_115_)
                 return null
             }
-            val `is` = class45.method410(-1860, i, i_115_)
+            val `is` = js5Archive.method410(-1860, i, i_115_)
             if (`is` == null) return null
             return VorbisAudioDecoder(`is`)
         }

@@ -520,9 +520,9 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         var aBoolean41: Boolean = false
 
         @JvmStatic
-        fun method85(i: Int, class45: Class45?) {
+        fun method85(i: Int, js5Archive: Js5Archive?) {
             anInt32++
-            WorldMapIconLabel.aClass45_8601 = class45
+            WorldMapIconLabel.aJs5Archive_8601 = js5Archive
             if (i != 0) anInt37 = 101
         }
 

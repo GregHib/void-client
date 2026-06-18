@@ -310,7 +310,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
         var anInt1621: Int = 0
         var anIntArray1626: IntArray? = IntArray(1)
         @JvmField
-        var aClass45_1627: Class45? = null
+        var aJs5Archive_1627: Js5Archive? = null
         @JvmField
         var anInt1628: Int = 0
         @JvmField
@@ -321,7 +321,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
         @JvmStatic
         fun method953(i: Byte) {
             anIntArray1626 = null
-            aClass45_1627 = null
+            aJs5Archive_1627 = null
             aScreenAnchorAlignment_1620 = null
             if (i.toInt() != 9) aScreenAnchorAlignment_1620 = null
         }
@@ -333,7 +333,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
         }
 
         @JvmStatic
-        fun method958(bool: Boolean, i: Int, var_renderConfig: RenderConfig?, i_61_: Int, canvas: Canvas?, class45: Class45?): Renderer? {
+        fun method958(bool: Boolean, i: Int, var_renderConfig: RenderConfig?, i_61_: Int, canvas: Canvas?, js5Archive: Js5Archive?): Renderer? {
             try {
                 if (bool != true) aScreenAnchorAlignment_1620 = null
                 anInt1610++
@@ -344,9 +344,9 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
                     i_63_ = dimension.height
                     i_62_ = dimension.width
                 }
-                return method3692(i_61_, i_63_, i_62_, class45, 0, var_renderConfig, canvas, i)
+                return method3692(i_61_, i_63_, i_62_, js5Archive, 0, var_renderConfig, canvas, i)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("mha.E(" + bool + ',' + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i_61_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("mha.E(" + bool + ',' + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i_61_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
             }
         }
 
@@ -356,7 +356,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
             anInt1611++
             GlBufferObject.aClass348_Sub16_Sub3_4743 = null
             SpriteDefinition.anInt7068 = i
-            ModelDefinition.aClass45_1848 = null
+            ModelDefinition.aJs5Archive_1848 = null
         }
     }
 }

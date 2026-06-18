@@ -1069,7 +1069,7 @@ class ModelDefinition {
         @JvmField
         var anInt1845: Int = 0
         @JvmField
-        var aClass45_1848: Class45? = null
+        var aJs5Archive_1848: Js5Archive? = null
         @JvmField
         var anInt1850: Int = 0
         @JvmField
@@ -1087,7 +1087,7 @@ class ModelDefinition {
 
         @JvmStatic
         fun method1096(i: Int) {
-            if (i >= 88) aClass45_1848 = null
+            if (i >= 88) aJs5Archive_1848 = null
         }
 
         fun method1097(i: Byte, i_20_: Int, random: Random): Int {
@@ -1095,7 +1095,7 @@ class ModelDefinition {
             require(i_20_ > 0)
             if (AsyncTaskHandle.method1436(-19, i_20_)) return (i_20_.toLong() * (0xffffffffL and random.nextInt().toLong()) shr 32).toInt()
             val i_21_ = -2147483648 + -(4294967296L % i_20_.toLong()).toInt()
-            if (i < 78) aClass45_1848 = null
+            if (i < 78) aJs5Archive_1848 = null
             var i_22_: Int
             do i_22_ = random.nextInt() while (i_22_ >= i_21_)
             return ModelTransformParams.method3452(i_22_, (-15).toByte(), i_20_)

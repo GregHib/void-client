@@ -1,23 +1,23 @@
 /* Class244 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class TextureMetadataProvider internal constructor(class45: Class45?, class45_12_: Class45?, class45_13_: Class45?) : RenderConfig {
+class TextureMetadataProvider internal constructor(js5Archive: Js5Archive?, js5Archive_12_: Js5Archive?, js5Archive_13_: Js5Archive?) : RenderConfig {
     private val aNpcAppearanceFlagsArray4611: Array<NpcAppearanceFlags?>
-    private val aClass45_4619: Class45?
+    private val aJs5Archive_4619: Js5Archive?
     private val aCacheLruCache_4622 = CacheLruCache(256)
-    private val aClass45_4624: Class45?
+    private val aJs5Archive_4624: Js5Archive?
     private val anInt4625: Int
     override fun method6(i: Int, i_0_: Int, f: Float, i_1_: Int, bool: Boolean, i_2_: Int): IntArray {
         if (i != -21540) method3(-46, 6)
         anInt4617++
-        return method1881(i_1_, false)!!.method3183(this, i_2_, i_0_, (aNpcAppearanceFlagsArray4611[i_1_]!!.aBoolean207), f.toDouble(), aClass45_4624, 11.toByte())
+        return method1881(i_1_, false)!!.method3183(this, i_2_, i_0_, (aNpcAppearanceFlagsArray4611[i_1_]!!.aBoolean207), f.toDouble(), aJs5Archive_4624, 11.toByte())
     }
 
     private fun method1881(i: Int, bool: Boolean): ProceduralTextureGraph? {
         anInt4620++
         val class348_sub42 = aCacheLruCache_4622.method2302(i.toLong(), (-34).toByte())
         if (class348_sub42 != null) return class348_sub42 as ProceduralTextureGraph
-        val `is` = aClass45_4619!!.method415(73.toByte(), i)
+        val `is` = aJs5Archive_4619!!.method415(73.toByte(), i)
         if (`is` == null) return null
         if (bool != false) method1(-58, 1.9039171f, false, -106, -22, -18)
         val class348_sub42_sub5 = ProceduralTextureGraph(Buffer(`is`))
@@ -34,20 +34,20 @@ class TextureMetadataProvider internal constructor(class45: Class45?, class45_12
     override fun method5(bool: Boolean, i: Int, f: Float, i_4_: Int, i_5_: Int, i_6_: Int): IntArray {
         val i_7_ = 41 / ((i_6_ - -69) / 48)
         anInt4614++
-        return method1881(i, false)!!.method3185(i_4_, this, 0, aNpcAppearanceFlagsArray4611[i]!!.aBoolean207, f.toDouble(), bool, aClass45_4624, i_5_)
+        return method1881(i, false)!!.method3185(i_4_, this, 0, aNpcAppearanceFlagsArray4611[i]!!.aBoolean207, f.toDouble(), bool, aJs5Archive_4624, i_5_)
     }
 
     override fun method4(i: Int, i_8_: Int): Boolean {
         anInt4616++
         val class348_sub42_sub5 = method1881(i_8_, false)
         if (i != -7953) method4(56, -109)
-        return class348_sub42_sub5 != null && class348_sub42_sub5.method3184(this, aClass45_4624, -85)
+        return class348_sub42_sub5 != null && class348_sub42_sub5.method3184(this, aJs5Archive_4624, -85)
     }
 
     override fun method1(i: Int, f: Float, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int): FloatArray? {
         if (i_9_ != -30824) return null
         anInt4612++
-        return method1881(i_11_, false)!!.method3186(i, this, (aNpcAppearanceFlagsArray4611[i_11_]!!.aBoolean207), i_10_, aClass45_4624, -20)
+        return method1881(i_11_, false)!!.method3186(i, this, (aNpcAppearanceFlagsArray4611[i_11_]!!.aBoolean207), i_10_, aJs5Archive_4624, -20)
     }
 
     override fun method2(bool: Boolean): Int {
@@ -58,9 +58,9 @@ class TextureMetadataProvider internal constructor(class45: Class45?, class45_12
 
     init {
         try {
-            aClass45_4619 = class45_12_
-            aClass45_4624 = class45_13_
-            val class348_sub49 = Buffer(class45!!.method410(-1860, 0, 0))
+            aJs5Archive_4619 = js5Archive_12_
+            aJs5Archive_4624 = js5Archive_13_
+            val class348_sub49 = Buffer(js5Archive!!.method410(-1860, 0, 0))
             anInt4625 = class348_sub49.readUnsignedShort(842397944)
             aNpcAppearanceFlagsArray4611 = arrayOfNulls<NpcAppearanceFlags>(anInt4625)
             run {
@@ -162,7 +162,7 @@ class TextureMetadataProvider internal constructor(class45: Class45?, class45_12
                 i++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tda.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_12_ != null) "{...}" else "null") + ',' + (if (class45_13_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("tda.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_12_ != null) "{...}" else "null") + ',' + (if (js5Archive_13_ != null) "{...}" else "null") + ')'))
         }
     }
 

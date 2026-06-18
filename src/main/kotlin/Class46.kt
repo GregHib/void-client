@@ -306,7 +306,7 @@ class Class46 {
         anInt767++
         var var_sprite = SceneryDetailOptionState.aClass60_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
         if (var_sprite != null) return var_sprite
-        val spriteImage = SpriteImage.method1521(GroundDecorEntity.aClass45_8755!!, this.anInt756, 0)
+        val spriteImage = SpriteImage.method1521(GroundDecorEntity.aJs5Archive_8755!!, this.anInt756, 0)
         if (spriteImage == null) return null
         val i_10_ = (spriteImage.anInt2703 + (spriteImage.anInt2702 + spriteImage.anInt2698))
         val i_11_ = (spriteImage.anInt2700 + (spriteImage.anInt2696 + spriteImage.anInt2701))
@@ -381,7 +381,7 @@ class Class46 {
                 var class64 = ParticleGeometry.aClass60_4417!!.method583(l, -90) as Class64?
                 if (class64 == null || var_renderer.method3667(class64.ua(), i) != 0) {
                     if (class64 != null) i = var_renderer.method3679(i, class64.ua())
-                    val class124 = ParticleConfigParser.method2277(0, (ScatterTextureNode.aClass45_9365!!), this.anInt753, -1)
+                    val class124 = ParticleConfigParser.method2277(0, (ScatterTextureNode.aJs5Archive_9365!!), this.anInt753, -1)
                     if (class124 == null) {
                         ContactList.aBoolean9616 = true
                         return null
@@ -810,7 +810,7 @@ class Class46 {
         var abstractModelRenderer = FontMetaRef.aClass60_4327!!.method583(l, -71) as AbstractModelRenderer?
         if (i > -27) method434(true)
         if (abstractModelRenderer != null) return abstractModelRenderer
-        val spriteImage = SpriteImage.method1521(GroundDecorEntity.aClass45_8755!!, this.anInt756, 0)
+        val spriteImage = SpriteImage.method1521(GroundDecorEntity.aJs5Archive_8755!!, this.anInt756, 0)
         if (spriteImage == null) {
             ContactList.aBoolean9616 = true
             return null

@@ -3,8 +3,8 @@ import GlTexture1D.Companion.method1974
 /* Class187 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
-    private var aClass45_2498: Class45? = null
+class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+    private var aJs5Archive_2498: Js5Archive? = null
     private var aClass60_2501: Class60? = Class60(64)
     fun method1404(i: Byte) {
         synchronized(aClass60_2501!!) {
@@ -22,8 +22,8 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
         }
         if (locTypeDefinition != null) return locTypeDefinition
         val `is`: ByteArray?
-        synchronized(aClass45_2498!!) {
-            `is` = aClass45_2498!!.method410(-1860, 35, i_3_)
+        synchronized(aJs5Archive_2498!!) {
+            `is` = aJs5Archive_2498!!.method410(-1860, 35, i_3_)
         }
         locTypeDefinition = LocTypeDefinition()
         if (`is` != null) locTypeDefinition.method2551(-125, Buffer(`is`))
@@ -37,7 +37,7 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
 
     fun method1409(i: Int, i_4_: Int) {
         synchronized(aClass60_2501!!) {
-            if (i_4_ != -20721) aClass45_2498 = null
+            if (i_4_ != -20721) aJs5Archive_2498 = null
             aClass60_2501!!.method578(i_4_ + 20723, i)
         }
         anInt2503++
@@ -54,11 +54,11 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
     init {
         do {
             try {
-                aClass45_2498 = class45
-                if (aClass45_2498 == null) break
-                aClass45_2498!!.method407(0, 35)
+                aJs5Archive_2498 = js5Archive
+                if (aJs5Archive_2498 == null) break
+                aJs5Archive_2498!!.method407(0, 35)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qga.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qga.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

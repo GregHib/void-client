@@ -167,8 +167,8 @@ class VarpStore : Interface17 {
             var i_21_ = 0
             while ((i_21_ < AbstractTileShape.anIntArray6547!!.size)) {
                 val i_22_ = AbstractTileShape.anIntArray6547!![i_21_]
-                val class143 = RangedGraphicsOptionState.method1766((-86).toByte(), i_22_, TerrainTile.aClass45_4585!!)
-                val class324 = var_renderer.method3686(class143, SpriteImage.method1523(GlShaderObjectHandle.aClass45_518!!, i_22_), true)
+                val class143 = RangedGraphicsOptionState.method1766((-86).toByte(), i_22_, TerrainTile.aJs5Archive_4585!!)
+                val class324 = var_renderer.method3686(class143, SpriteImage.method1523(GlShaderObjectHandle.aJs5Archive_518!!, i_22_), true)
                 LoadingScreenState.aRenderableEntryArray2636!![i_21_] = RenderableEntry(class324, class143)
                 i_21_++
             }

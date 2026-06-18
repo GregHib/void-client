@@ -157,16 +157,16 @@ class ChatEffectsOptionState : GraphicsOptionState {
                 var renderableEntry = SoundCacheState.aClass60_4139!!.method583(i.toLong(), -92) as? RenderableEntry?
                 if (renderableEntry != null) {
                     if (bool && renderableEntry.aFontDefinition_4333 == null) {
-                        val class143 = RangedGraphicsOptionState.method1766((-76).toByte(), i, TerrainTile.aClass45_4585!!)
+                        val class143 = RangedGraphicsOptionState.method1766((-76).toByte(), i, TerrainTile.aJs5Archive_4585!!)
                         if (class143 == null) return null
                         renderableEntry.aFontDefinition_4333 = class143
                     }
                     return renderableEntry
                 }
                 val i_27_ = -118 / ((-33 - i_25_) / 44)
-                val spriteImages = SpriteImage.method1523(GlShaderObjectHandle.aClass45_518!!, i)
+                val spriteImages = SpriteImage.method1523(GlShaderObjectHandle.aJs5Archive_518!!, i)
                 if (spriteImages == null) return null
-                val class143 = RangedGraphicsOptionState.method1766((-39).toByte(), i, TerrainTile.aClass45_4585!!)
+                val class143 = RangedGraphicsOptionState.method1766((-39).toByte(), i, TerrainTile.aJs5Archive_4585!!)
                 if (class143 == null) return null
                 if (!bool) renderableEntry = RenderableEntry(var_renderer!!.method3686(class143, spriteImages, true))
                 else renderableEntry = RenderableEntry(var_renderer!!.method3686(class143, spriteImages, true), class143)

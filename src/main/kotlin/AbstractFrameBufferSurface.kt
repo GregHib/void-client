@@ -44,7 +44,7 @@ abstract class AbstractFrameBufferSurface : LinkedListNode() {
             if (i_0_ != 22684) anInt6913 = -117
             anInt6922++
             KeyboardInputSource.aBoolean4275 = false
-            ModelDefinition.aClass45_1848 = null
+            ModelDefinition.aJs5Archive_1848 = null
             SceneLinkedListNode.anInt3971 = -1
             WaterDetailOptionState.anInt5994 = i
             SpriteDefinition.anInt7068 = 1

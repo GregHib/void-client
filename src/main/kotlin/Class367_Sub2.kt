@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glEnable
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import ArbVertexProgram.Companion.method3442
 
-class Class367_Sub2 internal constructor(glRenderDevice: GlRenderDevice, class45: Class45?, normalMapGenerator: NormalMapGenerator?) : AbstractRenderPass(glRenderDevice) {
+class Class367_Sub2 internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?, normalMapGenerator: NormalMapGenerator?) : AbstractRenderPass(glRenderDevice) {
     private val aTextureHandle_7293: TextureHandle?
     private val aNormalMapGenerator_7294: NormalMapGenerator?
     private var aGlRenderDevice_7296: GlRenderDevice? = null
@@ -29,10 +29,10 @@ class Class367_Sub2 internal constructor(glRenderDevice: GlRenderDevice, class45
         try {
             aGlRenderDevice_7296 = glRenderDevice
             aNormalMapGenerator_7294 = normalMapGenerator
-            if (class45 == null || !aNormalMapGenerator_7294!!.method2039(100) || !aGlRenderDevice_7296!!.aBoolean9923) aTextureHandle_7293 = null
-            else aTextureHandle_7293 = method3442(34336, class45.method391("gl", "transparent_water", -29832), aGlRenderDevice_7296, 4)
+            if (js5Archive == null || !aNormalMapGenerator_7294!!.method2039(100) || !aGlRenderDevice_7296!!.aBoolean9923) aTextureHandle_7293 = null
+            else aTextureHandle_7293 = method3442(34336, js5Archive.method391("gl", "transparent_water", -29832), aGlRenderDevice_7296, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ov.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ov.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
         }
     }
 

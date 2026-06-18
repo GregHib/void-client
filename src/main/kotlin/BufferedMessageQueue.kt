@@ -4,12 +4,12 @@ import CameraConfigDefinition.Companion.method1920
 /* Class278 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, class45: Class45?, class45_7_: Class45?) {
-    var aClass45_3576: Class45? = null
+class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, js5Archive: Js5Archive?, js5Archive_7_: Js5Archive?) {
+    var aJs5Archive_3576: Js5Archive? = null
     private var aClass60_3577: Class60? = Class60(64)
     var aSceneProjector_3578: SceneProjector? = null
     var aBoolean3583: Boolean = false
-    private val aClass45_3585: Class45?
+    private val aJs5Archive_3585: Js5Archive?
     var aClass60_3590: Class60? = Class60(50)
     var aClass60_3592: Class60 = Class60(5)
     var anInt3593: Int = 0
@@ -84,8 +84,8 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
         }
         if (class79 != null) return class79
         val `is`: ByteArray?
-        synchronized(aClass45_3585!!) {
-            `is` = aClass45_3585.method410(i_6_ + -1859, method1060(i, 69.toByte()), method1920(127, i))
+        synchronized(aJs5Archive_3585!!) {
+            `is` = aJs5Archive_3585.method410(i_6_ + -1859, method1060(i, 69.toByte()), method1920(127, i))
         }
         class79 = Class79()
         class79.anInt1344 = i
@@ -117,14 +117,14 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
         do {
             try {
                 this.aBoolean3583 = bool
-                aClass45_3585 = class45
-                this.aClass45_3576 = class45_7_
+                aJs5Archive_3585 = js5Archive
+                this.aJs5Archive_3576 = js5Archive_7_
                 this.aSceneProjector_3578 = sceneProjector
-                if (aClass45_3585 == null) break
-                val i_8_ = aClass45_3585.method414(-1) + -1
-                aClass45_3585.method407(0, i_8_)
+                if (aJs5Archive_3585 == null) break
+                val i_8_ = aJs5Archive_3585.method414(-1) + -1
+                aJs5Archive_3585.method407(0, i_8_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("vda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_7_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("vda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_7_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

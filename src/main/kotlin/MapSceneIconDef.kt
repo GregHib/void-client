@@ -16,7 +16,7 @@ class MapSceneIconDef {
     fun method1593(i: Int): Boolean {
         if (i != 106) this.aTextureDefinitionLoader_2851 = null
         anInt2858++
-        return this.aTextureDefinitionLoader_2851!!.aClass45_1965!!.method421(false, this.anInt2853)
+        return this.aTextureDefinitionLoader_2851!!.aJs5Archive_1965!!.method421(false, this.anInt2853)
     }
 
     private fun method1595(i: Byte, i_17_: Int, class348_sub49: Buffer) {
@@ -36,8 +36,8 @@ class MapSceneIconDef {
         val l = (var_renderer.anInt4567 shl 19 or (this.anInt2853 or (i shl 16) or (if (!bool) 0 else 262144))).toLong()
         var abstractModelRenderer = this.aTextureDefinitionLoader_2851!!.aClass60_1976.method583(l, -87) as AbstractModelRenderer?
         if (abstractModelRenderer != null) return abstractModelRenderer
-        if (!this.aTextureDefinitionLoader_2851!!.aClass45_1965!!.method421(false, this.anInt2853)) return null
-        val spriteImage = SpriteImage.method1521(this.aTextureDefinitionLoader_2851!!.aClass45_1965!!, this.anInt2853, 0)
+        if (!this.aTextureDefinitionLoader_2851!!.aJs5Archive_1965!!.method421(false, this.anInt2853)) return null
+        val spriteImage = SpriteImage.method1521(this.aTextureDefinitionLoader_2851!!.aJs5Archive_1965!!, this.anInt2853, 0)
         if (spriteImage != null) {
             spriteImage.anInt2700 = 0
             spriteImage.anInt2698 = spriteImage.anInt2700

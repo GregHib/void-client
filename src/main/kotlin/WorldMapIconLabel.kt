@@ -42,7 +42,7 @@ public open class WorldMapIconLabel(screenAnchorAlignment: ScreenAnchorAlignment
         @JvmField
         var anInt8598: Int = 0
         @JvmField
-        var aClass45_8601: Class45? = null
+        var aJs5Archive_8601: Js5Archive? = null
         @JvmStatic
         fun method3573(i: Int) {
             synchronized(ModelDataCache.aClass60_355!!) {
@@ -59,7 +59,7 @@ public open class WorldMapIconLabel(screenAnchorAlignment: ScreenAnchorAlignment
         fun method3574(i: Int) {
             if (i == 19499) {
                 aBooleanArrayArray8596 = null
-                aClass45_8601 = null
+                aJs5Archive_8601 = null
             }
         }
     }

@@ -3,10 +3,10 @@ import kotlin.math.max
 /* Class219 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?, class45_17_: Class45?) {
+class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_17_: Js5Archive?) {
     var aClass60_2862: Class60 = Class60(20)
-    private val aClass45_2866: Class45?
-    var aClass45_2873: Class45? = null
+    private val aJs5Archive_2866: Js5Archive?
+    var aJs5Archive_2873: Js5Archive? = null
     private val aClass60_2875 = Class60(64)
 
     fun method1598(i: Int) {
@@ -28,8 +28,8 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
         }
         if (itemModelDefinition != null) return itemModelDefinition
         val `is`: ByteArray?
-        synchronized(aClass45_2866!!) {
-            `is` = aClass45_2866.method410(-1860, i, i_15_)
+        synchronized(aJs5Archive_2866!!) {
+            `is` = aJs5Archive_2866.method410(-1860, i, i_15_)
         }
         itemModelDefinition = ItemModelDefinition()
         itemModelDefinition.aModelDefinitionCache_438 = this
@@ -54,7 +54,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
         anInt2870++
         synchronized(aClass60_2875) {
             aClass60_2875.method578(2, i)
-            if (i_16_ >= -22) this.aClass45_2873 = null
+            if (i_16_ >= -22) this.aJs5Archive_2873 = null
         }
         synchronized(this.aClass60_2862) {
             this.aClass60_2862.method578(2, i)
@@ -63,11 +63,11 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
 
     init {
         try {
-            this.aClass45_2873 = class45_17_
-            aClass45_2866 = class45
-            aClass45_2866!!.method407(0, 46)
+            this.aJs5Archive_2873 = js5Archive_17_
+            aJs5Archive_2866 = js5Archive
+            aJs5Archive_2866!!.method407(0, 46)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_17_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("sb.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_17_ != null) "{...}" else "null") + ')'))
         }
     }
 

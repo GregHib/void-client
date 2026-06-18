@@ -75,12 +75,12 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
         }
 
         @JvmStatic
-        fun method323(class45: Class45?, privilegedOperationWorker: PrivilegedOperationWorker?, i: Byte) {
+        fun method323(js5Archive: Js5Archive?, privilegedOperationWorker: PrivilegedOperationWorker?, i: Byte) {
             try {
                 RegionSceneShifter.aString7048 = ""
                 Class59_Sub1.aPrivilegedOperationWorker_5297 = privilegedOperationWorker
                 anInt410++
-                ParticleSystemState.aClass45_2208 = class45
+                ParticleSystemState.aJs5Archive_2208 = js5Archive
                 if (!ClientGameLoopNode.aString6877!!.startsWith("win")) {
                     if (!ClientGameLoopNode.aString6877!!.startsWith("linux")) {
                         if (ClientGameLoopNode.aString6877!!.startsWith("mac")) RegionSceneShifter.aString7048 += "macos/"
@@ -96,7 +96,7 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
                     } else RegionSceneShifter.aString7048 += "x86_64/"
                 } else RegionSceneShifter.aString7048 += "msjava/"
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("hw.A(" + (if (class45 != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("hw.A(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

@@ -3,9 +3,9 @@ import GrowableStringList.Companion.method1359
 /* Class194 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, class45: Class45?) {
+class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private var aClass60_2594: Class60? = Class60(64)
-    private val aClass45_2597: Class45?
+    private val aJs5Archive_2597: Js5Archive?
     fun method1442(i: Int, i_0_: Byte) {
         anInt2598++
         synchronized(aClass60_2594!!) {
@@ -48,8 +48,8 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
         }
         if (hitsplatDefinition != null) return hitsplatDefinition
         val `is`: ByteArray?
-        synchronized(aClass45_2597!!) {
-            `is` = aClass45_2597.method410(i_4_ xor 0x743, method1359(true, i), LongKeyNode.method2806(false, i))
+        synchronized(aJs5Archive_2597!!) {
+            `is` = aJs5Archive_2597.method410(i_4_ xor 0x743, method1359(true, i), LongKeyNode.method2806(false, i))
         }
         hitsplatDefinition = HitsplatDefinition()
         if (i_4_ != -1) return null
@@ -63,12 +63,12 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
     init {
         do {
             try {
-                aClass45_2597 = class45
-                if (aClass45_2597 == null) break
-                val i_5_ = aClass45_2597.method414(-1) + -1
-                aClass45_2597.method407(0, i_5_)
+                aJs5Archive_2597 = js5Archive
+                if (aJs5Archive_2597 == null) break
+                val i_5_ = aJs5Archive_2597.method414(-1) + -1
+                aJs5Archive_2597.method407(0, i_5_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qs.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qs.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

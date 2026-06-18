@@ -98,7 +98,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
         }
 
         @JvmStatic
-        fun method2355(i: Int, i_0_: Byte, bool: Boolean, class45: Class45?, i_1_: Int, i_2_: Int, i_3_: Int) {
+        fun method2355(i: Int, i_0_: Byte, bool: Boolean, js5Archive: Js5Archive?, i_1_: Int, i_2_: Int, i_3_: Int) {
             Class58.anInt1059 = i
             anInt3948++
             KeyboardInputSource.aBoolean4275 = bool
@@ -107,7 +107,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
             WaterDetailOptionState.anInt5994 = i_3_
             SpriteDefinition.anInt7068 = 1
             SceneLinkedListNode.anInt3971 = i_2_
-            ModelDefinition.aClass45_1848 = class45
+            ModelDefinition.aJs5Archive_1848 = js5Archive
         }
 
         @JvmStatic

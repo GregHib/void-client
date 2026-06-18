@@ -748,13 +748,13 @@ open class Buffer : LinkedListNode {
                 } else if (NullOggStream.aString9043 == null) method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
                 else GlElementArrayBuffer.method1157(RuntimeException_Sub1.anInt4596, (-99).toByte())
                 if (GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
-                    Class95.aClass45_1541!!.anInt634 = 2
-                    VideoAdChecker.aClass45_3183!!.anInt634 = 2
-                    Class94.aClass45_1538!!.anInt634 = 2
-                    FloatGrid.aClass45_4975!!.anInt634 = 2
-                    SpotAnimVector.aClass45_2306!!.anInt634 = 2
-                    OpenGlRenderNode.aClass45_10480!!.anInt634 = 2
-                    Class78.aClass45_1322!!.anInt634 = 2
+                    Class95.aJs5Archive_1541!!.anInt634 = 2
+                    VideoAdChecker.aJs5Archive_3183!!.anInt634 = 2
+                    Class94.aJs5Archive_1538!!.anInt634 = 2
+                    FloatGrid.aJs5Archive_4975!!.anInt634 = 2
+                    SpotAnimVector.aJs5Archive_2306!!.anInt634 = 2
+                    OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 2
+                    Class78.aJs5Archive_1322!!.anInt634 = 2
                 }
                 if (GroundDecorSceneEntity.method2402(i_71_, (-119).toByte())) {
                     ItemModelDefinition.anInt443 = 1
@@ -763,13 +763,13 @@ open class Buffer : LinkedListNode {
                     CompositeNpcModelBuilder.anInt2101 = 0
                     LocDefinitionCache.anInt3441 = 0
                     method3177(-111, true)
-                    Class95.aClass45_1541!!.anInt634 = 1
-                    VideoAdChecker.aClass45_3183!!.anInt634 = 1
-                    Class94.aClass45_1538!!.anInt634 = 1
-                    FloatGrid.aClass45_4975!!.anInt634 = 1
-                    SpotAnimVector.aClass45_2306!!.anInt634 = 1
-                    OpenGlRenderNode.aClass45_10480!!.anInt634 = 1
-                    Class78.aClass45_1322!!.anInt634 = 1
+                    Class95.aJs5Archive_1541!!.anInt634 = 1
+                    VideoAdChecker.aJs5Archive_3183!!.anInt634 = 1
+                    Class94.aJs5Archive_1538!!.anInt634 = 1
+                    FloatGrid.aJs5Archive_4975!!.anInt634 = 1
+                    SpotAnimVector.aJs5Archive_2306!!.anInt634 = 1
+                    OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 1
+                    Class78.aJs5Archive_1322!!.anInt634 = 1
                 }
                 if (i_71_ == 11 || i_71_ == 3) method3088(9)
                 val bool = (i == i_71_ || method3196(i_71_, i xor 0x58.inv()) || method2672(i_71_, -100))
@@ -778,7 +778,7 @@ open class Buffer : LinkedListNode {
                     if (bool) {
                         SlotBinding.anInt3428 = ParticleProcessor.anInt4270
                         if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350) != 0) {
-                            method2355(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350), 50.toByte(), false, Class59_Sub2_Sub1.aClass45_8667, ParticleProcessor.anInt4270, 0, 2)
+                            method2355(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350), 50.toByte(), false, Class59_Sub2_Sub1.aJs5Archive_8667, ParticleProcessor.anInt4270, 0, 2)
                             method3093(i xor 0x66)
                         } else method3007(2, 22684)
                         ClientMachineInfo.aMediaStreamClient_6601!!.method1892(-117, false)

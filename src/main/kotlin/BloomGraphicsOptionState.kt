@@ -54,7 +54,7 @@ class BloomGraphicsOptionState : GraphicsOptionState {
         @JvmField
         var anInt5963: Int = 0
         @JvmField
-        var aClass45_5964: Class45? = null
+        var aJs5Archive_5964: Js5Archive? = null
         @JvmField
         var anInt5965: Int = 0
         @JvmField
@@ -89,7 +89,7 @@ class BloomGraphicsOptionState : GraphicsOptionState {
         fun method1773(i: Byte) {
             val i_3_ = -86 / ((i - 13) / 45)
             aString5966 = null
-            aClass45_5964 = null
+            aJs5Archive_5964 = null
         }
 
         @JvmStatic

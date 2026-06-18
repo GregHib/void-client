@@ -40,7 +40,7 @@ class ModelFacePriorityNode internal constructor(private val anInt1886: Int, var
         @JvmField
         var anInt1873: Int = 0
         @JvmField
-        var aClass45_1878: Class45? = null
+        var aJs5Archive_1878: Js5Archive? = null
         @JvmField
         var anInt1879: Int = 0
         @JvmField
@@ -52,7 +52,7 @@ class ModelFacePriorityNode internal constructor(private val anInt1886: Int, var
         @JvmStatic
         fun method1126(i: Int) {
             if (i == 32) {
-                aClass45_1878 = null
+                aJs5Archive_1878 = null
                 aByteArrayArray1887 = null
                 anIntArray1885 = null
             }

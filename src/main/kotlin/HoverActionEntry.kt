@@ -16,12 +16,12 @@ class HoverActionEntry internal constructor(var anInterface2_1811: Interface2?, 
         @JvmField
         var aSpriteStore_1813: SpriteStore? = null
         @JvmField
-        var aClass45_1815: Class45? = null
+        var aJs5Archive_1815: Js5Archive? = null
 
         @JvmStatic
         fun method1091(i: Int) {
             if (i != -9341) method1091(-16)
-            aClass45_1815 = null
+            aJs5Archive_1815 = null
             aSpriteStore_1813 = null
         }
     }

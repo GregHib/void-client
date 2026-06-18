@@ -293,8 +293,8 @@ class MidiFileBuilder private constructor(class348_sub49: Buffer) : LinkedListNo
     }
 
     companion object {
-        fun method2734(class45: Class45, i: Int, i_15_: Int): MidiFileBuilder? {
-            val `is` = class45.method410(-1860, i, i_15_)
+        fun method2734(js5Archive: Js5Archive, i: Int, i_15_: Int): MidiFileBuilder? {
+            val `is` = js5Archive.method410(-1860, i, i_15_)
             if (`is` == null) return null
             return MidiFileBuilder(Buffer(`is`))
         }

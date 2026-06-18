@@ -68,7 +68,7 @@ import java.util.*
 /*
  * Class377
  */
-class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: RenderConfig?, class45: Class45?, i: Int) : NativeRenderer(canvas, l, var_renderConfig, class45, i, 1) {
+class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: RenderConfig?, js5Archive: Js5Archive?, i: Int) : NativeRenderer(canvas, l, var_renderConfig, js5Archive, i, 1) {
     private var anOpenGL9856: OpenGL? = null
     private val aNodeDeque_9869 = NodeDeque()
     private var aNodeDeque_9899: NodeDeque? = NodeDeque()
@@ -696,7 +696,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 throw RuntimeException("")
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.<init>(" + (if (opengl != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + l + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.<init>(" + (if (opengl != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + l + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -864,10 +864,10 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                         if (i_59_ == 8) break
                         break@while_237_
                     }
-                } else return Class367_Sub11(this, this.aClass45_8039)
-                return Class367_Sub2(this, this.aClass45_8039, this.aNormalMapGenerator_7937)
+                } else return Class367_Sub11(this, this.aJs5Archive_8039)
+                return Class367_Sub2(this, this.aJs5Archive_8039, this.aNormalMapGenerator_7937)
             } while (false)
-            return Class367_Sub9(this, this.aClass45_8039, this.aNormalMapGenerator_7937)
+            return Class367_Sub9(this, this.aJs5Archive_8039, this.aNormalMapGenerator_7937)
         } while (false)
         return super.method3832(i, (-73).toByte())
     }

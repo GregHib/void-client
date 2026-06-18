@@ -27,14 +27,14 @@ class SpriteRgbTextureNode : SpriteTextureNode() {
         @JvmField
         var anInt10425: Int = 0
         @JvmField
-        var aClass45_10426: Class45? = null
+        var aJs5Archive_10426: Js5Archive? = null
         @JvmField
         var anInt10427: Int = 0
 
         @JvmStatic
         fun method3092(i: Int) {
-            if (i != -1) aClass45_10426 = null
-            aClass45_10426 = null
+            if (i != -1) aJs5Archive_10426 = null
+            aJs5Archive_10426 = null
         }
 
         @JvmStatic

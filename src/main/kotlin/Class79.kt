@@ -475,10 +475,10 @@ class Class79 {
                 if (class64 != null) i_43_ = i_43_ or class64.ua()
                 var i_69_ = i_43_
                 var bool_70_ = false
-                synchronized(this.aBufferedMessageQueue_1348!!.aClass45_3576!!) {
+                synchronized(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
                     var i_71_ = 0
                     while ((anIntArray1402!!.size > i_71_)) {
-                        if (anIntArray1402!![i_71_] != -1 && !(this.aBufferedMessageQueue_1348!!.aClass45_3576!!.method420(-10499, anIntArray1402!![i_71_], 0))) bool_70_ = true
+                        if (anIntArray1402!![i_71_] != -1 && !(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!.method420(-10499, anIntArray1402!![i_71_], 0))) bool_70_ = true
                         i_71_++
                     }
                 }
@@ -486,8 +486,8 @@ class Class79 {
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray1402!!.size)
                 for (i_72_ in anIntArray1402!!.indices) {
                     if (anIntArray1402!![i_72_] != -1) {
-                        synchronized(this.aBufferedMessageQueue_1348!!.aClass45_3576!!) {
-                            modelDefinitions[i_72_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aClass45_3576!!), anIntArray1402!![i_72_], -1)
+                        synchronized(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
+                            modelDefinitions[i_72_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1402!![i_72_], -1)
                         }
                         if (modelDefinitions[i_72_] != null) {
                             if (modelDefinitions[i_72_]!!.anInt1830 < 13) modelDefinitions[i_72_]!!.method1092(2, 115)
@@ -646,19 +646,19 @@ class Class79 {
                 if (class64 != null) i_99_ = i_99_ or class64.ua()
                 var i_100_ = i_99_
                 var bool = false
-                synchronized(this.aBufferedMessageQueue_1348!!.aClass45_3576!!) {
+                synchronized(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
                     var i_101_ = 0
                     while ((anIntArray1380!!.size > i_101_)) {
-                        if (!this.aBufferedMessageQueue_1348!!.aClass45_3576!!.method420(-10499, anIntArray1380!![i_101_], 0)) bool = true
+                        if (!this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!.method420(-10499, anIntArray1380!![i_101_], 0)) bool = true
                         i_101_++
                     }
                 }
                 if (bool) return null
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray1380!!.size)
-                synchronized(this.aBufferedMessageQueue_1348!!.aClass45_3576!!) {
+                synchronized(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
                     var i_102_ = 0
                     while ((anIntArray1380!!.size > i_102_)) {
-                        modelDefinitions[i_102_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aClass45_3576!!), anIntArray1380!![i_102_], -1)
+                        modelDefinitions[i_102_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1380!![i_102_], -1)
                         i_102_++
                     }
                 }

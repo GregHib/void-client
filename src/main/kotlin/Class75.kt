@@ -9,7 +9,7 @@ import Class59_Sub2_Sub1.Companion.method566
 open class Class75 {
     companion object {
         @JvmField
-        var aClass45_1237: Class45? = null
+        var aJs5Archive_1237: Js5Archive? = null
         @JvmField
         var aConfigDefinitionLoader_1238: ConfigDefinitionLoader? = null
         private var aLocDefinitionCache_1239: LocDefinitionCache? = null
@@ -140,7 +140,7 @@ open class Class75 {
             aTextureDefinitionLoader_1242 = null
             anInterface17_1244 = null
             aClass348_Sub42_Sub14_1243 = null
-            aClass45_1237 = null
+            aJs5Archive_1237 = null
             aHashtable_1241 = null
             aByteArrayArrayArray1251 = null
             aShortArray1252 = null
@@ -268,8 +268,8 @@ open class Class75 {
         }
 
         @JvmStatic
-        fun method752(class45: Class45?, locDefinitionCache: LocDefinitionCache?, particleDefLoader: ParticleDefLoader?, seqDefinitionCache: SeqDefinitionCache?, configDefinitionLoader: ConfigDefinitionLoader?, textureDefinitionLoader: TextureDefinitionLoader?, interface17: Interface17?) {
-            aClass45_1237 = class45
+        fun method752(js5Archive: Js5Archive?, locDefinitionCache: LocDefinitionCache?, particleDefLoader: ParticleDefLoader?, seqDefinitionCache: SeqDefinitionCache?, configDefinitionLoader: ConfigDefinitionLoader?, textureDefinitionLoader: TextureDefinitionLoader?, interface17: Interface17?) {
+            aJs5Archive_1237 = js5Archive
             aLocDefinitionCache_1239 = locDefinitionCache
             aParticleDefLoader_1240 = particleDefLoader
             aSeqDefinitionCache_1245 = seqDefinitionCache
@@ -277,11 +277,11 @@ open class Class75 {
             aTextureDefinitionLoader_1242 = textureDefinitionLoader
             anInterface17_1244 = interface17
             aHashtable_1241!!.method3481(0)
-            val i: Int = aClass45_1237!!.method417("details", 0)
-            val `is`: IntArray? = aClass45_1237!!.method396(i, 0)
+            val i: Int = aJs5Archive_1237!!.method417("details", 0)
+            val `is`: IntArray? = aJs5Archive_1237!!.method396(i, 0)
             if (`is` != null) {
                 for (i_47_ in `is`.indices) {
-                    val class348_sub42_sub14 = ModelDefinitionLoader.method1205(`is`[i_47_], true, aClass45_1237!!, i)
+                    val class348_sub42_sub14 = ModelDefinitionLoader.method1205(`is`[i_47_], true, aJs5Archive_1237!!, i)
                     aHashtable_1241!!.method3483(25.toByte(), class348_sub42_sub14.anInt9628.toLong(), class348_sub42_sub14)
                 }
             }
@@ -431,7 +431,7 @@ open class Class75 {
 
         @JvmStatic
         fun method756(var_renderer: Renderer?, i: Int, i_75_: Int) {
-            val class348_sub49: Buffer = (Buffer(aClass45_1237!!.method391((aClass348_Sub42_Sub14_1243!!.aString9625), "area", -29832)))
+            val class348_sub49: Buffer = (Buffer(aJs5Archive_1237!!.method391((aClass348_Sub42_Sub14_1243!!.aString9625), "area", -29832)))
             val i_76_ = class348_sub49.readUnsignedByte(255)
             val `is` = IntArray(i_76_)
             for (i_77_ in 0..<i_76_) `is`[i_77_] = class348_sub49.readUnsignedByte(255)

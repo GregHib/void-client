@@ -7,12 +7,12 @@ import java.io.IOException
 /* Class292 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class MapArchiveSource internal constructor(private val aClass45_4804: Class45) : Interface7 {
+class MapArchiveSource internal constructor(private val aJs5Archive_4804: Js5Archive) : Interface7 {
     override fun method31(i: Int): Int {
         anInt4801++
         val i_0_ = 16 / ((i - -43) / 62)
-        if (aClass45_4804.method401(125)) return 100
-        return aClass45_4804.method398((-31).toByte())
+        if (aJs5Archive_4804.method401(125)) return 100
+        return aJs5Archive_4804.method398((-31).toByte())
     }
 
     override fun method32(i: Int): Class69? {

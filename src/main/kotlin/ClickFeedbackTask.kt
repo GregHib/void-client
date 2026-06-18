@@ -47,7 +47,7 @@ class ClickFeedbackTask internal constructor(private val aClass52_4671: Class52)
                     val class348_sub16_sub3 = NpcCountAccessor.method1326(UnusedToStringStub.aClass348_Sub16_Sub3_2718, i_2_.toInt() xor 0x68.inv())
                     ParticleEmitterListNode.method3273(true, -95, class348_sub16_sub3)
                 }
-                method2732(0, i, false, 102, TheoraVideoStream.aClass45_9033, i_0_)
+                method2732(0, i, false, 102, TheoraVideoStream.aJs5Archive_9033, i_0_)
                 method2755(-1, 255, -1)
                 Class74.aBoolean1236 = true
             }

@@ -6,18 +6,18 @@ object SkeletonSequenceLoader {
     var anInt3878: Int = 0
 
     @JvmStatic
-    fun method2300(class45: Class45?, string: String?, bool: Boolean, i: Byte): SmoothingBuffer? {
+    fun method2300(js5Archive: Js5Archive?, string: String?, bool: Boolean, i: Byte): SmoothingBuffer? {
         try {
             anInt3877++
-            val i_0_ = class45!!.method417(string!!, 0)
+            val i_0_ = js5Archive!!.method417(string!!, 0)
             if (i.toInt() != -91) return null
             if (i_0_ == -1) return SmoothingBuffer(0)
-            val `is` = class45.method396(i_0_, i.toInt() xor 0x5a.inv())
+            val `is` = js5Archive.method396(i_0_, i.toInt() xor 0x5a.inv())
             val smoothingBuffer = SmoothingBuffer(`is`!!.size)
             var i_1_ = 0
             var i_2_ = 0
             while (i_1_ < smoothingBuffer.anInt3241) {
-                val class348_sub49 = Buffer(class45.method410(-1860, i_0_, `is`[i_2_++]))
+                val class348_sub49 = Buffer(js5Archive.method410(-1860, i_0_, `is`[i_2_++]))
                 val i_3_ = class348_sub49.readInt((-126).toByte())
                 val i_4_ = class348_sub49.readUnsignedShort(i.toInt() xor 0x3235f8a2.inv())
                 val i_5_ = class348_sub49.readUnsignedByte(255)
@@ -30,7 +30,7 @@ object SkeletonSequenceLoader {
             }
             return smoothingBuffer
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wt.A(" + (if (class45 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("wt.A(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i + ')'))
         }
     }
 

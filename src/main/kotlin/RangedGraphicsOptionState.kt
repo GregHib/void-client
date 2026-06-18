@@ -142,10 +142,10 @@ class RangedGraphicsOptionState : GraphicsOptionState {
         }
 
         @JvmStatic
-        fun method1766(i: Byte, i_16_: Int, class45: Class45): FontDefinition? {
+        fun method1766(i: Byte, i_16_: Int, js5Archive: Js5Archive): FontDefinition? {
             anInt5944++
             if (i >= -24) return null
-            val `is` = class45.method415(73.toByte(), i_16_)
+            val `is` = js5Archive.method415(73.toByte(), i_16_)
             if (`is` == null) return null
             return FontDefinition(`is`)
         }

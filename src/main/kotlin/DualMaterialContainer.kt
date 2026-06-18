@@ -1,10 +1,10 @@
 /* Class106 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: Class45?) {
+class DualMaterialContainer internal constructor(js5Archive: Js5Archive?, js5Archive_0_: Js5Archive?) {
     private var aMapRegionLoaderThread_1633: MapRegionLoaderThread? = null
-    private val aClass45_1637: Class45?
-    private val aClass45_1641: Class45?
+    private val aJs5Archive_1637: Js5Archive?
+    private val aJs5Archive_1641: Js5Archive?
 
     private fun method998(i: Int): MapRegionLoaderThread {
         anInt1632++
@@ -18,24 +18,24 @@ class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: 
         val class223 = interface12.method51(120.toByte())
         if (ModelDefinitionCache.aProjectileFactory_2868 == class223) return ClickFeedbackTask(interface12 as Class52)
         if (MatrixCameraTransform.aProjectileFactory_5689 == class223) return WorldMapRenderer(method998(-107), interface12 as MinimapSpriteRenderer)
-        if (class223 == WeaveTextureNode.aProjectileFactory_9274) return WidgetComponentNode(aClass45_1637, interface12 as ParticleEmitterDef)
-        if (class223 == ItemNameResolver.aProjectileFactory_4997) return ScrollingWidgetComponentNode(aClass45_1637, interface12 as ParticleEmitterDefExt)
-        if (class223 == Buffer.aProjectileFactory_7175) return Class5_Sub2(aClass45_1637!!, aClass45_1641!!, interface12 as WorldMapTextLabel)
-        if (class223 == SkyboxGradient.aProjectileFactory_3934) return Class5_Sub3(aClass45_1637, aClass45_1641!!, interface12 as WorldMapAreaLabel)
-        if (class223 == MapSceneDefLoader.aProjectileFactory_2489) return Class5_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as WorldMapIconLabel)
-        if (class223 == SpotAnimVector.aProjectileFactory_2307) return Class67(aClass45_1637, aClass45_1641, interface12 as HeapInfoRecord)
+        if (class223 == WeaveTextureNode.aProjectileFactory_9274) return WidgetComponentNode(aJs5Archive_1637, interface12 as ParticleEmitterDef)
+        if (class223 == ItemNameResolver.aProjectileFactory_4997) return ScrollingWidgetComponentNode(aJs5Archive_1637, interface12 as ParticleEmitterDefExt)
+        if (class223 == Buffer.aProjectileFactory_7175) return Class5_Sub2(aJs5Archive_1637!!, aJs5Archive_1641!!, interface12 as WorldMapTextLabel)
+        if (class223 == SkyboxGradient.aProjectileFactory_3934) return Class5_Sub3(aJs5Archive_1637, aJs5Archive_1641!!, interface12 as WorldMapAreaLabel)
+        if (class223 == MapSceneDefLoader.aProjectileFactory_2489) return Class5_Sub1(aJs5Archive_1637!!, aJs5Archive_1641!!, interface12 as WorldMapIconLabel)
+        if (class223 == SpotAnimVector.aProjectileFactory_2307) return Class67(aJs5Archive_1637, aJs5Archive_1641, interface12 as HeapInfoRecord)
         if (bool != true) anIntArray1636 = null
-        if (OrientationRotator.aProjectileFactory_2045 == class223) return SplashImageLoadable(aClass45_1637, interface12 as ConfigValueProvider)
-        if (LocTypeDefLoader.aProjectileFactory_2507 == class223) return Class5_Sub1_Sub1(aClass45_1637!!, aClass45_1641!!, interface12 as WorldMapPolygonIconLabel)
+        if (OrientationRotator.aProjectileFactory_2045 == class223) return SplashImageLoadable(aJs5Archive_1637, interface12 as ConfigValueProvider)
+        if (LocTypeDefLoader.aProjectileFactory_2507 == class223) return Class5_Sub1_Sub1(aJs5Archive_1637!!, aJs5Archive_1641!!, interface12 as WorldMapPolygonIconLabel)
         return null
     }
 
     init {
         try {
-            aClass45_1637 = class45
-            aClass45_1641 = class45_0_
+            aJs5Archive_1637 = js5Archive
+            aJs5Archive_1641 = js5Archive_0_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("mia.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_0_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("mia.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_0_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -63,11 +63,11 @@ class DualMaterialContainer internal constructor(class45: Class45?, class45_0_: 
         }
 
         @JvmStatic
-        fun method1001(class45: Class45, i: Int) {
+        fun method1001(js5Archive: Js5Archive, i: Int) {
             anInt1634++
-            Class56.anInt1044 = class45.method417("p11_full", i)
-            WidgetDefinition.anInt235 = class45.method417("p12_full", i)
-            CutsceneSequenceData.anInt3736 = class45.method417("b12_full", 0)
+            Class56.anInt1044 = js5Archive.method417("p11_full", i)
+            WidgetDefinition.anInt235 = js5Archive.method417("p12_full", i)
+            CutsceneSequenceData.anInt3736 = js5Archive.method417("b12_full", 0)
         }
     }
 }

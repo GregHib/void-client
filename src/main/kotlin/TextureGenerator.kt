@@ -6,7 +6,7 @@ abstract class TextureGenerator {
 
     companion object {
         @JvmField
-        var aClass45_2490: Class45? = null
+        var aJs5Archive_2490: Js5Archive? = null
         @JvmField
         var aClass74_2491: Class74?
         @JvmField
@@ -24,7 +24,7 @@ abstract class TextureGenerator {
 
         @JvmStatic
         fun method1396(i: Int) {
-            aClass45_2490 = null
+            aJs5Archive_2490 = null
             aClass74_2491 = null
             aStringArray2494 = null
             anIntArray2497 = null

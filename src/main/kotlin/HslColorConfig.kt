@@ -121,8 +121,8 @@ class HslColorConfig {
                     if (IntPair.aRenderer6968 == null) {
                         val canvas = Canvas()
                         canvas.setSize(36, 32)
-                        IntPair.aRenderer6968 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, 0, canvas, SpriteLoadValidator.aClass45_4796)
-                        EdgeDetectTextureNode.aFont_9173 = (IntPair.aRenderer6968!!.method3686(method1819(Class56.anInt1044, 0, -44, SoftwareSpriteRaster.aClass45_1627!!), SpriteImage.method1519(CameraRotationStub.Companion.aClass45_322!!, Class56.anInt1044, 0), true))
+                        IntPair.aRenderer6968 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, 0, canvas, SpriteLoadValidator.aJs5Archive_4796)
+                        EdgeDetectTextureNode.aFont_9173 = (IntPair.aRenderer6968!!.method3686(method1819(Class56.anInt1044, 0, -44, SoftwareSpriteRaster.aJs5Archive_1627!!), SpriteImage.method1519(CameraRotationStub.Companion.aJs5Archive_322!!, Class56.anInt1044, 0), true))
                     }
                     var class348_sub7 = (Class5_Sub1_Sub1.aNodeDeque_9931!!.method1995(i + 4) as RegionTileNode?)
                     while (class348_sub7 != null) {
