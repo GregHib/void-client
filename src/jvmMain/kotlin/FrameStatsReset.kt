@@ -3107,7 +3107,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MapSceneCache.anInt1451 = 0
             LinkedListIterator.anInt2120 = 0
             TextureCubeProvider.anInt6324 = 0
-            CompletedResourceRequest.anInt10462 = 0
+            AudioMixerScheduler.anInt10462 = 0
             HeadIconRenderer.anInt2064 = 0
             VarpStore.anInt5062 = 0
             ByteBuffer.anInt7196 = 0

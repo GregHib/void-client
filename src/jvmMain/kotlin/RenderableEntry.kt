@@ -1,5 +1,3 @@
-import CompletedResourceRequest.Companion.method3265
-
 /* Class352 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -53,7 +51,7 @@ class RenderableEntry {
                     var i_5_ = class213.anInt2819
                     if (class213.anInt2820 == 1) i_5_ *= class348_sub34_4_.anInt6971 - -1
                     if (i_3_ > i_5_) {
-                        method3265(i_2_ xor 0x6c, class348_sub34, class348_sub34_4_)
+                        AudioMixerScheduler.method3265(i_2_ xor 0x6c, class348_sub34, class348_sub34_4_)
                         return
                     }
                     class348_sub34_4_ = class348_sub37.aNodeDeque_6998.method1990(34.toByte()) as IntPair?

@@ -1,5 +1,3 @@
-import CompletedResourceRequest.Companion.method3265
-
 /* Class348_Sub16_Sub4 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -145,5 +143,21 @@ class AudioMixerScheduler : AudioStreamNode() {
                 }
             }
         } while (i_3_ != 0)
+    }
+
+    companion object {
+        var anInt10462: Int = 0
+        fun method3265(i: Int, linkedListNode: LinkedListNode?, linkedListNode_0_: LinkedListNode?) {
+            try {
+                if (linkedListNode!!.aLinkedListNode_4295 != null) linkedListNode.method2715(27.toByte())
+                anInt10462++
+                linkedListNode.aLinkedListNode_4295 = linkedListNode_0_!!.aLinkedListNode_4295
+                linkedListNode.aLinkedListNode_4294 = linkedListNode_0_
+                linkedListNode.aLinkedListNode_4295!!.aLinkedListNode_4294 = linkedListNode
+                linkedListNode.aLinkedListNode_4294!!.aLinkedListNode_4295 = linkedListNode
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("qh.K(" + i + ',' + (if (linkedListNode != null) "{...}" else "null") + ',' + (if (linkedListNode_0_ != null) "{...}" else "null") + ')'))
+            }
+        }
     }
 }
