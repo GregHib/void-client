@@ -275,7 +275,7 @@ class i : AbstractModel, Interface19 {
         var i_89_ = 0
         for (i_90_ in 0..<i_87_) {
             val class162 = modelDefinition.aRectangleBoundsArray1832!![i_90_]!!
-            val class189 = Class73.method742(104, class162.anInt2153)
+            val class189 = FileExistsCondition.method742(104, class162.anInt2153)
             is_88_[i_89_++] = class162.anInt2155
             is_88_[i_89_++] = class189.anInt2526
             is_88_[i_89_++] = class189.anInt2530

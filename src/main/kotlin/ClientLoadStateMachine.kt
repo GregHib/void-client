@@ -186,7 +186,7 @@ object ClientLoadStateMachine {
             RegionTileNode.aCacheArchiveIndexLoader_6653 = CacheArchiveIndexLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, VideoAdChecker.aJs5Archive_3183)
             RenderConfigFactory.aLocDefinitionCache_2979 = LocDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
             Tooltip.aParticleDefLoader_4460 = ParticleDefLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
-            Class73.aModelDefinitionCache_4782 = ModelDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
+            FileExistsCondition.aModelDefinitionCache_4782 = ModelDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
             RadialTextureNode.aModelDefinitionLoader_9342 = ModelDefinitionLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541, RasterSprite.aJs5Archive_5207)
             ScrollingWidgetComponentNode.aParticleEffectCache_8378 = ParticleEffectCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
             AbstractTileShape.aMapSceneDefLoader_6559 = MapSceneDefLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)

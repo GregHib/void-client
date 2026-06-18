@@ -963,7 +963,7 @@ class WidgetComponent {
             AbstractTileShape.aMapSceneDefLoader_6559!!.method1390(23)
             GraphicsOptionState.aItemDefinitionLoader_3147!!.method1283(1)
             SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method694(-1007)
-            Class73.aModelDefinitionCache_4782!!.method1598(111)
+            FileExistsCondition.aModelDefinitionCache_4782!!.method1598(111)
             CalendarUtil.method2638(-4631)
             NpcCountAccessor.method1328(-26162)
             method3102(22385)

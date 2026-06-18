@@ -1,7 +1,7 @@
 /* Class73 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class73 internal constructor(js5Archive: Js5Archive?, string: String?) : Interface7 {
+class FileExistsCondition internal constructor(js5Archive: Js5Archive?, string: String?) : Interface7 {
     private val aString4778: String?
     private val aJs5Archive_4785: Js5Archive?
     override fun method31(i: Int): Int {

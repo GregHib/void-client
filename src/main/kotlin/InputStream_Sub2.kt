@@ -40,12 +40,12 @@ class InputStream_Sub2 : InputStream() {
                     val i_4_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     val i_5_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(65.toByte())
                     val i_6_ = BufferedMessageQueue.anInt3581 + (0x7 and (i_5_ shr 4))
-                    val i_7_ = Class73.anInt4786 - -(i_5_ and 0x7)
+                    val i_7_ = FileExistsCondition.anInt4786 - -(i_5_ and 0x7)
                     if (NpcEntityUpdater.method2112(126, WidgetRedrawTracker.anInt3931) || (i_6_ >= 0 && i_7_ >= 0 && Class367_Sub4.anInt7319 > i_6_ && (i_7_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_7_, -1, i_1_, i_3_, i_2_, i_4_, 121.toByte(), i_6_)
                 } else if (class74 == ClampTextureNode.aClass74_9475) {
                     val i_8_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_9_ = BufferedMessageQueue.anInt3581 + ((0x7a and i_8_) shr 4)
-                    val i_10_ = Class73.anInt4786 - -(i_8_ and 0x7)
+                    val i_10_ = FileExistsCondition.anInt4786 - -(i_8_ and 0x7)
                     val i_11_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     val i_12_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_13_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
@@ -61,7 +61,7 @@ class InputStream_Sub2 : InputStream() {
                 } else if (class74 == Class91.aClass74_1519) {
                     val i_18_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_19_ = BufferedMessageQueue.anInt3581 - -(i_18_ shr 4 and 0x7)
-                    val i_20_ = (0x7 and i_18_) + Class73.anInt4786
+                    val i_20_ = (0x7 and i_18_) + FileExistsCondition.anInt4786
                     var i_21_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if (i_21_ == 65535) i_21_ = -1
                     val i_22_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
@@ -90,7 +90,7 @@ class InputStream_Sub2 : InputStream() {
                 } else if (SynthVoiceGroup.aClass74_8853 == class74) {
                     val i_31_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_32_ = BufferedMessageQueue.anInt3581 + ((i_31_ and 0x7b) shr 4)
-                    val i_33_ = (i_31_ and 0x7) + Class73.anInt4786
+                    val i_33_ = (i_31_ and 0x7) + FileExistsCondition.anInt4786
                     var i_34_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if (i_34_ == 65535) i_34_ = -1
                     val i_35_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
@@ -108,7 +108,7 @@ class InputStream_Sub2 : InputStream() {
                     if (i_42_ == 65535) i_42_ = -1
                     val i_43_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(65.toByte())
                     val i_44_ = ((i_43_ and 0x71) shr 4) + BufferedMessageQueue.anInt3581
-                    val i_45_ = Class73.anInt4786 + (i_43_ and 0x7)
+                    val i_45_ = FileExistsCondition.anInt4786 + (i_43_ and 0x7)
                     val i_46_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                     val i_47_ = i_46_ shr 2
                     val i_48_ = i_46_ and 0x3
@@ -117,7 +117,7 @@ class InputStream_Sub2 : InputStream() {
                 } else if (class74 == ArbFogMaterialPass.aClass74_6201) {
                     val i_50_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     var i_51_ = (i_50_ shr 4 and 0xf) + BufferedMessageQueue.anInt3581 * 2
-                    var i_52_ = (i_50_ and 0xf) + Class73.anInt4786 * 2
+                    var i_52_ = (i_50_ and 0xf) + FileExistsCondition.anInt4786 * 2
                     val i_53_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val bool = (0x1 and i_53_) != 0
                     val bool_54_ = (i_53_ and 0x2) != 0
@@ -168,7 +168,7 @@ class InputStream_Sub2 : InputStream() {
                 } else if (class74 == HardCacheEntryReference.aClass74_10437) {
                     val i_69_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-128)
                     val i_70_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(31.toByte())
-                    val i_71_ = Class73.anInt4786 + (i_70_ and 0x7)
+                    val i_71_ = FileExistsCondition.anInt4786 + (i_70_ and 0x7)
                     val i_72_ = Class90.regionTileY + i_71_
                     val i_73_ = BufferedMessageQueue.anInt3581 + (i_70_ shr 4 and 0x7)
                     val i_74_ = ArbVertexProgram.regionTileX + i_73_
@@ -189,7 +189,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_75_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                     val i_76_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                     val i_77_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                    val i_78_ = Class73.anInt4786 - -(0x7 and i_77_)
+                    val i_78_ = FileExistsCondition.anInt4786 - -(0x7 and i_77_)
                     val i_79_ = i_78_ + Class90.regionTileY
                     val i_80_ = BufferedMessageQueue.anInt3581 - -((i_77_ and 0x79) shr 4)
                     val i_81_ = ArbVertexProgram.regionTileX - -i_80_
@@ -205,13 +205,13 @@ class InputStream_Sub2 : InputStream() {
                     val i_85_ = AnimationFrameTable.anIntArray487!![i_83_]
                     val i_86_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
                     val i_87_ = BufferedMessageQueue.anInt3581 + (i_86_ shr 4 and 0x7)
-                    val i_88_ = Class73.anInt4786 - -(0x7 and i_86_)
+                    val i_88_ = FileExistsCondition.anInt4786 - -(0x7 and i_86_)
                     if (NpcEntityUpdater.method2112(i.toInt() xor 0x73, WidgetRedrawTracker.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && Class367_Sub4.anInt7319 > i_87_ && (i_88_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
                 } else {
                     if (i.toInt() != 8) aIntRange_82 = null
                     if (GlShaderObjectHandle.aClass74_515 == class74) {
                         val i_89_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                        val i_90_ = Class73.anInt4786 + (0x7 and i_89_)
+                        val i_90_ = FileExistsCondition.anInt4786 + (0x7 and i_89_)
                         val i_91_ = i_90_ + Class90.regionTileY
                         val i_92_ = (BufferedMessageQueue.anInt3581 - -((i_89_ and 0x7a) shr 4))
                         val i_93_ = ArbVertexProgram.regionTileX + i_92_
@@ -237,7 +237,7 @@ class InputStream_Sub2 : InputStream() {
                     } else if (class74 == FileIoUtil.aClass74_4098) {
                         val i_97_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                         val i_98_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                        val i_99_ = (0x7 and i_98_) + Class73.anInt4786
+                        val i_99_ = (0x7 and i_98_) + FileExistsCondition.anInt4786
                         val i_100_ = Class90.regionTileY + i_99_
                         val i_101_ = BufferedMessageQueue.anInt3581 - -((i_98_ and 0x7b) shr 4)
                         val i_102_ = ArbVertexProgram.regionTileX + i_101_
@@ -254,7 +254,7 @@ class InputStream_Sub2 : InputStream() {
                         val i_105_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                         val bool = (0x80 and i_105_) != 0
                         var i_106_ = BufferedMessageQueue.anInt3581 - -(i_105_ shr 3 and 0x7)
-                        var i_107_ = (0x7 and i_105_) + Class73.anInt4786
+                        var i_107_ = (0x7 and i_105_) + FileExistsCondition.anInt4786
                         var i_108_ = i_106_ - -CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-94)
                         var i_109_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-87) + i_107_)
                         val i_110_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
@@ -282,7 +282,7 @@ class InputStream_Sub2 : InputStream() {
                         CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_118_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                         val i_119_ = (i_118_ shr 4 and 0x7) + BufferedMessageQueue.anInt3581
-                        val i_120_ = (0x7 and i_118_) + Class73.anInt4786
+                        val i_120_ = (0x7 and i_118_) + FileExistsCondition.anInt4786
                         val i_121_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i.toInt() xor 0x3235f8f0)
                         val i_122_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_123_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readMedium(-1)

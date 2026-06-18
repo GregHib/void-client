@@ -220,7 +220,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
 
         fun method2150(bool: Boolean, bool_14_: Boolean, npc: Npc) {
             anInt6226++
-            if (Class73.anInt4776 < 400) {
+            if (FileExistsCondition.anInt4776 < 400) {
                 var class79 = (npc.aClass79_10505)
                 if (class79!!.anIntArray1377 != null) {
                     class79 = class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1)

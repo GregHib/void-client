@@ -1895,7 +1895,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         for (i_345_ in (modelDefinition.aRectangleBoundsArray1832)!!.indices) {
                             val class162 = (modelDefinition.aRectangleBoundsArray1832!![i_345_])!!
                             if (class162.anInt2155 == i_339_) {
-                                val class189 = Class73.method742(104, (class162.anInt2153))
+                                val class189 = FileExistsCondition.method742(104, (class162.anInt2153))
                                 if (class189.aBoolean2531) bool_344_ = true
                                 if (class189.anInt2525 != -1) {
                                     val class12_346_ = var_renderConfig.method3((class189.anInt2525), -6662)
@@ -1952,7 +1952,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     var i_350_ = 0
                     while (anInt5406 > i_350_) {
                         val class162 = modelDefinition.aRectangleBoundsArray1832!![i_350_]!!
-                        val class189 = Class73.method742(104, (class162.anInt2153))
+                        val class189 = FileExistsCondition.method742(104, (class162.anInt2153))
                         var i_351_ = -1
                         for (i_352_ in 0..<anInt5478) {
                             if (class162.anInt2155 == `is`[i_352_]) {
@@ -3500,7 +3500,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             }
             Class8.anInt166 = 0
             if (i < 92) method661(114.toByte())
-            Class73.anInt4776 = 0
+            FileExistsCondition.anInt4776 = 0
             SourceRowTextureNode.aNodeDeque_9111!!.method1996(115)
             ContactEntry.aHashtable_9603!!.method3481(0)
             ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1009(2110355138)

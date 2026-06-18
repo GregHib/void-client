@@ -377,7 +377,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             NpcConfig.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
             MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
             RenderNode.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
-            Class73.anInt4784 = i_26_
+            FileExistsCondition.anInt4784 = i_26_
             SceneryDetailOptionState.anInt6095 = 0
             if (i_22_ <= 64) anIntArray279 = null
             ByteStore.anInt4267 = i_23_

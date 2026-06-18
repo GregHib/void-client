@@ -45,7 +45,7 @@ class SpriteDefinition : LinkedListNode() {
         var anIntArrayArrayArray7079: Array<Array<IntArray?>?>? = arrayOfNulls<Array<IntArray?>>(2)
         fun method3298(i: Byte, bool: Boolean, player: Player) {
             anInt7073++
-            if (Class73.anInt4776 < 400) {
+            if (FileExistsCondition.anInt4776 < 400) {
                 if (LocalPlayerState.aPlayer_1907 == player) {
                     if (RenderNode.aBoolean9722 && (WidgetTextConfig.anInt500 and 0x10) != 0) {
                         LongHashTable.anInt450++

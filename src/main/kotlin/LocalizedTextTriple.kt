@@ -58,7 +58,7 @@ class LocalizedTextTriple internal constructor(string: String?, string_4_: Strin
 
         fun method2222(i: Int, i_3_: Byte) {
             anInt3755++
-            Class73.aLong4783 = 1000000000L / i.toLong()
+            FileExistsCondition.aLong4783 = 1000000000L / i.toLong()
             if (i_3_.toInt() != -124) method2223(-83)
         }
 

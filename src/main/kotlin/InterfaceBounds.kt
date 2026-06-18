@@ -89,7 +89,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             AbstractTileShape.aMapSceneDefLoader_6559!!.method1393((-13).toByte())
             GraphicsOptionState.aItemDefinitionLoader_3147!!.method1290(-8)
             SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method695(true)
-            Class73.aModelDefinitionCache_4782!!.method1602(0)
+            FileExistsCondition.aModelDefinitionCache_4782!!.method1602(0)
             method3573(-15326)
             method1277(62.toByte())
             method821(-126)

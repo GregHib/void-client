@@ -474,42 +474,42 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             this.aHa_Sub2_8272!!.method3753(0, 1)
             this.aHa_Sub2_8272!!.method3757(-2, -100)
             this.aHa_Sub2_8272!!.method3771((-86).toByte(), null)
-            Class73.aFloatArray4772!![0] = (i_153_.toFloat() / ((this.aHa_Sub2_8272!!.anInt7688).toFloat() * (this.anInt4592.toFloat() * 128.0f)))
-            Class73.aFloatArray4772!![8] = 0.0f
-            Class73.aFloatArray4772!![13] = 1.0f - (((i_157_ * i_153_).toFloat() / 128.0f + (i_152_ * 2).toFloat()) / (this.aHa_Sub2_8272!!.anInt7641).toFloat())
-            Class73.aFloatArray4772!![7] = 0.0f
-            Class73.aFloatArray4772!![6] = 0.0f
-            Class73.aFloatArray4772!![5] = (i_153_.toFloat() / ((this.aHa_Sub2_8272!!.anInt7641).toFloat() * (this.anInt4592.toFloat() * 128.0f)))
-            Class73.aFloatArray4772!![1] = 0.0f
-            Class73.aFloatArray4772!![4] = 0.0f
-            Class73.aFloatArray4772!![14] = 0.0f
-            Class73.aFloatArray4772!![12] = -(((i_153_ * i_154_).toFloat() / 128.0f - (2 * i).toFloat()) / (this.aHa_Sub2_8272!!.anInt7688).toFloat()) + -1.0f
-            Class73.aFloatArray4772!![10] = 0.0f
-            Class73.aFloatArray4772!![15] = 1.0f
-            Class73.aFloatArray4772!![3] = 0.0f
-            Class73.aFloatArray4772!![2] = 0.0f
-            Class73.aFloatArray4772!![9] = 0.0f
-            Class73.aFloatArray4772!![11] = 0.0f
+            FileExistsCondition.aFloatArray4772!![0] = (i_153_.toFloat() / ((this.aHa_Sub2_8272!!.anInt7688).toFloat() * (this.anInt4592.toFloat() * 128.0f)))
+            FileExistsCondition.aFloatArray4772!![8] = 0.0f
+            FileExistsCondition.aFloatArray4772!![13] = 1.0f - (((i_157_ * i_153_).toFloat() / 128.0f + (i_152_ * 2).toFloat()) / (this.aHa_Sub2_8272!!.anInt7641).toFloat())
+            FileExistsCondition.aFloatArray4772!![7] = 0.0f
+            FileExistsCondition.aFloatArray4772!![6] = 0.0f
+            FileExistsCondition.aFloatArray4772!![5] = (i_153_.toFloat() / ((this.aHa_Sub2_8272!!.anInt7641).toFloat() * (this.anInt4592.toFloat() * 128.0f)))
+            FileExistsCondition.aFloatArray4772!![1] = 0.0f
+            FileExistsCondition.aFloatArray4772!![4] = 0.0f
+            FileExistsCondition.aFloatArray4772!![14] = 0.0f
+            FileExistsCondition.aFloatArray4772!![12] = -(((i_153_ * i_154_).toFloat() / 128.0f - (2 * i).toFloat()) / (this.aHa_Sub2_8272!!.anInt7688).toFloat()) + -1.0f
+            FileExistsCondition.aFloatArray4772!![10] = 0.0f
+            FileExistsCondition.aFloatArray4772!![15] = 1.0f
+            FileExistsCondition.aFloatArray4772!![3] = 0.0f
+            FileExistsCondition.aFloatArray4772!![2] = 0.0f
+            FileExistsCondition.aFloatArray4772!![9] = 0.0f
+            FileExistsCondition.aFloatArray4772!![11] = 0.0f
             glMatrixMode(5889)
-            glLoadMatrixf(Class73.aFloatArray4772, 0)
-            Class73.aFloatArray4772!![12] = 0.0f
-            Class73.aFloatArray4772!![4] = 0.0f
-            Class73.aFloatArray4772!![0] = 1.0f
-            Class73.aFloatArray4772!![14] = 0.0f
-            Class73.aFloatArray4772!![6] = 1.0f
-            Class73.aFloatArray4772!![8] = 0.0f
-            Class73.aFloatArray4772!![11] = 0.0f
-            Class73.aFloatArray4772!![13] = 0.0f
-            Class73.aFloatArray4772!![7] = 0.0f
-            Class73.aFloatArray4772!![5] = 0.0f
-            Class73.aFloatArray4772!![15] = 1.0f
-            Class73.aFloatArray4772!![2] = 0.0f
-            Class73.aFloatArray4772!![3] = 0.0f
-            Class73.aFloatArray4772!![9] = 1.0f
-            Class73.aFloatArray4772!![10] = 0.0f
-            Class73.aFloatArray4772!![1] = 0.0f
+            glLoadMatrixf(FileExistsCondition.aFloatArray4772, 0)
+            FileExistsCondition.aFloatArray4772!![12] = 0.0f
+            FileExistsCondition.aFloatArray4772!![4] = 0.0f
+            FileExistsCondition.aFloatArray4772!![0] = 1.0f
+            FileExistsCondition.aFloatArray4772!![14] = 0.0f
+            FileExistsCondition.aFloatArray4772!![6] = 1.0f
+            FileExistsCondition.aFloatArray4772!![8] = 0.0f
+            FileExistsCondition.aFloatArray4772!![11] = 0.0f
+            FileExistsCondition.aFloatArray4772!![13] = 0.0f
+            FileExistsCondition.aFloatArray4772!![7] = 0.0f
+            FileExistsCondition.aFloatArray4772!![5] = 0.0f
+            FileExistsCondition.aFloatArray4772!![15] = 1.0f
+            FileExistsCondition.aFloatArray4772!![2] = 0.0f
+            FileExistsCondition.aFloatArray4772!![3] = 0.0f
+            FileExistsCondition.aFloatArray4772!![9] = 1.0f
+            FileExistsCondition.aFloatArray4772!![10] = 0.0f
+            FileExistsCondition.aFloatArray4772!![1] = 0.0f
             glMatrixMode(5888)
-            glLoadMatrixf(Class73.aFloatArray4772, 0)
+            glLoadMatrixf(FileExistsCondition.aFloatArray4772, 0)
             if ((0x7 and this.anInt8235) == 0) this.aHa_Sub2_8272!!.method3728(false, 56)
             else {
                 this.aHa_Sub2_8272!!.method3728(true, 91)

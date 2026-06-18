@@ -1026,7 +1026,7 @@ class Client : GameAppletFrame() {
         method3040(true)
         method2310(69.toByte())
         method2202(-17902)
-        Class73.method741((-128).toByte())
+        FileExistsCondition.method741((-128).toByte())
         method1159(112.toByte())
         ClickFeedbackTask.method1354((-22).toByte())
         method1853(48.toByte())
@@ -2248,7 +2248,7 @@ class Client : GameAppletFrame() {
                                             }
                                         } else {
                                             if (HashLinkedListNode.anInt7059 > 0 && !SoundBankPatch.aBoolean6788) {
-                                                if (((WallEntity.anInt8770 == 1) || method2485(-124)) && Class73.anInt4776 > 2) method191(true, SceneEntityModel.anInt6411, ModelDefinitionCache.anInt2872)
+                                                if (((WallEntity.anInt8770 == 1) || method2485(-124)) && FileExistsCondition.anInt4776 > 2) method191(true, SceneEntityModel.anInt6411, ModelDefinitionCache.anInt2872)
                                                 else if (method913(117.toByte())) method191(true, SceneEntityModel.anInt6411, ModelDefinitionCache.anInt2872)
                                             }
                                             HashLinkedListNode.anInt7059 = 0

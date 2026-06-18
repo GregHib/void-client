@@ -3374,7 +3374,7 @@ class SoftwareModel : AbstractModel {
                 for (i_796_ in modelDefinition.aRectangleBoundsArray1832!!.indices) {
                     val class162 = modelDefinition.aRectangleBoundsArray1832!![i_796_]!!
                     if (i_790_ == class162.anInt2155) {
-                        val class189 = Class73.method742(104, (class162.anInt2153))
+                        val class189 = FileExistsCondition.method742(104, (class162.anInt2153))
                         if (class189.aBoolean2531) bool_795_ = true
                         if (class189.anInt2525 != -1) {
                             val class12_797_ = var_d!!.method3((class189.anInt2525), -6662)
@@ -3412,7 +3412,7 @@ class SoftwareModel : AbstractModel {
             aModelTransformParamsArray5363 = arrayOfNulls<ModelTransformParams>(anInt5389)
             for (i_800_ in modelDefinition.aRectangleBoundsArray1832!!.indices) {
                 val class162 = modelDefinition.aRectangleBoundsArray1832!![i_800_]!!
-                val class189 = Class73.method742(104, class162.anInt2153)
+                val class189 = FileExistsCondition.method742(104, class162.anInt2153)
                 var i_801_ = ((Crc64Hashable.anIntArray4983!![(modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff]) and 0xffffff)
                 i_801_ = (i_801_ or (255 - (if (modelDefinition.aByteArray1834 != null) (modelDefinition.aByteArray1834!![class162.anInt2155]).toInt() and 0xff else 0) shl 24))
                 aIdentKitRecolorArray5361!![i_800_] = IdentKitRecolor(class162.anInt2155, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class162.anInt2158)

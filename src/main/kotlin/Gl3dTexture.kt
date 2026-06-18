@@ -150,7 +150,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 BlankTextureNode.aIntRange_9254,
                 ArchiveResourceProvider.aIntRange_6340,
                 InputStream_Sub1.aIntRange_79,
-                Class73.aIntRange_4779,
+                FileExistsCondition.aIntRange_4779,
                 ObjectByteSerializerHolder.aIntRange_2285,
                 SceneTileBounds.aIntRange_1123,
                 GroundDecorRenderer.aIntRange_3641,

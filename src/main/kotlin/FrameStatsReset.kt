@@ -60,7 +60,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlTextureBase.anInt5098 = 0
             GlslMaterialPass.anInt6245 = 0
             ParticleSortRenderer.anInt3021 = 0
-            Class73.anInt4781 = 0
+            FileExistsCondition.anInt4781 = 0
             ObjectByteSerializerHolder.anInt2283 = 0
             GlVertexBufferArb.anInt8495 = 0
             Class367_Sub4.anInt7309 = 0
@@ -360,7 +360,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Buffer.anInt7194 = 0
             ConstantColourTextureNode.anInt9248 = 0
             ProceduralTextureGraph.anInt9525 = 0
-            Class73.anInt4773 = 0
+            FileExistsCondition.anInt4773 = 0
             ItemModelDefinition.anInt427 = 0
             Client.anInt5183 = 0
             IndexedSprite.anInt5198 = 0
@@ -2285,7 +2285,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlSpriteRenderer.anInt8441 = 0
             OpenGlRenderer.anInt7699 = 0
             AbstractModel.anInt1125 = 0
-            Class73.anInt4775 = 0
+            FileExistsCondition.anInt4775 = 0
             Font.anInt4065 = 0
             TextureQualityOptionState.anInt6004 = 0
             AbstractModel.anInt1134 = 0
@@ -3490,7 +3490,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlslEnvMaterialPass.anInt6275 = 0
             anInt5796 = 0
             FlickeringEffectsOptionState.anInt5920 = 0
-            Class73.anInt4774 = 0
+            FileExistsCondition.anInt4774 = 0
             WorldMapScene.anInt3121 = 0
             OggMediaStream.anInt997 = 0
             AnimatedModelRenderer.anInt8395 = 0
@@ -3749,7 +3749,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CalendarUtil.anInt4131 = 0
             WorldMapImageBuilder.anInt1138 = 0
             RangeThresholdTextureNode.anInt9105 = 0
-            Class73.anInt4777 = 0
+            FileExistsCondition.anInt4777 = 0
             FrameBufferObject.anInt4866 = 0
             WaterDetailOptionState.anInt5986 = 0
             BoxBlurTextureNode.anInt9462 = 0

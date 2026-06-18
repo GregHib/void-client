@@ -3009,7 +3009,7 @@ class OpenGlModel : AbstractModel {
                         while ((modelDefinition.aRectangleBoundsArray1832!!.size > i_706_)) {
                             val class162 = (modelDefinition.aRectangleBoundsArray1832!![i_706_])!!
                             if (i_700_ == class162.anInt2155) {
-                                val class189 = Class73.method742(104, (class162.anInt2153))
+                                val class189 = FileExistsCondition.method742(104, (class162.anInt2153))
                                 if (class189.aBoolean2531) bool_705_ = true
                                 if (class189.anInt2525 != -1) {
                                     val class12_707_ = var_renderConfig.method3((class189.anInt2525), -6662)
@@ -3070,7 +3070,7 @@ class OpenGlModel : AbstractModel {
                     var i_711_ = 0
                     while (anInt5536 > i_711_) {
                         val class162 = modelDefinition.aRectangleBoundsArray1832!![i_711_]!!
-                        val class189 = Class73.method742(104, (class162.anInt2153))
+                        val class189 = FileExistsCondition.method742(104, (class162.anInt2153))
                         var i_712_ = -1
                         for (i_713_ in 0..<anInt5632) {
                             if (class162.anInt2155 == `is`[i_713_]) {

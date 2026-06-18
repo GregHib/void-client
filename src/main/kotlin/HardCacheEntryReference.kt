@@ -277,7 +277,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == Class73.aIntRange_4779) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == FileExistsCondition.aIntRange_4779) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-78).toByte())
                 val i_23_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val i_24_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
@@ -293,7 +293,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == SceneryDetailOptionState.aIntRange_6089) {
-                Class73.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
+                FileExistsCondition.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 GradientLookupEffect.anInt9200 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-84).toByte())
                 BufferedMessageQueue.anInt3581 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3341(-8679).toInt() shl 3)
                 ModelVertexColorBuffer.aIntRange_6584 = null
@@ -937,7 +937,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             if (ModelHeaderCache.aIntRange_3265 == ModelVertexColorBuffer.aIntRange_6584) {
                 BufferedMessageQueue.anInt3581 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 GradientLookupEffect.anInt9200 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(98.toByte())
-                Class73.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt() shl 3)
+                FileExistsCondition.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt() shl 3)
                 while ((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) < RadialTextureNode.anInt9341) {
                     val class74 = (ModelHeaderCache.method1929((-19).toByte())[CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)])
                     method128(class74, 8.toByte())
@@ -1446,7 +1446,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             }
             if (TerrainShadowBuilderGl3.aIntRange_7015 == ModelVertexColorBuffer.aIntRange_6584) {
                 GradientLookupEffect.anInt9200 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(126.toByte())
-                Class73.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
+                FileExistsCondition.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 BufferedMessageQueue.anInt3581 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 var class348_sub37 = ModelBatchBase.aHashtable_1895!!.method3484(0) as? HashTableContainer?
                 while (class348_sub37 != null) {
@@ -1455,7 +1455,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     val i_189_ = i_188_ + -ArbVertexProgram.regionTileX
                     val i_190_ = (0x3fffL and (class348_sub37.aLong4291 shr 14)).toInt()
                     val i_191_ = -Class90.regionTileY + i_190_
-                    if (i == GradientLookupEffect.anInt9200 && BufferedMessageQueue.anInt3581 <= i_189_ && 8 + BufferedMessageQueue.anInt3581 > i_189_ && Class73.anInt4786 <= i_191_ && Class73.anInt4786 - -8 > i_191_) {
+                    if (i == GradientLookupEffect.anInt9200 && BufferedMessageQueue.anInt3581 <= i_189_ && 8 + BufferedMessageQueue.anInt3581 > i_189_ && FileExistsCondition.anInt4786 <= i_191_ && FileExistsCondition.anInt4786 - -8 > i_191_) {
                         class348_sub37.method2715(89.toByte())
                         if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367_Sub4.anInt7319 && (i_191_ < RangeThresholdTextureNode.anInt9109)) ProjectileSpawner.method1479(i_191_, (-118).toByte(), i_189_, GradientLookupEffect.anInt9200)
                     }
@@ -1463,7 +1463,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 }
                 var class348_sub27 = (SpriteRenderEntry.aNodeDeque_9711!!.method1995(4) as? MultiFieldRecord?)
                 while (class348_sub27 != null) {
-                    if ((BufferedMessageQueue.anInt3581 <= class348_sub27.anInt6905) && (class348_sub27.anInt6905 < BufferedMessageQueue.anInt3581 - -8) && (class348_sub27.anInt6896 >= Class73.anInt4786) && (class348_sub27.anInt6896 < Class73.anInt4786 + 8) && (class348_sub27.anInt6899 == GradientLookupEffect.anInt9200)) class348_sub27.anInt6893 = 0
+                    if ((BufferedMessageQueue.anInt3581 <= class348_sub27.anInt6905) && (class348_sub27.anInt6905 < BufferedMessageQueue.anInt3581 - -8) && (class348_sub27.anInt6896 >= FileExistsCondition.anInt4786) && (class348_sub27.anInt6896 < FileExistsCondition.anInt4786 + 8) && (class348_sub27.anInt6899 == GradientLookupEffect.anInt9200)) class348_sub27.anInt6893 = 0
                     class348_sub27 = SpriteRenderEntry.aNodeDeque_9711!!.method1990(31.toByte()) as? MultiFieldRecord?
                 }
                 ModelVertexColorBuffer.aIntRange_6584 = null
