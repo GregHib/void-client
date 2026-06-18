@@ -28,7 +28,7 @@ object AnimationFrameState {
         FacingDirectionNode.aBufferPositionTracker_6660!!.method1856(106.toByte())
         if (bool != true) aJs5Archive_1538 = null
         anInt1535++
-        for (i in 0..31) ByteBuffer.aLongArray7206!![i] = 0L
+        for (i in 0..31) ByteBufferStatics.aLongArray7206!![i] = 0L
         for (i in 0..31) MaterialTypeVariant.aLongArray8800!![i] = 0L
         FloatCameraTransform.anInt5744 = 0
     }

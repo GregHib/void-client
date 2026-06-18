@@ -162,8 +162,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     private fun method88(i: Int) {
         anInt2++
         val l = GameClock.method599(-119)
-        val l_2_ = ByteBuffer.aLongArray7206!![GzipDecompressor.anInt2071]
-        ByteBuffer.aLongArray7206!![GzipDecompressor.anInt2071] = l
+        val l_2_ = ByteBufferStatics.aLongArray7206!![GzipDecompressor.anInt2071]
+        ByteBufferStatics.aLongArray7206!![GzipDecompressor.anInt2071] = l
         if (l_2_ != 0L && l_2_ < l) {
             val i_3_ = (l - l_2_).toInt()
             SimpleToggleOptionState.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_

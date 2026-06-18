@@ -9,7 +9,7 @@ class WorldMapTextLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRende
     override fun method51(i: Byte): ProjectileFactory? {
         if (i < 116) method3572(118)
         anInt8586++
-        return ByteBuffer.aProjectileFactory_7175
+        return ByteBufferStatics.aProjectileFactory_7175
     }
 
     init {

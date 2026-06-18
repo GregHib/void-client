@@ -140,9 +140,9 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             MinimapPolygonDrawer.method465(i + -1636518175)
             FloatCameraTransform.aLong5745 = 0L
             LightingOptionState.aClass348_Sub26_5881 = null
-            if (bool) ByteBuffer.method3379(2, 12)
+            if (bool) ByteBufferStatics.method3379(2, 12)
             else {
-                ByteBuffer.method3379(i + -9, 3)
+                ByteBufferStatics.method3379(i + -9, 3)
                 try {
                     JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "loggedout")
                 } catch (throwable: Throwable) {

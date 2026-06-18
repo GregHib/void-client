@@ -1,15 +1,4 @@
-import LinkedNodeListIterator.Companion.method1006
-import HeadIconRenderer.Companion.method1213
-import LoadProgressCounters.Companion.method1372
-import CameraConfigDefinition.Companion.method1922
-import CacheIndexManager.Companion.method2355
-import RsaPacketDecoder.Companion.method2672
-import AbstractFrameBufferSurface.Companion.method3007
-import CombineTextureNode.Companion.method3088
-import SpriteRgbTextureNode.Companion.method3093
 import AsyncResourceRequest.Companion.method3255
-import LoadingScreenImageNode.Companion.method3177
-import CacheEntryReference.Companion.method3196
 import ByteArrayPool.method359
 import java.math.BigInteger
 
@@ -74,12 +63,10 @@ open class ByteBuffer : LinkedListNode {
         this.aByteArray7154!![this.anInt7197++] = i.toByte()
         this.aByteArray7154!![this.anInt7197++] = (i shr 24).toByte()
         this.aByteArray7154!![this.anInt7197++] = (i shr 16).toByte()
-        if (i_11_.toInt() != 44) anInt7207 = 1
     }
 
     fun writeShort(i: Byte, i_12_: Int) {
         anInt7145++
-        if (i.toInt() != 107) method3354(20)
         this.aByteArray7154!![this.anInt7197++] = (i_12_ shr 8).toByte()
         this.aByteArray7154!![this.anInt7197++] = i_12_.toByte()
     }
@@ -107,7 +94,6 @@ open class ByteBuffer : LinkedListNode {
     }
 
     fun method3341(i: Int): Byte {
-        if (i != -8679) aProjectileFactory_7175 = null
         anInt7195++
         return (-128 + (this.aByteArray7154!![this.anInt7197++])).toByte()
     }
@@ -134,7 +120,6 @@ open class ByteBuffer : LinkedListNode {
     }
 
     fun readByteSubtract(i: Int): Byte {
-        if (i != -27697) anInt7207 = -57
         anInt7138++
         return (-(this.aByteArray7154!![this.anInt7197++]) + 128).toByte()
     }
@@ -258,7 +243,6 @@ open class ByteBuffer : LinkedListNode {
     }
 
     fun method3359(i: Int): Int {
-        if (i > -17) aLongArray7206 = null
         anInt7188++
         this.anInt7197 += 4
         return (((this.aByteArray7154!![-3 + this.anInt7197]).toInt() shl 8 and 0xff00) + ((this.aByteArray7154!![this.anInt7197 - 1]).toInt() shl 24 and 0xffffff.inv()) + (((0xff and (this.aByteArray7154!![this.anInt7197 + -2]).toInt()) shl 16) + ((this.aByteArray7154!![-4 + this.anInt7197]).toInt() and 0xff)))
@@ -273,7 +257,6 @@ open class ByteBuffer : LinkedListNode {
 
     fun readByteInverse(i: Int): Byte {
         anInt7150++
-        if (i != -622951480) aProjectileFactory_7175 = null
         return (-this.aByteArray7154!![this.anInt7197++]).toByte()
     }
 
@@ -288,7 +271,6 @@ open class ByteBuffer : LinkedListNode {
     fun method3363(i: Int): Int {
         this.anInt7197 += 3
         anInt7144++
-        if (i != -13309) method3379(94, 83)
         return (((this.aByteArray7154!![this.anInt7197 - 3]).toInt() and 0xff) + (((this.aByteArray7154!![-2 + this.anInt7197]).toInt() shl 8 and 0xff00) + ((this.aByteArray7154!![-1 + this.anInt7197]).toInt() shl 16 and 0xff0000)))
     }
 
@@ -469,7 +451,6 @@ open class ByteBuffer : LinkedListNode {
 
     fun method3384(i: Int): String? {
         anInt7205++
-        if (i <= 105) aLongArray7206 = null
         if ((this.aByteArray7154!![this.anInt7197]).toInt() == 0) {
             this.anInt7197++
             return null
@@ -512,7 +493,6 @@ open class ByteBuffer : LinkedListNode {
             `is`[i_84_] = (this.aByteArray7154!![this.anInt7197++])
             i_84_++
         }
-        if (i != 2147483647) anInt7207 = -47
     }
 
     fun method3390(biginteger: BigInteger?, i: Byte, biginteger_85_: BigInteger?) {
@@ -522,7 +502,6 @@ open class ByteBuffer : LinkedListNode {
             this.anInt7197 = 0
             val `is` = ByteArray(i_86_)
             method3389(2147483647, 0, i_86_, `is`)
-            if (i >= -33) method3354(-73)
             val biginteger_87_ = BigInteger(`is`)
             val biginteger_88_ = biginteger_87_.modPow(biginteger_85_, biginteger)
             val is_89_ = biginteger_88_.toByteArray()
@@ -588,7 +567,6 @@ open class ByteBuffer : LinkedListNode {
     }
 
     fun method3396(i: Int, i_96_: Int) {
-        if (i_96_ > -5) aProjectileFactory_7175 = null
         anInt7146++
         if ((i and 0x7f.inv()) != 0) {
             if ((i and 0x3fff.inv()) != 0) {
@@ -616,179 +594,72 @@ open class ByteBuffer : LinkedListNode {
     }
 
     companion object {
-        var anInt7137: Int = 0
-        var anInt7138: Int = 0
-        var anInt7139: Int = 0
-        var anInt7140: Int = 0
-        var anInt7141: Int = 0
-        var anInt7142: Int = 0
-        var anInt7143: Int = 0
-        var anInt7144: Int = 0
-        var anInt7145: Int = 0
-        var anInt7146: Int = 0
-        var anInt7147: Int = 0
-        var anInt7148: Int = 0
-        var anInt7149: Int = 0
-        var anInt7150: Int = 0
-        var anInt7151: Int = 0
-        var anInt7152: Int = 0
-        var anInt7153: Int = 0
-        var anInt7155: Int = 0
-        var anInt7156: Int = 0
-        var anInt7157: Int = 0
-        var anInt7158: Int = 0
-        var anInt7159: Int = 0
-        var anInt7160: Int = 0
-        var anInt7161: Int = 0
-        var anInt7162: Int = 0
         var anInt7163: Int = 0
-        var anInt7164: Int = 0
-        var anInt7165: Int = 0
-        var anInt7166: Int = 0
-        var anInt7167: Int = 0
-        var anInt7168: Int = 0
-        var anInt7169: Int = 0
-        var anInt7170: Int = 0
-        var anInt7171: Int = 0
-        var anInt7172: Int = 0
-        var anInt7173: Int = 0
-        var anInt7174: Int = 0
-        var aProjectileFactory_7175: ProjectileFactory? = ProjectileFactory(1, 2)
-        var anInt7176: Int = 0
-        var anInt7177: Int = 0
-        var anInt7178: Int = 0
-        var anInt7179: Int = 0
-        var anInt7180: Int = 0
-        var anInt7181: Int = 0
-        var anInt7182: Int = 0
-        var anInt7183: Int = 0
-        var anInt7184: Int = 0
-        var anInt7185: Int = 0
         var anInt7186: Int = 0
-        var anInt7187: Int = 0
-        var anInt7188: Int = 0
-        var anInt7189: Int = 0
-        var anInt7190: Int = 0
-        var anInt7191: Int = 0
-        var anInt7192: Int = 0
-        var anInt7193: Int = 0
-        var anInt7194: Int = 0
-        var anInt7195: Int = 0
-        var anInt7196: Int = 0
-        var anInt7198: Int = 0
-        var anInt7199: Int = 0
-        var anInt7200: Int = 0
-        var anInt7201: Int = 0
-        var anInt7202: Int = 0
-        var anInt7203: Int = 0
-        var anInt7204: Int = 0
-        var anInt7205: Int = 0
-        var aLongArray7206: LongArray? = LongArray(32)
-        var anInt7207: Int = 0
+        var anInt7179: Int = 0
+        var anInt7172: Int = 0
         var anInt7208: Int = 0
+        var anInt7156: Int = 0
+        var anInt7162: Int = 0
+        var anInt7145: Int = 0
+        var anInt7200: Int = 0
+        var anInt7185: Int = 0
+        var anInt7148: Int = 0
+        var anInt7195: Int = 0
+        var anInt7174: Int = 0
+        var anInt7184: Int = 0
+        var anInt7165: Int = 0
+        var anInt7138: Int = 0
+        var anInt7194: Int = 0
+        var anInt7183: Int = 0
+        var anInt7164: Int = 0
+        var anInt7198: Int = 0
+        var anInt7137: Int = 0
+        var anInt7203: Int = 0
+        var anInt7168: Int = 0
+        var anInt7151: Int = 0
+        var anInt7158: Int = 0
+        var anInt7190: Int = 0
+        var anInt7193: Int = 0
+        var anInt7181: Int = 0
+        var anInt7188: Int = 0
+        var anInt7177: Int = 0
+        var anInt7150: Int = 0
+        var anInt7155: Int = 0
+        var anInt7144: Int = 0
+        var anInt7167: Int = 0
+        var anInt7149: Int = 0
+        var anInt7170: Int = 0
+        var anInt7178: Int = 0
+        var anInt7191: Int = 0
+        var anInt7139: Int = 0
+        var anInt7142: Int = 0
+        var anInt7152: Int = 0
+        var anInt7204: Int = 0
+        var anInt7171: Int = 0
+        var anInt7140: Int = 0
+        var anInt7187: Int = 0
+        var anInt7166: Int = 0
+        var anInt7160: Int = 0
+        var anInt7199: Int = 0
+        var anInt7180: Int = 0
+        var anInt7176: Int = 0
+        var anInt7157: Int = 0
+        var anInt7205: Int = 0
+        var anInt7196: Int = 0
+        var anInt7182: Int = 0
+        var anInt7153: Int = 0
+        var anInt7143: Int = 0
+        var anInt7159: Int = 0
+        var anInt7147: Int = 0
+        var anInt7202: Int = 0
         var anInt7209: Int = 0
+        var anInt7169: Int = 0
+        var anInt7141: Int = 0
+        var anInt7192: Int = 0
+        var anInt7146: Int = 0
+        var anInt7189: Int = 0
 
-        fun method3331(i: Int, i_0_: Byte, i_1_: Int): Int {
-            var i = i
-            var i_1_ = i_1_
-            anInt7161++
-            var i_2_ = 1
-            while ( /**/i > 1) {
-                if ((0x1 and i) != 0) i_2_ *= i_1_
-                i_1_ *= i_1_
-                i = i shr 1
-            }
-            val i_3_ = 3 / ((i_0_ - -24) / 46)
-            if (i == 1) return i_2_ * i_1_
-            return i_2_
-        }
 
-        fun method3354(i: Int) {
-            if (IntPair.aRenderer6968 != null) {
-                IntPair.aRenderer6968!!.method3635((-44).toByte())
-                EdgeDetectTextureNode.aFont_9173 = null
-                IntPair.aRenderer6968 = null
-            }
-            val i_37_ = -97 % ((i - -14) / 37)
-            anInt7173++
-        }
-
-        @JvmStatic
-        fun method3376(i: Int) {
-            aLongArray7206 = null
-            aProjectileFactory_7175 = null
-            if (i != -2) method3376(-87)
-        }
-
-        fun method3379(i: Int, i_71_: Int) {
-            anInt7201++
-            if (i_71_ != WorldMapRenderer.anInt4674) {
-                if (i_71_ == 13) {
-                    if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157(TextureLoadExceptionStatics.anInt4596, (-81).toByte())
-                    else method1922(TextureGenerator.aString2496, TextureLoadExceptionStatics.anInt4596, OpenGlModel.aString5600, true)
-                }
-                if (i_71_ != 13 && ItemDefinition.aAbstractGameSocket_2773 != null) {
-                    ItemDefinition.aAbstractGameSocket_2773!!.method1700(36.toByte())
-                    ItemDefinition.aAbstractGameSocket_2773 = null
-                }
-                if (i_71_ == 3) CacheEntryReference.method3198((GlBufferObject.anInt4737 != RenderNodeStatics.anInt9721), (-45).toByte())
-                if (i_71_ == 7) method1006((RenderNodeStatics.anInt9721 != FloorOverlayDefinition.anInt970), 102.toByte())
-                if (i_71_ == 5) {
-                    if (NullOggStream.aString9043 == null) method1213(OpenGlModel.aString5600, TextureGenerator.aString2496, -124)
-                    else method1372(-1)
-                } else if (i_71_ != 6) {
-                    if (i_71_ == 9) {
-                        if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157((TextureLoadExceptionStatics.anInt4596), (-120).toByte())
-                        else method1922(TextureGenerator.aString2496, TextureLoadExceptionStatics.anInt4596, OpenGlModel.aString5600, true)
-                    } else if (i_71_ == 12) {
-                        if (NullOggStream.aString9043 == null) method1213(OpenGlModel.aString5600, TextureGenerator.aString2496, -98)
-                        else method1372(-1)
-                    }
-                } else if (NullOggStream.aString9043 == null) method1922(TextureGenerator.aString2496, TextureLoadExceptionStatics.anInt4596, OpenGlModel.aString5600, true)
-                else GlElementArrayBuffer.method1157(TextureLoadExceptionStatics.anInt4596, (-99).toByte())
-                if (GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
-                    DirectionUtil.aJs5Archive_1541!!.anInt634 = 2
-                    VideoAdChecker.aJs5Archive_3183!!.anInt634 = 2
-                    AnimationFrameState.aJs5Archive_1538!!.anInt634 = 2
-                    FloatGrid.aJs5Archive_4975!!.anInt634 = 2
-                    SpotAnimVector.aJs5Archive_2306!!.anInt634 = 2
-                    OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 2
-                    BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 2
-                }
-                if (GroundDecorSceneEntity.method2402(i_71_, (-119).toByte())) {
-                    ItemModelDefinition.anInt443 = 1
-                    AnimationFrameTable.anInt489 = 0
-                    StringValueNode.Companion.anInt7115 = 1
-                    CompositeNpcModelBuilder.anInt2101 = 0
-                    LocDefinitionCache.anInt3441 = 0
-                    method3177(-111, true)
-                    DirectionUtil.aJs5Archive_1541!!.anInt634 = 1
-                    VideoAdChecker.aJs5Archive_3183!!.anInt634 = 1
-                    AnimationFrameState.aJs5Archive_1538!!.anInt634 = 1
-                    FloatGrid.aJs5Archive_4975!!.anInt634 = 1
-                    SpotAnimVector.aJs5Archive_2306!!.anInt634 = 1
-                    OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 1
-                    BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 1
-                }
-                if (i_71_ == 11 || i_71_ == 3) method3088(9)
-                val bool = (i == i_71_ || method3196(i_71_, i xor 0x58.inv()) || method2672(i_71_, -100))
-                val bool_72_ = (WorldMapRenderer.anInt4674 == 2 || method3196(WorldMapRenderer.anInt4674, -110) || method2672(WorldMapRenderer.anInt4674, -128))
-                if (bool != bool_72_) {
-                    if (bool) {
-                        SlotBinding.anInt3428 = ParticleProcessor.anInt4270
-                        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350) != 0) {
-                            method2355(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350), 50.toByte(), false, CachedRgbNoiseTexture.aJs5Archive_8667, ParticleProcessor.anInt4270, 0, 2)
-                            method3093(i xor 0x66)
-                        } else method3007(2, 22684)
-                        ClientMachineInfo.aMediaStreamClient_6601!!.method1892(-117, false)
-                    } else {
-                        method3007(2, 22684)
-                        ClientMachineInfo.aMediaStreamClient_6601!!.method1892(i xor 0x4b.inv(), true)
-                    }
-                }
-                if (GroundDecorSceneEntity.method2402(i_71_, (-64).toByte()) || i_71_ == 13) FacingDirectionNode.aRenderer6654!!.method3673()
-                WorldMapRenderer.anInt4674 = i_71_
-            }
-        }
     }
 }

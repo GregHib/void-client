@@ -353,13 +353,13 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                     if (WorldMapRenderer.anInt4674 != 4) {
                         if (WorldMapRenderer.anInt4674 != 8) {
-                            ByteBuffer.method3379(2, 10)
+                            ByteBufferStatics.method3379(2, 10)
                             if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
                                 val class348_sub47 = method2148((RsaPacketDecoder.aFontMetaRef_4223), (TheoraVideoStream.aIsaacCipher_9029), -106)
                                 InterfaceComponentGroup.method3243(127, class348_sub47)
                             }
-                        } else ByteBuffer.method3379(2, 7)
-                    } else ByteBuffer.method3379(i xor 0x2, 3)
+                        } else ByteBufferStatics.method3379(2, 7)
+                    } else ByteBufferStatics.method3379(i xor 0x2, 3)
                     AbstractTileShapeStatics.method2718(-106)
                     method3570(false)
                     AnimationFrameState.method867(true)

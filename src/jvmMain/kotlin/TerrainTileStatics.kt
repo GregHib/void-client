@@ -14,7 +14,7 @@ object TerrainTileStatics {
             anInt4586++
             val dimension = canvas.getSize()
             WhirlpoolHash.method828(38.toByte(), dimension.height, dimension.width)
-            if (ByteBuffer.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3669(canvas, GrayscaleNoiseTexture.anInt5283, LinkedNodeListIterator.anInt1651)
+            if (ByteBufferStatics.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3669(canvas, GrayscaleNoiseTexture.anInt5283, LinkedNodeListIterator.anInt1651)
             else CameraRotationStub.aRenderer326!!.method3669(canvas, SynthVoiceGroup.anInt8854, ShadowQualityOptionState.anInt6008)
         }
     }

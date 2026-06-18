@@ -34,7 +34,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
         }
 
         fun method1134(i: Int) {
-            ByteBuffer.method3379(2, 11)
+            ByteBufferStatics.method3379(2, 11)
             anInt5802++
             if (i < 28) aLinkedQueueNode_5800 = null
             HeightMapNoise.method2282(-12648)
@@ -315,7 +315,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SocketGameConnection.anInt5829 = 0
             Direct3dModel.anInt5408 = 0
             DoublyLinkedNodeList.anInt3157 = 0
-            ByteBuffer.anInt7161 = 0
+            ByteBufferStatics.anInt7161 = 0
             ParticleDetailOptionState.anInt6025 = 0
             SocketStreamWorker.anInt2666 = 0
             NpcActorEntity.anInt10065 = 0
@@ -847,7 +847,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7986 = 0
             SphereMapMaterialPass.anInt6319 = 0
             ProjectileFactory.anInt2898 = 0
-            ByteBuffer.anInt7201 = 0
+            ByteBufferStatics.anInt7201 = 0
             SeqDefinitionCache.anInt3358 = 0
             SoundChannelMixer.anInt3597 = 0
             GlslEnvMaterialPass.anInt6267 = 0
@@ -3468,7 +3468,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             AnimationFrameDefinition.anInt6956 = 0
             MapElementDefinitionCache.anInt3987 = 0
             NativeRenderer.anInt7981 = 0
-            ByteBuffer.anInt7173 = 0
+            ByteBufferStatics.anInt7173 = 0
             VoronoiNoiseTextureNode.anInt9120 = 0
             VideoStreamDecoder.anInt4125 = 0
             ModelDefinitionCache.anInt2870 = 0

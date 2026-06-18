@@ -420,7 +420,7 @@ class SceneNodeDeque {
                                 NpcDefinition.anInt2955 = 0
                                 GlRectangleTexture.method254(2, (-92).toByte())
                                 method1804(8839)
-                                ByteBuffer.method3379(2, 7)
+                                ByteBufferStatics.method3379(2, 7)
                                 ModelVertexColorBuffer.aIntRange_6584 = null
                                 return
                             }

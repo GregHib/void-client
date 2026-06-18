@@ -384,7 +384,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             MaterialPass.anInt3682 = 0
             DirectionPath.anInt1067 = i_24_
             WidgetDefinition.Companion.anSpriteDrawTarget_252 = null
-            ByteBuffer.anInt7207 = 1
+            ByteBufferStatics.anInt7207 = 1
             BloomGraphicsOptionState.anInt5965 = i
             WhirlpoolHash.method828(38.toByte(), i_25_, i_21_)
         }

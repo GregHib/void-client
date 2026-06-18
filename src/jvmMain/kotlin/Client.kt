@@ -385,7 +385,6 @@ import SpriteDefinition.Companion.method3300
 import TimedRecordAccessor.Companion.method3314
 import OutgoingPacketNode.Companion.method3323
 import OutgoingPacketNode.Companion.method3327
-import ByteBuffer.Companion.method3376
 import FloatBuffer.Companion.method3403
 import CipheredPacketBuffer.Companion.method3414
 import AbstractBloomEffect.Companion.method2757
@@ -771,7 +770,7 @@ class Client : GameAppletFrame() {
         method1627(116.toByte())
         method284(51.toByte())
         method501(1)
-        method3376(i.toInt() xor 0x6d.inv())
+        ByteBufferStatics.method3376(i.toInt() xor 0x6d.inv())
         method3323(-44)
         method2429(-123)
         method3487(-65)

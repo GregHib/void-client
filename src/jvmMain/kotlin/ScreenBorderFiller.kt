@@ -21,7 +21,7 @@ object ScreenBorderFiller {
     @JvmStatic
     fun method1168(i: Int, i_0_: Int, rectangles: Array<Rectangle?>?) {
         anInt1957++
-        if (ByteBuffer.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3707(rectangles, i, 0, 0)
+        if (ByteBufferStatics.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3707(rectangles, i, 0, 0)
         else CameraRotationStub.aRenderer326!!.method3707(rectangles, i, MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
         if (i_0_ != 0) aFontMetaRef_1961 = null
     }

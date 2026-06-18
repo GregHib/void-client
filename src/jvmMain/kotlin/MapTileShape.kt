@@ -90,7 +90,7 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
 
         fun method2663(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
             anInt4195++
-            if (ByteBuffer.anInt7207 == 1) {
+            if (ByteBufferStatics.anInt7207 == 1) {
                 var i_7_ = i_3_ / DirectionPath.anInt1067
                 var i_8_ = i_4_ / DirectionPath.anInt1067
                 var i_9_ = i_5_ / ByteStore.anInt4267

@@ -45,7 +45,7 @@ abstract class SocketFactory {
                 else {
                     ItemDefinition.aAbstractGameSocket_2773 = PerlinNoiseTextureNode.aAbstractGameSocket_9165
                     PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
-                    ByteBuffer.method3379(2, 13)
+                    ByteBufferStatics.method3379(2, 13)
                 }
             }
         }

@@ -93,7 +93,7 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Direct3dModel.aString5420 += ConfigFlagUtil.anInt3236.toString() + "%"
             } else if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.Companion.aConnectionStateType_1043) {
                 NpcConfig.Companion.aResourceLoaderThread_897 = null
-                ByteBuffer.method3379(2, 3)
+                ByteBufferStatics.method3379(2, 3)
             } else {
                 Direct3dModel.aString5420 = class56.aLocalizedText_1015!!.method2063(AnimationFrameDefinition.anInt6967, 544)
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Direct3dModel.aString5420 += class56.anInt1021.toString() + "%"

@@ -34,7 +34,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
         fun method2960(bool: Boolean, i: Int): Int {
             if (i >= -16) aFloatArray6865 = null
             anInt6870++
-            val i_0_ = ByteBuffer.anInt7207
+            val i_0_ = ByteBufferStatics.anInt7207
             while_128_@ do {
                 do {
                     if (i_0_ == 0) {
@@ -120,7 +120,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
             }
             IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1826(!bool, -142238264)
             IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271), i)
-            ByteBuffer.method3354(i_1_ + -78)
+            ByteBufferStatics.method3354(i_1_ + -78)
             FacingDirectionNode.aRenderer6654!!.method3650(10000)
             FacingDirectionNode.aRenderer6654!!.X(32)
             SettingsCrcWriter.aAbstractCameraTransform_2123 = FacingDirectionNode.aRenderer6654!!.method3654()

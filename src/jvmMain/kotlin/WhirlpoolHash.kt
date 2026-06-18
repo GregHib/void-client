@@ -189,10 +189,10 @@ class WhirlpoolHash {
                 val i_15_ = ItemModelDefinition.anInt425
                 val i_16_ = BackgroundWorkerThread.anInt3225
                 method1752(-1, i_13_, i_14_)
-                if (ByteBuffer.anInt7207 == 0) {
+                if (ByteBufferStatics.anInt7207 == 0) {
                     WidgetDefinition.anSpriteDrawTarget_252 = null
                     WidgetDefinition.anSpriteDrawTarget_252 = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665((SynthVoiceGroup.anInt8854), ShadowQualityOptionState.anInt6008), CameraRotationStub.aRenderer326!!.method3624((SynthVoiceGroup.anInt8854), ShadowQualityOptionState.anInt6008)))
-                } else if (ByteBuffer.anInt7207 == 1 && (NpcSpawnDecoder.anSpriteDrawTargetArray1525 == null || i_15_ != ItemModelDefinition.anInt425 || i_16_ != BackgroundWorkerThread.anInt3225)) {
+                } else if (ByteBufferStatics.anInt7207 == 1 && (NpcSpawnDecoder.anSpriteDrawTargetArray1525 == null || i_15_ != ItemModelDefinition.anInt425 || i_16_ != BackgroundWorkerThread.anInt3225)) {
                     NpcSpawnDecoder.anSpriteDrawTargetArray1525 = arrayOfNulls<SpriteDrawTarget>(BackgroundWorkerThread.anInt3225 * ItemModelDefinition.anInt425)
                     var i_17_ = 0
                     while (NpcSpawnDecoder.anSpriteDrawTargetArray1525!!.size > i_17_) {

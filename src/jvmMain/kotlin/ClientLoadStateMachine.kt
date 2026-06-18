@@ -112,7 +112,7 @@ object ClientLoadStateMachine {
             }
             VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
             method3568(FacingDirectionNode.aRenderer6654, 4)
-            ByteBuffer.method3379(2, 1)
+            ByteBufferStatics.method3379(2, 1)
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1029) {
             for (i_7_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_7_] = method988(RangeThresholdTextureNode.anInt9109, 1, GlCubemapLightPass.anInt7319)
@@ -166,7 +166,7 @@ object ClientLoadStateMachine {
         if (ConnectionStateType.aConnectionStateType_1032 == TimedTileQueueEntry.aConnectionStateType_9660) {
             if (ParticleProcessor.anInt4270 == -1) ParticleProcessor.anInt4270 = CachedRgbNoiseTexture.aJs5Archive_8667!!.method417("scape main", 0)
             method3290(56)
-            ByteBuffer.method3379(2, 2)
+            ByteBufferStatics.method3379(2, 2)
         }
         if (ConnectionStateType.aConnectionStateType_1033 == TimedTileQueueEntry.aConnectionStateType_9660) method323(Crc64Hashable.aJs5Archive_4984, VorbisOggDecoder.aPrivilegedOperationWorker_8992, 95.toByte())
         if (ConnectionStateType.aConnectionStateType_1034 == TimedTileQueueEntry.aConnectionStateType_9660) {
