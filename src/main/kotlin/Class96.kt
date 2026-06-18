@@ -9,7 +9,7 @@ object Class96 {
         try {
             if (!method215(27165)) throw RuntimeException("")
             if (!method3098(-30282, "jagdx")) throw RuntimeException("")
-            var_renderer = Class378.createToolkit(canvas, var_renderConfig, class45, i) as Renderer
+            var_renderer = D3dRenderDevice.createToolkit(canvas, var_renderConfig, class45, i) as Renderer
         } catch (throwable: Throwable) {
             throw RuntimeException("")
         }

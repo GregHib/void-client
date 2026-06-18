@@ -5,7 +5,7 @@ import jagdx.ue.a
 /*
  * Class142
  */
-class D3dIndexBuffer internal constructor(private val aClass378_8515: Class378, private var aClass68_8518: Class68?, private val aBoolean8519: Boolean) : Interface5_Impl2 {
+class D3dIndexBuffer internal constructor(private val aD3dRenderDevice_8515: D3dRenderDevice, private var aClass68_8518: Class68?, private val aBoolean8519: Boolean) : Interface5_Impl2 {
     private var anInt8516 = 0
     var anIDirect3DIndexBuffer8517: IDirect3DIndexBuffer? = null
     private var aBoolean8520 = false
@@ -36,7 +36,7 @@ class D3dIndexBuffer internal constructor(private val aClass378_8515: Class378, 
                 i_2_ = 0
             } else i_2_ = 1
             if (null != this.anIDirect3DIndexBuffer8517) this.anIDirect3DIndexBuffer8517!!.a(9275)
-            this.anIDirect3DIndexBuffer8517 = (aClass378_8515.anIDirect3DDevice9810!!.a(anInt8516, i_1_, if (aClass68_8518 != Class68.aClass68_1184) 102 else 101, i_2_, this.anIDirect3DIndexBuffer8517))
+            this.anIDirect3DIndexBuffer8517 = (aD3dRenderDevice_8515.anIDirect3DDevice9810!!.a(anInt8516, i_1_, if (aClass68_8518 != Class68.aClass68_1184) 102 else 101, i_2_, this.anIDirect3DIndexBuffer8517))
             anInt8521 = anInt8516
         }
     }
@@ -46,9 +46,9 @@ class D3dIndexBuffer internal constructor(private val aClass378_8515: Class378, 
         if (null == this.anIDirect3DIndexBuffer8517) return null
         if (bool_3_) method23(-111, 54)
         bool = bool and aBoolean8519
-        if (!aBoolean8520 && a((this.anIDirect3DIndexBuffer8517!!.Lock(0, anInt8521, if (!bool) 0 else 8192, aClass378_8515.aGeometryBuffer9811)), false)) {
+        if (!aBoolean8520 && a((this.anIDirect3DIndexBuffer8517!!.Lock(0, anInt8521, if (!bool) 0 else 8192, aD3dRenderDevice_8515.aGeometryBuffer9811)), false)) {
             aBoolean8520 = true
-            return aClass378_8515.aGeometryBuffer9811
+            return aD3dRenderDevice_8515.aGeometryBuffer9811
         }
         return null
     }

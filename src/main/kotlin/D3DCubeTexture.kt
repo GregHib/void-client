@@ -2,18 +2,18 @@ import jagdx.IDirect3DBaseTexture
 import jagdx.IDirect3DCubeTexture
 import jagdx.ue.a
 
-class D3DCubeTexture internal constructor(class378: Class378, private val anInt6329: Int, bool: Boolean, `is`: Array<IntArray?>?) : D3DBaseTexture(class378, GroundItemRenderState.aTextureFormatInfo_1662!!, Class68.aClass68_1183!!, bool && class378.aBoolean9802, 6 * anInt6329 * anInt6329), Interface18_Impl2 {
+class D3DCubeTexture internal constructor(d3dRenderDevice: D3dRenderDevice, private val anInt6329: Int, bool: Boolean, `is`: Array<IntArray?>?) : D3DBaseTexture(d3dRenderDevice, GroundItemRenderState.aTextureFormatInfo_1662!!, Class68.aClass68_1183!!, bool && d3dRenderDevice.aBoolean9802, 6 * anInt6329 * anInt6329), Interface18_Impl2 {
     private val anIDirect3DCubeTexture6330: IDirect3DCubeTexture
 
     override fun method63(i: Byte) {
-        this.aClass378_3893.method3956((-128).toByte(), this)
+        this.aD3dRenderDevice_3893.method3956((-128).toByte(), this)
         if (i > -21) method2314(88)
     }
 
     init {
-        if (this.aBoolean3892) anIDirect3DCubeTexture6330 = this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6329, 0, 1024, 21, 1)
-        else anIDirect3DCubeTexture6330 = this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6329, 1, 0, 21, 1)
-        val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
+        if (this.aBoolean3892) anIDirect3DCubeTexture6330 = this.aD3dRenderDevice_3893.anIDirect3DDevice9810!!.a(anInt6329, 0, 1024, 21, 1)
+        else anIDirect3DCubeTexture6330 = this.aD3dRenderDevice_3893.anIDirect3DDevice9810!!.a(anInt6329, 1, 0, 21, 1)
+        val pixelbuffer = (this.aD3dRenderDevice_3893.aPixelBuffer9803)
         for (i_0_ in 0..5) {
             val i_1_ = anIDirect3DCubeTexture6330.LockRect(i_0_, 0, 0, 0, anInt6329, anInt6329, 0, pixelbuffer)
             if (a(i_1_, false)) {

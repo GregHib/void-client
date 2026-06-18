@@ -1,6 +1,6 @@
 import jagdx.IDirect3DVertexShader
 
-class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, class45: Class45?) : AbstractRenderPass(aClass378_7328) {
+class Class367_Sub5 internal constructor(private var aD3dRenderDevice_7328: D3dRenderDevice, class45: Class45?) : AbstractRenderPass(aD3dRenderDevice_7328) {
     private var aBoolean7326 = false
     private val aBoolean7329: Boolean
     private var anIDirect3DVertexShader7330: IDirect3DVertexShader? = null
@@ -12,12 +12,12 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
     private var aBoolean7336 = false
 
     init {
-        if (null == class45 || ((aClass378_7328!!.aD3DCAPS9791!!.VertexShaderVersion) and 0xffff) < 257) aBoolean7329 = false
+        if (null == class45 || ((aD3dRenderDevice_7328!!.aD3DCAPS9791!!.VertexShaderVersion) and 0xffff) < 257) aBoolean7329 = false
         else {
-            anIDirect3DVertexShader7332 = aClass378_7328!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "uw_ground_unlit", -29832))
-            anIDirect3DVertexShader7330 = aClass378_7328!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "uw_ground_lit", -29832))
-            anIDirect3DVertexShader7334 = aClass378_7328!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "uw_model_unlit", -29832))
-            anIDirect3DVertexShader7335 = aClass378_7328!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "uw_model_lit", -29832))
+            anIDirect3DVertexShader7332 = aD3dRenderDevice_7328!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "uw_ground_unlit", -29832))
+            anIDirect3DVertexShader7330 = aD3dRenderDevice_7328!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "uw_ground_lit", -29832))
+            anIDirect3DVertexShader7334 = aD3dRenderDevice_7328!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "uw_model_unlit", -29832))
+            anIDirect3DVertexShader7335 = aD3dRenderDevice_7328!!.anIDirect3DDevice9810!!.b(class45.method391("dx", "uw_model_lit", -29832))
             if ((null != anIDirect3DVertexShader7332) and (anIDirect3DVertexShader7330 != null) and (anIDirect3DVertexShader7334 != null) and (null != anIDirect3DVertexShader7335)) {
                 anInterface18_Impl3_7331 = (this.aHa_Sub3_4479.method3839(1, 2, -15137, false, intArrayOf(0, -1)))
                 anInterface18_Impl3_7331!!.method66(false, false, 25688)
@@ -28,7 +28,7 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
 
     override fun method3528(i: Int) {
         if (i < 45) aFloatArray7327 = null
-        val idirect3ddevice = aClass378_7328!!.anIDirect3DDevice9810
+        val idirect3ddevice = aD3dRenderDevice_7328!!.anIDirect3DDevice9810
         val i_0_ = this.aHa_Sub3_4479.method3941(-103)
         val class101_sub2 = this.aHa_Sub3_4479.method3887(61.toByte())
         val idirect3dvertexshader: IDirect3DVertexShader?
@@ -36,7 +36,7 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
         else idirect3dvertexshader = (if (i_0_ == 2147483647) anIDirect3DVertexShader7332 else anIDirect3DVertexShader7334)
         if (anIDirect3DVertexShader7333 != idirect3dvertexshader) {
             anIDirect3DVertexShader7333 = idirect3dvertexshader
-            aClass378_7328!!.method3957(idirect3dvertexshader, (-89).toByte())
+            aD3dRenderDevice_7328!!.method3957(idirect3dvertexshader, (-89).toByte())
             method3545(121)
             method3524(-14775)
             method3532(10425)
@@ -67,7 +67,7 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
             aBoolean7326 = false
         }
         if (null != anIDirect3DVertexShader7333) {
-            aClass378_7328!!.method3957(null, (-89).toByte())
+            aD3dRenderDevice_7328!!.method3957(null, (-89).toByte())
             anIDirect3DVertexShader7333 = null
         }
     }
@@ -79,8 +79,8 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
     override fun method3523(i: Byte) {
         if (i.toInt() != 12) method3521(false, (-54).toByte())
         if (null != anIDirect3DVertexShader7333) {
-            val idirect3ddevice = aClass378_7328!!.anIDirect3DDevice9810
-            val class101_sub2 = aClass378_7328!!.method3948(i + -22048)!!
+            val idirect3ddevice = aD3dRenderDevice_7328!!.anIDirect3DDevice9810
+            val class101_sub2 = aD3dRenderDevice_7328!!.method3948(i + -22048)!!
             idirect3ddevice!!.a(0, class101_sub2.method924(11, aFloatArray7337))
         }
     }
@@ -88,7 +88,7 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
     override fun method3524(i: Int) {
         if (i == -14775) {
             if (null != anIDirect3DVertexShader7333) {
-                val idirect3ddevice = aClass378_7328!!.anIDirect3DDevice9810
+                val idirect3ddevice = aD3dRenderDevice_7328!!.anIDirect3DDevice9810
                 idirect3ddevice!!.a(4, this.aHa_Sub3_4479.method3835(aFloatArray7337, -101))
             }
         }
@@ -118,7 +118,7 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
     override fun method3522(i: Int) {
         if (i != -16252) method3521(true, (-11).toByte())
         if (null != anIDirect3DVertexShader7333) {
-            val idirect3ddevice = aClass378_7328!!.anIDirect3DDevice9810
+            val idirect3ddevice = aD3dRenderDevice_7328!!.anIDirect3DDevice9810
             val i_4_ = this.aHa_Sub3_4479.XA()
             val i_5_ = this.aHa_Sub3_4479.i()
             val f = -(0.125f * (i_4_ + -i_5_).toFloat()) + i_4_.toFloat()
@@ -150,7 +150,7 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
         if (i > 95) {
             if (null != anIDirect3DVertexShader7333 && aBoolean7336) {
                 val class101_sub2 = this.aHa_Sub3_4479.method3854(111.toByte())
-                val idirect3ddevice = aClass378_7328!!.anIDirect3DDevice9810
+                val idirect3ddevice = aD3dRenderDevice_7328!!.anIDirect3DDevice9810
                 idirect3ddevice!!.a(13, ((this.aHa_Sub3_4479.aFloat8093) * (this.aHa_Sub3_4479.aFloat8180)), ((this.aHa_Sub3_4479.aFloat8087) * (this.aHa_Sub3_4479.aFloat8093)), ((this.aHa_Sub3_4479.aFloat8168) * (this.aHa_Sub3_4479.aFloat8093)), 1.0f)
                 idirect3ddevice.a(14, ((this.aHa_Sub3_4479.aFloat8174) * (this.aHa_Sub3_4479.aFloat8180)), ((this.aHa_Sub3_4479.aFloat8087) * (this.aHa_Sub3_4479.aFloat8174)), ((this.aHa_Sub3_4479.aFloat8174) * (this.aHa_Sub3_4479.aFloat8168)), 1.0f)
                 idirect3ddevice.a(16, ((this.aHa_Sub3_4479.aFloat8180) * (this.aHa_Sub3_4479.aFloat8186)), ((this.aHa_Sub3_4479.aFloat8087) * (this.aHa_Sub3_4479.aFloat8186)), ((this.aHa_Sub3_4479.aFloat8168) * (this.aHa_Sub3_4479.aFloat8186)), 1.0f)
@@ -165,8 +165,8 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
     override fun method3531(bool: Boolean) {
         if (bool) method3528(89)
         if (anIDirect3DVertexShader7333 != null) {
-            val idirect3ddevice = aClass378_7328!!.anIDirect3DDevice9810
-            val class101_sub2 = aClass378_7328!!.method3948(-22036)
+            val idirect3ddevice = aD3dRenderDevice_7328!!.anIDirect3DDevice9810
+            val class101_sub2 = aD3dRenderDevice_7328!!.method3948(-22036)
             idirect3ddevice!!.a(0, class101_sub2.method924(11, aFloatArray7337))
         }
     }
@@ -174,7 +174,7 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
     override fun method3532(i: Int) {
         if (i != 10425) method3545(-24)
         if (null != anIDirect3DVertexShader7333) {
-            val idirect3ddevice = aClass378_7328!!.anIDirect3DDevice9810
+            val idirect3ddevice = aD3dRenderDevice_7328!!.anIDirect3DDevice9810
             val class101_sub2 = this.aHa_Sub3_4479.method3848(5)
             idirect3ddevice!!.SetVertexShaderConstantF(8, class101_sub2.method915(aFloatArray7337, i + -10424), 2)
         }

@@ -1,12 +1,12 @@
 import jagdx.IDirect3DVertexDeclaration
 import jagdx.VertexElementCollection
 
-class dxVertexLayout internal constructor(class378: Class378, class58s: Array<Class58>) : ModelBatchBase() {
+class dxVertexLayout internal constructor(d3dRenderDevice: D3dRenderDevice, class58s: Array<Class58>) : ModelBatchBase() {
     @JvmField
     var anIDirect3DVertexDeclaration5803: IDirect3DVertexDeclaration?
 
     init {
-        val vertexelementcollection = VertexElementCollection(class378.aHb9788)
+        val vertexelementcollection = VertexElementCollection(d3dRenderDevice.aHb9788)
         var i = 0
         for (i_0_ in class58s.indices) {
             var i_1_ = 0
@@ -28,6 +28,6 @@ class dxVertexLayout internal constructor(class378: Class378, class58s: Array<Cl
             }
         }
         vertexelementcollection.finish()
-        this.anIDirect3DVertexDeclaration5803 = class378.anIDirect3DDevice9810!!.a(vertexelementcollection, null)
+        this.anIDirect3DVertexDeclaration5803 = d3dRenderDevice.anIDirect3DDevice9810!!.a(vertexelementcollection, null)
     }
 }

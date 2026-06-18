@@ -1,4 +1,4 @@
-import Class378.Companion.method3958
+import D3dRenderDevice.Companion.method3958
 import jagdx.IDirect3DBaseTexture
 import jagdx.IDirect3DTexture
 import jagdx.ue.a
@@ -10,18 +10,18 @@ class D3DTexture2D : D3DBaseTexture, Interface18_Impl3 {
     var aBoolean6334: Boolean = false
     var aBoolean6335: Boolean = false
 
-    internal constructor(class378: Class378, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(class378, GroundItemRenderState.aTextureFormatInfo_1662!!, Class68.aClass68_1183!!, bool && class378.aBoolean9798, i_0_ * i) {
+    internal constructor(d3dRenderDevice: D3dRenderDevice, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(d3dRenderDevice, GroundItemRenderState.aTextureFormatInfo_1662!!, Class68.aClass68_1183!!, bool && d3dRenderDevice.aBoolean9798, i_0_ * i) {
         var i_2_ = i_2_
-        if (this.aClass378_3893.aBoolean9792) {
+        if (this.aD3dRenderDevice_3893.aBoolean9792) {
             anInt6331 = i_0_
             anInt6333 = i
         } else {
             anInt6333 = CacheArchiveIndexLoader.method340(i, 108.toByte())
             anInt6331 = CacheArchiveIndexLoader.method340(i_0_, 108.toByte())
         }
-        if (!bool) anIDirect3DTexture6332 = this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 1, 0, 21, 1)
-        else anIDirect3DTexture6332 = this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 0, 1024, 21, 1)
-        val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
+        if (!bool) anIDirect3DTexture6332 = this.aD3dRenderDevice_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 1, 0, 21, 1)
+        else anIDirect3DTexture6332 = this.aD3dRenderDevice_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 0, 1024, 21, 1)
+        val pixelbuffer = (this.aD3dRenderDevice_3893.aPixelBuffer9803)
         val i_3_ = anIDirect3DTexture6332.LockRect(0, 0, 0, i, i_0_, 0, pixelbuffer)
         if (a(i_3_, false)) {
             if (0 == i_2_) i_2_ = i
@@ -38,15 +38,15 @@ class D3DTexture2D : D3DBaseTexture, Interface18_Impl3 {
         }
     }
 
-    internal constructor(class378: Class378, textureFormatInfo: TextureFormatInfo, class68: Class68, i: Int, i_6_: Int) : super(class378, textureFormatInfo, class68, false, i_6_ * i) {
-        if (this.aClass378_3893.aBoolean9792) {
+    internal constructor(d3dRenderDevice: D3dRenderDevice, textureFormatInfo: TextureFormatInfo, class68: Class68, i: Int, i_6_: Int) : super(d3dRenderDevice, textureFormatInfo, class68, false, i_6_ * i) {
+        if (this.aD3dRenderDevice_3893.aBoolean9792) {
             anInt6333 = i
             anInt6331 = i_6_
         } else {
             anInt6333 = CacheArchiveIndexLoader.method340(i, 108.toByte())
             anInt6331 = CacheArchiveIndexLoader.method340(i_6_, 108.toByte())
         }
-        anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(i, i_6_, 1, 0, method3958(22, this.aClass68_3895, this.aTextureFormatInfo_3896), 1))
+        anIDirect3DTexture6332 = (this.aD3dRenderDevice_3893.anIDirect3DDevice9810!!.a(i, i_6_, 1, 0, method3958(22, this.aClass68_3895, this.aTextureFormatInfo_3896), 1))
     }
 
     override fun method64(class209: UnusedToStringStub?, i: Int) {
@@ -71,7 +71,7 @@ class D3DTexture2D : D3DBaseTexture, Interface18_Impl3 {
     override fun method65(i: Int, `is`: IntArray, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Byte, i_12_: Int) {
         if (GroundItemRenderState.aTextureFormatInfo_1662 != this.aTextureFormatInfo_3896 || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
         if (i_11_.toInt() != 112) this.aBoolean6334 = false
-        val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
+        val pixelbuffer = (this.aD3dRenderDevice_3893.aPixelBuffer9803)
         val i_13_ = anIDirect3DTexture6332.LockRect(0, i, i_9_, i_8_, i_10_, 16, pixelbuffer)
         if (a(i_13_, false)) {
             val i_14_ = pixelbuffer!!.rowPitch
@@ -82,19 +82,19 @@ class D3DTexture2D : D3DBaseTexture, Interface18_Impl3 {
         }
     }
 
-    internal constructor(class378: Class378, textureFormatInfo: TextureFormatInfo, i: Int, i_16_: Int, bool: Boolean, `is`: ByteArray?, i_17_: Int, i_18_: Int) : super(class378, textureFormatInfo, Class68.aClass68_1183!!, bool && class378.aBoolean9798, i * i_16_) {
+    internal constructor(d3dRenderDevice: D3dRenderDevice, textureFormatInfo: TextureFormatInfo, i: Int, i_16_: Int, bool: Boolean, `is`: ByteArray?, i_17_: Int, i_18_: Int) : super(d3dRenderDevice, textureFormatInfo, Class68.aClass68_1183!!, bool && d3dRenderDevice.aBoolean9798, i * i_16_) {
         var i = i
         var i_18_ = i_18_
-        if (this.aClass378_3893.aBoolean9792) {
+        if (this.aD3dRenderDevice_3893.aBoolean9792) {
             anInt6333 = i
             anInt6331 = i_16_
         } else {
             anInt6333 = CacheArchiveIndexLoader.method340(i, 108.toByte())
             anInt6331 = CacheArchiveIndexLoader.method340(i_16_, 108.toByte())
         }
-        if (bool) anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 0, 1024, method3958(22, Class68.aClass68_1183, this.aTextureFormatInfo_3896), 1))
-        else anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 1, 0, method3958(22, Class68.aClass68_1183, this.aTextureFormatInfo_3896), 1))
-        val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
+        if (bool) anIDirect3DTexture6332 = (this.aD3dRenderDevice_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 0, 1024, method3958(22, Class68.aClass68_1183, this.aTextureFormatInfo_3896), 1))
+        else anIDirect3DTexture6332 = (this.aD3dRenderDevice_3893.anIDirect3DDevice9810!!.a(anInt6333, anInt6331, 1, 0, method3958(22, Class68.aClass68_1183, this.aTextureFormatInfo_3896), 1))
+        val pixelbuffer = (this.aD3dRenderDevice_3893.aPixelBuffer9803)
         val i_19_ = anIDirect3DTexture6332.LockRect(0, 0, 0, i, i_16_, 0, pixelbuffer)
         if (a(i_19_, false)) {
             if (0 == i_18_) i_18_ = i
@@ -119,7 +119,7 @@ class D3DTexture2D : D3DBaseTexture, Interface18_Impl3 {
 
     override fun method68(i: Int, i_22_: Int, `is`: IntArray?, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
         if (this.aTextureFormatInfo_3896 != GroundItemRenderState.aTextureFormatInfo_1662 || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
-        val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
+        val pixelbuffer = (this.aD3dRenderDevice_3893.aPixelBuffer9803)
         val i_28_ = anIDirect3DTexture6332.LockRect(0, i_23_, i_26_, i_25_, i_27_, 0, pixelbuffer)
         if (a(i_28_, false)) {
             val i_29_ = pixelbuffer!!.rowPitch
@@ -142,7 +142,7 @@ class D3DTexture2D : D3DBaseTexture, Interface18_Impl3 {
 
     override fun method63(i: Byte) {
         if (i > -21) method64(null, 39)
-        this.aClass378_3893.method3954(13700, this)
+        this.aD3dRenderDevice_3893.method3954(13700, this)
     }
 
     override fun method70(i: Int, i_31_: Int, i_32_: Byte, i_33_: Int, i_34_: Int, i_35_: Int, i_36_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?) {
@@ -150,7 +150,7 @@ class D3DTexture2D : D3DBaseTexture, Interface18_Impl3 {
         var i_35_ = i_35_
         if (this.aTextureFormatInfo_3896 != textureFormatInfo || this.aClass68_3895 != Class68.aClass68_1183) throw RuntimeException()
         if (i_32_ < -4) {
-            val pixelbuffer = (this.aClass378_3893.aPixelBuffer9803)
+            val pixelbuffer = (this.aD3dRenderDevice_3893.aPixelBuffer9803)
             val i_37_ = anIDirect3DTexture6332.LockRect(0, i_36_, i, i_35_, i_34_, 0, pixelbuffer)
             if (a(i_37_, false)) {
                 i_33_ *= (this.aTextureFormatInfo_3896.anInt3850)
