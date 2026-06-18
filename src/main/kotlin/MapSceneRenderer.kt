@@ -3,7 +3,7 @@ import WorldMapAreaLabel.Companion.method3570
 /* Class44 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class44 {
+object MapSceneRenderer {
     @JvmField
     var anInt621: Int = 0
     @JvmField

@@ -265,7 +265,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     IOException_Sub1.aBoolean86 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1
                     Class47.aBoolean845 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i xor 0x7e5d.inv()) == 1
                     MapTileShape.aClass237_Sub1_4197 = WorldMapSceneSoftware(4, Class367_Sub4.anInt7319, RangeThresholdTextureNode.anInt9109, false)
-                    if (WidgetRedrawTracker.anInt3931 != 0) Class44.method385(false, MapTileShape.aClass237_Sub1_4197, DragDropController.aByteArrayArray4281)
+                    if (WidgetRedrawTracker.anInt3931 != 0) MapSceneRenderer.method385(false, MapTileShape.aClass237_Sub1_4197, DragDropController.aByteArrayArray4281)
                     else TerrainTileShape.method2727((-65).toByte(), MapTileShape.aClass237_Sub1_4197, (DragDropController.aByteArrayArray4281))
                     GroundItemRenderState.method1015(Class367_Sub4.anInt7319 shr 4, (RangeThresholdTextureNode.anInt9109 shr 4), true)
                     LoadingScreenImageNode.method3175((-77).toByte())
@@ -276,7 +276,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                             TerrainTileShape.method2727((-44).toByte(), (VarpStore.aClass237_Sub1_5067), (ModelFacePriorityNode.aByteArrayArray1887))
                             RegionSceneLoader.method2193(true, (-119).toByte())
                         } else {
-                            Class44.method385(false, VarpStore.aClass237_Sub1_5067, ModelFacePriorityNode.aByteArrayArray1887)
+                            MapSceneRenderer.method385(false, VarpStore.aClass237_Sub1_5067, ModelFacePriorityNode.aByteArrayArray1887)
                             RegionSceneLoader.method2193(true, (-125).toByte())
                         }
                         VarpStore.aClass237_Sub1_5067!!.method1679(0, 0, (MapTileShape.aClass237_Sub1_4197!!.anIntArrayArrayArray3122[0]!!))

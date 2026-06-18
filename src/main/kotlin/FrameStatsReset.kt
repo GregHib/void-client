@@ -1188,7 +1188,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             HeapInfoRecord.anInt4939 = 0
             RandomAccessFileOnDisk.anInt3042 = 0
             MinimapTileEntry.anInt612 = 0
-            Class44.anInt622 = 0
+            MapSceneRenderer.anInt622 = 0
             TextureMaterialGroup.anInt9677 = 0
             NoOpGraphicsOptionState.anInt6039 = 0
             Class6.anInt155 = 0
@@ -1472,7 +1472,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CipheredPacketBuffer.anInt9765 = 0
             Class64_Sub2.anInt5450 = 0
             ScrollTexMaterialPass.anInt6279 = 0
-            Class44.anInt623 = 0
+            MapSceneRenderer.anInt623 = 0
             WorldMapToggle.anInt3875 = 0
             WallEntity.anInt8776 = 0
             HslAdjustTextureNode.anInt9384 = 0
@@ -1922,7 +1922,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64.anInt1133 = 0
             ConfigShortValueNode.anInt9543 = 0
             Class50_Sub3.anInt5239 = 0
-            Class44.anInt621 = 0
+            MapSceneRenderer.anInt621 = 0
             TerrainTileGeometry.anInt3012 = 0
             WorldMapPolygonIconLabel.anInt10178 = 0
             NativeTerrainTile.anInt8300 = 0

@@ -1,6 +1,6 @@
 import ObjectSpawnDecoder.method1088
 import Class367_Sub10.Companion.method3553
-import Class44.method384
+import MapSceneRenderer.method384
 
 /* Class301 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

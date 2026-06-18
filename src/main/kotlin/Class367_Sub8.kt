@@ -131,7 +131,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
                 var i_4_ = 0xff and `is`[i_3_ + i_1_].toInt()
                 if (i_4_ != 0) {
                     if (i_4_ >= 128 && i_4_ < 160) {
-                        var i_5_ = Class44.aCharArray625!![i_4_ - 128].code
+                        var i_5_ = MapSceneRenderer.aCharArray625!![i_4_ - 128].code
                         if (i_5_ == 0) i_5_ = 63
                         i_4_ = i_5_
                     }

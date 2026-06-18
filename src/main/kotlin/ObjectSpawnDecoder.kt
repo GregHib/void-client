@@ -59,7 +59,7 @@ object ObjectSpawnDecoder {
         if (i >= -107) aBooleanArray1806 = null
         if (c.code > 0 && c.code < 128 || c.code >= 160 && c.code <= 255) return true
         if (c.code != 0) {
-            val cs = Class44.aCharArray625
+            val cs = MapSceneRenderer.aCharArray625
             var i_11_ = 0
             while (cs!!.size > i_11_) {
                 val i_12_ = cs[i_11_].code

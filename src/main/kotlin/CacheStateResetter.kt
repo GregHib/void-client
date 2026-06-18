@@ -17,7 +17,7 @@ object CacheStateResetter {
         LocalPlayerState.anIntArray1909 = null
         Class92.anInterface4Array1525 = null
         CameraRotationStub.aRenderer326 = null
-        Class44.aAbstractCameraTransform_624 = null
+        MapSceneRenderer.aAbstractCameraTransform_624 = null
         anInt124++
         val i_0_ = 9 / ((62 - i) / 47)
         ProjectileConfigUtil.anInt396 = -1

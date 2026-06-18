@@ -27,11 +27,11 @@ abstract class RenderNode : HashLinkedListNode() {
 
         @JvmStatic
         fun method3284(bool: Boolean, d: Double) {
-            Class44.aAbstractCameraTransform_624!!.method898(Class51.aAbstractCameraTransform_905)
+            MapSceneRenderer.aAbstractCameraTransform_624!!.method898(Class51.aAbstractCameraTransform_905)
             anInt9717++
             if (bool != true) method3285(10)
-            Class44.aAbstractCameraTransform_624!!.method891(0, 0, d.toInt())
-            CameraRotationStub.aRenderer326!!.method3638(Class44.aAbstractCameraTransform_624)
+            MapSceneRenderer.aAbstractCameraTransform_624!!.method891(0, 0, d.toInt())
+            CameraRotationStub.aRenderer326!!.method3638(MapSceneRenderer.aAbstractCameraTransform_624)
         }
 
         @JvmStatic

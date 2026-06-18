@@ -16,7 +16,7 @@ import KaraokeSubtitleStream.Companion.method2987
 import InvertTextureNode.Companion.method3135
 import SourceRowTextureNode.Companion.method3058
 import AsyncResourceRequest.Companion.method3254
-import Class44.method388
+import MapSceneRenderer.method388
 import Class58.Companion.method536
 import Class5_Sub2.Companion.method192
 import Class75_Sub1.method770

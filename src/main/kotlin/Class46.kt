@@ -967,7 +967,7 @@ class Class46 {
             CalendarUtil.method2638(-4631)
             NpcCountAccessor.method1328(-26162)
             method3102(22385)
-            Class44.method386((-106).toByte())
+            MapSceneRenderer.method386((-106).toByte())
             AudioResampler.method1271(0)
             TextureMipDescriptor.aClass60_4346!!.method587(-108)
             MaterialTypeMarker.aClass60_6517!!.method587(-109)
