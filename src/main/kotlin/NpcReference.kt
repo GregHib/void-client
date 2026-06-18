@@ -25,7 +25,7 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
             var i_2_ = 0
             if (class45.method421(false, anInt6862)) i_2_++
             if (class45.method421(false, DualMaterialContainer.anInt1639)) i_2_++
-            if (class45.method421(false, Class373_Sub2.anInt7429)) i_2_++
+            if (class45.method421(false, MouseInputTracker.anInt7429)) i_2_++
             if (class45.method421(false, Renderer.anInt4562)) i_2_++
             if (class45.method421(false, Class82.anInt1435)) i_2_++
             if (class45.method421(false, OverlayColorTable.anInt1756)) i_2_++
@@ -47,12 +47,12 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
         fun method2959(i: Int) {
             LoadProgressCounters.aKeyboardInputSource_2449!!.method2698(14174)
             anInt6860++
-            GlTexture1D.aClass373_8552!!.method3592(0)
+            GlTexture1D.aInputTracker_8552!!.method3592(0)
             Class79.aClient1367!!.method87((-49).toByte())
             ParticleSystemRenderer.aCanvas3869!!.setBackground(Color.black)
             GlShaderProgramHandle.anInt4179 = i
             LoadProgressCounters.aKeyboardInputSource_2449 = method2743(ParticleSystemRenderer.aCanvas3869, 84.toByte())
-            GlTexture1D.aClass373_8552 = InterfaceBounds.Companion.method2941(ParticleSystemRenderer.aCanvas3869, 0, true)
+            GlTexture1D.aInputTracker_8552 = InterfaceBounds.Companion.method2941(ParticleSystemRenderer.aCanvas3869, 0, true)
         }
     }
 }

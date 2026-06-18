@@ -84,9 +84,9 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
             val i_9_ = -3 + WorldMapSceneSoftware.anInt5819
             val i_10_ = 20
             method2270(Class63.anInt1117, i_4_ + anInt4717, var_renderer, LocalizedText.aLocalizedText_3507!!.method2063(AnimationFrameDefinition.anInt6967, i + 528), false, i_5_ + ProceduralTextureGraph.anInt9532, WorldMapSceneSoftware.anInt5819, i_10_)
-            val i_11_ = i_4_ + GlTexture1D.aClass373_8552!!.method3597(true)
+            val i_11_ = i_4_ + GlTexture1D.aInputTracker_8552!!.method3597(true)
             if (i != 16) method1154(9.toByte())
-            val i_12_ = i_5_ + GlTexture1D.aClass373_8552!!.method3594(95.toByte())
+            val i_12_ = i_5_ + GlTexture1D.aInputTracker_8552!!.method3594(95.toByte())
             if (ChatScriptListNode.aBoolean9535) {
                 var i_15_ = 0
                 var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-73) as? ContactList?)
@@ -98,15 +98,15 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
                 }
                 if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null) {
                     i_15_ = 0
-                    method2270(TerrainTileShape.anInt8806, Class50_Sub3.anInt5252, var_renderer, (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aString9617), false, Class373.anInt4534, ClickFeedbackTask.anInt4669, i_10_)
+                    method2270(TerrainTileShape.anInt8806, Class50_Sub3.anInt5252, var_renderer, (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aString9617), false, InputTracker.anInt4534, ClickFeedbackTask.anInt4669, i_10_)
                     var class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1011(-44) as? ContactEntry?)
                     while (class348_sub42_sub12 != null) {
-                        val i_17_ = i_15_ * 16 + (Class373.anInt4534 + i_10_ - -13)
+                        val i_17_ = i_15_ * 16 + (InputTracker.anInt4534 + i_10_ - -13)
                         if (Class50_Sub3.anInt5252 < i_11_ && (Class50_Sub3.anInt5252 - -TerrainTileShape.anInt8806) > i_11_ && -13 + i_17_ < i_12_ && i_17_ - -4 > i_12_ && (class348_sub42_sub12.aBoolean9610)) var_renderer.aa(Class50_Sub3.anInt5252, i_17_ - 12, TerrainTileShape.anInt8806, 16, (-ShortMatrixNode.anInt9511 + 255 shl 24) or CompassSmoother.anInt3374, 1)
                         i_15_++
                         class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(71.toByte()) as? ContactEntry?)
                     }
-                    method826(i_10_, Class50_Sub3.anInt5252, TerrainTileShape.anInt8806, ClickFeedbackTask.anInt4669, 125, Class373.anInt4534, var_renderer)
+                    method826(i_10_, Class50_Sub3.anInt5252, TerrainTileShape.anInt8806, ClickFeedbackTask.anInt4669, 125, InputTracker.anInt4534, var_renderer)
                 }
             } else {
                 var i_13_ = 0
@@ -133,12 +133,12 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
                     i_20_ = 0
                     var class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1011(-118) as? ContactEntry?)
                     while (class348_sub42_sub12 != null) {
-                        val i_22_ = i_20_ * 16 + 13 + (Class373.anInt4534 + i_10_)
+                        val i_22_ = i_20_ * 16 + 13 + (InputTracker.anInt4534 + i_10_)
                         i_20_++
-                        SceneModelBuilder.method2494(Class373.anInt4534, Class5_Sub2.anInt8363 or 0xffffff.inv(), i_22_, var_renderer, class348_sub42_sub12, TerrainTileShape.anInt8806, i_12_, (CharCodeMap.anInt9586 or 0xffffff.inv()), 127.toByte(), ClickFeedbackTask.anInt4669, Class50_Sub3.anInt5252, i_11_)
+                        SceneModelBuilder.method2494(InputTracker.anInt4534, Class5_Sub2.anInt8363 or 0xffffff.inv(), i_22_, var_renderer, class348_sub42_sub12, TerrainTileShape.anInt8806, i_12_, (CharCodeMap.anInt9586 or 0xffffff.inv()), 127.toByte(), ClickFeedbackTask.anInt4669, Class50_Sub3.anInt5252, i_11_)
                         class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(111.toByte()) as? ContactEntry?)
                     }
-                    SoundCacheState.method2642(TerrainTileShape.anInt8806, Class373.anInt4534, true, Class50_Sub3.anInt5252, ClickFeedbackTask.anInt4669)
+                    SoundCacheState.method2642(TerrainTileShape.anInt8806, InputTracker.anInt4534, true, Class50_Sub3.anInt5252, ClickFeedbackTask.anInt4669)
                 }
             } else {
                 var i_18_ = 0

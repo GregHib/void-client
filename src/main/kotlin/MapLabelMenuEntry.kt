@@ -13,7 +13,7 @@ class MapLabelMenuEntry : AbstractMenuEntry() {
     fun method1038(bool: Boolean): DataHolder {
         if (bool != false) method1040(-125)
         anInt5789++
-        return Class373_Sub2.aDataHolderArray7446!![anInt1711]!!
+        return MouseInputTracker.aDataHolderArray7446!![anInt1711]!!
     }
 
     companion object {

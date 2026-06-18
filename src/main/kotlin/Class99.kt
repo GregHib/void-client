@@ -66,7 +66,7 @@ object Class99 {
                 if (i_17_ < 0) i_17_ = 0
                 ManagedGlResource.aClass348_Sub42_Sub13_3152 = class348_sub42_sub13
                 TerrainTileShape.anInt8806 = i_12_
-                Class373.anInt4534 = i_17_
+                InputTracker.anInt4534 = i_17_
             }
         }
     }

@@ -435,7 +435,7 @@ import WorldMapLabel.Companion.method3567
 import WorldMapTextLabel.Companion.method3572
 import WorldMapIconLabel.Companion.method3574
 import CubemapTextureFactory.Companion.method3584
-import Class373_Sub2.Companion.method3609
+import MouseInputTracker.Companion.method3609
 import Class374.method3611
 import Class375.method3613
 import Class377.Companion.method3968
@@ -687,7 +687,7 @@ class Client : GameAppletFrame() {
             /* empty */
         }
         LoadProgressCounters.aKeyboardInputSource_2449 = ModelVertexColorBuffer.method2743(ParticleSystemRenderer.aCanvas3869, (-124).toByte())
-        GlTexture1D.aClass373_8552 = method2941(ParticleSystemRenderer.aCanvas3869, 0, true)
+        GlTexture1D.aInputTracker_8552 = method2941(ParticleSystemRenderer.aCanvas3869, 0, true)
         //        try {
         if (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 != null) {
             TextureCubeProvider.aClass78_6328 = Class78((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
@@ -1573,7 +1573,7 @@ class Client : GameAppletFrame() {
             method2228(0)
             method3260(66)
             LoadProgressCounters.aKeyboardInputSource_2449!!.method2695(67)
-            GlTexture1D.aClass373_8552!!.method3589(0)
+            GlTexture1D.aInputTracker_8552!!.method3589(0)
             if (FacingDirectionNode.aRenderer6654 != null) FacingDirectionNode.aRenderer6654!!.method3646(method599(-74).toInt())
             method1315(93)
             CameraConfigDefinition.anInt3246 = 0
@@ -1597,7 +1597,7 @@ class Client : GameAppletFrame() {
                 interface6 = LoadProgressCounters.aKeyboardInputSource_2449!!.method2697(0)
             }
             Class98.anInt1565 = 0
-            var class348_sub45 = GlTexture1D.aClass373_8552!!.method3596(0)
+            var class348_sub45 = GlTexture1D.aInputTracker_8552!!.method3596(0)
             while (class348_sub45 != null) {
                 val i_111_ = class348_sub45.method3310(86)
                 if (i_111_ != -1) {
@@ -1608,7 +1608,7 @@ class Client : GameAppletFrame() {
                         }
                     } else Class98.anInt1565 += class348_sub45.method3315(0)
                 } else NativeRenderNode.aNodeDeque_10479!!.method1999(class348_sub45, -20180)
-                class348_sub45 = GlTexture1D.aClass373_8552!!.method3596(0)
+                class348_sub45 = GlTexture1D.aInputTracker_8552!!.method3596(0)
             }
             if (method3263(true)) method363(125)
             if (NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-51).toByte())) {
@@ -1877,7 +1877,7 @@ class Client : GameAppletFrame() {
         fun method104(i: Int) {
             val i_7_ = ShaderState.anInt6513
             val `is` = ScrollTexMaterialPass.anIntArray6290
-            val i_8_ = if (Class373_Sub2.aBoolean7444) i_7_ else i_7_ + ModelDefinitionLoader.anInt2057
+            val i_8_ = if (MouseInputTracker.aBoolean7444) i_7_ else i_7_ + ModelDefinitionLoader.anInt2057
             for (i_9_ in 0..<i_8_) {
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_9_ < i_7_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_9_]])
@@ -2086,14 +2086,14 @@ class Client : GameAppletFrame() {
                                 if (!Class5_Sub1.aBoolean8335) method661(111.toByte())
                             }
                             var bool: Boolean
-                            bool = (GlTexture1D.aClass373_8552!!.method3597(true) + i_51_) >= i_45_ && GlTexture1D.aClass373_8552!!.method3594(89.toByte()) + i_52_ >= i_46_ && (GlTexture1D.aClass373_8552!!.method3597(true) + i_51_) < i_47_ && GlTexture1D.aClass373_8552!!.method3594(74.toByte()) + i_52_ < i_48_
+                            bool = (GlTexture1D.aInputTracker_8552!!.method3597(true) + i_51_) >= i_45_ && GlTexture1D.aInputTracker_8552!!.method3594(89.toByte()) + i_52_ >= i_46_ && (GlTexture1D.aInputTracker_8552!!.method3597(true) + i_51_) < i_47_ && GlTexture1D.aInputTracker_8552!!.method3594(74.toByte()) + i_52_ < i_48_
                             if (!RenderNode.aBoolean9722 && bool) {
                                 if (class46.anInt719 >= 0) Tooltip.anInt4458 = class46.anInt719
                                 else if (class46.aBoolean776) Tooltip.anInt4458 = -1
                             }
                             if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) ParticleDetailOptionState.method1797(i_41_ - i_44_, i_40_ - i_43_, class46, (-95).toByte())
                             var bool_53_ = false
-                            if (GlTexture1D.aClass373_8552!!.method3595(-91) && bool) bool_53_ = true
+                            if (GlTexture1D.aInputTracker_8552!!.method3595(-91) && bool) bool_53_ = true
                             var bool_54_ = false
                             val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as TimedRecordAccessor?)
                             if (class348_sub45 != null && class348_sub45.method3310(109) == 0 && (class348_sub45.method3308((-128).toByte()) + i_51_ >= i_45_) && class348_sub45.method3311(33) + i_52_ >= i_46_ && (class348_sub45.method3308((-127).toByte()) + i_51_ < i_47_) && class348_sub45.method3311(8) + i_52_ < i_48_) bool_54_ = true
@@ -2232,19 +2232,19 @@ class Client : GameAppletFrame() {
                                                 }
                                                 HashLinkedListNode.anInt7059 = 1
                                                 SoundBankPatch.aBoolean6788 = false
-                                                SceneEntityModel.anInt6411 = GlTexture1D.aClass373_8552!!.method3597(true)
-                                                ModelDefinitionCache.anInt2872 = GlTexture1D.aClass373_8552!!.method3594(72.toByte())
+                                                SceneEntityModel.anInt6411 = GlTexture1D.aInputTracker_8552!!.method3597(true)
+                                                ModelDefinitionCache.anInt2872 = GlTexture1D.aInputTracker_8552!!.method3594(72.toByte())
                                             }
                                         } else if (bool_53_ && (HashLinkedListNode.anInt7059 > 0)) {
-                                            if (HashLinkedListNode.anInt7059 == 1 && ((SceneEntityModel.anInt6411 != GlTexture1D.aClass373_8552!!.method3597(true)) || (ModelDefinitionCache.anInt2872 != (GlTexture1D.aClass373_8552!!.method3594(117.toByte()))))) {
+                                            if (HashLinkedListNode.anInt7059 == 1 && ((SceneEntityModel.anInt6411 != GlTexture1D.aInputTracker_8552!!.method3597(true)) || (ModelDefinitionCache.anInt2872 != (GlTexture1D.aInputTracker_8552!!.method3594(117.toByte()))))) {
                                                 ParticleDefLoader.anInt2464 = WidgetActionEntry.anInt6992
                                                 OpenGlTerrainTile.anInt8237 = DebugOverlayRenderer.anInt3170
                                                 HashLinkedListNode.anInt7059 = 2
                                             }
                                             if (HashLinkedListNode.anInt7059 == 2) {
                                                 SoundBankPatch.aBoolean6788 = true
-                                                Class64_Sub3.method689((-59).toByte(), (ParticleDefLoader.anInt2464 + (((SceneEntityModel.anInt6411) - (GlTexture1D.aClass373_8552!!.method3597(true))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()))
-                                                method2170((OpenGlTerrainTile.anInt8237 - (((ModelDefinitionCache.anInt2872) - (GlTexture1D.aClass373_8552!!.method3594(83.toByte()))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()), 3.toByte())
+                                                Class64_Sub3.method689((-59).toByte(), (ParticleDefLoader.anInt2464 + (((SceneEntityModel.anInt6411) - (GlTexture1D.aInputTracker_8552!!.method3597(true))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()))
+                                                method2170((OpenGlTerrainTile.anInt8237 - (((ModelDefinitionCache.anInt2872) - (GlTexture1D.aInputTracker_8552!!.method3594(83.toByte()))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()), 3.toByte())
                                             }
                                         } else {
                                             if (HashLinkedListNode.anInt7059 > 0 && !SoundBankPatch.aBoolean6788) {
@@ -2256,7 +2256,7 @@ class Client : GameAppletFrame() {
                                         continue
                                     }
                                     if (class46.anInt765 == MapSceneIconDef.anInt2861) {
-                                        if (bool_53_) method2676(class46.anInt709, class46.anInt789, (i_51_ + GlTexture1D.aClass373_8552!!.method3597(true) - i_43_), 58.toByte(), (i_52_ + GlTexture1D.aClass373_8552!!.method3594(111.toByte()) - i_44_))
+                                        if (bool_53_) method2676(class46.anInt709, class46.anInt789, (i_51_ + GlTexture1D.aInputTracker_8552!!.method3597(true) - i_43_), 58.toByte(), (i_52_ + GlTexture1D.aInputTracker_8552!!.method3594(111.toByte()) - i_44_))
                                         continue
                                     }
                                     if (class46.anInt765 == OutgoingPacketNode.anInt7125) {
@@ -2280,8 +2280,8 @@ class Client : GameAppletFrame() {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aBoolean6993 = true
                                     class348_sub36.aClass46_6989 = class46
-                                    class348_sub36.anInt6984 = i_51_ + GlTexture1D.aClass373_8552!!.method3597(true) - i_43_
-                                    class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aClass373_8552!!.method3594(98.toByte()) - i_44_)
+                                    class348_sub36.anInt6984 = i_51_ + GlTexture1D.aInputTracker_8552!!.method3597(true) - i_43_
+                                    class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aInputTracker_8552!!.method3594(98.toByte()) - i_44_)
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray785
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
@@ -2291,8 +2291,8 @@ class Client : GameAppletFrame() {
                                         val class348_sub36 = WidgetActionEntry()
                                         class348_sub36.aBoolean6993 = true
                                         class348_sub36.aClass46_6989 = class46
-                                        class348_sub36.anInt6984 = (i_51_ + GlTexture1D.aClass373_8552!!.method3597(true) - i_43_)
-                                        class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aClass373_8552!!.method3594(75.toByte()) - i_44_)
+                                        class348_sub36.anInt6984 = (i_51_ + GlTexture1D.aInputTracker_8552!!.method3597(true) - i_43_)
+                                        class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aInputTracker_8552!!.method3594(75.toByte()) - i_44_)
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray742
                                         FriendChatMember.aNodeDeque_4473!!.method1999(class348_sub36, -20180)
                                     }
@@ -2301,8 +2301,8 @@ class Client : GameAppletFrame() {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aBoolean6993 = true
                                     class348_sub36.aClass46_6989 = class46
-                                    class348_sub36.anInt6984 = i_51_ + GlTexture1D.aClass373_8552!!.method3597(true) - i_43_
-                                    class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aClass373_8552!!.method3594(80.toByte()) - i_44_)
+                                    class348_sub36.anInt6984 = i_51_ + GlTexture1D.aInputTracker_8552!!.method3597(true) - i_43_
+                                    class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aInputTracker_8552!!.method3594(80.toByte()) - i_44_)
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray805
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
@@ -2312,8 +2312,8 @@ class Client : GameAppletFrame() {
                                         val class348_sub36 = WidgetActionEntry()
                                         class348_sub36.aBoolean6993 = true
                                         class348_sub36.aClass46_6989 = class46
-                                        class348_sub36.anInt6984 = (i_51_ + GlTexture1D.aClass373_8552!!.method3597(true) - i_43_)
-                                        class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aClass373_8552!!.method3594(112.toByte()) - i_44_)
+                                        class348_sub36.anInt6984 = (i_51_ + GlTexture1D.aInputTracker_8552!!.method3597(true) - i_43_)
+                                        class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aInputTracker_8552!!.method3594(112.toByte()) - i_44_)
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray811
                                         HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     }
@@ -2322,8 +2322,8 @@ class Client : GameAppletFrame() {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aBoolean6993 = true
                                     class348_sub36.aClass46_6989 = class46
-                                    class348_sub36.anInt6984 = i_51_ + GlTexture1D.aClass373_8552!!.method3597(true) - i_43_
-                                    class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aClass373_8552!!.method3594(95.toByte()) - i_44_)
+                                    class348_sub36.anInt6984 = i_51_ + GlTexture1D.aInputTracker_8552!!.method3597(true) - i_43_
+                                    class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aInputTracker_8552!!.method3594(95.toByte()) - i_44_)
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray839
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
@@ -2333,8 +2333,8 @@ class Client : GameAppletFrame() {
                                         val class348_sub36 = WidgetActionEntry()
                                         class348_sub36.aBoolean6993 = true
                                         class348_sub36.aClass46_6989 = class46
-                                        class348_sub36.anInt6984 = (i_51_ + GlTexture1D.aClass373_8552!!.method3597(true) - i_43_)
-                                        class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aClass373_8552!!.method3594(90.toByte()) - i_44_)
+                                        class348_sub36.anInt6984 = (i_51_ + GlTexture1D.aInputTracker_8552!!.method3597(true) - i_43_)
+                                        class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aInputTracker_8552!!.method3594(90.toByte()) - i_44_)
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray683
                                         FriendChatMember.aNodeDeque_4473!!.method1999(class348_sub36, -20180)
                                     }
@@ -2556,7 +2556,7 @@ class Client : GameAppletFrame() {
         fun method112() {
             val i = ShaderState.anInt6513
             val `is` = ScrollTexMaterialPass.anIntArray6290
-            val i_92_ = if (Class373_Sub2.aBoolean7444) i else i + ModelDefinitionLoader.anInt2057
+            val i_92_ = if (MouseInputTracker.aBoolean7444) i else i + ModelDefinitionLoader.anInt2057
             for (i_93_ in 0..<i_92_) {
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_93_ < i) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_93_]])

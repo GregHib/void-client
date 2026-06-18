@@ -265,7 +265,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(class45, Class373_Sub2.anInt7429, 0)
+                spriteImages = SpriteImage.method1519(class45, MouseInputTracker.anInt7429, 0)
                 CameraDistanceOptionState.aAbstractModelRendererArray5857 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0

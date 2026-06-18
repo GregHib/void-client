@@ -64,7 +64,7 @@ class MinimapAreaMarkerNode : HashLinkedListNode() {
             anInt9698++
             if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null) {
                 ManagedGlResource.aClass348_Sub42_Sub13_3152 = null
-                method226(Class50_Sub3.anInt5252, TerrainTileShape.anInt8806, Class373.anInt4534, 0, ClickFeedbackTask.anInt4669)
+                method226(Class50_Sub3.anInt5252, TerrainTileShape.anInt8806, InputTracker.anInt4534, 0, ClickFeedbackTask.anInt4669)
             }
         }
 

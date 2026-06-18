@@ -30,7 +30,7 @@ class GlTexture1D internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_
 
     companion object {
         @JvmField
-        var aClass373_8552: Class373? = null
+        var aInputTracker_8552: InputTracker? = null
         @JvmField
         var aRectangleRegion_8553: RectangleRegion?
         @JvmField
@@ -49,7 +49,7 @@ class GlTexture1D internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_
         @JvmStatic
         fun method1973(i: Int) {
             aRectangleRegion_8553 = null
-            aClass373_8552 = null
+            aInputTracker_8552 = null
             if (i == 24885) anIntArray8557 = null
         }
 

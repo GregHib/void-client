@@ -1,4 +1,4 @@
-import Class373.Companion.method3591
+import InputTracker.Companion.method3591
 import Class75.Companion.method756
 import Class75.Companion.method760
 import Class75.Companion.method761

@@ -154,11 +154,11 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             if (class348_sub45 != null) i_14_ = class348_sub45.method3310(58)
             if (Class5_Sub1.aBoolean8335) {
                 if (i_14_ == -1) {
-                    val i_15_ = GlTexture1D.aClass373_8552!!.method3597(true)
-                    val i_16_ = GlTexture1D.aClass373_8552!!.method3594(116.toByte())
+                    val i_15_ = GlTexture1D.aInputTracker_8552!!.method3597(true)
+                    val i_16_ = GlTexture1D.aInputTracker_8552!!.method3594(116.toByte())
                     var bool = false
                     if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null) {
-                        if (Class50_Sub3.anInt5252 + -10 > i_15_ || ((Class50_Sub3.anInt5252 - -TerrainTileShape.anInt8806 + 10) < i_15_) || -10 + Class373.anInt4534 > i_16_ || (ClickFeedbackTask.anInt4669 + Class373.anInt4534 + 10 < i_16_)) MinimapAreaMarkerNode.method3277((-48).toByte())
+                        if (Class50_Sub3.anInt5252 + -10 > i_15_ || ((Class50_Sub3.anInt5252 - -TerrainTileShape.anInt8806 + 10) < i_15_) || -10 + InputTracker.anInt4534 > i_16_ || (ClickFeedbackTask.anInt4669 + InputTracker.anInt4534 + 10 < i_16_)) MinimapAreaMarkerNode.method3277((-48).toByte())
                         else bool = true
                     }
                     if (!bool) {
@@ -203,15 +203,15 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 if (i_14_ == 0) {
                     val i_23_ = class348_sub45!!.method3308((-128).toByte())
                     val i_24_ = class348_sub45.method3311(33)
-                    if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 <= i_23_ && (TerrainTileShape.anInt8806 + Class50_Sub3.anInt5252 >= i_23_) && i_24_ >= Class373.anInt4534 && Class373.anInt4534 + ClickFeedbackTask.anInt4669 >= i_24_) {
+                    if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 <= i_23_ && (TerrainTileShape.anInt8806 + Class50_Sub3.anInt5252 >= i_23_) && i_24_ >= InputTracker.anInt4534 && InputTracker.anInt4534 + ClickFeedbackTask.anInt4669 >= i_24_) {
                         var i_25_ = -1
                         var i_26_ = 0
                         while ((ManagedGlResource.aClass348_Sub42_Sub13_3152!!.anInt9615 > i_26_)) {
                             if (Class71.aBoolean1211) {
-                                val i_27_ = 33 + (Class373.anInt4534 + i_26_ * 16)
+                                val i_27_ = 33 + (InputTracker.anInt4534 + i_26_ * 16)
                                 if (i_24_ > -13 + i_27_ && i_24_ < 4 + i_27_) i_25_ = i_26_
                             } else {
-                                val i_28_ = i_26_ * 16 + 31 + Class373.anInt4534
+                                val i_28_ = i_26_ * 16 + 31 + InputTracker.anInt4534
                                 if (i_28_ + -13 < i_24_ && i_24_ < 3 + i_28_) i_25_ = i_26_
                             }
                             i_26_++

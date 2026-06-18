@@ -1,7 +1,7 @@
 import java.awt.Component
 import java.awt.event.*
 
-class Class373_Sub1(component: Component?, bool: Boolean) : Class373(), MouseListener, MouseMotionListener, MouseWheelListener {
+class MouseWheelInputTracker(component: Component?, bool: Boolean) : InputTracker(), MouseListener, MouseMotionListener, MouseWheelListener {
     private var anInt7416 = 0
     private var anInt7417 = 0
     private var aNodeDeque_7418: NodeDeque? = NodeDeque()

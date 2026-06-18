@@ -453,8 +453,8 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string == "nonpcs") {
-                            Class373_Sub2.aBoolean7444 = !Class373_Sub2.aBoolean7444
-                            method94("nonpcs=" + (Class373_Sub2.aBoolean7444), -120)
+                            MouseInputTracker.aBoolean7444 = !MouseInputTracker.aBoolean7444
+                            method94("nonpcs=" + (MouseInputTracker.aBoolean7444), -120)
                             return
                         }
                         if (string == "autoworld") {

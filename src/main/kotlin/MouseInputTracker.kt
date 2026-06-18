@@ -3,7 +3,7 @@ import java.awt.event.MouseEvent
 import java.awt.event.MouseListener
 import java.awt.event.MouseMotionListener
 
-class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseListener, MouseMotionListener {
+class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), MouseListener, MouseMotionListener {
     private var anInt7432 = 0
     private var aNodeDeque_7441: NodeDeque? = NodeDeque()
     private var anInt7442 = 0

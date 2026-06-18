@@ -1,7 +1,7 @@
 /* Class373 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-abstract class Class373 {
+abstract class InputTracker {
     abstract fun method3588(i: Int): Boolean
 
     abstract fun method3589(i: Int)

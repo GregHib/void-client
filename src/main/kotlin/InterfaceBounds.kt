@@ -153,14 +153,14 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
         }
 
         @JvmStatic
-        fun method2941(component: Component?, i: Int, bool: Boolean): Class373? {
+        fun method2941(component: Component?, i: Int, bool: Boolean): InputTracker? {
             anInt6808++
             try {
-                val constructor: Constructor<*> = (Class373_Sub1::class.java.getDeclaredConstructor((if (aClass6823 != null) aClass6823 else (Component::class.java.also { aClass6823 = it })), java.lang.Boolean.TYPE))
-                return (constructor.newInstance(*arrayOf<Any?>(component, bool)) as Class373)
+                val constructor: Constructor<*> = (MouseWheelInputTracker::class.java.getDeclaredConstructor((if (aClass6823 != null) aClass6823 else (Component::class.java.also { aClass6823 = it })), java.lang.Boolean.TYPE))
+                return (constructor.newInstance(*arrayOf<Any?>(component, bool)) as InputTracker)
             } catch (throwable: Throwable) {
                 if (i != 0) return null
-                return Class373_Sub2(component, bool)
+                return MouseInputTracker(component, bool)
             }
         }
 

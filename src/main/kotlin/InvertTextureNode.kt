@@ -1,4 +1,4 @@
-import Class373_Sub2.Companion.method3607
+import MouseInputTracker.Companion.method3607
 
 /* Class348_Sub40_Sub32 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
