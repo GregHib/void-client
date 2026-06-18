@@ -36,7 +36,7 @@ class ProjectileFactory internal constructor(i: Int, var anInt2896: Int) {
         }
 
         @JvmStatic
-        fun method1614(i: Int, npc: Npc?, i_2_: Int, i_3_: Int, i_4_: Int, player: Player?, class51: Class51?, i_5_: Int) {
+        fun method1614(i: Int, npc: Npc?, i_2_: Int, i_3_: Int, i_4_: Int, player: Player?, npcConfig: NpcConfig?, i_5_: Int) {
             try {
                 anInt2898++
                 if (i != 979190089) aBoolean2895 = false
@@ -44,7 +44,7 @@ class ProjectileFactory internal constructor(i: Int, var anInt2896: Int) {
                 class348_sub9.anInt6678 = i_4_ shl 9
                 class348_sub9.anInt6693 = i_2_
                 class348_sub9.anInt6689 = i_3_ shl 9
-                if (class51 == null) {
+                if (npcConfig == null) {
                     if (npc != null) {
                         class348_sub9.aNpc_6691 = npc
                         var class79 = (npc.aClass79_10505)
@@ -76,26 +76,26 @@ class ProjectileFactory internal constructor(i: Int, var anInt2896: Int) {
                         CompletedResourceRequest.aHashtable_10465!!.method3483(65.toByte(), player.anInt10290.toLong(), class348_sub9)
                     }
                 } else {
-                    class348_sub9.aClass51_6695 = class51
-                    var i_6_ = class51.anInt961
-                    var i_7_ = class51.anInt926
+                    class348_sub9.aNpcConfig_6695 = npcConfig
+                    var i_6_ = npcConfig.anInt961
+                    var i_7_ = npcConfig.anInt926
                     if (i_5_ == 1 || i_5_ == 3) {
-                        i_6_ = class51.anInt926
-                        i_7_ = class51.anInt961
+                        i_6_ = npcConfig.anInt926
+                        i_7_ = npcConfig.anInt961
                     }
                     class348_sub9.anInt6687 = i_7_ + i_3_ shl 9
-                    class348_sub9.anInt6680 = class51.anInt962
-                    class348_sub9.anInt6685 = class51.anInt887
-                    class348_sub9.anInt6681 = class51.anInt916
-                    class348_sub9.anIntArray6697 = class51.anIntArray904
-                    class348_sub9.anInt6696 = class51.anInt878
-                    class348_sub9.aBoolean6699 = class51.aBoolean903
-                    class348_sub9.anInt6694 = class51.anInt889 shl 9
-                    class348_sub9.anInt6668 = class51.anInt937
+                    class348_sub9.anInt6680 = npcConfig.anInt962
+                    class348_sub9.anInt6685 = npcConfig.anInt887
+                    class348_sub9.anInt6681 = npcConfig.anInt916
+                    class348_sub9.anIntArray6697 = npcConfig.anIntArray904
+                    class348_sub9.anInt6696 = npcConfig.anInt878
+                    class348_sub9.aBoolean6699 = npcConfig.aBoolean903
+                    class348_sub9.anInt6694 = npcConfig.anInt889 shl 9
+                    class348_sub9.anInt6668 = npcConfig.anInt937
                     class348_sub9.anInt6698 = i_6_ + i_4_ shl 9
-                    class348_sub9.anInt6677 = class51.anInt936
-                    class348_sub9.aBoolean6674 = class51.aBoolean888
-                    if (class51.anIntArray945 != null) {
+                    class348_sub9.anInt6677 = npcConfig.anInt936
+                    class348_sub9.aBoolean6674 = npcConfig.aBoolean888
+                    if (npcConfig.anIntArray945 != null) {
                         class348_sub9.aBoolean6684 = true
                         class348_sub9.method2781(21.toByte())
                     }
@@ -103,7 +103,7 @@ class ProjectileFactory internal constructor(i: Int, var anInt2896: Int) {
                     MapSceneIconDef.aNodeDeque_2859!!.method1999(class348_sub9, -20180)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ad.B(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (player != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i_5_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ad.B(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (player != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i_5_ + ')'))
             }
         }
 

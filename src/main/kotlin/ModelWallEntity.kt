@@ -10,7 +10,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub5_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelWallEntity internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int) : WallEntity(i_8_, i_9_, i_10_, i, i_7_, i_11_, i_12_), Interface10 {
+class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig?, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int) : WallEntity(i_8_, i_9_, i_10_, i, i_7_, i_11_, i_12_), Interface10 {
     private val aByte10118: Byte
     private var aClass64_10124: Class64? = null
     private var aCircleHitbox_10127: CircleHitbox? = null
@@ -161,20 +161,20 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, class51: Cla
     init {
         do {
             try {
-                aBoolean10130 = class51!!.anInt874 != 0 && !bool
+                aBoolean10130 = npcConfig!!.anInt874 != 0 && !bool
                 aByte10145 = i_13_.toByte()
-                aShort10129 = class51.anInt941.toShort()
+                aShort10129 = npcConfig.anInt941.toShort()
                 this.y = i_10_
                 aBoolean10138 = bool
                 this.x = i_8_
                 aByte10118 = i_14_.toByte()
-                aBoolean10137 = (var_renderer!!.method3682() && class51.aBoolean894 && !aBoolean10138 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
+                aBoolean10137 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10138 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 val class2 = method2491((-51).toByte(), aBoolean10137, 2048, var_renderer)
                 if (class2 == null) break
                 aClass64_10124 = class2.aClass64_119
                 aRenderNode10128 = class2.aRenderNode118
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("co.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("co.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))
             }
             break
         } while (false)

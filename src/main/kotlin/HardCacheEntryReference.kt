@@ -132,7 +132,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     var i_7_ = 0
                     while ((i_7_ < ContactEntry.anInt9604)) {
                         if (ObjectSpawnDecoder.aStringArray1808!![i_7_] == string_6_) {
-                            Class51.aStringArray932!![i_7_] = string
+                            NpcConfig.aStringArray932!![i_7_] = string
                             ObjectSpawnDecoder.aStringArray1808!![i_7_] = string_4_
                             WeaveTextureNode.aStringArray9275!![i_7_] = string_5_
                             IndexedSprite.aStringArray5197!![i_7_] = string_6_
@@ -141,7 +141,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                         i_7_++
                     }
                 } else {
-                    Class51.aStringArray932!![ContactEntry.anInt9604] = string
+                    NpcConfig.aStringArray932!![ContactEntry.anInt9604] = string
                     ObjectSpawnDecoder.aStringArray1808!![ContactEntry.anInt9604] = string_4_
                     WeaveTextureNode.aStringArray9275!![(ContactEntry.anInt9604)] = string_5_
                     IndexedSprite.aStringArray5197!![ContactEntry.anInt9604] = string_6_
@@ -1107,9 +1107,9 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ContactEntry.anInt9604 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 var i = 0
                 while (ContactEntry.anInt9604 > i) {
-                    Class51.aStringArray932!![i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-36).toByte())
+                    NpcConfig.aStringArray932!![i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-36).toByte())
                     ObjectSpawnDecoder.aStringArray1808!![i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(112.toByte())
-                    if (ObjectSpawnDecoder.aStringArray1808!![i] == "") ObjectSpawnDecoder.aStringArray1808!![i] = Class51.aStringArray932!![i]
+                    if (ObjectSpawnDecoder.aStringArray1808!![i] == "") ObjectSpawnDecoder.aStringArray1808!![i] = NpcConfig.aStringArray932!![i]
                     WeaveTextureNode.aStringArray9275!![i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(84.toByte())
                     IndexedSprite.aStringArray5197!![i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-111).toByte())
                     if (IndexedSprite.aStringArray5197!![i] == "") IndexedSprite.aStringArray5197!![i] = WeaveTextureNode.aStringArray9275!![i]

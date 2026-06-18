@@ -162,8 +162,8 @@ class LoadingBarRenderer : Interface16 {
             val graphics = ParticleSystemRenderer.aCanvas3869!!.getGraphics()
             if (graphics != null) {
                 try {
-                    val i_5_ = Class51.aResourceLoaderThread_897!!.method2320(103.toByte())
-                    val string = Class51.aResourceLoaderThread_897!!.method2318(-9324)
+                    val i_5_ = NpcConfig.aResourceLoaderThread_897!!.method2320(103.toByte())
+                    val string = NpcConfig.aResourceLoaderThread_897!!.method2318(-9324)
                     if (WidgetRedrawRegion.anImage4249 == null) WidgetRedrawRegion.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432))
                     val graphics_6_ = WidgetRedrawRegion.anImage4249!!.getGraphics()
                     graphics_6_.clearRect(0, 0, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
@@ -255,7 +255,7 @@ class LoadingBarRenderer : Interface16 {
 
     private fun method2219(i: Int) {
         anInt5031++
-        LoadingScreenState.method1455(Class51.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884], Class51.aResourceLoaderThread_897!!.method2318(-9324), (PerlinNoiseTextureNode.aColorArray9163!![UnderlayDefinition.anInt2884]), (-100).toByte(), MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884])
+        LoadingScreenState.method1455(NpcConfig.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884], NpcConfig.aResourceLoaderThread_897!!.method2318(-9324), (PerlinNoiseTextureNode.aColorArray9163!![UnderlayDefinition.anInt2884]), (-100).toByte(), MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884])
         if (i != 33) method55(1.toByte())
     }
 

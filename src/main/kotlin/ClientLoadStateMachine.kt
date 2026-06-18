@@ -274,7 +274,7 @@ object ClientLoadStateMachine {
         }
         if (Class56.aClass56_1041 == TimedTileQueueEntry.aClass56_9660) CacheEntryReference.method3198(true, (-45).toByte())
         if (TimedTileQueueEntry.aClass56_9660 == Class56.aClass56_1042) {
-            Class51.aResourceLoaderThread_897!!.method2319((-56).toByte())
+            NpcConfig.aResourceLoaderThread_897!!.method2319((-56).toByte())
             try {
                 TerrainShadowBuilderGl2.aThread6946!!.join()
             } catch (interruptedexception: InterruptedException) {
@@ -282,7 +282,7 @@ object ClientLoadStateMachine {
             }
             PerlinTextureProvider.aCollisionMapRegion_5813 = null
             SpriteRgbTextureNode.aJs5Archive_10426 = null
-            Class51.aResourceLoaderThread_897 = null
+            NpcConfig.aResourceLoaderThread_897 = null
             LoadProgressCounters.anInterface16Array2447 = null
             TerrainShadowBuilderGl2.aThread6946 = null
             ScrollTexMaterialPass.aJs5Archive_6277 = null

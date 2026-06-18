@@ -49,7 +49,7 @@ object MinimapFlagRenderer {
     fun method1083(var_renderer: Renderer?, i: Int, i_2_: Byte, i_3_: Int, i_4_: Int, i_5_: Int) {
         anInt1798++
         CameraRotationStub.aRenderer326 = var_renderer
-        Class51.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
+        NpcConfig.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
         MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
         RenderNode.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
         HardKeyedCacheEntryReference.anInt10444 = i_4_

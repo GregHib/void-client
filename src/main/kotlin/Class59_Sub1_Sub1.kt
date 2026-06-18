@@ -37,7 +37,7 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
         @JvmStatic
         fun method556(bool: Boolean) {
             anInt8656++
-            if (Class51.aResourceLoaderThread_897 != null) Class51.aResourceLoaderThread_897!!.method2319((-75).toByte())
+            if (NpcConfig.aResourceLoaderThread_897 != null) NpcConfig.aResourceLoaderThread_897!!.method2319((-75).toByte())
             if (bool == false) {
                 if (TerrainShadowBuilderGl2.aThread6946 != null) {
                     while (true) {

@@ -1053,7 +1053,7 @@ object Class66 {
             if (i == 5424) {
                 anInt1173 -= 11
                 CompassSmoother.anInt3376 = anIntArray1149!![anInt1173]
-                Class51.anInt948 = anIntArray1149!![anInt1173 + 1]
+                NpcConfig.anInt948 = anIntArray1149!![anInt1173 + 1]
                 CompassSmoother.anInt3374 = anIntArray1149!![anInt1173 + 2]
                 ShortMatrixNode.anInt9511 = anIntArray1149!![anInt1173 + 3]
                 HudTabPanel.anInt2996 = anIntArray1149!![anInt1173 + 4]
@@ -4328,7 +4328,7 @@ object Class66 {
                 if (i == 3622) {
                     val i_367_ = anIntArray1149!![--anInt1173]
                     if (MinimapSpriteRenderer.anInt4930 != 0 && i_367_ < ContactEntry.anInt9604) {
-                        aStringArray1152!![anInt1170++] = Class51.aStringArray932!![i_367_]!!
+                        aStringArray1152!![anInt1170++] = NpcConfig.aStringArray932!![i_367_]!!
                         if (WeaveTextureNode.aStringArray9275!![i_367_] != null) aStringArray1152!![anInt1170++] = (WeaveTextureNode.aStringArray9275!![i_367_]!!)
                         else aStringArray1152!![anInt1170++] = ""
                     } else {

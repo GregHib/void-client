@@ -343,18 +343,18 @@ class SceneryDetailOptionState : GraphicsOptionState {
                             }
                             if (class318_sub4.aClass318_Sub1_6410 is Interface10) {
                                 val interface10 = ((class318_sub4.aClass318_Sub1_6410) as Interface10)
-                                var class51: Class51? = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-100)))
-                                if (class51!!.anIntArray945 != null) class51 = (class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte()))
-                                if (class51 != null) {
+                                var npcConfig: NpcConfig? = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-100)))
+                                if (npcConfig!!.anIntArray945 != null) npcConfig = (npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte()))
+                                if (npcConfig != null) {
                                     if (RenderNode.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == (class318_sub4.aClass318_Sub1_6410!!.plane))) {
                                         val class254 = (if (ParticleEmitterFactory.anInt3176 != -1) (ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364)) else null)
-                                        if (((0x4 and WidgetTextConfig.anInt500) != 0) && (class254 == null || ((class254.anInt3256) != (class51.method487(ParticleEmitterFactory.anInt3176, (class254.anInt3256), 54))))) {
+                                        if (((0x4 and WidgetTextConfig.anInt500) != 0) && (class254 == null || ((class254.anInt3256) != (npcConfig.method487(ParticleEmitterFactory.anInt3176, (class254.anInt3256), 54))))) {
                                             TrigLookupInit.anInt2877++
-                                            MinimapPolygonDrawer.method466(false, (ItemNameResolver.aString5000 + " -> <col=00ffff>" + (class51.aString884)), i_32_, (-94).toByte(), false, i_33_, -1, true, 2, interface10.hashCode().toLong(), ItemNameResolver.aString5001, (WeaveTextureNode.method3107(95.toByte(), interface10, i_32_, i_33_)), FloatBuffer.anInt9747)
+                                            MinimapPolygonDrawer.method466(false, (ItemNameResolver.aString5000 + " -> <col=00ffff>" + (npcConfig.aString884)), i_32_, (-94).toByte(), false, i_33_, -1, true, 2, interface10.hashCode().toLong(), ItemNameResolver.aString5001, (WeaveTextureNode.method3107(95.toByte(), interface10, i_32_, i_33_)), FloatBuffer.anInt9747)
                                         }
                                     }
                                     if (class318_sub4.aClass318_Sub1_6410!!.plane == (LocalPlayerState.aPlayer_1907!!.plane)) {
-                                        val strings = class51.aStringArray913
+                                        val strings = npcConfig.aStringArray913
                                         if (strings != null) {
                                             for (i_61_ in 4 downTo 0) {
                                                 if (strings[i_61_] != null) {
@@ -365,9 +365,9 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                     if (i_61_ == 2) i_62_ = 9
                                                     if (i_61_ == 3) i_62_ = 59
                                                     if (i_61_ == 4) i_62_ = 1007
-                                                    if ((class51.anInt950) == i_61_) i_63_ = (class51.anInt869)
-                                                    if (i_61_ == (class51.anInt951)) i_63_ = (class51.anInt877)
-                                                    MinimapPolygonDrawer.method466(false, ("<col=00ffff>" + (class51.aString884)), i_32_, (-100).toByte(), false, i_33_, -1, true, i_62_, interface10.hashCode().toLong(), strings[i_61_], (WeaveTextureNode.method3107((-116).toByte(), interface10, i_32_, i_33_)), i_63_)
+                                                    if ((npcConfig.anInt950) == i_61_) i_63_ = (npcConfig.anInt869)
+                                                    if (i_61_ == (npcConfig.anInt951)) i_63_ = (npcConfig.anInt877)
+                                                    MinimapPolygonDrawer.method466(false, ("<col=00ffff>" + (npcConfig.aString884)), i_32_, (-100).toByte(), false, i_33_, -1, true, i_62_, interface10.hashCode().toLong(), strings[i_61_], (WeaveTextureNode.method3107((-116).toByte(), interface10, i_32_, i_33_)), i_63_)
                                                     Class83.anInt1445++
                                                 }
                                             }
@@ -376,7 +376,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         val y = i_32_ + Class90.regionTileY
                                         MinimapPolygonDrawer.method466(
                                             ((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane),
-                                            ("<col=00ffff>" + class51.aString884 + Loader.getDebug(class51.anInt941, x, y, class318_sub4.aClass318_Sub1_6410!!.plane.toInt())),
+                                            ("<col=00ffff>" + npcConfig.aString884 + Loader.getDebug(npcConfig.anInt941, x, y, class318_sub4.aClass318_Sub1_6410!!.plane.toInt())),
                                             i_32_,
                                             (-120).toByte(),
                                             false,
@@ -386,7 +386,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             1001,
                                             interface10.hashCode().toLong(),
                                             (LocalizedText.aLocalizedText_3505!!.method2063(AnimationFrameDefinition.anInt6967, 544)),
-                                            class51.anInt941.toLong(),
+                                            npcConfig.anInt941.toLong(),
                                             CubeMapMaterialPass.anInt6299
                                         )
                                         anInt6094++

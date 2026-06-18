@@ -34,9 +34,9 @@ class Class70 {
             if (i <= 88) anIntArray1204 = null
             anInt1206++
             if (TimedTileQueueEntry.aClass56_9660 != null) {
-                Class51.aResourceLoaderThread_897 = ResourceLoaderThread()
-                Class51.aResourceLoaderThread_897!!.method2316(TimedTileQueueEntry.aClass56_9660, TimedTileQueueEntry.aClass56_9660!!.aLocalizedText_1012!!.method2063(AnimationFrameDefinition.anInt6967, 544), TimedTileQueueEntry.aClass56_9660!!.anInt1025, DataHolder.aLong3660, false)
-                TerrainShadowBuilderGl2.aThread6946 = Thread(Class51.aResourceLoaderThread_897, "")
+                NpcConfig.aResourceLoaderThread_897 = ResourceLoaderThread()
+                NpcConfig.aResourceLoaderThread_897!!.method2316(TimedTileQueueEntry.aClass56_9660, TimedTileQueueEntry.aClass56_9660!!.aLocalizedText_1012!!.method2063(AnimationFrameDefinition.anInt6967, 544), TimedTileQueueEntry.aClass56_9660!!.anInt1025, DataHolder.aLong3660, false)
+                TerrainShadowBuilderGl2.aThread6946 = Thread(NpcConfig.aResourceLoaderThread_897, "")
                 TerrainShadowBuilderGl2.aThread6946!!.start()
             }
         }

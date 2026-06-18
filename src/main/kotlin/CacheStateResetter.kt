@@ -21,7 +21,7 @@ object CacheStateResetter {
         anInt124++
         val i_0_ = 9 / ((62 - i) / 47)
         ProjectileConfigUtil.anInt396 = -1
-        Class51.aAbstractCameraTransform_905 = null
+        NpcConfig.aAbstractCameraTransform_905 = null
         Buffer.anInt7207 = -1
         WorldMapAreaLabel.anInt8583 = -1
         HardCacheEntryReference.aClass76_10436!!.method775(69.toByte())

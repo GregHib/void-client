@@ -80,7 +80,7 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
                 DataHolder.aLong3660 = Class62.method599(-119)
             }
             anInt4900++
-            if (Class51.Companion.aResourceLoaderThread_897 == null) Class70.method726(116)
+            if (NpcConfig.Companion.aResourceLoaderThread_897 == null) Class70.method726(116)
             val class56 = TimedTileQueueEntry.aClass56_9660!!
             val i = ClientLoadStateMachine.method1278(-28660)
             if (class56 == TimedTileQueueEntry.aClass56_9660) {
@@ -88,7 +88,7 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
                 if (TimedTileQueueEntry.aClass56_9660!!.aBoolean1016) ConfigFlagUtil.anInt3236 = (i * ((TimedTileQueueEntry.aClass56_9660!!.anInt1021) + -(TimedTileQueueEntry.aClass56_9660!!.anInt1025)) / 100 + (TimedTileQueueEntry.aClass56_9660!!.anInt1025))
                 if (TimedTileQueueEntry.aClass56_9660!!.aBoolean1013) Class64_Sub2.aString5420 += ConfigFlagUtil.anInt3236.toString() + "%"
             } else if (TimedTileQueueEntry.aClass56_9660 == Class56.Companion.aClass56_1043) {
-                Class51.Companion.aResourceLoaderThread_897 = null
+                NpcConfig.Companion.aResourceLoaderThread_897 = null
                 Buffer.method3379(2, 3)
             } else {
                 Class64_Sub2.aString5420 = class56.aLocalizedText_1015!!.method2063(AnimationFrameDefinition.anInt6967, 544)
@@ -97,19 +97,19 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
                 if (TimedTileQueueEntry.aClass56_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolder.aLong3660 = Class62.method599(-128)
             }
             if (bool == true) {
-                if (Class51.Companion.aResourceLoaderThread_897 != null) {
-                    Class51.Companion.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aClass56_9660), Class64_Sub2.aString5420, ConfigFlagUtil.anInt3236, DataHolder.aLong3660, false)
+                if (NpcConfig.Companion.aResourceLoaderThread_897 != null) {
+                    NpcConfig.Companion.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aClass56_9660), Class64_Sub2.aString5420, ConfigFlagUtil.anInt3236, DataHolder.aLong3660, false)
                     if (LoadProgressCounters.anInterface16Array2447 != null) {
                         var i_5_ = PlayerAppearanceUpdateDecoder.anInt4544 - -1
                         while ((LoadProgressCounters.anInterface16Array2447!!.size > i_5_)) {
-                            if (LoadProgressCounters.anInterface16Array2447!![i_5_]!!.method60(-19079) >= 100 && PlayerAppearanceUpdateDecoder.anInt4544 == -1 + i_5_ && WorldMapRenderer.anInt4674 >= 1 && Class51.Companion.aResourceLoaderThread_897!!.method2322(0)) {
+                            if (LoadProgressCounters.anInterface16Array2447!![i_5_]!!.method60(-19079) >= 100 && PlayerAppearanceUpdateDecoder.anInt4544 == -1 + i_5_ && WorldMapRenderer.anInt4674 >= 1 && NpcConfig.Companion.aResourceLoaderThread_897!!.method2322(0)) {
                                 try {
                                     LoadProgressCounters.anInterface16Array2447!![i_5_]!!.method57(117)
                                 } catch (exception: Exception) {
                                     LoadProgressCounters.anInterface16Array2447 = null
                                     break
                                 }
-                                Class51.Companion.aResourceLoaderThread_897!!.method2321(10559, LoadProgressCounters.anInterface16Array2447!![i_5_]!!)
+                                NpcConfig.Companion.aResourceLoaderThread_897!!.method2321(10559, LoadProgressCounters.anInterface16Array2447!![i_5_]!!)
                                 PlayerAppearanceUpdateDecoder.anInt4544++
                                 if ((PlayerAppearanceUpdateDecoder.anInt4544 >= (-1 + LoadProgressCounters.anInterface16Array2447!!.size)) && LoadProgressCounters.anInterface16Array2447!!.size > 1) PlayerAppearanceUpdateDecoder.anInt4544 = if (!PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(26)) -1 else 0
                             }

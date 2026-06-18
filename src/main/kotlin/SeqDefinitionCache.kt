@@ -24,35 +24,35 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         }
     }
 
-    fun method2005(i: Int, i_0_: Int): Class51 {
+    fun method2005(i: Int, i_0_: Int): NpcConfig {
         anInt3351++
-        var class51: Class51?
+        var npcConfig: NpcConfig?
         synchronized(aClass60_3350!!) {
-            class51 = aClass60_3350!!.method583(i_0_.toLong(), i xor 0x32) as Class51?
+            npcConfig = aClass60_3350!!.method583(i_0_.toLong(), i xor 0x32) as NpcConfig?
         }
-        if (class51 != null) return class51
+        if (npcConfig != null) return npcConfig
         val `is`: ByteArray?
         synchronized(aJs5Archive_3343!!) {
             `is` = aJs5Archive_3343.method410(i + -1860, method1850(i_0_, 111), ScrollbarComponent.method185(i_0_, (-90).toByte()))
         }
-        class51 = Class51()
-        class51.anInt941 = i_0_
-        class51.aSeqDefinitionCache_933 = this
-        if (`is` != null) class51.method479(0.toByte(), Buffer(`is`))
-        class51.method488(-105)
+        npcConfig = NpcConfig()
+        npcConfig.anInt941 = i_0_
+        npcConfig.aSeqDefinitionCache_933 = this
+        if (`is` != null) npcConfig.method479(0.toByte(), Buffer(`is`))
+        npcConfig.method488(-105)
         if (i != 0) this.aClass60_3361 = null
-        if (!this.aBoolean3359 && class51.aBoolean942) {
-            class51.anIntArray917 = null
-            class51.aStringArray913 = null
+        if (!this.aBoolean3359 && npcConfig.aBoolean942) {
+            npcConfig.anIntArray917 = null
+            npcConfig.aStringArray913 = null
         }
-        if (class51.aBoolean876) {
-            class51.anInt920 = 0
-            class51.aBoolean896 = false
+        if (npcConfig.aBoolean876) {
+            npcConfig.anInt920 = 0
+            npcConfig.aBoolean896 = false
         }
         synchronized(aClass60_3350!!) {
-            aClass60_3350!!.method582(class51, i_0_.toLong(), (-109).toByte())
+            aClass60_3350!!.method582(npcConfig, i_0_.toLong(), (-109).toByte())
         }
-        return class51
+        return npcConfig
     }
 
     fun method2006(i: Int) {

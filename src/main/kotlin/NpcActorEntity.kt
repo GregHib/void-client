@@ -6,7 +6,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub4_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class NpcActorEntity internal constructor(var_renderer: Renderer?, class51: Class51?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, bool_6_: Boolean) : ActorEntity(i_1_, i_2_, i_3_, i, i_0_, SphereMapMaterialPass.method2175(i_5_, (-34).toByte(), i_4_)), Interface10 {
+class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, bool_6_: Boolean) : ActorEntity(i_1_, i_2_, i_3_, i, i_0_, SphereMapMaterialPass.method2175(i_5_, (-34).toByte(), i_4_)), Interface10 {
     private var aByte10062: Byte = 0
     private val aBoolean10064: Boolean
     private var aBoolean10066 = false
@@ -21,15 +21,15 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, class51: Clas
     init {
         do {
             try {
-                aShort10081 = class51!!.anInt941.toShort()
+                aShort10081 = npcConfig!!.anInt941.toShort()
                 aBoolean10066 = bool
                 aBoolean10090 = bool_6_
                 this.x = i_1_
-                aBoolean10076 = (class51.anInt874 != 0 && !bool)
+                aBoolean10076 = (npcConfig.anInt874 != 0 && !bool)
                 this.y = i_3_
                 aByte10079 = i_4_.toByte()
                 aByte10062 = i_5_.toByte()
-                aBoolean10064 = (var_renderer!!.method3682() && class51.aBoolean894 && !aBoolean10066 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
+                aBoolean10064 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10066 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 var i_7_ = 2048
                 if (aBoolean10090) i_7_ = i_7_ or 0x10000
                 val class2 = method2481(aBoolean10064, i_7_, -4, var_renderer)
@@ -39,7 +39,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, class51: Clas
                 if (!aBoolean10090) break
                 this.aClass64_10071 = this.aClass64_10071!!.method614(0.toByte(), i_7_, false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ge.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class51 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + bool_6_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ge.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + bool_6_ + ')'))
             }
             break
         } while (false)

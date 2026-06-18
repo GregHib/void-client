@@ -116,7 +116,7 @@ object ProjectileConfigUtil {
                 if (string_6_ != null) {
                     var i_7_ = 0
                     while ((i_7_ < ContactEntry.anInt9604)) {
-                        val string_8_ = method2127(2, (Class51.aStringArray932!![i_7_]))
+                        val string_8_ = method2127(2, (NpcConfig.aStringArray932!![i_7_]))
                         if (string_8_ != null && string_8_ == string_6_) {
                             method544((string + (LocalizedText.aLocalizedText_3523!!.method2063(AnimationFrameDefinition.anInt6967, 544))), false, 4)
                             return

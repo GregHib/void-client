@@ -297,11 +297,11 @@ open class Class75 {
                             val class348_sub39 = (aHashtable_1271!!.method3480((i shl 16 or i_48_).toLong(), -6008) as ShortByteArrayPair?)
                             if (class348_sub39 != null) {
                                 for (i_50_ in (class348_sub39.aShortArray7024)!!.indices) {
-                                    var class51: Class51? = (aSeqDefinitionCache_1245!!.method2005(0, (class348_sub39.aShortArray7024!![i_50_]).toInt() and 0xffff))
-                                    var i_51_ = class51!!.anInt921
-                                    if (class51.anIntArray945 != null) {
-                                        class51 = class51.method480(anInterface17_1244!!, 47.toByte())
-                                        if (class51 != null) i_51_ = class51.anInt921
+                                    var npcConfig: NpcConfig? = (aSeqDefinitionCache_1245!!.method2005(0, (class348_sub39.aShortArray7024!![i_50_]).toInt() and 0xffff))
+                                    var i_51_ = npcConfig!!.anInt921
+                                    if (npcConfig.anIntArray945 != null) {
+                                        npcConfig = npcConfig.method480(anInterface17_1244!!, 47.toByte())
+                                        if (npcConfig != null) i_51_ = npcConfig.anInt921
                                     }
                                     if (i_51_ != -1) {
                                         val class348_sub21 = CameraSplineNode(i_51_)
@@ -312,11 +312,11 @@ open class Class75 {
                                 }
                             }
                         } else {
-                            var class51: Class51? = aSeqDefinitionCache_1245!!.method2005(0, i_49_ - 1)
-                            var i_52_ = class51!!.anInt921
-                            if (class51.anIntArray945 != null) {
-                                class51 = class51.method480(anInterface17_1244!!, 47.toByte())
-                                if (class51 != null) i_52_ = class51.anInt921
+                            var npcConfig: NpcConfig? = aSeqDefinitionCache_1245!!.method2005(0, i_49_ - 1)
+                            var i_52_ = npcConfig!!.anInt921
+                            if (npcConfig.anIntArray945 != null) {
+                                npcConfig = npcConfig.method480(anInterface17_1244!!, 47.toByte())
+                                if (npcConfig != null) i_52_ = npcConfig.anInt921
                             }
                             if (i_52_ != -1) {
                                 val class348_sub21 = CameraSplineNode(i_52_)
@@ -337,11 +337,11 @@ open class Class75 {
                             while (class318_sub8 != null) {
                                 if (class318_sub8.aShortArray6461 != null) {
                                     for (i_55_ in (class318_sub8.aShortArray6461!!).indices) {
-                                        var class51: Class51? = (aSeqDefinitionCache_1245!!.method2005(0, (class318_sub8.aShortArray6461!![i_55_]).toInt() and 0xffff))
-                                        var i_56_ = class51!!.anInt921
-                                        if (class51.anIntArray945 != null) {
-                                            class51 = (class51.method480(anInterface17_1244!!, 47.toByte()))
-                                            if (class51 != null) i_56_ = class51.anInt921
+                                        var npcConfig: NpcConfig? = (aSeqDefinitionCache_1245!!.method2005(0, (class318_sub8.aShortArray6461!![i_55_]).toInt() and 0xffff))
+                                        var i_56_ = npcConfig!!.anInt921
+                                        if (npcConfig.anIntArray945 != null) {
+                                            npcConfig = (npcConfig.method480(anInterface17_1244!!, 47.toByte()))
+                                            if (npcConfig != null) i_56_ = npcConfig.anInt921
                                         }
                                         if (i_56_ != -1) {
                                             val class348_sub21 = CameraSplineNode(i_56_)
@@ -387,10 +387,10 @@ open class Class75 {
                 for (i_69_ in `is`.indices) {
                     val i_70_ = is_63_!![i_69_].toInt() and 0x3f
                     if (i_70_ == 0 || i_70_ == 2 || i_70_ == 3 || i_70_ == 9) {
-                        val class51: Class51 = aSeqDefinitionCache_1245!!.method2005(0, `is`[i_69_].toInt() and 0xffff)
-                        if (class51.anInt875 == -1) {
+                        val npcConfig: NpcConfig = aSeqDefinitionCache_1245!!.method2005(0, `is`[i_69_].toInt() and 0xffff)
+                        if (npcConfig.anInt875 == -1) {
                             var i_71_ = -3355444
-                            if (class51.anInt874 == 1) i_71_ = -3407872
+                            if (npcConfig.anInt874 == 1) i_71_ = -3407872
                             val i_72_ = is_63_[i_69_].toInt() shr 6 and 0x3
                             if (i_70_ == 0) {
                                 if (i_72_ == 0) var_renderer.P(i, i_57_, i_59_, i_71_, 0)
@@ -578,17 +578,17 @@ open class Class75 {
         private fun method763(var_renderer: Renderer?, i: Int, i_118_: Int, i_119_: Int, i_120_: Int, `is`: ShortArray?, is_121_: ByteArray?) {
             if (`is` != null) {
                 for (i_122_ in `is`.indices) {
-                    val class51: Class51 = aSeqDefinitionCache_1245!!.method2005(0, `is`[i_122_].toInt() and 0xffff)
-                    val i_123_ = class51.anInt875
+                    val npcConfig: NpcConfig = aSeqDefinitionCache_1245!!.method2005(0, `is`[i_122_].toInt() and 0xffff)
+                    val i_123_ = npcConfig.anInt875
                     if (i_123_ != -1) {
                         val mapSceneIconDef: MapSceneIconDef? = aTextureDefinitionLoader_1242!!.method1173(31.toByte(), i_123_)
-                        val class105 = mapSceneIconDef!!.method1596((if (class51.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_renderer!!)
+                        val class105 = mapSceneIconDef!!.method1596((if (npcConfig.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (npcConfig.aBoolean925 && (npcConfig.aBoolean902)), 125, var_renderer!!)
                         if (class105 != null) {
                             var i_124_ = i_119_ * class105.method966() shr 2
                             var i_125_ = i_120_ * class105.method980() shr 2
                             if (mapSceneIconDef.aBoolean2854) {
-                                var i_126_ = class51.anInt961
-                                var i_127_ = class51.anInt926
+                                var i_126_ = npcConfig.anInt961
+                                var i_127_ = npcConfig.anInt926
                                 if ((is_121_!![i_122_].toInt() shr 6 and 0x1) == 1) {
                                     val i_128_ = i_126_
                                     i_126_ = i_127_

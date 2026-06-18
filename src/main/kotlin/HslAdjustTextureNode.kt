@@ -258,7 +258,7 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
                                     i_2_++
                                 }
                                 for (i_5_ in 0..<ContactEntry.anInt9604) {
-                                    val string_6_ = (method2127(2, Class51.aStringArray932!![i_5_]))
+                                    val string_6_ = (method2127(2, NpcConfig.aStringArray932!![i_5_]))
                                     if (string_6_ != null && string_6_ == string_1_) {
                                         method544(((LocalizedText.aLocalizedText_3526!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3527!!.method2063(AnimationFrameDefinition.anInt6967, 544))), false, 4)
                                         return

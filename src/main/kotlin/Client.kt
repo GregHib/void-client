@@ -453,7 +453,7 @@ import WorldMapElement.Companion.method180
 import MinimapShapeDrawer.Companion.method458
 import MinimapSquareDrawer.Companion.method460
 import MinimapLineDrawer.Companion.method471
-import Class51.Companion.method486
+import NpcConfig.Companion.method486
 import Class52.Companion.method492
 import Class52.Companion.method493
 import Class54.Companion.method501

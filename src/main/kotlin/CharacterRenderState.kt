@@ -50,7 +50,7 @@ class CharacterRenderState : LinkedListNode() {
     @JvmField
     var anInt6694: Int = 0
     @JvmField
-    var aClass51_6695: Class51? = null
+    var aNpcConfig_6695: NpcConfig? = null
     @JvmField
     var anInt6696: Int = 0
     @JvmField
@@ -65,7 +65,7 @@ class CharacterRenderState : LinkedListNode() {
         val i_11_ = this.anInt6685
         if (i.toInt() == 21) {
             val bool = this.aBoolean6674
-            if (this.aClass51_6695 == null) {
+            if (this.aNpcConfig_6695 == null) {
                 if (this.aNpc_6691 == null) {
                     if ((this.aPlayer_6679) != null) {
                         this.anInt6685 = (CacheIndexManager.method2357(-1, (this.aPlayer_6679!!)))
@@ -97,7 +97,7 @@ class CharacterRenderState : LinkedListNode() {
                     }
                 }
             } else {
-                val class51 = (this.aClass51_6695!!.method480(ProjectedGroundDecor.aVarpStore_10209!!, 47.toByte()))
+                val class51 = (this.aNpcConfig_6695!!.method480(ProjectedGroundDecor.aVarpStore_10209!!, 47.toByte()))
                 if (class51 == null) {
                     this.anInt6681 = 256
                     this.aBoolean6674 = false

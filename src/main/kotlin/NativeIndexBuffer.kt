@@ -88,11 +88,11 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                             }
                         } else if (method1813(8806, (class348_sub42_sub12.anInt9608))) {
                             val `object`: Any? = null
-                            var class51: Class51?
-                            if ((class348_sub42_sub12.anInt9608) != 1001) class51 = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, ((class348_sub42_sub12.aLong9605) ushr 32 and 0x7fffffffL).toInt()))
-                            else class51 = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
-                            if (class51.anIntArray945 != null) class51 = class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
-                            if (class51 != null) `is` = class51.anIntArray917
+                            var npcConfig: NpcConfig?
+                            if ((class348_sub42_sub12.anInt9608) != 1001) npcConfig = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, ((class348_sub42_sub12.aLong9605) ushr 32 and 0x7fffffffL).toInt()))
+                            else npcConfig = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
+                            if (npcConfig.anIntArray945 != null) npcConfig = npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
+                            if (npcConfig != null) `is` = npcConfig.anIntArray917
                         }
                     } else `is` = (Exception_Sub1.aModelHeaderCache_112!!.method1940(-73, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
                     if (`is` != null) string += AudioResampler.method1273(`is`, true)

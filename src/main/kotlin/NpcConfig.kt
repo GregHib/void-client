@@ -3,7 +3,7 @@ import CacheArchiveIndexLoader.Companion.method340
 /* Class51 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class51 {
+class NpcConfig {
     @JvmField
     var anInt868: Int = -1
     var anInt869: Int
@@ -340,7 +340,7 @@ class Class51 {
         if (i.toInt() != 0) method486(-77)
     }
 
-    fun method480(interface17: Interface17, i: Byte): Class51? {
+    fun method480(interface17: Interface17, i: Byte): NpcConfig? {
         anInt870++
         var i_34_ = -1
         if (anInt934 == -1) {

@@ -180,15 +180,15 @@ class LinkedNodeListIterator {
                         while ((ClampTextureNode.anInt9479 > i_14_)) {
                             val i_15_ = (MenuActionNode.anIntArray6770!![i_14_] * 4 - -2 - i_4_ / 128)
                             val i_16_ = (-(i_3_ / 128) + BoxBlurTextureNode.anIntArray9458!![i_14_] * 4 - -2)
-                            var class51: Class51? = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, SeqDefinitionCache.anIntArray3347!![i_14_]))
-                            if (class51!!.anIntArray945 != null) {
-                                class51 = class51.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
-                                if (class51 == null || (class51.anInt921 == -1)) {
+                            var npcConfig: NpcConfig? = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, SeqDefinitionCache.anIntArray3347!![i_14_]))
+                            if (npcConfig!!.anIntArray945 != null) {
+                                npcConfig = npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
+                                if (npcConfig == null || (npcConfig.anInt921 == -1)) {
                                     i_14_++
                                     continue
                                 }
                             }
-                            method2385(widgetComponent, i_1_, var_aa, class51.anInt921, i_15_, i, ((-113).toByte()).toByte(), i_16_, var_renderer)
+                            method2385(widgetComponent, i_1_, var_aa, npcConfig.anInt921, i_15_, i, ((-113).toByte()).toByte(), i_16_, var_renderer)
                             i_14_++
                         }
                         var class348_sub37 = ModelBatchBase.aHashtable_1895!!.method3484(i_2_ xor 0x59b0) as? HashTableContainer
