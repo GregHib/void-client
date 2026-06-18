@@ -790,9 +790,9 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 WallSceneEntity.method2397((-124).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i.toLong(), -6008) as RegionSceneShifter?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
-                if (Class49.aWidgetComponent_4730 != null) {
-                    ConfigFlagUtil.method1916(-9343, Class49.aWidgetComponent_4730!!)
-                    Class49.aWidgetComponent_4730 = null
+                if (SpriteRenderable.aWidgetComponent_4730 != null) {
+                    ConfigFlagUtil.method1916(-9343, SpriteRenderable.aWidgetComponent_4730!!)
+                    SpriteRenderable.aWidgetComponent_4730 = null
                 }
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true

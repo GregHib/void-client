@@ -429,7 +429,7 @@ class Class64_Sub3 : Class64 {
                     val f_91_ = (((anIntArray5644!![class118.anInt1788]) + (anIntArray5644!![class118.anInt1781]) + (anIntArray5644!![class118.anInt1782])).toFloat() * 0.3333333f)
                     val f_92_ = (ModelLightingConfig.aFloat2555 + (f_91_ * SkyboxGradient.aFloat3935 + (f_90_ * CubemapTexture2dSource.aFloat8696 + ParticleSystemState.aFloat2203 * f)))
                     val f_93_ = (LinkedListIterator.aFloat2111 + (GameDisplayManager.aFloat2836 * f_91_ + (f_90_ * SmoothingBuffer.aFloat3242 + ResourceProvider.aFloat3943 * f)))
-                    val f_94_ = (f * NamedTimedNode.aFloat8784 + f_90_ * TextureLoaderUtil.aFloat3994 + f_91_ * CubeMapMaterialPass.aFloat6304 + Class49.aFloat4720)
+                    val f_94_ = (f * NamedTimedNode.aFloat8784 + f_90_ * TextureLoaderUtil.aFloat3994 + f_91_ * CubeMapMaterialPass.aFloat6304 + SpriteRenderable.aFloat4720)
                     val f_95_ = ((1.0 / sqrt((f_94_ * f_94_ + (f_93_ * f_93_ + (f_92_ * f_92_))).toDouble())).toFloat() * class118.anInt1784.toFloat())
                     class101_sub3!!.method939(-f_94_ + f_94_ * f_95_, (class118.aShort1785 * class48.anInt856) shr 7, (-(f_92_ * f_95_) + (f_92_ + class48.anInt854.toFloat())), (class118.aShort1790 * class48.anInt857) shr 7, class48.anInt853, 90, (f_95_ * f_93_ + (-f_93_ + class48.anInt847.toFloat())))
                     aHa_Sub2_5598.method3766(55.toByte(), class101_sub3)
@@ -1099,9 +1099,9 @@ class Class64_Sub3 : Class64 {
                 val class101_sub3_236_ = abstractCameraTransform as ProjectionCameraTransform
                 if (!aBoolean5527) method692((-123).toByte())
                 TextureLoaderUtil.aFloat3994 = ((class101_sub3_236_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3.aFloat5754 * class101_sub3_236_.aFloat5769) + (class101_sub3.aFloat5784 * class101_sub3_236_.aFloat5754))
-                Class49.aFloat4720 = ((class101_sub3_236_.aFloat5751 * class101_sub3.aFloat5784) + ((class101_sub3.aFloat5756 * class101_sub3_236_.aFloat5747) + (class101_sub3_236_.aFloat5772 * class101_sub3.aFloat5754)) + class101_sub3.aFloat5751)
-                val f = (Class49.aFloat4720 + TextureLoaderUtil.aFloat3994 * aShort5591.toFloat())
-                val f_237_ = (TextureLoaderUtil.aFloat3994 * aShort5629.toFloat() + Class49.aFloat4720)
+                SpriteRenderable.aFloat4720 = ((class101_sub3_236_.aFloat5751 * class101_sub3.aFloat5784) + ((class101_sub3.aFloat5756 * class101_sub3_236_.aFloat5747) + (class101_sub3_236_.aFloat5772 * class101_sub3.aFloat5754)) + class101_sub3.aFloat5751)
+                val f = (SpriteRenderable.aFloat4720 + TextureLoaderUtil.aFloat3994 * aShort5591.toFloat())
+                val f_237_ = (TextureLoaderUtil.aFloat3994 * aShort5629.toFloat() + SpriteRenderable.aFloat4720)
                 val f_238_: Float
                 val f_239_: Float
                 if (f > f_237_) {
@@ -1153,13 +1153,13 @@ class Class64_Sub3 : Class64 {
                                 val i_249_ = aShort5617 + aShort5646 shr 1
                                 val i_250_ = ((aShort5591.toFloat() * CubemapTexture2dSource.aFloat8696) + ((i_248_.toFloat() * ParticleSystemState.aFloat2203) + ModelLightingConfig.aFloat2555) + (SkyboxGradient.aFloat3935 * i_249_.toFloat())).toInt()
                                 val i_251_ = (LinkedListIterator.aFloat2111 + (i_248_.toFloat() * ResourceProvider.aFloat3943) + (SmoothingBuffer.aFloat3242 * aShort5591.toFloat()) + (GameDisplayManager.aFloat2836 * i_249_.toFloat())).toInt()
-                                val i_252_ = (Class49.aFloat4720 + (i_248_.toFloat() * (NamedTimedNode.aFloat8784)) + (TextureLoaderUtil.aFloat3994 * aShort5591.toFloat()) + (CubeMapMaterialPass.aFloat6304 * i_249_.toFloat())).toInt()
+                                val i_252_ = (SpriteRenderable.aFloat4720 + (i_248_.toFloat() * (NamedTimedNode.aFloat8784)) + (TextureLoaderUtil.aFloat3994 * aShort5591.toFloat()) + (CubeMapMaterialPass.aFloat6304 * i_249_.toFloat())).toInt()
                                 val i_253_ = ((SkyboxGradient.aFloat3935 * i_249_.toFloat()) + ((CubemapTexture2dSource.aFloat8696 * aShort5629.toFloat()) + (ModelLightingConfig.aFloat2555 + (ParticleSystemState.aFloat2203 * i_248_.toFloat())))).toInt()
                                 val i_254_ = (LinkedListIterator.aFloat2111 + (ResourceProvider.aFloat3943 * i_248_.toFloat()) + (SmoothingBuffer.aFloat3242 * aShort5629.toFloat()) + (i_249_.toFloat() * GameDisplayManager.aFloat2836)).toInt()
                                 class318_sub3.anInt6405 = (aHa_Sub2_5598.anInt7853 - -(i_250_ * (aHa_Sub2_5598.anInt7771) / i))
                                 class318_sub3.anInt6402 = ((i_251_ * aHa_Sub2_5598.anInt7794 / i) + aHa_Sub2_5598.anInt7810)
                                 class318_sub3.anInt6404 = (aHa_Sub2_5598.anInt7810 + (i_254_ * aHa_Sub2_5598.anInt7794 / i))
-                                val i_255_ = ((i_249_.toFloat() * CubeMapMaterialPass.aFloat6304) + ((TextureLoaderUtil.aFloat3994 * aShort5629.toFloat()) + (((NamedTimedNode.aFloat8784) * i_248_.toFloat()) + Class49.aFloat4720))).toInt()
+                                val i_255_ = ((i_249_.toFloat() * CubeMapMaterialPass.aFloat6304) + ((TextureLoaderUtil.aFloat3994 * aShort5629.toFloat()) + (((NamedTimedNode.aFloat8784) * i_248_.toFloat()) + SpriteRenderable.aFloat4720))).toInt()
                                 class318_sub3.anInt6406 = (aHa_Sub2_5598.anInt7853 + (i_253_ * aHa_Sub2_5598.anInt7771 / i))
                                 if (i_252_ >= aHa_Sub2_5598.anInt7826 || i_255_ >= (aHa_Sub2_5598.anInt7826)) {
                                     class318_sub3.aBoolean6401 = true
@@ -1602,9 +1602,9 @@ class Class64_Sub3 : Class64 {
                 if (!aBoolean5527) method692((-123).toByte())
                 val class101_sub3_350_ = abstractCameraTransform as ProjectionCameraTransform
                 TextureLoaderUtil.aFloat3994 = ((class101_sub3_350_.aFloat5754 * class101_sub3.aFloat5784) + ((class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3_350_.aFloat5769 * class101_sub3.aFloat5754)))
-                Class49.aFloat4720 = (class101_sub3.aFloat5751 + ((class101_sub3.aFloat5756 * class101_sub3_350_.aFloat5747) + (class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5754) + (class101_sub3_350_.aFloat5751 * class101_sub3.aFloat5784)))
-                val f = (Class49.aFloat4720 + TextureLoaderUtil.aFloat3994 * aShort5591.toFloat())
-                val f_351_ = (TextureLoaderUtil.aFloat3994 * aShort5629.toFloat() + Class49.aFloat4720)
+                SpriteRenderable.aFloat4720 = (class101_sub3.aFloat5751 + ((class101_sub3.aFloat5756 * class101_sub3_350_.aFloat5747) + (class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5754) + (class101_sub3_350_.aFloat5751 * class101_sub3.aFloat5784)))
+                val f = (SpriteRenderable.aFloat4720 + TextureLoaderUtil.aFloat3994 * aShort5591.toFloat())
+                val f_351_ = (TextureLoaderUtil.aFloat3994 * aShort5629.toFloat() + SpriteRenderable.aFloat4720)
                 val f_352_: Float
                 val f_353_: Float
                 if (f > f_351_) {
@@ -1658,14 +1658,14 @@ class Class64_Sub3 : Class64 {
                                 val i_364_ = aShort5617 - -aShort5646 shr 1
                                 val i_365_ = ((i_364_.toFloat() * SkyboxGradient.aFloat3935) + ((ParticleSystemState.aFloat2203 * i_363_.toFloat()) + ModelLightingConfig.aFloat2555 + (aShort5591.toFloat() * (CubemapTexture2dSource.aFloat8696)))).toInt()
                                 val i_366_ = (LinkedListIterator.aFloat2111 + (i_363_.toFloat() * ResourceProvider.aFloat3943) + (aShort5591.toFloat() * SmoothingBuffer.aFloat3242) + (i_364_.toFloat() * GameDisplayManager.aFloat2836)).toInt()
-                                val i_367_ = ((NamedTimedNode.aFloat8784 * i_363_.toFloat()) + Class49.aFloat4720 + (TextureLoaderUtil.aFloat3994 * aShort5591.toFloat()) + (CubeMapMaterialPass.aFloat6304 * i_364_.toFloat())).toInt()
+                                val i_367_ = ((NamedTimedNode.aFloat8784 * i_363_.toFloat()) + SpriteRenderable.aFloat4720 + (TextureLoaderUtil.aFloat3994 * aShort5591.toFloat()) + (CubeMapMaterialPass.aFloat6304 * i_364_.toFloat())).toInt()
                                 if (aHa_Sub2_5598.anInt7826 <= i_367_) {
                                     class318_sub3.anInt6405 = (i_365_ * (aHa_Sub2_5598.anInt7771) / i_367_ + (aHa_Sub2_5598.anInt7853))
                                     class318_sub3.anInt6402 = (i_366_ * (aHa_Sub2_5598.anInt7794) / i_367_ + (aHa_Sub2_5598.anInt7810))
                                 } else bool = true
                                 val i_368_ = (ModelLightingConfig.aFloat2555 + (ParticleSystemState.aFloat2203 * i_363_.toFloat()) + (CubemapTexture2dSource.aFloat8696 * aShort5629.toFloat()) + (SkyboxGradient.aFloat3935 * i_364_.toFloat())).toInt()
                                 val i_369_ = ((i_364_.toFloat() * GameDisplayManager.aFloat2836) + ((SmoothingBuffer.aFloat3242 * aShort5629.toFloat()) + (LinkedListIterator.aFloat2111 + (ResourceProvider.aFloat3943 * i_363_.toFloat())))).toInt()
-                                val i_370_ = ((CubeMapMaterialPass.aFloat6304 * i_364_.toFloat()) + ((i_363_.toFloat() * (NamedTimedNode.aFloat8784)) + Class49.aFloat4720 + (aShort5629.toFloat() * TextureLoaderUtil.aFloat3994))).toInt()
+                                val i_370_ = ((CubeMapMaterialPass.aFloat6304 * i_364_.toFloat()) + ((i_363_.toFloat() * (NamedTimedNode.aFloat8784)) + SpriteRenderable.aFloat4720 + (aShort5629.toFloat() * TextureLoaderUtil.aFloat3994))).toInt()
                                 if (i_370_ >= aHa_Sub2_5598.anInt7826) {
                                     class318_sub3.anInt6406 = (i_368_ * (aHa_Sub2_5598.anInt7771) / i_370_ + (aHa_Sub2_5598.anInt7853))
                                     class318_sub3.anInt6404 = (i_369_ * (aHa_Sub2_5598.anInt7794) / i_370_ + (aHa_Sub2_5598.anInt7810))

@@ -70,9 +70,9 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
             method2772(i, 110.toByte())
             val class46 = method2570(i_2_ + 1512932718, i_0_)
             if (class46 != null) method1916(-9343, class46)
-            if (Class49.aWidgetComponent_4730 != null) {
-                ConfigFlagUtil.method1916(-9343, Class49.aWidgetComponent_4730!!)
-                Class49.aWidgetComponent_4730 = null
+            if (SpriteRenderable.aWidgetComponent_4730 != null) {
+                ConfigFlagUtil.method1916(-9343, SpriteRenderable.aWidgetComponent_4730!!)
+                SpriteRenderable.aWidgetComponent_4730 = null
             }
             TextureMaterialGroup.method3270(120.toByte())
             if (class46 != null) method1913(!bool, i_2_ + -104, class46)

@@ -448,7 +448,7 @@ import MapSceneRenderer.method387
 import Js5Archive.Companion.method390
 import Js5Archive.Companion.method395
 import NanoTimer.Companion.method445
-import Class49.Companion.method453
+import SpriteRenderable.Companion.method453
 import Class5.Companion.method180
 import Class50.Companion.method458
 import Class50_Sub1.Companion.method460
@@ -1692,9 +1692,9 @@ class Client : GameAppletFrame() {
             }
             if (SkeletalAnimFrameLoader.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             var bool_120_ = false
-            if (Class49.aBoolean4726) {
+            if (SpriteRenderable.aBoolean4726) {
                 bool_120_ = true
-                Class49.aBoolean4726 = false
+                SpriteRenderable.aBoolean4726 = false
             }
             if (bool_120_) ScreenBorderFiller.method1170((-116).toByte())
             if ((FacingDirectionNode.aRenderer6654 != null && FacingDirectionNode.aRenderer6654!!.method3655()) || method3229(-91) != 1) method3466(-77)

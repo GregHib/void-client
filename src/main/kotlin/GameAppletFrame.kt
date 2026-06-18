@@ -138,7 +138,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         ParticleSystemRenderer.aCanvas3869!!.requestFocus()
         CombineTextureNode.aBoolean9229 = true
         SizeBoundedSoftCache.aBoolean2329 = true
-        Class49.aBoolean4726 = true
+        SpriteRenderable.aBoolean4726 = true
         ProjectileSpawner.aBoolean2674 = false
         BoundingBoxNode.aLong6748 = Class62.method599(-106)
     }
@@ -151,7 +151,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     override fun paint(graphics: Graphics?) {
         anInt18++
         if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) {
-            Class49.aBoolean4726 = true
+            SpriteRenderable.aBoolean4726 = true
             if (Class367_Sub4.aBoolean7320 && -BoundingBoxNode.aLong6748 + Class62.method599(-57) > 1000) {
                 val rectangle = graphics?.getClipBounds()
                 if (rectangle == null || (rectangle.width >= SocketFactory.anInt3473 && (NpcReference.anInt6857 <= rectangle.height))) ProjectileSpawner.aBoolean2674 = true
@@ -171,7 +171,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         GzipDecompressor.anInt2071 = GzipDecompressor.anInt2071 - -1 and 0x1f
         if (ParticleAmountConfig.anInt2127++ > 50) {
             ParticleAmountConfig.anInt2127 -= 50
-            Class49.aBoolean4726 = true
+            SpriteRenderable.aBoolean4726 = true
             ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
             ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
             if (Class52.aFrame4904 != null && SkeletalAnimFrameLoader.aFrame476 == null) {
@@ -190,7 +190,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     override fun focusGained(focusevent: FocusEvent?) {
         anInt23++
         CombineTextureNode.aBoolean9229 = true
-        Class49.aBoolean4726 = true
+        SpriteRenderable.aBoolean4726 = true
     }
 
     override fun windowClosed(windowevent: WindowEvent?) {

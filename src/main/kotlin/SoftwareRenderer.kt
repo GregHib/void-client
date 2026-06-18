@@ -19,7 +19,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     var anInt7473: Int = 0
     @JvmField
     var anInt7474: Int
-    private var aClass49_7475: Class49? = null
+    private var aSpriteRenderable_7475: SpriteRenderable? = null
     @JvmField
     var anInt7476: Int
     @JvmField
@@ -1045,7 +1045,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4 {
-        return Class49(this, interface3 as AbstractModelRenderer?, interface13 as FloatGrid?)
+        return SpriteRenderable(this, interface3 as AbstractModelRenderer?, interface13 as FloatGrid?)
     }
 
     public override fun C(bool: Boolean) {
@@ -1404,14 +1404,14 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3687(interface4: Interface4?) {
-        val class49 = interface4 as Class49
-        this.anInt7477 = class49.anInt4725
-        anInt7486 = class49.anInt4722
-        this.anIntArray7483 = class49.anIntArray4731
-        aClass49_7475 = class49
-        anInt7495 = class49.anInt4725
-        anInt7488 = class49.anInt4722
-        this.aFloatArray7511 = class49.aFloatArray4719
+        val spriteRenderable = interface4 as SpriteRenderable
+        this.anInt7477 = spriteRenderable.anInt4725
+        anInt7486 = spriteRenderable.anInt4722
+        this.anIntArray7483 = spriteRenderable.anIntArray4731
+        aSpriteRenderable_7475 = spriteRenderable
+        anInt7495 = spriteRenderable.anInt4725
+        anInt7488 = spriteRenderable.anInt4722
+        this.aFloatArray7511 = spriteRenderable.aFloatArray4719
         method3717()
     }
 
@@ -1496,7 +1496,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         if (canvas == null) {
             aCanvas7468 = null
             this.aClass348_Sub31_7469 = null
-            if (aClass49_7475 == null) {
+            if (aSpriteRenderable_7475 == null) {
                 this.anIntArray7483 = null
                 anInt7486 = 1
                 this.anInt7477 = anInt7486
@@ -1512,7 +1512,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
                 anInt7465 = dimension.width
                 anInt7472 = dimension.height
                 this.aClass348_Sub31_7469 = class348_sub31
-                if (aClass49_7475 == null) {
+                if (aSpriteRenderable_7475 == null) {
                     this.anIntArray7483 = class348_sub31.anIntArray6916
                     this.anInt7477 = class348_sub31.anInt6917
                     anInt7486 = class348_sub31.anInt6920
@@ -1569,7 +1569,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             anInt7495 = anInt7481
             anInt7488 = anInt7493
         }
-        aClass49_7475 = null
+        aSpriteRenderable_7475 = null
         method3717()
     }
 
@@ -2074,7 +2074,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             class348_sub31.method2715(95.toByte())
             class348_sub31 = AbstractMenuEntry.method1035(9029, i_578_, canvas, i)!!
             aHashtable_7467!!.method3483(112.toByte(), canvas.hashCode().toLong(), class348_sub31)
-            if (aCanvas7468 === canvas && aClass49_7475 == null) {
+            if (aCanvas7468 === canvas && aSpriteRenderable_7475 == null) {
                 val dimension = canvas!!.getSize()
                 anInt7465 = dimension.width
                 anInt7472 = dimension.height

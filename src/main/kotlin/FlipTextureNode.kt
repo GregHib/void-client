@@ -345,7 +345,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     string = (method2157((class46.anInt806), -1431655765))
                                                     if (string == null) string = ""
                                                 }
-                                                if (Class49.aWidgetComponent_4730 == class46) {
+                                                if (SpriteRenderable.aWidgetComponent_4730 == class46) {
                                                     string = (LocalizedText.aLocalizedText_3514!!.method2063((AnimationFrameDefinition.anInt6967), 544))
                                                     i_50_ = (class46.anInt749)
                                                 }

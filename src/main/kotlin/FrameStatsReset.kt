@@ -1013,7 +1013,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NullOggStream.anInt9040 = 0
             NativeRenderer.anInt8040 = 0
             StructConfig.anInt610 = 0
-            Class49.anInt4727 = 0
+            SpriteRenderable.anInt4727 = 0
             TrackedGroundDecor.anInt10394 = 0
             NativeRenderer.anInt7892 = 0
             LinkedListNode.anInt4285 = 0
@@ -1343,7 +1343,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Player.anInt10534 = 0
             Class52.anInt4897 = 0
             Class5_Sub2.anInt8355 = 0
-            Class49.anInt4721 = 0
+            SpriteRenderable.anInt4721 = 0
             GlBufferObject.anInt4735 = 0
             VoronoiNoiseTextureNode.anInt9128 = 0
             OpenGlRenderer.anInt7602 = 0
@@ -2510,7 +2510,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RegionSceneShifter.anInt7046 = 0
             Class59.anInt1077 = 0
             TerrainTileShape.anInt8809 = 0
-            Class49.anInt4723 = 0
+            SpriteRenderable.anInt4723 = 0
             GlRenderDevice.anInt9844 = 0
             MatrixCameraTransform.anInt5682 = 0
             CharCodeMap.anInt9583 = 0
@@ -4155,7 +4155,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RenderNode.anInt9721 = -1
             MinimapSpriteRenderer.aHashtable_4915 = Hashtable(8)
             method882(11.toByte())
-            Class49.aWidgetComponent_4730 = null
+            SpriteRenderable.aWidgetComponent_4730 = null
             for (i1 in 0..7) {
                 DynamicSceneObjectEntity.aStringArray10195!![i1] = null
                 Class71.aBooleanArray1214!![i1] = false

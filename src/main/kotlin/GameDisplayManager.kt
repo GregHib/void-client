@@ -76,7 +76,7 @@ object GameDisplayManager {
             if (RenderNode.anInt9721 != -1) method1713(true, 520)
             if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null && CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) method2145(-24498)
             for (i_5_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_5_] = true
-            Class49.aBoolean4726 = true
+            SpriteRenderable.aBoolean4726 = true
         }
     }
 

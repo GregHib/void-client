@@ -71,7 +71,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     val bool = (LoadingScreenImageNode.aBoolean9498 && !this.aBoolean3109 && class51.aBoolean906)
                     if (class51.method474(82.toByte())) method1614(979190089, null, i_0_, i_5_, i, null, class51, i_7_)
                     val bool_17_ = (i_6_ == -1 && class51.anInt868 == -1 && class51.anIntArray943 == null && class51.anIntArray945 == null && !class51.aBoolean929)
-                    if (!Class49.aBoolean4728 || ((!ScreenBorderFiller.method1172((-85).toByte(), i_4_) || class51.anInt955 == 1) && (!method1639(i_4_, i_3_ xor 0x3918) || class51.anInt955 != 0))) {
+                    if (!SpriteRenderable.aBoolean4728 || ((!ScreenBorderFiller.method1172((-85).toByte(), i_4_) || class51.anInt955 == 1) && (!method1639(i_4_, i_3_ xor 0x3918) || class51.anInt955 != 0))) {
                         if (i_4_ == 22) {
                             if ((IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0) || (class51.anInt874 != 0) || (class51.anInt920 == 1) || class51.aBoolean947) {
                                 val class318_sub1_sub1: TileSceneEntity?

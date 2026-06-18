@@ -202,9 +202,9 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
                 if (class348_sub41.anInt7053 == 0) method1118(true, bool, class348_sub41, 2533)
                 class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as RegionSceneShifter?
             }
-            if (Class49.aWidgetComponent_4730 != null) {
-                ConfigFlagUtil.method1916(-9343, Class49.aWidgetComponent_4730!!)
-                Class49.aWidgetComponent_4730 = null
+            if (SpriteRenderable.aWidgetComponent_4730 != null) {
+                ConfigFlagUtil.method1916(-9343, SpriteRenderable.aWidgetComponent_4730!!)
+                SpriteRenderable.aWidgetComponent_4730 = null
             }
         }
 
