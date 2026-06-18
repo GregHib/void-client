@@ -45,7 +45,7 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
                             val class348_sub36 = WidgetActionEntry()
                             class348_sub36.aWidgetComponent_6989 = class46
                             class348_sub36.anObjectArray6987 = class46.anObjectArray840
-                            Class66.method705(class348_sub36)
+                            ChatCommandProcessor.method705(class348_sub36)
                         }
                         if (i == 1 && class46.anObjectArray701 != null) {
                             if (class46.anInt704 >= 0) {
@@ -58,7 +58,7 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
                             val class348_sub36 = WidgetActionEntry()
                             class348_sub36.aWidgetComponent_6989 = class46
                             class348_sub36.anObjectArray6987 = class46.anObjectArray701
-                            Class66.method705(class348_sub36)
+                            ChatCommandProcessor.method705(class348_sub36)
                         }
                     }
                     i_1_++

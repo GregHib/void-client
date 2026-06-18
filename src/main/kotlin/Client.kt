@@ -483,8 +483,8 @@ import Direct3dModel.Companion.method661
 import Direct3dModel.Companion.method676
 import OpenGlModel.Companion.method681
 import WorldMapImageBuilder.Companion.method698
-import Class66.method705
-import Class66.method713
+import ChatCommandProcessor.method705
+import ChatCommandProcessor.method713
 import Class67.Companion.method716
 import Class68.Companion.method719
 import Class69.Companion.method722

@@ -155,12 +155,12 @@ object NativeLibraryUnloader {
                     }
                     if (!class348_sub12.aClass348_Sub21_6751!!.aBoolean6848) {
                         class348_sub12.aClass348_Sub21_6751!!.aBoolean6848 = true
-                        Class66.method701(Class90.aBoundsConstraintEntry_1512!!, class348_sub12.aClass348_Sub21_6751!!.anInt6847, class42.anInt596)
+                        ChatCommandProcessor.method701(Class90.aBoundsConstraintEntry_1512!!, class348_sub12.aClass348_Sub21_6751!!.anInt6847, class42.anInt596)
                     }
-                    if (class348_sub12.aClass348_Sub21_6751!!.aBoolean6848) Class66.method701(StaticNoiseTexture.aBoundsConstraintEntry_8664!!, class348_sub12.aClass348_Sub21_6751!!.anInt6847, class42.anInt596)
+                    if (class348_sub12.aClass348_Sub21_6751!!.aBoolean6848) ChatCommandProcessor.method701(StaticNoiseTexture.aBoundsConstraintEntry_8664!!, class348_sub12.aClass348_Sub21_6751!!.anInt6847, class42.anInt596)
                 } else if (class348_sub12.aClass348_Sub21_6751!!.aBoolean6848) {
                     class348_sub12.aClass348_Sub21_6751!!.aBoolean6848 = false
-                    Class66.method701(Class77.aBoundsConstraintEntry_1298!!, class348_sub12.aClass348_Sub21_6751!!.anInt6847, class42!!.anInt596)
+                    ChatCommandProcessor.method701(Class77.aBoundsConstraintEntry_1298!!, class348_sub12.aClass348_Sub21_6751!!.anInt6847, class42!!.anInt596)
                 }
                 class348_sub12 = (RegionSceneLoader.aNodeDeque_3705!!.method1990(116.toByte()) as BoundingBoxNode?)
             }

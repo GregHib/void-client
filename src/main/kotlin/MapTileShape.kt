@@ -2,7 +2,7 @@ import ConfigFlagUtil.Companion.method1913
 import ConfigFlagUtil.Companion.method1916
 import Font.Companion.method2570
 import RegionTileNode.Companion.method2772
-import Class66.method703
+import ChatCommandProcessor.method703
 
 /* Class338 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

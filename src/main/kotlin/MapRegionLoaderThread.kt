@@ -2,7 +2,7 @@ import TextureQualityOptionState.Companion.method1783
 import ConfigFlagUtil.Companion.method1916
 import MinimapTileEntry.Companion.method381
 import SolidFillComponent.Companion.method196
-import Class66.method705
+import ChatCommandProcessor.method705
 import java.io.BufferedReader
 import java.io.DataInputStream
 import java.io.IOException

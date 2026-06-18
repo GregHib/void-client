@@ -7,7 +7,7 @@ import ProjectedGroundDecor.Companion.method2433
 import RingBufferInputStream.Companion.method3616
 import Bzip2DecoderState.Companion.method369
 import MinimapTriangleDrawer.Companion.method464
-import Class66.method705
+import ChatCommandProcessor.method705
 import kotlin.math.max
 
 /* Class341 - Decompiled by JODE

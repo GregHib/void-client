@@ -3,7 +3,7 @@ import SceneTilePlaneManager.method260
 import ModelOrSpriteHolder.Companion.method173
 import WallEntity.Companion.method2485
 import SolidFillComponent.Companion.method191
-import Class66.method705
+import ChatCommandProcessor.method705
 
 /* Class347 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -81,12 +81,12 @@ class WorldMapImageBuilder internal constructor(sceneProjector: SceneProjector?,
         @JvmStatic
         fun method696(i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {
             if (i_2_ == -1007) {
-                if (i == 1009) Class66.method701(FileIoUtil.aBoundsConstraintEntry_4091!!, i_1_, i_0_)
+                if (i == 1009) ChatCommandProcessor.method701(FileIoUtil.aBoundsConstraintEntry_4091!!, i_1_, i_0_)
                 else if (i != 1012) {
-                    if (i == 1002) Class66.method701(InvertTextureNode.aBoundsConstraintEntry_9415!!, i_1_, i_0_)
-                    else if (i == 1003) Class66.method701(BoundingBoxNode.aBoundsConstraintEntry_6743!!, i_1_, i_0_)
-                    else if (i == 1006) Class66.method701(ParticleDetailOptionState.aBoundsConstraintEntry_6018!!, i_1_, i_0_)
-                } else Class66.method701(SolidFillComponent.aBoundsConstraintEntry_8356!!, i_1_, i_0_)
+                    if (i == 1002) ChatCommandProcessor.method701(InvertTextureNode.aBoundsConstraintEntry_9415!!, i_1_, i_0_)
+                    else if (i == 1003) ChatCommandProcessor.method701(BoundingBoxNode.aBoundsConstraintEntry_6743!!, i_1_, i_0_)
+                    else if (i == 1006) ChatCommandProcessor.method701(ParticleDetailOptionState.aBoundsConstraintEntry_6018!!, i_1_, i_0_)
+                } else ChatCommandProcessor.method701(SolidFillComponent.aBoundsConstraintEntry_8356!!, i_1_, i_0_)
                 anInt1138++
             }
         }

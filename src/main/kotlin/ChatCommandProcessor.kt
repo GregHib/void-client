@@ -73,7 +73,10 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.pow
 
-object Class66 {
+/*
+ * Class66
+ */
+object ChatCommandProcessor {
     private var anIntArray1149: IntArray? = IntArray(1000)
     private var aWidgetComponent_1150: WidgetComponent? = null
     private var aMinimapTileEntry_1151: MinimapTileEntry? = null
@@ -2717,7 +2720,7 @@ object Class66 {
                 return
             }
             if (i == 101) {
-                val class46 = (if (bool) Class66.aWidgetComponent_1169 else Class66.aWidgetComponent_1150)!!
+                val class46 = (if (bool) ChatCommandProcessor.aWidgetComponent_1169 else ChatCommandProcessor.aWidgetComponent_1150)!!
                 if (class46.anInt704 == -1) {
                     if (bool) throw RuntimeException("Tried to .cc_delete static .active-component!")
                     throw RuntimeException("Tried to cc_delete static active-component!")
@@ -3387,7 +3390,7 @@ object Class66 {
                 return
             }
             if (i < 1600) {
-                val class46 = (if (bool) Class66.aWidgetComponent_1169 else Class66.aWidgetComponent_1150)!!
+                val class46 = (if (bool) ChatCommandProcessor.aWidgetComponent_1169 else ChatCommandProcessor.aWidgetComponent_1150)!!
                 if (i == 1500) {
                     anIntArray1149!![anInt1173++] = class46.anInt800
                     return
@@ -3418,7 +3421,7 @@ object Class66 {
                     return
                 }
             } else if (i < 1700) {
-                val class46 = (if (bool) Class66.aWidgetComponent_1169 else Class66.aWidgetComponent_1150)!!
+                val class46 = (if (bool) ChatCommandProcessor.aWidgetComponent_1169 else ChatCommandProcessor.aWidgetComponent_1150)!!
                 if (i == 1600) {
                     anIntArray1149!![anInt1173++] = class46.anInt747
                     return
@@ -3490,7 +3493,7 @@ object Class66 {
                     return
                 }
             } else if (i < 1800) {
-                val class46 = (if (bool) Class66.aWidgetComponent_1169 else Class66.aWidgetComponent_1150)!!
+                val class46 = (if (bool) ChatCommandProcessor.aWidgetComponent_1169 else ChatCommandProcessor.aWidgetComponent_1150)!!
                 if (i == 1700) {
                     anIntArray1149!![anInt1173++] = class46.anInt812
                     return
@@ -3507,7 +3510,7 @@ object Class66 {
                     return
                 }
             } else if (i < 1900) {
-                val class46 = (if (bool) Class66.aWidgetComponent_1169 else Class66.aWidgetComponent_1150)!!
+                val class46 = (if (bool) ChatCommandProcessor.aWidgetComponent_1169 else ChatCommandProcessor.aWidgetComponent_1150)!!
                 if (i == 1800) {
                     anIntArray1149!![anInt1173++] = Client.method105(class46)!!.method3307(83)
                     return

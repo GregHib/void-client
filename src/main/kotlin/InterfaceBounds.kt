@@ -108,7 +108,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             if (i > 53) {
                 method297(false)
                 method1402(1)
-                Class66.aLruByteCache_1174!!.method590(0)
+                ChatCommandProcessor.aLruByteCache_1174!!.method590(0)
                 FacingDirectionNode.aRenderer6654!!.method3663()
                 method1707(26469)
                 Buffer.method3354(-52)

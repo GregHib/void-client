@@ -198,7 +198,7 @@ class CharacterRenderState : LinkedListNode() {
                             class348_sub36.aString6994 = string
                             class348_sub36.anObjectArray6987 = class46.anObjectArray741
                             class348_sub36.anInt6986 = i_8_
-                            Class66.method705(class348_sub36)
+                            ChatCommandProcessor.method705(class348_sub36)
                         }
                         if (WorldMapRenderer.anInt4674 == 10 && Client.method105(class46)!!.method3301(-1 + i_8_, false)) {
                             if (i_8_ == 1) {

@@ -444,7 +444,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GroundDecorSceneEntity.anInt9977 = 0
             WidgetRedrawRegion.anInt4242 = 0
             Buffer.anInt7179 = 0
-            Class66.anInt1153 = 0
+            ChatCommandProcessor.anInt1153 = 0
             TileRenderState.anInt4237 = 0
             Class69.anInt1191 = 0
             WallSceneEntity.anInt9964 = 0
@@ -604,10 +604,10 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Buffer.anInt7139 = 0
             ParticleAmountCache.anInt2843 = 0
             ModelWallEntity.anInt10146 = 0
-            Class66.anInt1162 = 0
+            ChatCommandProcessor.anInt1162 = 0
             RenderableGroup.anInt5009 = 0
             LoadingBarRenderer.anInt5048 = 0
-            Class66.anInt1165 = 0
+            ChatCommandProcessor.anInt1165 = 0
             BoundsConstraintEntry.anInt5166 = 0
             FloatCameraTransform.anInt5728 = 0
             NativeIndexBuffer.anInt4701 = 0
@@ -873,7 +873,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             AbstractCameraTransform.anInt1595 = 0
             NativeRenderer.anInt8076 = 0
             ModelHeaderCache.anInt3281 = 0
-            Class66.anInt1163 = 0
+            ChatCommandProcessor.anInt1163 = 0
             CompassSmoother.anInt3375 = 0
             MapElementDecor.anInt10358 = 0
             MapElementDecor.anInt10352 = 0
@@ -2074,7 +2074,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             AbstractCameraTransform.anInt1596 = 0
             Bzip2DecoderState.anInt551 = 0
             LocDefinitionCache.anInt3445 = 0
-            Class66.anInt1171 = 0
+            ChatCommandProcessor.anInt1171 = 0
             ProjectedGroundDecor.anInt10235 = 0
             LoadingBarRenderer.anInt5052 = 0
             CustomCursorsOptionState.anInt5926 = 0
@@ -2901,7 +2901,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7543 = 0
             WarpTextureNode.anInt9430 = 0
             Direct3dModel.anInt5459 = 0
-            Class66.anInt1166 = 0
+            ChatCommandProcessor.anInt1166 = 0
             ParameterizedText.anInt9568 = 0
             MapElementDecor.anInt10343 = 0
             MediaStreamClient.anInt3187 = 0
@@ -3189,7 +3189,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ScriptCompilerThread.anInt1726 = 0
             SingletonMarker.anInt2600 = 0
             SocketStreamWorker.anInt2662 = 0
-            Class66.anInt1157 = 0
+            ChatCommandProcessor.anInt1157 = 0
             ConfigFlagUtil.anInt3235 = 0
             MapElementDefinitionCache.anInt3984 = 0
             VideoStreamDecoder.anInt4115 = 0
@@ -3360,7 +3360,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NpcConfig.anInt899 = 0
             GlIndexBufferArb.anInt8496 = 0
             Client.anInt5177 = 0
-            Class66.anInt1159 = 0
+            ChatCommandProcessor.anInt1159 = 0
             MinimapPolygonDrawer.anInt5251 = 0
             GraphicsOptionState.anInt3134 = 0
             GroundDecorEntity.anInt8749 = 0
@@ -3522,7 +3522,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CollisionMap.anInt4452 = 0
             GlSpriteRenderer.anInt8428 = 0
             Class87.anInt1486 = 0
-            Class66.anInt1167 = 0
+            ChatCommandProcessor.anInt1167 = 0
             CubemapTextureGlSource.anInt8700 = 0
             ModelDefinitionLoader.anInt2056 = 0
             NativeShaderProgram.anInt9772 = 0
@@ -3586,12 +3586,12 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             BufferToggleState.anInt3718 = 0
             FixedFunctionMaterialPass.anInt6213 = 0
             HeightMapNoise.anInt3826 = 0
-            Class66.anInt1156 = 0
+            ChatCommandProcessor.anInt1156 = 0
             AnimatedModelRenderer.anInt8392 = 0
             SizeBoundedSoftCache.anInt2328 = 0
             Direct3dModel.anInt5525 = 0
             Buffer.anInt7184 = 0
-            Class66.anInt1158 = 0
+            ChatCommandProcessor.anInt1158 = 0
             WorldMapSceneSoftware.anInt5826 = 0
             ClientMachineInfo.anInt6611 = 0
             DirectionPath.anInt1065 = 0

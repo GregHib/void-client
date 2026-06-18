@@ -1,5 +1,5 @@
 import WaterMaterialPass.Companion.method2148
-import Class66.method705
+import ChatCommandProcessor.method705
 
 /* Class155 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

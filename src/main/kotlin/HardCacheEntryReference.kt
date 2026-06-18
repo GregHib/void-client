@@ -766,7 +766,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 WallSceneEntity.method2397((-127).toByte())
                 val class348_sub36 = WidgetActionEntry()
                 class348_sub36.anObjectArray6987 = objects
-                Class66.method705(class348_sub36)
+                ChatCommandProcessor.method705(class348_sub36)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1552,7 +1552,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 RenderNode.anInt9721 = i_202_
                 RegionTileNode.method2772(i_202_, 123.toByte())
                 method1713(false, 520)
-                Class66.method703(RenderNode.anInt9721)
+                ChatCommandProcessor.method703(RenderNode.anInt9721)
                 for (i_203_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_203_] = true
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true

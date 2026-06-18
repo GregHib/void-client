@@ -973,7 +973,7 @@ class WidgetComponent {
             MaterialTypeMarker.aLruByteCache_6517!!.method587(-109)
             TerrainTileShape.aLruByteCache_8807!!.method587(-113)
             SkeletalAnimFrameLoader.aLruByteCache_463!!.method587(-83)
-            Class66.aLruByteCache_1174!!.method587(-91)
+            ChatCommandProcessor.aLruByteCache_1174!!.method587(-91)
             val i_17_ = 54 / ((26 - i) / 53)
         }
 
