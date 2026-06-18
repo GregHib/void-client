@@ -2560,7 +2560,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CameraConfigDefinition.anInt3254 = 0
             ParamMap.anInt9489 = 0
             NativeRenderer.anInt8018 = 0
-            Class89.anInt1511 = 0
+            NativeBufferHandle.anInt1511 = 0
             NoiseTextureNode.anInt9265 = 0
             DynamicSceneObjectEntity.anInt10179 = 0
             OpenGlRenderer.anInt7622 = 0
@@ -3023,7 +3023,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SceneNodeDeque.anInt1495 = 0
             TrackedGroundDecor.anInt10379 = 0
             MidiSequencePlayer.anInt8898 = 0
-            Class89.anInt1509 = 0
+            NativeBufferHandle.anInt1509 = 0
             ModelGroundDecor.anInt10033 = 0
             OpenGlRenderer.anInt7558 = 0
             FlipTextureNode.anInt9142 = 0

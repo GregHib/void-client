@@ -1,6 +1,6 @@
 import ParticleDefLoader.Companion.method1376
 import CollisionMapAccessor.method2064
-import Class89.Companion.method850
+import NativeBufferHandle.Companion.method850
 
 /* Class282 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

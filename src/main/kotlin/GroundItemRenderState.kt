@@ -1,5 +1,5 @@
 import KaraokeSubtitleStream.Companion.method2988
-import Class89.Companion.method850
+import NativeBufferHandle.Companion.method850
 
 /* Class108 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -504,7 +504,7 @@ import MapSceneCache.Companion.method817
 import MapSceneCache.Companion.method825
 import WhirlpoolHash.Companion.method830
 import SceneNodeDeque.Companion.method843
-import Class89.Companion.method851
+import NativeBufferHandle.Companion.method851
 import Class9.method216
 import Class90.method852
 import Class91.method857
@@ -1926,7 +1926,7 @@ class Client : GameAppletFrame() {
                         }
                         class318_sub1_sub3_sub3.aBoolean10309 = false
                         class318_sub1_sub3_sub3.anInt6382 = method2064((class318_sub1_sub3_sub3.x), (class318_sub1_sub3_sub3.plane).toInt(), 11219, (class318_sub1_sub3_sub3.y))
-                        Class89.method850(class318_sub1_sub3_sub3, true)
+                        NativeBufferHandle.method850(class318_sub1_sub3_sub3, true)
                     }
                 }
             }
@@ -2567,7 +2567,7 @@ class Client : GameAppletFrame() {
                         if ((class318_sub1_sub3_sub3.x and 0x1ff) == 0 && (class318_sub1_sub3_sub3.y and 0x1ff) == 0) continue
                     } else if ((class318_sub1_sub3_sub3.x and 0x1ff) == 256 && ((class318_sub1_sub3_sub3.y) and 0x1ff) == 256) continue
                     class318_sub1_sub3_sub3.anInt6382 = (method2064(class318_sub1_sub3_sub3.x, class318_sub1_sub3_sub3.plane.toInt(), 11219, class318_sub1_sub3_sub3.y))
-                    Class89.method850(class318_sub1_sub3_sub3, true)
+                    NativeBufferHandle.method850(class318_sub1_sub3_sub3, true)
                 }
             }
         }

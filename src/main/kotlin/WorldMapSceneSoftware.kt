@@ -21,7 +21,7 @@ import DirectionPath.Companion.method536
 import SolidFillComponent.Companion.method192
 import ActiveMapRegion.method770
 import WidgetCache.Companion.method837
-import Class89.Companion.method850
+import NativeBufferHandle.Companion.method850
 import OpenGlRenderNode.Companion.method3297
 
 /* Class237_Sub1 - Decompiled by JODE

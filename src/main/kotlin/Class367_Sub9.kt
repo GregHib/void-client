@@ -8,7 +8,7 @@ import jaggl.OpenGL.Companion.glUseProgramObjectARB
 import kotlin.math.abs
 
 class Class367_Sub9 internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?, normalMapGenerator: NormalMapGenerator?) : AbstractRenderPass(glRenderDevice) {
-    private var aClass89_7369: Class89? = null
+    private var aNativeBufferHandle_7369: NativeBufferHandle? = null
     private var aBoolean7373 = false
     private var aNormalMapGenerator_7375: NormalMapGenerator? = null
     private var aBoolean7376 = false
@@ -19,7 +19,7 @@ class Class367_Sub9 internal constructor(glRenderDevice: GlRenderDevice, js5Arch
             val f = (1 shl (0x7 and (i_0_ shr 3))).toFloat() / 32.0f
             val i_3_ = i_1_ and 0xffff
             val f_4_ = (0x3 and (i_1_ shr 16)).toFloat() / 8.0f
-            val l = aClass89_7369!!.aLong1510
+            val l = aNativeBufferHandle_7369!!.aLong1510
             glUniform1fARB(glGetUniformLocationARB(l, "time"), ((this.aHa_Sub3_4479.anInt8146) * i_2_ % 40000).toFloat() / 40000.0f)
             glUniform1fARB(glGetUniformLocationARB(l, "scale"), f)
             glUniform1fARB(glGetUniformLocationARB(l, "breakWaterDepth"), i_3_.toFloat())
@@ -67,8 +67,8 @@ class Class367_Sub9 internal constructor(glRenderDevice: GlRenderDevice, js5Arch
             if (js5Archive != null && glRenderDevice!!.aBoolean9921 && glRenderDevice.aBoolean9922) {
                 val class39 = (ShaderObject.method2608(glRenderDevice, js5Archive.method391("gl", "environment_mapped_water_v", -29832), -108, 35633))
                 val class39_13_ = (ShaderObject.method2608(glRenderDevice, js5Archive.method391("gl", "environment_mapped_water_f", -29832), -122, 35632))
-                aClass89_7369 = method2582(glRenderDevice, arrayOf<GlShaderObjectHandle?>(class39, class39_13_), -2113)
-                aBoolean7376 = (aClass89_7369 != null && aNormalMapGenerator_7375!!.method2041(120.toByte()))
+                aNativeBufferHandle_7369 = method2582(glRenderDevice, arrayOf<GlShaderObjectHandle?>(class39, class39_13_), -2113)
+                aBoolean7376 = (aNativeBufferHandle_7369 != null && aNormalMapGenerator_7375!!.method2041(120.toByte()))
             } else aBoolean7376 = false
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("ko.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (normalMapGenerator != null) "{...}" else "null") + ')'))
@@ -84,7 +84,7 @@ class Class367_Sub9 internal constructor(glRenderDevice: GlRenderDevice, js5Arch
             this.aHa_Sub3_4479.method3850((-63).toByte(), interface18_impl2)
             this.aHa_Sub3_4479.method3897(0, -4382)
             this.aHa_Sub3_4479.method3850((-107).toByte(), aNormalMapGenerator_7375!!.anInterface18_Impl1_3455)
-            val l = aClass89_7369!!.aLong1510
+            val l = aNativeBufferHandle_7369!!.aLong1510
             glUseProgramObjectARB(l)
             glUniform1iARB(glGetUniformLocationARB(l, "normalSampler"), 0)
             glUniform1iARB(glGetUniformLocationARB(l, "envMapSampler"), 1)

@@ -3,7 +3,7 @@ import RingBufferInputStream.Companion.method3620
 /* Class89 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class89 internal constructor(glRenderDevice: GlRenderDevice?, l: Long, glShaderObjectHandles: Array<GlShaderObjectHandle?>?) {
+class NativeBufferHandle internal constructor(glRenderDevice: GlRenderDevice?, l: Long, glShaderObjectHandles: Array<GlShaderObjectHandle?>?) {
     private val aGlRenderDevice_1506: GlRenderDevice?
     var aLong1510: Long = 0
 

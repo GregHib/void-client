@@ -533,7 +533,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
         }
 
         @JvmStatic
-        fun method2582(glRenderDevice: GlRenderDevice?, glShaderObjectHandles: Array<GlShaderObjectHandle?>?, i: Int): Class89? {
+        fun method2582(glRenderDevice: GlRenderDevice?, glShaderObjectHandles: Array<GlShaderObjectHandle?>?, i: Int): NativeBufferHandle? {
             try {
                 anInt4065++
                 if (i != -2113) aRectangleRegion_4062 = null
@@ -568,7 +568,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                         return null
                     }
                 }
-                return Class89(glRenderDevice, l, glShaderObjectHandles)
+                return NativeBufferHandle(glRenderDevice, l, glShaderObjectHandles)
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("da.M(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (glShaderObjectHandles != null) "{...}" else "null") + ',' + i + ')'))
             }
