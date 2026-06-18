@@ -47,7 +47,7 @@ abstract class ModelBatchBase {
 
         @JvmStatic
         fun method1129(i: Int, i_0_: Int) {
-            Class367_Sub9.anInt7379 = 3
+            GlEnvMappedWaterPass.anInt7379 = 3
             ClientLoadStateMachine.anInt2173 = i_0_
             SkeletalAnimFrameLoader.anInt481 = -1
             HslAdjustTextureNode.anInt9399 = i

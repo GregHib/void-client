@@ -386,7 +386,7 @@ open class Buffer : LinkedListNode {
         val i_64_ = this.anInt7197 - (i_63_ + 1)
         if (i != -13487) writeInt(10.toByte(), -125)
         if (i_64_ == 0) return ""
-        return Class367_Sub8.method3546(this.aByteArray7154!!, 0, i_64_, i_63_)
+        return FixedFunctionWaterPass.method3546(this.aByteArray7154!!, 0, i_64_, i_63_)
     }
 
     fun readShort(i: Int): Int {
@@ -428,7 +428,7 @@ open class Buffer : LinkedListNode {
         }
         val i_70_ = -1 + this.anInt7197 - i_69_
         if (i_70_ == 0) return ""
-        return Class367_Sub8.method3546(this.aByteArray7154!!, 0, i_70_, i_69_)
+        return FixedFunctionWaterPass.method3546(this.aByteArray7154!!, 0, i_70_, i_69_)
     }
 
     fun writeByte(bool: Boolean, i: Int) {

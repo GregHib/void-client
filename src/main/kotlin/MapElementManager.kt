@@ -29,7 +29,7 @@ object MapElementManager {
         while (class348_sub27 != null) {
             if (class348_sub27.anInt6893 == -1) {
                 class348_sub27.anInt6894 = 0
-                if ((class348_sub27.anInt6905 >= 0) && class348_sub27.anInt6896 >= 0 && (class348_sub27.anInt6905 < Class367_Sub4.anInt7319) && (class348_sub27.anInt6896 < RangeThresholdTextureNode.anInt9109)) method1387(i + 26, class348_sub27)
+                if ((class348_sub27.anInt6905 >= 0) && class348_sub27.anInt6896 >= 0 && (class348_sub27.anInt6905 < GlCubemapLightPass.anInt7319) && (class348_sub27.anInt6896 < RangeThresholdTextureNode.anInt9109)) method1387(i + 26, class348_sub27)
             } else class348_sub27.method2715(39.toByte())
             class348_sub27 = SpriteRenderEntry.aNodeDeque_9711!!.method1990(57.toByte()) as MultiFieldRecord?
         }

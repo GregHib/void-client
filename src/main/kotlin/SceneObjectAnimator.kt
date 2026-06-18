@@ -98,7 +98,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
                 }
                 anInt3083 = anInt3084 - -1
                 if (anInt3083 < 0 || anInt3083 >= aWidgetDefinition_3057!!.anIntArray237.size) anInt3083 = -1
-                anInt3074 = -anInt3054 + Class367_Sub11.anInt7396
+                anInt3074 = -anInt3054 + GlGroundShaderPass.anInt7396
             }
         }
     }
@@ -205,12 +205,12 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
                 if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081!!.aBoolean6470) && (class129s != null || class342s != null)) {
                     var npcConfig: NpcConfig? = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
                     if (npcConfig!!.anIntArray945 != null) npcConfig = npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
-                    if (npcConfig != null) this.aClass318_Sub10_3081 = SceneGraphContainer.method2526(Class367_Sub11.anInt7396, true)
+                    if (npcConfig != null) this.aClass318_Sub10_3081 = SceneGraphContainer.method2526(GlGroundShaderPass.anInt7396, true)
                 }
                 if (this.aClass318_Sub10_3081 == null) break
                 abstractModel.method620(abstractCameraTransform)
-                if (bool) this.aClass318_Sub10_3081!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
-                else this.aClass318_Sub10_3081!!.method2540(Class367_Sub11.anInt7396.toLong())
+                if (bool) this.aClass318_Sub10_3081!!.method2536(var_renderer, GlGroundShaderPass.anInt7396.toLong(), class129s, class342s, false)
+                else this.aClass318_Sub10_3081!!.method2540(GlGroundShaderPass.anInt7396.toLong())
                 this.aClass318_Sub10_3081!!.method2533(aByte3085.toInt(), i_8_, i, i_10_, i_7_)
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
@@ -241,7 +241,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
                 method1666(69.toByte(), -1)
                 if (aWidgetDefinition_3057 == null) return
             }
-            i = -anInt3074 + Class367_Sub11.anInt7396
+            i = -anInt3074 + GlGroundShaderPass.anInt7396
             if (i > 100 && aWidgetDefinition_3057!!.anInt238 > 0) {
                 val i_12_: Int
                 i_12_ = (-aWidgetDefinition_3057!!.anInt238 + aWidgetDefinition_3057!!.anIntArray237.size)
@@ -284,7 +284,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             }
         }
         anInt3054 = i
-        anInt3074 = -i + Class367_Sub11.anInt7396
+        anInt3074 = -i + GlGroundShaderPass.anInt7396
     }
 
     init {

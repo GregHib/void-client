@@ -163,7 +163,7 @@ class LinkedNodeListIterator {
                             i_6_ = (-ResourceProvider.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483 and 0x3fff)
                             i_4_ = (LocalPlayerState.aPlayer_1907!!.x)
                         }
-                        val i_7_ = 48 - (-(i_4_ / 128) - -(Class367_Sub4.anInt7319 * 2)) - -208
+                        val i_7_ = 48 - (-(i_4_ / 128) - -(GlCubemapLightPass.anInt7319 * 2)) - -208
                         val i_8_ = (208 - (RangeThresholdTextureNode.anInt9109 * 2 - 48) + 4 * RangeThresholdTextureNode.anInt9109 - i_3_ / 128)
                         GroundItemRenderState.aAbstractModelRenderer_1664!!.method967((widgetComponent.anInt709.toFloat() / 2.0f + i.toFloat()), (widgetComponent.anInt789.toFloat() / 2.0f + i_1_.toFloat()), i_7_.toFloat(), i_8_.toFloat(), i_5_, i_6_ shl 2, var_aa, i, i_1_)
                         var class348_sub35 = ModelWallEntity.aNodeDeque_10125!!.method1995(i_2_ xor 0x59b4) as? IntKeyNode
@@ -261,7 +261,7 @@ class LinkedNodeListIterator {
                         var i_33_ = 0
                         while ((i_33_ < class302s!!.size)) {
                             val class302 = class302s[i_33_]
-                            if (class302 != null && (class302.anInt3840 != 0) && Class367_Sub11.anInt7396 % 20 < 10) {
+                            if (class302 != null && (class302.anInt3840 != 0) && GlGroundShaderPass.anInt7396 % 20 < 10) {
                                 if (class302.anInt3840 == 1) {
                                     val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? NpcReference)
                                     if (class348_sub22 != null) {

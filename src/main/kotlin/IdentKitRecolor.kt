@@ -119,7 +119,7 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                 class318_sub5.anInt6419 = i_25_
                 class318_sub5.anInt6418 = i_30_
                 class318_sub5.anInt6422 = i_29_
-                class318_sub5.anInt6421 = i + Class367_Sub11.anInt7396
+                class318_sub5.anInt6421 = i + GlGroundShaderPass.anInt7396
                 if (i_28_ >= -48) method206(-90, -126, -8)
                 class318_sub5.aString6416 = string
                 class318_sub5.anInt6415 = i_26_
@@ -180,7 +180,7 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                     NodeDeque.aFont_3326!!.method2576("--> " + BackgroundWorkerThread.method1909(31.toByte(), MapElementManager.aString4461!!), -1, (i_36_ - (-350 + WorldMapLabel.aFontDefinition_4962!!.anInt1993) - 1), 10 + i_35_, -16777216, -127)
                     if (!SizeBoundedSoftCache.aBoolean2329) break
                     var i_45_ = -1
-                    if (Class367_Sub11.anInt7396 % 30 > 15) i_45_ = 16777215
+                    if (GlGroundShaderPass.anInt7396 % 30 > 15) i_45_ = 16777215
                     var_renderer.method3660(10 + (i_35_ - -(WorldMapLabel.aFontDefinition_4962!!.method1183(true, "--> " + (BackgroundWorkerThread.method1909(31.toByte(), MapElementManager.aString4461!!).substring(0, TerrainShadowBuilderGl3.anInt7006))))), i_45_, 12, 350 + (i_36_ + -WorldMapLabel.aFontDefinition_4962!!.anInt1993 - 11), true)
                 } catch (runtimeexception: RuntimeException) {
                     throw SoundBankPatch.method2929(runtimeexception, ("go.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))

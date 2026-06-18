@@ -1,4 +1,4 @@
-import Class367_Sub1.Companion.method3533
+import NullRenderPass.Companion.method3533
 
 /* Class141 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

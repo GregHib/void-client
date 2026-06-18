@@ -112,7 +112,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1795(`is`: ByteArray, bool: Boolean): String {
             anInt6026++
-            return Class367_Sub8.method3546(`is`, 0, `is`.size, 0)
+            return FixedFunctionWaterPass.method3546(`is`, 0, `is`.size, 0)
         }
 
         @JvmStatic

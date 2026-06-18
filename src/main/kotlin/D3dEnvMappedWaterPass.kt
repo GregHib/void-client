@@ -2,7 +2,7 @@ import jagdx.IDirect3DPixelShader
 import jagdx.IDirect3DVertexShader
 import kotlin.math.abs
 
-class Class367_Sub7 internal constructor(private var aD3dRenderDevice_7346: D3dRenderDevice, js5Archive: Js5Archive?, private val aNormalMapGenerator_7348: NormalMapGenerator) : AbstractRenderPass(aD3dRenderDevice_7346) {
+class D3dEnvMappedWaterPass internal constructor(private var aD3dRenderDevice_7346: D3dRenderDevice, js5Archive: Js5Archive?, private val aNormalMapGenerator_7348: NormalMapGenerator) : AbstractRenderPass(aD3dRenderDevice_7346) {
     private var anIDirect3DPixelShader7343: IDirect3DPixelShader? = null
     private var aBoolean7344 = false
     private var anIDirect3DVertexShader7345: IDirect3DVertexShader? = null

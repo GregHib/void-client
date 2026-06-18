@@ -66,13 +66,13 @@ class MapAreaDefinition {
             val i_20_ = i_7_ + -i_18_
             ProjectileFactory.anIntArrayArray2900!![i_17_]!![i_18_] = 0
             var i_21_ = 0
-            Class367_Sub11.anIntArray7397!![i_21_] = i_15_
+            GlGroundShaderPass.anIntArray7397!![i_21_] = i_15_
             var i_22_ = 0
             CircleDrawer.anIntArray2694!![i_21_++] = i_16_
             val `is` = collisionMap.anIntArrayArray4438!!
             while_56_@ while (i_22_ != i_21_) {
                 i_16_ = CircleDrawer.anIntArray2694!![i_22_]
-                i_15_ = Class367_Sub11.anIntArray7397!![i_22_]
+                i_15_ = GlGroundShaderPass.anIntArray7397!![i_22_]
                 i_17_ = i_15_ + -i_19_
                 i_18_ = -i_20_ + i_16_
                 i_22_ = 0xfff and i_22_ - -1
@@ -142,7 +142,7 @@ class MapAreaDefinition {
                             if ((`is`[i_23_ - 1]!![i_26_ + i_24_] and 0x4fa40000) != 0) break@while_49_
                             i_26_++
                         }
-                        Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - 1
+                        GlGroundShaderPass.anIntArray7397!![i_21_] = i_15_ - 1
                         CircleDrawer.anIntArray2694!![i_21_] = i_16_
                         i_21_ = i_21_ - -1 and 0xfff
                         RenderNode.anIntArrayArray9723!![i_17_ - 1]!![i_18_] = 2
@@ -156,7 +156,7 @@ class MapAreaDefinition {
                             if ((`is`[i_12_ + i_23_]!![i_24_ - -i_27_] and 0x78e40000) != 0) break@while_50_
                             i_27_++
                         }
-                        Class367_Sub11.anIntArray7397!![i_21_] = 1 + i_15_
+                        GlGroundShaderPass.anIntArray7397!![i_21_] = 1 + i_15_
                         CircleDrawer.anIntArray2694!![i_21_] = i_16_
                         RenderNode.anIntArrayArray9723!![1 + i_17_]!![i_18_] = 8
                         i_21_ = 0xfff and i_21_ - -1
@@ -170,7 +170,7 @@ class MapAreaDefinition {
                             if ((0x63e40000 and `is`[i_23_ - -i_28_]!![-1 + i_24_]) != 0) break@while_51_
                             i_28_++
                         }
-                        Class367_Sub11.anIntArray7397!![i_21_] = i_15_
+                        GlGroundShaderPass.anIntArray7397!![i_21_] = i_15_
                         CircleDrawer.anIntArray2694!![i_21_] = -1 + i_16_
                         RenderNode.anIntArrayArray9723!![i_17_]!![-1 + i_18_] = 1
                         i_21_ = 0xfff and 1 + i_21_
@@ -184,7 +184,7 @@ class MapAreaDefinition {
                             if ((0x7e240000 and `is`[i_23_ + i_29_]!![i_12_ + i_24_]) != 0) break@while_52_
                             i_29_++
                         }
-                        Class367_Sub11.anIntArray7397!![i_21_] = i_15_
+                        GlGroundShaderPass.anIntArray7397!![i_21_] = i_15_
                         CircleDrawer.anIntArray2694!![i_21_] = i_16_ - -1
                         RenderNode.anIntArrayArray9723!![i_17_]!![1 + i_18_] = 4
                         i_21_ = i_21_ - -1 and 0xfff
@@ -198,7 +198,7 @@ class MapAreaDefinition {
                             if ((0x4fa40000 and `is`[-1 + i_23_]!![i_24_ + (-1 + i_30_)]) != 0 || (0x63e40000 and `is`[i_23_ - (1 + -i_30_)]!![i_24_ - 1]) != 0) break@while_53_
                             i_30_++
                         }
-                        Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - 1
+                        GlGroundShaderPass.anIntArray7397!![i_21_] = i_15_ - 1
                         CircleDrawer.anIntArray2694!![i_21_] = -1 + i_16_
                         i_21_ = 1 + i_21_ and 0xfff
                         RenderNode.anIntArrayArray9723!![i_17_ - 1]!![-1 + i_18_] = 3
@@ -212,7 +212,7 @@ class MapAreaDefinition {
                             if ((0x78e40000 and `is`[i_23_ - -i_12_]!![i_31_ + (i_24_ - 1)]) != 0 || ((`is`[i_23_ + i_31_]!![-1 + i_24_] and 0x63e40000) != 0)) break@while_54_
                             i_31_++
                         }
-                        Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - -1
+                        GlGroundShaderPass.anIntArray7397!![i_21_] = i_15_ - -1
                         CircleDrawer.anIntArray2694!![i_21_] = -1 + i_16_
                         RenderNode.anIntArrayArray9723!![1 + i_17_]!![-1 + i_18_] = 9
                         i_21_ = 0xfff and i_21_ - -1
@@ -224,7 +224,7 @@ class MapAreaDefinition {
                         for (i_32_ in 1..<i_12_) {
                             if ((`is`[-1 + i_23_]!![i_32_ + i_24_] and 0x4fa40000) != 0 || (`is`[i_32_ + (i_23_ + -1)]!![i_24_ - -i_12_] and 0x7e240000) != 0) break@while_55_
                         }
-                        Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - 1
+                        GlGroundShaderPass.anIntArray7397!![i_21_] = i_15_ - 1
                         CircleDrawer.anIntArray2694!![i_21_] = i_16_ - -1
                         RenderNode.anIntArrayArray9723!![i_17_ - 1]!![i_18_ - -1] = 6
                         i_21_ = i_21_ - -1 and 0xfff
@@ -237,7 +237,7 @@ class MapAreaDefinition {
                         if ((0x7e240000 and `is`[i_23_ + i_33_]!![i_24_ - -i_12_]) != 0 || ((`is`[i_12_ + i_23_]!![i_24_ - -i_33_] and 0x78e40000) != 0)) continue@while_56_
                         i_33_++
                     }
-                    Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - -1
+                    GlGroundShaderPass.anIntArray7397!![i_21_] = i_15_ - -1
                     CircleDrawer.anIntArray2694!![i_21_] = i_16_ - -1
                     i_21_ = 0xfff and 1 + i_21_
                     RenderNode.anIntArrayArray9723!![i_17_ - -1]!![1 + i_18_] = 12

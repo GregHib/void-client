@@ -111,7 +111,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
 
         fun method2035(i: Int, i_4_: Int) {
             anInt3445++
-            val i_5_ = Class367_Sub11.anInt7396 - FloatBuffer.anInt9751
+            val i_5_ = GlGroundShaderPass.anInt7396 - FloatBuffer.anInt9751
             if (i_5_ >= 100) {
                 WeaveTextureNode.anInt9282 = 1
                 SequencedWallEntity.anInt10163 = -1

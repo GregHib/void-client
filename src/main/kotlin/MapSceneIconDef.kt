@@ -76,7 +76,7 @@ class MapSceneIconDef {
 
         fun method1591(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
             anInt2855++
-            if (i >= 1 && i_5_ >= 1 && -2 + Class367_Sub4.anInt7319 >= i && i_5_ <= -2 + RangeThresholdTextureNode.anInt9109) {
+            if (i >= 1 && i_5_ >= 1 && -2 + GlCubemapLightPass.anInt7319 >= i && i_5_ <= -2 + RangeThresholdTextureNode.anInt9109) {
                 var i_8_ = i_7_
                 if (i_8_ < 3 && method802(i_5_, i, true)) i_8_++
                 if ((IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && !method536(i_5_, false, i, ParticleSystemState.anInt2204, i_8_)) || HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) return
@@ -95,7 +95,7 @@ class MapSceneIconDef {
             anInt2849++
             val i_13_ = (player.anIntArray10320!![0])
             val i_14_ = (player.anIntArray10317!![0])
-            if (i_13_ >= 0 && Class367_Sub4.anInt7319 > i_13_ && i_14_ >= 0 && i_14_ < RangeThresholdTextureNode.anInt9109 && (i_12_ >= 0 && i_12_ < Class367_Sub4.anInt7319 && i_10_ >= 0 && RangeThresholdTextureNode.anInt9109 > i_10_)) {
+            if (i_13_ >= 0 && GlCubemapLightPass.anInt7319 > i_13_ && i_14_ >= 0 && i_14_ < RangeThresholdTextureNode.anInt9109 && (i_12_ >= 0 && i_12_ < GlCubemapLightPass.anInt7319 && i_10_ >= 0 && RangeThresholdTextureNode.anInt9109 > i_10_)) {
                 val i_15_ = (method574(i_12_, player.method2436(62.toByte()), 0, RadialGradientMaskEffect.anIntArray9185, true, 120.toByte(), -4, i_13_, i_14_, InterfaceComponentGroup.anIntArray9626, i_10_, (TimedRecordAccessor.aCollisionMapArray7108s!![(player.plane).toInt()]), 0, 0, 0))
                 if (i_15_ >= 1) {
                     if (i_11_ != 4) aNodeDeque_2859 = null

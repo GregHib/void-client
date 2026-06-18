@@ -36,7 +36,7 @@ object RegionMapDecoder {
         CircleRasterizer.aClass348_Sub49_Sub2_3813!!.startBitAccess(-122)
         for (i_3_ in 0..3) {
             var i_4_ = 0
-            while ((Class367_Sub4.anInt7319 shr 3 > i_4_)) {
+            while ((GlCubemapLightPass.anInt7319 shr 3 > i_4_)) {
                 var i_5_ = 0
                 while ((i_5_ < RangeThresholdTextureNode.anInt9109 shr 3)) {
                     val i_6_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
@@ -70,7 +70,7 @@ object RegionMapDecoder {
         i_7_ = 0
         for (i_10_ in 0..3) {
             var i_11_ = 0
-            while ((Class367_Sub4.anInt7319 shr 3 > i_11_)) {
+            while ((GlCubemapLightPass.anInt7319 shr 3 > i_11_)) {
                 for (i_12_ in 0..<(RangeThresholdTextureNode.anInt9109 shr 3)) {
                     val i_13_ = (GameClock.anIntArrayArrayArray1116!![i_10_]!![i_11_]!![i_12_])
                     if (i_13_ != -1) {
@@ -89,10 +89,10 @@ object RegionMapDecoder {
                             NullOggStream.anIntArray9042!![i_7_] = i_16_
                             val i_18_ = 0xff and (i_16_ shr 8)
                             val i_19_ = 0xff and i_16_
-                            NativeSprite.anIntArray5192!![i_7_] = (Class367_Sub10.aJs5Archive_7382!!.method417("m" + i_18_ + "_" + i_19_, CameraSplineNode.method2955(i.toInt(), 99)))
-                            GameAppletFrame.anIntArray38!![i_7_] = Class367_Sub10.aJs5Archive_7382!!.method417("l" + i_18_ + "_" + i_19_, 0)
-                            LocalizedTextTriple.anIntArray3759!![i_7_] = (Class367_Sub10.aJs5Archive_7382!!.method417("um" + i_18_ + "_" + i_19_, 0))
-                            RenderNode.anIntArray9724!![i_7_] = (Class367_Sub10.aJs5Archive_7382!!.method417("ul" + i_18_ + "_" + i_19_, 0))
+                            NativeSprite.anIntArray5192!![i_7_] = (GlShadowRenderPass.aJs5Archive_7382!!.method417("m" + i_18_ + "_" + i_19_, CameraSplineNode.method2955(i.toInt(), 99)))
+                            GameAppletFrame.anIntArray38!![i_7_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("l" + i_18_ + "_" + i_19_, 0)
+                            LocalizedTextTriple.anIntArray3759!![i_7_] = (GlShadowRenderPass.aJs5Archive_7382!!.method417("um" + i_18_ + "_" + i_19_, 0))
+                            RenderNode.anIntArray9724!![i_7_] = (GlShadowRenderPass.aJs5Archive_7382!!.method417("ul" + i_18_ + "_" + i_19_, 0))
                             i_7_++
                         }
                     }

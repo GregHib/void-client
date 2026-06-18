@@ -7,7 +7,7 @@ import GlTexture2D.Companion.method1968
 import WallEntity.Companion.method2483
 import Font.Companion.method2570
 import TimedRecordAccessor.Companion.method3313
-import Class367_Sub8.Companion.method3547
+import FixedFunctionWaterPass.Companion.method3547
 import WorldMapPolygonIconLabel.Companion.method3576
 import DirectionPath.Companion.method536
 import NpcType.Companion.method802

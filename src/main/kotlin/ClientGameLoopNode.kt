@@ -63,7 +63,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                     }
                     if (LightingOptionState.aClass348_Sub26_5881 != null) {
                         if ((LightingOptionState.aClass348_Sub26_5881!!.anInt6887) != -1) {
-                            val class348_sub47 = method2148((Class367_Sub4.aFontMetaRef_7318), (TheoraVideoStream.aIsaacCipher_9029), -81)
+                            val class348_sub47 = method2148((GlCubemapLightPass.aFontMetaRef_7318), (TheoraVideoStream.aIsaacCipher_9029), -81)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), LightingOptionState.aClass348_Sub26_5881!!.anInt6887)
                             InterfaceComponentGroup.method3243(122, class348_sub47)
                             LightingOptionState.aClass348_Sub26_5881 = null

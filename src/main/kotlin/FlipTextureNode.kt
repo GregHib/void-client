@@ -123,7 +123,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                 HintIconState.aRectangleArray2371!![TerrainShadowBuilderGl3.anInt7008]!!.setBounds(i_11_ + class46.anInt800, i_10_ + class46.anInt750, class46.anInt709, class46.anInt789)
                                 i_23_ = TerrainShadowBuilderGl3.anInt7008++
                             } else i_23_ = i_13_
-                            class46.anInt794 = Class367_Sub11.anInt7396
+                            class46.anInt794 = GlGroundShaderPass.anInt7396
                             class46.anInt760 = i_23_
                             if (!Client.method111(class46)) {
                                 if (class46.anInt765 != 0) InterfaceBounds.method2942(class46, (-36).toByte())
@@ -479,7 +479,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method891(((class46.anInt808) shl 2), (((class46.anInt786) shl 2) + (i_66_ + i_60_)), ((class46.anInt786) shl 2) + i_67_)
                                                     MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method900((class46.anInt757) shl 3)
                                                 }
-                                                class46.method437(-20154, abstractModel, FacingDirectionNode.aRenderer6654, Class367_Sub11.anInt7396, MinimapSquareDrawer.aAbstractCameraTransform_5209)
+                                                class46.method437(-20154, abstractModel, FacingDirectionNode.aRenderer6654, GlGroundShaderPass.anInt7396, MinimapSquareDrawer.aAbstractCameraTransform_5209)
                                                 if (SequencedGroundDecor.aBoolean10046) FacingDirectionNode.aRenderer6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (i_25_ + (class46.anInt789)))
                                                 if (!class46.aBoolean784) {
                                                     if (!class46.aBoolean689) {

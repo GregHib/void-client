@@ -222,12 +222,12 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_37_].toLong(), -6008)) as? NpcReference?)
                                         if (class348_sub22 != null) {
                                             val npc = (class348_sub22.aNpc_6859)!!
-                                            if ((Class367_Sub11.anInt7396 != (npc.anInt10215)) && (npc.aBoolean10309)) {
+                                            if ((GlGroundShaderPass.anInt7396 != (npc.anInt10215)) && (npc.aBoolean10309)) {
                                                 val i_38_ = ((npc.x) - ((npc.aNpcType_10505!!.anInt1399) + -1 shl 8))
                                                 val i_39_ = (-((-1 + (npc.aNpcType_10505!!.anInt1399)) shl 8) + (npc.y))
                                                 if (i_35_ <= i_38_ && ((-(i_38_ + -i_35_ shr 9) + (player.method2436(68.toByte()))) >= (npc.aNpcType_10505!!.anInt1399)) && i_36_ <= i_39_ && ((-(-i_36_ + i_39_ shr 9) + (player.method2436(97.toByte()))) >= (npc.aNpcType_10505!!.anInt1399))) {
                                                     WaterMaterialPass.method2150(((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc)
-                                                    npc.anInt10215 = Class367_Sub11.anInt7396
+                                                    npc.anInt10215 = GlGroundShaderPass.anInt7396
                                                 }
                                             }
                                         }
@@ -238,23 +238,23 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                     var i_41_ = 0
                                     while ((i_40_ > i_41_)) {
                                         val player_42_ = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_41_]])
-                                        if ((player_42_ != null) && (Class367_Sub11.anInt7396 != (player_42_.anInt10215)) && (player != player_42_) && (player_42_.aBoolean10309)) {
+                                        if ((player_42_ != null) && (GlGroundShaderPass.anInt7396 != (player_42_.anInt10215)) && (player != player_42_) && (player_42_.aBoolean10309)) {
                                             val i_43_ = ((player_42_.x) + -((player_42_.method2436(94.toByte()) - 1) shl 8))
                                             val i_44_ = ((player_42_.y) + -((-1 + (player_42_.method2436(82.toByte()))) shl 8))
                                             if ((i_43_ >= i_35_) && ((player.method2436(70.toByte()) - (-i_35_ + i_43_ shr 9)) >= player_42_.method2436(89.toByte())) && (i_44_ >= i_36_) && ((player.method2436(42.toByte()) - (i_44_ - i_36_ shr 9)) >= player_42_.method2436(127.toByte()))) {
                                                 SpriteDefinition.method3298(114.toByte(), ((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player_42_)
-                                                player_42_.anInt10215 = Class367_Sub11.anInt7396
+                                                player_42_.anInt10215 = GlGroundShaderPass.anInt7396
                                             }
                                         }
                                         i_41_++
                                     }
                                 }
-                                if (Class367_Sub11.anInt7396 == player.anInt10215) {
+                                if (GlGroundShaderPass.anInt7396 == player.anInt10215) {
                                     class318_sub4 = class243.method1878((-123).toByte()) as SceneEntityModel?
                                     continue
                                 }
                                 SpriteDefinition.method3298(96.toByte(), ((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), player)
-                                player.anInt10215 = Class367_Sub11.anInt7396
+                                player.anInt10215 = GlGroundShaderPass.anInt7396
                             }
                             if (class318_sub4.aClass318_Sub1_6410 is Npc) {
                                 val npc = ((class318_sub4.aClass318_Sub1_6410) as Npc)
@@ -266,12 +266,12 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_47_].toLong(), -6008)) as NpcReference?)
                                             if (class348_sub22 != null) {
                                                 val npc_48_ = (class348_sub22.aNpc_6859)!!
-                                                if (((npc_48_.anInt10215) != Class367_Sub11.anInt7396) && (npc != npc_48_) && (npc_48_.aBoolean10309)) {
+                                                if (((npc_48_.anInt10215) != GlGroundShaderPass.anInt7396) && (npc != npc_48_) && (npc_48_.aBoolean10309)) {
                                                     val i_49_ = (-((npc_48_.aNpcType_10505!!.anInt1399) - 1 shl 8) + (npc_48_.x))
                                                     val i_50_ = ((npc_48_.y) + -((npc_48_.aNpcType_10505!!.anInt1399) - 1 shl 8))
                                                     if (i_49_ >= i_45_ && ((npc_48_.aNpcType_10505!!.anInt1399) <= ((npc.aNpcType_10505!!.anInt1399) - (-i_45_ + i_49_ shr 9))) && (i_46_ <= i_50_) && ((npc_48_.aNpcType_10505!!.anInt1399) <= ((npc.aNpcType_10505!!.anInt1399) + -(i_50_ + -i_46_ shr 9)))) {
                                                         WaterMaterialPass.method2150(((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc_48_)
-                                                        npc_48_.anInt10215 = (Class367_Sub11.anInt7396)
+                                                        npc_48_.anInt10215 = (GlGroundShaderPass.anInt7396)
                                                     }
                                                 }
                                             }
@@ -281,23 +281,23 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         var i_52_ = 0
                                         while ((i_51_ > i_52_)) {
                                             val player = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_52_]])
-                                            if ((player != null) && (Class367_Sub11.anInt7396 != (player.anInt10215)) && (player.aBoolean10309)) {
+                                            if ((player != null) && (GlGroundShaderPass.anInt7396 != (player.anInt10215)) && (player.aBoolean10309)) {
                                                 val i_53_ = ((player.x) - ((-1 + (player.method2436(116.toByte()))) shl 8))
                                                 val i_54_ = ((player.y) + -((player.method2436(121.toByte())) + -1 shl 8))
                                                 if ((i_53_ >= i_45_) && ((-(-i_45_ + i_53_ shr 9) + (npc.aNpcType_10505!!.anInt1399)) >= player.method2436(114.toByte())) && (i_54_ >= i_46_) && (player.method2436(58.toByte()) <= ((npc.aNpcType_10505!!.anInt1399) - (i_54_ + -i_46_ shr 9)))) {
                                                     SpriteDefinition.method3298(125.toByte(), ((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player)
-                                                    player.anInt10215 = Class367_Sub11.anInt7396
+                                                    player.anInt10215 = GlGroundShaderPass.anInt7396
                                                 }
                                             }
                                             i_52_++
                                         }
                                     }
-                                    if (Class367_Sub11.anInt7396 == npc.anInt10215) {
+                                    if (GlGroundShaderPass.anInt7396 == npc.anInt10215) {
                                         class318_sub4 = class243.method1878((-123).toByte()) as SceneEntityModel?
                                         continue
                                     }
                                     WaterMaterialPass.method2150((class318_sub4.aClass318_Sub1_6410!!.plane != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc)
-                                    npc.anInt10215 = Class367_Sub11.anInt7396
+                                    npc.anInt10215 = GlGroundShaderPass.anInt7396
                                 }
                             }
                             if (class318_sub4.aClass318_Sub1_6410 is DynamicSceneObjectEntity) {

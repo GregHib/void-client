@@ -16,7 +16,7 @@ object MinimapStateReset {
         NativeShaderProgram.anInt9775 = -1
         BloomGraphicsOptionState.anInt5973 = 0
         MapArchiveSource.anInt4803 = -1
-        Class367_Sub11.anInt7403 = 0
+        GlGroundShaderPass.anInt7403 = 0
     }
 
     @JvmStatic

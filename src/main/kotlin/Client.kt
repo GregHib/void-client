@@ -423,13 +423,13 @@ import Tooltip.method3511
 import Tooltip.method3512
 import MapElementManager.method3516
 import FriendChatMember.Companion.method3518
-import Class367_Sub10.Companion.method3553
-import Class367_Sub10.Companion.method3554
-import Class367_Sub11.Companion.method3556
-import Class367_Sub11.Companion.method3557
-import Class367_Sub2.Companion.method3537
-import Class367_Sub4.Companion.method3541
-import Class367_Sub9.Companion.method3552
+import GlShadowRenderPass.Companion.method3553
+import GlShadowRenderPass.Companion.method3554
+import GlGroundShaderPass.Companion.method3556
+import GlGroundShaderPass.Companion.method3557
+import GlWaterRenderPass.Companion.method3537
+import GlCubemapLightPass.Companion.method3541
+import GlEnvMappedWaterPass.Companion.method3552
 import LocConfigModelBuilder.Companion.method3560
 import WorldMapLabel.Companion.method3567
 import WorldMapTextLabel.Companion.method3572
@@ -671,14 +671,14 @@ class Client : GameAppletFrame() {
             InputSettingsState.shiftClick = true
             SpriteLoadValidator.aShortArrayArray4791 = FacingDirectionNode.aShortArrayArray6664
             LocDefinitionCache.anInt3439 = 16777215
-            Class367_Sub2.aShortArrayArrayArray7290 = DisplaySettingsConfig.aShortArrayArrayArray7262
+            GlWaterRenderPass.aShortArrayArrayArray7290 = DisplaySettingsConfig.aShortArrayArrayArray7262
             LocDefinitionCache.anInt3444 = 0
         } else if (HardCacheEntryReference.aSceneProjector_10434 == CustomCursorsOptionState.aSceneProjector_5932) {
             SpriteLoadValidator.aShortArrayArray4791 = LocDefinitionCache.aShortArrayArray3443
-            Class367_Sub2.aShortArrayArrayArray7290 = ProjectedGroundDecor.aShortArrayArrayArray10253
+            GlWaterRenderPass.aShortArrayArrayArray7290 = ProjectedGroundDecor.aShortArrayArrayArray10253
         } else {
             SpriteLoadValidator.aShortArrayArray4791 = InvertTextureNode.aShortArrayArray9424
-            Class367_Sub2.aShortArrayArrayArray7290 = BoundingBoxNode.aShortArrayArrayArray6736
+            GlWaterRenderPass.aShortArrayArrayArray7290 = BoundingBoxNode.aShortArrayArrayArray6736
         }
         CacheStateResetter.aServerConnectionInfo_125 = GlElementArrayBuffer.aServerConnectionInfo_4839
         try {
@@ -1176,9 +1176,9 @@ class Client : GameAppletFrame() {
         method2738(82.toByte())
         method2631(127)
         method2272(88)
-        Class367_Sub3.method3539((-32).toByte())
+        BasicGlRenderPass.method3539((-32).toByte())
         method3541(23.toByte())
-        Class367_Sub8.method3550((-122).toByte())
+        FixedFunctionWaterPass.method3550((-122).toByte())
         method3554(i + -107)
         method553(0)
         RgbNoiseTexture.method564((-54).toByte())
@@ -1446,7 +1446,7 @@ class Client : GameAppletFrame() {
                         if (i_99_ != 0 || i_100_ != 0) {
                             var i_101_ = ((npc.anIntArray10320!![0]) - -i_99_)
                             if (i_101_ < 0) i_101_ = 0
-                            else if (i_101_ > Class367_Sub4.anInt7319 + -i_98_ + -1) i_101_ = -1 + (-i_98_ + Class367_Sub4.anInt7319)
+                            else if (i_101_ > GlCubemapLightPass.anInt7319 + -i_98_ + -1) i_101_ = -1 + (-i_98_ + GlCubemapLightPass.anInt7319)
                             var i_102_ = i_100_ + (npc.anIntArray10317!![0])
                             if (i_102_ < 0) i_102_ = 0
                             else if ((-i_98_ + RangeThresholdTextureNode.anInt9109 - 1) < i_102_) i_102_ = (-i_98_ + RangeThresholdTextureNode.anInt9109 - 1)
@@ -1474,10 +1474,10 @@ class Client : GameAppletFrame() {
             }
             i_96_++
         }
-        if (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0) {
+        if (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0) {
             if (WeaveTextureNode.anInt9282 == 2) method241(127.toByte())
             else CameraSplineNode.method2954((-127).toByte())
-            if (GlslMaterialPass.anInt6246 shr 9 < 14 || (GlslMaterialPass.anInt6246 shr 9 >= -14 + Class367_Sub4.anInt7319) || (CompositeRgbNoiseTexture.anInt8685 shr 9 < 14) || (RangeThresholdTextureNode.anInt9109 + -14 <= CompositeRgbNoiseTexture.anInt8685 shr 9)) AbstractCameraTransform.method893((-49).toByte())
+            if (GlslMaterialPass.anInt6246 shr 9 < 14 || (GlslMaterialPass.anInt6246 shr 9 >= -14 + GlCubemapLightPass.anInt7319) || (CompositeRgbNoiseTexture.anInt8685 shr 9 < 14) || (RangeThresholdTextureNode.anInt9109 + -14 <= CompositeRgbNoiseTexture.anInt8685 shr 9)) AbstractCameraTransform.method893((-49).toByte())
         }
         if (i.toInt() != 112) anInt5171 = 22
         while (true) {
@@ -1517,7 +1517,7 @@ class Client : GameAppletFrame() {
             method705(class348_sub36)
         }
         if (RegionSceneLoader.aWidgetComponent_3701 != null) method2708(-30206)
-        if (Class367_Sub11.anInt7396 % 1500 == 0) method3088(9)
+        if (GlGroundShaderPass.anInt7396 % 1500 == 0) method3088(9)
         if (WorldMapRenderer.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) method1987(-124)
         method909(3553)
         if (ScanlineRasterFiller.aBoolean2469 && (SkeletalAnimFrameLoader.aLong482 < method599(-107) + -60000L)) method2405(41)
@@ -1556,13 +1556,13 @@ class Client : GameAppletFrame() {
     private fun method114(i: Int) {
         anInt5188++
         if (WorldMapRenderer.anInt4674 != 14) {
-            Class367_Sub11.anInt7396++
-            if (Class367_Sub11.anInt7396 % 1000 == 1) {
+            GlGroundShaderPass.anInt7396++
+            if (GlGroundShaderPass.anInt7396 % 1000 == 1) {
                 val gregoriancalendar = GregorianCalendar()
                 Hashtable.anInt4383 = (gregoriancalendar.get(11) * 600 + gregoriancalendar.get(12) * 10 + gregoriancalendar.get(13) / 6)
                 OutputStream_Sub1.aRandom93!!.setSeed(Hashtable.anInt4383.toLong())
             }
-            if (Class367_Sub11.anInt7396 % 50 == 0) {
+            if (GlGroundShaderPass.anInt7396 % 50 == 0) {
                 ModelResourceBundle.anInt7134 = FogState.anInt1433
                 FogState.anInt1433 = 0
                 CompassSmoother.anInt3372 = MinimapRectClipper.anInt221
@@ -1589,7 +1589,7 @@ class Client : GameAppletFrame() {
                             MinimapAreaMarkerNode.anInt9699++
                         }
                     } else if (!method3263(true)) method2363(-84)
-                    else Class367_Sub4.method3543((-89).toByte())
+                    else GlCubemapLightPass.method3543((-89).toByte())
                 } else if (i_109_ == 0 && CameraConfigDefinition.anInt3246 < 75) {
                     CacheLruCache.anInterface6Array3884!![CameraConfigDefinition.anInt3246] = interface6
                     CameraConfigDefinition.anInt3246++
@@ -1777,7 +1777,7 @@ class Client : GameAppletFrame() {
         anInt5175++
         var string: String? = null
         try {
-            string = ("[1)" + ArbVertexProgram.regionTileX + "," + RegionMapDecoder.regionTileY + "," + Class367_Sub4.anInt7319 + "," + RangeThresholdTextureNode.anInt9109 + "|")
+            string = ("[1)" + ArbVertexProgram.regionTileX + "," + RegionMapDecoder.regionTileY + "," + GlCubemapLightPass.anInt7319 + "," + RangeThresholdTextureNode.anInt9109 + "|")
             if (i < 40) aNodeDeque_5185 = null
             if (LocalPlayerState.aPlayer_1907 != null) string += ("2)" + CompiledScriptCache.anInt4372 + "," + (ArbVertexProgram.regionTileX + (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0])) + "," + (RegionMapDecoder.regionTileY + (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) + "|")
             string += ("3)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + LocTypeDefinition.anInt4017 + "," + HardCacheEntryReference.anInt10432 + "|")
@@ -2102,7 +2102,7 @@ class Client : GameAppletFrame() {
                                 while ((i_55_ < class46.aByteArray746.size)) {
                                     if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(class46.aByteArray746[i_55_].toInt(), -122)) {
                                         if (class46.anIntArray801 != null) class46.anIntArray801!![i_55_] = 0
-                                    } else if ((class46.anIntArray801 == null) || (Class367_Sub11.anInt7396 >= (class46.anIntArray801!![i_55_]))) {
+                                    } else if ((class46.anIntArray801 == null) || (GlGroundShaderPass.anInt7396 >= (class46.anIntArray801!![i_55_]))) {
                                         val i_56_ = (class46.aByteArray832[i_55_])
                                         if (i_56_.toInt() == 0 || (((i_56_.toInt() and 0x8) == 0 || (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(86, -124) && !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -123) && !(LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -122)))) && ((i_56_.toInt() and 0x2) == 0 || LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(86, -127)) && ((i_56_.toInt() and 0x1) == 0 || LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(
                                                 82,
@@ -2120,7 +2120,7 @@ class Client : GameAppletFrame() {
                                             }
                                             val i_57_ = (class46.anIntArray707[i_55_])
                                             if (class46.anIntArray801 == null) class46.anIntArray801 = (IntArray((class46.aByteArray746).size))
-                                            if (i_57_ != 0) class46.anIntArray801!![i_55_] = (Class367_Sub11.anInt7396 + i_57_)
+                                            if (i_57_ != 0) class46.anIntArray801!![i_55_] = (GlGroundShaderPass.anInt7396 + i_57_)
                                             else class46.anIntArray801!![i_55_] = 2147483647
                                         }
                                     }
@@ -2534,7 +2534,7 @@ class Client : GameAppletFrame() {
         }
 
         fun method109() {
-            for (i in 0..<Class367_Sub4.anInt7319) {
+            for (i in 0..<GlCubemapLightPass.anInt7319) {
                 val `is`: IntArray = TextureMaterialGroup.anIntArrayArray9678!![i]!!
                 for (i_91_ in 0..<RangeThresholdTextureNode.anInt9109) `is`[i_91_] = 0
             }
@@ -2583,14 +2583,14 @@ class Client : GameAppletFrame() {
                 else if (player.aBoolean10551) player.anInt10285 = -1
                 else {
                     player.method2409((-126).toByte())
-                    if ((player.aShort8743) < 0 || (player.aShort8750) < 0 || (player.aShort8751) >= Class367_Sub4.anInt7319 || (player.aShort8747) >= RangeThresholdTextureNode.anInt9109) player.anInt10285 = -1
+                    if ((player.aShort8743) < 0 || (player.aShort8750) < 0 || (player.aShort8751) >= GlCubemapLightPass.anInt7319 || (player.aShort8747) >= RangeThresholdTextureNode.anInt9109) player.anInt10285 = -1
                     else {
                         player.aBoolean10521 = (player.aBoolean10213 && bool)
                         if (player == LocalPlayerState.aPlayer_1907) player.anInt10285 = 2147483647
                         else {
                             var i_114_ = 0
                             if (!player.aBoolean10309) i_114_++
-                            if (player.anInt10223 > Class367_Sub11.anInt7396) i_114_ += 2
+                            if (player.anInt10223 > GlGroundShaderPass.anInt7396) i_114_ += 2
                             i_114_ += 5 - player.method2436(101.toByte()) shl 2
                             if (player.aBoolean10554) i_114_ += 512
                             else {
@@ -2608,11 +2608,11 @@ class Client : GameAppletFrame() {
                 if (!npc!!.method2445((-4).toByte()) || !(npc.aNpcType_10505!!.method796(ProjectedGroundDecor.aVarpStore_10209!!, 18627))) npc.anInt10285 = -1
                 else {
                     npc.method2409((-118).toByte())
-                    if ((npc.aShort8743) < 0 || (npc.aShort8750) < 0 || (npc.aShort8751) >= Class367_Sub4.anInt7319 || (npc.aShort8747) >= RangeThresholdTextureNode.anInt9109) npc.anInt10285 = -1
+                    if ((npc.aShort8743) < 0 || (npc.aShort8750) < 0 || (npc.aShort8751) >= GlCubemapLightPass.anInt7319 || (npc.aShort8747) >= RangeThresholdTextureNode.anInt9109) npc.anInt10285 = -1
                     else {
                         var i_116_ = 0
                         if (!npc.aBoolean10309) i_116_++
-                        if (npc.anInt10223 > Class367_Sub11.anInt7396) i_116_ += 2
+                        if (npc.anInt10223 > GlGroundShaderPass.anInt7396) i_116_ += 2
                         i_116_ += 5 - npc.method2436(82.toByte()) shl 2
                         if (ByteArrayPool.anInt495 == 0) {
                             if (npc.aNpcType_10505!!.aBoolean1362) i_116_ += 64

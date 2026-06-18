@@ -106,9 +106,9 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
                 abstractModel!!.method620(abstractCameraTransform)
                 val class129s = abstractModel.method619()
                 val class342s = abstractModel.method604()
-                if ((aClass318_Sub10_10378 == null || aClass318_Sub10_10378!!.aBoolean6470) && (class129s != null || class342s != null)) aClass318_Sub10_10378 = SceneGraphContainer.Companion.method2526(Class367_Sub11.anInt7396, true)
+                if ((aClass318_Sub10_10378 == null || aClass318_Sub10_10378!!.aBoolean6470) && (class129s != null || class342s != null)) aClass318_Sub10_10378 = SceneGraphContainer.Companion.method2526(GlGroundShaderPass.anInt7396, true)
                 if (aClass318_Sub10_10378 != null) {
-                    aClass318_Sub10_10378!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
+                    aClass318_Sub10_10378!!.method2536(var_renderer, GlGroundShaderPass.anInt7396.toLong(), class129s, class342s, false)
                     aClass318_Sub10_10378!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
                 if (i == -2393) break

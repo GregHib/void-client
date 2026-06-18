@@ -177,7 +177,7 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
                     var class348_sub42_sub20: SpriteRenderEntry? = null
                     if ((widgetRedrawRegions[i]!!.method2685((-13).toByte()).anInt2296) == 1 && SpotAnimEntity.Companion.anInt6450 < 32) {
                         class348_sub42_sub20 = SpriteRenderEntry(widgetRedrawRegions[i], this)
-                        Class367_Sub11.aLongHashTable_7415!!.method335(class348_sub42_sub20, -8098, widgetRedrawRegions[i]!!.anInt4245.toLong())
+                        GlGroundShaderPass.aLongHashTable_7415!!.method335(class348_sub42_sub20, -8098, widgetRedrawRegions[i]!!.anInt4245.toLong())
                         SpotAnimEntity.Companion.anInt6450++
                     }
                     if (class348_sub42_sub20 == null) class348_sub42_sub20 = SpriteRenderEntry(widgetRedrawRegions[i], this)

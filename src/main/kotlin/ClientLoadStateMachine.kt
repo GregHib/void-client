@@ -9,7 +9,7 @@ import OggBitstreamDecoder.Companion.method2965
 import AbstractProceduralTextureNode.Companion.method3038
 import DisplaceTextureNode.Companion.method3063
 import AsyncResourceRequest.Companion.method3256
-import Class367_Sub10.Companion.method3553
+import GlShadowRenderPass.Companion.method3553
 import WorldMapLabel.Companion.method3568
 import ScrollbarComponent.Companion.method184
 import GameClock.method599
@@ -116,7 +116,7 @@ object ClientLoadStateMachine {
             Buffer.method3379(2, 1)
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1029) {
-            for (i_7_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_7_] = method988(RangeThresholdTextureNode.anInt9109, 1, Class367_Sub4.anInt7319)
+            for (i_7_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_7_] = method988(RangeThresholdTextureNode.anInt9109, 1, GlCubemapLightPass.anInt7319)
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1030) {
             CameraRotationStub.aJs5Archive_322 = WorldMapTextLabel.method3571(false, 8, (-23).toByte(), 1)
@@ -125,7 +125,7 @@ object ClientLoadStateMachine {
             DirectionUtil.aJs5Archive_1541 = WorldMapTextLabel.method3571(false, 2, (-23).toByte(), 1)
             IntKeyNode.aJs5Archive_6980 = WorldMapTextLabel.method3571(false, 3, (-23).toByte(), 1)
             ModelFacePriorityNode.aJs5Archive_1878 = WorldMapTextLabel.method3571(false, 4, (-23).toByte(), 1)
-            Class367_Sub10.aJs5Archive_7382 = WorldMapTextLabel.method3571(true, 5, (-23).toByte(), 1)
+            GlShadowRenderPass.aJs5Archive_7382 = WorldMapTextLabel.method3571(true, 5, (-23).toByte(), 1)
             CachedRgbNoiseTexture.aJs5Archive_8667 = WorldMapTextLabel.method3571(true, 6, (-23).toByte(), 1)
             RasterSprite.aJs5Archive_5207 = WorldMapTextLabel.method3571(false, 7, (-23).toByte(), 1)
             WorldMapTextLabel.aJs5Archive_8589 = WorldMapTextLabel.method3571(false, 9, (-23).toByte(), 1)
@@ -146,7 +146,7 @@ object ClientLoadStateMachine {
             ConfigArchiveLoader.aJs5Archive_1434 = WorldMapTextLabel.method3571(false, 25, (-23).toByte(), 1)
             KeyEventNode.aJs5Archive_4770 = WorldMapTextLabel.method3571(true, 26, (-23).toByte(), 1)
             GraphicsOptionState.aJs5Archive_3146 = WorldMapTextLabel.method3571(false, 27, (-23).toByte(), 1)
-            Class367_Sub8.aJs5Archive_7362 = WorldMapTextLabel.method3571(true, 28, (-23).toByte(), 1)
+            FixedFunctionWaterPass.aJs5Archive_7362 = WorldMapTextLabel.method3571(true, 28, (-23).toByte(), 1)
             NodeDeque.aJs5Archive_3323 = WorldMapTextLabel.method3571(false, 29, (-23).toByte(), 1)
             Crc64Hashable.aJs5Archive_4984 = WorldMapTextLabel.method3571(true, 30, (-23).toByte(), 1)
             SpriteLoadValidator.aJs5Archive_4796 = WorldMapTextLabel.method3571(true, 31, (-23).toByte(), 1)
@@ -173,8 +173,8 @@ object ClientLoadStateMachine {
         if (ConnectionStateType.aConnectionStateType_1034 == TimedTileQueueEntry.aConnectionStateType_9660) {
             val i_10_ = BinaryGraphicsOptionState.method1770((-25).toByte())
             if (i_10_ < 100) return i_10_
-            SeqDefinitionCache.method2013(Class367_Sub8.aJs5Archive_7362!!.method415(73.toByte(), 1), 112.toByte())
-            RuntimeException_Sub1.method4012(Class367_Sub8.aJs5Archive_7362!!.method415(73.toByte(), 3), (-111).toByte())
+            SeqDefinitionCache.method2013(FixedFunctionWaterPass.aJs5Archive_7362!!.method415(73.toByte(), 1), 112.toByte())
+            RuntimeException_Sub1.method4012(FixedFunctionWaterPass.aJs5Archive_7362!!.method415(73.toByte(), 3), (-111).toByte())
         }
         if (i != -28660) return 2
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1035) {
@@ -248,7 +248,7 @@ object ClientLoadStateMachine {
             method1063(1)
             GlBufferObject.anInt4737 = IntKeyNode.aJs5Archive_6980!!.method417("loginscreen", i xor 0x6ff3.inv())
             FloorOverlayDefinition.anInt970 = IntKeyNode.aJs5Archive_6980!!.method417("lobbyscreen", 0)
-            Class367_Sub10.aJs5Archive_7382!!.method404(0, true, false)
+            GlShadowRenderPass.aJs5Archive_7382!!.method404(0, true, false)
             CachedRgbNoiseTexture.aJs5Archive_8667!!.method404(0, true, true)
             CameraRotationStub.aJs5Archive_322!!.method404(i + 28660, true, true)
             SoftwareSpriteRaster.aJs5Archive_1627!!.method404(0, true, true)

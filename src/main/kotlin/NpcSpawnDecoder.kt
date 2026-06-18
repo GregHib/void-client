@@ -52,14 +52,14 @@ object NpcSpawnDecoder {
                         val i_11_ = (-RegionMapDecoder.regionTileY + (64 * (0xff and (NullOggStream.anIntArray9042!![i_1_])) - -i_9_))
                         val class79 = (MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(class348_sub49.readUnsignedShort(842397944), -1))
                         val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_5_.toLong(), -6008) as? NpcReference)
-                        if (class348_sub22 == null && (class79.aByte1325.toInt() and 0x1) > 0 && i_7_ == ParticleSystemState.anInt2204 && i_10_ >= 0 && (Class367_Sub4.anInt7319 > i_10_ - -class79.anInt1399) && i_11_ >= 0 && (RangeThresholdTextureNode.anInt9109 > i_11_ + class79.anInt1399)) {
+                        if (class348_sub22 == null && (class79.aByte1325.toInt() and 0x1) > 0 && i_7_ == ParticleSystemState.anInt2204 && i_10_ >= 0 && (GlCubemapLightPass.anInt7319 > i_10_ - -class79.anInt1399) && i_11_ >= 0 && (RangeThresholdTextureNode.anInt9109 > i_11_ + class79.anInt1399)) {
                             val npc = Npc()
                             npc.anInt10290 = i_5_
                             val class348_sub22_12_ = (NpcReference(npc))
                             NpcEntityUpdater.aHashtable_3654!!.method3483(91.toByte(), i_5_.toLong(), class348_sub22_12_)
                             TurbulenceTextureNode.aClass348_Sub22Array9319!![TerrainShadowBuilderGl2.anInt6930++] = class348_sub22_12_
                             RgbColorPalette.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_5_
-                            npc.anInt10306 = Class367_Sub11.anInt7396
+                            npc.anInt10306 = GlGroundShaderPass.anInt7396
                             npc.method2448(class79, -2)
                             npc.method2434(120.toByte(), npc.aNpcType_10505!!.anInt1399)
                             npc.anInt10310 = (npc.aNpcType_10505!!.anInt1329 shl 3)

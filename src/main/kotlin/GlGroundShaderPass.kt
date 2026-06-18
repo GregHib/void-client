@@ -8,7 +8,7 @@ import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import ArbVertexProgram.Companion.method3442
 import java.awt.Container
 
-class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?) : AbstractRenderPass(glRenderDevice) {
+class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?) : AbstractRenderPass(glRenderDevice) {
     private var anInterface18_Impl3_7390: Interface18_Impl3? = null
     private val aBoolean7391: Boolean
     private var aTextureHandle_7392: TextureHandle? = null

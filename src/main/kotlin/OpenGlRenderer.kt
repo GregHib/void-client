@@ -3578,7 +3578,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             SceneNodeDeque.anInt1497++
                         }
                         var i_323_ = RemoveRoofsOptionState.anIntArray6062!![1] + i
-                        if (!(class318_sub1_sub3_sub3.aBoolean10309) && (Class367_Sub11.anInt7396 < class318_sub1_sub3_sub3.anInt10223)) {
+                        if (!(class318_sub1_sub3_sub3.aBoolean10309) && (GlGroundShaderPass.anInt7396 < class318_sub1_sub3_sub3.anInt10223)) {
                             var i_324_ = -1
                             var i_325_ = 1
                             if (i_321_ <= i_322_) {
@@ -3622,7 +3622,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         } else i_323_ -= max((WorldMapLabel.aFontDefinition_4962!!.anInt1988), TimedRecordAccessor.aAbstractModelRendererArray7107!![0]!!.method969())
                         i_323_ -= 2
                         if (!class318_sub1_sub3_sub3.aBoolean10309) {
-                            if (class318_sub1_sub3_sub3.anInt10287 > Class367_Sub11.anInt7396) {
+                            if (class318_sub1_sub3_sub3.anInt10287 > GlGroundShaderPass.anInt7396) {
                                 var class105 = (CameraDistanceOptionState.aAbstractModelRendererArray5857!![(if (class318_sub1_sub3_sub3.aBoolean10226) 2 else 0)]!!)
                                 var class105_332_ = (CameraDistanceOptionState.aAbstractModelRendererArray5857!![(if (!class318_sub1_sub3_sub3.aBoolean10226) 1 else 3)]!!)
                                 var i_333_ = -1
@@ -3649,7 +3649,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         class105 = (abstractModelRenderers[if (!(class318_sub1_sub3_sub3.aBoolean10226)) 0 else 2]!!)
                                     }
                                 }
-                                var i_335_ = (-Class367_Sub11.anInt7396 + class318_sub1_sub3_sub3.anInt10287)
+                                var i_335_ = (-GlGroundShaderPass.anInt7396 + class318_sub1_sub3_sub3.anInt10287)
                                 val i_336_: Int
                                 if (i_335_ > class318_sub1_sub3_sub3.anInt10227) {
                                     i_335_ -= class318_sub1_sub3_sub3.anInt10227
@@ -3716,7 +3716,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 if (class302 != null && class302.anInt3840 == 1 && (class302.anInt3833 == RgbColorPalette.anIntArray1233!![i_322_ - i_321_])) {
                                     val class105 = (CustomCursorsOptionState.aAbstractModelRendererArray5933!![class302.anInt3831])!!
                                     if (class105.method969() > i_342_) i_342_ = class105.method969()
-                                    if (Class367_Sub11.anInt7396 % 20 < 10) {
+                                    if (GlGroundShaderPass.anInt7396 % 20 < 10) {
                                         class105.method974((-12 + i_317_ + RemoveRoofsOptionState.anIntArray6062!![0]), i_323_ + -class105.method969())
                                         MapTileShape.method2663(-5590, (-12 + i_317_ - -RemoveRoofsOptionState.anIntArray6062!![0]), (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ + -12) - -class105.method966()), -class105.method969() + i_323_, (-class105.method969() + (i_323_ - -class105.method980())))
                                     }
@@ -3732,7 +3732,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             var itemModelDefinition: ItemModelDefinition? = null
                             var i_347_ = 0
                             if (i_346_ >= 0) {
-                                if (i_345_ <= Class367_Sub11.anInt7396) {
+                                if (i_345_ <= GlGroundShaderPass.anInt7396) {
                                     i_344_++
                                     continue
                                 }
@@ -3745,10 +3745,10 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             val i_348_ = (class318_sub1_sub3_sub3.anIntArray10304[i_344_])
                             var itemModelDefinition_349_: ItemModelDefinition? = null
                             if (i_348_ >= 0) itemModelDefinition_349_ = FileExistsCondition.aModelDefinitionCache_4782!!.method1601(46, i_348_)
-                            if (-i_347_ + i_345_ <= Class367_Sub11.anInt7396) {
+                            if (-i_347_ + i_345_ <= GlGroundShaderPass.anInt7396) {
                                 val i_350_ = (class318_sub1_sub3_sub3.anIntArray10303[i_344_])
                                 if (i_350_ >= 0) {
-                                    class318_sub1_sub3_sub3.anInt10223 = 300 + Class367_Sub11.anInt7396
+                                    class318_sub1_sub3_sub3.anInt10223 = 300 + GlGroundShaderPass.anInt7396
                                     class318_sub1_sub3_sub3.anInt10295 = i_350_
                                     class318_sub1_sub3_sub3.anIntArray10303[i_344_] = -1
                                 }
@@ -3926,7 +3926,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             i_410_ = i_400_
                                             if (i_369_ > 0) i_400_ += i_369_
                                         }
-                                        val i_413_ = (-Class367_Sub11.anInt7396 + (class318_sub1_sub3_sub3.anIntArray10219[i_344_]))
+                                        val i_413_ = (-GlGroundShaderPass.anInt7396 + (class318_sub1_sub3_sub3.anIntArray10219[i_344_]))
                                         val i_414_ = (-(itemModelDefinition.anInt424 * i_413_ / itemModelDefinition.anInt434) + itemModelDefinition.anInt424)
                                         val i_415_ = (-itemModelDefinition.anInt422 + (itemModelDefinition.anInt422 * i_413_ / itemModelDefinition.anInt434))
                                         val i_416_ = (i_317_ + RemoveRoofsOptionState.anIntArray6062!![0] + -(i_400_ shr 1) - -i_414_)

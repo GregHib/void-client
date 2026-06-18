@@ -1,6 +1,6 @@
 import FlickeringEffectsOptionState.Companion.method1750
 import ProjectedGroundDecor.Companion.method2420
-import Class367_Sub1.Companion.method3535
+import NullRenderPass.Companion.method3535
 
 /* Class348_Sub40 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

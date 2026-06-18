@@ -131,15 +131,15 @@ class ImageFrameCache internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             anInt4028++
             var i_3_ = -1
             var i_4_ = 0
-            if (Class367_Sub11.anInt7396 < class318_sub1_sub3_sub3.anInt10239) DetailLevelOptionState.method1834(class318_sub1_sub3_sub3, (-16).toByte())
-            else if (Class367_Sub11.anInt7396 <= (class318_sub1_sub3_sub3.anInt10300)) method1041(-1, class318_sub1_sub3_sub3)
+            if (GlGroundShaderPass.anInt7396 < class318_sub1_sub3_sub3.anInt10239) DetailLevelOptionState.method1834(class318_sub1_sub3_sub3, (-16).toByte())
+            else if (GlGroundShaderPass.anInt7396 <= (class318_sub1_sub3_sub3.anInt10300)) method1041(-1, class318_sub1_sub3_sub3)
             else {
                 method1600(false, 0, class318_sub1_sub3_sub3)
                 i_3_ = SceneObjectAnimator.anInt3062
                 i_4_ = ScrollingWidgetComponentNode.anInt8387
             }
             if (bool != false) aIntRange_4027 = null
-            if ((class318_sub1_sub3_sub3.x < 512) || class318_sub1_sub3_sub3.y < 512 || (-512 + Class367_Sub4.anInt7319 * 512 <= class318_sub1_sub3_sub3.x) || (-512 + RangeThresholdTextureNode.anInt9109 * 512 <= class318_sub1_sub3_sub3.y)) {
+            if ((class318_sub1_sub3_sub3.x < 512) || class318_sub1_sub3_sub3.y < 512 || (-512 + GlCubemapLightPass.anInt7319 * 512 <= class318_sub1_sub3_sub3.x) || (-512 + RangeThresholdTextureNode.anInt9109 * 512 <= class318_sub1_sub3_sub3.y)) {
                 class318_sub1_sub3_sub3.anInt10291 = -1
                 class318_sub1_sub3_sub3.anInt10300 = 0
                 i_4_ = 0
@@ -152,7 +152,7 @@ class ImageFrameCache internal constructor(i: Int, i_9_: Int, i_10_: Int) {
                 class318_sub1_sub3_sub3.y = (512 * (class318_sub1_sub3_sub3.anIntArray10317!![0]) + class318_sub1_sub3_sub3.method2436(88.toByte()) * 256)
                 class318_sub1_sub3_sub3.method2427(70)
             }
-            if ((LocalPlayerState.aPlayer_1907 == class318_sub1_sub3_sub3) && (class318_sub1_sub3_sub3.x < 6144 || class318_sub1_sub3_sub3.y < 6144 || (class318_sub1_sub3_sub3.x >= 512 * (Class367_Sub4.anInt7319 + -12)) || (512 * (RangeThresholdTextureNode.anInt9109 - 12) <= class318_sub1_sub3_sub3.y))) {
+            if ((LocalPlayerState.aPlayer_1907 == class318_sub1_sub3_sub3) && (class318_sub1_sub3_sub3.x < 6144 || class318_sub1_sub3_sub3.y < 6144 || (class318_sub1_sub3_sub3.x >= 512 * (GlCubemapLightPass.anInt7319 + -12)) || (512 * (RangeThresholdTextureNode.anInt9109 - 12) <= class318_sub1_sub3_sub3.y))) {
                 class318_sub1_sub3_sub3.anInt10291 = -1
                 i_3_ = -1
                 class318_sub1_sub3_sub3.anInt10300 = 0

@@ -153,35 +153,35 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             var i_19_ = 0
             while (DragDropController.aByteArrayArray4281!!.size > i_19_) {
                 if (NativeSprite.anIntArray5192!![i_19_] != -1 && DragDropController.aByteArrayArray4281!![i_19_] == null) {
-                    DragDropController.aByteArrayArray4281!![i_19_] = Class367_Sub10.aJs5Archive_7382!!.method410(-1860, NativeSprite.anIntArray5192!![i_19_], 0)
+                    DragDropController.aByteArrayArray4281!![i_19_] = GlShadowRenderPass.aJs5Archive_7382!!.method410(-1860, NativeSprite.anIntArray5192!![i_19_], 0)
                     if (DragDropController.aByteArrayArray4281!![i_19_] == null) {
                         bool = false
                         LocDefinitionCache.anInt3441++
                     }
                 }
                 if (GameAppletFrame.anIntArray38!![i_19_] != -1 && GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
-                    GlRectangleTexture.aByteArrayArray8642!![i_19_] = (Class367_Sub10.aJs5Archive_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
+                    GlRectangleTexture.aByteArrayArray8642!![i_19_] = (GlShadowRenderPass.aJs5Archive_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
                         LocDefinitionCache.anInt3441++
                         bool = false
                     }
                 }
                 if (LocalizedTextTriple.anIntArray3759!![i_19_] != -1 && ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
-                    ModelFacePriorityNode.aByteArrayArray1887!![i_19_] = Class367_Sub10.aJs5Archive_7382!!.method410(-1860, LocalizedTextTriple.anIntArray3759!![i_19_], 0)
+                    ModelFacePriorityNode.aByteArrayArray1887!![i_19_] = GlShadowRenderPass.aJs5Archive_7382!!.method410(-1860, LocalizedTextTriple.anIntArray3759!![i_19_], 0)
                     if (ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
                         LocDefinitionCache.anInt3441++
                         bool = false
                     }
                 }
                 if (RenderNode.anIntArray9724!![i_19_] != -1 && VorbisOggDecoder.aByteArrayArray8996!![i_19_] == null) {
-                    VorbisOggDecoder.aByteArrayArray8996!![i_19_] = Class367_Sub10.aJs5Archive_7382!!.method410(-1860, RenderNode.anIntArray9724!![i_19_], 0)
+                    VorbisOggDecoder.aByteArrayArray8996!![i_19_] = GlShadowRenderPass.aJs5Archive_7382!!.method410(-1860, RenderNode.anIntArray9724!![i_19_], 0)
                     if (VorbisOggDecoder.aByteArrayArray8996!![i_19_] == null) {
                         bool = false
                         LocDefinitionCache.anInt3441++
                     }
                 }
                 if (ImageFrameCache.anIntArray4031 != null && StringCacheNode.aByteArrayArray7212!![i_19_] == null && ImageFrameCache.anIntArray4031!![i_19_] != -1) {
-                    StringCacheNode.aByteArrayArray7212!![i_19_] = (Class367_Sub10.aJs5Archive_7382!!.method393(ImageFrameCache.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
+                    StringCacheNode.aByteArrayArray7212!![i_19_] = (GlShadowRenderPass.aJs5Archive_7382!!.method393(ImageFrameCache.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (StringCacheNode.aByteArrayArray7212!![i_19_] == null) {
                         bool = false
                         LocDefinitionCache.anInt3441++
@@ -210,7 +210,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                             i_22_ = 10
                             i_21_ = 10
                         }
-                        bool = bool and RegionSceneShifter.method3154(Class367_Sub4.anInt7319, i_21_, (RangeThresholdTextureNode.anInt9109), i_22_, `is`, 39.toByte())
+                        bool = bool and RegionSceneShifter.method3154(GlCubemapLightPass.anInt7319, i_21_, (RangeThresholdTextureNode.anInt9109), i_22_, `is`, 39.toByte())
                     }
                     `is` = VorbisOggDecoder.aByteArrayArray8996!![i_20_]
                     if (`is` != null) {
@@ -220,7 +220,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                             i_24_ = 10
                             i_23_ = 10
                         }
-                        bool = bool and RegionSceneShifter.method3154(Class367_Sub4.anInt7319, i_23_, (RangeThresholdTextureNode.anInt9109), i_24_, `is`, 39.toByte())
+                        bool = bool and RegionSceneShifter.method3154(GlCubemapLightPass.anInt7319, i_23_, (RangeThresholdTextureNode.anInt9109), i_24_, `is`, 39.toByte())
                     }
                 }
                 if (bool) {
@@ -243,7 +243,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) i_27_ = NativeLibraryState.anIntArray168!![MenuActionNode.anInt6769]
                     else i_27_ = (CubeMapMaterialPass.anIntArray6296!![MenuActionNode.anInt6769])
                     if (FacingDirectionNode.aRenderer6654!!.method3670()) i_27_++
-                    RenderbufferObject.method3171(FacingDirectionNode.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, Class367_Sub4.anInt7319, RangeThresholdTextureNode.anInt9109, i_27_, bool_25_, FacingDirectionNode.aRenderer6654!!.method3704() > 0)
+                    RenderbufferObject.method3171(FacingDirectionNode.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, i_27_, bool_25_, FacingDirectionNode.aRenderer6654!!.method3704() > 0)
                     TerrainShadowBuilderGl2.method3018(SequencedActorEntity.anInt10096)
                     if (SequencedActorEntity.anInt10096 != 0) ModelResourceBundle.method3328(WorldMapRenderer.aFont_4684)
                     else ModelResourceBundle.method3328(null)
@@ -264,14 +264,14 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     OutputStream_Sub2.anInt101 = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) -1 else ParticleSystemState.anInt2204
                     IOException_Sub1.aBoolean86 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1
                     NanoTimer.aBoolean845 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i xor 0x7e5d.inv()) == 1
-                    MapTileShape.aClass237_Sub1_4197 = WorldMapSceneSoftware(4, Class367_Sub4.anInt7319, RangeThresholdTextureNode.anInt9109, false)
+                    MapTileShape.aClass237_Sub1_4197 = WorldMapSceneSoftware(4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, false)
                     if (WidgetRedrawTracker.anInt3931 != 0) MapSceneRenderer.method385(false, MapTileShape.aClass237_Sub1_4197, DragDropController.aByteArrayArray4281)
                     else TerrainTileShape.method2727((-65).toByte(), MapTileShape.aClass237_Sub1_4197, (DragDropController.aByteArrayArray4281))
-                    GroundItemRenderState.method1015(Class367_Sub4.anInt7319 shr 4, (RangeThresholdTextureNode.anInt9109 shr 4), true)
+                    GroundItemRenderState.method1015(GlCubemapLightPass.anInt7319 shr 4, (RangeThresholdTextureNode.anInt9109 shr 4), true)
                     LoadingScreenImageNode.method3175((-77).toByte())
                     if (bool_25_) {
                         DoublyLinkedNodeList.method1879(true)
-                        VarpStore.aClass237_Sub1_5067 = WorldMapSceneSoftware(1, Class367_Sub4.anInt7319, RangeThresholdTextureNode.anInt9109, true)
+                        VarpStore.aClass237_Sub1_5067 = WorldMapSceneSoftware(1, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, true)
                         if (WidgetRedrawTracker.anInt3931 == 0) {
                             TerrainTileShape.method2727((-44).toByte(), (VarpStore.aClass237_Sub1_5067), (ModelFacePriorityNode.aByteArrayArray1887))
                             RegionSceneLoader.method2193(true, (-119).toByte())
@@ -318,7 +318,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     else MapSceneCache.method824(0)
                     for (i_30_ in 0..3) {
                         var i_31_ = 0
-                        while (Class367_Sub4.anInt7319 > i_31_) {
+                        while (GlCubemapLightPass.anInt7319 > i_31_) {
                             var i_32_ = 0
                             while (RangeThresholdTextureNode.anInt9109 > i_32_) {
                                 ProjectileSpawner.method1479(i_32_, (-126).toByte(), i_31_, i_30_)
@@ -339,15 +339,15 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         InterfaceComponentGroup.method3243(-122, class348_sub47)
                     }
                     if (WidgetRedrawTracker.anInt3931 == 0) {
-                        val i_33_ = ((Renderer.anInt4581 + -(Class367_Sub4.anInt7319 shr 4)) / 8)
-                        val i_34_ = ((Renderer.anInt4581 - -(Class367_Sub4.anInt7319 shr 4)) / 8)
+                        val i_33_ = ((Renderer.anInt4581 + -(GlCubemapLightPass.anInt7319 shr 4)) / 8)
+                        val i_34_ = ((Renderer.anInt4581 - -(GlCubemapLightPass.anInt7319 shr 4)) / 8)
                         val i_35_ = ((FileIoUtil.anInt4095 + -(RangeThresholdTextureNode.anInt9109 shr 4)) / 8)
                         val i_36_ = (((RangeThresholdTextureNode.anInt9109 shr 4) + FileIoUtil.anInt4095) / 8)
                         for (i_37_ in i_33_ - 1..i_34_ - -1) {
                             for (i_38_ in i_35_ + -1..i_36_ - -1) {
                                 if (i_33_ > i_37_ || i_34_ < i_37_ || i_38_ < i_35_ || i_38_ > i_36_) {
-                                    Class367_Sub10.aJs5Archive_7382!!.method409("m" + i_37_ + "_" + i_38_, true)
-                                    Class367_Sub10.aJs5Archive_7382!!.method409("l" + i_37_ + "_" + i_38_, true)
+                                    GlShadowRenderPass.aJs5Archive_7382!!.method409("m" + i_37_ + "_" + i_38_, true)
+                                    GlShadowRenderPass.aJs5Archive_7382!!.method409("l" + i_37_ + "_" + i_38_, true)
                                 }
                             }
                         }

@@ -91,7 +91,7 @@ object PlayerUpdateDecoder {
                         player.anInt10271 = class348_sub49_sub2.readUnsignedByteSubtract((-104).toByte())
                         player.anInt10210 = 0x7fff and i_9_
                         player.aBoolean10226 = (i_9_ and 0x8000) != 0
-                        player.anInt10287 = (player.anInt10210 + (Class367_Sub11.anInt7396 + (player.anInt10227)))
+                        player.anInt10287 = (player.anInt10210 + (GlGroundShaderPass.anInt7396 + (player.anInt10227)))
                     }
                     if ((0x1000 and i_0_) != 0) {
                         player!!.aString10292 = class348_sub49_sub2!!.readString(110.toByte())
@@ -121,7 +121,7 @@ object PlayerUpdateDecoder {
                                 else i_14_ = -1
                                 val i_16_ = class348_sub49_sub2.readSmart(-123)
                                 val i_17_ = class348_sub49_sub2.readByteAdd((-98).toByte())
-                                player!!.method2438(i_13_, Class367_Sub11.anInt7396, i_14_, i_15_, i_12_, i_16_, i_17_, 102.toByte())
+                                player!!.method2438(i_13_, GlGroundShaderPass.anInt7396, i_14_, i_15_, i_12_, i_16_, i_17_, 102.toByte())
                                 i_11_++
                             }
                         }
@@ -155,8 +155,8 @@ object PlayerUpdateDecoder {
                         player.anInt10314 = class348_sub49_sub2.readByteSubtract(-27697).toInt()
                         player.anInt10241 = class348_sub49_sub2.readByteInverse(-622951480).toInt()
                         player.anInt10288 = class348_sub49_sub2.readByteInverse(-622951480).toInt()
-                        player.anInt10239 = (class348_sub49_sub2.readShortAddLittle(-118) - -Class367_Sub11.anInt7396)
-                        player.anInt10300 = (class348_sub49_sub2.readShortAdd(19) - -Class367_Sub11.anInt7396)
+                        player.anInt10239 = (class348_sub49_sub2.readShortAddLittle(-118) - -GlGroundShaderPass.anInt7396)
+                        player.anInt10300 = (class348_sub49_sub2.readShortAdd(19) - -GlGroundShaderPass.anInt7396)
                         player.anInt10231 = class348_sub49_sub2.readUnsignedByte(255)
                         player.anInt10322 = 0
                         if (player.aBoolean10539) {
@@ -188,8 +188,8 @@ object PlayerUpdateDecoder {
                         player.aByte10206 = class348_sub49_sub2.readByte(-99)
                         player.aByte10270 = class348_sub49_sub2.readByte(-87)
                         player.aByte10279 = class348_sub49_sub2.readUnsignedByte(255).toByte()
-                        player.anInt10248 = (Class367_Sub11.anInt7396 + class348_sub49_sub2.readShortAddLittle(-120))
-                        player.anInt10250 = (Class367_Sub11.anInt7396 + class348_sub49_sub2.readShortAdd(125))
+                        player.anInt10248 = (GlGroundShaderPass.anInt7396 + class348_sub49_sub2.readShortAddLittle(-120))
+                        player.anInt10250 = (GlGroundShaderPass.anInt7396 + class348_sub49_sub2.readShortAdd(125))
                     }
                     if ((i_0_ and 0x80) != 0) {
                         KeyboardLayoutCache.aByteArray3300!![i] = class348_sub49_sub2!!.readByteSubtract(-27697)

@@ -32,8 +32,8 @@ class ConfigFlagUtil {
             val i_0_ = -40 % ((-35 - i) / 51)
             val i_1_ = (if (widgetComponent.anInt698 == 0) widgetComponent.anInt709 else widgetComponent.anInt698)
             val i_2_ = (if (widgetComponent.anInt791 != 0) widgetComponent.anInt791 else widgetComponent.anInt789)
-            Class367_Sub1.method3534(false, widgetComponent.anInt830, i_1_, bool, i_2_, (WarpTextureNode.aWidgetComponentArrayArray9427!![(widgetComponent.anInt830 shr 16)]!!))
-            if (widgetComponent.aWidgetComponentArray798 != null) Class367_Sub1.method3534(false, widgetComponent.anInt830, i_1_, bool, i_2_, widgetComponent.aWidgetComponentArray798!!)
+            NullRenderPass.method3534(false, widgetComponent.anInt830, i_1_, bool, i_2_, (WarpTextureNode.aWidgetComponentArrayArray9427!![(widgetComponent.anInt830 shr 16)]!!))
+            if (widgetComponent.aWidgetComponentArray798 != null) NullRenderPass.method3534(false, widgetComponent.anInt830, i_1_, bool, i_2_, widgetComponent.aWidgetComponentArray798!!)
             val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(widgetComponent.anInt830.toLong(), -6008) as RegionSceneShifter?)
             if (class348_sub41 != null) method1728(i_2_, -1, (class348_sub41.anInt7050), bool, i_1_)
         }

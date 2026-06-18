@@ -1,6 +1,6 @@
 import jagdx.IDirect3DVertexShader
 
-class Class367_Sub5 internal constructor(private var aD3dRenderDevice_7328: D3dRenderDevice, js5Archive: Js5Archive?) : AbstractRenderPass(aD3dRenderDevice_7328) {
+class D3dUnderwaterShaderPass internal constructor(private var aD3dRenderDevice_7328: D3dRenderDevice, js5Archive: Js5Archive?) : AbstractRenderPass(aD3dRenderDevice_7328) {
     private var aBoolean7326 = false
     private val aBoolean7329: Boolean
     private var anIDirect3DVertexShader7330: IDirect3DVertexShader? = null

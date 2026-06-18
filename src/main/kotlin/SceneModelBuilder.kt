@@ -30,7 +30,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                     var `is`: IntArray? = null
                     if (!method1197(-12081, class348_sub42_sub12!!.anInt9608)) {
                         if ((class348_sub42_sub12.anInt9599) == -1) {
-                            if (Class367_Sub8.method3549((class348_sub42_sub12.anInt9608), (-119).toByte())) {
+                            if (FixedFunctionWaterPass.method3549((class348_sub42_sub12.anInt9608), (-119).toByte())) {
                                 val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480((class348_sub42_sub12.aLong9605).toInt().toLong(), -6008)) as NpcReference?)
                                 if (class348_sub22 != null) {
                                     val npc = (class348_sub22.aNpc_6859)!!

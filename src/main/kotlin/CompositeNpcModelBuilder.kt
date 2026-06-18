@@ -213,8 +213,8 @@ class CompositeNpcModelBuilder {
                     abstractModel = var_renderer!!.method3625(modelDefinition, i_36_, HeapDiagnosticsHolder.anInt2251, 64, 850)
                     for (i_49_ in 0..4) {
                         var i_50_ = 0
-                        while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_50_)) {
-                            if ((Class367_Sub2.aShortArrayArrayArray7290!![i_50_]!![i_49_])!!.size > this.anIntArray2095!![i_49_]) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_50_]!![i_49_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_50_]!![i_49_]!![(this.anIntArray2095!![i_49_])]))
+                        while ((GlWaterRenderPass.aShortArrayArrayArray7290!!.size > i_50_)) {
+                            if ((GlWaterRenderPass.aShortArrayArrayArray7290!![i_50_]!![i_49_])!!.size > this.anIntArray2095!![i_49_]) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_50_]!![i_49_]), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_50_]!![i_49_]!![(this.anIntArray2095!![i_49_])]))
                             i_50_++
                         }
                     }
@@ -397,8 +397,8 @@ class CompositeNpcModelBuilder {
                 abstractModel = var_renderer!!.method3625(modelDefinition, i_80_, HeapDiagnosticsHolder.anInt2251, 64, 768)
                 for (i_86_ in 0..4) {
                     var i_87_ = 0
-                    while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_87_)) {
-                        if (this.anIntArray2095!![i_86_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_87_]!![i_86_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_87_]!![i_86_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_87_]!![i_86_]!![(this.anIntArray2095!![i_86_])]))
+                    while ((GlWaterRenderPass.aShortArrayArrayArray7290!!.size > i_87_)) {
+                        if (this.anIntArray2095!![i_86_] < (GlWaterRenderPass.aShortArrayArrayArray7290!![i_87_]!![i_86_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_87_]!![i_86_]), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_87_]!![i_86_]!![(this.anIntArray2095!![i_86_])]))
                         i_87_++
                     }
                 }
@@ -491,8 +491,8 @@ class CompositeNpcModelBuilder {
                 abstractModel = var_renderer!!.method3625(class124, i_108_, HeapDiagnosticsHolder.anInt2251, 64, 768)
                 for (i_110_ in 0..4) {
                     var i_111_ = 0
-                    while ((i_111_ < Class367_Sub2.aShortArrayArrayArray7290!!.size)) {
-                        if (this.anIntArray2095!![i_110_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_111_]!![i_110_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_111_]!![i_110_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_111_]!![i_110_]!![(this.anIntArray2095!![i_110_])]))
+                    while ((i_111_ < GlWaterRenderPass.aShortArrayArrayArray7290!!.size)) {
+                        if (this.anIntArray2095!![i_110_] < (GlWaterRenderPass.aShortArrayArrayArray7290!![i_111_]!![i_110_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_111_]!![i_110_]), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_111_]!![i_110_]!![(this.anIntArray2095!![i_110_])]))
                         i_111_++
                     }
                 }

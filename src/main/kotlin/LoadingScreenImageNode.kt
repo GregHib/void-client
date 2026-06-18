@@ -45,7 +45,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             if (i_5_ < CacheEntryReference.aShort9555) i_5_ = CacheEntryReference.aShort9555.toInt()
             else if (ColourAdjustment.aShort851 < i_5_) i_5_ = ColourAdjustment.aShort851.toInt()
             var i_6_ = 512 * i_5_ * i_3_ / (i_1_ * 334)
-            if (i_6_ >= Class367_Sub8.aShort7355) {
+            if (i_6_ >= FixedFunctionWaterPass.aShort7355) {
                 if (i_6_ > RefCountedHandle.aShort2269) {
                     i_6_ = RefCountedHandle.aShort2269.toInt()
                     i_5_ = i_1_ * i_6_ * 334 / (i_3_ * 512)
@@ -63,7 +63,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
                     }
                 }
             } else {
-                i_6_ = Class367_Sub8.aShort7355.toInt()
+                i_6_ = FixedFunctionWaterPass.aShort7355.toInt()
                 i_5_ = i_6_ * (i_1_ * 334) / (i_3_ * 512)
                 if (ColourAdjustment.aShort851 < i_5_) {
                     i_5_ = ColourAdjustment.aShort851.toInt()
@@ -90,7 +90,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             if (!method3196(WorldMapRenderer.anInt4674, -114) && !method2672(WorldMapRenderer.anInt4674, -103)) {
                 val i_12_ = ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) shr 3)
                 val i_13_ = ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) shr 3)
-                if (i_12_ < 0 || Class367_Sub4.anInt7319 shr 3 <= i_12_ || i_13_ < 0 || (RangeThresholdTextureNode.anInt9109 shr 3 <= i_13_)) AwtKeyboardListener.method2703(0, Class367_Sub4.anInt7319 shr 4, (RangeThresholdTextureNode.anInt9109 shr 4), (-13).toByte())
+                if (i_12_ < 0 || GlCubemapLightPass.anInt7319 shr 3 <= i_12_ || i_13_ < 0 || (RangeThresholdTextureNode.anInt9109 shr 3 <= i_13_)) AwtKeyboardListener.method2703(0, GlCubemapLightPass.anInt7319 shr 4, (RangeThresholdTextureNode.anInt9109 shr 4), (-13).toByte())
                 else AwtKeyboardListener.method2703(5000, i_12_, i_13_, (-13).toByte())
             } else AwtKeyboardListener.method2703(5000, GlslMaterialPass.anInt6246 shr 12, CompositeRgbNoiseTexture.anInt8685 shr 12, (-13).toByte())
             anInt9509++

@@ -1,6 +1,6 @@
 import MinimapRectClipper.method226
 import RemoveRoofsOptionState.Companion.method1813
-import Class367_Sub8.Companion.method3549
+import FixedFunctionWaterPass.Companion.method3549
 import jaclib.memory.Buffer
 
 class NativeIndexBuffer : NativeBufferWrapper, Interface2 {

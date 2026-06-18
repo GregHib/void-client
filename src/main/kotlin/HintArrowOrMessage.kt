@@ -23,7 +23,7 @@ class HintArrowOrMessage internal constructor(i: Int, i_0_: Int, string: String?
             this.aString2033 = string_1_
             this.aString2025 = string_2_
             this.aString2022 = string_3_
-            this.anInt2030 = Class367_Sub11.anInt7396
+            this.anInt2030 = GlGroundShaderPass.anInt7396
             this.aString2024 = string
             this.anInt2027 = i_0_
             this.anInt2026 = i_4_
@@ -38,7 +38,7 @@ class HintArrowOrMessage internal constructor(i: Int, i_0_: Int, string: String?
             anInt2036++
             this.aString2033 = string_7_
             this.aString2024 = string_11_
-            this.anInt2030 = Class367_Sub11.anInt7396
+            this.anInt2030 = GlGroundShaderPass.anInt7396
             this.aString2025 = string
             this.anInt2032 = i
             this.aString2022 = string_8_

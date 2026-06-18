@@ -1,4 +1,4 @@
-import Class367_Sub11.Companion.method3555
+import GlGroundShaderPass.Companion.method3555
 
 /* Class348_Sub1_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

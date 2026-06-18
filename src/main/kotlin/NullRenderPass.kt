@@ -3,7 +3,7 @@ import TwoStateOptionState.Companion.method1843
 /* Class367_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class367_Sub1 internal constructor(var_ha_Sub3: NativeRenderer) : AbstractRenderPass(var_ha_Sub3) {
+class NullRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : AbstractRenderPass(var_ha_Sub3) {
     override fun method3520(i: Byte) {
         anInt7278++
         if (i.toInt() == 87) {

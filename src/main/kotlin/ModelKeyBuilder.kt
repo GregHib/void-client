@@ -126,8 +126,8 @@ class ModelKeyBuilder : LinkedListNode() {
                 abstractModel = var_renderer!!.method3625(modelDefinition, i_28_, ParamMap.anInt9488, 64, 850)
                 if (compositeNpcModelBuilder != null) {
                     for (i_39_ in 0..4) {
-                        for (i_40_ in (Class367_Sub2.aShortArrayArrayArray7290)!!.indices) {
-                            if (compositeNpcModelBuilder.anIntArray2095!![i_39_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_40_]!![i_39_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_]!![(compositeNpcModelBuilder.anIntArray2095!![i_39_])]))
+                        for (i_40_ in (GlWaterRenderPass.aShortArrayArrayArray7290)!!.indices) {
+                            if (compositeNpcModelBuilder.anIntArray2095!![i_39_] < (GlWaterRenderPass.aShortArrayArrayArray7290!![i_40_]!![i_39_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_40_]!![i_39_]), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_40_]!![i_39_]!![(compositeNpcModelBuilder.anIntArray2095!![i_39_])]))
                         }
                     }
                 }

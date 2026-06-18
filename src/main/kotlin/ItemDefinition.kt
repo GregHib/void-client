@@ -279,8 +279,8 @@ class ItemDefinition {
                 if (compositeNpcModelBuilder != null) {
                     for (i_31_ in 0..4) {
                         var i_32_ = 0
-                        while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_32_)) {
-                            if (compositeNpcModelBuilder.anIntArray2095!![i_31_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_32_]!![i_31_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_]!![(compositeNpcModelBuilder.anIntArray2095!![i_31_])]))
+                        while ((GlWaterRenderPass.aShortArrayArrayArray7290!!.size > i_32_)) {
+                            if (compositeNpcModelBuilder.anIntArray2095!![i_31_] < (GlWaterRenderPass.aShortArrayArrayArray7290!![i_32_]!![i_31_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_32_]!![i_31_]), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_32_]!![i_31_]!![(compositeNpcModelBuilder.anIntArray2095!![i_31_])]))
                             i_32_++
                         }
                     }
@@ -348,8 +348,8 @@ class ItemDefinition {
             if (compositeNpcModelBuilder != null) {
                 for (i_44_ in 0..4) {
                     var i_45_ = 0
-                    while ((i_45_ < Class367_Sub2.aShortArrayArrayArray7290!!.size)) {
-                        if ((Class367_Sub2.aShortArrayArrayArray7290!![i_45_]!![i_44_])!!.size > compositeNpcModelBuilder.anIntArray2095!![i_44_]) class124.method1098((SpriteLoadValidator.aShortArrayArray4791!![i_45_]!![i_44_]), 126.toByte(), (Class367_Sub2.aShortArrayArrayArray7290!![i_45_]!![i_44_]!![(compositeNpcModelBuilder.anIntArray2095!![i_44_])]))
+                    while ((i_45_ < GlWaterRenderPass.aShortArrayArrayArray7290!!.size)) {
+                        if ((GlWaterRenderPass.aShortArrayArrayArray7290!![i_45_]!![i_44_])!!.size > compositeNpcModelBuilder.anIntArray2095!![i_44_]) class124.method1098((SpriteLoadValidator.aShortArrayArray4791!![i_45_]!![i_44_]), 126.toByte(), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_45_]!![i_44_]!![(compositeNpcModelBuilder.anIntArray2095!![i_44_])]))
                         i_45_++
                     }
                 }

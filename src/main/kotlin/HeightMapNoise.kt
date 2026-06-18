@@ -1,5 +1,5 @@
 import ObjectSpawnDecoder.method1088
-import Class367_Sub10.Companion.method3553
+import GlShadowRenderPass.Companion.method3553
 import MapSceneRenderer.method384
 
 /* Class301 - Decompiled by JODE
@@ -43,11 +43,11 @@ object HeightMapNoise {
 
     fun method2280(i: Byte, i_20_: Int) {
         anInt3826++
-        if (RegionSceneLoader.aByteArrayArrayArray3700 == null) RegionSceneLoader.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(Class367_Sub4.anInt7319) { ByteArray(RangeThresholdTextureNode.anInt9109) } })
+        if (RegionSceneLoader.aByteArrayArrayArray3700 == null) RegionSceneLoader.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(GlCubemapLightPass.anInt7319) { ByteArray(RangeThresholdTextureNode.anInt9109) } })
         if (i_20_ != 28587) method2278(35, -47, 56.toByte(), -93)
         for (i_21_ in 0..3) {
             var i_22_ = 0
-            while (Class367_Sub4.anInt7319 > i_22_) {
+            while (GlCubemapLightPass.anInt7319 > i_22_) {
                 var i_23_ = 0
                 while ((RangeThresholdTextureNode.anInt9109 > i_23_)) {
                     RegionSceneLoader.aByteArrayArrayArray3700!![i_21_]!![i_22_]!![i_23_] = i

@@ -654,14 +654,14 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                             } else break
                             break@while_230_
                         }
-                    } else return Class367_Sub3(this)
-                    return Class367_Sub4(this)
+                    } else return BasicGlRenderPass(this)
+                    return GlCubemapLightPass(this)
                 } while (false)
-                return Class367_Sub8(this, this.aNormalMapGenerator_7937)
+                return FixedFunctionWaterPass(this, this.aNormalMapGenerator_7937)
             } while (false)
-            return Class367_Sub10(this)
+            return GlShadowRenderPass(this)
         } while (false)
-        return Class367_Sub1(this)
+        return NullRenderPass(this)
     }
 
     fun method3833(i: Byte): Int {
@@ -2891,7 +2891,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         fun method3824(i: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int) {
             var i_36_ = i_36_
             anInt7933++
-            if (i_37_ >= 0 && i >= 0 && -1 + Class367_Sub4.anInt7319 > i_37_ && (i < -1 + RangeThresholdTextureNode.anInt9109)) {
+            if (i_37_ >= 0 && i >= 0 && -1 + GlCubemapLightPass.anInt7319 > i_37_ && (i < -1 + RangeThresholdTextureNode.anInt9109)) {
                 if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) return
                 if (i_41_ == 0) {
                     val interface10 = method3297(i_40_, i_37_, i) as Interface10?

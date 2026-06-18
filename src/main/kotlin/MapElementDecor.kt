@@ -106,9 +106,9 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                 val class129s = abstractModel.method619()
                 val class342s = abstractModel.method604()
                 if (i == -1) {
-                    if ((aClass318_Sub10_10341 == null || (aClass318_Sub10_10341!!.aBoolean6470)) && (class129s != null || class342s != null)) aClass318_Sub10_10341 = SceneGraphContainer.Companion.method2526(Class367_Sub11.anInt7396, true)
+                    if ((aClass318_Sub10_10341 == null || (aClass318_Sub10_10341!!.aBoolean6470)) && (class129s != null || class342s != null)) aClass318_Sub10_10341 = SceneGraphContainer.Companion.method2526(GlGroundShaderPass.anInt7396, true)
                     if (aClass318_Sub10_10341 == null) break
-                    aClass318_Sub10_10341!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
+                    aClass318_Sub10_10341!!.method2536(var_renderer, GlGroundShaderPass.anInt7396.toLong(), class129s, class342s, false)
                     aClass318_Sub10_10341!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
             } catch (runtimeexception: RuntimeException) {
@@ -293,10 +293,10 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         if (i.toInt() != -7) method2462(63, -7, -14)
                         val class262 = method758(var_renderer)
                         method2312(-13084, 0, class262, 0, var_renderer)
-                        if (Class367_Sub9.anInt7379 > 0) {
+                        if (GlEnvMappedWaterPass.anInt7379 > 0) {
                             ClientLoadStateMachine.anInt2173--
                             if (ClientLoadStateMachine.anInt2173 == 0) {
-                                Class367_Sub9.anInt7379--
+                                GlEnvMappedWaterPass.anInt7379--
                                 ClientLoadStateMachine.anInt2173 = 20
                             }
                         }
@@ -324,10 +324,10 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
             if (i == 3613) {
                 var i_31_ = 0
                 var i_32_ = 0
-                while (Class367_Sub4.anInt7319 > i_32_) {
+                while (GlCubemapLightPass.anInt7319 > i_32_) {
                     var i_33_ = 0
                     while (RangeThresholdTextureNode.anInt9109 > i_33_) {
-                        if (Class367_Sub4.method3542(i_33_, HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029, i_32_, 0, i_31_, true)) i_31_++
+                        if (GlCubemapLightPass.method3542(i_33_, HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029, i_32_, 0, i_31_, true)) i_31_++
                         if (i_31_ >= 512) return
                         i_33_++
                     }

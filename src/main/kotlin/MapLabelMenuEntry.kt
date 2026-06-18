@@ -77,13 +77,13 @@ class MapLabelMenuEntry : AbstractMenuEntry() {
         fun method1041(i: Int, class318_sub1_sub3_sub3: ProjectedGroundDecor) {
             anInt5790++
             var bool = false
-            if ((Class367_Sub11.anInt7396 != class318_sub1_sub3_sub3.anInt10300) && class318_sub1_sub3_sub3.anInt10286 != -1 && class318_sub1_sub3_sub3.anInt10218 == 0) {
+            if ((GlGroundShaderPass.anInt7396 != class318_sub1_sub3_sub3.anInt10300) && class318_sub1_sub3_sub3.anInt10286 != -1 && class318_sub1_sub3_sub3.anInt10218 == 0) {
                 val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835((class318_sub1_sub3_sub3.anInt10286), i + 8)
                 if (class17.aBoolean241 || ((class17.anIntArray267!![(class318_sub1_sub3_sub3.anInt10267)]) < 1 + (class318_sub1_sub3_sub3.anInt10232))) bool = true
             } else bool = true
             if (bool) {
                 val i_4_ = ((class318_sub1_sub3_sub3.anInt10300) + -(class318_sub1_sub3_sub3.anInt10239))
-                val i_5_ = (Class367_Sub11.anInt7396 + -(class318_sub1_sub3_sub3.anInt10239))
+                val i_5_ = (GlGroundShaderPass.anInt7396 + -(class318_sub1_sub3_sub3.anInt10239))
                 val i_6_ = ((class318_sub1_sub3_sub3.anInt10293) * 512 + 256 * class318_sub1_sub3_sub3.method2436(90.toByte()))
                 val i_7_ = (512 * (class318_sub1_sub3_sub3.anInt10314) - -(class318_sub1_sub3_sub3.method2436(44.toByte()) * 256))
                 val i_8_ = (512 * (class318_sub1_sub3_sub3.anInt10241) + 256 * class318_sub1_sub3_sub3.method2436(98.toByte()))

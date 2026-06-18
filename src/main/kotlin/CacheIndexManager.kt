@@ -94,7 +94,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
         fun method2354(namedIdRecord: NamedIdRecord?, i: Int): Boolean {
             anInt3954++
             if (i != -1) method2355(-93, 115.toByte(), true, null, -92, -67, 6)
-            return Class367_Sub8.aNamedIdRecord_7361 == namedIdRecord || SpriteArchiveLoader.aNamedIdRecord_382 == namedIdRecord || GroundItemRenderState.aNamedIdRecord_1657 == namedIdRecord || namedIdRecord == WidgetRedrawRegion.aNamedIdRecord_4246
+            return FixedFunctionWaterPass.aNamedIdRecord_7361 == namedIdRecord || SpriteArchiveLoader.aNamedIdRecord_382 == namedIdRecord || GroundItemRenderState.aNamedIdRecord_1657 == namedIdRecord || namedIdRecord == WidgetRedrawRegion.aNamedIdRecord_4246
         }
 
         @JvmStatic

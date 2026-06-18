@@ -103,7 +103,7 @@ class ColourAdjustment {
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.method3383(1809639944, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 + -i_3_))
                     InterfaceComponentGroup.method3243(2, class348_sub47)
                     RenderableEntry.anInt4337 = -3
-                    Class367_Sub2.anInt7297 = 1
+                    GlWaterRenderPass.anInt7297 = 1
                     HostPingThread.anInt2264 = 0
                     AnimatedModelRenderer.anInt8398 = 0
                     if (i >= 13) break

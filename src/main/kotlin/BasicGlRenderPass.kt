@@ -1,7 +1,7 @@
 /* Class367_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class367_Sub3 internal constructor(var_ha_Sub3: NativeRenderer) : AbstractRenderPass(var_ha_Sub3) {
+class BasicGlRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : AbstractRenderPass(var_ha_Sub3) {
     override fun method3525(i: Int, bool: Boolean) {
         this.aHa_Sub3_4479.method3943(true, i + -47145)
         anInt7306++

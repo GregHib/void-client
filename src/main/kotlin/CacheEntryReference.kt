@@ -81,8 +81,8 @@ abstract class CacheEntryReference internal constructor(@JvmField var anInt9545:
             Tooltip.anInt4458 = -1
             CacheArchiveIndexLoader.method338(i + 45, StreamingResourceRequest.anInt10447)
             LocalPlayerState.aPlayer_1907 = Player()
-            LocalPlayerState.aPlayer_1907!!.x = 512 * Class367_Sub4.anInt7319 / 2
-            LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0] = Class367_Sub4.anInt7319 / 2
+            LocalPlayerState.aPlayer_1907!!.x = 512 * GlCubemapLightPass.anInt7319 / 2
+            LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0] = GlCubemapLightPass.anInt7319 / 2
             LocalPlayerState.aPlayer_1907!!.y = 512 * RangeThresholdTextureNode.anInt9109 / 2
             LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0] = RangeThresholdTextureNode.anInt9109 / 2
             CompositeRgbNoiseTexture.anInt8685 = 0

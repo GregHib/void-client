@@ -423,7 +423,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                                 i_67_ += modelFacePriorityNodeS_73_.size
                                 i_68_++
                             }
-                            if (((this.aClass318_Sub10_10327) == null || this.aClass318_Sub10_10327!!.aBoolean6470) && (i_68_ > 0 || i_70_ > 0)) this.aClass318_Sub10_10327 = SceneGraphContainer.method2526((Class367_Sub11.anInt7396), true)
+                            if (((this.aClass318_Sub10_10327) == null || this.aClass318_Sub10_10327!!.aBoolean6470) && (i_68_ > 0 || i_70_ > 0)) this.aClass318_Sub10_10327 = SceneGraphContainer.method2526((GlGroundShaderPass.anInt7396), true)
                             if ((this.aClass318_Sub10_10327) != null) {
                                 val `object`: Any? = null
                                 val modelFacePriorityNodeS_75_: Array<ModelFacePriorityNode?>?
@@ -461,11 +461,11 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                                     }
                                     if (widgetRedrawRegionS_74_ != null) ArrayCopyUtil.method1575(widgetRedrawRegionS_74_, 0, widgetRedrawRegionS_78_, i_79_, widgetRedrawRegionS_74_.size)
                                 }
-                                this.aClass318_Sub10_10327!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), modelFacePriorityNodeS_75_, widgetRedrawRegionS_78_, false)
+                                this.aClass318_Sub10_10327!!.method2536(var_renderer, GlGroundShaderPass.anInt7396.toLong(), modelFacePriorityNodeS_75_, widgetRedrawRegionS_78_, false)
                             }
                             this.aBoolean10318 = true
                         }
-                    } else if ((this.aClass318_Sub10_10327) != null) this.aClass318_Sub10_10327!!.method2540(Class367_Sub11.anInt7396.toLong())
+                    } else if ((this.aClass318_Sub10_10327) != null) this.aClass318_Sub10_10327!!.method2540(GlGroundShaderPass.anInt7396.toLong())
                     if (this.aClass318_Sub10_10327 == null) break
                     this.aClass318_Sub10_10327!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
@@ -555,7 +555,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 }
             }
         }
-        val i_96_ = Class367_Sub11.anInt7396
+        val i_96_ = GlGroundShaderPass.anInt7396
         if (i_89_ != -1012294866) method2423(84, 124, 113)
         if (bool) {
             this.anInt10276 = 1

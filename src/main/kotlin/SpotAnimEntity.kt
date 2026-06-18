@@ -289,12 +289,12 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 ActorEntity.aSoundChannelMixer_8764 = soundChannelMixer
                 NodeDequeHolder.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                 MinimapTileEntry.aJs5Archive_611 = js5Archive
-                Class367_Sub9.aJs5Archive_7371 = js5Archive_6_
+                GlEnvMappedWaterPass.aJs5Archive_7371 = js5Archive_6_
                 MapElementLookup.aJs5Archive_4147 = js5Archive_5_
-                Class367_Sub3.anIntArray7299 = IntArray(16)
+                BasicGlRenderPass.anIntArray7299 = IntArray(16)
                 if (bool != false) anInt6451 = 71
                 anInt6442++
-                for (i in 0..15) Class367_Sub3.anIntArray7299!![i] = 255
+                for (i in 0..15) BasicGlRenderPass.anIntArray7299!![i] = 255
                 return true
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("rba.G(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + (if (js5Archive_5_ != null) "{...}" else "null") + ',' + bool + ',' + (if (soundChannelMixer != null) "{...}" else "null") + ',' + (if (js5Archive_6_ != null) "{...}" else "null") + ')'))

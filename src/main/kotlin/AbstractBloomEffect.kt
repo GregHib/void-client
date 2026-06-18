@@ -91,9 +91,9 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
         fun method2755(i: Int, i_7_: Int, i_8_: Int) {
             anInt6629++
             if ((SpriteDefinition.anInt7068.inv()) != i) {
-                if (i_8_ >= 0) Class367_Sub3.anIntArray7299!![i_8_] = i_7_
+                if (i_8_ >= 0) BasicGlRenderPass.anIntArray7299!![i_8_] = i_7_
                 else {
-                    for (i_9_ in 0..15) Class367_Sub3.anIntArray7299!![i_9_] = i_7_
+                    for (i_9_ in 0..15) BasicGlRenderPass.anIntArray7299!![i_9_] = i_7_
                 }
             }
             NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2843(i_7_, i_8_, -7836)
@@ -102,7 +102,7 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
         @JvmStatic
         fun method2757(i: Int) {
             anInt6620++
-            if (Class367_Sub2.anInt7297 != 0) {
+            if (GlWaterRenderPass.anInt7297 != 0) {
                 try {
                     if (i >= 82) {
                         if (++HostPingThread.anInt2264 > 2000) {
@@ -111,33 +111,33 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
                                 PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
                             }
                             if (AnimatedModelRenderer.anInt8398 >= 2) {
-                                Class367_Sub2.anInt7297 = 0
+                                GlWaterRenderPass.anInt7297 = 0
                                 RenderableEntry.anInt4337 = -5
                                 return
                             }
                             ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
-                            Class367_Sub2.anInt7297 = 1
+                            GlWaterRenderPass.anInt7297 = 1
                             HostPingThread.anInt2264 = 0
                             AnimatedModelRenderer.anInt8398++
                         }
-                        if (Class367_Sub2.anInt7297 == 1) {
+                        if (GlWaterRenderPass.anInt7297 == 1) {
                             FrameStatsReset.aLinkedQueueNode_5800 = (ModelHeaderCache.aServerConnectionInfo_3285!!.method1262(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!, 36.toByte()))
-                            Class367_Sub2.anInt7297 = 2
+                            GlWaterRenderPass.anInt7297 = 2
                         }
-                        if (Class367_Sub2.anInt7297 == 2) {
+                        if (GlWaterRenderPass.anInt7297 == 2) {
                             if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 == 2) throw IOException()
                             if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 != 1) return
                             PerlinNoiseTextureNode.aAbstractGameSocket_9165 = NullOggStream.method2982(((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket), 24.toByte(), 7500)
                             FrameStatsReset.aLinkedQueueNode_5800 = null
                             method1802(0)
-                            Class367_Sub2.anInt7297 = 4
+                            GlWaterRenderPass.anInt7297 = 4
                         }
-                        if (Class367_Sub2.anInt7297 == 4) {
+                        if (GlWaterRenderPass.anInt7297 == 4) {
                             if (PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 104)) {
                                 PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 0, (-116).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                                 val i_11_ = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                                 RenderableEntry.anInt4337 = i_11_
-                                Class367_Sub2.anInt7297 = 0
+                                GlWaterRenderPass.anInt7297 = 0
                                 PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
                                 PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
                             }
@@ -152,10 +152,10 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
                         ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
                         HostPingThread.anInt2264 = 0
                         AnimatedModelRenderer.anInt8398++
-                        Class367_Sub2.anInt7297 = 1
+                        GlWaterRenderPass.anInt7297 = 1
                     } else {
                         RenderableEntry.anInt4337 = -4
-                        Class367_Sub2.anInt7297 = 0
+                        GlWaterRenderPass.anInt7297 = 0
                     }
                 }
             }

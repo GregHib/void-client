@@ -864,10 +864,10 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                         if (i_59_ == 8) break
                         break@while_237_
                     }
-                } else return Class367_Sub11(this, this.aJs5Archive_8039)
-                return Class367_Sub2(this, this.aJs5Archive_8039, this.aNormalMapGenerator_7937)
+                } else return GlGroundShaderPass(this, this.aJs5Archive_8039)
+                return GlWaterRenderPass(this, this.aJs5Archive_8039, this.aNormalMapGenerator_7937)
             } while (false)
-            return Class367_Sub9(this, this.aJs5Archive_8039, this.aNormalMapGenerator_7937)
+            return GlEnvMappedWaterPass(this, this.aJs5Archive_8039, this.aNormalMapGenerator_7937)
         } while (false)
         return super.method3832(i, (-73).toByte())
     }

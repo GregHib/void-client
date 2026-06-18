@@ -71,7 +71,7 @@ class DetailLevelOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1834(class318_sub1_sub3_sub3: ProjectedGroundDecor, i: Byte) {
             anInt6125++
-            val i_2_ = (class318_sub1_sub3_sub3.anInt10239 - Class367_Sub11.anInt7396)
+            val i_2_ = (class318_sub1_sub3_sub3.anInt10239 - GlGroundShaderPass.anInt7396)
             if (i < 0) {
                 val i_3_ = ((class318_sub1_sub3_sub3.anInt10293) * 512 + 256 * class318_sub1_sub3_sub3.method2436(73.toByte()))
                 val i_4_ = (512 * (class318_sub1_sub3_sub3.anInt10314) - -(class318_sub1_sub3_sub3.method2436(114.toByte()) * 256))

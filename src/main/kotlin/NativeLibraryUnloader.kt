@@ -131,10 +131,10 @@ object NativeLibraryUnloader {
             }
             MenuActionNode.method2811(false)
         }
-        if (Class367_Sub9.anInt7379 > 0) {
+        if (GlEnvMappedWaterPass.anInt7379 > 0) {
             ClientLoadStateMachine.anInt2173--
             if (ClientLoadStateMachine.anInt2173 == 0) {
-                Class367_Sub9.anInt7379--
+                GlEnvMappedWaterPass.anInt7379--
                 ClientLoadStateMachine.anInt2173 = 100
             }
         } else {

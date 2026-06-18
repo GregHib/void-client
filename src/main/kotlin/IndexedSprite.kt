@@ -85,7 +85,7 @@ class IndexedSprite : Sprite {
         @JvmStatic
         fun method165(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Byte, i_13_: Int, i_14_: Int) {
             anInt5194++
-            if (i_9_ < 512 || i_11_ < 512 || (-2 + Class367_Sub4.anInt7319) * 512 < i_9_ || (-2 + RangeThresholdTextureNode.anInt9109) * 512 < i_11_) {
+            if (i_9_ < 512 || i_11_ < 512 || (-2 + GlCubemapLightPass.anInt7319) * 512 < i_9_ || (-2 + RangeThresholdTextureNode.anInt9109) * 512 < i_11_) {
                 RemoveRoofsOptionState.anIntArray6062!![1] = -1
                 RemoveRoofsOptionState.anIntArray6062!![0] = RemoveRoofsOptionState.anIntArray6062!![1]
             } else if (i_12_ >= 22) {

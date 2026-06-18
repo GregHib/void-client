@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glUniform4fARB
 import jaggl.OpenGL.Companion.glUseProgramObjectARB
 import kotlin.math.abs
 
-class Class367_Sub9 internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?, normalMapGenerator: NormalMapGenerator?) : AbstractRenderPass(glRenderDevice) {
+class GlEnvMappedWaterPass internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?, normalMapGenerator: NormalMapGenerator?) : AbstractRenderPass(glRenderDevice) {
     private var aNativeBufferHandle_7369: NativeBufferHandle? = null
     private var aBoolean7373 = false
     private var aNormalMapGenerator_7375: NormalMapGenerator? = null

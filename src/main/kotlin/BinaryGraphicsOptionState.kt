@@ -83,15 +83,15 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1770(i: Byte): Int {
             anInt5957++
-            if (Class367_Sub8.anInt7365 == 0) {
+            if (FixedFunctionWaterPass.anInt7365 == 0) {
                 SlotBinding.aSlotBinding_3401!!.method2025(ConfigVarProgress("jaclib"), false)
                 if (SlotBinding.aSlotBinding_3401!!.method2027(119)!!.method31(28) != 100) return 1
                 if (!(SlotBinding.aSlotBinding_3401!!.method2027(71) as ConfigVarProgress).method2313(124)) NpcType.aClient1367!!.method97(i + 24)
-                Class367_Sub8.anInt7365 = 1
+                FixedFunctionWaterPass.anInt7365 = 1
             }
-            if (Class367_Sub8.anInt7365 == 1) {
+            if (FixedFunctionWaterPass.anInt7365 == 1) {
                 Crc64Hashable.aSlotBindingArray4987 = SlotBinding.method2029(110)
-                SlotBinding.aSlotBinding_3396!!.method2025(MapArchiveSource(Class367_Sub8.aJs5Archive_7362!!), false)
+                SlotBinding.aSlotBinding_3396!!.method2025(MapArchiveSource(FixedFunctionWaterPass.aJs5Archive_7362!!), false)
                 SlotBinding.aSlotBinding_3402!!.method2025(ConfigVarProgress("jaggl"), false)
                 SlotBinding.aSlotBinding_3403!!.method2025(ConfigVarProgress("jagdx"), false)
                 SlotBinding.aSlotBinding_3404!!.method2025(ConfigVarProgress("jagmisc"), false)
@@ -129,7 +129,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                     i_5_ += i_8_ * i_7_ / 100
                 }
                 GradientMapTextureNode.anInt9327 = i_5_
-                Class367_Sub8.anInt7365 = 2
+                FixedFunctionWaterPass.anInt7365 = 2
             }
             if (Crc64Hashable.aSlotBindingArray4987 == null) return 100
             var i_9_ = 0

@@ -449,7 +449,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
             }
             if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) != 0) {
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
-                Class367_Sub10.method3553(false, 120.toByte(), 0)
+                GlShadowRenderPass.method3553(false, 120.toByte(), 0)
             }
             GlCubeMapTexture.method243(37)
             return i_6_

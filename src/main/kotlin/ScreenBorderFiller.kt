@@ -1,4 +1,4 @@
-import Class367_Sub9.Companion.method3551
+import GlEnvMappedWaterPass.Companion.method3551
 import java.awt.Color
 import java.awt.Container
 import java.awt.Rectangle

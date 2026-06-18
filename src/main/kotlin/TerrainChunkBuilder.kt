@@ -49,8 +49,8 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                 var i_13_ = 0
                 i_10_ = anInt1544 + anInt1559 * i_9_
                 if (aHa_Sub3_1561!!.method3880(MovementDirection.aMovementDirection_1183, (ClampTextureNode.aTextureFormatInfo_9471), 122.toByte())) {
-                    if (Class367_Sub11.aByteArray7394 == null) Class367_Sub11.aByteArray7394 = ByteArray(16384)
-                    val is_14_ = Class367_Sub11.aByteArray7394!!
+                    if (GlGroundShaderPass.aByteArray7394 == null) GlGroundShaderPass.aByteArray7394 = ByteArray(16384)
+                    val is_14_ = GlGroundShaderPass.aByteArray7394!!
                     for (i_15_ in -128..-1) {
                         for (i_16_ in -128..-1) {
                             if (`is`[i_10_].toInt() == 0) {
@@ -66,9 +66,9 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                         i_10_ += -128 + aVideoStreamDecoder_1560.anInt4113
                     }
                     if (anInterface18_Impl3_1556 == null) {
-                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3944((Class367_Sub11.aByteArray7394), 128, (ClampTextureNode.aTextureFormatInfo_9471), i xor 0x31d8.inv(), false, 128)
+                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3944((GlGroundShaderPass.aByteArray7394), 128, (ClampTextureNode.aTextureFormatInfo_9471), i xor 0x31d8.inv(), false, 128)
                         anInterface18_Impl3_1556!!.method66(false, false, i xor 0x5582.inv())
-                    } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (Class367_Sub11.aByteArray7394), (ClampTextureNode.aTextureFormatInfo_9471))
+                    } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (GlGroundShaderPass.aByteArray7394), (ClampTextureNode.aTextureFormatInfo_9471))
                 } else {
                     if (Bzip2DecoderState.anIntArray543 == null) Bzip2DecoderState.anIntArray543 = IntArray(16384)
                     val is_18_ = Bzip2DecoderState.anIntArray543!!

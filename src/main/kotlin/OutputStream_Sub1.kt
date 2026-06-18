@@ -39,7 +39,7 @@ class OutputStream_Sub1 : OutputStream() {
             var i_3_ = i_3_
             anInt94++
             if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) FacingDirectionNode.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
-            else if (LocalPlayerState.aPlayer_1907!!.x < 0 || (LocalPlayerState.aPlayer_1907!!.x >= Class367_Sub4.anInt7319 * 512) || LocalPlayerState.aPlayer_1907!!.y < 0 || (512 * RangeThresholdTextureNode.anInt9109 <= LocalPlayerState.aPlayer_1907!!.y)) FacingDirectionNode.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
+            else if (LocalPlayerState.aPlayer_1907!!.x < 0 || (LocalPlayerState.aPlayer_1907!!.x >= GlCubemapLightPass.anInt7319 * 512) || LocalPlayerState.aPlayer_1907!!.y < 0 || (512 * RangeThresholdTextureNode.anInt9109 <= LocalPlayerState.aPlayer_1907!!.y)) FacingDirectionNode.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
             else {
                 TextureQualityOptionState.anInt6006++
                 if (LocalPlayerState.aPlayer_1907 != null && MediaStreamClient.anInt3203 == (LocalPlayerState.aPlayer_1907!!.x + -(256 * LocalPlayerState.aPlayer_1907!!.method2436(90.toByte())) - -256) shr 9 && TerrainChunkBuilder.anInt1548 == (LocalPlayerState.aPlayer_1907!!.y + 256 + -(256 * LocalPlayerState.aPlayer_1907!!.method2436(112.toByte()))) shr 9) {
@@ -133,12 +133,12 @@ class OutputStream_Sub1 : OutputStream() {
                             BlankTextureNode.anIntArray9259,
                             i_16_,
                             ConnectionStateType.anIntArray1045,
-                            Class367_Sub11.anInt7396,
+                            GlGroundShaderPass.anInt7396,
                             true,
                             LocalPlayerState.anInt1906
                         )
                     } else GlTexture3D.method1960(
-                        Class367_Sub11.anInt7396,
+                        GlGroundShaderPass.anInt7396,
                         GlslMaterialPass.anInt6246,
                         ParticleSystemRenderer.anInt3855,
                         CompositeRgbNoiseTexture.anInt8685,

@@ -616,10 +616,10 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
                         if (8 == i_65_) break
                         break@while_234_
                     }
-                } else return Class367_Sub5(this, this.aJs5Archive_8039)
-                return Class367_Sub6(this, this.aJs5Archive_8039, this.aNormalMapGenerator_7937)
+                } else return D3dUnderwaterShaderPass(this, this.aJs5Archive_8039)
+                return D3dWaterShaderPass(this, this.aJs5Archive_8039, this.aNormalMapGenerator_7937)
             } while (false)
-            return Class367_Sub7(this, this.aJs5Archive_8039, this.aNormalMapGenerator_7937!!)
+            return D3dEnvMappedWaterPass(this, this.aJs5Archive_8039, this.aNormalMapGenerator_7937!!)
         } while (false)
         return super.method3832(i, (-74).toByte())
     }

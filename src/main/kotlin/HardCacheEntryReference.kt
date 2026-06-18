@@ -12,7 +12,7 @@ import GlVertexBufferArb.Companion.method2127
 import TileSceneEntity.Companion.method2396
 import Font.Companion.method2570
 import KeyedCacheEntryReference.Companion.method3203
-import Class367_Sub8.Companion.method3546
+import FixedFunctionWaterPass.Companion.method3546
 import GlRenderDevice.Companion.method3965
 import InputStream_Sub2.Companion.method128
 import java.io.IOException
@@ -145,7 +145,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     ObjectSpawnDecoder.aStringArray1808!![ContactEntry.anInt9604] = string_4_
                     WeaveTextureNode.aStringArray9275!![(ContactEntry.anInt9604)] = string_5_
                     IndexedSprite.aStringArray5197!![ContactEntry.anInt9604] = string_6_
-                    Class367_Sub3.aBooleanArray7304!![ContactEntry.anInt9604] = NpcSummaryDefinition.method1166(i, 2) == 2
+                    BasicGlRenderPass.aBooleanArray7304!![ContactEntry.anInt9604] = NpcSummaryDefinition.method1166(i, 2) == 2
                     ContactEntry.anInt9604++
                 }
                 Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
@@ -410,7 +410,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                             }
                             if (bool_45_) {
                                 if (bool_41_) {
-                                    npc.anInt10211 = i_39_ + Class367_Sub11.anInt7396
+                                    npc.anInt10211 = i_39_ + GlGroundShaderPass.anInt7396
                                     npc.anInt10260 = i_37_
                                     npc.anInt10291 = i_38_
                                     npc.anInt10289 = i_43_
@@ -418,8 +418,8 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                     npc.anInt10273 = 0
                                     npc.anInt10276 = 1
                                     npc.anInt10224 = 0
-                                    if (npc.anInt10211 > Class367_Sub11.anInt7396) npc.anInt10224 = -1
-                                    if (npc.anInt10291 != -1 && (Class367_Sub11.anInt7396 == (npc.anInt10211))) {
+                                    if (npc.anInt10211 > GlGroundShaderPass.anInt7396) npc.anInt10224 = -1
+                                    if (npc.anInt10291 != -1 && (GlGroundShaderPass.anInt7396 == (npc.anInt10211))) {
                                         val i_51_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(103.toByte(), (npc.anInt10291)).anInt4503)
                                         if (i_51_ != -1) {
                                             val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_51_, 7)
@@ -432,11 +432,11 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                     npc.anInt10269 = i_38_
                                     npc.anInt10240 = 0
                                     npc.anInt10278 = i_43_
-                                    npc.anInt10225 = Class367_Sub11.anInt7396 + i_39_
+                                    npc.anInt10225 = GlGroundShaderPass.anInt7396 + i_39_
                                     npc.anInt10237 = i_42_
                                     npc.anInt10283 = 1
-                                    if (npc.anInt10225 > Class367_Sub11.anInt7396) npc.anInt10240 = -1
-                                    if (npc.anInt10269 != -1 && (Class367_Sub11.anInt7396 == (npc.anInt10225))) {
+                                    if (npc.anInt10225 > GlGroundShaderPass.anInt7396) npc.anInt10240 = -1
+                                    if (npc.anInt10269 != -1 && (GlGroundShaderPass.anInt7396 == (npc.anInt10225))) {
                                         val i_50_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(87.toByte(), (npc.anInt10269)).anInt4503)
                                         if (i_50_ != -1) {
                                             val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_50_, 7)
@@ -483,11 +483,11 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                     player.anInt10273 = 0
                                     player.anInt10276 = 1
                                     player.anInt10291 = i_38_
-                                    player.anInt10211 = i_39_ + Class367_Sub11.anInt7396
+                                    player.anInt10211 = i_39_ + GlGroundShaderPass.anInt7396
                                     player.anInt10202 = i_42_
-                                    if (player.anInt10211 > Class367_Sub11.anInt7396) player.anInt10224 = -1
+                                    if (player.anInt10211 > GlGroundShaderPass.anInt7396) player.anInt10224 = -1
                                     if (player.anInt10291 == 65535) player.anInt10291 = -1
-                                    if ((player.anInt10291 != -1) && ((player.anInt10211) == Class367_Sub11.anInt7396)) {
+                                    if ((player.anInt10291 != -1) && ((player.anInt10211) == GlGroundShaderPass.anInt7396)) {
                                         val i_58_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(45.toByte(), (player.anInt10291)).anInt4503)
                                         if (i_58_ != -1) {
                                             val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_58_, 7)
@@ -502,10 +502,10 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                     player.anInt10278 = i_43_
                                     player.anInt10237 = i_42_
                                     player.anInt10283 = 1
-                                    player.anInt10225 = i_39_ + Class367_Sub11.anInt7396
+                                    player.anInt10225 = i_39_ + GlGroundShaderPass.anInt7396
                                     if (player.anInt10269 == 65535) player.anInt10269 = -1
-                                    if (Class367_Sub11.anInt7396 < (player.anInt10225)) player.anInt10240 = -1
-                                    if ((player.anInt10269 != -1) && (Class367_Sub11.anInt7396 == (player.anInt10225))) {
+                                    if (GlGroundShaderPass.anInt7396 < (player.anInt10225)) player.anInt10240 = -1
+                                    if ((player.anInt10269 != -1) && (GlGroundShaderPass.anInt7396 == (player.anInt10225))) {
                                         val i_59_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(81.toByte(), (player.anInt10269)).anInt4503)
                                         if (i_59_ != -1) {
                                             val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_59_, 7)
@@ -520,12 +520,12 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     val i_60_ = (i_40_ and 0x33705717) shr 28
                     val i_61_ = -ArbVertexProgram.regionTileX + ((0xffff4fe and i_40_) shr 14)
                     val i_62_ = -RegionMapDecoder.regionTileY + (0x3fff and i_40_)
-                    if (i_61_ >= 0 && i_62_ >= 0 && Class367_Sub4.anInt7319 > i_61_ && RangeThresholdTextureNode.anInt9109 > i_62_) {
+                    if (i_61_ >= 0 && i_62_ >= 0 && GlCubemapLightPass.anInt7319 > i_61_ && RangeThresholdTextureNode.anInt9109 > i_62_) {
                         val i_63_ = 256 + 512 * i_61_
                         val i_64_ = 512 * i_62_ + 256
                         var i_65_ = i_60_
                         if (i_65_ < 3 && NpcType.method802(i_62_, i_61_, true)) i_65_++
-                        val class318_sub1_sub3_sub4 = (MapElementDecor(i_38_, i_39_, Class367_Sub11.anInt7396, i_60_, i_65_, i_63_, -i_37_ + CollisionMapAccessor.method2064(i_63_, i_60_, 11219, i_64_), i_64_, i_61_, i_61_, i_62_, i_62_, i_42_))
+                        val class318_sub1_sub3_sub4 = (MapElementDecor(i_38_, i_39_, GlGroundShaderPass.anInt7396, i_60_, i_65_, i_63_, -i_37_ + CollisionMapAccessor.method2064(i_63_, i_60_, 11219, i_64_), i_64_, i_61_, i_61_, i_62_, i_62_, i_42_))
                         OpenGlRenderNode.aNodeDeque_10492!!.method1999(ChatScriptListNode(class318_sub1_sub3_sub4), -20180)
                     }
                 }
@@ -672,7 +672,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return false
             }
 
-            if (Class367_Sub4.aIntRange_7323 == ModelVertexColorBuffer.aIntRange_6584) {
+            if (GlCubemapLightPass.aIntRange_7323 == ModelVertexColorBuffer.aIntRange_6584) {
                 SynthVoiceGroup.method2822(-101, CircleRasterizer.aClass348_Sub49_Sub2_3813!!, RadialTextureNode.anInt9341)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
@@ -690,7 +690,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == Class367_Sub4.aIntRange_7324) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == GlCubemapLightPass.aIntRange_7324) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 val i_79_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-120)
                 val i_80_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
@@ -1014,7 +1014,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     var i_123_ = 0x3fff and i
                     i_123_ -= RegionMapDecoder.regionTileY
                     if (i_122_ >= 0) {
-                        if (Class367_Sub4.anInt7319 <= i_122_) i_122_ = Class367_Sub4.anInt7319
+                        if (GlCubemapLightPass.anInt7319 <= i_122_) i_122_ = GlCubemapLightPass.anInt7319
                     } else i_122_ = 0
                     NativeLibraryState.anInt167 = (i_122_ shl 9) - -256
                     if (i_123_ >= 0) {
@@ -1113,7 +1113,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     WeaveTextureNode.aStringArray9275!![i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(84.toByte())
                     IndexedSprite.aStringArray5197!![i] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-111).toByte())
                     if (IndexedSprite.aStringArray5197!![i] == "") IndexedSprite.aStringArray5197!![i] = WeaveTextureNode.aStringArray9275!![i]
-                    Class367_Sub3.aBooleanArray7304!![i] = false
+                    BasicGlRenderPass.aBooleanArray7304!![i] = false
                     i++
                 }
                 Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
@@ -1312,7 +1312,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (Class367_Sub8.aIntRange_7363 == ModelVertexColorBuffer.aIntRange_6584) {
+            if (FixedFunctionWaterPass.aIntRange_7363 == ModelVertexColorBuffer.aIntRange_6584) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 if (i == 65535) i = -1
                 val i_163_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
@@ -1400,7 +1400,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == Class367_Sub9.aIntRange_7367) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == GlEnvMappedWaterPass.aIntRange_7367) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 val i_182_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-122).toByte())
                 val i_183_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-95).toByte())
@@ -1457,7 +1457,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     val i_191_ = -RegionMapDecoder.regionTileY + i_190_
                     if (i == GradientLookupEffect.anInt9200 && BufferedMessageQueue.anInt3581 <= i_189_ && 8 + BufferedMessageQueue.anInt3581 > i_189_ && FileExistsCondition.anInt4786 <= i_191_ && FileExistsCondition.anInt4786 - -8 > i_191_) {
                         class348_sub37.method2715(89.toByte())
-                        if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367_Sub4.anInt7319 && (i_191_ < RangeThresholdTextureNode.anInt9109)) ProjectileSpawner.method1479(i_191_, (-118).toByte(), i_189_, GradientLookupEffect.anInt9200)
+                        if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < GlCubemapLightPass.anInt7319 && (i_191_ < RangeThresholdTextureNode.anInt9109)) ProjectileSpawner.method1479(i_191_, (-118).toByte(), i_189_, GradientLookupEffect.anInt9200)
                     }
                     class348_sub37 = (ModelBatchBase.aHashtable_1895!!.method3482(0) as? HashTableContainer?)
                 }
@@ -1689,7 +1689,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (Class367_Sub11.aIntRange_7398 == ModelVertexColorBuffer.aIntRange_6584) {
+            if (GlGroundShaderPass.aIntRange_7398 == ModelVertexColorBuffer.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-124).toByte())
                 val i_226_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 WallSceneEntity.method2397((-124).toByte())
@@ -1702,7 +1702,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (Class367_Sub3.aIntRange_7301 == ModelVertexColorBuffer.aIntRange_6584) {
+            if (BasicGlRenderPass.aIntRange_7301 == ModelVertexColorBuffer.aIntRange_6584) {
                 val bool_227_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(89.toByte())
                 var string_228_ = string

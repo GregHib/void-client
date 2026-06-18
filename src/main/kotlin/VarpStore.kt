@@ -1,6 +1,6 @@
 import ChatEffectsOptionState.Companion.method1730
 import MidiSequencePlayer.Companion.method2862
-import Class367_Sub8.Companion.method3548
+import FixedFunctionWaterPass.Companion.method3548
 import WorldMapElement.Companion.method181
 import GameClock.method599
 import TrigLookupTables.Companion.method726
@@ -279,8 +279,8 @@ class VarpStore : Interface17 {
                     npc.anInt10314 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt()
                     npc.anInt10241 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-128).toInt()
                     npc.anInt10288 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt()
-                    npc.anInt10239 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false) + Class367_Sub11.anInt7396)
-                    npc.anInt10300 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(12) - -Class367_Sub11.anInt7396)
+                    npc.anInt10239 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false) + GlGroundShaderPass.anInt7396)
+                    npc.anInt10300 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(12) - -GlGroundShaderPass.anInt7396)
                     npc.anInt10231 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(66.toByte())
                     npc.anInt10314 += npc.anIntArray10317!![0]
                     npc.anInt10322 = 0
@@ -294,8 +294,8 @@ class VarpStore : Interface17 {
                     npc.aByte10206 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697)
                     npc.aByte10270 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(i + -622885944)
                     npc.aByte10279 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255).toByte()
-                    npc.anInt10248 = Class367_Sub11.anInt7396 + CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    npc.anInt10250 = Class367_Sub11.anInt7396 + CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    npc.anInt10248 = GlGroundShaderPass.anInt7396 + CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    npc.anInt10250 = GlGroundShaderPass.anInt7396 + CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 }
                 if ((i_40_ and 0x40) != 0) {
                     val i_58_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-100).toByte())
@@ -315,7 +315,7 @@ class VarpStore : Interface17 {
                             else i_63_ = -1
                             val i_64_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readSmart(-122)
                             val i_65_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                            npc.method2438(i_61_, Class367_Sub11.anInt7396, i_63_, i_62_, i_60_, i_64_, i_65_, 124.toByte())
+                            npc.method2438(i_61_, GlGroundShaderPass.anInt7396, i_63_, i_62_, i_60_, i_64_, i_65_, 124.toByte())
                             i_59_++
                         }
                     }
@@ -334,7 +334,7 @@ class VarpStore : Interface17 {
                     npc.anInt10271 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-88).toByte())
                     npc.anInt10210 = 0x7fff and i_66_
                     npc.aBoolean10226 = (0x8000 and i_66_) != 0
-                    npc.anInt10287 = (npc.anInt10227 + Class367_Sub11.anInt7396 + npc.anInt10210)
+                    npc.anInt10287 = (npc.anInt10227 + GlGroundShaderPass.anInt7396 + npc.anInt10210)
                 }
                 if ((i_40_ and 0x400) != 0) {
                     var i_67_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)

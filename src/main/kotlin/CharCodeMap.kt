@@ -1,7 +1,7 @@
 import LinkedListIterator.Companion.method1242
 import BoundsConstraintEntry.Companion.method2057
 import CollisionMapAccessor.method2064
-import Class367_Sub4.Companion.method3542
+import GlCubemapLightPass.Companion.method3542
 import MinimapSquareDrawer.Companion.method462
 
 /* Class348_Sub42_Sub11 - Decompiled by JODE
@@ -122,7 +122,7 @@ class CharCodeMap : HashLinkedListNode() {
             anInt9589++
             if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) == 2) {
                 val i_5_ = (0xff and -4 + TextureQualityOptionState.anInt6006).toByte()
-                val i_6_ = TextureQualityOptionState.anInt6006 % Class367_Sub4.anInt7319
+                val i_6_ = TextureQualityOptionState.anInt6006 % GlCubemapLightPass.anInt7319
                 for (i_7_ in 0..3) {
                     var i_8_ = 0
                     while (RangeThresholdTextureNode.anInt9109 > i_8_) {
@@ -158,7 +158,7 @@ class CharCodeMap : HashLinkedListNode() {
                                 val i_17_: Int
                                 if (i_15_ <= i_13_) i_17_ = -i_15_ + i_13_
                                 else i_17_ = i_15_ + -i_13_
-                                if (i_16_ == 0 && i_17_ == 0 || -Class367_Sub4.anInt7319 >= i_16_ || (Class367_Sub4.anInt7319 <= i_16_) || i_17_ <= -RangeThresholdTextureNode.anInt9109 || RangeThresholdTextureNode.anInt9109 <= i_17_) method1242(("RC: " + i_12_ + "," + i_13_ + " " + i_14_ + "," + i_15_ + " " + ArbVertexProgram.regionTileX + "," + RegionMapDecoder.regionTileY), null, 15004)
+                                if (i_16_ == 0 && i_17_ == 0 || -GlCubemapLightPass.anInt7319 >= i_16_ || (GlCubemapLightPass.anInt7319 <= i_16_) || i_17_ <= -RangeThresholdTextureNode.anInt9109 || RangeThresholdTextureNode.anInt9109 <= i_17_) method1242(("RC: " + i_12_ + "," + i_13_ + " " + i_14_ + "," + i_15_ + " " + ArbVertexProgram.regionTileX + "," + RegionMapDecoder.regionTileY), null, 15004)
                                 else if (i_16_ <= i_17_) {
                                     val i_18_ = i_16_ * 65536 / i_17_
                                     var i_19_ = 32768

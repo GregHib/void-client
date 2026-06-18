@@ -312,7 +312,7 @@ class Npc : ProjectedGroundDecor() {
         val i_37_ = class225.anInt2932
         val i_38_ = class225.anInt2941
         if (i_37_ != 0 || i_38_ != 0 || class225.anInt2950 != 0 || class225.anInt2926 != 0) i_34_ = i_34_ or 0x7
-        val bool = (this.aByte10279.toInt() != 0 && (Class367_Sub11.anInt7396 >= this.anInt10248) && (Class367_Sub11.anInt7396 < this.anInt10250))
+        val bool = (this.aByte10279.toInt() != 0 && (GlGroundShaderPass.anInt7396 >= this.anInt10248) && (GlGroundShaderPass.anInt7396 < this.anInt10250))
         if (bool) i_34_ = i_34_ or 0x80000
         val i_39_ = this.aCompassSmoother_10217.method2019((-25).toByte())
         val class64 = (this.aNpcType_10505!!.method800(i_39_, this.aLoadProgressCountersArray10308, ParticleEmitterNode.aWidgetCache_191, false, class17_36_, this.anInt10203, OpenGlModel.aNpcDefinitionCache_5558, this.anInt10267, class17, aVarpStore_10209, var_renderer, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232).also { this.aAbstractModelArray10323[0] = it })

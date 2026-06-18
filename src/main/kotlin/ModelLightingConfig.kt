@@ -186,7 +186,7 @@ class ModelLightingConfig {
                 if (MapRegionLoader.anInt1272 > i_8_ || i_7_ > MapRegionLoader.anInt1276 || i_10_ < MapRegionLoader.anInt1262 || i_9_ > MapRegionLoader.anInt1268) return true
                 MapRegionLoader.method745(var_renderer!!, class348_sub21!!, structConfig)
                 if (abstractModelRenderer != null) {
-                    if (Class367_Sub9.anInt7379 > 0 && ((HslAdjustTextureNode.anInt9399 != -1 && (HslAdjustTextureNode.anInt9399 == class348_sub21.anInt6847)) || (SkeletalAnimFrameLoader.anInt481 != -1 && (structConfig.anInt596 == SkeletalAnimFrameLoader.anInt481)))) {
+                    if (GlEnvMappedWaterPass.anInt7379 > 0 && ((HslAdjustTextureNode.anInt9399 != -1 && (HslAdjustTextureNode.anInt9399 == class348_sub21.anInt6847)) || (SkeletalAnimFrameLoader.anInt481 != -1 && (structConfig.anInt596 == SkeletalAnimFrameLoader.anInt481)))) {
                         val i_25_: Int
                         if (ClientLoadStateMachine.anInt2173 <= 50) i_25_ = 2 * ClientLoadStateMachine.anInt2173
                         else i_25_ = -(ClientLoadStateMachine.anInt2173 * 2) + 200

@@ -92,7 +92,7 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
             BloomGraphicsOptionState.anInt5973 = i_5_
             MinimapFlagRenderer.anInt1797 = i_4_
             RenderableEntry.anInt4336 = i_3_
-            Class367_Sub11.anInt7403 = i_6_
+            GlGroundShaderPass.anInt7403 = i_6_
             anInt9598++
             ClanChatRequestSender.anInt3647 = i
             if (BloomGraphicsOptionState.anInt5973 >= 100) {

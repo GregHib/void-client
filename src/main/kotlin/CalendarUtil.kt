@@ -42,7 +42,7 @@ object CalendarUtil {
         anInt4137++
         MinimapRenderer.aHashtable_1585!!.method3481(0)
         OpenGlTerrainTile.aLinkedNodeListIterator_8241!!.method1009(2110355138)
-        Class367_Sub4.aLinkedNodeListIterator_7325!!.method1009(2110355138)
+        GlCubemapLightPass.aLinkedNodeListIterator_7325!!.method1009(2110355138)
     }
 
     @JvmStatic

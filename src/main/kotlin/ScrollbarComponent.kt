@@ -137,12 +137,12 @@ open class ScrollbarComponent(js5Archive: Js5Archive, js5Archive_0_: Js5Archive,
             ProjectileFactory.anIntArrayArray2900!![i_18_]!![i_19_] = 0
             var i_22_ = 0
             var i_23_ = 0
-            Class367_Sub11.anIntArray7397!![i_22_] = i_16_
+            GlGroundShaderPass.anIntArray7397!![i_22_] = i_16_
             CircleDrawer.anIntArray2694!![i_22_++] = i_17_
             val `is` = collisionMap.anIntArrayArray4438!!
             while (i_22_ != i_23_) {
                 i_17_ = CircleDrawer.anIntArray2694!![i_23_]
-                i_16_ = Class367_Sub11.anIntArray7397!![i_23_]
+                i_16_ = GlGroundShaderPass.anIntArray7397!![i_23_]
                 val i_24_ = -collisionMap.anInt4441 + i_17_
                 i_18_ = -i_20_ + i_16_
                 i_19_ = i_17_ - i_21_
@@ -206,56 +206,56 @@ open class ScrollbarComponent(js5Archive: Js5Archive, js5Archive_0_: Js5Archive,
                 } while (false)
                 i_26_ = 1 + ProjectileFactory.anIntArrayArray2900!![i_18_]!![i_19_]
                 if (i_18_ > 0 && (RenderNode.anIntArrayArray9723!![i_18_ + -1]!![i_19_] == 0) && (`is`[-1 + i_25_]!![i_24_] and 0x42240000) == 0) {
-                    Class367_Sub11.anIntArray7397!![i_22_] = -1 + i_16_
+                    GlGroundShaderPass.anIntArray7397!![i_22_] = -1 + i_16_
                     CircleDrawer.anIntArray2694!![i_22_] = i_17_
                     i_22_ = 0xfff and i_22_ - -1
                     RenderNode.anIntArrayArray9723!![i_18_ + -1]!![i_19_] = 2
                     ProjectileFactory.anIntArrayArray2900!![-1 + i_18_]!![i_19_] = i_26_
                 }
                 if (i_18_ < 127 && RenderNode.anIntArrayArray9723!![1 + i_18_]!![i_19_] == 0 && (0x60240000 and `is`[1 + i_25_]!![i_24_]) == 0) {
-                    Class367_Sub11.anIntArray7397!![i_22_] = i_16_ + 1
+                    GlGroundShaderPass.anIntArray7397!![i_22_] = i_16_ + 1
                     CircleDrawer.anIntArray2694!![i_22_] = i_17_
                     RenderNode.anIntArrayArray9723!![1 + i_18_]!![i_19_] = 8
                     i_22_ = 0xfff and i_22_ - -1
                     ProjectileFactory.anIntArrayArray2900!![1 + i_18_]!![i_19_] = i_26_
                 }
                 if (i_19_ > 0 && (RenderNode.anIntArrayArray9723!![i_18_]!![i_19_ + -1] == 0) && (`is`[i_25_]!![i_24_ - 1] and 0x40a40000) == 0) {
-                    Class367_Sub11.anIntArray7397!![i_22_] = i_16_
+                    GlGroundShaderPass.anIntArray7397!![i_22_] = i_16_
                     CircleDrawer.anIntArray2694!![i_22_] = -1 + i_17_
                     RenderNode.anIntArrayArray9723!![i_18_]!![-1 + i_19_] = 1
                     i_22_ = 0xfff and 1 + i_22_
                     ProjectileFactory.anIntArrayArray2900!![i_18_]!![-1 + i_19_] = i_26_
                 }
                 if (i_19_ < 127 && RenderNode.anIntArrayArray9723!![i_18_]!![1 + i_19_] == 0 && (0x48240000 and `is`[i_25_]!![i_24_ - -1]) == 0) {
-                    Class367_Sub11.anIntArray7397!![i_22_] = i_16_
+                    GlGroundShaderPass.anIntArray7397!![i_22_] = i_16_
                     CircleDrawer.anIntArray2694!![i_22_] = i_17_ + 1
                     RenderNode.anIntArrayArray9723!![i_18_]!![i_19_ - -1] = 4
                     i_22_ = 0xfff and i_22_ + 1
                     ProjectileFactory.anIntArrayArray2900!![i_18_]!![i_19_ + 1] = i_26_
                 }
                 if (i_18_ > 0 && i_19_ > 0 && RenderNode.anIntArrayArray9723!![-1 + i_18_]!![i_19_ + -1] == 0 && (`is`[-1 + i_25_]!![i_24_ - 1] and 0x43a40000) == 0 && (`is`[-1 + i_25_]!![i_24_] and 0x42240000) == 0 && (0x40a40000 and `is`[i_25_]!![i_24_ - 1]) == 0) {
-                    Class367_Sub11.anIntArray7397!![i_22_] = -1 + i_16_
+                    GlGroundShaderPass.anIntArray7397!![i_22_] = -1 + i_16_
                     CircleDrawer.anIntArray2694!![i_22_] = i_17_ - 1
                     i_22_ = 1 + i_22_ and 0xfff
                     RenderNode.anIntArrayArray9723!![i_18_ + -1]!![-1 + i_19_] = 3
                     ProjectileFactory.anIntArrayArray2900!![i_18_ + -1]!![-1 + i_19_] = i_26_
                 }
                 if (i_18_ < 127 && i_19_ > 0 && (RenderNode.anIntArrayArray9723!![i_18_ + 1]!![i_19_ - 1] == 0) && (0x60e40000 and `is`[i_25_ - -1]!![i_24_ + -1]) == 0 && (`is`[1 + i_25_]!![i_24_] and 0x60240000) == 0 && (`is`[i_25_]!![-1 + i_24_] and 0x40a40000) == 0) {
-                    Class367_Sub11.anIntArray7397!![i_22_] = i_16_ + 1
+                    GlGroundShaderPass.anIntArray7397!![i_22_] = i_16_ + 1
                     CircleDrawer.anIntArray2694!![i_22_] = i_17_ - 1
                     i_22_ = 0xfff and 1 + i_22_
                     RenderNode.anIntArrayArray9723!![1 + i_18_]!![-1 + i_19_] = 9
                     ProjectileFactory.anIntArrayArray2900!![1 + i_18_]!![i_19_ + -1] = i_26_
                 }
                 if (i_18_ > 0 && i_19_ < 127 && RenderNode.anIntArrayArray9723!![-1 + i_18_]!![i_19_ - -1] == 0 && (`is`[i_25_ + -1]!![i_24_ - -1] and 0x4e240000) == 0 && (0x42240000 and `is`[i_25_ - 1]!![i_24_]) == 0 && (0x48240000 and `is`[i_25_]!![1 + i_24_]) == 0) {
-                    Class367_Sub11.anIntArray7397!![i_22_] = i_16_ - 1
+                    GlGroundShaderPass.anIntArray7397!![i_22_] = i_16_ - 1
                     CircleDrawer.anIntArray2694!![i_22_] = i_17_ + 1
                     RenderNode.anIntArrayArray9723!![i_18_ + -1]!![i_19_ - -1] = 6
                     i_22_ = 1 + i_22_ and 0xfff
                     ProjectileFactory.anIntArrayArray2900!![-1 + i_18_]!![1 + i_19_] = i_26_
                 }
                 if (i_18_ < 127 && i_19_ < 127 && (RenderNode.anIntArrayArray9723!![1 + i_18_]!![1 + i_19_] == 0) && (0x78240000 and `is`[i_25_ - -1]!![1 + i_24_]) == 0 && (0x60240000 and `is`[1 + i_25_]!![i_24_]) == 0 && (0x48240000 and `is`[i_25_]!![i_24_ - -1]) == 0) {
-                    Class367_Sub11.anIntArray7397!![i_22_] = i_16_ - -1
+                    GlGroundShaderPass.anIntArray7397!![i_22_] = i_16_ - -1
                     CircleDrawer.anIntArray2694!![i_22_] = 1 + i_17_
                     RenderNode.anIntArrayArray9723!![1 + i_18_]!![i_19_ + 1] = 12
                     i_22_ = 0xfff and 1 + i_22_

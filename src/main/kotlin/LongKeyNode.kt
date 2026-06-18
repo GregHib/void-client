@@ -88,7 +88,7 @@ class LongKeyNode : LinkedListNode {
         fun method2808(i: Int, var_renderer: Renderer?, bool: Boolean): Boolean {
             try {
                 anInt6763++
-                val i_5_ = (-104 + Class367_Sub4.anInt7319) / 2
+                val i_5_ = (-104 + GlCubemapLightPass.anInt7319) / 2
                 val i_6_ = (RangeThresholdTextureNode.anInt9109 - 104) / 2
                 var bool_7_ = bool
                 for (i_8_ in i_5_..<104 + i_5_) {
@@ -259,10 +259,10 @@ class LongKeyNode : LinkedListNode {
                             if ((LocalPlayerState.aPlayer_1907!!.plane).toInt() == i_52_ shr 28) {
                                 val i_53_ = ((i_52_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX)
                                 val i_54_ = (i_52_ and 0x3fff) + -RegionMapDecoder.regionTileY
-                                if (i_53_ >= 0 && i_53_ < Class367_Sub4.anInt7319 && i_54_ >= 0 && (RangeThresholdTextureNode.anInt9109 > i_54_)) ModelWallEntity.aNodeDeque_10125!!.method1999(IntKeyNode(i_51_), -20180)
+                                if (i_53_ >= 0 && i_53_ < GlCubemapLightPass.anInt7319 && i_54_ >= 0 && (RangeThresholdTextureNode.anInt9109 > i_54_)) ModelWallEntity.aNodeDeque_10125!!.method1999(IntKeyNode(i_51_), -20180)
                                 else {
                                     val class42 = (TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1225((OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3239!![i_51_]), 120.toByte()))
-                                    if (class42!!.anIntArray591 != null && (i_53_ + class42.anInt595 >= 0) && (Class367_Sub4.anInt7319 > class42.anInt603 + i_53_) && i_54_ + class42.anInt570 >= 0 && (RangeThresholdTextureNode.anInt9109 > (i_54_ - -class42.anInt607))) ModelWallEntity.aNodeDeque_10125!!.method1999(IntKeyNode(i_51_), -20180)
+                                    if (class42!!.anIntArray591 != null && (i_53_ + class42.anInt595 >= 0) && (GlCubemapLightPass.anInt7319 > class42.anInt603 + i_53_) && i_54_ + class42.anInt570 >= 0 && (RangeThresholdTextureNode.anInt9109 > (i_54_ - -class42.anInt607))) ModelWallEntity.aNodeDeque_10125!!.method1999(IntKeyNode(i_51_), -20180)
                                 }
                             }
                         }

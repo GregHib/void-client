@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glEnable
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import ArbVertexProgram.Companion.method3442
 
-class Class367_Sub2 internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?, normalMapGenerator: NormalMapGenerator?) : AbstractRenderPass(glRenderDevice) {
+class GlWaterRenderPass internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?, normalMapGenerator: NormalMapGenerator?) : AbstractRenderPass(glRenderDevice) {
     private val aTextureHandle_7293: TextureHandle?
     private val aNormalMapGenerator_7294: NormalMapGenerator?
     private var aGlRenderDevice_7296: GlRenderDevice? = null
@@ -145,7 +145,7 @@ class Class367_Sub2 internal constructor(glRenderDevice: GlRenderDevice, js5Arch
                                 ObjectSpawnDecoder.aStringArray1808!![i_10_] = ObjectSpawnDecoder.aStringArray1808!![1 + i_10_]
                                 WeaveTextureNode.aStringArray9275!![i_10_] = (WeaveTextureNode.aStringArray9275!![1 + i_10_])
                                 IndexedSprite.aStringArray5197!![i_10_] = IndexedSprite.aStringArray5197!![1 + i_10_]
-                                Class367_Sub3.Companion.aBooleanArray7304!![i_10_] = Class367_Sub3.Companion.aBooleanArray7304!![i_10_ - -1]
+                                BasicGlRenderPass.Companion.aBooleanArray7304!![i_10_] = BasicGlRenderPass.Companion.aBooleanArray7304!![i_10_ - -1]
                                 i_10_++
                             }
                             GlVertexBufferArb.anInt8493++

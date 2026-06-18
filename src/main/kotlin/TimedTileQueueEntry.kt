@@ -23,7 +23,7 @@ class TimedTileQueueEntry internal constructor(i: Int, i_2_: Int) : HashLinkedLi
     fun method3246(i: Int) {
         this.aLong7057 = this.aLong7057 or 0x7fffffffffffffffL.inv()
         anInt9653++
-        if (method3250((-89).toByte()) == 0L) Class367_Sub4.aLinkedNodeListIterator_7325!!.method1005(true, this)
+        if (method3250((-89).toByte()) == 0L) GlCubemapLightPass.aLinkedNodeListIterator_7325!!.method1005(true, this)
         if (i != -25490) aAbstractModelRenderer_9659 = null
     }
 

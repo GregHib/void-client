@@ -1,4 +1,4 @@
-import Class367_Sub10.Companion.method3553
+import GlShadowRenderPass.Companion.method3553
 
 /* Class24 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

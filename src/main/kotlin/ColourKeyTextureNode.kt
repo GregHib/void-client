@@ -127,14 +127,14 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             LocalizedTextTriple.anIntArray3759 = IntArray(i_18_)
             NullOggStream.anIntArray9042 = IntArray(i_18_)
             i_18_ = 0
-            for (i_21_ in (-(Class367_Sub4.anInt7319 shr 4) + i_17_) / 8..(i_17_ + (Class367_Sub4.anInt7319 shr 4)) / 8) {
+            for (i_21_ in (-(GlCubemapLightPass.anInt7319 shr 4) + i_17_) / 8..(i_17_ + (GlCubemapLightPass.anInt7319 shr 4)) / 8) {
                 var i_22_: Int = (i_16_ - (RangeThresholdTextureNode.Companion.anInt9109 shr 4)) / 8
                 while ((i_22_ <= ((RangeThresholdTextureNode.Companion.anInt9109 shr 4) + i_16_) / 8)) {
                     NullOggStream.anIntArray9042!![i_18_] = i_22_ + (i_21_ shl 8)
-                    NativeSprite.anIntArray5192!![i_18_] = Class367_Sub10.aJs5Archive_7382!!.method417("m" + i_21_ + "_" + i_22_, 0)
-                    GameAppletFrame.anIntArray38!![i_18_] = Class367_Sub10.aJs5Archive_7382!!.method417("l" + i_21_ + "_" + i_22_, 0)
-                    LocalizedTextTriple.anIntArray3759!![i_18_] = Class367_Sub10.aJs5Archive_7382!!.method417("um" + i_21_ + "_" + i_22_, 0)
-                    RenderNode.anIntArray9724!![i_18_] = Class367_Sub10.aJs5Archive_7382!!.method417("ul" + i_21_ + "_" + i_22_, 0)
+                    NativeSprite.anIntArray5192!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("m" + i_21_ + "_" + i_22_, 0)
+                    GameAppletFrame.anIntArray38!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("l" + i_21_ + "_" + i_22_, 0)
+                    LocalizedTextTriple.anIntArray3759!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("um" + i_21_ + "_" + i_22_, 0)
+                    RenderNode.anIntArray9724!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("ul" + i_21_ + "_" + i_22_, 0)
                     i_18_++
                     i_22_++
                 }

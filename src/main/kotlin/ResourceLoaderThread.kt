@@ -1,6 +1,6 @@
 import LinkedListIterator.Companion.method1242
-import Class367_Sub10.Companion.method3553
-import Class367_Sub11.Companion.method3556
+import GlShadowRenderPass.Companion.method3553
+import GlGroundShaderPass.Companion.method3556
 import GameClock.method599
 import java.awt.Container
 import kotlin.concurrent.Volatile

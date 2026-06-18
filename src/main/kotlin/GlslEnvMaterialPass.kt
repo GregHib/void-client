@@ -138,7 +138,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
             if (bool != false) aLong6276 = -88L
             anInt6271++
             var string = "www"
-            if (Class367_Sub8.aNamedIdRecord_7361 != NpcAnimationResolver.aNamedIdRecord_165) {
+            if (FixedFunctionWaterPass.aNamedIdRecord_7361 != NpcAnimationResolver.aNamedIdRecord_165) {
                 if (NpcAnimationResolver.aNamedIdRecord_165 != SpriteArchiveLoader.aNamedIdRecord_382) {
                     if (NpcAnimationResolver.aNamedIdRecord_165 == GroundItemRenderState.aNamedIdRecord_1657) string = "www-wtwip"
                 } else string = "www-wtqa"
@@ -160,23 +160,23 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
                     if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(MinimapTileEntry.aJs5Archive_611, MapElementLookup.aJs5Archive_4147)
                     var class348_sub16_sub3 = NodeDequeHolder.aClass348_Sub16_Sub3_1564!!
                     if (GlBufferObject.aClass348_Sub16_Sub3_4743 != null) class348_sub16_sub3 = GlBufferObject.aClass348_Sub16_Sub3_4743!!
-                    if (class348_sub16_sub3.method2866((MaterialPass.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, Class367_Sub9.aJs5Archive_7371, -35)) {
+                    if (class348_sub16_sub3.method2866((MaterialPass.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, GlEnvMappedWaterPass.aJs5Archive_7371, -35)) {
                         NodeDequeHolder.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                         NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2864(52.toByte())
                         if (DirectionalLightTextureNode.anInt9444 <= 0) {
                             SpriteDefinition.anInt7068 = 0
                             NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2861(0, DirectionPath.anInt1059)
-                            for (i in Class367_Sub3.anIntArray7299!!.indices) {
-                                NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
-                                Class367_Sub3.anIntArray7299!![i] = 255
+                            for (i in BasicGlRenderPass.anIntArray7299!!.indices) {
+                                NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2843(BasicGlRenderPass.anIntArray7299!![i], i, -7836)
+                                BasicGlRenderPass.anIntArray7299!![i] = 255
                             }
                         } else {
                             SpriteDefinition.anInt7068 = 3
                             NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2861(0, (min(DirectionPath.anInt1059, DirectionalLightTextureNode.anInt9444)))
                             var i = 0
-                            while ((Class367_Sub3.anIntArray7299!!.size > i)) {
-                                NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
-                                Class367_Sub3.anIntArray7299!![i] = 255
+                            while ((BasicGlRenderPass.anIntArray7299!!.size > i)) {
+                                NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2843(BasicGlRenderPass.anIntArray7299!![i], i, -7836)
+                                BasicGlRenderPass.anIntArray7299!![i] = 255
                                 i++
                             }
                         }

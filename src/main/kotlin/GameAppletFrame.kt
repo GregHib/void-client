@@ -152,7 +152,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         anInt18++
         if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) {
             SpriteRenderable.aBoolean4726 = true
-            if (Class367_Sub4.aBoolean7320 && -BoundingBoxNode.aLong6748 + GameClock.method599(-57) > 1000) {
+            if (GlCubemapLightPass.aBoolean7320 && -BoundingBoxNode.aLong6748 + GameClock.method599(-57) > 1000) {
                 val rectangle = graphics?.getClipBounds()
                 if (rectangle == null || (rectangle.width >= SocketFactory.anInt3473 && (NpcReference.anInt6857 <= rectangle.height))) ProjectileSpawner.aBoolean2674 = true
             }
@@ -312,7 +312,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                         i++
                         i_6_ = 10 * i_6_ - (-i_7_ + 48)
                     }
-                    if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true
+                    if (i_6_ >= 5) GlCubemapLightPass.aBoolean7320 = true
                 }
                 var applet: Panel? = EdgeDetectTextureNode.anGameApplet_Frame_9169
                 if (JagGlToolkitFactory.anApplet1530 != null) {

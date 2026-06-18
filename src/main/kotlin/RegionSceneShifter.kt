@@ -100,7 +100,7 @@ class RegionSceneShifter : LinkedListNode() {
                 Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.Companion.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
                 val i_18_ = ArbVertexProgram.regionTileX
                 val i_19_ = RegionMapDecoder.regionTileY
-                ArbVertexProgram.regionTileX = (-(Class367_Sub4.anInt7319 shr 4) + Renderer.anInt4581) * 8
+                ArbVertexProgram.regionTileX = (-(GlCubemapLightPass.anInt7319 shr 4) + Renderer.anInt4581) * 8
                 RegionMapDecoder.regionTileY = 8 * (FileIoUtil.anInt4095 - (RangeThresholdTextureNode.anInt9109 shr 4))
                 NamedIdEntry.Companion.aClass348_Sub42_Sub14_6885 = method766(Renderer.anInt4581 * 8, FileIoUtil.anInt4095 * 8)
                 OpenGlRenderNode.aSmoothingBuffer_10488 = null
@@ -124,7 +124,7 @@ class RegionSceneShifter : LinkedListNode() {
                 } else {
                     ModelDefinitionLoader.anInt2057 = 0
                     var bool_24_ = false
-                    val i_25_ = Class367_Sub4.anInt7319 * 512 - 512
+                    val i_25_ = GlCubemapLightPass.anInt7319 * 512 - 512
                     val i_26_ = 512 * (-1 + RangeThresholdTextureNode.anInt9109)
                     var i_27_ = 0
                     while ((TerrainShadowBuilderGl2.Companion.anInt6930 > i_27_)) {
@@ -142,7 +142,7 @@ class RegionSceneShifter : LinkedListNode() {
                                 for (i_29_ in 0..9) {
                                     npc.anIntArray10320!![i_29_] -= i_20_
                                     npc.anIntArray10317!![i_29_] -= i_21_
-                                    if ((npc.anIntArray10320!![i_29_]) < 0 || ((npc.anIntArray10320!![i_29_]) >= Class367_Sub4.anInt7319) || (npc.anIntArray10317!![i_29_]) < 0 || (RangeThresholdTextureNode.anInt9109 <= (npc.anIntArray10317!![i_29_]))) bool_28_ = false
+                                    if ((npc.anIntArray10320!![i_29_]) < 0 || ((npc.anIntArray10320!![i_29_]) >= GlCubemapLightPass.anInt7319) || (npc.anIntArray10317!![i_29_]) < 0 || (RangeThresholdTextureNode.anInt9109 <= (npc.anIntArray10317!![i_29_]))) bool_28_ = false
                                 }
                                 if (!bool_28_) {
                                     npc.method2448(null, -2)
@@ -184,7 +184,7 @@ class RegionSceneShifter : LinkedListNode() {
                     while (class348_sub27 != null) {
                         class348_sub27.anInt6896 -= i_21_
                         class348_sub27.anInt6905 -= i_20_
-                        if (WidgetRedrawTracker.anInt3931 != 4 && (class348_sub27.anInt6905 < 0 || class348_sub27.anInt6896 < 0 || (class348_sub27.anInt6905 >= Class367_Sub4.anInt7319) || (RangeThresholdTextureNode.anInt9109 <= (class348_sub27.anInt6896)))) class348_sub27.method2715(101.toByte())
+                        if (WidgetRedrawTracker.anInt3931 != 4 && (class348_sub27.anInt6905 < 0 || class348_sub27.anInt6896 < 0 || (class348_sub27.anInt6905 >= GlCubemapLightPass.anInt7319) || (RangeThresholdTextureNode.anInt9109 <= (class348_sub27.anInt6896)))) class348_sub27.method2715(101.toByte())
                         class348_sub27 = SpriteRenderEntry.aNodeDeque_9711!!.method1990(68.toByte()) as? MultiFieldRecord?
                     }
                     if (WidgetRedrawTracker.anInt3931 != 4) {
@@ -194,7 +194,7 @@ class RegionSceneShifter : LinkedListNode() {
                             val i_34_ = -ArbVertexProgram.regionTileX + i_33_
                             val i_35_ = (0x3fffL and (class348_sub37.aLong4291 shr 14)).toInt()
                             val i_36_ = i_35_ + -RegionMapDecoder.regionTileY
-                            if (i_34_ < 0 || i_36_ < 0 || (i_34_ >= Class367_Sub4.anInt7319) || i_36_ >= RangeThresholdTextureNode.anInt9109) class348_sub37.method2715(37.toByte())
+                            if (i_34_ < 0 || i_36_ < 0 || (i_34_ >= GlCubemapLightPass.anInt7319) || i_36_ >= RangeThresholdTextureNode.anInt9109) class348_sub37.method2715(37.toByte())
                             class348_sub37 = (ModelBatchBase.aHashtable_1895!!.method3482(0) as? HashTableContainer?)
                         }
                     }
@@ -210,7 +210,7 @@ class RegionSceneShifter : LinkedListNode() {
                         ClanChatRequestSender.anInt3647 -= i_21_
                         IntKeyNode.Companion.anInt6981 -= i_20_
                         CompositeRgbNoiseTexture.anInt8685 -= 512 * i_21_
-                        if ((Class367_Sub4.anInt7319 < abs(i_20_)) || abs(i_21_) > RangeThresholdTextureNode.anInt9109) method773(true)
+                        if ((GlCubemapLightPass.anInt7319 < abs(i_20_)) || abs(i_21_) > RangeThresholdTextureNode.anInt9109) method773(true)
                     } else if (WeaveTextureNode.anInt9282 == 4) {
                         RegionTileNode.anInt6652 -= i_21_ * 512
                         FrameStatsReset.anInt5799 -= i_20_ * 512

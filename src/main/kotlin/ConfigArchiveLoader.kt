@@ -13,8 +13,8 @@ import ActorEntity.Companion.method2478
 import LinkedListNode.Companion.method2710
 import VorbisOggDecoder.Companion.method2972
 import TurbulenceTextureNode.Companion.method3113
-import Class367_Sub10.Companion.method3553
-import Class367_Sub4.Companion.method3544
+import GlShadowRenderPass.Companion.method3553
+import GlCubemapLightPass.Companion.method3544
 import WidgetComponent.Companion.method427
 import MinimapTriangleDrawer.Companion.method464
 import GameClock.method599

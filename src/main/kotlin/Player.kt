@@ -169,7 +169,7 @@ class Player : ProjectedGroundDecor() {
         val is_20_ = IntArray(5)
         for (i_21_ in 0..4) {
             var i_22_ = class348_sub49.readUnsignedByte(255)
-            if (Class367_Sub2.aShortArrayArrayArray7290!!.size < 1 || i_22_ < 0 || i_22_ >= Class367_Sub2.aShortArrayArrayArray7290!![0]!![i_21_]!!.size) i_22_ = 0
+            if (GlWaterRenderPass.aShortArrayArrayArray7290!!.size < 1 || i_22_ < 0 || i_22_ >= GlWaterRenderPass.aShortArrayArrayArray7290!![0]!![i_21_]!!.size) i_22_ = 0
             is_20_[i_21_] = i_22_
         }
         anInt10520 = class348_sub49.readUnsignedShort(842397944)
@@ -312,8 +312,8 @@ class Player : ProjectedGroundDecor() {
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
         }
         this.anInt10524 = -1
-        if (i_52_ >= 0 && Class367_Sub4.anInt7319 > i_52_ && i >= 0 && RangeThresholdTextureNode.anInt9109 > i) {
-            if (this.anIntArray10320!![0] >= 0 && (this.anIntArray10320!![0] < Class367_Sub4.anInt7319) && this.anIntArray10317!![0] >= 0 && (RangeThresholdTextureNode.anInt9109 > this.anIntArray10317!![0])) {
+        if (i_52_ >= 0 && GlCubemapLightPass.anInt7319 > i_52_ && i >= 0 && RangeThresholdTextureNode.anInt9109 > i) {
+            if (this.anIntArray10320!![0] >= 0 && (this.anIntArray10320!![0] < GlCubemapLightPass.anInt7319) && this.anIntArray10317!![0] >= 0 && (RangeThresholdTextureNode.anInt9109 > this.anIntArray10317!![0])) {
                 if (i_51_.toInt() == 2) MapSceneIconDef.method1592(2.toByte(), i, 4, i_52_, this)
                 method2451(i_51_, i_52_, -29034, i)
             } else method2449(i, i_52_, 111.toByte())
@@ -421,7 +421,7 @@ class Player : ProjectedGroundDecor() {
     fun method2456(bool: Boolean, i: Int): String {
         anInt10550++
         var string: String? = ""
-        if (Class367_Sub9.aStringArray7378 != null) string += Class367_Sub9.aStringArray7378!![aByte10552.toInt()]
+        if (GlEnvMappedWaterPass.aStringArray7378 != null) string += GlEnvMappedWaterPass.aStringArray7378!![aByte10552.toInt()]
         val `is`: IntArray?
         if (aByte10538.toInt() != 1 || ParticleDetailOptionState.anIntArray6021 == null) `is` = RuntimeException_Sub1.anIntArray4603
         else `is` = ParticleDetailOptionState.anIntArray6021
@@ -475,7 +475,7 @@ class Player : ProjectedGroundDecor() {
         val i_73_ = class225.anInt2941
         if (i_72_ != 0 || i_73_ != 0 || class225.anInt2950 != 0 || class225.anInt2926 != 0) i = i or 0x7
         val i_74_ = this.aCompassSmoother_10217.method2019((-106).toByte())
-        val bool = (this.aByte10279.toInt() != 0 && (this.anInt10248 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 < this.anInt10250))
+        val bool = (this.aByte10279.toInt() != 0 && (this.anInt10248 <= GlGroundShaderPass.anInt7396) && (GlGroundShaderPass.anInt7396 < this.anInt10250))
         if (bool) i = i or 0x80000
         val class64 =
             (this.aCompositeNpcModelBuilder_10536!!.method1226(aVarpStore_10209, class17_71_, this.aLoadProgressCountersArray10308, true, ClientException.aModelHeaderCache_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, RadialTextureNode.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, MapAreaDefinition.aBufferedMessageQueue_2529, ParticleEmitterNode.aWidgetCache_191, this.anInt10245, this.anInt10267, this.anInt10203, OpenGlModel.aNpcDefinitionCache_5558).also { this.aAbstractModelArray10323[0] = it })

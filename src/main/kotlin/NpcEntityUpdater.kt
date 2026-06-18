@@ -19,16 +19,16 @@ object NpcEntityUpdater {
         if (i != 512) method2110(-125, 79, 70)
         while ( /**/class348_sub42_sub18 != null) {
             val class318_sub1_sub3_sub5 = (class348_sub42_sub18.aClass318_Sub1_Sub3_Sub5_9682)!!
-            if (Class367_Sub11.anInt7396 > class318_sub1_sub3_sub5.anInt10392) {
+            if (GlGroundShaderPass.anInt7396 > class318_sub1_sub3_sub5.anInt10392) {
                 class348_sub42_sub18.method2715(101.toByte())
                 class318_sub1_sub3_sub5.method2472(-2159)
-            } else if ((class318_sub1_sub3_sub5.anInt10411) <= Class367_Sub11.anInt7396) {
+            } else if ((class318_sub1_sub3_sub5.anInt10411) <= GlGroundShaderPass.anInt7396) {
                 class318_sub1_sub3_sub5.method2474(121.toByte())
                 if ((class318_sub1_sub3_sub5.anInt10412) > 0) {
                     val class348_sub22 = ((aHashtable_3654!!.method3480((-1 + class318_sub1_sub3_sub5.anInt10412).toLong(), -6008)) as NpcReference?)
                     if (class348_sub22 != null) {
                         val npc = (class348_sub22.aNpc_6859)!!
-                        if ((npc.x) >= 0 && (Class367_Sub4.anInt7319 * 512 > npc.x) && (npc.y) >= 0 && (512 * RangeThresholdTextureNode.anInt9109 > npc.y)) class318_sub1_sub3_sub5.method2471((-103).toByte(), ((method2064(npc.x, (class318_sub1_sub3_sub5.plane).toInt(), 11219, npc.y)) + -class318_sub1_sub3_sub5.anInt10366), npc.y, Class367_Sub11.anInt7396, npc.x)
+                        if ((npc.x) >= 0 && (GlCubemapLightPass.anInt7319 * 512 > npc.x) && (npc.y) >= 0 && (512 * RangeThresholdTextureNode.anInt9109 > npc.y)) class318_sub1_sub3_sub5.method2471((-103).toByte(), ((method2064(npc.x, (class318_sub1_sub3_sub5.plane).toInt(), 11219, npc.y)) + -class318_sub1_sub3_sub5.anInt10366), npc.y, GlGroundShaderPass.anInt7396, npc.x)
                     }
                 }
                 if ((class318_sub1_sub3_sub5.anInt10412) < 0) {
@@ -36,7 +36,7 @@ object NpcEntityUpdater {
                     val player: Player?
                     if (i_0_ == CharCodeMap.anInt9591) player = LocalPlayerState.aPlayer_1907
                     else player = (LoadingBarRenderer.aPlayerArray5058!![i_0_])
-                    if (player != null && (player.x) >= 0 && ((player.x) < 512 * Class367_Sub4.anInt7319) && (player.y) >= 0 && (player.y) < 512 * RangeThresholdTextureNode.anInt9109) class318_sub1_sub3_sub5.method2471((-103).toByte(), ((method2064((player.x), (class318_sub1_sub3_sub5.plane).toInt(), 11219, (player.y))) - class318_sub1_sub3_sub5.anInt10366), (player.y), Class367_Sub11.anInt7396, (player.x))
+                    if (player != null && (player.x) >= 0 && ((player.x) < 512 * GlCubemapLightPass.anInt7319) && (player.y) >= 0 && (player.y) < 512 * RangeThresholdTextureNode.anInt9109) class318_sub1_sub3_sub5.method2471((-103).toByte(), ((method2064((player.x), (class318_sub1_sub3_sub5.plane).toInt(), 11219, (player.y))) - class318_sub1_sub3_sub5.anInt10366), (player.y), GlGroundShaderPass.anInt7396, (player.x))
                 }
                 class318_sub1_sub3_sub5.method2475(75.toByte(), DisplaySettingsConfig.anInt7267)
                 method850(class318_sub1_sub3_sub5, true)

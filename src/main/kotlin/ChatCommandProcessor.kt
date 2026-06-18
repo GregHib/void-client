@@ -47,9 +47,9 @@ import EdgeDetectTextureNode.Companion.method3072
 import TimedRecordAccessorB.Companion.method3316
 import CharacterRenderState.Companion.method2780
 import SoundEngineInitializer.method352
-import Class367_Sub10.Companion.method3553
-import Class367_Sub2.Companion.method3538
-import Class367_Sub4.Companion.method3544
+import GlShadowRenderPass.Companion.method3553
+import GlWaterRenderPass.Companion.method3538
+import GlCubemapLightPass.Companion.method3544
 import WorldMapLabel.Companion.method3569
 import ColourAdjustment.Companion.method449
 import MinimapPolygonDrawer.Companion.method468
@@ -1040,8 +1040,8 @@ object ChatCommandProcessor {
                 val string_120_ = aStringArray1152!![anInt1170 + 1]!!
                 val i_121_ = anIntArray1149!![--anInt1173]
                 if (string.length > 0) {
-                    if (Class367_Sub9.aStringArray7378 == null) Class367_Sub9.aStringArray7378 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![HardCacheEntryReference.aSceneProjector_10434!!.anInt2987]))
-                    Class367_Sub9.aStringArray7378!![i_121_] = string
+                    if (GlEnvMappedWaterPass.aStringArray7378 == null) GlEnvMappedWaterPass.aStringArray7378 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![HardCacheEntryReference.aSceneProjector_10434!!.anInt2987]))
+                    GlEnvMappedWaterPass.aStringArray7378!![i_121_] = string
                 }
                 if (string_120_.length > 0) {
                     if (FloorOverlayDefinition.aStringArray974 == null) FloorOverlayDefinition.aStringArray974 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![HardCacheEntryReference.aSceneProjector_10434!!.anInt2987]))
@@ -1225,7 +1225,7 @@ object ChatCommandProcessor {
                 var i_138_ = i_136_ and 0x3fff
                 i_137_ -= ArbVertexProgram.regionTileX
                 if (i_137_ < 0) i_137_ = 0
-                else if (i_137_ >= Class367_Sub4.anInt7319) i_137_ = Class367_Sub4.anInt7319
+                else if (i_137_ >= GlCubemapLightPass.anInt7319) i_137_ = GlCubemapLightPass.anInt7319
                 i_138_ -= RegionMapDecoder.regionTileY
                 if (i_138_ < 0) i_138_ = 0
                 else if (i_138_ >= RangeThresholdTextureNode.anInt9109) i_138_ = RangeThresholdTextureNode.anInt9109
@@ -1255,7 +1255,7 @@ object ChatCommandProcessor {
                     var i_141_ = i_139_ and 0x3fff
                     i_140_ -= ArbVertexProgram.regionTileX
                     if (i_140_ < 0) i_140_ = 0
-                    else if (i_140_ >= Class367_Sub4.anInt7319) i_140_ = Class367_Sub4.anInt7319
+                    else if (i_140_ >= GlCubemapLightPass.anInt7319) i_140_ = GlCubemapLightPass.anInt7319
                     i_141_ -= RegionMapDecoder.regionTileY
                     if (i_141_ < 0) i_141_ = 0
                     else if (i_141_ >= RangeThresholdTextureNode.anInt9109) i_141_ = RangeThresholdTextureNode.anInt9109
@@ -1278,7 +1278,7 @@ object ChatCommandProcessor {
                 val string = aStringArray1152!![anInt1170]!!
                 val string_142_ = aStringArray1152!![anInt1170 + 1]
                 val i_143_ = anIntArray1149!![--anInt1173]
-                if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
                     OpenGlModel.aString5600 = string
                     TextureGenerator.aString2496 = string_142_
                     RuntimeException_Sub1.anInt4596 = i_143_
@@ -1300,7 +1300,7 @@ object ChatCommandProcessor {
             }
             if (i == 5604) {
                 anInt1170--
-                if (WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
                     ClanChatRequestSender.method2106(aStringArray1152!![anInt1170], 101)
                     return
                 }
@@ -1309,14 +1309,14 @@ object ChatCommandProcessor {
             if (i == 5605) {
                 anInt1170 -= 2
                 anInt1173 -= 2
-                if (WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
                     method449(aStringArray1152!![anInt1170 + 1], aStringArray1152!![anInt1170], false, anIntArray1149!![anInt1173], anIntArray1149!![anInt1173 + 1] == 1)
                     return
                 }
                 return
             }
             if (i == 5606) {
-                if (Class367_Sub2.anInt7297 == 0) RenderableEntry.anInt4337 = -2
+                if (GlWaterRenderPass.anInt7297 == 0) RenderableEntry.anInt4337 = -2
                 return
             }
             if (i == 5607) {
@@ -1337,7 +1337,7 @@ object ChatCommandProcessor {
             }
             if (i == 5612) {
                 val i_144_ = anIntArray1149!![--anInt1173]
-                if (WorldMapRenderer.anInt4674 == 7 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (WorldMapRenderer.anInt4674 == 7 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
                     if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
                         PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
                         PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
@@ -1356,7 +1356,7 @@ object ChatCommandProcessor {
                 anInt1170 -= 2
                 val string = aStringArray1152!![anInt1170]!!
                 val string_145_ = aStringArray1152!![anInt1170 + 1]
-                if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
+                if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
                     if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
                         PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
                         PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
@@ -1848,12 +1848,12 @@ object ChatCommandProcessor {
                 ColourAdjustment.aShort851 = anIntArray1149!![anInt1173 + 1].toShort()
                 if (ColourAdjustment.aShort851 <= 0) ColourAdjustment.aShort851 = 32767.toShort()
                 else if (ColourAdjustment.aShort851 < CacheEntryReference.aShort9555) ColourAdjustment.aShort851 = CacheEntryReference.aShort9555
-                Class367_Sub8.aShort7355 = anIntArray1149!![anInt1173 + 2].toShort()
-                if (Class367_Sub8.aShort7355 <= 0) Class367_Sub8.aShort7355 = 1.toShort()
+                FixedFunctionWaterPass.aShort7355 = anIntArray1149!![anInt1173 + 2].toShort()
+                if (FixedFunctionWaterPass.aShort7355 <= 0) FixedFunctionWaterPass.aShort7355 = 1.toShort()
                 RefCountedHandle.aShort2269 = anIntArray1149!![anInt1173 + 3].toShort()
                 if (RefCountedHandle.aShort2269 <= 0) RefCountedHandle.aShort2269 = 32767.toShort()
                 else {
-                    if (RefCountedHandle.aShort2269 < Class367_Sub8.aShort7355) RefCountedHandle.aShort2269 = Class367_Sub8.aShort7355
+                    if (RefCountedHandle.aShort2269 < FixedFunctionWaterPass.aShort7355) RefCountedHandle.aShort2269 = FixedFunctionWaterPass.aShort7355
                     return
                 }
                 return
@@ -1924,7 +1924,7 @@ object ChatCommandProcessor {
             }
         } else if (i < 6600) {
             if (i == 6500) {
-                if (WorldMapRenderer.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || Class367_Sub2.anInt7297 != 0) anIntArray1149!![anInt1173++] = 1
+                if (WorldMapRenderer.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || GlWaterRenderPass.anInt7297 != 0) anIntArray1149!![anInt1173++] = 1
                 else {
                     if (ModelBatchBase.aBoolean1899) anIntArray1149!![anInt1173++] = 0
                     else {
@@ -1996,7 +1996,7 @@ object ChatCommandProcessor {
             if (i == 6503) {
                 val i_168_ = anIntArray1149!![--anInt1173]
                 val string = aStringArray1152!![--anInt1170]
-                if (WorldMapRenderer.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || Class367_Sub2.anInt7297 != 0) anIntArray1149!![anInt1173++] = 0
+                if (WorldMapRenderer.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || GlWaterRenderPass.anInt7297 != 0) anIntArray1149!![anInt1173++] = 0
                 else {
                     anIntArray1149!![anInt1173++] = (if (method2972(string, i_168_, -42)) 1 else 0)
                     return
@@ -3882,7 +3882,7 @@ object ChatCommandProcessor {
                 }
             } else if (i < 3400) {
                 if (i == 3300) {
-                    anIntArray1149!![anInt1173++] = Class367_Sub11.anInt7396
+                    anIntArray1149!![anInt1173++] = GlGroundShaderPass.anInt7396
                     return
                 }
                 if (i == 3301) {
@@ -4398,7 +4398,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3631) {
                     val i_371_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = if (Class367_Sub3.aBooleanArray7304!![i_371_]) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (BasicGlRenderPass.aBooleanArray7304!![i_371_]) 1 else 0
                     return
                 }
                 if (i == 3632) {

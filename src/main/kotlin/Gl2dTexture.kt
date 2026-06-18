@@ -269,11 +269,11 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             val i_24_ = 0x3fff and (-2607.5945876176133 * atan2(i_19_.toDouble(), i_21_.toDouble())).toInt()
             if (i_23_ > 3072) i_23_ = 3072
             if (i_23_ > MinimapAreaMarkerNode.anInt9701) {
-                MinimapAreaMarkerNode.anInt9701 += (BloomGraphicsOptionState.anInt5973 * (i_23_ - MinimapAreaMarkerNode.anInt9701 shr 3) / 1000) + Class367_Sub11.anInt7403 shl 3
+                MinimapAreaMarkerNode.anInt9701 += (BloomGraphicsOptionState.anInt5973 * (i_23_ - MinimapAreaMarkerNode.anInt9701 shr 3) / 1000) + GlGroundShaderPass.anInt7403 shl 3
                 if (i_23_ < MinimapAreaMarkerNode.anInt9701) MinimapAreaMarkerNode.anInt9701 = i_23_
             }
             if (MinimapAreaMarkerNode.anInt9701 > i_23_) {
-                MinimapAreaMarkerNode.anInt9701 -= (((-i_23_ + MinimapAreaMarkerNode.anInt9701 shr 3) * BloomGraphicsOptionState.anInt5973 / 1000) + Class367_Sub11.anInt7403) shl 3
+                MinimapAreaMarkerNode.anInt9701 -= (((-i_23_ + MinimapAreaMarkerNode.anInt9701 shr 3) * BloomGraphicsOptionState.anInt5973 / 1000) + GlGroundShaderPass.anInt7403) shl 3
                 if (MinimapAreaMarkerNode.anInt9701 < i_23_) MinimapAreaMarkerNode.anInt9701 = i_23_
             }
             var i_25_ = -WorldMapElement.anInt4638 + i_24_
@@ -281,11 +281,11 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             if (i_25_ < -8192) i_25_ += 16384
             i_25_ = i_25_ shr 3
             if (i_25_ > 0) {
-                WorldMapElement.anInt4638 += (Class367_Sub11.anInt7403 + BloomGraphicsOptionState.anInt5973 * i_25_ / 1000) shl 3
+                WorldMapElement.anInt4638 += (GlGroundShaderPass.anInt7403 + BloomGraphicsOptionState.anInt5973 * i_25_ / 1000) shl 3
                 WorldMapElement.anInt4638 = WorldMapElement.anInt4638 and 0x3fff
             }
             if (i_25_ < 0) {
-                WorldMapElement.anInt4638 -= Class367_Sub11.anInt7403 - -(-i_25_ * BloomGraphicsOptionState.anInt5973 / 1000) shl 3
+                WorldMapElement.anInt4638 -= GlGroundShaderPass.anInt7403 - -(-i_25_ * BloomGraphicsOptionState.anInt5973 / 1000) shl 3
                 WorldMapElement.anInt4638 = WorldMapElement.anInt4638 and 0x3fff
             }
             var i_26_ = i_24_ - WorldMapElement.anInt4638

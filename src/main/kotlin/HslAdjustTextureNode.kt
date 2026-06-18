@@ -212,7 +212,7 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
         fun method3127(i: Int): TimedTileQueueEntry? {
             anInt9395++
             if (i != 2681) aBoolean9403 = true
-            var class348_sub42_sub15 = (Class367_Sub4.aLinkedNodeListIterator_7325!!.method1011(-47) as TimedTileQueueEntry?)
+            var class348_sub42_sub15 = (GlCubemapLightPass.aLinkedNodeListIterator_7325!!.method1011(-47) as TimedTileQueueEntry?)
             if (class348_sub42_sub15 != null) {
                 class348_sub42_sub15.method2715(81.toByte())
                 class348_sub42_sub15.method3162(true)

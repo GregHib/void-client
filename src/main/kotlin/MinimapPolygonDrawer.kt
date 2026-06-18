@@ -1,4 +1,4 @@
-import Class367_Sub3.Companion.method3540
+import BasicGlRenderPass.Companion.method3540
 import OpenGlRenderer.Companion.method3743
 import java.awt.Color
 

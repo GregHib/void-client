@@ -117,7 +117,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 DirectionUtil.aJs5Archive_1541!!.method412(37.toByte())
                 IntKeyNode.Companion.aJs5Archive_6980!!.method412((-113).toByte())
                 ModelFacePriorityNode.aJs5Archive_1878!!.method412((-116).toByte())
-                Class367_Sub10.aJs5Archive_7382!!.method412((-110).toByte())
+                GlShadowRenderPass.aJs5Archive_7382!!.method412((-110).toByte())
                 CachedRgbNoiseTexture.aJs5Archive_8667!!.method412(64.toByte())
                 RasterSprite.aJs5Archive_5207!!.method412(120.toByte())
                 CameraRotationStub.aJs5Archive_322!!.method412(98.toByte())
@@ -140,7 +140,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 ConfigArchiveLoader.aJs5Archive_1434!!.method412((-117).toByte())
                 KeyEventNode.Companion.aJs5Archive_4770!!.method412(78.toByte())
                 GraphicsOptionState.aJs5Archive_3146!!.method412(88.toByte())
-                Class367_Sub8.aJs5Archive_7362!!.method412((-109).toByte())
+                FixedFunctionWaterPass.aJs5Archive_7362!!.method412((-109).toByte())
                 NodeDeque.aJs5Archive_3323!!.method412(112.toByte())
                 Crc64Hashable.aJs5Archive_4984!!.method412(85.toByte())
                 SpriteLoadValidator.aJs5Archive_4796!!.method412(93.toByte())
@@ -172,7 +172,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                     widgetComponent.anInt753 = 0
                 } else {
                     widgetComponent.anInt757 = 150
-                    widgetComponent.anInt675 = 0x7ff and (256.0 * sin((Class367_Sub11.anInt7396).toDouble() / 40.0)).toInt()
+                    widgetComponent.anInt675 = 0x7ff and (256.0 * sin((GlGroundShaderPass.anInt7396).toDouble() / 40.0)).toInt()
                     widgetComponent.anInt770 = 5
                     widgetComponent.anInt753 = CharCodeMap.anInt9591
                     widgetComponent.anInt779 = (ModelGroundDecor.method2418((LocalPlayerState.aPlayer_1907!!.aString10544!!), (-41).toByte()))
