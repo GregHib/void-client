@@ -156,7 +156,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
                 val i_2_ = GlTexture1D.aInputTracker_8552!!.method3597(true)
                 val i_3_ = GlTexture1D.aInputTracker_8552!!.method3594(81.toByte())
                 if (ChatScriptListNode.aBoolean9535) {
-                    if (i_2_ > GlArrayBufferObject.anInt4717 && i_2_ < Class63.anInt1117 + GlArrayBufferObject.anInt4717) {
+                    if (i_2_ > GlArrayBufferObject.anInt4717 && i_2_ < SceneTileBounds.anInt1117 + GlArrayBufferObject.anInt4717) {
                         var i_9_ = -1
                         var i_10_ = 0
                         while (Class8.anInt166 > i_10_) {
@@ -201,7 +201,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
                             }
                         }
                     }
-                } else if (i_2_ > GlArrayBufferObject.anInt4717 && (i_2_ < GlArrayBufferObject.anInt4717 - -Class63.anInt1117)) {
+                } else if (i_2_ > GlArrayBufferObject.anInt4717 && (i_2_ < GlArrayBufferObject.anInt4717 - -SceneTileBounds.anInt1117)) {
                     var i_14_ = -1
                     var i_15_ = 0
                     while (Class73.anInt4776 > i_15_) {

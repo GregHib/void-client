@@ -532,7 +532,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == Class63.aIntRange_1120) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == SceneTileBounds.aIntRange_1120) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-116)
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-85).toByte())
                 WallSceneEntity.method2397((-125).toByte())
@@ -859,7 +859,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (Class63.aIntRange_1123 == ModelVertexColorBuffer.aIntRange_6584) {
+            if (SceneTileBounds.aIntRange_1123 == ModelVertexColorBuffer.aIntRange_6584) {
                 val bool_97_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(126.toByte())
                 var string_98_ = string

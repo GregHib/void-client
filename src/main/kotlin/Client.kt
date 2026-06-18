@@ -1231,7 +1231,7 @@ class Client : GameAppletFrame() {
         method2043(true)
         method570(105)
         method1438(-120)
-        Class63.method601((-85).toByte())
+        SceneTileBounds.method601((-85).toByte())
         method1209(i + -51)
         method458(-14487)
         method471(i.toInt() xor 0x751c.inv())

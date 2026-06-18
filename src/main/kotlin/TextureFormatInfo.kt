@@ -126,7 +126,7 @@ class TextureFormatInfo internal constructor(var anInt3850: Int) {
             GlArrayBufferObject.anInt4717 = i_10_
             ScrollbarComponent.aBoolean8335 = true
             ProceduralTextureGraph.anInt9532 = i_11_
-            Class63.anInt1117 = i_6_
+            SceneTileBounds.anInt1117 = i_6_
         }
     }
 }

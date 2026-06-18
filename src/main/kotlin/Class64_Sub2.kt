@@ -1999,7 +1999,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
                 anIntArray5455!![modelDefinition.anInt1821] = i_355_
                 val class358 = method565(255, anInt5478, modelDefinition, `is`)!!
-                val class63s: Array<Class63?> = arrayOfNulls<Class63>(modelDefinition.anInt1817)
+                val sceneTileBounds: Array<SceneTileBounds?> = arrayOfNulls<SceneTileBounds>(modelDefinition.anInt1817)
                 var i_358_ = 0
                 while ((modelDefinition.anInt1817 > i_358_)) {
                     val i_359_ = modelDefinition.aShortArray1863[i_358_]
@@ -2043,8 +2043,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         class371.anInt4525 += i_369_
                         class371.anInt4524 += i_370_
                     } else if (i_372_.toInt() == 1) {
-                        class63s[i_358_] = Class63()
-                        val class63 = class63s[i_358_]!!
+                        sceneTileBounds[i_358_] = SceneTileBounds()
+                        val class63 = sceneTileBounds[i_358_]!!
                         class63.anInt1118 = i_368_
                         class63.anInt1119 = i_369_
                         class63.anInt1122 = i_370_
@@ -2270,7 +2270,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         class371 = cubemapTextureFactories[i_449_.toInt()]!!
                         aShortArray5512!![i_373_] = method669(class371.anInt4524, i_385_.toLong() + l, i_373_, class371.anInt4522, class371.anInt4520, -112, f_382_, i_449_.toInt(), f_383_, modelDefinition, class371.anInt4525)
                     } else if (i_446_.toInt() == 1) {
-                        val class63 = class63s[i_374_]!!
+                        val class63 = sceneTileBounds[i_374_]!!
                         val l = (((i_377_.toLong() + ((i_386_ shl 24).toLong() - -(i_375_ shl 8).toLong())) shl 32) + (((256 + class63.anInt1119) shl 12) + (if (class63.anInt1118 > 0) 1024 else 2048) + (i_376_ shl 2) + ((class63.anInt1122 - -256) shl 22)).toLong())
                         aShortArray5508!![i_373_] = method669(class63.anInt1122, l, i_373_, 0, class63.anInt1118, -106, f, (modelDefinition.aShortArray1863[i_374_]).toInt(), f_379_, modelDefinition, class63.anInt1119)
                         aShortArray5495!![i_373_] = method669(class63.anInt1122, l + i_384_.toLong(), i_373_, 0, class63.anInt1118, -57, f_380_, (modelDefinition.aShortArray1835!![i_374_]).toInt(), f_381_, modelDefinition, class63.anInt1119)

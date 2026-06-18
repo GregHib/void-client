@@ -309,7 +309,7 @@ class Class88 {
                             PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 0, (-109).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             val i_12_ = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             NpcDefinition.anInt2955 = 0
-                            Class63.anInt1121 = (3 + i_12_) * 60
+                            SceneTileBounds.anInt1121 = (3 + i_12_) * 60
                             GlRectangleTexture.method254(21, (-95).toByte())
                             PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
                             PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null

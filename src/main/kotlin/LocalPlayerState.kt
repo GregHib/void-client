@@ -32,7 +32,7 @@ object LocalPlayerState {
             else {
                 val i_1_ = 34 % ((16 - i) / 55)
                 if (BloomGraphicsOptionState.anInt5969 != 1) {
-                    Class63.anInt1121 = 0
+                    SceneTileBounds.anInt1121 = 0
                     ConfigShortValueNode.anInt9541 = -1
                 }
                 AbstractMenuEntry.aBoolean1712 = false

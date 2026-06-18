@@ -1321,7 +1321,7 @@ object Class66 {
                 return
             }
             if (i == 5608) {
-                anIntArray1149!![anInt1173++] = Class63.anInt1121
+                anIntArray1149!![anInt1173++] = SceneTileBounds.anInt1121
                 return
             }
             if (i == 5609) {
