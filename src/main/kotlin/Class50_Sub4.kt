@@ -31,12 +31,12 @@ class Class50_Sub4 internal constructor(private val anInt5255: Int, private val 
         @JvmField
         var anInt5261: Int = 0
         @JvmField
-        var aClass47_5262: Class47? = null
+        var aNanoTimer_5262: NanoTimer? = null
         @JvmField
         var anInt5263: Int = 0
         @JvmStatic
         fun method471(i: Int) {
-            if (i == -30065) aClass47_5262 = null
+            if (i == -30065) aNanoTimer_5262 = null
         }
 
         @JvmStatic

@@ -178,13 +178,13 @@ class SynthVoiceGroup internal constructor(private val aClass348_Sub16_Sub3_8852
         }
 
         @JvmStatic
-        fun method2826(i: Int): Class47? {
+        fun method2826(i: Int): NanoTimer? {
             anInt8845++
             try {
-                return Class47_Sub2()
+                return SystemNanoTimer()
             } catch (throwable: Throwable) {
                 if (i != 15) return null
-                return Class47_Sub1()
+                return MillisNanoTimer()
             }
         }
     }

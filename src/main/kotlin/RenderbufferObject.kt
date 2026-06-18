@@ -103,7 +103,7 @@ class RenderbufferObject : HashLinkedListNode, Interface9 {
             SpotAnimEntity.anInt6451 = i_2_
             RegionSceneShifter.anInt7054 = i_3_
             NpcActorEntity.anInt10084 = i_4_
-            Class50_Sub4.aClass47_5262 = method2826(15)
+            Class50_Sub4.aNanoTimer_5262 = method2826(15)
             method3309(-124)
             Class65.aSceneCollisionEntryArrayArrayArray1148 = (Array<Array<Array<SceneCollisionEntry?>?>?>(i_1_) { Array<Array<SceneCollisionEntry?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(RegionSceneShifter.anInt7054) } })
             TerrainTileShape.aTerrainTileArray8801 = arrayOfNulls<TerrainTile>(i_1_)

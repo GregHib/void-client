@@ -2330,7 +2330,7 @@ object Class66 {
                     return
                 }
                 if (i == 7002) {
-                    Class47.method447((-59).toByte())
+                    NanoTimer.method447((-59).toByte())
                     TextureTileRenderer.method2953((-124).toByte())
                     method243(37)
                     RenderNode.aBoolean9719 = false

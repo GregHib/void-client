@@ -1,7 +1,7 @@
 /* Class47 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class47 {
+abstract class NanoTimer {
     abstract fun method446(i: Int): Long
 
     companion object {

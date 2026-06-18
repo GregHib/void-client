@@ -2684,7 +2684,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TrackedGroundDecor.anInt10374 = 0
             CacheArchiveIndex.anInt1765 = 0
             Player.anInt10532 = 0
-            Class47.anInt844 = 0
+            NanoTimer.anInt844 = 0
             CacheArchiveIndex.anInt1777 = 0
             ObjectSpawnDecoder.anInt1809 = 0
             SoundBankPatch.anInt6801 = 0

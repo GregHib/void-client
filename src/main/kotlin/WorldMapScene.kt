@@ -1273,7 +1273,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                     }
                 }
                 if (TextureGenerator.aBoolean2492) i_306_ = i_306_ or 0x7
-                if (!Class47.aBoolean845) i_306_ = i_306_ or 0x20
+                if (!NanoTimer.aBoolean845) i_306_ = i_306_ or 0x20
                 val is_307_ = (if (`is` == null || `is`.size <= i_304_) this.anIntArrayArrayArray3122[i_304_] else `is`[i_304_])
                 method3313(i_304_, var_renderer!!.method3648(this.anInt3117, this.anInt3114, (this.anIntArrayArrayArray3122[i_304_]!!), is_307_, 512, i_305_, i_306_))
                 i_304_++

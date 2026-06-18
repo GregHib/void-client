@@ -72,7 +72,7 @@ object Class62 {
                 }
             } else {
                 i_3_ = 3
-                Class47.method447((-59).toByte())
+                NanoTimer.method447((-59).toByte())
             }
         } else {
             PlayerUpdateDecoder.method1140(120)

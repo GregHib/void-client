@@ -1,7 +1,7 @@
 /* Class47_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class47_Sub2 : Class47() {
+class SystemNanoTimer : NanoTimer() {
     init {
         System.nanoTime()
     }

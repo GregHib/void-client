@@ -587,7 +587,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
             anInt9637++
             if (!TurbulenceTextureNode.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) ParameterizedText.Companion.anInt9577 = 0
             else {
-                if (ColourKeyTextureNode.aBoolean9352) ItemDefinition.aLong2789 = Class50_Sub4.aClass47_5262!!.method446(1)
+                if (ColourKeyTextureNode.aBoolean9352) ItemDefinition.aLong2789 = Class50_Sub4.aNanoTimer_5262!!.method446(1)
                 StructConfig.anInt562 = 0
                 TheoraVideoStream.anInt9039 = 0
                 SourceRowTextureNode.anInt9112 = 0
@@ -637,7 +637,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                     }
                     ModelTransformParams.anInt4319 = 2
                 }
-                if (ColourKeyTextureNode.aBoolean9352) GlslEnvMaterialPass.aLong6276 = (Class50_Sub4.aClass47_5262!!.method446(1) + -ItemDefinition.aLong2789)
+                if (ColourKeyTextureNode.aBoolean9352) GlslEnvMaterialPass.aLong6276 = (Class50_Sub4.aNanoTimer_5262!!.method446(1) + -ItemDefinition.aLong2789)
             }
         }
 

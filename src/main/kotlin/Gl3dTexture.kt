@@ -140,7 +140,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 CompassSmoother.aIntRange_3371,
                 BinaryGraphicsOptionState.aIntRange_5950,
                 HslColorConfig.aIntRange_330,
-                Class47.aIntRange_843,
+                NanoTimer.aIntRange_843,
                 ParticleProcessor.aIntRange_4272,
                 HeadIconRenderer.aIntRange_2068,
                 BinaryGraphicsOptionState.aIntRange_5949,

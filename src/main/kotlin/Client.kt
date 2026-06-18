@@ -447,7 +447,7 @@ import MinimapTileEntry.Companion.method380
 import MapSceneRenderer.method387
 import Js5Archive.Companion.method390
 import Js5Archive.Companion.method395
-import Class47.Companion.method445
+import NanoTimer.Companion.method445
 import Class49.Companion.method453
 import Class5.Companion.method180
 import Class50.Companion.method458
@@ -578,48 +578,48 @@ class Client : GameAppletFrame() {
         if (TileRenderState.anInt4235 > 0) TileRenderState.anInt4235--
         else {
             try {
-                if (Class47.anInt846 == 0) {
+                if (NanoTimer.anInt846 == 0) {
                     Sprite.aLinkedQueueNode_114 = CacheStateResetter.aServerConnectionInfo_125!!.method1262((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!), 36.toByte())
-                    Class47.anInt846++
+                    NanoTimer.anInt846++
                 }
-                if (Class47.anInt846 == 1) {
+                if (NanoTimer.anInt846 == 1) {
                     if (Sprite.aLinkedQueueNode_114!!.anInt1997 == 2) {
                         if (Sprite.aLinkedQueueNode_114!!.anObject1998 != null) AbstractFrameBufferSurface.aString6926 = Sprite.aLinkedQueueNode_114!!.anObject1998 as String?
                         method103(1000, 100.toByte())
                         return
                     }
-                    if (Sprite.aLinkedQueueNode_114!!.anInt1997 == 1) Class47.anInt846++
+                    if (Sprite.aLinkedQueueNode_114!!.anInt1997 == 1) NanoTimer.anInt846++
                 }
-                if (Class47.anInt846 == 2) {
+                if (NanoTimer.anInt846 == 2) {
                     TextureHandle.aSocketStreamWorker_2589 = SocketStreamWorker(Sprite.aLinkedQueueNode_114!!.anObject1998 as Socket?, VorbisOggDecoder.aPrivilegedOperationWorker_8992, 25000)
                     val class348_sub49 = Buffer(5)
                     class348_sub49.writeByte(false, (ScriptOpcodeHolder.aConfigIdPair_2341!!.anInt400))
                     class348_sub49.writeInt(103.toByte(), 634)
                     TextureHandle.aSocketStreamWorker_2589!!.method1470((class348_sub49.aByteArray7154!!), 5, 0, -1)
-                    Class47.anInt846++
+                    NanoTimer.anInt846++
                     Js5Archive.aLong667 = method599(-70)
                 }
-                if (Class47.anInt846 == 3) {
+                if (NanoTimer.anInt846 == 3) {
                     if (NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-100).toByte()) || TextureHandle.aSocketStreamWorker_2589!!.method1467(83.toByte()) > 0) {
                         val i_0_ = TextureHandle.aSocketStreamWorker_2589!!.method1473(0)
                         if (i_0_ != 0) {
                             method103(i_0_, 111.toByte())
                             return
                         }
-                        Class47.anInt846++
+                        NanoTimer.anInt846++
                     } else if (method599(-63) - Js5Archive.aLong667 > 30000) {
                         method103(1001, 85.toByte())
                         return
                     }
                 }
-                if (Class47.anInt846 == 4) {
+                if (NanoTimer.anInt846 == 4) {
                     val bool = (NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-100).toByte()) || method3196(WorldMapRenderer.anInt4674, -87) || method2672(WorldMapRenderer.anInt4674, -127))
                     val class267s = method2029(105)
                     val class348_sub49 = Buffer(class267s!!.size * 4)
                     TextureHandle.aSocketStreamWorker_2589!!.method1474(class348_sub49.aByteArray7154!!, 0, (-72).toByte(), (class348_sub49.aByteArray7154)!!.size)
                     for (i_1_ in class267s.indices) class267s[i_1_]!!.method2030(1, class348_sub49.readInt((-126).toByte()))
                     ClientMachineInfo.aMediaStreamClient_6601!!.method1903(false, !bool, TextureHandle.aSocketStreamWorker_2589)
-                    Class47.anInt846 = 0
+                    NanoTimer.anInt846 = 0
                     Sprite.aLinkedQueueNode_114 = null
                     TextureHandle.aSocketStreamWorker_2589 = null
                 }
@@ -1255,7 +1255,7 @@ class Client : GameAppletFrame() {
         Sprite.aLinkedQueueNode_114 = null
         ClientMachineInfo.aMediaStreamClient_6601!!.anInt3214 = i
         if (i_5_ > 74) {
-            Class47.anInt846 = 0
+            NanoTimer.anInt846 = 0
             TextureHandle.aSocketStreamWorker_2589 = null
         }
     }

@@ -1583,7 +1583,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == Class47.aIntRange_843) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == NanoTimer.aIntRange_843) {
                 method128(Class91.aClass74_1519, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
