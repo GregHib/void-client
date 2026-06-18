@@ -1,6 +1,5 @@
 import AsyncResourceRequest.Companion.method3255
 import ByteArrayPool.method359
-import java.math.BigInteger
 
 open class ByteBuffer : LinkedListNode {
     @JvmField
@@ -495,15 +494,15 @@ open class ByteBuffer : LinkedListNode {
         }
     }
 
-    fun method3390(biginteger: BigInteger?, i: Byte, biginteger_85_: BigInteger?) {
+    fun method3390(biginteger: BigInt?, i: Byte, biginteger_85_: BigInt?) {
         try {
             anInt7147++
             val i_86_ = this.anInt7197
             this.anInt7197 = 0
             val `is` = ByteArray(i_86_)
             method3389(2147483647, 0, i_86_, `is`)
-            val biginteger_87_ = BigInteger(`is`)
-            val biginteger_88_ = biginteger_87_.modPow(biginteger_85_, biginteger)
+            val biginteger_87_ = BigInt(`is`)
+            val biginteger_88_ = biginteger_87_.modPow(biginteger_85_!!, biginteger!!)
             val is_89_ = biginteger_88_.toByteArray()
             this.anInt7197 = 0
             writeShort(107.toByte(), is_89_.size)

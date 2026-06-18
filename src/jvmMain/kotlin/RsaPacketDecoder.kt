@@ -1,16 +1,15 @@
 import HashTileShape.Companion.method2730
-import java.math.BigInteger
 
 /*
  * Class340
  */
-class RsaPacketDecoder internal constructor(mediaStreamClient: MediaStreamClient?, scriptCompilerThread: ScriptCompilerThread?, biginteger: BigInteger?, biginteger_14_: BigInteger?) {
+class RsaPacketDecoder internal constructor(mediaStreamClient: MediaStreamClient?, scriptCompilerThread: ScriptCompilerThread?, biginteger: BigInt?, biginteger_14_: BigInt?) {
     private val aMediaStreamClient_4212: MediaStreamClient?
-    private val aBigInteger4213: BigInteger?
+    private val aBigInteger4213: BigInt?
     private var aClass348_Sub49_4215: ByteBuffer? = null
     private var aClass314_Sub1Array4216: Array<ArchiveResourceProvider?>? = null
     private var aScriptCompilerThread_4217: ScriptCompilerThread? = null
-    private val aBigInteger4218: BigInteger?
+    private val aBigInteger4218: BigInt?
     private var aClass348_Sub42_Sub16_Sub1_4220: StreamingResourceRequest? = null
     fun method2670(i: Int) {
         anInt4222++
@@ -58,7 +57,7 @@ class RsaPacketDecoder internal constructor(mediaStreamClient: MediaStreamClient
         class348_sub49.method3389(2147483647, 0, `is`.size, `is`)
         val is_6_: ByteArray?
         if (aBigInteger4213 != null && aBigInteger4218 != null) {
-            val biginteger = BigInteger(`is`)
+            val biginteger = BigInt(`is`)
             val biginteger_7_ = biginteger.modPow(aBigInteger4213, aBigInteger4218)
             is_6_ = biginteger_7_.toByteArray()
         } else {

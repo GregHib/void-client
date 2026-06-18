@@ -1,6 +1,5 @@
 import direct.Direct3dModel
 import java.awt.Frame
-import java.math.BigInteger
 
 /*
  * Class52
@@ -18,7 +17,7 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
         @JvmField
         var anInt4895: Int = 0
         @JvmField
-        var aBigInteger4896: BigInteger? = BigInteger("10001", 16)
+        var aBigInteger4896: BigInt? = BigInt("10001", 16)
         @JvmField
         var anInt4897: Int = 0
         @JvmField

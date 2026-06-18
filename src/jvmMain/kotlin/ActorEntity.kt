@@ -1,7 +1,6 @@
 import WaterDetailOptionState.Companion.method1781
 import ArchiveResourceProvider.Companion.method2348
 import InputStream_Sub1.Companion.method125
-import java.math.BigInteger
 
 abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int) : SceneEntity() {
     var aShort8759: Short
@@ -59,7 +58,7 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
         @JvmField
         var anInt8761: Int = 0
         @JvmField
-        var aBigInteger8762: BigInteger? = BigInteger("10001", 16)
+        var aBigInteger8762: BigInt? = BigInt("10001", 16)
         @JvmField
         var anInt8763: Int = 0
         @JvmField

@@ -5,7 +5,6 @@ import jaggl.OpenGL.Companion.glDeleteObjectARB
 import jaggl.OpenGL.Companion.glGetInfoLogARB
 import jaggl.OpenGL.Companion.glGetObjectParameterivARB
 import jaggl.OpenGL.Companion.glShaderSourceARB
-import java.math.BigInteger
 
 class TimedTileQueueEntry internal constructor(i: Int, i_2_: Int) : HashLinkedListNode() {
     var anInt9650: Int = 0
@@ -57,7 +56,7 @@ class TimedTileQueueEntry internal constructor(i: Int, i_2_: Int) : HashLinkedLi
         var anInt9653: Int = 0
         var anInt9655: Int = 0
         var anInt9656: Int = 0
-        var aBigInteger9657: BigInteger? = Loader.FILE_SERVER_RSA_MODULUS
+        var aBigInteger9657: BigInt? = Loader.FILE_SERVER_RSA_MODULUS
         var aAbstractModelRenderer_9658: AbstractModelRenderer? = null
         var aAbstractModelRenderer_9659: AbstractModelRenderer? = null
         var aConnectionStateType_9660: ConnectionStateType? = null
