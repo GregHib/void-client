@@ -79,7 +79,7 @@ open class LinkedListNode {
                 }
                 val l = ((i_10_.toLong() shl 48) + (i_7_ + ((i_9_ shl 16) + (i_11_ shl 24))).toLong() - -(i_6_.toLong() shl 32))
                 var abstractModel_13_: AbstractModel?
-                synchronized(WidgetRedrawRegion.aLruByteCache_4254!!) {
+                withLock(WidgetRedrawRegion.aLruByteCache_4254!!) {
                     abstractModel_13_ = WidgetRedrawRegion.aLruByteCache_4254!!.method583(l, -64) as AbstractModel?
                 }
                 if (abstractModel_13_ == null || (var_renderer!!.method3667(abstractModel_13_.ua(), i_12_) != 0)) {
@@ -125,7 +125,7 @@ open class LinkedListNode {
                         i_25_++
                     }
                     abstractModel_13_ = var_renderer!!.method3625(modelDefinition, i_12_, MapSceneDefLoader.anInt2482, 64, 768)
-                    synchronized(WidgetRedrawRegion.aLruByteCache_4254!!) {
+                    withLock(WidgetRedrawRegion.aLruByteCache_4254!!) {
                         WidgetRedrawRegion.aLruByteCache_4254!!.method582(abstractModel_13_, l, (-103).toByte())
                     }
                 }

@@ -7,25 +7,25 @@ class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int
     fun method2600(i: Int, i_0_: Int): EmoteDefinition {
         anInt4084++
         var emoteDefinition: EmoteDefinition?
-        synchronized(aLruByteCache_4087!!) {
+        withLock(aLruByteCache_4087!!) {
             emoteDefinition = aLruByteCache_4087!!.method583(i.toLong(), -67) as EmoteDefinition?
         }
         if (emoteDefinition != null) return emoteDefinition
         if (i_0_ != 28364) anInt4086 = 117
         val `is`: ByteArray?
-        synchronized(aJs5Archive_4085!!) {
+        withLock(aJs5Archive_4085!!) {
             `is` = aJs5Archive_4085.method410(-1860, 11, i)
         }
         emoteDefinition = EmoteDefinition()
         if (`is` != null) emoteDefinition.method1924(ByteBuffer(`is`), (-127).toByte())
-        synchronized(aLruByteCache_4087!!) {
+        withLock(aLruByteCache_4087!!) {
             aLruByteCache_4087!!.method582(emoteDefinition, i.toLong(), (-114).toByte())
         }
         return emoteDefinition
     }
 
     fun method2601(i: Byte) {
-        synchronized(aLruByteCache_4087!!) {
+        withLock(aLruByteCache_4087!!) {
             aLruByteCache_4087!!.method590(0)
             val i_1_ = -46 / ((i - 3) / 47)
         }
@@ -34,14 +34,14 @@ class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int
 
     fun method2602(i: Int) {
         anInt4089++
-        synchronized(aLruByteCache_4087!!) {
+        withLock(aLruByteCache_4087!!) {
             aLruByteCache_4087!!.method587(-91)
             if (i != 0) aLruByteCache_4087 = null
         }
     }
 
     fun method2603(i: Int, i_2_: Int) {
-        synchronized(aLruByteCache_4087!!) {
+        withLock(aLruByteCache_4087!!) {
             if (i_2_ != 11) return
             aLruByteCache_4087!!.method578(2, i)
         }

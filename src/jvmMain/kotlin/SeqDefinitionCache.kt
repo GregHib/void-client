@@ -27,12 +27,12 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
     fun method2005(i: Int, i_0_: Int): NpcConfig {
         anInt3351++
         var npcConfig: NpcConfig?
-        synchronized(aLruByteCache_3350!!) {
+        withLock(aLruByteCache_3350!!) {
             npcConfig = aLruByteCache_3350!!.method583(i_0_.toLong(), i xor 0x32) as NpcConfig?
         }
         if (npcConfig != null) return npcConfig
         val `is`: ByteArray?
-        synchronized(aJs5Archive_3343!!) {
+        withLock(aJs5Archive_3343!!) {
             `is` = aJs5Archive_3343.method410(i + -1860, method1850(i_0_, 111), ScrollbarComponent.method185(i_0_, (-90).toByte()))
         }
         npcConfig = NpcConfig()
@@ -49,7 +49,7 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             npcConfig.anInt920 = 0
             npcConfig.aBoolean896 = false
         }
-        synchronized(aLruByteCache_3350!!) {
+        withLock(aLruByteCache_3350!!) {
             aLruByteCache_3350!!.method582(npcConfig, i_0_.toLong(), (-109).toByte())
         }
         return npcConfig
@@ -58,16 +58,16 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
     fun method2006(i: Int) {
         if (i >= 68) {
             anInt3353++
-            synchronized(aLruByteCache_3350!!) {
+            withLock(aLruByteCache_3350!!) {
                 aLruByteCache_3350!!.method587(-106)
             }
-            synchronized(this.aLruByteCache_3360) {
+            withLock(this.aLruByteCache_3360) {
                 this.aLruByteCache_3360.method587(-125)
             }
-            synchronized(this.aLruByteCache_3361!!) {
+            withLock(this.aLruByteCache_3361!!) {
                 this.aLruByteCache_3361!!.method587(-122)
             }
-            synchronized(this.aLruByteCache_3362!!) {
+            withLock(this.aLruByteCache_3362!!) {
                 this.aLruByteCache_3362!!.method587(-101)
             }
         }
@@ -85,47 +85,47 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
     fun method2009(i: Int, i_21_: Byte) {
         this.anInt3363 = i
         anInt3348++
-        synchronized(this.aLruByteCache_3360) {
+        withLock(this.aLruByteCache_3360) {
             this.aLruByteCache_3360.method590(0)
         }
-        synchronized(this.aLruByteCache_3361!!) {
+        withLock(this.aLruByteCache_3361!!) {
             this.aLruByteCache_3361!!.method590(0)
         }
         if (i_21_ < 94) anIntArray3347 = null
-        synchronized(this.aLruByteCache_3362!!) {
+        withLock(this.aLruByteCache_3362!!) {
             this.aLruByteCache_3362!!.method590(0)
         }
     }
 
     fun method2010(i: Int, i_22_: Int) {
         anInt3349++
-        synchronized(aLruByteCache_3350!!) {
+        withLock(aLruByteCache_3350!!) {
             aLruByteCache_3350!!.method578(2, i)
         }
-        synchronized(this.aLruByteCache_3360) {
+        withLock(this.aLruByteCache_3360) {
             this.aLruByteCache_3360.method578(i_22_ xor 0x2.inv(), i)
         }
-        synchronized(this.aLruByteCache_3361!!) {
+        withLock(this.aLruByteCache_3361!!) {
             this.aLruByteCache_3361!!.method578(i_22_ xor 0x2.inv(), i)
         }
-        synchronized(this.aLruByteCache_3362!!) {
+        withLock(this.aLruByteCache_3362!!) {
             this.aLruByteCache_3362!!.method578(2, i)
             if (i_22_ != -1) method2013(null, 96.toByte())
         }
     }
 
     fun method2012(i: Int) {
-        synchronized(aLruByteCache_3350!!) {
+        withLock(aLruByteCache_3350!!) {
             aLruByteCache_3350!!.method590(0)
         }
         anInt3356++
-        synchronized(this.aLruByteCache_3360) {
+        withLock(this.aLruByteCache_3360) {
             this.aLruByteCache_3360.method590(0)
         }
-        synchronized(this.aLruByteCache_3361!!) {
+        withLock(this.aLruByteCache_3361!!) {
             this.aLruByteCache_3361!!.method590(0)
         }
-        synchronized(this.aLruByteCache_3362!!) {
+        withLock(this.aLruByteCache_3362!!) {
             this.aLruByteCache_3362!!.method590(0)
         }
     }

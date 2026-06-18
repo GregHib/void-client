@@ -15,12 +15,12 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
     fun method2353(class318_sub1: SceneEntity, bool: Boolean) {
         class318_sub1.aBoolean6387 = bool
         anInt3944++
-        synchronized(aDoublyLinkedNodeList_3946) {
+        withLock(aDoublyLinkedNodeList_3946) {
             aDoublyLinkedNodeList_3946.method1869(-90, class318_sub1)
             anInt3957++
         }
         if (aSceneLoaderThread_3956 != null) {
-            synchronized(aSceneLoaderThread_3956!!) {
+            withLock(aSceneLoaderThread_3956!!) {
                 (aSceneLoaderThread_3956 as Object).notify()
             }
         }
@@ -34,13 +34,13 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
 
     fun method2359(class318_sub2: SceneModelBuilder, i: Int) {
         if (i != -1) method2362(45)
-        synchronized(aDoublyLinkedNodeList_3946) {
+        withLock(aDoublyLinkedNodeList_3946) {
             aDoublyLinkedNodeList_3946.method1869(-127, class318_sub2)
             anInt3957++
         }
         anInt3947++
         if (aSceneLoaderThread_3956 != null) {
-            synchronized(aSceneLoaderThread_3956!!) {
+            withLock(aSceneLoaderThread_3956!!) {
                 (aSceneLoaderThread_3956 as Object).notify()
             }
         }
@@ -55,13 +55,13 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
     fun method2361(i: Int, class318_sub1: SceneEntity) {
         class318_sub1.aBoolean6387 = true
         anInt3950++
-        synchronized(aDoublyLinkedNodeList_3946) {
+        withLock(aDoublyLinkedNodeList_3946) {
             aDoublyLinkedNodeList_3946.method1869(-122, class318_sub1)
             anInt3957++
         }
         if (i != -15481) this.aString3953 = null
         if (aSceneLoaderThread_3956 != null) {
-            synchronized(aSceneLoaderThread_3956!!) {
+            withLock(aSceneLoaderThread_3956!!) {
                 (aSceneLoaderThread_3956 as Object).notify()
             }
         }
@@ -71,7 +71,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
         anInt3952++
         val `object`: Any? = null
         val sceneLinkedListNode: SceneLinkedListNode?
-        synchronized(aDoublyLinkedNodeList_3946) {
+        withLock(aDoublyLinkedNodeList_3946) {
             sceneLinkedListNode = aDoublyLinkedNodeList_3946.method1872(8)
             sceneLinkedListNode!!.method2373(false)
             anInt3957--

@@ -6,7 +6,7 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
     private var aJs5Archive_366: Js5Archive? = null
     fun method299(i: Int, i_0_: Int) {
         if (i_0_ != 16) aJs5Archive_366 = null
-        synchronized(aLruByteCache_360!!) {
+        withLock(aLruByteCache_360!!) {
             aLruByteCache_360!!.method578(2, i)
         }
         anInt365++
@@ -15,7 +15,7 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
     fun method300(i: Byte) {
         anInt371++
         val i_1_ = 111 % ((i - -40) / 57)
-        synchronized(aLruByteCache_360!!) {
+        withLock(aLruByteCache_360!!) {
             aLruByteCache_360!!.method590(0)
         }
     }
@@ -23,25 +23,25 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
     fun method301(i: Int, i_2_: Int): WidgetTextConfig {
         anInt361++
         var widgetTextConfig: WidgetTextConfig?
-        synchronized(aLruByteCache_360!!) {
+        withLock(aLruByteCache_360!!) {
             widgetTextConfig = aLruByteCache_360!!.method583(i.toLong(), -91) as WidgetTextConfig?
         }
         if (widgetTextConfig != null) return widgetTextConfig
         val `is`: ByteArray?
-        synchronized(aJs5Archive_366!!) {
+        withLock(aJs5Archive_366!!) {
             `is` = aJs5Archive_366!!.method410(-1860, 30, i)
         }
         if (i_2_ < 6) aLruByteCache_360 = null
         widgetTextConfig = WidgetTextConfig()
         if (`is` != null) widgetTextConfig.method364(ByteBuffer(`is`), 54.toByte())
-        synchronized(aLruByteCache_360!!) {
+        withLock(aLruByteCache_360!!) {
             aLruByteCache_360!!.method582(widgetTextConfig, i.toLong(), (-109).toByte())
         }
         return widgetTextConfig
     }
 
     fun method302(i: Int) {
-        synchronized(aLruByteCache_360!!) {
+        withLock(aLruByteCache_360!!) {
             if (i != -797644856) aAbstractModelRendererArray367 = null
             aLruByteCache_360!!.method587(i xor 0x2f8b186f)
         }

@@ -148,7 +148,7 @@ class CompositeNpcModelBuilder {
                 if (bool_14_) i_9_ = i_9_ or 0x400
             }
             var abstractModel: AbstractModel?
-            synchronized(ModelDataCache.aLruByteCache_355!!) {
+            withLock(ModelDataCache.aLruByteCache_355!!) {
                 abstractModel = ModelDataCache.aLruByteCache_355!!.method583(l, -47) as AbstractModel?
             }
             var npcDefinition: NpcDefinition? = null
@@ -165,7 +165,7 @@ class CompositeNpcModelBuilder {
                 }
                 if (bool_37_) {
                     if (aLong2094 != -1L) {
-                        synchronized(ModelDataCache.aLruByteCache_355!!) {
+                        withLock(ModelDataCache.aLruByteCache_355!!) {
                             abstractModel = ModelDataCache.aLruByteCache_355!!.method583(aLong2094, -92) as AbstractModel?
                         }
                     }
@@ -220,7 +220,7 @@ class CompositeNpcModelBuilder {
                     }
                     if (bool) {
                         abstractModel.s(i_9_)
-                        synchronized(ModelDataCache.aLruByteCache_355!!) {
+                        withLock(ModelDataCache.aLruByteCache_355!!) {
                             ModelDataCache.aLruByteCache_355!!.method582(abstractModel, l, (-98).toByte())
                         }
                         aLong2094 = l
@@ -364,7 +364,7 @@ class CompositeNpcModelBuilder {
             }
             if (i != -402058072) aLong2094 = -101L
             var abstractModel: AbstractModel?
-            synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+            withLock(ModelBatchBase.aLruByteCache_1894!!) {
                 abstractModel = ModelBatchBase.aLruByteCache_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as AbstractModel?
             }
             if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_70_) != 0) {
@@ -403,7 +403,7 @@ class CompositeNpcModelBuilder {
                     }
                 }
                 abstractModel.s(i_70_)
-                synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+                withLock(ModelBatchBase.aLruByteCache_1894!!) {
                     ModelBatchBase.aLruByteCache_1894!!.method582(abstractModel, aLong2102, (-97).toByte())
                 }
             }
@@ -471,7 +471,7 @@ class CompositeNpcModelBuilder {
             }
             val l = i_95_.toLong() or ((i_93_ shl 16).toLong() or (i_92_.toLong() shl 32))
             var abstractModel: AbstractModel?
-            synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+            withLock(ModelBatchBase.aLruByteCache_1894!!) {
                 abstractModel = ModelBatchBase.aLruByteCache_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as AbstractModel?
             }
             if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_98_) != 0) {
@@ -497,7 +497,7 @@ class CompositeNpcModelBuilder {
                     }
                 }
                 abstractModel.s(i_98_)
-                synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+                withLock(ModelBatchBase.aLruByteCache_1894!!) {
                     ModelBatchBase.aLruByteCache_1894!!.method582(abstractModel, l, (-109).toByte())
                 }
             }

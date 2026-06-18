@@ -167,7 +167,7 @@ class NpcConfig {
             }
             if (bool) i_11_ = i_11_ or 0x40000
             var modelOrSpriteHolder: ModelOrSpriteHolder?
-            synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!) {
+            withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!) {
                 modelOrSpriteHolder = this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!.method583(l, i_10_ + -25) as ModelOrSpriteHolder?
             }
             var class64 = if (modelOrSpriteHolder == null) null else modelOrSpriteHolder.aAbstractModel_119
@@ -184,7 +184,7 @@ class NpcConfig {
                 modelOrSpriteHolder = ModelOrSpriteHolder()
                 modelOrSpriteHolder.aAbstractModel_119 = class64
                 modelOrSpriteHolder.aRenderNode118 = var_renderNode
-                synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!) {
+                withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!) {
                     this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!.method582(modelOrSpriteHolder, l, (-120).toByte())
                 }
             } else {
@@ -250,7 +250,7 @@ class NpcConfig {
                 l = l * 67783L + anIntArrayArray907!![i_21_]!![i_24_].toLong()
                 i_24_++
             }
-            synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3360) {
+            withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3360) {
                 abstractModel = this.aSeqDefinitionCache_933!!.aLruByteCache_3360.method583(l, 78) as AbstractModel?
             }
             if (abstractModel != null) {
@@ -261,9 +261,9 @@ class NpcConfig {
                 var i_25_ = i_17_ or 0x1f01f
                 if (abstractModel != null) i_25_ = var_renderer.method3679(i_25_, abstractModel.ua())
                 var modelDefinition: ModelDefinition? = null
-                synchronized(TileRenderState.aModelDefinitionArray4236s!!) {
+                withLock(TileRenderState.aModelDefinitionArray4236s!!) {
                     for (i_26_ in 0..<i_23_) {
-                        synchronized(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
+                        withLock(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
                             modelDefinition = ParticleConfigParser.method2277(0, (this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
                         }
                         if (modelDefinition == null) return null
@@ -273,7 +273,7 @@ class NpcConfig {
                     if (i_23_ > 1) modelDefinition = ModelDefinition(TileRenderState.aModelDefinitionArray4236s!!, i_23_)
                 }
                 abstractModel = var_renderer.method3625(modelDefinition, i_25_, (this.aSeqDefinitionCache_933!!.anInt3363), i_18_, i_19_)
-                synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3360) {
+                withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3360) {
                     this.aSeqDefinitionCache_933!!.aLruByteCache_3360.method582(abstractModel, l, (-95).toByte())
                 }
             }
@@ -313,7 +313,7 @@ class NpcConfig {
         if (i_30_ != -31076) return false
         anInt901++
         if (anIntArrayArray907 == null) return true
-        synchronized(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
+        withLock(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
             var i_31_ = 0
             while (aByteArray885!!.size > i_31_) {
                 if (aByteArray885!![i_31_].toInt() == i) {
@@ -602,14 +602,14 @@ class NpcConfig {
             } else i_67_ = i_67_ or 0x7
             if (i_64_ == 10 && i_66_ > 3) i_67_ = i_67_ or 0x5
             var abstractModel: AbstractModel?
-            synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!) {
+            withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!) {
                 abstractModel = this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!.method583(l, 100) as AbstractModel?
             }
             if (abstractModel == null || var_renderer.method3667(abstractModel.ua(), i_67_) != 0) {
                 if (abstractModel != null) i_67_ = var_renderer.method3679(i_67_, abstractModel.ua())
                 abstractModel = method477(i_66_, var_renderer, i_64_, -125, i_67_)
                 if (abstractModel == null) return null
-                synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!) {
+                withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!) {
                     this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!.method582(abstractModel, l, (-127).toByte())
                 }
             }
@@ -663,7 +663,7 @@ class NpcConfig {
         if (i != 9773) method485(-109)
         if (anIntArrayArray907 == null) return true
         var bool = true
-        synchronized(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
+        withLock(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
             for (i_77_ in anIntArrayArray907!!.indices) {
                 var i_78_ = 0
                 while ((anIntArrayArray907!![i_77_]!!.size > i_78_)) {

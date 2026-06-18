@@ -37,11 +37,11 @@ class CollisionFlagQuery {
         fun method720(i: Int, i_0_: Int) {
             anInt1193++
             HeapDiagnosticsHolder.anInt2251 = i
-            synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+            withLock(ModelBatchBase.aLruByteCache_1894!!) {
                 if (i_0_ != 1226) aObjectByteSerializerHolder_1201 = null
                 ModelBatchBase.aLruByteCache_1894!!.method590(0)
             }
-            synchronized(ModelDataCache.aLruByteCache_355!!) {
+            withLock(ModelDataCache.aLruByteCache_355!!) {
                 ModelDataCache.aLruByteCache_355!!.method590(0)
             }
         }

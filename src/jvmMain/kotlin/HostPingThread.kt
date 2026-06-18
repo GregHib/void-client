@@ -30,7 +30,7 @@ class HostPingThread : Runnable {
 
     fun runClass348(): NamedIdEntry? {
         val class348_sub26: NamedIdEntry?
-        synchronized(aNodeDeque_2258!!) {
+        withLock(aNodeDeque_2258!!) {
             var linkedListNode: LinkedListNode?
             linkedListNode = aNodeDeque_2258!!.method1997(8)
             while (linkedListNode == null) {
@@ -75,7 +75,7 @@ class HostPingThread : Runnable {
 
     private fun method1304(i: Int, linkedListNode: LinkedListNode) {
         if (i != 1000) method1303(95.toByte())
-        synchronized(aNodeDeque_2258!!) {
+        withLock(aNodeDeque_2258!!) {
             aNodeDeque_2258!!.method1999(linkedListNode, -20180)
             (aNodeDeque_2258 as Object).notify()
         }

@@ -11,10 +11,10 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
 
     fun method1598(i: Int) {
         anInt2863++
-        synchronized(aLruByteCache_2875) {
+        withLock(aLruByteCache_2875) {
             aLruByteCache_2875.method587(-103)
         }
-        synchronized(this.aLruByteCache_2862) {
+        withLock(this.aLruByteCache_2862) {
             if (i <= 42) method1598(36)
             this.aLruByteCache_2862.method587(-126)
         }
@@ -23,40 +23,40 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
     fun method1601(i: Int, i_15_: Int): ItemModelDefinition {
         anInt2874++
         var itemModelDefinition: ItemModelDefinition?
-        synchronized(aLruByteCache_2875) {
+        withLock(aLruByteCache_2875) {
             itemModelDefinition = aLruByteCache_2875.method583(i_15_.toLong(), i + -148) as ItemModelDefinition?
         }
         if (itemModelDefinition != null) return itemModelDefinition
         val `is`: ByteArray?
-        synchronized(aJs5Archive_2866!!) {
+        withLock(aJs5Archive_2866!!) {
             `is` = aJs5Archive_2866.method410(-1860, i, i_15_)
         }
         itemModelDefinition = ItemModelDefinition()
         itemModelDefinition.aModelDefinitionCache_438 = this
         if (`is` != null) itemModelDefinition.method332(i xor 0x55.inv(), ByteBuffer(`is`))
-        synchronized(aLruByteCache_2875) {
+        withLock(aLruByteCache_2875) {
             aLruByteCache_2875.method582(itemModelDefinition, i_15_.toLong(), (-109).toByte())
         }
         return itemModelDefinition
     }
 
     fun method1602(i: Int) {
-        synchronized(aLruByteCache_2875) {
+        withLock(aLruByteCache_2875) {
             aLruByteCache_2875.method590(i)
         }
         anInt2865++
-        synchronized(this.aLruByteCache_2862) {
+        withLock(this.aLruByteCache_2862) {
             this.aLruByteCache_2862.method590(0)
         }
     }
 
     fun method1603(i: Int, i_16_: Int) {
         anInt2870++
-        synchronized(aLruByteCache_2875) {
+        withLock(aLruByteCache_2875) {
             aLruByteCache_2875.method578(2, i)
             if (i_16_ >= -22) this.aJs5Archive_2873 = null
         }
-        synchronized(this.aLruByteCache_2862) {
+        withLock(this.aLruByteCache_2862) {
             this.aLruByteCache_2862.method578(2, i)
         }
     }

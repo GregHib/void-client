@@ -14,24 +14,24 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
     fun method1983(i: Int, i_9_: Int): NpcDefinition {
         anInt3320++
         var npcDefinition: NpcDefinition?
-        synchronized(aLruByteCache_3321) {
+        withLock(aLruByteCache_3321) {
             npcDefinition = aLruByteCache_3321.method583(i.toLong(), 69) as NpcDefinition?
         }
         if (npcDefinition != null) return npcDefinition
         val `is`: ByteArray?
-        synchronized(aJs5Archive_3319!!) {
+        withLock(aJs5Archive_3319!!) {
             `is` = aJs5Archive_3319.method410(-1860, i_9_, i)
         }
         npcDefinition = NpcDefinition()
         if (`is` != null) npcDefinition.method1620(ByteBuffer(`is`), -108)
-        synchronized(aLruByteCache_3321) {
+        withLock(aLruByteCache_3321) {
             aLruByteCache_3321.method582(npcDefinition, i.toLong(), (-109).toByte())
         }
         return npcDefinition
     }
 
     fun method1984(i: Byte, i_10_: Int) {
-        synchronized(aLruByteCache_3321) {
+        withLock(aLruByteCache_3321) {
             aLruByteCache_3321.method578(2, i_10_)
         }
         anInt3315++
@@ -40,13 +40,13 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
 
     fun method1985(i: Int) {
         anInt3317++
-        synchronized(aLruByteCache_3321) {
+        withLock(aLruByteCache_3321) {
             aLruByteCache_3321.method590(i)
         }
     }
 
     fun method1986(i: Byte) {
-        synchronized(aLruByteCache_3321) {
+        withLock(aLruByteCache_3321) {
             aLruByteCache_3321.method587(-112)
         }
         val i_11_ = 119 / ((i - 47) / 55)

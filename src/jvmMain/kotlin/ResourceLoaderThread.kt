@@ -61,7 +61,7 @@ class ResourceLoaderThread : Runnable {
     }
 
     private fun skip(): Boolean {
-        synchronized(this) {
+        withLock(this) {
             try {
                 anInt3920++
                 if (anCursorController_3907 is LoadingBarRenderer) anCursorController_3907.method58(aBoolean3908, -104)

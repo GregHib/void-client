@@ -54,11 +54,11 @@ object CalendarUtil {
     }
 
     fun method2638(i: Int) {
-        synchronized(ModelDataCache.aLruByteCache_355!!) {
+        withLock(ModelDataCache.aLruByteCache_355!!) {
             ModelDataCache.aLruByteCache_355!!.method587(-98)
         }
         anInt4136++
-        synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+        withLock(ModelBatchBase.aLruByteCache_1894!!) {
             ModelBatchBase.aLruByteCache_1894!!.method587(i + 4530)
         }
         if (i != -4631) anInt4135 = 37

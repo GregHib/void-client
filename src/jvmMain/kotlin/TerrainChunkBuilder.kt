@@ -231,10 +231,10 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
         @JvmStatic
         fun method876(i: Int, i_23_: Int) {
             anInt1557++
-            synchronized(ModelDataCache.aLruByteCache_355!!) {
+            withLock(ModelDataCache.aLruByteCache_355!!) {
                 ModelDataCache.aLruByteCache_355!!.method578(2, i)
             }
-            synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+            withLock(ModelBatchBase.aLruByteCache_1894!!) {
                 ModelBatchBase.aLruByteCache_1894!!.method578(2, i)
                 if (i_23_ != 0) method876(51, 108)
             }

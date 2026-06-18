@@ -50,7 +50,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
                 throw IOException()
             }
             if (aByteArray2663 == null) aByteArray2663 = ByteArray(anInt2669)
-            synchronized(this) {
+            withLock(this) {
                 if (i_6_ == -1) {
                     for (i_7_ in 0..<i) {
                         aByteArray2663!![anInt2648] = `is`[i_7_ + i_5_]
@@ -93,7 +93,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
                 if (anInt2648 == anInt2656 && aBoolean2654) {
                     break
                 }
-                synchronized(this) {
+                withLock(this) {
                     if (anInt2648 == anInt2656) {
 //                        if (aBoolean2654) break
                         try {
@@ -158,7 +158,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
     fun method1476(i: Byte) {
         anInt2660++
         if (!aBoolean2654) {
-            synchronized(this) {
+            withLock(this) {
                 aBoolean2654 = true
                 if (i > -120) method1476((-105).toByte())
                 (this as Object).notifyAll()

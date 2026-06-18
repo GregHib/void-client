@@ -13,7 +13,7 @@ class IndexedFileCache internal constructor(i: Int, bufferedRandomAccessFile: Bu
     fun method1160(i: Int, i_0_: Int, `is`: ByteArray?, i_1_: Int): Boolean {
         if (i_1_ != -7305) return true
         anInt1935++
-        synchronized(aBufferedRandomAccessFile_1933!!) {
+        withLock(aBufferedRandomAccessFile_1933!!) {
             require(!(i < 0 || i > anInt1939))
             var bool = method1162(`is`, -15096, i_0_, i, true)
             if (!bool) bool = method1162(`is`, -15096, i_0_, i, false)
@@ -23,7 +23,7 @@ class IndexedFileCache internal constructor(i: Int, bufferedRandomAccessFile: Bu
 
     fun method1161(i: Byte, i_2_: Int): ByteArray? {
         anInt1937++
-        synchronized(aBufferedRandomAccessFile_1933!!) {
+        withLock(aBufferedRandomAccessFile_1933!!) {
             try {
                 if ((6 * i_2_ - -6).toLong() > aBufferedRandomAccessFile_1938!!.method787(0)) return null
                 aBufferedRandomAccessFile_1938!!.method789((6 * i_2_).toLong(), (-106).toByte())
@@ -62,7 +62,7 @@ class IndexedFileCache internal constructor(i: Int, bufferedRandomAccessFile: Bu
     private fun method1162(`is`: ByteArray?, i: Int, i_13_: Int, i_14_: Int, bool: Boolean): Boolean {
         var bool = bool
         anInt1936++
-        synchronized(aBufferedRandomAccessFile_1933!!) {
+        withLock(aBufferedRandomAccessFile_1933!!) {
             try {
                 var i_15_: Int
                 if (bool) {

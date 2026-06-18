@@ -73,7 +73,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
     override fun run() {
         while (true) {
             val linkedQueueNode: LinkedQueueNode?
-            synchronized(this) {
+            withLock(this) {
                 while (true) {
                     if (aBoolean3801) return
                     if (aLinkedQueueNode_3797 != null) {
@@ -192,14 +192,14 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                 }
                 linkedQueueNode!!.anInt1997 = 2
             }
-            synchronized(linkedQueueNode) {
+            withLock(linkedQueueNode) {
                 (linkedQueueNode as Object).notify()
             }
         }
     }
 
     fun method2234(i: Byte) {
-        synchronized(this) {
+        withLock(this) {
             aBoolean3801 = true
             (this as Object).notifyAll()
         }
@@ -310,7 +310,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
         linkedQueueNode.anInt1999 = i_19_
         linkedQueueNode.anInt1994 = i_20_
         linkedQueueNode.anInt2000 = i_21_
-        synchronized(this) {
+        withLock(this) {
             if (aLinkedQueueNode_3798 == null) {
                 aLinkedQueueNode_3797 = linkedQueueNode
                 aLinkedQueueNode_3798 = aLinkedQueueNode_3797

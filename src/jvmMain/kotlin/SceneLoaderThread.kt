@@ -31,7 +31,7 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
     fun method2205() {
         aBoolean3750 = false
         aBoolean3745 = false
-        synchronized(this) {
+        withLock(this) {
             (this as Object).notify()
         }
     }
@@ -48,7 +48,7 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
             if (aCacheIndexManager_3743 == null || aCacheIndexManager_3743!!.method2360(-112)) {
                 aBoolean3744 = false
                 aLong3742 = MinimapLineDrawer.aNanoTimer_5262!!.method446(1)
-                synchronized(this) {
+                withLock(this) {
                     try {
                         (this as Object).wait()
                     } catch (interruptedexception: InterruptedException) {
@@ -87,7 +87,7 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
         }
         aRenderer3746.method3678(anInt3749)
         while (aBoolean3750 && aBoolean3745) {
-            synchronized(this) {
+            withLock(this) {
                 try {
                     (this as Object).wait()
                 } catch (interruptedexception: InterruptedException) {
@@ -99,14 +99,14 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
 
     fun method2208() {
         aBoolean3750 = true
-        synchronized(this) {
+        withLock(this) {
             (this as Object).notify()
         }
     }
 
     fun method2209() {
         aBoolean3750 = false
-        synchronized(this) {
+        withLock(this) {
             (this as Object).notify()
         }
     }

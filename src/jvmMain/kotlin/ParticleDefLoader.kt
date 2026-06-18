@@ -10,7 +10,7 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
     fun method1377(i: Int) {
         anInt2457++
         if (i != 2) method1376(null)
-        synchronized(aLruByteCache_2458) {
+        withLock(aLruByteCache_2458) {
             aLruByteCache_2458.method587(-125)
         }
     }
@@ -19,24 +19,24 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         anInt2460++
         if (bool != true) return null
         var hslColorConfig: HslColorConfig?
-        synchronized(aLruByteCache_2458) {
+        withLock(aLruByteCache_2458) {
             hslColorConfig = aLruByteCache_2458.method583(i.toLong(), 77) as HslColorConfig?
         }
         if (hslColorConfig != null) return hslColorConfig
         val `is`: ByteArray?
-        synchronized(aJs5Archive_2461!!) {
+        withLock(aJs5Archive_2461!!) {
             `is` = aJs5Archive_2461.method410(-1860, 1, i)
         }
         hslColorConfig = HslColorConfig()
         if (`is` != null) hslColorConfig.method290(ByteBuffer(`is`), -1)
-        synchronized(aLruByteCache_2458) {
+        withLock(aLruByteCache_2458) {
             aLruByteCache_2458.method582(hslColorConfig, i.toLong(), (-124).toByte())
         }
         return hslColorConfig
     }
 
     fun method1381(bool: Boolean) {
-        synchronized(aLruByteCache_2458) {
+        withLock(aLruByteCache_2458) {
             if (bool != true) method1382(-96, 76)
             aLruByteCache_2458.method590(0)
         }
@@ -45,7 +45,7 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
 
     fun method1383(i: Int, i_7_: Int) {
         anInt2467++
-        synchronized(aLruByteCache_2458) {
+        withLock(aLruByteCache_2458) {
             aLruByteCache_2458.method578(2, i_7_)
         }
         if (i != 32841) anInt2464 = 86

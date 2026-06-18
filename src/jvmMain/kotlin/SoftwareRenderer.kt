@@ -1278,7 +1278,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
 
     fun method3718(i: Int): IntArray? {
         var class348_sub25: ImageBoxBlurScroller?
-        synchronized(aLruByteCache_7498) {
+        withLock(aLruByteCache_7498) {
             class348_sub25 = aLruByteCache_7498.method583(i.toLong(), 77) as ImageBoxBlurScroller?
             if (class348_sub25 == null) {
                 if (!this.aRenderConfig4579!!.method4(-7953, i)) return null
@@ -1322,7 +1322,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
 
     fun method3719(i: Int): IntArray? {
         var class348_sub25: ImageBoxBlurScroller?
-        synchronized(aLruByteCache_7498) {
+        withLock(aLruByteCache_7498) {
             class348_sub25 = (aLruByteCache_7498.method583(i.toLong() or 0x7fffffffffffffffL.inv(), 107) as ImageBoxBlurScroller?)
             if (class348_sub25 == null) {
                 if (!this.aRenderConfig4579!!.method4(-7953, i)) return null

@@ -19,7 +19,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     private val aStringArray3293: Array<String?>
 
     fun method1930(i: Int) {
-        synchronized(this.aLruByteCache_3287) {
+        withLock(this.aLruByteCache_3287) {
             this.aLruByteCache_3287.method590(0)
             if (i != -21804) method1930(-35)
         }
@@ -73,7 +73,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
 
     fun method1936(i: Int) {
         anInt3281++
-        synchronized(this.aSizeBoundedSoftCache_3288) {
+        withLock(this.aSizeBoundedSoftCache_3288) {
             this.aSizeBoundedSoftCache_3288.method1345((-126).toByte())
             val i_12_ = -63 / ((21 - i) / 50)
         }
@@ -81,42 +81,42 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
 
     fun method1937(i: Int, bool: Boolean) {
         anInt3274++
-        synchronized(aLruByteCache_3278) {
+        withLock(aLruByteCache_3278) {
             aLruByteCache_3278.method578(2, i)
         }
-        synchronized(this.aLruByteCache_3287) {
+        withLock(this.aLruByteCache_3287) {
             if (bool != false) method1939(-11)
             this.aLruByteCache_3287.method578(2, i)
         }
-        synchronized(this.aSizeBoundedSoftCache_3288) {
+        withLock(this.aSizeBoundedSoftCache_3288) {
             this.aSizeBoundedSoftCache_3288.method1346(-1491, i)
         }
     }
 
     fun method1938(i: Int) {
         anInt3272++
-        synchronized(aLruByteCache_3278) {
+        withLock(aLruByteCache_3278) {
             aLruByteCache_3278.method587(-88)
         }
-        synchronized(this.aLruByteCache_3287) {
+        withLock(this.aLruByteCache_3287) {
             this.aLruByteCache_3287.method587(-85)
         }
-        synchronized(this.aSizeBoundedSoftCache_3288) {
+        withLock(this.aSizeBoundedSoftCache_3288) {
             this.aSizeBoundedSoftCache_3288.method1344((-124).toByte())
         }
         if (i < 105) this.aJs5Archive_3268 = null
     }
 
     fun method1939(i: Int) {
-        synchronized(aLruByteCache_3278) {
+        withLock(aLruByteCache_3278) {
             if (i > -28) aEmoteDefCache_3292 = null
             aLruByteCache_3278.method590(0)
         }
         anInt3277++
-        synchronized(this.aLruByteCache_3287) {
+        withLock(this.aLruByteCache_3287) {
             this.aLruByteCache_3287.method590(0)
         }
-        synchronized(this.aSizeBoundedSoftCache_3288) {
+        withLock(this.aSizeBoundedSoftCache_3288) {
             this.aSizeBoundedSoftCache_3288.method1345(47.toByte())
         }
     }
@@ -124,12 +124,12 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     fun method1940(i: Int, i_13_: Int): ItemDefinition {
         anInt3283++
         var itemDefinition: ItemDefinition?
-        synchronized(aLruByteCache_3278) {
+        withLock(aLruByteCache_3278) {
             itemDefinition = aLruByteCache_3278.method583(i_13_.toLong(), 90) as ItemDefinition?
         }
         if (itemDefinition != null) return itemDefinition
         val `is`: ByteArray?
-        synchronized(aJs5Archive_3267!!) {
+        withLock(aJs5Archive_3267!!) {
             `is` = aJs5Archive_3267.method410(-1860, method500(7, i_13_), ConfigFlagUtil.Companion.method1914(-23590, i_13_))
         }
         itemDefinition = ItemDefinition()
@@ -161,7 +161,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 if (!bool) itemDefinition.aHashtable_2757 = null
             }
         }
-        synchronized(aLruByteCache_3278) {
+        withLock(aLruByteCache_3278) {
             aLruByteCache_3278.method582(itemDefinition, i_13_.toLong(), (-118).toByte())
         }
         return itemDefinition
@@ -187,7 +187,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     fun method1942(i: Int, i_20_: Byte) {
         this.anInt3291 = i
         anInt3284++
-        synchronized(this.aLruByteCache_3287) {
+        withLock(this.aLruByteCache_3287) {
             this.aLruByteCache_3287.method590(0)
             val i_21_ = 89 % ((-65 - i_20_) / 60)
         }

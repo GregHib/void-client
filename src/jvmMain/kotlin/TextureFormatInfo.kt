@@ -42,7 +42,7 @@ class TextureFormatInfo internal constructor(var anInt3850: Int) {
                 var bool = true
                 for (i in NormalMapTextureNode.aSceneLoaderThreadArray9432!!.indices) {
                     if (!NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2210()) {
-                        synchronized(NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!) {
+                        withLock(NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!) {
                             (NormalMapTextureNode.aSceneLoaderThreadArray9432!![i] as Object).notify()
                         }
                         bool = false
@@ -61,7 +61,7 @@ class TextureFormatInfo internal constructor(var anInt3850: Int) {
                 var bool = true
                 for (i in 0..<NormalMapTextureNode.aSceneLoaderThreadArray9432!!.size - 1) {
                     if (!NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2210()) {
-                        synchronized(NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!) {
+                        withLock(NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!) {
                             (NormalMapTextureNode.aSceneLoaderThreadArray9432!![i] as Object).notify()
                         }
                         bool = false
@@ -77,7 +77,7 @@ class TextureFormatInfo internal constructor(var anInt3850: Int) {
             for (i in 1..<NormalMapTextureNode.aSceneLoaderThreadArray9432!!.size - 2) NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2208()
             method2131(2)
             while (!NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2210()) {
-                synchronized(NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!) {
+                withLock(NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!) {
                     (NormalMapTextureNode.aSceneLoaderThreadArray9432!![0] as Object).notify()
                 }
                 try {

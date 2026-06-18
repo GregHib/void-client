@@ -27,22 +27,22 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
     fun method2073(i: Int, i_0_: Int) {
         this.anInt3593 = i_0_
         anInt3591++
-        synchronized(this.aLruByteCache_3590!!) {
+        withLock(this.aLruByteCache_3590!!) {
             this.aLruByteCache_3590!!.method590(0)
         }
-        synchronized(this.aLruByteCache_3592) {
+        withLock(this.aLruByteCache_3592) {
             this.aLruByteCache_3592.method590(0)
         }
         if (i != -25032) method2079(-66, 101)
     }
 
     fun method2074(i: Int) {
-        synchronized(this.aLruByteCache_3590!!) {
+        withLock(this.aLruByteCache_3590!!) {
             this.aLruByteCache_3590!!.method590(0)
         }
         if (i < -94) {
             anInt3582++
-            synchronized(this.aLruByteCache_3592) {
+            withLock(this.aLruByteCache_3592) {
                 this.aLruByteCache_3592.method590(0)
             }
         }
@@ -50,28 +50,28 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
 
     fun method2076(i: Int, bool: Boolean) {
         anInt3589++
-        synchronized(aLruByteCache_3577!!) {
+        withLock(aLruByteCache_3577!!) {
             aLruByteCache_3577!!.method578(2, i)
         }
-        synchronized(this.aLruByteCache_3590!!) {
+        withLock(this.aLruByteCache_3590!!) {
             this.aLruByteCache_3590!!.method578(2, i)
         }
         if (bool != true) method2072(120.toByte(), true)
-        synchronized(this.aLruByteCache_3592) {
+        withLock(this.aLruByteCache_3592) {
             this.aLruByteCache_3592.method578(2, i)
         }
     }
 
     fun method2078(i: Int) {
         anInt3579++
-        synchronized(aLruByteCache_3577!!) {
+        withLock(aLruByteCache_3577!!) {
             if (i != -6080) this.aLruByteCache_3590 = null
             aLruByteCache_3577!!.method590(i + 6080)
         }
-        synchronized(this.aLruByteCache_3590!!) {
+        withLock(this.aLruByteCache_3590!!) {
             this.aLruByteCache_3590!!.method590(i + 6080)
         }
-        synchronized(this.aLruByteCache_3592) {
+        withLock(this.aLruByteCache_3592) {
             this.aLruByteCache_3592.method590(0)
         }
     }
@@ -79,12 +79,12 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
     fun method2079(i: Int, i_6_: Int): NpcType {
         anInt3586++
         var npcType: NpcType?
-        synchronized(aLruByteCache_3577!!) {
+        withLock(aLruByteCache_3577!!) {
             npcType = aLruByteCache_3577!!.method583(i.toLong(), -104) as NpcType?
         }
         if (npcType != null) return npcType
         val `is`: ByteArray?
-        synchronized(aJs5Archive_3585!!) {
+        withLock(aJs5Archive_3585!!) {
             `is` = aJs5Archive_3585.method410(i_6_ + -1859, method1060(i, 69.toByte()), method1920(127, i))
         }
         npcType = NpcType()
@@ -92,7 +92,7 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
         npcType.aBufferedMessageQueue_1348 = this
         if (`is` != null) npcType.method798(111, ByteBuffer(`is`))
         npcType.method799(-117)
-        synchronized(aLruByteCache_3577!!) {
+        withLock(aLruByteCache_3577!!) {
             aLruByteCache_3577!!.method582(npcType, i.toLong(), (-102).toByte())
             if (i_6_ != -1) aLruByteCache_3577 = null
         }
@@ -101,13 +101,13 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
 
     fun method2080(i: Int) {
         anInt3587++
-        synchronized(aLruByteCache_3577!!) {
+        withLock(aLruByteCache_3577!!) {
             aLruByteCache_3577!!.method587(-118)
         }
-        synchronized(this.aLruByteCache_3590!!) {
+        withLock(this.aLruByteCache_3590!!) {
             this.aLruByteCache_3590!!.method587(-100)
         }
-        synchronized(this.aLruByteCache_3592) {
+        withLock(this.aLruByteCache_3592) {
             this.aLruByteCache_3592.method587(-107)
         }
         if (i <= 122) method2075(-125, -46, 9)

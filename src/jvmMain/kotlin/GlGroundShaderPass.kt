@@ -189,7 +189,7 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
         fun method3556(bool: Boolean) {
             anInt7405++
             if (bool == false) {
-                synchronized(NpcType.aClient1367!!) {
+                withLock(NpcType.aClient1367!!) {
                     if (SkeletalAnimFrameLoader.aFrame476 == null) {
                         val container: Container
                         if (RsaVarbitHandler.aFrame4904 != null) container = RsaVarbitHandler.aFrame4904!!

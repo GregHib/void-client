@@ -9,25 +9,25 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
         anInt2056++
         if (i.toInt() != 33) aJs5Archive_2048 = null
         var skeletalAnimFrameLoader: SkeletalAnimFrameLoader?
-        synchronized(aLruByteCache_2050) {
+        withLock(aLruByteCache_2050) {
             skeletalAnimFrameLoader = aLruByteCache_2050.method583(i_3_.toLong(), -58) as SkeletalAnimFrameLoader?
         }
         if (skeletalAnimFrameLoader != null) return skeletalAnimFrameLoader
         val `is`: ByteArray?
-        synchronized(aJs5Archive_2048!!) {
+        withLock(aJs5Archive_2048!!) {
             `is` = aJs5Archive_2048!!.method410(i + -1893, 3, i_3_)
         }
         skeletalAnimFrameLoader = SkeletalAnimFrameLoader()
         skeletalAnimFrameLoader.aModelDefinitionLoader_475 = this
         if (`is` != null) skeletalAnimFrameLoader.method346(i.toInt().inv(), ByteBuffer(`is`))
-        synchronized(aLruByteCache_2050) {
+        withLock(aLruByteCache_2050) {
             aLruByteCache_2050.method582(skeletalAnimFrameLoader, i_3_.toLong(), (-109).toByte())
         }
         return skeletalAnimFrameLoader
     }
 
     fun method1204(i: Int) {
-        synchronized(aLruByteCache_2050) {
+        withLock(aLruByteCache_2050) {
             aLruByteCache_2050.method587(-93)
         }
         anInt2049++
@@ -37,7 +37,7 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
     fun method1206(i: Byte) {
         if (i.toInt() != -37) aJs5Archive_2048 = null
         anInt2051++
-        synchronized(aLruByteCache_2050) {
+        withLock(aLruByteCache_2050) {
             aLruByteCache_2050.method590(0)
         }
     }
@@ -45,7 +45,7 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
     fun method1207(i: Int, i_7_: Int) {
         anInt2055++
         if (i == -17452) {
-            synchronized(aLruByteCache_2050) {
+            withLock(aLruByteCache_2050) {
                 aLruByteCache_2050.method578(i + 17454, i_7_)
             }
         }

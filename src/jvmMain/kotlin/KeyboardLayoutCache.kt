@@ -8,18 +8,18 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
     fun method1976(i: Int, i_1_: Int): KeyboardLayoutConfig {
         anInt3302++
         var keyboardLayoutConfig: KeyboardLayoutConfig?
-        synchronized(aLruByteCache_3303) {
+        withLock(aLruByteCache_3303) {
             keyboardLayoutConfig = aLruByteCache_3303.method583(i.toLong(), -51) as KeyboardLayoutConfig?
         }
         if (keyboardLayoutConfig != null) return keyboardLayoutConfig
         val i_2_ = 44 % ((-41 - i_1_) / 33)
         val `is`: ByteArray?
-        synchronized(aJs5Archive_3299!!) {
+        withLock(aJs5Archive_3299!!) {
             `is` = aJs5Archive_3299.method410(-1860, 19, i)
         }
         keyboardLayoutConfig = KeyboardLayoutConfig()
         if (`is` != null) keyboardLayoutConfig.method1255(ByteBuffer(`is`), -1)
-        synchronized(aLruByteCache_3303) {
+        withLock(aLruByteCache_3303) {
             aLruByteCache_3303.method582(keyboardLayoutConfig, i.toLong(), (-120).toByte())
         }
         return keyboardLayoutConfig

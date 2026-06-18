@@ -247,7 +247,7 @@ class RegionSceneShifter : LinkedListNode() {
                 val is_40_ = ByteArray(i_39_)
                 if (i_37_ == 1) method1547(is_40_, i_39_, `is`, i_38_, 9)
                 else {
-                    synchronized(AnimationFrameDefinition.Companion.aGzipDecompressor_6955!!) {
+                    withLock(AnimationFrameDefinition.Companion.aGzipDecompressor_6955!!) {
                         AnimationFrameDefinition.Companion.aGzipDecompressor_6955!!.method1218(is_40_, 29123, class348_sub49)
                     }
                 }

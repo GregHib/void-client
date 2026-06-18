@@ -19,7 +19,7 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
     private var anIOException4560: IOException? = null
 
     fun method3615(i: Int) {
-        synchronized(this) {
+        withLock(this) {
             if (i != 15984) run()
             if (anIOException4560 == null) anIOException4560 = IOException("")
             (this as Object).notifyAll()
@@ -38,7 +38,7 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
         anInt4553++
         loop@ while (true) {
             var i: Int
-            synchronized(this) {
+            withLock(this) {
                 while (true) {
                     if (anIOException4560 != null) return
                     if (anInt4556 != 0) {
@@ -58,12 +58,12 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
                 i_1_ = anInputStream4548.read(aByteArray4554, anInt4558, i)
                 if (i_1_ == -1) throw EOFException()
             } catch (ioexception: IOException) {
-                synchronized(this) {
+                withLock(this) {
                     anIOException4560 = ioexception
                 }
                 break@loop
             }
-            synchronized(this) {
+            withLock(this) {
                 anInt4558 = (i_1_ + anInt4558) % anInt4546
             }
         }
@@ -74,7 +74,7 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
         var i = i
         anInt4555++
         if (i < 0 || i_2_ < 0 || `is`.size < i_2_ + i) throw IOException()
-        synchronized(this) {
+        withLock(this) {
             val i_4_: Int
             if (anInt4556 <= anInt4558) i_4_ = anInt4558 + -anInt4556
             else i_4_ = anInt4546 + (-anInt4556 - -anInt4558)
@@ -101,7 +101,7 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
     fun method3619(i: Int, bool: Boolean): Boolean {
         anInt4551++
         if (i <= 0 || i >= anInt4546) throw IOException()
-        synchronized(this) {
+        withLock(this) {
             val i_6_: Int
             if (anInt4556 > anInt4558) i_6_ = -anInt4556 + anInt4546 - -anInt4558
             else i_6_ = anInt4558 - anInt4556

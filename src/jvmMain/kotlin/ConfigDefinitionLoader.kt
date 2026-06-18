@@ -11,10 +11,10 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
 
     fun method1219(i: Int) {
         anInt2080++
-        synchronized(aLruByteCache_2083) {
+        withLock(aLruByteCache_2083) {
             aLruByteCache_2083.method590(0)
         }
-        synchronized(this.aLruByteCache_2089) {
+        withLock(this.aLruByteCache_2089) {
             if (i != 7851) {
                 /* empty */
             } else this.aLruByteCache_2089.method590(i + -7851)
@@ -30,22 +30,22 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
 
     fun method1222(bool: Boolean) {
         if (bool != true) method1222(false)
-        synchronized(aLruByteCache_2083) {
+        withLock(aLruByteCache_2083) {
             aLruByteCache_2083.method587(-99)
         }
         anInt2082++
-        synchronized(this.aLruByteCache_2089) {
+        withLock(this.aLruByteCache_2089) {
             this.aLruByteCache_2089.method587(-78)
         }
     }
 
     fun method1224(i: Int, i_8_: Byte) {
-        synchronized(aLruByteCache_2083) {
+        withLock(aLruByteCache_2083) {
             if (i_8_ > -95) method1225(-75, (-61).toByte())
             aLruByteCache_2083.method578(2, i)
         }
         anInt2079++
-        synchronized(this.aLruByteCache_2089) {
+        withLock(this.aLruByteCache_2089) {
             this.aLruByteCache_2089.method578(2, i)
         }
     }
@@ -53,13 +53,13 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
     fun method1225(i: Int, i_9_: Byte): StructConfig? {
         anInt2085++
         var structConfig: StructConfig?
-        synchronized(aLruByteCache_2083) {
+        withLock(aLruByteCache_2083) {
             structConfig = aLruByteCache_2083.method583(i.toLong(), 91) as StructConfig?
         }
         if (structConfig != null) return structConfig
         if (i_9_ < 36) return null
         val `is`: ByteArray?
-        synchronized(aJs5Archive_2084!!) {
+        withLock(aJs5Archive_2084!!) {
             `is` = aJs5Archive_2084.method410(-1860, 36, i)
         }
         structConfig = StructConfig()
@@ -67,7 +67,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
         structConfig.anInt581 = i
         if (`is` != null) structConfig.method379(ByteBuffer(`is`), 109)
         structConfig.method372(-25359)
-        synchronized(aLruByteCache_2083) {
+        withLock(aLruByteCache_2083) {
             aLruByteCache_2083.method582(structConfig, i.toLong(), (-106).toByte())
         }
         return structConfig

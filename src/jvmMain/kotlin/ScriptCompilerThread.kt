@@ -30,7 +30,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
 
     private fun method1050(class348_sub42_sub16_sub2: CompletedResourceRequest, i: Int) {
         anInt1735++
-        synchronized(aLinkedNodeListIterator_1730) {
+        withLock(aLinkedNodeListIterator_1730) {
             aLinkedNodeListIterator_1730.method1005(true, class348_sub42_sub16_sub2)
             anInt1734++
             if (i > -100) aSpriteImage_1727 = null
@@ -41,7 +41,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
     fun method1051(bool: Boolean) {
         aBoolean1738 = bool
         anInt1731++
-        synchronized(aLinkedNodeListIterator_1730) {
+        withLock(aLinkedNodeListIterator_1730) {
             (aLinkedNodeListIterator_1730 as Object).notifyAll()
         }
         try {
@@ -68,7 +68,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
 
     fun runClass348() : CompletedResourceRequest? {
         val class348_sub42_sub16_sub2: CompletedResourceRequest?
-        synchronized(aLinkedNodeListIterator_1730) {
+        withLock(aLinkedNodeListIterator_1730) {
             class348_sub42_sub16_sub2 = (aLinkedNodeListIterator_1730.method1008(20) as? CompletedResourceRequest?)
             if (class348_sub42_sub16_sub2 == null) {
                 try {
@@ -102,7 +102,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
         anInt1737++
         val class348_sub42_sub16_sub2 = CompletedResourceRequest()
         class348_sub42_sub16_sub2.anInt10457 = 1
-        synchronized(aLinkedNodeListIterator_1730) {
+        withLock(aLinkedNodeListIterator_1730) {
             var class348_sub42_sub16_sub2_21_ = (aLinkedNodeListIterator_1730.method1011(-95) as CompletedResourceRequest?)
             while (class348_sub42_sub16_sub2_21_ != null) {
                 if ((class348_sub42_sub16_sub2_21_.aLong7057 == i.toLong()) && (class348_sub42_sub16_sub2_21_.aIndexedFileCache_10458 == indexedFileCache) && class348_sub42_sub16_sub2_21_.anInt10457 == 2) {

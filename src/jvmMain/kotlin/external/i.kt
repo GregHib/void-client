@@ -9,6 +9,7 @@ import RenderNode
 import SceneOcculder
 import TerrainTile
 import WidgetRedrawRegion
+import withLock
 
 /* i - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -88,7 +89,7 @@ class i : AbstractModel, Disposable {
 
     public override fun method621() {
         if (anOa5117.anInt5141 > 1) {
-            synchronized(this) {
+            withLock(this) {
                 this.aBoolean1124 = false
                 (this as Object).notifyAll()
             }
@@ -193,7 +194,7 @@ class i : AbstractModel, Disposable {
 
     public override fun method622() {
         if (anOa5117.anInt5141 > 1) {
-            synchronized(this) {
+            withLock(this) {
                 while (this.aBoolean1124) {
                     try {
                         (this as Object).wait()

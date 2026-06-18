@@ -81,7 +81,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         if (l_1_ != 0L && l > l_1_) {
             /* empty */
         }
-        synchronized(this) {
+        withLock(this) {
             SizeBoundedSoftCache.aBoolean2329 = CombineTextureNode.aBoolean9229
         }
         method99(93.toByte())
@@ -219,7 +219,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     private fun method90(bool: Boolean, bool_4_: Boolean) {
         anInt26++
-        synchronized(this) {
+        withLock(this) {
             if (SpriteArchiveLoader.aBoolean384) return
             SpriteArchiveLoader.aBoolean384 = true
         }

@@ -11,14 +11,14 @@ class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjecto
     fun method337(bool: Boolean, i: Int): CacheArchiveIndex {
         anInt457++
         var cacheArchiveIndex: CacheArchiveIndex?
-        synchronized(aLruByteCache_460) {
+        withLock(aLruByteCache_460) {
             cacheArchiveIndex = aLruByteCache_460.method583(i.toLong(), 111) as CacheArchiveIndex?
         }
         if (cacheArchiveIndex != null) return cacheArchiveIndex
         val `is` = aJs5Archive_458!!.method410(-1860, method200(-107, i), method3013(i, bool))
         cacheArchiveIndex = CacheArchiveIndex()
         if (`is` != null) cacheArchiveIndex.method1069(0, ByteBuffer(`is`))
-        synchronized(aLruByteCache_460) {
+        withLock(aLruByteCache_460) {
             aLruByteCache_460.method582(cacheArchiveIndex, i.toLong(), (-102).toByte())
         }
         return cacheArchiveIndex

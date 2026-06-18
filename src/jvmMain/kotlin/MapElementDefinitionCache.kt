@@ -14,19 +14,19 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
     fun method2541(i: Int, i_0_: Int) {
         anInt3978++
         this.anInt3991 = i_0_
-        synchronized(this.aLruByteCache_3990) {
+        withLock(this.aLruByteCache_3990) {
             this.aLruByteCache_3990.method590(0)
         }
         if (i < 72) aCacheIndexManagerArray3982 = null
     }
 
     fun method2542(i: Int) {
-        synchronized(aLruByteCache_3989) {
+        withLock(aLruByteCache_3989) {
             aLruByteCache_3989.method587(-126)
         }
         if (i >= -99) aDouble3980 = 0.5896741197263589
         anInt3986++
-        synchronized(this.aLruByteCache_3990) {
+        withLock(this.aLruByteCache_3990) {
             this.aLruByteCache_3990.method587(-106)
         }
     }
@@ -35,41 +35,41 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
         if (i <= 38) method2542(-73)
         anInt3983++
         var locConfigModelBuilder: LocConfigModelBuilder?
-        synchronized(aLruByteCache_3989) {
+        withLock(aLruByteCache_3989) {
             locConfigModelBuilder = aLruByteCache_3989.method583(i_1_.toLong(), 101) as LocConfigModelBuilder?
         }
         if (locConfigModelBuilder != null) return locConfigModelBuilder
         val `is`: ByteArray?
-        synchronized(aJs5Archive_3979!!) {
+        withLock(aJs5Archive_3979!!) {
             `is` = aJs5Archive_3979.method410(-1860, method2419(127.toByte(), i_1_), method2729(i_1_, 16))
         }
         locConfigModelBuilder = LocConfigModelBuilder()
         locConfigModelBuilder.aMapElementDefinitionCache_4513 = this
         locConfigModelBuilder.anInt4501 = i_1_
         if (`is` != null) locConfigModelBuilder.method3559(28105, ByteBuffer(`is`))
-        synchronized(aLruByteCache_3989) {
+        withLock(aLruByteCache_3989) {
             aLruByteCache_3989.method582(locConfigModelBuilder, i_1_.toLong(), (-127).toByte())
         }
         return locConfigModelBuilder
     }
 
     fun method2544(i: Int, i_2_: Byte) {
-        synchronized(aLruByteCache_3989) {
+        withLock(aLruByteCache_3989) {
             aLruByteCache_3989.method578(2, i)
             if (i_2_ >= -11) this.aJs5Archive_3981 = null
         }
         anInt3987++
-        synchronized(this.aLruByteCache_3990) {
+        withLock(this.aLruByteCache_3990) {
             this.aLruByteCache_3990.method578(2, i)
         }
     }
 
     fun method2546(i: Int) {
         anInt3984++
-        synchronized(aLruByteCache_3989) {
+        withLock(aLruByteCache_3989) {
             aLruByteCache_3989.method590(0)
         }
-        synchronized(this.aLruByteCache_3990) {
+        withLock(this.aLruByteCache_3990) {
             this.aLruByteCache_3990.method590(0)
         }
     }

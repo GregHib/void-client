@@ -45,11 +45,11 @@ public open class WorldMapIconLabel(screenAnchorAlignment: ScreenAnchorAlignment
         var aJs5Archive_8601: Js5Archive? = null
         @JvmStatic
         fun method3573(i: Int) {
-            synchronized(ModelDataCache.aLruByteCache_355!!) {
+            withLock(ModelDataCache.aLruByteCache_355!!) {
                 ModelDataCache.aLruByteCache_355!!.method590(0)
             }
             anInt8598++
-            synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+            withLock(ModelBatchBase.aLruByteCache_1894!!) {
                 ModelBatchBase.aLruByteCache_1894!!.method590(0)
             }
             if (i != -15326) method3573(-67)

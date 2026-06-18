@@ -466,7 +466,7 @@ class NpcType {
             }
             val l = (var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong()
             var abstractModel: AbstractModel?
-            synchronized(this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!) {
+            withLock(this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!) {
                 abstractModel = this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!.method583(l, 80) as AbstractModel?
             }
             var npcDefinition: NpcDefinition? = null
@@ -475,7 +475,7 @@ class NpcType {
                 if (abstractModel != null) i_43_ = i_43_ or abstractModel.ua()
                 var i_69_ = i_43_
                 var bool_70_ = false
-                synchronized(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
+                withLock(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
                     var i_71_ = 0
                     while ((anIntArray1402!!.size > i_71_)) {
                         if (anIntArray1402!![i_71_] != -1 && !(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!.method420(-10499, anIntArray1402!![i_71_], 0))) bool_70_ = true
@@ -486,7 +486,7 @@ class NpcType {
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray1402!!.size)
                 for (i_72_ in anIntArray1402!!.indices) {
                     if (anIntArray1402!![i_72_] != -1) {
-                        synchronized(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
+                        withLock(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
                             modelDefinitions[i_72_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1402!![i_72_], -1)
                         }
                         if (modelDefinitions[i_72_] != null) {
@@ -543,7 +543,7 @@ class NpcType {
                 }
                 if (aByte1405.toInt() != 0) abstractModel.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
                 abstractModel.s(i_43_)
-                synchronized(this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!) {
+                withLock(this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!) {
                     this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!.method582(abstractModel, (this.anInt1344 or (var_renderer.anInt4567 shl 16)).toLong(), (-125).toByte())
                 }
             }
@@ -639,14 +639,14 @@ class NpcType {
             var i_99_ = i_97_
             if (widgetDefinition != null && i_95_ != -1) i_99_ = i_99_ or widgetDefinition.method263(i_94_, 97, i_95_, true)
             var abstractModel: AbstractModel?
-            synchronized(this.aBufferedMessageQueue_1348!!.aLruByteCache_3592) {
+            withLock(this.aBufferedMessageQueue_1348!!.aLruByteCache_3592) {
                 abstractModel = ((this.aBufferedMessageQueue_1348!!.aLruByteCache_3592.method583((var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as AbstractModel?)
             }
             if (abstractModel == null || i_99_ != (abstractModel.ua() and i_99_)) {
                 if (abstractModel != null) i_99_ = i_99_ or abstractModel.ua()
                 var i_100_ = i_99_
                 var bool = false
-                synchronized(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
+                withLock(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
                     var i_101_ = 0
                     while ((anIntArray1380!!.size > i_101_)) {
                         if (!this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!.method420(-10499, anIntArray1380!![i_101_], 0)) bool = true
@@ -655,7 +655,7 @@ class NpcType {
                 }
                 if (bool) return null
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray1380!!.size)
-                synchronized(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
+                withLock(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
                     var i_102_ = 0
                     while ((anIntArray1380!!.size > i_102_)) {
                         modelDefinitions[i_102_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1380!![i_102_], -1)
@@ -691,7 +691,7 @@ class NpcType {
                 }
                 if (aByte1405.toInt() != 0) abstractModel.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
                 abstractModel.s(i_99_)
-                synchronized(this.aBufferedMessageQueue_1348!!.aLruByteCache_3592) {
+                withLock(this.aBufferedMessageQueue_1348!!.aLruByteCache_3592) {
                     this.aBufferedMessageQueue_1348!!.aLruByteCache_3592.method582(abstractModel, (var_renderer.anInt4567 shl 16 or this.anInt1344).toLong(), (-96).toByte())
                 }
             }

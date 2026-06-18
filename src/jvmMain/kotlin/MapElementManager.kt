@@ -11,7 +11,7 @@ object MapElementManager {
     var anInt4465: Int = 0
 
     fun method3513(i: Int) {
-        synchronized(SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!) {
+        withLock(SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!) {
             var i_0_ = 0
             while ((i_0_ < SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!.size)) {
                 SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!![i_0_] = DoublyLinkedNodeList()

@@ -18,7 +18,7 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
         anInt9675++
         if (this.aNpcModelTransformArray9673 != null) return true
         if (aByteArrayArray9671 == null) {
-            synchronized(RectangleRegion.aJs5Archive_1940!!) {
+            withLock(RectangleRegion.aJs5Archive_1940!!) {
                 if (!RectangleRegion.aJs5Archive_1940!!.method408((-116).toByte(), anInt9669)) return false
                 val `is` = RectangleRegion.aJs5Archive_1940!!.method396(anInt9669, 0)
                 aByteArrayArray9671 = arrayOfNulls<ByteArray>(`is`!!.size)
@@ -31,14 +31,14 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
             val class348_sub49 = ByteBuffer(`is`)
             class348_sub49.anInt7197 = 1
             val i_3_ = class348_sub49.readUnsignedShort(842397944)
-            synchronized(GlElementArrayBuffer.aJs5Archive_4843!!) {
+            withLock(GlElementArrayBuffer.aJs5Archive_4843!!) {
                 bool = bool and GlElementArrayBuffer.aJs5Archive_4843!!.method421(false, i_3_)
             }
         }
         if (!bool) return false
         val nodeDeque = NodeDeque()
         val `is`: IntArray?
-        synchronized(RectangleRegion.aJs5Archive_1940!!) {
+        withLock(RectangleRegion.aJs5Archive_1940!!) {
             val i_4_ = RectangleRegion.aJs5Archive_1940!!.method407(0, anInt9669)
             this.aNpcModelTransformArray9673 = arrayOfNulls<NpcModelTransform>(i_4_)
             `is` = RectangleRegion.aJs5Archive_1940!!.method396(anInt9669, 0)
@@ -59,7 +59,7 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
                 class348_sub33_8_ = nodeDeque.method1990(78.toByte()) as AnimationFrameDefinition?
             }
             if (class348_sub33 == null) {
-                synchronized(GlElementArrayBuffer.aJs5Archive_4843!!) {
+                withLock(GlElementArrayBuffer.aJs5Archive_4843!!) {
                     class348_sub33 = AnimationFrameDefinition(i_7_, GlElementArrayBuffer.aJs5Archive_4843!!.method415(73.toByte(), i_7_))
                 }
                 nodeDeque.method1999(class348_sub33!!, -20180)

@@ -27,6 +27,7 @@ import TerrainTile
 import i
 import p
 import t
+import withLock
 import java.awt.Canvas
 import java.awt.Rectangle
 import kotlin.math.max
@@ -171,7 +172,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
     }
 
     private fun WA(i: Short): Boolean { //
-        synchronized(this.aRenderConfig4579!!) {
+        withLock(this.aRenderConfig4579!!) {
             if (!this.aRenderConfig4579!!.method4(-7953, i.toInt())) return false
             val class12 = this.aRenderConfig4579!!.method3(i.toInt(), -6662)
             if (class12 == null) return false
@@ -307,7 +308,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
     }
 
     private fun c(i: Short): Boolean { //
-        synchronized(this) {
+        withLock(this) {
             val class12 = this.aRenderConfig4579!!.method3(i.toInt(), -6662)
             if (class12 == null) return false
             AA(i, class12.aShort208, class12.anInt200, class12.aByte213, class12.aByte202, class12.anInt206, class12.aBoolean199, class12.aByte201, class12.aByte216, class12.aByte198, class12.aByte211, class12.aBoolean209, class12.aBoolean204, class12.aBoolean212, class12.aBoolean217, class12.aBoolean215, class12.aByte205, class12.aBoolean218, class12.aBoolean207, class12.anInt203)

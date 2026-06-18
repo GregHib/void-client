@@ -140,7 +140,7 @@ class LocConfigModelBuilder {
             if (anInt4498 != 128 || anInt4508 != 0) i_33_ = i_33_ or 0x5
             var abstractModel: AbstractModel?
             this.anInt4501 = this.anInt4501 or (var_renderer!!.anInt4567 shl 29)
-            synchronized(this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990) {
+            withLock(this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990) {
                 abstractModel = ((this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990.method583(this.anInt4501.toLong(), -122)) as AbstractModel?)
             }
             if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_33_) != 0) {
@@ -167,7 +167,7 @@ class LocConfigModelBuilder {
                     }
                 }
                 abstractModel.s(i_33_)
-                synchronized(this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990) {
+                withLock(this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990) {
                     this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990.method582(abstractModel, this.anInt4501.toLong(), (-113).toByte())
                 }
             }

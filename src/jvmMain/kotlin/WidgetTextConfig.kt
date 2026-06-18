@@ -311,7 +311,7 @@ class WidgetTextConfig {
                 if (class318_sub4.aBoolean6409) {
                     class318_sub4.aClass318_Sub1_6410 = class318_sub1
                     if (VoronoiNoiseTextureNode.aBoolean9121) {
-                        synchronized(PlayerSequenceSelector.aSceneObjectSpawner_1208!!) {
+                        withLock(PlayerSequenceSelector.aSceneObjectSpawner_1208!!) {
                             PlayerSequenceSelector.aSceneObjectSpawner_1208!!.method774(class318_sub4, 18802)
                         }
                     } else PlayerSequenceSelector.aSceneObjectSpawner_1208!!.method774(class318_sub4, 18802)

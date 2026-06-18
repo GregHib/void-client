@@ -21,7 +21,7 @@ class BufferedOutputStreamWorker internal constructor(private var anOutputStream
         anInt2710++
         while (true) {
             var i: Int
-            synchronized(this) {
+            withLock(this) {
                 while (true) {
                     if (anIOException2704 != null) return
                     if (anInt2705 > anInt2713) i = -anInt2705 + anInt2715 - -anInt2713
@@ -42,19 +42,19 @@ class BufferedOutputStreamWorker internal constructor(private var anOutputStream
                     anOutputStream2712.write(aByteArray2706, 0, -i_0_ + i)
                 }
             } catch (ioexception: IOException) {
-                synchronized(this) {
+                withLock(this) {
                     anIOException2704 = ioexception
                 }
                 break
             }
-            synchronized(this) {
+            withLock(this) {
                 anInt2705 = (anInt2705 + i) % anInt2715
             }
         }
     }
 
     fun method1526(i: Byte) {
-        synchronized(this) {
+        withLock(this) {
             if (anIOException2704 == null) anIOException2704 = IOException("")
             (this as Object).notifyAll()
         }
@@ -79,7 +79,7 @@ class BufferedOutputStreamWorker internal constructor(private var anOutputStream
     fun method1528(i: Byte, i_1_: Int, i_2_: Int, `is`: ByteArray) {
         anInt2709++
         if (i_1_ < 0 || i_2_ < 0 || i_1_ + i_2_ > `is`.size) throw IOException()
-        synchronized(this) {
+        withLock(this) {
             if (anIOException2704 != null) throw IOException(anIOException2704.toString())
             val i_3_: Int
             if (anInt2705 <= anInt2713) i_3_ = anInt2705 + anInt2715 - (anInt2713 - -1)

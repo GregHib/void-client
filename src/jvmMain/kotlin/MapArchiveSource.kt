@@ -35,7 +35,7 @@ class MapArchiveSource internal constructor(private val aJs5Archive_4804: Js5Arc
 
         fun method2201(i: Int): Int {
             anInt4805++
-            synchronized(ModelDataCache.aLruByteCache_355!!) {
+            withLock(ModelDataCache.aLruByteCache_355!!) {
                 if (i != 2121) method2202(-113)
                 return ModelDataCache.aLruByteCache_355!!.method575(0)
             }

@@ -7,14 +7,14 @@ class MapSceneCache internal constructor(sceneProjector: SceneProjector?, i: Int
 
     fun method816(bool: Boolean) {
         anInt1455++
-        synchronized(aLruByteCache_1449) {
+        withLock(aLruByteCache_1449) {
             if (bool != false) method819(107.toByte(), 46)
             aLruByteCache_1449.method587(-119)
         }
     }
 
     fun method819(i: Byte, i_14_: Int) {
-        synchronized(aLruByteCache_1449) {
+        withLock(aLruByteCache_1449) {
             aLruByteCache_1449.method578(2, i_14_)
         }
         anInt1457++
@@ -23,24 +23,24 @@ class MapSceneCache internal constructor(sceneProjector: SceneProjector?, i: Int
     private fun method820(i: Int, i_15_: Int): ParticleConfigParser {
         anInt1458++
         var particleConfigParser: ParticleConfigParser?
-        synchronized(aLruByteCache_1449) {
+        withLock(aLruByteCache_1449) {
             particleConfigParser = aLruByteCache_1449.method583(i.toLong(), 116) as ParticleConfigParser?
         }
         if (particleConfigParser != null) return particleConfigParser!!
         val `is`: ByteArray?
-        synchronized(aJs5Archive_1460!!) {
+        withLock(aJs5Archive_1460!!) {
             `is` = aJs5Archive_1460.method410(-1860, i_15_, i)
         }
         particleConfigParser = ParticleConfigParser()
         if (`is` != null) particleConfigParser!!.method2275(ByteBuffer(`is`), (-123).toByte())
-        synchronized(aLruByteCache_1449) {
+        withLock(aLruByteCache_1449) {
             aLruByteCache_1449.method582(particleConfigParser, i.toLong(), (-106).toByte())
         }
         return particleConfigParser!!
     }
 
     fun method822(i: Byte) {
-        synchronized(aLruByteCache_1449) {
+        withLock(aLruByteCache_1449) {
             aLruByteCache_1449.method590(0)
         }
         if (i >= -13) method825(14)

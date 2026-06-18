@@ -44,7 +44,7 @@ object CompressedBlockDecoder {
     @JvmStatic
     fun method1547(`is`: ByteArray?, i: Int, is_16_: ByteArray?, i_17_: Int, i_18_: Int): Int {
         var i = i
-        synchronized(aBzip2DecoderState_2750!!) {
+        withLock(aBzip2DecoderState_2750!!) {
             aBzip2DecoderState_2750!!.aByteArray534 = is_16_
             aBzip2DecoderState_2750!!.anInt522 = i_18_
             aBzip2DecoderState_2750!!.aByteArray527 = `is`

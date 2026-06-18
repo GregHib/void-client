@@ -2,6 +2,7 @@ package external
 
 import Disposable
 import LinkedListNode
+import withLock
 import java.awt.Canvas
 import java.awt.Rectangle
 
@@ -31,7 +32,7 @@ class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145
 
     fun method3433(i: Int, i_10_: Int) {
         try {
-            synchronized(this.aCanvas5147!!.getTreeLock()) {
+            withLock(this.aCanvas5147!!.getTreeLock()) {
                 val dimension = this.aCanvas5147!!.getSize()
                 H(i, i_10_, dimension.width, dimension.height)
                 aBoolean5144 = false
@@ -51,7 +52,7 @@ class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145
 
     fun method3434(rectangles: Array<Rectangle?>, i: Int, i_12_: Int, i_13_: Int) {
         try {
-            synchronized(this.aCanvas5147!!.getTreeLock()) {
+            withLock(this.aCanvas5147!!.getTreeLock()) {
                 for (i_14_ in 0..<i) {
                     val rectangle = rectangles[i_14_]!!
                     if (rectangle.width > 0 && rectangle.height > 0) K(rectangle.x, rectangle.y, rectangle.width, rectangle.height, i_12_, i_13_)

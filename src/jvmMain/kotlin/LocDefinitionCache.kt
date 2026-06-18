@@ -10,7 +10,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
     @JvmField
     var anInt3447: Int = 0
     fun method2032(i: Int, i_3_: Int) {
-        synchronized(aLruByteCache_3433) {
+        withLock(aLruByteCache_3433) {
             aLruByteCache_3433.method578(2, i)
             if (i_3_ > -10) method2035(116, 38)
         }
@@ -19,7 +19,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
 
     fun method2033(i: Byte) {
         anInt3434++
-        synchronized(aLruByteCache_3433) {
+        withLock(aLruByteCache_3433) {
             if (i.toInt() != 46) method2037(-66)
             aLruByteCache_3433.method587(-94)
         }
@@ -29,12 +29,12 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         if (bool != false) aShortArray3437 = null
         anInt3431++
         var locTypeConfig: LocTypeConfig?
-        synchronized(aLruByteCache_3433) {
+        withLock(aLruByteCache_3433) {
             locTypeConfig = aLruByteCache_3433.method583(i.toLong(), 64) as LocTypeConfig?
         }
         if (locTypeConfig != null) return locTypeConfig
         val `is`: ByteArray?
-        synchronized(aJs5Archive_3442!!) {
+        withLock(aJs5Archive_3442!!) {
             `is` = aJs5Archive_3442.method410(-1860, 4, i)
         }
         locTypeConfig = LocTypeConfig()
@@ -42,14 +42,14 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         locTypeConfig.aLocDefinitionCache_3562 = this
         if (`is` != null) locTypeConfig.method2070(true, ByteBuffer(`is`))
         locTypeConfig.method2067(-4860)
-        synchronized(aLruByteCache_3433) {
+        withLock(aLruByteCache_3433) {
             aLruByteCache_3433.method582(locTypeConfig, i.toLong(), (-111).toByte())
         }
         return locTypeConfig
     }
 
     fun method2037(i: Int) {
-        synchronized(aLruByteCache_3433) {
+        withLock(aLruByteCache_3433) {
             aLruByteCache_3433.method590(0)
         }
         anInt3440++
