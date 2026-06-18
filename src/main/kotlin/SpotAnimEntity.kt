@@ -321,7 +321,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                         val `is` = IntArray(3)
                         var i_7_ = -1
                         var i_8_ = -1
-                        if (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.method3236(`is`, (ArbVertexProgram.regionTileX - -((LocalPlayerState.aPlayer_1907!!.x) shr 9)), ((LocalPlayerState.aPlayer_1907!!.y) shr 9) + Class90.regionTileY, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), (-28).toByte())) {
+                        if (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.method3236(`is`, (ArbVertexProgram.regionTileX - -((LocalPlayerState.aPlayer_1907!!.x) shr 9)), ((LocalPlayerState.aPlayer_1907!!.y) shr 9) + RegionMapDecoder.regionTileY, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), (-28).toByte())) {
                             i_7_ = -MapRegionLoader.anInt1266 + `is`[1]
                             i_8_ = -MapRegionLoader.anInt1263 + `is`[2]
                         }

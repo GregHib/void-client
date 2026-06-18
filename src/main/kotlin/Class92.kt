@@ -49,7 +49,7 @@ object Class92 {
                         val i_8_ = 0x3f and (i_6_ shr 7)
                         val i_9_ = i_6_ and 0x3f
                         val i_10_ = (i_8_ + (-ArbVertexProgram.regionTileX + (NullOggStream.anIntArray9042!![i_1_] shr 8) * 64))
-                        val i_11_ = (-Class90.regionTileY + (64 * (0xff and (NullOggStream.anIntArray9042!![i_1_])) - -i_9_))
+                        val i_11_ = (-RegionMapDecoder.regionTileY + (64 * (0xff and (NullOggStream.anIntArray9042!![i_1_])) - -i_9_))
                         val class79 = (MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(class348_sub49.readUnsignedShort(842397944), -1))
                         val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_5_.toLong(), -6008) as? NpcReference)
                         if (class348_sub22 == null && (class79.aByte1325.toInt() and 0x1) > 0 && i_7_ == ParticleSystemState.anInt2204 && i_10_ >= 0 && (Class367_Sub4.anInt7319 > i_10_ - -class79.anInt1399) && i_11_ >= 0 && (RangeThresholdTextureNode.anInt9109 > i_11_ + class79.anInt1399)) {

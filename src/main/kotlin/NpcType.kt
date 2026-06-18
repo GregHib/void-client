@@ -369,7 +369,7 @@ class NpcType {
                         var i_54_ = class17_51_.anIntArray237[i_52_]
                         ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_] = widgetCache.method839(i_54_ ushr 16, 3)
                         i_54_ = i_54_ and 0xffff
-                        Class90.anIntArray1518!![i_50_] = i_54_
+                        RegionMapDecoder.anIntArray1518!![i_50_] = i_54_
                         if ((ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]) != null) {
                             bool_46_ = bool_46_ or ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3272(i_54_, 0)
                             bool_45_ = bool_45_ or ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3271(i_54_, 14)
@@ -570,7 +570,7 @@ class NpcType {
                     -1 + TooltipComponentRenderer.anIntArray4648!![i_86_],
                     null,
                     i_87_,
-                    Class90.anIntArray1518!![i_86_],
+                    RegionMapDecoder.anIntArray1518!![i_86_],
                     ParticleDefLoader.anIntArray2466!![i_86_],
                     (TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_86_]),
                     0,

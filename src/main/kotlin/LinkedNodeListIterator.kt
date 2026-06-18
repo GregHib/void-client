@@ -170,7 +170,7 @@ class LinkedNodeListIterator {
                         while (class348_sub35 != null) {
                             val i_9_ = class348_sub35.anInt6976
                             val i_10_ = (-ArbVertexProgram.regionTileX + ((0xfffe5b0 and (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3238!![i_9_])) shr 14))
-                            val i_11_ = (-Class90.regionTileY + (0x3fff and (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3238!![i_9_])))
+                            val i_11_ = (-RegionMapDecoder.regionTileY + (0x3fff and (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3238!![i_9_])))
                             val i_12_ = -(i_4_ / 128) + 2 + 4 * i_10_
                             val i_13_ = 2 + (4 * i_11_ - i_3_ / 128)
                             method2385(widgetComponent, i_1_, var_aa, (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3239!![i_9_]), i_12_, i, ((-94).toByte()).toByte(), i_13_, var_renderer)
@@ -196,7 +196,7 @@ class LinkedNodeListIterator {
                             val i_17_ = (0x3L and ((class348_sub37.aLong4291) shr 28)).toInt()
                             if (CameraOrModelTransform.anInt4155 == i_17_) {
                                 val i_18_ = (-ArbVertexProgram.regionTileX + ((class348_sub37.aLong4291) and 0x3fffL).toInt())
-                                val i_19_ = (-Class90.regionTileY + ((class348_sub37.aLong4291) shr 14 and 0x3fffL).toInt())
+                                val i_19_ = (-RegionMapDecoder.regionTileY + ((class348_sub37.aLong4291) shr 14 and 0x3fffL).toInt())
                                 val i_20_ = -(i_4_ / 128) + (2 + i_18_ * 4)
                                 val i_21_ = -(i_3_ / 128) + (2 + i_19_ * 4)
                                 HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![0]), i, widgetComponent, var_aa, i_21_, i_2_ xor 0x59b2, i_20_)

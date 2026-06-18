@@ -205,7 +205,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     var `is` = GlRectangleTexture.aByteArrayArray8642!![i_20_]
                     if (`is` != null) {
                         var i_21_ = 64 * (NullOggStream.anIntArray9042!![i_20_] shr 8) - ArbVertexProgram.regionTileX
-                        var i_22_ = 64 * (NullOggStream.anIntArray9042!![i_20_] and 0xff) - Class90.regionTileY
+                        var i_22_ = 64 * (NullOggStream.anIntArray9042!![i_20_] and 0xff) - RegionMapDecoder.regionTileY
                         if (WidgetRedrawTracker.anInt3931 != 0) {
                             i_22_ = 10
                             i_21_ = 10
@@ -215,7 +215,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     `is` = VorbisOggDecoder.aByteArrayArray8996!![i_20_]
                     if (`is` != null) {
                         var i_23_ = 64 * (NullOggStream.anIntArray9042!![i_20_] shr 8) - ArbVertexProgram.regionTileX
-                        var i_24_ = 64 * (NullOggStream.anIntArray9042!![i_20_] and 0xff) + -Class90.regionTileY
+                        var i_24_ = 64 * (NullOggStream.anIntArray9042!![i_20_] and 0xff) + -RegionMapDecoder.regionTileY
                         if (WidgetRedrawTracker.anInt3931 != 0) {
                             i_24_ = 10
                             i_23_ = 10
@@ -366,7 +366,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     Class94.method867(true)
                     PcmStreamBuffer.aBoolean8870 = true
                     if (GlTexture1D.aBoolean8558) {
-                        method94(("Took: " + (GameClock.method599(-117) + -Class90.aLong1516) + "ms"), i + 52)
+                        method94(("Took: " + (GameClock.method599(-117) + -RegionMapDecoder.aLong1516) + "ms"), i + 52)
                         GlTexture1D.aBoolean8558 = false
                     }
                 } else AnimationFrameTable.anInt489 = 2

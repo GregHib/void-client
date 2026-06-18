@@ -300,7 +300,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == WorldListEntry.aIntRange_304) {
-                Class90.method853(99.toByte())
+                RegionMapDecoder.method853(99.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return false
             }
@@ -519,7 +519,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 } else {
                     val i_60_ = (i_40_ and 0x33705717) shr 28
                     val i_61_ = -ArbVertexProgram.regionTileX + ((0xffff4fe and i_40_) shr 14)
-                    val i_62_ = -Class90.regionTileY + (0x3fff and i_40_)
+                    val i_62_ = -RegionMapDecoder.regionTileY + (0x3fff and i_40_)
                     if (i_61_ >= 0 && i_62_ >= 0 && Class367_Sub4.anInt7319 > i_61_ && RangeThresholdTextureNode.anInt9109 > i_62_) {
                         val i_63_ = 256 + 512 * i_61_
                         val i_64_ = 512 * i_62_ + 256
@@ -655,7 +655,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                         minimapPositionState.anInt3840 = 2
                         minimapPositionState.anInt3838 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         minimapPositionState.anInt3835 += (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) + -ArbVertexProgram.regionTileX shl 9)
-                        minimapPositionState.anInt3832 += (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) - Class90.regionTileY shl 9)
+                        minimapPositionState.anInt3832 += (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) - RegionMapDecoder.regionTileY shl 9)
                         minimapPositionState.anInt3839 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) shl 2
                         minimapPositionState.anInt3837 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     }
@@ -1012,7 +1012,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     var i_122_ = 0x3fff and (i shr 14)
                     i_122_ -= ArbVertexProgram.regionTileX
                     var i_123_ = 0x3fff and i
-                    i_123_ -= Class90.regionTileY
+                    i_123_ -= RegionMapDecoder.regionTileY
                     if (i_122_ >= 0) {
                         if (Class367_Sub4.anInt7319 <= i_122_) i_122_ = Class367_Sub4.anInt7319
                     } else i_122_ = 0
@@ -1049,7 +1049,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 var i_131_ = i_129_ shr 14 and 0x3fff
                 var i_132_ = 0x3fff and i_129_
                 i_131_ -= ArbVertexProgram.regionTileX
-                i_132_ -= Class90.regionTileY
+                i_132_ -= RegionMapDecoder.regionTileY
                 NativeRenderer.method3824(i_132_, i, i_126_, i_131_, i_127_, 102, i_130_, i_128_)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
@@ -1454,7 +1454,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     val i_188_ = (class348_sub37.aLong4291 and 0x3fffL).toInt()
                     val i_189_ = i_188_ + -ArbVertexProgram.regionTileX
                     val i_190_ = (0x3fffL and (class348_sub37.aLong4291 shr 14)).toInt()
-                    val i_191_ = -Class90.regionTileY + i_190_
+                    val i_191_ = -RegionMapDecoder.regionTileY + i_190_
                     if (i == GradientLookupEffect.anInt9200 && BufferedMessageQueue.anInt3581 <= i_189_ && 8 + BufferedMessageQueue.anInt3581 > i_189_ && FileExistsCondition.anInt4786 <= i_191_ && FileExistsCondition.anInt4786 - -8 > i_191_) {
                         class348_sub37.method2715(89.toByte())
                         if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367_Sub4.anInt7319 && (i_191_ < RangeThresholdTextureNode.anInt9109)) ProjectileSpawner.method1479(i_191_, (-118).toByte(), i_189_, GradientLookupEffect.anInt9200)

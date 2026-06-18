@@ -284,7 +284,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     i_38_ += 12
                                                     if (Loader.showCoordinates) {
                                                         val playerX = (LocalPlayerState.aPlayer_1907!!.x shr 9) + ArbVertexProgram.regionTileX
-                                                        val playerY = (LocalPlayerState.aPlayer_1907!!.y shr 9) + Class90.regionTileY
+                                                        val playerY = (LocalPlayerState.aPlayer_1907!!.y shr 9) + RegionMapDecoder.regionTileY
                                                         WorldMapRenderer.aFont_4684!!.method2569("Coordinates: " + playerX + ", " + playerY + ", " + LocalPlayerState.aPlayer_1907!!.plane, i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
                                                         WorldMapRenderer.aFont_4684!!.method2569("Region id: " + (((playerX shr 6) shl 8) + (playerY shr 6)) + " (" + (playerX shr 6) + ", " + (playerY shr 6) + ")", i_38_, -256, i_37_, -127, -1)

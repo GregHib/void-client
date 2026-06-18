@@ -49,7 +49,7 @@ class HslColorTableNode internal constructor(@JvmField var anInt6630: Int, @JvmF
                     try {
                         System.load(file.path)
                         if (aClass6640 == null) {
-                            aClass6640 = Class90::class.java
+                            aClass6640 = RegionMapDecoder::class.java
                         }
                         Player.aHashtable10565!![string] = aClass6640
                         return true

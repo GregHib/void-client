@@ -125,7 +125,7 @@ object ChatCommandProcessor {
         if (class348_sub42_sub19 != null) {
             anIntArray1164 = (IntArray(class348_sub42_sub19.anInt9688))
             aStringArray1155 = (arrayOfNulls<String>(class348_sub42_sub19.anInt9689))
-            if ((class348_sub42_sub19.aBoundsConstraintEntry_9691 == Class90.aBoundsConstraintEntry_1512) || (class348_sub42_sub19.aBoundsConstraintEntry_9691) == StaticNoiseTexture.aBoundsConstraintEntry_8664 || (class348_sub42_sub19.aBoundsConstraintEntry_9691) == IsaacCipher.aBoundsConstraintEntry_1298) {
+            if ((class348_sub42_sub19.aBoundsConstraintEntry_9691 == RegionMapDecoder.aBoundsConstraintEntry_1512) || (class348_sub42_sub19.aBoundsConstraintEntry_9691) == StaticNoiseTexture.aBoundsConstraintEntry_8664 || (class348_sub42_sub19.aBoundsConstraintEntry_9691) == IsaacCipher.aBoundsConstraintEntry_1298) {
                 var i_1_ = 0
                 var i_2_ = 0
                 if (HeapDiagnosticsHolder.aWidgetComponent_2249 != null) {
@@ -1152,7 +1152,7 @@ object ChatCommandProcessor {
                 val i_125_ = anIntArray1149!![anInt1173 + 1]
                 val i_126_ = anIntArray1149!![anInt1173 + 2]
                 val i_127_ = anIntArray1149!![anInt1173 + 3]
-                method1844(i_126_, ((i_124_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX), false, i_125_ shl 2, false, i_127_, ((i_124_ and 0x3fff) - Class90.regionTileY))
+                method1844(i_126_, ((i_124_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX), false, i_125_ shl 2, false, i_127_, ((i_124_ and 0x3fff) - RegionMapDecoder.regionTileY))
                 return
             }
             if (i == 5501) {
@@ -1161,7 +1161,7 @@ object ChatCommandProcessor {
                 val i_129_ = anIntArray1149!![anInt1173 + 1]
                 val i_130_ = anIntArray1149!![anInt1173 + 2]
                 val i_131_ = anIntArray1149!![anInt1173 + 3]
-                ContactEntry.method3231(((i_128_ and 0x3fff) - Class90.regionTileY), ((i_128_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX), i_129_ shl 2, i_131_, i_130_, -128)
+                ContactEntry.method3231(((i_128_ and 0x3fff) - RegionMapDecoder.regionTileY), ((i_128_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX), i_129_ shl 2, i_131_, i_130_, -128)
                 return
             }
             if (i == 5502) {
@@ -1226,7 +1226,7 @@ object ChatCommandProcessor {
                 i_137_ -= ArbVertexProgram.regionTileX
                 if (i_137_ < 0) i_137_ = 0
                 else if (i_137_ >= Class367_Sub4.anInt7319) i_137_ = Class367_Sub4.anInt7319
-                i_138_ -= Class90.regionTileY
+                i_138_ -= RegionMapDecoder.regionTileY
                 if (i_138_ < 0) i_138_ = 0
                 else if (i_138_ >= RangeThresholdTextureNode.anInt9109) i_138_ = RangeThresholdTextureNode.anInt9109
                 HslColorTableNode.anInt6633 = (i_137_ shl 9) + 256
@@ -1256,7 +1256,7 @@ object ChatCommandProcessor {
                     i_140_ -= ArbVertexProgram.regionTileX
                     if (i_140_ < 0) i_140_ = 0
                     else if (i_140_ >= Class367_Sub4.anInt7319) i_140_ = Class367_Sub4.anInt7319
-                    i_141_ -= Class90.regionTileY
+                    i_141_ -= RegionMapDecoder.regionTileY
                     if (i_141_ < 0) i_141_ = 0
                     else if (i_141_ >= RangeThresholdTextureNode.anInt9109) i_141_ = RangeThresholdTextureNode.anInt9109
                     Class9.anInt167 = (i_140_ shl 9) + 256
@@ -1288,7 +1288,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5601) {
-                Class90.method854((-76).toByte())
+                RegionMapDecoder.method854((-76).toByte())
                 return
             }
             if (i == 5602) {
@@ -3929,7 +3929,7 @@ object ChatCommandProcessor {
                 if (i == 3308) {
                     val i_327_ = (LocalPlayerState.aPlayer_1907!!.plane).toInt()
                     val i_328_ = (((LocalPlayerState.aPlayer_1907!!.x) shr 9) + ArbVertexProgram.regionTileX)
-                    val i_329_ = (((LocalPlayerState.aPlayer_1907!!.y) shr 9) + Class90.regionTileY)
+                    val i_329_ = (((LocalPlayerState.aPlayer_1907!!.y) shr 9) + RegionMapDecoder.regionTileY)
                     anIntArray1149!![anInt1173++] = (i_327_ shl 28) + (i_328_ shl 14) + i_329_
                     return
                 }

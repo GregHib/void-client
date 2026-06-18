@@ -302,7 +302,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                             }
                             if (class318_sub4.aClass318_Sub1_6410 is DynamicSceneObjectEntity) {
                                 val i_55_ = ArbVertexProgram.regionTileX + i_33_
-                                val i_56_ = i_32_ - -Class90.regionTileY
+                                val i_56_ = i_32_ - -RegionMapDecoder.regionTileY
                                 val class348_sub37 = ((ModelBatchBase.aHashtable_1895!!.method3480(((class318_sub4.aClass318_Sub1_6410!!.plane).toInt() shl 28 or (i_56_ shl 14) or i_55_).toLong(), -6008)) as HashTableContainer?)
                                 if (class348_sub37 != null) {
                                     var i_57_ = 0
@@ -373,7 +373,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             }
                                         }
                                         val x = i_33_ + ArbVertexProgram.regionTileX
-                                        val y = i_32_ + Class90.regionTileY
+                                        val y = i_32_ + RegionMapDecoder.regionTileY
                                         MinimapPolygonDrawer.method466(
                                             ((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane),
                                             ("<col=00ffff>" + npcConfig.aString884 + Loader.getDebug(npcConfig.anInt941, x, y, class318_sub4.aClass318_Sub1_6410!!.plane.toInt())),

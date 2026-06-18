@@ -452,7 +452,7 @@ class SceneNodeDeque {
                                 SimpleToggleOptionState.method1741(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                 Renderer.anInt4581 = -1
                                 if (ModelVertexColorBuffer.aIntRange_6584 != WorldListEntry.aIntRange_304) method3120(-92)
-                                else Class90.method853(99.toByte())
+                                else RegionMapDecoder.method853(99.toByte())
                                 if (i_13_ != CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("lswp pos:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_13_)
                                 ModelVertexColorBuffer.aIntRange_6584 = null
                             }

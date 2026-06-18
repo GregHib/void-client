@@ -473,7 +473,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 }
                                 InterfaceComponentGroup.method3243(123, class348_sub47)
                                 PixelBlender.method2252(true, i_74_, i_75_, (-120).toByte(), 1, 0, 1, -4, 0)
-                            } else CollisionMap.method3502(i_75_ + Class90.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), i_74_ + ArbVertexProgram.regionTileX)
+                            } else CollisionMap.method3502(i_75_ + RegionMapDecoder.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), i_74_ + ArbVertexProgram.regionTileX)
                         }
                         if (i_76_ == 4) {
                             Class93.anInt1534 = i_72_
@@ -482,7 +482,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             LinkedListNode.anInt4292 = 0
                             CameraRotationStub.anInt321++
                             val class348_sub47 = method2148((CacheEntryReference.aFontMetaRef_9553), (TheoraVideoStream.aIsaacCipher_9029), -113)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class90.regionTileY + i_75_)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, RegionMapDecoder.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(120, i_74_ + ArbVertexProgram.regionTileX)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract(117.toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -122)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, 0x7fffffff and (l ushr 32).toInt())
@@ -532,7 +532,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_74_ + ArbVertexProgram.regionTileX, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-107, i_77_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class9.anInt169, 3.toByte())
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class90.regionTileY + i_75_)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), RegionMapDecoder.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -126)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(90, HeightMapNoise.anInt3829)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntMiddle(OrientationRotator.anInt2046, 44.toByte())
@@ -550,7 +550,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             FogOptionState.anInt6048 = 2
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148(ModelLightingConfig.aFontMetaRef_2539, (TheoraVideoStream.aIsaacCipher_9029), -110)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class90.regionTileY + i_75_)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), RegionMapDecoder.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-110, i_74_ + ArbVertexProgram.regionTileX)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-44).toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -122)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(97, i_77_)
@@ -598,7 +598,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(86.toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -121)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(31, (l ushr 32).toInt() and 0x7fffffff)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-104, ArbVertexProgram.regionTileX + i_74_)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class90.regionTileY + i_75_, 3.toByte())
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(RegionMapDecoder.regionTileY + i_75_, 3.toByte())
                             InterfaceComponentGroup.method3243(119, class348_sub47)
                             method2307(i_75_, l, i_74_, 93)
                         }
@@ -622,7 +622,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             }
                         }
                         if (i_76_ == 12) {
-                            if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -127) && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -126)) CollisionMap.method3502(i_75_ + Class90.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), ArbVertexProgram.regionTileX - -i_74_)
+                            if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -127) && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -126)) CollisionMap.method3502(i_75_ + RegionMapDecoder.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), ArbVertexProgram.regionTileX - -i_74_)
                             else {
                                 Class93.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
@@ -631,7 +631,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 FogOptionState.anInt6048 = 1
                                 val class348_sub47 = method2148((RenderableGroup.aFontMetaRef_5015), (TheoraVideoStream.aIsaacCipher_9029), -123)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(101, ArbVertexProgram.regionTileX + i_74_)
-                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class90.regionTileY - -i_75_)
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), RegionMapDecoder.regionTileY - -i_75_)
                                 InterfaceComponentGroup.method3243(6, class348_sub47)
                             }
                         }
@@ -685,7 +685,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             LinkedListNode.anInt4292 = 0
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148(TextureHandle.aFontMetaRef_2587, (TheoraVideoStream.aIsaacCipher_9029), -112)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class90.regionTileY + i_75_, 3.toByte())
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(RegionMapDecoder.regionTileY + i_75_, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-96).toByte(), (if (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -125)) 1 else 0))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, ArbVertexProgram.regionTileX + i_74_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(68, 0x7fffffff and (l ushr 32).toInt())
@@ -736,7 +736,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             val class348_sub47 = method2148(NativeRenderNode.aFontMetaRef_10477, (TheoraVideoStream.aIsaacCipher_9029), -107)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), ArbVertexProgram.regionTileX + i_74_)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_75_ + Class90.regionTileY)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_75_ + RegionMapDecoder.regionTileY)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract(120.toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -123)) 0 else 1))
                             InterfaceComponentGroup.method3243(120, class348_sub47)
                             ParticleEmitterListNode.method3275(1, i_75_, i_74_)
@@ -752,7 +752,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-85, HeightMapNoise.anInt3829)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class9.anInt169, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(127.toByte(), OrientationRotator.anInt2046)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-84, Class90.regionTileY + i_75_)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-84, RegionMapDecoder.regionTileY + i_75_)
                             InterfaceComponentGroup.method3243(-62, class348_sub47)
                             PixelBlender.method2252(true, i_74_, i_75_, (-91).toByte(), 1, 0, 1, -4, 0)
                         }
@@ -782,7 +782,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), HeightMapNoise.anInt3829)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, ArbVertexProgram.regionTileX + i_74_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntLittle(-128, OrientationRotator.anInt2046)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-82, Class90.regionTileY + i_75_)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-82, RegionMapDecoder.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-74).toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -125)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class9.anInt169, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle((l ushr 32).toInt() and 0x7fffffff, 3.toByte())
@@ -829,7 +829,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(106, i_74_ - -ArbVertexProgram.regionTileX)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -128)) 0 else 1))
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, i_75_ - -Class90.regionTileY)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, i_75_ - -RegionMapDecoder.regionTileY)
                             InterfaceComponentGroup.method3243(116, class348_sub47)
                             ParticleEmitterListNode.method3275(1, i_75_, i_74_)
                         }
@@ -842,7 +842,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             val class348_sub47 = method2148((TextureMaterialGroup.aFontMetaRef_9679), (TheoraVideoStream.aIsaacCipher_9029), -98)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-83).toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -128)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, ArbVertexProgram.regionTileX + i_74_)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_75_ + Class90.regionTileY, 3.toByte())
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_75_ + RegionMapDecoder.regionTileY, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), 0x7fffffff and (l ushr 32).toInt())
                             InterfaceComponentGroup.method3243(127, class348_sub47)
                             method2307(i_75_, l, i_74_, 63)
@@ -883,7 +883,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 val class348_sub47 = method2148((SocketStreamWorker.aFontMetaRef_2661), (TheoraVideoStream.aIsaacCipher_9029), -117)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-101).toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -125)) 0 else 1))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-69, ArbVertexProgram.regionTileX + i_74_)
-                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class90.regionTileY + i_75_, 3.toByte())
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(RegionMapDecoder.regionTileY + i_75_, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 InterfaceComponentGroup.method3243(116, class348_sub47)
                                 ParticleEmitterListNode.method3275(1, i_75_, i_74_)
@@ -953,7 +953,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                     FogOptionState.anInt6048 = 2
                                     Class93.anInt1534 = i_72_
                                     val class348_sub47 = (method2148(SmoothingBuffer.aFontMetaRef_3237, TheoraVideoStream.aIsaacCipher_9029, -125))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-96, Class90.regionTileY + i_75_)
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-96, RegionMapDecoder.regionTileY + i_75_)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, 0x7fffffff and (l ushr 32).toInt())
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_74_ - -ArbVertexProgram.regionTileX, 3.toByte())
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-91).toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -127)) 0 else 1))
@@ -983,7 +983,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                     ParticleConfigParser.anInt3820++
                                     Class93.anInt1534 = i_72_
                                     val class348_sub47 = (method2148(GlowPostProcessor.aFontMetaRef_2512, TheoraVideoStream.aIsaacCipher_9029, -91))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-108, i_75_ - -Class90.regionTileY)
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-108, i_75_ - -RegionMapDecoder.regionTileY)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-70, i_77_)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(ArbVertexProgram.regionTileX + i_74_, 3.toByte())
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-70).toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -128)) 0 else 1))

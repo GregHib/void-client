@@ -169,7 +169,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_69_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-128)
                     val i_70_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(31.toByte())
                     val i_71_ = FileExistsCondition.anInt4786 + (i_70_ and 0x7)
-                    val i_72_ = Class90.regionTileY + i_71_
+                    val i_72_ = RegionMapDecoder.regionTileY + i_71_
                     val i_73_ = BufferedMessageQueue.anInt3581 + (i_70_ shr 4 and 0x7)
                     val i_74_ = ArbVertexProgram.regionTileX + i_73_
                     val class348_sub37 = ((ModelBatchBase.aHashtable_1895!!.method3480((i_72_ shl 14 or (GradientLookupEffect.anInt9200 shl 28) or i_74_).toLong(), -6008)) as HashTableContainer?)
@@ -190,7 +190,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_76_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                     val i_77_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_78_ = FileExistsCondition.anInt4786 - -(0x7 and i_77_)
-                    val i_79_ = i_78_ + Class90.regionTileY
+                    val i_79_ = i_78_ + RegionMapDecoder.regionTileY
                     val i_80_ = BufferedMessageQueue.anInt3581 - -((i_77_ and 0x79) shr 4)
                     val i_81_ = ArbVertexProgram.regionTileX - -i_80_
                     val bool = (i_80_ >= 0 && i_78_ >= 0 && Class367_Sub4.anInt7319 > i_80_ && RangeThresholdTextureNode.anInt9109 > i_78_)
@@ -212,7 +212,7 @@ class InputStream_Sub2 : InputStream() {
                     if (GlShaderObjectHandle.aRgbColorPalette_515 == rgbColorPalette) {
                         val i_89_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_90_ = FileExistsCondition.anInt4786 + (0x7 and i_89_)
-                        val i_91_ = i_90_ + Class90.regionTileY
+                        val i_91_ = i_90_ + RegionMapDecoder.regionTileY
                         val i_92_ = (BufferedMessageQueue.anInt3581 - -((i_89_ and 0x7a) shr 4))
                         val i_93_ = ArbVertexProgram.regionTileX + i_92_
                         val i_94_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
@@ -238,7 +238,7 @@ class InputStream_Sub2 : InputStream() {
                         val i_97_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                         val i_98_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_99_ = (0x7 and i_98_) + FileExistsCondition.anInt4786
-                        val i_100_ = Class90.regionTileY + i_99_
+                        val i_100_ = RegionMapDecoder.regionTileY + i_99_
                         val i_101_ = BufferedMessageQueue.anInt3581 - -((i_98_ and 0x7b) shr 4)
                         val i_102_ = ArbVertexProgram.regionTileX + i_101_
                         val i_103_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-25)

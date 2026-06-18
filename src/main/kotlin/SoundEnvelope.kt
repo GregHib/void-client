@@ -301,7 +301,7 @@ class SoundEnvelope {
                 val i_7_ = 0xff and i_4_
                 val i_8_ = -ArbVertexProgram.regionTileX + i_2_ + (i_6_ shl 6)
                 player.aBoolean10554 = class359.aBoolean4426
-                val i_9_ = -Class90.regionTileY + i_3_ + (i_7_ shl 6)
+                val i_9_ = -RegionMapDecoder.regionTileY + i_3_ + (i_7_ shl 6)
                 player.aByteArray10321!![0] = KeyboardLayoutCache.aByteArray3300!![i]
                 player.aByte6376 = i_5_.toByte()
                 player.plane = player.aByte6376

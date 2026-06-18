@@ -72,7 +72,7 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
             if (i != -30282) return true
             anInt9255++
             if (aClass9260 == null) {
-                aClass9260 = Class90::class.java
+                aClass9260 = RegionMapDecoder::class.java
             }
             return method2769(aClass9260, 20.toByte(), string)
         }

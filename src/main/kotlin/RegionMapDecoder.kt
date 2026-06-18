@@ -3,7 +3,7 @@ import CellNoiseTextureNode.Companion.method3111
 /* Class90 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class90 {
+object RegionMapDecoder {
     @JvmField
     var aBoundsConstraintEntry_1512: BoundsConstraintEntry? = BoundsConstraintEntry("", 15)
     @JvmField

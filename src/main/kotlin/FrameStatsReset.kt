@@ -1602,7 +1602,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Class367_Sub4.anInt7322 = 0
             CombineTextureNode.anInt9222 = 0
             MapElementLookup.anInt4145 = 0
-            Class90.anInt1515 = 0
+            RegionMapDecoder.anInt1515 = 0
             GlElementArrayBuffer.anInt4836 = 0
             ScreenBorderFiller.anInt1957 = 0
             OpenGlModel.anInt5551 = 0
@@ -2280,7 +2280,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CollisionMap.anInt4439 = 0
             LightDetailOptionState.anInt6033 = 0
             SpotAnimVector.anInt2295 = 0
-            Class90.anInt1514 = 0
+            RegionMapDecoder.anInt1514 = 0
             AwtKeyboardListener.anInt6530 = 0
             GlSpriteRenderer.anInt8441 = 0
             OpenGlRenderer.anInt7699 = 0
@@ -2730,7 +2730,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SpriteComponent.anInt8369 = 0
             WallEntity.anInt8778 = 0
             ModelTransformParams.anInt4318 = 0
-            Class90.anInt1513 = 0
+            RegionMapDecoder.anInt1513 = 0
             IdleAnimationsOptionState.anInt5906 = 0
             SceneryDetailOptionState.anInt6090 = 0
             HudTabPanel.anInt2997 = 0

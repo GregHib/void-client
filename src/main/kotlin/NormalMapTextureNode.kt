@@ -116,7 +116,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             SlotBinding.anInt3428 = -1
             SpriteRgbTextureNode.Companion.method3093(i + 79)
             FloatCameraTransform.method921(99.toByte(), true)
-            Class90.regionTileY = 0
+            RegionMapDecoder.regionTileY = 0
             ArbVertexProgram.regionTileX = 0
             Renderer.anInt4581 = 0
             FileIoUtil.anInt4095 = 0

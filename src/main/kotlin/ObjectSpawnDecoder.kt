@@ -79,7 +79,7 @@ object ObjectSpawnDecoder {
                     val is_15_ = `is`!![i_14_]
                     if (is_15_ != null) {
                         val i_16_ = (64 * (NullOggStream.anIntArray9042!![i_14_] shr 8) + -ArbVertexProgram.regionTileX)
-                        val i_17_ = ((NullOggStream.anIntArray9042!![i_14_] and 0xff) * 64 - Class90.regionTileY)
+                        val i_17_ = ((NullOggStream.anIntArray9042!![i_14_] and 0xff) * 64 - RegionMapDecoder.regionTileY)
                         method3570(false)
                         class237_sub1!!.method1695(is_15_, (TimedRecordAccessor.aCollisionMapArray7108s), i_17_, FacingDirectionNode.aRenderer6654, i_16_, i xor 0x1054f)
                     }

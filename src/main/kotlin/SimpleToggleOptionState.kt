@@ -79,7 +79,7 @@ class SimpleToggleOptionState : GraphicsOptionState {
             player.anIntArray10320!![0] = -ArbVertexProgram.regionTileX + i_6_
             val i_7_ = 0x3fff and i_4_
             player.x = (((player.anIntArray10320!![0]) shl 9) + (player.method2436(91.toByte()) shl 8))
-            player.anIntArray10317!![0] = i_7_ + -Class90.regionTileY
+            player.anIntArray10317!![0] = i_7_ + -RegionMapDecoder.regionTileY
             player.y = (((player.anIntArray10317!![0]) shl 9) - -(player.method2436(85.toByte()) shl 8))
             player.aByte6376 = i_5_
             player.plane = player.aByte6376

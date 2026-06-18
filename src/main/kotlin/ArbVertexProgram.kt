@@ -74,7 +74,7 @@ class ArbVertexProgram(i: Int) : ShaderProgram() {
                             val i_9_ = i_8_ shr 14
                             i_7_ = (class318_sub1_sub3_sub3.x) - 512 * (i_9_ - regionTileX) - 256
                             val i_10_ = i_8_ and 0x3fff
-                            i_6_ = (-256 - (i_10_ - Class90.regionTileY) * 512 + (class318_sub1_sub3_sub3.y))
+                            i_6_ = (-256 - (i_10_ - RegionMapDecoder.regionTileY) * 512 + (class318_sub1_sub3_sub3.y))
                         } else if ((0x8000 and i_3_) == 0) {
                             val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_3_.toLong(), -6008) as? NpcReference?)
                             if (class348_sub22 == null) {

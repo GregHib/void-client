@@ -229,7 +229,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                 else {
                     if (CharCodeMap.anInt9591 == i_22_) throw RuntimeException("s:lr")
                     val textureAtlasState = (TextureAtlasState().also { SoundBankPatch.aTextureAtlasStateArray6802s!![i_22_] = it })
-                    textureAtlasState.anInt4420 = ((Class90.regionTileY - -(player.anIntArray10317!![0]) shr 6) + ((player.anIntArray10320!![0] + ArbVertexProgram.regionTileX) shr 6 shl 14) + ((player.plane).toInt() shl 28))
+                    textureAtlasState.anInt4420 = ((RegionMapDecoder.regionTileY - -(player.anIntArray10317!![0]) shr 6) + ((player.anIntArray10320!![0] + ArbVertexProgram.regionTileX) shr 6 shl 14) + ((player.plane).toInt() shl 28))
                     if (player.anInt10524 != -1) textureAtlasState.anInt4423 = player.anInt10524
                     else textureAtlasState.anInt4423 = player.aCompassSmoother_10217.method2019((-91).toByte())
                     textureAtlasState.aBoolean4426 = player.aBoolean10554
@@ -348,7 +348,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                     val i_39_ = 0x3fff and (i_37_ shr 14)
                     val i_40_ = 0x3fff and i_37_
                     val i_41_ = ((i_39_ + ((player.anIntArray10320!![0]) + ArbVertexProgram.regionTileX) and 0x3fff) - ArbVertexProgram.regionTileX)
-                    val i_42_ = (-Class90.regionTileY + (0x3fff and (i_40_ + Class90.regionTileY + (player.anIntArray10317!![0]))))
+                    val i_42_ = (-RegionMapDecoder.regionTileY + (0x3fff and (i_40_ + RegionMapDecoder.regionTileY + (player.anIntArray10317!![0]))))
                     if (bool) {
                         player.aBoolean10539 = true
                         player.anInt10531 = i_42_

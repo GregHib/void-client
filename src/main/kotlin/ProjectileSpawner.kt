@@ -34,7 +34,7 @@ object ProjectileSpawner {
     fun method1479(i: Int, i_1_: Byte, i_2_: Int, i_3_: Int) {
         anInt2675++
         val i_4_ = i_2_ - -ArbVertexProgram.regionTileX
-        val i_5_ = Class90.regionTileY + i
+        val i_5_ = RegionMapDecoder.regionTileY + i
         if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null && i_2_ >= 0 && i >= 0 && Class367_Sub4.anInt7319 > i_2_ && RangeThresholdTextureNode.anInt9109 > i && (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 0 || i_3_ == (LocalPlayerState.aPlayer_1907!!.plane).toInt())) {
             val l = (i_5_ shl 14 or (i_3_ shl 28) or i_4_).toLong()
             val class348_sub37 = (ModelBatchBase.aHashtable_1895!!.method3480(l, -6008) as? HashTableContainer?)

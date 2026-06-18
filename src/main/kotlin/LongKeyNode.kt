@@ -73,7 +73,7 @@ class LongKeyNode : LinkedListNode {
                 class348_sub47 = method2148(HeightMapNoise.aFontMetaRef_3825, TheoraVideoStream.aIsaacCipher_9029, -93)
                 ClickFeedbackTask.anInt4665++
             }
-            class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i + Class90.regionTileY, 3.toByte())
+            class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i + RegionMapDecoder.regionTileY, 3.toByte())
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(78.toByte(), if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -124)) 0 else 1)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-124, ArbVertexProgram.regionTileX + i_2_)
             MediaStreamClient.anInt3203 = i_2_
@@ -258,7 +258,7 @@ class LongKeyNode : LinkedListNode {
                             val i_52_ = (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3238!![i_51_])
                             if ((LocalPlayerState.aPlayer_1907!!.plane).toInt() == i_52_ shr 28) {
                                 val i_53_ = ((i_52_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX)
-                                val i_54_ = (i_52_ and 0x3fff) + -Class90.regionTileY
+                                val i_54_ = (i_52_ and 0x3fff) + -RegionMapDecoder.regionTileY
                                 if (i_53_ >= 0 && i_53_ < Class367_Sub4.anInt7319 && i_54_ >= 0 && (RangeThresholdTextureNode.anInt9109 > i_54_)) ModelWallEntity.aNodeDeque_10125!!.method1999(IntKeyNode(i_51_), -20180)
                                 else {
                                     val class42 = (TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1225((OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3239!![i_51_]), 120.toByte()))

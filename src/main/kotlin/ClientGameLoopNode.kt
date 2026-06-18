@@ -408,7 +408,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                                 if (i_30_ >= 0) {
                                     if (i_30_ > 3) i_30_ = 3
                                 } else i_30_ = 0
-                                CollisionMap.method3502((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) + Class90.regionTileY, i xor 0x2caa, i_30_, (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + ArbVertexProgram.regionTileX)
+                                CollisionMap.method3502((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) + RegionMapDecoder.regionTileY, i xor 0x2caa, i_30_, (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + ArbVertexProgram.regionTileX)
                             }
                             method1987(-120)
                             var i_31_ = 0

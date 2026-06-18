@@ -99,13 +99,13 @@ class RegionSceneShifter : LinkedListNode() {
                 Buffer.method3379(2, i_17_)
                 Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.Companion.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
                 val i_18_ = ArbVertexProgram.regionTileX
-                val i_19_ = Class90.regionTileY
+                val i_19_ = RegionMapDecoder.regionTileY
                 ArbVertexProgram.regionTileX = (-(Class367_Sub4.anInt7319 shr 4) + Renderer.anInt4581) * 8
-                Class90.regionTileY = 8 * (FileIoUtil.anInt4095 - (RangeThresholdTextureNode.anInt9109 shr 4))
+                RegionMapDecoder.regionTileY = 8 * (FileIoUtil.anInt4095 - (RangeThresholdTextureNode.anInt9109 shr 4))
                 NamedIdEntry.Companion.aClass348_Sub42_Sub14_6885 = method766(Renderer.anInt4581 * 8, FileIoUtil.anInt4095 * 8)
                 OpenGlRenderNode.aSmoothingBuffer_10488 = null
                 val i_20_ = ArbVertexProgram.regionTileX - i_18_
-                val i_21_ = -i_19_ + Class90.regionTileY
+                val i_21_ = -i_19_ + RegionMapDecoder.regionTileY
                 if (i_17_ == 11) {
                     var i_22_ = 0
                     while (TerrainShadowBuilderGl2.Companion.anInt6930 > i_22_) {
@@ -193,7 +193,7 @@ class RegionSceneShifter : LinkedListNode() {
                             val i_33_ = (0x3fffL and class348_sub37.aLong4291).toInt()
                             val i_34_ = -ArbVertexProgram.regionTileX + i_33_
                             val i_35_ = (0x3fffL and (class348_sub37.aLong4291 shr 14)).toInt()
-                            val i_36_ = i_35_ + -Class90.regionTileY
+                            val i_36_ = i_35_ + -RegionMapDecoder.regionTileY
                             if (i_34_ < 0 || i_36_ < 0 || (i_34_ >= Class367_Sub4.anInt7319) || i_36_ >= RangeThresholdTextureNode.anInt9109) class348_sub37.method2715(37.toByte())
                             class348_sub37 = (ModelBatchBase.aHashtable_1895!!.method3482(0) as? HashTableContainer?)
                         }

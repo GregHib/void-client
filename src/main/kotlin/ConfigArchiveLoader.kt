@@ -205,7 +205,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.equals("rebuildprofile", ignoreCase = true)) {
-                            Class90.aLong1516 = method599(-75)
+                            RegionMapDecoder.aLong1516 = method599(-75)
                             GlTexture1D.aBoolean8558 = true
                             TextureTileRenderer.method2953((-114).toByte())
                             method464(-1)
@@ -405,7 +405,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         }
                         if (string.equals("getcamerapos", ignoreCase = true)) {
                             method94(
-                                ("Pos: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (((GlslMaterialPass.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) shr 6) + "," + ((CompositeRgbNoiseTexture.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((GlslMaterialPass.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) and 0x3f) + "," + ((CompositeRgbNoiseTexture.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((CollisionMapAccessor.method2064(
+                                ("Pos: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (((GlslMaterialPass.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) shr 6) + "," + ((CompositeRgbNoiseTexture.anInt8685 shr 9) + RegionMapDecoder.regionTileY shr 6) + "," + (((GlslMaterialPass.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) and 0x3f) + "," + ((CompositeRgbNoiseTexture.anInt8685 shr 9) - -RegionMapDecoder.regionTileY and 0x3f) + " Height: " + ((CollisionMapAccessor.method2064(
                                     GlslMaterialPass.anInt6246,
                                     (LocalPlayerState.aPlayer_1907!!.plane).toInt(),
                                     11219,
@@ -413,7 +413,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 )) - ParticleSystemRenderer.anInt3855)), 126
                             )
                             method94(
-                                ("Look: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (RenderableEntry.anInt4336 - -ArbVertexProgram.regionTileX shr 6) + "," + (Class90.regionTileY + ClanChatRequestSender.anInt3647 shr 6) + "," + (0x3f and RenderableEntry.anInt4336 - -ArbVertexProgram.regionTileX) + "," + (0x3f and ClanChatRequestSender.anInt3647 - -Class90.regionTileY) + " Height: " + ((CollisionMapAccessor.method2064(
+                                ("Look: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (RenderableEntry.anInt4336 - -ArbVertexProgram.regionTileX shr 6) + "," + (RegionMapDecoder.regionTileY + ClanChatRequestSender.anInt3647 shr 6) + "," + (0x3f and RenderableEntry.anInt4336 - -ArbVertexProgram.regionTileX) + "," + (0x3f and ClanChatRequestSender.anInt3647 - -RegionMapDecoder.regionTileY) + " Height: " + ((CollisionMapAccessor.method2064(
                                     RenderableEntry.anInt4336,
                                     (LocalPlayerState.aPlayer_1907!!.plane).toInt(),
                                     11219,

@@ -220,7 +220,7 @@ class CharacterRenderState : LinkedListNode() {
                                 InterfaceComponentGroup.method3243(-80, class348_sub47)
                             }
                             if (i_8_ == 4) {
-                                Class90.anInt1514++
+                                RegionMapDecoder.anInt1514++
                                 val class348_sub47 = method2148((RasterSprite.aFontMetaRef_5204), (TheoraVideoStream.aIsaacCipher_9029), -82)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(116, class348_sub47)
