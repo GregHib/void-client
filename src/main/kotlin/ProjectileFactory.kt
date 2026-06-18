@@ -1,4 +1,4 @@
-import Class8.Companion.method214
+import NpcAnimationResolver.Companion.method214
 
 /* Class223 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

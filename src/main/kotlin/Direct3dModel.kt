@@ -3498,7 +3498,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
                 class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(46.toByte()) as ContactList?)
             }
-            Class8.anInt166 = 0
+            NpcAnimationResolver.anInt166 = 0
             if (i < 92) method661(114.toByte())
             FileExistsCondition.anInt4776 = 0
             SourceRowTextureNode.aNodeDeque_9111!!.method1996(115)

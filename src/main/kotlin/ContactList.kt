@@ -39,7 +39,7 @@ class ContactList internal constructor(var aString9617: String?) : HashLinkedLis
         if (this.anInt9615 == 0) {
             this.method2715(112.toByte())
             this.method3162(true)
-            Class8.anInt166--
+            NpcAnimationResolver.anInt166--
             KeyboardLayoutCache.aLruByteCache_3301!!.method582(this, class348_sub42_sub12.aLong9600, (-128).toByte())
             return false
         }

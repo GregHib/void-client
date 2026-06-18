@@ -94,7 +94,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             method1277(62.toByte())
             method821(-126)
             method2375(16127)
-            if (OggCacheStream.aNamedIdRecord_5271 != Class8.aNamedIdRecord_165) {
+            if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) {
                 var i_6_ = 0
                 while (CacheLruCache.aByteArrayArray3882!!.size > i_6_) {
                     CacheLruCache.aByteArrayArray3882!![i_6_] = null

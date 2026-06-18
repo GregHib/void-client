@@ -159,7 +159,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
                     if (i_2_ > GlArrayBufferObject.anInt4717 && i_2_ < SceneTileBounds.anInt1117 + GlArrayBufferObject.anInt4717) {
                         var i_9_ = -1
                         var i_10_ = 0
-                        while (Class8.anInt166 > i_10_) {
+                        while (NpcAnimationResolver.anInt166 > i_10_) {
                             if (PlayerSequenceSelector.aBoolean1211) {
                                 val i_11_ = (ProceduralTextureGraph.anInt9532 - -33 - -(i_10_ * 16))
                                 if (i_3_ > -13 + i_11_ && i_3_ <= i_11_ + 3) i_9_ = i_10_

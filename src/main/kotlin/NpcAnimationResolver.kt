@@ -1,7 +1,7 @@
 /* Class8 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class8 {
+class NpcAnimationResolver {
     @JvmField
     var anInt159: Int = 0
     @JvmField

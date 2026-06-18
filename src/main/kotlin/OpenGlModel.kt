@@ -3061,7 +3061,7 @@ class OpenGlModel : AbstractModel {
                 aShortArray5608 = modelDefinition.aShortArray1842
                 anInt5557 = modelDefinition.anInt1821
                 aWidgetRedrawRegionArray5541 = modelDefinition.aWidgetRedrawRegionArray1866
-                val class8s: Array<Class8?> = arrayOfNulls<Class8>(anInt5557)
+                val npcAnimationResolvers: Array<NpcAnimationResolver?> = arrayOfNulls<NpcAnimationResolver>(anInt5557)
                 aModelFacePriorityNodeArray5640 = modelDefinition.aModelFacePriorityNodeArray1846
                 if (modelDefinition.aRectangleBoundsArray1832 != null) {
                     anInt5536 = modelDefinition.aRectangleBoundsArray1832!!.size
@@ -3108,7 +3108,7 @@ class OpenGlModel : AbstractModel {
                 for (i_717_ in 0..<modelDefinition.anInt1821) {
                     val i_718_ = anIntArray5528!![i_717_]
                     anIntArray5528!![i_717_] = i_716_
-                    class8s[i_717_] = Class8()
+                    npcAnimationResolvers[i_717_] = NpcAnimationResolver()
                     i_716_ += i_718_
                 }
                 anIntArray5528!![modelDefinition.anInt1821] = i_716_
@@ -3141,17 +3141,17 @@ class OpenGlModel : AbstractModel {
                     i_730_ = 256 * i_730_ / i_732_
                     val i_733_ = (if (modelDefinition.aByteArray1843 == null) 0.toByte() else modelDefinition.aByteArray1843!![i_719_])
                     if (i_733_.toInt() == 0) {
-                        var class8 = class8s[i_720_.toInt()]!!
+                        var class8 = npcAnimationResolvers[i_720_.toInt()]!!
                         class8.anInt162 += i_730_
                         class8.anInt159 += i_731_
                         class8.anInt160++
                         class8.anInt161 += i_729_
-                        class8 = class8s[i_721_.toInt()]!!
+                        class8 = npcAnimationResolvers[i_721_.toInt()]!!
                         class8.anInt161 += i_729_
                         class8.anInt162 += i_730_
                         class8.anInt160++
                         class8.anInt159 += i_731_
-                        class8 = class8s[i_722_.toInt()]!!
+                        class8 = npcAnimationResolvers[i_722_.toInt()]!!
                         class8.anInt160++
                         class8.anInt159 += i_731_
                         class8.anInt162 += i_730_
@@ -3378,11 +3378,11 @@ class OpenGlModel : AbstractModel {
                         val i_808_ = modelDefinition.aShortArray1863[i_735_]
                         val i_809_ = modelDefinition.aShortArray1835!![i_735_]
                         val i_810_ = modelDefinition.aShortArray1855[i_735_]
-                        var class8 = class8s[i_808_.toInt()]!!
+                        var class8 = npcAnimationResolvers[i_808_.toInt()]!!
                         aShortArray5592!![i_734_] = method683(class8.anInt162, class8.anInt159, l, class8.anInt161, modelDefinition, class8.anInt160, f, 0, i_808_.toInt(), f_740_)
-                        class8 = class8s[i_809_.toInt()]!!
+                        class8 = npcAnimationResolvers[i_809_.toInt()]!!
                         aShortArray5579!![i_734_] = method683(class8.anInt162, class8.anInt159, i_745_.toLong() + l, class8.anInt161, modelDefinition, class8.anInt160, f_741_, 0, i_809_.toInt(), f_742_)
-                        class8 = class8s[i_810_.toInt()]!!
+                        class8 = npcAnimationResolvers[i_810_.toInt()]!!
                         aShortArray5566!![i_734_] = method683(class8.anInt162, class8.anInt159, l + i_746_.toLong(), class8.anInt161, modelDefinition, class8.anInt160, f_743_, 0, i_810_.toInt(), f_744_)
                     } else if (i_807_.toInt() == 1) {
                         val class347 = dragDropControllers[i_735_]!!
