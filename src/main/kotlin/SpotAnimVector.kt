@@ -62,7 +62,7 @@ class SpotAnimVector {
 
     fun method1337(i: Int) {
         anInt2300++
-        this.anInt2298 = Class70.anIntArray1204!![anInt2302 shl 3]
+        this.anInt2298 = TrigLookupTables.anIntArray1204!![anInt2302 shl 3]
         val l = this.anInt2291.toLong()
         val l_10_ = this.anInt2290.toLong()
         val l_11_ = this.anInt2294.toLong()

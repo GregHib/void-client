@@ -249,8 +249,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         anInt10263++
         val i_19_ = ((this.aShort8743 + this.aShort8751) shr 1)
         val i_20_ = ((this.aShort8750 + this.aShort8747) shr 1)
-        val i_21_ = Class70.anIntArray1207!![i]
-        val i_22_ = Class70.anIntArray1204!![i]
+        val i_21_ = TrigLookupTables.anIntArray1207!![i]
+        val i_22_ = TrigLookupTables.anIntArray1204!![i]
         val i_23_ = -i_14_ / 2
         val i_24_ = -i_16_ / 2
         val i_25_ = i_23_ * i_22_ + i_24_ * i_21_ shr 14

@@ -49,7 +49,7 @@ object ObjectSpawnDecoder {
     @JvmStatic
     fun method1088(i: Int, i_6_: Byte, i_7_: Int, i_8_: Int, i_9_: Int): Int {
         anInt1804++
-        val i_10_ = -Class70.anIntArray1204!![8192 * i_8_ / i_7_] + 65536 shr 1
+        val i_10_ = -TrigLookupTables.anIntArray1204!![8192 * i_8_ / i_7_] + 65536 shr 1
         if (i_6_.toInt() != 22) return -73
         return ((i_10_ * i shr 16) + (i_9_ * (65536 + -i_10_) shr 16))
     }

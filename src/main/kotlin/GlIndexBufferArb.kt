@@ -8,7 +8,7 @@ class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, move
     }
 
     override fun method24(bool: Boolean, bool_1_: Boolean): Buffer? {
-        if (bool_1_ != false) aClass70_8503 = null
+        if (bool_1_ != false) aTrigLookupTables_8503 = null
         anInt8500++
         return super.method2120(0, (this.aGlRenderDevice_4759.aMapBuffer9913), bool)
     }
@@ -27,7 +27,7 @@ class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, move
 
     override fun method25(i: Byte): MovementDirection {
         anInt8506++
-        if (i <= 19) aClass70_8503 = null
+        if (i <= 19) aTrigLookupTables_8503 = null
         return aMovementDirection_8504!!
     }
 
@@ -62,7 +62,7 @@ class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, move
         @JvmField
         var anInt8502: Int = 0
         @JvmField
-        var aClass70_8503: Class70? = Class70()
+        var aTrigLookupTables_8503: TrigLookupTables? = TrigLookupTables()
         @JvmField
         var aByteArrayArray8505: Array<ByteArray?>? = arrayOfNulls<ByteArray>(50)
         @JvmField
@@ -594,7 +594,7 @@ class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, move
 
         @JvmStatic
         fun method2132(i: Int) {
-            aClass70_8503 = null
+            aTrigLookupTables_8503 = null
             if (i >= -8) anInt8498 = -77
             anIntArray8507 = null
             aByteArrayArray8505 = null

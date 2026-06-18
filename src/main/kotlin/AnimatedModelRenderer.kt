@@ -61,8 +61,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3850(78.toByte(), anInterface18_Impl3_8403)
         aHa_Sub3_8407.method3817(81, i_18_)
         aHa_Sub3_8407.method3923(true, i)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, RenderListTextureNode.aClass70_9485)
-        aHa_Sub3_8407.method3885(1, true, RenderListTextureNode.aClass70_9485)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, RenderListTextureNode.aTrigLookupTables_9485)
+        aHa_Sub3_8407.method3885(1, true, RenderListTextureNode.aTrigLookupTables_9485)
         aHa_Sub3_8407.method3894(-28186, i_17_)
         if (aBoolean8418) {
             val f_21_ = method966().toFloat()
@@ -93,8 +93,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3915(0)
         aHa_Sub3_8407.method3933(-44)
         aHa_Sub3_8407.method3879(-8629)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, SceneObjectEntity.aClass70_8737)
-        aHa_Sub3_8407.method3885(1, true, SceneObjectEntity.aClass70_8737)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, SceneObjectEntity.aTrigLookupTables_8737)
+        aHa_Sub3_8407.method3885(1, true, SceneObjectEntity.aTrigLookupTables_8737)
     }
 
     override fun method965(i: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int) {
@@ -106,8 +106,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3850(((-46).toByte()).toByte(), anInterface18_Impl3_8403)
         aHa_Sub3_8407.method3817(98, i_40_)
         aHa_Sub3_8407.method3923(true, i_38_)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, RenderListTextureNode.aClass70_9485)
-        aHa_Sub3_8407.method3885(1, true, RenderListTextureNode.aClass70_9485)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, RenderListTextureNode.aTrigLookupTables_9485)
+        aHa_Sub3_8407.method3885(1, true, RenderListTextureNode.aTrigLookupTables_9485)
         aHa_Sub3_8407.method3894(-28186, i_39_)
         val bool = aBoolean8391 && anInt8419 == 0 && anInt8397 == 0
         val bool_42_ = (aBoolean8396 && anInt8400 == 0 && anInt8416 == 0)
@@ -224,8 +224,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
             }
         }
         aHa_Sub3_8407.method3879(-8629)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, SceneObjectEntity.aClass70_8737)
-        aHa_Sub3_8407.method3885(1, true, SceneObjectEntity.aClass70_8737)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, SceneObjectEntity.aTrigLookupTables_8737)
+        aHa_Sub3_8407.method3885(1, true, SceneObjectEntity.aTrigLookupTables_8737)
     }
 
     override fun method983(f: Float, f_66_: Float, f_67_: Float, f_68_: Float, f_69_: Float, f_70_: Float, i: Int, var_sprite: Sprite?, i_71_: Int, i_72_: Int) {
@@ -253,7 +253,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3897(1, -4382)
         aHa_Sub3_8407.method3850(((-31).toByte()).toByte(), interface18_impl3)
         aHa_Sub3_8407.method3874(ParticleSystemState.aRenderConfigFactory_2207, 127, RenderQueueState.aRenderConfigFactory_6519)
-        aHa_Sub3_8407.method3849(47.toByte(), 0, SceneObjectEntity.aClass70_8737)
+        aHa_Sub3_8407.method3849(47.toByte(), 0, SceneObjectEntity.aTrigLookupTables_8737)
         val class101_sub2_76_ = aHa_Sub3_8407.method3820(false)
         class101_sub2_76_.method898(class101_sub2)
         class101_sub2_76_.method891(-i_71_, -i_72_, 0)
@@ -262,7 +262,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3915(0)
         aHa_Sub3_8407.method3933(-109)
         aHa_Sub3_8407.method3879(-8629)
-        aHa_Sub3_8407.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+        aHa_Sub3_8407.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
         aHa_Sub3_8407.method3874(ParticleSystemState.aRenderConfigFactory_2207, 118, ParticleSystemState.aRenderConfigFactory_2207)
         aHa_Sub3_8407.method3850(98.toByte(), null)
         aHa_Sub3_8407.method3897(0, -4382)
@@ -323,8 +323,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3850(65.toByte(), anInterface18_Impl3_8403)
         aHa_Sub3_8407.method3817(58, i_99_)
         aHa_Sub3_8407.method3923(true, i_97_)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, RenderListTextureNode.aClass70_9485)
-        aHa_Sub3_8407.method3885(1, true, RenderListTextureNode.aClass70_9485)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, RenderListTextureNode.aTrigLookupTables_9485)
+        aHa_Sub3_8407.method3885(1, true, RenderListTextureNode.aTrigLookupTables_9485)
         aHa_Sub3_8407.method3894(-28186, i_98_)
         class101_sub2_101_.method932(1.0f, anInterface18_Impl3_8403.method71(((-44).toByte()).toByte(), anInt8417.toFloat()), anInterface18_Impl3_8403.method67(anInt8411.toFloat(), 101), ((-30).toByte()).toByte())
         if (aBoolean8418) {
@@ -339,8 +339,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3915(0)
         aHa_Sub3_8407.method3933(-118)
         aHa_Sub3_8407.method3879(-8629)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, SceneObjectEntity.aClass70_8737)
-        aHa_Sub3_8407.method3885(1, true, SceneObjectEntity.aClass70_8737)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, SceneObjectEntity.aTrigLookupTables_8737)
+        aHa_Sub3_8407.method3885(1, true, SceneObjectEntity.aTrigLookupTables_8737)
     }
 
     override fun method984(`is`: IntArray?) {
@@ -364,8 +364,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3850(((-67).toByte()).toByte(), anInterface18_Impl3_8403)
         aHa_Sub3_8407.method3817(96, i_105_)
         aHa_Sub3_8407.method3923(true, i_103_)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, RenderListTextureNode.aClass70_9485)
-        aHa_Sub3_8407.method3885(1, true, RenderListTextureNode.aClass70_9485)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, RenderListTextureNode.aTrigLookupTables_9485)
+        aHa_Sub3_8407.method3885(1, true, RenderListTextureNode.aTrigLookupTables_9485)
         aHa_Sub3_8407.method3894(-28186, i_104_)
         class101_sub2.method932(0.0f, anInt8417.toFloat(), anInt8411.toFloat(), ((-44).toByte()).toByte())
         class101_sub2.method891(i, i_102_, 0)
@@ -374,8 +374,8 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3915(0)
         aHa_Sub3_8407.method3933(-41)
         aHa_Sub3_8407.method3879(-8629)
-        aHa_Sub3_8407.method3849(47.toByte(), 1, SceneObjectEntity.aClass70_8737)
-        aHa_Sub3_8407.method3885(1, true, SceneObjectEntity.aClass70_8737)
+        aHa_Sub3_8407.method3849(47.toByte(), 1, SceneObjectEntity.aTrigLookupTables_8737)
+        aHa_Sub3_8407.method3885(1, true, SceneObjectEntity.aTrigLookupTables_8737)
     }
 
     override fun method971(): Int {
@@ -415,14 +415,14 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         aHa_Sub3_8407.method3897(1, -4382)
         aHa_Sub3_8407.method3850(101.toByte(), interface18_impl3)
         aHa_Sub3_8407.method3874(ParticleSystemState.aRenderConfigFactory_2207, 110, RenderQueueState.aRenderConfigFactory_6519)
-        aHa_Sub3_8407.method3849(47.toByte(), 0, SceneObjectEntity.aClass70_8737)
+        aHa_Sub3_8407.method3849(47.toByte(), 0, SceneObjectEntity.aTrigLookupTables_8737)
         val class101_sub2_117_ = aHa_Sub3_8407.method3820(false)
         class101_sub2_117_.method932(1.0f, interface18_impl3!!.method71(((-108).toByte()).toByte(), anInt8417.toFloat()), interface18_impl3.method67(anInt8411.toFloat(), 95), ((-81).toByte()).toByte())
         class101_sub2_117_.method920(interface18_impl3.method71(((-27).toByte()).toByte(), (i_113_ + -i_115_).toFloat()), false, 0.0f, interface18_impl3.method67((i - i_114_).toFloat(), 122))
         aHa_Sub3_8407.method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
         aHa_Sub3_8407.method3933(-81)
         aHa_Sub3_8407.method3879(-8629)
-        aHa_Sub3_8407.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+        aHa_Sub3_8407.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
         aHa_Sub3_8407.method3874(ParticleSystemState.aRenderConfigFactory_2207, 127, ParticleSystemState.aRenderConfigFactory_2207)
         aHa_Sub3_8407.method3850(((-84).toByte()).toByte(), null)
         aHa_Sub3_8407.method3897(0, -4382)

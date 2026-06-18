@@ -4,7 +4,7 @@ import kotlin.math.sin
 /* Class70 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class70 {
+class TrigLookupTables {
     override fun toString(): String {
         anInt1203++
         throw IllegalStateException()

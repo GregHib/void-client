@@ -83,7 +83,7 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Inte
                 DataHolder.aLong3660 = GameClock.method599(-119)
             }
             anInt4900++
-            if (NpcConfig.Companion.aResourceLoaderThread_897 == null) Class70.method726(116)
+            if (NpcConfig.Companion.aResourceLoaderThread_897 == null) TrigLookupTables.method726(116)
             val class56 = TimedTileQueueEntry.aConnectionStateType_9660!!
             val i = ClientLoadStateMachine.method1278(-28660)
             if (class56 == TimedTileQueueEntry.aConnectionStateType_9660) {

@@ -538,8 +538,8 @@ class Player : ProjectedGroundDecor() {
                         if ((this.anIntArray10296 != null) && ((this.anIntArray10296!![this.anInt10278]) != -1)) i_84_ = (this.anIntArray10296!![(this.anInt10278)])
                         val i_85_ = (i_84_ + (this.anInt10237) * 2048 + -i_74_ and 0x3fff)
                         if (i_85_ != 0) class64_80_.a(i_85_)
-                        val i_86_ = Class70.anIntArray1207!![i_85_]
-                        val i_87_ = Class70.anIntArray1204!![i_85_]
+                        val i_86_ = TrigLookupTables.anIntArray1207!![i_85_]
+                        val i_87_ = TrigLookupTables.anIntArray1204!![i_85_]
                         val i_88_ = i_87_ * i_81_ + i_83_ * i_86_ shr 14
                         i_83_ = -(i_81_ * i_86_) + i_83_ * i_87_ shr 14
                         i_81_ = i_88_
@@ -588,8 +588,8 @@ class Player : ProjectedGroundDecor() {
                         if ((this.anIntArray10296 != null) && ((this.anIntArray10296!![this.anInt10289]) != -1)) i_95_ = (this.anIntArray10296!![(this.anInt10289)])
                         val i_96_ = (0x3fff and -i_74_ + ((this.anInt10202) * 2048 + i_95_))
                         if (i_96_ != 0) class64_91_.a(i_96_)
-                        val i_97_ = Class70.anIntArray1207!![i_96_]
-                        val i_98_ = Class70.anIntArray1204!![i_96_]
+                        val i_97_ = TrigLookupTables.anIntArray1207!![i_96_]
+                        val i_98_ = TrigLookupTables.anIntArray1204!![i_96_]
                         val i_99_ = i_94_ * i_97_ + i_98_ * i_92_ shr 14
                         i_94_ = -(i_97_ * i_92_) + i_98_ * i_94_ shr 14
                         i_92_ = i_99_

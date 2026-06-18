@@ -623,7 +623,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         aModelBatchBase_8197 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078, SpriteMaskShape.aSpriteMaskShape_4078)))))
     }
 
-    abstract fun method3829(class70: Class70?, i: Int, i_56_: Byte, bool: Boolean)
+    abstract fun method3829(trigLookupTables: TrigLookupTables?, i: Int, i_56_: Byte, bool: Boolean)
 
     abstract fun method3830(i: Int, `is`: IntArray?, bool: Boolean, i_57_: Byte, i_58_: Int, i_59_: Int, i_60_: Int): Interface18_Impl3?
 
@@ -766,8 +766,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3903(false)
         anInt8017++
         method3894(-28186, i_73_)
-        method3849(47.toByte(), 0, RenderListTextureNode.aClass70_9485)
-        method3885(0, true, RenderListTextureNode.aClass70_9485)
+        method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
+        method3885(0, true, RenderListTextureNode.aTrigLookupTables_9485)
         method3817(113, i_74_)
         this.aClass101_Sub2_8074.method932(1.0f, i_72_.toFloat(), i_71_.toFloat(), (-22).toByte())
         this.aClass101_Sub2_8074.method891(i, i_70_, 0)
@@ -775,8 +775,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3926(67.toByte(), false)
         method3933(-70)
         method3926(83.toByte(), true)
-        method3885(0, true, WidgetRedrawRegion.aClass70_4247)
-        method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+        method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+        method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
     }
 
     private fun method3845(i: Byte) {
@@ -820,13 +820,13 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         return (this.aClass101_Sub2Array8131[this.anInt8175])!!
     }
 
-    fun method3849(i: Byte, i_76_: Int, class70: Class70?) {
+    fun method3849(i: Byte, i_76_: Int, trigLookupTables: TrigLookupTables?) {
         try {
             if (i.toInt() != 47) this.aFloat8087 = -0.68323714f
             anInt8036++
-            method3924(false, false, i_76_, class70, false)
+            method3924(false, false, i_76_, trigLookupTables, false)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.NJ(" + i + ',' + i_76_ + ',' + (if (class70 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("wga.NJ(" + i + ',' + i_76_ + ',' + (if (trigLookupTables != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -842,15 +842,15 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         if (method3878(i_77_.toFloat(), 0, i_78_.toFloat() + f, 0.0f, f_82_ + i_79_.toFloat(), 0.0f, i.toFloat())) {
             method3903(false)
             method3894(-28186, i_80_)
-            method3849(47.toByte(), 0, RenderListTextureNode.aClass70_9485)
-            method3885(0, true, RenderListTextureNode.aClass70_9485)
+            method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
+            method3885(0, true, RenderListTextureNode.aTrigLookupTables_9485)
             method3817(112, i_81_)
             method3942(5)
             method3926(45.toByte(), false)
             method3907(true)
             method3926(48.toByte(), true)
-            method3885(0, true, WidgetRedrawRegion.aClass70_4247)
-            method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+            method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+            method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
         }
     }
 
@@ -883,7 +883,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3850((-47).toByte(), interface18_impl3)
             method3817(99, 1)
             method3874(RenderQueueState.aRenderConfigFactory_6519, 114, RenderQueueState.aRenderConfigFactory_6519)
-            method3849(47.toByte(), 0, RenderListTextureNode.aClass70_9485)
+            method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
             method3894(-28186, i)
             this.aClass101_Sub2_8074.method932(0.0f, this.anInt7962.toFloat(), this.anInt7931.toFloat(), (-52).toByte())
             method3915(0)
@@ -893,7 +893,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3905(127.toByte())
             method3933(-127)
             method3879(-8629)
-            method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+            method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("wga.A(" + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_85_ + ',' + i_86_ + ')'))
         }
@@ -1215,8 +1215,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt8026++
         method3903(false)
         method3894(-28186, i_136_)
-        method3849(47.toByte(), 0, RenderListTextureNode.aClass70_9485)
-        method3885(0, true, RenderListTextureNode.aClass70_9485)
+        method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
+        method3885(0, true, RenderListTextureNode.aTrigLookupTables_9485)
         method3817(83, i_137_)
         this.aClass101_Sub2_8074.method932(1.0f, i_135_.toFloat(), i_135_.toFloat(), (-75).toByte())
         this.aClass101_Sub2_8074.method891(i, i_134_, 0)
@@ -1226,8 +1226,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3862(0, aModelBatchBase_8190)
         method3899(256, 0, AsyncResourceRequest.aCameraRotationStub_9661, true)
         method3926(41.toByte(), true)
-        method3885(0, true, WidgetRedrawRegion.aClass70_4247)
-        method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+        method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+        method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
     }
 
     override fun i(): Int {
@@ -1357,15 +1357,15 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt8032++
     }
 
-    fun method3885(i: Int, bool: Boolean, class70: Class70?) {
+    fun method3885(i: Int, bool: Boolean, trigLookupTables: TrigLookupTables?) {
         do {
             try {
-                method3829(class70, i, 80.toByte(), false)
+                method3829(trigLookupTables, i, 80.toByte(), false)
                 anInt8041++
                 if (bool == true) break
                 method3643(null, -42, 69)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.IH(" + i + ',' + bool + ',' + (if (class70 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("wga.IH(" + i + ',' + bool + ',' + (if (trigLookupTables != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -2007,8 +2007,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         } else f = 1.0f
         method3903(false)
         method3894(-28186, i_236_)
-        method3849(47.toByte(), 0, RenderListTextureNode.aClass70_9485)
-        method3885(0, true, RenderListTextureNode.aClass70_9485)
+        method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
+        method3885(0, true, RenderListTextureNode.aTrigLookupTables_9485)
         method3817(94, i_237_)
         method3942(5)
         method3926(86.toByte(), false)
@@ -2053,8 +2053,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             f_248_ = f_244_
         }
         method3926(88.toByte(), true)
-        method3885(0, true, WidgetRedrawRegion.aClass70_4247)
-        method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+        method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+        method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
     }
 
     override fun pa() {
@@ -2093,7 +2093,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt8034++
     }
 
-    abstract fun method3924(bool: Boolean, bool_253_: Boolean, i: Int, class70: Class70?, bool_254_: Boolean)
+    abstract fun method3924(bool: Boolean, bool_253_: Boolean, i: Int, trigLookupTables: TrigLookupTables?, bool_254_: Boolean)
 
     abstract fun method3925(i: Int, interface5_impl1: Interface5_Impl1?, i_255_: Int)
 
@@ -2253,8 +2253,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         val f = method3858(false)
         method3903(false)
         method3894(-28186, i_271_)
-        method3849(47.toByte(), 0, RenderListTextureNode.aClass70_9485)
-        method3885(0, true, RenderListTextureNode.aClass70_9485)
+        method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
+        method3885(0, true, RenderListTextureNode.aTrigLookupTables_9485)
         method3817(89, i_272_)
         this.aClass101_Sub2_8074.method932(1.0f, (-1 + i_270_).toFloat(), (i_269_ - 1).toFloat(), (-33).toByte())
         this.aClass101_Sub2_8074.method920(-f + i_268_.toFloat(), false, 0.0f, i.toFloat() - f)
@@ -2262,8 +2262,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3926(98.toByte(), false)
         method3860(GlBloomEffect.aCameraRotationStub_8832, 4, 8)
         method3926(104.toByte(), true)
-        method3885(0, true, WidgetRedrawRegion.aClass70_4247)
-        method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+        method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+        method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
     }
 
     fun method3934(i: Int): FloatCameraTransform {

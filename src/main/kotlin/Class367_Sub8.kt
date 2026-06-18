@@ -9,12 +9,12 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
         if (i.toInt() != 87) Companion.method3549(-29, (-5).toByte())
         anInt7364++
         this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 120, ParticleSystemState.aRenderConfigFactory_2207)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
-        this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
         this.aHa_Sub3_4479.method3910((-26).toByte(), 1)
         this.aHa_Sub3_4479.method3850(86.toByte(), null)
         this.aHa_Sub3_4479.method3897(0, -4382)
-        this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
+        this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
     }
 
     override fun method3526(i: Int, i_17_: Int, i_18_: Int) {
@@ -67,12 +67,12 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
         anInt7356++
         this.aHa_Sub3_4479.method3897(1, i xor 0x2a45.inv())
         this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 111, (TheoraVideoStream.aRenderConfigFactory_9011))
-        this.aHa_Sub3_4479.method3924(true, false, 0, WidgetRedrawRegion.aClass70_4247, false)
-        this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)
+        this.aHa_Sub3_4479.method3924(true, false, 0, WidgetRedrawRegion.aTrigLookupTables_4247, false)
+        this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aTrigLookupTables_8737)
         this.aHa_Sub3_4479.method3910((-26).toByte(), 0)
         this.aHa_Sub3_4479.method3897(0, -4382)
         this.aHa_Sub3_4479.method3894(-28186, -16777216)
-        this.aHa_Sub3_4479.method3885(0, true, RenderListTextureNode.aClass70_9485)
+        this.aHa_Sub3_4479.method3885(0, true, RenderListTextureNode.aTrigLookupTables_9485)
         method3532(10425)
         if (i != 15192) aShort7355 = 106.toShort()
     }

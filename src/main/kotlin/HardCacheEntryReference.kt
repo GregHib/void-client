@@ -330,7 +330,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i_28_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_29_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 WallSceneEntity.method2397((-128).toByte())
-                Class70.method727((-63).toByte(), i_29_, i, i_28_)
+                TrigLookupTables.method727((-63).toByte(), i_29_, i, i_28_)
                 val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(-126, i)
                 ObjectSpawnDecoder.method1085(class213.anInt2825, class213.anInt2787, (-59).toByte(), class213.anInt2781, i_28_)
                 SkeletalAnimFrameLoader.method350(class213.anInt2779, class213.anInt2826, 125, i_28_, class213.anInt2810)

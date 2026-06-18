@@ -3,7 +3,7 @@ import MidiSequencePlayer.Companion.method2862
 import Class367_Sub8.Companion.method3548
 import WorldMapElement.Companion.method181
 import GameClock.method599
-import Class70.Companion.method726
+import TrigLookupTables.Companion.method726
 import NativeTerrainTile.Companion.method4004
 
 /* Class170 - Decompiled by JODE

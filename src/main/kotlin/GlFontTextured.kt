@@ -158,7 +158,7 @@ class GlFontTextured internal constructor(private val aHa_Sub3_6494: NativeRende
         aHa_Sub3_6494.method3850((-41).toByte(), anInterface18_Impl3_6492)
         if (aBoolean6493 || bool) {
             aHa_Sub3_6494.method3874(ParticleSystemState.aRenderConfigFactory_2207, 112, RenderQueueState.aRenderConfigFactory_6519)
-            aHa_Sub3_6494.method3849(47.toByte(), 0, RenderListTextureNode.aClass70_9485)
+            aHa_Sub3_6494.method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
             aHa_Sub3_6494.method3894(-28186, i_50_)
         } else aHa_Sub3_6494.method3874(RenderQueueState.aRenderConfigFactory_6519, 126, RenderQueueState.aRenderConfigFactory_6519)
         val class101_sub2 = aHa_Sub3_6494.method3934(-99)
@@ -167,6 +167,6 @@ class GlFontTextured internal constructor(private val aHa_Sub3_6494: NativeRende
         aHa_Sub3_6494.method3925(54, anInterface5_Impl1_6495, 0)
         aHa_Sub3_6494.method3862(0, aHa_Sub3_6494.aModelBatchBase_8204)
         aHa_Sub3_6494.method3899(2, c.code * '\u0004'.code, AsyncResourceRequest.aCameraRotationStub_9661, true)
-        if (aBoolean6493 || bool) aHa_Sub3_6494.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+        if (aBoolean6493 || bool) aHa_Sub3_6494.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
     }
 }

@@ -119,8 +119,8 @@ class TypedRecordTable {
                         val i_20_: Int
                         if (WeaveTextureNode.anInt9282 == 4) i_20_ = ResourceProvider.aFloat3938.toInt() and 0x3fff
                         else i_20_ = 0x3fff and (ResourceProvider.aFloat3938.toInt() + OpenGlRenderNode.anInt10483)
-                        var i_21_ = Class70.anIntArray1207!![i_20_]
-                        var i_22_ = Class70.anIntArray1204!![i_20_]
+                        var i_21_ = TrigLookupTables.anIntArray1207!![i_20_]
+                        var i_22_ = TrigLookupTables.anIntArray1204!![i_20_]
                         if (WeaveTextureNode.anInt9282 != 4) {
                             i_22_ = i_22_ * 256 / (FloatBuffer.anInt9750 - -256)
                             i_21_ = 256 * i_21_ / (FloatBuffer.anInt9750 - -256)

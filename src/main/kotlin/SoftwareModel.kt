@@ -550,22 +550,22 @@ class SoftwareModel : AbstractModel {
                             anIntArray5332!![i_66_] -= anInt5375
                             anIntArray5312!![i_66_] -= anInt5342
                             if (i_46_ != 0) {
-                                val i_67_ = Class70.anIntArray1207!![i_46_]
-                                val i_68_ = Class70.anIntArray1204!![i_46_]
+                                val i_67_ = TrigLookupTables.anIntArray1207!![i_46_]
+                                val i_68_ = TrigLookupTables.anIntArray1204!![i_46_]
                                 val i_69_ = ((anIntArray5332!![i_66_] * i_67_ + anIntArray5356!![i_66_] * i_68_ + 16383) shr 14)
                                 anIntArray5332!![i_66_] = (anIntArray5332!![i_66_] * i_68_ - anIntArray5356!![i_66_] * i_67_ + 16383) shr 14
                                 anIntArray5356!![i_66_] = i_69_
                             }
                             if (i_44_ != 0) {
-                                val i_70_ = Class70.anIntArray1207!![i_44_]
-                                val i_71_ = Class70.anIntArray1204!![i_44_]
+                                val i_70_ = TrigLookupTables.anIntArray1207!![i_44_]
+                                val i_71_ = TrigLookupTables.anIntArray1204!![i_44_]
                                 val i_72_ = ((anIntArray5332!![i_66_] * i_71_ - anIntArray5312!![i_66_] * i_70_ + 16383) shr 14)
                                 anIntArray5312!![i_66_] = (anIntArray5332!![i_66_] * i_70_ + anIntArray5312!![i_66_] * i_71_ + 16383) shr 14
                                 anIntArray5332!![i_66_] = i_72_
                             }
                             if (i_45_ != 0) {
-                                val i_73_ = Class70.anIntArray1207!![i_45_]
-                                val i_74_ = Class70.anIntArray1204!![i_45_]
+                                val i_73_ = TrigLookupTables.anIntArray1207!![i_45_]
+                                val i_74_ = TrigLookupTables.anIntArray1204!![i_45_]
                                 val i_75_ = ((anIntArray5312!![i_66_] * i_73_ + anIntArray5356!![i_66_] * i_74_ + 16383) shr 14)
                                 anIntArray5312!![i_66_] = (anIntArray5312!![i_66_] * i_74_ - anIntArray5356!![i_66_] * i_73_ + 16383) shr 14
                                 anIntArray5356!![i_66_] = i_75_
@@ -581,22 +581,22 @@ class SoftwareModel : AbstractModel {
                             anIntArray5332!![i_77_] -= anInt5375
                             anIntArray5312!![i_77_] -= anInt5342
                             if (i_44_ != 0) {
-                                val i_78_ = Class70.anIntArray1207!![i_44_]
-                                val i_79_ = Class70.anIntArray1204!![i_44_]
+                                val i_78_ = TrigLookupTables.anIntArray1207!![i_44_]
+                                val i_79_ = TrigLookupTables.anIntArray1204!![i_44_]
                                 val i_80_ = ((anIntArray5332!![i_77_] * i_79_ - anIntArray5312!![i_77_] * i_78_ + 16383) shr 14)
                                 anIntArray5312!![i_77_] = (anIntArray5332!![i_77_] * i_78_ + anIntArray5312!![i_77_] * i_79_ + 16383) shr 14
                                 anIntArray5332!![i_77_] = i_80_
                             }
                             if (i_46_ != 0) {
-                                val i_81_ = Class70.anIntArray1207!![i_46_]
-                                val i_82_ = Class70.anIntArray1204!![i_46_]
+                                val i_81_ = TrigLookupTables.anIntArray1207!![i_46_]
+                                val i_82_ = TrigLookupTables.anIntArray1204!![i_46_]
                                 val i_83_ = ((anIntArray5332!![i_77_] * i_81_ + anIntArray5356!![i_77_] * i_82_ + 16383) shr 14)
                                 anIntArray5332!![i_77_] = (anIntArray5332!![i_77_] * i_82_ - anIntArray5356!![i_77_] * i_81_ + 16383) shr 14
                                 anIntArray5356!![i_77_] = i_83_
                             }
                             if (i_45_ != 0) {
-                                val i_84_ = Class70.anIntArray1207!![i_45_]
-                                val i_85_ = Class70.anIntArray1204!![i_45_]
+                                val i_84_ = TrigLookupTables.anIntArray1207!![i_45_]
+                                val i_85_ = TrigLookupTables.anIntArray1204!![i_45_]
                                 val i_86_ = ((anIntArray5312!![i_77_] * i_84_ + anIntArray5356!![i_77_] * i_85_ + 16383) shr 14)
                                 anIntArray5312!![i_77_] = (anIntArray5312!![i_77_] * i_85_ - anIntArray5356!![i_77_] * i_84_ + 16383) shr 14
                                 anIntArray5356!![i_77_] = i_86_
@@ -726,8 +726,8 @@ class SoftwareModel : AbstractModel {
 
     public override fun FA(i: Int) {
         check((anInt5316 and 0x6) == 6)
-        val i_121_ = Class70.anIntArray1207!![i]
-        val i_122_ = Class70.anIntArray1204!![i]
+        val i_121_ = TrigLookupTables.anIntArray1207!![i]
+        val i_122_ = TrigLookupTables.anIntArray1204!![i]
         synchronized(this) {
             for (i_123_ in 0..<anInt5340) {
                 val i_124_ = ((anIntArray5332!![i_123_] * i_122_ - anIntArray5312!![i_123_] * i_121_) shr 14)
@@ -851,22 +851,22 @@ class SoftwareModel : AbstractModel {
                                 anIntArray5332!![i_200_] -= anInt5375
                                 anIntArray5312!![i_200_] -= anInt5342
                                 if (i_127_ != 0) {
-                                    val i_201_ = Class70.anIntArray1207!![i_127_]
-                                    val i_202_ = Class70.anIntArray1204!![i_127_]
+                                    val i_201_ = TrigLookupTables.anIntArray1207!![i_127_]
+                                    val i_202_ = TrigLookupTables.anIntArray1204!![i_127_]
                                     val i_203_ = ((anIntArray5332!![i_200_] * i_201_ + anIntArray5356!![i_200_] * i_202_ + 16383) shr 14)
                                     anIntArray5332!![i_200_] = (anIntArray5332!![i_200_] * i_202_ - anIntArray5356!![i_200_] * i_201_ + 16383) shr 14
                                     anIntArray5356!![i_200_] = i_203_
                                 }
                                 if (i_125_ != 0) {
-                                    val i_204_ = Class70.anIntArray1207!![i_125_]
-                                    val i_205_ = Class70.anIntArray1204!![i_125_]
+                                    val i_204_ = TrigLookupTables.anIntArray1207!![i_125_]
+                                    val i_205_ = TrigLookupTables.anIntArray1204!![i_125_]
                                     val i_206_ = ((anIntArray5332!![i_200_] * i_205_ - anIntArray5312!![i_200_] * i_204_ + 16383) shr 14)
                                     anIntArray5312!![i_200_] = (anIntArray5332!![i_200_] * i_204_ + anIntArray5312!![i_200_] * i_205_ + 16383) shr 14
                                     anIntArray5332!![i_200_] = i_206_
                                 }
                                 if (i_126_ != 0) {
-                                    val i_207_ = Class70.anIntArray1207!![i_126_]
-                                    val i_208_ = Class70.anIntArray1204!![i_126_]
+                                    val i_207_ = TrigLookupTables.anIntArray1207!![i_126_]
+                                    val i_208_ = TrigLookupTables.anIntArray1204!![i_126_]
                                     val i_209_ = ((anIntArray5312!![i_200_] * i_207_ + anIntArray5356!![i_200_] * i_208_ + 16383) shr 14)
                                     anIntArray5312!![i_200_] = (anIntArray5312!![i_200_] * i_208_ - anIntArray5356!![i_200_] * i_207_ + 16383) shr 14
                                     anIntArray5356!![i_200_] = i_209_
@@ -906,12 +906,12 @@ class SoftwareModel : AbstractModel {
                     aBoolean5369 = false
                 }
                 val is_157_ = IntArray(9)
-                val i_158_ = Class70.anIntArray1204!![i_125_]
-                val i_159_ = Class70.anIntArray1207!![i_125_]
-                val i_160_ = Class70.anIntArray1204!![i_126_]
-                val i_161_ = Class70.anIntArray1207!![i_126_]
-                val i_162_ = Class70.anIntArray1204!![i_127_]
-                val i_163_ = Class70.anIntArray1207!![i_127_]
+                val i_158_ = TrigLookupTables.anIntArray1204!![i_125_]
+                val i_159_ = TrigLookupTables.anIntArray1207!![i_125_]
+                val i_160_ = TrigLookupTables.anIntArray1204!![i_126_]
+                val i_161_ = TrigLookupTables.anIntArray1207!![i_126_]
+                val i_162_ = TrigLookupTables.anIntArray1204!![i_127_]
+                val i_163_ = TrigLookupTables.anIntArray1207!![i_127_]
                 val i_164_ = i_159_ * i_162_ + 8192 shr 14
                 val i_165_ = i_159_ * i_163_ + 8192 shr 14
                 is_157_[0] = i_160_ * i_162_ + i_161_ * i_165_ + 8192 shr 14
@@ -1317,8 +1317,8 @@ class SoftwareModel : AbstractModel {
             else if (i == 8192) method652()
             else if (i == 12288) method641()
             else {
-                val i_293_ = Class70.anIntArray1207!![i]
-                val i_294_ = Class70.anIntArray1204!![i]
+                val i_293_ = TrigLookupTables.anIntArray1207!![i]
+                val i_294_ = TrigLookupTables.anIntArray1204!![i]
                 synchronized(this) {
                     for (i_295_ in 0..<anInt5387) {
                         var i_296_ = ((anIntArray5312!![i_295_] * i_293_ + anIntArray5356!![i_295_] * i_294_) shr 14)
@@ -1523,22 +1523,22 @@ class SoftwareModel : AbstractModel {
                 anIntArray5332!![i_344_] -= anInt5375
                 anIntArray5312!![i_344_] -= anInt5342
                 if (i_340_ != 0) {
-                    val i_345_ = Class70.anIntArray1207!![i_340_]
-                    val i_346_ = Class70.anIntArray1204!![i_340_]
+                    val i_345_ = TrigLookupTables.anIntArray1207!![i_340_]
+                    val i_346_ = TrigLookupTables.anIntArray1204!![i_340_]
                     val i_347_ = ((anIntArray5332!![i_344_] * i_345_ + anIntArray5356!![i_344_] * i_346_ + 16383) shr 14)
                     anIntArray5332!![i_344_] = (anIntArray5332!![i_344_] * i_346_ - anIntArray5356!![i_344_] * i_345_ + 16383) shr 14
                     anIntArray5356!![i_344_] = i_347_
                 }
                 if (i_338_ != 0) {
-                    val i_348_ = Class70.anIntArray1207!![i_338_]
-                    val i_349_ = Class70.anIntArray1204!![i_338_]
+                    val i_348_ = TrigLookupTables.anIntArray1207!![i_338_]
+                    val i_349_ = TrigLookupTables.anIntArray1204!![i_338_]
                     val i_350_ = ((anIntArray5332!![i_344_] * i_349_ - anIntArray5312!![i_344_] * i_348_ + 16383) shr 14)
                     anIntArray5312!![i_344_] = (anIntArray5332!![i_344_] * i_348_ + anIntArray5312!![i_344_] * i_349_ + 16383) shr 14
                     anIntArray5332!![i_344_] = i_350_
                 }
                 if (i_339_ != 0) {
-                    val i_351_ = Class70.anIntArray1207!![i_339_]
-                    val i_352_ = Class70.anIntArray1204!![i_339_]
+                    val i_351_ = TrigLookupTables.anIntArray1207!![i_339_]
+                    val i_352_ = TrigLookupTables.anIntArray1204!![i_339_]
                     val i_353_ = ((anIntArray5312!![i_344_] * i_351_ + anIntArray5356!![i_344_] * i_352_ + 16383) shr 14)
                     anIntArray5312!![i_344_] = (anIntArray5312!![i_344_] * i_352_ - anIntArray5356!![i_344_] * i_351_ + 16383) shr 14
                     anIntArray5356!![i_344_] = i_353_
@@ -2297,8 +2297,8 @@ class SoftwareModel : AbstractModel {
 
     public override fun VA(i: Int) {
         check((anInt5316 and 0x3) == 3)
-        val i_574_ = Class70.anIntArray1207!![i]
-        val i_575_ = Class70.anIntArray1204!![i]
+        val i_574_ = TrigLookupTables.anIntArray1207!![i]
+        val i_575_ = TrigLookupTables.anIntArray1204!![i]
         synchronized(this) {
             for (i_576_ in 0..<anInt5340) {
                 val i_577_ = ((anIntArray5332!![i_576_] * i_574_ + anIntArray5356!![i_576_] * i_575_) shr 14)
@@ -2315,8 +2315,8 @@ class SoftwareModel : AbstractModel {
         else if (i == 8192) method651()
         else if (i == 12288) method639()
         else {
-            val i_578_ = Class70.anIntArray1207!![i]
-            val i_579_ = Class70.anIntArray1204!![i]
+            val i_578_ = TrigLookupTables.anIntArray1207!![i]
+            val i_579_ = TrigLookupTables.anIntArray1204!![i]
             synchronized(this) {
                 for (i_580_ in 0..<anInt5340) {
                     val i_581_ = ((anIntArray5312!![i_580_] * i_578_ + anIntArray5356!![i_580_] * i_579_) shr 14)

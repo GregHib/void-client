@@ -47,7 +47,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         aBoolean9801 = false
     }
 
-    override fun method3829(class70: Class70?, i: Int, i_0_: Byte, bool: Boolean) {
+    override fun method3829(trigLookupTables: TrigLookupTables?, i: Int, i_0_: Byte, bool: Boolean) {
         if (i_0_.toInt() == 80) {
             var i_1_ = 0
             val i_2_ = i
@@ -64,7 +64,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
                 i_3_ = 5
             } while (false)
             if (bool) i_1_ = i_1_ or 0x10
-            this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, i_3_, method3961(class70, i_0_ + -78) or i_1_)
+            this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, i_3_, method3961(trigLookupTables, i_0_ + -78) or i_1_)
         }
     }
 
@@ -159,7 +159,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         this.anIDirect3DDevice9810!!.a(161, bool)
     }
 
-    override fun method3924(bool: Boolean, bool_12_: Boolean, i: Int, class70: Class70?, bool_13_: Boolean) {
+    override fun method3924(bool: Boolean, bool_12_: Boolean, i: Int, trigLookupTables: TrigLookupTables?, bool_13_: Boolean) {
         val i_14_ = i
         val i_15_: Int
         while_233_@ do {
@@ -177,7 +177,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         if (bool) i_16_ = i_16_ or 0x20
         if (bool_12_) aD3DPRESENT_PARAMETERS9800 = null
         if (bool_13_) i_16_ = i_16_ or 0x10
-        this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, i_15_, i_16_ or method3961(class70, 2))
+        this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, i_15_, i_16_ or method3961(trigLookupTables, 2))
     }
 
     override fun method3892(i: Int) {
@@ -855,12 +855,12 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
             throw IllegalArgumentException("")
         }
 
-        private fun method3961(class70: Class70?, i: Int): Int {
+        private fun method3961(trigLookupTables: TrigLookupTables?, i: Int): Int {
             if (i != 2) aFloatArray9797 = null
-            if (WidgetRedrawRegion.aClass70_4247 == class70) return 2
-            if (class70 == GlIndexBufferArb.aClass70_8503) return 0
-            if (SceneObjectEntity.aClass70_8737 != class70) {
-                if (RenderListTextureNode.aClass70_9485 == class70) return 3
+            if (WidgetRedrawRegion.aTrigLookupTables_4247 == trigLookupTables) return 2
+            if (trigLookupTables == GlIndexBufferArb.aTrigLookupTables_8503) return 0
+            if (SceneObjectEntity.aTrigLookupTables_8737 != trigLookupTables) {
+                if (RenderListTextureNode.aTrigLookupTables_9485 == trigLookupTables) return 3
             } else return 1
             throw IllegalArgumentException()
         }

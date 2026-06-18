@@ -488,7 +488,7 @@ import ChatCommandProcessor.method713
 import TooltipComponentRenderer.Companion.method716
 import MovementDirection.Companion.method719
 import CollisionFlagQuery.Companion.method722
-import Class70.Companion.method725
+import TrigLookupTables.Companion.method725
 import Class71.method728
 import Class71.method729
 import Class72.Companion.method731
@@ -2178,8 +2178,8 @@ class Client : GameAppletFrame() {
                                                 val i_61_: Int
                                                 if (WeaveTextureNode.anInt9282 == 4) i_61_ = ((ResourceProvider.aFloat3938).toInt() and 0x3fff)
                                                 else i_61_ = (((ResourceProvider.aFloat3938).toInt() + OpenGlRenderNode.anInt10483) and 0x3fff)
-                                                var i_62_ = (Class70.anIntArray1207!![i_61_])
-                                                var i_63_ = (Class70.anIntArray1204!![i_61_])
+                                                var i_62_ = (TrigLookupTables.anIntArray1207!![i_61_])
+                                                var i_63_ = (TrigLookupTables.anIntArray1204!![i_61_])
                                                 if (WeaveTextureNode.anInt9282 != 4) {
                                                     i_62_ = (i_62_ * ((FloatBuffer.anInt9750) + 256)) shr 8
                                                     i_63_ = (i_63_ * ((FloatBuffer.anInt9750) + 256)) shr 8

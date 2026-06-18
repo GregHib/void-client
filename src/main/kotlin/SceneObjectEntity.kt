@@ -70,7 +70,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
         @JvmField
         var anInt8736: Int = 0
         @JvmField
-        var aClass70_8737: Class70? = Class70()
+        var aTrigLookupTables_8737: TrigLookupTables? = TrigLookupTables()
         @JvmField
         var anInt8738: Int = 0
 
@@ -109,7 +109,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
         fun method2406(i: Int) {
             if (i > -126) anInt8731 = 118
             aLruByteCache_8732 = null
-            aClass70_8737 = null
+            aTrigLookupTables_8737 = null
         }
     }
 }

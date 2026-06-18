@@ -714,7 +714,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt8057 = 0
             Player.anInt10530 = 0
             GlBloomEffect.anInt8834 = 0
-            Class70.anInt1205 = 0
+            TrigLookupTables.anInt1205 = 0
             Gl2dTexture.anInt8613 = 0
             SpriteMaskShape.anInt4074 = 0
             TextureMetadataProvider.anInt4614 = 0
@@ -1580,7 +1580,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             LocConfigModelBuilder.anInt4497 = 0
             Js5Archive.anInt632 = 0
             CameraConfigDefinition.anInt3255 = 0
-            Class70.anInt1203 = 0
+            TrigLookupTables.anInt1203 = 0
             TerrainShadowBuilderGl3.anInt7009 = 0
             NativeRenderer.anInt8010 = 0
             GlRenderDevice.anInt9840 = 0
@@ -2486,7 +2486,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CollisionMap.anInt4434 = 0
             ProducerImageSurface.anInt9074 = 0
             BufferToggleState.anInt3715 = 0
-            Class70.anInt1206 = 0
+            TrigLookupTables.anInt1206 = 0
             GlRenderDevice.anInt9879 = 0
             ParticleSortRenderer.anInt3016 = 0
             ProducerImageSurface.anInt9076 = 0

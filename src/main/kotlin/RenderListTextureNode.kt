@@ -35,7 +35,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     override fun method3049(class348_sub49: Buffer, i: Int, i_6_: Int) {
-        if (i_6_ != 31015) aClass70_9485 = null
+        if (i_6_ != 31015) aTrigLookupTables_9485 = null
         if (i == 0) {
             aMinimapShapeDrawerArray9481 = arrayOfNulls<MinimapShapeDrawer>(class348_sub49.readUnsignedByte(255))
             var i_7_ = 0
@@ -75,7 +75,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
     override fun method3047(i: Int, i_10_: Int): Array<IntArray?>? {
         anInt9483++
         val `is` = this.aImageFrameCache_7033!!.method2557(i_10_ + 1564598923, i)
-        if (i_10_ != -1564599039) aClass70_9485 = null
+        if (i_10_ != -1564599039) aTrigLookupTables_9485 = null
         if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val i_11_: Int = DisplaceTextureNode.Companion.anInt9139
             val i_12_ = FixedFunctionMaterialPass.anInt6212
@@ -109,7 +109,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
         @JvmField
         var anInt9484: Int = 0
         @JvmField
-        var aClass70_9485: Class70? = Class70()
+        var aTrigLookupTables_9485: TrigLookupTables? = TrigLookupTables()
         @JvmField
         var anInt9486: Int = 0
         @JvmField
@@ -117,7 +117,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
 
         @JvmStatic
         fun method3152(i: Int) {
-            aClass70_9485 = null
+            aTrigLookupTables_9485 = null
             if (i != 255) method3152(-42)
         }
 

@@ -232,16 +232,16 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         if (i <= -18) method3970(1)
     }
 
-    override fun method3924(bool: Boolean, bool_2_: Boolean, i: Int, class70: Class70?, bool_3_: Boolean) {
+    override fun method3924(bool: Boolean, bool_2_: Boolean, i: Int, trigLookupTables: TrigLookupTables?, bool_3_: Boolean) {
         try {
             anInt9852++
             if (bool_2_ == false) {
-                glTexEnvi(8960, i + 34176, MapSceneTile.method531(101.toByte(), class70))
+                glTexEnvi(8960, i + 34176, MapSceneTile.method531(101.toByte(), trigLookupTables))
                 if (bool) glTexEnvi(8960, i + 34192, if (!bool_3_) 770 else 771)
                 else glTexEnvi(8960, i + 34192, if (!bool_3_) 768 else 769)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.DD(" + bool + ',' + bool_2_ + ',' + i + ',' + (if (class70 != null) "{...}" else "null") + ',' + bool_3_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.DD(" + bool + ',' + bool_2_ + ',' + i + ',' + (if (trigLookupTables != null) "{...}" else "null") + ',' + bool_3_ + ')'))
         }
     }
 
@@ -954,15 +954,15 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         anInt9828++
     }
 
-    override fun method3829(class70: Class70?, i: Int, i_71_: Byte, bool: Boolean) {
+    override fun method3829(trigLookupTables: TrigLookupTables?, i: Int, i_71_: Byte, bool: Boolean) {
         try {
             if (i_71_.toInt() == 80) {
-                glTexEnvi(8960, i + 34184, MapSceneTile.method531(123.toByte(), class70))
+                glTexEnvi(8960, i + 34184, MapSceneTile.method531(123.toByte(), trigLookupTables))
                 anInt9885++
                 glTexEnvi(8960, 34200 + i, if (bool) 771 else 770)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.AD(" + (if (class70 != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.AD(" + (if (trigLookupTables != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ',' + bool + ')'))
         }
     }
 

@@ -87,8 +87,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
         if (aTextureMipDescriptorArray5524 != null) {
             aHa_Sub3_5419!!.C(!aBoolean5428)
             aHa_Sub3_5419!!.method3866(false, true)
-            aHa_Sub3_5419!!.method3849(47.toByte(), 1, RenderListTextureNode.aClass70_9485)
-            aHa_Sub3_5419!!.method3885(1, true, RenderListTextureNode.aClass70_9485)
+            aHa_Sub3_5419!!.method3849(47.toByte(), 1, RenderListTextureNode.aTrigLookupTables_9485)
+            aHa_Sub3_5419!!.method3885(1, true, RenderListTextureNode.aTrigLookupTables_9485)
             var i_0_ = 0
             while (anInt5406 > i_0_) {
                 val class353 = aTextureMipDescriptorArray5524!![i_0_]!!
@@ -113,8 +113,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
                 i_0_++
             }
-            aHa_Sub3_5419!!.method3885(1, true, SceneObjectEntity.aClass70_8737)
-            aHa_Sub3_5419!!.method3849(47.toByte(), 1, SceneObjectEntity.aClass70_8737)
+            aHa_Sub3_5419!!.method3885(1, true, SceneObjectEntity.aTrigLookupTables_8737)
+            aHa_Sub3_5419!!.method3849(47.toByte(), 1, SceneObjectEntity.aTrigLookupTables_8737)
             aHa_Sub3_5419!!.C(true)
         }
         if (i < 70) ia(112.toShort(), 86.toShort())
@@ -259,8 +259,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
 
     public override fun VA(i: Int) {
         anInt5479++
-        val i_18_ = Class70.anIntArray1207!![i]
-        val i_19_ = Class70.anIntArray1204!![i]
+        val i_18_ = TrigLookupTables.anIntArray1207!![i]
+        val i_19_ = TrigLookupTables.anIntArray1204!![i]
         var i_20_ = 0
         while (anInt5433 > i_20_) {
             val i_21_ = ((anIntArray5511!![i_20_] * i_19_ + i_18_ * anIntArray5519!![i_20_]) shr 14)
@@ -569,8 +569,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
 
     public override fun a(i: Int) {
         anInt5435++
-        val i_83_ = Class70.anIntArray1207!![i]
-        val i_84_ = Class70.anIntArray1204!![i]
+        val i_83_ = TrigLookupTables.anIntArray1207!![i]
+        val i_84_ = TrigLookupTables.anIntArray1204!![i]
         var i_85_ = 0
         while (anInt5433 > i_85_) {
             val i_86_ = ((i_84_ * anIntArray5511!![i_85_] + anIntArray5429!![i_85_] * i_83_) shr 14)
@@ -584,8 +584,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
 
     public override fun FA(i: Int) {
         anInt5488++
-        val i_87_ = Class70.anIntArray1207!![i]
-        val i_88_ = Class70.anIntArray1204!![i]
+        val i_87_ = TrigLookupTables.anIntArray1207!![i]
+        val i_88_ = TrigLookupTables.anIntArray1204!![i]
         for (i_89_ in 0..<anInt5433) {
             val i_90_ = (anIntArray5519!![i_89_] * i_88_ + -(anIntArray5429!![i_89_] * i_87_) shr 14)
             anIntArray5429!![i_89_] = (anIntArray5429!![i_89_] * i_88_ + anIntArray5519!![i_89_] * i_87_) shr 14
@@ -656,22 +656,22 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 anIntArray5519!![i_97_] -= SpriteArchiveLoader.anInt386
                 anIntArray5429!![i_97_] -= KeyboardInputSource.anInt4274
                 if (i_93_ != 0) {
-                    val i_98_ = Class70.anIntArray1207!![i_93_]
-                    val i_99_ = Class70.anIntArray1204!![i_93_]
+                    val i_98_ = TrigLookupTables.anIntArray1207!![i_93_]
+                    val i_99_ = TrigLookupTables.anIntArray1204!![i_93_]
                     val i_100_ = ((16383 + i_99_ * anIntArray5511!![i_97_] + anIntArray5519!![i_97_] * i_98_) shr 14)
                     anIntArray5519!![i_97_] = (16383 + (-(anIntArray5511!![i_97_] * i_98_) + anIntArray5519!![i_97_] * i_99_) shr 14)
                     anIntArray5511!![i_97_] = i_100_
                 }
                 if (i_91_ != 0) {
-                    val i_101_ = Class70.anIntArray1207!![i_91_]
-                    val i_102_ = Class70.anIntArray1204!![i_91_]
+                    val i_101_ = TrigLookupTables.anIntArray1207!![i_91_]
+                    val i_102_ = TrigLookupTables.anIntArray1204!![i_91_]
                     val i_103_ = (16383 + (anIntArray5519!![i_97_] * i_102_ + -(i_101_ * anIntArray5429!![i_97_])) shr 14)
                     anIntArray5429!![i_97_] = (anIntArray5429!![i_97_] * i_102_ + (anIntArray5519!![i_97_] * i_101_ - -16383)) shr 14
                     anIntArray5519!![i_97_] = i_103_
                 }
                 if (i_92_ != 0) {
-                    val i_104_ = Class70.anIntArray1207!![i_92_]
-                    val i_105_ = Class70.anIntArray1204!![i_92_]
+                    val i_104_ = TrigLookupTables.anIntArray1207!![i_92_]
+                    val i_105_ = TrigLookupTables.anIntArray1204!![i_92_]
                     val i_106_ = ((i_105_ * anIntArray5511!![i_97_] + anIntArray5429!![i_97_] * i_104_ + 16383) shr 14)
                     anIntArray5429!![i_97_] = (16383 + -(i_104_ * anIntArray5511!![i_97_]) + i_105_ * anIntArray5429!![i_97_]) shr 14
                     anIntArray5511!![i_97_] = i_106_
@@ -822,8 +822,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
 
     public override fun k(i: Int) {
         anInt5490++
-        val i_140_ = Class70.anIntArray1207!![i]
-        val i_141_ = Class70.anIntArray1204!![i]
+        val i_140_ = TrigLookupTables.anIntArray1207!![i]
+        val i_141_ = TrigLookupTables.anIntArray1204!![i]
         for (i_142_ in 0..<anInt5433) {
             val i_143_ = ((anIntArray5511!![i_142_] * i_141_ + anIntArray5429!![i_142_] * i_140_) shr 14)
             anIntArray5429!![i_142_] = (i_141_ * anIntArray5429!![i_142_] + -(i_140_ * anIntArray5511!![i_142_])) shr 14
@@ -1457,22 +1457,22 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                 anIntArray5519!![i_232_] -= SpriteArchiveLoader.anInt386
                                 anIntArray5429!![i_232_] -= KeyboardInputSource.anInt4274
                                 if (i_214_ != 0) {
-                                    val i_233_ = Class70.anIntArray1207!![i_214_]
-                                    val i_234_ = Class70.anIntArray1204!![i_214_]
+                                    val i_233_ = TrigLookupTables.anIntArray1207!![i_214_]
+                                    val i_234_ = TrigLookupTables.anIntArray1204!![i_214_]
                                     val i_235_ = ((16383 + (i_234_ * anIntArray5511!![i_232_] + (anIntArray5519!![i_232_] * i_233_))) shr 14)
                                     anIntArray5519!![i_232_] = ((16383 + (i_234_ * anIntArray5519!![i_232_] + -(i_233_ * anIntArray5511!![i_232_]))) shr 14)
                                     anIntArray5511!![i_232_] = i_235_
                                 }
                                 if (i_212_ != 0) {
-                                    val i_236_ = Class70.anIntArray1207!![i_212_]
-                                    val i_237_ = Class70.anIntArray1204!![i_212_]
+                                    val i_236_ = TrigLookupTables.anIntArray1207!![i_212_]
+                                    val i_237_ = TrigLookupTables.anIntArray1204!![i_212_]
                                     val i_238_ = (16383 + (-(i_236_ * anIntArray5429!![i_232_]) + i_237_ * (anIntArray5519!![i_232_])) shr 14)
                                     anIntArray5429!![i_232_] = (16383 + (i_236_ * anIntArray5519!![i_232_] - -(anIntArray5429!![i_232_] * i_237_))) shr 14
                                     anIntArray5519!![i_232_] = i_238_
                                 }
                                 if (i_213_ != 0) {
-                                    val i_239_ = Class70.anIntArray1207!![i_213_]
-                                    val i_240_ = Class70.anIntArray1204!![i_213_]
+                                    val i_239_ = TrigLookupTables.anIntArray1207!![i_213_]
+                                    val i_240_ = TrigLookupTables.anIntArray1204!![i_213_]
                                     val i_241_ = ((i_239_ * anIntArray5429!![i_232_] + i_240_ * anIntArray5511!![i_232_] + 16383) shr 14)
                                     anIntArray5429!![i_232_] = (16383 + (-(i_239_ * anIntArray5511!![i_232_]) + i_240_ * (anIntArray5429!![i_232_])) shr 14)
                                     anIntArray5511!![i_232_] = i_241_
@@ -1489,22 +1489,22 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                 anIntArray5519!![i_243_] -= SpriteArchiveLoader.anInt386
                                 anIntArray5429!![i_243_] -= KeyboardInputSource.anInt4274
                                 if (i_212_ != 0) {
-                                    val i_244_ = Class70.anIntArray1207!![i_212_]
-                                    val i_245_ = Class70.anIntArray1204!![i_212_]
+                                    val i_244_ = TrigLookupTables.anIntArray1207!![i_212_]
+                                    val i_245_ = TrigLookupTables.anIntArray1204!![i_212_]
                                     val i_246_ = (anIntArray5519!![i_243_] * i_245_ + -(i_244_ * anIntArray5429!![i_243_]) + 16383) shr 14
                                     anIntArray5429!![i_243_] = ((16383 + anIntArray5429!![i_243_] * i_245_ + i_244_ * anIntArray5519!![i_243_]) shr 14)
                                     anIntArray5519!![i_243_] = i_246_
                                 }
                                 if (i_214_ != 0) {
-                                    val i_247_ = Class70.anIntArray1207!![i_214_]
-                                    val i_248_ = Class70.anIntArray1204!![i_214_]
+                                    val i_247_ = TrigLookupTables.anIntArray1207!![i_214_]
+                                    val i_248_ = TrigLookupTables.anIntArray1204!![i_214_]
                                     val i_249_ = ((i_248_ * anIntArray5511!![i_243_] + i_247_ * anIntArray5519!![i_243_] + 16383) shr 14)
                                     anIntArray5519!![i_243_] = (anIntArray5519!![i_243_] * i_248_ - (anIntArray5511!![i_243_] * i_247_ + -16383)) shr 14
                                     anIntArray5511!![i_243_] = i_249_
                                 }
                                 if (i_213_ != 0) {
-                                    val i_250_ = Class70.anIntArray1207!![i_213_]
-                                    val i_251_ = Class70.anIntArray1204!![i_213_]
+                                    val i_250_ = TrigLookupTables.anIntArray1207!![i_213_]
+                                    val i_251_ = TrigLookupTables.anIntArray1204!![i_213_]
                                     val i_252_ = ((i_251_ * anIntArray5511!![i_243_] + i_250_ * anIntArray5429!![i_243_] - -16383) shr 14)
                                     anIntArray5429!![i_243_] = ((16383 + -(anIntArray5511!![i_243_] * i_250_) + anIntArray5429!![i_243_] * i_251_) shr 14)
                                     anIntArray5511!![i_243_] = i_252_
@@ -1531,22 +1531,22 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                     val i_261_ = aShortArray5439!![i_260_] + -1
                                     if (i_261_ == -1) break
                                     if (i_214_ != 0) {
-                                        val i_262_ = Class70.anIntArray1207!![i_214_]
-                                        val i_263_ = Class70.anIntArray1204!![i_214_]
+                                        val i_262_ = TrigLookupTables.anIntArray1207!![i_214_]
+                                        val i_263_ = TrigLookupTables.anIntArray1204!![i_214_]
                                         val i_264_ = ((16383 + (aShortArray5438!![i_261_] * i_262_) + (aShortArray5493!![i_261_] * i_263_)) shr 14)
                                         aShortArray5438!![i_261_] = (((i_263_ * (aShortArray5438!![i_261_])) + -((aShortArray5493!![i_261_]) * i_262_) + 16383) shr 14).toShort()
                                         aShortArray5493!![i_261_] = i_264_.toShort()
                                     }
                                     if (i_212_ != 0) {
-                                        val i_265_ = Class70.anIntArray1207!![i_212_]
-                                        val i_266_ = Class70.anIntArray1204!![i_212_]
+                                        val i_265_ = TrigLookupTables.anIntArray1207!![i_212_]
+                                        val i_266_ = TrigLookupTables.anIntArray1204!![i_212_]
                                         val i_267_ = ((16383 + (aShortArray5438!![i_261_] * i_266_) + -(i_265_ * aShortArray5436!![i_261_])) shr 14)
                                         aShortArray5436!![i_261_] = ((16383 + ((i_266_ * (aShortArray5436!![i_261_])) + ((aShortArray5438!![i_261_]) * i_265_))) shr 14).toShort()
                                         aShortArray5438!![i_261_] = i_267_.toShort()
                                     }
                                     if (i_213_ != 0) {
-                                        val i_268_ = Class70.anIntArray1207!![i_213_]
-                                        val i_269_ = Class70.anIntArray1204!![i_213_]
+                                        val i_268_ = TrigLookupTables.anIntArray1207!![i_213_]
+                                        val i_269_ = TrigLookupTables.anIntArray1204!![i_213_]
                                         val i_270_ = (i_269_ * aShortArray5493!![i_261_] + (i_268_ * aShortArray5436!![i_261_]) - -16383) shr 14
                                         aShortArray5436!![i_261_] = ((-(i_268_ * (aShortArray5493!![i_261_])) + (aShortArray5436!![i_261_]) * i_269_ - -16383) shr 14).toShort()
                                         aShortArray5493!![i_261_] = i_270_.toShort()
@@ -2929,22 +2929,22 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                     anIntArray5519!![i_662_] -= SpriteArchiveLoader.anInt386
                                     anIntArray5429!![i_662_] -= KeyboardInputSource.anInt4274
                                     if (i_592_ != 0) {
-                                        val i_663_ = Class70.anIntArray1207!![i_592_]
-                                        val i_664_ = Class70.anIntArray1204!![i_592_]
+                                        val i_663_ = TrigLookupTables.anIntArray1207!![i_592_]
+                                        val i_664_ = TrigLookupTables.anIntArray1204!![i_592_]
                                         val i_665_ = ((i_663_ * anIntArray5519!![i_662_] + ((i_664_ * anIntArray5511!![i_662_]) - -16383)) shr 14)
                                         anIntArray5519!![i_662_] = (-(anIntArray5511!![i_662_] * i_663_) + (anIntArray5519!![i_662_] * i_664_) - -16383) shr 14
                                         anIntArray5511!![i_662_] = i_665_
                                     }
                                     if (i_590_ != 0) {
-                                        val i_666_ = Class70.anIntArray1207!![i_590_]
-                                        val i_667_ = Class70.anIntArray1204!![i_590_]
+                                        val i_666_ = TrigLookupTables.anIntArray1207!![i_590_]
+                                        val i_667_ = TrigLookupTables.anIntArray1204!![i_590_]
                                         val i_668_ = ((16383 + ((i_667_ * anIntArray5519!![i_662_]) - i_666_ * (anIntArray5429!![i_662_]))) shr 14)
                                         anIntArray5429!![i_662_] = ((16383 + (i_667_ * anIntArray5429!![i_662_]) + (i_666_ * anIntArray5519!![i_662_])) shr 14)
                                         anIntArray5519!![i_662_] = i_668_
                                     }
                                     if (i_591_ != 0) {
-                                        val i_669_ = Class70.anIntArray1207!![i_591_]
-                                        val i_670_ = Class70.anIntArray1204!![i_591_]
+                                        val i_669_ = TrigLookupTables.anIntArray1207!![i_591_]
+                                        val i_670_ = TrigLookupTables.anIntArray1204!![i_591_]
                                         val i_671_ = ((16383 + (anIntArray5429!![i_662_] * i_669_) + (i_670_ * anIntArray5511!![i_662_])) shr 14)
                                         anIntArray5429!![i_662_] = (-(i_669_ * anIntArray5511!![i_662_]) + ((i_670_ * anIntArray5429!![i_662_]) - -16383)) shr 14
                                         anIntArray5511!![i_662_] = i_671_
@@ -2973,22 +2973,22 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                             val i_680_ = -1 + aShortArray5439!![i_679_]
                                             if (i_680_ == -1) break
                                             if (i_592_ != 0) {
-                                                val i_681_ = (Class70.anIntArray1207!![i_592_])
-                                                val i_682_ = (Class70.anIntArray1204!![i_592_])
+                                                val i_681_ = (TrigLookupTables.anIntArray1207!![i_592_])
+                                                val i_682_ = (TrigLookupTables.anIntArray1204!![i_592_])
                                                 val i_683_ = (((i_682_ * (aShortArray5493!![i_680_])) + (aShortArray5438!![i_680_]) * i_681_ - -16383) shr 14)
                                                 aShortArray5438!![i_680_] = ((16383 + -((aShortArray5493!![i_680_]) * i_681_) + (i_682_ * (aShortArray5438!![i_680_]))) shr 14).toShort()
                                                 aShortArray5493!![i_680_] = i_683_.toShort()
                                             }
                                             if (i_590_ != 0) {
-                                                val i_684_ = (Class70.anIntArray1207!![i_590_])
-                                                val i_685_ = (Class70.anIntArray1204!![i_590_])
+                                                val i_684_ = (TrigLookupTables.anIntArray1207!![i_590_])
+                                                val i_685_ = (TrigLookupTables.anIntArray1204!![i_590_])
                                                 val i_686_ = ((16383 + ((aShortArray5438!![i_680_]) * i_685_ - ((aShortArray5436!![i_680_]) * i_684_))) shr 14)
                                                 aShortArray5436!![i_680_] = (((i_684_ * (aShortArray5438!![i_680_])) + (i_685_ * (aShortArray5436!![i_680_])) - -16383) shr 14).toShort()
                                                 aShortArray5438!![i_680_] = i_686_.toShort()
                                             }
                                             if (i_591_ != 0) {
-                                                val i_687_ = (Class70.anIntArray1207!![i_591_])
-                                                val i_688_ = (Class70.anIntArray1204!![i_591_])
+                                                val i_687_ = (TrigLookupTables.anIntArray1207!![i_591_])
+                                                val i_688_ = (TrigLookupTables.anIntArray1204!![i_591_])
                                                 val i_689_ = ((16383 + ((aShortArray5436!![i_680_]) * i_687_ + (i_688_ * (aShortArray5493!![i_680_])))) shr 14)
                                                 aShortArray5436!![i_680_] = (((i_688_ * (aShortArray5436!![i_680_])) + (-(i_687_ * (aShortArray5493!![i_680_])) - -16383)) shr 14).toShort()
                                                 aShortArray5493!![i_680_] = i_689_.toShort()
@@ -3021,12 +3021,12 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         KeyboardInputSource.anInt4274 = i_618_
                     }
                     val is_619_ = IntArray(9)
-                    val i_620_ = Class70.anIntArray1204!![i_590_]
-                    val i_621_ = Class70.anIntArray1207!![i_590_]
-                    val i_622_ = Class70.anIntArray1204!![i_591_]
-                    val i_623_ = Class70.anIntArray1207!![i_591_]
-                    val i_624_ = Class70.anIntArray1204!![i_592_]
-                    val i_625_ = Class70.anIntArray1207!![i_592_]
+                    val i_620_ = TrigLookupTables.anIntArray1204!![i_590_]
+                    val i_621_ = TrigLookupTables.anIntArray1207!![i_590_]
+                    val i_622_ = TrigLookupTables.anIntArray1204!![i_591_]
+                    val i_623_ = TrigLookupTables.anIntArray1207!![i_591_]
+                    val i_624_ = TrigLookupTables.anIntArray1204!![i_592_]
+                    val i_625_ = TrigLookupTables.anIntArray1207!![i_592_]
                     val i_626_ = i_621_ * i_624_ + 8192 shr 14
                     val i_627_ = 8192 + i_621_ * i_625_ shr 14
                     is_619_[5] = -i_621_

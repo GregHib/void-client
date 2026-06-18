@@ -41,13 +41,13 @@ class MapSceneTile {
             if (i != 14) aConfigFlagUtil_1051 = null
         }
 
-        fun method531(i: Byte, class70: Class70?): Int {
+        fun method531(i: Byte, trigLookupTables: TrigLookupTables?): Int {
             val i_0_ = -45 / ((i - 54) / 43)
             anInt1049++
-            if (WidgetRedrawRegion.aClass70_4247 != class70) {
-                if (class70 != GlIndexBufferArb.aClass70_8503) {
-                    if (SceneObjectEntity.aClass70_8737 != class70) {
-                        if (RenderListTextureNode.aClass70_9485 == class70) return 34166
+            if (WidgetRedrawRegion.aTrigLookupTables_4247 != trigLookupTables) {
+                if (trigLookupTables != GlIndexBufferArb.aTrigLookupTables_8503) {
+                    if (SceneObjectEntity.aTrigLookupTables_8737 != trigLookupTables) {
+                        if (RenderListTextureNode.aTrigLookupTables_9485 == trigLookupTables) return 34166
                     } else return 34168
                 } else return 34167
             } else return 5890

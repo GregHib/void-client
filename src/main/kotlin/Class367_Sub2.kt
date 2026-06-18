@@ -21,7 +21,7 @@ class Class367_Sub2 internal constructor(glRenderDevice: GlRenderDevice, js5Arch
             anInt7287++
             glBindProgramARB(34336, aTextureHandle_7293!!.anInt2584)
             glEnable(34336)
-            this.aHa_Sub3_4479.method3849(47.toByte(), 0, SceneObjectEntity.aClass70_8737)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 0, SceneObjectEntity.aTrigLookupTables_8737)
         }
     }
 
@@ -45,7 +45,7 @@ class Class367_Sub2 internal constructor(glRenderDevice: GlRenderDevice, js5Arch
     override fun method3520(i: Byte) {
         anInt7295++
         if (i.toInt() == 87) {
-            this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
             glBindProgramARB(34336, 0)
             glDisable(34820)
             glDisable(34336)

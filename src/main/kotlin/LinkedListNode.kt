@@ -103,8 +103,8 @@ open class LinkedListNode {
                         var i_21_ = 0
                         while (i_14_ > i_21_) {
                             val i_22_ = (i_21_ shl 14) / i_14_
-                            val i_23_ = (Class70.anIntArray1207!![i_22_] * i_19_ shr 14)
-                            val i_24_ = (Class70.anIntArray1204!![i_22_] * i_20_ shr 14)
+                            val i_23_ = (TrigLookupTables.anIntArray1207!![i_22_] * i_19_ shr 14)
+                            val i_24_ = (TrigLookupTables.anIntArray1204!![i_22_] * i_20_ shr 14)
                             is_17_[i_18_]!![i_21_] = modelDefinition.method1101(0, i_24_, i_23_, 123)
                             i_21_++
                         }

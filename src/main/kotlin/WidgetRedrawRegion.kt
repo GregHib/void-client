@@ -33,7 +33,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
         var anInt4242: Int = 0
         var anInt4243: Int = 0
         var aNamedIdRecord_4246: NamedIdRecord? = NamedIdRecord("WTI", 5)
-        var aClass70_4247: Class70?
+        var aTrigLookupTables_4247: TrigLookupTables?
         var anImage4249: Image? = null
         var anIntArray4250: IntArray? = IntArray(64)
         var anInt4251: Int = 0
@@ -46,7 +46,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
             aNamedIdRecord_4246 = null
             anIntArrayArray4253 = null
             if (i > 5) {
-                aClass70_4247 = null
+                aTrigLookupTables_4247 = null
                 anIntArray4250 = null
                 aLruByteCache_4254 = null
                 anImage4249 = null
@@ -79,7 +79,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
         }
 
         fun method2684(i: Int, f: Float): Float {
-            if (i != 6) aClass70_4247 = null
+            if (i != 6) aTrigLookupTables_4247 = null
             anInt4251++
             return (f * (6.0f * f - 15.0f) + 10.0f) * (f * (f * f))
         }
@@ -122,7 +122,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
         }
 
         init {
-            aClass70_4247 = Class70()
+            aTrigLookupTables_4247 = TrigLookupTables()
             aLruByteCache_4254 = LruByteCache(32)
         }
     }

@@ -66,8 +66,8 @@ class CameraOrModelTransform {
                 val i_8_ = (max(widgetComponent!!.anInt709 / 2, widgetComponent.anInt789 / 2) + 10)
                 val i_9_ = i_5_ * i_5_ - -(i_1_ * i_1_)
                 if (i_9_ <= i_8_ * i_8_) {
-                    var i_10_ = Class70.anIntArray1207!![i_7_]
-                    var i_11_ = Class70.anIntArray1204!![i_7_]
+                    var i_10_ = TrigLookupTables.anIntArray1207!![i_7_]
+                    var i_11_ = TrigLookupTables.anIntArray1204!![i_7_]
                     if (WeaveTextureNode.anInt9282 != 4) {
                         i_11_ = 256 * i_11_ / (FloatBuffer.anInt9750 + 256)
                         i_10_ = 256 * i_10_ / (256 + FloatBuffer.anInt9750)

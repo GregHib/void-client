@@ -360,8 +360,8 @@ class Npc : ProjectedGroundDecor() {
                         if ((this.anIntArray10296 != null) && ((this.anIntArray10296!![this.anInt10278]) != -1)) i_46_ = (this.anIntArray10296!![(this.anInt10278)])
                         val i_47_ = (-i_39_ + (i_46_ + 2048 * this.anInt10237) and 0x3fff)
                         if (i_47_ != 0) class64_42_.a(i_47_)
-                        val i_48_ = Class70.anIntArray1207!![i_47_]
-                        val i_49_ = Class70.anIntArray1204!![i_47_]
+                        val i_48_ = TrigLookupTables.anIntArray1207!![i_47_]
+                        val i_49_ = TrigLookupTables.anIntArray1204!![i_47_]
                         val i_50_ = i_45_ * i_48_ - -(i_43_ * i_49_) shr 14
                         i_45_ = i_45_ * i_49_ + -(i_43_ * i_48_) shr 14
                         i_43_ = i_50_
@@ -407,8 +407,8 @@ class Npc : ProjectedGroundDecor() {
                         if ((this.anIntArray10296 != null) && ((this.anIntArray10296!![this.anInt10289]) != -1)) i_57_ = (this.anIntArray10296!![(this.anInt10289)])
                         val i_58_ = (0x3fff and -i_39_ + (i_57_ + 2048 * this.anInt10202))
                         if (i_58_ != 0) class64_53_.a(i_58_)
-                        val i_59_ = Class70.anIntArray1207!![i_58_]
-                        val i_60_ = Class70.anIntArray1204!![i_58_]
+                        val i_59_ = TrigLookupTables.anIntArray1207!![i_58_]
+                        val i_60_ = TrigLookupTables.anIntArray1204!![i_58_]
                         val i_61_ = i_56_ * i_59_ - -(i_60_ * i_54_) shr 14
                         i_56_ = i_60_ * i_56_ - i_59_ * i_54_ shr 14
                         i_54_ = i_61_

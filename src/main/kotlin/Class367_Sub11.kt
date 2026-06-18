@@ -44,13 +44,13 @@ class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, js5Arc
         this.aHa_Sub3_4479.method3897(1, -4382)
         this.aHa_Sub3_4479.method3850((-128).toByte(), null)
         this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 116, ParticleSystemState.aRenderConfigFactory_2207)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 2, RenderListTextureNode.aClass70_9485)
-        this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 2, RenderListTextureNode.aTrigLookupTables_9485)
+        this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
         this.aHa_Sub3_4479.method3897(0, -4382)
         if (aBoolean7399) {
-            this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
-            this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+            this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
             aBoolean7399 = false
         }
         if (i.toInt() != 87) aLongHashTable_7415 = null
@@ -70,8 +70,8 @@ class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, js5Arc
     override fun method3527(i: Int, interface18: Interface18?, i_3_: Int) {
         if (interface18 != null) {
             if (aBoolean7399) {
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aClass70_4247)
-                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aClass70_4247)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
                 aBoolean7399 = false
             }
             this.aHa_Sub3_4479.method3850((-122).toByte(), interface18)
@@ -79,8 +79,8 @@ class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, js5Arc
         } else if (!aBoolean7399) {
             this.aHa_Sub3_4479.method3850(99.toByte(), (this.aHa_Sub3_4479.anInterface18_8147))
             this.aHa_Sub3_4479.method3923(true, 1)
-            this.aHa_Sub3_4479.method3849(47.toByte(), 0, SceneObjectEntity.aClass70_8737)
-            this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 0, SceneObjectEntity.aTrigLookupTables_8737)
+            this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aTrigLookupTables_8737)
             aBoolean7399 = true
         }
         if (i_3_ != -16776) method3525(16, true)
@@ -126,10 +126,10 @@ class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, js5Arc
         this.aHa_Sub3_4479.method3897(1, i xor 0x2a45.inv())
         this.aHa_Sub3_4479.method3850((-32).toByte(), anInterface18_Impl3_7390)
         this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 109, MediaStreamClient.aRenderConfigFactory_3196)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 0, RenderListTextureNode.aClass70_9485)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
         if (i == 15192) {
-            this.aHa_Sub3_4479.method3924(true, false, 2, WidgetRedrawRegion.aClass70_4247, false)
-            this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aClass70_8737)
+            this.aHa_Sub3_4479.method3924(true, false, 2, WidgetRedrawRegion.aTrigLookupTables_4247, false)
+            this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aTrigLookupTables_8737)
             this.aHa_Sub3_4479.method3897(0, i + -19574)
             method3528(75)
         }
