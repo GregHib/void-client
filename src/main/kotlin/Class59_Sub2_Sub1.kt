@@ -42,7 +42,7 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
         @JvmField
         var anInt8673: Int = 0
         @JvmStatic
-        fun method565(i: Int, i_0_: Int, modelDefinition: ModelDefinition?, `is`: IntArray?): Class358 {
+        fun method565(i: Int, i_0_: Int, modelDefinition: ModelDefinition?, `is`: IntArray?): ParticleGeometry {
             try {
                 anInt8673++
                 var is_1_: IntArray? = null
@@ -129,7 +129,7 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                         i_20_++
                     }
                 }
-                return Class358(is_1_, is_2_, is_3_, fs)
+                return ParticleGeometry(is_1_, is_2_, is_3_, fs)
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("dha.B(" + i + ',' + i_0_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
             }

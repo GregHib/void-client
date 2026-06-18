@@ -414,7 +414,7 @@ import TextureCache.Companion.method3468
 import CompiledScriptCache.Companion.method3473
 import Hashtable.Companion.method3478
 import SceneCollisionEntry.Companion.method3487
-import Class358.Companion.method3488
+import ParticleGeometry.Companion.method3488
 import Class359.Companion.method3491
 import Class36.method355
 import Class361.Companion.method3502

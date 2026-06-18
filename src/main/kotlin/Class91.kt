@@ -24,7 +24,7 @@ object Class91 {
     }
 
     fun method856(i: Byte) {
-        Class358.anInt4411 = 0
+        ParticleGeometry.anInt4411 = 0
         AbstractCameraTransform.anInt1597 = 0
         anInt1522++
         NullOggStream.anInt9041++
@@ -32,7 +32,7 @@ object Class91 {
         method204(-724138005)
         VarpStore.method1318(-65536)
         var bool = false
-        for (i_2_ in 0..<Class358.anInt4411) {
+        for (i_2_ in 0..<ParticleGeometry.anInt4411) {
             val i_3_ = Class5_Sub1_Sub1.anIntArray9932!![i_2_]
             val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_3_.toLong(), -6008) as NpcReference)
             val npc = (class348_sub22.aNpc_6859)!!

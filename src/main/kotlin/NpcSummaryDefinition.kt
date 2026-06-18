@@ -22,7 +22,7 @@ class NpcSummaryDefinition {
                 if (i_0_ < ModelDefinitionLoader.anInt2057) {
                     var i_1_ = i_0_
                     while (ModelDefinitionLoader.anInt2057 > i_1_) {
-                        Class5_Sub1_Sub1.anIntArray9932!![Class358.anInt4411++] = Class74.anIntArray1233!![i_1_]
+                        Class5_Sub1_Sub1.anIntArray9932!![ParticleGeometry.anInt4411++] = Class74.anIntArray1233!![i_1_]
                         i_1_++
                     }
                 }
@@ -62,7 +62,7 @@ class NpcSummaryDefinition {
                             }
                             val i_11_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                             if (i_11_ == 1) MinimapRectClipper.anIntArray224!![AbstractCameraTransform.anInt1597++] = i_3_
-                        } else if (i_5_ == 3) Class5_Sub1_Sub1.anIntArray9932!![Class358.anInt4411++] = i_3_
+                        } else if (i_5_ == 3) Class5_Sub1_Sub1.anIntArray9932!![ParticleGeometry.anInt4411++] = i_3_
                     }
                 }
             }

@@ -378,7 +378,7 @@ class Class46 {
                 val i_25_ = i
                 if (widgetDefinition != null) i = i or widgetDefinition.method263(i_24_, 106, i_21_, true)
                 val l = (this.anInt753 + ((this.anInt770 shl 16) + (var_renderer!!.anInt4567 shl 29))).toLong()
-                var class64 = Class358.aClass60_4417!!.method583(l, -90) as Class64?
+                var class64 = ParticleGeometry.aClass60_4417!!.method583(l, -90) as Class64?
                 if (class64 == null || var_renderer.method3667(class64.ua(), i) != 0) {
                     if (class64 != null) i = var_renderer.method3679(i, class64.ua())
                     val class124 = ParticleConfigParser.method2277(0, (ScatterTextureNode.aClass45_9365!!), this.anInt753, -1)
@@ -388,7 +388,7 @@ class Class46 {
                     }
                     if (class124.anInt1830 < 13) class124.method1092(2, 114)
                     class64 = var_renderer.method3625(class124, i, Gl3dTexture.anInt8628, 64, 768)
-                    Class358.aClass60_4417!!.method582(class64, l, (-125).toByte())
+                    ParticleGeometry.aClass60_4417!!.method582(class64, l, (-125).toByte())
                 }
                 if (widgetDefinition != null) class64 = widgetDefinition.method269(-101, class64, i_24_, i_22_, i, i_21_)
                 class64!!.s(i_25_)

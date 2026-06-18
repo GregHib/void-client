@@ -240,7 +240,7 @@ class CharacterRenderState : LinkedListNode() {
                             }
                             if (i_8_ == 7) {
                                 CalendarUtil.anInt4134++
-                                val class348_sub47 = method2148((Class358.aFontMetaRef_4418), (TheoraVideoStream.aClass77_9029), -84)
+                                val class348_sub47 = method2148((ParticleGeometry.aFontMetaRef_4418), (TheoraVideoStream.aClass77_9029), -84)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(118, class348_sub47)
                             }

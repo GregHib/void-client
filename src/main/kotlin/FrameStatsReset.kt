@@ -3713,7 +3713,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class51.anInt910 = 0
             GlowPostProcessor.anInt2515 = 0
             ShadowQualityOptionState.anInt6016 = 0
-            Class358.anInt4413 = 0
+            ParticleGeometry.anInt4413 = 0
             ModelDefinition.anInt1838 = 0
             TheoraVideoStream.anInt9013 = 0
             MapSceneIconDef.anInt2849 = 0

@@ -3,7 +3,7 @@ import SoundBankPatch.Companion.method2929
 /* Class358 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class358 internal constructor(`is`: IntArray?, is_1_: IntArray?, is_2_: IntArray?, fs: Array<FloatArray?>?) {
+class ParticleGeometry internal constructor(`is`: IntArray?, is_1_: IntArray?, is_2_: IntArray?, fs: Array<FloatArray?>?) {
     var aFloatArrayArray4412: Array<FloatArray?>?
     var anIntArray4414: IntArray?
     var anIntArray4415: IntArray?

@@ -31,7 +31,7 @@ object NpcCountAccessor {
         if (i != -26162) anIntArray2280 = null
         FontMetaRef.aClass60_4327!!.method587(-118)
         anInt2281++
-        Class358.aClass60_4417!!.method587(-89)
+        ParticleGeometry.aClass60_4417!!.method587(-89)
         SceneryDetailOptionState.aClass60_6096!!.method587(-87)
         EdgeDetectTextureNode.aClass60_9171!!.method587(-95)
     }
