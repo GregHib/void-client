@@ -833,7 +833,7 @@ class CollisionMap {
             anInt4439++
             val string = ("tele " + i_62_ + "," + (i_63_ shr 6) + "," + (i shr 6) + "," + (0x3f and i_63_) + "," + (0x3f and i))
             if (i_61_ != 2) method3502(-25, -23, 24, 63)
-            Class82.method812(string, true, false, (-79).toByte())
+            ConfigArchiveLoader.method812(string, true, false, (-79).toByte())
         }
 
         @JvmStatic

@@ -2895,7 +2895,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) return
                 if (i_41_ == 0) {
                     val interface10 = method3297(i_40_, i_37_, i) as Interface10?
-                    val interface10_42_ = Class82.method813(i_40_, i_37_, i) as Interface10?
+                    val interface10_42_ = ConfigArchiveLoader.method813(i_40_, i_37_, i) as Interface10?
                     if (interface10 != null && i_36_ != 2) {
                         if (interface10 is SequencedActorEntity) interface10.aSceneObjectAnimator_10115!!.method1671(262144, i_35_)
                         else MapSceneIconDef.method1591(i_37_, 89, i_41_, i_35_, interface10.method42(-76), i_36_, i, i_38_, i_40_)

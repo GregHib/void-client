@@ -109,7 +109,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 SlotBinding.aSlotBinding_3416!!.method2025(MapArchiveSource(BufferedRandomAccessFile.aJs5Archive_1322!!), false)
                 SlotBinding.aSlotBinding_3417!!.method2025(MapArchiveSource(MidiSequencePlayer.aJs5Archive_8926!!), false)
                 SlotBinding.aSlotBinding_3418!!.method2025(MapArchiveSource(ModelBatchBase.aJs5Archive_1897!!), false)
-                SlotBinding.aSlotBinding_3419!!.method2025(MapArchiveSource(Class82.aJs5Archive_1434!!), false)
+                SlotBinding.aSlotBinding_3419!!.method2025(MapArchiveSource(ConfigArchiveLoader.aJs5Archive_1434!!), false)
                 SlotBinding.aSlotBinding_3420!!.method2025(MapArchiveSource(aJs5Archive_3146!!), false)
                 SlotBinding.aSlotBinding_3421!!.method2025(MapArchiveSource(NodeDeque.aJs5Archive_3323!!), false)
                 SlotBinding.aSlotBinding_3422!!.method2025(FileExistsCondition((SceneTilePlaneManager.aJs5Archive_233), "huffman"), false)

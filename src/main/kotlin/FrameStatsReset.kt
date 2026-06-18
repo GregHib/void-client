@@ -287,7 +287,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SpotAnimDefinition.anInt2378 = 0
             TrackedGroundDecor.anInt10404 = 0
             ScanlineRasterFiller.anInt2475 = 0
-            Class82.anInt1438 = 0
+            ConfigArchiveLoader.anInt1438 = 0
             DisplayModeOptionState.anInt6104 = 0
             Buffer.anInt7172 = 0
             RingBufferInputStream.anInt4547 = 0
@@ -1479,7 +1479,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MinimapLineDrawer.anInt5256 = 0
             Class91.anInt1522 = 0
             TerrainShadowBuilderGl2.anInt6941 = 0
-            Class82.anInt1437 = 0
+            ConfigArchiveLoader.anInt1437 = 0
             TextureCache.anInt4353 = 0
             NodeDeque.anInt3340 = 0
             MinimapSquareDrawer.anInt5215 = 0

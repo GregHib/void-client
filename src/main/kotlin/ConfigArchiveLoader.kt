@@ -25,7 +25,10 @@ import java.io.File
 import java.io.FileNotFoundException
 import java.io.FileOutputStream
 
-class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+/*
+ * Class82
+ */
+class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_1436: Js5Archive?
     @JvmField
     var anInt1439: Int = 0

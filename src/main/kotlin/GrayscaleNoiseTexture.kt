@@ -191,7 +191,7 @@ open class GrayscaleNoiseTexture(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_2
         fun method555(bool: Boolean, i: Int) {
             anInt5286++
             if (i != MapElementManager.aString4461!!.length) {
-                Class82.method812(MapElementManager.aString4461, false, bool, (-79).toByte())
+                ConfigArchiveLoader.method812(MapElementManager.aString4461, false, bool, (-79).toByte())
                 if (!bool) {
                     method94("--> " + MapElementManager.aString4461, 110)
                     TerrainShadowBuilderGl3.anInt7006 = 0

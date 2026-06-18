@@ -5,7 +5,7 @@ import SizeBoundedSoftCache.Companion.method1343
 import CacheArchiveIndexLoader.Companion.method338
 import SolidFillComponent.Companion.method198
 import ActiveMapRegion.method769
-import Class82.Companion.method814
+import ConfigArchiveLoader.Companion.method814
 import Class88.Companion.method842
 
 /* Class302 - Decompiled by JODE

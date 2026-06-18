@@ -14,7 +14,7 @@ object Class91 {
     @JvmField
     var anInt1522: Int = 0
     @JvmField
-    var aClass82_1523: Class82? = null
+    var aConfigArchiveLoader_1523: ConfigArchiveLoader? = null
 
     fun method855(i: Int, i_0_: Int, i_1_: Int) {
         anInt1520++
@@ -64,7 +64,7 @@ object Class91 {
     @JvmStatic
     fun method857(i: Int) {
         anIntArray1521 = null
-        aClass82_1523 = null
+        aConfigArchiveLoader_1523 = null
         aRgbColorPalette_1519 = null
         if (i < 121) method856(((-72).toByte()).toByte())
     }

@@ -759,7 +759,7 @@ class Client : GameAppletFrame() {
         method305(79.toByte())
         method2545(true)
         method698(i + -106)
-        Class82.method811((-123).toByte())
+        ConfigArchiveLoader.method811((-123).toByte())
         KeyboardLayoutCache.method1975((-15).toByte())
         method1441(18.toByte())
         method1585(-1)

@@ -1106,7 +1106,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5429) {
-                Class82.method812(aStringArray1152!![--anInt1170], false, false, (-79).toByte())
+                ConfigArchiveLoader.method812(aStringArray1152!![--anInt1170], false, false, (-79).toByte())
                 return
             }
             if (i == 5430) {

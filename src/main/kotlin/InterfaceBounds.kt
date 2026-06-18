@@ -137,7 +137,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 MidiSequencePlayer.aJs5Archive_8926!!.method412((-114).toByte())
                 TerrainShadowBuilderGl2.Companion.aJs5Archive_6950!!.method412(36.toByte())
                 ModelBatchBase.aJs5Archive_1897!!.method412((-114).toByte())
-                Class82.aJs5Archive_1434!!.method412((-117).toByte())
+                ConfigArchiveLoader.aJs5Archive_1434!!.method412((-117).toByte())
                 KeyEventNode.Companion.aJs5Archive_4770!!.method412(78.toByte())
                 GraphicsOptionState.aJs5Archive_3146!!.method412(88.toByte())
                 Class367_Sub8.aJs5Archive_7362!!.method412((-109).toByte())

@@ -143,7 +143,7 @@ object ClientLoadStateMachine {
             MidiSequencePlayer.aJs5Archive_8926 = WorldMapTextLabel.method3571(false, 22, (-23).toByte(), 1)
             TerrainShadowBuilderGl2.aJs5Archive_6950 = WorldMapTextLabel.method3571(true, 23, (-23).toByte(), 1)
             ModelBatchBase.aJs5Archive_1897 = WorldMapTextLabel.method3571(false, 24, (-23).toByte(), 1)
-            Class82.aJs5Archive_1434 = WorldMapTextLabel.method3571(false, 25, (-23).toByte(), 1)
+            ConfigArchiveLoader.aJs5Archive_1434 = WorldMapTextLabel.method3571(false, 25, (-23).toByte(), 1)
             KeyEventNode.aJs5Archive_4770 = WorldMapTextLabel.method3571(true, 26, (-23).toByte(), 1)
             GraphicsOptionState.aJs5Archive_3146 = WorldMapTextLabel.method3571(false, 27, (-23).toByte(), 1)
             Class367_Sub8.aJs5Archive_7362 = WorldMapTextLabel.method3571(true, 28, (-23).toByte(), 1)
@@ -201,14 +201,14 @@ object ClientLoadStateMachine {
             HoverActionEntry.aSpriteStore_1813 = SpriteStore(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
             ConstantColourTextureNode.aMapElementDefinitionCache_9245 = MapElementDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, BufferedRandomAccessFile.aJs5Archive_1322, RasterSprite.aJs5Archive_5207)
             SpriteLoadValidator.aWorldMapImageBuilder_4787 = WorldMapImageBuilder(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
-            Class91.aClass82_1523 = Class82(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
+            Class91.aConfigArchiveLoader_1523 = ConfigArchiveLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
             WaterDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
             RenderConfigFactory.aVarbitDefLoader_2981 = VarbitDefLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, MidiSequencePlayer.aJs5Archive_8926)
             NormalMapGenerator.aParticleAmountCache_3453 = ParticleAmountCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
             WorldMapImageBuilder.method699(SoftwareSpriteRaster.aJs5Archive_1627, (-100).toByte(), IntKeyNode.aJs5Archive_6980, CameraRotationStub.aJs5Archive_322, RasterSprite.aJs5Archive_5207)
             method85(0, NodeDeque.aJs5Archive_3323)
-            ScriptResources.aTextureDefinitionCache_2639 = TextureDefinitionCache(AnimationFrameDefinition.anInt6967, ModelBatchBase.aJs5Archive_1897, Class82.aJs5Archive_1434)
-            BrightnessOptionState.aCompiledScriptCache_5900 = CompiledScriptCache(AnimationFrameDefinition.anInt6967, ModelBatchBase.aJs5Archive_1897, Class82.aJs5Archive_1434, ItemNameResolver())
+            ScriptResources.aTextureDefinitionCache_2639 = TextureDefinitionCache(AnimationFrameDefinition.anInt6967, ModelBatchBase.aJs5Archive_1897, ConfigArchiveLoader.aJs5Archive_1434)
+            BrightnessOptionState.aCompiledScriptCache_5900 = CompiledScriptCache(AnimationFrameDefinition.anInt6967, ModelBatchBase.aJs5Archive_1897, ConfigArchiveLoader.aJs5Archive_1434, ItemNameResolver())
             method1202(0)
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2008(i + 28539, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)
             ProjectedGroundDecor.aVarpStore_10209 = VarpStore()
@@ -235,7 +235,7 @@ object ClientLoadStateMachine {
             // TODO make cache edit to extend these or change id's
             IsaacCipher.anIntArray1303 = (IntArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
             GlslEnvMaterialPass.aBooleanArray6270 = (BooleanArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
-            GlTextureCubeMap.aStringArray8532 = arrayOfNulls<String>(Class91.aClass82_1523!!.anInt1439)
+            GlTextureCubeMap.aStringArray8532 = arrayOfNulls<String>(Class91.aConfigArchiveLoader_1523!!.anInt1439)
             var i_13_ = 0
             while (WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000 > i_13_) {
                 if (WaterDetailOptionState.aKeyboardLayoutCache_5995!!.method1976(i_13_, i xor 0x6fc0.inv()).anInt2135 == 0) {
