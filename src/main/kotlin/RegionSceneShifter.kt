@@ -260,11 +260,11 @@ class RegionSceneShifter : LinkedListNode() {
 
         fun method3159(i: Int, i_42_: Int, bool: Boolean, i_43_: Int, i_44_: Int, i_45_: Int, var_renderer: Renderer, i_46_: Int, i_47_: Int) {
             anInt7051++
-            var interface10 = method3297(i_43_, i_45_, i_44_) as Interface10?
-            if (interface10 != null) {
-                val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-124))
-                val i_48_ = 0x3 and interface10.method41(-32228)
-                val i_49_ = interface10.method39(35)
+            var renderTarget = method3297(i_43_, i_45_, i_44_) as RenderTarget?
+            if (renderTarget != null) {
+                val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-124))
+                val i_48_ = 0x3 and renderTarget.method41(-32228)
+                val i_49_ = renderTarget.method39(35)
                 if (class51.anInt875 == -1) {
                     var i_50_ = i_47_
                     if (class51.anInt874 > 0) i_50_ = i
@@ -294,11 +294,11 @@ class RegionSceneShifter : LinkedListNode() {
                 } else method2028(i_46_, class51, i_42_, var_renderer, i_48_, 126)
             }
             if (bool != false) anInt7054 = 122
-            interface10 = (method1353(i_43_, i_45_, i_44_, (if (aClass7056 != null) aClass7056 else (Interface10::class.java.also { aClass7056 = it }))) as Interface10?)
-            if (interface10 != null) {
-                val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-88))
-                val i_51_ = interface10.method41(-32228) and 0x3
-                val i_52_ = interface10.method39(-126)
+            renderTarget = (method1353(i_43_, i_45_, i_44_, (if (aClass7056 != null) aClass7056 else (RenderTarget::class.java.also { aClass7056 = it }))) as RenderTarget?)
+            if (renderTarget != null) {
+                val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-88))
+                val i_51_ = renderTarget.method41(-32228) and 0x3
+                val i_52_ = renderTarget.method39(-126)
                 if (class51.anInt875 != -1) method2028(i_46_, class51, i_42_, var_renderer, i_51_, -86)
                 else if (i_52_ == 9) {
                     var i_53_ = -1118482
@@ -307,10 +307,10 @@ class RegionSceneShifter : LinkedListNode() {
                     else var_renderer.method3645(i_42_ + 3, i_46_, 3 + i_46_, -8003, i_53_, i_42_)
                 }
             }
-            interface10 = method2878(i_43_, i_45_, i_44_) as Interface10?
-            if (interface10 != null) {
-                val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-118))
-                val i_54_ = interface10.method41(-32228) and 0x3
+            renderTarget = method2878(i_43_, i_45_, i_44_) as RenderTarget?
+            if (renderTarget != null) {
+                val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-118))
+                val i_54_ = renderTarget.method41(-32228) and 0x3
                 if (class51.anInt875 != -1) method2028(i_46_, class51, i_42_, var_renderer, i_54_, -5)
             }
         }

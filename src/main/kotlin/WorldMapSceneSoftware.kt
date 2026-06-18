@@ -251,8 +251,8 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 5) {
                             var i_27_ = 65
-                            val interface10 = (method3297(i_0_, i, i_5_) as Interface10?)
-                            if (interface10 != null) i_27_ = 1 + (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-93)).anInt883)
+                            val renderTarget = (method3297(i_0_, i, i_5_) as RenderTarget?)
+                            if (renderTarget != null) i_27_ = 1 + (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-93)).anInt883)
                             val class318_sub1_sub5: WallEntity?
                             if (bool_17_) {
                                 val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_27_ * WidgetNodeLink.anIntArray2039!![i_7_], (CombineTextureNode.anIntArray9230!![i_7_]) * i_27_, i_4_, i_7_))
@@ -262,8 +262,8 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 6) {
                             var i_28_ = 33
-                            val interface10 = (method3297(i_0_, i, i_5_) as Interface10?)
-                            if (interface10 != null) i_28_ = 1 + (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-117)).anInt883) / 2
+                            val renderTarget = (method3297(i_0_, i, i_5_) as RenderTarget?)
+                            if (renderTarget != null) i_28_ = 1 + (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-117)).anInt883) / 2
                             val class318_sub1_sub5: WallEntity?
                             if (bool_17_) {
                                 val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * WidgetNodeLink.anIntArray2039!![i_7_], (CombineTextureNode.anIntArray9230!![i_7_]) * i_28_, i_4_, 4 + i_7_))
@@ -283,8 +283,8 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                         } else if (i_4_ == 8) {
                             val i_30_ = 2 + i_7_ and 0x3
                             var i_31_ = 33
-                            val interface10 = (method3297(i_0_, i, i_5_) as Interface10?)
-                            if (interface10 != null) i_31_ = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(i_3_ + -50, interface10.method42(-122)).anInt883) / 2 + 1
+                            val renderTarget = (method3297(i_0_, i, i_5_) as RenderTarget?)
+                            if (renderTarget != null) i_31_ = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(i_3_ + -50, renderTarget.method42(-122)).anInt883) / 2 + 1
                             val class318_sub1_sub5: WallEntity?
                             val class318_sub1_sub5_32_: WallEntity?
                             if (bool_17_) {
@@ -310,15 +310,15 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
         }
     }
 
-    private fun method1690(i: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int): Interface10? {
+    private fun method1690(i: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int): RenderTarget? {
         anInt5822++
-        var interface10: Interface10? = null
-        if (i == 0) interface10 = method3297(i_37_, i_36_, i_35_) as Interface10?
-        if (i == 1) interface10 = method3135(i_37_, i_36_, i_35_) as Interface10?
-        if (i == 2) interface10 = (method1353(i_37_, i_36_, i_35_, (if (aClass5827 != null) aClass5827 else (Interface10::class.java.also { aClass5827 = it }))) as Interface10?)
+        var renderTarget: RenderTarget? = null
+        if (i == 0) renderTarget = method3297(i_37_, i_36_, i_35_) as RenderTarget?
+        if (i == 1) renderTarget = method3135(i_37_, i_36_, i_35_) as RenderTarget?
+        if (i == 2) renderTarget = (method1353(i_37_, i_36_, i_35_, (if (aClass5827 != null) aClass5827 else (RenderTarget::class.java.also { aClass5827 = it }))) as RenderTarget?)
         if (i_38_ != 30987) method1698(-120)
-        if (i == 3) interface10 = method2878(i_37_, i_36_, i_35_) as Interface10?
-        return interface10
+        if (i == 3) renderTarget = method2878(i_37_, i_36_, i_35_) as RenderTarget?
+        return renderTarget
     }
 
     fun method1691(i: Int, var_renderer: Renderer?, class348_sub49: Buffer?, `is`: IntArray?, i_39_: Int, i_40_: Byte) {
@@ -547,7 +547,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     } else {
                         if (i != 1) {
                             if (i == 2) {
-                                AsyncResourceRequest.method3253(i_93_, i_94_, i_95_, ((if (WorldMapSceneSoftware.Companion.aClass5827 != null) WorldMapSceneSoftware.Companion.aClass5827 else (Interface10::class.java.also { WorldMapSceneSoftware.Companion.aClass5827 = it }))!!))
+                                AsyncResourceRequest.method3253(i_93_, i_94_, i_95_, ((if (WorldMapSceneSoftware.Companion.aClass5827 != null) WorldMapSceneSoftware.Companion.aClass5827 else (RenderTarget::class.java.also { WorldMapSceneSoftware.Companion.aClass5827 = it }))!!))
                                 if (class51.anInt920 != 0 && (class51.anInt961 + i_94_ < this.anInt3117) && (i_95_ - -class51.anInt961 < this.anInt3114) && (class51.anInt926 + i_94_ < this.anInt3117) && (this.anInt3114 > (i_95_ + class51.anInt926))) collisionMap!!.method3509(i_98_, !class51.aBoolean876, class51.aBoolean896, i_94_, i_95_, class51.anInt926, 84, class51.anInt961)
                                 if (i_97_ != 9) break
                                 if ((0x1 and i_98_) != 0) method2987(i_93_, 16, i_95_, -3951, i_94_)

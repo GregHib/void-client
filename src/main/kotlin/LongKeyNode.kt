@@ -199,12 +199,12 @@ class LongKeyNode : LinkedListNode {
                             var i_39_ = i
                             while (i_39_ <= 1 + i && i_39_ <= 3) {
                                 if (method536(i_38_, !bool, i_37_, i, i_39_)) {
-                                    var interface10 = (method2878(i_39_, i_37_, i_38_) as Interface10?)
-                                    if (interface10 == null) interface10 = ((method1353(i_39_, i_37_, i_38_, (if (aClass6767 != null) aClass6767 else (Interface10::class.java.also { aClass6767 = it })))) as Interface10?)
-                                    if (interface10 == null) interface10 = (method3297(i_39_, i_37_, i_38_) as Interface10?)
-                                    if (interface10 == null) interface10 = ((method3135(i_39_, i_37_, i_38_)) as Interface10?)
-                                    if (interface10 != null) {
-                                        val class51 = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-99)))
+                                    var renderTarget = (method2878(i_39_, i_37_, i_38_) as RenderTarget?)
+                                    if (renderTarget == null) renderTarget = ((method1353(i_39_, i_37_, i_38_, (if (aClass6767 != null) aClass6767 else (RenderTarget::class.java.also { aClass6767 = it })))) as RenderTarget?)
+                                    if (renderTarget == null) renderTarget = (method3297(i_39_, i_37_, i_38_) as RenderTarget?)
+                                    if (renderTarget == null) renderTarget = ((method3135(i_39_, i_37_, i_38_)) as RenderTarget?)
+                                    if (renderTarget != null) {
+                                        val class51 = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-99)))
                                         if (!class51.aBoolean942 || ModelBatchBase.aBoolean1900) {
                                             var i_40_ = class51.anInt921
                                             if (class51.anIntArray945 != null) {

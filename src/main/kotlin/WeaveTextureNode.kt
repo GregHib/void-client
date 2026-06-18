@@ -143,16 +143,16 @@ class WeaveTextureNode : AbstractProceduralTextureNode(0, true) {
             val i_12_ = 69 % ((19 - i) / 41)
         }
 
-        fun method3107(i: Byte, interface10: Interface10, i_15_: Int, i_16_: Int): Long {
+        fun method3107(i: Byte, renderTarget: RenderTarget, i_15_: Int, i_16_: Int): Long {
             anInt9270++
             val l = 4194304L
             val l_17_: Long = Long.MIN_VALUE
-            val npcConfig: NpcConfig = GradientLookupEffect.Companion.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-107))
-            var l_18_ = (interface10.method39(-14) shl 14 or (i_16_ or (i_15_ shl 7)) or (interface10.method41(-32228) shl 20) or 0x40000000).toLong()
+            val npcConfig: NpcConfig = GradientLookupEffect.Companion.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-107))
+            var l_18_ = (renderTarget.method39(-14) shl 14 or (i_16_ or (i_15_ shl 7)) or (renderTarget.method41(-32228) shl 20) or 0x40000000).toLong()
             if (npcConfig.anInt874 == 0) l_18_ = l_18_ or l_17_
             if (npcConfig.anInt895 == 1) l_18_ = l_18_ or l
             val i_19_ = 57 % ((-24 - i) / 57)
-            l_18_ = l_18_ or (interface10.method42(-102).toLong() shl 32)
+            l_18_ = l_18_ or (renderTarget.method42(-102).toLong() shl 32)
             return l_18_
         }
 

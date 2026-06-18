@@ -70,19 +70,19 @@ class ScanlineRasterFiller {
             anInt2470++
             if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null) {
                 if (i >= -38) method1384(-77, 22, 77)
-                var interface10: Interface10? = null
-                if (class348_sub27.anInt6904 == 0) interface10 = (method3297((class348_sub27.anInt6899), (class348_sub27.anInt6905), (class348_sub27.anInt6896)) as Interface10?)
-                if (class348_sub27.anInt6904 == 1) interface10 = ((method3135(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896)) as Interface10?)
-                if (class348_sub27.anInt6904 == 2) interface10 = ((method1353(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896, (if (aClass2478 != null) aClass2478 else (Interface10::class.java.also { aClass2478 = it })))) as Interface10?)
-                if (class348_sub27.anInt6904 == 3) interface10 = ((method2878(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896)) as Interface10?)
-                if (interface10 == null) {
+                var renderTarget: RenderTarget? = null
+                if (class348_sub27.anInt6904 == 0) renderTarget = (method3297((class348_sub27.anInt6899), (class348_sub27.anInt6905), (class348_sub27.anInt6896)) as RenderTarget?)
+                if (class348_sub27.anInt6904 == 1) renderTarget = ((method3135(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896)) as RenderTarget?)
+                if (class348_sub27.anInt6904 == 2) renderTarget = ((method1353(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896, (if (aClass2478 != null) aClass2478 else (RenderTarget::class.java.also { aClass2478 = it })))) as RenderTarget?)
+                if (class348_sub27.anInt6904 == 3) renderTarget = ((method2878(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896)) as RenderTarget?)
+                if (renderTarget == null) {
                     class348_sub27.anInt6892 = 0
                     class348_sub27.anInt6902 = -1
                     class348_sub27.anInt6903 = 0
                 } else {
-                    class348_sub27.anInt6902 = interface10.method42(-103)
-                    class348_sub27.anInt6903 = interface10.method39(111)
-                    class348_sub27.anInt6892 = interface10.method41(-32228)
+                    class348_sub27.anInt6902 = renderTarget.method42(-103)
+                    class348_sub27.anInt6903 = renderTarget.method39(111)
+                    class348_sub27.anInt6892 = renderTarget.method41(-32228)
                 }
             }
         }

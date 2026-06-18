@@ -73,13 +73,13 @@ class GlCubeMapTexture internal constructor(glRenderDevice: GlRenderDevice?, i: 
         fun method245(i: Int, i_2_: Int, i_3_: Int, i_4_: Byte): Boolean {
             if (i_4_ < 38) return false
             anInt8619++
-            var interface10 = method3297(i, i_2_, i_3_) as Interface10?
+            var renderTarget = method3297(i, i_2_, i_3_) as RenderTarget?
             var bool = true
-            if (interface10 != null) bool = bool and method520(interface10, -1)
-            interface10 = (ClickFeedbackTask.method1353(i, i_2_, i_3_, (if (aClass8623 != null) aClass8623 else (Interface10::class.java.also { aClass8623 = it }))) as Interface10?)
-            if (interface10 != null) bool = bool and method520(interface10, -1)
-            interface10 = method2878(i, i_2_, i_3_) as Interface10?
-            if (interface10 != null) bool = bool and method520(interface10, -1)
+            if (renderTarget != null) bool = bool and method520(renderTarget, -1)
+            renderTarget = (ClickFeedbackTask.method1353(i, i_2_, i_3_, (if (aClass8623 != null) aClass8623 else (RenderTarget::class.java.also { aClass8623 = it }))) as RenderTarget?)
+            if (renderTarget != null) bool = bool and method520(renderTarget, -1)
+            renderTarget = method2878(i, i_2_, i_3_) as RenderTarget?
+            if (renderTarget != null) bool = bool and method520(renderTarget, -1)
             return bool
         }
     }

@@ -7,7 +7,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub3_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, bool_10_: Boolean) : GroundDecorEntity(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, npcConfig.anInt895 == 1, method2782(i_9_, i_8_, 0)), Interface10 {
+class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, bool_10_: Boolean) : GroundDecorEntity(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, npcConfig.anInt895 == 1, method2782(i_9_, i_8_, 0)), RenderTarget {
     private val aBoolean10003: Boolean
     private val aBoolean10014: Boolean
     private var aByte10015: Byte = 0

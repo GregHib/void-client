@@ -6,7 +6,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub1_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, bool: Boolean, i_24_: Int, bool_25_: Boolean) : TileSceneEntity(i_21_, i_22_, i_23_, i, i_20_, npcConfig.anInt930), Interface10 {
+class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, bool: Boolean, i_24_: Int, bool_25_: Boolean) : TileSceneEntity(i_21_, i_22_, i_23_, i, i_20_, npcConfig.anInt930), RenderTarget {
     private val aBoolean9974: Boolean
     private var aRenderNode9976: RenderNode? = null
     private val aByte9980: Byte

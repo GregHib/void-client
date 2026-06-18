@@ -7,7 +7,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class WallSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int) : TileSceneEntity(i_8_, i_9_, i_10_, i, i_7_, npcConfig.anInt930), Interface10 {
+class WallSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int) : TileSceneEntity(i_8_, i_9_, i_10_, i, i_7_, npcConfig.anInt930), RenderTarget {
     private var aBoolean9945 = false
     private var aCircleHitbox_9950: CircleHitbox? = null
     var aSceneObjectAnimator_9955: SceneObjectAnimator? = null

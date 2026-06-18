@@ -236,10 +236,10 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                                     var class148 = (class357.aWidgetNodeLink_4396)
                                     while (class148 != null) {
                                         val class318_sub1_sub3 = (class148.aClass318_Sub1_Sub3_2040)
-                                        if (class318_sub1_sub3 is Interface10) {
-                                            val interface10 = class318_sub1_sub3 as Interface10
-                                            var i_30_ = interface10.method39(59)
-                                            val i_31_ = interface10.method41(-32228)
+                                        if (class318_sub1_sub3 is RenderTarget) {
+                                            val renderTarget = class318_sub1_sub3 as RenderTarget
+                                            var i_30_ = renderTarget.method39(59)
+                                            val i_31_ = renderTarget.method41(-32228)
                                             if (i_30_ == 21) i_30_ = 19
                                             val i_32_ = i_31_ shl 6 or i_30_
                                             if (i_32_ == i_20_ || i_21_ != 0 && i_21_ == i_32_ || i_23_ != 0 && i_23_ == i_32_) {

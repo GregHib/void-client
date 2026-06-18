@@ -6,7 +6,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub3_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SequencedGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int) : GroundDecorEntity(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, npcConfig.anInt895 == 1, method1606(i_9_, -27939, i_8_)), Interface10 {
+class SequencedGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int) : GroundDecorEntity(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, npcConfig.anInt895 == 1, method1606(i_9_, -27939, i_8_)), RenderTarget {
     var aSceneObjectAnimator_10045: SceneObjectAnimator? = null
     private var aCircleHitbox_10051: CircleHitbox? = null
     private var aBoolean10055 = false

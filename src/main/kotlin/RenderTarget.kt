@@ -1,7 +1,7 @@
 /* Interface10 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-interface Interface10 {
+interface RenderTarget {
     fun method38(i: Int): Boolean
 
     fun method39(i: Int): Int

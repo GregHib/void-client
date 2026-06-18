@@ -6,7 +6,7 @@ import OutputStream_Sub2.Companion.method136
 /* Class318_Sub1_Sub4_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SequencedActorEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig?, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int) : ActorEntity(i_6_, i_7_, i_8_, i, i_5_, method868(i_9_, i_10_, false)), Interface10 {
+class SequencedActorEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig?, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int) : ActorEntity(i_6_, i_7_, i_8_, i, i_5_, method868(i_9_, i_10_, false)), RenderTarget {
     private var aBoolean10095 = false
     private var aBoolean10114 = false
     var aSceneObjectAnimator_10115: SceneObjectAnimator? = null
