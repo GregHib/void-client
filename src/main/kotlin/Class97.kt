@@ -215,7 +215,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDeco
         }
 
         fun method873(i: Int, i_6_: Int, var_renderer: Renderer?, i_7_: Int) {
-            Class60.aRenderer1098 = var_renderer
+            LruByteCache.aRenderer1098 = var_renderer
             NodeDeque.aModelLightingConfigArrayArray3335 = Array(i) { arrayOfNulls(i_7_) }
             if (i_6_ == 21719) {
                 anInt1549++
@@ -228,11 +228,11 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDeco
         @JvmStatic
         fun method876(i: Int, i_23_: Int) {
             anInt1557++
-            synchronized(ModelDataCache.aClass60_355!!) {
-                ModelDataCache.aClass60_355!!.method578(2, i)
+            synchronized(ModelDataCache.aLruByteCache_355!!) {
+                ModelDataCache.aLruByteCache_355!!.method578(2, i)
             }
-            synchronized(ModelBatchBase.aClass60_1894!!) {
-                ModelBatchBase.aClass60_1894!!.method578(2, i)
+            synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+                ModelBatchBase.aLruByteCache_1894!!.method578(2, i)
                 if (i_23_ != 0) method876(51, 108)
             }
         }

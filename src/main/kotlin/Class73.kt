@@ -60,13 +60,13 @@ class Class73 internal constructor(js5Archive: Js5Archive?, string: String?) : I
 
         fun method742(i: Int, i_0_: Int): MapAreaDefinition {
             anInt4777++
-            var mapAreaDefinition = ParticleAmountCache.aClass60_2844!!.method583(i_0_.toLong(), -104) as MapAreaDefinition?
+            var mapAreaDefinition = ParticleAmountCache.aLruByteCache_2844!!.method583(i_0_.toLong(), -104) as MapAreaDefinition?
             if (mapAreaDefinition != null) return mapAreaDefinition
             val `is` = WorldMapIconLabel.aJs5Archive_8601!!.method410(-1860, 0, i_0_)
             if (i != 104) method741(98.toByte())
             mapAreaDefinition = MapAreaDefinition()
             if (`is` != null) mapAreaDefinition.method1419(i_0_, Buffer(`is`), 64.toByte())
-            ParticleAmountCache.aClass60_2844!!.method582(mapAreaDefinition, i_0_.toLong(), (-114).toByte())
+            ParticleAmountCache.aLruByteCache_2844!!.method582(mapAreaDefinition, i_0_.toLong(), (-114).toByte())
             return mapAreaDefinition
         }
 

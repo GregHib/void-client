@@ -16,7 +16,7 @@ abstract class ParticleProcessor {
         @JvmField
         var aIntRange_4272: IntRange? = IntRange(67, 3)
         @JvmField
-        var aClass60_4273: Class60? = Class60(128, 4)
+        var aLruByteCache_4273: LruByteCache? = LruByteCache(128, 4)
 
         @JvmStatic
         fun method2693(i: Int) {
@@ -24,7 +24,7 @@ abstract class ParticleProcessor {
             aIntRange_4272 = null
             anIntArray4271 = null
             aIntRange_4269 = null
-            aClass60_4273 = null
+            aLruByteCache_4273 = null
         }
     }
 }

@@ -45,7 +45,7 @@ class EdgeDetectTextureNode : AbstractProceduralTextureNode(1, true) {
         @JvmField
         var anInt9170: Int = 0
         @JvmField
-        var aClass60_9171: Class60? = Class60(4)
+        var aLruByteCache_9171: LruByteCache? = LruByteCache(4)
         @JvmField
         var anInt9172: Int = 0
         @JvmField
@@ -54,7 +54,7 @@ class EdgeDetectTextureNode : AbstractProceduralTextureNode(1, true) {
         @JvmStatic
         fun method3071(i: Byte) {
             if (i.toInt() != 59) anGameApplet_Frame_9169 = null
-            aClass60_9171 = null
+            aLruByteCache_9171 = null
             aFont_9173 = null
         }
 

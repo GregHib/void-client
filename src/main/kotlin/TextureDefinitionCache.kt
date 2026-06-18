@@ -2,13 +2,13 @@
 * Visit http://jode.sourceforge.net/
 */
 class TextureDefinitionCache internal constructor(i: Int, js5Archive: Js5Archive?, js5Archive_3_: Js5Archive?) {
-    private val aClass60_2960 = Class60(64)
+    private val aLruByteCache_2960 = LruByteCache(64)
     private val aJs5Archive_2961: Js5Archive?
     private var aJs5Archive_2965: Js5Archive? = null
 
     fun method1625(i: Int, i_0_: Int): CharCodeMap {
         anInt2963++
-        var class348_sub42_sub11 = aClass60_2960.method583(i_0_.toLong(), -51) as CharCodeMap?
+        var class348_sub42_sub11 = aLruByteCache_2960.method583(i_0_.toLong(), -51) as CharCodeMap?
         if (class348_sub42_sub11 != null) return class348_sub42_sub11
         val `is`: ByteArray?
         if (i_0_ < 32768) `is` = aJs5Archive_2961!!.method410(-1860, 0, i_0_)
@@ -17,7 +17,7 @@ class TextureDefinitionCache internal constructor(i: Int, js5Archive: Js5Archive
         if (`is` != null) class348_sub42_sub11.method3221(117, Buffer(`is`))
         if (i_0_ >= 32768) class348_sub42_sub11.method3224(104.toByte())
         if (i != 0) aJs5Archive_2965 = null
-        aClass60_2960.method582(class348_sub42_sub11, i_0_.toLong(), (-123).toByte())
+        aLruByteCache_2960.method582(class348_sub42_sub11, i_0_.toLong(), (-123).toByte())
         return class348_sub42_sub11
     }
 

@@ -148,8 +148,8 @@ class CompositeNpcModelBuilder {
                 if (bool_14_) i_9_ = i_9_ or 0x400
             }
             var class64: Class64?
-            synchronized(ModelDataCache.aClass60_355!!) {
-                class64 = ModelDataCache.aClass60_355!!.method583(l, -47) as Class64?
+            synchronized(ModelDataCache.aLruByteCache_355!!) {
+                class64 = ModelDataCache.aLruByteCache_355!!.method583(l, -47) as Class64?
             }
             var npcDefinition: NpcDefinition? = null
             if (anInt2103 != -1) npcDefinition = npcDefinitionCache!!.method1983(anInt2103, 32)
@@ -165,8 +165,8 @@ class CompositeNpcModelBuilder {
                 }
                 if (bool_37_) {
                     if (aLong2094 != -1L) {
-                        synchronized(ModelDataCache.aClass60_355!!) {
-                            class64 = ModelDataCache.aClass60_355!!.method583(aLong2094, -92) as Class64?
+                        synchronized(ModelDataCache.aLruByteCache_355!!) {
+                            class64 = ModelDataCache.aLruByteCache_355!!.method583(aLong2094, -92) as Class64?
                         }
                     }
                     if (class64 == null || var_renderer!!.method3667(class64.ua(), i_9_) != 0) return null
@@ -220,8 +220,8 @@ class CompositeNpcModelBuilder {
                     }
                     if (bool) {
                         class64.s(i_9_)
-                        synchronized(ModelDataCache.aClass60_355!!) {
-                            ModelDataCache.aClass60_355!!.method582(class64, l, (-98).toByte())
+                        synchronized(ModelDataCache.aLruByteCache_355!!) {
+                            ModelDataCache.aLruByteCache_355!!.method582(class64, l, (-98).toByte())
                         }
                         aLong2094 = l
                     }
@@ -364,8 +364,8 @@ class CompositeNpcModelBuilder {
             }
             if (i != -402058072) aLong2094 = -101L
             var class64: Class64?
-            synchronized(ModelBatchBase.aClass60_1894!!) {
-                class64 = ModelBatchBase.aClass60_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as Class64?
+            synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+                class64 = ModelBatchBase.aLruByteCache_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as Class64?
             }
             if (class64 == null || var_renderer!!.method3667(class64.ua(), i_70_) != 0) {
                 if (class64 != null) i_70_ = var_renderer!!.method3679(i_70_, class64.ua())
@@ -403,8 +403,8 @@ class CompositeNpcModelBuilder {
                     }
                 }
                 class64.s(i_70_)
-                synchronized(ModelBatchBase.aClass60_1894!!) {
-                    ModelBatchBase.aClass60_1894!!.method582(class64, aLong2102, (-97).toByte())
+                synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+                    ModelBatchBase.aLruByteCache_1894!!.method582(class64, aLong2102, (-97).toByte())
                 }
             }
             if (widgetDefinition == null) return class64
@@ -471,8 +471,8 @@ class CompositeNpcModelBuilder {
             }
             val l = i_95_.toLong() or ((i_93_ shl 16).toLong() or (i_92_.toLong() shl 32))
             var class64: Class64?
-            synchronized(ModelBatchBase.aClass60_1894!!) {
-                class64 = ModelBatchBase.aClass60_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as Class64?
+            synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+                class64 = ModelBatchBase.aLruByteCache_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as Class64?
             }
             if (class64 == null || var_renderer!!.method3667(class64.ua(), i_98_) != 0) {
                 if (class64 != null) i_98_ = var_renderer!!.method3679(i_98_, class64.ua())
@@ -497,8 +497,8 @@ class CompositeNpcModelBuilder {
                     }
                 }
                 class64.s(i_98_)
-                synchronized(ModelBatchBase.aClass60_1894!!) {
-                    ModelBatchBase.aClass60_1894!!.method582(class64, l, (-109).toByte())
+                synchronized(ModelBatchBase.aLruByteCache_1894!!) {
+                    ModelBatchBase.aLruByteCache_1894!!.method582(class64, l, (-109).toByte())
                 }
             }
             if (widgetDefinition == null) return class64

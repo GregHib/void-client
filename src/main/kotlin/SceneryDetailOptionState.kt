@@ -37,7 +37,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
         else if (this.aClass348_Sub51_3136.method3425(-95)) this.anInt3138 = 0
         anInt6090++
         if (this.anInt3138 != 0 && this.anInt3138 != 1) this.anInt3138 = method1710(20014)
-        if (bool != false) aClass60_6096 = null
+        if (bool != false) aLruByteCache_6096 = null
     }
 
     fun method1824(i: Int): Boolean {
@@ -76,7 +76,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
         @JvmField
         var anInt6095: Int = 0
         @JvmField
-        var aClass60_6096: Class60? = Class60(8)
+        var aLruByteCache_6096: LruByteCache? = LruByteCache(8)
         @JvmField
         var aAbstractModelRenderer_6097: AbstractModelRenderer? = null
         @JvmField
@@ -92,7 +92,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1822(i: Byte) {
             aIntRange_6089 = null
-            aClass60_6096 = null
+            aLruByteCache_6096 = null
             aAbstractModelRenderer_6097 = null
             aStringArrayArray6093 = null
             aCircleRasterizer_6098 = null

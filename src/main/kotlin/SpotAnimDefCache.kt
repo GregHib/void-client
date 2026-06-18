@@ -8,7 +8,7 @@ object SpotAnimDefCache {
     @JvmStatic
     fun method1943(bool: Boolean, i: Int): SpotAnimVector {
         anInt3294++
-        var spotAnimVector = (SceneObjectEntity.aClass60_8732!!.method583(i.toLong(), -78) as SpotAnimVector?)
+        var spotAnimVector = (SceneObjectEntity.aLruByteCache_8732!!.method583(i.toLong(), -78) as SpotAnimVector?)
         if (spotAnimVector != null) return spotAnimVector
         val `is` = CachedRgbNoiseTexture.aJs5Archive_8670!!.method410(-1860, 1, i)
         spotAnimVector = SpotAnimVector()
@@ -20,7 +20,7 @@ object SpotAnimDefCache {
             CompositeRgbNoiseTexture.aHashtable_8679!!.method3483(87.toByte(), i.toLong(), IntKeyNode(GlVertexBufferArb.anInt8492))
             WorldListEntry.aSpotAnimVectorArray311s!![GlVertexBufferArb.anInt8492++] = spotAnimVector
         }
-        SceneObjectEntity.aClass60_8732!!.method582(spotAnimVector, i.toLong(), (-109).toByte())
+        SceneObjectEntity.aLruByteCache_8732!!.method582(spotAnimVector, i.toLong(), (-109).toByte())
         return spotAnimVector
     }
 

@@ -34,11 +34,11 @@ object ClientLoadStateMachine {
     @JvmStatic
     fun method1277(i: Byte) {
         anInt2175++
-        FontMetaRef.aClass60_4327!!.method590(i + -62)
-        ParticleGeometry.aClass60_4417!!.method590(0)
-        SceneryDetailOptionState.aClass60_6096!!.method590(0)
+        FontMetaRef.aLruByteCache_4327!!.method590(i + -62)
+        ParticleGeometry.aLruByteCache_4417!!.method590(0)
+        SceneryDetailOptionState.aLruByteCache_6096!!.method590(0)
         if (i.toInt() != 62) method1277(43.toByte())
-        EdgeDetectTextureNode.aClass60_9171!!.method590(0)
+        EdgeDetectTextureNode.aLruByteCache_9171!!.method590(0)
     }
 
     fun method1278(i: Int): Int {

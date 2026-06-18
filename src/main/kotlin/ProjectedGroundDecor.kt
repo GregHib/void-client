@@ -793,7 +793,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             if (i_0_ != -1) aBoolean10238 = false
             Gl3dTexture.anInt8628 = i
             anInt10272++
-            ParticleGeometry.aClass60_4417!!.method590(0)
+            ParticleGeometry.aLruByteCache_4417!!.method590(0)
         }
 
         @JvmStatic

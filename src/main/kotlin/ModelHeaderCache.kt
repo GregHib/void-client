@@ -8,9 +8,9 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     var aJs5Archive_3268: Js5Archive? = null
     private var aBoolean3269 = false
     var anInt3271: Int = 0
-    private val aClass60_3278 = Class60(64)
+    private val aLruByteCache_3278 = LruByteCache(64)
     var anInt3286: Int = 0
-    var aClass60_3287: Class60 = Class60(50)
+    var aLruByteCache_3287: LruByteCache = LruByteCache(50)
     var aSizeBoundedSoftCache_3288: SizeBoundedSoftCache = SizeBoundedSoftCache(250)
     private var aCrc64Hashable_3289: Crc64Hashable? = Crc64Hashable()
     private val aStringArray3290: Array<String?>
@@ -19,8 +19,8 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     private val aStringArray3293: Array<String?>
 
     fun method1930(i: Int) {
-        synchronized(this.aClass60_3287) {
-            this.aClass60_3287.method590(0)
+        synchronized(this.aLruByteCache_3287) {
+            this.aLruByteCache_3287.method590(0)
             if (i != -21804) method1930(-35)
         }
         anInt3275++
@@ -81,12 +81,12 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
 
     fun method1937(i: Int, bool: Boolean) {
         anInt3274++
-        synchronized(aClass60_3278) {
-            aClass60_3278.method578(2, i)
+        synchronized(aLruByteCache_3278) {
+            aLruByteCache_3278.method578(2, i)
         }
-        synchronized(this.aClass60_3287) {
+        synchronized(this.aLruByteCache_3287) {
             if (bool != false) method1939(-11)
-            this.aClass60_3287.method578(2, i)
+            this.aLruByteCache_3287.method578(2, i)
         }
         synchronized(this.aSizeBoundedSoftCache_3288) {
             this.aSizeBoundedSoftCache_3288.method1346(-1491, i)
@@ -95,11 +95,11 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
 
     fun method1938(i: Int) {
         anInt3272++
-        synchronized(aClass60_3278) {
-            aClass60_3278.method587(-88)
+        synchronized(aLruByteCache_3278) {
+            aLruByteCache_3278.method587(-88)
         }
-        synchronized(this.aClass60_3287) {
-            this.aClass60_3287.method587(-85)
+        synchronized(this.aLruByteCache_3287) {
+            this.aLruByteCache_3287.method587(-85)
         }
         synchronized(this.aSizeBoundedSoftCache_3288) {
             this.aSizeBoundedSoftCache_3288.method1344((-124).toByte())
@@ -108,13 +108,13 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     }
 
     fun method1939(i: Int) {
-        synchronized(aClass60_3278) {
+        synchronized(aLruByteCache_3278) {
             if (i > -28) aEmoteDefCache_3292 = null
-            aClass60_3278.method590(0)
+            aLruByteCache_3278.method590(0)
         }
         anInt3277++
-        synchronized(this.aClass60_3287) {
-            this.aClass60_3287.method590(0)
+        synchronized(this.aLruByteCache_3287) {
+            this.aLruByteCache_3287.method590(0)
         }
         synchronized(this.aSizeBoundedSoftCache_3288) {
             this.aSizeBoundedSoftCache_3288.method1345(47.toByte())
@@ -124,8 +124,8 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     fun method1940(i: Int, i_13_: Int): ItemDefinition {
         anInt3283++
         var itemDefinition: ItemDefinition?
-        synchronized(aClass60_3278) {
-            itemDefinition = aClass60_3278.method583(i_13_.toLong(), 90) as ItemDefinition?
+        synchronized(aLruByteCache_3278) {
+            itemDefinition = aLruByteCache_3278.method583(i_13_.toLong(), 90) as ItemDefinition?
         }
         if (itemDefinition != null) return itemDefinition
         val `is`: ByteArray?
@@ -161,8 +161,8 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 if (!bool) itemDefinition.aHashtable_2757 = null
             }
         }
-        synchronized(aClass60_3278) {
-            aClass60_3278.method582(itemDefinition, i_13_.toLong(), (-118).toByte())
+        synchronized(aLruByteCache_3278) {
+            aLruByteCache_3278.method582(itemDefinition, i_13_.toLong(), (-118).toByte())
         }
         return itemDefinition
     }
@@ -187,8 +187,8 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     fun method1942(i: Int, i_20_: Byte) {
         this.anInt3291 = i
         anInt3284++
-        synchronized(this.aClass60_3287) {
-            this.aClass60_3287.method590(0)
+        synchronized(this.aLruByteCache_3287) {
+            this.aLruByteCache_3287.method590(0)
             val i_21_ = 89 % ((-65 - i_20_) / 60)
         }
     }

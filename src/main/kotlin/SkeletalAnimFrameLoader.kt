@@ -143,7 +143,7 @@ class SkeletalAnimFrameLoader {
         @JvmField
         var anInt462: Int = 0
         @JvmField
-        var aClass60_463: Class60? = Class60(8)
+        var aLruByteCache_463: LruByteCache? = LruByteCache(8)
         @JvmField
         var anInt466: Int = 0
         @JvmField
@@ -182,7 +182,7 @@ class SkeletalAnimFrameLoader {
             do {
                 try {
                     anInt473++
-                    if (i_21_ != -22222) aClass60_463 = null
+                    if (i_21_ != -22222) aLruByteCache_463 = null
                     if (i >= i_22_) break
                     val i_23_ = (i - -i_22_) / 2
                     var i_24_ = i
@@ -240,7 +240,7 @@ class SkeletalAnimFrameLoader {
 
         @JvmStatic
         fun method351(i: Int) {
-            aClass60_463 = null
+            aLruByteCache_463 = null
             val i_39_ = 90 / ((i - 19) / 43)
             aFrame476 = null
         }

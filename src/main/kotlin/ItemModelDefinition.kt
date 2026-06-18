@@ -21,10 +21,10 @@ class ItemModelDefinition {
         anInt440++
         if (bool != true) return null
         if (anInt429 < 0) return null
-        var abstractModelRenderer = this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt429.toLong(), -62) as AbstractModelRenderer?
+        var abstractModelRenderer = this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt429.toLong(), -62) as AbstractModelRenderer?
         if (abstractModelRenderer == null) {
             method330(var_renderer, -41)
-            abstractModelRenderer = this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt429.toLong(), 53) as AbstractModelRenderer?
+            abstractModelRenderer = this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt429.toLong(), 53) as AbstractModelRenderer?
         }
         return abstractModelRenderer
     }
@@ -32,11 +32,11 @@ class ItemModelDefinition {
     fun method325(var_renderer: Renderer, i: Int): AbstractModelRenderer? {
         anInt428++
         if (anInt439 < 0) return null
-        var abstractModelRenderer = this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt439.toLong(), -59) as AbstractModelRenderer?
+        var abstractModelRenderer = this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt439.toLong(), -59) as AbstractModelRenderer?
         if (i < 23) return null
         if (abstractModelRenderer == null) {
             method330(var_renderer, -118)
-            abstractModelRenderer = this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt439.toLong(), 123) as AbstractModelRenderer?
+            abstractModelRenderer = this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt439.toLong(), 123) as AbstractModelRenderer?
         }
         return abstractModelRenderer
     }
@@ -44,10 +44,10 @@ class ItemModelDefinition {
     fun method327(var_renderer: Renderer, i: Byte): AbstractModelRenderer? {
         anInt432++
         if (anInt421 < 0) return null
-        var abstractModelRenderer = this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt421.toLong(), 118) as AbstractModelRenderer?
+        var abstractModelRenderer = this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt421.toLong(), 118) as AbstractModelRenderer?
         if (abstractModelRenderer == null) {
             method330(var_renderer, -66)
-            abstractModelRenderer = this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt421.toLong(), 119) as AbstractModelRenderer?
+            abstractModelRenderer = this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt421.toLong(), 119) as AbstractModelRenderer?
         }
         val i_0_ = 20 % ((i - 19) / 51)
         return abstractModelRenderer
@@ -82,22 +82,22 @@ class ItemModelDefinition {
     private fun method330(var_renderer: Renderer, i: Int) {
         anInt446++
         val class45 = this.aModelDefinitionCache_438!!.aJs5Archive_2873!!
-        if (anInt421 >= 0 && this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt421.toLong(), 121) == null && class45.method421(false, anInt421)) {
+        if (anInt421 >= 0 && this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt421.toLong(), 121) == null && class45.method421(false, anInt421)) {
             val spriteImage = SpriteImage.method1512(class45, anInt421)
-            this.aModelDefinitionCache_438!!.aClass60_2862.method582(var_renderer.method3691(spriteImage, true), anInt421.toLong(), (-112).toByte())
+            this.aModelDefinitionCache_438!!.aLruByteCache_2862.method582(var_renderer.method3691(spriteImage, true), anInt421.toLong(), (-112).toByte())
         }
-        if (anInt433 >= 0 && this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt433.toLong(), -99) == null && class45.method421(false, anInt433)) {
+        if (anInt433 >= 0 && this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt433.toLong(), -99) == null && class45.method421(false, anInt433)) {
             val spriteImage = SpriteImage.method1512(class45, anInt433)
-            this.aModelDefinitionCache_438!!.aClass60_2862.method582(var_renderer.method3691(spriteImage, true), anInt433.toLong(), (-128).toByte())
+            this.aModelDefinitionCache_438!!.aLruByteCache_2862.method582(var_renderer.method3691(spriteImage, true), anInt433.toLong(), (-128).toByte())
         }
-        if (anInt429 >= 0 && this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt429.toLong(), 86) == null && class45.method421(false, anInt429)) {
+        if (anInt429 >= 0 && this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt429.toLong(), 86) == null && class45.method421(false, anInt429)) {
             val spriteImage = SpriteImage.method1512(class45, anInt429)
-            this.aModelDefinitionCache_438!!.aClass60_2862.method582(var_renderer.method3691(spriteImage, true), anInt429.toLong(), (-108).toByte())
+            this.aModelDefinitionCache_438!!.aLruByteCache_2862.method582(var_renderer.method3691(spriteImage, true), anInt429.toLong(), (-108).toByte())
         }
         if (i > -7) this.anInt434 = -14
-        if (anInt439 >= 0 && this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt439.toLong(), -83) == null && class45.method421(false, anInt439)) {
+        if (anInt439 >= 0 && this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt439.toLong(), -83) == null && class45.method421(false, anInt439)) {
             val spriteImage = SpriteImage.method1512(class45, anInt439)
-            this.aModelDefinitionCache_438!!.aClass60_2862.method582(var_renderer.method3691(spriteImage, true), anInt439.toLong(), (-101).toByte())
+            this.aModelDefinitionCache_438!!.aLruByteCache_2862.method582(var_renderer.method3691(spriteImage, true), anInt439.toLong(), (-101).toByte())
         }
     }
 
@@ -105,10 +105,10 @@ class ItemModelDefinition {
         anInt441++
         if (anInt433 < 0) return null
         val i_2_ = -84 % ((i - 32) / 35)
-        var abstractModelRenderer = this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt433.toLong(), -50) as AbstractModelRenderer?
+        var abstractModelRenderer = this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt433.toLong(), -50) as AbstractModelRenderer?
         if (abstractModelRenderer == null) {
             method330(var_renderer, -89)
-            abstractModelRenderer = this.aModelDefinitionCache_438!!.aClass60_2862.method583(anInt433.toLong(), -117) as AbstractModelRenderer?
+            abstractModelRenderer = this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt433.toLong(), -117) as AbstractModelRenderer?
         }
         return abstractModelRenderer
     }

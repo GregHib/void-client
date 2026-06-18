@@ -1,6 +1,6 @@
 import ArrayCopyUtil.method1577
 import NoiseTextureGenerator.Companion.method547
-import Class60.Companion.method589
+import LruByteCache.Companion.method589
 
 /* Class309 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

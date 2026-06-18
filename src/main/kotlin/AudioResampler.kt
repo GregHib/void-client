@@ -140,8 +140,8 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
 
         fun method1271(i: Int) {
             anInt2166++
-            synchronized(WidgetRedrawRegion.aClass60_4254!!) {
-                WidgetRedrawRegion.aClass60_4254!!.method587(-86)
+            synchronized(WidgetRedrawRegion.aLruByteCache_4254!!) {
+                WidgetRedrawRegion.aLruByteCache_4254!!.method587(-86)
                 if (i != 0) method1276(25)
             }
         }
@@ -155,12 +155,12 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
             while (`is`.size > i_24_) {
                 val class321 = TheoraVideoStream.aLocTypeDefLoader_9036!!.method1408(-12637, `is`[i_24_])
                 if (class321.anInt4000 != -1) {
-                    var abstractModelRenderer = (SkeletalAnimFrameLoader.aClass60_463!!.method583(class321.anInt4000.toLong(), -74) as? AbstractModelRenderer?)
+                    var abstractModelRenderer = (SkeletalAnimFrameLoader.aLruByteCache_463!!.method583(class321.anInt4000.toLong(), -74) as? AbstractModelRenderer?)
                     if (abstractModelRenderer == null) {
                         val spriteImage = SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, class321.anInt4000, 0)
                         if (spriteImage != null) {
                             abstractModelRenderer = FacingDirectionNode.aRenderer6654!!.method3691(spriteImage, true)
-                            SkeletalAnimFrameLoader.aClass60_463!!.method582(abstractModelRenderer, class321.anInt4000.toLong(), (-127).toByte())
+                            SkeletalAnimFrameLoader.aLruByteCache_463!!.method582(abstractModelRenderer, class321.anInt4000.toLong(), (-127).toByte())
                         }
                     }
                     if (abstractModelRenderer != null) {

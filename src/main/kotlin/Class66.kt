@@ -111,7 +111,7 @@ object Class66 {
     private var anIntArray1172: IntArray? = IntArray(5)
     private var anInt1173 = 0
     @JvmField
-    var aClass60_1174: Class60?
+    var aLruByteCache_1174: LruByteCache?
     private var anIntArray1175: IntArray?
     private var aStringArray1176: Array<String>?
     private var anInt1177: Int
@@ -5227,7 +5227,7 @@ object Class66 {
         aCalendar1160 = null
         aStringArray1176 = null
         anIntArray1175 = null
-        aClass60_1174 = null
+        aLruByteCache_1174 = null
     }
 
     private fun method714(i: Int) {
@@ -5265,7 +5265,7 @@ object Class66 {
         aCalendar1160 = Calendar.getInstance()
         anIntArray1175 = IntArray(3)
         aStringArray1176 = arrayOf<String>("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
-        aClass60_1174 = Class60(4)
+        aLruByteCache_1174 = LruByteCache(4)
         anInt1177 = 0
     }
 }

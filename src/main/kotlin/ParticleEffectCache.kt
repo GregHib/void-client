@@ -2,13 +2,13 @@
 * Visit http://jode.sourceforge.net/
 */
 class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
-    private val aClass60_3466 = Class60(64)
+    private val aLruByteCache_3466 = LruByteCache(64)
     private val aJs5Archive_3468: Js5Archive?
     fun method2044(i: Int, i_0_: Int): ConfigShortValueNode {
         anInt3469++
         var class348_sub42_sub7: ConfigShortValueNode?
-        synchronized(aClass60_3466) {
-            class348_sub42_sub7 = aClass60_3466.method583(i_0_.toLong(), -85) as ConfigShortValueNode?
+        synchronized(aLruByteCache_3466) {
+            class348_sub42_sub7 = aLruByteCache_3466.method583(i_0_.toLong(), -85) as ConfigShortValueNode?
         }
         if (class348_sub42_sub7 != null) return class348_sub42_sub7
         val `is`: ByteArray?
@@ -18,8 +18,8 @@ class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, 
         class348_sub42_sub7 = ConfigShortValueNode()
         if (i < 78) method2046()
         if (`is` != null) class348_sub42_sub7.method3192(16.toByte(), Buffer(`is`))
-        synchronized(aClass60_3466) {
-            aClass60_3466.method582(class348_sub42_sub7, i_0_.toLong(), (-93).toByte())
+        synchronized(aLruByteCache_3466) {
+            aLruByteCache_3466.method582(class348_sub42_sub7, i_0_.toLong(), (-93).toByte())
         }
         return class348_sub42_sub7
     }

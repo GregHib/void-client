@@ -39,7 +39,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
         var anInt4251: Int = 0
         @JvmField
         var anIntArrayArray4253: Array<IntArray?>? = null
-        var aClass60_4254: Class60?
+        var aLruByteCache_4254: LruByteCache?
 
         @JvmStatic
         fun method2682(i: Int) {
@@ -48,7 +48,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
             if (i > 5) {
                 aClass70_4247 = null
                 anIntArray4250 = null
-                aClass60_4254 = null
+                aLruByteCache_4254 = null
                 anImage4249 = null
             }
         }
@@ -123,7 +123,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
 
         init {
             aClass70_4247 = Class70()
-            aClass60_4254 = Class60(32)
+            aLruByteCache_4254 = LruByteCache(32)
         }
     }
 }

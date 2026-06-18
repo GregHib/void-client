@@ -34,7 +34,7 @@ class MapSceneIconDef {
         anInt2857++
         if (i_18_ < 51) aIntRange_2860 = null
         val l = (var_renderer.anInt4567 shl 19 or (this.anInt2853 or (i shl 16) or (if (!bool) 0 else 262144))).toLong()
-        var abstractModelRenderer = this.aTextureDefinitionLoader_2851!!.aClass60_1976.method583(l, -87) as AbstractModelRenderer?
+        var abstractModelRenderer = this.aTextureDefinitionLoader_2851!!.aLruByteCache_1976.method583(l, -87) as AbstractModelRenderer?
         if (abstractModelRenderer != null) return abstractModelRenderer
         if (!this.aTextureDefinitionLoader_2851!!.aJs5Archive_1965!!.method421(false, this.anInt2853)) return null
         val spriteImage = SpriteImage.method1521(this.aTextureDefinitionLoader_2851!!.aJs5Archive_1965!!, this.anInt2853, 0)
@@ -47,7 +47,7 @@ class MapSceneIconDef {
             for (i_19_ in 0..<i) spriteImage.method1520()
         }
         abstractModelRenderer = var_renderer.method3691(spriteImage, true)
-        if (abstractModelRenderer != null) this.aTextureDefinitionLoader_2851!!.aClass60_1976.method582(abstractModelRenderer, l, (-101).toByte())
+        if (abstractModelRenderer != null) this.aTextureDefinitionLoader_2851!!.aLruByteCache_1976.method582(abstractModelRenderer, l, (-101).toByte())
         return abstractModelRenderer
     }
 

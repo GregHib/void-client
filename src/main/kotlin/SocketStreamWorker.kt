@@ -207,7 +207,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
         @JvmField
         var anInt2670: Int = 0
         @JvmField
-        var aClass60_2671: Class60? = Class60(10)
+        var aLruByteCache_2671: LruByteCache? = LruByteCache(10)
 
         @JvmStatic
         fun method1469(i: Int) {
@@ -229,7 +229,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
         @JvmStatic
         fun method1471(i: Byte) {
             if (i >= 80) {
-                aClass60_2671 = null
+                aLruByteCache_2671 = null
                 aIntRange_2665 = null
                 aFontMetaRef_2661 = null
             }

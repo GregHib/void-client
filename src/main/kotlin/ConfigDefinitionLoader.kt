@@ -4,57 +4,57 @@ import Texture2DProvider.Companion.method2259
 * Visit http://jode.sourceforge.net/
 */
 class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_10_: Js5Archive?) {
-    private var aClass60_2083 = Class60(128)
+    private var aLruByteCache_2083 = LruByteCache(128)
     private val aJs5Archive_2084: Js5Archive?
     var aJs5Archive_2087: Js5Archive? = null
-    var aClass60_2089: Class60 = Class60(64)
+    var aLruByteCache_2089: LruByteCache = LruByteCache(64)
 
     fun method1219(i: Int) {
         anInt2080++
-        synchronized(aClass60_2083) {
-            aClass60_2083.method590(0)
+        synchronized(aLruByteCache_2083) {
+            aLruByteCache_2083.method590(0)
         }
-        synchronized(this.aClass60_2089) {
+        synchronized(this.aLruByteCache_2089) {
             if (i != 7851) {
                 /* empty */
-            } else this.aClass60_2089.method590(i + -7851)
+            } else this.aLruByteCache_2089.method590(i + -7851)
         }
     }
 
     fun method1220(i: Byte, i_0_: Int, i_1_: Int) {
         anInt2081++
-        aClass60_2083 = Class60(i_1_)
-        this.aClass60_2089 = Class60(i_0_)
+        aLruByteCache_2083 = LruByteCache(i_1_)
+        this.aLruByteCache_2089 = LruByteCache(i_0_)
         val i_2_ = 11 / ((i - -46) / 43)
     }
 
     fun method1222(bool: Boolean) {
         if (bool != true) method1222(false)
-        synchronized(aClass60_2083) {
-            aClass60_2083.method587(-99)
+        synchronized(aLruByteCache_2083) {
+            aLruByteCache_2083.method587(-99)
         }
         anInt2082++
-        synchronized(this.aClass60_2089) {
-            this.aClass60_2089.method587(-78)
+        synchronized(this.aLruByteCache_2089) {
+            this.aLruByteCache_2089.method587(-78)
         }
     }
 
     fun method1224(i: Int, i_8_: Byte) {
-        synchronized(aClass60_2083) {
+        synchronized(aLruByteCache_2083) {
             if (i_8_ > -95) method1225(-75, (-61).toByte())
-            aClass60_2083.method578(2, i)
+            aLruByteCache_2083.method578(2, i)
         }
         anInt2079++
-        synchronized(this.aClass60_2089) {
-            this.aClass60_2089.method578(2, i)
+        synchronized(this.aLruByteCache_2089) {
+            this.aLruByteCache_2089.method578(2, i)
         }
     }
 
     fun method1225(i: Int, i_9_: Byte): StructConfig? {
         anInt2085++
         var structConfig: StructConfig?
-        synchronized(aClass60_2083) {
-            structConfig = aClass60_2083.method583(i.toLong(), 91) as StructConfig?
+        synchronized(aLruByteCache_2083) {
+            structConfig = aLruByteCache_2083.method583(i.toLong(), 91) as StructConfig?
         }
         if (structConfig != null) return structConfig
         if (i_9_ < 36) return null
@@ -67,8 +67,8 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
         structConfig.anInt581 = i
         if (`is` != null) structConfig.method379(Buffer(`is`), 109)
         structConfig.method372(-25359)
-        synchronized(aClass60_2083) {
-            aClass60_2083.method582(structConfig, i.toLong(), (-106).toByte())
+        synchronized(aLruByteCache_2083) {
+            aLruByteCache_2083.method582(structConfig, i.toLong(), (-106).toByte())
         }
         return structConfig
     }

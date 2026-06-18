@@ -60,7 +60,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
         @JvmField
         var anInt8731: Int = 0
         @JvmField
-        var aClass60_8732: Class60? = Class60(64)
+        var aLruByteCache_8732: LruByteCache? = LruByteCache(64)
         @JvmField
         var anInt8733: Int = 0
         @JvmField
@@ -108,7 +108,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
         @JvmStatic
         fun method2406(i: Int) {
             if (i > -126) anInt8731 = 118
-            aClass60_8732 = null
+            aLruByteCache_8732 = null
             aClass70_8737 = null
         }
     }

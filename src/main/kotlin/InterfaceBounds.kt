@@ -108,7 +108,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             if (i > 53) {
                 method297(false)
                 method1402(1)
-                Class66.aClass60_1174!!.method590(0)
+                Class66.aLruByteCache_1174!!.method590(0)
                 FacingDirectionNode.aRenderer6654!!.method3663()
                 method1707(26469)
                 Buffer.method3354(-52)
@@ -145,10 +145,10 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 Crc64Hashable.aJs5Archive_4984!!.method412(85.toByte())
                 SpriteLoadValidator.aJs5Archive_4796!!.method412(93.toByte())
                 HitsplatDefinition.aJs5Archive_2015!!.method412((-122).toByte())
-                TextureMipDescriptor.aClass60_4346!!.method590(0)
-                MaterialTypeMarker.aClass60_6517!!.method590(0)
-                TerrainTileShape.aClass60_8807!!.method590(0)
-                SkeletalAnimFrameLoader.aClass60_463!!.method590(0)
+                TextureMipDescriptor.aLruByteCache_4346!!.method590(0)
+                MaterialTypeMarker.aLruByteCache_6517!!.method590(0)
+                TerrainTileShape.aLruByteCache_8807!!.method590(0)
+                SkeletalAnimFrameLoader.aLruByteCache_463!!.method590(0)
             }
         }
 

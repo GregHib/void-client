@@ -4,7 +4,7 @@
 abstract class ModelBatchBase {
     companion object {
         @JvmField
-        var aClass60_1894: Class60? = Class60(5)
+        var aLruByteCache_1894: LruByteCache? = LruByteCache(5)
         @JvmField
         var aHashtable_1895: Hashtable? = Hashtable(64)
         @JvmField
@@ -22,7 +22,7 @@ abstract class ModelBatchBase {
         fun method1127(i: Int) {
             aJs5Archive_1897 = null
             aHashtable_1895 = null
-            if (i == 5125) aClass60_1894 = null
+            if (i == 5125) aLruByteCache_1894 = null
         }
 
         @JvmStatic

@@ -3,7 +3,7 @@
 */
 object CharCountUtil {
     @JvmField
-    var aClass60_225: Class60? = Class60(4)
+    var aLruByteCache_225: LruByteCache? = LruByteCache(4)
     @JvmField
     var anInt226: Int = 0
     @JvmField
@@ -14,8 +14,8 @@ object CharCountUtil {
 
     @JvmStatic
     fun method255(i: Int) {
-        aClass60_225 = null
-        if (i != 6725) aClass60_225 = null
+        aLruByteCache_225 = null
+        if (i != 6725) aLruByteCache_225 = null
         aIntRange_229 = null
     }
 

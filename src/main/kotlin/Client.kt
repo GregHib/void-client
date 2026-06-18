@@ -476,7 +476,7 @@ import SolidFillComponent.Companion.method193
 import SolidFillComponent.Companion.method198
 import IdentKitRecolor.Companion.method207
 import IdentKitRecolor.Companion.method208
-import Class60.Companion.method584
+import LruByteCache.Companion.method584
 import Class62.method598
 import Class62.method599
 import Class64_Sub2.Companion.method661

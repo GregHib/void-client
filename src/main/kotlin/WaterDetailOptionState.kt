@@ -67,7 +67,7 @@ class WaterDetailOptionState : GraphicsOptionState {
             anInt5985++
             NamedIdRecord.method3517(73)
             NodeDeque.aModelLightingConfigArrayArray3335 = null
-            Class60.aRenderer1098 = null
+            LruByteCache.aRenderer1098 = null
             if (i <= 89) anInt5994 = -75
             SceneryDetailOptionState.aCircleRasterizer_6098 = null
             HeapInfoRecord.aCircleRasterizer_4938 = null

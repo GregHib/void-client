@@ -88,7 +88,7 @@ object MapSceneRenderer {
     fun method386(i: Byte) {
         anInt621++
         if (i.toInt() != -106) method386(21.toByte())
-        CharCountUtil.aClass60_225!!.method587(i + 9)
+        CharCountUtil.aLruByteCache_225!!.method587(i + 9)
     }
 
     @JvmStatic

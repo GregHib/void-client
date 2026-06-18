@@ -23,23 +23,23 @@ class ParticleGeometry internal constructor(`is`: IntArray?, is_1_: IntArray?, i
     companion object {
         var anInt4411: Int = 0
         var anInt4413: Int = 0
-        var aClass60_4417: Class60? = Class60(50)
+        var aLruByteCache_4417: LruByteCache? = LruByteCache(50)
         var aFontMetaRef_4418: FontMetaRef? = FontMetaRef(33, 8)
 
         @JvmStatic
         fun method3488(i: Int) {
             if (i < 25) method3489(30)
             aFontMetaRef_4418 = null
-            aClass60_4417 = null
+            aLruByteCache_4417 = null
         }
 
         fun method3489(i: Int) {
-            Class60.aRenderer1098!!.xa((IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!.method1764(-32350).toFloat() * 0.1f + 0.7f) * 1.1523438f)
+            LruByteCache.aRenderer1098!!.xa((IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!.method1764(-32350).toFloat() * 0.1f + 0.7f) * 1.1523438f)
             anInt4413++
-            Class60.aRenderer1098!!.ZA(LocDefinitionCache.anInt3439, 0.69921875f, 1.2f, -200.0f, -240.0f, -200.0f)
-            Class60.aRenderer1098!!.L(LocDefinitionCache.anInt3444, -1, 0)
+            LruByteCache.aRenderer1098!!.ZA(LocDefinitionCache.anInt3439, 0.69921875f, 1.2f, -200.0f, -240.0f, -200.0f)
+            LruByteCache.aRenderer1098!!.L(LocDefinitionCache.anInt3444, -1, 0)
             val i_0_ = -35 / ((45 - i) / 44)
-            Class60.aRenderer1098!!.method3653(ParameterizedText.aCircleRasterizer_9571)
+            LruByteCache.aRenderer1098!!.method3653(ParameterizedText.aCircleRasterizer_9571)
         }
     }
 }

@@ -33,7 +33,7 @@ open class SceneLinkedListNode {
         @JvmStatic
         fun method2375(i: Int) {
             anInt3972++
-            SocketStreamWorker.aClass60_2671!!.method590(0)
+            SocketStreamWorker.aLruByteCache_2671!!.method590(0)
             if (i != 16127) anInt3971 = -113
         }
 

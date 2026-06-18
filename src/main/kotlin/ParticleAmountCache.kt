@@ -6,12 +6,12 @@ import SceneTilePlaneManager.method259
 class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_2842: Js5Archive?
     var anInt2845: Int = 0
-    private var aClass60_2848: Class60? = Class60(64)
+    private var aLruByteCache_2848: LruByteCache? = LruByteCache(64)
 
     fun method1587(i: Int, i_0_: Int) {
-        if (i_0_ != 3758) aClass60_2848 = null
-        synchronized(aClass60_2848!!) {
-            aClass60_2848!!.method578(2, i)
+        if (i_0_ != 3758) aLruByteCache_2848 = null
+        synchronized(aLruByteCache_2848!!) {
+            aLruByteCache_2848!!.method578(2, i)
         }
         anInt2841++
     }
@@ -19,27 +19,27 @@ class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, 
     fun method1588(i: Int, i_1_: Int): ParticleAmountConfig {
         anInt2847++
         var particleAmountConfig: ParticleAmountConfig?
-        synchronized(aClass60_2848!!) {
-            particleAmountConfig = aClass60_2848!!.method583(i_1_.toLong(), -126) as ParticleAmountConfig?
+        synchronized(aLruByteCache_2848!!) {
+            particleAmountConfig = aLruByteCache_2848!!.method583(i_1_.toLong(), -126) as ParticleAmountConfig?
         }
         if (particleAmountConfig != null) return particleAmountConfig
         val `is`: ByteArray?
         synchronized(aJs5Archive_2842!!) {
             `is` = aJs5Archive_2842.method410(-1860, 16, i_1_)
-            if (i >= -17) aClass60_2848 = null
+            if (i >= -17) aLruByteCache_2848 = null
         }
         particleAmountConfig = ParticleAmountConfig()
         if (`is` != null) particleAmountConfig.method1253(Buffer(`is`), true)
-        synchronized(aClass60_2848!!) {
-            aClass60_2848!!.method582(particleAmountConfig, i_1_.toLong(), (-124).toByte())
+        synchronized(aLruByteCache_2848!!) {
+            aLruByteCache_2848!!.method582(particleAmountConfig, i_1_.toLong(), (-124).toByte())
         }
         return particleAmountConfig
     }
 
     fun method1589(i: Byte) {
         anInt2843++
-        synchronized(aClass60_2848!!) {
-            aClass60_2848!!.method590(0)
+        synchronized(aLruByteCache_2848!!) {
+            aLruByteCache_2848!!.method590(0)
         }
         if (i < 126) method1588(-98, -35)
     }
@@ -47,8 +47,8 @@ class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, 
     fun method1590(i: Int) {
         anInt2846++
         if (i != 0) this.anInt2845 = -97
-        synchronized(aClass60_2848!!) {
-            aClass60_2848!!.method587(i xor 0x6b.inv())
+        synchronized(aLruByteCache_2848!!) {
+            aLruByteCache_2848!!.method587(i xor 0x6b.inv())
         }
     }
 
@@ -66,17 +66,17 @@ class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, 
         var anInt2840: Int = 0
         var anInt2841: Int = 0
         var anInt2843: Int = 0
-        var aClass60_2844: Class60? = Class60(64)
+        var aLruByteCache_2844: LruByteCache? = LruByteCache(64)
         var anInt2846: Int = 0
         var anInt2847: Int = 0
         @JvmStatic
         fun method1585(i: Int) {
             if (i != -1) method1585(-34)
-            aClass60_2844 = null
+            aLruByteCache_2844 = null
         }
 
         fun method1586(bool: Boolean, i: Byte, string: String?) {
-            if (i >= -51) aClass60_2844 = null
+            if (i >= -51) aLruByteCache_2844 = null
             anInt2840++
             method259(-1, 113, bool, string, -1)
         }

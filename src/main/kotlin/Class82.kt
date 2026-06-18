@@ -31,7 +31,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
     var anInt1439: Int = 0
 
     init {
-        Class60(64)
+        LruByteCache(64)
         try {
             aJs5Archive_1436 = js5Archive
             this.anInt1439 = aJs5Archive_1436!!.method407(0, 15)
@@ -395,8 +395,8 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
                             return
                         }
                         if (string.startsWith("cachespace")) {
-                            method94(("I(s): " + FontMetaRef.aClass60_4327!!.method581(-18529) + "/" + FontMetaRef.aClass60_4327!!.method577(-4)), -101)
-                            method94(("I(m): " + ParticleGeometry.aClass60_4417!!.method581(-18529) + "/" + ParticleGeometry.aClass60_4417!!.method577(i.toInt() xor 0x4d)), 127)
+                            method94(("I(s): " + FontMetaRef.aLruByteCache_4327!!.method581(-18529) + "/" + FontMetaRef.aLruByteCache_4327!!.method577(-4)), -101)
+                            method94(("I(m): " + ParticleGeometry.aLruByteCache_4417!!.method581(-18529) + "/" + ParticleGeometry.aLruByteCache_4417!!.method577(i.toInt() xor 0x4d)), 127)
                             method94(("O(s): " + Exception_Sub1.aModelHeaderCache_112!!.aSizeBoundedSoftCache_3288.method1350(126.toByte()) + "/" + Exception_Sub1.aModelHeaderCache_112!!.aSizeBoundedSoftCache_3288.method1339(100)), i + 203)
                             return
                         }

@@ -56,8 +56,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     var anInt7496: Int
     @JvmField
     var anInt7497: Int
-    private val aClass60_7498: Class60
-    private val aClass60_7499: Class60
+    private val aLruByteCache_7498: LruByteCache
+    private val aLruByteCache_7499: LruByteCache
     @JvmField
     var anInt7500: Int
     @JvmField
@@ -375,13 +375,13 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         if (i_94_ == -1) method3723(i, i_91_, i_92_, i_95_, class318_sub9_sub2.anInt8790, 1)
         else {
             if (anInt7512 != i_94_) {
-                var abstractModelRenderer = aClass60_7499.method583(i_94_.toLong(), 117) as AbstractModelRenderer?
+                var abstractModelRenderer = aLruByteCache_7499.method583(i_94_.toLong(), 117) as AbstractModelRenderer?
                 if (abstractModelRenderer == null) {
                     val `is` = method3719(i_94_)
                     if (`is` != null) {
                         val i_96_ = (if (method3727(i_94_)) 64 else this.anInt7501)
                         abstractModelRenderer = this.method3662(i_96_, `is`, 94.toByte(), 0, i_96_, i_96_)
-                        aClass60_7499.method582(abstractModelRenderer, i_94_.toLong(), (-121).toByte())
+                        aLruByteCache_7499.method582(abstractModelRenderer, i_94_.toLong(), (-121).toByte())
                     } else return
                 }
                 anInt7512 = i_94_
@@ -1278,14 +1278,14 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
 
     fun method3718(i: Int): IntArray? {
         var class348_sub25: ImageBoxBlurScroller?
-        synchronized(aClass60_7498) {
-            class348_sub25 = aClass60_7498.method583(i.toLong(), 77) as ImageBoxBlurScroller?
+        synchronized(aLruByteCache_7498) {
+            class348_sub25 = aLruByteCache_7498.method583(i.toLong(), 77) as ImageBoxBlurScroller?
             if (class348_sub25 == null) {
                 if (!this.aRenderConfig4579!!.method4(-7953, i)) return null
                 val class12 = this.aRenderConfig4579!!.method3(i, -6662)
                 val i_354_ = (if (class12!!.aBoolean199 || aBoolean7489) 64 else this.anInt7501)
                 class348_sub25 = ImageBoxBlurScroller(i, i_354_, this.aRenderConfig4579!!.method5(true, i, 0.7f, i_354_, i_354_, 71), class12.anInt200 != 1)
-                aClass60_7498.method582(class348_sub25, i.toLong(), (-122).toByte())
+                aLruByteCache_7498.method582(class348_sub25, i.toLong(), (-122).toByte())
             }
         }
         class348_sub25!!.aBoolean6882 = true
@@ -1322,14 +1322,14 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
 
     fun method3719(i: Int): IntArray? {
         var class348_sub25: ImageBoxBlurScroller?
-        synchronized(aClass60_7498) {
-            class348_sub25 = (aClass60_7498.method583(i.toLong() or 0x7fffffffffffffffL.inv(), 107) as ImageBoxBlurScroller?)
+        synchronized(aLruByteCache_7498) {
+            class348_sub25 = (aLruByteCache_7498.method583(i.toLong() or 0x7fffffffffffffffL.inv(), 107) as ImageBoxBlurScroller?)
             if (class348_sub25 == null) {
                 if (!this.aRenderConfig4579!!.method4(-7953, i)) return null
                 val class12 = this.aRenderConfig4579!!.method3(i, -6662)
                 val i_356_ = (if (class12!!.aBoolean199 || aBoolean7489) 64 else this.anInt7501)
                 class348_sub25 = ImageBoxBlurScroller(i, i_356_, this.aRenderConfig4579!!.method6(-21540, i_356_, 0.7f, i, true, i_356_), class12.anInt200 != 1)
-                aClass60_7498.method582(class348_sub25, i.toLong() or 0x7fffffffffffffffL.inv(), (-126).toByte())
+                aLruByteCache_7498.method582(class348_sub25, i.toLong() or 0x7fffffffffffffffL.inv(), (-126).toByte())
             }
         }
         class348_sub25!!.aBoolean6882 = true
@@ -1419,13 +1419,13 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         if (i_379_ != 0 && i_380_ != 0) {
             if (i_382_ != 65535 && !(this.aRenderConfig4579!!.method3(i_382_, -6662)!!.aBoolean209)) {
                 if (anInt7512 != i_382_) {
-                    var abstractModelRenderer = (aClass60_7499.method583(i_382_.toLong(), 97) as AbstractModelRenderer?)
+                    var abstractModelRenderer = (aLruByteCache_7499.method583(i_382_.toLong(), 97) as AbstractModelRenderer?)
                     if (abstractModelRenderer == null) {
                         val `is` = method3719(i_382_)
                         if (`is` == null) return
                         val i_386_ = (if (method3727(i_382_)) 64 else this.anInt7501)
                         abstractModelRenderer = this.method3662(i_386_, `is`, 94.toByte(), 0, i_386_, i_386_)
-                        aClass60_7499.method582(abstractModelRenderer, i_382_.toLong(), (-100).toByte())
+                        aLruByteCache_7499.method582(abstractModelRenderer, i_382_.toLong(), (-100).toByte())
                     }
                     anInt7512 = i_382_
                     aAbstractModelRenderer_7513 = abstractModelRenderer
@@ -1859,7 +1859,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
 
     override fun method3630(bool: Boolean) {
         aBoolean7489 = bool
-        aClass60_7498.method590(0)
+        aLruByteCache_7498.method590(0)
     }
 
     override fun method3650(i: Int) {
@@ -2065,7 +2065,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
 
     override fun method3696(i: Int) {
         this.anInt7501 = i
-        aClass60_7498.method590(0)
+        aLruByteCache_7498.method590(0)
     }
 
     override fun method3669(canvas: Canvas?, i: Int, i_578_: Int) {
@@ -2133,10 +2133,10 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         this.anInt7494 = 3500
         this.anInt7507 = 0
         this.anInt7478 = 78642
-        aClass60_7499 = Class60(16)
+        aLruByteCache_7499 = LruByteCache(16)
         anInt7512 = -1
         try {
-            aClass60_7498 = Class60(256)
+            aLruByteCache_7498 = LruByteCache(256)
             this.aClass101_Sub1_7492 = MatrixCameraTransform()
             method3631(1)
             method3659(0)
@@ -2374,7 +2374,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
 
     override fun method3646(i: Int) {
         val i_634_ = i - anInt7466
-        var `object` = aClass60_7498.method588(-5052)
+        var `object` = aLruByteCache_7498.method588(-5052)
         while (`object` != null) {
             val class348_sub25 = `object` as ImageBoxBlurScroller
             if (class348_sub25.aBoolean6882) {
@@ -2387,11 +2387,11 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
                 }
                 class348_sub25.aBoolean6882 = false
             }
-            `object` = aClass60_7498.method579(-117)
+            `object` = aLruByteCache_7498.method579(-117)
         }
         anInt7466 = i
-        aClass60_7499.method578(2, 5)
-        aClass60_7498.method578(2, 5)
+        aLruByteCache_7499.method578(2, 5)
+        aLruByteCache_7498.method578(2, 5)
     }
 
     override fun method3694(): Boolean {
@@ -2428,8 +2428,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3663() {
-        aClass60_7498.method590(0)
-        aClass60_7499.method590(0)
+        aLruByteCache_7498.method590(0)
+        aLruByteCache_7499.method590(0)
     }
 
     override fun method3679(i: Int, i_640_: Int): Int {

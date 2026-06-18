@@ -3,14 +3,14 @@
 */
 class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_9_: Js5Archive?) {
     private var aJs5Archive_2048: Js5Archive? = null
-    private val aClass60_2050 = Class60(64)
+    private val aLruByteCache_2050 = LruByteCache(64)
     var aJs5Archive_2054: Js5Archive? = null
     fun method1203(i: Byte, i_3_: Int): SkeletalAnimFrameLoader {
         anInt2056++
         if (i.toInt() != 33) aJs5Archive_2048 = null
         var skeletalAnimFrameLoader: SkeletalAnimFrameLoader?
-        synchronized(aClass60_2050) {
-            skeletalAnimFrameLoader = aClass60_2050.method583(i_3_.toLong(), -58) as SkeletalAnimFrameLoader?
+        synchronized(aLruByteCache_2050) {
+            skeletalAnimFrameLoader = aLruByteCache_2050.method583(i_3_.toLong(), -58) as SkeletalAnimFrameLoader?
         }
         if (skeletalAnimFrameLoader != null) return skeletalAnimFrameLoader
         val `is`: ByteArray?
@@ -20,15 +20,15 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
         skeletalAnimFrameLoader = SkeletalAnimFrameLoader()
         skeletalAnimFrameLoader.aModelDefinitionLoader_475 = this
         if (`is` != null) skeletalAnimFrameLoader.method346(i.toInt().inv(), Buffer(`is`))
-        synchronized(aClass60_2050) {
-            aClass60_2050.method582(skeletalAnimFrameLoader, i_3_.toLong(), (-109).toByte())
+        synchronized(aLruByteCache_2050) {
+            aLruByteCache_2050.method582(skeletalAnimFrameLoader, i_3_.toLong(), (-109).toByte())
         }
         return skeletalAnimFrameLoader
     }
 
     fun method1204(i: Int) {
-        synchronized(aClass60_2050) {
-            aClass60_2050.method587(-93)
+        synchronized(aLruByteCache_2050) {
+            aLruByteCache_2050.method587(-93)
         }
         anInt2049++
         if (i != 0) aJs5Archive_2048 = null
@@ -37,16 +37,16 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
     fun method1206(i: Byte) {
         if (i.toInt() != -37) aJs5Archive_2048 = null
         anInt2051++
-        synchronized(aClass60_2050) {
-            aClass60_2050.method590(0)
+        synchronized(aLruByteCache_2050) {
+            aLruByteCache_2050.method590(0)
         }
     }
 
     fun method1207(i: Int, i_7_: Int) {
         anInt2055++
         if (i == -17452) {
-            synchronized(aClass60_2050) {
-                aClass60_2050.method578(i + 17454, i_7_)
+            synchronized(aLruByteCache_2050) {
+                aLruByteCache_2050.method578(i + 17454, i_7_)
             }
         }
     }

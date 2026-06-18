@@ -3493,7 +3493,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             while (class348_sub42_sub13 != null) {
                 if (class348_sub42_sub13.anInt9615 > 1) {
                     class348_sub42_sub13.anInt9615 = 0
-                    KeyboardLayoutCache.aClass60_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry).aLong9600, (-124).toByte())
+                    KeyboardLayoutCache.aLruByteCache_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry).aLong9600, (-124).toByte())
                     class348_sub42_sub13.aLinkedNodeListIterator_9621.method1009(2110355138)
                 }
                 class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(46.toByte()) as ContactList?)

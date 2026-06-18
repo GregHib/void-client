@@ -466,8 +466,8 @@ class Class79 {
             }
             val l = (var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong()
             var class64: Class64?
-            synchronized(this.aBufferedMessageQueue_1348!!.aClass60_3590!!) {
-                class64 = this.aBufferedMessageQueue_1348!!.aClass60_3590!!.method583(l, 80) as Class64?
+            synchronized(this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!) {
+                class64 = this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!.method583(l, 80) as Class64?
             }
             var npcDefinition: NpcDefinition? = null
             if (this.anInt1366 != -1) npcDefinition = npcDefinitionCache!!.method1983(this.anInt1366, 32)
@@ -543,8 +543,8 @@ class Class79 {
                 }
                 if (aByte1405.toInt() != 0) class64.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
                 class64.s(i_43_)
-                synchronized(this.aBufferedMessageQueue_1348!!.aClass60_3590!!) {
-                    this.aBufferedMessageQueue_1348!!.aClass60_3590!!.method582(class64, (this.anInt1344 or (var_renderer.anInt4567 shl 16)).toLong(), (-125).toByte())
+                synchronized(this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!) {
+                    this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!.method582(class64, (this.anInt1344 or (var_renderer.anInt4567 shl 16)).toLong(), (-125).toByte())
                 }
             }
             val class64_82_ = class64.method614(4.toByte(), i_43_, true)
@@ -639,8 +639,8 @@ class Class79 {
             var i_99_ = i_97_
             if (widgetDefinition != null && i_95_ != -1) i_99_ = i_99_ or widgetDefinition.method263(i_94_, 97, i_95_, true)
             var class64: Class64?
-            synchronized(this.aBufferedMessageQueue_1348!!.aClass60_3592) {
-                class64 = ((this.aBufferedMessageQueue_1348!!.aClass60_3592.method583((var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as Class64?)
+            synchronized(this.aBufferedMessageQueue_1348!!.aLruByteCache_3592) {
+                class64 = ((this.aBufferedMessageQueue_1348!!.aLruByteCache_3592.method583((var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as Class64?)
             }
             if (class64 == null || i_99_ != (class64.ua() and i_99_)) {
                 if (class64 != null) i_99_ = i_99_ or class64.ua()
@@ -691,8 +691,8 @@ class Class79 {
                 }
                 if (aByte1405.toInt() != 0) class64.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
                 class64.s(i_99_)
-                synchronized(this.aBufferedMessageQueue_1348!!.aClass60_3592) {
-                    this.aBufferedMessageQueue_1348!!.aClass60_3592.method582(class64, (var_renderer.anInt4567 shl 16 or this.anInt1344).toLong(), (-96).toByte())
+                synchronized(this.aBufferedMessageQueue_1348!!.aLruByteCache_3592) {
+                    this.aBufferedMessageQueue_1348!!.aLruByteCache_3592.method582(class64, (var_renderer.anInt4567 shl 16 or this.anInt1344).toLong(), (-96).toByte())
                 }
             }
             if (widgetDefinition != null && i_95_ != -1) class64 = widgetDefinition.method269(-9, class64, i_94_, i, i_99_, i_95_)

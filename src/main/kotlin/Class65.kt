@@ -3,19 +3,19 @@
 */
 class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_1141: Js5Archive?
-    private val aClass60_1145 = Class60(256)
+    private val aLruByteCache_1145 = LruByteCache(256)
     fun method694(i: Int) {
         anInt1140++
         if (i != -1007) method700(14, 98)
-        synchronized(aClass60_1145) {
-            aClass60_1145.method587(i + 883)
+        synchronized(aLruByteCache_1145) {
+            aLruByteCache_1145.method587(i + 883)
         }
     }
 
     fun method695(bool: Boolean) {
         if (bool != true) aFontMetaRef_1144 = null
-        synchronized(aClass60_1145) {
-            aClass60_1145.method590(0)
+        synchronized(aLruByteCache_1145) {
+            aLruByteCache_1145.method590(0)
         }
         anInt1139++
     }
@@ -23,8 +23,8 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
     fun method697(i: Int, i_3_: Int) {
         if (i_3_ == 26) {
             anInt1142++
-            synchronized(aClass60_1145) {
-                aClass60_1145.method578(i_3_ xor 0x18, i)
+            synchronized(aLruByteCache_1145) {
+                aLruByteCache_1145.method578(i_3_ xor 0x18, i)
             }
         }
     }
@@ -33,8 +33,8 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
         anInt1143++
         val i_9_ = -128 / ((-3 - i_8_) / 49)
         var class348_sub42_sub1: ParamMap?
-        synchronized(aClass60_1145) {
-            class348_sub42_sub1 = aClass60_1145.method583(i.toLong(), -101) as ParamMap?
+        synchronized(aLruByteCache_1145) {
+            class348_sub42_sub1 = aLruByteCache_1145.method583(i.toLong(), -101) as ParamMap?
         }
         if (class348_sub42_sub1 != null) return class348_sub42_sub1
         val `is`: ByteArray?
@@ -43,8 +43,8 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
         }
         class348_sub42_sub1 = ParamMap()
         if (`is` != null) class348_sub42_sub1.method3168(Buffer(`is`), (-101).toByte())
-        synchronized(aClass60_1145) {
-            aClass60_1145.method582(class348_sub42_sub1, i.toLong(), (-114).toByte())
+        synchronized(aLruByteCache_1145) {
+            aLruByteCache_1145.method582(class348_sub42_sub1, i.toLong(), (-114).toByte())
         }
         return class348_sub42_sub1
     }

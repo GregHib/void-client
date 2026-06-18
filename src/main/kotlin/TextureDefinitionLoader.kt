@@ -4,17 +4,17 @@ import Class367_Sub1.Companion.method3533
 * Visit http://jode.sourceforge.net/
 */
 class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_4_: Js5Archive?) {
-    private var aClass60_1963 = Class60(64)
+    private var aLruByteCache_1963 = LruByteCache(64)
     @JvmField
     var aJs5Archive_1965: Js5Archive? = null
     private val aJs5Archive_1971: Js5Archive?
     @JvmField
-    var aClass60_1976: Class60 = Class60(64)
+    var aLruByteCache_1976: LruByteCache = LruByteCache(64)
     fun method1173(i: Byte, i_0_: Int): MapSceneIconDef? {
         anInt1964++
         var mapSceneIconDef: MapSceneIconDef?
-        synchronized(aClass60_1963) {
-            mapSceneIconDef = aClass60_1963.method583(i_0_.toLong(), 118) as MapSceneIconDef?
+        synchronized(aLruByteCache_1963) {
+            mapSceneIconDef = aLruByteCache_1963.method583(i_0_.toLong(), 118) as MapSceneIconDef?
         }
         if (mapSceneIconDef != null) return mapSceneIconDef
         val `is`: ByteArray?
@@ -25,52 +25,52 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
         if (i.toInt() != 31) return null
         mapSceneIconDef.aTextureDefinitionLoader_2851 = this
         if (`is` != null) mapSceneIconDef.method1597((-114).toByte(), Buffer(`is`))
-        synchronized(aClass60_1963) {
-            aClass60_1963.method582(mapSceneIconDef, i_0_.toLong(), (-108).toByte())
+        synchronized(aLruByteCache_1963) {
+            aLruByteCache_1963.method582(mapSceneIconDef, i_0_.toLong(), (-108).toByte())
         }
         return mapSceneIconDef
     }
 
     fun method1174(i: Byte) {
-        synchronized(aClass60_1963) {
-            aClass60_1963.method587(-87)
+        synchronized(aLruByteCache_1963) {
+            aLruByteCache_1963.method587(-87)
         }
         anInt1969++
-        synchronized(this.aClass60_1976) {
+        synchronized(this.aLruByteCache_1976) {
             if (i > -89) {
                 /* empty */
-            } else this.aClass60_1976.method587(-79)
+            } else this.aLruByteCache_1976.method587(-79)
         }
     }
 
     fun method1175(i: Byte) {
-        synchronized(aClass60_1963) {
-            aClass60_1963.method590(i + -125)
+        synchronized(aLruByteCache_1963) {
+            aLruByteCache_1963.method590(i + -125)
         }
         anInt1967++
         if (i.toInt() == 125) {
-            synchronized(this.aClass60_1976) {
-                this.aClass60_1976.method590(0)
+            synchronized(this.aLruByteCache_1976) {
+                this.aLruByteCache_1976.method590(0)
             }
         }
     }
 
     fun method1176(i: Int, i_1_: Byte) {
         if (i_1_ < 31) Companion.method1177((-119).toByte())
-        synchronized(aClass60_1963) {
-            aClass60_1963.method578(2, i)
+        synchronized(aLruByteCache_1963) {
+            aLruByteCache_1963.method578(2, i)
         }
         anInt1968++
-        synchronized(this.aClass60_1976) {
-            this.aClass60_1976.method578(2, i)
+        synchronized(this.aLruByteCache_1976) {
+            this.aLruByteCache_1976.method578(2, i)
         }
     }
 
     fun method1178(i: Int, i_2_: Int, i_3_: Int) {
         anInt1972++
         if (i_2_ != 1) aBoundsConstraintEntry_1966 = null
-        aClass60_1963 = Class60(i_3_)
-        this.aClass60_1976 = Class60(i)
+        aLruByteCache_1963 = LruByteCache(i_3_)
+        this.aLruByteCache_1976 = LruByteCache(i)
     }
 
     init {

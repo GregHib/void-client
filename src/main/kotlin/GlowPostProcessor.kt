@@ -152,11 +152,11 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             method174(50, -30742)
             method865(-8186, 5)
             method1323(5, 26603)
-            TextureMipDescriptor.aClass60_4346!!.method578(i + -3, 5)
-            MaterialTypeMarker.aClass60_6517!!.method578(2, 5)
-            TerrainTileShape.aClass60_8807!!.method578(i xor 0x7, 5)
-            SkeletalAnimFrameLoader.aClass60_463!!.method578(2, 5)
-            Class66.aClass60_1174!!.method578(2, 5)
+            TextureMipDescriptor.aLruByteCache_4346!!.method578(i + -3, 5)
+            MaterialTypeMarker.aLruByteCache_6517!!.method578(2, 5)
+            TerrainTileShape.aLruByteCache_8807!!.method578(i xor 0x7, 5)
+            SkeletalAnimFrameLoader.aLruByteCache_463!!.method578(2, 5)
+            Class66.aLruByteCache_1174!!.method578(2, 5)
         }
 
         fun method1417(i: Int, js5Archive: Js5Archive, i_7_: Int): SoundBankPatch? {

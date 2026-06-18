@@ -7,7 +7,7 @@ object ModelDataCache {
     @JvmField
     var anInt354: Int = 0
     @JvmField
-    var aClass60_355: Class60? = Class60(260)
+    var aLruByteCache_355: LruByteCache? = LruByteCache(260)
     @JvmField
     var anInt356: Int = 0
     @JvmField
@@ -20,15 +20,15 @@ object ModelDataCache {
     @JvmStatic
     fun method296(i: Byte) {
         if (i.toInt() != -99) method298(false, 24, -128, 22, -7)
-        aClass60_355 = null
+        aLruByteCache_355 = null
         aByteArrayArray358 = null
         aClass318_Sub1_Sub3Array357 = null
     }
 
     @JvmStatic
     fun method297(bool: Boolean) {
-        if (bool != false) aClass60_355 = null
-        WorldMapElement.aClass60_4636!!.method590(0)
+        if (bool != false) aLruByteCache_355 = null
+        WorldMapElement.aLruByteCache_4636!!.method590(0)
         anInt356++
     }
 

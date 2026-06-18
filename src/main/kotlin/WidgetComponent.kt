@@ -304,7 +304,7 @@ class WidgetComponent {
 
     fun method425(var_renderer: Renderer, i: Byte): Sprite? {
         anInt767++
-        var var_sprite = SceneryDetailOptionState.aClass60_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
+        var var_sprite = SceneryDetailOptionState.aLruByteCache_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
         if (var_sprite != null) return var_sprite
         val spriteImage = SpriteImage.method1521(GroundDecorEntity.aJs5Archive_8755!!, this.anInt756, 0)
         if (spriteImage == null) return null
@@ -337,7 +337,7 @@ class WidgetComponent {
             i_12_++
         }
         var_sprite = var_renderer.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772)
-        SceneryDetailOptionState.aClass60_6096!!.method582(var_sprite, this.anInt830.toLong(), (-104).toByte())
+        SceneryDetailOptionState.aLruByteCache_6096!!.method582(var_sprite, this.anInt830.toLong(), (-104).toByte())
         return var_sprite
     }
 
@@ -378,7 +378,7 @@ class WidgetComponent {
                 val i_25_ = i
                 if (widgetDefinition != null) i = i or widgetDefinition.method263(i_24_, 106, i_21_, true)
                 val l = (this.anInt753 + ((this.anInt770 shl 16) + (var_renderer!!.anInt4567 shl 29))).toLong()
-                var class64 = ParticleGeometry.aClass60_4417!!.method583(l, -90) as Class64?
+                var class64 = ParticleGeometry.aLruByteCache_4417!!.method583(l, -90) as Class64?
                 if (class64 == null || var_renderer.method3667(class64.ua(), i) != 0) {
                     if (class64 != null) i = var_renderer.method3679(i, class64.ua())
                     val class124 = ParticleConfigParser.method2277(0, (ScatterTextureNode.aJs5Archive_9365!!), this.anInt753, -1)
@@ -388,7 +388,7 @@ class WidgetComponent {
                     }
                     if (class124.anInt1830 < 13) class124.method1092(2, 114)
                     class64 = var_renderer.method3625(class124, i, Gl3dTexture.anInt8628, 64, 768)
-                    ParticleGeometry.aClass60_4417!!.method582(class64, l, (-125).toByte())
+                    ParticleGeometry.aLruByteCache_4417!!.method582(class64, l, (-125).toByte())
                 }
                 if (widgetDefinition != null) class64 = widgetDefinition.method269(-101, class64, i_24_, i_22_, i, i_21_)
                 class64!!.s(i_25_)
@@ -807,7 +807,7 @@ class WidgetComponent {
         anInt819++
         ContactList.aBoolean9616 = false
         val l = ((this.anInt809.toLong() shl 40) + (((if (this.aBoolean790) 1L else 0L) shl 38) + ((this.anInt672.toLong() shl 36) + ((if (this.aBoolean745) 1L else 0L) shl 35))) + (this.anInt756.toLong() + ((if (!this.aBoolean735) 0L else 1L) shl 39)))
-        var abstractModelRenderer = FontMetaRef.aClass60_4327!!.method583(l, -71) as AbstractModelRenderer?
+        var abstractModelRenderer = FontMetaRef.aLruByteCache_4327!!.method583(l, -71) as AbstractModelRenderer?
         if (i > -27) method434(true)
         if (abstractModelRenderer != null) return abstractModelRenderer
         val spriteImage = SpriteImage.method1521(GroundDecorEntity.aJs5Archive_8755!!, this.anInt756, 0)
@@ -823,7 +823,7 @@ class WidgetComponent {
         if (this.anInt672 >= 2) spriteImage.method1515(16777215)
         if (this.anInt809 != 0) spriteImage.method1511(0xffffff.inv() or this.anInt809)
         abstractModelRenderer = var_renderer.method3691(spriteImage, true)
-        FontMetaRef.aClass60_4327!!.method580(31902, abstractModelRenderer, l, (abstractModelRenderer!!.method971() * abstractModelRenderer.method969() * 4))
+        FontMetaRef.aLruByteCache_4327!!.method580(31902, abstractModelRenderer, l, (abstractModelRenderer!!.method971() * abstractModelRenderer.method969() * 4))
         return abstractModelRenderer
     }
 
@@ -833,10 +833,10 @@ class WidgetComponent {
             anInt804++
             if (this.anInt705 == -1) return null
             val l = ((this.anInt693.toLong() shl 16 and (65535L shl 16)) or ((this.anInt733.toLong() shl 32 and (65535L shl 32)) or (this.anInt674.toLong() shl 48 and (65535L shl 48))) or (this.anInt705.toLong() and 0xffffL))
-            var particleSystemRenderer = (EdgeDetectTextureNode.aClass60_9171!!.method583(l, 78) as ParticleSystemRenderer?)
+            var particleSystemRenderer = (EdgeDetectTextureNode.aLruByteCache_9171!!.method583(l, 78) as ParticleSystemRenderer?)
             if (particleSystemRenderer == null) {
                 particleSystemRenderer = class84!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, spriteStore!!, this.anInt705)
-                EdgeDetectTextureNode.aClass60_9171!!.method582(particleSystemRenderer, l, (-120).toByte())
+                EdgeDetectTextureNode.aLruByteCache_9171!!.method582(particleSystemRenderer, l, (-120).toByte())
             }
             return particleSystemRenderer
         } catch (runtimeexception: RuntimeException) {
@@ -969,11 +969,11 @@ class WidgetComponent {
             method3102(22385)
             MapSceneRenderer.method386((-106).toByte())
             AudioResampler.method1271(0)
-            TextureMipDescriptor.aClass60_4346!!.method587(-108)
-            MaterialTypeMarker.aClass60_6517!!.method587(-109)
-            TerrainTileShape.aClass60_8807!!.method587(-113)
-            SkeletalAnimFrameLoader.aClass60_463!!.method587(-83)
-            Class66.aClass60_1174!!.method587(-91)
+            TextureMipDescriptor.aLruByteCache_4346!!.method587(-108)
+            MaterialTypeMarker.aLruByteCache_6517!!.method587(-109)
+            TerrainTileShape.aLruByteCache_8807!!.method587(-113)
+            SkeletalAnimFrameLoader.aLruByteCache_463!!.method587(-83)
+            Class66.aLruByteCache_1174!!.method587(-91)
             val i_17_ = 54 / ((26 - i) / 53)
         }
 

@@ -3,12 +3,12 @@
 */
 class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_4085: Js5Archive?
-    private var aClass60_4087: Class60? = Class60(64)
+    private var aLruByteCache_4087: LruByteCache? = LruByteCache(64)
     fun method2600(i: Int, i_0_: Int): EmoteDefinition {
         anInt4084++
         var emoteDefinition: EmoteDefinition?
-        synchronized(aClass60_4087!!) {
-            emoteDefinition = aClass60_4087!!.method583(i.toLong(), -67) as EmoteDefinition?
+        synchronized(aLruByteCache_4087!!) {
+            emoteDefinition = aLruByteCache_4087!!.method583(i.toLong(), -67) as EmoteDefinition?
         }
         if (emoteDefinition != null) return emoteDefinition
         if (i_0_ != 28364) anInt4086 = 117
@@ -18,15 +18,15 @@ class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int
         }
         emoteDefinition = EmoteDefinition()
         if (`is` != null) emoteDefinition.method1924(Buffer(`is`), (-127).toByte())
-        synchronized(aClass60_4087!!) {
-            aClass60_4087!!.method582(emoteDefinition, i.toLong(), (-114).toByte())
+        synchronized(aLruByteCache_4087!!) {
+            aLruByteCache_4087!!.method582(emoteDefinition, i.toLong(), (-114).toByte())
         }
         return emoteDefinition
     }
 
     fun method2601(i: Byte) {
-        synchronized(aClass60_4087!!) {
-            aClass60_4087!!.method590(0)
+        synchronized(aLruByteCache_4087!!) {
+            aLruByteCache_4087!!.method590(0)
             val i_1_ = -46 / ((i - 3) / 47)
         }
         anInt4088++
@@ -34,16 +34,16 @@ class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int
 
     fun method2602(i: Int) {
         anInt4089++
-        synchronized(aClass60_4087!!) {
-            aClass60_4087!!.method587(-91)
-            if (i != 0) aClass60_4087 = null
+        synchronized(aLruByteCache_4087!!) {
+            aLruByteCache_4087!!.method587(-91)
+            if (i != 0) aLruByteCache_4087 = null
         }
     }
 
     fun method2603(i: Int, i_2_: Int) {
-        synchronized(aClass60_4087!!) {
+        synchronized(aLruByteCache_4087!!) {
             if (i_2_ != 11) return
-            aClass60_4087!!.method578(2, i)
+            aLruByteCache_4087!!.method578(2, i)
         }
         anInt4083++
     }

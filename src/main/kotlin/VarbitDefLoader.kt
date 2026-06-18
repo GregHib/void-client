@@ -4,38 +4,38 @@ import GrowableStringList.Companion.method1359
 * Visit http://jode.sourceforge.net/
 */
 class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
-    private var aClass60_2594: Class60? = Class60(64)
+    private var aLruByteCache_2594: LruByteCache? = LruByteCache(64)
     private val aJs5Archive_2597: Js5Archive?
     fun method1442(i: Int, i_0_: Byte) {
         anInt2598++
-        synchronized(aClass60_2594!!) {
-            if (i_0_.toInt() != 1) aClass60_2594 = null
-            aClass60_2594!!.method578(2, i)
+        synchronized(aLruByteCache_2594!!) {
+            if (i_0_.toInt() != 1) aLruByteCache_2594 = null
+            aLruByteCache_2594!!.method578(2, i)
         }
     }
 
     fun method1443(i: Int) {
         anInt2595++
         val i_1_ = 14 % ((-39 - i) / 51)
-        synchronized(aClass60_2594!!) {
-            aClass60_2594!!.method587(-80)
+        synchronized(aLruByteCache_2594!!) {
+            aLruByteCache_2594!!.method587(-80)
         }
     }
 
     fun method1444(i: Int, i_2_: Int) {
         val i_3_ = -6 % ((67 - i_2_) / 47)
         anInt2591++
-        synchronized(aClass60_2594!!) {
-            aClass60_2594!!.method590(0)
-            aClass60_2594 = Class60(i)
+        synchronized(aLruByteCache_2594!!) {
+            aLruByteCache_2594!!.method590(0)
+            aLruByteCache_2594 = LruByteCache(i)
         }
     }
 
     fun method1445(i: Int) {
         anInt2592++
         if (i == 64) {
-            synchronized(aClass60_2594!!) {
-                aClass60_2594!!.method590(0)
+            synchronized(aLruByteCache_2594!!) {
+                aLruByteCache_2594!!.method590(0)
             }
         }
     }
@@ -43,8 +43,8 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
     fun method1446(i: Int, i_4_: Int): HitsplatDefinition? {
         anInt2593++
         var hitsplatDefinition: HitsplatDefinition?
-        synchronized(aClass60_2594!!) {
-            hitsplatDefinition = aClass60_2594!!.method583(i.toLong(), 76) as HitsplatDefinition?
+        synchronized(aLruByteCache_2594!!) {
+            hitsplatDefinition = aLruByteCache_2594!!.method583(i.toLong(), 76) as HitsplatDefinition?
         }
         if (hitsplatDefinition != null) return hitsplatDefinition
         val `is`: ByteArray?
@@ -54,8 +54,8 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
         hitsplatDefinition = HitsplatDefinition()
         if (i_4_ != -1) return null
         if (`is` != null) hitsplatDefinition.method1191(i_4_ xor 0x800.inv(), Buffer(`is`))
-        synchronized(aClass60_2594!!) {
-            aClass60_2594!!.method582(hitsplatDefinition, i.toLong(), (-105).toByte())
+        synchronized(aLruByteCache_2594!!) {
+            aLruByteCache_2594!!.method582(hitsplatDefinition, i.toLong(), (-105).toByte())
         }
         return hitsplatDefinition
     }

@@ -7,17 +7,17 @@ import SoundBankPatch.Companion.method2929
 class TextureCache internal constructor(var_ha_Sub2: OpenGlRenderer?, var_renderConfig: RenderConfig?) {
     private val aHa_Sub2_4355: OpenGlRenderer?
     private val aRenderConfig4359: RenderConfig?
-    private var aClass60_4361: Class60? = Class60(256)
+    private var aLruByteCache_4361: LruByteCache? = LruByteCache(256)
 
     fun method3463(i: Byte) {
         anInt4360++
-        aClass60_4361!!.method590(0)
-        if (i.toInt() != -110) aClass60_4361 = null
+        aLruByteCache_4361!!.method590(0)
+        if (i.toInt() != -110) aLruByteCache_4361 = null
     }
 
     fun method3467(i: Int, i_4_: Int): GlTexture2D? {
         anInt4357++
-        val `object` = aClass60_4361!!.method583(i.toLong(), -127)
+        val `object` = aLruByteCache_4361!!.method583(i.toLong(), -127)
         if (`object` != null) return `object` as GlTexture2D
         if (!aRenderConfig4359!!.method4(-7953, i)) return null
         val class12 = aRenderConfig4359.method3(i, -6662)
@@ -34,14 +34,14 @@ class TextureCache internal constructor(var_ha_Sub2: OpenGlRenderer?, var_render
         }
         class258_sub3.method1965(class12.aBoolean215, class12.aBoolean217, 10243)
         if (i_4_ != 256) method3466(22)
-        aClass60_4361!!.method582(class258_sub3, i.toLong(), (-114).toByte())
+        aLruByteCache_4361!!.method582(class258_sub3, i.toLong(), (-114).toByte())
         return class258_sub3
     }
 
     fun method3469(i: Int) {
         if (i == 8218) {
             anInt4353++
-            aClass60_4361!!.method578(2, 5)
+            aLruByteCache_4361!!.method578(2, 5)
         }
     }
 

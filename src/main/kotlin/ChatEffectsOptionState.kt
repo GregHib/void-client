@@ -43,19 +43,19 @@ class ChatEffectsOptionState : GraphicsOptionState {
 
     override fun method1714(i: Int, i_24_: Int): Int {
         anInt5866++
-        if (Class60.method576(i_24_, 29)) {
+        if (LruByteCache.method576(i_24_, 29)) {
             if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-97).toByte()) && !HeadIconRenderer.method1210((-113).toByte(), this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
             if (this.aClass348_Sub51_3136.aClass239_Sub8_7254!!.method1751(-32350) == 1) return 3
         }
         if (i_24_ == i) return 3
-        if (Class60.method576(i_24_, i xor 0x56)) return 2
+        if (LruByteCache.method576(i_24_, i xor 0x56)) return 2
         return 1
     }
 
     fun method1735(bool: Boolean): Boolean {
         if (bool != false) anInt5871 = -86
         anInt5858++
-        return Class60.method576(this.anInt3138, 29)
+        return LruByteCache.method576(this.anInt3138, 29)
     }
 
     companion object {
@@ -154,7 +154,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
                         if (AbstractTileShape.anIntArray6547!![i_26_] == i) return LoadingScreenState.aRenderableEntryArray2636!![i_26_]
                     }
                 }
-                var renderableEntry = SoundCacheState.aClass60_4139!!.method583(i.toLong(), -92) as? RenderableEntry?
+                var renderableEntry = SoundCacheState.aLruByteCache_4139!!.method583(i.toLong(), -92) as? RenderableEntry?
                 if (renderableEntry != null) {
                     if (bool && renderableEntry.aFontDefinition_4333 == null) {
                         val class143 = RangedGraphicsOptionState.method1766((-76).toByte(), i, TerrainTile.aJs5Archive_4585!!)
@@ -170,7 +170,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
                 if (class143 == null) return null
                 if (!bool) renderableEntry = RenderableEntry(var_renderer!!.method3686(class143, spriteImages, true))
                 else renderableEntry = RenderableEntry(var_renderer!!.method3686(class143, spriteImages, true), class143)
-                SoundCacheState.aClass60_4139!!.method582(renderableEntry, i.toLong(), (-109).toByte())
+                SoundCacheState.aLruByteCache_4139!!.method582(renderableEntry, i.toLong(), (-109).toByte())
                 return renderableEntry
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("jaa.K(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))

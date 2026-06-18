@@ -79,8 +79,8 @@ open class LinkedListNode {
                 }
                 val l = ((i_10_.toLong() shl 48) + (i_7_ + ((i_9_ shl 16) + (i_11_ shl 24))).toLong() - -(i_6_.toLong() shl 32))
                 var class64_13_: Class64?
-                synchronized(WidgetRedrawRegion.aClass60_4254!!) {
-                    class64_13_ = WidgetRedrawRegion.aClass60_4254!!.method583(l, -64) as Class64?
+                synchronized(WidgetRedrawRegion.aLruByteCache_4254!!) {
+                    class64_13_ = WidgetRedrawRegion.aLruByteCache_4254!!.method583(l, -64) as Class64?
                 }
                 if (class64_13_ == null || (var_renderer!!.method3667(class64_13_.ua(), i_12_) != 0)) {
                     if (class64_13_ != null) i_12_ = var_renderer!!.method3679(i_12_, class64_13_.ua())
@@ -125,8 +125,8 @@ open class LinkedListNode {
                         i_25_++
                     }
                     class64_13_ = var_renderer!!.method3625(modelDefinition, i_12_, MapSceneDefLoader.anInt2482, 64, 768)
-                    synchronized(WidgetRedrawRegion.aClass60_4254!!) {
-                        WidgetRedrawRegion.aClass60_4254!!.method582(class64_13_, l, (-103).toByte())
+                    synchronized(WidgetRedrawRegion.aLruByteCache_4254!!) {
+                        WidgetRedrawRegion.aLruByteCache_4254!!.method582(class64_13_, l, (-103).toByte())
                     }
                 }
                 val i_31_ = class64.V()

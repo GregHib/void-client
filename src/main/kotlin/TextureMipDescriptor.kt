@@ -24,7 +24,7 @@ class TextureMipDescriptor internal constructor(var anInt4342: Int, var anInt434
     companion object {
         var aFloat4338: Float = 0f
         var anInt4345: Int = 0
-        var aClass60_4346: Class60? = Class60(4)
+        var aLruByteCache_4346: LruByteCache? = LruByteCache(4)
         var anInt4351: Int = 0
 
         fun method3460(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, `is`: IntArray, i_4_: Int, i_5_: Int) {
@@ -120,7 +120,7 @@ class TextureMipDescriptor internal constructor(var anInt4342: Int, var anInt434
                         method3461(i_29_ + 1, objects, i_26_, ls, 9455)
                     }
                     if (i_27_ == 9455) break
-                    aClass60_4346 = null
+                    aLruByteCache_4346 = null
                 } catch (runtimeexception: RuntimeException) {
                     throw method2929(runtimeexception, ("en.B(" + i + ',' + (if (objects != null) "{...}" else "null") + ',' + i_26_ + ',' + (if (ls != null) "{...}" else "null") + ',' + i_27_ + ')'))
                 }
@@ -130,7 +130,7 @@ class TextureMipDescriptor internal constructor(var anInt4342: Int, var anInt434
 
         @JvmStatic
         fun method3462(i: Int) {
-            aClass60_4346 = null
+            aLruByteCache_4346 = null
             if (i != -30094) method3461(-108, null, -26, null, 42)
         }
     }

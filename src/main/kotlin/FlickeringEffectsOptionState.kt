@@ -147,7 +147,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
         fun method1750(i: Int, i_6_: Int) {
             anInt5912++
             ParamMap.anInt9488 = i_6_
-            SocketStreamWorker.aClass60_2671!!.method590(0)
+            SocketStreamWorker.aLruByteCache_2671!!.method590(0)
         }
 
         @JvmStatic

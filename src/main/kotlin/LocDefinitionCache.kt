@@ -5,13 +5,13 @@ import WidgetDefinition.Companion.method268
 */
 class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     var anInt3429: Int = 0
-    private val aClass60_3433 = Class60(64)
+    private val aLruByteCache_3433 = LruByteCache(64)
     private val aJs5Archive_3442: Js5Archive?
     @JvmField
     var anInt3447: Int = 0
     fun method2032(i: Int, i_3_: Int) {
-        synchronized(aClass60_3433) {
-            aClass60_3433.method578(2, i)
+        synchronized(aLruByteCache_3433) {
+            aLruByteCache_3433.method578(2, i)
             if (i_3_ > -10) method2035(116, 38)
         }
         anInt3436++
@@ -19,9 +19,9 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
 
     fun method2033(i: Byte) {
         anInt3434++
-        synchronized(aClass60_3433) {
+        synchronized(aLruByteCache_3433) {
             if (i.toInt() != 46) method2037(-66)
-            aClass60_3433.method587(-94)
+            aLruByteCache_3433.method587(-94)
         }
     }
 
@@ -29,8 +29,8 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         if (bool != false) aShortArray3437 = null
         anInt3431++
         var locTypeConfig: LocTypeConfig?
-        synchronized(aClass60_3433) {
-            locTypeConfig = aClass60_3433.method583(i.toLong(), 64) as LocTypeConfig?
+        synchronized(aLruByteCache_3433) {
+            locTypeConfig = aLruByteCache_3433.method583(i.toLong(), 64) as LocTypeConfig?
         }
         if (locTypeConfig != null) return locTypeConfig
         val `is`: ByteArray?
@@ -42,15 +42,15 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         locTypeConfig.aLocDefinitionCache_3562 = this
         if (`is` != null) locTypeConfig.method2070(true, Buffer(`is`))
         locTypeConfig.method2067(-4860)
-        synchronized(aClass60_3433) {
-            aClass60_3433.method582(locTypeConfig, i.toLong(), (-111).toByte())
+        synchronized(aLruByteCache_3433) {
+            aLruByteCache_3433.method582(locTypeConfig, i.toLong(), (-111).toByte())
         }
         return locTypeConfig
     }
 
     fun method2037(i: Int) {
-        synchronized(aClass60_3433) {
-            aClass60_3433.method590(0)
+        synchronized(aLruByteCache_3433) {
+            aLruByteCache_3433.method590(0)
         }
         anInt3440++
     }

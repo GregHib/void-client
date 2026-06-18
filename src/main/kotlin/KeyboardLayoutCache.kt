@@ -3,13 +3,13 @@
 */
 class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_3299: Js5Archive?
-    private val aClass60_3303 = Class60(64)
+    private val aLruByteCache_3303 = LruByteCache(64)
     var anInt3305: Int = 0
     fun method1976(i: Int, i_1_: Int): KeyboardLayoutConfig {
         anInt3302++
         var keyboardLayoutConfig: KeyboardLayoutConfig?
-        synchronized(aClass60_3303) {
-            keyboardLayoutConfig = aClass60_3303.method583(i.toLong(), -51) as KeyboardLayoutConfig?
+        synchronized(aLruByteCache_3303) {
+            keyboardLayoutConfig = aLruByteCache_3303.method583(i.toLong(), -51) as KeyboardLayoutConfig?
         }
         if (keyboardLayoutConfig != null) return keyboardLayoutConfig
         val i_2_ = 44 % ((-41 - i_1_) / 33)
@@ -19,8 +19,8 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
         }
         keyboardLayoutConfig = KeyboardLayoutConfig()
         if (`is` != null) keyboardLayoutConfig.method1255(Buffer(`is`), -1)
-        synchronized(aClass60_3303) {
-            aClass60_3303.method582(keyboardLayoutConfig, i.toLong(), (-120).toByte())
+        synchronized(aLruByteCache_3303) {
+            aLruByteCache_3303.method582(keyboardLayoutConfig, i.toLong(), (-120).toByte())
         }
         return keyboardLayoutConfig
     }
@@ -38,7 +38,7 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
         @JvmField
         var aByteArray3300: ByteArray? = ByteArray(2048)
         @JvmField
-        var aClass60_3301: Class60? = Class60(30)
+        var aLruByteCache_3301: LruByteCache? = LruByteCache(30)
         var anInt3302: Int = 0
         @JvmField
         var aParticleSystemRenderer_3304: ParticleSystemRenderer? = null
@@ -47,7 +47,7 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
 
         @JvmStatic
         fun method1975(i: Byte) {
-            aClass60_3301 = null
+            aLruByteCache_3301 = null
             val i_0_ = -54 / ((i - 77) / 37)
             aParticleSystemRenderer_3304 = null
             aByteArray3300 = null

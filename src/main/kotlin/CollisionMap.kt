@@ -2,7 +2,7 @@ import NpcSummaryDefinition.Companion.method1166
 import TwoStateOptionState.Companion.method1842
 import BoundsConstraintEntry.Companion.method2057
 import SoundBankPatch.Companion.method2929
-import Class60.Companion.method589
+import LruByteCache.Companion.method589
 import Class75.Companion.method751
 import kotlin.math.max
 import kotlin.math.min

@@ -11,7 +11,7 @@ internal object PlayerAppearanceUpdateDecoder {
     @JvmField
     var aBoolean4542: Boolean = false
     @JvmField
-    var aClass60_4543: Class60? = Class60(8)
+    var aLruByteCache_4543: LruByteCache? = LruByteCache(8)
     @JvmField
     var anInt4544: Int = -1
     var anInt4545: Int = -1
@@ -33,7 +33,7 @@ internal object PlayerAppearanceUpdateDecoder {
     @JvmStatic
     fun method3613(i: Int) {
         if (i != 64) PlayerAppearanceUpdateDecoder.method3612(-7, null)
-        aClass60_4543 = null
+        aLruByteCache_4543 = null
     }
 
     @JvmStatic

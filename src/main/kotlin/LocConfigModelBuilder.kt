@@ -140,8 +140,8 @@ class LocConfigModelBuilder {
             if (anInt4498 != 128 || anInt4508 != 0) i_33_ = i_33_ or 0x5
             var class64: Class64?
             this.anInt4501 = this.anInt4501 or (var_renderer!!.anInt4567 shl 29)
-            synchronized(this.aMapElementDefinitionCache_4513!!.aClass60_3990) {
-                class64 = ((this.aMapElementDefinitionCache_4513!!.aClass60_3990.method583(this.anInt4501.toLong(), -122)) as Class64?)
+            synchronized(this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990) {
+                class64 = ((this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990.method583(this.anInt4501.toLong(), -122)) as Class64?)
             }
             if (class64 == null || var_renderer!!.method3667(class64.ua(), i_33_) != 0) {
                 if (class64 != null) i_33_ = var_renderer!!.method3679(i_33_, class64.ua())
@@ -167,8 +167,8 @@ class LocConfigModelBuilder {
                     }
                 }
                 class64.s(i_33_)
-                synchronized(this.aMapElementDefinitionCache_4513!!.aClass60_3990) {
-                    this.aMapElementDefinitionCache_4513!!.aClass60_3990.method582(class64, this.anInt4501.toLong(), (-113).toByte())
+                synchronized(this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990) {
+                    this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990.method582(class64, this.anInt4501.toLong(), (-113).toByte())
                 }
             }
             if (i_31_.toInt() != -68) return null

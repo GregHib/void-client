@@ -3525,7 +3525,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 class348_sub42_sub13 = (ContactEntry.aHashtable_9603!!.method3476(true) as? ContactList?)
                             }
                             if (class348_sub42_sub13 == null) {
-                                class348_sub42_sub13 = (KeyboardLayoutCache.aClass60_3301!!.method583(l, i.toInt() xor 0x3a) as? ContactList?)
+                                class348_sub42_sub13 = (KeyboardLayoutCache.aLruByteCache_3301!!.method583(l, i.toInt() xor 0x3a) as? ContactList?)
                                 if (class348_sub42_sub13 != null && !(class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601)) class348_sub42_sub13 = null
                                 if (class348_sub42_sub13 == null) class348_sub42_sub13 = (ContactList(class348_sub42_sub12.aString9601))
                                 ContactEntry.aHashtable_9603!!.method3483(71.toByte(), l, class348_sub42_sub13)
@@ -3591,7 +3591,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             }
                             var class105s = TimedRecordAccessor.aAbstractModelRendererArray7107
                             if (i_324_ != -1) {
-                                var abstractModelRendererS_326_ = ((TextureMipDescriptor.aClass60_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<AbstractModelRenderer?>?)
+                                var abstractModelRendererS_326_ = ((TextureMipDescriptor.aLruByteCache_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<AbstractModelRenderer?>?)
                                 if (abstractModelRendererS_326_ == null) {
                                     val spriteImages = SpriteImage.method1519(CameraRotationStub.aJs5Archive_322!!, i_324_, 0)
                                     if (spriteImages != null) {
@@ -3601,7 +3601,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             abstractModelRendererS_326_[i_327_] = (FacingDirectionNode.aRenderer6654!!.method3691(spriteImages[i_327_], true))
                                             i_327_++
                                         }
-                                        TextureMipDescriptor.aClass60_4346!!.method582(abstractModelRendererS_326_, i_324_.toLong(), (-94).toByte())
+                                        TextureMipDescriptor.aLruByteCache_4346!!.method582(abstractModelRendererS_326_, i_324_.toLong(), (-94).toByte())
                                     }
                                 }
                                 if (abstractModelRendererS_326_ != null && abstractModelRendererS_326_.size >= 2) class105s = abstractModelRendererS_326_
@@ -3631,7 +3631,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                     if (i_333_ == -1) i_333_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2923)
                                 } else i_333_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2923)
                                 if (i_333_ != -1) {
-                                    var abstractModelRenderers = (MaterialTypeMarker.aClass60_6517!!.method583(i_333_.toLong(), -45) as? Array<AbstractModelRenderer?>)
+                                    var abstractModelRenderers = (MaterialTypeMarker.aLruByteCache_6517!!.method583(i_333_.toLong(), -45) as? Array<AbstractModelRenderer?>)
                                     if (abstractModelRenderers == null) {
                                         val spriteImages = SpriteImage.method1519((CameraRotationStub.aJs5Archive_322!!), i_333_, 0)
                                         if (spriteImages != null) {
@@ -3641,7 +3641,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 abstractModelRenderers[i_334_] = (FacingDirectionNode.aRenderer6654!!.method3691(spriteImages[i_334_], true))
                                                 i_334_++
                                             }
-                                            MaterialTypeMarker.aClass60_6517!!.method582(abstractModelRenderers, i_333_.toLong(), (-101).toByte())
+                                            MaterialTypeMarker.aLruByteCache_6517!!.method582(abstractModelRenderers, i_333_.toLong(), (-101).toByte())
                                         }
                                     }
                                     if (abstractModelRenderers != null && abstractModelRenderers.size == 4) {

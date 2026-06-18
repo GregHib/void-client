@@ -104,7 +104,7 @@ class Class367_Sub1 internal constructor(var_ha_Sub3: NativeRenderer) : Abstract
         fun method3535(i: Int, i_11_: Int) {
             RefCountedHandle.anInt2275 = i
             anInt7282++
-            CharCountUtil.aClass60_225!!.method590(i_11_)
+            CharCountUtil.aLruByteCache_225!!.method590(i_11_)
         }
     }
 }

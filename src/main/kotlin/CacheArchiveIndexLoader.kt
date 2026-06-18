@@ -7,19 +7,19 @@ import java.awt.Point
  */
 class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_458: Js5Archive?
-    private val aClass60_460 = Class60(128)
+    private val aLruByteCache_460 = LruByteCache(128)
     fun method337(bool: Boolean, i: Int): CacheArchiveIndex {
         anInt457++
         var cacheArchiveIndex: CacheArchiveIndex?
-        synchronized(aClass60_460) {
-            cacheArchiveIndex = aClass60_460.method583(i.toLong(), 111) as CacheArchiveIndex?
+        synchronized(aLruByteCache_460) {
+            cacheArchiveIndex = aLruByteCache_460.method583(i.toLong(), 111) as CacheArchiveIndex?
         }
         if (cacheArchiveIndex != null) return cacheArchiveIndex
         val `is` = aJs5Archive_458!!.method410(-1860, method200(-107, i), method3013(i, bool))
         cacheArchiveIndex = CacheArchiveIndex()
         if (`is` != null) cacheArchiveIndex.method1069(0, Buffer(`is`))
-        synchronized(aClass60_460) {
-            aClass60_460.method582(cacheArchiveIndex, i.toLong(), (-102).toByte())
+        synchronized(aLruByteCache_460) {
+            aLruByteCache_460.method582(cacheArchiveIndex, i.toLong(), (-102).toByte())
         }
         return cacheArchiveIndex
     }

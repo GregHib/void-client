@@ -4,7 +4,7 @@ import SoundBankPatch.Companion.method2929
 * Visit http://jode.sourceforge.net/
 */
 class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, js5Archive_1_: Js5Archive?, interface15: Interface15?) {
-    private val aClass60_4362: Class60
+    private val aLruByteCache_4362: LruByteCache
     var anInt4364: Int = 0
     var anInt4365: Int = 0
     private var aJs5Archive_4368: Js5Archive? = null
@@ -13,7 +13,7 @@ class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, 
 
     fun method3471(i: Int, i_0_: Byte): ParameterizedText {
         anInt4363++
-        var class348_sub42_sub10 = aClass60_4362.method583(i.toLong(), 70) as ParameterizedText?
+        var class348_sub42_sub10 = aLruByteCache_4362.method583(i.toLong(), 70) as ParameterizedText?
         if (class348_sub42_sub10 != null) return class348_sub42_sub10
         val `is`: ByteArray?
         if (i >= 32768) `is` = aJs5Archive_4369!!.method410(-1860, 1, 0x7fff and i)
@@ -23,7 +23,7 @@ class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, 
         if (`is` != null) class348_sub42_sub10.method3218(Buffer(`is`), 0)
         if (i_0_ >= -86) method3473(-12)
         if (i >= 32768) class348_sub42_sub10.method3209(false)
-        aClass60_4362.method582(class348_sub42_sub10, i.toLong(), (-125).toByte())
+        aLruByteCache_4362.method582(class348_sub42_sub10, i.toLong(), (-125).toByte())
         return class348_sub42_sub10
     }
 
@@ -42,7 +42,7 @@ class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, 
     }
 
     init {
-        aClass60_4362 = Class60(64)
+        aLruByteCache_4362 = LruByteCache(64)
         anInterface15_4373 = null
         do {
             try {

@@ -10,12 +10,12 @@ import Class99.method881
 */
 class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_3319: Js5Archive?
-    private val aClass60_3321 = Class60(64)
+    private val aLruByteCache_3321 = LruByteCache(64)
     fun method1983(i: Int, i_9_: Int): NpcDefinition {
         anInt3320++
         var npcDefinition: NpcDefinition?
-        synchronized(aClass60_3321) {
-            npcDefinition = aClass60_3321.method583(i.toLong(), 69) as NpcDefinition?
+        synchronized(aLruByteCache_3321) {
+            npcDefinition = aLruByteCache_3321.method583(i.toLong(), 69) as NpcDefinition?
         }
         if (npcDefinition != null) return npcDefinition
         val `is`: ByteArray?
@@ -24,15 +24,15 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         }
         npcDefinition = NpcDefinition()
         if (`is` != null) npcDefinition.method1620(Buffer(`is`), -108)
-        synchronized(aClass60_3321) {
-            aClass60_3321.method582(npcDefinition, i.toLong(), (-109).toByte())
+        synchronized(aLruByteCache_3321) {
+            aLruByteCache_3321.method582(npcDefinition, i.toLong(), (-109).toByte())
         }
         return npcDefinition
     }
 
     fun method1984(i: Byte, i_10_: Int) {
-        synchronized(aClass60_3321) {
-            aClass60_3321.method578(2, i_10_)
+        synchronized(aLruByteCache_3321) {
+            aLruByteCache_3321.method578(2, i_10_)
         }
         anInt3315++
         if (i < 36) method1980(-32)
@@ -40,14 +40,14 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
 
     fun method1985(i: Int) {
         anInt3317++
-        synchronized(aClass60_3321) {
-            aClass60_3321.method590(i)
+        synchronized(aLruByteCache_3321) {
+            aLruByteCache_3321.method590(i)
         }
     }
 
     fun method1986(i: Byte) {
-        synchronized(aClass60_3321) {
-            aClass60_3321.method587(-112)
+        synchronized(aLruByteCache_3321) {
+            aLruByteCache_3321.method587(-112)
         }
         val i_11_ = 119 / ((i - 47) / 55)
         anInt3316++

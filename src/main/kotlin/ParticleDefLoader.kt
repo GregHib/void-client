@@ -5,13 +5,13 @@ import CacheEntryReference.Companion.method3194
 * Visit http://jode.sourceforge.net/
 */
 class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
-    private val aClass60_2458 = Class60(128)
+    private val aLruByteCache_2458 = LruByteCache(128)
     private val aJs5Archive_2461: Js5Archive?
     fun method1377(i: Int) {
         anInt2457++
         if (i != 2) method1376(null)
-        synchronized(aClass60_2458) {
-            aClass60_2458.method587(-125)
+        synchronized(aLruByteCache_2458) {
+            aLruByteCache_2458.method587(-125)
         }
     }
 
@@ -19,8 +19,8 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         anInt2460++
         if (bool != true) return null
         var hslColorConfig: HslColorConfig?
-        synchronized(aClass60_2458) {
-            hslColorConfig = aClass60_2458.method583(i.toLong(), 77) as HslColorConfig?
+        synchronized(aLruByteCache_2458) {
+            hslColorConfig = aLruByteCache_2458.method583(i.toLong(), 77) as HslColorConfig?
         }
         if (hslColorConfig != null) return hslColorConfig
         val `is`: ByteArray?
@@ -29,24 +29,24 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         }
         hslColorConfig = HslColorConfig()
         if (`is` != null) hslColorConfig.method290(Buffer(`is`), -1)
-        synchronized(aClass60_2458) {
-            aClass60_2458.method582(hslColorConfig, i.toLong(), (-124).toByte())
+        synchronized(aLruByteCache_2458) {
+            aLruByteCache_2458.method582(hslColorConfig, i.toLong(), (-124).toByte())
         }
         return hslColorConfig
     }
 
     fun method1381(bool: Boolean) {
-        synchronized(aClass60_2458) {
+        synchronized(aLruByteCache_2458) {
             if (bool != true) method1382(-96, 76)
-            aClass60_2458.method590(0)
+            aLruByteCache_2458.method590(0)
         }
         anInt2465++
     }
 
     fun method1383(i: Int, i_7_: Int) {
         anInt2467++
-        synchronized(aClass60_2458) {
-            aClass60_2458.method578(2, i_7_)
+        synchronized(aLruByteCache_2458) {
+            aLruByteCache_2458.method578(2, i_7_)
         }
         if (i != 32841) anInt2464 = 86
     }

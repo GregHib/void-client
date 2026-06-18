@@ -3,7 +3,7 @@ import CompositeRgbNoiseTexture.Companion.method573
 /* Class60 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_10_: Int = anInt1086) {
+class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int, i_10_: Int = anInt1086) {
     private val anInt1084: Int
     private var aLinkedNodeListIterator_1089: LinkedNodeListIterator? = LinkedNodeListIterator()
     private val aHashtable_1100: Hashtable

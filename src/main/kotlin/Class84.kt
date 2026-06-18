@@ -2,20 +2,20 @@
 * Visit http://jode.sourceforge.net/
 */
 class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
-    private val aClass60_1449 = Class60(16)
+    private val aLruByteCache_1449 = LruByteCache(16)
     private val aJs5Archive_1460: Js5Archive?
 
     fun method816(bool: Boolean) {
         anInt1455++
-        synchronized(aClass60_1449) {
+        synchronized(aLruByteCache_1449) {
             if (bool != false) method819(107.toByte(), 46)
-            aClass60_1449.method587(-119)
+            aLruByteCache_1449.method587(-119)
         }
     }
 
     fun method819(i: Byte, i_14_: Int) {
-        synchronized(aClass60_1449) {
-            aClass60_1449.method578(2, i_14_)
+        synchronized(aLruByteCache_1449) {
+            aLruByteCache_1449.method578(2, i_14_)
         }
         anInt1457++
     }
@@ -23,8 +23,8 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
     private fun method820(i: Int, i_15_: Int): ParticleConfigParser {
         anInt1458++
         var particleConfigParser: ParticleConfigParser?
-        synchronized(aClass60_1449) {
-            particleConfigParser = aClass60_1449.method583(i.toLong(), 116) as ParticleConfigParser?
+        synchronized(aLruByteCache_1449) {
+            particleConfigParser = aLruByteCache_1449.method583(i.toLong(), 116) as ParticleConfigParser?
         }
         if (particleConfigParser != null) return particleConfigParser!!
         val `is`: ByteArray?
@@ -33,15 +33,15 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
         }
         particleConfigParser = ParticleConfigParser()
         if (`is` != null) particleConfigParser!!.method2275(Buffer(`is`), (-123).toByte())
-        synchronized(aClass60_1449) {
-            aClass60_1449.method582(particleConfigParser, i.toLong(), (-106).toByte())
+        synchronized(aLruByteCache_1449) {
+            aLruByteCache_1449.method582(particleConfigParser, i.toLong(), (-106).toByte())
         }
         return particleConfigParser!!
     }
 
     fun method822(i: Byte) {
-        synchronized(aClass60_1449) {
-            aClass60_1449.method590(0)
+        synchronized(aLruByteCache_1449) {
+            aLruByteCache_1449.method590(0)
         }
         if (i >= -13) method825(14)
         anInt1452++
@@ -139,7 +139,7 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
 
         @JvmStatic
         fun method821(i: Int) {
-            SoundCacheState.aClass60_4139!!.method590(0)
+            SoundCacheState.aLruByteCache_4139!!.method590(0)
             val i_16_ = -67 / ((i - 39) / 33)
             anInt1459++
         }

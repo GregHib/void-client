@@ -6,12 +6,12 @@ import CameraConfigDefinition.Companion.method1920
 */
 class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, js5Archive: Js5Archive?, js5Archive_7_: Js5Archive?) {
     var aJs5Archive_3576: Js5Archive? = null
-    private var aClass60_3577: Class60? = Class60(64)
+    private var aLruByteCache_3577: LruByteCache? = LruByteCache(64)
     var aSceneProjector_3578: SceneProjector? = null
     var aBoolean3583: Boolean = false
     private val aJs5Archive_3585: Js5Archive?
-    var aClass60_3590: Class60? = Class60(50)
-    var aClass60_3592: Class60 = Class60(5)
+    var aLruByteCache_3590: LruByteCache? = LruByteCache(50)
+    var aLruByteCache_3592: LruByteCache = LruByteCache(5)
     var anInt3593: Int = 0
 
     fun method2072(i: Byte, bool: Boolean) {
@@ -27,60 +27,60 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
     fun method2073(i: Int, i_0_: Int) {
         this.anInt3593 = i_0_
         anInt3591++
-        synchronized(this.aClass60_3590!!) {
-            this.aClass60_3590!!.method590(0)
+        synchronized(this.aLruByteCache_3590!!) {
+            this.aLruByteCache_3590!!.method590(0)
         }
-        synchronized(this.aClass60_3592) {
-            this.aClass60_3592.method590(0)
+        synchronized(this.aLruByteCache_3592) {
+            this.aLruByteCache_3592.method590(0)
         }
         if (i != -25032) method2079(-66, 101)
     }
 
     fun method2074(i: Int) {
-        synchronized(this.aClass60_3590!!) {
-            this.aClass60_3590!!.method590(0)
+        synchronized(this.aLruByteCache_3590!!) {
+            this.aLruByteCache_3590!!.method590(0)
         }
         if (i < -94) {
             anInt3582++
-            synchronized(this.aClass60_3592) {
-                this.aClass60_3592.method590(0)
+            synchronized(this.aLruByteCache_3592) {
+                this.aLruByteCache_3592.method590(0)
             }
         }
     }
 
     fun method2076(i: Int, bool: Boolean) {
         anInt3589++
-        synchronized(aClass60_3577!!) {
-            aClass60_3577!!.method578(2, i)
+        synchronized(aLruByteCache_3577!!) {
+            aLruByteCache_3577!!.method578(2, i)
         }
-        synchronized(this.aClass60_3590!!) {
-            this.aClass60_3590!!.method578(2, i)
+        synchronized(this.aLruByteCache_3590!!) {
+            this.aLruByteCache_3590!!.method578(2, i)
         }
         if (bool != true) method2072(120.toByte(), true)
-        synchronized(this.aClass60_3592) {
-            this.aClass60_3592.method578(2, i)
+        synchronized(this.aLruByteCache_3592) {
+            this.aLruByteCache_3592.method578(2, i)
         }
     }
 
     fun method2078(i: Int) {
         anInt3579++
-        synchronized(aClass60_3577!!) {
-            if (i != -6080) this.aClass60_3590 = null
-            aClass60_3577!!.method590(i + 6080)
+        synchronized(aLruByteCache_3577!!) {
+            if (i != -6080) this.aLruByteCache_3590 = null
+            aLruByteCache_3577!!.method590(i + 6080)
         }
-        synchronized(this.aClass60_3590!!) {
-            this.aClass60_3590!!.method590(i + 6080)
+        synchronized(this.aLruByteCache_3590!!) {
+            this.aLruByteCache_3590!!.method590(i + 6080)
         }
-        synchronized(this.aClass60_3592) {
-            this.aClass60_3592.method590(0)
+        synchronized(this.aLruByteCache_3592) {
+            this.aLruByteCache_3592.method590(0)
         }
     }
 
     fun method2079(i: Int, i_6_: Int): Class79 {
         anInt3586++
         var class79: Class79?
-        synchronized(aClass60_3577!!) {
-            class79 = aClass60_3577!!.method583(i.toLong(), -104) as Class79?
+        synchronized(aLruByteCache_3577!!) {
+            class79 = aLruByteCache_3577!!.method583(i.toLong(), -104) as Class79?
         }
         if (class79 != null) return class79
         val `is`: ByteArray?
@@ -92,23 +92,23 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
         class79.aBufferedMessageQueue_1348 = this
         if (`is` != null) class79.method798(111, Buffer(`is`))
         class79.method799(-117)
-        synchronized(aClass60_3577!!) {
-            aClass60_3577!!.method582(class79, i.toLong(), (-102).toByte())
-            if (i_6_ != -1) aClass60_3577 = null
+        synchronized(aLruByteCache_3577!!) {
+            aLruByteCache_3577!!.method582(class79, i.toLong(), (-102).toByte())
+            if (i_6_ != -1) aLruByteCache_3577 = null
         }
         return class79
     }
 
     fun method2080(i: Int) {
         anInt3587++
-        synchronized(aClass60_3577!!) {
-            aClass60_3577!!.method587(-118)
+        synchronized(aLruByteCache_3577!!) {
+            aLruByteCache_3577!!.method587(-118)
         }
-        synchronized(this.aClass60_3590!!) {
-            this.aClass60_3590!!.method587(-100)
+        synchronized(this.aLruByteCache_3590!!) {
+            this.aLruByteCache_3590!!.method587(-100)
         }
-        synchronized(this.aClass60_3592) {
-            this.aClass60_3592.method587(-107)
+        synchronized(this.aLruByteCache_3592) {
+            this.aLruByteCache_3592.method587(-107)
         }
         if (i <= 122) method2075(-125, -46, 9)
     }

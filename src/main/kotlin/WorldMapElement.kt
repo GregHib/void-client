@@ -89,7 +89,7 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
         @JvmField
         var anInt4634: Int = 0
         @JvmField
-        var aClass60_4636: Class60? = Class60(64)
+        var aLruByteCache_4636: LruByteCache? = LruByteCache(64)
         @JvmField
         var anInt4638: Int = 0
         @JvmField
@@ -103,14 +103,14 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
             val class369 = PcmStreamBuffer.method2834((-127).toByte(), class348_sub49)
             val i_3_ = class348_sub49.readInt((-126).toByte())
             val i_4_ = class348_sub49.readInt((-126).toByte())
-            if (i != 16533) aClass60_4636 = null
+            if (i != 16533) aLruByteCache_4636 = null
             val i_5_ = class348_sub49.readUnsignedShort(842397944)
             return WorldMapAreaLabel(class369.aScreenAnchorAlignment_4968, class369.aTileRenderState_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_3_, i_4_, i_5_)
         }
 
         @JvmStatic
         fun method180(i: Int) {
-            aClass60_4636 = null
+            aLruByteCache_4636 = null
             if (i != -19960) method180(-71)
         }
 

@@ -15,7 +15,7 @@ class TerrainTileShape internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_: 
 
     override fun method2716(i: Int, f: Float) {
         this.aFloat6550 = f
-        if (i != -1) aClass60_8807 = null
+        if (i != -1) aLruByteCache_8807 = null
         anInt8803++
     }
 
@@ -33,7 +33,7 @@ class TerrainTileShape internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_: 
         @JvmField
         var anInt8806: Int = 0
         @JvmField
-        var aClass60_8807: Class60?
+        var aLruByteCache_8807: LruByteCache?
         @JvmField
         var anInt8808: Int = 0
         @JvmField
@@ -101,13 +101,13 @@ class TerrainTileShape internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_: 
 
         @JvmStatic
         fun method2728(i: Byte) {
-            if (i.toInt() != 9) aClass60_8807 = null
-            aClass60_8807 = null
+            if (i.toInt() != 9) aLruByteCache_8807 = null
+            aLruByteCache_8807 = null
             aTerrainTileArray8801 = null
         }
 
         init {
-            aClass60_8807 = Class60(8)
+            aLruByteCache_8807 = LruByteCache(8)
         }
     }
 }

@@ -19,7 +19,7 @@ class FontMetaRef internal constructor(private var anInt4326: Int, var anInt4323
         var anInt4322: Int = 0
         var anInt4324: Int = 0
         var anInt4325: Int = 0
-        var aClass60_4327: Class60? = Class60(3000000, 200)
+        var aLruByteCache_4327: LruByteCache? = LruByteCache(3000000, 200)
         var aBoolean4328: Boolean = false
         var aFont4329: Font? = null
 
@@ -39,7 +39,7 @@ class FontMetaRef internal constructor(private var anInt4326: Int, var anInt4323
         @JvmStatic
         fun method3457(bool: Boolean) {
             aFont4329 = null
-            aClass60_4327 = null
+            aLruByteCache_4327 = null
             if (bool != true) method3455(null, -16)
         }
     }

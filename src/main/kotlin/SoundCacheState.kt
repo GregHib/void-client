@@ -3,7 +3,7 @@
  */
 object SoundCacheState {
     var anInt4138: Int = 0
-    var aClass60_4139: Class60?
+    var aLruByteCache_4139: LruByteCache?
     var anInt4140: Int = 0
     var anInt4141: Int = -1
     @JvmField
@@ -12,14 +12,14 @@ object SoundCacheState {
 
     @JvmStatic
     fun method2640(bool: Boolean) {
-        aClass60_4139 = null
+        aLruByteCache_4139 = null
         aTerrainTileArray4142 = null
         if (bool != true) anInt4143 = 110
     }
 
     fun method2641(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
         anInt4140++
-        if (i_1_ >= -6) aClass60_4139 = null
+        if (i_1_ >= -6) aLruByteCache_4139 = null
         if (i < i_0_) {
             var i_4_ = i
             while (i_0_ > i_4_) {
@@ -48,7 +48,7 @@ object SoundCacheState {
     }
 
     init {
-        aClass60_4139 = Class60(20)
+        aLruByteCache_4139 = LruByteCache(20)
         anInt4143 = -1
     }
 }

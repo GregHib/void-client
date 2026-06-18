@@ -4,21 +4,21 @@
 class MaterialTextureCache(var_ha_Sub3: NativeRenderer?, var_renderConfig: RenderConfig?) {
     private val aHa_Sub3_4526: NativeRenderer?
     private val aRenderConfig4528: RenderConfig?
-    private val aClass60_4531 = Class60(256)
+    private val aLruByteCache_4531 = LruByteCache(256)
     fun method3585(i: Int) {
         anInt4530++
-        if (i == 7271) aClass60_4531.method590(0)
+        if (i == 7271) aLruByteCache_4531.method590(0)
     }
 
     fun method3586(i: Int) {
-        aClass60_4531.method578(2, 5)
+        aLruByteCache_4531.method578(2, 5)
         if (i != -16130) method3586(-94)
         anInt4527++
     }
 
     fun method3587(i: Byte, i_0_: Int): Interface18_Impl3? {
         anInt4529++
-        val `object` = aClass60_4531.method583(i_0_.toLong(), 107)
+        val `object` = aLruByteCache_4531.method583(i_0_.toLong(), 107)
         if (`object` != null) return `object` as Interface18_Impl3
         if (!aRenderConfig4528!!.method4(-7953, i_0_)) return null
         if (i > -30) anInt4532 = 37
@@ -35,7 +35,7 @@ class MaterialTextureCache(var_ha_Sub3: NativeRenderer?, var_renderConfig: Rende
             interface18_impl3 = aHa_Sub3_4526!!.method3839(i_1_, i_1_, -15137, class12.aByte205.toInt() != 0, `is`)!!
         }
         interface18_impl3.method66(class12.aBoolean217, class12.aBoolean215, 25688)
-        aClass60_4531.method582(interface18_impl3, i_0_.toLong(), (-107).toByte())
+        aLruByteCache_4531.method582(interface18_impl3, i_0_.toLong(), (-107).toByte())
         return interface18_impl3
     }
 

@@ -245,8 +245,8 @@ class ItemDefinition {
             var i_27_ = i
             if (widgetDefinition != null) i_27_ = i_27_ or widgetDefinition.method263(i_24_, 105, i_22_, true)
             var class64: Class64?
-            synchronized(this.aModelHeaderCache_2761!!.aClass60_3287) {
-                class64 = (this.aModelHeaderCache_2761!!.aClass60_3287.method583((var_renderer!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as Class64?
+            synchronized(this.aModelHeaderCache_2761!!.aLruByteCache_3287) {
+                class64 = (this.aModelHeaderCache_2761!!.aLruByteCache_3287.method583((var_renderer!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as Class64?
             }
             if (class64 == null || var_renderer!!.method3667(class64.ua(), i_27_) != 0) {
                 if (class64 != null) i_27_ = var_renderer!!.method3679(i_27_, class64.ua())
@@ -286,8 +286,8 @@ class ItemDefinition {
                     }
                 }
                 class64.s(i_27_)
-                synchronized(this.aModelHeaderCache_2761!!.aClass60_3287) {
-                    this.aModelHeaderCache_2761!!.aClass60_3287.method582(class64, (var_renderer.anInt4567 shl 29 or this.anInt2769).toLong(), (-111).toByte())
+                synchronized(this.aModelHeaderCache_2761!!.aLruByteCache_3287) {
+                    this.aModelHeaderCache_2761!!.aLruByteCache_3287.method582(class64, (var_renderer.anInt4567 shl 29 or this.anInt2769).toLong(), (-111).toByte())
                 }
             }
             if (widgetDefinition != null) class64 = widgetDefinition.method269(116, class64, i_24_, i_20_, i_27_, i_22_)

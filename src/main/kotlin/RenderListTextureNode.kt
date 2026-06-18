@@ -128,7 +128,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
             while (class348_sub42_sub13 != null) {
                 if (class348_sub42_sub13.anInt9615 > 1) {
                     class348_sub42_sub13.anInt9615 = 0
-                    KeyboardLayoutCache.aClass60_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry).aLong9600, (-108).toByte())
+                    KeyboardLayoutCache.aLruByteCache_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry).aLong9600, (-108).toByte())
                     class348_sub42_sub13.aLinkedNodeListIterator_9621.method1009(i xor 0x7dc976c2)
                 }
                 class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(51.toByte()) as ContactList?)
