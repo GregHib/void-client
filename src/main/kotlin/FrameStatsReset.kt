@@ -4,7 +4,7 @@ import ActorEntity.Companion.method2480
 import CombineTextureNode.Companion.method3089
 import RenderListTextureNode.Companion.method3153
 import CacheEntryReference.Companion.method3194
-import Class76.Companion.method773
+import SceneObjectSpawner.Companion.method773
 import Class99.method882
 
 // Decompiled by Jad v1.5.8f. Copyright 2001 Pavel Kouznetsov.
@@ -2319,7 +2319,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MouseInputTracker.anInt7455 = 0
             MapSceneIconDef.anInt2857 = 0
             Class84.anInt1459 = 0
-            Class76.anInt1281 = 0
+            SceneObjectSpawner.anInt1281 = 0
             NativeRenderer.anInt8033 = 0
             KeyEventNode.anInt4769 = 0
             TexGenMaterialPass.anInt6256 = 0
@@ -2538,7 +2538,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Direct3dModel.anInt5514 = 0
             Gl3dTexture.anInt8624 = 0
             OpenGlRenderer.anInt7677 = 0
-            Class76.anInt1284 = 0
+            SceneObjectSpawner.anInt1284 = 0
             LocConfigModelBuilder.anInt4495 = 0
             LoadingScreenState.anInt2627 = 0
             GlRenderDevice.anInt9874 = 0
@@ -2749,7 +2749,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Player.anInt10546 = 0
             MatrixCameraTransform.anInt5668 = 0
             AbstractRenderPass.anInt4482 = 0
-            Class76.anInt1278 = 0
+            SceneObjectSpawner.anInt1278 = 0
             GlRenderDevice.anInt9863 = 0
             Font.anInt4053 = 0
             ChatEffectsOptionState.anInt5861 = 0
@@ -3682,7 +3682,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7612 = 0
             AudioResampler.anInt2167 = 0
             Class367_Sub2.anInt7287 = 0
-            Class76.anInt1280 = 0
+            SceneObjectSpawner.anInt1280 = 0
             WorldMapElement.anInt4639 = 0
             PackedFlagsAccessor.anInt7099 = 0
             ConnectionStateType.anInt1022 = 0

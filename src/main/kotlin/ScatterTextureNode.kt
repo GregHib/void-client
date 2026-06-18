@@ -125,7 +125,7 @@ class ScatterTextureNode : AbstractProceduralTextureNode(0, true) {
         fun method3122(i: Byte): Array<NamedIdRecord?> {
             if (i < 86) aJs5Archive_9365 = null
             anInt9361++
-            return (arrayOf<NamedIdRecord?>(OggCacheStream.aNamedIdRecord_5271, Class367_Sub8.aNamedIdRecord_7361, SpriteArchiveLoader.aNamedIdRecord_382, GroundItemRenderState.aNamedIdRecord_1657, Class76.aNamedIdRecord_1279, WidgetRedrawRegion.aNamedIdRecord_4246))
+            return (arrayOf<NamedIdRecord?>(OggCacheStream.aNamedIdRecord_5271, Class367_Sub8.aNamedIdRecord_7361, SpriteArchiveLoader.aNamedIdRecord_382, GroundItemRenderState.aNamedIdRecord_1657, SceneObjectSpawner.aNamedIdRecord_1279, WidgetRedrawRegion.aNamedIdRecord_4246))
         }
 
         @JvmStatic

@@ -68,8 +68,8 @@ class CameraDistanceOptionState : GraphicsOptionState {
                 i_2_ = 4096
                 if (FloatBuffer.aBoolean9746) i_1_ = 2048
             }
-            if (Class76.aFloat1287 < i_1_.toFloat()) Class76.aFloat1287 = i_1_.toFloat()
-            if (Class76.aFloat1287 > i_2_.toFloat()) Class76.aFloat1287 = i_2_.toFloat()
+            if (SceneObjectSpawner.aFloat1287 < i_1_.toFloat()) SceneObjectSpawner.aFloat1287 = i_1_.toFloat()
+            if (SceneObjectSpawner.aFloat1287 > i_2_.toFloat()) SceneObjectSpawner.aFloat1287 = i_2_.toFloat()
             while ( /**/ResourceProvider.aFloat3938 >= 16384.0f) {
                 ResourceProvider.aFloat3938 -= 16384.0f
             }

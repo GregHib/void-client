@@ -46,7 +46,7 @@ abstract class NanoTimer {
             if (i.toInt() == -59) {
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub29_7229), 3)
                 AbstractProceduralTextureNode.method3038(i.toInt() xor 0x3a)
-                Class76.method773(true)
+                SceneObjectSpawner.method773(true)
                 RuntimeException_Sub1.aBoolean4604 = true
             }
         }

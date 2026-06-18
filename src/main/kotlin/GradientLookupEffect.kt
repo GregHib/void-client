@@ -370,7 +370,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
             IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub23_7231), 2)
             IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub29_7229), 1)
             method3038(-1)
-            Class76.method773(true)
+            SceneObjectSpawner.method773(true)
             RuntimeException_Sub1.aBoolean4604 = true
         }
 

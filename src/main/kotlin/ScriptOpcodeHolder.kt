@@ -83,7 +83,7 @@ object ScriptOpcodeHolder {
                     }
                     if (i_6_ >= 250) {
                         AsyncTaskHandle.aShortArray2579 = null
-                        Class76.anInt1285 = -1
+                        SceneObjectSpawner.anInt1285 = -1
                         return
                     }
                     if (`is`.size <= i_6_) {
@@ -96,11 +96,11 @@ object ScriptOpcodeHolder {
                 i_7_++
             }
             AsyncTaskHandle.aShortArray2579 = `is`
-            Class76.anInt1285 = i_6_
+            SceneObjectSpawner.anInt1285 = i_6_
             WidgetNodeLink.anInt2037 = 0
-            val strings = arrayOfNulls<String>(Class76.anInt1285)
+            val strings = arrayOfNulls<String>(SceneObjectSpawner.anInt1285)
             var i_10_ = 0
-            while (Class76.anInt1285 > i_10_) {
+            while (SceneObjectSpawner.anInt1285 > i_10_) {
                 strings[i_10_] = Exception_Sub1.aModelHeaderCache_112!!.method1940(123, `is`[i_10_].toInt()).aString2795
                 i_10_++
             }

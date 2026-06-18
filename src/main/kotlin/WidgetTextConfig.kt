@@ -311,10 +311,10 @@ class WidgetTextConfig {
                 if (class318_sub4.aBoolean6409) {
                     class318_sub4.aClass318_Sub1_6410 = class318_sub1
                     if (VoronoiNoiseTextureNode.aBoolean9121) {
-                        synchronized(PlayerSequenceSelector.aClass76_1208!!) {
-                            PlayerSequenceSelector.aClass76_1208!!.method774(class318_sub4, 18802)
+                        synchronized(PlayerSequenceSelector.aSceneObjectSpawner_1208!!) {
+                            PlayerSequenceSelector.aSceneObjectSpawner_1208!!.method774(class318_sub4, 18802)
                         }
-                    } else PlayerSequenceSelector.aClass76_1208!!.method774(class318_sub4, 18802)
+                    } else PlayerSequenceSelector.aSceneObjectSpawner_1208!!.method774(class318_sub4, 18802)
                 } else ScrollingNoiseTexture.method560(class318_sub4, 18)
             }
         }

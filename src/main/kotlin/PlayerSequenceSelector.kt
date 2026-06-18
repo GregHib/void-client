@@ -3,11 +3,11 @@
 */
 object PlayerSequenceSelector {
     @JvmField
-    var aClass76_1208: Class76?
+    var aSceneObjectSpawner_1208: SceneObjectSpawner?
     @JvmField
     var anInt1209: Int = 0
     @JvmField
-    var aClass76_1210: Class76?
+    var aSceneObjectSpawner_1210: SceneObjectSpawner?
     @JvmField
     var aBoolean1211: Boolean = false
     @JvmField
@@ -20,8 +20,8 @@ object PlayerSequenceSelector {
     @JvmStatic
     fun method728(bool: Boolean) {
         aClass209_1212 = null
-        aClass76_1208 = null
-        aClass76_1210 = null
+        aSceneObjectSpawner_1208 = null
+        aSceneObjectSpawner_1210 = null
         aBooleanArray1214 = null
         if (bool != true) aClass209_1212 = null
         aRectangleRegion_1213 = null
@@ -91,8 +91,8 @@ object PlayerSequenceSelector {
     }
 
     init {
-        aClass76_1210 = Class76(false)
-        aClass76_1208 = aClass76_1210
+        aSceneObjectSpawner_1210 = SceneObjectSpawner(false)
+        aSceneObjectSpawner_1208 = aSceneObjectSpawner_1210
         aClass209_1212 = UnusedToStringStub()
         aRectangleRegion_1213 = RectangleRegion(11, 0, 1, 2)
         aBooleanArray1214 = BooleanArray(8)

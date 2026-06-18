@@ -328,15 +328,15 @@ class Class88 {
                     } else if (NpcDefinition.anInt2955 == 8) {
                         if (PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 107)) {
                             PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 0, (-107).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                            Class76.Companion.anInt1288 = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
+                            SceneObjectSpawner.Companion.anInt1288 = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             NpcDefinition.anInt2955 = 9
                         }
                     } else {
                         if (NpcDefinition.anInt2955 == 9) {
                             val class348_sub49_sub2 = CircleRasterizer.aClass348_Sub49_Sub2_3813
                             if (BloomGraphicsOptionState.anInt5969 == 2) {
-                                if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(Class76.Companion.anInt1288, 93)) return
-                                PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(Class76.Companion.anInt1288, 0, 60.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
+                                if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(SceneObjectSpawner.Companion.anInt1288, 93)) return
+                                PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(SceneObjectSpawner.Companion.anInt1288, 0, 60.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
                                 class348_sub49_sub2.anInt7197 = 0
                                 AsyncTaskHandle.anInt2581 = class348_sub49_sub2.readUnsignedByte(255)
                                 MinimapSpriteRenderer.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
@@ -352,8 +352,8 @@ class Class88 {
                                 Exception_Sub1.aModelHeaderCache_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
                                 MapAreaDefinition.aBufferedMessageQueue_2529!!.method2072(88.toByte(), ModelBatchBase.aBoolean1900)
                             } else {
-                                if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(Class76.Companion.anInt1288, 107)) return
-                                PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(Class76.Companion.anInt1288, 0, 85.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
+                                if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(SceneObjectSpawner.Companion.anInt1288, 107)) return
+                                PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(SceneObjectSpawner.Companion.anInt1288, 0, 85.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
                                 class348_sub49_sub2.anInt7197 = 0
                                 AsyncTaskHandle.anInt2581 = class348_sub49_sub2.readUnsignedByte(255)
                                 MinimapSpriteRenderer.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
@@ -384,7 +384,7 @@ class Class88 {
                                     IndexedSprite.aServerConnectionInfo_5199!!.anInt2138 = (50000 + (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143))
                                     IndexedSprite.aServerConnectionInfo_5199!!.anInt2148 = (40000 + (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143))
                                 }
-                                if (Class8.aNamedIdRecord_165 != Class76.Companion.aNamedIdRecord_1279 && ((CacheStateResetter.aServerConnectionInfo_125!!.method1264(94.toByte(), GlElementArrayBuffer.aServerConnectionInfo_4839)) || (CacheStateResetter.aServerConnectionInfo_125!!.method1264(112.toByte(), (DirectionalLightTextureNode.aServerConnectionInfo_9443))))) SpriteRenderEntry.method3283(114)
+                                if (Class8.aNamedIdRecord_165 != SceneObjectSpawner.Companion.aNamedIdRecord_1279 && ((CacheStateResetter.aServerConnectionInfo_125!!.method1264(94.toByte(), GlElementArrayBuffer.aServerConnectionInfo_4839)) || (CacheStateResetter.aServerConnectionInfo_125!!.method1264(112.toByte(), (DirectionalLightTextureNode.aServerConnectionInfo_9443))))) SpriteRenderEntry.method3283(114)
                             }
                             if ((!RangeThresholdTextureNode.aBoolean9103 || RsaVarbitHandler.aBoolean4903) && !FrameBufferObject.aBoolean4888) {
                                 try {

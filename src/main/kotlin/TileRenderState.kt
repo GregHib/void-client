@@ -111,7 +111,7 @@ class TileRenderState {
                 anInt4230++
                 if (FacingDirectionNode.aRenderer6654 != null) {
                     if (GrayscaleNoiseTexture.aBoolean5300) method1406(true)
-                    PlayerSequenceSelector.aClass76_1208!!.method775(69.toByte())
+                    PlayerSequenceSelector.aSceneObjectSpawner_1208!!.method775(69.toByte())
                     method2433()
                     method464(i + -9865)
                     method2061(-127)

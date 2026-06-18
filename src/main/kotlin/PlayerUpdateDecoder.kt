@@ -1,6 +1,6 @@
 import ShadowQualityOptionState.Companion.method1791
 import AbstractProceduralTextureNode.Companion.method3038
-import Class76.Companion.method773
+import SceneObjectSpawner.Companion.method773
 
 /*
  * Class133

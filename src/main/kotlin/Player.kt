@@ -79,7 +79,7 @@ class Player : ProjectedGroundDecor() {
         val i_2_ = method2436(103.toByte())
         this.y = (256 * i_2_ + 512 * this.anIntArray10317!![0])
         this.x = (this.anIntArray10320!![0] * 512 + i_2_ * 256)
-        if (LocalPlayerState.aPlayer_1907 == this) Class76.method773(true)
+        if (LocalPlayerState.aPlayer_1907 == this) SceneObjectSpawner.method773(true)
         if (this.aClass318_Sub10_10327 != null) this.aClass318_Sub10_10327!!.method2529()
     }
 

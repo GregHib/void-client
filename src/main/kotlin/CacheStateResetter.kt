@@ -24,7 +24,7 @@ object CacheStateResetter {
         NpcConfig.aAbstractCameraTransform_905 = null
         Buffer.anInt7207 = -1
         WorldMapAreaLabel.anInt8583 = -1
-        HardCacheEntryReference.aClass76_10436!!.method775(69.toByte())
+        HardCacheEntryReference.aSceneObjectSpawner_10436!!.method775(69.toByte())
     }
 
     @JvmStatic

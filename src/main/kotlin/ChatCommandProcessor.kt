@@ -542,11 +542,11 @@ object ChatCommandProcessor {
                 val string = aStringArray1152!![--anInt1170]!!
                 val bool_63_ = anIntArray1149!![--anInt1173] == 1
                 method606(0, bool_63_, string)
-                anIntArray1149!![anInt1173++] = Class76.anInt1285
+                anIntArray1149!![anInt1173++] = SceneObjectSpawner.anInt1285
                 return
             }
             if (i == 5072) {
-                if (AsyncTaskHandle.aShortArray2579 == null || WidgetNodeLink.anInt2037 >= Class76.anInt1285) anIntArray1149!![anInt1173++] = -1
+                if (AsyncTaskHandle.aShortArray2579 == null || WidgetNodeLink.anInt2037 >= SceneObjectSpawner.anInt1285) anIntArray1149!![anInt1173++] = -1
                 else {
                     anIntArray1149!![anInt1173++] = (AsyncTaskHandle.aShortArray2579!![WidgetNodeLink.anInt2037++].toInt() and 0xffff)
                     return
@@ -1196,7 +1196,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5505) {
-                anIntArray1149!![anInt1173++] = Class76.aFloat1287.toInt() shr 3
+                anIntArray1149!![anInt1173++] = SceneObjectSpawner.aFloat1287.toInt() shr 3
                 return
             }
             if (i == 5506) {
@@ -1478,7 +1478,7 @@ object ChatCommandProcessor {
             if (i == 6012) {
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 method3038(-1)
-                Class76.method773(true)
+                SceneObjectSpawner.method773(true)
                 method243(37)
                 RenderNode.aBoolean9719 = false
                 return
@@ -4905,11 +4905,11 @@ object ChatCommandProcessor {
                     val string = aStringArray1152!![--anInt1170]
                     val i_470_ = anIntArray1149!![--anInt1173]
                     ParticleAmountCache.method1586(i_470_ == 1, (-108).toByte(), string)
-                    anIntArray1149!![anInt1173++] = Class76.anInt1285
+                    anIntArray1149!![anInt1173++] = SceneObjectSpawner.anInt1285
                     return
                 }
                 if (i == 4211) {
-                    if (AsyncTaskHandle.aShortArray2579 == null || WidgetNodeLink.anInt2037 >= Class76.anInt1285) anIntArray1149!![anInt1173++] = -1
+                    if (AsyncTaskHandle.aShortArray2579 == null || WidgetNodeLink.anInt2037 >= SceneObjectSpawner.anInt1285) anIntArray1149!![anInt1173++] = -1
                     else {
                         anIntArray1149!![anInt1173++] = (AsyncTaskHandle.aShortArray2579!![WidgetNodeLink.anInt2037++].toInt() and 0xffff)
                         return
@@ -4932,7 +4932,7 @@ object ChatCommandProcessor {
                     val i_473_ = anIntArray1149!![anInt1173 + 1]
                     val i_474_ = anIntArray1149!![anInt1173 + 2]
                     method259(i_474_, -125, i_472_ == 1, string, i_473_)
-                    anIntArray1149!![anInt1173++] = Class76.anInt1285
+                    anIntArray1149!![anInt1173++] = SceneObjectSpawner.anInt1285
                     return
                 }
                 if (i == 4215) {
@@ -4943,7 +4943,7 @@ object ChatCommandProcessor {
                     val i_476_ = anIntArray1149!![anInt1173 + 1]
                     val string_477_ = aStringArray1152!![anInt1170 + 1]
                     method1719(i_475_ == 1, string, string_477_, i_476_, -1)
-                    anIntArray1149!![anInt1173++] = Class76.anInt1285
+                    anIntArray1149!![anInt1173++] = SceneObjectSpawner.anInt1285
                     return
                 }
             } else if (i < 4400) {

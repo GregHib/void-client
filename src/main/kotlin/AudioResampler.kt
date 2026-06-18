@@ -176,8 +176,8 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
         }
 
         @JvmStatic
-        fun method1274(class76: Class76?) {
-            PlayerSequenceSelector.aClass76_1208 = class76
+        fun method1274(sceneObjectSpawner: SceneObjectSpawner?) {
+            PlayerSequenceSelector.aSceneObjectSpawner_1208 = sceneObjectSpawner
         }
 
         @JvmStatic

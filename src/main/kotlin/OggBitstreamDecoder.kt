@@ -129,7 +129,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
             FacingDirectionNode.aRenderer6654!!.method3630(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub2_7228!!.method1726(-32350) == 1)
             if (FacingDirectionNode.aRenderer6654!!.method3627()) WarpTextureNode.method3137(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) == 1, (-24).toByte())
             Class97.method873(Class367_Sub4.anInt7319 shr 3, 21719, FacingDirectionNode.aRenderer6654, RangeThresholdTextureNode.anInt9109 shr 3)
-            Class76.method773(true)
+            SceneObjectSpawner.method773(true)
             RenderNode.aBoolean9719 = false
             NativeLibraryUnloader.aMapSceneTileArray2974 = null
             RuntimeException_Sub1.aBoolean4604 = true

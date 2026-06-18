@@ -57,13 +57,13 @@ class OutputStream_Sub1 : OutputStream() {
                 LocalPlayerState.anInt1906 = LocalPlayerState.anInt1911
                 i_0_ = WidgetComponentNode.anInt4656
                 if (WeaveTextureNode.anInt9282 == 1) {
-                    var i_4_ = Class76.aFloat1287.toInt()
+                    var i_4_ = SceneObjectSpawner.aFloat1287.toInt()
                     if (IntKeyNode.anInt6979 shr 8 > i_4_) i_4_ = IntKeyNode.anInt6979 shr 8
                     if (SpotAnimDefinition.aBooleanArray2374!![4] && ModelHeaderCache.anIntArray3273!![4] + 128 > i_4_) i_4_ = ModelHeaderCache.anIntArray3273!![4] + 128
                     val i_5_ = ResourceProvider.aFloat3938.toInt() + RenderableGroup.anInt5016 and 0x3fff
                     WidgetDefinition.method268(i_4_, -200 + (CollisionMapAccessor.method2064((LocalPlayerState.aPlayer_1907!!.x), CompiledScriptCache.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_5_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, (i_4_ shr 3) * 3 + 600 shl 2)
                 } else if (WeaveTextureNode.anInt9282 == 4) {
-                    var i_6_ = Class76.aFloat1287.toInt()
+                    var i_6_ = SceneObjectSpawner.aFloat1287.toInt()
                     if (i_6_ < IntKeyNode.anInt6979 shr 8) i_6_ = IntKeyNode.anInt6979 shr 8
                     if (SpotAnimDefinition.aBooleanArray2374!![4] && (i_6_ < ModelHeaderCache.anIntArray3273!![4] + 128)) i_6_ = 128 + ModelHeaderCache.anIntArray3273!![4]
                     val i_7_ = ResourceProvider.aFloat3938.toInt() and 0x3fff

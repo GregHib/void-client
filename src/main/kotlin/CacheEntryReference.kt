@@ -91,7 +91,7 @@ abstract class CacheEntryReference internal constructor(@JvmField var anInt9545:
                 GlslMaterialPass.anInt6246 = IntKeyNode.anInt6981 shl 9
                 CompositeRgbNoiseTexture.anInt8685 = CollisionMapAccessor.anInt3550 shl 9
             } else CameraSplineNode.method2954(62.toByte())
-            Class76.method773(true)
+            SceneObjectSpawner.method773(true)
         }
 
         @JvmStatic

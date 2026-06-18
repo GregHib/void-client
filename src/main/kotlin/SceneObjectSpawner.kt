@@ -3,7 +3,7 @@ import ScrollingNoiseTexture.Companion.method560
 /* Class76 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class76 internal constructor(bool: Boolean) {
+class SceneObjectSpawner internal constructor(bool: Boolean) {
     @JvmField
     var aDoublyLinkedNodeList_1282: DoublyLinkedNodeList = DoublyLinkedNodeList()
     var aBoolean1283: Boolean = false

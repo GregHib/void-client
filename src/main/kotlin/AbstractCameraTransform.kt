@@ -162,7 +162,7 @@ public abstract class AbstractCameraTransform {
                     val class110_sub1 = WorldMapImageBuilder.aClass110_Sub1Array1146!![GameDisplayManager.anInt2834]
                     if (class110_sub1 == null || class110_sub1.anInt5788 != -1) GameDisplayManager.anInt2834++
                     else {
-                        if (PingHostListHolder.aClass348_Sub26_2332 == null) PingHostListHolder.aClass348_Sub26_2332 = (Class76.aHostPingThread_1286!!.method1302(i xor 0x1967.inv(), class110_sub1.aString5794!!))
+                        if (PingHostListHolder.aClass348_Sub26_2332 == null) PingHostListHolder.aClass348_Sub26_2332 = (SceneObjectSpawner.aHostPingThread_1286!!.method1302(i xor 0x1967.inv(), class110_sub1.aString5794!!))
                         val i_29_ = (PingHostListHolder.aClass348_Sub26_2332!!.anInt6887)
                         if (i_29_ == -1) break
                         class110_sub1.anInt5788 = i_29_

@@ -44,7 +44,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
         @JvmField
         var anInt10435: Int = 0
         @JvmField
-        var aClass76_10436: Class76? = Class76(true)
+        var aSceneObjectSpawner_10436: SceneObjectSpawner? = SceneObjectSpawner(true)
         @JvmField
         var aRgbColorPalette_10437: RgbColorPalette? = RgbColorPalette(0, 3)
         @JvmField
@@ -1796,7 +1796,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             aSceneProjector_10434 = null
             if (i > 38) {
                 aLongArrayArrayArray10431 = null
-                aClass76_10436 = null
+                aSceneObjectSpawner_10436 = null
                 aRgbColorPalette_10437 = null
             }
         }

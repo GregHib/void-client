@@ -472,7 +472,7 @@ public abstract class AbstractModel {
                 if (class348_sub42_sub10.aBoolean9562 && class348_sub42_sub10.method3219(98).lowercase(Locale.getDefault()).indexOf(string) != -1) {
                     if (i_52_ >= 50) {
                         AsyncTaskHandle.aShortArray2579 = null
-                        Class76.anInt1285 = -1
+                        SceneObjectSpawner.anInt1285 = -1
                         return
                     }
                     if (`is`.size <= i_52_) {
@@ -487,12 +487,12 @@ public abstract class AbstractModel {
                     `is`[i_52_++] = i_55_.toShort()
                 }
             }
-            Class76.anInt1285 = i_52_
+            SceneObjectSpawner.anInt1285 = i_52_
             WidgetNodeLink.anInt2037 = 0
             AsyncTaskHandle.aShortArray2579 = `is`
-            val strings = arrayOfNulls<String>(Class76.anInt1285)
+            val strings = arrayOfNulls<String>(SceneObjectSpawner.anInt1285)
             var i_58_ = 0
-            while (Class76.anInt1285 > i_58_) {
+            while (SceneObjectSpawner.anInt1285 > i_58_) {
                 strings[i_58_] = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(`is`[i_58_].toInt(), (-91).toByte()).method3219(CameraSplineNode.method2955(i, 81))
                 i_58_++
             }

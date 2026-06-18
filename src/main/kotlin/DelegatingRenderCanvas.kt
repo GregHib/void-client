@@ -80,7 +80,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         } else i_5_ = -1
                         AsyncTaskHandle.anInt2578 += i_5_
                     }
-                    Class76.aFloat1287 += MultiFieldRecord.aFloat6898 * l.toFloat() / 6.0f
+                    SceneObjectSpawner.aFloat1287 += MultiFieldRecord.aFloat6898 * l.toFloat() / 6.0f
                     method1725(262144)
                 }
             } catch (runtimeexception: RuntimeException) {

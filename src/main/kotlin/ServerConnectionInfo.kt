@@ -1,7 +1,7 @@
 import AbstractProceduralTextureNode.Companion.method3038
 import InvertTextureNode.Companion.method3134
 import GameClock.method599
-import Class76.Companion.method773
+import SceneObjectSpawner.Companion.method773
 
 /* Class161 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

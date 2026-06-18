@@ -7,7 +7,7 @@ import MidiSequencePlayer.Companion.method2878
 import RenderListTextureNode.Companion.method3153
 import MinimapTriangleDrawer.Companion.method464
 import MapRegionLoader.Companion.method766
-import Class76.Companion.method773
+import SceneObjectSpawner.Companion.method773
 import OpenGlRenderNode.Companion.method3297
 import kotlin.math.abs
 

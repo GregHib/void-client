@@ -69,7 +69,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                             LightingOptionState.aClass348_Sub26_5881 = null
                             FloatCameraTransform.aLong5745 = method599(-106) + 30000L
                         }
-                    } else if (FloatCameraTransform.aLong5745 <= method599(-121)) LightingOptionState.aClass348_Sub26_5881 = Class76.aHostPingThread_1286!!.method1302(-5255, (CacheStateResetter.aServerConnectionInfo_125!!.aString2147!!))
+                    } else if (FloatCameraTransform.aLong5745 <= method599(-121)) LightingOptionState.aClass348_Sub26_5881 = SceneObjectSpawner.aHostPingThread_1286!!.method1302(-5255, (CacheStateResetter.aServerConnectionInfo_125!!.aString2147!!))
                     val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as TimedRecordAccessor?)
                     if (class348_sub45 != null || (CompiledScriptCache.aLong4367 < -2000L + method599(-97))) {
                         var class348_sub47: OutgoingPacketNode? = null
@@ -170,7 +170,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                         HintArrowOrMessage.anInt2035 = 20
                         val class348_sub47 = method2148(ClanChatRequestSender.aFontMetaRef_3648, (TheoraVideoStream.aClass77_9029), i + -11549)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(i xor 0x3c4d, ResourceProvider.aFloat3938.toInt() shr 3)
-                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class76.aFloat1287.toInt() shr 3)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), SceneObjectSpawner.aFloat1287.toInt() shr 3)
                         InterfaceComponentGroup.method3243(-31, class348_sub47)
                     }
                     if (DragDropController.aBoolean4278 != SizeBoundedSoftCache.aBoolean2329) {

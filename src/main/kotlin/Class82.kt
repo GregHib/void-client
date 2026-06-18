@@ -726,7 +726,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
                         FrameStatsReset.anInt5799 += i_29_
                     }
                     val i_30_ = RegionTileNode.anInt6652
-                    Class76.Companion.aFloat1287 += MultiFieldRecord.aFloat6898 * l.toFloat() / 40.0f * 8.0f
+                    SceneObjectSpawner.Companion.aFloat1287 += MultiFieldRecord.aFloat6898 * l.toFloat() / 40.0f * 8.0f
                     ResourceProvider.aFloat3938 += CircleDrawer.aFloat2687 * l.toFloat() / 40.0f * 8.0f
                     if (AsyncTaskHandle.anInt2578 != i_30_) {
                         val i_31_ = -AsyncTaskHandle.anInt2578 + i_30_

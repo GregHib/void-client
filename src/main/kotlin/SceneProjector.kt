@@ -150,7 +150,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                             i_41_ = i_39_
                                         }
                                     }
-                                    val class243 = (HardCacheEntryReference.aClass76_10436!!.aDoublyLinkedNodeList_1282)
+                                    val class243 = (HardCacheEntryReference.aSceneObjectSpawner_10436!!.aDoublyLinkedNodeList_1282)
                                     var class318_sub4 = (class243.method1872(8) as SceneEntityModel?)
                                     while (class318_sub4 != null) {
                                         val class318_sub3s = (class318_sub4.aClass318_Sub3Array6414)!!
@@ -210,7 +210,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                         OutputStream_Sub1.anInt95 = i_21_
                                         CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (OutputStream_Sub1.anInt95))
                                     }
-                                    method1274(HardCacheEntryReference.aClass76_10436)
+                                    method1274(HardCacheEntryReference.aSceneObjectSpawner_10436)
                                     if (i_51_ > 0) {
                                         CameraRotationStub.aRenderer326!!.KA(0, i_49_, (SynthVoiceGroup.anInt8854), i_51_ + i_49_)
                                         CameraRotationStub.aRenderer326!!.ya()
@@ -281,8 +281,8 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                 CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, OutputStream_Sub1.anInt95)
                             }
                             GlCubeMapTexture.aDouble8621 = 0.0
-                            HardCacheEntryReference.aClass76_10436!!.method775(69.toByte())
-                            method1274(HardCacheEntryReference.aClass76_10436)
+                            HardCacheEntryReference.aSceneObjectSpawner_10436!!.method775(69.toByte())
+                            method1274(HardCacheEntryReference.aSceneObjectSpawner_10436)
                             method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
                             ParticleEffectCache.method2046()
                             PcmStreamBuffer.aBoolean8870 = false
