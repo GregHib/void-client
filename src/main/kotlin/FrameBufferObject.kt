@@ -16,7 +16,7 @@ import kotlin.math.atan2
 class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : StagedInitializer {
     private var anInt4872 = 0
     private var anInt4873: Int
-    private val anInterface9Array4875 = arrayOfNulls<Interface9>(9)
+    private val anIndexedDisposableArray4875 = arrayOfNulls<IndexedDisposable>(9)
     private var anInt4882 = 0
     private val aHa_Sub2_4883: OpenGlRenderer
     private var anInt4884 = 0
@@ -45,11 +45,11 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
     }
 
     fun method1500(i: Int, i_2_: Int) {
-        if (anInterface9Array4875[i_2_] != null) anInterface9Array4875[i_2_]!!.method37(-3022)
+        if (anIndexedDisposableArray4875[i_2_] != null) anIndexedDisposableArray4875[i_2_]!!.method37(-3022)
         if (i != 2983) anInt4891 = -116
         anInt4866++
         anInt4884 = anInt4884 and (1 shl i_2_).inv()
-        anInterface9Array4875[i_2_] = null
+        anIndexedDisposableArray4875[i_2_] = null
     }
 
     private fun method1502(i: Int, i_20_: Byte, class258_sub2: GlTextureCubeMap, i_21_: Int, i_22_: Int) {
@@ -62,7 +62,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
             anInt4886 = class258_sub2.anInt8538
         } else if (class258_sub2.anInt8538 != anInt4882 || anInt4886 != class258_sub2.anInt8538) throw RuntimeException()
         class258_sub2.method1961(anInt4873, i_22_, RgbNoiseTexture.anIntArray5306!![i_21_], i, -1)
-        anInterface9Array4875[i_21_] = class258_sub2
+        anIndexedDisposableArray4875[i_21_] = class258_sub2
         anInt4884 = anInt4884 or i_23_
     }
 
@@ -111,7 +111,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
             anInt4886 = class258_sub3.anInt8551
         } else if ((anInt4882 != class258_sub3.anInt8547) || class258_sub3.anInt8551 != anInt4886) throw RuntimeException()
         class258_sub3.method1963(anInt4873, i, 0, RgbNoiseTexture.anIntArray5306!![i_27_])
-        anInterface9Array4875[i_27_] = class258_sub3
+        anIndexedDisposableArray4875[i_27_] = class258_sub3
         anInt4884 = anInt4884 or i_29_
     }
 
@@ -139,7 +139,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
         } else if ((class348_sub42_sub2.anInt8572 != anInt4882) || (anInt4886 != class348_sub42_sub2.anInt8565)) throw RuntimeException()
         val i_34_ = -68 / ((i_32_ - 64) / 49)
         class348_sub42_sub2.method3173(36161, RgbNoiseTexture.anIntArray5306!![i], anInt4873)
-        anInterface9Array4875[i] = class348_sub42_sub2
+        anIndexedDisposableArray4875[i] = class348_sub42_sub2
         anInt4884 = anInt4884 or i_33_
     }
 

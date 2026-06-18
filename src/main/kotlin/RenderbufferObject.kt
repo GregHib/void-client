@@ -10,7 +10,7 @@ import jaggl.OpenGL.Companion.glRenderbufferStorageEXT
 import jaggl.OpenGL.Companion.glRenderbufferStorageMultisampleEXT
 import kotlin.math.sqrt
 
-class RenderbufferObject : HashLinkedListNode, Interface9 {
+class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
     private var anInt8562 = -1
     private var anInt8563 = -1
     private val aHa_Sub2_8564: OpenGlRenderer?

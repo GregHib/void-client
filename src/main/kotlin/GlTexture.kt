@@ -5,7 +5,7 @@ import jaggl.OpenGL.Companion.glTexParameteri
 /*
  * Class258
  */
-abstract class GlTexture internal constructor(var aHa_Sub2_4851: OpenGlRenderer, var anInt4849: Int, var anInt4858: Int, private var anInt4847: Int, private var aBoolean4860: Boolean) : Interface9 {
+abstract class GlTexture internal constructor(var aHa_Sub2_4851: OpenGlRenderer, var anInt4849: Int, var anInt4858: Int, private var anInt4847: Int, private var aBoolean4860: Boolean) : IndexedDisposable {
     private var aBoolean4856 = false
     var anInt4859: Int
     fun method1950(i: Int): Boolean {
