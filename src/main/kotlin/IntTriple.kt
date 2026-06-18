@@ -1,7 +1,7 @@
 /* Class41 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class41 {
+class IntTriple {
     @JvmField
     var anInt559: Int = 0
     @JvmField
@@ -11,9 +11,9 @@ class Class41 {
 
     constructor()
 
-    internal constructor(class41_0_: Class41) {
-        this.anInt561 = class41_0_.anInt561
-        this.anInt560 = class41_0_.anInt560
-        this.anInt559 = class41_0_.anInt559
+    internal constructor(intTriple_0_: IntTriple) {
+        this.anInt561 = intTriple_0_.anInt561
+        this.anInt560 = intTriple_0_.anInt560
+        this.anInt559 = intTriple_0_.anInt559
     }
 }

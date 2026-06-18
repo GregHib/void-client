@@ -80,7 +80,7 @@ class Class64_Sub1 : Class64 {
     private var aBoolean5382: Boolean
     private var aShadowProjector_5383: ShadowProjector? = null
     private lateinit var anIntArray5384: IntArray
-    private var aClass41Array5385: Array<Class41?>? = null
+    private var aIntTripleArray5385: Array<IntTriple?>? = null
     private var aByteArray5386: ByteArray? = null
     private var anInt5387: Int
     private var aShortArray5388: ShortArray? = null
@@ -112,7 +112,7 @@ class Class64_Sub1 : Class64 {
     private fun method631() {
         aRectangleArray5360 = null
         aRectangleArray5313 = null
-        aClass41Array5385 = null
+        aIntTripleArray5385 = null
         aBoolean5323 = false
     }
 
@@ -262,18 +262,18 @@ class Class64_Sub1 : Class64 {
             if (aRectangleArray5360 != null) {
                 for (i_25_ in 0..<anInt5387) class64_sub1_7_.aRectangleArray5360!![i_25_] = Rectangle(aRectangleArray5360!![i_25_]!!)
             } else class64_sub1_7_.aRectangleArray5360 = null
-            if (aClass41Array5385 != null) {
-                if (class64_sub1_8_.aClass41Array5385 == null || class64_sub1_8_.aClass41Array5385!!.size < anInt5351) {
+            if (aIntTripleArray5385 != null) {
+                if (class64_sub1_8_.aIntTripleArray5385 == null || class64_sub1_8_.aIntTripleArray5385!!.size < anInt5351) {
                     val i_26_ = anInt5351
-                    class64_sub1_8_.aClass41Array5385 = arrayOfNulls<Class41>(i_26_)
-                    class64_sub1_7_.aClass41Array5385 = class64_sub1_8_.aClass41Array5385
-                } else class64_sub1_7_.aClass41Array5385 = class64_sub1_8_.aClass41Array5385
-                for (i_27_ in 0..<anInt5351) class64_sub1_7_.aClass41Array5385!![i_27_] = (if (aClass41Array5385!![i_27_] != null) Class41(aClass41Array5385!![i_27_]!!) else null)
-            } else class64_sub1_7_.aClass41Array5385 = null
+                    class64_sub1_8_.aIntTripleArray5385 = arrayOfNulls<IntTriple>(i_26_)
+                    class64_sub1_7_.aIntTripleArray5385 = class64_sub1_8_.aIntTripleArray5385
+                } else class64_sub1_7_.aIntTripleArray5385 = class64_sub1_8_.aIntTripleArray5385
+                for (i_27_ in 0..<anInt5351) class64_sub1_7_.aIntTripleArray5385!![i_27_] = (if (aIntTripleArray5385!![i_27_] != null) IntTriple(aIntTripleArray5385!![i_27_]!!) else null)
+            } else class64_sub1_7_.aIntTripleArray5385 = null
         } else {
             if (bool_9_) method636()
             class64_sub1_7_.aRectangleArray5360 = aRectangleArray5360
-            class64_sub1_7_.aClass41Array5385 = aClass41Array5385
+            class64_sub1_7_.aIntTripleArray5385 = aIntTripleArray5385
         }
         if ((i and 0x8000) != 0) {
             if (aShortArray5388 == null) class64_sub1_7_.aShortArray5388 = null
@@ -1330,12 +1330,12 @@ class Class64_Sub1 : Class64 {
                             aRectangleArray5360!![i_295_]!!.anInt4430 = i_296_
                         }
                     }
-                    if (aClass41Array5385 != null) {
+                    if (aIntTripleArray5385 != null) {
                         for (i_297_ in 0..<anInt5351) {
-                            if (aClass41Array5385!![i_297_] != null) {
-                                val i_298_ = ((aClass41Array5385!![i_297_]!!.anInt559) * i_293_ + (aClass41Array5385!![i_297_]!!.anInt561) * i_294_) shr 14
-                                aClass41Array5385!![i_297_]!!.anInt559 = ((aClass41Array5385!![i_297_]!!.anInt559) * i_294_ - (aClass41Array5385!![i_297_]!!.anInt561) * i_293_) shr 14
-                                aClass41Array5385!![i_297_]!!.anInt561 = i_298_
+                            if (aIntTripleArray5385!![i_297_] != null) {
+                                val i_298_ = ((aIntTripleArray5385!![i_297_]!!.anInt559) * i_293_ + (aIntTripleArray5385!![i_297_]!!.anInt561) * i_294_) shr 14
+                                aIntTripleArray5385!![i_297_]!!.anInt559 = ((aIntTripleArray5385!![i_297_]!!.anInt559) * i_294_ - (aIntTripleArray5385!![i_297_]!!.anInt561) * i_293_) shr 14
+                                aIntTripleArray5385!![i_297_]!!.anInt561 = i_298_
                             }
                         }
                     }
@@ -1382,12 +1382,12 @@ class Class64_Sub1 : Class64 {
                     aRectangleArray5360!![i]!!.anInt4430 = -i_302_
                 }
             }
-            if (aClass41Array5385 != null) {
+            if (aIntTripleArray5385 != null) {
                 for (i in 0..<anInt5351) {
-                    if (aClass41Array5385!![i] != null) {
-                        val i_303_ = aClass41Array5385!![i]!!.anInt559
-                        aClass41Array5385!![i]!!.anInt559 = aClass41Array5385!![i]!!.anInt561
-                        aClass41Array5385!![i]!!.anInt561 = -i_303_
+                    if (aIntTripleArray5385!![i] != null) {
+                        val i_303_ = aIntTripleArray5385!![i]!!.anInt559
+                        aIntTripleArray5385!![i]!!.anInt559 = aIntTripleArray5385!![i]!!.anInt561
+                        aIntTripleArray5385!![i]!!.anInt561 = -i_303_
                     }
                 }
             }
@@ -2458,9 +2458,9 @@ class Class64_Sub1 : Class64 {
                 class360.anInt4427 += i_610_
                 class360.anInt4429++
             } else if (i_612_.toInt() == 1) {
-                if (aClass41Array5385 == null) aClass41Array5385 = arrayOfNulls<Class41>(anInt5351)
-                aClass41Array5385!![i] = Class41()
-                val class41 = aClass41Array5385!![i]!!
+                if (aIntTripleArray5385 == null) aIntTripleArray5385 = arrayOfNulls<IntTriple>(anInt5351)
+                aIntTripleArray5385!![i] = IntTriple()
+                val class41 = aIntTripleArray5385!![i]!!
                 class41.anInt561 = i_608_
                 class41.anInt560 = i_609_
                 class41.anInt559 = i_610_
@@ -2495,9 +2495,9 @@ class Class64_Sub1 : Class64 {
                     if (aRectangleArray5313!![i] != null) aRectangleArray5313!![i]!!.anInt4427 = -aRectangleArray5313!![i]!!.anInt4427
                 }
             }
-            if (aClass41Array5385 != null) {
+            if (aIntTripleArray5385 != null) {
                 for (i in 0..<anInt5351) {
-                    if (aClass41Array5385!![i] != null) aClass41Array5385!![i]!!.anInt559 = -aClass41Array5385!![i]!!.anInt559
+                    if (aIntTripleArray5385!![i] != null) aIntTripleArray5385!![i]!!.anInt559 = -aIntTripleArray5385!![i]!!.anInt559
                 }
             }
             val `is` = aShortArray5317
@@ -2590,11 +2590,11 @@ class Class64_Sub1 : Class64 {
                     aRectangleArray5360!![i]!!.anInt4427 = -aRectangleArray5360!![i]!!.anInt4427
                 }
             }
-            if (aClass41Array5385 != null) {
+            if (aIntTripleArray5385 != null) {
                 for (i in 0..<anInt5351) {
-                    if (aClass41Array5385!![i] != null) {
-                        aClass41Array5385!![i]!!.anInt561 = -aClass41Array5385!![i]!!.anInt561
-                        aClass41Array5385!![i]!!.anInt559 = -aClass41Array5385!![i]!!.anInt559
+                    if (aIntTripleArray5385!![i] != null) {
+                        aIntTripleArray5385!![i]!!.anInt561 = -aIntTripleArray5385!![i]!!.anInt561
+                        aIntTripleArray5385!![i]!!.anInt559 = -aIntTripleArray5385!![i]!!.anInt559
                     }
                 }
             }
@@ -2619,12 +2619,12 @@ class Class64_Sub1 : Class64 {
                     aRectangleArray5360!![i]!!.anInt4427 = -i_629_
                 }
             }
-            if (aClass41Array5385 != null) {
+            if (aIntTripleArray5385 != null) {
                 for (i in 0..<anInt5351) {
-                    if (aClass41Array5385!![i] != null) {
-                        val i_630_ = aClass41Array5385!![i]!!.anInt561
-                        aClass41Array5385!![i]!!.anInt561 = aClass41Array5385!![i]!!.anInt559
-                        aClass41Array5385!![i]!!.anInt559 = -i_630_
+                    if (aIntTripleArray5385!![i] != null) {
+                        val i_630_ = aIntTripleArray5385!![i]!!.anInt561
+                        aIntTripleArray5385!![i]!!.anInt561 = aIntTripleArray5385!![i]!!.anInt559
+                        aIntTripleArray5385!![i]!!.anInt559 = -i_630_
                     }
                 }
             }
@@ -3012,7 +3012,7 @@ class Class64_Sub1 : Class64 {
                         val i_749_ = aShortArray5311!![i_739_].toInt() and 0xffff
                         val i_750_ = (i_749_ and 0x7f) * anInt5344 shr 7
                         val i_751_ = method303(i_749_ and 0x7f.inv() or i_750_, 30)
-                        val class41 = aClass41Array5385!![i_739_]!!
+                        val class41 = aIntTripleArray5385!![i_739_]!!
                         val i_752_ = ((i * class41.anInt561 + i_734_ * class41.anInt560 + i_735_ * class41.anInt559) shr 16)
                         val i_753_ = if (i_752_ > 256) i_737_ else i_738_
                         val i_754_ = (i_736_ shr 1) + (i_753_ * i_752_ shr 17)
@@ -3045,7 +3045,7 @@ class Class64_Sub1 : Class64 {
                         i_758_ = method656((i_736_ shr 2) + (i_757_ * i_756_ shr 18))
                         anIntArray5366!![i_739_] = i_758_ shl 24 or method642(i_755_, i_742_, i_758_)
                     } else if (i_740_.toInt() == 1) {
-                        val class41 = aClass41Array5385!![i_739_]!!
+                        val class41 = aIntTripleArray5385!![i_739_]!!
                         val i_759_ = ((i * class41.anInt561 + i_734_ * class41.anInt560 + i_735_ * class41.anInt559) shr 16)
                         val i_760_ = if (i_759_ > 256) i_737_ else i_738_
                         val i_761_ = method656((i_736_ shr 2) + (i_760_ * i_759_ shr 18))
@@ -3056,7 +3056,7 @@ class Class64_Sub1 : Class64 {
             }
             aRectangleArray5360 = null
             aRectangleArray5313 = null
-            aClass41Array5385 = null
+            aIntTripleArray5385 = null
             if ((anInt5316 and 0x97098) == 0 && aFloatArrayArray5314 == null) aShortArray5311 = null
             if (bool) aByteArray5386 = null
             anInt5354 = 2
