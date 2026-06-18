@@ -147,7 +147,7 @@ class WidgetTextConfig {
             if (i >= 124) {
                 var i_6_ = 0
                 while ((MinimapAreaMarkerNode.anInt9699 > i_6_)) {
-                    val interface6 = ProceduralTextureGraph.anInterface6Array9534!![i_6_]!!
+                    val interface6 = ProceduralTextureGraph.anCharStreamReaderArray9534s!![i_6_]!!
                     val i_7_ = interface6.method30(false)
                     val c = interface6.method28(46.toByte())
                     val i_8_ = interface6.method26(-7616)
@@ -230,7 +230,7 @@ class WidgetTextConfig {
                                             method159(-615751774)
                                             TerrainShadowBuilderGl3.anInt7006 = MapElementManager.aString4461!!.length
                                         } else if (Npc.method2446(c, 105.toByte()) || c.code == 92 || c.code == 47 || c.code == 46 || c.code == 58 || c.code == 44 || c.code == 32 || c.code == 95 || c.code == 45 || c.code == 43 || c.code == 91 || c.code == 93) {
-                                            MapElementManager.aString4461 = ((MapElementManager.aString4461!!.substring(0, TerrainShadowBuilderGl3.anInt7006)) + ProceduralTextureGraph.anInterface6Array9534!![i_6_]!!.method28(23.toByte()) + (MapElementManager.aString4461!!.substring(TerrainShadowBuilderGl3.anInt7006)))
+                                            MapElementManager.aString4461 = ((MapElementManager.aString4461!!.substring(0, TerrainShadowBuilderGl3.anInt7006)) + ProceduralTextureGraph.anCharStreamReaderArray9534s!![i_6_]!!.method28(23.toByte()) + (MapElementManager.aString4461!!.substring(TerrainShadowBuilderGl3.anInt7006)))
                                             TerrainShadowBuilderGl3.anInt7006++
                                         }
                                     } else {

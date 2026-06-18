@@ -1585,13 +1585,13 @@ class Client : GameAppletFrame() {
                     val i_110_ = interface6.method28(96.toByte()).code
                     if (!method2066(116.toByte()) || (i_110_ != 96 && i_110_ != 167 && i_110_ != 178)) {
                         if (MinimapAreaMarkerNode.anInt9699 < 128) {
-                            ProceduralTextureGraph.anInterface6Array9534!![MinimapAreaMarkerNode.anInt9699] = interface6
+                            ProceduralTextureGraph.anCharStreamReaderArray9534s!![MinimapAreaMarkerNode.anInt9699] = interface6
                             MinimapAreaMarkerNode.anInt9699++
                         }
                     } else if (!method3263(true)) method2363(-84)
                     else GlCubemapLightPass.method3543((-89).toByte())
                 } else if (i_109_ == 0 && CameraConfigDefinition.anInt3246 < 75) {
-                    CacheLruCache.anInterface6Array3884!![CameraConfigDefinition.anInt3246] = interface6
+                    CacheLruCache.anCharStreamReaderArray3884s!![CameraConfigDefinition.anInt3246] = interface6
                     CameraConfigDefinition.anInt3246++
                 }
                 interface6 = LoadProgressCounters.aKeyboardInputSource_2449!!.method2697(0)
@@ -2492,8 +2492,8 @@ class Client : GameAppletFrame() {
                                     for (i_89_ in 0..<MinimapAreaMarkerNode.anInt9699) {
                                         val class348_sub36 = WidgetActionEntry()
                                         class348_sub36.aWidgetComponent_6989 = class46
-                                        class348_sub36.anInt6991 = ProceduralTextureGraph.anInterface6Array9534!![i_89_]!!.method30(false)
-                                        class348_sub36.anInt6982 = ProceduralTextureGraph.anInterface6Array9534!![i_89_]!!.method28(39.toByte()).code
+                                        class348_sub36.anInt6991 = ProceduralTextureGraph.anCharStreamReaderArray9534s!![i_89_]!!.method30(false)
+                                        class348_sub36.anInt6982 = ProceduralTextureGraph.anCharStreamReaderArray9534s!![i_89_]!!.method28(39.toByte()).code
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray822
                                         HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     }

@@ -1,7 +1,7 @@
 /* Class348_Sub11 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class KeyEventNode : LinkedListNode(), Interface6 {
+class KeyEventNode : LinkedListNode(), CharStreamReader {
     var aChar4761: Char = 0.toChar()
     var aLong4764: Long = 0
     var anInt4766: Int = 0

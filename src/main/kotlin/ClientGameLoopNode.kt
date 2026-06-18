@@ -153,7 +153,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * CameraConfigDefinition.anInt3246)
                         var i_13_ = 0
                         while ((i_13_ < CameraConfigDefinition.anInt3246)) {
-                            val interface6 = CacheLruCache.anInterface6Array3884!![i_13_]
+                            val interface6 = CacheLruCache.anCharStreamReaderArray3884s!![i_13_]
                             var l = ((interface6!!.method29((-29).toByte()) + -RegionTileNode.aLong6651) / 50L)
                             RegionTileNode.aLong6651 = interface6.method29(106.toByte())
                             if (l > 65535L) l = 65535L

@@ -6,7 +6,7 @@ abstract class KeyboardInputSource {
 
     abstract fun method2696(i: Int, i_0_: Int): Boolean
 
-    abstract fun method2697(i: Int): Interface6?
+    abstract fun method2697(i: Int): CharStreamReader?
 
     abstract fun method2698(i: Int)
 

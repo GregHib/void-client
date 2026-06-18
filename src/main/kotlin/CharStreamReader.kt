@@ -1,7 +1,7 @@
 /* Interface6 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-interface Interface6 {
+interface CharStreamReader {
     fun method26(i: Int): Int
 
     fun method27(i: Int): Int

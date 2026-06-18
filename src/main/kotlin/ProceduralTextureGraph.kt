@@ -312,11 +312,11 @@ class ProceduralTextureGraph : HashLinkedListNode {
         var anInt9532: Int = 0
         var aFontMetaRef_9533: FontMetaRef?
         @JvmField
-        var anInterface6Array9534: Array<Interface6?>? = arrayOfNulls<Interface6>(128)
+        var anCharStreamReaderArray9534s: Array<CharStreamReader?>? = arrayOfNulls<CharStreamReader>(128)
 
         @JvmStatic
         fun method3187(i: Byte) {
-            anInterface6Array9534 = null
+            anCharStreamReaderArray9534s = null
             val i_55_ = 19 % ((76 - i) / 39)
             aFontMetaRef_9533 = null
             aRectangleRegion_9530 = null

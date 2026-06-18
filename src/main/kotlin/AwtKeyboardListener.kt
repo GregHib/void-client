@@ -10,10 +10,10 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
     private var aBooleanArray6543: BooleanArray? = BooleanArray(112)
     private var aComponent6544: Component? = null
 
-    override fun method2697(i: Int): Interface6? {
+    override fun method2697(i: Int): CharStreamReader? {
         if (i != 0) aBooleanArray6543 = null
         anInt6525++
-        return aNodeDeque_6541.method1997(8) as Interface6?
+        return aNodeDeque_6541.method1997(8) as CharStreamReader?
     }
 
     override fun method2696(i: Int, i_0_: Int): Boolean {

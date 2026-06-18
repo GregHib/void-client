@@ -45,7 +45,7 @@ object ClientLoadStateMachine {
         if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(i + -3690) == 0) {
             var i_0_ = 0
             while ((i_0_ < MinimapAreaMarkerNode.anInt9699)) {
-                if (ProceduralTextureGraph.anInterface6Array9534!![i_0_]!!.method28(31.toByte()).code == 115 || ProceduralTextureGraph.anInterface6Array9534!![i_0_]!!.method28(71.toByte()).code == 83) {
+                if (ProceduralTextureGraph.anCharStreamReaderArray9534s!![i_0_]!!.method28(31.toByte()).code == 115 || ProceduralTextureGraph.anCharStreamReaderArray9534s!![i_0_]!!.method28(71.toByte()).code == 83) {
                     IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 1)
                     TextureFormatInfo.aBoolean3847 = true
                     break
