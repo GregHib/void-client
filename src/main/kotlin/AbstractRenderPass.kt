@@ -62,7 +62,7 @@ abstract class AbstractRenderPass internal constructor(var aHa_Sub3_4479: Native
             val class318_sub6 = Class62.aDoublyLinkedNodeList_1114!!.method1875(60) as SceneEffectMarker?
             if (i != 32564) method3529(-38)
             if (class318_sub6 != null) {
-                Class365.anInt4474--
+                FriendChatMember.anInt4474--
                 return class318_sub6
             }
             return SceneEffectMarker()

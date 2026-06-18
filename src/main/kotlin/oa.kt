@@ -340,8 +340,8 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         return i(this, aYa5121, modelDefinition!!, i, i_131_, i_132_, i_133_)
     }
 
-    override fun c(): Class365 { //
-        return Class365(0, "SSE", 1, "CPU", 0L)
+    override fun c(): FriendChatMember { //
+        return FriendChatMember(0, "SSE", 1, "CPU", 0L)
     }
 
     override fun method3674(i: Int, i_134_: Int, i_135_: Int, i_136_: Int, i_137_: Int, i_138_: Int, i_139_: Int, i_140_: Int, i_141_: Int) {

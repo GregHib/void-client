@@ -422,7 +422,7 @@ import CollisionMap.Companion.method3508
 import Tooltip.method3511
 import Tooltip.method3512
 import MapElementManager.method3516
-import Class365.Companion.method3518
+import FriendChatMember.Companion.method3518
 import Class367_Sub10.Companion.method3553
 import Class367_Sub10.Companion.method3554
 import Class367_Sub11.Companion.method3556
@@ -1493,7 +1493,7 @@ class Client : GameAppletFrame() {
             method705(class348_sub36)
         }
         while (true) {
-            val class348_sub36 = (Class365.aNodeDeque_4473!!.method1997(i + -104) as WidgetActionEntry?)
+            val class348_sub36 = (FriendChatMember.aNodeDeque_4473!!.method1997(i + -104) as WidgetActionEntry?)
             if (class348_sub36 == null) break
             val class46 = class348_sub36.aClass46_6989
             if (class46!!.anInt704 >= 0) {
@@ -2294,7 +2294,7 @@ class Client : GameAppletFrame() {
                                         class348_sub36.anInt6984 = (i_51_ + GlTexture1D.aClass373_8552!!.method3597(true) - i_43_)
                                         class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aClass373_8552!!.method3594(75.toByte()) - i_44_)
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray742
-                                        Class365.aNodeDeque_4473!!.method1999(class348_sub36, -20180)
+                                        FriendChatMember.aNodeDeque_4473!!.method1999(class348_sub36, -20180)
                                     }
                                 }
                                 if (bool_53_ && (class46.anObjectArray805 != null)) {
@@ -2336,7 +2336,7 @@ class Client : GameAppletFrame() {
                                         class348_sub36.anInt6984 = (i_51_ + GlTexture1D.aClass373_8552!!.method3597(true) - i_43_)
                                         class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aClass373_8552!!.method3594(90.toByte()) - i_44_)
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray683
-                                        Class365.aNodeDeque_4473!!.method1999(class348_sub36, -20180)
+                                        FriendChatMember.aNodeDeque_4473!!.method1999(class348_sub36, -20180)
                                     }
                                 }
                                 if (class46.anObjectArray764 != null) {

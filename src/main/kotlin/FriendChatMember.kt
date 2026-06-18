@@ -3,7 +3,7 @@ import SoundBankPatch.Companion.method2929
 /* Class365 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class365 internal constructor(i: Int, string: String?, i_0_: Int, string_1_: String?, l: Long) {
+class FriendChatMember internal constructor(i: Int, string: String?, i_0_: Int, string_1_: String?, l: Long) {
     var aString4470: String? = null
     var aLong4471: Long = 0
     var aString4472: String? = null

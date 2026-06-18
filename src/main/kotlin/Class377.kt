@@ -480,13 +480,13 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         }
     }
 
-    override fun c(): Class365 {
+    override fun c(): FriendChatMember {
         anInt9843++
         var i = -1
         if (aString9917.indexOf("nvidia") != -1) i = 4318
         else if (aString9917.indexOf("intel") != -1) i = 32902
         else if (aString9917.indexOf("ati") != -1) i = 4098
-        return Class365(i, "OpenGL", anInt9924, aString9916, 0L)
+        return FriendChatMember(i, "OpenGL", anInt9924, aString9916, 0L)
     }
 
     override fun method3706(circleRasterizer: CircleRasterizer?, circleRasterizer_24_: CircleRasterizer?, f: Float, circleRasterizer_25_: CircleRasterizer?): CircleRasterizer? {

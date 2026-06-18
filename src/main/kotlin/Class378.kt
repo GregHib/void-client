@@ -669,9 +669,9 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         super.method3882(63.toByte())
     }
 
-    override fun c(): Class365 {
+    override fun c(): FriendChatMember {
         val d3dadapter_identifier = anIDirect3D9793!!.a(anInt9799, 0)
-        return Class365(d3dadapter_identifier.VendorID, "Direct3D", 9, d3dadapter_identifier.Description, d3dadapter_identifier.DriverVersion)
+        return FriendChatMember(d3dadapter_identifier.VendorID, "Direct3D", 9, d3dadapter_identifier.Description, d3dadapter_identifier.DriverVersion)
     }
 
     override fun method3935(i: Int) {

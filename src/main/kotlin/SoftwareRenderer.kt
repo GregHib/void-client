@@ -2330,8 +2330,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         /* empty */
     }
 
-    override fun c(): Class365 {
-        return Class365(0, "Pure Java", 1, "CPU", 0L)
+    override fun c(): FriendChatMember {
+        return FriendChatMember(0, "Pure Java", 1, "CPU", 0L)
     }
 
     override fun method3659(i: Int) {

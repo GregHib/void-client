@@ -2202,14 +2202,14 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         if (i >= -13) anInt7742 = 102
     }
 
-    override fun c(): Class365 {
+    override fun c(): FriendChatMember {
         anInt7607++
         var i = -1
         if (aString7845!!.indexOf("nvidia") == -1) {
             if (aString7845!!.indexOf("intel") != -1) i = 32902
             else if (aString7845!!.indexOf("ati") != -1) i = 4098
         } else i = 4318
-        return Class365(i, "OpenGL", anInt7789, aString7790, 0L)
+        return FriendChatMember(i, "OpenGL", anInt7789, aString7790, 0L)
     }
 
     override fun da(i: Int, i_254_: Int, i_255_: Int, `is`: IntArray?) {
