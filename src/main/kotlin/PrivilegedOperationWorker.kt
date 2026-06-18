@@ -92,7 +92,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                 } else if (i == 22) {
                     if (aLong3781 > method599(-92)) throw IOException()
                     try {
-                        linkedQueueNode.anObject1998 = Class61.method593(linkedQueueNode.anInt2000, (-90).toByte(), (linkedQueueNode.anObject1996 as String?))!!.method2050(-112)
+                        linkedQueueNode.anObject1998 = GlDisplayListFont.method593(linkedQueueNode.anInt2000, (-90).toByte(), (linkedQueueNode.anObject1996 as String?))!!.method2050(-112)
                     } catch (ioexception_sub1: IOException_Sub1) {
                         linkedQueueNode.anObject1998 = ioexception_sub1.message
                         throw ioexception_sub1

@@ -5,7 +5,7 @@ import jaggl.OpenGL.Companion.glTexGeni
 import kotlin.math.min
 
 class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : MaterialPass(var_ha_Sub2) {
-    private val aClass61_6254: Class61
+    private val aGlDisplayListFont_6254: GlDisplayListFont
     private val aClass83_6259: Class83?
     override fun method2136(i: Int, i_5_: Int, i_6_: Byte) {
         anInt6252++
@@ -54,7 +54,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
 
     override fun method2133(i: Int) {
         anInt6249++
-        aClass61_6254.method594('\u0001', 28666)
+        aGlDisplayListFont_6254.method594('\u0001', 28666)
         this.aHa_Sub2_3684.method3738(-15039, 1)
         this.aHa_Sub2_3684.method3771((-113).toByte(), null)
         if (i > -75) anInt6248 = -7
@@ -64,8 +64,8 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
     init {
         try {
             aClass83_6259 = class83
-            aClass61_6254 = Class61(var_ha_Sub2, 2)
-            aClass61_6254.method595(104.toByte(), 0)
+            aGlDisplayListFont_6254 = GlDisplayListFont(var_ha_Sub2, 2)
+            aGlDisplayListFont_6254.method595(104.toByte(), 0)
             this.aHa_Sub2_3684.method3738(-15039, 1)
             if (aClass83_6259!!.aBoolean1442) {
                 glTexGeni(8194, 9472, 9217)
@@ -76,14 +76,14 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
             glEnable(3168)
             glEnable(3169)
             this.aHa_Sub2_3684.method3738(-15039, 0)
-            aClass61_6254.method591(-1)
-            aClass61_6254.method595(117.toByte(), 1)
+            aGlDisplayListFont_6254.method591(-1)
+            aGlDisplayListFont_6254.method595(117.toByte(), 1)
             this.aHa_Sub2_3684.method3738(-15039, 1)
             if (aClass83_6259.aBoolean1442) glDisable(3170)
             glDisable(3168)
             glDisable(3169)
             this.aHa_Sub2_3684.method3738(-15039, 0)
-            aClass61_6254.method591(-1)
+            aGlDisplayListFont_6254.method591(-1)
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("gn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
         }
@@ -91,7 +91,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
 
     override fun method2134(bool: Boolean, bool_11_: Boolean) {
         anInt6250++
-        aClass61_6254.method594('\u0000', 28666)
+        aGlDisplayListFont_6254.method594('\u0000', 28666)
         if (aClass83_6259!!.aBoolean1442) {
             this.aHa_Sub2_3684.method3738(-15039, 1)
             this.aHa_Sub2_3684.method3771((-117).toByte(), (aClass83_6259.aClass258_Sub1_1446))

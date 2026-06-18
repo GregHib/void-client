@@ -217,7 +217,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GrayscaleNoiseTexture.anInt5286 = 0
             GlFramebufferBlitter.anInt288 = 0
             SceneProjector.anInt2982 = 0
-            Class61.anInt1105 = 0
+            GlDisplayListFont.anInt1105 = 0
             NpcActorEntity.anInt10091 = 0
             GlVertexBufferBase.anInt1922 = 0
             ColorThresholdEffect.anInt9093 = 0
@@ -2215,7 +2215,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             BrightnessOptionState.anInt5895 = 0
             MinimapRenderer.anInt1589 = 0
             SimpleBinaryOptionState.anInt6074 = 0
-            Class61.anInt1108 = 0
+            GlDisplayListFont.anInt1108 = 0
             TheoraVideoStream.anInt9025 = 0
             NativeVertexBuffer.anInt4829 = 0
             Class79.anInt1379 = 0
@@ -3057,7 +3057,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9883 = 0
             Class99.anInt1575 = 0
             Gl2dTexture.anInt8616 = 0
-            Class61.anInt1104 = 0
+            GlDisplayListFont.anInt1104 = 0
             Js5Archive.anInt653 = 0
             ChatEffectsOptionState.anInt5862 = 0
             BoxBlurTextureNode.anInt9457 = 0
@@ -3913,7 +3913,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7593 = 0
             MidiSequencePlayer.anInt8949 = 0
             ModelWallEntity.anInt10142 = 0
-            Class61.anInt1106 = 0
+            GlDisplayListFont.anInt1106 = 0
             NpcConfig.anInt901 = 0
             Renderer.anInt4564 = 0
             NodeDeque.anInt3336 = 0
@@ -3969,7 +3969,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MatrixCameraTransform.anInt5683 = 0
             Player.anInt10550 = 0
             ProjectionCameraTransform.anInt5748 = 0
-            Class61.anInt1107 = 0
+            GlDisplayListFont.anInt1107 = 0
             SequencedActorEntity.anInt10112 = 0
             IdentKitRecolor.anInt147 = 0
             GlVertexBufferArb.anInt8490 = 0

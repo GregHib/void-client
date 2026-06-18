@@ -7,11 +7,11 @@ import jaggl.OpenGL.Companion.glTexGeni
 
 class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : MaterialPass(var_ha_Sub2) {
     private var aBoolean6301 = false
-    private var aClass61_6302: Class61? = null
+    private var aGlDisplayListFont_6302: GlDisplayListFont? = null
     override fun method2133(i: Int) {
         if (i <= -75) {
             if (aBoolean6301) {
-                aClass61_6302!!.method594('\u0001', 28666)
+                aGlDisplayListFont_6302!!.method594('\u0001', 28666)
                 this.aHa_Sub2_3684.method3738(-15039, 1)
                 this.aHa_Sub2_3684.method3771((-92).toByte(), null)
                 this.aHa_Sub2_3684.method3738(-15039, 0)
@@ -31,8 +31,8 @@ class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Ma
 
     init {
         if (var_ha_Sub2.aBoolean7863) {
-            aClass61_6302 = Class61(var_ha_Sub2, 2)
-            aClass61_6302!!.method595(123.toByte(), 0)
+            aGlDisplayListFont_6302 = GlDisplayListFont(var_ha_Sub2, 2)
+            aGlDisplayListFont_6302!!.method595(123.toByte(), 0)
             this.aHa_Sub2_3684.method3738(-15039, 1)
             this.aHa_Sub2_3684.method3729(34165, (-35).toByte(), 7681)
             this.aHa_Sub2_3684.method3762(34168, 770, (-87).toByte(), 2)
@@ -44,8 +44,8 @@ class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Ma
             glEnable(3169)
             glEnable(3170)
             this.aHa_Sub2_3684.method3738(-15039, 0)
-            aClass61_6302!!.method591(-1)
-            aClass61_6302!!.method595(126.toByte(), 1)
+            aGlDisplayListFont_6302!!.method591(-1)
+            aGlDisplayListFont_6302!!.method595(126.toByte(), 1)
             this.aHa_Sub2_3684.method3738(-15039, 1)
             this.aHa_Sub2_3684.method3729(8448, (-73).toByte(), 8448)
             this.aHa_Sub2_3684.method3762(34166, 770, (-87).toByte(), 2)
@@ -57,7 +57,7 @@ class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Ma
             glLoadIdentity()
             glMatrixMode(5888)
             this.aHa_Sub2_3684.method3738(-15039, 0)
-            aClass61_6302!!.method591(-1)
+            aGlDisplayListFont_6302!!.method591(-1)
         }
     }
 
@@ -77,8 +77,8 @@ class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Ma
         if (bool_8_ != false) method2171(85)
         anInt6293++
         val class258_sub2 = this.aHa_Sub2_3684.method3741(444720536)
-        if (aClass61_6302 != null && class258_sub2 != null && bool) {
-            aClass61_6302!!.method594('\u0000', 28666)
+        if (aGlDisplayListFont_6302 != null && class258_sub2 != null && bool) {
+            aGlDisplayListFont_6302!!.method594('\u0000', 28666)
             this.aHa_Sub2_3684.method3738(-15039, 1)
             this.aHa_Sub2_3684.method3771((-77).toByte(), class258_sub2)
             glMatrixMode(5890)

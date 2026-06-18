@@ -3,7 +3,10 @@ import jaggl.OpenGL.Companion.glEndList
 import jaggl.OpenGL.Companion.glGenLists
 import jaggl.OpenGL.Companion.glNewList
 
-class Class61 internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int) {
+/*
+ * Class61
+ */
+class GlDisplayListFont internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int) {
     private val anInt1109: Int
 
     fun method591(i: Int) {

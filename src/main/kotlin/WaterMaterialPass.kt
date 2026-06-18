@@ -14,12 +14,12 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
     private var aFloatArray6218: FloatArray? = null
     private var anInt6219 = 0
     private var aRefCountedHandle_6220: RefCountedHandle? = null
-    private var aClass61_6222: Class61? = null
+    private var aGlDisplayListFont_6222: GlDisplayListFont? = null
     private var aFloat6225 = 0f
     private val aClass83_6227: Class83?
     override fun method2136(i: Int, i_0_: Int, i_1_: Byte) {
         anInt6224++
-        if (aClass61_6222 != null) {
+        if (aGlDisplayListFont_6222 != null) {
             if (i_1_ >= -42) method2149(-65)
             this.aHa_Sub2_3684.method3738(-15039, 1)
             if ((i and 0x80) != 0) this.aHa_Sub2_3684.method3771((-122).toByte(), null)
@@ -92,8 +92,8 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
 
     private fun method2149(i: Int) {
         anInt6217++
-        aClass61_6222 = Class61(this.aHa_Sub2_3684, 2)
-        aClass61_6222!!.method595(103.toByte(), 0)
+        aGlDisplayListFont_6222 = GlDisplayListFont(this.aHa_Sub2_3684, 2)
+        aGlDisplayListFont_6222!!.method595(103.toByte(), 0)
         this.aHa_Sub2_3684.method3738(-15039, 1)
         this.aHa_Sub2_3684.method3808(-16777216, 118)
         this.aHa_Sub2_3684.method3729(260, 114.toByte(), 7681)
@@ -101,8 +101,8 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
         this.aHa_Sub2_3684.method3738(-15039, 0)
         glBindProgramARB(34336, aRefCountedHandle_6220!!.anInt2270)
         glEnable(34336)
-        aClass61_6222!!.method591(-1)
-        aClass61_6222!!.method595(127.toByte(), 1)
+        aGlDisplayListFont_6222!!.method591(-1)
+        aGlDisplayListFont_6222!!.method595(127.toByte(), 1)
         val i_10_ = 65 / ((i - 62) / 49)
         this.aHa_Sub2_3684.method3738(-15039, 1)
         glMatrixMode(5890)
@@ -114,7 +114,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
         glBindProgramARB(34336, 0)
         glDisable(34336)
         glDisable(34820)
-        aClass61_6222!!.method591(-1)
+        aGlDisplayListFont_6222!!.method591(-1)
     }
 
     override fun method2137(i: Int): Boolean {
@@ -125,9 +125,9 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
 
     override fun method2133(i: Int) {
         anInt6231++
-        if (aClass61_6222 != null) {
+        if (aGlDisplayListFont_6222 != null) {
             if (i >= -75) method2134(true, false)
-            aClass61_6222!!.method594('\u0001', 28666)
+            aGlDisplayListFont_6222!!.method594('\u0001', 28666)
             this.aHa_Sub2_3684.method3738(-15039, 1)
             this.aHa_Sub2_3684.method3771((-103).toByte(), null)
             this.aHa_Sub2_3684.method3738(-15039, 0)
@@ -136,8 +136,8 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
 
     override fun method2134(bool: Boolean, bool_11_: Boolean) {
         anInt6232++
-        if (aClass61_6222 != null) {
-            aClass61_6222!!.method594('\u0000', 28666)
+        if (aGlDisplayListFont_6222 != null) {
+            aGlDisplayListFont_6222!!.method594('\u0000', 28666)
             this.aHa_Sub2_3684.method3738(-15039, 1)
             glMatrixMode(5890)
             if (bool_11_ == false) {

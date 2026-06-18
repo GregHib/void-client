@@ -13,7 +13,7 @@ import jaggl.OpenGL.Companion.glTexGeni
 
 class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : MaterialPass(var_ha_Sub2) {
     private val aClass83_6278: Class83?
-    private var aClass61_6284: Class61? = null
+    private var aGlDisplayListFont_6284: GlDisplayListFont? = null
     private var aClass258_Sub4_6285: GlTexture1D? = null
     override fun method2136(i: Int, i_3_: Int, i_4_: Byte) {
         if (i_4_ >= -42) aClass258_Sub4_6285 = null
@@ -57,7 +57,7 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
             this.aHa_Sub2_3684.method3738(-15039, 0)
         }
         anInt6286++
-        aClass61_6284!!.method594('\u0000', 28666)
+        aGlDisplayListFont_6284!!.method594('\u0000', 28666)
         glMatrixMode(5890)
         glPushMatrix()
         if (bool_6_ == false) {
@@ -67,9 +67,9 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
     }
 
     private fun method2167(i: Int) {
-        aClass61_6284 = Class61(this.aHa_Sub2_3684, 2)
+        aGlDisplayListFont_6284 = GlDisplayListFont(this.aHa_Sub2_3684, 2)
         anInt6283++
-        aClass61_6284!!.method595(109.toByte(), 0)
+        aGlDisplayListFont_6284!!.method595(109.toByte(), 0)
         this.aHa_Sub2_3684.method3738(i + 6366, 1)
         this.aHa_Sub2_3684.method3729(7681, 98.toByte(), 260)
         this.aHa_Sub2_3684.method3762(34168, 768, (-87).toByte(), 0)
@@ -84,8 +84,8 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
             glEnable(3170)
             glEnable(3171)
         }
-        aClass61_6284!!.method591(-1)
-        aClass61_6284!!.method595(117.toByte(), 1)
+        aGlDisplayListFont_6284!!.method591(-1)
+        aGlDisplayListFont_6284!!.method595(117.toByte(), 1)
         this.aHa_Sub2_3684.method3738(-15039, 1)
         if (i != -21405) method2137(-18)
         this.aHa_Sub2_3684.method3729(8448, (-115).toByte(), 8448)
@@ -97,7 +97,7 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
             glDisable(3170)
             glDisable(3171)
         }
-        aClass61_6284!!.method591(i + 21404)
+        aGlDisplayListFont_6284!!.method591(i + 21404)
     }
 
     init {
@@ -118,7 +118,7 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
     }
 
     override fun method2133(i: Int) {
-        aClass61_6284!!.method594('\u0001', 28666)
+        aGlDisplayListFont_6284!!.method594('\u0001', 28666)
         anInt6282++
         if (this.aHa_Sub2_3684.anInt7782 > 0) {
             this.aHa_Sub2_3684.method3738(-15039, 1)

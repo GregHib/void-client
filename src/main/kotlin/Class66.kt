@@ -4035,14 +4035,14 @@ object Class66 {
                     anInt1173 -= 2
                     val i_340_ = anIntArray1149!![anInt1173]
                     val i_341_ = anIntArray1149!![anInt1173 + 1]
-                    anIntArray1149!![anInt1173++] = Class61.method592(false, (-128).toByte(), false, i_340_, i_341_)
+                    anIntArray1149!![anInt1173++] = GlDisplayListFont.method592(false, (-128).toByte(), false, i_340_, i_341_)
                     return
                 }
                 if (i == 3332) {
                     anInt1173 -= 2
                     val i_342_ = anIntArray1149!![anInt1173]
                     val i_343_ = anIntArray1149!![anInt1173 + 1]
-                    anIntArray1149!![anInt1173++] = Class61.method592(true, (-128).toByte(), false, i_342_, i_343_)
+                    anIntArray1149!![anInt1173++] = GlDisplayListFont.method592(true, (-128).toByte(), false, i_342_, i_343_)
                     return
                 }
                 if (i == 3333) {

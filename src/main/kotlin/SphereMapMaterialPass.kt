@@ -9,7 +9,7 @@ import kotlin.math.sqrt
 
 class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : MaterialPass(var_ha_Sub2) {
     private var aBoolean6308 = false
-    private var aClass61_6310: Class61? = null
+    private var aGlDisplayListFont_6310: GlDisplayListFont? = null
     private var aBoolean6316 = false
     private var aClass258_Sub2Array6317: Array<GlTextureCubeMap?>? = null
     override fun method2133(i: Int) {
@@ -22,7 +22,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
             this.aHa_Sub2_3684.method3738(-15039, 1)
             this.aHa_Sub2_3684.method3771((-87).toByte(), null)
             this.aHa_Sub2_3684.method3738(-15039, 0)
-            aClass61_6310!!.method594('\u0001', 28666)
+            aGlDisplayListFont_6310!!.method594('\u0001', 28666)
             aBoolean6316 = false
         } else this.aHa_Sub2_3684.method3775(false, 0, 770, 5890)
         if (i < -75) this.aHa_Sub2_3684.method3729(8448, (-75).toByte(), 8448)
@@ -36,10 +36,10 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
     }
 
     private fun method2176(i: Int) {
-        aClass61_6310 = Class61(this.aHa_Sub2_3684, 2)
+        aGlDisplayListFont_6310 = GlDisplayListFont(this.aHa_Sub2_3684, 2)
         if (i >= -7) method2140(null, 112.toByte(), -64)
         anInt6314++
-        aClass61_6310!!.method595(105.toByte(), 0)
+        aGlDisplayListFont_6310!!.method595(105.toByte(), 0)
         this.aHa_Sub2_3684.method3738(-15039, 1)
         glTexGeni(8192, 9472, 34065)
         glTexGeni(8193, 9472, 34065)
@@ -65,8 +65,8 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
             this.aHa_Sub2_3684.method3775(false, 0, 770, 34167)
         }
         this.aHa_Sub2_3684.method3738(-15039, 0)
-        aClass61_6310!!.method591(-1)
-        aClass61_6310!!.method595(114.toByte(), 1)
+        aGlDisplayListFont_6310!!.method591(-1)
+        aGlDisplayListFont_6310!!.method595(114.toByte(), 1)
         this.aHa_Sub2_3684.method3738(-15039, 1)
         glDisable(3168)
         glDisable(3169)
@@ -88,7 +88,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
             this.aHa_Sub2_3684.method3775(false, 0, 770, 5890)
         }
         this.aHa_Sub2_3684.method3738(-15039, 0)
-        aClass61_6310!!.method591(-1)
+        aGlDisplayListFont_6310!!.method591(-1)
     }
 
     override fun method2136(i: Int, i_6_: Int, i_7_: Byte) {
@@ -109,14 +109,14 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
     override fun method2134(bool: Boolean, bool_8_: Boolean) {
         if (bool_8_ == false) {
             anInt6306++
-            if (aClass61_6310 == null || !bool) this.aHa_Sub2_3684.method3775(false, 0, 770, 34168)
+            if (aGlDisplayListFont_6310 == null || !bool) this.aHa_Sub2_3684.method3775(false, 0, 770, 34168)
             else {
                 if (!aBoolean6308) {
                     this.aHa_Sub2_3684.method3738(-15039, 2)
                     this.aHa_Sub2_3684.method3771((-120).toByte(), (this.aHa_Sub2_3684.aClass258_Sub3_7827))
                     this.aHa_Sub2_3684.method3738(-15039, 0)
                 }
-                aClass61_6310!!.method594('\u0000', 28666)
+                aGlDisplayListFont_6310!!.method594('\u0000', 28666)
                 aBoolean6316 = true
             }
         }

@@ -12,7 +12,7 @@ import jaggl.OpenGL.Companion.glTranslatef
 import jaggl.OpenGL.Companion.glVertex2i
 
 class GlFontDisplayList internal constructor(private val aHa_Sub2_6509: OpenGlRenderer, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, bool: Boolean) : Font(aHa_Sub2_6509, fontDefinition) {
-    private val aClass61_6510: Class61
+    private val aGlDisplayListFont_6510: GlDisplayListFont
     private val aClass258_Sub3_Sub1_6511: GlTexture2DRegion?
     private val aBoolean6512: Boolean
 
@@ -86,7 +86,7 @@ class GlFontDisplayList internal constructor(private val aHa_Sub2_6509: OpenGlRe
             aBoolean6512 = false
         }
         aClass258_Sub3_Sub1_6511!!.method1957(9728, false)
-        aClass61_6510 = Class61(aHa_Sub2_6509, 256)
+        aGlDisplayListFont_6510 = GlDisplayListFont(aHa_Sub2_6509, 256)
         val f = (aClass258_Sub3_Sub1_6511.aFloat9937 / (aClass258_Sub3_Sub1_6511.anInt9940).toFloat())
         val f_30_ = (aClass258_Sub3_Sub1_6511.aFloat9938 / (aClass258_Sub3_Sub1_6511.anInt9939).toFloat())
         for (i_31_ in 0..255) {
@@ -101,7 +101,7 @@ class GlFontDisplayList internal constructor(private val aHa_Sub2_6509: OpenGlRe
             val f_39_ = f_37_ * f_30_
             val f_40_ = (f_36_ + i_33_.toFloat()) * f
             val f_41_ = (f_37_ + i_32_.toFloat()) * f_30_
-            aClass61_6510.method595(123.toByte(), i_31_)
+            aGlDisplayListFont_6510.method595(123.toByte(), i_31_)
             glBegin(7)
             glTexCoord2f(f_38_, aClass258_Sub3_Sub1_6511.aFloat9938 - f_39_)
             glVertex2i(i_35_, i_34_)
@@ -112,7 +112,7 @@ class GlFontDisplayList internal constructor(private val aHa_Sub2_6509: OpenGlRe
             glTexCoord2f(f_40_, aClass258_Sub3_Sub1_6511.aFloat9938 - f_39_)
             glVertex2i(i_35_ + i_33_, i_34_)
             glEnd()
-            aClass61_6510.method591(-1)
+            aGlDisplayListFont_6510.method591(-1)
         }
     }
 
@@ -139,7 +139,7 @@ class GlFontDisplayList internal constructor(private val aHa_Sub2_6509: OpenGlRe
         glEnable(3169)
         glColor4ub((i_43_ shr 16).toByte(), (i_43_ shr 8).toByte(), i_43_.toByte(), (i_43_ shr 24).toByte())
         glTranslatef(i.toFloat(), i_42_.toFloat(), 0.0f)
-        aClass61_6510.method594(c, 28666)
+        aGlDisplayListFont_6510.method594(c, 28666)
         glLoadIdentity()
         glDisable(3168)
         glDisable(3169)
@@ -159,7 +159,7 @@ class GlFontDisplayList internal constructor(private val aHa_Sub2_6509: OpenGlRe
         } else aHa_Sub2_6509.method3729(7681, 117.toByte(), 7681)
         glColor4ub((i_48_ shr 16).toByte(), (i_48_ shr 8).toByte(), i_48_.toByte(), (i_48_ shr 24).toByte())
         glTranslatef(i.toFloat(), i_47_.toFloat(), 0.0f)
-        aClass61_6510.method594(c, 28666)
+        aGlDisplayListFont_6510.method594(c, 28666)
         glLoadIdentity()
         if (aBoolean6512 || bool) aHa_Sub2_6509.method3762(5890, 768, (-87).toByte(), 0)
     }
