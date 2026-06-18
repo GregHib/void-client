@@ -8,11 +8,11 @@ import java.awt.Rectangle
 /*
  * Class378
  */
-class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: hb, idirect3d: IDirect3D?, idirect3ddevice: IDirect3DDevice, class53: Class53?, d3dpresent_parameters: D3DPRESENT_PARAMETERS?, d3dcaps: D3DCAPS?, var_renderConfig: RenderConfig?, js5Archive: Js5Archive?, i_39_: Int) : NativeRenderer(canvas, class53, var_renderConfig, js5Archive, i_39_, 0) {
+class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: hb, idirect3d: IDirect3D?, idirect3ddevice: IDirect3DDevice, d3dSwapChainWrapper: D3dSwapChainWrapper?, d3dpresent_parameters: D3DPRESENT_PARAMETERS?, d3dcaps: D3DCAPS?, var_renderConfig: RenderConfig?, js5Archive: Js5Archive?, i_39_: Int) : NativeRenderer(canvas, d3dSwapChainWrapper, var_renderConfig, js5Archive, i_39_, 0) {
     private val aBooleanArray9784: BooleanArray
     private var anInt9785 = 0
     private var aBooleanArray9786: BooleanArray?
-    private var aClass53_9787: Class53? = null
+    private var aD3dSwapChainWrapper_9787: D3dSwapChainWrapper? = null
     var aHb9788: hb? = null
     private val aD3DLIGHT9789: D3DLIGHT
     @JvmField
@@ -128,7 +128,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
     }
 
     override fun method3827(i: Byte) {
-        if (i > -30) aClass53_9787 = null
+        if (i > -30) aD3dSwapChainWrapper_9787 = null
         this.anIDirect3DDevice9810!!.a(28, (this.aBoolean8148 && this.aBoolean8123 && this.anInt8091 >= 0))
     }
 
@@ -273,7 +273,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
     }
 
     override fun method3881(`object`: Any?, i: Byte, canvas: Canvas?) {
-        if (i.toInt() == 99) aClass53_9787 = `object` as Class53?
+        if (i.toInt() == 99) aD3dSwapChainWrapper_9787 = `object` as D3dSwapChainWrapper?
     }
 
     override fun method3842(bool: Boolean) {
@@ -360,7 +360,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
             anInt9807 = i_38_
             anIDirect3D9793 = idirect3d
             anInt9799 = i
-            aClass53_9787 = class53
+            aD3dSwapChainWrapper_9787 = d3dSwapChainWrapper
             this.anIDirect3DDevice9810 = idirect3ddevice
             this.aD3DCAPS9791 = d3dcaps
             aD3DLIGHT9789 = D3DLIGHT(this.aHb9788)
@@ -536,15 +536,15 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         val i = this.anIDirect3DDevice9810!!.TestCooperativeLevel()
         if (bool) method3880(null, null, (-68).toByte())
         if (i == 0 || -2005530519 == i) {
-            val class53 = this.anObject7919 as Class53
+            val d3dSwapChainWrapper = this.anObject7919 as D3dSwapChainWrapper
             method3922(false)
-            class53.method496(84.toByte())
+            d3dSwapChainWrapper.method496(84.toByte())
             aD3DPRESENT_PARAMETERS9800!!.BackBufferHeight = 0
             aD3DPRESENT_PARAMETERS9800!!.BackBufferWidth = 0
             if (Companion.method3964(aD3DPRESENT_PARAMETERS9800!!, 0, anInt9799, anIDirect3D9793!!, anInt9807, this.anInt8117)) {
                 val i_53_ = this.anIDirect3DDevice9810!!.Reset(aD3DPRESENT_PARAMETERS9800)
                 if (a(i_53_, false)) {
-                    class53.method497(this.anIDirect3DDevice9810!!.b(0), (-107).toByte(), this.anIDirect3DDevice9810!!.c())
+                    d3dSwapChainWrapper.method497(this.anIDirect3DDevice9810!!.b(0), (-107).toByte(), this.anIDirect3DDevice9810!!.c())
                     method3902((-42).toByte())
                     method3882(113.toByte())
                     return true
@@ -738,9 +738,9 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
     @Throws(Exception_Sub1::class)
     override fun method3626(i: Int, i_88_: Int) {
         this.anIDirect3DDevice9810!!.EndScene()
-        if (aClass53_9787!!.method498(-107)) {
+        if (aD3dSwapChainWrapper_9787!!.method498(-107)) {
             anInt9785 = 0
-            if (a(97.toByte(), aClass53_9787!!.method495(91.toByte(), 0))) method3960(false)
+            if (a(97.toByte(), aD3dSwapChainWrapper_9787!!.method495(91.toByte(), 0))) method3960(false)
         } else {
             if (50 < ++anInt9785) throw Exception_Sub1()
             method3960(false)
@@ -829,8 +829,8 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
                 } catch (var_fda: fda) {
                     idirect3ddevice = idirect3d.a(i, i_20_, canvas, i_21_ or 0x20, d3dpresent_parameters)
                 }
-                val class53 = Class53(idirect3ddevice.b(0), idirect3ddevice.c())
-                d3dRenderDevice = D3dRenderDevice(i, i_20_, canvas, var_hb, idirect3d, idirect3ddevice, class53, d3dpresent_parameters, d3dcaps, var_renderConfig, js5Archive, integer)
+                val d3dSwapChainWrapper = D3dSwapChainWrapper(idirect3ddevice.b(0), idirect3ddevice.c())
+                d3dRenderDevice = D3dRenderDevice(i, i_20_, canvas, var_hb, idirect3d, idirect3ddevice, d3dSwapChainWrapper, d3dpresent_parameters, d3dcaps, var_renderConfig, js5Archive, integer)
                 d3dRenderDevice.method3930(26.toByte())
                 d3dRenderDevice_19_ = d3dRenderDevice
             } catch (runtimeexception: RuntimeException) {

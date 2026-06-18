@@ -1,7 +1,10 @@
 import jagdx.IDirect3DSurface
 import jagdx.IDirect3DSwapChain
 
-class Class53 internal constructor(idirect3dswapchain: IDirect3DSwapChain?, idirect3dsurface: IDirect3DSurface?) {
+/*
+ * Class53
+ */
+class D3dSwapChainWrapper internal constructor(idirect3dswapchain: IDirect3DSwapChain?, idirect3dsurface: IDirect3DSurface?) {
     private var anIDirect3DSwapChain963: IDirect3DSwapChain? = null
     private var anIDirect3DSurface964: IDirect3DSurface? = null
     private var anIDirect3DSurface965: IDirect3DSurface? = null
