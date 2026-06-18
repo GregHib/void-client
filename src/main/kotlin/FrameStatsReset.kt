@@ -2950,7 +2950,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SceneryDetailOptionState.anInt6088 = 0
             BufferedMessageQueue.anInt3579 = 0
             Buffer.anInt7195 = 0
-            Class359.anInt4422 = 0
+            TextureAtlasState.anInt4422 = 0
             OpenGlTerrainTile.anInt8254 = 0
             OggBitstreamDecoder.anInt6863 = 0
             MediaStreamClient.anInt3188 = 0
@@ -3144,7 +3144,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ItemDefinitionLoader.anInt2189 = 0
             WorldMapRenderer.anInt4680 = 0
             Class50_Sub3.anInt5244 = 0
-            Class359.anInt4419 = 0
+            TextureAtlasState.anInt4419 = 0
             RandomAccessFileOnDisk.anInt3041 = 0
             GlSpriteRenderer.anInt8433 = 0
             ParticleDefLoader.anInt2463 = 0

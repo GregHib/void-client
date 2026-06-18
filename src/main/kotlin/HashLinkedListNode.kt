@@ -44,7 +44,7 @@ open class HashLinkedListNode : LinkedListNode() {
                 for (i_0_ in 0..2047) {
                     CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_0_] = null
                     KeyboardLayoutCache.aByteArray3300!![i_0_] = 1.toByte()
-                    SoundBankPatch.aClass359Array6802!![i_0_] = null
+                    SoundBankPatch.aTextureAtlasStateArray6802s!![i_0_] = null
                 }
             }
         }

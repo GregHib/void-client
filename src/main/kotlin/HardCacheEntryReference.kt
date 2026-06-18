@@ -1728,7 +1728,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == Class359.aIntRange_4421) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == TextureAtlasState.aIntRange_4421) {
                 SceneProjector.anInt2986 = ResourceLoaderThread.anInt3918
                 if (RadialTextureNode.anInt9341 == 0) {
                     Class37.anInt496 = 0

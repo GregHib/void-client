@@ -68,7 +68,7 @@ abstract class SocketFactory {
                 BufferToggleState.anInt3712 = i_6_
                 ScriptCompilerThread.aSpriteImage_1727 = null
                 TerrainShadowBuilderGl2.anInt6938 = i_1_
-                Class359.method3490(true)
+                TextureAtlasState.method3490(true)
                 val i_9_ = -77 % ((i_4_ - 29) / 34)
                 LocalizedTextTriple.aBoolean3763 = true
             } catch (runtimeexception: RuntimeException) {

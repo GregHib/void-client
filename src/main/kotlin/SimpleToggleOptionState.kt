@@ -96,8 +96,8 @@ class SimpleToggleOptionState : GraphicsOptionState {
                     val i_10_ = i_9_ shr 16
                     val i_11_ = (i_9_ and 0xff78) shr 8
                     val i_12_ = i_9_ and 0xff
-                    SoundBankPatch.aClass359Array6802!![i_8_] = Class359()
-                    val class359 = SoundBankPatch.aClass359Array6802!![i_8_]!!
+                    SoundBankPatch.aTextureAtlasStateArray6802s!![i_8_] = TextureAtlasState()
+                    val class359 = SoundBankPatch.aTextureAtlasStateArray6802s!![i_8_]!!
                     class359.aBoolean4426 = false
                     class359.anInt4420 = (i_11_ shl 14) + ((i_10_ shl 28) + i_12_)
                     class359.anInt4423 = 0

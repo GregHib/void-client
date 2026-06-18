@@ -126,7 +126,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 GlslMaterialPass.anInt6246 = (SequencedGroundDecor.anInt10047.toFloat() + f * (-SequencedGroundDecor.anInt10047 + GlslMaterialPass.anInt6246).toFloat()).toInt()
                 ParticleSystemRenderer.anInt3855 = ((-Class5_Sub3.anInt8368 + ParticleSystemRenderer.anInt3855).toFloat() * f + Class5_Sub3.anInt8368.toFloat()).toInt()
                 MinimapAreaMarkerNode.anInt9701 = (DataHolder.anInt3662.toFloat() + (MinimapAreaMarkerNode.anInt9701 - DataHolder.anInt3662).toFloat() * f).toInt()
-                Class59_Sub2_Sub2.anInt8685 = (Class359.anInt4424.toFloat() + f * (-Class359.anInt4424 + Class59_Sub2_Sub2.anInt8685).toFloat()).toInt()
+                Class59_Sub2_Sub2.anInt8685 = (TextureAtlasState.anInt4424.toFloat() + f * (-TextureAtlasState.anInt4424 + Class59_Sub2_Sub2.anInt8685).toFloat()).toInt()
                 var i_8_ = Class5.anInt4638 - CameraConfigDefinition.anInt3253
                 if (i_8_ <= 8192) {
                     if (i_8_ < -8192) i_8_ += 16384

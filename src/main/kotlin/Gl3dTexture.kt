@@ -87,7 +87,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 ScrollingWidgetComponentNode.aIntRange_8385,
                 SceneEntity.aIntRange_6383,
                 SocketStreamWorker.aIntRange_2665,
-                Class359.aIntRange_4421,
+                TextureAtlasState.aIntRange_4421,
                 AwtKeyboardListener.aIntRange_6528,
                 WorldListEntry.aIntRange_315,
                 Class367_Sub11.aIntRange_7398,

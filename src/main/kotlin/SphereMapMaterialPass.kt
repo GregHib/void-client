@@ -228,12 +228,12 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                 if (bool) player.aBoolean10539 = false
                 else {
                     if (CharCodeMap.anInt9591 == i_22_) throw RuntimeException("s:lr")
-                    val class359 = (Class359().also { SoundBankPatch.aClass359Array6802!![i_22_] = it })
-                    class359.anInt4420 = ((Class90.regionTileY - -(player.anIntArray10317!![0]) shr 6) + ((player.anIntArray10320!![0] + ArbVertexProgram.regionTileX) shr 6 shl 14) + ((player.plane).toInt() shl 28))
-                    if (player.anInt10524 != -1) class359.anInt4423 = player.anInt10524
-                    else class359.anInt4423 = player.aCompassSmoother_10217.method2019((-91).toByte())
-                    class359.aBoolean4426 = player.aBoolean10554
-                    class359.anInt4425 = (player.anInt10275)
+                    val textureAtlasState = (TextureAtlasState().also { SoundBankPatch.aTextureAtlasStateArray6802s!![i_22_] = it })
+                    textureAtlasState.anInt4420 = ((Class90.regionTileY - -(player.anIntArray10317!![0]) shr 6) + ((player.anIntArray10320!![0] + ArbVertexProgram.regionTileX) shr 6 shl 14) + ((player.plane).toInt() shl 28))
+                    if (player.anInt10524 != -1) textureAtlasState.anInt4423 = player.anInt10524
+                    else textureAtlasState.anInt4423 = player.aCompassSmoother_10217.method2019((-91).toByte())
+                    textureAtlasState.aBoolean4426 = player.aBoolean10554
+                    textureAtlasState.anInt4425 = (player.anInt10275)
                     if (player.anInt10553 > 0) LocalizedTextTriple.method2221(player, -28482)
                     LoadingBarRenderer.aPlayerArray5058!![i_22_] = null
                     if (class348_sub49_sub2.readBits((-24).toByte(), 1) != 0) SoundEnvelope.method1538(i_22_, 105.toByte(), class348_sub49_sub2)

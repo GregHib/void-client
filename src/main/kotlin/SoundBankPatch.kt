@@ -402,7 +402,7 @@ class SoundBankPatch : LinkedListNode {
         var anInt6794: Int = 0
         var anInt6801: Int = 0
         @JvmField
-        var aClass359Array6802: Array<Class359?>? = arrayOfNulls<Class359>(2048)
+        var aTextureAtlasStateArray6802s: Array<TextureAtlasState?>? = arrayOfNulls<TextureAtlasState>(2048)
         var anInt6803: Int = 0
 
         fun method2928(bool: Boolean) {
@@ -429,7 +429,7 @@ class SoundBankPatch : LinkedListNode {
 
         @JvmStatic
         fun method2930(i: Byte) {
-            aClass359Array6802 = null
+            aTextureAtlasStateArray6802s = null
             val i_0_ = -14 / ((i - 61) / 43)
         }
 
