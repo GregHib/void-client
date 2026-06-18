@@ -65,8 +65,8 @@ public open class WorldMapLabel(screenAnchorAlignment: ScreenAnchorAlignment?, t
         @JvmStatic
         fun method3568(var_renderer: Renderer?, i: Int) {
             anInt4964++
-            WorldMapRenderer.aFont_4684 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, Class56.anInt1044)
-            GlTexture3D.aFontDefinition_8527 = GlVertexBufferBase.method1151(-25411, var_renderer, Class56.anInt1044)
+            WorldMapRenderer.aFont_4684 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, ConnectionStateType.anInt1044)
+            GlTexture3D.aFontDefinition_8527 = GlVertexBufferBase.method1151(-25411, var_renderer, ConnectionStateType.anInt1044)
             if (i != 4) aFontDefinition_4962 = null
             GameAppletFrame.aFont_20 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, WidgetDefinition.anInt235)
             ParticleEmitterFactory.aFontDefinition_3179 = GlVertexBufferBase.method1151(-25411, var_renderer, WidgetDefinition.anInt235)

@@ -61,12 +61,12 @@ class TimedTileQueueEntry internal constructor(i: Int, i_2_: Int) : HashLinkedLi
         var aBigInteger9657: BigInteger? = Loader.FILE_SERVER_RSA_MODULUS
         var aAbstractModelRenderer_9658: AbstractModelRenderer? = null
         var aAbstractModelRenderer_9659: AbstractModelRenderer? = null
-        var aClass56_9660: Class56? = null
+        var aConnectionStateType_9660: ConnectionStateType? = null
 
         @JvmStatic
         fun method3247(i: Int) {
             if (i > -49) method3247(49)
-            aClass56_9660 = null
+            aConnectionStateType_9660 = null
             aAbstractModelRenderer_9658 = null
             aAbstractModelRenderer_9659 = null
             aBigInteger9657 = null

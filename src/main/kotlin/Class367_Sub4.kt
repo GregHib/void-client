@@ -284,7 +284,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Abstract
                     else if (i_36_ > BlankTextureNode.anIntArray9259!![i_15_]) BlankTextureNode.anIntArray9259!![i_15_] = i_36_
                     val i_37_ = i_22_ shl 9
                     if (i_37_ >= Class64.anIntArray1127!![i_15_]) {
-                        if (Class56.anIntArray1045!![i_15_] < i_37_) Class56.anIntArray1045!![i_15_] = i_37_
+                        if (ConnectionStateType.anIntArray1045!![i_15_] < i_37_) ConnectionStateType.anIntArray1045!![i_15_] = i_37_
                     } else Class64.anIntArray1127!![i_15_] = i_37_
                 }
                 if (!bool_24_) {
@@ -347,7 +347,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Abstract
                 FileIoUtil.anIntArray4097!![i_15_] += 40
                 LinkedListIterator.anIntArray2117!![i_15_] -= 512
                 BlankTextureNode.anIntArray9259!![i_15_] += 512
-                Class56.anIntArray1045!![i_15_] += 512
+                ConnectionStateType.anIntArray1045!![i_15_] += 512
                 Class64.anIntArray1127!![i_15_] -= 512
             }
             return true

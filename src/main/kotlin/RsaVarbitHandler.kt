@@ -77,31 +77,31 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Inte
 
         @JvmStatic
         fun method493(bool: Boolean) {
-            if (MaterialTypeMarker.aClass56Array6515 == null) {
-                MaterialTypeMarker.aClass56Array6515 = Class56.Companion.method528(-91)
-                TimedTileQueueEntry.aClass56_9660 = MaterialTypeMarker.aClass56Array6515!![0]
+            if (MaterialTypeMarker.aConnectionStateTypeArray6515 == null) {
+                MaterialTypeMarker.aConnectionStateTypeArray6515 = ConnectionStateType.Companion.method528(-91)
+                TimedTileQueueEntry.aConnectionStateType_9660 = MaterialTypeMarker.aConnectionStateTypeArray6515!![0]
                 DataHolder.aLong3660 = Class62.method599(-119)
             }
             anInt4900++
             if (NpcConfig.Companion.aResourceLoaderThread_897 == null) Class70.method726(116)
-            val class56 = TimedTileQueueEntry.aClass56_9660!!
+            val class56 = TimedTileQueueEntry.aConnectionStateType_9660!!
             val i = ClientLoadStateMachine.method1278(-28660)
-            if (class56 == TimedTileQueueEntry.aClass56_9660) {
-                Class64_Sub2.aString5420 = TimedTileQueueEntry.aClass56_9660!!.aLocalizedText_1012!!.method2063(AnimationFrameDefinition.anInt6967, 544)
-                if (TimedTileQueueEntry.aClass56_9660!!.aBoolean1016) ConfigFlagUtil.anInt3236 = (i * ((TimedTileQueueEntry.aClass56_9660!!.anInt1021) + -(TimedTileQueueEntry.aClass56_9660!!.anInt1025)) / 100 + (TimedTileQueueEntry.aClass56_9660!!.anInt1025))
-                if (TimedTileQueueEntry.aClass56_9660!!.aBoolean1013) Class64_Sub2.aString5420 += ConfigFlagUtil.anInt3236.toString() + "%"
-            } else if (TimedTileQueueEntry.aClass56_9660 == Class56.Companion.aClass56_1043) {
+            if (class56 == TimedTileQueueEntry.aConnectionStateType_9660) {
+                Class64_Sub2.aString5420 = TimedTileQueueEntry.aConnectionStateType_9660!!.aLocalizedText_1012!!.method2063(AnimationFrameDefinition.anInt6967, 544)
+                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016) ConfigFlagUtil.anInt3236 = (i * ((TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1021) + -(TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025)) / 100 + (TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025))
+                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Class64_Sub2.aString5420 += ConfigFlagUtil.anInt3236.toString() + "%"
+            } else if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.Companion.aConnectionStateType_1043) {
                 NpcConfig.Companion.aResourceLoaderThread_897 = null
                 Buffer.method3379(2, 3)
             } else {
                 Class64_Sub2.aString5420 = class56.aLocalizedText_1015!!.method2063(AnimationFrameDefinition.anInt6967, 544)
-                if (TimedTileQueueEntry.aClass56_9660!!.aBoolean1013) Class64_Sub2.aString5420 += class56.anInt1021.toString() + "%"
+                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Class64_Sub2.aString5420 += class56.anInt1021.toString() + "%"
                 ConfigFlagUtil.anInt3236 = class56.anInt1021
-                if (TimedTileQueueEntry.aClass56_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolder.aLong3660 = Class62.method599(-128)
+                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolder.aLong3660 = Class62.method599(-128)
             }
             if (bool == true) {
                 if (NpcConfig.Companion.aResourceLoaderThread_897 != null) {
-                    NpcConfig.Companion.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aClass56_9660), Class64_Sub2.aString5420, ConfigFlagUtil.anInt3236, DataHolder.aLong3660, false)
+                    NpcConfig.Companion.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aConnectionStateType_9660), Class64_Sub2.aString5420, ConfigFlagUtil.anInt3236, DataHolder.aLong3660, false)
                     if (LoadProgressCounters.anInterface16Array2447 != null) {
                         var i_5_ = PlayerAppearanceUpdateDecoder.anInt4544 - -1
                         while ((LoadProgressCounters.anInterface16Array2447!!.size > i_5_)) {

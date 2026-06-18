@@ -2,7 +2,7 @@ import GlCubeMapTexture.Companion.method243
 import GraphicsOptionState.Companion.method1713
 import FixedFunctionMaterialPass.Companion.method2145
 import TexGenMaterialPass.Companion.method2158
-import Class56.Companion.method527
+import ConnectionStateType.Companion.method527
 import TerrainTile.Companion.method3980
 import java.awt.Container
 

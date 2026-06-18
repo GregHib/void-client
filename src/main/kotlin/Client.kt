@@ -459,8 +459,8 @@ import RsaVarbitHandler.Companion.method493
 import FloorOverlayDefinition.Companion.method501
 import OggMediaStream.Companion.method518
 import OggCacheStream.Companion.method523
-import Class56.Companion.method526
-import Class56.Companion.method527
+import ConnectionStateType.Companion.method526
+import ConnectionStateType.Companion.method527
 import Class57.Companion.method530
 import Class59.Companion.method548
 import Class59_Sub1.Companion.method553

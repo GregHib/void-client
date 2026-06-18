@@ -275,7 +275,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5447 = 0
             Class64_Sub2.anInt5496 = 0
             ActorEntity.anInt8758 = 0
-            Class56.anInt1019 = 0
+            ConnectionStateType.anInt1019 = 0
             Class57.anInt1049 = 0
             GroundDecorSceneEntity.anInt9978 = 0
             GlTextureBase.anInt5103 = 0
@@ -3685,7 +3685,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class76.anInt1280 = 0
             WorldMapElement.anInt4639 = 0
             PackedFlagsAccessor.anInt7099 = 0
-            Class56.anInt1022 = 0
+            ConnectionStateType.anInt1022 = 0
             CameraSplineNode.anInt6856 = 0
             Renderer.anInt4569 = 0
             MouseInputTracker.anInt7451 = 0
@@ -3850,7 +3850,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SceneObjectAnimator.anInt3078 = 0
             Class59_Sub1_Sub1.anInt8652 = 0
             FrameBufferObject.anInt4869 = 0
-            Class56.anInt1014 = 0
+            ConnectionStateType.anInt1014 = 0
             MidiSequencePlayer.anInt8912 = 0
             ByteArrayPool.anInt490 = 0
             NpcConfig.anInt871 = 0
@@ -3991,7 +3991,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ScriptCompilerThread.anInt1732 = 0
             PlayerUpdateDecoder.anInt1912 = 0
             ModelWallEntity.anInt10140 = 0
-            Class56.anInt1020 = 0
+            ConnectionStateType.anInt1020 = 0
             IndexedFileCache.anInt1936 = 0
             VoronoiNoiseTextureNode.anInt9127 = 0
             WorldMapPolygonIconLabel.anInt10176 = 0

@@ -132,7 +132,7 @@ class OutputStream_Sub1 : OutputStream() {
                             LinkedListIterator.anIntArray2117,
                             BlankTextureNode.anIntArray9259,
                             i_16_,
-                            Class56.anIntArray1045,
+                            ConnectionStateType.anIntArray1045,
                             Class367_Sub11.anInt7396,
                             true,
                             LocalPlayerState.anInt1906
@@ -146,7 +146,7 @@ class OutputStream_Sub1 : OutputStream() {
                         FileIoUtil.anIntArray4097,
                         LinkedListIterator.anIntArray2117,
                         BlankTextureNode.anIntArray9259,
-                        Class56.anIntArray1045,
+                        ConnectionStateType.anIntArray1045,
                         Class64.anIntArray1127,
                         (LocalPlayerState.aPlayer_1907!!.plane) - -1,
                         i_16_,

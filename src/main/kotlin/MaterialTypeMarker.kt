@@ -3,7 +3,7 @@
 */
 open class MaterialTypeMarker : ShaderObject() {
     companion object {
-        var aClass56Array6515: Array<Class56?>? = null
+        var aConnectionStateTypeArray6515: Array<ConnectionStateType?>? = null
         var anInt6516: Int = 0
         @JvmField
         var aClass60_6517: Class60? = Class60(4)
@@ -18,7 +18,7 @@ open class MaterialTypeMarker : ShaderObject() {
 
         @JvmStatic
         fun method2613(i: Int) {
-            aClass56Array6515 = null
+            aConnectionStateTypeArray6515 = null
             aClass60_6517 = null
             if (i != -1) method2613(58)
         }

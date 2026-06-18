@@ -98,9 +98,9 @@ class DisplaceTextureNode : AbstractProceduralTextureNode(3, false) {
         @JvmStatic
         fun method3063(bool: Boolean): Int {
             anInt9132++
-            val i = TimedTileQueueEntry.aClass56_9660!!.method525(-125)
+            val i = TimedTileQueueEntry.aConnectionStateType_9660!!.method525(-125)
             if (bool != false) anIntArray9135 = null
-            if (i < MaterialTypeMarker.aClass56Array6515!!.size + -1) TimedTileQueueEntry.aClass56_9660 = MaterialTypeMarker.aClass56Array6515!![1 + i]
+            if (i < MaterialTypeMarker.aConnectionStateTypeArray6515!!.size + -1) TimedTileQueueEntry.aConnectionStateType_9660 = MaterialTypeMarker.aConnectionStateTypeArray6515!![1 + i]
             return 100
         }
     }

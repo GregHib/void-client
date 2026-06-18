@@ -16,7 +16,7 @@ class ResourceLoaderThread : Runnable {
     private var aBoolean3910 = false
     private var aLong3914: Long = 0
     private var anInt3915 = 0
-    private var aClass56_3916: Class56? = null
+    private var aConnectionStateType_3916: ConnectionStateType? = null
     private var aLong3917: Long = 0
     private var anInterface16_3919: Interface16? = null
     private var anInt3920 = 0
@@ -24,26 +24,26 @@ class ResourceLoaderThread : Runnable {
 
     fun method2315(i: Byte): Int {
         anInt3909++
-        if (aClass56_3916 == null) return 0
+        if (aConnectionStateType_3916 == null) return 0
         if (i < 103) aLong3917 = -58L
-        val i_0_ = aClass56_3916!!.method525(-118)
-        if (aClass56_3916!!.aBoolean1016 && (anInt3915 < aClass56_3916!!.anInt1021)) return 1 + anInt3915
-        if (i_0_ < 0 || -1 + MaterialTypeMarker.aClass56Array6515!!.size <= i_0_) return 100
-        if (aClass56_3916!!.anInt1025 == anInt3915) return aClass56_3916!!.anInt1021
-        return aClass56_3916!!.anInt1025
+        val i_0_ = aConnectionStateType_3916!!.method525(-118)
+        if (aConnectionStateType_3916!!.aBoolean1016 && (anInt3915 < aConnectionStateType_3916!!.anInt1021)) return 1 + anInt3915
+        if (i_0_ < 0 || -1 + MaterialTypeMarker.aConnectionStateTypeArray6515!!.size <= i_0_) return 100
+        if (aConnectionStateType_3916!!.anInt1025 == anInt3915) return aConnectionStateType_3916!!.anInt1021
+        return aConnectionStateType_3916!!.anInt1025
     }
 
     @Synchronized
-    fun method2316(class56: Class56?, string: String?, i: Int, l: Long, bool: Boolean) {
+    fun method2316(connectionStateType: ConnectionStateType?, string: String?, i: Int, l: Long, bool: Boolean) {
         try {
             if (bool != false) method2318(9)
             aString3921 = string
             anInt3915 = i
             anInt3897++
             aLong3917 = l
-            aClass56_3916 = class56
+            aConnectionStateType_3916 = connectionStateType
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ae.J(" + (if (class56 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + l + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ae.J(" + (if (connectionStateType != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + l + ',' + bool + ')'))
         }
     }
 
@@ -113,7 +113,7 @@ class ResourceLoaderThread : Runnable {
                 container.getSize()
                 if (RsaVarbitHandler.aFrame4904 === container) RsaVarbitHandler.aFrame4904!!.getInsets()
                 aBoolean3908 = false
-                if (FacingDirectionNode.aRenderer6654 != null && (anInterface16_3907 !is LoadingBarRenderer) && (aClass56_3916!!.method525(-112) < Class56.aClass56_1041!!.method525(-127))) method3556(false)
+                if (FacingDirectionNode.aRenderer6654 != null && (anInterface16_3907 !is LoadingBarRenderer) && (aConnectionStateType_3916!!.method525(-112) < ConnectionStateType.aConnectionStateType_1041!!.method525(-127))) method3556(false)
             } catch (exception: Exception) {
                 return true
             }
@@ -161,10 +161,10 @@ class ResourceLoaderThread : Runnable {
         return aLong3917
     }
 
-    fun method2324(i: Int): Class56? {
+    fun method2324(i: Int): ConnectionStateType? {
         anInt3904++
         if (i <= 45) return null
-        return aClass56_3916
+        return aConnectionStateType_3916
     }
 
     fun method2325(i: Byte): Int {
