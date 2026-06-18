@@ -77,7 +77,7 @@ abstract class GraphicsOptionState {
 
         @JvmStatic
         fun method1713(bool: Boolean, i: Int) {
-            method1728(HardCacheEntryReference.anInt10432, -1, RenderNode.anInt9721, bool, LocTypeDefinition.anInt4017)
+            method1728(HardCacheEntryReference.anInt10432, -1, RenderNodeStatics.anInt9721, bool, LocTypeDefinition.anInt4017)
             if (i == 520) anInt3137++
         }
 

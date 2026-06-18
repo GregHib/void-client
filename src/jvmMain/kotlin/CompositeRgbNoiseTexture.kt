@@ -124,7 +124,7 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
             try {
                 for (i_27_ in 0..127) {
                     for (i_28_ in 0..127) {
-                        RenderNode.anIntArrayArray9723!![i_27_]!![i_28_] = 0
+                        RenderNodeStatics.anIntArrayArray9723!![i_27_]!![i_28_] = 0
                         ProjectileFactory.anIntArrayArray2900!![i_27_]!![i_28_] = 99999999
                     }
                 }
@@ -176,7 +176,7 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
                 GlGroundShaderPass.anIntArray7397!![i_44_] = i_32_
                 CircleDrawer.anIntArray2694!![i_44_++] = i_33_
                 var i_46_: Int
-                var i_45_ = (RenderNode.anIntArrayArray9723!![i_32_ + -i_30_]!![-i_31_ + i_33_].also { i_46_ = it })
+                var i_45_ = (RenderNodeStatics.anIntArrayArray9723!![i_32_ + -i_30_]!![-i_31_ + i_33_].also { i_46_ = it })
                 while (i_32_ != i_20_ || i_33_ != i_21_) {
                     if (i_46_ != i_45_) {
                         GlGroundShaderPass.anIntArray7397!![i_44_] = i_32_
@@ -189,7 +189,7 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
                     if ((0x1 and i_45_) == 0) {
                         if ((0x4 and i_45_) != 0) i_33_--
                     } else i_33_++
-                    i_45_ = RenderNode.anIntArrayArray9723!![-i_30_ + i_32_]!![i_33_ + -i_31_]
+                    i_45_ = RenderNodeStatics.anIntArrayArray9723!![-i_30_ + i_32_]!![i_33_ + -i_31_]
                 }
                 var i_47_ = 0
                 while (i_44_-- > 0) {

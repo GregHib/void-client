@@ -77,7 +77,7 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
             TextureMaterialGroup.method3270(120.toByte())
             if (class46 != null) method1913(!bool, i_2_ + -104, class46)
             if (!bool) method703(i)
-            if (!bool && RenderNode.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNode.anInt9721, 1)
+            if (!bool && RenderNodeStatics.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNodeStatics.anInt9721, 1)
             return class348_sub41
         }
 

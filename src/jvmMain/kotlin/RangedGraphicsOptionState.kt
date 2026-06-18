@@ -77,7 +77,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
             anInt5935++
             OutgoingPacketNode.method3324(FacingDirectionNode.aRenderer6654, 105.toByte(), GlGroundShaderPass.anInt7396.toLong())
             if (i != 85) anInt5943 = -99
-            if (RenderNode.anInt9721 != -1) ActiveMapRegion.method769(RenderNode.anInt9721, 118.toByte())
+            if (RenderNodeStatics.anInt9721 != -1) ActiveMapRegion.method769(RenderNodeStatics.anInt9721, 118.toByte())
             var i_6_ = 0
             while (TerrainShadowBuilderGl3.anInt7008 > i_6_) {
                 if (GzipDecompressor.aBooleanArray2076!![i_6_]) LocDefinitionCache.aBooleanArray3438!![i_6_] = true
@@ -86,7 +86,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
                 i_6_++
             }
             DirectionPath.anInt1064 = GlGroundShaderPass.anInt7396
-            if (RenderNode.anInt9721 != -1) {
+            if (RenderNodeStatics.anInt9721 != -1) {
                 TerrainShadowBuilderGl3.anInt7008 = 0
                 SceneNodeDeque.method842(false)
             }

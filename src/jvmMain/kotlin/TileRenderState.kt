@@ -79,7 +79,7 @@ class TileRenderState {
         fun method2678(i: Int) {
             if (i != -2049) anIntArrayArray4233 = null
             anInt4229++
-            if (RenderNode.aBoolean9722) {
+            if (RenderNodeStatics.aBoolean9722) {
                 val class46 = NpcReference.method2957(NativeLibraryState.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                 if (class46 != null && class46.anObjectArray680 != null) {
                     val class348_sub36 = WidgetActionEntry()
@@ -88,7 +88,7 @@ class TileRenderState {
                     method705(class348_sub36)
                 }
                 HeightMapNoise.anInt3829 = -1
-                RenderNode.aBoolean9722 = false
+                RenderNodeStatics.aBoolean9722 = false
                 Tooltip.anInt4458 = -1
                 if (class46 != null) method1916(-9343, class46)
             }

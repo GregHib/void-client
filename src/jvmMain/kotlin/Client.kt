@@ -357,7 +357,6 @@ import FlipTextureNode.Companion.method3066
 import PerlinNoiseTextureNode.Companion.method3068
 import EdgeDetectTextureNode.Companion.method3071
 import RegionSceneShifter.Companion.method3155
-import HashLinkedListNode.Companion.method3161
 import ParamMap.Companion.method3165
 import ParameterizedText.Companion.method3217
 import CharCodeMap.Companion.method3220
@@ -519,7 +518,6 @@ import RasterSprite.Companion.method167
 import Renderer.Companion.method3680
 import OpenGlRenderer.Companion.method3736
 import NativeRenderer.Companion.method3870
-import RenderNode.Companion.method3285
 import NativeRenderNode.Companion.method3288
 import OpenGlRenderNode.Companion.method3295
 import TerrainTile.Companion.method3988
@@ -716,7 +714,7 @@ class Client : GameAppletFrame() {
         method328(i.toInt() xor 0x6c)
         method1604(11868)
         method1246(-83)
-        method3161(0)
+        HashLinkedListNodeStatics.method3161(0)
         LinkedListNodeStatics.method2713(0)
         method1004(16.toByte())
         method3478(false)
@@ -911,7 +909,7 @@ class Client : GameAppletFrame() {
         method2479(i + 19316)
         method2484(0)
         method1198(1010)
-        method3285(88)
+        RenderNodeStatics.method3285(88)
         method1355(-108)
         method731()
         method1126(32)
@@ -1759,7 +1757,7 @@ class Client : GameAppletFrame() {
                 } else TexGenMaterialPass.method2161((-97).toByte(), 5L)
             } else TexGenMaterialPass.method2161((-104).toByte(), 10L)
             if (MapElementDefinitionCache.aBoolean3988) method1416(5)
-            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(-32350) == 1 && WorldMapRenderer.anInt4674 == 3 && RenderNode.anInt9721 != -1) {
+            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(-32350) == 1 && WorldMapRenderer.anInt4674 == 3 && RenderNodeStatics.anInt9721 != -1) {
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 0)
                 method243(37)
             }
@@ -2073,14 +2071,14 @@ class Client : GameAppletFrame() {
                                     RegionSceneLoader.aWidgetComponent_3701 = null
                                     CalendarUtil.aWidgetComponent_4130 = null
                                 }
-                                HashLinkedListNode.anInt7059 = 0
+                                HashLinkedListNodeStatics.anInt7059 = 0
                                 ParticleEmitterFactory.aBoolean3174 = false
                                 WorldMapScene.aBoolean3103 = false
                                 if (!ScrollbarComponent.aBoolean8335) method661(111.toByte())
                             }
                             var bool: Boolean
                             bool = (GlTexture1D.aInputTracker_8552!!.method3597(true) + i_51_) >= i_45_ && GlTexture1D.aInputTracker_8552!!.method3594(89.toByte()) + i_52_ >= i_46_ && (GlTexture1D.aInputTracker_8552!!.method3597(true) + i_51_) < i_47_ && GlTexture1D.aInputTracker_8552!!.method3594(74.toByte()) + i_52_ < i_48_
-                            if (!RenderNode.aBoolean9722 && bool) {
+                            if (!RenderNodeStatics.aBoolean9722 && bool) {
                                 if (class46.anInt719 >= 0) Tooltip.anInt4458 = class46.anInt719
                                 else if (class46.aBoolean776) Tooltip.anInt4458 = -1
                             }
@@ -2136,7 +2134,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray803
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
-                                if (RegionSceneLoader.aWidgetComponent_3701 != null || ScrollbarComponent.aBoolean8335 || ((class46.anInt765 != TimedRecordAccessor.anInt7102) && HashLinkedListNode.anInt7059 > 0)) {
+                                if (RegionSceneLoader.aWidgetComponent_3701 != null || ScrollbarComponent.aBoolean8335 || ((class46.anInt765 != TimedRecordAccessor.anInt7102) && HashLinkedListNodeStatics.anInt7059 > 0)) {
                                     bool_54_ = false
                                     bool_53_ = false
                                     bool = false
@@ -2189,7 +2187,7 @@ class Client : GameAppletFrame() {
                                                     i_66_ = ((LocalPlayerState.aPlayer_1907!!.x) - i_68_ shr 9) + (i_64_ shr 2)
                                                     i_67_ = ((LocalPlayerState.aPlayer_1907!!.y) - i_68_ shr 9) - (i_65_ shr 2)
                                                 }
-                                                if (RenderNode.aBoolean9722 && ((WidgetTextConfig.anInt500 and 0x40) != 0)) {
+                                                if (RenderNodeStatics.aBoolean9722 && ((WidgetTextConfig.anInt500 and 0x40) != 0)) {
                                                     val class46_69_ = (NpcReference.method2957(NativeLibraryState.anInt169, (-54).toByte(), OrientationRotator.anInt2046))
                                                     if (class46_69_ != null) MinimapPolygonDrawer.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), ItemNameResolver.aString5001, 1L, (FloatBuffer.anInt9747))
                                                     else method2678(-2049)
@@ -2223,28 +2221,28 @@ class Client : GameAppletFrame() {
                                                     InputStream_Sub2.anInt85 = `is`[1]
                                                     NpcType.anInt1404 = `is`[2]
                                                 }
-                                                HashLinkedListNode.anInt7059 = 1
+                                                HashLinkedListNodeStatics.anInt7059 = 1
                                                 SoundBankPatch.aBoolean6788 = false
                                                 SceneEntityModel.anInt6411 = GlTexture1D.aInputTracker_8552!!.method3597(true)
                                                 ModelDefinitionCache.anInt2872 = GlTexture1D.aInputTracker_8552!!.method3594(72.toByte())
                                             }
-                                        } else if (bool_53_ && (HashLinkedListNode.anInt7059 > 0)) {
-                                            if (HashLinkedListNode.anInt7059 == 1 && ((SceneEntityModel.anInt6411 != GlTexture1D.aInputTracker_8552!!.method3597(true)) || (ModelDefinitionCache.anInt2872 != (GlTexture1D.aInputTracker_8552!!.method3594(117.toByte()))))) {
+                                        } else if (bool_53_ && (HashLinkedListNodeStatics.anInt7059 > 0)) {
+                                            if (HashLinkedListNodeStatics.anInt7059 == 1 && ((SceneEntityModel.anInt6411 != GlTexture1D.aInputTracker_8552!!.method3597(true)) || (ModelDefinitionCache.anInt2872 != (GlTexture1D.aInputTracker_8552!!.method3594(117.toByte()))))) {
                                                 ParticleDefLoader.anInt2464 = WidgetActionEntry.anInt6992
                                                 OpenGlTerrainTile.anInt8237 = DebugOverlayRenderer.anInt3170
-                                                HashLinkedListNode.anInt7059 = 2
+                                                HashLinkedListNodeStatics.anInt7059 = 2
                                             }
-                                            if (HashLinkedListNode.anInt7059 == 2) {
+                                            if (HashLinkedListNodeStatics.anInt7059 == 2) {
                                                 SoundBankPatch.aBoolean6788 = true
                                                 OpenGlModel.method689((-59).toByte(), (ParticleDefLoader.anInt2464 + (((SceneEntityModel.anInt6411) - (GlTexture1D.aInputTracker_8552!!.method3597(true))).toDouble() * 2.0 / (MapRegionLoader.aFloat1249).toDouble()).toInt()))
                                                 method2170((OpenGlTerrainTile.anInt8237 - (((ModelDefinitionCache.anInt2872) - (GlTexture1D.aInputTracker_8552!!.method3594(83.toByte()))).toDouble() * 2.0 / (MapRegionLoader.aFloat1249).toDouble()).toInt()), 3.toByte())
                                             }
                                         } else {
-                                            if (HashLinkedListNode.anInt7059 > 0 && !SoundBankPatch.aBoolean6788) {
+                                            if (HashLinkedListNodeStatics.anInt7059 > 0 && !SoundBankPatch.aBoolean6788) {
                                                 if (((WallEntity.anInt8770 == 1) || method2485(-124)) && FileExistsCondition.anInt4776 > 2) method191(true, SceneEntityModel.anInt6411, ModelDefinitionCache.anInt2872)
                                                 else if (method913(117.toByte())) method191(true, SceneEntityModel.anInt6411, ModelDefinitionCache.anInt2872)
                                             }
-                                            HashLinkedListNode.anInt7059 = 0
+                                            HashLinkedListNodeStatics.anInt7059 = 0
                                         }
                                         continue
                                     }

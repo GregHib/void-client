@@ -126,7 +126,7 @@ class SceneNodeDeque {
                 i = NativeTerrainTile.method4008((-124).toByte())
                 i_1_ = method260(false)
             }
-            ParticleAmountConfig.method1252(i_1_, RenderNode.anInt9721, i_1_, -1, i, i + LocTypeDefinition.anInt4017, i_1_ - -HardCacheEntryReference.anInt10432, 116.toByte(), i)
+            ParticleAmountConfig.method1252(i_1_, RenderNodeStatics.anInt9721, i_1_, -1, i, i + LocTypeDefinition.anInt4017, i_1_ - -HardCacheEntryReference.anInt10432, 116.toByte(), i)
             if (RectangleRegion.aWidgetComponentArray1942 != null) {
                 method3064(i, SpriteLoadValidator.anInt4792, true, AbstractTileShape.anInt6555, i_1_, CalendarUtil.aWidgetComponent_4130!!.anInt760, i + LocTypeDefinition.anInt4017, false, RectangleRegion.aWidgetComponentArray1942, -1412584499, i_1_ - -HardCacheEntryReference.anInt10432)
                 RectangleRegion.aWidgetComponentArray1942 = null
@@ -226,7 +226,7 @@ class SceneNodeDeque {
                             val class348_sub49_8_ = IntHashSet.aClass348_Sub51_3959!!.method3427(24)
                             class348_sub49_sub2.writeByte(false, (class348_sub49_8_.anInt7197))
                             class348_sub49_sub2.writeBytes(class348_sub49_8_.anInt7197, 0, (class348_sub49_8_.aByteArray7154!!), 74)
-                            RenderNode.aBoolean9719 = true
+                            RenderNodeStatics.aBoolean9719 = true
                             val class348_sub49_9_ = ByteBuffer(NoiseTextureNode.aClass348_Sub4_9264!!.method2746((-76).toByte()))
                             NoiseTextureNode.aClass348_Sub4_9264!!.method2747(1, class348_sub49_9_)
                             class348_sub49_sub2.writeBytes((class348_sub49_9_.aByteArray7154!!).size, 0, (class348_sub49_9_.aByteArray7154!!), -73)

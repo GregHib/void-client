@@ -120,7 +120,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             GlRectangleTexture.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_18_)
             GameAppletFrame.anIntArray38 = IntArray(i_18_)
             StringCacheNode.aByteArrayArray7212 = null
-            RenderNode.anIntArray9724 = IntArray(i_18_)
+            RenderNodeStatics.anIntArray9724 = IntArray(i_18_)
             ImageFrameCache.anIntArray4031 = null
             DragDropController.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_18_)
             if (i >= -47) anInt9349 = -54
@@ -134,7 +134,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
                     NativeSprite.anIntArray5192!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("m" + i_21_ + "_" + i_22_, 0)
                     GameAppletFrame.anIntArray38!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("l" + i_21_ + "_" + i_22_, 0)
                     LocalizedTextTriple.anIntArray3759!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("um" + i_21_ + "_" + i_22_, 0)
-                    RenderNode.anIntArray9724!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("ul" + i_21_ + "_" + i_22_, 0)
+                    RenderNodeStatics.anIntArray9724!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("ul" + i_21_ + "_" + i_22_, 0)
                     i_18_++
                     i_22_++
                 }

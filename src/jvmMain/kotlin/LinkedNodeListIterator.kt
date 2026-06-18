@@ -3,7 +3,6 @@ import GraphicsOptionState.Companion.method1713
 import SceneEntity.Companion.method2385
 import ChatCommandProcessor.method703
 import SpriteBlitter.method882
-import RenderNode.Companion.method3284
 
 /* Class107 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -118,7 +117,7 @@ class LinkedNodeListIterator {
         fun method1006(bool: Boolean, i: Byte) {
             anInt1655++
             if (bool) {
-                if (RenderNode.anInt9721 != -1) method235(RenderNode.anInt9721, ((-108).toByte()).toByte())
+                if (RenderNodeStatics.anInt9721 != -1) method235(RenderNodeStatics.anInt9721, ((-108).toByte()).toByte())
                 var class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as? RegionSceneShifter
                 while (class348_sub41 != null) {
                     if (!class348_sub41.method2712(4.toByte())) {
@@ -128,13 +127,13 @@ class LinkedNodeListIterator {
                     ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
                     class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as? RegionSceneShifter)
                 }
-                RenderNode.anInt9721 = -1
+                RenderNodeStatics.anInt9721 = -1
                 MinimapSpriteRenderer.aHashtable_4915 = Hashtable(8)
                 method882(11.toByte())
-                RenderNode.anInt9721 = FloorOverlayDefinition.anInt970
+                RenderNodeStatics.anInt9721 = FloorOverlayDefinition.anInt970
                 method1713(false, 520)
                 TextureCache.method3466(-119)
-                method703(RenderNode.anInt9721)
+                method703(RenderNodeStatics.anInt9721)
             }
             ProjectileFactory.aBoolean2895 = true
             if (i < 49) anInt1651 = 10
@@ -305,7 +304,7 @@ class LinkedNodeListIterator {
         }
 
         fun method1010(bool: Boolean, bool_42_: Boolean) {
-            RenderNode.aAbstractCameraTransform_9720!!.method898(CameraRotationStub.aRenderer326!!.method3640())
+            RenderNodeStatics.aAbstractCameraTransform_9720!!.method898(CameraRotationStub.aRenderer326!!.method3640())
             anInt1642++
             val `is` = CameraRotationStub.aRenderer326!!.Y()
             Gl3dTexture.anInt8630 = `is`[2]
@@ -314,10 +313,10 @@ class LinkedNodeListIterator {
             SimpleToggleOptionState.anInt5886 = `is`[1]
             if (bool_42_) {
                 CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
-                method3284(true, ModelWallEntity.aDouble10120)
+                RenderNodeStatics.method3284(true, ModelWallEntity.aDouble10120)
             } else {
                 CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
-                method3284(true, GlCubeMapTexture.aDouble8621)
+                RenderNodeStatics.method3284(true, GlCubeMapTexture.aDouble8621)
             }
             if (bool != false) method1010(true, true)
         }

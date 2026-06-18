@@ -731,8 +731,8 @@ open class ByteBuffer : LinkedListNode {
                     ItemDefinition.aAbstractGameSocket_2773!!.method1700(36.toByte())
                     ItemDefinition.aAbstractGameSocket_2773 = null
                 }
-                if (i_71_ == 3) CacheEntryReference.method3198((GlBufferObject.anInt4737 != RenderNode.anInt9721), (-45).toByte())
-                if (i_71_ == 7) method1006((RenderNode.anInt9721 != FloorOverlayDefinition.anInt970), 102.toByte())
+                if (i_71_ == 3) CacheEntryReference.method3198((GlBufferObject.anInt4737 != RenderNodeStatics.anInt9721), (-45).toByte())
+                if (i_71_ == 7) method1006((RenderNodeStatics.anInt9721 != FloorOverlayDefinition.anInt970), 102.toByte())
                 if (i_71_ == 5) {
                     if (NullOggStream.aString9043 == null) method1213(OpenGlModel.aString5600, TextureGenerator.aString2496, -124)
                     else method1372(-1)

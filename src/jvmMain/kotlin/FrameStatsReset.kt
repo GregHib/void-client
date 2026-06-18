@@ -616,7 +616,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WidgetCache.anInt1489 = 0
             NativeShaderProgram.anInt9771 = 0
             HardCacheEntryReference.anInt10433 = 0
-            RenderNode.anInt9717 = 0
+            RenderNodeStatics.anInt9717 = 0
             ColourKeyTextureNode.anInt9355 = 0
             NoiseTextureGenerator.anInt1075 = 0
             RsaPacketDecoder.anInt4221 = 0
@@ -765,7 +765,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WorldMapElement.anInt4634 = 0
             LinkedNodeListIterator.anInt1654 = 0
             HeadIconRenderer.anInt2065 = 0
-            HashLinkedListNode.anInt7062 = 0
+            HashLinkedListNodeStatics.anInt7062 = 0
             OpenGlRenderer.anInt7599 = 0
             SceneEntityModel.anInt6407 = 0
             ScrollingWidgetComponentNode.anInt8382 = 0
@@ -4109,7 +4109,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
                 j++
             }
 
-            RenderNode.aBoolean9722 = false
+            RenderNodeStatics.aBoolean9722 = false
             SoundBankPatch.method2928(true)
             OpenGlRenderNode.anInt10483 = -60 + (Math.random() * 120.0).toInt()
             WalkingTypeUtil.anInt3310 = -55 + (Math.random() * 110.0).toInt()
@@ -4142,7 +4142,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlGroundShaderPass.anInt7403 = 0
             for (l in IsaacCipher.anIntArray1303!!.indices) if (!GlslEnvMaterialPass.aBooleanArray6270!![l]) IsaacCipher.anIntArray1303!![l] = -1
 
-            if (RenderNode.anInt9721 != -1) GlTextureBase.method235(RenderNode.anInt9721, (-105).toByte())
+            if (RenderNodeStatics.anInt9721 != -1) GlTextureBase.method235(RenderNodeStatics.anInt9721, (-105).toByte())
             var class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?
             while (class348_sub41 != null) {
                 if (!class348_sub41.method2712(4.toByte())) {
@@ -4153,7 +4153,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
                 class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as RegionSceneShifter?
             }
 
-            RenderNode.anInt9721 = -1
+            RenderNodeStatics.anInt9721 = -1
             MinimapSpriteRenderer.aHashtable_4915 = Hashtable(8)
             method882(11.toByte())
             SpriteRenderable.aWidgetComponent_4730 = null

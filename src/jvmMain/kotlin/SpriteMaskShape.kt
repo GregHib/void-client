@@ -990,7 +990,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                     InterfaceComponentGroup.method3243(-22, class348_sub47)
                                     ParticleEmitterListNode.method3275(1, i_75_, i_74_)
                                 }
-                                if (RenderNode.aBoolean9722) TileRenderState.method2678(-2049)
+                                if (RenderNodeStatics.aBoolean9722) TileRenderState.method2678(-2049)
                                 if (ResourceLoaderThread.aWidgetComponent_3913 == null || GroundItemRenderState.anInt1656 != 0) break
                                 ConfigFlagUtil.method1916(-9343, ResourceLoaderThread.aWidgetComponent_3913!!)
                             }

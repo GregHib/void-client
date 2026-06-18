@@ -203,9 +203,9 @@ class NpcConfig {
                 if (bool_14_) class64!!.H(anInt893, anInt954, anInt890)
                 class64!!.s(i_4_)
             } else class64 = class64!!.method614(0.toByte(), i_4_, true)
-            HashLinkedListNode.aModelOrSpriteHolder_7058!!.aAbstractModel_119 = class64
-            HashLinkedListNode.aModelOrSpriteHolder_7058!!.aRenderNode118 = var_renderNode
-            return HashLinkedListNode.aModelOrSpriteHolder_7058
+            HashLinkedListNodeStatics.aModelOrSpriteHolder_7058!!.aAbstractModel_119 = class64
+            HashLinkedListNodeStatics.aModelOrSpriteHolder_7058!!.aRenderNode118 = var_renderNode
+            return HashLinkedListNodeStatics.aModelOrSpriteHolder_7058
         } catch (runtimeexception: RuntimeException) {
             runtimeexception.printStackTrace()
             throw TextureLoadException.method2929(runtimeexception, ("iv.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + (if (var_terrainTile_6_ != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))

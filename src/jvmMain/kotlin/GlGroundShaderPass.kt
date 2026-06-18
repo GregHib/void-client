@@ -222,7 +222,7 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
                             val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
                             ParticleSystemRenderer.aCanvas3869!!.setLocation(insets.left - -ModelResourceBundle.anInt7129, TimingCounters.anInt4167 + insets.top)
                         } else ParticleSystemRenderer.aCanvas3869!!.setLocation((ModelResourceBundle.anInt7129), TimingCounters.anInt4167)
-                        if (RenderNode.anInt9721 != -1) method1713(true, 520)
+                        if (RenderNodeStatics.anInt9721 != -1) method1713(true, 520)
                         ScreenBorderFiller.method1170((-78).toByte())
                     } else {
                         /* empty */

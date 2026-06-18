@@ -295,14 +295,14 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             } else {
                 if (i_14_ == 0 && ((WallEntity.anInt8770 == 1 && FileExistsCondition.anInt4776 > 2) || method2485(-100))) i_14_ = 2
                 if (i_14_ == 2 && FileExistsCondition.anInt4776 > 0 && class348_sub45 != null) {
-                    if (RegionSceneLoader.aWidgetComponent_3701 == null && HashLinkedListNode.anInt7059 == 0) TextureFormatInfo.method2291((-124).toByte(), class348_sub45.method3308((-127).toByte()), class348_sub45.method3311(-104))
+                    if (RegionSceneLoader.aWidgetComponent_3701 == null && HashLinkedListNodeStatics.anInt7059 == 0) TextureFormatInfo.method2291((-124).toByte(), class348_sub45.method3308((-127).toByte()), class348_sub45.method3311(-104))
                     else NpcEntityUpdater.anInt3655 = 2
                 }
                 if (i_14_ == 0) {
                     if (IntHashSet.aClass348_Sub42_Sub12_3963 != null) method1731(1)
-                    else if (RenderNode.aBoolean9722) TileRenderState.method2678(-2049)
+                    else if (RenderNodeStatics.aBoolean9722) TileRenderState.method2678(-2049)
                 }
-                if (RegionSceneLoader.aWidgetComponent_3701 == null && HashLinkedListNode.anInt7059 == 0) {
+                if (RegionSceneLoader.aWidgetComponent_3701 == null && HashLinkedListNodeStatics.anInt7059 == 0) {
                     RectangleRegion.aClass348_Sub42_Sub12_1946 = null
                     NpcEntityUpdater.anInt3655 = 0
                 }

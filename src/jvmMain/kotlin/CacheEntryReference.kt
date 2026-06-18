@@ -56,7 +56,7 @@ abstract class CacheEntryReference internal constructor(@JvmField var anInt9545:
             anInt9547++
             if (i.toInt() != -45) aShort9555 = (-74).toShort()
             if (bool) {
-                if (RenderNode.anInt9721 != -1) GlTextureBase.method235(RenderNode.anInt9721, (-113).toByte())
+                if (RenderNodeStatics.anInt9721 != -1) GlTextureBase.method235(RenderNodeStatics.anInt9721, (-113).toByte())
                 var class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?
                 while (class348_sub41 != null) {
                     if (!class348_sub41.method2712(4.toByte())) {
@@ -66,13 +66,13 @@ abstract class CacheEntryReference internal constructor(@JvmField var anInt9545:
                     ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
                     class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as RegionSceneShifter?)
                 }
-                RenderNode.anInt9721 = -1
+                RenderNodeStatics.anInt9721 = -1
                 MinimapSpriteRenderer.aHashtable_4915 = Hashtable(8)
                 SpriteBlitter.method882(11.toByte())
-                RenderNode.anInt9721 = GlBufferObject.anInt4737
+                RenderNodeStatics.anInt9721 = GlBufferObject.anInt4737
                 method1713(false, 520)
                 TextureCache.method3466(100)
-                ChatCommandProcessor.method703(RenderNode.anInt9721)
+                ChatCommandProcessor.method703(RenderNodeStatics.anInt9721)
             }
             ProjectileFactory.aBoolean2895 = false
             TextureGenerator.aString2496 = ""

@@ -27,7 +27,7 @@ class MinimapAreaMarkerNode : HashLinkedListNode() {
             if (CalendarUtil.anInt4135 < 65535) {
                 val class348_sub1 = soundEnvelope.aClass348_Sub1_2745
                 WaterDetailOptionState.aSoundEnvelopeArray5993!![CalendarUtil.anInt4135] = soundEnvelope
-                RenderNode.aBooleanArray9718!![CalendarUtil.anInt4135] = false
+                RenderNodeStatics.aBooleanArray9718!![CalendarUtil.anInt4135] = false
                 CalendarUtil.anInt4135++
                 var i = soundEnvelope.anInt2731
                 if (soundEnvelope.aBoolean2749) i = 0

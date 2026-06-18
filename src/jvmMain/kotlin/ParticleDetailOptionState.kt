@@ -124,7 +124,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1797(i: Int, i_11_: Int, widgetComponent: WidgetComponent, i_12_: Byte) {
-            if (RenderNode.aBoolean9722) {
+            if (RenderNodeStatics.aBoolean9722) {
                 val class254 = (if (ParticleEmitterFactory.anInt3176 != -1) ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364) else null)
                 if (Client.method105(widgetComponent)!!.method3303(1) && (WidgetTextConfig.anInt500 and 0x20) != 0 && (class254 == null || (widgetComponent.method428(class254.anInt3256, ParticleEmitterFactory.anInt3176, -128) != class254.anInt3256))) {
                     ItemModelDefinition.anInt436++

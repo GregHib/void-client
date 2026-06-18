@@ -126,12 +126,12 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             if (bool_5_) {
                 HardCacheEntryReference.aLongArrayArrayArray10431 = Array<Array<LongArray?>?>(i_1_) { Array<LongArray?>(i_2_) { LongArray(i_3_) } }
                 WaterDetailOptionState.aSoundEnvelopeArray5993 = arrayOfNulls<SoundEnvelope>(65535)
-                RenderNode.aBooleanArray9718 = BooleanArray(65535)
+                RenderNodeStatics.aBooleanArray9718 = BooleanArray(65535)
                 CalendarUtil.anInt4135 = 0
             } else {
                 HardCacheEntryReference.aLongArrayArrayArray10431 = null
                 WaterDetailOptionState.aSoundEnvelopeArray5993 = null
-                RenderNode.aBooleanArray9718 = null
+                RenderNodeStatics.aBooleanArray9718 = null
                 CalendarUtil.anInt4135 = 0
             }
             method1879(false)

@@ -243,7 +243,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 method94("Entered tk0", 101)
                                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
                                 method243(37)
-                                RenderNode.aBoolean9719 = false
+                                RenderNodeStatics.aBoolean9719 = false
                                 return
                             } else method94("Failed to enter tk0", 69)
                             return
@@ -254,7 +254,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 method94("Entered tk1", -65)
                                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 1)
                                 method243(i.toInt() xor 0x6b.inv())
-                                RenderNode.aBoolean9719 = false
+                                RenderNodeStatics.aBoolean9719 = false
                                 return
                             } else method94("Failed to enter tk1", -56)
                             return
@@ -265,7 +265,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 method94("Entered tk2", i + 151)
                                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 2)
                                 method243(37)
-                                RenderNode.aBoolean9719 = false
+                                RenderNodeStatics.aBoolean9719 = false
                             } else {
                                 method94("Failed to enter tk2", i.toInt() xor 0x22)
                                 return
@@ -278,7 +278,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 method94("Entered tk3", 78)
                                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 3)
                                 method243(37)
-                                RenderNode.aBoolean9719 = false
+                                RenderNodeStatics.aBoolean9719 = false
                                 return
                             } else method94("Failed to enter tk3", 54)
                             return
@@ -289,7 +289,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 method94("Entered tk5", -108)
                                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 5)
                                 method243(37)
-                                RenderNode.aBoolean9719 = false
+                                RenderNodeStatics.aBoolean9719 = false
                             } else {
                                 method94("Failed to enter tk5", 63)
                                 return
@@ -304,7 +304,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 else {
                                     IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i_6_)
                                     method243(37)
-                                    RenderNode.aBoolean9719 = false
+                                    RenderNodeStatics.aBoolean9719 = false
                                     method94(("maxbuildarea=" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350)), 98)
                                     return
                                 }
@@ -598,7 +598,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 val i_21_ = (RegionSceneShifter.method3156(true, string.substring(1 + i_20_)))
                                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_21_)
                                 method243(37)
-                                RenderNode.aBoolean9719 = false
+                                RenderNodeStatics.aBoolean9719 = false
                                 LoadingScreenImageNode.method3179(i + 79)
                                 if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350) == i_21_) {
                                     method94("Successfully changed ortho mode", -82)

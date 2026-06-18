@@ -13,7 +13,7 @@ object CacheStateResetter {
     fun method175(i: Byte) {
         LocalizedTextTriple.anInt3760 = -1
         WidgetDefinition.anSpriteDrawTarget_252 = null
-        RenderNode.aAbstractCameraTransform_9720 = null
+        RenderNodeStatics.aAbstractCameraTransform_9720 = null
         LocalPlayerState.anIntArray1909 = null
         NpcSpawnDecoder.anSpriteDrawTargetArray1525 = null
         CameraRotationStub.aRenderer326 = null

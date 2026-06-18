@@ -180,7 +180,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!SizeBoundedSoftCache.aBoolean2329) 0 else 1)
                         InterfaceComponentGroup.method3243(i + -11501, class348_sub47)
                     }
-                    if (!RenderNode.aBoolean9719) {
+                    if (!RenderNodeStatics.aBoolean9719) {
                         GameClock.anInt1110++
                         val class348_sub47 = method2148((FloatBuffer.aFontMetaRef_9743), (TheoraVideoStream.aIsaacCipher_9029), -113)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
@@ -189,7 +189,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154!!, 82)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(96, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) + -i_14_)
                         InterfaceComponentGroup.method3243(i + -11473, class348_sub47)
-                        RenderNode.aBoolean9719 = true
+                        RenderNodeStatics.aBoolean9719 = true
                     }
                     if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null) {
                         if (WeaveTextureNode.anInt9282 == 2) method241(127.toByte())
@@ -355,7 +355,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                             ScrollingWidgetComponentNode.aBoolean8386 = false
                             method198(null, false, -1, -1)
                             method1343(-1, null, 1, -1)
-                            if (!RenderNode.aBoolean9722) Tooltip.anInt4458 = -1
+                            if (!RenderNodeStatics.aBoolean9722) Tooltip.anInt4458 = -1
                             FloatGrid.method1583((-73).toByte())
                             ResourceLoaderThread.anInt3918++
                             if (WorldMapScene.aBoolean3103) {
@@ -401,7 +401,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                                 }
                                 method705(class348_sub36)
                             }
-                            if (HeapDiagnosticsHolder.aWidgetComponent_2249 == null) HashLinkedListNode.anInt7059 = 0
+                            if (HeapDiagnosticsHolder.aWidgetComponent_2249 == null) HashLinkedListNodeStatics.anInt7059 = 0
                             if (RegionSceneLoader.aWidgetComponent_3701 != null) method2708(-30206)
                             if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, i xor 0x2cd5.inv()) && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -121) && NodeDequeHolder.anInt1565 != 0) {
                                 var i_30_ = ((LocalPlayerState.aPlayer_1907!!.plane) - NodeDequeHolder.anInt1565)

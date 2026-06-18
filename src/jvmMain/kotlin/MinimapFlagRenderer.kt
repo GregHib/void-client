@@ -51,7 +51,7 @@ object MinimapFlagRenderer {
         CameraRotationStub.aRenderer326 = var_renderer
         NpcConfig.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
         MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
-        RenderNode.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
+        RenderNodeStatics.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
         HardKeyedCacheEntryReference.anInt10444 = i_4_
         ByteBuffer.anInt7207 = 0
         SoundEnvelope.anInt2747 = i

@@ -3,7 +3,6 @@ import SocketStreamWorker.Companion.method1469
 import GlTexture3D.Companion.method1960
 import MinimapTileEntry.Companion.method383
 import ScrollingNoiseTexture.Companion.method560
-import RenderNode.Companion.method3284
 import kotlin.math.max
 import kotlin.math.min
 
@@ -195,7 +194,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                     if (ByteBuffer.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3687(WidgetDefinition.anSpriteDrawTarget_252)
                                     CameraRotationStub.aRenderer326!!.F(-i_33_, -i_34_)
                                     CameraRotationStub.aRenderer326!!.b(i_45_, i_48_, i_43_, i_50_, d_37_)
-                                    method3284(true, (ShortMatrixNode.aDouble9517 + d_37_))
+                                    RenderNodeStatics.method3284(true, (ShortMatrixNode.aDouble9517 + d_37_))
                                     GlCubeMapTexture.aDouble8621 = d_37_ + ShortMatrixNode.aDouble9517
                                     if (ByteBuffer.anInt7207 == 1) {
                                         ShaderStateVariant.anInt8799 = (i_17_ + -ModelVertexColorBuffer.anInt6568 - i_34_)
@@ -291,7 +290,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                         }
                         if (ByteBuffer.anInt7207 == 0) WidgetDefinition.anSpriteDrawTarget_252!!.method14(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, GrayscaleNoiseTexture.anInt5283, LinkedNodeListIterator.anInt1651, 0, 0, true, true)
                         GroundDecorSceneEntity.anInt9997++
-                        method3284(true, ShortMatrixNode.aDouble9517)
+                        RenderNodeStatics.method3284(true, ShortMatrixNode.aDouble9517)
                         ModelWallEntity.aDouble10120 = ShortMatrixNode.aDouble9517
                         if (ByteBuffer.anInt7207 == 0 || ByteBuffer.anInt7207 == 2) {
                             if (ByteBuffer.anInt7207 == 2) {

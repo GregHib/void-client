@@ -19,7 +19,7 @@ object ItemActionPacketSender {
     fun method1237(i: Byte, widgetComponent: WidgetComponent) {
         anInt2108++
         if (i < 69) ItemActionPacketSender.method1236((-52).toByte())
-        if (RenderNode.aBoolean9722) {
+        if (RenderNodeStatics.aBoolean9722) {
             HuffmanCodec.anInt3775++
             if (widgetComponent.anObjectArray679 != null) {
                 val class46_0_ = NpcReference.method2957(NativeLibraryState.anInt169, (-54).toByte(), OrientationRotator.anInt2046)

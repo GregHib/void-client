@@ -181,7 +181,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     ConfigFlagUtil.method1916(-9343, class46)
                     ConfigFlagUtil.method1913(true, -123, class46)
                 }
-                if (RenderNode.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNode.anInt9721, 1)
+                if (RenderNodeStatics.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNodeStatics.anInt9721, 1)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -891,7 +891,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (CacheEntryReference.Companion.aIntRange_9552 == ModelVertexColorBuffer.aIntRange_6584) {
-                if (RenderNode.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNode.anInt9721, 0)
+                if (RenderNodeStatics.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNodeStatics.anInt9721, 0)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1547,10 +1547,10 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i_202_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
                 WallSceneEntity.method2397((-125).toByte())
                 if (i == 2) FrameStatsReset.method1134(92)
-                RenderNode.anInt9721 = i_202_
+                RenderNodeStatics.anInt9721 = i_202_
                 RegionTileNode.method2772(i_202_, 123.toByte())
                 method1713(false, 520)
-                ChatCommandProcessor.method703(RenderNode.anInt9721)
+                ChatCommandProcessor.method703(RenderNodeStatics.anInt9721)
                 for (i_203_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_203_] = true
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true

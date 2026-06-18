@@ -58,7 +58,7 @@ object RegionMapDecoder {
         }
         ImageFrameCache.anIntArray4031 = null
         GameAppletFrame.anIntArray38 = IntArray(i_7_)
-        RenderNode.anIntArray9724 = IntArray(i_7_)
+        RenderNodeStatics.anIntArray9724 = IntArray(i_7_)
         NativeSprite.anIntArray5192 = IntArray(i_7_)
         NullOggStream.anIntArray9042 = IntArray(i_7_)
         LocalizedTextTriple.anIntArray3759 = IntArray(i_7_)
@@ -92,7 +92,7 @@ object RegionMapDecoder {
                             NativeSprite.anIntArray5192!![i_7_] = (GlShadowRenderPass.aJs5Archive_7382!!.method417("m" + i_18_ + "_" + i_19_, CameraSplineNode.method2955(i.toInt(), 99)))
                             GameAppletFrame.anIntArray38!![i_7_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("l" + i_18_ + "_" + i_19_, 0)
                             LocalizedTextTriple.anIntArray3759!![i_7_] = (GlShadowRenderPass.aJs5Archive_7382!!.method417("um" + i_18_ + "_" + i_19_, 0))
-                            RenderNode.anIntArray9724!![i_7_] = (GlShadowRenderPass.aJs5Archive_7382!!.method417("ul" + i_18_ + "_" + i_19_, 0))
+                            RenderNodeStatics.anIntArray9724!![i_7_] = (GlShadowRenderPass.aJs5Archive_7382!!.method417("ul" + i_18_ + "_" + i_19_, 0))
                             i_7_++
                         }
                     }

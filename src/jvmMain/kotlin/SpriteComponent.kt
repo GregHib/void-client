@@ -66,9 +66,9 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
         @JvmStatic
         fun method199(i: Int): CameraSplineNode? {
             anInt8369++
-            if (MapRegionLoader.aNodeDeque_1254 == null || RenderNode.aWidgetRedrawTracker_9716 == null) return null
-            RenderNode.aWidgetRedrawTracker_9716!!.method2328(MapRegionLoader.aNodeDeque_1254!!, 75)
-            val class348_sub21 = RenderNode.aWidgetRedrawTracker_9716!!.method2327((-53).toByte()) as CameraSplineNode?
+            if (MapRegionLoader.aNodeDeque_1254 == null || RenderNodeStatics.aWidgetRedrawTracker_9716 == null) return null
+            RenderNodeStatics.aWidgetRedrawTracker_9716!!.method2328(MapRegionLoader.aNodeDeque_1254!!, 75)
+            val class348_sub21 = RenderNodeStatics.aWidgetRedrawTracker_9716!!.method2327((-53).toByte()) as CameraSplineNode?
             if (class348_sub21 == null) return null
             val class42 = MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 50.toByte())
             if (i != 1) anInt8370 = -75

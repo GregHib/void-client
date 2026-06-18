@@ -67,10 +67,10 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
         @JvmStatic
         fun method1077(var_renderer: Renderer?, i: Byte) {
             anInt4700++
-            if ((FileExistsCondition.anInt4776 >= 2 || RenderNode.aBoolean9722) && RegionSceneLoader.aWidgetComponent_3701 == null) {
+            if ((FileExistsCondition.anInt4776 >= 2 || RenderNodeStatics.aBoolean9722) && RegionSceneLoader.aWidgetComponent_3701 == null) {
                 if (i >= -71) Companion.method1077(null, (-41).toByte())
                 var string: String?
-                if (RenderNode.aBoolean9722 && FileExistsCondition.anInt4776 < 2) string = (ItemNameResolver.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(AnimationFrameDefinition.anInt6967, 544) + ItemNameResolver.aString5000 + " ->")
+                if (RenderNodeStatics.aBoolean9722 && FileExistsCondition.anInt4776 < 2) string = (ItemNameResolver.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(AnimationFrameDefinition.anInt6967, 544) + ItemNameResolver.aString5000 + " ->")
                 else if (!InputSettingsState.shiftClick || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -121) || FileExistsCondition.anInt4776 <= 2) {
                     val class348_sub42_sub12 = IntHashSet.aClass348_Sub42_Sub12_3963
                     if (class348_sub42_sub12 == null) return

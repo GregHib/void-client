@@ -120,7 +120,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
         fun method1731(i: Int) {
             anInt5863++
             val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(i xor 0x5) as TimedRecordAccessor?)
-            val bool = (RegionSceneLoader.aWidgetComponent_3701 != null || HashLinkedListNode.anInt7059 > 0)
+            val bool = (RegionSceneLoader.aWidgetComponent_3701 != null || HashLinkedListNodeStatics.anInt7059 > 0)
             val i_19_ = class348_sub45!!.method3308((-128).toByte())
             val i_20_ = class348_sub45.method3311(119)
             if (bool) NpcEntityUpdater.anInt3655 = 1

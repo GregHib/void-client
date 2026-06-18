@@ -173,8 +173,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         bool = false
                     }
                 }
-                if (RenderNode.anIntArray9724!![i_19_] != -1 && VorbisOggDecoder.aByteArrayArray8996!![i_19_] == null) {
-                    VorbisOggDecoder.aByteArrayArray8996!![i_19_] = GlShadowRenderPass.aJs5Archive_7382!!.method410(-1860, RenderNode.anIntArray9724!![i_19_], 0)
+                if (RenderNodeStatics.anIntArray9724!![i_19_] != -1 && VorbisOggDecoder.aByteArrayArray8996!![i_19_] == null) {
+                    VorbisOggDecoder.aByteArrayArray8996!![i_19_] = GlShadowRenderPass.aJs5Archive_7382!!.method410(-1860, RenderNodeStatics.anIntArray9724!![i_19_], 0)
                     if (VorbisOggDecoder.aByteArrayArray8996!![i_19_] == null) {
                         bool = false
                         LocDefinitionCache.anInt3441++

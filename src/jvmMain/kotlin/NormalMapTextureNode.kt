@@ -127,7 +127,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
                 MultiFieldRecord.aMinimapPositionStateArray6897s!![i_3_] = null
                 i_3_++
             }
-            HashLinkedListNode.method3163((-114).toByte())
+            HashLinkedListNodeStatics.method3163((-114).toByte())
             for (i_4_ in 0..2047) LoadingBarRenderer.aPlayerArray5058!![i_4_] = null
             ModelDefinitionLoader.anInt2057 = 0
             NpcEntityUpdater.aHashtable_3654!!.method3481(i.toInt() xor 0xb)

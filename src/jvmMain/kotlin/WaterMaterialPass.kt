@@ -232,7 +232,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                         val string_15_ = (if (GlRectangleTexture.aSceneProjector_8638 != HardCacheEntryReference.aSceneProjector_10434) LocalizedText.aLocalizedText_3511!!.method2063(AnimationFrameDefinition.anInt6967, 544) else LocalizedText.aLocalizedText_3513!!.method2063(AnimationFrameDefinition.anInt6967, 544))
                         string += ((GlRectangleTexture.method250((LocalPlayerState.aPlayer_1907!!.anInt10516), true, class79.anInt1361)) + " (" + string_15_ + class79.anInt1361 + ")")
                     }
-                    if (RenderNode.aBoolean9722 && !bool) {
+                    if (RenderNodeStatics.aBoolean9722 && !bool) {
                         val class254 = (if (ParticleEmitterFactory.anInt3176 == -1) null else ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364))
                         if ((WidgetTextConfig.anInt500 and 0x2) != 0 && (class254 == null || (class79.method805((class254.anInt3256), ParticleEmitterFactory.anInt3176, 61) != class254.anInt3256))) {
                             MinimapPolygonDrawer.method466(false, ItemNameResolver.aString5000 + " -> <col=ffff00>" + string, 0, (-81).toByte(), false, 0, -1, true, 30, npc.anInt10290.toLong(), ItemNameResolver.aString5001, npc.anInt10290.toLong(), FloatBuffer.anInt9747)

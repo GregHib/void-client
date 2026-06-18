@@ -50,7 +50,7 @@ class MinimapPositionState {
                     } else method119(-1, l)
                 }
                 OutgoingPacketNode.method3324(FacingDirectionNode.aRenderer6654, 83.toByte(), GlGroundShaderPass.anInt7396.toLong())
-                if (RenderNode.anInt9721 != -1) method769(RenderNode.anInt9721, 118.toByte())
+                if (RenderNodeStatics.anInt9721 != -1) method769(RenderNodeStatics.anInt9721, 118.toByte())
                 for (i_3_ in 0..<TerrainShadowBuilderGl3.anInt7008) {
                     if (GzipDecompressor.aBooleanArray2076!![i_3_]) LocDefinitionCache.aBooleanArray3438!![i_3_] = true
                     SizeBoundedSoftCache.aBooleanArray2326!![i_3_] = GzipDecompressor.aBooleanArray2076!![i_3_]
@@ -59,7 +59,7 @@ class MinimapPositionState {
                 DirectionPath.anInt1064 = GlGroundShaderPass.anInt7396
                 method198(null, false, -1, -1)
                 method1343(-1, null, 1, -1)
-                if (RenderNode.anInt9721 != -1) {
+                if (RenderNodeStatics.anInt9721 != -1) {
                     TerrainShadowBuilderGl3.anInt7008 = 0
                     method842(false)
                 }

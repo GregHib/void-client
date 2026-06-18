@@ -72,7 +72,7 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1721(string: String?, i: Byte) {
             anInt5849++
-            if (RenderNode.aBoolean9722 && (0x18 and WidgetTextConfig.anInt500) != 0) {
+            if (RenderNodeStatics.aBoolean9722 && (0x18 and WidgetTextConfig.anInt500) != 0) {
                 val i_2_ = -88 / ((i - -33) / 37)
                 var bool = false
                 val i_3_ = ShaderState.anInt6513
@@ -96,7 +96,7 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
                     i_4_++
                 }
                 if (!bool) method544((LocalizedText.aLocalizedText_3504!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + string, false, 4)
-                if (RenderNode.aBoolean9722) TileRenderState.method2678(-2049)
+                if (RenderNodeStatics.aBoolean9722) TileRenderState.method2678(-2049)
             }
         }
 

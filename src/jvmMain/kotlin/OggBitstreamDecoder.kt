@@ -130,7 +130,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
             if (FacingDirectionNode.aRenderer6654!!.method3627()) WarpTextureNode.method3137(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) == 1, (-24).toByte())
             TerrainChunkBuilder.method873(GlCubemapLightPass.anInt7319 shr 3, 21719, FacingDirectionNode.aRenderer6654, RangeThresholdTextureNode.anInt9109 shr 3)
             SceneObjectSpawner.method773(true)
-            RenderNode.aBoolean9719 = false
+            RenderNodeStatics.aBoolean9719 = false
             NativeLibraryUnloader.aMapSceneTileArray2974 = null
             TextureLoadExceptionStatics.aBoolean4604 = true
             LoadingScreenImageNode.method3179(i_1_)
