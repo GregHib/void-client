@@ -198,7 +198,7 @@ class InputStream_Sub2 : InputStream() {
                         RenderableEntry.method3459(IntPair(i_76_, i_75_), GradientLookupEffect.anInt9200, i_79_, i_81_, -2)
                         if (bool) ProjectileSpawner.method1479(i_78_, (-124).toByte(), i_80_, GradientLookupEffect.anInt9200)
                     }
-                } else if (class74 == Class374.aClass74_4537) {
+                } else if (class74 == BufferedFileReader.aClass74_4537) {
                     val i_82_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(83.toByte())
                     val i_83_ = i_82_ shr 2
                     val i_84_ = 0x3 and i_82_

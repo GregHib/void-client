@@ -1,4 +1,4 @@
-import Class374.method3610
+import BufferedFileReader.method3610
 import java.io.File
 import java.io.IOException
 

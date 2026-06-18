@@ -1,6 +1,9 @@
 import java.io.*
 
-internal object Class374 {
+/*
+ * Class374
+ */
+internal object BufferedFileReader {
     @JvmField
     var anInt4536: Int = 0
     @JvmField

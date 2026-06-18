@@ -312,7 +312,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (WorldMapTextLabel.aIntRange_8590 == ModelVertexColorBuffer.aIntRange_6584) {
-                method128(Class374.aClass74_4537, 8.toByte())
+                method128(BufferedFileReader.aClass74_4537, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }

@@ -436,7 +436,7 @@ import WorldMapTextLabel.Companion.method3572
 import WorldMapIconLabel.Companion.method3574
 import CubemapTextureFactory.Companion.method3584
 import MouseInputTracker.Companion.method3609
-import Class374.method3611
+import BufferedFileReader.method3611
 import Class375.method3613
 import Class377.Companion.method3968
 import Class38.Companion.method363
@@ -694,7 +694,7 @@ class Client : GameAppletFrame() {
             for (i_3_ in 0..36) MinimapRenderer.aClass78Array1579!![i_3_] = Class78((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDiskArray3795!![i_3_]!!), 6000, 0)
             SceneObjectAnimator.aClass78_3075 = Class78((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
             LocTypeConfig.aIndexedFileCache_3568 = IndexedFileCache(255, TextureCubeProvider.aClass78_6328, SceneObjectAnimator.aClass78_3075, 500000)
-            Class374.aClass78_4538 = Class78((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
+            BufferedFileReader.aClass78_4538 = Class78((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779 = null
             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 = null
             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDiskArray3795 = null
@@ -1284,7 +1284,7 @@ class Client : GameAppletFrame() {
             TextureCubeProvider.aClass78_6328!!.method790((-62).toByte())
             for (i_6_ in i..36) MinimapRenderer.aClass78Array1579!![i_6_]!!.method790(118.toByte())
             SceneObjectAnimator.aClass78_3075!!.method790((-84).toByte())
-            Class374.aClass78_4538!!.method790(80.toByte())
+            BufferedFileReader.aClass78_4538!!.method790(80.toByte())
             StringValueNode.method3317((-53).toByte())
         } catch (exception: Exception) {
             /* empty */

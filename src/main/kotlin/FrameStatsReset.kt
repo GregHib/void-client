@@ -1927,7 +1927,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WorldMapPolygonIconLabel.anInt10178 = 0
             NativeTerrainTile.anInt8300 = 0
             CubeMapMaterialPass.anInt6298 = 0
-            Class374.anInt4536 = 0
+            BufferedFileReader.anInt4536 = 0
             ChatEffectsOptionState.anInt5863 = 0
             Class6.anInt152 = 0
             ArbVertexProgram.anInt9777 = 0
