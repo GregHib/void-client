@@ -224,7 +224,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                 }
                 if (bool) {
-                    if (Class36.anInt489 != 0) Class362.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
+                    if (AnimationFrameTable.anInt489 != 0) Class362.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
                     method3570(false)
                     InterfaceBounds.method2938(102.toByte())
                     method1772(i xor 0x41)
@@ -256,7 +256,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     method3570(false)
                     System.gc()
                     RegionSceneLoader.method2193(true, (-128).toByte())
-                    Class36.method354(2)
+                    AnimationFrameTable.method354(2)
                     CutsceneSequenceData.anInt3720 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
                     HuffmanCodec.aBoolean3767 = TextureDefinitionCache.anInt2964 >= 96
                     Class369.aBoolean4972 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2
@@ -369,8 +369,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         method94(("Took: " + (Class62.method599(-117) + -Class90.aLong1516) + "ms"), i + 52)
                         GlTexture1D.aBoolean8558 = false
                     }
-                } else Class36.anInt489 = 2
-            } else Class36.anInt489 = 1
+                } else AnimationFrameTable.anInt489 = 2
+            } else AnimationFrameTable.anInt489 = 1
         }
 
         init {

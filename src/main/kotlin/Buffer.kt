@@ -758,7 +758,7 @@ open class Buffer : LinkedListNode {
                 }
                 if (GroundDecorSceneEntity.method2402(i_71_, (-119).toByte())) {
                     ItemModelDefinition.anInt443 = 1
-                    Class36.anInt489 = 0
+                    AnimationFrameTable.anInt489 = 0
                     StringValueNode.Companion.anInt7115 = 1
                     CompositeNpcModelBuilder.anInt2101 = 0
                     LocDefinitionCache.anInt3441 = 0

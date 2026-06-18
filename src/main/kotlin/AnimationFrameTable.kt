@@ -1,7 +1,7 @@
 /* Class36 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class36 {
+object AnimationFrameTable {
     @JvmField
     var anInt486: Int = 0
     var anIntArray487: IntArray? = intArrayOf(0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3)

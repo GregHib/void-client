@@ -1043,7 +1043,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i_125_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-121).toByte())
                 val i_126_ = i_125_ shr 2
                 val i_127_ = i_125_ and 0x3
-                val i_128_ = Class36.anIntArray487!![i_126_]
+                val i_128_ = AnimationFrameTable.anIntArray487!![i_126_]
                 val i_129_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_130_ = (0x36079814 and i_129_) shr 28
                 var i_131_ = i_129_ shr 14 and 0x3fff

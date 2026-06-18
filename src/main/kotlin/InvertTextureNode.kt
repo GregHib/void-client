@@ -108,7 +108,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
                     NativeIndexBuffer.anInt4703 = (((i_5_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2540) and 0xff00ff) + (GroundDecorEntity.anInt8739 and 0xff00ff) * i_4_) and 0xff00ff.inv()) - -(0xff0000 and (i_4_ * (0xff00 and GroundDecorEntity.anInt8739) + (0xff00 and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2540)) * i_5_))) ushr 8
                     RangedGraphicsOptionState.aFloat5945 = (GlTexture1D.aFloat8560 + f_6_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2551) - GlTexture1D.aFloat8560))
                     ModelVertexColorBuffer.aFloat6586 = (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2545 - Class45.aFloat670) * f_6_ + Class45.aFloat670
-                    Class36.anInt486 = (i_4_ * NoOpGraphicsOptionState.anInt6042 + (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2546 * i_5_)) shr 8
+                    AnimationFrameTable.anInt486 = (i_4_ * NoOpGraphicsOptionState.anInt6042 + (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2546 * i_5_)) shr 8
                     KeyboardLayoutConfig.aFloat2137 = (TileSceneEntity.aFloat8725 + (-TileSceneEntity.aFloat8725 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2547)) * f_6_)
                     TextureMetadataProvider.aFloat4626 = (Class64.aFloat1136 + f_6_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2544) - Class64.aFloat1136))
                     LocTypeDefLoader.anInt2500 = (((i_4_ * (0xff00 and DelegatingRenderCanvas.anInt70) + (0xff00 and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and DelegatingRenderCanvas.anInt70) - -(i_5_ * (0xff00ff and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549)))))) ushr 8
@@ -120,7 +120,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
                     TextureMetadataProvider.aFloat4626 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2544
                     ModelVertexColorBuffer.aFloat6586 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2545
                     RangedGraphicsOptionState.aFloat5945 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2551
-                    Class36.anInt486 = WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2546
+                    AnimationFrameTable.anInt486 = WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2546
                     NormalMapGenerator.aFloat3462 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2542
                     Class361.aFloat4455 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2536
                     TexGenMaterialPass.anInt6248 = -1

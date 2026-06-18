@@ -17,7 +17,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
         fun method1131(i: Int) {
             val j = 64 / ((11 - i) / 54)
             anInt5795++
-            Class60.aRenderer1098!!.L(LocTypeDefLoader.anInt2500, if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) -1 else Class36.anInt486 - -256 shl 2, 0)
+            Class60.aRenderer1098!!.L(LocTypeDefLoader.anInt2500, if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) -1 else AnimationFrameTable.anInt486 - -256 shl 2, 0)
         }
 
         fun method1132(i: Int, j: Int, k: Int): Boolean {
@@ -1747,7 +1747,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Npc.anInt10508 = 0
             Class372.anInt4529 = 0
             Class45.anInt637 = 0
-            Class36.anInt488 = 0
+            AnimationFrameTable.anInt488 = 0
             Class64.anInt1129 = 0
             CurveTextureNode.anInt9213 = 0
             TrigLookupInit.anInt2876 = 0

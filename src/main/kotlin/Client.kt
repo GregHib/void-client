@@ -416,7 +416,7 @@ import Hashtable.Companion.method3478
 import SceneCollisionEntry.Companion.method3487
 import ParticleGeometry.Companion.method3488
 import TextureAtlasState.Companion.method3491
-import Class36.method355
+import AnimationFrameTable.method355
 import Class361.Companion.method3502
 import Class361.Companion.method3508
 import Class362.method3511
@@ -1702,11 +1702,11 @@ class Client : GameAppletFrame() {
             else if (!method2114(WorldMapRenderer.anInt4674, bool)) {
                 if (!method3197(WorldMapRenderer.anInt4674, 56.toByte())) {
                     if (GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
-                        if (Class36.anInt489 == 1) {
+                        if (AnimationFrameTable.anInt489 == 1) {
                             if (LocDefinitionCache.anInt3441 > StringValueNode.anInt7115) StringValueNode.anInt7115 = LocDefinitionCache.anInt3441
                             val i = ((-LocDefinitionCache.anInt3441 + StringValueNode.anInt7115) * 50 / StringValueNode.anInt7115)
                             method3511(true, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
-                        } else if (Class36.anInt489 == 2) {
+                        } else if (AnimationFrameTable.anInt489 == 2) {
                             if (ItemModelDefinition.anInt443 < CompositeNpcModelBuilder.anInt2101) ItemModelDefinition.anInt443 = CompositeNpcModelBuilder.anInt2101
                             val i = (((ItemModelDefinition.anInt443 - CompositeNpcModelBuilder.anInt2101) * 50 / ItemModelDefinition.anInt443) + 50)
                             method3511(true, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
