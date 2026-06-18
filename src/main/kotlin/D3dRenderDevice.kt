@@ -248,7 +248,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         if (i_27_ < 46) method3931(true, null, null)
     }
 
-    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): Interface4? {
+    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): SpriteDrawTarget? {
         return null
     }
 
@@ -565,7 +565,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         return D3DTexture2D(this, i, i_58_, bool, `is`, i_56_, i_57_)
     }
 
-    override fun method3687(interface4: Interface4?) {
+    override fun method3687(spriteDrawTarget: SpriteDrawTarget?) {
         /* empty */
     }
 

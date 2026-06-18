@@ -328,7 +328,7 @@ class WidgetDefinition {
         var aBoolean247: Boolean = false
         var aIntRange_250: IntRange? = IntRange(4, 1)
         @JvmField
-        var anInterface4_252: Interface4? = null
+        var anSpriteDrawTarget_252: SpriteDrawTarget? = null
         @JvmField
         var anIntArrayArray255: Array<IntArray?>? = null
         @JvmField
@@ -347,7 +347,7 @@ class WidgetDefinition {
             aIntRange_250 = null
             anIntArrayArray255 = null
             if (bool != false) method268(-22, -54, -101, -115, -107, 90, 13, -47)
-            anInterface4_252 = null
+            anSpriteDrawTarget_252 = null
         }
 
         @JvmStatic
@@ -362,7 +362,7 @@ class WidgetDefinition {
             LocalPlayerState.anInt1906 = LocalPlayerState.anInt1911 * i_44_ shr 8
             val i_45_ = 16384 - i and 0x3fff
             val i_46_ = 0x3fff and 16384 - i_37_
-            if (i_40_ != -19360) anInterface4_252 = null
+            if (i_40_ != -19360) anSpriteDrawTarget_252 = null
             var i_47_ = 0
             var i_48_ = 0
             var i_49_ = i_42_

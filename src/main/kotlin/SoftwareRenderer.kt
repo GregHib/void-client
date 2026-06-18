@@ -1044,7 +1044,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return SoftwareFontPalette(this, fontDefinition, spriteImages, `is`, is_283_)
     }
 
-    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): Interface4 {
+    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): SpriteDrawTarget {
         return SpriteRenderable(this, cameraMarker as AbstractModelRenderer?, marker as FloatGrid?)
     }
 
@@ -1403,8 +1403,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         }
     }
 
-    override fun method3687(interface4: Interface4?) {
-        val spriteRenderable = interface4 as SpriteRenderable
+    override fun method3687(spriteDrawTarget: SpriteDrawTarget?) {
+        val spriteRenderable = spriteDrawTarget as SpriteRenderable
         this.anInt7477 = spriteRenderable.anInt4725
         anInt7486 = spriteRenderable.anInt4722
         this.anIntArray7483 = spriteRenderable.anIntArray4731

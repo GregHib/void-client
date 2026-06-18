@@ -469,12 +469,12 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     external override fun ZA(i: Int, f: Float, f_186_: Float, f_187_: Float, f_188_: Float, f_189_: Float)
 
-    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): Interface4 {
+    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): SpriteDrawTarget {
         return wa(this, (cameraMarker as j?)!!, (marker as xa?)!!)
     }
 
-    override fun method3687(interface4: Interface4?) {
-        val var_wa = interface4 as wa
+    override fun method3687(spriteDrawTarget: SpriteDrawTarget?) {
+        val var_wa = spriteDrawTarget as wa
         n(var_wa.aJ4732.nativeid, var_wa.aXa4733.nativeid)
     }
 

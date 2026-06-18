@@ -6,7 +6,7 @@ import kotlin.concurrent.Volatile
 /* Class49 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SpriteRenderable internal constructor(var_ha_Sub1: SoftwareRenderer?, abstractModelRenderer: AbstractModelRenderer?, floatGrid: FloatGrid?) : Interface4 {
+class SpriteRenderable internal constructor(var_ha_Sub1: SoftwareRenderer?, abstractModelRenderer: AbstractModelRenderer?, floatGrid: FloatGrid?) : SpriteDrawTarget {
     var aFloatArray4719: FloatArray? = null
     var anInt4722: Int = 0
     private var aFloatGrid_4724: FloatGrid? = null

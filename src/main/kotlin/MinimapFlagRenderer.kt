@@ -56,7 +56,7 @@ object MinimapFlagRenderer {
         Buffer.anInt7207 = 0
         SoundEnvelope.anInt2747 = i
         LocalPlayerState.anIntArray1909 = null
-        NpcSpawnDecoder.anInterface4Array1525 = null
+        NpcSpawnDecoder.anSpriteDrawTargetArray1525 = null
         method828(38.toByte(), i_3_, i_5_)
         ProjectileConfigUtil.anInt396 = -1
         LocalizedTextTriple.anInt3760 = -1

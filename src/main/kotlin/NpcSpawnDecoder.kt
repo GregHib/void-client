@@ -5,7 +5,7 @@ object NpcSpawnDecoder {
     @JvmField
     var anInt1524: Int = 765
     @JvmField
-    var anInterface4Array1525: Array<Interface4?>? = null
+    var anSpriteDrawTargetArray1525: Array<SpriteDrawTarget?>? = null
     @JvmField
     var anInt1526: Int = 0
     @JvmField
@@ -75,7 +75,7 @@ object NpcSpawnDecoder {
 
     @JvmStatic
     fun method860(i: Byte) {
-        anInterface4Array1525 = null
+        anSpriteDrawTargetArray1525 = null
         if (i > 43) aFloatArray1528 = null
     }
 }

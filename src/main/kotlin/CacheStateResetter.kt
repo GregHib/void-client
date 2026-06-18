@@ -12,10 +12,10 @@ object CacheStateResetter {
     @JvmStatic
     fun method175(i: Byte) {
         LocalizedTextTriple.anInt3760 = -1
-        WidgetDefinition.anInterface4_252 = null
+        WidgetDefinition.anSpriteDrawTarget_252 = null
         RenderNode.aAbstractCameraTransform_9720 = null
         LocalPlayerState.anIntArray1909 = null
-        NpcSpawnDecoder.anInterface4Array1525 = null
+        NpcSpawnDecoder.anSpriteDrawTargetArray1525 = null
         CameraRotationStub.aRenderer326 = null
         MapSceneRenderer.aAbstractCameraTransform_624 = null
         anInt124++

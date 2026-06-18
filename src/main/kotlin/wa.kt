@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 * NativeBillboardRenderer
 */
-class wa(var_oa: oa, var_j: j, var_xa: xa) : Interface4 {
+class wa(var_oa: oa, var_j: j, var_xa: xa) : SpriteDrawTarget {
     @JvmField
     var aJ4732: j
     @JvmField

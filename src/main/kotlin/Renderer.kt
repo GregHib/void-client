@@ -45,7 +45,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun ya()
 
-    abstract fun method3634(cameraMarker: CameraMarker?, marker: Marker?): Interface4?
+    abstract fun method3634(cameraMarker: CameraMarker?, marker: Marker?): SpriteDrawTarget?
 
     fun method3635(i: Byte) {
         val i_15_ = -90 % ((i - 8) / 33)
@@ -229,7 +229,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun C(bool: Boolean)
 
-    abstract fun method3687(interface4: Interface4?)
+    abstract fun method3687(spriteDrawTarget: SpriteDrawTarget?)
 
     abstract fun method3688(i: Int, i_158_: Int, i_159_: Int, i_160_: Int, i_161_: Int, i_162_: Int, i_163_: Int)
 

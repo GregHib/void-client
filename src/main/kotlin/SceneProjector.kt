@@ -192,7 +192,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                         }
                                         class318_sub4 = (class243.method1878(122.toByte()) as SceneEntityModel?)
                                     }
-                                    if (Buffer.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3687(WidgetDefinition.anInterface4_252)
+                                    if (Buffer.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3687(WidgetDefinition.anSpriteDrawTarget_252)
                                     CameraRotationStub.aRenderer326!!.F(-i_33_, -i_34_)
                                     CameraRotationStub.aRenderer326!!.b(i_45_, i_48_, i_43_, i_50_, d_37_)
                                     method3284(true, (ShortMatrixNode.aDouble9517 + d_37_))
@@ -240,7 +240,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                             while ((ItemModelDefinition.anInt425 > i_67_)) {
                                                 val i_68_ = ((ModelTransformParams.method3452(i_67_ + (SceneryDetailOptionState.anInt6095), (-15).toByte(), ItemModelDefinition.anInt425)) + i_66_)
                                                 val bool_69_ = (((i_38_ <= i_65_) && i_39_ + i_38_ > i_65_) || (i_65_ >= i_41_ && (i_65_ < i_41_ - -i_47_) && i_67_ >= i_40_ && (i_40_ - -i_42_ > i_67_)))
-                                                NpcSpawnDecoder.anInterface4Array1525!![i_68_]!!.method15(DirectionPath.anInt1067 * i_67_, i_65_ * ByteStore.anInt4267, DirectionPath.anInt1067, ByteStore.anInt4267, 0, 0, bool_69_, true)
+                                                NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_68_]!!.method15(DirectionPath.anInt1067 * i_67_, i_65_ * ByteStore.anInt4267, DirectionPath.anInt1067, ByteStore.anInt4267, 0, 0, bool_69_, true)
                                                 i_67_++
                                             }
                                         }
@@ -261,7 +261,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             AnimatedModelRenderer.anInt8422 = i_4_
                             ModelVertexColorBuffer.anInt6568 = 0
                             ShortMatrixNode.aDouble9517 = 0.0
-                            if (Buffer.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3687(WidgetDefinition.anInterface4_252)
+                            if (Buffer.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3687(WidgetDefinition.anSpriteDrawTarget_252)
                             CameraRotationStub.aRenderer326!!.la()
                             CameraRotationStub.aRenderer326!!.ya()
                             CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
@@ -289,7 +289,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             if (Buffer.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
                             if (Buffer.anInt7207 == 1) method1469(-117)
                         }
-                        if (Buffer.anInt7207 == 0) WidgetDefinition.anInterface4_252!!.method14(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, GrayscaleNoiseTexture.anInt5283, LinkedNodeListIterator.anInt1651, 0, 0, true, true)
+                        if (Buffer.anInt7207 == 0) WidgetDefinition.anSpriteDrawTarget_252!!.method14(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, GrayscaleNoiseTexture.anInt5283, LinkedNodeListIterator.anInt1651, 0, 0, true, true)
                         GroundDecorSceneEntity.anInt9997++
                         method3284(true, ShortMatrixNode.aDouble9517)
                         ModelWallEntity.aDouble10120 = ShortMatrixNode.aDouble9517

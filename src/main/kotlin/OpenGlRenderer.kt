@@ -2247,11 +2247,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7719++
     }
 
-    override fun method3687(interface4: Interface4?) {
+    override fun method3687(spriteDrawTarget: SpriteDrawTarget?) {
         try {
             anInt7590++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "qo.IA(" + (if (interface4 != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "qo.IA(" + (if (spriteDrawTarget != null) "{...}" else "null") + ')')
         }
     }
 
@@ -2476,7 +2476,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return 4
     }
 
-    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): Interface4? {
+    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): SpriteDrawTarget? {
         try {
             anInt7596++
             return null

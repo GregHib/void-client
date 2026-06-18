@@ -462,7 +462,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         if (i > -30) ya()
     }
 
-    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): Interface4? {
+    override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): SpriteDrawTarget? {
         try {
             anInt9897++
             return null
@@ -1188,11 +1188,11 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         return `is`
     }
 
-    override fun method3687(interface4: Interface4?) {
+    override fun method3687(spriteDrawTarget: SpriteDrawTarget?) {
         try {
             anInt9816++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "bga.IA(" + (if (interface4 != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "bga.IA(" + (if (spriteDrawTarget != null) "{...}" else "null") + ')')
         }
     }
 

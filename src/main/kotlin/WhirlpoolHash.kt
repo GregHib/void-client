@@ -190,13 +190,13 @@ class WhirlpoolHash {
                 val i_16_ = BackgroundWorkerThread.anInt3225
                 method1752(-1, i_13_, i_14_)
                 if (Buffer.anInt7207 == 0) {
-                    WidgetDefinition.anInterface4_252 = null
-                    WidgetDefinition.anInterface4_252 = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665((SynthVoiceGroup.anInt8854), ShadowQualityOptionState.anInt6008), CameraRotationStub.aRenderer326!!.method3624((SynthVoiceGroup.anInt8854), ShadowQualityOptionState.anInt6008)))
-                } else if (Buffer.anInt7207 == 1 && (NpcSpawnDecoder.anInterface4Array1525 == null || i_15_ != ItemModelDefinition.anInt425 || i_16_ != BackgroundWorkerThread.anInt3225)) {
-                    NpcSpawnDecoder.anInterface4Array1525 = arrayOfNulls<Interface4>(BackgroundWorkerThread.anInt3225 * ItemModelDefinition.anInt425)
+                    WidgetDefinition.anSpriteDrawTarget_252 = null
+                    WidgetDefinition.anSpriteDrawTarget_252 = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665((SynthVoiceGroup.anInt8854), ShadowQualityOptionState.anInt6008), CameraRotationStub.aRenderer326!!.method3624((SynthVoiceGroup.anInt8854), ShadowQualityOptionState.anInt6008)))
+                } else if (Buffer.anInt7207 == 1 && (NpcSpawnDecoder.anSpriteDrawTargetArray1525 == null || i_15_ != ItemModelDefinition.anInt425 || i_16_ != BackgroundWorkerThread.anInt3225)) {
+                    NpcSpawnDecoder.anSpriteDrawTargetArray1525 = arrayOfNulls<SpriteDrawTarget>(BackgroundWorkerThread.anInt3225 * ItemModelDefinition.anInt425)
                     var i_17_ = 0
-                    while (NpcSpawnDecoder.anInterface4Array1525!!.size > i_17_) {
-                        NpcSpawnDecoder.anInterface4Array1525!![i_17_] = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665(DirectionPath.anInt1067, ByteStore.anInt4267), CameraRotationStub.aRenderer326!!.method3624(DirectionPath.anInt1067, ByteStore.anInt4267)))
+                    while (NpcSpawnDecoder.anSpriteDrawTargetArray1525!!.size > i_17_) {
+                        NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_17_] = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665(DirectionPath.anInt1067, ByteStore.anInt4267), CameraRotationStub.aRenderer326!!.method3624(DirectionPath.anInt1067, ByteStore.anInt4267)))
                         i_17_++
                     }
                     LocalPlayerState.anIntArray1909 = IntArray(ItemModelDefinition.anInt425 * BackgroundWorkerThread.anInt3225)
