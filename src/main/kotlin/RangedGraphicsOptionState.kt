@@ -85,7 +85,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
                 GzipDecompressor.aBooleanArray2076!![i_6_] = false
                 i_6_++
             }
-            Class58.anInt1064 = Class367_Sub11.anInt7396
+            DirectionPath.anInt1064 = Class367_Sub11.anInt7396
             if (RenderNode.anInt9721 != -1) {
                 TerrainShadowBuilderGl3.anInt7008 = 0
                 Class88.method842(false)

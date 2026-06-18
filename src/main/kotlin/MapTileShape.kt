@@ -91,8 +91,8 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
         fun method2663(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
             anInt4195++
             if (Buffer.anInt7207 == 1) {
-                var i_7_ = i_3_ / Class58.anInt1067
-                var i_8_ = i_4_ / Class58.anInt1067
+                var i_7_ = i_3_ / DirectionPath.anInt1067
+                var i_8_ = i_4_ / DirectionPath.anInt1067
                 var i_9_ = i_5_ / ByteStore.anInt4267
                 var i_10_ = i_6_ / ByteStore.anInt4267
                 if (i_7_ < ItemModelDefinition.anInt425 && i_8_ >= 0 && BackgroundWorkerThread.anInt3225 > i_9_ && i_10_ >= 0 && i == -5590) {

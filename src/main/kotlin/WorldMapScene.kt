@@ -9,7 +9,7 @@ import Font.Companion.method2570
 import TimedRecordAccessor.Companion.method3313
 import Class367_Sub8.Companion.method3547
 import WorldMapPolygonIconLabel.Companion.method3576
-import Class58.Companion.method536
+import DirectionPath.Companion.method536
 import Class79.Companion.method802
 import Class87.Companion.method837
 

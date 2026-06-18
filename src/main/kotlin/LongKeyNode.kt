@@ -5,7 +5,7 @@ import WaterMaterialPass.Companion.method2148
 import CubemapTextureGlSource.Companion.method2264
 import MidiSequencePlayer.Companion.method2878
 import InvertTextureNode.Companion.method3135
-import Class58.Companion.method536
+import DirectionPath.Companion.method536
 import Class79.Companion.method802
 import OpenGlRenderNode.Companion.method3297
 

@@ -194,12 +194,12 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         }
     }
 
-    override fun method3812(i: Int, class58s: Array<Class58>): ModelBatchBase {
+    override fun method3812(i: Int, directionPaths: Array<DirectionPath>): ModelBatchBase {
         try {
             anInt9875++
-            return FrameStatsReset(class58s)
+            return FrameStatsReset(directionPaths)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.KD(" + i + ',' + (if (class58s != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bga.KD(" + i + ',' + (if (directionPaths != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -979,7 +979,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     override fun method3862(i: Int, modelBatchBase: ModelBatchBase?) {
         try {
             anInt9866++
-            val class58s = (modelBatchBase as FrameStatsReset).aClass58Array5801
+            val class58s = (modelBatchBase as FrameStatsReset).aDirectionPathArray5801
             var i_74_ = 0
             var bool = false
             var bool_75_ = false

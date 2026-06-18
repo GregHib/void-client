@@ -382,7 +382,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             if (i_22_ <= 64) anIntArray279 = null
             ByteStore.anInt4267 = i_23_
             MaterialPass.anInt3682 = 0
-            Class58.anInt1067 = i_24_
+            DirectionPath.anInt1067 = i_24_
             WidgetDefinition.Companion.anInterface4_252 = null
             Buffer.anInt7207 = 1
             BloomGraphicsOptionState.anInt5965 = i

@@ -165,14 +165,14 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
                         Class98.aClass348_Sub16_Sub3_1564!!.method2864(52.toByte())
                         if (DirectionalLightTextureNode.anInt9444 <= 0) {
                             SpriteDefinition.anInt7068 = 0
-                            Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, Class58.anInt1059)
+                            Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, DirectionPath.anInt1059)
                             for (i in Class367_Sub3.anIntArray7299!!.indices) {
                                 Class98.aClass348_Sub16_Sub3_1564!!.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
                                 Class367_Sub3.anIntArray7299!![i] = 255
                             }
                         } else {
                             SpriteDefinition.anInt7068 = 3
-                            Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, (min(Class58.anInt1059, DirectionalLightTextureNode.anInt9444)))
+                            Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, (min(DirectionPath.anInt1059, DirectionalLightTextureNode.anInt9444)))
                             var i = 0
                             while ((Class367_Sub3.anIntArray7299!!.size > i)) {
                                 Class98.aClass348_Sub16_Sub3_1564!!.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)

@@ -53,7 +53,7 @@ class ConfigFlagUtil {
         @JvmStatic
         fun method1916(i: Int, widgetComponent: WidgetComponent) {
             anInt3229++
-            if (widgetComponent.anInt794 == Class58.anInt1064) GzipDecompressor.aBooleanArray2076!![widgetComponent.anInt760] = true
+            if (widgetComponent.anInt794 == DirectionPath.anInt1064) GzipDecompressor.aBooleanArray2076!![widgetComponent.anInt760] = true
             if (i != -9343) method1914(-107, 120)
         }
     }

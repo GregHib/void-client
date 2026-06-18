@@ -196,7 +196,7 @@ class Class85 {
                     Class92.anInterface4Array1525 = arrayOfNulls<Interface4>(BackgroundWorkerThread.anInt3225 * ItemModelDefinition.anInt425)
                     var i_17_ = 0
                     while (Class92.anInterface4Array1525!!.size > i_17_) {
-                        Class92.anInterface4Array1525!![i_17_] = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665(Class58.anInt1067, ByteStore.anInt4267), CameraRotationStub.aRenderer326!!.method3624(Class58.anInt1067, ByteStore.anInt4267)))
+                        Class92.anInterface4Array1525!![i_17_] = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665(DirectionPath.anInt1067, ByteStore.anInt4267), CameraRotationStub.aRenderer326!!.method3624(DirectionPath.anInt1067, ByteStore.anInt4267)))
                         i_17_++
                     }
                     LocalPlayerState.anIntArray1909 = IntArray(ItemModelDefinition.anInt425 * BackgroundWorkerThread.anInt3225)

@@ -3,7 +3,7 @@ import RangedGraphicsOptionState.Companion.method1762
 /* Class58 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class58 {
+class DirectionPath {
     private var aLong1057: Long = 0
     private var anInt1058 = 0
     private fun method533(spriteMaskShape: SpriteMaskShape, i: Int) {

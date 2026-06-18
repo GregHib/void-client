@@ -45,7 +45,7 @@ class CubemapTexture2dSource internal constructor(private val aHa_Sub2_8693: Ope
                 try {
                     WaterDetailOptionState.anInt5994 = 10000
                     ModelDefinition.aJs5Archive_1848 = js5Archive
-                    Class58.anInt1059 = i_7_
+                    DirectionPath.anInt1059 = i_7_
                     NpcActorEntity.anInt10074 = i
                     KeyboardInputSource.aBoolean4275 = bool
                     GlBufferObject.aClass348_Sub16_Sub3_4743 = null

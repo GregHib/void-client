@@ -579,9 +579,9 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         if (i.toInt() != 100) anIntArray9805 = null
     }
 
-    override fun method3812(i: Int, class58s: Array<Class58>): ModelBatchBase {
+    override fun method3812(i: Int, directionPaths: Array<DirectionPath>): ModelBatchBase {
         if (i != 0) anInt9807 = 29
-        return dxVertexLayout(this, class58s)
+        return dxVertexLayout(this, directionPaths)
     }
 
     fun method3962(i: Int, idirect3dpixelshader: IDirect3DPixelShader?) {

@@ -99,7 +99,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
 
         @JvmStatic
         fun method2355(i: Int, i_0_: Byte, bool: Boolean, js5Archive: Js5Archive?, i_1_: Int, i_2_: Int, i_3_: Int) {
-            Class58.anInt1059 = i
+            DirectionPath.anInt1059 = i
             anInt3948++
             KeyboardInputSource.aBoolean4275 = bool
             GlBufferObject.aClass348_Sub16_Sub3_4743 = null

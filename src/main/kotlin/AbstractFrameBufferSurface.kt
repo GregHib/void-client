@@ -48,7 +48,7 @@ abstract class AbstractFrameBufferSurface : LinkedListNode() {
             SceneLinkedListNode.anInt3971 = -1
             WaterDetailOptionState.anInt5994 = i
             SpriteDefinition.anInt7068 = 1
-            Class58.anInt1059 = 0
+            DirectionPath.anInt1059 = 0
         }
 
         fun method3009(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Byte, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int) {

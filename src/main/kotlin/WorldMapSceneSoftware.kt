@@ -17,7 +17,7 @@ import InvertTextureNode.Companion.method3135
 import SourceRowTextureNode.Companion.method3058
 import AsyncResourceRequest.Companion.method3254
 import MapSceneRenderer.method388
-import Class58.Companion.method536
+import DirectionPath.Companion.method536
 import SolidFillComponent.Companion.method192
 import Class75_Sub1.method770
 import Class87.Companion.method837

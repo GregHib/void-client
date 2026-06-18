@@ -109,9 +109,9 @@ object GameDisplayManager {
                     }
                     if (SpriteDefinition.anInt7068 != 3) break
                     var i_7_ = Class98.aClass348_Sub16_Sub3_1564!!.method2844((-87).toByte())
-                    if (i_7_ < Class58.anInt1059 && Class98.aClass348_Sub16_Sub3_1564!!.method2860(95)) {
+                    if (i_7_ < DirectionPath.anInt1059 && Class98.aClass348_Sub16_Sub3_1564!!.method2860(95)) {
                         i_7_ += DirectionalLightTextureNode.anInt9444
-                        if (Class58.anInt1059 < i_7_) i_7_ = Class58.anInt1059
+                        if (DirectionPath.anInt1059 < i_7_) i_7_ = DirectionPath.anInt1059
                         Class98.aClass348_Sub16_Sub3_1564!!.method2861(i xor 0x1eab, i_7_)
                     } else {
                         DirectionalLightTextureNode.anInt9444 = 0

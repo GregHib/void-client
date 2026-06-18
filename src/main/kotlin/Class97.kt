@@ -1,5 +1,5 @@
 import WorldMapPolygonIconLabel.Companion.method3575
-import Class58.Companion.method535
+import DirectionPath.Companion.method535
 import Class89.Companion.method849
 import NativeRenderer.Companion.method3936
 import jaclib.memory.Stream.Companion.c

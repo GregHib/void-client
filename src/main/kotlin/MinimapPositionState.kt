@@ -56,7 +56,7 @@ class MinimapPositionState {
                     SizeBoundedSoftCache.aBooleanArray2326!![i_3_] = GzipDecompressor.aBooleanArray2076!![i_3_]
                     GzipDecompressor.aBooleanArray2076!![i_3_] = false
                 }
-                Class58.anInt1064 = Class367_Sub11.anInt7396
+                DirectionPath.anInt1064 = Class367_Sub11.anInt7396
                 method198(null, false, -1, -1)
                 method1343(-1, null, 1, -1)
                 if (RenderNode.anInt9721 != -1) {

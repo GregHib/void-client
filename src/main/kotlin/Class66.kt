@@ -55,7 +55,7 @@ import ColourAdjustment.Companion.method449
 import MinimapPolygonDrawer.Companion.method468
 import OggCacheStream.Companion.method524
 import MapSceneTile.Companion.method529
-import Class58.Companion.method532
+import DirectionPath.Companion.method532
 import Class59.Companion.method544
 import Class59_Sub2_Sub2.Companion.method572
 import SolidFillComponent.Companion.method197

@@ -1,4 +1,4 @@
-import Class58.Companion.method536
+import DirectionPath.Companion.method536
 import Class59_Sub2_Sub2.Companion.method574
 import Class79.Companion.method802
 

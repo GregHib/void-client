@@ -11,7 +11,7 @@ import Class99.method882
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
 // Source File Name:   Class130_Sub1.java
-class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>) : ModelBatchBase() {
+class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<DirectionPath>) : ModelBatchBase() {
     companion object {
         @JvmStatic
         fun method1131(i: Int) {
@@ -181,7 +181,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SequencedActorEntity.anInt10102 = 0
             OpenGlRenderer.anInt7552 = 0
             Class64_Sub3.anInt5585 = 0
-            Class58.anInt1066 = 0
+            DirectionPath.anInt1066 = 0
             ParameterizedText.anInt9560 = 0
             RingBufferInputStream.anInt4553 = 0
             MapElementManager.anInt4465 = 0
@@ -351,7 +351,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TileRenderState.anInt4229 = 0
             CollisionMap.anInt4447 = 0
             ParticleConfigParser.anInt3818 = 0
-            Class58.anInt1056 = 0
+            DirectionPath.anInt1056 = 0
             Class64_Sub3.anInt5532 = 0
             ParticleSystemState.anInt2194 = 0
             Class92.anInt1526 = 0
@@ -2100,7 +2100,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FlipTextureNode.anInt9145 = 0
             AntialiasOptionState.anInt6082 = 0
             NativeRenderer.anInt7896 = 0
-            Class58.anInt1060 = 0
+            DirectionPath.anInt1060 = 0
             CubemapTexture2dSource.anInt8692 = 0
             DisplaySettingsConfig.anInt7233 = 0
             MidiSequencePlayer.anInt8893 = 0
@@ -2209,7 +2209,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LoadingScreenImageNode.anInt9509 = 0
             LongKeyNode.anInt6763 = 0
             Class79.anInt1389 = 0
-            Class58.anInt1063 = 0
+            DirectionPath.anInt1063 = 0
             BrightnessTextureNode.anInt9218 = 0
             HslColorConfig.anInt340 = 0
             BrightnessOptionState.anInt5895 = 0
@@ -2420,7 +2420,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SettingsCrcWriter.anInt2121 = 0
             CompositeNpcModelBuilder.anInt2096 = 0
             AwtKeyboardListener.anInt6525 = 0
-            Class58.anInt1062 = 0
+            DirectionPath.anInt1062 = 0
             SoundEngineInitializer.anInt485 = 0
             ConfigFlagUtil.anInt3230 = 0
             InterfaceComponentGroup.anInt9630 = 0
@@ -2578,7 +2578,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NpcDefinitionCache.anInt3322 = 0
             IntRange.anInt1750 = 0
             Class64_Sub2.anInt5448 = 0
-            Class58.anInt1061 = 0
+            DirectionPath.anInt1061 = 0
             MouseInputTracker.anInt7443 = 0
             Class79.anInt1378 = 0
             RemoveRoofsOptionState.anInt6067 = 0
@@ -3594,7 +3594,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class66.anInt1158 = 0
             WorldMapSceneSoftware.anInt5826 = 0
             ClientMachineInfo.anInt6611 = 0
-            Class58.anInt1065 = 0
+            DirectionPath.anInt1065 = 0
             NativeRenderer.anInt7887 = 0
             NativeRenderer.anInt7984 = 0
             AnimatedModelRenderer.anInt8393 = 0

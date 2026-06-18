@@ -1,16 +1,16 @@
 import jagdx.IDirect3DVertexDeclaration
 import jagdx.VertexElementCollection
 
-class dxVertexLayout internal constructor(d3dRenderDevice: D3dRenderDevice, class58s: Array<Class58>) : ModelBatchBase() {
+class dxVertexLayout internal constructor(d3dRenderDevice: D3dRenderDevice, directionPaths: Array<DirectionPath>) : ModelBatchBase() {
     @JvmField
     var anIDirect3DVertexDeclaration5803: IDirect3DVertexDeclaration?
 
     init {
         val vertexelementcollection = VertexElementCollection(d3dRenderDevice.aHb9788)
         var i = 0
-        for (i_0_ in class58s.indices) {
+        for (i_0_ in directionPaths.indices) {
             var i_1_ = 0
-            val class58 = class58s[i_0_]!!
+            val class58 = directionPaths[i_0_]!!
             var i_2_ = 0
             while ((i_2_ < class58.method538((-126).toByte()))) {
                 val class325 = class58.method537(i_2_, 126)!!

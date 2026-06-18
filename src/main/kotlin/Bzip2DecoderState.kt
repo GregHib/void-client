@@ -107,7 +107,7 @@ class Bzip2DecoderState internal constructor() {
                 NpcActorEntity.anInt10074 = i_1_
                 GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                 SceneLinkedListNode.anInt3971 = i_2_
-                Class58.anInt1059 = i
+                DirectionPath.anInt1059 = i
                 WaterDetailOptionState.anInt5994 = (Class98.aClass348_Sub16_Sub3_1564!!.method2844(103.toByte()) / i_3_)
                 if (WaterDetailOptionState.anInt5994 < 1) WaterDetailOptionState.anInt5994 = 1
             } else method2732(i_2_, i_1_, bool, 123, js5Archive, i)
