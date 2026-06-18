@@ -37,7 +37,7 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
         @JvmField
         var anInt190: Int = 0
         @JvmField
-        var aClass87_191: Class87? = null
+        var aWidgetCache_191: WidgetCache? = null
         @JvmStatic
         fun method217(i: Byte): String? {
             anInt175++
@@ -52,7 +52,7 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
             anIntArray187 = null
             anIntArray179 = null
             aSceneProjector_186 = null
-            aClass87_191 = null
+            aWidgetCache_191 = null
             anIntArrayArray174 = null
         }
 

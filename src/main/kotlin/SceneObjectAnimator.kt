@@ -86,7 +86,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             aAbstractModel_3059 = null
             if (aWidgetDefinition_3057 != null && i_1_ == aWidgetDefinition_3057!!.anInt269) {
                 if (aWidgetDefinition_3057!!.anInt248 == 0) return
-            } else aWidgetDefinition_3057 = ParticleEmitterNode.aClass87_191!!.method835(i_1_, i + -62)
+            } else aWidgetDefinition_3057 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_1_, i + -62)
             if (aWidgetDefinition_3057!!.anIntArray237 == null) aWidgetDefinition_3057 = null
             else {
                 if (bool) {

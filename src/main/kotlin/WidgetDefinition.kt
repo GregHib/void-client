@@ -23,7 +23,7 @@ class WidgetDefinition {
     @JvmField
     var anInt249: Int
     @JvmField
-    var aClass87_251: Class87? = null
+    var aWidgetCache_251: WidgetCache? = null
     @JvmField
     var anIntArray253: IntArray? = null
     @JvmField
@@ -52,12 +52,12 @@ class WidgetDefinition {
         var i_3_ = 0
         var i_4_ = this.anIntArray237[i_1_]
         var class348_sub42_sub17: TextureMaterialGroup? = null
-        val class348_sub42_sub17_5_ = this.aClass87_251!!.method839(i_4_ shr 16, 3)
+        val class348_sub42_sub17_5_ = this.aWidgetCache_251!!.method839(i_4_ shr 16, 3)
         i_4_ = i_4_ and 0xffff
         if (class348_sub42_sub17_5_ == null) return i_2_
         if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i != -1 && i < this.anIntArray237.size) {
             i_3_ = this.anIntArray237[i]
-            class348_sub42_sub17 = this.aClass87_251!!.method839(i_3_ shr 16, 3)
+            class348_sub42_sub17 = this.aWidgetCache_251!!.method839(i_3_ shr 16, 3)
             i_3_ = i_3_ and 0xffff
         }
         if (i_0_ <= 96) return 11
@@ -74,7 +74,7 @@ class WidgetDefinition {
             if (anIntArray260!!.size > i_1_) {
                 var i_6_ = anIntArray260!![i_1_]
                 if (i_6_ != 65535) {
-                    val class348_sub42_sub17_7_ = this.aClass87_251!!.method839(i_6_ shr 16, 3)
+                    val class348_sub42_sub17_7_ = this.aWidgetCache_251!!.method839(i_6_ shr 16, 3)
                     i_6_ = i_6_ and 0xffff
                     if (class348_sub42_sub17_7_ != null) {
                         if (class348_sub42_sub17_7_.method3272(i_6_, 0)) i_2_ = i_2_ or 0x80
@@ -86,7 +86,7 @@ class WidgetDefinition {
             if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i != -1 && anIntArray260!!.size > i) {
                 var i_8_ = anIntArray260!![i]
                 if (i_8_ != 65535) {
-                    val class348_sub42_sub17_9_ = this.aClass87_251!!.method839(i_8_ shr 16, 3)
+                    val class348_sub42_sub17_9_ = this.aWidgetCache_251!!.method839(i_8_ shr 16, 3)
                     i_8_ = i_8_ and 0xffff
                     if (class348_sub42_sub17_9_ != null) {
                         if (class348_sub42_sub17_9_.method3272(i_8_, 0)) i_2_ = i_2_ or 0x80
@@ -197,13 +197,13 @@ class WidgetDefinition {
         anInt266++
         val i_33_ = this.anIntArray267!![i_29_]
         i_29_ = this.anIntArray237[i_29_]
-        val class348_sub42_sub17 = this.aClass87_251!!.method839(i_29_ shr 16, 3)
+        val class348_sub42_sub17 = this.aWidgetCache_251!!.method839(i_29_ shr 16, 3)
         i_29_ = i_29_ and 0xffff
         if (class348_sub42_sub17 == null) return abstractModel.method614(i_28_, i_32_, true)
         var class348_sub42_sub17_34_: TextureMaterialGroup? = null
         if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_27_ != -1 && this.anIntArray237.size > i_27_) {
             i_27_ = this.anIntArray237[i_27_]
-            class348_sub42_sub17_34_ = this.aClass87_251!!.method839(i_27_ shr 16, 3)
+            class348_sub42_sub17_34_ = this.aWidgetCache_251!!.method839(i_27_ shr 16, 3)
             i_27_ = i_27_ and 0xffff
         }
         if (this.aBoolean242) i_32_ = i_32_ or 0x200
@@ -238,13 +238,13 @@ class WidgetDefinition {
         anInt246++
         val i_54_ = this.anIntArray267!![i_53_]
         var i_55_ = this.anIntArray237[i_53_]
-        val class348_sub42_sub17 = this.aClass87_251!!.method839(i_55_ shr 16, 3)
+        val class348_sub42_sub17 = this.aWidgetCache_251!!.method839(i_55_ shr 16, 3)
         i_55_ = i_55_ and 0xffff
         if (class348_sub42_sub17 == null) return abstractModel.method614(1.toByte(), i_52_, true)
         var class348_sub42_sub17_56_: TextureMaterialGroup? = null
         if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_50_ != -1 && this.anIntArray237.size > i_50_) {
             i_50_ = this.anIntArray237[i_50_]
-            class348_sub42_sub17_56_ = this.aClass87_251!!.method839(i_50_ shr 16, 3)
+            class348_sub42_sub17_56_ = this.aWidgetCache_251!!.method839(i_50_ shr 16, 3)
             i_50_ = i_50_ and 0xffff
         }
         var class348_sub42_sub17_57_: TextureMaterialGroup? = null
@@ -255,14 +255,14 @@ class WidgetDefinition {
             if (anIntArray260!!.size > i_53_) {
                 i_59_ = anIntArray260!![i_53_]
                 if (i_59_ != 65535) {
-                    class348_sub42_sub17_57_ = this.aClass87_251!!.method839(i_59_ shr 16, 3)
+                    class348_sub42_sub17_57_ = this.aWidgetCache_251!!.method839(i_59_ shr 16, 3)
                     i_59_ = i_59_ and 0xffff
                 }
             }
             if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_50_ != -1 && i_50_ < anIntArray260!!.size) {
                 i_60_ = anIntArray260!![i_50_]
                 if (i_60_ != 65535) {
-                    class348_sub42_sub17_58_ = this.aClass87_251!!.method839(i_60_ shr 16, 3)
+                    class348_sub42_sub17_58_ = this.aWidgetCache_251!!.method839(i_60_ shr 16, 3)
                     i_60_ = i_60_ and 0xffff
                 }
             }

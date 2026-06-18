@@ -24,13 +24,13 @@ class LocConfigModelBuilder {
     @JvmField
     var aMapElementDefinitionCache_4513: MapElementDefinitionCache? = null
 
-    fun method3558(i: Int, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int, class87: Class87?, i_3_: Int): AbstractModel? {
+    fun method3558(i: Int, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int, widgetCache: WidgetCache?, i_3_: Int): AbstractModel? {
         try {
             if (i_2_ != 3172) aShortArray4504 = null
             anInt4505++
-            return method3566(var_renderer, i_3_, i_1_, null, 0, class87, i, 5.toByte(), null, 0, false, 0, (-68).toByte(), i_0_)
+            return method3566(var_renderer, i_3_, i_1_, null, 0, widgetCache, i, 5.toByte(), null, 0, false, 0, (-68).toByte(), i_0_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_3_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_3_ + ')'))
         }
     }
 
@@ -45,13 +45,13 @@ class LocConfigModelBuilder {
         }
     }
 
-    fun method3562(i: Int, var_renderer: Renderer?, i_5_: Int, i_6_: Int, i_7_: Int, class87: Class87?, i_8_: Byte): AbstractModel? {
+    fun method3562(i: Int, var_renderer: Renderer?, i_5_: Int, i_6_: Int, i_7_: Int, widgetCache: WidgetCache?, i_8_: Byte): AbstractModel? {
         try {
             if (i_8_ <= 24) return null
             anInt4511++
-            return method3566(var_renderer, i, i_6_, null, 0, class87, i_5_, 2.toByte(), null, 0, false, 0, (-68).toByte(), i_7_)
+            return method3566(var_renderer, i, i_6_, null, 0, widgetCache, i_5_, 2.toByte(), null, 0, false, 0, (-68).toByte(), i_7_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fk.A(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_8_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("fk.A(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_8_ + ')'))
         }
     }
 
@@ -112,13 +112,13 @@ class LocConfigModelBuilder {
         }
     }
 
-    fun method3565(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean, var_renderer: Renderer?, i_19_: Int, i_20_: Int, i_21_: Int, class87: Class87?, var_terrainTile: TerrainTile?, i_22_: Int, var_terrainTile_23_: TerrainTile?): AbstractModel? {
+    fun method3565(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean, var_renderer: Renderer?, i_19_: Int, i_20_: Int, i_21_: Int, widgetCache: WidgetCache?, var_terrainTile: TerrainTile?, i_22_: Int, var_terrainTile_23_: TerrainTile?): AbstractModel? {
         try {
             anInt4496++
             if (i_21_ != -129) method3566(null, 36, -84, null, 43, null, 2, 54.toByte(), null, -17, true, -42, 95.toByte(), -81)
-            return method3566(var_renderer, i_16_, i_18_, var_terrainTile, i_22_, class87, i, 2.toByte(), var_terrainTile_23_, i_17_, bool, i_20_, (-68).toByte(), i_19_)
+            return method3566(var_renderer, i_16_, i_18_, var_terrainTile, i_22_, widgetCache, i, 2.toByte(), var_terrainTile_23_, i_17_, bool, i_20_, (-68).toByte(), i_19_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (var_terrainTile_23_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (var_terrainTile_23_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -127,12 +127,12 @@ class LocConfigModelBuilder {
         anInt4507 = -1
     }
 
-    private fun method3566(var_renderer: Renderer?, i: Int, i_24_: Int, var_terrainTile: TerrainTile?, i_25_: Int, class87: Class87?, i_26_: Int, i_27_: Byte, var_terrainTile_28_: TerrainTile?, i_29_: Int, bool: Boolean, i_30_: Int, i_31_: Byte, i_32_: Int): AbstractModel? {
+    private fun method3566(var_renderer: Renderer?, i: Int, i_24_: Int, var_terrainTile: TerrainTile?, i_25_: Int, widgetCache: WidgetCache?, i_26_: Int, i_27_: Byte, var_terrainTile_28_: TerrainTile?, i_29_: Int, bool: Boolean, i_30_: Int, i_31_: Byte, i_32_: Int): AbstractModel? {
         var bool = bool
         try {
             anInt4491++
             var i_33_ = i_24_
-            val class17 = (if (this.anInt4503 != -1 && i != -1) class87!!.method835(this.anInt4503, 7) else null)
+            val class17 = (if (this.anInt4503 != -1 && i != -1) widgetCache!!.method835(this.anInt4503, 7) else null)
             bool = bool and (this.aByte4488.toInt() != 0)
             if (class17 != null) i_33_ = i_33_ or class17.method263(i_32_, 110, i, false)
             if (bool) i_33_ = i_33_ or (if (this.aByte4488.toInt() != 3) 2 else 7)
@@ -183,7 +183,7 @@ class LocConfigModelBuilder {
             class64_37_!!.s(i_24_)
             return class64_37_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fk.I(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_25_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_26_ + ',' + i_27_ + ',' + (if (var_terrainTile_28_ != null) "{...}" else "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("fk.I(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_25_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_26_ + ',' + i_27_ + ',' + (if (var_terrainTile_28_ != null) "{...}" else "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'))
         }
     }
 

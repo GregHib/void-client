@@ -392,7 +392,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                 if (i_46_ == i_38_) {
                                     val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(55.toByte(), i_38_)
                                     if (class368.aBoolean4487 && class368.anInt4503 != -1) {
-                                        val class17 = (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7))
+                                        val class17 = (ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7))
                                         val i_47_ = class17.anInt248
                                         if (i_47_ != 0 && i_47_ != 2) {
                                             if (i_47_ == 1) bool_45_ = true
@@ -402,8 +402,8 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                     val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(105.toByte(), i_38_)
                                     val class368_48_ = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(56.toByte(), i_46_)
                                     if (class368.anInt4503 != -1 && (class368_48_.anInt4503 != -1)) {
-                                        val class17 = (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7))
-                                        val class17_49_ = (ParticleEmitterNode.aClass87_191!!.method835((class368_48_.anInt4503), 7))
+                                        val class17 = (ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7))
+                                        val class17_49_ = (ParticleEmitterNode.aWidgetCache_191!!.method835((class368_48_.anInt4503), 7))
                                         if (class17.anInt239 < class17_49_.anInt239) bool_45_ = false
                                     }
                                 }
@@ -422,7 +422,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                     if (npc.anInt10291 != -1 && (Class367_Sub11.anInt7396 == (npc.anInt10211))) {
                                         val i_51_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(103.toByte(), (npc.anInt10291)).anInt4503)
                                         if (i_51_ != -1) {
-                                            val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_51_, 7)
+                                            val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_51_, 7)
                                             if (class17 != null && (class17.anIntArray237) != null && !(npc.aBoolean10309)) TypedRecordTable.method2178(npc, 0, class17, -17)
                                         }
                                     }
@@ -439,7 +439,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                     if (npc.anInt10269 != -1 && (Class367_Sub11.anInt7396 == (npc.anInt10225))) {
                                         val i_50_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(87.toByte(), (npc.anInt10269)).anInt4503)
                                         if (i_50_ != -1) {
-                                            val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_50_, 7)
+                                            val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_50_, 7)
                                             if (class17 != null && (class17.anIntArray237) != null && !(npc.aBoolean10309)) TypedRecordTable.method2178(npc, 0, class17, -44)
                                         }
                                     }
@@ -459,7 +459,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                 if (i_38_ == i_54_) {
                                     val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(111.toByte(), i_38_)
                                     if (class368.aBoolean4487 && class368.anInt4503 != -1) {
-                                        val class17 = (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7))
+                                        val class17 = (ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7))
                                         val i_57_ = class17.anInt248
                                         if (i_57_ != 0 && i_57_ != 2) {
                                             if (i_57_ == 1) bool_53_ = true
@@ -469,8 +469,8 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                     val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(105.toByte(), i_38_)
                                     val class368_55_ = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(118.toByte(), i_54_)
                                     if (class368.anInt4503 != -1 && class368_55_.anInt4503 != -1) {
-                                        val class17 = (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7))
-                                        val class17_56_ = (ParticleEmitterNode.aClass87_191!!.method835((class368_55_.anInt4503), 7))
+                                        val class17 = (ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7))
+                                        val class17_56_ = (ParticleEmitterNode.aWidgetCache_191!!.method835((class368_55_.anInt4503), 7))
                                         if (class17.anInt239 < class17_56_.anInt239) bool_53_ = false
                                     }
                                 }
@@ -490,7 +490,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                     if ((player.anInt10291 != -1) && ((player.anInt10211) == Class367_Sub11.anInt7396)) {
                                         val i_58_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(45.toByte(), (player.anInt10291)).anInt4503)
                                         if (i_58_ != -1) {
-                                            val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_58_, 7)
+                                            val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_58_, 7)
                                             if (class17 != null && (class17.anIntArray237) != null && !(player.aBoolean10309)) TypedRecordTable.method2178(player, 0, class17, -120)
                                         }
                                     }
@@ -508,7 +508,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                     if ((player.anInt10269 != -1) && (Class367_Sub11.anInt7396 == (player.anInt10225))) {
                                         val i_59_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(81.toByte(), (player.anInt10269)).anInt4503)
                                         if (i_59_ != -1) {
-                                            val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_59_, 7)
+                                            val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_59_, 7)
                                             if (class17 != null && (class17.anIntArray237) != null && !(player.aBoolean10309)) TypedRecordTable.method2178(player, 0, class17, -101)
                                         }
                                     }

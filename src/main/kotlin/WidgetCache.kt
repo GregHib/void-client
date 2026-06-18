@@ -5,7 +5,7 @@ import RsaVarbitHandler.Companion.method494
 /* Class87 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class87 internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_6_: Js5Archive?, js5Archive_7_: Js5Archive?) {
+class WidgetCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_6_: Js5Archive?, js5Archive_7_: Js5Archive?) {
     private var aLruByteCache_1487: LruByteCache? = LruByteCache(64)
     private val aJs5Archive_1488: Js5Archive?
     private var aLruByteCache_1491: LruByteCache? = LruByteCache(100)
@@ -35,7 +35,7 @@ class Class87 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
         }
         widgetDefinition = WidgetDefinition()
         widgetDefinition.anInt269 = i
-        widgetDefinition.aClass87_251 = this
+        widgetDefinition.aWidgetCache_251 = this
         if (`is` != null) widgetDefinition.method267(Buffer(`is`), false)
         widgetDefinition.method270(124.toByte())
         synchronized(aLruByteCache_1487!!) {

@@ -75,7 +75,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2012(-23828)
             MapAreaDefinition.aBufferedMessageQueue_2529!!.method2078(-6080)
             Exception_Sub1.aModelHeaderCache_112!!.method1939(-110)
-            ParticleEmitterNode.aClass87_191!!.method834((-116).toByte())
+            ParticleEmitterNode.aWidgetCache_191!!.method834((-116).toByte())
             ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2546(60)
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1445(64)
             NormalMapGenerator.aParticleAmountCache_3453!!.method1589(127.toByte())
@@ -180,7 +180,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                     widgetComponent.anInt841 = 0
                     widgetComponent.anInt730 = LocalPlayerState.aPlayer_1907!!.anInt10312
                     widgetComponent.anInt795 = LocalPlayerState.aPlayer_1907!!.anInt10245
-                    val class17 = (if (widgetComponent.anInt699 != -1) ParticleEmitterNode.aClass87_191!!.method835(widgetComponent.anInt699, 7) else null)
+                    val class17 = (if (widgetComponent.anInt699 != -1) ParticleEmitterNode.aWidgetCache_191!!.method835(widgetComponent.anInt699, 7) else null)
                     if (class17 != null) method2017(widgetComponent.anInt795, class17, 50)
                 }
             } else {

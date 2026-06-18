@@ -11,7 +11,7 @@ import Class367_Sub8.Companion.method3547
 import WorldMapPolygonIconLabel.Companion.method3576
 import DirectionPath.Companion.method536
 import NpcType.Companion.method802
-import Class87.Companion.method837
+import WidgetCache.Companion.method837
 
 /* Class237 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

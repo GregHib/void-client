@@ -367,7 +367,7 @@ class WidgetComponent {
         return class348_sub50.aString7211
     }
 
-    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, class87: Class87?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, modelHeaderCache: ModelHeaderCache?, interface17: Interface17?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, npcDefinitionCache: NpcDefinitionCache?, bufferedMessageQueue: BufferedMessageQueue?, i_24_: Int): AbstractModel? {
+    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, widgetCache: WidgetCache?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, modelHeaderCache: ModelHeaderCache?, interface17: Interface17?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, npcDefinitionCache: NpcDefinitionCache?, bufferedMessageQueue: BufferedMessageQueue?, i_24_: Int): AbstractModel? {
         var i = i
         try {
             anInt684++
@@ -395,7 +395,7 @@ class WidgetComponent {
                 return abstractModel
             }
             if (this.anInt770 == 2) {
-                val class64 = (bufferedMessageQueue!!.method2079(this.anInt753, -1).method803(interface17, var_renderer, i_22_, i_24_, widgetDefinition, class87, i_21_, 104, i))
+                val class64 = (bufferedMessageQueue!!.method2079(this.anInt753, -1).method803(interface17, var_renderer, i_22_, i_24_, widgetDefinition, widgetCache, i_21_, 104, i))
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -404,7 +404,7 @@ class WidgetComponent {
             }
             if (this.anInt770 == 3) {
                 if (compositeNpcModelBuilder == null) return null
-                val class64 = compositeNpcModelBuilder.method1230(modelHeaderCache, -402058072, class87, modelDefinitionLoader, interface17, bufferedMessageQueue, i_21_, i_24_, i, widgetDefinition, i_22_, var_renderer)
+                val class64 = compositeNpcModelBuilder.method1230(modelHeaderCache, -402058072, widgetCache, modelDefinitionLoader, interface17, bufferedMessageQueue, i_21_, i_24_, i, widgetDefinition, i_22_, var_renderer)
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -421,7 +421,7 @@ class WidgetComponent {
                 return class64
             }
             if (this.anInt770 == 6) {
-                val class64 = (bufferedMessageQueue!!.method2079(this.anInt753, -1).method800(0, null, class87, false, null, 0, npcDefinitionCache, i_21_, widgetDefinition, interface17, var_renderer, 0, null, i_24_, 0, i, i_22_))
+                val class64 = (bufferedMessageQueue!!.method2079(this.anInt753, -1).method800(0, null, widgetCache, false, null, 0, npcDefinitionCache, i_21_, widgetDefinition, interface17, var_renderer, 0, null, i_24_, 0, i, i_22_))
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -433,7 +433,7 @@ class WidgetComponent {
                 val i_26_ = this.anInt753 ushr 16
                 val i_27_ = 0xffff and this.anInt753
                 val i_28_ = this.anInt779
-                val class64 = compositeNpcModelBuilder.method1232(i_24_, i, i_28_, i_27_, class87, modelDefinitionLoader, -15331, i_26_, i_22_, var_renderer, i_21_, widgetDefinition)
+                val class64 = compositeNpcModelBuilder.method1232(i_24_, i, i_28_, i_27_, widgetCache, modelDefinitionLoader, -15331, i_26_, i_22_, var_renderer, i_21_, widgetDefinition)
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -444,7 +444,7 @@ class WidgetComponent {
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(
                 runtimeexception,
-                ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + i_24_ + ')')
+                ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + i_24_ + ')')
             )
         }
     }
@@ -949,7 +949,7 @@ class WidgetComponent {
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2006(88)
             MapAreaDefinition.aBufferedMessageQueue_2529!!.method2080(127)
             Exception_Sub1.aModelHeaderCache_112!!.method1938(126)
-            ParticleEmitterNode.aClass87_191!!.method838(7)
+            ParticleEmitterNode.aWidgetCache_191!!.method838(7)
             ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2542(-101)
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)
             NormalMapGenerator.aParticleAmountCache_3453!!.method1590(0)

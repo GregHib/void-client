@@ -85,17 +85,17 @@ class Npc : ProjectedGroundDecor() {
             i_17_--
             i_18_++
         }
-        if (this.anInt10286 != -1 && ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7).anInt245 == 1) {
+        if (this.anInt10286 != -1 && ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10286, 7).anInt245 == 1) {
             this.anInt10286 = -1
             this.anIntArray10236 = null
         }
         if (this.anInt10269 != -1) {
             val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(118.toByte(), this.anInt10269))
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10269 = -1
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10269 = -1
         }
         if (this.anInt10291 != -1) {
             val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(77.toByte(), this.anInt10291))
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
         }
         if ((this.anInt10319.inv()) > i_16_) this.anInt10319++
         for (i_19_ in this.anInt10319 downTo 1) {
@@ -125,8 +125,8 @@ class Npc : ProjectedGroundDecor() {
         this.aBoolean10324 = false
         var class318_sub4: SceneEntityModel? = null
         if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == i && class79!!.aBoolean1369 && class225.aBoolean2913) {
-            val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7))
-            val class17_22_ = (if (this.anInt10268 == -1 || (this.aBoolean10213 && class17 != null)) null else ParticleEmitterNode.aClass87_191!!.method835(this.anInt10268, 7))
+            val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10286, 7))
+            val class17_22_ = (if (this.anInt10268 == -1 || (this.aBoolean10213 && class17 != null)) null else ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10268, 7))
             val class64 = (method2711(
                 this.anInt10302,
                 i_20_,
@@ -208,17 +208,17 @@ class Npc : ProjectedGroundDecor() {
         this.plane = this.aByte6376
         anInt10515++
         if (method802(i, i_26_, true)) this.aByte6376++
-        if (this.anInt10286 != -1 && ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7).anInt245 == 1) {
+        if (this.anInt10286 != -1 && ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10286, 7).anInt245 == 1) {
             this.anIntArray10236 = null
             this.anInt10286 = -1
         }
         if (this.anInt10269 != -1) {
             val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(117.toByte(), this.anInt10269))
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10269 = -1
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10269 = -1
         }
         if (this.anInt10291 != -1) {
             val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(56.toByte(), this.anInt10291))
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
         }
         if (!bool) {
             val i_30_ = i_26_ - this.anIntArray10320!![0]
@@ -307,15 +307,15 @@ class Npc : ProjectedGroundDecor() {
         anInt10494++
         val i_35_ = i_34_
         val class225 = this.method2422(72.toByte())
-        val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7))
-        val class17_36_ = (if (this.anInt10268 != -1 && (!this.aBoolean10213 || class17 == null)) ParticleEmitterNode.aClass87_191!!.method835(this.anInt10268, 7) else null)
+        val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10286, 7))
+        val class17_36_ = (if (this.anInt10268 != -1 && (!this.aBoolean10213 || class17 == null)) ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10268, 7) else null)
         val i_37_ = class225.anInt2932
         val i_38_ = class225.anInt2941
         if (i_37_ != 0 || i_38_ != 0 || class225.anInt2950 != 0 || class225.anInt2926 != 0) i_34_ = i_34_ or 0x7
         val bool = (this.aByte10279.toInt() != 0 && (Class367_Sub11.anInt7396 >= this.anInt10248) && (Class367_Sub11.anInt7396 < this.anInt10250))
         if (bool) i_34_ = i_34_ or 0x80000
         val i_39_ = this.aCompassSmoother_10217.method2019((-25).toByte())
-        val class64 = (this.aNpcType_10505!!.method800(i_39_, this.aLoadProgressCountersArray10308, ParticleEmitterNode.aClass87_191, false, class17_36_, this.anInt10203, OpenGlModel.aNpcDefinitionCache_5558, this.anInt10267, class17, aVarpStore_10209, var_renderer, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232).also { this.aAbstractModelArray10323[0] = it })
+        val class64 = (this.aNpcType_10505!!.method800(i_39_, this.aLoadProgressCountersArray10308, ParticleEmitterNode.aWidgetCache_191, false, class17_36_, this.anInt10203, OpenGlModel.aNpcDefinitionCache_5558, this.anInt10267, class17, aVarpStore_10209, var_renderer, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232).also { this.aAbstractModelArray10323[0] = it })
         if (class64 == null) return false
         this.anInt10207 = class64.fa()
         this.anInt10230 = class64.ma()
@@ -337,7 +337,7 @@ class Npc : ProjectedGroundDecor() {
                 if (this.anInt10220 != 0) i_41_ = i_41_ or 0x2
                 if (this.anInt10278 >= 0) i_41_ = i_41_ or 0x7
             } else i_41_ = i_41_ or 0x7
-            val class64_42_ = (class368.method3562(this.anInt10240, var_renderer, this.anInt10243, i_41_, this.anInt10283, ParticleEmitterNode.aClass87_191, 78.toByte()).also { this.aAbstractModelArray10323[1] = it })
+            val class64_42_ = (class368.method3562(this.anInt10240, var_renderer, this.anInt10243, i_41_, this.anInt10283, ParticleEmitterNode.aWidgetCache_191, 78.toByte()).also { this.aAbstractModelArray10323[1] = it })
             if (class64_42_ != null) {
                 if (this.anInt10278 < 0) {
                     if (this.anInt10237 != 0) class64_42_.a(2048 * (this.anInt10237))
@@ -386,7 +386,7 @@ class Npc : ProjectedGroundDecor() {
                 if (this.anInt10260 != 0) i_52_ = i_52_ or 0x2
                 if (this.anInt10289 >= 0) i_52_ = i_52_ or 0x7
             } else i_52_ = i_52_ or 0x7
-            val class64_53_ = (class368.method3558(this.anInt10273, this.anInt10276, var_renderer, i_52_, 3172, ParticleEmitterNode.aClass87_191, this.anInt10224).also { this.aAbstractModelArray10323[2] = it })
+            val class64_53_ = (class368.method3558(this.anInt10273, this.anInt10276, var_renderer, i_52_, 3172, ParticleEmitterNode.aWidgetCache_191, this.anInt10224).also { this.aAbstractModelArray10323[2] = it })
             if (class64_53_ != null) {
                 if (this.anInt10289 >= 0 && class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939!![this.anInt10289]) != null)) {
                     var i_54_ = 0

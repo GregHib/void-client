@@ -340,13 +340,13 @@ class NpcType {
         }
     }
 
-    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, class87: Class87?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, npcDefinitionCache: NpcDefinitionCache?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, interface17: Interface17?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): AbstractModel? {
+    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, widgetCache: WidgetCache?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, npcDefinitionCache: NpcDefinitionCache?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, interface17: Interface17?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): AbstractModel? {
         try {
             anInt1341++
             if (this.anIntArray1377 != null) {
                 val class79_42_ = method794(interface17!!, -1)
                 if (class79_42_ == null) return null
-                return class79_42_.method800(i, loadProgressCounters, class87, false, widgetDefinition, i_34_, npcDefinitionCache, i_35_, widgetDefinition_36_, interface17, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
+                return class79_42_.method800(i, loadProgressCounters, widgetCache, false, widgetDefinition, i_34_, npcDefinitionCache, i_35_, widgetDefinition_36_, interface17, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
             }
             var i_43_ = i_40_
             if (anInt1358 != 128) i_43_ = i_43_ or 0x2
@@ -360,14 +360,14 @@ class NpcType {
             for (i_50_ in 0..<i_49_) {
                 ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_] = null
                 if (loadProgressCounters!![i_50_] != null) {
-                    val class17_51_ = class87!!.method835((loadProgressCounters[i_50_]!!.anInt2454), 7)
+                    val class17_51_ = widgetCache!!.method835((loadProgressCounters[i_50_]!!.anInt2454), 7)
                     if (class17_51_.anIntArray237 != null) {
                         bool_44_ = true
                         AudioResampler.aWidgetDefinitionArray2169s!![i_50_] = class17_51_
                         val i_52_ = loadProgressCounters[i_50_]!!.anInt2451
                         val i_53_ = loadProgressCounters[i_50_]!!.anInt2455
                         var i_54_ = class17_51_.anIntArray237[i_52_]
-                        ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_] = class87.method839(i_54_ ushr 16, 3)
+                        ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_] = widgetCache.method839(i_54_ ushr 16, 3)
                         i_54_ = i_54_ and 0xffff
                         Class90.anIntArray1518!![i_50_] = i_54_
                         if ((ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]) != null) {
@@ -380,7 +380,7 @@ class NpcType {
                             KaraokeSubtitleStream.anIntArray9050!![i_50_] = class17_51_.anIntArray267!![i_52_]
                             TooltipComponentRenderer.anIntArray4648!![i_50_] = loadProgressCounters[i_50_]!!.anInt2456
                             var i_55_ = class17_51_.anIntArray237[i_53_]
-                            TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_] = class87.method839(i_55_ ushr 16, 3)
+                            TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_] = widgetCache.method839(i_55_ ushr 16, 3)
                             i_55_ = i_55_ and 0xffff
                             ParticleDefLoader.anIntArray2466!![i_50_] = i_55_
                             if ((TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]) != null) {
@@ -413,7 +413,7 @@ class NpcType {
                     i_56_ = widgetDefinition_36_.anIntArray237[i_35_]
                     val i_65_ = i_56_ ushr 16
                     i_56_ = i_56_ and 0xffff
-                    class348_sub42_sub17 = class87!!.method839(i_65_, 3)
+                    class348_sub42_sub17 = widgetCache!!.method839(i_65_, 3)
                     if (class348_sub42_sub17 != null) {
                         bool_46_ = bool_46_ or class348_sub42_sub17.method3272(i_56_, 0)
                         bool_45_ = bool_45_ or class348_sub42_sub17.method3271(i_56_, 14)
@@ -425,7 +425,7 @@ class NpcType {
                         i_58_ = widgetDefinition_36_.anIntArray267!![i_35_]
                         val i_66_ = i_57_ ushr 16
                         if (i_65_ == i_66_) class348_sub42_sub17_59_ = class348_sub42_sub17
-                        else class348_sub42_sub17_59_ = class87.method839(i_66_, 3)
+                        else class348_sub42_sub17_59_ = widgetCache.method839(i_66_, 3)
                         i_57_ = i_57_ and 0xffff
                         if (class348_sub42_sub17_59_ != null) {
                             bool_46_ = bool_46_ or class348_sub42_sub17_59_.method3272(i_57_, 0)
@@ -437,7 +437,7 @@ class NpcType {
                 if (widgetDefinition != null) {
                     i_60_ = widgetDefinition.anIntArray237[i_39_]
                     val i_67_ = i_60_ ushr 16
-                    class348_sub42_sub17_63_ = class87!!.method839(i_67_, 3)
+                    class348_sub42_sub17_63_ = widgetCache!!.method839(i_67_, 3)
                     i_60_ = i_60_ and 0xffff
                     if (class348_sub42_sub17_63_ != null) {
                         bool_46_ = bool_46_ or class348_sub42_sub17_63_.method3272(i_60_, 0)
@@ -450,7 +450,7 @@ class NpcType {
                         i_61_ = widgetDefinition.anIntArray237[i_37_]
                         val i_68_ = i_61_ ushr 16
                         if (i_68_ == i_67_) class348_sub42_sub17_64_ = class348_sub42_sub17_63_
-                        else class348_sub42_sub17_64_ = class87.method839(i_68_, 3)
+                        else class348_sub42_sub17_64_ = widgetCache.method839(i_68_, 3)
                         i_61_ = i_61_ and 0xffff
                         if (class348_sub42_sub17_64_ != null) {
                             bool_46_ = bool_46_ or class348_sub42_sub17_64_.method3272(i_61_, 0)
@@ -613,7 +613,7 @@ class NpcType {
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(
                 runtimeexception,
-                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
+                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
             )
         }
     }
@@ -627,13 +627,13 @@ class NpcType {
         return class348_sub50.aString7211
     }
 
-    fun method803(interface17: Interface17?, var_renderer: Renderer?, i: Int, i_94_: Int, widgetDefinition: WidgetDefinition?, class87: Class87?, i_95_: Int, i_96_: Int, i_97_: Int): AbstractModel? {
+    fun method803(interface17: Interface17?, var_renderer: Renderer?, i: Int, i_94_: Int, widgetDefinition: WidgetDefinition?, widgetCache: WidgetCache?, i_95_: Int, i_96_: Int, i_97_: Int): AbstractModel? {
         try {
             anInt1389++
             if (this.anIntArray1377 != null) {
                 val class79_98_ = method794(interface17!!, -1)
                 if (class79_98_ == null) return null
-                return class79_98_.method803(interface17, var_renderer, i, i_94_, widgetDefinition, class87, i_95_, 104, i_97_)
+                return class79_98_.method803(interface17, var_renderer, i, i_94_, widgetDefinition, widgetCache, i_95_, 104, i_97_)
             }
             if (anIntArray1380 == null) return null
             var i_99_ = i_97_
@@ -699,7 +699,7 @@ class NpcType {
             abstractModel!!.s(i_97_)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bb.H(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bb.H(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
         }
     }
 

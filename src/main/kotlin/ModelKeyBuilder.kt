@@ -63,7 +63,7 @@ class ModelKeyBuilder : LinkedListNode() {
                 i_22_ = widgetDefinition.anIntArray237[i_10_]
                 i_15_ = i_15_ or 0x20
                 val i_26_ = i_22_ ushr 16
-                class348_sub42_sub17 = ParticleEmitterNode.aClass87_191!!.method839(i_26_, i_14_ + 4)
+                class348_sub42_sub17 = ParticleEmitterNode.aWidgetCache_191!!.method839(i_26_, i_14_ + 4)
                 i_22_ = i_22_ and 0xffff
                 if (class348_sub42_sub17 != null) {
                     bool_19_ = bool_19_ or class348_sub42_sub17.method3272(i_22_, 0)
@@ -77,7 +77,7 @@ class ModelKeyBuilder : LinkedListNode() {
                     val i_27_ = i_23_ ushr 16
                     i_23_ = i_23_ and 0xffff
                     if (i_27_ == i_26_) class348_sub42_sub17_25_ = class348_sub42_sub17
-                    else class348_sub42_sub17_25_ = ParticleEmitterNode.aClass87_191!!.method839(i_23_ ushr 16, 3)
+                    else class348_sub42_sub17_25_ = ParticleEmitterNode.aWidgetCache_191!!.method839(i_23_ ushr 16, 3)
                     if (class348_sub42_sub17_25_ != null) {
                         bool_19_ = bool_19_ or class348_sub42_sub17_25_.method3272(i_23_, 0)
                         bool_18_ = bool_18_ or class348_sub42_sub17_25_.method3271(i_23_, 14)

@@ -251,7 +251,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                                         class46.anInt795 = 0
                                         class46.anInt841 = 0
                                         class46.anInt730 = 1
-                                        val class17 = (if (class46.anInt699 == -1) null else (ParticleEmitterNode.aClass87_191!!.method835((class46.anInt699), 7)))
+                                        val class17 = (if (class46.anInt699 == -1) null else (ParticleEmitterNode.aWidgetCache_191!!.method835((class46.anInt699), 7)))
                                         if (class17 != null) method2017((class46.anInt795), class17, 30)
                                         ConfigFlagUtil.method1916(-9343, class46)
                                     }

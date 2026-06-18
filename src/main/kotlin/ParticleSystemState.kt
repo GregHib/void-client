@@ -185,7 +185,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
                     while (i_11_ != 0 && i_13_ < (player!!.aLoadProgressCountersArray10308)!!.size) {
                         if ((i_11_ and 0x1) != 0) {
                             if (i_10_ != -1) {
-                                val class17 = ParticleEmitterNode.aClass87_191!!.method835(i_10_, 7)
+                                val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_10_, 7)
                                 val i_14_ = class17.anInt248
                                 var class182 = (player.aLoadProgressCountersArray10308!![i_13_])
                                 if (class182 != null) {
@@ -201,7 +201,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
                                             class182.anInt2445 = 0
                                             if (!player.aBoolean10309) TypedRecordTable.method2178(player, 0, class17, -54)
                                         } else if (i_14_ == 2) class182.anInt2445 = 0
-                                    } else if (class17.anInt239 >= ParticleEmitterNode.aClass87_191!!.method835((class182.anInt2454), 7).anInt239) {
+                                    } else if (class17.anInt239 >= ParticleEmitterNode.aWidgetCache_191!!.method835((class182.anInt2454), 7).anInt239) {
                                         player.aLoadProgressCountersArray10308!![i_13_] = null
                                         class182 = player.aLoadProgressCountersArray10308!![i_13_]
                                     }

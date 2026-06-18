@@ -612,7 +612,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FloatCameraTransform.anInt5728 = 0
             NativeIndexBuffer.anInt4701 = 0
             OpenGlModel.anInt5560 = 0
-            Class87.anInt1489 = 0
+            WidgetCache.anInt1489 = 0
             NativeShaderProgram.anInt9771 = 0
             HardCacheEntryReference.anInt10433 = 0
             RenderNode.anInt9717 = 0
@@ -1048,7 +1048,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Js5Archive.anInt640 = 0
             Renderer.anInt4568 = 0
             GlRenderDevice.anInt9875 = 0
-            Class87.anInt1483 = 0
+            WidgetCache.anInt1483 = 0
             ImageFrameCache.anInt4028 = 0
             MapSceneCache.anInt1456 = 0
             ParticleAmountCache.anInt2846 = 0
@@ -1656,7 +1656,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CompletedResourceRequest.anInt10464 = 0
             DetailLevelOptionState.anInt6126 = 0
             TextureHandle.anInt2586 = 0
-            Class87.anInt1484 = 0
+            WidgetCache.anInt1484 = 0
             anInt1898 = 0
             SimpleToggleOptionState.anInt5890 = 0
             ChatEffectsOptionState.anInt5870 = 0
@@ -2402,7 +2402,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             KeyboardLayoutConfig.anInt2134 = 0
             ParticleDetailOptionState.anInt6024 = 0
             VarpStore.anInt5077 = 0
-            Class87.anInt1490 = 0
+            WidgetCache.anInt1490 = 0
             FontMetaRef.anInt4325 = 0
             PerlinTextureProvider.anInt5809 = 0
             LoadingScreenState.anInt2634 = 0
@@ -3316,7 +3316,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TextureDefinitionLoader.anInt1967 = 0
             FontMetaRef.anInt4324 = 0
             Js5Archive.anInt658 = 0
-            Class87.anInt1485 = 0
+            WidgetCache.anInt1485 = 0
             CurveTextureNode.anInt9207 = 0
             CollisionFlagQuery.anInt1194 = 0
             FlickeringEffectsOptionState.anInt5914 = 0
@@ -3521,7 +3521,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CurveTextureNode.anInt9212 = 0
             CollisionMap.anInt4452 = 0
             GlSpriteRenderer.anInt8428 = 0
-            Class87.anInt1486 = 0
+            WidgetCache.anInt1486 = 0
             ChatCommandProcessor.anInt1167 = 0
             CubemapTextureGlSource.anInt8700 = 0
             ModelDefinitionLoader.anInt2056 = 0

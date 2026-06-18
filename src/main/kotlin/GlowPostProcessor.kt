@@ -132,7 +132,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2010(5, i + -6)
             MapAreaDefinition.Companion.aBufferedMessageQueue_2529!!.method2076(5, true)
             Exception_Sub1.aModelHeaderCache_112!!.method1937(5, false)
-            ParticleEmitterNode.aClass87_191!!.method836(5, 93)
+            ParticleEmitterNode.aWidgetCache_191!!.method836(5, 93)
             ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2544(5, (-41).toByte())
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1442(5, 1.toByte())
             NormalMapGenerator.aParticleAmountCache_3453!!.method1587(5, i xor 0xeab)

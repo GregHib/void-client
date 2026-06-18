@@ -2975,7 +2975,7 @@ object ChatCommandProcessor {
                     widgetComponent.anInt795 = 0
                     widgetComponent.anInt730 = 1
                     widgetComponent.anInt841 = 0
-                    val class17 = (if (widgetComponent.anInt699 == -1) null else ParticleEmitterNode.aClass87_191!!.method835(widgetComponent.anInt699, 7))
+                    val class17 = (if (widgetComponent.anInt699 == -1) null else ParticleEmitterNode.aWidgetCache_191!!.method835(widgetComponent.anInt699, 7))
                     if (class17 != null) CompassSmoother.method2017(widgetComponent.anInt795, class17, 46)
                     ConfigFlagUtil.method1916(-9343, widgetComponent)
                 }
