@@ -1,7 +1,7 @@
 /* Class75_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class75_Sub1 : Class75() {
+object ActiveMapRegion : MapRegionLoader() {
     @JvmField
     var anInt5652: Int = 1
     @JvmField

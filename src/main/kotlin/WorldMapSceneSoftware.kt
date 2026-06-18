@@ -19,7 +19,7 @@ import AsyncResourceRequest.Companion.method3254
 import MapSceneRenderer.method388
 import DirectionPath.Companion.method536
 import SolidFillComponent.Companion.method192
-import Class75_Sub1.method770
+import ActiveMapRegion.method770
 import Class87.Companion.method837
 import Class89.Companion.method850
 import OpenGlRenderNode.Companion.method3297

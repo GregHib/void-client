@@ -138,13 +138,13 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83
         @JvmStatic
         fun method2154(i: Int): Int {
             var i_1_ = -1
-            for (i_2_ in 0..<Class75_Sub1.anInt5652 - 1) {
+            for (i_2_ in 0..<ActiveMapRegion.anInt5652 - 1) {
                 if (i < (WidgetDefinition.anIntArray256!![i_2_] + ParticleProcessor.anIntArray4271!![i_2_])) {
                     i_1_ = i_2_
                     break
                 }
             }
-            if (i_1_ == -1) i_1_ = Class75_Sub1.anInt5652 - 1
+            if (i_1_ == -1) i_1_ = ActiveMapRegion.anInt5652 - 1
             return i_1_
         }
 

@@ -192,21 +192,21 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
             if (bool != true) method1754(false, 115, 112, -104)
             var i_14_ = -2
             var i_15_ = 2147483647
-            val i_16_ = i_12_ - Class75.anInt1266
-            val i_17_ = i_13_ - Class75.anInt1263
-            var class348_sub21 = Class75.aNodeDeque_1254!!.method1995(4) as CameraSplineNode?
+            val i_16_ = i_12_ - MapRegionLoader.anInt1266
+            val i_17_ = i_13_ - MapRegionLoader.anInt1263
+            var class348_sub21 = MapRegionLoader.aNodeDeque_1254!!.method1995(4) as CameraSplineNode?
             while (class348_sub21 != null) {
                 if (class348_sub21.anInt6847 == i) {
                     val i_18_ = class348_sub21.anInt6852
                     val i_19_ = class348_sub21.anInt6851
-                    val i_20_ = (i_19_ - -Class75.anInt1263 or (Class75.anInt1266 + i_18_ shl 14))
+                    val i_20_ = (i_19_ - -MapRegionLoader.anInt1263 or (MapRegionLoader.anInt1266 + i_18_ shl 14))
                     val i_21_ = ((-i_19_ + i_17_) * (-i_19_ + i_17_) + (i_16_ - i_18_) * (-i_18_ + i_16_))
                     if (i_14_ < 0 || i_15_ > i_21_) {
                         i_15_ = i_21_
                         i_14_ = i_20_
                     }
                 }
-                class348_sub21 = Class75.aNodeDeque_1254!!.method1990(113.toByte()) as CameraSplineNode?
+                class348_sub21 = MapRegionLoader.aNodeDeque_1254!!.method1990(113.toByte()) as CameraSplineNode?
             }
             return i_14_
         }

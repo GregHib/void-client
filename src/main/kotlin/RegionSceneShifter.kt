@@ -6,7 +6,7 @@ import SlotBinding.Companion.method2028
 import MidiSequencePlayer.Companion.method2878
 import RenderListTextureNode.Companion.method3153
 import MinimapTriangleDrawer.Companion.method464
-import Class75.Companion.method766
+import MapRegionLoader.Companion.method766
 import Class76.Companion.method773
 import OpenGlRenderNode.Companion.method3297
 import kotlin.math.abs

@@ -123,10 +123,10 @@ class ModelLightingConfig {
                 var i_9_ = 2147483647
                 var i_10_ = -2147483648
                 if (structConfig!!.anIntArray591 != null) {
-                    i_8_ = (Class75.anInt1272 + ((-Class75.anInt1274 + (class348_sub21!!.anInt6852 + structConfig.anInt595)) * (Class75.anInt1276 - Class75.anInt1272) / (-Class75.anInt1274 + Class75.anInt1265)))
-                    i_9_ = (-((-Class75.anInt1262 + Class75.anInt1268) * (structConfig.anInt570 + (class348_sub21.anInt6851 - Class75.anInt1257)) / (Class75.anInt1277 + -Class75.anInt1257)) + Class75.anInt1268)
-                    i_10_ = (-((-Class75.anInt1262 + Class75.anInt1268) * (class348_sub21.anInt6851 + (structConfig.anInt607 + -Class75.anInt1257)) / (Class75.anInt1277 - Class75.anInt1257)) + Class75.anInt1268)
-                    i_7_ = (((-Class75.anInt1272 + Class75.anInt1276) * (-Class75.anInt1274 + class348_sub21.anInt6852 + structConfig.anInt603) / (-Class75.anInt1274 + Class75.anInt1265)) + Class75.anInt1272)
+                    i_8_ = (MapRegionLoader.anInt1272 + ((-MapRegionLoader.anInt1274 + (class348_sub21!!.anInt6852 + structConfig.anInt595)) * (MapRegionLoader.anInt1276 - MapRegionLoader.anInt1272) / (-MapRegionLoader.anInt1274 + MapRegionLoader.anInt1265)))
+                    i_9_ = (-((-MapRegionLoader.anInt1262 + MapRegionLoader.anInt1268) * (structConfig.anInt570 + (class348_sub21.anInt6851 - MapRegionLoader.anInt1257)) / (MapRegionLoader.anInt1277 + -MapRegionLoader.anInt1257)) + MapRegionLoader.anInt1268)
+                    i_10_ = (-((-MapRegionLoader.anInt1262 + MapRegionLoader.anInt1268) * (class348_sub21.anInt6851 + (structConfig.anInt607 + -MapRegionLoader.anInt1257)) / (MapRegionLoader.anInt1277 - MapRegionLoader.anInt1257)) + MapRegionLoader.anInt1268)
+                    i_7_ = (((-MapRegionLoader.anInt1272 + MapRegionLoader.anInt1276) * (-MapRegionLoader.anInt1274 + class348_sub21.anInt6852 + structConfig.anInt603) / (-MapRegionLoader.anInt1274 + MapRegionLoader.anInt1265)) + MapRegionLoader.anInt1272)
                 }
                 var abstractModelRenderer: AbstractModelRenderer? = null
                 var i_11_ = 0
@@ -161,8 +161,8 @@ class ModelLightingConfig {
                     systemFontGlyphs = method1782(structConfig.anInt576, 10144)
                     if (systemFontGlyphs != null) {
                         i_15_ = (GlTexture3D.aFontDefinition_8527!!.method1188(structConfig.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
-                        i_17_ = (class348_sub21!!.anInt6855 - (structConfig.anInt568 * (Class75.anInt1268 + -Class75.anInt1262) / (Class75.anInt1277 - Class75.anInt1257)))
-                        i_16_ = (class348_sub21.anInt6853 + ((-Class75.anInt1272 + Class75.anInt1276) * structConfig.anInt566 / (Class75.anInt1265 + -Class75.anInt1274)))
+                        i_17_ = (class348_sub21!!.anInt6855 - (structConfig.anInt568 * (MapRegionLoader.anInt1268 + -MapRegionLoader.anInt1262) / (MapRegionLoader.anInt1277 - MapRegionLoader.anInt1257)))
+                        i_16_ = (class348_sub21.anInt6853 + ((-MapRegionLoader.anInt1272 + MapRegionLoader.anInt1276) * structConfig.anInt566 / (MapRegionLoader.anInt1265 + -MapRegionLoader.anInt1274)))
                         if (abstractModelRenderer == null) i_17_ -= i_15_ * systemFontGlyphs.method2560() / 2
                         else i_17_ -= ((abstractModelRenderer.method980() shr 1) - -(i_15_ * systemFontGlyphs.method2565()))
                         var i_23_ = 0
@@ -183,8 +183,8 @@ class ModelLightingConfig {
                         if (i_10_ < i_22_) i_10_ = i_22_
                     }
                 }
-                if (Class75.anInt1272 > i_8_ || i_7_ > Class75.anInt1276 || i_10_ < Class75.anInt1262 || i_9_ > Class75.anInt1268) return true
-                Class75.method745(var_renderer!!, class348_sub21!!, structConfig)
+                if (MapRegionLoader.anInt1272 > i_8_ || i_7_ > MapRegionLoader.anInt1276 || i_10_ < MapRegionLoader.anInt1262 || i_9_ > MapRegionLoader.anInt1268) return true
+                MapRegionLoader.method745(var_renderer!!, class348_sub21!!, structConfig)
                 if (abstractModelRenderer != null) {
                     if (Class367_Sub9.anInt7379 > 0 && ((HslAdjustTextureNode.anInt9399 != -1 && (HslAdjustTextureNode.anInt9399 == class348_sub21.anInt6847)) || (SkeletalAnimFrameLoader.anInt481 != -1 && (structConfig.anInt596 == SkeletalAnimFrameLoader.anInt481)))) {
                         val i_25_: Int

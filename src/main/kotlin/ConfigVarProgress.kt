@@ -122,7 +122,7 @@ class ConfigVarProgress internal constructor(private val aString4807: String?) :
                     if (!TerrainTileShape.aBoolean8805) {
                         var class348_sub21 = nodeDeque!!.method1995(4) as CameraSplineNode?
                         while (class348_sub21 != null) {
-                            val class42 = (Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 82.toByte()))
+                            val class42 = (MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 82.toByte()))
                             if (method589(class42, -4)) {
                                 val bool = ModelLightingConfig.method1425((-31).toByte(), class42, class348_sub21, i_14_, var_renderer, i_15_)
                                 if (bool) NoiseTextureGenerator.method549((-43).toByte(), class348_sub21, var_renderer!!, class42)

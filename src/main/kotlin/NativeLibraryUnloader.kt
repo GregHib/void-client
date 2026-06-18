@@ -104,18 +104,18 @@ object NativeLibraryUnloader {
     }
 
     fun method1630(i: Int, i_6_: Int, i_7_: Int) {
-        if (Class75.aFloat1249 > Class75.aFloat1247) {
-            Class75.aFloat1247 += (Class75.aFloat1247.toDouble() / 30.0).toFloat()
-            if (Class75.aFloat1249 < Class75.aFloat1247) Class75.aFloat1247 = Class75.aFloat1249
+        if (MapRegionLoader.aFloat1249 > MapRegionLoader.aFloat1247) {
+            MapRegionLoader.aFloat1247 += (MapRegionLoader.aFloat1247.toDouble() / 30.0).toFloat()
+            if (MapRegionLoader.aFloat1249 < MapRegionLoader.aFloat1247) MapRegionLoader.aFloat1247 = MapRegionLoader.aFloat1249
             MenuActionNode.method2811(false)
-            Class75.anInt1255 = Class75.aFloat1247.toInt() shr 1
-            Class75.aByteArrayArrayArray1251 = SpriteMaskShape.method2596(Class75.anInt1255, 12871)
-        } else if (Class75.aFloat1247 > Class75.aFloat1249) {
-            Class75.aFloat1247 -= (Class75.aFloat1247.toDouble() / 30.0).toFloat()
-            if (Class75.aFloat1249 > Class75.aFloat1247) Class75.aFloat1247 = Class75.aFloat1249
+            MapRegionLoader.anInt1255 = MapRegionLoader.aFloat1247.toInt() shr 1
+            MapRegionLoader.aByteArrayArrayArray1251 = SpriteMaskShape.method2596(MapRegionLoader.anInt1255, 12871)
+        } else if (MapRegionLoader.aFloat1247 > MapRegionLoader.aFloat1249) {
+            MapRegionLoader.aFloat1247 -= (MapRegionLoader.aFloat1247.toDouble() / 30.0).toFloat()
+            if (MapRegionLoader.aFloat1249 > MapRegionLoader.aFloat1247) MapRegionLoader.aFloat1247 = MapRegionLoader.aFloat1249
             MenuActionNode.method2811(false)
-            Class75.anInt1255 = Class75.aFloat1247.toInt() shr 1
-            Class75.aByteArrayArrayArray1251 = SpriteMaskShape.method2596(Class75.anInt1255, i + 12871)
+            MapRegionLoader.anInt1255 = MapRegionLoader.aFloat1247.toInt() shr 1
+            MapRegionLoader.aByteArrayArrayArray1251 = SpriteMaskShape.method2596(MapRegionLoader.anInt1255, i + 12871)
         }
         anInt2971++
         if (i != (TextureMetadataProvider.anInt4609.inv()) && ColourAdjustment.anInt859 != -1) {
@@ -144,7 +144,7 @@ object NativeLibraryUnloader {
         if (ParticleEmitterFactory.aBoolean3174 && RegionSceneLoader.aNodeDeque_3705 != null) {
             var class348_sub12 = RegionSceneLoader.aNodeDeque_3705!!.method1995(4) as BoundingBoxNode?
             while (class348_sub12 != null) {
-                val class42 = (Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub12.aClass348_Sub21_6751!!.anInt6847, 125.toByte()))
+                val class42 = (MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub12.aClass348_Sub21_6751!!.anInt6847, 125.toByte()))
                 if (class348_sub12.method2799(i_6_, i_7_, 95)) {
                     if (class42!!.aStringArray577 != null) {
                         if (class42.aStringArray577[4] != null) MinimapPolygonDrawer.method466(false, class42.aString565, 0, (-100).toByte(), false, class42.anInt596, -1, true, 1006, class348_sub12.aClass348_Sub21_6751!!.anInt6847.toLong(), class42.aStringArray577[4], class348_sub12.aClass348_Sub21_6751!!.anInt6847.toLong(), -1)

@@ -61,11 +61,11 @@ class GlCubeMapTexture internal constructor(glRenderDevice: GlRenderDevice?, i: 
         @JvmStatic
         fun method244(i: Int): Int {
             anInt8622++
-            if (Class75.aFloat1249.toDouble() == 3.0) return 37
+            if (MapRegionLoader.aFloat1249.toDouble() == 3.0) return 37
             if (i != 37) return 11
-            if (Class75.aFloat1249.toDouble() == 4.0) return 50
-            if (Class75.aFloat1249.toDouble() == 6.0) return 75
-            if (Class75.aFloat1249.toDouble() == 8.0) return 100
+            if (MapRegionLoader.aFloat1249.toDouble() == 4.0) return 50
+            if (MapRegionLoader.aFloat1249.toDouble() == 6.0) return 75
+            if (MapRegionLoader.aFloat1249.toDouble() == 8.0) return 100
             return 200
         }
 

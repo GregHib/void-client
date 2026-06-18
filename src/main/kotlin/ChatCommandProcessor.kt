@@ -597,7 +597,7 @@ object ChatCommandProcessor {
             }
             if (i == 5206) {
                 val i_64_ = anIntArray1149!![--anInt1173]
-                val class348_sub42_sub14 = Class75.method766(i_64_ shr 14 and 0x3fff, i_64_ and 0x3fff)
+                val class348_sub42_sub14 = MapRegionLoader.method766(i_64_ shr 14 and 0x3fff, i_64_ and 0x3fff)
                 if (class348_sub42_sub14 == null) anIntArray1149!![anInt1173++] = -1
                 else {
                     anIntArray1149!![anInt1173++] = (class348_sub42_sub14.anInt9628)
@@ -606,7 +606,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5207) {
-                val class348_sub42_sub14 = Class75.method757(anIntArray1149!![--anInt1173])
+                val class348_sub42_sub14 = MapRegionLoader.method757(anIntArray1149!![--anInt1173])
                 if (class348_sub42_sub14 == null || (class348_sub42_sub14.aString9632) == null) aStringArray1152!![anInt1170++] = ""
                 else {
                     aStringArray1152!![anInt1170++] = (class348_sub42_sub14.aString9632)
@@ -620,13 +620,13 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5209) {
-                anIntArray1149!![anInt1173++] = WidgetActionEntry.anInt6992 + Class75.anInt1266
-                anIntArray1149!![anInt1173++] = DebugOverlayRenderer.anInt3170 + Class75.anInt1263
+                anIntArray1149!![anInt1173++] = WidgetActionEntry.anInt6992 + MapRegionLoader.anInt1266
+                anIntArray1149!![anInt1173++] = DebugOverlayRenderer.anInt3170 + MapRegionLoader.anInt1263
                 return
             }
             if (i == 5210) {
                 val i_65_ = anIntArray1149!![--anInt1173]
-                val class348_sub42_sub14 = Class75.method757(i_65_)
+                val class348_sub42_sub14 = MapRegionLoader.method757(i_65_)
                 if (class348_sub42_sub14 == null) {
                     anIntArray1149!![anInt1173++] = 0
                     anIntArray1149!![anInt1173++] = 0
@@ -639,7 +639,7 @@ object ChatCommandProcessor {
             }
             if (i == 5211) {
                 val i_66_ = anIntArray1149!![--anInt1173]
-                val class348_sub42_sub14 = Class75.method757(i_66_)
+                val class348_sub42_sub14 = MapRegionLoader.method757(i_66_)
                 if (class348_sub42_sub14 == null) {
                     anIntArray1149!![anInt1173++] = 0
                     anIntArray1149!![anInt1173++] = 0
@@ -657,7 +657,7 @@ object ChatCommandProcessor {
                     anIntArray1149!![anInt1173++] = -1
                 } else {
                     anIntArray1149!![anInt1173++] = class348_sub21.anInt6847
-                    val i_67_ = (class348_sub21.anInt6850 shl 28 or ((class348_sub21.anInt6852 + Class75.anInt1266) shl 14) or (class348_sub21.anInt6851 + Class75.anInt1263))
+                    val i_67_ = (class348_sub21.anInt6850 shl 28 or ((class348_sub21.anInt6852 + MapRegionLoader.anInt1266) shl 14) or (class348_sub21.anInt6851 + MapRegionLoader.anInt1263))
                     anIntArray1149!![anInt1173++] = i_67_
                     return
                 }
@@ -670,7 +670,7 @@ object ChatCommandProcessor {
                     anIntArray1149!![anInt1173++] = -1
                 } else {
                     anIntArray1149!![anInt1173++] = class348_sub21.anInt6847
-                    val i_68_ = (class348_sub21.anInt6850 shl 28 or ((class348_sub21.anInt6852 + Class75.anInt1266) shl 14) or (class348_sub21.anInt6851 + Class75.anInt1263))
+                    val i_68_ = (class348_sub21.anInt6850 shl 28 or ((class348_sub21.anInt6852 + MapRegionLoader.anInt1266) shl 14) or (class348_sub21.anInt6851 + MapRegionLoader.anInt1263))
                     anIntArray1149!![anInt1173++] = i_68_
                     return
                 }
@@ -689,7 +689,7 @@ object ChatCommandProcessor {
                 anInt1173 -= 2
                 val i_71_ = anIntArray1149!![anInt1173]
                 val i_72_ = anIntArray1149!![anInt1173 + 1]
-                val class107 = Class75.method767(i_71_ shr 14 and 0x3fff, i_71_ and 0x3fff)
+                val class107 = MapRegionLoader.method767(i_71_ shr 14 and 0x3fff, i_71_ and 0x3fff)
                 var bool_73_ = false
                 var class348_sub42_sub14 = class107.method1011(-48) as? InterfaceComponentGroup?
                 while (class348_sub42_sub14 != null) {
@@ -708,7 +708,7 @@ object ChatCommandProcessor {
             }
             if (i == 5218) {
                 val i_74_ = anIntArray1149!![--anInt1173]
-                val class348_sub42_sub14 = Class75.method757(i_74_)
+                val class348_sub42_sub14 = MapRegionLoader.method757(i_74_)
                 if (class348_sub42_sub14 == null) anIntArray1149!![anInt1173++] = -1
                 else {
                     anIntArray1149!![anInt1173++] = (class348_sub42_sub14.anInt9631)
@@ -732,7 +732,7 @@ object ChatCommandProcessor {
                     anIntArray1149!![anInt1173++] = -1
                     return
                 } else {
-                    val bool_76_ = (class348_sub42_sub14.method3239(true, DebugOverlayRenderer.anInt3170 + Class75.anInt1263, WidgetActionEntry.anInt6992 + Class75.anInt1266, anIntArray1175!!))
+                    val bool_76_ = (class348_sub42_sub14.method3239(true, DebugOverlayRenderer.anInt3170 + MapRegionLoader.anInt1263, WidgetActionEntry.anInt6992 + MapRegionLoader.anInt1266, anIntArray1175!!))
                     if (bool_76_) {
                         anIntArray1149!![anInt1173++] = anIntArray1175!![1]
                         anIntArray1149!![anInt1173++] = anIntArray1175!![2]
@@ -863,7 +863,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5235) {
-                anIntArray1149!![anInt1173++] = (if (Class75.aClass348_Sub42_Sub14_1243 != null) Class75.aClass348_Sub42_Sub14_1243!!.anInt9628 else -1)
+                anIntArray1149!![anInt1173++] = (if (MapRegionLoader.aClass348_Sub42_Sub14_1243 != null) MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9628 else -1)
                 return
             }
             if (i == 5236) {

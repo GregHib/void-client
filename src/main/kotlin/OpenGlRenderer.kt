@@ -1285,7 +1285,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
 
     override fun method3700(f: Float, f_138_: Float, f_139_: Float) {
         GrayscaleEffect.aFloat9204 = f_139_
-        Class75_Sub1.aFloat5654 = f
+        ActiveMapRegion.aFloat5654 = f
         anInt7685++
         DetailLevelOptionState.aFloat6120 = f_138_
     }

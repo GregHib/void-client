@@ -252,7 +252,7 @@ class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int
             if (structConfig == null) return false
             if (i != -4) return false
             if (!structConfig.aBoolean574) return false
-            if (!structConfig.method373(Class75.anInterface17_1244!!, i xor 0x2d.inv())) return false
+            if (!structConfig.method373(MapRegionLoader.anInterface17_1244!!, i xor 0x2d.inv())) return false
             if (HeapInfoRecord.aHashtable_4934!!.method3480(structConfig.anInt581.toLong(), i xor 0x1774) != null) return false
             return HardKeyedCacheEntryReference.aHashtable_10442!!.method3480(structConfig.anInt596.toLong(), i + -6004) == null
         }

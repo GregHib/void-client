@@ -160,8 +160,8 @@ class GlTexture3D : GlTexture {
             if (VoronoiNoiseTextureNode.aBoolean9121) {
                 RsaVarbitHandler.anIntArray4906 = Class9.aRenderer171!!.Y()
                 Class9.aRenderer171!!.K(BrightnessContrastEffect.anIntArray9183)
-                val i_43_ = ((BrightnessContrastEffect.anIntArray9183!![2] - BrightnessContrastEffect.anIntArray9183!![0]) / Class75_Sub1.anInt5652)
-                for (i_44_ in 0..<Class75_Sub1.anInt5652 - 1) WidgetDefinition.anIntArray256!![i_44_] = i_43_ * (i_44_ + 1) + ParticleProcessor.anIntArray4271!![i_44_]
+                val i_43_ = ((BrightnessContrastEffect.anIntArray9183!![2] - BrightnessContrastEffect.anIntArray9183!![0]) / ActiveMapRegion.anInt5652)
+                for (i_44_ in 0..<ActiveMapRegion.anInt5652 - 1) WidgetDefinition.anIntArray256!![i_44_] = i_43_ * (i_44_ + 1) + ParticleProcessor.anIntArray4271!![i_44_]
                 for (i_45_ in NormalMapTextureNode.aSceneLoaderThreadArray9432!!.indices) NormalMapTextureNode.aSceneLoaderThreadArray9432!![i_45_]!!.method2209()
             }
             if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) {

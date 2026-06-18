@@ -159,19 +159,19 @@ class RenderbufferObject : HashLinkedListNode, Interface9 {
                 val i_7_: Int
                 if (Npc.anInt10503 == 2) {
                     i_7_ = 4
-                    Class75_Sub1.anInt5652 = 2
+                    ActiveMapRegion.anInt5652 = 2
                 } else if (Npc.anInt10503 == 3) {
                     i_7_ = 6
-                    Class75_Sub1.anInt5652 = 3
+                    ActiveMapRegion.anInt5652 = 3
                 } else {
                     i_7_ = 8
-                    Class75_Sub1.anInt5652 = 4
+                    ActiveMapRegion.anInt5652 = 4
                 }
                 MapElementDefinitionCache.aCacheIndexManagerArray3982 = arrayOfNulls<CacheIndexManager>(i_7_)
                 for (i_8_ in 0..<i_7_) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i_8_] = CacheIndexManager(SceneryDetailOptionState.aStringArrayArray6093!![(Npc.anInt10503 - 2)]!![i_8_])
-            } else Class75_Sub1.anInt5652 = 1
-            WidgetDefinition.anIntArray256 = IntArray(Class75_Sub1.anInt5652 - 1)
-            ParticleProcessor.anIntArray4271 = IntArray(Class75_Sub1.anInt5652 - 1)
+            } else ActiveMapRegion.anInt5652 = 1
+            WidgetDefinition.anIntArray256 = IntArray(ActiveMapRegion.anInt5652 - 1)
+            ParticleProcessor.anIntArray4271 = IntArray(ActiveMapRegion.anInt5652 - 1)
         }
     }
 }

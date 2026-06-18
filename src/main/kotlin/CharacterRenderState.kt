@@ -163,7 +163,7 @@ class CharacterRenderState : LinkedListNode() {
                             if (!bool && i_5_ >= DisplayModeOptionState.anInt6111 - 16 && i_5_ <= DisplayModeOptionState.anInt6111 + 16 && i_6_ >= GlIndexBufferArb.anInt8502 - 16 && i_6_ <= GlIndexBufferArb.anInt8502 + 16) {
                                 if (VoronoiNoiseTextureNode.aBoolean9121) {
                                     MapElementDefinitionCache.aCacheIndexManagerArray3982!![NpcSummaryDefinition.anInt1949++]!!.method2361(-15481, class318_sub1)
-                                    NpcSummaryDefinition.anInt1949 %= Class75_Sub1.anInt5652
+                                    NpcSummaryDefinition.anInt1949 %= ActiveMapRegion.anInt5652
                                 } else class318_sub1.method2387(Class9.aRenderer171, -128)
                             }
                         } else return false

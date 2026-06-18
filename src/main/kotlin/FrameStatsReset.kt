@@ -3404,7 +3404,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7973 = 0
             OpenGlModel.anInt5604 = 0
             AnimatedModelRenderer.anInt8414 = 0
-            Class75_Sub1.anInt5653 = 0
+            ActiveMapRegion.anInt5653 = 0
             BrightnessOptionState.anInt5901 = 0
             BloomGraphicsOptionState.anInt5968 = 0
             CompositeRgbNoiseTexture.anInt8675 = 0

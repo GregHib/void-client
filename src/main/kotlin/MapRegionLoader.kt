@@ -6,7 +6,7 @@ import CachedRgbNoiseTexture.Companion.method566
 /* Class75 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class75 {
+open class MapRegionLoader {
     companion object {
         @JvmField
         var aJs5Archive_1237: Js5Archive? = null

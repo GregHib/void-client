@@ -1,6 +1,6 @@
 import ConfigFlagUtil.Companion.method1916
 import CompassSmoother.Companion.method2017
-import Class75_Sub1.method769
+import ActiveMapRegion.method769
 
 /* Class348_Sub42_Sub4 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

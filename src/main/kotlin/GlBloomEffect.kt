@@ -56,7 +56,7 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
                 val l = aGlShaderProgramHandle_8842!!.aLong4178
                 glUseProgramObjectARB(l)
                 glUniform1iARB(glGetUniformLocationARB(l, "sceneTex"), 0)
-                glUniform3fARB(glGetUniformLocationARB(l, "params"), Class75_Sub1.aFloat5654, 0.0f, 0.0f)
+                glUniform3fARB(glGetUniformLocationARB(l, "params"), ActiveMapRegion.aFloat5654, 0.0f, 0.0f)
                 glBegin(7)
                 glTexCoord2f(0.0f, 0.0f)
                 glVertex2i(0, 0)
@@ -112,7 +112,7 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
                 val l = aGlShaderProgramHandle_8824!!.aLong4178
                 glUseProgramObjectARB(l)
                 glUniform1iARB(glGetUniformLocationARB(l, "sceneTex"), 0)
-                glUniform3fARB(glGetUniformLocationARB(l, "params"), Class75_Sub1.aFloat5654, 0.0f, 0.0f)
+                glUniform3fARB(glGetUniformLocationARB(l, "params"), ActiveMapRegion.aFloat5654, 0.0f, 0.0f)
                 glBegin(7)
                 glTexCoord2f(0.0f, 0.0f)
                 glVertex2i(0, 0)
