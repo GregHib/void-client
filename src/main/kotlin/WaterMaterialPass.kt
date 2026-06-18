@@ -271,7 +271,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                                     if (i == 3) i_19_ = 46.toShort()
                                     if (i == 4) i_19_ = 60.toShort()
                                     if (i_19_.toInt() != 0) i_19_ = (i_19_ + i_18_).toShort()
-                                    Class368.anInt4510++
+                                    LocConfigModelBuilder.anInt4510++
                                     Class50_Sub3.method466(false, "<col=ffff00>" + string, 0, (-101).toByte(), false, 0, -1, true, i_19_.toInt(), npc.anInt10290.toLong(), strings[i], npc.anInt10290.toLong(), class79.anInt1401)
                                 }
                             }

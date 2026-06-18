@@ -31,26 +31,26 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
         }
     }
 
-    fun method2543(i: Byte, i_1_: Int): Class368 {
+    fun method2543(i: Byte, i_1_: Int): LocConfigModelBuilder {
         if (i <= 38) method2542(-73)
         anInt3983++
-        var class368: Class368?
+        var locConfigModelBuilder: LocConfigModelBuilder?
         synchronized(aClass60_3989) {
-            class368 = aClass60_3989.method583(i_1_.toLong(), 101) as Class368?
+            locConfigModelBuilder = aClass60_3989.method583(i_1_.toLong(), 101) as LocConfigModelBuilder?
         }
-        if (class368 != null) return class368
+        if (locConfigModelBuilder != null) return locConfigModelBuilder
         val `is`: ByteArray?
         synchronized(aClass45_3979!!) {
             `is` = aClass45_3979.method410(-1860, method2419(127.toByte(), i_1_), method2729(i_1_, 16))
         }
-        class368 = Class368()
-        class368.aMapElementDefinitionCache_4513 = this
-        class368.anInt4501 = i_1_
-        if (`is` != null) class368.method3559(28105, Buffer(`is`))
+        locConfigModelBuilder = LocConfigModelBuilder()
+        locConfigModelBuilder.aMapElementDefinitionCache_4513 = this
+        locConfigModelBuilder.anInt4501 = i_1_
+        if (`is` != null) locConfigModelBuilder.method3559(28105, Buffer(`is`))
         synchronized(aClass60_3989) {
-            aClass60_3989.method582(class368, i_1_.toLong(), (-127).toByte())
+            aClass60_3989.method582(locConfigModelBuilder, i_1_.toLong(), (-127).toByte())
         }
-        return class368
+        return locConfigModelBuilder
     }
 
     fun method2544(i: Int, i_2_: Byte) {

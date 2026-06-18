@@ -1,5 +1,5 @@
 import FlickeringEffectsOptionState.Companion.method1753
-import Class368.Companion.method3561
+import LocConfigModelBuilder.Companion.method3561
 
 /* Class239_Sub17 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

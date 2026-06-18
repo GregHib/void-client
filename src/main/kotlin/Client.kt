@@ -430,7 +430,7 @@ import Class367_Sub11.Companion.method3557
 import Class367_Sub2.Companion.method3537
 import Class367_Sub4.Companion.method3541
 import Class367_Sub9.Companion.method3552
-import Class368.Companion.method3560
+import LocConfigModelBuilder.Companion.method3560
 import Class369.Companion.method3567
 import Class369_Sub2.Companion.method3572
 import Class369_Sub3.Companion.method3574

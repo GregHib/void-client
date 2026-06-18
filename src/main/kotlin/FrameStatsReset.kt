@@ -817,7 +817,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             BloomGraphicsOptionState.anInt5961 = 0
             BinaryGraphicsOptionState.anInt5954 = 0
             GlSpriteRenderer.anInt8445 = 0
-            Class368.anInt4505 = 0
+            LocConfigModelBuilder.anInt4505 = 0
             SpriteLoadValidator.anInt4790 = 0
             SpriteTextureNode.anInt9236 = 0
             Class5_Sub3.anInt8375 = 0
@@ -1071,7 +1071,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             BloomGraphicsOptionState.anInt5963 = 0
             OpenGlRenderer.anInt7667 = 0
             NativeRenderer.anInt7940 = 0
-            Class368.anInt4493 = 0
+            LocConfigModelBuilder.anInt4493 = 0
             FacingDirectionNode.anInt6667 = 0
             BloomGraphicsOptionState.anInt5962 = 0
             Class369.anInt4964 = 0
@@ -1577,7 +1577,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WeaveTextureNode.anInt9267 = 0
             MatrixCameraTransform.anInt5671 = 0
             RangedGraphicsOptionState.anInt5939 = 0
-            Class368.anInt4497 = 0
+            LocConfigModelBuilder.anInt4497 = 0
             Class45.anInt632 = 0
             CameraConfigDefinition.anInt3255 = 0
             Class70.anInt1203 = 0
@@ -2455,7 +2455,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             DisplaceTextureNode.anInt9131 = 0
             WaterDetailOptionState.anInt5983 = 0
             Hashtable.anInt4381 = 0
-            Class368.anInt4486 = 0
+            LocConfigModelBuilder.anInt4486 = 0
             OpenGlRenderer.anInt7671 = 0
             GameAppletFrame.anInt16 = 0
             SceneCollisionEntry.anInt4393 = 0
@@ -2539,7 +2539,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Gl3dTexture.anInt8624 = 0
             OpenGlRenderer.anInt7677 = 0
             Class76.anInt1284 = 0
-            Class368.anInt4495 = 0
+            LocConfigModelBuilder.anInt4495 = 0
             LoadingScreenState.anInt2627 = 0
             Class377.anInt9874 = 0
             TheoraVideoStream.anInt9022 = 0
@@ -2740,7 +2740,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5466 = 0
             NativeRenderer.anInt8008 = 0
             Class372.anInt4527 = 0
-            Class368.anInt4491 = 0
+            LocConfigModelBuilder.anInt4491 = 0
             SizeBoundedSoftCache.anInt2319 = 0
             NativeRenderer.anInt7978 = 0
             GrowableStringList.anInt2356 = 0
@@ -2770,7 +2770,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeVertexBuffer.anInt4831 = 0
             Class67.anInt4642 = 0
             Class64_Sub3.anInt5623 = 0
-            Class368.anInt4494 = 0
+            LocConfigModelBuilder.anInt4494 = 0
             NativeRenderer.anInt8051 = 0
             TexGenMaterialPass.anInt6253 = 0
             LoadingBarRenderer.anInt5031 = 0
@@ -3692,7 +3692,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MediaStreamClient.anInt3185 = 0
             MediaStreamClient.anInt3199 = 0
             FloatBuffer.anInt9741 = 0
-            Class368.anInt4496 = 0
+            LocConfigModelBuilder.anInt4496 = 0
             NoiseTextureNode.anInt9261 = 0
             LocalizedText.anInt3477 = 0
             GlTextureBase.anInt5085 = 0
@@ -3803,7 +3803,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ProjectionCameraTransform.anInt5771 = 0
             FloatGrid.anInt4977 = 0
             WidgetComponentNode.anInt4657 = 0
-            Class368.anInt4511 = 0
+            LocConfigModelBuilder.anInt4511 = 0
             NativeRenderer.anInt7934 = 0
             FlipTextureNode.anInt9143 = 0
             ChatEffectsOptionState.anInt5869 = 0
@@ -3863,7 +3863,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GzipDecompressor.anInt2078 = 0
             NativeRenderer.anInt8022 = 0
             NativeRenderer.anInt7915 = 0
-            Class368.anInt4510 = 0
+            LocConfigModelBuilder.anInt4510 = 0
             ArchiveResourceProvider.anInt6348 = 0
             AbstractProceduralTextureNode.anInt7035 = 0
             ConstantColourTextureNode.anInt9247 = 0

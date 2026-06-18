@@ -1526,7 +1526,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (Class368.aIntRange_4500 == ModelVertexColorBuffer.aIntRange_6584) {
+            if (LocConfigModelBuilder.aIntRange_4500 == ModelVertexColorBuffer.aIntRange_6584) {
                 val bool_201_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte()) == 1)
                 WallSceneEntity.method2397((-124).toByte())
                 ObjectSpawnDecoder.aBoolean1801 = bool_201_

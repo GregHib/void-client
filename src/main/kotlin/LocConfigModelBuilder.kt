@@ -1,7 +1,7 @@
 /* Class368 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class368 {
+class LocConfigModelBuilder {
     @JvmField
     var aBoolean4487: Boolean = false
     @JvmField

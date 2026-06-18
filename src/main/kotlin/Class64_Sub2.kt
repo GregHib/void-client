@@ -13,7 +13,7 @@ import StreamingResourceRequest.Companion.method3262
 import CacheEntryReference.Companion.method3194
 import HardCacheEntryReference.Companion.method3200
 import CharacterRenderState.Companion.method2783
-import Class368.Companion.method3563
+import LocConfigModelBuilder.Companion.method3563
 import Class59_Sub2_Sub1.Companion.method565
 import OutputStream_Sub2.Companion.method135
 import OutputStream_Sub2.Companion.method137
