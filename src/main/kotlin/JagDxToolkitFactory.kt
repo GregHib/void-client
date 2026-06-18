@@ -2,7 +2,10 @@ import BlankTextureNode.Companion.method3098
 import Class9.method215
 import java.awt.Canvas
 
-object Class96 {
+/*
+ * Class96
+ */
+object JagDxToolkitFactory {
     fun method870(i: Int, i_0_: Int, var_renderConfig: RenderConfig, js5Archive: Js5Archive, canvas: Canvas): Renderer? {
         if (i_0_ != 18993) return null
         val var_renderer: Renderer
