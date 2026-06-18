@@ -699,7 +699,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == Class361.aIntRange_4433) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == CollisionMap.aIntRange_4433) {
                 ProjectedGroundDecor.aVarpStore_10209!!.method1314(80.toByte())
                 TypedRecordTable.anInt3695 += 32
                 ModelVertexColorBuffer.aIntRange_6584 = null

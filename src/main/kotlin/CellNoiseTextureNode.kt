@@ -198,7 +198,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                 Class62.anIntArrayArrayArray1116 = (Array<Array<IntArray?>?>(4) { Array<IntArray?>(Class367_Sub4.anInt7319 shr 3) { IntArray(RangeThresholdTextureNode.Companion.anInt9109 shr 3) } })
                 FlickeringEffectsOptionState.anIntArrayArray5921 = (Array<IntArray?>(Class367_Sub4.anInt7319) { IntArray(RangeThresholdTextureNode.Companion.anInt9109) })
                 TextureMaterialGroup.anIntArrayArray9678 = (Array<IntArray?>(Class367_Sub4.anInt7319) { IntArray(RangeThresholdTextureNode.Companion.anInt9109) })
-                for (i_24_ in 0..3) TimedRecordAccessor.aClass361Array7108!![i_24_] = AnimatedModelRenderer.method988(RangeThresholdTextureNode.Companion.anInt9109, 1, Class367_Sub4.anInt7319)
+                for (i_24_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_24_] = AnimatedModelRenderer.method988(RangeThresholdTextureNode.Companion.anInt9109, 1, Class367_Sub4.anInt7319)
                 RegionSceneLoader.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(Class367_Sub4.anInt7319) { ByteArray(RangeThresholdTextureNode.Companion.anInt9109) } })
                 method1717(19278, RangeThresholdTextureNode.Companion.anInt9109, Class367_Sub4.anInt7319, 4)
                 Class97.method873(Class367_Sub4.anInt7319 shr 3, 21719, FacingDirectionNode.aRenderer6654, RangeThresholdTextureNode.Companion.anInt9109 shr 3)

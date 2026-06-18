@@ -417,8 +417,8 @@ import SceneCollisionEntry.Companion.method3487
 import ParticleGeometry.Companion.method3488
 import TextureAtlasState.Companion.method3491
 import AnimationFrameTable.method355
-import Class361.Companion.method3502
-import Class361.Companion.method3508
+import CollisionMap.Companion.method3502
+import CollisionMap.Companion.method3508
 import Class362.method3511
 import Class362.method3512
 import Class363.method3516
@@ -1450,7 +1450,7 @@ class Client : GameAppletFrame() {
                             var i_102_ = i_100_ + (npc.anIntArray10317!![0])
                             if (i_102_ < 0) i_102_ = 0
                             else if ((-i_98_ + RangeThresholdTextureNode.anInt9109 - 1) < i_102_) i_102_ = (-i_98_ + RangeThresholdTextureNode.anInt9109 - 1)
-                            var i_103_ = (method574(i_101_, i_98_, i_98_, RadialGradientMaskEffect.anIntArray9185, true, 120.toByte(), -1, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), InterfaceComponentGroup.anIntArray9626, i_102_, (TimedRecordAccessor.aClass361Array7108!![(npc.plane).toInt()]), i_98_, 0, 0))
+                            var i_103_ = (method574(i_101_, i_98_, i_98_, RadialGradientMaskEffect.anIntArray9185, true, 120.toByte(), -1, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), InterfaceComponentGroup.anIntArray9626, i_102_, (TimedRecordAccessor.aCollisionMapArray7108s!![(npc.plane).toInt()]), i_98_, 0, 0))
                             if (i_103_ > 0) {
                                 if (i_103_ > 9) i_103_ = 9
                                 var i_104_ = 0

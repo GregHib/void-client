@@ -516,17 +516,17 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         }
 
         @JvmStatic
-        fun method988(i: Int, i_10_: Int, i_11_: Int): Class361? {
+        fun method988(i: Int, i_10_: Int, i_11_: Int): CollisionMap? {
             anInt8415++
-            val class361 = Class361()
-            class361.anInt4437 = 6 + i_11_
-            class361.anInt4453 = -1
-            class361.anInt4443 = 5 + (i - -1)
+            val collisionMap = CollisionMap()
+            collisionMap.anInt4437 = 6 + i_11_
+            collisionMap.anInt4453 = -1
+            collisionMap.anInt4443 = 5 + (i - -1)
             if (i_10_ != 1) return null
-            class361.anInt4441 = -1
-            class361.anIntArrayArray4438 = (Array(class361.anInt4437) { IntArray(class361.anInt4443) })
-            class361.method3500(700)
-            return class361
+            collisionMap.anInt4441 = -1
+            collisionMap.anIntArrayArray4438 = (Array(collisionMap.anInt4437) { IntArray(collisionMap.anInt4443) })
+            collisionMap.method3500(700)
+            return collisionMap
         }
 
         fun method989(i: Int, i_92_: Int, i_93_: Int): Boolean {

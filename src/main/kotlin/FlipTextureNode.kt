@@ -227,7 +227,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                             continue
                                         }
                                         if (MapSceneIconDef.anInt2861 == class46.anInt765) {
-                                            Class361.method3498(class46.anInt789, FacingDirectionNode.aRenderer6654, i_24_, class46.anInt709, true, i_25_)
+                                            CollisionMap.method3498(class46.anInt789, FacingDirectionNode.aRenderer6654, i_24_, class46.anInt709, true, i_25_)
                                             GzipDecompressor.aBooleanArray2076!![i_23_] = true
                                             FacingDirectionNode.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                             i_18_++

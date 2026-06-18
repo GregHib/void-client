@@ -55,7 +55,7 @@ class MapAreaDefinition {
         @JvmField
         var aBufferedMessageQueue_2529: BufferedMessageQueue? = null
         var anInt2532: Int = 0
-        fun method1420(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, class361: Class361, i_13_: Int, i_14_: Int): Boolean {
+        fun method1420(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, collisionMap: CollisionMap, i_13_: Int, i_14_: Int): Boolean {
             anInt2521++
             var i_15_ = i_10_
             var i_16_ = i_7_
@@ -69,15 +69,15 @@ class MapAreaDefinition {
             Class367_Sub11.anIntArray7397!![i_21_] = i_15_
             var i_22_ = 0
             CircleDrawer.anIntArray2694!![i_21_++] = i_16_
-            val `is` = class361.anIntArrayArray4438!!
+            val `is` = collisionMap.anIntArrayArray4438!!
             while_56_@ while (i_22_ != i_21_) {
                 i_16_ = CircleDrawer.anIntArray2694!![i_22_]
                 i_15_ = Class367_Sub11.anIntArray7397!![i_22_]
                 i_17_ = i_15_ + -i_19_
                 i_18_ = -i_20_ + i_16_
                 i_22_ = 0xfff and i_22_ - -1
-                val i_23_ = i_15_ - class361.anInt4453
-                val i_24_ = i_16_ - class361.anInt4441
+                val i_23_ = i_15_ - collisionMap.anInt4453
+                val i_24_ = i_16_ - collisionMap.anInt4441
                 var i_25_ = i_13_
                 while_48_@ do {
                     while_47_@ do {
@@ -107,28 +107,28 @@ class MapAreaDefinition {
                                     }
                                     break@while_48_
                                 } while (false)
-                                if (class361.method3497(-28388, i_9_, i_11_, i_12_, i_8_, i_15_, i_12_, i_16_, i_14_, i)) {
+                                if (collisionMap.method3497(-28388, i_9_, i_11_, i_12_, i_8_, i_15_, i_12_, i_16_, i_14_, i)) {
                                     HslAdjustTextureNode.anInt9388 = i_15_
                                     OverlayColorTable.anInt1753 = i_16_
                                     return true
                                 }
                                 break@while_48_
                             } while (false)
-                            if (class361.method3503(i_15_, (-98).toByte(), i_14_, i_12_, i_8_, i, i_11_, i_16_, i_9_)) {
+                            if (collisionMap.method3503(i_15_, (-98).toByte(), i_14_, i_12_, i_8_, i, i_11_, i_16_, i_9_)) {
                                 HslAdjustTextureNode.anInt9388 = i_15_
                                 OverlayColorTable.anInt1753 = i_16_
                                 return true
                             }
                             break@while_48_
                         } while (false)
-                        if (class361.method3495(i_9_, i_16_, i_12_, i_5_, i_15_, i_14_, i_13_, -71)) {
+                        if (collisionMap.method3495(i_9_, i_16_, i_12_, i_5_, i_15_, i_14_, i_13_, -71)) {
                             HslAdjustTextureNode.anInt9388 = i_15_
                             OverlayColorTable.anInt1753 = i_16_
                             return true
                         }
                         break@while_48_
                     } while (false)
-                    if (class361.method3504(i_14_, i_16_, i_9_, i_15_, i_13_, 1, i_5_, i_12_)) {
+                    if (collisionMap.method3504(i_14_, i_16_, i_9_, i_15_, i_13_, 1, i_5_, i_12_)) {
                         OverlayColorTable.anInt1753 = i_16_
                         HslAdjustTextureNode.anInt9388 = i_15_
                         return true

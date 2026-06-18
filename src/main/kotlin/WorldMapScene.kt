@@ -903,12 +903,12 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
         }
     }
 
-    fun method1681(class348_sub49: Buffer?, i: Int, class361s: Array<Class361?>?, i_197_: Int, i_198_: Int, i_199_: Int, i_200_: Byte) {
+    fun method1681(class348_sub49: Buffer?, i: Int, collisionMaps: Array<CollisionMap?>?, i_197_: Int, i_198_: Int, i_199_: Int, i_200_: Byte) {
         try {
             anInt3107++
             if (!this.aBoolean3109) {
                 for (i_201_ in 0..3) {
-                    val class361 = class361s!![i_201_]
+                    val class361 = collisionMaps!![i_201_]
                     for (i_202_ in 0..63) {
                         for (i_203_ in 0..63) {
                             val i_204_ = i_202_ + i
@@ -929,7 +929,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 i_209_++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sr.I(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + (if (class361s != null) "{...}" else "null") + ',' + i_197_ + ',' + i_198_ + ',' + i_199_ + ',' + i_200_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("sr.I(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + (if (collisionMaps != null) "{...}" else "null") + ',' + i_197_ + ',' + i_198_ + ',' + i_199_ + ',' + i_200_ + ')'))
         }
     }
 
@@ -1143,14 +1143,14 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
         } while (false)
     }
 
-    fun method1684(i: Int, i_272_: Int, i_273_: Int, class348_sub49: Buffer?, i_274_: Int, i_275_: Int, i_276_: Int, class361s: Array<Class361?>?, i_277_: Int, i_278_: Int) {
+    fun method1684(i: Int, i_272_: Int, i_273_: Int, class348_sub49: Buffer?, i_274_: Int, i_275_: Int, i_276_: Int, collisionMaps: Array<CollisionMap?>?, i_277_: Int, i_278_: Int) {
         try {
             if (i_273_ == -1) {
                 anInt3115++
                 val i_279_ = 8 * (i_276_ and 0x7)
                 val i_280_ = 8 * (0x7 and i_274_)
                 if (!this.aBoolean3109) {
-                    val class361 = class361s!![i_272_]!!
+                    val class361 = collisionMaps!![i_272_]!!
                     for (i_281_ in 0..7) {
                         for (i_282_ in 0..7) {
                             val i_283_ = i + LocalizedTextTriple.method2220(0x7 and i_282_, i_277_, 0x7 and i_281_, 71.toByte())
@@ -1235,11 +1235,11 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sr.E(" + i + ',' + i_272_ + ',' + i_273_ + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + i_274_ + ',' + i_275_ + ',' + i_276_ + ',' + (if (class361s != null) "{...}" else "null") + ',' + i_277_ + ',' + i_278_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("sr.E(" + i + ',' + i_272_ + ',' + i_273_ + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + i_274_ + ',' + i_275_ + ',' + i_276_ + ',' + (if (collisionMaps != null) "{...}" else "null") + ',' + i_277_ + ',' + i_278_ + ')'))
         }
     }
 
-    fun method1685(var_renderer: Renderer?, `is`: Array<Array<IntArray?>?>?, i: Int, class361s: Array<Class361?>?) {
+    fun method1685(var_renderer: Renderer?, `is`: Array<Array<IntArray?>?>?, i: Int, collisionMaps: Array<CollisionMap?>?) {
         try {
             anInt3118++
             if (i != 21407) method1680(null, (-116).toByte(), null, null)
@@ -1252,7 +1252,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                             if ((0x1 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![i_300_]!![i_301_]!![i_302_]).toInt()) != 0) {
                                 var i_303_ = i_300_
                                 if ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_301_]!![i_302_]).toInt()) != 0) i_303_--
-                                if (i_303_ >= 0) class361s!![i_303_]!!.method3507(i_302_, i_301_, (-116).toByte())
+                                if (i_303_ >= 0) collisionMaps!![i_303_]!!.method3507(i_302_, i_301_, (-116).toByte())
                             }
                             i_302_++
                         }
@@ -1279,7 +1279,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 i_304_++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sr.J(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class361s != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("sr.J(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (collisionMaps != null) "{...}" else "null") + ')'))
         }
     }
 

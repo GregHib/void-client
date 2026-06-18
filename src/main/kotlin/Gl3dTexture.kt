@@ -96,7 +96,7 @@ class Gl3dTexture internal constructor(class377: Class377?, textureFormatInfo: T
                 ConnectionStateRefs.aIntRange_318,
                 PlayerUpdateDecoder.aIntRange_1917,
                 Class367_Sub3.aIntRange_7301,
-                Class361.aIntRange_4433,
+                CollisionMap.aIntRange_4433,
                 SequencedWallEntity.aIntRange_10149,
                 AbstractMenuEntry.aIntRange_1702,
                 HeapDiagnosticsHolder.aIntRange_2248,

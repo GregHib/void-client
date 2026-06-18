@@ -26,7 +26,7 @@ abstract class TimedRecordAccessor : LinkedListNode() {
         @JvmField
         var aAbstractModelRendererArray7107: Array<AbstractModelRenderer?>? = null
         @JvmField
-        var aClass361Array7108: Array<Class361?>? = arrayOfNulls<Class361>(4)
+        var aCollisionMapArray7108s: Array<CollisionMap?>? = arrayOfNulls<CollisionMap>(4)
 
         @JvmStatic
         fun method3309(i: Int) {
@@ -57,7 +57,7 @@ abstract class TimedRecordAccessor : LinkedListNode() {
             aIntRange_7106 = null
             if (i != 5) method3313(-103, null)
             aIntRange_7105 = null
-            aClass361Array7108 = null
+            aCollisionMapArray7108s = null
             aAbstractModelRendererArray7107 = null
             aTextureFormatInfo_7103 = null
         }

@@ -473,7 +473,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                                 }
                                 InterfaceComponentGroup.method3243(123, class348_sub47)
                                 PixelBlender.method2252(true, i_74_, i_75_, (-120).toByte(), 1, 0, 1, -4, 0)
-                            } else Class361.method3502(i_75_ + Class90.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), i_74_ + ArbVertexProgram.regionTileX)
+                            } else CollisionMap.method3502(i_75_ + Class90.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), i_74_ + ArbVertexProgram.regionTileX)
                         }
                         if (i_76_ == 4) {
                             Class93.anInt1534 = i_72_
@@ -622,7 +622,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                             }
                         }
                         if (i_76_ == 12) {
-                            if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -127) && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -126)) Class361.method3502(i_75_ + Class90.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), ArbVertexProgram.regionTileX - -i_74_)
+                            if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -127) && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -126)) CollisionMap.method3502(i_75_ + Class90.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), ArbVertexProgram.regionTileX - -i_74_)
                             else {
                                 Class93.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_

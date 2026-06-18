@@ -85,7 +85,7 @@ class ServerConnectionInfo {
                     DebugOverlayRenderer.aFloat3172 = NormalMapGenerator.aFloat3462
                     Class45.aFloat670 = ModelVertexColorBuffer.aFloat6586
                     GlTexture1D.aFloat8560 = RangedGraphicsOptionState.aFloat5945
-                    ParticleEmitterFactory.aFloat3177 = Class361.aFloat4455
+                    ParticleEmitterFactory.aFloat3177 = CollisionMap.aFloat4455
                     GroundDecorEntity.anInt8739 = NativeIndexBuffer.anInt4703
                     NoOpGraphicsOptionState.anInt6042 = AnimationFrameTable.anInt486
                 }

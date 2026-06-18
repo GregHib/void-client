@@ -170,7 +170,7 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         var anInt3356: Int = 0
         var anInt3357: Int = 0
         var anInt3358: Int = 0
-        fun method2007(i: Int, i_1_: Int, i_2_: Int, class361: Class361, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int): Boolean {
+        fun method2007(i: Int, i_1_: Int, i_2_: Int, collisionMap: CollisionMap, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int): Boolean {
             anInt3354++
             var i_10_ = i_8_
             var i_11_ = i_4_
@@ -185,15 +185,15 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             Class367_Sub11.anIntArray7397!![i_16_] = i_10_
             var i_17_ = 0
             CircleDrawer.anIntArray2694!![i_16_++] = i_11_
-            val `is` = class361.anIntArrayArray4438!!
+            val `is` = collisionMap.anIntArrayArray4438!!
             while (i_16_ != i_17_) {
                 i_11_ = CircleDrawer.anIntArray2694!![i_17_]
                 i_10_ = Class367_Sub11.anIntArray7397!![i_17_]
                 i_17_ = 0xfff and 1 + i_17_
                 i_12_ = i_10_ - i_14_
                 i_13_ = -i_15_ + i_11_
-                val i_18_ = i_10_ + -class361.anInt4453
-                val i_19_ = -class361.anInt4441 + i_11_
+                val i_18_ = i_10_ + -collisionMap.anInt4453
+                val i_19_ = -collisionMap.anInt4441 + i_11_
                 var i_20_ = i
                 while_85_@ do {
                     while_84_@ do {
@@ -223,28 +223,28 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                                     }
                                     break@while_85_
                                 } while (false)
-                                if (class361.method3497(-28388, i_3_, i_7_, 2, i_6_, i_10_, 2, i_11_, i_2_, i_5_)) {
+                                if (collisionMap.method3497(-28388, i_3_, i_7_, 2, i_6_, i_10_, 2, i_11_, i_2_, i_5_)) {
                                     HslAdjustTextureNode.anInt9388 = i_10_
                                     OverlayColorTable.anInt1753 = i_11_
                                     return true
                                 }
                                 break@while_85_
                             } while (false)
-                            if (class361.method3503(i_10_, (-82).toByte(), i_2_, 2, i_6_, i_5_, i_7_, i_11_, i_3_)) {
+                            if (collisionMap.method3503(i_10_, (-82).toByte(), i_2_, 2, i_6_, i_5_, i_7_, i_11_, i_3_)) {
                                 HslAdjustTextureNode.anInt9388 = i_10_
                                 OverlayColorTable.anInt1753 = i_11_
                                 return true
                             }
                             break@while_85_
                         } while (false)
-                        if (class361.method3495(i_3_, i_11_, 2, i_9_, i_10_, i_2_, i, -53)) {
+                        if (collisionMap.method3495(i_3_, i_11_, 2, i_9_, i_10_, i_2_, i, -53)) {
                             HslAdjustTextureNode.anInt9388 = i_10_
                             OverlayColorTable.anInt1753 = i_11_
                             return true
                         }
                         break@while_85_
                     } while (false)
-                    if (class361.method3504(i_2_, i_11_, i_3_, i_10_, i, 1, i_9_, 2)) {
+                    if (collisionMap.method3504(i_2_, i_11_, i_3_, i_10_, i, 1, i_9_, 2)) {
                         HslAdjustTextureNode.anInt9388 = i_10_
                         OverlayColorTable.anInt1753 = i_11_
                         return true

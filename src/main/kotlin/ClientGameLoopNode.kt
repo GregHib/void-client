@@ -88,7 +88,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                             } else i_5_ = -1
                             if (OpenGlTerrainTile.anInt8270 != i_5_ || i_4_ != ImageFrameCache.anInt4032) {
                                 if (class348_sub47 == null) {
-                                    Class361.anInt4450++
+                                    CollisionMap.anInt4450++
                                     class348_sub47 = (method2148(CharCodeMap.aFontMetaRef_9590, TheoraVideoStream.aClass77_9029, -94))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                                     i_2_ = class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197
@@ -408,7 +408,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                                 if (i_30_ >= 0) {
                                     if (i_30_ > 3) i_30_ = 3
                                 } else i_30_ = 0
-                                Class361.method3502((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) + Class90.regionTileY, i xor 0x2caa, i_30_, (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + ArbVertexProgram.regionTileX)
+                                CollisionMap.method3502((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) + Class90.regionTileY, i xor 0x2caa, i_30_, (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + ArbVertexProgram.regionTileX)
                             }
                             method1987(-120)
                             var i_31_ = 0

@@ -10,7 +10,7 @@ import kotlin.math.min
 /* Class361 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class361 {
+class CollisionMap {
     var anInt4437: Int = 0
     var anIntArrayArray4438: Array<IntArray?>? = null
     var anInt4441: Int = 0

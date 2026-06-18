@@ -76,7 +76,7 @@ class TerrainTileShape internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_: 
                         val i_18_ = -ArbVertexProgram.regionTileX + i_16_ * 64
                         val i_19_ = -Class90.regionTileY + i_17_ * 64
                         method3570(false)
-                        class237_sub1!!.method1681(class348_sub49, i_18_, TimedRecordAccessor.aClass361Array7108, Class90.regionTileY, ArbVertexProgram.regionTileX, i_19_, 110.toByte())
+                        class237_sub1!!.method1681(class348_sub49, i_18_, TimedRecordAccessor.aCollisionMapArray7108s, Class90.regionTileY, ArbVertexProgram.regionTileX, i_19_, 110.toByte())
                         class237_sub1.method1691(i_19_, FacingDirectionNode.aRenderer6654, class348_sub49, is_11_, i_18_, (-126).toByte())
                         if (!class237_sub1.aBoolean3109 && i_16_ == Renderer.anInt4581 / 8 && (i_17_ == FileIoUtil.anInt4095 / 8) && is_11_[0] != -1) {
                             KeyboardLayoutCache.aParticleSystemRenderer_3304 = CircleHitbox.aClass84_413!!.method823(is_11_[2], is_11_[3], is_11_[1], -66, (HoverActionEntry.aSpriteStore_1813!!), is_11_[0])

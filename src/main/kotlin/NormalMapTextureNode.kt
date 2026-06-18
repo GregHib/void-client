@@ -108,7 +108,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             InterfaceBounds.method2938(87.toByte())
             method2433()
             if (i.toInt() != 11) anIntArray9436 = null
-            for (i_2_ in 0..3) TimedRecordAccessor.aClass361Array7108!![i_2_]!!.method3500(700)
+            for (i_2_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_2_]!!.method3500(700)
             LoadingScreenImageNode.method3177(-50, false)
             System.gc()
             method3007(2, 22684)

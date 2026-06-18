@@ -120,7 +120,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
         }
 
         @JvmStatic
-        fun method574(i: Int, i_16_: Int, i_17_: Int, `is`: IntArray?, bool: Boolean, i_18_: Byte, i_19_: Int, i_20_: Int, i_21_: Int, is_22_: IntArray?, i_23_: Int, class361: Class361?, i_24_: Int, i_25_: Int, i_26_: Int): Int {
+        fun method574(i: Int, i_16_: Int, i_17_: Int, `is`: IntArray?, bool: Boolean, i_18_: Byte, i_19_: Int, i_20_: Int, i_21_: Int, is_22_: IntArray?, i_23_: Int, collisionMap: CollisionMap?, i_24_: Int, i_25_: Int, i_26_: Int): Int {
             try {
                 for (i_27_ in 0..127) {
                     for (i_28_ in 0..127) {
@@ -131,9 +131,9 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 anInt8676++
                 val bool_29_: Boolean
                 if (i_16_ != 1) {
-                    if (i_16_ == 2) bool_29_ = SeqDefinitionCache.method2007(i_19_, -125, i_23_, class361!!, i, i_21_, i_24_, i_17_, i_25_, i_20_, i_26_)
-                    else bool_29_ = MapAreaDefinition.method1420(i_24_, i_26_, -73, i_21_, i_17_, i, i_20_, i_25_, i_16_, class361!!, i_19_, i_23_)
-                } else bool_29_ = Class5_Sub1.method187(i, i_23_, i_21_, i_26_, i_25_, i_24_, class361!!, i_19_, i_17_, i_20_, 1109655552)
+                    if (i_16_ == 2) bool_29_ = SeqDefinitionCache.method2007(i_19_, -125, i_23_, collisionMap!!, i, i_21_, i_24_, i_17_, i_25_, i_20_, i_26_)
+                    else bool_29_ = MapAreaDefinition.method1420(i_24_, i_26_, -73, i_21_, i_17_, i, i_20_, i_25_, i_16_, collisionMap!!, i_19_, i_23_)
+                } else bool_29_ = Class5_Sub1.method187(i, i_23_, i_21_, i_26_, i_25_, i_24_, collisionMap!!, i_19_, i_17_, i_20_, 1109655552)
                 val i_30_ = i_20_ - 64
                 val i_31_ = i_21_ + -64
                 var i_32_ = HslAdjustTextureNode.anInt9388
@@ -199,7 +199,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 }
                 return i_47_
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wd.B(" + i + ',' + i_16_ + ',' + i_17_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (is_22_ != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (class361 != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("wd.B(" + i + ',' + i_16_ + ',' + i_17_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (is_22_ != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (collisionMap != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'))
             }
         }
     }
