@@ -185,7 +185,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Abstract
         }
 
         @JvmStatic
-        fun method3542(i: Int, class357s: Array<Array<Array<Class357?>?>?>?, i_13_: Int, i_14_: Int, i_15_: Int, bool: Boolean): Boolean {
+        fun method3542(i: Int, sceneCollisionEntries: Array<Array<Array<SceneCollisionEntry?>?>?>?, i_13_: Int, i_14_: Int, i_15_: Int, bool: Boolean): Boolean {
             anInt7310++
             val i_16_ = if (bool) 1.toByte() else (TextureQualityOptionState.anInt6006 and 0xff).toByte()
             if (i_16_ == RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_13_]!![i]) return false
@@ -205,33 +205,33 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Abstract
                 var bool_24_ = false
                 if ((0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0) bool_24_ = true
                 var bool_25_ = false
-                if (class357s != null) {
+                if (sceneCollisionEntries != null) {
                     var i_26_ = CompiledScriptCache.anInt4372 + 1
                     while_223_@ while ( /**/i_26_ <= 3) {
-                        if (class357s[i_26_] != null && (0x8 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![i_26_]!![i_19_]!![i_22_]).toInt()) == 0) {
-                            if (bool_24_ && class357s[i_26_]!![i_19_]!![i_22_] != null) {
-                                if ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406) != null) {
+                        if (sceneCollisionEntries[i_26_] != null && (0x8 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![i_26_]!![i_19_]!![i_22_]).toInt()) == 0) {
+                            if (bool_24_ && sceneCollisionEntries[i_26_]!![i_19_]!![i_22_] != null) {
+                                if ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406) != null) {
                                     val i_27_ = Class359.method3492(i_20_, 226)
-                                    if (((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_27_) || ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_27_ == (class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt()))) {
+                                    if (((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_27_) || ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_27_ == (sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt()))) {
                                         i_26_++
                                         continue
                                     }
                                     if (i_21_ != 0) {
                                         val i_28_ = Class359.method3492(i_21_, 226)
-                                        if (((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_28_) || ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt() == i_28_))) {
+                                        if (((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_28_) || ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt() == i_28_))) {
                                             i_26_++
                                             continue
                                         }
                                     }
                                     if (i_23_ != 0) {
                                         val i_29_ = Class359.method3492(i_23_, 226)
-                                        if ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_29_ || ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_29_ == (class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt()))) {
+                                        if ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_29_ || ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_29_ == (sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt()))) {
                                             i_26_++
                                             continue
                                         }
                                     }
                                 }
-                                val class357 = class357s[i_26_]!![i_19_]!![i_22_]!!
+                                val class357 = sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!
                                 if (class357.aWidgetNodeLink_4396 != null) {
                                     var class148 = (class357.aWidgetNodeLink_4396)
                                     while (class148 != null) {
@@ -251,9 +251,9 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Abstract
                                     }
                                 }
                             }
-                            val class357: Class357? = class357s[i_26_]!![i_19_]!![i_22_]
-                            if (class357 != null && class357.aWidgetNodeLink_4396 != null) {
-                                var class148 = class357.aWidgetNodeLink_4396
+                            val sceneCollisionEntry: SceneCollisionEntry? = sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]
+                            if (sceneCollisionEntry != null && sceneCollisionEntry.aWidgetNodeLink_4396 != null) {
+                                var class148 = sceneCollisionEntry.aWidgetNodeLink_4396
                                 while (class148 != null) {
                                     val class318_sub1_sub3 = (class148.aClass318_Sub1_Sub3_2040)!!
                                     if (((class318_sub1_sub3.aShort8743) != class318_sub1_sub3.aShort8751) || (class318_sub1_sub3.aShort8750 != class318_sub1_sub3.aShort8747)) {

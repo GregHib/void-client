@@ -96,7 +96,7 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         @JvmStatic
         fun method817(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): ProjectedGroundDecor? {
             anInt1456++
-            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_1_]!![i_0_]!![i_2_]
+            val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_1_]!![i_0_]!![i_2_]
             if (class357 == null) return null
             if (i != 252) return null
             var class318_sub1_sub3_sub3: ProjectedGroundDecor? = null
@@ -148,7 +148,7 @@ class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
             DelegatingRenderCanvas.anInt67 = i
             for (i_22_ in 0..<SpotAnimEntity.anInt6451) {
                 for (i_23_ in 0..<RegionSceneShifter.anInt7054) {
-                    if (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_22_]!![i_23_] == null) HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_22_]!![i_23_] = Class357(i)
+                    if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_22_]!![i_23_] == null) HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_22_]!![i_23_] = SceneCollisionEntry(i)
                 }
             }
         }

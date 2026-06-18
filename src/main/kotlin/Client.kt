@@ -413,7 +413,7 @@ import TextureCache.Companion.method3466
 import TextureCache.Companion.method3468
 import CompiledScriptCache.Companion.method3473
 import Hashtable.Companion.method3478
-import Class357.Companion.method3487
+import SceneCollisionEntry.Companion.method3487
 import Class358.Companion.method3488
 import Class359.Companion.method3491
 import Class36.method355

@@ -112,7 +112,7 @@ class FloatBuffer internal constructor(i: Int) : Buffer(i) {
                                     if (Class99.aBooleanArrayArray1572!![i_10_]!![i_12_]) {
                                         val i_13_ = (i_12_ + IntPair.anInt6974 - WorldMapRenderer.anInt4686)
                                         for (i_14_ in i_7_ downTo 0) {
-                                            if ((HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]) != null && (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]!!.aByte4399).toInt() == i_7_) {
+                                            if ((HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]) != null && (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]!!.aByte4399).toInt() == i_7_) {
                                                 bools[i_10_]!![i_12_] = (i_14_ < i || (`is`[i_14_]!![i_11_]!![i_13_]) != i_0_) && (!IndexedSprite.method164(i_7_, i_11_, (-97).toByte(), i_13_))
                                                 break
                                             }

@@ -38,7 +38,7 @@ class OutputStream_Sub1 : OutputStream() {
             var i_2_ = i_2_
             var i_3_ = i_3_
             anInt94++
-            if (HintArrowOrMessage.aClass357ArrayArrayArray2029 == null) FacingDirectionNode.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
+            if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) FacingDirectionNode.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
             else if (LocalPlayerState.aPlayer_1907!!.x < 0 || (LocalPlayerState.aPlayer_1907!!.x >= Class367_Sub4.anInt7319 * 512) || LocalPlayerState.aPlayer_1907!!.y < 0 || (512 * RangeThresholdTextureNode.anInt9109 <= LocalPlayerState.aPlayer_1907!!.y)) FacingDirectionNode.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
             else {
                 TextureQualityOptionState.anInt6006++

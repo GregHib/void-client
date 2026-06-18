@@ -46,7 +46,7 @@ object NpcEntityUpdater {
     }
 
     fun method2110(i: Int, i_1_: Int, i_2_: Int): SceneObjectEntity? {
-        val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_1_]!![i_2_]
+        val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_1_]!![i_2_]
         if (class357 == null) return null
         val class318_sub1_sub2 = class357.aClass318_Sub1_Sub2_4408
         class357.aClass318_Sub1_Sub2_4408 = null

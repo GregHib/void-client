@@ -327,7 +327,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                 while (Class367_Sub4.anInt7319 > i_32_) {
                     var i_33_ = 0
                     while (RangeThresholdTextureNode.anInt9109 > i_33_) {
-                        if (Class367_Sub4.method3542(i_33_, HintArrowOrMessage.aClass357ArrayArrayArray2029, i_32_, 0, i_31_, true)) i_31_++
+                        if (Class367_Sub4.method3542(i_33_, HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029, i_32_, 0, i_31_, true)) i_31_++
                         if (i_31_ >= 512) return
                         i_33_++
                     }

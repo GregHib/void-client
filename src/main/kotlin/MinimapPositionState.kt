@@ -44,7 +44,7 @@ class MinimapPositionState {
         fun method2284(i: Byte, l: Long) {
             try {
                 anInt3841++
-                if (HintArrowOrMessage.aClass357ArrayArrayArray2029 != null) {
+                if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null) {
                     if (WeaveTextureNode.anInt9282 != 1 && WeaveTextureNode.anInt9282 != 5) {
                         if (WeaveTextureNode.anInt9282 == 4) method814(125.toByte(), l)
                     } else method119(-1, l)

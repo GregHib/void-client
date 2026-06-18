@@ -3,13 +3,13 @@ import SoundBankPatch.Companion.method2929
 /* Class357 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class357 internal constructor(i: Int) {
+class SceneCollisionEntry internal constructor(i: Int) {
     var aClass318_Sub1_Sub5_4395: WallEntity? = null
     var aWidgetNodeLink_4396: WidgetNodeLink? = null
     var aShort4397: Short = 0
     var aShort4398: Short = 0
     var aByte4399: Byte
-    var aClass357_4400: Class357? = null
+    var aSceneCollisionEntry_4400: SceneCollisionEntry? = null
     var aShort4401: Short = 0
     @JvmField
     var aClass318_Sub1_Sub1_4402: TileSceneEntity? = null

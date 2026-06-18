@@ -191,7 +191,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                         InterfaceComponentGroup.method3243(i + -11473, class348_sub47)
                         RenderNode.aBoolean9719 = true
                     }
-                    if (HintArrowOrMessage.aClass357ArrayArrayArray2029 != null) {
+                    if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null) {
                         if (WeaveTextureNode.anInt9282 == 2) method241(127.toByte())
                         else if (WeaveTextureNode.anInt9282 == 3) CameraSplineNode.Companion.method2954((-4).toByte())
                     }

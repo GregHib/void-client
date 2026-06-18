@@ -279,7 +279,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     }
                                                     val i_48_ = i_46_ * 100 / i_44_
                                                     val i_49_ = 10000 * i_45_ / i_44_
-                                                    val string = ("Cache:" + (Class357.method3486(2, true, 0, i_49_.toLong(), 16980)) + "% (" + i_48_ + "%)")
+                                                    val string = ("Cache:" + (SceneCollisionEntry.method3486(2, true, 0, i_49_.toLong(), 16980)) + "% (" + i_48_ + "%)")
                                                     WorldMapRenderer.aFont_4684!!.method2569(string, i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
                                                     if (Loader.showCoordinates) {

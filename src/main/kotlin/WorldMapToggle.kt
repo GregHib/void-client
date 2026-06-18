@@ -28,7 +28,7 @@ object WorldMapToggle {
         anInt3876++
         if (HostPingThread.aWorldListEntryArray2261 != null) {
             NativeIndexBuffer.anInt4698++
-            val class348_sub47 = method2148(Class357.aFontMetaRef_4405, TheoraVideoStream.aClass77_9029, -97)
+            val class348_sub47 = method2148(SceneCollisionEntry.aFontMetaRef_4405, TheoraVideoStream.aClass77_9029, -97)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
             if (i > -50) method2297(104, 26, null, null, -19)

@@ -2458,7 +2458,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class368.anInt4486 = 0
             OpenGlRenderer.anInt7671 = 0
             GameAppletFrame.anInt16 = 0
-            Class357.anInt4393 = 0
+            SceneCollisionEntry.anInt4393 = 0
             GroundDecorEntity.anInt8748 = 0
             GlVertexBufferArb.anInt8489 = 0
             SocketStreamWorker.anInt2653 = 0
@@ -3336,7 +3336,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class60.anInt1095 = 0
             Class59_Sub2.anInt5307 = 0
             ArbVertexProgram.anInt9778 = 0
-            Class357.anInt4392 = 0
+            SceneCollisionEntry.anInt4392 = 0
             GlTextureBase.anInt5102 = 0
             ProjectionCameraTransform.anInt5765 = 0
             AwtKeyboardListener.anInt6534 = 0

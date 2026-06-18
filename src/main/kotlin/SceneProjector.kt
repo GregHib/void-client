@@ -59,7 +59,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             val i_22_ = -AnimatedModelRenderer.anInt8422 + i_4_
                             val i_23_ = i_6_ + -ConfigIdPair.anInt403
                             val i_24_ = -CameraSplineNode.anInt6849 + i_5_
-                            val i_25_ = ((VideoAdChecker.aDouble3182 * i_22_.toDouble() + i_23_.toDouble() * MapElementDefinitionCache.aDouble3980 + i_24_.toDouble() * Class357.aDouble4404) * i_20_.toDouble() / i_14_.toDouble()).toInt()
+                            val i_25_ = ((VideoAdChecker.aDouble3182 * i_22_.toDouble() + i_23_.toDouble() * MapElementDefinitionCache.aDouble3980 + i_24_.toDouble() * SceneCollisionEntry.aDouble4404) * i_20_.toDouble() / i_14_.toDouble()).toInt()
                             val i_26_ = (((i_24_.toDouble() * ProceduralTextureGraph.aDouble9531) + ((i_22_.toDouble() * TheoraVideoStream.aDouble9023) + (i_23_.toDouble() * LocalizedTextTriple.aDouble3761))) * i_21_.toDouble() / i_14_.toDouble()).toInt()
                             val d = (i_24_.toDouble() * PcmStreamBuffer.aDouble8869 + (MenuActionNode.aDouble6774 * i_23_.toDouble() + i_22_.toDouble() * Class59.aDouble1083))
                             val i_27_ = i_25_ + SoundEnvelope.anInt2747 - ShaderObject.anInt4100

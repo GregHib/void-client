@@ -375,7 +375,7 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
 
         @JvmStatic
         fun method3297(i: Int, i_20_: Int, i_21_: Int): ActorEntity? {
-            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_20_]!![i_21_]
+            val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_20_]!![i_21_]
             if (class357 == null) return null
             return class357.aClass318_Sub1_Sub4_4406
         }

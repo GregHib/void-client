@@ -65,14 +65,14 @@ class GzipDecompressor private constructor(i: Int, i_6_: Int, i_7_: Int) {
             aFloatArray2075 = null
         }
 
-        fun method1217(i: Int, class357s: Array<Array<Array<Class357?>?>?>) {
+        fun method1217(i: Int, sceneCollisionEntries: Array<Array<Array<SceneCollisionEntry?>?>?>) {
             anInt2070++
-            for (i_2_ in i..<class357s.size) {
-                val class357s_3_: Array<Array<Class357?>?> = class357s[i_2_]!!
-                for (i_4_ in class357s_3_.indices) {
+            for (i_2_ in i..<sceneCollisionEntries.size) {
+                val sceneCollisionEntryS_3_: Array<Array<SceneCollisionEntry?>?> = sceneCollisionEntries[i_2_]!!
+                for (i_4_ in sceneCollisionEntryS_3_.indices) {
                     var i_5_ = 0
-                    while ((class357s_3_[i_4_]!!.size > i_5_)) {
-                        val class357 = class357s_3_[i_4_]!![i_5_]
+                    while ((sceneCollisionEntryS_3_[i_4_]!!.size > i_5_)) {
+                        val class357 = sceneCollisionEntryS_3_[i_4_]!![i_5_]
                         if (class357 != null) {
                             if (class357.aClass318_Sub1_Sub1_4402 is Interface10) (class357.aClass318_Sub1_Sub1_4402 as Interface10).method40(-12031)
                             if (class357.aClass318_Sub1_Sub5_4395 is Interface10) (class357.aClass318_Sub1_Sub5_4395 as Interface10).method40(-12031)

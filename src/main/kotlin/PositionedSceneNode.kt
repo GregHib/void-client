@@ -32,7 +32,7 @@ open class PositionedSceneNode : SceneListNode() {
                         if (i_9_ >= 0 && i_9_ < SpotAnimEntity.Companion.anInt6451) {
                             for (i_10_ in i_6_..i_7_) {
                                 if (i_10_ >= 0 && i_10_ < RegionSceneShifter.anInt7054 && (!bool || i_9_ >= i_5_ || i_10_ >= i_7_ || i_10_ < i_1_ && i_9_ != i_0_)) {
-                                    val class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_8_]!![i_9_]!![i_10_])
+                                    val class357 = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_8_]!![i_9_]!![i_10_])
                                     if (class357 != null) {
                                         val i_11_ = (((NativeSprite.aTerrainTileArray5191!![i_8_]!!.method3982((-86).toByte(), i_10_, i_9_)) + (NativeSprite.aTerrainTileArray5191!![i_8_]!!.method3982((-86).toByte(), i_10_, i_9_ + 1)) + (NativeSprite.aTerrainTileArray5191!![i_8_]!!.method3982((-86).toByte(), i_10_ + 1, i_9_)) + (NativeSprite.aTerrainTileArray5191!![i_8_]!!.method3982((-86).toByte(), i_10_ + 1, i_9_ + 1))) / 4 - ((NativeSprite.aTerrainTileArray5191!![i]!!.method3982(
                                             (-86).toByte(),

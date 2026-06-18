@@ -4795,7 +4795,7 @@ object Class66 {
                 if (i == 4124) {
                     val bool_453_ = anIntArray1149!![--anInt1173] != 0
                     val i_454_ = anIntArray1149!![--anInt1173]
-                    aStringArray1152!![anInt1170++] = Class357.method3486(0, bool_453_, AnimationFrameDefinition.anInt6967, i_454_.toLong(), 16980)
+                    aStringArray1152!![anInt1170++] = SceneCollisionEntry.method3486(0, bool_453_, AnimationFrameDefinition.anInt6967, i_454_.toLong(), 16980)
                     return
                 }
                 if (i == 4125) {

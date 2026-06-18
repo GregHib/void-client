@@ -46,7 +46,7 @@ class StringValueNode : LinkedListNode {
         fun method3319(var_renderer: Renderer?, i: Byte) {
             if (i > -108) method3321(19, 60, 108)
             anInt7114++
-            if (((LocalPlayerState.aPlayer_1907!!.plane).toInt() != CameraOrModelTransform.anInt4155) && HintArrowOrMessage.aClass357ArrayArrayArray2029 != null) {
+            if (((LocalPlayerState.aPlayer_1907!!.plane).toInt() != CameraOrModelTransform.anInt4155) && HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null) {
                 if (method2808((LocalPlayerState.aPlayer_1907!!.plane).toInt(), var_renderer, true)) CameraOrModelTransform.anInt4155 = LocalPlayerState.aPlayer_1907!!.plane.toInt()
             }
         }
@@ -54,7 +54,7 @@ class StringValueNode : LinkedListNode {
         fun method3320(class318_sub1_sub3: GroundDecorEntity, bool: Boolean) {
             for (i in class318_sub1_sub3.aShort8743..class318_sub1_sub3.aShort8751) {
                 for (i_0_ in class318_sub1_sub3.aShort8750..class318_sub1_sub3.aShort8747) {
-                    val class357 = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![class318_sub1_sub3.plane.toInt()]!![i]!![i_0_])
+                    val class357 = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![class318_sub1_sub3.plane.toInt()]!![i]!![i_0_])
                     if (class357 != null) {
                         var class148 = class357.aWidgetNodeLink_4396
                         var widgetNodeLink_1_: WidgetNodeLink? = null
@@ -74,13 +74,13 @@ class StringValueNode : LinkedListNode {
             if (!bool) method1376(class318_sub1_sub3)
         }
 
-        fun method3321(i: Int, i_2_: Int, i_3_: Int): Class357? {
-            if (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_2_]!![i_3_] == null) {
-                val bool = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i_2_]!![i_3_] != null && HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i_2_]!![i_3_]!!.aClass357_4400 != null)
+        fun method3321(i: Int, i_2_: Int, i_3_: Int): SceneCollisionEntry? {
+            if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_2_]!![i_3_] == null) {
+                val bool = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i_2_]!![i_3_] != null && HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i_2_]!![i_3_]!!.aSceneCollisionEntry_4400 != null)
                 if (bool && i >= MapAreaDefinition.anInt2524 - 1) return null
                 method1394(i, i_2_, i_3_)
             }
-            return HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_2_]!![i_3_]
+            return HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_2_]!![i_3_]
         }
 
         fun method3322(i: Int, class348_sub49: Buffer): Class369_Sub3 {

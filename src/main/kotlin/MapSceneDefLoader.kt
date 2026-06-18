@@ -125,11 +125,11 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
 
         @JvmStatic
         fun method1394(i: Int, i_5_: Int, i_6_: Int) {
-            val bool = (HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i_5_]!![i_6_] != null && HintArrowOrMessage.aClass357ArrayArrayArray2029!![0]!![i_5_]!![i_6_]!!.aClass357_4400 != null)
+            val bool = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i_5_]!![i_6_] != null && HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i_5_]!![i_6_]!!.aSceneCollisionEntry_4400 != null)
             for (i_7_ in i downTo 0) {
-                if (HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_7_]!![i_5_]!![i_6_] == null) {
-                    val class357 = (Class357(i_7_).also { HintArrowOrMessage.aClass357ArrayArrayArray2029!![i_7_]!![i_5_]!![i_6_] = it })
-                    if (bool) class357.aByte4399++
+                if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_7_]!![i_5_]!![i_6_] == null) {
+                    val sceneCollisionEntry = (SceneCollisionEntry(i_7_).also { HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_7_]!![i_5_]!![i_6_] = it })
+                    if (bool) sceneCollisionEntry.aByte4399++
                 }
             }
         }

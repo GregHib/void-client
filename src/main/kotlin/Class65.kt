@@ -76,7 +76,7 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         @JvmField
         var anInt1147: Int = 0
         @JvmField
-        var aClass357ArrayArrayArray1148: Array<Array<Array<Class357?>?>?>? = null
+        var aSceneCollisionEntryArrayArrayArray1148: Array<Array<Array<SceneCollisionEntry?>?>?>? = null
 
         @JvmStatic
         fun method696(i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {
@@ -94,8 +94,8 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
         @JvmStatic
         fun method698(i: Int) {
             aFontMetaRef_1144 = null
-            if (i != 2) aClass357ArrayArrayArray1148 = null
-            aClass357ArrayArrayArray1148 = null
+            if (i != 2) aSceneCollisionEntryArrayArrayArray1148 = null
+            aSceneCollisionEntryArrayArrayArray1148 = null
             aClass110_Sub1Array1146 = null
         }
 

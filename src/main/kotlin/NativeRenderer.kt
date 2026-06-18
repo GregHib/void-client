@@ -2892,7 +2892,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             var i_36_ = i_36_
             anInt7933++
             if (i_37_ >= 0 && i >= 0 && -1 + Class367_Sub4.anInt7319 > i_37_ && (i < -1 + RangeThresholdTextureNode.anInt9109)) {
-                if (HintArrowOrMessage.aClass357ArrayArrayArray2029 == null) return
+                if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) return
                 if (i_41_ == 0) {
                     val interface10 = method3297(i_40_, i_37_, i) as Interface10?
                     val interface10_42_ = Class82.method813(i_40_, i_37_, i) as Interface10?

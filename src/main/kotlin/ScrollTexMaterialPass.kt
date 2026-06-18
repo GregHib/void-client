@@ -194,7 +194,7 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
                             }
                             Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
                             ConfigShortValueNode.anInt9540++
-                            val class348_sub47: OutgoingPacketNode = WaterMaterialPass.Companion.method2148(Class357.aFontMetaRef_4394, (TheoraVideoStream.aClass77_9029), -99)
+                            val class348_sub47: OutgoingPacketNode = WaterMaterialPass.Companion.method2148(SceneCollisionEntry.aFontMetaRef_4394, (TheoraVideoStream.aClass77_9029), -99)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                             InterfaceComponentGroup.method3243(117, class348_sub47)
@@ -217,7 +217,7 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
 
         @JvmStatic
         fun method2168(i: Int, i_7_: Int, i_8_: Int) {
-            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_7_]!![i_8_]
+            val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_7_]!![i_8_]
             if (class357 != null) {
                 ParticleDefLoader.method1376(class357.aClass318_Sub1_Sub5_4395)
                 ParticleDefLoader.method1376(class357.aClass318_Sub1_Sub5_4407)

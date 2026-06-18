@@ -105,19 +105,19 @@ class RenderbufferObject : HashLinkedListNode, Interface9 {
             NpcActorEntity.anInt10084 = i_4_
             Class50_Sub4.aClass47_5262 = method2826(15)
             method3309(-124)
-            Class65.aClass357ArrayArrayArray1148 = (Array<Array<Array<Class357?>?>?>(i_1_) { Array<Array<Class357?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<Class357>(RegionSceneShifter.anInt7054) } })
+            Class65.aSceneCollisionEntryArrayArrayArray1148 = (Array<Array<Array<SceneCollisionEntry?>?>?>(i_1_) { Array<Array<SceneCollisionEntry?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(RegionSceneShifter.anInt7054) } })
             TerrainTileShape.aTerrainTileArray8801 = arrayOfNulls<TerrainTile>(i_1_)
             if (bool) {
                 WidgetRedrawRegion.anIntArrayArray4253 = Array<IntArray?>(SpotAnimEntity.anInt6451) { IntArray(RegionSceneShifter.anInt7054) }
                 HashTileShape.aByteArrayArray8816 = Array<ByteArray?>(SpotAnimEntity.anInt6451) { ByteArray(RegionSceneShifter.anInt7054) }
                 BooleanGraphicsOptionState.aShortArrayArray5847 = Array<ShortArray?>(SpotAnimEntity.anInt6451) { ShortArray(RegionSceneShifter.anInt7054) }
-                ProducerImageSurface.aClass357ArrayArrayArray9082 = (Array<Array<Array<Class357?>?>?>(1) { Array<Array<Class357?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<Class357>(RegionSceneShifter.anInt7054) } })
+                ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = (Array<Array<Array<SceneCollisionEntry?>?>?>(1) { Array<Array<SceneCollisionEntry?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(RegionSceneShifter.anInt7054) } })
                 SoundCacheState.aTerrainTileArray4142 = arrayOfNulls<TerrainTile>(1)
             } else {
                 WidgetRedrawRegion.anIntArrayArray4253 = null
                 HashTileShape.aByteArrayArray8816 = null
                 BooleanGraphicsOptionState.aShortArrayArray5847 = null
-                ProducerImageSurface.aClass357ArrayArrayArray9082 = null
+                ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = null
                 SoundCacheState.aTerrainTileArray4142 = null
             }
             if (bool_5_) {

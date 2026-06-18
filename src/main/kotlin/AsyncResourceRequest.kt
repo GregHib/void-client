@@ -36,7 +36,7 @@ abstract class AsyncResourceRequest : HashLinkedListNode() {
 
         @JvmStatic
         fun method3253(i: Int, i_0_: Int, i_1_: Int, var_class: Class<*>) {
-            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_0_]!![i_1_]
+            val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_0_]!![i_1_]
             if (class357 != null) {
                 var class148 = class357.aWidgetNodeLink_4396
                 while (class148 != null) {

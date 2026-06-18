@@ -114,12 +114,12 @@ class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
         @JvmField
         var anInt9081: Int = 0
         @JvmField
-        var aClass357ArrayArrayArray9082: Array<Array<Array<Class357?>?>?>? = null
+        var aSceneCollisionEntryArrayArrayArray9082: Array<Array<Array<SceneCollisionEntry?>?>?>? = null
         @JvmStatic
         fun method3016(i: Int) {
             if (i != 65280) method3016(-19)
             anIntArray9069 = null
-            aClass357ArrayArrayArray9082 = null
+            aSceneCollisionEntryArrayArrayArray9082 = null
         }
     }
 }

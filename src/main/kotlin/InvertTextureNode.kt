@@ -134,7 +134,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
 
         @JvmStatic
         fun method3135(i: Int, i_7_: Int, i_8_: Int): WallEntity? {
-            val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_7_]!![i_8_]
+            val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_7_]!![i_8_]
             if (class357 == null) return null
             return class357.aClass318_Sub1_Sub5_4395
         }

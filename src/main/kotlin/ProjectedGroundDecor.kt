@@ -823,31 +823,31 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
 
         @JvmStatic
         fun method2433() {
-            if (Class65.aClass357ArrayArrayArray1148 != null) {
-                for (i in Class65.aClass357ArrayArrayArray1148!!.indices) {
+            if (Class65.aSceneCollisionEntryArrayArrayArray1148 != null) {
+                for (i in Class65.aSceneCollisionEntryArrayArrayArray1148!!.indices) {
                     for (i_80_ in 0..<SpotAnimEntity.anInt6451) {
                         for (i_81_ in 0..<RegionSceneShifter.anInt7054) {
-                            if ((Class65.aClass357ArrayArrayArray1148!![i]!![i_80_]!![i_81_]) != null) Class65.aClass357ArrayArrayArray1148!![i]!![i_80_]!![i_81_]!!.method3485(true)
-                            Class65.aClass357ArrayArrayArray1148!![i]!![i_80_]!![i_81_] = null
+                            if ((Class65.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]) != null) Class65.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]!!.method3485(true)
+                            Class65.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_] = null
                         }
                     }
                 }
             }
-            Class65.aClass357ArrayArrayArray1148 = null
+            Class65.aSceneCollisionEntryArrayArrayArray1148 = null
             TerrainTileShape.aTerrainTileArray8801 = null
-            if (ProducerImageSurface.aClass357ArrayArrayArray9082 != null) {
-                for (i in ProducerImageSurface.aClass357ArrayArrayArray9082!!.indices) {
+            if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) {
+                for (i in ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!!.indices) {
                     for (i_82_ in 0..<SpotAnimEntity.anInt6451) {
                         for (i_83_ in 0..<RegionSceneShifter.anInt7054) {
-                            if ((ProducerImageSurface.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_]) != null) ProducerImageSurface.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_]!!.method3485(true)
-                            ProducerImageSurface.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_] = null
+                            if ((ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!![i]!![i_82_]!![i_83_]) != null) ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!![i]!![i_82_]!![i_83_]!!.method3485(true)
+                            ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!![i]!![i_82_]!![i_83_] = null
                         }
                     }
                 }
             }
-            ProducerImageSurface.aClass357ArrayArrayArray9082 = null
+            ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = null
             SoundCacheState.aTerrainTileArray4142 = null
-            HintArrowOrMessage.aClass357ArrayArrayArray2029 = null
+            HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 = null
             NativeSprite.aTerrainTileArray5191 = null
             Class99.aBooleanArrayArray1572 = null
             FacingDirectionNode.aBooleanArrayArray6656 = null

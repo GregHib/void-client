@@ -164,7 +164,7 @@ class GlTexture3D : GlTexture {
                 for (i_44_ in 0..<Class75_Sub1.anInt5652 - 1) WidgetDefinition.anIntArray256!![i_44_] = i_43_ * (i_44_ + 1) + ParticleProcessor.anIntArray4271!![i_44_]
                 for (i_45_ in NormalMapTextureNode.aSceneLoaderThreadArray9432!!.indices) NormalMapTextureNode.aSceneLoaderThreadArray9432!![i_45_]!!.method2209()
             }
-            if (ProducerImageSurface.aClass357ArrayArrayArray9082 != null) {
+            if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) {
                 if (VoronoiNoiseTextureNode.aBoolean9121) method2131(0)
                 DoublyLinkedNodeList.method1879(true)
                 Class9.aRenderer171!!.ra(-1, 1583160, 40, 127)
