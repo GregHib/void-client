@@ -131,7 +131,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
             Class97.method873(Class367_Sub4.anInt7319 shr 3, 21719, FacingDirectionNode.aRenderer6654, RangeThresholdTextureNode.anInt9109 shr 3)
             Class76.method773(true)
             RenderNode.aBoolean9719 = false
-            NativeLibraryUnloader.aClass57Array2974 = null
+            NativeLibraryUnloader.aMapSceneTileArray2974 = null
             RuntimeException_Sub1.aBoolean4604 = true
             LoadingScreenImageNode.method3179(i_1_)
         }

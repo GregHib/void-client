@@ -273,7 +273,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                                 var class348_sub19_sub1: PcmSampleData? = null
                                 if (class10.aByte180.toInt() != 1) {
                                     if (class10.method220((-112).toByte())) class348_sub19_sub1 = (class10.aClass348_Sub19_Sub1_189)
-                                } else class348_sub19_sub1 = class10.aAudioClipDefinition_183!!.method2369().method2944(Class57.aAudioResampler_1050!!)
+                                } else class348_sub19_sub1 = class10.aAudioClipDefinition_183!!.method2369().method2944(MapSceneTile.aAudioResampler_1050!!)
                                 val class348_sub16_sub5 = (SampledVoice.method2911(class348_sub19_sub1!!, class10.anInt173, i_6_, i_5_).also { class10.aClass348_Sub16_Sub5_176 = it })
                                 class348_sub16_sub5!!.method2917(-1 + class10.anInt177)
                                 SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)

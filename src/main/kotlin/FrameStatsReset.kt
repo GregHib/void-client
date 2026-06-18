@@ -276,7 +276,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5496 = 0
             ActorEntity.anInt8758 = 0
             ConnectionStateType.anInt1019 = 0
-            Class57.anInt1049 = 0
+            MapSceneTile.anInt1049 = 0
             GroundDecorSceneEntity.anInt9978 = 0
             GlTextureBase.anInt5103 = 0
             TheoraVideoStream.anInt9021 = 0
@@ -2910,7 +2910,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7903 = 0
             BooleanGraphicsOptionState.anInt5843 = 0
             NativeRenderer.anInt7960 = 0
-            Class57.anInt1053 = 0
+            MapSceneTile.anInt1053 = 0
             NativeRenderer.anInt8077 = 0
             SpriteRgbTextureNode.anInt10425 = 0
             Class59_Sub1.anInt5291 = 0

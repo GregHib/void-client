@@ -55,26 +55,26 @@ class WorldListEntry {
         }
 
         @JvmStatic
-        fun method286(i: Byte, privilegedOperationWorker: PrivilegedOperationWorker): Array<Class57?> {
+        fun method286(i: Byte, privilegedOperationWorker: PrivilegedOperationWorker): Array<MapSceneTile?> {
             anInt307++
-            if (!privilegedOperationWorker.method2247(-4)) return arrayOfNulls<Class57>(0)
+            if (!privilegedOperationWorker.method2247(-4)) return arrayOfNulls<MapSceneTile>(0)
             val i_6_ = 52 / ((39 - i) / 61)
             val class144 = privilegedOperationWorker.method2240(972476528)
             while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-97).toByte(), 10L)
-            if (class144.anInt1997 == 2) return arrayOfNulls<Class57>(0)
+            if (class144.anInt1997 == 2) return arrayOfNulls<MapSceneTile>(0)
             val `is` = class144.anObject1998 as IntArray
-            val class57s = arrayOfNulls<Class57>(`is`.size shr 2)
+            val mapSceneTiles = arrayOfNulls<MapSceneTile>(`is`.size shr 2)
             var i_7_ = 0
-            while (class57s.size > i_7_) {
-                val class57 = Class57()
-                class57s[i_7_] = class57
-                class57.anInt1047 = `is`[i_7_ shl 2]
-                class57.anInt1054 = `is`[1 + (i_7_ shl 2)]
-                class57.anInt1046 = `is`[2 + (i_7_ shl 2)]
-                class57.anInt1052 = `is`[(i_7_ shl 2) + 3]
+            while (mapSceneTiles.size > i_7_) {
+                val mapSceneTile = MapSceneTile()
+                mapSceneTiles[i_7_] = mapSceneTile
+                mapSceneTile.anInt1047 = `is`[i_7_ shl 2]
+                mapSceneTile.anInt1054 = `is`[1 + (i_7_ shl 2)]
+                mapSceneTile.anInt1046 = `is`[2 + (i_7_ shl 2)]
+                mapSceneTile.anInt1052 = `is`[(i_7_ shl 2) + 3]
                 i_7_++
             }
-            return class57s
+            return mapSceneTiles
         }
 
         init {

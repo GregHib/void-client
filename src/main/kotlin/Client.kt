@@ -461,7 +461,7 @@ import OggMediaStream.Companion.method518
 import OggCacheStream.Companion.method523
 import ConnectionStateType.Companion.method526
 import ConnectionStateType.Companion.method527
-import Class57.Companion.method530
+import MapSceneTile.Companion.method530
 import Class59.Companion.method548
 import Class59_Sub1.Companion.method553
 import Class59_Sub1_Sub1.Companion.method556

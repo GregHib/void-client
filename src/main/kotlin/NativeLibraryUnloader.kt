@@ -9,14 +9,14 @@ object NativeLibraryUnloader {
     var aIntRange_2972: IntRange? = IntRange(49, 4)
     var anInt2973: Int = 0
     @JvmField
-    var aClass57Array2974: Array<Class57?>? = null
+    var aMapSceneTileArray2974: Array<MapSceneTile?>? = null
     @JvmField
     var anInt2975: Int = 0
 
     @JvmStatic
     fun method1628(i: Byte) {
-        aClass57Array2974 = null
-        if (i <= 47) aClass57Array2974 = null
+        aMapSceneTileArray2974 = null
+        if (i <= 47) aMapSceneTileArray2974 = null
         aIntRange_2972 = null
     }
 

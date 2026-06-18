@@ -236,7 +236,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         try {
             anInt9852++
             if (bool_2_ == false) {
-                glTexEnvi(8960, i + 34176, Class57.method531(101.toByte(), class70))
+                glTexEnvi(8960, i + 34176, MapSceneTile.method531(101.toByte(), class70))
                 if (bool) glTexEnvi(8960, i + 34192, if (!bool_3_) 770 else 771)
                 else glTexEnvi(8960, i + 34192, if (!bool_3_) 768 else 769)
             }
@@ -957,7 +957,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     override fun method3829(class70: Class70?, i: Int, i_71_: Byte, bool: Boolean) {
         try {
             if (i_71_.toInt() == 80) {
-                glTexEnvi(8960, i + 34184, Class57.method531(123.toByte(), class70))
+                glTexEnvi(8960, i + 34184, MapSceneTile.method531(123.toByte(), class70))
                 anInt9885++
                 glTexEnvi(8960, 34200 + i, if (bool) 771 else 770)
             }

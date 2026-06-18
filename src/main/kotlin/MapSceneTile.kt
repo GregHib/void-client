@@ -1,7 +1,7 @@
 /* Class57 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class57 {
+class MapSceneTile {
     @JvmField
     var anInt1046: Int = 0
     @JvmField
