@@ -174,10 +174,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aModelBatchBase_8191: ModelBatchBase? = null
     @JvmField
     var aClass64_Sub2_8192: Direct3dModel? = null
-    private var anInterface5_Impl1_8193: Interface5_Impl1? = null
+    private var anInterface5_Impl1_8193: VertexBufferResource? = null
     @JvmField
     var aClass64_Sub2_8194: Direct3dModel? = null
-    private var anInterface5_Impl2_8195: Interface5_Impl2? = null
+    private var anInterface5_Impl2_8195: IndexBufferResource? = null
     private val aClass101_Sub2_8196: FloatCameraTransform
     private var aModelBatchBase_8197: ModelBatchBase? = null
     @JvmField
@@ -186,10 +186,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aClass64_Sub2_8199: Direct3dModel? = null
     @JvmField
     var aClass64_Sub2_8200: Direct3dModel? = null
-    private var anInterface5_Impl1_8201: Interface5_Impl1? = null
+    private var anInterface5_Impl1_8201: VertexBufferResource? = null
     @JvmField
     var aModelBatchBase_8202: ModelBatchBase? = null
-    private var anInterface5_Impl1_8203: Interface5_Impl1? = null
+    private var anInterface5_Impl1_8203: VertexBufferResource? = null
     var aModelBatchBase_8204: ModelBatchBase? = null
     private var aModelBatchBase_8205: ModelBatchBase? = null
     @JvmField
@@ -421,7 +421,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         if (i != -4845) method3858(false)
     }
 
-    fun method3822(i: Int, i_33_: Int): Interface5_Impl2 {
+    fun method3822(i: Int, i_33_: Int): IndexBufferResource {
         if (anInterface5_Impl2_8195!!.method16(false) < 2 * i_33_) anInterface5_Impl2_8195!!.method23(15959, i_33_)
         anInt7975++
         return anInterface5_Impl2_8195!!
@@ -741,7 +741,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    abstract fun method3840(i: Int, bool: Boolean): Interface5_Impl2?
+    abstract fun method3840(i: Int, bool: Boolean): IndexBufferResource?
 
     abstract fun method3841(i: Byte)
 
@@ -1413,7 +1413,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         return true
     }
 
-    abstract fun method3889(bool: Boolean, i: Int): Interface5_Impl1
+    abstract fun method3889(bool: Boolean, i: Int): VertexBufferResource
 
     fun method3890(bool: Boolean, i: Byte) {
         if (i <= 10) this.aNativeHeapBuffer7974 = null
@@ -2095,7 +2095,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3924(bool: Boolean, bool_253_: Boolean, i: Int, trigLookupTables: TrigLookupTables?, bool_254_: Boolean)
 
-    abstract fun method3925(i: Int, interface5_impl1: Interface5_Impl1?, i_255_: Int)
+    abstract fun method3925(i: Int, interface5_impl1: VertexBufferResource?, i_255_: Int)
 
     abstract fun method3926(i: Byte, bool: Boolean)
 
@@ -2285,7 +2285,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3937(i: Byte)
 
-    abstract fun method3938(cameraRotationStub: CameraRotationStub?, i: Int, interface5_impl2: Interface5_Impl2?, i_276_: Int, i_277_: Int, i_278_: Int, i_279_: Int)
+    abstract fun method3938(cameraRotationStub: CameraRotationStub?, i: Int, interface5_impl2: IndexBufferResource?, i_276_: Int, i_277_: Int, i_278_: Int, i_279_: Int)
 
     override fun method3667(i: Int, i_280_: Int): Int {
         anInt7997++

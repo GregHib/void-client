@@ -1,6 +1,6 @@
 import jaclib.memory.Buffer
 
-interface Interface5_Impl2 : Interface5 {
+interface IndexBufferResource : SizedResource {
     fun method22(i: Int): Boolean
 
     fun method21(i: Int)

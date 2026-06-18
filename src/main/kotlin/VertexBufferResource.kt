@@ -1,7 +1,7 @@
 import jaclib.memory.Buffer
 import jaclib.memory.Source
 
-interface Interface5_Impl1 : Interface5 {
+interface VertexBufferResource : SizedResource {
     fun method17(source: Source, i: Int, i_0_: Int, i_1_: Byte): Boolean
 
     fun method18(i: Int): Boolean

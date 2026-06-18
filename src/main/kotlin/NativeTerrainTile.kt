@@ -32,8 +32,8 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
     @JvmField
     var aModelBatchBase_8324: ModelBatchBase? = null
     private var aHashtable_8325: Hashtable? = null
-    private var anInterface5_Impl1_8326: Interface5_Impl1? = null
-    private var anInterface5_Impl1_8327: Interface5_Impl1? = null
+    private var anInterface5_Impl1_8326: VertexBufferResource? = null
+    private var anInterface5_Impl1_8327: VertexBufferResource? = null
     private var aClass348_Sub3Array8328: Array<ModelVertexColorBuffer?>? = null
     private var anInt8329 = 0
     private var aByteArrayArray8330: Array<ByteArray?>?

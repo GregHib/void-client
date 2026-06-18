@@ -384,7 +384,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         glMatrixMode(5888)
     }
 
-    override fun method3925(i: Int, interface5_impl1: Interface5_Impl1?, i_17_: Int) {
+    override fun method3925(i: Int, interface5_impl1: VertexBufferResource?, i_17_: Int) {
         try {
             anInt9814++
             val i_18_ = 86 / ((i - -26) / 39)
@@ -700,7 +700,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         }
     }
 
-    override fun method3938(cameraRotationStub: CameraRotationStub?, i: Int, interface5_impl2: Interface5_Impl2?, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int) {
+    override fun method3938(cameraRotationStub: CameraRotationStub?, i: Int, interface5_impl2: IndexBufferResource?, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int) {
         try {
             if (i_43_ <= 46) aNodeDeque_9903 = null
             anInt9867++
@@ -1061,7 +1061,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         anInt9859++
     }
 
-    override fun method3840(i: Int, bool: Boolean): Interface5_Impl2? {
+    override fun method3840(i: Int, bool: Boolean): IndexBufferResource? {
         anInt9826++
         if (i != -28633) return null
         return GlIndexBufferArb(this, MovementDirection.aMovementDirection_1184, bool)
@@ -1170,7 +1170,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         if (i != 0) this.anInt9918 = 74
     }
 
-    override fun method3889(bool: Boolean, i: Int): Interface5_Impl1 {
+    override fun method3889(bool: Boolean, i: Int): VertexBufferResource {
         anInt9815++
         return GlVertexBufferArb(this, bool)
     }

@@ -2,7 +2,7 @@ import MultiLevelOptionState.Companion.method1849
 import jaclib.memory.Buffer
 import jaclib.memory.Source
 
-class GlVertexBufferArb internal constructor(glRenderDevice: GlRenderDevice, bool: Boolean) : GlBufferObject(glRenderDevice, 34962, bool), Interface5_Impl1 {
+class GlVertexBufferArb internal constructor(glRenderDevice: GlRenderDevice, bool: Boolean) : GlBufferObject(glRenderDevice, 34962, bool), VertexBufferResource {
     private var aByte8491: Byte = 0
     override fun method21(i: Int) {
         super.method21(i)

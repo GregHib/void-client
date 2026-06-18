@@ -5,7 +5,7 @@ import kotlin.math.sqrt
 
 class TerrainShadowBuilderGl3 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: NativeTerrainTile?, class348_sub1: AbstractTileShape?, `is`: IntArray?) : LinkedListNode() {
     private var aFloatArrayArray7001: Array<FloatArray?>?
-    private val anInterface5_Impl2_7002: Interface5_Impl2?
+    private val anInterface5_Impl2_7002: IndexBufferResource?
     private val aClass348_Sub1_7004: AbstractTileShape?
     private var aFloatArrayArray7005: Array<FloatArray?>?
     private val aHa_Sub3_7007: NativeRenderer?
@@ -17,7 +17,7 @@ class TerrainShadowBuilderGl3 internal constructor(var_ha_Sub3: NativeRenderer?,
     private val anInt7017: Int
     private var anInt7018 = 0
     private val aS_Sub3_7019: NativeTerrainTile?
-    private val anInterface5_Impl1_7020: Interface5_Impl1?
+    private val anInterface5_Impl1_7020: VertexBufferResource?
     private var aStream7021: Stream? = null
     private var aStream7022: Stream? = null
     private val anInt7023: Int

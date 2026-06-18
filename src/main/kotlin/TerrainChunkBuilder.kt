@@ -11,7 +11,7 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
     private val anInt1544: Int
     private var anInt1546 = 0
     private var anInt1547 = 0
-    private var anInterface5_Impl2_1551: Interface5_Impl2? = null
+    private var anInterface5_Impl2_1551: IndexBufferResource? = null
     private var anInterface18_Impl3_1556: Renderable2dTexture? = null
     private var anInt1558 = -1
     private val anInt1559: Int
@@ -95,7 +95,7 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
         }
     }
 
-    fun method875(i: Int, interface5_impl2: Interface5_Impl2?, i_22_: Int) {
+    fun method875(i: Int, interface5_impl2: IndexBufferResource?, i_22_: Int) {
         if (i_22_ > 0) {
             method874(-12763)
             aHa_Sub3_1561!!.method3850(119.toByte(), anInterface18_Impl3_1556)

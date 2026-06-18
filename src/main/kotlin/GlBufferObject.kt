@@ -11,7 +11,7 @@ import jaggl.OpenGL.Companion.glGenBuffersARB
 /*
  * Class285
  */
-abstract class GlBufferObject internal constructor(var aGlRenderDevice_4759: GlRenderDevice, private val anInt4755: Int, private val aBoolean4750: Boolean) : Interface5 {
+abstract class GlBufferObject internal constructor(var aGlRenderDevice_4759: GlRenderDevice, private val anInt4755: Int, private val aBoolean4750: Boolean) : SizedResource {
     private var anInt4736 = 0
     private var anInt4739 = 0
     private var anInt4746 = -1

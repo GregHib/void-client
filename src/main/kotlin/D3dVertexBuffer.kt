@@ -6,7 +6,7 @@ import jagdx.ue.a
 /*
  * Class366
  */
-class D3dVertexBuffer internal constructor(private val aD3dRenderDevice_8512: D3dRenderDevice, private val aBoolean8509: Boolean) : Interface5_Impl1 {
+class D3dVertexBuffer internal constructor(private val aD3dRenderDevice_8512: D3dRenderDevice, private val aBoolean8509: Boolean) : VertexBufferResource {
     private var anInt8508 = 0
     private var aBoolean8510 = false
     var anIDirect3DVertexBuffer8511: IDirect3DVertexBuffer? = null

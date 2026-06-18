@@ -242,7 +242,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         }
     }
 
-    override fun method3938(cameraRotationStub: CameraRotationStub?, i: Int, interface5_impl2: Interface5_Impl2?, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
+    override fun method3938(cameraRotationStub: CameraRotationStub?, i: Int, interface5_impl2: IndexBufferResource?, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
         this.anIDirect3DDevice9810!!.SetIndices((interface5_impl2 as D3dIndexBuffer).anIDirect3DIndexBuffer8517)
         this.anIDirect3DDevice9810!!.DrawIndexedPrimitive(Companion.method3953(cameraRotationStub, (-111).toByte()), 0, i_24_, i_26_, i_25_, i)
         if (i_27_ < 46) method3931(true, null, null)
@@ -420,7 +420,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         super.method3652()
     }
 
-    override fun method3840(i: Int, bool: Boolean): Interface5_Impl2 {
+    override fun method3840(i: Int, bool: Boolean): IndexBufferResource {
         if (i != -28633) method3937(102.toByte())
         return D3dIndexBuffer(this, MovementDirection.aMovementDirection_1184, bool)
     }
@@ -593,7 +593,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         /* empty */
     }
 
-    override fun method3889(bool: Boolean, i: Int): Interface5_Impl1 {
+    override fun method3889(bool: Boolean, i: Int): VertexBufferResource {
         return D3dVertexBuffer(this, bool)
     }
 
@@ -748,7 +748,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         this.anIDirect3DDevice9810!!.BeginScene()
     }
 
-    override fun method3925(i: Int, interface5_impl1: Interface5_Impl1?, i_89_: Int) {
+    override fun method3925(i: Int, interface5_impl1: VertexBufferResource?, i_89_: Int) {
         val i_90_ = -112 % ((i - -26) / 39)
         val d3dVertexBuffer = interface5_impl1 as D3dVertexBuffer
         this.anIDirect3DDevice9810!!.SetStreamSource(i_89_, d3dVertexBuffer.anIDirect3DVertexBuffer8511, 0, d3dVertexBuffer.method3519(3545))

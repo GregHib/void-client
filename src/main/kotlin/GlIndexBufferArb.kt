@@ -1,6 +1,6 @@
 import jaclib.memory.Buffer
 
-class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, movementDirection: MovementDirection?, bool: Boolean) : GlBufferObject(glRenderDevice, 34963, bool), Interface5_Impl2 {
+class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, movementDirection: MovementDirection?, bool: Boolean) : GlBufferObject(glRenderDevice, 34963, bool), IndexBufferResource {
     private val aMovementDirection_8504: MovementDirection?
     override fun method23(i: Int, i_0_: Int) {
         super.method23(i, i_0_ * aMovementDirection_8504!!.anInt1178)

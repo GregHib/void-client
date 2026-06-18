@@ -5,7 +5,7 @@ import jagdx.ue.a
 /*
  * Class142
  */
-class D3dIndexBuffer internal constructor(private val aD3dRenderDevice_8515: D3dRenderDevice, private var aMovementDirection_8518: MovementDirection?, private val aBoolean8519: Boolean) : Interface5_Impl2 {
+class D3dIndexBuffer internal constructor(private val aD3dRenderDevice_8515: D3dRenderDevice, private var aMovementDirection_8518: MovementDirection?, private val aBoolean8519: Boolean) : IndexBufferResource {
     private var anInt8516 = 0
     var anIDirect3DIndexBuffer8517: IDirect3DIndexBuffer? = null
     private var aBoolean8520 = false

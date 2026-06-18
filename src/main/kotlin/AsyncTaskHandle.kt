@@ -2,8 +2,8 @@
 * Visit http://jode.sourceforge.net/
 */
 class AsyncTaskHandle internal constructor(var aBoolean2574: Boolean) {
-    var anInterface5_Impl2_2572: Interface5_Impl2? = null
-    var anInterface5_Impl2_2576: Interface5_Impl2? = null
+    var anInterface5_Impl2_2572: IndexBufferResource? = null
+    var anInterface5_Impl2_2576: IndexBufferResource? = null
     var aBoolean2577: Boolean = false
     fun method1435(i: Byte) {
         if (i >= -6) this.aBoolean2577 = true

@@ -7,7 +7,7 @@ class ModelVertexColorBuffer internal constructor(private val aS_Sub3_6566: Nati
     private var aNativeHeapBuffer6572: NativeHeapBuffer? = null
     private val anIntArray6573: IntArray
     private var aStream6574: Stream? = null
-    private var anInterface5_Impl1_6577: Interface5_Impl1? = null
+    private var anInterface5_Impl1_6577: VertexBufferResource? = null
     var aFloat6582: Float
     var anInt6589: Int = 0
     private val aHa_Sub3_6590: NativeRenderer?

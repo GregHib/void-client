@@ -4,8 +4,8 @@ import TextureDefinitionCache.Companion.method1626
 * Visit http://jode.sourceforge.net/
 */
 class BufferToggleState internal constructor(var aBoolean3709: Boolean) {
-    var anInterface5_Impl1_3708: Interface5_Impl1? = null
-    var anInterface5_Impl1_3711: Interface5_Impl1? = null
+    var anInterface5_Impl1_3708: VertexBufferResource? = null
+    var anInterface5_Impl1_3711: VertexBufferResource? = null
     var aBoolean3714: Boolean = false
     fun method2195(bool: Boolean) {
         if (this.anInterface5_Impl1_3708 != null) this.anInterface5_Impl1_3708!!.method21(23315)

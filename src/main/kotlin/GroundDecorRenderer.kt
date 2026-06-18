@@ -8,13 +8,13 @@ import kotlin.math.min
 class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
     private var anInt3626 = 0
     private val anIntArray3627 = IntArray(64)
-    private val anInterface5_Impl1_3630: Interface5_Impl1
+    private val anInterface5_Impl1_3630: VertexBufferResource
     private var anIntArray3631: IntArray?
     private val aClass318_Sub9_Sub2ArrayArray3632: Array<Array<PositionedSceneNode?>?>
-    private val anInterface5_Impl2_3635: Interface5_Impl2?
+    private val anInterface5_Impl2_3635: IndexBufferResource?
     private val anIntArray3636: IntArray
     private val aModelBatchBase_3637: ModelBatchBase
-    private val anInterface5_Impl1_3638: Interface5_Impl1
+    private val anInterface5_Impl1_3638: VertexBufferResource
     private var aClass318_Sub9_Sub2ArrayArray3642: Array<Array<PositionedSceneNode?>?>?
     private fun method2098(var_ha_Sub3: NativeRenderer, i: Int, i_0_: Int) {
         anInt3629++
