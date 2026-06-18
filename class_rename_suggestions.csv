@@ -532,7 +532,7 @@
 "Class348_Sub46","StringValueNode","Holds a single String; companion provides file-output and Class369_Sub3 parsing","Sole instance field aString7111; extends Class348"
 "Class348_Sub47","OutgoingPacketNode","Holds a Class348_Sub49_Sub2 buffer plus Class351; queued outbound packet","Companion flushes via ha; packet/buffer writer type"
 "Class348_Sub48","ModelResourceBundle","Holds Class144 arrays, byte-array-array-array data and int index arrays","Aggregate model/sprite resource record; extends Class348"
-"Class348_Sub49","Buffer","Byte-array packet buffer with position pointer and many endian read/write methods","Instance aByteArray7154 + position; packet/buffer reader-writer"
+"Class348_Sub49",ByteBuffer,"Byte-array packet buffer with position pointer and many endian read/write methods","Instance aByteArray7154 + position; packet/buffer reader-writer"
 "Class348_Sub49_Sub1","FloatBuffer","Variant of Class348_Sub49 adding IEEE float read/write via floatToRawIntBits","method3399/3400 write little/big-endian floats"
 "Class348_Sub49_Sub2","CipheredPacketBuffer","Reads bits/bytes from buffer with ISAAC cipher (Class77), bit access","Variant of Class348_Sub49 (Buffer); adds keyed read/bit-packing"
 "Class348_Sub5","AbstractBloomEffect","Abstract GL/D3D bloom post-process; holds ha_Sub2, abstract render methods","Base for Class348_Sub5_Sub1; bound to ha_Sub2 device"
