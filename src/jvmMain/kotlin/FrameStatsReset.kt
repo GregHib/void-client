@@ -256,7 +256,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SpriteDefinition.anInt7073 = 0
             SlotBinding.anInt3395 = 0
             CollisionFlagQuery.anInt1192 = 0
-            Bzip2DecoderState.anInt547 = 0
+            OpenGlModel.anInt547 = 0
             MaterialTypeMarker.anInt6516 = 0
             Direct3dModel.anInt5484 = 0
             ItemDefinitionLoader.anInt2184 = 0
@@ -828,7 +828,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9888 = 0
             OpenGlModel.anInt5624 = 0
             CacheLruCache.anInt3886 = 0
-            GlShadowRenderPass.anInt7388 = 0
+            GlTexture2DRegion.anInt7388 = 0
             NativeRenderer.anInt8061 = 0
             ArbFogMaterialPass.anInt6190 = 0
             MidiSequencePlayer.anInt8920 = 0
@@ -2073,7 +2073,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             BlankTextureNode.anInt9256 = 0
             NativeRenderer.anInt7944 = 0
             AbstractCameraTransformStatics.anInt1596 = 0
-            Bzip2DecoderState.anInt551 = 0
+            HeadIconRenderer.anInt551 = 0
             LocDefinitionCache.anInt3445 = 0
             ChatCommandProcessor.anInt1171 = 0
             ProjectedGroundDecor.anInt10235 = 0
@@ -2508,7 +2508,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRectangleTexture.anInt8646 = 0
             ProjectedGroundDecor.anInt10216 = 0
             LocTypeDefLoader.anInt2508 = 0
-            CutsceneSequenceData.anInt7046 = 0
+            Js5Archive.anInt7046 = 0
             NoiseTextureGenerator.anInt1077 = 0
             TerrainTileShape.anInt8809 = 0
             SpriteRenderable.anInt4723 = 0
@@ -2832,7 +2832,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ChatMessageStream.anInt107 = 0
             TerrainShadowBuilderGl2.anInt6939 = 0
             AudioResampler.anInt2171 = 0
-            Bzip2DecoderState.anInt542 = 0
+            TileRenderState.anInt542 = 0
             IntHashSetStatics.anInt3964 = 0
             KaraokeSubtitleStream.anInt9060 = 0
             OpenGlRenderer.anInt7652 = 0
@@ -3230,7 +3230,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SpriteStore.anInt365 = 0
             ModelTransformParams.anInt4315 = 0
             ClientLoadStateMachine.anInt2172 = 0
-            GrayscaleNoiseTexture.anInt5284 = 0
+            CutsceneSequenceData.anInt5284 = 0
             SimpleToggleOptionState.anInt5889 = 0
             WhirlpoolHash.anInt1470 = 0
             ModelVertexColorBuffer.anInt6579 = 0

@@ -8,7 +8,7 @@ import OggBitstreamDecoder.Companion.method2965
 import AbstractProceduralTextureNode.Companion.method3038
 import DisplaceTextureNode.Companion.method3063
 import AsyncResourceRequest.Companion.method3256
-import GlShadowRenderPass.Companion.method3553
+import GlTexture2DRegion.Companion.method3553
 import WorldMapLabel.Companion.method3568
 import ScrollbarComponent.Companion.method184
 import GameClock.method599
@@ -124,7 +124,7 @@ object ClientLoadStateMachine {
             DirectionUtil.aJs5Archive_1541 = WorldMapTextLabel.method3571(false, 2, (-23).toByte(), 1)
             IntKeyNode.aJs5Archive_6980 = WorldMapTextLabel.method3571(false, 3, (-23).toByte(), 1)
             ModelFacePriorityNode.aJs5Archive_1878 = WorldMapTextLabel.method3571(false, 4, (-23).toByte(), 1)
-            GlShadowRenderPass.aJs5Archive_7382 = WorldMapTextLabel.method3571(true, 5, (-23).toByte(), 1)
+            AbstractCameraTransformStatics.aJs5Archive_7382 = WorldMapTextLabel.method3571(true, 5, (-23).toByte(), 1)
             CachedRgbNoiseTexture.aJs5Archive_8667 = WorldMapTextLabel.method3571(true, 6, (-23).toByte(), 1)
             RasterSprite.aJs5Archive_5207 = WorldMapTextLabel.method3571(false, 7, (-23).toByte(), 1)
             WorldMapTextLabel.aJs5Archive_8589 = WorldMapTextLabel.method3571(false, 9, (-23).toByte(), 1)
@@ -247,7 +247,7 @@ object ClientLoadStateMachine {
             method1063(1)
             GlBufferObject.anInt4737 = IntKeyNode.aJs5Archive_6980!!.method417("loginscreen", i xor 0x6ff3.inv())
             FloorOverlayDefinition.anInt970 = IntKeyNode.aJs5Archive_6980!!.method417("lobbyscreen", 0)
-            GlShadowRenderPass.aJs5Archive_7382!!.method404(0, true, false)
+            AbstractCameraTransformStatics.aJs5Archive_7382!!.method404(0, true, false)
             CachedRgbNoiseTexture.aJs5Archive_8667!!.method404(0, true, true)
             CameraRotationStub.aJs5Archive_322!!.method404(i + 28660, true, true)
             SoftwareSpriteRaster.aJs5Archive_1627!!.method404(0, true, true)

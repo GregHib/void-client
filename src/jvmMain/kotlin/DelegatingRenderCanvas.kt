@@ -152,35 +152,35 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             var i_19_ = 0
             while (DragDropController.aByteArrayArray4281!!.size > i_19_) {
                 if (NativeSprite.anIntArray5192!![i_19_] != -1 && DragDropController.aByteArrayArray4281!![i_19_] == null) {
-                    DragDropController.aByteArrayArray4281!![i_19_] = GlShadowRenderPass.aJs5Archive_7382!!.method410(-1860, NativeSprite.anIntArray5192!![i_19_], 0)
+                    DragDropController.aByteArrayArray4281!![i_19_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method410(-1860, NativeSprite.anIntArray5192!![i_19_], 0)
                     if (DragDropController.aByteArrayArray4281!![i_19_] == null) {
                         bool = false
                         LocDefinitionCache.anInt3441++
                     }
                 }
                 if (GameAppletFrame.anIntArray38!![i_19_] != -1 && GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
-                    GlRectangleTexture.aByteArrayArray8642!![i_19_] = (GlShadowRenderPass.aJs5Archive_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
+                    GlRectangleTexture.aByteArrayArray8642!![i_19_] = (AbstractCameraTransformStatics.aJs5Archive_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
                         LocDefinitionCache.anInt3441++
                         bool = false
                     }
                 }
                 if (LocalizedTextTriple.anIntArray3759!![i_19_] != -1 && ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
-                    ModelFacePriorityNode.aByteArrayArray1887!![i_19_] = GlShadowRenderPass.aJs5Archive_7382!!.method410(-1860, LocalizedTextTriple.anIntArray3759!![i_19_], 0)
+                    ModelFacePriorityNode.aByteArrayArray1887!![i_19_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method410(-1860, LocalizedTextTriple.anIntArray3759!![i_19_], 0)
                     if (ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
                         LocDefinitionCache.anInt3441++
                         bool = false
                     }
                 }
                 if (RenderNodeStatics.anIntArray9724!![i_19_] != -1 && VorbisOggDecoder.aByteArrayArray8996!![i_19_] == null) {
-                    VorbisOggDecoder.aByteArrayArray8996!![i_19_] = GlShadowRenderPass.aJs5Archive_7382!!.method410(-1860, RenderNodeStatics.anIntArray9724!![i_19_], 0)
+                    VorbisOggDecoder.aByteArrayArray8996!![i_19_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method410(-1860, RenderNodeStatics.anIntArray9724!![i_19_], 0)
                     if (VorbisOggDecoder.aByteArrayArray8996!![i_19_] == null) {
                         bool = false
                         LocDefinitionCache.anInt3441++
                     }
                 }
                 if (ImageFrameCache.anIntArray4031 != null && StringCacheNode.aByteArrayArray7212!![i_19_] == null && ImageFrameCache.anIntArray4031!![i_19_] != -1) {
-                    StringCacheNode.aByteArrayArray7212!![i_19_] = (GlShadowRenderPass.aJs5Archive_7382!!.method393(ImageFrameCache.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
+                    StringCacheNode.aByteArrayArray7212!![i_19_] = (AbstractCameraTransformStatics.aJs5Archive_7382!!.method393(ImageFrameCache.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (StringCacheNode.aByteArrayArray7212!![i_19_] == null) {
                         bool = false
                         LocDefinitionCache.anInt3441++
@@ -345,8 +345,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         for (i_37_ in i_33_ - 1..i_34_ - -1) {
                             for (i_38_ in i_35_ + -1..i_36_ - -1) {
                                 if (i_33_ > i_37_ || i_34_ < i_37_ || i_38_ < i_35_ || i_38_ > i_36_) {
-                                    GlShadowRenderPass.aJs5Archive_7382!!.method409("m" + i_37_ + "_" + i_38_, true)
-                                    GlShadowRenderPass.aJs5Archive_7382!!.method409("l" + i_37_ + "_" + i_38_, true)
+                                    AbstractCameraTransformStatics.aJs5Archive_7382!!.method409("m" + i_37_ + "_" + i_38_, true)
+                                    AbstractCameraTransformStatics.aJs5Archive_7382!!.method409("l" + i_37_ + "_" + i_38_, true)
                                 }
                             }
                         }

@@ -181,8 +181,6 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
         @JvmField
         var anInt6226: Int = 0
         @JvmField
-        var anIntArray6228: IntArray? = null
-        @JvmField
         var anInt6229: Int = 0
         @JvmField
         var anInt6230: Int = 0
@@ -287,7 +285,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
 
         @JvmStatic
         fun method2151(i: Int) {
-            anIntArray6228 = null
+            CompressedBlockDecoder.anIntArray6228 = null
             if (i > -72) method2148(null, null, 77)
             aCalendar6221 = null
         }
@@ -314,7 +312,6 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                     i++
                 }
             }
-            if (bool != false) anIntArray6228 = null
             var i = 0
             while (MapAreaDefinition.anInt2524 > i) {
                 for (i_22_ in 0..<SpotAnimEntity.anInt6451) {

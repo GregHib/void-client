@@ -18,7 +18,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(118.toByte(), DirectionUtil.aJs5Archive_1541!!.method389(-109))
         class348_sub49_sub2.writeInt(120.toByte(), IntKeyNode.aJs5Archive_6980!!.method389(-108))
         class348_sub49_sub2.writeInt(93.toByte(), ModelFacePriorityNode.aJs5Archive_1878!!.method389(-104))
-        class348_sub49_sub2.writeInt(90.toByte(), GlShadowRenderPass.aJs5Archive_7382!!.method389(-122))
+        class348_sub49_sub2.writeInt(90.toByte(), AbstractCameraTransformStatics.aJs5Archive_7382!!.method389(-122))
         class348_sub49_sub2.writeInt(92.toByte(), CachedRgbNoiseTexture.aJs5Archive_8667!!.method389(9))
         class348_sub49_sub2.writeInt(90.toByte(), RasterSprite.aJs5Archive_5207!!.method389(120))
         class348_sub49_sub2.writeInt(99.toByte(), CameraRotationStub.aJs5Archive_322!!.method389(64))

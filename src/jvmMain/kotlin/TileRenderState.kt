@@ -4,7 +4,6 @@ import ConfigFlagUtil.Companion.method1916
 import TextureCubeProvider.Companion.method2269
 import ProjectedGroundDecor.Companion.method2433
 import RingBufferInputStream.Companion.method3616
-import Bzip2DecoderState.Companion.method369
 import MinimapTriangleDrawer.Companion.method464
 import ChatCommandProcessor.method705
 import kotlin.math.max
@@ -104,6 +103,32 @@ class TileRenderState {
             if (bool != true) method2678(45)
             return string_11_
         }
+
+        var anInt542: Int = 0
+
+        @JvmStatic
+        fun method369(i: Int) {
+            TimedRecordAccessor.aAbstractModelRendererArray7107 = null
+            CameraDistanceOptionState.aAbstractModelRendererArray5857 = null
+            BoundingBoxNode.aAbstractModelRendererArray6742 = null
+            WorldMapRenderer.aAbstractModelRendererArray4679 = null
+            NpcType.aAbstractModelRenderer_1365 = null
+            SpriteStore.aAbstractModelRendererArray367 = null
+            CustomCursorsOptionState.aAbstractModelRendererArray5933 = null
+            ScriptResources.aAbstractModelRendererArray2640 = null
+            BoxBlurTextureNode.aAbstractModelRendererArray9467 = null
+            NodeDequeStatics.aFont_3326 = null
+            SceneryDetailOptionState.aAbstractModelRenderer_6097 = null
+            GameAppletFrame.aFont_20 = null
+            WorldMapRenderer.aFont_4684 = null
+            HostPingThread.aAbstractModelRendererArray2260 = null
+            CameraNodeList.aAbstractModelRendererArray1744 = null
+            CompassSmoother.aAbstractModelRendererArray3378 = null
+            GrayscaleNoiseTexture.aAbstractModelRendererArray5294 = null
+            WallSceneEntity.aAbstractModelRendererArray9959 = null
+            anInt542++
+        }
+
 
         fun method2681(i: Int) {
             if (i == 9864) {

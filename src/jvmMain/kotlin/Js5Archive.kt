@@ -1,3 +1,4 @@
+import CompressedBlockDecoder.method1547
 import java.util.*
 
 /* Class45 - Decompiled by JODE
@@ -96,7 +97,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         }
         val is_15_: ByteArray?
         try {
-            is_15_ = CutsceneSequenceData.method3158(is_14_, -120)
+            is_15_ = method3158(is_14_, -120)
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("T3 - " + (`is` != null) + "," + i_9_ + "," + is_14_.size + "," + CutsceneSequenceData.method554(5126, is_14_.size, is_14_) + "," + CutsceneSequenceData.method554(5126, -2 + is_14_.size, is_14_) + "," + aCutsceneSequenceData_629!!.anIntArray3729[i_9_] + "," + aCutsceneSequenceData_629!!.anInt3719))
         }
@@ -569,7 +570,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         @JvmField
         var anInt665: Int = 0
         @JvmField
-        var anInt666: Int
+        var anInt666: Int = 100
         @JvmField
         var aLong667: Long = 0
         @JvmField
@@ -593,8 +594,36 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
             if (i >= 73) anInt642++
         }
 
-        init {
-            anInt666 = 100
+        var aGzipDecompressor_6955: GzipDecompressor? = GzipDecompressor()
+
+        var anInt7046: Int = 0
+        var anInt401: Int = 0
+
+        fun method3158(`is`: ByteArray?, i: Int): ByteArray {
+            anInt7046++
+            val class348_sub49 = ByteBuffer(`is`)
+            val i_37_ = class348_sub49.readUnsignedByte(255)
+            val i_38_ = class348_sub49.readInt((-126).toByte())
+            if (i_38_ < 0 || (anInt401 != 0 && i_38_ > anInt401)) {
+                throw RuntimeException()
+            }
+            if (i_37_ != 0) {
+                val i_39_ = class348_sub49.readInt((-126).toByte())
+                if (i_39_ < 0 || (anInt401 != 0 && i_39_ > anInt401) || i_39_ > 10000000) {
+                    return ByteArray(4)
+                }
+                val is_40_ = ByteArray(i_39_)
+                if (i_37_ == 1) method1547(is_40_, i_39_, `is`, i_38_, 9)
+                else {
+                    withLock(aGzipDecompressor_6955!!) {
+                        aGzipDecompressor_6955!!.method1218(is_40_, 29123, class348_sub49)
+                    }
+                }
+                return is_40_
+            }
+            val is_41_ = ByteArray(i_38_)
+            class348_sub49.method3389(2147483647, 0, i_38_, is_41_)
+            return is_41_
         }
     }
 }

@@ -229,8 +229,6 @@ class RegionSceneShifter : LinkedListNode() {
             }
         }
 
-        var aGzipDecompressor_6955: GzipDecompressor? = GzipDecompressor()
-
 
         fun method3159(i: Int, i_42_: Int, bool: Boolean, i_43_: Int, i_44_: Int, i_45_: Int, var_renderer: Renderer, i_46_: Int, i_47_: Int) {
             anInt7051++

@@ -1,6 +1,6 @@
 import GlCubeMapTexture.Companion.method243
 import GradientLookupEffect.Companion.method3076
-import GlShadowRenderPass.Companion.method3553
+import GlTexture2DRegion.Companion.method3553
 import kotlin.concurrent.Volatile
 
 /* Class49 - Decompiled by JODE

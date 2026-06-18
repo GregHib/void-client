@@ -70,8 +70,8 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                         anInterface18_Impl3_1556!!.method66(false, false, i xor 0x5582.inv())
                     } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (GlGroundShaderPass.aByteArray7394), (ClampTextureNode.aTextureFormatInfo_9471))
                 } else {
-                    if (Bzip2DecoderState.anIntArray543 == null) Bzip2DecoderState.anIntArray543 = IntArray(16384)
-                    val is_18_ = Bzip2DecoderState.anIntArray543!!
+                    if (anIntArray543 == null) anIntArray543 = IntArray(16384)
+                    val is_18_ = anIntArray543!!
                     for (i_19_ in -128..-1) {
                         for (i_20_ in -128..-1) {
                             if (`is`[i_10_].toInt() == 0) {
@@ -87,9 +87,9 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                         i_10_ += -128 + aVideoStreamDecoder_1560.anInt4113
                     }
                     if (anInterface18_Impl3_1556 == null) {
-                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3839(128, 128, -15137, false, Bzip2DecoderState.anIntArray543)
+                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3839(128, 128, -15137, false, anIntArray543)
                         anInterface18_Impl3_1556!!.method66(false, false, i + 38451)
-                    } else anInterface18_Impl3_1556!!.method68(128, i + 35572, (Bzip2DecoderState.anIntArray543), 0, 0, 128, 0, 128)
+                    } else anInterface18_Impl3_1556!!.method68(128, i + 35572, (anIntArray543), 0, 0, 128, 0, 128)
                 }
             }
         }
@@ -238,6 +238,10 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                 ModelBatchBase.aLruByteCache_1894!!.method578(2, i)
                 if (i_23_ != 0) method876(51, 108)
             }
+        }
+        var anIntArray543: IntArray? = null
+        fun method370(bool: Boolean) {
+            anIntArray543 = null
         }
     }
 }

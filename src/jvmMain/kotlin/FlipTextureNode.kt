@@ -151,9 +151,9 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                         i_29_ -= SceneEntityModel.anInt6411
                                         i_30_ -= ModelDefinitionCache.anInt2872
                                         if (BoxBlurTextureNode.Companion.anInt9461 > i_29_) i_29_ = BoxBlurTextureNode.Companion.anInt9461
-                                        if (i_30_ < Bzip2DecoderState.anInt558) i_30_ = Bzip2DecoderState.anInt558
+                                        if (i_30_ < DragDropController.anInt558) i_30_ = DragDropController.anInt558
                                         if (class46.anInt709 + i_29_ > ((CalendarUtil.aWidgetComponent_4130!!.anInt709) + BoxBlurTextureNode.Companion.anInt9461)) i_29_ = (-class46.anInt709 + ((BoxBlurTextureNode.Companion.anInt9461) + (CalendarUtil.aWidgetComponent_4130!!.anInt709)))
-                                        if (i_30_ + class46.anInt789 > (CalendarUtil.aWidgetComponent_4130!!.anInt789) + Bzip2DecoderState.anInt558) i_30_ = (-class46.anInt789 + (Bzip2DecoderState.anInt558 - -(CalendarUtil.aWidgetComponent_4130!!.anInt789)))
+                                        if (i_30_ + class46.anInt789 > (CalendarUtil.aWidgetComponent_4130!!.anInt789) + DragDropController.anInt558) i_30_ = (-class46.anInt789 + (DragDropController.anInt558 - -(CalendarUtil.aWidgetComponent_4130!!.anInt789)))
                                         i_24_ = i_29_
                                         i_25_ = i_30_
                                     }

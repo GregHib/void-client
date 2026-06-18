@@ -47,7 +47,7 @@ import EdgeDetectTextureNode.Companion.method3072
 import TimedRecordAccessorB.Companion.method3316
 import CharacterRenderState.Companion.method2780
 import SoundEngineInitializer.method352
-import GlShadowRenderPass.Companion.method3553
+import GlTexture2DRegion.Companion.method3553
 import GlWaterRenderPass.Companion.method3538
 import GlCubemapLightPass.Companion.method3544
 import WorldMapLabel.Companion.method3569

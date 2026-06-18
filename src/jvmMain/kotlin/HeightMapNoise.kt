@@ -1,5 +1,5 @@
 import ObjectSpawnDecoder.method1088
-import GlShadowRenderPass.Companion.method3553
+import GlTexture2DRegion.Companion.method3553
 import MapSceneRenderer.method384
 
 /* Class301 - Decompiled by JODE

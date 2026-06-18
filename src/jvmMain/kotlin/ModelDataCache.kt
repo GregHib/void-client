@@ -1,4 +1,4 @@
-import GlShadowRenderPass.Companion.method3553
+import GlTexture2DRegion.Companion.method3553
 
 /* Class24 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -130,6 +130,11 @@ class GlTexture2DRegion : GlTexture2D {
         @JvmField
         var anInt9942: Int = 0
 
+        var anInt7388: Int = 0
+        fun method3553(bool: Boolean, i: Byte, i_1_: Int) {
+            method1971(-2, LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544), bool, i_1_)
+            anInt7388++
+        }
         @JvmStatic
         fun method1971(i: Int, string: String?, bool: Boolean, i_11_: Int) {
             anInt9942++

@@ -407,8 +407,7 @@ import Tooltip.method3511
 import Tooltip.method3512
 import MapElementManager.method3516
 import RendererType.Companion.method3518
-import GlShadowRenderPass.Companion.method3553
-import GlShadowRenderPass.Companion.method3554
+import GlTexture2DRegion.Companion.method3553
 import GlGroundShaderPass.Companion.method3556
 import GlGroundShaderPass.Companion.method3557
 import GlWaterRenderPass.Companion.method3537
@@ -426,7 +425,6 @@ import GlRenderDevice.Companion.method3968
 import WidgetTextConfig.Companion.method363
 import GlShaderObjectHandle.Companion.method367
 import NpcModelTransform.Companion.method177
-import Bzip2DecoderState.Companion.method370
 import MinimapTileEntry.Companion.method380
 import MapSceneRenderer.method387
 import Js5Archive.Companion.method390
@@ -978,7 +976,7 @@ class Client : GameAppletFrame() {
         IntHashSetStatics.method2366(true)
         method2690(-124)
         method1551()
-        method370(true)
+        TerrainChunkBuilder.method370(true)
         method3202(79.toByte())
         method1886(4908)
         method3204(-112)
@@ -1159,7 +1157,7 @@ class Client : GameAppletFrame() {
         BasicGlRenderPass.method3539((-32).toByte())
         method3541(23.toByte())
         FixedFunctionWaterPass.method3550((-122).toByte())
-        method3554(i + -107)
+        AbstractCameraTransformStatics.method3554(i + -107)
         method553(0)
         RgbNoiseTexture.method564((-54).toByte())
         method1396(25)
@@ -2112,7 +2110,7 @@ class Client : GameAppletFrame() {
                             if (class46 == CalendarUtil.aWidgetComponent_4130) {
                                 ScrollingWidgetComponentNode.aBoolean8386 = true
                                 BoxBlurTextureNode.anInt9461 = i_43_
-                                Bzip2DecoderState.anInt558 = i_44_
+                                DragDropController.anInt558 = i_44_
                             }
                             if (class46.aBoolean682 || class46.anInt765 != 0) {
                                 if (bool && NodeDequeHolder.anInt1565 != 0 && (class46.anObjectArray803 != null)) {

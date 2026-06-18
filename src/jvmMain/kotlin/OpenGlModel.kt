@@ -5,7 +5,6 @@ import Texture2DProvider.Companion.method2259
 import ArchiveResourceProvider.Companion.method2352
 import PcmStreamBuffer.Companion.method2832
 import BlankTextureNode.Companion.method3100
-import Bzip2DecoderState.Companion.method371
 import CachedRgbNoiseTexture.Companion.method565
 import RasterSprite.Companion.method166
 import jaclib.memory.Stream.Companion.floatToRawIntBits
@@ -3626,5 +3625,12 @@ class OpenGlModel : AbstractModel {
         }
 
         var aFloat3943: Float = 0f
+
+        var anInt547: Int = 0
+        fun method371(i: Int, i_4_: Int, i_5_: Int): Boolean {
+            if (i_4_ != 256) return true
+            anInt547++
+            return (i and 0x180) != 0
+        }
     }
 }

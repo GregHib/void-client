@@ -1,6 +1,6 @@
 import SoftwareSpriteRaster.Companion.method960
 import SpriteRgbTextureNode.Companion.method3093
-import Bzip2DecoderState.Companion.method368
+import ParticleTileShape.Companion.method2732
 import kotlin.math.max
 
 /* Class151 - Decompiled by JODE
@@ -73,6 +73,22 @@ class HeadIconRenderer {
             }
             if (SlotBinding.anInt3428 != i_13_) UnusedToStringStub.aClass348_Sub16_Sub3_2718 = null
             SlotBinding.anInt3428 = i_13_
+        }
+
+        var anInt551: Int = 0
+        fun method368(i: Int, i_0_: Int, bool: Boolean, i_1_: Int, js5Archive: Js5Archive?, i_2_: Int, i_3_: Int) {
+            anInt551++
+            if (i_3_ > 0) {
+                KeyboardInputSource.aBoolean4275 = bool
+                SpriteDefinition.anInt7068 = 1
+                ModelDefinition.aJs5Archive_1848 = js5Archive
+                NpcActorEntity.anInt10074 = i_1_
+                GlBufferObject.aClass348_Sub16_Sub3_4743 = null
+                SceneLinkedListNode.anInt3971 = i_2_
+                DirectionPath.anInt1059 = i
+                WaterDetailOptionState.anInt5994 = (NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2844(103.toByte()) / i_3_)
+                if (WaterDetailOptionState.anInt5994 < 1) WaterDetailOptionState.anInt5994 = 1
+            } else method2732(i_2_, i_1_, bool, 123, js5Archive, i)
         }
 
         @JvmStatic

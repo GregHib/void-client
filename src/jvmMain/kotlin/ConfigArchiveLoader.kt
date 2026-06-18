@@ -12,7 +12,7 @@ import SceneObjectEntity.Companion.method2405
 import ActorEntity.Companion.method2478
 import VorbisOggDecoder.Companion.method2972
 import TurbulenceTextureNode.Companion.method3113
-import GlShadowRenderPass.Companion.method3553
+import GlTexture2DRegion.Companion.method3553
 import GlCubemapLightPass.Companion.method3544
 import WidgetComponent.Companion.method427
 import MinimapTriangleDrawer.Companion.method464
