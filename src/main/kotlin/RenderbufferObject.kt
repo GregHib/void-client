@@ -136,7 +136,7 @@ class RenderbufferObject : HashLinkedListNode, Interface9 {
             BackgroundWorkerThread.aClass318_Sub1Array3226 = arrayOfNulls<SceneEntity>(2)
             OverlayColorTable.aClass318_Sub1Array1754 = arrayOfNulls<SceneEntity>(2)
             RemoveRoofsOptionState.aClass318_Sub1Array6066 = arrayOfNulls<SceneEntity>(10000)
-            Class5_Sub1_Sub1.anInt9930 = 0
+            ProportionalScrollbarComponent.anInt9930 = 0
             CutsceneSequenceData.aClass318_Sub1Array3737 = arrayOfNulls<SceneEntity>(5000)
             LoadingScreenImageNode.Companion.anInt9504 = 0
             ModelDataCache.aClass318_Sub1_Sub3Array357 = arrayOfNulls<GroundDecorEntity>(5000)
@@ -147,7 +147,7 @@ class RenderbufferObject : HashLinkedListNode, Interface9 {
             Class71.aClass76_1208 = Class71.aClass76_1210
             if (VoronoiNoiseTextureNode.aBoolean9121) {
                 OverlayColorTable.aBooleanArrayArrayArray1751 = (Array<Array<BooleanArray?>?>(i_1_) { Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) } })
-                Class5_Sub2.aBooleanArrayArrayArray8361 = arrayOfNulls<Array<BooleanArray?>>(i_1_)
+                SolidFillComponent.aBooleanArrayArrayArray8361 = arrayOfNulls<Array<BooleanArray?>>(i_1_)
                 if (NormalMapTextureNode.aSceneLoaderThreadArray9432 != null) method1978()
                 NormalMapTextureNode.aSceneLoaderThreadArray9432 = arrayOfNulls<SceneLoaderThread>(Npc.anInt10503)
                 Class9.aRenderer171!!.method3631((NormalMapTextureNode.aSceneLoaderThreadArray9432)!!.size + 1)

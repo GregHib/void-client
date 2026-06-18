@@ -105,7 +105,7 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
         fun method887(widgetComponent: WidgetComponent?, i: Int, i_5_: Int, i_6_: Int) {
             if (i_6_ == 2147483647) {
                 anInt1589++
-                if (RegionSceneLoader.aWidgetComponent_3701 == null && !Class5_Sub1.aBoolean8335 && (widgetComponent != null && (method141(widgetComponent, ((-79).toByte()).toByte()) != null))) {
+                if (RegionSceneLoader.aWidgetComponent_3701 == null && !ScrollbarComponent.aBoolean8335 && (widgetComponent != null && (method141(widgetComponent, ((-79).toByte()).toByte()) != null))) {
                     RegionSceneLoader.aWidgetComponent_3701 = widgetComponent
                     CalendarUtil.aWidgetComponent_4130 = method141(widgetComponent, ((-117).toByte()).toByte())
                     SceneEntity.anInt6392 = 0

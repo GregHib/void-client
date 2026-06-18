@@ -51,7 +51,7 @@ class SpriteRenderEntry internal constructor(widgetRedrawRegion: WidgetRedrawReg
         }
 
         fun method3281(i: Byte, var_renderer: Renderer) {
-            if (Class5_Sub1.aBoolean8335) method2288(false, var_renderer)
+            if (ScrollbarComponent.aBoolean8335) method2288(false, var_renderer)
             else NativeIndexBuffer.method1077(var_renderer, (-123).toByte())
             anInt9709++
             if (i < 29) method3280(81)

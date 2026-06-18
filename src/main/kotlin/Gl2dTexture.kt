@@ -276,23 +276,23 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
                 MinimapAreaMarkerNode.anInt9701 -= (((-i_23_ + MinimapAreaMarkerNode.anInt9701 shr 3) * BloomGraphicsOptionState.anInt5973 / 1000) + Class367_Sub11.anInt7403) shl 3
                 if (MinimapAreaMarkerNode.anInt9701 < i_23_) MinimapAreaMarkerNode.anInt9701 = i_23_
             }
-            var i_25_ = -Class5.anInt4638 + i_24_
+            var i_25_ = -WorldMapElement.anInt4638 + i_24_
             if (i_25_ > 8192) i_25_ -= 16384
             if (i_25_ < -8192) i_25_ += 16384
             i_25_ = i_25_ shr 3
             if (i_25_ > 0) {
-                Class5.anInt4638 += (Class367_Sub11.anInt7403 + BloomGraphicsOptionState.anInt5973 * i_25_ / 1000) shl 3
-                Class5.anInt4638 = Class5.anInt4638 and 0x3fff
+                WorldMapElement.anInt4638 += (Class367_Sub11.anInt7403 + BloomGraphicsOptionState.anInt5973 * i_25_ / 1000) shl 3
+                WorldMapElement.anInt4638 = WorldMapElement.anInt4638 and 0x3fff
             }
             if (i_25_ < 0) {
-                Class5.anInt4638 -= Class367_Sub11.anInt7403 - -(-i_25_ * BloomGraphicsOptionState.anInt5973 / 1000) shl 3
-                Class5.anInt4638 = Class5.anInt4638 and 0x3fff
+                WorldMapElement.anInt4638 -= Class367_Sub11.anInt7403 - -(-i_25_ * BloomGraphicsOptionState.anInt5973 / 1000) shl 3
+                WorldMapElement.anInt4638 = WorldMapElement.anInt4638 and 0x3fff
             }
-            var i_26_ = i_24_ - Class5.anInt4638
+            var i_26_ = i_24_ - WorldMapElement.anInt4638
             if (i_26_ > 8192) i_26_ -= 16384
             if (i_26_ < -8192) i_26_ += 16384
             MapTileShape.anInt4186 = 0
-            if (i_26_ < 0 && i_25_ > 0 || i_26_ > 0 && i_25_ < 0) Class5.anInt4638 = i_24_
+            if (i_26_ < 0 && i_25_ > 0 || i_26_ > 0 && i_25_ < 0) WorldMapElement.anInt4638 = i_24_
         }
 
         @JvmStatic

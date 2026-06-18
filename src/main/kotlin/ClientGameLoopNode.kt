@@ -19,7 +19,7 @@ import DragDropController.Companion.method2708
 import HslAdjustTextureNode.Companion.method3127
 import ClampTextureNode.Companion.method3150
 import WidgetTextConfig.Companion.method362
-import Class5_Sub2.Companion.method198
+import SolidFillComponent.Companion.method198
 import Class62.method599
 import Class64_Sub2.Companion.method661
 import Class66.method705
@@ -48,7 +48,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                 AbstractMenuEntry.aBoolean1712 = false
                 method2049(67)
             } else {
-                if (!Class5_Sub1.aBoolean8335) method661(95.toByte())
+                if (!ScrollbarComponent.aBoolean8335) method661(95.toByte())
                 for (i_0_ in 0..99) {
                     if (!MapArchiveSource.method2203((-52).toByte())) break
                 }
@@ -223,7 +223,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                                 if (i_16_ == 1) {
                                     Class77.anIntArray1303!![i_17_] = class348_sub42_sub15.anInt9652
                                     ScanlineRasterFiller.aBoolean2469 = ScanlineRasterFiller.aBoolean2469 or GlslEnvMaterialPass.aBooleanArray6270!![i_17_]
-                                    NamedIdEntry.Companion.anIntArray6890!![method1166(31, Class5_Sub1.anInt8352++)] = i_17_
+                                    NamedIdEntry.Companion.anIntArray6890!![method1166(31, ScrollbarComponent.anInt8352++)] = i_17_
                                 } else if (i_16_ == 2) {
                                     GlTextureCubeMap.aStringArray8532!![i_17_] = class348_sub42_sub15.aString9654
                                     RemoveRoofsOptionState.anIntArray6061!![method1166(HslAdjustTextureNode.anInt9385++, 31)] = i_17_

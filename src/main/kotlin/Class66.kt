@@ -58,9 +58,9 @@ import Class57.Companion.method529
 import Class58.Companion.method532
 import Class59.Companion.method544
 import Class59_Sub2_Sub2.Companion.method572
-import Class5_Sub2.Companion.method197
-import Class5_Sub3.Companion.method199
-import Class5_Sub3.Companion.method201
+import SolidFillComponent.Companion.method197
+import SpriteComponent.Companion.method199
+import SpriteComponent.Companion.method201
 import Class62.method596
 import Class62.method599
 import Class64.Companion.method606
@@ -1062,7 +1062,7 @@ object Class66 {
                 SkyboxGradient.anInt3937 = anIntArray1149!![anInt1173 + 7]
                 Class79.anInt1387 = anIntArray1149!![anInt1173 + 8]
                 CharCodeMap.anInt9586 = anIntArray1149!![anInt1173 + 9]
-                Class5_Sub2.anInt8363 = anIntArray1149!![anInt1173 + 10]
+                SolidFillComponent.anInt8363 = anIntArray1149!![anInt1173 + 10]
                 CameraRotationStub.aJs5Archive_322!!.method421(false, HudTabPanel.anInt2996)
                 CameraRotationStub.aJs5Archive_322!!.method421(false, CombineTextureNode.anInt9231)
                 CameraRotationStub.aJs5Archive_322!!.method421(false, ProjectedGroundDecor.anInt10257)
@@ -1929,7 +1929,7 @@ object Class66 {
                         else {
                             ModelBatchBase.aBoolean1899 = true
                             val class348_sub47 = method2148((TheoraVideoStream.aFontMetaRef_9034), (TheoraVideoStream.aClass77_9029), -115)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(101.toByte(), Class5_Sub1.anInt8349)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(101.toByte(), ScrollbarComponent.anInt8349)
                             InterfaceComponentGroup.method3243(118, class348_sub47)
                             anIntArray1149!![anInt1173++] = 0
                             return

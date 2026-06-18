@@ -4,7 +4,7 @@ import Class59.Companion.method544
 /* Class5_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class5_Sub3 internal constructor(js5Archive: Js5Archive?, js5Archive_4_: Js5Archive, class369_sub1: WorldMapAreaLabel?) : Class5(js5Archive, js5Archive_4_, class369_sub1) {
+class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4_: Js5Archive, class369_sub1: WorldMapAreaLabel?) : WorldMapElement(js5Archive, js5Archive_4_, class369_sub1) {
     private var aAbstractModelRenderer_8366: AbstractModelRenderer? = null
     public override fun method178(i: Int, bool: Boolean, i_0_: Byte, i_1_: Int) {
         if (i_0_ >= -6) method202(-4, null)
@@ -147,7 +147,7 @@ class Class5_Sub3 internal constructor(js5Archive: Js5Archive?, js5Archive_4_: J
             do {
                 try {
                     anInt8375++
-                    if (i == 6 && !Class5_Sub1.Companion.aBoolean8335) {
+                    if (i == 6 && !ScrollbarComponent.Companion.aBoolean8335) {
                         class348_sub42_sub12!!.method2715(111.toByte())
                         Class73.anInt4776--
                         if (class348_sub42_sub12.aBoolean9611) {

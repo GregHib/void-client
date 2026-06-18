@@ -18,7 +18,7 @@ import SourceRowTextureNode.Companion.method3058
 import AsyncResourceRequest.Companion.method3254
 import MapSceneRenderer.method388
 import Class58.Companion.method536
-import Class5_Sub2.Companion.method192
+import SolidFillComponent.Companion.method192
 import Class75_Sub1.method770
 import Class87.Companion.method837
 import Class89.Companion.method850

@@ -72,7 +72,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
         fun method1248(i: Int): Array<ScreenAnchorAlignment?> {
             anInt4933++
             if (i < 11) aCircleRasterizer_4938 = null
-            return (arrayOf<ScreenAnchorAlignment?>(Class5_Sub1.aScreenAnchorAlignment_8344, SoftwareSpriteRaster.aScreenAnchorAlignment_1620, ProjectileFactory.aScreenAnchorAlignment_2893))
+            return (arrayOf<ScreenAnchorAlignment?>(ScrollbarComponent.aScreenAnchorAlignment_8344, SoftwareSpriteRaster.aScreenAnchorAlignment_1620, ProjectileFactory.aScreenAnchorAlignment_2893))
         }
 
         @JvmStatic

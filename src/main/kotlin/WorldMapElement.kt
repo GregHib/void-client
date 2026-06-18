@@ -1,7 +1,7 @@
 /* Class5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class5(js5Archive: Js5Archive?, js5Archive_15_: Js5Archive, worldMapLabel: WorldMapLabel?) : Interface1 {
+abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archive, worldMapLabel: WorldMapLabel?) : Interface1 {
     private var anInt4630 = 0
     private val aJs5Archive_4631: Js5Archive = js5Archive_15_
     @JvmField

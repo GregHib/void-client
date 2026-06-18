@@ -28,7 +28,7 @@ object ModelDataCache {
     @JvmStatic
     fun method297(bool: Boolean) {
         if (bool != false) aClass60_355 = null
-        Class5.aClass60_4636!!.method590(0)
+        WorldMapElement.aClass60_4636!!.method590(0)
         anInt356++
     }
 

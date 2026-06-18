@@ -41,7 +41,7 @@ class FloatBuffer internal constructor(i: Int) : Buffer(i) {
 
         fun method3398(bool: Boolean, `is`: Array<Array<ByteArray?>?>?, i: Int, i_0_: Byte, i_1_: Int, i_2_: Int, bool_3_: Boolean) {
             val i_4_ = if (bool) 1 else 0
-            Class5_Sub1_Sub1.anInt9930 = 0
+            ProportionalScrollbarComponent.anInt9930 = 0
             LoadingScreenImageNode.anInt9504 = 0
             RandomAccessFileOnDisk.anInt3049++
             if ((i_2_ and 0x2) == 0) {
@@ -49,7 +49,7 @@ class FloatBuffer internal constructor(i: Int) : Buffer(i) {
                 while (class318_sub1 != null) {
                     if (!method2778(class318_sub1, bool, `is`, i, i_0_)) {
                         method4001(class318_sub1)
-                        if (class318_sub1.anInt6389 != -1) RemoveRoofsOptionState.aClass318_Sub1Array6066!![Class5_Sub1_Sub1.anInt9930++] = class318_sub1
+                        if (class318_sub1.anInt6389 != -1) RemoveRoofsOptionState.aClass318_Sub1Array6066!![ProportionalScrollbarComponent.anInt9930++] = class318_sub1
                     }
                     class318_sub1 = class318_sub1.aClass318_Sub1_6379
                 }
@@ -73,7 +73,7 @@ class FloatBuffer internal constructor(i: Int) : Buffer(i) {
                             if (class318_sub1.anInt6389 != -1) CutsceneSequenceData.aClass318_Sub1Array3737!![LoadingScreenImageNode.anInt9504++] = class318_sub1
                         } else {
                             method4001(class318_sub1)
-                            if (class318_sub1.anInt6389 != -1) RemoveRoofsOptionState.aClass318_Sub1Array6066!![Class5_Sub1_Sub1.anInt9930++] = class318_sub1
+                            if (class318_sub1.anInt6389 != -1) RemoveRoofsOptionState.aClass318_Sub1Array6066!![ProportionalScrollbarComponent.anInt9930++] = class318_sub1
                         }
                     }
                     class318_sub1 = class318_sub1.aClass318_Sub1_6379
@@ -84,15 +84,15 @@ class FloatBuffer internal constructor(i: Int) : Buffer(i) {
                             OpenGlTerrainTile.method4001(ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!)
                             if ((ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!.anInt6389) != -1) {
                                 if (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!.method2377(122.toByte())) CutsceneSequenceData.aClass318_Sub1Array3737!![LoadingScreenImageNode.anInt9504++] = (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_])
-                                else RemoveRoofsOptionState.aClass318_Sub1Array6066!![Class5_Sub1_Sub1.anInt9930++] = (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_])
+                                else RemoveRoofsOptionState.aClass318_Sub1Array6066!![ProportionalScrollbarComponent.anInt9930++] = (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_])
                             }
                         }
                     }
                 }
             }
-            if (Class5_Sub1_Sub1.anInt9930 > 0) {
-                ParticleSystemState.method1295(RemoveRoofsOptionState.aClass318_Sub1Array6066!!, 0, Class5_Sub1_Sub1.anInt9930 - 1)
-                for (i_6_ in 0..<Class5_Sub1_Sub1.anInt9930) MinimapRectClipper.method227(RemoveRoofsOptionState.aClass318_Sub1Array6066!![i_6_]!!, true, bool_3_)
+            if (ProportionalScrollbarComponent.anInt9930 > 0) {
+                ParticleSystemState.method1295(RemoveRoofsOptionState.aClass318_Sub1Array6066!!, 0, ProportionalScrollbarComponent.anInt9930 - 1)
+                for (i_6_ in 0..<ProportionalScrollbarComponent.anInt9930) MinimapRectClipper.method227(RemoveRoofsOptionState.aClass318_Sub1Array6066!![i_6_]!!, true, bool_3_)
             }
             if (ProjectedGroundDecor.aBoolean10221) Class9.aRenderer171!!.method3642(0, null)
             if ((i_2_ and 0x2) == 0) {

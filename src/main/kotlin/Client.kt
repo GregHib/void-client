@@ -449,7 +449,7 @@ import Js5Archive.Companion.method390
 import Js5Archive.Companion.method395
 import NanoTimer.Companion.method445
 import SpriteRenderable.Companion.method453
-import Class5.Companion.method180
+import WorldMapElement.Companion.method180
 import Class50.Companion.method458
 import Class50_Sub1.Companion.method460
 import Class50_Sub4.Companion.method471
@@ -469,11 +469,11 @@ import Class59_Sub1_Sub2.Companion.method561
 import Class59_Sub2_Sub1.Companion.method568
 import Class59_Sub2_Sub2.Companion.method570
 import Class59_Sub2_Sub2.Companion.method574
-import Class5_Sub1.Companion.method189
-import Class5_Sub1_Sub1.Companion.method190
-import Class5_Sub2.Companion.method191
-import Class5_Sub2.Companion.method193
-import Class5_Sub2.Companion.method198
+import ScrollbarComponent.Companion.method189
+import ProportionalScrollbarComponent.Companion.method190
+import SolidFillComponent.Companion.method191
+import SolidFillComponent.Companion.method193
+import SolidFillComponent.Companion.method198
 import Class6.Companion.method207
 import Class6.Companion.method208
 import Class60.Companion.method584
@@ -1422,7 +1422,7 @@ class Client : GameAppletFrame() {
                 TurbulenceTextureNode.anInt9313 = ResourceLoaderThread.anInt3918
                 RegionSceneLoader.anInt3699--
             }
-            if (!Class5_Sub1.aBoolean8335) method661(111.toByte())
+            if (!ScrollbarComponent.aBoolean8335) method661(111.toByte())
             for (i_95_ in 0..99) {
                 if (!MapArchiveSource.method2203((-85).toByte())) break
             }
@@ -2083,7 +2083,7 @@ class Client : GameAppletFrame() {
                                 HashLinkedListNode.anInt7059 = 0
                                 ParticleEmitterFactory.aBoolean3174 = false
                                 WorldMapScene.aBoolean3103 = false
-                                if (!Class5_Sub1.aBoolean8335) method661(111.toByte())
+                                if (!ScrollbarComponent.aBoolean8335) method661(111.toByte())
                             }
                             var bool: Boolean
                             bool = (GlTexture1D.aInputTracker_8552!!.method3597(true) + i_51_) >= i_45_ && GlTexture1D.aInputTracker_8552!!.method3594(89.toByte()) + i_52_ >= i_46_ && (GlTexture1D.aInputTracker_8552!!.method3597(true) + i_51_) < i_47_ && GlTexture1D.aInputTracker_8552!!.method3594(74.toByte()) + i_52_ < i_48_
@@ -2091,7 +2091,7 @@ class Client : GameAppletFrame() {
                                 if (class46.anInt719 >= 0) Tooltip.anInt4458 = class46.anInt719
                                 else if (class46.aBoolean776) Tooltip.anInt4458 = -1
                             }
-                            if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) ParticleDetailOptionState.method1797(i_41_ - i_44_, i_40_ - i_43_, class46, (-95).toByte())
+                            if (!ScrollbarComponent.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) ParticleDetailOptionState.method1797(i_41_ - i_44_, i_40_ - i_43_, class46, (-95).toByte())
                             var bool_53_ = false
                             if (GlTexture1D.aInputTracker_8552!!.method3595(-91) && bool) bool_53_ = true
                             var bool_54_ = false
@@ -2143,7 +2143,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray803
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
-                                if (RegionSceneLoader.aWidgetComponent_3701 != null || Class5_Sub1.aBoolean8335 || ((class46.anInt765 != TimedRecordAccessor.anInt7102) && HashLinkedListNode.anInt7059 > 0)) {
+                                if (RegionSceneLoader.aWidgetComponent_3701 != null || ScrollbarComponent.aBoolean8335 || ((class46.anInt765 != TimedRecordAccessor.anInt7102) && HashLinkedListNode.anInt7059 > 0)) {
                                     bool_54_ = false
                                     bool_53_ = false
                                     bool = false
@@ -2153,7 +2153,7 @@ class Client : GameAppletFrame() {
                                         AbstractTileShape.aWidgetComponent_6561 = class46
                                         if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2292(123, FacingDirectionNode.aRenderer6654!!, class46.anInt789)
                                         if (class46.anInt765 == RangedGraphicsOptionState.anInt5943) {
-                                            if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
+                                            if (!ScrollbarComponent.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
                                                 SceneryDetailOptionState.method1823(FacingDirectionNode.aRenderer6654!!, i_38_, i_39_, (-50).toByte())
                                                 var class318_sub6 = (InputStream_Sub2.aDoublyLinkedNodeList_83!!.method1872(8) as SceneEffectMarker?)
                                                 while (class318_sub6 != null) {
@@ -2168,7 +2168,7 @@ class Client : GameAppletFrame() {
                                         }
                                     }
                                     if (class46.anInt765 == BufferToggleState.anInt3717) {
-                                        if (class46.method425((FacingDirectionNode.aRenderer6654!!), 3.toByte()) != null && (KeyboardLayoutCache.anInt3306 == 0 || KeyboardLayoutCache.anInt3306 == 3) && !Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
+                                        if (class46.method425((FacingDirectionNode.aRenderer6654!!), 3.toByte()) != null && (KeyboardLayoutCache.anInt3306 == 0 || KeyboardLayoutCache.anInt3306 == 3) && !ScrollbarComponent.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
                                             var i_58_ = i_40_ - i_43_
                                             var i_59_ = i_41_ - i_44_
                                             val i_60_ = (class46.anIntArray677!![i_59_])
@@ -2345,14 +2345,14 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray764
                                     BufferedOutputStreamWorker.aNodeDeque_2707!!.method1999(class348_sub36, -20180)
                                 }
-                                if (class46.anObjectArray685 != null && (Class5_Sub1.anInt8352 > class46.anInt738)) {
-                                    if (class46.anIntArray818 == null || (Class5_Sub1.anInt8352 - class46.anInt738) > 32) {
+                                if (class46.anObjectArray685 != null && (ScrollbarComponent.anInt8352 > class46.anInt738)) {
+                                    if (class46.anIntArray818 == null || (ScrollbarComponent.anInt8352 - class46.anInt738) > 32) {
                                         val class348_sub36 = WidgetActionEntry()
                                         class348_sub36.aWidgetComponent_6989 = class46
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray685
                                         HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     } else {
-                                        while_224_@ for (i_74_ in class46.anInt738..<Class5_Sub1.anInt8352) {
+                                        while_224_@ for (i_74_ in class46.anInt738..<ScrollbarComponent.anInt8352) {
                                             val i_75_ = (NamedIdEntry.anIntArray6890!![i_74_ and 0x1f])
                                             for (i_76_ in (class46.anIntArray818!!).indices) {
                                                 if ((class46.anIntArray818!![i_76_]) == i_75_) {
@@ -2365,7 +2365,7 @@ class Client : GameAppletFrame() {
                                             }
                                         }
                                     }
-                                    class46.anInt738 = Class5_Sub1.anInt8352
+                                    class46.anInt738 = ScrollbarComponent.anInt8352
                                 }
                                 if (class46.anObjectArray708 != null && (HslAdjustTextureNode.anInt9385 > class46.anInt814)) {
                                     if (class46.anIntArray831 == null || (HslAdjustTextureNode.anInt9385 - class46.anInt814) > 32) {
@@ -2512,7 +2512,7 @@ class Client : GameAppletFrame() {
                                 if (class46.aWidgetComponentArray798 != null) Companion.method107(class46.aWidgetComponentArray798!!, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)
                                 val class348_sub41 = ((MinimapSpriteRenderer.aHashtable_4915!!.method3480(class46.anInt830.toLong(), -6008)) as RegionSceneShifter?)
                                 if (class348_sub41 != null) {
-                                    if ((HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) && (class348_sub41.anInt7053) == 0 && !Class5_Sub1.aBoolean8335 && bool && !TextureCubeProvider.aBoolean6327) method661(105.toByte())
+                                    if ((HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) && (class348_sub41.anInt7053) == 0 && !ScrollbarComponent.aBoolean8335 && bool && !TextureCubeProvider.aBoolean6327) method661(105.toByte())
                                     method1373(class348_sub41.anInt7050, i_43_, i_45_, i_47_, i_39_, i_38_, -1391, i_40_, i_48_, i_44_, i_41_, i_46_)
                                 }
                             }

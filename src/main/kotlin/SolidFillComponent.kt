@@ -1,7 +1,7 @@
 /* Class5_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class5_Sub2 internal constructor(js5Archive: Js5Archive, js5Archive_12_: Js5Archive, class369_sub2: WorldMapTextLabel) : Class5(js5Archive, js5Archive_12_, class369_sub2) {
+class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive_12_: Js5Archive, class369_sub2: WorldMapTextLabel) : WorldMapElement(js5Archive, js5Archive_12_, class369_sub2) {
     public override fun method178(i: Int, bool: Boolean, i_16_: Byte, i_17_: Int) {
         FacingDirectionNode.aRenderer6654!!.method3628(-2 + i, i_17_, 4 + this.aWorldMapLabel_4635!!.anInt4971, 2 + this.aWorldMapLabel_4635!!.anInt4963, ((this.aWorldMapLabel_4635 as WorldMapTextLabel).anInt8585), 0)
         anInt8360++

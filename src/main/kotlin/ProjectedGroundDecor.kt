@@ -853,7 +853,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             FacingDirectionNode.aBooleanArrayArray6656 = null
             RefCountedHandle.anIntArray2272 = null
             OverlayColorTable.aBooleanArrayArrayArray1751 = null
-            Class5_Sub2.aBooleanArrayArrayArray8361 = null
+            SolidFillComponent.aBooleanArrayArrayArray8361 = null
             LocalizedText.method2062(89.toByte())
             if (ModelDataCache.aClass318_Sub1_Sub3Array357 != null) {
                 for (i in 0..<Class86.anInt1477) ModelDataCache.aClass318_Sub1_Sub3Array357!![i] = null
@@ -864,7 +864,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             OverlayColorTable.aClass318_Sub1Array1754 = null
             if (RemoveRoofsOptionState.aClass318_Sub1Array6066 != null) {
                 for (i in RemoveRoofsOptionState.aClass318_Sub1Array6066!!.indices) RemoveRoofsOptionState.aClass318_Sub1Array6066!![i] = null
-                Class5_Sub1_Sub1.anInt9930 = 0
+                ProportionalScrollbarComponent.anInt9930 = 0
             }
             if (CutsceneSequenceData.aClass318_Sub1Array3737 != null) {
                 for (i in CutsceneSequenceData.aClass318_Sub1Array3737!!.indices) CutsceneSequenceData.aClass318_Sub1Array3737!![i] = null

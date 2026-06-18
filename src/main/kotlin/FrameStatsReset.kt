@@ -86,7 +86,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FogOptionState.anInt6055 = 0
             GlRenderDevice.anInt9897 = 0
             DisplaceTextureNode.anInt9137 = 0
-            Class5_Sub2.anInt8357 = 0
+            SolidFillComponent.anInt8357 = 0
             MapTileShape.anInt4195 = 0
             Class367_Sub8.anInt7349 = 0
             HashLinkedListNode.anInt7064 = 0
@@ -162,7 +162,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64.anInt1132 = 0
             HudTabPanel.anInt2990 = 0
             StringValueNode.anInt7114 = 0
-            Class5_Sub1.anInt8337 = 0
+            ScrollbarComponent.anInt8337 = 0
             ShortKeyNode.anInt6910 = 0
             MapRegionLoaderThread.anInt4203 = 0
             MinimapPositionState.anInt3836 = 0
@@ -176,7 +176,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeTerrainTile.anInt8304 = 0
             Gl3dTexture.anInt8625 = 0
             NpcReference.anInt6858 = 0
-            Class5_Sub3.anInt8367 = 0
+            SpriteComponent.anInt8367 = 0
             MouseInputTracker.anInt7434 = 0
             SequencedActorEntity.anInt10102 = 0
             OpenGlRenderer.anInt7552 = 0
@@ -225,7 +225,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ProjectionCameraTransform.anInt5773 = 0
             ColourKeyTextureNode.anInt9350 = 0
             CacheArchiveIndexLoader.anInt461 = 0
-            Class5_Sub3.anInt8377 = 0
+            SpriteComponent.anInt8377 = 0
             NodeDeque.anInt3330 = 0
             ColourKeyTextureNode.anInt9353 = 0
             ParticleConfigParser.anInt3824 = 0
@@ -234,7 +234,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WarpTextureNode.anInt9425 = 0
             OpenGlRenderer.anInt7625 = 0
             ColorThresholdEffect.anInt9087 = 0
-            Class5_Sub1.anInt8334 = 0
+            ScrollbarComponent.anInt8334 = 0
             OpenGlTerrainTile.anInt8244 = 0
             Gl2dTexture.anInt8617 = 0
             ModelDefinition.anInt1861 = 0
@@ -294,7 +294,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class88.anInt1504 = 0
             DoublyLinkedNodeList.anInt3163 = 0
             FrameBufferObject.anInt4867 = 0
-            Class5_Sub1.anInt8351 = 0
+            ScrollbarComponent.anInt8351 = 0
             OutputStream_Sub2.anInt105 = 0
             ModelFacePriorityNode.anInt1873 = 0
             ModelKeyBuilder.anInt6755 = 0
@@ -345,7 +345,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Crc64Hashable.anInt4994 = 0
             Class95.anInt1539 = 0
             ModelDefinitionCache.anInt2867 = 0
-            Class5_Sub1_Sub1.anInt9928 = 0
+            ProportionalScrollbarComponent.anInt9928 = 0
             FrameBufferObject.anInt4871 = 0
             DetailLevelOptionState.anInt6117 = 0
             TileRenderState.anInt4229 = 0
@@ -364,7 +364,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ItemModelDefinition.anInt427 = 0
             Client.anInt5183 = 0
             IndexedSprite.anInt5198 = 0
-            Class5_Sub2.anInt8364 = 0
+            SolidFillComponent.anInt8364 = 0
             ModelHeaderCache.anInt3280 = 0
             TimedTileQueueEntry.anInt9647 = 0
             FrameBufferObject.anInt4887 = 0
@@ -379,7 +379,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ProducerImageSurface.anInt9070 = i
             SoundEnvelope.anInt2748 = 0
             SequencedGroundDecor.anInt10059 = 0
-            Class5.anInt4629 = 0
+            WorldMapElement.anInt4629 = 0
             LocalizedText.anInt3482 = 0
             Class60.anInt1097 = 0
             LocTypeDefinition.anInt4013 = 0
@@ -539,7 +539,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             CameraOrModelTransform.anInt4161 = 0
             MidiSequencePlayer.anInt8911 = 0
             RectangleRegion.anInt1947 = 0
-            Class5_Sub3.anInt8376 = 0
+            SpriteComponent.anInt8376 = 0
             GlTexture.anInt4857 = 0
             OpenGlRenderer.anInt7544 = 0
             SplashImageLoadable.anInt4691 = 0
@@ -642,7 +642,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Gl2dTexture.anInt8618 = 0
             BufferedMessageQueue.anInt3589 = 0
             ItemDefinition.anInt2829 = 0
-            Class5_Sub1.anInt8345 = 0
+            ScrollbarComponent.anInt8345 = 0
             AbstractCameraTransform.anInt1594 = 0
             LoadingScreenImageNode.anInt9500 = 0
             Buffer.anInt7170 = 0
@@ -761,7 +761,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Js5Archive.anInt627 = 0
             GlRenderDevice.anInt9850 = 0
             HardKeyedCacheEntryReference.anInt10439 = 0
-            Class5.anInt4634 = 0
+            WorldMapElement.anInt4634 = 0
             LinkedNodeListIterator.anInt1654 = 0
             HeadIconRenderer.anInt2065 = 0
             HashLinkedListNode.anInt7062 = 0
@@ -770,7 +770,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ScrollingWidgetComponentNode.anInt8382 = 0
             TerrainTileShape.anInt8803 = 0
             SeqDefinitionCache.anInt3346 = 0
-            Class5.anInt4628 = 0
+            WorldMapElement.anInt4628 = 0
             Gl2dTexture.anInt8610 = 0
             SoundChannelMixer.anInt3600 = 0
             WaterMaterialPass.anInt6230 = 0
@@ -810,7 +810,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TextureQualityOptionState.anInt6003 = 0
             MenuActionNode.anInt6777 = 0
             WorldMapScene.anInt3118 = 0
-            Class5_Sub2.anInt8359 = 0
+            SolidFillComponent.anInt8359 = 0
             SceneLinkedListNode.anInt3975 = 0
             NativeRenderer.anInt7956 = 0
             WidgetTextConfig.anInt512 = 0
@@ -820,7 +820,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LocConfigModelBuilder.anInt4505 = 0
             SpriteLoadValidator.anInt4790 = 0
             SpriteTextureNode.anInt9236 = 0
-            Class5_Sub3.anInt8375 = 0
+            SpriteComponent.anInt8375 = 0
             AbstractTileShape.anInt6546 = 0
             GlIndexBufferArb.anInt8500 = 0
             ScriptCompilerThread.anInt1735 = 0
@@ -954,7 +954,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ProjectedGroundDecor.anInt10251 = 0
             LocalizedTextTriple.anInt3757 = 0
             SequencedActorEntity.anInt10108 = 0
-            Class5_Sub3.anInt8372 = 0
+            SpriteComponent.anInt8372 = 0
             MouseInputTracker.anInt7428 = 0
             SimpleBinaryOptionState.anInt6071 = 0
             Player.anInt10523 = 0
@@ -1151,7 +1151,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class55.anInt1000 = 0
             ParticleAmountConfig.anInt2126 = 0
             Js5Archive.anInt654 = 0
-            Class5_Sub3.anInt8374 = 0
+            SpriteComponent.anInt8374 = 0
             CollisionMapRegion.anInt1717 = 0
             OpenGlRenderer.anInt7679 = 0
             WidgetDefinition.anInt240 = 0
@@ -1342,7 +1342,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MapRegionLoaderThread.anInt4199 = 0
             Player.anInt10534 = 0
             Class52.anInt4897 = 0
-            Class5_Sub2.anInt8355 = 0
+            SolidFillComponent.anInt8355 = 0
             SpriteRenderable.anInt4721 = 0
             GlBufferObject.anInt4735 = 0
             VoronoiNoiseTextureNode.anInt9128 = 0
@@ -1468,7 +1468,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SocketGameConnection.anInt5838 = 0
             WorldMapRenderer.anInt4675 = 0
             NativeRenderer.anInt8058 = 0
-            Class5_Sub2.anInt8354 = 0
+            SolidFillComponent.anInt8354 = 0
             CipheredPacketBuffer.anInt9765 = 0
             Class64_Sub2.anInt5450 = 0
             ScrollTexMaterialPass.anInt6279 = 0
@@ -1881,13 +1881,13 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Buffer.anInt7140 = 0
             SequencedGroundDecor.anInt10049 = 0
             SimpleToggleOptionState.anInt5888 = 0
-            Class5_Sub1.anInt8336 = 0
+            ScrollbarComponent.anInt8336 = 0
             ServerConnectionInfo.anInt2141 = 0
             ModelGroundDecor.anInt10016 = 0
             PerlinNoiseTextureNode.anInt9148 = 0
             NativeRenderer.anInt8071 = 0
             NativeRenderer.anInt7899 = 0
-            Class5_Sub1.anInt8346 = 0
+            ScrollbarComponent.anInt8346 = 0
             MapSceneDefLoader.anInt2487 = 0
             ProceduralTextureGraph.anInt9522 = 0
             GlShaderProgramHandle.anInt4180 = 0
@@ -1969,7 +1969,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlTerrainTile.anInt8263 = 0
             Buffer.anInt7189 = 0
             LinkedNodeListIterator.anInt1649 = 0
-            Class5_Sub3.anInt8373 = 0
+            SpriteComponent.anInt8373 = 0
             GradientLookupEffect.anInt9192 = 0
             Class55.anInt996 = 0
             ProducerImageSurface.anInt9079 = 0
@@ -2149,7 +2149,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ConfigVarProgress.anInt4825 = 0
             Js5Archive.anInt645 = 0
             LocDefinitionCache.anInt3448 = 0
-            Class5_Sub1.anInt8341 = 0
+            ScrollbarComponent.anInt8341 = 0
             GlSpriteRenderer.anInt8435 = 0
             Js5Archive.anInt630 = 0
             ConfigValueProvider.anInt4909 = 0
@@ -2272,7 +2272,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ClanChatRequestSender.anInt3645 = 0
             HuffmanCodec.anInt3768 = 0
             ShadowQualityOptionState.anInt6007 = 0
-            Class5_Sub2.anInt8362 = 0
+            SolidFillComponent.anInt8362 = 0
             MidiSequencePlayer.anInt8917 = 0
             NpcActorEntity.anInt10080 = 0
             Buffer.anInt7185 = 0
@@ -2441,7 +2441,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GameDisplayManager.anInt2839 = 0
             BoxedIntHolder.anInt2966 = 0
             NpcActorEntity.anInt10063 = 0
-            Class5.anInt4627 = 0
+            WorldMapElement.anInt4627 = 0
             ScreenAnchorAlignment.anInt2879 = 0
             RsaPacketDecoder.anInt4214 = 0
             ConfigDefinitionLoader.anInt2088 = 0
@@ -2632,7 +2632,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlTexture.anInt4852 = 0
             ServerConnectionInfo.anInt2142 = 0
             CacheArchiveIndex.anInt1776 = 0
-            Class5_Sub2.anInt8353 = 0
+            SolidFillComponent.anInt8353 = 0
             NativeRenderer.anInt7952 = 0
             WidgetComponent.anInt827 = 0
             SequencedGroundDecor.anInt10061 = 0
@@ -2727,7 +2727,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             HeapInfoRecord.anInt4933 = 0
             SphereMapMaterialPass.anInt6314 = 0
             Npc.anInt10511 = 0
-            Class5_Sub3.anInt8369 = 0
+            SpriteComponent.anInt8369 = 0
             WallEntity.anInt8778 = 0
             ModelTransformParams.anInt4318 = 0
             Class90.anInt1513 = 0
@@ -2808,7 +2808,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class51.anInt866 = 0
             SceneTilePlaneManager.anInt232 = 0
             VarpStore.anInt5075 = 0
-            Class5_Sub1.anInt8340 = 0
+            ScrollbarComponent.anInt8340 = 0
             WorldMapIconLabel.anInt8594 = 0
             SoundChannelMixer.anInt3599 = 0
             Class50_Sub1.anInt5210 = 0
@@ -3163,7 +3163,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub3.anInt5549 = 0
             GlVertexBufferArb.anInt8486 = 0
             HeapInfoRecord.anInt4941 = 0
-            Class5_Sub2.anInt8358 = 0
+            SolidFillComponent.anInt8358 = 0
             Class52.anInt4894 = 0
             PlayerAppearanceUpdateDecoder.anInt4539 = 0
             AsyncTaskHandle.anInt2573 = 0
@@ -3286,7 +3286,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SceneObjectAnimator.anInt3087 = 0
             ConfigFlagUtil.anInt3229 = 0
             NativeRenderer.anInt8030 = 0
-            Class5.anInt4641 = 0
+            WorldMapElement.anInt4641 = 0
             SkeletonSequenceLoader.anInt3877 = 0
             SocketStreamWorker.anInt2647 = 0
             WorldMapScene.anInt3112 = 0
@@ -3631,7 +3631,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub2.anInt5521 = 0
             ParameterizedText.anInt9563 = 0
             CacheEntryReference.anInt9551 = 0
-            Class5.anInt4633 = 0
+            WorldMapElement.anInt4633 = 0
             Class367_Sub8.anInt7364 = 0
             OpenGlTerrainTile.anInt8249 = 0
             IndexedFileCache.anInt1931 = 0
@@ -3683,7 +3683,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             AudioResampler.anInt2167 = 0
             Class367_Sub2.anInt7287 = 0
             Class76.anInt1280 = 0
-            Class5.anInt4639 = 0
+            WorldMapElement.anInt4639 = 0
             PackedFlagsAccessor.anInt7099 = 0
             Class56.anInt1022 = 0
             CameraSplineNode.anInt6856 = 0
@@ -3721,7 +3721,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WidgetRedrawTracker.anInt3924 = 0
             TileTextureNode.anInt9413 = 0
             SequencedActorEntity.anInt10106 = 0
-            Class5_Sub3.anInt8371 = 0
+            SpriteComponent.anInt8371 = 0
             OpenGlRenderer.anInt7629 = 0
             ModelWallEntity.anInt10147 = 0
             MapElementDecor.anInt10342 = 0
@@ -3774,7 +3774,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class367_Sub1.anInt7283 = 0
             GlslEnvMaterialPass.anInt6263 = 0
             ScanlineRasterFiller.anInt2470 = 0
-            Class5_Sub2.anInt8360 = 0
+            SolidFillComponent.anInt8360 = 0
             TrackedGroundDecor.anInt10390 = 0
             SimpleBinaryOptionState.anInt6072 = 0
             Class97.anInt1555 = 0
@@ -3889,7 +3889,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7525 = 0
             HardCacheEntryReference.anInt10435 = 0
             EmoteDefCache.anInt4089 = 0
-            Class5_Sub1.anInt8348 = 0
+            ScrollbarComponent.anInt8348 = 0
             NpcDefinitionCache.anInt3318 = 0
             CalendarUtil.anInt4136 = 0
             Buffer.anInt7138 = 0

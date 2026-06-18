@@ -65,7 +65,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
             i_1_ = i_1_ shl 3
             i_2_ = i_2_ shl 3
             if (WeaveTextureNode.anInt9282 == 2) {
-                Class5.anInt4638 = i_1_
+                WorldMapElement.anInt4638 = i_1_
                 MapTileShape.anInt4186 = i_2_
                 MinimapAreaMarkerNode.anInt9701 = i
             }

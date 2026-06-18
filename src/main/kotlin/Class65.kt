@@ -86,7 +86,7 @@ class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
                     if (i == 1002) Class66.method701(InvertTextureNode.aBoundsConstraintEntry_9415!!, i_1_, i_0_)
                     else if (i == 1003) Class66.method701(BoundingBoxNode.aBoundsConstraintEntry_6743!!, i_1_, i_0_)
                     else if (i == 1006) Class66.method701(ParticleDetailOptionState.aBoundsConstraintEntry_6018!!, i_1_, i_0_)
-                } else Class66.method701(Class5_Sub2.aBoundsConstraintEntry_8356!!, i_1_, i_0_)
+                } else Class66.method701(SolidFillComponent.aBoundsConstraintEntry_8356!!, i_1_, i_0_)
                 anInt1138++
             }
         }

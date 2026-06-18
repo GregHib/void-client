@@ -2,7 +2,7 @@ import MatrixCameraTransform.Companion.method913
 import SceneTilePlaneManager.method260
 import ModelOrSpriteHolder.Companion.method173
 import WallEntity.Companion.method2485
-import Class5_Sub2.Companion.method191
+import SolidFillComponent.Companion.method191
 import Class66.method705
 
 /* Class347 - Decompiled by JODE

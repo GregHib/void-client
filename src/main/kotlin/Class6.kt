@@ -1,4 +1,4 @@
-import Class5.Companion.method181
+import WorldMapElement.Companion.method181
 
 /* Class6 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

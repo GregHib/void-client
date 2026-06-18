@@ -1,4 +1,4 @@
-import Class5_Sub1.Companion.method188
+import ScrollbarComponent.Companion.method188
 import java.util.*
 
 /* Class178 - Decompiled by JODE

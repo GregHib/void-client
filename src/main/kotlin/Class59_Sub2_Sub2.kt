@@ -69,7 +69,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 class110_sub1.aString5794 = class348_sub49.method3371(-13487)
                 i_2_++
             }
-            Class5_Sub1.anInt8349 = class348_sub49.readInt((-126).toByte())
+            ScrollbarComponent.anInt8349 = class348_sub49.readInt((-126).toByte())
             RenderableGroup.aBoolean5013 = true
         }
 
@@ -133,7 +133,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 if (i_16_ != 1) {
                     if (i_16_ == 2) bool_29_ = SeqDefinitionCache.method2007(i_19_, -125, i_23_, collisionMap!!, i, i_21_, i_24_, i_17_, i_25_, i_20_, i_26_)
                     else bool_29_ = MapAreaDefinition.method1420(i_24_, i_26_, -73, i_21_, i_17_, i, i_20_, i_25_, i_16_, collisionMap!!, i_19_, i_23_)
-                } else bool_29_ = Class5_Sub1.method187(i, i_23_, i_21_, i_26_, i_25_, i_24_, collisionMap!!, i_19_, i_17_, i_20_, 1109655552)
+                } else bool_29_ = ScrollbarComponent.method187(i, i_23_, i_21_, i_26_, i_25_, i_24_, collisionMap!!, i_19_, i_17_, i_20_, 1109655552)
                 val i_30_ = i_20_ - 64
                 val i_31_ = i_21_ + -64
                 var i_32_ = HslAdjustTextureNode.anInt9388

@@ -51,7 +51,7 @@ object DebugOverlayRenderer {
                 }
             }
             Tooltip.aFont_4456!!.method2576(("Dynamic: " + Class86.anInt1477 + "/" + 5000), -256, i_1_ + 45, i, -16777216, -120)
-            Tooltip.aFont_4456!!.method2576(("Total Opaque Onscreen: " + Class5_Sub1_Sub1.anInt9930 + "/" + 10000), -256, i_1_ + 60, i, -16777216, -124)
+            Tooltip.aFont_4456!!.method2576(("Total Opaque Onscreen: " + ProportionalScrollbarComponent.anInt9930 + "/" + 10000), -256, i_1_ + 60, i, -16777216, -124)
             Tooltip.aFont_4456!!.method2576(("Total Trans Onscreen: " + LoadingScreenImageNode.anInt9504 + "/" + 5000), -256, i_1_ + 75, i, -16777216, -111)
             Tooltip.aFont_4456!!.method2576(("Occluders: " + (DetailLevelOptionState.anInt6115 + Class69.anInt1200) + " Active: " + (ParameterizedText.anInt9577)), -256, i_1_ + 90, i, -16777216, -111)
             Tooltip.aFont_4456!!.method2576(("Occluded: Ground:" + TheoraVideoStream.anInt9039 + " Walls: " + StructConfig.anInt562 + " CPs: " + SourceRowTextureNode.anInt9112 + " Pixels: " + NpcDefinition.anInt2946), -256, i_1_ + 105, i, -16777216, -115)

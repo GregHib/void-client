@@ -44,7 +44,7 @@ object Class99 {
     @JvmStatic
     fun method881(class348_sub42_sub13: ContactList, i: Int, bool: Boolean, i_11_: Int) {
         anInt1576++
-        if (Class5_Sub1.aBoolean8335) {
+        if (ScrollbarComponent.aBoolean8335) {
             var i_12_ = 0
             var class348_sub42_sub12 = (class348_sub42_sub13.aLinkedNodeListIterator_9621.method1011(-59) as? ContactEntry)
             while (class348_sub42_sub12 != null) {

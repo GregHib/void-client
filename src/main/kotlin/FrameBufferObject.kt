@@ -259,7 +259,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                                         val i_16_ = (class318_sub1_sub3.aShort8750)
                                     }
                                     if (i_11_ != 0 || i_13_ != 0) {
-                                        var i_17_ = (0x3fff and (-4096 + -Class5.anInt4638 + -(2607.5945876176133 * (atan2(i_11_.toDouble(), i_13_.toDouble()))).toInt()))
+                                        var i_17_ = (0x3fff and (-4096 + -WorldMapElement.anInt4638 + -(2607.5945876176133 * (atan2(i_11_.toDouble(), i_13_.toDouble()))).toInt()))
                                         if (i_17_ > 8192) i_17_ = 16384 + -i_17_
                                         val i_18_: Int
                                         if (i_14_ <= 0) i_18_ = 8192

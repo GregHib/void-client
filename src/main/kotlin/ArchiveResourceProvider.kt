@@ -416,7 +416,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
         fun method2347(i: Byte): String? {
             if (i.toInt() != -119) return null
             anInt6343++
-            if (Class5_Sub1.aBoolean8335 || IntHashSet.aClass348_Sub42_Sub12_3963 == null) return ""
+            if (ScrollbarComponent.aBoolean8335 || IntHashSet.aClass348_Sub42_Sub12_3963 == null) return ""
             if (((IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9601) == null || IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9601!!.length == 0) && (IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9595) != null && IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9595!!.length > 0) return (IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9595)
             return (IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9601)
         }

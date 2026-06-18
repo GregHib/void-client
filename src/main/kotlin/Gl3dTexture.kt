@@ -104,7 +104,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 WidgetRedrawTracker.aIntRange_3925,
                 CombineTextureNode.aIntRange_9225,
                 MapArchiveSource.aIntRange_4798,
-                Class5_Sub2.aIntRange_8365,
+                SolidFillComponent.aIntRange_8365,
                 RenderableEntry.aIntRange_4331,
                 DetailLevelOptionState.aIntRange_6121,
                 TerrainShadowBuilderGl3.aIntRange_7015,

@@ -183,7 +183,7 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
         fun method2410(i: Byte, i_5_: Int, i_6_: Int): Boolean {
             anInt8752++
             if (i >= -21) return true
-            if (!Class5_Sub1.aBoolean8335) return false
+            if (!ScrollbarComponent.aBoolean8335) return false
             val i_7_ = i_6_ shr 16
             val i_8_ = i_6_ and 0xffff
             if (WarpTextureNode.aWidgetComponentArrayArray9427!![i_7_] == null || WarpTextureNode.aWidgetComponentArrayArray9427!![i_7_]!![i_8_] == null) return false

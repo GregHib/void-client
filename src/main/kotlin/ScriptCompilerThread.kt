@@ -152,7 +152,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
             anInt1728++
             if (i != 3112) method1052(121.toByte())
             if (RegionSceneLoader.aWidgetComponent_3701 == null) {
-                if (!Class5_Sub1.aBoolean8335 && IntHashSet.aClass348_Sub42_Sub12_3963 != null) return (IntHashSet.aClass348_Sub42_Sub12_3963!!.anInt9609)
+                if (!ScrollbarComponent.aBoolean8335 && IntHashSet.aClass348_Sub42_Sub12_3963 != null) return (IntHashSet.aClass348_Sub42_Sub12_3963!!.anInt9609)
                 val i_2_ = GlTexture1D.aInputTracker_8552!!.method3597(true)
                 val i_3_ = GlTexture1D.aInputTracker_8552!!.method3594(81.toByte())
                 if (ChatScriptListNode.aBoolean9535) {

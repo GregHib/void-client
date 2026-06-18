@@ -3,7 +3,7 @@ import IndexedSprite.Companion.method163
 /* Class5_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class5_Sub1_Sub1 internal constructor(js5Archive: Js5Archive, js5Archive_0_: Js5Archive, class369_sub3_sub1: WorldMapPolygonIconLabel) : Class5_Sub1(js5Archive, js5Archive_0_, class369_sub3_sub1) {
+class ProportionalScrollbarComponent internal constructor(js5Archive: Js5Archive, js5Archive_0_: Js5Archive, class369_sub3_sub1: WorldMapPolygonIconLabel) : ScrollbarComponent(js5Archive, js5Archive_0_, class369_sub3_sub1) {
     override fun method186(i: Int, i_1_: Int, i_2_: Byte, i_3_: Int, i_4_: Int) {
         if (i_2_ <= 21) aSpriteImageArray9929 = null
         anInt9928++

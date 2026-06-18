@@ -186,7 +186,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
             Class52.anInt4895 = js5Archive.method417("compass", 0)
             if (i > -72) method2161(106.toByte(), 125L)
             PerlinTextureProvider.anInt5814 = js5Archive.method417("otherlevel", 0)
-            Class5_Sub3.anInt8370 = js5Archive.method417("hint_mapedge", 0)
+            SpriteComponent.anInt8370 = js5Archive.method417("hint_mapedge", 0)
         }
 
         @JvmStatic

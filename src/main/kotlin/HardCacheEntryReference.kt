@@ -719,7 +719,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (Class5_Sub2.aIntRange_8365 == ModelVertexColorBuffer.aIntRange_6584) {
+            if (SolidFillComponent.aIntRange_8365 == ModelVertexColorBuffer.aIntRange_6584) {
                 val bool_81_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-29).toByte())
                 var string_82_ = string

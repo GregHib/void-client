@@ -73,7 +73,7 @@ class OutputStream_Sub1 : OutputStream() {
                 val i_9_ = ParticleSystemRenderer.anInt3855
                 val i_10_ = Class59_Sub2_Sub2.anInt8685
                 val i_11_ = MinimapAreaMarkerNode.anInt9701
-                val i_12_ = Class5.anInt4638
+                val i_12_ = WorldMapElement.anInt4638
                 for (i_13_ in 0..4) {
                     if (SpotAnimDefinition.aBooleanArray2374!![i_13_]) {
                         val i_14_ = ((Math.random() * ((CollisionMapAccessor.anIntArray3552!![i_13_] * 2) - -1).toDouble()) - CollisionMapAccessor.anIntArray3552!![i_13_].toDouble() + (sin((GroundDecorSceneEntity.anIntArray9981!![i_13_]).toDouble() * ((MapTileShape.anIntArray4196!![i_13_]).toDouble() / 100.0)) * (ModelHeaderCache.anIntArray3273!![i_13_]).toDouble())).toInt()
@@ -84,7 +84,7 @@ class OutputStream_Sub1 : OutputStream() {
                             } else MinimapAreaMarkerNode.anInt9701 = 1024
                         }
                         if (i_13_ == 0) GlslMaterialPass.anInt6246 += i_14_ shl 2
-                        if (i_13_ == 3) Class5.anInt4638 = 0x3fff and i_14_ + Class5.anInt4638
+                        if (i_13_ == 3) WorldMapElement.anInt4638 = 0x3fff and i_14_ + WorldMapElement.anInt4638
                         if (i_13_ == 1) ParticleSystemRenderer.anInt3855 += i_14_ shl 2
                         if (i_13_ == 2) Class59_Sub2_Sub2.anInt8685 += i_14_ shl 2
                     }
@@ -104,19 +104,19 @@ class OutputStream_Sub1 : OutputStream() {
                 } else {
                     FacingDirectionNode.aRenderer6654!!.ya()
                     val i_15_ = LocTypeDefLoader.anInt2500
-                    if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2293(MapSceneDefLoader.anInt2481 shl 3, FacingDirectionNode.aRenderer6654!!, (-72).toByte(), i_1_, i_0_, i_3_, Class5.anInt4638, MinimapAreaMarkerNode.anInt9701, i_15_, i_2_)
+                    if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2293(MapSceneDefLoader.anInt2481 shl 3, FacingDirectionNode.aRenderer6654!!, (-72).toByte(), i_1_, i_0_, i_3_, WorldMapElement.anInt4638, MinimapAreaMarkerNode.anInt9701, i_15_, i_2_)
                     else FacingDirectionNode.aRenderer6654!!.GA(i_15_)
                 }
                 WorldMapAreaLabel.method3570(false)
                 if (i >= 80) {
-                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(GlslMaterialPass.anInt6246, ParticleSystemRenderer.anInt3855, Class59_Sub2_Sub2.anInt8685, -MinimapAreaMarkerNode.anInt9701 and 0x3fff, -Class5.anInt4638 and 0x3fff, 0x3fff and -MapTileShape.anInt4186)
+                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(GlslMaterialPass.anInt6246, ParticleSystemRenderer.anInt3855, Class59_Sub2_Sub2.anInt8685, -MinimapAreaMarkerNode.anInt9701 and 0x3fff, -WorldMapElement.anInt4638 and 0x3fff, 0x3fff and -MapTileShape.anInt4186)
                     FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                     FacingDirectionNode.aRenderer6654!!.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, Class97.anInt1550 shl 1, Class97.anInt1550 shl 1)
                     CircleHitbox.method319(Class97.anInt1550 shl 1, Class97.anInt1550 shl 1, (-18).toByte(), i_1_ + i_0_ / 2, i_3_ + i_2_ / 2)
-                    SpriteRenderEntry.method3282(0x3fff and -(MinimapAreaMarkerNode.anInt9701), Class59_Sub2_Sub2.anInt8685, ParticleSystemRenderer.anInt3855, 0, -Class5.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -MapTileShape.anInt4186 and 0x3fff)
+                    SpriteRenderEntry.method3282(0x3fff and -(MinimapAreaMarkerNode.anInt9701), Class59_Sub2_Sub2.anInt8685, ParticleSystemRenderer.anInt3855, 0, -WorldMapElement.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -MapTileShape.anInt4186 and 0x3fff)
                     val i_16_ = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
                     if (Class59_Sub1.aBoolean5300) {
-                        CameraRotationStub.method289(-15902, 0x3fff and -Class5.anInt4638, -MapTileShape.anInt4186 and 0x3fff, (-MinimapAreaMarkerNode.anInt9701 and 0x3fff))
+                        CameraRotationStub.method289(-15902, 0x3fff and -WorldMapElement.anInt4638, -MapTileShape.anInt4186 and 0x3fff, (-MinimapAreaMarkerNode.anInt9701 and 0x3fff))
                         SceneProjector.method1634(
                             Class64.anIntArray1127,
                             -2,
@@ -168,7 +168,7 @@ class OutputStream_Sub1 : OutputStream() {
                     CharCodeMap.method3223()
                     GlslMaterialPass.anInt6246 = i_8_
                     MinimapAreaMarkerNode.anInt9701 = i_11_
-                    Class5.anInt4638 = i_12_
+                    WorldMapElement.anInt4638 = i_12_
                     ParticleSystemRenderer.anInt3855 = i_9_
                     Class59_Sub2_Sub2.anInt8685 = i_10_
                     if (SocketGameConnection.aBoolean5840 && ClientMachineInfo.aMediaStreamClient_6601!!.method1902(4) == 0) SocketGameConnection.aBoolean5840 = false

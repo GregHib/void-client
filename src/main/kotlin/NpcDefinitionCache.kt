@@ -126,7 +126,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         fun method1987(i: Int) {
             val i_12_ = 81 % ((i - -70) / 35)
             anInt3313++
-            if (!Class5_Sub1.aBoolean8335) ChatScriptListNode.aBoolean9535 = ((SoundCacheState.anInt4143 != -1 && Class73.anInt4776 >= SoundCacheState.anInt4143) || (HardCacheEntryReference.anInt10432 < 16 * Class73.anInt4776 - -(if (!Class71.aBoolean1211) 22 else 26)))
+            if (!ScrollbarComponent.aBoolean8335) ChatScriptListNode.aBoolean9535 = ((SoundCacheState.anInt4143 != -1 && Class73.anInt4776 >= SoundCacheState.anInt4143) || (HardCacheEntryReference.anInt10432 < 16 * Class73.anInt4776 - -(if (!Class71.aBoolean1211) 22 else 26)))
             ItemDefinitionLoader.aNodeDeque_2187!!.method1996(103)
             ClampTextureNode.aNodeDeque_9478!!.method1996(104)
             var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as ContactEntry?)
@@ -152,7 +152,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             var i_14_ = -1
             val class348_sub45 = GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as TimedRecordAccessor?
             if (class348_sub45 != null) i_14_ = class348_sub45.method3310(58)
-            if (Class5_Sub1.aBoolean8335) {
+            if (ScrollbarComponent.aBoolean8335) {
                 if (i_14_ == -1) {
                     val i_15_ = GlTexture1D.aInputTracker_8552!!.method3597(true)
                     val i_16_ = GlTexture1D.aInputTracker_8552!!.method3594(116.toByte())

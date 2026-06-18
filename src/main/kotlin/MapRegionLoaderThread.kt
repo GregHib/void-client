@@ -1,7 +1,7 @@
 import TextureQualityOptionState.Companion.method1783
 import ConfigFlagUtil.Companion.method1916
 import MinimapTileEntry.Companion.method381
-import Class5_Sub2.Companion.method196
+import SolidFillComponent.Companion.method196
 import Class66.method705
 import java.io.BufferedReader
 import java.io.DataInputStream

@@ -3,7 +3,7 @@ import TwoStateOptionState.Companion.method1842
 /* Class5_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class5_Sub1(js5Archive: Js5Archive, js5Archive_0_: Js5Archive, class369_sub3: WorldMapIconLabel) : Class5(js5Archive, js5Archive_0_, class369_sub3) {
+open class ScrollbarComponent(js5Archive: Js5Archive, js5Archive_0_: Js5Archive, class369_sub3: WorldMapIconLabel) : WorldMapElement(js5Archive, js5Archive_0_, class369_sub3) {
     private var aAbstractModelRenderer_8338: AbstractModelRenderer? = null
     private var aAbstractModelRenderer_8339: AbstractModelRenderer? = null
     private var aAbstractModelRenderer_8342: AbstractModelRenderer? = null

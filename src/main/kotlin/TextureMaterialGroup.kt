@@ -1,6 +1,6 @@
 import ParticleDetailOptionState.Companion.method1796
 import SoundBankPatch.Companion.method2929
-import Class5_Sub3.Companion.method202
+import SpriteComponent.Companion.method202
 
 /* Class348_Sub42_Sub17 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

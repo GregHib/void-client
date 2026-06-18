@@ -219,7 +219,7 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, class51: Cla
 
         fun method2489(i: Byte): Int {
             anInt10135++
-            if (Class5_Sub1.aBoolean8335) return 6
+            if (ScrollbarComponent.aBoolean8335) return 6
             if (IntHashSet.aClass348_Sub42_Sub12_3963 == null) return 0
             if (i >= -11) return -42
             val i_1_ = (IntHashSet.aClass348_Sub42_Sub12_3963!!.anInt9608)

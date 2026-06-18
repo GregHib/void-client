@@ -33,7 +33,7 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         if (class51 != null) return class51
         val `is`: ByteArray?
         synchronized(aJs5Archive_3343!!) {
-            `is` = aJs5Archive_3343.method410(i + -1860, method1850(i_0_, 111), Class5_Sub1.method185(i_0_, (-90).toByte()))
+            `is` = aJs5Archive_3343.method410(i + -1860, method1850(i_0_, 111), ScrollbarComponent.method185(i_0_, (-90).toByte()))
         }
         class51 = Class51()
         class51.anInt941 = i_0_

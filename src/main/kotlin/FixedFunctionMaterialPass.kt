@@ -95,7 +95,7 @@ class FixedFunctionMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer
             val i_6_ = 34 % ((i - 32) / 38)
             anInt6213++
             MinimapAreaMarkerNode.method3277((-48).toByte())
-            Class5_Sub1.aBoolean8335 = false
+            ScrollbarComponent.aBoolean8335 = false
             MinimapRectClipper.method226(GlArrayBufferObject.anInt4717, Class63.anInt1117, ProceduralTextureGraph.anInt9532, 0, WorldMapSceneSoftware.anInt5819)
         }
 

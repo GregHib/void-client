@@ -1,5 +1,5 @@
 import GrowableStringList.Companion.method1357
-import Class5_Sub2.Companion.method194
+import SolidFillComponent.Companion.method194
 
 /* Class348_Sub37 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

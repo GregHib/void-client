@@ -27,7 +27,7 @@ object Tooltip {
             if (bool_0_) {
                 if (LocalizedTextTriple.aBoolean3763 && bool_0_) {
                     class143 = ClanChatRequestSender.aFontDefinition_3649
-                    class324 = var_renderer!!.method3686(class143, (Class5_Sub1_Sub1.aSpriteImageArray9929), true)
+                    class324 = var_renderer!!.method3686(class143, (ProportionalScrollbarComponent.aSpriteImageArray9929), true)
                     var i_1_ = class143!!.method1187(string, false, 250, null)
                     var i_2_ = class143.method1185(null, i xor 0x2, class143.anInt1992, 250, string)
                     val i_3_ = RegionTileNode.aSpriteImage_6643!!.anInt2702

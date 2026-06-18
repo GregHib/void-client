@@ -108,13 +108,13 @@ class HslColorConfig {
         @JvmStatic
         fun method294(var_renderer: Renderer?, i: Int) {
             anInt328++
-            if (Class5_Sub1_Sub1.aNodeDeque_9931!!.method1998(i) != 0) {
+            if (ProportionalScrollbarComponent.aNodeDeque_9931!!.method1998(i) != 0) {
                 if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) {
-                    var class348_sub7 = (Class5_Sub1_Sub1.aNodeDeque_9931!!.method1995(4) as RegionTileNode?)
+                    var class348_sub7 = (ProportionalScrollbarComponent.aNodeDeque_9931!!.method1995(4) as RegionTileNode?)
                     while (class348_sub7 != null) {
                         Exception_Sub1.aModelHeaderCache_112!!.method1932(var_renderer, class348_sub7.anInt6647, class348_sub7.anInt6648, WorldMapRenderer.aFont_4684, (if (!class348_sub7.aBoolean6650) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)), class348_sub7.anInt6642, false, 83.toByte(), var_renderer, class348_sub7.anInt6649, false, class348_sub7.anInt6645)
                         class348_sub7.method2715(29.toByte())
-                        class348_sub7 = Class5_Sub1_Sub1.aNodeDeque_9931!!.method1990(31.toByte()) as RegionTileNode?
+                        class348_sub7 = ProportionalScrollbarComponent.aNodeDeque_9931!!.method1990(31.toByte()) as RegionTileNode?
                     }
                     TextureCache.method3466(i + -113)
                 } else {
@@ -124,11 +124,11 @@ class HslColorConfig {
                         IntPair.aRenderer6968 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, 0, canvas, SpriteLoadValidator.aJs5Archive_4796)
                         EdgeDetectTextureNode.aFont_9173 = (IntPair.aRenderer6968!!.method3686(method1819(Class56.anInt1044, 0, -44, SoftwareSpriteRaster.aJs5Archive_1627!!), SpriteImage.method1519(CameraRotationStub.Companion.aJs5Archive_322!!, Class56.anInt1044, 0), true))
                     }
-                    var class348_sub7 = (Class5_Sub1_Sub1.aNodeDeque_9931!!.method1995(i + 4) as RegionTileNode?)
+                    var class348_sub7 = (ProportionalScrollbarComponent.aNodeDeque_9931!!.method1995(i + 4) as RegionTileNode?)
                     while (class348_sub7 != null) {
                         Exception_Sub1.aModelHeaderCache_112!!.method1932(IntPair.aRenderer6968, class348_sub7.anInt6647, class348_sub7.anInt6648, EdgeDetectTextureNode.aFont_9173, (if (class348_sub7.aBoolean6650) (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) else null), class348_sub7.anInt6642, false, 83.toByte(), var_renderer, class348_sub7.anInt6649, false, class348_sub7.anInt6645)
                         class348_sub7.method2715(21.toByte())
-                        class348_sub7 = Class5_Sub1_Sub1.aNodeDeque_9931!!.method1990(118.toByte()) as RegionTileNode?
+                        class348_sub7 = ProportionalScrollbarComponent.aNodeDeque_9931!!.method1990(118.toByte()) as RegionTileNode?
                     }
                 }
             }

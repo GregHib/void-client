@@ -1,5 +1,5 @@
 import AbstractFrameBufferSurface.Companion.method3013
-import Class5_Sub3.Companion.method200
+import SpriteComponent.Companion.method200
 import java.awt.Point
 
 /*

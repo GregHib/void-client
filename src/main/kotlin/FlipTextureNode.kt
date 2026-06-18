@@ -183,7 +183,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                 if (i_31_ < i_34_ && i_32_ < i_33_) {
                                     if (class46.anInt765 != 0) {
                                         if ((RangedGraphicsOptionState.anInt5943 == class46.anInt765) || (class46.anInt765 == WidgetRedrawTracker.anInt3932)) {
-                                            Class5_Sub2.method198(class46, false, i_25_, i_24_)
+                                            SolidFillComponent.method198(class46, false, i_25_, i_24_)
                                             if (!Class59_Sub1.aBoolean5300) {
                                                 method132(124, (WidgetRedrawTracker.anInt3932 == (class46.anInt765)), class46.anInt709, i_24_, class46.anInt789, i_25_)
                                                 FacingDirectionNode.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)

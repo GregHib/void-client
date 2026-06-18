@@ -1,5 +1,5 @@
 import FixedFunctionMaterialPass.Companion.method2146
-import Class5.Companion.method181
+import WorldMapElement.Companion.method181
 import Class6.Companion.method204
 
 /* Class91 - Decompiled by JODE
@@ -33,10 +33,10 @@ object Class91 {
         VarpStore.method1318(-65536)
         var bool = false
         for (i_2_ in 0..<ParticleGeometry.anInt4411) {
-            val i_3_ = Class5_Sub1_Sub1.anIntArray9932!![i_2_]
+            val i_3_ = ProportionalScrollbarComponent.anIntArray9932!![i_2_]
             val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_3_.toLong(), -6008) as NpcReference)
             val npc = (class348_sub22.aNpc_6859)!!
-            if (Class5_Sub1.aBoolean8335 && ParamMap.method3169(i_3_, 0)) method2146(84.toByte())
+            if (ScrollbarComponent.aBoolean8335 && ParamMap.method3169(i_3_, 0)) method2146(84.toByte())
             if (NullOggStream.anInt9041 != (npc.anInt10306)) {
                 if (npc.aClass79_10505!!.method793(0)) method181(true, npc)
                 npc.method2448(null, -2)

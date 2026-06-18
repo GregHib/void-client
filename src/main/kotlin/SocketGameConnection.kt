@@ -119,7 +119,7 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
                         val i_11_ = (-i_3_ + ((class348_sub9.anInt6678 + class348_sub9.anInt6698) / 2))
                         val i_12_ = (-i_5_ + ((class348_sub9.anInt6687 - -class348_sub9.anInt6689) / 2))
                         if (i_11_ != 0 || i_12_ != 0) {
-                            var i_13_ = ((-Class5.anInt4638 + -(atan2(i_11_.toDouble(), i_12_.toDouble()) * 2607.5945876176133).toInt() + -4096) and 0x3fff)
+                            var i_13_ = ((-WorldMapElement.anInt4638 + -(atan2(i_11_.toDouble(), i_12_.toDouble()) * 2607.5945876176133).toInt() + -4096) and 0x3fff)
                             if (i_13_ > 8192) i_13_ = 16384 - i_13_
                             val i_14_: Int
                             if (i_7_ <= 0) i_14_ = 8192

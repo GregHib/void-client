@@ -374,7 +374,7 @@ class WidgetDefinition {
                 i_47_ = Class70.anIntArray1207!![i_46_] * i_49_ shr 14
                 i_49_ = i_49_ * Class70.anIntArray1204!![i_46_] shr 14
             }
-            Class5.anInt4638 = i_37_
+            WorldMapElement.anInt4638 = i_37_
             MapTileShape.anInt4186 = 0
             Class59_Sub2_Sub2.anInt8685 = i_38_ - i_49_
             ParticleSystemRenderer.anInt3855 = -i_48_ + i_36_

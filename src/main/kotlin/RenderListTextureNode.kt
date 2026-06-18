@@ -138,7 +138,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
             SourceRowTextureNode.Companion.aNodeDeque_9111!!.method1996(125)
             ContactEntry.aHashtable_9603!!.method3481(0)
             ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1009(2110355138)
-            Class5_Sub1.aBoolean8335 = false
+            ScrollbarComponent.aBoolean8335 = false
         }
     }
 }

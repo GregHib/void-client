@@ -32,8 +32,8 @@ class TextureAtlasState {
                 if (SoftwareSpriteRaster.aJs5Archive_1627!!.method421(false, ConnectionStateRefs.anInt317)) ClanChatRequestSender.aFontDefinition_3649 = RangedGraphicsOptionState.method1766((-89).toByte(), ConnectionStateRefs.anInt317, SoftwareSpriteRaster.aJs5Archive_1627!!)
                 else bool_0_ = false
             }
-            if (Class5_Sub1_Sub1.aSpriteImageArray9929 == null) {
-                if (CameraRotationStub.aJs5Archive_322!!.method421(false, ConnectionStateRefs.anInt317)) Class5_Sub1_Sub1.aSpriteImageArray9929 = SpriteImage.method1523(CameraRotationStub.aJs5Archive_322!!, ConnectionStateRefs.anInt317)
+            if (ProportionalScrollbarComponent.aSpriteImageArray9929 == null) {
+                if (CameraRotationStub.aJs5Archive_322!!.method421(false, ConnectionStateRefs.anInt317)) ProportionalScrollbarComponent.aSpriteImageArray9929 = SpriteImage.method1523(CameraRotationStub.aJs5Archive_322!!, ConnectionStateRefs.anInt317)
                 else bool_0_ = false
             }
             return bool_0_

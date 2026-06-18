@@ -124,7 +124,7 @@ class TextureFormatInfo internal constructor(var anInt3850: Int) {
             if (i_11_ + i_7_ > HardCacheEntryReference.anInt10432) i_11_ = HardCacheEntryReference.anInt10432 + -i_7_
             if (i_11_ < 0) i_11_ = 0
             GlArrayBufferObject.anInt4717 = i_10_
-            Class5_Sub1.aBoolean8335 = true
+            ScrollbarComponent.aBoolean8335 = true
             ProceduralTextureGraph.anInt9532 = i_11_
             Class63.anInt1117 = i_6_
         }

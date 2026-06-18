@@ -94,14 +94,14 @@ class MultiLevelOptionState : GraphicsOptionState {
             for (i_11_ in 0..4) SpotAnimDefinition.aBooleanArray2374!![i_11_] = false
             TextureAtlasState.anInt4424 = Class59_Sub2_Sub2.anInt8685
             DataHolder.anInt3662 = MinimapAreaMarkerNode.anInt9701
-            Class5_Sub3.anInt8368 = ParticleSystemRenderer.anInt3855
+            SpriteComponent.anInt8368 = ParticleSystemRenderer.anInt3855
             FloatBuffer.anInt9751 = Class367_Sub11.anInt7396
             SequencedWallEntity.anInt10163 = -1
             Class9.anInt167 = SequencedWallEntity.anInt10163
             SequencedGroundDecor.anInt10047 = GlslMaterialPass.anInt6246
             val i_12_ = -99 % ((i - 11) / 56)
             BloomGraphicsOptionState.anInt5973 = 0
-            CameraConfigDefinition.anInt3253 = Class5.anInt4638
+            CameraConfigDefinition.anInt3253 = WorldMapElement.anInt4638
             Class367_Sub11.anInt7403 = 0
             WeaveTextureNode.anInt9282 = 5
             NativeShaderProgram.anInt9775 = -1

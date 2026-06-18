@@ -2,7 +2,7 @@ import GameAppletFrame.Companion.method94
 import WallEntity.Companion.method2483
 import TurbulenceTextureNode.Companion.method3113
 import Class367_Sub8.Companion.method3547
-import Class5_Sub2.Companion.method195
+import SolidFillComponent.Companion.method195
 import Sprite.Companion.method159
 import java.awt.datatransfer.DataFlavor
 import java.awt.datatransfer.StringSelection

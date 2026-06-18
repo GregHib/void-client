@@ -190,7 +190,7 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
         fun method2060(i: Byte, bool: Boolean) {
             if (i > -4) method2059(-6)
             anInt3484++
-            Class5_Sub3.anInt8374++
+            SpriteComponent.anInt8374++
             val class348_sub47 = method2148(IntPair.aFontMetaRef_6970, TheoraVideoStream.aClass77_9029, -109)
             InterfaceComponentGroup.method3243(37, class348_sub47)
             var class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?

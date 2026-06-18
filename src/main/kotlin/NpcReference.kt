@@ -39,7 +39,7 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
             if (js5Archive.method421(false, LocTypeDefLoader.anInt2510)) i_2_++
             if (js5Archive.method421(false, Class52.anInt4895)) i_2_++
             if (js5Archive.method421(false, PerlinTextureProvider.anInt5814)) i_2_++
-            if (js5Archive.method421(false, Class5_Sub3.anInt8370)) i_2_++
+            if (js5Archive.method421(false, SpriteComponent.anInt8370)) i_2_++
             return i_2_
         }
 
