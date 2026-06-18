@@ -1,6 +1,5 @@
 import GlslMaterialPass.Companion.method2155
 import CacheArchiveIndexLoader.Companion.method340
-import java.awt.Component
 import java.util.*
 import javax.sound.sampled.*
 
@@ -33,7 +32,7 @@ class JavaSoundOutput : SoundChannelMixer() {
         }
     }
 
-    override fun method2095(component: Component?) {
+    fun method2095() {
         val infos = AudioSystem.getMixerInfo()
         if (null != infos) {
             val infos_0_: Array<Mixer.Info?>? = infos

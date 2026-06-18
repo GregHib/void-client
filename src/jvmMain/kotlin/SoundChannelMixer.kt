@@ -1,7 +1,6 @@
 import ArrayCopyUtil.method1573
 import TexGenMaterialPass.Companion.method2161
 import GameClock.method599
-import java.awt.Component
 import kotlin.math.min
 
 /*
@@ -254,11 +253,6 @@ open class SoundChannelMixer {
     @Throws(Exception::class)
     open fun method2094() {
         anInt3612++
-    }
-
-    @Throws(Exception::class)
-    open fun method2095(component: Component?) {
-        anInt3596++
     }
 
     init {

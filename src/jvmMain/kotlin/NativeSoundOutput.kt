@@ -14,7 +14,7 @@ class NativeSoundOutput internal constructor(privilegedOperationWorker: Privileg
     }
 
     @Throws(Exception::class)
-    override fun method2095(component: Component?) {
+    fun method2095(component: Component?) {
         anAudioDeviceController_6182!!.method78(HslColorConfig.anInt339, NpcEntityUpdater.aBoolean3652, component, 27929)
     }
 

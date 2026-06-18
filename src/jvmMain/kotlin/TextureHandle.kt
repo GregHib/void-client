@@ -30,10 +30,10 @@ class TextureHandle internal constructor(private val aGlRenderDevice_2585: GlRen
                 require(!(i_0_ < 0 || i_0_ >= 2))
                 if (i < 256) i = 256
                 try {
-                    val soundChannelMixer: SoundChannelMixer = JavaSoundOutput()
+                    val soundChannelMixer = JavaSoundOutput()
                     soundChannelMixer.anInt3620 = i
                     soundChannelMixer.anIntArray3603 = IntArray((if (NpcEntityUpdater.aBoolean3652) 2 else 1) * 256)
-                    soundChannelMixer.method2095(component)
+                    soundChannelMixer.method2095()
                     soundChannelMixer.anInt3613 = (i and 0x3ff.inv()) + 1024
                     if (soundChannelMixer.anInt3613 > 16384) soundChannelMixer.anInt3613 = 16384
                     soundChannelMixer.method2082(soundChannelMixer.anInt3613)
