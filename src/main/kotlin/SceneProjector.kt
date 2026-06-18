@@ -199,16 +199,16 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                     GlCubeMapTexture.aDouble8621 = d_37_ + ShortMatrixNode.aDouble9517
                                     if (Buffer.anInt7207 == 1) {
                                         ShaderStateVariant.anInt8799 = (i_17_ + -ModelVertexColorBuffer.anInt6568 - i_34_)
-                                        OutputStream_Sub1.anInt95 = i_21_
+                                        FireParticleStream.anInt95 = i_21_
                                         ConfigValueProvider.anInt4910 = -ShaderObject.anInt4100 + (i_16_ - i_33_)
                                         TexGenMaterialPass.anInt6255 = i_20_
-                                        CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (OutputStream_Sub1.anInt95))
+                                        CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
                                     } else {
                                         TexGenMaterialPass.anInt6255 = i_20_
                                         ShaderStateVariant.anInt8799 = (-ModelVertexColorBuffer.anInt6568 + i_17_ - (-(HardKeyedCacheEntryReference.anInt10444) - -i_34_))
                                         ConfigValueProvider.anInt4910 = (-ShaderObject.anInt4100 + i_16_ + (SoundEnvelope.anInt2747 + -i_33_))
-                                        OutputStream_Sub1.anInt95 = i_21_
-                                        CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (OutputStream_Sub1.anInt95))
+                                        FireParticleStream.anInt95 = i_21_
+                                        CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
                                     }
                                     method1274(HardCacheEntryReference.aSceneObjectSpawner_10436)
                                     if (i_51_ > 0) {
@@ -270,15 +270,15 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             if (Buffer.anInt7207 == 1) {
                                 ShaderStateVariant.anInt8799 = i_17_
                                 ConfigValueProvider.anInt4910 = i_16_
-                                OutputStream_Sub1.anInt95 = i_21_
+                                FireParticleStream.anInt95 = i_21_
                                 TexGenMaterialPass.anInt6255 = i_20_
-                                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, OutputStream_Sub1.anInt95)
+                                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
                             } else {
                                 ConfigValueProvider.anInt4910 = i_16_ - -SoundEnvelope.anInt2747
                                 ShaderStateVariant.anInt8799 = HardKeyedCacheEntryReference.anInt10444 + i_17_
                                 TexGenMaterialPass.anInt6255 = i_20_
-                                OutputStream_Sub1.anInt95 = i_21_
-                                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, OutputStream_Sub1.anInt95)
+                                FireParticleStream.anInt95 = i_21_
+                                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
                             }
                             GlCubeMapTexture.aDouble8621 = 0.0
                             HardCacheEntryReference.aSceneObjectSpawner_10436!!.method775(69.toByte())

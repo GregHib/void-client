@@ -6,7 +6,7 @@ import ModelVertexColorBuffer.Companion.method2739
 import ColourKeyTextureNode.Companion.method3120
 import TileTextureNode.Companion.method3131
 import FlipTextureNode.Companion.method3064
-import OutputStream_Sub1.Companion.method132
+import FireParticleStream.Companion.method132
 import OpenGlTerrainTile.Companion.method4002
 import NativeShaderProgram.Companion.method3439
 import java.io.IOException

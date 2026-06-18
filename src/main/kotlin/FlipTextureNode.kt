@@ -4,7 +4,7 @@ import GlslMaterialPass.Companion.method2157
 import CubemapTextureGlSource.Companion.method2263
 import WorldMapAreaLabel.Companion.method3570
 import NoiseTextureGenerator.Companion.method544
-import OutputStream_Sub1.Companion.method132
+import FireParticleStream.Companion.method132
 import kotlin.math.max
 import kotlin.math.min
 

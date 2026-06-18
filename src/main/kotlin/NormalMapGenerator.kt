@@ -60,7 +60,7 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
         this.aBoolean3458 = aHa_Sub3_3457.aBoolean8159
         if (this.aBoolean3458 && !aHa_Sub3_3457.method3931(true, SpriteSheetCache.aTextureFormatInfo_2571, MovementDirection.aMovementDirection_1183)) this.aBoolean3458 = false
         if (this.aBoolean3458 || aHa_Sub3_3457.method3880(MovementDirection.aMovementDirection_1183, SpriteSheetCache.aTextureFormatInfo_2571, 123.toByte())) {
-            OutputStream_Sub1.method134((-126).toByte())
+            FireParticleStream.method134((-126).toByte())
             if (this.aBoolean3458) {
                 var `is` = method461(false, CompiledScriptCache.anObject4366, 53146732)
                 this.anInterface18_Impl1_3452 = aHa_Sub3_3457.method3872(16, 128, SpriteSheetCache.aTextureFormatInfo_2571, true, 128, `is`)

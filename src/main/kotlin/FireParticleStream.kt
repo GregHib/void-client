@@ -4,7 +4,10 @@ import java.io.OutputStream
 import java.util.*
 import kotlin.math.sin
 
-class OutputStream_Sub1 : OutputStream() {
+/*
+ * OutputStream_Sub1
+ */
+class FireParticleStream : OutputStream() {
     @Throws(IOException::class)
     override fun write(i: Int) {
         anInt96++

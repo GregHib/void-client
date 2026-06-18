@@ -1220,7 +1220,7 @@ class Client : GameAppletFrame() {
         method3228(75)
         method2796(104.toByte())
         method1525(4.toByte())
-        OutputStream_Sub1.method133((-41).toByte())
+        FireParticleStream.method133((-41).toByte())
         method124(i.toInt() xor 0x6e)
         method2117(0)
         method2993(50.toByte())
@@ -1560,7 +1560,7 @@ class Client : GameAppletFrame() {
             if (GlGroundShaderPass.anInt7396 % 1000 == 1) {
                 val gregoriancalendar = GregorianCalendar()
                 Hashtable.anInt4383 = (gregoriancalendar.get(11) * 600 + gregoriancalendar.get(12) * 10 + gregoriancalendar.get(13) / 6)
-                OutputStream_Sub1.aRandom93!!.setSeed(Hashtable.anInt4383.toLong())
+                FireParticleStream.aRandom93!!.setSeed(Hashtable.anInt4383.toLong())
             }
             if (GlGroundShaderPass.anInt7396 % 50 == 0) {
                 ModelResourceBundle.anInt7134 = FogState.anInt1433

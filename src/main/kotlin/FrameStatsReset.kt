@@ -1405,7 +1405,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RadialTextureNode.anInt9336 = 0
             ParticleDetailOptionState.anInt6028 = 0
             SoundEnvelope.anInt2736 = 0
-            OutputStream_Sub1.anInt92 = 0
+            FireParticleStream.anInt92 = 0
             CompositeRgbNoiseTexture.anInt8678 = 0
             SoftwareSpriteRaster.anInt1628 = 0
             GlCubemapLightPass.anInt7316 = 0
@@ -2225,7 +2225,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             AbstractRenderPass.anInt4484 = 0
             CameraConfigDefinition.anInt3250 = 0
             GlBufferObject.anInt4752 = 0
-            OutputStream_Sub1.anInt96 = 0
+            FireParticleStream.anInt96 = 0
             CameraConfigDefinition.anInt3252 = 0
             OpenGlRenderer.anInt7550 = 0
             IntHashSet.anInt3965 = 0
@@ -3517,7 +3517,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Buffer.anInt7182 = 0
             ProjectionCameraTransform.anInt5783 = 0
             MidiSequencePlayer.anInt8889 = 0
-            OutputStream_Sub1.anInt94 = 0
+            FireParticleStream.anInt94 = 0
             CurveTextureNode.anInt9212 = 0
             CollisionMap.anInt4452 = 0
             GlSpriteRenderer.anInt8428 = 0

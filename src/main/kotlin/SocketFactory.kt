@@ -64,7 +64,7 @@ abstract class SocketFactory {
                 ConnectionStateRefs.anInt317 = i_5_
                 anInt3471++
                 NormalMapGenerator.anInt3451 = i_0_
-                OutputStream_Sub1.anInt98 = i_2_
+                FireParticleStream.anInt98 = i_2_
                 BufferToggleState.anInt3712 = i_6_
                 ScriptCompilerThread.aSpriteImage_1727 = null
                 TerrainShadowBuilderGl2.anInt6938 = i_1_

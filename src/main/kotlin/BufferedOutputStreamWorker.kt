@@ -65,7 +65,7 @@ class BufferedOutputStreamWorker internal constructor(private var anOutputStream
     fun method1527(i: Int) {
         if (i != -21179) method1525(113.toByte())
         anInt2711++
-        anOutputStream2712 = OutputStream_Sub1()
+        anOutputStream2712 = FireParticleStream()
     }
 
     @Throws(IOException::class)

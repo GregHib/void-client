@@ -18,7 +18,7 @@ class ChatScriptListNode internal constructor(var aClass318_Sub1_Sub3_Sub4_9538:
                 val i_1_ = class348_sub49.readSmart(-127)
                 var i_2_ = class348_sub49.readUnsignedShort(842397944)
                 if (i_2_ == 65535) i_2_ = -1
-                if (OutputStream_Sub1.aClass110_Sub1Array97!![i_1_] != null) OutputStream_Sub1.aClass110_Sub1Array97!![i_1_]!!.anInt1704 = i_2_
+                if (FireParticleStream.aClass110_Sub1Array97!![i_1_] != null) FireParticleStream.aClass110_Sub1Array97!![i_1_]!!.anInt1704 = i_2_
             }
             val i_3_ = -75 / ((53 - i) / 48)
         }

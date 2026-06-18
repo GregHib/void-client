@@ -114,7 +114,7 @@ class SimpleToggleOptionState : GraphicsOptionState {
             if (bool != false) method1740(35, -126, false)
             anInt5885++
             if (!RenderableGroup.aBoolean5013 || SceneObjectEntity.anInt8731 > i || MultiLevelOptionState.anInt6151 < i) return null
-            return (OutputStream_Sub1.aClass110_Sub1Array97!![i + -SceneObjectEntity.anInt8731])
+            return (FireParticleStream.aClass110_Sub1Array97!![i + -SceneObjectEntity.anInt8731])
         }
     }
 }

@@ -17,8 +17,8 @@ class TextureAtlasState {
             anInt4419++
             var bool_0_ = bool
             if (ColorThresholdEffect.aSpriteImage_9090 == null) {
-                if (!CameraRotationStub.aJs5Archive_322!!.method421(false, OutputStream_Sub1.anInt98)) bool_0_ = false
-                else ColorThresholdEffect.aSpriteImage_9090 = SpriteImage.method1512(CameraRotationStub.aJs5Archive_322!!, OutputStream_Sub1.anInt98)
+                if (!CameraRotationStub.aJs5Archive_322!!.method421(false, FireParticleStream.anInt98)) bool_0_ = false
+                else ColorThresholdEffect.aSpriteImage_9090 = SpriteImage.method1512(CameraRotationStub.aJs5Archive_322!!, FireParticleStream.anInt98)
             }
             if (RegionTileNode.aSpriteImage_6643 == null) {
                 if (CameraRotationStub.aJs5Archive_322!!.method421(!bool, TerrainShadowBuilderGl2.anInt6938)) RegionTileNode.aSpriteImage_6643 = SpriteImage.method1512(CameraRotationStub.aJs5Archive_322!!, TerrainShadowBuilderGl2.anInt6938)

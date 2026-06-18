@@ -57,11 +57,11 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
             SceneObjectEntity.anInt8731 = class348_sub49.readSmart(-127)
             MultiLevelOptionState.anInt6151 = class348_sub49.readSmart(-119)
             NpcDefinition.anInt2956 = class348_sub49.readSmart(-122)
-            OutputStream_Sub1.aClass110_Sub1Array97 = arrayOfNulls<MapLabelMenuEntry>(1 + (MultiLevelOptionState.anInt6151 + -SceneObjectEntity.anInt8731))
+            FireParticleStream.aClass110_Sub1Array97 = arrayOfNulls<MapLabelMenuEntry>(1 + (MultiLevelOptionState.anInt6151 + -SceneObjectEntity.anInt8731))
             var i_2_ = 0
             while (NpcDefinition.anInt2956 > i_2_) {
                 val i_3_ = class348_sub49.readSmart(-126)
-                val class110_sub1 = (MapLabelMenuEntry().also { OutputStream_Sub1.aClass110_Sub1Array97!![i_3_] = it })
+                val class110_sub1 = (MapLabelMenuEntry().also { FireParticleStream.aClass110_Sub1Array97!![i_3_] = it })
                 class110_sub1.anInt1711 = class348_sub49.readUnsignedByte(255)
                 class110_sub1.anInt1708 = class348_sub49.readInt((-126).toByte())
                 class110_sub1.anInt5786 = SceneObjectEntity.anInt8731 + i_3_

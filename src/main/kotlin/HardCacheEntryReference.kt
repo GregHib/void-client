@@ -1636,7 +1636,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 TextureGenerator.anIntArray2497!![i_214_] = i_215_
                 ServerConnectionInfo.anIntArray2145!![i_214_] = i
                 SpotAnimDefCache.anIntArray3295!![i_214_] = 1
-                val i_216_ = OutputStream_Sub1.anIntArray100!![i_214_] + -1
+                val i_216_ = FireParticleStream.anIntArray100!![i_214_] + -1
                 var i_217_ = 0
                 while (i_216_ > i_217_) {
                     if (StaticNoiseTexture.anIntArray8663!![i_217_] <= i_215_) SpotAnimDefCache.anIntArray3295!![i_214_] = i_217_ - -2

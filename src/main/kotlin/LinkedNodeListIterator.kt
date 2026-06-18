@@ -316,7 +316,7 @@ class LinkedNodeListIterator {
                 CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                 method3284(true, ModelWallEntity.aDouble10120)
             } else {
-                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, OutputStream_Sub1.anInt95)
+                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
                 method3284(true, GlCubeMapTexture.aDouble8621)
             }
             if (bool != false) method1010(true, true)
