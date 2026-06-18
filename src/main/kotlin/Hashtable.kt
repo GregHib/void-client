@@ -180,7 +180,7 @@ class Hashtable internal constructor(var anInt4377: Int) {
             var class348_sub21 = RenderNode.aWidgetRedrawTracker_9716!!.method2329(10) as CameraSplineNode?
             while (class348_sub21 != null) {
                 val class42 = MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 92.toByte())
-                if (class42 != null && class42.aBoolean609 && class42.method373(MapRegionLoader.anInterface17_1244!!, 127)) return class348_sub21
+                if (class42 != null && class42.aBoolean609 && class42.method373(MapRegionLoader.anVarResolver_1244!!, 127)) return class348_sub21
                 class348_sub21 = RenderNode.aWidgetRedrawTracker_9716!!.method2329(i xor 0xa.inv()) as CameraSplineNode?
             }
             return null

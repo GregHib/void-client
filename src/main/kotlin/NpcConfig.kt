@@ -340,12 +340,12 @@ class NpcConfig {
         if (i.toInt() != 0) method486(-77)
     }
 
-    fun method480(interface17: Interface17, i: Byte): NpcConfig? {
+    fun method480(varResolver: VarResolver, i: Byte): NpcConfig? {
         anInt870++
         var i_34_ = -1
         if (anInt934 == -1) {
-            if (anInt939 != -1) i_34_ = interface17.method61(anInt939, (-16).toByte())
-        } else i_34_ = interface17.method62(anInt934, i + -65583)
+            if (anInt939 != -1) i_34_ = varResolver.method61(anInt939, (-16).toByte())
+        } else i_34_ = varResolver.method62(anInt934, i + -65583)
         if (i.toInt() != 47) method478(101, 42)
         if (i_34_ < 0 || -1 + this.anIntArray945!!.size <= i_34_ || this.anIntArray945!![i_34_] == -1) {
             val i_35_ = (this.anIntArray945!![-1 + this.anIntArray945!!.size])

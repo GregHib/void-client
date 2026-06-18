@@ -20,7 +20,7 @@ open class MapRegionLoader {
         @JvmField
         var aClass348_Sub42_Sub14_1243: InterfaceComponentGroup? = null
         @JvmField
-        var anInterface17_1244: Interface17? = null
+        var anVarResolver_1244: VarResolver? = null
         @JvmField
         var aSeqDefinitionCache_1245: SeqDefinitionCache? = null
         @JvmField
@@ -138,7 +138,7 @@ open class MapRegionLoader {
             aSeqDefinitionCache_1245 = null
             aConfigDefinitionLoader_1238 = null
             aTextureDefinitionLoader_1242 = null
-            anInterface17_1244 = null
+            anVarResolver_1244 = null
             aClass348_Sub42_Sub14_1243 = null
             aJs5Archive_1237 = null
             aHashtable_1241 = null
@@ -268,14 +268,14 @@ open class MapRegionLoader {
         }
 
         @JvmStatic
-        fun method752(js5Archive: Js5Archive?, locDefinitionCache: LocDefinitionCache?, particleDefLoader: ParticleDefLoader?, seqDefinitionCache: SeqDefinitionCache?, configDefinitionLoader: ConfigDefinitionLoader?, textureDefinitionLoader: TextureDefinitionLoader?, interface17: Interface17?) {
+        fun method752(js5Archive: Js5Archive?, locDefinitionCache: LocDefinitionCache?, particleDefLoader: ParticleDefLoader?, seqDefinitionCache: SeqDefinitionCache?, configDefinitionLoader: ConfigDefinitionLoader?, textureDefinitionLoader: TextureDefinitionLoader?, varResolver: VarResolver?) {
             aJs5Archive_1237 = js5Archive
             aLocDefinitionCache_1239 = locDefinitionCache
             aParticleDefLoader_1240 = particleDefLoader
             aSeqDefinitionCache_1245 = seqDefinitionCache
             aConfigDefinitionLoader_1238 = configDefinitionLoader
             aTextureDefinitionLoader_1242 = textureDefinitionLoader
-            anInterface17_1244 = interface17
+            anVarResolver_1244 = varResolver
             aHashtable_1241!!.method3481(0)
             val i: Int = aJs5Archive_1237!!.method417("details", 0)
             val `is`: IntArray? = aJs5Archive_1237!!.method396(i, 0)
@@ -300,7 +300,7 @@ open class MapRegionLoader {
                                     var npcConfig: NpcConfig? = (aSeqDefinitionCache_1245!!.method2005(0, (class348_sub39.aShortArray7024!![i_50_]).toInt() and 0xffff))
                                     var i_51_ = npcConfig!!.anInt921
                                     if (npcConfig.anIntArray945 != null) {
-                                        npcConfig = npcConfig.method480(anInterface17_1244!!, 47.toByte())
+                                        npcConfig = npcConfig.method480(anVarResolver_1244!!, 47.toByte())
                                         if (npcConfig != null) i_51_ = npcConfig.anInt921
                                     }
                                     if (i_51_ != -1) {
@@ -315,7 +315,7 @@ open class MapRegionLoader {
                             var npcConfig: NpcConfig? = aSeqDefinitionCache_1245!!.method2005(0, i_49_ - 1)
                             var i_52_ = npcConfig!!.anInt921
                             if (npcConfig.anIntArray945 != null) {
-                                npcConfig = npcConfig.method480(anInterface17_1244!!, 47.toByte())
+                                npcConfig = npcConfig.method480(anVarResolver_1244!!, 47.toByte())
                                 if (npcConfig != null) i_52_ = npcConfig.anInt921
                             }
                             if (i_52_ != -1) {
@@ -340,7 +340,7 @@ open class MapRegionLoader {
                                         var npcConfig: NpcConfig? = (aSeqDefinitionCache_1245!!.method2005(0, (class318_sub8.aShortArray6461!![i_55_]).toInt() and 0xffff))
                                         var i_56_ = npcConfig!!.anInt921
                                         if (npcConfig.anIntArray945 != null) {
-                                            npcConfig = (npcConfig.method480(anInterface17_1244!!, 47.toByte()))
+                                            npcConfig = (npcConfig.method480(anVarResolver_1244!!, 47.toByte()))
                                             if (npcConfig != null) i_56_ = npcConfig.anInt921
                                         }
                                         if (i_56_ != -1) {

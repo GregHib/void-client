@@ -116,12 +116,12 @@ class NpcType {
         return false
     }
 
-    fun method794(interface17: Interface17, i: Int): NpcType? {
+    fun method794(varResolver: VarResolver, i: Int): NpcType? {
         anInt1394++
         var i_2_ = i
         if (anInt1368 == -1) {
-            if (anInt1354 != -1) i_2_ = interface17.method61(anInt1354, (-16).toByte())
-        } else i_2_ = interface17.method62(anInt1368, -65536)
+            if (anInt1354 != -1) i_2_ = varResolver.method61(anInt1354, (-16).toByte())
+        } else i_2_ = varResolver.method62(anInt1368, -65536)
         if (i_2_ < 0 || (-1 + this.anIntArray1377!!.size <= i_2_) || this.anIntArray1377!![i_2_] == -1) {
             val i_3_ = (this.anIntArray1377!![this.anIntArray1377!!.size - 1])
             if (i_3_ == -1) return null
@@ -308,12 +308,12 @@ class NpcType {
         anInt1357++
     }
 
-    fun method796(interface17: Interface17, i: Int): Boolean {
+    fun method796(varResolver: VarResolver, i: Int): Boolean {
         anInt1351++
         if (this.anIntArray1377 == null) return true
         var i_27_ = -1
-        if (anInt1368 != -1) i_27_ = interface17.method62(anInt1368, -65536)
-        else if (anInt1354 != -1) i_27_ = interface17.method61(anInt1354, (-16).toByte())
+        if (anInt1368 != -1) i_27_ = varResolver.method62(anInt1368, -65536)
+        else if (anInt1354 != -1) i_27_ = varResolver.method61(anInt1354, (-16).toByte())
         if (i_27_ < 0 || (this.anIntArray1377!!.size - 1 <= i_27_) || this.anIntArray1377!![i_27_] == -1) {
             val i_28_ = (this.anIntArray1377!![this.anIntArray1377!!.size - 1])
             return i_28_ != -1
@@ -340,13 +340,13 @@ class NpcType {
         }
     }
 
-    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, widgetCache: WidgetCache?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, npcDefinitionCache: NpcDefinitionCache?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, interface17: Interface17?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): AbstractModel? {
+    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, widgetCache: WidgetCache?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, npcDefinitionCache: NpcDefinitionCache?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, varResolver: VarResolver?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): AbstractModel? {
         try {
             anInt1341++
             if (this.anIntArray1377 != null) {
-                val class79_42_ = method794(interface17!!, -1)
+                val class79_42_ = method794(varResolver!!, -1)
                 if (class79_42_ == null) return null
-                return class79_42_.method800(i, loadProgressCounters, widgetCache, false, widgetDefinition, i_34_, npcDefinitionCache, i_35_, widgetDefinition_36_, interface17, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
+                return class79_42_.method800(i, loadProgressCounters, widgetCache, false, widgetDefinition, i_34_, npcDefinitionCache, i_35_, widgetDefinition_36_, varResolver, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
             }
             var i_43_ = i_40_
             if (anInt1358 != 128) i_43_ = i_43_ or 0x2
@@ -613,7 +613,7 @@ class NpcType {
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(
                 runtimeexception,
-                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
+                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
             )
         }
     }
@@ -627,13 +627,13 @@ class NpcType {
         return class348_sub50.aString7211
     }
 
-    fun method803(interface17: Interface17?, var_renderer: Renderer?, i: Int, i_94_: Int, widgetDefinition: WidgetDefinition?, widgetCache: WidgetCache?, i_95_: Int, i_96_: Int, i_97_: Int): AbstractModel? {
+    fun method803(varResolver: VarResolver?, var_renderer: Renderer?, i: Int, i_94_: Int, widgetDefinition: WidgetDefinition?, widgetCache: WidgetCache?, i_95_: Int, i_96_: Int, i_97_: Int): AbstractModel? {
         try {
             anInt1389++
             if (this.anIntArray1377 != null) {
-                val class79_98_ = method794(interface17!!, -1)
+                val class79_98_ = method794(varResolver!!, -1)
                 if (class79_98_ == null) return null
-                return class79_98_.method803(interface17, var_renderer, i, i_94_, widgetDefinition, widgetCache, i_95_, 104, i_97_)
+                return class79_98_.method803(varResolver, var_renderer, i, i_94_, widgetDefinition, widgetCache, i_95_, 104, i_97_)
             }
             if (anIntArray1380 == null) return null
             var i_99_ = i_97_
@@ -699,7 +699,7 @@ class NpcType {
             abstractModel!!.s(i_97_)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bb.H(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("bb.H(" + (if (varResolver != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
         }
     }
 

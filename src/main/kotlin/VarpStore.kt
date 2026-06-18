@@ -9,7 +9,7 @@ import NativeTerrainTile.Companion.method4004
 /* Class170 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class VarpStore : Interface17 {
+class VarpStore : VarResolver {
     var anIntArray5063: IntArray
     private var aHashtable_5070 = Hashtable(128)
     private val anIntArray5078: IntArray
