@@ -1758,7 +1758,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7561 = 0
             AbstractBloomEffect.anInt6620 = 0
             OpenGlRenderer.anInt7648 = 0
-            Class364.anInt4467 = 0
+            NamedIdRecord.anInt4467 = 0
             UnusedToStringStub.anInt2716 = 0
             Class367_Sub11.anInt7412 = 0
             TextureLoaderUtil.anInt3993 = 0
@@ -3442,7 +3442,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class48.anInt850 = 0
             ClientMachineInfo.anInt6615 = 0
             FontDefinition.anInt1978 = 0
-            Class364.anInt4468 = 0
+            NamedIdRecord.anInt4468 = 0
             LoadingScreenImageNode.anInt9508 = 0
             NativeRenderer.anInt7912 = 0
             RegionSceneShifter.anInt7055 = 0

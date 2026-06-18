@@ -79,7 +79,7 @@ class FacingDirectionNode internal constructor(@JvmField var aByteArray6657: Byt
         }
 
         @JvmStatic
-        fun method2776(i: Byte, i_5_: Int): Class364? {
+        fun method2776(i: Byte, i_5_: Int): NamedIdRecord? {
             anInt6659++
             if (i > -35) aBooleanArrayArray6656 = null
             val class364s = ScatterTextureNode.method3122(91.toByte())

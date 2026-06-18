@@ -63,7 +63,7 @@ class Class76 internal constructor(bool: Boolean) {
         @JvmField
         var anInt1278: Int = 0
         @JvmField
-        var aClass364_1279: Class364? = Class364("LOCAL", 4)
+        var aNamedIdRecord_1279: NamedIdRecord? = NamedIdRecord("LOCAL", 4)
         @JvmField
         var anInt1280: Int = 0
         @JvmField
@@ -133,7 +133,7 @@ class Class76 internal constructor(bool: Boolean) {
         @JvmStatic
         fun method772(i: Byte) {
             aHostPingThread_1286 = null
-            aClass364_1279 = null
+            aNamedIdRecord_1279 = null
         }
 
         @JvmStatic

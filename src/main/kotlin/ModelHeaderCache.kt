@@ -325,7 +325,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(class45, Class364.anInt4469, 0)
+                spriteImages = SpriteImage.method1519(class45, NamedIdRecord.anInt4469, 0)
                 WorldMapRenderer.aAbstractModelRendererArray4679 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) WorldMapRenderer.aAbstractModelRendererArray4679!![i] = var_renderer!!.method3691(spriteImages[i], true)
                 spriteImages = SpriteImage.method1519(class45, ClampTextureNode.anInt9473, 0)

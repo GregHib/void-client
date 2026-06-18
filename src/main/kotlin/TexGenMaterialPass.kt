@@ -180,7 +180,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
             Class86.anInt1481 = class45.method417("mapflag", 0)
             RangedGraphicsOptionState.anInt5948 = class45.method417("cross", 0)
             CameraNodeList.anInt1742 = class45.method417("mapdots", 0)
-            Class364.anInt4469 = class45.method417("scrollbar", 0)
+            NamedIdRecord.anInt4469 = class45.method417("scrollbar", 0)
             ClampTextureNode.anInt9473 = class45.method417("name_icons", 0)
             LocTypeDefLoader.anInt2510 = class45.method417("floorshadows", 0)
             Class52.anInt4895 = class45.method417("compass", 0)

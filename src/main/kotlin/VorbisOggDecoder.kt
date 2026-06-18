@@ -133,7 +133,7 @@ class VorbisOggDecoder internal constructor(oggstreamstate: OggStreamState) : Og
                 CacheStateResetter.aServerConnectionInfo_125 = ServerConnectionInfo()
                 CacheStateResetter.aServerConnectionInfo_125!!.anInt2143 = i
                 CacheStateResetter.aServerConnectionInfo_125!!.aString2147 = string
-                if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) {
+                if (Class8.aNamedIdRecord_165 != Class55_Sub1.aNamedIdRecord_5271) {
                     CacheStateResetter.aServerConnectionInfo_125!!.anInt2138 = 50000 - -CacheStateResetter.aServerConnectionInfo_125!!.anInt2143
                     CacheStateResetter.aServerConnectionInfo_125!!.anInt2148 = 40000 - -CacheStateResetter.aServerConnectionInfo_125!!.anInt2143
                 }
@@ -141,7 +141,7 @@ class VorbisOggDecoder internal constructor(oggstreamstate: OggStreamState) : Og
                 return true
             }
             var string_4_ = ""
-            if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) string_4_ = ":" + (7000 + i)
+            if (Class55_Sub1.aNamedIdRecord_5271 != Class8.aNamedIdRecord_165) string_4_ = ":" + (7000 + i)
             var string_5_ = ""
             if (BloomGraphicsOptionState.aString5966 != null) string_5_ = "/p=" + BloomGraphicsOptionState.aString5966
             val string_6_ = ("http://" + string + string_4_ + "/l=" + AnimationFrameDefinition.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_5_ + "/j" + (if (!RegionSceneLoader.aBoolean3697) "0" else "1") + ",o" + (if (HashTableContainer.aBoolean6997) "1" else "0") + ",a2")

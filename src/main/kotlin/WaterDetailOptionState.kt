@@ -65,7 +65,7 @@ class WaterDetailOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1779(i: Byte) {
             anInt5985++
-            Class364.method3517(73)
+            NamedIdRecord.method3517(73)
             NodeDeque.aModelLightingConfigArrayArray3335 = null
             Class60.aRenderer1098 = null
             if (i <= 89) anInt5994 = -75

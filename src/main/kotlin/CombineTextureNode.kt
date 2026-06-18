@@ -396,7 +396,7 @@ class CombineTextureNode : AbstractProceduralTextureNode(2, false) {
         @JvmStatic
         fun method3088(i: Int) {
             anInt9228++
-            if (Class76.aClass364_1279 != Class8.aClass364_165 && i == 9) {
+            if (Class76.aNamedIdRecord_1279 != Class8.aNamedIdRecord_165 && i == 9) {
                 try {
                     JavaScriptBridge.method1617(125.toByte(), Class79.aClient1367, "tbrefresh")
                 } catch (throwable: Throwable) {

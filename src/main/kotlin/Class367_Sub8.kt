@@ -113,7 +113,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
         @JvmField
         var anInt7360: Int = 0
         @JvmField
-        var aClass364_7361: Class364? = Class364("WTRC", 1)
+        var aNamedIdRecord_7361: NamedIdRecord? = NamedIdRecord("WTRC", 1)
         @JvmField
         var aClass45_7362: Class45? = null
         @JvmField
@@ -218,7 +218,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: NativeRenderer, normalMapG
             aIntRange_7363 = null
             aClass45_7362 = null
             val i_20_ = -90 % ((-54 - i) / 60)
-            aClass364_7361 = null
+            aNamedIdRecord_7361 = null
         }
 
         init {

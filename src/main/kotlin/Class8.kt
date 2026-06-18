@@ -17,14 +17,14 @@ class Class8 {
         @JvmField
         var anIntArray164: IntArray? = intArrayOf(4, 4, 1, 2, 6, 4, 2, 44, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1)
         @JvmField
-        var aClass364_165: Class364? = null
+        var aNamedIdRecord_165: NamedIdRecord? = null
         @JvmField
         var anInt166: Int = 0
 
         @JvmStatic
         fun method213(i: Byte) {
             anIntArray164 = null
-            aClass364_165 = null
+            aNamedIdRecord_165 = null
         }
 
         @JvmStatic

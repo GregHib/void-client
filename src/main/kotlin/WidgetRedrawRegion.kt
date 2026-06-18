@@ -32,7 +32,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
         var anInt4241: Int = 0
         var anInt4242: Int = 0
         var anInt4243: Int = 0
-        var aClass364_4246: Class364? = Class364("WTI", 5)
+        var aNamedIdRecord_4246: NamedIdRecord? = NamedIdRecord("WTI", 5)
         var aClass70_4247: Class70?
         var anImage4249: Image? = null
         var anIntArray4250: IntArray? = IntArray(64)
@@ -43,7 +43,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
 
         @JvmStatic
         fun method2682(i: Int) {
-            aClass364_4246 = null
+            aNamedIdRecord_4246 = null
             anIntArrayArray4253 = null
             if (i > 5) {
                 aClass70_4247 = null

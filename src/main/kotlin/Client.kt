@@ -640,10 +640,10 @@ class Client : GameAppletFrame() {
         Class39.aScriptCompilerThread_520 = ScriptCompilerThread(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!)
         ClientMachineInfo.aMediaStreamClient_6601 = MediaStreamClient()
         method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
-        if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) CacheLruCache.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
+        if (Class8.aNamedIdRecord_165 != Class55_Sub1.aNamedIdRecord_5271) CacheLruCache.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
         IntHashSet.aClass348_Sub51_3959 = method247(24916)
-        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
-        else if (method2354(Class8.aClass364_165, i xor 0x7044.inv())) {
+        if (Class8.aNamedIdRecord_165 == Class55_Sub1.aNamedIdRecord_5271) GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
+        else if (method2354(Class8.aNamedIdRecord_165, i xor 0x7044.inv())) {
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2148 = 40000 - -GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143
             ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2148 = ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2143 + 40000
@@ -651,7 +651,7 @@ class Client : GameAppletFrame() {
             DirectionalLightTextureNode.aServerConnectionInfo_9443!!.anInt2148 = (DirectionalLightTextureNode.aServerConnectionInfo_9443!!.anInt2143 + 40000)
             ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2138 = 50000 - -ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2143
             DirectionalLightTextureNode.aServerConnectionInfo_9443!!.anInt2138 = (DirectionalLightTextureNode.aServerConnectionInfo_9443!!.anInt2143 + 50000)
-        } else if (Class76.aClass364_1279 == Class8.aClass364_165) {
+        } else if (Class76.aNamedIdRecord_1279 == Class8.aNamedIdRecord_165) {
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = "127.0.0.1"
             ModelHeaderCache.aServerConnectionInfo_3285!!.aString2147 = "127.0.0.1"
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2148 = (40000 + GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143)
@@ -706,7 +706,7 @@ class Client : GameAppletFrame() {
 //            Class374.aClass78_4538 = null;
 //            Class277.aClass137_3568 = null;
 //        }
-        if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) PixelBlender.aBoolean3811 = true
+        if (Class8.aNamedIdRecord_165 != Class55_Sub1.aNamedIdRecord_5271) PixelBlender.aBoolean3811 = true
         AsyncResourceRequest.aString9665 = LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)
     }
 
@@ -1316,11 +1316,11 @@ class Client : GameAppletFrame() {
             DirectionalLightTextureNode.aServerConnectionInfo_9443 = ServerConnectionInfo()
             DirectionalLightTextureNode.aServerConnectionInfo_9443!!.anInt2143 = this.getParameter("demoid")!!.toInt()
             DirectionalLightTextureNode.aServerConnectionInfo_9443!!.aString2147 = this.getParameter("demoaddress")
-            Class8.aClass364_165 = (FacingDirectionNode.method2776((-93).toByte(), this.getParameter("modewhere")!!.toInt()))
-            if (Class76.aClass364_1279 == Class8.aClass364_165) {
-                Class8.aClass364_165 = GroundItemRenderState.aClass364_1657
-            } else if (!method2354(Class8.aClass364_165, -1) && Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
-                Class8.aClass364_165 = Class55_Sub1.aClass364_5271
+            Class8.aNamedIdRecord_165 = (FacingDirectionNode.method2776((-93).toByte(), this.getParameter("modewhere")!!.toInt()))
+            if (Class76.aNamedIdRecord_1279 == Class8.aNamedIdRecord_165) {
+                Class8.aNamedIdRecord_165 = GroundItemRenderState.aNamedIdRecord_1657
+            } else if (!method2354(Class8.aNamedIdRecord_165, -1) && Class55_Sub1.aNamedIdRecord_5271 != Class8.aNamedIdRecord_165) {
+                Class8.aNamedIdRecord_165 = Class55_Sub1.aNamedIdRecord_5271
             }
             SceneRegionState.aHudTabPanel_196 = (method1677(-121, this.getParameter("modewhat")!!.toInt()))
             if (SceneRegionState.aHudTabPanel_196 != ParticleEmitterDef.aHudTabPanel_4953 && SceneRegionState.aHudTabPanel_196 != NoiseTextureNode.aHudTabPanel_9263 && Class68.aHudTabPanel_1189 != SceneRegionState.aHudTabPanel_196) SceneRegionState.aHudTabPanel_196 = Class68.aHudTabPanel_1189
@@ -1977,7 +1977,7 @@ class Client : GameAppletFrame() {
                     ModelHeaderCache.aServerConnectionInfo_3285!!.anInt2143 = strings[1].toInt()
                     DirectionalLightTextureNode.aServerConnectionInfo_9443 = ServerConnectionInfo()
                     DirectionalLightTextureNode.aServerConnectionInfo_9443!!.anInt2143 = strings[2].toInt()
-                    Class8.aClass364_165 = Class76.aClass364_1279
+                    Class8.aNamedIdRecord_165 = Class76.aNamedIdRecord_1279
                     if (strings[3] == "live") SceneRegionState.aHudTabPanel_196 = Class68.aHudTabPanel_1189
                     else if (strings[3] != "rc") {
                         if (strings[3] == "wip") SceneRegionState.aHudTabPanel_196 = ParticleEmitterDef.aHudTabPanel_4953

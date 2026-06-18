@@ -81,7 +81,7 @@ class SpriteArchiveLoader internal constructor(class45: Class45?, class45_9_: Cl
         @JvmField
         var anInt380: Int = 0
         @JvmField
-        var aClass364_382: Class364? = Class364("WTQA", 2)
+        var aNamedIdRecord_382: NamedIdRecord? = NamedIdRecord("WTQA", 2)
         @JvmField
         var anInt383: Int
         var aBoolean384: Boolean = false
@@ -92,7 +92,7 @@ class SpriteArchiveLoader internal constructor(class45: Class45?, class45_9_: Cl
 
         @JvmStatic
         fun method306(bool: Boolean) {
-            aClass364_382 = null
+            aNamedIdRecord_382 = null
             if (bool != true) Companion.method311((-5).toByte(), '\u0002')
         }
 

@@ -83,13 +83,13 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
         @JvmField
         var anInt5268: Int = 0
         @JvmField
-        var aClass364_5271: Class364? = Class364("LIVE", 0)
+        var aNamedIdRecord_5271: NamedIdRecord? = NamedIdRecord("LIVE", 0)
         @JvmField
         var anInt5273: Int = 0
         @JvmStatic
         fun method523(i: Int) {
             if (i <= 80) method524(-87, true, 104, 0)
-            aClass364_5271 = null
+            aNamedIdRecord_5271 = null
         }
 
         @JvmStatic

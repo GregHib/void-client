@@ -8,7 +8,7 @@ object GroundItemRenderState {
     @JvmField
     var anInt1656: Int = 0
     @JvmField
-    var aClass364_1657: Class364? = Class364("WTWIP", 3)
+    var aNamedIdRecord_1657: NamedIdRecord? = NamedIdRecord("WTWIP", 3)
     @JvmField
     var anInt1658: Int = 0
     @JvmField
@@ -58,7 +58,7 @@ object GroundItemRenderState {
 
     @JvmStatic
     fun method1013(i: Byte) {
-        aClass364_1657 = null
+        aNamedIdRecord_1657 = null
         if (i < 111) method1013(17.toByte())
         aTextureFormatInfo_1662 = null
         aAbstractModelRenderer_1664 = null

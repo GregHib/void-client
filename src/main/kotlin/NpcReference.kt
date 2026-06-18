@@ -33,7 +33,7 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
             if (class45.method421(false, Class86.anInt1481)) i_2_++
             if (class45.method421(false, RangedGraphicsOptionState.anInt5948)) i_2_++
             if (class45.method421(false, CameraNodeList.anInt1742)) i_2_++
-            if (class45.method421(false, Class364.anInt4469)) i_2_++
+            if (class45.method421(false, NamedIdRecord.anInt4469)) i_2_++
             if (i != 22388) return 8
             if (class45.method421(false, ClampTextureNode.anInt9473)) i_2_++
             if (class45.method421(false, LocTypeDefLoader.anInt2510)) i_2_++
