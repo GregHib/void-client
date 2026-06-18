@@ -777,7 +777,7 @@ class CollisionMap {
                     anInt4442++
                     var_renderer!!.KA(i_39_, i_41_, i_40_ + i_39_, i_41_ + i)
                     var_renderer.method3675(i_40_, (-125).toByte(), i_39_, i_41_, i, -16777216)
-                    if (LinkedListNode.anInt4290 >= 100) {
+                    if (LinkedListNodeStatics.anInt4290 >= 100) {
                         val f = (MapRegionLoader.anInt1267.toFloat() / MapRegionLoader.anInt1259.toFloat())
                         var i_42_ = i_40_
                         var i_43_ = i

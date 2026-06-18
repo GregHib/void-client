@@ -305,15 +305,15 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
             try {
                 anInt6440++
                 if (MapRegionLoader.aClass348_Sub42_Sub14_1243 != null) {
-                    if (LinkedListNode.anInt4290 < 10) {
+                    if (LinkedListNodeStatics.anInt4290 < 10) {
                         if (!MapRegionLoader.aJs5Archive_1237!!.method413(100, MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625!!)) {
-                            LinkedListNode.anInt4290 = (TerrainShadowBuilderGl2.aJs5Archive_6950!!.method397((MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625!!), 0)) / 10
+                            LinkedListNodeStatics.anInt4290 = (TerrainShadowBuilderGl2.aJs5Archive_6950!!.method397((MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625!!), 0)) / 10
                             return
                         }
                         method126(-16203)
-                        LinkedListNode.anInt4290 = 10
+                        LinkedListNodeStatics.anInt4290 = 10
                     }
-                    if (LinkedListNode.anInt4290 == 10) {
+                    if (LinkedListNodeStatics.anInt4290 == 10) {
                         MapRegionLoader.anInt1266 = (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9644 shr 6 shl 6)
                         MapRegionLoader.anInt1263 = (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9643 shr 6 shl 6)
                         MapRegionLoader.anInt1259 = 64 + ((MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9635 shr 6 shl 6) - MapRegionLoader.anInt1266)
@@ -387,61 +387,61 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                         MapRegionLoader.aTextureDefinitionLoader_1242!!.method1178(256, 1, 256)
                         MapRegionLoader.aSeqDefinitionCache_1245!!.method2014(4096, true)
                         RenderConfigFactory.aVarbitDefLoader_2981!!.method1444(256, 123)
-                        LinkedListNode.anInt4290 = 20
-                    } else if (LinkedListNode.anInt4290 == 20) {
+                        LinkedListNodeStatics.anInt4290 = 20
+                    } else if (LinkedListNodeStatics.anInt4290 == 20) {
                         RegionSceneLoader.method2193(true, (-123).toByte())
                         method756(var_renderer, MapRegionLoader.anInt1250, MapRegionLoader.anInt1253)
-                        LinkedListNode.anInt4290 = 60
+                        LinkedListNodeStatics.anInt4290 = 60
                         RegionSceneLoader.method2193(true, (-122).toByte())
                         method867(true)
                     } else if (i <= -43) {
-                        if (LinkedListNode.anInt4290 == 60) {
+                        if (LinkedListNodeStatics.anInt4290 == 60) {
                             if (MapRegionLoader.aJs5Archive_1237!!.method400(-18308, (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) {
                                 if (!MapRegionLoader.aJs5Archive_1237!!.method413(100, (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) return
                                 MapRegionLoader.aSmoothingBuffer_1246 = (SkeletonSequenceLoader.method2300(MapRegionLoader.aJs5Archive_1237, (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements", ModelBatchBase.aBoolean1900, (-91).toByte()))
                             } else MapRegionLoader.aSmoothingBuffer_1246 = SmoothingBuffer(0)
                             method761()
-                            LinkedListNode.anInt4290 = 70
+                            LinkedListNodeStatics.anInt4290 = 70
                             RegionSceneLoader.method2193(true, (-127).toByte())
                             method867(true)
-                        } else if (LinkedListNode.anInt4290 == 70) {
+                        } else if (LinkedListNodeStatics.anInt4290 == 70) {
                             MinimapSpriteRenderer.aSystemFontGlyphs_4921 = SystemFontGlyphs(var_renderer!!, 11, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 73
+                            LinkedListNodeStatics.anInt4290 = 73
                             RegionSceneLoader.method2193(true, (-123).toByte())
                             method867(true)
-                        } else if (LinkedListNode.anInt4290 == 73) {
+                        } else if (LinkedListNodeStatics.anInt4290 == 73) {
                             GlRectangleTexture.aSystemFontGlyphs_8644 = SystemFontGlyphs(var_renderer!!, 12, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 76
+                            LinkedListNodeStatics.anInt4290 = 76
                             RegionSceneLoader.method2193(true, (-125).toByte())
                             method867(true)
-                        } else if (LinkedListNode.anInt4290 == 76) {
+                        } else if (LinkedListNodeStatics.anInt4290 == 76) {
                             GlShaderObjectHandle.aSystemFontGlyphs_521 = SystemFontGlyphs(var_renderer!!, 14, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 79
+                            LinkedListNodeStatics.anInt4290 = 79
                             RegionSceneLoader.method2193(true, (-123).toByte())
                             method867(true)
-                        } else if (LinkedListNode.anInt4290 == 79) {
+                        } else if (LinkedListNodeStatics.anInt4290 == 79) {
                             HeapDiagnosticsHolder.aSystemFontGlyphs_2252 = SystemFontGlyphs(var_renderer!!, 17, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 82
+                            LinkedListNodeStatics.anInt4290 = 82
                             RegionSceneLoader.method2193(true, (-124).toByte())
                             method867(true)
-                        } else if (LinkedListNode.anInt4290 == 82) {
+                        } else if (LinkedListNodeStatics.anInt4290 == 82) {
                             PingHostListHolder.aSystemFontGlyphs_2333 = SystemFontGlyphs(var_renderer!!, 19, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 85
+                            LinkedListNodeStatics.anInt4290 = 85
                             RegionSceneLoader.method2193(true, (-128).toByte())
                             method867(true)
-                        } else if (LinkedListNode.anInt4290 == 85) {
+                        } else if (LinkedListNodeStatics.anInt4290 == 85) {
                             GlBufferObject.aSystemFontGlyphs_4754 = SystemFontGlyphs(var_renderer!!, 22, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 88
+                            LinkedListNodeStatics.anInt4290 = 88
                             RegionSceneLoader.method2193(true, (-124).toByte())
                             method867(true)
-                        } else if (LinkedListNode.anInt4290 == 88) {
+                        } else if (LinkedListNodeStatics.anInt4290 == 88) {
                             ModelVertexColorBuffer.aSystemFontGlyphs_6581 = SystemFontGlyphs(var_renderer!!, 26, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 91
+                            LinkedListNodeStatics.anInt4290 = 91
                             RegionSceneLoader.method2193(true, (-125).toByte())
                             method867(true)
                         } else {
                             WorldMapRenderer.aSystemFontGlyphs_4672 = SystemFontGlyphs(var_renderer!!, 30, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 100
+                            LinkedListNodeStatics.anInt4290 = 100
                             RegionSceneLoader.method2193(true, (-119).toByte())
                             method867(true)
                             System.gc()

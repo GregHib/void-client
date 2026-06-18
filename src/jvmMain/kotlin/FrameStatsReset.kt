@@ -52,7 +52,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ParticleEmitterFactory.anInt3175 = 0
             DisplaySettingsConfig.anInt7266 = 0
             GameAppletFrame.anInt6 = 0
-            LinkedListNode.anInt4289 = 0
+            LinkedListNodeStatics.anInt4289 = 0
             BufferedMessageQueue.anInt3584 = 0
             LruByteCache.anInt1085 = 0
             ModelDefinition.anInt1827 = 0
@@ -478,7 +478,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GameAppletFrame.anInt39 = 0
             SpriteSheetCache.anInt2567 = 0
             MapElementDecor.anInt10362 = 0
-            LinkedListNode.anInt4296 = 0
+            LinkedListNodeStatics.anInt4296 = 0
             WidgetTextConfig.anInt497 = 0
             NativeRenderer.anInt8081 = 0
             AnimatedModelRenderer.anInt8409 = 0
@@ -739,7 +739,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GameAppletFrame.anInt18 = 0
             GlTexture1D.anInt8554 = 0
             OpenGlModel.anInt5588 = 0
-            LinkedListNode.anInt4287 = 0
+            LinkedListNodeStatics.anInt4287 = 0
             RenderableGroup.anInt5004 = 0
             GlGroundShaderPass.anInt7409 = 0
             OpenGlModel.anInt5616 = 0
@@ -2897,7 +2897,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GameClock.anInt1113 = 0
             NativeTerrainTile.anInt8298 = 0
             RectangleBounds.anInt2154 = 0
-            LinkedListNode.anInt4298 = 0
+            LinkedListNodeStatics.anInt4298 = 0
             ImageFrameCache.anInt4019 = 0
             OpenGlRenderer.anInt7543 = 0
             WarpTextureNode.anInt9430 = 0

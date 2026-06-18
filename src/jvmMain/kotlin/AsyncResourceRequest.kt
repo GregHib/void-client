@@ -62,8 +62,8 @@ abstract class AsyncResourceRequest : HashLinkedListNode() {
                         class318_sub1_sub4.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_5_]
                         BackgroundWorkerThread.aClass318_Sub1Array3226!![i_5_] = class318_sub1_sub4
                     } else {
-                        class318_sub1_sub4.aClass318_Sub1_6379 = aClass318_Sub1Array4293!![i_5_]
-                        aClass318_Sub1Array4293!![i_5_] = class318_sub1_sub4
+                        class318_sub1_sub4.aClass318_Sub1_6379 = LinkedListNodeStatics.aClass318_Sub1Array4293!![i_5_]
+                        LinkedListNodeStatics.aClass318_Sub1Array4293!![i_5_] = class318_sub1_sub4
                         PcmStreamBuffer.aBoolean8870 = true
                     }
                 } else {
@@ -76,8 +76,8 @@ abstract class AsyncResourceRequest : HashLinkedListNode() {
                             class318_sub1_sub4_4_.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_5_]
                             BackgroundWorkerThread.aClass318_Sub1Array3226!![i_5_] = class318_sub1_sub4_4_
                         } else {
-                            class318_sub1_sub4_4_.aClass318_Sub1_6379 = aClass318_Sub1Array4293!![i_5_]
-                            aClass318_Sub1Array4293!![i_5_] = class318_sub1_sub4_4_
+                            class318_sub1_sub4_4_.aClass318_Sub1_6379 = LinkedListNodeStatics.aClass318_Sub1Array4293!![i_5_]
+                            LinkedListNodeStatics.aClass318_Sub1Array4293!![i_5_] = class318_sub1_sub4_4_
                             PcmStreamBuffer.aBoolean8870 = true
                         }
                     } else {

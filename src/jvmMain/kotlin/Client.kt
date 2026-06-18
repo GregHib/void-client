@@ -297,7 +297,6 @@ import ParticleProcessor.Companion.method2693
 import AwtKeyboardListener.Companion.method2705
 import DragDropController.Companion.method2707
 import DragDropController.Companion.method2708
-import LinkedListNode.Companion.method2713
 import AbstractTileShape.Companion.method2719
 import VorbisAudioDecoder.Companion.method2785
 import KeyEventNode.Companion.method2796
@@ -724,7 +723,7 @@ class Client : GameAppletFrame() {
         method1604(11868)
         method1246(-83)
         method3161(0)
-        method2713(0)
+        LinkedListNodeStatics.method2713(0)
         method1004(16.toByte())
         method3478(false)
         method98(i + 32609)

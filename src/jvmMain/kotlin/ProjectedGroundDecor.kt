@@ -859,7 +859,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 for (i in 0..<DrawListState.anInt1477) ModelDataCache.aClass318_Sub1_Sub3Array357!![i] = null
                 DrawListState.anInt1477 = 0
             }
-            LinkedListNode.aClass318_Sub1Array4293 = null
+            LinkedListNodeStatics.aClass318_Sub1Array4293 = null
             BackgroundWorkerThread.aClass318_Sub1Array3226 = null
             OverlayColorTable.aClass318_Sub1Array1754 = null
             if (RemoveRoofsOptionState.aClass318_Sub1Array6066 != null) {

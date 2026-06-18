@@ -104,8 +104,8 @@ class NativeBufferHandle internal constructor(glRenderDevice: GlRenderDevice?, l
                         class318_sub1_sub3.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_22_]
                         BackgroundWorkerThread.aClass318_Sub1Array3226!![i_22_] = class318_sub1_sub3
                     } else {
-                        class318_sub1_sub3.aClass318_Sub1_6379 = LinkedListNode.aClass318_Sub1Array4293!![i_22_]
-                        LinkedListNode.aClass318_Sub1Array4293!![i_22_] = class318_sub1_sub3
+                        class318_sub1_sub3.aClass318_Sub1_6379 = LinkedListNodeStatics.aClass318_Sub1Array4293!![i_22_]
+                        LinkedListNodeStatics.aClass318_Sub1Array4293!![i_22_] = class318_sub1_sub3
                         PcmStreamBuffer.aBoolean8870 = true
                     }
                 } else {

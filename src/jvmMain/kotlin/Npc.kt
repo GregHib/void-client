@@ -1,5 +1,4 @@
 import CircleDrawer.method1496
-import LinkedListNode.Companion.method2711
 import SoundBankPatch.Companion.method2929
 import NpcType.Companion.method802
 import ChatMessageStream.Companion.method136
@@ -127,7 +126,7 @@ class Npc : ProjectedGroundDecor() {
         if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == i && class79!!.aBoolean1369 && class225.aBoolean2913) {
             val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10286, 7))
             val class17_22_ = (if (this.anInt10268 == -1 || (this.aBoolean10213 && class17 != null)) null else ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10268, 7))
-            val class64 = (method2711(
+            val class64 = (LinkedListNodeStatics.method2711(
                 this.anInt10302,
                 i_20_,
                 this.aAbstractModelArray10323[0],

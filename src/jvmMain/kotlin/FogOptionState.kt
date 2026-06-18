@@ -10,7 +10,7 @@ class FogOptionState : GraphicsOptionState {
 
     override fun method1714(i: Int, i_0_: Int): Int {
         anInt6051++
-        if (!LinkedListNode.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
+        if (!LinkedListNodeStatics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
         if (i != 3) method1807(64.toByte())
         return 1
     }
@@ -20,7 +20,7 @@ class FogOptionState : GraphicsOptionState {
     fun method1806(i: Int): Boolean {
         if (i < 85) method1714(-53, -119)
         anInt6049++
-        return LinkedListNode.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))
+        return LinkedListNodeStatics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))
     }
 
     internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
@@ -40,7 +40,7 @@ class FogOptionState : GraphicsOptionState {
     override fun method1716(bool: Boolean) {
         anInt6050++
         if (bool != false) method1714(-51, -128)
-        if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-123).toByte()) && !LinkedListNode.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 0
+        if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-123).toByte()) && !LinkedListNodeStatics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 0
         if (this.anInt3138 < 0 || this.anInt3138 > 2) this.anInt3138 = method1710(20014)
     }
 

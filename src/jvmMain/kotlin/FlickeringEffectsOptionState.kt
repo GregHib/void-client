@@ -188,7 +188,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1754(bool: Boolean, i: Int, i_12_: Int, i_13_: Int): Int {
             anInt5920++
-            if (LinkedListNode.anInt4290 < 100) return -2
+            if (LinkedListNodeStatics.anInt4290 < 100) return -2
             if (bool != true) method1754(false, 115, 112, -104)
             var i_14_ = -2
             var i_15_ = 2147483647

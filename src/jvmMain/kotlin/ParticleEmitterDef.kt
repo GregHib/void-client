@@ -1,6 +1,5 @@
 import ProjectileFactory.Companion.method1613
 import Texture2DProvider.Companion.method2259
-import LinkedListNode.Companion.method2709
 import AbstractModel.Companion.method616
 
 /* Class288 - Decompiled by JODE
@@ -57,7 +56,7 @@ open class ParticleEmitterDef internal constructor(i: Int, screenAnchorAlignment
         fun method2187(i: Int, i_0_: Int, i_1_: Int): Boolean {
             anInt4956++
             if (i_0_ > -70) method2187(-57, -121, 54)
-            return ((method2709(i_1_, i, -1) or method1613(false, i_1_, i) or method2259(0, i_1_, i)) and method616(2, i, i_1_))
+            return ((LinkedListNodeStatics.method2709(i_1_, i, -1) or method1613(false, i_1_, i) or method2259(0, i_1_, i)) and method616(2, i, i_1_))
         }
     }
 }

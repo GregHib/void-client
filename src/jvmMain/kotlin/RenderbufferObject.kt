@@ -136,13 +136,13 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
                 CalendarUtil.anInt4135 = 0
             }
             method1879(false)
-            aClass318_Sub1Array4293 = arrayOfNulls<SceneEntity>(2)
+            LinkedListNodeStatics.aClass318_Sub1Array4293 = arrayOfNulls<SceneEntity>(2)
             BackgroundWorkerThread.aClass318_Sub1Array3226 = arrayOfNulls<SceneEntity>(2)
             OverlayColorTable.aClass318_Sub1Array1754 = arrayOfNulls<SceneEntity>(2)
             RemoveRoofsOptionState.aClass318_Sub1Array6066 = arrayOfNulls<SceneEntity>(10000)
             ProportionalScrollbarComponent.anInt9930 = 0
             CutsceneSequenceData.aClass318_Sub1Array3737 = arrayOfNulls<SceneEntity>(5000)
-            LoadingScreenImageNode.Companion.anInt9504 = 0
+            LoadingScreenImageNode.anInt9504 = 0
             ModelDataCache.aClass318_Sub1_Sub3Array357 = arrayOfNulls<GroundDecorEntity>(5000)
             DrawListState.anInt1477 = 0
             SpriteBlitter.aBooleanArrayArray1572 = (Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) })

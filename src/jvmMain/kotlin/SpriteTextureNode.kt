@@ -12,7 +12,7 @@ open class SpriteTextureNode : AbstractProceduralTextureNode(0, false) {
         if (bool != true) return true
         if (this.anIntArray9232 != null) return true
         if (anInt9243 >= 0) {
-            val spriteImage = (if (FloatCameraTransform.anInt5713 >= 0) SpriteImage.method1521(aJs5Archive_4286!!, FloatCameraTransform.anInt5713, anInt9243) else SpriteImage.method1512(aJs5Archive_4286!!, anInt9243))
+            val spriteImage = (if (FloatCameraTransform.anInt5713 >= 0) SpriteImage.method1521(LinkedListNodeStatics.aJs5Archive_4286!!, FloatCameraTransform.anInt5713, anInt9243) else SpriteImage.method1512(LinkedListNodeStatics.aJs5Archive_4286!!, anInt9243))
             spriteImage!!.method1524()
             this.anIntArray9232 = spriteImage.method1516()
             this.anInt9237 = spriteImage.anInt2702

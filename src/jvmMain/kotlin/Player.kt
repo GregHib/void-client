@@ -341,7 +341,7 @@ class Player : ProjectedGroundDecor() {
             if (class225.aBoolean2913 && (this.aCompositeNpcModelBuilder_10536!!.anInt2093 == -1 || MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(this.aCompositeNpcModelBuilder_10536!!.anInt2093, i + -2).aBoolean1369)) {
                 val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10286, 7)) else null)
                 val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10268, 7)))
-                val class64 = (LinkedListNode.method2711(this.anInt10302, i_53_, this.aAbstractModelArray10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_renderer, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
+                val class64 = (LinkedListNodeStatics.method2711(this.anInt10302, i_53_, this.aAbstractModelArray10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_renderer, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
                 if (class64 != null) {
                     class318_sub4 = (ChatMessageStream.method136(1 + (this.aAbstractModelArray10323).size, true, false))
                     this.aBoolean10324 = true

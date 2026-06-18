@@ -1,6 +1,5 @@
 import ParticleEmitterDef.Companion.method2187
 import ParticleEmitterDefExt.Companion.method2189
-import LinkedListNode.Companion.method2709
 
 /* Class337 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -46,7 +45,7 @@ class GlShaderProgramHandle internal constructor(var_ha_Sub2: OpenGlRenderer?, l
         fun method2659(i: Byte, i_0_: Int, i_1_: Int): Boolean {
             val i_2_ = 24 % ((i - 76) / 42)
             anInt4176++
-            return ((0x70000 and i_0_) != 0) or method2709(i_1_, i_0_, -1) || method2187(i_0_, -84, i_1_)
+            return ((0x70000 and i_0_) != 0) or LinkedListNodeStatics.method2709(i_1_, i_0_, -1) || method2187(i_0_, -84, i_1_)
         }
 
         fun method2660(i: Byte, class348_sub49: ByteBuffer): ParticleEmitterDefExt? {

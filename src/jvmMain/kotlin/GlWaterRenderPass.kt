@@ -107,8 +107,8 @@ class GlWaterRenderPass internal constructor(glRenderDevice: GlRenderDevice, js5
                         class318_sub1_sub2.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_3_]
                         BackgroundWorkerThread.aClass318_Sub1Array3226!![i_3_] = class318_sub1_sub2
                     } else {
-                        class318_sub1_sub2.aClass318_Sub1_6379 = LinkedListNode.aClass318_Sub1Array4293!![i_3_]
-                        LinkedListNode.aClass318_Sub1Array4293!![i_3_] = class318_sub1_sub2
+                        class318_sub1_sub2.aClass318_Sub1_6379 = LinkedListNodeStatics.aClass318_Sub1Array4293!![i_3_]
+                        LinkedListNodeStatics.aClass318_Sub1Array4293!![i_3_] = class318_sub1_sub2
                         PcmStreamBuffer.aBoolean8870 = true
                     }
                 } else {

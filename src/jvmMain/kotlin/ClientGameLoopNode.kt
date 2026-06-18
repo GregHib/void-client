@@ -339,8 +339,8 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                             }
                             DisplaySettingsConfig.anInt7267++
                             if (FogOptionState.anInt6048 != 0) {
-                                anInt4292 += 20
-                                if (anInt4292 >= 400) FogOptionState.anInt6048 = 0
+                                LinkedListNodeStatics.anInt4292 += 20
+                                if (LinkedListNodeStatics.anInt4292 >= 400) FogOptionState.anInt6048 = 0
                             }
                             if (ResourceLoaderThread.aWidgetComponent_3913 != null) {
                                 GroundItemRenderState.anInt1656++

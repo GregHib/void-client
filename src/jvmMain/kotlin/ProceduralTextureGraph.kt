@@ -16,7 +16,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
         try {
             anInt9522++
             TexGenMaterialPass.aRenderConfig6247 = var_renderConfig
-            aJs5Archive_4286 = js5Archive
+            LinkedListNodeStatics.aJs5Archive_4286 = js5Archive
             var i_2_ = 0
             while (aClass348_Sub40Array9520.size > i_2_) {
                 aClass348_Sub40Array9520[i_2_]!!.method3045(i, i_0_, -256)
@@ -114,7 +114,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
     fun method3185(i: Int, var_renderConfig: RenderConfig?, i_21_: Int, bool: Boolean, d: Double, bool_22_: Boolean, js5Archive: Js5Archive?, i_23_: Int): IntArray {
         try {
             TexGenMaterialPass.aRenderConfig6247 = var_renderConfig
-            aJs5Archive_4286 = js5Archive
+            LinkedListNodeStatics.aJs5Archive_4286 = js5Archive
             anInt9526++
             var i_24_ = 0
             while (aClass348_Sub40Array9520.size > i_24_) {
@@ -190,7 +190,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
     fun method3186(i: Int, var_renderConfig: RenderConfig?, bool: Boolean, i_41_: Int, js5Archive: Js5Archive?, i_42_: Int): FloatArray {
         try {
             anInt9525++
-            aJs5Archive_4286 = js5Archive
+            LinkedListNodeStatics.aJs5Archive_4286 = js5Archive
             TexGenMaterialPass.aRenderConfig6247 = var_renderConfig
             if (i_42_ >= -1) method3183(null, -60, 98, false, -0.11623531533038078, null, (-72).toByte())
             var i_43_ = 0

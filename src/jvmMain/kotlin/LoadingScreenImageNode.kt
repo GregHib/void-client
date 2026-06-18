@@ -116,7 +116,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             anInt9500++
             MapRegionLoader.aClass348_Sub42_Sub14_1243 = null
             HeapDiagnosticsHolder.aWidgetComponent_2249 = null
-            anInt4290 = 0
+            LinkedListNodeStatics.anInt4290 = 0
             RegionSceneLoader.aNodeDeque_3705 = null
             method749()
             MapRegionLoader.aNodeDeque_1254!!.method1996(127)

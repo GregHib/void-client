@@ -717,7 +717,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5220) {
-                anIntArray1149!![anInt1173++] = if (LinkedListNode.anInt4290 == 100) 1 else 0
+                anIntArray1149!![anInt1173++] = if (LinkedListNodeStatics.anInt4290 == 100) 1 else 0
                 return
             }
             if (i == 5221) {

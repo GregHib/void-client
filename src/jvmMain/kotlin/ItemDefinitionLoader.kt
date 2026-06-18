@@ -126,12 +126,12 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
                 i_8_ += method260(false)
             }
             if (FogOptionState.anInt6048 == 1) {
-                val class105 = (BoxBlurTextureNode.aAbstractModelRendererArray9467!![LinkedListNode.anInt4292 / 100])
+                val class105 = (BoxBlurTextureNode.aAbstractModelRendererArray9467!![LinkedListNodeStatics.anInt4292 / 100])
                 class105!!.method974(i_7_ - 8, i_8_ + -8)
                 MapTileShape.method2663(-5590, -8 + i_7_, -8 + (i_7_ - -class105.method966()), -8 + i_8_, class105.method980() + -8 + i_8_)
             }
             if (FogOptionState.anInt6048 == 2) {
-                val class105 = (BoxBlurTextureNode.aAbstractModelRendererArray9467!![LinkedListNode.anInt4292 / 100 + 4])
+                val class105 = (BoxBlurTextureNode.aAbstractModelRendererArray9467!![LinkedListNodeStatics.anInt4292 / 100 + 4])
                 class105!!.method974(i_7_ + -8, -8 + i_8_)
                 MapTileShape.method2663(-5590, i_7_ - 8, class105.method966() + i_7_ + -8, -8 + i_8_, class105.method980() + -8 + i_8_)
             }

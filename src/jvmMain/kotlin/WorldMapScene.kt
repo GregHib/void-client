@@ -459,49 +459,49 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                             if (!bools[-i_77_ + 2 and 0x3] || is_95_!![2] != i_102_) {
                                                 if (!bools[-i_77_ + 1 and 0x3] || (is_95_!![1] != i_102_)) {
                                                     if (!(bools[0x3 and -i_77_ + 3]) || (i_102_ != is_95_!![3])) {
-                                                        LinkedListNode.anIntArray4288!![0] = is_96_[i_102_]
-                                                        LinkedListNode.anIntArray4288!![1] = is_97_[i_102_]
-                                                        LinkedListNode.anIntArray4288!![2] = is_99_[i_102_]
+                                                        LinkedListNodeStatics.anIntArray4288!![0] = is_96_[i_102_]
+                                                        LinkedListNodeStatics.anIntArray4288!![1] = is_97_[i_102_]
+                                                        LinkedListNodeStatics.anIntArray4288!![2] = is_99_[i_102_]
                                                         i_119_ = 3
                                                     } else {
-                                                        LinkedListNode.anIntArray4288!![0] = is_96_[i_102_]
-                                                        LinkedListNode.anIntArray4288!![1] = 7
-                                                        LinkedListNode.anIntArray4288!![2] = is_99_[i_102_]
-                                                        LinkedListNode.anIntArray4288!![3] = 7
-                                                        LinkedListNode.anIntArray4288!![4] = is_97_[i_102_]
+                                                        LinkedListNodeStatics.anIntArray4288!![0] = is_96_[i_102_]
+                                                        LinkedListNodeStatics.anIntArray4288!![1] = 7
+                                                        LinkedListNodeStatics.anIntArray4288!![2] = is_99_[i_102_]
+                                                        LinkedListNodeStatics.anIntArray4288!![3] = 7
+                                                        LinkedListNodeStatics.anIntArray4288!![4] = is_97_[i_102_]
                                                         i_119_ = 6
-                                                        LinkedListNode.anIntArray4288!![5] = is_99_[i_102_]
+                                                        LinkedListNodeStatics.anIntArray4288!![5] = is_99_[i_102_]
                                                     }
                                                 } else {
-                                                    LinkedListNode.anIntArray4288!![0] = is_96_[i_102_]
-                                                    LinkedListNode.anIntArray4288!![1] = 3
-                                                    LinkedListNode.anIntArray4288!![2] = is_99_[i_102_]
-                                                    LinkedListNode.anIntArray4288!![3] = 3
-                                                    LinkedListNode.anIntArray4288!![4] = is_97_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![0] = is_96_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![1] = 3
+                                                    LinkedListNodeStatics.anIntArray4288!![2] = is_99_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![3] = 3
+                                                    LinkedListNodeStatics.anIntArray4288!![4] = is_97_[i_102_]
                                                     i_119_ = 6
-                                                    LinkedListNode.anIntArray4288!![5] = is_99_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![5] = is_99_[i_102_]
                                                 }
                                             } else {
-                                                LinkedListNode.anIntArray4288!![0] = is_96_[i_102_]
-                                                LinkedListNode.anIntArray4288!![1] = 5
-                                                LinkedListNode.anIntArray4288!![2] = is_99_[i_102_]
-                                                LinkedListNode.anIntArray4288!![3] = 5
-                                                LinkedListNode.anIntArray4288!![4] = is_97_[i_102_]
+                                                LinkedListNodeStatics.anIntArray4288!![0] = is_96_[i_102_]
+                                                LinkedListNodeStatics.anIntArray4288!![1] = 5
+                                                LinkedListNodeStatics.anIntArray4288!![2] = is_99_[i_102_]
+                                                LinkedListNodeStatics.anIntArray4288!![3] = 5
+                                                LinkedListNodeStatics.anIntArray4288!![4] = is_97_[i_102_]
                                                 i_119_ = 6
-                                                LinkedListNode.anIntArray4288!![5] = is_99_[i_102_]
+                                                LinkedListNodeStatics.anIntArray4288!![5] = is_99_[i_102_]
                                             }
                                         } else {
-                                            LinkedListNode.anIntArray4288!![0] = is_96_[i_102_]
-                                            LinkedListNode.anIntArray4288!![1] = 1
-                                            LinkedListNode.anIntArray4288!![2] = is_99_[i_102_]
-                                            LinkedListNode.anIntArray4288!![3] = 1
-                                            LinkedListNode.anIntArray4288!![4] = is_97_[i_102_]
-                                            LinkedListNode.anIntArray4288!![5] = is_99_[i_102_]
+                                            LinkedListNodeStatics.anIntArray4288!![0] = is_96_[i_102_]
+                                            LinkedListNodeStatics.anIntArray4288!![1] = 1
+                                            LinkedListNodeStatics.anIntArray4288!![2] = is_99_[i_102_]
+                                            LinkedListNodeStatics.anIntArray4288!![3] = 1
+                                            LinkedListNodeStatics.anIntArray4288!![4] = is_97_[i_102_]
+                                            LinkedListNodeStatics.anIntArray4288!![5] = is_99_[i_102_]
                                             i_119_ = 6
                                         }
                                         var i_120_ = 0
                                         while ((i_119_ > i_120_)) {
-                                            val i_121_ = (LinkedListNode.anIntArray4288!![i_120_])
+                                            val i_121_ = (LinkedListNodeStatics.anIntArray4288!![i_120_])
                                             val i_122_ = -(2 * i_77_) + i_121_ and 0x7
                                             val i_123_ = anIntArray3124[i_121_]
                                             val i_124_ = anIntArray3128[i_121_]
@@ -576,49 +576,49 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         if (!bools[-i_77_ and 0x3] || i_102_ != is_95_!![0]) {
                                             if (!bools[2 + -i_77_ and 0x3] || i_102_ != is_95_!![2]) {
                                                 if (bools[0x3 and -i_77_ + 1] && (is_95_!![1] == i_102_)) {
-                                                    LinkedListNode.anIntArray4288!![0] = is_96_[i_102_]
-                                                    LinkedListNode.anIntArray4288!![1] = 3
-                                                    LinkedListNode.anIntArray4288!![2] = is_99_[i_102_]
-                                                    LinkedListNode.anIntArray4288!![3] = 3
-                                                    LinkedListNode.anIntArray4288!![4] = is_97_[i_102_]
-                                                    LinkedListNode.anIntArray4288!![5] = is_99_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![0] = is_96_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![1] = 3
+                                                    LinkedListNodeStatics.anIntArray4288!![2] = is_99_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![3] = 3
+                                                    LinkedListNodeStatics.anIntArray4288!![4] = is_97_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![5] = is_99_[i_102_]
                                                     i_139_ = 6
                                                 } else if ((bools[-i_77_ + 3 and 0x3]) && (i_102_ == is_95_!![3])) {
-                                                    LinkedListNode.anIntArray4288!![0] = is_96_[i_102_]
-                                                    LinkedListNode.anIntArray4288!![1] = 7
-                                                    LinkedListNode.anIntArray4288!![2] = is_99_[i_102_]
-                                                    LinkedListNode.anIntArray4288!![3] = 7
-                                                    LinkedListNode.anIntArray4288!![4] = is_97_[i_102_]
-                                                    LinkedListNode.anIntArray4288!![5] = is_99_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![0] = is_96_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![1] = 7
+                                                    LinkedListNodeStatics.anIntArray4288!![2] = is_99_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![3] = 7
+                                                    LinkedListNodeStatics.anIntArray4288!![4] = is_97_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![5] = is_99_[i_102_]
                                                     i_139_ = 6
                                                 } else {
-                                                    LinkedListNode.anIntArray4288!![0] = is_96_[i_102_]
-                                                    LinkedListNode.anIntArray4288!![1] = is_97_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![0] = is_96_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![1] = is_97_[i_102_]
                                                     i_139_ = 3
-                                                    LinkedListNode.anIntArray4288!![2] = is_99_[i_102_]
+                                                    LinkedListNodeStatics.anIntArray4288!![2] = is_99_[i_102_]
                                                 }
                                             } else {
-                                                LinkedListNode.anIntArray4288!![0] = is_96_[i_102_]
-                                                LinkedListNode.anIntArray4288!![1] = 5
-                                                LinkedListNode.anIntArray4288!![2] = is_99_[i_102_]
-                                                LinkedListNode.anIntArray4288!![3] = 5
-                                                LinkedListNode.anIntArray4288!![4] = is_97_[i_102_]
+                                                LinkedListNodeStatics.anIntArray4288!![0] = is_96_[i_102_]
+                                                LinkedListNodeStatics.anIntArray4288!![1] = 5
+                                                LinkedListNodeStatics.anIntArray4288!![2] = is_99_[i_102_]
+                                                LinkedListNodeStatics.anIntArray4288!![3] = 5
+                                                LinkedListNodeStatics.anIntArray4288!![4] = is_97_[i_102_]
                                                 i_139_ = 6
-                                                LinkedListNode.anIntArray4288!![5] = is_99_[i_102_]
+                                                LinkedListNodeStatics.anIntArray4288!![5] = is_99_[i_102_]
                                             }
                                         } else {
-                                            LinkedListNode.anIntArray4288!![0] = is_96_[i_102_]
-                                            LinkedListNode.anIntArray4288!![1] = 1
-                                            LinkedListNode.anIntArray4288!![2] = is_99_[i_102_]
-                                            LinkedListNode.anIntArray4288!![3] = 1
-                                            LinkedListNode.anIntArray4288!![4] = is_97_[i_102_]
+                                            LinkedListNodeStatics.anIntArray4288!![0] = is_96_[i_102_]
+                                            LinkedListNodeStatics.anIntArray4288!![1] = 1
+                                            LinkedListNodeStatics.anIntArray4288!![2] = is_99_[i_102_]
+                                            LinkedListNodeStatics.anIntArray4288!![3] = 1
+                                            LinkedListNodeStatics.anIntArray4288!![4] = is_97_[i_102_]
                                             i_139_ = 6
-                                            LinkedListNode.anIntArray4288!![5] = is_99_[i_102_]
+                                            LinkedListNodeStatics.anIntArray4288!![5] = is_99_[i_102_]
                                         }
                                         i_102_++
                                         var i_140_ = 0
                                         while ((i_140_ < i_139_)) {
-                                            val i_141_ = (LinkedListNode.anIntArray4288!![i_140_])
+                                            val i_141_ = (LinkedListNodeStatics.anIntArray4288!![i_140_])
                                             val i_142_ = -(2 * i_77_) + i_141_ and 0x7
                                             val i_143_ = anIntArray3124[i_141_]
                                             val i_144_ = anIntArray3128[i_141_]

@@ -45,7 +45,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
             LoadingScreenImageNode.anInt9504 = 0
             RandomAccessFileOnDisk.anInt3049++
             if ((i_2_ and 0x2) == 0) {
-                var class318_sub1 = aClass318_Sub1Array4293!![i_4_]
+                var class318_sub1 = LinkedListNodeStatics.aClass318_Sub1Array4293!![i_4_]
                 while (class318_sub1 != null) {
                     if (!method2778(class318_sub1, bool, `is`, i, i_0_)) {
                         method4001(class318_sub1)

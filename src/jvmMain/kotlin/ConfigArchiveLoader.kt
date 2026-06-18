@@ -10,7 +10,6 @@ import WaterMaterialPass.Companion.method2148
 import CubemapTextureImplSource.Companion.method2271
 import SceneObjectEntity.Companion.method2405
 import ActorEntity.Companion.method2478
-import LinkedListNode.Companion.method2710
 import VorbisOggDecoder.Companion.method2972
 import TurbulenceTextureNode.Companion.method3113
 import GlShadowRenderPass.Companion.method3553
@@ -301,7 +300,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             if (string.length < 6) method94("Invalid buildarea value", i + -36)
                             else {
                                 val i_6_ = (RegionSceneShifter.method3156(true, string.substring(6)))
-                                if (i_6_ < 0 || (method2710(-126, TextureDefinitionCache.anInt2964) < i_6_)) method94("Invalid buildarea value", 53)
+                                if (i_6_ < 0 || (LinkedListNodeStatics.method2710(-126, TextureDefinitionCache.anInt2964) < i_6_)) method94("Invalid buildarea value", 53)
                                 else {
                                     IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i_6_)
                                     method243(37)
