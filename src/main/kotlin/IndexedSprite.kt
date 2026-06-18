@@ -3,7 +3,7 @@
 */
 class IndexedSprite : Sprite {
     @JvmField
-    var anInterface18_Impl3_5196: Interface18_Impl3? = null
+    var anInterface18_Impl3_5196: Renderable2dTexture? = null
 
     constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_16_: Int, `is`: ByteArray?) {
         try {

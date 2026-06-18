@@ -292,7 +292,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         if (i >= -99) method3658(-123, -102, -33, -112)
     }
 
-    override fun method3872(i: Int, i_6_: Int, textureFormatInfo: TextureFormatInfo?, bool: Boolean, i_7_: Int, `is`: ByteArray?): Interface18_Impl1 {
+    override fun method3872(i: Int, i_6_: Int, textureFormatInfo: TextureFormatInfo?, bool: Boolean, i_7_: Int, `is`: ByteArray?): Renderable3dTexture {
         try {
             if (bool != true) aString9916 = null
             anInt9832++
@@ -325,7 +325,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         glLightModelfv(2899, RuntimeException_Sub1.aFloatArray4602, i)
     }
 
-    override fun method3843(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?, i_14_: Int, bool: Boolean): Interface18_Impl3 {
+    override fun method3843(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?, i_14_: Int, bool: Boolean): Renderable2dTexture {
         try {
             anInt9846++
             if (i_14_ != 32) anOpenGL9856 = null
@@ -823,7 +823,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         }
     }
 
-    override fun method3900(`is`: Array<IntArray?>?, bool: Boolean, i: Int, i_53_: Int): Interface18_Impl2 {
+    override fun method3900(`is`: Array<IntArray?>?, bool: Boolean, i: Int, i_53_: Int): RenderableCubeTexture {
         try {
             if (i <= 1) aNodeDeque_9902 = null
             anInt9883++
@@ -833,7 +833,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         }
     }
 
-    override fun method3855(textureFormatInfo: TextureFormatInfo?, i: Int, i_54_: Int, fs: FloatArray?, bool: Boolean, i_55_: Int, i_56_: Int, i_57_: Int): Interface18_Impl3 {
+    override fun method3855(textureFormatInfo: TextureFormatInfo?, i: Int, i_54_: Int, fs: FloatArray?, bool: Boolean, i_55_: Int, i_56_: Int, i_57_: Int): Renderable2dTexture {
         try {
             anInt9890++
             if (!aBoolean9926 && (!AsyncTaskHandle.method1436(60, i) || !AsyncTaskHandle.method1436(-73, i_57_))) {
@@ -872,7 +872,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         return super.method3832(i, (-73).toByte())
     }
 
-    override fun method3830(i: Int, `is`: IntArray?, bool: Boolean, i_60_: Byte, i_61_: Int, i_62_: Int, i_63_: Int): Interface18_Impl3 {
+    override fun method3830(i: Int, `is`: IntArray?, bool: Boolean, i_60_: Byte, i_61_: Int, i_62_: Int, i_63_: Int): Renderable2dTexture {
         try {
             val i_64_ = 101 / ((i_60_ - -21) / 46)
             anInt9830++
@@ -1136,7 +1136,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         anInt9872++
     }
 
-    override fun method3861(i: Int, i_88_: Byte, i_89_: Int, movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?): Interface18_Impl3 {
+    override fun method3861(i: Int, i_88_: Byte, i_89_: Int, movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?): Renderable2dTexture {
         try {
             if (i_88_.toInt() != -84) method3842(false)
             anInt9882++

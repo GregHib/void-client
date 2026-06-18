@@ -47,11 +47,11 @@ class GlEnvMappedWaterPass internal constructor(glRenderDevice: GlRenderDevice, 
         return aBoolean7376
     }
 
-    override fun method3527(i: Int, interface18: Interface18?, i_12_: Int) {
+    override fun method3527(i: Int, renderable: Renderable?, i_12_: Int) {
         if (i_12_ != -16776) method3552(-90)
         anInt7380++
         if (!aBoolean7373) {
-            this.aHa_Sub3_4479.method3850(102.toByte(), interface18)
+            this.aHa_Sub3_4479.method3850(102.toByte(), renderable)
             this.aHa_Sub3_4479.method3923(true, i)
         }
     }

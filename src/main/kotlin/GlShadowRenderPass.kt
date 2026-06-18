@@ -5,8 +5,8 @@ import GlTexture2DRegion.Companion.method1971
 */
 class GlShadowRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : AbstractRenderPass(var_ha_Sub3) {
     private var aBoolean7385 = false
-    override fun method3527(i: Int, interface18: Interface18?, i_0_: Int) {
-        this.aHa_Sub3_4479.method3850(79.toByte(), interface18)
+    override fun method3527(i: Int, renderable: Renderable?, i_0_: Int) {
+        this.aHa_Sub3_4479.method3850(79.toByte(), renderable)
         if (i_0_ != -16776) aBoolean7385 = false
         anInt7381++
         this.aHa_Sub3_4479.method3923(true, i)

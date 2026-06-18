@@ -9,7 +9,7 @@ import ArbVertexProgram.Companion.method3442
 import java.awt.Container
 
 class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?) : AbstractRenderPass(glRenderDevice) {
-    private var anInterface18_Impl3_7390: Interface18_Impl3? = null
+    private var anInterface18_Impl3_7390: Renderable2dTexture? = null
     private val aBoolean7391: Boolean
     private var aTextureHandle_7392: TextureHandle? = null
     private var aTextureHandle_7395: TextureHandle? = null
@@ -67,17 +67,17 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
         anInt7402++
     }
 
-    override fun method3527(i: Int, interface18: Interface18?, i_3_: Int) {
-        if (interface18 != null) {
+    override fun method3527(i: Int, renderable: Renderable?, i_3_: Int) {
+        if (renderable != null) {
             if (aBoolean7399) {
                 this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
                 this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
                 aBoolean7399 = false
             }
-            this.aHa_Sub3_4479.method3850((-122).toByte(), interface18)
+            this.aHa_Sub3_4479.method3850((-122).toByte(), renderable)
             this.aHa_Sub3_4479.method3923(true, i)
         } else if (!aBoolean7399) {
-            this.aHa_Sub3_4479.method3850(99.toByte(), (this.aHa_Sub3_4479.anInterface18_8147))
+            this.aHa_Sub3_4479.method3850(99.toByte(), (this.aHa_Sub3_4479.anRenderable_8147))
             this.aHa_Sub3_4479.method3923(true, 1)
             this.aHa_Sub3_4479.method3849(47.toByte(), 0, SceneObjectEntity.aTrigLookupTables_8737)
             this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aTrigLookupTables_8737)

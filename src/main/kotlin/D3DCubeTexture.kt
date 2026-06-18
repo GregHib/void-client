@@ -2,7 +2,7 @@ import jagdx.IDirect3DBaseTexture
 import jagdx.IDirect3DCubeTexture
 import jagdx.ue.a
 
-class D3DCubeTexture internal constructor(d3dRenderDevice: D3dRenderDevice, private val anInt6329: Int, bool: Boolean, `is`: Array<IntArray?>?) : D3DBaseTexture(d3dRenderDevice, GroundItemRenderState.aTextureFormatInfo_1662!!, MovementDirection.aMovementDirection_1183!!, bool && d3dRenderDevice.aBoolean9802, 6 * anInt6329 * anInt6329), Interface18_Impl2 {
+class D3DCubeTexture internal constructor(d3dRenderDevice: D3dRenderDevice, private val anInt6329: Int, bool: Boolean, `is`: Array<IntArray?>?) : D3DBaseTexture(d3dRenderDevice, GroundItemRenderState.aTextureFormatInfo_1662!!, MovementDirection.aMovementDirection_1183!!, bool && d3dRenderDevice.aBoolean9802, 6 * anInt6329 * anInt6329), RenderableCubeTexture {
     private val anIDirect3DCubeTexture6330: IDirect3DCubeTexture
 
     override fun method63(i: Byte) {

@@ -3,7 +3,7 @@ import jagdx.IDirect3DVertexShader
 class D3dWaterShaderPass internal constructor(private var aD3dRenderDevice_7340: D3dRenderDevice, js5Archive: Js5Archive?, private var aNormalMapGenerator_7339: NormalMapGenerator?) : AbstractRenderPass(aD3dRenderDevice_7340) {
     private val anIDirect3DVertexShader7341: IDirect3DVertexShader?
 
-    override fun method3527(i: Int, interface18: Interface18?, i_0_: Int) {
+    override fun method3527(i: Int, renderable: Renderable?, i_0_: Int) {
         if (i_0_ != -16776) method3526(30, 118, -114)
     }
 

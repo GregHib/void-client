@@ -11,7 +11,7 @@ import kotlin.math.min
 /*
  * Class14
  */
-abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFormatInfo: TextureFormatInfo?, movementDirection: MovementDirection?, i_66_: Int, bool: Boolean) : Interface18 {
+abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFormatInfo: TextureFormatInfo?, movementDirection: MovementDirection?, i_66_: Int, bool: Boolean) : Renderable {
     @JvmField
     var aGlRenderDevice_5082: GlRenderDevice? = null
     @JvmField

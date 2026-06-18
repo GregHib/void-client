@@ -1,7 +1,7 @@
 /* Interface18_Impl3 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-interface Interface18_Impl3 : Interface18 {
+interface Renderable2dTexture : Renderable {
     fun method65(i: Int, `is`: IntArray, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Byte, i_4_: Int)
 
     fun method66(bool: Boolean, bool_5_: Boolean, i: Int)

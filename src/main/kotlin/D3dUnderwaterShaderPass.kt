@@ -4,7 +4,7 @@ class D3dUnderwaterShaderPass internal constructor(private var aD3dRenderDevice_
     private var aBoolean7326 = false
     private val aBoolean7329: Boolean
     private var anIDirect3DVertexShader7330: IDirect3DVertexShader? = null
-    private var anInterface18_Impl3_7331: Interface18_Impl3? = null
+    private var anInterface18_Impl3_7331: Renderable2dTexture? = null
     private var anIDirect3DVertexShader7332: IDirect3DVertexShader? = null
     private var anIDirect3DVertexShader7333: IDirect3DVertexShader? = null
     private var anIDirect3DVertexShader7334: IDirect3DVertexShader? = null
@@ -94,10 +94,10 @@ class D3dUnderwaterShaderPass internal constructor(private var aD3dRenderDevice_
         }
     }
 
-    override fun method3527(i: Int, interface18: Interface18?, i_3_: Int) {
-        if (interface18 == null) {
+    override fun method3527(i: Int, renderable: Renderable?, i_3_: Int) {
+        if (renderable == null) {
             if (!aBoolean7326) {
-                this.aHa_Sub3_4479.method3850((-43).toByte(), (this.aHa_Sub3_4479.anInterface18_8147))
+                this.aHa_Sub3_4479.method3850((-43).toByte(), (this.aHa_Sub3_4479.anRenderable_8147))
                 this.aHa_Sub3_4479.method3923(true, 1)
                 this.aHa_Sub3_4479.method3849(47.toByte(), 0, SceneObjectEntity.aTrigLookupTables_8737)
                 this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aTrigLookupTables_8737)
@@ -109,7 +109,7 @@ class D3dUnderwaterShaderPass internal constructor(private var aD3dRenderDevice_
                 this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
                 aBoolean7326 = false
             }
-            this.aHa_Sub3_4479.method3850((-103).toByte(), interface18)
+            this.aHa_Sub3_4479.method3850((-103).toByte(), renderable)
             this.aHa_Sub3_4479.method3923(true, i)
         }
         if (i_3_ != -16776) anIDirect3DVertexShader7332 = null

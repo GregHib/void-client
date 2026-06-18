@@ -6,7 +6,7 @@ import kotlin.math.sqrt
 */
 class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : AbstractRenderPass(var_ha_Sub3) {
     private var aBoolean7311 = false
-    private var anInterface18_Impl2Array7315: Array<Interface18_Impl2?>? = null
+    private var anInterface18_Impl2Array7315: Array<RenderableCubeTexture?>? = null
     private var aBoolean7317 = false
 
     init {
@@ -53,7 +53,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                     i_2_++
                 }
             }
-            anInterface18_Impl2Array7315 = arrayOfNulls<Interface18_Impl2>(3)
+            anInterface18_Impl2Array7315 = arrayOfNulls<RenderableCubeTexture>(3)
             anInterface18_Impl2Array7315!![0] = this.aHa_Sub3_4479.method3900(is_0_, false, 52, 64)
             anInterface18_Impl2Array7315!![1] = this.aHa_Sub3_4479.method3900(is_1_, false, 3, 64)
             anInterface18_Impl2Array7315!![2] = this.aHa_Sub3_4479.method3900(`is`, false, 17, 64)
@@ -86,7 +86,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                 this.aHa_Sub3_4479.method3849(47.toByte(), 0, (SceneObjectEntity.aTrigLookupTables_8737))
                 this.aHa_Sub3_4479.method3924(true, false, 1, (SceneObjectEntity.aTrigLookupTables_8737), false)
                 this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aTrigLookupTables_8503)
-                this.aHa_Sub3_4479.method3850((-61).toByte(), (this.aHa_Sub3_4479.anInterface18_8147))
+                this.aHa_Sub3_4479.method3850((-61).toByte(), (this.aHa_Sub3_4479.anRenderable_8147))
             }
             this.aHa_Sub3_4479.method3897(0, i + -19574)
             aBoolean7317 = true
@@ -94,9 +94,9 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
         anInt7313++
     }
 
-    override fun method3527(i: Int, interface18: Interface18?, i_12_: Int) {
+    override fun method3527(i: Int, renderable: Renderable?, i_12_: Int) {
         anInt7316++
-        this.aHa_Sub3_4479.method3850(91.toByte(), interface18)
+        this.aHa_Sub3_4479.method3850(91.toByte(), renderable)
         this.aHa_Sub3_4479.method3923(true, i)
         if (i_12_ != -16776) method3525(61, true)
     }

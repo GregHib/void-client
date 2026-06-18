@@ -122,7 +122,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         /* empty */
     }
 
-    override fun method3872(i: Int, i_10_: Int, textureFormatInfo: TextureFormatInfo?, bool: Boolean, i_11_: Int, `is`: ByteArray?): Interface18_Impl1? {
+    override fun method3872(i: Int, i_10_: Int, textureFormatInfo: TextureFormatInfo?, bool: Boolean, i_11_: Int, `is`: ByteArray?): Renderable3dTexture? {
         if (bool != true) return null
         return D3DVolumeTexture(this, textureFormatInfo!!, i_10_, i_11_, i, `is`)
     }
@@ -443,7 +443,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         this.anIDirect3DDevice9810!!.SetRenderState(34, this.anInt8144)
     }
 
-    override fun method3855(textureFormatInfo: TextureFormatInfo?, i: Int, i_40_: Int, fs: FloatArray?, bool: Boolean, i_41_: Int, i_42_: Int, i_43_: Int): Interface18_Impl3? {
+    override fun method3855(textureFormatInfo: TextureFormatInfo?, i: Int, i_40_: Int, fs: FloatArray?, bool: Boolean, i_41_: Int, i_42_: Int, i_43_: Int): Renderable2dTexture? {
         if (i_42_ != 2) aD3DLIGHT9796 = null
         return null
     }
@@ -511,7 +511,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         if (i != 3) method3882(51.toByte())
     }
 
-    override fun method3843(i: Int, i_49_: Int, i_50_: Int, i_51_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?, i_52_: Int, bool: Boolean): Interface18_Impl3 {
+    override fun method3843(i: Int, i_49_: Int, i_50_: Int, i_51_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?, i_52_: Int, bool: Boolean): Renderable2dTexture {
         if (i_52_ != 32) anInt9785 = 94
         return D3DTexture2D(this, textureFormatInfo!!, i_50_, i, bool, `is`, i_49_, i_51_)
     }
@@ -560,7 +560,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 1, i_54_)
     }
 
-    override fun method3830(i: Int, `is`: IntArray?, bool: Boolean, i_55_: Byte, i_56_: Int, i_57_: Int, i_58_: Int): Interface18_Impl3 {
+    override fun method3830(i: Int, `is`: IntArray?, bool: Boolean, i_55_: Byte, i_56_: Int, i_57_: Int, i_58_: Int): Renderable2dTexture {
         val i_59_ = -31 % ((-21 - i_55_) / 46)
         return D3DTexture2D(this, i, i_58_, bool, `is`, i_56_, i_57_)
     }
@@ -569,7 +569,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         /* empty */
     }
 
-    override fun method3900(`is`: Array<IntArray?>?, bool: Boolean, i: Int, i_60_: Int): Interface18_Impl2 {
+    override fun method3900(`is`: Array<IntArray?>?, bool: Boolean, i: Int, i_60_: Int): RenderableCubeTexture {
         if (i <= 1) aFloatArray9797 = null
         return D3DCubeTexture(this, i_60_, bool, `is`)
     }
@@ -700,7 +700,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         if (i != 1) aBoolean9801 = true
     }
 
-    override fun method3861(i: Int, i_73_: Byte, i_74_: Int, movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?): Interface18_Impl3 {
+    override fun method3861(i: Int, i_73_: Byte, i_74_: Int, movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?): Renderable2dTexture {
         return D3DTexture2D(this, textureFormatInfo!!, movementDirection!!, i_74_, i)
     }
 

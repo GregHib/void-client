@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 abstract class TextureCubeProvider : CircleRasterizer() {
-    abstract fun method2266(bool: Boolean): Interface18_Impl2?
+    abstract fun method2266(bool: Boolean): RenderableCubeTexture?
 
     companion object {
         @JvmField

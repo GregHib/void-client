@@ -77,8 +77,8 @@ class FixedFunctionWaterPass internal constructor(var_ha_Sub3: NativeRenderer, n
         if (i != 15192) aShort7355 = 106.toShort()
     }
 
-    override fun method3527(i: Int, interface18: Interface18?, i_22_: Int) {
-        this.aHa_Sub3_4479.method3850(103.toByte(), interface18)
+    override fun method3527(i: Int, renderable: Renderable?, i_22_: Int) {
+        this.aHa_Sub3_4479.method3850(103.toByte(), renderable)
         anInt7358++
         if (i_22_ != -16776) method3520((-127).toByte())
     }

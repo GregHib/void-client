@@ -8,11 +8,11 @@ import kotlin.math.sqrt
 * Visit http://jode.sourceforge.net/
 */
 class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeRenderer) {
-    var anInterface18_Impl1_3452: Interface18_Impl1? = null
-    private var anInterface18_Impl3Array3454: Array<Interface18_Impl3?>? = null
-    var anInterface18_Impl1_3455: Interface18_Impl1? = null
+    var anInterface18_Impl1_3452: Renderable3dTexture? = null
+    private var anInterface18_Impl3Array3454: Array<Renderable2dTexture?>? = null
+    var anInterface18_Impl1_3455: Renderable3dTexture? = null
     var aBoolean3458: Boolean
-    var anInterface18_Impl3Array3459: Array<Interface18_Impl3?>? = null
+    var anInterface18_Impl3Array3459: Array<Renderable2dTexture?>? = null
     fun method2039(i: Int): Boolean {
         anInt3461++
         if (i < 81) this.anInterface18_Impl1_3452 = null
@@ -67,12 +67,12 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
                 `is` = method461(false, BoxedIntHolder.anObject2969, 53146732)
                 aHa_Sub3_3457.method3872(16, 128, SpriteSheetCache.aTextureFormatInfo_2571, true, 128, `is`)
             } else {
-                this.anInterface18_Impl3Array3459 = arrayOfNulls<Interface18_Impl3>(16)
+                this.anInterface18_Impl3Array3459 = arrayOfNulls<Renderable2dTexture>(16)
                 for (i in 0..15) {
                     val `is` = method1331(100.toByte(), CompiledScriptCache.anObject4366, 128 * (i * 128 * 2), 32768)
                     this.anInterface18_Impl3Array3459!![i] = aHa_Sub3_3457.method3944(`is`, 128, SpriteSheetCache.aTextureFormatInfo_2571, 2, true, 128)
                 }
-                anInterface18_Impl3Array3454 = arrayOfNulls<Interface18_Impl3>(16)
+                anInterface18_Impl3Array3454 = arrayOfNulls<Renderable2dTexture>(16)
                 for (i in 0..15) {
                     val `is` = method1331(120.toByte(), BoxedIntHolder.anObject2969, 128 * (128 * i) * 2, 32768)
                     anInterface18_Impl3Array3454!![i] = aHa_Sub3_3457.method3944(`is`, 128, SpriteSheetCache.aTextureFormatInfo_2571, 2, true, 128)

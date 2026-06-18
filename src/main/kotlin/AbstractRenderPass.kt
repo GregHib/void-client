@@ -24,7 +24,7 @@ abstract class AbstractRenderPass internal constructor(var aHa_Sub3_4479: Native
 
     abstract fun method3526(i: Int, i_0_: Int, i_1_: Int)
 
-    abstract fun method3527(i: Int, interface18: Interface18?, i_2_: Int)
+    abstract fun method3527(i: Int, renderable: Renderable?, i_2_: Int)
 
     open fun method3528(i: Int) {
         anInt4481++

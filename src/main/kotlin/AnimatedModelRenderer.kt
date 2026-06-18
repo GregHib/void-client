@@ -8,7 +8,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
     private val aBoolean8396: Boolean
     private var anInt8397 = 0
     private var anInt8400: Int
-    private val anInterface18_Impl3_8403: Interface18_Impl3?
+    private val anInterface18_Impl3_8403: Renderable2dTexture?
     private val aHa_Sub3_8407: NativeRenderer?
     private val aBoolean8408: Boolean
     private val aBoolean8410: Boolean

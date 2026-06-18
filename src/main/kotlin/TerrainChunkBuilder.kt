@@ -12,7 +12,7 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
     private var anInt1546 = 0
     private var anInt1547 = 0
     private var anInterface5_Impl2_1551: Interface5_Impl2? = null
-    private var anInterface18_Impl3_1556: Interface18_Impl3? = null
+    private var anInterface18_Impl3_1556: Renderable2dTexture? = null
     private var anInt1558 = -1
     private val anInt1559: Int
     private val aVideoStreamDecoder_1560: VideoStreamDecoder?

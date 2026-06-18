@@ -11,7 +11,7 @@ class GlWaterRenderPass internal constructor(glRenderDevice: GlRenderDevice, js5
     private val aTextureHandle_7293: TextureHandle?
     private val aNormalMapGenerator_7294: NormalMapGenerator?
     private var aGlRenderDevice_7296: GlRenderDevice? = null
-    override fun method3527(i: Int, interface18: Interface18?, i_4_: Int) {
+    override fun method3527(i: Int, renderable: Renderable?, i_4_: Int) {
         anInt7288++
         if (i_4_ != -16776) aGlRenderDevice_7296 = null
     }

@@ -8,9 +8,9 @@ class BasicGlRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abst
         if (i != 15192) method3540(26, 92, -76, -90, 76, -7, -18, -119, 33, false)
     }
 
-    override fun method3527(i: Int, interface18: Interface18?, i_1_: Int) {
+    override fun method3527(i: Int, renderable: Renderable?, i_1_: Int) {
         if (i_1_ != -16776) aIntRange_7301 = null
-        this.aHa_Sub3_4479.method3850((-105).toByte(), interface18)
+        this.aHa_Sub3_4479.method3850((-105).toByte(), renderable)
         anInt7300++
         this.aHa_Sub3_4479.method3923(true, i)
     }

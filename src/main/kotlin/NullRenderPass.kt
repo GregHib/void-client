@@ -23,8 +23,8 @@ class NullRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abstrac
         }
     }
 
-    override fun method3527(i: Int, interface18: Interface18?, i_12_: Int) {
-        this.aHa_Sub3_4479.method3850(81.toByte(), interface18)
+    override fun method3527(i: Int, renderable: Renderable?, i_12_: Int) {
+        this.aHa_Sub3_4479.method3850(81.toByte(), renderable)
         anInt7280++
         this.aHa_Sub3_4479.method3923(true, i)
         if (i_12_ == -16776) {

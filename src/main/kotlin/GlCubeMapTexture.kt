@@ -4,7 +4,7 @@ import OggMediaStream.Companion.method520
 import jaggl.OpenGL.Companion.glTexImage2Di
 import OpenGlRenderNode.Companion.method3297
 
-class GlCubeMapTexture internal constructor(glRenderDevice: GlRenderDevice?, i: Int, bool: Boolean, `is`: Array<IntArray?>?) : GlTextureBase(glRenderDevice, 34067, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirection.aMovementDirection_1183, 6 * (i * i), bool), Interface18_Impl2 {
+class GlCubeMapTexture internal constructor(glRenderDevice: GlRenderDevice?, i: Int, bool: Boolean, `is`: Array<IntArray?>?) : GlTextureBase(glRenderDevice, 34067, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirection.aMovementDirection_1183, 6 * (i * i), bool), RenderableCubeTexture {
     init {
         try {
             this.aGlRenderDevice_5082!!.method3850((-109).toByte(), this)

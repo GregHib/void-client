@@ -60,7 +60,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var anInt8095: Int = 50
     var anInt8096: Int = 0
     private var aBoolean8097 = false
-    private lateinit var anInterface18Array8098: Array<Interface18?>
+    private lateinit var anRenderableArray8098: Array<Renderable?>
     private var anInt8099 = -1
     private var anInt8100 = 0
     var aBoolean8101: Boolean = false
@@ -118,7 +118,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var anInt8144: Int
     var aBoolean8145: Boolean = false
     var anInt8146: Int = 0
-    var anInterface18_8147: Interface18? = null
+    var anRenderable_8147: Renderable? = null
     var aBoolean8148: Boolean = true
     var aBoolean8149: Boolean = false
     var anInt8150: Int = 128
@@ -299,7 +299,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         if (i_21_ >= 27) {
             anInt8081++
             if (anInt8104 != i || !aBoolean8153 == this.aBoolean8160) {
-                var interface18_impl3: Interface18_Impl3? = null
+                var interface18_impl3: Renderable2dTexture? = null
                 var i_22_ = 0
                 var i_23_: Byte = 0
                 var i_24_ = 0
@@ -625,7 +625,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3829(trigLookupTables: TrigLookupTables?, i: Int, i_56_: Byte, bool: Boolean)
 
-    abstract fun method3830(i: Int, `is`: IntArray?, bool: Boolean, i_57_: Byte, i_58_: Int, i_59_: Int, i_60_: Int): Interface18_Impl3?
+    abstract fun method3830(i: Int, `is`: IntArray?, bool: Boolean, i_57_: Byte, i_58_: Int, i_59_: Int, i_60_: Int): Renderable2dTexture?
 
     override fun method3631(i: Int) {
         anInt7963++
@@ -670,7 +670,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         return anInt8179
     }
 
-    fun method3834(i: Int): Interface18_Impl2? {
+    fun method3834(i: Int): RenderableCubeTexture? {
         if (i != -16777216) anInt8100 = 109
         anInt7934++
         if (aClass299_Sub2_8171 != null) return aClass299_Sub2_8171!!.method2266(true)
@@ -731,7 +731,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt7967++
     }
 
-    fun method3839(i: Int, i_64_: Int, i_65_: Int, bool: Boolean, `is`: IntArray?): Interface18_Impl3? {
+    fun method3839(i: Int, i_64_: Int, i_65_: Int, bool: Boolean, `is`: IntArray?): Renderable2dTexture? {
         try {
             if (i_65_ != -15137) this.aFloat8126 = -0.13315333f
             anInt7965++
@@ -747,7 +747,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3842(bool: Boolean)
 
-    abstract fun method3843(i: Int, i_66_: Int, i_67_: Int, i_68_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?, i_69_: Int, bool: Boolean): Interface18_Impl3?
+    abstract fun method3843(i: Int, i_66_: Int, i_67_: Int, i_68_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?, i_69_: Int, bool: Boolean): Renderable2dTexture?
 
     override fun X(i: Int) {
         var i = i
@@ -854,18 +854,18 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    fun method3850(i: Byte, interface18: Interface18?) {
+    fun method3850(i: Byte, renderable: Renderable?) {
         try {
-            if (anInterface18Array8098[this.anInt8175] !== interface18) {
-                anInterface18Array8098[this.anInt8175] = interface18
-                if (interface18 != null) interface18.method63((-30).toByte())
+            if (anRenderableArray8098[this.anInt8175] !== renderable) {
+                anRenderableArray8098[this.anInt8175] = renderable
+                if (renderable != null) renderable.method63((-30).toByte())
                 else method3819((-107).toByte())
                 anInt8100 = anInt8100 and 0x1.inv()
             }
             val i_84_ = 96 / ((i - 20) / 42)
             anInt7900++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.WA(" + i + ',' + (if (interface18 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("wga.WA(" + i + ',' + (if (renderable != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -964,7 +964,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         return aClass101_Sub2_8084
     }
 
-    abstract fun method3855(textureFormatInfo: TextureFormatInfo?, i: Int, i_92_: Int, fs: FloatArray?, bool: Boolean, i_93_: Int, i_94_: Int, i_95_: Int): Interface18_Impl3?
+    abstract fun method3855(textureFormatInfo: TextureFormatInfo?, i: Int, i_92_: Int, fs: FloatArray?, bool: Boolean, i_93_: Int, i_94_: Int, i_95_: Int): Renderable2dTexture?
 
     private fun method3856(i: Byte) {
         anInt8044++
@@ -1006,7 +1006,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    abstract fun method3861(i: Int, i_99_: Byte, i_100_: Int, movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?): Interface18_Impl3?
+    abstract fun method3861(i: Int, i_99_: Byte, i_100_: Int, movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?): Renderable2dTexture?
 
     abstract fun method3862(i: Int, modelBatchBase: ModelBatchBase?)
 
@@ -1108,7 +1108,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3871(cameraNodeList: CameraNodeList?, i: Int)
 
-    abstract fun method3872(i: Int, i_117_: Int, textureFormatInfo: TextureFormatInfo?, bool: Boolean, i_118_: Int, `is`: ByteArray?): Interface18_Impl1?
+    abstract fun method3872(i: Int, i_117_: Int, textureFormatInfo: TextureFormatInfo?, bool: Boolean, i_118_: Int, `is`: ByteArray?): Renderable3dTexture?
 
     override fun KA(i: Int, i_119_: Int, i_120_: Int, i_121_: Int) {
         anInt7972++
@@ -1425,7 +1425,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt8072++
     }
 
-    fun method3891(fs: FloatArray?, i: Int, i_168_: Int, textureFormatInfo: TextureFormatInfo?, i_169_: Int, bool: Boolean): Interface18_Impl3? {
+    fun method3891(fs: FloatArray?, i: Int, i_168_: Int, textureFormatInfo: TextureFormatInfo?, i_169_: Int, bool: Boolean): Renderable2dTexture? {
         try {
             val i_170_ = 97 / ((i_169_ - -38) / 57)
             anInt8052++
@@ -1543,7 +1543,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3904(-82)
     }
 
-    abstract fun method3900(`is`: Array<IntArray?>?, bool: Boolean, i: Int, i_182_: Int): Interface18_Impl2?
+    abstract fun method3900(`is`: Array<IntArray?>?, bool: Boolean, i: Int, i_182_: Int): RenderableCubeTexture?
 
     abstract fun method3901(i: Byte)
 
@@ -1574,7 +1574,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3946(-32, false)
             method3814(false, false, -2, 112.toByte())
             method3923(!bool, 1)
-            method3850((-47).toByte(), this.anInterface18_8147)
+            method3850((-47).toByte(), this.anRenderable_8147)
             anInt8100 = 1
         }
         if (bool != false) EA(-102, -47, -121, -51)
@@ -2154,7 +2154,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     fun method3930(i: Byte) {
         this.aClass101_Sub2Array8131 = arrayOfNulls<FloatCameraTransform>(this.anInt8090)
-        anInterface18Array8098 = arrayOfNulls<Interface18>(this.anInt8090)
+        anRenderableArray8098 = arrayOfNulls<Renderable>(this.anInt8090)
         this.aRenderConfigFactoryArray8086 = arrayOfNulls<RenderConfigFactory>(this.anInt8090)
         this.aRenderConfigFactoryArray8092 = arrayOfNulls<RenderConfigFactory>(this.anInt8090)
         this.aConfigFlagUtilArray8113 = arrayOfNulls<ConfigFlagUtil>(this.anInt8090)
@@ -2168,7 +2168,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             i_263_++
         }
         this.aClass348_Sub1Array8132 = arrayOfNulls<AbstractTileShape>(-2 + this.anInt8138)
-        this.anInterface18_8147 = method3861(1, (-84).toByte(), 1, MovementDirection.aMovementDirection_1183, GroundItemRenderState.aTextureFormatInfo_1662)
+        this.anRenderable_8147 = method3861(1, (-84).toByte(), 1, MovementDirection.aMovementDirection_1183, GroundItemRenderState.aTextureFormatInfo_1662)
         method3651(ArbVertexProgram(262144))
         this.aModelBatchBase_8204 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078)))))
         this.aModelBatchBase_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4076)))))
@@ -2364,7 +2364,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    fun method3944(`is`: ByteArray?, i: Int, textureFormatInfo: TextureFormatInfo?, i_287_: Int, bool: Boolean, i_288_: Int): Interface18_Impl3? {
+    fun method3944(`is`: ByteArray?, i: Int, textureFormatInfo: TextureFormatInfo?, i_287_: Int, bool: Boolean, i_288_: Int): Renderable2dTexture? {
         try {
             if (i_287_ != 2) return null
             anInt7929++

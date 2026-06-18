@@ -16,15 +16,15 @@ class MaterialTextureCache(var_ha_Sub3: NativeRenderer?, var_renderConfig: Rende
         anInt4527++
     }
 
-    fun method3587(i: Byte, i_0_: Int): Interface18_Impl3? {
+    fun method3587(i: Byte, i_0_: Int): Renderable2dTexture? {
         anInt4529++
         val `object` = aLruByteCache_4531.method583(i_0_.toLong(), 107)
-        if (`object` != null) return `object` as Interface18_Impl3
+        if (`object` != null) return `object` as Renderable2dTexture
         if (!aRenderConfig4528!!.method4(-7953, i_0_)) return null
         if (i > -30) anInt4532 = 37
         val class12 = aRenderConfig4528.method3(i_0_, -6662)
         val i_1_ = (if (!class12!!.aBoolean199) aHa_Sub3_4526!!.anInt8150 else 64)
-        val interface18_impl3: Interface18_Impl3
+        val interface18_impl3: Renderable2dTexture
         if (class12.aBoolean218 && aHa_Sub3_4526!!.method3666()) {
             val fs = aRenderConfig4528.method1(i_1_, 0.7f, false, -30824, i_1_, i_0_)
             interface18_impl3 = aHa_Sub3_4526.method3891(fs, i_1_, i_1_, GroundItemRenderState.aTextureFormatInfo_1662, -109, class12.aByte205.toInt() != 0)!!

@@ -36,7 +36,7 @@ class D3dEnvMappedWaterPass internal constructor(private var aD3dRenderDevice_73
         if (i != 10425) anIDirect3DVertexShader7345 = null
     }
 
-    override fun method3527(i: Int, interface18: Interface18?, i_5_: Int) {
+    override fun method3527(i: Int, renderable: Renderable?, i_5_: Int) {
         if (i_5_ != -16776) method3532(16)
     }
 

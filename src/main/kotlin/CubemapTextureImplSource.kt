@@ -2,8 +2,8 @@
 * Visit http://jode.sourceforge.net/
 */
 class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: NativeRenderer, private val anInt8716: Int, private val anInt8717: Int, private val anInt8715: Int, private val anInt8711: Int, private val anInt8708: Int, private val anInt8714: Int) : TextureCubeProvider() {
-    private var anInterface18_Impl2_8719: Interface18_Impl2? = null
-    override fun method2266(bool: Boolean): Interface18_Impl2? {
+    private var anInterface18_Impl2_8719: RenderableCubeTexture? = null
+    override fun method2266(bool: Boolean): RenderableCubeTexture? {
         if (bool != true) return null
         anInt8720++
         if (anInterface18_Impl2_8719 == null) {
