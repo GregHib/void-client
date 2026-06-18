@@ -5,7 +5,7 @@ import ParticleDetailOptionState.Companion.method1796
 import RemoveRoofsOptionState.Companion.method1813
 import VorbisOggDecoder.Companion.method2967
 import FixedFunctionWaterPass.Companion.method3549
-import OutputStream_Sub2.Companion.method136
+import ChatMessageStream.Companion.method136
 
 /* Class318_Sub1_Sub5_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

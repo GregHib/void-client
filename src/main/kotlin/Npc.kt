@@ -2,7 +2,7 @@ import CircleDrawer.method1496
 import LinkedListNode.Companion.method2711
 import SoundBankPatch.Companion.method2929
 import NpcType.Companion.method802
-import OutputStream_Sub2.Companion.method136
+import ChatMessageStream.Companion.method136
 
 /* Class318_Sub1_Sub3_Sub3_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

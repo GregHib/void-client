@@ -218,7 +218,7 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
             anInt3477++
             val i_2_ = 89 / ((-74 - i) / 42)
             AbstractBloomEffect.aAbstractModelRenderer_6627 = null
-            OutputStream_Sub2.aAbstractModelRenderer_106 = null
+            ChatMessageStream.aAbstractModelRenderer_106 = null
             ConfigVarProgress.aAbstractModelRenderer_4808 = null
             AbstractMenuEntry.aAbstractModelRenderer_1706 = null
         }

@@ -35,7 +35,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
         if (!aBoolean2654) {
             if (i < 63) anOutputStream2657 = null
             anInputStream2652 = InputStream_Sub2()
-            anOutputStream2657 = OutputStream_Sub2()
+            anOutputStream2657 = ChatMessageStream()
         }
     }
 

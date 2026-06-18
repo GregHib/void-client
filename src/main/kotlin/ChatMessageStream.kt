@@ -1,7 +1,10 @@
 import java.io.IOException
 import java.io.OutputStream
 
-class OutputStream_Sub2 : OutputStream() {
+/*
+ * OutputStream_Sub2
+ */
+class ChatMessageStream : OutputStream() {
     @Throws(IOException::class)
     override fun write(i: Int) {
         anInt104++

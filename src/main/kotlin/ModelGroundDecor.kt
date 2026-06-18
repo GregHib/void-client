@@ -2,7 +2,7 @@ import ModelBatchBase.Companion.method1130
 import HostPingThread.Companion.method1301
 import VorbisOggDecoder.Companion.method2967
 import CharacterRenderState.Companion.method2782
-import OutputStream_Sub2.Companion.method136
+import ChatMessageStream.Companion.method136
 
 /* Class318_Sub1_Sub3_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

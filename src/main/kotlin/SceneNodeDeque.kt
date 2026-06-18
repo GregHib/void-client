@@ -201,7 +201,7 @@ class SceneNodeDeque {
                         class348_sub49.writeLong(0L, 70.toByte())
                         class348_sub49.writeString((-5).toByte(), TextureGenerator.aString2496!!)
                         class348_sub49.writeLong(AnimationFrameDefinition.aLong6966, (-124).toByte())
-                        class348_sub49.writeLong(OutputStream_Sub2.aLong108, (-112).toByte())
+                        class348_sub49.writeLong(ChatMessageStream.aLong108, (-112).toByte())
                         class348_sub49.method3390(AbstractFrameBufferSurface.aBigInteger6921, (-76).toByte(), (ActorEntity.aBigInteger8762))
                         method2739(0)
                         val class348_sub47 = ProjectileSpawner.method1478(true)

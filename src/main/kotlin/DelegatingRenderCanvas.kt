@@ -261,7 +261,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     HuffmanCodec.aBoolean3767 = TextureDefinitionCache.anInt2964 >= 96
                     WorldMapLabel.aBoolean4972 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2
                     TextureGenerator.aBoolean2492 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(i + -32350) == 1
-                    OutputStream_Sub2.anInt101 = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) -1 else ParticleSystemState.anInt2204
+                    ChatMessageStream.anInt101 = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) -1 else ParticleSystemState.anInt2204
                     IOException_Sub1.aBoolean86 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1
                     NanoTimer.aBoolean845 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i xor 0x7e5d.inv()) == 1
                     MapTileShape.aClass237_Sub1_4197 = WorldMapSceneSoftware(4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, false)

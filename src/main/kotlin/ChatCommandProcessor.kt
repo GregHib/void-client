@@ -1076,7 +1076,7 @@ object ChatCommandProcessor {
                 TimedTileQueueEntry.aAbstractModelRenderer_9659 = AbstractMenuEntry.aAbstractModelRenderer_1706
                 AbstractBloomEffect.aAbstractModelRenderer_6627 = null
                 MinimapFlagRenderer.aAbstractModelRenderer_1800 = AbstractBloomEffect.aAbstractModelRenderer_6627
-                OutputStream_Sub2.aAbstractModelRenderer_106 = MinimapFlagRenderer.aAbstractModelRenderer_1800
+                ChatMessageStream.aAbstractModelRenderer_106 = MinimapFlagRenderer.aAbstractModelRenderer_1800
                 ConfigVarProgress.aAbstractModelRenderer_4808 = null
                 TimedTileQueueEntry.aAbstractModelRenderer_9658 = ConfigVarProgress.aAbstractModelRenderer_4808
                 PlayerSequenceSelector.aBoolean1211 = true

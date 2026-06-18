@@ -1,7 +1,7 @@
 import ModelHeaderCache.Companion.method1935
 import VorbisOggDecoder.Companion.method2967
 import DirectionUtil.method868
-import OutputStream_Sub2.Companion.method136
+import ChatMessageStream.Companion.method136
 
 /* Class318_Sub1_Sub4_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

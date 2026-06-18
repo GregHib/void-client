@@ -279,7 +279,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 val i_72_ = (if (i_71_ >= this.anInt3117 - 1) i_71_ else i_71_ + 1)
                 for (i_73_ in 0..<this.anInt3114) {
                     val i_74_ = (if (i_73_ < this.anInt3114 + -1) 1 + i_73_ else i_73_)
-                    if (OutputStream_Sub2.anInt101 == -1 || method536(i_73_, false, i_71_, OutputStream_Sub2.anInt101, i_66_)) {
+                    if (ChatMessageStream.anInt101 == -1 || method536(i_73_, false, i_71_, ChatMessageStream.anInt101, i_66_)) {
                         var bool = false
                         var bool_75_ = false
                         val bools = BooleanArray(4)
@@ -995,7 +995,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 for (i_226_ in 0..<this.anInt3117) {
                     var i_227_ = 0
                     while (this.anInt3114 > i_227_) {
-                        if (OutputStream_Sub2.anInt101 == -1 || method536(i_227_, false, i_226_, OutputStream_Sub2.anInt101, i)) {
+                        if (ChatMessageStream.anInt101 == -1 || method536(i_227_, false, i_226_, ChatMessageStream.anInt101, i)) {
                             var i_228_ = aByteArrayArrayArray3126[i]!![i_226_]!![i_227_]
                             val i_229_ = aByteArrayArrayArray3129[i]!![i_226_]!![i_227_]
                             val i_230_ = (aByteArrayArrayArray3123[i]!![i_226_]!![i_227_].toInt() and 0xff)

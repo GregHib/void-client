@@ -1,6 +1,6 @@
 import ModelHeaderCache.Companion.method1935
 import VorbisOggDecoder.Companion.method2967
-import OutputStream_Sub2.Companion.method136
+import ChatMessageStream.Companion.method136
 import jaggl.OpenGL.Companion.glAttachObjectARB
 import jaggl.OpenGL.Companion.glCreateProgramObjectARB
 import jaggl.OpenGL.Companion.glDeleteObjectARB

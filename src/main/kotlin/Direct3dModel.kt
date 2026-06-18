@@ -15,8 +15,8 @@ import HardCacheEntryReference.Companion.method3200
 import CharacterRenderState.Companion.method2783
 import LocConfigModelBuilder.Companion.method3563
 import CachedRgbNoiseTexture.Companion.method565
-import OutputStream_Sub2.Companion.method135
-import OutputStream_Sub2.Companion.method137
+import ChatMessageStream.Companion.method135
+import ChatMessageStream.Companion.method137
 import OpenGlRenderer.Companion.method3743
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.sqrt

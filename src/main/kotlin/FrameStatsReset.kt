@@ -295,7 +295,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DoublyLinkedNodeList.anInt3163 = 0
             FrameBufferObject.anInt4867 = 0
             ScrollbarComponent.anInt8351 = 0
-            OutputStream_Sub2.anInt105 = 0
+            ChatMessageStream.anInt105 = 0
             ModelFacePriorityNode.anInt1873 = 0
             ModelKeyBuilder.anInt6755 = 0
             PackedFlagsAccessor.anInt7096 = 0
@@ -2336,7 +2336,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RenderbufferObject.anInt8570 = 0
             GlFramebufferBlitter.anInt283 = 0
             IdentKitRecolor.anInt149 = 0
-            OutputStream_Sub2.anInt103 = 0
+            ChatMessageStream.anInt103 = 0
             OggBitstreamDecoder.anInt6866 = 0
             OpenGlModel.anInt5622 = 0
             GlTextureBase.anInt5087 = 0
@@ -2828,7 +2828,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Js5Archive.anInt636 = 0
             WallSceneEntity.anInt9946 = 0
             OpenGlRenderer.anInt7638 = 0
-            OutputStream_Sub2.anInt107 = 0
+            ChatMessageStream.anInt107 = 0
             TerrainShadowBuilderGl2.anInt6939 = 0
             AudioResampler.anInt2171 = 0
             Bzip2DecoderState.anInt542 = 0
@@ -3052,7 +3052,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OutgoingPacketNode.anInt7117 = 0
             Font.anInt4047 = 0
             GlRenderDevice.anInt9891 = 0
-            OutputStream_Sub2.anInt104 = 0
+            ChatMessageStream.anInt104 = 0
             NpcDefinitionCache.anInt3317 = 0
             GlRenderDevice.anInt9883 = 0
             SpriteBlitter.anInt1575 = 0
@@ -3496,7 +3496,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             AnimatedModelRenderer.anInt8395 = 0
             WorldMapAreaLabel.anInt8579 = 0
             FlickeringEffectsOptionState.anInt5922 = 0
-            OutputStream_Sub2.anInt102 = 0
+            ChatMessageStream.anInt102 = 0
             AnimatedModelRenderer.anInt8399 = 0
             Direct3dModel.anInt5504 = 0
             FloatCameraTransform.anInt5706 = 0

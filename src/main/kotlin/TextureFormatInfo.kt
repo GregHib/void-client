@@ -1,7 +1,7 @@
 import GlVertexBufferArb.Companion.method2131
 import TexGenMaterialPass.Companion.method2161
 import RegionSceneLoader.method2194
-import OutputStream_Sub2.Companion.method138
+import ChatMessageStream.Companion.method138
 
 /* Class304 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -98,7 +98,7 @@ class TextureFormatInfo internal constructor(var anInt3850: Int) {
                 while (class348_sub42_sub13 != null) {
                     val i_9_: Int
                     if (class348_sub42_sub13.anInt9615 != 1) i_9_ = method2194(-1, class348_sub42_sub13)
-                    else i_9_ = (OutputStream_Sub2.method138((((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as ContactEntry?)!!), false))
+                    else i_9_ = (ChatMessageStream.method138((((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as ContactEntry?)!!), false))
                     if (i_6_ < i_9_) i_6_ = i_9_
                     class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(126.toByte()) as? ContactList?)
                 }

@@ -44,9 +44,9 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
         @JvmStatic
         fun method2270(i: Int, i_4_: Int, var_renderer: Renderer?, string: String?, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int) {
             try {
-                if (OutputStream_Sub2.aAbstractModelRenderer_106 == null || MinimapFlagRenderer.aAbstractModelRenderer_1800 == null) {
+                if (ChatMessageStream.aAbstractModelRenderer_106 == null || MinimapFlagRenderer.aAbstractModelRenderer_1800 == null) {
                     if (CameraRotationStub.aJs5Archive_322!!.method421(false, HudTabPanel.anInt2996) && CameraRotationStub.aJs5Archive_322!!.method421(false, CombineTextureNode.anInt9231)) {
-                        OutputStream_Sub2.aAbstractModelRenderer_106 = (var_renderer!!.method3691(SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, HudTabPanel.anInt2996, 0), true))
+                        ChatMessageStream.aAbstractModelRenderer_106 = (var_renderer!!.method3691(SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, HudTabPanel.anInt2996, 0), true))
                         val spriteImage = SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, CombineTextureNode.anInt9231, 0)
                         MinimapFlagRenderer.aAbstractModelRenderer_1800 = var_renderer.method3691(spriteImage, true)
                         spriteImage!!.method1518()
@@ -54,9 +54,9 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
                     } else var_renderer!!.aa(i_4_, i_5_, i, i_7_, (255 + -NpcConfig.anInt948 shl 24 or CompassSmoother.anInt3376), 1)
                 }
                 anInt8709++
-                if (OutputStream_Sub2.aAbstractModelRenderer_106 != null && MinimapFlagRenderer.aAbstractModelRenderer_1800 != null) {
-                    val i_8_ = ((i - 2 * MinimapFlagRenderer.aAbstractModelRenderer_1800!!.method971()) / OutputStream_Sub2.aAbstractModelRenderer_106!!.method971())
-                    for (i_9_ in 0..<i_8_) OutputStream_Sub2.aAbstractModelRenderer_106!!.method974((MinimapFlagRenderer.aAbstractModelRenderer_1800!!.method971() + i_4_ + (OutputStream_Sub2.aAbstractModelRenderer_106!!.method971() * i_9_)), i_5_)
+                if (ChatMessageStream.aAbstractModelRenderer_106 != null && MinimapFlagRenderer.aAbstractModelRenderer_1800 != null) {
+                    val i_8_ = ((i - 2 * MinimapFlagRenderer.aAbstractModelRenderer_1800!!.method971()) / ChatMessageStream.aAbstractModelRenderer_106!!.method971())
+                    for (i_9_ in 0..<i_8_) ChatMessageStream.aAbstractModelRenderer_106!!.method974((MinimapFlagRenderer.aAbstractModelRenderer_1800!!.method971() + i_4_ + (ChatMessageStream.aAbstractModelRenderer_106!!.method971() * i_9_)), i_5_)
                     MinimapFlagRenderer.aAbstractModelRenderer_1800!!.method974(i_4_, i_5_)
                     AbstractBloomEffect.aAbstractModelRenderer_6627!!.method974((-AbstractBloomEffect.aAbstractModelRenderer_6627!!.method971() + i_4_ - -i), i_5_)
                 }

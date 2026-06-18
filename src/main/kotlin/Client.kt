@@ -518,7 +518,7 @@ import SpriteBlitter.method883
 import IOException_Sub1.Companion.method130
 import InputStream_Sub1.Companion.method124
 import InputStream_Sub2.Companion.method127
-import OutputStream_Sub2.Companion.method139
+import ChatMessageStream.Companion.method139
 import Player.Companion.method2458
 import RuntimeException_Sub1.Companion.method4010
 import NativeSprite.Companion.method161
