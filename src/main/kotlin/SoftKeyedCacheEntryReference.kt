@@ -1,6 +1,6 @@
 import java.lang.ref.SoftReference
 
-class SoftKeyedCacheEntryReference internal constructor(interface14: Interface14?, `object`: Any?, i: Int) : KeyedCacheEntryReference(interface14, i) {
+class SoftKeyedCacheEntryReference internal constructor(keyedComparable: KeyedComparable?, `object`: Any?, i: Int) : KeyedCacheEntryReference(keyedComparable, i) {
     private var aSoftReference10446: SoftReference<*>?
 
     override fun method3205(i: Int): Any? {

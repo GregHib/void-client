@@ -3,7 +3,7 @@ import KeyedCacheEntryReference.Companion.method3203
 /* Class126 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Crc64Hashable : Interface14 {
+class Crc64Hashable : KeyedComparable {
     @JvmField
     var anInt4981: Int = 0
     @JvmField
@@ -40,10 +40,10 @@ class Crc64Hashable : Interface14 {
         return l
     }
 
-    override fun method53(i: Int, interface14: Interface14?): Boolean {
+    override fun method53(i: Int, keyedComparable: KeyedComparable?): Boolean {
         anInt4994++
-        if (interface14 !is Crc64Hashable) return false
-        val class126_3_ = interface14
+        if (keyedComparable !is Crc64Hashable) return false
+        val class126_3_ = keyedComparable
         if (this.anInt4991 != class126_3_.anInt4991) return false
         if (i <= 50) return true
         if (this.anInt4992 != class126_3_.anInt4992) return false

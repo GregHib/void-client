@@ -1,7 +1,7 @@
 /* Class348_Sub42_Sub9_Sub1 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-class HardKeyedCacheEntryReference internal constructor(interface14: Interface14?, `object`: Any?, i: Int) : KeyedCacheEntryReference(interface14, i) {
+class HardKeyedCacheEntryReference internal constructor(keyedComparable: KeyedComparable?, `object`: Any?, i: Int) : KeyedCacheEntryReference(keyedComparable, i) {
     private val anObject10440: Any?
     override fun method3205(i: Int): Any? {
         if (i != 65536) method3205(-30)
@@ -19,7 +19,7 @@ class HardKeyedCacheEntryReference internal constructor(interface14: Interface14
         try {
             anObject10440 = `object`
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ct.<init>(" + (if (interface14 != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ct.<init>(" + (if (keyedComparable != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
