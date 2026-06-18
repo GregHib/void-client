@@ -68,7 +68,7 @@ object ClientLoadStateMachine {
             }
         }
         if (Class56.aClass56_1023 == TimedTileQueueEntry.aClass56_9660) {
-            if (SizeBoundedSoftCache.aRsaPacketDecoder_2327 == null) SizeBoundedSoftCache.aRsaPacketDecoder_2327 = RsaPacketDecoder(ClientMachineInfo.aMediaStreamClient_6601, Class39.aScriptCompilerThread_520, Class52.aBigInteger4896, TimedTileQueueEntry.aBigInteger9657)
+            if (SizeBoundedSoftCache.aRsaPacketDecoder_2327 == null) SizeBoundedSoftCache.aRsaPacketDecoder_2327 = RsaPacketDecoder(ClientMachineInfo.aMediaStreamClient_6601, GlShaderObjectHandle.aScriptCompilerThread_520, Class52.aBigInteger4896, TimedTileQueueEntry.aBigInteger9657)
             if (!SizeBoundedSoftCache.aRsaPacketDecoder_2327!!.method2674(7)) return 0
             method2965(null, 0, true, 0)
             ScrollTexMaterialPass.aBoolean6289 = !LongKeyNode.method2804((-63).toByte())

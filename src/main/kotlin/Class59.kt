@@ -251,11 +251,11 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                         while (i_60_ > i_63_) {
                             var string = NativeRenderer.aStringArray8019!![i_63_]!!
                             if (i_60_ + -1 > i_63_) string = string.substring(0, string.length - 4)
-                            val i_64_ = Class39.aSystemFontGlyphs_521!!.method2564(string)
+                            val i_64_ = GlShaderObjectHandle.aSystemFontGlyphs_521!!.method2564(string)
                             if (i_61_ < i_64_) i_61_ = i_64_
                             i_63_++
                         }
-                        i_62_ = (i_60_ * Class39.aSystemFontGlyphs_521!!.method2565() - -(Class39.aSystemFontGlyphs_521!!.method2560() / 2))
+                        i_62_ = (i_60_ * GlShaderObjectHandle.aSystemFontGlyphs_521!!.method2565() - -(GlShaderObjectHandle.aSystemFontGlyphs_521!!.method2560() / 2))
                     }
                     var i_65_ = i_56_ / 2 + class348_sub21.anInt6853
                     var i_66_ = class348_sub21.anInt6855
@@ -285,7 +285,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                     if (class42.aString597 != null) {
                         i_69_ = i_66_
                         i_68_ = i_65_ + -(i_61_ / 2) - 5
-                        i_71_ = 3 + (i_60_ * Class39.aSystemFontGlyphs_521!!.method2565() + i_69_)
+                        i_71_ = 3 + (i_60_ * GlShaderObjectHandle.aSystemFontGlyphs_521!!.method2565() + i_69_)
                         i_70_ = i_61_ + (i_68_ + 10)
                         if (class42.anInt602 != 0) var_renderer!!.method3675(-i_68_ + i_70_, (-125).toByte(), i_68_, i_69_, i_71_ - i_69_, class42.anInt602)
                         if (class42.anInt604 != 0) var_renderer!!.method3668(-i_68_ + i_70_, i_69_, class42.anInt604, i_68_, -i_69_ + i_71_, 67)
@@ -293,8 +293,8 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                         while (i_60_ > i_72_) {
                             var string = NativeRenderer.aStringArray8019!![i_72_]!!
                             if (i_72_ < i_60_ + -1) string = string.substring(0, -4 + string.length)
-                            Class39.aSystemFontGlyphs_521!!.method2563(var_renderer, string, i_65_, i_66_, (class42.anInt580), true)
-                            i_66_ += Class39.aSystemFontGlyphs_521!!.method2565()
+                            GlShaderObjectHandle.aSystemFontGlyphs_521!!.method2563(var_renderer, string, i_65_, i_66_, (class42.anInt580), true)
+                            i_66_ += GlShaderObjectHandle.aSystemFontGlyphs_521!!.method2565()
                             i_72_++
                         }
                     }

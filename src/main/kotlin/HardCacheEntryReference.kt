@@ -273,7 +273,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == InputStream_Sub2.aIntRange_82) {
-                method128(Class39.aClass74_515, 8.toByte())
+                method128(GlShaderObjectHandle.aClass74_515, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }

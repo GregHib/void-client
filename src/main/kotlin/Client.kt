@@ -440,7 +440,7 @@ import BufferedFileReader.method3611
 import PlayerAppearanceUpdateDecoder.method3613
 import GlRenderDevice.Companion.method3968
 import WidgetTextConfig.Companion.method363
-import Class39.Companion.method367
+import GlShaderObjectHandle.Companion.method367
 import Class4.Companion.method177
 import Class40.Companion.method370
 import Class43.Companion.method380
@@ -637,7 +637,7 @@ class Client : GameAppletFrame() {
         frame.pack()
         frame.dispose()
         method3556(false)
-        Class39.aScriptCompilerThread_520 = ScriptCompilerThread(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!)
+        GlShaderObjectHandle.aScriptCompilerThread_520 = ScriptCompilerThread(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!)
         ClientMachineInfo.aMediaStreamClient_6601 = MediaStreamClient()
         method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
         if (Class8.aNamedIdRecord_165 != Class55_Sub1.aNamedIdRecord_5271) CacheLruCache.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
@@ -1275,7 +1275,7 @@ class Client : GameAppletFrame() {
         }
         method1265(16)
         ClientMachineInfo.aMediaStreamClient_6601!!.method1901(i xor 0x44.inv())
-        Class39.aScriptCompilerThread_520!!.method1051(true)
+        GlShaderObjectHandle.aScriptCompilerThread_520!!.method1051(true)
         if (Class76.aHostPingThread_1286 != null) {
             Class76.aHostPingThread_1286!!.method1303(16.toByte())
             Class76.aHostPingThread_1286 = null

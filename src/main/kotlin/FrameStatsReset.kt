@@ -546,7 +546,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LocTypeDefinition.anInt3999 = 0
             UnderlayDefinition.anInt2887 = 0
             AbstractBloomEffect.anInt6622 = 0
-            Class39.anInt514 = 0
+            GlShaderObjectHandle.anInt514 = 0
             Class45.anInt647 = 0
             PackedFlagsAccessor.anInt7094 = 0
             ItemDefinition.anInt2796 = 0
@@ -1541,7 +1541,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TextureMaterialGroup.anInt9670 = 0
             TimedTileQueueEntry.anInt9646 = 0
             Class59_Sub2.anInt5310 = 0
-            Class39.anInt516 = 0
+            GlShaderObjectHandle.anInt516 = 0
             SpriteStore.anInt362 = 0
             CollisionMap.anInt4431 = 0
             SoftwareSpriteRaster.anInt1610 = 0

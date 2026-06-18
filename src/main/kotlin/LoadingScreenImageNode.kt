@@ -126,7 +126,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             MinimapSpriteRenderer.aSystemFontGlyphs_4921 = null
             PingHostListHolder.aSystemFontGlyphs_2333 = null
             ModelVertexColorBuffer.aSystemFontGlyphs_6581 = null
-            Class39.aSystemFontGlyphs_521 = null
+            GlShaderObjectHandle.aSystemFontGlyphs_521 = null
             Class75.aSmoothingBuffer_1246 = null
             GlRectangleTexture.aSystemFontGlyphs_8644 = null
             Class48.anInt859 = -1
@@ -149,7 +149,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
                 if (`is` != null) AbstractTileShape.anIntArray6547 = `is`
                 TerrainTile.aClass45_4585 = class45
                 if (i >= -6) method3177(-36, true)
-                Class39.aClass45_518 = class45_15_
+                GlShaderObjectHandle.aClass45_518 = class45_15_
             } catch (runtimeexception: RuntimeException) {
                 throw method2929(runtimeexception, ("lk.F(" + (if (class45 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class45_15_ != null) "{...}" else "null") + ')'))
             }

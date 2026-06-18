@@ -164,7 +164,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
                     return renderableEntry
                 }
                 val i_27_ = -118 / ((-33 - i_25_) / 44)
-                val spriteImages = SpriteImage.method1523(Class39.aClass45_518!!, i)
+                val spriteImages = SpriteImage.method1523(GlShaderObjectHandle.aClass45_518!!, i)
                 if (spriteImages == null) return null
                 val class143 = RangedGraphicsOptionState.method1766((-39).toByte(), i, TerrainTile.aClass45_4585!!)
                 if (class143 == null) return null

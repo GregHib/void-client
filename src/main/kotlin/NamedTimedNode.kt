@@ -54,7 +54,7 @@ class NamedTimedNode internal constructor(@JvmField var aString8783: String?, i:
                     `is`[i_6_] = (class57!!.anInt1047 * class57.anInt1054)
                     i_6_++
                 }
-                Class39.method366(NativeLibraryUnloader.aClass57Array2974 as Array<Any?>, (-123).toByte(), `is`)
+                GlShaderObjectHandle.method366(NativeLibraryUnloader.aClass57Array2974 as Array<Any?>, (-123).toByte(), `is`)
             }
             return NativeLibraryUnloader.aClass57Array2974
         }

@@ -15,7 +15,7 @@ open class ShaderObject {
         var anInt4100: Int = 0
         var anInt4101: Int = 0
 
-        fun method2608(glRenderDevice: GlRenderDevice?, `is`: ByteArray?, i: Int, i_0_: Int): Class39? {
+        fun method2608(glRenderDevice: GlRenderDevice?, `is`: ByteArray?, i: Int, i_0_: Int): GlShaderObjectHandle? {
             try {
                 anInt4099++
                 if (`is` == null || `is`.size == 0) return null
@@ -37,7 +37,7 @@ open class ShaderObject {
                         return null
                     }
                 }
-                return Class39(glRenderDevice, l, i_0_)
+                return GlShaderObjectHandle(glRenderDevice, l, i_0_)
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("dea.E(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ')'))
             }

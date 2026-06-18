@@ -1,7 +1,7 @@
 /* Class39 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class39 internal constructor(glRenderDevice: GlRenderDevice?, l: Long, i: Int) {
+class GlShaderObjectHandle internal constructor(glRenderDevice: GlRenderDevice?, l: Long, i: Int) {
     var aLong517: Long = 0
     private val aGlRenderDevice_519: GlRenderDevice?
 

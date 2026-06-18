@@ -533,19 +533,19 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
         }
 
         @JvmStatic
-        fun method2582(glRenderDevice: GlRenderDevice?, class39s: Array<Class39?>?, i: Int): Class89? {
+        fun method2582(glRenderDevice: GlRenderDevice?, glShaderObjectHandles: Array<GlShaderObjectHandle?>?, i: Int): Class89? {
             try {
                 anInt4065++
                 if (i != -2113) aRectangleRegion_4062 = null
                 var i_100_ = 0
-                while (class39s!!.size > i_100_) {
-                    if (class39s[i_100_] == null || class39s[i_100_]!!.aLong517 <= 0) return null
+                while (glShaderObjectHandles!!.size > i_100_) {
+                    if (glShaderObjectHandles[i_100_] == null || glShaderObjectHandles[i_100_]!!.aLong517 <= 0) return null
                     i_100_++
                 }
                 val l = glCreateProgramObjectARB()
                 var i_101_ = 0
-                while (class39s.size > i_101_) {
-                    glAttachObjectARB(l, (class39s[i_101_]!!.aLong517))
+                while (glShaderObjectHandles.size > i_101_) {
+                    glAttachObjectARB(l, (glShaderObjectHandles[i_101_]!!.aLong517))
                     i_101_++
                 }
                 glLinkProgramARB(l)
@@ -560,17 +560,17 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                     }
                     if (SoundEnvelope.anIntArray2744!![0] == 0) {
                         var i_102_ = 0
-                        while (class39s.size > i_102_) {
-                            glDetachObjectARB(l, (class39s[i_102_]!!.aLong517))
+                        while (glShaderObjectHandles.size > i_102_) {
+                            glDetachObjectARB(l, (glShaderObjectHandles[i_102_]!!.aLong517))
                             i_102_++
                         }
                         glDeleteObjectARB(l)
                         return null
                     }
                 }
-                return Class89(glRenderDevice, l, class39s)
+                return Class89(glRenderDevice, l, glShaderObjectHandles)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("da.M(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (class39s != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("da.M(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (glShaderObjectHandles != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

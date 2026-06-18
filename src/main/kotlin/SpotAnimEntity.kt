@@ -415,7 +415,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                             RegionSceneLoader.method2193(true, (-125).toByte())
                             method867(true)
                         } else if (LinkedListNode.anInt4290 == 76) {
-                            Class39.aSystemFontGlyphs_521 = SystemFontGlyphs(var_renderer!!, 14, true, ParticleSystemRenderer.aCanvas3869!!)
+                            GlShaderObjectHandle.aSystemFontGlyphs_521 = SystemFontGlyphs(var_renderer!!, 14, true, ParticleSystemRenderer.aCanvas3869!!)
                             LinkedListNode.anInt4290 = 79
                             RegionSceneLoader.method2193(true, (-123).toByte())
                             method867(true)

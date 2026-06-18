@@ -209,7 +209,7 @@ class InputStream_Sub2 : InputStream() {
                     if (NpcEntityUpdater.method2112(i.toInt() xor 0x73, WidgetRedrawTracker.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && Class367_Sub4.anInt7319 > i_87_ && (i_88_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
                 } else {
                     if (i.toInt() != 8) aIntRange_82 = null
-                    if (Class39.aClass74_515 == class74) {
+                    if (GlShaderObjectHandle.aClass74_515 == class74) {
                         val i_89_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_90_ = Class73.anInt4786 + (0x7 and i_89_)
                         val i_91_ = i_90_ + Class90.regionTileY
