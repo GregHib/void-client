@@ -1,5 +1,5 @@
 import BlankTextureNode.Companion.method3098
-import Class9.method215
+import NativeLibraryState.method215
 import jaggl.OpenGL
 import java.awt.Canvas
 

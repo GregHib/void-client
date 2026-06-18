@@ -505,7 +505,7 @@ import MapSceneCache.Companion.method825
 import WhirlpoolHash.Companion.method830
 import SceneNodeDeque.Companion.method843
 import NativeBufferHandle.Companion.method851
-import Class9.method216
+import NativeLibraryState.method216
 import RegionMapDecoder.method852
 import NpcUpdateProcessor.method857
 import NpcSpawnDecoder.method860
@@ -2197,7 +2197,7 @@ class Client : GameAppletFrame() {
                                                     i_67_ = ((LocalPlayerState.aPlayer_1907!!.y) - i_68_ shr 9) - (i_65_ shr 2)
                                                 }
                                                 if (RenderNode.aBoolean9722 && ((WidgetTextConfig.anInt500 and 0x40) != 0)) {
-                                                    val class46_69_ = (NpcReference.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046))
+                                                    val class46_69_ = (NpcReference.method2957(NativeLibraryState.anInt169, (-54).toByte(), OrientationRotator.anInt2046))
                                                     if (class46_69_ != null) MinimapPolygonDrawer.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), ItemNameResolver.aString5001, 1L, (FloatBuffer.anInt9747))
                                                     else method2678(-2049)
                                                 } else {

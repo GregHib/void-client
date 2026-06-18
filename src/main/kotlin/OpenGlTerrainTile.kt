@@ -821,7 +821,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
 
         @JvmStatic
         fun method4001(class318_sub1: SceneEntity) {
-            Class9.aRenderer171!!.H(class318_sub1.x, (class318_sub1.anInt6382 + (class318_sub1.method2394(true) shr 1)), class318_sub1.y, LoadingScreenImageNode.anIntArray9505)
+            NativeLibraryState.aRenderer171!!.H(class318_sub1.x, (class318_sub1.anInt6382 + (class318_sub1.method2394(true) shr 1)), class318_sub1.y, LoadingScreenImageNode.anIntArray9505)
             class318_sub1.anInt6386 = LoadingScreenImageNode.anIntArray9505!![0]
             class318_sub1.anInt6380 = LoadingScreenImageNode.anIntArray9505!![1]
             class318_sub1.anInt6389 = LoadingScreenImageNode.anIntArray9505!![2]

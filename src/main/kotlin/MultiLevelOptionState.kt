@@ -97,7 +97,7 @@ class MultiLevelOptionState : GraphicsOptionState {
             SpriteComponent.anInt8368 = ParticleSystemRenderer.anInt3855
             FloatBuffer.anInt9751 = Class367_Sub11.anInt7396
             SequencedWallEntity.anInt10163 = -1
-            Class9.anInt167 = SequencedWallEntity.anInt10163
+            NativeLibraryState.anInt167 = SequencedWallEntity.anInt10163
             SequencedGroundDecor.anInt10047 = GlslMaterialPass.anInt6246
             val i_12_ = -99 % ((i - 11) / 56)
             BloomGraphicsOptionState.anInt5973 = 0

@@ -1183,7 +1183,7 @@ object ChatCommandProcessor {
                 CompassSmoother.anInt3373 = i_135_
                 WeaveTextureNode.anInt9282 = 3
                 SequencedWallEntity.anInt10163 = -1
-                Class9.anInt167 = SequencedWallEntity.anInt10163
+                NativeLibraryState.anInt167 = SequencedWallEntity.anInt10163
                 return
             }
             if (i == 5503) {
@@ -1233,7 +1233,7 @@ object ChatCommandProcessor {
                 RegionTileNode.anInt6652 = (i_138_ shl 9) + 256
                 WeaveTextureNode.anInt9282 = 4
                 SequencedWallEntity.anInt10163 = -1
-                Class9.anInt167 = SequencedWallEntity.anInt10163
+                NativeLibraryState.anInt167 = SequencedWallEntity.anInt10163
                 return
             }
             if (i == 5512) {
@@ -1259,10 +1259,10 @@ object ChatCommandProcessor {
                     i_141_ -= RegionMapDecoder.regionTileY
                     if (i_141_ < 0) i_141_ = 0
                     else if (i_141_ >= RangeThresholdTextureNode.anInt9109) i_141_ = RangeThresholdTextureNode.anInt9109
-                    Class9.anInt167 = (i_140_ shl 9) + 256
+                    NativeLibraryState.anInt167 = (i_140_ shl 9) + 256
                     SequencedWallEntity.anInt10163 = (i_141_ shl 9) + 256
                 } else {
-                    Class9.anInt167 = -1
+                    NativeLibraryState.anInt167 = -1
                     SequencedWallEntity.anInt10163 = -1
                     return
                 }

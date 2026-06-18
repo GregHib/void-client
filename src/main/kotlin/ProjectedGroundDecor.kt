@@ -887,11 +887,11 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             BooleanGraphicsOptionState.aShortArrayArray5847 = null
             if (NormalMapTextureNode.aSceneLoaderThreadArray9432 != null) {
                 WalkingTypeUtil.method1978()
-                Class9.aRenderer171!!.method3631(1)
-                Class9.aRenderer171!!.method3659(0)
+                NativeLibraryState.aRenderer171!!.method3631(1)
+                NativeLibraryState.aRenderer171!!.method3659(0)
             }
             if (MapElementDefinitionCache.aCacheIndexManagerArray3982 != null) MapElementDefinitionCache.aCacheIndexManagerArray3982 = null
-            Class9.aRenderer171 = null
+            NativeLibraryState.aRenderer171 = null
         }
 
         init {

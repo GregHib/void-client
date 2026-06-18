@@ -92,9 +92,9 @@ class RenderbufferObject : HashLinkedListNode, Interface9 {
         var aLong8573: Long = 0L
 
         fun method3171(var_renderer: Renderer?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, bool: Boolean, bool_5_: Boolean) {
-            Class9.aRenderer171 = var_renderer
+            NativeLibraryState.aRenderer171 = var_renderer
             Npc.anInt10503 = i
-            VoronoiNoiseTextureNode.aBoolean9121 = (Npc.anInt10503 > 1 && Class9.aRenderer171!!.method3708())
+            VoronoiNoiseTextureNode.aBoolean9121 = (Npc.anInt10503 > 1 && NativeLibraryState.aRenderer171!!.method3708())
             Tooltip.anInt4459 = i_0_
             ArchiveFileConditionWrapper.anInt3465 = 1 shl Tooltip.anInt4459
             TheoraVideoStream.anInt9037 = ArchiveFileConditionWrapper.anInt3465 shr 1
@@ -150,10 +150,10 @@ class RenderbufferObject : HashLinkedListNode, Interface9 {
                 SolidFillComponent.aBooleanArrayArrayArray8361 = arrayOfNulls<Array<BooleanArray?>>(i_1_)
                 if (NormalMapTextureNode.aSceneLoaderThreadArray9432 != null) method1978()
                 NormalMapTextureNode.aSceneLoaderThreadArray9432 = arrayOfNulls<SceneLoaderThread>(Npc.anInt10503)
-                Class9.aRenderer171!!.method3631((NormalMapTextureNode.aSceneLoaderThreadArray9432)!!.size + 1)
-                Class9.aRenderer171!!.method3659(0)
+                NativeLibraryState.aRenderer171!!.method3631((NormalMapTextureNode.aSceneLoaderThreadArray9432)!!.size + 1)
+                NativeLibraryState.aRenderer171!!.method3659(0)
                 for (i_6_ in NormalMapTextureNode.aSceneLoaderThreadArray9432!!.indices) {
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![i_6_] = SceneLoaderThread(i_6_ + 1, Class9.aRenderer171!!)
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![i_6_] = SceneLoaderThread(i_6_ + 1, NativeLibraryState.aRenderer171!!)
                     Thread(NormalMapTextureNode.aSceneLoaderThreadArray9432!![i_6_], "wr" + i_6_).start()
                 }
                 val i_7_: Int

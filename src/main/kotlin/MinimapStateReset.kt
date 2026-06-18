@@ -11,7 +11,7 @@ object MinimapStateReset {
         for (i_0_ in i..4) SpotAnimDefinition.aBooleanArray2374!![i_0_] = false
         anInt1870++
         SequencedWallEntity.anInt10163 = -1
-        Class9.anInt167 = SequencedWallEntity.anInt10163
+        NativeLibraryState.anInt167 = SequencedWallEntity.anInt10163
         WeaveTextureNode.anInt9282 = 1
         NativeShaderProgram.anInt9775 = -1
         BloomGraphicsOptionState.anInt5973 = 0

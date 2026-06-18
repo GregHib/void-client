@@ -2849,7 +2849,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ParameterizedText.anInt9561 = 0
             OpenGlModel.anInt5535 = 0
             LinkedListIterator.anInt2116 = 0
-            Class9.anInt170 = 0
+            NativeLibraryState.anInt170 = 0
             Npc.anInt10515 = 0
             ArchiveResourceProvider.anInt6356 = 0
             ModelDataCache.anInt356 = 0

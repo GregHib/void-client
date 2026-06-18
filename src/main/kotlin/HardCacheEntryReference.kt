@@ -1006,7 +1006,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 WallSceneEntity.method2397((-125).toByte())
                 if (i == -1) {
-                    Class9.anInt167 = -1
+                    NativeLibraryState.anInt167 = -1
                     SequencedWallEntity.anInt10163 = -1
                 } else {
                     var i_122_ = 0x3fff and (i shr 14)
@@ -1016,7 +1016,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     if (i_122_ >= 0) {
                         if (Class367_Sub4.anInt7319 <= i_122_) i_122_ = Class367_Sub4.anInt7319
                     } else i_122_ = 0
-                    Class9.anInt167 = (i_122_ shl 9) - -256
+                    NativeLibraryState.anInt167 = (i_122_ shl 9) - -256
                     if (i_123_ >= 0) {
                         if (i_123_ >= RangeThresholdTextureNode.anInt9109) i_123_ = RangeThresholdTextureNode.anInt9109
                     } else i_123_ = 0

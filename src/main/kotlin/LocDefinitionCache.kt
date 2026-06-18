@@ -115,7 +115,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             if (i_5_ >= 100) {
                 WeaveTextureNode.anInt9282 = 1
                 SequencedWallEntity.anInt10163 = -1
-                Class9.anInt167 = SequencedWallEntity.anInt10163
+                NativeLibraryState.anInt167 = SequencedWallEntity.anInt10163
             } else {
                 var i_6_ = SceneObjectSpawner.aFloat1287.toInt()
                 if (i_6_ < IntKeyNode.anInt6979 shr 8) i_6_ = IntKeyNode.anInt6979 shr 8

@@ -94,7 +94,7 @@ class FloatBuffer internal constructor(i: Int) : Buffer(i) {
                 ParticleSystemState.method1295(RemoveRoofsOptionState.aClass318_Sub1Array6066!!, 0, ProportionalScrollbarComponent.anInt9930 - 1)
                 for (i_6_ in 0..<ProportionalScrollbarComponent.anInt9930) MinimapRectClipper.method227(RemoveRoofsOptionState.aClass318_Sub1Array6066!![i_6_]!!, true, bool_3_)
             }
-            if (ProjectedGroundDecor.aBoolean10221) Class9.aRenderer171!!.method3642(0, null)
+            if (ProjectedGroundDecor.aBoolean10221) NativeLibraryState.aRenderer171!!.method3642(0, null)
             if ((i_2_ and 0x2) == 0) {
                 for (i_7_ in DelegatingRenderCanvas.anInt67..<MapAreaDefinition.anInt2524) {
                     if (i_7_ >= i && `is` != null) {

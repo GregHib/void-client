@@ -531,7 +531,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             val class348_sub47 = method2148(ByteStore.aFontMetaRef_4262, (TheoraVideoStream.aIsaacCipher_9029), -107)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_74_ + ArbVertexProgram.regionTileX, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-107, i_77_)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class9.anInt169, 3.toByte())
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(NativeLibraryState.anInt169, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), RegionMapDecoder.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -126)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(90, HeightMapNoise.anInt3829)
@@ -612,7 +612,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 FogOptionState.anInt6048 = 2
                                 RegionTileNode.anInt6646++
                                 val class348_sub47 = method2148((ParserSpecialCharsHolder.aFontMetaRef_1904), (TheoraVideoStream.aIsaacCipher_9029), -119)
-                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, NativeLibraryState.anInt169)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(108.toByte(), OrientationRotator.anInt2046)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-89).toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -127)) 0 else 1))
@@ -654,7 +654,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 LinkedListNode.anInt4292 = 0
                                 JagGlToolkitFactory.anInt1534 = i_72_
                                 val class348_sub47 = method2148((RsaVarbitHandler.aFontMetaRef_4907), (TheoraVideoStream.aIsaacCipher_9029), -93)
-                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, NativeLibraryState.anInt169)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(HeightMapNoise.anInt3829, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
@@ -750,7 +750,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             val class348_sub47 = method2148(ByteStore.aFontMetaRef_4264, (TheoraVideoStream.aIsaacCipher_9029), -127)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(ArbVertexProgram.regionTileX - -i_74_, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-85, HeightMapNoise.anInt3829)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class9.anInt169, 3.toByte())
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(NativeLibraryState.anInt169, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(127.toByte(), OrientationRotator.anInt2046)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-84, RegionMapDecoder.regionTileY + i_75_)
                             InterfaceComponentGroup.method3243(-62, class348_sub47)
@@ -784,7 +784,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntLittle(-128, OrientationRotator.anInt2046)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-82, RegionMapDecoder.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-74).toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -125)) 0 else 1))
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class9.anInt169, 3.toByte())
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(NativeLibraryState.anInt169, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle((l ushr 32).toInt() and 0x7fffffff, 3.toByte())
                             InterfaceComponentGroup.method3243(117, class348_sub47)
                             method2307(i_75_, l, i_74_, 4)
@@ -895,7 +895,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 JagGlToolkitFactory.anInt1534 = i_72_
                                 NativeLibraryUnloader.anInt2975++
                                 val class348_sub47 = method2148((RsaVarbitHandler.aFontMetaRef_4907), (TheoraVideoStream.aIsaacCipher_9029), -127)
-                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, NativeLibraryState.anInt169)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle((LocalPlayerState.aPlayer_1907!!.anInt10290), 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(HeightMapNoise.anInt3829, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)

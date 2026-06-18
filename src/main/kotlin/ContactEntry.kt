@@ -111,7 +111,7 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
             }
             WeaveTextureNode.anInt9282 = 2
             SequencedWallEntity.anInt10163 = -1
-            Class9.anInt167 = SequencedWallEntity.anInt10163
+            NativeLibraryState.anInt167 = SequencedWallEntity.anInt10163
         }
 
         init {

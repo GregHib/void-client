@@ -82,7 +82,7 @@ class WidgetRedrawTracker {
                 }
                 MapElementManager.method3515(i + 36)
                 SequencedWallEntity.anInt10163 = -1
-                Class9.anInt167 = SequencedWallEntity.anInt10163
+                NativeLibraryState.anInt167 = SequencedWallEntity.anInt10163
                 WeaveTextureNode.anInt9282 = 1
                 Buffer.method3379(2, 10)
                 for (i_2_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_2_] = true

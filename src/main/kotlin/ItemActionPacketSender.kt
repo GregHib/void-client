@@ -22,7 +22,7 @@ object ItemActionPacketSender {
         if (RenderNode.aBoolean9722) {
             HuffmanCodec.anInt3775++
             if (widgetComponent.anObjectArray679 != null) {
-                val class46_0_ = NpcReference.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
+                val class46_0_ = NpcReference.method2957(NativeLibraryState.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                 if (class46_0_ != null) {
                     val class348_sub36 = WidgetActionEntry()
                     class348_sub36.aWidgetComponent_6989 = widgetComponent
@@ -34,7 +34,7 @@ object ItemActionPacketSender {
             val class348_sub47 = method2148(ByteStore.aFontMetaRef_4266, TheoraVideoStream.aIsaacCipher_9029, -120)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(100.toByte(), widgetComponent.anInt830)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
-            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-123, Class9.anInt169)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-123, NativeLibraryState.anInt169)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), HeightMapNoise.anInt3829)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(92, widgetComponent.anInt704)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), widgetComponent.anInt812)

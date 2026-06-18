@@ -141,10 +141,10 @@ class CharCodeMap : HashLinkedListNode() {
                     var i_10_ = (LocalPlayerState.aPlayer_1907!!.x)
                     var i_11_ = (LocalPlayerState.aPlayer_1907!!.y)
                     if (i >= 100) {
-                        if (WeaveTextureNode.anInt9282 == 1 || Class9.anInt167 != -1) {
+                        if (WeaveTextureNode.anInt9282 == 1 || NativeLibraryState.anInt167 != -1) {
                             if (WeaveTextureNode.anInt9282 != 1) {
                                 i_11_ = SequencedWallEntity.anInt10163
-                                i_10_ = Class9.anInt167
+                                i_10_ = NativeLibraryState.anInt167
                             }
                             if ((0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_10_ shr 9]!![i_11_ shr 9]).toInt()) != 0) method3542(i_11_ shr 9, HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029, i_10_ shr 9, 0, 0, false)
                             if (MinimapAreaMarkerNode.Companion.anInt9701 < 2560) {

@@ -283,7 +283,7 @@ class WidgetTextConfig {
         fun method365(class318_sub1: SceneEntity, class348_sub1s: Array<AbstractTileShape?>?) {
             if (ProjectedGroundDecor.aBoolean10221) {
                 val i = class318_sub1.method2384(class348_sub1s, 49)
-                Class9.aRenderer171!!.method3642(i, class348_sub1s)
+                NativeLibraryState.aRenderer171!!.method3642(i, class348_sub1s)
             }
             if (SoundCacheState.aTerrainTileArray4142 == NativeSprite.aTerrainTileArray5191) {
                 val bool = false
@@ -297,9 +297,9 @@ class WidgetTextConfig {
                     i = (class318_sub1.x shr Tooltip.anInt4459)
                     i_12_ = (class318_sub1.y shr Tooltip.anInt4459)
                 }
-                Class9.aRenderer171!!.EA((TerrainTileShape.aTerrainTileArray8801!![0]!!.method3986(class318_sub1.x, class318_sub1.y, (-118).toByte())), method3547(i, i_12_), method2483(i, i_12_), LoadingScreenState.method1457(i, i_12_))
+                NativeLibraryState.aRenderer171!!.EA((TerrainTileShape.aTerrainTileArray8801!![0]!!.method3986(class318_sub1.x, class318_sub1.y, (-118).toByte())), method3547(i, i_12_), method2483(i, i_12_), LoadingScreenState.method1457(i, i_12_))
             }
-            val class318_sub4 = class318_sub1.method2386(1, Class9.aRenderer171)
+            val class318_sub4 = class318_sub1.method2386(1, NativeLibraryState.aRenderer171)
             if (class318_sub4 != null) {
                 if (class318_sub1.aBoolean6391) {
                     val class318_sub3s = class318_sub4.aClass318_Sub3Array6414!!

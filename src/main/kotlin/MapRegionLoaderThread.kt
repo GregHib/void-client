@@ -164,7 +164,7 @@ class MapRegionLoaderThread : Runnable {
                 WidgetTextConfig.anInt500 = i_13_
                 HeightMapNoise.anInt3829 = widgetComponent.anInt812
                 RenderNode.aBoolean9722 = true
-                Class9.anInt169 = widgetComponent.anInt704
+                NativeLibraryState.anInt169 = widgetComponent.anInt704
                 FloatBuffer.anInt9747 = widgetComponent.anInt824
                 if (i_14_.toInt() != 21) Companion.method2665(-99, (-106).toByte(), 10, -37, 26, -123)
                 OrientationRotator.anInt2046 = widgetComponent.anInt830

@@ -44,7 +44,7 @@ abstract class TimedRecordAccessor : LinkedListNode() {
             if (i > -113) aTextureFormatInfo_7103 = null
             ParameterizedText.anInt9577 = 0
             MinimapAreaMarkerNode.aMapTileShapeArray9700 = arrayOfNulls<MapTileShape>(500)
-            TurbulenceTextureNode.aBoolean9307 = Class9.aRenderer171 !is oa
+            TurbulenceTextureNode.aBoolean9307 = NativeLibraryState.aRenderer171 !is oa
         }
 
         @JvmStatic

@@ -3,7 +3,7 @@ import BlankTextureNode.Companion.method3098
 /* Class9 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class9 {
+object NativeLibraryState {
     @JvmField
     var anInt167: Int = 0
     var anIntArray168: IntArray? = intArrayOf(28, 35, 40, 44)

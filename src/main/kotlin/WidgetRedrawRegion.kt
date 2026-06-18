@@ -96,7 +96,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
                                 method2519(class318_sub1_sub4, i, i_8_, i_9_, 1, 1)
                                 if (class318_sub1_sub4_10_ != null && class318_sub1_sub4_10_.method2388(-125)) {
                                     method2519(class318_sub1_sub4_10_, i, i_8_, i_9_, 1, 1)
-                                    class318_sub1_sub4_10_.method2380(Class9.aRenderer171, 0, false, class318_sub1_sub4, 0, (-110).toByte(), 0)
+                                    class318_sub1_sub4_10_.method2380(NativeLibraryState.aRenderer171, 0, false, class318_sub1_sub4, 0, (-110).toByte(), 0)
                                     class318_sub1_sub4_10_.method2392(true)
                                 }
                                 class318_sub1_sub4.method2392(true)

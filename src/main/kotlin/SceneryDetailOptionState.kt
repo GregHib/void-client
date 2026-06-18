@@ -178,7 +178,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                             RenderableEntry.anInt4334++
                             MinimapPolygonDrawer.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), LightingOptionState.aString5882, 0L, MapElementLookup.anInt4144)
                         } else {
-                            val class46 = NpcReference.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
+                            val class46 = NpcReference.method2957(NativeLibraryState.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                             if (class46 == null) TileRenderState.method2678(-2049)
                             else MinimapPolygonDrawer.method466(false, " ->", i_14_, (-101).toByte(), true, i_13_, -1, true, 15, (i_13_ shl 0 or i_14_).toLong(), ItemNameResolver.aString5001, 0L, (FloatBuffer.anInt9747))
                         }
