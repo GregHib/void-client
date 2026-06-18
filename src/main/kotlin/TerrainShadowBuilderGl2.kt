@@ -17,7 +17,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
     private var anInt6942 = 0
     private val aHoverActionEntry_6943: HoverActionEntry?
     private val anInt6944: Int
-    private val anInterface8_6945: Interface8?
+    private val anByteArrayCodec_6945: ByteArrayCodec?
     private var aFloatArrayArray6947: Array<FloatArray?>?
     private val anInt6948: Int
     private var aFloatArrayArray6949: Array<FloatArray?>?
@@ -132,7 +132,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
 
     fun method3023(bools: Array<BooleanArray?>, i: Int, i_35_: Int, i_36_: Int, i_37_: Int) {
         anInt6941++
-        if (anInterface8_6945 != null && i_37_ + i_35_ >= anInt6935 && anInt6942 >= i_35_ + -i_37_ && i_36_ + i_37_ >= anInt6948 && i_36_ + -i_37_ <= anInt6944) {
+        if (anByteArrayCodec_6945 != null && i_37_ + i_35_ >= anInt6935 && anInt6942 >= i_35_ + -i_37_ && i_36_ + i_37_ >= anInt6948 && i_36_ + -i_37_ <= anInt6944) {
             for (i_38_ in anInt6948..anInt6944) {
                 var i_39_ = anInt6935
                 while (anInt6942 >= i_39_) {
@@ -141,7 +141,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
                     if (i_40_ > -i_37_ && i_37_ > i_40_ && i_41_ > -i_37_ && i_37_ > i_41_ && bools[i_40_ + i_37_]!![i_37_ + i_41_]) {
                         aHa_Sub2_6951!!.method3808(((255.0f * aClass348_Sub1_6937!!.method2721(-66)).toInt() shl 24), i + -136)
                         aHa_Sub2_6951.method3794(aHoverActionEntry_6927, aHoverActionEntry_6943, i + -26666, null, null)
-                        aHa_Sub2_6951.method3759(anInt6934, -128, 4, anInterface8_6945, 0)
+                        aHa_Sub2_6951.method3759(anInt6934, -128, 4, anByteArrayCodec_6945, 0)
                         return
                     }
                     i_39_++
@@ -262,13 +262,13 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
                     i_56_++
                     i_57_++
                 }
-                anInterface8_6945 = (aHa_Sub2_6951!!.method3733(5123, -49, aClass348_Sub49_6936!!.anInt7197, aClass348_Sub49_6936!!.aByteArray7154, false))
+                anByteArrayCodec_6945 = (aHa_Sub2_6951!!.method3733(5123, -49, aClass348_Sub49_6936!!.anInt7197, aClass348_Sub49_6936!!.aByteArray7154, false))
                 anByteBufferReader_6952 = aHa_Sub2_6951.method3731(2, false, 16, (aClass348_Sub49_Sub1_6953!!.aByteArray7154), (aClass348_Sub49_Sub1_6953!!.anInt7197))
                 aHoverActionEntry_6927 = HoverActionEntry(anByteBufferReader_6952, 5126, 3, 0)
                 aHoverActionEntry_6943 = HoverActionEntry(anByteBufferReader_6952, 5121, 4, 12)
             } else {
                 anByteBufferReader_6952 = null
-                anInterface8_6945 = null
+                anByteArrayCodec_6945 = null
                 aHoverActionEntry_6927 = null
                 aHoverActionEntry_6943 = null
             }

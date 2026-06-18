@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class ArchiveFileConditionWrapper {
-    var anInterface8_3463: Interface8? = null
+    var anByteArrayCodec_3463: ByteArrayCodec? = null
 
     companion object {
         var anIntArray3464: IntArray? = IntArray(6)

@@ -4,7 +4,7 @@ import NodeDequeHolder.Companion.method878
 /* Class135_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, `is`: ByteArray?, i_8_: Int, bool: Boolean) : GlVertexBufferBase(var_ha_Sub2, 34963, `is`, i_8_, bool), Interface8 {
+class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, `is`: ByteArray?, i_8_: Int, bool: Boolean) : GlVertexBufferBase(var_ha_Sub2, 34963, `is`, i_8_, bool), ByteArrayCodec {
     private var anInt4837 = 0
     public override fun method1152(i: Int) {
         anInt4840++

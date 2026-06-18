@@ -71,7 +71,7 @@ class OpenGlModel : AbstractModel {
     private var anIntArray5644: IntArray? = null
     private var aShort5645: Short = 0
     private var aShort5646: Short = 0
-    private var anInterface8_5647: Interface8? = null
+    private var anByteArrayCodec_5647: ByteArrayCodec? = null
     private var anInt5648 = 0
     private var aShortArray5649: ShortArray? = null
     public override fun FA(i: Int) {
@@ -119,8 +119,8 @@ class OpenGlModel : AbstractModel {
             if (aByte5581.toInt() != 0) method688(5, true)
             method688(5, false)
             if (aArchiveFileConditionWrapper_5575 != null) {
-                if (aArchiveFileConditionWrapper_5575!!.anInterface8_3463 == null) method678((aByte5581.toInt() and 0x10) != 0, 27.toByte())
-                if (aArchiveFileConditionWrapper_5575!!.anInterface8_3463 != null) {
+                if (aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 == null) method678((aByte5581.toInt() and 0x10) != 0, 27.toByte())
+                if (aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 != null) {
                     aHa_Sub2_5598!!.method3728(aHoverActionEntry_5563 != null, 118)
                     aHa_Sub2_5598.method3794(aHoverActionEntry_5605, aHoverActionEntry_5610, -26411, aHoverActionEntry_5620, aHoverActionEntry_5563)
                     val i_7_ = -1 + anIntArray5626!!.size
@@ -131,7 +131,7 @@ class OpenGlModel : AbstractModel {
                         var i_11_ = aShortArray5601!![i_9_].toInt() and 0xffff
                         if (i_11_ == 65535) i_11_ = -1
                         aHa_Sub2_5598.method3801(aHoverActionEntry_5563 != null, i_11_, 125)
-                        aHa_Sub2_5598.method3759((-i_9_ + i_10_) * 3, -128, 4, (aArchiveFileConditionWrapper_5575!!.anInterface8_3463), i_9_ * 3)
+                        aHa_Sub2_5598.method3759((-i_9_ + i_10_) * 3, -128, 4, (aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463), i_9_ * 3)
                         i_8_++
                     }
                 }
@@ -161,10 +161,10 @@ class OpenGlModel : AbstractModel {
         }
         if (class348_sub49_sub1.anInt7197 != 0) {
             if (bool) {
-                if (anInterface8_5647 == null) anInterface8_5647 = aHa_Sub2_5598.method3733(5123, -39, (class348_sub49_sub1.anInt7197), (class348_sub49_sub1.aByteArray7154), true)
-                else anInterface8_5647!!.method35(class348_sub49_sub1.aByteArray7154, 5123, i.toInt() xor 0x23, class348_sub49_sub1.anInt7197)
-                aArchiveFileConditionWrapper_5575!!.anInterface8_3463 = anInterface8_5647
-            } else aArchiveFileConditionWrapper_5575!!.anInterface8_3463 = (aHa_Sub2_5598.method3733(5123, i + -65, class348_sub49_sub1.anInt7197, class348_sub49_sub1.aByteArray7154, false))
+                if (anByteArrayCodec_5647 == null) anByteArrayCodec_5647 = aHa_Sub2_5598.method3733(5123, -39, (class348_sub49_sub1.anInt7197), (class348_sub49_sub1.aByteArray7154), true)
+                else anByteArrayCodec_5647!!.method35(class348_sub49_sub1.aByteArray7154, 5123, i.toInt() xor 0x23, class348_sub49_sub1.anInt7197)
+                aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 = anByteArrayCodec_5647
+            } else aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 = (aHa_Sub2_5598.method3733(5123, i + -65, class348_sub49_sub1.anInt7197, class348_sub49_sub1.aByteArray7154, false))
             if (!bool) aBoolean5555 = true
         }
     }
@@ -680,7 +680,7 @@ class OpenGlModel : AbstractModel {
         anInt5560++
         if (anInt5529 > 0 && anInt5537 > 0) {
             method688(5, false)
-            if ((aByte5581.toInt() and 0x10) == 0 && aArchiveFileConditionWrapper_5575!!.anInterface8_3463 == null) method678(false, 27.toByte())
+            if ((aByte5581.toInt() and 0x10) == 0 && aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 == null) method678(false, 27.toByte())
             method691(124.toByte())
         }
     }
@@ -1015,7 +1015,7 @@ class OpenGlModel : AbstractModel {
             if (CollisionFlagQuery.method723(i, anInt5556, (-70).toByte())) {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x10).toByte()
                 class64_sub3_211_.aArchiveFileConditionWrapper_5575 = class64_sub3_213_!!.aArchiveFileConditionWrapper_5575
-                class64_sub3_211_.aArchiveFileConditionWrapper_5575!!.anInterface8_3463 = aArchiveFileConditionWrapper_5575!!.anInterface8_3463
+                class64_sub3_211_.aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 = aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463
             } else if (!LinkedListIterator.method1238(i, anInt5556, -93)) class64_sub3_211_.aArchiveFileConditionWrapper_5575 = null
             else class64_sub3_211_.aArchiveFileConditionWrapper_5575 = aArchiveFileConditionWrapper_5575
             if (SceneProjector.method1637(anInt5556, 32768, i)) {
@@ -1778,7 +1778,7 @@ class OpenGlModel : AbstractModel {
                 else aShortArray5601 = null
             }
             if (aShortArray5592 != null && !CollisionFlagQuery.method724(anInt5648, anInt5556, 393216)) {
-                if ((aArchiveFileConditionWrapper_5575 != null && aArchiveFileConditionWrapper_5575!!.anInterface8_3463 == null) || aHoverActionEntry_5610 != null && (aHoverActionEntry_5610!!.anByteBufferReader_1811) == null) aBoolean5555 = true
+                if ((aArchiveFileConditionWrapper_5575 != null && aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 == null) || aHoverActionEntry_5610 != null && (aHoverActionEntry_5610!!.anByteBufferReader_1811) == null) aBoolean5555 = true
                 else {
                     aShortArray5566 = null
                     aShortArray5579 = aShortArray5566
@@ -2387,7 +2387,7 @@ class OpenGlModel : AbstractModel {
         if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
         if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anByteBufferReader_1811 = null
         aBoolean5527 = false
-        if (aArchiveFileConditionWrapper_5575 != null) aArchiveFileConditionWrapper_5575!!.anInterface8_3463 = null
+        if (aArchiveFileConditionWrapper_5575 != null) aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 = null
         if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anByteBufferReader_1811 = null
     }
 

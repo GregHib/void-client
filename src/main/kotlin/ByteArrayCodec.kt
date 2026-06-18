@@ -1,7 +1,7 @@
 /* Interface8 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-public interface Interface8 {
+public interface ByteArrayCodec {
     fun method33(i: Int): Int
 
     fun method34(i: Int): Int

@@ -228,7 +228,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     var aBoolean7815: Boolean = false
     @JvmField
     var aFloat7816: Float
-    private var anInterface8_7817: Interface8? = null
+    private var anByteArrayCodec_7817: ByteArrayCodec? = null
     @JvmField
     var aBoolean7818: Boolean = false
     private var anInt7819 = 0
@@ -428,7 +428,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7629++
     }
 
-    fun method3733(i: Int, i_14_: Int, i_15_: Int, `is`: ByteArray?, bool: Boolean): Interface8 {
+    fun method3733(i: Int, i_14_: Int, i_15_: Int, `is`: ByteArray?, bool: Boolean): ByteArrayCodec {
         try {
             anInt7565++
             if (i_14_ >= -2) method3644()
@@ -1075,17 +1075,17 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return GlSpriteRenderer(this, i, i_115_, i_116_, i_117_)
     }
 
-    fun method3759(i: Int, i_118_: Int, i_119_: Int, interface8: Interface8?, i_120_: Int) {
+    fun method3759(i: Int, i_118_: Int, i_119_: Int, byteArrayCodec: ByteArrayCodec?, i_120_: Int) {
         var i_120_ = i_120_
         try {
             anInt7619++
-            val i_121_ = interface8!!.method34(-5711)
+            val i_121_ = byteArrayCodec!!.method34(-5711)
             if (i_118_ >= -127) aMinimapRenderer_7707 = null
             i_120_ *= method3785(i_121_, 4)
-            method3793(1, interface8)
-            glDrawElements(i_119_, i, i_121_, (interface8.method36(78.toByte()) + i_120_.toLong()))
+            method3793(1, byteArrayCodec)
+            glDrawElements(i_119_, i, i_121_, (byteArrayCodec.method36(78.toByte()) + i_120_.toLong()))
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.MA(" + i + ',' + i_118_ + ',' + i_119_ + ',' + (if (interface8 != null) "{...}" else "null") + ',' + i_120_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.MA(" + i + ',' + i_118_ + ',' + i_119_ + ',' + (if (byteArrayCodec != null) "{...}" else "null") + ',' + i_120_ + ')'))
         }
     }
 
@@ -2425,17 +2425,17 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return i
     }
 
-    fun method3793(i: Int, interface8: Interface8?) {
+    fun method3793(i: Int, byteArrayCodec: ByteArrayCodec?) {
         do {
             try {
                 if (i == 1) {
                     anInt7560++
-                    if (anInterface8_7817 === interface8) break
-                    if (aBoolean7873) glBindBufferARB(34963, interface8!!.method33(-23923))
-                    anInterface8_7817 = interface8
+                    if (anByteArrayCodec_7817 === byteArrayCodec) break
+                    if (aBoolean7873) glBindBufferARB(34963, byteArrayCodec!!.method33(-23923))
+                    anByteArrayCodec_7817 = byteArrayCodec
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qo.OE(" + i + ',' + (if (interface8 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qo.OE(" + i + ',' + (if (byteArrayCodec != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

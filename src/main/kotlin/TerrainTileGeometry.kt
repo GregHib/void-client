@@ -5,7 +5,7 @@ class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, sof
     private var aClass258_Sub3_2998: GlTexture2D? = null
     private val aSoftwareSpriteRaster_2999: SoftwareSpriteRaster?
     private val aHa_Sub2_3000: OpenGlRenderer?
-    private var anInterface8_3001: Interface8? = null
+    private var anByteArrayCodec_3001: ByteArrayCodec? = null
     private val anInt3002: Int
     private val anInt3003: Int
     private val anInt3008: Int
@@ -22,16 +22,16 @@ class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, sof
     fun method1644(i: Byte) {
         if (i > -83) anInt3006 = -60
         anInt3013++
-        method1646(anInterface8_3001, 115, anInt3008)
+        method1646(anByteArrayCodec_3001, 115, anInt3008)
     }
 
-    private fun method1646(interface8: Interface8?, i: Int, i_2_: Int) {
+    private fun method1646(byteArrayCodec: ByteArrayCodec?, i: Int, i_2_: Int) {
         anInt3007++
         if (i_2_ != 0) {
             method1648(121.toByte())
             if (i <= 107) method1647(-124, -86)
             aHa_Sub2_3000!!.method3771((-93).toByte(), aClass258_Sub3_2998)
-            aHa_Sub2_3000.method3759(i_2_, -128, 4, interface8, 0)
+            aHa_Sub2_3000.method3759(i_2_, -128, 4, byteArrayCodec, 0)
         }
     }
 
@@ -95,7 +95,7 @@ class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, sof
                         i_15_++
                     }
                 }
-                anInterface8_3001 = (aHa_Sub2_3000.method3733(5123, -39, class348_sub49.anInt7197, class348_sub49.aByteArray7154, false))
+                anByteArrayCodec_3001 = (aHa_Sub2_3000.method3733(5123, -39, class348_sub49.anInt7197, class348_sub49.aByteArray7154, false))
                 aClass119_Sub2_3011 = NativeVertexBuffer(aHa_Sub2_3000, 5123, null, 1)
             }
         } catch (runtimeexception: RuntimeException) {
