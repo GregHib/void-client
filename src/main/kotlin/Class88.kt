@@ -254,7 +254,7 @@ class Class88 {
                         }
                         InterfaceComponentGroup.method3243(-48, class348_sub47)
                         method1802(0)
-                        TheoraVideoStream.aClass77_9029 = Class77(`is`)
+                        TheoraVideoStream.aIsaacCipher_9029 = IsaacCipher(`is`)
                         for (i_10_ in 0..3) `is`[i_10_] += 50
                         CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3406(-111, `is`)
                         NpcDefinition.anInt2955 = 4
@@ -299,7 +299,7 @@ class Class88 {
                         method2739(0)
                         val class348_sub47 = ProjectileSpawner.method1478(true)
                         val class348_sub49_sub2 = (class348_sub47!!.aClass348_Sub49_Sub2_7116)!!
-                        class348_sub49_sub2.method3416(-18, TheoraVideoStream.aClass77_9029!!)
+                        class348_sub49_sub2.method3416(-18, TheoraVideoStream.aIsaacCipher_9029!!)
                         class348_sub49_sub2.method3408((ScriptOpcodeHolder.aConfigIdPair_2351!!.anInt400), 18676)
                         InterfaceComponentGroup.method3243(-87, class348_sub47)
                         method1802(0)

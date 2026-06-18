@@ -523,7 +523,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7946 = 0
             NpcConfig.anInt958 = 0
             GraphicsOptionState.anInt3140 = 0
-            Class77.anInt1302 = 0
+            IsaacCipher.anInt1302 = 0
             OpenGlRenderer.anInt7697 = 0
             HslAdjustTextureNode.anInt9393 = 0
             Buffer.anInt7203 = 0
@@ -696,7 +696,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ArbFogMaterialPass.anInt6184 = 0
             WorldMapScene.anInt3105 = 0
             ModelDefinition.anInt1840 = 0
-            Class77.anInt1295 = 0
+            IsaacCipher.anInt1295 = 0
             GlFramebufferBlitter.anInt278 = 0
             OpenGlRenderer.anInt7545 = 0
             BoxBlurTextureNode.anInt9464 = 0
@@ -995,7 +995,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9813 = 0
             StringCacheNode.anInt7214 = 0
             SequencedGroundDecor.anInt10042 = 0
-            Class77.anInt1300 = 0
+            IsaacCipher.anInt1300 = 0
             ModelVertexColorBuffer.anInt6576 = 0
             SpriteArchiveLoader.anInt378 = 0
             GlRenderDevice.anInt9827 = 0
@@ -2381,7 +2381,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WorldMapScene.anInt3106 = 0
             SpotAnimDefinition.anInt2396 = 0
             GroundDecorEntity.anInt8742 = 0
-            Class77.anInt1297 = 0
+            IsaacCipher.anInt1297 = 0
             NativeRenderer.anInt7961 = 0
             DirectionalLightTextureNode.anInt9441 = 0
             OpenGlModel.anInt5643 = 0
@@ -3157,7 +3157,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TheoraVideoStream.anInt9030 = 0
             LoadingBarRenderer.anInt5025 = 0
             ModelVertexColorBuffer.anInt6570 = 0
-            Class77.anInt1299 = 0
+            IsaacCipher.anInt1299 = 0
             GroundDecorSceneEntity.anInt9986 = 0
             CacheArchiveIndex.anInt1763 = 0
             OpenGlModel.anInt5549 = 0
@@ -3567,7 +3567,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ScrollingNoiseTexture.anInt8656 = 0
             GameAppletFrame.anInt29 = 0
             NativeRenderer.anInt8038 = 0
-            Class77.anInt1301 = 0
+            IsaacCipher.anInt1301 = 0
             KeyboardLayoutConfig.anInt2129 = 0
             NativeRenderer.anInt7967 = 0
             WidgetComponent.anInt718 = 0
@@ -4139,7 +4139,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TileTextureNode.anInt9406 = 0
             IntKeyNode.anInt6981 = 0
             Class367_Sub11.anInt7403 = 0
-            for (l in Class77.anIntArray1303!!.indices) if (!GlslEnvMaterialPass.aBooleanArray6270!![l]) Class77.anIntArray1303!![l] = -1
+            for (l in IsaacCipher.anIntArray1303!!.indices) if (!GlslEnvMaterialPass.aBooleanArray6270!![l]) IsaacCipher.anIntArray1303!![l] = -1
 
             if (RenderNode.anInt9721 != -1) GlTextureBase.method235(RenderNode.anInt9721, (-105).toByte())
             var class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?

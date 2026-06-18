@@ -494,7 +494,7 @@ import PlayerSequenceSelector.method729
 import HintArrowRenderer.Companion.method731
 import RgbColorPalette.Companion.method744
 import MapRegionLoader.Companion.method746
-import Class77.Companion.method782
+import IsaacCipher.Companion.method782
 import Class78.Companion.method786
 import Class79.Companion.method804
 import Class80.Companion.method808
@@ -1537,7 +1537,7 @@ class Client : GameAppletFrame() {
                     SceneRegionState.anInt193++
                     if (SceneRegionState.anInt193 > 50) {
                         IOException_Sub1.anInt88++
-                        val class348_sub47 = method2148((RangedGraphicsOptionState.aFontMetaRef_5938), (TheoraVideoStream.aClass77_9029), -104)
+                        val class348_sub47 = method2148((RangedGraphicsOptionState.aFontMetaRef_5938), (TheoraVideoStream.aIsaacCipher_9029), -104)
                         method3243(-49, class348_sub47)
                     }
                     try {

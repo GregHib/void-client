@@ -31,7 +31,7 @@ object ItemActionPacketSender {
                     method705(class348_sub36)
                 }
             }
-            val class348_sub47 = method2148(ByteStore.aFontMetaRef_4266, TheoraVideoStream.aClass77_9029, -120)
+            val class348_sub47 = method2148(ByteStore.aFontMetaRef_4266, TheoraVideoStream.aIsaacCipher_9029, -120)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(100.toByte(), widgetComponent.anInt830)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-123, Class9.anInt169)

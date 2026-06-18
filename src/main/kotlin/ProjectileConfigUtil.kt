@@ -148,7 +148,7 @@ object ProjectileConfigUtil {
                         if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_6_) method544((LocalizedText.aLocalizedText_3525!!.method2063(AnimationFrameDefinition.anInt6967, 544)), false, 4)
                         else {
                             WorldMapElement.anInt4628++
-                            val class348_sub47 = (method2148(MinimapAreaMarkerNode.aFontMetaRef_9687, TheoraVideoStream.aClass77_9029, -94))
+                            val class348_sub47 = (method2148(MinimapAreaMarkerNode.aFontMetaRef_9687, TheoraVideoStream.aIsaacCipher_9029, -94))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65) - -1)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!bool) 0 else 1)

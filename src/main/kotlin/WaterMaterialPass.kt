@@ -192,7 +192,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
         var anInt6232: Int = 0
 
         @JvmStatic
-        fun method2148(fontMetaRef: FontMetaRef?, class77: Class77?, i: Int): OutgoingPacketNode {
+        fun method2148(fontMetaRef: FontMetaRef?, isaacCipher: IsaacCipher?, i: Int): OutgoingPacketNode {
             try {
                 anInt6230++
                 val class348_sub47 = ParticleConfigParser.method2273((-103).toByte())!!
@@ -205,7 +205,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                     else if (class348_sub47.anInt7122 <= 98) class348_sub47.aClass348_Sub49_Sub2_7116 = CipheredPacketBuffer(100)
                     else class348_sub47.aClass348_Sub49_Sub2_7116 = CipheredPacketBuffer(260)
                 } else class348_sub47.aClass348_Sub49_Sub2_7116 = CipheredPacketBuffer(260)
-                class348_sub47.aClass348_Sub49_Sub2_7116!!.method3416(-17, class77!!)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.method3416(-17, isaacCipher!!)
 
                 if (Loader.debug) {
                     println("Encode packet " + class348_sub47.aFontMetaRef_7118!!.method3456(200))
@@ -214,7 +214,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                 class348_sub47.anInt7119 = 0
                 return class348_sub47
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("em.C(" + (if (fontMetaRef != null) "{...}" else "null") + ',' + (if (class77 != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("em.C(" + (if (fontMetaRef != null) "{...}" else "null") + ',' + (if (isaacCipher != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
 

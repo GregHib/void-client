@@ -302,7 +302,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                 UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 = null
             } else if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1 && !method1296(true)) {
                 SceneLinkedListNode.anInt3973++
-                val class348_sub47 = method2148(OpenGlRenderer.aFontMetaRef_7554, TheoraVideoStream.aClass77_9029, -107)
+                val class348_sub47 = method2148(OpenGlRenderer.aFontMetaRef_7554, TheoraVideoStream.aIsaacCipher_9029, -107)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(118.toByte(), SlotBinding.anInt3428)
                 InterfaceComponentGroup.method3243(-54, class348_sub47)
                 SlotBinding.anInt3428 = -1

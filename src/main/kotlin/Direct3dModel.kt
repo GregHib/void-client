@@ -508,7 +508,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 anIntArray5455 = null
                 aShortArray5439 = null
             }
-            if (aByteArray5499 != null && !Class77.method776(anInt5472, anInt5463, i + -196608)) {
+            if (aByteArray5499 != null && !IsaacCipher.method776(anInt5472, anInt5463, i + -196608)) {
                 if (if ((0x37 and anInt5472) != 0) (aBufferToggleState_5424 == null || aBufferToggleState_5424!!.method2197((-10).toByte())) else (aBufferToggleState_5482 == null || aBufferToggleState_5482!!.method2197((-73).toByte()))) {
                     aShortArray5436 = null
                     aShortArray5438 = aShortArray5436
@@ -558,7 +558,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 anIntArrayArray5413 = null
                 aShortArray5494 = null
             }
-            if (anIntArrayArray5412 != null && !Class77.method780(anInt5472, 0, anInt5463)) anIntArrayArray5412 = null
+            if (anIntArrayArray5412 != null && !IsaacCipher.method780(anInt5472, 0, anInt5463)) anIntArrayArray5412 = null
             if (anIntArray5404 != null && (0x800 and anInt5463) == 0 && (anInt5463 and 0x40000) == 0) {
                 anIntArray5404 = null
                 anIntArray5473 = null
@@ -2335,7 +2335,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 aFloatArray5476 = method3258(0, anInt5475, aFloatArray5476)
                 aFloatArray5506 = method3258(0, anInt5475, aFloatArray5506)
                 if (modelDefinition.anIntArray1868 != null && KeyboardLayoutConfig.method1257(-58, anInt5472, i)) anIntArrayArray5413 = modelDefinition.method1100(false, -20)
-                if (modelDefinition.aRectangleBoundsArray1832 != null && Class77.method780(anInt5472, 0, i)) anIntArrayArray5412 = modelDefinition.method1093((-120).toByte())
+                if (modelDefinition.aRectangleBoundsArray1832 != null && IsaacCipher.method780(anInt5472, 0, i)) anIntArrayArray5412 = modelDefinition.method1093((-120).toByte())
                 if (modelDefinition.anIntArray1824 == null || !GlElementArrayBuffer.method1158(anInt5472, -1, i)) break
                 var i_459_ = 0
                 val is_460_ = IntArray(256)

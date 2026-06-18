@@ -6,36 +6,36 @@ import Class79.Companion.method797
 */
 class CipheredPacketBuffer internal constructor(i: Int) : Buffer(i) {
     private var anInt9754 = 0
-    private var aClass77_9756: Class77? = null
+    private var aIsaacCipher_9756: IsaacCipher? = null
     fun method3404(i: Int): Boolean {
         anInt9758++
         if (i != -1510) return true
-        val i_0_ = (((this.aByteArray7154!![this.anInt7197]) - aClass77_9756!!.method778(19.toByte())) and 0xff)
+        val i_0_ = (((this.aByteArray7154!![this.anInt7197]) - aIsaacCipher_9756!!.method778(19.toByte())) and 0xff)
         return i_0_ >= 128
     }
 
     fun method3406(i: Int, `is`: IntArray) {
         anInt9755++
-        aClass77_9756 = Class77(`is`)
+        aIsaacCipher_9756 = IsaacCipher(`is`)
         if (i > -41) anIntArray9757 = null
     }
 
     fun method3407(i: Int): Int {
         anInt9752++
-        val i_4_ = (((this.aByteArray7154!![this.anInt7197++]) - aClass77_9756!!.method781((-67).toByte())) and 0xff)
+        val i_4_ = (((this.aByteArray7154!![this.anInt7197++]) - aIsaacCipher_9756!!.method781((-67).toByte())) and 0xff)
         if (i_4_ < 128) return i_4_
         if (i != 15295) anIntArray9757 = null
-        return ((((this.aByteArray7154!![this.anInt7197++]) - aClass77_9756!!.method781((-62).toByte())) and 0xff) + (i_4_ + -128 shl 8))
+        return ((((this.aByteArray7154!![this.anInt7197++]) - aIsaacCipher_9756!!.method781((-62).toByte())) and 0xff) + (i_4_ + -128 shl 8))
     }
 
     fun method3408(i: Int, i_5_: Int) {
-        this.aByteArray7154!![this.anInt7197++] = (i + aClass77_9756!!.method781((-85).toByte())).toByte()
+        this.aByteArray7154!![this.anInt7197++] = (i + aIsaacCipher_9756!!.method781((-85).toByte())).toByte()
         if (i_5_ == 18676) anInt9760++
     }
 
     fun method3409(i: Int, `is`: ByteArray, i_6_: Int, i_7_: Int) {
         if (i_7_ == -32769) {
-            for (i_8_ in 0..<i) `is`[i_6_ + i_8_] = ((this.aByteArray7154!![this.anInt7197++]) + -aClass77_9756!!.method781((-99).toByte())).toByte()
+            for (i_8_ in 0..<i) `is`[i_6_ + i_8_] = ((this.aByteArray7154!![this.anInt7197++]) + -aIsaacCipher_9756!!.method781((-99).toByte())).toByte()
             anInt9762++
         }
     }
@@ -70,9 +70,9 @@ class CipheredPacketBuffer internal constructor(i: Int) : Buffer(i) {
         return -anInt9754 + i_22_ * 8
     }
 
-    fun method3416(i: Int, class77: Class77) {
+    fun method3416(i: Int, isaacCipher: IsaacCipher) {
         val i_23_ = -103 / ((i - 57) / 40)
-        aClass77_9756 = class77
+        aIsaacCipher_9756 = isaacCipher
         anInt9766++
     }
 

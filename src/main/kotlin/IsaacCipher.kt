@@ -3,7 +3,7 @@ import HardCacheEntryReference.Companion.method3200
 /* Class77 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class77 {
+class IsaacCipher {
     private lateinit var anIntArray1289: IntArray
     private var anInt1291 = 0
     private var anInt1292 = 0

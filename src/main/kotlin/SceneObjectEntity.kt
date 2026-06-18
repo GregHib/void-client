@@ -85,10 +85,10 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
                 class348_sub49.writeShort(107.toByte(), TimingCounters.anInt4168)
                 val i_0_ = -4 % ((-12 - i) / 38)
                 var i_1_ = 0
-                while ((i_1_ < Class77.anIntArray1303!!.size)) {
+                while ((i_1_ < IsaacCipher.anIntArray1303!!.size)) {
                     if (GlslEnvMaterialPass.aBooleanArray6270!![i_1_]) {
                         class348_sub49.writeShort(107.toByte(), i_1_)
-                        class348_sub49.writeInt(124.toByte(), Class77.anIntArray1303!![i_1_])
+                        class348_sub49.writeInt(124.toByte(), IsaacCipher.anIntArray1303!![i_1_])
                     }
                     i_1_++
                 }

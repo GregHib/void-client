@@ -233,7 +233,7 @@ object ClientLoadStateMachine {
         if (ConnectionStateType.aConnectionStateType_1038 == TimedTileQueueEntry.aConnectionStateType_9660) method752(TerrainShadowBuilderGl2.aJs5Archive_6950, RenderConfigFactory.aLocDefinitionCache_2979, Tooltip.aParticleDefLoader_4460, GradientLookupEffect.aSeqDefinitionCache_9195, TheoraVideoStream.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, ProjectedGroundDecor.aVarpStore_10209)
         if (ConnectionStateType.aConnectionStateType_1039 == TimedTileQueueEntry.aConnectionStateType_9660) {
             // TODO make cache edit to extend these or change id's
-            Class77.anIntArray1303 = (IntArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
+            IsaacCipher.anIntArray1303 = (IntArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
             GlslEnvMaterialPass.aBooleanArray6270 = (BooleanArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
             GlTextureCubeMap.aStringArray8532 = arrayOfNulls<String>(Class91.aClass82_1523!!.anInt1439)
             var i_13_ = 0
@@ -242,7 +242,7 @@ object ClientLoadStateMachine {
                     GlslEnvMaterialPass.aBooleanArray6270!![i_13_] = true
                     TimingCounters.anInt4168++
                 }
-                Class77.anIntArray1303!![i_13_] = -1
+                IsaacCipher.anIntArray1303!![i_13_] = -1
                 i_13_++
             }
             method1063(1)

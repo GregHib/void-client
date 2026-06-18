@@ -219,7 +219,7 @@ abstract class AbstractFrameBufferSurface : LinkedListNode() {
                         for (i_91_ in 0..<i_90_) {
                             val i_92_ = class348_sub49.readUnsignedShort(842397944)
                             val i_93_ = class348_sub49.readInt((-126).toByte())
-                            if ((Class77.anIntArray1303!!.size > i_92_) && GlslEnvMaterialPass.aBooleanArray6270!![i_92_] && ((WaterDetailOptionState.aKeyboardLayoutCache_5995!!.method1976(i_92_, -107).aChar2132) != '1' || i_93_ >= -1 && i_93_ <= 1)) Class77.anIntArray1303!![i_92_] = i_93_
+                            if ((IsaacCipher.anIntArray1303!!.size > i_92_) && GlslEnvMaterialPass.aBooleanArray6270!![i_92_] && ((WaterDetailOptionState.aKeyboardLayoutCache_5995!!.method1976(i_92_, -107).aChar2132) != '1' || i_93_ >= -1 && i_93_ <= 1)) IsaacCipher.anIntArray1303!![i_92_] = i_93_
                         }
                     }
                 }

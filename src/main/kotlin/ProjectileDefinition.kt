@@ -19,7 +19,7 @@ object ProjectileDefinition {
         if (i > -61) aIntRange_3842 = null
         anInt3843++
         if (bool) {
-            val class348_sub47 = method2148(BufferPositionTracker.aFontMetaRef_3150, TheoraVideoStream.aClass77_9029, -126)
+            val class348_sub47 = method2148(BufferPositionTracker.aFontMetaRef_3150, TheoraVideoStream.aIsaacCipher_9029, -126)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_0_)
             InterfaceComponentGroup.method3243(42, class348_sub47)
         } else ChatCommandProcessor.method701(TextureDefinitionLoader.aBoundsConstraintEntry_1966!!, i_0_, -1)

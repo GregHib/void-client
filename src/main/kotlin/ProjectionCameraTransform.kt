@@ -452,7 +452,7 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
         }
 
         fun method941(i: Int, i_48_: Int) {
-            Class77.anInt1290 = i_48_
+            IsaacCipher.anInt1290 = i_48_
             anInt5755++
             if (i <= 113) aEmoteDefCache_5764 = null
         }

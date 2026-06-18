@@ -214,13 +214,13 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                     if (i_51_ > 0) {
                                         CameraRotationStub.aRenderer326!!.KA(0, i_49_, (SynthVoiceGroup.anInt8854), i_51_ + i_49_)
                                         CameraRotationStub.aRenderer326!!.ya()
-                                        CameraRotationStub.aRenderer326!!.GA(Class77.anInt1290)
+                                        CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
                                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
                                     }
                                     if (i_46_ > 0) {
                                         CameraRotationStub.aRenderer326!!.KA(i_44_, i_53_, i_44_ - -i_46_, i_53_ + i_52_)
                                         CameraRotationStub.aRenderer326!!.ya()
-                                        CameraRotationStub.aRenderer326!!.GA(Class77.anInt1290)
+                                        CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
                                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
                                     }
                                     CameraRotationStub.aRenderer326!!.la()
@@ -264,7 +264,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             if (Buffer.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3687(WidgetDefinition.anInterface4_252)
                             CameraRotationStub.aRenderer326!!.la()
                             CameraRotationStub.aRenderer326!!.ya()
-                            CameraRotationStub.aRenderer326!!.GA(Class77.anInt1290)
+                            CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
                             NpcConfig.aAbstractCameraTransform_905!!.method903(AnimatedModelRenderer.anInt8422, ConfigIdPair.anInt403, CameraSplineNode.anInt6849, WorldMapAreaLabel.anInt8583, LocalizedTextTriple.anInt3760, ProjectileConfigUtil.anInt396)
                             CameraRotationStub.aRenderer326!!.method3638(NpcConfig.aAbstractCameraTransform_905)
                             if (Buffer.anInt7207 == 1) {
@@ -295,7 +295,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                         ModelWallEntity.aDouble10120 = ShortMatrixNode.aDouble9517
                         if (Buffer.anInt7207 == 0 || Buffer.anInt7207 == 2) {
                             if (Buffer.anInt7207 == 2) {
-                                CameraRotationStub.aRenderer326!!.GA(Class77.anInt1290)
+                                CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
                                 CameraRotationStub.aRenderer326!!.ya()
                             }
                             TextureHandle.anInt2590 = i_20_

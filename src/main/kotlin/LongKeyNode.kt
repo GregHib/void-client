@@ -66,11 +66,11 @@ class LongKeyNode : LinkedListNode {
             anInt6761++
             var class348_sub47: OutgoingPacketNode? = null
             if (i_4_ == 0) {
-                class348_sub47 = method2148(TextureGenerator.aFontMetaRef_2495, TheoraVideoStream.aClass77_9029, -100)
+                class348_sub47 = method2148(TextureGenerator.aFontMetaRef_2495, TheoraVideoStream.aIsaacCipher_9029, -100)
                 StringValueNode.anInt7112++
             }
             if (i_4_ == 1) {
-                class348_sub47 = method2148(HeightMapNoise.aFontMetaRef_3825, TheoraVideoStream.aClass77_9029, -93)
+                class348_sub47 = method2148(HeightMapNoise.aFontMetaRef_3825, TheoraVideoStream.aIsaacCipher_9029, -93)
                 ClickFeedbackTask.anInt4665++
             }
             class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i + Class90.regionTileY, 3.toByte())

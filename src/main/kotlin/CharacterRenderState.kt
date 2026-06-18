@@ -203,62 +203,62 @@ class CharacterRenderState : LinkedListNode() {
                         if (WorldMapRenderer.anInt4674 == 10 && Client.method105(class46)!!.method3301(-1 + i_8_, false)) {
                             if (i_8_ == 1) {
                                 ScrollingWidgetComponentNode.anInt8380++
-                                val class348_sub47 = method2148((ProjectileConfigUtil.aFontMetaRef_398), (TheoraVideoStream.aClass77_9029), -93)
+                                val class348_sub47 = method2148((ProjectileConfigUtil.aFontMetaRef_398), (TheoraVideoStream.aIsaacCipher_9029), -93)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(118, class348_sub47)
                             }
                             if (i_8_ == 2) {
                                 InputStream_Sub1.anInt71++
-                                val class348_sub47 = method2148((ScriptResources.aFontMetaRef_2638), (TheoraVideoStream.aClass77_9029), -98)
+                                val class348_sub47 = method2148((ScriptResources.aFontMetaRef_2638), (TheoraVideoStream.aIsaacCipher_9029), -98)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(126, class348_sub47)
                             }
                             if (i_8_ == 3) {
                                 RegionSceneLoader.anInt3703++
-                                val class348_sub47 = method2148((GlslMaterialPass.aFontMetaRef_6244), (TheoraVideoStream.aClass77_9029), -93)
+                                val class348_sub47 = method2148((GlslMaterialPass.aFontMetaRef_6244), (TheoraVideoStream.aIsaacCipher_9029), -93)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(-80, class348_sub47)
                             }
                             if (i_8_ == 4) {
                                 Class90.anInt1514++
-                                val class348_sub47 = method2148((RasterSprite.aFontMetaRef_5204), (TheoraVideoStream.aClass77_9029), -82)
+                                val class348_sub47 = method2148((RasterSprite.aFontMetaRef_5204), (TheoraVideoStream.aIsaacCipher_9029), -82)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(116, class348_sub47)
                             }
                             val i_10_ = -80 / ((64 - i_7_) / 43)
                             if (i_8_ == 5) {
                                 FloatCameraTransform.anInt5714++
-                                val class348_sub47 = method2148((MinimapSquareDrawer.aFontMetaRef_5217), (TheoraVideoStream.aClass77_9029), -94)
+                                val class348_sub47 = method2148((MinimapSquareDrawer.aFontMetaRef_5217), (TheoraVideoStream.aIsaacCipher_9029), -94)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(123, class348_sub47)
                             }
                             if (i_8_ == 6) {
                                 WorldMapRenderer.anInt4680++
-                                val class348_sub47 = method2148((UnderlayDefinition.aFontMetaRef_2892), (TheoraVideoStream.aClass77_9029), -100)
+                                val class348_sub47 = method2148((UnderlayDefinition.aFontMetaRef_2892), (TheoraVideoStream.aIsaacCipher_9029), -100)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(-4, class348_sub47)
                             }
                             if (i_8_ == 7) {
                                 CalendarUtil.anInt4134++
-                                val class348_sub47 = method2148((ParticleGeometry.aFontMetaRef_4418), (TheoraVideoStream.aClass77_9029), -84)
+                                val class348_sub47 = method2148((ParticleGeometry.aFontMetaRef_4418), (TheoraVideoStream.aIsaacCipher_9029), -84)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(118, class348_sub47)
                             }
                             if (i_8_ == 8) {
                                 ScriptCompilerThread.anInt1726++
-                                val class348_sub47 = method2148((DoublyLinkedNodeList.aFontMetaRef_3165), (TheoraVideoStream.aClass77_9029), -117)
+                                val class348_sub47 = method2148((DoublyLinkedNodeList.aFontMetaRef_3165), (TheoraVideoStream.aIsaacCipher_9029), -117)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(-96, class348_sub47)
                             }
                             if (i_8_ == 9) {
                                 MapRegionLoaderThread.anInt4198++
-                                val class348_sub47 = method2148((ResourceLoaderThread.aFontMetaRef_3898), (TheoraVideoStream.aClass77_9029), -107)
+                                val class348_sub47 = method2148((ResourceLoaderThread.aFontMetaRef_3898), (TheoraVideoStream.aIsaacCipher_9029), -107)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(119, class348_sub47)
                             }
                             if (i_8_ != 10) break
                             CacheLruCache.anInt3886++
-                            val class348_sub47 = method2148(ClanChatRequestSender.aFontMetaRef_3644, (TheoraVideoStream.aClass77_9029), -120)
+                            val class348_sub47 = method2148(ClanChatRequestSender.aFontMetaRef_3644, (TheoraVideoStream.aIsaacCipher_9029), -120)
                             method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                             InterfaceComponentGroup.method3243(117, class348_sub47)
                         }

@@ -138,7 +138,7 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
         @JvmField
         var anInt9026: Int = 0
         @JvmField
-        var aClass77_9029: Class77? = null
+        var aIsaacCipher_9029: IsaacCipher? = null
         @JvmField
         var anInt9030: Int = 0
         @JvmField
@@ -162,7 +162,7 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
             if (i != 1) aRenderConfigFactory_9011 = null
             aJs5Archive_9033 = null
             aRenderConfigFactory_9011 = null
-            aClass77_9029 = null
+            aIsaacCipher_9029 = null
             aConfigDefinitionLoader_9031 = null
             aLocTypeDefLoader_9036 = null
         }

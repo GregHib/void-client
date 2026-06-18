@@ -334,7 +334,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     FrameStatsReset.method1131(99)
                     if (RsaVarbitHandler.aFrame4904 != null && PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null && WorldMapRenderer.anInt4674 == 11) {
                         RenderableEntry.anInt4335++
-                        val class348_sub47 = method2148(FileIoUtil.aFontMetaRef_4094, (TheoraVideoStream.aClass77_9029), i xor 0x55.inv())
+                        val class348_sub47 = method2148(FileIoUtil.aFontMetaRef_4094, (TheoraVideoStream.aIsaacCipher_9029), i xor 0x55.inv())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(108.toByte(), 1057001181)
                         InterfaceComponentGroup.method3243(-122, class348_sub47)
                     }
@@ -356,7 +356,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         if (WorldMapRenderer.anInt4674 != 8) {
                             Buffer.method3379(2, 10)
                             if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
-                                val class348_sub47 = method2148((RsaPacketDecoder.aFontMetaRef_4223), (TheoraVideoStream.aClass77_9029), -106)
+                                val class348_sub47 = method2148((RsaPacketDecoder.aFontMetaRef_4223), (TheoraVideoStream.aIsaacCipher_9029), -106)
                                 InterfaceComponentGroup.method3243(127, class348_sub47)
                             }
                         } else Buffer.method3379(2, 7)

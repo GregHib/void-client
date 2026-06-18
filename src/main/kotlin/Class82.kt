@@ -473,7 +473,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
                             return
                         }
                         if (string.startsWith("pc")) {
-                            val class348_sub47 = (method2148(CellNoiseTextureNode.aFontMetaRef_9304, TheoraVideoStream.aClass77_9029, -97))
+                            val class348_sub47 = (method2148(CellNoiseTextureNode.aFontMetaRef_9304, TheoraVideoStream.aIsaacCipher_9029, -97))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                             val i_12_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                             val i_13_ = string.indexOf(" ", 4)
@@ -490,10 +490,10 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
                         }
                         if (string == "scramblevarcs") {
                             var i_14_ = 0
-                            while ((i_14_ < Class77.Companion.anIntArray1303!!.size)) {
+                            while ((i_14_ < IsaacCipher.Companion.anIntArray1303!!.size)) {
                                 if (GlslEnvMaterialPass.aBooleanArray6270!![i_14_]) {
-                                    Class77.Companion.anIntArray1303!![i_14_] = (Math.random() * 99999.0).toInt()
-                                    if (Math.random() > 0.5) Class77.Companion.anIntArray1303!![i_14_] *= -1
+                                    IsaacCipher.Companion.anIntArray1303!![i_14_] = (Math.random() * 99999.0).toInt()
+                                    if (Math.random() > 0.5) IsaacCipher.Companion.anIntArray1303!![i_14_] *= -1
                                 }
                                 i_14_++
                             }
@@ -686,7 +686,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
                 }
                 if (WorldMapRenderer.anInt4674 == 10) {
                     MapArchiveSource.anInt4799++
-                    val class348_sub47 = method2148((FloatCameraTransform.aFontMetaRef_5699), (TheoraVideoStream.aClass77_9029), i.toInt() xor 0x24)
+                    val class348_sub47 = method2148((FloatCameraTransform.aFontMetaRef_5699), (TheoraVideoStream.aIsaacCipher_9029), i.toInt() xor 0x24)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string!!.length + 3)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (bool) 1 else 0)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (bool_0_) 1 else 0)
