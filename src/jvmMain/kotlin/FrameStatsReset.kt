@@ -6,6 +6,7 @@ import RenderListTextureNode.Companion.method3153
 import CacheEntryReference.Companion.method3194
 import SceneObjectSpawner.Companion.method773
 import SpriteBlitter.method882
+import direct.Direct3dModel
 
 // Decompiled by Jad v1.5.8f. Copyright 2001 Pavel Kouznetsov.
 // Jad home page: http://www.kpdus.com/jad.html

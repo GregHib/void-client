@@ -1,3 +1,4 @@
+import direct.Direct3dModel
 import java.awt.Frame
 import java.math.BigInteger
 

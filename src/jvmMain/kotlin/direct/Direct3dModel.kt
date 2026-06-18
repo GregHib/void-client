@@ -1,3 +1,7 @@
+package direct
+
+import AbstractCameraTransform
+import AbstractModel
 import ParticleEmitterNode.Companion.method219
 import DetailLevelOptionState.Companion.method1837
 import SimpleToggleOptionState.Companion.method1740
@@ -9,15 +13,35 @@ import ColourKeyTextureNode.Companion.method3119
 import RangeThresholdTextureNode.Companion.method3056
 import EdgeDetectTextureNode.Companion.method3073
 import AsyncResourceRequest.Companion.method3258
+import AsyncTaskHandle
+import BufferToggleState
 import StreamingResourceRequest.Companion.method3262
 import CacheEntryReference.Companion.method3194
 import HardCacheEntryReference.Companion.method3200
 import CharacterRenderState.Companion.method2783
 import LocConfigModelBuilder.Companion.method3563
 import CachedRgbNoiseTexture.Companion.method565
+import CameraOrModelTransform
 import ChatMessageStream.Companion.method135
 import ChatMessageStream.Companion.method137
+import ContactEntry
+import ContactList
+import CubemapTextureFactory
+import FloatCameraTransform
+import HeadIconRenderer
+import ModelDefinition
+import ModelFacePriorityNode
+import NativeRenderNode
+import NativeRenderer
+import NpcAppearanceFlags
 import OpenGlRenderer.Companion.method3743
+import RenderConfig
+import RenderNode
+import SceneOcculder
+import SceneTileBounds
+import TerrainTile
+import TextureMipDescriptor
+import WidgetRedrawRegion
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.sqrt
 
@@ -996,7 +1020,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 } else class64_sub2_154_.aByteArray5515 = class64_sub2_153_.aByteArray5515
                 for (i_163_ in 0..<anInt5478) class64_sub2_154_.aByteArray5515!![i_163_] = aByteArray5515!![i_163_]
             } else class64_sub2_154_.aByteArray5515 = aByteArray5515
-            if (HardCacheEntryReference.method3200(i, anInt5472, (-75).toByte())) {
+            if (method3200(i, anInt5472, (-75).toByte())) {
                 class64_sub2_154_.aBufferToggleState_5482 = class64_sub2_153_!!.aBufferToggleState_5482
                 class64_sub2_154_.aBufferToggleState_5482!!.aBoolean3709 = true
                 class64_sub2_154_.aBufferToggleState_5482!!.aBoolean3714 = aBufferToggleState_5482!!.aBoolean3714
@@ -3347,9 +3371,9 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             aHa_Sub3_5419 = var_ha_Sub3
             if (bool || ServerConnectionInfo.method1258(anInt5463, -9301, anInt5472)) aBufferToggleState_5520 = BufferToggleState(CompassSmoother.method2015(anInt5463, anInt5472, 7))
             if (bool || method1837(anInt5472, 102, anInt5463)) aBufferToggleState_5460 = BufferToggleState(ParticleDefLoader.method1379(4, anInt5472, anInt5463))
-            if (bool || HuffmanCodec.method2224(anInt5463, 110.toByte(), anInt5472)) aBufferToggleState_5482 = BufferToggleState(HardCacheEntryReference.method3200(anInt5463, anInt5472, (-82).toByte()))
+            if (bool || HuffmanCodec.method2224(anInt5463, 110.toByte(), anInt5472)) aBufferToggleState_5482 = BufferToggleState(method3200(anInt5463, anInt5472, (-82).toByte()))
             if (bool || GlowPostProcessor.method1412((-35).toByte(), anInt5472, anInt5463)) aBufferToggleState_5424 = BufferToggleState(Crc64Hashable.method1113(anInt5463, anInt5472, -21))
-            if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aAsyncTaskHandle_5485 = AsyncTaskHandle(CharacterRenderState.method2783(anInt5472, (-97).toByte(), anInt5463))
+            if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aAsyncTaskHandle_5485 = AsyncTaskHandle(method2783(anInt5472, (-97).toByte(), anInt5463))
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_764_ + ',' + bool + ',' + bool_765_ + ')'))
         }

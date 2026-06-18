@@ -479,8 +479,8 @@ import IdentKitRecolor.Companion.method208
 import LruByteCache.Companion.method584
 import GameClock.method598
 import GameClock.method599
-import Direct3dModel.Companion.method661
-import Direct3dModel.Companion.method676
+import direct.Direct3dModel.Companion.method661
+import direct.Direct3dModel.Companion.method676
 import OpenGlModel.Companion.method681
 import WorldMapImageBuilder.Companion.method698
 import ChatCommandProcessor.method705

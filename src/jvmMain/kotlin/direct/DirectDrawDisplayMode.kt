@@ -1,3 +1,5 @@
+package direct
+
 import com.ms.com.IUnknown
 import com.ms.directX.DDSurfaceDesc
 import com.ms.directX.DirectDraw

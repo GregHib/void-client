@@ -1,3 +1,8 @@
+package direct
+
+import D3dRenderDevice
+import DirectionPath
+import ModelBatchBase
 import jagdx.IDirect3DVertexDeclaration
 import jagdx.VertexElementCollection
 

@@ -1,3 +1,4 @@
+import direct.Direct3dVertexDeclaration
 import jaclib.peer.hb
 import jagdx.*
 import jagdx.IDirect3D.Companion.a

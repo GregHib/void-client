@@ -7,6 +7,7 @@ import jaclib.memory.heap.NativeHeap
 import jaclib.memory.heap.NativeHeapBuffer
 import jagex3.graphics2.hw.NativeInterface
 import OpenGlRenderNode.Companion.method3297
+import direct.Direct3dModel
 import java.awt.Canvas
 import java.util.Hashtable
 import kotlin.math.cos

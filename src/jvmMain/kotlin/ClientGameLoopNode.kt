@@ -21,7 +21,7 @@ import ClampTextureNode.Companion.method3150
 import WidgetTextConfig.Companion.method362
 import SolidFillComponent.Companion.method198
 import GameClock.method599
-import Direct3dModel.Companion.method661
+import direct.Direct3dModel.Companion.method661
 import ChatCommandProcessor.method705
 import java.io.File
 import java.io.IOException
