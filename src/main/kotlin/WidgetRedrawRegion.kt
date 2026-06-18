@@ -53,17 +53,17 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
             }
         }
 
-        fun method2683(systemFontGlyphs: SystemFontGlyphs?, class348_sub21: CameraSplineNode?, i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, class42: Class42?) {
+        fun method2683(systemFontGlyphs: SystemFontGlyphs?, class348_sub21: CameraSplineNode?, i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, structConfig: StructConfig?) {
             var i_2_ = i_2_
             try {
                 if (i_0_ == 64) {
                     anInt4242++
                     val i_4_ = -5 + i - i_3_ / 2
                     val i_5_ = i_2_ - -2
-                    if (class42!!.anInt602 != 0) var_renderer!!.method3675(i_3_ + 10, (-125).toByte(), i_4_, i_5_, (i_2_ - -(systemFontGlyphs!!.method2565() * i_1_) - (i_5_ - 1)), class42.anInt602)
-                    if (class42.anInt604 != 0) var_renderer!!.method3668(i_3_ + 10, i_5_, class42.anInt604, i_4_, (i_1_ * systemFontGlyphs!!.method2565() + i_2_ - (i_5_ + -1)), 92)
-                    var i_6_ = class42.anInt580
-                    if (class348_sub21!!.aBoolean6848 && class42.anInt567 != -1) i_6_ = class42.anInt567
+                    if (structConfig!!.anInt602 != 0) var_renderer!!.method3675(i_3_ + 10, (-125).toByte(), i_4_, i_5_, (i_2_ - -(systemFontGlyphs!!.method2565() * i_1_) - (i_5_ - 1)), structConfig.anInt602)
+                    if (structConfig.anInt604 != 0) var_renderer!!.method3668(i_3_ + 10, i_5_, structConfig.anInt604, i_4_, (i_1_ * systemFontGlyphs!!.method2565() + i_2_ - (i_5_ + -1)), 92)
+                    var i_6_ = structConfig.anInt580
+                    if (class348_sub21!!.aBoolean6848 && structConfig.anInt567 != -1) i_6_ = structConfig.anInt567
                     var i_7_ = 0
                     while (i_1_ > i_7_) {
                         var string = NativeRenderer.aStringArray8019!![i_7_]
@@ -74,7 +74,7 @@ class WidgetRedrawRegion internal constructor(var anInt4245: Int, var anInt4244:
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("eca.A(" + (if (systemFontGlyphs != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + (if (class42 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("eca.A(" + (if (systemFontGlyphs != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + (if (structConfig != null) "{...}" else "null") + ')'))
             }
         }
 

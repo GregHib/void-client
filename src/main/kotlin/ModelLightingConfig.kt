@@ -115,18 +115,18 @@ class ModelLightingConfig {
         }
 
         @JvmStatic
-        fun method1425(i: Byte, class42: Class42?, class348_sub21: CameraSplineNode?, i_5_: Int, var_renderer: Renderer?, i_6_: Int): Boolean {
+        fun method1425(i: Byte, structConfig: StructConfig?, class348_sub21: CameraSplineNode?, i_5_: Int, var_renderer: Renderer?, i_6_: Int): Boolean {
             try {
                 anInt2537++
                 var i_7_ = 2147483647
                 var i_8_ = -2147483648
                 var i_9_ = 2147483647
                 var i_10_ = -2147483648
-                if (class42!!.anIntArray591 != null) {
-                    i_8_ = (Class75.anInt1272 + ((-Class75.anInt1274 + (class348_sub21!!.anInt6852 + class42.anInt595)) * (Class75.anInt1276 - Class75.anInt1272) / (-Class75.anInt1274 + Class75.anInt1265)))
-                    i_9_ = (-((-Class75.anInt1262 + Class75.anInt1268) * (class42.anInt570 + (class348_sub21.anInt6851 - Class75.anInt1257)) / (Class75.anInt1277 + -Class75.anInt1257)) + Class75.anInt1268)
-                    i_10_ = (-((-Class75.anInt1262 + Class75.anInt1268) * (class348_sub21.anInt6851 + (class42.anInt607 + -Class75.anInt1257)) / (Class75.anInt1277 - Class75.anInt1257)) + Class75.anInt1268)
-                    i_7_ = (((-Class75.anInt1272 + Class75.anInt1276) * (-Class75.anInt1274 + class348_sub21.anInt6852 + class42.anInt603) / (-Class75.anInt1274 + Class75.anInt1265)) + Class75.anInt1272)
+                if (structConfig!!.anIntArray591 != null) {
+                    i_8_ = (Class75.anInt1272 + ((-Class75.anInt1274 + (class348_sub21!!.anInt6852 + structConfig.anInt595)) * (Class75.anInt1276 - Class75.anInt1272) / (-Class75.anInt1274 + Class75.anInt1265)))
+                    i_9_ = (-((-Class75.anInt1262 + Class75.anInt1268) * (structConfig.anInt570 + (class348_sub21.anInt6851 - Class75.anInt1257)) / (Class75.anInt1277 + -Class75.anInt1257)) + Class75.anInt1268)
+                    i_10_ = (-((-Class75.anInt1262 + Class75.anInt1268) * (class348_sub21.anInt6851 + (structConfig.anInt607 + -Class75.anInt1257)) / (Class75.anInt1277 - Class75.anInt1257)) + Class75.anInt1268)
+                    i_7_ = (((-Class75.anInt1272 + Class75.anInt1276) * (-Class75.anInt1274 + class348_sub21.anInt6852 + structConfig.anInt603) / (-Class75.anInt1274 + Class75.anInt1265)) + Class75.anInt1272)
                 }
                 var abstractModelRenderer: AbstractModelRenderer? = null
                 var i_11_ = 0
@@ -134,9 +134,9 @@ class ModelLightingConfig {
                 var i_12_ = 0
                 var i_13_ = 0
                 var i_14_ = 0
-                if (class42.anInt578 != -1) {
-                    if (class348_sub21!!.aBoolean6848 && class42.anInt605 != -1) abstractModelRenderer = class42.method374(true, var_renderer!!, 127.toByte())
-                    else abstractModelRenderer = class42.method374(false, var_renderer!!, 127.toByte())
+                if (structConfig.anInt578 != -1) {
+                    if (class348_sub21!!.aBoolean6848 && structConfig.anInt605 != -1) abstractModelRenderer = structConfig.method374(true, var_renderer!!, 127.toByte())
+                    else abstractModelRenderer = structConfig.method374(false, var_renderer!!, 127.toByte())
                     if (abstractModelRenderer != null) {
                         i_11_ = (class348_sub21.anInt6853 + -(abstractModelRenderer.method966() - -1 shr 1))
                         i_12_ = (class348_sub21.anInt6853 + (1 + abstractModelRenderer.method966() shr 1))
@@ -157,12 +157,12 @@ class ModelLightingConfig {
                 var i_20_ = 0
                 var i_21_ = 0
                 var i_22_ = 0
-                if (class42.aString597 != null) {
-                    systemFontGlyphs = method1782(class42.anInt576, 10144)
+                if (structConfig.aString597 != null) {
+                    systemFontGlyphs = method1782(structConfig.anInt576, 10144)
                     if (systemFontGlyphs != null) {
-                        i_15_ = (GlTexture3D.aFontDefinition_8527!!.method1188(class42.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
-                        i_17_ = (class348_sub21!!.anInt6855 - (class42.anInt568 * (Class75.anInt1268 + -Class75.anInt1262) / (Class75.anInt1277 - Class75.anInt1257)))
-                        i_16_ = (class348_sub21.anInt6853 + ((-Class75.anInt1272 + Class75.anInt1276) * class42.anInt566 / (Class75.anInt1265 + -Class75.anInt1274)))
+                        i_15_ = (GlTexture3D.aFontDefinition_8527!!.method1188(structConfig.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
+                        i_17_ = (class348_sub21!!.anInt6855 - (structConfig.anInt568 * (Class75.anInt1268 + -Class75.anInt1262) / (Class75.anInt1277 - Class75.anInt1257)))
+                        i_16_ = (class348_sub21.anInt6853 + ((-Class75.anInt1272 + Class75.anInt1276) * structConfig.anInt566 / (Class75.anInt1265 + -Class75.anInt1274)))
                         if (abstractModelRenderer == null) i_17_ -= i_15_ * systemFontGlyphs.method2560() / 2
                         else i_17_ -= ((abstractModelRenderer.method980() shr 1) - -(i_15_ * systemFontGlyphs.method2565()))
                         var i_23_ = 0
@@ -184,9 +184,9 @@ class ModelLightingConfig {
                     }
                 }
                 if (Class75.anInt1272 > i_8_ || i_7_ > Class75.anInt1276 || i_10_ < Class75.anInt1262 || i_9_ > Class75.anInt1268) return true
-                Class75.method745(var_renderer!!, class348_sub21!!, class42)
+                Class75.method745(var_renderer!!, class348_sub21!!, structConfig)
                 if (abstractModelRenderer != null) {
-                    if (Class367_Sub9.anInt7379 > 0 && ((HslAdjustTextureNode.anInt9399 != -1 && (HslAdjustTextureNode.anInt9399 == class348_sub21.anInt6847)) || (SkeletalAnimFrameLoader.anInt481 != -1 && (class42.anInt596 == SkeletalAnimFrameLoader.anInt481)))) {
+                    if (Class367_Sub9.anInt7379 > 0 && ((HslAdjustTextureNode.anInt9399 != -1 && (HslAdjustTextureNode.anInt9399 == class348_sub21.anInt6847)) || (SkeletalAnimFrameLoader.anInt481 != -1 && (structConfig.anInt596 == SkeletalAnimFrameLoader.anInt481)))) {
                         val i_25_: Int
                         if (ClientLoadStateMachine.anInt2173 <= 50) i_25_ = 2 * ClientLoadStateMachine.anInt2173
                         else i_25_ = -(ClientLoadStateMachine.anInt2173 * 2) + 200
@@ -199,8 +199,8 @@ class ModelLightingConfig {
                     }
                     abstractModelRenderer.method974((class348_sub21.anInt6853 + -(abstractModelRenderer.method966() shr 1)), (class348_sub21.anInt6855 + -(abstractModelRenderer.method980() shr 1)))
                 }
-                if (class42.aString597 != null && systemFontGlyphs != null) WidgetRedrawRegion.method2683(systemFontGlyphs, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, class42)
-                if (class42.anInt578 != -1 || class42.aString597 != null) {
+                if (structConfig.aString597 != null && systemFontGlyphs != null) WidgetRedrawRegion.method2683(systemFontGlyphs, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, structConfig)
+                if (structConfig.anInt578 != -1 || structConfig.aString597 != null) {
                     val class348_sub12 = BoundingBoxNode(class348_sub21)
                     class348_sub12.anInt6746 = i_13_
                     class348_sub12.anInt6753 = i_21_
@@ -214,7 +214,7 @@ class ModelLightingConfig {
                 }
                 return false
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("bp.C(" + i + ',' + (if (class42 != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_6_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("bp.C(" + i + ',' + (if (structConfig != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_6_ + ')'))
             }
         }
 

@@ -3,7 +3,7 @@ import CacheArchiveIndexLoader.Companion.method340
 /* Class42 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class42 {
+class StructConfig {
     @JvmField
     var aByteArray564: ByteArray = byteArrayOf()
     @JvmField

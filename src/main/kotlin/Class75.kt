@@ -77,17 +77,17 @@ open class Class75 {
         var anInt1277: Int = 0
 
         @JvmStatic
-        fun method745(var_renderer: Renderer, class348_sub21: CameraSplineNode, class42: Class42) {
-            if (class42.anIntArray591 != null) {
-                val `is` = IntArray(class42.anIntArray591!!.size)
+        fun method745(var_renderer: Renderer, class348_sub21: CameraSplineNode, structConfig: StructConfig) {
+            if (structConfig.anIntArray591 != null) {
+                val `is` = IntArray(structConfig.anIntArray591!!.size)
                 for (i in 0..<`is`.size / 2) {
-                    val i_0_ = (class42.anIntArray591!![i * 2] + class348_sub21.anInt6852)
-                    val i_1_ = (class42.anIntArray591!![i * 2 + 1] + class348_sub21.anInt6851)
+                    val i_0_ = (structConfig.anIntArray591!![i * 2] + class348_sub21.anInt6852)
+                    val i_1_ = (structConfig.anIntArray591!![i * 2 + 1] + class348_sub21.anInt6851)
                     `is`[i * 2] = anInt1272 + ((anInt1276 - anInt1272) * (i_0_ - anInt1274) / (anInt1265 - anInt1274))
                     `is`[i * 2 + 1] = anInt1268 - ((anInt1268 - anInt1262) * (i_1_ - anInt1257) / (anInt1277 - anInt1257))
                 }
-                PolygonFiller.method2620(var_renderer, `is`, class42.anInt582)
-                if (class42.anInt584 > 0) {
+                PolygonFiller.method2620(var_renderer, `is`, structConfig.anInt582)
+                if (structConfig.anInt584 > 0) {
                     for (i in 0..<`is`.size / 2 - 1) {
                         var i_2_ = `is`[i * 2]
                         var i_3_ = `is`[i * 2 + 1]
@@ -105,7 +105,7 @@ open class Class75 {
                             i_3_ = i_5_
                             i_5_ = i_8_
                         }
-                        var_renderer.method3674(i_2_, i_3_, i_4_, i_5_, (class42.anIntArray572[(class42.aByteArray564[i].toInt() and 0xff)]), 1, class42.anInt584, class42.anInt575, class42.anInt601)
+                        var_renderer.method3674(i_2_, i_3_, i_4_, i_5_, (structConfig.anIntArray572[(structConfig.aByteArray564[i].toInt() and 0xff)]), 1, structConfig.anInt584, structConfig.anInt575, structConfig.anInt601)
                     }
                     var i = `is`[`is`.size - 2]
                     var i_9_ = `is`[`is`.size - 1]
@@ -123,10 +123,10 @@ open class Class75 {
                         i_9_ = i_11_
                         i_11_ = i_14_
                     }
-                    var_renderer.method3674(i, i_9_, i_10_, i_11_, (class42.anIntArray572[(class42.aByteArray564[(class42.aByteArray564.size - 1)]).toInt() and 0xff]), 1, class42.anInt584, class42.anInt575, class42.anInt601)
+                    var_renderer.method3674(i, i_9_, i_10_, i_11_, (structConfig.anIntArray572[(structConfig.aByteArray564[(structConfig.aByteArray564.size - 1)]).toInt() and 0xff]), 1, structConfig.anInt584, structConfig.anInt575, structConfig.anInt601)
                 } else {
-                    for (i in 0..<`is`.size / 2 - 1) var_renderer.method3645(`is`[i * 2 + 1], `is`[i * 2], `is`[(i + 1) * 2], -8003, (class42.anIntArray572[(class42.aByteArray564[i].toInt() and 0xff)]), `is`[(i + 1) * 2 + 1])
-                    var_renderer.method3645(`is`[`is`.size - 1], `is`[`is`.size - 2], `is`[0], -8003, (class42.anIntArray572[(class42.aByteArray564[(class42.aByteArray564.size - 1)]).toInt() and 0xff]), `is`[1])
+                    for (i in 0..<`is`.size / 2 - 1) var_renderer.method3645(`is`[i * 2 + 1], `is`[i * 2], `is`[(i + 1) * 2], -8003, (structConfig.anIntArray572[(structConfig.aByteArray564[i].toInt() and 0xff)]), `is`[(i + 1) * 2 + 1])
+                    var_renderer.method3645(`is`[`is`.size - 1], `is`[`is`.size - 2], `is`[0], -8003, (structConfig.anIntArray572[(structConfig.aByteArray564[(structConfig.aByteArray564.size - 1)]).toInt() and 0xff]), `is`[1])
                 }
             }
         }

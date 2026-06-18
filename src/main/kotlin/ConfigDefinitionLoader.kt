@@ -50,27 +50,27 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
         }
     }
 
-    fun method1225(i: Int, i_9_: Byte): Class42? {
+    fun method1225(i: Int, i_9_: Byte): StructConfig? {
         anInt2085++
-        var class42: Class42?
+        var structConfig: StructConfig?
         synchronized(aClass60_2083) {
-            class42 = aClass60_2083.method583(i.toLong(), 91) as Class42?
+            structConfig = aClass60_2083.method583(i.toLong(), 91) as StructConfig?
         }
-        if (class42 != null) return class42
+        if (structConfig != null) return structConfig
         if (i_9_ < 36) return null
         val `is`: ByteArray?
         synchronized(aClass45_2084!!) {
             `is` = aClass45_2084.method410(-1860, 36, i)
         }
-        class42 = Class42()
-        class42.aConfigDefinitionLoader_593 = this
-        class42.anInt581 = i
-        if (`is` != null) class42.method379(Buffer(`is`), 109)
-        class42.method372(-25359)
+        structConfig = StructConfig()
+        structConfig.aConfigDefinitionLoader_593 = this
+        structConfig.anInt581 = i
+        if (`is` != null) structConfig.method379(Buffer(`is`), 109)
+        structConfig.method372(-25359)
         synchronized(aClass60_2083) {
-            aClass60_2083.method582(class42, i.toLong(), (-106).toByte())
+            aClass60_2083.method582(structConfig, i.toLong(), (-106).toByte())
         }
-        return class42
+        return structConfig
     }
 
     init {

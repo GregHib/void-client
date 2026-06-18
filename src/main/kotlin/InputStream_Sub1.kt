@@ -51,45 +51,45 @@ class InputStream_Sub1 : InputStream() {
             if (class318_sub1_sub4.aShort8759.toInt() == 1) {
                 if (!ScrollTexMaterialPass.method2169(i_3_, i_3_, i_4_, i_3_, ArchiveFileConditionWrapper.anInt3465 + i_4_, i_6_, i_6_, i_5_, i_4_, false)) return false
                 if (!ScrollTexMaterialPass.method2169(i_3_, i_3_, i_4_, i_3_, ArchiveFileConditionWrapper.anInt3465 + i_4_, i_5_, i_6_, i_5_, i_4_ + ArchiveFileConditionWrapper.anInt3465, false)) return false
-                Class42.anInt562++
+                StructConfig.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 2) {
                 if (!ScrollTexMaterialPass.method2169(i_3_, i_3_ - -ArchiveFileConditionWrapper.anInt3465, i_4_ - -ArchiveFileConditionWrapper.anInt3465, i_3_, ArchiveFileConditionWrapper.anInt3465 + i_4_, i_6_, i_6_, i_5_, i_4_ - -ArchiveFileConditionWrapper.anInt3465, false)) return false
                 if (!ScrollTexMaterialPass.method2169(i_3_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_ + ArchiveFileConditionWrapper.anInt3465, ArchiveFileConditionWrapper.anInt3465 + i_3_, ArchiveFileConditionWrapper.anInt3465 + i_4_, i_6_, i_5_, i_5_, i_4_ - -ArchiveFileConditionWrapper.anInt3465, false)) return false
-                Class42.anInt562++
+                StructConfig.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 4) {
                 if (!ScrollTexMaterialPass.method2169(i_3_ + ArchiveFileConditionWrapper.anInt3465, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_ - -ArchiveFileConditionWrapper.anInt3465, i_6_, i_6_, i_5_, i_4_, false)) return false
                 if (!ScrollTexMaterialPass.method2169(i_3_ + ArchiveFileConditionWrapper.anInt3465, i_3_ - -ArchiveFileConditionWrapper.anInt3465, i_4_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_ - -ArchiveFileConditionWrapper.anInt3465, i_5_, i_6_, i_5_, ArchiveFileConditionWrapper.anInt3465 + i_4_, false)) return false
-                Class42.anInt562++
+                StructConfig.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 8) {
                 if (!ScrollTexMaterialPass.method2169(i_3_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_, i_3_, i_4_, i_6_, i_6_, i_5_, i_4_, false)) return false
                 if (!ScrollTexMaterialPass.method2169(i_3_, i_3_ + ArchiveFileConditionWrapper.anInt3465, i_4_, ArchiveFileConditionWrapper.anInt3465 + i_3_, i_4_, i_6_, i_5_, i_5_, i_4_, false)) return false
-                Class42.anInt562++
+                StructConfig.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 16) {
                 if (!MinimapFlagRenderer.method1084(i_6_, TheoraVideoStream.anInt9037, TheoraVideoStream.anInt9037 + i_4_, i_3_, i_5_, TheoraVideoStream.anInt9037, 18507)) return false
-                Class42.anInt562++
+                StructConfig.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 32) {
                 if (!MinimapFlagRenderer.method1084(i_6_, TheoraVideoStream.anInt9037, TheoraVideoStream.anInt9037 + i_4_, i_3_ + TheoraVideoStream.anInt9037, i_5_, TheoraVideoStream.anInt9037, 18507)) return false
-                Class42.anInt562++
+                StructConfig.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 64) {
                 if (!MinimapFlagRenderer.method1084(i_6_, TheoraVideoStream.anInt9037, i_4_, TheoraVideoStream.anInt9037 + i_3_, i_5_, TheoraVideoStream.anInt9037, 18507)) return false
-                Class42.anInt562++
+                StructConfig.anInt562++
                 return true
             }
             if (class318_sub1_sub4.aShort8759.toInt() == 128) {
                 if (!MinimapFlagRenderer.method1084(i_6_, TheoraVideoStream.anInt9037, i_4_, i_3_, i_5_, TheoraVideoStream.anInt9037, 18507)) return false
-                Class42.anInt562++
+                StructConfig.anInt562++
                 return true
             }
             return true

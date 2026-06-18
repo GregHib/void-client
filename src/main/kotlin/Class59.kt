@@ -232,10 +232,10 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
         }
 
         @JvmStatic
-        fun method549(i: Byte, class348_sub21: CameraSplineNode?, var_renderer: Renderer, class42: Class42?) {
+        fun method549(i: Byte, class348_sub21: CameraSplineNode?, var_renderer: Renderer, structConfig: StructConfig?) {
             try {
                 anInt1080++
-                val class105 = class42!!.method375(var_renderer, false)
+                val class105 = structConfig!!.method375(var_renderer, false)
                 if (class105 != null) {
                     var i_56_ = class105.method971()
                     if (i_56_ < class105.method969()) i_56_ = class105.method969()
@@ -245,8 +245,8 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                     var i_60_ = 0
                     var i_61_ = 0
                     var i_62_ = 0
-                    if (class42.aString597 != null) {
-                        i_60_ = (GlTexture3D.aFontDefinition_8527!!.method1188(class42.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
+                    if (structConfig.aString597 != null) {
+                        i_60_ = (GlTexture3D.aFontDefinition_8527!!.method1188(structConfig.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
                         var i_63_ = 0
                         while (i_60_ > i_63_) {
                             var string = NativeRenderer.aStringArray8019!![i_63_]!!
@@ -282,23 +282,23 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                     var i_70_ = -2
                     if (i.toInt() != -43) method545(-91, -16)
                     var i_71_ = -2
-                    if (class42.aString597 != null) {
+                    if (structConfig.aString597 != null) {
                         i_69_ = i_66_
                         i_68_ = i_65_ + -(i_61_ / 2) - 5
                         i_71_ = 3 + (i_60_ * GlShaderObjectHandle.aSystemFontGlyphs_521!!.method2565() + i_69_)
                         i_70_ = i_61_ + (i_68_ + 10)
-                        if (class42.anInt602 != 0) var_renderer!!.method3675(-i_68_ + i_70_, (-125).toByte(), i_68_, i_69_, i_71_ - i_69_, class42.anInt602)
-                        if (class42.anInt604 != 0) var_renderer!!.method3668(-i_68_ + i_70_, i_69_, class42.anInt604, i_68_, -i_69_ + i_71_, 67)
+                        if (structConfig.anInt602 != 0) var_renderer!!.method3675(-i_68_ + i_70_, (-125).toByte(), i_68_, i_69_, i_71_ - i_69_, structConfig.anInt602)
+                        if (structConfig.anInt604 != 0) var_renderer!!.method3668(-i_68_ + i_70_, i_69_, structConfig.anInt604, i_68_, -i_69_ + i_71_, 67)
                         var i_72_ = 0
                         while (i_60_ > i_72_) {
                             var string = NativeRenderer.aStringArray8019!![i_72_]!!
                             if (i_72_ < i_60_ + -1) string = string.substring(0, -4 + string.length)
-                            GlShaderObjectHandle.aSystemFontGlyphs_521!!.method2563(var_renderer, string, i_65_, i_66_, (class42.anInt580), true)
+                            GlShaderObjectHandle.aSystemFontGlyphs_521!!.method2563(var_renderer, string, i_65_, i_66_, (structConfig.anInt580), true)
                             i_66_ += GlShaderObjectHandle.aSystemFontGlyphs_521!!.method2565()
                             i_72_++
                         }
                     }
-                    if (class42.anInt578 != -1 || class42.aString597 != null) {
+                    if (structConfig.anInt578 != -1 || structConfig.aString597 != null) {
                         i_56_ = i_56_ shr 1
                         val class348_sub12 = BoundingBoxNode(class348_sub21)
                         class348_sub12.anInt6737 = i_70_
@@ -313,7 +313,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("jp.I(" + i + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class42 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("jp.I(" + i + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (structConfig != null) "{...}" else "null") + ')'))
             }
         }
     }
