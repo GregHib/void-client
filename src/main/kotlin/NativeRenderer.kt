@@ -108,7 +108,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var anInt8134: Int = 512
     var aFloatArray8135: FloatArray
     private var aGroundDecorRenderer_8136: GroundDecorRenderer? = null
-    private val aClass372_8137: Class372?
+    private val aMaterialTextureCache_8137: MaterialTextureCache?
     var anInt8138: Int = 0
     private val aAbstractRenderPassArray8139: Array<AbstractRenderPass?>
     private var aFloatArray8140: FloatArray?
@@ -305,7 +305,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 var i_24_ = 0
                 var i_25_ = if (this.aBoolean8160) 3.toByte() else 0.toByte()
                 if (i >= 0) {
-                    interface18_impl3 = aClass372_8137!!.method3587((-97).toByte(), i)
+                    interface18_impl3 = aMaterialTextureCache_8137!!.method3587((-97).toByte(), i)
                     val class12 = this.aRenderConfig4579!!.method3(i, -6662)
                     if (class12!!.aByte198.toInt() == 0 && class12.aByte211.toInt() == 0) method3879(-8629)
                     else {
@@ -1172,7 +1172,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     override fun method3696(i: Int) {
         anInt7995++
         require(!(i < 128 || i > 1024))
-        if (aClass372_8137 != null) aClass372_8137.method3585(7271)
+        if (aMaterialTextureCache_8137 != null) aMaterialTextureCache_8137.method3585(7271)
         this.anInt8150 = i
     }
 
@@ -1785,7 +1785,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     override fun method3663() {
         anInt7887++
-        if (aClass372_8137 != null) aClass372_8137.method3585(7271)
+        if (aMaterialTextureCache_8137 != null) aMaterialTextureCache_8137.method3585(7271)
     }
 
     abstract fun method3911(canvas: Canvas?, i: Int, `object`: Any?)
@@ -1990,7 +1990,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     abstract fun method3921(i: Int)
 
     override fun method3646(i: Int) {
-        if (aClass372_8137 != null) aClass372_8137.method3586(-16130)
+        if (aMaterialTextureCache_8137 != null) aMaterialTextureCache_8137.method3586(-16130)
         anInt8059++
         this.anInt8146 = 0x7fffffff and i
     }
@@ -2510,9 +2510,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 Class59_Sub2_Sub1.method566(false, true, (-127).toByte())
                 if (this.aRenderConfig4579 == null) {
                     this.aNativeInterface7924 = NativeInterface(0, this.anInt8178)
-                    aClass372_8137 = null
+                    aMaterialTextureCache_8137 = null
                 } else {
-                    aClass372_8137 = Class372(this, this.aRenderConfig4579)
+                    aMaterialTextureCache_8137 = MaterialTextureCache(this, this.aRenderConfig4579)
                     this.aNativeInterface7924 = NativeInterface(this.aRenderConfig4579!!.method2(true), this.anInt8178)
                     var i_290_ = 0
                     while (this.aRenderConfig4579!!.method2(true) > i_290_) {

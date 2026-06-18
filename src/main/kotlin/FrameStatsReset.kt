@@ -1147,7 +1147,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TextureTileRenderer.anInt6829 = 0
             SequencedActorEntity.anInt10113 = 0
             Buffer.anInt7149 = 0
-            Class372.anInt4530 = 0
+            MaterialTextureCache.anInt4530 = 0
             Class55.anInt1000 = 0
             ParticleAmountConfig.anInt2126 = 0
             Class45.anInt654 = 0
@@ -1745,7 +1745,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ModelHeaderCache.anInt3274 = 0
             GlRectangleTexture.anInt8650 = 0
             Npc.anInt10508 = 0
-            Class372.anInt4529 = 0
+            MaterialTextureCache.anInt4529 = 0
             Class45.anInt637 = 0
             AnimationFrameTable.anInt488 = 0
             Class64.anInt1129 = 0
@@ -2739,7 +2739,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Player.anInt10528 = 0
             Class64_Sub2.anInt5466 = 0
             NativeRenderer.anInt8008 = 0
-            Class372.anInt4527 = 0
+            MaterialTextureCache.anInt4527 = 0
             LocConfigModelBuilder.anInt4491 = 0
             SizeBoundedSoftCache.anInt2319 = 0
             NativeRenderer.anInt7978 = 0

@@ -1,7 +1,7 @@
 /* Class372 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class372(var_ha_Sub3: NativeRenderer?, var_renderConfig: RenderConfig?) {
+class MaterialTextureCache(var_ha_Sub3: NativeRenderer?, var_renderConfig: RenderConfig?) {
     private val aHa_Sub3_4526: NativeRenderer?
     private val aRenderConfig4528: RenderConfig?
     private val aClass60_4531 = Class60(256)
