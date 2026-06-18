@@ -11,7 +11,7 @@ import kotlin.math.sqrt
 class Class64_Sub1 : Class64 {
     private var aShortArray5311: ShortArray? = null
     private var anIntArray5312: IntArray? = null
-    private var aClass360Array5313: Array<Class360?>? = null
+    private var aRectangleArray5313: Array<Rectangle?>? = null
     private var aFloatArrayArray5314: Array<FloatArray?>? = null
     private lateinit var anIntArray5315: IntArray
     private var anInt5316 = 0
@@ -55,7 +55,7 @@ class Class64_Sub1 : Class64 {
     private var aBoolean5357 = false
     private var aByteArray5358: ByteArray? = null
     private lateinit var anIntArray5359: IntArray
-    private var aClass360Array5360: Array<Class360?>? = null
+    private var aRectangleArray5360: Array<Rectangle?>? = null
     private var aClass6Array5361: Array<Class6?>? = null
     private lateinit var anIntArray5362: IntArray
     private var aModelTransformParamsArray5363: Array<ModelTransformParams?>? = null
@@ -110,8 +110,8 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method631() {
-        aClass360Array5360 = null
-        aClass360Array5313 = null
+        aRectangleArray5360 = null
+        aRectangleArray5313 = null
         aClass41Array5385 = null
         aBoolean5323 = false
     }
@@ -254,14 +254,14 @@ class Class64_Sub1 : Class64 {
             }
         } else class64_sub1_7_.aByteArray5325 = aByteArray5325
         if ((i and 0x8) != 0 || (i and 0x10) != 0) {
-            if (class64_sub1_8_.aClass360Array5360 == null || class64_sub1_8_.aClass360Array5360!!.size < anInt5387) {
+            if (class64_sub1_8_.aRectangleArray5360 == null || class64_sub1_8_.aRectangleArray5360!!.size < anInt5387) {
                 val i_24_ = anInt5387
-                class64_sub1_8_.aClass360Array5360 = arrayOfNulls<Class360>(i_24_)
-                class64_sub1_7_.aClass360Array5360 = class64_sub1_8_.aClass360Array5360
-            } else class64_sub1_7_.aClass360Array5360 = class64_sub1_8_.aClass360Array5360
-            if (aClass360Array5360 != null) {
-                for (i_25_ in 0..<anInt5387) class64_sub1_7_.aClass360Array5360!![i_25_] = Class360(aClass360Array5360!![i_25_]!!)
-            } else class64_sub1_7_.aClass360Array5360 = null
+                class64_sub1_8_.aRectangleArray5360 = arrayOfNulls<Rectangle>(i_24_)
+                class64_sub1_7_.aRectangleArray5360 = class64_sub1_8_.aRectangleArray5360
+            } else class64_sub1_7_.aRectangleArray5360 = class64_sub1_8_.aRectangleArray5360
+            if (aRectangleArray5360 != null) {
+                for (i_25_ in 0..<anInt5387) class64_sub1_7_.aRectangleArray5360!![i_25_] = Rectangle(aRectangleArray5360!![i_25_]!!)
+            } else class64_sub1_7_.aRectangleArray5360 = null
             if (aClass41Array5385 != null) {
                 if (class64_sub1_8_.aClass41Array5385 == null || class64_sub1_8_.aClass41Array5385!!.size < anInt5351) {
                     val i_26_ = anInt5351
@@ -272,7 +272,7 @@ class Class64_Sub1 : Class64 {
             } else class64_sub1_7_.aClass41Array5385 = null
         } else {
             if (bool_9_) method636()
-            class64_sub1_7_.aClass360Array5360 = aClass360Array5360
+            class64_sub1_7_.aRectangleArray5360 = aRectangleArray5360
             class64_sub1_7_.aClass41Array5385 = aClass41Array5385
         }
         if ((i and 0x8000) != 0) {
@@ -1189,7 +1189,7 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method636() {
-        if (anInt5354 == 0 && aClass360Array5360 == null) {
+        if (anInt5354 == 0 && aRectangleArray5360 == null) {
             if (aHa_Sub1_5353.anInt7485 > 1) {
                 synchronized(this) {
                     method649()
@@ -1312,7 +1312,7 @@ class Class64_Sub1 : Class64 {
 
     public override fun k(i: Int) {
         check((anInt5316 and 0xd) == 13)
-        if (aClass360Array5360 != null) {
+        if (aRectangleArray5360 != null) {
             if (i == 4096) method653()
             else if (i == 8192) method652()
             else if (i == 12288) method641()
@@ -1324,10 +1324,10 @@ class Class64_Sub1 : Class64 {
                         var i_296_ = ((anIntArray5312!![i_295_] * i_293_ + anIntArray5356!![i_295_] * i_294_) shr 14)
                         anIntArray5312!![i_295_] = (anIntArray5312!![i_295_] * i_294_ - anIntArray5356!![i_295_] * i_293_) shr 14
                         anIntArray5356!![i_295_] = i_296_
-                        if (aClass360Array5360!![i_295_] != null) {
-                            i_296_ = ((aClass360Array5360!![i_295_]!!.anInt4427) * i_293_ + (aClass360Array5360!![i_295_]!!.anInt4430) * i_294_) shr 14
-                            aClass360Array5360!![i_295_]!!.anInt4427 = ((aClass360Array5360!![i_295_]!!.anInt4427) * i_294_ - (aClass360Array5360!![i_295_]!!.anInt4430) * i_293_) shr 14
-                            aClass360Array5360!![i_295_]!!.anInt4430 = i_296_
+                        if (aRectangleArray5360!![i_295_] != null) {
+                            i_296_ = ((aRectangleArray5360!![i_295_]!!.anInt4427) * i_293_ + (aRectangleArray5360!![i_295_]!!.anInt4430) * i_294_) shr 14
+                            aRectangleArray5360!![i_295_]!!.anInt4427 = ((aRectangleArray5360!![i_295_]!!.anInt4427) * i_294_ - (aRectangleArray5360!![i_295_]!!.anInt4430) * i_293_) shr 14
+                            aRectangleArray5360!![i_295_]!!.anInt4430 = i_296_
                         }
                     }
                     if (aClass41Array5385 != null) {
@@ -1376,10 +1376,10 @@ class Class64_Sub1 : Class64 {
                 var i_302_ = anIntArray5312!![i]
                 anIntArray5312!![i] = anIntArray5356!![i]
                 anIntArray5356!![i] = -i_302_
-                if (aClass360Array5360!![i] != null) {
-                    i_302_ = aClass360Array5360!![i]!!.anInt4427
-                    aClass360Array5360!![i]!!.anInt4427 = aClass360Array5360!![i]!!.anInt4430
-                    aClass360Array5360!![i]!!.anInt4430 = -i_302_
+                if (aRectangleArray5360!![i] != null) {
+                    i_302_ = aRectangleArray5360!![i]!!.anInt4427
+                    aRectangleArray5360!![i]!!.anInt4427 = aRectangleArray5360!![i]!!.anInt4430
+                    aRectangleArray5360!![i]!!.anInt4430 = -i_302_
                 }
             }
             if (aClass41Array5385 != null) {
@@ -2354,7 +2354,7 @@ class Class64_Sub1 : Class64 {
         val `is` = class64_sub1_586_.anIntArray5356
         val i_588_ = class64_sub1_586_.anInt5387
         for (i_589_ in 0..<anInt5387) {
-            val class360 = aClass360Array5360!![i_589_]!!
+            val class360 = aRectangleArray5360!![i_589_]!!
             if (class360.anInt4429 != 0) {
                 val i_590_ = anIntArray5332!![i_589_] - i_584_
                 if (i_590_ >= class64_sub1_586_.aShort5329 && i_590_ <= class64_sub1_586_.aShort5365) {
@@ -2363,19 +2363,19 @@ class Class64_Sub1 : Class64 {
                         val i_592_ = anIntArray5312!![i_589_] - i_585_
                         if (i_592_ >= class64_sub1_586_.aShort5352 && i_592_ <= class64_sub1_586_.aShort5331) {
                             for (i_593_ in 0..<i_588_) {
-                                val class360_594_ = (class64_sub1_586_.aClass360Array5360!![i_593_])!!
+                                val class360_594_ = (class64_sub1_586_.aRectangleArray5360!![i_593_])!!
                                 if (i_591_ == `is`!![i_593_] && i_592_ == (class64_sub1_586_.anIntArray5312!![i_593_]) && i_590_ == (class64_sub1_586_.anIntArray5332!![i_593_]) && (class360_594_.anInt4429 != 0)) {
-                                    if (aClass360Array5313 == null) aClass360Array5313 = arrayOfNulls<Class360>(anInt5387)
-                                    if (class64_sub1_586_.aClass360Array5313 == null) class64_sub1_586_.aClass360Array5313 = arrayOfNulls<Class360>(i_588_)
-                                    var class360_595_ = aClass360Array5313!![i_589_]
+                                    if (aRectangleArray5313 == null) aRectangleArray5313 = arrayOfNulls<Rectangle>(anInt5387)
+                                    if (class64_sub1_586_.aRectangleArray5313 == null) class64_sub1_586_.aRectangleArray5313 = arrayOfNulls<Rectangle>(i_588_)
+                                    var class360_595_ = aRectangleArray5313!![i_589_]
                                     if (class360_595_ == null) {
-                                        aClass360Array5313!![i_589_] = Class360(class360)
-                                        class360_595_ = aClass360Array5313!![i_589_]!!
+                                        aRectangleArray5313!![i_589_] = Rectangle(class360)
+                                        class360_595_ = aRectangleArray5313!![i_589_]!!
                                     }
-                                    var class360_596_ = (class64_sub1_586_.aClass360Array5313!![i_593_])
+                                    var class360_596_ = (class64_sub1_586_.aRectangleArray5313!![i_593_])
                                     if (class360_596_ == null) {
-                                        class64_sub1_586_.aClass360Array5313!![i_593_] = Class360(class360_594_)
-                                        class360_596_ = class64_sub1_586_.aClass360Array5313!![i_593_]!!
+                                        class64_sub1_586_.aRectangleArray5313!![i_593_] = Rectangle(class360_594_)
+                                        class360_596_ = class64_sub1_586_.aRectangleArray5313!![i_593_]!!
                                     }
                                     class360_595_.anInt4430 += (class360_594_.anInt4430)
                                     class360_595_.anInt4428 += (class360_594_.anInt4428)
@@ -2412,8 +2412,8 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method649() {
-        aClass360Array5360 = arrayOfNulls<Class360>(anInt5387)
-        for (i in 0..<anInt5387) aClass360Array5360!![i] = Class360()
+        aRectangleArray5360 = arrayOfNulls<Rectangle>(anInt5387)
+        for (i in 0..<anInt5387) aRectangleArray5360!![i] = Rectangle()
         for (i in 0..<anInt5351) {
             val i_599_ = aShortArray5317[i]
             val i_600_ = aShortArray5394[i]
@@ -2442,17 +2442,17 @@ class Class64_Sub1 : Class64 {
             if (aByteArray5386 == null) i_612_ = 0.toByte()
             else i_612_ = aByteArray5386!![i]
             if (i_612_.toInt() == 0) {
-                var class360 = aClass360Array5360!![i_599_.toInt()]!!
+                var class360 = aRectangleArray5360!![i_599_.toInt()]!!
                 class360.anInt4430 += i_608_
                 class360.anInt4428 += i_609_
                 class360.anInt4427 += i_610_
                 class360.anInt4429++
-                class360 = aClass360Array5360!![i_600_.toInt()]!!
+                class360 = aRectangleArray5360!![i_600_.toInt()]!!
                 class360.anInt4430 += i_608_
                 class360.anInt4428 += i_609_
                 class360.anInt4427 += i_610_
                 class360.anInt4429++
-                class360 = aClass360Array5360!![i_601_.toInt()]!!
+                class360 = aRectangleArray5360!![i_601_.toInt()]!!
                 class360.anInt4430 += i_608_
                 class360.anInt4428 += i_609_
                 class360.anInt4427 += i_610_
@@ -2485,14 +2485,14 @@ class Class64_Sub1 : Class64 {
         check((anInt5316 and 0x10) == 16)
         synchronized(this) {
             for (i in 0..<anInt5340) anIntArray5312!![i] = -anIntArray5312!![i]
-            if (aClass360Array5360 != null) {
+            if (aRectangleArray5360 != null) {
                 for (i in 0..<anInt5387) {
-                    if (aClass360Array5360!![i] != null) aClass360Array5360!![i]!!.anInt4427 = -aClass360Array5360!![i]!!.anInt4427
+                    if (aRectangleArray5360!![i] != null) aRectangleArray5360!![i]!!.anInt4427 = -aRectangleArray5360!![i]!!.anInt4427
                 }
             }
-            if (aClass360Array5313 != null) {
+            if (aRectangleArray5313 != null) {
                 for (i in 0..<anInt5387) {
-                    if (aClass360Array5313!![i] != null) aClass360Array5313!![i]!!.anInt4427 = -aClass360Array5313!![i]!!.anInt4427
+                    if (aRectangleArray5313!![i] != null) aRectangleArray5313!![i]!!.anInt4427 = -aRectangleArray5313!![i]!!.anInt4427
                 }
             }
             if (aClass41Array5385 != null) {
@@ -2585,9 +2585,9 @@ class Class64_Sub1 : Class64 {
             for (i in 0..<anInt5387) {
                 anIntArray5356!![i] = -anIntArray5356!![i]
                 anIntArray5312!![i] = -anIntArray5312!![i]
-                if (aClass360Array5360!![i] != null) {
-                    aClass360Array5360!![i]!!.anInt4430 = -aClass360Array5360!![i]!!.anInt4430
-                    aClass360Array5360!![i]!!.anInt4427 = -aClass360Array5360!![i]!!.anInt4427
+                if (aRectangleArray5360!![i] != null) {
+                    aRectangleArray5360!![i]!!.anInt4430 = -aRectangleArray5360!![i]!!.anInt4430
+                    aRectangleArray5360!![i]!!.anInt4427 = -aRectangleArray5360!![i]!!.anInt4427
                 }
             }
             if (aClass41Array5385 != null) {
@@ -2613,10 +2613,10 @@ class Class64_Sub1 : Class64 {
                 var i_629_ = anIntArray5356!![i]
                 anIntArray5356!![i] = anIntArray5312!![i]
                 anIntArray5312!![i] = -i_629_
-                if (aClass360Array5360!![i] != null) {
-                    i_629_ = aClass360Array5360!![i]!!.anInt4430
-                    aClass360Array5360!![i]!!.anInt4430 = aClass360Array5360!![i]!!.anInt4427
-                    aClass360Array5360!![i]!!.anInt4427 = -i_629_
+                if (aRectangleArray5360!![i] != null) {
+                    i_629_ = aRectangleArray5360!![i]!!.anInt4430
+                    aRectangleArray5360!![i]!!.anInt4430 = aRectangleArray5360!![i]!!.anInt4427
+                    aRectangleArray5360!![i]!!.anInt4427 = -i_629_
                 }
             }
             if (aClass41Array5385 != null) {
@@ -2989,22 +2989,22 @@ class Class64_Sub1 : Class64 {
                         val i_743_ = aShortArray5311!![i_739_].toInt() and 0xffff
                         val i_744_ = (i_743_ and 0x7f) * anInt5344 shr 7
                         val i_745_ = method303(i_743_ and 0x7f.inv() or i_744_, 30)
-                        var class360: Class360
-                        if (aClass360Array5313 != null && (aClass360Array5313!![aShortArray5317[i_739_].toInt()] != null)) class360 = aClass360Array5313!![aShortArray5317[i_739_].toInt()]!!
-                        else class360 = aClass360Array5360!![aShortArray5317[i_739_].toInt()]!!
-                        var i_746_ = (((i * class360.anInt4430 + i_734_ * class360.anInt4428 + i_735_ * class360.anInt4427) / class360.anInt4429) shr 16)
+                        var rectangle: Rectangle
+                        if (aRectangleArray5313 != null && (aRectangleArray5313!![aShortArray5317[i_739_].toInt()] != null)) rectangle = aRectangleArray5313!![aShortArray5317[i_739_].toInt()]!!
+                        else rectangle = aRectangleArray5360!![aShortArray5317[i_739_].toInt()]!!
+                        var i_746_ = (((i * rectangle.anInt4430 + i_734_ * rectangle.anInt4428 + i_735_ * rectangle.anInt4427) / rectangle.anInt4429) shr 16)
                         var i_747_ = if (i_746_ > 256) i_737_ else i_738_
                         var i_748_ = (i_736_ shr 1) + (i_747_ * i_746_ shr 17)
                         anIntArray5368!![i_739_] = i_748_ shl 17 or CutsceneSequenceData.method2198(0, i_748_, i_745_.toInt())
-                        if (aClass360Array5313 != null && (aClass360Array5313!![aShortArray5394[i_739_].toInt()] != null)) class360 = aClass360Array5313!![aShortArray5394[i_739_].toInt()]!!
-                        else class360 = aClass360Array5360!![aShortArray5394[i_739_].toInt()]!!
-                        i_746_ = ((i * class360.anInt4430 + i_734_ * class360.anInt4428 + i_735_ * class360.anInt4427) / class360.anInt4429) shr 16
+                        if (aRectangleArray5313 != null && (aRectangleArray5313!![aShortArray5394[i_739_].toInt()] != null)) rectangle = aRectangleArray5313!![aShortArray5394[i_739_].toInt()]!!
+                        else rectangle = aRectangleArray5360!![aShortArray5394[i_739_].toInt()]!!
+                        i_746_ = ((i * rectangle.anInt4430 + i_734_ * rectangle.anInt4428 + i_735_ * rectangle.anInt4427) / rectangle.anInt4429) shr 16
                         i_747_ = if (i_746_ > 256) i_737_ else i_738_
                         i_748_ = (i_736_ shr 1) + (i_747_ * i_746_ shr 17)
                         anIntArray5337!![i_739_] = i_748_ shl 17 or CutsceneSequenceData.method2198(0, i_748_, i_745_.toInt())
-                        if (aClass360Array5313 != null && (aClass360Array5313!![aShortArray5364[i_739_].toInt()] != null)) class360 = aClass360Array5313!![aShortArray5364[i_739_].toInt()]!!
-                        else class360 = aClass360Array5360!![aShortArray5364[i_739_].toInt()]!!
-                        i_746_ = ((i * class360.anInt4430 + i_734_ * class360.anInt4428 + i_735_ * class360.anInt4427) / class360.anInt4429) shr 16
+                        if (aRectangleArray5313 != null && (aRectangleArray5313!![aShortArray5364[i_739_].toInt()] != null)) rectangle = aRectangleArray5313!![aShortArray5364[i_739_].toInt()]!!
+                        else rectangle = aRectangleArray5360!![aShortArray5364[i_739_].toInt()]!!
+                        i_746_ = ((i * rectangle.anInt4430 + i_734_ * rectangle.anInt4428 + i_735_ * rectangle.anInt4427) / rectangle.anInt4429) shr 16
                         i_747_ = if (i_746_ > 256) i_737_ else i_738_
                         i_748_ = (i_736_ shr 1) + (i_747_ * i_746_ shr 17)
                         anIntArray5366!![i_739_] = i_748_ shl 17 or CutsceneSequenceData.method2198(0, i_748_, i_745_.toInt())
@@ -3025,22 +3025,22 @@ class Class64_Sub1 : Class64 {
                 } else {
                     val i_755_ = aShortArray5311!![i_739_].toInt() and 0xffff
                     if (i_740_.toInt() == 0) {
-                        var class360: Class360
-                        if (aClass360Array5313 != null && (aClass360Array5313!![aShortArray5317[i_739_].toInt()] != null)) class360 = aClass360Array5313!![aShortArray5317[i_739_].toInt()]!!
-                        else class360 = aClass360Array5360!![aShortArray5317[i_739_].toInt()]!!
-                        var i_756_ = (((i * class360.anInt4430 + i_734_ * class360.anInt4428 + i_735_ * class360.anInt4427) / class360.anInt4429) shr 16)
+                        var rectangle: Rectangle
+                        if (aRectangleArray5313 != null && (aRectangleArray5313!![aShortArray5317[i_739_].toInt()] != null)) rectangle = aRectangleArray5313!![aShortArray5317[i_739_].toInt()]!!
+                        else rectangle = aRectangleArray5360!![aShortArray5317[i_739_].toInt()]!!
+                        var i_756_ = (((i * rectangle.anInt4430 + i_734_ * rectangle.anInt4428 + i_735_ * rectangle.anInt4427) / rectangle.anInt4429) shr 16)
                         var i_757_ = if (i_756_ > 256) i_737_ else i_738_
                         var i_758_ = method656((i_736_ shr 2) + (i_757_ * i_756_ shr 18))
                         anIntArray5368!![i_739_] = i_758_ shl 24 or method642(i_755_, i_742_, i_758_)
-                        if (aClass360Array5313 != null && (aClass360Array5313!![aShortArray5394[i_739_].toInt()] != null)) class360 = aClass360Array5313!![aShortArray5394[i_739_].toInt()]!!
-                        else class360 = aClass360Array5360!![aShortArray5394[i_739_].toInt()]!!
-                        i_756_ = ((i * class360.anInt4430 + i_734_ * class360.anInt4428 + i_735_ * class360.anInt4427) / class360.anInt4429) shr 16
+                        if (aRectangleArray5313 != null && (aRectangleArray5313!![aShortArray5394[i_739_].toInt()] != null)) rectangle = aRectangleArray5313!![aShortArray5394[i_739_].toInt()]!!
+                        else rectangle = aRectangleArray5360!![aShortArray5394[i_739_].toInt()]!!
+                        i_756_ = ((i * rectangle.anInt4430 + i_734_ * rectangle.anInt4428 + i_735_ * rectangle.anInt4427) / rectangle.anInt4429) shr 16
                         i_757_ = if (i_756_ > 256) i_737_ else i_738_
                         i_758_ = method656((i_736_ shr 2) + (i_757_ * i_756_ shr 18))
                         anIntArray5337!![i_739_] = i_758_ shl 24 or method642(i_755_, i_742_, i_758_)
-                        if (aClass360Array5313 != null && (aClass360Array5313!![aShortArray5364[i_739_].toInt()] != null)) class360 = aClass360Array5313!![aShortArray5364[i_739_].toInt()]!!
-                        else class360 = aClass360Array5360!![aShortArray5364[i_739_].toInt()]!!
-                        i_756_ = ((i * class360.anInt4430 + i_734_ * class360.anInt4428 + i_735_ * class360.anInt4427) / class360.anInt4429) shr 16
+                        if (aRectangleArray5313 != null && (aRectangleArray5313!![aShortArray5364[i_739_].toInt()] != null)) rectangle = aRectangleArray5313!![aShortArray5364[i_739_].toInt()]!!
+                        else rectangle = aRectangleArray5360!![aShortArray5364[i_739_].toInt()]!!
+                        i_756_ = ((i * rectangle.anInt4430 + i_734_ * rectangle.anInt4428 + i_735_ * rectangle.anInt4427) / rectangle.anInt4429) shr 16
                         i_757_ = if (i_756_ > 256) i_737_ else i_738_
                         i_758_ = method656((i_736_ shr 2) + (i_757_ * i_756_ shr 18))
                         anIntArray5366!![i_739_] = i_758_ shl 24 or method642(i_755_, i_742_, i_758_)
@@ -3054,8 +3054,8 @@ class Class64_Sub1 : Class64 {
                     } else anIntArray5366!![i_739_] = -2
                 }
             }
-            aClass360Array5360 = null
-            aClass360Array5313 = null
+            aRectangleArray5360 = null
+            aRectangleArray5313 = null
             aClass41Array5385 = null
             if ((anInt5316 and 0x97098) == 0 && aFloatArrayArray5314 == null) aShortArray5311 = null
             if (bool) aByteArray5386 = null
