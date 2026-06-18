@@ -94,8 +94,8 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
     }
 
     override fun method3862(i: Int, modelBatchBase: ModelBatchBase?) {
-        val var_dxVertexLayout = modelBatchBase as dxVertexLayout
-        this.anIDirect3DDevice9810!!.SetVertexDeclaration(var_dxVertexLayout.anIDirect3DVertexDeclaration5803)
+        val var_direct3dVertexDeclaration = modelBatchBase as Direct3dVertexDeclaration
+        this.anIDirect3DDevice9810!!.SetVertexDeclaration(var_direct3dVertexDeclaration.anIDirect3DVertexDeclaration5803)
         if (i != 0) method3910((-110).toByte(), 113)
     }
 
@@ -581,7 +581,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
 
     override fun method3812(i: Int, directionPaths: Array<DirectionPath>): ModelBatchBase {
         if (i != 0) anInt9807 = 29
-        return dxVertexLayout(this, directionPaths)
+        return Direct3dVertexDeclaration(this, directionPaths)
     }
 
     fun method3962(i: Int, idirect3dpixelshader: IDirect3DPixelShader?) {
