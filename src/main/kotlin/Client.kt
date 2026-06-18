@@ -489,8 +489,8 @@ import TooltipComponentRenderer.Companion.method716
 import MovementDirection.Companion.method719
 import CollisionFlagQuery.Companion.method722
 import TrigLookupTables.Companion.method725
-import Class71.method728
-import Class71.method729
+import PlayerSequenceSelector.method728
+import PlayerSequenceSelector.method729
 import Class72.Companion.method731
 import Class74.Companion.method744
 import Class75.Companion.method746

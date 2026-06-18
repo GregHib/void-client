@@ -1,7 +1,7 @@
 /* Class71 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class71 {
+object PlayerSequenceSelector {
     @JvmField
     var aClass76_1208: Class76?
     @JvmField

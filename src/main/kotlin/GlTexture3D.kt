@@ -145,8 +145,8 @@ class GlTexture3D : GlTexture {
                 SkeletalAnimFrameData.aBoolean351 = false
             }
             DoublyLinkedNodeList.method1877(Class9.aRenderer171, -69)
-            if (!Class71.aClass76_1208!!.aBoolean1283) {
-                val class243 = Class71.aClass76_1208!!.aDoublyLinkedNodeList_1282
+            if (!PlayerSequenceSelector.aClass76_1208!!.aBoolean1283) {
+                val class243 = PlayerSequenceSelector.aClass76_1208!!.aDoublyLinkedNodeList_1282
                 var class318_sub4 = class243.method1872(8) as SceneEntityModel?
                 while (class318_sub4 != null) {
                     class318_sub4.method2373(false)

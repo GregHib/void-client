@@ -44,7 +44,7 @@ class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, 
         }
 
         fun method2046() {
-            Class71.aClass76_1208 = Class71.aClass76_1210
+            PlayerSequenceSelector.aClass76_1208 = PlayerSequenceSelector.aClass76_1210
         }
     }
 }

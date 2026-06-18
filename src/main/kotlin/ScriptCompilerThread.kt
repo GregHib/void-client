@@ -160,7 +160,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
                         var i_9_ = -1
                         var i_10_ = 0
                         while (Class8.anInt166 > i_10_) {
-                            if (Class71.aBoolean1211) {
+                            if (PlayerSequenceSelector.aBoolean1211) {
                                 val i_11_ = (ProceduralTextureGraph.anInt9532 - -33 - -(i_10_ * 16))
                                 if (i_3_ > -13 + i_11_ && i_3_ <= i_11_ + 3) i_9_ = i_10_
                             } else {
@@ -182,7 +182,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
                         var i_4_ = -1
                         var i_5_ = 0
                         while (((ManagedGlResource.aClass348_Sub42_Sub13_3152!!.anInt9615) > i_5_)) {
-                            if (Class71.aBoolean1211) {
+                            if (PlayerSequenceSelector.aBoolean1211) {
                                 val i_7_ = InputTracker.anInt4534 + (33 + 16 * i_5_)
                                 if (-13 + i_7_ < i_3_ && 3 + i_7_ >= i_3_) i_4_ = i_5_
                             } else {
@@ -205,7 +205,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
                     var i_14_ = -1
                     var i_15_ = 0
                     while (Class73.anInt4776 > i_15_) {
-                        if (Class71.aBoolean1211) {
+                        if (PlayerSequenceSelector.aBoolean1211) {
                             val i_17_ = ((-i_15_ + (-1 + Class73.anInt4776)) * 16 + ProceduralTextureGraph.anInt9532 + 33)
                             if (i_3_ > i_17_ - 13 && i_17_ + 3 >= i_3_) i_14_ = i_15_
                         } else {

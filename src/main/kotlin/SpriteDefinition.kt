@@ -79,7 +79,7 @@ class SpriteDefinition : LinkedListNode() {
                             if (DynamicSceneObjectEntity.aStringArray10195!![i_6_] != null) {
                                 var i_7_: Short = 0
                                 if ((HardCacheEntryReference.aSceneProjector_10434 != ParticleEmitterNode.aSceneProjector_186) || !(DynamicSceneObjectEntity.aStringArray10195!![i_6_].equals(LocalizedText.aLocalizedText_3506!!.method2063(AnimationFrameDefinition.anInt6967, 544), ignoreCase = true))) {
-                                    if (Class71.aBooleanArray1214!![i_6_]) i_7_ = 2000.toShort()
+                                    if (PlayerSequenceSelector.aBooleanArray1214!![i_6_]) i_7_ = 2000.toShort()
                                 } else {
                                     if ((LocalPlayerState.aPlayer_1907!!.anInt10516) < (player.anInt10516)) i_7_ = 2000.toShort()
                                     if ((LocalPlayerState.aPlayer_1907!!.anInt10542) != 0 && (player.anInt10542) != 0) {

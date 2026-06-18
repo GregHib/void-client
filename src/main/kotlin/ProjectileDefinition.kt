@@ -51,7 +51,7 @@ object ProjectileDefinition {
     @JvmStatic
     fun method2288(bool: Boolean, var_renderer: Renderer) {
         anInt3845++
-        if (!Class71.aBoolean1211) method1642(108.toByte(), var_renderer)
+        if (!PlayerSequenceSelector.aBoolean1211) method1642(108.toByte(), var_renderer)
         else method1153(var_renderer, 16)
         if (bool != false) anInt3844 = -97
     }

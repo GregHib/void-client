@@ -649,7 +649,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
             this.anIDirect3DDevice9810!!.SetSamplerState(i_70_, 5, 2)
             this.anIDirect3DDevice9810!!.SetSamplerState(i_70_, 1, 1)
             this.anIDirect3DDevice9810!!.SetSamplerState(i_70_, 2, 1)
-            aClass209Array9795!![i_70_] = Class71.aClass209_1212
+            aClass209Array9795!![i_70_] = PlayerSequenceSelector.aClass209_1212
             aBooleanArray9806[i_70_] = true
             aBooleanArray9786!![i_70_] = aBooleanArray9806[i_70_]
             aBooleanArray9804[i_70_] = false
@@ -764,7 +764,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         private var aFloatArray9797: FloatArray? = FloatArray(16)
         private var anIntArray9809: IntArray? = intArrayOf(77, 80)
         private fun method3952(class209: UnusedToStringStub?, i: Byte): Int {
-            if (Class71.aClass209_1212 == class209) return 2
+            if (PlayerSequenceSelector.aClass209_1212 == class209) return 2
             if (FrameBufferObject.aClass209_4874 == class209) return 1
             if (i <= 57) anIntArray9790 = null
             throw IllegalArgumentException()

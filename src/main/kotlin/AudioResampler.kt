@@ -177,7 +177,7 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
 
         @JvmStatic
         fun method1274(class76: Class76?) {
-            Class71.aClass76_1208 = class76
+            PlayerSequenceSelector.aClass76_1208 = class76
         }
 
         @JvmStatic

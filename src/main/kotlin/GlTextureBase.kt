@@ -23,7 +23,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
     var anInt5093: Int = 0
     private var anInt5096 = 0
     private var aBoolean5099 = false
-    private var aClass209_5101: UnusedToStringStub? = Class71.aClass209_1212
+    private var aClass209_5101: UnusedToStringStub? = PlayerSequenceSelector.aClass209_1212
     override fun method63(i: Byte) {
         anInt5104++
         val i_0_ = this.aGlRenderDevice_5082!!.method3877((-126).toByte())
@@ -80,7 +80,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
     private fun method229(bool: Boolean) {
         this.aGlRenderDevice_5082!!.method3850(107.toByte(), this)
         anInt5083++
-        if (aClass209_5101 == Class71.aClass209_1212) {
+        if (aClass209_5101 == PlayerSequenceSelector.aClass209_1212) {
             glTexParameteri(this.anInt5093, 10241, if (!aBoolean5099) 9729 else 9987)
             glTexParameteri(this.anInt5093, 10240, 9729)
         } else {

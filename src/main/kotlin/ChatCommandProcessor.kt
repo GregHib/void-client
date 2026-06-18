@@ -1079,12 +1079,12 @@ object ChatCommandProcessor {
                 OutputStream_Sub2.aAbstractModelRenderer_106 = MinimapFlagRenderer.aAbstractModelRenderer_1800
                 ConfigVarProgress.aAbstractModelRenderer_4808 = null
                 TimedTileQueueEntry.aAbstractModelRenderer_9658 = ConfigVarProgress.aAbstractModelRenderer_4808
-                Class71.aBoolean1211 = true
+                PlayerSequenceSelector.aBoolean1211 = true
                 return
             }
             if (i == 5425) {
                 LocalizedText.method2061(12)
-                Class71.aBoolean1211 = false
+                PlayerSequenceSelector.aBoolean1211 = false
                 return
             }
             if (i == 5426) {

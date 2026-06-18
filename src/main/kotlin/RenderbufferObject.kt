@@ -144,7 +144,7 @@ class RenderbufferObject : HashLinkedListNode, Interface9 {
             Class99.aBooleanArrayArray1572 = (Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) })
             FacingDirectionNode.aBooleanArrayArray6656 = (Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2)) })
             RefCountedHandle.anIntArray2272 = IntArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2))
-            Class71.aClass76_1208 = Class71.aClass76_1210
+            PlayerSequenceSelector.aClass76_1208 = PlayerSequenceSelector.aClass76_1210
             if (VoronoiNoiseTextureNode.aBoolean9121) {
                 OverlayColorTable.aBooleanArrayArrayArray1751 = (Array<Array<BooleanArray?>?>(i_1_) { Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) } })
                 SolidFillComponent.aBooleanArrayArrayArray8361 = arrayOfNulls<Array<BooleanArray?>>(i_1_)

@@ -674,7 +674,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Class367_Sub8.anInt7356 = 0
             VideoAdChecker.anInt3184 = 0
             OpenGlRenderer.anInt7660 = 0
-            Class71.anInt1209 = 0
+            PlayerSequenceSelector.anInt1209 = 0
             Class367_Sub1.anInt7280 = 0
             GroundDecorRenderer.anInt3629 = 0
             CompositeNpcModelBuilder.anInt2104 = 0
@@ -4158,7 +4158,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SpriteRenderable.aWidgetComponent_4730 = null
             for (i1 in 0..7) {
                 DynamicSceneObjectEntity.aStringArray10195!![i1] = null
-                Class71.aBooleanArray1214!![i1] = false
+                PlayerSequenceSelector.aBooleanArray1214!![i1] = false
                 DelegatingRenderCanvas.anIntArray60!![i1] = -1
             }
 

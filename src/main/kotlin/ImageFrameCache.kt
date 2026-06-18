@@ -4,7 +4,7 @@ import SceneProjector.Companion.method1635
 import GlTexture1D.Companion.method1974
 import HardKeyedCacheEntryReference.Companion.method3208
 import FacingDirectionNode.Companion.method2774
-import Class71.method729
+import PlayerSequenceSelector.method729
 import ArbVertexProgram.Companion.method3443
 
 /* Class322 - Decompiled by JODE

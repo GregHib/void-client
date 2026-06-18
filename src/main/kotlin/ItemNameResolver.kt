@@ -14,7 +14,7 @@ class ItemNameResolver : Interface15 {
                 return class213.aString2795
             }
             if (i != 1) method54(85, -41L, null, null)
-            if (rectangleRegion == ProceduralTextureGraph.aRectangleRegion_9530 || rectangleRegion == FloatBuffer.aRectangleRegion_9748 || Class71.aRectangleRegion_1213 == rectangleRegion) return RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, `is`!![0]).method1074(l.toInt(), i xor 0x48)
+            if (rectangleRegion == ProceduralTextureGraph.aRectangleRegion_9530 || rectangleRegion == FloatBuffer.aRectangleRegion_9748 || PlayerSequenceSelector.aRectangleRegion_1213 == rectangleRegion) return RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, `is`!![0]).method1074(l.toInt(), i xor 0x48)
             return null
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("hu.A(" + i + ',' + l + ',' + (if (rectangleRegion != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))

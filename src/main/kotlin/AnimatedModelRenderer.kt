@@ -56,7 +56,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         anInt8393++
         val class101_sub2 = aHa_Sub3_8407!!.method3934(-114)
         val class101_sub2_20_ = aHa_Sub3_8407.method3820(false)
-        anInterface18_Impl3_8403!!.method64((if (aBoolean8410 || aBoolean8408 || ((0x1 and i_19_) == 0)) FrameBufferObject.aClass209_4874 else Class71.aClass209_1212), -22095)
+        anInterface18_Impl3_8403!!.method64((if (aBoolean8410 || aBoolean8408 || ((0x1 and i_19_) == 0)) FrameBufferObject.aClass209_4874 else PlayerSequenceSelector.aClass209_1212), -22095)
         aHa_Sub3_8407.method3864(-5)
         aHa_Sub3_8407.method3850(78.toByte(), anInterface18_Impl3_8403)
         aHa_Sub3_8407.method3817(81, i_18_)
@@ -234,7 +234,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         val class101_sub2_73_ = aHa_Sub3_8407.method3820(false)
         val var_aa_Sub2 = var_sprite as IndexedSprite?
         val interface18_impl3 = var_aa_Sub2!!.anInterface18_Impl3_5196
-        anInterface18_Impl3_8403!!.method64((if (aBoolean8410 || aBoolean8408 || (0x1 and i) == 0) FrameBufferObject.aClass209_4874 else Class71.aClass209_1212), -22095)
+        anInterface18_Impl3_8403!!.method64((if (aBoolean8410 || aBoolean8408 || (0x1 and i) == 0) FrameBufferObject.aClass209_4874 else PlayerSequenceSelector.aClass209_1212), -22095)
         aHa_Sub3_8407.method3864(101)
         aHa_Sub3_8407.method3850(((-102).toByte()).toByte(), anInterface18_Impl3_8403)
         aHa_Sub3_8407.method3817(86, 1)
@@ -318,7 +318,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
         anInt8395++
         val class101_sub2 = aHa_Sub3_8407!!.method3934(-95)
         val class101_sub2_101_ = aHa_Sub3_8407.method3820(false)
-        anInterface18_Impl3_8403!!.method64((if (aBoolean8410 || aBoolean8408 || ((i_100_ and 0x1) == 0)) FrameBufferObject.aClass209_4874 else Class71.aClass209_1212), -22095)
+        anInterface18_Impl3_8403!!.method64((if (aBoolean8410 || aBoolean8408 || ((i_100_ and 0x1) == 0)) FrameBufferObject.aClass209_4874 else PlayerSequenceSelector.aClass209_1212), -22095)
         aHa_Sub3_8407.method3864(81)
         aHa_Sub3_8407.method3850(65.toByte(), anInterface18_Impl3_8403)
         aHa_Sub3_8407.method3817(58, i_99_)

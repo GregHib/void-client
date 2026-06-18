@@ -54,12 +54,12 @@ object Class99 {
             }
             i_12_ += 8
             if (bool == true) {
-                ClickFeedbackTask.anInt4669 = 16 * (class348_sub42_sub13.anInt9615) + (if (!Class71.aBoolean1211) 22 else 26)
+                ClickFeedbackTask.anInt4669 = 16 * (class348_sub42_sub13.anInt9615) + (if (!PlayerSequenceSelector.aBoolean1211) 22 else 26)
                 val i_14_ = 21 + (class348_sub42_sub13.anInt9615) * 16
                 var i_15_ = SceneTileBounds.anInt1117 + GlArrayBufferObject.anInt4717
                 if (i_12_ + i_15_ > LocTypeDefinition.anInt4017) i_15_ = -i_12_ + GlArrayBufferObject.anInt4717
                 if (i_15_ < 0) i_15_ = 0
-                val i_16_ = if (!Class71.aBoolean1211) 31 else 33
+                val i_16_ = if (!PlayerSequenceSelector.aBoolean1211) 31 else 33
                 var i_17_ = 13 + i_11_ + -i_16_
                 if (i_17_ + i_14_ > HardCacheEntryReference.anInt10432) i_17_ = HardCacheEntryReference.anInt10432 - i_14_
                 MinimapPolygonDrawer.anInt5252 = i_15_

@@ -1130,7 +1130,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     if (string.equals("null", ignoreCase = true)) string = null
                     DynamicSceneObjectEntity.aStringArray10195!![i_137_ + -1] = string
                     DelegatingRenderCanvas.anIntArray60!![i_137_ + -1] = i
-                    Class71.aBooleanArray1214!![i_137_ - 1] = i_138_ == 0
+                    PlayerSequenceSelector.aBooleanArray1214!![i_137_ - 1] = i_138_ == 0
                 }
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
