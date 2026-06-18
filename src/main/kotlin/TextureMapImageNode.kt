@@ -149,10 +149,10 @@ class TextureMapImageNode : AbstractProceduralTextureNode(0, false) {
             val i_37_ = (i_26_ * i_31_ + -(i_30_ * i_28_) shl 8) / i_35_
             if (i_16_ > i_21_ || i_24_ < i_16_) {
                 if (i_24_ < i_21_) {
-                    if (Class86.anInt1480 <= i_24_) return true
+                    if (DrawListState.anInt1480 <= i_24_) return true
                     i_18_ = -(i_36_ * i) + ((i_18_ shl 8) - -i_36_)
-                    if (Class86.anInt1480 < i_16_) i_16_ = Class86.anInt1480
-                    if (Class86.anInt1480 < i_21_) i_21_ = Class86.anInt1480
+                    if (DrawListState.anInt1480 < i_16_) i_16_ = DrawListState.anInt1480
+                    if (DrawListState.anInt1480 < i_21_) i_21_ = DrawListState.anInt1480
                     if (i_21_ > i_16_) {
                         i = i shl -1549996884
                         i_17_ = i
@@ -258,10 +258,10 @@ class TextureMapImageNode : AbstractProceduralTextureNode(0, false) {
                     }
                     return true
                 }
-                if (Class86.anInt1480 <= i_21_) return true
+                if (DrawListState.anInt1480 <= i_21_) return true
                 i_19_ = i_36_ + -(i_17_ * i_36_) + (i_19_ shl 8)
-                if (Class86.anInt1480 < i_24_) i_24_ = Class86.anInt1480
-                if (Class86.anInt1480 < i_16_) i_16_ = Class86.anInt1480
+                if (DrawListState.anInt1480 < i_24_) i_24_ = DrawListState.anInt1480
+                if (DrawListState.anInt1480 < i_16_) i_16_ = DrawListState.anInt1480
                 if (i_24_ >= i_16_) {
                     i_17_ = i_17_ shl 1841711244
                     i = i_17_
@@ -367,10 +367,10 @@ class TextureMapImageNode : AbstractProceduralTextureNode(0, false) {
                 }
                 return true
             }
-            if (i_16_ >= Class86.anInt1480) return true
+            if (i_16_ >= DrawListState.anInt1480) return true
             i_22_ = (i_22_ shl 8) - (i_23_ * i_36_ + -i_36_)
-            if (Class86.anInt1480 < i_24_) i_24_ = Class86.anInt1480
-            if (Class86.anInt1480 < i_21_) i_21_ = Class86.anInt1480
+            if (DrawListState.anInt1480 < i_24_) i_24_ = DrawListState.anInt1480
+            if (DrawListState.anInt1480 < i_21_) i_21_ = DrawListState.anInt1480
             if (i_24_ > i_21_) {
                 i_23_ = i_23_ shl 1361045260
                 i = i_23_

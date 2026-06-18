@@ -96,7 +96,7 @@ class Class89 internal constructor(glRenderDevice: GlRenderDevice?, l: Long, glS
                     }
                 }
             }
-            if (bool) ModelDataCache.aClass318_Sub1_Sub3Array357!![Class86.anInt1477++] = class318_sub1_sub3
+            if (bool) ModelDataCache.aClass318_Sub1_Sub3Array357!![DrawListState.anInt1477++] = class318_sub1_sub3
             else {
                 val i_22_ = if (NativeSprite.aTerrainTileArray5191 == SoundCacheState.aTerrainTileArray4142) 1 else 0
                 if (class318_sub1_sub3.method2376(-118)) {

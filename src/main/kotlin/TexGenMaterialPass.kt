@@ -177,7 +177,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, water
             ConfigArchiveLoader.anInt1435 = js5Archive.method417("headicons_prayer", 0)
             OverlayColorTable.anInt1756 = js5Archive.method417("hint_headicons", 0)
             CutsceneSequenceData.anInt3739 = js5Archive.method417("hint_mapmarkers", 0)
-            Class86.anInt1481 = js5Archive.method417("mapflag", 0)
+            DrawListState.anInt1481 = js5Archive.method417("mapflag", 0)
             RangedGraphicsOptionState.anInt5948 = js5Archive.method417("cross", 0)
             CameraNodeList.anInt1742 = js5Archive.method417("mapdots", 0)
             NamedIdRecord.anInt4469 = js5Archive.method417("scrollbar", 0)

@@ -56,7 +56,7 @@ abstract class SocketFactory {
                 Class95.aScreenAnchorAlignment_1542 = screenAnchorAlignment
                 ChatEffectsOptionState.anInt5871 = i_7_
                 DefaultGraphicsOptionState.aTileRenderState_6128 = tileRenderState
-                Class86.anInt1479 = i
+                DrawListState.anInt1479 = i
                 RegionTileNode.aSpriteImage_6643 = null
                 LocalizedTextTriple.anInt3762 = i_8_
                 ColorThresholdEffect.aSpriteImage_9090 = null

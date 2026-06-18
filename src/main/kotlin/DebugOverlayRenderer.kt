@@ -50,7 +50,7 @@ object DebugOverlayRenderer {
                     Class9.aRenderer171!!.method3645(ClickFeedbackTask.anIntArray4670!![1], ClickFeedbackTask.anIntArray4670!![0], anIntArray3169!![0], -8003, i_4_, anIntArray3169!![1])
                 }
             }
-            Tooltip.aFont_4456!!.method2576(("Dynamic: " + Class86.anInt1477 + "/" + 5000), -256, i_1_ + 45, i, -16777216, -120)
+            Tooltip.aFont_4456!!.method2576(("Dynamic: " + DrawListState.anInt1477 + "/" + 5000), -256, i_1_ + 45, i, -16777216, -120)
             Tooltip.aFont_4456!!.method2576(("Total Opaque Onscreen: " + ProportionalScrollbarComponent.anInt9930 + "/" + 10000), -256, i_1_ + 60, i, -16777216, -124)
             Tooltip.aFont_4456!!.method2576(("Total Trans Onscreen: " + LoadingScreenImageNode.anInt9504 + "/" + 5000), -256, i_1_ + 75, i, -16777216, -111)
             Tooltip.aFont_4456!!.method2576(("Occluders: " + (DetailLevelOptionState.anInt6115 + CollisionFlagQuery.anInt1200) + " Active: " + (ParameterizedText.anInt9577)), -256, i_1_ + 90, i, -16777216, -111)
@@ -66,7 +66,7 @@ object DebugOverlayRenderer {
                     val i_6_ = f.toInt()
                     GlTextureBase.anIntArray5091!![i_5_] = i_6_ or (i_6_ shl 8) or (i_6_ shl 16) or 0xffffff.inv()
                 }
-                val class105 = Class9.aRenderer171!!.method3662(WorldMapToggle.anInt3872, GlTextureBase.anIntArray5091, 94.toByte(), 0, WorldMapToggle.anInt3872, Class86.anInt1480)
+                val class105 = Class9.aRenderer171!!.method3662(WorldMapToggle.anInt3872, GlTextureBase.anIntArray5091, 94.toByte(), 0, WorldMapToggle.anInt3872, DrawListState.anInt1480)
                 class105.method964(i, 170, 1, 0, 0)
             }
         }

@@ -304,7 +304,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(js5Archive, Class86.anInt1481, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, DrawListState.anInt1481, 0)
                 SpriteStore.aAbstractModelRendererArray367 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0

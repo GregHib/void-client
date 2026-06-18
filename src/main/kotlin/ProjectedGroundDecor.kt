@@ -856,8 +856,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             SolidFillComponent.aBooleanArrayArrayArray8361 = null
             LocalizedText.method2062(89.toByte())
             if (ModelDataCache.aClass318_Sub1_Sub3Array357 != null) {
-                for (i in 0..<Class86.anInt1477) ModelDataCache.aClass318_Sub1_Sub3Array357!![i] = null
-                Class86.anInt1477 = 0
+                for (i in 0..<DrawListState.anInt1477) ModelDataCache.aClass318_Sub1_Sub3Array357!![i] = null
+                DrawListState.anInt1477 = 0
             }
             LinkedListNode.aClass318_Sub1Array4293 = null
             BackgroundWorkerThread.aClass318_Sub1Array3226 = null

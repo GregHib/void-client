@@ -79,7 +79,7 @@ class FloatBuffer internal constructor(i: Int) : Buffer(i) {
                     class318_sub1 = class318_sub1.aClass318_Sub1_6379
                 }
                 if (!bool) {
-                    for (i_5_ in 0..<Class86.anInt1477) {
+                    for (i_5_ in 0..<DrawListState.anInt1477) {
                         if (!CharacterRenderState.method2778((ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!), bool, `is`, i, i_0_)) {
                             OpenGlTerrainTile.method4001(ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!)
                             if ((ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!.anInt6389) != -1) {

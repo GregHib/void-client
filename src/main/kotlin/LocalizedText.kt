@@ -241,8 +241,8 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
             val i_6_ = 36 % ((-81 - i) / 38)
             GlTextureBase.anIntArray5091 = null
             MinimapAreaMarkerNode.aMapTileShapeArray9700 = null
-            Class86.anInt1480 = -1
-            WorldMapToggle.anInt3872 = Class86.anInt1480
+            DrawListState.anInt1480 = -1
+            WorldMapToggle.anInt3872 = DrawListState.anInt1480
         }
 
         init {

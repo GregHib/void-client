@@ -595,11 +595,11 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                 GlIndexBufferArb.anInt8498 = (`is`[3].toFloat() / 3.0f).toInt()
                 ScreenBorderFiller.anInt1962 = (`is`[2].toFloat() / 3.0f).toInt()
                 var_renderer.method3632(NormalMapTextureNode.anIntArray9436)
-                if ((WorldMapToggle.anInt3872 != (NormalMapTextureNode.anIntArray9436!![0].toFloat() / 3.0f).toInt()) || Class86.anInt1480 != (NormalMapTextureNode.anIntArray9436!![1].toFloat() / 3.0f).toInt()) {
-                    Class86.anInt1480 = (NormalMapTextureNode.anIntArray9436!![1].toFloat() / 3.0f).toInt()
+                if ((WorldMapToggle.anInt3872 != (NormalMapTextureNode.anIntArray9436!![0].toFloat() / 3.0f).toInt()) || DrawListState.anInt1480 != (NormalMapTextureNode.anIntArray9436!![1].toFloat() / 3.0f).toInt()) {
+                    DrawListState.anInt1480 = (NormalMapTextureNode.anIntArray9436!![1].toFloat() / 3.0f).toInt()
                     WorldMapToggle.anInt3872 = (NormalMapTextureNode.anIntArray9436!![0].toFloat() / 3.0f).toInt()
-                    CipheredPacketBuffer.anInt9759 = Class86.anInt1480 shr 1
-                    GlTextureBase.anIntArray5091 = IntArray(Class86.anInt1480 * WorldMapToggle.anInt3872)
+                    CipheredPacketBuffer.anInt9759 = DrawListState.anInt1480 shr 1
+                    GlTextureBase.anIntArray5091 = IntArray(DrawListState.anInt1480 * WorldMapToggle.anInt3872)
                     CollisionFlagQuery.anInt1202 = WorldMapToggle.anInt3872 shr 1
                 }
                 SourceRowTextureNode.aAbstractCameraTransform_9114 = var_renderer.method3640()

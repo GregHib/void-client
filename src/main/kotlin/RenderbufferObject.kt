@@ -140,7 +140,7 @@ class RenderbufferObject : HashLinkedListNode, Interface9 {
             CutsceneSequenceData.aClass318_Sub1Array3737 = arrayOfNulls<SceneEntity>(5000)
             LoadingScreenImageNode.Companion.anInt9504 = 0
             ModelDataCache.aClass318_Sub1_Sub3Array357 = arrayOfNulls<GroundDecorEntity>(5000)
-            Class86.anInt1477 = 0
+            DrawListState.anInt1477 = 0
             Class99.aBooleanArrayArray1572 = (Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) })
             FacingDirectionNode.aBooleanArrayArray6656 = (Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2)) })
             RefCountedHandle.anIntArray2272 = IntArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2))

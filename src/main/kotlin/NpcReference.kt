@@ -30,7 +30,7 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
             if (js5Archive.method421(false, ConfigArchiveLoader.anInt1435)) i_2_++
             if (js5Archive.method421(false, OverlayColorTable.anInt1756)) i_2_++
             if (js5Archive.method421(false, CutsceneSequenceData.anInt3739)) i_2_++
-            if (js5Archive.method421(false, Class86.anInt1481)) i_2_++
+            if (js5Archive.method421(false, DrawListState.anInt1481)) i_2_++
             if (js5Archive.method421(false, RangedGraphicsOptionState.anInt5948)) i_2_++
             if (js5Archive.method421(false, CameraNodeList.anInt1742)) i_2_++
             if (js5Archive.method421(false, NamedIdRecord.anInt4469)) i_2_++

@@ -1,7 +1,7 @@
 /* Class86 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class86 {
+object DrawListState {
     @JvmField
     var anInt1477: Int = 0
     @JvmField

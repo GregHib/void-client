@@ -25,7 +25,7 @@ class ParticleSortRenderer internal constructor() {
 
     private fun method1649(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_: Int) {
         anInt3019++
-        Class86.aFloat1478 = var_ha_Sub2.aFloat7768
+        DrawListState.aFloat1478 = var_ha_Sub2.aFloat7768
         var_ha_Sub2.method3789((-119).toByte(), i.toFloat())
         var_ha_Sub2.method3760(i_0_ + -24483)
         glDisable(16384)
@@ -40,7 +40,7 @@ class ParticleSortRenderer internal constructor() {
         glEnable(16384)
         glEnable(16385)
         if (i.toInt() != -5) aFloatArray3015 = null
-        if (Class86.aFloat1478 != var_ha_Sub2.aFloat7768) var_ha_Sub2.xa(Class86.aFloat1478)
+        if (DrawListState.aFloat1478 != var_ha_Sub2.aFloat7768) var_ha_Sub2.xa(DrawListState.aFloat1478)
     }
 
     fun method1651(var_ha_Sub2: OpenGlRenderer?, i: Byte, i_1_: Int, class98: Class98?) {
@@ -119,9 +119,9 @@ class ParticleSortRenderer internal constructor() {
                         }
                         if (i_13_ < 0) var_ha_Sub2.method3757(-1, -124)
                         else var_ha_Sub2.method3757(i_13_, -100)
-                        if (!bool || (Class86.aFloat1478 == var_ha_Sub2.aFloat7768)) {
+                        if (!bool || (DrawListState.aFloat1478 == var_ha_Sub2.aFloat7768)) {
                             if (var_ha_Sub2.aFloat7768 != 1.0f) var_ha_Sub2.xa(1.0f)
-                        } else var_ha_Sub2.xa(Class86.aFloat1478)
+                        } else var_ha_Sub2.xa(DrawListState.aFloat1478)
                         method1655(var_ha_Sub2, i_10_, 785980556)
                     }
                 } catch (exception: Exception) {
@@ -135,7 +135,7 @@ class ParticleSortRenderer internal constructor() {
     }
 
     private fun method1652(bool: Boolean, var_ha_Sub2: OpenGlRenderer) {
-        Class86.aFloat1478 = var_ha_Sub2.aFloat7768
+        DrawListState.aFloat1478 = var_ha_Sub2.aFloat7768
         anInt3021++
         var_ha_Sub2.method3784((-62).toByte())
         glDisable(16384)
