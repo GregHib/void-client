@@ -1477,7 +1477,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WallEntity.anInt8776 = 0
             HslAdjustTextureNode.anInt9384 = 0
             MinimapLineDrawer.anInt5256 = 0
-            Class91.anInt1522 = 0
+            NpcUpdateProcessor.anInt1522 = 0
             TerrainShadowBuilderGl2.anInt6941 = 0
             ConfigArchiveLoader.anInt1437 = 0
             TextureCache.anInt4353 = 0
@@ -4086,7 +4086,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlCubeMapTexture.anInt8622 = 0
             WorldMapScene.anInt3131 = 0
             LightingOptionState.anInt5879 = 0
-            Class91.anInt1520 = 0
+            NpcUpdateProcessor.anInt1520 = 0
             Buffer.anInt7146 = 0
             BrightnessContrastEffect.anInt9174 = 0
             OpenGlRenderer.anInt7687 = 0

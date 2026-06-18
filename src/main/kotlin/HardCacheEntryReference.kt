@@ -681,7 +681,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                 val i_78_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-118).toByte())
                 WallSceneEntity.method2397((-128).toByte())
-                Class91.method855(6, i, i_78_)
+                NpcUpdateProcessor.method855(6, i, i_78_)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1584,7 +1584,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == NanoTimer.aIntRange_843) {
-                method128(Class91.aRgbColorPalette_1519, 8.toByte())
+                method128(NpcUpdateProcessor.aRgbColorPalette_1519, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1698,7 +1698,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (UnusedToStringStub.aIntRange_2717 == ModelVertexColorBuffer.aIntRange_6584) {
-                Class91.method856(63.toByte())
+                NpcUpdateProcessor.method856(63.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }

@@ -5,7 +5,7 @@ import IdentKitRecolor.Companion.method204
 /* Class91 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class91 {
+object NpcUpdateProcessor {
     @JvmField
     var aRgbColorPalette_1519: RgbColorPalette?
     @JvmField

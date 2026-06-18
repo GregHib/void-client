@@ -507,7 +507,7 @@ import SceneNodeDeque.Companion.method843
 import NativeBufferHandle.Companion.method851
 import Class9.method216
 import RegionMapDecoder.method852
-import Class91.method857
+import NpcUpdateProcessor.method857
 import Class92.method860
 import Class93.method861
 import Class94.method866

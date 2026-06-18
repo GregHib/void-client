@@ -2786,8 +2786,8 @@ object ChatCommandProcessor {
                             return
                         }
                     }
-                    for (i_261_ in Class91.anIntArray1521!!.indices) {
-                        if (Class91.anIntArray1521!![i_261_] == i_258_) {
+                    for (i_261_ in NpcUpdateProcessor.anIntArray1521!!.indices) {
+                        if (NpcUpdateProcessor.anIntArray1521!![i_261_] == i_258_) {
                             LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.method1233(RadialTextureNode.aModelDefinitionLoader_9342, i_259_, -1, i_261_)
                             break
                         }

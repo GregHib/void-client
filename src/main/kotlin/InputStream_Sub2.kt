@@ -58,7 +58,7 @@ class InputStream_Sub2 : InputStream() {
                         val class318_sub1_sub3_sub4 = (MapElementDecor(i_11_, i_13_, Class367_Sub11.anInt7396, GradientLookupEffect.anInt9200, i_17_, i_15_, CollisionMapAccessor.method2064(i_15_, GradientLookupEffect.anInt9200, 11219, i_16_) + -i_12_, i_16_, i_9_, i_9_, i_10_, i_10_, i_14_))
                         OpenGlRenderNode.aNodeDeque_10492!!.method1999(ChatScriptListNode(class318_sub1_sub3_sub4), -20180)
                     }
-                } else if (rgbColorPalette == Class91.aRgbColorPalette_1519) {
+                } else if (rgbColorPalette == NpcUpdateProcessor.aRgbColorPalette_1519) {
                     val i_18_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_19_ = BufferedMessageQueue.anInt3581 - -(i_18_ shr 4 and 0x7)
                     val i_20_ = (0x7 and i_18_) + FileExistsCondition.anInt4786
