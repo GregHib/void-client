@@ -1,7 +1,7 @@
 /* Class28 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ItemNameResolver : Interface15 {
+class ItemNameResolver : TextFormatter {
     override fun method54(i: Int, l: Long, rectangleRegion: RectangleRegion?, `is`: IntArray?): String? {
         try {
             anInt4996++
