@@ -241,7 +241,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             InterfaceBounds.anInt6822 = 0
             ModelDefinitionCache.anInt2865 = 0
             MinimapRectClipper.anInt219 = 0
-            Class55.anInt994 = 0
+            OggMediaStream.anInt994 = 0
             NativeTerrainTile.anInt8290 = 0
             Class64_Sub3.anInt5577 = 0
             OpenGlRenderer.anInt7647 = 0
@@ -453,7 +453,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class8.anInt163 = 0
             ParticleEmitterNode.anInt175 = 0
             NativeRenderer.anInt8066 = 0
-            Class55.anInt978 = 0
+            OggMediaStream.anInt978 = 0
             TrackedGroundDecor.anInt10406 = 0
             DoublyLinkedNodeList.anInt3158 = 0
             Class88.anInt1492 = 0
@@ -470,7 +470,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RenderConfigFactory.anInt2976 = 0
             ModelDefinition.anInt1850 = 0
             BufferedMessageQueue.anInt3582 = 0
-            Class55_Sub1.anInt5268 = 0
+            OggCacheStream.anInt5268 = 0
             DisplayModeOptionState.anInt6105 = 0
             SkeletalAnimFrameLoader.anInt470 = 0
             KeyboardInputSource.anInt4277 = 0
@@ -516,7 +516,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             IntKeyNode.anInt6975 = 0
             GlTexture2D.anInt8544 = 0
             GlRenderDevice.anInt9873 = 0
-            Class55.anInt989 = 0
+            OggMediaStream.anInt989 = 0
             OpenGlRenderer.anInt7727 = 0
             Class85.anInt1461 = 0
             GroundDecorSceneEntity.anInt9970 = 0
@@ -561,7 +561,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LightDetailOptionState.anInt6038 = 0
             Class367_Sub11.anInt7402 = 0
             NpcConfig.anInt938 = 0
-            Class55.anInt1005 = 0
+            OggMediaStream.anInt1005 = 0
             Renderer.anInt4561 = 0
             ProjectileConfigUtil.anInt393 = 0
             ActorEntity.anInt8761 = 0
@@ -729,7 +729,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             KaraokeSubtitleStream.anInt9056 = 0
             GlBloomEffect.anInt8840 = 0
             PcmStreamBuffer.anInt8863 = 0
-            Class55_Sub1.anInt5266 = 0
+            OggCacheStream.anInt5266 = 0
             Class367_Sub9.anInt7377 = 0
             ContactEntry.anInt9596 = 0
             GroundDecorSceneEntity.anInt9992 = 0
@@ -1148,7 +1148,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SequencedActorEntity.anInt10113 = 0
             Buffer.anInt7149 = 0
             MaterialTextureCache.anInt4530 = 0
-            Class55.anInt1000 = 0
+            OggMediaStream.anInt1000 = 0
             ParticleAmountConfig.anInt2126 = 0
             Js5Archive.anInt654 = 0
             SpriteComponent.anInt8374 = 0
@@ -1449,7 +1449,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             DisplaySettingsConfig.anInt7225 = 0
             GlTextureBase.anInt5083 = 0
             ObjectByteSerializerHolder.anInt2282 = 0
-            Class55.anInt980 = 0
+            OggMediaStream.anInt980 = 0
             FloatCameraTransform.anInt5698 = 0
             CacheIndexManager.anInt3952 = 0
             GlTextureBase.anInt5095 = 0
@@ -1669,7 +1669,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub3.anInt5613 = 0
             CipheredPacketBuffer.anInt9752 = 0
             GlTextureCubeMap.anInt8534 = 0
-            Class55.anInt1003 = 0
+            OggMediaStream.anInt1003 = 0
             NamedTimedNode.anInt8788 = 0
             ProjectionCameraTransform.anInt5782 = 0
             GlVertexBufferArb.anInt8485 = 0
@@ -1971,7 +1971,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             LinkedNodeListIterator.anInt1649 = 0
             SpriteComponent.anInt8373 = 0
             GradientLookupEffect.anInt9192 = 0
-            Class55.anInt996 = 0
+            OggMediaStream.anInt996 = 0
             ProducerImageSurface.anInt9079 = 0
             Class64_Sub3.anInt5570 = 0
             GroundDecorOptionState.anInt5975 = 0
@@ -2361,7 +2361,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TerrainTileGeometry.anInt3007 = 0
             SpriteStore.anInt372 = 0
             MapSceneIconDef.anInt2852 = 0
-            Class55.anInt992 = 0
+            OggMediaStream.anInt992 = 0
             Npc.anInt10509 = 0
             NativeRenderer.anInt7913 = 0
             FontDefinition.anInt1990 = 0
@@ -2762,7 +2762,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             HeadIconRenderer.anInt2066 = 0
             Gl3dTexture.anInt8627 = 0
             GlRenderDevice.anInt9886 = 0
-            Class55.anInt1002 = 0
+            OggMediaStream.anInt1002 = 0
             GlslEnvMaterialPass.anInt6273 = 0
             ModelLightingConfig.anInt2550 = 0
             MatrixCameraTransform.anInt5658 = 0
@@ -2789,7 +2789,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WidgetNodeLink.anInt2041 = 0
             VorbisOggDecoder.anInt8997 = 0
             AbstractProceduralTextureNode.anInt7027 = 0
-            Class55.anInt988 = 0
+            OggMediaStream.anInt988 = 0
             Buffer.anInt7208 = 0
             GroundDecorSceneEntity.anInt9972 = 0
             OpenGlRenderer.anInt7703 = 0
@@ -3258,7 +3258,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlRenderDevice.anInt9868 = 0
             NativeRenderer.anInt8059 = 0
             Class62.anInt1110 = 0
-            Class55.anInt998 = 0
+            OggMediaStream.anInt998 = 0
             ProjectionCameraTransform.anInt5775 = 0
             Class367_Sub10.anInt7386 = 0
             WidgetDefinition.anInt243 = 0
@@ -3484,7 +3484,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ItemModelDefinition.anInt437 = 0
             SceneObjectEntity.anInt8736 = 0
             NativeRenderer.anInt7901 = 0
-            Class55.anInt982 = 0
+            OggMediaStream.anInt982 = 0
             RenderListTextureNode.anInt9487 = 0
             WorldMapTextLabel.anInt8586 = 0
             GlslEnvMaterialPass.anInt6275 = 0
@@ -3492,7 +3492,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FlickeringEffectsOptionState.anInt5920 = 0
             Class73.anInt4774 = 0
             WorldMapScene.anInt3121 = 0
-            Class55.anInt997 = 0
+            OggMediaStream.anInt997 = 0
             AnimatedModelRenderer.anInt8395 = 0
             WorldMapAreaLabel.anInt8579 = 0
             FlickeringEffectsOptionState.anInt5922 = 0
@@ -3563,7 +3563,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             FloatBuffer.anInt9745 = 0
             GlArrayBufferObject.anInt4710 = 0
             NpcDefinition.anInt2902 = 0
-            Class55.anInt985 = 0
+            OggMediaStream.anInt985 = 0
             Class59_Sub1_Sub1.anInt8656 = 0
             GameAppletFrame.anInt29 = 0
             NativeRenderer.anInt8038 = 0
@@ -3741,7 +3741,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ScrollTexMaterialPass.anInt6288 = 0
             Class64_Sub3.anInt5561 = 0
             WallSceneEntity.anInt9952 = 0
-            Class55.anInt990 = 0
+            OggMediaStream.anInt990 = 0
             MultiLevelOptionState.anInt6148 = 0
             WaterMaterialPass.anInt6214 = 0
             Class64_Sub2.anInt5435 = 0
@@ -3870,7 +3870,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7964 = 0
             TrackedGroundDecor.anInt10388 = 0
             SimpleToggleOptionState.anInt5887 = 0
-            Class55_Sub1.anInt5273 = 0
+            OggCacheStream.anInt5273 = 0
             OpenGlRenderer.anInt7676 = 0
             DisplayModeOptionState.anInt6109 = 0
             Hashtable.anInt4376 = 0
@@ -3939,7 +3939,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             BufferedMessageQueue.anInt3588 = 0
             Class59.anInt1070 = 0
             Buffer.anInt7183 = 0
-            Class55.anInt1004 = 0
+            OggMediaStream.anInt1004 = 0
             GzipDecompressor.anInt2073 = 0
             Class64_Sub3.anInt5568 = 0
             StructConfig.anInt563 = 0
@@ -4000,7 +4000,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SingletonMarker.anInt2599 = 0
             CompositeNpcModelBuilder.anInt2107 = 0
             MidiSequencePlayer.anInt8890 = 0
-            Class55.anInt986 = 0
+            OggMediaStream.anInt986 = 0
             ShadowQualityOptionState.anInt6015 = 0
             FrameBufferObject.anInt4881 = 0
             SocketFactory.anInt3474 = 0

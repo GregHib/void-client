@@ -1365,7 +1365,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-127)
                 val i_173_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 WallSceneEntity.method2397((-128).toByte())
-                Class55_Sub1.method524(i_173_, true, i, -127)
+                OggCacheStream.method524(i_173_, true, i, -127)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }

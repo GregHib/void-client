@@ -252,7 +252,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     FloatCameraTransform.method921(99.toByte(), false)
                     method3936(i + i)
                     KeyboardLayoutCache.aParticleSystemRenderer_3304 = null
-                    Class55_Sub1.aBoolean5265 = false
+                    OggCacheStream.aBoolean5265 = false
                     method3570(false)
                     System.gc()
                     RegionSceneLoader.method2193(true, (-128).toByte())

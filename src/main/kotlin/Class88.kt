@@ -380,7 +380,7 @@ class Class88 {
                                 IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 if (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 == 65535) IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 = -1
                                 IndexedSprite.aServerConnectionInfo_5199!!.aString2147 = class348_sub49_sub2.method3371(-13487)
-                                if (Class55_Sub1.aNamedIdRecord_5271 != Class8.aNamedIdRecord_165) {
+                                if (OggCacheStream.aNamedIdRecord_5271 != Class8.aNamedIdRecord_165) {
                                     IndexedSprite.aServerConnectionInfo_5199!!.anInt2138 = (50000 + (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143))
                                     IndexedSprite.aServerConnectionInfo_5199!!.anInt2148 = (40000 + (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143))
                                 }
@@ -405,7 +405,7 @@ class Class88 {
                                     }
                                 }
                             }
-                            if (Class8.aNamedIdRecord_165 == Class55_Sub1.aNamedIdRecord_5271) {
+                            if (Class8.aNamedIdRecord_165 == OggCacheStream.aNamedIdRecord_5271) {
                                 try {
                                     JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "loggedin")
                                 } catch (throwable: Throwable) {

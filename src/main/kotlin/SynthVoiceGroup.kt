@@ -161,11 +161,11 @@ class SynthVoiceGroup internal constructor(private val aClass348_Sub16_Sub3_8852
         fun method2822(i: Int, class348_sub49_sub2: CipheredPacketBuffer, i_3_: Int) {
             ProjectionCameraTransform.anInt5768 = 0
             anInt8846++
-            Class55.aBoolean979 = false
+            OggMediaStream.aBoolean979 = false
             if (i < -17) {
                 ConstantColourTextureNode.method3094(-21478, class348_sub49_sub2)
                 method3612(75, class348_sub49_sub2)
-                if (Class55.aBoolean979) println("---endgpp---")
+                if (OggMediaStream.aBoolean979) println("---endgpp---")
                 if (class348_sub49_sub2.anInt7197 != i_3_) throw RuntimeException("gpi1 pos:" + class348_sub49_sub2.anInt7197 + " psize:" + i_3_)
             }
         }

@@ -2998,7 +2998,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         aFloatArray7779 = FloatArray(16)
         aBoolean7870 = true
         this.aFloat7871 = -1.0f
-        aClass348_Sub1Array7858 = arrayOfNulls<AbstractTileShape>(Class55.anInt984)
+        aClass348_Sub1Array7858 = arrayOfNulls<AbstractTileShape>(OggMediaStream.anInt984)
         this.anInt7853 = 0
         anInt7867 = 0
         this.aFloat7875 = 3584.0f

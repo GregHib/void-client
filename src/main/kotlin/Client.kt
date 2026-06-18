@@ -457,8 +457,8 @@ import NpcConfig.Companion.method486
 import RsaVarbitHandler.Companion.method492
 import RsaVarbitHandler.Companion.method493
 import FloorOverlayDefinition.Companion.method501
-import Class55.Companion.method518
-import Class55_Sub1.Companion.method523
+import OggMediaStream.Companion.method518
+import OggCacheStream.Companion.method523
 import Class56.Companion.method526
 import Class56.Companion.method527
 import Class57.Companion.method530
@@ -640,9 +640,9 @@ class Client : GameAppletFrame() {
         GlShaderObjectHandle.aScriptCompilerThread_520 = ScriptCompilerThread(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!)
         ClientMachineInfo.aMediaStreamClient_6601 = MediaStreamClient()
         method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
-        if (Class8.aNamedIdRecord_165 != Class55_Sub1.aNamedIdRecord_5271) CacheLruCache.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
+        if (Class8.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271) CacheLruCache.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
         IntHashSet.aClass348_Sub51_3959 = method247(24916)
-        if (Class8.aNamedIdRecord_165 == Class55_Sub1.aNamedIdRecord_5271) GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
+        if (Class8.aNamedIdRecord_165 == OggCacheStream.aNamedIdRecord_5271) GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
         else if (method2354(Class8.aNamedIdRecord_165, i xor 0x7044.inv())) {
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2148 = 40000 - -GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143
@@ -706,7 +706,7 @@ class Client : GameAppletFrame() {
 //            Class374.aClass78_4538 = null;
 //            Class277.aClass137_3568 = null;
 //        }
-        if (Class8.aNamedIdRecord_165 != Class55_Sub1.aNamedIdRecord_5271) PixelBlender.aBoolean3811 = true
+        if (Class8.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271) PixelBlender.aBoolean3811 = true
         AsyncResourceRequest.aString9665 = LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)
     }
 
@@ -1319,8 +1319,8 @@ class Client : GameAppletFrame() {
             Class8.aNamedIdRecord_165 = (FacingDirectionNode.method2776((-93).toByte(), this.getParameter("modewhere")!!.toInt()))
             if (Class76.aNamedIdRecord_1279 == Class8.aNamedIdRecord_165) {
                 Class8.aNamedIdRecord_165 = GroundItemRenderState.aNamedIdRecord_1657
-            } else if (!method2354(Class8.aNamedIdRecord_165, -1) && Class55_Sub1.aNamedIdRecord_5271 != Class8.aNamedIdRecord_165) {
-                Class8.aNamedIdRecord_165 = Class55_Sub1.aNamedIdRecord_5271
+            } else if (!method2354(Class8.aNamedIdRecord_165, -1) && OggCacheStream.aNamedIdRecord_5271 != Class8.aNamedIdRecord_165) {
+                Class8.aNamedIdRecord_165 = OggCacheStream.aNamedIdRecord_5271
             }
             SceneRegionState.aHudTabPanel_196 = (method1677(-121, this.getParameter("modewhat")!!.toInt()))
             if (SceneRegionState.aHudTabPanel_196 != ParticleEmitterDef.aHudTabPanel_4953 && SceneRegionState.aHudTabPanel_196 != NoiseTextureNode.aHudTabPanel_9263 && Class68.aHudTabPanel_1189 != SceneRegionState.aHudTabPanel_196) SceneRegionState.aHudTabPanel_196 = Class68.aHudTabPanel_1189
@@ -1987,7 +1987,7 @@ class Client : GameAppletFrame() {
                     if (AnimationFrameDefinition.anInt6967 == -1) {
                         if (strings[4] != "english") {
                             if (strings[4] == "german") AnimationFrameDefinition.anInt6967 = 1
-                            else Class55.method518("language", (-128).toByte())
+                            else OggMediaStream.method518("language", (-128).toByte())
                         } else AnimationFrameDefinition.anInt6967 = 0
                     }
                     HashTableContainer.aBoolean6997 = false
@@ -1995,7 +1995,7 @@ class Client : GameAppletFrame() {
                     if (strings[5] != "game0") {
                         if (strings[5] != "game1") {
                             if (strings[5] != "game2") {
-                                if (strings[5] != "game3") Class55.method518("game", (-124).toByte())
+                                if (strings[5] != "game3") OggMediaStream.method518("game", (-124).toByte())
                                 else HardCacheEntryReference.aSceneProjector_10434 = CustomCursorsOptionState.aSceneProjector_5932
                             } else HardCacheEntryReference.aSceneProjector_10434 = GlslEnvMaterialPass.aSceneProjector_6262
                         } else HardCacheEntryReference.aSceneProjector_10434 = GlRectangleTexture.aSceneProjector_8638

@@ -4,7 +4,10 @@ import jagtheora.ogg.OggStreamState
 import jagtheora.ogg.OggSyncState
 import java.io.IOException
 
-abstract class Class55(i: Int) {
+/*
+ * Class55
+ */
+abstract class OggMediaStream(i: Int) {
     private var anOggPage981: OggPage?
     private var aBoolean983 = false
     private val anOggSyncState987: OggSyncState

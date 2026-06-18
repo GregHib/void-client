@@ -53,7 +53,7 @@ import Class367_Sub4.Companion.method3544
 import WorldMapLabel.Companion.method3569
 import ColourAdjustment.Companion.method449
 import MinimapPolygonDrawer.Companion.method468
-import Class55_Sub1.Companion.method524
+import OggCacheStream.Companion.method524
 import Class57.Companion.method529
 import Class58.Companion.method532
 import Class59.Companion.method544

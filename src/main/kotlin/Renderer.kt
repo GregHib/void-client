@@ -1,6 +1,6 @@
 import DefaultGraphicsOptionState.Companion.method1839
 import AbstractBloomEffect.Companion.method2753
-import Class55.Companion.method515
+import OggMediaStream.Companion.method515
 import java.awt.Canvas
 import java.awt.Rectangle
 import java.util.*

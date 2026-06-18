@@ -97,7 +97,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val f = (0.3333333f * ((anIntArray5511!![class353.anInt4349]) - -(anIntArray5511!![class353.anInt4344]) + (anIntArray5511!![class353.anInt4339])).toFloat())
                     val f_1_ = (0.3333333f * ((anIntArray5519!![class353.anInt4344]) + (anIntArray5519!![class353.anInt4349]) + (anIntArray5519!![class353.anInt4339])).toFloat())
                     val f_2_ = (0.3333333f * ((anIntArray5429!![class353.anInt4339]) + (anIntArray5429!![class353.anInt4344]) + (anIntArray5429!![class353.anInt4349])).toFloat())
-                    val f_3_ = (f_2_ * ShortMatrixNode.aFloat9516 + (Class55.aFloat1010 * f + f_1_ * DynamicSceneObjectEntity.aFloat10199) + ParticleProcessor.aFloat4268)
+                    val f_3_ = (f_2_ * ShortMatrixNode.aFloat9516 + (OggMediaStream.aFloat1010 * f + f_1_ * DynamicSceneObjectEntity.aFloat10199) + ParticleProcessor.aFloat4268)
                     val f_4_ = (BoundingBoxNode.aFloat6752 + (SceneEffectMarker.aFloat6430 * f_2_ + (TextureTileRenderer.aFloat6835 * f + f_1_ * BufferToggleState.aFloat3710)))
                     val f_5_ = WorldMapRenderer.aFloat4673 + (TextureMipDescriptor.aFloat4338 * f_1_ + f * RenderQueueState.aFloat6523 + f_2_ * Renderer.aFloat4582)
                     val f_6_ = ((1.0 / sqrt((f_5_ * f_5_ + (f_4_ * f_4_ + f_3_ * f_3_)).toDouble())).toFloat() * class353.anInt4347.toFloat())
@@ -353,7 +353,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             Renderer.aFloat4582 = ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5736) + (class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5716))
             DynamicSceneObjectEntity.aFloat10199 = ((class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5704) + ((class101_sub2_34_.aFloat5711 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5722)))
             TextureTileRenderer.aFloat6835 = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5736) + ((class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5708 * class101_sub2_34_.aFloat5722)))
-            Class55.aFloat1010 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5736) + ((class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5711)))
+            OggMediaStream.aFloat1010 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5736) + ((class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5711)))
             val f_36_ = (class101_sub2_34_.aFloat5724 + ((class101_sub2_34_.aFloat5716 * class101_sub2.aFloat5724) + ((class101_sub2_34_.aFloat5736 * class101_sub2.aFloat5729) + (class101_sub2.aFloat5710 * (class101_sub2_34_.aFloat5691)))))
             SceneEffectMarker.aFloat6430 = ((class101_sub2_34_.aFloat5722 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5732))
             TextureMipDescriptor.aFloat4338 = ((class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5722) + (class101_sub2.aFloat5700 * class101_sub2_34_.aFloat5736) + (class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5716))
@@ -407,7 +407,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 val f_58_ = MapElementManager.anIntArray4463!![i_56_].toFloat()
                 val f_59_ = ContactEntry.anIntArray9612!![i_56_].toFloat()
                 val f_60_ = (f_57_ * TextureTileRenderer.aFloat6835 + f_59_ * BufferToggleState.aFloat3710 + SceneEffectMarker.aFloat6430 * f_58_ + f_35_)
-                val f_61_ = (Class55.aFloat1010 * f_57_ + f_59_ * DynamicSceneObjectEntity.aFloat10199 + f_58_ * ShortMatrixNode.aFloat9516 + f)
+                val f_61_ = (OggMediaStream.aFloat1010 * f_57_ + f_59_ * DynamicSceneObjectEntity.aFloat10199 + f_58_ * ShortMatrixNode.aFloat9516 + f)
                 var f_62_ = f_36_ + (f_58_ * Renderer.aFloat4582 + (TextureMipDescriptor.aFloat4338 * f_59_ + RenderQueueState.aFloat6523 * f_57_))
                 if (f_62_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
                     if (i_31_ > 0) f_62_ = i_31_.toFloat()
@@ -431,7 +431,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val f_67_ = anIntArray5519!![i_65_].toFloat()
                     val f_68_ = anIntArray5511!![i_65_].toFloat()
                     var f_69_ = (Renderer.aFloat4582 * f_66_ + (f_68_ * RenderQueueState.aFloat6523 + TextureMipDescriptor.aFloat4338 * f_67_) + f_36_)
-                    val f_70_ = f + (DynamicSceneObjectEntity.aFloat10199 * f_67_ + Class55.aFloat1010 * f_68_ + f_66_ * ShortMatrixNode.aFloat9516)
+                    val f_70_ = f + (DynamicSceneObjectEntity.aFloat10199 * f_67_ + OggMediaStream.aFloat1010 * f_68_ + f_66_ * ShortMatrixNode.aFloat9516)
                     val f_71_ = (SceneEffectMarker.aFloat6430 * f_66_ + (f_68_ * TextureTileRenderer.aFloat6835 + BufferToggleState.aFloat3710 * f_67_) + f_35_)
                     if (f_69_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
                         if (i_31_ > 0) f_69_ = i_31_.toFloat()
@@ -1289,7 +1289,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         }
                         if (!(f_191_ / i.toFloat() >= aHa_Sub3_5419!!.aFloat8185) && !(f_190_ / i.toFloat() <= aHa_Sub3_5419!!.aFloat8103)) {
                             if (class318_sub3 != null || aTextureMipDescriptorArray5524 != null) {
-                                Class55.aFloat1010 = (((class101_sub2.aFloat5700) * (class101_sub2_180_.aFloat5708)) + ((class101_sub2.aFloat5711) * class101_sub2_180_.aFloat5711) + ((class101_sub2.aFloat5704) * class101_sub2_180_.aFloat5736))
+                                OggMediaStream.aFloat1010 = (((class101_sub2.aFloat5700) * (class101_sub2_180_.aFloat5708)) + ((class101_sub2.aFloat5711) * class101_sub2_180_.aFloat5711) + ((class101_sub2.aFloat5704) * class101_sub2_180_.aFloat5736))
                                 ShortMatrixNode.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2_180_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5704)))
                                 SceneEffectMarker.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5722) * class101_sub2_180_.aFloat5732) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5716))
                                 RenderQueueState.aFloat6523 = (((class101_sub2_180_.aFloat5736) * (class101_sub2.aFloat5716)) + (((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5708) + ((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5711))))
@@ -1299,10 +1299,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             if (class318_sub3 != null) {
                                 val i_192_ = anInt5467 + anInt5507 shr 1
                                 val i_193_ = anInt5418 + anInt5443 shr 1
-                                val i_194_ = (ParticleProcessor.aFloat4268 + (i_192_.toFloat() * Class55.aFloat1010) + ((DynamicSceneObjectEntity.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (ShortMatrixNode.aFloat9516))).toInt()
+                                val i_194_ = (ParticleProcessor.aFloat4268 + (i_192_.toFloat() * OggMediaStream.aFloat1010) + ((DynamicSceneObjectEntity.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (ShortMatrixNode.aFloat9516))).toInt()
                                 val i_195_ = (BoundingBoxNode.aFloat6752 + (TextureTileRenderer.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * BufferToggleState.aFloat3710) + (SceneEffectMarker.aFloat6430 * i_193_.toFloat())).toInt()
                                 val i_196_ = ((anInt5461.toFloat() * TextureMipDescriptor.aFloat4338) + ((RenderQueueState.aFloat6523 * i_192_.toFloat()) + WorldMapRenderer.aFloat4673) + i_193_.toFloat() * Renderer.aFloat4582).toInt()
-                                val i_197_ = ((anInt5509.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_192_.toFloat())) + (ShortMatrixNode.aFloat9516 * i_193_.toFloat())).toInt()
+                                val i_197_ = ((anInt5509.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (OggMediaStream.aFloat1010 * i_192_.toFloat())) + (ShortMatrixNode.aFloat9516 * i_193_.toFloat())).toInt()
                                 val i_198_ = ((SceneEffectMarker.aFloat6430 * i_193_.toFloat()) + (BoundingBoxNode.aFloat6752 + (TextureTileRenderer.aFloat6835 * i_192_.toFloat()) + (BufferToggleState.aFloat3710 * anInt5509.toFloat()))).toInt()
                                 class318_sub3.anInt6402 = ((i_195_ * aHa_Sub3_5419!!.anInt8134 / i) + aHa_Sub3_5419!!.anInt8130)
                                 class318_sub3.anInt6405 = (aHa_Sub3_5419!!.anInt8094 - -(i_194_ * (aHa_Sub3_5419!!.anInt8129) / i))
@@ -1766,7 +1766,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                             if (class318_sub3 != null || aTextureMipDescriptorArray5524 != null) {
                                 RenderQueueState.aFloat6523 = (((class101_sub2.aFloat5716) * (class101_sub2_307_.aFloat5736)) + ((class101_sub2_307_.aFloat5711 * (class101_sub2.aFloat5736)) + ((class101_sub2.aFloat5691) * (class101_sub2_307_.aFloat5708))))
                                 SceneEffectMarker.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5716))
-                                Class55.aFloat1010 = (((class101_sub2.aFloat5704) * (class101_sub2_307_.aFloat5736)) + (((class101_sub2.aFloat5700) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5711))))
+                                OggMediaStream.aFloat1010 = (((class101_sub2.aFloat5704) * (class101_sub2_307_.aFloat5736)) + (((class101_sub2.aFloat5700) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5711))))
                                 ShortMatrixNode.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2.aFloat5704) * class101_sub2_307_.aFloat5716))
                                 TextureTileRenderer.aFloat6835 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5711)) + ((class101_sub2.aFloat5722) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5736))
                                 Renderer.aFloat4582 = (((class101_sub2_307_.aFloat5716) * (class101_sub2.aFloat5716)) + ((class101_sub2_307_.aFloat5704 * (class101_sub2.aFloat5736)) + (class101_sub2_307_.aFloat5732 * (class101_sub2.aFloat5691))))
@@ -1776,7 +1776,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                 var bool_319_ = true
                                 val i_320_ = anInt5507 - -anInt5467 shr 1
                                 val i_321_ = anInt5418 + anInt5443 shr 1
-                                val i_322_ = ((anInt5461.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (ShortMatrixNode.aFloat9516 * i_321_.toFloat())).toInt()
+                                val i_322_ = ((anInt5461.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (OggMediaStream.aFloat1010 * i_320_.toFloat())) + (ShortMatrixNode.aFloat9516 * i_321_.toFloat())).toInt()
                                 val i_323_ = ((SceneEffectMarker.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * TextureTileRenderer.aFloat6835) + BoundingBoxNode.aFloat6752 + (BufferToggleState.aFloat3710 * anInt5461.toFloat()))).toInt()
                                 val i_324_ = (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523) + (anInt5461.toFloat() * TextureMipDescriptor.aFloat4338) + i_321_.toFloat() * Renderer.aFloat4582).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_324_) bool = true
@@ -1784,7 +1784,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                     class318_sub3.anInt6402 = (aHa_Sub3_5419!!.anInt8130 - -(i_323_ * (aHa_Sub3_5419!!.anInt8134) / i_324_))
                                     class318_sub3.anInt6405 = ((aHa_Sub3_5419!!.anInt8129 * i_322_ / i_324_) + (aHa_Sub3_5419!!.anInt8094))
                                 }
-                                val i_325_ = ((DynamicSceneObjectEntity.aFloat10199) * anInt5509.toFloat() + (ParticleProcessor.aFloat4268 + (Class55.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (ShortMatrixNode.aFloat9516))).toInt()
+                                val i_325_ = ((DynamicSceneObjectEntity.aFloat10199) * anInt5509.toFloat() + (ParticleProcessor.aFloat4268 + (OggMediaStream.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (ShortMatrixNode.aFloat9516))).toInt()
                                 val i_326_ = ((BufferToggleState.aFloat3710 * anInt5509.toFloat()) + (BoundingBoxNode.aFloat6752 + (i_320_.toFloat() * (TextureTileRenderer.aFloat6835))) + (i_321_.toFloat() * SceneEffectMarker.aFloat6430)).toInt()
                                 val i_327_ = ((anInt5509.toFloat() * TextureMipDescriptor.aFloat4338) + (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523)) + Renderer.aFloat4582 * i_321_.toFloat()).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_327_) bool = true

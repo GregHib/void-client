@@ -1,6 +1,6 @@
 import MidiSequencePlayer.Companion.method2878
 import RangeThresholdTextureNode.Companion.method3055
-import Class55.Companion.method520
+import OggMediaStream.Companion.method520
 import jaggl.OpenGL.Companion.glTexImage2Di
 import OpenGlRenderNode.Companion.method3297
 

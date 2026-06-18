@@ -626,7 +626,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                             else {
                                 Class93.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
-                                Class55.anInt994++
+                                OggMediaStream.anInt994++
                                 LinkedListNode.anInt4292 = 0
                                 FogOptionState.anInt6048 = 1
                                 val class348_sub47 = method2148((RenderableGroup.aFontMetaRef_5015), (TheoraVideoStream.aClass77_9029), -123)
