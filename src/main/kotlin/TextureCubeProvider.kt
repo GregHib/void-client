@@ -14,7 +14,7 @@ abstract class TextureCubeProvider : CircleRasterizer() {
         @JvmField
         var aBoolean6327: Boolean = false
         @JvmField
-        var aClass78_6328: Class78? = null
+        var aBufferedRandomAccessFile_6328: BufferedRandomAccessFile? = null
 
         @JvmStatic
         fun method2267(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
@@ -27,7 +27,7 @@ abstract class TextureCubeProvider : CircleRasterizer() {
 
         @JvmStatic
         fun method2268(i: Int) {
-            if (i == -24054) aClass78_6328 = null
+            if (i == -24054) aBufferedRandomAccessFile_6328 = null
         }
 
         @JvmStatic

@@ -139,10 +139,10 @@ class GrowableStringList internal constructor(private val anInt2365: Int, bool: 
 
         fun method1365(i: Int, i_11_: Byte, class348_sub49: Buffer) {
             if (i_11_ > -113) anInt2361 = -64
-            if (BufferedFileReader.aClass78_4538 != null) {
+            if (BufferedFileReader.aBufferedRandomAccessFile_4538 != null) {
                 try {
-                    BufferedFileReader.aClass78_4538!!.method789(0L, 59.toByte())
-                    BufferedFileReader.aClass78_4538!!.method783(i, 24, true, (class348_sub49.aByteArray7154))
+                    BufferedFileReader.aBufferedRandomAccessFile_4538!!.method789(0L, 59.toByte())
+                    BufferedFileReader.aBufferedRandomAccessFile_4538!!.method783(i, 24, true, (class348_sub49.aByteArray7154))
                 } catch (exception: Exception) {
                     /* empty */
                 }

@@ -78,7 +78,7 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
         @JvmField
         var anInt1577: Int = 0
         @JvmField
-        var aClass78Array1579: Array<Class78?>? = arrayOfNulls(37)
+        var aBufferedRandomAccessFileArray1579: Array<BufferedRandomAccessFile?>? = arrayOfNulls(37)
         @JvmField
         var anInt1580: Int = 0
         @JvmField
@@ -95,8 +95,8 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
         @JvmStatic
         fun method886(i: Int) {
             aHashtable_1585 = null
-            aClass78Array1579 = null
-            if (i != 16) aClass78Array1579 = null
+            aBufferedRandomAccessFileArray1579 = null
+            if (i != 16) aBufferedRandomAccessFileArray1579 = null
             anIntArray1583 = null
             aBoxedIntHolder_1591 = null
         }

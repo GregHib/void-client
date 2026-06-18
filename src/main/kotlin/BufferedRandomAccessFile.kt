@@ -2,7 +2,10 @@ import java.io.EOFException
 import java.io.File
 import java.io.IOException
 
-class Class78 internal constructor(private val aRandomAccessFileOnDisk_1312: RandomAccessFileOnDisk, i: Int, i_22_: Int) {
+/*
+ * Class78
+ */
+class BufferedRandomAccessFile internal constructor(private val aRandomAccessFileOnDisk_1312: RandomAccessFileOnDisk, i: Int, i_22_: Int) {
     private val aByteArray1305: ByteArray
     private val aByteArray1311: ByteArray
     private var anInt1314 = 0

@@ -754,7 +754,7 @@ open class Buffer : LinkedListNode {
                     FloatGrid.aJs5Archive_4975!!.anInt634 = 2
                     SpotAnimVector.aJs5Archive_2306!!.anInt634 = 2
                     OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 2
-                    Class78.aJs5Archive_1322!!.anInt634 = 2
+                    BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 2
                 }
                 if (GroundDecorSceneEntity.method2402(i_71_, (-119).toByte())) {
                     ItemModelDefinition.anInt443 = 1
@@ -769,7 +769,7 @@ open class Buffer : LinkedListNode {
                     FloatGrid.aJs5Archive_4975!!.anInt634 = 1
                     SpotAnimVector.aJs5Archive_2306!!.anInt634 = 1
                     OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 1
-                    Class78.aJs5Archive_1322!!.anInt634 = 1
+                    BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 1
                 }
                 if (i_71_ == 11 || i_71_ == 3) method3088(9)
                 val bool = (i == i_71_ || method3196(i_71_, i xor 0x58.inv()) || method2672(i_71_, -100))

@@ -223,7 +223,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         aBoolean3064 = true
         anInt3078++
         method1666(69.toByte(), i_11_)
-        if (i != 262144) aClass78_3075 = null
+        if (i != 262144) aBufferedRandomAccessFile_3075 = null
     }
 
     protected fun finalize() {
@@ -327,7 +327,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         var anIntArray3068: IntArray? = null
         var anInt3070: Int = 0
         @JvmField
-        var aClass78_3075: Class78? = null
+        var aBufferedRandomAccessFile_3075: BufferedRandomAccessFile? = null
         var anInt3076: Int = 0
         var anInt3077: Int = 0
         var anInt3078: Int = 0
@@ -344,7 +344,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
 
         @JvmStatic
         fun method1673(i: Int) {
-            aClass78_3075 = null
+            aBufferedRandomAccessFile_3075 = null
             anIntArray3068 = null
             if (i >= -19) method1669(-110, -13)
         }

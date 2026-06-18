@@ -9,7 +9,7 @@ internal object BufferedFileReader {
     @JvmField
     var aRgbColorPalette_4537: RgbColorPalette? = RgbColorPalette(3, 2)
     @JvmField
-    var aClass78_4538: Class78? = null
+    var aBufferedRandomAccessFile_4538: BufferedRandomAccessFile? = null
 
     @JvmStatic
     @Throws(IOException::class)
@@ -33,6 +33,6 @@ internal object BufferedFileReader {
     fun method3611(bool: Boolean) {
         if (bool != true) aRgbColorPalette_4537 = null
         aRgbColorPalette_4537 = null
-        aClass78_4538 = null
+        aBufferedRandomAccessFile_4538 = null
     }
 }

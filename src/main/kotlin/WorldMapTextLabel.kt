@@ -44,7 +44,7 @@ class WorldMapTextLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRende
             anInt8593++
             if (i_0_.toInt() != -23) return null
             var indexedFileCache: IndexedFileCache? = null
-            if (TextureCubeProvider.aClass78_6328 != null) indexedFileCache = IndexedFileCache(i, TextureCubeProvider.aClass78_6328, MinimapRenderer.aClass78Array1579!![i], 1000000)
+            if (TextureCubeProvider.aBufferedRandomAccessFile_6328 != null) indexedFileCache = IndexedFileCache(i, TextureCubeProvider.aBufferedRandomAccessFile_6328, MinimapRenderer.aBufferedRandomAccessFileArray1579!![i], 1000000)
             MinimapRectClipper.aClass314_Sub1Array223!![i] = SizeBoundedSoftCache.aRsaPacketDecoder_2327!!.method2673(indexedFileCache, i, LocTypeConfig.aIndexedFileCache_3568, 255)
             MinimapRectClipper.aClass314_Sub1Array223!![i]!!.method2346(27872)
             return Js5Archive(MinimapRectClipper.aClass314_Sub1Array223!![i]!!, bool, i_1_)

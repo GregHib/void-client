@@ -832,10 +832,10 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             anInt8248++
             val `is` = ByteArray(24)
             if (i.toInt() == 55) {
-                if (BufferedFileReader.aClass78_4538 != null) {
+                if (BufferedFileReader.aBufferedRandomAccessFile_4538 != null) {
                     try {
-                        BufferedFileReader.aClass78_4538!!.method789(0L, (-120).toByte())
-                        BufferedFileReader.aClass78_4538!!.method784(-89, `is`)
+                        BufferedFileReader.aBufferedRandomAccessFile_4538!!.method789(0L, (-120).toByte())
+                        BufferedFileReader.aBufferedRandomAccessFile_4538!!.method784(-89, `is`)
                         var i_170_: Int
                         i_170_ = 0
                         while (i_170_ < 24) {

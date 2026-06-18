@@ -34,7 +34,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(115.toByte(), FloatGrid.aJs5Archive_4975!!.method389(-96))
         class348_sub49_sub2.writeInt(102.toByte(), SpotAnimVector.aJs5Archive_2306!!.method389(98))
         class348_sub49_sub2.writeInt(97.toByte(), OpenGlRenderNode.aJs5Archive_10480!!.method389(114))
-        class348_sub49_sub2.writeInt(123.toByte(), Class78.aJs5Archive_1322!!.method389(-104))
+        class348_sub49_sub2.writeInt(123.toByte(), BufferedRandomAccessFile.aJs5Archive_1322!!.method389(-104))
         class348_sub49_sub2.writeInt(97.toByte(), MidiSequencePlayer.aJs5Archive_8926!!.method389(-96))
         class348_sub49_sub2.writeInt(111.toByte(), TerrainShadowBuilderGl2.aJs5Archive_6950!!.method389(109))
         class348_sub49_sub2.writeInt(108.toByte(), ModelBatchBase.aJs5Archive_1897!!.method389(-106))

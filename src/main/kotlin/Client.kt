@@ -495,7 +495,7 @@ import HintArrowRenderer.Companion.method731
 import RgbColorPalette.Companion.method744
 import MapRegionLoader.Companion.method746
 import IsaacCipher.Companion.method782
-import Class78.Companion.method786
+import BufferedRandomAccessFile.Companion.method786
 import Class79.Companion.method804
 import Class80.Companion.method808
 import Class81.method810
@@ -690,11 +690,11 @@ class Client : GameAppletFrame() {
         GlTexture1D.aInputTracker_8552 = method2941(ParticleSystemRenderer.aCanvas3869, 0, true)
         //        try {
         if (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 != null) {
-            TextureCubeProvider.aClass78_6328 = Class78((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
-            for (i_3_ in 0..36) MinimapRenderer.aClass78Array1579!![i_3_] = Class78((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDiskArray3795!![i_3_]!!), 6000, 0)
-            SceneObjectAnimator.aClass78_3075 = Class78((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
-            LocTypeConfig.aIndexedFileCache_3568 = IndexedFileCache(255, TextureCubeProvider.aClass78_6328, SceneObjectAnimator.aClass78_3075, 500000)
-            BufferedFileReader.aClass78_4538 = Class78((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
+            TextureCubeProvider.aBufferedRandomAccessFile_6328 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
+            for (i_3_ in 0..36) MinimapRenderer.aBufferedRandomAccessFileArray1579!![i_3_] = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDiskArray3795!![i_3_]!!), 6000, 0)
+            SceneObjectAnimator.aBufferedRandomAccessFile_3075 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
+            LocTypeConfig.aIndexedFileCache_3568 = IndexedFileCache(255, TextureCubeProvider.aBufferedRandomAccessFile_6328, SceneObjectAnimator.aBufferedRandomAccessFile_3075, 500000)
+            BufferedFileReader.aBufferedRandomAccessFile_4538 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779 = null
             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 = null
             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDiskArray3795 = null
@@ -1281,10 +1281,10 @@ class Client : GameAppletFrame() {
             SceneObjectSpawner.aHostPingThread_1286 = null
         }
         try {
-            TextureCubeProvider.aClass78_6328!!.method790((-62).toByte())
-            for (i_6_ in i..36) MinimapRenderer.aClass78Array1579!![i_6_]!!.method790(118.toByte())
-            SceneObjectAnimator.aClass78_3075!!.method790((-84).toByte())
-            BufferedFileReader.aClass78_4538!!.method790(80.toByte())
+            TextureCubeProvider.aBufferedRandomAccessFile_6328!!.method790((-62).toByte())
+            for (i_6_ in i..36) MinimapRenderer.aBufferedRandomAccessFileArray1579!![i_6_]!!.method790(118.toByte())
+            SceneObjectAnimator.aBufferedRandomAccessFile_3075!!.method790((-84).toByte())
+            BufferedFileReader.aBufferedRandomAccessFile_4538!!.method790(80.toByte())
             StringValueNode.method3317((-53).toByte())
         } catch (exception: Exception) {
             /* empty */

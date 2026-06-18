@@ -133,7 +133,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 FloatGrid.aJs5Archive_4975!!.method412(28.toByte())
                 SpotAnimVector.aJs5Archive_2306!!.method412((-115).toByte())
                 OpenGlRenderNode.aJs5Archive_10480!!.method412(22.toByte())
-                Class78.aJs5Archive_1322!!.method412(36.toByte())
+                BufferedRandomAccessFile.aJs5Archive_1322!!.method412(36.toByte())
                 MidiSequencePlayer.aJs5Archive_8926!!.method412((-114).toByte())
                 TerrainShadowBuilderGl2.Companion.aJs5Archive_6950!!.method412(36.toByte())
                 ModelBatchBase.aJs5Archive_1897!!.method412((-114).toByte())

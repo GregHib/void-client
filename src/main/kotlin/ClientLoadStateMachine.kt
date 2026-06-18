@@ -139,7 +139,7 @@ object ClientLoadStateMachine {
             FloatGrid.aJs5Archive_4975 = WorldMapTextLabel.method3571(false, 18, (-23).toByte(), 1)
             SpotAnimVector.aJs5Archive_2306 = WorldMapTextLabel.method3571(false, 19, (-23).toByte(), 1)
             OpenGlRenderNode.aJs5Archive_10480 = WorldMapTextLabel.method3571(false, 20, (-23).toByte(), 1)
-            Class78.aJs5Archive_1322 = WorldMapTextLabel.method3571(false, 21, (-23).toByte(), 1)
+            BufferedRandomAccessFile.aJs5Archive_1322 = WorldMapTextLabel.method3571(false, 21, (-23).toByte(), 1)
             MidiSequencePlayer.aJs5Archive_8926 = WorldMapTextLabel.method3571(false, 22, (-23).toByte(), 1)
             TerrainShadowBuilderGl2.aJs5Archive_6950 = WorldMapTextLabel.method3571(true, 23, (-23).toByte(), 1)
             ModelBatchBase.aJs5Archive_1897 = WorldMapTextLabel.method3571(false, 24, (-23).toByte(), 1)
@@ -199,7 +199,7 @@ object ClientLoadStateMachine {
             ParticleEmitterNode.aClass87_191 = Class87(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, OpenGlRenderNode.aJs5Archive_10480, ShortKeyNode.aJs5Archive_6909, TextureGenerator.aJs5Archive_2490)
             CircleHitbox.aClass84_413 = Class84(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
             HoverActionEntry.aSpriteStore_1813 = SpriteStore(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
-            ConstantColourTextureNode.aMapElementDefinitionCache_9245 = MapElementDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class78.aJs5Archive_1322, RasterSprite.aJs5Archive_5207)
+            ConstantColourTextureNode.aMapElementDefinitionCache_9245 = MapElementDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, BufferedRandomAccessFile.aJs5Archive_1322, RasterSprite.aJs5Archive_5207)
             SpriteLoadValidator.aWorldMapImageBuilder_4787 = WorldMapImageBuilder(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
             Class91.aClass82_1523 = Class82(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
             WaterDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
@@ -261,7 +261,7 @@ object ClientLoadStateMachine {
             FloatGrid.aJs5Archive_4975!!.anInt634 = 2
             SpotAnimVector.aJs5Archive_2306!!.anInt634 = 2
             OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 2
-            Class78.aJs5Archive_1322!!.anInt634 = 2
+            BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 2
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1040) {
             if (!TextureLoaderUtil.method2547(GlBufferObject.anInt4737, 84.toByte())) return 0
