@@ -3,11 +3,11 @@
 */
 class SystemNanoTimer : NanoTimer() {
     init {
-        System.nanoTime()
+        Clock.nanos()
     }
 
     public override fun method446(i: Int): Long {
         if (i != 1) return -111L
-        return System.nanoTime()
+        return Clock.nanos()
     }
 }

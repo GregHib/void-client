@@ -1,5 +1,3 @@
-import jagex3.jagmisc.jagmisc.nanoTime
-
 class NanoTimerJagex internal constructor() : BufferPositionTracker() {
     private var aLong6160 = 0L
     private var aLong6161 = 0L
@@ -9,7 +7,7 @@ class NanoTimerJagex internal constructor() : BufferPositionTracker() {
     private var anInt6165 = 1
 
     private fun method1864(i: Int): Long {
-        val l = nanoTime()
+        val l = Clock.nanos()
         val l_0_ = l + -aLong6162
         aLong6162 = l
         if (l_0_ > -5000000000L && l_0_ < 5000000000L) {
@@ -43,7 +41,7 @@ class NanoTimerJagex internal constructor() : BufferPositionTracker() {
 
     init {
         aLongArray6164 = LongArray(10)
-        aLong6161 = nanoTime()
+        aLong6161 = Clock.nanos()
         aLong6160 = aLong6161
         if (aLong6161 == 0L) throw RuntimeException()
     }

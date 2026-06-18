@@ -52,7 +52,7 @@ object GameClock {
     fun method599(i: Int): Long {
         if (i > -52) return -121L
         anInt1113++
-        val l = System.currentTimeMillis()
+        val l = Clock.millis()
         if (MatrixCameraTransform.aLong5663 > l) TileSceneEntity.aLong8728 += MatrixCameraTransform.aLong5663 - l
         MatrixCameraTransform.aLong5663 = l
         return l + TileSceneEntity.aLong8728
