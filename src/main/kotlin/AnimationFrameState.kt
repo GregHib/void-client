@@ -1,7 +1,7 @@
 /* Class94 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class94 {
+object AnimationFrameState {
     @JvmField
     var anInt1535: Int = 0
     @JvmField

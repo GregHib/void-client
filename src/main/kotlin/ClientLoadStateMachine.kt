@@ -134,7 +134,7 @@ object ClientLoadStateMachine {
             CameraNodeList.aJs5Archive_1743 = WorldMapTextLabel.method3571(false, 12, (-23).toByte(), 1)
             LightingOptionState.aJs5Archive_5878 = WorldMapTextLabel.method3571(false, 14, (-23).toByte(), 1)
             HoverActionEntry.aJs5Archive_1815 = WorldMapTextLabel.method3571(false, 15, (-23).toByte(), 1)
-            Class94.aJs5Archive_1538 = WorldMapTextLabel.method3571(false, 16, (-23).toByte(), 1)
+            AnimationFrameState.aJs5Archive_1538 = WorldMapTextLabel.method3571(false, 16, (-23).toByte(), 1)
             VideoAdChecker.aJs5Archive_3183 = WorldMapTextLabel.method3571(false, 17, (-23).toByte(), 1)
             FloatGrid.aJs5Archive_4975 = WorldMapTextLabel.method3571(false, 18, (-23).toByte(), 1)
             SpotAnimVector.aJs5Archive_2306 = WorldMapTextLabel.method3571(false, 19, (-23).toByte(), 1)
@@ -190,7 +190,7 @@ object ClientLoadStateMachine {
             RadialTextureNode.aModelDefinitionLoader_9342 = ModelDefinitionLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541, RasterSprite.aJs5Archive_5207)
             ScrollingWidgetComponentNode.aParticleEffectCache_8378 = ParticleEffectCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
             AbstractTileShape.aMapSceneDefLoader_6559 = MapSceneDefLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
-            GradientLookupEffect.aSeqDefinitionCache_9195 = SeqDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, true, Class94.aJs5Archive_1538, RasterSprite.aJs5Archive_5207)
+            GradientLookupEffect.aSeqDefinitionCache_9195 = SeqDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, true, AnimationFrameState.aJs5Archive_1538, RasterSprite.aJs5Archive_5207)
             TheoraVideoStream.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
             ModelOrSpriteHolder.aTextureDefinitionLoader_117 = TextureDefinitionLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
             MapAreaDefinition.aBufferedMessageQueue_2529 = BufferedMessageQueue(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, true, FloatGrid.aJs5Archive_4975, RasterSprite.aJs5Archive_5207)
@@ -257,7 +257,7 @@ object ClientLoadStateMachine {
             Class95.aJs5Archive_1541!!.anInt634 = 2
             MapElementDefinitionCache.aBoolean3988 = true
             VideoAdChecker.aJs5Archive_3183!!.anInt634 = 2
-            Class94.aJs5Archive_1538!!.anInt634 = 2
+            AnimationFrameState.aJs5Archive_1538!!.anInt634 = 2
             FloatGrid.aJs5Archive_4975!!.anInt634 = 2
             SpotAnimVector.aJs5Archive_2306!!.anInt634 = 2
             OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 2

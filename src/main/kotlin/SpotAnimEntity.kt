@@ -2,7 +2,7 @@ import InputTracker.Companion.method3591
 import MapRegionLoader.Companion.method756
 import MapRegionLoader.Companion.method760
 import MapRegionLoader.Companion.method761
-import Class94.method867
+import AnimationFrameState.method867
 import InputStream_Sub1.Companion.method126
 import kotlin.math.atan2
 import kotlin.math.sqrt

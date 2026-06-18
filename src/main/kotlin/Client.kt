@@ -510,8 +510,8 @@ import RegionMapDecoder.method852
 import NpcUpdateProcessor.method857
 import NpcSpawnDecoder.method860
 import JagGlToolkitFactory.method861
-import Class94.method866
-import Class94.method867
+import AnimationFrameState.method866
+import AnimationFrameState.method867
 import Class95.method869
 import Class98.Companion.method879
 import Class99.method883

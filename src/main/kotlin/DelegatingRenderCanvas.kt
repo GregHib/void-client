@@ -363,7 +363,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     } else Buffer.method3379(i xor 0x2, 3)
                     method2718(-106)
                     method3570(false)
-                    Class94.method867(true)
+                    AnimationFrameState.method867(true)
                     PcmStreamBuffer.aBoolean8870 = true
                     if (GlTexture1D.aBoolean8558) {
                         method94(("Took: " + (GameClock.method599(-117) + -RegionMapDecoder.aLong1516) + "ms"), i + 52)

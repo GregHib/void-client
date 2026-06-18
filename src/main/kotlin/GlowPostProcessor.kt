@@ -1,7 +1,7 @@
 import RefCountedHandle.Companion.method1323
 import ModelOrSpriteHolder.Companion.method174
 import NoiseTextureGenerator.Companion.method545
-import Class94.method865
+import AnimationFrameState.method865
 import Class97.Companion.method876
 import jaggl.OpenGL.Companion.glBegin
 import jaggl.OpenGL.Companion.glEnd

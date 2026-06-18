@@ -430,7 +430,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7674 = 0
             Direct3dModel.anInt5410 = 0
             NativeRenderNode.anInt10472 = 0
-            Class94.anInt1535 = 0
+            AnimationFrameState.anInt1535 = 0
             MinimapSquareDrawer.anInt5220 = 0
             ArbFogMaterialPass.anInt6202 = 0
             ParticleDetailOptionState.anInt6023 = 0
@@ -2534,7 +2534,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TimedRecordAccessorB.anInt9732 = 0
             NoiseTextureGenerator.anInt1072 = 0
             RingBufferInputStream.anInt4555 = 0
-            Class94.anInt1536 = 0
+            AnimationFrameState.anInt1536 = 0
             Direct3dModel.anInt5514 = 0
             Gl3dTexture.anInt8624 = 0
             OpenGlRenderer.anInt7677 = 0

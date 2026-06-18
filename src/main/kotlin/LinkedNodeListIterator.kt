@@ -313,7 +313,7 @@ class LinkedNodeListIterator {
             ProjectileConfigUtil.anInt394 = `is`[3]
             SimpleToggleOptionState.anInt5886 = `is`[1]
             if (bool_42_) {
-                CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
+                CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                 method3284(true, ModelWallEntity.aDouble10120)
             } else {
                 CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, OutputStream_Sub1.anInt95)

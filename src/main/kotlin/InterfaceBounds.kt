@@ -128,7 +128,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 SoftwareSpriteRaster.aJs5Archive_1627!!.method412((-117).toByte())
                 LightingOptionState.aJs5Archive_5878!!.method412(29.toByte())
                 HoverActionEntry.aJs5Archive_1815!!.method412(80.toByte())
-                Class94.aJs5Archive_1538!!.method412(34.toByte())
+                AnimationFrameState.aJs5Archive_1538!!.method412(34.toByte())
                 VideoAdChecker.aJs5Archive_3183!!.method412((-116).toByte())
                 FloatGrid.aJs5Archive_4975!!.method412(28.toByte())
                 SpotAnimVector.aJs5Archive_2306!!.method412((-115).toByte())

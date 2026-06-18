@@ -300,15 +300,15 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             }
                             TextureHandle.anInt2590 = i_20_
                             ModelFacePriorityNode.anInt1879 = i_21_
-                            Class94.anInt1537 = (-MapRegionLoaderThread.anInt4211 + -ShaderObject.anInt4100 + (i_16_ + SoundEnvelope.anInt2747))
+                            AnimationFrameState.anInt1537 = (-MapRegionLoaderThread.anInt4211 + -ShaderObject.anInt4100 + (i_16_ + SoundEnvelope.anInt2747))
                             SceneTextLabel.anInt6417 = (-PerlinNoiseTextureNode.anInt9157 + (i_17_ + HardKeyedCacheEntryReference.anInt10444 + -ModelVertexColorBuffer.anInt6568))
-                            CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
+                            CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                         } else if (Buffer.anInt7207 == 1) {
                             TextureHandle.anInt2590 = i_20_
-                            Class94.anInt1537 = i_16_ + -ShaderObject.anInt4100
+                            AnimationFrameState.anInt1537 = i_16_ + -ShaderObject.anInt4100
                             SceneTextLabel.anInt6417 = -ModelVertexColorBuffer.anInt6568 + i_17_
                             ModelFacePriorityNode.anInt1879 = i_21_
-                            CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
+                            CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
                             CameraRotationStub.aRenderer326!!.KA(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, (MapRegionLoaderThread.anInt4211 - -GrayscaleNoiseTexture.anInt5283), (LinkedNodeListIterator.anInt1651 + PerlinNoiseTextureNode.anInt9157))
                         }
                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, if (Buffer.anInt7207 != 2) 2 else 0, Buffer.anInt7207 == 1)

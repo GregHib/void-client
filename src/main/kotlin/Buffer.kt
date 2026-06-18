@@ -750,7 +750,7 @@ open class Buffer : LinkedListNode {
                 if (GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
                     Class95.aJs5Archive_1541!!.anInt634 = 2
                     VideoAdChecker.aJs5Archive_3183!!.anInt634 = 2
-                    Class94.aJs5Archive_1538!!.anInt634 = 2
+                    AnimationFrameState.aJs5Archive_1538!!.anInt634 = 2
                     FloatGrid.aJs5Archive_4975!!.anInt634 = 2
                     SpotAnimVector.aJs5Archive_2306!!.anInt634 = 2
                     OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 2
@@ -765,7 +765,7 @@ open class Buffer : LinkedListNode {
                     method3177(-111, true)
                     Class95.aJs5Archive_1541!!.anInt634 = 1
                     VideoAdChecker.aJs5Archive_3183!!.anInt634 = 1
-                    Class94.aJs5Archive_1538!!.anInt634 = 1
+                    AnimationFrameState.aJs5Archive_1538!!.anInt634 = 1
                     FloatGrid.aJs5Archive_4975!!.anInt634 = 1
                     SpotAnimVector.aJs5Archive_2306!!.anInt634 = 1
                     OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 1
