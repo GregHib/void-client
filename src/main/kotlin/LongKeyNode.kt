@@ -78,7 +78,7 @@ class LongKeyNode : LinkedListNode {
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-124, ArbVertexProgram.regionTileX + i_2_)
             MediaStreamClient.anInt3203 = i_2_
             if (i_3_ >= -88) aFontMetaRef_6764 = null
-            Class97.anInt1548 = i
+            TerrainChunkBuilder.anInt1548 = i
             ModelKeyBuilder.Companion.aBoolean6759 = false
             method2264(false)
             return class348_sub47

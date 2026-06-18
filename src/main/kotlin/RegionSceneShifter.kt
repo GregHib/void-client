@@ -200,7 +200,7 @@ class RegionSceneShifter : LinkedListNode() {
                     }
                     if (MediaStreamClient.anInt3203 != 0) {
                         MediaStreamClient.anInt3203 -= i_20_
-                        Class97.anInt1548 -= i_21_
+                        TerrainChunkBuilder.anInt1548 -= i_21_
                     }
                     SoundBankPatch.Companion.method2928(true)
                     if (i_17_ != 11) {

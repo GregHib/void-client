@@ -36,7 +36,7 @@ object PixelBlender {
         val i_13_ = (method574(i, LocalPlayerState.aPlayer_1907!!.method2436(70.toByte()), i_6_, RadialGradientMaskEffect.anIntArray9185, bool, 120.toByte(), i_9_, i_11_, i_12_, InterfaceComponentGroup.anIntArray9626, i_4_, (TimedRecordAccessor.aCollisionMapArray7108s!![LocalPlayerState.aPlayer_1907!!.plane.toInt()]), i_8_, i_7_, i_10_))
         if (i_13_ < 1) return false
         MediaStreamClient.anInt3203 = InterfaceComponentGroup.anIntArray9626!![-1 + i_13_]
-        Class97.anInt1548 = RadialGradientMaskEffect.anIntArray9185!![-1 + i_13_]
+        TerrainChunkBuilder.anInt1548 = RadialGradientMaskEffect.anIntArray9185!![-1 + i_13_]
         ModelKeyBuilder.aBoolean6759 = false
         if (i_5_ > -83) aBoolean3811 = true
         method2264(false)

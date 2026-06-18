@@ -21,7 +21,7 @@ class MinimapTriangleDrawer internal constructor(private var anInt5231: Int, pri
             val i_15_ = i_12_ * anInt5232 shr 12
             val i_16_ = i * anInt5227 shr 12
             val i_17_ = i * anInt5230 shr 12
-            Class97.method872(this.anInt865, 1, this.anInt862, i_16_, i_17_, i_15_, i_14_)
+            TerrainChunkBuilder.method872(this.anInt865, 1, this.anInt862, i_16_, i_17_, i_15_, i_14_)
         }
     }
 

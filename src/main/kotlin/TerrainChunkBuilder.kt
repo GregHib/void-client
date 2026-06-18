@@ -4,7 +4,10 @@ import NativeBufferHandle.Companion.method849
 import NativeRenderer.Companion.method3936
 import jaclib.memory.Stream.Companion.c
 
-class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDecoder: VideoStreamDecoder?, var_s_Sub3: NativeTerrainTile?, i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
+/*
+ * Class97
+ */
+class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDecoder: VideoStreamDecoder?, var_s_Sub3: NativeTerrainTile?, i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
     private val anInt1544: Int
     private var anInt1546 = 0
     private var anInt1547 = 0

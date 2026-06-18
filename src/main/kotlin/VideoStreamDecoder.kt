@@ -12,7 +12,7 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
     private val aS_Sub3_4116: NativeTerrainTile?
     private val anInt4118: Int
     private val anInt4121: Int
-    private var aClass97ArrayArray4122: Array<Array<Class97?>?>? = null
+    private var aTerrainChunkBuilderArrayArray4122: Array<Array<TerrainChunkBuilder?>?>? = null
     private val anInt4123: Int
     private val anInt4124: Int
     fun method2628(i: Int, i_0_: Byte, var_renderNode: RenderNode?, i_1_: Int): Boolean {
@@ -115,7 +115,7 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
                 val i_29_ = 1 + i_27_ shl anInt4124
                 var i_30_ = 0
                 while (anInt4121 > i_30_) {
-                    if (aClass97ArrayArray4122!![i_30_]!![i_27_] != null) {
+                    if (aTerrainChunkBuilderArrayArray4122!![i_30_]!![i_27_] != null) {
                         val i_31_ = i_30_ shl anInt4124
                         val i_32_ = i_30_ + 1 shl anInt4124
                         while_119_@ for (i_33_ in i_31_..<i_32_) {
@@ -127,7 +127,7 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
                                         class101_sub2.method932(1.0f, f, f, (-65).toByte())
                                         class101_sub2.method891(-i_30_, -i_27_, 0)
                                         aHa_Sub3_4111.method3853(i xor 0x9f.inv(), LightDetailOptionState.aConfigFlagUtil_6030)
-                                        aClass97ArrayArray4122!![i_30_]!![i_27_]!!.method871(116.toByte())
+                                        aTerrainChunkBuilderArrayArray4122!![i_30_]!![i_27_]!!.method871(116.toByte())
                                         break@while_119_
                                     }
                                     i_34_++
@@ -145,7 +145,7 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
                 val i_36_ = i_35_ shl anInt4124
                 val i_37_ = 1 + i_35_ shl anInt4124
                 for (i_38_ in 0..<anInt4121) {
-                    val class97 = aClass97ArrayArray4122!![i_38_]!![i_35_]
+                    val class97 = aTerrainChunkBuilderArrayArray4122!![i_38_]!![i_35_]
                     if (class97 != null) {
                         val interface5_impl2 = aHa_Sub3_4111.method3822(118, (class97.anInt1563) * 3)
                         val buffer = interface5_impl2.method24(true, false)
@@ -202,13 +202,13 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
     }
 
     fun method2632(i: Int) {
-        aClass97ArrayArray4122 = Array<Array<Class97?>?>(anInt4121) { arrayOfNulls<Class97>(anInt4118) }
+        aTerrainChunkBuilderArrayArray4122 = Array<Array<TerrainChunkBuilder?>?>(anInt4121) { arrayOfNulls<TerrainChunkBuilder>(anInt4118) }
         anInt4125++
         var i_48_ = 0
         while (anInt4118 > i_48_) {
             for (i_49_ in 0..<anInt4121) {
-                aClass97ArrayArray4122!![i_49_]!![i_48_] = Class97(aHa_Sub3_4111, this, aS_Sub3_4116, i_49_, i_48_, anInt4124, 128 * i_49_ - -1, 128 * i_48_ + 1)
-                if (aClass97ArrayArray4122!![i_49_]!![i_48_]!!.anInt1563 == 0) aClass97ArrayArray4122!![i_49_]!![i_48_] = null
+                aTerrainChunkBuilderArrayArray4122!![i_49_]!![i_48_] = TerrainChunkBuilder(aHa_Sub3_4111, this, aS_Sub3_4116, i_49_, i_48_, anInt4124, 128 * i_49_ - -1, 128 * i_48_ + 1)
+                if (aTerrainChunkBuilderArrayArray4122!![i_49_]!![i_48_]!!.anInt1563 == 0) aTerrainChunkBuilderArrayArray4122!![i_49_]!![i_48_] = null
             }
             i_48_++
         }
@@ -262,14 +262,14 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
 
     private fun method2634(i: Int, i_62_: Int, i_63_: Int, i_64_: Int, i_65_: Int) {
         anInt4110++
-        if (aClass97ArrayArray4122 != null) {
+        if (aTerrainChunkBuilderArrayArray4122 != null) {
             val i_66_ = -1 + i_63_ shr 7
             val i_67_ = -1 + (i_65_ + i_63_ - 1) shr 7
             val i_68_ = i + -1 shr 7
             val i_69_ = i_62_ + (-1 + (i - -i_64_)) shr 7
             var i_70_ = i_66_
             while (i_67_ >= i_70_) {
-                val class97s = aClass97ArrayArray4122!![i_70_]!!
+                val class97s = aTerrainChunkBuilderArrayArray4122!![i_70_]!!
                 var i_71_ = i_68_
                 while (i_69_ >= i_71_) {
                     if (class97s[i_71_] != null) class97s[i_71_]!!.aBoolean1562 = true

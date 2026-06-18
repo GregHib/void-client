@@ -408,7 +408,7 @@ class CombineTextureNode : AbstractProceduralTextureNode(2, false) {
         @JvmStatic
         fun method3089(i: Int) {
             MediaStreamClient.anInt3203 = -1
-            Class97.anInt1548 = -1
+            TerrainChunkBuilder.anInt1548 = -1
             CameraOrModelTransform.anInt4155 = -1
             anInt9222++
             KeyboardLayoutCache.anInt3306 = 0

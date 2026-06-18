@@ -325,7 +325,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                                     val class46 = (method2570(1512932720, i_17_))
                                     class46!!.anInt756 = (class348_sub42_sub15.anInt9652)
                                 } else if (i_16_ == 15) {
-                                    Class97.anInt1548 = (class348_sub42_sub15.anInt9651)
+                                    TerrainChunkBuilder.anInt1548 = (class348_sub42_sub15.anInt9651)
                                     MediaStreamClient.anInt3203 = (class348_sub42_sub15.anInt9652)
                                     ModelKeyBuilder.Companion.aBoolean6759 = true
                                 } else if (i_16_ == 16) {

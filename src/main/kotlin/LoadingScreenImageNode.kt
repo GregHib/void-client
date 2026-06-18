@@ -78,7 +78,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
                     i_1_ -= i_10_ * 2
                 }
             }
-            Class97.anInt1550 = i_3_ * i_5_ / 334
+            TerrainChunkBuilder.anInt1550 = i_3_ * i_5_ / 334
             RandomAccessFileOnDisk.anInt3047 = i_0_
             GroundDecorRenderer.anInt3643 = i_3_.toShort().toInt()
             WidgetComponentNode.anInt4656 = i_1_.toShort().toInt()
