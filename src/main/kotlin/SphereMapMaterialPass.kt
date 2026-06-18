@@ -214,7 +214,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
             anInt6319++
             if (i_3_ >= -14) return 64
             if (i_4_ == 1 || i_4_ == 3) return TextureTileRenderer.anIntArray6830!![i and 0x3]
-            return Class84.anIntArray1450!![0x3 and i]
+            return MapSceneCache.anIntArray1450!![0x3 and i]
         }
 
         @JvmStatic

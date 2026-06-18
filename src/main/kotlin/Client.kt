@@ -500,8 +500,8 @@ import NpcType.Companion.method804
 import SynthSoundGenerator.Companion.method808
 import FogState.method810
 import WaterTextureSet.Companion.method815
-import Class84.Companion.method817
-import Class84.Companion.method825
+import MapSceneCache.Companion.method817
+import MapSceneCache.Companion.method825
 import Class85.Companion.method830
 import Class88.Companion.method843
 import Class89.Companion.method851
@@ -2505,7 +2505,7 @@ class Client : GameAppletFrame() {
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                             }
-                            if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, HoverActionEntry.aSpriteStore_1813, CircleHitbox.aClass84_413)!!.method2292(84, FacingDirectionNode.aRenderer6654!!, class46.anInt789)
+                            if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, HoverActionEntry.aSpriteStore_1813, CircleHitbox.aMapSceneCache_413)!!.method2292(84, FacingDirectionNode.aRenderer6654!!, class46.anInt789)
                             method273(class46, -2835)
                             if (class46.anInt774 == 0) {
                                 method107(widgetComponents, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)

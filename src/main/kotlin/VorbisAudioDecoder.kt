@@ -388,7 +388,7 @@ class VorbisAudioDecoder private constructor(`is`: ByteArray?) : LinkedListNode(
                 }
                 val is_20_ = IntArray(i_14_)
                 val i_21_ = method2253(i_14_ - 1, -53)
-                for (i_22_ in 0..<i_14_) is_20_[i_22_] = Class84.method818(i_21_, 0, i_22_)
+                for (i_22_ in 0..<i_14_) is_20_[i_22_] = MapSceneCache.method818(i_21_, 0, i_22_)
                 if (i == 0) {
                     aFloatArray6722 = fs
                     aFloatArray6720 = fs_16_

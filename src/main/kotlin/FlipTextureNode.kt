@@ -370,7 +370,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 }
                                             }
                                         } else if (class46.anInt774 == 5) {
-                                            if (class46.anInt705 >= 0) class46.method444(bool_15_, HoverActionEntry.aSpriteStore_1813, CircleHitbox.aClass84_413)!!.method2293(0, FacingDirectionNode.aRenderer6654!!, (-35).toByte(), i_24_, class46.anInt709, i_25_, (class46.anInt835 shl 3), (class46.anInt759 shl 3), 0, class46.anInt789)
+                                            if (class46.anInt705 >= 0) class46.method444(bool_15_, HoverActionEntry.aSpriteStore_1813, CircleHitbox.aMapSceneCache_413)!!.method2293(0, FacingDirectionNode.aRenderer6654!!, (-35).toByte(), i_24_, class46.anInt709, i_25_, (class46.anInt835 shl 3), (class46.anInt759 shl 3), 0, class46.anInt789)
                                             else {
                                                 val abstractModelRenderer: AbstractModelRenderer?
                                                 if (class46.anInt812 != -1) {

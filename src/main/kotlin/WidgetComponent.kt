@@ -827,7 +827,7 @@ class WidgetComponent {
         return abstractModelRenderer
     }
 
-    fun method444(bool: Boolean, spriteStore: SpriteStore?, class84: Class84?): ParticleSystemRenderer? {
+    fun method444(bool: Boolean, spriteStore: SpriteStore?, mapSceneCache: MapSceneCache?): ParticleSystemRenderer? {
         try {
             if (bool != false) method424(122, -123, null, -111, 40, 28, -109, null, 76, 127, -66, 8, -45)
             anInt804++
@@ -835,12 +835,12 @@ class WidgetComponent {
             val l = ((this.anInt693.toLong() shl 16 and (65535L shl 16)) or ((this.anInt733.toLong() shl 32 and (65535L shl 32)) or (this.anInt674.toLong() shl 48 and (65535L shl 48))) or (this.anInt705.toLong() and 0xffffL))
             var particleSystemRenderer = (EdgeDetectTextureNode.aLruByteCache_9171!!.method583(l, 78) as ParticleSystemRenderer?)
             if (particleSystemRenderer == null) {
-                particleSystemRenderer = class84!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, spriteStore!!, this.anInt705)
+                particleSystemRenderer = mapSceneCache!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, spriteStore!!, this.anInt705)
                 EdgeDetectTextureNode.aLruByteCache_9171!!.method582(particleSystemRenderer, l, (-120).toByte())
             }
             return particleSystemRenderer
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (spriteStore != null) "{...}" else "null") + ',' + (if (class84 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (spriteStore != null) "{...}" else "null") + ',' + (if (mapSceneCache != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -958,7 +958,7 @@ class WidgetComponent {
             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1222(true)
             TheoraVideoStream.aLocTypeDefLoader_9036!!.method1410(-27995)
             ProjectionCameraTransform.aEmoteDefCache_5764!!.method2602(0)
-            CircleHitbox.aClass84_413!!.method816(false)
+            CircleHitbox.aMapSceneCache_413!!.method816(false)
             HoverActionEntry.aSpriteStore_1813!!.method302(-797644856)
             AbstractTileShape.aMapSceneDefLoader_6559!!.method1390(23)
             GraphicsOptionState.aItemDefinitionLoader_3147!!.method1283(1)

@@ -314,8 +314,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     var i_29_ = MapTileShape.aClass237_Sub1_4197!!.anInt5824
                     if (i_29_ > CompiledScriptCache.anInt4372) i_29_ = CompiledScriptCache.anInt4372
                     if (i_29_ < -1 + CompiledScriptCache.anInt4372) i_29_ = CompiledScriptCache.anInt4372 - 1
-                    if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0) Class84.method824(i_29_)
-                    else Class84.method824(0)
+                    if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0) MapSceneCache.method824(i_29_)
+                    else MapSceneCache.method824(0)
                     for (i_30_ in 0..3) {
                         var i_31_ = 0
                         while (Class367_Sub4.anInt7319 > i_31_) {

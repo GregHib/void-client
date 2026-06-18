@@ -1,7 +1,7 @@
 /* Class84 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class84 internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class MapSceneCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aLruByteCache_1449 = LruByteCache(16)
     private val aJs5Archive_1460: Js5Archive?
 
