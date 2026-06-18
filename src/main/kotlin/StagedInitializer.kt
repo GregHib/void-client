@@ -1,7 +1,7 @@
 /* Interface11 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-interface Interface11 {
+interface StagedInitializer {
     fun method45(i: Byte)
 
     fun method46(i: Int)

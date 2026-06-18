@@ -116,15 +116,15 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     var anInt7735: Int = 0
     @JvmField
     var aGlowPostProcessor_7736: GlowPostProcessor? = null
-    private val anInterface11Array7737: Array<Interface11?>
+    private val anStagedInitializerArray7737: Array<StagedInitializer?>
     private var anInt7738: Int
     private val aFrameBufferObject_7739: FrameBufferObject? = null
-    private var anInterface11_7740: Interface11? = null
-    private val anInterface11Array7741: Array<Interface11?>
+    private var anStagedInitializer_7740: StagedInitializer? = null
+    private val anStagedInitializerArray7741: Array<StagedInitializer?>
     private var anInt7742: Int
-    private val anInterface11Array7743: Array<Interface11?>
+    private val anStagedInitializerArray7743: Array<StagedInitializer?>
     private var aClass105_Sub2_7744: GlSpriteRenderer? = null
-    private var anInterface11_7745: Interface11? = null
+    private var anStagedInitializer_7745: StagedInitializer? = null
     private var anInt7746: Int
     @JvmField
     var anInt7747: Int = 0
@@ -630,7 +630,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             anInt7645 = anInt7523
         }
         if (i > 61) {
-            if (anInterface11_7740 == null) {
+            if (anStagedInitializer_7740 == null) {
                 this.anInt7688 = anInt7645
                 this.anInt7641 = anInt7523
                 method3809(true)
@@ -828,7 +828,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     override fun method3672() {
         anInt7702++
         if (this.aBoolean7820) {
-            if (anInterface11_7740 !== aFrameBufferObject_7739) throw RuntimeException()
+            if (anStagedInitializer_7740 !== aFrameBufferObject_7739) throw RuntimeException()
             aFrameBufferObject_7739!!.method1500(2983, 0)
             aFrameBufferObject_7739.method1500(2983, 8)
             method3770(-422613672, aFrameBufferObject_7739)
@@ -845,17 +845,17 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         la()
     }
 
-    fun method3751(interface11: Interface11?, i: Int) {
+    fun method3751(stagedInitializer: StagedInitializer?, i: Int) {
         try {
             anInt7548++
             if (anInt7742 >= 3) throw RuntimeException()
             val i_84_ = 67 % ((-4 - i) / 46)
-            if (anInt7742 >= 0) anInterface11Array7737[anInt7742]!!.method50(-32502)
-            anInterface11Array7737[++anInt7742] = interface11
-            anInterface11_7740 = interface11
-            anInterface11_7740!!.method47(-11421)
+            if (anInt7742 >= 0) anStagedInitializerArray7737[anInt7742]!!.method50(-32502)
+            anStagedInitializerArray7737[++anInt7742] = stagedInitializer
+            anStagedInitializer_7740 = stagedInitializer
+            anStagedInitializer_7740!!.method47(-11421)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.NG(" + (if (interface11 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.NG(" + (if (stagedInitializer != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -1244,20 +1244,20 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         if (i != 5888) method3763(-122)
     }
 
-    fun method3764(i: Int, interface11: Interface11?) {
+    fun method3764(i: Int, stagedInitializer: StagedInitializer?) {
         try {
             anInt7586++
-            if (anInt7742 < 0 || anInterface11Array7737[anInt7742] !== interface11) throw RuntimeException()
-            anInterface11Array7737[anInt7742--] = null
+            if (anInt7742 < 0 || anStagedInitializerArray7737[anInt7742] !== stagedInitializer) throw RuntimeException()
+            anStagedInitializerArray7737[anInt7742--] = null
             if (i != -17083) aClass105_Sub2_7744 = null
-            interface11!!.method50(-32502)
-            if (anInt7742 < 0) anInterface11_7740 = null
+            stagedInitializer!!.method50(-32502)
+            if (anInt7742 < 0) anStagedInitializer_7740 = null
             else {
-                anInterface11_7740 = anInterface11Array7737[anInt7742]
-                anInterface11_7740!!.method47(-11421)
+                anStagedInitializer_7740 = anStagedInitializerArray7737[anInt7742]
+                anStagedInitializer_7740!!.method47(-11421)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.FA(" + i + ',' + (if (interface11 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.FA(" + i + ',' + (if (stagedInitializer != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1456,30 +1456,30 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         }
     }
 
-    fun method3770(i: Int, interface11: Interface11?) {
+    fun method3770(i: Int, stagedInitializer: StagedInitializer?) {
         do {
             try {
                 anInt7598++
                 if (this.aBoolean7815) {
-                    method3805(8387, interface11)
-                    method3764(-17083, interface11)
+                    method3805(8387, stagedInitializer)
+                    method3764(-17083, stagedInitializer)
                 } else {
-                    if (anInt7746 < 0 || anInterface11Array7743[anInt7746] !== interface11) throw RuntimeException()
-                    anInterface11Array7743[anInt7746--] = null
-                    interface11!!.method48(46)
+                    if (anInt7746 < 0 || anStagedInitializerArray7743[anInt7746] !== stagedInitializer) throw RuntimeException()
+                    anStagedInitializerArray7743[anInt7746--] = null
+                    stagedInitializer!!.method48(46)
                     if (anInt7746 < 0) {
-                        anInterface11_7740 = null
-                        anInterface11_7745 = anInterface11_7740
+                        anStagedInitializer_7740 = null
+                        anStagedInitializer_7745 = anStagedInitializer_7740
                     } else {
-                        anInterface11_7740 = anInterface11Array7743[anInt7746]
-                        anInterface11_7745 = anInterface11_7740
-                        anInterface11_7745!!.method46(-11762)
+                        anStagedInitializer_7740 = anStagedInitializerArray7743[anInt7746]
+                        anStagedInitializer_7745 = anStagedInitializer_7740
+                        anStagedInitializer_7745!!.method46(-11762)
                     }
                 }
                 if (i == -422613672) break
                 this.anInt7788 = 30
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qo.FD(" + i + ',' + (if (interface11 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("qo.FD(" + i + ',' + (if (stagedInitializer != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -1622,23 +1622,23 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return true
     }
 
-    fun method3773(i: Int, interface11: Interface11?) {
+    fun method3773(i: Int, stagedInitializer: StagedInitializer?) {
         try {
             anInt7617++
             if (i != -1) aString7845 = null
             if (this.aBoolean7815) {
-                method3782(interface11, 327685)
-                method3751(interface11, i xor 0x4f.inv())
+                method3782(stagedInitializer, 327685)
+                method3751(stagedInitializer, i xor 0x4f.inv())
             } else {
                 if (anInt7746 >= 3) throw RuntimeException()
-                if (anInt7746 >= 0) anInterface11Array7743[anInt7746]!!.method48(-76)
-                anInterface11Array7743[++anInt7746] = interface11
-                anInterface11_7740 = anInterface11Array7743[++anInt7746]
-                anInterface11_7745 = anInterface11_7740
-                anInterface11_7745!!.method46(-11762)
+                if (anInt7746 >= 0) anStagedInitializerArray7743[anInt7746]!!.method48(-76)
+                anStagedInitializerArray7743[++anInt7746] = stagedInitializer
+                anStagedInitializer_7740 = anStagedInitializerArray7743[++anInt7746]
+                anStagedInitializer_7745 = anStagedInitializer_7740
+                anStagedInitializer_7745!!.method46(-11762)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.JB(" + i + ',' + (if (interface11 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.JB(" + i + ',' + (if (stagedInitializer != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2040,17 +2040,17 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         throw IllegalArgumentException()
     }
 
-    fun method3782(interface11: Interface11?, i: Int) {
+    fun method3782(stagedInitializer: StagedInitializer?, i: Int) {
         try {
             anInt7640++
             if (anInt7738 >= 3) throw RuntimeException()
             if (i != 327685) method3688(-94, -9, -90, -108, 41, -52, 70)
-            if (anInt7738 >= 0) anInterface11Array7741[anInt7738]!!.method45((-47).toByte())
-            anInterface11_7745 = interface11
-            anInterface11Array7741[++anInt7738] = interface11
-            anInterface11_7745!!.method49(-27141)
+            if (anInt7738 >= 0) anStagedInitializerArray7741[anInt7738]!!.method45((-47).toByte())
+            anStagedInitializer_7745 = stagedInitializer
+            anStagedInitializerArray7741[++anInt7738] = stagedInitializer
+            anStagedInitializer_7745!!.method49(-27141)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.HD(" + (if (interface11 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.HD(" + (if (stagedInitializer != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -2755,21 +2755,21 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7651++
     }
 
-    fun method3805(i: Int, interface11: Interface11?) {
+    fun method3805(i: Int, stagedInitializer: StagedInitializer?) {
         try {
             anInt7697++
-            if (anInt7738 < 0 || interface11 !== anInterface11Array7741[anInt7738]) throw RuntimeException()
-            anInterface11Array7741[anInt7738--] = null
-            interface11!!.method45((-47).toByte())
+            if (anInt7738 < 0 || stagedInitializer !== anStagedInitializerArray7741[anInt7738]) throw RuntimeException()
+            anStagedInitializerArray7741[anInt7738--] = null
+            stagedInitializer!!.method45((-47).toByte())
             if (i == 8387) {
-                if (anInt7738 < 0) anInterface11_7745 = null
+                if (anInt7738 < 0) anStagedInitializer_7745 = null
                 else {
-                    anInterface11_7745 = anInterface11Array7741[anInt7738]
-                    anInterface11_7745!!.method49(-27141)
+                    anStagedInitializer_7745 = anStagedInitializerArray7741[anInt7738]
+                    anStagedInitializer_7745!!.method49(-27141)
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.CA(" + i + ',' + (if (interface11 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.CA(" + i + ',' + (if (stagedInitializer != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2947,11 +2947,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         aBoolean7734 = false
         this.anInt7733 = 8
         aNodeDeque_7732 = NodeDeque()
-        anInterface11Array7737 = arrayOfNulls<Interface11>(4)
+        anStagedInitializerArray7737 = arrayOfNulls<StagedInitializer>(4)
         anInt7738 = -1
         anInt7742 = -1
-        anInterface11Array7741 = arrayOfNulls<Interface11>(4)
-        anInterface11Array7743 = arrayOfNulls<Interface11>(4)
+        anStagedInitializerArray7741 = arrayOfNulls<StagedInitializer>(4)
+        anStagedInitializerArray7743 = arrayOfNulls<StagedInitializer>(4)
         anInt7746 = -1
         LinkedNodeListIterator()
         Hashtable(16)
