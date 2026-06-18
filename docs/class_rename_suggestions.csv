@@ -561,7 +561,7 @@
 "Class362","Tooltip","Static object: rendering of bordered text box via ha","Kotlin object; draws hover/tooltip boxes"
 "Class363","MapElementManager","Static object: manages Class243 arrays, minimap/loc icons","Kotlin object; rebuilds map-element/minimap collections"
 "Class364","NamedIdRecord","Instance: String + int; toString throws","Id+name pair; static cache flush helper"
-"Class365","FriendChatMember","Instance: two names, two ints, long (id/world/rank)","Friends/clan member record"
+"Class365","RenderType","Instance: two names, two ints, long (id/world/rank)","Friends/clan member record"
 "Class366","D3dVertexBuffer","Implements Interface5_Impl1; wraps IDirect3DVertexBuffer, lock/unlock/upload","Direct3D vertex buffer wrapper"
 "Class367","AbstractRenderPass","Abstract; holds ha_Sub3 device; abstract begin/end/setup render methods","Base of render-pass/material-effect hierarchy (GL & D3D)"
 "Class367_Sub1","NullRenderPass","All overrides empty/no-op","No-op variant of Class367; disabled effect pass"
