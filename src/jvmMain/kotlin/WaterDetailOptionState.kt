@@ -89,13 +89,13 @@ class WaterDetailOptionState : GraphicsOptionState {
         fun method1781(i: Int, i_1_: Int, i_2_: Int): Int {
             anInt5983++
             if (AbstractFrameBufferSurface.anInt6923 == -1) return 1
-            if (i != IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) {
-                GlTexture2DRegion.method1971(-2, LocalizedText.aLocalizedText_3496!!.method2063(AnimationFrameDefinition.anInt6967, 544), true, i)
-                if (i != IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) return -1
+            if (i != IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) {
+                GlTexture2DRegion.method1971(-2, LocalizedText.aLocalizedText_3496!!.method2063(ChatCommandProcessor.anInt6967, 544), true, i)
+                if (i != IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) return -1
             }
             try {
                 val dimension = ParticleSystemRenderer.aCanvas3869!!.getSize()
-                Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3496!!.method2063(AnimationFrameDefinition.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
+                Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3496!!.method2063(ChatCommandProcessor.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
                 val class124 = ParticleConfigParser.method2277(0, RasterSprite.aJs5Archive_5207!!, AbstractFrameBufferSurface.anInt6923, -1)
                 val l = GameClock.method599(-88)
                 FacingDirectionNode.aRenderer6654!!.la()

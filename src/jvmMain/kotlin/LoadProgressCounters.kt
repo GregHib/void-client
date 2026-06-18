@@ -27,6 +27,7 @@ class LoadProgressCounters {
         var anInt2450: Int = 0
         var anInt2452: Int = 0
         var anInt2453: Int = 0
+        var aLong6966: Long = 0L
         @JvmStatic
         fun method1372(i: Int) {
             TextureLoadExceptionStatics.anInt4596 = i
@@ -39,7 +40,7 @@ class LoadProgressCounters {
             } else {
                 val class348_sub49 = ByteBuffer(method878((MapLabelMenuEntry.method1039((NullOggStream.aString9043!!), true)), -125))
                 l = class348_sub49.readLong(-456577760)
-                AnimationFrameDefinition.aLong6966 = class348_sub49.readLong(-456577760)
+                aLong6966 = class348_sub49.readLong(-456577760)
             }
             LocalPlayerState.method1138(method313(l, -100), true, "", (-115).toByte())
         }

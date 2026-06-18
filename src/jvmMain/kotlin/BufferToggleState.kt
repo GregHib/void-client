@@ -36,7 +36,7 @@ class BufferToggleState internal constructor(var aBoolean3709: Boolean) {
         @JvmStatic
         fun method2196(i: Byte) {
             NoOpGraphicsOptionState.anInt6043 = (GlCubemapLightPass.anInt7319.toDouble() * 34.46).toInt()
-            AnimationFrameDefinition.anInt6964 = 200
+            TextureDefinitionCache.anInt6964 = 200
             anInt3716++
             if (i.toInt() == -9) {
                 NoOpGraphicsOptionState.anInt6043 = NoOpGraphicsOptionState.anInt6043 shl 2

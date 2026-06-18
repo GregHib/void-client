@@ -189,7 +189,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
             anInt7310++
             val i_16_ = if (bool) 1.toByte() else (TextureQualityOptionState.anInt6006 and 0xff).toByte()
             if (i_16_ == RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_13_]!![i]) return false
-            if (((AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_13_]!![i]).toInt() and 0x4) == 0) return false
+            if (((GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_13_]!![i]).toInt() and 0x4) == 0) return false
             var i_17_ = i_14_
             var i_18_ = 0
             PcmStreamBuffer.anIntArray8862!![i_17_] = i_13_
@@ -203,12 +203,12 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                 val i_23_ = ((0xff5347 and ClientException.anIntArray110!![i_18_]) shr 16)
                 i_18_ = i_18_ + 1 and 0xfff
                 var bool_24_ = false
-                if ((0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0) bool_24_ = true
+                if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0) bool_24_ = true
                 var bool_25_ = false
                 if (sceneCollisionEntries != null) {
                     var i_26_ = CompiledScriptCache.anInt4372 + 1
                     while_223_@ while ( /**/i_26_ <= 3) {
-                        if (sceneCollisionEntries[i_26_] != null && (0x8 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![i_26_]!![i_19_]!![i_22_]).toInt()) == 0) {
+                        if (sceneCollisionEntries[i_26_] != null && (0x8 and (GraphicsOptionState.aByteArrayArrayArray6962!![i_26_]!![i_19_]!![i_22_]).toInt()) == 0) {
                             if (bool_24_ && sceneCollisionEntries[i_26_]!![i_19_]!![i_22_] != null) {
                                 if ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406) != null) {
                                     val i_27_ = TextureAtlasState.method3492(i_20_, 226)
@@ -295,7 +295,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                         RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_] = i_16_
                     }
                     if (++i_22_ < RangeThresholdTextureNode.anInt9109) {
-                        if (i_19_ - 1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![i_22_]) && ((AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![-1 + i_22_]).toInt()) == 0) {
+                        if (i_19_ - 1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![i_22_]) && ((GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![-1 + i_22_]).toInt()) == 0) {
                             PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(1375731712, BoundsConstraintEntry.method2057(i_19_ + -1, 1179648)))
                             ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 1245184)
                             RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![i_22_] = i_16_
@@ -307,7 +307,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                             RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_] = i_16_
                             i_17_ = i_17_ + 1 and 0xfff
                         }
-                        if (1 + i_19_ < anInt7319 && ((RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ + 1]!![i_22_]) != i_16_) && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![1 + i_19_]!![i_22_ + -1]).toInt()) == 0) {
+                        if (1 + i_19_ < anInt7319 && ((RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ + 1]!![i_22_]) != i_16_) && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![1 + i_19_]!![i_22_ + -1]).toInt()) == 0) {
                             PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(-1845493760, BoundsConstraintEntry.method2057(1 + i_19_, 5373952)))
                             ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(5439488, i_22_)
                             i_17_ = 1 + i_17_ and 0xfff
@@ -322,7 +322,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                         RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
                     }
                     if (--i_22_ >= 0) {
-                        if (i_19_ + -1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_]) && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![1 + i_22_]).toInt()) == 0) {
+                        if (i_19_ + -1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_]) && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![1 + i_22_]).toInt()) == 0) {
                             PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(301989888, BoundsConstraintEntry.method2057(13762560, -1 + i_19_)))
                             ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 13828096)
                             RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_] = i_16_
@@ -334,7 +334,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                             RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_] = i_16_
                             i_17_ = 0xfff and i_17_ - -1
                         }
-                        if (anInt7319 > 1 + i_19_ && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![1 + i_19_]!![i_22_]) != i_16_ && ((AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && ((AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_ + 1]!![i_22_ + 1]).toInt() and 0x4) == 0) {
+                        if (anInt7319 > 1 + i_19_ && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![1 + i_19_]!![i_22_]) != i_16_ && ((GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && ((GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_ + 1]!![i_22_ + 1]).toInt() and 0x4) == 0) {
                             PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(-771751936, BoundsConstraintEntry.method2057(i_19_ - -1, 9568256)))
                             ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 9633792)
                             RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_

@@ -40,7 +40,7 @@ class GlCubeMapTexture internal constructor(glRenderDevice: GlRenderDevice?, i: 
                 while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-122).toByte(), 1L)
                 if (class144.anInt1997 == 1) {
                     randomAccessFileOnDisk = class144.anObject1998 as RandomAccessFileOnDisk?
-                    val class348_sub49 = IntHashSet.aClass348_Sub51_3959!!.method3427(24)
+                    val class348_sub49 = IntHashSetStatics.aClass348_Sub51_3959!!.method3427(24)
                     randomAccessFileOnDisk!!.method1658(114.toByte(), 0, (class348_sub49.anInt7197), (class348_sub49.aByteArray7154))
                 }
             } catch (exception: Exception) {

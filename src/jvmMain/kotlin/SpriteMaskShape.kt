@@ -457,7 +457,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 if (i_77_ == 1) {
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, -1)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, -1)
-                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), ResourceProvider.aFloat3938.toInt())
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), CameraDistanceOptionState.aFloat3938.toInt())
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 57)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, OpenGlRenderNode.anInt10483)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, FloatBuffer.anInt9750)
@@ -823,7 +823,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             SpriteArchiveLoader.anInt385 = i_73_
                             FogOptionState.anInt6048 = 2
                             LinkedListNodeStatics.anInt4292 = 0
-                            IntHashSet.anInt3966++
+                            IntHashSetStatics.anInt3966++
                             JagGlToolkitFactory.anInt1534 = i_72_
                             val class348_sub47 = method2148((FloatBuffer.aFontMetaRef_9749), (TheoraVideoStream.aIsaacCipher_9029), -81)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
@@ -839,7 +839,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             LinkedListNodeStatics.anInt4292 = 0
                             FogOptionState.anInt6048 = 2
                             JagGlToolkitFactory.anInt1534 = i_72_
-                            val class348_sub47 = method2148((TextureMaterialGroup.aFontMetaRef_9679), (TheoraVideoStream.aIsaacCipher_9029), -98)
+                            val class348_sub47 = method2148((NpcType.aFontMetaRef_9679), (TheoraVideoStream.aIsaacCipher_9029), -98)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-83).toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -128)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, ArbVertexProgram.regionTileX + i_74_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_75_ + RegionMapDecoder.regionTileY, 3.toByte())

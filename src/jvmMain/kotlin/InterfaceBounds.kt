@@ -4,7 +4,6 @@ import SocketGameConnection.Companion.method1707
 import DisplayModeOptionState.Companion.method1828
 import ModelDataCache.method297
 import CompassSmoother.Companion.method2017
-import IntHashSet.Companion.method2368
 import SceneLinkedListNode.Companion.method2375
 import WorldMapIconLabel.Companion.method3573
 import MapSceneCache.Companion.method821
@@ -103,7 +102,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 ScrollingWidgetComponentNode.anInt8388 = 0
             }
             NamedIdRecord.method3517(83)
-            method2368(-1)
+            IntHashSetStatics.method2368(-1)
             method1828(87)
             if (i > 53) {
                 method297(false)

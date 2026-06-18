@@ -40,7 +40,7 @@ class ClickFeedbackTask internal constructor(private val aRsaVarbitHandler_4671:
             var i_0_ = i_0_
             anInt4664++
             if (i_2_.toInt() != -98) method1354(69.toByte())
-            i_0_ = (i_0_ * IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) shr 8)
+            i_0_ = (i_0_ * IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) shr 8)
             if (i_0_ != 0 && i != -1) {
                 if (!RgbColorPalette.aBoolean1236 && SlotBinding.anInt3428 != -1 && method1296(true) && !FileIoUtil.method2605((-99).toByte())) {
                     UnusedToStringStub.aClass348_Sub16_Sub3_2718 = method943(false)

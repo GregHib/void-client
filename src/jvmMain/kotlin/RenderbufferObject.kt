@@ -140,7 +140,7 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             OverlayColorTable.aClass318_Sub1Array1754 = arrayOfNulls<SceneEntity>(2)
             RemoveRoofsOptionState.aClass318_Sub1Array6066 = arrayOfNulls<SceneEntity>(10000)
             ProportionalScrollbarComponent.anInt9930 = 0
-            CutsceneSequenceData.aClass318_Sub1Array3737 = arrayOfNulls<SceneEntity>(5000)
+            GlTexture3D.aClass318_Sub1Array3737 = arrayOfNulls<SceneEntity>(5000)
             LoadingScreenImageNode.anInt9504 = 0
             ModelDataCache.aClass318_Sub1_Sub3Array357 = arrayOfNulls<GroundDecorEntity>(5000)
             DrawListState.anInt1477 = 0

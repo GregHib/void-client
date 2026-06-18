@@ -80,7 +80,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
                     }
                     return -i_3_ + i_2_
                 }
-                if (i == 2) return (RemoveRoofsOptionState.method1811(9152, (class110_sub1_0_!!.method1038(false).aString3663), AnimationFrameDefinition.anInt6967, (class110_sub1!!.method1038(false).aString3663)))
+                if (i == 2) return (RemoveRoofsOptionState.method1811(9152, (class110_sub1_0_!!.method1038(false).aString3663), ChatCommandProcessor.anInt6967, (class110_sub1!!.method1038(false).aString3663)))
                 if (i == 3) {
                     if (class110_sub1!!.aString5787 == "-") {
                         if (class110_sub1_0_!!.aString5787 == "-") return 0
@@ -90,7 +90,7 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
                         if (!bool) return -1
                         return 1
                     }
-                    return (RemoveRoofsOptionState.method1811(9152, class110_sub1_0_.aString5787, AnimationFrameDefinition.anInt6967, class110_sub1.aString5787))
+                    return (RemoveRoofsOptionState.method1811(9152, class110_sub1_0_.aString5787, ChatCommandProcessor.anInt6967, class110_sub1.aString5787))
                 }
                 if (i == 4) {
                     if (!class110_sub1!!.method1033(-85)) {

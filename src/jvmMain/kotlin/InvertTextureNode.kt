@@ -94,12 +94,14 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
             aShortArray9422 = null
         }
 
+        var aLong6963: Long = 0L
+
         @JvmStatic
         fun method3134(i: Int) {
             anInt9419++
             if ((TexGenMaterialPass.anInt6248.inv()) <= i) {
                 val l = GameClock.method599(i xor 0x3c)
-                TexGenMaterialPass.anInt6248 -= (-AnimationFrameDefinition.aLong6963 + l).toInt()
+                TexGenMaterialPass.anInt6248 -= (-aLong6963 + l).toInt()
                 if (TexGenMaterialPass.anInt6248 > 0) {
                     val i_4_ = ((TexGenMaterialPass.anInt6248 shl 8) / FrameBufferObject.anInt4889)
                     val i_5_ = -i_4_ + 255
@@ -128,7 +130,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
                     NativeIndexBuffer.anInt4703 = WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2540
                     KeyboardLayoutConfig.aFloat2137 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2547
                 }
-                AnimationFrameDefinition.aLong6963 = l
+                aLong6963 = l
             }
         }
 

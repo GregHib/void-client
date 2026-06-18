@@ -189,7 +189,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
                 this.x = i_21_
                 aByte9980 = i_24_.toByte()
                 aShort9991 = npcConfig.anInt941.toShort()
-                aBoolean9988 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean9983 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
+                aBoolean9988 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean9983 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 var i_26_ = 2048
                 if (aBoolean9989) i_26_ = i_26_ or 0x10000
                 val class2 = method2401(var_renderer, i_26_, aBoolean9988, 22)

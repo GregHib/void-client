@@ -91,10 +91,16 @@ abstract class GraphicsOptionState {
             aItemDefinitionLoader_3147 = null
             if (i < 13) method1709(-99)
         }
+        var aByteArrayArrayArray6962: Array<Array<ByteArray?>?>? = null
+
+        fun method3024(i: Int) {
+            RegionSceneShifter.aGzipDecompressor_6955 = null
+            aByteArrayArrayArray6962 = null
+        }
 
         @JvmStatic
         fun method1717(i: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
-            AnimationFrameDefinition.aByteArrayArrayArray6962 = Array<Array<ByteArray?>?>(i_6_) { Array<ByteArray?>(i_5_) { ByteArray(i_4_) } }
+            aByteArrayArrayArray6962 = Array<Array<ByteArray?>?>(i_6_) { Array<ByteArray?>(i_5_) { ByteArray(i_4_) } }
             if (i != 19278) method1717(35, 126, -83, 85)
             anInt3134++
         }

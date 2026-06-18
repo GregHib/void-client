@@ -96,9 +96,9 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         }
         val is_15_: ByteArray?
         try {
-            is_15_ = RegionSceneShifter.method3158(is_14_, -120)
+            is_15_ = CutsceneSequenceData.method3158(is_14_, -120)
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("T3 - " + (`is` != null) + "," + i_9_ + "," + is_14_.size + "," + GrayscaleNoiseTexture.method554(5126, is_14_.size, is_14_) + "," + GrayscaleNoiseTexture.method554(5126, -2 + is_14_.size, is_14_) + "," + aCutsceneSequenceData_629!!.anIntArray3729[i_9_] + "," + aCutsceneSequenceData_629!!.anInt3719))
+            throw TextureLoadException.method2929(runtimeexception, ("T3 - " + (`is` != null) + "," + i_9_ + "," + is_14_.size + "," + CutsceneSequenceData.method554(5126, is_14_.size, is_14_) + "," + CutsceneSequenceData.method554(5126, -2 + is_14_.size, is_14_) + "," + aCutsceneSequenceData_629!!.anIntArray3729[i_9_] + "," + aCutsceneSequenceData_629!!.anInt3719))
         }
         if (aBoolean655) anObjectArray656!![i_9_] = null
         if (i_8_ >= -17) method415(70.toByte(), -7)

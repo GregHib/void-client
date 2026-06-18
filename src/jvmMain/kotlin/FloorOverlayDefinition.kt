@@ -64,6 +64,8 @@ class FloorOverlayDefinition {
             if (i != 1) method501(-15)
         }
 
+        var anInt3941: Int = 0
+        var anInt3939: Int = 0
         fun method503(i: Int, i_2_: Int, i_3_: Byte, i_4_: Int, i_5_: Int) {
             anInt968++
             val i_6_ = CompletedResourceRequest.anInt10463
@@ -76,14 +78,14 @@ class FloorOverlayDefinition {
                         }
                     } else return
                     ModelVertexColorBuffer.anInt6585 = i
-                    ResourceProvider.anInt3941 = i_2_
+                    anInt3941 = i_2_
                     GraphicsOptionState.anInt3142 = i_5_
                     CompletedResourceRequest.anInt10463 = 2
-                    ResourceProvider.anInt3939 = i_4_
+                    anInt3939 = i_4_
                     return
                 } while (false)
-                if (ResourceProvider.anInt3939 < i_4_) ResourceProvider.anInt3939 = i_4_
-                if (ResourceProvider.anInt3941 > i_2_) ResourceProvider.anInt3941 = i_2_
+                if (anInt3939 < i_4_) anInt3939 = i_4_
+                if (anInt3941 > i_2_) anInt3941 = i_2_
                 if (GraphicsOptionState.anInt3142 > i_5_) GraphicsOptionState.anInt3142 = i_5_
                 if (i > ModelVertexColorBuffer.anInt6585) ModelVertexColorBuffer.anInt6585 = i
                 return

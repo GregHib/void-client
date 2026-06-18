@@ -38,7 +38,7 @@ class AsyncTaskHandle internal constructor(var aBoolean2574: Boolean) {
             }
             val i_0_: Int
             val i_1_: Int
-            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) {
+            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) {
                 i_0_ = 0
                 i_1_ = 3
             } else {

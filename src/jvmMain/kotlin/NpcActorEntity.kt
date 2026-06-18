@@ -29,7 +29,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
                 this.y = i_3_
                 aByte10079 = i_4_.toByte()
                 aByte10062 = i_5_.toByte()
-                aBoolean10064 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10066 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
+                aBoolean10064 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10066 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 var i_7_ = 2048
                 if (aBoolean10090) i_7_ = i_7_ or 0x10000
                 val class2 = method2481(aBoolean10064, i_7_, -4, var_renderer)

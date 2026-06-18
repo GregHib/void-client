@@ -235,7 +235,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
                 if (aCutsceneSequenceData_6342!!.anIntArray3729[i] != i_11_) throw RuntimeException()
                 if (aCutsceneSequenceData_6342!!.aByteArrayArray3730 != null && (aCutsceneSequenceData_6342!!.aByteArrayArray3730!![i] != null)) {
                     val is_12_ = aCutsceneSequenceData_6342!!.aByteArrayArray3730!![i]!!
-                    val is_13_ = HashTileShape.method2730(i_9_.toInt() xor 0x1196, 0, `is`, `is`.size + -2)
+                    val is_13_ = CutsceneSequenceData.method2730(i_9_.toInt() xor 0x1196, 0, `is`, `is`.size + -2)
                     for (i_14_ in 0..63) {
                         if (is_12_[i_14_] != is_13_[i_14_]) throw RuntimeException()
                     }
@@ -271,7 +271,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
             if (i_15_ != aCutsceneSequenceData_6342!!.anIntArray3729[i]) throw RuntimeException()
             if (aCutsceneSequenceData_6342!!.aByteArrayArray3730 != null && (aCutsceneSequenceData_6342!!.aByteArrayArray3730!![i] != null)) {
                 val is_16_ = aCutsceneSequenceData_6342!!.aByteArrayArray3730!![i]!!
-                val is_17_ = HashTileShape.method2730(i_9_ + 4502, 0, `is`, `is`.size - 2)
+                val is_17_ = CutsceneSequenceData.method2730(i_9_ + 4502, 0, `is`, `is`.size - 2)
                 for (i_18_ in 0..63) {
                     if (is_17_[i_18_] != is_16_[i_18_]) throw RuntimeException()
                 }
@@ -416,9 +416,9 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
         fun method2347(i: Byte): String? {
             if (i.toInt() != -119) return null
             anInt6343++
-            if (ScrollbarComponent.aBoolean8335 || IntHashSet.aClass348_Sub42_Sub12_3963 == null) return ""
-            if (((IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9601) == null || IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9601!!.length == 0) && (IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9595) != null && IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9595!!.length > 0) return (IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9595)
-            return (IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9601)
+            if (ScrollbarComponent.aBoolean8335 || IntHashSetStatics.aClass348_Sub42_Sub12_3963 == null) return ""
+            if (((IntHashSetStatics.aClass348_Sub42_Sub12_3963!!.aString9601) == null || IntHashSetStatics.aClass348_Sub42_Sub12_3963!!.aString9601!!.length == 0) && (IntHashSetStatics.aClass348_Sub42_Sub12_3963!!.aString9595) != null && IntHashSetStatics.aClass348_Sub42_Sub12_3963!!.aString9595!!.length > 0) return (IntHashSetStatics.aClass348_Sub42_Sub12_3963!!.aString9595)
+            return (IntHashSetStatics.aClass348_Sub42_Sub12_3963!!.aString9601)
         }
 
         @JvmStatic
@@ -447,8 +447,8 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
                     PlayerUpdateDecoder.method1140(58)
                 }
             }
-            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) != 0) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
+            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) != 0) {
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
                 GlShadowRenderPass.method3553(false, 120.toByte(), 0)
             }
             GlCubeMapTexture.method243(37)

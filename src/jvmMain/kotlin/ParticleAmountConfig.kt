@@ -37,9 +37,9 @@ class ParticleAmountConfig {
                 var i_14_ = 0
                 var i_15_ = 0
                 if (GrayscaleNoiseTexture.aBoolean5300) {
-                    i_11_ = ResourceProvider.anInt3941
+                    i_11_ = FloorOverlayDefinition.anInt3941
                     i_15_ = CompletedResourceRequest.anInt10463
-                    i_13_ = ResourceProvider.anInt3939
+                    i_13_ = FloorOverlayDefinition.anInt3939
                     i_12_ = GraphicsOptionState.anInt3142
                     i_14_ = ModelVertexColorBuffer.anInt6585
                     CompletedResourceRequest.anInt10463 = 1
@@ -48,12 +48,12 @@ class ParticleAmountConfig {
                 else method3064(i_9_, i, i_4_ < 0, i_5_, i_3_, i_4_, i_6_, false, (WorldMapTextLabel.aWidgetComponentArrayArray8584!![i_2_]), -1, i_7_)
                 if (i_8_ <= 58) anInt2127 = -84
                 if (GrayscaleNoiseTexture.aBoolean5300) {
-                    if (i_4_ >= 0 && CompletedResourceRequest.anInt10463 == 2) MapTileShape.method2663(-5590, ResourceProvider.anInt3941, ResourceProvider.anInt3939, GraphicsOptionState.anInt3142, ModelVertexColorBuffer.anInt6585)
+                    if (i_4_ >= 0 && CompletedResourceRequest.anInt10463 == 2) MapTileShape.method2663(-5590, FloorOverlayDefinition.anInt3941, FloorOverlayDefinition.anInt3939, GraphicsOptionState.anInt3142, ModelVertexColorBuffer.anInt6585)
                     CompletedResourceRequest.anInt10463 = i_15_
-                    ResourceProvider.anInt3939 = i_13_
+                    FloorOverlayDefinition.anInt3939 = i_13_
                     GraphicsOptionState.anInt3142 = i_12_
                     ModelVertexColorBuffer.anInt6585 = i_14_
-                    ResourceProvider.anInt3941 = i_11_
+                    FloorOverlayDefinition.anInt3941 = i_11_
                 }
             } else if (i_4_ == -1) {
                 for (i_10_ in 0..99) GzipDecompressor.Companion.aBooleanArray2076!![i_10_] = true

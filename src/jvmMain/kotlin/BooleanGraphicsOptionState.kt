@@ -95,7 +95,7 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
                     }
                     i_4_++
                 }
-                if (!bool) method544((LocalizedText.aLocalizedText_3504!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + string, false, 4)
+                if (!bool) method544((LocalizedText.aLocalizedText_3504!!.method2063(ChatCommandProcessor.anInt6967, 544)) + string, false, 4)
                 if (RenderNodeStatics.aBoolean9722) TileRenderState.method2678(-2049)
             }
         }

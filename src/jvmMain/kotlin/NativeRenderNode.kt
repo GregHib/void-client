@@ -384,7 +384,7 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
         @JvmStatic
         fun method3290(i: Int) {
             if (i < 30) aNodeDeque_10479 = null
-            method131(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub5_7240!!.method1739(-32350) == 1, 2, true, 22050)
+            method131(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub5_7240!!.method1739(-32350) == 1, 2, true, 22050)
             anInt10470++
             AbstractProceduralTextureNode.aSoundChannelMixer_7042 = TextureHandle.method1439(22050, VorbisOggDecoder.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 0, 7)
             ParticleEmitterListNode.method3273(true, -114, NpcCountAccessor.method1326(null, 9))

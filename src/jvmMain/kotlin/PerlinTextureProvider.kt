@@ -46,18 +46,18 @@ class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
                 i_32_ = i_32_ and i_8_
                 i_33_ = i_33_ and i_8_
                 val f_36_ = WidgetRedrawRegion.method2684(i_4_ xor 0x7, f_34_)
-                fs[i_2_++] = f_3_ * (ResourceProvider.method2337(
-                    (ResourceProvider.method2337(
-                        (ResourceProvider.method2337((GlBufferObject.method2119(f_24_, NpcSummaryDefinition.method1166((anIntArray5804[i_26_ + i_32_]), 7), f_15_, -70, f_35_)), true, (GlBufferObject.method2119(f_24_, NpcSummaryDefinition.method1166(7, (anIntArray5804[i_33_ - -i_26_])), f_15_, -73, f_34_)), f_36_)),
+                fs[i_2_++] = f_3_ * (method2337(
+                    (method2337(
+                        (method2337((GlBufferObject.method2119(f_24_, NpcSummaryDefinition.method1166((anIntArray5804[i_26_ + i_32_]), 7), f_15_, -70, f_35_)), true, (GlBufferObject.method2119(f_24_, NpcSummaryDefinition.method1166(7, (anIntArray5804[i_33_ - -i_26_])), f_15_, -73, f_34_)), f_36_)),
                         true,
-                        (ResourceProvider.method2337((GlBufferObject.method2119(f_23_, NpcSummaryDefinition.method1166(7, (anIntArray5804[i_32_ + i_27_])), f_15_, -75, f_35_)), true, (GlBufferObject.method2119(f_23_, NpcSummaryDefinition.method1166((anIntArray5804[i_27_ + i_33_]), 7), f_15_, -91, f_34_)), f_36_)),
+                        (method2337((GlBufferObject.method2119(f_23_, NpcSummaryDefinition.method1166(7, (anIntArray5804[i_32_ + i_27_])), f_15_, -75, f_35_)), true, (GlBufferObject.method2119(f_23_, NpcSummaryDefinition.method1166((anIntArray5804[i_27_ + i_33_]), 7), f_15_, -91, f_34_)), f_36_)),
                         f_25_
                     )),
                     true,
-                    (ResourceProvider.method2337(
-                        (ResourceProvider.method2337((GlBufferObject.method2119(f_24_, NpcSummaryDefinition.method1166((anIntArray5804[i_28_ + i_32_]), 7), f_14_, -72, f_35_)), true, (GlBufferObject.method2119(f_24_, NpcSummaryDefinition.method1166((anIntArray5804[i_28_ + i_33_]), 7), f_14_, -75, f_34_)), f_36_)),
+                    (method2337(
+                        (method2337((GlBufferObject.method2119(f_24_, NpcSummaryDefinition.method1166((anIntArray5804[i_28_ + i_32_]), 7), f_14_, -72, f_35_)), true, (GlBufferObject.method2119(f_24_, NpcSummaryDefinition.method1166((anIntArray5804[i_28_ + i_33_]), 7), f_14_, -75, f_34_)), f_36_)),
                         true,
-                        (ResourceProvider.method2337((GlBufferObject.method2119(f_23_, NpcSummaryDefinition.method1166((anIntArray5804[i_29_ + i_32_]), 7), f_14_, -100, f_35_)), true, (GlBufferObject.method2119(f_23_, NpcSummaryDefinition.method1166((anIntArray5804[i_29_ + i_33_]), 7), f_14_, -72, f_34_)), f_36_)),
+                        (method2337((GlBufferObject.method2119(f_23_, NpcSummaryDefinition.method1166((anIntArray5804[i_29_ + i_32_]), 7), f_14_, -100, f_35_)), true, (GlBufferObject.method2119(f_23_, NpcSummaryDefinition.method1166((anIntArray5804[i_29_ + i_33_]), 7), f_14_, -72, f_34_)), f_36_)),
                         f_25_
                     )),
                     f_16_
@@ -188,6 +188,12 @@ class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
                 i_51_ = i_51_ shr 1
                 i_52_ = i_52_ shr 1
             }
+        }
+
+        var anInt3942: Int = 0
+        fun method2337(f: Float, bool: Boolean, f_4_: Float, f_5_: Float): Float {
+            anInt3942++
+            return f + (-f + f_4_) * f_5_
         }
     }
 }

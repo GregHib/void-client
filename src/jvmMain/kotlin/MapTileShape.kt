@@ -3,6 +3,8 @@ import ConfigFlagUtil.Companion.method1916
 import Font.Companion.method2570
 import RegionTileNode.Companion.method2772
 import ChatCommandProcessor.method703
+import ParticleDetailOptionState.Companion.method1796
+import SpriteComponent.Companion.method202
 
 /* Class338 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -71,10 +73,10 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
             val class46 = method2570(i_2_ + 1512932718, i_0_)
             if (class46 != null) method1916(-9343, class46)
             if (SpriteRenderable.aWidgetComponent_4730 != null) {
-                ConfigFlagUtil.method1916(-9343, SpriteRenderable.aWidgetComponent_4730!!)
+                method1916(-9343, SpriteRenderable.aWidgetComponent_4730!!)
                 SpriteRenderable.aWidgetComponent_4730 = null
             }
-            TextureMaterialGroup.method3270(120.toByte())
+            method3270(120.toByte())
             if (class46 != null) method1913(!bool, i_2_ + -104, class46)
             if (!bool) method703(i)
             if (!bool && RenderNodeStatics.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNodeStatics.anInt9721, 1)
@@ -111,6 +113,16 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
                     }
                 }
             }
+        }
+        var anInt9680: Int = 0
+
+        fun method3270(i: Byte) {
+            var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as ContactEntry?)
+            while (class348_sub42_sub12 != null) {
+                if (method1796(69, class348_sub42_sub12.anInt9608)) method202(6, class348_sub42_sub12)
+                class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(115.toByte()) as ContactEntry?
+            }
+            anInt9680++
         }
     }
 }

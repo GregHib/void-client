@@ -57,7 +57,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
                 aBoolean10017 = bool
                 aBoolean10019 = bool_10_
                 this.aByte6376 = i_0_.toByte()
-                aBoolean10003 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10017 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
+                aBoolean10003 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10017 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 var i_11_ = 2048
                 if (aBoolean10019) i_11_ = i_11_ or 0x10000
                 val class2 = method2417(0, var_renderer, i_11_, aBoolean10003)

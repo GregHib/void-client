@@ -86,7 +86,7 @@ class FixedFunctionMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), LocTypeDefinition.anInt4017)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), HardCacheEntryReference.anInt10432)
             if (i != -24498) aStringArray6205 = null
-            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350))
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350))
             InterfaceComponentGroup.method3243(-101, class348_sub47)
         }
 

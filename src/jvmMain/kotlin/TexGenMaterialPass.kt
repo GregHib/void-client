@@ -142,7 +142,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, water
         fun method2158(i: Byte) {
             anInt6256++
             var i_0_ = 0
-            if (IntHashSet.aClass348_Sub51_3959 != null) i_0_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1818(-32350)
+            if (IntHashSetStatics.aClass348_Sub51_3959 != null) i_0_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1818(-32350)
             if (i.toInt() == 56) {
                 if (i_0_ == 2) {
                     val i_1_ = (min(SocketFactory.anInt3473, 800))
@@ -167,6 +167,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, water
             }
         }
 
+        var anInt3739: Int = 0
         @JvmStatic
         fun method2159(i: Byte, js5Archive: Js5Archive) {
             NpcReference.anInt6862 = js5Archive.method417("hitmarks", 0)
@@ -176,7 +177,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, water
             Renderer.anInt4562 = js5Archive.method417("headicons_pk", 0)
             ConfigArchiveLoader.anInt1435 = js5Archive.method417("headicons_prayer", 0)
             OverlayColorTable.anInt1756 = js5Archive.method417("hint_headicons", 0)
-            CutsceneSequenceData.anInt3739 = js5Archive.method417("hint_mapmarkers", 0)
+            TexGenMaterialPass.anInt3739 = js5Archive.method417("hint_mapmarkers", 0)
             DrawListState.anInt1481 = js5Archive.method417("mapflag", 0)
             RangedGraphicsOptionState.anInt5948 = js5Archive.method417("cross", 0)
             CameraNodeList.anInt1742 = js5Archive.method417("mapdots", 0)

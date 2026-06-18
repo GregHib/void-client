@@ -211,7 +211,6 @@ import CubeMapMaterialPass.Companion.method2171
 import ParticleEmitterDef.Companion.method2185
 import ParticleEmitterDefExt.Companion.method2190
 import RegionSceneLoader.method2191
-import CutsceneSequenceData.Companion.method2199
 import MapArchiveSource.Companion.method2202
 import LoadingBarRenderer.Companion.method2214
 import LocalizedTextTriple.Companion.method2223
@@ -234,8 +233,6 @@ import WidgetRedrawTracker.Companion.method2331
 import SkyboxGradient.method2333
 import ArchiveResourceProvider.Companion.method2344
 import CacheIndexManager.Companion.method2354
-import IntHashSet.Companion.method2363
-import IntHashSet.Companion.method2366
 import SceneEntity.Companion.method2389
 import SceneGraphContainer.Companion.method2527
 import TileSceneEntity.Companion.method2395
@@ -316,7 +313,6 @@ import ShortKeyNode.Companion.method3003
 import ModelVertexColorBuffer.Companion.method2738
 import AbstractFrameBufferSurface.Companion.method3010
 import ProducerImageSurface.Companion.method3016
-import AnimationFrameDefinition.Companion.method3024
 import IntPair.Companion.method3026
 import IntKeyNode.Companion.method3028
 import WidgetActionEntry.Companion.method3029
@@ -366,7 +362,6 @@ import TimedTileQueueEntry.Companion.method3247
 import AsyncResourceRequest.Companion.method3252
 import StreamingResourceRequest.Companion.method3260
 import CompletedResourceRequest.Companion.method3263
-import TextureMaterialGroup.Companion.method3269
 import ParticleEmitterListNode.Companion.method3274
 import MinimapAreaMarkerNode.Companion.method3278
 import SpriteRenderEntry.Companion.method3280
@@ -626,7 +621,7 @@ class Client : GameAppletFrame() {
         ClientMachineInfo.aMediaStreamClient_6601 = MediaStreamClient()
         ByteArrayPool.method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
         if (NpcAnimationResolver.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271) CacheLruCache.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
-        IntHashSet.aClass348_Sub51_3959 = method247(24916)
+        IntHashSetStatics.aClass348_Sub51_3959 = method247(24916)
         if (NpcAnimationResolver.aNamedIdRecord_165 == OggCacheStream.aNamedIdRecord_5271) GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
         else if (method2354(NpcAnimationResolver.aNamedIdRecord_165, i xor 0x7044.inv())) {
             GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
@@ -692,7 +687,7 @@ class Client : GameAppletFrame() {
 //            Class277.aClass137_3568 = null;
 //        }
         if (NpcAnimationResolver.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271) PixelBlender.aBoolean3811 = true
-        AsyncResourceRequest.aString9665 = LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)
+        AsyncResourceRequest.aString9665 = LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)
     }
 
     public override fun method91(i: Byte) {
@@ -792,7 +787,7 @@ class Client : GameAppletFrame() {
         CompletedResourceRequest.method3264((-24).toByte())
         method1325(-128)
         method1235(7.toByte())
-        method3269(true)
+        NpcType.method3269(true)
         method265(false)
         method1375(5616)
         AbstractModel.method609((-52).toByte())
@@ -882,7 +877,7 @@ class Client : GameAppletFrame() {
         method2527()
         method1619(108.toByte())
         ProjectileConfigUtil.method316((-94).toByte())
-        method2199(63.toByte())
+        GlTexture3D.method2199(63.toByte())
         GzipDecompressor.method1216((-97).toByte())
         method2286(114)
         method2645(i + -16777324)
@@ -909,7 +904,7 @@ class Client : GameAppletFrame() {
         method1126(32)
         method2682(i.toInt() xor 0x29)
         method1267(85.toByte())
-        method3024(-100)
+        GraphicsOptionState.method3024(-100)
         method177()
         UnderlayDefinition.method1609((-121).toByte())
         SizeBoundedSoftCache.method1349((-121).toByte())
@@ -980,7 +975,7 @@ class Client : GameAppletFrame() {
         method2333(false)
         ModelDataCache.method296((-99).toByte())
         method176(-1)
-        method2366(true)
+        IntHashSetStatics.method2366(true)
         method2690(-124)
         method1551()
         method370(true)
@@ -1279,7 +1274,7 @@ class Client : GameAppletFrame() {
     public override fun method99(i: Byte) {
         if (i.toInt() != 93) anIntArray5176 = null
         anInt5183++
-        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
+        if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
             try {
                 method114(i.toInt() xor 0x66)
             } catch (throwable: Throwable) {
@@ -1310,9 +1305,9 @@ class Client : GameAppletFrame() {
             SceneRegionState.aHudTabPanel_196 = (method1677(-121, this.getParameter("modewhat")!!.toInt()))
             if (SceneRegionState.aHudTabPanel_196 != ParticleEmitterDef.aHudTabPanel_4953 && SceneRegionState.aHudTabPanel_196 != NoiseTextureNode.aHudTabPanel_9263 && MovementDirection.aHudTabPanel_1189 != SceneRegionState.aHudTabPanel_196) SceneRegionState.aHudTabPanel_196 = MovementDirection.aHudTabPanel_1189
             try {
-                AnimationFrameDefinition.anInt6967 = this.getParameter("lang")!!.toInt()
+                ChatCommandProcessor.anInt6967 = this.getParameter("lang")!!.toInt()
             } catch (exception: Exception) {
-                AnimationFrameDefinition.anInt6967 = 0
+                ChatCommandProcessor.anInt6967 = 0
             }
             val string = this.getParameter("objecttag")
             HashTableContainer.aBoolean6997 = string != null && string == "1"
@@ -1390,7 +1385,7 @@ class Client : GameAppletFrame() {
     public override fun method93(i: Int) {
         if (i != -11018) method80(9)
         anInt5186++
-        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
+        if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
             try {
                 method116(true)
             } catch (throwable: Throwable) {
@@ -1509,8 +1504,8 @@ class Client : GameAppletFrame() {
         var class318_sub9_sub1 = (InterfaceComponentGroup.aDoublyLinkedNodeList_9642!!.method1872(8) as NamedTimedNode?)
         while (class318_sub9_sub1 != null) {
             if (class318_sub9_sub1.anInt8787.toLong() < -5L + method599(-80) / 1000L) {
-                if (class318_sub9_sub1.aShort8786 > 0) FixedFunctionMaterialPass.method2144("", 5, (-91).toByte(), 0, (class318_sub9_sub1.aString8783 + LocalizedText.aLocalizedText_3502!!.method2063(AnimationFrameDefinition.anInt6967, 544)), "", "")
-                if (class318_sub9_sub1.aShort8786.toInt() == 0) FixedFunctionMaterialPass.method2144("", 5, (-105).toByte(), 0, (class318_sub9_sub1.aString8783 + LocalizedText.aLocalizedText_3503!!.method2063((AnimationFrameDefinition.anInt6967), i.toInt() xor 0x250)), "", "")
+                if (class318_sub9_sub1.aShort8786 > 0) FixedFunctionMaterialPass.method2144("", 5, (-91).toByte(), 0, (class318_sub9_sub1.aString8783 + LocalizedText.aLocalizedText_3502!!.method2063(ChatCommandProcessor.anInt6967, 544)), "", "")
+                if (class318_sub9_sub1.aShort8786.toInt() == 0) FixedFunctionMaterialPass.method2144("", 5, (-105).toByte(), 0, (class318_sub9_sub1.aString8783 + LocalizedText.aLocalizedText_3503!!.method2063((ChatCommandProcessor.anInt6967), i.toInt() xor 0x250)), "", "")
                 class318_sub9_sub1.method2373(false)
             }
             class318_sub9_sub1 = InterfaceComponentGroup.aDoublyLinkedNodeList_9642!!.method1878((-43).toByte()) as NamedTimedNode?
@@ -1573,7 +1568,7 @@ class Client : GameAppletFrame() {
                             ProceduralTextureGraph.anCharStreamReaderArray9534s!![MinimapAreaMarkerNode.anInt9699] = interface6
                             MinimapAreaMarkerNode.anInt9699++
                         }
-                    } else if (!method3263(true)) method2363(-84)
+                    } else if (!method3263(true)) IntHashSetStatics.method2363(-84)
                     else GlCubemapLightPass.method3543((-89).toByte())
                 } else if (i_109_ == 0 && CameraConfigDefinition.anInt3246 < 75) {
                     CacheLruCache.anCharStreamReaderArray3884s!![CameraConfigDefinition.anInt3246] = interface6
@@ -1675,7 +1670,7 @@ class Client : GameAppletFrame() {
                     TextureLoadExceptionStatics.aBoolean4604 = false
                 }
             }
-            if (SkeletalAnimFrameLoader.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+            if (SkeletalAnimFrameLoader.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             var bool_120_ = false
             if (SpriteRenderable.aBoolean4726) {
                 bool_120_ = true
@@ -1690,14 +1685,14 @@ class Client : GameAppletFrame() {
                         if (AnimationFrameTable.anInt489 == 1) {
                             if (LocDefinitionCache.anInt3441 > StringValueNode.anInt7115) StringValueNode.anInt7115 = LocDefinitionCache.anInt3441
                             val i = ((-LocDefinitionCache.anInt3441 + StringValueNode.anInt7115) * 50 / StringValueNode.anInt7115)
-                            method3511(true, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
+                            method3511(true, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
                         } else if (AnimationFrameTable.anInt489 == 2) {
                             if (ItemModelDefinition.anInt443 < CompositeNpcModelBuilder.anInt2101) ItemModelDefinition.anInt443 = CompositeNpcModelBuilder.anInt2101
                             val i = (((ItemModelDefinition.anInt443 - CompositeNpcModelBuilder.anInt2101) * 50 / ItemModelDefinition.anInt443) + 50)
-                            method3511(true, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
-                        } else method3511(true, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)), 2, FacingDirectionNode.aRenderer6654)
+                            method3511(true, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
+                        } else method3511(true, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)), 2, FacingDirectionNode.aRenderer6654)
                     } else if (WorldMapRenderer.anInt4674 != 10) {
-                        if (WorldMapRenderer.anInt4674 == 13) method3511(false, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3497!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + "<br>" + (LocalizedText.aLocalizedText_3498!!.method2063(AnimationFrameDefinition.anInt6967, 544))), 2, FacingDirectionNode.aRenderer6654)
+                        if (WorldMapRenderer.anInt4674 == 13) method3511(false, aFont_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3497!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>" + (LocalizedText.aLocalizedText_3498!!.method2063(ChatCommandProcessor.anInt6967, 544))), 2, FacingDirectionNode.aRenderer6654)
                     } else MinimapPositionState.method2284((-43).toByte(), l)
                 } else method1761(85)
             } else method1761(85)
@@ -1743,7 +1738,7 @@ class Client : GameAppletFrame() {
                 }
             }
             method598(9013)
-            val i = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub17_7263!!.method1798(-32350)
+            val i = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub17_7263!!.method1798(-32350)
             if (i == 0) TexGenMaterialPass.method2161((-127).toByte(), 15L)
             else if (i != 1) {
                 if (i != 2) {
@@ -1751,8 +1746,8 @@ class Client : GameAppletFrame() {
                 } else TexGenMaterialPass.method2161((-97).toByte(), 5L)
             } else TexGenMaterialPass.method2161((-104).toByte(), 10L)
             if (MapElementDefinitionCache.aBoolean3988) method1416(5)
-            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(-32350) == 1 && WorldMapRenderer.anInt4674 == 3 && RenderNodeStatics.anInt9721 != -1) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 0)
+            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(-32350) == 1 && WorldMapRenderer.anInt4674 == 3 && RenderNodeStatics.anInt9721 != -1) {
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 0)
                 method243(37)
             }
         }
@@ -1765,18 +1760,18 @@ class Client : GameAppletFrame() {
             string = ("[1)" + ArbVertexProgram.regionTileX + "," + RegionMapDecoder.regionTileY + "," + GlCubemapLightPass.anInt7319 + "," + RangeThresholdTextureNode.anInt9109 + "|")
             if (i < 40) aNodeDeque_5185 = null
             if (LocalPlayerState.aPlayer_1907 != null) string += ("2)" + CompiledScriptCache.anInt4372 + "," + (ArbVertexProgram.regionTileX + (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0])) + "," + (RegionMapDecoder.regionTileY + (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) + "|")
-            string += ("3)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + LocTypeDefinition.anInt4017 + "," + HardCacheEntryReference.anInt10432 + "|")
-            string += "7)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) + "|"
-            string += "8)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) + "|"
-            string += "9)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) + "|"
-            string += "10)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350) + "|"
-            string += "11)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) + "|"
-            string += "12)" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) + "|"
+            string += ("3)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + LocTypeDefinition.anInt4017 + "," + HardCacheEntryReference.anInt10432 + "|")
+            string += "7)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) + "|"
+            string += "8)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) + "|"
+            string += "9)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) + "|"
+            string += "10)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350) + "|"
+            string += "11)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) + "|"
+            string += "12)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) + "|"
             string += "13)" + TextureDefinitionCache.anInt2964 + "|"
             string += "14)" + WorldMapRenderer.anInt4674
             if (NoiseTextureNode.aClass348_Sub4_9264 != null) string += "|15)" + (NoiseTextureNode.aClass348_Sub4_9264!!.anInt6609)
             try {
-                if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
+                if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
                     val field = ClassLoader::class.java.getDeclaredField("nativeLibraries")
                     field.setAccessible(true)
                     val vector = (field.get((if (aClass5189 != null) aClass5189 else (Client::class.java.also { aClass5189 = it }))!!.getClassLoader()) as Vector<*>)
@@ -1884,7 +1879,7 @@ class Client : GameAppletFrame() {
                         if (i_10_ == 1) {
                             val i_11_ = ((class318_sub1_sub3_sub3.x) shr 9)
                             val i_12_ = ((class318_sub1_sub3_sub3.y) shr 9)
-                            if (class318_sub1_sub3_sub3.anInt10285 != (TextureMaterialGroup.anIntArrayArray9678!![i_11_]!![i_12_])) {
+                            if (class318_sub1_sub3_sub3.anInt10285 != (NpcType.anIntArrayArray9678!![i_11_]!![i_12_])) {
                                 class318_sub1_sub3_sub3.aBoolean10309 = true
                                 continue
                             }
@@ -1902,7 +1897,7 @@ class Client : GameAppletFrame() {
                             if (!method949(i_15_, i_16_, (class318_sub1_sub3_sub3.anInt10285), 124.toByte(), i_14_, i_17_)) {
                                 for (i_18_ in i_14_..i_16_) {
                                     for (i_19_ in i_15_..i_17_) {
-                                        if (class318_sub1_sub3_sub3.anInt10285 == (TextureMaterialGroup.anIntArrayArray9678!![i_18_]!![i_19_])) FlickeringEffectsOptionState.anIntArrayArray5921!![i_18_]!![i_19_] = FlickeringEffectsOptionState.anIntArrayArray5921!![i_18_]!![i_19_] - 1
+                                        if (class318_sub1_sub3_sub3.anInt10285 == (NpcType.anIntArrayArray9678!![i_18_]!![i_19_])) FlickeringEffectsOptionState.anIntArrayArray5921!![i_18_]!![i_19_] = FlickeringEffectsOptionState.anIntArrayArray5921!![i_18_]!![i_19_] - 1
                                     }
                                 }
                                 class318_sub1_sub3_sub3.aBoolean10309 = true
@@ -1968,12 +1963,12 @@ class Client : GameAppletFrame() {
                         if (strings[3] == "wip") SceneRegionState.aHudTabPanel_196 = ParticleEmitterDef.aHudTabPanel_4953
                         else method518("modewhat", 41.toByte())
                     } else SceneRegionState.aHudTabPanel_196 = NoiseTextureNode.aHudTabPanel_9263
-                    AnimationFrameDefinition.anInt6967 = method315(103.toByte(), strings[4])
-                    if (AnimationFrameDefinition.anInt6967 == -1) {
+                    ChatCommandProcessor.anInt6967 = method315(103.toByte(), strings[4])
+                    if (ChatCommandProcessor.anInt6967 == -1) {
                         if (strings[4] != "english") {
-                            if (strings[4] == "german") AnimationFrameDefinition.anInt6967 = 1
+                            if (strings[4] == "german") ChatCommandProcessor.anInt6967 = 1
                             else OggMediaStream.method518("language", (-128).toByte())
-                        } else AnimationFrameDefinition.anInt6967 = 0
+                        } else ChatCommandProcessor.anInt6967 = 0
                     }
                     HashTableContainer.aBoolean6997 = false
                     RegionSceneLoader.aBoolean3697 = false
@@ -2161,8 +2156,8 @@ class Client : GameAppletFrame() {
                                                 i_58_ -= (class46.anInt709) / 2
                                                 i_59_ -= (class46.anInt789) / 2
                                                 val i_61_: Int
-                                                if (WeaveTextureNode.anInt9282 == 4) i_61_ = ((ResourceProvider.aFloat3938).toInt() and 0x3fff)
-                                                else i_61_ = (((ResourceProvider.aFloat3938).toInt() + OpenGlRenderNode.anInt10483) and 0x3fff)
+                                                if (WeaveTextureNode.anInt9282 == 4) i_61_ = ((CameraDistanceOptionState.aFloat3938).toInt() and 0x3fff)
+                                                else i_61_ = (((CameraDistanceOptionState.aFloat3938).toInt() + OpenGlRenderNode.anInt10483) and 0x3fff)
                                                 var i_62_ = (TrigLookupTables.anIntArray1207!![i_61_])
                                                 var i_63_ = (TrigLookupTables.anIntArray1204!![i_61_])
                                                 if (WeaveTextureNode.anInt9282 != 4) {
@@ -2186,7 +2181,7 @@ class Client : GameAppletFrame() {
                                                     if (class46_69_ != null) MinimapPolygonDrawer.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), ItemNameResolver.aString5001, 1L, (FloatBuffer.anInt9747))
                                                     else method2678(-2049)
                                                 } else {
-                                                    if ((HardCacheEntryReference.aSceneProjector_10434) == (GlRectangleTexture.aSceneProjector_8638)) MinimapPolygonDrawer.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (LocalizedText.aLocalizedText_3510!!.method2063((AnimationFrameDefinition.anInt6967), 544)), 1L, -1)
+                                                    if ((HardCacheEntryReference.aSceneProjector_10434) == (GlRectangleTexture.aSceneProjector_8638)) MinimapPolygonDrawer.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (LocalizedText.aLocalizedText_3510!!.method2063((ChatCommandProcessor.anInt6967), 544)), 1L, -1)
                                                     MinimapPolygonDrawer.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, LightingOptionState.aString5882, 1L, MapElementLookup.anInt4144)
                                                 }
                                             }
@@ -2520,7 +2515,7 @@ class Client : GameAppletFrame() {
 
         fun method109() {
             for (i in 0..<GlCubemapLightPass.anInt7319) {
-                val `is`: IntArray = TextureMaterialGroup.anIntArrayArray9678!![i]!!
+                val `is`: IntArray = NpcType.anIntArrayArray9678!![i]!!
                 for (i_91_ in 0..<RangeThresholdTextureNode.anInt9109) `is`[i_91_] = 0
             }
         }
@@ -2560,7 +2555,7 @@ class Client : GameAppletFrame() {
         fun method115() {
             val i = ShaderState.anInt6513
             val `is` = ScrollTexMaterialPass.anIntArray6290
-            val i_112_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
+            val i_112_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
             val bool = i_112_ == 1 && i > 200 || i_112_ == 0 && i > 50
             for (i_113_ in 0..<i) {
                 val player = LoadingBarRenderer.aPlayerArray5058!![`is`!![i_113_]]
@@ -2644,10 +2639,10 @@ class Client : GameAppletFrame() {
                     if (i_124_ == 1) {
                         val i_125_ = (class318_sub1_sub3_sub3.x shr 9)
                         val i_126_ = (class318_sub1_sub3_sub3.y shr 9)
-                        if ((class318_sub1_sub3_sub3.anInt10285) > (TextureMaterialGroup.anIntArrayArray9678!![i_125_]!![i_126_])) {
-                            TextureMaterialGroup.anIntArrayArray9678!![i_125_]!![i_126_] = class318_sub1_sub3_sub3.anInt10285
+                        if ((class318_sub1_sub3_sub3.anInt10285) > (NpcType.anIntArrayArray9678!![i_125_]!![i_126_])) {
+                            NpcType.anIntArrayArray9678!![i_125_]!![i_126_] = class318_sub1_sub3_sub3.anInt10285
                             FlickeringEffectsOptionState.anIntArrayArray5921!![i_125_]!![i_126_] = 1
-                        } else if (class318_sub1_sub3_sub3.anInt10285 == (TextureMaterialGroup.anIntArrayArray9678!![i_125_]!![i_126_])) FlickeringEffectsOptionState.anIntArrayArray5921!![i_125_]!![i_126_] = FlickeringEffectsOptionState.anIntArrayArray5921!![i_125_]!![i_126_] + 1
+                        } else if (class318_sub1_sub3_sub3.anInt10285 == (NpcType.anIntArrayArray9678!![i_125_]!![i_126_])) FlickeringEffectsOptionState.anIntArrayArray5921!![i_125_]!![i_126_] = FlickeringEffectsOptionState.anIntArrayArray5921!![i_125_]!![i_126_] + 1
                     } else {
                         val i_127_ = (i_124_ - 1) * 256 + 60
                         val i_128_ = ((class318_sub1_sub3_sub3.x - i_127_) shr 9)
@@ -2656,10 +2651,10 @@ class Client : GameAppletFrame() {
                         val i_131_ = ((class318_sub1_sub3_sub3.y + i_127_) shr 9)
                         for (i_132_ in i_128_..i_130_) {
                             for (i_133_ in i_129_..i_131_) {
-                                if (class318_sub1_sub3_sub3.anInt10285 > (TextureMaterialGroup.anIntArrayArray9678!![i_132_]!![i_133_])) {
-                                    TextureMaterialGroup.anIntArrayArray9678!![i_132_]!![i_133_] = class318_sub1_sub3_sub3.anInt10285
+                                if (class318_sub1_sub3_sub3.anInt10285 > (NpcType.anIntArrayArray9678!![i_132_]!![i_133_])) {
+                                    NpcType.anIntArrayArray9678!![i_132_]!![i_133_] = class318_sub1_sub3_sub3.anInt10285
                                     FlickeringEffectsOptionState.anIntArrayArray5921!![i_132_]!![i_133_] = 1
-                                } else if (class318_sub1_sub3_sub3.anInt10285 == (TextureMaterialGroup.anIntArrayArray9678!![i_132_]!![i_133_])) FlickeringEffectsOptionState.anIntArrayArray5921!![i_132_]!![i_133_] = FlickeringEffectsOptionState.anIntArrayArray5921!![i_132_]!![i_133_] + 1
+                                } else if (class318_sub1_sub3_sub3.anInt10285 == (NpcType.anIntArrayArray9678!![i_132_]!![i_133_])) FlickeringEffectsOptionState.anIntArrayArray5921!![i_132_]!![i_133_] = FlickeringEffectsOptionState.anIntArrayArray5921!![i_132_]!![i_133_] + 1
                             }
                         }
                     }

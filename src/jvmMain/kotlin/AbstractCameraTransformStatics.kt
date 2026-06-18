@@ -17,7 +17,7 @@ object AbstractCameraTransformStatics {
 
     @JvmStatic
     fun method893(i: Byte) {
-        CellNoiseTextureNode.method3111(91, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350))
+        CellNoiseTextureNode.method3111(91, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350))
         anInt1595++
         val i_4_ = ((GlslMaterialPass.anInt6246 shr 12) - -(ArbVertexProgram.regionTileX shr 3))
         val i_5_ = ((RegionMapDecoder.regionTileY shr 3) + (CompositeRgbNoiseTexture.anInt8685 shr 12))

@@ -170,11 +170,11 @@ class SceneryDetailOptionState : GraphicsOptionState {
                         i_13_ = (LocalPlayerState.aPlayer_1907!!.method2436(71.toByte()) + -1 shl 8) + i_24_ shr 9
                         i_14_ = i_25_ - -(LocalPlayerState.aPlayer_1907!!.method2436(73.toByte()) + -1 shl 8) shr 9
                         var i_26_ = (LocalPlayerState.aPlayer_1907!!.plane).toInt()
-                        if (i_26_ < 3 && ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_24_ shr 9]!![i_25_ shr 9]).toInt()) != 0)) i_26_++
+                        if (i_26_ < 3 && ((0x2 and (GraphicsOptionState.aByteArrayArrayArray6962!![1]!![i_24_ shr 9]!![i_25_ shr 9]).toInt()) != 0)) i_26_++
                     }
                     if (i_13_ != -1 && i_14_ != -1) {
                         if (!RenderNodeStatics.aBoolean9722 || (0x40 and WidgetTextConfig.anInt500) == 0) {
-                            if (ObjectSpawnDecoder.aBoolean1801) MinimapPolygonDrawer.method466(false, "", i_14_, (-109).toByte(), true, i_13_, -1, true, 12, (i_14_ or (i_13_ shl 0)).toLong(), (LocalizedText.aLocalizedText_3510!!.method2063(AnimationFrameDefinition.anInt6967, 544)), 0L, -1)
+                            if (ObjectSpawnDecoder.aBoolean1801) MinimapPolygonDrawer.method466(false, "", i_14_, (-109).toByte(), true, i_13_, -1, true, 12, (i_14_ or (i_13_ shl 0)).toLong(), (LocalizedText.aLocalizedText_3510!!.method2063(ChatCommandProcessor.anInt6967, 544)), 0L, -1)
                             RenderableEntry.anInt4334++
                             MinimapPolygonDrawer.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), LightingOptionState.aString5882, 0L, MapElementLookup.anInt4144)
                         } else {
@@ -334,8 +334,8 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                 }
                                             }
                                         }
-                                        AnimationFrameDefinition.anInt6956++
-                                        MinimapPolygonDrawer.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (LocalizedText.aLocalizedText_3505!!.method2063(AnimationFrameDefinition.anInt6967, 544)), class348_sub34.anInt6973.toLong(), CubeMapMaterialPass.anInt6299)
+                                        anInt6956++
+                                        MinimapPolygonDrawer.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (LocalizedText.aLocalizedText_3505!!.method2063(ChatCommandProcessor.anInt6967, 544)), class348_sub34.anInt6973.toLong(), CubeMapMaterialPass.anInt6299)
                                         class348_sub34 = (class348_sub37.aNodeDeque_6998.method2003(-127) as IntPair?)
                                         i_57_++
                                     }
@@ -385,7 +385,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             true,
                                             1001,
                                             renderTarget.hashCode().toLong(),
-                                            (LocalizedText.aLocalizedText_3505!!.method2063(AnimationFrameDefinition.anInt6967, 544)),
+                                            (LocalizedText.aLocalizedText_3505!!.method2063(ChatCommandProcessor.anInt6967, 544)),
                                             npcConfig.anInt941.toLong(),
                                             CubeMapMaterialPass.anInt6299
                                         )
@@ -402,5 +402,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                 TextureDefinitionCache.method1626(1, false)
             }
         }
+
+        var anInt6956: Int = 0
     }
 }

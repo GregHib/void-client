@@ -26,7 +26,7 @@ object ClanChatRequestSender {
         val `is` = MinimapSquareDrawer.method463(class348_sub47, false)
         val i_1_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
-        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, AnimationFrameDefinition.anInt6967)
+        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, ChatCommandProcessor.anInt6967)
         class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 += 7
         class348_sub47.aClass348_Sub49_Sub2_7116!!.method3350(i_1_, true, `is`, class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
         class348_sub47.aClass348_Sub49_Sub2_7116!!.method3383(1809639944, -i_0_ + (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197))

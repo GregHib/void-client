@@ -48,12 +48,13 @@ class TextureDefinitionCache internal constructor(i: Int, js5Archive: Js5Archive
             aHashtable_2959 = null
             if (i != 28962) aHashtable_2959 = null
         }
+        var anInt6964: Int = 0
 
         @JvmStatic
         fun method1626(i: Int, bool: Boolean) {
             anInt2962++
             var i_1_ = NoOpGraphicsOptionState.anInt6043
-            var i_2_ = AnimationFrameDefinition.anInt6964
+            var i_2_ = anInt6964
             if (i == 1) {
                 if (bool && ParticleSystemRenderer.aBoolean3870) {
                     i_1_ = i_1_ shl 1

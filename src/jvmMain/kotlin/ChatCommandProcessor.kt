@@ -893,7 +893,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5301) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 return
             }
             if (i == 5302) {
@@ -936,14 +936,14 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5308) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350)
                 return
             }
             if (i == 5309) {
                 val i_105_ = anIntArray1149!![--anInt1173]
                 if (i_105_ >= 1 && i_105_ <= 2) {
-                    IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!), i_105_)
-                    IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7254), i_105_)
+                    IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!), i_105_)
+                    IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7254), i_105_)
                     method243(37)
                     return
                 }
@@ -1001,10 +1001,10 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5411) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 if (RsaVarbitHandler.aFrame4904 == null) {
                     val string = (if (InputSettingsState.aString1761 != null) InputSettingsState.aString1761 else method2162(false))
-                    GrowableStringList.method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
+                    GrowableStringList.method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
                     return
                 } else {
                     method2405(97)
@@ -1026,11 +1026,11 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5421) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val string = aStringArray1152!![--anInt1170]
                 val bool_118_ = anIntArray1149!![--anInt1173] == 1
                 val string_119_ = method2162(false) + string
-                GrowableStringList.method1360(string_119_, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, bool_118_, 104)
+                GrowableStringList.method1360(string_119_, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, bool_118_, 104)
                 return
             }
             if (i == 5422) {
@@ -1199,7 +1199,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5506) {
-                anIntArray1149!![anInt1173++] = ResourceProvider.aFloat3938.toInt() shr 3
+                anIntArray1149!![anInt1173++] = CameraDistanceOptionState.aFloat3938.toInt() shr 3
                 return
             }
             if (i == 5507) {
@@ -1417,7 +1417,7 @@ object ChatCommandProcessor {
         } else if (i < 6100) {
             if (i == 6001) {
                 val i_146_ = anIntArray1149!![--anInt1173]
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!), i_146_)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!), i_146_)
                 TextureTileRenderer.method2953((-126).toByte())
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
@@ -1425,8 +1425,8 @@ object ChatCommandProcessor {
             }
             if (i == 6002) {
                 val bool_147_ = anIntArray1149!![--anInt1173] == 1
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7255), if (bool_147_) 1 else 0)
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261), if (bool_147_) 1 else 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7255), if (bool_147_) 1 else 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261), if (bool_147_) 1 else 0)
                 TextureTileRenderer.method2953((-122).toByte())
                 method3072(32.toByte())
                 method243(37)
@@ -1435,47 +1435,47 @@ object ChatCommandProcessor {
             }
             if (i == 6003) {
                 val bool_148_ = anIntArray1149!![--anInt1173] == 1
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7250), if (bool_148_) 2 else 1)
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264), if (bool_148_) 2 else 1)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7250), if (bool_148_) 2 else 1)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7264), if (bool_148_) 2 else 1)
                 EdgeDetectTextureNode.method3072((-106).toByte())
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6005) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 TextureTileRenderer.method2953((-111).toByte())
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6007) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub13_7236), anIntArray1149!![--anInt1173])
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub13_7236), anIntArray1149!![--anInt1173])
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6008) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub1_7246), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub1_7246), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6010) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub21_7270), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6011) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238), anIntArray1149!![--anInt1173])
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238), anIntArray1149!![--anInt1173])
                 TextureTileRenderer.method2953((-116).toByte())
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6012) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub28_7230), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 method3038(-1)
                 SceneObjectSpawner.method773(true)
                 method243(37)
@@ -1483,41 +1483,41 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 6014) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259), if (anIntArray1149!![--anInt1173] == 1) 2 else 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259), if (anIntArray1149!![--anInt1173] == 1) 2 else 0)
                 TextureTileRenderer.method2953((-112).toByte())
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6015) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub16_7247), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub16_7247), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 TextureTileRenderer.method2953((-127).toByte())
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6016) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7248), anIntArray1149!![--anInt1173])
-                method3553(false, 112.toByte(), IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350))
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248), anIntArray1149!![--anInt1173])
+                method3553(false, 112.toByte(), IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350))
                 method243(37)
                 return
             }
             if (i == 6017) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub5_7240), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub5_7240), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 method352(1)
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6018) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7272), anIntArray1149!![--anInt1173])
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7272), anIntArray1149!![--anInt1173])
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6019) {
                 val i_149_ = anIntArray1149!![--anInt1173]
-                val i_150_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!!!.method1838(-32350)
+                val i_150_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!!!.method1838(-32350)
                 if (i_149_ != i_150_) {
                     if (CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_150_ == 0 && SlotBinding.anInt3428 != -1) {
@@ -1529,38 +1529,38 @@ object ChatCommandProcessor {
                             RgbColorPalette.Companion.aBoolean1236 = false
                         } else SkeletalAnimFrameLoader.method345(i_149_, (-49).toByte())
                     }
-                    IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260), i_149_)
+                    IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260), i_149_)
                     method243(37)
                     RenderNodeStatics.aBoolean9719 = false
                 }
                 return
             }
             if (i == 6020) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7234), anIntArray1149!![--anInt1173])
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7234), anIntArray1149!![--anInt1173])
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6021) {
-                val i_151_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(-32350)
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264), if (anIntArray1149!![--anInt1173] == 1) 0 else i_151_)
+                val i_151_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(-32350)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7264), if (anIntArray1149!![--anInt1173] == 1) 0 else i_151_)
                 EdgeDetectTextureNode.method3072((-118).toByte())
                 return
             }
             if (i == 6023) {
                 val i_152_ = anIntArray1149!![--anInt1173]
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub15_7224), i_152_)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub15_7224), i_152_)
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6024) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216), anIntArray1149!![--anInt1173])
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7216), anIntArray1149!![--anInt1173])
                 method243(37)
                 return
             }
             if (i == 6025) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226), anIntArray1149!![--anInt1173])
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub6_7226), anIntArray1149!![--anInt1173])
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
@@ -1572,17 +1572,17 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 6028) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub22_7253), if (anIntArray1149!![--anInt1173] != 0) 1 else 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub22_7253), if (anIntArray1149!![--anInt1173] != 0) 1 else 0)
                 method243(37)
                 return
             }
             if (i == 6029) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub13_7236), anIntArray1149!![--anInt1173])
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub13_7236), anIntArray1149!![--anInt1173])
                 method243(37)
                 return
             }
             if (i == 6030) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub9_7256), if (anIntArray1149!![--anInt1173] != 0) 1 else 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub9_7256), if (anIntArray1149!![--anInt1173] != 0) 1 else 0)
                 method243(37)
                 TextureTileRenderer.method2953((-116).toByte())
                 return
@@ -1597,46 +1597,46 @@ object ChatCommandProcessor {
                 anInt1173 -= 2
                 val i_155_ = anIntArray1149!![anInt1173]
                 val bool_156_ = anIntArray1149!![anInt1173 + 1] == 1
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), i_155_)
-                if (!bool_156_) IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub29_7229), 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251), i_155_)
+                if (!bool_156_) IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub29_7229), 0)
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6033) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub17_7263), anIntArray1149!![--anInt1173])
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub17_7263), anIntArray1149!![--anInt1173])
                 method243(37)
                 return
             }
             if (i == 6034) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub24_7235), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 method243(37)
                 method3038(-1)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6035) {
-                val i_157_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350)
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261), if (anIntArray1149!![--anInt1173] == 1) 1 else i_157_)
+                val i_157_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261), if (anIntArray1149!![--anInt1173] == 1) 1 else i_157_)
                 TextureTileRenderer.method2953((-110).toByte())
                 method3072(125.toByte())
                 return
             }
             if (i == 6036) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub23_7231), anIntArray1149!![--anInt1173])
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub23_7231), anIntArray1149!![--anInt1173])
                 method243(37)
                 TextureLoadExceptionStatics.aBoolean4604 = true
                 return
             }
             if (i == 6037) {
-                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7215), anIntArray1149!![--anInt1173])
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7215), anIntArray1149!![--anInt1173])
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
                 return
             }
             if (i == 6038) {
                 val i_158_ = anIntArray1149!![--anInt1173]
-                val i_159_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350)
+                val i_159_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350)
                 if (i_158_ != i_159_ && SlotBinding.anInt3428 == ParticleProcessor.anInt4270) {
                     if (!CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_159_ == 0) {
@@ -1648,7 +1648,7 @@ object ChatCommandProcessor {
                             RgbColorPalette.Companion.aBoolean1236 = false
                         } else SkeletalAnimFrameLoader.method345(i_158_, (-52).toByte())
                     }
-                    IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245), i_158_)
+                    IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7245), i_158_)
                     method243(37)
                     RenderNodeStatics.aBoolean9719 = false
                 }
@@ -1657,8 +1657,8 @@ object ChatCommandProcessor {
             if (i == 6039) {
                 var i_160_ = anIntArray1149!![--anInt1173]
                 if (i_160_ > 255 || i_160_ < 0) i_160_ = 0
-                if (i_160_ != IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(-32350)) {
-                    IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub19_7257), i_160_)
+                if (i_160_ != IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(-32350)) {
+                    IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub19_7257), i_160_)
                     method243(37)
                     RenderNodeStatics.aBoolean9719 = false
                 }
@@ -1666,8 +1666,8 @@ object ChatCommandProcessor {
             }
             if (i == 6040) {
                 val i_161_ = anIntArray1149!![--anInt1173]
-                if (i_161_ != IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)) {
-                    IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_161_)
+                if (i_161_ != IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)) {
+                    IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_161_)
                     method243(37)
                     RenderNodeStatics.aBoolean9719 = false
                     LoadingScreenImageNode.method3179(0)
@@ -1676,67 +1676,67 @@ object ChatCommandProcessor {
             }
         } else if (i < 6200) {
             if (i == 6101) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!.method1764(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!.method1764(-32350)
                 return
             }
             if (i == 6102) {
-                anIntArray1149!![anInt1173++] = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6103) {
-                anIntArray1149!![anInt1173++] = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(-32350) == 2) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(-32350) == 2) 1 else 0)
                 return
             }
             if (i == 6105) {
-                anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) == 1) 1 else 0
+                anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) == 1) 1 else 0
                 return
             }
             if (i == 6107) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
                 return
             }
             if (i == 6108) {
-                anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 1) 1 else 0
+                anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 1) 1 else 0
                 return
             }
             if (i == 6110) {
-                anIntArray1149!![anInt1173++] = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6111) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
                 return
             }
             if (i == 6112) {
-                anIntArray1149!![anInt1173++] = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6114) {
-                anIntArray1149!![anInt1173++] = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2) 1 else 0)
                 return
             }
             if (i == 6115) {
-                anIntArray1149!![anInt1173++] = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6116) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350)
                 return
             }
             if (i == 6117) {
-                anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub5_7240!!.method1739(-32350) == 1) 1 else 0
+                anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub5_7240!!.method1739(-32350) == 1) 1 else 0
                 return
             }
             if (i == 6118) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350)
                 return
             }
             if (i == 6119) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350)
                 return
             }
             if (i == 6120) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350)
                 return
             }
             if (i == 6123) {
@@ -1744,35 +1744,35 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 6124) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350)
                 return
             }
             if (i == 6125) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350)
                 return
             }
             if (i == 6127) {
-                anIntArray1149!![anInt1173++] = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!!!.method1771(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!!!.method1771(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6128) {
-                anIntArray1149!![anInt1173++] = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub22_7253!!.method1815(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub22_7253!!.method1815(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6129) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
                 return
             }
             if (i == 6130) {
-                anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1) 1 else 0
+                anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1) 1 else 0
                 return
             }
             if (i == 6131) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
                 return
             }
             if (i == 6132) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1829(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1829(-32350)
                 return
             }
             if (i == 6133) {
@@ -1780,27 +1780,27 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 6135) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub17_7263!!.method1798(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub17_7263!!.method1798(-32350)
                 return
             }
             if (i == 6136) {
-                anIntArray1149!![anInt1173++] = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6138) {
-                anIntArray1149!![anInt1173++] = method1781(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350), -84, 200)
+                anIntArray1149!![anInt1173++] = method1781(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350), -84, 200)
                 return
             }
             if (i == 6139) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1818(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1818(-32350)
                 return
             }
             if (i == 6142) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350)
                 return
             }
             if (i == 6143) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350)
                 return
             }
             if (i == 6144) {
@@ -1808,11 +1808,11 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 6145) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(-32350)
                 return
             }
             if (i == 6146) {
-                anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
                 return
             }
             if (i == 6147) {
@@ -2316,7 +2316,7 @@ object ChatCommandProcessor {
             } else if (i < 7100) {
                 if (i == 7000) {
                     val i_221_ = method2478(1000)
-                    OpenGlModel.anInt5584 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
+                    OpenGlModel.anInt5584 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
                     anIntArray1149!![anInt1173++] = OpenGlModel.anInt5584
                     anIntArray1149!![anInt1173++] = i_221_
                     TextureTileRenderer.method2953((-113).toByte())
@@ -2353,7 +2353,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 7005) {
-                    IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub29_7229), 0)
+                    IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub29_7229), 0)
                     method243(37)
                     RenderNodeStatics.aBoolean9719 = false
                     return
@@ -2371,7 +2371,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 7007) {
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub29_7229!!.method1848(-32350)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub29_7229!!.method1848(-32350)
                     return
                 }
             } else if (i < 7200) {
@@ -2402,136 +2402,136 @@ object ChatCommandProcessor {
                 }
             } else if (i < 7300) {
                 if (i == 7201) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1736(123)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1736(123)) 1 else 0
                     return
                 }
                 if (i == 7202) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1809(117)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1809(117)) 1 else 0
                     return
                 }
                 if (i == 7203) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1747(111)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1747(111)) 1 else 0
                     return
                 }
                 if (i == 7204) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1801(125)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1801(125)) 1 else 0
                     return
                 }
                 if (i == 7205) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1806(108) && FacingDirectionNode.aRenderer6654!!.method3699()) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1806(108) && FacingDirectionNode.aRenderer6654!!.method3699()) 1 else 0
                     return
                 }
                 if (i == 7206) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub15_7224!!.method1786(93)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub15_7224!!.method1786(93)) 1 else 0
                     return
                 }
                 if (i == 7207) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1744(103)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1744(103)) 1 else 0
                     return
                 }
                 if (i == 7208) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1774(120) && FacingDirectionNode.aRenderer6654!!.method3627()) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1774(120) && FacingDirectionNode.aRenderer6654!!.method3627()) 1 else 0
                     return
                 }
                 if (i == 7209) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1757(115)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1757(115)) 1 else 0
                     return
                 }
                 if (i == 7210) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1824(124)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1824(124)) 1 else 0
                     return
                 }
                 if (i == 7211) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1817(108)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1817(108)) 1 else 0
                     return
                 }
                 if (i == 7212) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1790(94)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1790(94)) 1 else 0
                     return
                 }
                 if (i == 7213) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1729(91)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1729(91)) 1 else 0
                     return
                 }
                 if (i == 7214) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1831(95)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1831(95)) 1 else 0
                     return
                 }
             } else if (i < 7400) {
                 if (i == 7301) {
                     val i_226_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1714(3, i_226_)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1714(3, i_226_)
                     return
                 }
                 if (i == 7302) {
                     val i_227_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1714(3, i_227_)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1714(3, i_227_)
                     return
                 }
                 if (i == 7303) {
                     val i_228_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1714(3, i_228_)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1714(3, i_228_)
                     return
                 }
                 if (i == 7304) {
                     val i_229_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1714(3, i_229_)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1714(3, i_229_)
                     return
                 }
                 if (i == 7305) {
                     val i_230_ = anIntArray1149!![--anInt1173]
                     if (FacingDirectionNode.aRenderer6654!!.method3699()) {
-                        anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1714(3, i_230_)
+                        anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1714(3, i_230_)
                         return
                     } else anIntArray1149!![anInt1173++] = 3
                     return
                 }
                 if (i == 7306) {
                     val i_231_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub15_7224!!.method1714(3, i_231_)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub15_7224!!.method1714(3, i_231_)
                     return
                 }
                 if (i == 7307) {
                     val i_232_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1714(3, i_232_)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1714(3, i_232_)
                     return
                 }
                 if (i == 7308) {
                     val i_233_ = anIntArray1149!![--anInt1173]
                     if (FacingDirectionNode.aRenderer6654!!.method3627()) {
-                        anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1714(3, i_233_)
+                        anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1714(3, i_233_)
                         return
                     } else anIntArray1149!![anInt1173++] = 3
                     return
                 }
                 if (i == 7309) {
                     val i_234_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1714(3, i_234_)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1714(3, i_234_)
                     return
                 }
                 if (i == 7310) {
                     val i_235_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1714(3, i_235_)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1714(3, i_235_)
                     return
                 }
                 if (i == 7311) {
                     val i_236_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1714(3, i_236_)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1714(3, i_236_)
                     return
                 }
                 if (i == 7312) {
                     val i_237_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1714(3, i_237_)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1714(3, i_237_)
                     return
                 }
                 if (i == 7313) {
                     val i_238_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!!!.method1714(3, i_238_)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!!!.method1714(3, i_238_)
                     return
                 }
                 if (i == 7314) {
                     val i_239_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1714(3, i_239_)
+                    anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1714(3, i_239_)
                     return
                 }
             }
@@ -2548,6 +2548,8 @@ object ChatCommandProcessor {
     fun method706() {
         /* empty */
     }
+
+    var anInt6967: Int = 0
 
     private fun method707(string: String, i: Int) {
         var string = string
@@ -2590,43 +2592,43 @@ object ChatCommandProcessor {
             } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3541!!.method2063(0, 544)!!)) {
                 i_241_ = 11
                 string = string.substring(LocalizedText.aLocalizedText_3541!!.method2063(0, 544)!!.length)
-            } else if (AnimationFrameDefinition.anInt6967 != 0) {
-                if (string_240_.startsWith(LocalizedText.aLocalizedText_3530!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+            } else if (ChatCommandProcessor.anInt6967 != 0) {
+                if (string_240_.startsWith(LocalizedText.aLocalizedText_3530!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_241_ = 0
-                    string = string.substring(LocalizedText.aLocalizedText_3530!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3531!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3530!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3531!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_241_ = 1
-                    string = string.substring(LocalizedText.aLocalizedText_3531!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3532!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3531!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3532!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_241_ = 2
-                    string = string.substring(LocalizedText.aLocalizedText_3532!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3533!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3532!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3533!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_241_ = 3
-                    string = string.substring(LocalizedText.aLocalizedText_3533!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3534!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3533!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3534!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_241_ = 4
-                    string = string.substring(LocalizedText.aLocalizedText_3534!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3535!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3534!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3535!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_241_ = 5
-                    string = string.substring(LocalizedText.aLocalizedText_3535!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3536!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3535!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3536!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_241_ = 6
-                    string = string.substring(LocalizedText.aLocalizedText_3536!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3537!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3536!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3537!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_241_ = 7
-                    string = string.substring(LocalizedText.aLocalizedText_3537!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3538!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3537!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3538!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_241_ = 8
-                    string = string.substring(LocalizedText.aLocalizedText_3538!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3539!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3538!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3539!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_241_ = 9
-                    string = string.substring(LocalizedText.aLocalizedText_3539!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3540!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3539!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3540!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_241_ = 10
-                    string = string.substring(LocalizedText.aLocalizedText_3540!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3541!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3540!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3541!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_241_ = 11
-                    string = string.substring(LocalizedText.aLocalizedText_3541!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                    string = string.substring(LocalizedText.aLocalizedText_3541!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
                 }
             }
             string_240_ = string.lowercase(Locale.getDefault())
@@ -2646,22 +2648,22 @@ object ChatCommandProcessor {
             } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3546!!.method2063(0, 544)!!)) {
                 i_242_ = 5
                 string = string.substring(LocalizedText.aLocalizedText_3546!!.method2063(0, 544)!!.length)
-            } else if (AnimationFrameDefinition.anInt6967 != 0) {
-                if (string_240_.startsWith(LocalizedText.aLocalizedText_3542!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+            } else if (ChatCommandProcessor.anInt6967 != 0) {
+                if (string_240_.startsWith(LocalizedText.aLocalizedText_3542!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_242_ = 1
-                    string = string.substring(LocalizedText.aLocalizedText_3542!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3543!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3542!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3543!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_242_ = 2
-                    string = string.substring(LocalizedText.aLocalizedText_3543!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3544!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3543!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3544!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_242_ = 3
-                    string = string.substring(LocalizedText.aLocalizedText_3544!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3545!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3544!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3545!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_242_ = 4
-                    string = string.substring(LocalizedText.aLocalizedText_3545!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
-                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3546!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!)) {
+                    string = string.substring(LocalizedText.aLocalizedText_3545!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
+                } else if (string_240_.startsWith(LocalizedText.aLocalizedText_3546!!.method2063(ChatCommandProcessor.anInt6967, 544)!!)) {
                     i_242_ = 5
-                    string = string.substring(LocalizedText.aLocalizedText_3546!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!.length)
+                    string = string.substring(LocalizedText.aLocalizedText_3546!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
                 }
             }
             anInt1158++
@@ -4052,7 +4054,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 3335) {
-                    anIntArray1149!![anInt1173++] = AnimationFrameDefinition.anInt6967
+                    anIntArray1149!![anInt1173++] = ChatCommandProcessor.anInt6967
                     return
                 }
                 if (i == 3336) {
@@ -4675,7 +4677,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 4107) {
                     anInt1170 -= 2
-                    anIntArray1149!![anInt1173++] = method1811(9152, (aStringArray1152!![anInt1170 + 1]), AnimationFrameDefinition.anInt6967, (aStringArray1152!![anInt1170]))
+                    anIntArray1149!![anInt1173++] = method1811(9152, (aStringArray1152!![anInt1170 + 1]), ChatCommandProcessor.anInt6967, (aStringArray1152!![anInt1170]))
                     return
                 }
                 if (i == 4108) {
@@ -4797,7 +4799,7 @@ object ChatCommandProcessor {
                 if (i == 4124) {
                     val bool_453_ = anIntArray1149!![--anInt1173] != 0
                     val i_454_ = anIntArray1149!![--anInt1173]
-                    aStringArray1152!![anInt1170++] = SceneCollisionEntry.method3486(0, bool_453_, AnimationFrameDefinition.anInt6967, i_454_.toLong(), 16980)
+                    aStringArray1152!![anInt1170++] = SceneCollisionEntry.method3486(0, bool_453_, ChatCommandProcessor.anInt6967, i_454_.toLong(), 16980)
                     return
                 }
                 if (i == 4125) {

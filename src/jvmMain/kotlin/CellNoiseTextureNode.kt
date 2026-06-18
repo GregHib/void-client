@@ -197,7 +197,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                 BufferToggleState.method2196((-9).toByte())
                 GameClock.anIntArrayArrayArray1116 = (Array<Array<IntArray?>?>(4) { Array<IntArray?>(GlCubemapLightPass.anInt7319 shr 3) { IntArray(RangeThresholdTextureNode.Companion.anInt9109 shr 3) } })
                 FlickeringEffectsOptionState.anIntArrayArray5921 = (Array<IntArray?>(GlCubemapLightPass.anInt7319) { IntArray(RangeThresholdTextureNode.Companion.anInt9109) })
-                TextureMaterialGroup.anIntArrayArray9678 = (Array<IntArray?>(GlCubemapLightPass.anInt7319) { IntArray(RangeThresholdTextureNode.Companion.anInt9109) })
+                NpcType.anIntArrayArray9678 = (Array<IntArray?>(GlCubemapLightPass.anInt7319) { IntArray(RangeThresholdTextureNode.Companion.anInt9109) })
                 for (i_24_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_24_] = AnimatedModelRenderer.method988(RangeThresholdTextureNode.Companion.anInt9109, 1, GlCubemapLightPass.anInt7319)
                 RegionSceneLoader.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(GlCubemapLightPass.anInt7319) { ByteArray(RangeThresholdTextureNode.Companion.anInt9109) } })
                 method1717(19278, RangeThresholdTextureNode.Companion.anInt9109, GlCubemapLightPass.anInt7319, 4)

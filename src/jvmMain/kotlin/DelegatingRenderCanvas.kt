@@ -66,7 +66,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     FrameStatsReset.anInt5799 += i_3_
                 }
                 if (i == -1) {
-                    ResourceProvider.aFloat3938 += CircleDrawer.aFloat2687 * l.toFloat() / 6.0f
+                    CameraDistanceOptionState.aFloat3938 += CircleDrawer.aFloat2687 * l.toFloat() / 6.0f
                     if (i_1_ != AsyncTaskHandle.anInt2578) {
                         val i_4_ = i_1_ - AsyncTaskHandle.anInt2578
                         var i_5_ = (i_4_.toLong() * l / 320L).toInt()
@@ -223,12 +223,12 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                 }
                 if (bool) {
-                    if (AnimationFrameTable.anInt489 != 0) Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
+                    if (AnimationFrameTable.anInt489 != 0) Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
                     method3570(false)
                     InterfaceBounds.method2938(102.toByte())
                     method1772(i xor 0x41)
                     var bool_25_ = false
-                    if (FacingDirectionNode.aRenderer6654!!.method3639() && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2) {
+                    if (FacingDirectionNode.aRenderer6654!!.method3639() && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2) {
                         var i_26_ = 0
                         while ((i_26_ < DragDropController.aByteArrayArray4281!!.size)) {
                             if ((VorbisOggDecoder.aByteArrayArray8996!![i_26_] != null) || ModelFacePriorityNode.aByteArrayArray1887!![i_26_] != null) {
@@ -239,7 +239,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         }
                     }
                     var i_27_: Int
-                    if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) i_27_ = NativeLibraryState.anIntArray168!![MenuActionNode.anInt6769]
+                    if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) i_27_ = NativeLibraryState.anIntArray168!![MenuActionNode.anInt6769]
                     else i_27_ = (CubeMapMaterialPass.anIntArray6296!![MenuActionNode.anInt6769])
                     if (FacingDirectionNode.aRenderer6654!!.method3670()) i_27_++
                     RenderbufferObject.method3171(FacingDirectionNode.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, i_27_, bool_25_, FacingDirectionNode.aRenderer6654!!.method3704() > 0)
@@ -256,13 +256,13 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     System.gc()
                     RegionSceneLoader.method2193(true, (-128).toByte())
                     AnimationFrameTable.method354(2)
-                    CutsceneSequenceData.anInt3720 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
+                    anInt3720 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
                     HuffmanCodec.aBoolean3767 = TextureDefinitionCache.anInt2964 >= 96
-                    WorldMapLabel.aBoolean4972 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2
-                    TextureGenerator.aBoolean2492 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(i + -32350) == 1
-                    ChatMessageStream.anInt101 = if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) -1 else ParticleSystemState.anInt2204
-                    IOException_Sub1.aBoolean86 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1
-                    NanoTimer.aBoolean845 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i xor 0x7e5d.inv()) == 1
+                    WorldMapLabel.aBoolean4972 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2
+                    TextureGenerator.aBoolean2492 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(i + -32350) == 1
+                    ChatMessageStream.anInt101 = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) -1 else ParticleSystemState.anInt2204
+                    IOException_Sub1.aBoolean86 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1
+                    NanoTimer.aBoolean845 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i xor 0x7e5d.inv()) == 1
                     MapTileShape.aClass237_Sub1_4197 = WorldMapSceneSoftware(4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, false)
                     if (WidgetRedrawTracker.anInt3931 != 0) MapSceneRenderer.method385(false, MapTileShape.aClass237_Sub1_4197, DragDropController.aByteArrayArray4281)
                     else TerrainTileShape.method2727((-65).toByte(), MapTileShape.aClass237_Sub1_4197, (DragDropController.aByteArrayArray4281))
@@ -313,7 +313,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     var i_29_ = MapTileShape.aClass237_Sub1_4197!!.anInt5824
                     if (i_29_ > CompiledScriptCache.anInt4372) i_29_ = CompiledScriptCache.anInt4372
                     if (i_29_ < -1 + CompiledScriptCache.anInt4372) i_29_ = CompiledScriptCache.anInt4372 - 1
-                    if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0) MapSceneCache.method824(i_29_)
+                    if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0) MapSceneCache.method824(i_29_)
                     else MapSceneCache.method824(0)
                     for (i_30_ in 0..3) {
                         var i_31_ = 0
@@ -371,6 +371,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                 } else AnimationFrameTable.anInt489 = 2
             } else AnimationFrameTable.anInt489 = 1
         }
+        var anInt3720: Int = 0
 
         init {
             anIntArray60 = IntArray(8)

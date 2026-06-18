@@ -109,7 +109,7 @@ class HslColorConfig {
         fun method294(var_renderer: Renderer?, i: Int) {
             anInt328++
             if (ProportionalScrollbarComponent.aNodeDeque_9931!!.method1998(i) != 0) {
-                if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) {
+                if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) {
                     var class348_sub7 = (ProportionalScrollbarComponent.aNodeDeque_9931!!.method1995(4) as RegionTileNode?)
                     while (class348_sub7 != null) {
                         ClientException.aModelHeaderCache_112!!.method1932(var_renderer, class348_sub7.anInt6647, class348_sub7.anInt6648, WorldMapRenderer.aFont_4684, (if (!class348_sub7.aBoolean6650) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)), class348_sub7.anInt6642, false, 83.toByte(), var_renderer, class348_sub7.anInt6649, false, class348_sub7.anInt6645)

@@ -295,7 +295,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 spriteImages = SpriteImage.method1519(js5Archive, OverlayColorTable.anInt1756, 0)
                 CustomCursorsOptionState.aAbstractModelRendererArray5933 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) CustomCursorsOptionState.aAbstractModelRendererArray5933!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                spriteImages = SpriteImage.method1519(js5Archive, CutsceneSequenceData.anInt3739, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, TexGenMaterialPass.anInt3739, 0)
                 GrayscaleNoiseTexture.aAbstractModelRendererArray5294 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0

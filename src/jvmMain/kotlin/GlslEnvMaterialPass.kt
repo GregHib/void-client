@@ -145,7 +145,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
             } else string = "www-wtrc"
             var string_2_ = ""
             if (BloomGraphicsOptionState.aString5966 != null) string_2_ = "/p=" + BloomGraphicsOptionState.aString5966
-            return ("http://" + string + "." + (HardCacheEntryReference.aSceneProjector_10434?.aString2985) + ".com/l=" + AnimationFrameDefinition.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_2_ + "/")
+            return ("http://" + string + "." + (HardCacheEntryReference.aSceneProjector_10434?.aString2985) + ".com/l=" + ChatCommandProcessor.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_2_ + "/")
         }
 
         @JvmStatic

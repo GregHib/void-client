@@ -1,4 +1,6 @@
-import GrayscaleNoiseTexture.Companion.method554
+import CompressedBlockDecoder.method1547
+import GrayscaleNoiseTexture.Companion.anInt5284
+import RegionSceneShifter.Companion.aGzipDecompressor_6955
 
 /* Class291 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -23,7 +25,7 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
 
     private fun method2200(i: Byte, `is`: ByteArray?) {
         anInt3731++
-        val class348_sub49 = ByteBuffer(RegionSceneShifter.method3158(`is`, -105))
+        val class348_sub49 = ByteBuffer(method3158(`is`, -105))
         val i_2_ = class348_sub49.readUnsignedByte(255)
         if (i_2_ < 5 || i_2_ > 6) throw RuntimeException()
         if (i_2_ < 6) this.anInt3732 = 0
@@ -120,7 +122,7 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
             if (i != this.anInt3719) throw RuntimeException()
             if (is_27_ != null) {
                 if (is_27_.size != 64) throw RuntimeException()
-                aByteArray3740 = HashTileShape.method2730(4567, 0, `is`, `is`.size)
+                aByteArray3740 = method2730(4567, 0, `is`, `is`.size)
                 for (i_28_ in 0..63) {
                     if (aByteArray3740!![i_28_] != is_27_[i_28_]) throw RuntimeException()
                 }
@@ -132,32 +134,58 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
     }
 
     companion object {
-        var anInt3720: Int = 0
-        var anIntArray3726: IntArray? = null
         var anInt3731: Int = 0
-        var anInt3736: Int = 0
-        @JvmField
-        var aClass318_Sub1Array3737: Array<SceneEntity?>? = null
-        @JvmField
-        var anInt3739: Int = 0
-        var anInt3741: Int = 0
+        var anInt8811: Int = 0
+        var anInt7046: Int = 0
 
-        fun method2198(i: Int, i_0_: Int, i_1_: Int): Int {
-            var i_0_ = i_0_
-            i_0_ = i_0_ * (i_1_ and 0x7f) shr 7
-            if (i != 0) method2198(52, -11, 108)
-            anInt3741++
-            if (i_0_ >= 2) {
-                if (i_0_ > 126) i_0_ = 126
-            } else i_0_ = 2
-            return (0xff80 and i_1_) - -i_0_
+        fun method3158(`is`: ByteArray?, i: Int): ByteArray {
+            anInt7046++
+            val class348_sub49 = ByteBuffer(`is`)
+            val i_37_ = class348_sub49.readUnsignedByte(255)
+            val i_38_ = class348_sub49.readInt((-126).toByte())
+            if (i_38_ < 0 || (ConfigIdPair.anInt401 != 0 && i_38_ > ConfigIdPair.anInt401)) {
+                throw RuntimeException()
+            }
+            if (i_37_ != 0) {
+                val i_39_ = class348_sub49.readInt((-126).toByte())
+                if (i_39_ < 0 || (ConfigIdPair.anInt401 != 0 && i_39_ > ConfigIdPair.anInt401) || i_39_ > 10000000) {
+                    return ByteArray(4)
+                }
+                val is_40_ = ByteArray(i_39_)
+                if (i_37_ == 1) method1547(is_40_, i_39_, `is`, i_38_, 9)
+                else {
+                    withLock(aGzipDecompressor_6955!!) {
+                        aGzipDecompressor_6955!!.method1218(is_40_, 29123, class348_sub49)
+                    }
+                }
+                return is_40_
+            }
+            val is_41_ = ByteArray(i_38_)
+            class348_sub49.method3389(2147483647, 0, i_38_, is_41_)
+            return is_41_
         }
 
-        @JvmStatic
-        fun method2199(i: Byte) {
-            anIntArray3726 = null
-            if (i < 55) aClass318_Sub1Array3737 = null
-            aClass318_Sub1Array3737 = null
+        fun method554(i: Int, i_42_: Int, `is`: ByteArray?): Int {
+            anInt5284++
+            return ByteBuffer.method1319(i_42_, true, `is`!!, 0)
+        }
+        fun method2730(i: Int, i_4_: Int, `is`: ByteArray, i_5_: Int): ByteArray {
+            anInt8811++
+            val is_6_: ByteArray?
+            if (i_4_ > 0) {
+                is_6_ = ByteArray(i_5_)
+                var i_7_ = 0
+                while (i_5_ > i_7_) {
+                    is_6_[i_7_] = `is`[i_4_ + i_7_]
+                    i_7_++
+                }
+            } else is_6_ = `is`
+            val whirlpoolHash = WhirlpoolHash()
+            whirlpoolHash.method829(i + -4682)
+            whirlpoolHash.method832((i_5_ * 8).toLong(), is_6_, -69)
+            val is_8_ = ByteArray(64)
+            whirlpoolHash.method833(true, 0, is_8_)
+            return is_8_
         }
     }
 }

@@ -209,7 +209,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 ArbFogMaterialPass.aStringArray6200!![i_4_] = ""
                 i_4_++
             }
-            method94(LocalizedText.aLocalizedText_3483!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!, 67)
+            method94(LocalizedText.aLocalizedText_3483!!.method2063(ChatCommandProcessor.anInt6967, 544)!!, 67)
         }
     }
 }

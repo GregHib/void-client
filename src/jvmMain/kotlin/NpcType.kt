@@ -380,18 +380,18 @@ class NpcType {
                             KaraokeSubtitleStream.anIntArray9050!![i_50_] = class17_51_.anIntArray267!![i_52_]
                             TooltipComponentRenderer.anIntArray4648!![i_50_] = loadProgressCounters[i_50_]!!.anInt2456
                             var i_55_ = class17_51_.anIntArray237[i_53_]
-                            TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_] = widgetCache.method839(i_55_ ushr 16, 3)
+                            NpcType.aClass348_Sub42_Sub17Array9672!![i_50_] = widgetCache.method839(i_55_ ushr 16, 3)
                             i_55_ = i_55_ and 0xffff
                             ParticleDefLoader.anIntArray2466!![i_50_] = i_55_
-                            if ((TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]) != null) {
-                                bool_46_ = bool_46_ or TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3272(i_55_, 0)
-                                bool_45_ = bool_45_ or TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3271(i_55_, 14)
-                                bool_48_ = bool_48_ or TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3267((-99).toByte(), i_55_)
+                            if ((NpcType.aClass348_Sub42_Sub17Array9672!![i_50_]) != null) {
+                                bool_46_ = bool_46_ or NpcType.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3272(i_55_, 0)
+                                bool_45_ = bool_45_ or NpcType.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3271(i_55_, 14)
+                                bool_48_ = bool_48_ or NpcType.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3267((-99).toByte(), i_55_)
                             }
                         } else {
                             KaraokeSubtitleStream.anIntArray9050!![i_50_] = 0
                             TooltipComponentRenderer.anIntArray4648!![i_50_] = 0
-                            TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_] = null
+                            NpcType.aClass348_Sub42_Sub17Array9672!![i_50_] = null
                             ParticleDefLoader.anIntArray2466!![i_50_] = -1
                         }
                     }
@@ -572,7 +572,7 @@ class NpcType {
                     i_87_,
                     RegionMapDecoder.anIntArray1518!![i_86_],
                     ParticleDefLoader.anIntArray2466!![i_86_],
-                    (TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_86_]),
+                    (NpcType.aClass348_Sub42_Sub17Array9672!![i_86_]),
                     0,
                     (ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_86_]),
                     (AudioResampler.aWidgetDefinitionArray2169s!![i_86_]!!.aBoolean242),
@@ -603,7 +603,7 @@ class NpcType {
             var i_91_ = 0
             while (i_49_ > i_91_) {
                 ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_91_] = null
-                TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_91_] = null
+                NpcType.aClass348_Sub42_Sub17Array9672!![i_91_] = null
                 AudioResampler.aWidgetDefinitionArray2169s!![i_91_] = null
                 i_91_++
             }
@@ -800,8 +800,8 @@ class NpcType {
         fun method802(i: Int, i_93_: Int, bool: Boolean): Boolean {
             if (bool != true) return false
             anInt1332++
-            if (i_93_ < 0 || i < 0 || i_93_ >= AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!!.size || i >= AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_93_]!!.size) return false
-            return (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_93_]!![i].toInt() and 0x2) != 0
+            if (i_93_ < 0 || i < 0 || i_93_ >= GraphicsOptionState.aByteArrayArrayArray6962!![1]!!.size || i >= GraphicsOptionState.aByteArrayArrayArray6962!![1]!![i_93_]!!.size) return false
+            return (GraphicsOptionState.aByteArrayArrayArray6962!![1]!![i_93_]!![i].toInt() and 0x2) != 0
         }
 
         @JvmStatic
@@ -809,6 +809,16 @@ class NpcType {
             aAbstractModelRenderer_1365 = null
             aClient1367 = null
             if (i != -3752) anInt1387 = 14
+        }
+        var aClass348_Sub42_Sub17Array9672: Array<TextureMaterialGroup?>? = arrayOfNulls<TextureMaterialGroup>(14)
+        var aFontMetaRef_9679: FontMetaRef? = FontMetaRef(27, 7)
+        var anIntArrayArray9678: Array<IntArray?>? = null
+        @JvmStatic
+        fun method3269(bool: Boolean) {
+            aClass348_Sub42_Sub17Array9672 = null
+            aFontMetaRef_9679 = null
+            anIntArrayArray9678 = null
+            if (!bool) MapTileShape.method3270((-116).toByte())
         }
     }
 }

@@ -72,7 +72,7 @@ class ChatMessageStream : OutputStream() {
         @JvmStatic
         fun method138(class348_sub42_sub12: ContactEntry, bool: Boolean): Int {
             anInt107++
-            var string = IntHashSet.method2367((-126).toByte(), class348_sub42_sub12)
+            var string = IntHashSetStatics.method2367((-126).toByte(), class348_sub42_sub12)
             var `is`: IntArray? = null
             if (!WidgetNodeLink.method1197(-12081, (class348_sub42_sub12.anInt9608))) {
                 if (class348_sub42_sub12.anInt9599 == -1) {

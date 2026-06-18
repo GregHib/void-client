@@ -128,8 +128,8 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         }
         method1672(aClass318_Sub1_3051, true)
         if (bool_3_) {
-            bool_3_ = bool_3_ and (aBoolean3065 and (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0))
-            bool_3_ = (bool_3_ and (npcConfig.anInt941 != anInt3056 || (aWidgetDefinition_3057 != null && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aWidgetDefinition_3057!!.aBoolean254 || ItemNameResolver.aBoolean5002) && (anInt3083 != anInt3084))))))
+            bool_3_ = bool_3_ and (aBoolean3065 and (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0))
+            bool_3_ = (bool_3_ and (npcConfig.anInt941 != anInt3056 || (aWidgetDefinition_3057 != null && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aWidgetDefinition_3057!!.aBoolean254 || ItemNameResolver.aBoolean5002) && (anInt3083 != anInt3084))))))
         }
         if (bool && !bool_3_) {
             anInt3053 = npcConfig.anInt941

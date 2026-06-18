@@ -80,7 +80,7 @@ class TypedRecordTable {
                             if (!widgetDefinition.aBoolean268) TextureTileRenderer.method2947(true, i_7_, i_2_, i_3_, 0, i_6_)
                             else SoundChannelMixer.method2090(i_3_, i_6_, false, (-35).toByte(), i_7_, 0, i_2_)
                         }
-                    } else if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350) != 0) {
+                    } else if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350) != 0) {
                         val i_8_ = (class318_sub1!!.x + -256 shr 9)
                         val i_9_ = (class318_sub1.y - 256 shr 9)
                         val i_10_ = (if (LocalPlayerState.aPlayer_1907 != class318_sub1) ((class318_sub1.plane.toInt() shl 24) + ((i_8_ shl 16) + (i_9_ shl 8)) + i_5_) else 0)
@@ -117,8 +117,8 @@ class TypedRecordTable {
                     if (i_18_ > i_19_ * i_19_) {
                         i_19_ -= 10
                         val i_20_: Int
-                        if (WeaveTextureNode.anInt9282 == 4) i_20_ = ResourceProvider.aFloat3938.toInt() and 0x3fff
-                        else i_20_ = 0x3fff and (ResourceProvider.aFloat3938.toInt() + OpenGlRenderNode.anInt10483)
+                        if (WeaveTextureNode.anInt9282 == 4) i_20_ = CameraDistanceOptionState.aFloat3938.toInt() and 0x3fff
+                        else i_20_ = 0x3fff and (CameraDistanceOptionState.aFloat3938.toInt() + OpenGlRenderNode.anInt10483)
                         var i_21_ = TrigLookupTables.anIntArray1207!![i_20_]
                         var i_22_ = TrigLookupTables.anIntArray1204!![i_20_]
                         if (WeaveTextureNode.anInt9282 != 4) {

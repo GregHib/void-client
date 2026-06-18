@@ -101,7 +101,7 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
 
         @JvmStatic
         fun method1177(i: Byte) {
-            CutsceneSequenceData.anIntArray3726 = method3533(127.toByte(), 2048, 4, 8, 0.4f, 35, true, 8)
+            GlTexture3D.anIntArray3726 = method3533(127.toByte(), 2048, 4, 8, 0.4f, 35, true, 8)
             if (i.toInt() == 122) anInt1970++
         }
 

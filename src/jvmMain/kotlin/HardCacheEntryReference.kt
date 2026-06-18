@@ -186,7 +186,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             }
             if (bool != true) aSceneProjector_10434 = null
             if (ModelVertexColorBuffer.aIntRange_6584 == InputSettingsState.aIntRange_1762) {
-                LightingOptionState.aString5882 = (if (RadialTextureNode.anInt9341 > 2) CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else LocalizedText.aLocalizedText_3509!!.method2063(AnimationFrameDefinition.anInt6967, 544))
+                LightingOptionState.aString5882 = (if (RadialTextureNode.anInt9341 > 2) CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else LocalizedText.aLocalizedText_3509!!.method2063(ChatCommandProcessor.anInt6967, 544))
                 MapElementLookup.anInt4144 = (if (RadialTextureNode.anInt9341 <= 0) -1 else CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944))
                 if (MapElementLookup.anInt4144 == 65535) MapElementLookup.anInt4144 = -1
                 ModelVertexColorBuffer.aIntRange_6584 = null
@@ -1301,11 +1301,11 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (CompositeRgbNoiseTexture.aIntRange_8683 == ModelVertexColorBuffer.aIntRange_6584) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val `is` = ByteArray(RadialTextureNode.anInt9341)
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3409(RadialTextureNode.anInt9341, `is`, 0, -32769)
                 val string = ByteBuffer.method3546(`is`, 0, RadialTextureNode.anInt9341, 0)
-                GrowableStringList.method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, true, 99)
+                GrowableStringList.method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, true, 99)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }

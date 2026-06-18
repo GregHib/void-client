@@ -157,7 +157,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
         fun method3179(i: Int) {
             CacheStateResetter.method175((-50).toByte())
             anInt9508++
-            val i_16_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
+            val i_16_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
             do {
                 if (i_16_ == 2) {
                     method1083(FacingDirectionNode.aRenderer6654, 100, 9.toByte(), HardCacheEntryReference.anInt10432, 100, LocTypeDefinition.anInt4017)
@@ -165,10 +165,10 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
                 } else if (i_16_ != 3) break
                 method282(2, FacingDirectionNode.aRenderer6654, LocTypeDefinition.anInt4017, 73.toByte(), Js5Archive.anInt666, PerlinTextureProvider.anInt5812, HardCacheEntryReference.anInt10432, 2)
             } while (false)
-            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)) TerrainTileStatics.method3980(i + 93, ParticleSystemRenderer.aCanvas3869!!)
+            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)) TerrainTileStatics.method3980(i + 93, ParticleSystemRenderer.aCanvas3869!!)
             if (FacingDirectionNode.aRenderer6654 != null) BufferToggleState.method2196((-9).toByte())
-            ParticleSystemRenderer.aBoolean3870 = i != IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
-            GrayscaleNoiseTexture.aBoolean5300 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)
+            ParticleSystemRenderer.aBoolean3870 = i != IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
+            GrayscaleNoiseTexture.aBoolean5300 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)
         }
 
         init {

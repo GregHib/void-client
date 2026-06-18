@@ -27,7 +27,7 @@ class NamedTimedNode internal constructor(@JvmField var aString8783: String?, i:
                 val mapSceneTiles: Array<MapSceneTile?> = WorldListEntry.method286((-107).toByte(), VorbisOggDecoder.aPrivilegedOperationWorker_8992!!)
                 val mapSceneTileS_0_s: Array<MapSceneTile?> = arrayOfNulls<MapSceneTile>(mapSceneTiles.size)
                 var i_1_ = 0
-                val i_2_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1818(-32350)
+                val i_2_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1818(-32350)
                 var i_3_ = 0
                 while_108_@ while (mapSceneTiles.size > i_3_) {
                     val class57 = mapSceneTiles[i_3_]!!

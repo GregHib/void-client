@@ -33,7 +33,7 @@ class ParticleGeometry internal constructor(`is`: IntArray?, is_1_: IntArray?, i
         }
 
         fun method3489(i: Int) {
-            LruByteCache.aRenderer1098!!.xa((IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!.method1764(-32350).toFloat() * 0.1f + 0.7f) * 1.1523438f)
+            LruByteCache.aRenderer1098!!.xa((IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!.method1764(-32350).toFloat() * 0.1f + 0.7f) * 1.1523438f)
             anInt4413++
             LruByteCache.aRenderer1098!!.ZA(LocDefinitionCache.anInt3439, 0.69921875f, 1.2f, -200.0f, -240.0f, -200.0f)
             LruByteCache.aRenderer1098!!.L(LocDefinitionCache.anInt3444, -1, 0)

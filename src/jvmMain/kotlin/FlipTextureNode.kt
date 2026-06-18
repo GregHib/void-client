@@ -346,7 +346,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     if (string == null) string = ""
                                                 }
                                                 if (SpriteRenderable.aWidgetComponent_4730 == class46) {
-                                                    string = (LocalizedText.aLocalizedText_3514!!.method2063((AnimationFrameDefinition.anInt6967), 544))
+                                                    string = (LocalizedText.aLocalizedText_3514!!.method2063((ChatCommandProcessor.anInt6967), 544))
                                                     i_50_ = (class46.anInt749)
                                                 }
                                                 if (SequencedGroundDecor.aBoolean10046) FacingDirectionNode.aRenderer6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (class46.anInt789) + i_25_)
@@ -562,8 +562,8 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                 string = string.substring(0, i_1_) + "," + string.substring(i_1_)
                 i_1_ -= 3
             }
-            if (string.length > 9) return (" <col=00ff80>" + string.substring(0, string.length + -8) + LocalizedText.aLocalizedText_3516!!.method2063(AnimationFrameDefinition.anInt6967, 544) + " (" + string + ")</col>")
-            if (string.length > 6) return (" <col=ffffff>" + string.substring(0, -4 + string.length) + LocalizedText.aLocalizedText_3518!!.method2063(AnimationFrameDefinition.anInt6967, 544) + " (" + string + ")</col>")
+            if (string.length > 9) return (" <col=00ff80>" + string.substring(0, string.length + -8) + LocalizedText.aLocalizedText_3516!!.method2063(ChatCommandProcessor.anInt6967, 544) + " (" + string + ")</col>")
+            if (string.length > 6) return (" <col=ffffff>" + string.substring(0, -4 + string.length) + LocalizedText.aLocalizedText_3518!!.method2063(ChatCommandProcessor.anInt6967, 544) + " (" + string + ")</col>")
             return " <col=ffff00>" + string + "</col>"
         }
     }

@@ -132,14 +132,14 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
         fun method3038(i: Int) {
             anInt7044++
             var i_0_ = 0
-            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) == 1) {
+            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) == 1) {
                 i_0_ = i_0_ or 0x1
                 i_0_ = i_0_ or 0x10
                 i_0_ = i_0_ or 0x20
                 i_0_ = i_0_ or 0x2
                 i_0_ = i_0_ or 0x4
             }
-            if ((IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350).inv()) == i) i_0_ = i_0_ or 0x40
+            if ((IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350).inv()) == i) i_0_ = i_0_ or 0x40
             method2420(i_0_, i)
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2009(i_0_, 109.toByte())
             ClientException.aModelHeaderCache_112!!.method1942(i_0_, (-125).toByte())

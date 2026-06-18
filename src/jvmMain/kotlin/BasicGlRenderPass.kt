@@ -81,7 +81,7 @@ class BasicGlRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abst
                 i_3_,
                 i_6_
             )
-            else IntHashSet.method2364(i_3_, i_7_, i_6_, i_2_, i_5_, i_8_, i_9_, i, 3, i_4_)
+            else IntHashSetStatics.method2364(i_3_, i_7_, i_6_, i_2_, i_5_, i_8_, i_9_, i, 3, i_4_)
             if (bool != true) method3540(37, -122, 69, -89, -8, -19, 89, 112, 12, false)
             anInt7302++
         }

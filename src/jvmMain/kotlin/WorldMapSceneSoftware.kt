@@ -9,7 +9,6 @@ import HudTabPanel.Companion.method1639
 import RemoveRoofsOptionState.Companion.method1810
 import GlTexture2D.Companion.method1966
 import ScrollTexMaterialPass.Companion.method2168
-import ResourceProvider.Companion.method2336
 import MidiSequencePlayer.Companion.method2878
 import MidiSequencePlayer.Companion.method2879
 import KaraokeSubtitleStream.Companion.method2987
@@ -32,10 +31,10 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
     fun method1689(i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, collisionMap: CollisionMap?) {
         try {
             anInt5823++
-            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i_3_ xor 0x7e6f.inv()) != 0 || method536(i_5_, false, i, ParticleSystemState.anInt2204, i_2_)) {
+            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i_3_ xor 0x7e6f.inv()) != 0 || method536(i_5_, false, i, ParticleSystemState.anInt2204, i_2_)) {
                 if (this.anInt5824 > i_0_) this.anInt5824 = i_0_
                 val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_1_)
-                if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i_3_ + -32400) != 0 || !class51.aBoolean931) {
+                if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i_3_ + -32400) != 0 || !class51.aBoolean931) {
                     val i_8_: Int
                     val i_9_: Int
                     if (i_7_ == 1 || i_7_ == 3) {
@@ -73,7 +72,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     val bool_17_ = (i_6_ == -1 && class51.anInt868 == -1 && class51.anIntArray943 == null && class51.anIntArray945 == null && !class51.aBoolean929)
                     if (!SpriteRenderable.aBoolean4728 || ((!ScreenBorderFiller.method1172((-85).toByte(), i_4_) || class51.anInt955 == 1) && (!method1639(i_4_, i_3_ xor 0x3918) || class51.anInt955 != 0))) {
                         if (i_4_ == 22) {
-                            if ((IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0) || (class51.anInt874 != 0) || (class51.anInt920 == 1) || class51.aBoolean947) {
+                            if ((IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0) || (class51.anInt874 != 0) || (class51.anInt920 == 1) || class51.aBoolean947) {
                                 val class318_sub1_sub1: TileSceneEntity?
                                 if (bool_17_) {
                                     val class318_sub1_sub1_sub2 = (GroundDecorSceneEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_7_, bool))
@@ -504,7 +503,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             var collisionMap: CollisionMap? = null
                             if (!this.aBoolean3109) {
                                 var i_92_ = i_79_
-                                if ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_90_]!![i_91_]).toInt()) == 2) i_92_--
+                                if ((0x2 and (GraphicsOptionState.aByteArrayArrayArray6962!![1]!![i_90_]!![i_91_]).toInt()) == 2) i_92_--
                                 if (i_92_ >= 0) collisionMap = collisionMaps!![i_92_]
                             }
                             method1689(i_90_, i_79_, i_80_, var_renderer, i_79_, 50, i_88_, i_91_, -1, i_89_ - -i_73_ and 0x3, collisionMap)
@@ -595,7 +594,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             var collisionMap: CollisionMap? = null
                             if (!this.aBoolean3109) {
                                 var i_113_ = i_107_
-                                if ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_111_]!![i_112_]).toInt()) == 2) i_113_--
+                                if ((0x2 and (GraphicsOptionState.aByteArrayArrayArray6962!![1]!![i_111_]!![i_112_]).toInt()) == 2) i_113_--
                                 if (i_113_ >= 0) collisionMap = collisionMaps!![i_113_]
                             }
                             method1689(i_111_, i_107_, i_101_, var_renderer, i_107_, i_100_ xor 0x57d, i_109_, i_112_, -1, i_110_, collisionMap)
@@ -746,7 +745,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     while (this.anInt3117 > i_149_) {
                         var i_150_ = 0
                         while (this.anInt3114 > i_150_) {
-                            if ((0x2 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_149_]!![i_150_]).toInt()) == 2) method258(i_149_, i_150_)
+                            if ((0x2 and (GraphicsOptionState.aByteArrayArrayArray6962!![1]!![i_149_]!![i_150_]).toInt()) == 2) method258(i_149_, i_150_)
                             i_150_++
                         }
                         i_149_++
@@ -846,6 +845,28 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
         fun method1698(i: Int) {
             aTileRenderState_5821 = null
             if (i != 1) method1698(-10)
+        }
+
+        var anInt3940: Int = 0
+        fun method2336(npcConfig: NpcConfig, i: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
+            anInt3940++
+            if (i_3_ > -126) FloorOverlayDefinition.anInt3941 = 15
+            var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as? CharacterRenderState?
+            while (class348_sub9 != null) {
+                if (i_2_ == class348_sub9.anInt6693 && (class348_sub9.anInt6678 == i shl 9) && (i_1_ shl 9 == class348_sub9.anInt6689) && (class348_sub9.aNpcConfig_6695!!.anInt941 == npcConfig.anInt941)) {
+                    if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
+                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
+                        class348_sub9.aClass348_Sub16_Sub5_6676 = null
+                    }
+                    if (class348_sub9.aClass348_Sub16_Sub5_6673 != null) {
+                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6673!!)
+                        class348_sub9.aClass348_Sub16_Sub5_6673 = null
+                    }
+                    class348_sub9.method2715(125.toByte())
+                    break
+                }
+                class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1990(123.toByte()) as? CharacterRenderState?
+            }
         }
     }
 }

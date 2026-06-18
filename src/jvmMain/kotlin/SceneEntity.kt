@@ -118,8 +118,8 @@ abstract class SceneEntity : SceneLinkedListNode() {
                             var i_9_ = 0
                             while (`is`.size / 2 > i_9_) {
                                 val i_10_: Int
-                                if (WeaveTextureNode.anInt9282 != 4) i_10_ = 0x3fff and (OpenGlRenderNode.anInt10483 + ResourceProvider.aFloat3938.toInt())
-                                else i_10_ = ResourceProvider.aFloat3938.toInt() and 0x3fff
+                                if (WeaveTextureNode.anInt9282 != 4) i_10_ = 0x3fff and (OpenGlRenderNode.anInt10483 + CameraDistanceOptionState.aFloat3938.toInt())
+                                else i_10_ = CameraDistanceOptionState.aFloat3938.toInt() and 0x3fff
                                 var i_11_ = TrigLookupTables.anIntArray1207!![i_10_]
                                 var i_12_ = TrigLookupTables.anIntArray1204!![i_10_]
                                 if (WeaveTextureNode.anInt9282 != 4) {

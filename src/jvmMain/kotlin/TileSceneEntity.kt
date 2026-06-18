@@ -69,7 +69,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
                 MapTileShape.anInt4186 = i_2_
                 MinimapAreaMarkerNode.anInt9701 = i
             }
-            ResourceProvider.aFloat3938 = i_1_.toFloat()
+            CameraDistanceOptionState.aFloat3938 = i_1_.toFloat()
             SceneObjectSpawner.aFloat1287 = i.toFloat()
             method1725(262144)
             WorldMapPolygonIconLabel.aBoolean10174 = true

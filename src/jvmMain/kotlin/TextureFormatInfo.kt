@@ -91,7 +91,7 @@ class TextureFormatInfo internal constructor(var anInt3850: Int) {
 
         fun method2291(i: Byte, i_4_: Int, i_5_: Int) {
             anInt3849++
-            var i_6_ = (WorldMapLabel.aFontDefinition_4962!!.method1183(true, LocalizedText.aLocalizedText_3507!!.method2063(AnimationFrameDefinition.anInt6967, 544)))
+            var i_6_ = (WorldMapLabel.aFontDefinition_4962!!.method1183(true, LocalizedText.aLocalizedText_3507!!.method2063(ChatCommandProcessor.anInt6967, 544)))
             val i_7_: Int
             if (ChatScriptListNode.aBoolean9535) {
                 var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-87) as? ContactList?)

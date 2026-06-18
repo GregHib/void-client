@@ -866,8 +866,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 for (i in RemoveRoofsOptionState.aClass318_Sub1Array6066!!.indices) RemoveRoofsOptionState.aClass318_Sub1Array6066!![i] = null
                 ProportionalScrollbarComponent.anInt9930 = 0
             }
-            if (CutsceneSequenceData.aClass318_Sub1Array3737 != null) {
-                for (i in CutsceneSequenceData.aClass318_Sub1Array3737!!.indices) CutsceneSequenceData.aClass318_Sub1Array3737!![i] = null
+            if (GlTexture3D.aClass318_Sub1Array3737 != null) {
+                for (i in GlTexture3D.aClass318_Sub1Array3737!!.indices) GlTexture3D.aClass318_Sub1Array3737!![i] = null
                 LoadingScreenImageNode.anInt9504 = 0
             }
             if (WaterDetailOptionState.aSoundEnvelopeArray5993 != null) {

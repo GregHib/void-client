@@ -189,7 +189,7 @@ class TextureTileRenderer internal constructor(private val aS_Sub2_6839: OpenGlT
         fun method2947(bool: Boolean, i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
             anInt6837++
             if (bool != true) method2950(121)
-            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350) != 0 && i_5_ != 0 && HintArrowOrMessage.anInt2021 < 50 && i_4_ != -1) GlTextureCubeMap.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(1.toByte(), i_4_, i_5_, i_6_, i, 0, i_7_, null)
+            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350) != 0 && i_5_ != 0 && HintArrowOrMessage.anInt2021 < 50 && i_4_ != -1) GlTextureCubeMap.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(1.toByte(), i_4_, i_5_, i_6_, i, 0, i_7_, null)
         }
 
         @JvmStatic

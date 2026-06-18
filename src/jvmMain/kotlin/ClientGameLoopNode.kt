@@ -23,8 +23,16 @@ import SolidFillComponent.Companion.method198
 import GameClock.method599
 import direct.Direct3dModel.Companion.method661
 import ChatCommandProcessor.method705
+import java.io.ByteArrayInputStream
 import java.io.File
 import java.io.IOException
+import java.io.InvalidClassException
+import java.io.ObjectInputStream
+import java.io.OptionalDataException
+import java.io.StreamCorruptedException
+import java.lang.reflect.Field
+import java.lang.reflect.InvocationTargetException
+import java.lang.reflect.Method
 import java.util.*
 
 class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875: Int) : LinkedListNode() {
@@ -57,7 +65,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                         val class348_sub47 = method2148(ScreenBorderFiller.aFontMetaRef_1961, (TheoraVideoStream.aIsaacCipher_9029), -92)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                         val i_1_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
-                        AnimationFrameDefinition.Companion.method3025(121.toByte(), (class348_sub47.aClass348_Sub49_Sub2_7116!!))
+                        method3025(121.toByte(), (class348_sub47.aClass348_Sub49_Sub2_7116!!))
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(113, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) + -i_1_)
                         InterfaceComponentGroup.method3243(119, class348_sub47)
                     }
@@ -169,7 +177,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                         WorldMapPolygonIconLabel.aBoolean10174 = false
                         HintArrowOrMessage.anInt2035 = 20
                         val class348_sub47 = method2148(ClanChatRequestSender.aFontMetaRef_3648, (TheoraVideoStream.aIsaacCipher_9029), i + -11549)
-                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(i xor 0x3c4d, ResourceProvider.aFloat3938.toInt() shr 3)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(i xor 0x3c4d, CameraDistanceOptionState.aFloat3938.toInt() shr 3)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), SceneObjectSpawner.aFloat1287.toInt() shr 3)
                         InterfaceComponentGroup.method3243(-31, class348_sub47)
                     }
@@ -185,7 +193,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                         val class348_sub47 = method2148((FloatBuffer.aFontMetaRef_9743), (TheoraVideoStream.aIsaacCipher_9029), -113)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                         val i_14_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
-                        val class348_sub49 = IntHashSet.aClass348_Sub51_3959!!.method3427(i xor 0x2cb0)
+                        val class348_sub49 = IntHashSetStatics.aClass348_Sub51_3959!!.method3427(i xor 0x2cb0)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154!!, 82)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(96, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) + -i_14_)
                         InterfaceComponentGroup.method3243(i + -11473, class348_sub47)
@@ -421,8 +429,8 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                                 var class318_sub9_sub1 = (InterfaceComponentGroup.aDoublyLinkedNodeList_9642!!.method1872(i + -11424) as? NamedTimedNode?)
                                 while (class318_sub9_sub1 != null) {
                                     if ((method599(i xor 0x2ce9.inv()) / 1000L + -5L) > class318_sub9_sub1.anInt8787.toLong()) {
-                                        if (class318_sub9_sub1.aShort8786 > 0) FixedFunctionMaterialPass.method2144("", 5, (-128).toByte(), 0, (class318_sub9_sub1.aString8783 + (LocalizedText.aLocalizedText_3502!!.method2063(AnimationFrameDefinition.Companion.anInt6967, 544))), "", "")
-                                        if (class318_sub9_sub1.aShort8786.toInt() == 0) FixedFunctionMaterialPass.method2144("", 5, (-105).toByte(), 0, (class318_sub9_sub1.aString8783 + (LocalizedText.aLocalizedText_3503!!.method2063(AnimationFrameDefinition.Companion.anInt6967, 544))), "", "")
+                                        if (class318_sub9_sub1.aShort8786 > 0) FixedFunctionMaterialPass.method2144("", 5, (-128).toByte(), 0, (class318_sub9_sub1.aString8783 + (LocalizedText.aLocalizedText_3502!!.method2063(ChatCommandProcessor.anInt6967, 544))), "", "")
+                                        if (class318_sub9_sub1.aShort8786.toInt() == 0) FixedFunctionMaterialPass.method2144("", 5, (-105).toByte(), 0, (class318_sub9_sub1.aString8783 + (LocalizedText.aLocalizedText_3503!!.method2063(ChatCommandProcessor.anInt6967, 544))), "", "")
                                         class318_sub9_sub1.method2373(false)
                                     }
                                     class318_sub9_sub1 = (InterfaceComponentGroup.aDoublyLinkedNodeList_9642!!.method1878((-105).toByte()) as? NamedTimedNode?)
@@ -588,6 +596,106 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                 /* empty */
             }
             File(string)
+        }
+
+        var anInt6961: Int = 0
+        fun method3025(i: Byte, class348_sub49_sub2: CipheredPacketBuffer) {
+            anInt6961++
+            val class348_sub48 = IntKeyNode.Companion.aNodeDeque_6978!!.method1995(4) as ModelResourceBundle?
+            if (class348_sub48 != null) {
+                var bool = false
+                for (i_0_ in 0..<class348_sub48.anInt7126) {
+                    if (class348_sub48.aLinkedQueueNodeArray7135!![i_0_] != null) {
+                        if ((class348_sub48.aLinkedQueueNodeArray7135!![i_0_]!!.anInt1997) == 2) class348_sub48.anIntArray7131!![i_0_] = -5
+                        if ((class348_sub48.aLinkedQueueNodeArray7135!![i_0_]!!.anInt1997) == 0) bool = true
+                    }
+                    if (class348_sub48.aLinkedQueueNodeArray7127!![i_0_] != null) {
+                        if ((class348_sub48.aLinkedQueueNodeArray7127!![i_0_]!!.anInt1997) == 2) class348_sub48.anIntArray7131!![i_0_] = -6
+                        if ((class348_sub48.aLinkedQueueNodeArray7127!![i_0_]!!.anInt1997) == 0) bool = true
+                    }
+                }
+                if (i < 37) LoadProgressCounters.aLong6966 = -3L
+                if (!bool) {
+                    val i_1_ = class348_sub49_sub2.anInt7197
+                    class348_sub49_sub2.writeInt(94.toByte(), class348_sub48.anInt7130)
+                    var i_2_ = 0
+                    while ((i_2_ < class348_sub48.anInt7126)) {
+                        if (class348_sub48.anIntArray7131!![i_2_] == 0) {
+                            try {
+                                val i_3_ = (class348_sub48.anIntArray7132!![i_2_])
+                                if (i_3_ == 0) {
+                                    val field = ((class348_sub48.aLinkedQueueNodeArray7135!![i_2_]!!.anObject1998) as Field?)
+                                    val i_5_ = field!!.getInt(null)
+                                    class348_sub49_sub2.writeByte(false, 0)
+                                    class348_sub49_sub2.writeInt(108.toByte(), i_5_)
+                                } else if (i_3_ == 1) {
+                                    val field = ((class348_sub48.aLinkedQueueNodeArray7135!![i_2_]!!.anObject1998) as Field?)
+                                    field!!.setInt(null, (class348_sub48.anIntArray7136!![i_2_]))
+                                    class348_sub49_sub2.writeByte(false, 0)
+                                } else if (i_3_ == 2) {
+                                    val field = ((class348_sub48.aLinkedQueueNodeArray7135!![i_2_]!!.anObject1998) as Field?)
+                                    val i_4_ = field!!.getModifiers()
+                                    class348_sub49_sub2.writeByte(false, 0)
+                                    class348_sub49_sub2.writeInt(122.toByte(), i_4_)
+                                }
+                                if (i_3_ == 3) {
+                                    val method = ((class348_sub48.aLinkedQueueNodeArray7127!![i_2_]!!.anObject1998) as Method?)
+                                    val `is` = (class348_sub48.aByteArrayArrayArray7128!![i_2_])!!
+                                    val objects = arrayOfNulls<Any>(`is`.size)
+                                    var i_6_ = 0
+                                    while (`is`.size > i_6_) {
+                                        val objectinputstream = (ObjectInputStream(ByteArrayInputStream(`is`[i_6_])))
+                                        objects[i_6_] = objectinputstream.readObject()
+                                        i_6_++
+                                    }
+                                    val `object` = method!!.invoke(null, *objects)
+                                    if (`object` != null) {
+                                        if (`object` is Number) {
+                                            class348_sub49_sub2.writeByte(false, 1)
+                                            class348_sub49_sub2.writeLong(`object`.toLong(), (-81).toByte())
+                                        } else if (`object` is String) {
+                                            class348_sub49_sub2.writeByte(false, 2)
+                                            class348_sub49_sub2.writeString((-5).toByte(), `object`)
+                                        } else class348_sub49_sub2.writeByte(false, 4)
+                                    } else class348_sub49_sub2.writeByte(false, 0)
+                                } else if (i_3_ == 4) {
+                                    val method = ((class348_sub48.aLinkedQueueNodeArray7127!![i_2_]!!.anObject1998) as Method?)
+                                    val i_7_ = method!!.getModifiers()
+                                    class348_sub49_sub2.writeByte(false, 0)
+                                    class348_sub49_sub2.writeInt(95.toByte(), i_7_)
+                                }
+                            } catch (classnotfoundexception: ClassNotFoundException) {
+                                class348_sub49_sub2.writeByte(false, -10)
+                            } catch (invalidclassexception: InvalidClassException) {
+                                class348_sub49_sub2.writeByte(false, -11)
+                            } catch (streamcorruptedexception: StreamCorruptedException) {
+                                class348_sub49_sub2.writeByte(false, -12)
+                            } catch (optionaldataexception: OptionalDataException) {
+                                class348_sub49_sub2.writeByte(false, -13)
+                            } catch (illegalaccessexception: IllegalAccessException) {
+                                class348_sub49_sub2.writeByte(false, -14)
+                            } catch (illegalargumentexception: IllegalArgumentException) {
+                                class348_sub49_sub2.writeByte(false, -15)
+                            } catch (invocationtargetexception: InvocationTargetException) {
+                                class348_sub49_sub2.writeByte(false, -16)
+                            } catch (securityexception: SecurityException) {
+                                class348_sub49_sub2.writeByte(false, -17)
+                            } catch (ioexception: IOException) {
+                                class348_sub49_sub2.writeByte(false, -18)
+                            } catch (nullpointerexception: NullPointerException) {
+                                class348_sub49_sub2.writeByte(false, -19)
+                            } catch (exception: Exception) {
+                                class348_sub49_sub2.writeByte(false, -20)
+                            } catch (throwable: Throwable) {
+                                class348_sub49_sub2.writeByte(false, -21)
+                            }
+                        } else class348_sub49_sub2.writeByte(false, (class348_sub48.anIntArray7131!![i_2_]))
+                        i_2_++
+                    }
+                    class348_sub49_sub2.method3344(i_1_, false)
+                    class348_sub48.method2715(46.toByte())
+                }
+            }
         }
     }
 }

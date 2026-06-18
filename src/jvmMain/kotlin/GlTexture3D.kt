@@ -194,5 +194,12 @@ class GlTexture3D : GlTexture {
             }
             DebugOverlayRenderer.method1884()
         }
+        var anIntArray3726: IntArray? = null
+        var aClass318_Sub1Array3737: Array<SceneEntity?>? = null
+        @JvmStatic
+        fun method2199(i: Byte) {
+            anIntArray3726 = null
+            aClass318_Sub1Array3737 = null
+        }
     }
 }

@@ -99,7 +99,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         return
                     }
                 } catch (exception: Exception) {
-                    method94((LocalizedText.aLocalizedText_3485!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!), -99)
+                    method94((LocalizedText.aLocalizedText_3485!!.method2063(ChatCommandProcessor.anInt6967, 544)!!), -99)
                     return
                 }
                 if (NpcAnimationResolver.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271 || AsyncTaskHandle.anInt2581 >= 2) {
@@ -239,9 +239,9 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         }
                         if (string.equals("tk0", ignoreCase = true)) {
                             method3553(false, 104.toByte(), 0)
-                            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) {
+                            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) {
                                 method94("Entered tk0", 101)
-                                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
+                                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
                                 method243(37)
                                 RenderNodeStatics.aBoolean9719 = false
                                 return
@@ -250,9 +250,9 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         }
                         if (string.equals("tk1", ignoreCase = true)) {
                             method3553(false, 109.toByte(), 1)
-                            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1) {
+                            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1) {
                                 method94("Entered tk1", -65)
-                                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 1)
+                                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 1)
                                 method243(i.toInt() xor 0x6b.inv())
                                 RenderNodeStatics.aBoolean9719 = false
                                 return
@@ -261,9 +261,9 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         }
                         if (string.equals("tk2", ignoreCase = true)) {
                             method3553(false, 115.toByte(), 2)
-                            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
+                            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
                                 method94("Entered tk2", i + 151)
-                                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 2)
+                                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 2)
                                 method243(37)
                                 RenderNodeStatics.aBoolean9719 = false
                             } else {
@@ -274,9 +274,9 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         }
                         if (string.equals("tk3", ignoreCase = true)) {
                             method3553(false, 107.toByte(), 3)
-                            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 3) {
+                            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 3) {
                                 method94("Entered tk3", 78)
-                                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 3)
+                                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 3)
                                 method243(37)
                                 RenderNodeStatics.aBoolean9719 = false
                                 return
@@ -285,9 +285,9 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         }
                         if (string.equals("tk5", ignoreCase = true)) {
                             method3553(false, 113.toByte(), 5)
-                            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i.toInt() xor 0x7e13) == 5) {
+                            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i.toInt() xor 0x7e13) == 5) {
                                 method94("Entered tk5", -108)
-                                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 5)
+                                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 5)
                                 method243(37)
                                 RenderNodeStatics.aBoolean9719 = false
                             } else {
@@ -302,10 +302,10 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 val i_6_ = (RegionSceneShifter.method3156(true, string.substring(6)))
                                 if (i_6_ < 0 || (LinkedListNodeStatics.method2710(-126, TextureDefinitionCache.anInt2964) < i_6_)) method94("Invalid buildarea value", 53)
                                 else {
-                                    IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i_6_)
+                                    IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i_6_)
                                     method243(37)
                                     RenderNodeStatics.aBoolean9719 = false
-                                    method94(("maxbuildarea=" + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350)), 98)
+                                    method94(("maxbuildarea=" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350)), 98)
                                     return
                                 }
                                 return
@@ -565,7 +565,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         }
                         if (string == "autosetup") {
                             method2478(1000)
-                            method94(("Complete. Toolkit now: " + IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -32271)), -97)
+                            method94(("Complete. Toolkit now: " + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -32271)), -97)
                             return
                         }
                         if (string == "errormessage") {
@@ -596,11 +596,11 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             if (i_20_ < 0) method94("Syntax: ortho <n>", 66)
                             else {
                                 val i_21_ = (RegionSceneShifter.method3156(true, string.substring(1 + i_20_)))
-                                IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_21_)
+                                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_21_)
                                 method243(37)
                                 RenderNodeStatics.aBoolean9719 = false
                                 LoadingScreenImageNode.method3179(i + 79)
-                                if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350) == i_21_) {
+                                if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350) == i_21_) {
                                     method94("Successfully changed ortho mode", -82)
                                     return
                                 } else method94("Failed to change ortho mode", -112)
@@ -609,7 +609,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.startsWith("orthozoom ")) {
-                            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(i + -32271) == 0) method94("enable ortho mode first (use 'ortho <n>')", i + 182)
+                            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(i + -32271) == 0) method94("enable ortho mode first (use 'ortho <n>')", i + 182)
                             else {
                                 val i_22_ = (RegionSceneShifter.method3156(true, string.substring(string.indexOf(' ') - -1)))
                                 LocalPlayerState.anInt1911 = i_22_
@@ -682,7 +682,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                     } catch (exception: Exception) {
-                        method94(LocalizedText.aLocalizedText_3485!!.method2063(AnimationFrameDefinition.anInt6967, 544)!!, -92)
+                        method94(LocalizedText.aLocalizedText_3485!!.method2063(ChatCommandProcessor.anInt6967, 544)!!, -92)
                         return
                     }
                 }
@@ -698,7 +698,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                 if (WorldMapRenderer.anInt4674 == 10) {
                     return
                 }
-                method94(LocalizedText.aLocalizedText_3486!!.method2063(AnimationFrameDefinition.anInt6967, 544) + string, 57)
+                method94(LocalizedText.aLocalizedText_3486!!.method2063(ChatCommandProcessor.anInt6967, 544) + string, 57)
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("lba.B(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + bool_0_ + ',' + i + ')'))
             }
@@ -729,7 +729,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                     }
                     val i_30_ = RegionTileNode.anInt6652
                     SceneObjectSpawner.Companion.aFloat1287 += MultiFieldRecord.aFloat6898 * l.toFloat() / 40.0f * 8.0f
-                    ResourceProvider.aFloat3938 += CircleDrawer.aFloat2687 * l.toFloat() / 40.0f * 8.0f
+                    CameraDistanceOptionState.aFloat3938 += CircleDrawer.aFloat2687 * l.toFloat() / 40.0f * 8.0f
                     if (AsyncTaskHandle.anInt2578 != i_30_) {
                         val i_31_ = -AsyncTaskHandle.anInt2578 + i_30_
                         var i_32_ = (l * i_31_.toLong() / 320L).toInt()

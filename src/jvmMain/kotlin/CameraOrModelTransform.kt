@@ -61,8 +61,8 @@ class CameraOrModelTransform {
             try {
                 anInt4153++
                 val i_7_: Int
-                if (WeaveTextureNode.anInt9282 == 4) i_7_ = ResourceProvider.aFloat3938.toInt() and 0x3fff
-                else i_7_ = 0x3fff and OpenGlRenderNode.anInt10483 + ResourceProvider.aFloat3938.toInt()
+                if (WeaveTextureNode.anInt9282 == 4) i_7_ = CameraDistanceOptionState.aFloat3938.toInt() and 0x3fff
+                else i_7_ = 0x3fff and OpenGlRenderNode.anInt10483 + CameraDistanceOptionState.aFloat3938.toInt()
                 val i_8_ = (max(widgetComponent!!.anInt709 / 2, widgetComponent.anInt789 / 2) + 10)
                 val i_9_ = i_5_ * i_5_ - -(i_1_ * i_1_)
                 if (i_9_ <= i_8_ * i_8_) {

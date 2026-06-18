@@ -70,8 +70,8 @@ public open class WorldMapLabel(screenAnchorAlignment: ScreenAnchorAlignment?, t
             if (i != 4) aFontDefinition_4962 = null
             GameAppletFrame.aFont_20 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, WidgetDefinition.anInt235)
             ParticleEmitterFactory.aFontDefinition_3179 = GlVertexBufferBase.method1151(-25411, var_renderer, WidgetDefinition.anInt235)
-            NodeDequeStatics.aFont_3326 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, CutsceneSequenceData.anInt3736)
-            aFontDefinition_4962 = GlVertexBufferBase.method1151(-25411, var_renderer, CutsceneSequenceData.anInt3736)
+            NodeDequeStatics.aFont_3326 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, DualMaterialContainer.anInt3736)
+            aFontDefinition_4962 = GlVertexBufferBase.method1151(-25411, var_renderer, DualMaterialContainer.anInt3736)
         }
 
         @JvmStatic

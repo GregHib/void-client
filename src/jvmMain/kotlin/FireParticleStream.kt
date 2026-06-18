@@ -63,13 +63,13 @@ class FireParticleStream : OutputStream() {
                     var i_4_ = SceneObjectSpawner.aFloat1287.toInt()
                     if (IntKeyNode.anInt6979 shr 8 > i_4_) i_4_ = IntKeyNode.anInt6979 shr 8
                     if (SpotAnimDefinition.aBooleanArray2374!![4] && ModelHeaderCache.anIntArray3273!![4] + 128 > i_4_) i_4_ = ModelHeaderCache.anIntArray3273!![4] + 128
-                    val i_5_ = ResourceProvider.aFloat3938.toInt() + RenderableGroup.anInt5016 and 0x3fff
+                    val i_5_ = CameraDistanceOptionState.aFloat3938.toInt() + RenderableGroup.anInt5016 and 0x3fff
                     WidgetDefinition.method268(i_4_, -200 + (CollisionMapAccessor.method2064((LocalPlayerState.aPlayer_1907!!.x), CompiledScriptCache.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_5_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, (i_4_ shr 3) * 3 + 600 shl 2)
                 } else if (WeaveTextureNode.anInt9282 == 4) {
                     var i_6_ = SceneObjectSpawner.aFloat1287.toInt()
                     if (i_6_ < IntKeyNode.anInt6979 shr 8) i_6_ = IntKeyNode.anInt6979 shr 8
                     if (SpotAnimDefinition.aBooleanArray2374!![4] && (i_6_ < ModelHeaderCache.anIntArray3273!![4] + 128)) i_6_ = 128 + ModelHeaderCache.anIntArray3273!![4]
-                    val i_7_ = ResourceProvider.aFloat3938.toInt() and 0x3fff
+                    val i_7_ = CameraDistanceOptionState.aFloat3938.toInt() and 0x3fff
                     WidgetDefinition.method268(i_6_, -200 + CollisionMapAccessor.method2064(HslColorTableNode.anInt6633, CompiledScriptCache.anInt4372, 11219, RegionTileNode.anInt6652), i_7_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
                 } else if (WeaveTextureNode.anInt9282 == 5) LocDefinitionCache.method2035(i_2_, 0)
                 val i_8_ = GlslMaterialPass.anInt6246
@@ -117,7 +117,7 @@ class FireParticleStream : OutputStream() {
                     FacingDirectionNode.aRenderer6654!!.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, TerrainChunkBuilder.anInt1550 shl 1, TerrainChunkBuilder.anInt1550 shl 1)
                     CircleHitbox.method319(TerrainChunkBuilder.anInt1550 shl 1, TerrainChunkBuilder.anInt1550 shl 1, (-18).toByte(), i_1_ + i_0_ / 2, i_3_ + i_2_ / 2)
                     SpriteRenderEntry.method3282(0x3fff and -(MinimapAreaMarkerNode.anInt9701), CompositeRgbNoiseTexture.anInt8685, ParticleSystemRenderer.anInt3855, 0, -WorldMapElement.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -MapTileShape.anInt4186 and 0x3fff)
-                    val i_16_ = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
+                    val i_16_ = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
                     if (GrayscaleNoiseTexture.aBoolean5300) {
                         CameraRotationStub.method289(-15902, 0x3fff and -WorldMapElement.anInt4638, -MapTileShape.anInt4186 and 0x3fff, (-MinimapAreaMarkerNode.anInt9701 and 0x3fff))
                         SceneProjector.method1634(
@@ -129,7 +129,7 @@ class FireParticleStream : OutputStream() {
                             FileIoUtil.anIntArray4097,
                             GlslMaterialPass.anInt6246,
                             CompositeRgbNoiseTexture.anInt8685,
-                            IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 0,
+                            IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 0,
                             ParticleSystemRenderer.anInt3855,
                             (LocalPlayerState.aPlayer_1907!!.x) shr 9,
                             LinkedListIterator.anIntArray2117,
@@ -155,7 +155,7 @@ class FireParticleStream : OutputStream() {
                         i_16_,
                         (LocalPlayerState.aPlayer_1907!!.x) shr 9,
                         (LocalPlayerState.aPlayer_1907!!.y) shr 9,
-                        IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 0,
+                        IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 0,
                         true,
                         if (!ParticleSystemRenderer.aBoolean3870) -1 else LocalPlayerState.anInt1906,
                         0,
@@ -177,7 +177,7 @@ class FireParticleStream : OutputStream() {
                     if (SocketGameConnection.aBoolean5840 && ClientMachineInfo.aMediaStreamClient_6601!!.method1902(4) == 0) SocketGameConnection.aBoolean5840 = false
                     if (SocketGameConnection.aBoolean5840) {
                         FacingDirectionNode.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
-                        Tooltip.method3511(false, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)), 2, FacingDirectionNode.aRenderer6654)
+                        Tooltip.method3511(false, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)), 2, FacingDirectionNode.aRenderer6654)
                     }
                     TextureDefinitionCache.method1626(1, false)
                 }

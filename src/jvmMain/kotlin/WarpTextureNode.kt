@@ -116,7 +116,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
             if (!bool) FacingDirectionNode.aRenderer6654!!.method3710()
             else if (!FacingDirectionNode.aRenderer6654!!.method3671()) bool = false
             if (bool_0_ == bool) return false
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243), if (bool) 1 else 0)
+            IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub12_7243), if (bool) 1 else 0)
             GlCubeMapTexture.method243(37)
             return true
         }

@@ -79,13 +79,13 @@ class MapSceneIconDef {
             if (i >= 1 && i_5_ >= 1 && -2 + GlCubemapLightPass.anInt7319 >= i && i_5_ <= -2 + RangeThresholdTextureNode.anInt9109) {
                 var i_8_ = i_7_
                 if (i_8_ < 3 && method802(i_5_, i, true)) i_8_++
-                if ((IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && !method536(i_5_, false, i, ParticleSystemState.anInt2204, i_8_)) || HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) return
+                if ((IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && !method536(i_5_, false, i, ParticleSystemState.anInt2204, i_8_)) || HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) return
                 MapTileShape.aClass237_Sub1_4197!!.method1694((TimedRecordAccessor.aCollisionMapArray7108s!![i_7_]), i_1_, i_7_, FacingDirectionNode.aRenderer6654, i, i_5_, 106.toByte())
                 if (i_3_ >= 0) {
-                    val i_9_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350)
-                    IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220), 1)
+                    val i_9_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350)
+                    IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220), 1)
                     MapTileShape.aClass237_Sub1_4197!!.method1689(i, i_7_, i_3_, FacingDirectionNode.aRenderer6654, i_8_, 50, i_4_, i_5_, i_2_, i_6_, (TimedRecordAccessor.aCollisionMapArray7108s!![i_7_]))
-                    IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220), i_9_)
+                    IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220), i_9_)
                 }
             }
             if (i_0_ < 12) aNodeDeque_2859 = null

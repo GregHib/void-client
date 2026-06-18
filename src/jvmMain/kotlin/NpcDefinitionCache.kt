@@ -142,11 +142,11 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             ItemDefinitionLoader.aNodeDeque_2187!!.method1988(SourceRowTextureNode.aNodeDeque_9111, (-115).toByte())
             ClampTextureNode.aNodeDeque_9478!!.method1988(SourceRowTextureNode.aNodeDeque_9111, (-115).toByte())
             if (FileExistsCondition.anInt4776 > 1) {
-                if (!InputSettingsState.shiftClick || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -122) || FileExistsCondition.anInt4776 <= 2) IntHashSet.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295 as ContactEntry?)
-                else IntHashSet.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295!!.aLinkedListNode_4295 as ContactEntry?)
+                if (!InputSettingsState.shiftClick || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -122) || FileExistsCondition.anInt4776 <= 2) IntHashSetStatics.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295 as ContactEntry?)
+                else IntHashSetStatics.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295!!.aLinkedListNode_4295 as ContactEntry?)
                 GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295 as ContactEntry?)
             } else {
-                IntHashSet.aClass348_Sub42_Sub12_3963 = null
+                IntHashSetStatics.aClass348_Sub42_Sub12_3963 = null
                 GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = null
             }
             var i_14_ = -1
@@ -299,7 +299,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     else NpcEntityUpdater.anInt3655 = 2
                 }
                 if (i_14_ == 0) {
-                    if (IntHashSet.aClass348_Sub42_Sub12_3963 != null) method1731(1)
+                    if (IntHashSetStatics.aClass348_Sub42_Sub12_3963 != null) method1731(1)
                     else if (RenderNodeStatics.aBoolean9722) TileRenderState.method2678(-2049)
                 }
                 if (RegionSceneLoader.aWidgetComponent_3701 == null && HashLinkedListNodeStatics.anInt7059 == 0) {

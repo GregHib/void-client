@@ -90,7 +90,7 @@ class ColourAdjustment {
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), SocketStreamWorker.anInt2670)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeLong(TextureMetadataProvider.aLong4615, 104.toByte())
-                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, AnimationFrameDefinition.anInt6967)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, ChatCommandProcessor.anInt6967)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(bool, (HardCacheEntryReference.aSceneProjector_10434!!.anInt2987))
                     method4002((class348_sub47.aClass348_Sub49_Sub2_7116!!), 55.toByte())
                     val string_5_ = Gl2dTexture.aString8605

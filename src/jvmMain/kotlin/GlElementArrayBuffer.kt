@@ -109,7 +109,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
                 } else {
                     val class348_sub49 = (ByteBuffer(method878((MapLabelMenuEntry.method1039(NullOggStream.aString9043!!, true)), -126)))
                     l = class348_sub49.readLong(-456577760)
-                    AnimationFrameDefinition.aLong6966 = class348_sub49.readLong(-456577760)
+                    LoadProgressCounters.aLong6966 = class348_sub49.readLong(-456577760)
                 }
                 LocalPlayerState.method1138(method313(l, -95), true, "", 79.toByte())
             }

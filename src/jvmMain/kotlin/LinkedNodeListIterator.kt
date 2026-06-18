@@ -155,11 +155,11 @@ class LinkedNodeListIterator {
                             i_3_ = RegionTileNode.anInt6652
                             i_4_ = HslColorTableNode.anInt6633
                             i_5_ = 4096
-                            i_6_ = 0x3fff and -ResourceProvider.aFloat3938.toInt()
+                            i_6_ = 0x3fff and -CameraDistanceOptionState.aFloat3938.toInt()
                         } else {
                             i_5_ = 4096 - 16 * FloatBuffer.anInt9750
                             i_3_ = (LocalPlayerState.aPlayer_1907!!.y)
-                            i_6_ = (-ResourceProvider.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483 and 0x3fff)
+                            i_6_ = (-CameraDistanceOptionState.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483 and 0x3fff)
                             i_4_ = (LocalPlayerState.aPlayer_1907!!.x)
                         }
                         val i_7_ = 48 - (-(i_4_ / 128) - -(GlCubemapLightPass.anInt7319 * 2)) - -208

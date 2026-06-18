@@ -69,7 +69,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
         fun method1760(i: Int, i_0_: Int, bool: Boolean, i_1_: Int, i_2_: Byte, i_3_: Int, i_4_: Int, i_5_: Int) {
             if (i_2_ > -85) method1762(-14, 70, 13, -100)
             anInt5940++
-            if ((if (bool) IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350)) != 0 && i_3_ != 0 && HintArrowOrMessage.anInt2021 < 50 && i != -1) GlTextureCubeMap.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(if (!bool) 2.toByte() else 3.toByte(), i, i_3_, i_5_, i_0_, i_1_, i_4_, null)
+            if ((if (bool) IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350)) != 0 && i_3_ != 0 && HintArrowOrMessage.anInt2021 < 50 && i != -1) GlTextureCubeMap.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(if (!bool) 2.toByte() else 3.toByte(), i, i_3_, i_5_, i_0_, i_1_, i_4_, null)
         }
 
         @JvmStatic
@@ -103,8 +103,8 @@ class RangedGraphicsOptionState : GraphicsOptionState {
         fun method1762(i: Int, i_10_: Int, i_11_: Int, i_12_: Int): Int {
             val i_13_ = 56 / ((i - 74) / 43)
             anInt5947++
-            if ((0x8 and AnimationFrameDefinition.aByteArrayArrayArray6962!![i_10_]!![i_12_]!![i_11_].toInt()) != 0) return 0
-            if (i_10_ > 0 && ((0x2 and AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_12_]!![i_11_].toInt()) != 0)) return i_10_ + -1
+            if ((0x8 and GraphicsOptionState.aByteArrayArrayArray6962!![i_10_]!![i_12_]!![i_11_].toInt()) != 0) return 0
+            if (i_10_ > 0 && ((0x2 and GraphicsOptionState.aByteArrayArrayArray6962!![1]!![i_12_]!![i_11_].toInt()) != 0)) return i_10_ + -1
             return i_10_
         }
 

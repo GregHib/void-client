@@ -1,5 +1,4 @@
 import ClickFeedbackTask.Companion.method1353
-import CompressedBlockDecoder.method1547
 import DetailLevelOptionState.Companion.method1836
 import BackgroundWorkerThread.Companion.method1911
 import SlotBinding.Companion.method2028
@@ -21,7 +20,6 @@ class RegionSceneShifter : LinkedListNode() {
     var anInt7053: Int = 0
 
     companion object {
-        var anInt7046: Int = 0
         var anInt7047: Int = 0
         var aString7048: String? = null
         var anInt7049: Int = 0
@@ -62,7 +60,7 @@ class RegionSceneShifter : LinkedListNode() {
                         val i_14_ = i_2_ + i_10_
                         if (i_13_ > 0 && i_14_ > 0 && i_13_ < -1 + i && -1 + i_1_ > i_14_) {
                             val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_4_)
-                            if (i_12_ != 22 || IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0 || class51.anInt874 != 0 || (class51.anInt920 == 1) || class51.aBoolean947) {
+                            if (i_12_ != 22 || IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0 || class51.anInt874 != 0 || (class51.anInt920 == 1) || class51.aBoolean947) {
                                 bool_7_ = true
                                 if (!class51.method485(9773)) {
                                     CompositeNpcModelBuilder.anInt2101++
@@ -91,13 +89,13 @@ class RegionSceneShifter : LinkedListNode() {
 
         fun method3157(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, bool: Boolean) {
             anInt7049++
-            if (bool || i_16_ != Renderer.anInt4581 || FileIoUtil.anInt4095 != i || (CompiledScriptCache.anInt4372 != ParticleSystemState.anInt2204 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
+            if (bool || i_16_ != Renderer.anInt4581 || FileIoUtil.anInt4095 != i || (CompiledScriptCache.anInt4372 != ParticleSystemState.anInt2204 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
                 Renderer.anInt4581 = i_16_
                 FileIoUtil.anInt4095 = i
                 ParticleSystemState.anInt2204 = CompiledScriptCache.anInt4372
-                if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) ParticleSystemState.anInt2204 = 0
+                if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) ParticleSystemState.anInt2204 = 0
                 ByteBufferStatics.method3379(2, i_17_)
-                Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.Companion.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
+                Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
                 val i_18_ = ArbVertexProgram.regionTileX
                 val i_19_ = RegionMapDecoder.regionTileY
                 ArbVertexProgram.regionTileX = (-(GlCubemapLightPass.anInt7319 shr 4) + Renderer.anInt4581) * 8
@@ -231,32 +229,8 @@ class RegionSceneShifter : LinkedListNode() {
             }
         }
 
-        fun method3158(`is`: ByteArray?, i: Int): ByteArray {
-            anInt7046++
-            val class348_sub49 = ByteBuffer(`is`)
-            val i_37_ = class348_sub49.readUnsignedByte(255)
-            val i_38_ = class348_sub49.readInt((-126).toByte())
-            if (i_38_ < 0 || (ConfigIdPair.anInt401 != 0 && i_38_ > ConfigIdPair.anInt401)) {
-                throw RuntimeException()
-            }
-            if (i_37_ != 0) {
-                val i_39_ = class348_sub49.readInt((-126).toByte())
-                if (i_39_ < 0 || (ConfigIdPair.anInt401 != 0 && i_39_ > ConfigIdPair.anInt401) || i_39_ > 10000000) {
-                    return ByteArray(4)
-                }
-                val is_40_ = ByteArray(i_39_)
-                if (i_37_ == 1) method1547(is_40_, i_39_, `is`, i_38_, 9)
-                else {
-                    withLock(AnimationFrameDefinition.Companion.aGzipDecompressor_6955!!) {
-                        AnimationFrameDefinition.Companion.aGzipDecompressor_6955!!.method1218(is_40_, 29123, class348_sub49)
-                    }
-                }
-                return is_40_
-            }
-            val is_41_ = ByteArray(i_38_)
-            class348_sub49.method3389(2147483647, 0, i_38_, is_41_)
-            return is_41_
-        }
+        var aGzipDecompressor_6955: GzipDecompressor? = GzipDecompressor()
+
 
         fun method3159(i: Int, i_42_: Int, bool: Boolean, i_43_: Int, i_44_: Int, i_45_: Int, var_renderer: Renderer, i_46_: Int, i_47_: Int) {
             anInt7051++

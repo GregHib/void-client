@@ -26,7 +26,7 @@ object MinimapDrawController {
         while (i_0_ >= i_5_) {
             var i_6_ = i
             while (i_4_ >= i_6_) {
-                if ((TextureMaterialGroup.anIntArrayArray9678!![i_5_]!![i_6_] == i_1_) && FlickeringEffectsOptionState.anIntArrayArray5921!![i_5_]!![i_6_] <= 1) return true
+                if ((NpcType.anIntArrayArray9678!![i_5_]!![i_6_] == i_1_) && FlickeringEffectsOptionState.anIntArrayArray5921!![i_5_]!![i_6_] <= 1) return true
                 i_6_++
             }
             i_5_++

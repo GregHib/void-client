@@ -51,7 +51,7 @@ class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjecto
         @JvmStatic
         fun method338(i: Int, i_0_: Int) {
             var i_0_ = i_0_
-            if (i == IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub22_7253!!.method1815(-32350)) i_0_ = -1
+            if (i == IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub22_7253!!.method1815(-32350)) i_0_ = -1
             anInt456++
             if (i_0_ != GlShaderProgramHandle.anInt4179) {
                 if (i_0_ != -1) {

@@ -181,13 +181,6 @@ open class GrayscaleNoiseTexture(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_2
         }
 
         @JvmStatic
-        fun method554(i: Int, i_42_: Int, `is`: ByteArray?): Int {
-            if (i != 5126) method553(52)
-            anInt5284++
-            return ByteBuffer.method1319(i_42_, true, `is`!!, 0)
-        }
-
-        @JvmStatic
         fun method555(bool: Boolean, i: Int) {
             anInt5286++
             if (i != MapElementManager.aString4461!!.length) {

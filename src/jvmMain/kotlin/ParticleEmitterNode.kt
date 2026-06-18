@@ -41,9 +41,9 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
         @JvmStatic
         fun method217(i: Byte): String? {
             anInt175++
-            if (ScrollbarComponent.aBoolean8335 || IntHashSet.aClass348_Sub42_Sub12_3963 == null) return ""
+            if (ScrollbarComponent.aBoolean8335 || IntHashSetStatics.aClass348_Sub42_Sub12_3963 == null) return ""
             if (i < 51) return null
-            return (IntHashSet.aClass348_Sub42_Sub12_3963!!.aString9593)
+            return (IntHashSetStatics.aClass348_Sub42_Sub12_3963!!.aString9593)
         }
 
         @JvmStatic

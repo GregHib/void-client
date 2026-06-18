@@ -49,7 +49,7 @@ class SpriteDefinition : LinkedListNode() {
                 if (LocalPlayerState.aPlayer_1907 == player) {
                     if (RenderNodeStatics.aBoolean9722 && (WidgetTextConfig.anInt500 and 0x10) != 0) {
                         LongHashTable.anInt450++
-                        MinimapPolygonDrawer.method466(false, (ItemNameResolver.aString5000 + " -> <col=ffffff>" + LocalizedText.aLocalizedText_3520!!.method2063(AnimationFrameDefinition.anInt6967, 544)), 0, (-109).toByte(), false, 0, -1, true, 50, player.anInt10290.toLong(), ItemNameResolver.aString5001, 0L, FloatBuffer.Companion.anInt9747)
+                        MinimapPolygonDrawer.method466(false, (ItemNameResolver.aString5000 + " -> <col=ffffff>" + LocalizedText.aLocalizedText_3520!!.method2063(ChatCommandProcessor.anInt6967, 544)), 0, (-109).toByte(), false, 0, -1, true, 50, player.anInt10290.toLong(), ItemNameResolver.aString5001, 0L, FloatBuffer.Companion.anInt9747)
                     }
                 } else {
                     val string: String?
@@ -63,11 +63,11 @@ class SpriteDefinition : LinkedListNode() {
                             if (i_4_ < 0) i_4_ = -i_4_
                             if (i_3_ < i_4_) bool_0_ = false
                         }
-                        val string_5_ = (if (GlRectangleTexture.aSceneProjector_8638 == HardCacheEntryReference.aSceneProjector_10434) LocalizedText.aLocalizedText_3513!!.method2063(AnimationFrameDefinition.anInt6967, 544) else LocalizedText.aLocalizedText_3511!!.method2063(AnimationFrameDefinition.anInt6967, 544))
+                        val string_5_ = (if (GlRectangleTexture.aSceneProjector_8638 == HardCacheEntryReference.aSceneProjector_10434) LocalizedText.aLocalizedText_3513!!.method2063(ChatCommandProcessor.anInt6967, 544) else LocalizedText.aLocalizedText_3511!!.method2063(ChatCommandProcessor.anInt6967, 544))
                         if (player.anInt10516 >= player.anInt10557) string = (player.method2456(true, 255) + (if (!bool_0_) "<col=ffffff>" else (method250((LocalPlayerState.aPlayer_1907!!.anInt10516), true, (player.anInt10516)))) + " (" + string_5_ + player.anInt10516 + ")")
                         else string = (player.method2456(true, 255) + (if (bool_0_) (method250((LocalPlayerState.aPlayer_1907!!.anInt10516), true, (player.anInt10516))) else "<col=ffffff>") + " (" + string_5_ + player.anInt10516 + "+" + (-player.anInt10516 + player.anInt10557) + ")")
                     } else if (player.anInt10564 == -1) string = player.method2456(true, 255)
-                    else string = (player.method2456(true, 255) + " (" + LocalizedText.aLocalizedText_3512!!.method2063(AnimationFrameDefinition.anInt6967, 544) + player.anInt10564 + ")")
+                    else string = (player.method2456(true, 255) + " (" + LocalizedText.aLocalizedText_3512!!.method2063(ChatCommandProcessor.anInt6967, 544) + player.anInt10564 + ")")
                     if (RenderNodeStatics.aBoolean9722 && !bool && (0x8 and WidgetTextConfig.anInt500) != 0) {
                         MinimapPolygonDrawer.method466(false, ItemNameResolver.aString5000 + " -> <col=ffffff>" + string, 0, (-109).toByte(), false, 0, -1, true, 51, player.anInt10290.toLong(), ItemNameResolver.aString5001, player.anInt10290.toLong(), FloatBuffer.Companion.anInt9747)
                         TileRenderState.anInt4228++
@@ -78,7 +78,7 @@ class SpriteDefinition : LinkedListNode() {
                         for (i_6_ in 7 downTo 0) {
                             if (DynamicSceneObjectEntity.aStringArray10195!![i_6_] != null) {
                                 var i_7_: Short = 0
-                                if ((HardCacheEntryReference.aSceneProjector_10434 != ParticleEmitterNode.aSceneProjector_186) || !(DynamicSceneObjectEntity.aStringArray10195!![i_6_].equals(LocalizedText.aLocalizedText_3506!!.method2063(AnimationFrameDefinition.anInt6967, 544), ignoreCase = true))) {
+                                if ((HardCacheEntryReference.aSceneProjector_10434 != ParticleEmitterNode.aSceneProjector_186) || !(DynamicSceneObjectEntity.aStringArray10195!![i_6_].equals(LocalizedText.aLocalizedText_3506!!.method2063(ChatCommandProcessor.anInt6967, 544), ignoreCase = true))) {
                                     if (PlayerSequenceSelector.aBooleanArray1214!![i_6_]) i_7_ = 2000.toShort()
                                 } else {
                                     if ((LocalPlayerState.aPlayer_1907!!.anInt10516) < (player.anInt10516)) i_7_ = 2000.toShort()

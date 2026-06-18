@@ -83,7 +83,7 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
             val i_8_ = SceneTileBounds.anInt1117
             val i_9_ = -3 + WorldMapSceneSoftware.anInt5819
             val i_10_ = 20
-            method2270(SceneTileBounds.anInt1117, i_4_ + anInt4717, var_renderer, LocalizedText.aLocalizedText_3507!!.method2063(AnimationFrameDefinition.anInt6967, i + 528), false, i_5_ + ProceduralTextureGraph.anInt9532, WorldMapSceneSoftware.anInt5819, i_10_)
+            method2270(SceneTileBounds.anInt1117, i_4_ + anInt4717, var_renderer, LocalizedText.aLocalizedText_3507!!.method2063(ChatCommandProcessor.anInt6967, i + 528), false, i_5_ + ProceduralTextureGraph.anInt9532, WorldMapSceneSoftware.anInt5819, i_10_)
             val i_11_ = i_4_ + GlTexture1D.aInputTracker_8552!!.method3597(true)
             if (i != 16) method1154(9.toByte())
             val i_12_ = i_5_ + GlTexture1D.aInputTracker_8552!!.method3594(95.toByte())

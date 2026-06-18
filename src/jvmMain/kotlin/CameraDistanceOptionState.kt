@@ -59,6 +59,8 @@ class CameraDistanceOptionState : GraphicsOptionState {
             if (i != -4) aAbstractModelRendererArray5857 = null
         }
 
+        var aFloat3938: Float = 0.0f
+        
         @JvmStatic
         fun method1725(i: Int) {
             anInt5855++
@@ -70,11 +72,11 @@ class CameraDistanceOptionState : GraphicsOptionState {
             }
             if (SceneObjectSpawner.aFloat1287 < i_1_.toFloat()) SceneObjectSpawner.aFloat1287 = i_1_.toFloat()
             if (SceneObjectSpawner.aFloat1287 > i_2_.toFloat()) SceneObjectSpawner.aFloat1287 = i_2_.toFloat()
-            while ( /**/ResourceProvider.aFloat3938 >= 16384.0f) {
-                ResourceProvider.aFloat3938 -= 16384.0f
+            while ( /**/aFloat3938 >= 16384.0f) {
+                aFloat3938 -= 16384.0f
             }
-            while ( /**/ResourceProvider.aFloat3938 < 0.0f) {
-                ResourceProvider.aFloat3938 += 16384.0f
+            while ( /**/aFloat3938 < 0.0f) {
+                aFloat3938 += 16384.0f
             }
             val i_3_ = FrameStatsReset.anInt5799 shr 9
             val i_4_ = AsyncTaskHandle.anInt2578 shr 9

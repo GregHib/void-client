@@ -235,7 +235,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
                         if (class10.anInt188 < 0) {
                             var i_5_ = 8192
                             val i_6_: Int
-                            if (class10.anInt178 == 0) i_6_ = ((class10.anInt184 * (if (class10.aByte180.toInt() == 3) IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350))) shr 2)
+                            if (class10.anInt178 == 0) i_6_ = ((class10.anInt184 * (if (class10.aByte180.toInt() == 3) IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350))) shr 2)
                             else {
                                 val i_7_ = 0x3 and (class10.anInt178 shr 24)
                                 if ((LocalPlayerState.aPlayer_1907!!.plane).toInt() == i_7_) {
@@ -252,7 +252,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
                                         continue
                                     }
                                     if (i_14_ < 0) i_14_ = 0
-                                    i_6_ = ((i_8_ + -i_14_) * (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350) * class10.anInt184) / i_8_) shr 2
+                                    i_6_ = ((i_8_ + -i_14_) * (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350) * class10.anInt184) / i_8_) shr 2
                                     if ((class10.aClass318_Sub1_172 != null) && (class10.aClass318_Sub1_172 is GroundDecorEntity)) {
                                         val class318_sub1_sub3 = ((class10.aClass318_Sub1_172) as GroundDecorEntity)
                                         val i_15_ = (class318_sub1_sub3.aShort8743)
@@ -294,13 +294,13 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
             }
             anInt4890++
             if (RgbColorPalette.aBoolean1236 && !method1296(true)) {
-                if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1) {
-                    if (UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 != null) method3086(2, UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), CachedRgbNoiseTexture.aJs5Archive_8667, false, 0, SlotBinding.anInt3428)
-                    else method2732(0, SlotBinding.anInt3428, false, 124, CachedRgbNoiseTexture.aJs5Archive_8667, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
+                if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1) {
+                    if (UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 != null) method3086(2, UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), CachedRgbNoiseTexture.aJs5Archive_8667, false, 0, SlotBinding.anInt3428)
+                    else method2732(0, SlotBinding.anInt3428, false, 124, CachedRgbNoiseTexture.aJs5Archive_8667, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
                 }
                 RgbColorPalette.aBoolean1236 = false
                 UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 = null
-            } else if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1 && !method1296(true)) {
+            } else if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1 && !method1296(true)) {
                 SceneLinkedListNode.anInt3973++
                 val class348_sub47 = method2148(OpenGlRenderer.aFontMetaRef_7554, TheoraVideoStream.aIsaacCipher_9029, -107)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(118.toByte(), SlotBinding.anInt3428)

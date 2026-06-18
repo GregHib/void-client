@@ -41,8 +41,8 @@ class HeadIconRenderer {
                 anInt2064++
                 if (abstractModelRenderer != null) {
                     val i_6_: Int
-                    if (WeaveTextureNode.anInt9282 != 4) i_6_ = (0x3fff and ResourceProvider.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483)
-                    else i_6_ = 0x3fff and ResourceProvider.aFloat3938.toInt()
+                    if (WeaveTextureNode.anInt9282 != 4) i_6_ = (0x3fff and CameraDistanceOptionState.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483)
+                    else i_6_ = 0x3fff and CameraDistanceOptionState.aFloat3938.toInt()
                     val i_7_ = 10 + max(widgetComponent!!.anInt709 / 2, widgetComponent.anInt789 / i_4_)
                     val i_8_ = i_5_ * i_5_ - -(i_3_ * i_3_)
                     if (i_7_ * i_7_ >= i_8_) {
@@ -65,7 +65,7 @@ class HeadIconRenderer {
         fun method1212(i: Int, i_13_: Int, i_14_: Int, i_15_: Int) {
             var i = i
             anInt2059++
-            i = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) * i shr 8
+            i = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) * i shr 8
             if (i_14_ == i_13_ && !RgbColorPalette.aBoolean1236) method960(1)
             else if (i_13_ != -1 && (i_13_ != SlotBinding.anInt3428 || !ParticleSystemState.method1296(true)) && i != 0 && !RgbColorPalette.aBoolean1236) {
                 method368(i, 18002, false, i_13_, CachedRgbNoiseTexture.aJs5Archive_8667, 0, i_15_)
