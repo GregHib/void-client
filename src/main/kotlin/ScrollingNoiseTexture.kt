@@ -280,7 +280,7 @@ class ScrollingNoiseTexture : GrayscaleNoiseTexture(8, 5, 8, 8, 2, 0.1f, 0.55f, 
             val i_7_ = -98 % ((i - -34) / 33)
             anInt8658++
             try {
-                return Class345_Sub1()
+                return SubsampledParticleProcessor()
             } catch (throwable: Throwable) {
                 return null
             }
