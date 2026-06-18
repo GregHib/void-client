@@ -43,7 +43,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             else if (i_4_ > 100) i_4_ = 100
             var i_5_ = ((-AbstractMenuEntry.aShort1700 + HeapDiagnosticsHolder.aShort2250) * i_4_ / 100 + AbstractMenuEntry.aShort1700)
             if (i_5_ < CacheEntryReference.aShort9555) i_5_ = CacheEntryReference.aShort9555.toInt()
-            else if (Class48.aShort851 < i_5_) i_5_ = Class48.aShort851.toInt()
+            else if (ColourAdjustment.aShort851 < i_5_) i_5_ = ColourAdjustment.aShort851.toInt()
             var i_6_ = 512 * i_5_ * i_3_ / (i_1_ * 334)
             if (i_6_ >= Class367_Sub8.aShort7355) {
                 if (i_6_ > RefCountedHandle.aShort2269) {
@@ -65,8 +65,8 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             } else {
                 i_6_ = Class367_Sub8.aShort7355.toInt()
                 i_5_ = i_6_ * (i_1_ * 334) / (i_3_ * 512)
-                if (Class48.aShort851 < i_5_) {
-                    i_5_ = Class48.aShort851.toInt()
+                if (ColourAdjustment.aShort851 < i_5_) {
+                    i_5_ = ColourAdjustment.aShort851.toInt()
                     val i_9_ = i_5_ * i_3_ * 512 / (334 * i_6_)
                     val i_10_ = (i_1_ + -i_9_) / 2
                     if (bool) {
@@ -129,7 +129,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             GlShaderObjectHandle.aSystemFontGlyphs_521 = null
             Class75.aSmoothingBuffer_1246 = null
             GlRectangleTexture.aSystemFontGlyphs_8644 = null
-            Class48.anInt859 = -1
+            ColourAdjustment.anInt859 = -1
             if (i <= -44) {
                 TextureMetadataProvider.anInt4609 = -1
                 WorldMapRenderer.aSystemFontGlyphs_4672 = null

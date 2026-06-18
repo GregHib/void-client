@@ -51,7 +51,7 @@ import Class367_Sub10.Companion.method3553
 import Class367_Sub2.Companion.method3538
 import Class367_Sub4.Companion.method3544
 import WorldMapLabel.Companion.method3569
-import Class48.Companion.method449
+import ColourAdjustment.Companion.method449
 import Class50_Sub3.Companion.method468
 import Class55_Sub1.Companion.method524
 import Class57.Companion.method529
@@ -1842,9 +1842,9 @@ object Class66 {
                 anInt1173 -= 4
                 CacheEntryReference.aShort9555 = anIntArray1149!![anInt1173].toShort()
                 if (CacheEntryReference.aShort9555 <= 0) CacheEntryReference.aShort9555 = 1.toShort()
-                Class48.aShort851 = anIntArray1149!![anInt1173 + 1].toShort()
-                if (Class48.aShort851 <= 0) Class48.aShort851 = 32767.toShort()
-                else if (Class48.aShort851 < CacheEntryReference.aShort9555) Class48.aShort851 = CacheEntryReference.aShort9555
+                ColourAdjustment.aShort851 = anIntArray1149!![anInt1173 + 1].toShort()
+                if (ColourAdjustment.aShort851 <= 0) ColourAdjustment.aShort851 = 32767.toShort()
+                else if (ColourAdjustment.aShort851 < CacheEntryReference.aShort9555) ColourAdjustment.aShort851 = CacheEntryReference.aShort9555
                 Class367_Sub8.aShort7355 = anIntArray1149!![anInt1173 + 2].toShort()
                 if (Class367_Sub8.aShort7355 <= 0) Class367_Sub8.aShort7355 = 1.toShort()
                 RefCountedHandle.aShort2269 = anIntArray1149!![anInt1173 + 3].toShort()

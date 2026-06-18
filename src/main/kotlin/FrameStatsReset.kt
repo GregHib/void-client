@@ -193,7 +193,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Player.anInt10518 = 0
             DualMaterialContainer.anInt1632 = 0
             OpenGlRenderer.anInt7632 = 0
-            Class48.anInt849 = 0
+            ColourAdjustment.anInt849 = 0
             GlRenderDevice.anInt9818 = 0
             Class64_Sub2.anInt5409 = 0
             ServerConnectionInfo.anInt2140 = 0
@@ -1433,7 +1433,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7538 = 0
             WallEntity.anInt8772 = 0
             PerlinNoiseTextureNode.anInt9151 = 0
-            Class48.anInt855 = 0
+            ColourAdjustment.anInt855 = 0
             SceneTextLabel.anInt6423 = 0
             GameAppletFrame.anInt11 = 0
             CameraRotationStub.anInt327 = 0
@@ -2496,7 +2496,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             InterfaceComponentGroup.anInt9623 = 0
             ModelDefinitionCache.anInt2869 = 0
             OpenGlTerrainTile.anInt8236 = 0
-            Class48.anInt848 = 0
+            ColourAdjustment.anInt848 = 0
             OpenGlRenderer.anInt7589 = 0
             ModelKeyBuilder.anInt6754 = 0
             RenderableGroup.anInt5005 = 0
@@ -3439,7 +3439,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ProjectedGroundDecor.anInt10200 = 0
             GlTexture.anInt4850 = 0
             LocTypeConfig.anInt3565 = 0
-            Class48.anInt850 = 0
+            ColourAdjustment.anInt850 = 0
             ClientMachineInfo.anInt6615 = 0
             FontDefinition.anInt1978 = 0
             NamedIdRecord.anInt4468 = 0

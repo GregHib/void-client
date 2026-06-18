@@ -1143,7 +1143,7 @@ class Client : GameAppletFrame() {
         method815(false)
         ArbFogMaterialPass.method2142((-126).toByte())
         method1075(17.toByte())
-        Class48.method448((-16).toByte())
+        ColourAdjustment.method448((-16).toByte())
         method3295(i + -109)
         method3441(1)
         method161(114)

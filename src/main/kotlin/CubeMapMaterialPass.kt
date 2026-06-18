@@ -122,11 +122,11 @@ class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Ma
 
         @JvmStatic
         fun method2170(i: Int, i_0_: Byte) {
-            Class48.anInt859 = -1
+            ColourAdjustment.anInt859 = -1
             anInt6300++
             if (i_0_.toInt() != 3) method2170(-109, 7.toByte())
             DebugOverlayRenderer.anInt3170 = i
-            Class48.anInt859 = -1
+            ColourAdjustment.anInt859 = -1
             MenuActionNode.method2811(false)
         }
 

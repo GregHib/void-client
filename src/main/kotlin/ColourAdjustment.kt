@@ -5,7 +5,7 @@ import OpenGlTerrainTile.Companion.method4002
 /* Class48 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class48 {
+class ColourAdjustment {
     @JvmField
     var anInt847: Int = 0
     @JvmField
@@ -18,21 +18,21 @@ class Class48 {
     var anInt857: Int = 128
     @JvmField
     var anInt858: Int
-    fun method451(class48_7_: Class48, i: Byte) {
-        this.anInt857 = class48_7_.anInt857
-        this.anInt858 = class48_7_.anInt858
-        this.anInt856 = class48_7_.anInt856
-        this.anInt854 = class48_7_.anInt854
+    fun method451(colourAdjustment_7_: ColourAdjustment, i: Byte) {
+        this.anInt857 = colourAdjustment_7_.anInt857
+        this.anInt858 = colourAdjustment_7_.anInt858
+        this.anInt856 = colourAdjustment_7_.anInt856
+        this.anInt854 = colourAdjustment_7_.anInt854
         anInt855++
-        this.anInt847 = class48_7_.anInt847
-        this.anInt853 = class48_7_.anInt853
+        this.anInt847 = colourAdjustment_7_.anInt847
+        this.anInt853 = colourAdjustment_7_.anInt853
         if (i.toInt() != -110) Companion.method448((-93).toByte())
     }
 
-    fun method452(bool: Boolean): Class48 {
+    fun method452(bool: Boolean): ColourAdjustment {
         anInt848++
         if (bool != true) Companion.method448((-81).toByte())
-        return Class48(this.anInt858, this.anInt856, this.anInt857, this.anInt854, this.anInt847, this.anInt853)
+        return ColourAdjustment(this.anInt858, this.anInt856, this.anInt857, this.anInt854, this.anInt847, this.anInt853)
     }
 
     internal constructor(i: Int) {

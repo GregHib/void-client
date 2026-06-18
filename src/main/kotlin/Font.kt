@@ -204,9 +204,9 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
         anInt4046++
         try {
             if (i <= -78) {
-                if (string.startsWith("col=")) ParamMap.anInt9492 = (ParamMap.anInt9492 and 0xffffff.inv() or (Class48.method450(-20188, string.substring(4), 16) and 0xffffff))
+                if (string.startsWith("col=")) ParamMap.anInt9492 = (ParamMap.anInt9492 and 0xffffff.inv() or (ColourAdjustment.method450(-20188, string.substring(4), 16) and 0xffffff))
                 else if (string == "/col") ParamMap.anInt9492 = (ParamMap.anInt9492 and 0xffffff.inv() or (0xffffff and PerlinTextureProvider.anInt5807))
-                if (string.startsWith("argb=")) ParamMap.anInt9492 = Class48.method450(-20188, string.substring(5), 16)
+                if (string.startsWith("argb=")) ParamMap.anInt9492 = ColourAdjustment.method450(-20188, string.substring(5), 16)
                 else if (string != "/argb") {
                     if (!string.startsWith("str=")) {
                         if (string == "str") Player.anInt10567 = (ParamMap.anInt9492 and 0xffffff.inv() or 0x800000)
@@ -215,7 +215,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                                 if (string != "u") {
                                     if (string != "/u") {
                                         if (!string.equals("shad=-1", ignoreCase = true)) {
-                                            if (string.startsWith("shad=")) ConnectionStateRefs.anInt320 = ((0xffffff.inv() and (ParamMap.anInt9492)) or (Class48.method450(-20188, string.substring(5), 16)))
+                                            if (string.startsWith("shad=")) ConnectionStateRefs.anInt320 = ((0xffffff.inv() and (ParamMap.anInt9492)) or (ColourAdjustment.method450(-20188, string.substring(5), 16)))
                                             else if (string == "shad") ConnectionStateRefs.anInt320 = (0xffffff.inv() and (ParamMap.anInt9492))
                                             else if (string != "/shad") {
                                                 if (string == "br") method2579((HeadIconRenderer.anInt2061), 117, (PerlinTextureProvider.anInt5807))
@@ -223,9 +223,9 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                                         } else ConnectionStateRefs.anInt320 = 0
                                     } else DirectionalStripeTextureNode.anInt9101 = -1
                                 } else DirectionalStripeTextureNode.anInt9101 = (ParamMap.anInt9492 and 0xffffff.inv())
-                            } else DirectionalStripeTextureNode.anInt9101 = ((ParamMap.anInt9492 and 0xffffff.inv()) or Class48.method450(-20188, string.substring(2), 16))
+                            } else DirectionalStripeTextureNode.anInt9101 = ((ParamMap.anInt9492 and 0xffffff.inv()) or ColourAdjustment.method450(-20188, string.substring(2), 16))
                         } else Player.anInt10567 = -1
-                    } else Player.anInt10567 = (ParamMap.anInt9492 and 0xffffff.inv() or Class48.method450(-20188, string.substring(4), 16))
+                    } else Player.anInt10567 = (ParamMap.anInt9492 and 0xffffff.inv() or ColourAdjustment.method450(-20188, string.substring(4), 16))
                 } else ParamMap.anInt9492 = PerlinTextureProvider.anInt5807
             }
         } catch (exception: Exception) {

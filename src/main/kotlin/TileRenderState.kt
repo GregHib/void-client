@@ -57,7 +57,7 @@ class TileRenderState {
             else i_4_ = (i_0_.toFloat() / f).toInt()
             i_1_ -= (i + -i_4_) / 2
             i_3_ -= (i_0_ + -i_5_) / 2
-            Class48.anInt859 = -1
+            ColourAdjustment.anInt859 = -1
             DebugOverlayRenderer.anInt3170 = -(Class75.anInt1267 * i_3_ / i_5_) + Class75.anInt1267
             WidgetActionEntry.anInt6992 = Class75.anInt1259 * i_1_ / i_4_
             TextureMetadataProvider.anInt4609 = -1
