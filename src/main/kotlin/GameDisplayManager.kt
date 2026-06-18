@@ -65,7 +65,7 @@ object GameDisplayManager {
             if (bool) OutgoingPacketNode.method3327(1406)
             else {
                 ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
-                if (!Class59_Sub1.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
+                if (!GrayscaleNoiseTexture.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
                 else method3980(86, ParticleSystemRenderer.aCanvas3869!!)
                 if (RsaVarbitHandler.aFrame4904 === container) {
                     val insets = RsaVarbitHandler.aFrame4904!!.getInsets()

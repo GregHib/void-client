@@ -1,4 +1,4 @@
-import Class59_Sub2_Sub2.Companion.method573
+import CompositeRgbNoiseTexture.Companion.method573
 import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt

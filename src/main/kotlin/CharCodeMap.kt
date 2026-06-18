@@ -149,7 +149,7 @@ class CharCodeMap : HashLinkedListNode() {
                             if ((0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_10_ shr 9]!![i_11_ shr 9]).toInt()) != 0) method3542(i_11_ shr 9, HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029, i_10_ shr 9, 0, 0, false)
                             if (MinimapAreaMarkerNode.Companion.anInt9701 < 2560) {
                                 var i_12_ = GlslMaterialPass.anInt6246 shr 9
-                                var i_13_ = Class59_Sub2_Sub2.anInt8685 shr 9
+                                var i_13_ = CompositeRgbNoiseTexture.anInt8685 shr 9
                                 val i_14_ = i_10_ shr 9
                                 val i_15_ = i_11_ shr 9
                                 val i_16_: Int
@@ -205,8 +205,8 @@ class CharCodeMap : HashLinkedListNode() {
                                 }
                             }
                         } else {
-                            val i_22_ = method2064(GlslMaterialPass.anInt6246, CompiledScriptCache.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685)
-                            if (i_22_ - ParticleSystemRenderer.anInt3855 < 3200 && ((AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![GlslMaterialPass.anInt6246 shr 9]!![Class59_Sub2_Sub2.anInt8685 shr 9]).toInt() and 0x4) != 0) method3542(Class59_Sub2_Sub2.anInt8685 shr 9, HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029, GlslMaterialPass.anInt6246 shr 9, 0, 1, false)
+                            val i_22_ = method2064(GlslMaterialPass.anInt6246, CompiledScriptCache.anInt4372, 11219, CompositeRgbNoiseTexture.anInt8685)
+                            if (i_22_ - ParticleSystemRenderer.anInt3855 < 3200 && ((AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![GlslMaterialPass.anInt6246 shr 9]!![CompositeRgbNoiseTexture.anInt8685 shr 9]).toInt() and 0x4) != 0) method3542(CompositeRgbNoiseTexture.anInt8685 shr 9, HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029, GlslMaterialPass.anInt6246 shr 9, 0, 1, false)
                         }
                     }
                 }

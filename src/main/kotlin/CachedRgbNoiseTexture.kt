@@ -4,7 +4,7 @@ import HslColorTableNode.Companion.method2770
 /* Class59_Sub2_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
+class CachedRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
     private lateinit var aByteArray8674: ByteArray
 
     override fun method563(i: Byte, i_27_: Int, i_28_: Byte) {

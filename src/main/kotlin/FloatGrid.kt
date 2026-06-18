@@ -32,7 +32,7 @@ class FloatGrid internal constructor(var anInt4974: Int, var anInt4978: Int) : I
                 var i_2_ = 0
                 if (i.toInt() != -73) anInt4976 = 105
                 var i_3_ = 0
-                if (Class59_Sub1.aBoolean5300) {
+                if (GrayscaleNoiseTexture.aBoolean5300) {
                     i_2_ = NativeTerrainTile.method4008((-128).toByte())
                     i_3_ = method260(false)
                 }

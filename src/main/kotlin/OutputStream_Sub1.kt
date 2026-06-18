@@ -71,7 +71,7 @@ class OutputStream_Sub1 : OutputStream() {
                 } else if (WeaveTextureNode.anInt9282 == 5) LocDefinitionCache.method2035(i_2_, 0)
                 val i_8_ = GlslMaterialPass.anInt6246
                 val i_9_ = ParticleSystemRenderer.anInt3855
-                val i_10_ = Class59_Sub2_Sub2.anInt8685
+                val i_10_ = CompositeRgbNoiseTexture.anInt8685
                 val i_11_ = MinimapAreaMarkerNode.anInt9701
                 val i_12_ = WorldMapElement.anInt4638
                 for (i_13_ in 0..4) {
@@ -86,18 +86,18 @@ class OutputStream_Sub1 : OutputStream() {
                         if (i_13_ == 0) GlslMaterialPass.anInt6246 += i_14_ shl 2
                         if (i_13_ == 3) WorldMapElement.anInt4638 = 0x3fff and i_14_ + WorldMapElement.anInt4638
                         if (i_13_ == 1) ParticleSystemRenderer.anInt3855 += i_14_ shl 2
-                        if (i_13_ == 2) Class59_Sub2_Sub2.anInt8685 += i_14_ shl 2
+                        if (i_13_ == 2) CompositeRgbNoiseTexture.anInt8685 += i_14_ shl 2
                     }
                 }
                 if (GlslMaterialPass.anInt6246 < 0) GlslMaterialPass.anInt6246 = 0
                 if (-1 + (SpotAnimEntity.anInt6451 shl 9) < GlslMaterialPass.anInt6246) GlslMaterialPass.anInt6246 = -1 + (SpotAnimEntity.anInt6451 shl 9)
-                if (Class59_Sub2_Sub2.anInt8685 < 0) Class59_Sub2_Sub2.anInt8685 = 0
-                if (Class59_Sub2_Sub2.anInt8685 > (RegionSceneShifter.anInt7054 shl 9) + -1) Class59_Sub2_Sub2.anInt8685 = (RegionSceneShifter.anInt7054 shl 9) - 1
+                if (CompositeRgbNoiseTexture.anInt8685 < 0) CompositeRgbNoiseTexture.anInt8685 = 0
+                if (CompositeRgbNoiseTexture.anInt8685 > (RegionSceneShifter.anInt7054 shl 9) + -1) CompositeRgbNoiseTexture.anInt8685 = (RegionSceneShifter.anInt7054 shl 9) - 1
                 CharCodeMap.method3225(114)
                 LoadingScreenImageNode.method3175((-107).toByte())
                 FacingDirectionNode.aRenderer6654!!.KA(i_1_, i_3_, i_1_ - -i_0_, i_3_ + i_2_)
                 TextureDefinitionCache.method1626(1, true)
-                if (Class59_Sub1.aBoolean5300) {
+                if (GrayscaleNoiseTexture.aBoolean5300) {
                     ProjectionCameraTransform.method941(124, LocTypeDefLoader.anInt2500)
                     if (LocalPlayerState.anInt1906 != PlayerAppearanceUpdateDecoder.anInt4545) PcmStreamBuffer.aBoolean8870 = true
                     PlayerAppearanceUpdateDecoder.anInt4545 = LocalPlayerState.anInt1906
@@ -109,13 +109,13 @@ class OutputStream_Sub1 : OutputStream() {
                 }
                 WorldMapAreaLabel.method3570(false)
                 if (i >= 80) {
-                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(GlslMaterialPass.anInt6246, ParticleSystemRenderer.anInt3855, Class59_Sub2_Sub2.anInt8685, -MinimapAreaMarkerNode.anInt9701 and 0x3fff, -WorldMapElement.anInt4638 and 0x3fff, 0x3fff and -MapTileShape.anInt4186)
+                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(GlslMaterialPass.anInt6246, ParticleSystemRenderer.anInt3855, CompositeRgbNoiseTexture.anInt8685, -MinimapAreaMarkerNode.anInt9701 and 0x3fff, -WorldMapElement.anInt4638 and 0x3fff, 0x3fff and -MapTileShape.anInt4186)
                     FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                     FacingDirectionNode.aRenderer6654!!.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, Class97.anInt1550 shl 1, Class97.anInt1550 shl 1)
                     CircleHitbox.method319(Class97.anInt1550 shl 1, Class97.anInt1550 shl 1, (-18).toByte(), i_1_ + i_0_ / 2, i_3_ + i_2_ / 2)
-                    SpriteRenderEntry.method3282(0x3fff and -(MinimapAreaMarkerNode.anInt9701), Class59_Sub2_Sub2.anInt8685, ParticleSystemRenderer.anInt3855, 0, -WorldMapElement.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -MapTileShape.anInt4186 and 0x3fff)
+                    SpriteRenderEntry.method3282(0x3fff and -(MinimapAreaMarkerNode.anInt9701), CompositeRgbNoiseTexture.anInt8685, ParticleSystemRenderer.anInt3855, 0, -WorldMapElement.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -MapTileShape.anInt4186 and 0x3fff)
                     val i_16_ = (if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
-                    if (Class59_Sub1.aBoolean5300) {
+                    if (GrayscaleNoiseTexture.aBoolean5300) {
                         CameraRotationStub.method289(-15902, 0x3fff and -WorldMapElement.anInt4638, -MapTileShape.anInt4186 and 0x3fff, (-MinimapAreaMarkerNode.anInt9701 and 0x3fff))
                         SceneProjector.method1634(
                             Class64.anIntArray1127,
@@ -125,7 +125,7 @@ class OutputStream_Sub1 : OutputStream() {
                             (LocalPlayerState.aPlayer_1907!!.plane) - -1,
                             FileIoUtil.anIntArray4097,
                             GlslMaterialPass.anInt6246,
-                            Class59_Sub2_Sub2.anInt8685,
+                            CompositeRgbNoiseTexture.anInt8685,
                             IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 0,
                             ParticleSystemRenderer.anInt3855,
                             (LocalPlayerState.aPlayer_1907!!.x) shr 9,
@@ -141,7 +141,7 @@ class OutputStream_Sub1 : OutputStream() {
                         Class367_Sub11.anInt7396,
                         GlslMaterialPass.anInt6246,
                         ParticleSystemRenderer.anInt3855,
-                        Class59_Sub2_Sub2.anInt8685,
+                        CompositeRgbNoiseTexture.anInt8685,
                         RegionSceneLoader.aByteArrayArrayArray3700,
                         FileIoUtil.anIntArray4097,
                         LinkedListIterator.anIntArray2117,
@@ -170,7 +170,7 @@ class OutputStream_Sub1 : OutputStream() {
                     MinimapAreaMarkerNode.anInt9701 = i_11_
                     WorldMapElement.anInt4638 = i_12_
                     ParticleSystemRenderer.anInt3855 = i_9_
-                    Class59_Sub2_Sub2.anInt8685 = i_10_
+                    CompositeRgbNoiseTexture.anInt8685 = i_10_
                     if (SocketGameConnection.aBoolean5840 && ClientMachineInfo.aMediaStreamClient_6601!!.method1902(4) == 0) SocketGameConnection.aBoolean5840 = false
                     if (SocketGameConnection.aBoolean5840) {
                         FacingDirectionNode.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
@@ -194,13 +194,13 @@ class OutputStream_Sub1 : OutputStream() {
         fun method134(i: Byte) {
             if (i.toInt() != -126) method132(-95, true, 10, 28, 45, 100)
             if (CompiledScriptCache.anObject4366 == null) {
-                val class59_sub1_sub1 = Class59_Sub1_Sub1()
+                val class59_sub1_sub1 = ScrollingNoiseTexture()
                 val `is` = class59_sub1_sub1.method559(128, 128, 106.toByte(), 16)
                 CompiledScriptCache.anObject4366 = GrowableStringList.method1357(`is`, false, 111.toByte())
             }
             anInt92++
             if (BoxedIntHolder.anObject2969 == null) {
-                val class59_sub2_sub2 = Class59_Sub2_Sub2()
+                val class59_sub2_sub2 = CompositeRgbNoiseTexture()
                 val `is` = class59_sub2_sub2.method571(128, (-38).toByte(), 16, 128)
                 BoxedIntHolder.anObject2969 = GrowableStringList.method1357(`is`, false, 106.toByte())
             }

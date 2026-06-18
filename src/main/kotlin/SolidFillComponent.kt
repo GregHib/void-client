@@ -49,7 +49,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
         fun method191(bool: Boolean, i: Int, i_0_: Int) {
             if (NpcEntityUpdater.anInt3655 != 1) {
                 if (NpcEntityUpdater.anInt3655 == 2) {
-                    if (!Class59_Sub1.aBoolean5300) TextureFormatInfo.method2291((-127).toByte(), i, i_0_)
+                    if (!GrayscaleNoiseTexture.aBoolean5300) TextureFormatInfo.method2291((-127).toByte(), i, i_0_)
                     else TextureFormatInfo.method2291((-122).toByte(), i + NativeTerrainTile.method4008((-128).toByte()), SceneTilePlaneManager.method260(!bool) + i_0_)
                 }
             } else SpriteMaskShape.method2599(101.toByte(), RectangleRegion.aClass348_Sub42_Sub12_1946, i_0_, i)

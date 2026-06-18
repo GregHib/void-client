@@ -1,5 +1,5 @@
 import MinimapLineDrawer.Companion.method473
-import Class59_Sub1_Sub1.Companion.method558
+import ScrollingNoiseTexture.Companion.method558
 
 /* Class103 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

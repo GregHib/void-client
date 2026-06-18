@@ -132,7 +132,7 @@ class Bzip2DecoderState internal constructor() {
             HostPingThread.aAbstractModelRendererArray2260 = null
             CameraNodeList.aAbstractModelRendererArray1744 = null
             CompassSmoother.aAbstractModelRendererArray3378 = null
-            Class59_Sub1.aAbstractModelRendererArray5294 = null
+            GrayscaleNoiseTexture.aAbstractModelRendererArray5294 = null
             WallSceneEntity.aAbstractModelRendererArray9959 = null
             anInt542++
         }

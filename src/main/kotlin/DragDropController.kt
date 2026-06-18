@@ -37,7 +37,7 @@ class DragDropController {
             } else {
                 var i_0_ = 0
                 var i_1_ = 0
-                if (Class59_Sub1.aBoolean5300) {
+                if (GrayscaleNoiseTexture.aBoolean5300) {
                     i_0_ = NativeTerrainTile.method4008((-124).toByte())
                     i_1_ = method260(false)
                 }

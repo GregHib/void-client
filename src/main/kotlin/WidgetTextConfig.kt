@@ -133,7 +133,7 @@ class WidgetTextConfig {
                         return
                     } else {
                         MapElementManager.aString4461 = MinimapSquareDrawer.aStringArray5223!![i_4_]
-                        Class59_Sub1.method555(false, 0)
+                        GrayscaleNoiseTexture.method555(false, 0)
                     }
                 }
                 MinimapFlagRenderer.anInt1794 = -1
@@ -191,7 +191,7 @@ class WidgetTextConfig {
                             TerrainShadowBuilderGl3.anInt7006 = 0
                         }
                     } else if (i_7_ == 84) {
-                        Class59_Sub1.method555(false, 0)
+                        GrayscaleNoiseTexture.method555(false, 0)
                         HISTORY_INDEX = -1
                     } else if (i_7_ != 80) {
                         if (i_7_ == 66 && (0x4 and i_8_) != 0) {
@@ -270,7 +270,7 @@ class WidgetTextConfig {
                                 }
                             }
                         }
-                    } else Class59_Sub1.method555(true, 0)
+                    } else GrayscaleNoiseTexture.method555(true, 0)
                     i_6_++
                 }
                 MinimapAreaMarkerNode.anInt9699 = 0
@@ -315,7 +315,7 @@ class WidgetTextConfig {
                             Class71.aClass76_1208!!.method774(class318_sub4, 18802)
                         }
                     } else Class71.aClass76_1208!!.method774(class318_sub4, 18802)
-                } else Class59_Sub1_Sub1.method560(class318_sub4, 18)
+                } else ScrollingNoiseTexture.method560(class318_sub4, 18)
             }
         }
     }

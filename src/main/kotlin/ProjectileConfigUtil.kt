@@ -1,7 +1,7 @@
 import BrightnessOptionState.Companion.method1745
 import GlVertexBufferArb.Companion.method2127
 import WaterMaterialPass.Companion.method2148
-import Class59.Companion.method544
+import NoiseTextureGenerator.Companion.method544
 
 /* Class27 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -90,8 +90,8 @@ object ProjectileConfigUtil {
         anInt393++
         var i_5_ = 0
         if (i <= 70) return -84
-        while ( /**/i_5_ < Class59_Sub2.aStringArray5305!!.size) {
-            if (Class59_Sub2.aStringArray5305!![i_5_].equals(string, ignoreCase = true)) return i_5_
+        while ( /**/i_5_ < RgbNoiseTexture.aStringArray5305!!.size) {
+            if (RgbNoiseTexture.aStringArray5305!![i_5_].equals(string, ignoreCase = true)) return i_5_
             i_5_++
         }
         return -1

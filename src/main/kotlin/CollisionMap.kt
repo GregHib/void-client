@@ -795,7 +795,7 @@ class CollisionMap {
                         val i_45_ = i_43_ * LoadProgressCounters.anInt2446 / Class75.anInt1267
                         val i_46_ = i_39_ - -(i_42_ * LocConfigModelBuilder.anInt4509 / Class75.anInt1259)
                         if (bool != true) method3498(44, null, -27, -91, true, -26)
-                        val i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * Class59_Sub1_Sub2.anInt8665 / Class75.anInt1267)))
+                        val i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * StaticNoiseTexture.anInt8665 / Class75.anInt1267)))
                         var i_48_ = -1996554240
                         if (GlRectangleTexture.aSceneProjector_8638 == HardCacheEntryReference.aSceneProjector_10434) i_48_ = -1996488705
                         var_renderer.aa(i_46_, i_47_, i_44_, i_45_, i_48_, 1)

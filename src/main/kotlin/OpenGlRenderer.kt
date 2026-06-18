@@ -3074,7 +3074,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         throw RuntimeException("")
                     }
                 }
-                Class59_Sub2_Sub1.method566(false, true, (-128).toByte())
+                CachedRgbNoiseTexture.method566(false, true, (-128).toByte())
                 aBoolean7734 = true
                 aTextureCache_7723 = TextureCache(this, this.aRenderConfig4579)
                 method3786(false)

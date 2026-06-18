@@ -1,7 +1,7 @@
 /* Class59_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
+class ScrollingNoiseTexture : GrayscaleNoiseTexture(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
     private lateinit var aByteArray8657: ByteArray
     override fun method550(i: Int, i_3_: Byte, i_4_: Byte) {
         if (i_4_.toInt() == 14) {

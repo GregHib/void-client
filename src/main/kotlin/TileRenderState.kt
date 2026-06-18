@@ -110,7 +110,7 @@ class TileRenderState {
             if (i == 9864) {
                 anInt4230++
                 if (FacingDirectionNode.aRenderer6654 != null) {
-                    if (Class59_Sub1.aBoolean5300) method1406(true)
+                    if (GrayscaleNoiseTexture.aBoolean5300) method1406(true)
                     Class71.aClass76_1208!!.method775(69.toByte())
                     method2433()
                     method464(i + -9865)

@@ -1,5 +1,5 @@
 import CubemapTextureGlSource.Companion.method2264
-import Class59_Sub2_Sub2.Companion.method574
+import CompositeRgbNoiseTexture.Companion.method574
 
 /* Class298 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

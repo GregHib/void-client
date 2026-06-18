@@ -134,7 +134,7 @@ class GlTexture2DRegion : GlTexture2D {
         @JvmStatic
         fun method1971(i: Int, string: String?, bool: Boolean, i_11_: Int) {
             anInt9942++
-            Class59_Sub1_Sub1.method556(false)
+            ScrollingNoiseTexture.method556(false)
             TileRenderState.method2681(9864)
             NpcReference.method2959(-1)
             OggBitstreamDecoder.method2965(string, i_11_, bool, 0)

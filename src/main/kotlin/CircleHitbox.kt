@@ -78,7 +78,7 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
         fun method323(js5Archive: Js5Archive?, privilegedOperationWorker: PrivilegedOperationWorker?, i: Byte) {
             try {
                 RegionSceneShifter.aString7048 = ""
-                Class59_Sub1.aPrivilegedOperationWorker_5297 = privilegedOperationWorker
+                GrayscaleNoiseTexture.aPrivilegedOperationWorker_5297 = privilegedOperationWorker
                 anInt410++
                 ParticleSystemState.aJs5Archive_2208 = js5Archive
                 if (!ClientGameLoopNode.aString6877!!.startsWith("win")) {
@@ -87,7 +87,7 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
                     } else RegionSceneShifter.aString7048 += "linux/"
                 } else RegionSceneShifter.aString7048 += "windows/"
                 if (i.toInt() != 95) anIntArray407 = null
-                if (!Class59_Sub1.aPrivilegedOperationWorker_5297!!.aBoolean3794) {
+                if (!GrayscaleNoiseTexture.aPrivilegedOperationWorker_5297!!.aBoolean3794) {
                     if (!ClientGameLoopNode.aString6876!!.startsWith("amd64") && !ClientGameLoopNode.aString6876!!.startsWith("x86_64")) {
                         if (!ClientGameLoopNode.aString6876!!.startsWith("i386") && !ClientGameLoopNode.aString6876!!.startsWith("i486") && !ClientGameLoopNode.aString6876!!.startsWith("i586") && !ClientGameLoopNode.aString6876!!.startsWith("x86")) {
                             if (!ClientGameLoopNode.aString6876!!.startsWith("ppc")) RegionSceneShifter.aString7048 += "universal/"

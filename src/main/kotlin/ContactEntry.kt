@@ -75,12 +75,12 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
                 if (`is` == null || is_1_ == null) {
                     DisplaceTextureNode.aByteArrayArrayArray9134 = null
                     ModelLightingConfig.anIntArray2552 = null
-                    Class59_Sub2_Sub2.anIntArray8684 = null
+                    CompositeRgbNoiseTexture.anIntArray8684 = null
                 } else {
-                    Class59_Sub2_Sub2.anIntArray8684 = `is`
+                    CompositeRgbNoiseTexture.anIntArray8684 = `is`
                     ModelLightingConfig.anIntArray2552 = IntArray(`is`.size)
                     DisplaceTextureNode.aByteArrayArrayArray9134 = arrayOfNulls<Array<ByteArray?>>(`is`.size)
-                    for (i_2_ in i..<Class59_Sub2_Sub2.anIntArray8684!!.size) DisplaceTextureNode.aByteArrayArrayArray9134!![i_2_] = arrayOfNulls<ByteArray>(is_1_[i_2_])
+                    for (i_2_ in i..<CompositeRgbNoiseTexture.anIntArray8684!!.size) DisplaceTextureNode.aByteArrayArrayArray9134!![i_2_] = arrayOfNulls<ByteArray>(is_1_[i_2_])
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw method2929(runtimeexception, ("db.D(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i + ')'))
@@ -101,7 +101,7 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
                 val i_10_ = (method2064(i_8_, CompiledScriptCache.anInt4372, 11219, i_9_) + -MinimapFlagRenderer.anInt1797)
                 val i_11_ = i_8_ - GlslMaterialPass.anInt6246
                 val i_12_ = -ParticleSystemRenderer.anInt3855 + i_10_
-                val i_13_ = i_9_ - Class59_Sub2_Sub2.anInt8685
+                val i_13_ = i_9_ - CompositeRgbNoiseTexture.anInt8685
                 val i_14_ = sqrt((i_11_ * i_11_ + i_13_ * i_13_).toDouble()).toInt()
                 MinimapAreaMarkerNode.Companion.anInt9701 = (atan2(i_12_.toDouble(), i_14_.toDouble()) * 2607.5945876176133).toInt() and 0x3fff
                 WorldMapElement.anInt4638 = (-2607.5945876176133 * atan2(i_11_.toDouble(), i_13_.toDouble())).toInt() and 0x3fff

@@ -56,7 +56,7 @@ class CameraRotationStub {
                 ProceduralTextureGraph.aDouble9531 = d_7_ * -d_4_
                 SceneCollisionEntry.aDouble4404 = d_5_
                 MapElementDefinitionCache.aDouble3980 = 0.0
-                Class59.aDouble1083 = d_6_ * -d_5_
+                NoiseTextureGenerator.aDouble1083 = d_6_ * -d_5_
                 TheoraVideoStream.aDouble9023 = d_5_ * d_7_
             }
         }

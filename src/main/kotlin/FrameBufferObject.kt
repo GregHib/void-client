@@ -61,7 +61,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
             anInt4882 = class258_sub2.anInt8538
             anInt4886 = class258_sub2.anInt8538
         } else if (class258_sub2.anInt8538 != anInt4882 || anInt4886 != class258_sub2.anInt8538) throw RuntimeException()
-        class258_sub2.method1961(anInt4873, i_22_, Class59_Sub2.anIntArray5306!![i_21_], i, -1)
+        class258_sub2.method1961(anInt4873, i_22_, RgbNoiseTexture.anIntArray5306!![i_21_], i, -1)
         anInterface9Array4875[i_21_] = class258_sub2
         anInt4884 = anInt4884 or i_23_
     }
@@ -70,7 +70,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
         anInt4885++
         if (i_24_.toInt() != 3) aClass209_4874 = null
         if (anInt4873 == -1) throw RuntimeException()
-        glDrawBuffer(Class59_Sub2.anIntArray5306!![i])
+        glDrawBuffer(RgbNoiseTexture.anIntArray5306!![i])
     }
 
     override fun method48(i: Int) {
@@ -99,7 +99,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
     fun method1505(i: Int, i_26_: Int) {
         anInt4880++
         if ((anInt4873.inv()) == i) throw RuntimeException()
-        glReadBuffer(Class59_Sub2.anIntArray5306!![i_26_])
+        glReadBuffer(RgbNoiseTexture.anIntArray5306!![i_26_])
     }
 
     private fun method1506(i: Int, class258_sub3: GlTexture2D, i_27_: Int, i_28_: Int) {
@@ -110,7 +110,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
             anInt4882 = class258_sub3.anInt8547
             anInt4886 = class258_sub3.anInt8551
         } else if ((anInt4882 != class258_sub3.anInt8547) || class258_sub3.anInt8551 != anInt4886) throw RuntimeException()
-        class258_sub3.method1963(anInt4873, i, 0, Class59_Sub2.anIntArray5306!![i_27_])
+        class258_sub3.method1963(anInt4873, i, 0, RgbNoiseTexture.anIntArray5306!![i_27_])
         anInterface9Array4875[i_27_] = class258_sub3
         anInt4884 = anInt4884 or i_29_
     }
@@ -138,7 +138,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
             anInt4882 = class348_sub42_sub2.anInt8572
         } else if ((class348_sub42_sub2.anInt8572 != anInt4882) || (anInt4886 != class348_sub42_sub2.anInt8565)) throw RuntimeException()
         val i_34_ = -68 / ((i_32_ - 64) / 49)
-        class348_sub42_sub2.method3173(36161, Class59_Sub2.anIntArray5306!![i], anInt4873)
+        class348_sub42_sub2.method3173(36161, RgbNoiseTexture.anIntArray5306!![i], anInt4873)
         anInterface9Array4875[i] = class348_sub42_sub2
         anInt4884 = anInt4884 or i_33_
     }
@@ -295,8 +295,8 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
             anInt4890++
             if (Class74.aBoolean1236 && !method1296(true)) {
                 if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1) {
-                    if (UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 != null) method3086(2, UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), Class59_Sub2_Sub1.aJs5Archive_8667, false, 0, SlotBinding.anInt3428)
-                    else method2732(0, SlotBinding.anInt3428, false, 124, Class59_Sub2_Sub1.aJs5Archive_8667, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
+                    if (UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 != null) method3086(2, UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), CachedRgbNoiseTexture.aJs5Archive_8667, false, 0, SlotBinding.anInt3428)
+                    else method2732(0, SlotBinding.anInt3428, false, 124, CachedRgbNoiseTexture.aJs5Archive_8667, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
                 }
                 Class74.aBoolean1236 = false
                 UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 = null

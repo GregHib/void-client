@@ -215,7 +215,7 @@ class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, js5Arc
                         }
                         ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
                         if (FacingDirectionNode.aRenderer6654 != null) {
-                            if (Class59_Sub1.aBoolean5300) TerrainTile.method3980(120, ParticleSystemRenderer.aCanvas3869!!)
+                            if (GrayscaleNoiseTexture.aBoolean5300) TerrainTile.method3980(120, ParticleSystemRenderer.aCanvas3869!!)
                             else FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
                         }
                         if (RsaVarbitHandler.aFrame4904 === container) {

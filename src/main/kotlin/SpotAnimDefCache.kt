@@ -10,14 +10,14 @@ object SpotAnimDefCache {
         anInt3294++
         var spotAnimVector = (SceneObjectEntity.aClass60_8732!!.method583(i.toLong(), -78) as SpotAnimVector?)
         if (spotAnimVector != null) return spotAnimVector
-        val `is` = Class59_Sub2_Sub1.aJs5Archive_8670!!.method410(-1860, 1, i)
+        val `is` = CachedRgbNoiseTexture.aJs5Archive_8670!!.method410(-1860, 1, i)
         spotAnimVector = SpotAnimVector()
         if (bool != false) method1944(64)
         spotAnimVector.anInt2303 = i
         if (`is` != null) spotAnimVector.method1336(83, Buffer(`is`))
         spotAnimVector.method1337(-1)
-        if (spotAnimVector.anInt2296 == 2 && (Class59_Sub2_Sub2.aHashtable_8679!!.method3480(i.toLong(), -6008) == null)) {
-            Class59_Sub2_Sub2.aHashtable_8679!!.method3483(87.toByte(), i.toLong(), IntKeyNode(GlVertexBufferArb.anInt8492))
+        if (spotAnimVector.anInt2296 == 2 && (CompositeRgbNoiseTexture.aHashtable_8679!!.method3480(i.toLong(), -6008) == null)) {
+            CompositeRgbNoiseTexture.aHashtable_8679!!.method3483(87.toByte(), i.toLong(), IntKeyNode(GlVertexBufferArb.anInt8492))
             WorldListEntry.aSpotAnimVectorArray311s!![GlVertexBufferArb.anInt8492++] = spotAnimVector
         }
         SceneObjectEntity.aClass60_8732!!.method582(spotAnimVector, i.toLong(), (-109).toByte())

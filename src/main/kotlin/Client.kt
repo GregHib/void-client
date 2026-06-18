@@ -462,13 +462,13 @@ import OggCacheStream.Companion.method523
 import ConnectionStateType.Companion.method526
 import ConnectionStateType.Companion.method527
 import MapSceneTile.Companion.method530
-import Class59.Companion.method548
-import Class59_Sub1.Companion.method553
-import Class59_Sub1_Sub1.Companion.method556
-import Class59_Sub1_Sub2.Companion.method561
-import Class59_Sub2_Sub1.Companion.method568
-import Class59_Sub2_Sub2.Companion.method570
-import Class59_Sub2_Sub2.Companion.method574
+import NoiseTextureGenerator.Companion.method548
+import GrayscaleNoiseTexture.Companion.method553
+import ScrollingNoiseTexture.Companion.method556
+import StaticNoiseTexture.Companion.method561
+import CachedRgbNoiseTexture.Companion.method568
+import CompositeRgbNoiseTexture.Companion.method570
+import CompositeRgbNoiseTexture.Companion.method574
 import ScrollbarComponent.Companion.method189
 import ProportionalScrollbarComponent.Companion.method190
 import SolidFillComponent.Companion.method191
@@ -1181,7 +1181,7 @@ class Client : GameAppletFrame() {
         Class367_Sub8.method3550((-122).toByte())
         method3554(i + -107)
         method553(0)
-        Class59_Sub2.method564((-54).toByte())
+        RgbNoiseTexture.method564((-54).toByte())
         method1396(25)
         method1907(49.toByte())
         method242(true)
@@ -1477,7 +1477,7 @@ class Client : GameAppletFrame() {
         if (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0) {
             if (WeaveTextureNode.anInt9282 == 2) method241(127.toByte())
             else CameraSplineNode.method2954((-127).toByte())
-            if (GlslMaterialPass.anInt6246 shr 9 < 14 || (GlslMaterialPass.anInt6246 shr 9 >= -14 + Class367_Sub4.anInt7319) || (Class59_Sub2_Sub2.anInt8685 shr 9 < 14) || (RangeThresholdTextureNode.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 shr 9)) AbstractCameraTransform.method893((-49).toByte())
+            if (GlslMaterialPass.anInt6246 shr 9 < 14 || (GlslMaterialPass.anInt6246 shr 9 >= -14 + Class367_Sub4.anInt7319) || (CompositeRgbNoiseTexture.anInt8685 shr 9 < 14) || (RangeThresholdTextureNode.anInt9109 + -14 <= CompositeRgbNoiseTexture.anInt8685 shr 9)) AbstractCameraTransform.method893((-49).toByte())
         }
         if (i.toInt() != 112) anInt5171 = 22
         while (true) {
@@ -1738,7 +1738,7 @@ class Client : GameAppletFrame() {
                     i_121_++
                 }
                 try {
-                    if (!Class59_Sub1.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3657(ModelLightingConfig.aRectangleArray2554, i, 66)
+                    if (!GrayscaleNoiseTexture.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3657(ModelLightingConfig.aRectangleArray2554, i, 66)
                     else method1168(i, 0, ModelLightingConfig.aRectangleArray2554)
                 } catch (exception_sub1: Exception_Sub1) {
                     /* empty */
@@ -1750,7 +1750,7 @@ class Client : GameAppletFrame() {
                     i++
                 }
                 try {
-                    if (Class59_Sub1.aBoolean5300) method395(107)
+                    if (GrayscaleNoiseTexture.aBoolean5300) method395(107)
                     else FacingDirectionNode.aRenderer6654!!.method3689(104.toByte())
                 } catch (exception_sub1: Exception_Sub1) {
                     method1242((exception_sub1.message + " (Recovered) " + method81(79.toByte())), exception_sub1, 15004)
@@ -2057,7 +2057,7 @@ class Client : GameAppletFrame() {
                     } else if (!method111(class46)) {
                         var i_51_ = 0
                         var i_52_ = 0
-                        if (Class59_Sub1.aBoolean5300) {
+                        if (GrayscaleNoiseTexture.aBoolean5300) {
                             i_51_ = NativeTerrainTile.method4008((-128).toByte())
                             i_52_ = method260(false)
                         }

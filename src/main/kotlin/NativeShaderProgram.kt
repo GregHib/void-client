@@ -33,7 +33,7 @@ class NativeShaderProgram(i: Int) : ShaderProgram() {
             anInt9771++
             if (i <= 92) return 99
             if (Buffer.anInt7207 == 1) return SynthVoiceGroup.anInt8854
-            return Class59_Sub1.anInt5283
+            return GrayscaleNoiseTexture.anInt5283
         }
 
         @JvmStatic

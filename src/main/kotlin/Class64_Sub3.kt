@@ -7,7 +7,7 @@ import LinkedListNode.Companion.method2709
 import PcmStreamBuffer.Companion.method2832
 import BlankTextureNode.Companion.method3100
 import Bzip2DecoderState.Companion.method371
-import Class59_Sub2_Sub1.Companion.method565
+import CachedRgbNoiseTexture.Companion.method565
 import RasterSprite.Companion.method166
 import jaclib.memory.Stream.Companion.floatToRawIntBits
 import jaggl.OpenGL.Companion.glColor4ub

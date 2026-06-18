@@ -1,5 +1,5 @@
 import HslColorConfig.Companion.method295
-import Class59_Sub1.Companion.method552
+import GrayscaleNoiseTexture.Companion.method552
 import Renderer.Companion.method3692
 import jaggl.OpenGL.Companion.glLoadIdentity
 import jaggl.OpenGL.Companion.glMatrixMode

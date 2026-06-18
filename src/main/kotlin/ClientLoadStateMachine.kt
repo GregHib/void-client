@@ -126,7 +126,7 @@ object ClientLoadStateMachine {
             IntKeyNode.aJs5Archive_6980 = WorldMapTextLabel.method3571(false, 3, (-23).toByte(), 1)
             ModelFacePriorityNode.aJs5Archive_1878 = WorldMapTextLabel.method3571(false, 4, (-23).toByte(), 1)
             Class367_Sub10.aJs5Archive_7382 = WorldMapTextLabel.method3571(true, 5, (-23).toByte(), 1)
-            Class59_Sub2_Sub1.aJs5Archive_8667 = WorldMapTextLabel.method3571(true, 6, (-23).toByte(), 1)
+            CachedRgbNoiseTexture.aJs5Archive_8667 = WorldMapTextLabel.method3571(true, 6, (-23).toByte(), 1)
             RasterSprite.aJs5Archive_5207 = WorldMapTextLabel.method3571(false, 7, (-23).toByte(), 1)
             WorldMapTextLabel.aJs5Archive_8589 = WorldMapTextLabel.method3571(false, 9, (-23).toByte(), 1)
             SceneTilePlaneManager.aJs5Archive_233 = WorldMapTextLabel.method3571(false, 10, (-23).toByte(), 1)
@@ -165,7 +165,7 @@ object ClientLoadStateMachine {
             LoadingScreenImageNode.method3178(SoftwareSpriteRaster.aJs5Archive_1627, -124, method184(i xor 0x40a46ff3.inv()), CameraRotationStub.aJs5Archive_322)
         }
         if (ConnectionStateType.aConnectionStateType_1032 == TimedTileQueueEntry.aConnectionStateType_9660) {
-            if (ParticleProcessor.anInt4270 == -1) ParticleProcessor.anInt4270 = Class59_Sub2_Sub1.aJs5Archive_8667!!.method417("scape main", 0)
+            if (ParticleProcessor.anInt4270 == -1) ParticleProcessor.anInt4270 = CachedRgbNoiseTexture.aJs5Archive_8667!!.method417("scape main", 0)
             method3290(56)
             Buffer.method3379(2, 2)
         }
@@ -249,7 +249,7 @@ object ClientLoadStateMachine {
             GlBufferObject.anInt4737 = IntKeyNode.aJs5Archive_6980!!.method417("loginscreen", i xor 0x6ff3.inv())
             FloorOverlayDefinition.anInt970 = IntKeyNode.aJs5Archive_6980!!.method417("lobbyscreen", 0)
             Class367_Sub10.aJs5Archive_7382!!.method404(0, true, false)
-            Class59_Sub2_Sub1.aJs5Archive_8667!!.method404(0, true, true)
+            CachedRgbNoiseTexture.aJs5Archive_8667!!.method404(0, true, true)
             CameraRotationStub.aJs5Archive_322!!.method404(i + 28660, true, true)
             SoftwareSpriteRaster.aJs5Archive_1627!!.method404(0, true, true)
             SceneTilePlaneManager.aJs5Archive_233!!.method404(0, true, true)

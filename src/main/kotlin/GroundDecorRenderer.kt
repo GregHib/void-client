@@ -18,7 +18,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
     private var aClass318_Sub9_Sub2ArrayArray3642: Array<Array<PositionedSceneNode?>?>?
     private fun method2098(var_ha_Sub3: NativeRenderer, i: Int, i_0_: Int) {
         anInt3629++
-        Class59_Sub1.aFloat5299 = var_ha_Sub3.aFloat8093
+        GrayscaleNoiseTexture.aFloat5299 = var_ha_Sub3.aFloat8093
         val i_1_ = 75 % ((2 - i) / 34)
         var_ha_Sub3.method3867(i_0_.toFloat(), -86)
         var_ha_Sub3.method3857(92.toByte())
@@ -32,7 +32,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
         var_ha_Sub3.method3946(i + -26358, true)
         var_ha_Sub3.method3865(true, 54)
         if (i != 26326) anIntArray3631 = null
-        if (Class59_Sub1.aFloat5299 != var_ha_Sub3.aFloat8093) var_ha_Sub3.xa(Class59_Sub1.aFloat5299)
+        if (GrayscaleNoiseTexture.aFloat5299 != var_ha_Sub3.aFloat8093) var_ha_Sub3.xa(GrayscaleNoiseTexture.aFloat5299)
     }
 
     fun method2100(i: Byte, var_ha_Sub3: NativeRenderer?) {
@@ -115,7 +115,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
                             class318_sub9_14_ = (class318_sub9_14_.aClass318_Sub9_6469)
                         }
                         var_ha_Sub3.method3814(false, false, if (i_15_ >= 0) i_15_ else -1, 117.toByte())
-                        if (bool && (Class59_Sub1.aFloat5299 != var_ha_Sub3.aFloat8093)) var_ha_Sub3.xa(Class59_Sub1.aFloat5299)
+                        if (bool && (GrayscaleNoiseTexture.aFloat5299 != var_ha_Sub3.aFloat8093)) var_ha_Sub3.xa(GrayscaleNoiseTexture.aFloat5299)
                         else if (var_ha_Sub3.aFloat8093 != 1.0f) var_ha_Sub3.xa(1.0f)
                         method2102(false, var_ha_Sub3, i_12_)
                     }
@@ -347,7 +347,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
     private fun method2103(i: Byte, var_ha_Sub3: NativeRenderer) {
         if (i.toInt() != -33) aClass318_Sub9_Sub2ArrayArray3642 = null
         anInt3639++
-        Class59_Sub1.aFloat5299 = var_ha_Sub3.aFloat8093
+        GrayscaleNoiseTexture.aFloat5299 = var_ha_Sub3.aFloat8093
         var_ha_Sub3.method3825(8)
         var_ha_Sub3.method3865(false, i + 89)
         var_ha_Sub3.method3946(-32, false)

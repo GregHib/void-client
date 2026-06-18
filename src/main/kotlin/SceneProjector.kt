@@ -2,7 +2,7 @@ import AudioResampler.Companion.method1274
 import SocketStreamWorker.Companion.method1469
 import GlTexture3D.Companion.method1960
 import MinimapTileEntry.Companion.method383
-import Class59_Sub1_Sub1.Companion.method560
+import ScrollingNoiseTexture.Companion.method560
 import RenderNode.Companion.method3284
 import kotlin.math.max
 import kotlin.math.min
@@ -61,10 +61,10 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             val i_24_ = -CameraSplineNode.anInt6849 + i_5_
                             val i_25_ = ((VideoAdChecker.aDouble3182 * i_22_.toDouble() + i_23_.toDouble() * MapElementDefinitionCache.aDouble3980 + i_24_.toDouble() * SceneCollisionEntry.aDouble4404) * i_20_.toDouble() / i_14_.toDouble()).toInt()
                             val i_26_ = (((i_24_.toDouble() * ProceduralTextureGraph.aDouble9531) + ((i_22_.toDouble() * TheoraVideoStream.aDouble9023) + (i_23_.toDouble() * LocalizedTextTriple.aDouble3761))) * i_21_.toDouble() / i_14_.toDouble()).toInt()
-                            val d = (i_24_.toDouble() * PcmStreamBuffer.aDouble8869 + (MenuActionNode.aDouble6774 * i_23_.toDouble() + i_22_.toDouble() * Class59.aDouble1083))
+                            val d = (i_24_.toDouble() * PcmStreamBuffer.aDouble8869 + (MenuActionNode.aDouble6774 * i_23_.toDouble() + i_22_.toDouble() * NoiseTextureGenerator.aDouble1083))
                             val i_27_ = i_25_ + SoundEnvelope.anInt2747 - ShaderObject.anInt4100
                             val i_28_ = (HardKeyedCacheEntryReference.anInt10444 + i_26_ + -ModelVertexColorBuffer.anInt6568)
-                            val i_29_ = Class59_Sub1.anInt5283 + i_27_
+                            val i_29_ = GrayscaleNoiseTexture.anInt5283 + i_27_
                             val i_30_ = LinkedNodeListIterator.anInt1651 + i_28_
                             if ((i_27_ < 0 || i_28_ < 0 || i_29_ > SynthVoiceGroup.anInt8854 || (i_30_ > ShadowQualityOptionState.anInt6008)) && Buffer.anInt7207 != 2) {
                                 if (i_29_ <= 0 || i_30_ <= 0 || (SynthVoiceGroup.anInt8854 <= i_27_) || (i_28_ >= ShadowQualityOptionState.anInt6008)) PcmStreamBuffer.aBoolean8870 = true
@@ -289,7 +289,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             if (Buffer.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
                             if (Buffer.anInt7207 == 1) method1469(-117)
                         }
-                        if (Buffer.anInt7207 == 0) WidgetDefinition.anInterface4_252!!.method14(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, Class59_Sub1.anInt5283, LinkedNodeListIterator.anInt1651, 0, 0, true, true)
+                        if (Buffer.anInt7207 == 0) WidgetDefinition.anInterface4_252!!.method14(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, GrayscaleNoiseTexture.anInt5283, LinkedNodeListIterator.anInt1651, 0, 0, true, true)
                         GroundDecorSceneEntity.anInt9997++
                         method3284(true, ShortMatrixNode.aDouble9517)
                         ModelWallEntity.aDouble10120 = ShortMatrixNode.aDouble9517
@@ -309,7 +309,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                             SceneTextLabel.anInt6417 = -ModelVertexColorBuffer.anInt6568 + i_17_
                             ModelFacePriorityNode.anInt1879 = i_21_
                             CameraRotationStub.aRenderer326!!.DA(Class94.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
-                            CameraRotationStub.aRenderer326!!.KA(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, (MapRegionLoaderThread.anInt4211 - -Class59_Sub1.anInt5283), (LinkedNodeListIterator.anInt1651 + PerlinNoiseTextureNode.anInt9157))
+                            CameraRotationStub.aRenderer326!!.KA(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, (MapRegionLoaderThread.anInt4211 - -GrayscaleNoiseTexture.anInt5283), (LinkedNodeListIterator.anInt1651 + PerlinNoiseTextureNode.anInt9157))
                         }
                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, if (Buffer.anInt7207 != 2) 2 else 0, Buffer.anInt7207 == 1)
                         CameraRotationStub.aRenderer326!!.la()

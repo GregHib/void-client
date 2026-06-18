@@ -111,7 +111,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                 var i_10_: Int
                 val i_11_: Int
                 val i_12_: Int
-                if (Class59_Sub1.aBoolean5300) {
+                if (GrayscaleNoiseTexture.aBoolean5300) {
                     LinkedNodeListIterator.method1010(false, false)
                     abstractCameraTransform = var_renderer.method3640()!!
                     val `is` = var_renderer.Y()
@@ -129,7 +129,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                     i_10_ = GlFramebufferBlitter.anInt282
                     var_renderer.KA(ConfigValueProvider.anInt4911, SocketGameConnection.anInt5832, GlFramebufferBlitter.anInt282, ParticleSystemRenderer.anInt3861)
                     abstractCameraTransform = var_renderer.method3654()
-                    abstractCameraTransform.method903(GlRectangleTexture.anInt8633, Class59_Sub2_Sub1.anInt8668, MinimapTileEntry.anInt620, PackedFlagsAccessor.anInt7092, ClanChatRequestSender.anInt3650, DisplaySettingsConfig.anInt7244)
+                    abstractCameraTransform.method903(GlRectangleTexture.anInt8633, CachedRgbNoiseTexture.anInt8668, MinimapTileEntry.anInt620, PackedFlagsAccessor.anInt7092, ClanChatRequestSender.anInt3650, DisplaySettingsConfig.anInt7244)
                     var_renderer.method3638(abstractCameraTransform)
                     i_12_ = i_4_
                     i_11_ = i
@@ -184,14 +184,14 @@ class SceneryDetailOptionState : GraphicsOptionState {
                         }
                     }
                 }
-                if (Class59_Sub1.aBoolean5300) GlVertexBufferArb.method2129(86.toByte())
+                if (GrayscaleNoiseTexture.aBoolean5300) GlVertexBufferArb.method2129(86.toByte())
                 var i_27_ = 0
-                while ((i_27_ < (if (!Class59_Sub1.aBoolean5300) 1 else 2))) {
+                while ((i_27_ < (if (!GrayscaleNoiseTexture.aBoolean5300) 1 else 2))) {
                     val bool = i_27_ == 0
                     val class76 = (if (bool) Class71.aClass76_1208 else HardCacheEntryReference.aClass76_10436)
                     var i_28_ = i
                     var i_29_ = i_4_
-                    if (Class59_Sub1.aBoolean5300) {
+                    if (GrayscaleNoiseTexture.aBoolean5300) {
                         LinkedNodeListIterator.method1010(false, bool)
                         i_28_ += MinimapFlagRenderer.method1082(-92, bool)
                         i_29_ += OggBitstreamDecoder.method2960(bool, -48)
@@ -396,7 +396,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                         }
                         class318_sub4 = class243.method1878((-123).toByte()) as SceneEntityModel?
                     }
-                    if (Class59_Sub1.aBoolean5300) GlVertexBufferArb.method2129(86.toByte())
+                    if (GrayscaleNoiseTexture.aBoolean5300) GlVertexBufferArb.method2129(86.toByte())
                     i_27_++
                 }
                 TextureDefinitionCache.method1626(1, false)

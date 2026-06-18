@@ -2507,7 +2507,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 anInt7958 = dimension.width
                 this.anInt7931 = anInt7958
                 this.anInt8178 = i_289_
-                Class59_Sub2_Sub1.method566(false, true, (-127).toByte())
+                CachedRgbNoiseTexture.method566(false, true, (-127).toByte())
                 if (this.aRenderConfig4579 == null) {
                     this.aNativeInterface7924 = NativeInterface(0, this.anInt8178)
                     aMaterialTextureCache_8137 = null

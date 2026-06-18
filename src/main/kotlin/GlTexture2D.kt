@@ -45,7 +45,7 @@ open class GlTexture2D : GlTexture {
             this.anInt8551 = i_8_
             this.aHa_Sub2_4851.method3771((-91).toByte(), this)
             if (bool && this.anInt4849 != 34037) {
-                Class59_Sub1.method551(i_7_, i_9_, i, fs, 0, i_8_, i_6_)
+                GrayscaleNoiseTexture.method551(i_7_, i_9_, i, fs, 0, i_8_, i_6_)
                 this.method1955(true, (-123).toByte())
             } else {
                 glTexImage2Df(this.anInt4849, 0, this.anInt4858, this.anInt8547, this.anInt8551, 0, i_9_, 5126, fs, 0)

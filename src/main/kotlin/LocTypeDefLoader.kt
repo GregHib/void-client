@@ -99,7 +99,7 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
             if (bool == true) {
                 CacheStateResetter.method175((-6).toByte())
                 anInt2505++
-                Class59_Sub1.aBoolean5300 = false
+                GrayscaleNoiseTexture.aBoolean5300 = false
             }
         }
 

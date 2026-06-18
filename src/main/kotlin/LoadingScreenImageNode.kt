@@ -92,7 +92,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
                 val i_13_ = ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) shr 3)
                 if (i_12_ < 0 || Class367_Sub4.anInt7319 shr 3 <= i_12_ || i_13_ < 0 || (RangeThresholdTextureNode.anInt9109 shr 3 <= i_13_)) AwtKeyboardListener.method2703(0, Class367_Sub4.anInt7319 shr 4, (RangeThresholdTextureNode.anInt9109 shr 4), (-13).toByte())
                 else AwtKeyboardListener.method2703(5000, i_12_, i_13_, (-13).toByte())
-            } else AwtKeyboardListener.method2703(5000, GlslMaterialPass.anInt6246 shr 12, Class59_Sub2_Sub2.anInt8685 shr 12, (-13).toByte())
+            } else AwtKeyboardListener.method2703(5000, GlslMaterialPass.anInt6246 shr 12, CompositeRgbNoiseTexture.anInt8685 shr 12, (-13).toByte())
             anInt9509++
             method3134(-1)
             method2988(true)
@@ -169,7 +169,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)) TerrainTile.method3980(i + 93, ParticleSystemRenderer.aCanvas3869!!)
             if (FacingDirectionNode.aRenderer6654 != null) BufferToggleState.method2196((-9).toByte())
             ParticleSystemRenderer.aBoolean3870 = i != IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
-            Class59_Sub1.aBoolean5300 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)
+            GrayscaleNoiseTexture.aBoolean5300 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)
         }
 
         init {

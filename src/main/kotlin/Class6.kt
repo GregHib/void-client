@@ -148,7 +148,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                     var i_35_ = 0
                     var i_36_ = 0
                     if (i < 113) aBoxedIntHolder_151 = null
-                    if (Class59_Sub1.aBoolean5300) {
+                    if (GrayscaleNoiseTexture.aBoolean5300) {
                         i_35_ = NativeTerrainTile.method4008((-127).toByte())
                         i_36_ = SceneTilePlaneManager.method260(false)
                     }

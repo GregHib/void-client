@@ -3,7 +3,7 @@ import kotlin.math.pow
 /* Class59_Sub1_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class59_Sub1_Sub2 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
+class StaticNoiseTexture : GrayscaleNoiseTexture(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
     private lateinit var aByteArray8660: ByteArray
     override fun method550(i: Int, i_0_: Byte, i_1_: Byte) {
         anInt8659++

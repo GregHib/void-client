@@ -36,7 +36,7 @@ class ParticleAmountConfig {
                 var i_13_ = 0
                 var i_14_ = 0
                 var i_15_ = 0
-                if (Class59_Sub1.aBoolean5300) {
+                if (GrayscaleNoiseTexture.aBoolean5300) {
                     i_11_ = ResourceProvider.anInt3941
                     i_15_ = CompletedResourceRequest.anInt10463
                     i_13_ = ResourceProvider.anInt3939
@@ -47,7 +47,7 @@ class ParticleAmountConfig {
                 if (WorldMapTextLabel.aWidgetComponentArrayArray8584!![i_2_] == null) method3064(i_9_, i, i_4_ < 0, i_5_, i_3_, i_4_, i_6_, false, (WarpTextureNode.aWidgetComponentArrayArray9427!![i_2_]), -1, i_7_)
                 else method3064(i_9_, i, i_4_ < 0, i_5_, i_3_, i_4_, i_6_, false, (WorldMapTextLabel.aWidgetComponentArrayArray8584!![i_2_]), -1, i_7_)
                 if (i_8_ <= 58) anInt2127 = -84
-                if (Class59_Sub1.aBoolean5300) {
+                if (GrayscaleNoiseTexture.aBoolean5300) {
                     if (i_4_ >= 0 && CompletedResourceRequest.anInt10463 == 2) MapTileShape.method2663(-5590, ResourceProvider.anInt3941, ResourceProvider.anInt3939, GraphicsOptionState.anInt3142, ModelVertexColorBuffer.anInt6585)
                     CompletedResourceRequest.anInt10463 = i_15_
                     ResourceProvider.anInt3939 = i_13_

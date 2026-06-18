@@ -1,7 +1,7 @@
 /* Class59_Sub2_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
+class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
     private lateinit var aByteArray8681: ByteArray
     fun method571(i: Int, i_4_: Byte, i_5_: Int, i_6_: Int): ByteArray {
         aByteArray8681 = ByteArray(i_5_ * (i_6_ * (i * 2)))

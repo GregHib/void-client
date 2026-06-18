@@ -402,11 +402,11 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
                         }
                         if (string.equals("getcamerapos", ignoreCase = true)) {
                             method94(
-                                ("Pos: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (((GlslMaterialPass.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) shr 6) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((GlslMaterialPass.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) and 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((CollisionMapAccessor.method2064(
+                                ("Pos: " + (LocalPlayerState.aPlayer_1907!!.plane) + "," + (((GlslMaterialPass.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) shr 6) + "," + ((CompositeRgbNoiseTexture.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((GlslMaterialPass.anInt6246 shr 9) - -ArbVertexProgram.regionTileX) and 0x3f) + "," + ((CompositeRgbNoiseTexture.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((CollisionMapAccessor.method2064(
                                     GlslMaterialPass.anInt6246,
                                     (LocalPlayerState.aPlayer_1907!!.plane).toInt(),
                                     11219,
-                                    Class59_Sub2_Sub2.anInt8685
+                                    CompositeRgbNoiseTexture.anInt8685
                                 )) - ParticleSystemRenderer.anInt3855)), 126
                             )
                             method94(

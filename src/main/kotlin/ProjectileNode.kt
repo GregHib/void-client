@@ -324,7 +324,7 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
                     class181.anIntArray2385 = IntArray(class181.anIntArray2395.size)
                     for (i_63_ in class181.anIntArray2395.indices) {
                         method1943(false, (class181.anIntArray2395[i_63_]))
-                        class181.anIntArray2385!![i_63_] = (Class59_Sub2_Sub2.aHashtable_8679!!.method3480(class181.anIntArray2395[i_63_].toLong(), -6008) as IntKeyNode).anInt6976
+                        class181.anIntArray2385!![i_63_] = (CompositeRgbNoiseTexture.aHashtable_8679!!.method3480(class181.anIntArray2395[i_63_].toLong(), -6008) as IntKeyNode).anInt6976
                     }
                 }
                 for (i_64_ in class181.anIntArray2385!!.indices) {

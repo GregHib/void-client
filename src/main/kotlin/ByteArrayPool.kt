@@ -42,8 +42,8 @@ object ByteArrayPool {
             else if (`is`.size == 30000 && AbstractFrameBufferSurface.anInt6913 < 50) GlIndexBufferArb.aByteArrayArray8505!![AbstractFrameBufferSurface.anInt6913++] = `is`
             else if (DisplaceTextureNode.aByteArrayArrayArray9134 != null) {
                 var i_2_ = 0
-                while (Class59_Sub2_Sub2.anIntArray8684!!.size > i_2_) {
-                    if ((`is`.size == Class59_Sub2_Sub2.anIntArray8684!![i_2_]) && (DisplaceTextureNode.aByteArrayArrayArray9134!![i_2_])!!.size > ModelLightingConfig.anIntArray2552!![i_2_]) {
+                while (CompositeRgbNoiseTexture.anIntArray8684!!.size > i_2_) {
+                    if ((`is`.size == CompositeRgbNoiseTexture.anIntArray8684!![i_2_]) && (DisplaceTextureNode.aByteArrayArrayArray9134!![i_2_])!!.size > ModelLightingConfig.anIntArray2552!![i_2_]) {
                         DisplaceTextureNode.aByteArrayArrayArray9134!![i_2_]!![ModelLightingConfig.anIntArray2552!![i_2_]++] = `is`
                         break
                     }
@@ -81,8 +81,8 @@ object ByteArrayPool {
         }
         if (DisplaceTextureNode.aByteArrayArrayArray9134 != null) {
             var i_10_ = 0
-            while (Class59_Sub2_Sub2.anIntArray8684!!.size > i_10_) {
-                if ((i == Class59_Sub2_Sub2.anIntArray8684!![i_10_]) && ModelLightingConfig.anIntArray2552!![i_10_] > 0) {
+            while (CompositeRgbNoiseTexture.anIntArray8684!!.size > i_10_) {
+                if ((i == CompositeRgbNoiseTexture.anIntArray8684!![i_10_]) && ModelLightingConfig.anIntArray2552!![i_10_] > 0) {
                     val `is` = (DisplaceTextureNode.aByteArrayArrayArray9134!![i_10_]!![--ModelLightingConfig.anIntArray2552!![i_10_]])
                     DisplaceTextureNode.aByteArrayArrayArray9134!![i_10_]!![ModelLightingConfig.anIntArray2552!![i_10_]] = null
                     return `is`

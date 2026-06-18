@@ -1,7 +1,7 @@
 import BrightnessOptionState.Companion.method1745
 import GlVertexBufferArb.Companion.method2127
 import WaterMaterialPass.Companion.method2148
-import Class59.Companion.method544
+import NoiseTextureGenerator.Companion.method544
 import kotlin.math.max
 import kotlin.math.min
 

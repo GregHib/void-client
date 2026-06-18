@@ -283,7 +283,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         val i_18_ = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / Class75.aFloat1247).toInt())
                         val i_19_ = ((i_13_.toFloat() / Class75.aFloat1247).toInt() + DebugOverlayRenderer.anInt3170)
                         val i_20_ = ((i_12_.toFloat() / Class75.aFloat1247).toInt() + WidgetActionEntry.anInt6992)
-                        Class59_Sub1_Sub2.anInt8665 = DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / Class75.aFloat1247).toInt()
+                        StaticNoiseTexture.anInt8665 = DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / Class75.aFloat1247).toInt()
                         LocConfigModelBuilder.anInt4509 = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / Class75.aFloat1247).toInt())
                         val i_21_ = (DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / Class75.aFloat1247).toInt())
                         LoadProgressCounters.anInt2446 = ((2 * i_13_).toFloat() / Class75.aFloat1247).toInt()

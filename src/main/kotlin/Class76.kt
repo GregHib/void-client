@@ -1,4 +1,4 @@
-import Class59_Sub1_Sub1.Companion.method560
+import ScrollingNoiseTexture.Companion.method560
 
 /* Class76 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -1,4 +1,4 @@
-import Class59_Sub1.Companion.method554
+import GrayscaleNoiseTexture.Companion.method554
 
 /* Class291 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

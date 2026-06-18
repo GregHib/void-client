@@ -136,7 +136,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
             val i_0_ = class348_sub49.readUnsignedByte(255)
             if (i_0_ != 2) return false
             val bool = class348_sub49.readUnsignedByte(255) == 1
-            if (bool) Class59_Sub2_Sub2.method569((-123).toByte(), class348_sub49)
+            if (bool) CompositeRgbNoiseTexture.method569((-123).toByte(), class348_sub49)
             ChatScriptListNode.method3188((-67).toByte(), class348_sub49)
             return true
         }

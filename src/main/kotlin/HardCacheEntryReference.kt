@@ -257,7 +257,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 if (!bool_20_ && BackgroundWorkerThread.anInt3227 == 0) {
                     SceneCollisionEntry.aLongArray4410!![Class79.anInt1359] = l_19_
                     Class79.anInt1359 = (1 + Class79.anInt1359) % 100
-                    val string_22_ = (Class59_Sub2_Sub2.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
+                    val string_22_ = (CompositeRgbNoiseTexture.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
                     if (i == 2 || i == 3) TrackedGroundDecor.method2477("<img=1>" + string_16_, string_22_, (-126).toByte(), -1, "<img=1>" + string, ShadowQualityOptionState.method1788((-76).toByte(), l), 9, 0, string)
                     else if (i != 1) TrackedGroundDecor.method2477(string_16_, string_22_, (-125).toByte(), -1, string, ShadowQualityOptionState.method1788((-83).toByte(), l), 9, 0, string)
                     else TrackedGroundDecor.method2477("<img=0>" + string_16_, string_22_, (-126).toByte(), -1, "<img=0>" + string, ShadowQualityOptionState.method1788((-75).toByte(), l), 9, 0, string)
@@ -686,7 +686,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (CompassSmoother.aIntRange_3371 == ModelVertexColorBuffer.aIntRange_6584) {
-                method128(Class59_Sub1_Sub2.aClass74_8662, 8.toByte())
+                method128(StaticNoiseTexture.aClass74_8662, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -731,7 +731,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     else if (i <= 1 && FontMetaRef.method3455(string_82_, 28280)) bool_83_ = true
                 }
                 if (!bool_83_ && BackgroundWorkerThread.anInt3227 == 0) {
-                    val string_84_ = (Class59_Sub2_Sub2.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
+                    val string_84_ = (CompositeRgbNoiseTexture.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
                     if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_82_, string_84_, (-119).toByte(), -1, "<img=1>" + string, null, 24, 0, string)
                     else if (i == 1) TrackedGroundDecor.method2477("<img=0>" + string_82_, string_84_, (-119).toByte(), -1, "<img=0>" + string, null, 24, 0, string)
                     else TrackedGroundDecor.method2477(string_82_, string_84_, (-115).toByte(), -1, string, null, 24, 0, string)
@@ -842,7 +842,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                             val class43 = RsaVarbitHandler.method490((-104).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!))
                             i_95_ = class43.anInt615
                             string = (class43.aClass348_Sub42_Sub10_614!!.method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 119.toByte()))
-                        } else string = (Class59_Sub2_Sub2.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
+                        } else string = (CompositeRgbNoiseTexture.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
                         player.aString10292 = string!!.trim { it <= ' ' }
                         player.anInt10201 = i_91_ shr 8
                         player.anInt10234 = i_91_ and 0xff
@@ -884,7 +884,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 if (!bool_101_ && BackgroundWorkerThread.anInt3227 == 0) {
                     SceneCollisionEntry.aLongArray4410!![Class79.anInt1359] = l_100_
                     Class79.anInt1359 = (1 + Class79.anInt1359) % 100
-                    val string_103_ = (Class59_Sub2_Sub2.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
+                    val string_103_ = (CompositeRgbNoiseTexture.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
                     if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_98_, string_103_, (-127).toByte(), -1, "<img=1>" + string, null, 7, 0, string)
                     else if (i == 1) TrackedGroundDecor.method2477("<img=0>" + string_98_, string_103_, (-115).toByte(), -1, "<img=0>" + string, null, 7, 0, string)
                     else TrackedGroundDecor.method2477(string_98_, string_103_, (-128).toByte(), -1, string, null, 3, 0, string)
@@ -1303,7 +1303,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (Class59_Sub2_Sub2.aIntRange_8683 == ModelVertexColorBuffer.aIntRange_6584) {
+            if (CompositeRgbNoiseTexture.aIntRange_8683 == ModelVertexColorBuffer.aIntRange_6584) {
                 if (SkeletalAnimFrameLoader.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val `is` = ByteArray(RadialTextureNode.anInt9341)
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3409(RadialTextureNode.anInt9341, `is`, 0, -32769)
@@ -1504,7 +1504,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             }
             if (GradientLookupEffect.aIntRange_9197 == ModelVertexColorBuffer.aIntRange_6584) {
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-43).toByte())
-                val string_198_ = Class59_Sub2_Sub2.method572((InvertTextureNode.method3136(64.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813))), 23034)
+                val string_198_ = CompositeRgbNoiseTexture.method572((InvertTextureNode.method3136(64.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813))), 23034)
                 FixedFunctionMaterialPass.method2144(string, 6, (-101).toByte(), 0, string_198_, string, string)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
@@ -1533,7 +1533,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == Class59.aIntRange_1068) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == NoiseTextureGenerator.aIntRange_1068) {
                 LocDefinitionCache.method2038(-103)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
@@ -1639,7 +1639,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i_216_ = OutputStream_Sub1.anIntArray100!![i_214_] + -1
                 var i_217_ = 0
                 while (i_216_ > i_217_) {
-                    if (Class59_Sub1_Sub2.anIntArray8663!![i_217_] <= i_215_) SpotAnimDefCache.anIntArray3295!![i_214_] = i_217_ - -2
+                    if (StaticNoiseTexture.anIntArray8663!![i_217_] <= i_215_) SpotAnimDefCache.anIntArray3295!![i_214_] = i_217_ - -2
                     i_217_++
                 }
                 LoadingScreenState.anIntArray2632!![NpcSummaryDefinition.method1166(31, EmoteDefCache.anInt4086++)] = i_214_

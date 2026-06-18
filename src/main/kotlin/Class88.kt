@@ -116,10 +116,10 @@ class Class88 {
         fun method842(bool: Boolean) {
             anInt1501++
             RectangleRegion.aWidgetComponentArray1942 = null
-            if (Class59_Sub1.aBoolean5300 && ContactEntry.method3229(-82) != 1) method132(106, (WorldMapRenderer.anInt4674 == 3) || WorldMapRenderer.anInt4674 == 7, method3439(107), 0, PackedFlagsAccessor.method3306((-111).toByte()), 0)
+            if (GrayscaleNoiseTexture.aBoolean5300 && ContactEntry.method3229(-82) != 1) method132(106, (WorldMapRenderer.anInt4674 == 3) || WorldMapRenderer.anInt4674 == 7, method3439(107), 0, PackedFlagsAccessor.method3306((-111).toByte()), 0)
             var i = 0
             var i_1_ = 0
-            if (Class59_Sub1.aBoolean5300) {
+            if (GrayscaleNoiseTexture.aBoolean5300) {
                 i = NativeTerrainTile.method4008((-124).toByte())
                 i_1_ = method260(false)
             }

@@ -85,11 +85,11 @@ abstract class CacheEntryReference internal constructor(@JvmField var anInt9545:
             LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0] = Class367_Sub4.anInt7319 / 2
             LocalPlayerState.aPlayer_1907!!.y = 512 * RangeThresholdTextureNode.anInt9109 / 2
             LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0] = RangeThresholdTextureNode.anInt9109 / 2
-            Class59_Sub2_Sub2.anInt8685 = 0
-            GlslMaterialPass.anInt6246 = Class59_Sub2_Sub2.anInt8685
+            CompositeRgbNoiseTexture.anInt8685 = 0
+            GlslMaterialPass.anInt6246 = CompositeRgbNoiseTexture.anInt8685
             if (WeaveTextureNode.anInt9282 == 2) {
                 GlslMaterialPass.anInt6246 = IntKeyNode.anInt6981 shl 9
-                Class59_Sub2_Sub2.anInt8685 = CollisionMapAccessor.anInt3550 shl 9
+                CompositeRgbNoiseTexture.anInt8685 = CollisionMapAccessor.anInt3550 shl 9
             } else CameraSplineNode.method2954(62.toByte())
             Class76.method773(true)
         }

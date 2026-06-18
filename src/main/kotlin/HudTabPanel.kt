@@ -51,7 +51,7 @@ class HudTabPanel internal constructor(string: String?, @JvmField var anInt2995:
             anInt2997++
             var i_3_ = 0
             var i_4_ = 0
-            if (Class59_Sub1.aBoolean5300) {
+            if (GrayscaleNoiseTexture.aBoolean5300) {
                 i_3_ = NativeTerrainTile.method4008((-124).toByte())
                 i_4_ = method260(false)
             }

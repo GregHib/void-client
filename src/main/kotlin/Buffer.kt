@@ -778,7 +778,7 @@ open class Buffer : LinkedListNode {
                     if (bool) {
                         SlotBinding.anInt3428 = ParticleProcessor.anInt4270
                         if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350) != 0) {
-                            method2355(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350), 50.toByte(), false, Class59_Sub2_Sub1.aJs5Archive_8667, ParticleProcessor.anInt4270, 0, 2)
+                            method2355(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350), 50.toByte(), false, CachedRgbNoiseTexture.aJs5Archive_8667, ParticleProcessor.anInt4270, 0, 2)
                             method3093(i xor 0x66)
                         } else method3007(2, 22684)
                         ClientMachineInfo.aMediaStreamClient_6601!!.method1892(-117, false)

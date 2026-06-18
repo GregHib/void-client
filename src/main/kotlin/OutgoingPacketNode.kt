@@ -69,7 +69,7 @@ class OutgoingPacketNode : LinkedListNode() {
                 if (FacingDirectionNode.aRenderer6654!!.method3694()) {
                     FacingDirectionNode.aRenderer6654!!.method3701(ParticleSystemRenderer.aCanvas3869)
                     method2959(-1)
-                    if (!Class59_Sub1.aBoolean5300) {
+                    if (!GrayscaleNoiseTexture.aBoolean5300) {
                         val dimension = ParticleSystemRenderer.aCanvas3869!!.getSize()
                         FacingDirectionNode.aRenderer6654!!.method3643(ParticleSystemRenderer.aCanvas3869, dimension.width, dimension.height)
                     } else ModelDefinition.method1108((-99).toByte(), ParticleSystemRenderer.aCanvas3869!!)

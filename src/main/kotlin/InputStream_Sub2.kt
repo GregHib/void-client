@@ -185,7 +185,7 @@ class InputStream_Sub2 : InputStream() {
                         if (class348_sub37.aNodeDeque_6998.method2002(18.toByte())) class348_sub37.method2715(62.toByte())
                         if (i_73_ >= 0 && i_71_ >= 0 && Class367_Sub4.anInt7319 > i_73_ && RangeThresholdTextureNode.anInt9109 > i_71_) ProjectileSpawner.method1479(i_71_, (-125).toByte(), i_73_, GradientLookupEffect.anInt9200)
                     }
-                } else if (Class59_Sub1_Sub2.aClass74_8662 == class74) {
+                } else if (StaticNoiseTexture.aClass74_8662 == class74) {
                     val i_75_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                     val i_76_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                     val i_77_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)

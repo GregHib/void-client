@@ -4,7 +4,7 @@ import kotlin.math.pow
 /* Class59_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class59_Sub2(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, f: Float) : Class59(i, i_2_, i_3_, i_4_, i_5_) {
+open class RgbNoiseTexture(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, f: Float) : NoiseTextureGenerator(i, i_2_, i_3_, i_4_, i_5_) {
     private var anInt5302 = 0
     private val anIntArray5303 = IntArray(this.anInt1071)
     private var anInt5308 = 0

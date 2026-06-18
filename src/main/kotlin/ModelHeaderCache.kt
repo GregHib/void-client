@@ -233,7 +233,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         fun method1929(i: Byte): Array<Class74?> {
             if (i.toInt() != -19) method1933(null, null, false)
             anInt3280++
-            return (arrayOf<Class74?>(HardCacheEntryReference.aClass74_10437, NamedIdEntry.aClass74_6891, SplashImageLoadable.aClass74_4689, BufferedFileReader.aClass74_4537, FileIoUtil.aClass74_4098, RectangleBounds.aClass74_2157, Class59_Sub1_Sub2.aClass74_8662, GlShaderObjectHandle.aClass74_515, IntKeyNode.aClass74_6977, ArbFogMaterialPass.aClass74_6201, Class91.aClass74_1519, SynthVoiceGroup.aClass74_8853, ClampTextureNode.aClass74_9475, TextureGenerator.aClass74_2491))
+            return (arrayOf<Class74?>(HardCacheEntryReference.aClass74_10437, NamedIdEntry.aClass74_6891, SplashImageLoadable.aClass74_4689, BufferedFileReader.aClass74_4537, FileIoUtil.aClass74_4098, RectangleBounds.aClass74_2157, StaticNoiseTexture.aClass74_8662, GlShaderObjectHandle.aClass74_515, IntKeyNode.aClass74_6977, ArbFogMaterialPass.aClass74_6201, Class91.aClass74_1519, SynthVoiceGroup.aClass74_8853, ClampTextureNode.aClass74_9475, TextureGenerator.aClass74_2491))
         }
 
         @JvmStatic
@@ -296,11 +296,11 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 CustomCursorsOptionState.aAbstractModelRendererArray5933 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) CustomCursorsOptionState.aAbstractModelRendererArray5933!![i] = var_renderer!!.method3691(spriteImages[i], true)
                 spriteImages = SpriteImage.method1519(js5Archive, CutsceneSequenceData.anInt3739, 0)
-                Class59_Sub1.aAbstractModelRendererArray5294 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                GrayscaleNoiseTexture.aAbstractModelRendererArray5294 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
                     while (spriteImages.size > i) {
-                        Class59_Sub1.aAbstractModelRendererArray5294!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                        GrayscaleNoiseTexture.aAbstractModelRendererArray5294!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }

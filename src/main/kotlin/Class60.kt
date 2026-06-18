@@ -1,4 +1,4 @@
-import Class59_Sub2_Sub2.Companion.method573
+import CompositeRgbNoiseTexture.Companion.method573
 
 /* Class60 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

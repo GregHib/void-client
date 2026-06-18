@@ -3,7 +3,7 @@ import jaggl.OpenGL.Companion.glTexImage2Df
 import kotlin.math.min
 import kotlin.math.pow
 
-open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, f: Float, f_26_: Float, f_27_: Float) : Class59(i, i_22_, i_23_, i_24_, i_25_) {
+open class GrayscaleNoiseTexture(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, f: Float, f_26_: Float, f_27_: Float) : NoiseTextureGenerator(i, i_22_, i_23_, i_24_, i_25_) {
     private val anInt5278: Int
     private val anInt5279: Int
     private var anInt5280 = 0

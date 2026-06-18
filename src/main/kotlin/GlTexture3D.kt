@@ -90,8 +90,8 @@ class GlTexture3D : GlTexture {
             } else WorldMapRenderer.anInt4686 = 0
             ProjectileConfigUtil.anInt387 = DisplayModeOptionState.anInt6111 + NpcActorEntity.anInt10084
             if (ProjectileConfigUtil.anInt387 > SpotAnimEntity.anInt6451) ProjectileConfigUtil.anInt387 = SpotAnimEntity.anInt6451
-            Class59_Sub1.anInt5293 = GlIndexBufferArb.anInt8502 + NpcActorEntity.anInt10084
-            if (Class59_Sub1.anInt5293 > RegionSceneShifter.anInt7054) Class59_Sub1.anInt5293 = RegionSceneShifter.anInt7054
+            GrayscaleNoiseTexture.anInt5293 = GlIndexBufferArb.anInt8502 + NpcActorEntity.anInt10084
+            if (GrayscaleNoiseTexture.anInt5293 > RegionSceneShifter.anInt7054) GrayscaleNoiseTexture.anInt5293 = RegionSceneShifter.anInt7054
             val bools = Class99.aBooleanArrayArray1572
             val bools_28_ = FacingDirectionNode.aBooleanArrayArray6656
             if (SpriteTextureNode.aBoolean9242) {
@@ -126,7 +126,7 @@ class GlTexture3D : GlTexture {
                 else {
                     Player.anIntArray10566 = is_15_
                     BackgroundWorkerThread.anIntArray3220 = is_16_
-                    Class59_Sub1_Sub2.anIntArray8666 = is_17_
+                    StaticNoiseTexture.anIntArray8666 = is_17_
                     CubemapTextureImplSource.anIntArray8712 = is_18_
                     Client.anIntArray5176 = is_19_
                     InterfaceComponentGroup.method3241(i_20_, 39.toByte(), Class9.aRenderer171!!)
@@ -141,7 +141,7 @@ class GlTexture3D : GlTexture {
                 ByteArrayPool.anInt492 = 0
                 IntPair.anInt6974 = 0
                 ProjectileConfigUtil.anInt387 = SpotAnimEntity.anInt6451
-                Class59_Sub1.anInt5293 = RegionSceneShifter.anInt7054
+                GrayscaleNoiseTexture.anInt5293 = RegionSceneShifter.anInt7054
                 SkeletalAnimFrameData.aBoolean351 = false
             }
             DoublyLinkedNodeList.method1877(Class9.aRenderer171, -69)
@@ -150,7 +150,7 @@ class GlTexture3D : GlTexture {
                 var class318_sub4 = class243.method1872(8) as SceneEntityModel?
                 while (class318_sub4 != null) {
                     class318_sub4.method2373(false)
-                    Class59_Sub1_Sub1.method560(class318_sub4, 6)
+                    ScrollingNoiseTexture.method560(class318_sub4, 6)
                     class318_sub4 = class243.method1878(125.toByte()) as SceneEntityModel?
                 }
             }

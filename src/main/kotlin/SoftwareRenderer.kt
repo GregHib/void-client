@@ -2140,7 +2140,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             this.aClass101_Sub1_7492 = MatrixCameraTransform()
             method3631(1)
             method3659(0)
-            Class59_Sub2_Sub1.method566(true, true, (-126).toByte())
+            CachedRgbNoiseTexture.method566(true, true, (-126).toByte())
             aBoolean7471 = true
             anInt7466 = Class62.method599(-70).toInt()
         } catch (throwable: Throwable) {

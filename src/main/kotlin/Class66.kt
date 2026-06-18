@@ -56,8 +56,8 @@ import MinimapPolygonDrawer.Companion.method468
 import OggCacheStream.Companion.method524
 import MapSceneTile.Companion.method529
 import DirectionPath.Companion.method532
-import Class59.Companion.method544
-import Class59_Sub2_Sub2.Companion.method572
+import NoiseTextureGenerator.Companion.method544
+import CompositeRgbNoiseTexture.Companion.method572
 import SolidFillComponent.Companion.method197
 import SpriteComponent.Companion.method199
 import SpriteComponent.Companion.method201
@@ -122,7 +122,7 @@ object Class66 {
         if (class348_sub42_sub19 != null) {
             anIntArray1164 = (IntArray(class348_sub42_sub19.anInt9688))
             aStringArray1155 = (arrayOfNulls<String>(class348_sub42_sub19.anInt9689))
-            if ((class348_sub42_sub19.aBoundsConstraintEntry_9691 == Class90.aBoundsConstraintEntry_1512) || (class348_sub42_sub19.aBoundsConstraintEntry_9691) == Class59_Sub1_Sub2.aBoundsConstraintEntry_8664 || (class348_sub42_sub19.aBoundsConstraintEntry_9691) == Class77.aBoundsConstraintEntry_1298) {
+            if ((class348_sub42_sub19.aBoundsConstraintEntry_9691 == Class90.aBoundsConstraintEntry_1512) || (class348_sub42_sub19.aBoundsConstraintEntry_9691) == StaticNoiseTexture.aBoundsConstraintEntry_8664 || (class348_sub42_sub19.aBoundsConstraintEntry_9691) == Class77.aBoundsConstraintEntry_1298) {
                 var i_1_ = 0
                 var i_2_ = 0
                 if (HeapDiagnosticsHolder.aWidgetComponent_2249 != null) {
@@ -1519,7 +1519,7 @@ object Class66 {
                 if (i_149_ != i_150_) {
                     if (CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_150_ == 0 && SlotBinding.anInt3428 != -1) {
-                            method2732(0, SlotBinding.anInt3428, false, 94, (Class59_Sub2_Sub1.aJs5Archive_8667), i_149_)
+                            method2732(0, SlotBinding.anInt3428, false, 94, (CachedRgbNoiseTexture.aJs5Archive_8667), i_149_)
                             method3093(87)
                             Class74.Companion.aBoolean1236 = false
                         } else if (i_149_ == 0) {
@@ -1638,7 +1638,7 @@ object Class66 {
                 if (i_158_ != i_159_ && SlotBinding.anInt3428 == ParticleProcessor.anInt4270) {
                     if (!CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_159_ == 0) {
-                            method2732(0, SlotBinding.anInt3428, false, 127, (Class59_Sub2_Sub1.aJs5Archive_8667), i_158_)
+                            method2732(0, SlotBinding.anInt3428, false, 127, (CachedRgbNoiseTexture.aJs5Archive_8667), i_158_)
                             method3093(118)
                             Class74.Companion.aBoolean1236 = false
                         } else if (i_158_ == 0) {

@@ -227,9 +227,9 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             var i_17_ = 512 * CollisionMapAccessor.anInt3550 + 256
             var i_18_ = (CollisionMapAccessor.method2064(i_16_, CompiledScriptCache.anInt4372, 11219, i_17_) + -ShortMatrixNode.anInt9515)
             if (GlTextureCubeMap.anInt8537 >= 100) {
-                Class59_Sub2_Sub2.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
+                CompositeRgbNoiseTexture.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
                 GlslMaterialPass.anInt6246 = IntKeyNode.anInt6981 * 512 + 256
-                ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, CompiledScriptCache.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -ShortMatrixNode.anInt9515)
+                ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, CompiledScriptCache.anInt4372, 11219, CompositeRgbNoiseTexture.anInt8685) + -ShortMatrixNode.anInt9515)
             } else {
                 if (GlslMaterialPass.anInt6246 < i_16_) {
                     GlslMaterialPass.anInt6246 += (TileTextureNode.anInt9406 + (GlTextureCubeMap.anInt8537 * (i_16_ + -GlslMaterialPass.anInt6246) / 1000))
@@ -243,17 +243,17 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
                     ParticleSystemRenderer.anInt3855 += ((-ParticleSystemRenderer.anInt3855 + i_18_) * GlTextureCubeMap.anInt8537 / 1000) + TileTextureNode.anInt9406
                     if (i_18_ < ParticleSystemRenderer.anInt3855) ParticleSystemRenderer.anInt3855 = i_18_
                 }
-                if (Class59_Sub2_Sub2.anInt8685 < i_17_) {
-                    Class59_Sub2_Sub2.anInt8685 += (TileTextureNode.anInt9406 - -((i_17_ + -Class59_Sub2_Sub2.anInt8685) * GlTextureCubeMap.anInt8537 / 1000))
-                    if (Class59_Sub2_Sub2.anInt8685 > i_17_) Class59_Sub2_Sub2.anInt8685 = i_17_
+                if (CompositeRgbNoiseTexture.anInt8685 < i_17_) {
+                    CompositeRgbNoiseTexture.anInt8685 += (TileTextureNode.anInt9406 - -((i_17_ + -CompositeRgbNoiseTexture.anInt8685) * GlTextureCubeMap.anInt8537 / 1000))
+                    if (CompositeRgbNoiseTexture.anInt8685 > i_17_) CompositeRgbNoiseTexture.anInt8685 = i_17_
                 }
                 if (i_18_ < ParticleSystemRenderer.anInt3855) {
                     ParticleSystemRenderer.anInt3855 -= ((ParticleSystemRenderer.anInt3855 - i_18_) * GlTextureCubeMap.anInt8537 / 1000) + TileTextureNode.anInt9406
                     if (i_18_ > ParticleSystemRenderer.anInt3855) ParticleSystemRenderer.anInt3855 = i_18_
                 }
-                if (Class59_Sub2_Sub2.anInt8685 > i_17_) {
-                    Class59_Sub2_Sub2.anInt8685 -= (TileTextureNode.anInt9406 + ((Class59_Sub2_Sub2.anInt8685 - i_17_) * GlTextureCubeMap.anInt8537 / 1000))
-                    if (i_17_ > Class59_Sub2_Sub2.anInt8685) Class59_Sub2_Sub2.anInt8685 = i_17_
+                if (CompositeRgbNoiseTexture.anInt8685 > i_17_) {
+                    CompositeRgbNoiseTexture.anInt8685 -= (TileTextureNode.anInt9406 + ((CompositeRgbNoiseTexture.anInt8685 - i_17_) * GlTextureCubeMap.anInt8537 / 1000))
+                    if (i_17_ > CompositeRgbNoiseTexture.anInt8685) CompositeRgbNoiseTexture.anInt8685 = i_17_
                 }
             }
             i_17_ = 256 + ClanChatRequestSender.anInt3647 * 512
@@ -261,7 +261,7 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
             i_18_ = (CollisionMapAccessor.method2064(i_16_, CompiledScriptCache.anInt4372, 11219, i_17_) - MinimapFlagRenderer.anInt1797)
             val i_19_ = -GlslMaterialPass.anInt6246 + i_16_
             val i_20_ = -ParticleSystemRenderer.anInt3855 + i_18_
-            val i_21_ = -Class59_Sub2_Sub2.anInt8685 + i_17_
+            val i_21_ = -CompositeRgbNoiseTexture.anInt8685 + i_17_
             val i_22_ = sqrt((i_19_ * i_19_ - -(i_21_ * i_21_)).toDouble()).toInt()
             var i_23_ = ((atan2(i_20_.toDouble(), i_22_.toDouble()) * 2607.5945876176133).toInt() and 0x3fff)
             if (i < 126) aString8605 = null

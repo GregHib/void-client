@@ -1,5 +1,5 @@
 import ArrayCopyUtil.method1577
-import Class59.Companion.method547
+import NoiseTextureGenerator.Companion.method547
 import Class60.Companion.method589
 
 /* Class309 - Decompiled by JODE
@@ -125,7 +125,7 @@ class ConfigVarProgress internal constructor(private val aString4807: String?) :
                             val class42 = (Class75.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 82.toByte()))
                             if (method589(class42, -4)) {
                                 val bool = ModelLightingConfig.method1425((-31).toByte(), class42, class348_sub21, i_14_, var_renderer, i_15_)
-                                if (bool) Class59.method549((-43).toByte(), class348_sub21, var_renderer!!, class42)
+                                if (bool) NoiseTextureGenerator.method549((-43).toByte(), class348_sub21, var_renderer!!, class42)
                             }
                             class348_sub21 = (nodeDeque.method1990(104.toByte()) as CameraSplineNode?)
                         }

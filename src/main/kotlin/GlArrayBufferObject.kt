@@ -74,7 +74,7 @@ class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
             anInt4713++
             var i_4_ = 0
             var i_5_ = 0
-            if (Class59_Sub1.aBoolean5300) {
+            if (GrayscaleNoiseTexture.aBoolean5300) {
                 i_4_ = NativeTerrainTile.method4008((-122).toByte())
                 i_5_ = method260(false)
             }

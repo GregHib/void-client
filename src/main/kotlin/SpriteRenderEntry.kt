@@ -60,7 +60,7 @@ class SpriteRenderEntry internal constructor(widgetRedrawRegion: WidgetRedrawReg
         fun method3282(i: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
             DisplaySettingsConfig.anInt7244 = i_6_
             GlRectangleTexture.anInt8633 = i_5_
-            Class59_Sub2_Sub1.anInt8668 = i_2_
+            CachedRgbNoiseTexture.anInt8668 = i_2_
             PackedFlagsAccessor.anInt7092 = i
             ClanChatRequestSender.anInt3650 = i_4_
             MinimapTileEntry.anInt620 = i_1_

@@ -1,5 +1,5 @@
 import GameAppletFrame.Companion.method94
-import Class59_Sub1.Companion.method555
+import GrayscaleNoiseTexture.Companion.method555
 import Class62.method599
 
 /* Class348_Sub42_Sub6 - Decompiled by JODE

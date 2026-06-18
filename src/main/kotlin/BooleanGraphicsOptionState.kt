@@ -1,4 +1,4 @@
-import Class59.Companion.method544
+import NoiseTextureGenerator.Companion.method544
 
 /* Class239_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

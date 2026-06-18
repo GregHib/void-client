@@ -17,12 +17,12 @@ class HashTableContainer : LinkedListNode() {
         fun method3030(i: Int, var_ha_Sub2: OpenGlRenderer) {
             anInt6999++
             if (GlShaderProgramHandle.anObject4177 == null) {
-                val class59_sub1_sub2 = Class59_Sub1_Sub2()
+                val class59_sub1_sub2 = StaticNoiseTexture()
                 val `is` = class59_sub1_sub2.method562(128, 128, 121.toByte(), 16)
                 GlShaderProgramHandle.anObject4177 = method1357(`is`, false, 81.toByte())
             }
             if (MapElementDefinitionCache.anObject3985 == null) {
-                val class59_sub2_sub1 = Class59_Sub2_Sub1()
+                val class59_sub2_sub1 = CachedRgbNoiseTexture()
                 val `is` = class59_sub2_sub1.method567(128, 111.toByte(), 16, 128)
                 MapElementDefinitionCache.anObject3985 = method1357(`is`, false, 103.toByte())
             }
@@ -38,7 +38,7 @@ class HashTableContainer : LinkedListNode() {
             anInt6996++
             class348_sub49.readUnsignedByte(255)
             val i_0_ = class348_sub49.readUnsignedByte(255)
-            val class348_sub40 = Class59_Sub1_Sub1.method557(i_0_, (-84).toByte())
+            val class348_sub40 = ScrollingNoiseTexture.method557(i_0_, (-84).toByte())
             class348_sub40!!.anInt7036 = class348_sub49.readUnsignedByte(255)
             val i_1_ = class348_sub49.readUnsignedByte(255)
             if (i < 123) return null

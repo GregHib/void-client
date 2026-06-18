@@ -1,5 +1,5 @@
 import WaterMaterialPass.Companion.method2148
-import Class59.Companion.method544
+import NoiseTextureGenerator.Companion.method544
 
 /* Class5_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

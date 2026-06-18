@@ -38,7 +38,7 @@ object Tooltip {
                     if (i_1_ < RegionSceneLoader.anInt3704) i_1_ = RegionSceneLoader.anInt3704
                     var i_5_ = (Class95.aScreenAnchorAlignment_1542!!.method1607(Class92.anInt1524, i_1_, (-107).toByte()) - -BufferToggleState.anInt3712)
                     var i_6_ = (DefaultGraphicsOptionState.aTileRenderState_6128!!.method2679(OpenGlRenderer.anInt7666, i_2_, 1595) + ChatEffectsOptionState.anInt5871)
-                    if (Class59_Sub1.aBoolean5300) {
+                    if (GrayscaleNoiseTexture.aBoolean5300) {
                         i_5_ += NativeTerrainTile.method4008((-124).toByte())
                         i_6_ += method260(false)
                     }
@@ -74,7 +74,7 @@ object Tooltip {
                 }
                 if (bool) {
                     try {
-                        if (!Class59_Sub1.aBoolean5300) var_renderer.method3689(118.toByte())
+                        if (!GrayscaleNoiseTexture.aBoolean5300) var_renderer.method3689(118.toByte())
                         else method395(i + 79)
                     } catch (exception_sub1: Exception_Sub1) {
                         /* empty */

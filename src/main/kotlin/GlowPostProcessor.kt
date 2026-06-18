@@ -1,6 +1,6 @@
 import RefCountedHandle.Companion.method1323
 import ModelOrSpriteHolder.Companion.method174
-import Class59.Companion.method545
+import NoiseTextureGenerator.Companion.method545
 import Class94.method865
 import Class97.Companion.method876
 import jaggl.OpenGL.Companion.glBegin

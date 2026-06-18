@@ -131,7 +131,7 @@ class TypedRecordTable {
                         val i_25_ = (i_19_.toDouble() * sin(d)).toInt()
                         val i_26_ = (cos(d) * i_19_.toDouble()).toInt()
                         ScriptResources.aAbstractModelRendererArray2640!![i_17_]!!.method981((widgetComponent.anInt709.toFloat() / 2.0f + i_15_.toFloat() + i_25_.toFloat()), (i.toFloat() + widgetComponent.anInt789.toFloat() / 2.0f - i_26_.toFloat()), 4096, (65535.0 * (-d / 6.283185307179586)).toInt())
-                    } else method1211(i, Class59_Sub1.aAbstractModelRendererArray5294!![i_17_], i_15_, widgetComponent, var_sprite, i_14_, 2, i_16_)
+                    } else method1211(i, GrayscaleNoiseTexture.aAbstractModelRendererArray5294!![i_17_], i_15_, widgetComponent, var_sprite, i_14_, 2, i_16_)
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("vp.D(" + l + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + (if (var_sprite != null) "{...}" else "null") + ')'))

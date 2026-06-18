@@ -118,7 +118,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 IntKeyNode.Companion.aJs5Archive_6980!!.method412((-113).toByte())
                 ModelFacePriorityNode.aJs5Archive_1878!!.method412((-116).toByte())
                 Class367_Sub10.aJs5Archive_7382!!.method412((-110).toByte())
-                Class59_Sub2_Sub1.aJs5Archive_8667!!.method412(64.toByte())
+                CachedRgbNoiseTexture.aJs5Archive_8667!!.method412(64.toByte())
                 RasterSprite.aJs5Archive_5207!!.method412(120.toByte())
                 CameraRotationStub.aJs5Archive_322!!.method412(98.toByte())
                 WorldMapTextLabel.aJs5Archive_8589!!.method412(43.toByte())

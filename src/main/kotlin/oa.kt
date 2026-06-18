@@ -580,7 +580,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
                 if (!BlankTextureNode.method3098(-30282, "sw3d")) throw RuntimeException("")
                 RequestGate.method1949((-128).toByte())
                 MA(aRenderConfig4579, 0, 0)
-                Class59_Sub2_Sub1.method566(false, true, 23.toByte())
+                CachedRgbNoiseTexture.method566(false, true, 23.toByte())
                 aBoolean5142 = true
                 aAbstractCameraTransform_5131 = ja()
                 method3638(ja())

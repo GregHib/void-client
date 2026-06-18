@@ -55,7 +55,7 @@ class CameraSplineNode internal constructor(i: Int) : LinkedListNode() {
                 }
                 GlslMaterialPass.anInt6246 = fs[0].toInt() - 512 * ArbVertexProgram.regionTileX
                 ParticleSystemRenderer.anInt3855 = -1 * fs[1].toInt()
-                Class59_Sub2_Sub2.anInt8685 = fs[2].toInt() + -(Class90.regionTileY * 512)
+                CompositeRgbNoiseTexture.anInt8685 = fs[2].toInt() + -(Class90.regionTileY * 512)
                 val fs_10_ = FloatArray(3)
                 val i_11_ = 2 * CompassSmoother.anInt3373
                 val i_12_ = -88 % ((-64 - i) / 57)

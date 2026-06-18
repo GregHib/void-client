@@ -90,14 +90,14 @@ class IndexedSprite : Sprite {
                 RemoveRoofsOptionState.anIntArray6062!![0] = RemoveRoofsOptionState.anIntArray6062!![1]
             } else if (i_12_ >= 22) {
                 val i_15_ = CollisionMapAccessor.method2064(i_9_, i, 11219, i_11_) - i_7_
-                if (Class59_Sub1.aBoolean5300) LinkedNodeListIterator.method1010(false, true)
+                if (GrayscaleNoiseTexture.aBoolean5300) LinkedNodeListIterator.method1010(false, true)
                 else {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method891(i_10_, 0, 0)
                     FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                 }
                 if (!ParticleSystemRenderer.aBoolean3870) FacingDirectionNode.aRenderer6654!!.da(i_9_, i_15_, i_11_, RemoveRoofsOptionState.anIntArray6062)
                 else FacingDirectionNode.aRenderer6654!!.HA(i_9_, i_15_, i_11_, LocalPlayerState.anInt1906, RemoveRoofsOptionState.anIntArray6062)
-                if (Class59_Sub1.aBoolean5300) GlVertexBufferArb.method2129(60.toByte())
+                if (GrayscaleNoiseTexture.aBoolean5300) GlVertexBufferArb.method2129(60.toByte())
                 else {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method891(-i_10_, 0, 0)
                     FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
