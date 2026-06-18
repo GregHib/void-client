@@ -76,7 +76,7 @@ import kotlin.math.pow
 object Class66 {
     private var anIntArray1149: IntArray? = IntArray(1000)
     private var aClass46_1150: Class46? = null
-    private var aClass43_1151: Class43? = null
+    private var aMinimapTileEntry_1151: MinimapTileEntry? = null
     private var aStringArray1152: Array<String?>? = arrayOfNulls<String>(1000)
     @JvmField
     var anInt1153: Int = 0
@@ -419,10 +419,10 @@ object Class66 {
                 return
             }
             if (i == 5058) {
-                aClass43_1151 = Class43()
-                aClass43_1151!!.anInt615 = anIntArray1149!![--anInt1173]
-                aClass43_1151!!.aClass348_Sub42_Sub10_614 = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471((aClass43_1151!!.anInt615), (-87).toByte())
-                aClass43_1151!!.anIntArray617 = IntArray(aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3215((-48).toByte()))
+                aMinimapTileEntry_1151 = MinimapTileEntry()
+                aMinimapTileEntry_1151!!.anInt615 = anIntArray1149!![--anInt1173]
+                aMinimapTileEntry_1151!!.aClass348_Sub42_Sub10_614 = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471((aMinimapTileEntry_1151!!.anInt615), (-87).toByte())
+                aMinimapTileEntry_1151!!.anIntArray617 = IntArray(aMinimapTileEntry_1151!!.aClass348_Sub42_Sub10_614!!.method3215((-48).toByte()))
                 return
             }
             if (i == 5059) {
@@ -431,8 +431,8 @@ object Class66 {
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_41_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
-                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), aClass43_1151!!.anInt615)
-                aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3210(12.toByte(), aClass43_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116!!))
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), aMinimapTileEntry_1151!!.anInt615)
+                aMinimapTileEntry_1151!!.aClass348_Sub42_Sub10_614!!.method3210(12.toByte(), aMinimapTileEntry_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116!!))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(115, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_41_)
                 InterfaceComponentGroup.method3243(127, class348_sub47)
                 return
@@ -444,8 +444,8 @@ object Class66 {
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_42_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
-                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), aClass43_1151!!.anInt615)
-                aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3210((-125).toByte(), aClass43_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116!!))
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), aMinimapTileEntry_1151!!.anInt615)
+                aMinimapTileEntry_1151!!.aClass348_Sub42_Sub10_614!!.method3210((-125).toByte(), aMinimapTileEntry_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116!!))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(102, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_42_)
                 InterfaceComponentGroup.method3243(127, class348_sub47)
                 return
@@ -456,8 +456,8 @@ object Class66 {
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_43_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 1)
-                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), aClass43_1151!!.anInt615)
-                aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3210((-126).toByte(), aClass43_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116!!))
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), aMinimapTileEntry_1151!!.anInt615)
+                aMinimapTileEntry_1151!!.aClass348_Sub42_Sub10_614!!.method3210((-126).toByte(), aMinimapTileEntry_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116!!))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(92, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_43_)
                 InterfaceComponentGroup.method3243(-111, class348_sub47)
                 return
@@ -515,14 +515,14 @@ object Class66 {
                 anInt1173 -= 2
                 val i_56_ = anIntArray1149!![anInt1173]
                 val i_57_ = anIntArray1149!![anInt1173 + 1]
-                aClass43_1151!!.anIntArray617!![i_56_] = i_57_
+                aMinimapTileEntry_1151!!.anIntArray617!![i_56_] = i_57_
                 return
             }
             if (i == 5069) {
                 anInt1173 -= 2
                 val i_58_ = anIntArray1149!![anInt1173]
                 val i_59_ = anIntArray1149!![anInt1173 + 1]
-                aClass43_1151!!.anIntArray617!![i_58_] = i_59_
+                aMinimapTileEntry_1151!!.anIntArray617!![i_58_] = i_59_
                 return
             }
             if (i == 5070) {
@@ -5223,7 +5223,7 @@ object Class66 {
         aScanlineRasterFillerArray1168 = null
         aClass46_1150 = null
         aClass46_1169 = null
-        aClass43_1151 = null
+        aMinimapTileEntry_1151 = null
         aCalendar1160 = null
         aStringArray1176 = null
         anIntArray1175 = null

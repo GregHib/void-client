@@ -129,7 +129,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                     i_10_ = GlFramebufferBlitter.anInt282
                     var_renderer.KA(ConfigValueProvider.anInt4911, SocketGameConnection.anInt5832, GlFramebufferBlitter.anInt282, ParticleSystemRenderer.anInt3861)
                     abstractCameraTransform = var_renderer.method3654()
-                    abstractCameraTransform.method903(GlRectangleTexture.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, PackedFlagsAccessor.anInt7092, ClanChatRequestSender.anInt3650, DisplaySettingsConfig.anInt7244)
+                    abstractCameraTransform.method903(GlRectangleTexture.anInt8633, Class59_Sub2_Sub1.anInt8668, MinimapTileEntry.anInt620, PackedFlagsAccessor.anInt7092, ClanChatRequestSender.anInt3650, DisplaySettingsConfig.anInt7244)
                     var_renderer.method3638(abstractCameraTransform)
                     i_12_ = i_4_
                     i_11_ = i

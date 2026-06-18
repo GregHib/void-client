@@ -35,13 +35,13 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
         @JvmField
         var aFontMetaRef_4907: FontMetaRef?
 
-        fun method490(i: Byte, class348_sub49: Buffer): Class43 {
+        fun method490(i: Byte, class348_sub49: Buffer): MinimapTileEntry {
             anInt4897++
-            val class43 = Class43()
-            class43.anInt615 = class348_sub49.readUnsignedShort(842397944)
-            class43.aClass348_Sub42_Sub10_614 = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(class43.anInt615, (-90).toByte())
+            val minimapTileEntry = MinimapTileEntry()
+            minimapTileEntry.anInt615 = class348_sub49.readUnsignedShort(842397944)
+            minimapTileEntry.aClass348_Sub42_Sub10_614 = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(minimapTileEntry.anInt615, (-90).toByte())
             val i_0_ = -91 / ((9 - i) / 54)
-            return class43
+            return minimapTileEntry
         }
 
         fun method491(i: Byte) {

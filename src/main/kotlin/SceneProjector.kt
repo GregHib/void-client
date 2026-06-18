@@ -1,7 +1,7 @@
 import AudioResampler.Companion.method1274
 import SocketStreamWorker.Companion.method1469
 import GlTexture3D.Companion.method1960
-import Class43.Companion.method383
+import MinimapTileEntry.Companion.method383
 import Class59_Sub1_Sub1.Companion.method560
 import RenderNode.Companion.method3284
 import kotlin.math.max

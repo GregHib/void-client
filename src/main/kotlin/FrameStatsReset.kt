@@ -906,7 +906,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NpcActorEntity.anInt10070 = 0
             Font.anInt4060 = 0
             ParticleDefLoader.anInt2465 = 0
-            Class43.anInt616 = 0
+            MinimapTileEntry.anInt616 = 0
             ItemDefinition.anInt2806 = 0
             Class97.anInt1545 = 0
             Class59_Sub1_Sub1.anInt8654 = 0
@@ -1187,7 +1187,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlSpriteRenderer.anInt8438 = 0
             HeapInfoRecord.anInt4939 = 0
             RandomAccessFileOnDisk.anInt3042 = 0
-            Class43.anInt612 = 0
+            MinimapTileEntry.anInt612 = 0
             Class44.anInt622 = 0
             TextureMaterialGroup.anInt9677 = 0
             NoOpGraphicsOptionState.anInt6039 = 0
@@ -2463,7 +2463,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlVertexBufferArb.anInt8489 = 0
             SocketStreamWorker.anInt2653 = 0
             CacheLruCache.anInt3880 = 0
-            Class43.anInt613 = 0
+            MinimapTileEntry.anInt613 = 0
             TerrainTile.anInt4593 = 0
             Font.anInt4049 = 0
             Class59_Sub2_Sub2.anInt8676 = 0

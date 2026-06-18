@@ -115,7 +115,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             GraphicsOptionState.aIntRange_3145 = AbstractGameSocket.aIntRange_3133
             AbstractGameSocket.aIntRange_3133 = ModelVertexColorBuffer.aIntRange_6584
             if (IOException_Sub1.aIntRange_90 == ModelVertexColorBuffer.aIntRange_6584) {
-                Class43.method382(CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(118.toByte()), true)
+                MinimapTileEntry.method382(CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(118.toByte()), true)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }

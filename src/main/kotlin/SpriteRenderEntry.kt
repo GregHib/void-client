@@ -63,7 +63,7 @@ class SpriteRenderEntry internal constructor(widgetRedrawRegion: WidgetRedrawReg
             Class59_Sub2_Sub1.anInt8668 = i_2_
             PackedFlagsAccessor.anInt7092 = i
             ClanChatRequestSender.anInt3650 = i_4_
-            Class43.anInt620 = i_1_
+            MinimapTileEntry.anInt620 = i_1_
             anInt9703++
         }
 

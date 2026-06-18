@@ -443,7 +443,7 @@ import WidgetTextConfig.Companion.method363
 import GlShaderObjectHandle.Companion.method367
 import NpcModelTransform.Companion.method177
 import Bzip2DecoderState.Companion.method370
-import Class43.Companion.method380
+import MinimapTileEntry.Companion.method380
 import Class44.method387
 import Class45.Companion.method390
 import Class45.Companion.method395

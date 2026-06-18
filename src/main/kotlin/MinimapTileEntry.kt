@@ -3,7 +3,7 @@ import StreamingResourceRequest.Companion.method3261
 /* Class43 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class43 {
+class MinimapTileEntry {
     @JvmField
     var aClass348_Sub42_Sub10_614: ParameterizedText? = null
     @JvmField
