@@ -1351,11 +1351,11 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
             anInt3106++
         }
 
-        fun method1687(class46: Class46, i: Int): Class46? {
+        fun method1687(widgetComponent: WidgetComponent, i: Int): WidgetComponent? {
             if (i != 3) method1686(-21)
             anInt3110++
-            if (class46.anInt834 != -1) return method2570(1512932720, class46.anInt834)
-            val i_309_ = class46.anInt830 ushr 16
+            if (widgetComponent.anInt834 != -1) return method2570(1512932720, widgetComponent.anInt834)
+            val i_309_ = widgetComponent.anInt830 ushr 16
             val mapElementLookup = MapElementLookup(MinimapSpriteRenderer.aHashtable_4915!!)
             var class348_sub41 = mapElementLookup.method2644(123.toByte()) as RegionSceneShifter?
             while (class348_sub41 != null) {

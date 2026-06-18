@@ -10,7 +10,7 @@ class RectangleRegion internal constructor(var anInt1941: Int, @JvmField var anI
     companion object {
         @JvmField
         var aJs5Archive_1940: Js5Archive? = null
-        var aClass46Array1942: Array<Class46?>? = null
+        var aWidgetComponentArray1942: Array<WidgetComponent?>? = null
         @JvmField
         var aClass348_Sub42_Sub12_1946: ContactEntry? = null
         var anInt1947: Int = 0
@@ -20,7 +20,7 @@ class RectangleRegion internal constructor(var anInt1941: Int, @JvmField var anI
             if (i <= -42) {
                 aJs5Archive_1940 = null
                 aClass348_Sub42_Sub12_1946 = null
-                aClass46Array1942 = null
+                aWidgetComponentArray1942 = null
             }
         }
     }

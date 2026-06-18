@@ -5,7 +5,7 @@ class SingletonMarker {
     fun method1450(i: Int): Boolean {
         anInt2600++
         if (i >= -1) return true
-        return (this == HintIconState.aSingletonMarker_2372) or (Class46.aSingletonMarker_838 == this)
+        return (this == HintIconState.aSingletonMarker_2372) or (WidgetComponent.aSingletonMarker_838 == this)
     }
 
     override fun toString(): String {

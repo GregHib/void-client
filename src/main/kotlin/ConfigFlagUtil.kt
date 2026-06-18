@@ -27,14 +27,14 @@ class ConfigFlagUtil {
         }
 
         @JvmStatic
-        fun method1913(bool: Boolean, i: Int, class46: Class46) {
+        fun method1913(bool: Boolean, i: Int, widgetComponent: WidgetComponent) {
             anInt3235++
             val i_0_ = -40 % ((-35 - i) / 51)
-            val i_1_ = (if (class46.anInt698 == 0) class46.anInt709 else class46.anInt698)
-            val i_2_ = (if (class46.anInt791 != 0) class46.anInt791 else class46.anInt789)
-            Class367_Sub1.method3534(false, class46.anInt830, i_1_, bool, i_2_, (WarpTextureNode.aClass46ArrayArray9427!![(class46.anInt830 shr 16)]!!))
-            if (class46.aClass46Array798 != null) Class367_Sub1.method3534(false, class46.anInt830, i_1_, bool, i_2_, class46.aClass46Array798!!)
-            val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(class46.anInt830.toLong(), -6008) as RegionSceneShifter?)
+            val i_1_ = (if (widgetComponent.anInt698 == 0) widgetComponent.anInt709 else widgetComponent.anInt698)
+            val i_2_ = (if (widgetComponent.anInt791 != 0) widgetComponent.anInt791 else widgetComponent.anInt789)
+            Class367_Sub1.method3534(false, widgetComponent.anInt830, i_1_, bool, i_2_, (WarpTextureNode.aWidgetComponentArrayArray9427!![(widgetComponent.anInt830 shr 16)]!!))
+            if (widgetComponent.aWidgetComponentArray798 != null) Class367_Sub1.method3534(false, widgetComponent.anInt830, i_1_, bool, i_2_, widgetComponent.aWidgetComponentArray798!!)
+            val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(widgetComponent.anInt830.toLong(), -6008) as RegionSceneShifter?)
             if (class348_sub41 != null) method1728(i_2_, -1, (class348_sub41.anInt7050), bool, i_1_)
         }
 
@@ -51,9 +51,9 @@ class ConfigFlagUtil {
         }
 
         @JvmStatic
-        fun method1916(i: Int, class46: Class46) {
+        fun method1916(i: Int, widgetComponent: WidgetComponent) {
             anInt3229++
-            if (class46.anInt794 == Class58.anInt1064) GzipDecompressor.aBooleanArray2076!![class46.anInt760] = true
+            if (widgetComponent.anInt794 == Class58.anInt1064) GzipDecompressor.aBooleanArray2076!![widgetComponent.anInt760] = true
             if (i != -9343) method1914(-107, 120)
         }
     }

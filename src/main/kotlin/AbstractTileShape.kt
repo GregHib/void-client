@@ -66,7 +66,7 @@ abstract class AbstractTileShape internal constructor(var anInt6562: Int, var an
         @JvmField
         var anInt6560: Int = 0
         @JvmField
-        var aClass46_6561: Class46? = null
+        var aWidgetComponent_6561: WidgetComponent? = null
         @JvmField
         var anInt6563: Int = 0
 
@@ -83,7 +83,7 @@ abstract class AbstractTileShape internal constructor(var anInt6562: Int, var an
         @JvmStatic
         fun method2719(i: Int) {
             if (i != 11339) method2719(87)
-            aClass46_6561 = null
+            aWidgetComponent_6561 = null
             anIntArray6547 = null
             aMapSceneDefLoader_6559 = null
         }

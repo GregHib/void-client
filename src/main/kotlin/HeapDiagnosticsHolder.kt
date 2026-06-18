@@ -7,7 +7,7 @@ import kotlin.concurrent.Volatile
 object HeapDiagnosticsHolder {
     var aIntRange_2248: IntRange?
     @JvmField
-    var aClass46_2249: Class46? = null
+    var aWidgetComponent_2249: WidgetComponent? = null
     @JvmField
     var aShort2250: Short = 205
     var anInt2251: Int = 0
@@ -23,10 +23,10 @@ object HeapDiagnosticsHolder {
 
     @JvmStatic
     fun method1298(i: Int) {
-        if (i != -1) aClass46_2249 = null
+        if (i != -1) aWidgetComponent_2249 = null
         anObject2256 = null
         aIntRange_2255 = null
-        aClass46_2249 = null
+        aWidgetComponent_2249 = null
         aIntRange_2248 = null
         aSystemFontGlyphs_2252 = null
     }

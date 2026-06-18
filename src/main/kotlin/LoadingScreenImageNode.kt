@@ -115,7 +115,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             else GroundDecorOptionState.anInt5976 = (Class75.aClass348_Sub42_Sub14_1243!!.anInt9628)
             anInt9500++
             Class75.aClass348_Sub42_Sub14_1243 = null
-            HeapDiagnosticsHolder.aClass46_2249 = null
+            HeapDiagnosticsHolder.aWidgetComponent_2249 = null
             anInt4290 = 0
             RegionSceneLoader.aNodeDeque_3705 = null
             method749()

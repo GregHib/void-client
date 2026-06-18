@@ -707,10 +707,10 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                                 PixelBlender.method2252(true, (player.anIntArray10320!![0]), (player.anIntArray10317!![0]), (-106).toByte(), player.method2436(45.toByte()), 0, player.method2436(63.toByte()), -2, 0)
                             }
                         }
-                        if (i_76_ == 16 && Class49.aClass46_4730 == null) {
+                        if (i_76_ == 16 && Class49.aWidgetComponent_4730 == null) {
                             method3065(i_75_, false, i_74_)
-                            Class49.aClass46_4730 = NpcReference.method2957(i_74_, (-54).toByte(), i_75_)
-                            ConfigFlagUtil.method1916(-9343, Class49.aClass46_4730!!)
+                            Class49.aWidgetComponent_4730 = NpcReference.method2957(i_74_, (-54).toByte(), i_75_)
+                            ConfigFlagUtil.method1916(-9343, Class49.aWidgetComponent_4730!!)
                         }
                         if (i_76_ == 8) {
                             val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
@@ -991,8 +991,8 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                                     ParticleEmitterListNode.method3275(1, i_75_, i_74_)
                                 }
                                 if (RenderNode.aBoolean9722) TileRenderState.method2678(-2049)
-                                if (ResourceLoaderThread.aClass46_3913 == null || GroundItemRenderState.anInt1656 != 0) break
-                                ConfigFlagUtil.method1916(-9343, ResourceLoaderThread.aClass46_3913!!)
+                                if (ResourceLoaderThread.aWidgetComponent_3913 == null || GroundItemRenderState.anInt1656 != 0) break
+                                ConfigFlagUtil.method1916(-9343, ResourceLoaderThread.aWidgetComponent_3913!!)
                             }
                         }
                     }

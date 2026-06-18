@@ -89,24 +89,24 @@ abstract class SceneEntity : SceneLinkedListNode() {
         var anInt6392: Int = 0
 
         @JvmStatic
-        fun method2383(var_renderer: Renderer?, i: Int, class46: Class46?) {
+        fun method2383(var_renderer: Renderer?, i: Int, widgetComponent: WidgetComponent?) {
             do {
                 try {
                     if (i != -2) method2383(null, -63, null)
                     anInt6385++
-                    val bool = ((Exception_Sub1.aModelHeaderCache_112!!.method1941(class46!!.anInt672, (-74).toByte(), class46.anInt812, class46.anInt781, 0xffffff.inv() or class46.anInt809, class46.anInt678, var_renderer, (if (!class46.aBoolean720) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)))) == null)
+                    val bool = ((Exception_Sub1.aModelHeaderCache_112!!.method1941(widgetComponent!!.anInt672, (-74).toByte(), widgetComponent.anInt812, widgetComponent.anInt781, 0xffffff.inv() or widgetComponent.anInt809, widgetComponent.anInt678, var_renderer, (if (!widgetComponent.aBoolean720) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)))) == null)
                     if (!bool) break
-                    Class5_Sub1_Sub1.aNodeDeque_9931!!.method1999(RegionTileNode(class46.anInt812, class46.anInt781, class46.anInt672, (0xffffff.inv() or class46.anInt809), class46.anInt678, class46.aBoolean720), i xor 0x4ed2)
-                    ConfigFlagUtil.method1916(-9343, class46)
+                    Class5_Sub1_Sub1.aNodeDeque_9931!!.method1999(RegionTileNode(widgetComponent.anInt812, widgetComponent.anInt781, widgetComponent.anInt672, (0xffffff.inv() or widgetComponent.anInt809), widgetComponent.anInt678, widgetComponent.aBoolean720), i xor 0x4ed2)
+                    ConfigFlagUtil.method1916(-9343, widgetComponent)
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("ga.QA(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (class46 != null) "{...}" else "null") + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("ga.QA(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (widgetComponent != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)
         }
 
         @JvmStatic
-        fun method2385(class46: Class46?, i: Int, var_sprite: Sprite?, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Byte, i_8_: Int, var_renderer: Renderer?) {
+        fun method2385(widgetComponent: WidgetComponent?, i: Int, var_sprite: Sprite?, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Byte, i_8_: Int, var_renderer: Renderer?) {
             do {
                 try {
                     anInt6390++
@@ -126,11 +126,11 @@ abstract class SceneEntity : SceneLinkedListNode() {
                                     i_11_ = (i_11_ * 256 / (FloatBuffer.anInt9750 + 256))
                                     i_12_ = i_12_ * 256 / (256 + (FloatBuffer.anInt9750))
                                 }
-                                `is`[i_9_ * 2] = (((i_11_ * (((class42.anIntArray591!![i_9_ * 2 - -1]) * 4) + i_8_) + (i_5_ - -(4 * (class42.anIntArray591!![2 * i_9_]))) * i_12_) shr 14) + (i_6_ - -(class46!!.anInt709 / 2)))
-                                `is`[i_9_ * 2 - -1] = (-((((class42.anIntArray591!![1 + i_9_ * 2]) * 4 + i_8_) * i_12_ - (i_5_ - -((class42.anIntArray591!![i_9_ * 2]) * 4)) * i_11_) shr 14) + i + class46.anInt789 / 2)
+                                `is`[i_9_ * 2] = (((i_11_ * (((class42.anIntArray591!![i_9_ * 2 - -1]) * 4) + i_8_) + (i_5_ - -(4 * (class42.anIntArray591!![2 * i_9_]))) * i_12_) shr 14) + (i_6_ - -(widgetComponent!!.anInt709 / 2)))
+                                `is`[i_9_ * 2 - -1] = (-((((class42.anIntArray591!![1 + i_9_ * 2]) * 4 + i_8_) * i_12_ - (i_5_ - -((class42.anIntArray591!![i_9_ * 2]) * 4)) * i_11_) shr 14) + i + widgetComponent.anInt789 / 2)
                                 i_9_++
                             }
-                            PolygonFiller.method2619(var_renderer!!, `is`, class42.anInt582, class46!!.anIntArray677, class46.anIntArray772!!)
+                            PolygonFiller.method2619(var_renderer!!, `is`, class42.anInt582, widgetComponent!!.anIntArray677, widgetComponent.anIntArray772!!)
                             if (class42.anInt584 > 0) {
                                 var i_13_ = 0
                                 while ((i_13_ < -1 + `is`.size / 2)) {
@@ -184,7 +184,7 @@ abstract class SceneEntity : SceneLinkedListNode() {
                         var abstractModelRenderer: AbstractModelRenderer? = null
                         if (class42.anInt578 != -1) {
                             abstractModelRenderer = class42.method374(false, var_renderer!!, 127.toByte())
-                            if (abstractModelRenderer != null) HeadIconRenderer.method1211(i, abstractModelRenderer, i_6_, class46, var_sprite, i_8_, 2, i_5_)
+                            if (abstractModelRenderer != null) HeadIconRenderer.method1211(i, abstractModelRenderer, i_6_, widgetComponent, var_sprite, i_8_, 2, i_5_)
                         }
                         if (class42.aString597 == null) break
                         var i_29_ = 0
@@ -199,10 +199,10 @@ abstract class SceneEntity : SceneLinkedListNode() {
                             class143 = WorldMapLabel.aFontDefinition_4962
                             class324 = NodeDeque.aFont_3326
                         }
-                        CameraOrModelTransform.method2650(class143, class42.anInt580, var_sprite, i_8_, i_6_, class42.aString597, i, class324, i_29_, class46, i_5_, 100)
+                        CameraOrModelTransform.method2650(class143, class42.anInt580, var_sprite, i_8_, i_6_, class42.aString597, i, class324, i_29_, widgetComponent, i_5_, 100)
                     }
                 } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("ga.KA(" + (if (class46 != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
+                    throw SoundBankPatch.method2929(runtimeexception, ("ga.KA(" + (if (widgetComponent != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
                 }
                 break
             } while (false)

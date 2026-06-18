@@ -16,28 +16,28 @@ object ItemActionPacketSender {
     }
 
     @JvmStatic
-    fun method1237(i: Byte, class46: Class46) {
+    fun method1237(i: Byte, widgetComponent: WidgetComponent) {
         anInt2108++
         if (i < 69) ItemActionPacketSender.method1236((-52).toByte())
         if (RenderNode.aBoolean9722) {
             HuffmanCodec.anInt3775++
-            if (class46.anObjectArray679 != null) {
+            if (widgetComponent.anObjectArray679 != null) {
                 val class46_0_ = NpcReference.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                 if (class46_0_ != null) {
                     val class348_sub36 = WidgetActionEntry()
-                    class348_sub36.aClass46_6989 = class46
-                    class348_sub36.aClass46_6983 = class46_0_
-                    class348_sub36.anObjectArray6987 = class46.anObjectArray679
+                    class348_sub36.aWidgetComponent_6989 = widgetComponent
+                    class348_sub36.aWidgetComponent_6983 = class46_0_
+                    class348_sub36.anObjectArray6987 = widgetComponent.anObjectArray679
                     method705(class348_sub36)
                 }
             }
             val class348_sub47 = method2148(ByteStore.aFontMetaRef_4266, TheoraVideoStream.aClass77_9029, -120)
-            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(100.toByte(), class46.anInt830)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(100.toByte(), widgetComponent.anInt830)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-123, Class9.anInt169)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), HeightMapNoise.anInt3829)
-            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(92, class46.anInt704)
-            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), class46.anInt812)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(92, widgetComponent.anInt704)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), widgetComponent.anInt812)
             InterfaceComponentGroup.method3243(-89, class348_sub47)
         }
     }

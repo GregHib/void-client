@@ -150,25 +150,25 @@ class MapRegionLoaderThread : Runnable {
         }
 
         @JvmStatic
-        fun method2666(i: Int, i_13_: Int, class46: Class46?, i_14_: Byte) {
+        fun method2666(i: Int, i_13_: Int, widgetComponent: WidgetComponent?, i_14_: Byte) {
             anInt4199++
-            if (class46 != null) {
-                if (class46.anObjectArray714 != null) {
+            if (widgetComponent != null) {
+                if (widgetComponent.anObjectArray714 != null) {
                     val class348_sub36 = WidgetActionEntry()
-                    class348_sub36.anObjectArray6987 = class46.anObjectArray714
-                    class348_sub36.aClass46_6989 = class46
+                    class348_sub36.anObjectArray6987 = widgetComponent.anObjectArray714
+                    class348_sub36.aWidgetComponent_6989 = widgetComponent
                     method705(class348_sub36)
                 }
-                Tooltip.anInt4458 = class46.anInt695
+                Tooltip.anInt4458 = widgetComponent.anInt695
                 ParticleEmitterFactory.anInt3176 = i
                 WidgetTextConfig.anInt500 = i_13_
-                HeightMapNoise.anInt3829 = class46.anInt812
+                HeightMapNoise.anInt3829 = widgetComponent.anInt812
                 RenderNode.aBoolean9722 = true
-                Class9.anInt169 = class46.anInt704
-                FloatBuffer.anInt9747 = class46.anInt824
+                Class9.anInt169 = widgetComponent.anInt704
+                FloatBuffer.anInt9747 = widgetComponent.anInt824
                 if (i_14_.toInt() != 21) Companion.method2665(-99, (-106).toByte(), 10, -37, 26, -123)
-                OrientationRotator.anInt2046 = class46.anInt830
-                method1916(-9343, class46)
+                OrientationRotator.anInt2046 = widgetComponent.anInt830
+                method1916(-9343, widgetComponent)
             }
         }
 

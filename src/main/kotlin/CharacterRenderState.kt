@@ -194,7 +194,7 @@ class CharacterRenderState : LinkedListNode() {
                     if (class46 != null) {
                         if (class46.anObjectArray741 != null) {
                             val class348_sub36 = WidgetActionEntry()
-                            class348_sub36.aClass46_6989 = class46
+                            class348_sub36.aWidgetComponent_6989 = class46
                             class348_sub36.aString6994 = string
                             class348_sub36.anObjectArray6987 = class46.anObjectArray741
                             class348_sub36.anInt6986 = i_8_

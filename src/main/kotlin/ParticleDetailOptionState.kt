@@ -123,37 +123,37 @@ class ParticleDetailOptionState : GraphicsOptionState {
         }
 
         @JvmStatic
-        fun method1797(i: Int, i_11_: Int, class46: Class46, i_12_: Byte) {
+        fun method1797(i: Int, i_11_: Int, widgetComponent: WidgetComponent, i_12_: Byte) {
             if (RenderNode.aBoolean9722) {
                 val class254 = (if (ParticleEmitterFactory.anInt3176 != -1) ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364) else null)
-                if (Client.method105(class46)!!.method3303(1) && (WidgetTextConfig.anInt500 and 0x20) != 0 && (class254 == null || (class46.method428(class254.anInt3256, ParticleEmitterFactory.anInt3176, -128) != class254.anInt3256))) {
+                if (Client.method105(widgetComponent)!!.method3303(1) && (WidgetTextConfig.anInt500 and 0x20) != 0 && (class254 == null || (widgetComponent.method428(class254.anInt3256, ParticleEmitterFactory.anInt3176, -128) != class254.anInt3256))) {
                     ItemModelDefinition.anInt436++
-                    Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> " + class46.aString752) + Loader.getDebug(class46.anInt830 shr 16, class46.anInt830 and 0xffff), class46.anInt830, (-90).toByte(), false, class46.anInt704, class46.anInt812, true, 6, (class46.anInt830 or (class46.anInt704 shl 0)).toLong(), ItemNameResolver.aString5001, 0L, FloatBuffer.anInt9747)
+                    Class50_Sub3.method466(false, (ItemNameResolver.aString5000 + " -> " + widgetComponent.aString752) + Loader.getDebug(widgetComponent.anInt830 shr 16, widgetComponent.anInt830 and 0xffff), widgetComponent.anInt830, (-90).toByte(), false, widgetComponent.anInt704, widgetComponent.anInt812, true, 6, (widgetComponent.anInt830 or (widgetComponent.anInt704 shl 0)).toLong(), ItemNameResolver.aString5001, 0L, FloatBuffer.anInt9747)
                 }
             }
             anInt6022++
             for (i_13_ in 9 downTo 5) {
-                val string = method3561(i_13_, class46, true)
+                val string = method3561(i_13_, widgetComponent, true)
                 if (string != null) {
-                    Class50_Sub3.method466(false, class46.aString752 + Loader.getDebug(class46.anInt830 shr 16, class46.anInt830 and 0xffff), class46.anInt830, (-122).toByte(), false, class46.anInt704, class46.anInt812, true, 1011, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), string, (1 + i_13_).toLong(), MinimapRenderer.method888(57.toByte(), i_13_, class46))
+                    Class50_Sub3.method466(false, widgetComponent.aString752 + Loader.getDebug(widgetComponent.anInt830 shr 16, widgetComponent.anInt830 and 0xffff), widgetComponent.anInt830, (-122).toByte(), false, widgetComponent.anInt704, widgetComponent.anInt812, true, 1011, ((widgetComponent.anInt704 shl 0) or widgetComponent.anInt830).toLong(), string, (1 + i_13_).toLong(), MinimapRenderer.method888(57.toByte(), i_13_, widgetComponent))
                     TimingCounters.anInt4169++
                 }
             }
-            val string = method1753(0, class46)
+            val string = method1753(0, widgetComponent)
             if (string != null) {
-                Class50_Sub3.method466(false, class46.aString752 + Loader.getDebug(class46.anInt830 shr 16, class46.anInt830 and 0xffff), class46.anInt830, (-83).toByte(), false, class46.anInt704, class46.anInt812, true, 13, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), string, 0L, class46.anInt713)
+                Class50_Sub3.method466(false, widgetComponent.aString752 + Loader.getDebug(widgetComponent.anInt830 shr 16, widgetComponent.anInt830 and 0xffff), widgetComponent.anInt830, (-83).toByte(), false, widgetComponent.anInt704, widgetComponent.anInt812, true, 13, ((widgetComponent.anInt704 shl 0) or widgetComponent.anInt830).toLong(), string, 0L, widgetComponent.anInt713)
                 ScriptOpcodeHolder.anInt2340++
             }
             for (i_14_ in 4 downTo 0) {
-                val string_15_ = method3561(i_14_, class46, true)
+                val string_15_ = method3561(i_14_, widgetComponent, true)
                 if (string_15_ != null) {
-                    Class50_Sub3.method466(false, class46.aString752, class46.anInt830, (-67).toByte(), false, class46.anInt704, class46.anInt812, true, 18, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), string_15_, (1 + i_14_).toLong(), MinimapRenderer.method888(57.toByte(), i_14_, class46))
+                    Class50_Sub3.method466(false, widgetComponent.aString752, widgetComponent.anInt830, (-67).toByte(), false, widgetComponent.anInt704, widgetComponent.anInt812, true, 18, ((widgetComponent.anInt704 shl 0) or widgetComponent.anInt830).toLong(), string_15_, (1 + i_14_).toLong(), MinimapRenderer.method888(57.toByte(), i_14_, widgetComponent))
                     TimingCounters.anInt4169++
                 }
             }
-            if (Client.method105(class46)!!.method3305(0)) {
-                if (class46.aString816 != null) Class50_Sub3.method466(false, "", class46.anInt830, (-118).toByte(), false, class46.anInt704, class46.anInt812, true, 16, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), class46.aString816, 0L, -1)
-                else Class50_Sub3.method466(false, "", class46.anInt830, (-79).toByte(), false, class46.anInt704, class46.anInt812, true, 16, (class46.anInt704 shl 0 or class46.anInt830).toLong(), LocalizedText.aLocalizedText_3492!!.method2063(AnimationFrameDefinition.anInt6967, 544), 0L, -1)
+            if (Client.method105(widgetComponent)!!.method3305(0)) {
+                if (widgetComponent.aString816 != null) Class50_Sub3.method466(false, "", widgetComponent.anInt830, (-118).toByte(), false, widgetComponent.anInt704, widgetComponent.anInt812, true, 16, ((widgetComponent.anInt704 shl 0) or widgetComponent.anInt830).toLong(), widgetComponent.aString816, 0L, -1)
+                else Class50_Sub3.method466(false, "", widgetComponent.anInt830, (-79).toByte(), false, widgetComponent.anInt704, widgetComponent.anInt812, true, 16, (widgetComponent.anInt704 shl 0 or widgetComponent.anInt830).toLong(), LocalizedText.aLocalizedText_3492!!.method2063(AnimationFrameDefinition.anInt6967, 544), 0L, -1)
                 TimedTileQueueEntry.anInt9655++
             }
         }

@@ -83,7 +83,7 @@ class TileRenderState {
                 val class46 = NpcReference.method2957(Class9.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                 if (class46 != null && class46.anObjectArray680 != null) {
                     val class348_sub36 = WidgetActionEntry()
-                    class348_sub36.aClass46_6989 = class46
+                    class348_sub36.aWidgetComponent_6989 = class46
                     class348_sub36.anObjectArray6987 = class46.anObjectArray680
                     method705(class348_sub36)
                 }

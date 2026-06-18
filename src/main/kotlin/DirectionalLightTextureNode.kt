@@ -47,7 +47,7 @@ class DirectionalLightTextureNode : AbstractProceduralTextureNode(1, true) {
                 if (i_13_ < 0) i_13_ = -i_13_
                 if (i_12_ > 255) i_12_ = 255
                 if (i_13_ > 255) i_13_ = 255
-                val i_14_ = (Class46.aByteArray821!![i_12_ + (i_13_ * (1 + i_13_) shr 1)].toInt() and 0xff)
+                val i_14_ = (WidgetComponent.aByteArray821!![i_12_ + (i_13_ * (1 + i_13_) shr 1)].toInt() and 0xff)
                 var i_15_ = i_14_ * 4096 shr 8
                 var i_16_ = i_14_ * i_11_ shr 8
                 var i_17_ = i_10_ * i_14_ shr 8

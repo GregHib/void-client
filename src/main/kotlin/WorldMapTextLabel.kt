@@ -23,7 +23,7 @@ class WorldMapTextLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRende
 
     companion object {
         @JvmField
-        var aClass46ArrayArray8584: Array<Array<Class46?>?>? = null
+        var aWidgetComponentArrayArray8584: Array<Array<WidgetComponent?>?>? = null
         @JvmField
         var anInt8586: Int = 0
         @JvmField
@@ -55,7 +55,7 @@ class WorldMapTextLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRende
             aIntRange_8590 = null
             aJs5Archive_8589 = null
             if (i != 1000000) method3571(false, -66, 13.toByte(), 13)
-            aClass46ArrayArray8584 = null
+            aWidgetComponentArrayArray8584 = null
             anObject8592 = null
         }
     }

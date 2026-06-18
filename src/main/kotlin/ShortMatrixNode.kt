@@ -22,14 +22,14 @@ class ShortMatrixNode internal constructor(var aShortArrayArray9518: Array<Short
         var aDouble9517: Double = 0.0
         var anIntArray9519: IntArray? = IntArray(2)
 
-        fun method3180(i: Int, class46s: Array<Class46?>, i_0_: Int) {
+        fun method3180(i: Int, widgetComponents: Array<WidgetComponent?>, i_0_: Int) {
             if (i_0_ == 24235) {
-                for (i_1_ in class46s.indices) {
-                    val class46 = class46s[i_1_]
+                for (i_1_ in widgetComponents.indices) {
+                    val class46 = widgetComponents[i_1_]
                     if (class46 != null && i == class46.anInt834 && !Client.method111(class46)) {
                         if (class46.anInt774 == 0) {
-                            method3180(class46.anInt830, class46s, 24235)
-                            if (class46.aClass46Array798 != null) Companion.method3180(class46.anInt830, class46.aClass46Array798!!, i_0_)
+                            method3180(class46.anInt830, widgetComponents, 24235)
+                            if (class46.aWidgetComponentArray798 != null) Companion.method3180(class46.anInt830, class46.aWidgetComponentArray798!!, i_0_)
                             val class348_sub41 = ((MinimapSpriteRenderer.aHashtable_4915!!.method3480(class46.anInt830.toLong(), -6008)) as RegionSceneShifter?)
                             if (class348_sub41 != null) method769(class348_sub41.anInt7050, 116.toByte())
                         }

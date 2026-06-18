@@ -7,7 +7,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
     override fun method3047(i: Int, i_2_: Int): Array<IntArray?>? {
         anInt9429++
         val `is` = this.aImageFrameCache_7033!!.method2557(-97, i)!!
-        if (i_2_ != -1564599039) aClass46ArrayArray9427 = null
+        if (i_2_ != -1564599039) aWidgetComponentArrayArray9427 = null
         if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val is_3_ = `is`[0]!!
             val is_4_ = `is`[1]!!
@@ -27,7 +27,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
 
     override fun method3042(i: Int, i_8_: Int): IntArray {
         anInt9428++
-        if (i_8_ != 255) aClass46ArrayArray9427 = null
+        if (i_8_ != 255) aWidgetComponentArrayArray9427 = null
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             var i_9_ = 0
@@ -42,7 +42,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
     }
 
     override fun method3049(class348_sub49: Buffer, i: Int, i_11_: Int) {
-        if (i_11_ != 31015) aClass46ArrayArray9427 = null
+        if (i_11_ != 31015) aWidgetComponentArrayArray9427 = null
         anInt9430++
         if (i == 0) this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1
     }
@@ -98,7 +98,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
         @JvmField
         var anInt9426: Int = 0
         @JvmField
-        var aClass46ArrayArray9427: Array<Array<Class46?>?>? = null
+        var aWidgetComponentArrayArray9427: Array<Array<WidgetComponent?>?>? = null
         @JvmField
         var anInt9428: Int = 0
         @JvmField
@@ -123,7 +123,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
 
         @JvmStatic
         fun method3138(i: Byte) {
-            aClass46ArrayArray9427 = null
+            aWidgetComponentArrayArray9427 = null
             val i_1_ = 93 % ((-58 - i) / 55)
         }
     }

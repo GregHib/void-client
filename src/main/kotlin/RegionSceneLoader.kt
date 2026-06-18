@@ -16,7 +16,7 @@ object RegionSceneLoader {
     @JvmField
     var aByteArrayArrayArray3700: Array<Array<ByteArray?>?>? = null
     @JvmField
-    var aClass46_3701: Class46? = null
+    var aWidgetComponent_3701: WidgetComponent? = null
     var anInt3702: Int = 0
     var anInt3703: Int = 0
     @JvmField
@@ -27,7 +27,7 @@ object RegionSceneLoader {
     @JvmStatic
     fun method2191(i: Int) {
         if (i != 0) RegionSceneLoader.method2192((-74).toByte())
-        aClass46_3701 = null
+        aWidgetComponent_3701 = null
         aByteArrayArrayArray3700 = null
         aNodeDeque_3705 = null
     }

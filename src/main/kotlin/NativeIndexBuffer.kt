@@ -67,7 +67,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
         @JvmStatic
         fun method1077(var_renderer: Renderer?, i: Byte) {
             anInt4700++
-            if ((Class73.anInt4776 >= 2 || RenderNode.aBoolean9722) && RegionSceneLoader.aClass46_3701 == null) {
+            if ((Class73.anInt4776 >= 2 || RenderNode.aBoolean9722) && RegionSceneLoader.aWidgetComponent_3701 == null) {
                 if (i >= -71) Companion.method1077(null, (-41).toByte())
                 var string: String?
                 if (RenderNode.aBoolean9722 && Class73.anInt4776 < 2) string = (ItemNameResolver.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(AnimationFrameDefinition.anInt6967, 544) + ItemNameResolver.aString5000 + " ->")
@@ -98,19 +98,19 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                     if (`is` != null) string += AudioResampler.method1273(`is`, true)
                 } else string = IntHashSet.method2367(125.toByte(), IntHashSet.aClass348_Sub42_Sub12_3963!!)
                 if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + LocalizedText.aLocalizedText_3508!!.method2063(AnimationFrameDefinition.anInt6967, 544))
-                if (WidgetActionEntry.aClass46_6990 != null) {
-                    var class324 = WidgetActionEntry.aClass46_6990!!.method426(var_renderer, 68.toByte())
+                if (WidgetActionEntry.aWidgetComponent_6990 != null) {
+                    var class324 = WidgetActionEntry.aWidgetComponent_6990!!.method426(var_renderer, 68.toByte())
                     if (class324 == null) class324 = NodeDeque.aFont_3326!!
                     class324.method2585(
                         SizeBoundedSoftCache.anIntArray2330,
-                        WidgetActionEntry.aClass46_6990!!.anInt709,
+                        WidgetActionEntry.aWidgetComponent_6990!!.anInt709,
                         TileRenderState.aAbstractModelRendererArray4234!!,
-                        WidgetActionEntry.aClass46_6990!!.anInt700,
-                        WidgetActionEntry.aClass46_6990!!.anInt749,
-                        WidgetActionEntry.aClass46_6990!!.anInt789,
-                        WidgetActionEntry.aClass46_6990!!.anInt809,
+                        WidgetActionEntry.aWidgetComponent_6990!!.anInt700,
+                        WidgetActionEntry.aWidgetComponent_6990!!.anInt749,
+                        WidgetActionEntry.aWidgetComponent_6990!!.anInt789,
+                        WidgetActionEntry.aWidgetComponent_6990!!.anInt809,
                         OutputStream_Sub1.aRandom93,
-                        WidgetActionEntry.aClass46_6990!!.anInt762,
+                        WidgetActionEntry.aWidgetComponent_6990!!.anInt762,
                         LongHashTable.anInt451,
                         Hashtable.anInt4383,
                         -33,
@@ -119,7 +119,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                         RenderableGroup.anIntArray5007
                     )
                     method226(RenderableGroup.anIntArray5007!![0], RenderableGroup.anIntArray5007!![2], RenderableGroup.anIntArray5007!![1], 0, RenderableGroup.anIntArray5007!![3])
-                } else if (CameraRotationStub.aClass46_323 != null && (HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186)) {
+                } else if (CameraRotationStub.aWidgetComponent_323 != null && (HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186)) {
                     val i_1_ = (NodeDeque.aFont_3326!!.method2571(-1, Hashtable.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, TileRenderState.aAbstractModelRendererArray4234, 16 + SocketGameConnection.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, OutputStream_Sub1.aRandom93))
                     method226(ConfigValueProvider.Companion.anInt4911 - -4, (WorldMapLabel.aFontDefinition_4962!!.method1183(true, string) + i_1_), SocketGameConnection.anInt5832, 0, 16)
                 }

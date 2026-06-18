@@ -142,7 +142,7 @@ class ResourceLoaderThread : Runnable {
     @Synchronized
     fun method2321(i: Int, interface16: Interface16) {
         anInt3911++
-        if (i != 10559) aClass46_3913 = null
+        if (i != 10559) aWidgetComponent_3913 = null
         anInterface16_3919 = anInterface16_3907
         anInterface16_3907 = interface16
         aLong3914 = method599(-67)
@@ -195,14 +195,14 @@ class ResourceLoaderThread : Runnable {
         var anInt3911: Int = 0
         var anInt3912: Int = 0
         @JvmField
-        var aClass46_3913: Class46? = null
+        var aWidgetComponent_3913: WidgetComponent? = null
         @JvmField
         var anInt3918: Int = 1
         @JvmStatic
         fun method2317(i: Byte) {
             if (i > 50) {
                 aFontMetaRef_3898 = null
-                aClass46_3913 = null
+                aWidgetComponent_3913 = null
             }
         }
     }

@@ -140,13 +140,13 @@ class LinkedNodeListIterator {
             if (i < 49) anInt1651 = 10
         }
 
-        fun method1007(class46: Class46?, var_renderer: Renderer?, i: Int, i_1_: Int, i_2_: Int) {
+        fun method1007(widgetComponent: WidgetComponent?, var_renderer: Renderer?, i: Int, i_1_: Int, i_2_: Int) {
             try {
                 anInt1648++
-                val var_aa = class46!!.method425(var_renderer!!, 40.toByte())
+                val var_aa = widgetComponent!!.method425(var_renderer!!, 40.toByte())
                 if (var_aa != null) {
                     if (i_2_ != 22960) anIntArray1650 = null
-                    var_renderer.KA(i, i_1_, i + class46.anInt709, class46.anInt789 + i_1_)
+                    var_renderer.KA(i, i_1_, i + widgetComponent.anInt709, widgetComponent.anInt789 + i_1_)
                     if (KeyboardLayoutCache.anInt3306 != 2 && KeyboardLayoutCache.anInt3306 != 5 && GroundItemRenderState.aAbstractModelRenderer_1664 != null) {
                         val i_3_: Int
                         val i_4_: Int
@@ -165,7 +165,7 @@ class LinkedNodeListIterator {
                         }
                         val i_7_ = 48 - (-(i_4_ / 128) - -(Class367_Sub4.anInt7319 * 2)) - -208
                         val i_8_ = (208 - (RangeThresholdTextureNode.anInt9109 * 2 - 48) + 4 * RangeThresholdTextureNode.anInt9109 - i_3_ / 128)
-                        GroundItemRenderState.aAbstractModelRenderer_1664!!.method967((class46.anInt709.toFloat() / 2.0f + i.toFloat()), (class46.anInt789.toFloat() / 2.0f + i_1_.toFloat()), i_7_.toFloat(), i_8_.toFloat(), i_5_, i_6_ shl 2, var_aa, i, i_1_)
+                        GroundItemRenderState.aAbstractModelRenderer_1664!!.method967((widgetComponent.anInt709.toFloat() / 2.0f + i.toFloat()), (widgetComponent.anInt789.toFloat() / 2.0f + i_1_.toFloat()), i_7_.toFloat(), i_8_.toFloat(), i_5_, i_6_ shl 2, var_aa, i, i_1_)
                         var class348_sub35 = ModelWallEntity.aNodeDeque_10125!!.method1995(i_2_ xor 0x59b4) as? IntKeyNode
                         while (class348_sub35 != null) {
                             val i_9_ = class348_sub35.anInt6976
@@ -173,7 +173,7 @@ class LinkedNodeListIterator {
                             val i_11_ = (-Class90.regionTileY + (0x3fff and (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3238!![i_9_])))
                             val i_12_ = -(i_4_ / 128) + 2 + 4 * i_10_
                             val i_13_ = 2 + (4 * i_11_ - i_3_ / 128)
-                            method2385(class46, i_1_, var_aa, (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3239!![i_9_]), i_12_, i, ((-94).toByte()).toByte(), i_13_, var_renderer)
+                            method2385(widgetComponent, i_1_, var_aa, (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3239!![i_9_]), i_12_, i, ((-94).toByte()).toByte(), i_13_, var_renderer)
                             class348_sub35 = ModelWallEntity.aNodeDeque_10125!!.method1990(92.toByte()) as? IntKeyNode
                         }
                         var i_14_ = 0
@@ -188,7 +188,7 @@ class LinkedNodeListIterator {
                                     continue
                                 }
                             }
-                            method2385(class46, i_1_, var_aa, class51.anInt921, i_15_, i, ((-113).toByte()).toByte(), i_16_, var_renderer)
+                            method2385(widgetComponent, i_1_, var_aa, class51.anInt921, i_15_, i, ((-113).toByte()).toByte(), i_16_, var_renderer)
                             i_14_++
                         }
                         var class348_sub37 = ModelBatchBase.aHashtable_1895!!.method3484(i_2_ xor 0x59b0) as? HashTableContainer
@@ -199,7 +199,7 @@ class LinkedNodeListIterator {
                                 val i_19_ = (-Class90.regionTileY + ((class348_sub37.aLong4291) shr 14 and 0x3fffL).toInt())
                                 val i_20_ = -(i_4_ / 128) + (2 + i_18_ * 4)
                                 val i_21_ = -(i_3_ / 128) + (2 + i_19_ * 4)
-                                HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![0]), i, class46, var_aa, i_21_, i_2_ xor 0x59b2, i_20_)
+                                HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![0]), i, widgetComponent, var_aa, i_21_, i_2_ xor 0x59b2, i_20_)
                             }
                             class348_sub37 = (ModelBatchBase.aHashtable_1895!!.method3482(0) as? HashTableContainer)
                         }
@@ -214,8 +214,8 @@ class LinkedNodeListIterator {
                                     if (class79 != null && class79.aBoolean1397 && class79.aBoolean1396) {
                                         val i_23_ = (-(i_4_ / 128) + (npc.x) / 128)
                                         val i_24_ = ((npc.y) / 128 + -(i_3_ / 128))
-                                        if (class79.anInt1383 != -1) method2385(class46, i_1_, var_aa, class79.anInt1383, i_23_, i, ((-73).toByte()).toByte(), i_24_, var_renderer)
-                                        else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![1]), i, class46, var_aa, i_24_, 2, i_23_)
+                                        if (class79.anInt1383 != -1) method2385(widgetComponent, i_1_, var_aa, class79.anInt1383, i_23_, i, ((-73).toByte()).toByte(), i_24_, var_renderer)
+                                        else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![1]), i, widgetComponent, var_aa, i_24_, 2, i_23_)
                                     }
                                 }
                             }
@@ -250,11 +250,11 @@ class LinkedNodeListIterator {
                                 if ((LocalPlayerState.aPlayer_1907!!.anInt10542) != 0 && (player.anInt10542 != 0) && (player.anInt10542 == (LocalPlayerState.aPlayer_1907!!.anInt10542))) bool_32_ = true
                                 if (!player.aBoolean10554) {
                                     if (!bool) {
-                                        if (bool_30_) HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![5]), i, class46, var_aa, i_28_, i_2_ + -22958, i_27_)
-                                        else if (!bool_32_) HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![2]), i, class46, var_aa, i_28_, 2, i_27_)
-                                        else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![4]), i, class46, var_aa, i_28_, 2, i_27_)
-                                    } else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![3]), i, class46, var_aa, i_28_, 2, i_27_)
-                                } else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![6]), i, class46, var_aa, i_28_, i_2_ + -22958, i_27_)
+                                        if (bool_30_) HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![5]), i, widgetComponent, var_aa, i_28_, i_2_ + -22958, i_27_)
+                                        else if (!bool_32_) HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![2]), i, widgetComponent, var_aa, i_28_, 2, i_27_)
+                                        else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![4]), i, widgetComponent, var_aa, i_28_, 2, i_27_)
+                                    } else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![3]), i, widgetComponent, var_aa, i_28_, 2, i_27_)
+                                } else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![6]), i, widgetComponent, var_aa, i_28_, i_2_ + -22958, i_27_)
                             }
                         }
                         val class302s = MultiFieldRecord.aMinimapPositionStateArray6897s
@@ -268,7 +268,7 @@ class LinkedNodeListIterator {
                                         val npc = (class348_sub22.aNpc_6859)!!
                                         val i_34_ = (-(i_4_ / 128) + (npc.x) / 128)
                                         val i_35_ = (-(i_3_ / 128) + (npc.y) / 128)
-                                        TypedRecordTable.method2181(360000L, i_1_, -125, i_35_, i, class46, i_34_, (class302.anInt3831), var_aa)
+                                        TypedRecordTable.method2181(360000L, i_1_, -125, i_35_, i, widgetComponent, i_34_, (class302.anInt3831), var_aa)
                                     }
                                 }
                                 if (class302.anInt3840 == 2) {
@@ -276,14 +276,14 @@ class LinkedNodeListIterator {
                                     val i_37_ = (-(i_3_ / 128) + (class302.anInt3832 / 128))
                                     var l = (class302.anInt3837 shl 7).toLong()
                                     l *= l
-                                    TypedRecordTable.method2181(l, i_1_, -112, i_37_, i, class46, i_36_, (class302.anInt3831), var_aa)
+                                    TypedRecordTable.method2181(l, i_1_, -112, i_37_, i, widgetComponent, i_36_, (class302.anInt3831), var_aa)
                                 }
                                 if ((class302.anInt3840 == 10) && class302.anInt3833 >= 0 && (class302.anInt3833 < (LoadingBarRenderer.aPlayerArray5058)!!.size)) {
                                     val player = (LoadingBarRenderer.aPlayerArray5058!![class302.anInt3833])
                                     if (player != null) {
                                         val i_38_ = (-(i_4_ / 128) + (player.x) / 128)
                                         val i_39_ = (-(i_3_ / 128) + (player.y) / 128)
-                                        TypedRecordTable.method2181(360000L, i_1_, -121, i_39_, i, class46, i_38_, (class302.anInt3831), var_aa)
+                                        TypedRecordTable.method2181(360000L, i_1_, -121, i_39_, i, widgetComponent, i_38_, (class302.anInt3831), var_aa)
                                     }
                                 }
                             }
@@ -293,14 +293,14 @@ class LinkedNodeListIterator {
                             if (MediaStreamClient.anInt3203 != 0) {
                                 val i_40_ = (-(i_4_ / 128) + (MediaStreamClient.anInt3203 * 4 + 2) - (-(2 * LocalPlayerState.aPlayer_1907!!.method2436(77.toByte())) - -2))
                                 val i_41_ = (4 * Class97.anInt1548 - (-2 + i_3_ / 128) + (2 * (LocalPlayerState.aPlayer_1907!!.method2436(59.toByte()) - 1)))
-                                HeadIconRenderer.method1211(i_1_, (SpriteStore.aAbstractModelRendererArray367!![(if (!ModelKeyBuilder.aBoolean6759) 0 else 1)]), i, class46, var_aa, i_41_, 2, i_40_)
+                                HeadIconRenderer.method1211(i_1_, (SpriteStore.aAbstractModelRendererArray367!![(if (!ModelKeyBuilder.aBoolean6759) 0 else 1)]), i, widgetComponent, var_aa, i_41_, 2, i_40_)
                             }
-                            if (!LocalPlayerState.aPlayer_1907!!.aBoolean10551) var_renderer.method3675(3, ((-125).toByte()).toByte(), -1 + (i - -((class46.anInt709) / 2)), -1 + ((class46.anInt789) / 2 + i_1_), 3, -1)
+                            if (!LocalPlayerState.aPlayer_1907!!.aBoolean10551) var_renderer.method3675(3, ((-125).toByte()).toByte(), -1 + (i - -((widgetComponent.anInt709) / 2)), -1 + ((widgetComponent.anInt789) / 2 + i_1_), 3, -1)
                         }
                     } else var_renderer.A(-16777216, var_aa, i, i_1_)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("mn.F(" + (if (class46 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + i_2_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("mn.F(" + (if (widgetComponent != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + i_2_ + ')'))
             }
         }
 

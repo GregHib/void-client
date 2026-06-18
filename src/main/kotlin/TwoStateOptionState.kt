@@ -67,36 +67,36 @@ class TwoStateOptionState : GraphicsOptionState {
         }
 
         @JvmStatic
-        fun method1843(i: Int, i_8_: Int, class46: Class46, bool: Boolean, i_9_: Int) {
+        fun method1843(i: Int, i_8_: Int, widgetComponent: WidgetComponent, bool: Boolean, i_9_: Int) {
             anInt6135++
             if (i_8_ != -326) method1844(32, -33, false, 1, false, 64, -83)
-            val i_10_ = class46.anInt709
-            val i_11_ = class46.anInt789
-            if (class46.aByte778.toInt() == 0) class46.anInt709 = class46.anInt842
-            else if (class46.aByte778.toInt() != 1) {
-                if (class46.aByte778.toInt() == 2) class46.anInt709 = class46.anInt842 * i shr 14
-            } else class46.anInt709 = -class46.anInt842 + i
-            if (class46.aByte724.toInt() != 0) {
-                if (class46.aByte724.toInt() != 1) {
-                    if (class46.aByte724.toInt() == 2) class46.anInt789 = class46.anInt728 * i_9_ shr 14
-                } else class46.anInt789 = i_9_ - class46.anInt728
-            } else class46.anInt789 = class46.anInt728
-            if (class46.aByte778.toInt() == 4) class46.anInt709 = (class46.anInt789 * class46.anInt710 / class46.anInt775)
-            if (class46.aByte724.toInt() == 4) class46.anInt789 = (class46.anInt775 * class46.anInt709 / class46.anInt710)
-            if (TextureCubeProvider.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0)) {
-                if (class46.anInt789 < 5 && class46.anInt709 < 5) {
-                    class46.anInt789 = 5
-                    class46.anInt709 = 5
+            val i_10_ = widgetComponent.anInt709
+            val i_11_ = widgetComponent.anInt789
+            if (widgetComponent.aByte778.toInt() == 0) widgetComponent.anInt709 = widgetComponent.anInt842
+            else if (widgetComponent.aByte778.toInt() != 1) {
+                if (widgetComponent.aByte778.toInt() == 2) widgetComponent.anInt709 = widgetComponent.anInt842 * i shr 14
+            } else widgetComponent.anInt709 = -widgetComponent.anInt842 + i
+            if (widgetComponent.aByte724.toInt() != 0) {
+                if (widgetComponent.aByte724.toInt() != 1) {
+                    if (widgetComponent.aByte724.toInt() == 2) widgetComponent.anInt789 = widgetComponent.anInt728 * i_9_ shr 14
+                } else widgetComponent.anInt789 = i_9_ - widgetComponent.anInt728
+            } else widgetComponent.anInt789 = widgetComponent.anInt728
+            if (widgetComponent.aByte778.toInt() == 4) widgetComponent.anInt709 = (widgetComponent.anInt789 * widgetComponent.anInt710 / widgetComponent.anInt775)
+            if (widgetComponent.aByte724.toInt() == 4) widgetComponent.anInt789 = (widgetComponent.anInt775 * widgetComponent.anInt709 / widgetComponent.anInt710)
+            if (TextureCubeProvider.aBoolean6327 && (Client.method105(widgetComponent)!!.anInt7098 != 0 || widgetComponent.anInt774 == 0)) {
+                if (widgetComponent.anInt789 < 5 && widgetComponent.anInt709 < 5) {
+                    widgetComponent.anInt789 = 5
+                    widgetComponent.anInt709 = 5
                 } else {
-                    if (class46.anInt789 <= 0) class46.anInt789 = 5
-                    if (class46.anInt709 <= 0) class46.anInt709 = 5
+                    if (widgetComponent.anInt789 <= 0) widgetComponent.anInt789 = 5
+                    if (widgetComponent.anInt709 <= 0) widgetComponent.anInt709 = 5
                 }
             }
-            if (RangedGraphicsOptionState.anInt5943 == class46.anInt765) AbstractTileShape.aClass46_6561 = class46
-            if (bool && class46.anObjectArray727 != null && (i_10_ != class46.anInt709 || (i_11_ != class46.anInt789))) {
+            if (RangedGraphicsOptionState.anInt5943 == widgetComponent.anInt765) AbstractTileShape.aWidgetComponent_6561 = widgetComponent
+            if (bool && widgetComponent.anObjectArray727 != null && (i_10_ != widgetComponent.anInt709 || (i_11_ != widgetComponent.anInt789))) {
                 val class348_sub36 = WidgetActionEntry()
-                class348_sub36.aClass46_6989 = class46
-                class348_sub36.anObjectArray6987 = class46.anObjectArray727
+                class348_sub36.aWidgetComponent_6989 = widgetComponent
+                class348_sub36.anObjectArray6987 = widgetComponent.anObjectArray727
                 HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
             }
         }

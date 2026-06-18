@@ -16,7 +16,7 @@ class CameraRotationStub {
         @JvmField
         var aJs5Archive_322: Js5Archive? = null
         @JvmField
-        var aClass46_323: Class46? = null
+        var aWidgetComponent_323: WidgetComponent? = null
         @JvmField
         var anInt324: Int = 0
         @JvmField
@@ -31,7 +31,7 @@ class CameraRotationStub {
             aJs5Archive_322 = null
             if (i > 93) {
                 aRenderer326 = null
-                aClass46_323 = null
+                aWidgetComponent_323 = null
             }
         }
 

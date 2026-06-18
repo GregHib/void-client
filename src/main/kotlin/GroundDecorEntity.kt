@@ -186,8 +186,8 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
             if (!Class5_Sub1.aBoolean8335) return false
             val i_7_ = i_6_ shr 16
             val i_8_ = i_6_ and 0xffff
-            if (WarpTextureNode.aClass46ArrayArray9427!![i_7_] == null || WarpTextureNode.aClass46ArrayArray9427!![i_7_]!![i_8_] == null) return false
-            val class46 = WarpTextureNode.aClass46ArrayArray9427!![i_7_]!![i_8_]
+            if (WarpTextureNode.aWidgetComponentArrayArray9427!![i_7_] == null || WarpTextureNode.aWidgetComponentArrayArray9427!![i_7_]!![i_8_] == null) return false
+            val class46 = WarpTextureNode.aWidgetComponentArrayArray9427!![i_7_]!![i_8_]
             if (i_5_ == -1 && class46!!.anInt774 == 0) {
                 var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as? ContactEntry?)
                 while (class348_sub42_sub12 != null) {

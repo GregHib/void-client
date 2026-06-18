@@ -102,12 +102,12 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
         }
 
         @JvmStatic
-        fun method887(class46: Class46?, i: Int, i_5_: Int, i_6_: Int) {
+        fun method887(widgetComponent: WidgetComponent?, i: Int, i_5_: Int, i_6_: Int) {
             if (i_6_ == 2147483647) {
                 anInt1589++
-                if (RegionSceneLoader.aClass46_3701 == null && !Class5_Sub1.aBoolean8335 && (class46 != null && (method141(class46, ((-79).toByte()).toByte()) != null))) {
-                    RegionSceneLoader.aClass46_3701 = class46
-                    CalendarUtil.aClass46_4130 = method141(class46, ((-117).toByte()).toByte())
+                if (RegionSceneLoader.aWidgetComponent_3701 == null && !Class5_Sub1.aBoolean8335 && (widgetComponent != null && (method141(widgetComponent, ((-79).toByte()).toByte()) != null))) {
+                    RegionSceneLoader.aWidgetComponent_3701 = widgetComponent
+                    CalendarUtil.aWidgetComponent_4130 = method141(widgetComponent, ((-117).toByte()).toByte())
                     SceneEntity.anInt6392 = 0
                     ModelDefinitionCache.anInt2872 = i_5_
                     SceneEntityModel.anInt6411 = i
@@ -116,11 +116,11 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
             }
         }
 
-        fun method888(i: Byte, i_7_: Int, class46: Class46): Int {
+        fun method888(i: Byte, i_7_: Int, widgetComponent: WidgetComponent): Int {
             anInt1580++
             if (i.toInt() != 57) method886(7)
-            if (!Client.method105(class46)!!.method3301(i_7_, false) && class46.anObjectArray741 == null) return -1
-            if (class46.anIntArray706 != null && i_7_ < class46.anIntArray706!!.size) return class46.anIntArray706!![i_7_]
+            if (!Client.method105(widgetComponent)!!.method3301(i_7_, false) && widgetComponent.anObjectArray741 == null) return -1
+            if (widgetComponent.anIntArray706 != null && i_7_ < widgetComponent.anIntArray706!!.size) return widgetComponent.anIntArray706!![i_7_]
             return -1
         }
     }

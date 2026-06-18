@@ -116,10 +116,10 @@ class Class5_Sub2 internal constructor(js5Archive: Js5Archive, js5Archive_12_: J
         }
 
         @JvmStatic
-        fun method198(class46: Class46?, bool: Boolean, i: Int, i_22_: Int) {
+        fun method198(widgetComponent: WidgetComponent?, bool: Boolean, i: Int, i_22_: Int) {
             SocketGameConnection.anInt5832 = i
             ConfigValueProvider.anInt4911 = i_22_
-            CameraRotationStub.aClass46_323 = class46
+            CameraRotationStub.aWidgetComponent_323 = widgetComponent
             anInt8359++
             if (bool != false) anInt8363 = 112
         }

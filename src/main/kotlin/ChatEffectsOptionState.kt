@@ -91,7 +91,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1728(i: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int) {
             anInt5860++
-            if (TextureLoaderUtil.method2547(i_3_, 84.toByte())) Class367_Sub1.method3534(false, i_2_, i_4_, bool, i, (WarpTextureNode.aClass46ArrayArray9427!![i_3_]!!))
+            if (TextureLoaderUtil.method2547(i_3_, 84.toByte())) Class367_Sub1.method3534(false, i_2_, i_4_, bool, i, (WarpTextureNode.aWidgetComponentArrayArray9427!![i_3_]!!))
         }
 
         @JvmStatic
@@ -120,7 +120,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
         fun method1731(i: Int) {
             anInt5863++
             val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(i xor 0x5) as TimedRecordAccessor?)
-            val bool = (RegionSceneLoader.aClass46_3701 != null || HashLinkedListNode.anInt7059 > 0)
+            val bool = (RegionSceneLoader.aWidgetComponent_3701 != null || HashLinkedListNode.anInt7059 > 0)
             val i_19_ = class348_sub45!!.method3308((-128).toByte())
             val i_20_ = class348_sub45.method3311(119)
             if (bool) NpcEntityUpdater.anInt3655 = 1

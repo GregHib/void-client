@@ -57,13 +57,13 @@ class CameraOrModelTransform {
             return c >= '0' && c <= '9'
         }
 
-        fun method2650(fontDefinition: FontDefinition?, i: Int, var_sprite: Sprite?, i_1_: Int, i_2_: Int, string: String?, i_3_: Int, font: Font?, i_4_: Int, class46: Class46?, i_5_: Int, i_6_: Int) {
+        fun method2650(fontDefinition: FontDefinition?, i: Int, var_sprite: Sprite?, i_1_: Int, i_2_: Int, string: String?, i_3_: Int, font: Font?, i_4_: Int, widgetComponent: WidgetComponent?, i_5_: Int, i_6_: Int) {
             try {
                 anInt4153++
                 val i_7_: Int
                 if (WeaveTextureNode.anInt9282 == 4) i_7_ = ResourceProvider.aFloat3938.toInt() and 0x3fff
                 else i_7_ = 0x3fff and OpenGlRenderNode.anInt10483 + ResourceProvider.aFloat3938.toInt()
-                val i_8_ = (max(class46!!.anInt709 / 2, class46.anInt789 / 2) + 10)
+                val i_8_ = (max(widgetComponent!!.anInt709 / 2, widgetComponent.anInt789 / 2) + 10)
                 val i_9_ = i_5_ * i_5_ - -(i_1_ * i_1_)
                 if (i_9_ <= i_8_ * i_8_) {
                     var i_10_ = Class70.anIntArray1207!![i_7_]
@@ -77,10 +77,10 @@ class CameraOrModelTransform {
                     val i_14_ = fontDefinition!!.method1187(string, false, 100, null)
                     val i_15_ = fontDefinition.method1185(null, 0, 0, i_6_, string)
                     i_12_ -= i_14_ / 2
-                    if (-class46.anInt709 <= i_12_ && class46.anInt709 >= i_12_ && (i_13_ >= -class46.anInt789) && class46.anInt789 >= i_13_) font!!.method2584(null, 0, 0, null, i, 0, 50, var_sprite, (-i_4_ + (i_3_ + (class46.anInt789 / 2 + (-i_13_ - i_15_)))), i_2_, i_3_, i_14_, (class46.anInt709 / 2 + (i_2_ + i_12_)), false, 1, string)
+                    if (-widgetComponent.anInt709 <= i_12_ && widgetComponent.anInt709 >= i_12_ && (i_13_ >= -widgetComponent.anInt789) && widgetComponent.anInt789 >= i_13_) font!!.method2584(null, 0, 0, null, i, 0, 50, var_sprite, (-i_4_ + (i_3_ + (widgetComponent.anInt789 / 2 + (-i_13_ - i_15_)))), i_2_, i_3_, i_14_, (widgetComponent.anInt709 / 2 + (i_2_ + i_12_)), false, 1, string)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("dk.H(" + (if (fontDefinition != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (font != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("dk.H(" + (if (fontDefinition != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (font != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ')'))
             }
         }
 

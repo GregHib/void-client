@@ -82,11 +82,11 @@ class Class367_Sub1 internal constructor(var_ha_Sub3: NativeRenderer) : Abstract
         }
 
         @JvmStatic
-        fun method3534(bool: Boolean, i: Int, i_5_: Int, bool_6_: Boolean, i_7_: Int, class46s: Array<Class46?>) {
+        fun method3534(bool: Boolean, i: Int, i_5_: Int, bool_6_: Boolean, i_7_: Int, widgetComponents: Array<WidgetComponent?>) {
             anInt7279++
             if (bool == false) {
-                for (i_8_ in class46s.indices) {
-                    val class46 = class46s[i_8_]
+                for (i_8_ in widgetComponents.indices) {
+                    val class46 = widgetComponents[i_8_]
                     if (class46 != null && i == class46.anInt834) {
                         method1843(i_5_, -326, class46, bool_6_, i_7_)
                         Gl2dTexture.method239(115.toByte(), i_5_, i_7_, class46)

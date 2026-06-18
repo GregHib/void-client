@@ -65,14 +65,14 @@ class EdgeDetectTextureNode : AbstractProceduralTextureNode(1, true) {
             val i_1_ = 14 / ((i - -34) / 61)
             if (i_0_ == 0) {
                 RegionSceneLoader.aByteArrayArrayArray3700 = null
-                Class46.method440(0, (-61).toByte())
+                WidgetComponent.method440(0, (-61).toByte())
             } else if (i_0_ == 1) {
                 HeightMapNoise.method2280(0.toByte(), 28587)
-                Class46.method440(512, (-61).toByte())
+                WidgetComponent.method440(512, (-61).toByte())
                 if (AnimationFrameDefinition.aByteArrayArrayArray6962 != null) MapElementDecor.method2468(3613)
             } else {
                 HeightMapNoise.method2280((-4 + TextureQualityOptionState.anInt6006 and 0xff).toByte(), 28587)
-                Class46.method440(2, (-61).toByte())
+                WidgetComponent.method440(2, (-61).toByte())
             }
             TrackedGroundDecor.anInt10395 = CompiledScriptCache.anInt4372
         }

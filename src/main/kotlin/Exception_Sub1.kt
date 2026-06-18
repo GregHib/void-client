@@ -22,11 +22,11 @@ public class Exception_Sub1 : Exception() {
         }
 
         @JvmStatic
-        fun method141(class46: Class46, i: Byte): Class46? {
+        fun method141(widgetComponent: WidgetComponent, i: Byte): WidgetComponent? {
             anInt109++
             val i_0_ = 98 / ((i - -14) / 41)
-            var class46_1_ = Client.method108(class46)
-            if (class46_1_ == null) class46_1_ = class46.aClass46_782
+            var class46_1_ = Client.method108(widgetComponent)
+            if (class46_1_ == null) class46_1_ = widgetComponent.aWidgetComponent_782
             return class46_1_
         }
     }

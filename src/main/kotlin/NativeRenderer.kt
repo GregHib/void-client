@@ -798,13 +798,13 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         aBoolean8112 = false
         val i_75_ = -77 / ((i - 78) / 48)
         method3949((-58).toByte())
-        if (Class46.aSingletonMarker_838 == this.aSingletonMarker_8184) method3929(true)
+        if (WidgetComponent.aSingletonMarker_838 == this.aSingletonMarker_8184) method3929(true)
     }
 
     private fun method3847(i: Int) {
-        if (Class46.aSingletonMarker_838 != this.aSingletonMarker_8184) {
+        if (WidgetComponent.aSingletonMarker_838 != this.aSingletonMarker_8184) {
             val class196 = this.aSingletonMarker_8184
-            this.aSingletonMarker_8184 = Class46.aSingletonMarker_838!!
+            this.aSingletonMarker_8184 = WidgetComponent.aSingletonMarker_838!!
             if (!class196.method1450(-45)) method3913(94.toByte())
             method3949((-113).toByte())
             this.aFloatArray8135 = aFloatArray8157

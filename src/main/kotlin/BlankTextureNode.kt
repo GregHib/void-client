@@ -30,33 +30,33 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
         /*synthetic*/
         var aClass9260: Class<*>? = null
 
-        fun method3097(class46s: Array<Class46?>, i: Int, i_0_: Int) {
+        fun method3097(widgetComponents: Array<WidgetComponent?>, i: Int, i_0_: Int) {
             if (i_0_ >= 116) {
                 var i_1_ = 0
-                while (class46s.size > i_1_) {
-                    val class46 = class46s[i_1_]
+                while (widgetComponents.size > i_1_) {
+                    val class46 = widgetComponents[i_1_]
                     if (class46 != null) {
                         if (class46.anInt774 == 0) {
-                            if (class46.aClass46Array798 != null) method3097(class46.aClass46Array798!!, i, 125)
+                            if (class46.aWidgetComponentArray798 != null) method3097(class46.aWidgetComponentArray798!!, i, 125)
                             val class348_sub41 = ((MinimapSpriteRenderer.aHashtable_4915!!.method3480(class46.anInt830.toLong(), -6008)) as RegionSceneShifter?)
                             if (class348_sub41 != null) BloomGraphicsOptionState.method1775((-8).toByte(), (class348_sub41.anInt7050), i)
                         }
                         if (i == 0 && class46.anObjectArray840 != null) {
                             val class348_sub36 = WidgetActionEntry()
-                            class348_sub36.aClass46_6989 = class46
+                            class348_sub36.aWidgetComponent_6989 = class46
                             class348_sub36.anObjectArray6987 = class46.anObjectArray840
                             Class66.method705(class348_sub36)
                         }
                         if (i == 1 && class46.anObjectArray701 != null) {
                             if (class46.anInt704 >= 0) {
                                 val class46_2_ = method2570(1512932720, (class46.anInt830))
-                                if (class46_2_ == null || (class46_2_.aClass46Array798 == null) || (class46.anInt704 >= (class46_2_.aClass46Array798!!).size) || class46 != (class46_2_.aClass46Array798!![class46.anInt704])) {
+                                if (class46_2_ == null || (class46_2_.aWidgetComponentArray798 == null) || (class46.anInt704 >= (class46_2_.aWidgetComponentArray798!!).size) || class46 != (class46_2_.aWidgetComponentArray798!![class46.anInt704])) {
                                     i_1_++
                                     continue
                                 }
                             }
                             val class348_sub36 = WidgetActionEntry()
-                            class348_sub36.aClass46_6989 = class46
+                            class348_sub36.aWidgetComponent_6989 = class46
                             class348_sub36.anObjectArray6987 = class46.anObjectArray701
                             Class66.method705(class348_sub36)
                         }

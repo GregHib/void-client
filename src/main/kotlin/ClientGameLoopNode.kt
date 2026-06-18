@@ -342,16 +342,16 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                                 anInt4292 += 20
                                 if (anInt4292 >= 400) FogOptionState.anInt6048 = 0
                             }
-                            if (ResourceLoaderThread.aClass46_3913 != null) {
+                            if (ResourceLoaderThread.aWidgetComponent_3913 != null) {
                                 GroundItemRenderState.anInt1656++
                                 if (GroundItemRenderState.anInt1656 >= 15) {
-                                    ConfigFlagUtil.method1916(-9343, ResourceLoaderThread.aClass46_3913!!)
-                                    ResourceLoaderThread.aClass46_3913 = null
+                                    ConfigFlagUtil.method1916(-9343, ResourceLoaderThread.aWidgetComponent_3913!!)
+                                    ResourceLoaderThread.aWidgetComponent_3913 = null
                                 }
                             }
-                            MapElementDecor.aClass46_10336 = null
+                            MapElementDecor.aWidgetComponent_10336 = null
                             Class50_Sub1.aBoolean5221 = false
-                            HeapDiagnosticsHolder.aClass46_2249 = null
+                            HeapDiagnosticsHolder.aWidgetComponent_2249 = null
                             ScrollingWidgetComponentNode.aBoolean8386 = false
                             method198(null, false, -1, -1)
                             method1343(-1, null, 1, -1)
@@ -368,10 +368,10 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                             while (true) {
                                 val class348_sub36 = (BufferedOutputStreamWorker.aNodeDeque_2707!!.method1997(8) as? WidgetActionEntry?)
                                 if (class348_sub36 == null) break
-                                val class46 = (class348_sub36.aClass46_6989)!!
+                                val class46 = (class348_sub36.aWidgetComponent_6989)!!
                                 if (class46.anInt704 >= 0) {
                                     val class46_27_ = method2570(1512932720, (class46.anInt834))
-                                    if (class46_27_ == null || (class46_27_.aClass46Array798) == null || ((class46_27_.aClass46Array798!!).size <= class46.anInt704) || (class46 != (class46_27_.aClass46Array798!![class46.anInt704]))) {
+                                    if (class46_27_ == null || (class46_27_.aWidgetComponentArray798) == null || ((class46_27_.aWidgetComponentArray798!!).size <= class46.anInt704) || (class46 != (class46_27_.aWidgetComponentArray798!![class46.anInt704]))) {
                                         continue
                                     }
                                 }
@@ -380,10 +380,10 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                             while (true) {
                                 val class348_sub36 = (FriendChatMember.aNodeDeque_4473!!.method1997(8) as? WidgetActionEntry?)
                                 if (class348_sub36 == null) break
-                                val class46 = (class348_sub36.aClass46_6989)!!
+                                val class46 = (class348_sub36.aWidgetComponent_6989)!!
                                 if (class46.anInt704 >= 0) {
                                     val class46_28_ = method2570(1512932720, (class46.anInt834))
-                                    if (class46_28_ == null || (class46_28_.aClass46Array798) == null || (class46.anInt704 >= (class46_28_.aClass46Array798!!).size) || ((class46_28_.aClass46Array798!![class46.anInt704]) != class46)) {
+                                    if (class46_28_ == null || (class46_28_.aWidgetComponentArray798) == null || (class46.anInt704 >= (class46_28_.aWidgetComponentArray798!!).size) || ((class46_28_.aWidgetComponentArray798!![class46.anInt704]) != class46)) {
                                         continue
                                     }
                                 }
@@ -392,17 +392,17 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                             while (true) {
                                 val class348_sub36 = (HashTileShape.aNodeDeque_8810!!.method1997(i + -11424) as? WidgetActionEntry?)
                                 if (class348_sub36 == null) break
-                                val class46 = (class348_sub36.aClass46_6989)!!
+                                val class46 = (class348_sub36.aWidgetComponent_6989)!!
                                 if (class46.anInt704 >= 0) {
                                     val class46_29_ = method2570(1512932720, (class46.anInt834))
-                                    if (class46_29_ == null || (class46_29_.aClass46Array798) == null || (class46.anInt704 >= (class46_29_.aClass46Array798!!).size) || ((class46_29_.aClass46Array798!![class46.anInt704]) != class46)) {
+                                    if (class46_29_ == null || (class46_29_.aWidgetComponentArray798) == null || (class46.anInt704 >= (class46_29_.aWidgetComponentArray798!!).size) || ((class46_29_.aWidgetComponentArray798!![class46.anInt704]) != class46)) {
                                         continue
                                     }
                                 }
                                 method705(class348_sub36)
                             }
-                            if (HeapDiagnosticsHolder.aClass46_2249 == null) HashLinkedListNode.anInt7059 = 0
-                            if (RegionSceneLoader.aClass46_3701 != null) method2708(-30206)
+                            if (HeapDiagnosticsHolder.aWidgetComponent_2249 == null) HashLinkedListNode.anInt7059 = 0
+                            if (RegionSceneLoader.aWidgetComponent_3701 != null) method2708(-30206)
                             if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, i xor 0x2cd5.inv()) && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -121) && Class98.anInt1565 != 0) {
                                 var i_30_ = ((LocalPlayerState.aPlayer_1907!!.plane) - Class98.anInt1565)
                                 if (i_30_ >= 0) {

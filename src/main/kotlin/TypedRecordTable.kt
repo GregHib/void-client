@@ -107,13 +107,13 @@ class TypedRecordTable {
             if (i > -70) anInt3695 = 92
         }
 
-        fun method2181(l: Long, i: Int, i_13_: Int, i_14_: Int, i_15_: Int, class46: Class46?, i_16_: Int, i_17_: Int, var_sprite: Sprite?) {
+        fun method2181(l: Long, i: Int, i_13_: Int, i_14_: Int, i_15_: Int, widgetComponent: WidgetComponent?, i_16_: Int, i_17_: Int, var_sprite: Sprite?) {
             try {
                 anInt3686++
                 val i_18_ = i_14_ * i_14_ + i_16_ * i_16_
                 if (l >= i_18_.toLong()) {
                     if (i_13_ > -49) method2178(null, -119, null, 58)
-                    var i_19_ = min(class46!!.anInt709 / 2, class46.anInt789 / 2)
+                    var i_19_ = min(widgetComponent!!.anInt709 / 2, widgetComponent.anInt789 / 2)
                     if (i_18_ > i_19_ * i_19_) {
                         i_19_ -= 10
                         val i_20_: Int
@@ -130,11 +130,11 @@ class TypedRecordTable {
                         val d = atan2(i_23_.toDouble(), i_24_.toDouble())
                         val i_25_ = (i_19_.toDouble() * sin(d)).toInt()
                         val i_26_ = (cos(d) * i_19_.toDouble()).toInt()
-                        ScriptResources.aAbstractModelRendererArray2640!![i_17_]!!.method981((class46.anInt709.toFloat() / 2.0f + i_15_.toFloat() + i_25_.toFloat()), (i.toFloat() + class46.anInt789.toFloat() / 2.0f - i_26_.toFloat()), 4096, (65535.0 * (-d / 6.283185307179586)).toInt())
-                    } else method1211(i, Class59_Sub1.aAbstractModelRendererArray5294!![i_17_], i_15_, class46, var_sprite, i_14_, 2, i_16_)
+                        ScriptResources.aAbstractModelRendererArray2640!![i_17_]!!.method981((widgetComponent.anInt709.toFloat() / 2.0f + i_15_.toFloat() + i_25_.toFloat()), (i.toFloat() + widgetComponent.anInt789.toFloat() / 2.0f - i_26_.toFloat()), 4096, (65535.0 * (-d / 6.283185307179586)).toInt())
+                    } else method1211(i, Class59_Sub1.aAbstractModelRendererArray5294!![i_17_], i_15_, widgetComponent, var_sprite, i_14_, 2, i_16_)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("vp.D(" + l + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + (if (var_sprite != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("vp.D(" + l + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + (if (var_sprite != null) "{...}" else "null") + ')'))
             }
         }
 

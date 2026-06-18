@@ -5,7 +5,7 @@ import kotlin.math.sqrt
 /* Class46 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class46 {
+class WidgetComponent {
     @JvmField
     var anObjectArray671: Array<Any?>? = null
     @JvmField
@@ -202,7 +202,7 @@ class Class46 {
     @JvmField
     var anInt781: Int = 0
     @JvmField
-    var aClass46_782: Class46? = null
+    var aWidgetComponent_782: WidgetComponent? = null
     var aBoolean784: Boolean = false
     @JvmField
     var anObjectArray785: Array<Any?>? = null
@@ -230,7 +230,7 @@ class Class46 {
     @JvmField
     var anInt797: Int
     @JvmField
-    var aClass46Array798: Array<Class46?>? = null
+    var aWidgetComponentArray798: Array<WidgetComponent?>? = null
     @JvmField
     var anInt799: Int = 0
     @JvmField

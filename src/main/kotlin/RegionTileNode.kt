@@ -22,7 +22,7 @@ class RegionTileNode internal constructor(@JvmField var anInt6649: Int, @JvmFiel
         fun method2772(i: Int, i_0_: Byte) {
             anInt6641++
             if (TextureLoaderUtil.method2547(i, 84.toByte()) && i_0_ > 105) {
-                val class46s = WarpTextureNode.aClass46ArrayArray9427!![i]!!
+                val class46s = WarpTextureNode.aWidgetComponentArrayArray9427!![i]!!
                 for (i_1_ in class46s.indices) {
                     val class46 = class46s[i_1_]
                     if (class46 != null) {

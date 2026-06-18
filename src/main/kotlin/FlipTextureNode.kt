@@ -105,15 +105,15 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
         var anInt9146: Int = 0
 
         @JvmStatic
-        fun method3064(i: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, bool_15_: Boolean, class46s: Array<Class46?>?, i_16_: Int, i_17_: Int) {
+        fun method3064(i: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, bool_15_: Boolean, widgetComponents: Array<WidgetComponent?>?, i_16_: Int, i_17_: Int) {
             try {
                 FacingDirectionNode.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                 if (bool_15_ == false) {
                     anInt9145++
                     var i_18_ = 0
-                    while ( /**/class46s!!.size > i_18_) {
-                        val class46 = class46s[i_18_]
-                        if (class46 != null && (class46.anInt834 == i_16_ || (i_16_ == -1412584499 && RegionSceneLoader.aClass46_3701 == class46))) {
+                    while ( /**/widgetComponents!!.size > i_18_) {
+                        val class46 = widgetComponents[i_18_]
+                        if (class46 != null && (class46.anInt834 == i_16_ || (i_16_ == -1412584499 && RegionSceneLoader.aWidgetComponent_3701 == class46))) {
                             val i_19_ = i_11_ + class46.anInt800
                             val i_20_ = class46.anInt750 + i_10_
                             val i_21_ = 1 + (class46.anInt709 + i_19_)
@@ -137,11 +137,11 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                 }
                                 var i_28_ = class46.anInt696
                                 if (TextureCubeProvider.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127
-                                if (class46 == RegionSceneLoader.aClass46_3701) {
+                                if (class46 == RegionSceneLoader.aWidgetComponent_3701) {
                                     if (i_16_ != -1412584499 && ((WidgetRedrawTracker.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
                                         SpriteLoadValidator.anInt4792 = i_10_
                                         AbstractTileShape.anInt6555 = i_11_
-                                        RectangleRegion.aClass46Array1942 = class46s
+                                        RectangleRegion.aWidgetComponentArray1942 = widgetComponents
                                         i_18_++
                                         continue
                                     }
@@ -152,8 +152,8 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                         i_30_ -= ModelDefinitionCache.anInt2872
                                         if (BoxBlurTextureNode.Companion.anInt9461 > i_29_) i_29_ = BoxBlurTextureNode.Companion.anInt9461
                                         if (i_30_ < Bzip2DecoderState.anInt558) i_30_ = Bzip2DecoderState.anInt558
-                                        if (class46.anInt709 + i_29_ > ((CalendarUtil.aClass46_4130!!.anInt709) + BoxBlurTextureNode.Companion.anInt9461)) i_29_ = (-class46.anInt709 + ((BoxBlurTextureNode.Companion.anInt9461) + (CalendarUtil.aClass46_4130!!.anInt709)))
-                                        if (i_30_ + class46.anInt789 > (CalendarUtil.aClass46_4130!!.anInt789) + Bzip2DecoderState.anInt558) i_30_ = (-class46.anInt789 + (Bzip2DecoderState.anInt558 - -(CalendarUtil.aClass46_4130!!.anInt789)))
+                                        if (class46.anInt709 + i_29_ > ((CalendarUtil.aWidgetComponent_4130!!.anInt709) + BoxBlurTextureNode.Companion.anInt9461)) i_29_ = (-class46.anInt709 + ((BoxBlurTextureNode.Companion.anInt9461) + (CalendarUtil.aWidgetComponent_4130!!.anInt709)))
+                                        if (i_30_ + class46.anInt789 > (CalendarUtil.aWidgetComponent_4130!!.anInt789) + Bzip2DecoderState.anInt558) i_30_ = (-class46.anInt789 + (Bzip2DecoderState.anInt558 - -(CalendarUtil.aWidgetComponent_4130!!.anInt789)))
                                         i_24_ = i_29_
                                         i_25_ = i_30_
                                     }
@@ -252,7 +252,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     if (i_40_ > 98304) {
                                                         i_41_ = -65536
                                                         if (ServerConnectionInfo.aBoolean2151) {
-                                                            Class46.method427(-35)
+                                                            WidgetComponent.method427(-35)
                                                             for (i_42_ in 0..9) System.gc()
                                                             i_40_ = (((runtime.totalMemory()) - (runtime.freeMemory())) / 1024L).toInt()
                                                             if (i_40_ > 65536) method544("WARNING: Memory usage over 64MB! Please inform whoever is responsible for the content/area you are using/in.", false, 4)
@@ -310,8 +310,8 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                     }
                                     if (class46.anInt774 == 0) {
                                         if ((class46.anInt765 == MaterialTextureCache.anInt4532) && FacingDirectionNode.aRenderer6654!!.method3666()) FacingDirectionNode.aRenderer6654!!.method3658(i_24_, i_25_, class46.anInt709, class46.anInt789)
-                                        method3064(i_31_, -class46.anInt755 + i_25_, bool, i_24_ - class46.anInt747, i_32_, i_23_, i_34_, false, class46s, class46.anInt830, i_33_)
-                                        if (class46.aClass46Array798 != null) method3064(i_31_, -(class46.anInt755) + i_25_, bool, i_24_ - (class46.anInt747), i_32_, i_23_, i_34_, false, (class46.aClass46Array798), (class46.anInt830), i_33_)
+                                        method3064(i_31_, -class46.anInt755 + i_25_, bool, i_24_ - class46.anInt747, i_32_, i_23_, i_34_, false, widgetComponents, class46.anInt830, i_33_)
+                                        if (class46.aWidgetComponentArray798 != null) method3064(i_31_, -(class46.anInt755) + i_25_, bool, i_24_ - (class46.anInt747), i_32_, i_23_, i_34_, false, (class46.aWidgetComponentArray798), (class46.anInt830), i_33_)
                                         val class348_sub41 = ((MinimapSpriteRenderer.aHashtable_4915!!.method3480(class46.anInt830.toLong(), -6008)) as RegionSceneShifter?)
                                         if (class348_sub41 != null) ParticleAmountConfig.method1252(i_25_, (class348_sub41.anInt7050), i_32_, i_23_, i_24_, i_34_, i_33_, 60.toByte(), i_31_)
                                         if ((class46.anInt765 == MaterialTextureCache.anInt4532) && FacingDirectionNode.aRenderer6654!!.method3666()) FacingDirectionNode.aRenderer6654!!.method3698()
@@ -345,7 +345,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     string = (method2157((class46.anInt806), -1431655765))
                                                     if (string == null) string = ""
                                                 }
-                                                if (Class49.aClass46_4730 == class46) {
+                                                if (Class49.aWidgetComponent_4730 == class46) {
                                                     string = (LocalizedText.aLocalizedText_3514!!.method2063((AnimationFrameDefinition.anInt6967), 544))
                                                     i_50_ = (class46.anInt749)
                                                 }
@@ -530,7 +530,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                 }
             } catch (runtimeexception: RuntimeException) {
                 runtimeexception.printStackTrace()
-                throw SoundBankPatch.method2929(runtimeexception, ("jia.B(" + i + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ',' + bool_15_ + ',' + (if (class46s != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("jia.B(" + i + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ',' + bool_15_ + ',' + (if (widgetComponents != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ')'))
             }
         }
 

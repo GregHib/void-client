@@ -75,7 +75,7 @@ import kotlin.math.pow
 
 object Class66 {
     private var anIntArray1149: IntArray? = IntArray(1000)
-    private var aClass46_1150: Class46? = null
+    private var aWidgetComponent_1150: WidgetComponent? = null
     private var aMinimapTileEntry_1151: MinimapTileEntry? = null
     private var aStringArray1152: Array<String?>? = arrayOfNulls<String>(1000)
     @JvmField
@@ -104,7 +104,7 @@ object Class66 {
     @JvmField
     var anInt1167: Int = 0
     private var aScanlineRasterFillerArray1168: Array<ScanlineRasterFiller?>?
-    private var aClass46_1169: Class46? = null
+    private var aWidgetComponent_1169: WidgetComponent? = null
     private var anInt1170 = 0
     @JvmField
     var anInt1171: Int = 0
@@ -125,9 +125,9 @@ object Class66 {
             if ((class348_sub42_sub19.aBoundsConstraintEntry_9691 == Class90.aBoundsConstraintEntry_1512) || (class348_sub42_sub19.aBoundsConstraintEntry_9691) == Class59_Sub1_Sub2.aBoundsConstraintEntry_8664 || (class348_sub42_sub19.aBoundsConstraintEntry_9691) == Class77.aBoundsConstraintEntry_1298) {
                 var i_1_ = 0
                 var i_2_ = 0
-                if (HeapDiagnosticsHolder.aClass46_2249 != null) {
-                    i_1_ = HeapDiagnosticsHolder.aClass46_2249!!.anInt800
-                    i_2_ = HeapDiagnosticsHolder.aClass46_2249!!.anInt750
+                if (HeapDiagnosticsHolder.aWidgetComponent_2249 != null) {
+                    i_1_ = HeapDiagnosticsHolder.aWidgetComponent_2249!!.anInt800
+                    i_2_ = HeapDiagnosticsHolder.aWidgetComponent_2249!!.anInt750
                 }
                 anIntArray1164!![0] = GlTexture1D.aInputTracker_8552!!.method3597(true) - i_1_
                 anIntArray1164!![1] = (GlTexture1D.aInputTracker_8552!!.method3594(80.toByte()) - i_2_)
@@ -140,13 +140,13 @@ object Class66 {
         val class46 = method2570(1512932720, i)
         if (class46 != null) {
             val i_3_ = i ushr 16
-            var class46s = WorldMapTextLabel.aClass46ArrayArray8584!![i_3_]
+            var class46s = WorldMapTextLabel.aWidgetComponentArrayArray8584!![i_3_]
             if (class46s == null) {
-                val class46s_4_: Array<Class46?> = WarpTextureNode.aClass46ArrayArray9427!![i_3_]!!
-                val i_5_ = class46s_4_.size
-                WorldMapTextLabel.aClass46ArrayArray8584!![i_3_] = arrayOfNulls<Class46>(i_5_)
-                class46s = WorldMapTextLabel.aClass46ArrayArray8584!![i_3_]!!
-                ArrayCopyUtil.method1575(class46s_4_, 0, class46s, 0, class46s_4_.size)
+                val widgetComponentS_4_: Array<WidgetComponent?> = WarpTextureNode.aWidgetComponentArrayArray9427!![i_3_]!!
+                val i_5_ = widgetComponentS_4_.size
+                WorldMapTextLabel.aWidgetComponentArrayArray8584!![i_3_] = arrayOfNulls<WidgetComponent>(i_5_)
+                class46s = WorldMapTextLabel.aWidgetComponentArrayArray8584!![i_3_]!!
+                ArrayCopyUtil.method1575(widgetComponentS_4_, 0, class46s, 0, widgetComponentS_4_.size)
             }
             var i_6_: Int
             i_6_ = 0
@@ -164,12 +164,12 @@ object Class66 {
     @JvmStatic
     fun method703(i: Int) {
         if (i != -1 && TextureLoaderUtil.method2547(i, 84.toByte())) {
-            val class46s: Array<Class46?> = WarpTextureNode.aClass46ArrayArray9427!![i]!!
-            for (i_7_ in class46s.indices) {
-                val class46 = class46s[i_7_]!!
+            val widgetComponents: Array<WidgetComponent?> = WarpTextureNode.aWidgetComponentArrayArray9427!![i]!!
+            for (i_7_ in widgetComponents.indices) {
+                val class46 = widgetComponents[i_7_]!!
                 if (class46.anObjectArray815 != null) {
                     val class348_sub36 = WidgetActionEntry()
-                    class348_sub36.aClass46_6989 = class46
+                    class348_sub36.aWidgetComponent_6989 = class46
                     class348_sub36.anObjectArray6987 = class46.anObjectArray815
                     method712(class348_sub36, 2000000)
                 }
@@ -1856,7 +1856,7 @@ object Class66 {
                 return
             }
             if (i == 6203) {
-                LoadingScreenImageNode.method3174(0, 0, AbstractTileShape.aClass46_6561!!.anInt709, false, 74.toByte(), AbstractTileShape.aClass46_6561!!.anInt789)
+                LoadingScreenImageNode.method3174(0, 0, AbstractTileShape.aWidgetComponent_6561!!.anInt709, false, 74.toByte(), AbstractTileShape.aWidgetComponent_6561!!.anInt789)
                 anIntArray1149!![anInt1173++] = WidgetComponentNode.anInt4656
                 anIntArray1149!![anInt1173++] = GroundDecorRenderer.anInt3643
                 return
@@ -2072,9 +2072,9 @@ object Class66 {
                 }
                 if (i == 6702) {
                     val i_176_ = anIntArray1149!![--anInt1173]
-                    if (WarpTextureNode.aClass46ArrayArray9427!![i_176_] == null) aStringArray1152!![anInt1170++] = ""
+                    if (WarpTextureNode.aWidgetComponentArrayArray9427!![i_176_] == null) aStringArray1152!![anInt1170++] = ""
                     else {
-                        val string = (WarpTextureNode.aClass46ArrayArray9427!![i_176_]!![0]!!.aString721)
+                        val string = (WarpTextureNode.aWidgetComponentArrayArray9427!![i_176_]!![0]!!.aString721)
                         if (string == null) aStringArray1152!![anInt1170++] = ""
                         else {
                             aStringArray1152!![anInt1170++] = string.substring(0, string.indexOf(':'))
@@ -2086,9 +2086,9 @@ object Class66 {
                 }
                 if (i == 6703) {
                     val i_177_ = anIntArray1149!![--anInt1173]
-                    if (WarpTextureNode.aClass46ArrayArray9427!![i_177_] == null) anIntArray1149!![anInt1173++] = 0
+                    if (WarpTextureNode.aWidgetComponentArrayArray9427!![i_177_] == null) anIntArray1149!![anInt1173++] = 0
                     else {
-                        anIntArray1149!![anInt1173++] = (WarpTextureNode.aClass46ArrayArray9427!![i_177_])!!.size
+                        anIntArray1149!![anInt1173++] = (WarpTextureNode.aWidgetComponentArrayArray9427!![i_177_])!!.size
                         return
                     }
                     return
@@ -2097,9 +2097,9 @@ object Class66 {
                     anInt1173 -= 2
                     val i_178_ = anIntArray1149!![anInt1173]
                     val i_179_ = anIntArray1149!![anInt1173 + 1]
-                    if (WarpTextureNode.aClass46ArrayArray9427!![i_178_] == null) aStringArray1152!![anInt1170++] = ""
+                    if (WarpTextureNode.aWidgetComponentArrayArray9427!![i_178_] == null) aStringArray1152!![anInt1170++] = ""
                     else {
-                        val string = (WarpTextureNode.aClass46ArrayArray9427!![i_178_]!![i_179_]!!.aString721)
+                        val string = (WarpTextureNode.aWidgetComponentArrayArray9427!![i_178_]!![i_179_]!!.aString721)
                         if (string == null) aStringArray1152!![anInt1170++] = ""
                         else {
                             aStringArray1152!![anInt1170++] = string
@@ -2113,9 +2113,9 @@ object Class66 {
                     anInt1173 -= 2
                     val i_180_ = anIntArray1149!![anInt1173]
                     val i_181_ = anIntArray1149!![anInt1173 + 1]
-                    if (WarpTextureNode.aClass46ArrayArray9427!![i_180_] == null) anIntArray1149!![anInt1173++] = 0
+                    if (WarpTextureNode.aWidgetComponentArrayArray9427!![i_180_] == null) anIntArray1149!![anInt1173++] = 0
                     else {
-                        anIntArray1149!![anInt1173++] = WarpTextureNode.aClass46ArrayArray9427!![i_180_]!![i_181_]!!.anInt732
+                        anIntArray1149!![anInt1173++] = WarpTextureNode.aWidgetComponentArrayArray9427!![i_180_]!![i_181_]!!.anInt732
                         return
                     }
                     return
@@ -2698,38 +2698,38 @@ object Class66 {
                 val i_249_ = anIntArray1149!![anInt1173 + 2]
                 if (i_248_ == 0) throw RuntimeException()
                 val class46 = method2570(1512932720, i_247_)
-                if (class46!!.aClass46Array798 == null) class46.aClass46Array798 = arrayOfNulls<Class46>(i_249_ + 1)
-                if (class46.aClass46Array798!!.size <= i_249_) {
-                    val class46s = arrayOfNulls<Class46>(i_249_ + 1)
-                    for (i_250_ in class46.aClass46Array798!!.indices) class46s[i_250_] = class46.aClass46Array798!![i_250_]
-                    class46.aClass46Array798 = class46s
+                if (class46!!.aWidgetComponentArray798 == null) class46.aWidgetComponentArray798 = arrayOfNulls<WidgetComponent>(i_249_ + 1)
+                if (class46.aWidgetComponentArray798!!.size <= i_249_) {
+                    val widgetComponents = arrayOfNulls<WidgetComponent>(i_249_ + 1)
+                    for (i_250_ in class46.aWidgetComponentArray798!!.indices) widgetComponents[i_250_] = class46.aWidgetComponentArray798!![i_250_]
+                    class46.aWidgetComponentArray798 = widgetComponents
                 }
-                if (i_249_ > 0 && (class46.aClass46Array798!![i_249_ - 1] == null)) throw RuntimeException("Gap at:" + (i_249_ - 1))
-                val class46_251_ = Class46()
-                class46_251_.anInt774 = i_248_
-                class46_251_.anInt830 = class46.anInt830
-                class46_251_.anInt834 = class46_251_.anInt830
-                class46_251_.anInt704 = i_249_
-                class46.aClass46Array798!![i_249_] = class46_251_
-                if (bool) aClass46_1169 = class46_251_
-                else aClass46_1150 = class46_251_
+                if (i_249_ > 0 && (class46.aWidgetComponentArray798!![i_249_ - 1] == null)) throw RuntimeException("Gap at:" + (i_249_ - 1))
+                val widgetComponent_251_ = WidgetComponent()
+                widgetComponent_251_.anInt774 = i_248_
+                widgetComponent_251_.anInt830 = class46.anInt830
+                widgetComponent_251_.anInt834 = widgetComponent_251_.anInt830
+                widgetComponent_251_.anInt704 = i_249_
+                class46.aWidgetComponentArray798!![i_249_] = widgetComponent_251_
+                if (bool) aWidgetComponent_1169 = widgetComponent_251_
+                else aWidgetComponent_1150 = widgetComponent_251_
                 ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
             if (i == 101) {
-                val class46 = (if (bool) Class66.aClass46_1169 else Class66.aClass46_1150)!!
+                val class46 = (if (bool) Class66.aWidgetComponent_1169 else Class66.aWidgetComponent_1150)!!
                 if (class46.anInt704 == -1) {
                     if (bool) throw RuntimeException("Tried to .cc_delete static .active-component!")
                     throw RuntimeException("Tried to cc_delete static active-component!")
                 }
                 val class46_252_ = method2570(1512932720, class46.anInt830)
-                class46_252_!!.aClass46Array798!![(class46.anInt704)] = null
+                class46_252_!!.aWidgetComponentArray798!![(class46.anInt704)] = null
                 ConfigFlagUtil.method1916(-9343, class46_252_)
                 return
             }
             if (i == 102) {
                 val class46 = method2570(1512932720, anIntArray1149!![--anInt1173])
-                class46!!.aClass46Array798 = null
+                class46!!.aWidgetComponentArray798 = null
                 ConfigFlagUtil.method1916(-9343, class46)
                 return
             }
@@ -2743,8 +2743,8 @@ object Class66 {
                     return
                 } else {
                     anIntArray1149!![anInt1173++] = 1
-                    if (bool) aClass46_1169 = class46
-                    else aClass46_1150 = class46
+                    if (bool) aWidgetComponent_1169 = class46
+                    else aWidgetComponent_1150 = class46
                 }
                 return
             }
@@ -2756,8 +2756,8 @@ object Class66 {
                     return
                 } else {
                     anIntArray1149!![anInt1173++] = 1
-                    if (bool) aClass46_1169 = class46
-                    else aClass46_1150 = class46
+                    if (bool) aWidgetComponent_1169 = class46
+                    else aWidgetComponent_1150 = class46
                 }
                 return
             }
@@ -2822,251 +2822,251 @@ object Class66 {
                 return
             }
         } else if (i >= 1000 && i < 1100 || i >= 2000 && i < 2100) {
-            val class46: Class46?
+            val widgetComponent: WidgetComponent?
             if (i >= 2000) {
                 i -= 1000
-                class46 = method2570(1512932720, anIntArray1149!![--anInt1173])
-            } else class46 = if (bool) aClass46_1169 else aClass46_1150
+                widgetComponent = method2570(1512932720, anIntArray1149!![--anInt1173])
+            } else widgetComponent = if (bool) aWidgetComponent_1169 else aWidgetComponent_1150
             if (i == 1000) {
                 anInt1173 -= 4
-                class46!!.anInt788 = anIntArray1149!![anInt1173]
-                class46.anInt739 = anIntArray1149!![anInt1173 + 1]
+                widgetComponent!!.anInt788 = anIntArray1149!![anInt1173]
+                widgetComponent.anInt739 = anIntArray1149!![anInt1173 + 1]
                 var i_267_ = anIntArray1149!![anInt1173 + 2]
                 if (i_267_ < 0) i_267_ = 0
                 else if (i_267_ > 5) i_267_ = 5
                 var i_268_ = anIntArray1149!![anInt1173 + 3]
                 if (i_268_ < 0) i_268_ = 0
                 else if (i_268_ > 5) i_268_ = 5
-                class46.aByte817 = i_267_.toByte()
-                class46.aByte681 = i_268_.toByte()
-                ConfigFlagUtil.method1916(-9343, class46)
-                CollisionMapRegion.method1048(class46, 50)
-                if (class46.anInt704 == -1) ChatEffectsOptionState.method1733((-78).toByte(), class46.anInt830)
+                widgetComponent.aByte817 = i_267_.toByte()
+                widgetComponent.aByte681 = i_268_.toByte()
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                CollisionMapRegion.method1048(widgetComponent, 50)
+                if (widgetComponent.anInt704 == -1) ChatEffectsOptionState.method1733((-78).toByte(), widgetComponent.anInt830)
                 return
             }
             if (i == 1001) {
                 anInt1173 -= 4
-                class46!!.anInt842 = anIntArray1149!![anInt1173]
-                class46.anInt728 = anIntArray1149!![anInt1173 + 1]
-                class46.anInt796 = 0
-                class46.anInt826 = 0
+                widgetComponent!!.anInt842 = anIntArray1149!![anInt1173]
+                widgetComponent.anInt728 = anIntArray1149!![anInt1173 + 1]
+                widgetComponent.anInt796 = 0
+                widgetComponent.anInt826 = 0
                 var i_269_ = anIntArray1149!![anInt1173 + 2]
                 if (i_269_ < 0) i_269_ = 0
                 else if (i_269_ > 4) i_269_ = 4
                 var i_270_ = anIntArray1149!![anInt1173 + 3]
                 if (i_270_ < 0) i_270_ = 0
                 else if (i_270_ > 4) i_270_ = 4
-                class46.aByte778 = i_269_.toByte()
-                class46.aByte724 = i_270_.toByte()
-                ConfigFlagUtil.method1916(-9343, class46)
-                CollisionMapRegion.method1048(class46, 62)
-                if (class46.anInt774 == 0) ConfigFlagUtil.method1913(false, 36, class46)
+                widgetComponent.aByte778 = i_269_.toByte()
+                widgetComponent.aByte724 = i_270_.toByte()
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                CollisionMapRegion.method1048(widgetComponent, 62)
+                if (widgetComponent.anInt774 == 0) ConfigFlagUtil.method1913(false, 36, widgetComponent)
                 return
             }
             if (i == 1003) {
                 val bool_271_ = anIntArray1149!![--anInt1173] == 1
-                if (class46!!.aBoolean813 != bool_271_) {
-                    class46.aBoolean813 = bool_271_
-                    ConfigFlagUtil.method1916(-9343, class46)
+                if (widgetComponent!!.aBoolean813 != bool_271_) {
+                    widgetComponent.aBoolean813 = bool_271_
+                    ConfigFlagUtil.method1916(-9343, widgetComponent)
                 }
-                if (class46.anInt704 == -1) NamedIdEntry.method2999(90.toByte(), class46.anInt830)
+                if (widgetComponent.anInt704 == -1) NamedIdEntry.method2999(90.toByte(), widgetComponent.anInt830)
                 return
             }
             if (i == 1004) {
                 anInt1173 -= 2
-                class46!!.anInt710 = anIntArray1149!![anInt1173]
-                class46.anInt775 = anIntArray1149!![anInt1173 + 1]
-                ConfigFlagUtil.method1916(-9343, class46)
-                CollisionMapRegion.method1048(class46, 59)
-                if (class46.anInt774 == 0) ConfigFlagUtil.method1913(false, 49, class46)
+                widgetComponent!!.anInt710 = anIntArray1149!![anInt1173]
+                widgetComponent.anInt775 = anIntArray1149!![anInt1173 + 1]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                CollisionMapRegion.method1048(widgetComponent, 59)
+                if (widgetComponent.anInt774 == 0) ConfigFlagUtil.method1913(false, 49, widgetComponent)
                 return
             }
             if (i == 1005) {
-                class46!!.aBoolean776 = anIntArray1149!![--anInt1173] == 1
+                widgetComponent!!.aBoolean776 = anIntArray1149!![--anInt1173] == 1
                 return
             }
         } else if (i >= 1100 && i < 1200 || i >= 2100 && i < 2200) {
-            val class46: Class46?
+            val widgetComponent: WidgetComponent?
             if (i >= 2000) {
                 i -= 1000
-                class46 = method2570(1512932720, anIntArray1149!![--anInt1173])
-            } else class46 = if (bool) aClass46_1169 else aClass46_1150
+                widgetComponent = method2570(1512932720, anIntArray1149!![--anInt1173])
+            } else widgetComponent = if (bool) aWidgetComponent_1169 else aWidgetComponent_1150
             if (i == 1100) {
                 anInt1173 -= 2
-                class46!!.anInt747 = anIntArray1149!![anInt1173]
-                if (class46.anInt747 > (class46.anInt698 - class46.anInt709)) class46.anInt747 = (class46.anInt698 - class46.anInt709)
-                if (class46.anInt747 < 0) class46.anInt747 = 0
-                class46.anInt755 = anIntArray1149!![anInt1173 + 1]
-                if (class46.anInt755 > (class46.anInt791 - class46.anInt789)) class46.anInt755 = (class46.anInt791 - class46.anInt789)
-                if (class46.anInt755 < 0) class46.anInt755 = 0
-                ConfigFlagUtil.method1916(-9343, class46)
-                if (class46.anInt704 == -1) RenderQueueState.method2615(-91, class46.anInt830)
+                widgetComponent!!.anInt747 = anIntArray1149!![anInt1173]
+                if (widgetComponent.anInt747 > (widgetComponent.anInt698 - widgetComponent.anInt709)) widgetComponent.anInt747 = (widgetComponent.anInt698 - widgetComponent.anInt709)
+                if (widgetComponent.anInt747 < 0) widgetComponent.anInt747 = 0
+                widgetComponent.anInt755 = anIntArray1149!![anInt1173 + 1]
+                if (widgetComponent.anInt755 > (widgetComponent.anInt791 - widgetComponent.anInt789)) widgetComponent.anInt755 = (widgetComponent.anInt791 - widgetComponent.anInt789)
+                if (widgetComponent.anInt755 < 0) widgetComponent.anInt755 = 0
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                if (widgetComponent.anInt704 == -1) RenderQueueState.method2615(-91, widgetComponent.anInt830)
                 return
             }
             if (i == 1101) {
-                class46!!.anInt749 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, class46)
-                if (class46.anInt704 == -1) method1148(class46.anInt830, 6)
+                widgetComponent!!.anInt749 = anIntArray1149!![--anInt1173]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                if (widgetComponent.anInt704 == -1) method1148(widgetComponent.anInt830, 6)
                 return
             }
             if (i == 1102) {
-                class46!!.aBoolean810 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.aBoolean810 = anIntArray1149!![--anInt1173] == 1
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1103) {
-                class46!!.anInt696 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.anInt696 = anIntArray1149!![--anInt1173]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1104) {
-                class46!!.anInt690 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.anInt690 = anIntArray1149!![--anInt1173]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1105) {
                 val i_272_ = anIntArray1149!![--anInt1173]
-                if (class46!!.anInt756 != i_272_) {
-                    class46.anInt756 = i_272_
-                    ConfigFlagUtil.method1916(-9343, class46)
+                if (widgetComponent!!.anInt756 != i_272_) {
+                    widgetComponent.anInt756 = i_272_
+                    ConfigFlagUtil.method1916(-9343, widgetComponent)
                 }
-                if (class46.anInt704 == -1) ProjectileSpawner.method1477(class46.anInt830, 14)
+                if (widgetComponent.anInt704 == -1) ProjectileSpawner.method1477(widgetComponent.anInt830, 14)
                 return
             }
             if (i == 1106) {
-                class46!!.anInt828 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.anInt828 = anIntArray1149!![--anInt1173]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1107) {
-                class46!!.aBoolean697 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.aBoolean697 = anIntArray1149!![--anInt1173] == 1
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1108) {
-                class46!!.anInt770 = 1
-                class46.anInt753 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, class46)
-                if (class46.anInt704 == -1) method3569(class46.anInt830, -125)
+                widgetComponent!!.anInt770 = 1
+                widgetComponent.anInt753 = anIntArray1149!![--anInt1173]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                if (widgetComponent.anInt704 == -1) method3569(widgetComponent.anInt830, -125)
                 return
             }
             if (i == 1109) {
                 anInt1173 -= 6
-                class46!!.anInt808 = anIntArray1149!![anInt1173]
-                class46.anInt786 = anIntArray1149!![anInt1173 + 1]
-                class46.anInt757 = anIntArray1149!![anInt1173 + 2]
-                class46.anInt675 = anIntArray1149!![anInt1173 + 3]
-                class46.anInt717 = anIntArray1149!![anInt1173 + 4]
-                class46.anInt716 = anIntArray1149!![anInt1173 + 5]
-                ConfigFlagUtil.method1916(-9343, class46)
-                if (class46.anInt704 == -1) {
-                    method1787(class46.anInt830, 8)
-                    LoadingScreenState.method1459(class46.anInt830, 2)
+                widgetComponent!!.anInt808 = anIntArray1149!![anInt1173]
+                widgetComponent.anInt786 = anIntArray1149!![anInt1173 + 1]
+                widgetComponent.anInt757 = anIntArray1149!![anInt1173 + 2]
+                widgetComponent.anInt675 = anIntArray1149!![anInt1173 + 3]
+                widgetComponent.anInt717 = anIntArray1149!![anInt1173 + 4]
+                widgetComponent.anInt716 = anIntArray1149!![anInt1173 + 5]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                if (widgetComponent.anInt704 == -1) {
+                    method1787(widgetComponent.anInt830, 8)
+                    LoadingScreenState.method1459(widgetComponent.anInt830, 2)
                 }
                 return
             }
             if (i == 1110) {
                 val i_273_ = anIntArray1149!![--anInt1173]
-                if (class46!!.anInt699 != i_273_) {
-                    class46.anInt699 = i_273_
-                    class46.anInt795 = 0
-                    class46.anInt730 = 1
-                    class46.anInt841 = 0
-                    val class17 = (if (class46.anInt699 == -1) null else ParticleEmitterNode.aClass87_191!!.method835(class46.anInt699, 7))
-                    if (class17 != null) CompassSmoother.method2017(class46.anInt795, class17, 46)
-                    ConfigFlagUtil.method1916(-9343, class46)
+                if (widgetComponent!!.anInt699 != i_273_) {
+                    widgetComponent.anInt699 = i_273_
+                    widgetComponent.anInt795 = 0
+                    widgetComponent.anInt730 = 1
+                    widgetComponent.anInt841 = 0
+                    val class17 = (if (widgetComponent.anInt699 == -1) null else ParticleEmitterNode.aClass87_191!!.method835(widgetComponent.anInt699, 7))
+                    if (class17 != null) CompassSmoother.method2017(widgetComponent.anInt795, class17, 46)
+                    ConfigFlagUtil.method1916(-9343, widgetComponent)
                 }
-                if (class46.anInt704 == -1) Class64_Sub3.method687((-117).toByte(), class46.anInt830)
+                if (widgetComponent.anInt704 == -1) Class64_Sub3.method687((-117).toByte(), widgetComponent.anInt830)
                 return
             }
             if (i == 1111) {
-                class46!!.aBoolean689 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.aBoolean689 = anIntArray1149!![--anInt1173] == 1
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1112) {
                 val string = aStringArray1152!![--anInt1170]
-                if (string != class46!!.aString792) {
-                    class46.aString792 = string
-                    ConfigFlagUtil.method1916(-9343, class46)
+                if (string != widgetComponent!!.aString792) {
+                    widgetComponent.aString792 = string
+                    ConfigFlagUtil.method1916(-9343, widgetComponent)
                 }
-                if (class46.anInt704 == -1) method3316(121, class46.anInt830)
+                if (widgetComponent.anInt704 == -1) method3316(121, widgetComponent.anInt830)
                 return
             }
             if (i == 1113) {
-                class46!!.anInt702 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, class46)
-                if (class46.anInt704 == -1) ConfigVarProgress.method2311((-109).toByte(), class46.anInt830)
+                widgetComponent!!.anInt702 = anIntArray1149!![--anInt1173]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                if (widgetComponent.anInt704 == -1) ConfigVarProgress.method2311((-109).toByte(), widgetComponent.anInt830)
                 return
             }
             if (i == 1114) {
                 anInt1173 -= 3
-                class46!!.anInt762 = anIntArray1149!![anInt1173]
-                class46.anInt700 = anIntArray1149!![anInt1173 + 1]
-                class46.anInt673 = anIntArray1149!![anInt1173 + 2]
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.anInt762 = anIntArray1149!![anInt1173]
+                widgetComponent.anInt700 = anIntArray1149!![anInt1173 + 1]
+                widgetComponent.anInt673 = anIntArray1149!![anInt1173 + 2]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1115) {
-                class46!!.aBoolean769 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.aBoolean769 = anIntArray1149!![--anInt1173] == 1
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1116) {
-                class46!!.anInt672 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.anInt672 = anIntArray1149!![--anInt1173]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1117) {
-                class46!!.anInt809 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.anInt809 = anIntArray1149!![--anInt1173]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1118) {
-                class46!!.aBoolean790 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.aBoolean790 = anIntArray1149!![--anInt1173] == 1
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1119) {
-                class46!!.aBoolean735 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.aBoolean735 = anIntArray1149!![--anInt1173] == 1
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1120) {
                 anInt1173 -= 2
-                class46!!.anInt698 = anIntArray1149!![anInt1173]
-                class46.anInt791 = anIntArray1149!![anInt1173 + 1]
-                ConfigFlagUtil.method1916(-9343, class46)
-                if (class46.anInt774 == 0) ConfigFlagUtil.method1913(false, 62, class46)
+                widgetComponent!!.anInt698 = anIntArray1149!![anInt1173]
+                widgetComponent.anInt791 = anIntArray1149!![anInt1173 + 1]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                if (widgetComponent.anInt774 == 0) ConfigFlagUtil.method1913(false, 62, widgetComponent)
                 return
             }
             if (i == 1122) {
-                class46!!.aBoolean745 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.aBoolean745 = anIntArray1149!![--anInt1173] == 1
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1123) {
-                class46!!.anInt716 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, class46)
-                if (class46.anInt704 == -1) method1787(class46.anInt830, 8)
+                widgetComponent!!.anInt716 = anIntArray1149!![--anInt1173]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                if (widgetComponent.anInt704 == -1) method1787(widgetComponent.anInt830, 8)
                 return
             }
             if (i == 1124) {
                 val i_274_ = anIntArray1149!![--anInt1173]
-                class46!!.aBoolean744 = i_274_ == 1
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.aBoolean744 = i_274_ == 1
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1125) {
                 anInt1173 -= 2
-                class46!!.anInt688 = anIntArray1149!![anInt1173]
-                class46.anInt799 = anIntArray1149!![anInt1173 + 1]
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.anInt688 = anIntArray1149!![anInt1173]
+                widgetComponent.anInt799 = anIntArray1149!![anInt1173 + 1]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1126) {
-                class46!!.anInt773 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.anInt773 = anIntArray1149!![--anInt1173]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1127) {
@@ -3075,9 +3075,9 @@ object Class66 {
                 val i_276_ = anIntArray1149!![anInt1173 + 1]
                 val class254 = ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(i_275_, 28364)
                 if (i_276_ == class254.anInt3256) {
-                    class46!!.method435(i_275_, -3437)
+                    widgetComponent!!.method435(i_275_, -3437)
                     return
-                } else class46!!.method436(-70, i_275_, i_276_)
+                } else widgetComponent!!.method436(-70, i_275_, i_276_)
                 return
             }
             if (i == 1128) {
@@ -3085,60 +3085,60 @@ object Class66 {
                 val string = aStringArray1152!![--anInt1170]
                 val class254 = ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(i_277_, 28364)
                 if (class254.aString3258 == string) {
-                    class46!!.method435(i_277_, -3437)
+                    widgetComponent!!.method435(i_277_, -3437)
                     return
-                } else class46!!.method439(0, i_277_, string)
+                } else widgetComponent!!.method439(0, i_277_, string)
                 return
             }
             if (i == 1129 || i == 1130) {
                 val i_278_ = anIntArray1149!![--anInt1173]
-                if ((class46!!.anInt774 == 5 || i != 1129) && (class46.anInt774 == 4 || i != 1130)) {
-                    if (class46.anInt806 != i_278_) {
-                        class46.anInt806 = i_278_
-                        ConfigFlagUtil.method1916(-9343, class46)
+                if ((widgetComponent!!.anInt774 == 5 || i != 1129) && (widgetComponent.anInt774 == 4 || i != 1130)) {
+                    if (widgetComponent.anInt806 != i_278_) {
+                        widgetComponent.anInt806 = i_278_
+                        ConfigFlagUtil.method1916(-9343, widgetComponent)
                     }
-                    if (class46.anInt704 == -1) GlowPostProcessor.method1415(class46.anInt830, 117)
+                    if (widgetComponent.anInt704 == -1) GlowPostProcessor.method1415(widgetComponent.anInt830, 117)
                     return
                 }
                 return
             }
         } else if (i >= 1200 && i < 1300 || i >= 2200 && i < 2300) {
-            val class46: Class46?
+            val widgetComponent: WidgetComponent?
             if (i >= 2000) {
                 i -= 1000
-                class46 = method2570(1512932720, anIntArray1149!![--anInt1173])
-            } else class46 = if (bool) aClass46_1169 else aClass46_1150
-            ConfigFlagUtil.method1916(-9343, class46!!)
+                widgetComponent = method2570(1512932720, anIntArray1149!![--anInt1173])
+            } else widgetComponent = if (bool) aWidgetComponent_1169 else aWidgetComponent_1150
+            ConfigFlagUtil.method1916(-9343, widgetComponent!!)
             if (i == 1200 || i == 1205 || i == 1208 || i == 1209 || i == 1212 || i == 1213) {
                 anInt1173 -= 2
                 val i_279_ = anIntArray1149!![anInt1173]
                 val i_280_ = anIntArray1149!![anInt1173 + 1]
-                if (class46!!.anInt704 == -1) {
-                    Class73.Companion.method743(9, class46.anInt830)
-                    method1787(class46.anInt830, 8)
-                    LoadingScreenState.method1459(class46.anInt830, 2)
+                if (widgetComponent!!.anInt704 == -1) {
+                    Class73.Companion.method743(9, widgetComponent.anInt830)
+                    method1787(widgetComponent.anInt830, 8)
+                    LoadingScreenState.method1459(widgetComponent.anInt830, 2)
                 }
                 if (i_279_ == -1) {
-                    class46.anInt770 = 1
-                    class46.anInt753 = -1
-                    class46.anInt812 = -1
+                    widgetComponent.anInt770 = 1
+                    widgetComponent.anInt753 = -1
+                    widgetComponent.anInt812 = -1
                 } else {
-                    class46.anInt812 = i_279_
-                    class46.anInt781 = i_280_
-                    class46.aBoolean720 = i == 1208 || i == 1209
+                    widgetComponent.anInt812 = i_279_
+                    widgetComponent.anInt781 = i_280_
+                    widgetComponent.aBoolean720 = i == 1208 || i == 1209
                     val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(74, i_279_)
-                    class46.anInt757 = class213.anInt2787
-                    class46.anInt675 = class213.anInt2781
-                    class46.anInt717 = class213.anInt2810
-                    class46.anInt808 = class213.anInt2779
-                    class46.anInt786 = class213.anInt2826
-                    class46.anInt716 = class213.anInt2825
-                    if (i == 1205 || i == 1209) class46.anInt678 = 0
-                    else if (i == 1212 || i == 1213) class46.anInt678 = 1
-                    else class46.anInt678 = 2
-                    if (class46.anInt796 > 0) class46.anInt716 = (class46.anInt716 * 32 / class46.anInt796)
+                    widgetComponent.anInt757 = class213.anInt2787
+                    widgetComponent.anInt675 = class213.anInt2781
+                    widgetComponent.anInt717 = class213.anInt2810
+                    widgetComponent.anInt808 = class213.anInt2779
+                    widgetComponent.anInt786 = class213.anInt2826
+                    widgetComponent.anInt716 = class213.anInt2825
+                    if (i == 1205 || i == 1209) widgetComponent.anInt678 = 0
+                    else if (i == 1212 || i == 1213) widgetComponent.anInt678 = 1
+                    else widgetComponent.anInt678 = 2
+                    if (widgetComponent.anInt796 > 0) widgetComponent.anInt716 = (widgetComponent.anInt716 * 32 / widgetComponent.anInt796)
                     else {
-                        if (class46.anInt842 > 0) class46.anInt716 = (class46.anInt716 * 32 / class46.anInt842)
+                        if (widgetComponent.anInt842 > 0) widgetComponent.anInt716 = (widgetComponent.anInt716 * 32 / widgetComponent.anInt842)
                         return
                     }
                     return
@@ -3146,72 +3146,72 @@ object Class66 {
                 return
             }
             if (i == 1201) {
-                class46!!.anInt770 = 2
-                class46.anInt753 = anIntArray1149!![--anInt1173]
-                if (class46.anInt704 == -1) method3569(class46.anInt830, -124)
+                widgetComponent!!.anInt770 = 2
+                widgetComponent.anInt753 = anIntArray1149!![--anInt1173]
+                if (widgetComponent.anInt704 == -1) method3569(widgetComponent.anInt830, -124)
                 return
             }
             if (i == 1202) {
-                class46!!.anInt770 = 3
-                class46.anInt753 = -1
-                if (class46.anInt704 == -1) method3569(class46.anInt830, 94)
+                widgetComponent!!.anInt770 = 3
+                widgetComponent.anInt753 = -1
+                if (widgetComponent.anInt704 == -1) method3569(widgetComponent.anInt830, 94)
                 return
             }
             if (i == 1203) {
-                class46!!.anInt770 = 6
-                class46.anInt753 = anIntArray1149!![--anInt1173]
-                if (class46.anInt704 == -1) method3569(class46.anInt830, -26)
+                widgetComponent!!.anInt770 = 6
+                widgetComponent.anInt753 = anIntArray1149!![--anInt1173]
+                if (widgetComponent.anInt704 == -1) method3569(widgetComponent.anInt830, -26)
                 return
             }
             if (i == 1204) {
-                class46!!.anInt770 = 5
-                class46.anInt753 = anIntArray1149!![--anInt1173]
-                if (class46.anInt704 == -1) method3569(class46.anInt830, -127)
+                widgetComponent!!.anInt770 = 5
+                widgetComponent.anInt753 = anIntArray1149!![--anInt1173]
+                if (widgetComponent.anInt704 == -1) method3569(widgetComponent.anInt830, -127)
                 return
             }
             if (i == 1206) {
                 anInt1173 -= 4
-                class46!!.anInt705 = anIntArray1149!![anInt1173]
-                class46.anInt674 = anIntArray1149!![anInt1173 + 1]
-                class46.anInt733 = anIntArray1149!![anInt1173 + 2]
-                class46.anInt693 = anIntArray1149!![anInt1173 + 3]
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.anInt705 = anIntArray1149!![anInt1173]
+                widgetComponent.anInt674 = anIntArray1149!![anInt1173 + 1]
+                widgetComponent.anInt733 = anIntArray1149!![anInt1173 + 2]
+                widgetComponent.anInt693 = anIntArray1149!![anInt1173 + 3]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1207) {
                 anInt1173 -= 2
-                class46!!.anInt759 = anIntArray1149!![anInt1173]
-                class46.anInt835 = anIntArray1149!![anInt1173 + 1]
-                ConfigFlagUtil.method1916(-9343, class46)
+                widgetComponent!!.anInt759 = anIntArray1149!![anInt1173]
+                widgetComponent.anInt835 = anIntArray1149!![anInt1173 + 1]
+                ConfigFlagUtil.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1210) {
                 anInt1173 -= 4
-                class46!!.anInt753 = anIntArray1149!![anInt1173]
-                class46.anInt779 = anIntArray1149!![anInt1173 + 1]
-                if (anIntArray1149!![anInt1173 + 2] == 1) class46.anInt770 = 9
-                else class46.anInt770 = 8
-                class46.aBoolean720 = anIntArray1149!![anInt1173 + 3] == 1
-                if (class46.anInt704 == -1) method3569(class46.anInt830, 8)
+                widgetComponent!!.anInt753 = anIntArray1149!![anInt1173]
+                widgetComponent.anInt779 = anIntArray1149!![anInt1173 + 1]
+                if (anIntArray1149!![anInt1173 + 2] == 1) widgetComponent.anInt770 = 9
+                else widgetComponent.anInt770 = 8
+                widgetComponent.aBoolean720 = anIntArray1149!![anInt1173 + 3] == 1
+                if (widgetComponent.anInt704 == -1) method3569(widgetComponent.anInt830, 8)
                 return
             }
             if (i == 1211) {
-                class46!!.anInt770 = 5
-                class46.anInt753 = CharCodeMap.anInt9591
-                class46.anInt779 = 0
-                if (class46.anInt704 == -1) method3569(class46.anInt830, 66)
+                widgetComponent!!.anInt770 = 5
+                widgetComponent.anInt753 = CharCodeMap.anInt9591
+                widgetComponent.anInt779 = 0
+                if (widgetComponent.anInt704 == -1) method3569(widgetComponent.anInt830, 66)
                 return
             }
         } else if (i >= 1300 && i < 1400 || i >= 2300 && i < 2400) {
-            val class46: Class46?
+            val widgetComponent: WidgetComponent?
             if (i >= 2000) {
                 i -= 1000
-                class46 = method2570(1512932720, anIntArray1149!![--anInt1173])
-            } else class46 = if (bool) aClass46_1169 else aClass46_1150
+                widgetComponent = method2570(1512932720, anIntArray1149!![--anInt1173])
+            } else widgetComponent = if (bool) aWidgetComponent_1169 else aWidgetComponent_1150
             if (i == 1300) {
                 val i_281_ = anIntArray1149!![--anInt1173] - 1
                 if (i_281_ >= 0 && i_281_ <= 9) {
-                    class46!!.method438(i_281_, 124, aStringArray1152!![--anInt1170])
+                    widgetComponent!!.method438(i_281_, 124, aStringArray1152!![--anInt1170])
                     return
                 } else anInt1170--
                 return
@@ -3220,9 +3220,9 @@ object Class66 {
                 anInt1173 -= 2
                 val i_282_ = anIntArray1149!![anInt1173]
                 val i_283_ = anIntArray1149!![anInt1173 + 1]
-                if (i_282_ == -1 && i_283_ == -1) class46!!.aClass46_782 = null
+                if (i_282_ == -1 && i_283_ == -1) widgetComponent!!.aWidgetComponent_782 = null
                 else {
-                    class46!!.aClass46_782 = NpcReference.method2957(i_283_, (-54).toByte(), i_282_)
+                    widgetComponent!!.aWidgetComponent_782 = NpcReference.method2957(i_283_, (-54).toByte(), i_282_)
                     return
                 }
                 return
@@ -3230,48 +3230,48 @@ object Class66 {
             if (i == 1302) {
                 val i_284_ = anIntArray1149!![--anInt1173]
                 if (i_284_ == InputStream_Sub1.anInt78 || i_284_ == GrowableStringList.anInt2361 || i_284_ == WidgetRedrawTracker.anInt3930) {
-                    class46!!.anInt797 = i_284_
+                    widgetComponent!!.anInt797 = i_284_
                     return
                 }
                 return
             }
             if (i == 1303) {
-                class46!!.anInt729 = anIntArray1149!![--anInt1173]
+                widgetComponent!!.anInt729 = anIntArray1149!![--anInt1173]
                 return
             }
             if (i == 1304) {
-                class46!!.anInt703 = anIntArray1149!![--anInt1173]
+                widgetComponent!!.anInt703 = anIntArray1149!![--anInt1173]
                 return
             }
             if (i == 1305) {
-                class46!!.aString752 = aStringArray1152!![--anInt1170]
+                widgetComponent!!.aString752 = aStringArray1152!![--anInt1170]
                 return
             }
             if (i == 1306) {
-                class46!!.aString780 = aStringArray1152!![--anInt1170]
+                widgetComponent!!.aString780 = aStringArray1152!![--anInt1170]
                 return
             }
             if (i == 1307) {
-                class46!!.aStringArray833 = null
+                widgetComponent!!.aStringArray833 = null
                 return
             }
             if (i == 1308) {
-                class46!!.anInt695 = anIntArray1149!![--anInt1173]
-                class46.anInt824 = anIntArray1149!![--anInt1173]
+                widgetComponent!!.anInt695 = anIntArray1149!![--anInt1173]
+                widgetComponent.anInt824 = anIntArray1149!![--anInt1173]
                 return
             }
             if (i == 1309) {
                 val i_285_ = anIntArray1149!![--anInt1173]
                 val i_286_ = anIntArray1149!![--anInt1173]
-                if (i_286_ >= 1 && i_286_ <= 10) class46!!.method431(i_286_ - 1, i_285_, (-119).toByte())
+                if (i_286_ >= 1 && i_286_ <= 10) widgetComponent!!.method431(i_286_ - 1, i_285_, (-119).toByte())
                 return
             }
             if (i == 1310) {
-                class46!!.aString816 = aStringArray1152!![--anInt1170]
+                widgetComponent!!.aString816 = aStringArray1152!![--anInt1170]
                 return
             }
             if (i == 1311) {
-                class46!!.anInt713 = anIntArray1149!![--anInt1173]
+                widgetComponent!!.anInt713 = anIntArray1149!![--anInt1173]
                 return
             }
             if (i == 1312 || i == 1313) {
@@ -3290,38 +3290,38 @@ object Class66 {
                     i_288_ = anIntArray1149!![anInt1173]
                     i_289_ = anIntArray1149!![anInt1173 + 1]
                 }
-                if (class46!!.aByteArray746 == null) {
+                if (widgetComponent!!.aByteArray746 == null) {
                     if (i_288_ != 0) {
-                        class46.aByteArray746 = ByteArray(11)
-                        class46.aByteArray832 = ByteArray(11)
-                        class46.anIntArray707 = IntArray(11)
+                        widgetComponent.aByteArray746 = ByteArray(11)
+                        widgetComponent.aByteArray832 = ByteArray(11)
+                        widgetComponent.anIntArray707 = IntArray(11)
                     } else return
                 }
-                class46.aByteArray746[i_287_] = i_288_.toByte()
+                widgetComponent.aByteArray746[i_287_] = i_288_.toByte()
                 if (i_288_ == 0) {
-                    class46.aBoolean676 = false
-                    for (i_290_ in class46.aByteArray746.indices) {
-                        if (class46.aByteArray746[i_290_].toInt() != 0) {
-                            class46.aBoolean676 = true
+                    widgetComponent.aBoolean676 = false
+                    for (i_290_ in widgetComponent.aByteArray746.indices) {
+                        if (widgetComponent.aByteArray746[i_290_].toInt() != 0) {
+                            widgetComponent.aBoolean676 = true
                             break
                         }
                     }
-                } else class46.aBoolean676 = true
-                class46.aByteArray832[i_287_] = i_289_.toByte()
+                } else widgetComponent.aBoolean676 = true
+                widgetComponent.aByteArray832[i_287_] = i_289_.toByte()
                 return
             }
             if (i == 1314) {
-                class46!!.anInt719 = anIntArray1149!![--anInt1173]
+                widgetComponent!!.anInt719 = anIntArray1149!![--anInt1173]
                 return
             }
         } else {
             if (i >= 1400 && i < 1500 || i >= 2400 && i < 2500) {
-                val class46: Class46?
+                val widgetComponent: WidgetComponent?
                 if (i >= 2000) {
                     i -= 1000
-                    class46 = method2570(1512932720, anIntArray1149!![--anInt1173])
-                } else class46 = if (bool) aClass46_1169 else aClass46_1150
-                if (i == 1499) class46!!.method434(false)
+                    widgetComponent = method2570(1512932720, anIntArray1149!![--anInt1173])
+                } else widgetComponent = if (bool) aWidgetComponent_1169 else aWidgetComponent_1150
+                if (i == 1499) widgetComponent!!.method434(false)
                 else {
                     var string = aStringArray1152!![--anInt1170]!!
                     var `is`: IntArray? = null
@@ -3341,53 +3341,53 @@ object Class66 {
                     val i_293_ = anIntArray1149!![--anInt1173]
                     if (i_293_ != -1) objects[0] = i_293_
                     else objects = null
-                    if (i == 1400) class46!!.anObjectArray763 = objects
-                    else if (i == 1401) class46!!.anObjectArray805 = objects
-                    else if (i == 1402) class46!!.anObjectArray742 = objects
-                    else if (i == 1403) class46!!.anObjectArray811 = objects
-                    else if (i == 1404) class46!!.anObjectArray683 = objects
-                    else if (i == 1405) class46!!.anObjectArray823 = objects
-                    else if (i == 1406) class46!!.anObjectArray680 = objects
+                    if (i == 1400) widgetComponent!!.anObjectArray763 = objects
+                    else if (i == 1401) widgetComponent!!.anObjectArray805 = objects
+                    else if (i == 1402) widgetComponent!!.anObjectArray742 = objects
+                    else if (i == 1403) widgetComponent!!.anObjectArray811 = objects
+                    else if (i == 1404) widgetComponent!!.anObjectArray683 = objects
+                    else if (i == 1405) widgetComponent!!.anObjectArray823 = objects
+                    else if (i == 1406) widgetComponent!!.anObjectArray680 = objects
                     else if (i == 1407) {
-                        class46!!.anObjectArray777 = objects
-                        class46.anIntArray686 = `is`
-                    } else if (i == 1408) class46!!.anObjectArray764 = objects
-                    else if (i == 1409) class46!!.anObjectArray741 = objects
-                    else if (i == 1410) class46!!.anObjectArray692 = objects
-                    else if (i == 1411) class46!!.anObjectArray785 = objects
-                    else if (i == 1412) class46!!.anObjectArray839 = objects
+                        widgetComponent!!.anObjectArray777 = objects
+                        widgetComponent.anIntArray686 = `is`
+                    } else if (i == 1408) widgetComponent!!.anObjectArray764 = objects
+                    else if (i == 1409) widgetComponent!!.anObjectArray741 = objects
+                    else if (i == 1410) widgetComponent!!.anObjectArray692 = objects
+                    else if (i == 1411) widgetComponent!!.anObjectArray785 = objects
+                    else if (i == 1412) widgetComponent!!.anObjectArray839 = objects
                     else if (i == 1414) {
-                        class46!!.anObjectArray751 = objects
-                        class46.anIntArray771 = `is`
+                        widgetComponent!!.anObjectArray751 = objects
+                        widgetComponent.anIntArray771 = `is`
                     } else if (i == 1415) {
-                        class46!!.anObjectArray671 = objects
-                        class46.anIntArray731 = `is`
-                    } else if (i == 1416) class46!!.anObjectArray714 = objects
-                    else if (i == 1417) class46!!.anObjectArray803 = objects
-                    else if (i == 1418) class46!!.anObjectArray820 = objects
-                    else if (i == 1419) class46!!.anObjectArray822 = objects
-                    else if (i == 1420) class46!!.anObjectArray734 = objects
-                    else if (i == 1421) class46!!.anObjectArray761 = objects
-                    else if (i == 1422) class46!!.anObjectArray836 = objects
-                    else if (i == 1423) class46!!.anObjectArray840 = objects
-                    else if (i == 1424) class46!!.anObjectArray701 = objects
-                    else if (i == 1425) class46!!.anObjectArray807 = objects
-                    else if (i == 1426) class46!!.anObjectArray687 = objects
-                    else if (i == 1427) class46!!.anObjectArray727 = objects
+                        widgetComponent!!.anObjectArray671 = objects
+                        widgetComponent.anIntArray731 = `is`
+                    } else if (i == 1416) widgetComponent!!.anObjectArray714 = objects
+                    else if (i == 1417) widgetComponent!!.anObjectArray803 = objects
+                    else if (i == 1418) widgetComponent!!.anObjectArray820 = objects
+                    else if (i == 1419) widgetComponent!!.anObjectArray822 = objects
+                    else if (i == 1420) widgetComponent!!.anObjectArray734 = objects
+                    else if (i == 1421) widgetComponent!!.anObjectArray761 = objects
+                    else if (i == 1422) widgetComponent!!.anObjectArray836 = objects
+                    else if (i == 1423) widgetComponent!!.anObjectArray840 = objects
+                    else if (i == 1424) widgetComponent!!.anObjectArray701 = objects
+                    else if (i == 1425) widgetComponent!!.anObjectArray807 = objects
+                    else if (i == 1426) widgetComponent!!.anObjectArray687 = objects
+                    else if (i == 1427) widgetComponent!!.anObjectArray727 = objects
                     else if (i == 1428) {
-                        class46!!.anObjectArray685 = objects
-                        class46.anIntArray818 = `is`
+                        widgetComponent!!.anObjectArray685 = objects
+                        widgetComponent.anIntArray818 = `is`
                     } else if (i == 1429) {
-                        class46!!.anObjectArray708 = objects
-                        class46.anIntArray831 = `is`
-                    } else if (i == 1430) class46!!.anObjectArray679 = objects
-                    class46!!.aBoolean682 = true
+                        widgetComponent!!.anObjectArray708 = objects
+                        widgetComponent.anIntArray831 = `is`
+                    } else if (i == 1430) widgetComponent!!.anObjectArray679 = objects
+                    widgetComponent!!.aBoolean682 = true
                     return
                 }
                 return
             }
             if (i < 1600) {
-                val class46 = (if (bool) Class66.aClass46_1169 else Class66.aClass46_1150)!!
+                val class46 = (if (bool) Class66.aWidgetComponent_1169 else Class66.aWidgetComponent_1150)!!
                 if (i == 1500) {
                     anIntArray1149!![anInt1173++] = class46.anInt800
                     return
@@ -3418,7 +3418,7 @@ object Class66 {
                     return
                 }
             } else if (i < 1700) {
-                val class46 = (if (bool) Class66.aClass46_1169 else Class66.aClass46_1150)!!
+                val class46 = (if (bool) Class66.aWidgetComponent_1169 else Class66.aWidgetComponent_1150)!!
                 if (i == 1600) {
                     anIntArray1149!![anInt1173++] = class46.anInt747
                     return
@@ -3490,7 +3490,7 @@ object Class66 {
                     return
                 }
             } else if (i < 1800) {
-                val class46 = (if (bool) Class66.aClass46_1169 else Class66.aClass46_1150)!!
+                val class46 = (if (bool) Class66.aWidgetComponent_1169 else Class66.aWidgetComponent_1150)!!
                 if (i == 1700) {
                     anIntArray1149!![anInt1173++] = class46.anInt812
                     return
@@ -3507,7 +3507,7 @@ object Class66 {
                     return
                 }
             } else if (i < 1900) {
-                val class46 = (if (bool) Class66.aClass46_1169 else Class66.aClass46_1150)!!
+                val class46 = (if (bool) Class66.aWidgetComponent_1169 else Class66.aWidgetComponent_1150)!!
                 if (i == 1800) {
                     anIntArray1149!![anInt1173++] = Client.method105(class46)!!.method3307(83)
                     return
@@ -3531,17 +3531,17 @@ object Class66 {
                     return
                 }
             } else if (i < 2000 || i >= 2900 && i < 3000) {
-                val class46: Class46?
+                val widgetComponent: WidgetComponent?
                 if (i >= 2000) {
-                    class46 = method2570(1512932720, anIntArray1149!![--anInt1173])
+                    widgetComponent = method2570(1512932720, anIntArray1149!![--anInt1173])
                     i -= 1000
-                } else class46 = if (bool) aClass46_1169 else aClass46_1150
+                } else widgetComponent = if (bool) aWidgetComponent_1169 else aWidgetComponent_1150
                 if (anInt1177 >= 10) throw RuntimeException("C29xx-1")
                 if (i == 1927) {
-                    if (class46!!.anObjectArray727 != null) {
+                    if (widgetComponent!!.anObjectArray727 != null) {
                         val class348_sub36 = WidgetActionEntry()
-                        class348_sub36.aClass46_6989 = class46
-                        class348_sub36.anObjectArray6987 = class46.anObjectArray727
+                        class348_sub36.aWidgetComponent_6989 = widgetComponent
+                        class348_sub36.anObjectArray6987 = widgetComponent.anObjectArray727
                         class348_sub36.anInt6988 = anInt1177 + 1
                         HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                         return
@@ -3666,12 +3666,12 @@ object Class66 {
                 }
                 if (i == 2703) {
                     val class46 = method2570(1512932720, anIntArray1149!![--anInt1173])
-                    if (class46!!.aClass46Array798 == null) anIntArray1149!![anInt1173++] = 0
+                    if (class46!!.aWidgetComponentArray798 == null) anIntArray1149!![anInt1173++] = 0
                     else {
-                        var i_299_ = class46.aClass46Array798!!.size
+                        var i_299_ = class46.aWidgetComponentArray798!!.size
                         var i_300_ = 0
-                        while ((i_300_ < class46.aClass46Array798!!.size)) {
-                            if (class46.aClass46Array798!![i_300_] == null) {
+                        while ((i_300_ < class46.aWidgetComponentArray798!!.size)) {
+                            if (class46.aWidgetComponentArray798!![i_300_] == null) {
                                 i_299_ = i_300_
                                 break
                             }
@@ -3780,7 +3780,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_309_ = anIntArray1149!![anInt1173]
                     val i_310_ = anIntArray1149!![anInt1173 + 1]
-                    val class46 = if (bool) aClass46_1169 else aClass46_1150
+                    val class46 = if (bool) aWidgetComponent_1169 else aWidgetComponent_1150
                     MinimapRenderer.method887(class46, i_309_, i_310_, 2147483647)
                     return
                 }
@@ -5193,11 +5193,11 @@ object Class66 {
                     var i_519_ = (objects[i_518_] as Int)
                     if (i_519_ == -2147483647) i_519_ = class348_sub36.anInt6984
                     if (i_519_ == -2147483646) i_519_ = class348_sub36.anInt6995
-                    if (i_519_ == -2147483645) i_519_ = (if (class348_sub36.aClass46_6989 != null) class348_sub36.aClass46_6989!!.anInt830 else -1)
+                    if (i_519_ == -2147483645) i_519_ = (if (class348_sub36.aWidgetComponent_6989 != null) class348_sub36.aWidgetComponent_6989!!.anInt830 else -1)
                     if (i_519_ == -2147483644) i_519_ = class348_sub36.anInt6986
-                    if (i_519_ == -2147483643) i_519_ = (if (class348_sub36.aClass46_6989 != null) class348_sub36.aClass46_6989!!.anInt704 else -1)
-                    if (i_519_ == -2147483642) i_519_ = (if (class348_sub36.aClass46_6983 != null) class348_sub36.aClass46_6983!!.anInt830 else -1)
-                    if (i_519_ == -2147483641) i_519_ = (if (class348_sub36.aClass46_6983 != null) class348_sub36.aClass46_6983!!.anInt704 else -1)
+                    if (i_519_ == -2147483643) i_519_ = (if (class348_sub36.aWidgetComponent_6989 != null) class348_sub36.aWidgetComponent_6989!!.anInt704 else -1)
+                    if (i_519_ == -2147483642) i_519_ = (if (class348_sub36.aWidgetComponent_6983 != null) class348_sub36.aWidgetComponent_6983!!.anInt830 else -1)
+                    if (i_519_ == -2147483641) i_519_ = (if (class348_sub36.aWidgetComponent_6983 != null) class348_sub36.aWidgetComponent_6983!!.anInt704 else -1)
                     if (i_519_ == -2147483640) i_519_ = class348_sub36.anInt6991
                     if (i_519_ == -2147483639) i_519_ = class348_sub36.anInt6982
                     anIntArray1164!![i_516_++] = i_519_
@@ -5221,8 +5221,8 @@ object Class66 {
         anIntArray1149 = null
         aStringArray1152 = null
         aScanlineRasterFillerArray1168 = null
-        aClass46_1150 = null
-        aClass46_1169 = null
+        aWidgetComponent_1150 = null
+        aWidgetComponent_1169 = null
         aMinimapTileEntry_1151 = null
         aCalendar1160 = null
         aStringArray1176 = null
@@ -5234,13 +5234,13 @@ object Class66 {
         val class46 = method2570(1512932720, i)
         if (class46 != null) {
             val i_520_ = i ushr 16
-            var class46s = WorldMapTextLabel.aClass46ArrayArray8584!![i_520_]
+            var class46s = WorldMapTextLabel.aWidgetComponentArrayArray8584!![i_520_]
             if (class46s == null) {
-                val class46s_521_: Array<Class46?> = WarpTextureNode.aClass46ArrayArray9427!![i_520_]!!
-                val i_522_ = class46s_521_.size
-                WorldMapTextLabel.aClass46ArrayArray8584!![i_520_] = arrayOfNulls<Class46>(i_522_)
-                class46s = WorldMapTextLabel.aClass46ArrayArray8584!![i_520_]!!
-                ArrayCopyUtil.method1575(class46s_521_, 0, class46s, 0, class46s_521_.size)
+                val widgetComponentS_521_: Array<WidgetComponent?> = WarpTextureNode.aWidgetComponentArrayArray9427!![i_520_]!!
+                val i_522_ = widgetComponentS_521_.size
+                WorldMapTextLabel.aWidgetComponentArrayArray8584!![i_520_] = arrayOfNulls<WidgetComponent>(i_522_)
+                class46s = WorldMapTextLabel.aWidgetComponentArrayArray8584!![i_520_]!!
+                ArrayCopyUtil.method1575(widgetComponentS_521_, 0, class46s, 0, widgetComponentS_521_.size)
             }
             var i_523_: Int
             i_523_ = 0

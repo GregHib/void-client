@@ -12,12 +12,12 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
         var anInt6862: Int = 0
 
         @JvmStatic
-        fun method2957(i: Int, i_0_: Byte, i_1_: Int): Class46? {
+        fun method2957(i: Int, i_0_: Byte, i_1_: Int): WidgetComponent? {
             anInt6858++
             val class46 = method2570(i_0_ + 1512932774, i_1_)
             if (i == -1) return class46
-            if (class46 == null || class46.aClass46Array798 == null || (i >= class46.aClass46Array798!!.size)) return null
-            return class46.aClass46Array798!![i]
+            if (class46 == null || class46.aWidgetComponentArray798 == null || (i >= class46.aWidgetComponentArray798!!.size)) return null
+            return class46.aWidgetComponentArray798!![i]
         }
 
         fun method2958(i: Int, js5Archive: Js5Archive): Int {

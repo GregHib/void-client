@@ -790,9 +790,9 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 WallSceneEntity.method2397((-124).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i.toLong(), -6008) as RegionSceneShifter?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
-                if (Class49.aClass46_4730 != null) {
-                    ConfigFlagUtil.method1916(-9343, Class49.aClass46_4730!!)
-                    Class49.aClass46_4730 = null
+                if (Class49.aWidgetComponent_4730 != null) {
+                    ConfigFlagUtil.method1916(-9343, Class49.aWidgetComponent_4730!!)
+                    Class49.aWidgetComponent_4730 = null
                 }
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
@@ -1428,11 +1428,11 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i_184_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_185_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 WallSceneEntity.method2397((-125).toByte())
-                if (WarpTextureNode.aClass46ArrayArray9427!![i] != null) {
+                if (WarpTextureNode.aWidgetComponentArrayArray9427!![i] != null) {
                     var i_186_ = i_184_
                     while (i_185_ > i_186_) {
                         val i_187_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readMedium(-1)
-                        if ((WarpTextureNode.aClass46ArrayArray9427!![i])!!.size > i_186_ && (WarpTextureNode.aClass46ArrayArray9427!![i]!![i_186_]) != null) WarpTextureNode.aClass46ArrayArray9427!![i]!![i_186_]!!.anInt732 = i_187_
+                        if ((WarpTextureNode.aWidgetComponentArrayArray9427!![i])!!.size > i_186_ && (WarpTextureNode.aWidgetComponentArrayArray9427!![i]!![i_186_]) != null) WarpTextureNode.aWidgetComponentArrayArray9427!![i]!![i_186_]!!.anInt732 = i_187_
                         i_186_++
                     }
                 }

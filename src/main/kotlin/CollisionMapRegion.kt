@@ -162,10 +162,10 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
             aIntRange_1722 = null
         }
 
-        fun method1048(class46: Class46, i: Int) {
+        fun method1048(widgetComponent: WidgetComponent, i: Int) {
             anInt1723++
             val i_13_ = 113 % ((-25 - i) / 59)
-            val class46_14_ = WorldMapScene.method1687(class46, 3)
+            val class46_14_ = WorldMapScene.method1687(widgetComponent, 3)
             val i_15_: Int
             val i_16_: Int
             if (class46_14_ == null) {
@@ -175,8 +175,8 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
                 i_15_ = class46_14_.anInt789
                 i_16_ = class46_14_.anInt709
             }
-            method1843(i_16_, -326, class46, false, i_15_)
-            method239(((-114).toByte()).toByte(), i_16_, i_15_, class46)
+            method1843(i_16_, -326, widgetComponent, false, i_15_)
+            method239(((-114).toByte()).toByte(), i_16_, i_15_, widgetComponent)
         }
     }
 }

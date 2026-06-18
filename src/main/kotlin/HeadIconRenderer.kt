@@ -36,14 +36,14 @@ class HeadIconRenderer {
         }
 
         @JvmStatic
-        fun method1211(i: Int, abstractModelRenderer: AbstractModelRenderer?, i_2_: Int, class46: Class46?, var_sprite: Sprite?, i_3_: Int, i_4_: Int, i_5_: Int) {
+        fun method1211(i: Int, abstractModelRenderer: AbstractModelRenderer?, i_2_: Int, widgetComponent: WidgetComponent?, var_sprite: Sprite?, i_3_: Int, i_4_: Int, i_5_: Int) {
             try {
                 anInt2064++
                 if (abstractModelRenderer != null) {
                     val i_6_: Int
                     if (WeaveTextureNode.anInt9282 != 4) i_6_ = (0x3fff and ResourceProvider.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483)
                     else i_6_ = 0x3fff and ResourceProvider.aFloat3938.toInt()
-                    val i_7_ = 10 + max(class46!!.anInt709 / 2, class46.anInt789 / i_4_)
+                    val i_7_ = 10 + max(widgetComponent!!.anInt709 / 2, widgetComponent.anInt789 / i_4_)
                     val i_8_ = i_5_ * i_5_ - -(i_3_ * i_3_)
                     if (i_7_ * i_7_ >= i_8_) {
                         var i_9_ = Class70.anIntArray1207!![i_6_]
@@ -54,11 +54,11 @@ class HeadIconRenderer {
                         }
                         val i_11_ = i_5_ * i_10_ + i_3_ * i_9_ shr 14
                         val i_12_ = i_3_ * i_10_ + -(i_9_ * i_5_) shr 14
-                        abstractModelRenderer.method963((i_11_ + (class46.anInt709 / 2 + (i_2_ + -(abstractModelRenderer.method966() / 2)))), (i - -(class46.anInt789 / 2) + (-i_12_ + -(abstractModelRenderer.method980() / 2))), var_sprite, i_2_, i)
+                        abstractModelRenderer.method963((i_11_ + (widgetComponent.anInt709 / 2 + (i_2_ + -(abstractModelRenderer.method966() / 2)))), (i - -(widgetComponent.anInt789 / 2) + (-i_12_ + -(abstractModelRenderer.method980() / 2))), var_sprite, i_2_, i)
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ok.C(" + i + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ok.C(" + i + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
             }
         }
 

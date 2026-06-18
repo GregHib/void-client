@@ -174,15 +174,15 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
         }
 
         @JvmStatic
-        fun method1753(i: Int, class46: Class46): String? {
+        fun method1753(i: Int, widgetComponent: WidgetComponent): String? {
             anInt5924++
-            if (Client.method105(class46)!!.method3307(116) == 0) return null
-            if (class46.aString780 == null || class46.aString780!!.trim { it <= ' ' }.length == 0) {
+            if (Client.method105(widgetComponent)!!.method3307(116) == 0) return null
+            if (widgetComponent.aString780 == null || widgetComponent.aString780!!.trim { it <= ' ' }.length == 0) {
                 if (TextureCubeProvider.aBoolean6327) return "Hidden-use"
                 return null
             }
             if (i != 0) return null
-            return class46.aString780
+            return widgetComponent.aString780
         }
 
         @JvmStatic

@@ -266,9 +266,9 @@ object ClientLoadStateMachine {
         if (TimedTileQueueEntry.aClass56_9660 == Class56.aClass56_1040) {
             if (!TextureLoaderUtil.method2547(GlBufferObject.anInt4737, 84.toByte())) return 0
             var bool = true
-            for (i_14_ in (WarpTextureNode.aClass46ArrayArray9427!![GlBufferObject.anInt4737])!!.indices) {
-                val class46: Class46 = (WarpTextureNode.aClass46ArrayArray9427!![GlBufferObject.anInt4737]!![i_14_])!!
-                if (class46.anInt774 == 5 && class46.anInt756 != -1 && !CameraRotationStub.aJs5Archive_322!!.method420(-10499, (class46.anInt756), 0)) bool = false
+            for (i_14_ in (WarpTextureNode.aWidgetComponentArrayArray9427!![GlBufferObject.anInt4737])!!.indices) {
+                val widgetComponent: WidgetComponent = (WarpTextureNode.aWidgetComponentArrayArray9427!![GlBufferObject.anInt4737]!![i_14_])!!
+                if (widgetComponent.anInt774 == 5 && widgetComponent.anInt756 != -1 && !CameraRotationStub.aJs5Archive_322!!.method420(-10499, (widgetComponent.anInt756), 0)) bool = false
             }
             if (!bool) return 0
         }

@@ -4,7 +4,7 @@
 class WidgetActionEntry : LinkedListNode() {
     @JvmField
     var anInt6982: Int = 0
-    var aClass46_6983: Class46? = null
+    var aWidgetComponent_6983: WidgetComponent? = null
     @JvmField
     var anInt6984: Int = 0
     var anInt6986: Int = 0
@@ -12,7 +12,7 @@ class WidgetActionEntry : LinkedListNode() {
     var anObjectArray6987: Array<Any?>? = null
     var anInt6988: Int = 0
     @JvmField
-    var aClass46_6989: Class46? = null
+    var aWidgetComponent_6989: WidgetComponent? = null
     @JvmField
     var anInt6991: Int = 0
     @JvmField
@@ -23,12 +23,12 @@ class WidgetActionEntry : LinkedListNode() {
 
     companion object {
         var anInt6985: Int
-        var aClass46_6990: Class46? = null
+        var aWidgetComponent_6990: WidgetComponent? = null
         @JvmField
         var anInt6992: Int = 0
         @JvmStatic
         fun method3029(i: Int) {
-            aClass46_6990 = null
+            aWidgetComponent_6990 = null
             val i_0_ = 28 % ((i - -45) / 39)
         }
 

@@ -514,16 +514,16 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
         var anInt4065: Int = 0
 
         @JvmStatic
-        fun method2570(i: Int, i_45_: Int): Class46? {
+        fun method2570(i: Int, i_45_: Int): WidgetComponent? {
             anInt4055++
             if (i != 1512932720) return null
             val i_46_ = i_45_ shr 16
             val i_47_ = i_45_ and 0xffff
-            if (WarpTextureNode.aClass46ArrayArray9427!![i_46_] == null || (WarpTextureNode.aClass46ArrayArray9427!![i_46_]!![i_47_] == null)) {
+            if (WarpTextureNode.aWidgetComponentArrayArray9427!![i_46_] == null || (WarpTextureNode.aWidgetComponentArrayArray9427!![i_46_]!![i_47_] == null)) {
                 val bool = TextureLoaderUtil.method2547(i_46_, 84.toByte())
                 if (!bool) return null
             }
-            return WarpTextureNode.aClass46ArrayArray9427!![i_46_]!![i_47_]
+            return WarpTextureNode.aWidgetComponentArrayArray9427!![i_46_]!![i_47_]
         }
 
         @JvmStatic

@@ -192,7 +192,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
         var aMapTileShapeArray10330: Array<MapTileShape?>? = null
         var anInt10333: Int = 0
         @JvmField
-        var aClass46_10336: Class46? = null
+        var aWidgetComponent_10336: WidgetComponent? = null
         var anInt10337: Int = 0
         var anInt10340: Int = 0
         var anInt10342: Int = 0
@@ -216,7 +216,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
         var anInt10364: Int = 0
 
         fun method2461(class318_sub6: SceneEffectMarker, bool: Boolean) {
-            if (bool != true) aClass46_10336 = null
+            if (bool != true) aWidgetComponent_10336 = null
             class318_sub6.aClass318_Sub1_Sub3_Sub3_6431 = null
             anInt10361++
             if (FriendChatMember.anInt4474 < 20) {
@@ -338,7 +338,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
 
         @JvmStatic
         fun method2469(bool: Boolean) {
-            aClass46_10336 = null
+            aWidgetComponent_10336 = null
             if (bool == true) aMapTileShapeArray10330 = null
         }
     }

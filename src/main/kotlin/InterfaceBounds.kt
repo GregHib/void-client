@@ -164,24 +164,24 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             }
         }
 
-        fun method2942(class46: Class46, i: Byte) {
+        fun method2942(widgetComponent: WidgetComponent, i: Byte) {
             anInt6805++
-            if (class46.anInt765 == TextureMetadataProvider.anInt4610) {
+            if (widgetComponent.anInt765 == TextureMetadataProvider.anInt4610) {
                 if (LocalPlayerState.aPlayer_1907!!.aString10544 == null) {
-                    class46.anInt779 = 0
-                    class46.anInt753 = 0
+                    widgetComponent.anInt779 = 0
+                    widgetComponent.anInt753 = 0
                 } else {
-                    class46.anInt757 = 150
-                    class46.anInt675 = 0x7ff and (256.0 * sin((Class367_Sub11.anInt7396).toDouble() / 40.0)).toInt()
-                    class46.anInt770 = 5
-                    class46.anInt753 = CharCodeMap.anInt9591
-                    class46.anInt779 = (ModelGroundDecor.method2418((LocalPlayerState.aPlayer_1907!!.aString10544!!), (-41).toByte()))
-                    class46.anInt699 = LocalPlayerState.aPlayer_1907!!.anInt10268
-                    class46.anInt841 = 0
-                    class46.anInt730 = LocalPlayerState.aPlayer_1907!!.anInt10312
-                    class46.anInt795 = LocalPlayerState.aPlayer_1907!!.anInt10245
-                    val class17 = (if (class46.anInt699 != -1) ParticleEmitterNode.aClass87_191!!.method835(class46.anInt699, 7) else null)
-                    if (class17 != null) method2017(class46.anInt795, class17, 50)
+                    widgetComponent.anInt757 = 150
+                    widgetComponent.anInt675 = 0x7ff and (256.0 * sin((Class367_Sub11.anInt7396).toDouble() / 40.0)).toInt()
+                    widgetComponent.anInt770 = 5
+                    widgetComponent.anInt753 = CharCodeMap.anInt9591
+                    widgetComponent.anInt779 = (ModelGroundDecor.method2418((LocalPlayerState.aPlayer_1907!!.aString10544!!), (-41).toByte()))
+                    widgetComponent.anInt699 = LocalPlayerState.aPlayer_1907!!.anInt10268
+                    widgetComponent.anInt841 = 0
+                    widgetComponent.anInt730 = LocalPlayerState.aPlayer_1907!!.anInt10312
+                    widgetComponent.anInt795 = LocalPlayerState.aPlayer_1907!!.anInt10245
+                    val class17 = (if (widgetComponent.anInt699 != -1) ParticleEmitterNode.aClass87_191!!.method835(widgetComponent.anInt699, 7) else null)
+                    if (class17 != null) method2017(widgetComponent.anInt795, class17, 50)
                 }
             } else {
                 val i_10_ = -14 % ((27 - i) / 59)

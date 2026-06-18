@@ -67,10 +67,10 @@ class Class49 internal constructor(var_ha_Sub1: SoftwareRenderer?, abstractModel
         @JvmField
         var aBoolean4728: Boolean = false
         @JvmField
-        var aClass46_4730: Class46? = null
+        var aWidgetComponent_4730: WidgetComponent? = null
         @JvmStatic
         fun method453(i: Int) {
-            if (i == -2001) aClass46_4730 = null
+            if (i == -2001) aWidgetComponent_4730 = null
         }
 
         fun method454(i: Int, i_0_: Byte): Int {

@@ -44,8 +44,8 @@ class ParticleAmountConfig {
                     i_14_ = ModelVertexColorBuffer.anInt6585
                     CompletedResourceRequest.anInt10463 = 1
                 }
-                if (WorldMapTextLabel.aClass46ArrayArray8584!![i_2_] == null) method3064(i_9_, i, i_4_ < 0, i_5_, i_3_, i_4_, i_6_, false, (WarpTextureNode.aClass46ArrayArray9427!![i_2_]), -1, i_7_)
-                else method3064(i_9_, i, i_4_ < 0, i_5_, i_3_, i_4_, i_6_, false, (WorldMapTextLabel.aClass46ArrayArray8584!![i_2_]), -1, i_7_)
+                if (WorldMapTextLabel.aWidgetComponentArrayArray8584!![i_2_] == null) method3064(i_9_, i, i_4_ < 0, i_5_, i_3_, i_4_, i_6_, false, (WarpTextureNode.aWidgetComponentArrayArray9427!![i_2_]), -1, i_7_)
+                else method3064(i_9_, i, i_4_ < 0, i_5_, i_3_, i_4_, i_6_, false, (WorldMapTextLabel.aWidgetComponentArrayArray8584!![i_2_]), -1, i_7_)
                 if (i_8_ <= 58) anInt2127 = -84
                 if (Class59_Sub1.aBoolean5300) {
                     if (i_4_ >= 0 && CompletedResourceRequest.anInt10463 == 2) MapTileShape.method2663(-5590, ResourceProvider.anInt3941, ResourceProvider.anInt3939, GraphicsOptionState.anInt3142, ModelVertexColorBuffer.anInt6585)

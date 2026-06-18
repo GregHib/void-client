@@ -193,9 +193,9 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
         var anIntArray2330: IntArray? = null
 
         @JvmStatic
-        fun method1343(i: Int, class46: Class46?, i_1_: Int, i_2_: Int) {
+        fun method1343(i: Int, widgetComponent: WidgetComponent?, i_1_: Int, i_2_: Int) {
             LongHashTable.anInt451 = i
-            WidgetActionEntry.aClass46_6990 = class46
+            WidgetActionEntry.aWidgetComponent_6990 = widgetComponent
             SoundCacheState.anInt4141 = i_2_
             anInt2328++
             if (i_1_ != 1) method1349(119.toByte())

@@ -8,7 +8,7 @@ object CalendarUtil {
     var anIntArray4128: IntArray? = IntArray(5)
     var aStringArray4129: Array<String?>? = arrayOf<String?>("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
     @JvmField
-    var aClass46_4130: Class46?
+    var aWidgetComponent_4130: WidgetComponent?
     var anInt4131: Int = 0
     var anInt4132: Int = 0
     @JvmField
@@ -48,8 +48,8 @@ object CalendarUtil {
     @JvmStatic
     fun method2637(i: Int) {
         aStringArray4129 = null
-        aClass46_4130 = null
-        if (i != 0) aClass46_4130 = null
+        aWidgetComponent_4130 = null
+        if (i != 0) aWidgetComponent_4130 = null
         anIntArray4128 = null
     }
 
@@ -73,6 +73,6 @@ object CalendarUtil {
     }
 
     init {
-        aClass46_4130 = null
+        aWidgetComponent_4130 = null
     }
 }

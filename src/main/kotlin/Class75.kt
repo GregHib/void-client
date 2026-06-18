@@ -1,6 +1,6 @@
 import SpriteStore.Companion.method303
 import SoundEngineInitializer.method353
-import Class46.Companion.method424
+import WidgetComponent.Companion.method424
 import Class59_Sub2_Sub1.Companion.method566
 
 /* Class75 - Decompiled by JODE

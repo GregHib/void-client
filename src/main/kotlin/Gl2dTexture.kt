@@ -191,32 +191,32 @@ class Gl2dTexture : GlTextureBase, Interface18_Impl3 {
         var anInt8618: Int = 0
 
         @JvmStatic
-        fun method239(i: Byte, i_3_: Int, i_4_: Int, class46: Class46) {
+        fun method239(i: Byte, i_3_: Int, i_4_: Int, widgetComponent: WidgetComponent) {
             anInt8610++
-            if (class46.aByte817.toInt() != 0) {
-                if (class46.aByte817.toInt() == 1) class46.anInt800 = ((-class46.anInt709 + i_3_) / 2 + class46.anInt788)
-                else if (class46.aByte817.toInt() != 2) {
-                    if (class46.aByte817.toInt() != 3) {
-                        if (class46.aByte817.toInt() != 4) class46.anInt800 = (-class46.anInt709 + i_3_ + -(i_3_ * class46.anInt788 shr 14))
-                        else class46.anInt800 = ((-class46.anInt709 + i_3_) / 2 - -(i_3_ * class46.anInt788 shr 14))
-                    } else class46.anInt800 = i_3_ * class46.anInt788 shr 14
-                } else class46.anInt800 = (-class46.anInt788 + (-class46.anInt709 + i_3_))
-            } else class46.anInt800 = class46.anInt788
+            if (widgetComponent.aByte817.toInt() != 0) {
+                if (widgetComponent.aByte817.toInt() == 1) widgetComponent.anInt800 = ((-widgetComponent.anInt709 + i_3_) / 2 + widgetComponent.anInt788)
+                else if (widgetComponent.aByte817.toInt() != 2) {
+                    if (widgetComponent.aByte817.toInt() != 3) {
+                        if (widgetComponent.aByte817.toInt() != 4) widgetComponent.anInt800 = (-widgetComponent.anInt709 + i_3_ + -(i_3_ * widgetComponent.anInt788 shr 14))
+                        else widgetComponent.anInt800 = ((-widgetComponent.anInt709 + i_3_) / 2 - -(i_3_ * widgetComponent.anInt788 shr 14))
+                    } else widgetComponent.anInt800 = i_3_ * widgetComponent.anInt788 shr 14
+                } else widgetComponent.anInt800 = (-widgetComponent.anInt788 + (-widgetComponent.anInt709 + i_3_))
+            } else widgetComponent.anInt800 = widgetComponent.anInt788
             val i_5_ = 83 % ((i - 50) / 50)
-            if (class46.aByte681.toInt() != 0) {
-                if (class46.aByte681.toInt() == 1) class46.anInt750 = ((i_4_ + -class46.anInt789) / 2 - -class46.anInt739)
-                else if (class46.aByte681.toInt() == 2) class46.anInt750 = (i_4_ - class46.anInt789 - class46.anInt739)
-                else if (class46.aByte681.toInt() != 3) {
-                    if (class46.aByte681.toInt() != 4) class46.anInt750 = (-(i_4_ * class46.anInt739 shr 14) + (i_4_ + -class46.anInt789))
-                    else class46.anInt750 = ((i_4_ * class46.anInt739 shr 14) + (-class46.anInt789 + i_4_) / 2)
-                } else class46.anInt750 = class46.anInt739 * i_4_ shr 14
-            } else class46.anInt750 = class46.anInt739
-            if (TextureCubeProvider.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0)) {
-                if (class46.anInt750 < 0) class46.anInt750 = 0
-                else if (i_4_ < (class46.anInt789 + class46.anInt750)) class46.anInt750 = i_4_ - class46.anInt789
-                if (class46.anInt800 >= 0) {
-                    if (i_3_ < (class46.anInt800 - -class46.anInt709)) class46.anInt800 = i_3_ + -class46.anInt709
-                } else class46.anInt800 = 0
+            if (widgetComponent.aByte681.toInt() != 0) {
+                if (widgetComponent.aByte681.toInt() == 1) widgetComponent.anInt750 = ((i_4_ + -widgetComponent.anInt789) / 2 - -widgetComponent.anInt739)
+                else if (widgetComponent.aByte681.toInt() == 2) widgetComponent.anInt750 = (i_4_ - widgetComponent.anInt789 - widgetComponent.anInt739)
+                else if (widgetComponent.aByte681.toInt() != 3) {
+                    if (widgetComponent.aByte681.toInt() != 4) widgetComponent.anInt750 = (-(i_4_ * widgetComponent.anInt739 shr 14) + (i_4_ + -widgetComponent.anInt789))
+                    else widgetComponent.anInt750 = ((i_4_ * widgetComponent.anInt739 shr 14) + (-widgetComponent.anInt789 + i_4_) / 2)
+                } else widgetComponent.anInt750 = widgetComponent.anInt739 * i_4_ shr 14
+            } else widgetComponent.anInt750 = widgetComponent.anInt739
+            if (TextureCubeProvider.aBoolean6327 && (Client.method105(widgetComponent)!!.anInt7098 != 0 || widgetComponent.anInt774 == 0)) {
+                if (widgetComponent.anInt750 < 0) widgetComponent.anInt750 = 0
+                else if (i_4_ < (widgetComponent.anInt789 + widgetComponent.anInt750)) widgetComponent.anInt750 = i_4_ - widgetComponent.anInt789
+                if (widgetComponent.anInt800 >= 0) {
+                    if (i_3_ < (widgetComponent.anInt800 - -widgetComponent.anInt709)) widgetComponent.anInt800 = i_3_ + -widgetComponent.anInt709
+                } else widgetComponent.anInt800 = 0
             }
         }
 

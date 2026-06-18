@@ -349,20 +349,20 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         var anInt288: Int = 0
         @JvmField
         var anInt291: Int = 0
-        fun method271(i: Int, class46: Class46, i_0_: Byte, i_1_: Int) {
+        fun method271(i: Int, widgetComponent: WidgetComponent, i_0_: Byte, i_1_: Int) {
             anInt278++
-            val var_aa = class46.method425(FacingDirectionNode.aRenderer6654!!, 19.toByte())
+            val var_aa = widgetComponent.method425(FacingDirectionNode.aRenderer6654!!, 19.toByte())
             if (var_aa != null) {
-                FacingDirectionNode.aRenderer6654!!.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789)
+                FacingDirectionNode.aRenderer6654!!.KA(i_1_, i, widgetComponent.anInt709 + i_1_, i - -widgetComponent.anInt789)
                 if (KeyboardLayoutCache.anInt3306 >= 3) FacingDirectionNode.aRenderer6654!!.A(-16777216, var_aa, i_1_, i)
-                else Class79.aAbstractModelRenderer_1365!!.method976((class46.anInt709.toFloat() / 2.0f + i_1_.toFloat()), i.toFloat() + class46.anInt789.toFloat() / 2.0f, 4096, (0x3fff and -ResourceProvider.aFloat3938.toInt()) shl 2, var_aa, i_1_, i)
+                else Class79.aAbstractModelRenderer_1365!!.method976((widgetComponent.anInt709.toFloat() / 2.0f + i_1_.toFloat()), i.toFloat() + widgetComponent.anInt789.toFloat() / 2.0f, 4096, (0x3fff and -ResourceProvider.aFloat3938.toInt()) shl 2, var_aa, i_1_, i)
             }
         }
 
         @JvmStatic
-        fun method273(class46: Class46, i: Int) {
+        fun method273(widgetComponent: WidgetComponent, i: Int) {
             anInt288++
-            if (class46.anInt774 == 5 && class46.anInt812 != -1) method2383(FacingDirectionNode.aRenderer6654, -2, class46)
+            if (widgetComponent.anInt774 == 5 && widgetComponent.anInt812 != -1) method2383(FacingDirectionNode.aRenderer6654, -2, widgetComponent)
         }
 
         @JvmStatic
