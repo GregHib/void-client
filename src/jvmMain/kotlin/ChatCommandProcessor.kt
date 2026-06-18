@@ -1072,8 +1072,8 @@ object ChatCommandProcessor {
                 CameraRotationStub.aJs5Archive_322!!.method421(false, SkyboxGradient.anInt3937)
                 CameraRotationStub.aJs5Archive_322!!.method421(false, NpcType.anInt1387)
                 SpotAnimVector.aAbstractModelRenderer_2309 = null
-                AbstractMenuEntry.aAbstractModelRenderer_1706 = SpotAnimVector.aAbstractModelRenderer_2309
-                TimedTileQueueEntry.aAbstractModelRenderer_9659 = AbstractMenuEntry.aAbstractModelRenderer_1706
+                AbstractMenuEntryStatics.aAbstractModelRenderer_1706 = SpotAnimVector.aAbstractModelRenderer_2309
+                TimedTileQueueEntry.aAbstractModelRenderer_9659 = AbstractMenuEntryStatics.aAbstractModelRenderer_1706
                 AbstractBloomEffect.aAbstractModelRenderer_6627 = null
                 MinimapFlagRenderer.aAbstractModelRenderer_1800 = AbstractBloomEffect.aAbstractModelRenderer_6627
                 ChatMessageStream.aAbstractModelRenderer_106 = MinimapFlagRenderer.aAbstractModelRenderer_1800
@@ -1827,8 +1827,8 @@ object ChatCommandProcessor {
         } else if (i < 6300) {
             if (i == 6200) {
                 anInt1173 -= 2
-                AbstractMenuEntry.aShort1700 = anIntArray1149!![anInt1173].toShort()
-                if (AbstractMenuEntry.aShort1700 <= 0) AbstractMenuEntry.aShort1700 = 256.toShort()
+                AbstractMenuEntryStatics.aShort1700 = anIntArray1149!![anInt1173].toShort()
+                if (AbstractMenuEntryStatics.aShort1700 <= 0) AbstractMenuEntryStatics.aShort1700 = 256.toShort()
                 HeapDiagnosticsHolder.aShort2250 = anIntArray1149!![anInt1173 + 1].toShort()
                 if (HeapDiagnosticsHolder.aShort2250 <= 0) HeapDiagnosticsHolder.aShort2250 = 205.toShort()
                 return
@@ -1870,7 +1870,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 6205) {
-                anIntArray1149!![anInt1173++] = AbstractMenuEntry.aShort1700.toInt()
+                anIntArray1149!![anInt1173++] = AbstractMenuEntryStatics.aShort1700.toInt()
                 anIntArray1149!![anInt1173++] = HeapDiagnosticsHolder.aShort2250.toInt()
                 return
             }

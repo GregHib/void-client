@@ -98,7 +98,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 BasicGlRenderPass.aIntRange_7301,
                 CollisionMap.aIntRange_4433,
                 SequencedWallEntity.aIntRange_10149,
-                AbstractMenuEntry.aIntRange_1702,
+                AbstractMenuEntryStatics.aIntRange_1702,
                 HeapDiagnosticsHolder.aIntRange_2248,
                 FogOptionState.aIntRange_6056,
                 WidgetRedrawTracker.aIntRange_3925,

@@ -65,7 +65,7 @@ class WidgetRedrawTracker {
                 RadialTextureNode.anInt9341 = 0
                 SineWaveTextureNode.aIntRange_9456 = null
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                AbstractGameSocket.aIntRange_3133 = null
+                AbstractGameSocketStatics.aIntRange_3133 = null
                 GraphicsOptionState.aIntRange_3145 = null
                 StringCacheNode.anInt7213 = 0
                 ModelVertexColorBuffer.aIntRange_6584 = null

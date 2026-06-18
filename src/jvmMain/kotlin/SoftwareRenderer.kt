@@ -834,7 +834,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     override fun method3643(canvas: Canvas?, i: Int, i_232_: Int) {
         var class348_sub31 = (aHashtable_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
         if (class348_sub31 == null) {
-            class348_sub31 = AbstractMenuEntry.method1035(9029, i_232_, canvas, i)
+            class348_sub31 = method1035(9029, i_232_, canvas, i)
             aHashtable_7467!!.method3483(21.toByte(), canvas.hashCode().toLong(), class348_sub31)
         } else if (class348_sub31.anInt6917 != i || class348_sub31.anInt6920 != i_232_) method3669(canvas, i, i_232_)
     }
@@ -2072,7 +2072,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         var class348_sub31 = (aHashtable_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
         if (class348_sub31 != null) {
             class348_sub31.method2715(95.toByte())
-            class348_sub31 = AbstractMenuEntry.method1035(9029, i_578_, canvas, i)!!
+            class348_sub31 = method1035(9029, i_578_, canvas, i)!!
             aHashtable_7467!!.method3483(112.toByte(), canvas.hashCode().toLong(), class348_sub31)
             if (aCanvas7468 === canvas && aSpriteRenderable_7475 == null) {
                 val dimension = canvas!!.getSize()
@@ -2438,5 +2438,23 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
 
     fun method3727(i: Int): Boolean {
         return aBoolean7489 || this.aRenderConfig4579!!.method3(i, -6662)!!.aBoolean199
+    }
+    
+    companion object {
+        var anInt1705: Int = 0
+
+        fun method1035(i: Int, i_16_: Int, canvas: Canvas?, i_17_: Int): AbstractFrameBufferSurface? {
+            anInt1705++
+            if (i != 9029) return null
+            try {
+                val class348_sub31: AbstractFrameBufferSurface = BufferedImageSurface()
+                class348_sub31.method3008(canvas, i_17_, -90, i_16_)
+                return class348_sub31
+            } catch (throwable: Throwable) {
+                val class348_sub31_sub2 = ProducerImageSurface()
+                class348_sub31_sub2.method3008(canvas, i_17_, -128, i_16_)
+                return class348_sub31_sub2
+            }
+        }
     }
 }

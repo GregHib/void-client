@@ -44,8 +44,8 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                 RegionSceneLoader.anInt3699--
             }
             anInt6874++
-            if (AbstractMenuEntry.aBoolean1712) {
-                AbstractMenuEntry.aBoolean1712 = false
+            if (AbstractMenuEntryStatics.aBoolean1712) {
+                AbstractMenuEntryStatics.aBoolean1712 = false
                 method2049(67)
             } else {
                 if (!ScrollbarComponent.aBoolean8335) method661(95.toByte())

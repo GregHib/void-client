@@ -220,7 +220,7 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
             AbstractBloomEffect.aAbstractModelRenderer_6627 = null
             ChatMessageStream.aAbstractModelRenderer_106 = null
             ConfigVarProgress.aAbstractModelRenderer_4808 = null
-            AbstractMenuEntry.aAbstractModelRenderer_1706 = null
+            AbstractMenuEntryStatics.aAbstractModelRenderer_1706 = null
         }
 
         fun method2062(i: Byte) {

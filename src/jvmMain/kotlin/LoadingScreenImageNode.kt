@@ -40,7 +40,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             var i_4_ = i_3_ - 334
             if (i_4_ < 0) i_4_ = 0
             else if (i_4_ > 100) i_4_ = 100
-            var i_5_ = ((-AbstractMenuEntry.aShort1700 + HeapDiagnosticsHolder.aShort2250) * i_4_ / 100 + AbstractMenuEntry.aShort1700)
+            var i_5_ = ((-AbstractMenuEntryStatics.aShort1700 + HeapDiagnosticsHolder.aShort2250) * i_4_ / 100 + AbstractMenuEntryStatics.aShort1700)
             if (i_5_ < CacheEntryReference.aShort9555) i_5_ = CacheEntryReference.aShort9555.toInt()
             else if (ColourAdjustment.aShort851 < i_5_) i_5_ = ColourAdjustment.aShort851.toInt()
             var i_6_ = 512 * i_5_ * i_3_ / (i_1_ * 334)

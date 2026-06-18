@@ -1,4 +1,3 @@
-import AbstractMenuEntry.Companion.method1032
 import java.util.*
 import kotlin.math.max
 
@@ -270,7 +269,7 @@ class DisplaySettingsConfig : LinkedListNode {
 
     fun method3427(i: Int): ByteBuffer {
         anInt7237++
-        val class348_sub49 = ByteBuffer(method1032(i xor 0x18.inv()))
+        val class348_sub49 = ByteBuffer(AbstractMenuEntryStatics.method1032(i xor 0x18.inv()))
         class348_sub49.writeByte(false, i)
         class348_sub49.writeByte(false, this.aClass239_Sub20_7216!!.method1808(-32350))
         class348_sub49.writeByte(false, this.aClass239_Sub12_7243!!.method1771(-32350))

@@ -14,7 +14,6 @@ import DualMaterialContainer.Companion.method999
 import LinkedNodeListIterator.Companion.method1004
 import GroundItemRenderState.method1013
 import SceneRegionState.method221
-import AbstractMenuEntry.Companion.method1030
 import MapLabelMenuEntry.Companion.method1040
 import CollisionMapRegion.Companion.method1047
 import CameraNodeList.Companion.method1057
@@ -759,7 +758,7 @@ class Client : GameAppletFrame() {
         method1585(-1)
         method1624(28962)
         method3473(12949)
-        AbstractGameSocket.method1704((-95).toByte())
+        AbstractGameSocketStatics.method1704((-95).toByte())
         method782(1)
         method3414(21515)
         HostPingThread.method1300((-128).toByte())
@@ -1004,7 +1003,7 @@ class Client : GameAppletFrame() {
         InterfaceBounds.method2936((-25).toByte())
         method3028(-11677)
         method3418(114)
-        method1030(-24)
+        AbstractMenuEntryStatics.method1030(-24)
         method2113(74.toByte())
         method3300(0)
         method1493()

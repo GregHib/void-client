@@ -170,7 +170,7 @@ class MapSceneCache internal constructor(sceneProjector: SceneProjector?, i: Int
                 val spriteImage_29_ = SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, NpcType.Companion.anInt1387, 0)
                 TimedTileQueueEntry.aAbstractModelRenderer_9659 = var_renderer.method3691(spriteImage_29_, true)
                 spriteImage_29_!!.method1518()
-                AbstractMenuEntry.aAbstractModelRenderer_1706 = var_renderer.method3691(spriteImage_29_, true)
+                AbstractMenuEntryStatics.aAbstractModelRenderer_1706 = var_renderer.method3691(spriteImage_29_, true)
             }
             anInt1454++
             if (SpotAnimVector.aAbstractModelRenderer_2309 != null && TimedTileQueueEntry.aAbstractModelRenderer_9658 != null && TimedTileQueueEntry.aAbstractModelRenderer_9659 != null) {
@@ -182,7 +182,7 @@ class MapSceneCache internal constructor(sceneProjector: SceneProjector?, i: Int
                     ConfigVarProgress.aAbstractModelRenderer_4808!!.method974(-ConfigVarProgress.aAbstractModelRenderer_4808!!.method971() + i_25_ + i_24_, (TimedTileQueueEntry.aAbstractModelRenderer_9658!!.method969() * i_33_ + i + i_28_))
                 }
                 TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method974(i_24_, (-TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method969() + i_28_ + i_26_))
-                AbstractMenuEntry.aAbstractModelRenderer_1706!!.method974(i_24_ + (i_25_ + -TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method971()), i_28_ - (-i_26_ + TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method969()))
+                AbstractMenuEntryStatics.aAbstractModelRenderer_1706!!.method974(i_24_ + (i_25_ + -TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method971()), i_28_ - (-i_26_ + TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method969()))
             }
             val i_34_ = -24 % ((i_27_ - 85) / 35)
         }

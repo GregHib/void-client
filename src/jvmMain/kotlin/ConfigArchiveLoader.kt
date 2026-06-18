@@ -170,7 +170,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             method94("Dropped client connection", -119)
                             if (WorldMapRenderer.anInt4674 == 10) method2049(105)
                             else {
-                                if (WorldMapRenderer.anInt4674 == 11) AbstractMenuEntry.aBoolean1712 = true
+                                if (WorldMapRenderer.anInt4674 == 11) AbstractMenuEntryStatics.aBoolean1712 = true
                                 return
                             }
                             return

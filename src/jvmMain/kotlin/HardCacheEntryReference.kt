@@ -1,7 +1,5 @@
 import GameAppletFrame.Companion.method94
 import GameAppletFrame.Companion.set
-import AbstractMenuEntry.Companion.method1034
-import AbstractGameSocket.Companion.method1703
 import GraphicsOptionState.Companion.method1713
 import ShadowQualityOptionState.Companion.method1788
 import NoOpGraphicsOptionState.Companion.method1803
@@ -112,8 +110,8 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 StringCacheNode.anInt7213 = 0
             }
             SineWaveTextureNode.aIntRange_9456 = GraphicsOptionState.aIntRange_3145
-            GraphicsOptionState.aIntRange_3145 = AbstractGameSocket.aIntRange_3133
-            AbstractGameSocket.aIntRange_3133 = ModelVertexColorBuffer.aIntRange_6584
+            GraphicsOptionState.aIntRange_3145 = AbstractGameSocketStatics.aIntRange_3133
+            AbstractGameSocketStatics.aIntRange_3133 = ModelVertexColorBuffer.aIntRange_6584
             if (IOException_Sub1.aIntRange_90 == ModelVertexColorBuffer.aIntRange_6584) {
                 MinimapTileEntry.method382(CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(118.toByte()), true)
                 ModelVertexColorBuffer.aIntRange_6584 = null
@@ -209,7 +207,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i_13_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(10)
                 val i_14_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 WallSceneEntity.method2397((-127).toByte())
-                method1703(7, i, i_13_ shl 16 or i_14_, 4, i_12_)
+                AbstractGameSocketStatics.method1703(7, i, i_13_ shl 16 or i_14_, 4, i_12_)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -227,7 +225,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             if (ModelVertexColorBuffer.aIntRange_6584 == ObjectByteSerializerHolder.aIntRange_2285) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 WallSceneEntity.method2397((-124).toByte())
-                method1703(3, i, -1, 4, -1)
+                AbstractGameSocketStatics.method1703(3, i, -1, 4, -1)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -708,7 +706,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             if (ModelVertexColorBuffer.aIntRange_6584 == ProjectileDefinition.aIntRange_3842) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 WallSceneEntity.method2397((-128).toByte())
-                method1703(5, i, CharCodeMap.anInt9591, 4, 0)
+                AbstractGameSocketStatics.method1703(5, i, CharCodeMap.anInt9591, 4, 0)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -781,7 +779,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 var i_89_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
                 if (i_89_ == 65535) i_89_ = -1
                 WallSceneEntity.method2397((-126).toByte())
-                method1703(2, i, i_89_, 4, -1)
+                AbstractGameSocketStatics.method1703(2, i, i_89_, 4, -1)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -914,7 +912,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return false
             }
             if (SlotBinding.aIntRange_3427 == ModelVertexColorBuffer.aIntRange_6584) {
-                method1034(RadialTextureNode.anInt9341, CircleRasterizer.aClass348_Sub49_Sub2_3813, VorbisOggDecoder.aPrivilegedOperationWorker_8992, 110)
+                AbstractMenuEntryStatics.method1034(RadialTextureNode.anInt9341, CircleRasterizer.aClass348_Sub49_Sub2_3813, VorbisOggDecoder.aPrivilegedOperationWorker_8992, 110)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1170,7 +1168,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 MapAreaDefinition.anInt2523 = ResourceLoaderThread.anInt3918
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == AbstractMenuEntry.aIntRange_1702) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == AbstractMenuEntryStatics.aIntRange_1702) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
                 val i_143_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 WallSceneEntity.method2397((-126).toByte())
@@ -1522,7 +1520,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i_199_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_200_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 WallSceneEntity.method2397((-126).toByte())
-                method1703(5, i, i_200_, 4, i_199_)
+                AbstractGameSocketStatics.method1703(5, i, i_200_, 4, i_199_)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1579,7 +1577,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 if (i == 65535) i = -1
                 val i_207_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 WallSceneEntity.method2397((-125).toByte())
-                method1703(1, i_207_, i, 4, -1)
+                AbstractGameSocketStatics.method1703(1, i_207_, i, 4, -1)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }

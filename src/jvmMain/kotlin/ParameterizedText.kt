@@ -166,7 +166,7 @@ class ParameterizedText : HashLinkedListNode() {
             GraphicsOptionState.aIntRange_3145 = null
             CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
             val i_3_ = -122 % ((i - 13) / 45)
-            AbstractGameSocket.aIntRange_3133 = null
+            AbstractGameSocketStatics.aIntRange_3133 = null
             method2296(-99)
             HslAdjustTextureNode.anInt9383 = 0
             MinimapShapeDrawer.aString863 = null

@@ -35,7 +35,7 @@ object LocalPlayerState {
                     SceneTileBounds.anInt1121 = 0
                     ConfigShortValueNode.anInt9541 = -1
                 }
-                AbstractMenuEntry.aBoolean1712 = false
+                AbstractMenuEntryStatics.aBoolean1712 = false
                 GlRectangleTexture.method254(-3, (-94).toByte())
                 NpcDefinition.anInt2955 = 1
                 SceneRegionState.anInt197 = 0
