@@ -203,9 +203,9 @@ class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, js5Arc
                             NpcReference.anInt6857 -= insets.bottom + insets.top
                         }
                         if (ContactEntry.method3229(-86) == 1) {
-                            LocTypeDefinition.anInt4017 = Class92.anInt1524
+                            LocTypeDefinition.anInt4017 = NpcSpawnDecoder.anInt1524
                             TimingCounters.anInt4167 = 0
-                            ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 - Class92.anInt1524) / 2
+                            ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 - NpcSpawnDecoder.anInt1524) / 2
                             HardCacheEntryReference.anInt10432 = OpenGlRenderer.anInt7666
                         } else method2158(56.toByte())
                         if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) {

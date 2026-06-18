@@ -15,7 +15,7 @@ object CacheStateResetter {
         WidgetDefinition.anInterface4_252 = null
         RenderNode.aAbstractCameraTransform_9720 = null
         LocalPlayerState.anIntArray1909 = null
-        Class92.anInterface4Array1525 = null
+        NpcSpawnDecoder.anInterface4Array1525 = null
         CameraRotationStub.aRenderer326 = null
         MapSceneRenderer.aAbstractCameraTransform_624 = null
         anInt124++

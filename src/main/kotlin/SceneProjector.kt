@@ -240,7 +240,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                             while ((ItemModelDefinition.anInt425 > i_67_)) {
                                                 val i_68_ = ((ModelTransformParams.method3452(i_67_ + (SceneryDetailOptionState.anInt6095), (-15).toByte(), ItemModelDefinition.anInt425)) + i_66_)
                                                 val bool_69_ = (((i_38_ <= i_65_) && i_39_ + i_38_ > i_65_) || (i_65_ >= i_41_ && (i_65_ < i_41_ - -i_47_) && i_67_ >= i_40_ && (i_40_ - -i_42_ > i_67_)))
-                                                Class92.anInterface4Array1525!![i_68_]!!.method15(DirectionPath.anInt1067 * i_67_, i_65_ * ByteStore.anInt4267, DirectionPath.anInt1067, ByteStore.anInt4267, 0, 0, bool_69_, true)
+                                                NpcSpawnDecoder.anInterface4Array1525!![i_68_]!!.method15(DirectionPath.anInt1067 * i_67_, i_65_ * ByteStore.anInt4267, DirectionPath.anInt1067, ByteStore.anInt4267, 0, 0, bool_69_, true)
                                                 i_67_++
                                             }
                                         }

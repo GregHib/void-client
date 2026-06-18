@@ -203,7 +203,7 @@ class Player : ProjectedGroundDecor() {
             this.anInt10560 = class348_sub49.readUnsignedShort(842397944)
             this.anInt10519 = class348_sub49.readUnsignedShort(842397944)
             this.anInt10558 = class348_sub49.readUnsignedByte(i.toInt() xor 0xab)
-            if (!this.aBoolean10517 != !bool || this.anInt10553 != i_23_ || i_24_ != this.anInt10535 || i_25_ != this.anInt10526 || (this.anInt10560 != i_26_) || this.anInt10519 != i_27_ || i_28_ != this.anInt10558) Class92.method858(true, this)
+            if (!this.aBoolean10517 != !bool || this.anInt10553 != i_23_ || i_24_ != this.anInt10535 || i_25_ != this.anInt10526 || (this.anInt10560 != i_26_) || this.anInt10519 != i_27_ || i_28_ != this.anInt10558) NpcSpawnDecoder.method858(true, this)
         }
         if (this.aCompositeNpcModelBuilder_10536 == null) this.aCompositeNpcModelBuilder_10536 = CompositeNpcModelBuilder()
         val i_29_ = (this.aCompositeNpcModelBuilder_10536!!.anInt2093)

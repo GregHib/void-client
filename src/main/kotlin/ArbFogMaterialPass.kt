@@ -20,8 +20,8 @@ class ArbFogMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Mat
             val class101_sub3 = (this.aHa_Sub2_3684.aClass101_Sub3_7766)
             if (!aBoolean6197) glBindProgramARB(34336, (if (this.aHa_Sub2_3684.anInt7788 == 2147483647) aRefCountedHandle_6188!!.anInt2270 else aRefCountedHandle_6199!!.anInt2270))
             else glBindProgramARB(34336, (if (this.aHa_Sub2_3684.anInt7788 != 2147483647) aRefCountedHandle_6187!!.anInt2270 else aRefCountedHandle_6196!!.anInt2270))
-            class101_sub3.method937(true, 0.0f, 0.0f, -1.0f, (this.aHa_Sub2_3684.anInt7788).toFloat(), Class92.aFloatArray1528!!)
-            glProgramLocalParameter4fARB(34336, 1, Class92.aFloatArray1528!![0], Class92.aFloatArray1528!![1], Class92.aFloatArray1528!![2], Class92.aFloatArray1528!![3])
+            class101_sub3.method937(true, 0.0f, 0.0f, -1.0f, (this.aHa_Sub2_3684.anInt7788).toFloat(), NpcSpawnDecoder.aFloatArray1528!!)
+            glProgramLocalParameter4fARB(34336, 1, NpcSpawnDecoder.aFloatArray1528!![0], NpcSpawnDecoder.aFloatArray1528!![1], NpcSpawnDecoder.aFloatArray1528!![2], NpcSpawnDecoder.aFloatArray1528!![3])
             glEnable(34336)
             aBoolean6193 = true
             method2143(34336)

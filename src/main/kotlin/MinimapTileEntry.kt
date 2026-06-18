@@ -67,7 +67,7 @@ class MinimapTileEntry {
                 var i_5_ = 0
                 while (ItemModelDefinition.anInt425 > i_5_) {
                     val i_6_ = (ModelTransformParams.method3452(i_5_ - -SceneryDetailOptionState.anInt6095, (-15).toByte(), ItemModelDefinition.anInt425) + i_4_)
-                    if (LocalPlayerState.anIntArray1909!![i_6_] == GroundDecorSceneEntity.anInt9997) Class92.anInterface4Array1525!![i_6_]!!.method14(0, 0, DirectionPath.anInt1067, ByteStore.anInt4267, i_5_ * DirectionPath.anInt1067, ByteStore.anInt4267 * i_3_, true, true)
+                    if (LocalPlayerState.anIntArray1909!![i_6_] == GroundDecorSceneEntity.anInt9997) NpcSpawnDecoder.anInterface4Array1525!![i_6_]!!.method14(0, 0, DirectionPath.anInt1067, ByteStore.anInt4267, i_5_ * DirectionPath.anInt1067, ByteStore.anInt4267 * i_3_, true, true)
                     i_5_++
                 }
                 i_3_++

@@ -9,7 +9,7 @@ class TooltipComponentRenderer internal constructor(js5Archive: Js5Archive?, js5
 
     override fun method9(i: Byte, bool: Boolean) {
         if (bool) {
-            val i_0_ = ((aHeapInfoRecord_4646!!.aScreenAnchorAlignment_4948!!.method1607(Class92.anInt1524, aHeapInfoRecord_4646.anInt4931, (-119).toByte())) + aHeapInfoRecord_4646.anInt4947)
+            val i_0_ = ((aHeapInfoRecord_4646!!.aScreenAnchorAlignment_4948!!.method1607(NpcSpawnDecoder.anInt1524, aHeapInfoRecord_4646.anInt4931, (-119).toByte())) + aHeapInfoRecord_4646.anInt4947)
             val i_1_ = ((aHeapInfoRecord_4646.aTileRenderState_4945!!.method2679(OpenGlRenderer.anInt7666, aHeapInfoRecord_4646.anInt4936, i + 1644)) + aHeapInfoRecord_4646.anInt4932)
             aFont_4649!!.method2584(null, aHeapInfoRecord_4646.anInt4937, aHeapInfoRecord_4646.anInt4940, null, aHeapInfoRecord_4646.anInt4935, aHeapInfoRecord_4646.anInt4946, aHeapInfoRecord_4646.anInt4936, null, i_1_, 0, 0, aHeapInfoRecord_4646.anInt4931, i_0_, false, aHeapInfoRecord_4646.anInt4943, aHeapInfoRecord_4646.aString4942)
         }

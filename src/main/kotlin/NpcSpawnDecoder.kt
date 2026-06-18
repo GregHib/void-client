@@ -1,7 +1,7 @@
 /* Class92 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class92 {
+object NpcSpawnDecoder {
     @JvmField
     var anInt1524: Int = 765
     @JvmField

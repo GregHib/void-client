@@ -354,7 +354,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DirectionPath.anInt1056 = 0
             OpenGlModel.anInt5532 = 0
             ParticleSystemState.anInt2194 = 0
-            Class92.anInt1526 = 0
+            NpcSpawnDecoder.anInt1526 = 0
             ArchiveResourceProvider.anInt6366 = 0
             AbstractTileShape.anInt6556 = 0
             Buffer.anInt7194 = 0
@@ -3526,7 +3526,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CubemapTextureGlSource.anInt8700 = 0
             ModelDefinitionLoader.anInt2056 = 0
             NativeShaderProgram.anInt9772 = 0
-            Class92.anInt1527 = 0
+            NpcSpawnDecoder.anInt1527 = 0
             FogOptionState.anInt6049 = 0
             SizeBoundedSoftCache.anInt2317 = 0
             WidgetTextConfig.anInt511 = 0

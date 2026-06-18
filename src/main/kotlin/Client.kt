@@ -508,7 +508,7 @@ import NativeBufferHandle.Companion.method851
 import Class9.method216
 import RegionMapDecoder.method852
 import NpcUpdateProcessor.method857
-import Class92.method860
+import NpcSpawnDecoder.method860
 import Class93.method861
 import Class94.method866
 import Class94.method867
@@ -1392,13 +1392,13 @@ class Client : GameAppletFrame() {
             if (Gl2dTexture.aString8605 != null && Gl2dTexture.aString8605!!.length > 50) Gl2dTexture.aString8605 = null
             if (ParticleEmitterNode.aSceneProjector_186 == HardCacheEntryReference.aSceneProjector_10434) {
                 OpenGlRenderer.anInt7666 = 503
-                Class92.anInt1524 = 765
+                NpcSpawnDecoder.anInt1524 = 765
             } else if (HardCacheEntryReference.aSceneProjector_10434 == GlRectangleTexture.aSceneProjector_8638) {
-                Class92.anInt1524 = 640
+                NpcSpawnDecoder.anInt1524 = 640
                 OpenGlRenderer.anInt7666 = 480
             }
             NpcType.aClient1367 = this
-            this.method95(Class92.anInt1524, 634, OpenGlRenderer.anInt7666, SceneRegionState.aHudTabPanel_196!!.method1640(0) + 32, 37, HardCacheEntryReference.aSceneProjector_10434!!.aString2985, 50)
+            this.method95(NpcSpawnDecoder.anInt1524, 634, OpenGlRenderer.anInt7666, SceneRegionState.aHudTabPanel_196!!.method1640(0) + 32, 37, HardCacheEntryReference.aSceneProjector_10434!!.aString2985, 50)
         }
     }
 

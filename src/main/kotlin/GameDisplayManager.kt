@@ -52,9 +52,9 @@ object GameDisplayManager {
                 container = RsaVarbitHandler.aFrame4904
             }
             if (i_2_ == 1) {
-                LocTypeDefinition.anInt4017 = Class92.anInt1524
+                LocTypeDefinition.anInt4017 = NpcSpawnDecoder.anInt1524
                 HardCacheEntryReference.anInt10432 = OpenGlRenderer.anInt7666
-                ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 + -Class92.anInt1524) / 2
+                ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 + -NpcSpawnDecoder.anInt1524) / 2
                 TimingCounters.anInt4167 = 0
             } else method2158(56.toByte())
             if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) {

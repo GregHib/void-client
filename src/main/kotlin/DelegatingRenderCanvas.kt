@@ -287,7 +287,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (WidgetRedrawTracker.anInt3931 == 0) {
                         RegionSceneLoader.method2193(true, (-128).toByte())
                         ObjectSpawnDecoder.method1090(GlRectangleTexture.aByteArrayArray8642, i + 65536, MapTileShape.aClass237_Sub1_4197)
-                        if (StringCacheNode.aByteArrayArray7212 != null) Class92.method859(i xor 0x7e.inv())
+                        if (StringCacheNode.aByteArrayArray7212 != null) NpcSpawnDecoder.method859(i xor 0x7e.inv())
                     } else {
                         RegionSceneLoader.method2193(true, (-121).toByte())
                         ProjectionCameraTransform.method944(i + -8212, GlRectangleTexture.aByteArrayArray8642, MapTileShape.aClass237_Sub1_4197)
