@@ -668,7 +668,7 @@
 "Class85","WhirlpoolHash","Instance has block buffers and 8-long state, processes 512-bit blocks","Whirlpool digest: update and finalize"
 "Class86","DrawListState","Static-only counters and float for draw/render bookkeeping","Instance has no members"
 "Class87","WidgetCache","Instance caches Class17 widgets and Class348_Sub42_Sub17 in two Class60 LRUs","Loads widget defs from Class45 archive on miss"
-"Class88","NodeDeque","Instance is circular doubly-linked list of Class318_Sub9 with sentinel head","Insert-head, size, clear, cursor iteration; embedded in Class98"
+"Class88",SceneNodeDeque,"Instance is circular doubly-linked list of Class318_Sub9 with sentinel head","Insert-head, size, clear, cursor iteration; embedded in Class98"
 "Class89","NativeBufferHandle","Instance holds Class377 toolkit and long native pointer; finalize frees it","GL/native resource wrapper releasing aLong1510 on finalize"
 "Class90","RegionMapDecoder","Instance decodes region map header and tile/landscape keys from stream","method853 parses region grid and queues map file loads"
 "Class91","NpcUpdateProcessor","Static-only state; method856 processes NPC update packet block","Instance has no members; npc add/remove/sync from stream"
