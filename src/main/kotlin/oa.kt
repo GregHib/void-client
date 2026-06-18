@@ -60,9 +60,9 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         return true
     }
 
-    override fun method3685(class98: Class98, i: Int) {
-        method3975(class98!!, false)
-        method3973()!!.method155(this, anIntArray5136, anIntArray5135, anIntArray5139, aShortArray5133, class98.aSceneNodeDeque_1569.method840(0))
+    override fun method3685(nodeDequeHolder: NodeDequeHolder, i: Int) {
+        method3975(nodeDequeHolder!!, false)
+        method3973()!!.method155(this, anIntArray5136, anIntArray5135, anIntArray5139, aShortArray5133, nodeDequeHolder.aSceneNodeDeque_1569.method840(0))
     }
 
     override fun method3676(i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, i_31_: Int) {
@@ -154,13 +154,13 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         return true
     }
 
-    private fun method3975(class98: Class98, bool: Boolean) {
+    private fun method3975(nodeDequeHolder: NodeDequeHolder, bool: Boolean) {
         var i = 0
         var i_67_ = 0
         var i_68_ = 0
         var i_69_ = 0
         var i_70_ = 0
-        var class318_sub9_sub2 = (class98.aSceneNodeDeque_1569.method848(8) as PositionedSceneNode?)
+        var class318_sub9_sub2 = (nodeDequeHolder.aSceneNodeDeque_1569.method848(8) as PositionedSceneNode?)
         while (class318_sub9_sub2 != null) {
             anIntArray5136[i++] = class318_sub9_sub2.anInt8791
             anIntArray5136[i++] = class318_sub9_sub2.anInt8796
@@ -169,7 +169,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
             aShortArray5133[i_69_++] = class318_sub9_sub2.anInt8792.toShort()
             anIntArray5139[i_68_++] = class318_sub9_sub2.anInt8793
             if (bool) aByteArray5134[i_70_++] = class318_sub9_sub2.aByte8795
-            class318_sub9_sub2 = (class98.aSceneNodeDeque_1569.method846((-79).toByte()) as PositionedSceneNode?)
+            class318_sub9_sub2 = (nodeDequeHolder.aSceneNodeDeque_1569.method846((-79).toByte()) as PositionedSceneNode?)
         }
     }
 
@@ -234,10 +234,10 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     private external fun n(l: Long, l_102_: Long)
 
-    override fun method3684(class98: Class98) {
-        if (class98!!.aSceneNodeDeque_1569.method840(0) != 0) {
-            method3975(class98, false)
-            method3973()!!.method155(this, anIntArray5136, anIntArray5135, anIntArray5139, aShortArray5133, class98.aSceneNodeDeque_1569.method840(0))
+    override fun method3684(nodeDequeHolder: NodeDequeHolder) {
+        if (nodeDequeHolder!!.aSceneNodeDeque_1569.method840(0) != 0) {
+            method3975(nodeDequeHolder, false)
+            method3973()!!.method155(this, anIntArray5136, anIntArray5135, anIntArray5139, aShortArray5133, nodeDequeHolder.aSceneNodeDeque_1569.method840(0))
         }
     }
 

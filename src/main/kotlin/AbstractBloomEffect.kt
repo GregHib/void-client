@@ -96,7 +96,7 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
                     for (i_9_ in 0..15) Class367_Sub3.anIntArray7299!![i_9_] = i_7_
                 }
             }
-            Class98.aClass348_Sub16_Sub3_1564!!.method2843(i_7_, i_8_, -7836)
+            NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2843(i_7_, i_8_, -7836)
         }
 
         @JvmStatic

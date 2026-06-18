@@ -43,7 +43,7 @@ class ParticleSortRenderer internal constructor() {
         if (DrawListState.aFloat1478 != var_ha_Sub2.aFloat7768) var_ha_Sub2.xa(DrawListState.aFloat1478)
     }
 
-    fun method1651(var_ha_Sub2: OpenGlRenderer?, i: Byte, i_1_: Int, class98: Class98?) {
+    fun method1651(var_ha_Sub2: OpenGlRenderer?, i: Byte, i_1_: Int, nodeDequeHolder: NodeDequeHolder?) {
         try {
             anInt3017++
             if (var_ha_Sub2!!.aClass101_Sub3_7760 != null) {
@@ -57,7 +57,7 @@ class ParticleSortRenderer internal constructor() {
                     var i_5_ = 0
                     var i_6_ = 2147483647
                     var i_7_ = 0
-                    val class318_sub9 = (class98!!.aSceneNodeDeque_1569.aClass318_Sub9_1503)
+                    val class318_sub9 = (nodeDequeHolder!!.aSceneNodeDeque_1569.aClass318_Sub9_1503)
                     var class318_sub9_8_ = (class318_sub9!!.aClass318_Sub9_6469)
                     while (class318_sub9_8_ !== class318_sub9) {
                         val class318_sub9_sub2 = class318_sub9_8_ as PositionedSceneNode
@@ -130,7 +130,7 @@ class ParticleSortRenderer internal constructor() {
                 method1650(var_ha_Sub2, (-5).toByte())
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sn.G(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + (if (class98 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("sn.G(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + (if (nodeDequeHolder != null) "{...}" else "null") + ')'))
         }
     }
 

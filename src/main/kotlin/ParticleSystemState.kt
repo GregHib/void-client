@@ -169,7 +169,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
             if (bool != true) method1297(88.toByte(), null, null, null, null)
             anInt2200++
             if (SpriteDefinition.anInt7068 != 0) return true
-            return Class98.aClass348_Sub16_Sub3_1564!!.method2860(120)
+            return NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2860(120)
         }
 
         fun method1297(i: Byte, player: Player?, `is`: IntArray?, is_7_: IntArray?, is_8_: IntArray?) {

@@ -413,7 +413,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                 i_100_ = (if (class277 == null) 0 else (ConstantColourTextureNode.anIntArray9249!![i_76_.toInt()]))
                             } else if (bool_75_) {
                                 i_100_ = (if (class277 == null) 0 else ColourAdjustment.anIntArray860!![i_76_.toInt()])
-                                is_96_ = Class98.anIntArrayArray1566!![i_76_.toInt()]
+                                is_96_ = NodeDequeHolder.anIntArrayArray1566!![i_76_.toInt()]
                                 is_95_ = DualMaterialContainer.anIntArrayArray1638!![i_76_.toInt()]
                                 is_97_ = AudioResampler.anIntArrayArray2165!![i_76_.toInt()]!!
                                 is_99_ = (MenuActionNode.anIntArrayArray6780!![i_76_.toInt()]!!)

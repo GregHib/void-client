@@ -11,18 +11,18 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
     private var aDoublyLinkedNodeList_6478: DoublyLinkedNodeList
     var aNodeDeque_6479: NodeDeque
     private var anInt6480: Int
-    var aClass98_6481: Class98
+    var aNodeDequeHolder_6481: NodeDequeHolder
     var aBoolean6482: Boolean
     var anInt6483: Int = 0
     private var aBoolean6484: Boolean
     private var anInt6485: Int
 
-    fun method2525(): Class98 {
-        return this.aClass98_6481
+    fun method2525(): NodeDequeHolder {
+        return this.aNodeDequeHolder_6481
     }
 
     fun method2528(var_renderer: Renderer?) {
-        this.aClass98_6481.aSceneNodeDeque_1569.method845(89.toByte())
+        this.aNodeDequeHolder_6481.aSceneNodeDeque_1569.method845(89.toByte())
         var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as SpotAnimEntity?
         while (class318_sub7 != null) {
             class318_sub7.method2511(true, var_renderer, aLong6471)
@@ -189,12 +189,12 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
         }
     }
 
-    fun method2539(): Class98 {
-        this.aClass98_6481.aSceneNodeDeque_1569.method845(43.toByte())
+    fun method2539(): NodeDequeHolder {
+        this.aNodeDequeHolder_6481.aSceneNodeDeque_1569.method845(43.toByte())
         for (i in (this.aClass318_Sub9_Sub2_Sub1Array6475).indices) {
-            if ((this.aClass318_Sub9_Sub2_Sub1Array6475[i] != null) && this.aClass318_Sub9_Sub2_Sub1Array6475[i]!!.aClass318_Sub7_10419 != null) this.aClass98_6481.aSceneNodeDeque_1569.method844((this.aClass318_Sub9_Sub2_Sub1Array6475[i]), true)
+            if ((this.aClass318_Sub9_Sub2_Sub1Array6475[i] != null) && this.aClass318_Sub9_Sub2_Sub1Array6475[i]!!.aClass318_Sub7_10419 != null) this.aNodeDequeHolder_6481.aSceneNodeDeque_1569.method844((this.aClass318_Sub9_Sub2_Sub1Array6475[i]), true)
         }
-        return this.aClass98_6481
+        return this.aNodeDequeHolder_6481
     }
 
     fun method2540(l: Long) {
@@ -208,7 +208,7 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
         this.aBoolean6482 = false
         anInt6485 = 0
         aBoolean6484 = false
-        this.aClass98_6481 = Class98()
+        this.aNodeDequeHolder_6481 = NodeDequeHolder()
         this.aClass318_Sub9_Sub2_Sub1Array6475 = arrayOfNulls<ProjectileNode>(8192)
         method2531(i, bool)
     }

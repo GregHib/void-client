@@ -158,33 +158,33 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
                         if (MaterialPass.Companion.aClass348_Sub2_3683 == null) return false
                     }
                     if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(MinimapTileEntry.aJs5Archive_611, MapElementLookup.aJs5Archive_4147)
-                    var class348_sub16_sub3 = Class98.aClass348_Sub16_Sub3_1564!!
+                    var class348_sub16_sub3 = NodeDequeHolder.aClass348_Sub16_Sub3_1564!!
                     if (GlBufferObject.aClass348_Sub16_Sub3_4743 != null) class348_sub16_sub3 = GlBufferObject.aClass348_Sub16_Sub3_4743!!
                     if (class348_sub16_sub3.method2866((MaterialPass.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, Class367_Sub9.aJs5Archive_7371, -35)) {
-                        Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
-                        Class98.aClass348_Sub16_Sub3_1564!!.method2864(52.toByte())
+                        NodeDequeHolder.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
+                        NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2864(52.toByte())
                         if (DirectionalLightTextureNode.anInt9444 <= 0) {
                             SpriteDefinition.anInt7068 = 0
-                            Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, DirectionPath.anInt1059)
+                            NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2861(0, DirectionPath.anInt1059)
                             for (i in Class367_Sub3.anIntArray7299!!.indices) {
-                                Class98.aClass348_Sub16_Sub3_1564!!.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
+                                NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
                                 Class367_Sub3.anIntArray7299!![i] = 255
                             }
                         } else {
                             SpriteDefinition.anInt7068 = 3
-                            Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, (min(DirectionPath.anInt1059, DirectionalLightTextureNode.anInt9444)))
+                            NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2861(0, (min(DirectionPath.anInt1059, DirectionalLightTextureNode.anInt9444)))
                             var i = 0
                             while ((Class367_Sub3.anIntArray7299!!.size > i)) {
-                                Class98.aClass348_Sub16_Sub3_1564!!.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
+                                NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
                                 Class367_Sub3.anIntArray7299!![i] = 255
                                 i++
                             }
                         }
                         if (GlBufferObject.aClass348_Sub16_Sub3_4743 == null) {
-                            if (BloomGraphicsOptionState.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564!!.method2869(MaterialPass.Companion.aClass348_Sub2_3683, KeyboardInputSource.aBoolean4275, false)
-                            else Class98.aClass348_Sub16_Sub3_1564!!.method2870(MaterialPass.Companion.aClass348_Sub2_3683, BloomGraphicsOptionState.aLong5971, KeyboardInputSource.aBoolean4275, true, 24.toByte())
+                            if (BloomGraphicsOptionState.aLong5971 <= 0) NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2869(MaterialPass.Companion.aClass348_Sub2_3683, KeyboardInputSource.aBoolean4275, false)
+                            else NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2870(MaterialPass.Companion.aClass348_Sub2_3683, BloomGraphicsOptionState.aLong5971, KeyboardInputSource.aBoolean4275, true, 24.toByte())
                         }
-                        if (ActorEntity.aSoundChannelMixer_8764 != null) ActorEntity.aSoundChannelMixer_8764!!.method2088(bool, Class98.aClass348_Sub16_Sub3_1564)
+                        if (ActorEntity.aSoundChannelMixer_8764 != null) ActorEntity.aSoundChannelMixer_8764!!.method2088(bool, NodeDequeHolder.aClass348_Sub16_Sub3_1564)
                         ModelDefinition.aJs5Archive_1848 = null
                         MaterialPass.Companion.aClass348_Sub2_3683 = null
                         BloomGraphicsOptionState.aLong5971 = 0L
@@ -196,7 +196,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
                 if (bool != false) aBooleanArray6270 = null
             } catch (exception: Exception) {
                 exception.printStackTrace()
-                Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
+                NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2877(-128)
                 GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                 TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
                 MaterialPass.Companion.aClass348_Sub2_3683 = null

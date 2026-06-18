@@ -1765,7 +1765,7 @@ class OpenGlModel : AbstractModel {
                 if (aHoverActionEntry_5610 == null || aHoverActionEntry_5610!!.anInterface2_1811 != null) aByteArray5542 = null
                 else aBoolean5555 = true
             }
-            if (aFloatArray5552 != null && !Class98.method877(anInt5648, anInt5556, (-127).toByte())) {
+            if (aFloatArray5552 != null && !NodeDequeHolder.method877(anInt5648, anInt5556, (-127).toByte())) {
                 if (aHoverActionEntry_5620 != null && aHoverActionEntry_5620!!.anInterface2_1811 == null) aBoolean5555 = true
                 else {
                     aFloatArray5571 = null

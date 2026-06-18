@@ -359,7 +359,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                             FloatGrid.method1583((-73).toByte())
                             ResourceLoaderThread.anInt3918++
                             if (WorldMapScene.aBoolean3103) {
-                                Class98.anInt1568++
+                                NodeDequeHolder.anInt1568++
                                 val class348_sub47 = method2148((OpenGlRenderer.aFontMetaRef_7715), (TheoraVideoStream.aIsaacCipher_9029), i + -11525)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(117.toByte(), (InputStream_Sub2.anInt85 shl 14 or (ColourKeyTextureNode.anInt9349 shl 28) or NpcType.anInt1404))
                                 InterfaceComponentGroup.method3243(30, class348_sub47)
@@ -403,8 +403,8 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                             }
                             if (HeapDiagnosticsHolder.aWidgetComponent_2249 == null) HashLinkedListNode.anInt7059 = 0
                             if (RegionSceneLoader.aWidgetComponent_3701 != null) method2708(-30206)
-                            if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, i xor 0x2cd5.inv()) && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -121) && Class98.anInt1565 != 0) {
-                                var i_30_ = ((LocalPlayerState.aPlayer_1907!!.plane) - Class98.anInt1565)
+                            if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, i xor 0x2cd5.inv()) && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -121) && NodeDequeHolder.anInt1565 != 0) {
+                                var i_30_ = ((LocalPlayerState.aPlayer_1907!!.plane) - NodeDequeHolder.anInt1565)
                                 if (i_30_ >= 0) {
                                     if (i_30_ > 3) i_30_ = 3
                                 } else i_30_ = 0

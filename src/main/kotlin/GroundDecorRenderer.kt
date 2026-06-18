@@ -41,7 +41,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
         anInt3625++
     }
 
-    fun method2101(var_ha_Sub3: NativeRenderer?, class98: Class98?, i: Int, i_3_: Int) {
+    fun method2101(var_ha_Sub3: NativeRenderer?, nodeDequeHolder: NodeDequeHolder?, i: Int, i_3_: Int) {
         try {
             anInt3633++
             if (var_ha_Sub3!!.aClass101_Sub2_8080 != null) {
@@ -55,7 +55,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
                     var i_7_ = 0
                     var i_8_ = 2147483647
                     var i_9_ = i_3_
-                    val class318_sub9 = (class98!!.aSceneNodeDeque_1569.aClass318_Sub9_1503)
+                    val class318_sub9 = (nodeDequeHolder!!.aSceneNodeDeque_1569.aClass318_Sub9_1503)
                     var class318_sub9_10_ = (class318_sub9!!.aClass318_Sub9_6469)
                     while (class318_sub9 !== class318_sub9_10_) {
                         val class318_sub9_sub2 = class318_sub9_10_ as PositionedSceneNode
@@ -125,7 +125,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
                 method2099(i_3_ xor 0x66d6, var_ha_Sub3)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ve.G(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (class98 != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ve.G(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (nodeDequeHolder != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ')'))
         }
     }
 

@@ -513,7 +513,7 @@ import JagGlToolkitFactory.method861
 import AnimationFrameState.method866
 import AnimationFrameState.method867
 import DirectionUtil.method869
-import Class98.Companion.method879
+import NodeDequeHolder.Companion.method879
 import Class99.method883
 import IOException_Sub1.Companion.method130
 import InputStream_Sub1.Companion.method124
@@ -1596,7 +1596,7 @@ class Client : GameAppletFrame() {
                 }
                 interface6 = LoadProgressCounters.aKeyboardInputSource_2449!!.method2697(0)
             }
-            Class98.anInt1565 = 0
+            NodeDequeHolder.anInt1565 = 0
             var class348_sub45 = GlTexture1D.aInputTracker_8552!!.method3596(0)
             while (class348_sub45 != null) {
                 val i_111_ = class348_sub45.method3310(86)
@@ -1606,7 +1606,7 @@ class Client : GameAppletFrame() {
                             GroundDecorEntity.aNodeDeque_8744!!.method1999(class348_sub45, -20180)
                             if (GroundDecorEntity.aNodeDeque_8744!!.method1998(0) > 10) GroundDecorEntity.aNodeDeque_8744!!.method1997(8)
                         }
-                    } else Class98.anInt1565 += class348_sub45.method3315(0)
+                    } else NodeDequeHolder.anInt1565 += class348_sub45.method3315(0)
                 } else NativeRenderNode.aNodeDeque_10479!!.method1999(class348_sub45, -20180)
                 class348_sub45 = GlTexture1D.aInputTracker_8552!!.method3596(0)
             }
@@ -2135,11 +2135,11 @@ class Client : GameAppletFrame() {
                                 Bzip2DecoderState.anInt558 = i_44_
                             }
                             if (class46.aBoolean682 || class46.anInt765 != 0) {
-                                if (bool && Class98.anInt1565 != 0 && (class46.anObjectArray803 != null)) {
+                                if (bool && NodeDequeHolder.anInt1565 != 0 && (class46.anObjectArray803 != null)) {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aBoolean6993 = true
                                     class348_sub36.aWidgetComponent_6989 = class46
-                                    class348_sub36.anInt6995 = Class98.anInt1565
+                                    class348_sub36.anInt6995 = NodeDequeHolder.anInt1565
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray803
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }

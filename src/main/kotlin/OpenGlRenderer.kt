@@ -762,12 +762,12 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         }
     }
 
-    override fun method3684(class98: Class98) {
+    override fun method3684(nodeDequeHolder: NodeDequeHolder) {
         try {
-            aParticleSortRenderer_7711.method1651(this, (-119).toByte(), -1, class98)
+            aParticleSortRenderer_7711.method1651(this, (-119).toByte(), -1, nodeDequeHolder)
             anInt7569++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "qo.EF(" + (if (class98 != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "qo.EF(" + (if (nodeDequeHolder != null) "{...}" else "null") + ')')
         }
     }
 
@@ -2161,12 +2161,12 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         throw IllegalArgumentException("")
     }
 
-    override fun method3685(class98: Class98, i: Int) {
+    override fun method3685(nodeDequeHolder: NodeDequeHolder, i: Int) {
         try {
-            aParticleSortRenderer_7711.method1651(this, (-116).toByte(), i, class98)
+            aParticleSortRenderer_7711.method1651(this, (-116).toByte(), i, nodeDequeHolder)
             anInt7687++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.FG(" + (if (class98 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.FG(" + (if (nodeDequeHolder != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

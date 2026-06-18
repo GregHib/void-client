@@ -275,9 +275,9 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return RasterSprite(i, i_63_, `is`, is_64_)
     }
 
-    override fun method3685(class98: Class98, i: Int) {
+    override fun method3685(nodeDequeHolder: NodeDequeHolder, i: Int) {
         val class167 = method3724(Thread.currentThread())
-        val class318_sub9 = (class98.aSceneNodeDeque_1569.aClass318_Sub9_1503)!!
+        val class318_sub9 = (nodeDequeHolder.aSceneNodeDeque_1569.aClass318_Sub9_1503)!!
         var class318_sub9_65_ = class318_sub9.aClass318_Sub9_6469
         while (class318_sub9_65_ !== class318_sub9) {
             val class318_sub9_sub2 = class318_sub9_65_ as PositionedSceneNode
@@ -746,9 +746,9 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         /* empty */
     }
 
-    override fun method3684(class98: Class98) {
+    override fun method3684(nodeDequeHolder: NodeDequeHolder) {
         val class167 = method3724(Thread.currentThread())
-        val class318_sub9 = (class98.aSceneNodeDeque_1569.aClass318_Sub9_1503)!!
+        val class318_sub9 = (nodeDequeHolder.aSceneNodeDeque_1569.aClass318_Sub9_1503)!!
         var class318_sub9_208_ = class318_sub9.aClass318_Sub9_6469
         while (class318_sub9_208_ !== class318_sub9) {
             val class318_sub9_sub2 = class318_sub9_208_ as PositionedSceneNode

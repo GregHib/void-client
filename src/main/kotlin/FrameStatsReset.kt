@@ -266,7 +266,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FlickeringEffectsOptionState.anInt5917 = 0
             IntRange.anInt1748 = 0
             Direct3dModel.anInt5417 = 0
-            Class98.anInt1570 = 0
+            NodeDequeHolder.anInt1570 = 0
             HuffmanCodec.anInt3775 = 0
             LoadingBarRenderer.anInt5049 = 0
             NoOpGraphicsOptionState.anInt6045 = 0
@@ -1067,7 +1067,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GroundDecorOptionState.anInt5978 = 0
             MapElementDecor.anInt10357 = 0
             WeaveTextureNode.anInt9270 = 0
-            Class98.anInt1567 = 0
+            NodeDequeHolder.anInt1567 = 0
             BloomGraphicsOptionState.anInt5963 = 0
             OpenGlRenderer.anInt7667 = 0
             NativeRenderer.anInt7940 = 0
@@ -1396,7 +1396,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ProjectedGroundDecor.anInt10212 = 0
             OpenGlRenderer.anInt7718 = 0
             SynthVoiceGroup.anInt8858 = 0
-            Class98.anInt1571 = 0
+            NodeDequeHolder.anInt1571 = 0
             LightDetailOptionState.anInt6032 = 0
             NativeRenderer.anInt7884 = 0
             Buffer.anInt7157 = 0
@@ -2324,7 +2324,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             KeyEventNode.anInt4769 = 0
             TexGenMaterialPass.anInt6256 = 0
             Font.anInt4061 = 0
-            Class98.anInt1568 = 0
+            NodeDequeHolder.anInt1568 = 0
             MinimapLineDrawer.anInt5261 = 0
             KeyEventNode.anInt4768 = 0
             MatrixCameraTransform.anInt5667 = 0

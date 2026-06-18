@@ -287,7 +287,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
         fun method2510(js5Archive: Js5Archive?, class348_sub16_sub3: MidiSequencePlayer?, js5Archive_5_: Js5Archive?, bool: Boolean, soundChannelMixer: SoundChannelMixer?, js5Archive_6_: Js5Archive?): Boolean {
             try {
                 ActorEntity.aSoundChannelMixer_8764 = soundChannelMixer
-                Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
+                NodeDequeHolder.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                 MinimapTileEntry.aJs5Archive_611 = js5Archive
                 Class367_Sub9.aJs5Archive_7371 = js5Archive_6_
                 MapElementLookup.aJs5Archive_4147 = js5Archive_5_

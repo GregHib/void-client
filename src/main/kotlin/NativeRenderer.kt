@@ -1729,12 +1729,12 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3910(i: Byte, i_210_: Int)
 
-    override fun method3685(class98: Class98, i: Int) {
+    override fun method3685(nodeDequeHolder: NodeDequeHolder, i: Int) {
         try {
-            aGroundDecorRenderer_8136!!.method2101(this, class98, i, 0)
+            aGroundDecorRenderer_8136!!.method2101(this, nodeDequeHolder, i, 0)
             anInt7968++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.FG(" + (if (class98 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("wga.FG(" + (if (nodeDequeHolder != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -2392,12 +2392,12 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3947(i: Int)
 
-    override fun method3684(class98: Class98) {
+    override fun method3684(nodeDequeHolder: NodeDequeHolder) {
         try {
-            aGroundDecorRenderer_8136!!.method2101(this, class98, -1, 0)
+            aGroundDecorRenderer_8136!!.method2101(this, nodeDequeHolder, -1, 0)
             anInt7984++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.EF(" + (if (class98 != null) "{...}" else "null") + ')')
+            throw SoundBankPatch.method2929(runtimeexception, "wga.EF(" + (if (nodeDequeHolder != null) "{...}" else "null") + ')')
         }
     }
 

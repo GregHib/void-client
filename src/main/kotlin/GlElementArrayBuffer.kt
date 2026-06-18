@@ -1,5 +1,5 @@
 import ProjectileConfigUtil.method313
-import Class98.Companion.method878
+import NodeDequeHolder.Companion.method878
 
 /* Class135_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

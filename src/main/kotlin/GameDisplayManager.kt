@@ -93,33 +93,33 @@ object GameDisplayManager {
             do {
                 try {
                     if (SpriteDefinition.anInt7068 == 1) {
-                        var i_6_ = Class98.aClass348_Sub16_Sub3_1564!!.method2844(123.toByte())
-                        if (i_6_ > 0 && Class98.aClass348_Sub16_Sub3_1564!!.method2860(124)) {
+                        var i_6_ = NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2844(123.toByte())
+                        if (i_6_ > 0 && NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2860(124)) {
                             i_6_ -= WaterDetailOptionState.anInt5994
                             if (i_6_ < 0) i_6_ = 0
-                            Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, i_6_)
+                            NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2861(0, i_6_)
                             break
                         }
-                        Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
-                        Class98.aClass348_Sub16_Sub3_1564!!.method2867(i xor 0x1eaf)
+                        NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2877(-128)
+                        NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2867(i xor 0x1eaf)
                         TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
                         if (ModelDefinition.aJs5Archive_1848 != null) SpriteDefinition.anInt7068 = 2
                         else SpriteDefinition.anInt7068 = 0
                         MaterialPass.aClass348_Sub2_3683 = null
                     }
                     if (SpriteDefinition.anInt7068 != 3) break
-                    var i_7_ = Class98.aClass348_Sub16_Sub3_1564!!.method2844((-87).toByte())
-                    if (i_7_ < DirectionPath.anInt1059 && Class98.aClass348_Sub16_Sub3_1564!!.method2860(95)) {
+                    var i_7_ = NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2844((-87).toByte())
+                    if (i_7_ < DirectionPath.anInt1059 && NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2860(95)) {
                         i_7_ += DirectionalLightTextureNode.anInt9444
                         if (DirectionPath.anInt1059 < i_7_) i_7_ = DirectionPath.anInt1059
-                        Class98.aClass348_Sub16_Sub3_1564!!.method2861(i xor 0x1eab, i_7_)
+                        NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2861(i xor 0x1eab, i_7_)
                     } else {
                         DirectionalLightTextureNode.anInt9444 = 0
                         SpriteDefinition.anInt7068 = 0
                     }
                 } catch (exception: Exception) {
                     exception.printStackTrace()
-                    Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
+                    NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2877(-128)
                     ModelDefinition.aJs5Archive_1848 = null
                     MaterialPass.aClass348_Sub2_3683 = null
                     GlBufferObject.aClass348_Sub16_Sub3_4743 = null

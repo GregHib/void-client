@@ -209,9 +209,9 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3683(i: Int, i_143_: Int, i_144_: Int, i_145_: Int, bool: Boolean): AbstractModelRenderer?
 
-    abstract fun method3684(class98: Class98)
+    abstract fun method3684(nodeDequeHolder: NodeDequeHolder)
 
-    abstract fun method3685(class98: Class98, i: Int)
+    abstract fun method3685(nodeDequeHolder: NodeDequeHolder, i: Int)
 
     abstract fun K(`is`: IntArray?)
 

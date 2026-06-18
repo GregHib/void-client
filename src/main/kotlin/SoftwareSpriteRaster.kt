@@ -352,7 +352,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
 
         @JvmStatic
         fun method960(i: Int) {
-            Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
+            NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2877(-128)
             anInt1611++
             GlBufferObject.aClass348_Sub16_Sub3_4743 = null
             SpriteDefinition.anInt7068 = i

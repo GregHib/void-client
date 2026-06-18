@@ -461,7 +461,7 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
         fun method943(bool: Boolean): MidiSequencePlayer? {
             anInt5776++
             if (bool != false) method943(true)
-            return Class98.aClass348_Sub16_Sub3_1564
+            return NodeDequeHolder.aClass348_Sub16_Sub3_1564
         }
 
         fun method944(i: Int, `is`: Array<ByteArray?>?, class237_sub1: WorldMapSceneSoftware?) {
