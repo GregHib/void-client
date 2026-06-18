@@ -1,6 +1,3 @@
-import ScrollingWidgetComponentNode.Companion.method1118
-import WaterMaterialPass.Companion.method2148
-
 /* Class274 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -12,7 +9,6 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
     }
 
     fun method2063(i: Int, i_10_: Int): String? {
-        if (i_10_ != 544) method2061(126)
         anInt3479++
         return aStringArray3481[i]
     }
@@ -26,14 +22,11 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
     }
 
     companion object {
-        var anInt3477: Int = 0
         var anInt3478: Int = 0
         var anInt3479: Int = 0
-        var anInt3480: Int = 0
         var anInt3482: Int = 0
         var aLocalizedText_3483: LocalizedText? =
             (LocalizedText("This is the developer console. To close, press the `, \u00b2 or \u00a7 keys on your keyboard.", "Das ist die Entwicklerkonsole. Zum Schlie\u00dfen, die Tasten `, \u00b2 or \u00a7 dr\u00fccken.", "Ceci est la console de d\u00e9veloppement. Pour la fermer, appuyez sur les touches `, \u00b2 ou \u00a7.", "Este \u00e9 o painel de controle do desenvolvedor. Para fechar, pressione `, \u00b2 ou \u00a7."))
-        var anInt3484: Int = 0
         var aLocalizedText_3485: LocalizedText? = (LocalizedText("There was an error executing the command.", "Es gab einen Fehler beim Ausf\u00fchren des Befehls.", "Une erreur s'est produite lors de l'ex\u00e9cution de la commande.", "Houve um erro quando o comando foi executado."))
         var aLocalizedText_3486: LocalizedText? = LocalizedText("Unknown developer command: ", "Unbekannter Befehl: ", "Commande inconnue : ", "Comando desconhecido: ")
         var aLocalizedText_3487: LocalizedText? = LocalizedText("Cancel", "Abbrechen", "Annuler", "Cancelar")
@@ -110,140 +103,6 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
         var aLocalizedText_3544: LocalizedText?
         var aLocalizedText_3545: LocalizedText?
         var aLocalizedText_3546: LocalizedText?
-        var aModelLightingConfig_3547: ModelLightingConfig? = null
-
-        fun method2058(i: Int, i_0_: Int, i_1_: Int): Boolean {
-            if (i_1_ <= 28) method2059(108)
-            anInt3478++
-            return ((0x18 and i) != 0) or ((i and 0x220) == 544)
-        }
-
-        @JvmStatic
-        fun method2059(i: Int) {
-            aLocalizedText_3523 = null
-            aLocalizedText_3530 = null
-            aLocalizedText_3533 = null
-            aLocalizedText_3509 = null
-            aLocalizedText_3503 = null
-            aLocalizedText_3500 = null
-            aLocalizedText_3537 = null
-            aLocalizedText_3504 = null
-            aLocalizedText_3505 = null
-            aLocalizedText_3540 = null
-            aLocalizedText_3514 = null
-            aLocalizedText_3515 = null
-            aLocalizedText_3531 = null
-            aLocalizedText_3543 = null
-            if (i > -88) Companion.method2062((-47).toByte())
-            aLocalizedText_3542 = null
-            aLocalizedText_3501 = null
-            aLocalizedText_3519 = null
-            aLocalizedText_3522 = null
-            aLocalizedText_3485 = null
-            aLocalizedText_3483 = null
-            aLocalizedText_3488 = null
-            aLocalizedText_3496 = null
-            aLocalizedText_3497 = null
-            aLocalizedText_3526 = null
-            aLocalizedText_3538 = null
-            aLocalizedText_3487 = null
-            aLocalizedText_3507 = null
-            aLocalizedText_3493 = null
-            aLocalizedText_3520 = null
-            aLocalizedText_3511 = null
-            aLocalizedText_3490 = null
-            aLocalizedText_3532 = null
-            aLocalizedText_3508 = null
-            aLocalizedText_3541 = null
-            aLocalizedText_3492 = null
-            aLocalizedText_3517 = null
-            aLocalizedText_3499 = null
-            aLocalizedText_3498 = null
-            aLocalizedText_3529 = null
-            aLocalizedText_3516 = null
-            aLocalizedText_3502 = null
-            aLocalizedText_3544 = null
-            aLocalizedText_3518 = null
-            aLocalizedText_3528 = null
-            aLocalizedText_3510 = null
-            aLocalizedText_3513 = null
-            aLocalizedText_3489 = null
-            aLocalizedText_3491 = null
-            aLocalizedText_3494 = null
-            aLocalizedText_3524 = null
-            aLocalizedText_3486 = null
-            aLocalizedText_3525 = null
-            aLocalizedText_3521 = null
-            aLocalizedText_3512 = null
-            aLocalizedText_3534 = null
-            aLocalizedText_3536 = null
-            aLocalizedText_3539 = null
-            aModelLightingConfig_3547 = null
-            aLocalizedText_3545 = null
-            aLocalizedText_3535 = null
-            aLocalizedText_3506 = null
-            aLocalizedText_3527 = null
-            aLocalizedText_3495 = null
-            aLocalizedText_3546 = null
-        }
-
-        fun method2060(i: Byte, bool: Boolean) {
-            if (i > -4) method2059(-6)
-            anInt3484++
-            SpriteComponent.anInt8374++
-            val class348_sub47 = method2148(IntPair.aFontMetaRef_6970, TheoraVideoStream.aIsaacCipher_9029, -109)
-            InterfaceComponentGroup.method3243(37, class348_sub47)
-            var class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?
-            while (class348_sub41 != null) {
-                if (!class348_sub41.method2712(4.toByte())) {
-                    class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?
-                    if (class348_sub41 == null) break
-                }
-                if (class348_sub41.anInt7053 == 0) method1118(true, bool, class348_sub41, 2533)
-                class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as RegionSceneShifter?
-            }
-            if (SpriteRenderable.aWidgetComponent_4730 != null) {
-                ConfigFlagUtil.method1916(-9343, SpriteRenderable.aWidgetComponent_4730!!)
-                SpriteRenderable.aWidgetComponent_4730 = null
-            }
-        }
-
-        @JvmStatic
-        fun method2061(i: Int) {
-            TimedTileQueueEntry.aAbstractModelRenderer_9658 = null
-            TimedTileQueueEntry.aAbstractModelRenderer_9659 = null
-            SpotAnimVector.aAbstractModelRenderer_2309 = null
-            TileRenderState.aAbstractModelRendererArray4234 = null
-            MinimapFlagRenderer.aAbstractModelRenderer_1800 = null
-            anInt3477++
-            val i_2_ = 89 / ((-74 - i) / 42)
-            AbstractBloomEffect.aAbstractModelRenderer_6627 = null
-            ChatMessageStream.aAbstractModelRenderer_106 = null
-            ConfigVarProgress.aAbstractModelRenderer_4808 = null
-            AbstractMenuEntryStatics.aAbstractModelRenderer_1706 = null
-        }
-
-        fun method2062(i: Byte) {
-            if (HintArrowOrMessage.aMapTileShapeArray2034 != null) {
-                for (i_3_ in 0..<DetailLevelOptionState.anInt6115) HintArrowOrMessage.aMapTileShapeArray2034!![i_3_] = null
-                HintArrowOrMessage.aMapTileShapeArray2034 = null
-            }
-            anInt3480++
-            if (MapElementDecor.aMapTileShapeArray10330 != null) {
-                for (i_4_ in 0..<CollisionFlagQuery.anInt1200) MapElementDecor.aMapTileShapeArray10330!![i_4_] = null
-                MapElementDecor.aMapTileShapeArray10330 = null
-            }
-            if (LoadingBarRenderer.aMapTileShapeArray5060 != null) {
-                for (i_5_ in 0..<PackedFlagsAccessor.anInt7101) LoadingBarRenderer.aMapTileShapeArray5060!![i_5_] = null
-                LoadingBarRenderer.aMapTileShapeArray5060 = null
-            }
-            TextureCache.anIntArrayArrayArray4356 = null
-            val i_6_ = 36 % ((-81 - i) / 38)
-            GlTextureBase.anIntArray5091 = null
-            MinimapAreaMarkerNode.aMapTileShapeArray9700 = null
-            DrawListState.anInt1480 = -1
-            WorldMapToggle.anInt3872 = DrawListState.anInt1480
-        }
 
         init {
             LocalizedText("#Player", "#Spieler", "#Joueur", "#Jogador")

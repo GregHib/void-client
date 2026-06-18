@@ -13,15 +13,13 @@ object ModelDataCache {
     @JvmField
     var aClass318_Sub1_Sub3Array357: Array<GroundDecorEntity?>? = null
     @JvmField
-    var aByteArrayArray358: Array<ByteArray?>? = arrayOfNulls<ByteArray>(1000)
-    @JvmField
     var anInt359: Int = 0
 
     @JvmStatic
     fun method296(i: Byte) {
         if (i.toInt() != -99) method298(false, 24, -128, 22, -7)
         aLruByteCache_355 = null
-        aByteArrayArray358 = null
+        ByteArrayPool.aByteArrayArray358 = null
         aClass318_Sub1_Sub3Array357 = null
     }
 

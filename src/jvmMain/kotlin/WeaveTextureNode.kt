@@ -129,8 +129,6 @@ class WeaveTextureNode : AbstractProceduralTextureNode(0, true) {
         @JvmField
         var aStringArray9275: Array<String?>? = arrayOfNulls<String>(100)
         @JvmField
-        var anInt9280: Int
-        @JvmField
         var anInt9282: Int = 0
         @JvmField
         var aLongArray9283: LongArray?
@@ -158,7 +156,6 @@ class WeaveTextureNode : AbstractProceduralTextureNode(0, true) {
 
         init {
             aProjectileFactory_9274 = ProjectileFactory(5, 1)
-            anInt9280 = 0
             aLongArray9283 = LongArray(256)
             for (i in 0..255) {
                 var l = i.toLong()

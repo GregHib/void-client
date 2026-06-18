@@ -38,8 +38,6 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
         var anInt8682: Int = 0
         var aIntRange_8683: IntRange? = IntRange(100, -1)
         @JvmField
-        var anIntArray8684: IntArray? = null
-        @JvmField
         var anInt8685: Int = 0
 
         @JvmStatic
@@ -77,7 +75,7 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
         fun method570(i: Int) {
             if (i < 51) method570(-85)
             aIntRange_8683 = null
-            anIntArray8684 = null
+            ByteArrayPool.anIntArray8684 = null
             aHashtable_8679 = null
         }
 

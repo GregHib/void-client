@@ -64,8 +64,6 @@ class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, move
         @JvmField
         var aTrigLookupTables_8503: TrigLookupTables? = TrigLookupTables()
         @JvmField
-        var aByteArrayArray8505: Array<ByteArray?>? = arrayOfNulls<ByteArray>(50)
-        @JvmField
         var anInt8506: Int = 0
         @JvmField
         var anIntArray8507: IntArray? = intArrayOf(
@@ -597,7 +595,7 @@ class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, move
             aTrigLookupTables_8503 = null
             if (i >= -8) anInt8498 = -77
             anIntArray8507 = null
-            aByteArrayArray8505 = null
+            ByteArrayPool.aByteArrayArray8505 = null
         }
     }
 }

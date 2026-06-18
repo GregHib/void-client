@@ -1,6 +1,3 @@
-import AsyncResourceRequest.Companion.method3255
-import ByteArrayPool.method359
-
 open class ByteBuffer : LinkedListNode {
     @JvmField
     var aByteArray7154: ByteArray?
@@ -113,7 +110,7 @@ open class ByteBuffer : LinkedListNode {
     fun method3344(i: Int, bool: Boolean): Int {
         anInt7165++
         if (bool != false) this.aByteArray7154 = null
-        val i_17_ = RefCountedHandle.method1319(this.anInt7197, true, this.aByteArray7154!!, i)
+        val i_17_ = method1319(this.anInt7197, true, this.aByteArray7154!!, i)
         writeInt(93.toByte(), i_17_)
         return i_17_
     }
@@ -190,7 +187,7 @@ open class ByteBuffer : LinkedListNode {
         anInt7168++
         this.anInt7197 -= 4
         if (i != -25541) method3369(56.toByte())
-        val i_34_ = RefCountedHandle.method1319(this.anInt7197, true, this.aByteArray7154!!, 0)
+        val i_34_ = method1319(this.anInt7197, true, this.aByteArray7154!!, 0)
         val i_35_ = readInt((-126).toByte())
         return i_35_ == i_34_
     }
@@ -366,7 +363,7 @@ open class ByteBuffer : LinkedListNode {
         val i_64_ = this.anInt7197 - (i_63_ + 1)
         if (i != -13487) writeInt(10.toByte(), -125)
         if (i_64_ == 0) return ""
-        return FixedFunctionWaterPass.method3546(this.aByteArray7154!!, 0, i_64_, i_63_)
+        return method3546(this.aByteArray7154!!, 0, i_64_, i_63_)
     }
 
     fun readShort(i: Int): Int {
@@ -408,7 +405,7 @@ open class ByteBuffer : LinkedListNode {
         }
         val i_70_ = -1 + this.anInt7197 - i_69_
         if (i_70_ == 0) return ""
-        return FixedFunctionWaterPass.method3546(this.aByteArray7154!!, 0, i_70_, i_69_)
+        return method3546(this.aByteArray7154!!, 0, i_70_, i_69_)
     }
 
     fun writeByte(bool: Boolean, i: Int) {
@@ -546,7 +543,7 @@ open class ByteBuffer : LinkedListNode {
 
     internal constructor(i: Int) {
         this.anInt7197 = 0
-        this.aByteArray7154 = method359(i, -1)
+        this.aByteArray7154 = ByteArrayPool.method359(i, -1)
     }
 
     fun method3394(i: Int, i_93_: Int) {
@@ -659,6 +656,110 @@ open class ByteBuffer : LinkedListNode {
         var anInt7146: Int = 0
         var anInt7189: Int = 0
 
+        var anInt9666: Int = 0
 
+        fun method3255(i: Int, `is`: ByteArray?, i_6_: Int, bool: Boolean, string: String?, i_7_: Int): Int {
+            try {
+                anInt9666++
+                if (bool != false) return -119
+                val i_8_ = -i + i_6_
+                var i_9_ = 0
+                while (i_8_ > i_9_) {
+                    val i_10_ = string!!.get(i_9_ + i).code
+                    if (i_10_ > 0 && i_10_ < 128 || i_10_ >= 160 && i_10_ <= 255) `is`!![i_7_ + i_9_] = i_10_.toByte()
+                    else if (i_10_ == 8364) `is`!![i_9_ + i_7_] = (-128).toByte()
+                    else if (i_10_ == 8218) `is`!![i_9_ + i_7_] = (-126).toByte()
+                    else if (i_10_ == 402) `is`!![i_7_ - -i_9_] = (-125).toByte()
+                    else if (i_10_ != 8222) {
+                        if (i_10_ != 8230) {
+                            if (i_10_ != 8224) {
+                                if (i_10_ == 8225) `is`!![i_9_ + i_7_] = (-121).toByte()
+                                else if (i_10_ == 710) `is`!![i_7_ + i_9_] = (-120).toByte()
+                                else if (i_10_ == 8240) `is`!![i_7_ - -i_9_] = (-119).toByte()
+                                else if (i_10_ != 352) {
+                                    if (i_10_ == 8249) `is`!![i_9_ + i_7_] = (-117).toByte()
+                                    else if (i_10_ == 338) `is`!![i_9_ + i_7_] = (-116).toByte()
+                                    else if (i_10_ == 381) `is`!![i_7_ + i_9_] = (-114).toByte()
+                                    else if (i_10_ != 8216) {
+                                        if (i_10_ == 8217) `is`!![i_7_ - -i_9_] = (-110).toByte()
+                                        else if (i_10_ == 8220) `is`!![i_7_ + i_9_] = (-109).toByte()
+                                        else if (i_10_ == 8221) `is`!![i_7_ + i_9_] = (-108).toByte()
+                                        else if (i_10_ == 8226) `is`!![i_7_ + i_9_] = (-107).toByte()
+                                        else if (i_10_ != 8211) {
+                                            if (i_10_ == 8212) `is`!![i_7_ + i_9_] = (-105).toByte()
+                                            else if (i_10_ != 732) {
+                                                if (i_10_ != 8482) {
+                                                    if (i_10_ != 353) {
+                                                        if (i_10_ == 8250) `is`!![i_7_ - -i_9_] = (-101).toByte()
+                                                        else if (i_10_ == 339) `is`!![i_7_ - -i_9_] = (-100).toByte()
+                                                        else if (i_10_ != 382) {
+                                                            if (i_10_ != 376) `is`!![i_9_ + i_7_] = 63.toByte()
+                                                            else `is`!![i_7_ + i_9_] = (-97).toByte()
+                                                        } else `is`!![i_7_ - -i_9_] = (-98).toByte()
+                                                    } else `is`!![i_9_ + i_7_] = (-102).toByte()
+                                                } else `is`!![i_9_ + i_7_] = (-103).toByte()
+                                            } else `is`!![i_9_ + i_7_] = (-104).toByte()
+                                        } else `is`!![i_7_ - -i_9_] = (-106).toByte()
+                                    } else `is`!![i_7_ + i_9_] = (-111).toByte()
+                                } else `is`!![i_7_ - -i_9_] = (-118).toByte()
+                            } else `is`!![i_9_ + i_7_] = (-122).toByte()
+                        } else `is`!![i_7_ - -i_9_] = (-123).toByte()
+                    } else `is`!![i_7_ - -i_9_] = (-124).toByte()
+                    i_9_++
+                }
+                return i_8_
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("ffa.E(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_6_ + ',' + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i_7_ + ')'))
+            }
+        }
+
+        var anIntArray1508: IntArray? = IntArray(256)
+
+        init {
+            for (i in 0..255) {
+                var i_23_ = i
+                for (i_24_ in 0..7) {
+                    if ((i_23_ and 0x1) != 1) i_23_ = i_23_ ushr 1
+                    else i_23_ = i_23_ ushr 1 xor 0x12477cdf.inv()
+                }
+                anIntArray1508!![i] = i_23_
+            }
+        }
+
+        fun method851(i: Int) {
+            if (i == 1) anIntArray1508 = null
+        }
+
+        var anInt2267: Int = 0
+
+        fun method1319(i: Int, bool: Boolean, `is`: ByteArray, i_0_: Int): Int {
+            anInt2267++
+            if (bool != true) return 63
+            var i_1_ = -1
+            for (i_2_ in i_0_..<i) i_1_ = (i_1_ ushr 8 xor anIntArray1508!![(i_1_ xor `is`[i_2_].toInt()) and 0xff])
+            i_1_ = i_1_ xor -0x1
+            return i_1_
+        }
+
+        var anInt7349: Int = 0
+        var aCharArray625: CharArray? = charArrayOf('\u20ac', '\u0000', '\u201a', '\u0192', '\u201e', '\u2026', '\u2020', '\u2021', '\u02c6', '\u2030', '\u0160', '\u2039', '\u0152', '\u0000', '\u017d', '\u0000', '\u0000', '\u2018', '\u2019', '\u201c', '\u201d', '\u2022', '\u2013', '\u2014', '\u02dc', '\u2122', '\u0161', '\u203a', '\u0153', '\u0000', '\u017e', '\u0178')
+
+        fun method3546(`is`: ByteArray, i: Int, i_0_: Int, i_1_: Int): String {
+            anInt7349++
+            val cs = CharArray(i_0_)
+            var i_2_ = 0
+            for (i_3_ in i..<i_0_) {
+                var i_4_ = 0xff and `is`[i_3_ + i_1_].toInt()
+                if (i_4_ != 0) {
+                    if (i_4_ >= 128 && i_4_ < 160) {
+                        var i_5_ = aCharArray625!![i_4_ - 128].code
+                        if (i_5_ == 0) i_5_ = 63
+                        i_4_ = i_5_
+                    }
+                    cs[i_2_++] = i_4_.toChar()
+                }
+            }
+            return String(cs, 0, i_2_)
+        }
     }
 }

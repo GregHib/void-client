@@ -854,7 +854,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             RefCountedHandle.anIntArray2272 = null
             OverlayColorTable.aBooleanArrayArrayArray1751 = null
             SolidFillComponent.aBooleanArrayArrayArray8361 = null
-            LocalizedText.method2062(89.toByte())
+            LocalizedTextStatics.method2062(89.toByte())
             if (ModelDataCache.aClass318_Sub1_Sub3Array357 != null) {
                 for (i in 0..<DrawListState.anInt1477) ModelDataCache.aClass318_Sub1_Sub3Array357!![i] = null
                 DrawListState.anInt1477 = 0

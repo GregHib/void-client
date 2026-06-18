@@ -93,8 +93,6 @@ class FixedFunctionWaterPass internal constructor(var_ha_Sub3: NativeRenderer, n
 
     companion object {
         @JvmField
-        var anInt7349: Int = 0
-        @JvmField
         var anInt7351: Int = 0
         @JvmField
         var anInt7352: Int = 0
@@ -122,24 +120,6 @@ class FixedFunctionWaterPass internal constructor(var_ha_Sub3: NativeRenderer, n
         var anInt7364: Int = 0
         var anInt7365: Int = 0
 
-        @JvmStatic
-        fun method3546(`is`: ByteArray, i: Int, i_0_: Int, i_1_: Int): String {
-            anInt7349++
-            val cs = CharArray(i_0_)
-            var i_2_ = 0
-            for (i_3_ in i..<i_0_) {
-                var i_4_ = 0xff and `is`[i_3_ + i_1_].toInt()
-                if (i_4_ != 0) {
-                    if (i_4_ >= 128 && i_4_ < 160) {
-                        var i_5_ = MapSceneRenderer.aCharArray625!![i_4_ - 128].code
-                        if (i_5_ == 0) i_5_ = 63
-                        i_4_ = i_5_
-                    }
-                    cs[i_2_++] = i_4_.toChar()
-                }
-            }
-            return String(cs, 0, i_2_)
-        }
 
         @JvmStatic
         fun method3547(i: Int, i_6_: Int): Int {

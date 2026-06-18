@@ -12,7 +12,6 @@ object PlayerUpdateDecoder {
     var aBoolean1915: Boolean = false
     var anInt1916: Int = 0
     var aIntRange_1917: IntRange? = IntRange(20, -2)
-    var aByteArrayArray1918: Array<ByteArray?>? = arrayOfNulls<ByteArray>(250)
 
     /*synthetic*/
     var aClass1919: Class<*>? = null
@@ -23,7 +22,7 @@ object PlayerUpdateDecoder {
     @JvmStatic
     fun method1139(i: Int) {
         if (i == 2767) {
-            aByteArrayArray1918 = null
+            ByteArrayPool.aByteArrayArray1918 = null
             aIntRange_1917 = null
             aIntRange_1914 = null
         }

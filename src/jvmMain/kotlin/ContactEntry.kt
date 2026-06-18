@@ -48,7 +48,6 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
         var aHashtable_9603: Hashtable?
         @JvmField
         var anInt9604: Int = 0
-        var anInt9606: Int = 0
         var anIntArray9612: IntArray?
 
         @JvmStatic
@@ -65,25 +64,6 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
             if (i >= -59) anInt9604 = 79
             if (!MinimapSquareDrawer.aBoolean5219) return 1
             return 2
-        }
-
-        @JvmStatic
-        fun method3230(`is`: IntArray?, is_1_: IntArray?, i: Int) {
-            try {
-                anInt9606++
-                if (`is` == null || is_1_ == null) {
-                    DisplaceTextureNode.aByteArrayArrayArray9134 = null
-                    ModelLightingConfig.anIntArray2552 = null
-                    CompositeRgbNoiseTexture.anIntArray8684 = null
-                } else {
-                    CompositeRgbNoiseTexture.anIntArray8684 = `is`
-                    ModelLightingConfig.anIntArray2552 = IntArray(`is`.size)
-                    DisplaceTextureNode.aByteArrayArrayArray9134 = arrayOfNulls<Array<ByteArray?>>(`is`.size)
-                    for (i_2_ in i..<CompositeRgbNoiseTexture.anIntArray8684!!.size) DisplaceTextureNode.aByteArrayArrayArray9134!![i_2_] = arrayOfNulls<ByteArray>(is_1_[i_2_])
-                }
-            } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("db.D(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i + ')'))
-            }
         }
 
         fun method3231(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {

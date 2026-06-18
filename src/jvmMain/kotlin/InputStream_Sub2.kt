@@ -1,3 +1,4 @@
+import ByteArrayPool.anInt496
 import java.io.InputStream
 
 class InputStream_Sub2 : InputStream() {
@@ -101,7 +102,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_40_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if (i_32_ >= 0 && i_33_ >= 0 && i_32_ < GlCubemapLightPass.anInt7319 && i_33_ < RangeThresholdTextureNode.anInt9109) {
                         val i_41_ = i_36_ + 1
-                        if ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) >= i_32_ - i_41_ && (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) <= i_41_ + i_32_ && ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) >= -i_41_ + i_33_) && (i_33_ - -i_41_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]))) ByteArrayPool.method358(i_37_, (i_36_ + (i_33_ shl 8) + ((GradientLookupEffect.anInt9200 shl 24) + (i_32_ shl 16))), i_38_, i_39_, i_40_, i_34_, -29494)
+                        if ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) >= i_32_ - i_41_ && (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) <= i_41_ + i_32_ && ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) >= -i_41_ + i_33_) && (i_33_ - -i_41_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]))) method358(i_37_, (i_36_ + (i_33_ shl 8) + ((GradientLookupEffect.anInt9200 shl 24) + (i_32_ shl 16))), i_38_, i_39_, i_40_, i_34_, -29494)
                     }
                 } else if (SplashImageLoadable.aRgbColorPalette_4689 == rgbColorPalette) {
                     var i_42_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
@@ -296,6 +297,14 @@ class InputStream_Sub2 : InputStream() {
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("sfa.A(" + (if (rgbColorPalette != null) "{...}" else "null") + ',' + i + ')'))
             }
+        }
+
+        var anInt490: Int = 0
+
+        fun method358(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
+            if (i_8_ != -29494) anInt496 = 32
+            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350) != 0 && i != 0 && HintArrowOrMessage.anInt2021 < 50 && i_7_ != -1) GlTextureCubeMap.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(1.toByte(), i_7_, i, i_4_, i_5_, i_3_, i_6_, null)
+            anInt490++
         }
     }
 }

@@ -183,7 +183,6 @@ import ArchiveFileConditionWrapper.Companion.method2043
 import ParticleEffectCache.Companion.method2045
 import SocketFactory.Companion.method2048
 import BoundsConstraintEntry.Companion.method2055
-import LocalizedText.Companion.method2059
 import CollisionMapAccessor.method2064
 import CollisionMapAccessor.method2065
 import CollisionMapAccessor.method2066
@@ -361,7 +360,6 @@ import ParameterizedText.Companion.method3217
 import CharCodeMap.Companion.method3220
 import ContactEntry.Companion.method3228
 import ContactEntry.Companion.method3229
-import ContactEntry.Companion.method3230
 import InterfaceComponentGroup.Companion.method3237
 import InterfaceComponentGroup.Companion.method3243
 import TimedTileQueueEntry.Companion.method3247
@@ -495,7 +493,6 @@ import MapSceneCache.Companion.method817
 import MapSceneCache.Companion.method825
 import WhirlpoolHash.Companion.method830
 import SceneNodeDeque.Companion.method843
-import NativeBufferHandle.Companion.method851
 import NativeLibraryState.method216
 import RegionMapDecoder.method852
 import NpcUpdateProcessor.method857
@@ -627,7 +624,7 @@ class Client : GameAppletFrame() {
         method3556(false)
         GlShaderObjectHandle.aScriptCompilerThread_520 = ScriptCompilerThread(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!)
         ClientMachineInfo.aMediaStreamClient_6601 = MediaStreamClient()
-        method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
+        ByteArrayPool.method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
         if (NpcAnimationResolver.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271) CacheLruCache.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
         IntHashSet.aClass348_Sub51_3959 = method247(24916)
         if (NpcAnimationResolver.aNamedIdRecord_165 == OggCacheStream.aNamedIdRecord_5271) GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147 = this.getCodeBase()!!.getHost()
@@ -705,7 +702,7 @@ class Client : GameAppletFrame() {
         method1497(16384)
         method1979(125.toByte())
         method3247(-74)
-        method2059(i.toInt() xor 0x1f.inv())
+        LocalizedTextStatics.method2059(i.toInt() xor 0x1f.inv())
         method216(false)
         method2026(23377)
         method328(i.toInt() xor 0x6c)
@@ -1179,7 +1176,7 @@ class Client : GameAppletFrame() {
         method1440(-127)
         method3537(i.toInt() xor 0x864c)
         method3552(i.toInt() xor 0x3b)
-        method851(i + -107)
+        ByteBuffer.method851(i + -107)
         method2124(0)
         method2132(-125)
         method1133(96)

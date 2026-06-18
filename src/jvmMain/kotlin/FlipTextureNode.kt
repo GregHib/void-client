@@ -339,7 +339,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     val class213 = (ClientException.aModelHeaderCache_112!!.method1940(-67, (class46.anInt812)))
                                                     string = (class213.aString2795)
                                                     if (string == null) string = "null"
-                                                    if (((class213.anInt2820) == 1 || (class46.anInt781) != 1) && (class46.anInt781) != -1) string = ("<col=ff9040>" + string + "</col> x" + (ByteArrayPool.method356(-127, (class46.anInt781))))
+                                                    if (((class213.anInt2820) == 1 || (class46.anInt781) != 1) && (class46.anInt781) != -1) string = ("<col=ff9040>" + string + "</col> x" + (method356(-127, (class46.anInt781))))
                                                 }
                                                 if (class46.anInt806 != -1) {
                                                     string = (method2157((class46.anInt806), -1431655765))
@@ -549,6 +549,22 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
         fun method3066(i: Int) {
             if (i != -1) aClass348_Sub42_Sub12_9144 = null
             aClass348_Sub42_Sub12_9144 = null
+        }
+
+        var anInt494: Int = 0
+
+        fun method356(i: Int, i_0_: Int): String? {
+            anInt494++
+            var string = i_0_.toString()
+            if (i >= -109) return null
+            var i_1_ = -3 + string.length
+            while (i_1_ > 0) {
+                string = string.substring(0, i_1_) + "," + string.substring(i_1_)
+                i_1_ -= 3
+            }
+            if (string.length > 9) return (" <col=00ff80>" + string.substring(0, string.length + -8) + LocalizedText.aLocalizedText_3516!!.method2063(AnimationFrameDefinition.anInt6967, 544) + " (" + string + ")</col>")
+            if (string.length > 6) return (" <col=ffffff>" + string.substring(0, -4 + string.length) + LocalizedText.aLocalizedText_3518!!.method2063(AnimationFrameDefinition.anInt6967, 544) + " (" + string + ")</col>")
+            return " <col=ffff00>" + string + "</col>"
         }
     }
 }

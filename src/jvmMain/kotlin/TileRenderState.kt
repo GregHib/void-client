@@ -1,7 +1,6 @@
 import LocTypeDefLoader.Companion.method1406
 import WaterDetailOptionState.Companion.method1779
 import ConfigFlagUtil.Companion.method1916
-import LocalizedText.Companion.method2061
 import TextureCubeProvider.Companion.method2269
 import ProjectedGroundDecor.Companion.method2433
 import RingBufferInputStream.Companion.method3616
@@ -114,7 +113,7 @@ class TileRenderState {
                     PlayerSequenceSelector.aSceneObjectSpawner_1208!!.method775(69.toByte())
                     method2433()
                     method464(i + -9865)
-                    method2061(-127)
+                    LocalizedTextStatics.method2061(-127)
                     MapElementManager.method3513(-113)
                     method1779(124.toByte())
                     if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2295(96.toByte())

@@ -27,8 +27,6 @@ class NativeBufferHandle internal constructor(glRenderDevice: GlRenderDevice?, l
         @JvmField
         var aLong1507: Long = 0
         @JvmField
-        var anIntArray1508: IntArray? = IntArray(256)
-        @JvmField
         var anInt1509: Int = 0
         @JvmField
         var anInt1511: Int = 0
@@ -36,7 +34,6 @@ class NativeBufferHandle internal constructor(glRenderDevice: GlRenderDevice?, l
         @JvmStatic
         fun method849(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
             anInt1511++
-            if (i_4_ <= 80) method851(-7)
             val i_6_ = i_0_ + i
             val i_7_ = -i + i_3_
             for (i_8_ in i_0_..<i_6_) GlElementArrayBuffer.method1156(-27, i_2_, WidgetDefinition.anIntArrayArray255!![i_8_]!!, i_1_, i_5_)
@@ -117,20 +114,5 @@ class NativeBufferHandle internal constructor(glRenderDevice: GlRenderDevice?, l
             return true
         }
 
-        @JvmStatic
-        fun method851(i: Int) {
-            if (i == 1) anIntArray1508 = null
-        }
-
-        init {
-            for (i in 0..255) {
-                var i_23_ = i
-                for (i_24_ in 0..7) {
-                    if ((i_23_ and 0x1) != 1) i_23_ = i_23_ ushr 1
-                    else i_23_ = i_23_ ushr 1 xor 0x12477cdf.inv()
-                }
-                anIntArray1508!![i] = i_23_
-            }
-        }
     }
 }

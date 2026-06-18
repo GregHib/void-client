@@ -89,7 +89,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DisplaceTextureNode.anInt9137 = 0
             SolidFillComponent.anInt8357 = 0
             MapTileShape.anInt4195 = 0
-            FixedFunctionWaterPass.anInt7349 = 0
+            ByteBuffer.anInt7349 = 0
             HashLinkedListNode.anInt7064 = 0
             Direct3dModel.anInt5468 = 0
             NpcActorEntity.anInt10089 = 0
@@ -572,7 +572,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MidiSequencePlayer.anInt8919 = 0
             KaraokeSubtitleStream.anInt9049 = 0
             NpcDefinitionCache.anInt3313 = 0
-            LocalizedText.anInt3480 = 0
+            LocalizedTextStatics.anInt3480 = 0
             HuffmanCodec.anInt3770 = 0
             StructConfig.anInt608 = 0
             NativeRenderer.anInt7997 = 0
@@ -1121,7 +1121,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ArchiveResourceProvider.anInt6357 = 0
             ColorThresholdEffect.anInt9085 = 0
             TrackedGroundDecor.anInt10373 = 0
-            LocalizedText.anInt3484 = 0
+            LocalizedTextStatics.anInt3484 = 0
             ModelGroundDecor.anInt10026 = 0
             LruByteCache.anInt1102 = 0
             GlBufferObject.anInt4756 = 0
@@ -1224,7 +1224,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7993 = 0
             CurveTextureNode.anInt9209 = 0
             FloatCameraTransform.anInt5723 = 0
-            ContactEntry.anInt9606 = 0
+            ByteArrayPool.anInt9606 = 0
             SequencedWallEntity.anInt10171 = 0
             AbstractFrameBufferSurface.anInt6922 = 0
             GlTexture.anInt4863 = 0
@@ -1809,7 +1809,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MapSceneIconDef.anInt2858 = 0
             OpenGlRenderer.anInt7609 = 0
             OpenGlRenderer.anInt7604 = 0
-            AsyncResourceRequest.anInt9666 = 0
+            ByteBuffer.anInt9666 = 0
             SocketGameConnection.anInt5831 = 0
             ModelDefinitionCache.anInt2874 = 0
             ByteBuffer.anInt7205 = 0
@@ -2203,7 +2203,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SoftwareSpriteRaster.anInt1619 = 0
             SynthVoiceGroup.anInt8845 = 0
             SphereMapMaterialPass.anInt6309 = 0
-            RefCountedHandle.anInt2267 = 0
+            ByteBuffer.anInt2267 = 0
             NativeRenderer.anInt8002 = 0
             MapElementDecor.anInt10360 = 0
             Js5Archive.anInt641 = 0
@@ -2377,7 +2377,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             PcmStreamBuffer.anInt8882 = 0
             SynthVoiceGroup.anInt8850 = 0
             ManagedGlResource.anInt3151 = 0
-            ByteArrayPool.anInt494 = 0
+            FlipTextureNode.anInt494 = 0
             ModelWallEntity.anInt10141 = 0
             WorldMapScene.anInt3106 = 0
             SpotAnimDefinition.anInt2396 = 0
@@ -3695,7 +3695,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FloatBuffer.anInt9741 = 0
             LocConfigModelBuilder.anInt4496 = 0
             NoiseTextureNode.anInt9261 = 0
-            LocalizedText.anInt3477 = 0
+            LocalizedTextStatics.anInt3477 = 0
             GlTextureBase.anInt5085 = 0
             AsyncResourceRequest.anInt9668 = 0
             WallEntity.anInt8771 = 0
@@ -3853,7 +3853,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FrameBufferObject.anInt4869 = 0
             ConnectionStateType.anInt1014 = 0
             MidiSequencePlayer.anInt8912 = 0
-            ByteArrayPool.anInt490 = 0
+            InputStream_Sub2.anInt490 = 0
             NpcConfig.anInt871 = 0
             BlendTextureNode.anInt9358 = 0
             TerrainTileGeometry.anInt3005 = 0

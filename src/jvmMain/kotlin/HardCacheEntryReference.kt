@@ -10,7 +10,6 @@ import GlVertexBufferArb.Companion.method2127
 import TileSceneEntity.Companion.method2396
 import Font.Companion.method2570
 import KeyedCacheEntryReference.Companion.method3203
-import FixedFunctionWaterPass.Companion.method3546
 import GlRenderDevice.Companion.method3965
 import InputStream_Sub2.Companion.method128
 import java.io.IOException
@@ -54,7 +53,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             val i_2_ = 18 / ((i_1_ - 30) / 42)
             if (!HuffmanCodec.method2224(i, (-118).toByte(), i_0_)) return false
             if (DetailLevelOptionState.method1833((-118).toByte(), i, i_0_) or ((0x9000 and i) != 0) or KaraokeSubtitleStream.method2985(-31735, i_0_, i)) return true
-            return (((0x37 and i_0_) == 0) and (((0x2000 and i) != 0) or LocalizedText.method2058(i, i_0_, 88) or method3203(i_0_, 127.toByte(), i)))
+            return (((0x37 and i_0_) == 0) and (((0x2000 and i) != 0) or LocalizedTextStatics.method2058(i, i_0_, 88) or method3203(i_0_, 127.toByte(), i)))
         }
 
         @JvmStatic
@@ -1305,7 +1304,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val `is` = ByteArray(RadialTextureNode.anInt9341)
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3409(RadialTextureNode.anInt9341, `is`, 0, -32769)
-                val string = method3546(`is`, 0, RadialTextureNode.anInt9341, 0)
+                val string = ByteBuffer.method3546(`is`, 0, RadialTextureNode.anInt9341, 0)
                 GrowableStringList.method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, true, 99)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true

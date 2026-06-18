@@ -32,7 +32,6 @@ class DisplaceTextureNode : AbstractProceduralTextureNode(3, false) {
             } else if (i_12_ != 1) break
             this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1
         } while (false)
-        if (i_11_ != 31015) method3062(false)
         anInt9138++
     }
 
@@ -45,7 +44,7 @@ class DisplaceTextureNode : AbstractProceduralTextureNode(3, false) {
     override fun method3047(i: Int, i_13_: Int): Array<IntArray?>? {
         anInt9131++
         val `is` = this.aImageFrameCache_7033!!.method2557(i_13_ xor 0x5d41e284, i)!!
-        if (i_13_ != -1564599039) aByteArrayArrayArray9134 = null
+        if (i_13_ != -1564599039) ByteArrayPool.aByteArrayArrayArray9134 = null
         if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val is_14_ = this.method3048(i, 633706337, 1)!!
             val is_15_ = this.method3048(i, 633706337, 2)!!
@@ -76,8 +75,6 @@ class DisplaceTextureNode : AbstractProceduralTextureNode(3, false) {
         @JvmField
         var anInt9132: Int = 0
         @JvmField
-        var aByteArrayArrayArray9134: Array<Array<ByteArray?>?>? = null
-        @JvmField
         var anIntArray9135: IntArray? = null
         @JvmField
         var anInt9136: Int = 0
@@ -90,9 +87,8 @@ class DisplaceTextureNode : AbstractProceduralTextureNode(3, false) {
 
         @JvmStatic
         fun method3062(bool: Boolean) {
-            if (bool != true) aByteArrayArrayArray9134 = null
             anIntArray9135 = null
-            aByteArrayArrayArray9134 = null
+            ByteArrayPool.aByteArrayArrayArray9134 = null
         }
 
         @JvmStatic

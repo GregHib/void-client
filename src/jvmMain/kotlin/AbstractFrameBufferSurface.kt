@@ -14,8 +14,6 @@ abstract class AbstractFrameBufferSurface : LinkedListNode() {
 
     companion object {
         @JvmField
-        var anInt6913: Int = 0
-        @JvmField
         var anInt6914: Int = 0
         @JvmField
         var anInt6915: Int = 0
@@ -40,7 +38,6 @@ abstract class AbstractFrameBufferSurface : LinkedListNode() {
         fun method3007(i: Int, i_0_: Int) {
             NpcActorEntity.anInt10074 = -1
             GlBufferObject.aClass348_Sub16_Sub3_4743 = null
-            if (i_0_ != 22684) anInt6913 = -117
             anInt6922++
             KeyboardInputSource.aBoolean4275 = false
             ModelDefinition.aJs5Archive_1848 = null

@@ -90,8 +90,6 @@ class TileTextureNode : AbstractProceduralTextureNode(1, false) {
         var anInt9409: Int = 0
         var anInt9411: Int
         @JvmField
-        var anInt9412: Int = 0
-        @JvmField
         var anInt9413: Int = 0
 
         @JvmStatic

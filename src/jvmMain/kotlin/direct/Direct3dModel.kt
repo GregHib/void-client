@@ -1027,7 +1027,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 class64_sub2_154_.aBufferToggleState_5482!!.anInterface5_Impl1_3711 = aBufferToggleState_5482!!.anInterface5_Impl1_3711
             } else if (HuffmanCodec.method2224(i, 117.toByte(), anInt5472)) class64_sub2_154_.aBufferToggleState_5482 = aBufferToggleState_5482
             else class64_sub2_154_.aBufferToggleState_5482 = null
-            if (LocalizedText.method2058(i, anInt5472, 116)) {
+            if (LocalizedTextStatics.method2058(i, anInt5472, 116)) {
                 if (class64_sub2_153_!!.aShortArray5493 == null || (anInt5475 > class64_sub2_153_.aShortArray5493!!.size)) {
                     val i_164_ = anInt5475
                     class64_sub2_153_.aShortArray5436 = ShortArray(i_164_)

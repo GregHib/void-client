@@ -95,8 +95,6 @@ class ModelLightingConfig {
         var aFontMetaRef_2539: FontMetaRef? = FontMetaRef(26, 7)
         var anInt2543: Int = 0
         var anInt2550: Int = 0
-        @JvmField
-        var anIntArray2552: IntArray? = null
         var anInt2553: Int = 0
         @JvmField
         var aRectangleArray2554: Array<Rectangle?>? = arrayOfNulls<Rectangle>(100)
@@ -222,7 +220,7 @@ class ModelLightingConfig {
         fun method1426(i: Int) {
             aFontMetaRef_2539 = null
             aRectangleArray2554 = null
-            anIntArray2552 = null
+            ByteArrayPool.anIntArray2552 = null
             if (i != 25165) aRectangleArray2554 = null
         }
     }

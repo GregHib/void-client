@@ -23,8 +23,6 @@ abstract class AsyncResourceRequest : HashLinkedListNode() {
         @JvmField
         var aString9665: String? = null
         @JvmField
-        var anInt9666: Int = 0
-        @JvmField
         var anInt9668: Int = 0
 
         @JvmStatic
@@ -88,61 +86,6 @@ abstract class AsyncResourceRequest : HashLinkedListNode() {
             }
         }
 
-        @JvmStatic
-        fun method3255(i: Int, `is`: ByteArray?, i_6_: Int, bool: Boolean, string: String?, i_7_: Int): Int {
-            try {
-                anInt9666++
-                if (bool != false) return -119
-                val i_8_ = -i + i_6_
-                var i_9_ = 0
-                while (i_8_ > i_9_) {
-                    val i_10_ = string!!.get(i_9_ + i).code
-                    if (i_10_ > 0 && i_10_ < 128 || i_10_ >= 160 && i_10_ <= 255) `is`!![i_7_ + i_9_] = i_10_.toByte()
-                    else if (i_10_ == 8364) `is`!![i_9_ + i_7_] = (-128).toByte()
-                    else if (i_10_ == 8218) `is`!![i_9_ + i_7_] = (-126).toByte()
-                    else if (i_10_ == 402) `is`!![i_7_ - -i_9_] = (-125).toByte()
-                    else if (i_10_ != 8222) {
-                        if (i_10_ != 8230) {
-                            if (i_10_ != 8224) {
-                                if (i_10_ == 8225) `is`!![i_9_ + i_7_] = (-121).toByte()
-                                else if (i_10_ == 710) `is`!![i_7_ + i_9_] = (-120).toByte()
-                                else if (i_10_ == 8240) `is`!![i_7_ - -i_9_] = (-119).toByte()
-                                else if (i_10_ != 352) {
-                                    if (i_10_ == 8249) `is`!![i_9_ + i_7_] = (-117).toByte()
-                                    else if (i_10_ == 338) `is`!![i_9_ + i_7_] = (-116).toByte()
-                                    else if (i_10_ == 381) `is`!![i_7_ + i_9_] = (-114).toByte()
-                                    else if (i_10_ != 8216) {
-                                        if (i_10_ == 8217) `is`!![i_7_ - -i_9_] = (-110).toByte()
-                                        else if (i_10_ == 8220) `is`!![i_7_ + i_9_] = (-109).toByte()
-                                        else if (i_10_ == 8221) `is`!![i_7_ + i_9_] = (-108).toByte()
-                                        else if (i_10_ == 8226) `is`!![i_7_ + i_9_] = (-107).toByte()
-                                        else if (i_10_ != 8211) {
-                                            if (i_10_ == 8212) `is`!![i_7_ + i_9_] = (-105).toByte()
-                                            else if (i_10_ != 732) {
-                                                if (i_10_ != 8482) {
-                                                    if (i_10_ != 353) {
-                                                        if (i_10_ == 8250) `is`!![i_7_ - -i_9_] = (-101).toByte()
-                                                        else if (i_10_ == 339) `is`!![i_7_ - -i_9_] = (-100).toByte()
-                                                        else if (i_10_ != 382) {
-                                                            if (i_10_ != 376) `is`!![i_9_ + i_7_] = 63.toByte()
-                                                            else `is`!![i_7_ + i_9_] = (-97).toByte()
-                                                        } else `is`!![i_7_ - -i_9_] = (-98).toByte()
-                                                    } else `is`!![i_9_ + i_7_] = (-102).toByte()
-                                                } else `is`!![i_9_ + i_7_] = (-103).toByte()
-                                            } else `is`!![i_9_ + i_7_] = (-104).toByte()
-                                        } else `is`!![i_7_ - -i_9_] = (-106).toByte()
-                                    } else `is`!![i_7_ + i_9_] = (-111).toByte()
-                                } else `is`!![i_7_ - -i_9_] = (-118).toByte()
-                            } else `is`!![i_9_ + i_7_] = (-122).toByte()
-                        } else `is`!![i_7_ - -i_9_] = (-123).toByte()
-                    } else `is`!![i_7_ - -i_9_] = (-124).toByte()
-                    i_9_++
-                }
-                return i_8_
-            } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("ffa.E(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_6_ + ',' + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i_7_ + ')'))
-            }
-        }
 
         @JvmStatic
         fun method3256(i: Int): Int {

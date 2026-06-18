@@ -1082,7 +1082,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5425) {
-                LocalizedText.method2061(12)
+                LocalizedTextStatics.method2061(12)
                 PlayerSequenceSelector.aBoolean1211 = false
                 return
             }
@@ -3732,7 +3732,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 3103) {
-                    LocalizedText.method2060((-101).toByte(), true)
+                    LocalizedTextStatics.method2060((-101).toByte(), true)
                     return
                 }
                 if (i == 3104) {

@@ -90,7 +90,7 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
             var i_21_ = 0xff and i.toInt()
             require(i_21_ != 0) { "Non cp1252 character 0x" + i_21_.toString(16) + " provided" }
             if (i_21_ >= 128 && i_21_ < 160) {
-                var i_22_ = MapSceneRenderer.aCharArray625!![i_21_ + -128].code
+                var i_22_ = ByteBuffer.aCharArray625!![i_21_ + -128].code
                 if (i_22_ == 0) i_22_ = 63
                 i_21_ = i_22_
             }

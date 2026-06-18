@@ -10,7 +10,6 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
     }
 
     companion object {
-        var anInt2267: Int = 0
         @JvmField
         var aShort2269: Short = 32767
         var anInt2271: Int = 0
@@ -22,16 +21,6 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
 
         /*synthetic*/
         var aClass2276: Class<*>? = null
-
-        @JvmStatic
-        fun method1319(i: Int, bool: Boolean, `is`: ByteArray, i_0_: Int): Int {
-            anInt2267++
-            if (bool != true) return 63
-            var i_1_ = -1
-            for (i_2_ in i_0_..<i) i_1_ = (i_1_ ushr 8 xor NativeBufferHandle.anIntArray1508!![(i_1_ xor `is`[i_2_].toInt()) and 0xff])
-            i_1_ = i_1_ xor -0x1
-            return i_1_
-        }
 
         @JvmStatic
         fun method1320() {
