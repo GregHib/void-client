@@ -456,7 +456,7 @@ import MinimapLineDrawer.Companion.method471
 import NpcConfig.Companion.method486
 import RsaVarbitHandler.Companion.method492
 import RsaVarbitHandler.Companion.method493
-import Class54.Companion.method501
+import FloorOverlayDefinition.Companion.method501
 import Class55.Companion.method518
 import Class55_Sub1.Companion.method523
 import Class56.Companion.method526

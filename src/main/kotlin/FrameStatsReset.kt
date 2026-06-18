@@ -1596,7 +1596,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             DisplayModeOptionState.anInt6108 = 0
             FixedFunctionMaterialPass.anInt6207 = 0
             LinkedListNode.anInt4297 = 0
-            Class54.anInt975 = 0
+            FloorOverlayDefinition.anInt975 = 0
             SpotAnimEntity.anInt6437 = 0
             Class367_Sub8.anInt7351 = 0
             Class367_Sub4.anInt7322 = 0
@@ -2550,7 +2550,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Font.anInt4057 = 0
             DelegatingRenderCanvas.anInt69 = 0
             GlRenderDevice.anInt9892 = 0
-            Class54.anInt972 = 0
+            FloorOverlayDefinition.anInt972 = 0
             RenderbufferObject.anInt8561 = 0
             DynamicSceneObjectEntity.anInt10193 = 0
             OpenGlRenderer.anInt7702 = 0
@@ -3208,7 +3208,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RangedGraphicsOptionState.anInt5935 = 0
             NodeDeque.anInt3333 = 0
             TrigLookupInit.anInt2878 = 0
-            Class54.anInt971 = 0
+            FloorOverlayDefinition.anInt971 = 0
             Class64_Sub2.anInt5479 = 0
             ModelGroundDecor.anInt10020 = 0
             BufferedOutputStreamWorker.anInt2710 = 0
@@ -4012,7 +4012,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SoftwareSpriteRaster.anInt1614 = 0
             SceneListNode.anInt6467 = 0
             FontDefinition.anInt1985 = 0
-            Class54.anInt968 = 0
+            FloorOverlayDefinition.anInt968 = 0
             SimpleToggleOptionState.anInt5884 = 0
             LocTypeDefLoader.anInt2499 = 0
             Buffer.anInt7141 = 0
@@ -4166,7 +4166,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SocketGameConnection.aBoolean5840 = true
             for (j1 in 0..99) GzipDecompressor.aBooleanArray2076!![j1] = true
 
-            for (k1 in 0..5) DetailLevelOptionState.aClass54Array6114!![k1] = Class54()
+            for (k1 in 0..5) DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![k1] = FloorOverlayDefinition()
 
             for (l1 in 0..24) {
                 ServerConnectionInfo.anIntArray2145!![l1] = 0

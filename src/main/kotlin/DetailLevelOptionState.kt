@@ -36,7 +36,7 @@ class DetailLevelOptionState : GraphicsOptionState {
 
     companion object {
         @JvmField
-        var aClass54Array6114: Array<Class54?>?
+        var aFloorOverlayDefinitionArray6114: Array<FloorOverlayDefinition?>?
         @JvmField
         var anInt6115: Int = 0
         @JvmField
@@ -87,7 +87,7 @@ class DetailLevelOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1835(i: Int) {
-            aClass54Array6114 = null
+            aFloorOverlayDefinitionArray6114 = null
             aIntRange_6121 = null
             if (i != -28594) anInt6115 = -7
         }
@@ -133,7 +133,7 @@ class DetailLevelOptionState : GraphicsOptionState {
         }
 
         init {
-            aClass54Array6114 = arrayOfNulls<Class54>(6)
+            aFloorOverlayDefinitionArray6114 = arrayOfNulls<FloorOverlayDefinition>(6)
             aIntRange_6121 = IntRange(32, 6)
         }
     }

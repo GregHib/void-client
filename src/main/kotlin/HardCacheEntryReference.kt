@@ -1161,10 +1161,10 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == TimedRecordAccessor.aIntRange_7105) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 0) DetailLevelOptionState.aClass54Array6114!![i] = Class54()
+                if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 0) DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i] = FloorOverlayDefinition()
                 else {
                     CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197--
-                    DetailLevelOptionState.aClass54Array6114!![i] = Class54(CircleRasterizer.aClass348_Sub49_Sub2_3813!!)
+                    DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i] = FloorOverlayDefinition(CircleRasterizer.aClass348_Sub49_Sub2_3813!!)
                 }
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 MapAreaDefinition.anInt2523 = ResourceLoaderThread.anInt3918

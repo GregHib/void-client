@@ -1041,8 +1041,8 @@ object Class66 {
                     Class367_Sub9.aStringArray7378!![i_121_] = string
                 }
                 if (string_120_.length > 0) {
-                    if (Class54.aStringArray974 == null) Class54.aStringArray974 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![HardCacheEntryReference.aSceneProjector_10434!!.anInt2987]))
-                    Class54.aStringArray974!![i_121_] = string_120_
+                    if (FloorOverlayDefinition.aStringArray974 == null) FloorOverlayDefinition.aStringArray974 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![HardCacheEntryReference.aSceneProjector_10434!!.anInt2987]))
+                    FloorOverlayDefinition.aStringArray974!![i_121_] = string_120_
                 }
                 return
             }
@@ -4419,55 +4419,55 @@ object Class66 {
             } else if (i < 4000) {
                 if (i == 3903) {
                     val i_374_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = DetailLevelOptionState.aClass54Array6114!![i_374_]!!.method499(21110)
+                    anIntArray1149!![anInt1173++] = DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i_374_]!!.method499(21110)
                     return
                 }
                 if (i == 3904) {
                     val i_375_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aClass54Array6114!![i_375_]!!.anInt969)
+                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i_375_]!!.anInt969)
                     return
                 }
                 if (i == 3905) {
                     val i_376_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aClass54Array6114!![i_376_]!!.anInt976)
+                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i_376_]!!.anInt976)
                     return
                 }
                 if (i == 3906) {
                     val i_377_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aClass54Array6114!![i_377_]!!.anInt967)
+                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i_377_]!!.anInt967)
                     return
                 }
                 if (i == 3907) {
                     val i_378_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aClass54Array6114!![i_378_]!!.anInt977)
+                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i_378_]!!.anInt977)
                     return
                 }
                 if (i == 3908) {
                     val i_379_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aClass54Array6114!![i_379_]!!.anInt973)
+                    anIntArray1149!![anInt1173++] = (DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i_379_]!!.anInt973)
                     return
                 }
                 if (i == 3910) {
                     val i_380_ = anIntArray1149!![--anInt1173]
-                    val i_381_ = DetailLevelOptionState.aClass54Array6114!![i_380_]!!.method502(100.toByte())
+                    val i_381_ = DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i_380_]!!.method502(100.toByte())
                     anIntArray1149!![anInt1173++] = if (i_381_ == 0) 1 else 0
                     return
                 }
                 if (i == 3911) {
                     val i_382_ = anIntArray1149!![--anInt1173]
-                    val i_383_ = DetailLevelOptionState.aClass54Array6114!![i_382_]!!.method502(118.toByte())
+                    val i_383_ = DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i_382_]!!.method502(118.toByte())
                     anIntArray1149!![anInt1173++] = if (i_383_ == 2) 1 else 0
                     return
                 }
                 if (i == 3912) {
                     val i_384_ = anIntArray1149!![--anInt1173]
-                    val i_385_ = DetailLevelOptionState.aClass54Array6114!![i_384_]!!.method502((-100).toByte())
+                    val i_385_ = DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i_384_]!!.method502((-100).toByte())
                     anIntArray1149!![anInt1173++] = if (i_385_ == 5) 1 else 0
                     return
                 }
                 if (i == 3913) {
                     val i_386_ = anIntArray1149!![--anInt1173]
-                    val i_387_ = DetailLevelOptionState.aClass54Array6114!![i_386_]!!.method502(55.toByte())
+                    val i_387_ = DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i_386_]!!.method502(55.toByte())
                     anIntArray1149!![anInt1173++] = if (i_387_ == 1) 1 else 0
                     return
                 }

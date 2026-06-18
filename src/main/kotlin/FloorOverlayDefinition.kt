@@ -1,7 +1,7 @@
 /* Class54 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class54 {
+class FloorOverlayDefinition {
     private var aByte966: Byte = 0
     @JvmField
     var anInt967: Int = 0

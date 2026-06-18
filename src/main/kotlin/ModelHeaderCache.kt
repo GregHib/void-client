@@ -1,4 +1,4 @@
-import Class54.Companion.method500
+import FloorOverlayDefinition.Companion.method500
 
 /* Class255 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

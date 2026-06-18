@@ -131,7 +131,7 @@ class LinkedNodeListIterator {
                 RenderNode.anInt9721 = -1
                 MinimapSpriteRenderer.aHashtable_4915 = Hashtable(8)
                 method882(11.toByte())
-                RenderNode.anInt9721 = Class54.anInt970
+                RenderNode.anInt9721 = FloorOverlayDefinition.anInt970
                 method1713(false, 520)
                 TextureCache.method3466(-119)
                 method703(RenderNode.anInt9721)

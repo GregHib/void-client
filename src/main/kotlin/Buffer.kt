@@ -733,7 +733,7 @@ open class Buffer : LinkedListNode {
                     ItemDefinition.aAbstractGameSocket_2773 = null
                 }
                 if (i_71_ == 3) CacheEntryReference.method3198((GlBufferObject.anInt4737 != RenderNode.anInt9721), (-45).toByte())
-                if (i_71_ == 7) method1006((RenderNode.anInt9721 != Class54.anInt970), 102.toByte())
+                if (i_71_ == 7) method1006((RenderNode.anInt9721 != FloorOverlayDefinition.anInt970), 102.toByte())
                 if (i_71_ == 5) {
                     if (NullOggStream.aString9043 == null) method1213(Class64_Sub3.aString5600, TextureGenerator.aString2496, -124)
                     else method1372(-1)
