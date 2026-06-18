@@ -3,7 +3,7 @@ import WorldMapElement.Companion.method181
 /* Class6 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_: Int, i_48_: Int, i_49_: Int, i_50_: Int, i_51_: Int, i_52_: Int, i_53_: Int, @JvmField var aBoolean145: Boolean, @JvmField var anInt154: Int) {
+class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_: Int, i_48_: Int, i_49_: Int, i_50_: Int, i_51_: Int, i_52_: Int, i_53_: Int, @JvmField var aBoolean145: Boolean, @JvmField var anInt154: Int) {
     @JvmField
     var aShort143: Short
     @JvmField

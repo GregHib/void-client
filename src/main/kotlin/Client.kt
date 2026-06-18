@@ -474,8 +474,8 @@ import ProportionalScrollbarComponent.Companion.method190
 import SolidFillComponent.Companion.method191
 import SolidFillComponent.Companion.method193
 import SolidFillComponent.Companion.method198
-import Class6.Companion.method207
-import Class6.Companion.method208
+import IdentKitRecolor.Companion.method207
+import IdentKitRecolor.Companion.method208
 import Class60.Companion.method584
 import Class62.method598
 import Class62.method599

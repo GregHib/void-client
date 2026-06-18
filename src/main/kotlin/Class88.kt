@@ -109,7 +109,7 @@ class Class88 {
         var anInt1504: Int = 0
         fun method841(i: Int): Array<BoxedIntHolder?> {
             anInt1504++
-            return (arrayOf<BoxedIntHolder?>(SpriteSheetCache.aBoxedIntHolder_2568, MinimapRenderer.aBoxedIntHolder_1591, Class6.aBoxedIntHolder_151))
+            return (arrayOf<BoxedIntHolder?>(SpriteSheetCache.aBoxedIntHolder_2568, MinimapRenderer.aBoxedIntHolder_1591, IdentKitRecolor.aBoxedIntHolder_151))
         }
 
         @JvmStatic

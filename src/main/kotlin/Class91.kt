@@ -1,6 +1,6 @@
 import FixedFunctionMaterialPass.Companion.method2146
 import WorldMapElement.Companion.method181
-import Class6.Companion.method204
+import IdentKitRecolor.Companion.method204
 
 /* Class91 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

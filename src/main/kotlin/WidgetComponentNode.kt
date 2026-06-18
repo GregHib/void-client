@@ -1,5 +1,5 @@
 import GlRectangleTexture.Companion.method253
-import Class6.Companion.method203
+import IdentKitRecolor.Companion.method203
 
 /* Class127 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
