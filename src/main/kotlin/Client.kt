@@ -437,7 +437,7 @@ import WorldMapIconLabel.Companion.method3574
 import CubemapTextureFactory.Companion.method3584
 import MouseInputTracker.Companion.method3609
 import BufferedFileReader.method3611
-import Class375.method3613
+import PlayerAppearanceUpdateDecoder.method3613
 import Class377.Companion.method3968
 import Class38.Companion.method363
 import Class39.Companion.method367
@@ -1367,7 +1367,7 @@ class Client : GameAppletFrame() {
                 FrameBufferObject.aBoolean4888 = ItemActionPacketSender.aBoolean2110
             }
             val string_28_ = this.getParameter("frombilling")
-            if (string_28_ != null && string_28_ == "true") Class375.aBoolean4540 = true
+            if (string_28_ != null && string_28_ == "true") PlayerAppearanceUpdateDecoder.aBoolean4540 = true
             NullOggStream.aString9043 = this.getParameter("sskey")
             if (NullOggStream.aString9043 != null && NullOggStream.aString9043!!.length < 2) NullOggStream.aString9043 = null
             val string_29_ = this.getParameter("force64mb")
@@ -2007,7 +2007,7 @@ class Client : GameAppletFrame() {
                     SocketStreamWorker.anInt2670 = 0
                     ItemActionPacketSender.aBoolean2110 = true
                     FrameBufferObject.aBoolean4888 = ItemActionPacketSender.aBoolean2110
-                    Class375.aBoolean4540 = false
+                    PlayerAppearanceUpdateDecoder.aBoolean4540 = false
                     ConfigFlagUtil.anInt3234 = 0
                     UnderlayDefinition.anInt2884 = (HardCacheEntryReference.aSceneProjector_10434!!.anInt2987)
                     Renderer.anInt4583 = 0

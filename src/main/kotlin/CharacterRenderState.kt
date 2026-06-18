@@ -1,7 +1,7 @@
 import WaterMaterialPass.Companion.method2148
 import StreamingResourceRequest.Companion.method3262
 import LocConfigModelBuilder.Companion.method3563
-import Class375.method3614
+import PlayerAppearanceUpdateDecoder.method3614
 
 /* Class348_Sub9 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

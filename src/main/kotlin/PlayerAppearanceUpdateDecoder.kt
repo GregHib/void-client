@@ -1,7 +1,7 @@
 /* Class375 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-internal object Class375 {
+internal object PlayerAppearanceUpdateDecoder {
     @JvmField
     var anInt4539: Int = 0
     @JvmField
@@ -18,7 +18,7 @@ internal object Class375 {
 
     @JvmStatic
     fun method3612(i: Int, class348_sub49_sub2: CipheredPacketBuffer?) {
-        if (i < 59) Class375.method3614(-51, 64, -115, null, -96)
+        if (i < 59) PlayerAppearanceUpdateDecoder.method3614(-51, 64, -115, null, -96)
         for (i_0_ in 0..<ProjectionCameraTransform.anInt5768) {
             val i_1_ = GlFramebufferBlitter.anIntArray279!![i_0_]
             val player = LoadingBarRenderer.aPlayerArray5058!![i_1_]
@@ -32,7 +32,7 @@ internal object Class375 {
 
     @JvmStatic
     fun method3613(i: Int) {
-        if (i != 64) Class375.method3612(-7, null)
+        if (i != 64) PlayerAppearanceUpdateDecoder.method3612(-7, null)
         aClass60_4543 = null
     }
 

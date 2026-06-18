@@ -100,9 +100,9 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
                 if (Class51.Companion.aResourceLoaderThread_897 != null) {
                     Class51.Companion.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aClass56_9660), Class64_Sub2.aString5420, ConfigFlagUtil.anInt3236, DataHolder.aLong3660, false)
                     if (LoadProgressCounters.anInterface16Array2447 != null) {
-                        var i_5_ = Class375.anInt4544 - -1
+                        var i_5_ = PlayerAppearanceUpdateDecoder.anInt4544 - -1
                         while ((LoadProgressCounters.anInterface16Array2447!!.size > i_5_)) {
-                            if (LoadProgressCounters.anInterface16Array2447!![i_5_]!!.method60(-19079) >= 100 && Class375.anInt4544 == -1 + i_5_ && WorldMapRenderer.anInt4674 >= 1 && Class51.Companion.aResourceLoaderThread_897!!.method2322(0)) {
+                            if (LoadProgressCounters.anInterface16Array2447!![i_5_]!!.method60(-19079) >= 100 && PlayerAppearanceUpdateDecoder.anInt4544 == -1 + i_5_ && WorldMapRenderer.anInt4674 >= 1 && Class51.Companion.aResourceLoaderThread_897!!.method2322(0)) {
                                 try {
                                     LoadProgressCounters.anInterface16Array2447!![i_5_]!!.method57(117)
                                 } catch (exception: Exception) {
@@ -110,8 +110,8 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
                                     break
                                 }
                                 Class51.Companion.aResourceLoaderThread_897!!.method2321(10559, LoadProgressCounters.anInterface16Array2447!![i_5_]!!)
-                                Class375.anInt4544++
-                                if ((Class375.anInt4544 >= (-1 + LoadProgressCounters.anInterface16Array2447!!.size)) && LoadProgressCounters.anInterface16Array2447!!.size > 1) Class375.anInt4544 = if (!PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(26)) -1 else 0
+                                PlayerAppearanceUpdateDecoder.anInt4544++
+                                if ((PlayerAppearanceUpdateDecoder.anInt4544 >= (-1 + LoadProgressCounters.anInterface16Array2447!!.size)) && LoadProgressCounters.anInterface16Array2447!!.size > 1) PlayerAppearanceUpdateDecoder.anInt4544 = if (!PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(26)) -1 else 0
                             }
                             i_5_++
                         }

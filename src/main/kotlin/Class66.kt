@@ -4082,7 +4082,7 @@ object Class66 {
                     return
                 }
                 if (i == 3341) {
-                    anIntArray1149!![anInt1173++] = if (Class375.aBoolean4540) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (PlayerAppearanceUpdateDecoder.aBoolean4540) 1 else 0
                     return
                 }
                 if (i == 3342) {

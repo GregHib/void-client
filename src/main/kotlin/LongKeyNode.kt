@@ -148,7 +148,7 @@ class LongKeyNode : LinkedListNode {
                                 }
                             }
                             TerrainTileShape.aTerrainTileArray8801!![i_24_]!!.method3987(0, 0, 1024, i_20_, i_21_, i_22_, i_23_, bools)
-                            if (!Class375.aBoolean4542) {
+                            if (!PlayerAppearanceUpdateDecoder.aBoolean4542) {
                                 for (i_27_ in -4..<RuntimeException_Sub1.anInt4600) {
                                     for (i_28_ in -4..<RuntimeException_Sub1.anInt4600) {
                                         val i_29_ = i_16_ + i_27_
@@ -162,7 +162,7 @@ class LongKeyNode : LinkedListNode {
                                 }
                             }
                         }
-                        if (Class375.aBoolean4542) {
+                        if (PlayerAppearanceUpdateDecoder.aBoolean4542) {
                             val class361 = TimedRecordAccessor.aCollisionMapArray7108s!![i]
                             for (i_32_ in 0..<RuntimeException_Sub1.anInt4600) {
                                 var i_33_ = 0
@@ -191,7 +191,7 @@ class LongKeyNode : LinkedListNode {
                 TextureCache.method3466(-86)
                 ClampTextureNode.anInt9479 = 0
                 ModelWallEntity.aNodeDeque_10125!!.method1996(116)
-                if (!Class375.aBoolean4542) {
+                if (!PlayerAppearanceUpdateDecoder.aBoolean4542) {
                     var i_37_ = i_5_
                     while (104 + i_5_ > i_37_) {
                         var i_38_ = i_6_

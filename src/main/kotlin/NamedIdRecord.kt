@@ -15,7 +15,7 @@ class NamedIdRecord internal constructor(string: String?, var anInt4466: Int) {
         fun method3517(i: Int) {
             if (i <= 35) method3517(98)
             anInt4468++
-            Class375.aClass60_4543!!.method590(0)
+            PlayerAppearanceUpdateDecoder.aClass60_4543!!.method590(0)
         }
     }
 }

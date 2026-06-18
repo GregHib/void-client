@@ -553,11 +553,11 @@ class SceneProjector internal constructor(string: String?, i: Int) {
         fun method1636(i: Int, i_74_: Int, i_75_: Int, i_76_: Int, i_77_: Int, i_78_: Int, i_79_: Int): CircleRasterizer? {
             anInt2988++
             val l = (i_76_.toLong() * 76724863L xor (i.toLong() * 32147369L xor (i_74_.toLong() * 986053L xor (i_75_.toLong() * 67481L xor i_77_.toLong() * 97549L xor i_79_.toLong() * 475427L))))
-            var circleRasterizer = Class375.aClass60_4543!!.method583(l, 90) as CircleRasterizer?
+            var circleRasterizer = PlayerAppearanceUpdateDecoder.aClass60_4543!!.method583(l, 90) as CircleRasterizer?
             if (circleRasterizer != null) return circleRasterizer
             circleRasterizer = Class60.aRenderer1098!!.method3697(i_75_, i_77_, i_79_, i_74_, i, i_76_)
             if (i_78_ != -1) method1636(58, 63, -99, -89, -7, 18, 71)
-            Class375.aClass60_4543!!.method582(circleRasterizer, l, (-106).toByte())
+            PlayerAppearanceUpdateDecoder.aClass60_4543!!.method582(circleRasterizer, l, (-106).toByte())
             return circleRasterizer
         }
 

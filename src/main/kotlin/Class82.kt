@@ -502,13 +502,13 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string == "showcolmap") {
-                            Class375.aBoolean4542 = true
+                            PlayerAppearanceUpdateDecoder.aBoolean4542 = true
                             method464(-1)
                             method94("colmap is shown", 53)
                             return
                         }
                         if (string == "hidecolmap") {
-                            Class375.aBoolean4542 = false
+                            PlayerAppearanceUpdateDecoder.aBoolean4542 = false
                             method464(i.toInt() xor 0x4e)
                             method94("colmap is hidden", 61)
                             return

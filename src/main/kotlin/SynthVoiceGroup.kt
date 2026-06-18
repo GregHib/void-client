@@ -1,4 +1,4 @@
-import Class375.method3612
+import PlayerAppearanceUpdateDecoder.method3612
 
 /* Class348_Sub16_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

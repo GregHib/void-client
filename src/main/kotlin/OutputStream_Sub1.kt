@@ -99,8 +99,8 @@ class OutputStream_Sub1 : OutputStream() {
                 TextureDefinitionCache.method1626(1, true)
                 if (Class59_Sub1.aBoolean5300) {
                     ProjectionCameraTransform.method941(124, LocTypeDefLoader.anInt2500)
-                    if (LocalPlayerState.anInt1906 != Class375.anInt4545) PcmStreamBuffer.aBoolean8870 = true
-                    Class375.anInt4545 = LocalPlayerState.anInt1906
+                    if (LocalPlayerState.anInt1906 != PlayerAppearanceUpdateDecoder.anInt4545) PcmStreamBuffer.aBoolean8870 = true
+                    PlayerAppearanceUpdateDecoder.anInt4545 = LocalPlayerState.anInt1906
                 } else {
                     FacingDirectionNode.aRenderer6654!!.ya()
                     val i_15_ = LocTypeDefLoader.anInt2500

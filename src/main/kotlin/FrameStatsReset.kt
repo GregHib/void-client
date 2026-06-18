@@ -3165,7 +3165,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             HeapInfoRecord.anInt4941 = 0
             Class5_Sub2.anInt8358 = 0
             Class52.anInt4894 = 0
-            Class375.anInt4539 = 0
+            PlayerAppearanceUpdateDecoder.anInt4539 = 0
             AsyncTaskHandle.anInt2573 = 0
             SequencedActorEntity.anInt10109 = 0
             GameAppletFrame.anInt23 = 0
@@ -3550,7 +3550,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TextureMapImageNode.anInt9373 = 0
             WorldMapSceneSoftware.anInt5817 = 0
             GameAppletFrame.anInt3 = 0
-            Class375.anInt4541 = 0
+            PlayerAppearanceUpdateDecoder.anInt4541 = 0
             Class64.anInt1128 = 0
             ItemDefinition.anInt2751 = 0
             ShadowQualityOptionState.anInt6011 = 0
