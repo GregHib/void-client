@@ -823,17 +823,17 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
 
         @JvmStatic
         fun method2433() {
-            if (Class65.aSceneCollisionEntryArrayArrayArray1148 != null) {
-                for (i in Class65.aSceneCollisionEntryArrayArrayArray1148!!.indices) {
+            if (WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 != null) {
+                for (i in WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!!.indices) {
                     for (i_80_ in 0..<SpotAnimEntity.anInt6451) {
                         for (i_81_ in 0..<RegionSceneShifter.anInt7054) {
-                            if ((Class65.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]) != null) Class65.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]!!.method3485(true)
-                            Class65.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_] = null
+                            if ((WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]) != null) WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]!!.method3485(true)
+                            WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_] = null
                         }
                     }
                 }
             }
-            Class65.aSceneCollisionEntryArrayArrayArray1148 = null
+            WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 = null
             TerrainTileShape.aTerrainTileArray8801 = null
             if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) {
                 for (i in ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!!.indices) {

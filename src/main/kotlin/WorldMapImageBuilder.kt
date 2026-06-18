@@ -1,7 +1,7 @@
 /* Class65 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class65 internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class WorldMapImageBuilder internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_1141: Js5Archive?
     private val aLruByteCache_1145 = LruByteCache(256)
     fun method694(i: Int) {

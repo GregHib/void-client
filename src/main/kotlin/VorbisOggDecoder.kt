@@ -137,7 +137,7 @@ class VorbisOggDecoder internal constructor(oggstreamstate: OggStreamState) : Og
                     CacheStateResetter.aServerConnectionInfo_125!!.anInt2138 = 50000 - -CacheStateResetter.aServerConnectionInfo_125!!.anInt2143
                     CacheStateResetter.aServerConnectionInfo_125!!.anInt2148 = 40000 - -CacheStateResetter.aServerConnectionInfo_125!!.anInt2143
                 }
-                if (i < Class65.aClass110_Sub1Array1146!!.size && Class65.aClass110_Sub1Array1146!![i] != null) ConfigFlagUtil.anInt3234 = (Class65.aClass110_Sub1Array1146!![i]!!.anInt1708)
+                if (i < WorldMapImageBuilder.aClass110_Sub1Array1146!!.size && WorldMapImageBuilder.aClass110_Sub1Array1146!![i] != null) ConfigFlagUtil.anInt3234 = (WorldMapImageBuilder.aClass110_Sub1Array1146!![i]!!.anInt1708)
                 return true
             }
             var string_4_ = ""

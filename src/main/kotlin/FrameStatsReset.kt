@@ -1629,7 +1629,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7947 = 0
             MatrixCameraTransform.anInt5660 = 0
             OpenGlRenderer.anInt7541 = 0
-            Class65.anInt1140 = 0
+            WorldMapImageBuilder.anInt1140 = 0
             NativeRenderer.anInt7885 = 0
             SpriteArchiveLoader.anInt380 = 0
             InputStream_Sub2.anInt81 = 0
@@ -2349,7 +2349,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CacheLruCache.anInt3879 = 0
             GlRenderDevice.anInt9889 = 0
             MenuActionNode.anInt6778 = 0
-            Class65.anInt1143 = 0
+            WorldMapImageBuilder.anInt1143 = 0
             OpenGlRenderer.anInt7681 = 0
             GlTexture.anInt4861 = 0
             GameAppletFrame.anInt36 = 0
@@ -2614,7 +2614,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             LoadingScreenState.anInt2630 = 0
             ParticleEmitterListNode.anInt9686 = 0
             NpcSummaryDefinition.anInt1950 = 0
-            Class65.anInt1139 = 0
+            WorldMapImageBuilder.anInt1139 = 0
             OutgoingPacketNode.anInt7123 = 0
             MapLabelMenuEntry.anInt5789 = 0
             MinimapPolygonDrawer.anInt5238 = 0
@@ -3198,7 +3198,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ParticleAmountConfig.anInt2128 = 0
             NativeRenderer.anInt7886 = 0
             TrackedGroundDecor.anInt10370 = 0
-            Class65.anInt1142 = 0
+            WorldMapImageBuilder.anInt1142 = 0
             LinkedListIterator.anInt2119 = 0
             MapLabelMenuEntry.anInt5790 = 0
             NativeRenderer.anInt7926 = 0
@@ -3377,7 +3377,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Js5Archive.anInt650 = 0
             NativeRenderer.anInt8029 = 0
             CollisionMap.anInt4449 = 0
-            Class65.anInt1147 = 0
+            WorldMapImageBuilder.anInt1147 = 0
             AbstractBloomEffect.anInt6623 = 0
             TileRenderState.anInt4230 = 0
             GlRenderDevice.anInt9878 = 0
@@ -3747,7 +3747,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Direct3dModel.anInt5435 = 0
             ClampTextureNode.anInt9476 = 0
             CalendarUtil.anInt4131 = 0
-            Class65.anInt1138 = 0
+            WorldMapImageBuilder.anInt1138 = 0
             RangeThresholdTextureNode.anInt9105 = 0
             Class73.anInt4777 = 0
             FrameBufferObject.anInt4866 = 0

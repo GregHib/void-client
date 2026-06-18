@@ -482,7 +482,7 @@ import GameClock.method599
 import Direct3dModel.Companion.method661
 import Direct3dModel.Companion.method676
 import OpenGlModel.Companion.method681
-import Class65.Companion.method698
+import WorldMapImageBuilder.Companion.method698
 import Class66.method705
 import Class66.method713
 import Class67.Companion.method716

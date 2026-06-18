@@ -105,7 +105,7 @@ class RenderbufferObject : HashLinkedListNode, Interface9 {
             NpcActorEntity.anInt10084 = i_4_
             MinimapLineDrawer.aNanoTimer_5262 = method2826(15)
             method3309(-124)
-            Class65.aSceneCollisionEntryArrayArrayArray1148 = (Array<Array<Array<SceneCollisionEntry?>?>?>(i_1_) { Array<Array<SceneCollisionEntry?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(RegionSceneShifter.anInt7054) } })
+            WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 = (Array<Array<Array<SceneCollisionEntry?>?>?>(i_1_) { Array<Array<SceneCollisionEntry?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(RegionSceneShifter.anInt7054) } })
             TerrainTileShape.aTerrainTileArray8801 = arrayOfNulls<TerrainTile>(i_1_)
             if (bool) {
                 WidgetRedrawRegion.anIntArrayArray4253 = Array<IntArray?>(SpotAnimEntity.anInt6451) { IntArray(RegionSceneShifter.anInt7054) }

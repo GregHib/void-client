@@ -5,7 +5,7 @@ import CircleRasterizer.Companion.method2253
 import ConfigVarProgress.Companion.method2307
 import FlipTextureNode.Companion.method3065
 import CharacterRenderState.Companion.method2780
-import Class65.Companion.method696
+import WorldMapImageBuilder.Companion.method696
 
 /* Class325 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -870,7 +870,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, class68: Class68?)
                                 Class93.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 LinkedListNode.anInt4292 = 0
-                                val class348_sub47 = method2148((Class65.aFontMetaRef_1144), (TheoraVideoStream.aClass77_9029), -96)
+                                val class348_sub47 = method2148((WorldMapImageBuilder.aFontMetaRef_1144), (TheoraVideoStream.aClass77_9029), -96)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 InterfaceComponentGroup.method3243(125, class348_sub47)
                             }

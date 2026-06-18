@@ -25,7 +25,7 @@ class ModelOrSpriteHolder {
         fun method170(bool: Boolean): MapLabelMenuEntry? {
             if (bool != true) method174(-106, -36)
             anInt122++
-            if (WidgetActionEntry.anInt6985 < Class65.aClass110_Sub1Array1146!!.size) return Class65.aClass110_Sub1Array1146!![WidgetActionEntry.anInt6985++]
+            if (WidgetActionEntry.anInt6985 < WorldMapImageBuilder.aClass110_Sub1Array1146!!.size) return WorldMapImageBuilder.aClass110_Sub1Array1146!![WidgetActionEntry.anInt6985++]
             return null
         }
 

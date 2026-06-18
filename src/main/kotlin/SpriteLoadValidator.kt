@@ -29,7 +29,7 @@ class SpriteLoadValidator internal constructor(js5Archive: Js5Archive?, string: 
 
     companion object {
         @JvmField
-        var aClass65_4787: Class65? = null
+        var aWorldMapImageBuilder_4787: WorldMapImageBuilder? = null
         var anInt4790: Int = 0
         @JvmField
         var aShortArrayArray4791: Array<ShortArray?>? = null
@@ -43,7 +43,7 @@ class SpriteLoadValidator internal constructor(js5Archive: Js5Archive?, string: 
         @JvmStatic
         fun method1159(i: Byte) {
             aShortArrayArray4791 = null
-            aClass65_4787 = null
+            aWorldMapImageBuilder_4787 = null
             if (i >= 36) aJs5Archive_4796 = null
         }
     }

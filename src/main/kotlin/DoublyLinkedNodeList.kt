@@ -127,7 +127,7 @@ class DoublyLinkedNodeList {
                 HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 = ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082
                 NativeSprite.aTerrainTileArray5191 = SoundCacheState.aTerrainTileArray4142
             } else {
-                HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 = Class65.aSceneCollisionEntryArrayArrayArray1148
+                HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 = WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148
                 NativeSprite.aTerrainTileArray5191 = TerrainTileShape.aTerrainTileArray8801
             }
             MapAreaDefinition.anInt2524 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!!.size

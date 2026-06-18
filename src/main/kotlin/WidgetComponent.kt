@@ -962,7 +962,7 @@ class WidgetComponent {
             HoverActionEntry.aSpriteStore_1813!!.method302(-797644856)
             AbstractTileShape.aMapSceneDefLoader_6559!!.method1390(23)
             GraphicsOptionState.aItemDefinitionLoader_3147!!.method1283(1)
-            SpriteLoadValidator.aClass65_4787!!.method694(-1007)
+            SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method694(-1007)
             Class73.aModelDefinitionCache_4782!!.method1598(111)
             CalendarUtil.method2638(-4631)
             NpcCountAccessor.method1328(-26162)
