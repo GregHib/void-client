@@ -512,7 +512,7 @@ import NpcSpawnDecoder.method860
 import JagGlToolkitFactory.method861
 import AnimationFrameState.method866
 import AnimationFrameState.method867
-import Class95.method869
+import DirectionUtil.method869
 import Class98.Companion.method879
 import Class99.method883
 import IOException_Sub1.Companion.method130

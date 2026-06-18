@@ -53,7 +53,7 @@ abstract class SocketFactory {
         @JvmStatic
         fun method2051(i: Int, i_0_: Int, screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Byte, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
             try {
-                Class95.aScreenAnchorAlignment_1542 = screenAnchorAlignment
+                DirectionUtil.aScreenAnchorAlignment_1542 = screenAnchorAlignment
                 ChatEffectsOptionState.anInt5871 = i_7_
                 DefaultGraphicsOptionState.aTileRenderState_6128 = tileRenderState
                 DrawListState.anInt1479 = i

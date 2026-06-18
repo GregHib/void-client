@@ -100,7 +100,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 SlotBinding.aSlotBinding_3407!!.method2025(ConfigVarProgress("jagtheora"), false)
                 SlotBinding.aSlotBinding_3408!!.method2025(MapArchiveSource(SpriteLoadValidator.aJs5Archive_4796!!), false)
                 SlotBinding.aSlotBinding_3409!!.method2025(MapArchiveSource(KeyEventNode.aJs5Archive_4770!!), false)
-                SlotBinding.aSlotBinding_3410!!.method2025(MapArchiveSource(Class95.aJs5Archive_1541!!), false)
+                SlotBinding.aSlotBinding_3410!!.method2025(MapArchiveSource(DirectionUtil.aJs5Archive_1541!!), false)
                 SlotBinding.aSlotBinding_3411!!.method2025(MapArchiveSource(AnimationFrameState.aJs5Archive_1538!!), false)
                 SlotBinding.aSlotBinding_3412!!.method2025(MapArchiveSource(VideoAdChecker.aJs5Archive_3183!!), false)
                 SlotBinding.aSlotBinding_3413!!.method2025(MapArchiveSource(FloatGrid.aJs5Archive_4975!!), false)

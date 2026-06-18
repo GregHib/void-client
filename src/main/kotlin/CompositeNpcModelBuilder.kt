@@ -46,7 +46,7 @@ class CompositeNpcModelBuilder {
             val i_16_ = if (loadProgressCounters != null) loadProgressCounters.size else 0
             var i_17_ = 0
             while (i_16_ > i_17_) {
-                Class95.aClass348_Sub42_Sub17Array1543!![i_17_] = null
+                DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_] = null
                 if (loadProgressCounters!![i_17_] != null) {
                     val class17_18_ = widgetCache!!.method835((loadProgressCounters[i_17_]!!.anInt2454), 7)
                     if (class17_18_.anIntArray237 != null) {
@@ -55,13 +55,13 @@ class CompositeNpcModelBuilder {
                         val i_19_ = loadProgressCounters[i_17_]!!.anInt2451
                         val i_20_ = loadProgressCounters[i_17_]!!.anInt2455
                         var i_21_ = class17_18_.anIntArray237[i_19_]
-                        Class95.aClass348_Sub42_Sub17Array1543!![i_17_] = widgetCache.method839(i_21_ ushr 16, 3)
+                        DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_] = widgetCache.method839(i_21_ ushr 16, 3)
                         i_21_ = i_21_ and 0xffff
                         ScanlineRasterFiller.anIntArray2471!![i_17_] = i_21_
-                        if (Class95.aClass348_Sub42_Sub17Array1543!![i_17_] != null) {
-                            bool_13_ = bool_13_ or Class95.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3272(i_21_, 0)
-                            bool_12_ = bool_12_ or Class95.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3271(i_21_, 14)
-                            bool_14_ = bool_14_ or Class95.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3267((-109).toByte(), i_21_)
+                        if (DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_] != null) {
+                            bool_13_ = bool_13_ or DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3272(i_21_, 0)
+                            bool_12_ = bool_12_ or DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3271(i_21_, 14)
+                            bool_14_ = bool_14_ or DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3267((-109).toByte(), i_21_)
                         }
                         if ((class17_18_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_20_ != -1 && (class17_18_.anIntArray237.size > i_20_)) {
                             MinimapRenderer.anIntArray1583!![i_17_] = class17_18_.anIntArray267!![i_19_]
@@ -245,7 +245,7 @@ class CompositeNpcModelBuilder {
             var i_55_ = 0
             var i_56_ = 1
             while ( /**/i_16_ > i_55_) {
-                if (Class95.aClass348_Sub42_Sub17Array1543!![i_55_] != null) class64_51_!!.method603((-55).toByte(), -1 + MinimapPolygonDrawer.anIntArray5241!![i_55_], null, i_56_, ScanlineRasterFiller.anIntArray2471!![i_55_], BoxedIntHolder.anIntArray2967!![i_55_], LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_55_], 0, Class95.aClass348_Sub42_Sub17Array1543!![i_55_], false, MinimapRenderer.anIntArray1583!![i_55_])
+                if (DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_55_] != null) class64_51_!!.method603((-55).toByte(), -1 + MinimapPolygonDrawer.anIntArray5241!![i_55_], null, i_56_, ScanlineRasterFiller.anIntArray2471!![i_55_], BoxedIntHolder.anIntArray2967!![i_55_], LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_55_], 0, DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_55_], false, MinimapRenderer.anIntArray1583!![i_55_])
                 i_56_ = i_56_ shl 1
                 i_55_++
             }
@@ -270,7 +270,7 @@ class CompositeNpcModelBuilder {
             else if (class348_sub42_sub17_30_ != null) class64_51_!!.method617(i_27_, i_29_, class348_sub42_sub17_31_, 0, class348_sub42_sub17_30_, false, false, i_28_, i_8_ + -1)
             var i_60_ = 0
             while (i_16_ > i_60_) {
-                Class95.aClass348_Sub42_Sub17Array1543!![i_60_] = null
+                DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_60_] = null
                 LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_60_] = null
                 MapSceneTile.aWidgetDefinitionArray1048s!![i_60_] = null
                 i_60_++

@@ -114,7 +114,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 Buffer.method3354(-52)
                 ShortKeyNode.Companion.aJs5Archive_6909!!.method412((-124).toByte())
                 TextureGenerator.aJs5Archive_2490!!.method412((-119).toByte())
-                Class95.aJs5Archive_1541!!.method412(37.toByte())
+                DirectionUtil.aJs5Archive_1541!!.method412(37.toByte())
                 IntKeyNode.Companion.aJs5Archive_6980!!.method412((-113).toByte())
                 ModelFacePriorityNode.aJs5Archive_1878!!.method412((-116).toByte())
                 Class367_Sub10.aJs5Archive_7382!!.method412((-110).toByte())

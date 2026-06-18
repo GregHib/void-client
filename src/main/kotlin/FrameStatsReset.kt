@@ -41,7 +41,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
         }
 
         fun method1135(i: Int) {
-            Class95.aJs5Archive_1541!!.anInt634 = 1
+            DirectionUtil.aJs5Archive_1541!!.anInt634 = 1
             anInt5798++
             ParameterizedText.method3211((-119).toByte())
             FloatCameraTransform.anInt5740 = 0
@@ -343,7 +343,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7551 = 0
             VorbisOggDecoder.anInt8990 = 0
             Crc64Hashable.anInt4994 = 0
-            Class95.anInt1539 = 0
+            DirectionUtil.anInt1539 = 0
             ModelDefinitionCache.anInt2867 = 0
             ProportionalScrollbarComponent.anInt9928 = 0
             FrameBufferObject.anInt4871 = 0
@@ -4188,7 +4188,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             method2145(-24498)
             FloatCameraTransform.aLong5745 = 0L
             LightingOptionState.aClass348_Sub26_5881 = null
-            Class95.aJs5Archive_1541!!.anInt634 = 2
+            DirectionUtil.aJs5Archive_1541!!.anInt634 = 2
         }
 
         var anInt5795: Int = 0

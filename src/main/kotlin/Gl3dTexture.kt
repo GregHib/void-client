@@ -187,7 +187,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 CacheStateResetter.aIntRange_123,
                 ParticleSystemState.aIntRange_2196,
                 CompassSmoother.aIntRange_3368,
-                Class95.aIntRange_1540,
+                DirectionUtil.aIntRange_1540,
                 ProjectileDefinition.aIntRange_3842,
                 TextureQualityOptionState.aIntRange_5997,
                 LocTypeDefinition.aIntRange_4015,

@@ -1,7 +1,7 @@
 /* Class95 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class95 {
+object DirectionUtil {
     @JvmField
     var anInt1539: Int = 0
     var aIntRange_1540: IntRange? = IntRange(113, 1)

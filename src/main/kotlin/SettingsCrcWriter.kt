@@ -15,7 +15,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(121.toByte(), ShortKeyNode.aJs5Archive_6909!!.method389(26))
         anInt2121++
         class348_sub49_sub2.writeInt(112.toByte(), TextureGenerator.aJs5Archive_2490!!.method389(-106))
-        class348_sub49_sub2.writeInt(118.toByte(), Class95.aJs5Archive_1541!!.method389(-109))
+        class348_sub49_sub2.writeInt(118.toByte(), DirectionUtil.aJs5Archive_1541!!.method389(-109))
         class348_sub49_sub2.writeInt(120.toByte(), IntKeyNode.aJs5Archive_6980!!.method389(-108))
         class348_sub49_sub2.writeInt(93.toByte(), ModelFacePriorityNode.aJs5Archive_1878!!.method389(-104))
         class348_sub49_sub2.writeInt(90.toByte(), Class367_Sub10.aJs5Archive_7382!!.method389(-122))

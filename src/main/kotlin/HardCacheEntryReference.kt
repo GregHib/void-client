@@ -1093,7 +1093,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (Class95.aIntRange_1540 == ModelVertexColorBuffer.aIntRange_6584) {
+            if (DirectionUtil.aIntRange_1540 == ModelVertexColorBuffer.aIntRange_6584) {
                 MapSceneTile.aBoxedIntHolder_1055 = WidgetTextConfig.method360((-57).toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255))
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
