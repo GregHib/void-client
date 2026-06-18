@@ -28,7 +28,7 @@ class OpenGlModel : AbstractModel {
     private var aShort5544: Short = 0
     private var aFloatArray5552: FloatArray? = null
     private var anIntArrayArray5553: Array<IntArray?>? = null
-    private var anInterface2_5554: Interface2? = null
+    private var anByteBufferReader_5554: ByteBufferReader? = null
     private var aBoolean5555 = true
     private var anInt5556 = 0
     private var anInt5557: Int
@@ -83,7 +83,7 @@ class OpenGlModel : AbstractModel {
             anIntArray5644!![i_2_] = (anIntArray5593!![i_2_] * i_0_ - -(anIntArray5644!![i_2_] * i_1_) shr 14)
             anIntArray5593!![i_2_] = i_3_
         }
-        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anByteBufferReader_1811 = null
         aBoolean5527 = false
     }
 
@@ -198,7 +198,7 @@ class OpenGlModel : AbstractModel {
             anIntArray5543!![i_27_] = i_28_
             i_27_++
         }
-        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anByteBufferReader_1811 = null
         aBoolean5527 = false
     }
 
@@ -385,10 +385,10 @@ class OpenGlModel : AbstractModel {
                                                     }
                                                     i_85_++
                                                 }
-                                                if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
-                                                if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
-                                                if ((class64_sub3_44_.aHoverActionEntry_5563) == null && ((class64_sub3_44_.aHoverActionEntry_5610) != null)) class64_sub3_44_.aHoverActionEntry_5610!!.anInterface2_1811 = null
-                                                if ((class64_sub3_44_.aHoverActionEntry_5563) != null) class64_sub3_44_.aHoverActionEntry_5563!!.anInterface2_1811 = null
+                                                if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
+                                                if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anByteBufferReader_1811 = null
+                                                if ((class64_sub3_44_.aHoverActionEntry_5563) == null && ((class64_sub3_44_.aHoverActionEntry_5610) != null)) class64_sub3_44_.aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
+                                                if ((class64_sub3_44_.aHoverActionEntry_5563) != null) class64_sub3_44_.aHoverActionEntry_5563!!.anByteBufferReader_1811 = null
                                             }
                                         }
                                         i_76_++
@@ -632,7 +632,7 @@ class OpenGlModel : AbstractModel {
             if (i_163_ != 128) anIntArray5644!![i_164_] = anIntArray5644!![i_164_] * i_163_ shr 7
             i_164_++
         }
-        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anByteBufferReader_1811 = null
         aBoolean5527 = false
     }
 
@@ -705,9 +705,9 @@ class OpenGlModel : AbstractModel {
             aShortArray5576!![i_175_] = ((i_172_ * aShortArray5576!![i_175_] + -(i_171_ * aShortArray5564!![i_175_])) shr 14).toShort()
             aShortArray5564!![i_175_] = i_176_.toShort()
         }
-        if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
-        if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
-        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
+        if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anByteBufferReader_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anByteBufferReader_1811 = null
         aBoolean5527 = false
     }
 
@@ -777,7 +777,7 @@ class OpenGlModel : AbstractModel {
                 class48.anInt858 = ((0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
             }
         }
-        if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
     }
 
     public override fun H(i: Int, i_204_: Int, i_205_: Int) {
@@ -790,7 +790,7 @@ class OpenGlModel : AbstractModel {
             i_206_++
         }
         aBoolean5527 = false
-        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anByteBufferReader_1811 = null
     }
 
     public override fun a(i: Int) {
@@ -805,7 +805,7 @@ class OpenGlModel : AbstractModel {
             i_209_++
         }
         aBoolean5527 = false
-        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anByteBufferReader_1811 = null
     }
 
     public override fun F(): Boolean {
@@ -873,7 +873,7 @@ class OpenGlModel : AbstractModel {
             if (ParticleEmitterDef.method2187(i, -79, anInt5556)) {
                 class64_sub3_211_.aHoverActionEntry_5605 = class64_sub3_213_!!.aHoverActionEntry_5605
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x1).toByte()
-                class64_sub3_211_.aHoverActionEntry_5605!!.anInterface2_1811 = aHoverActionEntry_5605!!.anInterface2_1811
+                class64_sub3_211_.aHoverActionEntry_5605!!.anByteBufferReader_1811 = aHoverActionEntry_5605!!.anByteBufferReader_1811
                 class64_sub3_211_.aHoverActionEntry_5605!!.aByte1812 = aHoverActionEntry_5605!!.aByte1812
             } else if (!method616(i_212_ + 2, i, anInt5556)) class64_sub3_211_.aHoverActionEntry_5605 = null
             else class64_sub3_211_.aHoverActionEntry_5605 = aHoverActionEntry_5605
@@ -899,7 +899,7 @@ class OpenGlModel : AbstractModel {
             if (BoundsConstraintEntry.method2056(i, 108, anInt5556)) {
                 class64_sub3_211_.aHoverActionEntry_5610 = class64_sub3_213_!!.aHoverActionEntry_5610
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x2).toByte()
-                class64_sub3_211_.aHoverActionEntry_5610!!.anInterface2_1811 = aHoverActionEntry_5610!!.anInterface2_1811
+                class64_sub3_211_.aHoverActionEntry_5610!!.anByteBufferReader_1811 = aHoverActionEntry_5610!!.anByteBufferReader_1811
                 class64_sub3_211_.aHoverActionEntry_5610!!.aByte1812 = aHoverActionEntry_5610!!.aByte1812
             } else if (HitsplatDefinition.method1193(anInt5556, i, true)) class64_sub3_211_.aHoverActionEntry_5610 = aHoverActionEntry_5610
             else class64_sub3_211_.aHoverActionEntry_5610 = null
@@ -956,7 +956,7 @@ class OpenGlModel : AbstractModel {
             if (OutgoingPacketNode.method3325(i, anInt5556, true)) {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x4).toByte()
                 class64_sub3_211_.aHoverActionEntry_5563 = class64_sub3_213_!!.aHoverActionEntry_5563
-                class64_sub3_211_.aHoverActionEntry_5563!!.anInterface2_1811 = aHoverActionEntry_5563!!.anInterface2_1811
+                class64_sub3_211_.aHoverActionEntry_5563!!.anByteBufferReader_1811 = aHoverActionEntry_5563!!.anByteBufferReader_1811
                 class64_sub3_211_.aHoverActionEntry_5563!!.aByte1812 = aHoverActionEntry_5563!!.aByte1812
             } else if (!method166(108.toByte(), anInt5556, i)) class64_sub3_211_.aHoverActionEntry_5563 = null
             else class64_sub3_211_.aHoverActionEntry_5563 = aHoverActionEntry_5563
@@ -982,7 +982,7 @@ class OpenGlModel : AbstractModel {
             if (SocketStreamWorker.method1475((-96).toByte(), anInt5556, i)) {
                 class64_sub3_211_.aHoverActionEntry_5620 = class64_sub3_213_!!.aHoverActionEntry_5620
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x8).toByte()
-                class64_sub3_211_.aHoverActionEntry_5620!!.anInterface2_1811 = aHoverActionEntry_5620!!.anInterface2_1811
+                class64_sub3_211_.aHoverActionEntry_5620!!.anByteBufferReader_1811 = aHoverActionEntry_5620!!.anByteBufferReader_1811
                 class64_sub3_211_.aHoverActionEntry_5620!!.aByte1812 = aHoverActionEntry_5620!!.aByte1812
             } else if (IndexedFileCache.method1163(anInt5556, (-60).toByte(), i)) class64_sub3_211_.aHoverActionEntry_5620 = aHoverActionEntry_5620
             else class64_sub3_211_.aHoverActionEntry_5620 = null
@@ -1074,10 +1074,10 @@ class OpenGlModel : AbstractModel {
     }
 
     public override fun LA(i: Int) {
-        if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
         anInt5623++
         aShort5645 = i.toShort()
-        if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anByteBufferReader_1811 = null
     }
 
     public override fun wa() {
@@ -1087,7 +1087,7 @@ class OpenGlModel : AbstractModel {
             anIntArray5644!![i] = anIntArray5644!![i] - -7 shr 4
         }
         anInt5585++
-        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anByteBufferReader_1811 = null
         aBoolean5527 = false
     }
 
@@ -1269,7 +1269,7 @@ class OpenGlModel : AbstractModel {
                     }
                     aBoolean5527 = false
                     if (aHoverActionEntry_5605 == null) break
-                    aHoverActionEntry_5605!!.anInterface2_1811 = null
+                    aHoverActionEntry_5605!!.anByteBufferReader_1811 = null
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("paa.p(" + i + ',' + i_256_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_257_ != null) "{...}" else "null") + ',' + i_258_ + ',' + i_259_ + ',' + i_260_ + ')'))
@@ -1307,16 +1307,16 @@ class OpenGlModel : AbstractModel {
                     class48.anInt858 = ((0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
                 }
             }
-            if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+            if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
         }
     }
 
     private fun method688(i: Int, bool: Boolean) {
         anInt5588++
-        var bool_291_ = (aHoverActionEntry_5610 != null && aHoverActionEntry_5610!!.anInterface2_1811 == null)
-        var bool_292_ = (aHoverActionEntry_5563 != null && aHoverActionEntry_5563!!.anInterface2_1811 == null)
-        var bool_293_ = (aHoverActionEntry_5605 != null && aHoverActionEntry_5605!!.anInterface2_1811 == null)
-        var bool_294_ = (aHoverActionEntry_5620 != null && aHoverActionEntry_5620!!.anInterface2_1811 == null)
+        var bool_291_ = (aHoverActionEntry_5610 != null && aHoverActionEntry_5610!!.anByteBufferReader_1811 == null)
+        var bool_292_ = (aHoverActionEntry_5563 != null && aHoverActionEntry_5563!!.anByteBufferReader_1811 == null)
+        var bool_293_ = (aHoverActionEntry_5605 != null && aHoverActionEntry_5605!!.anByteBufferReader_1811 == null)
+        var bool_294_ = (aHoverActionEntry_5620 != null && aHoverActionEntry_5620!!.anByteBufferReader_1811 == null)
         if (bool) {
             bool_294_ = bool_294_ and ((aByte5581.toInt() and 0x8) != 0)
             bool_292_ = bool_292_ and ((aByte5581.toInt() and 0x4) != 0)
@@ -1564,31 +1564,31 @@ class OpenGlModel : AbstractModel {
                     }
                 }
                 class348_sub49_sub1.anInt7197 = anInt5529 * i_295_
-                val interface2: Interface2?
+                val byteBufferReader: ByteBufferReader?
                 if (bool) {
-                    if (anInterface2_5554 != null) anInterface2_5554!!.method11(i_295_.toInt(), class348_sub49_sub1.anInt7197, (class348_sub49_sub1.aByteArray7154), -9894)
-                    else anInterface2_5554 = aHa_Sub2_5598.method3731(2, true, i_295_.toInt(), (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.anInt7197))
-                    interface2 = anInterface2_5554
+                    if (anByteBufferReader_5554 != null) anByteBufferReader_5554!!.method11(i_295_.toInt(), class348_sub49_sub1.anInt7197, (class348_sub49_sub1.aByteArray7154), -9894)
+                    else anByteBufferReader_5554 = aHa_Sub2_5598.method3731(2, true, i_295_.toInt(), (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.anInt7197))
+                    byteBufferReader = anByteBufferReader_5554
                     aByte5581 = 0.toByte()
                 } else {
-                    interface2 = aHa_Sub2_5598.method3731(2, false, i_295_.toInt(), (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.anInt7197))
+                    byteBufferReader = aHa_Sub2_5598.method3731(2, false, i_295_.toInt(), (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.anInt7197))
                     aBoolean5555 = true
                 }
                 if (bool_293_) {
                     aHoverActionEntry_5605!!.aByte1812 = i_296_
-                    aHoverActionEntry_5605!!.anInterface2_1811 = interface2
+                    aHoverActionEntry_5605!!.anByteBufferReader_1811 = byteBufferReader
                 }
                 if (bool_294_) {
                     aHoverActionEntry_5620!!.aByte1812 = i_299_
-                    aHoverActionEntry_5620!!.anInterface2_1811 = interface2
+                    aHoverActionEntry_5620!!.anByteBufferReader_1811 = byteBufferReader
                 }
                 if (bool_291_) {
                     aHoverActionEntry_5610!!.aByte1812 = i_297_
-                    aHoverActionEntry_5610!!.anInterface2_1811 = interface2
+                    aHoverActionEntry_5610!!.anByteBufferReader_1811 = byteBufferReader
                 }
                 if (bool_292_) {
                     aHoverActionEntry_5563!!.aByte1812 = i_298_
-                    aHoverActionEntry_5563!!.anInterface2_1811 = interface2
+                    aHoverActionEntry_5563!!.anByteBufferReader_1811 = byteBufferReader
                 }
             }
         }
@@ -1718,20 +1718,20 @@ class OpenGlModel : AbstractModel {
             aBoolean5555 = false
             if (aModelFacePriorityNodeArray5640 == null && aWidgetRedrawRegionArray5541 == null && aMapSceneTileDefinitionArray5621 == null) {
                 if (anIntArray5543 != null && !GlShaderProgramHandle.method2659(123.toByte(), anInt5648, anInt5556)) {
-                    if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anInterface2_1811 != null)) {
+                    if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anByteBufferReader_1811 != null)) {
                         if (!aBoolean5527) method692((-123).toByte())
                         anIntArray5543 = null
                     } else aBoolean5555 = true
                 }
                 if (anIntArray5593 != null && !method3999(anInt5556, anInt5648, 458752)) {
-                    if (aHoverActionEntry_5605 != null && (aHoverActionEntry_5605!!.anInterface2_1811 == null)) aBoolean5555 = true
+                    if (aHoverActionEntry_5605 != null && (aHoverActionEntry_5605!!.anByteBufferReader_1811 == null)) aBoolean5555 = true
                     else {
                         if (!aBoolean5527) method692((-123).toByte())
                         anIntArray5593 = null
                     }
                 }
                 if (anIntArray5644 != null && !ConfigDefinitionLoader.method1221(-3157, anInt5648, anInt5556)) {
-                    if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anInterface2_1811 != null)) {
+                    if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anByteBufferReader_1811 != null)) {
                         if (!aBoolean5527) method692((-123).toByte())
                         anIntArray5644 = null
                     } else aBoolean5555 = true
@@ -1743,13 +1743,13 @@ class OpenGlModel : AbstractModel {
             }
             if (aByteArray5594 != null && !AnimatedModelRenderer.method989(anInt5648, -385, anInt5556)) {
                 if (aHoverActionEntry_5563 == null) {
-                    if (aHoverActionEntry_5610 == null || (aHoverActionEntry_5610!!.anInterface2_1811 != null)) {
+                    if (aHoverActionEntry_5610 == null || (aHoverActionEntry_5610!!.anByteBufferReader_1811 != null)) {
                         aByteArray5594 = null
                         aShortArray5576 = null
                         aShortArray5583 = aShortArray5576
                         aShortArray5564 = aShortArray5583
                     } else aBoolean5555 = true
-                } else if (aHoverActionEntry_5563!!.anInterface2_1811 == null) aBoolean5555 = true
+                } else if (aHoverActionEntry_5563!!.anByteBufferReader_1811 == null) aBoolean5555 = true
                 else {
                     aByteArray5594 = null
                     aShortArray5576 = null
@@ -1758,15 +1758,15 @@ class OpenGlModel : AbstractModel {
                 }
             }
             if (aShortArray5580 != null && !CacheIndexManager.method2358(-116, anInt5648, anInt5556)) {
-                if (aHoverActionEntry_5610 == null || aHoverActionEntry_5610!!.anInterface2_1811 != null) aShortArray5580 = null
+                if (aHoverActionEntry_5610 == null || aHoverActionEntry_5610!!.anByteBufferReader_1811 != null) aShortArray5580 = null
                 else aBoolean5555 = true
             }
             if (aByteArray5542 != null && !method1846(anInt5556, anInt5648, 74)) {
-                if (aHoverActionEntry_5610 == null || aHoverActionEntry_5610!!.anInterface2_1811 != null) aByteArray5542 = null
+                if (aHoverActionEntry_5610 == null || aHoverActionEntry_5610!!.anByteBufferReader_1811 != null) aByteArray5542 = null
                 else aBoolean5555 = true
             }
             if (aFloatArray5552 != null && !NodeDequeHolder.method877(anInt5648, anInt5556, (-127).toByte())) {
-                if (aHoverActionEntry_5620 != null && aHoverActionEntry_5620!!.anInterface2_1811 == null) aBoolean5555 = true
+                if (aHoverActionEntry_5620 != null && aHoverActionEntry_5620!!.anByteBufferReader_1811 == null) aBoolean5555 = true
                 else {
                     aFloatArray5571 = null
                     aFloatArray5552 = aFloatArray5571
@@ -1774,11 +1774,11 @@ class OpenGlModel : AbstractModel {
             }
             val i_380_ = -117 / ((69 - i) / 41)
             if (aShortArray5601 != null && !method3100(anInt5556, false, anInt5648)) {
-                if (aHoverActionEntry_5610 != null && aHoverActionEntry_5610!!.anInterface2_1811 == null) aBoolean5555 = true
+                if (aHoverActionEntry_5610 != null && aHoverActionEntry_5610!!.anByteBufferReader_1811 == null) aBoolean5555 = true
                 else aShortArray5601 = null
             }
             if (aShortArray5592 != null && !CollisionFlagQuery.method724(anInt5648, anInt5556, 393216)) {
-                if ((aArchiveFileConditionWrapper_5575 != null && aArchiveFileConditionWrapper_5575!!.anInterface8_3463 == null) || aHoverActionEntry_5610 != null && (aHoverActionEntry_5610!!.anInterface2_1811) == null) aBoolean5555 = true
+                if ((aArchiveFileConditionWrapper_5575 != null && aArchiveFileConditionWrapper_5575!!.anInterface8_3463 == null) || aHoverActionEntry_5610 != null && (aHoverActionEntry_5610!!.anByteBufferReader_1811) == null) aBoolean5555 = true
                 else {
                     aShortArray5566 = null
                     aShortArray5579 = aShortArray5566
@@ -1816,7 +1816,7 @@ class OpenGlModel : AbstractModel {
                 class48.anInt858 = ((ParticleEmitterNode.anIntArray179!![(aShortArray5580!![class118.anInt1783].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class48.anInt858))
             }
         }
-        if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
     }
 
     public override fun method619(): Array<ModelFacePriorityNode?>? {
@@ -2059,8 +2059,8 @@ class OpenGlModel : AbstractModel {
                             }
                         }
                     }
-                    if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
-                    if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
+                    if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
+                    if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anByteBufferReader_1811 = null
                 }
             } else if (i == 3) {
                 for (i_445_ in 0..<i_390_) {
@@ -2095,7 +2095,7 @@ class OpenGlModel : AbstractModel {
                                 else if (i_455_ > 255) i_455_ = 255
                                 aByteArray5542!![i_454_] = i_455_.toByte()
                             }
-                            if (is_452_.size > 0 && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+                            if (is_452_.size > 0 && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
                         }
                         i_450_++
                     }
@@ -2130,7 +2130,7 @@ class OpenGlModel : AbstractModel {
                                 else if (i_465_ > 127) i_465_ = 127
                                 aShortArray5580!![i_461_] = (BoundsConstraintEntry.method2057((BoundsConstraintEntry.method2057(i_464_ shl 7, i_463_ shl 10)), i_465_)).toShort()
                             }
-                            if (is_459_.size > 0 && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+                            if (is_459_.size > 0 && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
                         }
                         i_457_++
                     }
@@ -2284,7 +2284,7 @@ class OpenGlModel : AbstractModel {
                 } else i_497_ = 0
                 aByteArray5542!![i_496_] = i_497_.toByte()
             }
-            if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+            if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
             if (aMapSceneTileDefinitionArray5621 != null) {
                 for (i_498_ in 0..<anInt5536) {
                     val class118 = aMapSceneTileDefinitionArray5621!![i_498_]!!
@@ -2311,7 +2311,7 @@ class OpenGlModel : AbstractModel {
                 aShortArray5580!![i_499_] = (BoundsConstraintEntry.method2057(i_503_, BoundsConstraintEntry.method2057(i_502_ shl 7, i_501_ shl 10))).toShort()
                 i_499_++
             }
-            if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+            if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
             if (aMapSceneTileDefinitionArray5621 != null) {
                 for (i_504_ in 0..<anInt5536) {
                     val class118 = aMapSceneTileDefinitionArray5621!![i_504_]!!
@@ -2358,7 +2358,7 @@ class OpenGlModel : AbstractModel {
     public override fun C(i: Int) {
         anInt5602++
         aShort5544 = i.toShort()
-        if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
     }
 
     public override fun v() {
@@ -2384,11 +2384,11 @@ class OpenGlModel : AbstractModel {
             aShortArray5566!![i] = i_508_
             i++
         }
-        if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
-        if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
+        if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anByteBufferReader_1811 = null
         aBoolean5527 = false
         if (aArchiveFileConditionWrapper_5575 != null) aArchiveFileConditionWrapper_5575!!.anInterface8_3463 = null
-        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anInterface2_1811 = null
+        if (aHoverActionEntry_5605 != null) aHoverActionEntry_5605!!.anByteBufferReader_1811 = null
     }
 
     public override fun method610(abstractCameraTransform: AbstractCameraTransform, i: Int, bool: Boolean) {
@@ -2568,8 +2568,8 @@ class OpenGlModel : AbstractModel {
                                 }
                             }
                         }
-                        if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
-                        if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anInterface2_1811 = null
+                        if (aHoverActionEntry_5563 == null && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
+                        if (aHoverActionEntry_5563 != null) aHoverActionEntry_5563!!.anByteBufferReader_1811 = null
                     }
                 } else {
                     val i_562_ = is_514_[9] shl 4
@@ -2786,7 +2786,7 @@ class OpenGlModel : AbstractModel {
                                     if (i_658_ < 0) i_658_ = 0
                                     else if (i_658_ > 255) i_658_ = 255
                                     aByteArray5542!![i_657_] = i_658_.toByte()
-                                    if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+                                    if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
                                 }
                                 i_656_++
                             }
@@ -2823,7 +2823,7 @@ class OpenGlModel : AbstractModel {
                                     if (i_668_ < 0) i_668_ = 0
                                     else if (i_668_ > 127) i_668_ = 127
                                     aShortArray5580!![i_664_] = (BoundsConstraintEntry.method2057(i_668_, (BoundsConstraintEntry.method2057(i_666_ shl 10, i_667_ shl 7)))).toShort()
-                                    if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anInterface2_1811 = null
+                                    if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
                                 }
                                 i_663_++
                             }

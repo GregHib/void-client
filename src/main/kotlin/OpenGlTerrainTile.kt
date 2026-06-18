@@ -40,7 +40,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
     @JvmField
     var aHoverActionEntry_8277: HoverActionEntry? = null
     private var aHashtable_8278: Hashtable? = null
-    private var anInterface2_8279: Interface2? = null
+    private var anByteBufferReader_8279: ByteBufferReader? = null
     private var anInt8280 = 0
     private var aFloatArrayArray8281: Array<FloatArray?>?
     private var aClass348_Sub20Array8282: Array<TextureTileRenderer?>? = null
@@ -374,18 +374,18 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 i_100_++
             }
             stream.a()
-            anInterface2_8279 = this.aHa_Sub2_8272!!.method3739(8448, nativeheapbuffer, false, i, stream.b())
-            this.aHoverActionEntry_8276 = HoverActionEntry(anInterface2_8279, 5126, 3, 0)
-            aHoverActionEntry_8274 = HoverActionEntry(anInterface2_8279, 5121, 4, 12)
+            anByteBufferReader_8279 = this.aHa_Sub2_8272!!.method3739(8448, nativeheapbuffer, false, i, stream.b())
+            this.aHoverActionEntry_8276 = HoverActionEntry(anByteBufferReader_8279, 5126, 3, 0)
+            aHoverActionEntry_8274 = HoverActionEntry(anByteBufferReader_8279, 5121, 4, 12)
             val i_111_: Int
             if (anIntArrayArrayArray8252 == null) {
                 i_111_ = 24
-                this.aHoverActionEntry_8277 = HoverActionEntry(anInterface2_8279, 5126, 2, 16)
+                this.aHoverActionEntry_8277 = HoverActionEntry(anByteBufferReader_8279, 5126, 2, 16)
             } else {
                 i_111_ = 28
-                this.aHoverActionEntry_8277 = HoverActionEntry(anInterface2_8279, 5126, 3, 16)
+                this.aHoverActionEntry_8277 = HoverActionEntry(anByteBufferReader_8279, 5126, 3, 16)
             }
-            if ((0x7 and this.anInt8235) != 0) this.aHoverActionEntry_8275 = HoverActionEntry(anInterface2_8279, 5126, 3, i_111_)
+            if ((0x7 and this.anInt8235) != 0) this.aHoverActionEntry_8275 = HoverActionEntry(anByteBufferReader_8279, 5126, 3, i_111_)
             val ls = LongArray(aClass348_Sub20Array8282!!.size)
             for (i_112_ in aClass348_Sub20Array8282!!.indices) {
                 val class348_sub20 = aClass348_Sub20Array8282!![i_112_]!!

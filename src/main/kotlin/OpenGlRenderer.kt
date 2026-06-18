@@ -198,7 +198,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @JvmField
     var anInt7795: Int = 0
     private var anInt7796 = 0
-    private var anInterface2_7797: Interface2? = null
+    private var anByteBufferReader_7797: ByteBufferReader? = null
     @JvmField
     var aClass348_Sub49_Sub1_7798: FloatBuffer?
     private var anInt7799 = 0
@@ -286,7 +286,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     var aHoverActionEntry_7849: HoverActionEntry? = null
     private val aFloatArray7850: FloatArray
     private var aFloat7851: Float
-    private var anInterface2_7852: Interface2? = null
+    private var anByteBufferReader_7852: ByteBufferReader? = null
     @JvmField
     var anInt7853: Int
     private var aFloat7854 = 0f
@@ -398,7 +398,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         }
     }
 
-    fun method3731(i: Int, bool: Boolean, i_8_: Int, `is`: ByteArray?, i_9_: Int): Interface2 {
+    fun method3731(i: Int, bool: Boolean, i_8_: Int, `is`: ByteArray?, i_9_: Int): ByteBufferReader {
         try {
             if (i != 2) method3781((-13).toByte(), 54)
             anInt7530++
@@ -522,7 +522,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7526++
     }
 
-    fun method3739(i: Int, buffer: Buffer?, bool: Boolean, i_35_: Int, i_36_: Int): Interface2 {
+    fun method3739(i: Int, buffer: Buffer?, bool: Boolean, i_35_: Int, i_36_: Int): ByteBufferReader {
         try {
             if (i != 8448) this.aClass64_Sub3_7844 = null
             anInt7605++
@@ -798,16 +798,16 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         } while (false)
     }
 
-    fun method3750(i: Int, interface2: Interface2?) {
+    fun method3750(i: Int, byteBufferReader: ByteBufferReader?) {
         try {
             if (i <= 39) this.anInt7782 = 120
-            if (interface2 !== anInterface2_7852) {
-                if (aBoolean7873) glBindBufferARB(34962, interface2!!.method10(true))
-                anInterface2_7852 = interface2
+            if (byteBufferReader !== anByteBufferReader_7852) {
+                if (aBoolean7873) glBindBufferARB(34962, byteBufferReader!!.method10(true))
+                anByteBufferReader_7852 = byteBufferReader
             }
             anInt7552++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qo.D(" + i + ',' + (if (interface2 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("qo.D(" + i + ',' + (if (byteBufferReader != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1801,7 +1801,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             try {
                 this.aNativeHeap7730 = (var_shaderProgram as NativeShaderProgram).aNativeHeap9770
                 anInt7573++
-                if (anInterface2_7797 != null) break
+                if (anByteBufferReader_7797 != null) break
                 val class348_sub49_sub1 = FloatBuffer(80)
                 if (this.aBoolean7775) {
                     class348_sub49_sub1.method3400(-1.0f, (-122).toByte())
@@ -1846,9 +1846,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     class348_sub49_sub1.method3399(18291, 0.0f)
                     class348_sub49_sub1.method3399(18291, 0.0f)
                 }
-                anInterface2_7797 = method3731(2, false, 20, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.anInt7197))
-                this.aHoverActionEntry_7849 = HoverActionEntry(anInterface2_7797, 5126, 3, 0)
-                this.aHoverActionEntry_7833 = HoverActionEntry(anInterface2_7797, 5126, 2, 12)
+                anByteBufferReader_7797 = method3731(2, false, 20, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.anInt7197))
+                this.aHoverActionEntry_7849 = HoverActionEntry(anByteBufferReader_7797, 5126, 3, 0)
+                this.aHoverActionEntry_7833 = HoverActionEntry(anByteBufferReader_7797, 5126, 2, 12)
                 aParticleSortRenderer_7711.method1654(643267468, this)
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, "qo.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
@@ -2444,25 +2444,25 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     fun method3794(hoverActionEntry: HoverActionEntry?, hoverActionEntry_279_: HoverActionEntry?, i: Int, hoverActionEntry_280_: HoverActionEntry?, hoverActionEntry_281_: HoverActionEntry?) {
         try {
             if (hoverActionEntry != null) {
-                method3750(i + 26493, hoverActionEntry.anInterface2_1811)
-                glVertexPointer(hoverActionEntry.aByte1814.toInt(), hoverActionEntry.aShort1810.toInt(), anInterface2_7852!!.method13((-97).toByte()), (anInterface2_7852!!.method12(42.toByte()) - -(hoverActionEntry.aByte1812).toLong()))
+                method3750(i + 26493, hoverActionEntry.anByteBufferReader_1811)
+                glVertexPointer(hoverActionEntry.aByte1814.toInt(), hoverActionEntry.aShort1810.toInt(), anByteBufferReader_7852!!.method13((-97).toByte()), (anByteBufferReader_7852!!.method12(42.toByte()) - -(hoverActionEntry.aByte1812).toLong()))
                 glEnableClientState(32884)
             } else glDisableClientState(32884)
             anInt7529++
             if (hoverActionEntry_281_ != null) {
-                method3750(56, hoverActionEntry_281_.anInterface2_1811)
-                glNormalPointer(hoverActionEntry_281_.aShort1810.toInt(), anInterface2_7852!!.method13((-97).toByte()), (anInterface2_7852!!.method12(42.toByte()) - -(hoverActionEntry_281_.aByte1812).toLong()))
+                method3750(56, hoverActionEntry_281_.anByteBufferReader_1811)
+                glNormalPointer(hoverActionEntry_281_.aShort1810.toInt(), anByteBufferReader_7852!!.method13((-97).toByte()), (anByteBufferReader_7852!!.method12(42.toByte()) - -(hoverActionEntry_281_.aByte1812).toLong()))
                 glEnableClientState(32885)
             } else glDisableClientState(32885)
             if (hoverActionEntry_279_ != null) {
-                method3750(67, hoverActionEntry_279_.anInterface2_1811)
-                glColorPointer(hoverActionEntry_279_.aByte1814.toInt(), hoverActionEntry_279_.aShort1810.toInt(), anInterface2_7852!!.method13((-97).toByte()), (anInterface2_7852!!.method12(42.toByte()) + (hoverActionEntry_279_.aByte1812).toLong()))
+                method3750(67, hoverActionEntry_279_.anByteBufferReader_1811)
+                glColorPointer(hoverActionEntry_279_.aByte1814.toInt(), hoverActionEntry_279_.aShort1810.toInt(), anByteBufferReader_7852!!.method13((-97).toByte()), (anByteBufferReader_7852!!.method12(42.toByte()) + (hoverActionEntry_279_.aByte1812).toLong()))
                 glEnableClientState(32886)
             } else glDisableClientState(32886)
             if (i == -26411) {
                 if (hoverActionEntry_280_ != null) {
-                    method3750(119, hoverActionEntry_280_.anInterface2_1811)
-                    glTexCoordPointer(hoverActionEntry_280_.aByte1814.toInt(), hoverActionEntry_280_.aShort1810.toInt(), anInterface2_7852!!.method13((-97).toByte()), (anInterface2_7852!!.method12(42.toByte()) - -hoverActionEntry_280_.aByte1812.toLong()))
+                    method3750(119, hoverActionEntry_280_.anByteBufferReader_1811)
+                    glTexCoordPointer(hoverActionEntry_280_.aByte1814.toInt(), hoverActionEntry_280_.aShort1810.toInt(), anByteBufferReader_7852!!.method13((-97).toByte()), (anByteBufferReader_7852!!.method12(42.toByte()) - -hoverActionEntry_280_.aByte1812.toLong()))
                     glEnableClientState(32888)
                 } else glDisableClientState(32888)
             }

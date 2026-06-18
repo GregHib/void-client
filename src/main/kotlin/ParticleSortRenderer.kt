@@ -13,7 +13,7 @@ class ParticleSortRenderer internal constructor() {
     private val aFloatArray3024 = FloatArray(16)
     private var aHoverActionEntry_3025: HoverActionEntry? = null
     private val anInt3026: Int
-    private var anInterface2_3027: Interface2? = null
+    private var anByteBufferReader_3027: ByteBufferReader? = null
     private var aHoverActionEntry_3028: HoverActionEntry? = null
     private var aHoverActionEntry_3029: HoverActionEntry? = null
     private val aClass318_Sub9_Sub2ArrayArray3030: Array<Array<PositionedSceneNode?>?>
@@ -147,10 +147,10 @@ class ParticleSortRenderer internal constructor() {
     fun method1654(i: Int, var_ha_Sub2: OpenGlRenderer) {
         if (i == 643267468) {
             anInt3023++
-            anInterface2_3027 = var_ha_Sub2.method3731(2, true, 24, null, 196584)
-            aHoverActionEntry_3025 = HoverActionEntry(anInterface2_3027, 5126, 2, 0)
-            aHoverActionEntry_3029 = HoverActionEntry(anInterface2_3027, 5126, 3, 8)
-            aHoverActionEntry_3028 = HoverActionEntry(anInterface2_3027, 5121, 4, 20)
+            anByteBufferReader_3027 = var_ha_Sub2.method3731(2, true, 24, null, 196584)
+            aHoverActionEntry_3025 = HoverActionEntry(anByteBufferReader_3027, 5126, 2, 0)
+            aHoverActionEntry_3029 = HoverActionEntry(anByteBufferReader_3027, 5126, 3, 8)
+            aHoverActionEntry_3028 = HoverActionEntry(anByteBufferReader_3027, 5121, 4, 20)
         }
     }
 
@@ -386,7 +386,7 @@ class ParticleSortRenderer internal constructor() {
                 }
             }
             if (aClass348_Sub49_Sub1_3020.anInt7197 != 0) {
-                anInterface2_3027!!.method11(24, aClass348_Sub49_Sub1_3020.anInt7197, (aClass348_Sub49_Sub1_3020.aByteArray7154), -9894)
+                anByteBufferReader_3027!!.method11(24, aClass348_Sub49_Sub1_3020.anInt7197, (aClass348_Sub49_Sub1_3020.aByteArray7154), -9894)
                 var_ha_Sub2.method3794(aHoverActionEntry_3029, aHoverActionEntry_3028, i_18_ + -786006967, aHoverActionEntry_3025, null)
                 var_ha_Sub2.method3756((aClass348_Sub49_Sub1_3020.anInt7197 / 24), 7, 0, 120)
             }

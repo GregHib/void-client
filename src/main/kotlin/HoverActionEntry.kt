@@ -1,7 +1,7 @@
 /* Class123 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class HoverActionEntry internal constructor(var anInterface2_1811: Interface2?, i: Int, i_0_: Int, i_1_: Int) {
+class HoverActionEntry internal constructor(var anByteBufferReader_1811: ByteBufferReader?, i: Int, i_0_: Int, i_1_: Int) {
     var aShort1810: Short
     var aByte1812: Byte
     var aByte1814: Byte

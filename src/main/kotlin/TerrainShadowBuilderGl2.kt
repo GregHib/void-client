@@ -22,7 +22,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
     private val anInt6948: Int
     private var aFloatArrayArray6949: Array<FloatArray?>?
     private val aHa_Sub2_6951: OpenGlRenderer?
-    private val anInterface2_6952: Interface2?
+    private val anByteBufferReader_6952: ByteBufferReader?
     private var aClass348_Sub49_Sub1_6953: FloatBuffer? = null
 
     private fun method3019(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Byte, i_5_: Int) {
@@ -263,11 +263,11 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
                     i_57_++
                 }
                 anInterface8_6945 = (aHa_Sub2_6951!!.method3733(5123, -49, aClass348_Sub49_6936!!.anInt7197, aClass348_Sub49_6936!!.aByteArray7154, false))
-                anInterface2_6952 = aHa_Sub2_6951.method3731(2, false, 16, (aClass348_Sub49_Sub1_6953!!.aByteArray7154), (aClass348_Sub49_Sub1_6953!!.anInt7197))
-                aHoverActionEntry_6927 = HoverActionEntry(anInterface2_6952, 5126, 3, 0)
-                aHoverActionEntry_6943 = HoverActionEntry(anInterface2_6952, 5121, 4, 12)
+                anByteBufferReader_6952 = aHa_Sub2_6951.method3731(2, false, 16, (aClass348_Sub49_Sub1_6953!!.aByteArray7154), (aClass348_Sub49_Sub1_6953!!.anInt7197))
+                aHoverActionEntry_6927 = HoverActionEntry(anByteBufferReader_6952, 5126, 3, 0)
+                aHoverActionEntry_6943 = HoverActionEntry(anByteBufferReader_6952, 5121, 4, 12)
             } else {
-                anInterface2_6952 = null
+                anByteBufferReader_6952 = null
                 anInterface8_6945 = null
                 aHoverActionEntry_6927 = null
                 aHoverActionEntry_6943 = null

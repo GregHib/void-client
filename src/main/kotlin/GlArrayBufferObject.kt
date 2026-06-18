@@ -4,7 +4,7 @@ import ProjectedGroundDecor.Companion.method2431
 import MapSceneCache.Companion.method826
 import jaclib.memory.Buffer
 
-class GlArrayBufferObject : GlVertexBufferBase, Interface2 {
+class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
     private var anInt4708 = 0
     override fun method13(i: Byte): Int {
         anInt4706++

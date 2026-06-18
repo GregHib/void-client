@@ -3,7 +3,7 @@ import RemoveRoofsOptionState.Companion.method1813
 import FixedFunctionWaterPass.Companion.method3549
 import jaclib.memory.Buffer
 
-class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
+class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
     private var anInt4697 = 0
 
     internal constructor(var_ha_Sub2: OpenGlRenderer?, i: Int, `is`: ByteArray?, i_0_: Int) : super(var_ha_Sub2, `is`, i_0_) {
