@@ -140,12 +140,12 @@ class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Ma
         fun method2172(i: Int) {
             val i_2_ = 27 / ((i - -12) / 57)
             anInt6295++
-            if (Class93.anApplet1530 != null) {
+            if (JagGlToolkitFactory.anApplet1530 != null) {
                 try {
-                    val string = Class93.anApplet1530!!.getParameter("cookiehost")
+                    val string = JagGlToolkitFactory.anApplet1530!!.getParameter("cookiehost")
                     val i_3_ = (GameClock.method599(-74) / 86400000L).toInt() - 11745
                     val string_4_ = ("usrdob=" + i_3_ + "; version=1; path=/; domain=" + string)
-                    JavaScriptBridge.method1615(Class93.anApplet1530, -15092, "document.cookie=\"" + string_4_ + "\"")
+                    JavaScriptBridge.method1615(JagGlToolkitFactory.anApplet1530, -15092, "document.cookie=\"" + string_4_ + "\"")
                 } catch (throwable: Throwable) {
                     /* empty */
                 }

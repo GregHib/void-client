@@ -3423,7 +3423,7 @@ class OpenGlModel : AbstractModel {
                 aShortArray5564 = NativeVertexBuffer.method1078(aShortArray5564, anInt5529, 114)
                 aShortArray5583 = NativeVertexBuffer.method1078(aShortArray5583, anInt5529, 126)
                 aShortArray5576 = NativeVertexBuffer.method1078(aShortArray5576, anInt5529, 100)
-                aByteArray5594 = Class93.method863(anInt5529, 113.toByte(), aByteArray5594)
+                aByteArray5594 = JagGlToolkitFactory.method863(anInt5529, 113.toByte(), aByteArray5594)
                 aFloatArray5552 = HudTabPanel.method1638(anInt5529, aFloatArray5552!!, -1)
                 aFloatArray5571 = HudTabPanel.method1638(anInt5529, aFloatArray5571!!, -1)
                 if (modelDefinition.anIntArray1868 != null && WidgetRedrawTracker.method2332(anInt5556, 125.toByte(), i)) anIntArrayArray5539 = modelDefinition.method1100(false, -42)

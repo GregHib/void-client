@@ -998,7 +998,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 if (i_71_ == 0) return privilegedOperationWorker!!.method2245(string, 16)
                 if (i_71_ == 1) {
                     try {
-                        JavaScriptBridge.method1616("openjs", (arrayOf<Any?>(URL(Class93.anApplet1530!!.getCodeBase(), string).toString())), Class93.anApplet1530, 38.toByte())
+                        JavaScriptBridge.method1616("openjs", (arrayOf<Any?>(URL(JagGlToolkitFactory.anApplet1530!!.getCodeBase(), string).toString())), JagGlToolkitFactory.anApplet1530, 38.toByte())
                         val linkedQueueNode = LinkedQueueNode()
                         linkedQueueNode.anInt1997 = 1
                         return linkedQueueNode
@@ -1010,7 +1010,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 }
                 if (i_71_ == 2) {
                     try {
-                        Class93.anApplet1530!!.showDocument(URL(Class93.anApplet1530!!.getCodeBase(), string), "_blank")
+                        JagGlToolkitFactory.anApplet1530!!.showDocument(URL(JagGlToolkitFactory.anApplet1530!!.getCodeBase(), string), "_blank")
                         val linkedQueueNode = LinkedQueueNode()
                         linkedQueueNode.anInt1997 = 1
                         return linkedQueueNode
@@ -1022,12 +1022,12 @@ class MidiSequencePlayer : AudioStreamNode {
                 }
                 if (i_71_ == 3) {
                     try {
-                        JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "loggedout")
+                        JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "loggedout")
                     } catch (throwable: Throwable) {
                         /* empty */
                     }
                     try {
-                        Class93.anApplet1530!!.showDocument(URL(Class93.anApplet1530!!.getCodeBase(), string), "_top")
+                        JagGlToolkitFactory.anApplet1530!!.showDocument(URL(JagGlToolkitFactory.anApplet1530!!.getCodeBase(), string), "_top")
                         val linkedQueueNode = LinkedQueueNode()
                         linkedQueueNode.anInt1997 = 1
                         return linkedQueueNode

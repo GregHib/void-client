@@ -1111,7 +1111,7 @@ object ChatCommandProcessor {
             }
             if (i == 5430) {
                 try {
-                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "accountcreated")
+                    JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "accountcreated")
                 } catch (throwable: Throwable) {
                     /* empty */
                 }
@@ -1119,7 +1119,7 @@ object ChatCommandProcessor {
             }
             if (i == 5431) {
                 try {
-                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "accountcreatestarted")
+                    JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "accountcreatestarted")
                 } catch (throwable: Throwable) {
                     /* empty */
                 }

@@ -391,17 +391,17 @@ class SceneNodeDeque {
                             }
                             if ((!RangeThresholdTextureNode.aBoolean9103 || RsaVarbitHandler.aBoolean4903) && !FrameBufferObject.aBoolean4888) {
                                 try {
-                                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "unzap")
+                                    JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "unzap")
                                 } catch (throwable: Throwable) {
                                     /* empty */
                                 }
                             } else {
                                 try {
-                                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "zap")
+                                    JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "zap")
                                 } catch (throwable: Throwable) {
                                     if (WallEntity.aBoolean8773) {
                                         try {
-                                            Class93.anApplet1530!!.showDocument(URL(Class93.anApplet1530!!.getCodeBase(), "blank.ws"), "tbi")
+                                            JagGlToolkitFactory.anApplet1530!!.showDocument(URL(JagGlToolkitFactory.anApplet1530!!.getCodeBase(), "blank.ws"), "tbi")
                                         } catch (exception: Exception) {
                                             /* empty */
                                         }
@@ -410,7 +410,7 @@ class SceneNodeDeque {
                             }
                             if (NpcAnimationResolver.aNamedIdRecord_165 == OggCacheStream.aNamedIdRecord_5271) {
                                 try {
-                                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "loggedin")
+                                    JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "loggedin")
                                 } catch (throwable: Throwable) {
                                     /* empty */
                                 }

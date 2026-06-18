@@ -120,7 +120,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
             anInt2179++
             var i_7_ = SpriteArchiveLoader.anInt385
             if (i_5_ != 8) method1284(-59)
-            var i_8_ = Class93.anInt1534
+            var i_8_ = JagGlToolkitFactory.anInt1534
             if (GrayscaleNoiseTexture.aBoolean5300) {
                 i_7_ += NativeTerrainTile.method4008((-126).toByte())
                 i_8_ += method260(false)

@@ -3,7 +3,10 @@ import Class9.method215
 import jaggl.OpenGL
 import java.awt.Canvas
 
-object Class93 {
+/*
+ * Class93
+ */
+object JagGlToolkitFactory {
     @JvmField
     var anInt1529: Int = 0
     @JvmField

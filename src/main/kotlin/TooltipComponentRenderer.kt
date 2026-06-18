@@ -66,7 +66,7 @@ class TooltipComponentRenderer internal constructor(js5Archive: Js5Archive?, js5
             anInt4645++
             if (RegionSceneLoader.aBoolean3697) {
                 try {
-                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "showVideoAd")
+                    JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "showVideoAd")
                     return true
                 } catch (throwable: Throwable) {
                     /* empty */

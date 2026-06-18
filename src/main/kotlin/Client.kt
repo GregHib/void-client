@@ -509,7 +509,7 @@ import Class9.method216
 import RegionMapDecoder.method852
 import NpcUpdateProcessor.method857
 import NpcSpawnDecoder.method860
-import Class93.method861
+import JagGlToolkitFactory.method861
 import Class94.method866
 import Class94.method867
 import Class95.method869
@@ -1640,12 +1640,12 @@ class Client : GameAppletFrame() {
     public override fun method87(i: Byte) {
         if (i > -11) aNodeDeque_5185 = null
         anInt5173++
-        if (Class93.anApplet1530 != null && ParticleSystemRenderer.aCanvas3869 == null && !VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
+        if (JagGlToolkitFactory.anApplet1530 != null && ParticleSystemRenderer.aCanvas3869 == null && !VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
             try {
-                val var_class: Class<*> = Class93.anApplet1530!!.javaClass
+                val var_class: Class<*> = JagGlToolkitFactory.anApplet1530!!.javaClass
                 val field = var_class.getDeclaredField("canvas")
-                ParticleSystemRenderer.aCanvas3869 = field.get(Class93.anApplet1530) as? Canvas
-                field.set(Class93.anApplet1530, null)
+                ParticleSystemRenderer.aCanvas3869 = field.get(JagGlToolkitFactory.anApplet1530) as? Canvas
+                field.set(JagGlToolkitFactory.anApplet1530, null)
                 if (ParticleSystemRenderer.aCanvas3869 != null) return
             } catch (exception: Exception) {
                 if (Loader.trace) {
@@ -1670,8 +1670,8 @@ class Client : GameAppletFrame() {
             if (SkeletalAnimFrameLoader.aFrame476 == null) {
                 val container: Container?
                 if (RsaVarbitHandler.aFrame4904 == null) {
-                    if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
-                    else container = Class93.anApplet1530 as? Container
+                    if (JagGlToolkitFactory.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
+                    else container = JagGlToolkitFactory.anApplet1530 as? Container
                 } else container = RsaVarbitHandler.aFrame4904
                 var i = container!!.getSize().width
                 var i_119_ = container.getSize().height

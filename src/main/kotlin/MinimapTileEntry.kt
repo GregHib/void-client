@@ -45,14 +45,14 @@ class MinimapTileEntry {
             anInt613++
             BloomGraphicsOptionState.aString5966 = string
             if (bool != true) Companion.method381((-48).toByte())
-            if (Class93.anApplet1530 != null) {
+            if (JagGlToolkitFactory.anApplet1530 != null) {
                 try {
-                    val string_0_ = Class93.anApplet1530!!.getParameter("cookieprefix")
-                    val string_1_ = Class93.anApplet1530!!.getParameter("cookiehost")
+                    val string_0_ = JagGlToolkitFactory.anApplet1530!!.getParameter("cookieprefix")
+                    val string_1_ = JagGlToolkitFactory.anApplet1530!!.getParameter("cookiehost")
                     var string_2_ = (string_0_ + "settings=" + string + "; version=1; path=/; domain=" + string_1_)
                     if (string.length == 0) string_2_ += "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0"
                     else string_2_ += ("; Expires=" + (method3261(GameClock.method599(-53) + 94608000000L, 63)) + "; Max-Age=" + 94608000L)
-                    JavaScriptBridge.method1615(Class93.anApplet1530, -15092, "document.cookie=\"" + string_2_ + "\"")
+                    JavaScriptBridge.method1615(JagGlToolkitFactory.anApplet1530, -15092, "document.cookie=\"" + string_2_ + "\"")
                 } catch (throwable: Throwable) {
                     /* empty */
                 }

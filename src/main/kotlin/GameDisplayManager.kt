@@ -41,8 +41,8 @@ object GameDisplayManager {
                 SocketFactory.anInt3473 = i_0_
                 container = SkeletalAnimFrameLoader.aFrame476
             } else if (RsaVarbitHandler.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
-                else container = Class93.anApplet1530 as? Container
+                if (JagGlToolkitFactory.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
+                else container = JagGlToolkitFactory.anApplet1530 as? Container
                 SocketFactory.anInt3473 = container!!.getSize().width
                 NpcReference.anInt6857 = container.getSize().height
             } else {

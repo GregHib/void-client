@@ -401,7 +401,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
                 if (i_170_ == i_171_) return method2753(true, i_168_, i_169_, canvas, var_renderConfig)
                 if (i_171_ == 2) return WorldMapToggle.method2297(-6, i_168_, var_renderConfig, canvas, i_169_)
                 if (i_171_ == 1) return NodeDeque.method2000(3, i, canvas, var_renderConfig)
-                if (i_171_ == 5) return Class93.method862(canvas, var_renderConfig, js5Archive, 25542, i)
+                if (i_171_ == 5) return JagGlToolkitFactory.method862(canvas, var_renderConfig, js5Archive, 25542, i)
                 if (i_171_ == 3) return Class96.method870(i, i_170_ xor 0x4a31, var_renderConfig!!, js5Archive!!, canvas!!)
                 throw IllegalArgumentException("UM")
             } catch (runtimeexception: RuntimeException) {

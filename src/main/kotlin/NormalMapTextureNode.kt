@@ -144,7 +144,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             else {
                 Buffer.method3379(i + -9, 3)
                 try {
-                    JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "loggedout")
+                    JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "loggedout")
                 } catch (throwable: Throwable) {
                     /* empty */
                 }

@@ -112,7 +112,7 @@ class GrowableStringList internal constructor(private val anInt2365: Int, bool: 
                 if (bool_3_) {
                     if (PrivilegedOperationWorker.aString3803.startsWith("win") && privilegedOperationWorker!!.aBoolean3777) {
                         var string_4_: String? = null
-                        if (Class93.anApplet1530 != null) string_4_ = Class93.anApplet1530!!.getParameter("haveie6")
+                        if (JagGlToolkitFactory.anApplet1530 != null) string_4_ = JagGlToolkitFactory.anApplet1530!!.getParameter("haveie6")
                         if (string_4_ == null || string_4_ != "1") {
                             val class144 = method2862(privilegedOperationWorker, string, -117, 0)
                             WallEntity.aLinkedQueueNode_8766 = class144
@@ -123,7 +123,7 @@ class GrowableStringList internal constructor(private val anInt2365: Int, bool: 
                     }
                     if (PrivilegedOperationWorker.aString3803.startsWith("mac")) {
                         var string_5_: String? = null
-                        if (Class93.anApplet1530 != null) string_5_ = Class93.anApplet1530!!.getParameter("havefirefox")
+                        if (JagGlToolkitFactory.anApplet1530 != null) string_5_ = JagGlToolkitFactory.anApplet1530!!.getParameter("havefirefox")
                         if (string_5_ != null && string_5_ == "1" && bool) {
                             method2862(privilegedOperationWorker, string, 42, 1)
                             return

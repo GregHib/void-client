@@ -466,7 +466,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), (LocalPlayerState.aPlayer_1907!!.y))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 63)
                                 } else {
-                                    Class93.anInt1534 = i_72_
+                                    JagGlToolkitFactory.anInt1534 = i_72_
                                     SpriteArchiveLoader.anInt385 = i_73_
                                     LinkedListNode.anInt4292 = 0
                                     FogOptionState.anInt6048 = 1
@@ -476,7 +476,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             } else CollisionMap.method3502(i_75_ + RegionMapDecoder.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), i_74_ + ArbVertexProgram.regionTileX)
                         }
                         if (i_76_ == 4) {
-                            Class93.anInt1534 = i_72_
+                            JagGlToolkitFactory.anInt1534 = i_72_
                             FogOptionState.anInt6048 = 2
                             SpriteArchiveLoader.anInt385 = i_73_
                             LinkedListNode.anInt4292 = 0
@@ -491,7 +491,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                         }
                         if (i_76_ == 1008) {
                             FogOptionState.anInt6048 = 2
-                            Class93.anInt1534 = i_72_
+                            JagGlToolkitFactory.anInt1534 = i_72_
                             SpriteArchiveLoader.anInt385 = i_73_
                             LinkedListNode.anInt4292 = 0
                             val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_77_.toLong(), -6008) as NpcReference?)
@@ -511,7 +511,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 LinkedListNode.anInt4292 = 0
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 FloatGrid.anInt4979++
                                 FogOptionState.anInt6048 = 2
@@ -526,7 +526,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             SpriteArchiveLoader.anInt385 = i_73_
                             LinkedListNode.anInt4292 = 0
                             FogOptionState.anInt6048 = 2
-                            Class93.anInt1534 = i_72_
+                            JagGlToolkitFactory.anInt1534 = i_72_
                             CircleDrawer.anInt2689++
                             val class348_sub47 = method2148(ByteStore.aFontMetaRef_4262, (TheoraVideoStream.aIsaacCipher_9029), -107)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_74_ + ArbVertexProgram.regionTileX, 3.toByte())
@@ -548,7 +548,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             CharCountUtil.anInt226++
                             SpriteArchiveLoader.anInt385 = i_73_
                             FogOptionState.anInt6048 = 2
-                            Class93.anInt1534 = i_72_
+                            JagGlToolkitFactory.anInt1534 = i_72_
                             val class348_sub47 = method2148(ModelLightingConfig.aFontMetaRef_2539, (TheoraVideoStream.aIsaacCipher_9029), -110)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), RegionMapDecoder.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-110, i_74_ + ArbVertexProgram.regionTileX)
@@ -564,7 +564,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 LocTypeDefLoader.anInt2499++
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 FogOptionState.anInt6048 = 2
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 val class348_sub47 = (method2148(ModelWallEntity.aFontMetaRef_10134, TheoraVideoStream.aIsaacCipher_9029, -96))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
@@ -578,7 +578,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             if (player != null) {
                                 LinkedListNode.anInt4292 = 0
                                 WidgetComponentNode.anInt4657++
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 FogOptionState.anInt6048 = 2
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 val class348_sub47 = method2148((CustomCursorsOptionState.aFontMetaRef_5929), (TheoraVideoStream.aIsaacCipher_9029), -94)
@@ -590,7 +590,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                         }
                         if (i_76_ == 59) {
                             SpriteArchiveLoader.anInt385 = i_73_
-                            Class93.anInt1534 = i_72_
+                            JagGlToolkitFactory.anInt1534 = i_72_
                             LinkedListNode.anInt4292 = 0
                             ScriptOpcodeHolder.anInt2336++
                             FogOptionState.anInt6048 = 2
@@ -606,7 +606,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_77_.toLong(), -6008) as NpcReference?)
                             if (class348_sub22 != null) {
                                 LinkedListNode.anInt4292 = 0
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 FogOptionState.anInt6048 = 2
@@ -624,7 +624,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                         if (i_76_ == 12) {
                             if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -127) && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -126)) CollisionMap.method3502(i_75_ + RegionMapDecoder.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), ArbVertexProgram.regionTileX - -i_74_)
                             else {
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 OggMediaStream.anInt994++
                                 LinkedListNode.anInt4292 = 0
@@ -636,7 +636,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             }
                         }
                         if (i_76_ == 1001) {
-                            Class93.anInt1534 = i_72_
+                            JagGlToolkitFactory.anInt1534 = i_72_
                             SoundEngineInitializer.anInt484++
                             FogOptionState.anInt6048 = 2
                             LinkedListNode.anInt4292 = 0
@@ -652,7 +652,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 FogOptionState.anInt6048 = 2
                                 NativeLibraryUnloader.anInt2975++
                                 LinkedListNode.anInt4292 = 0
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 val class348_sub47 = method2148((RsaVarbitHandler.aFontMetaRef_4907), (TheoraVideoStream.aIsaacCipher_9029), -93)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
@@ -667,7 +667,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 LinkedListNode.anInt4292 = 0
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 AbstractCameraTransform.anInt1596++
                                 FogOptionState.anInt6048 = 2
                                 SpriteArchiveLoader.anInt385 = i_73_
@@ -683,7 +683,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             SequencedWallEntity.anInt10164++
                             SpriteArchiveLoader.anInt385 = i_73_
                             LinkedListNode.anInt4292 = 0
-                            Class93.anInt1534 = i_72_
+                            JagGlToolkitFactory.anInt1534 = i_72_
                             val class348_sub47 = method2148(TextureHandle.aFontMetaRef_2587, (TheoraVideoStream.aIsaacCipher_9029), -112)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(RegionMapDecoder.regionTileY + i_75_, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-96).toByte(), (if (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -125)) 1 else 0))
@@ -699,7 +699,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 NpcActorEntity.anInt10073++
                                 LinkedListNode.anInt4292 = 0
                                 SpriteArchiveLoader.anInt385 = i_73_
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 val class348_sub47 = method2148((RsaVarbitHandler.aFontMetaRef_4905), (TheoraVideoStream.aIsaacCipher_9029), -113)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(60.toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -121)) 0 else 1))
@@ -715,7 +715,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                         if (i_76_ == 8) {
                             val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 FogOptionState.anInt6048 = 2
                                 HuffmanCodec.anInt3768++
@@ -728,7 +728,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             }
                         }
                         if (i_76_ == 21) {
-                            Class93.anInt1534 = i_72_
+                            JagGlToolkitFactory.anInt1534 = i_72_
                             FlickeringEffectsOptionState.anInt5919++
                             LinkedListNode.anInt4292 = 0
                             FogOptionState.anInt6048 = 2
@@ -745,7 +745,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             FogOptionState.anInt6048 = 1
                             SpriteArchiveLoader.anInt385 = i_73_
                             LinkedListNode.anInt4292 = 0
-                            Class93.anInt1534 = i_72_
+                            JagGlToolkitFactory.anInt1534 = i_72_
                             Client.anInt5187++
                             val class348_sub47 = method2148(ByteStore.aFontMetaRef_4264, (TheoraVideoStream.aIsaacCipher_9029), -127)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(ArbVertexProgram.regionTileX - -i_74_, 3.toByte())
@@ -762,7 +762,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 BufferToggleState.anInt3707++
                                 LinkedListNode.anInt4292 = 0
                                 SpriteArchiveLoader.anInt385 = i_73_
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 FogOptionState.anInt6048 = 2
                                 val class348_sub47 = (method2148(RuntimeException_Sub1.aFontMetaRef_4601, TheoraVideoStream.aIsaacCipher_9029, -123))
@@ -777,7 +777,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             FogOptionState.anInt6048 = 2
                             NativeRenderNode.anInt10476++
                             SpriteArchiveLoader.anInt385 = i_73_
-                            Class93.anInt1534 = i_72_
+                            JagGlToolkitFactory.anInt1534 = i_72_
                             val class348_sub47 = method2148((SynthVoiceGroup.aFontMetaRef_8857), (TheoraVideoStream.aIsaacCipher_9029), -105)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), HeightMapNoise.anInt3829)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, ArbVertexProgram.regionTileX + i_74_)
@@ -793,7 +793,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 LinkedListNode.anInt4292 = 0
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 FogOptionState.anInt6048 = 2
                                 Class98.anInt1570++
@@ -808,7 +808,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                             if (player != null) {
                                 FogOptionState.anInt6048 = 2
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 Gl3dTexture.anInt8625++
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 LinkedListNode.anInt4292 = 0
@@ -824,7 +824,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             FogOptionState.anInt6048 = 2
                             LinkedListNode.anInt4292 = 0
                             IntHashSet.anInt3966++
-                            Class93.anInt1534 = i_72_
+                            JagGlToolkitFactory.anInt1534 = i_72_
                             val class348_sub47 = method2148((FloatBuffer.aFontMetaRef_9749), (TheoraVideoStream.aIsaacCipher_9029), -81)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(106, i_74_ - -ArbVertexProgram.regionTileX)
@@ -838,7 +838,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             SpriteArchiveLoader.anInt385 = i_73_
                             LinkedListNode.anInt4292 = 0
                             FogOptionState.anInt6048 = 2
-                            Class93.anInt1534 = i_72_
+                            JagGlToolkitFactory.anInt1534 = i_72_
                             val class348_sub47 = method2148((TextureMaterialGroup.aFontMetaRef_9679), (TheoraVideoStream.aIsaacCipher_9029), -98)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-83).toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -128)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, ArbVertexProgram.regionTileX + i_74_)
@@ -852,7 +852,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             if (class348_sub22 != null) {
                                 FogOptionState.anInt6048 = 2
                                 SpriteArchiveLoader.anInt385 = i_73_
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 LinkedListNode.anInt4292 = 0
                                 MaterialTypeMarker.anInt6516++
@@ -867,7 +867,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             if (i_76_ == 1010) {
                                 FogOptionState.anInt6048 = 2
                                 ParticleEmitterListNode.anInt9686++
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 LinkedListNode.anInt4292 = 0
                                 val class348_sub47 = method2148((WorldMapImageBuilder.aFontMetaRef_1144), (TheoraVideoStream.aIsaacCipher_9029), -96)
@@ -877,7 +877,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             if (i_76_ == 22) {
                                 FogOptionState.anInt6048 = 2
                                 LinkedListNode.anInt4292 = 0
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 ContactList.anInt9620++
                                 val class348_sub47 = method2148((SocketStreamWorker.aFontMetaRef_2661), (TheoraVideoStream.aIsaacCipher_9029), -117)
@@ -892,7 +892,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 FogOptionState.anInt6048 = 2
                                 LinkedListNode.anInt4292 = 0
-                                Class93.anInt1534 = i_72_
+                                JagGlToolkitFactory.anInt1534 = i_72_
                                 NativeLibraryUnloader.anInt2975++
                                 val class348_sub47 = method2148((RsaVarbitHandler.aFontMetaRef_4907), (TheoraVideoStream.aIsaacCipher_9029), -127)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
@@ -919,7 +919,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                     val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_77_.toLong(), -6008) as NpcReference?)
                                     if (class348_sub22 != null) {
                                         FogOptionState.anInt6048 = 2
-                                        Class93.anInt1534 = i_72_
+                                        JagGlToolkitFactory.anInt1534 = i_72_
                                         CubemapTextureGlSource.anInt8702++
                                         val npc = (class348_sub22.aNpc_6859)!!
                                         SpriteArchiveLoader.anInt385 = i_73_
@@ -935,7 +935,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                     val player = (LoadingBarRenderer.aPlayerArray5058!![i_77_])
                                     if (player != null) {
                                         FogOptionState.anInt6048 = 2
-                                        Class93.anInt1534 = i_72_
+                                        JagGlToolkitFactory.anInt1534 = i_72_
                                         WorldMapTextLabel.anInt8588++
                                         LinkedListNode.anInt4292 = 0
                                         SpriteArchiveLoader.anInt385 = i_73_
@@ -951,7 +951,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                     SpriteArchiveLoader.anInt385 = i_73_
                                     LinkedListNode.anInt4292 = 0
                                     FogOptionState.anInt6048 = 2
-                                    Class93.anInt1534 = i_72_
+                                    JagGlToolkitFactory.anInt1534 = i_72_
                                     val class348_sub47 = (method2148(SmoothingBuffer.aFontMetaRef_3237, TheoraVideoStream.aIsaacCipher_9029, -125))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-96, RegionMapDecoder.regionTileY + i_75_)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, 0x7fffffff and (l ushr 32).toInt())
@@ -964,7 +964,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                     val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_77_.toLong(), -6008) as NpcReference?)
                                     if (class348_sub22 != null) {
                                         val npc = (class348_sub22.aNpc_6859)!!
-                                        Class93.anInt1534 = i_72_
+                                        JagGlToolkitFactory.anInt1534 = i_72_
                                         LinkedListNode.anInt4292 = 0
                                         SpriteArchiveLoader.anInt385 = i_73_
                                         FogOptionState.anInt6048 = 2
@@ -981,7 +981,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                     SpriteArchiveLoader.anInt385 = i_73_
                                     LinkedListNode.anInt4292 = 0
                                     ParticleConfigParser.anInt3820++
-                                    Class93.anInt1534 = i_72_
+                                    JagGlToolkitFactory.anInt1534 = i_72_
                                     val class348_sub47 = (method2148(GlowPostProcessor.aFontMetaRef_2512, TheoraVideoStream.aIsaacCipher_9029, -91))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-108, i_75_ - -RegionMapDecoder.regionTileY)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-70, i_77_)

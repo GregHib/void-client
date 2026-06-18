@@ -47,8 +47,8 @@ object ScreenBorderFiller {
                     try {
                         val container: Container?
                         if (RsaVarbitHandler.aFrame4904 == null) {
-                            if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
-                            else container = Class93.anApplet1530 as? Container
+                            if (JagGlToolkitFactory.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
+                            else container = JagGlToolkitFactory.anApplet1530 as? Container
                         } else container = RsaVarbitHandler.aFrame4904
                         var i_5_ = 0
                         var i_6_ = 0

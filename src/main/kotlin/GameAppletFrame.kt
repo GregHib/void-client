@@ -28,7 +28,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     override fun getParameter(string: String?): String? {
         anInt3++
         if (RsaVarbitHandler.aFrame4904 != null) return null
-        if (Class93.anApplet1530 != null && Class93.anApplet1530 !== this) return Class93.anApplet1530!!.getParameter(string)
+        if (JagGlToolkitFactory.anApplet1530 != null && JagGlToolkitFactory.anApplet1530 !== this) return JagGlToolkitFactory.anApplet1530!!.getParameter(string)
         return null
     }
 
@@ -45,7 +45,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             aBoolean27 = true
             println("error_game_" + string)
             try {
-                JavaScriptBridge.method1617(125.toByte(), Class93.anApplet1530, "loggedout")
+                JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "loggedout")
             } catch (throwable: Throwable) {
                 /* empty */
             }
@@ -101,7 +101,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     override fun getDocumentBase(): URL? {
         anInt30++
         if (RsaVarbitHandler.aFrame4904 != null) return null
-        if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getDocumentBase()
+        if (JagGlToolkitFactory.anApplet1530 != null && this !== JagGlToolkitFactory.anApplet1530) return JagGlToolkitFactory.anApplet1530!!.getDocumentBase()
         return getCodeBase()
     }
 
@@ -121,8 +121,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         val container: Container
         if (SkeletalAnimFrameLoader.aFrame476 == null) {
             if (RsaVarbitHandler.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169!!
-                else container = Class93.anApplet1530!!.getPulseComponent() as Container
+                if (JagGlToolkitFactory.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169!!
+                else container = JagGlToolkitFactory.anApplet1530!!.getPulseComponent() as Container
             } else container = RsaVarbitHandler.aFrame4904 as Container
         } else container = SkeletalAnimFrameLoader.aFrame476 as Container
         container.setLayout(null)
@@ -224,7 +224,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             SpriteArchiveLoader.aBoolean384 = true
         }
         println("Shutdown start - clean:" + bool)
-        if (Class93.anApplet1530 != null) Class93.anApplet1530!!.destroy()
+        if (JagGlToolkitFactory.anApplet1530 != null) JagGlToolkitFactory.anApplet1530!!.destroy()
         if (bool_4_ != false) aBoolean17 = false
         try {
             method80(0)
@@ -270,7 +270,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     override fun getCodeBase(): URL? {
         anInt29++
         if (RsaVarbitHandler.aFrame4904 != null) return null
-        if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getCodeBase()
+        if (JagGlToolkitFactory.anApplet1530 != null && this !== JagGlToolkitFactory.anApplet1530) return JagGlToolkitFactory.anApplet1530!!.getCodeBase()
         return null
     }
 
@@ -315,8 +315,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                     if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true
                 }
                 var applet: Panel? = EdgeDetectTextureNode.anGameApplet_Frame_9169
-                if (Class93.anApplet1530 != null) {
-                    val container = Class93.anApplet1530!!.getPulseComponent() as? Container
+                if (JagGlToolkitFactory.anApplet1530 != null) {
+                    val container = JagGlToolkitFactory.anApplet1530!!.getPulseComponent() as? Container
                     if (container != null) {
                         applet = container as Panel
                     }
@@ -369,8 +369,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 TimingCounters.anInt4167 = 0
                 ParticleTileShape.anInt8818 = i_15_
                 EdgeDetectTextureNode.anGameApplet_Frame_9169 = this
-                FacingDirectionNode.anApplet6662 = Class93.anApplet1530
-                VorbisOggDecoder.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i_17_, string, i_18_, Class93.anApplet1530 != null)
+                FacingDirectionNode.anApplet6662 = JagGlToolkitFactory.anApplet1530
+                VorbisOggDecoder.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i_17_, string, i_18_, JagGlToolkitFactory.anApplet1530 != null)
                 HudTabPanel.aPrivilegedOperationWorker_2993 = VorbisOggDecoder.aPrivilegedOperationWorker_8992
                 val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2236(this, -10240, 1)
                 if (i_19_ != 50) anInt37 = -13
@@ -536,7 +536,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         @JvmStatic
         fun provideLoaderApplet(applet: GameApplet) {
             anInt11++
-            Class93.anApplet1530 = applet
+            JagGlToolkitFactory.anApplet1530 = applet
         }
 
         @JvmStatic

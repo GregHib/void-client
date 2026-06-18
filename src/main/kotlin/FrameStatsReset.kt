@@ -550,7 +550,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Js5Archive.anInt647 = 0
             PackedFlagsAccessor.anInt7094 = 0
             ItemDefinition.anInt2796 = 0
-            Class93.anInt1533 = 0
+            JagGlToolkitFactory.anInt1533 = 0
             ParamMap.anInt9490 = 0
             MapElementDecor.anInt10351 = 0
             OpenGlRenderer.anInt7611 = 0
@@ -1391,7 +1391,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ResourceLoaderThread.anInt3909 = 0
             ScriptCompilerThread.anInt1737 = 0
             GlTexture.anInt4854 = 0
-            Class93.anInt1529 = 0
+            JagGlToolkitFactory.anInt1529 = 0
             CubemapTextureFactory.anInt4523 = 0
             ProjectedGroundDecor.anInt10212 = 0
             OpenGlRenderer.anInt7718 = 0
@@ -2697,7 +2697,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DisplaceTextureNode.anInt9136 = 0
             LoadingBarRenderer.anInt5039 = 0
             GlRenderDevice.anInt9894 = 0
-            Class93.anInt1532 = 0
+            JagGlToolkitFactory.anInt1532 = 0
             Direct3dModel.anInt5487 = 0
             NativeRenderer.anInt8053 = 0
             NpcCountAccessor.anInt2281 = 0

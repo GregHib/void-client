@@ -36,7 +36,7 @@ object VideoAdChecker {
         anInt3184++
         if (RegionSceneLoader.aBoolean3697) {
             try {
-                return !(method1617(125.toByte(), Class93.anApplet1530, "showingVideoAd") as Boolean)
+                return !(method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "showingVideoAd") as Boolean)
             } catch (throwable: Throwable) {
                 /* empty */
             }

@@ -105,8 +105,8 @@ class ResourceLoaderThread : Runnable {
                 }
                 val container: Container?
                 if (RsaVarbitHandler.aFrame4904 != null) container = RsaVarbitHandler.aFrame4904
-                else if (Class93.anApplet1530 != null) {
-                    container = Class93.anApplet1530!!.getPulseComponent() as? Container
+                else if (JagGlToolkitFactory.anApplet1530 != null) {
+                    container = JagGlToolkitFactory.anApplet1530!!.getPulseComponent() as? Container
                 }
                 else container = EdgeDetectTextureNode.anGameApplet_Frame_9169
                 container!!.getSize()

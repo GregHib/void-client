@@ -38,7 +38,7 @@ class LoadingBarRenderer : Interface16 {
     @Throws(IllegalAccessException::class, NoSuchFieldException::class)
     private fun method2211(bool: Boolean) {
         anInt5055++
-        val var_class: Class<*> = Class93.anApplet1530!!.javaClass
+        val var_class: Class<*> = JagGlToolkitFactory.anApplet1530!!.javaClass
         anImage5047 = method2213(var_class, 2, "bar") as Image?
         anImage5035 = method2213(var_class, 2, "background") as Image?
         anImage5032 = method2213(var_class, 2, "left") as Image?
@@ -84,8 +84,8 @@ class LoadingBarRenderer : Interface16 {
             if (i != 2) return null
             anInt5038++
             val field = var_class!!.getDeclaredField(string)
-            val `object` = field.get(Class93.anApplet1530)
-            field.set(Class93.anApplet1530, null)
+            val `object` = field.get(JagGlToolkitFactory.anApplet1530)
+            field.set(JagGlToolkitFactory.anApplet1530, null)
             return `object`
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("wba.C(" + (if (var_class != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
@@ -148,7 +148,7 @@ class LoadingBarRenderer : Interface16 {
         anInt5044++
         if (i > -69) method2215((-61).toByte(), -24)
         if (!aBoolean5022) {
-            if (Class93.anApplet1530 == null) aBoolean5022 = true
+            if (JagGlToolkitFactory.anApplet1530 == null) aBoolean5022 = true
             else if (aFont5053 == null) {
                 try {
                     method2211(true)
