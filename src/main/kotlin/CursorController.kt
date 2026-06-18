@@ -1,7 +1,7 @@
 /* Interface16 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-interface Interface16 {
+interface CursorController {
     fun method55(i: Byte): Int
 
     fun method56(i: Byte, l: Long): Boolean

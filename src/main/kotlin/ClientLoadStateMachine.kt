@@ -92,10 +92,10 @@ object ClientLoadStateMachine {
             if (`is`!!.size == 0) `is` = PerlinTextureProvider.aCollisionMapRegion_5813!!.method1046(0, 0)
             val dualMaterialContainer = DualMaterialContainer(ScrollTexMaterialPass.aJs5Archive_6277, SoftwareSpriteRaster.aJs5Archive_1627)
             if (`is`!!.size > 0) {
-                LoadProgressCounters.anInterface16Array2447 = arrayOfNulls<Interface16>(`is`.size)
+                LoadProgressCounters.anCursorControllerArray2447 = arrayOfNulls<CursorController>(`is`.size)
                 var i_4_ = 0
-                while ((LoadProgressCounters.anInterface16Array2447!!.size > i_4_)) {
-                    LoadProgressCounters.anInterface16Array2447!![i_4_] = RenderableGroup(PerlinTextureProvider.aCollisionMapRegion_5813!!.method1043(`is`[i_4_], 102.toByte()), dualMaterialContainer)
+                while ((LoadProgressCounters.anCursorControllerArray2447!!.size > i_4_)) {
+                    LoadProgressCounters.anCursorControllerArray2447!![i_4_] = RenderableGroup(PerlinTextureProvider.aCollisionMapRegion_5813!!.method1043(`is`[i_4_], 102.toByte()), dualMaterialContainer)
                     i_4_++
                 }
             }
@@ -107,9 +107,9 @@ object ClientLoadStateMachine {
             if (i_6_ > i_5_) return 100 * i_5_ / i_6_
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1028) {
-            if (LoadProgressCounters.anInterface16Array2447 != null && (LoadProgressCounters.anInterface16Array2447!!.size > 0)) {
-                if (LoadProgressCounters.anInterface16Array2447!![0]!!.method60(-19079) < 100) return 0
-                if (LoadProgressCounters.anInterface16Array2447!!.size > 1 && PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(86) && (LoadProgressCounters.anInterface16Array2447!![1]!!.method60(i + 9581) < 100)) return 0
+            if (LoadProgressCounters.anCursorControllerArray2447 != null && (LoadProgressCounters.anCursorControllerArray2447!!.size > 0)) {
+                if (LoadProgressCounters.anCursorControllerArray2447!![0]!!.method60(-19079) < 100) return 0
+                if (LoadProgressCounters.anCursorControllerArray2447!!.size > 1 && PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(86) && (LoadProgressCounters.anCursorControllerArray2447!![1]!!.method60(i + 9581) < 100)) return 0
             }
             VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
             method3568(FacingDirectionNode.aRenderer6654, 4)
@@ -283,7 +283,7 @@ object ClientLoadStateMachine {
             PerlinTextureProvider.aCollisionMapRegion_5813 = null
             SpriteRgbTextureNode.aJs5Archive_10426 = null
             NpcConfig.aResourceLoaderThread_897 = null
-            LoadProgressCounters.anInterface16Array2447 = null
+            LoadProgressCounters.anCursorControllerArray2447 = null
             TerrainShadowBuilderGl2.aThread6946 = null
             ScrollTexMaterialPass.aJs5Archive_6277 = null
             method3886(i + 28556)

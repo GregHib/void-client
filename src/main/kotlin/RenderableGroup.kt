@@ -3,7 +3,7 @@ import GameClock.method599
 /* Class195 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, dualMaterialContainer: DualMaterialContainer?) : Interface16 {
+class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, dualMaterialContainer: DualMaterialContainer?) : CursorController {
     private val aTypedRecordTable_5006: TypedRecordTable?
     private var aRenderer5010: Renderer? = null
     private var aBoolean5011 = false

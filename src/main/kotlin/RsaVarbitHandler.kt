@@ -102,19 +102,19 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
             if (bool == true) {
                 if (NpcConfig.Companion.aResourceLoaderThread_897 != null) {
                     NpcConfig.Companion.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aConnectionStateType_9660), Direct3dModel.aString5420, ConfigFlagUtil.anInt3236, DataHolder.aLong3660, false)
-                    if (LoadProgressCounters.anInterface16Array2447 != null) {
+                    if (LoadProgressCounters.anCursorControllerArray2447 != null) {
                         var i_5_ = PlayerAppearanceUpdateDecoder.anInt4544 - -1
-                        while ((LoadProgressCounters.anInterface16Array2447!!.size > i_5_)) {
-                            if (LoadProgressCounters.anInterface16Array2447!![i_5_]!!.method60(-19079) >= 100 && PlayerAppearanceUpdateDecoder.anInt4544 == -1 + i_5_ && WorldMapRenderer.anInt4674 >= 1 && NpcConfig.Companion.aResourceLoaderThread_897!!.method2322(0)) {
+                        while ((LoadProgressCounters.anCursorControllerArray2447!!.size > i_5_)) {
+                            if (LoadProgressCounters.anCursorControllerArray2447!![i_5_]!!.method60(-19079) >= 100 && PlayerAppearanceUpdateDecoder.anInt4544 == -1 + i_5_ && WorldMapRenderer.anInt4674 >= 1 && NpcConfig.Companion.aResourceLoaderThread_897!!.method2322(0)) {
                                 try {
-                                    LoadProgressCounters.anInterface16Array2447!![i_5_]!!.method57(117)
+                                    LoadProgressCounters.anCursorControllerArray2447!![i_5_]!!.method57(117)
                                 } catch (exception: Exception) {
-                                    LoadProgressCounters.anInterface16Array2447 = null
+                                    LoadProgressCounters.anCursorControllerArray2447 = null
                                     break
                                 }
-                                NpcConfig.Companion.aResourceLoaderThread_897!!.method2321(10559, LoadProgressCounters.anInterface16Array2447!![i_5_]!!)
+                                NpcConfig.Companion.aResourceLoaderThread_897!!.method2321(10559, LoadProgressCounters.anCursorControllerArray2447!![i_5_]!!)
                                 PlayerAppearanceUpdateDecoder.anInt4544++
-                                if ((PlayerAppearanceUpdateDecoder.anInt4544 >= (-1 + LoadProgressCounters.anInterface16Array2447!!.size)) && LoadProgressCounters.anInterface16Array2447!!.size > 1) PlayerAppearanceUpdateDecoder.anInt4544 = if (!PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(26)) -1 else 0
+                                if ((PlayerAppearanceUpdateDecoder.anInt4544 >= (-1 + LoadProgressCounters.anCursorControllerArray2447!!.size)) && LoadProgressCounters.anCursorControllerArray2447!!.size > 1) PlayerAppearanceUpdateDecoder.anInt4544 = if (!PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(26)) -1 else 0
                             }
                             i_5_++
                         }

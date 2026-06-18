@@ -8,7 +8,7 @@ import java.awt.Image
 /*
  * Class294
  */
-class LoadingBarRenderer : Interface16 {
+class LoadingBarRenderer : CursorController {
     private var aBoolean5020 = false
     private var anInt5021 = 0
     private var aBoolean5022 = false

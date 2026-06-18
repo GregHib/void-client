@@ -21,7 +21,7 @@ class LoadProgressCounters {
     companion object {
         @JvmField
         var anInt2446: Int = 0
-        var anInterface16Array2447: Array<Interface16?>? = null
+        var anCursorControllerArray2447: Array<CursorController?>? = null
         @JvmField
         var aKeyboardInputSource_2449: KeyboardInputSource? = null
         var anInt2450: Int = 0
@@ -63,7 +63,7 @@ class LoadProgressCounters {
         fun method1375(i: Int) {
             if (i != 5616) aKeyboardInputSource_2449 = null
             aKeyboardInputSource_2449 = null
-            anInterface16Array2447 = null
+            anCursorControllerArray2447 = null
         }
     }
 }
