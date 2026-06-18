@@ -477,8 +477,8 @@ import SolidFillComponent.Companion.method198
 import IdentKitRecolor.Companion.method207
 import IdentKitRecolor.Companion.method208
 import LruByteCache.Companion.method584
-import Class62.method598
-import Class62.method599
+import GameClock.method598
+import GameClock.method599
 import Class64_Sub2.Companion.method661
 import Class64_Sub2.Companion.method676
 import Class64_Sub3.Companion.method681
@@ -795,7 +795,7 @@ class Client : GameAppletFrame() {
         method861(-76)
         SceneLinkedListNode.method2374((-125).toByte())
         method810(true)
-        Class62.method597((-122).toByte())
+        GameClock.method597((-122).toByte())
         method1086(true)
         method225(57.toByte())
         method1040(i + 404)

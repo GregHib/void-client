@@ -474,7 +474,7 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
                     while ((i_53_ < Class367_Sub4.anInt7319 shr 3)) {
                         var i_54_ = 0
                         while ((RangeThresholdTextureNode.anInt9109 shr 3 > i_54_)) {
-                            val i_55_ = (Class62.anIntArrayArrayArray1116!![i_52_]!![i_53_]!![i_54_])
+                            val i_55_ = (GameClock.anIntArrayArrayArray1116!![i_52_]!![i_53_]!![i_54_])
                             if (i_55_ != -1) {
                                 val i_56_ = 0x3 and (i_55_ shr 24)
                                 if (!class237_sub1.aBoolean3109 || i_56_ == 0) {

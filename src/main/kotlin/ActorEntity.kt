@@ -125,8 +125,8 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
             i_9_ = (i_9_ * 1.1f).toInt()
             i_8_ = (i_8_ * 1.1f).toInt()
             if (i_7_ > i_9_ && i_8_ < i_7_) return SpriteRenderable.method454(i_7_, (-116).toByte())
-            if (i_9_ <= i_8_) return Class62.method600((-59).toByte(), 1, i_8_)
-            return Class62.method600((-80).toByte(), 3, i_9_)
+            if (i_9_ <= i_8_) return GameClock.method600((-59).toByte(), 1, i_8_)
+            return GameClock.method600((-80).toByte(), 3, i_9_)
         }
 
         @JvmStatic

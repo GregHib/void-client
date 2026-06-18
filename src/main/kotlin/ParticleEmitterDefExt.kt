@@ -1,5 +1,5 @@
 import HeapInfoRecord.Companion.method1248
-import Class62.method596
+import GameClock.method596
 
 /* Class288_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

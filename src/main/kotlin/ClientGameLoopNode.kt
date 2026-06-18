@@ -20,7 +20,7 @@ import HslAdjustTextureNode.Companion.method3127
 import ClampTextureNode.Companion.method3150
 import WidgetTextConfig.Companion.method362
 import SolidFillComponent.Companion.method198
-import Class62.method599
+import GameClock.method599
 import Class64_Sub2.Companion.method661
 import Class66.method705
 import java.io.File
@@ -181,7 +181,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                         InterfaceComponentGroup.method3243(i + -11501, class348_sub47)
                     }
                     if (!RenderNode.aBoolean9719) {
-                        Class62.anInt1110++
+                        GameClock.anInt1110++
                         val class348_sub47 = method2148((FloatBuffer.aFontMetaRef_9743), (TheoraVideoStream.aClass77_9029), -113)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                         val i_14_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)

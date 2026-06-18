@@ -17,7 +17,7 @@ import Class367_Sub10.Companion.method3553
 import Class367_Sub4.Companion.method3544
 import WidgetComponent.Companion.method427
 import MinimapTriangleDrawer.Companion.method464
-import Class62.method599
+import GameClock.method599
 import Class66.method706
 import Class66.method715
 import jagex3.jagmisc.jagmisc.availablePhysicalMemory

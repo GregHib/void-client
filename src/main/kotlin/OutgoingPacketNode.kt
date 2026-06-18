@@ -3,7 +3,7 @@ import BooleanGraphicsOptionState.Companion.method1722
 import SoundBankPatch.Companion.method2929
 import NpcReference.Companion.method2959
 import Class367_Sub10.Companion.method3553
-import Class62.method599
+import GameClock.method599
 import RasterSprite.Companion.method166
 
 class OutgoingPacketNode : LinkedListNode() {

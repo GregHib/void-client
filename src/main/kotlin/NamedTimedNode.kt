@@ -1,4 +1,4 @@
-import Class62.method599
+import GameClock.method599
 
 /* Class318_Sub9_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

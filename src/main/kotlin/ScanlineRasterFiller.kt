@@ -3,7 +3,7 @@ import ClickFeedbackTask.Companion.method1353
 import SimpleToggleOptionState.Companion.method1742
 import MidiSequencePlayer.Companion.method2878
 import InvertTextureNode.Companion.method3135
-import Class62.method599
+import GameClock.method599
 import OpenGlRenderNode.Companion.method3297
 
 /* Class184 - Decompiled by JODE

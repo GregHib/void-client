@@ -143,7 +143,7 @@ class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Ma
             if (Class93.anApplet1530 != null) {
                 try {
                     val string = Class93.anApplet1530!!.getParameter("cookiehost")
-                    val i_3_ = (Class62.method599(-74) / 86400000L).toInt() - 11745
+                    val i_3_ = (GameClock.method599(-74) / 86400000L).toInt() - 11745
                     val string_4_ = ("usrdob=" + i_3_ + "; version=1; path=/; domain=" + string)
                     JavaScriptBridge.method1615(Class93.anApplet1530, -15092, "document.cookie=\"" + string_4_ + "\"")
                 } catch (throwable: Throwable) {

@@ -1,5 +1,5 @@
 import SoftwareSpriteRaster.Companion.method958
-import Class62.method599
+import GameClock.method599
 import java.awt.Canvas
 
 /*

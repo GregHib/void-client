@@ -40,8 +40,8 @@ object Class90 {
                 var i_5_ = 0
                 while ((i_5_ < RangeThresholdTextureNode.anInt9109 shr 3)) {
                     val i_6_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
-                    if (i_6_ != 1) Class62.anIntArrayArrayArray1116!![i_3_]!![i_4_]!![i_5_] = -1
-                    else Class62.anIntArrayArrayArray1116!![i_3_]!![i_4_]!![i_5_] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 26)
+                    if (i_6_ != 1) GameClock.anIntArrayArrayArray1116!![i_3_]!![i_4_]!![i_5_] = -1
+                    else GameClock.anIntArrayArrayArray1116!![i_3_]!![i_4_]!![i_5_] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 26)
                     i_5_++
                 }
                 i_4_++
@@ -72,7 +72,7 @@ object Class90 {
             var i_11_ = 0
             while ((Class367_Sub4.anInt7319 shr 3 > i_11_)) {
                 for (i_12_ in 0..<(RangeThresholdTextureNode.anInt9109 shr 3)) {
-                    val i_13_ = (Class62.anIntArrayArrayArray1116!![i_10_]!![i_11_]!![i_12_])
+                    val i_13_ = (GameClock.anIntArrayArrayArray1116!![i_10_]!![i_11_]!![i_12_])
                     if (i_13_ != -1) {
                         val i_14_ = i_13_ shr 14 and 0x3ff
                         val i_15_ = (i_13_ and 0x3ff9) shr 3

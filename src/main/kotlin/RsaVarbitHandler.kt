@@ -80,7 +80,7 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Inte
             if (MaterialTypeMarker.aConnectionStateTypeArray6515 == null) {
                 MaterialTypeMarker.aConnectionStateTypeArray6515 = ConnectionStateType.Companion.method528(-91)
                 TimedTileQueueEntry.aConnectionStateType_9660 = MaterialTypeMarker.aConnectionStateTypeArray6515!![0]
-                DataHolder.aLong3660 = Class62.method599(-119)
+                DataHolder.aLong3660 = GameClock.method599(-119)
             }
             anInt4900++
             if (NpcConfig.Companion.aResourceLoaderThread_897 == null) Class70.method726(116)
@@ -97,7 +97,7 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Inte
                 Class64_Sub2.aString5420 = class56.aLocalizedText_1015!!.method2063(AnimationFrameDefinition.anInt6967, 544)
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Class64_Sub2.aString5420 += class56.anInt1021.toString() + "%"
                 ConfigFlagUtil.anInt3236 = class56.anInt1021
-                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolder.aLong3660 = Class62.method599(-128)
+                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolder.aLong3660 = GameClock.method599(-128)
             }
             if (bool == true) {
                 if (NpcConfig.Companion.aResourceLoaderThread_897 != null) {

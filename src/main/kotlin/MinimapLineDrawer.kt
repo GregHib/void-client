@@ -45,7 +45,7 @@ class MinimapLineDrawer internal constructor(private val anInt5255: Int, private
             val string = class348_sub49.readString(90.toByte())
             val class221 = HeapInfoRecord.method1248(127)[class348_sub49.readUnsignedByte(i xor 0x6c6e.inv())]
             if (i != -27794) return null
-            val class341 = Class62.method596(i + 47794)[class348_sub49.readUnsignedByte(255)]
+            val class341 = GameClock.method596(i + 47794)[class348_sub49.readUnsignedByte(255)]
             val i_15_ = class348_sub49.readShort(13638)
             val i_16_ = class348_sub49.readShort(13638)
             val i_17_ = class348_sub49.readUnsignedByte(255)

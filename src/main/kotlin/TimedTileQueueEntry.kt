@@ -1,5 +1,5 @@
 import SoundBankPatch.Companion.method2929
-import Class62.method599
+import GameClock.method599
 import jaggl.OpenGL.Companion.glCompileShaderARB
 import jaggl.OpenGL.Companion.glCreateShaderObjectARB
 import jaggl.OpenGL.Companion.glDeleteObjectARB

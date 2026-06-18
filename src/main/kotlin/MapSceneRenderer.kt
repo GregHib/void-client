@@ -34,7 +34,7 @@ object MapSceneRenderer {
                     var i_6_ = 0
                     while ((Class367_Sub4.anInt7319 shr 3 > i_6_)) {
                         for (i_7_ in 0..<(RangeThresholdTextureNode.anInt9109 shr 3)) {
-                            val i_8_ = (Class62.anIntArrayArrayArray1116!![i]!![i_6_]!![i_7_])
+                            val i_8_ = (GameClock.anIntArrayArrayArray1116!![i]!![i_6_]!![i_7_])
                             if (i_8_ != -1) {
                                 val i_9_ = i_8_ shr 24 and 0x3
                                 if (!class237_sub1.aBoolean3109 || i_9_ == 0) {
@@ -63,7 +63,7 @@ object MapSceneRenderer {
                     while ((i_15_ < Class367_Sub4.anInt7319 shr 3)) {
                         var i_16_ = 0
                         while ((i_16_ < RangeThresholdTextureNode.anInt9109 shr 3)) {
-                            val i_17_ = (Class62.anIntArrayArrayArray1116!![i]!![i_15_]!![i_16_])
+                            val i_17_ = (GameClock.anIntArrayArrayArray1116!![i]!![i_15_]!![i_16_])
                             if (i_17_ == -1) class237_sub1.method1678(i_15_ * 8, 8, i_16_ * 8, -100, 8, i)
                             i_16_++
                         }

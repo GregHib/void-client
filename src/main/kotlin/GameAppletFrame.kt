@@ -22,7 +22,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     fun stop() {
         anInt24++
-        if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) CameraNodeList.aLong1739 = Class62.method599(-73) - -4000L
+        if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) CameraNodeList.aLong1739 = GameClock.method599(-73) - -4000L
     }
 
     override fun getParameter(string: String?): String? {
@@ -74,7 +74,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     private fun method84(i: Int) {
         anInt8++
-        val l = Class62.method599(i + -88)
+        val l = GameClock.method599(i + -88)
         val l_1_ = MaterialTypeVariant.aLongArray8800!![TextureMetadataProvider.anInt4613]
         MaterialTypeVariant.aLongArray8800!![TextureMetadataProvider.anInt4613] = l
         TextureMetadataProvider.anInt4613 = 0x1f and 1 + TextureMetadataProvider.anInt4613
@@ -140,7 +140,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         SizeBoundedSoftCache.aBoolean2329 = true
         SpriteRenderable.aBoolean4726 = true
         ProjectileSpawner.aBoolean2674 = false
-        BoundingBoxNode.aLong6748 = Class62.method599(-106)
+        BoundingBoxNode.aLong6748 = GameClock.method599(-106)
     }
 
     override fun windowOpened(windowevent: WindowEvent?) {
@@ -152,7 +152,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         anInt18++
         if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) {
             SpriteRenderable.aBoolean4726 = true
-            if (Class367_Sub4.aBoolean7320 && -BoundingBoxNode.aLong6748 + Class62.method599(-57) > 1000) {
+            if (Class367_Sub4.aBoolean7320 && -BoundingBoxNode.aLong6748 + GameClock.method599(-57) > 1000) {
                 val rectangle = graphics?.getClipBounds()
                 if (rectangle == null || (rectangle.width >= SocketFactory.anInt3473 && (NpcReference.anInt6857 <= rectangle.height))) ProjectileSpawner.aBoolean2674 = true
             }
@@ -161,7 +161,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     private fun method88(i: Int) {
         anInt2++
-        val l = Class62.method599(-119)
+        val l = GameClock.method599(-119)
         val l_2_ = Buffer.aLongArray7206!![GzipDecompressor.anInt2071]
         Buffer.aLongArray7206!![GzipDecompressor.anInt2071] = l
         if (l_2_ != 0L && l_2_ < l) {
@@ -279,7 +279,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     override fun destroy() {
         anInt21++
         if (EdgeDetectTextureNode.anGameApplet_Frame_9169 === this && !SpriteArchiveLoader.aBoolean384) {
-            CameraNodeList.aLong1739 = Class62.method599(-108)
+            CameraNodeList.aLong1739 = GameClock.method599(-108)
             TexGenMaterialPass.method2161(77.toByte(), 5000L)
             HudTabPanel.aPrivilegedOperationWorker_2993 = null
             method90(false, false)
@@ -334,7 +334,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 method87((-97).toByte())
                 method92(28740)
                 FacingDirectionNode.aBufferPositionTracker_6660 = RenderConfigFactory.method1631(false)
-                while (CameraNodeList.aLong1739 == 0L || (Class62.method599(-124) < CameraNodeList.aLong1739)) {
+                while (CameraNodeList.aLong1739 == 0L || (GameClock.method599(-124) < CameraNodeList.aLong1739)) {
                     FloatCameraTransform.anInt5744 = FacingDirectionNode.aBufferPositionTracker_6660!!.method1861(0, Class73.aLong4783)
                     var i = 0
                     while (FloatCameraTransform.anInt5744 > i) {
@@ -549,7 +549,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         fun method94(string: String, i: Int) {
             anInt6++
             if (ArbFogMaterialPass.aStringArray6200 == null) Gl3dTexture.method249(2)
-            WaterMaterialPass.aCalendar6221!!.setTime(Date(Class62.method599(-102)))
+            WaterMaterialPass.aCalendar6221!!.setTime(Date(GameClock.method599(-102)))
             val i_8_ = WaterMaterialPass.aCalendar6221!!.get(11)
             val i_9_ = WaterMaterialPass.aCalendar6221!!.get(12)
             val i_10_ = WaterMaterialPass.aCalendar6221!!.get(13)

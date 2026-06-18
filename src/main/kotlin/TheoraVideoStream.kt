@@ -89,7 +89,7 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
         anInt9017++
         if (i < -91) {
             if (aBoolean9016) {
-                aLong9018 = Class62.method599(-102)
+                aLong9018 = GameClock.method599(-102)
                 val i_1_ = aDecoderContext9032!!.decodePacketIn(oggpacket, aGranulePos9019)
                 check(i_1_ >= 0) { i_1_.toString() }
                 aDecoderContext9032!!.granuleFrame(aGranulePos9019)

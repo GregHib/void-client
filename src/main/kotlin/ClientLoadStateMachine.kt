@@ -12,7 +12,7 @@ import AsyncResourceRequest.Companion.method3256
 import Class367_Sub10.Companion.method3553
 import WorldMapLabel.Companion.method3568
 import ScrollbarComponent.Companion.method184
-import Class62.method599
+import GameClock.method599
 import Class75.Companion.method752
 import Class85.Companion.method830
 import RuntimeException_Sub1.Companion.method4011

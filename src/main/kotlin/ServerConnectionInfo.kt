@@ -1,6 +1,6 @@
 import AbstractProceduralTextureNode.Companion.method3038
 import InvertTextureNode.Companion.method3134
-import Class62.method599
+import GameClock.method599
 import Class76.Companion.method773
 
 /* Class161 - Decompiled by JODE

@@ -97,7 +97,7 @@ class WaterDetailOptionState : GraphicsOptionState {
                 val dimension = ParticleSystemRenderer.aCanvas3869!!.getSize()
                 Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3496!!.method2063(AnimationFrameDefinition.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
                 val class124 = ParticleConfigParser.method2277(0, RasterSprite.aJs5Archive_5207!!, AbstractFrameBufferSurface.anInt6923, -1)
-                val l = Class62.method599(-88)
+                val l = GameClock.method599(-88)
                 FacingDirectionNode.aRenderer6654!!.la()
                 SettingsCrcWriter.aAbstractCameraTransform_2123!!.method894(0, TheoraVideoStream.anInt9037, 0)
                 FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
@@ -115,12 +115,12 @@ class WaterDetailOptionState : GraphicsOptionState {
                             MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method894(((-(i_5_.toFloat() / 2.0f) + i_6_.toFloat()) * ArchiveFileConditionWrapper.anInt3465.toFloat()).toInt(), 0, (i_5_ + 1) * ArchiveFileConditionWrapper.anInt3465)
                             i_3_++
                             class64.method615(MinimapSquareDrawer.aAbstractCameraTransform_5209, null, 0)
-                            if (Class62.method599(-105) + -l >= i_2_.toLong()) break@while_80_
+                            if (GameClock.method599(-105) + -l >= i_2_.toLong()) break@while_80_
                         }
                     }
                 }
                 FacingDirectionNode.aRenderer6654!!.method3633()
-                val l_7_ = (1000 * i_3_).toLong() / (Class62.method599(-86) + -l)
+                val l_7_ = (1000 * i_3_).toLong() / (GameClock.method599(-86) + -l)
                 FacingDirectionNode.aRenderer6654!!.GA(0)
                 FacingDirectionNode.aRenderer6654!!.ya()
                 return l_7_.toInt()

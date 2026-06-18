@@ -5,7 +5,7 @@ import Class367_Sub10.Companion.method3553
 /* Class62 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class62 {
+object GameClock {
     @JvmField
     var anInt1110: Int = 0
     @JvmField

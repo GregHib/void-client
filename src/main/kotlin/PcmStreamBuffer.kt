@@ -230,7 +230,7 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
             anInt8876++
             val class221 = HeapInfoRecord.method1248(15)[class348_sub49.readUnsignedByte(255)]
             if (i > -113) aDouble8869 = -1.5911312034627048
-            val class341 = Class62.method596(20000)[class348_sub49.readUnsignedByte(255)]
+            val class341 = GameClock.method596(20000)[class348_sub49.readUnsignedByte(255)]
             val i_7_ = class348_sub49.readShort(13638)
             val i_8_ = class348_sub49.readShort(13638)
             val i_9_ = class348_sub49.readUnsignedShort(842397944)

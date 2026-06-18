@@ -1,6 +1,6 @@
 import FileStoreLocator.method1464
 import FileStoreLocator.method1466
-import Class62.method599
+import GameClock.method599
 import java.awt.*
 import java.awt.datatransfer.Transferable
 import java.io.DataInputStream

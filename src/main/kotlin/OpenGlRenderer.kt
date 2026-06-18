@@ -1163,9 +1163,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             glDeleteLists(class348_sub35!!.aLong4291.toInt(), class348_sub35.anInt6976)
         }
         aTextureCache_7723.method3469(8218)
-        if (E() > 100663296 && 60000L + aLong7757 < Class62.method599(-96)) {
+        if (E() > 100663296 && 60000L + aLong7757 < GameClock.method599(-96)) {
             System.gc()
-            aLong7757 = Class62.method599(-91)
+            aLong7757 = GameClock.method599(-91)
         }
         this.anInt7735 = i
     }

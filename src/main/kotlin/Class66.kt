@@ -61,8 +61,8 @@ import CompositeRgbNoiseTexture.Companion.method572
 import SolidFillComponent.Companion.method197
 import SpriteComponent.Companion.method199
 import SpriteComponent.Companion.method201
-import Class62.method596
-import Class62.method599
+import GameClock.method596
+import GameClock.method599
 import Class64.Companion.method606
 import Class64_Sub3.Companion.method690
 import Sprite.Companion.method160

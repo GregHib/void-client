@@ -2,7 +2,7 @@ import ChatEffectsOptionState.Companion.method1730
 import MidiSequencePlayer.Companion.method2862
 import Class367_Sub8.Companion.method3548
 import WorldMapElement.Companion.method181
-import Class62.method599
+import GameClock.method599
 import Class70.Companion.method726
 import NativeTerrainTile.Companion.method4004
 

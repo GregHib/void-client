@@ -221,7 +221,7 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
             do {
                 class348_sub42_sub15 = OpenGlTerrainTile.aLinkedNodeListIterator_8241!!.method1011(-87) as TimedTileQueueEntry?
                 if (class348_sub42_sub15 == null) return null
-                if (Class62.method599(-59) < class348_sub42_sub15.method3250((-51).toByte())) return null
+                if (GameClock.method599(-59) < class348_sub42_sub15.method3250((-51).toByte())) return null
                 class348_sub42_sub15.method2715(113.toByte())
                 class348_sub42_sub15.method3162(true)
             } while ((0x7fffffffffffffffL.inv() and class348_sub42_sub15.aLong7057) == 0L)

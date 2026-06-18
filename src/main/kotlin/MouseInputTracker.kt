@@ -109,7 +109,7 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
         class348_sub45_sub2.anInt9733 = i_5_
         class348_sub45_sub2.anInt9730 = i_7_
         class348_sub45_sub2.anInt9736 = i
-        class348_sub45_sub2.aLong9734 = Class62.method599(-110)
+        class348_sub45_sub2.aLong9734 = GameClock.method599(-110)
         aNodeDeque_7450!!.method1999(class348_sub45_sub2, -20180)
         if (i_8_ >= -110) Companion.method3607(28, null, -68)
     }

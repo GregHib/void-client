@@ -59,7 +59,7 @@ abstract class AbstractRenderPass internal constructor(var aHa_Sub3_4479: Native
         @JvmStatic
         fun method3529(i: Int): SceneEffectMarker {
             anInt4478++
-            val class318_sub6 = Class62.aDoublyLinkedNodeList_1114!!.method1875(60) as SceneEffectMarker?
+            val class318_sub6 = GameClock.aDoublyLinkedNodeList_1114!!.method1875(60) as SceneEffectMarker?
             if (i != 32564) method3529(-38)
             if (class318_sub6 != null) {
                 FriendChatMember.anInt4474--

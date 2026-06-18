@@ -404,7 +404,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderNode.anInt10469 = 0
             LoadingBarRenderer.anInt5038 = 0
             Class88.anInt1494 = 0
-            Class62.anInt1111 = 0
+            GameClock.anInt1111 = 0
             GlRenderDevice.anInt9898 = 0
             OpenGlRenderer.anInt7670 = 0
             TurbulenceTextureNode.anInt9315 = 0
@@ -2296,7 +2296,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Client.anInt5175 = 0
             ItemModelDefinition.anInt440 = 0
             NativeVertexBuffer.anInt4832 = 0
-            Class62.anInt1115 = 0
+            GameClock.anInt1115 = 0
             AbstractProceduralTextureNode.anInt7034 = 0
             GlRectangleTexture.anInt8647 = 0
             StreamingResourceRequest.anInt10452 = 0
@@ -2893,7 +2893,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FrameBufferObject.anInt4890 = 0
             SceneObjectAnimator.anInt3061 = 0
             CubemapTextureImplSource.anInt8710 = 0
-            Class62.anInt1113 = 0
+            GameClock.anInt1113 = 0
             NativeTerrainTile.anInt8298 = 0
             RectangleBounds.anInt2154 = 0
             LinkedListNode.anInt4298 = 0
@@ -3032,7 +3032,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ConfigFlagUtil.anInt3233 = 0
             GameAppletFrame.anInt9 = 0
             VarpStore.anInt5072 = 0
-            Class62.anInt1112 = 0
+            GameClock.anInt1112 = 0
             GameAppletFrame.anInt10 = 0
             WorldListEntry.anInt309 = 0
             WorldMapScene.anInt3107 = 0
@@ -3257,7 +3257,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Buffer.anInt7199 = 0
             GlRenderDevice.anInt9868 = 0
             NativeRenderer.anInt8059 = 0
-            Class62.anInt1110 = 0
+            GameClock.anInt1110 = 0
             OggMediaStream.anInt998 = 0
             ProjectionCameraTransform.anInt5775 = 0
             Class367_Sub10.anInt7386 = 0

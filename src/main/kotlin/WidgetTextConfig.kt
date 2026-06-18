@@ -118,7 +118,7 @@ class WidgetTextConfig {
         fun method363(i: Int) {
             if (HeapDiagnosticsHolder.anInt2254 < 102) HeapDiagnosticsHolder.anInt2254 += 6
             anInt512++
-            if (MinimapFlagRenderer.anInt1794 != -1 && (CubemapTexture2dSource.aLong8694 < Class62.method599(-127))) {
+            if (MinimapFlagRenderer.anInt1794 != -1 && (CubemapTexture2dSource.aLong8694 < GameClock.method599(-127))) {
                 for (i_4_ in MinimapFlagRenderer.anInt1794..<MinimapSquareDrawer.aStringArray5223!!.size) {
                     if (MinimapSquareDrawer.aStringArray5223!![i_4_]!!.startsWith("pause")) {
                         var i_5_ = 5
@@ -129,7 +129,7 @@ class WidgetTextConfig {
                         }
                         method94("Pausing for " + i_5_ + " seconds...", 58)
                         MinimapFlagRenderer.anInt1794 = 1 + i_4_
-                        CubemapTexture2dSource.aLong8694 = (1000 * i_5_).toLong() + Class62.method599(-97)
+                        CubemapTexture2dSource.aLong8694 = (1000 * i_5_).toLong() + GameClock.method599(-97)
                         return
                     } else {
                         MapElementManager.aString4461 = MinimapSquareDrawer.aStringArray5223!![i_4_]
