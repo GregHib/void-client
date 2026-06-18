@@ -337,11 +337,11 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     is_28_[5] = class348_sub49.readUnsignedShort(842397944)
                 } else if (i_23_ == 4) {
                     val i_24_ = class348_sub49.readUnsignedByte(255)
-                    RuntimeException_Sub1.anIntArray4603 = IntArray(i_24_)
+                    TextureLoadException.anIntArray4603 = IntArray(i_24_)
                     var i_25_ = 0
                     while (i_24_ > i_25_) {
-                        RuntimeException_Sub1.anIntArray4603!![i_25_] = class348_sub49.readUnsignedShort(842397944)
-                        if (RuntimeException_Sub1.anIntArray4603!![i_25_] == 65535) RuntimeException_Sub1.anIntArray4603!![i_25_] = -1
+                        TextureLoadException.anIntArray4603!![i_25_] = class348_sub49.readUnsignedShort(842397944)
+                        if (TextureLoadException.anIntArray4603!![i_25_] == 65535) TextureLoadException.anIntArray4603!![i_25_] = -1
                         i_25_++
                     }
                 } else if (i_23_ == 5) {

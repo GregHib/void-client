@@ -520,7 +520,7 @@ import InputStream_Sub1.Companion.method124
 import InputStream_Sub2.Companion.method127
 import ChatMessageStream.Companion.method139
 import Player.Companion.method2458
-import RuntimeException_Sub1.Companion.method4010
+import TextureLoadException.Companion.method4010
 import NativeSprite.Companion.method161
 import RasterSprite.Companion.method167
 import Renderer.Companion.method3680
@@ -666,7 +666,7 @@ class Client : GameAppletFrame() {
         LoadingScreenImageNode.aShortArray9502 = HslPaletteState.aShortArray4172
         NamedIdEntry.aShortArray6889 = LoadingScreenImageNode.aShortArray9502
         SceneEffectMarker.aShortArray6428 = NamedIdEntry.aShortArray6889
-        if (HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) RuntimeException_Sub1.aBoolean4599 = false
+        if (HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) TextureLoadException.aBoolean4599 = false
         if (GlRectangleTexture.aSceneProjector_8638 == HardCacheEntryReference.aSceneProjector_10434) {
             InputSettingsState.shiftClick = true
             SpriteLoadValidator.aShortArrayArray4791 = FacingDirectionNode.aShortArrayArray6664
@@ -1680,14 +1680,14 @@ class Client : GameAppletFrame() {
                     i -= insets.left + insets.right
                     i_119_ -= insets.top - -insets.bottom
                 }
-                if (i != SocketFactory.anInt3473 || i_119_ != NpcReference.anInt6857 || RuntimeException_Sub1.aBoolean4604) {
+                if (i != SocketFactory.anInt3473 || i_119_ != NpcReference.anInt6857 || TextureLoadException.aBoolean4604) {
                     if (FacingDirectionNode.aRenderer6654 == null || FacingDirectionNode.aRenderer6654!!.method3695()) method3556(false)
                     else {
                         NpcReference.anInt6857 = i_119_
                         SocketFactory.anInt3473 = i
                     }
                     PcmStreamBuffer.aLong8866 = method599(-66) - -500L
-                    RuntimeException_Sub1.aBoolean4604 = false
+                    TextureLoadException.aBoolean4604 = false
                 }
             }
             if (SkeletalAnimFrameLoader.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)

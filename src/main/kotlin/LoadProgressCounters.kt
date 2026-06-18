@@ -29,7 +29,7 @@ class LoadProgressCounters {
         var anInt2453: Int = 0
         @JvmStatic
         fun method1372(i: Int) {
-            RuntimeException_Sub1.anInt4596 = i
+            TextureLoadException.anInt4596 = i
             BloomGraphicsOptionState.anInt5969 = 1
             anInt2452++
             var l = 0L

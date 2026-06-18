@@ -330,7 +330,7 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
             var throwable = throwable
             anInt8823++
             var string: String
-            if (throwable is RuntimeException_Sub1) {
+            if (throwable is TextureLoadException) {
                 val runtimeexception_sub1 = throwable
                 string = (runtimeexception_sub1.aString4594 + " | ")
                 throwable = (runtimeexception_sub1.aThrowable4595!!)

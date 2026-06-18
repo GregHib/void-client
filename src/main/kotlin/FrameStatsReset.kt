@@ -371,7 +371,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             HintArrowOrMessage.anInt2036 = 0
             ConfigDefinitionLoader.anInt2086 = 0
             GlBufferObject.anInt4742 = 0
-            RuntimeException_Sub1.anInt4598 = 0
+            TextureLoadException.anInt4598 = 0
             BufferPositionTracker.anInt3149 = 0
             SpotAnimVector.anInt2300 = 0
             NativeRenderer.anInt8046 = 0
@@ -2112,7 +2112,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Renderer.anInt4575 = 0
             ModelDefinition.anInt1828 = 0
             IndexedSprite.anInt5194 = 0
-            RuntimeException_Sub1.anInt4605 = 0
+            TextureLoadException.anInt4605 = 0
             CacheArchiveIndex.anInt1775 = 0
             Buffer.anInt7169 = 0
             ProjectileConfigUtil.anInt390 = 0
@@ -3609,7 +3609,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DirectionalStripeTextureNode.anInt9100 = 0
             GlowPostProcessor.anInt2518 = 0
             MinimapSquareDrawer.anInt5211 = 0
-            RuntimeException_Sub1.anInt4597 = 0
+            TextureLoadException.anInt4597 = 0
             Js5Archive.anInt665 = 0
             GlTexture2D.anInt8543 = 0
             NormalMapTextureNode.anInt9435 = 0

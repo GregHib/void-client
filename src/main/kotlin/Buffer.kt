@@ -725,8 +725,8 @@ open class Buffer : LinkedListNode {
             anInt7201++
             if (i_71_ != WorldMapRenderer.anInt4674) {
                 if (i_71_ == 13) {
-                    if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157(RuntimeException_Sub1.anInt4596, (-81).toByte())
-                    else method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, OpenGlModel.aString5600, true)
+                    if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157(TextureLoadException.anInt4596, (-81).toByte())
+                    else method1922(TextureGenerator.aString2496, TextureLoadException.anInt4596, OpenGlModel.aString5600, true)
                 }
                 if (i_71_ != 13 && ItemDefinition.aAbstractGameSocket_2773 != null) {
                     ItemDefinition.aAbstractGameSocket_2773!!.method1700(36.toByte())
@@ -739,14 +739,14 @@ open class Buffer : LinkedListNode {
                     else method1372(-1)
                 } else if (i_71_ != 6) {
                     if (i_71_ == 9) {
-                        if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157((RuntimeException_Sub1.anInt4596), (-120).toByte())
-                        else method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, OpenGlModel.aString5600, true)
+                        if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157((TextureLoadException.anInt4596), (-120).toByte())
+                        else method1922(TextureGenerator.aString2496, TextureLoadException.anInt4596, OpenGlModel.aString5600, true)
                     } else if (i_71_ == 12) {
                         if (NullOggStream.aString9043 == null) method1213(OpenGlModel.aString5600, TextureGenerator.aString2496, -98)
                         else method1372(-1)
                     }
-                } else if (NullOggStream.aString9043 == null) method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, OpenGlModel.aString5600, true)
-                else GlElementArrayBuffer.method1157(RuntimeException_Sub1.anInt4596, (-99).toByte())
+                } else if (NullOggStream.aString9043 == null) method1922(TextureGenerator.aString2496, TextureLoadException.anInt4596, OpenGlModel.aString5600, true)
+                else GlElementArrayBuffer.method1157(TextureLoadException.anInt4596, (-99).toByte())
                 if (GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
                     DirectionUtil.aJs5Archive_1541!!.anInt634 = 2
                     VideoAdChecker.aJs5Archive_3183!!.anInt634 = 2

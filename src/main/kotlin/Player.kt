@@ -423,7 +423,7 @@ class Player : ProjectedGroundDecor() {
         var string: String? = ""
         if (GlEnvMappedWaterPass.aStringArray7378 != null) string += GlEnvMappedWaterPass.aStringArray7378!![aByte10552.toInt()]
         val `is`: IntArray?
-        if (aByte10538.toInt() != 1 || ParticleDetailOptionState.anIntArray6021 == null) `is` = RuntimeException_Sub1.anIntArray4603
+        if (aByte10538.toInt() != 1 || ParticleDetailOptionState.anIntArray6021 == null) `is` = TextureLoadException.anIntArray4603
         else `is` = ParticleDetailOptionState.anIntArray6021
         if (i != 255) anInt10567 = 81
         if (`is` != null && `is`[aByte10552.toInt()] != -1) {

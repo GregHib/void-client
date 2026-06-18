@@ -765,7 +765,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 JagGlToolkitFactory.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 FogOptionState.anInt6048 = 2
-                                val class348_sub47 = (method2148(RuntimeException_Sub1.aFontMetaRef_4601, TheoraVideoStream.aIsaacCipher_9029, -123))
+                                val class348_sub47 = (method2148(TextureLoadException.aFontMetaRef_4601, TheoraVideoStream.aIsaacCipher_9029, -123))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-67).toByte(), (if (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -122)) 1 else 0))
                                 InterfaceComponentGroup.method3243(119, class348_sub47)

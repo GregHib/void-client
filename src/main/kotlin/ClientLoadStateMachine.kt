@@ -15,7 +15,7 @@ import ScrollbarComponent.Companion.method184
 import GameClock.method599
 import MapRegionLoader.Companion.method752
 import WhirlpoolHash.Companion.method830
-import RuntimeException_Sub1.Companion.method4011
+import TextureLoadException.Companion.method4011
 import NativeRenderer.Companion.method3886
 import NativeRenderer.Companion.method3896
 import jagex3.jagmisc.jagmisc.init
@@ -174,7 +174,7 @@ object ClientLoadStateMachine {
             val i_10_ = BinaryGraphicsOptionState.method1770((-25).toByte())
             if (i_10_ < 100) return i_10_
             SeqDefinitionCache.method2013(FixedFunctionWaterPass.aJs5Archive_7362!!.method415(73.toByte(), 1), 112.toByte())
-            RuntimeException_Sub1.method4012(FixedFunctionWaterPass.aJs5Archive_7362!!.method415(73.toByte(), 3), (-111).toByte())
+            TextureLoadException.method4012(FixedFunctionWaterPass.aJs5Archive_7362!!.method415(73.toByte(), 3), (-111).toByte())
         }
         if (i != -28660) return 2
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1035) {

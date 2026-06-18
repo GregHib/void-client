@@ -1,4 +1,4 @@
-import RuntimeException_Sub1.Companion.method4009
+import TextureLoadException.Companion.method4009
 import jaclib.memory.Buffer
 import jaclib.memory.Stream
 import jaclib.memory.heap.NativeHeap

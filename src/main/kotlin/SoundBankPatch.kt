@@ -414,16 +414,16 @@ class SoundBankPatch : LinkedListNode {
         }
 
         @JvmStatic
-        fun method2929(throwable: Throwable, string: String?): RuntimeException_Sub1 {
+        fun method2929(throwable: Throwable, string: String?): TextureLoadException {
             anInt6789++
             if (Loader.trace) {
                 throwable.printStackTrace()
             }
-            val runtimeexception_sub1: RuntimeException_Sub1
-            if (throwable is RuntimeException_Sub1) {
+            val runtimeexception_sub1: TextureLoadException
+            if (throwable is TextureLoadException) {
                 runtimeexception_sub1 = throwable
                 runtimeexception_sub1.aString4594 += ' '.toString() + string
-            } else runtimeexception_sub1 = RuntimeException_Sub1(throwable, string)
+            } else runtimeexception_sub1 = TextureLoadException(throwable, string)
             return runtimeexception_sub1
         }
 

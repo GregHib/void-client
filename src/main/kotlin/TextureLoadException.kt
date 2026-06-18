@@ -1,7 +1,7 @@
 /* RuntimeException_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField var aString4594: String?) : RuntimeException() {
+class TextureLoadException(@JvmField var aThrowable4595: Throwable?, @JvmField var aString4594: String?) : RuntimeException() {
     companion object {
         @JvmField
         var anInt4596: Int

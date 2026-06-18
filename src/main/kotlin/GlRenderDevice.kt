@@ -317,12 +317,12 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     }
 
     override fun method3928(i: Int) {
-        RuntimeException_Sub1.aFloatArray4602!![0] = this.aFloat8180 * this.aFloat8093
+        TextureLoadException.aFloatArray4602!![0] = this.aFloat8180 * this.aFloat8093
         anInt9864++
-        RuntimeException_Sub1.aFloatArray4602!![2] = this.aFloat8093 * this.aFloat8168
-        RuntimeException_Sub1.aFloatArray4602!![1] = this.aFloat8087 * this.aFloat8093
-        RuntimeException_Sub1.aFloatArray4602!![3] = 1.0f
-        glLightModelfv(2899, RuntimeException_Sub1.aFloatArray4602, i)
+        TextureLoadException.aFloatArray4602!![2] = this.aFloat8093 * this.aFloat8168
+        TextureLoadException.aFloatArray4602!![1] = this.aFloat8087 * this.aFloat8093
+        TextureLoadException.aFloatArray4602!![3] = 1.0f
+        glLightModelfv(2899, TextureLoadException.aFloatArray4602, i)
     }
 
     override fun method3843(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?, i_14_: Int, bool: Boolean): Renderable2dTexture {
@@ -512,18 +512,18 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     }
 
     override fun method3842(bool: Boolean) {
-        RuntimeException_Sub1.aFloatArray4602!![2] = this.aFloat8168 * this.aFloat8174
-        RuntimeException_Sub1.aFloatArray4602!![3] = 1.0f
-        RuntimeException_Sub1.aFloatArray4602!![0] = this.aFloat8180 * this.aFloat8174
+        TextureLoadException.aFloatArray4602!![2] = this.aFloat8168 * this.aFloat8174
+        TextureLoadException.aFloatArray4602!![3] = 1.0f
+        TextureLoadException.aFloatArray4602!![0] = this.aFloat8180 * this.aFloat8174
         anInt9825++
-        RuntimeException_Sub1.aFloatArray4602!![1] = this.aFloat8087 * this.aFloat8174
-        glLightfv(16384, 4609, RuntimeException_Sub1.aFloatArray4602, 0)
-        RuntimeException_Sub1.aFloatArray4602!![0] = this.aFloat8180 * -this.aFloat8186
-        RuntimeException_Sub1.aFloatArray4602!![2] = -this.aFloat8186 * this.aFloat8168
+        TextureLoadException.aFloatArray4602!![1] = this.aFloat8087 * this.aFloat8174
+        glLightfv(16384, 4609, TextureLoadException.aFloatArray4602, 0)
+        TextureLoadException.aFloatArray4602!![0] = this.aFloat8180 * -this.aFloat8186
+        TextureLoadException.aFloatArray4602!![2] = -this.aFloat8186 * this.aFloat8168
         if (bool == true) {
-            RuntimeException_Sub1.aFloatArray4602!![3] = 1.0f
-            RuntimeException_Sub1.aFloatArray4602!![1] = -this.aFloat8186 * this.aFloat8087
-            glLightfv(16385, 4609, RuntimeException_Sub1.aFloatArray4602, 0)
+            TextureLoadException.aFloatArray4602!![3] = 1.0f
+            TextureLoadException.aFloatArray4602!![1] = -this.aFloat8186 * this.aFloat8087
+            glLightfv(16385, 4609, TextureLoadException.aFloatArray4602, 0)
         }
     }
 
@@ -570,10 +570,10 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         if (this.aFloat8173 < this.anInt8095.toFloat()) this.aFloat8173 = this.anInt8095.toFloat()
         glFogf(2915, this.aFloat8173)
         glFogf(2916, this.aFloat8115)
-        RuntimeException_Sub1.aFloatArray4602!![2] = (NpcSummaryDefinition.method1166(this.anInt8144, 255).toFloat() / 255.0f)
-        RuntimeException_Sub1.aFloatArray4602!![0] = (NpcSummaryDefinition.method1166(16711680, this.anInt8144).toFloat() / 1.671168E7f)
-        RuntimeException_Sub1.aFloatArray4602!![1] = (NpcSummaryDefinition.method1166(65280, this.anInt8144).toFloat() / 65280.0f)
-        glFogfv(2918, RuntimeException_Sub1.aFloatArray4602, 0)
+        TextureLoadException.aFloatArray4602!![2] = (NpcSummaryDefinition.method1166(this.anInt8144, 255).toFloat() / 255.0f)
+        TextureLoadException.aFloatArray4602!![0] = (NpcSummaryDefinition.method1166(16711680, this.anInt8144).toFloat() / 1.671168E7f)
+        TextureLoadException.aFloatArray4602!![1] = (NpcSummaryDefinition.method1166(65280, this.anInt8144).toFloat() / 65280.0f)
+        glFogfv(2918, TextureLoadException.aFloatArray4602, 0)
     }
 
     override fun method3671(): Boolean {
@@ -745,16 +745,16 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val i_48_ = class348_sub1.method2720(-1)
             val i_49_ = i_47_ + 16386
             val f = class348_sub1.method2721(-37) / 255.0f
-            RuntimeException_Sub1.aFloatArray4602!![0] = class348_sub1.method2724(-1).toFloat()
-            RuntimeException_Sub1.aFloatArray4602!![1] = class348_sub1.method2722(124).toFloat()
-            RuntimeException_Sub1.aFloatArray4602!![2] = class348_sub1.method2717(111.toByte()).toFloat()
-            RuntimeException_Sub1.aFloatArray4602!![3] = 1.0f
-            glLightfv(i_49_, 4611, RuntimeException_Sub1.aFloatArray4602, 0)
-            RuntimeException_Sub1.aFloatArray4602!![2] = NpcSummaryDefinition.method1166(255, i_48_).toFloat() * f
-            RuntimeException_Sub1.aFloatArray4602!![1] = f * (NpcSummaryDefinition.method1166(i_48_, 65338) shr 8).toFloat()
-            RuntimeException_Sub1.aFloatArray4602!![0] = NpcSummaryDefinition.method1166(255, i_48_ shr 16).toFloat() * f
-            RuntimeException_Sub1.aFloatArray4602!![3] = 1.0f
-            glLightfv(i_49_, 4609, RuntimeException_Sub1.aFloatArray4602, 0)
+            TextureLoadException.aFloatArray4602!![0] = class348_sub1.method2724(-1).toFloat()
+            TextureLoadException.aFloatArray4602!![1] = class348_sub1.method2722(124).toFloat()
+            TextureLoadException.aFloatArray4602!![2] = class348_sub1.method2717(111.toByte()).toFloat()
+            TextureLoadException.aFloatArray4602!![3] = 1.0f
+            glLightfv(i_49_, 4611, TextureLoadException.aFloatArray4602, 0)
+            TextureLoadException.aFloatArray4602!![2] = NpcSummaryDefinition.method1166(255, i_48_).toFloat() * f
+            TextureLoadException.aFloatArray4602!![1] = f * (NpcSummaryDefinition.method1166(i_48_, 65338) shr 8).toFloat()
+            TextureLoadException.aFloatArray4602!![0] = NpcSummaryDefinition.method1166(255, i_48_ shr 16).toFloat() * f
+            TextureLoadException.aFloatArray4602!![3] = 1.0f
+            glLightfv(i_49_, 4609, TextureLoadException.aFloatArray4602, 0)
             glLightf(i_49_, 4617, 1.0f / (class348_sub1.method2723(-1) * class348_sub1.method2723(-1)).toFloat())
             glEnable(i_49_)
             i_47_++
@@ -1101,13 +1101,13 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     }
 
     override fun method3945(i: Int) {
-        RuntimeException_Sub1.aFloatArray4602!![1] = (NpcSummaryDefinition.method1166(65280, this.anInt8119).toFloat() / 65280.0f)
-        RuntimeException_Sub1.aFloatArray4602!![2] = (NpcSummaryDefinition.method1166(255, this.anInt8119).toFloat() / 255.0f)
-        RuntimeException_Sub1.aFloatArray4602!![3] = (this.anInt8119 ushr 24).toFloat() / 255.0f
+        TextureLoadException.aFloatArray4602!![1] = (NpcSummaryDefinition.method1166(65280, this.anInt8119).toFloat() / 65280.0f)
+        TextureLoadException.aFloatArray4602!![2] = (NpcSummaryDefinition.method1166(255, this.anInt8119).toFloat() / 255.0f)
+        TextureLoadException.aFloatArray4602!![3] = (this.anInt8119 ushr 24).toFloat() / 255.0f
         anInt9889++
-        RuntimeException_Sub1.aFloatArray4602!![0] = (NpcSummaryDefinition.method1166(16711680, this.anInt8119).toFloat() / 1.671168E7f)
+        TextureLoadException.aFloatArray4602!![0] = (NpcSummaryDefinition.method1166(16711680, this.anInt8119).toFloat() / 1.671168E7f)
         if (i >= -107) anInt9909 = -64
-        glTexEnvfv(8960, 8705, RuntimeException_Sub1.aFloatArray4602, 0)
+        glTexEnvfv(8960, 8705, TextureLoadException.aFloatArray4602, 0)
     }
 
     override fun method3892(i: Int) {

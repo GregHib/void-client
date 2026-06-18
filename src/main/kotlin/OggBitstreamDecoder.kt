@@ -132,7 +132,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
             SceneObjectSpawner.method773(true)
             RenderNode.aBoolean9719 = false
             NativeLibraryUnloader.aMapSceneTileArray2974 = null
-            RuntimeException_Sub1.aBoolean4604 = true
+            TextureLoadException.aBoolean4604 = true
             LoadingScreenImageNode.method3179(i_1_)
         }
 

@@ -1281,7 +1281,7 @@ object ChatCommandProcessor {
                 if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
                     OpenGlModel.aString5600 = string
                     TextureGenerator.aString2496 = string_142_
-                    RuntimeException_Sub1.anInt4596 = i_143_
+                    TextureLoadException.anInt4596 = i_143_
                     Buffer.method3379(2, 6)
                     return
                 }
@@ -1342,7 +1342,7 @@ object ChatCommandProcessor {
                         PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
                         PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
                     }
-                    RuntimeException_Sub1.anInt4596 = i_144_
+                    TextureLoadException.anInt4596 = i_144_
                     Buffer.method3379(2, 9)
                     return
                 }
@@ -1626,7 +1626,7 @@ object ChatCommandProcessor {
             if (i == 6036) {
                 IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub23_7231), anIntArray1149!![--anInt1173])
                 method243(37)
-                RuntimeException_Sub1.aBoolean4604 = true
+                TextureLoadException.aBoolean4604 = true
                 return
             }
             if (i == 6037) {
@@ -4049,7 +4049,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 3333) {
-                    anIntArray1149!![anInt1173++] = RuntimeException_Sub1.anInt4596
+                    anIntArray1149!![anInt1173++] = TextureLoadException.anInt4596
                     return
                 }
                 if (i == 3335) {

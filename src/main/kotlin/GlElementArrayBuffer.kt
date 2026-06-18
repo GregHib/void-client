@@ -101,7 +101,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
             if (i_7_ < -77) {
                 BloomGraphicsOptionState.anInt5969 = 2
                 anInt4834++
-                RuntimeException_Sub1.anInt4596 = i
+                TextureLoadException.anInt4596 = i
                 var l = 0L
                 if (NullOggStream.aString9043 == null) {
                     GlRectangleTexture.method254(35, (-87).toByte())

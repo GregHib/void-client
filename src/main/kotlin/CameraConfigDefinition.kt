@@ -69,7 +69,7 @@ class CameraConfigDefinition {
             try {
                 if (bool == true) {
                     anInt3247++
-                    RuntimeException_Sub1.anInt4596 = i
+                    TextureLoadException.anInt4596 = i
                     BloomGraphicsOptionState.anInt5969 = 2
                     LocalPlayerState.method1138(string_12_, false, string, (-45).toByte())
                 }
