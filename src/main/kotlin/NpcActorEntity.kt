@@ -10,7 +10,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
     private var aByte10062: Byte = 0
     private val aBoolean10064: Boolean
     private var aBoolean10066 = false
-    var aClass64_10071: Class64? = null
+    var aAbstractModel_10071: AbstractModel? = null
     private val aBoolean10076: Boolean
     private var aByte10079: Byte = 0
     private var aShort10081: Short = 0
@@ -35,9 +35,9 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
                 val class2 = method2481(aBoolean10064, i_7_, -4, var_renderer)
                 if (class2 == null) break
                 aRenderNode10094 = class2.aRenderNode118
-                this.aClass64_10071 = class2.aClass64_119
+                this.aAbstractModel_10071 = class2.aAbstractModel_119
                 if (!aBoolean10090) break
-                this.aClass64_10071 = this.aClass64_10071!!.method614(0.toByte(), i_7_, false)
+                this.aAbstractModel_10071 = this.aAbstractModel_10071!!.method614(0.toByte(), i_7_, false)
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("ge.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + bool_6_ + ')'))
             }
@@ -53,7 +53,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
 
     override fun method40(i: Int) {
         anInt10077++
-        if (this.aClass64_10071 != null) this.aClass64_10071!!.method612()
+        if (this.aAbstractModel_10071 != null) this.aAbstractModel_10071!!.method612()
         if (i != -12031) method38(-122)
     }
 
@@ -85,7 +85,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
         anInt10091++
         if (bool != true) method2394(true)
         aBoolean10090 = false
-        if (this.aClass64_10071 != null) this.aClass64_10071!!.s(this.aClass64_10071!!.ua() and 0x10000.inv())
+        if (this.aAbstractModel_10071 != null) this.aAbstractModel_10071!!.s(this.aAbstractModel_10071!!.ua() and 0x10000.inv())
     }
 
     public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
@@ -104,7 +104,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
     public override fun method2379(i: Int): Int {
         anInt10063++
         if (i != -25675) aByte10079 = 53.toByte()
-        if (this.aClass64_10071 != null) return this.aClass64_10071!!.ma()
+        if (this.aAbstractModel_10071 != null) return this.aAbstractModel_10071!!.ma()
         return 0
     }
 
@@ -119,10 +119,10 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
             if (i_12_ > -106) method2388(-102)
             if (class318_sub1 is NpcActorEntity) {
                 val class318_sub1_sub4_sub1_14_ = class318_sub1
-                if (this.aClass64_10071 != null && (class318_sub1_sub4_sub1_14_.aClass64_10071) != null) this.aClass64_10071!!.method613(class318_sub1_sub4_sub1_14_.aClass64_10071, i_13_, i, i_11_, bool)
+                if (this.aAbstractModel_10071 != null && (class318_sub1_sub4_sub1_14_.aAbstractModel_10071) != null) this.aAbstractModel_10071!!.method613(class318_sub1_sub4_sub1_14_.aAbstractModel_10071, i_13_, i, i_11_, bool)
             } else if (class318_sub1 is ModelGroundDecor) {
                 val class318_sub1_sub3_sub1 = class318_sub1
-                if (this.aClass64_10071 != null && (class318_sub1_sub3_sub1.aClass64_10028) != null) this.aClass64_10071!!.method613((class318_sub1_sub3_sub1.aClass64_10028), i_13_, i, i_11_, bool)
+                if (this.aAbstractModel_10071 != null && (class318_sub1_sub3_sub1.aAbstractModel_10028) != null) this.aAbstractModel_10071!!.method613((class318_sub1_sub3_sub1.aAbstractModel_10028), i_13_, i, i_11_, bool)
             }
             anInt10083++
         } catch (runtimeexception: RuntimeException) {
@@ -165,29 +165,29 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
 
     public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10069++
-        if (this.aClass64_10071 == null) return null
+        if (this.aAbstractModel_10071 == null) return null
         val class101 = var_renderer!!.method3705()
         class101.method894(this.x, this.anInt6382, this.y)
         val class318_sub4 = method136(i, aBoolean10076, false)
-        if (!ParticleSystemRenderer.aBoolean3870) this.aClass64_10071!!.method615(class101, class318_sub4.aClass318_Sub3Array6414!![0], 0)
-        else this.aClass64_10071!!.method608(class101, class318_sub4.aClass318_Sub3Array6414!![0], LocalPlayerState.anInt1906, 0)
+        if (!ParticleSystemRenderer.aBoolean3870) this.aAbstractModel_10071!!.method615(class101, class318_sub4.aClass318_Sub3Array6414!![0], 0)
+        else this.aAbstractModel_10071!!.method608(class101, class318_sub4.aClass318_Sub3Array6414!![0], LocalPlayerState.anInt1906, 0)
         return class318_sub4
     }
 
-    private fun method2482(var_renderer: Renderer, i: Byte, i_17_: Int): Class64? {
+    private fun method2482(var_renderer: Renderer, i: Byte, i_17_: Int): AbstractModel? {
         if (i <= 113) method2387(null, -99)
         anInt10072++
-        if (this.aClass64_10071 != null && var_renderer.method3667(this.aClass64_10071!!.ua(), i_17_) == 0) return this.aClass64_10071
+        if (this.aAbstractModel_10071 != null && var_renderer.method3667(this.aAbstractModel_10071!!.ua(), i_17_) == 0) return this.aAbstractModel_10071
         val class2 = method2481(false, i_17_, -4, var_renderer)
-        if (class2 != null) return class2.aClass64_119
+        if (class2 != null) return class2.aAbstractModel_119
         return null
     }
 
     public override fun method2394(bool: Boolean): Int {
         anInt10093++
         if (bool != true) aByte10062 = (-75).toByte()
-        if (this.aClass64_10071 == null) return 0
-        return this.aClass64_10071!!.fa()
+        if (this.aAbstractModel_10071 == null) return 0
+        return this.aAbstractModel_10071!!.fa()
     }
 
     public override fun method2388(i: Int): Boolean {
@@ -199,15 +199,15 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
     public override fun method2377(i: Byte): Boolean {
         anInt10065++
         if (i.toInt() != 122) return true
-        if (this.aClass64_10071 == null) return false
-        return this.aClass64_10071!!.F()
+        if (this.aAbstractModel_10071 == null) return false
+        return this.aAbstractModel_10071!!.F()
     }
 
     public override fun method2376(i: Int): Boolean {
         if (i >= -12) method2388(-68)
         anInt10085++
-        if (this.aClass64_10071 != null) {
-            return !this.aClass64_10071!!.r()
+        if (this.aAbstractModel_10071 != null) {
+            return !this.aAbstractModel_10071!!.r()
         }
         return true
     }

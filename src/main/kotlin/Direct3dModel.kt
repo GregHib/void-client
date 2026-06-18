@@ -21,7 +21,7 @@ import OpenGlRenderer.Companion.method3743
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.sqrt
 
-class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_764_: Int, bool: Boolean, bool_765_: Boolean) : Class64() {
+class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_764_: Int, bool: Boolean, bool_765_: Boolean) : AbstractModel() {
     private var anInt5401 = 0
     private var aBoolean5402 = true
     private var anIntArray5404: IntArray? = null
@@ -917,7 +917,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         aBoolean5477 = false
     }
 
-    private fun method668(bool: Boolean, class64_sub2_153_: Class64_Sub2?, class64_sub2_154_: Class64_Sub2?, i: Int, bool_155_: Boolean, i_156_: Int): Class64? {
+    private fun method668(bool: Boolean, class64_sub2_153_: Direct3dModel?, class64_sub2_154_: Direct3dModel?, i: Int, bool_155_: Boolean, i_156_: Int): AbstractModel? {
         try {
             class64_sub2_154_!!.anInt5497 = anInt5497
             class64_sub2_154_.anInt5478 = anInt5478
@@ -2441,10 +2441,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         anInt5505++
     }
 
-    public override fun method613(class64: Class64?, i: Int, i_483_: Int, i_484_: Int, bool: Boolean) {
+    public override fun method613(abstractModel: AbstractModel?, i: Int, i_483_: Int, i_484_: Int, bool: Boolean) {
         try {
             anInt5417++
-            val class64_sub2_485_ = class64 as Class64_Sub2
+            val class64_sub2_485_ = abstractModel as Direct3dModel
             if (anInt5478 != 0 && class64_sub2_485_.anInt5478 != 0) {
                 val i_486_ = class64_sub2_485_.anInt5433
                 val `is` = class64_sub2_485_.anIntArray5511
@@ -2594,7 +2594,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.PA(" + (if (class64 != null) "{...}" else "null") + ',' + i + ',' + i_483_ + ',' + i_484_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("nca.PA(" + (if (abstractModel != null) "{...}" else "null") + ',' + i + ',' + i_483_ + ',' + i_484_ + ',' + bool + ')'))
         }
     }
 
@@ -2615,10 +2615,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
         method670(-119)
     }
 
-    public override fun method614(i: Byte, i_531_: Int, bool: Boolean): Class64? {
+    public override fun method614(i: Byte, i_531_: Int, bool: Boolean): AbstractModel? {
         anInt5426++
-        val class64_sub2_532_: Class64_Sub2?
-        val class64_sub2_533_: Class64_Sub2?
+        val class64_sub2_532_: Direct3dModel?
+        val class64_sub2_533_: Direct3dModel?
         if (i.toInt() == 1) {
             class64_sub2_532_ = aHa_Sub3_5419!!.aClass64_Sub2_8198
             class64_sub2_533_ = aHa_Sub3_5419!!.aClass64_Sub2_8206
@@ -2635,7 +2635,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
             class64_sub2_533_ = aHa_Sub3_5419!!.aClass64_Sub2_8207
             class64_sub2_532_ = aHa_Sub3_5419!!.aClass64_Sub2_8189
         } else {
-            class64_sub2_532_ = Class64_Sub2(aHa_Sub3_5419, 0, 0, true, false)
+            class64_sub2_532_ = Direct3dModel(aHa_Sub3_5419, 0, 0, true, false)
             class64_sub2_533_ = class64_sub2_532_
         }
         return method668(i.toInt() != 0, class64_sub2_532_, class64_sub2_533_, i_531_, bool, 26794)
@@ -2878,7 +2878,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 }
                 if (i_596_ > 0) {
                     KeyboardInputSource.anInt4274 = KeyboardInputSource.anInt4274 / i_596_ - -i_592_
-                    Class64_Sub3.aBoolean5609 = true
+                    OpenGlModel.aBoolean5609 = true
                     SpriteArchiveLoader.anInt386 = SpriteArchiveLoader.anInt386 / i_596_ + i_591_
                     SpriteLoadValidator.anInt4795 = i_590_ + SpriteLoadValidator.anInt4795 / i_596_
                 } else {
@@ -3008,7 +3008,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val i_613_ = is_594_[12] shl 4
                     val i_614_ = is_594_[13] shl 4
                     val i_615_ = is_594_[14] shl 4
-                    if (Class64_Sub3.aBoolean5609) {
+                    if (OpenGlModel.aBoolean5609) {
                         var i_616_ = ((is_594_[6] * KeyboardInputSource.anInt4274 + (SpriteLoadValidator.anInt4795 * is_594_[0] - -(SpriteArchiveLoader.anInt386 * is_594_[3])) + 8192) shr 14)
                         var i_617_ = ((is_594_[7] * KeyboardInputSource.anInt4274 + (is_594_[1] * SpriteLoadValidator.anInt4795 - -(is_594_[4] * SpriteArchiveLoader.anInt386) + 8192)) shr 14)
                         i_616_ += i_613_
@@ -3017,7 +3017,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         i_618_ += i_615_
                         SpriteLoadValidator.anInt4795 = i_616_
                         SpriteArchiveLoader.anInt386 = i_617_
-                        Class64_Sub3.aBoolean5609 = false
+                        OpenGlModel.aBoolean5609 = false
                         KeyboardInputSource.anInt4274 = i_618_
                     }
                     val is_619_ = IntArray(9)
@@ -3128,7 +3128,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val i_698_ = is_594_[12] shl 4
                     val i_699_ = is_594_[13] shl 4
                     val i_700_ = is_594_[14] shl 4
-                    if (Class64_Sub3.aBoolean5609) {
+                    if (OpenGlModel.aBoolean5609) {
                         var i_701_ = ((KeyboardInputSource.anInt4274 * is_594_[6] + (SpriteLoadValidator.anInt4795 * is_594_[0] + (is_594_[3] * SpriteArchiveLoader.anInt386 + 8192))) shr 14)
                         var i_702_ = (8192 + (SpriteLoadValidator.anInt4795 * is_594_[1] + (SpriteArchiveLoader.anInt386 * is_594_[4] - -(is_594_[7] * KeyboardInputSource.anInt4274))) shr 14)
                         i_701_ += i_698_
@@ -3137,7 +3137,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         i_703_ += i_700_
                         SpriteLoadValidator.anInt4795 = i_701_
                         SpriteArchiveLoader.anInt386 = i_702_
-                        Class64_Sub3.aBoolean5609 = false
+                        OpenGlModel.aBoolean5609 = false
                         KeyboardInputSource.anInt4274 = i_703_
                     }
                     val i_704_ = i_590_ shl 15 shr 7

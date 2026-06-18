@@ -24,7 +24,7 @@ class LocConfigModelBuilder {
     @JvmField
     var aMapElementDefinitionCache_4513: MapElementDefinitionCache? = null
 
-    fun method3558(i: Int, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int, class87: Class87?, i_3_: Int): Class64? {
+    fun method3558(i: Int, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int, class87: Class87?, i_3_: Int): AbstractModel? {
         try {
             if (i_2_ != 3172) aShortArray4504 = null
             anInt4505++
@@ -45,7 +45,7 @@ class LocConfigModelBuilder {
         }
     }
 
-    fun method3562(i: Int, var_renderer: Renderer?, i_5_: Int, i_6_: Int, i_7_: Int, class87: Class87?, i_8_: Byte): Class64? {
+    fun method3562(i: Int, var_renderer: Renderer?, i_5_: Int, i_6_: Int, i_7_: Int, class87: Class87?, i_8_: Byte): AbstractModel? {
         try {
             if (i_8_ <= 24) return null
             anInt4511++
@@ -112,7 +112,7 @@ class LocConfigModelBuilder {
         }
     }
 
-    fun method3565(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean, var_renderer: Renderer?, i_19_: Int, i_20_: Int, i_21_: Int, class87: Class87?, var_terrainTile: TerrainTile?, i_22_: Int, var_terrainTile_23_: TerrainTile?): Class64? {
+    fun method3565(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean, var_renderer: Renderer?, i_19_: Int, i_20_: Int, i_21_: Int, class87: Class87?, var_terrainTile: TerrainTile?, i_22_: Int, var_terrainTile_23_: TerrainTile?): AbstractModel? {
         try {
             anInt4496++
             if (i_21_ != -129) method3566(null, 36, -84, null, 43, null, 2, 54.toByte(), null, -17, true, -42, 95.toByte(), -81)
@@ -127,7 +127,7 @@ class LocConfigModelBuilder {
         anInt4507 = -1
     }
 
-    private fun method3566(var_renderer: Renderer?, i: Int, i_24_: Int, var_terrainTile: TerrainTile?, i_25_: Int, class87: Class87?, i_26_: Int, i_27_: Byte, var_terrainTile_28_: TerrainTile?, i_29_: Int, bool: Boolean, i_30_: Int, i_31_: Byte, i_32_: Int): Class64? {
+    private fun method3566(var_renderer: Renderer?, i: Int, i_24_: Int, var_terrainTile: TerrainTile?, i_25_: Int, class87: Class87?, i_26_: Int, i_27_: Byte, var_terrainTile_28_: TerrainTile?, i_29_: Int, bool: Boolean, i_30_: Int, i_31_: Byte, i_32_: Int): AbstractModel? {
         var bool = bool
         try {
             anInt4491++
@@ -138,41 +138,41 @@ class LocConfigModelBuilder {
             if (bool) i_33_ = i_33_ or (if (this.aByte4488.toInt() != 3) 2 else 7)
             if (anInt4492 != 128) i_33_ = i_33_ or 0x2
             if (anInt4498 != 128 || anInt4508 != 0) i_33_ = i_33_ or 0x5
-            var class64: Class64?
+            var abstractModel: AbstractModel?
             this.anInt4501 = this.anInt4501 or (var_renderer!!.anInt4567 shl 29)
             synchronized(this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990) {
-                class64 = ((this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990.method583(this.anInt4501.toLong(), -122)) as Class64?)
+                abstractModel = ((this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990.method583(this.anInt4501.toLong(), -122)) as AbstractModel?)
             }
-            if (class64 == null || var_renderer!!.method3667(class64.ua(), i_33_) != 0) {
-                if (class64 != null) i_33_ = var_renderer!!.method3679(i_33_, class64.ua())
+            if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_33_) != 0) {
+                if (abstractModel != null) i_33_ = var_renderer!!.method3679(i_33_, abstractModel.ua())
                 var i_34_ = i_33_
                 if (aShortArray4490 != null) i_34_ = i_34_ or 0x4000
                 if (aShortArray4499 != null) i_34_ = i_34_ or 0x8000
                 val class124 = ParticleConfigParser.method2277(0, (this.aMapElementDefinitionCache_4513!!.aJs5Archive_3981!!), anInt4506, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 114)
-                class64 = var_renderer!!.method3625(class124, i_34_, (this.aMapElementDefinitionCache_4513!!.anInt3991), 64 + anInt4489, anInt4512 - -850)
+                abstractModel = var_renderer!!.method3625(class124, i_34_, (this.aMapElementDefinitionCache_4513!!.anInt3991), 64 + anInt4489, anInt4512 - -850)
                 if (aShortArray4490 != null) {
                     var i_35_ = 0
                     while ((i_35_ < aShortArray4490!!.size)) {
-                        class64.ia(aShortArray4490!![i_35_], aShortArray4502!![i_35_])
+                        abstractModel.ia(aShortArray4490!![i_35_], aShortArray4502!![i_35_])
                         i_35_++
                     }
                 }
                 if (aShortArray4499 != null) {
                     var i_36_ = 0
                     while ((aShortArray4499!!.size > i_36_)) {
-                        class64.aa(aShortArray4499!![i_36_], aShortArray4504!![i_36_])
+                        abstractModel.aa(aShortArray4499!![i_36_], aShortArray4504!![i_36_])
                         i_36_++
                     }
                 }
-                class64.s(i_33_)
+                abstractModel.s(i_33_)
                 synchronized(this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990) {
-                    this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990.method582(class64, this.anInt4501.toLong(), (-113).toByte())
+                    this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990.method582(abstractModel, this.anInt4501.toLong(), (-113).toByte())
                 }
             }
             if (i_31_.toInt() != -68) return null
-            val class64_37_ = (if (class17 != null) class17.method266(class64, 0, i_32_, i_27_, i, i_26_, 663780816, i_33_) else class64.method614(i_27_, i_33_, true))
+            val class64_37_ = (if (class17 != null) class17.method266(abstractModel, 0, i_32_, i_27_, i, i_26_, 663780816, i_33_) else abstractModel.method614(i_27_, i_33_, true))
             if (anInt4498 != 128 || anInt4492 != 128) class64_37_!!.O(anInt4498, anInt4492, anInt4498)
             if (anInt4508 != 0) {
                 if (anInt4508 == 90) class64_37_!!.a(4096)

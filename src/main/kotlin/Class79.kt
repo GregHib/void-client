@@ -340,7 +340,7 @@ class Class79 {
         }
     }
 
-    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, class87: Class87?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, npcDefinitionCache: NpcDefinitionCache?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, interface17: Interface17?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): Class64? {
+    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, class87: Class87?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, npcDefinitionCache: NpcDefinitionCache?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, interface17: Interface17?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): AbstractModel? {
         try {
             anInt1341++
             if (this.anIntArray1377 != null) {
@@ -465,14 +465,14 @@ class Class79 {
                 if (bool_48_) i_43_ = i_43_ or 0x400
             }
             val l = (var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong()
-            var class64: Class64?
+            var abstractModel: AbstractModel?
             synchronized(this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!) {
-                class64 = this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!.method583(l, 80) as Class64?
+                abstractModel = this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!.method583(l, 80) as AbstractModel?
             }
             var npcDefinition: NpcDefinition? = null
             if (this.anInt1366 != -1) npcDefinition = npcDefinitionCache!!.method1983(this.anInt1366, 32)
-            if (class64 == null || i_43_ != (i_43_ and class64.ua())) {
-                if (class64 != null) i_43_ = i_43_ or class64.ua()
+            if (abstractModel == null || i_43_ != (i_43_ and abstractModel.ua())) {
+                if (abstractModel != null) i_43_ = i_43_ or abstractModel.ua()
                 var i_69_ = i_43_
                 var bool_70_ = false
                 synchronized(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
@@ -525,29 +525,29 @@ class Class79 {
                 if (aShortArray1328 != null) i_69_ = i_69_ or 0x4000
                 if (aShortArray1393 != null) i_69_ = i_69_ or 0x8000
                 if (aByte1405.toInt() != 0) i_69_ = i_69_ or 0x80000
-                class64 = var_renderer.method3625(modelDefinition, i_69_, (this.aBufferedMessageQueue_1348!!.anInt3593), 64 + anInt1398, 850 + anInt1406)
+                abstractModel = var_renderer.method3625(modelDefinition, i_69_, (this.aBufferedMessageQueue_1348!!.anInt3593), 64 + anInt1398, 850 + anInt1406)
                 if (aShortArray1328 != null) {
                     var i_80_ = 0
                     while ((i_80_ < aShortArray1328!!.size)) {
-                        if (aByteArray1374 == null || aByteArray1374!!.size <= i_80_) class64.ia(aShortArray1328!![i_80_], aShortArray1352[i_80_])
-                        else class64.ia(aShortArray1328!![i_80_], (LoadingScreenImageNode.aShortArray9502!![aByteArray1374!![i_80_].toInt() and 0xff]))
+                        if (aByteArray1374 == null || aByteArray1374!!.size <= i_80_) abstractModel.ia(aShortArray1328!![i_80_], aShortArray1352[i_80_])
+                        else abstractModel.ia(aShortArray1328!![i_80_], (LoadingScreenImageNode.aShortArray9502!![aByteArray1374!![i_80_].toInt() and 0xff]))
                         i_80_++
                     }
                 }
                 if (aShortArray1393 != null) {
                     var i_81_ = 0
                     while (aShortArray1393!!.size > i_81_) {
-                        class64.aa(aShortArray1393!![i_81_], aShortArray1391[i_81_])
+                        abstractModel.aa(aShortArray1393!![i_81_], aShortArray1391[i_81_])
                         i_81_++
                     }
                 }
-                if (aByte1405.toInt() != 0) class64.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
-                class64.s(i_43_)
+                if (aByte1405.toInt() != 0) abstractModel.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
+                abstractModel.s(i_43_)
                 synchronized(this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!) {
-                    this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!.method582(class64, (this.anInt1344 or (var_renderer.anInt4567 shl 16)).toLong(), (-125).toByte())
+                    this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!.method582(abstractModel, (this.anInt1344 or (var_renderer.anInt4567 shl 16)).toLong(), (-125).toByte())
                 }
             }
-            val class64_82_ = class64.method614(4.toByte(), i_43_, true)
+            val class64_82_ = abstractModel.method614(4.toByte(), i_43_, true)
             var bool_83_ = false
             if (`is` != null) {
                 for (i_84_ in 0..11) {
@@ -627,7 +627,7 @@ class Class79 {
         return class348_sub50.aString7211
     }
 
-    fun method803(interface17: Interface17?, var_renderer: Renderer?, i: Int, i_94_: Int, widgetDefinition: WidgetDefinition?, class87: Class87?, i_95_: Int, i_96_: Int, i_97_: Int): Class64? {
+    fun method803(interface17: Interface17?, var_renderer: Renderer?, i: Int, i_94_: Int, widgetDefinition: WidgetDefinition?, class87: Class87?, i_95_: Int, i_96_: Int, i_97_: Int): AbstractModel? {
         try {
             anInt1389++
             if (this.anIntArray1377 != null) {
@@ -638,12 +638,12 @@ class Class79 {
             if (anIntArray1380 == null) return null
             var i_99_ = i_97_
             if (widgetDefinition != null && i_95_ != -1) i_99_ = i_99_ or widgetDefinition.method263(i_94_, 97, i_95_, true)
-            var class64: Class64?
+            var abstractModel: AbstractModel?
             synchronized(this.aBufferedMessageQueue_1348!!.aLruByteCache_3592) {
-                class64 = ((this.aBufferedMessageQueue_1348!!.aLruByteCache_3592.method583((var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as Class64?)
+                abstractModel = ((this.aBufferedMessageQueue_1348!!.aLruByteCache_3592.method583((var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as AbstractModel?)
             }
-            if (class64 == null || i_99_ != (class64.ua() and i_99_)) {
-                if (class64 != null) i_99_ = i_99_ or class64.ua()
+            if (abstractModel == null || i_99_ != (abstractModel.ua() and i_99_)) {
+                if (abstractModel != null) i_99_ = i_99_ or abstractModel.ua()
                 var i_100_ = i_99_
                 var bool = false
                 synchronized(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
@@ -673,31 +673,31 @@ class Class79 {
                 if (aShortArray1328 != null) i_100_ = i_100_ or 0x4000
                 if (aShortArray1393 != null) i_100_ = i_100_ or 0x8000
                 if (aByte1405.toInt() != 0) i_100_ = i_100_ or 0x80000
-                class64 = var_renderer!!.method3625(modelDefinition, i_100_, (this.aBufferedMessageQueue_1348!!.anInt3593), 64, 768)
+                abstractModel = var_renderer!!.method3625(modelDefinition, i_100_, (this.aBufferedMessageQueue_1348!!.anInt3593), 64, 768)
                 if (aShortArray1328 != null) {
                     var i_104_ = 0
                     while ((aShortArray1328!!.size > i_104_)) {
-                        if (aByteArray1374 != null && aByteArray1374!!.size > i_104_) class64.ia(aShortArray1328!![i_104_], (LoadingScreenImageNode.aShortArray9502!![0xff and aByteArray1374!![i_104_].toInt()]))
-                        else class64.ia(aShortArray1328!![i_104_], aShortArray1352[i_104_])
+                        if (aByteArray1374 != null && aByteArray1374!!.size > i_104_) abstractModel.ia(aShortArray1328!![i_104_], (LoadingScreenImageNode.aShortArray9502!![0xff and aByteArray1374!![i_104_].toInt()]))
+                        else abstractModel.ia(aShortArray1328!![i_104_], aShortArray1352[i_104_])
                         i_104_++
                     }
                 }
                 if (aShortArray1393 != null) {
                     var i_105_ = 0
                     while (aShortArray1393!!.size > i_105_) {
-                        class64.aa(aShortArray1393!![i_105_], aShortArray1391[i_105_])
+                        abstractModel.aa(aShortArray1393!![i_105_], aShortArray1391[i_105_])
                         i_105_++
                     }
                 }
-                if (aByte1405.toInt() != 0) class64.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
-                class64.s(i_99_)
+                if (aByte1405.toInt() != 0) abstractModel.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
+                abstractModel.s(i_99_)
                 synchronized(this.aBufferedMessageQueue_1348!!.aLruByteCache_3592) {
-                    this.aBufferedMessageQueue_1348!!.aLruByteCache_3592.method582(class64, (var_renderer.anInt4567 shl 16 or this.anInt1344).toLong(), (-96).toByte())
+                    this.aBufferedMessageQueue_1348!!.aLruByteCache_3592.method582(abstractModel, (var_renderer.anInt4567 shl 16 or this.anInt1344).toLong(), (-96).toByte())
                 }
             }
-            if (widgetDefinition != null && i_95_ != -1) class64 = widgetDefinition.method269(-9, class64, i_94_, i, i_99_, i_95_)
-            class64!!.s(i_97_)
-            return class64
+            if (widgetDefinition != null && i_95_ != -1) abstractModel = widgetDefinition.method269(-9, abstractModel, i_94_, i, i_99_, i_95_)
+            abstractModel!!.s(i_97_)
+            return abstractModel
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("bb.H(" + (if (interface17 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (class87 != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
         }

@@ -1367,8 +1367,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         method3713()
     }
 
-    override fun method3625(modelDefinition: ModelDefinition?, i: Int, i_366_: Int, i_367_: Int, i_368_: Int): Class64 {
-        return Class64_Sub1(this, modelDefinition!!, i, i_367_, i_368_, i_366_)
+    override fun method3625(modelDefinition: ModelDefinition?, i: Int, i_366_: Int, i_367_: Int, i_368_: Int): AbstractModel {
+        return SoftwareModel(this, modelDefinition!!, i, i_367_, i_368_, i_366_)
     }
 
     override fun method3624(i: Int, i_369_: Int): Interface13 {
@@ -1863,8 +1863,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3650(i: Int) {
-        Class64_Sub1.anInt5350 = i
-        Class64_Sub1.anInt5346 = Class64_Sub1.anInt5350
+        SoftwareModel.anInt5350 = i
+        SoftwareModel.anInt5346 = SoftwareModel.anInt5350
         check(this.anInt7485 <= 1) { "No MT" }
         method3631(this.anInt7485)
         method3659(0)

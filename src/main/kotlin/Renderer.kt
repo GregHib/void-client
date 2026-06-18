@@ -12,7 +12,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun b(i: Int, i_1_: Int, i_2_: Int, i_3_: Int, d: Double)
 
-    abstract fun method3625(modelDefinition: ModelDefinition?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int): Class64
+    abstract fun method3625(modelDefinition: ModelDefinition?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int): AbstractModel
 
     abstract fun F(i: Int, i_7_: Int)
 

@@ -80,7 +80,7 @@ class BloomGraphicsOptionState : GraphicsOptionState {
             var class348_sub15 = ProjectileConfigUtil.aHashtable_389!!.method3484(0) as MenuActionNode?
             if (i <= 4) aString5966 = null
             while ( /**/class348_sub15 != null) {
-                Class64_Sub3.method690(108.toByte(), (class348_sub15.anInt6773))
+                OpenGlModel.method690(108.toByte(), (class348_sub15.anInt6773))
                 class348_sub15 = ProjectileConfigUtil.aHashtable_389!!.method3482(0) as MenuActionNode?
             }
         }

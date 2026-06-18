@@ -170,7 +170,7 @@ class NpcConfig {
             synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!) {
                 modelOrSpriteHolder = this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!.method583(l, i_10_ + -25) as ModelOrSpriteHolder?
             }
-            var class64 = if (modelOrSpriteHolder == null) null else modelOrSpriteHolder.aClass64_119
+            var class64 = if (modelOrSpriteHolder == null) null else modelOrSpriteHolder.aAbstractModel_119
             var var_renderNode: RenderNode? = null
             if (class64 == null || var_renderer.method3667(class64.ua(), i_11_) != 0) {
                 if (class64 != null) i_11_ = var_renderer.method3679(i_11_, class64.ua())
@@ -182,13 +182,13 @@ class NpcConfig {
                 if (bool) var_renderNode = class64.ba(null)
                 class64.s(i_11_)
                 modelOrSpriteHolder = ModelOrSpriteHolder()
-                modelOrSpriteHolder.aClass64_119 = class64
+                modelOrSpriteHolder.aAbstractModel_119 = class64
                 modelOrSpriteHolder.aRenderNode118 = var_renderNode
                 synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!) {
                     this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!.method582(modelOrSpriteHolder, l, (-120).toByte())
                 }
             } else {
-                class64 = modelOrSpriteHolder!!.aClass64_119
+                class64 = modelOrSpriteHolder!!.aAbstractModel_119
                 var_renderNode = modelOrSpriteHolder.aRenderNode118
                 if (bool && var_renderNode == null) {
                     modelOrSpriteHolder.aRenderNode118 = class64!!.ba(null)
@@ -203,7 +203,7 @@ class NpcConfig {
                 if (bool_14_) class64!!.H(anInt893, anInt954, anInt890)
                 class64!!.s(i_4_)
             } else class64 = class64!!.method614(0.toByte(), i_4_, true)
-            HashLinkedListNode.aModelOrSpriteHolder_7058!!.aClass64_119 = class64
+            HashLinkedListNode.aModelOrSpriteHolder_7058!!.aAbstractModel_119 = class64
             HashLinkedListNode.aModelOrSpriteHolder_7058!!.aRenderNode118 = var_renderNode
             return HashLinkedListNode.aModelOrSpriteHolder_7058
         } catch (runtimeexception: RuntimeException) {
@@ -212,7 +212,7 @@ class NpcConfig {
         }
     }
 
-    private fun method477(i: Int, var_renderer: Renderer, i_15_: Int, i_16_: Int, i_17_: Int): Class64? {
+    private fun method477(i: Int, var_renderer: Renderer, i_15_: Int, i_16_: Int, i_17_: Int): AbstractModel? {
         var i = i
         var i_17_ = i_17_
         anInt958++
@@ -230,7 +230,7 @@ class NpcConfig {
         if (aShortArray940 != null) i_17_ = i_17_ or 0x4000
         if (aShortArray919 != null) i_17_ = i_17_ or 0x8000
         if (aByte922.toInt() != 0) i_17_ = i_17_ or 0x80000
-        var class64: Class64? = null
+        var abstractModel: AbstractModel? = null
         if (aByteArray885 == null) return null
         var i_21_ = -1
         var i_22_ = 0
@@ -251,15 +251,15 @@ class NpcConfig {
                 i_24_++
             }
             synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3360) {
-                class64 = this.aSeqDefinitionCache_933!!.aLruByteCache_3360.method583(l, 78) as Class64?
+                abstractModel = this.aSeqDefinitionCache_933!!.aLruByteCache_3360.method583(l, 78) as AbstractModel?
             }
-            if (class64 != null) {
-                if (i_18_ != class64.WA()) i_17_ = i_17_ or 0x1000
-                if (i_19_ != class64.da()) i_17_ = i_17_ or 0x2000
+            if (abstractModel != null) {
+                if (i_18_ != abstractModel.WA()) i_17_ = i_17_ or 0x1000
+                if (i_19_ != abstractModel.da()) i_17_ = i_17_ or 0x2000
             }
-            if (class64 == null || var_renderer.method3667(class64.ua(), i_17_) != 0) {
+            if (abstractModel == null || var_renderer.method3667(abstractModel.ua(), i_17_) != 0) {
                 var i_25_ = i_17_ or 0x1f01f
-                if (class64 != null) i_25_ = var_renderer.method3679(i_25_, class64.ua())
+                if (abstractModel != null) i_25_ = var_renderer.method3679(i_25_, abstractModel.ua())
                 var modelDefinition: ModelDefinition? = null
                 synchronized(TileRenderState.aModelDefinitionArray4236s!!) {
                     for (i_26_ in 0..<i_23_) {
@@ -272,15 +272,15 @@ class NpcConfig {
                     }
                     if (i_23_ > 1) modelDefinition = ModelDefinition(TileRenderState.aModelDefinitionArray4236s!!, i_23_)
                 }
-                class64 = var_renderer.method3625(modelDefinition, i_25_, (this.aSeqDefinitionCache_933!!.anInt3363), i_18_, i_19_)
+                abstractModel = var_renderer.method3625(modelDefinition, i_25_, (this.aSeqDefinitionCache_933!!.anInt3363), i_18_, i_19_)
                 synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3360) {
-                    this.aSeqDefinitionCache_933!!.aLruByteCache_3360.method582(class64, l, (-95).toByte())
+                    this.aSeqDefinitionCache_933!!.aLruByteCache_3360.method582(abstractModel, l, (-95).toByte())
                 }
             }
         }
-        val class64_27_ = class64!!.method614(0.toByte(), i_17_, true)
-        if (i_18_ != class64.WA()) class64_27_!!.C(i_18_)
-        if (class64.da() != i_19_) class64_27_!!.LA(i_19_)
+        val class64_27_ = abstractModel!!.method614(0.toByte(), i_17_, true)
+        if (i_18_ != abstractModel.WA()) class64_27_!!.C(i_18_)
+        if (abstractModel.da() != i_19_) class64_27_!!.LA(i_19_)
         if (bool) class64_27_!!.v()
         if (i_15_ == 4 && i > 3) {
             class64_27_!!.k(2048)
@@ -585,7 +585,7 @@ class NpcConfig {
         if (i_38_ >= -93) aByteArray885 = null
     }
 
-    fun method483(i: Int, i_63_: Int, i_64_: Int, i_65_: Int, var_renderer: Renderer?, i_66_: Int, i_67_: Int, i_68_: Byte, var_terrainTile: TerrainTile?, i_69_: Int, i_70_: Int, i_71_: Int, widgetDefinition: WidgetDefinition?, var_terrainTile_72_: TerrainTile?): Class64? {
+    fun method483(i: Int, i_63_: Int, i_64_: Int, i_65_: Int, var_renderer: Renderer?, i_66_: Int, i_67_: Int, i_68_: Byte, var_terrainTile: TerrainTile?, i_69_: Int, i_70_: Int, i_71_: Int, widgetDefinition: WidgetDefinition?, var_terrainTile_72_: TerrainTile?): AbstractModel? {
         var i_64_ = i_64_
         var i_67_ = i_67_
         try {
@@ -601,47 +601,47 @@ class NpcConfig {
                 if (anInt890 != 0) i_67_ = i_67_ or 0x4
             } else i_67_ = i_67_ or 0x7
             if (i_64_ == 10 && i_66_ > 3) i_67_ = i_67_ or 0x5
-            var class64: Class64?
+            var abstractModel: AbstractModel?
             synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!) {
-                class64 = this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!.method583(l, 100) as Class64?
+                abstractModel = this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!.method583(l, 100) as AbstractModel?
             }
-            if (class64 == null || var_renderer.method3667(class64.ua(), i_67_) != 0) {
-                if (class64 != null) i_67_ = var_renderer.method3679(i_67_, class64.ua())
-                class64 = method477(i_66_, var_renderer, i_64_, -125, i_67_)
-                if (class64 == null) return null
+            if (abstractModel == null || var_renderer.method3667(abstractModel.ua(), i_67_) != 0) {
+                if (abstractModel != null) i_67_ = var_renderer.method3679(i_67_, abstractModel.ua())
+                abstractModel = method477(i_66_, var_renderer, i_64_, -125, i_67_)
+                if (abstractModel == null) return null
                 synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!) {
-                    this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!.method582(class64, l, (-127).toByte())
+                    this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!.method582(abstractModel, l, (-127).toByte())
                 }
             }
             var bool = false
             if (i_68_ <= 38) return null
             if (widgetDefinition != null) {
-                class64 = widgetDefinition.method266(class64, 0x3 and i_66_, i, 1.toByte(), i_70_, i_63_, 663780816, i_67_)
+                abstractModel = widgetDefinition.method266(abstractModel, 0x3 and i_66_, i, 1.toByte(), i_70_, i_63_, 663780816, i_67_)
                 bool = true
             }
             if (i_64_ == 10 && i_66_ > 3) {
                 if (!bool) {
-                    class64 = class64!!.method614(3.toByte(), i_67_, true)
+                    abstractModel = abstractModel!!.method614(3.toByte(), i_67_, true)
                     bool = true
                 }
-                class64!!.a(2048)
+                abstractModel!!.a(2048)
             }
             if (aByte886.toInt() != 0) {
                 if (!bool) {
                     bool = true
-                    class64 = class64!!.method614(3.toByte(), i_67_, true)
+                    abstractModel = abstractModel!!.method614(3.toByte(), i_67_, true)
                 }
-                class64!!.p(aByte886.toInt(), anInt915, var_terrainTile_72_, var_terrainTile, i_71_, i_65_, i_69_)
+                abstractModel!!.p(aByte886.toInt(), anInt915, var_terrainTile_72_, var_terrainTile, i_71_, i_65_, i_69_)
             }
             if (anInt893 != 0 || anInt954 != 0 || anInt890 != 0) {
                 if (!bool) {
                     bool = true
-                    class64 = class64!!.method614(3.toByte(), i_67_, true)
+                    abstractModel = abstractModel!!.method614(3.toByte(), i_67_, true)
                 }
-                class64!!.H(anInt893, anInt954, anInt890)
+                abstractModel!!.H(anInt893, anInt954, anInt890)
             }
-            if (bool) class64!!.s(i_73_)
-            return class64
+            if (bool) abstractModel!!.s(i_73_)
+            return abstractModel
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_terrainTile_72_ != null) "{...}" else "null") + ')'))
         }

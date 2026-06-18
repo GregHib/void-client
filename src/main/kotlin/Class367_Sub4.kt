@@ -283,9 +283,9 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Abstract
                     if (i_36_ < LinkedListIterator.anIntArray2117!![i_15_]) LinkedListIterator.anIntArray2117!![i_15_] = i_36_
                     else if (i_36_ > BlankTextureNode.anIntArray9259!![i_15_]) BlankTextureNode.anIntArray9259!![i_15_] = i_36_
                     val i_37_ = i_22_ shl 9
-                    if (i_37_ >= Class64.anIntArray1127!![i_15_]) {
+                    if (i_37_ >= AbstractModel.anIntArray1127!![i_15_]) {
                         if (ConnectionStateType.anIntArray1045!![i_15_] < i_37_) ConnectionStateType.anIntArray1045!![i_15_] = i_37_
-                    } else Class64.anIntArray1127!![i_15_] = i_37_
+                    } else AbstractModel.anIntArray1127!![i_15_] = i_37_
                 }
                 if (!bool_24_) {
                     if (i_19_ >= 1 && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_]) != i_16_) {
@@ -348,7 +348,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Abstract
                 LinkedListIterator.anIntArray2117!![i_15_] -= 512
                 BlankTextureNode.anIntArray9259!![i_15_] += 512
                 ConnectionStateType.anIntArray1045!![i_15_] += 512
-                Class64.anIntArray1127!![i_15_] -= 512
+                AbstractModel.anIntArray1127!![i_15_] -= 512
             }
             return true
         }
@@ -370,7 +370,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: NativeRenderer) : Abstract
                 val `is` = ClientGameLoopNode.method2992(string, (-20).toByte())
                 val i_39_ = 1 % ((-6 - i) / 63)
                 class348_sub49.method3381(5537, `is`.size)
-                class348_sub49.anInt7197 += (Class64.aHuffmanCodec_1131!!.method2227(`is`.size, 0, class348_sub49.anInt7197, `is`, 103, class348_sub49.aByteArray7154))
+                class348_sub49.anInt7197 += (AbstractModel.aHuffmanCodec_1131!!.method2227(`is`.size, 0, class348_sub49.anInt7197, `is`, 103, class348_sub49.aByteArray7154))
                 return class348_sub49.anInt7197 + -i_38_
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("bk.O(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))

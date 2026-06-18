@@ -13,7 +13,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
     private var anInt3055 = 0
     private var anInt3056: Int
     private var aWidgetDefinition_3057: WidgetDefinition? = null
-    private var aClass64_3059: Class64? = null
+    private var aAbstractModel_3059: AbstractModel? = null
     private var anInt3060 = 0
     @JvmField
     var anInt3063: Int = 0
@@ -52,7 +52,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
 
     private fun method1666(i: Byte, i_0_: Int) {
         anInt3077++
-        if (i.toInt() != 69) aClass64_3059 = null
+        if (i.toInt() != 69) aAbstractModel_3059 = null
         var i_1_ = i_0_
         var bool = false
         if (i_1_ == -1) {
@@ -83,7 +83,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         }
         if (i_1_ == -1) aWidgetDefinition_3057 = null
         else {
-            aClass64_3059 = null
+            aAbstractModel_3059 = null
             if (aWidgetDefinition_3057 != null && i_1_ == aWidgetDefinition_3057!!.anInt269) {
                 if (aWidgetDefinition_3057!!.anInt248 == 0) return
             } else aWidgetDefinition_3057 = ParticleEmitterNode.aClass87_191!!.method835(i_1_, i + -62)
@@ -109,7 +109,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         if (i.toInt() != 116) this.anInt3063 = 99
     }
 
-    fun method1668(bool: Boolean, bool_3_: Boolean, i: Int, i_4_: Int, var_renderer: Renderer?): Class64? {
+    fun method1668(bool: Boolean, bool_3_: Boolean, i: Int, i_4_: Int, var_renderer: Renderer?): AbstractModel? {
         var bool_3_ = bool_3_
         var i_4_ = i_4_
         anInt3082++
@@ -123,7 +123,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             return null
         }
         if (!aBoolean3064 && npcConfig.anInt941 != anInt3053) {
-            aClass64_3059 = null
+            aAbstractModel_3059 = null
             method1666(69.toByte(), -1)
         }
         method1672(aClass318_Sub1_3051, true)
@@ -145,20 +145,20 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         val var_terrainTile_5_: TerrainTile?
         if (!aBoolean3069) var_terrainTile_5_ = if (aByte3067 >= 3) null else NativeSprite.aTerrainTileArray5191!![1 + aByte3067]
         else var_terrainTile_5_ = TerrainTileShape.aTerrainTileArray8801!![0]
-        var class64: Class64? = null
+        var abstractModel: AbstractModel? = null
         if (aWidgetDefinition_3057 == null) {
-            if (aClass64_3059 == null || i_4_ != (i_4_ and aClass64_3059!!.ua()) || (anInt3053 != npcConfig.anInt941)) {
-                if (aClass64_3059 != null) i_4_ = i_4_ or aClass64_3059!!.ua()
+            if (aAbstractModel_3059 == null || i_4_ != (i_4_ and aAbstractModel_3059!!.ua()) || (anInt3053 != npcConfig.anInt941)) {
+                if (aAbstractModel_3059 != null) i_4_ = i_4_ or aAbstractModel_3059!!.ua()
                 val class2 = (npcConfig.method476(var_renderer, var_terrainTile_5_, (if (this.anInt3079 != 11) this.anInt3079 else 10), i_4_, aClass318_Sub1_3051!!.x, bool_3_, var_s, var_s!!.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (-114).toByte()), aClass318_Sub1_3051.y, (if (this.anInt3079 == 11) 4 + this.anInt3052 else this.anInt3052), 128))
                 if (class2 == null) {
                     anInt3055 = 0
                     aBooleanArray3072 = null
                     aRenderNode3071 = null
                     anInt3060 = 0
-                    aClass64_3059 = null
+                    aAbstractModel_3059 = null
                 } else {
-                    class64 = class2.aClass64_119
-                    aClass64_3059 = class64
+                    abstractModel = class2.aAbstractModel_119
+                    aAbstractModel_3059 = abstractModel
                     if (bool_3_) {
                         aBooleanArray3072 = null
                         aRenderNode3071 = class2.aRenderNode118
@@ -166,14 +166,14 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
                         anInt3073 = -1
                         anInt3056 = npcConfig.anInt941
                     }
-                    anInt3060 = class64!!.fa()
-                    anInt3055 = class64.ma()
+                    anInt3060 = abstractModel!!.fa()
+                    anInt3055 = abstractModel.ma()
                 }
-            } else class64 = aClass64_3059
+            } else abstractModel = aAbstractModel_3059
         } else {
             if (bool_3_) i_4_ = i_4_ or 0x40000
-            class64 = (npcConfig.method483(anInt3083, anInt3054, (if (this.anInt3079 == 11) 10 else this.anInt3079), var_s!!.method3986((aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), (-2).toByte()), var_renderer, (if (this.anInt3079 == 11) this.anInt3052 + 4 else this.anInt3052), i_4_, 76.toByte(), var_terrainTile_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aWidgetDefinition_3057, var_s))
-            if (class64 == null) {
+            abstractModel = (npcConfig.method483(anInt3083, anInt3054, (if (this.anInt3079 == 11) 10 else this.anInt3079), var_s!!.method3986((aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), (-2).toByte()), var_renderer, (if (this.anInt3079 == 11) this.anInt3052 + 4 else this.anInt3052), i_4_, 76.toByte(), var_terrainTile_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aWidgetDefinition_3057, var_s))
+            if (abstractModel == null) {
                 anInt3055 = 0
                 aBooleanArray3072 = null
                 anInt3060 = 0
@@ -181,39 +181,39 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             } else {
                 if (bool_3_) {
                     if (aBooleanArray3072 == null) aBooleanArray3072 = BooleanArray(4)
-                    aRenderNode3071 = class64.ba(aRenderNode3071)
+                    aRenderNode3071 = abstractModel.ba(aRenderNode3071)
                     method1130(aRenderNode3071, aByte3067.toInt(), (aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), aBooleanArray3072)
                     anInt3073 = anInt3084
                     anInt3056 = npcConfig.anInt941
                 }
-                anInt3060 = class64.fa()
-                anInt3055 = class64.ma()
+                anInt3060 = abstractModel.fa()
+                anInt3055 = abstractModel.ma()
             }
-            aClass64_3059 = null
+            aAbstractModel_3059 = null
         }
         anInt3053 = npcConfig.anInt941
-        return class64
+        return abstractModel
     }
 
-    fun method1670(i: Int, abstractCameraTransform: AbstractCameraTransform?, i_7_: Int, var_renderer: Renderer?, i_8_: Int, class64: Class64?, bool: Boolean, i_9_: Byte, i_10_: Int) {
+    fun method1670(i: Int, abstractCameraTransform: AbstractCameraTransform?, i_7_: Int, var_renderer: Renderer?, i_8_: Int, abstractModel: AbstractModel?, bool: Boolean, i_9_: Byte, i_10_: Int) {
         do {
             try {
                 anInt3058++
                 if (i_9_.toInt() != -73) this.anInt3052 = 62
-                val class129s = class64!!.method619()
-                val class342s = class64.method604()
+                val class129s = abstractModel!!.method619()
+                val class342s = abstractModel.method604()
                 if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081!!.aBoolean6470) && (class129s != null || class342s != null)) {
                     var npcConfig: NpcConfig? = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
                     if (npcConfig!!.anIntArray945 != null) npcConfig = npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
                     if (npcConfig != null) this.aClass318_Sub10_3081 = SceneGraphContainer.method2526(Class367_Sub11.anInt7396, true)
                 }
                 if (this.aClass318_Sub10_3081 == null) break
-                class64.method620(abstractCameraTransform)
+                abstractModel.method620(abstractCameraTransform)
                 if (bool) this.aClass318_Sub10_3081!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
                 else this.aClass318_Sub10_3081!!.method2540(Class367_Sub11.anInt7396.toLong())
                 this.aClass318_Sub10_3081!!.method2533(aByte3085.toInt(), i_8_, i, i_10_, i_7_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
             }
             break
         } while (false)

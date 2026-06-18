@@ -231,7 +231,7 @@ class ItemDefinition {
         return class124
     }
 
-    fun method1559(compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, var_renderer: Renderer?, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Byte, i_24_: Int): Class64? {
+    fun method1559(compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, var_renderer: Renderer?, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Byte, i_24_: Int): AbstractModel? {
         try {
             anInt2813++
             if (this.anIntArray2762 != null && i_21_ > 1) {
@@ -244,12 +244,12 @@ class ItemDefinition {
             if (i_23_.toInt() != 88) this.aString2795 = null
             var i_27_ = i
             if (widgetDefinition != null) i_27_ = i_27_ or widgetDefinition.method263(i_24_, 105, i_22_, true)
-            var class64: Class64?
+            var abstractModel: AbstractModel?
             synchronized(this.aModelHeaderCache_2761!!.aLruByteCache_3287) {
-                class64 = (this.aModelHeaderCache_2761!!.aLruByteCache_3287.method583((var_renderer!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as Class64?
+                abstractModel = (this.aModelHeaderCache_2761!!.aLruByteCache_3287.method583((var_renderer!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as AbstractModel?
             }
-            if (class64 == null || var_renderer!!.method3667(class64.ua(), i_27_) != 0) {
-                if (class64 != null) i_27_ = var_renderer!!.method3679(i_27_, class64.ua())
+            if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_27_) != 0) {
+                if (abstractModel != null) i_27_ = var_renderer!!.method3679(i_27_, abstractModel.ua())
                 var i_28_ = i_27_
                 if (aShortArray2785 != null) i_28_ = i_28_ or 0x8000
                 if (aShortArray2777 != null || compositeNpcModelBuilder != null) i_28_ = i_28_ or 0x4000
@@ -259,20 +259,20 @@ class ItemDefinition {
                 val class124 = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), anInt2756, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 97)
-                class64 = var_renderer!!.method3625(class124, i_28_, (this.aModelHeaderCache_2761!!.anInt3291), anInt2791 + 64, 850 - -anInt2824)
-                if (anInt2786 != 128 || anInt2794 != 128 || anInt2765 != 128) class64.O(anInt2786, anInt2794, anInt2765)
+                abstractModel = var_renderer!!.method3625(class124, i_28_, (this.aModelHeaderCache_2761!!.anInt3291), anInt2791 + 64, 850 - -anInt2824)
+                if (anInt2786 != 128 || anInt2794 != 128 || anInt2765 != 128) abstractModel.O(anInt2786, anInt2794, anInt2765)
                 if (aShortArray2777 != null) {
                     var i_29_ = 0
                     while ((i_29_ < aShortArray2777!!.size)) {
-                        if (aByteArray2821 == null || aByteArray2821!!.size <= i_29_) class64.ia(aShortArray2777!![i_29_], aShortArray2771[i_29_])
-                        else class64.ia(aShortArray2777!![i_29_], (HslPaletteState.aShortArray4172!![aByteArray2821!![i_29_].toInt() and 0xff]))
+                        if (aByteArray2821 == null || aByteArray2821!!.size <= i_29_) abstractModel.ia(aShortArray2777!![i_29_], aShortArray2771[i_29_])
+                        else abstractModel.ia(aShortArray2777!![i_29_], (HslPaletteState.aShortArray4172!![aByteArray2821!![i_29_].toInt() and 0xff]))
                         i_29_++
                     }
                 }
                 if (aShortArray2785 != null) {
                     var i_30_ = 0
                     while (aShortArray2785!!.size > i_30_) {
-                        class64.aa(aShortArray2785!![i_30_], aShortArray2801[i_30_])
+                        abstractModel.aa(aShortArray2785!![i_30_], aShortArray2801[i_30_])
                         i_30_++
                     }
                 }
@@ -280,19 +280,19 @@ class ItemDefinition {
                     for (i_31_ in 0..4) {
                         var i_32_ = 0
                         while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_32_)) {
-                            if (compositeNpcModelBuilder.anIntArray2095!![i_31_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_])!!.size) class64.ia((SpriteLoadValidator.aShortArrayArray4791!![i_32_]!![i_31_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_]!![(compositeNpcModelBuilder.anIntArray2095!![i_31_])]))
+                            if (compositeNpcModelBuilder.anIntArray2095!![i_31_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_32_]!![i_31_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_]!![(compositeNpcModelBuilder.anIntArray2095!![i_31_])]))
                             i_32_++
                         }
                     }
                 }
-                class64.s(i_27_)
+                abstractModel.s(i_27_)
                 synchronized(this.aModelHeaderCache_2761!!.aLruByteCache_3287) {
-                    this.aModelHeaderCache_2761!!.aLruByteCache_3287.method582(class64, (var_renderer.anInt4567 shl 29 or this.anInt2769).toLong(), (-111).toByte())
+                    this.aModelHeaderCache_2761!!.aLruByteCache_3287.method582(abstractModel, (var_renderer.anInt4567 shl 29 or this.anInt2769).toLong(), (-111).toByte())
                 }
             }
-            if (widgetDefinition != null) class64 = widgetDefinition.method269(116, class64, i_24_, i_20_, i_27_, i_22_)
-            class64!!.s(i)
-            return class64
+            if (widgetDefinition != null) abstractModel = widgetDefinition.method269(116, abstractModel, i_24_, i_20_, i_27_, i_22_)
+            abstractModel!!.s(i)
+            return abstractModel
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("rq.S(" + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
         }

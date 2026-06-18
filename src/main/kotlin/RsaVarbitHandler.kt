@@ -87,21 +87,21 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Inte
             val class56 = TimedTileQueueEntry.aConnectionStateType_9660!!
             val i = ClientLoadStateMachine.method1278(-28660)
             if (class56 == TimedTileQueueEntry.aConnectionStateType_9660) {
-                Class64_Sub2.aString5420 = TimedTileQueueEntry.aConnectionStateType_9660!!.aLocalizedText_1012!!.method2063(AnimationFrameDefinition.anInt6967, 544)
+                Direct3dModel.aString5420 = TimedTileQueueEntry.aConnectionStateType_9660!!.aLocalizedText_1012!!.method2063(AnimationFrameDefinition.anInt6967, 544)
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016) ConfigFlagUtil.anInt3236 = (i * ((TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1021) + -(TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025)) / 100 + (TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025))
-                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Class64_Sub2.aString5420 += ConfigFlagUtil.anInt3236.toString() + "%"
+                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Direct3dModel.aString5420 += ConfigFlagUtil.anInt3236.toString() + "%"
             } else if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.Companion.aConnectionStateType_1043) {
                 NpcConfig.Companion.aResourceLoaderThread_897 = null
                 Buffer.method3379(2, 3)
             } else {
-                Class64_Sub2.aString5420 = class56.aLocalizedText_1015!!.method2063(AnimationFrameDefinition.anInt6967, 544)
-                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Class64_Sub2.aString5420 += class56.anInt1021.toString() + "%"
+                Direct3dModel.aString5420 = class56.aLocalizedText_1015!!.method2063(AnimationFrameDefinition.anInt6967, 544)
+                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Direct3dModel.aString5420 += class56.anInt1021.toString() + "%"
                 ConfigFlagUtil.anInt3236 = class56.anInt1021
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolder.aLong3660 = GameClock.method599(-128)
             }
             if (bool == true) {
                 if (NpcConfig.Companion.aResourceLoaderThread_897 != null) {
-                    NpcConfig.Companion.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aConnectionStateType_9660), Class64_Sub2.aString5420, ConfigFlagUtil.anInt3236, DataHolder.aLong3660, false)
+                    NpcConfig.Companion.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aConnectionStateType_9660), Direct3dModel.aString5420, ConfigFlagUtil.anInt3236, DataHolder.aLong3660, false)
                     if (LoadProgressCounters.anInterface16Array2447 != null) {
                         var i_5_ = PlayerAppearanceUpdateDecoder.anInt4544 - -1
                         while ((LoadProgressCounters.anInterface16Array2447!!.size > i_5_)) {

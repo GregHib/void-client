@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 * NativeModel
 */
-class i : Class64, Interface19 {
+class i : AbstractModel, Interface19 {
     private val anOa5117: oa
     @JvmField
     var aWidgetRedrawRegionArray5118: Array<WidgetRedrawRegion?>? = null
@@ -32,8 +32,8 @@ class i : Class64, Interface19 {
 
     external fun ZA(var_i_2_: i?, var_i_3_: i?, i: Int, bool: Boolean, bool_4_: Boolean)
 
-    public override fun method613(class64: Class64?, i: Int, i_5_: Int, i_6_: Int, bool: Boolean) {
-        anOa5117.method3973()?.method144(this, class64, i, i_5_, i_6_, bool)
+    public override fun method613(abstractModel: AbstractModel?, i: Int, i_5_: Int, i_6_: Int, bool: Boolean) {
+        anOa5117.method3973()?.method144(this, abstractModel, i, i_5_, i_6_, bool)
     }
 
     public external override fun aa(i: Short, i_7_: Short)
@@ -89,7 +89,7 @@ class i : Class64, Interface19 {
         return anOa5117.method3973()!!.method146(this, i, i_19_, abstractCameraTransform, bool)
     }
 
-    public override fun method614(i: Byte, i_21_: Int, bool: Boolean): Class64 {
+    public override fun method614(i: Byte, i_21_: Int, bool: Boolean): AbstractModel {
         return anOa5117.method3973()!!.method152(this, i, i_21_, bool)
     }
 

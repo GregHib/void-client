@@ -14,7 +14,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
     private val aBoolean9988: Boolean
     private var aBoolean9989 = false
     private var aShort9991: Short = 0
-    private var aClass64_9993: Class64? = null
+    private var aAbstractModel_9993: AbstractModel? = null
     private var aCircleHitbox_9999: CircleHitbox? = null
     public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_0_: Int, i_1_: Byte, i_2_: Int) {
         do {
@@ -23,8 +23,8 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
                 if (i_1_ > -106) method2402(-5, 56.toByte())
                 if (class318_sub1 !is GroundDecorSceneEntity) break
                 val class318_sub1_sub1_sub2_3_ = class318_sub1
-                if (aClass64_9993 == null || class318_sub1_sub1_sub2_3_.aClass64_9993 == null) break
-                aClass64_9993!!.method613((class318_sub1_sub1_sub2_3_.aClass64_9993), i_2_, i, i_0_, bool)
+                if (aAbstractModel_9993 == null || class318_sub1_sub1_sub2_3_.aAbstractModel_9993 == null) break
+                aAbstractModel_9993!!.method613((class318_sub1_sub1_sub2_3_.aAbstractModel_9993), i_2_, i, i_0_, bool)
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("uo.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
             }
@@ -35,8 +35,8 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
     public override fun method2379(i: Int): Int {
         anInt10000++
         if (i != -25675) return -120
-        if (aClass64_9993 == null) return 0
-        return aClass64_9993!!.ma()
+        if (aAbstractModel_9993 == null) return 0
+        return aAbstractModel_9993!!.ma()
     }
 
     override fun method43(var_renderer: Renderer?, i: Int) {
@@ -73,7 +73,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
         anInt9972++
         if (bool == true) {
             aBoolean9989 = false
-            if (aClass64_9993 != null) aClass64_9993!!.s(0x10000.inv() and aClass64_9993!!.ua())
+            if (aAbstractModel_9993 != null) aAbstractModel_9993!!.s(0x10000.inv() and aAbstractModel_9993!!.ua())
         }
     }
 
@@ -85,12 +85,12 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
 
     public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt9990++
-        if (aClass64_9993 == null) return null
+        if (aAbstractModel_9993 == null) return null
         val class101 = var_renderer!!.method3705()
         class101.method894(this.x, this.anInt6382, this.y)
         val class318_sub4 = method136(i, aBoolean9974, false)
-        if (ParticleSystemRenderer.aBoolean3870) aClass64_9993!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
-        else aClass64_9993!!.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
+        if (ParticleSystemRenderer.aBoolean3870) aAbstractModel_9993!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
+        else aAbstractModel_9993!!.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         return class318_sub4
     }
 
@@ -109,8 +109,8 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
     public override fun method2376(i: Int): Boolean {
         if (i >= -12) method2392(true)
         anInt9975++
-        if (aClass64_9993 != null) {
-            return !aClass64_9993!!.r()
+        if (aAbstractModel_9993 != null) {
+            return !aAbstractModel_9993!!.r()
         }
         return true
     }
@@ -118,7 +118,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
     public override fun method2394(bool: Boolean): Int {
         anInt9979++
         if (bool != true) method38(-4)
-        if (aClass64_9993 != null) return aClass64_9993!!.fa()
+        if (aAbstractModel_9993 != null) return aAbstractModel_9993!!.fa()
         return 0
     }
 
@@ -131,15 +131,15 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
     override fun method40(i: Int) {
         if (i == -12031) {
             anInt9982++
-            if (aClass64_9993 != null) aClass64_9993!!.method612()
+            if (aAbstractModel_9993 != null) aAbstractModel_9993!!.method612()
         }
     }
 
     public override fun method2377(i: Byte): Boolean {
         if (i.toInt() != 122) method40(3)
         anInt9973++
-        if (aClass64_9993 == null) return false
-        return aClass64_9993!!.F()
+        if (aAbstractModel_9993 == null) return false
+        return aAbstractModel_9993!!.F()
     }
 
     override fun method44(i: Int, var_renderer: Renderer?) {
@@ -170,12 +170,12 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
         return false
     }
 
-    private fun method2404(var_renderer: Renderer, i: Int, i_18_: Int): Class64? {
+    private fun method2404(var_renderer: Renderer, i: Int, i_18_: Int): AbstractModel? {
         anInt9984++
         val i_19_ = 65 / ((-34 - i) / 53)
-        if (aClass64_9993 != null && var_renderer.method3667(aClass64_9993!!.ua(), i_18_) == 0) return aClass64_9993
+        if (aAbstractModel_9993 != null && var_renderer.method3667(aAbstractModel_9993!!.ua(), i_18_) == 0) return aAbstractModel_9993
         val class2 = method2401(var_renderer, i_18_, false, 22)
-        if (class2 != null) return class2.aClass64_119
+        if (class2 != null) return class2.aAbstractModel_119
         return null
     }
 
@@ -194,10 +194,10 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
                 if (aBoolean9989) i_26_ = i_26_ or 0x10000
                 val class2 = method2401(var_renderer, i_26_, aBoolean9988, 22)
                 if (class2 == null) break
-                aClass64_9993 = class2.aClass64_119
+                aAbstractModel_9993 = class2.aAbstractModel_119
                 aRenderNode9976 = class2.aRenderNode118
                 if (!aBoolean9989) break
-                aClass64_9993 = aClass64_9993!!.method614(0.toByte(), i_26_, false)
+                aAbstractModel_9993 = aAbstractModel_9993!!.method614(0.toByte(), i_26_, false)
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("uo.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + i_24_ + ',' + bool_25_ + ')'))
             }

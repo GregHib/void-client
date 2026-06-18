@@ -8,7 +8,7 @@ import kotlin.math.sqrt
 /* Class64_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class64_Sub1 : Class64 {
+class SoftwareModel : AbstractModel {
     private var aShortArray5311: ShortArray? = null
     private var anIntArray5312: IntArray? = null
     private var aRectangleArray5313: Array<Rectangle?>? = null
@@ -17,7 +17,7 @@ class Class64_Sub1 : Class64 {
     private var anInt5316 = 0
     private lateinit var aShortArray5317: ShortArray
     private lateinit var anIntArray5318: IntArray
-    private var aClass64_Sub1_5319: Class64_Sub1? = null
+    private var aClass64_Sub1_5319: SoftwareModel? = null
     private var aClass101_Sub1_5320: MatrixCameraTransform? = null
     private lateinit var anIntArray5321: IntArray
     private var aModelFacePriorityNodeArray5322: Array<ModelFacePriorityNode?>? = null
@@ -26,7 +26,7 @@ class Class64_Sub1 : Class64 {
     private var aByteArray5325: ByteArray? = null
     private lateinit var anIntArray5326: IntArray
     private var aShortArray5327: ShortArray? = null
-    private var aClass64_Sub1_5328: Class64_Sub1? = null
+    private var aClass64_Sub1_5328: SoftwareModel? = null
     private var aShort5329: Short = 0
     private var anIntArrayArray5330: Array<IntArray?>? = null
     private var aShort5331: Short = 0
@@ -37,13 +37,13 @@ class Class64_Sub1 : Class64 {
     private var aParticleSystemState_5336: ParticleSystemState? = null
     private var anIntArray5337: IntArray? = null
     private var anInt5338 = 0
-    private var aClass64_Sub1_5339: Class64_Sub1? = null
+    private var aClass64_Sub1_5339: SoftwareModel? = null
     private var anInt5340 = 0
     private var anInt5342 = 0
     private lateinit var anIntArray5343: IntArray
     private var anInt5344 = 0
     private var aFloatArrayArray5345: Array<FloatArray?>? = null
-    private var aClass64_Sub1_5347: Class64_Sub1? = null
+    private var aClass64_Sub1_5347: SoftwareModel? = null
     private var aShort5348: Short = 0
     private var anInt5349 = 0
     private var anInt5351: Int
@@ -69,11 +69,11 @@ class Class64_Sub1 : Class64 {
     private lateinit var anIntArray5371: IntArray
     private var aBoolean5372: Boolean
     private lateinit var anIntArray5373: IntArray
-    private var aClass64_Sub1_5374: Class64_Sub1? = null
+    private var aClass64_Sub1_5374: SoftwareModel? = null
     private var anInt5375 = 0
-    private var aClass64_Sub1_5376: Class64_Sub1? = null
+    private var aClass64_Sub1_5376: SoftwareModel? = null
     private lateinit var anIntArray5377: IntArray
-    private var aClass64_Sub1_5378: Class64_Sub1? = null
+    private var aClass64_Sub1_5378: SoftwareModel? = null
     private var anIntArrayArray5379: Array<IntArray?>? = null
     private var aBoolean5380 = false
     private lateinit var anIntArray5381: IntArray
@@ -85,14 +85,14 @@ class Class64_Sub1 : Class64 {
     private var anInt5387: Int
     private var aShortArray5388: ShortArray? = null
     private var anInt5389 = 0
-    private var aClass64_Sub1_5390: Class64_Sub1? = null
+    private var aClass64_Sub1_5390: SoftwareModel? = null
     private var aBoolean5391: Boolean
     private lateinit var anIntArray5392: IntArray
     private var aShort5393: Short = 0
     private lateinit var aShortArray5394: ShortArray
     private var aShort5395: Short = 0
-    private var aClass64_Sub1_5396: Class64_Sub1? = null
-    private var aClass64_Sub1_5397: Class64_Sub1? = null
+    private var aClass64_Sub1_5396: SoftwareModel? = null
+    private var aClass64_Sub1_5397: SoftwareModel? = null
     private lateinit var anIntArray5398: IntArray
     private lateinit var anIntArray5399: IntArray
     private var anIntArray5400: IntArray? = null
@@ -146,7 +146,7 @@ class Class64_Sub1 : Class64 {
         }
     }
 
-    private fun method633(class64_sub1_7_: Class64_Sub1, class64_sub1_8_: Class64_Sub1, i: Int, bool: Boolean, bool_9_: Boolean): Class64 {
+    private fun method633(class64_sub1_7_: SoftwareModel, class64_sub1_8_: SoftwareModel, i: Int, bool: Boolean, bool_9_: Boolean): AbstractModel {
         class64_sub1_7_.aBoolean5323 = aBoolean5323
         if (aBoolean5323) {
             class64_sub1_7_.aShort5393 = aShort5393
@@ -2340,8 +2340,8 @@ class Class64_Sub1 : Class64 {
         }
     }
 
-    public override fun method613(class64: Class64?, i: Int, i_584_: Int, i_585_: Int, bool: Boolean) {
-        val class64_sub1_586_ = class64 as Class64_Sub1
+    public override fun method613(abstractModel: AbstractModel?, i: Int, i_584_: Int, i_585_: Int, bool: Boolean) {
+        val class64_sub1_586_ = abstractModel as SoftwareModel
         check((anInt5316 and 0x10000) == 65536) { "" }
         check((class64_sub1_586_.anInt5316 and 0x10000) == 65536) { "" }
         method632(Thread.currentThread())
@@ -3063,10 +3063,10 @@ class Class64_Sub1 : Class64 {
         }
     }
 
-    public override fun method614(i: Byte, i_762_: Int, bool: Boolean): Class64 {
+    public override fun method614(i: Byte, i_762_: Int, bool: Boolean): AbstractModel {
         method648(Thread.currentThread())
-        val class64_sub1_763_: Class64_Sub1
-        val class64_sub1_764_: Class64_Sub1
+        val class64_sub1_763_: SoftwareModel
+        val class64_sub1_764_: SoftwareModel
         if (i.toInt() == 1) {
             class64_sub1_763_ = aClass64_Sub1_5374!!
             class64_sub1_764_ = aClass64_Sub1_5378!!
@@ -3083,7 +3083,7 @@ class Class64_Sub1 : Class64 {
             class64_sub1_763_ = aClass64_Sub1_5319!!
             class64_sub1_764_ = aClass64_Sub1_5390!!
         } else {
-            class64_sub1_763_ = Class64_Sub1(aHa_Sub1_5353)
+            class64_sub1_763_ = SoftwareModel(aHa_Sub1_5353)
             class64_sub1_764_ = class64_sub1_763_
         }
         return method633(class64_sub1_764_, class64_sub1_763_, i_762_, i.toInt() != 0, bool)

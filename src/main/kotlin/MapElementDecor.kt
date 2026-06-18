@@ -75,7 +75,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
         return false
     }
 
-    private fun method2465(var_renderer: Renderer?, i: Int, i_26_: Int, i_27_: Byte): Class64? {
+    private fun method2465(var_renderer: Renderer?, i: Int, i_26_: Int, i_27_: Byte): AbstractModel? {
         anInt10353++
         if (i_27_.toInt() != -82) return null
         val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(122.toByte(), i)
@@ -98,13 +98,13 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
         return aBoolean10338
     }
 
-    private fun method2467(class64: Class64?, var_renderer: Renderer?, i: Int, abstractCameraTransform: AbstractCameraTransform?) {
+    private fun method2467(abstractModel: AbstractModel?, var_renderer: Renderer?, i: Int, abstractCameraTransform: AbstractCameraTransform?) {
         do {
             try {
-                class64!!.method620(abstractCameraTransform)
+                abstractModel!!.method620(abstractCameraTransform)
                 anInt10360++
-                val class129s = class64.method619()
-                val class342s = class64.method604()
+                val class129s = abstractModel.method619()
+                val class342s = abstractModel.method604()
                 if (i == -1) {
                     if ((aClass318_Sub10_10341 == null || (aClass318_Sub10_10341!!.aBoolean6470)) && (class129s != null || class342s != null)) aClass318_Sub10_10341 = SceneGraphContainer.Companion.method2526(Class367_Sub11.anInt7396, true)
                     if (aClass318_Sub10_10341 == null) break
@@ -112,7 +112,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                     aClass318_Sub10_10341!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("lf.BA(" + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("lf.BA(" + (if (abstractModel != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

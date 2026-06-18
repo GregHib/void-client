@@ -99,13 +99,13 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
         return false
     }
 
-    private fun method2473(abstractCameraTransform: AbstractCameraTransform?, class64: Class64?, var_renderer: Renderer?, i: Int) {
+    private fun method2473(abstractCameraTransform: AbstractCameraTransform?, abstractModel: AbstractModel?, var_renderer: Renderer?, i: Int) {
         do {
             try {
                 anInt10406++
-                class64!!.method620(abstractCameraTransform)
-                val class129s = class64.method619()
-                val class342s = class64.method604()
+                abstractModel!!.method620(abstractCameraTransform)
+                val class129s = abstractModel.method619()
+                val class342s = abstractModel.method604()
                 if ((aClass318_Sub10_10378 == null || aClass318_Sub10_10378!!.aBoolean6470) && (class129s != null || class342s != null)) aClass318_Sub10_10378 = SceneGraphContainer.Companion.method2526(Class367_Sub11.anInt7396, true)
                 if (aClass318_Sub10_10378 != null) {
                     aClass318_Sub10_10378!!.method2536(var_renderer, Class367_Sub11.anInt7396.toLong(), class129s, class342s, false)
@@ -114,7 +114,7 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
                 if (i == -2393) break
                 finalize()
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("to.L(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("to.L(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ')'))
             }
             break
         } while (false)
@@ -283,7 +283,7 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
         anInt10370++
     }
 
-    private fun method2476(i: Int, var_renderer: Renderer?, i_36_: Byte): Class64? {
+    private fun method2476(i: Int, var_renderer: Renderer?, i_36_: Byte): AbstractModel? {
         anInt10377++
         val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(75.toByte(), anInt10391)
         if (i_36_ < 126) aClass318_Sub10_10378 = null

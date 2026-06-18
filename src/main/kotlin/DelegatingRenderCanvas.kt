@@ -123,25 +123,25 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             class348_sub13.anIntArray6758[i_7_] = i_8_
         }
 
-        fun method122(i: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Byte, var_renderer: Renderer): Class64? {
+        fun method122(i: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Byte, var_renderer: Renderer): AbstractModel? {
             anInt62++
             if (i_17_.toInt() != -35) anInt70 = 10
             val l = i_16_.toLong()
-            var class64 = CharCountUtil.aLruByteCache_225!!.method583(l, 81) as Class64?
+            var abstractModel = CharCountUtil.aLruByteCache_225!!.method583(l, 81) as AbstractModel?
             val i_18_ = 2055
-            if (class64 == null) {
+            if (abstractModel == null) {
                 val class124 = ParticleConfigParser.method2277(0, RasterSprite.aJs5Archive_5207!!, i_16_, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 105)
-                class64 = var_renderer.method3625(class124, i_18_, RefCountedHandle.anInt2275, 64, 768)
-                CharCountUtil.aLruByteCache_225!!.method582(class64, l, (-122).toByte())
+                abstractModel = var_renderer.method3625(class124, i_18_, RefCountedHandle.anInt2275, 64, 768)
+                CharCountUtil.aLruByteCache_225!!.method582(abstractModel, l, (-122).toByte())
             }
-            class64 = class64.method614(2.toByte(), i_18_, true)
-            if (i_15_ != 0) class64!!.a(i_15_)
-            if (i_13_ != 0) class64!!.FA(i_13_)
-            if (i_14_ != 0) class64!!.VA(i_14_)
-            if (i != 0) class64!!.H(0, i, 0)
-            return class64
+            abstractModel = abstractModel.method614(2.toByte(), i_18_, true)
+            if (i_15_ != 0) abstractModel!!.a(i_15_)
+            if (i_13_ != 0) abstractModel!!.FA(i_13_)
+            if (i_14_ != 0) abstractModel!!.VA(i_14_)
+            if (i != 0) abstractModel!!.H(0, i, 0)
+            return abstractModel
         }
 
         @JvmStatic

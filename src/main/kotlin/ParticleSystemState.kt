@@ -20,34 +20,34 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
     var anIntArray2216: IntArray?
     var anIntArray2217: IntArray?
     var anIntArray2218: IntArray?
-    var aClass64_Sub1_2219: Class64_Sub1?
+    var aClass64_Sub1_2219: SoftwareModel?
     var aShadowProjector_2220: ShadowProjector?
     var anInt2221: Int = 0
     var anIntArray2222: IntArray?
-    var aClass64_Sub1_2223: Class64_Sub1?
-    var aClass64_Sub1_2224: Class64_Sub1?
-    var aClass64_Sub1_2225: Class64_Sub1?
+    var aClass64_Sub1_2223: SoftwareModel?
+    var aClass64_Sub1_2224: SoftwareModel?
+    var aClass64_Sub1_2225: SoftwareModel?
     var aFloatArray2226: FloatArray?
-    var aClass64_Sub1_2227: Class64_Sub1?
+    var aClass64_Sub1_2227: SoftwareModel?
     var anIntArray2228: IntArray?
     var anInt2229: Int = 0
     var anIntArray2230: IntArray?
-    var aClass64_Sub1_2231: Class64_Sub1?
+    var aClass64_Sub1_2231: SoftwareModel?
     var anIntArray2232: IntArray?
-    var aClass64_Sub1_2233: Class64_Sub1?
+    var aClass64_Sub1_2233: SoftwareModel?
     var anIntArray2234: IntArray?
     var anIntArray2235: IntArray?
     var anIntArray2236: IntArray?
     var anIntArray2237: IntArray?
     var anIntArray2238: IntArray?
-    var aClass64_Sub1_2239: Class64_Sub1?
+    var aClass64_Sub1_2239: SoftwareModel?
     var anIntArray2240: IntArray?
     var anIntArray2241: IntArray?
     var anIntArray2242: IntArray?
-    var aClass64_Sub1_2243: Class64_Sub1?
+    var aClass64_Sub1_2243: SoftwareModel?
     var anIntArray2244: IntArray?
     var anIntArray2245: IntArray?
-    var aClass64_Sub1_2246: Class64_Sub1?
+    var aClass64_Sub1_2246: SoftwareModel?
     var anIntArray2247: IntArray?
 
     fun method1291(i: Int, runnable: Runnable?) {
@@ -66,17 +66,17 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
 
     init {
         this.aClass101_Sub1_2209 = MatrixCameraTransform()
-        this.anIntArray2213 = IntArray(Class64_Sub1.anInt5350)
-        this.anIntArray2214 = IntArray(Class64_Sub1.anInt5350)
+        this.anIntArray2213 = IntArray(SoftwareModel.anInt5350)
+        this.anIntArray2214 = IntArray(SoftwareModel.anInt5350)
         this.anIntArray2212 = IntArray(64)
         this.aFloatArray2226 = FloatArray(2)
         this.anIntArray2216 = IntArray(10000)
-        this.anIntArray2222 = IntArray(Class64_Sub1.anInt5350)
+        this.anIntArray2222 = IntArray(SoftwareModel.anInt5350)
         this.anIntArray2232 = IntArray(64)
         this.anIntArray2218 = IntArray(8)
-        this.anIntArray2237 = IntArray(Class64_Sub1.anInt5350)
+        this.anIntArray2237 = IntArray(SoftwareModel.anInt5350)
         this.anIntArray2236 = IntArray(10000)
-        this.anIntArray2230 = IntArray(Class64_Sub1.anInt5350)
+        this.anIntArray2230 = IntArray(SoftwareModel.anInt5350)
         this.anIntArray2240 = IntArray(10)
         this.anIntArray2228 = IntArray(64)
         this.anIntArray2238 = IntArray(10)
@@ -84,25 +84,25 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
         this.anIntArray2235 = IntArray(10)
         this.anIntArray2245 = IntArray(8)
         this.anIntArray2217 = IntArray(64)
-        this.anIntArray2244 = IntArray(Class64_Sub1.anInt5350)
+        this.anIntArray2244 = IntArray(SoftwareModel.anInt5350)
         this.anIntArray2247 = IntArray(10)
-        this.anIntArray2234 = IntArray(Class64_Sub1.anInt5350)
+        this.anIntArray2234 = IntArray(SoftwareModel.anInt5350)
         aHa_Sub1_2191 = var_ha_Sub1
         this.anInt2210 = aHa_Sub1_2191.anInt7494 + -255
         this.aShadowProjector_2220 = ShadowProjector(var_ha_Sub1, this)
-        this.aClass64_Sub1_2243 = Class64_Sub1(aHa_Sub1_2191)
-        this.aClass64_Sub1_2224 = Class64_Sub1(aHa_Sub1_2191)
-        this.aClass64_Sub1_2219 = Class64_Sub1(aHa_Sub1_2191)
-        this.aClass64_Sub1_2239 = Class64_Sub1(aHa_Sub1_2191)
-        this.aClass64_Sub1_2233 = Class64_Sub1(aHa_Sub1_2191)
-        this.aClass64_Sub1_2231 = Class64_Sub1(aHa_Sub1_2191)
-        this.aClass64_Sub1_2223 = Class64_Sub1(aHa_Sub1_2191)
-        this.aClass64_Sub1_2227 = Class64_Sub1(aHa_Sub1_2191)
-        this.aClass64_Sub1_2246 = Class64_Sub1(aHa_Sub1_2191)
-        this.aClass64_Sub1_2225 = Class64_Sub1(aHa_Sub1_2191)
-        this.anIntArray2242 = IntArray(Class64_Sub1.anInt5346)
+        this.aClass64_Sub1_2243 = SoftwareModel(aHa_Sub1_2191)
+        this.aClass64_Sub1_2224 = SoftwareModel(aHa_Sub1_2191)
+        this.aClass64_Sub1_2219 = SoftwareModel(aHa_Sub1_2191)
+        this.aClass64_Sub1_2239 = SoftwareModel(aHa_Sub1_2191)
+        this.aClass64_Sub1_2233 = SoftwareModel(aHa_Sub1_2191)
+        this.aClass64_Sub1_2231 = SoftwareModel(aHa_Sub1_2191)
+        this.aClass64_Sub1_2223 = SoftwareModel(aHa_Sub1_2191)
+        this.aClass64_Sub1_2227 = SoftwareModel(aHa_Sub1_2191)
+        this.aClass64_Sub1_2246 = SoftwareModel(aHa_Sub1_2191)
+        this.aClass64_Sub1_2225 = SoftwareModel(aHa_Sub1_2191)
+        this.anIntArray2242 = IntArray(SoftwareModel.anInt5346)
         var i = 0
-        while (Class64_Sub1.anInt5346 > i) {
+        while (SoftwareModel.anInt5346 > i) {
             this.anIntArray2242!![i] = -1
             i++
         }

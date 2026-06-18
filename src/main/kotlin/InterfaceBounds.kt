@@ -79,7 +79,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2546(60)
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1445(64)
             NormalMapGenerator.aParticleAmountCache_3453!!.method1589(127.toByte())
-            Class64_Sub3.aNpcDefinitionCache_5558!!.method1985(0)
+            OpenGlModel.aNpcDefinitionCache_5558!!.method1985(0)
             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1175(125.toByte())
             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1219(7851)
             TheoraVideoStream.aLocTypeDefLoader_9036!!.method1404((-82).toByte())

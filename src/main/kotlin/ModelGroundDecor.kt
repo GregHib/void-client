@@ -15,12 +15,12 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
     private var aBoolean10019 = false
     private val aByte10024: Byte
     private var aCircleHitbox_10025: CircleHitbox? = null
-    var aClass64_10028: Class64? = null
+    var aAbstractModel_10028: AbstractModel? = null
     private var aShort10032: Short = 0
     private var aRenderNode10036: RenderNode? = null
     override fun method40(i: Int) {
         if (i == -12031) {
-            if (this.aClass64_10028 != null) this.aClass64_10028!!.method612()
+            if (this.aAbstractModel_10028 != null) this.aAbstractModel_10028!!.method612()
             anInt10022++
         }
     }
@@ -28,8 +28,8 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
     public override fun method2394(bool: Boolean): Int {
         if (bool != true) return 109
         anInt10006++
-        if (this.aClass64_10028 == null) return 0
-        return this.aClass64_10028!!.fa()
+        if (this.aAbstractModel_10028 == null) return 0
+        return this.aAbstractModel_10028!!.fa()
     }
 
     override fun method44(i: Int, var_renderer: Renderer?) {
@@ -62,10 +62,10 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
                 if (aBoolean10019) i_11_ = i_11_ or 0x10000
                 val class2 = method2417(0, var_renderer, i_11_, aBoolean10003)
                 if (class2 == null) break
-                this.aClass64_10028 = class2.aClass64_119
+                this.aAbstractModel_10028 = class2.aAbstractModel_119
                 aRenderNode10036 = class2.aRenderNode118
                 if (!aBoolean10019) break
-                this.aClass64_10028 = this.aClass64_10028!!.method614(0.toByte(), i_11_, false)
+                this.aAbstractModel_10028 = this.aAbstractModel_10028!!.method614(0.toByte(), i_11_, false)
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("dm.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + bool_10_ + ')'))
             }
@@ -75,7 +75,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
 
     public override fun method2379(i: Int): Int {
         anInt10027++
-        if (this.aClass64_10028 != null) return this.aClass64_10028!!.ma()
+        if (this.aAbstractModel_10028 != null) return this.aAbstractModel_10028!!.ma()
         return 0
     }
 
@@ -98,13 +98,13 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
         return false
     }
 
-    private fun method2414(i: Int, var_renderer: Renderer, i_14_: Int): Class64? {
+    private fun method2414(i: Int, var_renderer: Renderer, i_14_: Int): AbstractModel? {
         if (i != -1) method2392(false)
         anInt10004++
-        if (this.aClass64_10028 != null && var_renderer.method3667(this.aClass64_10028!!.ua(), i_14_) == 0) return this.aClass64_10028
+        if (this.aAbstractModel_10028 != null && var_renderer.method3667(this.aAbstractModel_10028!!.ua(), i_14_) == 0) return this.aAbstractModel_10028
         val class2 = method2417(0, var_renderer, i_14_, false)
         if (class2 == null) return null
-        return class2.aClass64_119
+        return class2.aAbstractModel_119
     }
 
     public override fun method2387(var_renderer: Renderer?, i: Int) {
@@ -115,7 +115,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
     fun method2416(i: Int): Int {
         if (i != 15) aByte10015 = 66.toByte()
         anInt10009++
-        if (this.aClass64_10028 != null) return this.aClass64_10028!!.na() / 4
+        if (this.aAbstractModel_10028 != null) return this.aAbstractModel_10028!!.na() / 4
         return 15
     }
 
@@ -126,7 +126,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
     }
 
     override fun method41(i: Int): Int {
-        if (i != -32228) this.aClass64_10028 = null
+        if (i != -32228) this.aAbstractModel_10028 = null
         anInt10030++
         return aByte10015.toInt()
     }
@@ -137,10 +137,10 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
                 anInt10034++
                 if (class318_sub1 is NpcActorEntity) {
                     val class318_sub1_sub4_sub1 = class318_sub1
-                    if (this.aClass64_10028 != null && (class318_sub1_sub4_sub1.aClass64_10071) != null) this.aClass64_10028!!.method613(class318_sub1_sub4_sub1.aClass64_10071, i_18_, i, i_16_, bool)
+                    if (this.aAbstractModel_10028 != null && (class318_sub1_sub4_sub1.aAbstractModel_10071) != null) this.aAbstractModel_10028!!.method613(class318_sub1_sub4_sub1.aAbstractModel_10071, i_18_, i, i_16_, bool)
                 } else if (class318_sub1 is ModelGroundDecor) {
                     val class318_sub1_sub3_sub1_19_ = class318_sub1
-                    if (this.aClass64_10028 != null && (class318_sub1_sub3_sub1_19_.aClass64_10028 != null)) this.aClass64_10028!!.method613(class318_sub1_sub3_sub1_19_.aClass64_10028, i_18_, i, i_16_, bool)
+                    if (this.aAbstractModel_10028 != null && (class318_sub1_sub3_sub1_19_.aAbstractModel_10028 != null)) this.aAbstractModel_10028!!.method613(class318_sub1_sub3_sub1_19_.aAbstractModel_10028, i_18_, i, i_16_, bool)
                 }
                 if (i_17_ < -106) break
                 method2392(false)
@@ -161,7 +161,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
         anInt10020++
         if (bool != true) method38(120)
         aBoolean10019 = false
-        if (this.aClass64_10028 != null) this.aClass64_10028!!.s(0x10000.inv() and this.aClass64_10028!!.ua())
+        if (this.aAbstractModel_10028 != null) this.aAbstractModel_10028!!.s(0x10000.inv() and this.aAbstractModel_10028!!.ua())
     }
 
     public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
@@ -190,8 +190,8 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
     public override fun method2376(i: Int): Boolean {
         if (i > -12) return false
         anInt10029++
-        if (this.aClass64_10028 != null) {
-            return !this.aClass64_10028!!.r()
+        if (this.aAbstractModel_10028 != null) {
+            return !this.aAbstractModel_10028!!.r()
         }
         return true
     }
@@ -199,7 +199,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
     public override fun method2377(i: Byte): Boolean {
         if (i.toInt() != 122) method2381(null, -44)
         anInt10021++
-        if (this.aClass64_10028 != null) return this.aClass64_10028!!.F()
+        if (this.aAbstractModel_10028 != null) return this.aAbstractModel_10028!!.F()
         return false
     }
 
@@ -226,12 +226,12 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
 
     public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10031++
-        if (this.aClass64_10028 == null) return null
+        if (this.aAbstractModel_10028 == null) return null
         val class101 = var_renderer!!.method3705()
         class101.method894(this.x, this.anInt6382, this.y)
         val class318_sub4 = method136(i, aBoolean10014, false)
-        if (!ParticleSystemRenderer.aBoolean3870) this.aClass64_10028!!.method615(class101, class318_sub4.aClass318_Sub3Array6414!![0], 0)
-        else this.aClass64_10028!!.method608(class101, class318_sub4.aClass318_Sub3Array6414!![0], LocalPlayerState.anInt1906, 0)
+        if (!ParticleSystemRenderer.aBoolean3870) this.aAbstractModel_10028!!.method615(class101, class318_sub4.aClass318_Sub3Array6414!![0], 0)
+        else this.aAbstractModel_10028!!.method608(class101, class318_sub4.aClass318_Sub3Array6414!![0], LocalPlayerState.anInt1906, 0)
         return class318_sub4
     }
 

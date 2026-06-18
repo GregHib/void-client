@@ -41,14 +41,14 @@ class StreamingResourceRequest : AsyncResourceRequest() {
         fun method3260(i: Int) {
             var class348_sub15 = ProjectileConfigUtil.aHashtable_389!!.method3484(0) as? MenuActionNode?
             while (class348_sub15 != null) {
-                if (class348_sub15.aClass55_Sub1_6768!!.method510((-125).toByte())) Class64_Sub3.method690(70.toByte(), (class348_sub15.anInt6773))
+                if (class348_sub15.aClass55_Sub1_6768!!.method510((-125).toByte())) OpenGlModel.method690(70.toByte(), (class348_sub15.anInt6773))
                 else {
                     class348_sub15.aClass55_Sub1_6768!!.method522((-91).toByte())
                     try {
                         class348_sub15.aClass55_Sub1_6768!!.method517(-2)
                     } catch (exception: Exception) {
                         LinkedListIterator.method1242("TV: " + class348_sub15.anInt6773, exception, 15004)
-                        Class64_Sub3.method690(15.toByte(), (class348_sub15.anInt6773))
+                        OpenGlModel.method690(15.toByte(), (class348_sub15.anInt6773))
                     }
                     if (!class348_sub15.aBoolean6783 && !class348_sub15.aBoolean6781) {
                         val class348_sub23_sub1 = class348_sub15.aClass55_Sub1_6768!!.method512(0)

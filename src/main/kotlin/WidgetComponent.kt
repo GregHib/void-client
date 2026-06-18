@@ -367,7 +367,7 @@ class WidgetComponent {
         return class348_sub50.aString7211
     }
 
-    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, class87: Class87?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, modelHeaderCache: ModelHeaderCache?, interface17: Interface17?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, npcDefinitionCache: NpcDefinitionCache?, bufferedMessageQueue: BufferedMessageQueue?, i_24_: Int): Class64? {
+    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, class87: Class87?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, modelHeaderCache: ModelHeaderCache?, interface17: Interface17?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, npcDefinitionCache: NpcDefinitionCache?, bufferedMessageQueue: BufferedMessageQueue?, i_24_: Int): AbstractModel? {
         var i = i
         try {
             anInt684++
@@ -378,21 +378,21 @@ class WidgetComponent {
                 val i_25_ = i
                 if (widgetDefinition != null) i = i or widgetDefinition.method263(i_24_, 106, i_21_, true)
                 val l = (this.anInt753 + ((this.anInt770 shl 16) + (var_renderer!!.anInt4567 shl 29))).toLong()
-                var class64 = ParticleGeometry.aLruByteCache_4417!!.method583(l, -90) as Class64?
-                if (class64 == null || var_renderer.method3667(class64.ua(), i) != 0) {
-                    if (class64 != null) i = var_renderer.method3679(i, class64.ua())
+                var abstractModel = ParticleGeometry.aLruByteCache_4417!!.method583(l, -90) as AbstractModel?
+                if (abstractModel == null || var_renderer.method3667(abstractModel.ua(), i) != 0) {
+                    if (abstractModel != null) i = var_renderer.method3679(i, abstractModel.ua())
                     val class124 = ParticleConfigParser.method2277(0, (ScatterTextureNode.aJs5Archive_9365!!), this.anInt753, -1)
                     if (class124 == null) {
                         ContactList.aBoolean9616 = true
                         return null
                     }
                     if (class124.anInt1830 < 13) class124.method1092(2, 114)
-                    class64 = var_renderer.method3625(class124, i, Gl3dTexture.anInt8628, 64, 768)
-                    ParticleGeometry.aLruByteCache_4417!!.method582(class64, l, (-125).toByte())
+                    abstractModel = var_renderer.method3625(class124, i, Gl3dTexture.anInt8628, 64, 768)
+                    ParticleGeometry.aLruByteCache_4417!!.method582(abstractModel, l, (-125).toByte())
                 }
-                if (widgetDefinition != null) class64 = widgetDefinition.method269(-101, class64, i_24_, i_22_, i, i_21_)
-                class64!!.s(i_25_)
-                return class64
+                if (widgetDefinition != null) abstractModel = widgetDefinition.method269(-101, abstractModel, i_24_, i_22_, i, i_21_)
+                abstractModel!!.s(i_25_)
+                return abstractModel
             }
             if (this.anInt770 == 2) {
                 val class64 = (bufferedMessageQueue!!.method2079(this.anInt753, -1).method803(interface17, var_renderer, i_22_, i_24_, widgetDefinition, class87, i_21_, 104, i))
@@ -744,19 +744,19 @@ class WidgetComponent {
         }
     }
 
-    fun method437(i: Int, class64: Class64?, var_renderer: Renderer?, i_63_: Int, abstractCameraTransform: AbstractCameraTransform?) {
+    fun method437(i: Int, abstractModel: AbstractModel?, var_renderer: Renderer?, i_63_: Int, abstractCameraTransform: AbstractCameraTransform?) {
         do {
             try {
                 if (i != -20154) method438(15, -50, null)
                 anInt718++
-                class64!!.method620(abstractCameraTransform)
-                val class129s = class64.method619()
-                val class342s = class64.method604()
+                abstractModel!!.method620(abstractCameraTransform)
+                val class129s = abstractModel.method619()
+                val class342s = abstractModel.method604()
                 if ((this.aClass318_Sub10_740 == null || this.aClass318_Sub10_740!!.aBoolean6470) && (class129s != null || class342s != null)) this.aClass318_Sub10_740 = SceneGraphContainer.method2526(i_63_, false)
                 if (this.aClass318_Sub10_740 == null) break
                 this.aClass318_Sub10_740!!.method2536(var_renderer, i_63_.toLong(), class129s, class342s, false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("at.J(" + i + ',' + (if (class64 != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_63_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("at.J(" + i + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_63_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -953,7 +953,7 @@ class WidgetComponent {
             ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2542(-101)
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)
             NormalMapGenerator.aParticleAmountCache_3453!!.method1590(0)
-            Class64_Sub3.aNpcDefinitionCache_5558!!.method1986((-91).toByte())
+            OpenGlModel.aNpcDefinitionCache_5558!!.method1986((-91).toByte())
             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1174((-99).toByte())
             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1222(true)
             TheoraVideoStream.aLocTypeDefLoader_9036!!.method1410(-27995)
@@ -983,7 +983,7 @@ class WidgetComponent {
                 ConnectionStateType.anIntArray1045 = IntArray(i)
                 LinkedListIterator.anIntArray2117 = IntArray(i)
                 anInt825++
-                Class64.anIntArray1127 = IntArray(i)
+                AbstractModel.anIntArray1127 = IntArray(i)
                 FileIoUtil.anIntArray4097 = IntArray(i)
             }
         }

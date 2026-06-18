@@ -5,7 +5,7 @@ import kotlin.math.min
 /* Class64 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-public abstract class Class64 {
+public abstract class AbstractModel {
     @JvmField
     var aBoolean1124: Boolean = false
     abstract fun FA(i: Int)
@@ -216,11 +216,11 @@ public abstract class Class64 {
 
     abstract fun RA(): Int
 
-    abstract fun method613(class64_77_: Class64?, i: Int, i_78_: Int, i_79_: Int, bool: Boolean)
+    abstract fun method613(abstractModel_77_: AbstractModel?, i: Int, i_78_: Int, i_79_: Int, bool: Boolean)
 
     abstract fun v()
 
-    abstract fun method614(i: Byte, i_80_: Int, bool: Boolean): Class64?
+    abstract fun method614(i: Byte, i_80_: Int, bool: Boolean): AbstractModel?
 
     abstract fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int)
 

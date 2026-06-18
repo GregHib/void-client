@@ -12,7 +12,7 @@ import OutputStream_Sub2.Companion.method136
 */
 class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig?, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int) : WallEntity(i_8_, i_9_, i_10_, i, i_7_, i_11_, i_12_), Interface10 {
     private val aByte10118: Byte
-    private var aClass64_10124: Class64? = null
+    private var aAbstractModel_10124: AbstractModel? = null
     private var aCircleHitbox_10127: CircleHitbox? = null
     private var aRenderNode10128: RenderNode? = null
     private val aShort10129: Short
@@ -20,36 +20,36 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: N
     private var aBoolean10137 = false
     private var aBoolean10138 = false
     private var aByte10145: Byte = 0
-    private fun method2488(i: Int, i_0_: Int, var_renderer: Renderer): Class64? {
+    private fun method2488(i: Int, i_0_: Int, var_renderer: Renderer): AbstractModel? {
         if (i_0_ != 0) return null
         anInt10126++
-        if (aClass64_10124 != null && var_renderer.method3667(aClass64_10124!!.ua(), i) == 0) return aClass64_10124
+        if (aAbstractModel_10124 != null && var_renderer.method3667(aAbstractModel_10124!!.ua(), i) == 0) return aAbstractModel_10124
         val class2 = method2491((-51).toByte(), false, i, var_renderer)
         if (class2 == null) return null
-        return class2.aClass64_119
+        return class2.aAbstractModel_119
     }
 
     public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10122++
-        if (aClass64_10124 == null) return null
+        if (aAbstractModel_10124 == null) return null
         val class101 = var_renderer!!.method3705()
         class101.method894((this.x - -this.aShort8781), this.anInt6382, (this.y - -this.aShort8769))
         val class318_sub4 = method136(i, aBoolean10130, false)
-        if (ParticleSystemRenderer.aBoolean3870) aClass64_10124!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
-        else aClass64_10124!!.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
+        if (ParticleSystemRenderer.aBoolean3870) aAbstractModel_10124!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
+        else aAbstractModel_10124!!.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         return class318_sub4
     }
 
     override fun method40(i: Int) {
         if (i != -12031) aByte10145 = (-104).toByte()
         anInt10147++
-        if (aClass64_10124 != null) aClass64_10124!!.method612()
+        if (aAbstractModel_10124 != null) aAbstractModel_10124!!.method612()
     }
 
     public override fun method2377(i: Byte): Boolean {
         if (i.toInt() != 122) aBoolean10137 = false
         anInt10131++
-        if (aClass64_10124 != null) return aClass64_10124!!.F()
+        if (aAbstractModel_10124 != null) return aAbstractModel_10124!!.F()
         return false
     }
 
@@ -61,8 +61,8 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: N
 
     public override fun method2379(i: Int): Int {
         anInt10123++
-        if (i != -25675) aClass64_10124 = null
-        if (aClass64_10124 != null) return aClass64_10124!!.ma()
+        if (i != -25675) aAbstractModel_10124 = null
+        if (aAbstractModel_10124 != null) return aAbstractModel_10124!!.ma()
         return 0
     }
 
@@ -81,8 +81,8 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: N
     public override fun method2376(i: Int): Boolean {
         anInt10136++
         if (i > -12) return false
-        if (aClass64_10124 != null) {
-            return !aClass64_10124!!.r()
+        if (aAbstractModel_10124 != null) {
+            return !aAbstractModel_10124!!.r()
         }
         return true
     }
@@ -154,7 +154,7 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: N
     public override fun method2394(bool: Boolean): Int {
         if (bool != true) aBoolean10138 = false
         anInt10139++
-        if (aClass64_10124 != null) return aClass64_10124!!.fa()
+        if (aAbstractModel_10124 != null) return aAbstractModel_10124!!.fa()
         return 0
     }
 
@@ -171,7 +171,7 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: N
                 aBoolean10137 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10138 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 val class2 = method2491((-51).toByte(), aBoolean10137, 2048, var_renderer)
                 if (class2 == null) break
-                aClass64_10124 = class2.aClass64_119
+                aAbstractModel_10124 = class2.aAbstractModel_119
                 aRenderNode10128 = class2.aRenderNode118
             } catch (runtimeexception: RuntimeException) {
                 throw SoundBankPatch.method2929(runtimeexception, ("co.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))

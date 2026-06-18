@@ -66,11 +66,11 @@ open class LinkedListNode {
         }
 
         @JvmStatic
-        fun method2711(i: Int, i_3_: Int, class64: Class64?, i_4_: Int, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, var_renderer: Renderer?, i_9_: Int, i_10_: Int, i_11_: Int, widgetDefinition: WidgetDefinition?): Class64? {
+        fun method2711(i: Int, i_3_: Int, abstractModel: AbstractModel?, i_4_: Int, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, var_renderer: Renderer?, i_9_: Int, i_10_: Int, i_11_: Int, widgetDefinition: WidgetDefinition?): AbstractModel? {
             var i_5_ = i_5_
             try {
                 anInt4298++
-                if (class64 == null) return null
+                if (abstractModel == null) return null
                 var i_12_ = 2055
                 if (bool != false) return null
                 if (widgetDefinition != null) {
@@ -78,12 +78,12 @@ open class LinkedListNode {
                     i_12_ = i_12_ and 0x200.inv()
                 }
                 val l = ((i_10_.toLong() shl 48) + (i_7_ + ((i_9_ shl 16) + (i_11_ shl 24))).toLong() - -(i_6_.toLong() shl 32))
-                var class64_13_: Class64?
+                var abstractModel_13_: AbstractModel?
                 synchronized(WidgetRedrawRegion.aLruByteCache_4254!!) {
-                    class64_13_ = WidgetRedrawRegion.aLruByteCache_4254!!.method583(l, -64) as Class64?
+                    abstractModel_13_ = WidgetRedrawRegion.aLruByteCache_4254!!.method583(l, -64) as AbstractModel?
                 }
-                if (class64_13_ == null || (var_renderer!!.method3667(class64_13_.ua(), i_12_) != 0)) {
-                    if (class64_13_ != null) i_12_ = var_renderer!!.method3679(i_12_, class64_13_.ua())
+                if (abstractModel_13_ == null || (var_renderer!!.method3667(abstractModel_13_.ua(), i_12_) != 0)) {
+                    if (abstractModel_13_ != null) i_12_ = var_renderer!!.method3679(i_12_, abstractModel_13_.ua())
                     val i_14_: Int
                     if (i_7_ != 1) {
                         if (i_7_ == 2) i_14_ = 12
@@ -124,15 +124,15 @@ open class LinkedListNode {
                         }
                         i_25_++
                     }
-                    class64_13_ = var_renderer!!.method3625(modelDefinition, i_12_, MapSceneDefLoader.anInt2482, 64, 768)
+                    abstractModel_13_ = var_renderer!!.method3625(modelDefinition, i_12_, MapSceneDefLoader.anInt2482, 64, 768)
                     synchronized(WidgetRedrawRegion.aLruByteCache_4254!!) {
-                        WidgetRedrawRegion.aLruByteCache_4254!!.method582(class64_13_, l, (-103).toByte())
+                        WidgetRedrawRegion.aLruByteCache_4254!!.method582(abstractModel_13_, l, (-103).toByte())
                     }
                 }
-                val i_31_ = class64.V()
-                val i_32_ = class64.RA()
-                val i_33_ = class64.HA()
-                val i_34_ = class64.G()
+                val i_31_ = abstractModel.V()
+                val i_32_ = abstractModel.RA()
+                val i_33_ = abstractModel.HA()
+                val i_34_ = abstractModel.G()
                 var class348_sub42_sub17: TextureMaterialGroup? = null
                 if (widgetDefinition != null) {
                     i_5_ = widgetDefinition.anIntArray237[i_5_]
@@ -140,21 +140,21 @@ open class LinkedListNode {
                     i_5_ = i_5_ and 0xffff
                 }
                 if (class348_sub42_sub17 == null) {
-                    class64_13_ = class64_13_.method614(3.toByte(), i_12_, true)
-                    class64_13_!!.O(-i_31_ + i_32_ shr 1, 128, -i_33_ + i_34_ shr 1)
-                    class64_13_.H(i_32_ + i_31_ shr 1, 0, i_34_ + i_33_ shr 1)
+                    abstractModel_13_ = abstractModel_13_.method614(3.toByte(), i_12_, true)
+                    abstractModel_13_!!.O(-i_31_ + i_32_ shr 1, 128, -i_33_ + i_34_ shr 1)
+                    abstractModel_13_.H(i_32_ + i_31_ shr 1, 0, i_34_ + i_33_ shr 1)
                 } else {
-                    class64_13_ = class64_13_.method614(3.toByte(), i_12_, true)
-                    class64_13_!!.O(-i_31_ + i_32_ shr 1, 128, i_34_ - i_33_ shr 1)
-                    class64_13_.H(i_32_ + i_31_ shr 1, 0, i_34_ + i_33_ shr 1)
-                    class64_13_.method611(i_5_, -8700, class348_sub42_sub17)
+                    abstractModel_13_ = abstractModel_13_.method614(3.toByte(), i_12_, true)
+                    abstractModel_13_!!.O(-i_31_ + i_32_ shr 1, 128, i_34_ - i_33_ shr 1)
+                    abstractModel_13_.H(i_32_ + i_31_ shr 1, 0, i_34_ + i_33_ shr 1)
+                    abstractModel_13_.method611(i_5_, -8700, class348_sub42_sub17)
                 }
-                if (i != 0) class64_13_.FA(i)
-                if (i_4_ != 0) class64_13_.VA(i_4_)
-                if (i_8_ != 0) class64_13_.H(0, i_8_, 0)
-                return class64_13_
+                if (i != 0) abstractModel_13_.FA(i)
+                if (i_4_ != 0) abstractModel_13_.VA(i_4_)
+                if (i_8_ != 0) abstractModel_13_.H(0, i_8_, 0)
+                return abstractModel_13_
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
             }
         }
 

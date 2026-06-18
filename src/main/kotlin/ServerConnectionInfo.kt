@@ -81,7 +81,7 @@ class ServerConnectionInfo {
                     TileSceneEntity.aFloat8725 = KeyboardLayoutConfig.Companion.aFloat2137
                     DelegatingRenderCanvas.anInt70 = LocTypeDefLoader.anInt2500
                     SceneryDetailOptionState.aCircleRasterizer_6098 = HeapInfoRecord.aCircleRasterizer_4938
-                    Class64.aFloat1136 = TextureMetadataProvider.aFloat4626
+                    AbstractModel.aFloat1136 = TextureMetadataProvider.aFloat4626
                     DebugOverlayRenderer.aFloat3172 = NormalMapGenerator.aFloat3462
                     Js5Archive.aFloat670 = ModelVertexColorBuffer.aFloat6586
                     GlTexture1D.aFloat8560 = RangedGraphicsOptionState.aFloat5945

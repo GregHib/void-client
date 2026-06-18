@@ -110,7 +110,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
                     ModelVertexColorBuffer.aFloat6586 = (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2545 - Js5Archive.aFloat670) * f_6_ + Js5Archive.aFloat670
                     AnimationFrameTable.anInt486 = (i_4_ * NoOpGraphicsOptionState.anInt6042 + (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2546 * i_5_)) shr 8
                     KeyboardLayoutConfig.aFloat2137 = (TileSceneEntity.aFloat8725 + (-TileSceneEntity.aFloat8725 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2547)) * f_6_)
-                    TextureMetadataProvider.aFloat4626 = (Class64.aFloat1136 + f_6_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2544) - Class64.aFloat1136))
+                    TextureMetadataProvider.aFloat4626 = (AbstractModel.aFloat1136 + f_6_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2544) - AbstractModel.aFloat1136))
                     LocTypeDefLoader.anInt2500 = (((i_4_ * (0xff00 and DelegatingRenderCanvas.anInt70) + (0xff00 and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and DelegatingRenderCanvas.anInt70) - -(i_5_ * (0xff00ff and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549)))))) ushr 8
                     CollisionMap.aFloat4455 = (ParticleEmitterFactory.aFloat3177 + f_6_ * (-ParticleEmitterFactory.aFloat3177 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2536)))
                     NormalMapGenerator.aFloat3462 = (DebugOverlayRenderer.aFloat3172 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2542 - DebugOverlayRenderer.aFloat3172) * f_6_)

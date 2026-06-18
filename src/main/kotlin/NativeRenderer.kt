@@ -164,28 +164,28 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aFloat8185: Float = 0f
     var aFloat8186: Float
     @JvmField
-    var aClass64_Sub2_8187: Class64_Sub2? = null
+    var aClass64_Sub2_8187: Direct3dModel? = null
     @JvmField
-    var aClass64_Sub2_8188: Class64_Sub2? = null
+    var aClass64_Sub2_8188: Direct3dModel? = null
     @JvmField
-    var aClass64_Sub2_8189: Class64_Sub2? = null
+    var aClass64_Sub2_8189: Direct3dModel? = null
     private var aModelBatchBase_8190: ModelBatchBase? = null
     @JvmField
     var aModelBatchBase_8191: ModelBatchBase? = null
     @JvmField
-    var aClass64_Sub2_8192: Class64_Sub2? = null
+    var aClass64_Sub2_8192: Direct3dModel? = null
     private var anInterface5_Impl1_8193: Interface5_Impl1? = null
     @JvmField
-    var aClass64_Sub2_8194: Class64_Sub2? = null
+    var aClass64_Sub2_8194: Direct3dModel? = null
     private var anInterface5_Impl2_8195: Interface5_Impl2? = null
     private val aClass101_Sub2_8196: FloatCameraTransform
     private var aModelBatchBase_8197: ModelBatchBase? = null
     @JvmField
-    var aClass64_Sub2_8198: Class64_Sub2? = null
+    var aClass64_Sub2_8198: Direct3dModel? = null
     @JvmField
-    var aClass64_Sub2_8199: Class64_Sub2? = null
+    var aClass64_Sub2_8199: Direct3dModel? = null
     @JvmField
-    var aClass64_Sub2_8200: Class64_Sub2? = null
+    var aClass64_Sub2_8200: Direct3dModel? = null
     private var anInterface5_Impl1_8201: Interface5_Impl1? = null
     @JvmField
     var aModelBatchBase_8202: ModelBatchBase? = null
@@ -193,9 +193,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aModelBatchBase_8204: ModelBatchBase? = null
     private var aModelBatchBase_8205: ModelBatchBase? = null
     @JvmField
-    var aClass64_Sub2_8206: Class64_Sub2? = null
+    var aClass64_Sub2_8206: Direct3dModel? = null
     @JvmField
-    var aClass64_Sub2_8207: Class64_Sub2? = null
+    var aClass64_Sub2_8207: Direct3dModel? = null
     @JvmField
     var aModelBatchBase_8208: ModelBatchBase? = null
     var aBoolean8209: Boolean = false
@@ -899,10 +899,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    override fun method3625(modelDefinition: ModelDefinition?, i: Int, i_87_: Int, i_88_: Int, i_89_: Int): Class64 {
+    override fun method3625(modelDefinition: ModelDefinition?, i: Int, i_87_: Int, i_88_: Int, i_89_: Int): AbstractModel {
         try {
             anInt8016++
-            return Class64_Sub2(this, modelDefinition, i, i_88_, i_89_, i_87_)
+            return Direct3dModel(this, modelDefinition, i, i_88_, i_89_, i_87_)
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("wga.EG(" + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_87_ + ',' + i_88_ + ',' + i_89_ + ')'))
         }
@@ -2174,16 +2174,16 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.aModelBatchBase_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4076)))))
         this.aModelBatchBase_8208 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShape.aSpriteMaskShape_4073!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4076!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4078!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4075!!))))
         this.aModelBatchBase_8191 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShape.aSpriteMaskShape_4073!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4076!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4078!!))))
-        this.aClass64_Sub2_8206 = Class64_Sub2(this, 0, 0, false, false)
-        this.aClass64_Sub2_8198 = Class64_Sub2(this, 0, 0, true, true)
-        this.aClass64_Sub2_8192 = Class64_Sub2(this, 0, 0, false, false)
-        this.aClass64_Sub2_8194 = Class64_Sub2(this, 0, 0, true, true)
-        this.aClass64_Sub2_8200 = Class64_Sub2(this, 0, 0, false, false)
-        this.aClass64_Sub2_8187 = Class64_Sub2(this, 0, 0, true, true)
-        this.aClass64_Sub2_8188 = Class64_Sub2(this, 0, 0, false, false)
-        this.aClass64_Sub2_8199 = Class64_Sub2(this, 0, 0, true, true)
-        this.aClass64_Sub2_8207 = Class64_Sub2(this, 0, 0, false, false)
-        this.aClass64_Sub2_8189 = Class64_Sub2(this, 0, 0, true, true)
+        this.aClass64_Sub2_8206 = Direct3dModel(this, 0, 0, false, false)
+        this.aClass64_Sub2_8198 = Direct3dModel(this, 0, 0, true, true)
+        this.aClass64_Sub2_8192 = Direct3dModel(this, 0, 0, false, false)
+        this.aClass64_Sub2_8194 = Direct3dModel(this, 0, 0, true, true)
+        this.aClass64_Sub2_8200 = Direct3dModel(this, 0, 0, false, false)
+        this.aClass64_Sub2_8187 = Direct3dModel(this, 0, 0, true, true)
+        this.aClass64_Sub2_8188 = Direct3dModel(this, 0, 0, false, false)
+        this.aClass64_Sub2_8199 = Direct3dModel(this, 0, 0, true, true)
+        this.aClass64_Sub2_8207 = Direct3dModel(this, 0, 0, false, false)
+        this.aClass64_Sub2_8189 = Direct3dModel(this, 0, 0, true, true)
         aGroundDecorRenderer_8136 = GroundDecorRenderer(this)
         anInterface5_Impl2_8195 = method3840(-28633, true)
         method3902((-42).toByte())
@@ -2970,7 +2970,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             do {
                 try {
                     anInt8028++
-                    Class64.aHuffmanCodec_1131 = huffmanCodec
+                    AbstractModel.aHuffmanCodec_1131 = huffmanCodec
                     if (i.toInt() == 13) break
                     method3873(null, -3)
                 } catch (runtimeexception: RuntimeException) {

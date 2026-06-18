@@ -726,7 +726,7 @@ open class Buffer : LinkedListNode {
             if (i_71_ != WorldMapRenderer.anInt4674) {
                 if (i_71_ == 13) {
                     if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157(RuntimeException_Sub1.anInt4596, (-81).toByte())
-                    else method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
+                    else method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, OpenGlModel.aString5600, true)
                 }
                 if (i_71_ != 13 && ItemDefinition.aAbstractGameSocket_2773 != null) {
                     ItemDefinition.aAbstractGameSocket_2773!!.method1700(36.toByte())
@@ -735,17 +735,17 @@ open class Buffer : LinkedListNode {
                 if (i_71_ == 3) CacheEntryReference.method3198((GlBufferObject.anInt4737 != RenderNode.anInt9721), (-45).toByte())
                 if (i_71_ == 7) method1006((RenderNode.anInt9721 != FloorOverlayDefinition.anInt970), 102.toByte())
                 if (i_71_ == 5) {
-                    if (NullOggStream.aString9043 == null) method1213(Class64_Sub3.aString5600, TextureGenerator.aString2496, -124)
+                    if (NullOggStream.aString9043 == null) method1213(OpenGlModel.aString5600, TextureGenerator.aString2496, -124)
                     else method1372(-1)
                 } else if (i_71_ != 6) {
                     if (i_71_ == 9) {
                         if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157((RuntimeException_Sub1.anInt4596), (-120).toByte())
-                        else method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
+                        else method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, OpenGlModel.aString5600, true)
                     } else if (i_71_ == 12) {
-                        if (NullOggStream.aString9043 == null) method1213(Class64_Sub3.aString5600, TextureGenerator.aString2496, -98)
+                        if (NullOggStream.aString9043 == null) method1213(OpenGlModel.aString5600, TextureGenerator.aString2496, -98)
                         else method1372(-1)
                     }
-                } else if (NullOggStream.aString9043 == null) method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true)
+                } else if (NullOggStream.aString9043 == null) method1922(TextureGenerator.aString2496, RuntimeException_Sub1.anInt4596, OpenGlModel.aString5600, true)
                 else GlElementArrayBuffer.method1157(RuntimeException_Sub1.anInt4596, (-99).toByte())
                 if (GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
                     Class95.aJs5Archive_1541!!.anInt634 = 2

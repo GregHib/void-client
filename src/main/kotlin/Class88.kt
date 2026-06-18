@@ -211,7 +211,7 @@ class Class88 {
                             class348_sub49_sub2.writeInt(117.toByte(), 634)
                             class348_sub49_sub2.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154!!, 92)
                             val i_7_ = class348_sub49_sub2.anInt7197
-                            class348_sub49_sub2.writeString((-5).toByte(), Class64_Sub3.aString5600!!)
+                            class348_sub49_sub2.writeString((-5).toByte(), OpenGlModel.aString5600!!)
                             class348_sub49_sub2.writeByte(false, (RuntimeException_Sub1.anInt4596))
                             class348_sub49_sub2.writeByte(false, ContactEntry.method3229(-71))
                             class348_sub49_sub2.writeShort(107.toByte(), LocTypeDefinition.anInt4017)
@@ -242,7 +242,7 @@ class Class88 {
                             class348_sub49_sub2.writeInt(119.toByte(), 634)
                             class348_sub49_sub2.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154!!, -109)
                             val i_5_ = class348_sub49_sub2.anInt7197
-                            class348_sub49_sub2.writeString((-5).toByte(), Class64_Sub3.aString5600!!)
+                            class348_sub49_sub2.writeString((-5).toByte(), OpenGlModel.aString5600!!)
                             class348_sub49_sub2.writeByte(false, HardCacheEntryReference.aSceneProjector_10434!!.anInt2987)
                             class348_sub49_sub2.writeByte(false, AnimationFrameDefinition.anInt6967)
                             method4002(class348_sub49_sub2, 55.toByte())

@@ -61,10 +61,10 @@ class Player : ProjectedGroundDecor() {
             if (i >= -125) method2457((-106).toByte())
             class101.method895(this.aCompassSmoother_10217.method2019((-116).toByte()))
             class101.method891(this.x, -5 + this.anInt6382, this.y)
-            this.method2432(var_renderer, -15074, class101, this.aBoolean10318, (this.aClass64Array10323))
-            this.aClass64Array10323!![2] = null
-            this.aClass64Array10323!![1] = this.aClass64Array10323!![2]
-            this.aClass64Array10323!![0] = this.aClass64Array10323!![1]
+            this.method2432(var_renderer, -15074, class101, this.aBoolean10318, (this.aAbstractModelArray10323))
+            this.aAbstractModelArray10323!![2] = null
+            this.aAbstractModelArray10323!![1] = this.aAbstractModelArray10323!![2]
+            this.aAbstractModelArray10323!![0] = this.aAbstractModelArray10323!![1]
         }
     }
 
@@ -113,16 +113,16 @@ class Player : ProjectedGroundDecor() {
         class101.method891(this.x, this.anInt6382, this.y)
         var bool = false
         var i_10_ = 0
-        while ((this.aClass64Array10323!!.size > i_10_)) {
-            if ((this.aClass64Array10323!![i_10_] != null) && (if (ParticleSystemRenderer.aBoolean3870) (this.aClass64Array10323!![i_10_]!!.method623(i_7_, i, class101, true, 0, LocalPlayerState.anInt1906)) else this.aClass64Array10323!![i_10_]!!.method628(i_7_, i, class101, true, 0))) {
+        while ((this.aAbstractModelArray10323!!.size > i_10_)) {
+            if ((this.aAbstractModelArray10323!![i_10_] != null) && (if (ParticleSystemRenderer.aBoolean3870) (this.aAbstractModelArray10323!![i_10_]!!.method623(i_7_, i, class101, true, 0, LocalPlayerState.anInt1906)) else this.aAbstractModelArray10323!![i_10_]!!.method628(i_7_, i, class101, true, 0))) {
                 bool = true
                 break
             }
             i_10_++
         }
-        this.aClass64Array10323!![2] = null
-        this.aClass64Array10323!![1] = this.aClass64Array10323!![2]
-        this.aClass64Array10323!![i_8_] = this.aClass64Array10323!![1]
+        this.aAbstractModelArray10323!![2] = null
+        this.aAbstractModelArray10323!![1] = this.aAbstractModelArray10323!![2]
+        this.aAbstractModelArray10323!![i_8_] = this.aAbstractModelArray10323!![1]
         return bool
     }
 
@@ -231,7 +231,7 @@ class Player : ProjectedGroundDecor() {
         }
     }
 
-    private fun method2453(i: Int, var_renderer: Renderer?, i_32_: Int, class64: Class64?, i_33_: Int, i_34_: Int, abstractCameraTransform: AbstractCameraTransform?, i_35_: Int) {
+    private fun method2453(i: Int, var_renderer: Renderer?, i_32_: Int, abstractModel: AbstractModel?, i_33_: Int, i_34_: Int, abstractCameraTransform: AbstractCameraTransform?, i_35_: Int) {
         do {
             try {
                 anInt10548++
@@ -247,13 +247,13 @@ class Player : ProjectedGroundDecor() {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ke.OB(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_32_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_33_ + ',' + i_34_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_35_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ke.OB(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_32_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_33_ + ',' + i_34_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_35_ + ')'))
             }
             break
         } while (false)
     }
 
-    private fun method2454(i: Int, i_39_: Int, i_40_: Int, i_41_: Int, class64: Class64?, i_42_: Int, abstractCameraTransform: AbstractCameraTransform?, var_renderer: Renderer?, i_43_: Int) {
+    private fun method2454(i: Int, i_39_: Int, i_40_: Int, i_41_: Int, abstractModel: AbstractModel?, i_42_: Int, abstractCameraTransform: AbstractCameraTransform?, var_renderer: Renderer?, i_43_: Int) {
         do {
             try {
                 if (i != 6253) this.aString10544 = null
@@ -268,7 +268,7 @@ class Player : ProjectedGroundDecor() {
                     var_renderer.C(true)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (if (class64 != null) "{...}" else "null") + ',' + i_42_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_43_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_42_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_43_ + ')'))
             }
             break
         } while (false)
@@ -340,13 +340,13 @@ class Player : ProjectedGroundDecor() {
             if (class225.aBoolean2913 && (this.aCompositeNpcModelBuilder_10536!!.anInt2093 == -1 || MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(this.aCompositeNpcModelBuilder_10536!!.anInt2093, i + -2).aBoolean1369)) {
                 val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (ParticleEmitterNode.aClass87_191!!.method835(this.anInt10286, 7)) else null)
                 val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (ParticleEmitterNode.aClass87_191!!.method835(this.anInt10268, 7)))
-                val class64 = (LinkedListNode.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_renderer, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
+                val class64 = (LinkedListNode.method2711(this.anInt10302, i_53_, this.aAbstractModelArray10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_renderer, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
                 if (class64 != null) {
-                    class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aClass64Array10323).size, true, false))
+                    class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aAbstractModelArray10323).size, true, false))
                     this.aBoolean10324 = true
                     var_renderer.C(false)
-                    if (ParticleSystemRenderer.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aClass64Array10323).size]), LocalPlayerState.anInt1906, 0)
-                    else class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aClass64Array10323).size]), 0)
+                    if (ParticleSystemRenderer.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aAbstractModelArray10323).size]), LocalPlayerState.anInt1906, 0)
+                    else class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aAbstractModelArray10323).size]), 0)
                     var_renderer.C(true)
                 }
             }
@@ -362,8 +362,8 @@ class Player : ProjectedGroundDecor() {
                             val npc = (class348_sub22.aNpc_6859)!!
                             val i_57_ = (-(LocalPlayerState.aPlayer_1907!!.x) + npc.x)
                             val i_58_ = (-(LocalPlayerState.aPlayer_1907!!.y) + npc.y)
-                            if (ParticleSystemRenderer.aBoolean3870) method2454(6253, i_57_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_renderer, i_58_)
-                            else method2453(i_57_, var_renderer, 92160000, (this.aClass64Array10323[0]), 0, i_58_, class101, class302.anInt3834)
+                            if (ParticleSystemRenderer.aBoolean3870) method2454(6253, i_57_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aAbstractModelArray10323[0]), 92160000, class101, var_renderer, i_58_)
+                            else method2453(i_57_, var_renderer, 92160000, (this.aAbstractModelArray10323[0]), 0, i_58_, class101, class302.anInt3834)
                         }
                     }
                     if (class302.anInt3840 == 2) {
@@ -371,16 +371,16 @@ class Player : ProjectedGroundDecor() {
                         val i_60_ = (-(LocalPlayerState.aPlayer_1907!!.y) + 256 + class302.anInt3832)
                         var i_61_ = class302.anInt3837 shl 9
                         i_61_ *= i_61_
-                        if (ParticleSystemRenderer.aBoolean3870) method2454(6253, i_59_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), i_61_, class101, var_renderer, i_60_)
-                        else method2453(i_59_, var_renderer, i_61_, (this.aClass64Array10323[0]), 0, i_60_, class101, class302.anInt3834)
+                        if (ParticleSystemRenderer.aBoolean3870) method2454(6253, i_59_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aAbstractModelArray10323[0]), i_61_, class101, var_renderer, i_60_)
+                        else method2453(i_59_, var_renderer, i_61_, (this.aAbstractModelArray10323[0]), 0, i_60_, class101, class302.anInt3834)
                     }
                     if (class302.anInt3840 == 10 && class302.anInt3833 >= 0 && (class302.anInt3833 < (LoadingBarRenderer.aPlayerArray5058)!!.size)) {
                         val player_62_ = (LoadingBarRenderer.aPlayerArray5058!![class302.anInt3833])
                         if (player_62_ != null) {
                             val i_63_ = (-(LocalPlayerState.aPlayer_1907!!.x) + (player_62_.x))
                             val i_64_ = (-(LocalPlayerState.aPlayer_1907!!.y) + (player_62_.y))
-                            if (ParticleSystemRenderer.aBoolean3870) method2454(6253, i_63_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_renderer, i_64_)
-                            else method2453(i_63_, var_renderer, 92160000, (this.aClass64Array10323[0]), i xor 0x1, i_64_, class101, class302.anInt3834)
+                            if (ParticleSystemRenderer.aBoolean3870) method2454(6253, i_63_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aAbstractModelArray10323[0]), 92160000, class101, var_renderer, i_64_)
+                            else method2453(i_63_, var_renderer, 92160000, (this.aAbstractModelArray10323[0]), i xor 0x1, i_64_, class101, class302.anInt3834)
                         }
                     }
                 }
@@ -390,15 +390,15 @@ class Player : ProjectedGroundDecor() {
         }
         class101.method895(i_53_)
         class101.method891(this.x, (this.anInt6382 + (-5 + -(this.anInt10274))), this.y)
-        if (class318_sub4 == null) class318_sub4 = OutputStream_Sub2.method136((this.aClass64Array10323).size, true, false)
-        this.method2432(var_renderer, -15074, class101, false, this.aClass64Array10323)
+        if (class318_sub4 == null) class318_sub4 = OutputStream_Sub2.method136((this.aAbstractModelArray10323).size, true, false)
+        this.method2432(var_renderer, -15074, class101, false, this.aAbstractModelArray10323)
         if (ParticleSystemRenderer.aBoolean3870) {
-            for (i_65_ in (this.aClass64Array10323).indices) {
-                if (this.aClass64Array10323[i_65_] != null) this.aClass64Array10323[i_65_]!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![i_65_]), LocalPlayerState.anInt1906, (if (this != LocalPlayerState.aPlayer_1907) 0 else 1))
+            for (i_65_ in (this.aAbstractModelArray10323).indices) {
+                if (this.aAbstractModelArray10323[i_65_] != null) this.aAbstractModelArray10323[i_65_]!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![i_65_]), LocalPlayerState.anInt1906, (if (this != LocalPlayerState.aPlayer_1907) 0 else 1))
             }
         } else {
-            for (i_66_ in (this.aClass64Array10323).indices) {
-                if (this.aClass64Array10323[i_66_] != null) this.aClass64Array10323[i_66_]!!.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![i_66_]), (if (this == LocalPlayerState.aPlayer_1907) 1 else 0))
+            for (i_66_ in (this.aAbstractModelArray10323).indices) {
+                if (this.aAbstractModelArray10323[i_66_] != null) this.aAbstractModelArray10323[i_66_]!!.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![i_66_]), (if (this == LocalPlayerState.aPlayer_1907) 1 else 0))
             }
         }
         if (this.aClass318_Sub10_10327 != null) {
@@ -407,13 +407,13 @@ class Player : ProjectedGroundDecor() {
             else var_renderer.method3684(class98)
         }
         var i_67_ = 0
-        while ((i_67_ < this.aClass64Array10323.size)) {
-            if (this.aClass64Array10323[i_67_] != null) this.aBoolean10324 = this.aBoolean10324 or this.aClass64Array10323[i_67_]!!.F()
+        while ((i_67_ < this.aAbstractModelArray10323.size)) {
+            if (this.aAbstractModelArray10323[i_67_] != null) this.aBoolean10324 = this.aBoolean10324 or this.aAbstractModelArray10323[i_67_]!!.F()
             i_67_++
         }
-        this.aClass64Array10323[2] = null
-        this.aClass64Array10323[i] = this.aClass64Array10323[2]
-        this.aClass64Array10323[0] = this.aClass64Array10323[i]
+        this.aAbstractModelArray10323[2] = null
+        this.aAbstractModelArray10323[i] = this.aAbstractModelArray10323[2]
+        this.aAbstractModelArray10323[0] = this.aAbstractModelArray10323[i]
         this.anInt10301 = TextureQualityOptionState.anInt6006
         return class318_sub4
     }
@@ -478,7 +478,7 @@ class Player : ProjectedGroundDecor() {
         val bool = (this.aByte10279.toInt() != 0 && (this.anInt10248 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 < this.anInt10250))
         if (bool) i = i or 0x80000
         val class64 =
-            (this.aCompositeNpcModelBuilder_10536!!.method1226(aVarpStore_10209, class17_71_, this.aLoadProgressCountersArray10308, true, Exception_Sub1.aModelHeaderCache_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, RadialTextureNode.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, MapAreaDefinition.aBufferedMessageQueue_2529, ParticleEmitterNode.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aNpcDefinitionCache_5558).also { this.aClass64Array10323[0] = it })
+            (this.aCompositeNpcModelBuilder_10536!!.method1226(aVarpStore_10209, class17_71_, this.aLoadProgressCountersArray10308, true, Exception_Sub1.aModelHeaderCache_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, RadialTextureNode.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, MapAreaDefinition.aBufferedMessageQueue_2529, ParticleEmitterNode.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, OpenGlModel.aNpcDefinitionCache_5558).also { this.aAbstractModelArray10323[0] = it })
         val i_75_ = MapArchiveSource.method2201(2121)
         if (TextureDefinitionCache.anInt2964 < 96 && i_75_ > 50) CubemapTextureImplSource.method2271(31268)
         val i_76_ = 3 % ((63 - i_69_) / 47)
@@ -517,7 +517,7 @@ class Player : ProjectedGroundDecor() {
                 if (this.anInt10220 != 0) i_79_ = i_79_ or 0x2
                 if (this.anInt10278 >= 0) i_79_ = i_79_ or 0x7
             } else i_79_ = i_79_ or 0x7
-            val class64_80_ = (class368.method3562(this.anInt10240, var_renderer, this.anInt10243, i_79_, this.anInt10283, ParticleEmitterNode.aClass87_191, 46.toByte()).also { this.aClass64Array10323[1] = it })
+            val class64_80_ = (class368.method3562(this.anInt10240, var_renderer, this.anInt10243, i_79_, this.anInt10283, ParticleEmitterNode.aClass87_191, 46.toByte()).also { this.aAbstractModelArray10323[1] = it })
             if (class64_80_ != null) {
                 if (this.anInt10278 >= 0 && class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939!![this.anInt10278]) != null)) {
                     var i_81_ = 0
@@ -553,8 +553,8 @@ class Player : ProjectedGroundDecor() {
                     if (this.anInt10252 != 0) class64_80_.H(0, (this.anInt10252), 0)
                 }
             }
-        } else this.aClass64Array10323[1] = null
-        if (this.aBoolean10521 || this.anInt10291 == -1 || this.anInt10224 == -1) this.aClass64Array10323[2] = null
+        } else this.aAbstractModelArray10323[1] = null
+        if (this.aBoolean10521 || this.anInt10291 == -1 || this.anInt10224 == -1) this.aAbstractModelArray10323[2] = null
         else {
             val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(76.toByte(), this.anInt10291))
             val bool_89_ = (class368.aByte4488.toInt() == 3 && (i_72_ != 0 || i_73_ != 0))
@@ -565,7 +565,7 @@ class Player : ProjectedGroundDecor() {
                 if (this.anInt10260 != 0) i_90_ = i_90_ or 0x2
                 if (this.anInt10289 >= 0) i_90_ = i_90_ or 0x7
             }
-            val class64_91_ = (class368.method3558(this.anInt10273, this.anInt10276, var_renderer, i_90_, 3172, ParticleEmitterNode.aClass87_191, this.anInt10224).also { this.aClass64Array10323[2] = it })
+            val class64_91_ = (class368.method3558(this.anInt10273, this.anInt10276, var_renderer, i_90_, 3172, ParticleEmitterNode.aClass87_191, this.anInt10224).also { this.aAbstractModelArray10323[2] = it })
             if (class64_91_ != null) {
                 if (this.anInt10289 < 0 || class225.anIntArrayArray2939 == null || ((class225.anIntArrayArray2939!![this.anInt10289]) == null)) {
                     if (this.anInt10202 != 0) class64_91_.a(2048 * (this.anInt10202))

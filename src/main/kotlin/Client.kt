@@ -479,9 +479,9 @@ import IdentKitRecolor.Companion.method208
 import LruByteCache.Companion.method584
 import GameClock.method598
 import GameClock.method599
-import Class64_Sub2.Companion.method661
-import Class64_Sub2.Companion.method676
-import Class64_Sub3.Companion.method681
+import Direct3dModel.Companion.method661
+import Direct3dModel.Companion.method676
+import OpenGlModel.Companion.method681
 import Class65.Companion.method698
 import Class66.method705
 import Class66.method713
@@ -810,7 +810,7 @@ class Client : GameAppletFrame() {
         method3269(true)
         method265(false)
         method1375(5616)
-        Class64.method609((-52).toByte())
+        AbstractModel.method609((-52).toByte())
         method355(i + 4189)
         method1426(25165)
         method2254(i.toInt() xor 0x39bf.inv())
@@ -2243,7 +2243,7 @@ class Client : GameAppletFrame() {
                                             }
                                             if (HashLinkedListNode.anInt7059 == 2) {
                                                 SoundBankPatch.aBoolean6788 = true
-                                                Class64_Sub3.method689((-59).toByte(), (ParticleDefLoader.anInt2464 + (((SceneEntityModel.anInt6411) - (GlTexture1D.aInputTracker_8552!!.method3597(true))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()))
+                                                OpenGlModel.method689((-59).toByte(), (ParticleDefLoader.anInt2464 + (((SceneEntityModel.anInt6411) - (GlTexture1D.aInputTracker_8552!!.method3597(true))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()))
                                                 method2170((OpenGlTerrainTile.anInt8237 - (((ModelDefinitionCache.anInt2872) - (GlTexture1D.aInputTracker_8552!!.method3594(83.toByte()))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()), 3.toByte())
                                             }
                                         } else {

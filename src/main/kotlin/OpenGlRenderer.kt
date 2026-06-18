@@ -171,7 +171,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     var aFrameBufferObject_7778: FrameBufferObject? = null
     private val aFloatArray7779: FloatArray
     @JvmField
-    var aClass64_Sub3_7780: Class64_Sub3? = null
+    var aClass64_Sub3_7780: OpenGlModel? = null
     @JvmField
     var aFloat7781: Float
     @JvmField
@@ -180,7 +180,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     var aBoolean7783: Boolean = false
     private var aBoolean7784 = false
     @JvmField
-    var aClass64_Sub3_7785: Class64_Sub3? = null
+    var aClass64_Sub3_7785: OpenGlModel? = null
     private var aFloat7786: Float
     private var anInt7787: Int
     @JvmField
@@ -205,9 +205,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private var aFloat7800: Float
     private var aBoolean7801 = false
     @JvmField
-    var aClass64_Sub3_7802: Class64_Sub3? = null
+    var aClass64_Sub3_7802: OpenGlModel? = null
     @JvmField
-    var aClass64_Sub3_7803: Class64_Sub3? = null
+    var aClass64_Sub3_7803: OpenGlModel? = null
     private var anInt7804: Int
     private var aBoolean7805 = false
     @JvmField
@@ -235,7 +235,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @JvmField
     var aBoolean7820: Boolean = false
     @JvmField
-    var aClass64_Sub3_7821: Class64_Sub3? = null
+    var aClass64_Sub3_7821: OpenGlModel? = null
     private var aBoolean7822 = false
     @JvmField
     var aFloat7823: Float
@@ -257,7 +257,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @JvmField
     var aHoverActionEntry_7833: HoverActionEntry? = null
     @JvmField
-    var aClass64_Sub3_7834: Class64_Sub3? = null
+    var aClass64_Sub3_7834: OpenGlModel? = null
     @JvmField
     var aFloat7835: Float = 0f
     @JvmField
@@ -265,16 +265,16 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @JvmField
     var aBoolean7837: Boolean = false
     @JvmField
-    var aClass64_Sub3_7838: Class64_Sub3? = null
+    var aClass64_Sub3_7838: OpenGlModel? = null
     private var anInt7839 = 0
     @JvmField
-    var aClass64_Sub3_7840: Class64_Sub3? = null
+    var aClass64_Sub3_7840: OpenGlModel? = null
     @JvmField
     var aBoolean7841: Boolean = false
     private var aFloat7842 = 0f
     private var aBoolean7843 = false
     @JvmField
-    var aClass64_Sub3_7844: Class64_Sub3? = null
+    var aClass64_Sub3_7844: OpenGlModel? = null
     private var aString7845: String? = null
     @JvmField
     var aBoolean7846: Boolean = false
@@ -301,7 +301,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     @JvmField
     var aBoolean7863: Boolean = false
     @JvmField
-    var aClass64_Sub3_7864: Class64_Sub3? = null
+    var aClass64_Sub3_7864: OpenGlModel? = null
     private var anInt7865 = 0
     private var aBoolean7866 = false
     private var anInt7867: Int
@@ -350,10 +350,10 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7683++
     }
 
-    override fun method3625(modelDefinition: ModelDefinition?, i: Int, i_2_: Int, i_3_: Int, i_4_: Int): Class64 {
+    override fun method3625(modelDefinition: ModelDefinition?, i: Int, i_2_: Int, i_3_: Int, i_4_: Int): AbstractModel {
         try {
             anInt7579++
-            return Class64_Sub3(this, modelDefinition, i, i_3_, i_4_, i_2_)
+            return OpenGlModel(this, modelDefinition, i, i_3_, i_4_, i_2_)
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("qo.EG(" + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'))
         }
@@ -2176,16 +2176,16 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         this.aClass258_Sub3_7827 = GlTexture2D(this, 3553, 6408, 1, 1)
         GlTexture2D(this, 3553, 6408, 1, 1)
         GlTexture2D(this, 3553, 6408, 1, 1)
-        this.aClass64_Sub3_7864 = Class64_Sub3(this)
-        this.aClass64_Sub3_7838 = Class64_Sub3(this)
-        this.aClass64_Sub3_7803 = Class64_Sub3(this)
-        this.aClass64_Sub3_7834 = Class64_Sub3(this)
-        this.aClass64_Sub3_7840 = Class64_Sub3(this)
-        this.aClass64_Sub3_7780 = Class64_Sub3(this)
-        this.aClass64_Sub3_7802 = Class64_Sub3(this)
-        this.aClass64_Sub3_7821 = Class64_Sub3(this)
-        this.aClass64_Sub3_7844 = Class64_Sub3(this)
-        this.aClass64_Sub3_7785 = Class64_Sub3(this)
+        this.aClass64_Sub3_7864 = OpenGlModel(this)
+        this.aClass64_Sub3_7838 = OpenGlModel(this)
+        this.aClass64_Sub3_7803 = OpenGlModel(this)
+        this.aClass64_Sub3_7834 = OpenGlModel(this)
+        this.aClass64_Sub3_7840 = OpenGlModel(this)
+        this.aClass64_Sub3_7780 = OpenGlModel(this)
+        this.aClass64_Sub3_7802 = OpenGlModel(this)
+        this.aClass64_Sub3_7821 = OpenGlModel(this)
+        this.aClass64_Sub3_7844 = OpenGlModel(this)
+        this.aClass64_Sub3_7785 = OpenGlModel(this)
         if (this.aBoolean7820) {
             this.aFrameBufferObject_7778 = FrameBufferObject(this)
             FrameBufferObject(this)

@@ -118,7 +118,7 @@ class OutputStream_Sub1 : OutputStream() {
                     if (GrayscaleNoiseTexture.aBoolean5300) {
                         CameraRotationStub.method289(-15902, 0x3fff and -WorldMapElement.anInt4638, -MapTileShape.anInt4186 and 0x3fff, (-MinimapAreaMarkerNode.anInt9701 and 0x3fff))
                         SceneProjector.method1634(
-                            Class64.anIntArray1127,
+                            AbstractModel.anIntArray1127,
                             -2,
                             RegionSceneLoader.aByteArrayArrayArray3700,
                             (LocalPlayerState.aPlayer_1907!!.y) shr 9,
@@ -147,7 +147,7 @@ class OutputStream_Sub1 : OutputStream() {
                         LinkedListIterator.anIntArray2117,
                         BlankTextureNode.anIntArray9259,
                         ConnectionStateType.anIntArray1045,
-                        Class64.anIntArray1127,
+                        AbstractModel.anIntArray1127,
                         (LocalPlayerState.aPlayer_1907!!.plane) - -1,
                         i_16_,
                         (LocalPlayerState.aPlayer_1907!!.x) shr 9,

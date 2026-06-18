@@ -32,13 +32,13 @@ class ModelKeyBuilder : LinkedListNode() {
         }
     }
 
-    fun method2803(widgetDefinition: WidgetDefinition?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, var_renderer: Renderer?, bool: Boolean, i_14_: Int): Class64? {
+    fun method2803(widgetDefinition: WidgetDefinition?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, var_renderer: Renderer?, bool: Boolean, i_14_: Int): AbstractModel? {
         try {
             anInt6756++
-            var class64: Class64? = null
+            var abstractModel: AbstractModel? = null
             var i_15_ = i_13_
             var npcDefinition: NpcDefinition? = null
-            if (i != -1) npcDefinition = Class64_Sub3.aNpcDefinitionCache_5558!!.method1983(i, 32)
+            if (i != -1) npcDefinition = OpenGlModel.aNpcDefinitionCache_5558!!.method1983(i, 32)
             var `is` = this.anIntArray6757
             if (npcDefinition != null && npcDefinition.anIntArray2906 != null) {
                 `is` = IntArray(npcDefinition.anIntArray2906.size)
@@ -90,9 +90,9 @@ class ModelKeyBuilder : LinkedListNode() {
                 if (bool_21_) i_15_ = i_15_ or 0x400
             }
             val l = method2802((if (compositeNpcModelBuilder != null) compositeNpcModelBuilder.anIntArray2095 else null), i, bool, `is`, (-74).toByte())
-            if (SocketStreamWorker.aLruByteCache_2671 != null) class64 = SocketStreamWorker.aLruByteCache_2671!!.method583(l, i_14_ xor 0x56) as Class64?
-            if (class64 == null || var_renderer!!.method3667(class64.ua(), i_15_) != 0) {
-                if (class64 != null) i_15_ = var_renderer!!.method3679(i_15_, class64.ua())
+            if (SocketStreamWorker.aLruByteCache_2671 != null) abstractModel = SocketStreamWorker.aLruByteCache_2671!!.method583(l, i_14_ xor 0x56) as AbstractModel?
+            if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_15_) != 0) {
+                if (abstractModel != null) i_15_ = var_renderer!!.method3679(i_15_, abstractModel.ua())
                 var i_28_ = i_15_
                 var bool_29_ = false
                 var i_30_ = 0
@@ -123,21 +123,21 @@ class ModelKeyBuilder : LinkedListNode() {
                 }
                 if (compositeNpcModelBuilder != null) i_28_ = i_28_ or 0x4000
                 val modelDefinition = ModelDefinition(modelDefinitions, modelDefinitions.size)
-                class64 = var_renderer!!.method3625(modelDefinition, i_28_, ParamMap.anInt9488, 64, 850)
+                abstractModel = var_renderer!!.method3625(modelDefinition, i_28_, ParamMap.anInt9488, 64, 850)
                 if (compositeNpcModelBuilder != null) {
                     for (i_39_ in 0..4) {
                         for (i_40_ in (Class367_Sub2.aShortArrayArrayArray7290)!!.indices) {
-                            if (compositeNpcModelBuilder.anIntArray2095!![i_39_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_])!!.size) class64.ia((SpriteLoadValidator.aShortArrayArray4791!![i_40_]!![i_39_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_]!![(compositeNpcModelBuilder.anIntArray2095!![i_39_])]))
+                            if (compositeNpcModelBuilder.anIntArray2095!![i_39_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_40_]!![i_39_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_]!![(compositeNpcModelBuilder.anIntArray2095!![i_39_])]))
                         }
                     }
                 }
                 if (SocketStreamWorker.aLruByteCache_2671 != null) {
-                    class64.s(i_15_)
-                    SocketStreamWorker.aLruByteCache_2671!!.method582(class64, l, (-128).toByte())
+                    abstractModel.s(i_15_)
+                    SocketStreamWorker.aLruByteCache_2671!!.method582(abstractModel, l, (-128).toByte())
                 }
             }
-            if (widgetDefinition == null || class348_sub42_sub17 == null) return class64
-            val class64_41_ = class64.method614(1.toByte(), i_15_, true)
+            if (widgetDefinition == null || class348_sub42_sub17 == null) return abstractModel
+            val class64_41_ = abstractModel.method614(1.toByte(), i_15_, true)
             class64_41_!!.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, widgetDefinition.aBoolean242, i_23_, i_11_ + i_14_)
             return class64_41_
         } catch (runtimeexception: RuntimeException) {

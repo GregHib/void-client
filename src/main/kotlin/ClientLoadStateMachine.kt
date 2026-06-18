@@ -181,7 +181,7 @@ object ClientLoadStateMachine {
             if (AbstractFrameBufferSurface.anInt6923 != -1 && !RasterSprite.aJs5Archive_5207!!.method420(-10499, AbstractFrameBufferSurface.anInt6923, 0)) return 99
             SourceRowTextureNode.aRenderConfig9113 = TextureMetadataProvider(KeyEventNode.aJs5Archive_4770, WorldMapTextLabel.aJs5Archive_8589, CameraRotationStub.aJs5Archive_322)
             ProjectionCameraTransform.aEmoteDefCache_5764 = EmoteDefCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
-            Class64_Sub3.aNpcDefinitionCache_5558 = NpcDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
+            OpenGlModel.aNpcDefinitionCache_5558 = NpcDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)
             GraphicsOptionState.aItemDefinitionLoader_3147 = ItemDefinitionLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
             RegionTileNode.aCacheArchiveIndexLoader_6653 = CacheArchiveIndexLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, VideoAdChecker.aJs5Archive_3183)
             RenderConfigFactory.aLocDefinitionCache_2979 = LocDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aJs5Archive_1541)

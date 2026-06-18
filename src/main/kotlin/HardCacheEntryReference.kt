@@ -715,7 +715,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             if (AwtKeyboardListener.aIntRange_6528 == ModelVertexColorBuffer.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-124)
                 WallSceneEntity.method2397((-124).toByte())
-                Class64_Sub3.method690((-107).toByte(), i)
+                OpenGlModel.method690((-107).toByte(), i)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }

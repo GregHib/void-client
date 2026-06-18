@@ -10,7 +10,7 @@ class CompositeNpcModelBuilder {
     var aBoolean2100: Boolean = false
     private var aLong2102: Long = 0
     private var anInt2103 = 0
-    fun method1226(interface17: Interface17?, widgetDefinition: WidgetDefinition?, loadProgressCounters: Array<LoadProgressCounters?>?, bool: Boolean, modelHeaderCache: ModelHeaderCache?, i: Int, widgetDefinition_0_: WidgetDefinition?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, modelDefinitionLoader: ModelDefinitionLoader?, i_5_: Int, var_renderer: Renderer?, bufferedMessageQueue: BufferedMessageQueue?, class87: Class87?, i_6_: Int, i_7_: Int, i_8_: Int, npcDefinitionCache: NpcDefinitionCache?): Class64? {
+    fun method1226(interface17: Interface17?, widgetDefinition: WidgetDefinition?, loadProgressCounters: Array<LoadProgressCounters?>?, bool: Boolean, modelHeaderCache: ModelHeaderCache?, i: Int, widgetDefinition_0_: WidgetDefinition?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, modelDefinitionLoader: ModelDefinitionLoader?, i_5_: Int, var_renderer: Renderer?, bufferedMessageQueue: BufferedMessageQueue?, class87: Class87?, i_6_: Int, i_7_: Int, i_8_: Int, npcDefinitionCache: NpcDefinitionCache?): AbstractModel? {
         try {
             anInt2097++
             if (this.anInt2093 != -1) return (bufferedMessageQueue!!.method2079(this.anInt2093, -1).method800(i, loadProgressCounters, class87, !bool_2_, widgetDefinition, i_8_, npcDefinitionCache, i_7_, widgetDefinition_0_, interface17, var_renderer, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
@@ -147,14 +147,14 @@ class CompositeNpcModelBuilder {
                 if (bool_12_) i_9_ = i_9_ or 0x100
                 if (bool_14_) i_9_ = i_9_ or 0x400
             }
-            var class64: Class64?
+            var abstractModel: AbstractModel?
             synchronized(ModelDataCache.aLruByteCache_355!!) {
-                class64 = ModelDataCache.aLruByteCache_355!!.method583(l, -47) as Class64?
+                abstractModel = ModelDataCache.aLruByteCache_355!!.method583(l, -47) as AbstractModel?
             }
             var npcDefinition: NpcDefinition? = null
             if (anInt2103 != -1) npcDefinition = npcDefinitionCache!!.method1983(anInt2103, 32)
-            if (class64 == null || var_renderer!!.method3667(class64.ua(), i_9_) != 0) {
-                if (class64 != null) i_9_ = var_renderer!!.method3679(i_9_, class64.ua())
+            if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_9_) != 0) {
+                if (abstractModel != null) i_9_ = var_renderer!!.method3679(i_9_, abstractModel.ua())
                 var i_36_ = i_9_
                 var bool_37_ = false
                 for (i_38_ in 0..11) {
@@ -166,10 +166,10 @@ class CompositeNpcModelBuilder {
                 if (bool_37_) {
                     if (aLong2094 != -1L) {
                         synchronized(ModelDataCache.aLruByteCache_355!!) {
-                            class64 = ModelDataCache.aLruByteCache_355!!.method583(aLong2094, -92) as Class64?
+                            abstractModel = ModelDataCache.aLruByteCache_355!!.method583(aLong2094, -92) as AbstractModel?
                         }
                     }
-                    if (class64 == null || var_renderer!!.method3667(class64.ua(), i_9_) != 0) return null
+                    if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_9_) != 0) return null
                 } else {
                     val modelDefinitions = arrayOfNulls<ModelDefinition>(12)
                     for (i_40_ in 0..11) {
@@ -210,24 +210,24 @@ class CompositeNpcModelBuilder {
                     }
                     val modelDefinition = ModelDefinition(modelDefinitions, modelDefinitions.size)
                     i_36_ = i_36_ or 0x4000
-                    class64 = var_renderer!!.method3625(modelDefinition, i_36_, HeapDiagnosticsHolder.anInt2251, 64, 850)
+                    abstractModel = var_renderer!!.method3625(modelDefinition, i_36_, HeapDiagnosticsHolder.anInt2251, 64, 850)
                     for (i_49_ in 0..4) {
                         var i_50_ = 0
                         while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_50_)) {
-                            if ((Class367_Sub2.aShortArrayArrayArray7290!![i_50_]!![i_49_])!!.size > this.anIntArray2095!![i_49_]) class64.ia((SpriteLoadValidator.aShortArrayArray4791!![i_50_]!![i_49_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_50_]!![i_49_]!![(this.anIntArray2095!![i_49_])]))
+                            if ((Class367_Sub2.aShortArrayArrayArray7290!![i_50_]!![i_49_])!!.size > this.anIntArray2095!![i_49_]) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_50_]!![i_49_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_50_]!![i_49_]!![(this.anIntArray2095!![i_49_])]))
                             i_50_++
                         }
                     }
                     if (bool) {
-                        class64.s(i_9_)
+                        abstractModel.s(i_9_)
                         synchronized(ModelDataCache.aLruByteCache_355!!) {
-                            ModelDataCache.aLruByteCache_355!!.method582(class64, l, (-98).toByte())
+                            ModelDataCache.aLruByteCache_355!!.method582(abstractModel, l, (-98).toByte())
                         }
                         aLong2094 = l
                     }
                 }
             }
-            val class64_51_ = class64.method614(4.toByte(), i_9_, bool_2_)
+            val class64_51_ = abstractModel.method614(4.toByte(), i_9_, bool_2_)
             var bool_52_ = false
             if (`is` != null) {
                 for (i_53_ in 0..11) {
@@ -321,7 +321,7 @@ class CompositeNpcModelBuilder {
         method1234(-78)
     }
 
-    fun method1230(modelHeaderCache: ModelHeaderCache?, i: Int, class87: Class87?, modelDefinitionLoader: ModelDefinitionLoader?, interface17: Interface17?, bufferedMessageQueue: BufferedMessageQueue?, i_66_: Int, i_67_: Int, i_68_: Int, widgetDefinition: WidgetDefinition?, i_69_: Int, var_renderer: Renderer?): Class64? {
+    fun method1230(modelHeaderCache: ModelHeaderCache?, i: Int, class87: Class87?, modelDefinitionLoader: ModelDefinitionLoader?, interface17: Interface17?, bufferedMessageQueue: BufferedMessageQueue?, i_66_: Int, i_67_: Int, i_68_: Int, widgetDefinition: WidgetDefinition?, i_69_: Int, var_renderer: Renderer?): AbstractModel? {
         try {
             anInt2107++
             if (this.anInt2093 != -1) return (bufferedMessageQueue!!.method2079(this.anInt2093, -1).method803(interface17, var_renderer, i_69_, i_67_, widgetDefinition, class87, i_66_, 121, i_68_))
@@ -363,12 +363,12 @@ class CompositeNpcModelBuilder {
                 if (bool_73_) i_70_ = i_70_ or 0x400
             }
             if (i != -402058072) aLong2094 = -101L
-            var class64: Class64?
+            var abstractModel: AbstractModel?
             synchronized(ModelBatchBase.aLruByteCache_1894!!) {
-                class64 = ModelBatchBase.aLruByteCache_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as Class64?
+                abstractModel = ModelBatchBase.aLruByteCache_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as AbstractModel?
             }
-            if (class64 == null || var_renderer!!.method3667(class64.ua(), i_70_) != 0) {
-                if (class64 != null) i_70_ = var_renderer!!.method3679(i_70_, class64.ua())
+            if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_70_) != 0) {
+                if (abstractModel != null) i_70_ = var_renderer!!.method3679(i_70_, abstractModel.ua())
                 var i_80_ = i_70_
                 var bool = false
                 for (i_81_ in 0..11) {
@@ -394,22 +394,22 @@ class CompositeNpcModelBuilder {
                 }
                 i_80_ = i_80_ or 0x4000
                 val modelDefinition = ModelDefinition(modelDefinitions, i_83_)
-                class64 = var_renderer!!.method3625(modelDefinition, i_80_, HeapDiagnosticsHolder.anInt2251, 64, 768)
+                abstractModel = var_renderer!!.method3625(modelDefinition, i_80_, HeapDiagnosticsHolder.anInt2251, 64, 768)
                 for (i_86_ in 0..4) {
                     var i_87_ = 0
                     while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_87_)) {
-                        if (this.anIntArray2095!![i_86_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_87_]!![i_86_])!!.size) class64.ia((SpriteLoadValidator.aShortArrayArray4791!![i_87_]!![i_86_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_87_]!![i_86_]!![(this.anIntArray2095!![i_86_])]))
+                        if (this.anIntArray2095!![i_86_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_87_]!![i_86_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_87_]!![i_86_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_87_]!![i_86_]!![(this.anIntArray2095!![i_86_])]))
                         i_87_++
                     }
                 }
-                class64.s(i_70_)
+                abstractModel.s(i_70_)
                 synchronized(ModelBatchBase.aLruByteCache_1894!!) {
-                    ModelBatchBase.aLruByteCache_1894!!.method582(class64, aLong2102, (-97).toByte())
+                    ModelBatchBase.aLruByteCache_1894!!.method582(abstractModel, aLong2102, (-97).toByte())
                 }
             }
-            if (widgetDefinition == null) return class64
-            var class64_88_ = class64.method614(4.toByte(), i_70_, true)
-            class64_88_ = widgetDefinition.method269(123, class64, i_67_, i_69_, i_68_, i_66_)
+            if (widgetDefinition == null) return abstractModel
+            var class64_88_ = abstractModel.method614(4.toByte(), i_70_, true)
+            class64_88_ = widgetDefinition.method269(123, abstractModel, i_67_, i_69_, i_68_, i_66_)
             return class64_88_
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(
@@ -427,7 +427,7 @@ class CompositeNpcModelBuilder {
         }
     }
 
-    fun method1232(i: Int, i_91_: Int, i_92_: Int, i_93_: Int, class87: Class87?, modelDefinitionLoader: ModelDefinitionLoader?, i_94_: Int, i_95_: Int, i_96_: Int, var_renderer: Renderer?, i_97_: Int, widgetDefinition: WidgetDefinition?): Class64? {
+    fun method1232(i: Int, i_91_: Int, i_92_: Int, i_93_: Int, class87: Class87?, modelDefinitionLoader: ModelDefinitionLoader?, i_94_: Int, i_95_: Int, i_96_: Int, var_renderer: Renderer?, i_97_: Int, widgetDefinition: WidgetDefinition?): AbstractModel? {
         try {
             anInt2106++
             var i_98_ = i_91_
@@ -470,12 +470,12 @@ class CompositeNpcModelBuilder {
                 if (bool_101_) i_98_ = i_98_ or 0x400
             }
             val l = i_95_.toLong() or ((i_93_ shl 16).toLong() or (i_92_.toLong() shl 32))
-            var class64: Class64?
+            var abstractModel: AbstractModel?
             synchronized(ModelBatchBase.aLruByteCache_1894!!) {
-                class64 = ModelBatchBase.aLruByteCache_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as Class64?
+                abstractModel = ModelBatchBase.aLruByteCache_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as AbstractModel?
             }
-            if (class64 == null || var_renderer!!.method3667(class64.ua(), i_98_) != 0) {
-                if (class64 != null) i_98_ = var_renderer!!.method3679(i_98_, class64.ua())
+            if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_98_) != 0) {
+                if (abstractModel != null) i_98_ = var_renderer!!.method3679(i_98_, abstractModel.ua())
                 var i_108_ = i_98_
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(3)
                 var i_109_ = 0
@@ -488,24 +488,24 @@ class CompositeNpcModelBuilder {
                 if (class124 != null) modelDefinitions[i_109_++] = class124
                 class124 = ModelDefinition(modelDefinitions, i_109_)
                 i_108_ = i_108_ or 0x4000
-                class64 = var_renderer!!.method3625(class124, i_108_, HeapDiagnosticsHolder.anInt2251, 64, 768)
+                abstractModel = var_renderer!!.method3625(class124, i_108_, HeapDiagnosticsHolder.anInt2251, 64, 768)
                 for (i_110_ in 0..4) {
                     var i_111_ = 0
                     while ((i_111_ < Class367_Sub2.aShortArrayArrayArray7290!!.size)) {
-                        if (this.anIntArray2095!![i_110_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_111_]!![i_110_])!!.size) class64.ia((SpriteLoadValidator.aShortArrayArray4791!![i_111_]!![i_110_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_111_]!![i_110_]!![(this.anIntArray2095!![i_110_])]))
+                        if (this.anIntArray2095!![i_110_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_111_]!![i_110_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_111_]!![i_110_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_111_]!![i_110_]!![(this.anIntArray2095!![i_110_])]))
                         i_111_++
                     }
                 }
-                class64.s(i_98_)
+                abstractModel.s(i_98_)
                 synchronized(ModelBatchBase.aLruByteCache_1894!!) {
-                    ModelBatchBase.aLruByteCache_1894!!.method582(class64, l, (-109).toByte())
+                    ModelBatchBase.aLruByteCache_1894!!.method582(abstractModel, l, (-109).toByte())
                 }
             }
-            if (widgetDefinition == null) return class64
+            if (widgetDefinition == null) return abstractModel
             if (i_94_ != -15331) return null
-            class64 = class64.method614(4.toByte(), i_98_, true)
-            class64 = widgetDefinition.method269(-32, class64!!, i, i_96_, i_91_, i_97_)
-            return class64
+            abstractModel = abstractModel.method614(4.toByte(), i_98_, true)
+            abstractModel = widgetDefinition.method269(-32, abstractModel!!, i, i_96_, i_91_, i_97_)
+            return abstractModel
         } catch (runtimeexception: RuntimeException) {
             throw SoundBankPatch.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (class87 != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
         }

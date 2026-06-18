@@ -76,7 +76,7 @@ abstract class CacheEntryReference internal constructor(@JvmField var anInt9545:
             }
             ProjectileFactory.aBoolean2895 = false
             TextureGenerator.aString2496 = ""
-            Class64_Sub3.aString5600 = TextureGenerator.aString2496
+            OpenGlModel.aString5600 = TextureGenerator.aString2496
             RenderableGroup.method1448(-56)
             Tooltip.anInt4458 = -1
             CacheArchiveIndexLoader.method338(i + 45, StreamingResourceRequest.anInt10447)

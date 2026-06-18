@@ -348,15 +348,15 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         }
 
         @JvmStatic
-        fun method1935(i: Int, i_10_: Int, circleHitbox: CircleHitbox?, class64: Class64?, bool: Boolean, i_11_: Int) {
+        fun method1935(i: Int, i_10_: Int, circleHitbox: CircleHitbox?, abstractModel: AbstractModel?, bool: Boolean, i_11_: Int) {
             try {
                 anInt3270++
-                if (class64 != null) {
+                if (abstractModel != null) {
                     if (bool != false) method1929(106.toByte())
-                    circleHitbox!!.method320(class64.EA(), class64.fa(), (-4).toByte(), i_11_, class64.na(), i, class64.V(), class64.G(), class64.HA(), i_10_, class64.RA())
+                    circleHitbox!!.method320(abstractModel.EA(), abstractModel.fa(), (-4).toByte(), i_11_, abstractModel.na(), i, abstractModel.V(), abstractModel.G(), abstractModel.HA(), i_10_, abstractModel.RA())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ub.H(" + i + ',' + i_10_ + ',' + (if (circleHitbox != null) "{...}" else "null") + ',' + (if (class64 != null) "{...}" else "null") + ',' + bool + ',' + i_11_ + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("ub.H(" + i + ',' + i_10_ + ',' + (if (circleHitbox != null) "{...}" else "null") + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + bool + ',' + i_11_ + ')'))
             }
         }
 

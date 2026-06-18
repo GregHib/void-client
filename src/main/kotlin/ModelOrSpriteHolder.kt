@@ -7,7 +7,7 @@ class ModelOrSpriteHolder {
     @JvmField
     var aRenderNode118: RenderNode? = null
     @JvmField
-    var aClass64_119: Class64? = null
+    var aAbstractModel_119: AbstractModel? = null
 
     companion object {
         @JvmField

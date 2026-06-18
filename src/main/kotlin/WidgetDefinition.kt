@@ -190,7 +190,7 @@ class WidgetDefinition {
         }
     }
 
-    fun method266(class64: Class64, i: Int, i_27_: Int, i_28_: Byte, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int): Class64? {
+    fun method266(abstractModel: AbstractModel, i: Int, i_27_: Int, i_28_: Byte, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int): AbstractModel? {
         var i_27_ = i_27_
         var i_29_ = i_29_
         var i_32_ = i_32_
@@ -199,7 +199,7 @@ class WidgetDefinition {
         i_29_ = this.anIntArray237[i_29_]
         val class348_sub42_sub17 = this.aClass87_251!!.method839(i_29_ shr 16, 3)
         i_29_ = i_29_ and 0xffff
-        if (class348_sub42_sub17 == null) return class64.method614(i_28_, i_32_, true)
+        if (class348_sub42_sub17 == null) return abstractModel.method614(i_28_, i_32_, true)
         var class348_sub42_sub17_34_: TextureMaterialGroup? = null
         if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_27_ != -1 && this.anIntArray237.size > i_27_) {
             i_27_ = this.anIntArray237[i_27_]
@@ -217,7 +217,7 @@ class WidgetDefinition {
         }
         i_32_ = i_32_ or 0x20
         if (i_31_ != 663780816) this.anInt261 = -72
-        val class64_35_ = class64.method614(i_28_, i_32_, true)
+        val class64_35_ = abstractModel.method614(i_28_, i_32_, true)
         class64_35_!!.method617(i_29_, i_33_, class348_sub42_sub17_34_, i, class348_sub42_sub17, false, this.aBoolean242, i_27_, i_30_ + -1)
         return class64_35_
     }
@@ -232,7 +232,7 @@ class WidgetDefinition {
         if (bool != false) this.anIntArray267 = null
     }
 
-    fun method269(i: Int, class64: Class64, i_50_: Int, i_51_: Int, i_52_: Int, i_53_: Int): Class64? {
+    fun method269(i: Int, abstractModel: AbstractModel, i_50_: Int, i_51_: Int, i_52_: Int, i_53_: Int): AbstractModel? {
         var i_50_ = i_50_
         var i_52_ = i_52_
         anInt246++
@@ -240,7 +240,7 @@ class WidgetDefinition {
         var i_55_ = this.anIntArray237[i_53_]
         val class348_sub42_sub17 = this.aClass87_251!!.method839(i_55_ shr 16, 3)
         i_55_ = i_55_ and 0xffff
-        if (class348_sub42_sub17 == null) return class64.method614(1.toByte(), i_52_, true)
+        if (class348_sub42_sub17 == null) return abstractModel.method614(1.toByte(), i_52_, true)
         var class348_sub42_sub17_56_: TextureMaterialGroup? = null
         if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_50_ != -1 && this.anIntArray237.size > i_50_) {
             i_50_ = this.anIntArray237[i_50_]
@@ -287,7 +287,7 @@ class WidgetDefinition {
             if (class348_sub42_sub17_58_.method3267((-109).toByte(), i_60_)) i_52_ = i_52_ or 0x400
         }
         i_52_ = i_52_ or 0x20
-        val class64_61_ = class64.method614(1.toByte(), i_52_, true)
+        val class64_61_ = abstractModel.method614(1.toByte(), i_52_, true)
         val i_62_ = -33 / ((49 - i) / 45)
         class64_61_!!.method617(i_55_, i_54_, class348_sub42_sub17_56_, 0, class348_sub42_sub17, false, this.aBoolean242, i_50_, -1 + i_51_)
         if (class348_sub42_sub17_57_ != null) class64_61_.method617(i_59_, i_54_, class348_sub42_sub17_58_, 0, class348_sub42_sub17_57_, false, this.aBoolean242, i_60_, -1 + i_51_)

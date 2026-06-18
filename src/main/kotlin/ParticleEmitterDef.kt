@@ -1,7 +1,7 @@
 import ProjectileFactory.Companion.method1613
 import Texture2DProvider.Companion.method2259
 import LinkedListNode.Companion.method2709
-import Class64.Companion.method616
+import AbstractModel.Companion.method616
 
 /* Class288 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

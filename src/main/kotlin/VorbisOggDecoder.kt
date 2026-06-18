@@ -104,11 +104,11 @@ class VorbisOggDecoder internal constructor(oggstreamstate: OggStreamState) : Og
         @JvmField
         var anInt9004: Int = 0
         @JvmStatic
-        fun method2967(i: Int, class64: Class64?, i_0_: Int, i_1_: Int, i_2_: Int): CircleHitbox? {
+        fun method2967(i: Int, abstractModel: AbstractModel?, i_0_: Int, i_1_: Int, i_2_: Int): CircleHitbox? {
             anInt8991++
             if (i_2_ != 2) aByteArrayArray8996 = null
-            if (class64 == null) return null
-            val circleHitbox = CircleHitbox(i, i_1_, i_0_, class64.na(), class64.V(), class64.RA(), class64.fa(), class64.EA(), class64.HA(), class64.G())
+            if (abstractModel == null) return null
+            val circleHitbox = CircleHitbox(i, i_1_, i_0_, abstractModel.na(), abstractModel.V(), abstractModel.RA(), abstractModel.fa(), abstractModel.EA(), abstractModel.HA(), abstractModel.G())
             return circleHitbox
         }
 

@@ -14,7 +14,7 @@ import jaggl.OpenGL.Companion.glColor4ub
 import OpenGlTerrainTile.Companion.method3999
 import kotlin.math.sqrt
 
-class Class64_Sub3 : Class64 {
+class OpenGlModel : AbstractModel {
     private var aBoolean5527: Boolean
     private var anIntArray5528: IntArray? = null
     private var anInt5529: Int
@@ -87,10 +87,10 @@ class Class64_Sub3 : Class64 {
         aBoolean5527 = false
     }
 
-    public override fun method614(i: Byte, i_4_: Int, bool: Boolean): Class64 {
+    public override fun method614(i: Byte, i_4_: Int, bool: Boolean): AbstractModel {
         anInt5615++
-        val class64_sub3_5_: Class64_Sub3?
-        val class64_sub3_6_: Class64_Sub3?
+        val class64_sub3_5_: OpenGlModel?
+        val class64_sub3_6_: OpenGlModel?
         if (i.toInt() == 1) {
             class64_sub3_6_ = aHa_Sub2_5598!!.aClass64_Sub3_7864
             class64_sub3_5_ = aHa_Sub2_5598.aClass64_Sub3_7780
@@ -107,7 +107,7 @@ class Class64_Sub3 : Class64 {
             class64_sub3_6_ = aHa_Sub2_5598!!.aClass64_Sub3_7840
             class64_sub3_5_ = aHa_Sub2_5598.aClass64_Sub3_7785
         } else {
-            class64_sub3_5_ = Class64_Sub3(aHa_Sub2_5598)
+            class64_sub3_5_ = OpenGlModel(aHa_Sub2_5598)
             class64_sub3_6_ = class64_sub3_5_
         }
         return method686(class64_sub3_6_, i_4_, 0, bool, class64_sub3_5_, i.toInt() != 0)
@@ -245,10 +245,10 @@ class Class64_Sub3 : Class64 {
         return true
     }
 
-    public override fun method613(class64: Class64?, i: Int, i_42_: Int, i_43_: Int, bool: Boolean) {
+    public override fun method613(abstractModel: AbstractModel?, i: Int, i_42_: Int, i_43_: Int, bool: Boolean) {
         try {
             anInt5589++
-            val class64_sub3_44_ = class64 as Class64_Sub3
+            val class64_sub3_44_ = abstractModel as OpenGlModel
             if (anInt5632 != 0 && class64_sub3_44_.anInt5632 != 0) {
                 val i_45_ = class64_sub3_44_.anInt5557
                 val `is` = class64_sub3_44_.anIntArray5543
@@ -400,7 +400,7 @@ class Class64_Sub3 : Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.PA(" + (if (class64 != null) "{...}" else "null") + ',' + i + ',' + i_42_ + ',' + i_43_ + ',' + bool + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("paa.PA(" + (if (abstractModel != null) "{...}" else "null") + ',' + i + ',' + i_42_ + ',' + i_43_ + ',' + bool + ')'))
         }
     }
 
@@ -817,7 +817,7 @@ class Class64_Sub3 : Class64 {
         anInt5613++
     }
 
-    private fun method686(class64_sub3_211_: Class64_Sub3?, i: Int, i_212_: Int, bool: Boolean, class64_sub3_213_: Class64_Sub3?, bool_214_: Boolean): Class64 {
+    private fun method686(class64_sub3_211_: OpenGlModel?, i: Int, i_212_: Int, bool: Boolean, class64_sub3_213_: OpenGlModel?, bool_214_: Boolean): AbstractModel {
         try {
             anInt5628++
             class64_sub3_211_!!.anInt5642 = anInt5642

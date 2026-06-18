@@ -63,8 +63,8 @@ import SpriteComponent.Companion.method199
 import SpriteComponent.Companion.method201
 import GameClock.method596
 import GameClock.method599
-import Class64.Companion.method606
-import Class64_Sub3.Companion.method690
+import AbstractModel.Companion.method606
+import OpenGlModel.Companion.method690
 import Sprite.Companion.method160
 import TerrainTile.Companion.method3985
 import java.awt.datatransfer.DataFlavor
@@ -1276,7 +1276,7 @@ object Class66 {
                 val string_142_ = aStringArray1152!![anInt1170 + 1]
                 val i_143_ = anIntArray1149!![--anInt1173]
                 if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
-                    Class64_Sub3.aString5600 = string
+                    OpenGlModel.aString5600 = string
                     TextureGenerator.aString2496 = string_142_
                     RuntimeException_Sub1.anInt4596 = i_143_
                     Buffer.method3379(2, 6)
@@ -1358,7 +1358,7 @@ object Class66 {
                         PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
                         PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
                     }
-                    Class64_Sub3.aString5600 = string
+                    OpenGlModel.aString5600 = string
                     TextureGenerator.aString2496 = string_145_
                     Buffer.method3379(2, 5)
                     return
@@ -2314,8 +2314,8 @@ object Class66 {
             } else if (i < 7100) {
                 if (i == 7000) {
                     val i_221_ = method2478(1000)
-                    Class64_Sub3.anInt5584 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
-                    anIntArray1149!![anInt1173++] = Class64_Sub3.anInt5584
+                    OpenGlModel.anInt5584 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
+                    anIntArray1149!![anInt1173++] = OpenGlModel.anInt5584
                     anIntArray1149!![anInt1173++] = i_221_
                     TextureTileRenderer.method2953((-113).toByte())
                     method243(37)
@@ -2357,11 +2357,11 @@ object Class66 {
                     return
                 }
                 if (i == 7006) {
-                    if (Class64_Sub3.anInt5584 == 2) ScreenAnchorAlignment.aBoolean2881 = true
+                    if (OpenGlModel.anInt5584 == 2) ScreenAnchorAlignment.aBoolean2881 = true
                     else {
-                        if (Class64_Sub3.anInt5584 == 1) VideoStreamDecoder.aBoolean4117 = true
+                        if (OpenGlModel.anInt5584 == 1) VideoStreamDecoder.aBoolean4117 = true
                         else {
-                            if (Class64_Sub3.anInt5584 == 3) AbstractTileShape.aBoolean6558 = true
+                            if (OpenGlModel.anInt5584 == 3) AbstractTileShape.aBoolean6558 = true
                             return
                         }
                         return
@@ -2976,7 +2976,7 @@ object Class66 {
                     if (class17 != null) CompassSmoother.method2017(widgetComponent.anInt795, class17, 46)
                     ConfigFlagUtil.method1916(-9343, widgetComponent)
                 }
-                if (widgetComponent.anInt704 == -1) Class64_Sub3.method687((-117).toByte(), widgetComponent.anInt830)
+                if (widgetComponent.anInt704 == -1) OpenGlModel.method687((-117).toByte(), widgetComponent.anInt830)
                 return
             }
             if (i == 1111) {
@@ -4984,7 +4984,7 @@ object Class66 {
                 }
             } else if (i < 4700 && i == 4600) {
                 val i_484_ = anIntArray1149!![--anInt1173]
-                val class225 = Class64_Sub3.aNpcDefinitionCache_5558!!.method1983(i_484_, 32)
+                val class225 = OpenGlModel.aNpcDefinitionCache_5558!!.method1983(i_484_, 32)
                 if (class225.anIntArray2915 != null && class225.anIntArray2915!!.size > 0) {
                     var i_485_ = 0
                     var i_486_ = class225.anIntArray2929!![0]

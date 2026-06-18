@@ -175,7 +175,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
     @JvmField
     var anInt10322: Int
     @JvmField
-    var aClass64Array10323: Array<Class64?>
+    var aAbstractModelArray10323: Array<AbstractModel?>
     @JvmField
     var aBoolean10324: Boolean
     @JvmField
@@ -191,7 +191,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         if (i.toInt() != 72) method2438(-88, 93, -127, 68, 7, -76, 116, 122.toByte())
         anInt10249++
         val i_1_ = method2421(127.toByte())
-        if (i_1_ != -1) return Class64_Sub3.aNpcDefinitionCache_5558!!.method1983(i_1_, 32)
+        if (i_1_ != -1) return OpenGlModel.aNpcDefinitionCache_5558!!.method1983(i_1_, 32)
         return NpcDefinition.aNpcDefinition_2931!!
     }
 
@@ -368,15 +368,15 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         } while (false)
     }
 
-    fun method2432(var_renderer: Renderer?, i: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, class64s: Array<Class64?>?) {
+    fun method2432(var_renderer: Renderer?, i: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, abstractModels: Array<AbstractModel?>?) {
         do {
             try {
                 if (i == -15074) {
                     anInt10256++
                     if (!bool) {
-                        val class64 = class64s!![0]
-                        val class64_65_ = class64s[1]
-                        val class64_66_ = class64s[2]
+                        val class64 = abstractModels!![0]
+                        val class64_65_ = abstractModels[1]
+                        val class64_66_ = abstractModels[2]
                         if (class64 != null) {
                             class64.method620(abstractCameraTransform)
                             var i_67_ = 0
@@ -470,7 +470,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                     this.aClass318_Sub10_10327!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("kda.L(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + (if (class64s != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("kda.L(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + (if (abstractModels != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -654,21 +654,21 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         }
     }
 
-    fun method2439(i: Int, class64: Class64?) {
+    fun method2439(i: Int, abstractModel: AbstractModel?) {
         try {
             anInt10205++
             val i_115_ = aCompassSmoother_10315.anInt3370
             if (i >= -110) this.anInt10325 = 90
             val i_116_ = aCompassSmoother_10316.anInt3370
             if (i_115_ != 0 || i_116_ != 0) {
-                val i_117_ = class64!!.fa() / 2
-                class64.H(0, -i_117_, 0)
-                class64.VA(0x3fff and i_115_)
-                class64.FA(0x3fff and i_116_)
-                class64.H(0, i_117_, 0)
+                val i_117_ = abstractModel!!.fa() / 2
+                abstractModel.H(0, -i_117_, 0)
+                abstractModel.VA(0x3fff and i_115_)
+                abstractModel.FA(0x3fff and i_116_)
+                abstractModel.H(0, i_117_, 0)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("kda.GB(" + i + ',' + (if (class64 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("kda.GB(" + i + ',' + (if (abstractModel != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -720,7 +720,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         this.aBoolean10324 = false
         this.aByteArray10321 = ByteArray(10)
         this.anInt10325 = 0
-        this.aClass64Array10323 = arrayOfNulls<Class64>(3)
+        this.aAbstractModelArray10323 = arrayOfNulls<AbstractModel>(3)
         this.anInt10319 = 0
         this.anIntArray10320 = IntArray(10)
         this.anInt10326 = 0

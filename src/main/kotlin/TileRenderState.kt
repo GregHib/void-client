@@ -127,8 +127,8 @@ class TileRenderState {
                         val player = (LoadingBarRenderer.aPlayerArray5058!![i_12_])
                         if (player != null) {
                             var i_13_ = 0
-                            while (((player.aClass64Array10323).size > i_13_)) {
-                                player.aClass64Array10323[i_13_] = null
+                            while (((player.aAbstractModelArray10323).size > i_13_)) {
+                                player.aAbstractModelArray10323[i_13_] = null
                                 i_13_++
                             }
                         }
@@ -136,7 +136,7 @@ class TileRenderState {
                     for (i_14_ in 0..<TerrainShadowBuilderGl2.anInt6930) {
                         val npc = (TurbulenceTextureNode.aClass348_Sub22Array9319!![i_14_]!!.aNpc_6859)
                         if (npc != null) {
-                            for (i_15_ in (npc.aClass64Array10323).indices) npc.aClass64Array10323[i_15_] = null
+                            for (i_15_ in (npc.aAbstractModelArray10323).indices) npc.aAbstractModelArray10323[i_15_] = null
                         }
                     }
                     MinimapSquareDrawer.aAbstractCameraTransform_5209 = null
