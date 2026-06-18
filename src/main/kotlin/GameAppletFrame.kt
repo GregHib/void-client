@@ -541,7 +541,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
         @JvmStatic
         fun set(string: String) {
-            Class363.aString4461 = string
+            MapElementManager.aString4461 = string
             TerrainShadowBuilderGl3.anInt7006 = string.length
         }
 

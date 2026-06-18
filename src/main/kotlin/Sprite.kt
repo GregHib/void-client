@@ -23,12 +23,12 @@ abstract class Sprite {
                 var i_2_ = 0
                 while (ArbFogMaterialPass.aStringArray6200!!.size > i_2_) {
                     if (ArbFogMaterialPass.aStringArray6200!![i_2_]!!.indexOf("--> ") != -1 && ++i_1_ == WalkingTypeUtil.anInt3312) {
-                        Class363.aString4461 = (ArbFogMaterialPass.aStringArray6200!![i_2_]!!.substring(2 + ArbFogMaterialPass.aStringArray6200!![i_2_]!!.indexOf(">")))
+                        MapElementManager.aString4461 = (ArbFogMaterialPass.aStringArray6200!![i_2_]!!.substring(2 + ArbFogMaterialPass.aStringArray6200!![i_2_]!!.indexOf(">")))
                         break
                     }
                     i_2_++
                 }
-            } else Class363.aString4461 = ""
+            } else MapElementManager.aString4461 = ""
             if (i != -615751774) aLinkedQueueNode_114 = null
             anInt115++
         }

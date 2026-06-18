@@ -421,7 +421,7 @@ import CollisionMap.Companion.method3502
 import CollisionMap.Companion.method3508
 import Tooltip.method3511
 import Tooltip.method3512
-import Class363.method3516
+import MapElementManager.method3516
 import Class365.Companion.method3518
 import Class367_Sub10.Companion.method3553
 import Class367_Sub10.Companion.method3554

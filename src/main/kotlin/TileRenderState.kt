@@ -115,7 +115,7 @@ class TileRenderState {
                     method2433()
                     method464(i + -9865)
                     method2061(-127)
-                    Class363.method3513(-113)
+                    MapElementManager.method3513(-113)
                     method1779(124.toByte())
                     if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2295(96.toByte())
                     method2269(true)

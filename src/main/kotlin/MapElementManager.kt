@@ -3,7 +3,7 @@ import ScanlineRasterFiller.Companion.method1387
 /* Class363 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class363 {
+object MapElementManager {
     var aString4461: String? = ""
     var anInt4462: Int = 0
     var anIntArray4463: IntArray? = IntArray(8)

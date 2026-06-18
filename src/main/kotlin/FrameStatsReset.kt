@@ -184,7 +184,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class58.anInt1066 = 0
             ParameterizedText.anInt9560 = 0
             Class376.anInt4553 = 0
-            Class363.anInt4465 = 0
+            MapElementManager.anInt4465 = 0
             DragDropController.anInt4280 = 0
             CameraDistanceOptionState.anInt5854 = 0
             PcmStreamBuffer.anInt8881 = 0
@@ -1359,7 +1359,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TimedRecordAccessorB.anInt9738 = 0
             OpenGlRenderer.anInt7548 = 0
             TextureMapImageNode.anInt9378 = 0
-            Class363.anInt4462 = 0
+            MapElementManager.anInt4462 = 0
             GlBufferObject.anInt4757 = 0
             Class59_Sub2_Sub1.anInt8671 = 0
             ParticleAmountCache.anInt2847 = 0
@@ -2707,7 +2707,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class97.anInt1549 = 0
             MatrixCameraTransform.anInt5688 = 0
             ParameterizedText.anInt9576 = 0
-            Class363.anInt4464 = 0
+            MapElementManager.anInt4464 = 0
             Class38.anInt505 = 0
             TypedRecordTable.anInt3694 = 0
             ItemDefinition.anInt2754 = 0
@@ -4162,7 +4162,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
                 DelegatingRenderCanvas.anIntArray60!![i1] = -1
             }
 
-            Class363.method3515(-45)
+            MapElementManager.method3515(-45)
             SocketGameConnection.aBoolean5840 = true
             for (j1 in 0..99) GzipDecompressor.aBooleanArray2076!![j1] = true
 

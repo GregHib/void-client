@@ -80,7 +80,7 @@ class WidgetRedrawTracker {
                     if (npc != null) npc.anInt10275 = -1
                     i_1_++
                 }
-                Class363.method3515(i + 36)
+                MapElementManager.method3515(i + 36)
                 SequencedWallEntity.anInt10163 = -1
                 Class9.anInt167 = SequencedWallEntity.anInt10163
                 WeaveTextureNode.anInt9282 = 1

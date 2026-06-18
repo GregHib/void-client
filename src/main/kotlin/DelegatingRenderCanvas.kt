@@ -329,7 +329,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                     EdgeDetectTextureNode.method3072((-99).toByte())
                     method3570(false)
-                    Class363.method3514((-105).toByte())
+                    MapElementManager.method3514((-105).toByte())
                     InterfaceBounds.method2938(62.toByte())
                     FrameStatsReset.method1131(99)
                     if (Class52.aFrame4904 != null && PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null && WorldMapRenderer.anInt4674 == 11) {

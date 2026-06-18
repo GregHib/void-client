@@ -41,11 +41,11 @@ class ChatScriptListNode internal constructor(var aClass318_Sub1_Sub3_Sub4_9538:
                             CubemapTexture2dSource.aLong8694 = (i_5_ * 1000).toLong() + method599(-104)
                             break
                         }
-                        Class363.aString4461 = strings[i_4_]
+                        MapElementManager.aString4461 = strings[i_4_]
                         method555(false, 0)
                     }
                 } else {
-                    Class363.aString4461 += strings[0]
+                    MapElementManager.aString4461 += strings[0]
                     TerrainShadowBuilderGl3.anInt7006 += strings[0]!!.length
                 }
             }

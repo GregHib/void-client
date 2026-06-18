@@ -190,12 +190,12 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
         @JvmStatic
         fun method555(bool: Boolean, i: Int) {
             anInt5286++
-            if (i != Class363.aString4461!!.length) {
-                Class82.method812(Class363.aString4461, false, bool, (-79).toByte())
+            if (i != MapElementManager.aString4461!!.length) {
+                Class82.method812(MapElementManager.aString4461, false, bool, (-79).toByte())
                 if (!bool) {
-                    method94("--> " + Class363.aString4461, 110)
+                    method94("--> " + MapElementManager.aString4461, 110)
                     TerrainShadowBuilderGl3.anInt7006 = 0
-                    Class363.aString4461 = ""
+                    MapElementManager.aString4461 = ""
                     WalkingTypeUtil.anInt3312 = 0
                 }
             }

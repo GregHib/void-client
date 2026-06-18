@@ -879,7 +879,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 }
                 CalendarUtil.anInt4135 = 0
             }
-            Class363.method3513(-120)
+            MapElementManager.method3513(-120)
             Class71.aClass76_1208 = Class71.aClass76_1210
             Class71.aClass76_1208!!.method775(69.toByte())
             HashTileShape.aByteArrayArray8816 = null

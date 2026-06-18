@@ -129,7 +129,7 @@ class Class38 {
                         CubemapTexture2dSource.aLong8694 = (1000 * i_5_).toLong() + Class62.method599(-97)
                         return
                     } else {
-                        Class363.aString4461 = Class50_Sub1.aStringArray5223!![i_4_]
+                        MapElementManager.aString4461 = Class50_Sub1.aStringArray5223!![i_4_]
                         Class59_Sub1.method555(false, 0)
                     }
                 }
@@ -161,8 +161,8 @@ class Class38 {
                             if (parts.size == 2 && parts[1]!!.startsWith("-->")) {
                                 if (index > HISTORY_INDEX) {
                                     HISTORY_INDEX = index
-                                    Class363.aString4461 = parts[1]!!.substring(4)
-                                    TerrainShadowBuilderGl3.anInt7006 = Class363.aString4461!!.length
+                                    MapElementManager.aString4461 = parts[1]!!.substring(4)
+                                    TerrainShadowBuilderGl3.anInt7006 = MapElementManager.aString4461!!.length
                                     break
                                 }
                             }
@@ -177,14 +177,14 @@ class Class38 {
                             val parts: Array<String?> = line.split(": ".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
                             if (parts.size == 2 && parts[1]!!.startsWith("-->")) {
                                 HISTORY_INDEX = index
-                                Class363.aString4461 = parts[1]!!.substring(4)
-                                TerrainShadowBuilderGl3.anInt7006 = Class363.aString4461!!.length
+                                MapElementManager.aString4461 = parts[1]!!.substring(4)
+                                TerrainShadowBuilderGl3.anInt7006 = MapElementManager.aString4461!!.length
                                 found = true
                                 break
                             }
                         }
                         if (!found) {
-                            Class363.aString4461 = ""
+                            MapElementManager.aString4461 = ""
                             TerrainShadowBuilderGl3.anInt7006 = 0
                         }
                     } else if (i_7_ == 84) {
@@ -201,55 +201,55 @@ class Class38 {
                             }
                         } else if (i_7_ != 67 || (0x4 and i_8_) == 0) {
                             if (i_7_ != 85 || TerrainShadowBuilderGl3.anInt7006 <= 0) {
-                                if (i_7_ == 101 && (TerrainShadowBuilderGl3.anInt7006 < Class363.aString4461!!.length)) {
+                                if (i_7_ == 101 && (TerrainShadowBuilderGl3.anInt7006 < MapElementManager.aString4461!!.length)) {
                                     if ((0x4 and i_8_) == 0) {
-                                        Class363.aString4461 = ((Class363.aString4461!!.substring(0, TerrainShadowBuilderGl3.anInt7006)) + (Class363.aString4461!!.substring(TerrainShadowBuilderGl3.anInt7006 - -1)))
+                                        MapElementManager.aString4461 = ((MapElementManager.aString4461!!.substring(0, TerrainShadowBuilderGl3.anInt7006)) + (MapElementManager.aString4461!!.substring(TerrainShadowBuilderGl3.anInt7006 - -1)))
                                     } else {
-                                        var index = Class363.aString4461!!.indexOf(' ', TerrainShadowBuilderGl3.anInt7006 + 1)
+                                        var index = MapElementManager.aString4461!!.indexOf(' ', TerrainShadowBuilderGl3.anInt7006 + 1)
                                         if (index == -1) {
-                                            index = Class363.aString4461!!.length
+                                            index = MapElementManager.aString4461!!.length
                                         }
-                                        Class363.aString4461 = Class363.aString4461!!.substring(0, TerrainShadowBuilderGl3.anInt7006) + Class363.aString4461!!.substring(index)
+                                        MapElementManager.aString4461 = MapElementManager.aString4461!!.substring(0, TerrainShadowBuilderGl3.anInt7006) + MapElementManager.aString4461!!.substring(index)
                                     }
                                 } else if (i_7_ != 96 || TerrainShadowBuilderGl3.anInt7006 <= 0) {
-                                    if (i_7_ == 97 && (Class363.aString4461!!.length > TerrainShadowBuilderGl3.anInt7006)) {
+                                    if (i_7_ == 97 && (MapElementManager.aString4461!!.length > TerrainShadowBuilderGl3.anInt7006)) {
                                         if ((0x4 and i_8_) == 0) {
                                             TerrainShadowBuilderGl3.anInt7006++
                                         } else {
-                                            val result = Class363.aString4461!!.indexOf(' ', min(TerrainShadowBuilderGl3.anInt7006 + 1, Class363.aString4461!!.length - 1))
-                                            TerrainShadowBuilderGl3.anInt7006 = if (result == -1) Class363.aString4461!!.length else result + 1
+                                            val result = MapElementManager.aString4461!!.indexOf(' ', min(TerrainShadowBuilderGl3.anInt7006 + 1, MapElementManager.aString4461!!.length - 1))
+                                            TerrainShadowBuilderGl3.anInt7006 = if (result == -1) MapElementManager.aString4461!!.length else result + 1
                                         }
                                     } else if (i_7_ == 102) TerrainShadowBuilderGl3.anInt7006 = 0
-                                    else if (i_7_ == 103) TerrainShadowBuilderGl3.anInt7006 = Class363.aString4461!!.length
+                                    else if (i_7_ == 103) TerrainShadowBuilderGl3.anInt7006 = MapElementManager.aString4461!!.length
                                     else if (i_7_ != 104 || (WalkingTypeUtil.anInt3312 >= (ArbFogMaterialPass.aStringArray6200)!!.size)) {
                                         if (i_7_ == 105 && WalkingTypeUtil.anInt3312 > 0) {
                                             WalkingTypeUtil.anInt3312--
                                             method159(-615751774)
-                                            TerrainShadowBuilderGl3.anInt7006 = Class363.aString4461!!.length
+                                            TerrainShadowBuilderGl3.anInt7006 = MapElementManager.aString4461!!.length
                                         } else if (Npc.method2446(c, 105.toByte()) || c.code == 92 || c.code == 47 || c.code == 46 || c.code == 58 || c.code == 44 || c.code == 32 || c.code == 95 || c.code == 45 || c.code == 43 || c.code == 91 || c.code == 93) {
-                                            Class363.aString4461 = ((Class363.aString4461!!.substring(0, TerrainShadowBuilderGl3.anInt7006)) + ProceduralTextureGraph.anInterface6Array9534!![i_6_]!!.method28(23.toByte()) + (Class363.aString4461!!.substring(TerrainShadowBuilderGl3.anInt7006)))
+                                            MapElementManager.aString4461 = ((MapElementManager.aString4461!!.substring(0, TerrainShadowBuilderGl3.anInt7006)) + ProceduralTextureGraph.anInterface6Array9534!![i_6_]!!.method28(23.toByte()) + (MapElementManager.aString4461!!.substring(TerrainShadowBuilderGl3.anInt7006)))
                                             TerrainShadowBuilderGl3.anInt7006++
                                         }
                                     } else {
                                         WalkingTypeUtil.anInt3312++
                                         method159(-615751774)
-                                        TerrainShadowBuilderGl3.anInt7006 = Class363.aString4461!!.length
+                                        TerrainShadowBuilderGl3.anInt7006 = MapElementManager.aString4461!!.length
                                     }
                                 } else {
                                     if ((0x4 and i_8_) == 0) {
                                         TerrainShadowBuilderGl3.anInt7006--
                                     } else {
-                                        TerrainShadowBuilderGl3.anInt7006 = max(Class363.aString4461!!.lastIndexOf(' ', TerrainShadowBuilderGl3.anInt7006 - 2) + 1, 0)
+                                        TerrainShadowBuilderGl3.anInt7006 = max(MapElementManager.aString4461!!.lastIndexOf(' ', TerrainShadowBuilderGl3.anInt7006 - 2) + 1, 0)
                                     }
                                 }
                             } else {
                                 if ((0x4 and i_8_) == 0) {
-                                    Class363.aString4461 = ((Class363.aString4461!!.substring(0, TerrainShadowBuilderGl3.anInt7006 - 1)) + Class363.aString4461!!.substring(TerrainShadowBuilderGl3.anInt7006))
+                                    MapElementManager.aString4461 = ((MapElementManager.aString4461!!.substring(0, TerrainShadowBuilderGl3.anInt7006 - 1)) + MapElementManager.aString4461!!.substring(TerrainShadowBuilderGl3.anInt7006))
                                     TerrainShadowBuilderGl3.anInt7006--
                                 } else {
-                                    var index = Class363.aString4461!!.trim { it <= ' ' }.lastIndexOf(' ', TerrainShadowBuilderGl3.anInt7006)
+                                    var index = MapElementManager.aString4461!!.trim { it <= ' ' }.lastIndexOf(' ', TerrainShadowBuilderGl3.anInt7006)
                                     index++
-                                    Class363.aString4461 = Class363.aString4461!!.substring(0, index)
+                                    MapElementManager.aString4461 = MapElementManager.aString4461!!.substring(0, index)
                                     TerrainShadowBuilderGl3.anInt7006 = index
                                 }
                             }
