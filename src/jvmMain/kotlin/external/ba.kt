@@ -1,3 +1,8 @@
+package external
+
+import Disposable
+import RenderNode
+
 /* ba - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 * NativeRenderTarget

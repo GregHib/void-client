@@ -1,3 +1,9 @@
+package external
+
+import AbstractModelRenderer
+import Disposable
+import Sprite
+
 /* j - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 * NativeCamera

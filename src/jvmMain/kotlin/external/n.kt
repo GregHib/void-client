@@ -1,3 +1,12 @@
+package external
+
+import AbstractModelRenderer
+import Disposable
+import Font
+import FontDefinition
+import Sprite
+import SpriteImage
+
 /* n - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 * NativeFontRendererAlt

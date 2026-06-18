@@ -1,3 +1,8 @@
+package external
+
+import Disposable
+import ShaderProgram
+
 /* ya - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 * NativeTextureManager

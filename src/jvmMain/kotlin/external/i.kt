@@ -1,3 +1,15 @@
+package external
+
+import AbstractCameraTransform
+import AbstractModel
+import Disposable
+import ModelDefinition
+import ModelFacePriorityNode
+import RenderNode
+import SceneOcculder
+import TerrainTile
+import WidgetRedrawRegion
+
 /* i - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 * NativeModel
@@ -55,14 +67,14 @@ class i : AbstractModel, Disposable {
     public override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int, i_14_: Int) {
         if (class318_sub3 == null) anOa5117.method3973()!!.method149(this, abstractCameraTransform, null, i, i_14_)
         else {
-            oa.Companion.anIntArray5132[5] = 0
-            anOa5117.method3973()!!.method149(this, abstractCameraTransform, oa.Companion.anIntArray5132, i, i_14_)
-            class318_sub3.anInt6405 = oa.Companion.anIntArray5132[0]
-            class318_sub3.anInt6402 = oa.Companion.anIntArray5132[1]
-            class318_sub3.anInt6406 = oa.Companion.anIntArray5132[2]
-            class318_sub3.anInt6404 = oa.Companion.anIntArray5132[3]
-            class318_sub3.anInt6403 = oa.Companion.anIntArray5132[4]
-            class318_sub3.aBoolean6401 = oa.Companion.anIntArray5132[5] != 0
+            oa.anIntArray5132[5] = 0
+            anOa5117.method3973()!!.method149(this, abstractCameraTransform, oa.anIntArray5132, i, i_14_)
+            class318_sub3.anInt6405 = oa.anIntArray5132[0]
+            class318_sub3.anInt6402 = oa.anIntArray5132[1]
+            class318_sub3.anInt6406 = oa.anIntArray5132[2]
+            class318_sub3.anInt6404 = oa.anIntArray5132[3]
+            class318_sub3.anInt6403 = oa.anIntArray5132[4]
+            class318_sub3.aBoolean6401 = oa.anIntArray5132[5] != 0
         }
     }
 
@@ -197,34 +209,34 @@ class i : AbstractModel, Disposable {
     public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int) {
         if (class318_sub3 == null) anOa5117.method3973()?.method145(this, abstractCameraTransform!!, null, i)
         else {
-            oa.Companion.anIntArray5132[5] = 0
-            anOa5117.method3973()?.method145(this, abstractCameraTransform!!, oa.Companion.anIntArray5132, i)
-            class318_sub3.anInt6405 = oa.Companion.anIntArray5132[0]
-            class318_sub3.anInt6402 = oa.Companion.anIntArray5132[1]
-            class318_sub3.anInt6406 = oa.Companion.anIntArray5132[2]
-            class318_sub3.anInt6404 = oa.Companion.anIntArray5132[3]
-            class318_sub3.anInt6403 = oa.Companion.anIntArray5132[4]
-            class318_sub3.aBoolean6401 = oa.Companion.anIntArray5132[5] != 0
+            oa.anIntArray5132[5] = 0
+            anOa5117.method3973()?.method145(this, abstractCameraTransform!!, oa.anIntArray5132, i)
+            class318_sub3.anInt6405 = oa.anIntArray5132[0]
+            class318_sub3.anInt6402 = oa.anIntArray5132[1]
+            class318_sub3.anInt6406 = oa.anIntArray5132[2]
+            class318_sub3.anInt6404 = oa.anIntArray5132[3]
+            class318_sub3.anInt6403 = oa.anIntArray5132[4]
+            class318_sub3.aBoolean6401 = oa.anIntArray5132[5] != 0
         }
     }
 
     public external override fun r(): Boolean
 
     public override fun method620(abstractCameraTransform: AbstractCameraTransform?) {
-        method693(oa.Companion.anIntArray5140, abstractCameraTransform)
+        method693(oa.anIntArray5140, abstractCameraTransform)
         var i = 0
         if (this.aModelFacePriorityNodeArray5119 != null) {
             for (i_74_ in this.aModelFacePriorityNodeArray5119!!.indices) {
                 val class129 = this.aModelFacePriorityNodeArray5119!![i_74_]!!
-                class129.anInt1882 = oa.Companion.anIntArray5140[i++]
-                class129.anInt1891 = oa.Companion.anIntArray5140[i++]
-                class129.anInt1889 = oa.Companion.anIntArray5140[i++]
-                class129.anInt1883 = oa.Companion.anIntArray5140[i++]
-                class129.anInt1890 = oa.Companion.anIntArray5140[i++]
-                class129.anInt1880 = oa.Companion.anIntArray5140[i++]
-                class129.anInt1876 = oa.Companion.anIntArray5140[i++]
-                class129.anInt1874 = oa.Companion.anIntArray5140[i++]
-                class129.anInt1884 = oa.Companion.anIntArray5140[i++]
+                class129.anInt1882 = oa.anIntArray5140[i++]
+                class129.anInt1891 = oa.anIntArray5140[i++]
+                class129.anInt1889 = oa.anIntArray5140[i++]
+                class129.anInt1883 = oa.anIntArray5140[i++]
+                class129.anInt1890 = oa.anIntArray5140[i++]
+                class129.anInt1880 = oa.anIntArray5140[i++]
+                class129.anInt1876 = oa.anIntArray5140[i++]
+                class129.anInt1874 = oa.anIntArray5140[i++]
+                class129.anInt1884 = oa.anIntArray5140[i++]
             }
         }
         if (this.aWidgetRedrawRegionArray5118 != null) {
@@ -234,9 +246,9 @@ class i : AbstractModel, Disposable {
                 if (class342.aWidgetRedrawRegion_4248 != null) widgetRedrawRegion_76_ = class342.aWidgetRedrawRegion_4248
                 if (class342.aAbstractCameraTransform_4252 != null) class342.aAbstractCameraTransform_4252!!.method898(abstractCameraTransform)
                 else class342.aAbstractCameraTransform_4252 = abstractCameraTransform!!.method907()
-                widgetRedrawRegion_76_!!.anInt4238 = oa.Companion.anIntArray5140[i++]
-                widgetRedrawRegion_76_.anInt4239 = oa.Companion.anIntArray5140[i++]
-                widgetRedrawRegion_76_.anInt4240 = oa.Companion.anIntArray5140[i++]
+                widgetRedrawRegion_76_!!.anInt4238 = oa.anIntArray5140[i++]
+                widgetRedrawRegion_76_.anInt4239 = oa.anIntArray5140[i++]
+                widgetRedrawRegion_76_.anInt4240 = oa.anIntArray5140[i++]
             }
         }
     }

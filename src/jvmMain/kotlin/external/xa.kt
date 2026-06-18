@@ -1,3 +1,8 @@
+package external
+
+import Disposable
+import Marker
+
 /* xa - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 * NativeTextureHandle

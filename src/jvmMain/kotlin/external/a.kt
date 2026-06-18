@@ -1,3 +1,13 @@
+package external
+
+import AbstractCameraTransform
+import AbstractModel
+import Disposable
+import Renderer
+import TerrainTile
+import i
+import t
+
 /* a - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */

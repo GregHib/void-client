@@ -1,3 +1,7 @@
+package external
+
+import SpriteDrawTarget
+
 /* wa - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 * NativeBillboardRenderer

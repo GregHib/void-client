@@ -1,3 +1,11 @@
+package external
+
+import AbstractTileShape
+import Disposable
+import NodeDeque
+import RenderNode
+import TerrainTile
+
 /* t - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 * NativeContextTerrainTile

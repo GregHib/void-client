@@ -1,3 +1,8 @@
+package external
+
+import Disposable
+import Sprite
+
 /* na - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  * NativeSpriteRenderer

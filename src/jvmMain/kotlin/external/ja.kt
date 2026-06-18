@@ -1,3 +1,8 @@
+package external
+
+import AbstractCameraTransform
+import Disposable
+
 /* ja - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 * NativeMatrix
