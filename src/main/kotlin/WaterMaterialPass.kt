@@ -10,13 +10,13 @@ import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fvARB
 import java.util.*
 
-class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : MaterialPass(var_ha_Sub2) {
+class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterTextureSet: WaterTextureSet?) : MaterialPass(var_ha_Sub2) {
     private var aFloatArray6218: FloatArray? = null
     private var anInt6219 = 0
     private var aRefCountedHandle_6220: RefCountedHandle? = null
     private var aGlDisplayListFont_6222: GlDisplayListFont? = null
     private var aFloat6225 = 0f
-    private val aClass83_6227: Class83?
+    private val aWaterTextureSet_6227: WaterTextureSet?
     override fun method2136(i: Int, i_0_: Int, i_1_: Byte) {
         anInt6224++
         if (aGlDisplayListFont_6222 != null) {
@@ -24,15 +24,15 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
             this.aHa_Sub2_3684.method3738(-15039, 1)
             if ((i and 0x80) != 0) this.aHa_Sub2_3684.method3771((-122).toByte(), null)
             else if ((0x1 and i_0_) != 1) {
-                if (!aClass83_6227!!.aBoolean1442) this.aHa_Sub2_3684.method3771((-84).toByte(), aClass83_6227.aClass258_Sub3Array1444!![0])
-                else this.aHa_Sub2_3684.method3771((-97).toByte(), aClass83_6227.aClass258_Sub1_1440)
+                if (!aWaterTextureSet_6227!!.aBoolean1442) this.aHa_Sub2_3684.method3771((-84).toByte(), aWaterTextureSet_6227.aClass258_Sub3Array1444!![0])
+                else this.aHa_Sub2_3684.method3771((-97).toByte(), aWaterTextureSet_6227.aClass258_Sub1_1440)
                 glProgramLocalParameter4fARB(34336, 65, 0.0f, 0.0f, 0.0f, 1.0f)
-            } else if (aClass83_6227!!.aBoolean1442) {
-                this.aHa_Sub2_3684.method3771((-83).toByte(), aClass83_6227.aClass258_Sub1_1440)
+            } else if (aWaterTextureSet_6227!!.aBoolean1442) {
+                this.aHa_Sub2_3684.method3771((-83).toByte(), aWaterTextureSet_6227.aClass258_Sub1_1440)
                 glProgramLocalParameter4fARB(34336, 65, aFloat6225, 0.0f, 0.0f, 1.0f)
             } else {
                 val i_2_ = (this.aHa_Sub2_3684.anInt7735 % 4000 * 16 / 4000)
-                this.aHa_Sub2_3684.method3771((-88).toByte(), aClass83_6227.aClass258_Sub3Array1444!![i_2_])
+                this.aHa_Sub2_3684.method3771((-88).toByte(), aWaterTextureSet_6227.aClass258_Sub3Array1444!![i_2_])
                 glProgramLocalParameter4fARB(34336, 65, 0.0f, 0.0f, 0.0f, 1.0f)
             }
             this.aHa_Sub2_3684.method3738(-15039, 0)
@@ -60,7 +60,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
     init {
         do {
             try {
-                aClass83_6227 = class83
+                aWaterTextureSet_6227 = waterTextureSet
                 if (!this.aHa_Sub2_3684.aBoolean7841 || (this.aHa_Sub2_3684.anInt7795 < 2)) break
                 aRefCountedHandle_6220 = (method459(
                     34336,
@@ -84,7 +84,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                     method2149(-25)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("em.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("em.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -150,7 +150,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                         glProgramLocalParameter4fvARB(34336, i_12_, aFloatArray6218, i)
                         i += 2
                     }
-                    if (aClass83_6227!!.aBoolean1442) aFloat6225 = (this.aHa_Sub2_3684.anInt7735 % 4000).toFloat() / 4000.0f
+                    if (aWaterTextureSet_6227!!.aBoolean1442) aFloat6225 = (this.aHa_Sub2_3684.anInt7735 % 4000).toFloat() / 4000.0f
                     else glProgramLocalParameter4fARB(34336, 65, 0.0f, 0.0f, 0.0f, 1.0f)
                     anInt6219 = (this.aHa_Sub2_3684.anInt7735)
                 }

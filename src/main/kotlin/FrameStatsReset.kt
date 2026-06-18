@@ -3820,7 +3820,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             StructConfig.anInt571 = 0
             AbstractMenuEntry.anInt1701 = 0
             InterfaceComponentGroup.anInt9636 = 0
-            Class83.anInt1445 = 0
+            WaterTextureSet.anInt1445 = 0
             OpenGlRenderer.anInt7521 = 0
             CameraDistanceOptionState.anInt5856 = 0
             SoftwareSpriteRaster.anInt1629 = 0

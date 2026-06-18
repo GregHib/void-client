@@ -132,7 +132,7 @@ object ProjectileConfigUtil {
                     }
                     if (i >= 90) {
                         for (i_10_ in 0..<HslAdjustTextureNode.anInt9383) {
-                            val string_11_ = method2127(2, (Class83.aStringArray1441!![i_10_]))
+                            val string_11_ = method2127(2, (WaterTextureSet.aStringArray1441!![i_10_]))
                             if (string_11_ != null && string_11_ == string_6_) {
                                 method544(((LocalizedText.aLocalizedText_3528!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3529!!.method2063(AnimationFrameDefinition.anInt6967, 544))), false, 4)
                                 return

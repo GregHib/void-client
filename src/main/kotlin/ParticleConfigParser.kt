@@ -57,7 +57,7 @@ class ParticleConfigParser {
             if (i >= -41) return 97
             var i_0_ = 0
             while ((i_0_ < HslAdjustTextureNode.anInt9383)) {
-                if (string.equals(Class83.aStringArray1441!![i_0_], ignoreCase = true)) return i_0_
+                if (string.equals(WaterTextureSet.aStringArray1441!![i_0_], ignoreCase = true)) return i_0_
                 i_0_++
             }
             return -1

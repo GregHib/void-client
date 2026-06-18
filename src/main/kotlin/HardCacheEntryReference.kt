@@ -1220,7 +1220,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     var i_154_ = 0
                     while ((i_154_ < HslAdjustTextureNode.anInt9383)) {
                         if (!bool_149_) {
-                            if (string == Class83.aStringArray1441!![i_154_]) {
+                            if (string == WaterTextureSet.aStringArray1441!![i_154_]) {
                                 if (i != Renderer.anIntArray4578!![i_154_]) {
                                     var bool_155_ = true
                                     var class318_sub9_sub1 = (InterfaceComponentGroup.aDoublyLinkedNodeList_9642!!.method1872(8) as? NamedTimedNode?)
@@ -1248,8 +1248,8 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                                 ObjectSpawnDecoder.aBooleanArray1806!![i_154_] = bool_153_
                                 break
                             }
-                        } else if (string_150_ == Class83.aStringArray1441!![i_154_]) {
-                            Class83.aStringArray1441!![i_154_] = string
+                        } else if (string_150_ == WaterTextureSet.aStringArray1441!![i_154_]) {
+                            WaterTextureSet.aStringArray1441!![i_154_] = string
                             FixedFunctionMaterialPass.aStringArray6205!![i_154_] = string_150_
                             string = null
                             break
@@ -1257,7 +1257,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                         i_154_++
                     }
                     if (string != null && HslAdjustTextureNode.anInt9383 < 200) {
-                        Class83.aStringArray1441!![HslAdjustTextureNode.anInt9383] = string
+                        WaterTextureSet.aStringArray1441!![HslAdjustTextureNode.anInt9383] = string
                         FixedFunctionMaterialPass.aStringArray6205!![(HslAdjustTextureNode.anInt9383)] = string_150_
                         Renderer.anIntArray4578!![HslAdjustTextureNode.anInt9383] = i
                         GlBufferObject.aStringArray4744!![HslAdjustTextureNode.anInt9383] = string_152_
@@ -1282,9 +1282,9 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                             val string = GlBufferObject.aStringArray4744!![i_157_]
                             GlBufferObject.aStringArray4744!![i_157_] = GlBufferObject.aStringArray4744!![1 + i_157_]
                             GlBufferObject.aStringArray4744!![1 + i_157_] = string
-                            val string_159_ = Class83.aStringArray1441!![i_157_]
-                            Class83.aStringArray1441!![i_157_] = Class83.aStringArray1441!![i_157_ + 1]
-                            Class83.aStringArray1441!![i_157_ + 1] = string_159_
+                            val string_159_ = WaterTextureSet.aStringArray1441!![i_157_]
+                            WaterTextureSet.aStringArray1441!![i_157_] = WaterTextureSet.aStringArray1441!![i_157_ + 1]
+                            WaterTextureSet.aStringArray1441!![i_157_ + 1] = string_159_
                             val string_160_ = FixedFunctionMaterialPass.aStringArray6205!![i_157_]
                             FixedFunctionMaterialPass.aStringArray6205!![i_157_] = FixedFunctionMaterialPass.aStringArray6205!![i_157_ + 1]
                             FixedFunctionMaterialPass.aStringArray6205!![i_157_ - -1] = string_160_

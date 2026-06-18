@@ -57,7 +57,7 @@ class KeyEventNode : LinkedListNode(), Interface6 {
             if (string == null) return false
             var i_1_ = 0
             while ((i_1_ < HslAdjustTextureNode.anInt9383)) {
-                if (string.equals(Class83.aStringArray1441!![i_1_], ignoreCase = true)) return true
+                if (string.equals(WaterTextureSet.aStringArray1441!![i_1_], ignoreCase = true)) return true
                 i_1_++
             }
             if (string.equals(LocalPlayerState.aPlayer_1907!!.aString10544, ignoreCase = true)) return true

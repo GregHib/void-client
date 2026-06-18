@@ -7,9 +7,9 @@ import jaggl.OpenGL.Companion.glUseProgramObjectARB
 import kotlin.math.abs
 import kotlin.math.min
 
-class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : MaterialPass(var_ha_Sub2) {
+class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterTextureSet: WaterTextureSet?) : MaterialPass(var_ha_Sub2) {
     private var aBoolean6266 = false
-    private val aClass83_6268: Class83?
+    private val aWaterTextureSet_6268: WaterTextureSet?
     private var aBoolean6272 = false
     private var aGlShaderProgramHandle_6274: GlShaderProgramHandle? = null
     override fun method2140(glTexture: GlTexture?, i: Byte, i_0_: Int) {
@@ -40,7 +40,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
                 this.aHa_Sub2_3684.method3738(-15039, 1)
                 this.aHa_Sub2_3684.method3771((-126).toByte(), class258_sub2)
                 this.aHa_Sub2_3684.method3738(-15039, 0)
-                this.aHa_Sub2_3684.method3771((-75).toByte(), aClass83_6268!!.aClass258_Sub1_1443)
+                this.aHa_Sub2_3684.method3771((-75).toByte(), aWaterTextureSet_6268!!.aClass258_Sub1_1443)
                 val l = aGlShaderProgramHandle_6274!!.aLong4178
                 glUseProgramObjectARB(l)
                 glUniform1iARB(glGetUniformLocationARB(l, "normalSampler"), 0)
@@ -70,8 +70,8 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
     init {
         do {
             try {
-                aClass83_6268 = class83
-                if (aClass83_6268!!.aClass258_Sub1_1443 == null || !(this.aHa_Sub2_3684.aBoolean7791) || !(this.aHa_Sub2_3684.aBoolean7783)) break
+                aWaterTextureSet_6268 = waterTextureSet
+                if (aWaterTextureSet_6268!!.aClass258_Sub1_1443 == null || !(this.aHa_Sub2_3684.aBoolean7791) || !(this.aHa_Sub2_3684.aBoolean7783)) break
                 val class242 = (TimedTileQueueEntry.method3249(
                     35633,
                     -110,
@@ -87,7 +87,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, clas
                 aGlShaderProgramHandle_6274 = SequencedWallEntity.method2493((this.aHa_Sub2_3684), -1, (arrayOf<ManagedGlResource?>(class242, class242_4_)))
                 aBoolean6272 = aGlShaderProgramHandle_6274 != null
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("tia.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
+                throw SoundBankPatch.method2929(runtimeexception, ("tia.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

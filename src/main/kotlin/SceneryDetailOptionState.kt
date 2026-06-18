@@ -368,7 +368,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                     if ((npcConfig.anInt950) == i_61_) i_63_ = (npcConfig.anInt869)
                                                     if (i_61_ == (npcConfig.anInt951)) i_63_ = (npcConfig.anInt877)
                                                     MinimapPolygonDrawer.method466(false, ("<col=00ffff>" + (npcConfig.aString884)), i_32_, (-100).toByte(), false, i_33_, -1, true, i_62_, interface10.hashCode().toLong(), strings[i_61_], (WeaveTextureNode.method3107((-116).toByte(), interface10, i_32_, i_33_)), i_63_)
-                                                    Class83.anInt1445++
+                                                    WaterTextureSet.anInt1445++
                                                 }
                                             }
                                         }

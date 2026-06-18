@@ -4188,7 +4188,7 @@ object ChatCommandProcessor {
                 if (i == 3601) {
                     val i_359_ = anIntArray1149!![--anInt1173]
                     if (MinimapSpriteRenderer.anInt4930 == 2 && i_359_ < HslAdjustTextureNode.anInt9383) {
-                        aStringArray1152!![anInt1170++] = Class83.aStringArray1441!![i_359_]
+                        aStringArray1152!![anInt1170++] = WaterTextureSet.aStringArray1441!![i_359_]
                         if (FixedFunctionMaterialPass.aStringArray6205!![i_359_] != null) aStringArray1152!![anInt1170++] = FixedFunctionMaterialPass.aStringArray6205!![i_359_]!!
                         else aStringArray1152!![anInt1170++] = ""
                     } else {

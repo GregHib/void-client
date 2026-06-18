@@ -4,9 +4,9 @@ import jaggl.OpenGL.Companion.glTexGenfv
 import jaggl.OpenGL.Companion.glTexGeni
 import kotlin.math.min
 
-class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : MaterialPass(var_ha_Sub2) {
+class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterTextureSet: WaterTextureSet?) : MaterialPass(var_ha_Sub2) {
     private val aGlDisplayListFont_6254: GlDisplayListFont
-    private val aClass83_6259: Class83?
+    private val aWaterTextureSet_6259: WaterTextureSet?
     override fun method2136(i: Int, i_5_: Int, i_6_: Byte) {
         anInt6252++
         val f = -5.0E-4f * (1 + (i and 0x3)).toFloat()
@@ -32,7 +32,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
         if (i_6_ >= -42) method2136(-27, -15, (-43).toByte())
         MapLabelMenuEntry.aFloatArray5791!![2] = 0.0f
         glTexGenfv(8193, 9474, MapLabelMenuEntry.aFloatArray5791, 0)
-        if (aClass83_6259!!.aBoolean1442) {
+        if (aWaterTextureSet_6259!!.aBoolean1442) {
             MapLabelMenuEntry.aFloatArray5791!![0] = 0.0f
             MapLabelMenuEntry.aFloatArray5791!![3] = (this.aHa_Sub2_3684.anInt7735).toFloat() * f_7_ % 1.0f
             MapLabelMenuEntry.aFloatArray5791!![2] = 0.0f
@@ -40,7 +40,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
             glTexGenfv(8194, 9473, MapLabelMenuEntry.aFloatArray5791, 0)
         } else {
             val i_9_ = (16.0f * (this.aHa_Sub2_3684.anInt7735.toFloat() * f_7_)).toInt()
-            this.aHa_Sub2_3684.method3771((-81).toByte(), aClass83_6259.aClass258_Sub3Array1448!![i_9_ % 16])
+            this.aHa_Sub2_3684.method3771((-81).toByte(), aWaterTextureSet_6259.aClass258_Sub3Array1448!![i_9_ % 16])
         }
         this.aHa_Sub2_3684.method3738(-15039, 0)
     }
@@ -63,11 +63,11 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
 
     init {
         try {
-            aClass83_6259 = class83
+            aWaterTextureSet_6259 = waterTextureSet
             aGlDisplayListFont_6254 = GlDisplayListFont(var_ha_Sub2, 2)
             aGlDisplayListFont_6254.method595(104.toByte(), 0)
             this.aHa_Sub2_3684.method3738(-15039, 1)
-            if (aClass83_6259!!.aBoolean1442) {
+            if (aWaterTextureSet_6259!!.aBoolean1442) {
                 glTexGeni(8194, 9472, 9217)
                 glEnable(3170)
             }
@@ -79,22 +79,22 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class
             aGlDisplayListFont_6254.method591(-1)
             aGlDisplayListFont_6254.method595(117.toByte(), 1)
             this.aHa_Sub2_3684.method3738(-15039, 1)
-            if (aClass83_6259.aBoolean1442) glDisable(3170)
+            if (aWaterTextureSet_6259.aBoolean1442) glDisable(3170)
             glDisable(3168)
             glDisable(3169)
             this.aHa_Sub2_3684.method3738(-15039, 0)
             aGlDisplayListFont_6254.method591(-1)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("gn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("gn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
         }
     }
 
     override fun method2134(bool: Boolean, bool_11_: Boolean) {
         anInt6250++
         aGlDisplayListFont_6254.method594('\u0000', 28666)
-        if (aClass83_6259!!.aBoolean1442) {
+        if (aWaterTextureSet_6259!!.aBoolean1442) {
             this.aHa_Sub2_3684.method3738(-15039, 1)
-            this.aHa_Sub2_3684.method3771((-117).toByte(), (aClass83_6259.aClass258_Sub1_1446))
+            this.aHa_Sub2_3684.method3771((-117).toByte(), (aWaterTextureSet_6259.aClass258_Sub1_1446))
             this.aHa_Sub2_3684.method3738(-15039, 0)
         }
         if (bool_11_ != false) anInt6248 = -68

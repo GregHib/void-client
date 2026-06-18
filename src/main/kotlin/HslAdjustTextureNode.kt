@@ -243,7 +243,7 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
                             if (string_1_ != null) {
                                 var i_2_ = 0
                                 while ((anInt9383 > i_2_)) {
-                                    val string_3_ = (method2127(2, Class83.aStringArray1441!![i_2_]))
+                                    val string_3_ = (method2127(2, WaterTextureSet.aStringArray1441!![i_2_]))
                                     if (string_3_ != null && string_3_ == string_1_) {
                                         method544((string + (LocalizedText.aLocalizedText_3521!!.method2063((AnimationFrameDefinition.anInt6967), 544))), false, 4)
                                         return

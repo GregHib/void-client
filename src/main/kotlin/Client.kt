@@ -499,7 +499,7 @@ import BufferedRandomAccessFile.Companion.method786
 import NpcType.Companion.method804
 import SynthSoundGenerator.Companion.method808
 import FogState.method810
-import Class83.Companion.method815
+import WaterTextureSet.Companion.method815
 import Class84.Companion.method817
 import Class84.Companion.method825
 import Class85.Companion.method830

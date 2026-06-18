@@ -11,15 +11,15 @@ import jaggl.OpenGL.Companion.glTexEnvf
 import jaggl.OpenGL.Companion.glTexGenfv
 import jaggl.OpenGL.Companion.glTexGeni
 
-class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class83: Class83?) : MaterialPass(var_ha_Sub2) {
-    private val aClass83_6278: Class83?
+class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterTextureSet: WaterTextureSet?) : MaterialPass(var_ha_Sub2) {
+    private val aWaterTextureSet_6278: WaterTextureSet?
     private var aGlDisplayListFont_6284: GlDisplayListFont? = null
     private var aClass258_Sub4_6285: GlTexture1D? = null
     override fun method2136(i: Int, i_3_: Int, i_4_: Byte) {
         if (i_4_ >= -42) aClass258_Sub4_6285 = null
         if ((0x1 and i) == 1) {
-            if (aClass83_6278!!.aBoolean1442) {
-                this.aHa_Sub2_3684.method3771((-83).toByte(), aClass83_6278.aClass258_Sub1_1440)
+            if (aWaterTextureSet_6278!!.aBoolean1442) {
+                this.aHa_Sub2_3684.method3771((-83).toByte(), aWaterTextureSet_6278.aClass258_Sub1_1440)
                 KeyboardLayoutConfig.aFloatArray2131!![2] = 0.0f
                 KeyboardLayoutConfig.aFloatArray2131!![3] = ((this.aHa_Sub2_3684.anInt7735) % 4000).toFloat() / 4000.0f
                 KeyboardLayoutConfig.aFloatArray2131!![0] = 0.0f
@@ -27,16 +27,16 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
                 glTexGenfv(8194, 9473, KeyboardLayoutConfig.aFloatArray2131, 0)
             } else {
                 val i_5_ = (16 * (this.aHa_Sub2_3684.anInt7735 % 4000) / 4000)
-                this.aHa_Sub2_3684.method3771((-95).toByte(), aClass83_6278.aClass258_Sub3Array1444!![i_5_])
+                this.aHa_Sub2_3684.method3771((-95).toByte(), aWaterTextureSet_6278.aClass258_Sub3Array1444!![i_5_])
             }
-        } else if (aClass83_6278!!.aBoolean1442) {
-            this.aHa_Sub2_3684.method3771((-126).toByte(), (aClass83_6278.aClass258_Sub1_1440))
+        } else if (aWaterTextureSet_6278!!.aBoolean1442) {
+            this.aHa_Sub2_3684.method3771((-126).toByte(), (aWaterTextureSet_6278.aClass258_Sub1_1440))
             KeyboardLayoutConfig.aFloatArray2131!![0] = 0.0f
             KeyboardLayoutConfig.aFloatArray2131!![2] = 0.0f
             KeyboardLayoutConfig.aFloatArray2131!![1] = 0.0f
             KeyboardLayoutConfig.aFloatArray2131!![3] = 0.0f
             glTexGenfv(8194, 9473, KeyboardLayoutConfig.aFloatArray2131, 0)
-        } else this.aHa_Sub2_3684.method3771((-110).toByte(), aClass83_6278.aClass258_Sub3Array1444!![0])
+        } else this.aHa_Sub2_3684.method3771((-110).toByte(), aWaterTextureSet_6278.aClass258_Sub3Array1444!![0])
         anInt6291++
     }
 
@@ -77,7 +77,7 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
         glEnable(3168)
         this.aHa_Sub2_3684.method3738(-15039, 0)
         glTexEnvf(8960, 34163, 2.0f)
-        if (aClass83_6278!!.aBoolean1442) {
+        if (aWaterTextureSet_6278!!.aBoolean1442) {
             glTexGeni(8194, 9472, 9217)
             glTexGeni(8195, 9472, 9217)
             glTexGenfv(8195, 9473, floatArrayOf(0.0f, 0.0f, 0.0f, 1.0f), 0)
@@ -93,7 +93,7 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
         glDisable(3168)
         this.aHa_Sub2_3684.method3738(-15039, 0)
         glTexEnvf(8960, 34163, 1.0f)
-        if (aClass83_6278.aBoolean1442) {
+        if (aWaterTextureSet_6278.aBoolean1442) {
             glDisable(3170)
             glDisable(3171)
         }
@@ -102,12 +102,12 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
 
     init {
         try {
-            aClass83_6278 = class83
+            aWaterTextureSet_6278 = waterTextureSet
             method2167(-21405)
             aClass258_Sub4_6285 = GlTexture1D(this.aHa_Sub2_3684, 6406, 2, byteArrayOf(0, -1), 6406)
             aClass258_Sub4_6285!!.method1972((-91).toByte(), false)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (class83 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("tn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -179,13 +179,13 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, cl
                 if (string_0_ != null) {
                     var i = 0
                     while ((HslAdjustTextureNode.anInt9383 > i)) {
-                        var string_1_ = Class83.aStringArray1441!![i]
+                        var string_1_ = WaterTextureSet.aStringArray1441!![i]
                         if (string_1_!!.startsWith("*")) string_1_ = string_1_.substring(1)
                         string_1_ = method2127(2, string_1_)
                         if (string_1_ != null && string_1_ == string_0_) {
                             HslAdjustTextureNode.anInt9383--
                             for (i_2_ in i..<HslAdjustTextureNode.anInt9383) {
-                                Class83.aStringArray1441!![i_2_] = Class83.aStringArray1441!![i_2_ - -1]
+                                WaterTextureSet.aStringArray1441!![i_2_] = WaterTextureSet.aStringArray1441!![i_2_ - -1]
                                 FixedFunctionMaterialPass.Companion.aStringArray6205!![i_2_] = FixedFunctionMaterialPass.Companion.aStringArray6205!![1 + i_2_]
                                 Renderer.anIntArray4578!![i_2_] = Renderer.anIntArray4578!![i_2_ - -1]
                                 GlBufferObject.aStringArray4744!![i_2_] = GlBufferObject.aStringArray4744!![1 + i_2_]

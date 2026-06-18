@@ -231,7 +231,7 @@ class LinkedNodeListIterator {
                                 var bool = false
                                 var i_29_ = 0
                                 while ((HslAdjustTextureNode.anInt9383 > i_29_)) {
-                                    if ((player.aString10544 == Class83.aStringArray1441!![i_29_]) && (Renderer.anIntArray4578!![i_29_] != 0)) {
+                                    if ((player.aString10544 == WaterTextureSet.aStringArray1441!![i_29_]) && (Renderer.anIntArray4578!![i_29_] != 0)) {
                                         bool = true
                                         break
                                     }

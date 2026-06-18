@@ -5,7 +5,7 @@ import Exception_Sub1.Companion.method141
 */
 class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRenderer) {
     private var anInt1578 = 0
-    private var aClass83_1582: Class83?
+    private var aWaterTextureSet_1582: WaterTextureSet?
     private var anInt1584 = 0
     var aClass286_Sub1_1586: ArbFogMaterialPass
     private val aMaterialPassArray1588: Array<MaterialPass?>
@@ -40,7 +40,7 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
                 anInt1584 = i_1_
             }
         }
-        if (i_2_ <= 9) aClass83_1582 = null
+        if (i_2_ <= 9) aWaterTextureSet_1582 = null
     }
 
     fun method885(i: Int, i_4_: Byte, glTexture: GlTexture?): Boolean {
@@ -58,18 +58,18 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
     }
 
     init {
-        aClass83_1582 = Class83(aHa_Sub2_1581)
+        aWaterTextureSet_1582 = WaterTextureSet(aHa_Sub2_1581)
         aMaterialPassArray1588 = arrayOfNulls(10)
         aMaterialPassArray1588[1] = SphereMapMaterialPass(aHa_Sub2_1581)
-        aMaterialPassArray1588[2] = WaterMaterialPass(aHa_Sub2_1581, aClass83_1582)
-        aMaterialPassArray1588[4] = ScrollTexMaterialPass(aHa_Sub2_1581, aClass83_1582)
-        aMaterialPassArray1588[5] = TexGenMaterialPass(aHa_Sub2_1581, aClass83_1582)
+        aMaterialPassArray1588[2] = WaterMaterialPass(aHa_Sub2_1581, aWaterTextureSet_1582)
+        aMaterialPassArray1588[4] = ScrollTexMaterialPass(aHa_Sub2_1581, aWaterTextureSet_1582)
+        aMaterialPassArray1588[5] = TexGenMaterialPass(aHa_Sub2_1581, aWaterTextureSet_1582)
         aMaterialPassArray1588[6] = FixedFunctionMaterialPass(aHa_Sub2_1581)
         aMaterialPassArray1588[7] = CubeMapMaterialPass(aHa_Sub2_1581)
         this.aClass286_Sub1_1586 = ArbFogMaterialPass(aHa_Sub2_1581)
         aMaterialPassArray1588[3] = this.aClass286_Sub1_1586
-        aMaterialPassArray1588[8] = GlslEnvMaterialPass(aHa_Sub2_1581, aClass83_1582)
-        aMaterialPassArray1588[9] = GlslMaterialPass(aHa_Sub2_1581, aClass83_1582)
+        aMaterialPassArray1588[8] = GlslEnvMaterialPass(aHa_Sub2_1581, aWaterTextureSet_1582)
+        aMaterialPassArray1588[9] = GlslMaterialPass(aHa_Sub2_1581, aWaterTextureSet_1582)
         if (!aMaterialPassArray1588[8]!!.method2137(-33)) aMaterialPassArray1588[8] = aMaterialPassArray1588[4]
         if (!aMaterialPassArray1588[9]!!.method2137(-82)) aMaterialPassArray1588[9] = aMaterialPassArray1588[8]
     }
