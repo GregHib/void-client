@@ -286,7 +286,7 @@ class VorbisAudioDecoder private constructor(`is`: ByteArray?) : LinkedListNode(
         private var aByteArray6714: ByteArray? = null
         private var aVorbisFloorDecoderArray6715: Array<VorbisFloorDecoder?>? = null
         @JvmField
-        var aClass370Array6718: Array<Class370?>? = null
+        var aVorbisCodebookArray6718: Array<VorbisCodebook?>? = null
         private var anIntArray6719: IntArray? = null
         private var aFloatArray6720: FloatArray? = null
         private var anInt6721 = 0
@@ -304,7 +304,7 @@ class VorbisAudioDecoder private constructor(`is`: ByteArray?) : LinkedListNode(
         @JvmStatic
         fun method2785() {
             aByteArray6714 = null
-            aClass370Array6718 = null
+            aVorbisCodebookArray6718 = null
             aVorbisFloorDecoderArray6715 = null
             aBinaryBitReaderArray6710 = null
             aVorbisCommentHeaderArray6704 = null
@@ -402,8 +402,8 @@ class VorbisAudioDecoder private constructor(`is`: ByteArray?) : LinkedListNode(
                 }
             }
             val i: Int = method2789(8) + 1
-            aClass370Array6718 = arrayOfNulls<Class370>(i)
-            for (i_23_ in 0..<i) aClass370Array6718!![i_23_] = Class370()
+            aVorbisCodebookArray6718 = arrayOfNulls<VorbisCodebook>(i)
+            for (i_23_ in 0..<i) aVorbisCodebookArray6718!![i_23_] = VorbisCodebook()
             val i_24_: Int = method2789(6) + 1
             for (i_25_ in 0..<i_24_) method2789(16)
             val i_26_: Int = method2789(6) + 1

@@ -104,11 +104,11 @@ class VorbisFloorDecoder internal constructor() {
             val i_49_ = anIntArray2729[i_47_]
             val i_50_ = (1 shl i_49_) - 1
             var i_51_ = 0
-            if (i_49_ > 0) i_51_ = VorbisAudioDecoder.aClass370Array6718!![anIntArray2723[i_47_]]!!.method3581()
+            if (i_49_ > 0) i_51_ = VorbisAudioDecoder.aVorbisCodebookArray6718!![anIntArray2723[i_47_]]!!.method3581()
             for (i_52_ in 0..<i_48_) {
                 val i_53_ = anIntArrayArray2730[i_47_]!![i_51_ and i_50_]
                 i_51_ = i_51_ ushr i_49_
-                anIntArray2728!![i_45_++] = (if (i_53_ >= 0) VorbisAudioDecoder.aClass370Array6718!![i_53_]!!.method3581() else 0)
+                anIntArray2728!![i_45_++] = (if (i_53_ >= 0) VorbisAudioDecoder.aVorbisCodebookArray6718!![i_53_]!!.method3581() else 0)
             }
         }
         return true
