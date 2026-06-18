@@ -2594,7 +2594,7 @@ class Client : GameAppletFrame() {
                             i_114_ += 5 - player.method2436(101.toByte()) shl 2
                             if (player.aBoolean10554) i_114_ += 512
                             else {
-                                if (Class37.anInt495 == 0) i_114_ += 32
+                                if (ByteArrayPool.anInt495 == 0) i_114_ += 32
                                 else i_114_ += 128
                                 i_114_ += 256
                             }
@@ -2614,10 +2614,10 @@ class Client : GameAppletFrame() {
                         if (!npc.aBoolean10309) i_116_++
                         if (npc.anInt10223 > Class367_Sub11.anInt7396) i_116_ += 2
                         i_116_ += 5 - npc.method2436(82.toByte()) shl 2
-                        if (Class37.anInt495 == 0) {
+                        if (ByteArrayPool.anInt495 == 0) {
                             if (npc.aClass79_10505!!.aBoolean1362) i_116_ += 64
                             else i_116_ += 128
-                        } else if (Class37.anInt495 == 1) {
+                        } else if (ByteArrayPool.anInt495 == 1) {
                             if (npc.aClass79_10505!!.aBoolean1362) i_116_ += 32
                             else i_116_ += 64
                         }

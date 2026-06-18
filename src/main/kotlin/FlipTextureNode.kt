@@ -339,7 +339,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     val class213 = (Exception_Sub1.aModelHeaderCache_112!!.method1940(-67, (class46.anInt812)))
                                                     string = (class213.aString2795)
                                                     if (string == null) string = "null"
-                                                    if (((class213.anInt2820) == 1 || (class46.anInt781) != 1) && (class46.anInt781) != -1) string = ("<col=ff9040>" + string + "</col> x" + (Class37.method356(-127, (class46.anInt781))))
+                                                    if (((class213.anInt2820) == 1 || (class46.anInt781) != 1) && (class46.anInt781) != -1) string = ("<col=ff9040>" + string + "</col> x" + (ByteArrayPool.method356(-127, (class46.anInt781))))
                                                 }
                                                 if (class46.anInt806 != -1) {
                                                     string = (method2157((class46.anInt806), -1431655765))

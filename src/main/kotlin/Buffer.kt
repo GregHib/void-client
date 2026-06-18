@@ -11,7 +11,7 @@ import SpriteRgbTextureNode.Companion.method3093
 import AsyncResourceRequest.Companion.method3255
 import LoadingScreenImageNode.Companion.method3177
 import CacheEntryReference.Companion.method3196
-import Class37.method359
+import ByteArrayPool.method359
 import java.math.BigInteger
 
 open class Buffer : LinkedListNode {
@@ -266,7 +266,7 @@ open class Buffer : LinkedListNode {
     }
 
     fun method3360(i: Byte) {
-        if (this.aByteArray7154 != null) Class37.method357(0, this.aByteArray7154!!)
+        if (this.aByteArray7154 != null) ByteArrayPool.method357(0, this.aByteArray7154!!)
         anInt7177++
         this.aByteArray7154 = null
         if (i.toInt() != -69) method3344(-115, true)

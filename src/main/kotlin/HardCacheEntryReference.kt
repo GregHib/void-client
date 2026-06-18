@@ -307,7 +307,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             if (ParticleProcessor.aIntRange_4269 == ModelVertexColorBuffer.aIntRange_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(71.toByte())
                 WallSceneEntity.method2397((-128).toByte())
-                Class37.anInt495 = i
+                ByteArrayPool.anInt495 = i
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -557,24 +557,24 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 var bool_69_ = false
                 if (i_68_.toInt() == -128) bool_69_ = true
                 if (bool_69_) {
-                    if (Class37.anInt496 == 0) {
+                    if (ByteArrayPool.anInt496 == 0) {
                         ModelVertexColorBuffer.aIntRange_6584 = null
                         return true
                     }
                     val bool_70_ = false
                     var i_71_: Int
                     i_71_ = 0
-                    while (Class37.anInt496 > i_71_) {
+                    while (ByteArrayPool.anInt496 > i_71_) {
                         if (HostPingThread.aWorldListEntryArray2261!![i_71_]!!.aString306 == string_67_ && i == (HostPingThread.aWorldListEntryArray2261!![i_71_]!!.anInt308)) break
                         i_71_++
                     }
-                    if (Class37.anInt496 > i_71_) {
-                        while ( /**/-1 + Class37.anInt496 > i_71_) {
+                    if (ByteArrayPool.anInt496 > i_71_) {
+                        while ( /**/-1 + ByteArrayPool.anInt496 > i_71_) {
                             HostPingThread.aWorldListEntryArray2261!![i_71_] = HostPingThread.aWorldListEntryArray2261!![i_71_ - -1]
                             i_71_++
                         }
-                        Class37.anInt496--
-                        HostPingThread.aWorldListEntryArray2261!![Class37.anInt496] = null
+                        ByteArrayPool.anInt496--
+                        HostPingThread.aWorldListEntryArray2261!![ByteArrayPool.anInt496] = null
                     }
                 } else {
                     val string_72_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-74).toByte())
@@ -586,7 +586,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     worldListEntry.anInt308 = i
                     worldListEntry.aByte310 = i_68_
                     var i_73_: Int
-                    i_73_ = -1 + Class37.anInt496
+                    i_73_ = -1 + ByteArrayPool.anInt496
                     while (i_73_ >= 0) {
                         val i_74_ = HostPingThread.aWorldListEntryArray2261!![i_73_]!!.aString312!!.compareTo(worldListEntry.aString312!!)
                         if (i_74_ == 0) {
@@ -601,14 +601,14 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                         if (i_74_ < 0) break
                         i_73_--
                     }
-                    if (HostPingThread.aWorldListEntryArray2261!!.size <= Class37.anInt496) {
+                    if (HostPingThread.aWorldListEntryArray2261!!.size <= ByteArrayPool.anInt496) {
                         ModelVertexColorBuffer.aIntRange_6584 = null
                         return true
                     }
-                    for (i_75_ in Class37.anInt496 - 1 downTo i_73_ + 1) HostPingThread.aWorldListEntryArray2261!![1 + i_75_] = HostPingThread.aWorldListEntryArray2261!![i_75_]
-                    if (Class37.anInt496 == 0) HostPingThread.aWorldListEntryArray2261 = arrayOfNulls<WorldListEntry>(100)
+                    for (i_75_ in ByteArrayPool.anInt496 - 1 downTo i_73_ + 1) HostPingThread.aWorldListEntryArray2261!![1 + i_75_] = HostPingThread.aWorldListEntryArray2261!![i_75_]
+                    if (ByteArrayPool.anInt496 == 0) HostPingThread.aWorldListEntryArray2261 = arrayOfNulls<WorldListEntry>(100)
                     HostPingThread.aWorldListEntryArray2261!![i_73_ - -1] = worldListEntry
-                    Class37.anInt496++
+                    ByteArrayPool.anInt496++
                     if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
                 }
                 SceneProjector.anInt2986 = ResourceLoaderThread.anInt3918
@@ -1731,7 +1731,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             if (ModelVertexColorBuffer.aIntRange_6584 == TextureAtlasState.aIntRange_4421) {
                 SceneProjector.anInt2986 = ResourceLoaderThread.anInt3918
                 if (RadialTextureNode.anInt9341 == 0) {
-                    Class37.anInt496 = 0
+                    ByteArrayPool.anInt496 = 0
                     Class50.aString863 = null
                     HostPingThread.aWorldListEntryArray2261 = null
                     CameraSplineNode.aString6854 = null
@@ -1749,10 +1749,10 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     ModelVertexColorBuffer.aIntRange_6584 = null
                     return true
                 }
-                Class37.anInt496 = i
+                ByteArrayPool.anInt496 = i
                 val worldListEntries = arrayOfNulls<WorldListEntry>(100)
                 var i_234_ = 0
-                while (Class37.anInt496 > i_234_) {
+                while (ByteArrayPool.anInt496 > i_234_) {
                     worldListEntries[i_234_] = WorldListEntry()
                     worldListEntries[i_234_]!!.aString314 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(103.toByte())
                     bool_233_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
@@ -1766,7 +1766,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     i_234_++
                 }
                 var bool_235_ = false
-                var i_236_ = Class37.anInt496
+                var i_236_ = ByteArrayPool.anInt496
                 while (i_236_ > 0) {
                     i_236_--
                     bool_235_ = true

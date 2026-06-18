@@ -239,7 +239,7 @@ class LinkedNodeListIterator {
                                 }
                                 var bool_30_ = false
                                 var i_31_ = 0
-                                while (Class37.anInt496 > i_31_) {
+                                while (ByteArrayPool.anInt496 > i_31_) {
                                     if (player.aString10544 == HostPingThread.aWorldListEntryArray2261!![i_31_]!!.aString306) {
                                         bool_30_ = true
                                         break

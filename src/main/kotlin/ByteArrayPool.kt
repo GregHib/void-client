@@ -1,7 +1,7 @@
 /* Class37 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class37 {
+object ByteArrayPool {
     @JvmField
     var anInt490: Int = 0
     @JvmField

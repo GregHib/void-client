@@ -171,7 +171,7 @@ class ParameterizedText : HashLinkedListNode() {
             method2296(-99)
             HslAdjustTextureNode.anInt9383 = 0
             Class50.aString863 = null
-            Class37.anInt496 = 0
+            ByteArrayPool.anInt496 = 0
             HostPingThread.aWorldListEntryArray2261 = null
             MinimapSpriteRenderer.anInt4930 = 0
         }

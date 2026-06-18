@@ -78,10 +78,10 @@ class GlTexture3D : GlTexture {
             TextureDefinitionLoader.anInt1974 = i_12_
             BlendTextureNode.anInt9360 = i_14_
             TerrainTileGeometry.anInt3006 = i_13_
-            Class37.anInt492 = DisplayModeOptionState.anInt6111 - NpcActorEntity.anInt10084
-            if (Class37.anInt492 < 0) {
-                AnimatedModelRenderer.anInt8412 = -Class37.anInt492
-                Class37.anInt492 = 0
+            ByteArrayPool.anInt492 = DisplayModeOptionState.anInt6111 - NpcActorEntity.anInt10084
+            if (ByteArrayPool.anInt492 < 0) {
+                AnimatedModelRenderer.anInt8412 = -ByteArrayPool.anInt492
+                ByteArrayPool.anInt492 = 0
             } else AnimatedModelRenderer.anInt8412 = 0
             IntPair.anInt6974 = GlIndexBufferArb.anInt8502 - NpcActorEntity.anInt10084
             if (IntPair.anInt6974 < 0) {
@@ -138,7 +138,7 @@ class GlTexture3D : GlTexture {
                 }
                 FacingDirectionNode.aBooleanArrayArray6656 = WorldMapIconLabel.aBooleanArrayArray8596
                 Class99.aBooleanArrayArray1572 = WorldMapIconLabel.aBooleanArrayArray8596!!
-                Class37.anInt492 = 0
+                ByteArrayPool.anInt492 = 0
                 IntPair.anInt6974 = 0
                 ProjectileConfigUtil.anInt387 = SpotAnimEntity.anInt6451
                 Class59_Sub1.anInt5293 = RegionSceneShifter.anInt7054
