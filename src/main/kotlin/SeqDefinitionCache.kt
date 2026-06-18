@@ -327,8 +327,8 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 val i_23_ = class348_sub49.readUnsignedByte(255)
                 if (i_23_ == 0) break
                 if (i_23_ == 1) {
-                    Class81.anIntArray1432 = IntArray(6)
-                    val is_28_: IntArray = Class81.anIntArray1432!!
+                    FogState.anIntArray1432 = IntArray(6)
+                    val is_28_: IntArray = FogState.anIntArray1432!!
                     is_28_[0] = class348_sub49.readUnsignedShort(i + 842397832)
                     is_28_[1] = class348_sub49.readUnsignedShort(i + 842397832)
                     is_28_[2] = class348_sub49.readUnsignedShort(842397944)

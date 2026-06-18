@@ -90,7 +90,7 @@ class LightDetailOptionState : GraphicsOptionState {
                     class348_sub47.method3326((-45).toByte())
                 }
                 SceneRegionState.anInt193 = 0
-                Class81.anInt1433 += i_2_
+                FogState.anInt1433 += i_2_
             }
             if (i != 0) method1799(58)
             anInt6038++

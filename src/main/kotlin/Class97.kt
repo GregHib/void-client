@@ -219,7 +219,7 @@ class Class97 internal constructor(var_ha_Sub3: NativeRenderer?, videoStreamDeco
             NodeDeque.aModelLightingConfigArrayArray3335 = Array(i) { arrayOfNulls(i_7_) }
             if (i_6_ == 21719) {
                 anInt1549++
-                if (Class81.anIntArray1432 != null) ParameterizedText.aCircleRasterizer_9571 = SceneProjector.method1636(Class81.anIntArray1432!![4], Class81.anIntArray1432!![3], Class81.anIntArray1432!![0], Class81.anIntArray1432!![5], Class81.anIntArray1432!![1], -1, Class81.anIntArray1432!![2])
+                if (FogState.anIntArray1432 != null) ParameterizedText.aCircleRasterizer_9571 = SceneProjector.method1636(FogState.anIntArray1432!![4], FogState.anIntArray1432!![3], FogState.anIntArray1432!![0], FogState.anIntArray1432!![5], FogState.anIntArray1432!![1], -1, FogState.anIntArray1432!![2])
                 LocalizedText.aModelLightingConfig_3547 = ModelLightingConfig()
                 method3936(0)
             }

@@ -498,7 +498,7 @@ import IsaacCipher.Companion.method782
 import BufferedRandomAccessFile.Companion.method786
 import NpcType.Companion.method804
 import SynthSoundGenerator.Companion.method808
-import Class81.method810
+import FogState.method810
 import Class83.Companion.method815
 import Class84.Companion.method817
 import Class84.Companion.method825
@@ -1563,8 +1563,8 @@ class Client : GameAppletFrame() {
                 OutputStream_Sub1.aRandom93!!.setSeed(Hashtable.anInt4383.toLong())
             }
             if (Class367_Sub11.anInt7396 % 50 == 0) {
-                ModelResourceBundle.anInt7134 = Class81.anInt1433
-                Class81.anInt1433 = 0
+                ModelResourceBundle.anInt7134 = FogState.anInt1433
+                FogState.anInt1433 = 0
                 CompassSmoother.anInt3372 = MinimapRectClipper.anInt221
                 MinimapRectClipper.anInt221 = 0
             }

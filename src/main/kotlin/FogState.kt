@@ -1,7 +1,7 @@
 /* Class81 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class81 {
+object FogState {
     @JvmField
     var anIntArray1432: IntArray? = null
     @JvmField
