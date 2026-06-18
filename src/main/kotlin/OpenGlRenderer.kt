@@ -76,7 +76,8 @@ import jaggl.OpenGL.Companion.glVertexPointer
 import jaggl.OpenGL.Companion.glViewport
 import java.awt.Canvas
 import java.awt.Rectangle
-import java.util.*
+import java.util.Hashtable
+import java.util.Locale
 import kotlin.math.max
 import kotlin.math.sqrt
 
@@ -2954,7 +2955,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anStagedInitializerArray7743 = arrayOfNulls<StagedInitializer>(4)
         anInt7746 = -1
         LinkedNodeListIterator()
-        Hashtable(16)
+//        Hashtable(16)
         aNodeDeque_7749 = NodeDeque()
         aNodeDeque_7751 = NodeDeque()
         aNodeDeque_7752 = NodeDeque()

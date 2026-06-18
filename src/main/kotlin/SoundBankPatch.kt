@@ -120,10 +120,10 @@ class SoundBankPatch : LinkedListNode {
                 i_22_++
             }
         } else i_20_ = i_16_
-        val skeletalAnimFrameData: Array<SkeletalAnimFrameData?> = arrayOfNulls<SkeletalAnimFrameData>(i_20_)
-        for (i_24_ in skeletalAnimFrameData.indices) {
-            skeletalAnimFrameData[i_24_] = SkeletalAnimFrameData()
-            val class23 = skeletalAnimFrameData[i_24_]!!
+        val skeletalAnimFrameDataArray: Array<SkeletalAnimFrameData?> = arrayOfNulls<SkeletalAnimFrameData>(i_20_)
+        for (i_24_ in skeletalAnimFrameDataArray.indices) {
+            skeletalAnimFrameDataArray[i_24_] = SkeletalAnimFrameData()
+            val class23 = skeletalAnimFrameDataArray[i_24_]!!
             var i_25_ = class348_sub49.readUnsignedByte(255)
             if (i_25_ > 0) class23.aByteArray348 = ByteArray(i_25_ * 2)
             i_25_ = class348_sub49.readUnsignedByte(255)
@@ -206,7 +206,7 @@ class SoundBankPatch : LinkedListNode {
         for (i_43_ in 0..127) {
             if (anIntArray6793!![i_43_] != 0) {
                 if (i_35_ == 0) {
-                    skeletalAnimFrameData = skeletalAnimFrameData[is_19_[i_36_].toInt()]
+                    skeletalAnimFrameData = skeletalAnimFrameDataArray[is_19_[i_36_].toInt()]
                     if (i_36_ < is_17_.size) i_35_ = is_17_[i_36_++].toInt()
                     else i_35_ = -1
                 }
@@ -229,7 +229,7 @@ class SoundBankPatch : LinkedListNode {
         this.anInt6797 = class348_sub49.readUnsignedByte(255) - -1
         var i_46_ = 0
         while (i_20_ > i_46_) {
-            val class23_47_ = skeletalAnimFrameData[i_46_]!!
+            val class23_47_ = skeletalAnimFrameDataArray[i_46_]!!
             if (class23_47_.aByteArray348 != null) {
                 var i_48_ = 1
                 while (i_48_ < class23_47_.aByteArray348!!.size) {
@@ -261,7 +261,7 @@ class SoundBankPatch : LinkedListNode {
             }
         }
         for (i_52_ in 0..<i_20_) {
-            val class23_53_ = skeletalAnimFrameData[i_52_]!!
+            val class23_53_ = skeletalAnimFrameDataArray[i_52_]!!
             if (class23_53_.aByteArray344 != null) {
                 i_32_ = 0
                 var i_54_ = 2
@@ -274,7 +274,7 @@ class SoundBankPatch : LinkedListNode {
         }
         var i_55_ = 0
         while (i_20_ > i_55_) {
-            val class23_56_ = skeletalAnimFrameData[i_55_]!!
+            val class23_56_ = skeletalAnimFrameDataArray[i_55_]!!
             if (class23_56_.aByteArray348 != null) {
                 i_32_ = 0
                 var i_57_ = 2
@@ -367,27 +367,27 @@ class SoundBankPatch : LinkedListNode {
         }
         var i_83_ = 0
         while (i_20_ > i_83_) {
-            skeletalAnimFrameData[i_83_]!!.anInt347 = class348_sub49.readUnsignedByte(255)
+            skeletalAnimFrameDataArray[i_83_]!!.anInt347 = class348_sub49.readUnsignedByte(255)
             i_83_++
         }
         for (i_84_ in 0..<i_20_) {
-            val class23_85_ = skeletalAnimFrameData[i_84_]!!
+            val class23_85_ = skeletalAnimFrameDataArray[i_84_]!!
             if (class23_85_.aByteArray348 != null) class23_85_.anInt345 = class348_sub49.readUnsignedByte(255)
             if (class23_85_.aByteArray344 != null) class23_85_.anInt349 = class348_sub49.readUnsignedByte(255)
             if (class23_85_.anInt347 > 0) class23_85_.anInt350 = class348_sub49.readUnsignedByte(255)
         }
         var i_86_ = 0
         while (i_20_ > i_86_) {
-            skeletalAnimFrameData[i_86_]!!.anInt352 = class348_sub49.readUnsignedByte(255)
+            skeletalAnimFrameDataArray[i_86_]!!.anInt352 = class348_sub49.readUnsignedByte(255)
             i_86_++
         }
         for (i_87_ in 0..<i_20_) {
-            val class23_88_ = skeletalAnimFrameData[i_87_]!!
+            val class23_88_ = skeletalAnimFrameDataArray[i_87_]!!
             if (class23_88_.anInt352 > 0) class23_88_.anInt353 = class348_sub49.readUnsignedByte(255)
         }
         var i_89_ = 0
         while (i_20_ > i_89_) {
-            val class23_90_ = skeletalAnimFrameData[i_89_]!!
+            val class23_90_ = skeletalAnimFrameDataArray[i_89_]!!
             if (class23_90_.anInt353 > 0) class23_90_.anInt346 = class348_sub49.readUnsignedByte(255)
             i_89_++
         }

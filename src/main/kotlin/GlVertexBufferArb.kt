@@ -107,7 +107,7 @@ class GlVertexBufferArb internal constructor(glRenderDevice: GlRenderDevice, boo
         }
 
         @JvmStatic
-        fun method2128(i: Int, class348_sub49: Buffer): WorldMapPolygonIconLabel {
+        fun method2128(i: Int, class348_sub49: ByteBuffer): WorldMapPolygonIconLabel {
             anInt8495++
             val class369_sub3 = StringValueNode.method3322(0, class348_sub49)
             val i_5_ = class348_sub49.readShort(13638)

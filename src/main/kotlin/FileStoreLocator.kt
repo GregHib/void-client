@@ -1,6 +1,6 @@
 import java.io.File
 import java.io.RandomAccessFile
-import java.util.*
+import java.util.Hashtable
 
 /*
  * Class201

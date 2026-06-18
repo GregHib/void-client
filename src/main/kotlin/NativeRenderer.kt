@@ -8,7 +8,7 @@ import jaclib.memory.heap.NativeHeapBuffer
 import jagex3.graphics2.hw.NativeInterface
 import OpenGlRenderNode.Companion.method3297
 import java.awt.Canvas
-import java.util.*
+import java.util.Hashtable
 import kotlin.math.cos
 import kotlin.math.max
 import kotlin.math.sin
