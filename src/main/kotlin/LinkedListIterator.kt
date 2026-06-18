@@ -1,5 +1,5 @@
 import GlBloomEffect.Companion.method2766
-import Class88.Companion.method847
+import SceneNodeDeque.Companion.method847
 import java.io.DataInputStream
 import java.net.URL
 

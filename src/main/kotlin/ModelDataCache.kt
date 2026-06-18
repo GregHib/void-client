@@ -40,7 +40,7 @@ object ModelDataCache {
             CollisionMapRegion.anInt1720 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
             method3553(true, 103.toByte(), 0)
         }
-        Class88.aBoolean1500 = bool
+        SceneNodeDeque.aBoolean1500 = bool
         MapRegionLoaderThread.anInt4202 = i
         IdleAnimationsOptionState.anInt5909 = i_0_
         MapRegionLoader.method754(i_1_)

@@ -13,7 +13,10 @@ import java.io.IOException
 import java.net.Socket
 import java.net.URL
 
-class Class88 {
+/*
+ * Class88
+ */
+class SceneNodeDeque {
     @JvmField
     var aClass318_Sub9_1503: SceneListNode? = SceneListNode()
     private var aClass318_Sub9_1505: SceneListNode? = null

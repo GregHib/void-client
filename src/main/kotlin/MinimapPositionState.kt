@@ -6,7 +6,7 @@ import CacheArchiveIndexLoader.Companion.method338
 import SolidFillComponent.Companion.method198
 import ActiveMapRegion.method769
 import ConfigArchiveLoader.Companion.method814
-import Class88.Companion.method842
+import SceneNodeDeque.Companion.method842
 
 /* Class302 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -78,7 +78,7 @@ class WidgetTextConfig {
         fun method360(i: Byte, i_0_: Int): BoxedIntHolder? {
             anInt505++
             if (i.toInt() != -57) method363(97)
-            val class227s = Class88.method841(i + -70)
+            val class227s = SceneNodeDeque.method841(i + -70)
             var i_1_ = 0
             while (class227s.size > i_1_) {
                 val class227 = class227s[i_1_]!!

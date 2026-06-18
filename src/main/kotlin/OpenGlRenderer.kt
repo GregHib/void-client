@@ -3546,7 +3546,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         fun method3802(i: Int, i_315_: Int, i_316_: Int, i_317_: Int, i_318_: Int, i_319_: Int, i_320_: Int) {
             anInt7572++
             val i_321_ = ShaderState.anInt6513
-            Class88.anInt1497 = 0
+            SceneNodeDeque.anInt1497 = 0
             val `is` = ScrollTexMaterialPass.anIntArray6290!!
             var i_322_ = 0
             while ((i_322_ < ModelDefinitionLoader.anInt2057 + i_321_)) {
@@ -3567,15 +3567,15 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == TextureQualityOptionState.anInt6006) || ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub1_sub3_sub3.plane))) {
                     ModelKeyBuilder.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, 100.toByte())
                     if (RemoveRoofsOptionState.anIntArray6062!![0] >= 0) {
-                        if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || ShaderProgram.anInt7276 == 0 || ShaderProgram.anInt7276 == 3 || (ShaderProgram.anInt7276 == 1 && (KeyEventNode.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && Class88.anInt1497 < ConfigVarProgress.anInt4814) {
-                            ConfigVarProgress.anIntArray4819!![Class88.anInt1497] = ((WorldMapLabel.aFontDefinition_4962!!.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2)
-                            ConfigVarProgress.anIntArray4822!![Class88.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![0]
-                            ConfigVarProgress.anIntArray4813!![Class88.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![1]
-                            ConfigVarProgress.anIntArray4817!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10201
-                            ConfigVarProgress.anIntArray4806!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10234
-                            ConfigVarProgress.anIntArray4812!![Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10264
-                            ConfigVarProgress.aStringArray4818!![Class88.anInt1497] = class318_sub1_sub3_sub3.aString10292
-                            Class88.anInt1497++
+                        if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || ShaderProgram.anInt7276 == 0 || ShaderProgram.anInt7276 == 3 || (ShaderProgram.anInt7276 == 1 && (KeyEventNode.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && SceneNodeDeque.anInt1497 < ConfigVarProgress.anInt4814) {
+                            ConfigVarProgress.anIntArray4819!![SceneNodeDeque.anInt1497] = ((WorldMapLabel.aFontDefinition_4962!!.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2)
+                            ConfigVarProgress.anIntArray4822!![SceneNodeDeque.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![0]
+                            ConfigVarProgress.anIntArray4813!![SceneNodeDeque.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![1]
+                            ConfigVarProgress.anIntArray4817!![SceneNodeDeque.anInt1497] = class318_sub1_sub3_sub3.anInt10201
+                            ConfigVarProgress.anIntArray4806!![SceneNodeDeque.anInt1497] = class318_sub1_sub3_sub3.anInt10234
+                            ConfigVarProgress.anIntArray4812!![SceneNodeDeque.anInt1497] = class318_sub1_sub3_sub3.anInt10264
+                            ConfigVarProgress.aStringArray4818!![SceneNodeDeque.anInt1497] = class318_sub1_sub3_sub3.aString10292
+                            SceneNodeDeque.anInt1497++
                         }
                         var i_323_ = RemoveRoofsOptionState.anIntArray6062!![1] + i
                         if (!(class318_sub1_sub3_sub3.aBoolean10309) && (Class367_Sub11.anInt7396 < class318_sub1_sub3_sub3.anInt10223)) {
@@ -4015,7 +4015,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 SpriteSheetCache.method1430(--class318_sub1_sub3_sub3!!.anInt10261, 119.toByte(), i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3)
             }
             val i_437_ = i_316_ + (WorldMapLabel.aFontDefinition_4962!!.anInt1993 + WorldMapLabel.aFontDefinition_4962!!.anInt1988)
-            for (i_438_ in 0..<Class88.anInt1497) {
+            for (i_438_ in 0..<SceneNodeDeque.anInt1497) {
                 val i_439_ = ConfigVarProgress.anIntArray4822!![i_438_]
                 var i_440_ = ConfigVarProgress.anIntArray4813!![i_438_]
                 val i_441_ = ConfigVarProgress.anIntArray4819!![i_438_]

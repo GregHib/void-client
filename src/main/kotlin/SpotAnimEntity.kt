@@ -325,7 +325,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                             i_7_ = -MapRegionLoader.anInt1266 + `is`[1]
                             i_8_ = -MapRegionLoader.anInt1263 + `is`[2]
                         }
-                        if (Class88.aBoolean1500 || i_7_ < 0 || MapRegionLoader.anInt1259 <= i_7_ || i_8_ < 0 || MapRegionLoader.anInt1267 <= i_8_) {
+                        if (SceneNodeDeque.aBoolean1500 || i_7_ < 0 || MapRegionLoader.anInt1259 <= i_7_ || i_8_ < 0 || MapRegionLoader.anInt1267 <= i_8_) {
                             if (IdleAnimationsOptionState.anInt5909 == -1 || MapRegionLoaderThread.anInt4202 == -1) {
                                 MapRegionLoader.aClass348_Sub42_Sub14_1243!!.method3242(`is`, 123, 0x3fff and (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9640), (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9640) shr 14 and 0x3fff)
                                 DebugOverlayRenderer.anInt3170 = `is`[2] - MapRegionLoader.anInt1263
@@ -338,7 +338,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                                     WidgetActionEntry.anInt6992 = -MapRegionLoader.anInt1266 + `is`[1]
                                     DebugOverlayRenderer.anInt3170 = -MapRegionLoader.anInt1263 + `is`[2]
                                 }
-                                Class88.aBoolean1500 = false
+                                SceneNodeDeque.aBoolean1500 = false
                             }
                         } else {
                             i_7_ += (10.0 * Math.random()).toInt() + -5

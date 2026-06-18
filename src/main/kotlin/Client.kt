@@ -503,7 +503,7 @@ import WaterTextureSet.Companion.method815
 import MapSceneCache.Companion.method817
 import MapSceneCache.Companion.method825
 import WhirlpoolHash.Companion.method830
-import Class88.Companion.method843
+import SceneNodeDeque.Companion.method843
 import Class89.Companion.method851
 import Class9.method216
 import Class90.method852
@@ -1624,7 +1624,7 @@ class Client : GameAppletFrame() {
                 if (WorldMapRenderer.anInt4674 == 12) method843(113.toByte())
                 else if (method2653(true, WorldMapRenderer.anInt4674) && !GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-86).toByte())) method2991(11432)
                 else if (WorldMapRenderer.anInt4674 == 13) {
-                    Class88.method843((-75).toByte())
+                    SceneNodeDeque.method843((-75).toByte())
                     if (HslColorTableNode.anInt6634 != -3 && HslColorTableNode.anInt6634 != 2 && HslColorTableNode.anInt6634 != 15) method3141(false, 11.toByte())
                 }
             } else {

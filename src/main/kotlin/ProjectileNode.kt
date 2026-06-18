@@ -126,7 +126,7 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
                         class148 = class148.aWidgetNodeLink_2038
                     }
                 }
-                class318_sub10.aClass98_6481.aClass88_1569.method844(this, true)
+                class318_sub10.aClass98_6481.aSceneNodeDeque_1569.method844(this, true)
             }
         }
     }

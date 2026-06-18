@@ -88,7 +88,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
             DirectionPath.anInt1064 = Class367_Sub11.anInt7396
             if (RenderNode.anInt9721 != -1) {
                 TerrainShadowBuilderGl3.anInt7008 = 0
-                Class88.method842(false)
+                SceneNodeDeque.method842(false)
             }
             FacingDirectionNode.aRenderer6654!!.la()
             SpriteRenderEntry.method3281(77.toByte(), FacingDirectionNode.aRenderer6654!!)

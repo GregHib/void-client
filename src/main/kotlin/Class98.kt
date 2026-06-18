@@ -6,7 +6,7 @@ import SphereMapMaterialPass.Companion.method2174
 */
 class Class98 {
     @JvmField
-    var aClass88_1569: Class88 = Class88()
+    var aSceneNodeDeque_1569: SceneNodeDeque = SceneNodeDeque()
 
     companion object {
         @JvmField

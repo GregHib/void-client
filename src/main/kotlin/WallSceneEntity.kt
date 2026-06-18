@@ -202,7 +202,7 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: N
             val i_15_ = 87 / ((i - -7) / 56)
             anInt9958++
             if (string != "") {
-                Class88.anInt1498++
+                SceneNodeDeque.anInt1498++
                 val class348_sub47 = method2148(aFontMetaRef_8724, TheoraVideoStream.aIsaacCipher_9029, -124)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)

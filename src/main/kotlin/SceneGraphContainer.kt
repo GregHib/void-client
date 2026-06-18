@@ -22,7 +22,7 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
     }
 
     fun method2528(var_renderer: Renderer?) {
-        this.aClass98_6481.aClass88_1569.method845(89.toByte())
+        this.aClass98_6481.aSceneNodeDeque_1569.method845(89.toByte())
         var class318_sub7 = aDoublyLinkedNodeList_6478.method1872(8) as SpotAnimEntity?
         while (class318_sub7 != null) {
             class318_sub7.method2511(true, var_renderer, aLong6471)
@@ -190,9 +190,9 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
     }
 
     fun method2539(): Class98 {
-        this.aClass98_6481.aClass88_1569.method845(43.toByte())
+        this.aClass98_6481.aSceneNodeDeque_1569.method845(43.toByte())
         for (i in (this.aClass318_Sub9_Sub2_Sub1Array6475).indices) {
-            if ((this.aClass318_Sub9_Sub2_Sub1Array6475[i] != null) && this.aClass318_Sub9_Sub2_Sub1Array6475[i]!!.aClass318_Sub7_10419 != null) this.aClass98_6481.aClass88_1569.method844((this.aClass318_Sub9_Sub2_Sub1Array6475[i]), true)
+            if ((this.aClass318_Sub9_Sub2_Sub1Array6475[i] != null) && this.aClass318_Sub9_Sub2_Sub1Array6475[i]!!.aClass318_Sub7_10419 != null) this.aClass98_6481.aSceneNodeDeque_1569.method844((this.aClass318_Sub9_Sub2_Sub1Array6475[i]), true)
         }
         return this.aClass98_6481
     }

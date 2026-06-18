@@ -148,7 +148,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SoundChannelMixer.anInt3609 = 0
             GlSpriteRenderer.anInt8426 = 0
             ParticleDefLoader.anInt2460 = 0
-            Class88.anInt1493 = 0
+            SceneNodeDeque.anInt1493 = 0
             VorbisOggDecoder.anInt8998 = 0
             HslColorConfig.anInt329 = 0
             OpenGlRenderer.anInt7596 = 0
@@ -291,7 +291,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DisplayModeOptionState.anInt6104 = 0
             Buffer.anInt7172 = 0
             RingBufferInputStream.anInt4547 = 0
-            Class88.anInt1504 = 0
+            SceneNodeDeque.anInt1504 = 0
             DoublyLinkedNodeList.anInt3163 = 0
             FrameBufferObject.anInt4867 = 0
             ScrollbarComponent.anInt8351 = 0
@@ -403,7 +403,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ModelWallEntity.anInt10121 = 0
             NativeRenderNode.anInt10469 = 0
             LoadingBarRenderer.anInt5038 = 0
-            Class88.anInt1494 = 0
+            SceneNodeDeque.anInt1494 = 0
             GameClock.anInt1111 = 0
             GlRenderDevice.anInt9898 = 0
             OpenGlRenderer.anInt7670 = 0
@@ -456,7 +456,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OggMediaStream.anInt978 = 0
             TrackedGroundDecor.anInt10406 = 0
             DoublyLinkedNodeList.anInt3158 = 0
-            Class88.anInt1492 = 0
+            SceneNodeDeque.anInt1492 = 0
             VarpStore.anInt5073 = 0
             SoundChannelMixer.anInt3608 = 0
             AwtKeyboardListener.anInt6532 = 0
@@ -1778,7 +1778,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7584 = 0
             ModelFacePriorityNode.anInt1893 = 0
             TextureFormatInfo.anInt3849 = 0
-            Class88.anInt1501 = 0
+            SceneNodeDeque.anInt1501 = 0
             BrightnessOptionState.anInt5898 = 0
             SizeBoundedSoftCache.anInt2320 = 0
             OpenGlRenderer.anInt7559 = 0
@@ -1897,7 +1897,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ItemDefinition.anInt2790 = 0
             Class367_Sub1.anInt7279 = 0
             ModelOrSpriteHolder.anInt116 = 0
-            Class88.anInt1496 = 0
+            SceneNodeDeque.anInt1496 = 0
             HudTabPanel.anInt2991 = 0
             ResourceLoaderThread.anInt3912 = 0
             InputStream_Sub1.anInt72 = 0
@@ -1937,7 +1937,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlVertexBufferArb.anInt8483 = 0
             DefaultGraphicsOptionState.anInt6133 = 0
             OpenGlModel.anInt5545 = 0
-            Class88.anInt1502 = 0
+            SceneNodeDeque.anInt1502 = 0
             ChatScriptListNode.anInt9537 = 0
             FloatCameraTransform.anInt5707 = 0
             TextureMaterialGroup.anInt9675 = 0
@@ -1996,7 +1996,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SlotBinding.anInt3399 = 0
             BloomGraphicsOptionState.anInt5970 = 0
             PerlinTextureProvider.anInt5811 = 0
-            Class88.anInt1499 = 0
+            SceneNodeDeque.anInt1499 = 0
             Class367_Sub9.anInt7366 = 0
             SynthVoiceGroup.anInt8849 = 0
             OpenGlRenderer.anInt7678 = 0
@@ -2586,7 +2586,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SceneLinkedListNode.anInt3973 = 0
             ViewportTransform.anInt3664 = 0
             Client.anInt5179 = 0
-            Class88.anInt1498 = 0
+            SceneNodeDeque.anInt1498 = 0
             WeaveTextureNode.anInt9272 = 0
             AntialiasOptionState.anInt6077 = 0
             WorldMapRenderer.anInt4676 = 0
@@ -3020,7 +3020,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NpcActorEntity.anInt10092 = 0
             GroundDecorSceneEntity.anInt9975 = 0
             NativeRenderer.anInt7907 = 0
-            Class88.anInt1495 = 0
+            SceneNodeDeque.anInt1495 = 0
             TrackedGroundDecor.anInt10379 = 0
             MidiSequencePlayer.anInt8898 = 0
             Class89.anInt1509 = 0

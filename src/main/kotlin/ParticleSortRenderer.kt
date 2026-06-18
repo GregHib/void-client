@@ -57,7 +57,7 @@ class ParticleSortRenderer internal constructor() {
                     var i_5_ = 0
                     var i_6_ = 2147483647
                     var i_7_ = 0
-                    val class318_sub9 = (class98!!.aClass88_1569.aClass318_Sub9_1503)
+                    val class318_sub9 = (class98!!.aSceneNodeDeque_1569.aClass318_Sub9_1503)
                     var class318_sub9_8_ = (class318_sub9!!.aClass318_Sub9_6469)
                     while (class318_sub9_8_ !== class318_sub9) {
                         val class318_sub9_sub2 = class318_sub9_8_ as PositionedSceneNode

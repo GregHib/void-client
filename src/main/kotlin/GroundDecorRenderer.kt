@@ -55,7 +55,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
                     var i_7_ = 0
                     var i_8_ = 2147483647
                     var i_9_ = i_3_
-                    val class318_sub9 = (class98!!.aClass88_1569.aClass318_Sub9_1503)
+                    val class318_sub9 = (class98!!.aSceneNodeDeque_1569.aClass318_Sub9_1503)
                     var class318_sub9_10_ = (class318_sub9!!.aClass318_Sub9_6469)
                     while (class318_sub9 !== class318_sub9_10_) {
                         val class318_sub9_sub2 = class318_sub9_10_ as PositionedSceneNode
