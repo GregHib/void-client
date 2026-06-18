@@ -7,7 +7,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
     private val aTypedRecordTable_5006: TypedRecordTable?
     private var aRenderer5010: Renderer? = null
     private var aBoolean5011 = false
-    private val anInterface1Array5012: Array<Interface1?>
+    private val anLifecycleArray5012: Array<Lifecycle?>
     override fun method57(i: Int) {
         anInt5004++
         if (aRenderer5010 !== FacingDirectionNode.aRenderer6654) {
@@ -15,7 +15,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
             aBoolean5011 = true
         }
         aRenderer5010!!.GA(0)
-        val interface1s = anInterface1Array5012
+        val interface1s = anLifecycleArray5012
         var i_0_ = 0
         while (interface1s.size > i_0_) {
             val interface1 = interface1s[i_0_]
@@ -29,7 +29,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
         var bool = bool
         anInt5018++
         bool = true
-        val interface1s = anInterface1Array5012
+        val interface1s = anLifecycleArray5012
         var i_1_ = 0
         while (interface1s.size > i_1_) {
             val interface1 = interface1s[i_1_]
@@ -65,23 +65,23 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
         if (i != -19079) method58(false, 116)
         anInt5014++
         var i_4_ = 0
-        val interface1s = anInterface1Array5012
+        val interface1s = anLifecycleArray5012
         var i_5_ = 0
         while (interface1s.size > i_5_) {
             val interface1 = interface1s[i_5_]
             if (interface1 == null || interface1.method8((-121).toByte())) i_4_++
             i_5_++
         }
-        return i_4_ * 100 / anInterface1Array5012.size
+        return i_4_ * 100 / anLifecycleArray5012.size
     }
 
     init {
         try {
             aTypedRecordTable_5006 = typedRecordTable
-            anInterface1Array5012 = arrayOfNulls<Interface1>((aTypedRecordTable_5006!!.anInterface12Array3688).size)
+            anLifecycleArray5012 = arrayOfNulls<Lifecycle>((aTypedRecordTable_5006!!.anInterface12Array3688).size)
             var i = 0
-            while ((i < anInterface1Array5012.size)) {
-                anInterface1Array5012[i] = dualMaterialContainer!!.method1000(true, (aTypedRecordTable_5006.anInterface12Array3688[i]))
+            while ((i < anLifecycleArray5012.size)) {
+                anLifecycleArray5012[i] = dualMaterialContainer!!.method1000(true, (aTypedRecordTable_5006.anInterface12Array3688[i]))
                 i++
             }
         } catch (runtimeexception: RuntimeException) {

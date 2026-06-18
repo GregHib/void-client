@@ -12,7 +12,7 @@ class DualMaterialContainer internal constructor(js5Archive: Js5Archive?, js5Arc
         return aMapRegionLoaderThread_1633!!
     }
 
-    fun method1000(bool: Boolean, interface12: Interface12?): Interface1? {
+    fun method1000(bool: Boolean, interface12: Interface12?): Lifecycle? {
         anInt1640++
         if (interface12 == null) return null
         val class223 = interface12.method51(120.toByte())

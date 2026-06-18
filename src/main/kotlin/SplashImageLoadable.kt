@@ -3,7 +3,7 @@ import kotlin.math.max
 /* Class265 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SplashImageLoadable internal constructor(js5Archive: Js5Archive?, configValueProvider: ConfigValueProvider?) : Interface1 {
+class SplashImageLoadable internal constructor(js5Archive: Js5Archive?, configValueProvider: ConfigValueProvider?) : Lifecycle {
     private val aConfigValueProvider_4687: ConfigValueProvider?
     private var aAbstractModelRenderer_4688: AbstractModelRenderer? = null
     private val aJs5Archive_4694: Js5Archive?

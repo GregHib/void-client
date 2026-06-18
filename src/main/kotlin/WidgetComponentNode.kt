@@ -4,7 +4,7 @@ import IdentKitRecolor.Companion.method203
 /* Class127 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class WidgetComponentNode(js5Archive: Js5Archive?, particleEmitterDef: ParticleEmitterDef?) : Interface1 {
+open class WidgetComponentNode(js5Archive: Js5Archive?, particleEmitterDef: ParticleEmitterDef?) : Lifecycle {
     var aAbstractModelRenderer_4655: AbstractModelRenderer? = null
     var aParticleEmitterDef_4659: ParticleEmitterDef? = null
     private val aJs5Archive_4661: Js5Archive?

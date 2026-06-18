@@ -3,7 +3,7 @@ import GlTexture1D.Companion.method1974
 /* Class240 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class WorldMapRenderer internal constructor(mapRegionLoaderThread: MapRegionLoaderThread?, minimapSpriteRenderer: MinimapSpriteRenderer?) : Interface1 {
+class WorldMapRenderer internal constructor(mapRegionLoaderThread: MapRegionLoaderThread?, minimapSpriteRenderer: MinimapSpriteRenderer?) : Lifecycle {
     private val aMapRegionLoaderThread_4682: MapRegionLoaderThread?
     private val aMinimapSpriteRenderer_4685: MinimapSpriteRenderer?
     override fun method8(i: Byte): Boolean {
