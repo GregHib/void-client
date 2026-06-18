@@ -491,7 +491,7 @@ import CollisionFlagQuery.Companion.method722
 import TrigLookupTables.Companion.method725
 import PlayerSequenceSelector.method728
 import PlayerSequenceSelector.method729
-import Class72.Companion.method731
+import HintArrowRenderer.Companion.method731
 import Class74.Companion.method744
 import Class75.Companion.method746
 import Class77.Companion.method782

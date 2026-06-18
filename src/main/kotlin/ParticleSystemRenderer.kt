@@ -4,14 +4,14 @@ import java.awt.Canvas
 /*
  * Class305
  */
-class ParticleSystemRenderer internal constructor(private val anInt3858: Int, private val aClass72Array3862: Array<Class72?>?, i_23_: Int, private val anInt3866: Int, private val anInt3854: Int, private var anInt3853: Int) {
+class ParticleSystemRenderer internal constructor(private val anInt3858: Int, private val aHintArrowRendererArray3862: Array<HintArrowRenderer?>?, i_23_: Int, private val anInt3866: Int, private val anInt3854: Int, private var anInt3853: Int) {
     private var anInt3852 = 0
     private var aBoolean3857 = true
     private var anInt3859 = -1
     private var anInt3863 = 0
-    private val aClass72Array3865: Array<Class72?>?
+    private val aHintArrowRendererArray3865: Array<HintArrowRenderer?>?
     private var aAbstractModelRenderer_3867: AbstractModelRenderer? = null
-    private val aClass72_3871: Class72?
+    private val aHintArrowRenderer_3871: HintArrowRenderer?
 
     fun method2292(i: Int, var_renderer: Renderer, i_0_: Int): Boolean {
         if (anInt3859 != i_0_) {
@@ -23,19 +23,19 @@ class ParticleSystemRenderer internal constructor(private val anInt3858: Int, pr
                 aAbstractModelRenderer_3867 = null
                 anInt3863 = i_1_
             }
-            if (aClass72Array3862 != null) {
+            if (aHintArrowRendererArray3862 != null) {
                 anInt3852 = 0
-                val `is` = IntArray(aClass72Array3862.size)
+                val `is` = IntArray(aHintArrowRendererArray3862.size)
                 var i_2_ = 0
-                while (aClass72Array3862.size > i_2_) {
-                    val class72 = aClass72Array3862[i_2_]!!
+                while (aHintArrowRendererArray3862.size > i_2_) {
+                    val class72 = aHintArrowRendererArray3862[i_2_]!!
                     if (class72.method733(anInt3866, anInt3854, anInt3853, anInt3859)) {
                         `is`[anInt3852] = class72.anInt1232
-                        aClass72Array3865!![anInt3852++] = class72
+                        aHintArrowRendererArray3865!![anInt3852++] = class72
                     }
                     i_2_++
                 }
-                SoundChannelMixer.method2092(-1 + anInt3852, 0, `is`, -120, aClass72Array3865 as? Array<Any?>)
+                SoundChannelMixer.method2092(-1 + anInt3852, 0, `is`, -120, aHintArrowRendererArray3865 as? Array<Any?>)
             }
             aBoolean3857 = true
         }
@@ -45,7 +45,7 @@ class ParticleSystemRenderer internal constructor(private val anInt3858: Int, pr
         if (aBoolean3857) {
             aBoolean3857 = false
             for (i_3_ in -1 + anInt3852 downTo 0) {
-                val bool_4_ = aClass72Array3865!![i_3_]!!.method736(var_renderer, aClass72_3871)
+                val bool_4_ = aHintArrowRendererArray3865!![i_3_]!!.method736(var_renderer, aHintArrowRenderer_3871)
                 bool = bool or bool_4_
                 val class305_5_ = this
                 class305_5_.aBoolean3857 = class305_5_.aBoolean3857 or !bool_4_
@@ -93,16 +93,16 @@ class ParticleSystemRenderer internal constructor(private val anInt3858: Int, pr
                 }
             }
         } else var_renderer.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0)
-        for (i_19_ in -1 + anInt3852 downTo 0) aClass72Array3865!![i_19_]!!.method737(var_renderer, i_7_, i_9_, i_8_, i_13_, i_11_, i_10_)
+        for (i_19_ in -1 + anInt3852 downTo 0) aHintArrowRendererArray3865!![i_19_]!!.method737(var_renderer, i_7_, i_9_, i_8_, i_13_, i_11_, i_10_)
         val i_20_ = 103 % ((i_6_ - 14) / 32)
     }
 
     fun method2295(i: Byte) {
         anInt3864++
-        if (aClass72Array3862 != null) {
+        if (aHintArrowRendererArray3862 != null) {
             var i_21_ = 0
-            while (aClass72Array3862.size > i_21_) {
-                aClass72Array3862[i_21_]!!.method734()
+            while (aHintArrowRendererArray3862.size > i_21_) {
+                aHintArrowRendererArray3862[i_21_]!!.method734()
                 i_21_++
             }
         }
@@ -110,12 +110,12 @@ class ParticleSystemRenderer internal constructor(private val anInt3858: Int, pr
     }
 
     init {
-        if (aClass72Array3862 == null) {
-            aClass72Array3865 = null
-            aClass72_3871 = null
+        if (aHintArrowRendererArray3862 == null) {
+            aHintArrowRendererArray3865 = null
+            aHintArrowRenderer_3871 = null
         } else {
-            aClass72Array3865 = arrayOfNulls<Class72>(aClass72Array3862.size)
-            aClass72_3871 = if (i_23_ < 0) null else aClass72Array3862[i_23_]
+            aHintArrowRendererArray3865 = arrayOfNulls<HintArrowRenderer>(aHintArrowRendererArray3862.size)
+            aHintArrowRenderer_3871 = if (i_23_ < 0) null else aHintArrowRendererArray3862[i_23_]
         }
     }
 

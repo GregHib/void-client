@@ -33,7 +33,7 @@ abstract class TextureCubeProvider : CircleRasterizer() {
         @JvmStatic
         fun method2269(bool: Boolean) {
             if (bool != true) anInt6325 = -78
-            Class72.method739()
+            HintArrowRenderer.method739()
             anInt6326++
         }
     }

@@ -8,7 +8,7 @@ import kotlin.math.sqrt
 /* Class72 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class72 internal constructor(private val anInt1230: Int, private val anInt1224: Int, private val anInt1225: Int, private val anInt1216: Int, private val anInt1229: Int, private val anInt1218: Int, private val anInt1222: Int, private val aBoolean1223: Boolean) {
+class HintArrowRenderer internal constructor(private val anInt1230: Int, private val anInt1224: Int, private val anInt1225: Int, private val anInt1216: Int, private val anInt1229: Int, private val anInt1218: Int, private val anInt1222: Int, private val aBoolean1223: Boolean) {
     private var anInt1217 = 0
     private var anInt1219 = 0
     private var anInt1220 = 0
@@ -17,15 +17,15 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
     @JvmField
     var anInt1232: Int = 0
 
-    private fun method730(var_renderer: Renderer, class72_0_: Class72?): Boolean {
+    private fun method730(var_renderer: Renderer, hintArrowRenderer_0_: HintArrowRenderer?): Boolean {
         if (aAbstractModelRenderer_1221 == null) {
             if (anInt1230 == 0) {
                 if (MatrixCameraTransform.aRenderConfig5684!!.method4(-7953, anInt1224)) {
                     val `is` = MatrixCameraTransform.aRenderConfig5684!!.method6(-21540, anInt1220, 0.7f, anInt1224, false, anInt1220)
                     aAbstractModelRenderer_1221 = var_renderer.method3662(anInt1220, `is`, 94.toByte(), 0, anInt1220, anInt1220)
                 }
-            } else if (anInt1230 == 2) method740(var_renderer, class72_0_)
-            else if (anInt1230 == 1) method735(var_renderer, class72_0_)
+            } else if (anInt1230 == 2) method740(var_renderer, hintArrowRenderer_0_)
+            else if (anInt1230 == 1) method735(var_renderer, hintArrowRenderer_0_)
         }
         return aAbstractModelRenderer_1221 != null
     }
@@ -74,7 +74,7 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
         aAbstractModelRenderer_1221 = null
     }
 
-    private fun method735(var_renderer: Renderer, class72_19_: Class72?) {
+    private fun method735(var_renderer: Renderer, hintArrowRenderer_19_: HintArrowRenderer?) {
         method738(var_renderer)
         method732(var_renderer)
         var_renderer.K(anIntArray1226)
@@ -84,15 +84,15 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
         var i = 0
         var i_20_ = 0
         var i_21_ = 256
-        if (class72_19_ != null) {
-            if (class72_19_.aBoolean1223) {
-                i = -class72_19_.anInt1225
-                i_20_ = -class72_19_.anInt1216
-                i_21_ = -class72_19_.anInt1229
+        if (hintArrowRenderer_19_ != null) {
+            if (hintArrowRenderer_19_.aBoolean1223) {
+                i = -hintArrowRenderer_19_.anInt1225
+                i_20_ = -hintArrowRenderer_19_.anInt1216
+                i_21_ = -hintArrowRenderer_19_.anInt1229
             } else {
-                i = class72_19_.anInt1225 - anInt1225
-                i_20_ = class72_19_.anInt1216 - anInt1216
-                i_21_ = class72_19_.anInt1229 - anInt1229
+                i = hintArrowRenderer_19_.anInt1225 - anInt1225
+                i_20_ = hintArrowRenderer_19_.anInt1216 - anInt1216
+                i_21_ = hintArrowRenderer_19_.anInt1229 - anInt1229
             }
         }
         if (anInt1231 != 0) {
@@ -131,8 +131,8 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
         var_renderer.KA(anIntArray1226!![0], anIntArray1226!![1], anIntArray1226!![2], anIntArray1226!![3])
     }
 
-    fun method736(var_renderer: Renderer, class72_31_: Class72?): Boolean {
-        return aAbstractModelRenderer_1221 != null || method730(var_renderer, class72_31_)
+    fun method736(var_renderer: Renderer, hintArrowRenderer_31_: HintArrowRenderer?): Boolean {
+        return aAbstractModelRenderer_1221 != null || method730(var_renderer, hintArrowRenderer_31_)
     }
 
     fun method737(var_renderer: Renderer?, i: Int, i_32_: Int, i_33_: Int, i_34_: Int, i_35_: Int, i_36_: Int) {
@@ -147,7 +147,7 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
         }
     }
 
-    private fun method740(var_renderer: Renderer, class72_60_: Class72?) {
+    private fun method740(var_renderer: Renderer, hintArrowRenderer_60_: HintArrowRenderer?) {
         val class124 = ParticleConfigParser.method2277(0, WalkingTypeUtil.aJs5Archive_3309!!, anInt1224, -1)
         if (class124 != null) {
             var_renderer.K(anIntArray1226)
@@ -156,15 +156,15 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
             var i = 0
             var i_61_ = 0
             var i_62_ = 256
-            if (class72_60_ != null) {
-                if (class72_60_.aBoolean1223) {
-                    i = -class72_60_.anInt1225
-                    i_61_ = -class72_60_.anInt1216
-                    i_62_ = -class72_60_.anInt1229
+            if (hintArrowRenderer_60_ != null) {
+                if (hintArrowRenderer_60_.aBoolean1223) {
+                    i = -hintArrowRenderer_60_.anInt1225
+                    i_61_ = -hintArrowRenderer_60_.anInt1216
+                    i_62_ = -hintArrowRenderer_60_.anInt1229
                 } else {
-                    i = anInt1225 - class72_60_.anInt1225
-                    i_61_ = anInt1216 - class72_60_.anInt1216
-                    i_62_ = anInt1229 - class72_60_.anInt1229
+                    i = anInt1225 - hintArrowRenderer_60_.anInt1225
+                    i_61_ = anInt1216 - hintArrowRenderer_60_.anInt1216
+                    i_62_ = anInt1229 - hintArrowRenderer_60_.anInt1229
                 }
             }
             if (anInt1231 != 0) {
