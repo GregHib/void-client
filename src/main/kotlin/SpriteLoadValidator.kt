@@ -14,10 +14,10 @@ class SpriteLoadValidator internal constructor(js5Archive: Js5Archive?, string: 
         }
     }
 
-    override fun method32(i: Int): Class69? {
+    override fun method32(i: Int): CollisionFlagQuery? {
         anInt4794++
         if (i != -15004) Companion.method1159((-110).toByte())
-        return Class69.aClass69_1198
+        return CollisionFlagQuery.aCollisionFlagQuery_1198
     }
 
     override fun method31(i: Int): Int {

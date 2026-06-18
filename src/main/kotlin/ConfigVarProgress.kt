@@ -16,10 +16,10 @@ class ConfigVarProgress internal constructor(private val aString4807: String?) :
         return 100
     }
 
-    override fun method32(i: Int): Class69? {
+    override fun method32(i: Int): CollisionFlagQuery? {
         anInt4809++
         if (i != -15004) aStringArray4818 = null
-        return Class69.aClass69_1199
+        return CollisionFlagQuery.aCollisionFlagQuery_1199
     }
 
     fun method2313(i: Int): Boolean {

@@ -1012,7 +1012,7 @@ class OpenGlModel : AbstractModel {
                 class64_sub3_211_.aShortArray5579 = aShortArray5579
                 class64_sub3_211_.aShortArray5592 = aShortArray5592
             }
-            if (Class69.method723(i, anInt5556, (-70).toByte())) {
+            if (CollisionFlagQuery.method723(i, anInt5556, (-70).toByte())) {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x10).toByte()
                 class64_sub3_211_.aArchiveFileConditionWrapper_5575 = class64_sub3_213_!!.aArchiveFileConditionWrapper_5575
                 class64_sub3_211_.aArchiveFileConditionWrapper_5575!!.anInterface8_3463 = aArchiveFileConditionWrapper_5575!!.anInterface8_3463
@@ -1777,7 +1777,7 @@ class OpenGlModel : AbstractModel {
                 if (aHoverActionEntry_5610 != null && aHoverActionEntry_5610!!.anInterface2_1811 == null) aBoolean5555 = true
                 else aShortArray5601 = null
             }
-            if (aShortArray5592 != null && !Class69.method724(anInt5648, anInt5556, 393216)) {
+            if (aShortArray5592 != null && !CollisionFlagQuery.method724(anInt5648, anInt5556, 393216)) {
                 if ((aArchiveFileConditionWrapper_5575 != null && aArchiveFileConditionWrapper_5575!!.anInterface8_3463 == null) || aHoverActionEntry_5610 != null && (aHoverActionEntry_5610!!.anInterface2_1811) == null) aBoolean5555 = true
                 else {
                     aShortArray5566 = null

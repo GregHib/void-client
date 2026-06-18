@@ -254,7 +254,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ConfigIdPair.anInt402 = 0
             SpriteDefinition.anInt7073 = 0
             SlotBinding.anInt3395 = 0
-            Class69.anInt1192 = 0
+            CollisionFlagQuery.anInt1192 = 0
             Bzip2DecoderState.anInt547 = 0
             MaterialTypeMarker.anInt6516 = 0
             Direct3dModel.anInt5484 = 0
@@ -283,7 +283,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Buffer.anInt7160 = 0
             PackedFlagsAccessor.anInt7097 = 0
             SplashImageLoadable.anInt4695 = 0
-            Class69.anInt1196 = 0
+            CollisionFlagQuery.anInt1196 = 0
             SpotAnimDefinition.anInt2378 = 0
             TrackedGroundDecor.anInt10404 = 0
             ScanlineRasterFiller.anInt2475 = 0
@@ -446,7 +446,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Buffer.anInt7179 = 0
             ChatCommandProcessor.anInt1153 = 0
             TileRenderState.anInt4237 = 0
-            Class69.anInt1191 = 0
+            CollisionFlagQuery.anInt1191 = 0
             WallSceneEntity.anInt9964 = 0
             CubeMapMaterialPass.anInt6303 = 0
             CompiledScriptCache.anInt4370 = 0
@@ -1280,7 +1280,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CubeMapMaterialPass.anInt6297 = 0
             MinimapStateReset.anInt1870 = 0
             Player.anInt10527 = 0
-            Class69.anInt1193 = 0
+            CollisionFlagQuery.anInt1193 = 0
             DefaultGraphicsOptionState.anInt6130 = 0
             ProjectionCameraTransform.anInt5777 = 0
             ModelHeaderCache.anInt3284 = 0
@@ -3318,7 +3318,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Js5Archive.anInt658 = 0
             Class87.anInt1485 = 0
             CurveTextureNode.anInt9207 = 0
-            Class69.anInt1194 = 0
+            CollisionFlagQuery.anInt1194 = 0
             FlickeringEffectsOptionState.anInt5914 = 0
             Buffer.anInt7192 = 0
             MapLabelMenuEntry.anInt5793 = 0

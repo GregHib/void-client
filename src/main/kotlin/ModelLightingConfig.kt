@@ -108,7 +108,7 @@ class ModelLightingConfig {
             val i_3_ = SequencedWallEntity.anIntArray10172!![2]
             if (i_3_ < 50) return false
             SequencedWallEntity.anIntArray10172!![2] = i_3_
-            SequencedWallEntity.anIntArray10172!![0] = (ScreenBorderFiller.anInt1962 * SequencedWallEntity.anIntArray10172!![0] / i_3_) + Class69.anInt1202
+            SequencedWallEntity.anIntArray10172!![0] = (ScreenBorderFiller.anInt1962 * SequencedWallEntity.anIntArray10172!![0] / i_3_) + CollisionFlagQuery.anInt1202
             SequencedWallEntity.anIntArray10172!![1] = (CipheredPacketBuffer.anInt9759 + (SequencedWallEntity.anIntArray10172!![1] * GlIndexBufferArb.anInt8498 / i_3_))
             if (i_2_ != -7596) aRectangleArray2554 = null
             return true

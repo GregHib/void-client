@@ -487,7 +487,7 @@ import ChatCommandProcessor.method705
 import ChatCommandProcessor.method713
 import TooltipComponentRenderer.Companion.method716
 import MovementDirection.Companion.method719
-import Class69.Companion.method722
+import CollisionFlagQuery.Companion.method722
 import Class70.Companion.method725
 import Class71.method728
 import Class71.method729

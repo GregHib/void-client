@@ -4,5 +4,5 @@
 interface Interface7 {
     fun method31(i: Int): Int
 
-    fun method32(i: Int): Class69?
+    fun method32(i: Int): CollisionFlagQuery?
 }

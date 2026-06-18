@@ -365,7 +365,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 objectByteSerializerHolder = ClientMachineInfo.aObjectByteSerializerHolder_6602
                 bool_30_ = true
             } else if (i_29_ == 2) {
-                objectByteSerializerHolder = Class69.aObjectByteSerializerHolder_1201
+                objectByteSerializerHolder = CollisionFlagQuery.aObjectByteSerializerHolder_1201
                 bool_30_ = true
                 bool = false
             } else if (i_29_ == 128) {

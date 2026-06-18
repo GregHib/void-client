@@ -230,7 +230,7 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
             }
             anInt3480++
             if (MapElementDecor.aMapTileShapeArray10330 != null) {
-                for (i_4_ in 0..<Class69.anInt1200) MapElementDecor.aMapTileShapeArray10330!![i_4_] = null
+                for (i_4_ in 0..<CollisionFlagQuery.anInt1200) MapElementDecor.aMapTileShapeArray10330!![i_4_] = null
                 MapElementDecor.aMapTileShapeArray10330 = null
             }
             if (LoadingBarRenderer.aMapTileShapeArray5060 != null) {

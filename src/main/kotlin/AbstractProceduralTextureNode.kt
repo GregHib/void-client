@@ -147,7 +147,7 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
             ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2541(119, i_0_)
             method3535(i_0_, i.inv())
             NormalMapGenerator.method2040(i_0_, true)
-            Class69.method720(i_0_, i + 1227)
+            CollisionFlagQuery.method720(i_0_, i + 1227)
             method1750(14056, i_0_)
             TextureTileRenderer.method2953((-106).toByte())
         }

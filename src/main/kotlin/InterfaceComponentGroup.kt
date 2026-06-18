@@ -600,7 +600,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                     WorldMapToggle.anInt3872 = (NormalMapTextureNode.anIntArray9436!![0].toFloat() / 3.0f).toInt()
                     CipheredPacketBuffer.anInt9759 = Class86.anInt1480 shr 1
                     GlTextureBase.anIntArray5091 = IntArray(Class86.anInt1480 * WorldMapToggle.anInt3872)
-                    Class69.anInt1202 = WorldMapToggle.anInt3872 shr 1
+                    CollisionFlagQuery.anInt1202 = WorldMapToggle.anInt3872 shr 1
                 }
                 SourceRowTextureNode.aAbstractCameraTransform_9114 = var_renderer.method3640()
                 ParameterizedText.Companion.anInt9577 = 0
@@ -609,7 +609,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                     SceneModelBuilder.method2498(HintArrowOrMessage.aMapTileShapeArray2034!![i_8_], var_renderer, (-112).toByte(), i)
                     i_8_++
                 }
-                for (i_9_ in 0..<Class69.anInt1200) SceneModelBuilder.method2498((MapElementDecor.aMapTileShapeArray10330!![i_9_]), var_renderer, (-127).toByte(), i)
+                for (i_9_ in 0..<CollisionFlagQuery.anInt1200) SceneModelBuilder.method2498((MapElementDecor.aMapTileShapeArray10330!![i_9_]), var_renderer, (-127).toByte(), i)
                 for (i_10_ in 0..<PackedFlagsAccessor.anInt7101) SceneModelBuilder.method2498(LoadingBarRenderer.aMapTileShapeArray5060!![i_10_], var_renderer, (-128).toByte(), i)
                 NpcDefinition.anInt2946 = 0
                 if (ParameterizedText.Companion.anInt9577 > 0) {

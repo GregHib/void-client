@@ -15,10 +15,10 @@ class MapArchiveSource internal constructor(private val aJs5Archive_4804: Js5Arc
         return aJs5Archive_4804.method398((-31).toByte())
     }
 
-    override fun method32(i: Int): Class69? {
+    override fun method32(i: Int): CollisionFlagQuery? {
         if (i != -15004) return null
         anInt4800++
-        return Class69.aClass69_1195
+        return CollisionFlagQuery.aCollisionFlagQuery_1195
     }
 
     companion object {

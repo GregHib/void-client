@@ -3,7 +3,7 @@ import ArchiveResourceProvider.Companion.method2352
 /* Class69 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class69 {
+class CollisionFlagQuery {
     override fun toString(): String {
         anInt1192++
         throw IllegalStateException()
@@ -19,15 +19,15 @@ class Class69 {
         @JvmField
         var anInt1194: Int = 0
         @JvmField
-        var aClass69_1195: Class69? = Class69()
+        var aCollisionFlagQuery_1195: CollisionFlagQuery? = CollisionFlagQuery()
         @JvmField
         var anInt1196: Int = 0
         @JvmField
-        var aClass69_1197: Class69? = Class69()
+        var aCollisionFlagQuery_1197: CollisionFlagQuery? = CollisionFlagQuery()
         @JvmField
-        var aClass69_1198: Class69? = Class69()
+        var aCollisionFlagQuery_1198: CollisionFlagQuery? = CollisionFlagQuery()
         @JvmField
-        var aClass69_1199: Class69? = Class69()
+        var aCollisionFlagQuery_1199: CollisionFlagQuery? = CollisionFlagQuery()
         @JvmField
         var anInt1200: Int = 0
         var aObjectByteSerializerHolder_1201: ObjectByteSerializerHolder? = ObjectByteSerializerHolder()
@@ -57,7 +57,7 @@ class Class69 {
                     class348_sub42_1_.aClass348_Sub42_7060!!.aClass348_Sub42_7063 = class348_sub42_1_
                     class348_sub42_1_.aClass348_Sub42_7063!!.aClass348_Sub42_7060 = class348_sub42_1_
                     if (i == -1) break
-                    aClass69_1199 = null
+                    aCollisionFlagQuery_1199 = null
                 } catch (runtimeexception: RuntimeException) {
                     throw SoundBankPatch.method2929(runtimeexception, ("kea.B(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + (if (class348_sub42_1_ != null) "{...}" else "null") + ',' + i + ')'))
                 }
@@ -67,11 +67,11 @@ class Class69 {
 
         @JvmStatic
         fun method722(i: Int) {
-            aClass69_1198 = null
-            if (i != 13569) aClass69_1199 = null
-            aClass69_1197 = null
-            aClass69_1195 = null
-            aClass69_1199 = null
+            aCollisionFlagQuery_1198 = null
+            if (i != 13569) aCollisionFlagQuery_1199 = null
+            aCollisionFlagQuery_1197 = null
+            aCollisionFlagQuery_1195 = null
+            aCollisionFlagQuery_1199 = null
             aObjectByteSerializerHolder_1201 = null
         }
 

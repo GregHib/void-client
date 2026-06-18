@@ -1165,7 +1165,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     override fun method3950(i: Int) {
         anInt9886++
         if (ClientMachineInfo.aObjectByteSerializerHolder_6602 == this.aObjectByteSerializerHolder_8163) glBlendFunc(770, 771)
-        else if (Class69.aObjectByteSerializerHolder_1201 == this.aObjectByteSerializerHolder_8163) glBlendFunc(1, 1)
+        else if (CollisionFlagQuery.aObjectByteSerializerHolder_1201 == this.aObjectByteSerializerHolder_8163) glBlendFunc(1, 1)
         else if (BoundsConstraintEntry.aObjectByteSerializerHolder_5169 == this.aObjectByteSerializerHolder_8163) glBlendFunc(774, 1)
         if (i != 0) this.anInt9918 = 74
     }

@@ -11,10 +11,10 @@ class Class73 internal constructor(js5Archive: Js5Archive?, string: String?) : I
         return 0
     }
 
-    override fun method32(i: Int): Class69? {
+    override fun method32(i: Int): CollisionFlagQuery? {
         anInt4781++
         if (i != -15004) aFloatArray4772 = null
-        return Class69.Companion.aClass69_1197
+        return CollisionFlagQuery.Companion.aCollisionFlagQuery_1197
     }
 
     init {

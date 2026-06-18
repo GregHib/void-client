@@ -1,7 +1,7 @@
 /* Class267 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SlotBinding private constructor(private val aClass69_3392: Class69?) {
+class SlotBinding private constructor(private val aCollisionFlagQuery_3392: CollisionFlagQuery?) {
     private var anInt3394 = 1
     private var anInterface7_3398: Interface7? = null
     fun method2024(i: Int): Int {
@@ -13,7 +13,7 @@ class SlotBinding private constructor(private val aClass69_3392: Class69?) {
     fun method2025(interface7: Interface7, bool: Boolean) {
         anInt3399++
         if (bool != false) toString()
-        require(interface7.method32(-15004) == aClass69_3392)
+        require(interface7.method32(-15004) == aCollisionFlagQuery_3392)
         anInterface7_3398 = interface7
     }
 
@@ -39,36 +39,36 @@ class SlotBinding private constructor(private val aClass69_3392: Class69?) {
         var anInt3391: Int = 0
         var anInt3393: Int = 0
         var anInt3395: Int = 0
-        var aSlotBinding_3396: SlotBinding? = SlotBinding(Class69.aClass69_1195)
+        var aSlotBinding_3396: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
         var anInt3397: Int = 0
         var anInt3399: Int = 0
         var anInt3400: Int = 0
-        var aSlotBinding_3401: SlotBinding? = SlotBinding(Class69.aClass69_1199)
-        var aSlotBinding_3402: SlotBinding? = SlotBinding(Class69.aClass69_1199)
-        var aSlotBinding_3403: SlotBinding? = SlotBinding(Class69.aClass69_1199)
-        var aSlotBinding_3404: SlotBinding? = SlotBinding(Class69.aClass69_1199)
-        var aSlotBinding_3405: SlotBinding? = SlotBinding(Class69.aClass69_1199)
-        var aSlotBinding_3406: SlotBinding? = SlotBinding(Class69.aClass69_1199)
-        var aSlotBinding_3407: SlotBinding? = SlotBinding(Class69.aClass69_1199)
-        var aSlotBinding_3408: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3409: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3410: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3411: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3412: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3413: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3414: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3415: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3416: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3417: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3418: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3419: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3420: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3421: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3422: SlotBinding? = SlotBinding(Class69.aClass69_1197)
-        var aSlotBinding_3423: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3424: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3425: SlotBinding? = SlotBinding(Class69.aClass69_1195)
-        var aSlotBinding_3426: SlotBinding? = SlotBinding(Class69.aClass69_1198)
+        var aSlotBinding_3401: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1199)
+        var aSlotBinding_3402: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1199)
+        var aSlotBinding_3403: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1199)
+        var aSlotBinding_3404: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1199)
+        var aSlotBinding_3405: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1199)
+        var aSlotBinding_3406: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1199)
+        var aSlotBinding_3407: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1199)
+        var aSlotBinding_3408: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3409: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3410: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3411: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3412: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3413: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3414: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3415: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3416: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3417: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3418: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3419: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3420: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3421: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3422: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1197)
+        var aSlotBinding_3423: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3424: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3425: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
+        var aSlotBinding_3426: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1198)
         var aIntRange_3427: IntRange? = IntRange(93, -2)
         @JvmField
         var anInt3428: Int = -1

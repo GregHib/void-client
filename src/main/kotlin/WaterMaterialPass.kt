@@ -294,9 +294,9 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
 
         @JvmStatic
         fun method2152(bool: Boolean) {
-            for (i in 0..<Class69.anInt1200) MapElementDecor.aMapTileShapeArray10330!![i] = null
+            for (i in 0..<CollisionFlagQuery.anInt1200) MapElementDecor.aMapTileShapeArray10330!![i] = null
             anInt6223++
-            Class69.anInt1200 = 0
+            CollisionFlagQuery.anInt1200 = 0
             run {
                 var i = 0
                 while (MapAreaDefinition.anInt2524 > i) {
@@ -350,7 +350,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                                 val i_36_ = i_23_ shl Tooltip.anInt4459
                                 val i_37_ = i_25_ shl Tooltip.anInt4459
                                 val i_38_ = (ArchiveFileConditionWrapper.anInt3465 + (i_26_ shl Tooltip.anInt4459))
-                                MapElementDecor.aMapTileShapeArray10330!![Class69.anInt1200++] = (MapTileShape(1, i_28_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, i_32_, i_34_, i_35_, i_33_, i_37_, i_38_, i_38_, i_37_))
+                                MapElementDecor.aMapTileShapeArray10330!![CollisionFlagQuery.anInt1200++] = (MapTileShape(1, i_28_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, i_32_, i_34_, i_35_, i_33_, i_37_, i_38_, i_38_, i_37_))
                                 var i_39_ = i_27_
                                 while (i_28_ >= i_39_) {
                                     var i_40_ = i_25_
@@ -388,7 +388,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                                 val i_52_ = i_41_ shl Tooltip.anInt4459
                                 val i_53_ = ((i_42_ shl Tooltip.anInt4459) + ArchiveFileConditionWrapper.anInt3465)
                                 val i_54_ = i_22_ shl Tooltip.anInt4459
-                                MapElementDecor.aMapTileShapeArray10330!![Class69.anInt1200++] = (MapTileShape(2, i_44_, i_52_, i_53_, i_53_, i_52_, i_48_, i_50_, i_51_, i_49_, i_54_ + class357.aShort4397, i_54_ + class357.aShort4397, class357.aShort4397 + i_54_, (i_54_ - -class357.aShort4397)))
+                                MapElementDecor.aMapTileShapeArray10330!![CollisionFlagQuery.anInt1200++] = (MapTileShape(2, i_44_, i_52_, i_53_, i_53_, i_52_, i_48_, i_50_, i_51_, i_49_, i_54_ + class357.aShort4397, i_54_ + class357.aShort4397, class357.aShort4397 + i_54_, (i_54_ - -class357.aShort4397)))
                                 for (i_55_ in i_43_..i_44_) {
                                     var i_56_ = i_41_
                                     while ((i_42_ >= i_56_)) {
