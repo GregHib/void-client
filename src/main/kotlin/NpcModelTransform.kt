@@ -1,7 +1,7 @@
 /* Class4 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class4 internal constructor(`is`: ByteArray, class348_sub33: AnimationFrameDefinition?) {
+class NpcModelTransform internal constructor(`is`: ByteArray, class348_sub33: AnimationFrameDefinition?) {
     var anInt126: Int = 0
     var aShortArray128: ShortArray? = null
     @JvmField

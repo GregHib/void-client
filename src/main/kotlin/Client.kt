@@ -441,7 +441,7 @@ import PlayerAppearanceUpdateDecoder.method3613
 import GlRenderDevice.Companion.method3968
 import WidgetTextConfig.Companion.method363
 import GlShaderObjectHandle.Companion.method367
-import Class4.Companion.method177
+import NpcModelTransform.Companion.method177
 import Class40.Companion.method370
 import Class43.Companion.method380
 import Class44.method387

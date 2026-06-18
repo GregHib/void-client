@@ -12,17 +12,17 @@ public abstract class Class64 {
 
     abstract fun p(i: Int, i_0_: Int, var_terrainTile: TerrainTile?, var_terrainTile_1_: TerrainTile?, i_2_: Int, i_3_: Int, i_4_: Int)
 
-    private fun method602(i: Int, class348_sub33: AnimationFrameDefinition?, i_5_: Int, bool: Boolean, i_6_: Int, class4: Class4?, i_7_: Int, `is`: IntArray?, bools: BooleanArray?, class4_8_: Class4?, i_9_: Int, bool_10_: Boolean) {
+    private fun method602(i: Int, class348_sub33: AnimationFrameDefinition?, i_5_: Int, bool: Boolean, i_6_: Int, npcModelTransform: NpcModelTransform?, i_7_: Int, `is`: IntArray?, bools: BooleanArray?, npcModelTransform_8_: NpcModelTransform?, i_9_: Int, bool_10_: Boolean) {
         try {
             anInt1130++
-            if (class4 == null || i_7_ == 0) {
+            if (npcModelTransform == null || i_7_ == 0) {
                 var i_11_ = 0
-                while (class4_8_!!.anInt126 > i_11_) {
-                    val i_12_ = class4_8_.aShortArray130!![i_11_]
+                while (npcModelTransform_8_!!.anInt126 > i_11_) {
+                    val i_12_ = npcModelTransform_8_.aShortArray130!![i_11_]
                     if (bools == null || bools[i_12_.toInt()] != !bool || (class348_sub33!!.anIntArray6957!![i_12_.toInt()]) == 0) {
-                        val i_13_ = class4_8_.aShortArray128!![i_11_]
+                        val i_13_ = npcModelTransform_8_.aShortArray128!![i_11_]
                         if (i_13_.toInt() != -1) method627((class348_sub33!!.anIntArrayArray6959!![i_13_.toInt()]!!), bool_10_, i, 0, 0, i_9_ and (class348_sub33.anIntArray6960!![i_13_.toInt()]), (-93).toByte(), 0, `is`, 0)
-                        method627((class348_sub33!!.anIntArrayArray6959!![i_12_.toInt()]!!), bool_10_, i, class4_8_.aShortArray137!![i_11_].toInt(), (class348_sub33.anIntArray6957!![i_12_.toInt()]), (class348_sub33.anIntArray6960!![i_12_.toInt()]) and i_9_, (-93).toByte(), class4_8_.aShortArray140!![i_11_].toInt(), `is`, class4_8_.aShortArray135!![i_11_].toInt())
+                        method627((class348_sub33!!.anIntArrayArray6959!![i_12_.toInt()]!!), bool_10_, i, npcModelTransform_8_.aShortArray137!![i_11_].toInt(), (class348_sub33.anIntArray6957!![i_12_.toInt()]), (class348_sub33.anIntArray6960!![i_12_.toInt()]) and i_9_, (-93).toByte(), npcModelTransform_8_.aShortArray140!![i_11_].toInt(), `is`, npcModelTransform_8_.aShortArray135!![i_11_].toInt())
                     }
                     i_11_++
                 }
@@ -33,9 +33,9 @@ public abstract class Class64 {
                 val i_17_ = -53 % ((i_5_ - 76) / 41)
                 while ( /**/class348_sub33!!.anInt6965 > i_16_) {
                     var bool_18_ = false
-                    if (class4_8_!!.anInt126 > i_14_ && class4_8_.aShortArray130!![i_14_].toInt() == i_16_) bool_18_ = true
+                    if (npcModelTransform_8_!!.anInt126 > i_14_ && npcModelTransform_8_.aShortArray130!![i_14_].toInt() == i_16_) bool_18_ = true
                     var bool_19_ = false
-                    if (class4.anInt126 > i_15_ && i_16_ == class4.aShortArray130!![i_15_].toInt()) bool_19_ = true
+                    if (npcModelTransform.anInt126 > i_15_ && i_16_ == npcModelTransform.aShortArray130!![i_15_].toInt()) bool_19_ = true
                     if (bool_18_ || bool_19_) {
                         if (bools != null && bool == !bools[i_16_] && (class348_sub33.anIntArray6957!![i_16_]) != 0) {
                             if (bool_19_) i_15_++
@@ -50,11 +50,11 @@ public abstract class Class64 {
                             val i_25_: Byte
                             val i_26_: Int
                             if (bool_18_) {
-                                i_22_ = (class4_8_.aShortArray135!![i_14_]).toInt()
-                                i_23_ = (class4_8_.aShortArray128!![i_14_])
-                                i_24_ = (class4_8_.aShortArray137!![i_14_]).toInt()
-                                i_25_ = (class4_8_.aByteArray132!![i_14_])
-                                i_26_ = (class4_8_.aShortArray140!![i_14_]).toInt()
+                                i_22_ = (npcModelTransform_8_.aShortArray135!![i_14_]).toInt()
+                                i_23_ = (npcModelTransform_8_.aShortArray128!![i_14_])
+                                i_24_ = (npcModelTransform_8_.aShortArray137!![i_14_]).toInt()
+                                i_25_ = (npcModelTransform_8_.aByteArray132!![i_14_])
+                                i_26_ = (npcModelTransform_8_.aShortArray140!![i_14_]).toInt()
                                 i_14_++
                             } else {
                                 i_24_ = i_20_
@@ -69,11 +69,11 @@ public abstract class Class64 {
                             val i_30_: Int
                             val i_31_: Short
                             if (bool_19_) {
-                                i_27_ = class4.aShortArray137!![i_15_].toInt()
-                                i_28_ = class4.aShortArray135!![i_15_].toInt()
-                                i_29_ = class4.aByteArray132!![i_15_]
-                                i_30_ = class4.aShortArray140!![i_15_].toInt()
-                                i_31_ = class4.aShortArray128!![i_15_]
+                                i_27_ = npcModelTransform.aShortArray137!![i_15_].toInt()
+                                i_28_ = npcModelTransform.aShortArray135!![i_15_].toInt()
+                                i_29_ = npcModelTransform.aByteArray132!![i_15_]
+                                i_30_ = npcModelTransform.aShortArray140!![i_15_].toInt()
+                                i_31_ = npcModelTransform.aShortArray128!![i_15_]
                                 i_15_++
                             } else {
                                 i_28_ = i_20_
@@ -125,7 +125,7 @@ public abstract class Class64 {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ka.AC(" + i + ',' + (if (class348_sub33 != null) "{...}" else "null") + ',' + i_5_ + ',' + bool + ',' + i_6_ + ',' + (if (class4 != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + (if (class4_8_ != null) "{...}" else "null") + ',' + i_9_ + ',' + bool_10_ + ')'))
+            throw SoundBankPatch.method2929(runtimeexception, ("ka.AC(" + i + ',' + (if (class348_sub33 != null) "{...}" else "null") + ',' + i_5_ + ',' + bool + ',' + i_6_ + ',' + (if (npcModelTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + (if (npcModelTransform_8_ != null) "{...}" else "null") + ',' + i_9_ + ',' + bool_10_ + ')'))
         }
     }
 
@@ -135,15 +135,15 @@ public abstract class Class64 {
             if (i_42_ != -1) {
                 method622()
                 if (NA()) {
-                    val class4 = (class348_sub42_sub17_45_!!.aClass4Array9673!![i_42_])!!
+                    val class4 = (class348_sub42_sub17_45_!!.aNpcModelTransformArray9673!![i_42_])!!
                     if (i.toInt() != -55) this.aBoolean1124 = false
                     val class348_sub33 = class4.aClass348_Sub33_134
-                    var class4_47_: Class4? = null
+                    var npcModelTransform_47_: NpcModelTransform? = null
                     if (class348_sub42_sub17 != null) {
-                        class4_47_ = (class348_sub42_sub17.aClass4Array9673!![i_43_])
-                        if (class4_47_!!.aClass348_Sub33_134 != class348_sub33) class4_47_ = null
+                        npcModelTransform_47_ = (class348_sub42_sub17.aNpcModelTransformArray9673!![i_43_])
+                        if (npcModelTransform_47_!!.aClass348_Sub33_134 != class348_sub33) npcModelTransform_47_ = null
                     }
-                    method602(i_44_, class348_sub33, -18, false, i_46_, class4_47_, i_40_, `is`, null, class4, i_41_, bool)
+                    method602(i_44_, class348_sub33, -18, false, i_46_, npcModelTransform_47_, i_40_, `is`, null, class4, i_41_, bool)
                     wa()
                     method621()
                 } else method621()
@@ -190,7 +190,7 @@ public abstract class Class64 {
         if (i != -1) {
             method622()
             if (NA()) {
-                val class4 = (class348_sub42_sub17.aClass4Array9673!![i]!!)
+                val class4 = (class348_sub42_sub17.aNpcModelTransformArray9673!![i]!!)
                 val class348_sub33 = class4.aClass348_Sub33_134!!
                 var i_75_ = 0
                 while ((i_75_ < class4.anInt126)) {
@@ -230,14 +230,14 @@ public abstract class Class64 {
             if (i != -1) {
                 method622()
                 if (NA()) {
-                    val class4 = (class348_sub42_sub17_85_!!.aClass4Array9673!![i]!!)
+                    val class4 = (class348_sub42_sub17_85_!!.aNpcModelTransformArray9673!![i]!!)
                     val class348_sub33 = class4.aClass348_Sub33_134
-                    var class4_89_: Class4? = null
+                    var npcModelTransform_89_: NpcModelTransform? = null
                     if (class348_sub42_sub17 != null) {
-                        class4_89_ = (class348_sub42_sub17.aClass4Array9673!![i_87_]!!)
-                        if (class348_sub33 != class4_89_.aClass348_Sub33_134) class4_89_ = null
+                        npcModelTransform_89_ = (class348_sub42_sub17.aNpcModelTransformArray9673!![i_87_]!!)
+                        if (class348_sub33 != npcModelTransform_89_.aClass348_Sub33_134) npcModelTransform_89_ = null
                     }
-                    method602(i_84_, class348_sub33, 121, bool, i_83_, class4_89_, i_88_, null, null, class4, 65535, bool_86_)
+                    method602(i_84_, class348_sub33, 121, bool, i_83_, npcModelTransform_89_, i_88_, null, null, class4, 65535, bool_86_)
                     wa()
                     method621()
                 } else method621()
@@ -290,22 +290,22 @@ public abstract class Class64 {
                 else {
                     method622()
                     if (NA()) {
-                        val class4 = (class348_sub42_sub17_107_!!.aClass4Array9673!![i_104_])
+                        val class4 = (class348_sub42_sub17_107_!!.aNpcModelTransformArray9673!![i_104_])
                         val class348_sub33 = class4!!.aClass348_Sub33_134
-                        var class4_112_: Class4? = null
+                        var npcModelTransform_112_: NpcModelTransform? = null
                         if (class348_sub42_sub17 != null) {
-                            class4_112_ = (class348_sub42_sub17.aClass4Array9673!![i_108_])
-                            if (class348_sub33 != class4_112_!!.aClass348_Sub33_134) class4_112_ = null
+                            npcModelTransform_112_ = (class348_sub42_sub17.aNpcModelTransformArray9673!![i_108_])
+                            if (class348_sub33 != npcModelTransform_112_!!.aClass348_Sub33_134) npcModelTransform_112_ = null
                         }
-                        method602(0, class348_sub33, -70, false, i, class4_112_, i_106_, null, bools, class4, 65535, bool)
-                        val class4_113_ = (class348_sub42_sub17_103_!!.aClass4Array9673!![i_105_]!!)
-                        var class4_114_: Class4? = null
+                        method602(0, class348_sub33, -70, false, i, npcModelTransform_112_, i_106_, null, bools, class4, 65535, bool)
+                        val class4_113_ = (class348_sub42_sub17_103_!!.aNpcModelTransformArray9673!![i_105_]!!)
+                        var npcModelTransform_114_: NpcModelTransform? = null
                         if (class348_sub42_sub17_109_ != null) {
-                            class4_114_ = (class348_sub42_sub17_109_.aClass4Array9673!![i_111_])
-                            if (class4_114_!!.aClass348_Sub33_134 != class348_sub33) class4_114_ = null
+                            npcModelTransform_114_ = (class348_sub42_sub17_109_.aNpcModelTransformArray9673!![i_111_])
+                            if (npcModelTransform_114_!!.aClass348_Sub33_134 != class348_sub33) npcModelTransform_114_ = null
                         }
                         method605(0, IntArray(0), 0, 0, 0, 0, bool)
-                        method602(0, class4_113_.aClass348_Sub33_134, 122, true, i_102_, class4_114_, i_110_, null, bools, class4_113_, 65535, bool)
+                        method602(0, class4_113_.aClass348_Sub33_134, 122, true, i_102_, npcModelTransform_114_, i_110_, null, bools, class4_113_, 65535, bool)
                         wa()
                         method621()
                     } else method621()

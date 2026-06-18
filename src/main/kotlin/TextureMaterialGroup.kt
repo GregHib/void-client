@@ -7,16 +7,16 @@ import Class5_Sub3.Companion.method202
 */
 class TextureMaterialGroup internal constructor(private val anInt9669: Int) : HashLinkedListNode() {
     private var aByteArrayArray9671: Array<ByteArray?>? = null
-    var aClass4Array9673: Array<Class4?>? = null
+    var aNpcModelTransformArray9673: Array<NpcModelTransform?>? = null
     fun method3267(i: Byte, i_0_: Int): Boolean {
         anInt9676++
         if (i >= -91) return false
-        return (this.aClass4Array9673!![i_0_]!!.aBoolean129)
+        return (this.aNpcModelTransformArray9673!![i_0_]!!.aBoolean129)
     }
 
     fun method3268(i: Int): Boolean {
         anInt9675++
-        if (this.aClass4Array9673 != null) return true
+        if (this.aNpcModelTransformArray9673 != null) return true
         if (aByteArrayArray9671 == null) {
             synchronized(RectangleRegion.aClass45_1940!!) {
                 if (!RectangleRegion.aClass45_1940!!.method408((-116).toByte(), anInt9669)) return false
@@ -40,7 +40,7 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
         val `is`: IntArray?
         synchronized(RectangleRegion.aClass45_1940!!) {
             val i_4_ = RectangleRegion.aClass45_1940!!.method407(0, anInt9669)
-            this.aClass4Array9673 = arrayOfNulls<Class4>(i_4_)
+            this.aNpcModelTransformArray9673 = arrayOfNulls<NpcModelTransform>(i_4_)
             `is` = RectangleRegion.aClass45_1940!!.method396(anInt9669, 0)
             if (i > -115) method3266(null, 123, null)
         }
@@ -64,7 +64,7 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
                 }
                 nodeDeque.method1999(class348_sub33!!, -20180)
             }
-            this.aClass4Array9673!![`is`[i_5_]] = Class4(is_6_!!, class348_sub33)
+            this.aNpcModelTransformArray9673!![`is`[i_5_]] = NpcModelTransform(is_6_!!, class348_sub33)
         }
         aByteArrayArray9671 = null
         return true
@@ -73,13 +73,13 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
     fun method3271(i: Int, i_9_: Int): Boolean {
         anInt9670++
         if (i_9_ != 14) method3269(false)
-        return (this.aClass4Array9673!![i]!!.aBoolean139)
+        return (this.aNpcModelTransformArray9673!![i]!!.aBoolean139)
     }
 
     fun method3272(i: Int, i_10_: Int): Boolean {
         anInt9677++
         if (i_10_ != 0) return true
-        return (this.aClass4Array9673!![i]!!.aBoolean131)
+        return (this.aNpcModelTransformArray9673!![i]!!.aBoolean131)
     }
 
     companion object {
