@@ -5,7 +5,7 @@ import CombineTextureNode.Companion.method3089
 import RenderListTextureNode.Companion.method3153
 import CacheEntryReference.Companion.method3194
 import SceneObjectSpawner.Companion.method773
-import Class99.method882
+import SpriteBlitter.method882
 
 // Decompiled by Jad v1.5.8f. Copyright 2001 Pavel Kouznetsov.
 // Jad home page: http://www.kpdus.com/jad.html
@@ -1250,7 +1250,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MouseInputTracker.anInt7427 = 0
             OpenGlRenderer.anInt7578 = 0
             Class367_Sub3.anInt7306 = 0
-            Class99.anInt1573 = 0
+            SpriteBlitter.anInt1573 = 0
             HashTileShape.anInt8814 = 0
             ClientGameLoopNode.anInt6874 = 0
             LoadingScreenState.anInt2624 = 0
@@ -2492,7 +2492,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ProducerImageSurface.anInt9076 = 0
             Class367_Sub4.anInt7313 = 0
             CipheredPacketBuffer.anInt9761 = 0
-            Class99.anInt1576 = 0
+            SpriteBlitter.anInt1576 = 0
             InterfaceComponentGroup.anInt9623 = 0
             ModelDefinitionCache.anInt2869 = 0
             OpenGlTerrainTile.anInt8236 = 0
@@ -3055,7 +3055,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OutputStream_Sub2.anInt104 = 0
             NpcDefinitionCache.anInt3317 = 0
             GlRenderDevice.anInt9883 = 0
-            Class99.anInt1575 = 0
+            SpriteBlitter.anInt1575 = 0
             Gl2dTexture.anInt8616 = 0
             GlDisplayListFont.anInt1104 = 0
             Js5Archive.anInt653 = 0

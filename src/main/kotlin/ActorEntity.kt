@@ -46,7 +46,7 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
     override fun method2378(i: Int): Boolean {
         anInt8757++
         if (i != 0) method2378(-104)
-        return (Class99.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + (this.x shr Tooltip.anInt4459) + NpcActorEntity.anInt10084)]!![(NpcActorEntity.anInt10084 + -GlIndexBufferArb.anInt8502 + (this.y shr Tooltip.anInt4459))])
+        return (SpriteBlitter.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + (this.x shr Tooltip.anInt4459) + NpcActorEntity.anInt10084)]!![(NpcActorEntity.anInt10084 + -GlIndexBufferArb.anInt8502 + (this.y shr Tooltip.anInt4459))])
     }
 
     companion object {

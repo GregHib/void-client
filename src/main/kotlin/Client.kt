@@ -514,7 +514,7 @@ import AnimationFrameState.method866
 import AnimationFrameState.method867
 import DirectionUtil.method869
 import NodeDequeHolder.Companion.method879
-import Class99.method883
+import SpriteBlitter.method883
 import IOException_Sub1.Companion.method130
 import InputStream_Sub1.Companion.method124
 import InputStream_Sub2.Companion.method127

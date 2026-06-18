@@ -30,7 +30,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
     override fun method2378(i: Int): Boolean {
         if (i != 0) aFontMetaRef_8724 = null
         anInt8721++
-        return (Class99.aBooleanArrayArray1572!![(NpcActorEntity.anInt10084 + -DisplayModeOptionState.anInt6111 + (this.x shr Tooltip.anInt4459))]!![((this.y shr Tooltip.anInt4459) + -GlIndexBufferArb.anInt8502 + NpcActorEntity.anInt10084)])
+        return (SpriteBlitter.aBooleanArrayArray1572!![(NpcActorEntity.anInt10084 + -DisplayModeOptionState.anInt6111 + (this.x shr Tooltip.anInt4459))]!![((this.y shr Tooltip.anInt4459) + -GlIndexBufferArb.anInt8502 + NpcActorEntity.anInt10084)])
     }
 
     companion object {

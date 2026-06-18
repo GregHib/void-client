@@ -2,7 +2,7 @@ import GlTextureBase.Companion.method235
 import GraphicsOptionState.Companion.method1713
 import SceneEntity.Companion.method2385
 import ChatCommandProcessor.method703
-import Class99.method882
+import SpriteBlitter.method882
 import RenderNode.Companion.method3284
 
 /* Class107 - Decompiled by JODE

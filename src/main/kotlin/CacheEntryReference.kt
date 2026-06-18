@@ -68,7 +68,7 @@ abstract class CacheEntryReference internal constructor(@JvmField var anInt9545:
                 }
                 RenderNode.anInt9721 = -1
                 MinimapSpriteRenderer.aHashtable_4915 = Hashtable(8)
-                Class99.method882(11.toByte())
+                SpriteBlitter.method882(11.toByte())
                 RenderNode.anInt9721 = GlBufferObject.anInt4737
                 method1713(false, 520)
                 TextureCache.method3466(100)

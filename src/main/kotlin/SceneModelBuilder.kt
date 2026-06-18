@@ -129,7 +129,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                         else if (i_22_ < 0) return
                         var bool = false
                         while (i_22_ >= i_21_) {
-                            if (Class99.aBooleanArrayArray1572!![i_20_]!![i_21_++]) {
+                            if (SpriteBlitter.aBooleanArrayArray1572!![i_20_]!![i_21_++]) {
                                 bool = true
                                 break
                             }
@@ -153,7 +153,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                         } else i_25_ = (NpcActorEntity.Companion.anInt10084 + NpcActorEntity.Companion.anInt10084)
                         var bool = false
                         while (i_24_ <= i_25_) {
-                            if (Class99.aBooleanArrayArray1572!![i_24_++]!![i_23_]) {
+                            if (SpriteBlitter.aBooleanArrayArray1572!![i_24_++]!![i_23_]) {
                                 bool = true
                                 break
                             }
@@ -168,7 +168,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                     val i_26_: Int = (NpcActorEntity.Companion.anInt10084 + (-DisplayModeOptionState.anInt6111 + mapTileShape.aShort4185))
                     if (i_26_ >= 0 && i_26_ <= (NpcActorEntity.Companion.anInt10084 - -NpcActorEntity.Companion.anInt10084)) {
                         val i_27_: Int = (mapTileShape.aShort4193 + (-GlIndexBufferArb.anInt8502 - -NpcActorEntity.Companion.anInt10084))
-                        if (i_27_ >= 0 && ((NpcActorEntity.Companion.anInt10084 - -NpcActorEntity.Companion.anInt10084) >= i_27_) && Class99.aBooleanArrayArray1572!![i_26_]!![i_27_]) {
+                        if (i_27_ >= 0 && ((NpcActorEntity.Companion.anInt10084 - -NpcActorEntity.Companion.anInt10084) >= i_27_) && SpriteBlitter.aBooleanArrayArray1572!![i_26_]!![i_27_]) {
                             var f = (TextureDefinitionLoader.anInt1974 - (mapTileShape.anIntArray4187!![0])).toFloat()
                             if (f < 0.0f) f *= -1.0f
                             var f_28_ = (BlendTextureNode.anInt9360 + -(mapTileShape.anIntArray4184[0])).toFloat()
@@ -197,7 +197,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                         while_102_@ for (i_33_ in i_31_..i_32_) {
                             var i_34_ = i_29_
                             while (i_30_ >= i_34_) {
-                                if (Class99.aBooleanArrayArray1572!![i_33_]!![i_34_]) {
+                                if (SpriteBlitter.aBooleanArrayArray1572!![i_33_]!![i_34_]) {
                                     bool = true
                                     break@while_102_
                                 }

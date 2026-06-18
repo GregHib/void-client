@@ -13,7 +13,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
     override fun method2378(i: Int): Boolean {
         if (i != 0) method2406(79)
         anInt8734++
-        return (Class99.aBooleanArrayArray1572!![(NpcActorEntity.anInt10084 + -DisplayModeOptionState.anInt6111 + (this.x shr Tooltip.anInt4459))]!![(NpcActorEntity.anInt10084 + (-GlIndexBufferArb.anInt8502 + (this.y shr Tooltip.anInt4459)))])
+        return (SpriteBlitter.aBooleanArrayArray1572!![(NpcActorEntity.anInt10084 + -DisplayModeOptionState.anInt6111 + (this.x shr Tooltip.anInt4459))]!![(NpcActorEntity.anInt10084 + (-GlIndexBufferArb.anInt8502 + (this.y shr Tooltip.anInt4459)))])
     }
 
     override fun method2392(bool: Boolean) {

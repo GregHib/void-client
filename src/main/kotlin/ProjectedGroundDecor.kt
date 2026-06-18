@@ -849,7 +849,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             SoundCacheState.aTerrainTileArray4142 = null
             HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 = null
             NativeSprite.aTerrainTileArray5191 = null
-            Class99.aBooleanArrayArray1572 = null
+            SpriteBlitter.aBooleanArrayArray1572 = null
             FacingDirectionNode.aBooleanArrayArray6656 = null
             RefCountedHandle.anIntArray2272 = null
             OverlayColorTable.aBooleanArrayArrayArray1751 = null

@@ -3,7 +3,7 @@ import OutputStream_Sub2.Companion.method138
 /* Class99 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class99 {
+object SpriteBlitter {
     @JvmField
     var aBooleanArrayArray1572: Array<BooleanArray?>? = null
     @JvmField

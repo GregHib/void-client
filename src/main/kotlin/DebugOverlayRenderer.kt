@@ -39,14 +39,14 @@ object DebugOverlayRenderer {
                 Class9.aRenderer171!!.H(class338.anIntArray4187!![0], class338.anIntArray4191[0], class338.anIntArray4184[0], ClickFeedbackTask.anIntArray4670)
                 Class9.aRenderer171!!.H(class338.anIntArray4187!![1], class338.anIntArray4191[1], class338.anIntArray4184[1], MinimapRectClipper.anIntArray222)
                 Class9.aRenderer171!!.H(class338.anIntArray4187!![2], class338.anIntArray4191[2], class338.anIntArray4184[2], anIntArray3169)
-                Class9.aRenderer171!!.H(class338.anIntArray4187!![3], class338.anIntArray4191[3], class338.anIntArray4184[3], Class99.anIntArray1574)
-                if (ClickFeedbackTask.anIntArray4670!![2] != -1 && MinimapRectClipper.anIntArray222!![2] != -1 && anIntArray3169!![2] != -1 && Class99.anIntArray1574!![2] != -1) {
+                Class9.aRenderer171!!.H(class338.anIntArray4187!![3], class338.anIntArray4191[3], class338.anIntArray4184[3], SpriteBlitter.anIntArray1574)
+                if (ClickFeedbackTask.anIntArray4670!![2] != -1 && MinimapRectClipper.anIntArray222!![2] != -1 && anIntArray3169!![2] != -1 && SpriteBlitter.anIntArray1574!![2] != -1) {
                     var i_4_ = -65536
                     if (class338.aByte4192.toInt() == 4) i_4_ = -16776961
                     Class9.aRenderer171!!.method3645(ClickFeedbackTask.anIntArray4670!![1], ClickFeedbackTask.anIntArray4670!![0], MinimapRectClipper.anIntArray222!![0], -8003, i_4_, MinimapRectClipper.anIntArray222!![1])
                     Class9.aRenderer171!!.method3645(MinimapRectClipper.anIntArray222!![1], MinimapRectClipper.anIntArray222!![0], anIntArray3169!![0], -8003, i_4_, anIntArray3169!![1])
-                    Class9.aRenderer171!!.method3645(anIntArray3169!![1], anIntArray3169!![0], Class99.anIntArray1574!![0], -8003, i_4_, Class99.anIntArray1574!![1])
-                    Class9.aRenderer171!!.method3645(Class99.anIntArray1574!![1], Class99.anIntArray1574!![0], ClickFeedbackTask.anIntArray4670!![0], -8003, i_4_, ClickFeedbackTask.anIntArray4670!![1])
+                    Class9.aRenderer171!!.method3645(anIntArray3169!![1], anIntArray3169!![0], SpriteBlitter.anIntArray1574!![0], -8003, i_4_, SpriteBlitter.anIntArray1574!![1])
+                    Class9.aRenderer171!!.method3645(SpriteBlitter.anIntArray1574!![1], SpriteBlitter.anIntArray1574!![0], ClickFeedbackTask.anIntArray4670!![0], -8003, i_4_, ClickFeedbackTask.anIntArray4670!![1])
                     Class9.aRenderer171!!.method3645(ClickFeedbackTask.anIntArray4670!![1], ClickFeedbackTask.anIntArray4670!![0], anIntArray3169!![0], -8003, i_4_, anIntArray3169!![1])
                 }
             }

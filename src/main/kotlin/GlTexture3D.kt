@@ -92,7 +92,7 @@ class GlTexture3D : GlTexture {
             if (ProjectileConfigUtil.anInt387 > SpotAnimEntity.anInt6451) ProjectileConfigUtil.anInt387 = SpotAnimEntity.anInt6451
             GrayscaleNoiseTexture.anInt5293 = GlIndexBufferArb.anInt8502 + NpcActorEntity.anInt10084
             if (GrayscaleNoiseTexture.anInt5293 > RegionSceneShifter.anInt7054) GrayscaleNoiseTexture.anInt5293 = RegionSceneShifter.anInt7054
-            val bools = Class99.aBooleanArrayArray1572
+            val bools = SpriteBlitter.aBooleanArrayArray1572
             val bools_28_ = FacingDirectionNode.aBooleanArrayArray6656
             if (SpriteTextureNode.aBoolean9242) {
                 for (i_29_ in 0..<(NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2)) {
@@ -116,7 +116,7 @@ class GlTexture3D : GlTexture {
                         }
                         if (i_29_ > 0 && i_32_ > 0) {
                             val i_39_ = (RefCountedHandle.anIntArray2272!![i_32_ - 1] and RefCountedHandle.anIntArray2272!![i_32_] and i_30_ and i_31_)
-                            Class99.aBooleanArrayArray1572!![i_29_ - 1]!![i_32_ - 1] = i_39_ == 0
+                            SpriteBlitter.aBooleanArrayArray1572!![i_29_ - 1]!![i_32_ - 1] = i_39_ == 0
                         }
                     }
                     RefCountedHandle.anIntArray2272!![(NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084)] = i_30_
@@ -137,7 +137,7 @@ class GlTexture3D : GlTexture {
                     for (i_41_ in WorldMapIconLabel.aBooleanArrayArray8596!![0]!!.indices) WorldMapIconLabel.aBooleanArrayArray8596!![i_40_]!![i_41_] = true
                 }
                 FacingDirectionNode.aBooleanArrayArray6656 = WorldMapIconLabel.aBooleanArrayArray8596
-                Class99.aBooleanArrayArray1572 = WorldMapIconLabel.aBooleanArrayArray8596!!
+                SpriteBlitter.aBooleanArrayArray1572 = WorldMapIconLabel.aBooleanArrayArray8596!!
                 ByteArrayPool.anInt492 = 0
                 IntPair.anInt6974 = 0
                 ProjectileConfigUtil.anInt387 = SpotAnimEntity.anInt6451
@@ -189,7 +189,7 @@ class GlTexture3D : GlTexture {
                 }
             }
             if (!SpriteTextureNode.aBoolean9242) {
-                Class99.aBooleanArrayArray1572 = bools
+                SpriteBlitter.aBooleanArrayArray1572 = bools
                 FacingDirectionNode.aBooleanArrayArray6656 = bools_28_
             }
             DebugOverlayRenderer.method1884()

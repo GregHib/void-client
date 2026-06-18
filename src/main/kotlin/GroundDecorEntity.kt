@@ -23,9 +23,9 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
             var i_1_ = this.aShort8750.toInt()
             while ((i_1_ <= this.aShort8747)) {
                 val i_2_ = (-DisplayModeOptionState.anInt6111 + i_0_ + NpcActorEntity.anInt10084)
-                if (i_2_ >= 0 && (Class99.aBooleanArrayArray1572!!.size > i_2_)) {
+                if (i_2_ >= 0 && (SpriteBlitter.aBooleanArrayArray1572!!.size > i_2_)) {
                     val i_3_ = (NpcActorEntity.anInt10084 + (i_1_ - GlIndexBufferArb.anInt8502))
-                    if (i_3_ >= 0 && (Class99.aBooleanArrayArray1572!!.size > i_3_) && Class99.aBooleanArrayArray1572!![i_2_]!![i_3_]) return true
+                    if (i_3_ >= 0 && (SpriteBlitter.aBooleanArrayArray1572!!.size > i_3_) && SpriteBlitter.aBooleanArrayArray1572!![i_2_]!![i_3_]) return true
                 }
                 i_1_++
             }

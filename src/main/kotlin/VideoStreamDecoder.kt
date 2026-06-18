@@ -1,5 +1,5 @@
 import SceneEntityModel.Companion.method2503
-import Class99.method880
+import SpriteBlitter.method880
 import jaclib.memory.Stream.Companion.c
 
 /*

@@ -3,7 +3,7 @@ import BrightnessOptionState.Companion.method1745
 import FixedFunctionMaterialPass.Companion.method2146
 import WaterMaterialPass.Companion.method2148
 import WallEntity.Companion.method2485
-import Class99.method881
+import SpriteBlitter.method881
 
 /* Class261 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
