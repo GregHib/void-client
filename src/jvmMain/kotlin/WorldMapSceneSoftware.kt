@@ -340,7 +340,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 while (i_58_ > i_59_) {
                                     val soundEnvelope = SoundEnvelope(var_renderer, class348_sub49, 2)
                                     if (soundEnvelope.anInt2734 == 31) {
-                                        val class253 = (AbstractTileShape.aMapSceneDefLoader_6559!!.method1391((-1).toByte(), class348_sub49.readUnsignedShort(842397944)))
+                                        val class253 = (AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1391((-1).toByte(), class348_sub49.readUnsignedShort(842397944)))
                                         soundEnvelope.method1539(class253.anInt3251, 115.toByte(), class253.anInt3249, class253.anInt3245, class253.anInt3244)
                                     }
                                     if (var_renderer!!.method3704() > 0) {
@@ -628,7 +628,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                     while ((i_126_ > i_127_)) {
                                         val soundEnvelope = SoundEnvelope(var_renderer, class348_sub49, 2)
                                         if (soundEnvelope.anInt2734 == 31) {
-                                            val class253 = (AbstractTileShape.aMapSceneDefLoader_6559!!.method1391(111.toByte(), (class348_sub49.readUnsignedShort(842397944))))
+                                            val class253 = (AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1391(111.toByte(), (class348_sub49.readUnsignedShort(842397944))))
                                             soundEnvelope.method1539((class253.anInt3251), 124.toByte(), (class253.anInt3249), (class253.anInt3245), (class253.anInt3244))
                                         }
                                         if (var_renderer!!.method3704() > 0) {

@@ -86,7 +86,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             ProjectionCameraTransform.aEmoteDefCache_5764!!.method2601((-44).toByte())
             CircleHitbox.aMapSceneCache_413!!.method822((-120).toByte())
             HoverActionEntry.aSpriteStore_1813!!.method300((-123).toByte())
-            AbstractTileShape.aMapSceneDefLoader_6559!!.method1393((-13).toByte())
+            AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1393((-13).toByte())
             GraphicsOptionState.aItemDefinitionLoader_3147!!.method1290(-8)
             SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method695(true)
             FileExistsCondition.aModelDefinitionCache_4782!!.method1602(0)

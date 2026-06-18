@@ -3,7 +3,6 @@ import BloomGraphicsOptionState.Companion.method1772
 import CameraDistanceOptionState.Companion.method1725
 import WaterMaterialPass.Companion.method2148
 import CubemapTextureImplSource.Companion.method2271
-import AbstractTileShape.Companion.method2718
 import WorldMapAreaLabel.Companion.method3570
 import NativeRenderer.Companion.method3936
 import java.awt.Canvas
@@ -361,7 +360,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                             }
                         } else ByteBuffer.method3379(2, 7)
                     } else ByteBuffer.method3379(i xor 0x2, 3)
-                    method2718(-106)
+                    AbstractTileShapeStatics.method2718(-106)
                     method3570(false)
                     AnimationFrameState.method867(true)
                     PcmStreamBuffer.aBoolean8870 = true

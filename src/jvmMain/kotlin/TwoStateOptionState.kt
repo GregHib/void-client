@@ -92,7 +92,7 @@ class TwoStateOptionState : GraphicsOptionState {
                     if (widgetComponent.anInt709 <= 0) widgetComponent.anInt709 = 5
                 }
             }
-            if (RangedGraphicsOptionState.anInt5943 == widgetComponent.anInt765) AbstractTileShape.aWidgetComponent_6561 = widgetComponent
+            if (RangedGraphicsOptionState.anInt5943 == widgetComponent.anInt765) AbstractTileShapeStatics.aWidgetComponent_6561 = widgetComponent
             if (bool && widgetComponent.anObjectArray727 != null && (i_10_ != widgetComponent.anInt709 || (i_11_ != widgetComponent.anInt789))) {
                 val class348_sub36 = WidgetActionEntry()
                 class348_sub36.aWidgetComponent_6989 = widgetComponent

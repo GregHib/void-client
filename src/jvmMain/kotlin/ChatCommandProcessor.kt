@@ -66,7 +66,6 @@ import GameClock.method599
 import AbstractModel.Companion.method606
 import OpenGlModel.Companion.method690
 import Sprite.Companion.method160
-import TerrainTile.Companion.method3985
 import java.awt.datatransfer.DataFlavor
 import java.util.*
 import kotlin.math.max
@@ -221,7 +220,7 @@ object ChatCommandProcessor {
             }
             if (i == 5003) {
                 val i_11_ = anIntArray1149!![--anInt1173]
-                val class147 = method3985(-101, i_11_)
+                val class147 = TerrainTileStatics.method3985(-101, i_11_)
                 var string = ""
                 if (class147 != null && class147.aString2028 != null) string = class147.aString2028!!
                 aStringArray1152!![anInt1170++] = string
@@ -229,7 +228,7 @@ object ChatCommandProcessor {
             }
             if (i == 5004) {
                 val i_12_ = anIntArray1149!![--anInt1173]
-                val class147 = method3985(-101, i_12_)
+                val class147 = TerrainTileStatics.method3985(-101, i_12_)
                 var i_13_ = -1
                 if (class147 != null) i_13_ = class147.anInt2032
                 anIntArray1149!![anInt1173++] = i_13_
@@ -274,7 +273,7 @@ object ChatCommandProcessor {
             }
             if (i == 5010) {
                 val i_17_ = anIntArray1149!![--anInt1173]
-                val class147 = method3985(-101, i_17_)
+                val class147 = TerrainTileStatics.method3985(-101, i_17_)
                 var string = ""
                 if (class147 != null && class147.aString2024 != null) string = class147.aString2024!!
                 aStringArray1152!![anInt1170++] = string
@@ -282,7 +281,7 @@ object ChatCommandProcessor {
             }
             if (i == 5011) {
                 val i_18_ = anIntArray1149!![--anInt1173]
-                val class147 = method3985(-101, i_18_)
+                val class147 = TerrainTileStatics.method3985(-101, i_18_)
                 var string = ""
                 if (class147 != null && class147.aString2022 != null) string = class147.aString2022!!
                 aStringArray1152!![anInt1170++] = string
@@ -290,7 +289,7 @@ object ChatCommandProcessor {
             }
             if (i == 5012) {
                 val i_19_ = anIntArray1149!![--anInt1173]
-                val class147 = method3985(-101, i_19_)
+                val class147 = TerrainTileStatics.method3985(-101, i_19_)
                 var i_20_ = -1
                 if (class147 != null) i_20_ = class147.anInt2026
                 anIntArray1149!![anInt1173++] = i_20_
@@ -313,7 +312,7 @@ object ChatCommandProcessor {
             }
             if (i == 5018) {
                 val i_21_ = anIntArray1149!![--anInt1173]
-                val class147 = method3985(-101, i_21_)
+                val class147 = TerrainTileStatics.method3985(-101, i_21_)
                 var i_22_ = 0
                 if (class147 != null) i_22_ = class147.anInt2027
                 anIntArray1149!![anInt1173++] = i_22_
@@ -321,7 +320,7 @@ object ChatCommandProcessor {
             }
             if (i == 5019) {
                 val i_23_ = anIntArray1149!![--anInt1173]
-                val class147 = method3985(-101, i_23_)
+                val class147 = TerrainTileStatics.method3985(-101, i_23_)
                 var string = ""
                 if (class147 != null && class147.aString2033 != null) string = class147.aString2033!!
                 aStringArray1152!![anInt1170++] = string
@@ -336,7 +335,7 @@ object ChatCommandProcessor {
             }
             if (i == 5023) {
                 val i_24_ = anIntArray1149!![--anInt1173]
-                val class147 = method3985(-101, i_24_)
+                val class147 = TerrainTileStatics.method3985(-101, i_24_)
                 var i_25_ = -1
                 if (class147 != null) i_25_ = class147.anInt2031
                 anIntArray1149!![anInt1173++] = i_25_
@@ -344,7 +343,7 @@ object ChatCommandProcessor {
             }
             if (i == 5024) {
                 val i_26_ = anIntArray1149!![--anInt1173]
-                val class147 = method3985(-101, i_26_)
+                val class147 = TerrainTileStatics.method3985(-101, i_26_)
                 var i_27_ = -1
                 if (class147 != null) i_27_ = class147.anInt2030
                 anIntArray1149!![anInt1173++] = i_27_
@@ -352,7 +351,7 @@ object ChatCommandProcessor {
             }
             if (i == 5025) {
                 val i_28_ = anIntArray1149!![--anInt1173]
-                val class147 = method3985(-101, i_28_)
+                val class147 = TerrainTileStatics.method3985(-101, i_28_)
                 var string = ""
                 if (class147 != null && class147.aString2025 != null) string = class147.aString2025!!
                 aStringArray1152!![anInt1170++] = string
@@ -1859,7 +1858,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 6203) {
-                LoadingScreenImageNode.method3174(0, 0, AbstractTileShape.aWidgetComponent_6561!!.anInt709, false, 74.toByte(), AbstractTileShape.aWidgetComponent_6561!!.anInt789)
+                LoadingScreenImageNode.method3174(0, 0, AbstractTileShapeStatics.aWidgetComponent_6561!!.anInt709, false, 74.toByte(), AbstractTileShapeStatics.aWidgetComponent_6561!!.anInt789)
                 anIntArray1149!![anInt1173++] = WidgetComponentNode.anInt4656
                 anIntArray1149!![anInt1173++] = GroundDecorRenderer.anInt3643
                 return
@@ -2311,7 +2310,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 6912) {
-                    anIntArray1149!![anInt1173++] = AbstractTileShape.anInt6551
+                    anIntArray1149!![anInt1173++] = AbstractTileShapeStatics.anInt6551
                     return
                 }
             } else if (i < 7100) {
@@ -2364,7 +2363,7 @@ object ChatCommandProcessor {
                     else {
                         if (OpenGlModel.anInt5584 == 1) VideoStreamDecoder.aBoolean4117 = true
                         else {
-                            if (OpenGlModel.anInt5584 == 3) AbstractTileShape.aBoolean6558 = true
+                            if (OpenGlModel.anInt5584 == 3) AbstractTileShapeStatics.aBoolean6558 = true
                             return
                         }
                         return

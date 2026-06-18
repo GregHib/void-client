@@ -140,7 +140,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                 if (class46 == RegionSceneLoader.aWidgetComponent_3701) {
                                     if (i_16_ != -1412584499 && ((WidgetRedrawTracker.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
                                         SpriteLoadValidator.anInt4792 = i_10_
-                                        AbstractTileShape.anInt6555 = i_11_
+                                        AbstractTileShapeStatics.anInt6555 = i_11_
                                         RectangleRegion.aWidgetComponentArray1942 = widgetComponents
                                         i_18_++
                                         continue

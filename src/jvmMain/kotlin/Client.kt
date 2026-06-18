@@ -293,7 +293,6 @@ import ParticleProcessor.Companion.method2693
 import AwtKeyboardListener.Companion.method2705
 import DragDropController.Companion.method2707
 import DragDropController.Companion.method2708
-import AbstractTileShape.Companion.method2719
 import VorbisAudioDecoder.Companion.method2785
 import KeyEventNode.Companion.method2796
 import BoundingBoxNode.Companion.method2798
@@ -520,7 +519,6 @@ import OpenGlRenderer.Companion.method3736
 import NativeRenderer.Companion.method3870
 import NativeRenderNode.Companion.method3288
 import OpenGlRenderNode.Companion.method3295
-import TerrainTile.Companion.method3988
 import OpenGlTerrainTile.Companion.method4000
 import NativeTerrainTile.Companion.method4006
 import ShaderProgram.Companion.method3438
@@ -809,7 +807,7 @@ class Client : GameAppletFrame() {
         method486(-123)
         method1096(i.toInt() xor 0x11)
         method171(72.toByte())
-        method3988(i + -182)
+        TerrainTileStatics.method3988(i + -182)
         method804(-3752)
         method1564(104)
         method2572(23.toByte())
@@ -843,7 +841,7 @@ class Client : GameAppletFrame() {
         method3438(59.toByte())
         FontDefinition.method1180((-76).toByte())
         method879(96)
-        method2719(11339)
+        AbstractTileShapeStatics.method2719(11339)
         method2412(true)
         method2389(1)
         method2871(-65)
@@ -2141,7 +2139,7 @@ class Client : GameAppletFrame() {
                                 }
                                 if (class46.anInt765 != 0) {
                                     if ((class46.anInt765 == RangedGraphicsOptionState.anInt5943) || (class46.anInt765 == WidgetRedrawTracker.anInt3932)) {
-                                        AbstractTileShape.aWidgetComponent_6561 = class46
+                                        AbstractTileShapeStatics.aWidgetComponent_6561 = class46
                                         if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2292(123, FacingDirectionNode.aRenderer6654!!, class46.anInt789)
                                         if (class46.anInt765 == RangedGraphicsOptionState.anInt5943) {
                                             if (!ScrollbarComponent.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {

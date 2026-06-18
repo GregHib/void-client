@@ -960,7 +960,7 @@ class WidgetComponent {
             ProjectionCameraTransform.aEmoteDefCache_5764!!.method2602(0)
             CircleHitbox.aMapSceneCache_413!!.method816(false)
             HoverActionEntry.aSpriteStore_1813!!.method302(-797644856)
-            AbstractTileShape.aMapSceneDefLoader_6559!!.method1390(23)
+            AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1390(23)
             GraphicsOptionState.aItemDefinitionLoader_3147!!.method1283(1)
             SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method694(-1007)
             FileExistsCondition.aModelDefinitionCache_4782!!.method1598(111)

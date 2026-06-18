@@ -147,9 +147,9 @@ abstract class AsyncResourceRequest : HashLinkedListNode() {
         @JvmStatic
         fun method3256(i: Int): Int {
             anInt9662++
-            if (AbstractTileShape.anIntArray6547 == null) return 0
+            if (AbstractTileShapeStatics.anIntArray6547 == null) return 0
             if (i != 2) aCameraRotationStub_9661 = null
-            return 2 * AbstractTileShape.anIntArray6547!!.size
+            return 2 * AbstractTileShapeStatics.anIntArray6547!!.size
         }
 
         @JvmStatic

@@ -161,13 +161,13 @@ class VarpStore : VarResolver {
         }
 
         fun method1311(i: Int, var_renderer: Renderer) {
-            LoadingScreenState.aRenderableEntryArray2636 = arrayOfNulls<RenderableEntry>(AbstractTileShape.anIntArray6547!!.size)
+            LoadingScreenState.aRenderableEntryArray2636 = arrayOfNulls<RenderableEntry>(AbstractTileShapeStatics.anIntArray6547!!.size)
             anInt5064++
             if (i != 5139) anInt5065 = 62
             var i_21_ = 0
-            while ((i_21_ < AbstractTileShape.anIntArray6547!!.size)) {
-                val i_22_ = AbstractTileShape.anIntArray6547!![i_21_]
-                val class143 = RangedGraphicsOptionState.method1766((-86).toByte(), i_22_, TerrainTile.aJs5Archive_4585!!)
+            while ((i_21_ < AbstractTileShapeStatics.anIntArray6547!!.size)) {
+                val i_22_ = AbstractTileShapeStatics.anIntArray6547!![i_21_]
+                val class143 = RangedGraphicsOptionState.method1766((-86).toByte(), i_22_, TerrainTileStatics.aJs5Archive_4585!!)
                 val class324 = var_renderer.method3686(class143, SpriteImage.method1523(GlShaderObjectHandle.aJs5Archive_518!!, i_22_), true)
                 LoadingScreenState.aRenderableEntryArray2636!![i_21_] = RenderableEntry(class324, class143)
                 i_21_++

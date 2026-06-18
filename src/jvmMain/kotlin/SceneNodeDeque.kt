@@ -128,7 +128,7 @@ class SceneNodeDeque {
             }
             ParticleAmountConfig.method1252(i_1_, RenderNodeStatics.anInt9721, i_1_, -1, i, i + LocTypeDefinition.anInt4017, i_1_ - -HardCacheEntryReference.anInt10432, 116.toByte(), i)
             if (RectangleRegion.aWidgetComponentArray1942 != null) {
-                method3064(i, SpriteLoadValidator.anInt4792, true, AbstractTileShape.anInt6555, i_1_, CalendarUtil.aWidgetComponent_4130!!.anInt760, i + LocTypeDefinition.anInt4017, false, RectangleRegion.aWidgetComponentArray1942, -1412584499, i_1_ - -HardCacheEntryReference.anInt10432)
+                method3064(i, SpriteLoadValidator.anInt4792, true, AbstractTileShapeStatics.anInt6555, i_1_, CalendarUtil.aWidgetComponent_4130!!.anInt760, i + LocTypeDefinition.anInt4017, false, RectangleRegion.aWidgetComponentArray1942, -1412584499, i_1_ - -HardCacheEntryReference.anInt10432)
                 RectangleRegion.aWidgetComponentArray1942 = null
             }
         }
@@ -378,7 +378,7 @@ class SceneNodeDeque {
                                 LocalPlayerState.aPlayer_1907!!.aString10537 = OpenGlTerrainTile.aString8265
                                 LocalPlayerState.aPlayer_1907!!.aString10544 = LocalPlayerState.aPlayer_1907!!.aString10537
                                 GameAppletFrame.anInt37 = class348_sub49_sub2.readUnsignedByte(255)
-                                AbstractTileShape.anInt6551 = class348_sub49_sub2.readInt((-126).toByte())
+                                AbstractTileShapeStatics.anInt6551 = class348_sub49_sub2.readInt((-126).toByte())
                                 IndexedSprite.aServerConnectionInfo_5199 = ServerConnectionInfo()
                                 IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 if (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 == 65535) IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 = -1

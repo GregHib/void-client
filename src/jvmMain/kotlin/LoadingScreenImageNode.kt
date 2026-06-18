@@ -145,8 +145,8 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
         fun method3178(js5Archive: Js5Archive?, i: Int, `is`: IntArray?, js5Archive_15_: Js5Archive?) {
             try {
                 anInt9506++
-                if (`is` != null) AbstractTileShape.anIntArray6547 = `is`
-                TerrainTile.aJs5Archive_4585 = js5Archive
+                if (`is` != null) AbstractTileShapeStatics.anIntArray6547 = `is`
+                TerrainTileStatics.aJs5Archive_4585 = js5Archive
                 if (i >= -6) method3177(-36, true)
                 GlShaderObjectHandle.aJs5Archive_518 = js5Archive_15_
             } catch (runtimeexception: RuntimeException) {
@@ -165,7 +165,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
                 } else if (i_16_ != 3) break
                 method282(2, FacingDirectionNode.aRenderer6654, LocTypeDefinition.anInt4017, 73.toByte(), Js5Archive.anInt666, PerlinTextureProvider.anInt5812, HardCacheEntryReference.anInt10432, 2)
             } while (false)
-            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)) TerrainTile.method3980(i + 93, ParticleSystemRenderer.aCanvas3869!!)
+            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)) TerrainTileStatics.method3980(i + 93, ParticleSystemRenderer.aCanvas3869!!)
             if (FacingDirectionNode.aRenderer6654 != null) BufferToggleState.method2196((-9).toByte())
             ParticleSystemRenderer.aBoolean3870 = i != IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
             GrayscaleNoiseTexture.aBoolean5300 = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)

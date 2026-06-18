@@ -886,7 +886,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             VideoStreamDecoder.anInt4114 = 0
             GlTexture.anInt4855 = 0
             CipheredPacketBuffer.anInt9764 = 0
-            TerrainTile.anInt4591 = 0
+            TerrainTileStatics.anInt4591 = 0
             FixedFunctionMaterialPass.anInt6204 = 0
             CollisionMap.anInt4442 = 0
             CompassSmoother.anInt3366 = 0
@@ -1300,7 +1300,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             LinkedNodeListIterator.anInt1644 = 0
             Client.anInt5182 = 0
             WaterMaterialPass.anInt6224 = 0
-            AbstractTileShape.anInt6560 = 0
+            AbstractTileShapeStatics.anInt6560 = 0
             NativeRenderer.anInt7968 = 0
             NativeRenderer.anInt7911 = 0
             NativeRenderer.anInt8011 = 0
@@ -2640,7 +2640,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlSpriteRenderer.anInt8437 = 0
             SimpleToggleOptionState.anInt5892 = 0
             SkeletalAnimFrameLoader.anInt478 = 0
-            TerrainTile.anInt4586 = 0
+            TerrainTileStatics.anInt4586 = 0
             ArbFogMaterialPass.anInt6186 = 0
             CollisionMap.anInt4451 = 0
             MapElementDecor.anInt10340 = 0

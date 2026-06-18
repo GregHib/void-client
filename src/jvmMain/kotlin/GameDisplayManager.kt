@@ -3,7 +3,6 @@ import GraphicsOptionState.Companion.method1713
 import FixedFunctionMaterialPass.Companion.method2145
 import TexGenMaterialPass.Companion.method2158
 import ConnectionStateType.Companion.method527
-import TerrainTile.Companion.method3980
 import java.awt.Container
 
 /*
@@ -66,7 +65,7 @@ object GameDisplayManager {
             else {
                 ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
                 if (!GrayscaleNoiseTexture.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
-                else method3980(86, ParticleSystemRenderer.aCanvas3869!!)
+                else TerrainTileStatics.method3980(86, ParticleSystemRenderer.aCanvas3869!!)
                 if (RsaVarbitHandler.aFrame4904 === container) {
                     val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
                     ParticleSystemRenderer.aCanvas3869!!.setLocation((ModelResourceBundle.anInt7129 + insets.left), (insets.top - -TimingCounters.anInt4167))
