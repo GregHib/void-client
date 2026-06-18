@@ -1943,7 +1943,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                 anInt5433 = modelDefinition.anInt1821
                 anIntArray5511 = modelDefinition.anIntArray1841
                 aWidgetRedrawRegionArray5474 = modelDefinition.aWidgetRedrawRegionArray1866
-                val class371s: Array<Class371?> = arrayOfNulls<Class371>(anInt5433)
+                val cubemapTextureFactories: Array<CubemapTextureFactory?> = arrayOfNulls<CubemapTextureFactory>(anInt5433)
                 aModelFacePriorityNodeArray5457 = modelDefinition.aModelFacePriorityNodeArray1846
                 if (modelDefinition.aRectangleBoundsArray1832 != null) {
                     anInt5406 = modelDefinition.aRectangleBoundsArray1832!!.size
@@ -1994,7 +1994,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     val i_357_ = anIntArray5455!![i_356_]
                     anIntArray5455!![i_356_] = i_355_
                     i_355_ += i_357_
-                    class371s[i_356_] = Class371()
+                    cubemapTextureFactories[i_356_] = CubemapTextureFactory()
                     i_356_++
                 }
                 anIntArray5455!![modelDefinition.anInt1821] = i_355_
@@ -2027,17 +2027,17 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     i_368_ = i_368_ * 256 / i_371_
                     val i_372_ = (if (modelDefinition.aByteArray1843 != null) modelDefinition.aByteArray1843!![i_358_] else 0.toByte())
                     if (i_372_.toInt() == 0) {
-                        var class371 = class371s[i_359_.toInt()]!!
+                        var class371 = cubemapTextureFactories[i_359_.toInt()]!!
                         class371.anInt4522++
                         class371.anInt4525 += i_369_
                         class371.anInt4520 += i_368_
                         class371.anInt4524 += i_370_
-                        class371 = class371s[i_360_.toInt()]!!
+                        class371 = cubemapTextureFactories[i_360_.toInt()]!!
                         class371.anInt4520 += i_368_
                         class371.anInt4522++
                         class371.anInt4525 += i_369_
                         class371.anInt4524 += i_370_
-                        class371 = class371s[i_361_.toInt()]!!
+                        class371 = cubemapTextureFactories[i_361_.toInt()]!!
                         class371.anInt4522++
                         class371.anInt4520 += i_368_
                         class371.anInt4525 += i_369_
@@ -2263,11 +2263,11 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                         val i_447_ = modelDefinition.aShortArray1863[i_374_]
                         val i_448_ = modelDefinition.aShortArray1835!![i_374_]
                         val i_449_ = modelDefinition.aShortArray1855[i_374_]
-                        var class371 = class371s[i_447_.toInt()]!!
+                        var class371 = cubemapTextureFactories[i_447_.toInt()]!!
                         aShortArray5508!![i_373_] = method669(class371.anInt4524, l, i_373_, class371.anInt4522, class371.anInt4520, -114, f, i_447_.toInt(), f_379_, modelDefinition, class371.anInt4525)
-                        class371 = class371s[i_448_.toInt()]!!
+                        class371 = cubemapTextureFactories[i_448_.toInt()]!!
                         aShortArray5495!![i_373_] = method669(class371.anInt4524, i_384_.toLong() + l, i_373_, class371.anInt4522, class371.anInt4520, -68, f_380_, i_448_.toInt(), f_381_, modelDefinition, class371.anInt4525)
-                        class371 = class371s[i_449_.toInt()]!!
+                        class371 = cubemapTextureFactories[i_449_.toInt()]!!
                         aShortArray5512!![i_373_] = method669(class371.anInt4524, i_385_.toLong() + l, i_373_, class371.anInt4522, class371.anInt4520, -112, f_382_, i_449_.toInt(), f_383_, modelDefinition, class371.anInt4525)
                     } else if (i_446_.toInt() == 1) {
                         val class63 = class63s[i_374_]!!

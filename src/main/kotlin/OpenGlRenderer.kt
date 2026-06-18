@@ -720,7 +720,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             val f: Float
             val f_64_: Float
             if (aClass258_Sub3_Sub1_7776 == null || i_58_ > aClass258_Sub3_Sub1_7776!!.anInt8547 || i_59_ > aClass258_Sub3_Sub1_7776!!.anInt8551) {
-                aClass258_Sub3_Sub1_7776 = Class371.method3583(false, `is`, 6406, i_59_, this, -45, 6406, i_58_)
+                aClass258_Sub3_Sub1_7776 = CubemapTextureFactory.method3583(false, `is`, 6406, i_59_, this, -45, 6406, i_58_)
                 aClass258_Sub3_Sub1_7776!!.method1965(false, false, 10243)
                 f = aClass258_Sub3_Sub1_7776!!.aFloat9938
                 f_64_ = (aClass258_Sub3_Sub1_7776!!.aFloat9937)

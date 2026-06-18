@@ -1,7 +1,7 @@
 /* Class371 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class371 {
+class CubemapTextureFactory {
     @JvmField
     var anInt4520: Int = 0
     @JvmField

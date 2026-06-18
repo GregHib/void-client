@@ -434,7 +434,7 @@ import LocConfigModelBuilder.Companion.method3560
 import WorldMapLabel.Companion.method3567
 import WorldMapTextLabel.Companion.method3572
 import WorldMapIconLabel.Companion.method3574
-import Class371.Companion.method3584
+import CubemapTextureFactory.Companion.method3584
 import Class373_Sub2.Companion.method3609
 import Class374.method3611
 import Class375.method3613
