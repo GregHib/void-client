@@ -75,7 +75,7 @@ class Class367_Sub1 internal constructor(var_ha_Sub3: NativeRenderer) : Abstract
             class348_sub40_sub8.anInt9158 = i_2_
             class348_sub40_sub8.anInt9156 = i_3_
             class348_sub40_sub8.method3044(110)
-            Class79.method797(1, i_0_, 115.toByte())
+            NpcType.method797(1, i_0_, 115.toByte())
             class348_sub40_sub8.method3069(0, `is`, 115.toByte())
             if (i < 89) method3535(72, -40)
             return `is`

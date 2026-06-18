@@ -1,5 +1,5 @@
 import Class367_Sub2.Companion.method3536
-import Class79.Companion.method802
+import NpcType.Companion.method802
 import kotlin.concurrent.Volatile
 
 /* Class203 - Decompiled by JODE

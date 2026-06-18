@@ -1,7 +1,7 @@
 import CircleDrawer.method1496
 import LinkedListNode.Companion.method2711
 import SoundBankPatch.Companion.method2929
-import Class79.Companion.method802
+import NpcType.Companion.method802
 import OutputStream_Sub2.Companion.method136
 
 /* Class318_Sub1_Sub3_Sub3_Sub1 - Decompiled by JODE
@@ -9,17 +9,17 @@ import OutputStream_Sub2.Companion.method136
 */
 class Npc : ProjectedGroundDecor() {
     var anInt10499: Int = -1
-    var aClass79_10505: Class79? = null
+    var aNpcType_10505: NpcType? = null
     var anInt10512: Int = -1
     private fun method2442(i: Int): Boolean {
         if (i != 1810797122) this.anInt10499 = -103
         anInt10510++
-        return (this.aClass79_10505!!.aBoolean1396)
+        return (this.aNpcType_10505!!.aBoolean1396)
     }
 
     public override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_6_: Int, i_7_: Byte, i_8_: Int) {
         try {
-            if (i_7_ > -106) this.aClass79_10505 = null
+            if (i_7_ > -106) this.aNpcType_10505 = null
             anInt10513++
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
@@ -35,7 +35,7 @@ class Npc : ProjectedGroundDecor() {
 
     public override fun method2391(var_renderer: Renderer?, i: Int, i_9_: Int, i_10_: Int): Boolean {
         anInt10514++
-        if (this.aClass79_10505 == null || !method2447(97, 131072, var_renderer)) return false
+        if (this.aNpcType_10505 == null || !method2447(97, 131072, var_renderer)) return false
         val class101 = var_renderer!!.method3705()
         val i_11_ = this.aCompassSmoother_10217.method2019((-78).toByte())
         class101.method895(i_11_)
@@ -44,10 +44,10 @@ class Npc : ProjectedGroundDecor() {
         var i_12_ = i_10_
         while ((this.aAbstractModelArray10323.size > i_12_)) {
             if (this.aAbstractModelArray10323[i_12_] != null) {
-                val bool_13_ = (this.aClass79_10505!!.anInt1337 > 0 || (if (this.aClass79_10505!!.anInt1333 != -1) this.aClass79_10505!!.anInt1333 == 1 else this.aClass79_10505!!.anInt1399 == 1))
+                val bool_13_ = (this.aNpcType_10505!!.anInt1337 > 0 || (if (this.aNpcType_10505!!.anInt1333 != -1) this.aNpcType_10505!!.anInt1333 == 1 else this.aNpcType_10505!!.anInt1399 == 1))
                 val bool_14_: Boolean
-                if (ParticleSystemRenderer.aBoolean3870) bool_14_ = (this.aAbstractModelArray10323[i_12_]!!.method623(i_9_, i, class101, bool_13_, this.aClass79_10505!!.anInt1337, LocalPlayerState.anInt1906))
-                else bool_14_ = (this.aAbstractModelArray10323[i_12_]!!.method628(i_9_, i, class101, bool_13_, this.aClass79_10505!!.anInt1337))
+                if (ParticleSystemRenderer.aBoolean3870) bool_14_ = (this.aAbstractModelArray10323[i_12_]!!.method623(i_9_, i, class101, bool_13_, this.aNpcType_10505!!.anInt1337, LocalPlayerState.anInt1906))
+                else bool_14_ = (this.aAbstractModelArray10323[i_12_]!!.method628(i_9_, i, class101, bool_13_, this.aNpcType_10505!!.anInt1337))
                 if (bool_14_) {
                     bool = true
                     break
@@ -110,7 +110,7 @@ class Npc : ProjectedGroundDecor() {
 
     public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel? {
         anInt10501++
-        if (this.aClass79_10505 == null || !method2447(i + 114, 2048, var_renderer)) return null
+        if (this.aNpcType_10505 == null || !method2447(i + 114, 2048, var_renderer)) return null
         val class101 = var_renderer!!.method3705()
         val i_20_ = this.aCompassSmoother_10217.method2019((-69).toByte())
         class101.method895(i_20_)
@@ -121,7 +121,7 @@ class Npc : ProjectedGroundDecor() {
         } else this.anInt10274 = (this.anInt10274 - this.anInt10274.toFloat() / 10.0f).toInt()
         class101.method891(this.x, (-this.anInt10274 + this.anInt6382 + -20), this.y)
         val class225 = this.method2422(72.toByte())
-        val class79 = (if (this.aClass79_10505!!.anIntArray1377 != null) this.aClass79_10505!!.method794(aVarpStore_10209!!, -1) else this.aClass79_10505)
+        val class79 = (if (this.aNpcType_10505!!.anIntArray1377 != null) this.aNpcType_10505!!.method794(aVarpStore_10209!!, -1) else this.aNpcType_10505)
         this.aBoolean10324 = false
         var class318_sub4: SceneEntityModel? = null
         if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == i && class79!!.aBoolean1369 && class225.aBoolean2913) {
@@ -134,13 +134,13 @@ class Npc : ProjectedGroundDecor() {
                 this.anInt10208,
                 false,
                 (if (class17_22_ == null) this.anInt10267 else this.anInt10245),
-                0xffff and this.aClass79_10505!!.aShort1339.toInt(),
-                this.aClass79_10505!!.anInt1399,
+                0xffff and this.aNpcType_10505!!.aShort1339.toInt(),
+                this.aNpcType_10505!!.anInt1399,
                 this.anInt10252,
                 var_renderer,
-                0xff and this.aClass79_10505!!.aByte1353.toInt(),
-                this.aClass79_10505!!.aShort1350.toInt() and 0xffff,
-                this.aClass79_10505!!.aByte1347.toInt() and 0xff,
+                0xff and this.aNpcType_10505!!.aByte1353.toInt(),
+                this.aNpcType_10505!!.aShort1350.toInt() and 0xffff,
+                this.aNpcType_10505!!.aByte1347.toInt() and 0xff,
                 if (class17_22_ == null) class17 else class17_22_
             ))
             if (class64 != null) {
@@ -188,19 +188,19 @@ class Npc : ProjectedGroundDecor() {
 
     public override fun method2421(i: Byte): Int {
         anInt10495++
-        if ((this.aClass79_10505!!.anIntArray1377) != null) {
-            val class79 = this.aClass79_10505!!.method794(aVarpStore_10209!!, -1)
+        if ((this.aNpcType_10505!!.anIntArray1377) != null) {
+            val class79 = this.aNpcType_10505!!.method794(aVarpStore_10209!!, -1)
             if (class79 != null && class79.anInt1366 != -1) return class79.anInt1366
         }
         if (i < 113) method2448(null, 88)
-        return (this.aClass79_10505!!.anInt1366)
+        return (this.aNpcType_10505!!.anInt1366)
     }
 
     public override fun method2393(i: Int): Int {
         anInt10506++
         if (i >= -109) this.anInt10499 = -47
-        if (this.aClass79_10505 == null) return 0
-        return (this.aClass79_10505!!.anInt1337)
+        if (this.aNpcType_10505 == null) return 0
+        return (this.aNpcType_10505!!.anInt1337)
     }
 
     fun method2444(i: Int, bool: Boolean, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int) {
@@ -256,19 +256,19 @@ class Npc : ProjectedGroundDecor() {
 
     fun method2445(i: Byte): Boolean {
         anInt10500++
-        if (this.aClass79_10505 == null) return false
+        if (this.aNpcType_10505 == null) return false
         val i_33_ = 116 % ((-44 - i) / 38)
         return true
     }
 
     public override fun method2425(i: Int): Int {
         anInt10496++
-        if ((this.aClass79_10505!!.anIntArray1377) != null) {
-            val class79 = this.aClass79_10505!!.method794(aVarpStore_10209!!, -1)
+        if ((this.aNpcType_10505!!.anIntArray1377) != null) {
+            val class79 = this.aNpcType_10505!!.method794(aVarpStore_10209!!, -1)
             if (class79 != null && class79.anInt1336 != -1) return class79.anInt1336
         }
         if (i != -1) this.anInt10499 = -69
-        return (this.aClass79_10505!!.anInt1336)
+        return (this.aNpcType_10505!!.anInt1336)
     }
 
     public override fun method2388(i: Int): Boolean {
@@ -279,17 +279,17 @@ class Npc : ProjectedGroundDecor() {
     public override fun method2426(i: Int): Int {
         anInt10504++
         if (i != 200) return 115
-        if ((this.aClass79_10505!!.anIntArray1377) != null) {
-            val class79 = this.aClass79_10505!!.method794(aVarpStore_10209!!, -1)
+        if ((this.aNpcType_10505!!.anIntArray1377) != null) {
+            val class79 = this.aNpcType_10505!!.method794(aVarpStore_10209!!, -1)
             if (class79 != null && class79.anInt1390 != -1) return class79.anInt1390
         }
-        if ((this.aClass79_10505!!.anInt1390) == -1) return super.method2426(200)
-        return (this.aClass79_10505!!.anInt1390)
+        if ((this.aNpcType_10505!!.anInt1390) == -1) return super.method2426(200)
+        return (this.aNpcType_10505!!.anInt1390)
     }
 
     public override fun method2387(var_renderer: Renderer?, i: Int) {
         anInt10509++
-        if (this.aClass79_10505 != null && (this.aBoolean10318 || method2447(123, 0, var_renderer))) {
+        if (this.aNpcType_10505 != null && (this.aBoolean10318 || method2447(123, 0, var_renderer))) {
             if (i > -125) method2391(null, -2, -103, 34)
             val class101 = var_renderer!!.method3705()
             class101.method895(this.aCompassSmoother_10217.method2019((-118).toByte()))
@@ -303,7 +303,7 @@ class Npc : ProjectedGroundDecor() {
 
     private fun method2447(i: Int, i_34_: Int, var_renderer: Renderer?): Boolean {
         var i_34_ = i_34_
-        if (i <= 84) this.aClass79_10505 = null
+        if (i <= 84) this.aNpcType_10505 = null
         anInt10494++
         val i_35_ = i_34_
         val class225 = this.method2422(72.toByte())
@@ -315,7 +315,7 @@ class Npc : ProjectedGroundDecor() {
         val bool = (this.aByte10279.toInt() != 0 && (Class367_Sub11.anInt7396 >= this.anInt10248) && (Class367_Sub11.anInt7396 < this.anInt10250))
         if (bool) i_34_ = i_34_ or 0x80000
         val i_39_ = this.aCompassSmoother_10217.method2019((-25).toByte())
-        val class64 = (this.aClass79_10505!!.method800(i_39_, this.aLoadProgressCountersArray10308, ParticleEmitterNode.aClass87_191, false, class17_36_, this.anInt10203, OpenGlModel.aNpcDefinitionCache_5558, this.anInt10267, class17, aVarpStore_10209, var_renderer, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232).also { this.aAbstractModelArray10323[0] = it })
+        val class64 = (this.aNpcType_10505!!.method800(i_39_, this.aLoadProgressCountersArray10308, ParticleEmitterNode.aClass87_191, false, class17_36_, this.anInt10203, OpenGlModel.aNpcDefinitionCache_5558, this.anInt10267, class17, aVarpStore_10209, var_renderer, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232).also { this.aAbstractModelArray10323[0] = it })
         if (class64 == null) return false
         this.anInt10207 = class64.fa()
         this.anInt10230 = class64.ma()
@@ -426,9 +426,9 @@ class Npc : ProjectedGroundDecor() {
         return true
     }
 
-    fun method2448(class79: Class79?, i: Int) {
+    fun method2448(npcType: NpcType?, i: Int) {
         anInt10511++
-        this.aClass79_10505 = class79
+        this.aNpcType_10505 = npcType
         if (i != -2) this.anInt10512 = 69
         if (this.aClass318_Sub10_10327 != null) this.aClass318_Sub10_10327!!.method2529()
     }

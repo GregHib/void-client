@@ -223,9 +223,9 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         if (class348_sub22 != null) {
                                             val npc = (class348_sub22.aNpc_6859)!!
                                             if ((Class367_Sub11.anInt7396 != (npc.anInt10215)) && (npc.aBoolean10309)) {
-                                                val i_38_ = ((npc.x) - ((npc.aClass79_10505!!.anInt1399) + -1 shl 8))
-                                                val i_39_ = (-((-1 + (npc.aClass79_10505!!.anInt1399)) shl 8) + (npc.y))
-                                                if (i_35_ <= i_38_ && ((-(i_38_ + -i_35_ shr 9) + (player.method2436(68.toByte()))) >= (npc.aClass79_10505!!.anInt1399)) && i_36_ <= i_39_ && ((-(-i_36_ + i_39_ shr 9) + (player.method2436(97.toByte()))) >= (npc.aClass79_10505!!.anInt1399))) {
+                                                val i_38_ = ((npc.x) - ((npc.aNpcType_10505!!.anInt1399) + -1 shl 8))
+                                                val i_39_ = (-((-1 + (npc.aNpcType_10505!!.anInt1399)) shl 8) + (npc.y))
+                                                if (i_35_ <= i_38_ && ((-(i_38_ + -i_35_ shr 9) + (player.method2436(68.toByte()))) >= (npc.aNpcType_10505!!.anInt1399)) && i_36_ <= i_39_ && ((-(-i_36_ + i_39_ shr 9) + (player.method2436(97.toByte()))) >= (npc.aNpcType_10505!!.anInt1399))) {
                                                     WaterMaterialPass.method2150(((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc)
                                                     npc.anInt10215 = Class367_Sub11.anInt7396
                                                 }
@@ -258,18 +258,18 @@ class SceneryDetailOptionState : GraphicsOptionState {
                             }
                             if (class318_sub4.aClass318_Sub1_6410 is Npc) {
                                 val npc = ((class318_sub4.aClass318_Sub1_6410) as Npc)
-                                if (npc.aClass79_10505 != null) {
-                                    if (((npc.aClass79_10505!!.anInt1399 and 0x1) == 0 && (0x1ff and (npc.x)) == 0 && (0x1ff and (npc.y)) == 0) || ((0x1 and npc.aClass79_10505!!.anInt1399) == 1 && (0x1ff and (npc.x)) == 256 && ((npc.y) and 0x1ff) == 256)) {
-                                        val i_45_ = ((npc.x) - ((-1 + npc.aClass79_10505!!.anInt1399) shl 8))
-                                        val i_46_ = ((npc.y) - (npc.aClass79_10505!!.anInt1399 - 1 shl 8))
+                                if (npc.aNpcType_10505 != null) {
+                                    if (((npc.aNpcType_10505!!.anInt1399 and 0x1) == 0 && (0x1ff and (npc.x)) == 0 && (0x1ff and (npc.y)) == 0) || ((0x1 and npc.aNpcType_10505!!.anInt1399) == 1 && (0x1ff and (npc.x)) == 256 && ((npc.y) and 0x1ff) == 256)) {
+                                        val i_45_ = ((npc.x) - ((-1 + npc.aNpcType_10505!!.anInt1399) shl 8))
+                                        val i_46_ = ((npc.y) - (npc.aNpcType_10505!!.anInt1399 - 1 shl 8))
                                         for (i_47_ in 0..<ModelDefinitionLoader.anInt2057) {
                                             val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_47_].toLong(), -6008)) as NpcReference?)
                                             if (class348_sub22 != null) {
                                                 val npc_48_ = (class348_sub22.aNpc_6859)!!
                                                 if (((npc_48_.anInt10215) != Class367_Sub11.anInt7396) && (npc != npc_48_) && (npc_48_.aBoolean10309)) {
-                                                    val i_49_ = (-((npc_48_.aClass79_10505!!.anInt1399) - 1 shl 8) + (npc_48_.x))
-                                                    val i_50_ = ((npc_48_.y) + -((npc_48_.aClass79_10505!!.anInt1399) - 1 shl 8))
-                                                    if (i_49_ >= i_45_ && ((npc_48_.aClass79_10505!!.anInt1399) <= ((npc.aClass79_10505!!.anInt1399) - (-i_45_ + i_49_ shr 9))) && (i_46_ <= i_50_) && ((npc_48_.aClass79_10505!!.anInt1399) <= ((npc.aClass79_10505!!.anInt1399) + -(i_50_ + -i_46_ shr 9)))) {
+                                                    val i_49_ = (-((npc_48_.aNpcType_10505!!.anInt1399) - 1 shl 8) + (npc_48_.x))
+                                                    val i_50_ = ((npc_48_.y) + -((npc_48_.aNpcType_10505!!.anInt1399) - 1 shl 8))
+                                                    if (i_49_ >= i_45_ && ((npc_48_.aNpcType_10505!!.anInt1399) <= ((npc.aNpcType_10505!!.anInt1399) - (-i_45_ + i_49_ shr 9))) && (i_46_ <= i_50_) && ((npc_48_.aNpcType_10505!!.anInt1399) <= ((npc.aNpcType_10505!!.anInt1399) + -(i_50_ + -i_46_ shr 9)))) {
                                                         WaterMaterialPass.method2150(((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), false, npc_48_)
                                                         npc_48_.anInt10215 = (Class367_Sub11.anInt7396)
                                                     }
@@ -284,7 +284,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             if ((player != null) && (Class367_Sub11.anInt7396 != (player.anInt10215)) && (player.aBoolean10309)) {
                                                 val i_53_ = ((player.x) - ((-1 + (player.method2436(116.toByte()))) shl 8))
                                                 val i_54_ = ((player.y) + -((player.method2436(121.toByte())) + -1 shl 8))
-                                                if ((i_53_ >= i_45_) && ((-(-i_45_ + i_53_ shr 9) + (npc.aClass79_10505!!.anInt1399)) >= player.method2436(114.toByte())) && (i_54_ >= i_46_) && (player.method2436(58.toByte()) <= ((npc.aClass79_10505!!.anInt1399) - (i_54_ + -i_46_ shr 9)))) {
+                                                if ((i_53_ >= i_45_) && ((-(-i_45_ + i_53_ shr 9) + (npc.aNpcType_10505!!.anInt1399)) >= player.method2436(114.toByte())) && (i_54_ >= i_46_) && (player.method2436(58.toByte()) <= ((npc.aNpcType_10505!!.anInt1399) - (i_54_ + -i_46_ shr 9)))) {
                                                     SpriteDefinition.method3298(125.toByte(), ((class318_sub4.aClass318_Sub1_6410!!.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player)
                                                     player.anInt10215 = Class367_Sub11.anInt7396
                                                 }

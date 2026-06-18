@@ -158,7 +158,7 @@ class ParameterizedText : HashLinkedListNode() {
         var anInt9578: Int = 0
 
         fun method3211(i: Byte) {
-            Class79.aClient1367!!.method83(true)
+            NpcType.aClient1367!!.method83(true)
             anInt9569++
             method2739(0)
             RegionSceneLoader.anInt3699 = 0

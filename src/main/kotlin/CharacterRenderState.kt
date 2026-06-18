@@ -79,14 +79,14 @@ class CharacterRenderState : LinkedListNode() {
                     val i_12_ = (Class8.method214((this.aNpc_6691!!), -1))
                     if (i_12_ != i_11_) {
                         this.anInt6685 = i_12_
-                        var class79 = (this.aNpc_6691!!.aClass79_10505)
+                        var class79 = (this.aNpc_6691!!.aNpcType_10505)
                         if (class79!!.anIntArray1377 != null) class79 = class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1)
                         if (class79 == null) {
                             this.anInt6694 = 0
                             this.anInt6677 = this.anInt6694
                             this.anInt6681 = 256
                             this.anInt6696 = 256
-                            this.aBoolean6674 = this.aNpc_6691!!.aClass79_10505!!.aBoolean1370
+                            this.aBoolean6674 = this.aNpc_6691!!.aNpcType_10505!!.aBoolean1370
                         } else {
                             this.anInt6694 = class79.anInt1392 shl 9
                             this.anInt6681 = class79.anInt1363

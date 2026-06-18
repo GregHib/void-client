@@ -6,7 +6,7 @@ import CubemapTextureGlSource.Companion.method2264
 import MidiSequencePlayer.Companion.method2878
 import InvertTextureNode.Companion.method3135
 import DirectionPath.Companion.method536
-import Class79.Companion.method802
+import NpcType.Companion.method802
 import OpenGlRenderNode.Companion.method3297
 
 /* Class348_Sub14 - Decompiled by JODE

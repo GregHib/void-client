@@ -255,8 +255,8 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     }
                 } while (false)
                 if (!bool_20_ && BackgroundWorkerThread.anInt3227 == 0) {
-                    SceneCollisionEntry.aLongArray4410!![Class79.anInt1359] = l_19_
-                    Class79.anInt1359 = (1 + Class79.anInt1359) % 100
+                    SceneCollisionEntry.aLongArray4410!![NpcType.anInt1359] = l_19_
+                    NpcType.anInt1359 = (1 + NpcType.anInt1359) % 100
                     val string_22_ = (CompositeRgbNoiseTexture.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
                     if (i == 2 || i == 3) TrackedGroundDecor.method2477("<img=1>" + string_16_, string_22_, (-126).toByte(), -1, "<img=1>" + string, ShadowQualityOptionState.method1788((-76).toByte(), l), 9, 0, string)
                     else if (i != 1) TrackedGroundDecor.method2477(string_16_, string_22_, (-125).toByte(), -1, string, ShadowQualityOptionState.method1788((-83).toByte(), l), 9, 0, string)
@@ -524,7 +524,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                         val i_63_ = 256 + 512 * i_61_
                         val i_64_ = 512 * i_62_ + 256
                         var i_65_ = i_60_
-                        if (i_65_ < 3 && Class79.method802(i_62_, i_61_, true)) i_65_++
+                        if (i_65_ < 3 && NpcType.method802(i_62_, i_61_, true)) i_65_++
                         val class318_sub1_sub3_sub4 = (MapElementDecor(i_38_, i_39_, Class367_Sub11.anInt7396, i_60_, i_65_, i_63_, -i_37_ + CollisionMapAccessor.method2064(i_63_, i_60_, 11219, i_64_), i_64_, i_61_, i_61_, i_62_, i_62_, i_42_))
                         OpenGlRenderNode.aNodeDeque_10492!!.method1999(ChatScriptListNode(class318_sub1_sub3_sub4), -20180)
                     }
@@ -882,8 +882,8 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     }
                 } while (false)
                 if (!bool_101_ && BackgroundWorkerThread.anInt3227 == 0) {
-                    SceneCollisionEntry.aLongArray4410!![Class79.anInt1359] = l_100_
-                    Class79.anInt1359 = (1 + Class79.anInt1359) % 100
+                    SceneCollisionEntry.aLongArray4410!![NpcType.anInt1359] = l_100_
+                    NpcType.anInt1359 = (1 + NpcType.anInt1359) % 100
                     val string_103_ = (CompositeRgbNoiseTexture.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
                     if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_98_, string_103_, (-127).toByte(), -1, "<img=1>" + string, null, 7, 0, string)
                     else if (i == 1) TrackedGroundDecor.method2477("<img=0>" + string_98_, string_103_, (-115).toByte(), -1, "<img=0>" + string, null, 7, 0, string)
@@ -992,8 +992,8 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     if (i <= 1 && FontMetaRef.method3455(string_114_, 28280)) bool_119_ = true
                 } while (false)
                 if (!bool_119_ && BackgroundWorkerThread.anInt3227 == 0) {
-                    SceneCollisionEntry.aLongArray4410!![Class79.anInt1359] = l_118_
-                    Class79.anInt1359 = (Class79.anInt1359 + 1) % 100
+                    SceneCollisionEntry.aLongArray4410!![NpcType.anInt1359] = l_118_
+                    NpcType.anInt1359 = (NpcType.anInt1359 + 1) % 100
                     val string_121_ = (BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_117_, (-106).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
                     if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_114_, string_121_, (-120).toByte(), i_117_, "<img=1>" + string, method1788(87.toByte(), l), 20, 0, string)
                     else if (i != 1) TrackedGroundDecor.method2477(string_114_, string_121_, (-111).toByte(), i_117_, string, method1788(80.toByte(), l), 20, 0, string)
@@ -1390,8 +1390,8 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     if (i <= 1 && FontMetaRef.method3455(string_175_, 28280)) bool_179_ = true
                 } while (false)
                 if (!bool_179_ && BackgroundWorkerThread.anInt3227 == 0) {
-                    SceneCollisionEntry.aLongArray4410!![Class79.anInt1359] = l_178_
-                    Class79.anInt1359 = (Class79.anInt1359 - -1) % 100
+                    SceneCollisionEntry.aLongArray4410!![NpcType.anInt1359] = l_178_
+                    NpcType.anInt1359 = (NpcType.anInt1359 - -1) % 100
                     val string_181_ = (BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_177_, (-93).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 62.toByte()))
                     if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_175_, string_181_, (-110).toByte(), i_177_, "<img=1>" + string, null, 18, 0, string)
                     else if (i == 1) TrackedGroundDecor.method2477("<img=0>" + string_175_, string_181_, (-112).toByte(), i_177_, "<img=0>" + string, null, 18, 0, string)

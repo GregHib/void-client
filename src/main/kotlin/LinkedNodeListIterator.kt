@@ -209,7 +209,7 @@ class LinkedNodeListIterator {
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 if (npc.method2445(((-126).toByte()).toByte()) && ((npc.plane) == (LocalPlayerState.aPlayer_1907!!.plane))) {
-                                    var class79 = (npc.aClass79_10505)
+                                    var class79 = (npc.aNpcType_10505)
                                     if (class79 != null && (class79.anIntArray1377 != null)) class79 = (class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1))
                                     if (class79 != null && class79.aBoolean1397 && class79.aBoolean1396) {
                                         val i_23_ = (-(i_4_ / 128) + (npc.x) / 128)

@@ -1,6 +1,6 @@
 import TextureDefinitionLoader.Companion.method1177
 import SpriteStore.Companion.method303
-import Class79.Companion.method802
+import NpcType.Companion.method802
 
 /* Class211 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

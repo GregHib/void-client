@@ -567,7 +567,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, js5A
                             return
                         }
                         if (string == "errormessage") {
-                            method94(Class79.Companion.aClient1367!!.method81(102.toByte())!!, 102)
+                            method94(NpcType.Companion.aClient1367!!.method81(102.toByte())!!, 102)
                             return
                         }
                         if (string == "heapdump") {

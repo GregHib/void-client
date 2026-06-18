@@ -189,7 +189,7 @@ class Class367_Sub11 internal constructor(glRenderDevice: GlRenderDevice, js5Arc
         fun method3556(bool: Boolean) {
             anInt7405++
             if (bool == false) {
-                synchronized(Class79.aClient1367!!) {
+                synchronized(NpcType.aClient1367!!) {
                     if (SkeletalAnimFrameLoader.aFrame476 == null) {
                         val container: Container
                         if (RsaVarbitHandler.aFrame4904 != null) container = RsaVarbitHandler.aFrame4904!!

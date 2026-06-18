@@ -92,7 +92,7 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                 val npc = (class348_sub22.aNpc_6859)!!
                 RgbColorPalette.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_18_
                 npc.anInt10306 = NullOggStream.anInt9041
-                if ((npc.aClass79_10505) != null && npc.aClass79_10505!!.method793(0)) method181(true, npc)
+                if ((npc.aNpcType_10505) != null && npc.aNpcType_10505!!.method793(0)) method181(true, npc)
                 val i_19_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 2)
                 val i_20_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                 var i_21_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 5)
@@ -103,11 +103,11 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                 val i_24_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                 if (i_24_ == 1) MinimapRectClipper.anIntArray224!![AbstractCameraTransform.anInt1597++] = i_18_
                 npc.method2448((MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 14), -1)), i xor 0x2b297815)
-                npc.method2434(111.toByte(), npc.aClass79_10505!!.anInt1399)
-                npc.anInt10310 = (npc.aClass79_10505!!.anInt1329) shl 3
+                npc.method2434(111.toByte(), npc.aNpcType_10505!!.anInt1399)
+                npc.anInt10310 = (npc.aNpcType_10505!!.anInt1329) shl 3
                 if (bool) npc.method2435((-108).toByte(), i_23_, true)
                 npc.method2444((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) - -i_21_, i_20_ == 1, (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + i_22_, i + 724138125, npc.method2436(50.toByte()), i_19_)
-                if (npc.aClass79_10505!!.method793(0)) ProjectileFactory.method1614(979190089, npc, npc.plane.toInt(), (npc.anIntArray10317!![0]), (npc.anIntArray10320!![0]), null, null, 0)
+                if (npc.aNpcType_10505!!.method793(0)) ProjectileFactory.method1614(979190089, npc, npc.plane.toInt(), (npc.anIntArray10317!![0]), (npc.anIntArray10320!![0]), null, null, 0)
             }
             if (i == -724138005) CircleRasterizer.aClass348_Sub49_Sub2_3813!!.stopBitAccess(false)
         }

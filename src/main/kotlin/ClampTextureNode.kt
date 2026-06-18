@@ -113,7 +113,7 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
                 val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_14_.toLong(), -6008) as NpcReference?)
                 if (class348_sub22 != null) {
                     val npc = (class348_sub22.aNpc_6859)!!
-                    ImageFrameCache.method2556(false, npc.aClass79_10505!!.anInt1399, npc)
+                    ImageFrameCache.method2556(false, npc.aNpcType_10505!!.anInt1399, npc)
                 }
                 i++
             }

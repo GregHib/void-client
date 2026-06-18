@@ -398,7 +398,7 @@ class CombineTextureNode : AbstractProceduralTextureNode(2, false) {
             anInt9228++
             if (SceneObjectSpawner.aNamedIdRecord_1279 != Class8.aNamedIdRecord_165 && i == 9) {
                 try {
-                    JavaScriptBridge.method1617(125.toByte(), Class79.aClient1367, "tbrefresh")
+                    JavaScriptBridge.method1617(125.toByte(), NpcType.aClient1367, "tbrefresh")
                 } catch (throwable: Throwable) {
                     /* empty */
                 }

@@ -86,7 +86,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
             if (Class367_Sub8.anInt7365 == 0) {
                 SlotBinding.aSlotBinding_3401!!.method2025(ConfigVarProgress("jaclib"), false)
                 if (SlotBinding.aSlotBinding_3401!!.method2027(119)!!.method31(28) != 100) return 1
-                if (!(SlotBinding.aSlotBinding_3401!!.method2027(71) as ConfigVarProgress).method2313(124)) Class79.aClient1367!!.method97(i + 24)
+                if (!(SlotBinding.aSlotBinding_3401!!.method2027(71) as ConfigVarProgress).method2313(124)) NpcType.aClient1367!!.method97(i + 24)
                 Class367_Sub8.anInt7365 = 1
             }
             if (Class367_Sub8.anInt7365 == 1) {
@@ -148,8 +148,8 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 i_11_++
             }
             if (bool) {
-                if (!(SlotBinding.aSlotBinding_3404!!.method2027(92) as ConfigVarProgress).method2313(102)) Class79.aClient1367!!.method83(true)
-                if (!(SlotBinding.aSlotBinding_3407!!.method2027(i.toInt() xor 0x64.inv()) as ConfigVarProgress).method2313(103)) WidgetTextConfig.aBoolean510 = Class79.aClient1367!!.method100(i.toInt() xor 0x12.inv())
+                if (!(SlotBinding.aSlotBinding_3404!!.method2027(92) as ConfigVarProgress).method2313(102)) NpcType.aClient1367!!.method83(true)
+                if (!(SlotBinding.aSlotBinding_3407!!.method2027(i.toInt() xor 0x64.inv()) as ConfigVarProgress).method2313(103)) WidgetTextConfig.aBoolean510 = NpcType.aClient1367!!.method100(i.toInt() xor 0x12.inv())
                 Crc64Hashable.aSlotBindingArray4987 = null
             }
             i_9_ -= GradientMapTextureNode.anInt9327

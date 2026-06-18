@@ -54,7 +54,7 @@ class InputStream_Sub2 : InputStream() {
                         val i_15_ = 512 * i_9_ - -256
                         val i_16_ = 256 + 512 * i_10_
                         var i_17_ = GradientLookupEffect.anInt9200
-                        if (i_17_ < 3 && Class79.method802(i_10_, i_9_, true)) i_17_++
+                        if (i_17_ < 3 && NpcType.method802(i_10_, i_9_, true)) i_17_++
                         val class318_sub1_sub3_sub4 = (MapElementDecor(i_11_, i_13_, Class367_Sub11.anInt7396, GradientLookupEffect.anInt9200, i_17_, i_15_, CollisionMapAccessor.method2064(i_15_, GradientLookupEffect.anInt9200, 11219, i_16_) + -i_12_, i_16_, i_9_, i_9_, i_10_, i_10_, i_14_))
                         OpenGlRenderNode.aNodeDeque_10492!!.method1999(ChatScriptListNode(class318_sub1_sub3_sub4), -20180)
                     }

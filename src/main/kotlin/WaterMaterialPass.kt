@@ -221,7 +221,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
         fun method2150(bool: Boolean, bool_14_: Boolean, npc: Npc) {
             anInt6226++
             if (FileExistsCondition.anInt4776 < 400) {
-                var class79 = (npc.aClass79_10505)
+                var class79 = (npc.aNpcType_10505)
                 if (class79!!.anIntArray1377 != null) {
                     class79 = class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1)
                     if (class79 == null) return
@@ -278,8 +278,8 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, class8
                         }
                     }
                     CircleDrawer.anInt2690++
-                    val npcX = (npc.x shr 9) + ArbVertexProgram.regionTileX - npc.aClass79_10505!!.anInt1399 + 1
-                    val npcY = (npc.y shr 9) + Class90.regionTileY - npc.aClass79_10505!!.anInt1399 + 1
+                    val npcX = (npc.x shr 9) + ArbVertexProgram.regionTileX - npc.aNpcType_10505!!.anInt1399 + 1
+                    val npcY = (npc.y shr 9) + Class90.regionTileY - npc.aNpcType_10505!!.anInt1399 + 1
                     MinimapPolygonDrawer.method466(bool, "<col=ffff00>" + string + Loader.getDebug(class79.anInt1344, npcX, npcY, npc.plane.toInt()), 0, (-105).toByte(), bool_14_, 0, -1, true, 1008, npc.anInt10290.toLong(), LocalizedText.aLocalizedText_3505!!.method2063(AnimationFrameDefinition.anInt6967, 544), npc.anInt10290.toLong(), CubeMapMaterialPass.Companion.anInt6299)
                 }
             }

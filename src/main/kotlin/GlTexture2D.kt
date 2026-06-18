@@ -253,11 +253,11 @@ open class GlTexture2D : GlTexture {
             while (true) {
                 try {
                     val image = Toolkit.getDefaultToolkit().createImage(`is`)
-                    val mediatracker = MediaTracker(Class79.aClient1367)
+                    val mediatracker = MediaTracker(NpcType.aClient1367)
                     mediatracker.addImage(image, 0)
                     mediatracker.waitForAll()
-                    val i_58_ = image.getWidth(Class79.aClient1367)
-                    val i_59_ = image.getHeight(Class79.aClient1367)
+                    val i_58_ = image.getWidth(NpcType.aClient1367)
+                    val i_59_ = image.getHeight(NpcType.aClient1367)
                     if (mediatracker.isErrorAny() || i_58_ < 0 || i_59_ < 0) throw RuntimeException("")
                     val is_60_ = IntArray(i_59_ * i_58_)
                     val pixelgrabber = PixelGrabber(image, 0, 0, i_58_, i_59_, is_60_, 0, i_58_)

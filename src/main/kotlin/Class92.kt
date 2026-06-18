@@ -61,9 +61,9 @@ object Class92 {
                             RgbColorPalette.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_5_
                             npc.anInt10306 = Class367_Sub11.anInt7396
                             npc.method2448(class79, -2)
-                            npc.method2434(120.toByte(), npc.aClass79_10505!!.anInt1399)
-                            npc.anInt10310 = (npc.aClass79_10505!!.anInt1329 shl 3)
-                            npc.method2435(((-108).toByte()).toByte(), (npc.aClass79_10505!!.aByte1355 - -4 and 0x631ffff8.inv()) shl 11, true)
+                            npc.method2434(120.toByte(), npc.aNpcType_10505!!.anInt1399)
+                            npc.anInt10310 = (npc.aNpcType_10505!!.anInt1329 shl 3)
+                            npc.method2435(((-108).toByte()).toByte(), (npc.aNpcType_10505!!.aByte1355 - -4 and 0x631ffff8.inv()) shl 11, true)
                             npc.method2444(i_11_, true, i_10_, 123, npc.method2436(54.toByte()), i_7_)
                         }
                     }

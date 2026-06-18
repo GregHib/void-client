@@ -1063,14 +1063,14 @@ object ChatCommandProcessor {
                 CombineTextureNode.anInt9231 = anIntArray1149!![anInt1173 + 5]
                 ProjectedGroundDecor.anInt10257 = anIntArray1149!![anInt1173 + 6]
                 SkyboxGradient.anInt3937 = anIntArray1149!![anInt1173 + 7]
-                Class79.anInt1387 = anIntArray1149!![anInt1173 + 8]
+                NpcType.anInt1387 = anIntArray1149!![anInt1173 + 8]
                 CharCodeMap.anInt9586 = anIntArray1149!![anInt1173 + 9]
                 SolidFillComponent.anInt8363 = anIntArray1149!![anInt1173 + 10]
                 CameraRotationStub.aJs5Archive_322!!.method421(false, HudTabPanel.anInt2996)
                 CameraRotationStub.aJs5Archive_322!!.method421(false, CombineTextureNode.anInt9231)
                 CameraRotationStub.aJs5Archive_322!!.method421(false, ProjectedGroundDecor.anInt10257)
                 CameraRotationStub.aJs5Archive_322!!.method421(false, SkyboxGradient.anInt3937)
-                CameraRotationStub.aJs5Archive_322!!.method421(false, Class79.anInt1387)
+                CameraRotationStub.aJs5Archive_322!!.method421(false, NpcType.anInt1387)
                 SpotAnimVector.aAbstractModelRenderer_2309 = null
                 AbstractMenuEntry.aAbstractModelRenderer_1706 = SpotAnimVector.aAbstractModelRenderer_2309
                 TimedTileQueueEntry.aAbstractModelRenderer_9659 = AbstractMenuEntry.aAbstractModelRenderer_1706

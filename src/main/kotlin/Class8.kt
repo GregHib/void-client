@@ -30,7 +30,7 @@ class Class8 {
         @JvmStatic
         fun method214(npc: Npc, i: Int): Int {
             anInt163++
-            var class79 = (npc.aClass79_10505)
+            var class79 = (npc.aNpcType_10505)
             if (class79!!.anIntArray1377 != null) {
                 class79 = class79.method794(ProjectedGroundDecor.aVarpStore_10209!!, i)
                 if (class79 == null) return -1

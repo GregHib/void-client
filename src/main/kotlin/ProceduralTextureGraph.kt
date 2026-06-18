@@ -1,6 +1,6 @@
 import SoundBankPatch.Companion.method2929
 import HashTableContainer.Companion.method3031
-import Class79.Companion.method797
+import NpcType.Companion.method797
 
 /* Class348_Sub42_Sub5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

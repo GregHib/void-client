@@ -99,7 +99,7 @@ class ResourceLoaderThread : Runnable {
                     try {
                         if (FacingDirectionNode.aRenderer6654 != null && anInterface16_3907 !is LoadingBarRenderer) FacingDirectionNode.aRenderer6654!!.method3689(57.toByte())
                     } catch (exception_sub1: Exception_Sub1) {
-                        method1242((exception_sub1.message + " (Recovered) " + Class79.aClient1367!!.method81(80.toByte())), exception_sub1, 15004)
+                        method1242((exception_sub1.message + " (Recovered) " + NpcType.aClient1367!!.method81(80.toByte())), exception_sub1, 15004)
                         method3553(true, 114.toByte(), 0)
                     }
                 }

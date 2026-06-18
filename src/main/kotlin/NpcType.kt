@@ -3,7 +3,7 @@ import CacheArchiveIndexLoader.Companion.method340
 /* Class79 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class79 {
+class NpcType {
     @JvmField
     var aByte1325: Byte
     var anInt1327: Int
@@ -116,7 +116,7 @@ class Class79 {
         return false
     }
 
-    fun method794(interface17: Interface17, i: Int): Class79? {
+    fun method794(interface17: Interface17, i: Int): NpcType? {
         anInt1394++
         var i_2_ = i
         if (anInt1368 == -1) {

@@ -213,11 +213,11 @@ class VarpStore : Interface17 {
                 var i_40_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 if ((0x10 and i_40_) != 0) i_40_ += CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i xor 0xff00.inv()) shl 8
                 if ((0x2 and i_40_) != 0) {
-                    if (npc.aClass79_10505!!.method793(i xor 0xffff.inv())) method181(true, npc)
+                    if (npc.aNpcType_10505!!.method793(i xor 0xffff.inv())) method181(true, npc)
                     npc.method2448((MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-1), -1)), -2)
-                    npc.method2434(95.toByte(), npc.aClass79_10505!!.anInt1399)
-                    npc.anInt10310 = npc.aClass79_10505!!.anInt1329 shl 3
-                    if (npc.aClass79_10505!!.method793(0)) ProjectileFactory.method1614(979190089, npc, (npc.plane).toInt(), (npc.anIntArray10317!![0]), (npc.anIntArray10320!![0]), null, null, 0)
+                    npc.method2434(95.toByte(), npc.aNpcType_10505!!.anInt1399)
+                    npc.anInt10310 = npc.aNpcType_10505!!.anInt1329 shl 3
+                    if (npc.aNpcType_10505!!.method793(0)) ProjectileFactory.method1614(979190089, npc, (npc.plane).toInt(), (npc.anIntArray10317!![0]), (npc.anIntArray10320!![0]), null, null, 0)
                 }
                 if ((0x8 and i_40_) != 0) {
                     val `is` = IntArray(4)

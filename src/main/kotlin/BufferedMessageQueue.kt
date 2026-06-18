@@ -76,27 +76,27 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
         }
     }
 
-    fun method2079(i: Int, i_6_: Int): Class79 {
+    fun method2079(i: Int, i_6_: Int): NpcType {
         anInt3586++
-        var class79: Class79?
+        var npcType: NpcType?
         synchronized(aLruByteCache_3577!!) {
-            class79 = aLruByteCache_3577!!.method583(i.toLong(), -104) as Class79?
+            npcType = aLruByteCache_3577!!.method583(i.toLong(), -104) as NpcType?
         }
-        if (class79 != null) return class79
+        if (npcType != null) return npcType
         val `is`: ByteArray?
         synchronized(aJs5Archive_3585!!) {
             `is` = aJs5Archive_3585.method410(i_6_ + -1859, method1060(i, 69.toByte()), method1920(127, i))
         }
-        class79 = Class79()
-        class79.anInt1344 = i
-        class79.aBufferedMessageQueue_1348 = this
-        if (`is` != null) class79.method798(111, Buffer(`is`))
-        class79.method799(-117)
+        npcType = NpcType()
+        npcType.anInt1344 = i
+        npcType.aBufferedMessageQueue_1348 = this
+        if (`is` != null) npcType.method798(111, Buffer(`is`))
+        npcType.method799(-117)
         synchronized(aLruByteCache_3577!!) {
-            aLruByteCache_3577!!.method582(class79, i.toLong(), (-102).toByte())
+            aLruByteCache_3577!!.method582(npcType, i.toLong(), (-102).toByte())
             if (i_6_ != -1) aLruByteCache_3577 = null
         }
-        return class79
+        return npcType
     }
 
     fun method2080(i: Int) {

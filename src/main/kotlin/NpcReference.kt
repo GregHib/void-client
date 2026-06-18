@@ -48,7 +48,7 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
             LoadProgressCounters.aKeyboardInputSource_2449!!.method2698(14174)
             anInt6860++
             GlTexture1D.aInputTracker_8552!!.method3592(0)
-            Class79.aClient1367!!.method87((-49).toByte())
+            NpcType.aClient1367!!.method87((-49).toByte())
             ParticleSystemRenderer.aCanvas3869!!.setBackground(Color.black)
             GlShaderProgramHandle.anInt4179 = i
             LoadProgressCounters.aKeyboardInputSource_2449 = method2743(ParticleSystemRenderer.aCanvas3869, 84.toByte())

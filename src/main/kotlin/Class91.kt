@@ -38,7 +38,7 @@ object Class91 {
             val npc = (class348_sub22.aNpc_6859)!!
             if (ScrollbarComponent.aBoolean8335 && ParamMap.method3169(i_3_, 0)) method2146(84.toByte())
             if (NullOggStream.anInt9041 != (npc.anInt10306)) {
-                if (npc.aClass79_10505!!.method793(0)) method181(true, npc)
+                if (npc.aNpcType_10505!!.method793(0)) method181(true, npc)
                 npc.method2448(null, -2)
                 class348_sub22.method2715(52.toByte())
                 bool = true

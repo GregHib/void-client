@@ -3550,15 +3550,15 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             val `is` = ScrollTexMaterialPass.anIntArray6290!!
             var i_322_ = 0
             while ((i_322_ < ModelDefinitionLoader.anInt2057 + i_321_)) {
-                var class79: Class79? = null
+                var npcType: NpcType? = null
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor
                 if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_322_]]!!)
                 else {
                     class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as NpcReference).aNpc_6859!!)
-                    class79 = class318_sub1_sub3_sub3.aClass79_10505!!
-                    if (class79.anIntArray1377 != null) {
-                        class79 = class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), i_316_ + -3)
-                        if (class79 == null) {
+                    npcType = class318_sub1_sub3_sub3.aNpcType_10505!!
+                    if (npcType.anIntArray1377 != null) {
+                        npcType = npcType.method794((ProjectedGroundDecor.aVarpStore_10209!!), i_316_ + -3)
+                        if (npcType == null) {
                             i_322_++
                             continue
                         }
@@ -3582,7 +3582,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             var i_324_ = -1
                             var i_325_ = 1
                             if (i_321_ <= i_322_) {
-                                i_324_ = class79!!.anInt1373
+                                i_324_ = npcType!!.anInt1373
                                 if (i_324_ == -1) i_324_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2909)
                             } else {
                                 val player = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_322_]]!!)
@@ -3627,7 +3627,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 var class105_332_ = (CameraDistanceOptionState.aAbstractModelRendererArray5857!![(if (!class318_sub1_sub3_sub3.aBoolean10226) 1 else 3)]!!)
                                 var i_333_ = -1
                                 if (class318_sub1_sub3_sub3 is Npc) {
-                                    i_333_ = class79!!.anInt1382
+                                    i_333_ = npcType!!.anInt1382
                                     if (i_333_ == -1) i_333_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2923)
                                 } else i_333_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2923)
                                 if (i_333_ != -1) {
@@ -3682,8 +3682,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                     MapTileShape.method2663(-5590, (-12 + RemoveRoofsOptionState.anIntArray6062!![0] + i_317_), (RemoveRoofsOptionState.anIntArray6062!![0] + i_317_ - (12 + -class105.method966())), i_323_, i_323_ - -class105.method980())
                                     i_323_ -= 2
                                 }
-                            } else if (class79!!.anInt1375 >= 0 && (class79.anInt1375 < CompassSmoother.aAbstractModelRendererArray3378!!.size)) {
-                                val class105 = (CompassSmoother.aAbstractModelRendererArray3378!![class79.anInt1375])!!
+                            } else if (npcType!!.anInt1375 >= 0 && (npcType.anInt1375 < CompassSmoother.aAbstractModelRendererArray3378!!.size)) {
+                                val class105 = (CompassSmoother.aAbstractModelRendererArray3378!![npcType.anInt1375])!!
                                 i_323_ -= 25
                                 class105.method974((i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0]) + -(class105.method971() shr 1)), i_323_)
                                 MapTileShape.method2663(-5590, (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1))), (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1)) + class105.method966()), i_323_, class105.method980() + i_323_)

@@ -120,7 +120,7 @@ class Bzip2DecoderState internal constructor() {
             BoundingBoxNode.aAbstractModelRendererArray6742 = null
             WorldMapRenderer.aAbstractModelRendererArray4679 = null
             if (i != -29776) method370(true)
-            Class79.aAbstractModelRenderer_1365 = null
+            NpcType.aAbstractModelRenderer_1365 = null
             SpriteStore.aAbstractModelRendererArray367 = null
             CustomCursorsOptionState.aAbstractModelRendererArray5933 = null
             ScriptResources.aAbstractModelRendererArray2640 = null

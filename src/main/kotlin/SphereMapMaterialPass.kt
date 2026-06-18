@@ -337,7 +337,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                     } else player.method2455(i_36_, -26443, (KeyboardLayoutCache.aByteArray3300!![i_22_]), i_35_)
                     player.aByte6376 = (0x3 and (player.plane) + i_32_).toByte()
                     player.plane = player.aByte6376
-                    if (Class79.method802(i_36_, i_35_, true)) player.aByte6376++
+                    if (NpcType.method802(i_36_, i_35_, true)) player.aByte6376++
                     if (CharCodeMap.anInt9591 == i_22_) {
                         if ((player.plane).toInt() != CompiledScriptCache.anInt4372) PcmStreamBuffer.aBoolean8870 = true
                         CompiledScriptCache.anInt4372 = (player.plane).toInt()
@@ -356,7 +356,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                     } else player.method2455(i_42_, -26443, (KeyboardLayoutCache.aByteArray3300!![i_22_]), i_41_)
                     player.aByte6376 = ((player.plane) + i_38_ and 0x3).toByte()
                     player.plane = player.aByte6376
-                    if (Class79.method802(i_42_, i_41_, true)) player.aByte6376++
+                    if (NpcType.method802(i_42_, i_41_, true)) player.aByte6376++
                     if (CharCodeMap.anInt9591 == i_22_) CompiledScriptCache.anInt4372 = (player.plane).toInt()
                 }
             }

@@ -361,7 +361,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                             if (WorldMapScene.aBoolean3103) {
                                 Class98.anInt1568++
                                 val class348_sub47 = method2148((OpenGlRenderer.aFontMetaRef_7715), (TheoraVideoStream.aIsaacCipher_9029), i + -11525)
-                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(117.toByte(), (InputStream_Sub2.anInt85 shl 14 or (ColourKeyTextureNode.anInt9349 shl 28) or Class79.anInt1404))
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(117.toByte(), (InputStream_Sub2.anInt85 shl 14 or (ColourKeyTextureNode.anInt9349 shl 28) or NpcType.anInt1404))
                                 InterfaceComponentGroup.method3243(30, class348_sub47)
                                 WorldMapScene.aBoolean3103 = false
                             }

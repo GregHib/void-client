@@ -82,7 +82,7 @@ class NativeIndexBuffer : NativeBufferWrapper, Interface2 {
                             val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(class348_sub42_sub12.aLong9605.toInt().toLong(), -6008)) as? NpcReference?)
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
-                                var class79 = (npc.aClass79_10505)
+                                var class79 = (npc.aNpcType_10505)
                                 if (class79!!.anIntArray1377 != null) class79 = (class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1))
                                 if (class79 != null) `is` = class79.anIntArray1342
                             }

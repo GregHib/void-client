@@ -1,6 +1,6 @@
 import DirectionPath.Companion.method536
 import CompositeRgbNoiseTexture.Companion.method574
-import Class79.Companion.method802
+import NpcType.Companion.method802
 
 /* Class218 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

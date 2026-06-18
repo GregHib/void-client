@@ -496,7 +496,7 @@ import RgbColorPalette.Companion.method744
 import MapRegionLoader.Companion.method746
 import IsaacCipher.Companion.method782
 import BufferedRandomAccessFile.Companion.method786
-import Class79.Companion.method804
+import NpcType.Companion.method804
 import Class80.Companion.method808
 import Class81.method810
 import Class83.Companion.method815
@@ -682,7 +682,7 @@ class Client : GameAppletFrame() {
         }
         CacheStateResetter.aServerConnectionInfo_125 = GlElementArrayBuffer.aServerConnectionInfo_4839
         try {
-            BlendTextureNode.aClipboard9357 = Class79.aClient1367!!.getToolkit().getSystemClipboard()
+            BlendTextureNode.aClipboard9357 = NpcType.aClient1367!!.getToolkit().getSystemClipboard()
         } catch (exception: Exception) {
             /* empty */
         }
@@ -1397,7 +1397,7 @@ class Client : GameAppletFrame() {
                 Class92.anInt1524 = 640
                 OpenGlRenderer.anInt7666 = 480
             }
-            Class79.aClient1367 = this
+            NpcType.aClient1367 = this
             this.method95(Class92.anInt1524, 634, OpenGlRenderer.anInt7666, SceneRegionState.aHudTabPanel_196!!.method1640(0) + 32, 37, HardCacheEntryReference.aSceneProjector_10434!!.aString2985, 50)
         }
     }
@@ -1437,7 +1437,7 @@ class Client : GameAppletFrame() {
         while (TerrainShadowBuilderGl2.anInt6930 > i_96_) {
             val npc = (TurbulenceTextureNode.aClass348_Sub22Array9319!![i_96_]!!.aNpc_6859)
             if (npc != null) {
-                val i_97_ = (npc.aClass79_10505!!.aByte1325)
+                val i_97_ = (npc.aNpcType_10505!!.aByte1325)
                 if ((i_97_.toInt() and 0x1) != 0) {
                     val i_98_ = npc.method2436(117.toByte())
                     if ((0x2 and i_97_.toInt()) != 0 && npc.anInt10319 == 0 && Math.random() * 1000.0 < 10.0) {
@@ -2013,7 +2013,7 @@ class Client : GameAppletFrame() {
                     Renderer.anInt4583 = 0
                     Gl2dTexture.aString8605 = null
                     val var_client = Client()
-                    Class79.aClient1367 = var_client
+                    NpcType.aClient1367 = var_client
                     var_client.method96(SceneRegionState.aHudTabPanel_196!!.method1640(0) + 32, 1024, false, 634, 37, (HardCacheEntryReference.aSceneProjector_10434!!.aString2985), 23499, 768)
                     RsaVarbitHandler.aFrame4904!!.setLocation(40, 40)
                 } catch (exception: Exception) {
@@ -2228,7 +2228,7 @@ class Client : GameAppletFrame() {
                                                     WorldMapScene.aBoolean3103 = true
                                                     ColourKeyTextureNode.anInt9349 = `is`[0]
                                                     InputStream_Sub2.anInt85 = `is`[1]
-                                                    Class79.anInt1404 = `is`[2]
+                                                    NpcType.anInt1404 = `is`[2]
                                                 }
                                                 HashLinkedListNode.anInt7059 = 1
                                                 SoundBankPatch.aBoolean6788 = false
@@ -2605,7 +2605,7 @@ class Client : GameAppletFrame() {
             }
             for (i_115_ in 0..<ModelDefinitionLoader.anInt2057) {
                 val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_115_].toLong(), -6008) as NpcReference).aNpc_6859)
-                if (!npc!!.method2445((-4).toByte()) || !(npc.aClass79_10505!!.method796(ProjectedGroundDecor.aVarpStore_10209!!, 18627))) npc.anInt10285 = -1
+                if (!npc!!.method2445((-4).toByte()) || !(npc.aNpcType_10505!!.method796(ProjectedGroundDecor.aVarpStore_10209!!, 18627))) npc.anInt10285 = -1
                 else {
                     npc.method2409((-118).toByte())
                     if ((npc.aShort8743) < 0 || (npc.aShort8750) < 0 || (npc.aShort8751) >= Class367_Sub4.anInt7319 || (npc.aShort8747) >= RangeThresholdTextureNode.anInt9109) npc.anInt10285 = -1
@@ -2615,14 +2615,14 @@ class Client : GameAppletFrame() {
                         if (npc.anInt10223 > Class367_Sub11.anInt7396) i_116_ += 2
                         i_116_ += 5 - npc.method2436(82.toByte()) shl 2
                         if (ByteArrayPool.anInt495 == 0) {
-                            if (npc.aClass79_10505!!.aBoolean1362) i_116_ += 64
+                            if (npc.aNpcType_10505!!.aBoolean1362) i_116_ += 64
                             else i_116_ += 128
                         } else if (ByteArrayPool.anInt495 == 1) {
-                            if (npc.aClass79_10505!!.aBoolean1362) i_116_ += 32
+                            if (npc.aNpcType_10505!!.aBoolean1362) i_116_ += 32
                             else i_116_ += 64
                         }
-                        if (npc.aClass79_10505!!.aBoolean1345) i_116_ += 1024
-                        else if (!npc.aClass79_10505!!.aBoolean1381) i_116_ += 256
+                        if (npc.aNpcType_10505!!.aBoolean1345) i_116_ += 1024
+                        else if (!npc.aNpcType_10505!!.aBoolean1381) i_116_ += 256
                         npc.anInt10285 = i_116_ + 1
                     }
                 }
