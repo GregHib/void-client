@@ -1,7 +1,7 @@
 /* Class136 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SpriteLoadValidator internal constructor(js5Archive: Js5Archive?, string: String?) : Interface7 {
+class SpriteLoadValidator internal constructor(js5Archive: Js5Archive?, string: String?) : ArchiveFileCondition {
     private val aString4788: String?
     private val aJs5Archive_4789: Js5Archive?
 
