@@ -17,7 +17,7 @@ class ModelResourceBundle : LinkedListNode() {
         @JvmField
         var anInt7134: Int = 0
         fun method3328(font: Font?) {
-            Class362.aFont_4456 = font
+            Tooltip.aFont_4456 = font
         }
     }
 }

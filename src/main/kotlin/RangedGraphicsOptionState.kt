@@ -93,7 +93,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
             FacingDirectionNode.aRenderer6654!!.la()
             SpriteRenderEntry.method3281(77.toByte(), FacingDirectionNode.aRenderer6654!!)
             var i_7_ = ScriptCompilerThread.method1053(3112)
-            if (i_7_ == -1) i_7_ = Class362.anInt4458
+            if (i_7_ == -1) i_7_ = Tooltip.anInt4458
             if (i_7_ == -1) i_7_ = StreamingResourceRequest.anInt10447
             CacheArchiveIndexLoader.method338(0, i_7_)
             DisplaySettingsConfig.anInt7267 = 0

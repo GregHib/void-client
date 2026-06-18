@@ -174,7 +174,7 @@ class OutputStream_Sub1 : OutputStream() {
                     if (SocketGameConnection.aBoolean5840 && ClientMachineInfo.aMediaStreamClient_6601!!.method1902(4) == 0) SocketGameConnection.aBoolean5840 = false
                     if (SocketGameConnection.aBoolean5840) {
                         FacingDirectionNode.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
-                        Class362.method3511(false, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)), 2, FacingDirectionNode.aRenderer6654)
+                        Tooltip.method3511(false, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)), 2, FacingDirectionNode.aRenderer6654)
                     }
                     TextureDefinitionCache.method1626(1, false)
                 }

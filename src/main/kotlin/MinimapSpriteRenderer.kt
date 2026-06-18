@@ -77,8 +77,8 @@ class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: 
             if (!TurbulenceTextureNode.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
             if (NpcDefinition.anInt2946 < 100) return false
             if (!IndexedSprite.method164(i_1_, i_3_, (-97).toByte(), i)) return false
-            val i_4_ = i_3_ shl Class362.anInt4459
-            val i_5_ = i shl Class362.anInt4459
+            val i_4_ = i_3_ shl Tooltip.anInt4459
+            val i_5_ = i shl Tooltip.anInt4459
             if (i_2_.toInt() != -79) anInt4919 = 64
             if (method1084(i_0_, ArchiveFileConditionWrapper.anInt3465, i_5_, i_4_, NativeSprite.aTerrainTileArray5191!![i_1_]!!.method3982((-86).toByte(), i, i_3_), ArchiveFileConditionWrapper.anInt3465, 18507)) {
                 SourceRowTextureNode.anInt9112++

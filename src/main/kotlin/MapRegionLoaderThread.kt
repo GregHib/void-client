@@ -159,7 +159,7 @@ class MapRegionLoaderThread : Runnable {
                     class348_sub36.aClass46_6989 = class46
                     method705(class348_sub36)
                 }
-                Class362.anInt4458 = class46.anInt695
+                Tooltip.anInt4458 = class46.anInt695
                 ParticleEmitterFactory.anInt3176 = i
                 Class38.anInt500 = i_13_
                 HeightMapNoise.anInt3829 = class46.anInt812

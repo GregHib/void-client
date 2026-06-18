@@ -43,8 +43,8 @@ class InputStream_Sub1 : InputStream() {
             if (!TurbulenceTextureNode.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
             if (NpcDefinition.anInt2946 < 100) return false
             if (!IndexedSprite.method164(i_1_, i_0_, (-97).toByte(), i)) return false
-            val i_3_ = i_0_ shl Class362.anInt4459
-            val i_4_ = i shl Class362.anInt4459
+            val i_3_ = i_0_ shl Tooltip.anInt4459
+            val i_4_ = i shl Tooltip.anInt4459
             if (i_2_.toInt() != 120) return false
             val i_5_ = -1 + NativeSprite.aTerrainTileArray5191!![i_1_]!!.method3982((-86).toByte(), i, i_0_)
             val i_6_ = i_5_ + class318_sub1_sub4!!.method2394(true)

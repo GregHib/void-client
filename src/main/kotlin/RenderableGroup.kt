@@ -118,7 +118,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
 
         fun method1448(i: Int) {
             anInt5003++
-            if (i <= -55) FlipTextureNode.aClass348_Sub42_Sub12_9144 = ContactEntry((LocalizedText.aLocalizedText_3487!!.method2063(AnimationFrameDefinition.anInt6967, 544)), "", Class362.anInt4458, 1004, -1, 0L, 0, 0, true, false, 0L, true)
+            if (i <= -55) FlipTextureNode.aClass348_Sub42_Sub12_9144 = ContactEntry((LocalizedText.aLocalizedText_3487!!.method2063(AnimationFrameDefinition.anInt6967, 544)), "", Tooltip.anInt4458, 1004, -1, 0L, 0, 0, true, false, 0L, true)
         }
 
         @JvmStatic

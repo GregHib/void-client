@@ -419,8 +419,8 @@ import TextureAtlasState.Companion.method3491
 import AnimationFrameTable.method355
 import CollisionMap.Companion.method3502
 import CollisionMap.Companion.method3508
-import Class362.method3511
-import Class362.method3512
+import Tooltip.method3511
+import Tooltip.method3512
 import Class363.method3516
 import Class365.Companion.method3518
 import Class367_Sub10.Companion.method3553
@@ -2088,8 +2088,8 @@ class Client : GameAppletFrame() {
                             var bool: Boolean
                             bool = (GlTexture1D.aClass373_8552!!.method3597(true) + i_51_) >= i_45_ && GlTexture1D.aClass373_8552!!.method3594(89.toByte()) + i_52_ >= i_46_ && (GlTexture1D.aClass373_8552!!.method3597(true) + i_51_) < i_47_ && GlTexture1D.aClass373_8552!!.method3594(74.toByte()) + i_52_ < i_48_
                             if (!RenderNode.aBoolean9722 && bool) {
-                                if (class46.anInt719 >= 0) Class362.anInt4458 = class46.anInt719
-                                else if (class46.aBoolean776) Class362.anInt4458 = -1
+                                if (class46.anInt719 >= 0) Tooltip.anInt4458 = class46.anInt719
+                                else if (class46.aBoolean776) Tooltip.anInt4458 = -1
                             }
                             if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) ParticleDetailOptionState.method1797(i_41_ - i_44_, i_40_ - i_43_, class46, (-95).toByte())
                             var bool_53_ = false

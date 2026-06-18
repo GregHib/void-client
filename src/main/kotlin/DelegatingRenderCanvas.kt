@@ -224,7 +224,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                 }
                 if (bool) {
-                    if (AnimationFrameTable.anInt489 != 0) Class362.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
+                    if (AnimationFrameTable.anInt489 != 0) Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
                     method3570(false)
                     InterfaceBounds.method2938(102.toByte())
                     method1772(i xor 0x41)

@@ -70,7 +70,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
         fun method2938(i: Byte) {
             anInt6804++
             RenderConfigFactory.aLocDefinitionCache_2979!!.method2037(10205)
-            Class362.aParticleDefLoader_4460!!.method1381(true)
+            Tooltip.aParticleDefLoader_4460!!.method1381(true)
             RadialTextureNode.aModelDefinitionLoader_9342!!.method1206((-37).toByte())
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2012(-23828)
             MapAreaDefinition.aBufferedMessageQueue_2529!!.method2078(-6080)

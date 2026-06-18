@@ -95,7 +95,7 @@ class WaterDetailOptionState : GraphicsOptionState {
             }
             try {
                 val dimension = ParticleSystemRenderer.aCanvas3869!!.getSize()
-                Class362.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3496!!.method2063(AnimationFrameDefinition.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
+                Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3496!!.method2063(AnimationFrameDefinition.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
                 val class124 = ParticleConfigParser.method2277(0, RasterSprite.aClass45_5207!!, AbstractFrameBufferSurface.anInt6923, -1)
                 val l = Class62.method599(-88)
                 FacingDirectionNode.aRenderer6654!!.la()

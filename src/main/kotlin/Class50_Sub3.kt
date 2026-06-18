@@ -64,7 +64,7 @@ class Class50_Sub3 internal constructor(private val anInt5246: Int, private val 
             try {
                 anInt5238++
                 if (!Class5_Sub1.aBoolean8335 && Class73.anInt4776 < 500) {
-                    i_8_ = if (i_8_ != -1) i_8_ else Class362.anInt4458
+                    i_8_ = if (i_8_ != -1) i_8_ else Tooltip.anInt4458
                     if (i_0_ >= -65) method469(19.toByte())
                     val class348_sub42_sub12 = ContactEntry(string_6_, string, i_8_, i_5_, i_3_, l_7_, i_2_, i, bool_4_, bool, l, bool_1_)
                     method3743(6.toByte(), class348_sub42_sub12)

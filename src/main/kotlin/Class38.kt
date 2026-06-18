@@ -291,8 +291,8 @@ class Class38 {
                     i = (class318_sub1.aShort8743).toInt()
                     i_12_ = class318_sub1.aShort8750.toInt()
                 } else {
-                    i = (class318_sub1.x shr Class362.anInt4459)
-                    i_12_ = (class318_sub1.y shr Class362.anInt4459)
+                    i = (class318_sub1.x shr Tooltip.anInt4459)
+                    i_12_ = (class318_sub1.y shr Tooltip.anInt4459)
                 }
                 Class9.aRenderer171!!.EA((TerrainTileShape.aTerrainTileArray8801!![0]!!.method3986(class318_sub1.x, class318_sub1.y, (-118).toByte())), method3547(i, i_12_), method2483(i, i_12_), LoadingScreenState.method1457(i, i_12_))
             }

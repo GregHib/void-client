@@ -66,7 +66,7 @@ class MinimapPositionState {
                 FacingDirectionNode.aRenderer6654!!.la()
                 SpriteRenderEntry.method3281(46.toByte(), FacingDirectionNode.aRenderer6654!!)
                 var i_4_ = method1053(3112)
-                if (i_4_ == -1) i_4_ = Class362.anInt4458
+                if (i_4_ == -1) i_4_ = Tooltip.anInt4458
                 if (i_4_ == -1) i_4_ = StreamingResourceRequest.anInt10447
                 method338(0, i_4_)
                 if (i.toInt() == -43) {

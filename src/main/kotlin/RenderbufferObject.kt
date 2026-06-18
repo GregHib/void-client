@@ -95,8 +95,8 @@ class RenderbufferObject : HashLinkedListNode, Interface9 {
             Class9.aRenderer171 = var_renderer
             Npc.anInt10503 = i
             VoronoiNoiseTextureNode.aBoolean9121 = (Npc.anInt10503 > 1 && Class9.aRenderer171!!.method3708())
-            Class362.anInt4459 = i_0_
-            ArchiveFileConditionWrapper.anInt3465 = 1 shl Class362.anInt4459
+            Tooltip.anInt4459 = i_0_
+            ArchiveFileConditionWrapper.anInt3465 = 1 shl Tooltip.anInt4459
             TheoraVideoStream.anInt9037 = ArchiveFileConditionWrapper.anInt3465 shr 1
             sqrt(((TheoraVideoStream.anInt9037 * TheoraVideoStream.anInt9037) + (TheoraVideoStream.anInt9037 * TheoraVideoStream.anInt9037)).toDouble())
             MapAreaDefinition.anInt2524 = i_1_

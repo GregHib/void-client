@@ -89,7 +89,7 @@ class TileRenderState {
                 }
                 HeightMapNoise.anInt3829 = -1
                 RenderNode.aBoolean9722 = false
-                Class362.anInt4458 = -1
+                Tooltip.anInt4458 = -1
                 if (class46 != null) method1916(-9343, class46)
             }
         }

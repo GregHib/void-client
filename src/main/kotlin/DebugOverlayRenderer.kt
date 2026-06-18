@@ -31,7 +31,7 @@ object DebugOverlayRenderer {
     fun method1884() {
         val i = 10
         val i_1_ = 30
-        if (InterfaceBounds.anInt6818 != 0 && Class362.aFont_4456 != null) {
+        if (InterfaceBounds.anInt6818 != 0 && Tooltip.aFont_4456 != null) {
             Class9.aRenderer171!!.K(BrightnessContrastEffect.anIntArray9183)
             for (i_2_ in WidgetDefinition.anIntArray256!!.indices) Class9.aRenderer171!!.method3660((WidgetDefinition.anIntArray256!![i_2_] + ParticleProcessor.anIntArray4271!![i_2_]), -256, (BrightnessContrastEffect.anIntArray9183!![3] - BrightnessContrastEffect.anIntArray9183!![1]), BrightnessContrastEffect.anIntArray9183!![1], true)
             for (i_3_ in 0..<ParameterizedText.anInt9577) {
@@ -50,12 +50,12 @@ object DebugOverlayRenderer {
                     Class9.aRenderer171!!.method3645(ClickFeedbackTask.anIntArray4670!![1], ClickFeedbackTask.anIntArray4670!![0], anIntArray3169!![0], -8003, i_4_, anIntArray3169!![1])
                 }
             }
-            Class362.aFont_4456!!.method2576(("Dynamic: " + Class86.anInt1477 + "/" + 5000), -256, i_1_ + 45, i, -16777216, -120)
-            Class362.aFont_4456!!.method2576(("Total Opaque Onscreen: " + Class5_Sub1_Sub1.anInt9930 + "/" + 10000), -256, i_1_ + 60, i, -16777216, -124)
-            Class362.aFont_4456!!.method2576(("Total Trans Onscreen: " + LoadingScreenImageNode.anInt9504 + "/" + 5000), -256, i_1_ + 75, i, -16777216, -111)
-            Class362.aFont_4456!!.method2576(("Occluders: " + (DetailLevelOptionState.anInt6115 + Class69.anInt1200) + " Active: " + (ParameterizedText.anInt9577)), -256, i_1_ + 90, i, -16777216, -111)
-            Class362.aFont_4456!!.method2576(("Occluded: Ground:" + TheoraVideoStream.anInt9039 + " Walls: " + Class42.anInt562 + " CPs: " + SourceRowTextureNode.anInt9112 + " Pixels: " + NpcDefinition.anInt2946), -256, i_1_ + 105, i, -16777216, -115)
-            Class362.aFont_4456!!.method2576(("Occlude Calc Took: " + (GlslEnvMaterialPass.aLong6276 / 1000L) + "us"), -256, i_1_ + 120, i, -16777216, -123)
+            Tooltip.aFont_4456!!.method2576(("Dynamic: " + Class86.anInt1477 + "/" + 5000), -256, i_1_ + 45, i, -16777216, -120)
+            Tooltip.aFont_4456!!.method2576(("Total Opaque Onscreen: " + Class5_Sub1_Sub1.anInt9930 + "/" + 10000), -256, i_1_ + 60, i, -16777216, -124)
+            Tooltip.aFont_4456!!.method2576(("Total Trans Onscreen: " + LoadingScreenImageNode.anInt9504 + "/" + 5000), -256, i_1_ + 75, i, -16777216, -111)
+            Tooltip.aFont_4456!!.method2576(("Occluders: " + (DetailLevelOptionState.anInt6115 + Class69.anInt1200) + " Active: " + (ParameterizedText.anInt9577)), -256, i_1_ + 90, i, -16777216, -111)
+            Tooltip.aFont_4456!!.method2576(("Occluded: Ground:" + TheoraVideoStream.anInt9039 + " Walls: " + Class42.anInt562 + " CPs: " + SourceRowTextureNode.anInt9112 + " Pixels: " + NpcDefinition.anInt2946), -256, i_1_ + 105, i, -16777216, -115)
+            Tooltip.aFont_4456!!.method2576(("Occlude Calc Took: " + (GlslEnvMaterialPass.aLong6276 / 1000L) + "us"), -256, i_1_ + 120, i, -16777216, -123)
             if (InterfaceBounds.anInt6818 == 2 && GlTextureBase.anIntArray5091 != null) {
                 for (i_5_ in GlTextureBase.anIntArray5091!!.indices) {
                     var f = GlTextureBase.anIntArray5091!![i_5_].toFloat()

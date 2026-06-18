@@ -185,7 +185,7 @@ object ClientLoadStateMachine {
             GraphicsOptionState.aItemDefinitionLoader_3147 = ItemDefinitionLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             RegionTileNode.aCacheArchiveIndexLoader_6653 = CacheArchiveIndexLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, VideoAdChecker.aClass45_3183)
             RenderConfigFactory.aLocDefinitionCache_2979 = LocDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aClass45_1541)
-            Class362.aParticleDefLoader_4460 = ParticleDefLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aClass45_1541)
+            Tooltip.aParticleDefLoader_4460 = ParticleDefLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aClass45_1541)
             Class73.aModelDefinitionCache_4782 = ModelDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aClass45_1541, CameraRotationStub.aClass45_322)
             RadialTextureNode.aModelDefinitionLoader_9342 = ModelDefinitionLoader(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aClass45_1541, RasterSprite.aClass45_5207)
             ScrollingWidgetComponentNode.aParticleEffectCache_8378 = ParticleEffectCache(HardCacheEntryReference.aSceneProjector_10434, AnimationFrameDefinition.anInt6967, Class95.aClass45_1541)
@@ -230,7 +230,7 @@ object ClientLoadStateMachine {
             val i_12_ = (ParticleEmitterDefExt.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
-        if (Class56.aClass56_1038 == TimedTileQueueEntry.aClass56_9660) method752(TerrainShadowBuilderGl2.aClass45_6950, RenderConfigFactory.aLocDefinitionCache_2979, Class362.aParticleDefLoader_4460, GradientLookupEffect.aSeqDefinitionCache_9195, TheoraVideoStream.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, ProjectedGroundDecor.aVarpStore_10209)
+        if (Class56.aClass56_1038 == TimedTileQueueEntry.aClass56_9660) method752(TerrainShadowBuilderGl2.aClass45_6950, RenderConfigFactory.aLocDefinitionCache_2979, Tooltip.aParticleDefLoader_4460, GradientLookupEffect.aSeqDefinitionCache_9195, TheoraVideoStream.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, ProjectedGroundDecor.aVarpStore_10209)
         if (Class56.aClass56_1039 == TimedTileQueueEntry.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
             Class77.anIntArray1303 = (IntArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))

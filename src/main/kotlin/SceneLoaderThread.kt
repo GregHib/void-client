@@ -63,7 +63,7 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
                     if (class318_sub1.aBoolean6387) class318_sub1.method2387(Class9.aRenderer171, -127)
                     else {
                         method365(class318_sub1, aClass348_Sub1Array3748)
-                        if (Class362.aFont_4456 != null) Class362.aFont_4456!!.method2576(aCacheIndexManager_3743!!.aString3953, -256, class318_sub1.anInt6380, class318_sub1.anInt6386, -16777216, -114)
+                        if (Tooltip.aFont_4456 != null) Tooltip.aFont_4456!!.method2576(aCacheIndexManager_3743!!.aString3953, -256, class318_sub1.anInt6380, class318_sub1.anInt6386, -16777216, -114)
                     }
                 } else {
                     val i = (class318 as SceneModelBuilder).anInt6394
@@ -75,7 +75,7 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
                                     val i_2_ = (DisplayModeOptionState.anInt6111 - NpcActorEntity.anInt10084 + i_0_)
                                     val i_3_ = (GlIndexBufferArb.anInt8502 - NpcActorEntity.anInt10084 + i_1_)
                                     if (i_2_ >= 0 && i_2_ < var_s!!.anInt4587 && i_3_ >= 0 && i_3_ < var_s.anInt4590) {
-                                        Class9.aRenderer171!!.H(i_2_ shl Class362.anInt4459, var_s.method3982((-86).toByte(), i_3_, i_2_), i_3_ shl Class362.anInt4459, anIntArray3747)
+                                        Class9.aRenderer171!!.H(i_2_ shl Tooltip.anInt4459, var_s.method3982((-86).toByte(), i_3_, i_2_), i_3_ shl Tooltip.anInt4459, anIntArray3747)
                                         if (method2154(anIntArray3747[0]) == anInt3749 - 1) var_s.method3979(i_2_, i_3_)
                                     }
                                 }

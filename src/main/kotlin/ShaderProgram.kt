@@ -19,8 +19,8 @@ abstract class ShaderProgram : LinkedListNode() {
                         for (i_3_ in 0..<SpotAnimEntity.anInt6451) {
                             var_renderNode = var_s.fa(i_3_, i_2_, var_renderNode)
                             if (var_renderNode != null) {
-                                val i_4_ = i_3_ shl Class362.anInt4459
-                                val i_5_ = i_2_ shl Class362.anInt4459
+                                val i_4_ = i_3_ shl Tooltip.anInt4459
+                                val i_5_ = i_2_ shl Tooltip.anInt4459
                                 for (i_6_ in i_1_ - 1 downTo 0) {
                                     val var_s_7_ = TerrainTileShape.aTerrainTileArray8801!![i_6_]
                                     if (var_s_7_ != null) {

@@ -10,13 +10,13 @@ abstract class WallEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, i
     override fun method2378(i: Int): Boolean {
         if (i != 0) method2378(29)
         anInt8767++
-        return (Class99.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + ((this.x shr Class362.anInt4459) - -NpcActorEntity.anInt10084))]!![(NpcActorEntity.anInt10084 + (-GlIndexBufferArb.anInt8502 + (this.y shr Class362.anInt4459)))])
+        return (Class99.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + ((this.x shr Tooltip.anInt4459) - -NpcActorEntity.anInt10084))]!![(NpcActorEntity.anInt10084 + (-GlIndexBufferArb.anInt8502 + (this.y shr Tooltip.anInt4459)))])
     }
 
     override fun method2382(i: Byte): Boolean {
         anInt8774++
         if (i >= -51) method2486(-102, 81, -103, -31, -95, -90)
-        return MinimapSpriteRenderer.method1110((this.y shr Class362.anInt4459), this.method2394(true), this.aByte6376.toInt(), (-79).toByte(), (this.x shr Class362.anInt4459))
+        return MinimapSpriteRenderer.method1110((this.y shr Tooltip.anInt4459), this.method2394(true), this.aByte6376.toInt(), (-79).toByte(), (this.x shr Tooltip.anInt4459))
     }
 
     override fun method2380(var_renderer: Renderer?, i: Int, bool: Boolean, class318_sub1: SceneEntity?, i_2_: Int, i_3_: Byte, i_4_: Int) {
@@ -45,7 +45,7 @@ abstract class WallEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, i
     override fun method2384(class348_sub1s: Array<AbstractTileShape?>?, i: Int): Int {
         anInt8771++
         val i_10_ = 122 % ((-14 - i) / 61)
-        return this.method2390(class348_sub1s!!, (this.x shr Class362.anInt4459), -2, (this.y shr Class362.anInt4459))
+        return this.method2390(class348_sub1s!!, (this.x shr Tooltip.anInt4459), -2, (this.y shr Tooltip.anInt4459))
     }
 
     init {

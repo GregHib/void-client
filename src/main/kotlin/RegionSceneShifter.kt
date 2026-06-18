@@ -97,7 +97,7 @@ class RegionSceneShifter : LinkedListNode() {
                 ParticleSystemState.anInt2204 = CompiledScriptCache.anInt4372
                 if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) ParticleSystemState.anInt2204 = 0
                 Buffer.method3379(2, i_17_)
-                Class362.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.Companion.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
+                Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, LocalizedText.aLocalizedText_3495!!.method2063(AnimationFrameDefinition.Companion.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
                 val i_18_ = ArbVertexProgram.regionTileX
                 val i_19_ = Class90.regionTileY
                 ArbVertexProgram.regionTileX = (-(Class367_Sub4.anInt7319 shr 4) + Renderer.anInt4581) * 8

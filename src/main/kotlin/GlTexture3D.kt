@@ -73,8 +73,8 @@ class GlTexture3D : GlTexture {
             SkeletalAnimFrameData.aBoolean351 = true
             ProjectedGroundDecor.aBoolean10221 = Class9.aRenderer171!!.method3704() > 0
             SpriteTextureNode.aBoolean9242 = bool_24_
-            DisplayModeOptionState.anInt6111 = i_12_ shr Class362.anInt4459
-            GlIndexBufferArb.anInt8502 = i_14_ shr Class362.anInt4459
+            DisplayModeOptionState.anInt6111 = i_12_ shr Tooltip.anInt4459
+            GlIndexBufferArb.anInt8502 = i_14_ shr Tooltip.anInt4459
             TextureDefinitionLoader.anInt1974 = i_12_
             BlendTextureNode.anInt9360 = i_14_
             TerrainTileGeometry.anInt3006 = i_13_
@@ -104,9 +104,9 @@ class GlTexture3D : GlTexture {
                         val i_33_ = (DisplayModeOptionState.anInt6111 - NpcActorEntity.anInt10084 + i_29_)
                         val i_34_ = (GlIndexBufferArb.anInt8502 - NpcActorEntity.anInt10084 + i_32_)
                         if (i_33_ >= 0 && i_34_ >= 0 && i_33_ < SpotAnimEntity.anInt6451 && i_34_ < RegionSceneShifter.anInt7054) {
-                            val i_35_ = i_33_ shl Class362.anInt4459
-                            val i_36_ = i_34_ shl Class362.anInt4459
-                            val i_37_ = (TerrainTileShape.aTerrainTileArray8801!![TerrainTileShape.aTerrainTileArray8801!!.size - 1]!!.method3982((-86).toByte(), i_34_, i_33_) - (1000 shl Class362.anInt4459 - 7))
+                            val i_35_ = i_33_ shl Tooltip.anInt4459
+                            val i_36_ = i_34_ shl Tooltip.anInt4459
+                            val i_37_ = (TerrainTileShape.aTerrainTileArray8801!![TerrainTileShape.aTerrainTileArray8801!!.size - 1]!!.method3982((-86).toByte(), i_34_, i_33_) - (1000 shl Tooltip.anInt4459 - 7))
                             val i_38_ = (if (SoundCacheState.aTerrainTileArray4142 != null) (SoundCacheState.aTerrainTileArray4142!![0]!!.method3982((-86).toByte(), i_34_, i_33_) + ArchiveFileConditionWrapper.anInt3465) else (TerrainTileShape.aTerrainTileArray8801!![0]!!.method3982((-86).toByte(), i_34_, i_33_) + ArchiveFileConditionWrapper.anInt3465))
                             i_31_ = (if (i_25_ >= 0) Class9.aRenderer171!!.r(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_, i_25_) else Class9.aRenderer171!!.JA(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_))
                             FacingDirectionNode.aBooleanArrayArray6656!![i_29_]!![i_32_] = i_31_ == 0

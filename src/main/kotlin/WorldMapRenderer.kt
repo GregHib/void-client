@@ -77,12 +77,12 @@ class WorldMapRenderer internal constructor(mapRegionLoaderThread: MapRegionLoad
                 val class318_sub1_sub5 = class357.aClass318_Sub1_Sub5_4395
                 val class318_sub1_sub5_4_ = class357.aClass318_Sub1_Sub5_4407
                 if (class318_sub1_sub5 != null) {
-                    class318_sub1_sub5.aShort8781 = ((class318_sub1_sub5.aShort8781) * i_3_ / (16 shl Class362.anInt4459 - 7)).toShort()
-                    class318_sub1_sub5.aShort8769 = ((class318_sub1_sub5.aShort8769) * i_3_ / (16 shl Class362.anInt4459 - 7)).toShort()
+                    class318_sub1_sub5.aShort8781 = ((class318_sub1_sub5.aShort8781) * i_3_ / (16 shl Tooltip.anInt4459 - 7)).toShort()
+                    class318_sub1_sub5.aShort8769 = ((class318_sub1_sub5.aShort8769) * i_3_ / (16 shl Tooltip.anInt4459 - 7)).toShort()
                 }
                 if (class318_sub1_sub5_4_ != null) {
-                    class318_sub1_sub5_4_.aShort8781 = ((class318_sub1_sub5_4_.aShort8781) * i_3_ / (16 shl Class362.anInt4459 - 7)).toShort()
-                    class318_sub1_sub5_4_.aShort8769 = ((class318_sub1_sub5_4_.aShort8769) * i_3_ / (16 shl Class362.anInt4459 - 7)).toShort()
+                    class318_sub1_sub5_4_.aShort8781 = ((class318_sub1_sub5_4_.aShort8781) * i_3_ / (16 shl Tooltip.anInt4459 - 7)).toShort()
+                    class318_sub1_sub5_4_.aShort8769 = ((class318_sub1_sub5_4_.aShort8769) * i_3_ / (16 shl Tooltip.anInt4459 - 7)).toShort()
                 }
             }
         }

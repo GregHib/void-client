@@ -944,7 +944,7 @@ class Class46 {
         fun method427(i: Int) {
             anInt837++
             RenderConfigFactory.aLocDefinitionCache_2979!!.method2033(46.toByte())
-            Class362.aParticleDefLoader_4460!!.method1377(2)
+            Tooltip.aParticleDefLoader_4460!!.method1377(2)
             RadialTextureNode.aModelDefinitionLoader_9342!!.method1204(0)
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2006(88)
             MapAreaDefinition.aBufferedMessageQueue_2529!!.method2080(127)

@@ -218,8 +218,8 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
             if (NpcDefinition.anInt2946 < 100) return false
             if (i_38_ == i_40_ && i_36_ == i_35_) {
                 if (!IndexedSprite.method164(i, i_38_, (-97).toByte(), i_36_)) return false
-                val i_41_ = i_38_ shl Class362.anInt4459
-                val i_42_ = i_36_ shl Class362.anInt4459
+                val i_41_ = i_38_ shl Tooltip.anInt4459
+                val i_42_ = i_36_ shl Tooltip.anInt4459
                 if (method1084(i_37_, ArchiveFileConditionWrapper.anInt3465, i_42_, i_41_, NativeSprite.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_36_, i_38_), ArchiveFileConditionWrapper.anInt3465, 18507)) {
                     SourceRowTextureNode.anInt9112++
                     return true
@@ -232,8 +232,8 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                     if (TextureCache.anIntArrayArrayArray4356!![i]!![i_43_]!![i_44_] == -RandomAccessFileOnDisk.anInt3049) return false
                 }
             }
-            val i_45_ = (i_38_ shl Class362.anInt4459) + 1
-            val i_46_ = (i_36_ shl Class362.anInt4459) + 2
+            val i_45_ = (i_38_ shl Tooltip.anInt4459) + 1
+            val i_46_ = (i_36_ shl Tooltip.anInt4459) + 2
             if (!method1084(i_37_, (1 + -i_38_ + i_40_) * ArchiveFileConditionWrapper.anInt3465, i_46_, i_45_, NativeSprite.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_36_, i_38_), ArchiveFileConditionWrapper.anInt3465 * (i_35_ + -i_36_ + 1), 18507)) return false
             SourceRowTextureNode.anInt9112++
             return true

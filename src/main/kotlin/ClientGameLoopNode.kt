@@ -355,7 +355,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                             ScrollingWidgetComponentNode.aBoolean8386 = false
                             method198(null, false, -1, -1)
                             method1343(-1, null, 1, -1)
-                            if (!RenderNode.aBoolean9722) Class362.anInt4458 = -1
+                            if (!RenderNode.aBoolean9722) Tooltip.anInt4458 = -1
                             FloatGrid.method1583((-73).toByte())
                             ResourceLoaderThread.anInt3918++
                             if (WorldMapScene.aBoolean3103) {

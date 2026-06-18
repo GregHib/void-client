@@ -7,7 +7,7 @@ import Class45.Companion.method395
 /* Class362 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class362 {
+object Tooltip {
     var aFont_4456: Font? = null
     var anInt4457: Int = 0
     @JvmField

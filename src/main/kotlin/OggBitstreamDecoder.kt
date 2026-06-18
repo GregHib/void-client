@@ -69,7 +69,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
                     val class143 = method1819(WidgetDefinition.anInt235, 0, -117, SoftwareSpriteRaster.aClass45_1627!!)
                     val class324 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1519(CameraRotationStub.aClass45_322!!, WidgetDefinition.anInt235, 0), true))
                     ScreenBorderFiller.method1170((-89).toByte())
-                    Class362.method3511(true, class324, class143, string, 2, FacingDirectionNode.aRenderer6654)
+                    Tooltip.method3511(true, class324, class143, string, 2, FacingDirectionNode.aRenderer6654)
                 }
             } else {
                 var var_renderer: Renderer? = null
@@ -79,7 +79,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
                     val class143 = method1819(WidgetDefinition.anInt235, 0, -115, SoftwareSpriteRaster.aClass45_1627!!)
                     val class324 = var_renderer.method3686(class143, SpriteImage.method1519((CameraRotationStub.aClass45_322!!), WidgetDefinition.anInt235, 0), true)
                     ScreenBorderFiller.method1170((-107).toByte())
-                    Class362.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
+                    Tooltip.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
                 }
                 try {
                     FacingDirectionNode.aRenderer6654 = SoftwareSpriteRaster.method958(true, i, SourceRowTextureNode.aRenderConfig9113, 2 * IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(i_1_ + -32350), ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.aClass45_4796)
@@ -88,7 +88,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
                         val class143 = method1819(WidgetDefinition.anInt235, 0, -51, SoftwareSpriteRaster.aClass45_1627!!)
                         val class324 = (var_renderer.method3686(class143, SpriteImage.method1519(CameraRotationStub.aClass45_322!!, WidgetDefinition.anInt235, 0), true))
                         ScreenBorderFiller.method1170((-26).toByte())
-                        Class362.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
+                        Tooltip.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
                     }
                     if (FacingDirectionNode.aRenderer6654!!.method3693()) {
                         var bool_2_ = true

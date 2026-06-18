@@ -2556,7 +2556,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7702 = 0
             OpenGlRenderer.anInt7608 = 0
             OpenGlRenderer.anInt7706 = 0
-            Class362.anInt4457 = 0
+            Tooltip.anInt4457 = 0
             CameraConfigDefinition.anInt3254 = 0
             ParamMap.anInt9489 = 0
             NativeRenderer.anInt8018 = 0

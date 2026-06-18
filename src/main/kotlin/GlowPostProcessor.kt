@@ -127,7 +127,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
         fun method1416(i: Int) {
             RenderConfigFactory.aLocDefinitionCache_2979!!.method2032(5, -101)
             anInt2515++
-            Class362.aParticleDefLoader_4460!!.method1383(i xor 0x804c, 5)
+            Tooltip.aParticleDefLoader_4460!!.method1383(i xor 0x804c, 5)
             RadialTextureNode.aModelDefinitionLoader_9342!!.method1207(-17452, 5)
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2010(5, i + -6)
             MapAreaDefinition.Companion.aBufferedMessageQueue_2529!!.method2076(5, true)

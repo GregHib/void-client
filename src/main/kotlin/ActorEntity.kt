@@ -7,8 +7,8 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
     var aShort8759: Short
     override fun method2384(class348_sub1s: Array<AbstractTileShape?>?, i: Int): Int {
         anInt8758++
-        val i_0_ = this.x shr Class362.anInt4459
-        val i_1_ = this.y shr Class362.anInt4459
+        val i_0_ = this.x shr Tooltip.anInt4459
+        val i_1_ = this.y shr Tooltip.anInt4459
         val i_2_ = -103 / ((i - -14) / 61)
         var i_3_ = 0
         if (DisplayModeOptionState.anInt6111 == i_0_) i_3_++
@@ -31,7 +31,7 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
     override fun method2382(i: Byte): Boolean {
         if (i >= -51) return false
         anInt8760++
-        return method125((this.y shr Class362.anInt4459), (this.x shr Class362.anInt4459), this.aByte6376.toInt(), this, 120.toByte())
+        return method125((this.y shr Tooltip.anInt4459), (this.x shr Tooltip.anInt4459), this.aByte6376.toInt(), this, 120.toByte())
     }
 
     init {
@@ -46,7 +46,7 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
     override fun method2378(i: Int): Boolean {
         anInt8757++
         if (i != 0) method2378(-104)
-        return (Class99.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + (this.x shr Class362.anInt4459) + NpcActorEntity.anInt10084)]!![(NpcActorEntity.anInt10084 + -GlIndexBufferArb.anInt8502 + (this.y shr Class362.anInt4459))])
+        return (Class99.aBooleanArrayArray1572!![(-DisplayModeOptionState.anInt6111 + (this.x shr Tooltip.anInt4459) + NpcActorEntity.anInt10084)]!![(NpcActorEntity.anInt10084 + -GlIndexBufferArb.anInt8502 + (this.y shr Tooltip.anInt4459))])
     }
 
     companion object {
