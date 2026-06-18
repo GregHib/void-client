@@ -2697,7 +2697,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return i_312_ xor (i and i_312_)
     }
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_313_: Int, i_314_: Int) {
         try {
             method3626(i_313_, i_314_)
@@ -2728,7 +2728,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         if (i < -56) anInt7564++
     }
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     override fun method3626(i: Int, i_457_: Int) {
         try {
             anOpenGL7664!!.swapBuffers()

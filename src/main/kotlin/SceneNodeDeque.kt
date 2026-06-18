@@ -352,7 +352,7 @@ class SceneNodeDeque {
                                 ModelDataCache.anInt359 = class348_sub49_sub2.method3369(125.toByte())
                                 ModelBatchBase.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 GradientLookupEffect.aSeqDefinitionCache_9195!!.method2004(ModelBatchBase.aBoolean1900, 25.toByte())
-                                Exception_Sub1.aModelHeaderCache_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
+                                ClientException.aModelHeaderCache_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
                                 MapAreaDefinition.aBufferedMessageQueue_2529!!.method2072(88.toByte(), ModelBatchBase.aBoolean1900)
                             } else {
                                 if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(SceneObjectSpawner.Companion.anInt1288, 107)) return

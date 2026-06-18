@@ -948,7 +948,7 @@ class WidgetComponent {
             RadialTextureNode.aModelDefinitionLoader_9342!!.method1204(0)
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2006(88)
             MapAreaDefinition.aBufferedMessageQueue_2529!!.method2080(127)
-            Exception_Sub1.aModelHeaderCache_112!!.method1938(126)
+            ClientException.aModelHeaderCache_112!!.method1938(126)
             ParticleEmitterNode.aWidgetCache_191!!.method838(7)
             ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2542(-101)
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)

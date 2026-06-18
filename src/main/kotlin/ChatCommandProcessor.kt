@@ -968,8 +968,8 @@ object ChatCommandProcessor {
             if (i == 5401) {
                 anInt1173 -= 2
                 SceneEffectMarker.aShortArray6428!![anIntArray1149!![anInt1173]] = method160(27076, anIntArray1149!![anInt1173 + 1]).toShort()
-                Exception_Sub1.aModelHeaderCache_112!!.method1930(-21804)
-                Exception_Sub1.aModelHeaderCache_112!!.method1936(-71)
+                ClientException.aModelHeaderCache_112!!.method1930(-21804)
+                ClientException.aModelHeaderCache_112!!.method1936(-71)
                 MapAreaDefinition.aBufferedMessageQueue_2529!!.method2074(-118)
                 TextureCache.method3466(125)
                 return
@@ -2819,7 +2819,7 @@ object ChatCommandProcessor {
                 val i_265_ = anIntArray1149!![anInt1173]
                 val i_266_ = anIntArray1149!![anInt1173 + 1]
                 if ((LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) != null) {
-                    LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.method1227(42.toByte(), i_265_, i_266_, Exception_Sub1.aModelHeaderCache_112)
+                    LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536!!.method1227(42.toByte(), i_265_, i_266_, ClientException.aModelHeaderCache_112)
                     return
                 }
                 return
@@ -3129,7 +3129,7 @@ object ChatCommandProcessor {
                     widgetComponent.anInt812 = i_279_
                     widgetComponent.anInt781 = i_280_
                     widgetComponent.aBoolean720 = i == 1208 || i == 1209
-                    val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(74, i_279_)
+                    val class213 = ClientException.aModelHeaderCache_112!!.method1940(74, i_279_)
                     widgetComponent.anInt757 = class213.anInt2787
                     widgetComponent.anInt675 = class213.anInt2781
                     widgetComponent.anInt717 = class213.anInt2810
@@ -4811,14 +4811,14 @@ object ChatCommandProcessor {
             } else if (i < 4300) {
                 if (i == 4200) {
                     val i_456_ = anIntArray1149!![--anInt1173]
-                    aStringArray1152!![anInt1170++] = (Exception_Sub1.aModelHeaderCache_112!!.method1940(-52, i_456_).aString2795) + Loader.getDebug(i_456_)
+                    aStringArray1152!![anInt1170++] = (ClientException.aModelHeaderCache_112!!.method1940(-52, i_456_).aString2795) + Loader.getDebug(i_456_)
                     return
                 }
                 if (i == 4201) {
                     anInt1173 -= 2
                     val i_457_ = anIntArray1149!![anInt1173]
                     val i_458_ = anIntArray1149!![anInt1173 + 1]
-                    val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(-79, i_457_)
+                    val class213 = ClientException.aModelHeaderCache_112!!.method1940(-79, i_457_)
                     if (i_458_ >= 1 && i_458_ <= 5 && (class213.aStringArray2811[i_458_ - 1] != null)) aStringArray1152!![anInt1170++] = (class213.aStringArray2811[i_458_ - 1])
                     else {
                         aStringArray1152!![anInt1170++] = ""
@@ -4830,7 +4830,7 @@ object ChatCommandProcessor {
                     anInt1173 -= 2
                     val i_459_ = anIntArray1149!![anInt1173]
                     val i_460_ = anIntArray1149!![anInt1173 + 1]
-                    val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(112, i_459_)
+                    val class213 = ClientException.aModelHeaderCache_112!!.method1940(112, i_459_)
                     if (i_460_ >= 1 && i_460_ <= 5 && (class213.aStringArray2763!![i_460_ - 1] != null)) aStringArray1152!![anInt1170++] = (class213.aStringArray2763!![i_460_ - 1])
                     else {
                         aStringArray1152!![anInt1170++] = ""
@@ -4840,17 +4840,17 @@ object ChatCommandProcessor {
                 }
                 if (i == 4203) {
                     val i_461_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Exception_Sub1.aModelHeaderCache_112!!.method1940(-52, i_461_).anInt2819
+                    anIntArray1149!![anInt1173++] = ClientException.aModelHeaderCache_112!!.method1940(-52, i_461_).anInt2819
                     return
                 }
                 if (i == 4204) {
                     val i_462_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = if (Exception_Sub1.aModelHeaderCache_112!!.method1940(82, i_462_).anInt2820 == 1) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (ClientException.aModelHeaderCache_112!!.method1940(82, i_462_).anInt2820 == 1) 1 else 0
                     return
                 }
                 if (i == 4205) {
                     val i_463_ = anIntArray1149!![--anInt1173]
-                    val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(80, i_463_)
+                    val class213 = ClientException.aModelHeaderCache_112!!.method1940(80, i_463_)
                     if (class213.anInt2833 == -1 && class213.anInt2758 >= 0) anIntArray1149!![anInt1173++] = class213.anInt2758
                     else {
                         anIntArray1149!![anInt1173++] = i_463_
@@ -4860,7 +4860,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 4206) {
                     val i_464_ = anIntArray1149!![--anInt1173]
-                    val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(-56, i_464_)
+                    val class213 = ClientException.aModelHeaderCache_112!!.method1940(-56, i_464_)
                     if (class213.anInt2833 >= 0 && class213.anInt2758 >= 0) anIntArray1149!![anInt1173++] = class213.anInt2758
                     else {
                         anIntArray1149!![anInt1173++] = i_464_
@@ -4870,7 +4870,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 4207) {
                     val i_465_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = if (Exception_Sub1.aModelHeaderCache_112!!.method1940(87, i_465_).aBoolean2783) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (ClientException.aModelHeaderCache_112!!.method1940(87, i_465_).aBoolean2783) 1 else 0
                     return
                 }
                 if (i == 4208) {
@@ -4878,9 +4878,9 @@ object ChatCommandProcessor {
                     val i_466_ = anIntArray1149!![anInt1173]
                     val i_467_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(i_467_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Exception_Sub1.aModelHeaderCache_112!!.method1940(-96, i_466_).method1561(class254.aString3258, i_467_, -1511086397))
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (ClientException.aModelHeaderCache_112!!.method1940(-96, i_466_).method1561(class254.aString3258, i_467_, -1511086397))
                     else {
-                        anIntArray1149!![anInt1173++] = (Exception_Sub1.aModelHeaderCache_112!!.method1940(-82, i_466_).method1567(class254.anInt3256, -106, i_467_))
+                        anIntArray1149!![anInt1173++] = (ClientException.aModelHeaderCache_112!!.method1940(-82, i_466_).method1567(class254.anInt3256, -106, i_467_))
                         return
                     }
                     return
@@ -4889,7 +4889,7 @@ object ChatCommandProcessor {
                     anInt1173 -= 2
                     val i_468_ = anIntArray1149!![anInt1173]
                     val i_469_ = anIntArray1149!![anInt1173 + 1] - 1
-                    val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(108, i_468_)
+                    val class213 = ClientException.aModelHeaderCache_112!!.method1940(108, i_468_)
                     if (class213.anInt2766 == i_469_) anIntArray1149!![anInt1173++] = class213.anInt2818
                     else {
                         if (class213.anInt2774 == i_469_) anIntArray1149!![anInt1173++] = class213.anInt2817
@@ -4922,7 +4922,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 4213) {
                     val i_471_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Exception_Sub1.aModelHeaderCache_112!!.method1940(-115, i_471_).anInt2802
+                    anIntArray1149!![anInt1173++] = ClientException.aModelHeaderCache_112!!.method1940(-115, i_471_).anInt2802
                     return
                 }
                 if (i == 4214) {

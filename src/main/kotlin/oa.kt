@@ -50,7 +50,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         /* empty */
     }
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_18_: Int, i_19_: Int) {
         checkNotNull(aP5137) { "off" }
         aP5137!!.method3434(rectangles!!, i, i_18_, i_19_)
@@ -383,7 +383,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         return true
     }
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     override fun method3626(i: Int, i_156_: Int) {
         checkNotNull(aP5137) { "off" }
         aP5137!!.method3433(i, i_156_)

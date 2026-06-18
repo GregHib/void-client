@@ -76,7 +76,7 @@ object Tooltip {
                     try {
                         if (!GrayscaleNoiseTexture.aBoolean5300) var_renderer.method3689(118.toByte())
                         else method395(i + 79)
-                    } catch (exception_sub1: Exception_Sub1) {
+                    } catch (clientException_: ClientException) {
                         /* empty */
                     }
                 }

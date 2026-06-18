@@ -261,7 +261,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         this.anIDirect3DDevice9810!!.SetScissorRect(this.anInt8181 - -this.anInt8106, this.anInt8109 - -this.anInt8165, this.anInt8183, this.anInt8096)
     }
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_28_: Int, i_29_: Int) {
         method3626(i_28_, i_29_)
     }
@@ -735,14 +735,14 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         }
     }
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     override fun method3626(i: Int, i_88_: Int) {
         this.anIDirect3DDevice9810!!.EndScene()
         if (aD3dSwapChainWrapper_9787!!.method498(-107)) {
             anInt9785 = 0
             if (a(97.toByte(), aD3dSwapChainWrapper_9787!!.method495(91.toByte(), 0))) method3960(false)
         } else {
-            if (50 < ++anInt9785) throw Exception_Sub1()
+            if (50 < ++anInt9785) throw ClientException()
             method3960(false)
         }
         this.anIDirect3DDevice9810!!.BeginScene()

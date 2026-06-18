@@ -17,7 +17,7 @@ object ScreenBorderFiller {
     @JvmField
     var anInt1962: Int = 0
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     @JvmStatic
     fun method1168(i: Int, i_0_: Int, rectangles: Array<Rectangle?>?) {
         anInt1957++

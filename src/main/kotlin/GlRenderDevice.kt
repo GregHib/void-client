@@ -892,7 +892,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         anInt9848++
     }
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     override fun method3626(i: Int, i_66_: Int) {
         anOpenGL9856!!.swapBuffers()
         anInt9857++
@@ -966,7 +966,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         }
     }
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_72_: Int, i_73_: Int) {
         try {
             anInt9823++

@@ -2043,7 +2043,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return 0
     }
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     override fun method3626(i: Int, i_572_: Int) {
         check(!(aCanvas7468 == null || this.aClass348_Sub31_7469 == null)) { "off" }
         try {
@@ -2338,7 +2338,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         aParticleSystemStateArray7480!![i]!!.method1291(10000, Thread.currentThread())
     }
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_631_: Int, i_632_: Int) {
         check(!(aCanvas7468 == null || this.aClass348_Sub31_7469 == null)) { "off" }
         try {

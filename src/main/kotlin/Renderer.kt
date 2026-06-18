@@ -16,7 +16,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun F(i: Int, i_7_: Int)
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     abstract fun method3626(i: Int, i_8_: Int)
 
     abstract fun method3627(): Boolean
@@ -121,7 +121,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun L(i: Int, i_72_: Int, i_73_: Int)
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     fun method3657(rectangles: Array<Rectangle?>?, i: Int, i_74_: Int) {
         method3707(rectangles, i, 0, 0)
         anInt4568++
@@ -233,7 +233,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3688(i: Int, i_158_: Int, i_159_: Int, i_160_: Int, i_161_: Int, i_162_: Int, i_163_: Int)
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     fun method3689(i: Byte) {
         method3626(0, 0)
         if (i >= 53) anInt4572++
@@ -288,7 +288,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3706(circleRasterizer: CircleRasterizer?, circleRasterizer_203_: CircleRasterizer?, f: Float, circleRasterizer_204_: CircleRasterizer?): CircleRasterizer?
 
-    @Throws(Exception_Sub1::class)
+    @Throws(ClientException::class)
     abstract fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_205_: Int, i_206_: Int)
 
     abstract fun method3708(): Boolean

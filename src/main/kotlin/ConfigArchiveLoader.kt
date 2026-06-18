@@ -400,7 +400,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         if (string.startsWith("cachespace")) {
                             method94(("I(s): " + FontMetaRef.aLruByteCache_4327!!.method581(-18529) + "/" + FontMetaRef.aLruByteCache_4327!!.method577(-4)), -101)
                             method94(("I(m): " + ParticleGeometry.aLruByteCache_4417!!.method581(-18529) + "/" + ParticleGeometry.aLruByteCache_4417!!.method577(i.toInt() xor 0x4d)), 127)
-                            method94(("O(s): " + Exception_Sub1.aModelHeaderCache_112!!.aSizeBoundedSoftCache_3288.method1350(126.toByte()) + "/" + Exception_Sub1.aModelHeaderCache_112!!.aSizeBoundedSoftCache_3288.method1339(100)), i + 203)
+                            method94(("O(s): " + ClientException.aModelHeaderCache_112!!.aSizeBoundedSoftCache_3288.method1350(126.toByte()) + "/" + ClientException.aModelHeaderCache_112!!.aSizeBoundedSoftCache_3288.method1339(100)), i + 203)
                             return
                         }
                         if (string.equals("getcamerapos", ignoreCase = true)) {

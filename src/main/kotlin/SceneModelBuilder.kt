@@ -46,8 +46,8 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                                 if (npcConfig.anIntArray945 != null) npcConfig = (npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte()))
                                 if (npcConfig != null) `is` = npcConfig.anIntArray917
                             }
-                        } else `is` = Exception_Sub1.aModelHeaderCache_112!!.method1940(113, (class348_sub42_sub12.anInt9599)).anIntArray2772
-                    } else `is` = (Exception_Sub1.aModelHeaderCache_112!!.method1940(-67, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
+                        } else `is` = ClientException.aModelHeaderCache_112!!.method1940(113, (class348_sub42_sub12.anInt9599)).anIntArray2772
+                    } else `is` = (ClientException.aModelHeaderCache_112!!.method1940(-67, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
                     var string = IntHashSet.method2367(125.toByte(), class348_sub42_sub12)
                     if (`is` != null) string += method1273(`is`, true)
                     NodeDeque.aFont_3326!!.method2567(i_1_, string, 116.toByte(), i_4_, 0, i_7_ - -3, TileRenderState.aAbstractModelRendererArray4234, SizeBoundedSoftCache.anIntArray2330)

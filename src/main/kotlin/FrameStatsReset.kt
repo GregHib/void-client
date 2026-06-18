@@ -578,7 +578,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlSpriteRenderer.anInt8448 = 0
             SpriteSheetCache.anInt2558 = 0
             Buffer.anInt7163 = 0
-            Exception_Sub1.anInt109 = 0
+            ClientException.anInt109 = 0
             anInt5798 = 0
             OpenGlRenderer.anInt7524 = 0
             WaterDetailOptionState.anInt5987 = 0

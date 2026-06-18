@@ -142,7 +142,7 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
             if ((IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350).inv()) == i) i_0_ = i_0_ or 0x40
             method2420(i_0_, i)
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2009(i_0_, 109.toByte())
-            Exception_Sub1.aModelHeaderCache_112!!.method1942(i_0_, (-125).toByte())
+            ClientException.aModelHeaderCache_112!!.method1942(i_0_, (-125).toByte())
             MapAreaDefinition.aBufferedMessageQueue_2529!!.method2073(-25032, i_0_)
             ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2541(119, i_0_)
             method3535(i_0_, i.inv())

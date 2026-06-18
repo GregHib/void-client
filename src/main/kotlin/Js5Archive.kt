@@ -586,7 +586,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         }
 
         @JvmStatic
-        @Throws(Exception_Sub1::class)
+        @Throws(ClientException::class)
         fun method395(i: Int) {
             if (Buffer.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
             else CameraRotationStub.aRenderer326!!.method3626(0, 0)

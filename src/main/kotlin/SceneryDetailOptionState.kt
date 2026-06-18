@@ -308,7 +308,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                     var i_57_ = 0
                                     var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1993(-92) as IntPair?)
                                     while (class348_sub34 != null) {
-                                        val class213 = (Exception_Sub1.aModelHeaderCache_112!!.method1940(79, (class348_sub34.anInt6973)))
+                                        val class213 = (ClientException.aModelHeaderCache_112!!.method1940(79, (class348_sub34.anInt6973)))
                                         if (RenderNode.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) {
                                             val class254 = (if (ParticleEmitterFactory.anInt3176 != -1) (ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactory.anInt3176, 28364)) else null)
                                             if ((WidgetTextConfig.anInt500 and 0x1) != 0 && (class254 == null || ((class254.anInt3256) != (class213.method1567((class254.anInt3256), 29, ParticleEmitterFactory.anInt3176))))) {

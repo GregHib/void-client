@@ -847,7 +847,7 @@ class Client : GameAppletFrame() {
         method1715(103)
         method852(6)
         method3518(i.toInt() xor 0x34)
-        Exception_Sub1.method140((-126).toByte())
+        ClientException.method140((-126).toByte())
         Sprite.method158((-67).toByte())
         method3438(59.toByte())
         FontDefinition.method1180((-76).toByte())
@@ -1740,7 +1740,7 @@ class Client : GameAppletFrame() {
                 try {
                     if (!GrayscaleNoiseTexture.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3657(ModelLightingConfig.aRectangleArray2554, i, 66)
                     else method1168(i, 0, ModelLightingConfig.aRectangleArray2554)
-                } catch (exception_sub1: Exception_Sub1) {
+                } catch (clientException_: ClientException) {
                     /* empty */
                 }
             } else if (!NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-59).toByte())) {
@@ -1752,8 +1752,8 @@ class Client : GameAppletFrame() {
                 try {
                     if (GrayscaleNoiseTexture.aBoolean5300) method395(107)
                     else FacingDirectionNode.aRenderer6654!!.method3689(104.toByte())
-                } catch (exception_sub1: Exception_Sub1) {
-                    method1242((exception_sub1.message + " (Recovered) " + method81(79.toByte())), exception_sub1, 15004)
+                } catch (clientException_: ClientException) {
+                    method1242((clientException_.message + " (Recovered) " + method81(79.toByte())), clientException_, 15004)
                     method3553(false, 113.toByte(), 0)
                 }
             }
@@ -2061,7 +2061,7 @@ class Client : GameAppletFrame() {
                             i_51_ = NativeTerrainTile.method4008((-128).toByte())
                             i_52_ = method260(false)
                         }
-                        if (class46 == RegionSceneLoader.aWidgetComponent_3701 && Exception_Sub1.method141(RegionSceneLoader.aWidgetComponent_3701!!, 125.toByte()) != null) {
+                        if (class46 == RegionSceneLoader.aWidgetComponent_3701 && ClientException.method141(RegionSceneLoader.aWidgetComponent_3701!!, 125.toByte()) != null) {
                             MinimapSquareDrawer.aBoolean5221 = true
                             NativeRenderer.anInt8001 = i_43_
                             GrayscaleEffect.anInt9203 = i_44_
