@@ -135,10 +135,10 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                             linkedQueueNode.anObject1998 = frame
                             frame.setResizable(false)
                             if (this.aBoolean3794) aDirectDrawDisplayMode_3802!!.method1146((linkedQueueNode.anInt2000 and 0xffff), (linkedQueueNode.anInt1999 shr 16), (linkedQueueNode.anInt2000 ushr 16), -43, 0xffff and (linkedQueueNode.anInt1999), frame)
-                            else (anObject3793 as Class7).method209(frame, ((linkedQueueNode.anInt2000) ushr 16), (0xffff and (linkedQueueNode.anInt2000)), ((linkedQueueNode.anInt1999) shr 16), ((linkedQueueNode.anInt1999) and 0xffff))
+                            else (anObject3793 as FullscreenDisplayController).method209(frame, ((linkedQueueNode.anInt2000) ushr 16), (0xffff and (linkedQueueNode.anInt2000)), ((linkedQueueNode.anInt1999) shr 16), ((linkedQueueNode.anInt1999) and 0xffff))
                         } else if (i == 7) {
                             if (this.aBoolean3794) aDirectDrawDisplayMode_3802!!.method1147(((linkedQueueNode.anObject1996) as Frame?), 8)
-                            else (anObject3793 as Class7).method211()
+                            else (anObject3793 as FullscreenDisplayController).method211()
                         } else if (i == 12) {
                             val randomAccessFileOnDisk: RandomAccessFileOnDisk? = (method2241(((linkedQueueNode.anObject1996) as String?), 12606, Companion.aString3789, anInt3792))
                             linkedQueueNode.anObject1998 = randomAccessFileOnDisk
@@ -176,7 +176,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                                 throw exception
                             }
                         } else throw Exception("")
-                    } else if (!this.aBoolean3794) linkedQueueNode.anObject1998 = (anObject3793 as Class7).method210()
+                    } else if (!this.aBoolean3794) linkedQueueNode.anObject1998 = (anObject3793 as FullscreenDisplayController).method210()
                     else linkedQueueNode.anObject1998 = aDirectDrawDisplayMode_3802!!.method1145(true)
                 } else throw Exception("")
                 linkedQueueNode.anInt1997 = 1
@@ -402,7 +402,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                 }
             }
             try {
-                if (!this.aBoolean3794) anObject3793 = Class7()
+                if (!this.aBoolean3794) anObject3793 = FullscreenDisplayController()
                 else aDirectDrawDisplayMode_3802 = DirectDrawDisplayMode()
             } catch (throwable: Throwable) {
                 /* empty */

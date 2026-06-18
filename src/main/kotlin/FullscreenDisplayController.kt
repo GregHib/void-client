@@ -4,7 +4,10 @@ import java.awt.GraphicsDevice
 import java.awt.GraphicsEnvironment
 import kotlin.math.abs
 
-class Class7 {
+/*
+ * Class7
+ */
+class FullscreenDisplayController {
     private var aGraphicsDevice157: GraphicsDevice?
     private var aDisplayMode158: DisplayMode? = null
 
