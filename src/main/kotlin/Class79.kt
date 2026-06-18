@@ -378,7 +378,7 @@ class Class79 {
                         }
                         if ((class17_51_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_53_ != -1 && i_53_ < (class17_51_.anIntArray237).size) {
                             KaraokeSubtitleStream.anIntArray9050!![i_50_] = class17_51_.anIntArray267!![i_52_]
-                            Class67.anIntArray4648!![i_50_] = loadProgressCounters[i_50_]!!.anInt2456
+                            TooltipComponentRenderer.anIntArray4648!![i_50_] = loadProgressCounters[i_50_]!!.anInt2456
                             var i_55_ = class17_51_.anIntArray237[i_53_]
                             TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_] = class87.method839(i_55_ ushr 16, 3)
                             i_55_ = i_55_ and 0xffff
@@ -390,7 +390,7 @@ class Class79 {
                             }
                         } else {
                             KaraokeSubtitleStream.anIntArray9050!![i_50_] = 0
-                            Class67.anIntArray4648!![i_50_] = 0
+                            TooltipComponentRenderer.anIntArray4648!![i_50_] = 0
                             TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_] = null
                             ParticleDefLoader.anIntArray2466!![i_50_] = -1
                         }
@@ -567,7 +567,7 @@ class Class79 {
             while (i_86_ < i_49_) {
                 if ((ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_86_]) != null) class64_82_!!.method603(
                     (-55).toByte(),
-                    -1 + Class67.anIntArray4648!![i_86_],
+                    -1 + TooltipComponentRenderer.anIntArray4648!![i_86_],
                     null,
                     i_87_,
                     Class90.anIntArray1518!![i_86_],

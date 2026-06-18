@@ -1086,7 +1086,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlModel.anInt5550 = 0
             NativeTerrainTile.anInt8319 = 0
             NativeRenderer.anInt7985 = 0
-            Class67.anInt4647 = 0
+            TooltipComponentRenderer.anInt4647 = 0
             ParticleDefLoader.anInt2457 = 0
             InvertTextureNode.anInt9420 = 0
             TextureCache.anInt4358 = 0
@@ -2768,7 +2768,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MatrixCameraTransform.anInt5658 = 0
             BooleanGraphicsOptionState.anInt5848 = 0
             NativeVertexBuffer.anInt4831 = 0
-            Class67.anInt4642 = 0
+            TooltipComponentRenderer.anInt4642 = 0
             OpenGlModel.anInt5623 = 0
             LocConfigModelBuilder.anInt4494 = 0
             NativeRenderer.anInt8051 = 0
@@ -3180,7 +3180,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Font.anInt4046 = 0
             OpenGlRenderer.anInt7610 = 0
             VorbisOggDecoder.anInt8989 = 0
-            Class67.anInt4645 = 0
+            TooltipComponentRenderer.anInt4645 = 0
             LightingOptionState.anInt5877 = 0
             NativeRenderer.anInt7971 = 0
             NativeIndexBuffer.anInt4698 = 0
@@ -3246,7 +3246,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RefCountedHandle.anInt2274 = 0
             Buffer.anInt7159 = 0
             OpenGlRenderer.anInt7693 = 0
-            Class67.anInt4644 = 0
+            TooltipComponentRenderer.anInt4644 = 0
             FogOptionState.anInt6052 = 0
             FixedFunctionMaterialPass.anInt6206 = 0
             ProjectedGroundDecor.anInt10249 = 0

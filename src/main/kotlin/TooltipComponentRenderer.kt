@@ -1,7 +1,7 @@
 /* Class67 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class67 internal constructor(js5Archive: Js5Archive?, js5Archive_3_: Js5Archive?, heapInfoRecord: HeapInfoRecord?) : Interface1 {
+class TooltipComponentRenderer internal constructor(js5Archive: Js5Archive?, js5Archive_3_: Js5Archive?, heapInfoRecord: HeapInfoRecord?) : Interface1 {
     private val aHeapInfoRecord_4646: HeapInfoRecord?
     private var aFont_4649: Font? = null
     private val aJs5Archive_4650: Js5Archive?

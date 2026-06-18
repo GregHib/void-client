@@ -1915,7 +1915,7 @@ object ChatCommandProcessor {
             }
         } else if (i < 6500) {
             if (i == 6405) {
-                anIntArray1149!![anInt1173++] = if (Class67.Companion.method717(-2511)) 1 else 0
+                anIntArray1149!![anInt1173++] = if (TooltipComponentRenderer.Companion.method717(-2511)) 1 else 0
                 return
             }
             if (i == 6406) {

@@ -485,7 +485,7 @@ import OpenGlModel.Companion.method681
 import WorldMapImageBuilder.Companion.method698
 import ChatCommandProcessor.method705
 import ChatCommandProcessor.method713
-import Class67.Companion.method716
+import TooltipComponentRenderer.Companion.method716
 import Class68.Companion.method719
 import Class69.Companion.method722
 import Class70.Companion.method725

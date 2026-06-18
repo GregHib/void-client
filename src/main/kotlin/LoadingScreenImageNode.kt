@@ -122,7 +122,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             Class75.aNodeDeque_1254!!.method1996(127)
             GlBufferObject.aSystemFontGlyphs_4754 = null
             HeapDiagnosticsHolder.aSystemFontGlyphs_2252 = null
-            Class67.aAbstractModelRenderer_4643 = null
+            TooltipComponentRenderer.aAbstractModelRenderer_4643 = null
             MinimapSpriteRenderer.aSystemFontGlyphs_4921 = null
             PingHostListHolder.aSystemFontGlyphs_2333 = null
             ModelVertexColorBuffer.aSystemFontGlyphs_6581 = null

@@ -152,7 +152,7 @@ class FloatBuffer internal constructor(i: Int) : Buffer(i) {
                 }
             }
             if (LoadingScreenImageNode.anInt9504 > 0) {
-                Class67.method718(CutsceneSequenceData.aClass318_Sub1Array3737!!, 0, LoadingScreenImageNode.anInt9504 - 1)
+                TooltipComponentRenderer.method718(CutsceneSequenceData.aClass318_Sub1Array3737!!, 0, LoadingScreenImageNode.anInt9504 - 1)
                 for (i_22_ in 0..<LoadingScreenImageNode.anInt9504) MinimapRectClipper.method227(CutsceneSequenceData.aClass318_Sub1Array3737!![i_22_]!!, true, bool_3_)
             }
         }
