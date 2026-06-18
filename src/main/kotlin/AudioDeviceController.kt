@@ -1,6 +1,9 @@
 import java.awt.Component
 
-interface Interface20 {
+/*
+ * Interface20
+ */
+interface AudioDeviceController {
     fun method74(i: Int, i_0_: Byte)
 
     fun method75(i: Byte, i_1_: Int): Int

@@ -5,7 +5,7 @@ import java.awt.Component
 /*
  * Class1
  */
-class DirectSoundAudioChannel : Interface20 {
+class DirectSoundAudioChannel : AudioDeviceController {
     private val aDSBufferDescArray5152: Array<DSBufferDesc?>
     private val aDirectSoundBufferArray5153: Array<DirectSoundBuffer?>
     private lateinit var anIntArray5154: IntArray
