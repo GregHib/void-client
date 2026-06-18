@@ -1,7 +1,7 @@
 /* a - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Interface19 {
+class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Disposable {
     private val anI5105: i
     var nativeid: Long = 0
     private val anI5106: i

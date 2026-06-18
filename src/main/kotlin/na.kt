@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  * NativeSpriteRenderer
  */
-class na(var_oa: oa?, var_ya: ya?, i: Int, i_2_: Int, `is`: IntArray?, is_3_: IntArray?) : Sprite(), Interface19 {
+class na(var_oa: oa?, var_ya: ya?, i: Int, i_2_: Int, `is`: IntArray?, is_3_: IntArray?) : Sprite(), Disposable {
     @JvmField
     var nativeid: Long = 0
 

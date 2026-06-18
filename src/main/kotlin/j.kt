@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 * NativeCamera
 */
-class j : AbstractModelRenderer, Interface19 {
+class j : AbstractModelRenderer, Disposable {
     var nativeid: Long = 0
 
     private external fun R(l: Long, bool: Boolean)

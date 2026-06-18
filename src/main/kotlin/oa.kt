@@ -5,7 +5,7 @@ import kotlin.math.max
 /*
  * NativeGraphicsContext
  */
-class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : Renderer(var_renderConfig), Interface19 {
+class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : Renderer(var_renderConfig), Disposable {
     private var aYa5121: ya? = null
     var nativeid: Long = 0L
     private val aNodeDeque_5123: NodeDeque

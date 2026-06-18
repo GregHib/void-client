@@ -18,12 +18,12 @@ object RequestGate {
     }
 
     @Synchronized
-    fun method1947(i: Int, interface19: Interface19) {
+    fun method1947(i: Int, disposable: Disposable) {
         if (!aBoolean3296) {
-            if (i >= anInt3298) interface19.w(false)
+            if (i >= anInt3298) disposable.w(false)
             else {
                 val class348_sub28 = DisposableHolder()
-                class348_sub28.anInterface19_6908 = interface19
+                class348_sub28.anDisposable_6908 = disposable
                 aNodeDeque_3297.method1999(class348_sub28, -20180)
             }
         }
@@ -34,7 +34,7 @@ object RequestGate {
         while (true) {
             val class348_sub28 = aNodeDeque_3297.method1997(8) as DisposableHolder?
             if (class348_sub28 == null) break
-            class348_sub28.anInterface19_6908!!.w(true)
+            class348_sub28.anDisposable_6908!!.w(true)
             class348_sub28.method2715(69.toByte())
         }
         if (i > -22) aBoolean3296 = false

@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 * NativeMatrix
 */
-class ja : AbstractCameraTransform(), Interface19 {
+class ja : AbstractCameraTransform(), Disposable {
     @JvmField
     var nativeid: Long = 0
 

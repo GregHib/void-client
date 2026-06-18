@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 * NativeTextureManager
 */
-class ya(var_oa: oa?, i: Int) : ShaderProgram(), Interface19 {
+class ya(var_oa: oa?, i: Int) : ShaderProgram(), Disposable {
     var nativeid: Long = 0
 
     external override fun w(bool: Boolean)

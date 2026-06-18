@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 * NativeTextureHandle
 */
-class xa(i: Int, i_1_: Int) : Marker, Interface19 {
+class xa(i: Int, i_1_: Int) : Marker, Disposable {
     @JvmField
     var nativeid: Long = 0L
 

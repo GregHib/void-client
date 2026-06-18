@@ -2,5 +2,5 @@
 * Visit http://jode.sourceforge.net/
 */
 class DisposableHolder : LinkedListNode() {
-    var anInterface19_6908: Interface19? = null
+    var anDisposable_6908: Disposable? = null
 }

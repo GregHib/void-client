@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 * NativeModel
 */
-class i : AbstractModel, Interface19 {
+class i : AbstractModel, Disposable {
     private val anOa5117: oa
     @JvmField
     var aWidgetRedrawRegionArray5118: Array<WidgetRedrawRegion?>? = null
