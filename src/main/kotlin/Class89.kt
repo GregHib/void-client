@@ -1,4 +1,4 @@
-import Class376.Companion.method3620
+import RingBufferInputStream.Companion.method3620
 
 /* Class89 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

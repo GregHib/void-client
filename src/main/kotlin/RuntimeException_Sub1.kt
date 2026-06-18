@@ -58,7 +58,7 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
             DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103 = arrayOfNulls<ProjectileNode>(1024)
             DisplaySettingsConfig.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>((KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637]) + 1)
             GlTexture2D.anInt8550 = 0
-            Class376.anInt4559 = 0
+            RingBufferInputStream.anInt4559 = 0
             CacheArchiveIndex.method1072(class45, (-107).toByte())
             ModelOrSpriteHolder.method172(30284, class45)
         }

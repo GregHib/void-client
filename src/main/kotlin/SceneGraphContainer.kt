@@ -217,9 +217,9 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
         private var aBooleanArray6474: BooleanArray? = BooleanArray(32)
         private var aBooleanArray6477: BooleanArray? = BooleanArray(8)
         fun method2526(i: Int, bool: Boolean): SceneGraphContainer {
-            if (GlTexture2D.anInt8550 != Class376.anInt4559) {
-                val class318_sub10 = DisplaySettingsConfig.aClass318_Sub10Array7249!![Class376.anInt4559]!!
-                Class376.anInt4559 = Class376.anInt4559 + 1 and (KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637])
+            if (GlTexture2D.anInt8550 != RingBufferInputStream.anInt4559) {
+                val class318_sub10 = DisplaySettingsConfig.aClass318_Sub10Array7249!![RingBufferInputStream.anInt4559]!!
+                RingBufferInputStream.anInt4559 = RingBufferInputStream.anInt4559 + 1 and (KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637])
                 class318_sub10.method2531(i, bool)
                 return class318_sub10
             }

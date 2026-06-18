@@ -3,7 +3,7 @@ import java.net.Socket
 import kotlin.math.atan2
 
 class SocketGameConnection internal constructor(private val aSocket5836: Socket, i: Int) : AbstractGameSocket() {
-    private var aClass376_5834: Class376?
+    private var aRingBufferInputStream_5834: RingBufferInputStream?
     private val aBufferedOutputStreamWorker_5837: BufferedOutputStreamWorker
 
     @Throws(IOException::class)
@@ -14,7 +14,7 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
 
     override fun method1702(i: Int) {
         anInt5828++
-        aClass376_5834!!.method3618(0)
+        aRingBufferInputStream_5834!!.method3618(0)
         val i_2_ = 29 / ((-25 - i) / 38)
         aBufferedOutputStreamWorker_5837.method1527(-21179)
     }
@@ -26,7 +26,7 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
         } catch (ioexception: IOException) {
             /* empty */
         }
-        aClass376_5834!!.method3615(15984)
+        aRingBufferInputStream_5834!!.method3615(15984)
         if (i.toInt() == 36) aBufferedOutputStreamWorker_5837.method1526((-99).toByte())
     }
 
@@ -34,20 +34,20 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
     override fun method1701(i: Int, i_19_: Int, i_20_: Byte, `is`: ByteArray): Int {
         val i_21_ = 84 / ((-56 - i_20_) / 47)
         anInt5831++
-        return aClass376_5834!!.method3617(i, i_19_, 0, `is`)
+        return aRingBufferInputStream_5834!!.method3617(i, i_19_, 0, `is`)
     }
 
     @Throws(IOException::class)
     override fun method1705(i: Int, i_22_: Int): Boolean {
-        if (i_22_ <= 91) aClass376_5834 = null
+        if (i_22_ <= 91) aRingBufferInputStream_5834 = null
         anInt5838++
-        return aClass376_5834!!.method3619(i, false)
+        return aRingBufferInputStream_5834!!.method3619(i, false)
     }
 
     init {
         aSocket5836.setSoTimeout(30000)
         aSocket5836.setTcpNoDelay(true)
-        aClass376_5834 = Class376(aSocket5836.getInputStream(), i)
+        aRingBufferInputStream_5834 = RingBufferInputStream(aSocket5836.getInputStream(), i)
         aBufferedOutputStreamWorker_5837 = BufferedOutputStreamWorker(aSocket5836.getOutputStream(), i)
     }
 

@@ -56,7 +56,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class60.anInt1085 = 0
             ModelDefinition.anInt1827 = 0
             GlowPostProcessor.anInt2519 = 0
-            Class376.anInt4551 = 0
+            RingBufferInputStream.anInt4551 = 0
             GlTextureBase.anInt5098 = 0
             GlslMaterialPass.anInt6245 = 0
             ParticleSortRenderer.anInt3021 = 0
@@ -183,7 +183,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class64_Sub3.anInt5585 = 0
             Class58.anInt1066 = 0
             ParameterizedText.anInt9560 = 0
-            Class376.anInt4553 = 0
+            RingBufferInputStream.anInt4553 = 0
             MapElementManager.anInt4465 = 0
             DragDropController.anInt4280 = 0
             CameraDistanceOptionState.anInt5854 = 0
@@ -290,7 +290,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class82.anInt1438 = 0
             DisplayModeOptionState.anInt6104 = 0
             Buffer.anInt7172 = 0
-            Class376.anInt4547 = 0
+            RingBufferInputStream.anInt4547 = 0
             Class88.anInt1504 = 0
             DoublyLinkedNodeList.anInt3163 = 0
             FrameBufferObject.anInt4867 = 0
@@ -1786,7 +1786,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             MultiLevelOptionState.anInt6145 = 0
             Class50_Sub3.anInt5253 = 0
             ScanlineRasterFiller.anInt2476 = 0
-            Class376.anInt4550 = 0
+            RingBufferInputStream.anInt4550 = 0
             Client.anInt5174 = 0
             OpenGlRenderer.anInt7518 = 0
             IdleAnimationsOptionState.anInt5905 = 0
@@ -2533,7 +2533,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             BooleanGraphicsOptionState.anInt5846 = 0
             TimedRecordAccessorB.anInt9732 = 0
             Class59.anInt1072 = 0
-            Class376.anInt4555 = 0
+            RingBufferInputStream.anInt4555 = 0
             Class94.anInt1536 = 0
             Class64_Sub2.anInt5514 = 0
             Gl3dTexture.anInt8624 = 0
@@ -3038,7 +3038,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WorldMapScene.anInt3107 = 0
             OpenGlRenderer.anInt7539 = 0
             NpcDefinitionCache.anInt3316 = 0
-            Class376.anInt4552 = 0
+            RingBufferInputStream.anInt4552 = 0
             MediaStreamClient.anInt3194 = 0
             Class367_Sub9.anInt7374 = 0
             RegionSceneLoader.anInt3703 = 0
@@ -3764,7 +3764,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             RegionTileNode.anInt6641 = 0
             Class377.anInt9871 = 0
             LocDefinitionCache.anInt3446 = 0
-            Class376.anInt4549 = 0
+            RingBufferInputStream.anInt4549 = 0
             Class377.anInt9876 = 0
             OpenGlTerrainTile.anInt8261 = 0
             Class51.anInt956 = 0

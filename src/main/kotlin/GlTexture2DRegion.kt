@@ -1,6 +1,6 @@
 import AbstractCameraTransform.Companion.method901
 import WorldMapLabel.Companion.method3568
-import Class376.Companion.method3616
+import RingBufferInputStream.Companion.method3616
 
 /* Class258_Sub3_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

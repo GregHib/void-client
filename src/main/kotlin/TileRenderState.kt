@@ -4,7 +4,7 @@ import ConfigFlagUtil.Companion.method1916
 import LocalizedText.Companion.method2061
 import TextureCubeProvider.Companion.method2269
 import ProjectedGroundDecor.Companion.method2433
-import Class376.Companion.method3616
+import RingBufferInputStream.Companion.method3616
 import Class40.Companion.method369
 import Class50_Sub2.Companion.method464
 import Class66.method705

@@ -93,7 +93,7 @@ class Crc64Hashable : Interface14 {
             DisplaySettingsConfig.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>(1 + (KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637]))
             GlTexture2D.anInt8550 = 0
             if (i_2_ >= -118) method1114(-43, -71)
-            Class376.anInt4559 = 0
+            RingBufferInputStream.anInt4559 = 0
         }
     }
 }
