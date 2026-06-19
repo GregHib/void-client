@@ -249,8 +249,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         anInt10263++
         val i_19_ = ((this.aShort8743 + this.aShort8751) shr 1)
         val i_20_ = ((this.aShort8750 + this.aShort8747) shr 1)
-        val i_21_ = TrigLookupTables.anIntArray1207!![i]
-        val i_22_ = TrigLookupTables.anIntArray1204!![i]
+        val i_21_ = SpotAnimVector.anIntArray1207!![i]
+        val i_22_ = SpotAnimVector.anIntArray1204!![i]
         val i_23_ = -i_14_ / 2
         val i_24_ = -i_16_ / 2
         val i_25_ = i_23_ * i_22_ + i_24_ * i_21_ shr 14
@@ -874,7 +874,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 for (i in 0..<CalendarUtil.anInt4135) WaterDetailOptionState.aSoundEnvelopeArray5993!![i] = null
                 for (i in 0..<MapAreaDefinition.anInt2524) {
                     for (i_84_ in 0..<SpotAnimEntity.anInt6451) {
-                        for (i_85_ in 0..<RegionSceneShifter.anInt7054) HardCacheEntryReference.aLongArrayArrayArray10431!![i]!![i_84_]!![i_85_] = 0L
+                        for (i_85_ in 0..<RegionSceneShifter.anInt7054) RenderbufferObject.aLongArrayArrayArray10431!![i]!![i_84_]!![i_85_] = 0L
                     }
                 }
                 CalendarUtil.anInt4135 = 0
@@ -883,7 +883,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             PlayerSequenceSelector.aSceneObjectSpawner_1208 = PlayerSequenceSelector.aSceneObjectSpawner_1210
             PlayerSequenceSelector.aSceneObjectSpawner_1208!!.method775(69.toByte())
             HashTileShape.aByteArrayArray8816 = null
-            WidgetRedrawRegion.anIntArrayArray4253 = null
+            LoadingBarRenderer.anIntArrayArray4253 = null
             BooleanGraphicsOptionState.aShortArrayArray5847 = null
             if (NormalMapTextureNode.aSceneLoaderThreadArray9432 != null) {
                 WalkingTypeUtil.method1978()

@@ -84,7 +84,7 @@ class FixedFunctionMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer
             val class348_sub47: OutgoingPacketNode = WaterMaterialPass.Companion.method2148(GrayscaleNoiseTexture.aFontMetaRef_5288, TheoraVideoStream.aIsaacCipher_9029, -124)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, ContactEntry.method3229(-96))
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), LocTypeDefinition.anInt4017)
-            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), HardCacheEntryReference.anInt10432)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), GameDisplayManager.anInt10432)
             if (i != -24498) aStringArray6205 = null
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350))
             InterfaceComponentGroup.method3243(-101, class348_sub47)

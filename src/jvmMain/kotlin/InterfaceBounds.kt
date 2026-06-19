@@ -4,7 +4,6 @@ import SocketGameConnection.Companion.method1707
 import DisplayModeOptionState.Companion.method1828
 import ModelDataCache.method297
 import CompassSmoother.Companion.method2017
-import SceneLinkedListNode.Companion.method2375
 import WorldMapIconLabel.Companion.method3573
 import MapSceneCache.Companion.method821
 import java.awt.Component
@@ -92,7 +91,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             method3573(-15326)
             method1277(62.toByte())
             method821(-126)
-            method2375(16127)
+            InterfaceBounds.method2375(16127)
             if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) {
                 var i_6_ = 0
                 while (CacheLruCache.aByteArrayArray3882!!.size > i_6_) {
@@ -115,7 +114,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 TextureGenerator.aJs5Archive_2490!!.method412((-119).toByte())
                 DirectionUtil.aJs5Archive_1541!!.method412(37.toByte())
                 IntKeyNode.Companion.aJs5Archive_6980!!.method412((-113).toByte())
-                ModelFacePriorityNode.aJs5Archive_1878!!.method412((-116).toByte())
+                ClientLoadStateMachine.aJs5Archive_1878!!.method412((-116).toByte())
                 AbstractCameraTransformStatics.aJs5Archive_7382!!.method412((-110).toByte())
                 CachedRgbNoiseTexture.aJs5Archive_8667!!.method412(64.toByte())
                 RasterSprite.aJs5Archive_5207!!.method412(120.toByte())
@@ -130,7 +129,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 AnimationFrameState.aJs5Archive_1538!!.method412(34.toByte())
                 VideoAdChecker.aJs5Archive_3183!!.method412((-116).toByte())
                 FloatGrid.aJs5Archive_4975!!.method412(28.toByte())
-                SpotAnimVector.aJs5Archive_2306!!.method412((-115).toByte())
+                ScriptOpcodeHolder.aJs5Archive_2306!!.method412((-115).toByte())
                 OpenGlRenderNode.aJs5Archive_10480!!.method412(22.toByte())
                 BufferedRandomAccessFile.aJs5Archive_1322!!.method412(36.toByte())
                 MidiSequencePlayer.aJs5Archive_8926!!.method412((-114).toByte())
@@ -185,6 +184,11 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             } else {
                 val i_10_ = -14 % ((27 - i) / 59)
             }
+        }
+        var anInt3972: Int = 0
+        fun method2375(i: Int) {
+            anInt3972++
+            SocketStreamWorker.aLruByteCache_2671!!.method590(0)
         }
     }
 }

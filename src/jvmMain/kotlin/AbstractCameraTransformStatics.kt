@@ -37,7 +37,7 @@ object AbstractCameraTransformStatics {
         DragDropController.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_6_)
         GameAppletFrame.anIntArray38 = IntArray(i_6_)
         VorbisOggDecoder.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_6_)
-        ModelFacePriorityNode.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_6_)
+        RegionMapDecoder.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_6_)
         i_6_ = 0
         var i_7_ = (i_4_ + -(GlCubemapLightPass.anInt7319 shr 4)) / 8
         while ((i_4_ - -(GlCubemapLightPass.anInt7319 shr 4)) / 8 >= i_7_) {

@@ -41,7 +41,7 @@ object ScreenBorderFiller {
             val i_2_ = TimingCounters.anInt4167
             if (i > -25) ScreenBorderFiller.method1172((-22).toByte(), -1)
             val i_3_ = -i_1_ + -LocTypeDefinition.anInt4017 + SocketFactory.anInt3473
-            val i_4_ = -i_2_ + (NpcReference.anInt6857 + -HardCacheEntryReference.anInt10432)
+            val i_4_ = -i_2_ + (NpcReference.anInt6857 + -GameDisplayManager.anInt10432)
             do {
                 if (i_1_ > 0 || i_3_ > 0 || i_2_ > 0 || i_4_ > 0) {
                     try {

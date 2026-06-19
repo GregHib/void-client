@@ -96,8 +96,8 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
             MapSceneDefLoader.anInt2482 = i
             if (bool != true) aFloat3462 = -0.54794437f
             anInt3450++
-            withLock(WidgetRedrawRegion.aLruByteCache_4254!!) {
-                WidgetRedrawRegion.aLruByteCache_4254!!.method590(0)
+            withLock(LoadingBarRenderer.aLruByteCache_4254!!) {
+                LoadingBarRenderer.aLruByteCache_4254!!.method590(0)
             }
         }
 

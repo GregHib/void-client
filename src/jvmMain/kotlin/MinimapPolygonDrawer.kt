@@ -87,8 +87,42 @@ class MinimapPolygonDrawer internal constructor(private val anInt5246: Int, priv
         fun method468(string: String?, i: Int): Boolean {
             val i_11_ = -91 % ((-35 - i) / 52)
             anInt5239++
-            return SpotAnimVector.method1332(true, true, 10, string!!)
+            return method1332(true, true, 10, string!!)
         }
+
+        var anInt2293: Int = 0
+        fun method1332(bool: Boolean, bool_0_: Boolean, i: Int, string: String): Boolean {
+            anInt2293++
+            require(!(i < 2 || i > 36)) { "Invalid radix:" + i }
+            var bool_1_ = false
+            var bool_2_ = false
+            var i_3_ = 0
+            val i_4_ = string.length
+            for (i_5_ in 0..<i_4_) {
+                var i_6_ = string.get(i_5_).code
+                if (i_5_ == 0) {
+                    if (i_6_ == 45) {
+                        bool_1_ = true
+                        continue
+                    }
+                    if (i_6_ == 43 && bool_0_) continue
+                }
+                if (i_6_ < 48 || i_6_ > 57) {
+                    if (i_6_ < 65 || i_6_ > 90) {
+                        if (i_6_ >= 97 && i_6_ <= 122) i_6_ -= 87
+                        else return false
+                    } else i_6_ -= 55
+                } else i_6_ -= 48
+                if (i_6_ >= i) return false
+                if (bool_1_) i_6_ = -i_6_
+                val i_7_ = i * i_3_ - -i_6_
+                if (i_7_ / i != i_3_) return false
+                bool_2_ = true
+                i_3_ = i_7_
+            }
+            return bool_2_
+        }
+
 
         @JvmStatic
         fun method469(i: Byte) {

@@ -34,8 +34,6 @@ class CachedRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
         @JvmField
         var anInt8669: Int = 0
         @JvmField
-        var aJs5Archive_8670: Js5Archive? = null
-        @JvmField
         var anInt8671: Int = 0
         @JvmField
         var anInt8672: Int = 0
@@ -46,7 +44,6 @@ class CachedRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
             try {
                 anInt8673++
                 var is_1_: IntArray? = null
-                if (i != 255) aJs5Archive_8670 = null
                 var is_2_: IntArray? = null
                 var is_3_: IntArray? = null
                 var fs: Array<FloatArray?>? = null
@@ -151,9 +148,8 @@ class CachedRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
 
         @JvmStatic
         fun method568(bool: Boolean) {
-            aJs5Archive_8670 = null
+            SpotAnimDefCache.aJs5Archive_8670 = null
             aJs5Archive_8667 = null
-            if (bool != true) aJs5Archive_8670 = null
         }
     }
 }

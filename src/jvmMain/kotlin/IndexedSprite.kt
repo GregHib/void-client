@@ -90,7 +90,7 @@ class IndexedSprite : Sprite {
                 RemoveRoofsOptionState.anIntArray6062!![0] = RemoveRoofsOptionState.anIntArray6062!![1]
             } else if (i_12_ >= 22) {
                 val i_15_ = CollisionMapAccessor.method2064(i_9_, i, 11219, i_11_) - i_7_
-                if (GrayscaleNoiseTexture.aBoolean5300) LinkedNodeListIterator.method1010(false, true)
+                if (GrayscaleNoiseTexture.aBoolean5300) IndexedSprite.method1010(false, true)
                 else {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method891(i_10_, 0, 0)
                     FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
@@ -102,6 +102,24 @@ class IndexedSprite : Sprite {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method891(-i_10_, 0, 0)
                     FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                 }
+            }
+        }
+
+        var anInt1642: Int = 0
+        fun method1010(bool: Boolean, bool_42_: Boolean) {
+            RenderNodeStatics.aAbstractCameraTransform_9720!!.method898(CameraRotationStub.aRenderer326!!.method3640())
+            anInt1642++
+            val `is` = CameraRotationStub.aRenderer326!!.Y()
+            Gl3dTexture.anInt8630 = `is`[2]
+            MediaStreamClient.anInt3202 = `is`[0]
+            ProjectileConfigUtil.anInt394 = `is`[3]
+            SimpleToggleOptionState.anInt5886 = `is`[1]
+            if (bool_42_) {
+                CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, SceneProjector.anInt1879)
+                RenderNodeStatics.method3284(true, ModelWallEntity.aDouble10120)
+            } else {
+                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
+                RenderNodeStatics.method3284(true, GlCubeMapTexture.aDouble8621)
             }
         }
     }

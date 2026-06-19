@@ -783,8 +783,8 @@ class ModelDefinition {
 
     fun method1107(i: Int, i_199_: Int, i_200_: Int, i_201_: Int) {
         if (i_200_ != 0) {
-            val i_202_ = TrigLookupTables.anIntArray1207!![i_200_]
-            val i_203_ = TrigLookupTables.anIntArray1204!![i_200_]
+            val i_202_ = SpotAnimVector.anIntArray1207!![i_200_]
+            val i_203_ = SpotAnimVector.anIntArray1204!![i_200_]
             for (i_204_ in 0..<this.anInt1836) {
                 val i_205_ = ((i_203_ * this.anIntArray1841[i_204_] + this.anIntArray1847[i_204_] * i_202_) shr 14)
                 this.anIntArray1847[i_204_] = ((-(this.anIntArray1841[i_204_] * i_202_) + this.anIntArray1847[i_204_] * i_203_) shr 14)
@@ -794,8 +794,8 @@ class ModelDefinition {
         if (i != 6875) this.aShortArray1835 = null
         anInt1837++
         if (i_201_ != 0) {
-            val i_206_ = TrigLookupTables.anIntArray1207!![i_201_]
-            val i_207_ = TrigLookupTables.anIntArray1204!![i_201_]
+            val i_206_ = SpotAnimVector.anIntArray1207!![i_201_]
+            val i_207_ = SpotAnimVector.anIntArray1204!![i_201_]
             for (i_208_ in 0..<this.anInt1836) {
                 val i_209_ = ((this.anIntArray1847[i_208_] * i_207_ + -(i_206_ * this.anIntArray1852[i_208_])) shr 14)
                 this.anIntArray1852[i_208_] = ((this.anIntArray1847[i_208_] * i_206_ - -(i_207_ * this.anIntArray1852[i_208_])) shr 14)
@@ -803,8 +803,8 @@ class ModelDefinition {
             }
         }
         if (i_199_ != 0) {
-            val i_210_ = TrigLookupTables.anIntArray1207!![i_199_]
-            val i_211_ = TrigLookupTables.anIntArray1204!![i_199_]
+            val i_210_ = SpotAnimVector.anIntArray1207!![i_199_]
+            val i_211_ = SpotAnimVector.anIntArray1204!![i_199_]
             var i_212_ = 0
             while (this.anInt1836 > i_212_) {
                 val i_213_ = ((i_211_ * this.anIntArray1841[i_212_] + this.anIntArray1852[i_212_] * i_210_) shr 14)

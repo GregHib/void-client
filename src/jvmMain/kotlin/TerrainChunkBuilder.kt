@@ -218,7 +218,7 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
         }
 
         fun method873(i: Int, i_6_: Int, var_renderer: Renderer?, i_7_: Int) {
-            LruByteCache.aRenderer1098 = var_renderer
+            TerrainChunkBuilder.aRenderer1098 = var_renderer
             NodeDequeStatics.aModelLightingConfigArrayArray3335 = Array(i) { arrayOfNulls(i_7_) }
             if (i_6_ == 21719) {
                 anInt1549++
@@ -226,6 +226,11 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                 LocalizedTextStatics.aModelLightingConfig_3547 = ModelLightingConfig()
                 method3936(0)
             }
+        }
+        var aRenderer1098: Renderer? = null
+        fun method584(i: Byte) {
+            aRenderer1098 = null
+            val i_7_ = -19 % ((i - 59) / 55)
         }
 
         @JvmStatic

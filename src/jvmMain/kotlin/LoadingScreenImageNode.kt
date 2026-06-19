@@ -5,7 +5,7 @@ import RsaPacketDecoder.Companion.method2672
 import KaraokeSubtitleStream.Companion.method2988
 import HslAdjustTextureNode.Companion.method3126
 import InvertTextureNode.Companion.method3134
-import CacheEntryReference.Companion.method3196
+import Client.Companion.method3196
 import MapRegionLoader.Companion.method749
 
 /* Class348_Sub42_Sub3 - Decompiled by JODE
@@ -41,15 +41,15 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             if (i_4_ < 0) i_4_ = 0
             else if (i_4_ > 100) i_4_ = 100
             var i_5_ = ((-AbstractMenuEntryStatics.aShort1700 + HeapDiagnosticsHolder.aShort2250) * i_4_ / 100 + AbstractMenuEntryStatics.aShort1700)
-            if (i_5_ < CacheEntryReference.aShort9555) i_5_ = CacheEntryReference.aShort9555.toInt()
+            if (i_5_ < ChatCommandProcessor.aShort9555) i_5_ = ChatCommandProcessor.aShort9555.toInt()
             else if (ColourAdjustment.aShort851 < i_5_) i_5_ = ColourAdjustment.aShort851.toInt()
             var i_6_ = 512 * i_5_ * i_3_ / (i_1_ * 334)
             if (i_6_ >= FixedFunctionWaterPass.aShort7355) {
                 if (i_6_ > RefCountedHandle.aShort2269) {
                     i_6_ = RefCountedHandle.aShort2269.toInt()
                     i_5_ = i_1_ * i_6_ * 334 / (i_3_ * 512)
-                    if (i_5_ < CacheEntryReference.aShort9555) {
-                        i_5_ = CacheEntryReference.aShort9555.toInt()
+                    if (i_5_ < ChatCommandProcessor.aShort9555) {
+                        i_5_ = ChatCommandProcessor.aShort9555.toInt()
                         val i_7_ = i_6_ * (i_1_ * 334) / (i_5_ * 512)
                         val i_8_ = (-i_7_ + i_3_) / 2
                         if (bool) {
@@ -160,10 +160,10 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             val i_16_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
             do {
                 if (i_16_ == 2) {
-                    method1083(FacingDirectionNode.aRenderer6654, 100, 9.toByte(), HardCacheEntryReference.anInt10432, 100, LocTypeDefinition.anInt4017)
+                    method1083(FacingDirectionNode.aRenderer6654, 100, 9.toByte(), GameDisplayManager.anInt10432, 100, LocTypeDefinition.anInt4017)
                     break
                 } else if (i_16_ != 3) break
-                method282(2, FacingDirectionNode.aRenderer6654, LocTypeDefinition.anInt4017, 73.toByte(), Js5Archive.anInt666, PerlinTextureProvider.anInt5812, HardCacheEntryReference.anInt10432, 2)
+                method282(2, FacingDirectionNode.aRenderer6654, LocTypeDefinition.anInt4017, 73.toByte(), Js5Archive.anInt666, PerlinTextureProvider.anInt5812, GameDisplayManager.anInt10432, 2)
             } while (false)
             if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)) TerrainTileStatics.method3980(i + 93, ParticleSystemRenderer.aCanvas3869!!)
             if (FacingDirectionNode.aRenderer6654 != null) BufferToggleState.method2196((-9).toByte())

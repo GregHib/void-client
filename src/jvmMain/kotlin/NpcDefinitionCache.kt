@@ -126,7 +126,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         fun method1987(i: Int) {
             val i_12_ = 81 % ((i - -70) / 35)
             anInt3313++
-            if (!ScrollbarComponent.aBoolean8335) ChatScriptListNode.aBoolean9535 = ((SoundCacheState.anInt4143 != -1 && FileExistsCondition.anInt4776 >= SoundCacheState.anInt4143) || (HardCacheEntryReference.anInt10432 < 16 * FileExistsCondition.anInt4776 - -(if (!PlayerSequenceSelector.aBoolean1211) 22 else 26)))
+            if (!ScrollbarComponent.aBoolean8335) ChatScriptListNode.aBoolean9535 = ((SoundCacheState.anInt4143 != -1 && FileExistsCondition.anInt4776 >= SoundCacheState.anInt4143) || (GameDisplayManager.anInt10432 < 16 * FileExistsCondition.anInt4776 - -(if (!PlayerSequenceSelector.aBoolean1211) 22 else 26)))
             ItemDefinitionLoader.aNodeDeque_2187!!.method1996(103)
             ClampTextureNode.aNodeDeque_9478!!.method1996(104)
             var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as ContactEntry?)

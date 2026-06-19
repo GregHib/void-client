@@ -66,7 +66,7 @@ class RangeThresholdTextureNode : AbstractProceduralTextureNode(1, true) {
                 if (textureFormatInfo == ClampTextureNode.Companion.aTextureFormatInfo_9471) return 6406
                 if (CellNoiseTextureNode.Companion.aTextureFormatInfo_9303 != textureFormatInfo) {
                     if (textureFormatInfo == SpriteSheetCache.aTextureFormatInfo_2571) return 6410
-                    if (textureFormatInfo == SceneLinkedListNode.aTextureFormatInfo_3977) return 6145
+                    if (textureFormatInfo == GlTextureBase.aTextureFormatInfo_3977) return 6145
                 } else return 6409
             } else return 6407
             throw IllegalStateException()

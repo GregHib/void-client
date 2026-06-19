@@ -20,7 +20,7 @@ class TileRenderState {
     fun method2679(i: Int, i_7_: Int, i_8_: Int): Int {
         anInt4232++
         if (i_8_ != 1595) return 38
-        val i_9_ = (max(HardCacheEntryReference.anInt10432, i))
+        val i_9_ = (max(GameDisplayManager.anInt10432, i))
         if (PerlinTextureProvider.aTileRenderState_5808 == this) return 0
         if (this == WorldMapSceneSoftware.aTileRenderState_5821) return i_9_ - i_7_
         if (ProjectileConfigUtil.aTileRenderState_399 == this) return (i_9_ - i_7_) / 2

@@ -365,12 +365,12 @@ class WidgetDefinition {
             var i_48_ = 0
             var i_49_ = i_42_
             if (i_45_ != 0) {
-                i_48_ = -i_49_ * TrigLookupTables.anIntArray1207!![i_45_] shr 14
-                i_49_ = TrigLookupTables.anIntArray1204!![i_45_] * i_49_ shr 14
+                i_48_ = -i_49_ * SpotAnimVector.anIntArray1207!![i_45_] shr 14
+                i_49_ = SpotAnimVector.anIntArray1204!![i_45_] * i_49_ shr 14
             }
             if (i_46_ != 0) {
-                i_47_ = TrigLookupTables.anIntArray1207!![i_46_] * i_49_ shr 14
-                i_49_ = i_49_ * TrigLookupTables.anIntArray1204!![i_46_] shr 14
+                i_47_ = SpotAnimVector.anIntArray1207!![i_46_] * i_49_ shr 14
+                i_49_ = i_49_ * SpotAnimVector.anIntArray1204!![i_46_] shr 14
             }
             WorldMapElement.anInt4638 = i_37_
             MapTileShape.anInt4186 = 0

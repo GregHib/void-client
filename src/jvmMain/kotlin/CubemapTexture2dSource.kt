@@ -49,7 +49,7 @@ class CubemapTexture2dSource internal constructor(private val aHa_Sub2_8693: Ope
                     NpcActorEntity.anInt10074 = i
                     KeyboardInputSource.aBoolean4275 = bool
                     GlBufferObject.aClass348_Sub16_Sub3_4743 = null
-                    SceneLinkedListNode.anInt3971 = i_4_
+                    CacheIndexManager.anInt3971 = i_4_
                     anInt8687++
                     BloomGraphicsOptionState.aLong5971 = l
                     SpriteDefinition.anInt7068 = 1

@@ -145,7 +145,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
             } else string = "www-wtrc"
             var string_2_ = ""
             if (BloomGraphicsOptionState.aString5966 != null) string_2_ = "/p=" + BloomGraphicsOptionState.aString5966
-            return ("http://" + string + "." + (HardCacheEntryReference.aSceneProjector_10434?.aString2985) + ".com/l=" + ChatCommandProcessor.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_2_ + "/")
+            return ("http://" + string + "." + (Client.aSceneProjector_10434?.aString2985) + ".com/l=" + ChatCommandProcessor.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_2_ + "/")
         }
 
         @JvmStatic
@@ -154,7 +154,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
             try {
                 if (SpriteDefinition.anInt7068 == 2) {
                     if (MaterialPass.Companion.aClass348_Sub2_3683 == null) {
-                        MaterialPass.Companion.aClass348_Sub2_3683 = MidiFileBuilder.method2734(ModelDefinition.aJs5Archive_1848!!, (NpcActorEntity.anInt10074), SceneLinkedListNode.anInt3971)
+                        MaterialPass.Companion.aClass348_Sub2_3683 = MidiFileBuilder.method2734(ModelDefinition.aJs5Archive_1848!!, (NpcActorEntity.anInt10074), CacheIndexManager.anInt3971)
                         if (MaterialPass.Companion.aClass348_Sub2_3683 == null) return false
                     }
                     if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(MinimapTileEntry.aJs5Archive_611, MapElementLookup.aJs5Archive_4147)

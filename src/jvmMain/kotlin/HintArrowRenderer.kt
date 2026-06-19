@@ -96,15 +96,15 @@ class HintArrowRenderer internal constructor(private val anInt1230: Int, private
             }
         }
         if (anInt1231 != 0) {
-            val i_22_: Int = TrigLookupTables.Companion.anIntArray1207!![anInt1231]
-            val i_23_: Int = TrigLookupTables.Companion.anIntArray1204!![anInt1231]
+            val i_22_: Int = SpotAnimVector.anIntArray1207!![anInt1231]
+            val i_23_: Int = SpotAnimVector.anIntArray1204!![anInt1231]
             val i_24_ = i_20_ * i_23_ - i_21_ * i_22_ shr 14
             i_21_ = i_20_ * i_22_ + i_21_ * i_23_ shr 14
             i_20_ = i_24_
         }
         if (anInt1219 != 0) {
-            val i_25_: Int = TrigLookupTables.Companion.anIntArray1207!![anInt1219]
-            val i_26_: Int = TrigLookupTables.Companion.anIntArray1204!![anInt1219]
+            val i_25_: Int = SpotAnimVector.anIntArray1207!![anInt1219]
+            val i_26_: Int = SpotAnimVector.anIntArray1204!![anInt1219]
             val i_27_ = i_21_ * i_25_ + i * i_26_ shr 14
             i_21_ = i_21_ * i_26_ - i * i_25_ shr 14
             i = i_27_
@@ -169,16 +169,16 @@ class HintArrowRenderer internal constructor(private val anInt1230: Int, private
             }
             if (anInt1231 != 0) {
                 val i_63_ = -anInt1231 and 0x3fff
-                val i_64_: Int = TrigLookupTables.Companion.anIntArray1207!![i_63_]
-                val i_65_: Int = TrigLookupTables.Companion.anIntArray1204!![i_63_]
+                val i_64_: Int = SpotAnimVector.anIntArray1207!![i_63_]
+                val i_65_: Int = SpotAnimVector.anIntArray1204!![i_63_]
                 val i_66_ = i_61_ * i_65_ - i_62_ * i_64_ shr 14
                 i_62_ = i_61_ * i_64_ + i_62_ * i_65_ shr 14
                 i_61_ = i_66_
             }
             if (anInt1219 != 0) {
                 val i_67_ = -anInt1219 and 0x3fff
-                val i_68_: Int = TrigLookupTables.Companion.anIntArray1207!![i_67_]
-                val i_69_: Int = TrigLookupTables.Companion.anIntArray1204!![i_67_]
+                val i_68_: Int = SpotAnimVector.anIntArray1207!![i_67_]
+                val i_69_: Int = SpotAnimVector.anIntArray1204!![i_67_]
                 val i_70_ = i_62_ * i_68_ + i * i_69_ shr 14
                 i_62_ = i_62_ * i_69_ - i * i_68_ shr 14
                 i = i_70_
@@ -257,13 +257,13 @@ class HintArrowRenderer internal constructor(private val anInt1230: Int, private
                 modelDefinition.method1101(-128, 0, 0, 108)
                 for (i in 0..24) {
                     val i_41_ = i * 8192 / 24
-                    val i_42_: Int = TrigLookupTables.Companion.anIntArray1207!![i_41_]
-                    val i_43_: Int = TrigLookupTables.Companion.anIntArray1204!![i_41_]
+                    val i_42_: Int = SpotAnimVector.anIntArray1207!![i_41_]
+                    val i_43_: Int = SpotAnimVector.anIntArray1204!![i_41_]
                     for (i_44_ in 1..23) {
                         val i_45_ = i_44_ * 8192 / 24
-                        val i_46_: Int = TrigLookupTables.Companion.anIntArray1204!![i_45_] shr 7
-                        val i_47_: Int = TrigLookupTables.Companion.anIntArray1207!![i_45_] * i_42_ shr 21
-                        val i_48_: Int = TrigLookupTables.Companion.anIntArray1207!![i_45_] * i_43_ shr 21
+                        val i_46_: Int = SpotAnimVector.anIntArray1204!![i_45_] shr 7
+                        val i_47_: Int = SpotAnimVector.anIntArray1207!![i_45_] * i_42_ shr 21
+                        val i_48_: Int = SpotAnimVector.anIntArray1207!![i_45_] * i_43_ shr 21
                         modelDefinition.method1101(i_46_, -i_47_, i_48_, 127)
                     }
                     if (i > 0) {

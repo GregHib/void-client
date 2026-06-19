@@ -324,11 +324,11 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
                     class181.anIntArray2385 = IntArray(class181.anIntArray2395.size)
                     for (i_63_ in class181.anIntArray2395.indices) {
                         method1943(false, (class181.anIntArray2395[i_63_]))
-                        class181.anIntArray2385!![i_63_] = (CompositeRgbNoiseTexture.aHashtable_8679!!.method3480(class181.anIntArray2395[i_63_].toLong(), -6008) as IntKeyNode).anInt6976
+                        class181.anIntArray2385!![i_63_] = (SpotAnimDefCache.aHashtable_8679!!.method3480(class181.anIntArray2395[i_63_].toLong(), -6008) as IntKeyNode).anInt6976
                     }
                 }
                 for (i_64_ in class181.anIntArray2385!!.indices) {
-                    val class174 = (WorldListEntry.aSpotAnimVectorArray311s!![class181.anIntArray2385!![i_64_]])
+                    val class174 = (SpotAnimDefCache.aSpotAnimVectorArray311s!![class181.anIntArray2385!![i_64_]])
                     if (class174!!.anInt2297 == 0) {
                         d += (class174.anInt2291 * i).toDouble()
                         d_27_ += (class174.anInt2290 * i).toDouble()

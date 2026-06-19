@@ -23,8 +23,6 @@ class WorldListEntry {
         var anInt307: Int = 0
         @JvmField
         var anInt309: Int = 0
-        @JvmField
-        var aSpotAnimVectorArray311s: Array<SpotAnimVector?>? = arrayOfNulls<SpotAnimVector>(16)
         var aIntRange_315: IntRange?
 
         fun method283(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
@@ -45,13 +43,13 @@ class WorldListEntry {
         fun method284(i: Byte) {
             aIntRange_315 = null
             aIntRange_304 = null
-            if (i.toInt() == 51) aSpotAnimVectorArray311s = null
+            SpotAnimDefCache.aSpotAnimVectorArray311s = null
         }
 
         @JvmStatic
         fun method285(i: Int): Array<ProjectileFactory?> {
             anInt309++
-            return (arrayOf<ProjectileFactory?>(ModelDefinitionCache.aProjectileFactory_2868, ByteBufferStatics.aProjectileFactory_7175, SkyboxGradient.aProjectileFactory_3934, MapSceneDefLoader.aProjectileFactory_2489, MatrixCameraTransform.aProjectileFactory_5689, WeaveTextureNode.aProjectileFactory_9274, ItemNameResolver.aProjectileFactory_4997, SpotAnimVector.aProjectileFactory_2307, OrientationRotator.aProjectileFactory_2045, LocTypeDefLoader.aProjectileFactory_2507))
+            return (arrayOf<ProjectileFactory?>(ModelDefinitionCache.aProjectileFactory_2868, ByteBufferStatics.aProjectileFactory_7175, SkyboxGradient.aProjectileFactory_3934, MapSceneDefLoader.aProjectileFactory_2489, MatrixCameraTransform.aProjectileFactory_5689, WeaveTextureNode.aProjectileFactory_9274, ItemNameResolver.aProjectileFactory_4997, TypedRecordTable.aProjectileFactory_2307, OrientationRotator.aProjectileFactory_2045, LocTypeDefLoader.aProjectileFactory_2507))
         }
 
         @JvmStatic

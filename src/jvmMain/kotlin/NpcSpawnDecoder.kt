@@ -30,13 +30,13 @@ object NpcSpawnDecoder {
                 if (StringCacheNode.aByteArrayArray7212!![i_1_] != null) {
                     var i_2_ = -1
                     for (i_3_ in 0..<ProjectileConfigUtil.anInt388) {
-                        if (WidgetRedrawRegion.anIntArray4250!![i_3_] == NullOggStream.anIntArray9042!![i_1_]) {
+                        if (LoadingBarRenderer.anIntArray4250!![i_3_] == NullOggStream.anIntArray9042!![i_1_]) {
                             i_2_ = i_3_
                             break
                         }
                     }
                     if (i_2_ == -1) {
-                        WidgetRedrawRegion.anIntArray4250!![ProjectileConfigUtil.anInt388] = NullOggStream.anIntArray9042!![i_1_]
+                        LoadingBarRenderer.anIntArray4250!![ProjectileConfigUtil.anInt388] = NullOggStream.anIntArray9042!![i_1_]
                         i_2_ = ProjectileConfigUtil.anInt388++
                     }
                     val class348_sub49 = ByteBuffer(StringCacheNode.aByteArrayArray7212!![i_1_])

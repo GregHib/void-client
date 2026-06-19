@@ -40,7 +40,6 @@ class ViewportTransform {
     companion object {
         var anInt3664: Int = 0
         var anInt3665: Int = 0
-        var anInt3674: Int = 0
         var anInt3676: Int = 0
         var anIntArrayArray3677: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(2, 4, 6, 0), intArrayOf(0, 2, 4, 6), intArrayOf(0, 2, 4), intArrayOf(4, 0, 2), intArrayOf(2, 4, 0), intArrayOf(0, 2, 4), intArrayOf(6, 0, 1, 2, 4, 5), intArrayOf(0, 4, 7, 6), intArrayOf(4, 7, 6, 0), intArrayOf(0, 8, 6, 2, 9, 4), intArrayOf(2, 9, 4, 0, 8, 6), intArrayOf(2, 11, 4, 6, 10, 0), intArrayOf(2, 4, 6, 0))
         fun method2116(i: Int): Int {
@@ -67,14 +66,5 @@ class ViewportTransform {
             if (i == 0) anIntArrayArray3677 = null
         }
 
-        fun method2118(i: Byte): ParticleEmitterFactory? {
-            anInt3674++
-            try {
-                if (i.toInt() != -42) anInt3676 = -23
-                return ScaledParticleEmitter()
-            } catch (throwable: Throwable) {
-                return null
-            }
-        }
     }
 }

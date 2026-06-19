@@ -1,7 +1,6 @@
 import WhirlpoolHash.Companion.method1166
 import TwoStateOptionState.Companion.method1842
 import WhirlpoolHash.Companion.method2057
-import LruByteCache.Companion.method589
 import MapRegionLoader.Companion.method751
 import kotlin.math.max
 import kotlin.math.min
@@ -796,7 +795,7 @@ class CollisionMap {
                         if (bool != true) method3498(44, null, -27, -91, true, -26)
                         val i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * StaticNoiseTexture.anInt8665 / MapRegionLoader.anInt1267)))
                         var i_48_ = -1996554240
-                        if (GlRectangleTexture.aSceneProjector_8638 == HardCacheEntryReference.aSceneProjector_10434) i_48_ = -1996488705
+                        if (GlRectangleTexture.aSceneProjector_8638 == Client.aSceneProjector_10434) i_48_ = -1996488705
                         var_renderer.aa(i_46_, i_47_, i_44_, i_45_, i_48_, 1)
                         var_renderer.method3628(i_46_, i_47_, i_44_, i_45_, i_48_, 0)
                         if (GlEnvMappedWaterPass.anInt7379 <= 0) break
@@ -806,7 +805,7 @@ class CollisionMap {
                         var class348_sub21 = (MapRegionLoader.aNodeDeque_1254!!.method1995(4) as CameraSplineNode?)
                         while (class348_sub21 != null) {
                             val class42 = (MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 71.toByte()))
-                            if (method589(class42, -4)) {
+                            if (FlipTextureNode.method589(class42, -4)) {
                                 if (HslAdjustTextureNode.anInt9399 == (class348_sub21.anInt6847)) {
                                     val i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / MapRegionLoader.anInt1259))
                                     val i_51_ = (((MapRegionLoader.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / MapRegionLoader.anInt1267) + i_41_)

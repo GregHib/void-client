@@ -1,3 +1,5 @@
+import AbstractModel.Companion.method607
+
 /* Class84 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -161,21 +163,21 @@ class MapSceneCache internal constructor(sceneProjector: SceneProjector?, i: Int
 
         @JvmStatic
         fun method826(i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, var_renderer: Renderer) {
-            if ((SpotAnimVector.aAbstractModelRenderer_2309 == null || TimedTileQueueEntry.aAbstractModelRenderer_9658 == null || TimedTileQueueEntry.aAbstractModelRenderer_9659 == null) && CameraRotationStub.aJs5Archive_322!!.method421(false, ProjectedGroundDecor.anInt10257) && CameraRotationStub.aJs5Archive_322!!.method421(false, SkyboxGradient.anInt3937) && CameraRotationStub.aJs5Archive_322!!.method421(false, NpcType.Companion.anInt1387)) {
+            if ((MapSceneCache.aAbstractModelRenderer_2309 == null || TimedTileQueueEntry.aAbstractModelRenderer_9658 == null || TimedTileQueueEntry.aAbstractModelRenderer_9659 == null) && CameraRotationStub.aJs5Archive_322!!.method421(false, ProjectedGroundDecor.anInt10257) && CameraRotationStub.aJs5Archive_322!!.method421(false, SkyboxGradient.anInt3937) && CameraRotationStub.aJs5Archive_322!!.method421(false, NpcType.Companion.anInt1387)) {
                 val spriteImage = SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, SkyboxGradient.anInt3937, 0)
                 TimedTileQueueEntry.aAbstractModelRenderer_9658 = var_renderer.method3691(spriteImage, true)
                 spriteImage!!.method1518()
                 ConfigVarProgress.aAbstractModelRenderer_4808 = var_renderer.method3691(spriteImage, true)
-                SpotAnimVector.aAbstractModelRenderer_2309 = (var_renderer.method3691(SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, ProjectedGroundDecor.anInt10257, 0), true))
+                MapSceneCache.aAbstractModelRenderer_2309 = (var_renderer.method3691(SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, ProjectedGroundDecor.anInt10257, 0), true))
                 val spriteImage_29_ = SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, NpcType.Companion.anInt1387, 0)
                 TimedTileQueueEntry.aAbstractModelRenderer_9659 = var_renderer.method3691(spriteImage_29_, true)
                 spriteImage_29_!!.method1518()
                 AbstractMenuEntryStatics.aAbstractModelRenderer_1706 = var_renderer.method3691(spriteImage_29_, true)
             }
             anInt1454++
-            if (SpotAnimVector.aAbstractModelRenderer_2309 != null && TimedTileQueueEntry.aAbstractModelRenderer_9658 != null && TimedTileQueueEntry.aAbstractModelRenderer_9659 != null) {
-                val i_30_ = (-(TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method971() * 2) + i_25_) / SpotAnimVector.aAbstractModelRenderer_2309!!.method971()
-                for (i_31_ in 0..<i_30_) SpotAnimVector.aAbstractModelRenderer_2309!!.method974(i_24_ + (TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method971() - -(i_31_ * SpotAnimVector.aAbstractModelRenderer_2309!!.method971())), -SpotAnimVector.aAbstractModelRenderer_2309!!.method969() + (i_28_ + i_26_))
+            if (MapSceneCache.aAbstractModelRenderer_2309 != null && TimedTileQueueEntry.aAbstractModelRenderer_9658 != null && TimedTileQueueEntry.aAbstractModelRenderer_9659 != null) {
+                val i_30_ = (-(TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method971() * 2) + i_25_) / MapSceneCache.aAbstractModelRenderer_2309!!.method971()
+                for (i_31_ in 0..<i_30_) MapSceneCache.aAbstractModelRenderer_2309!!.method974(i_24_ + (TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method971() - -(i_31_ * MapSceneCache.aAbstractModelRenderer_2309!!.method971())), -MapSceneCache.aAbstractModelRenderer_2309!!.method969() + (i_28_ + i_26_))
                 val i_32_ = ((i_26_ - (i + TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method969())) / TimedTileQueueEntry.aAbstractModelRenderer_9658!!.method969())
                 for (i_33_ in 0..<i_32_) {
                     TimedTileQueueEntry.aAbstractModelRenderer_9658!!.method974(i_24_, (TimedTileQueueEntry.aAbstractModelRenderer_9658!!.method969() * i_33_ + (i_28_ + i)))
@@ -185,6 +187,17 @@ class MapSceneCache internal constructor(sceneProjector: SceneProjector?, i: Int
                 AbstractMenuEntryStatics.aAbstractModelRenderer_1706!!.method974(i_24_ + (i_25_ + -TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method971()), i_28_ - (-i_26_ + TimedTileQueueEntry.aAbstractModelRenderer_9659!!.method969()))
             }
             val i_34_ = -24 % ((i_27_ - 85) / 35)
+        }
+        var anInt2295: Int = 0
+        var aAbstractModelRenderer_2309: AbstractModelRenderer? = null
+        fun method1333(`is`: ShortArray?, i: Int, strings: Array<String?>?) {
+            try {
+                if (i != 26073) aAbstractModelRenderer_2309 = null
+                anInt2295++
+                method607(strings!!.size + -1, strings, `is`, 0, false)
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("po.B(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (strings != null) "{...}" else "null") + ')'))
+            }
         }
     }
 }

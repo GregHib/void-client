@@ -74,7 +74,7 @@ class ResourceLoaderThread : Runnable {
                         i = 0xffffff or (i shl 24)
                         ScreenBorderFiller.method1170((-121).toByte())
                         FacingDirectionNode.aRenderer6654!!.GA(0)
-                        val class105 = (FacingDirectionNode.aRenderer6654!!.method3629(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432, true))
+                        val class105 = (FacingDirectionNode.aRenderer6654!!.method3629(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432, true))
                         FacingDirectionNode.aRenderer6654!!.method3681(class105!!, 0)
                         anCursorController_3919!!.method58(true, -126)
                         FacingDirectionNode.aRenderer6654!!.method3672()

@@ -8,8 +8,6 @@ class RectangleRegion internal constructor(var anInt1941: Int, @JvmField var anI
     }
 
     companion object {
-        @JvmField
-        var aJs5Archive_1940: Js5Archive? = null
         var aWidgetComponentArray1942: Array<WidgetComponent?>? = null
         @JvmField
         var aClass348_Sub42_Sub12_1946: ContactEntry? = null
@@ -18,7 +16,7 @@ class RectangleRegion internal constructor(var anInt1941: Int, @JvmField var anI
         @JvmStatic
         fun method1164(i: Byte) {
             if (i <= -42) {
-                aJs5Archive_1940 = null
+                TextureMaterialGroup.aJs5Archive_1940 = null
                 aClass348_Sub42_Sub12_1946 = null
                 aWidgetComponentArray1942 = null
             }

@@ -167,8 +167,8 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
                             var i_14_ = i_13_
                             if ((class318_sub1_sub3_sub3.anIntArray10296 != null) && (class318_sub1_sub3_sub3.anIntArray10296!![anInt10367]) != -1) i_14_ = (class318_sub1_sub3_sub3.anIntArray10296!![anInt10367])
                             val i_15_ = 0x3fff and -i_13_ + i_14_
-                            val i_16_ = TrigLookupTables.anIntArray1207!![i_15_]
-                            val i_17_ = TrigLookupTables.anIntArray1204!![i_15_]
+                            val i_16_ = SpotAnimVector.anIntArray1207!![i_15_]
+                            val i_17_ = SpotAnimVector.anIntArray1204!![i_15_]
                             val i_18_ = i_12_ * i_16_ + i_11_ * i_17_ shr 14
                             i_12_ = (-(i_11_ * i_16_) + i_12_ * i_17_ shr 14)
                             i_11_ = i_18_

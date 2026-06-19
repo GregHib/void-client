@@ -76,7 +76,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
             this.aHa_Sub3_4479.method3853(-32, ClampTextureNode.aConfigFlagUtil_9477)
             if (aBoolean7311) {
                 this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 113, (TheoraVideoStream.aRenderConfigFactory_9011))
-                this.aHa_Sub3_4479.method3924(true, false, 0, WidgetRedrawRegion.aTrigLookupTables_4247, false)
+                this.aHa_Sub3_4479.method3924(true, false, 0, LoadingBarRenderer.aTrigLookupTables_4247, false)
                 this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aTrigLookupTables_8503)
             } else {
                 this.aHa_Sub3_4479.method3874((ParticleSystemState.aRenderConfigFactory_2207), 117, (RenderQueueState.aRenderConfigFactory_6519))
@@ -109,21 +109,21 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
             this.aHa_Sub3_4479.method3879(-8629)
             if (aBoolean7311) {
                 this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 120, ParticleSystemState.aRenderConfigFactory_2207)
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
-                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)
             } else {
                 this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 115, ParticleSystemState.aRenderConfigFactory_2207)
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
                 this.aHa_Sub3_4479.method3897(2, i + -4469)
                 this.aHa_Sub3_4479.method3874((ParticleSystemState.aRenderConfigFactory_2207), i.toInt() xor 0x21, (ParticleSystemState.aRenderConfigFactory_2207))
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
                 this.aHa_Sub3_4479.method3849(47.toByte(), 1, (SceneObjectEntity.aTrigLookupTables_8737))
-                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)
                 this.aHa_Sub3_4479.method3850(64.toByte(), null)
             }
             this.aHa_Sub3_4479.method3897(0, i.toInt() xor 0x114a.inv())
             aBoolean7317 = false
-        } else this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+        } else this.aHa_Sub3_4479.method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)
         anInt7312++
         if (i.toInt() != 87) aBoolean7311 = true
         this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, i + 13, ParticleSystemState.aRenderConfigFactory_2207)
@@ -283,9 +283,9 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                     if (i_36_ < LinkedListIterator.anIntArray2117!![i_15_]) LinkedListIterator.anIntArray2117!![i_15_] = i_36_
                     else if (i_36_ > BlankTextureNode.anIntArray9259!![i_15_]) BlankTextureNode.anIntArray9259!![i_15_] = i_36_
                     val i_37_ = i_22_ shl 9
-                    if (i_37_ >= AbstractModel.anIntArray1127!![i_15_]) {
+                    if (i_37_ >= CharCodeMap.anIntArray1127!![i_15_]) {
                         if (ConnectionStateType.anIntArray1045!![i_15_] < i_37_) ConnectionStateType.anIntArray1045!![i_15_] = i_37_
-                    } else AbstractModel.anIntArray1127!![i_15_] = i_37_
+                    } else CharCodeMap.anIntArray1127!![i_15_] = i_37_
                 }
                 if (!bool_24_) {
                     if (i_19_ >= 1 && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_]) != i_16_) {
@@ -348,7 +348,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                 LinkedListIterator.anIntArray2117!![i_15_] -= 512
                 BlankTextureNode.anIntArray9259!![i_15_] += 512
                 ConnectionStateType.anIntArray1045!![i_15_] += 512
-                AbstractModel.anIntArray1127!![i_15_] -= 512
+                CharCodeMap.anIntArray1127!![i_15_] -= 512
             }
             return true
         }
@@ -370,7 +370,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                 val `is` = ClientGameLoopNode.method2992(string, (-20).toByte())
                 val i_39_ = 1 % ((-6 - i) / 63)
                 class348_sub49.method3381(5537, `is`.size)
-                class348_sub49.anInt7197 += (AbstractModel.aHuffmanCodec_1131!!.method2227(`is`.size, 0, class348_sub49.anInt7197, `is`, 103, class348_sub49.aByteArray7154))
+                class348_sub49.anInt7197 += (NativeRenderer.aHuffmanCodec_1131!!.method2227(`is`.size, 0, class348_sub49.anInt7197, `is`, 103, class348_sub49.aByteArray7154))
                 return class348_sub49.anInt7197 + -i_38_
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("bk.O(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))

@@ -849,7 +849,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
                     if (ClampTextureNode.aTextureFormatInfo_9471 == textureFormatInfo) return 28
                     if (CellNoiseTextureNode.aTextureFormatInfo_9303 == textureFormatInfo) return 50
                     if (textureFormatInfo == SpriteSheetCache.aTextureFormatInfo_2571) return 51
-                    if (textureFormatInfo == SceneLinkedListNode.aTextureFormatInfo_3977) return 77
+                    if (textureFormatInfo == GlTextureBase.aTextureFormatInfo_3977) return 77
                 } else return 22
             }
             if (i != 22) anIntArray9790 = null
@@ -858,7 +858,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
 
         private fun method3961(trigLookupTables: TrigLookupTables?, i: Int): Int {
             if (i != 2) aFloatArray9797 = null
-            if (WidgetRedrawRegion.aTrigLookupTables_4247 == trigLookupTables) return 2
+            if (LoadingBarRenderer.aTrigLookupTables_4247 == trigLookupTables) return 2
             if (trigLookupTables == GlIndexBufferArb.aTrigLookupTables_8503) return 0
             if (SceneObjectEntity.aTrigLookupTables_8737 != trigLookupTables) {
                 if (RenderListTextureNode.aTrigLookupTables_9485 == trigLookupTables) return 3

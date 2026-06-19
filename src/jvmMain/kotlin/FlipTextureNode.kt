@@ -5,6 +5,7 @@ import CubemapTextureGlSource.Companion.method2263
 import WorldMapAreaLabel.Companion.method3570
 import NoiseTextureGenerator.Companion.method544
 import FireParticleStream.Companion.method132
+import SceneEntity.Companion.method2385
 import kotlin.math.max
 import kotlin.math.min
 
@@ -195,7 +196,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                         if (class46.anInt765 == BufferToggleState.anInt3717) {
                                             if (class46.method425((FacingDirectionNode.aRenderer6654!!), 8.toByte()) != null) {
                                                 method3570(false)
-                                                LinkedNodeListIterator.method1007(class46, (FacingDirectionNode.aRenderer6654), i_24_, i_25_, 22960)
+                                                method1007(class46, (FacingDirectionNode.aRenderer6654), i_24_, i_25_, 22960)
                                                 LocDefinitionCache.aBooleanArray3438!![i_23_] = true
                                                 FacingDirectionNode.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (GrayscaleNoiseTexture.aBoolean5300) {
@@ -472,8 +473,8 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method908(class46.anInt717)
                                                     MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method891((class46.anInt688), (class46.anInt799), (class46.anInt787))
                                                 } else {
-                                                    val i_66_ = ((((class46.anInt716) shl 2) * (TrigLookupTables.anIntArray1207!![(class46.anInt757 shl 3)])) shr 14)
-                                                    val i_67_ = (((TrigLookupTables.anIntArray1204!![((class46.anInt757) shl 3)]) * ((class46.anInt716) shl 2)) shr 14)
+                                                    val i_66_ = ((((class46.anInt716) shl 2) * (SpotAnimVector.anIntArray1207!![(class46.anInt757 shl 3)])) shr 14)
+                                                    val i_67_ = (((SpotAnimVector.anIntArray1204!![((class46.anInt757) shl 3)]) * ((class46.anInt716) shl 2)) shr 14)
                                                     MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method902(-(class46.anInt717) shl 3)
                                                     MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method896((class46.anInt675) shl 3)
                                                     MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method891(((class46.anInt808) shl 2), (((class46.anInt786) shl 2) + (i_66_ + i_60_)), ((class46.anInt786) shl 2) + i_67_)
@@ -565,6 +566,182 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
             if (string.length > 9) return (" <col=00ff80>" + string.substring(0, string.length + -8) + LocalizedText.aLocalizedText_3516!!.method2063(ChatCommandProcessor.anInt6967, 544) + " (" + string + ")</col>")
             if (string.length > 6) return (" <col=ffffff>" + string.substring(0, -4 + string.length) + LocalizedText.aLocalizedText_3518!!.method2063(ChatCommandProcessor.anInt6967, 544) + " (" + string + ")</col>")
             return " <col=ffff00>" + string + "</col>"
+        }
+
+
+        var anInt1648: Int = 0
+        fun method1007(widgetComponent: WidgetComponent?, var_renderer: Renderer?, i: Int, i_1_: Int, i_2_: Int) {
+            try {
+                anInt1648++
+                val var_aa = widgetComponent!!.method425(var_renderer!!, 40.toByte())
+                if (var_aa != null) {
+                    var_renderer.KA(i, i_1_, i + widgetComponent.anInt709, widgetComponent.anInt789 + i_1_)
+                    if (KeyboardLayoutCache.anInt3306 != 2 && KeyboardLayoutCache.anInt3306 != 5 && GroundItemRenderState.aAbstractModelRenderer_1664 != null) {
+                        val i_3_: Int
+                        val i_4_: Int
+                        val i_5_: Int
+                        val i_6_: Int
+                        if (WeaveTextureNode.anInt9282 == 4) {
+                            i_3_ = RegionTileNode.anInt6652
+                            i_4_ = HslColorTableNode.anInt6633
+                            i_5_ = 4096
+                            i_6_ = 0x3fff and -CameraDistanceOptionState.aFloat3938.toInt()
+                        } else {
+                            i_5_ = 4096 - 16 * FloatBuffer.anInt9750
+                            i_3_ = (LocalPlayerState.aPlayer_1907!!.y)
+                            i_6_ = (-CameraDistanceOptionState.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483 and 0x3fff)
+                            i_4_ = (LocalPlayerState.aPlayer_1907!!.x)
+                        }
+                        val i_7_ = 48 - (-(i_4_ / 128) - -(GlCubemapLightPass.anInt7319 * 2)) - -208
+                        val i_8_ = (208 - (RangeThresholdTextureNode.anInt9109 * 2 - 48) + 4 * RangeThresholdTextureNode.anInt9109 - i_3_ / 128)
+                        GroundItemRenderState.aAbstractModelRenderer_1664!!.method967((widgetComponent.anInt709.toFloat() / 2.0f + i.toFloat()), (widgetComponent.anInt789.toFloat() / 2.0f + i_1_.toFloat()), i_7_.toFloat(), i_8_.toFloat(), i_5_, i_6_ shl 2, var_aa, i, i_1_)
+                        var class348_sub35 = ModelWallEntity.aNodeDeque_10125!!.method1995(i_2_ xor 0x59b4) as? IntKeyNode
+                        while (class348_sub35 != null) {
+                            val i_9_ = class348_sub35.anInt6976
+                            val i_10_ = (-ArbVertexProgram.regionTileX + ((0xfffe5b0 and (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3238!![i_9_])) shr 14))
+                            val i_11_ = (-RegionMapDecoder.regionTileY + (0x3fff and (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3238!![i_9_])))
+                            val i_12_ = -(i_4_ / 128) + 2 + 4 * i_10_
+                            val i_13_ = 2 + (4 * i_11_ - i_3_ / 128)
+                            method2385(widgetComponent, i_1_, var_aa, (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3239!![i_9_]), i_12_, i, ((-94).toByte()).toByte(), i_13_, var_renderer)
+                            class348_sub35 = ModelWallEntity.aNodeDeque_10125!!.method1990(92.toByte()) as? IntKeyNode
+                        }
+                        var i_14_ = 0
+                        while ((ClampTextureNode.anInt9479 > i_14_)) {
+                            val i_15_ = (MenuActionNode.anIntArray6770!![i_14_] * 4 - -2 - i_4_ / 128)
+                            val i_16_ = (-(i_3_ / 128) + BoxBlurTextureNode.anIntArray9458!![i_14_] * 4 - -2)
+                            var npcConfig: NpcConfig? = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, SeqDefinitionCache.anIntArray3347!![i_14_]))
+                            if (npcConfig!!.anIntArray945 != null) {
+                                npcConfig = npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
+                                if (npcConfig == null || (npcConfig.anInt921 == -1)) {
+                                    i_14_++
+                                    continue
+                                }
+                            }
+                            method2385(widgetComponent, i_1_, var_aa, npcConfig.anInt921, i_15_, i, ((-113).toByte()).toByte(), i_16_, var_renderer)
+                            i_14_++
+                        }
+                        var class348_sub37 = ModelBatchBase.aHashtable_1895!!.method3484(i_2_ xor 0x59b0) as? HashTableContainer
+                        while (class348_sub37 != null) {
+                            val i_17_ = (0x3L and ((class348_sub37.aLong4291) shr 28)).toInt()
+                            if (CameraOrModelTransform.anInt4155 == i_17_) {
+                                val i_18_ = (-ArbVertexProgram.regionTileX + ((class348_sub37.aLong4291) and 0x3fffL).toInt())
+                                val i_19_ = (-RegionMapDecoder.regionTileY + ((class348_sub37.aLong4291) shr 14 and 0x3fffL).toInt())
+                                val i_20_ = -(i_4_ / 128) + (2 + i_18_ * 4)
+                                val i_21_ = -(i_3_ / 128) + (2 + i_19_ * 4)
+                                HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![0]), i, widgetComponent, var_aa, i_21_, i_2_ xor 0x59b2, i_20_)
+                            }
+                            class348_sub37 = (ModelBatchBase.aHashtable_1895!!.method3482(0) as? HashTableContainer)
+                        }
+                        var i_22_ = 0
+                        while ((i_22_ < ModelDefinitionLoader.anInt2057)) {
+                            val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_22_].toLong(), -6008)) as? NpcReference)
+                            if (class348_sub22 != null) {
+                                val npc = (class348_sub22.aNpc_6859)!!
+                                if (npc.method2445(((-126).toByte()).toByte()) && ((npc.plane) == (LocalPlayerState.aPlayer_1907!!.plane))) {
+                                    var class79 = (npc.aNpcType_10505)
+                                    if (class79 != null && (class79.anIntArray1377 != null)) class79 = (class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1))
+                                    if (class79 != null && class79.aBoolean1397 && class79.aBoolean1396) {
+                                        val i_23_ = (-(i_4_ / 128) + (npc.x) / 128)
+                                        val i_24_ = ((npc.y) / 128 + -(i_3_ / 128))
+                                        if (class79.anInt1383 != -1) method2385(widgetComponent, i_1_, var_aa, class79.anInt1383, i_23_, i, ((-73).toByte()).toByte(), i_24_, var_renderer)
+                                        else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![1]), i, widgetComponent, var_aa, i_24_, 2, i_23_)
+                                    }
+                                }
+                            }
+                            i_22_++
+                        }
+                        val i_25_ = ShaderState.anInt6513
+                        val `is` = ScrollTexMaterialPass.anIntArray6290
+                        for (i_26_ in 0..<i_25_) {
+                            val player = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_26_]])
+                            if (player != null && player.method2457(37.toByte()) && !player.aBoolean10551 && (LocalPlayerState.aPlayer_1907 != player) && (player.plane == (LocalPlayerState.aPlayer_1907!!.plane))) {
+                                val i_27_ = (-(i_4_ / 128) + (player.x) / 128)
+                                val i_28_ = (-(i_3_ / 128) + (player.y) / 128)
+                                var bool = false
+                                var i_29_ = 0
+                                while ((HslAdjustTextureNode.anInt9383 > i_29_)) {
+                                    if ((player.aString10544 == WaterTextureSet.aStringArray1441!![i_29_]) && (Renderer.anIntArray4578!![i_29_] != 0)) {
+                                        bool = true
+                                        break
+                                    }
+                                    i_29_++
+                                }
+                                var bool_30_ = false
+                                var i_31_ = 0
+                                while (ByteArrayPool.anInt496 > i_31_) {
+                                    if (player.aString10544 == HostPingThread.aWorldListEntryArray2261!![i_31_]!!.aString306) {
+                                        bool_30_ = true
+                                        break
+                                    }
+                                    i_31_++
+                                }
+                                var bool_32_ = false
+                                if ((LocalPlayerState.aPlayer_1907!!.anInt10542) != 0 && (player.anInt10542 != 0) && (player.anInt10542 == (LocalPlayerState.aPlayer_1907!!.anInt10542))) bool_32_ = true
+                                if (!player.aBoolean10554) {
+                                    if (!bool) {
+                                        if (bool_30_) HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![5]), i, widgetComponent, var_aa, i_28_, i_2_ + -22958, i_27_)
+                                        else if (!bool_32_) HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![2]), i, widgetComponent, var_aa, i_28_, 2, i_27_)
+                                        else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![4]), i, widgetComponent, var_aa, i_28_, 2, i_27_)
+                                    } else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![3]), i, widgetComponent, var_aa, i_28_, 2, i_27_)
+                                } else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![6]), i, widgetComponent, var_aa, i_28_, i_2_ + -22958, i_27_)
+                            }
+                        }
+                        val class302s = MultiFieldRecord.aMinimapPositionStateArray6897s
+                        var i_33_ = 0
+                        while ((i_33_ < class302s!!.size)) {
+                            val class302 = class302s[i_33_]
+                            if (class302 != null && (class302.anInt3840 != 0) && GlGroundShaderPass.anInt7396 % 20 < 10) {
+                                if (class302.anInt3840 == 1) {
+                                    val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? NpcReference)
+                                    if (class348_sub22 != null) {
+                                        val npc = (class348_sub22.aNpc_6859)!!
+                                        val i_34_ = (-(i_4_ / 128) + (npc.x) / 128)
+                                        val i_35_ = (-(i_3_ / 128) + (npc.y) / 128)
+                                        TypedRecordTable.method2181(360000L, i_1_, -125, i_35_, i, widgetComponent, i_34_, (class302.anInt3831), var_aa)
+                                    }
+                                }
+                                if (class302.anInt3840 == 2) {
+                                    val i_36_ = (-(i_4_ / 128) + (class302.anInt3835 / 128))
+                                    val i_37_ = (-(i_3_ / 128) + (class302.anInt3832 / 128))
+                                    var l = (class302.anInt3837 shl 7).toLong()
+                                    l *= l
+                                    TypedRecordTable.method2181(l, i_1_, -112, i_37_, i, widgetComponent, i_36_, (class302.anInt3831), var_aa)
+                                }
+                                if ((class302.anInt3840 == 10) && class302.anInt3833 >= 0 && (class302.anInt3833 < (LoadingBarRenderer.aPlayerArray5058)!!.size)) {
+                                    val player = (LoadingBarRenderer.aPlayerArray5058!![class302.anInt3833])
+                                    if (player != null) {
+                                        val i_38_ = (-(i_4_ / 128) + (player.x) / 128)
+                                        val i_39_ = (-(i_3_ / 128) + (player.y) / 128)
+                                        TypedRecordTable.method2181(360000L, i_1_, -121, i_39_, i, widgetComponent, i_38_, (class302.anInt3831), var_aa)
+                                    }
+                                }
+                            }
+                            i_33_++
+                        }
+                        if (WeaveTextureNode.anInt9282 != 4) {
+                            if (MediaStreamClient.anInt3203 != 0) {
+                                val i_40_ = (-(i_4_ / 128) + (MediaStreamClient.anInt3203 * 4 + 2) - (-(2 * LocalPlayerState.aPlayer_1907!!.method2436(77.toByte())) - -2))
+                                val i_41_ = (4 * TerrainChunkBuilder.anInt1548 - (-2 + i_3_ / 128) + (2 * (LocalPlayerState.aPlayer_1907!!.method2436(59.toByte()) - 1)))
+                                HeadIconRenderer.method1211(i_1_, (SpriteStore.aAbstractModelRendererArray367!![(if (!ModelKeyBuilder.aBoolean6759) 0 else 1)]), i, widgetComponent, var_aa, i_41_, 2, i_40_)
+                            }
+                            if (!LocalPlayerState.aPlayer_1907!!.aBoolean10551) var_renderer.method3675(3, ((-125).toByte()).toByte(), -1 + (i - -((widgetComponent.anInt709) / 2)), -1 + ((widgetComponent.anInt789) / 2 + i_1_), 3, -1)
+                        }
+                    } else var_renderer.A(-16777216, var_aa, i, i_1_)
+                }
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("mn.F(" + (if (widgetComponent != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + i_2_ + ')'))
+            }
+        }
+
+        var anInt1103: Int = 0
+        fun method589(structConfig: StructConfig?, i: Int): Boolean {
+            anInt1103++
+            if (structConfig == null) return false
+            if (i != -4) return false
+            if (!structConfig.aBoolean574) return false
+            if (!structConfig.method373(MapRegionLoader.anVarResolver_1244!!, i xor 0x2d.inv())) return false
+            if (HeapInfoRecord.aHashtable_4934!!.method3480(structConfig.anInt581.toLong(), i xor 0x1774) != null) return false
+            return HardKeyedCacheEntryReference.aHashtable_10442!!.method3480(structConfig.anInt596.toLong(), i + -6004) == null
         }
     }
 }

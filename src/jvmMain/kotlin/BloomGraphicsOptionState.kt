@@ -53,8 +53,6 @@ class BloomGraphicsOptionState : GraphicsOptionState {
         @JvmField
         var anInt5963: Int = 0
         @JvmField
-        var aJs5Archive_5964: Js5Archive? = null
-        @JvmField
         var aString5966: String? = null
         @JvmField
         var anInt5967: Int = 0
@@ -86,7 +84,7 @@ class BloomGraphicsOptionState : GraphicsOptionState {
         fun method1773(i: Byte) {
             val i_3_ = -86 / ((i - 13) / 45)
             aString5966 = null
-            aJs5Archive_5964 = null
+            ModelFacePriorityNode.aJs5Archive_5964 = null
         }
 
         @JvmStatic

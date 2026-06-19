@@ -983,7 +983,7 @@ class WidgetComponent {
                 ConnectionStateType.anIntArray1045 = IntArray(i)
                 LinkedListIterator.anIntArray2117 = IntArray(i)
                 anInt825++
-                AbstractModel.anIntArray1127 = IntArray(i)
+                CharCodeMap.anIntArray1127 = IntArray(i)
                 FileIoUtil.anIntArray4097 = IntArray(i)
             }
         }

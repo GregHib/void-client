@@ -61,7 +61,7 @@ object SpriteBlitter {
                 if (i_15_ < 0) i_15_ = 0
                 val i_16_ = if (!PlayerSequenceSelector.aBoolean1211) 31 else 33
                 var i_17_ = 13 + i_11_ + -i_16_
-                if (i_17_ + i_14_ > HardCacheEntryReference.anInt10432) i_17_ = HardCacheEntryReference.anInt10432 - i_14_
+                if (i_17_ + i_14_ > GameDisplayManager.anInt10432) i_17_ = GameDisplayManager.anInt10432 - i_14_
                 MinimapPolygonDrawer.anInt5252 = i_15_
                 if (i_17_ < 0) i_17_ = 0
                 ManagedGlResource.aClass348_Sub42_Sub13_3152 = class348_sub42_sub13

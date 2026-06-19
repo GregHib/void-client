@@ -63,7 +63,7 @@ class MapRegionLoaderThread : Runnable {
         if (aLinkedQueueNode_4201 == null) {
             try {
                 val i_15_ = (if (NpcAnimationResolver.aNamedIdRecord_165 == OggCacheStream.aNamedIdRecord_5271) 80 else 7000 - -(GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143))
-                aLinkedQueueNode_4201 = (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2237(URL("http://" + (GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + HardCacheEntryReference.aSceneProjector_10434!!.anInt2987), 8362))
+                aLinkedQueueNode_4201 = (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2237(URL("http://" + (GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + Client.aSceneProjector_10434!!.anInt2987), 8362))
             } catch (malformedurlexception: MalformedURLException) {
                 return true
             }
@@ -164,7 +164,7 @@ class MapRegionLoaderThread : Runnable {
                     method705(class348_sub36)
                 }
                 Tooltip.anInt4458 = widgetComponent.anInt695
-                ParticleEmitterFactory.anInt3176 = i
+                ParticleEmitterFactoryStatics.anInt3176 = i
                 WidgetTextConfig.anInt500 = i_13_
                 HeightMapNoise.anInt3829 = widgetComponent.anInt812
                 RenderNodeStatics.aBoolean9722 = true

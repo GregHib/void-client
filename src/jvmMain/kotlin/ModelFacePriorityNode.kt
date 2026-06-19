@@ -1,5 +1,3 @@
-import InputTracker.Companion.method3591
-
 /* Class129 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -37,33 +35,22 @@ class ModelFacePriorityNode internal constructor(private val anInt1886: Int, var
     }
 
     companion object {
-        @JvmField
         var anInt1873: Int = 0
-        @JvmField
-        var aJs5Archive_1878: Js5Archive? = null
-        @JvmField
-        var anInt1879: Int = 0
-        @JvmField
-        var anIntArray1885: IntArray? = IntArray(32)
-        var aByteArrayArray1887: Array<ByteArray?>? = null
-        @JvmField
         var anInt1893: Int = 0
+        var anInt4535: Int = 0
+        var aLruByteCache_4636: LruByteCache? = LruByteCache(64)
+        var aJs5Archive_5964: Js5Archive? = null
 
-        @JvmStatic
-        fun method1126(i: Int) {
-            if (i == 32) {
-                aJs5Archive_1878 = null
-                aByteArrayArray1887 = null
-                anIntArray1885 = null
-            }
-        }
-
-        init {
-            var i = 2
-            for (i_7_ in 0..31) {
-                anIntArray1885!![i_7_] = -1 + i
-                i += i
-            }
+        fun method3591(i: Int, i_0_: Int): SpotAnimDefinition {
+            anInt4535++
+            var spotAnimDefinition = aLruByteCache_4636!!.method583(i.toLong(), i_0_ + -128) as SpotAnimDefinition?
+            if (spotAnimDefinition != null) return spotAnimDefinition
+            val `is` = aJs5Archive_5964!!.method410(-1860, i_0_, i)
+            spotAnimDefinition = SpotAnimDefinition()
+            if (`is` != null) spotAnimDefinition.method1370(24, ByteBuffer(`is`))
+            spotAnimDefinition.method1371(4)
+            aLruByteCache_4636!!.method582(spotAnimDefinition, i.toLong(), (-103).toByte())
+            return spotAnimDefinition
         }
     }
 }

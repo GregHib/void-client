@@ -143,7 +143,7 @@ object NativeLibraryUnloader {
             SkeletalAnimFrameLoader.anInt481 = -1
             HslAdjustTextureNode.anInt9399 = -1
         }
-        if (ParticleEmitterFactory.aBoolean3174 && RegionSceneLoader.aNodeDeque_3705 != null) {
+        if (ParticleEmitterFactoryStatics.aBoolean3174 && RegionSceneLoader.aNodeDeque_3705 != null) {
             var class348_sub12 = RegionSceneLoader.aNodeDeque_3705!!.method1995(4) as BoundingBoxNode?
             while (class348_sub12 != null) {
                 val class42 = (MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub12.aClass348_Sub21_6751!!.anInt6847, 125.toByte()))

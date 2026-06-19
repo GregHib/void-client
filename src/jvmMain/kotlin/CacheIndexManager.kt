@@ -94,7 +94,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
         fun method2354(namedIdRecord: NamedIdRecord?, i: Int): Boolean {
             anInt3954++
             if (i != -1) method2355(-93, 115.toByte(), true, null, -92, -67, 6)
-            return FixedFunctionWaterPass.aNamedIdRecord_7361 == namedIdRecord || SpriteArchiveLoader.aNamedIdRecord_382 == namedIdRecord || GroundItemRenderState.aNamedIdRecord_1657 == namedIdRecord || namedIdRecord == WidgetRedrawRegion.aNamedIdRecord_4246
+            return FixedFunctionWaterPass.aNamedIdRecord_7361 == namedIdRecord || SpriteArchiveLoader.aNamedIdRecord_382 == namedIdRecord || GroundItemRenderState.aNamedIdRecord_1657 == namedIdRecord || namedIdRecord == LoadingBarRenderer.aNamedIdRecord_4246
         }
 
         @JvmStatic
@@ -106,7 +106,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
             NpcActorEntity.anInt10074 = i_1_
             WaterDetailOptionState.anInt5994 = i_3_
             SpriteDefinition.anInt7068 = 1
-            SceneLinkedListNode.anInt3971 = i_2_
+            CacheIndexManager.anInt3971 = i_2_
             ModelDefinition.aJs5Archive_1848 = js5Archive
         }
 
@@ -128,5 +128,6 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
             anInt3945++
             return method1087(12644, i_6_, i_5_) || method2056(i_5_, 107, i_6_)
         }
+        var anInt3971: Int = 0
     }
 }

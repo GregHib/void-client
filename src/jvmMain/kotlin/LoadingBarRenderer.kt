@@ -164,9 +164,9 @@ class LoadingBarRenderer : CursorController {
                 try {
                     val i_5_ = NpcConfig.aResourceLoaderThread_897!!.method2320(103.toByte())
                     val string = NpcConfig.aResourceLoaderThread_897!!.method2318(-9324)
-                    if (WidgetRedrawRegion.anImage4249 == null) WidgetRedrawRegion.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432))
-                    val graphics_6_ = WidgetRedrawRegion.anImage4249!!.getGraphics()
-                    graphics_6_.clearRect(0, 0, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
+                    if (LoadingBarRenderer.anImage4249 == null) LoadingBarRenderer.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432))
+                    val graphics_6_ = LoadingBarRenderer.anImage4249!!.getGraphics()
+                    graphics_6_.clearRect(0, 0, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
                     val i_7_ = anImage5030!!.getWidth(null)
                     val i_8_ = anImage5026!!.getWidth(null)
                     val i_9_ = anImage5056!!.getWidth(null)
@@ -238,7 +238,7 @@ class LoadingBarRenderer : CursorController {
                     graphics_6_.setFont(aFont5053)
                     graphics_6_.setColor(aColor5034)
                     graphics_6_.drawString(string, i_26_ + (anInt5023 + -aFontMetrics5024!!.stringWidth(string)) / 2, anInt5046 + (4 + anInt5036 / 2 + i_27_))
-                    graphics.drawImage(WidgetRedrawRegion.anImage4249, 0, 0, null)
+                    graphics.drawImage(LoadingBarRenderer.anImage4249, 0, 0, null)
                 } catch (exception: Exception) {
                     aBoolean5022 = true
                 }
@@ -248,7 +248,7 @@ class LoadingBarRenderer : CursorController {
 
     private fun method2218(i: Int, i_40_: Int): Int {
         anInt5028++
-        if (aBoolean5045) return (-i + HardCacheEntryReference.anInt10432) / 2
+        if (aBoolean5045) return (-i + GameDisplayManager.anInt10432) / 2
         if (i_40_ != -6277) anImage5026 = null
         return 0
     }
@@ -292,6 +292,25 @@ class LoadingBarRenderer : CursorController {
             anInt5027++
             if (i_4_ != 0) aMapTileShapeArray5060 = null
             return (i_3_ and 0x21) != 0
+        }
+
+        var aNamedIdRecord_4246: NamedIdRecord? = NamedIdRecord("WTI", 5)
+        var aTrigLookupTables_4247: TrigLookupTables? = TrigLookupTables()
+        var anImage4249: Image? = null
+        var anIntArray4250: IntArray? = IntArray(64)
+        var anIntArrayArray4253: Array<IntArray?>? = null
+        var aLruByteCache_4254: LruByteCache? = LruByteCache(32)
+
+        @JvmStatic
+        fun method2682(i: Int) {
+            aNamedIdRecord_4246 = null
+            anIntArrayArray4253 = null
+            if (i > 5) {
+                aTrigLookupTables_4247 = null
+                anIntArray4250 = null
+                aLruByteCache_4254 = null
+                anImage4249 = null
+            }
         }
     }
 }

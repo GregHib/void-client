@@ -111,25 +111,25 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 = (Array<Array<Array<SceneCollisionEntry?>?>?>(i_1_) { Array<Array<SceneCollisionEntry?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(RegionSceneShifter.anInt7054) } })
             TerrainTileShape.aTerrainTileArray8801 = arrayOfNulls<TerrainTile>(i_1_)
             if (bool) {
-                WidgetRedrawRegion.anIntArrayArray4253 = Array<IntArray?>(SpotAnimEntity.anInt6451) { IntArray(RegionSceneShifter.anInt7054) }
+                LoadingBarRenderer.anIntArrayArray4253 = Array<IntArray?>(SpotAnimEntity.anInt6451) { IntArray(RegionSceneShifter.anInt7054) }
                 HashTileShape.aByteArrayArray8816 = Array<ByteArray?>(SpotAnimEntity.anInt6451) { ByteArray(RegionSceneShifter.anInt7054) }
                 BooleanGraphicsOptionState.aShortArrayArray5847 = Array<ShortArray?>(SpotAnimEntity.anInt6451) { ShortArray(RegionSceneShifter.anInt7054) }
                 ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = (Array<Array<Array<SceneCollisionEntry?>?>?>(1) { Array<Array<SceneCollisionEntry?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(RegionSceneShifter.anInt7054) } })
                 SoundCacheState.aTerrainTileArray4142 = arrayOfNulls<TerrainTile>(1)
             } else {
-                WidgetRedrawRegion.anIntArrayArray4253 = null
+                LoadingBarRenderer.anIntArrayArray4253 = null
                 HashTileShape.aByteArrayArray8816 = null
                 BooleanGraphicsOptionState.aShortArrayArray5847 = null
                 ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = null
                 SoundCacheState.aTerrainTileArray4142 = null
             }
             if (bool_5_) {
-                HardCacheEntryReference.aLongArrayArrayArray10431 = Array<Array<LongArray?>?>(i_1_) { Array<LongArray?>(i_2_) { LongArray(i_3_) } }
+                aLongArrayArrayArray10431 = Array<Array<LongArray?>?>(i_1_) { Array<LongArray?>(i_2_) { LongArray(i_3_) } }
                 WaterDetailOptionState.aSoundEnvelopeArray5993 = arrayOfNulls<SoundEnvelope>(65535)
                 RenderNodeStatics.aBooleanArray9718 = BooleanArray(65535)
                 CalendarUtil.anInt4135 = 0
             } else {
-                HardCacheEntryReference.aLongArrayArrayArray10431 = null
+                aLongArrayArrayArray10431 = null
                 WaterDetailOptionState.aSoundEnvelopeArray5993 = null
                 RenderNodeStatics.aBooleanArray9718 = null
                 CalendarUtil.anInt4135 = 0
@@ -179,5 +179,6 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             WidgetDefinition.anIntArray256 = IntArray(ActiveMapRegion.anInt5652 - 1)
             ParticleProcessor.anIntArray4271 = IntArray(ActiveMapRegion.anInt5652 - 1)
         }
+        var aLongArrayArrayArray10431: Array<Array<LongArray?>?>? = null
     }
 }

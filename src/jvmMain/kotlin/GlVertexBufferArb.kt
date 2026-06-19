@@ -10,7 +10,6 @@ class GlVertexBufferArb internal constructor(glRenderDevice: GlRenderDevice, boo
     }
 
     override fun method18(i: Int): Boolean {
-        if (i != 6331) anInt8492 = -14
         anInt8489++
         return super.method2123((this.aGlRenderDevice_4759.aMapBuffer9915), i xor 0x18bb)
     }
@@ -67,8 +66,6 @@ class GlVertexBufferArb internal constructor(glRenderDevice: GlRenderDevice, boo
         @JvmField
         var anInt8490: Int = 0
         @JvmField
-        var anInt8492: Int = 0
-        @JvmField
         var anInt8493: Int = 0
         @JvmField
         var anInt8494: Int = 0
@@ -117,7 +114,6 @@ class GlVertexBufferArb internal constructor(glRenderDevice: GlRenderDevice, boo
         fun method2129(i: Byte) {
             anInt8494++
             CameraRotationStub.aRenderer326!!.method3638(RenderNodeStatics.aAbstractCameraTransform_9720)
-            if (i < 9) anInt8492 = -40
             CameraRotationStub.aRenderer326!!.DA(MediaStreamClient.anInt3202, SimpleToggleOptionState.anInt5886, Gl3dTexture.anInt8630, ProjectileConfigUtil.anInt394)
         }
 

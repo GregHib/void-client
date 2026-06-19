@@ -387,7 +387,7 @@ class ItemDefinition {
             val class101_49_ = var_renderer_38_.method3705()
             class101_49_.method902(-this.anInt2810 shl 3)
             class101_49_.method896(this.anInt2781 shl 3)
-            class101_49_.method891(this.anInt2779 shl 2, ((i_48_ * (TrigLookupTables.anIntArray1207!![this.anInt2787 shl 3]) shr 14) - class64.fa() / 2 + (this.anInt2826 shl 2)), ((i_48_ * (TrigLookupTables.anIntArray1204!![this.anInt2787 shl 3]) shr 14) - -(this.anInt2826 shl 2)))
+            class101_49_.method891(this.anInt2779 shl 2, ((i_48_ * (SpotAnimVector.anIntArray1207!![this.anInt2787 shl 3]) shr 14) - class64.fa() / 2 + (this.anInt2826 shl 2)), ((i_48_ * (SpotAnimVector.anIntArray1204!![this.anInt2787 shl 3]) shr 14) - -(this.anInt2826 shl 2)))
             class101_49_.method900(this.anInt2787 shl 3)
             val i_50_ = var_renderer_38_.i()
             val i_51_ = var_renderer_38_.XA()

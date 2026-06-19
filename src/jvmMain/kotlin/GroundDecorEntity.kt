@@ -64,7 +64,7 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
         while_104_@ while ((i_20_ <= this.aShort8751)) {
             var i_21_ = this.aShort8750.toInt()
             while (this.aShort8747 >= i_21_) {
-                val l = (HardCacheEntryReference.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_20_]!![i_21_])
+                val l = (RenderbufferObject.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_20_]!![i_21_])
                 var l_22_ = 0L
                 while_103_@ while (l_22_ <= 48L) {
                     val i_23_ = (l ushr l_22_.toInt() and 0xffffL).toInt()
@@ -120,7 +120,7 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
             }
             var i_33_ = 0
             while_106_@ while ( /**/i_19_ > i_33_) {
-                var l = (HardCacheEntryReference.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_32_.toInt()]!![i_31_])
+                var l = (RenderbufferObject.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_32_.toInt()]!![i_31_])
                 while (l != 0L) {
                     val class211 = (WaterDetailOptionState.aSoundEnvelopeArray5993!![(-1L + (l and 0xffffL)).toInt()])
                     l = l ushr 16
@@ -129,7 +129,7 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
                         continue@while_106_
                     }
                 }
-                l = (HardCacheEntryReference.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_29_]!![i_30_.toInt()])
+                l = (RenderbufferObject.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_29_]!![i_30_.toInt()])
                 while (l != 0L) {
                     val class211 = (WaterDetailOptionState.aSoundEnvelopeArray5993!![(-1L + (0xffffL and l)).toInt()])
                     l = l ushr 16

@@ -46,7 +46,7 @@ class ModelLightingConfig {
 
     internal constructor(class348_sub49: ByteBuffer) {
         val i = class348_sub49.readUnsignedByte(255)
-        if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) != 1 || LruByteCache.aRenderer1098!!.method3704() <= 0) {
+        if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) != 1 || TerrainChunkBuilder.aRenderer1098!!.method3704() <= 0) {
             if ((0x1 and i) != 0) class348_sub49.readInt((-126).toByte())
             if ((0x2 and i) != 0) class348_sub49.readUnsignedShort(842397944)
             if ((i and 0x4) != 0) class348_sub49.readUnsignedShort(842397944)
@@ -197,7 +197,7 @@ class ModelLightingConfig {
                     }
                     abstractModelRenderer.method974((class348_sub21.anInt6853 + -(abstractModelRenderer.method966() shr 1)), (class348_sub21.anInt6855 + -(abstractModelRenderer.method980() shr 1)))
                 }
-                if (structConfig.aString597 != null && systemFontGlyphs != null) WidgetRedrawRegion.method2683(systemFontGlyphs, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, structConfig)
+                if (structConfig.aString597 != null && systemFontGlyphs != null) method2683(systemFontGlyphs, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, structConfig)
                 if (structConfig.anInt578 != -1 || structConfig.aString597 != null) {
                     val class348_sub12 = BoundingBoxNode(class348_sub21)
                     class348_sub12.anInt6746 = i_13_
@@ -223,5 +223,32 @@ class ModelLightingConfig {
             ByteArrayPool.anIntArray2552 = null
             if (i != 25165) aRectangleArray2554 = null
         }
+
+        var anInt4242: Int = 0
+        fun method2683(systemFontGlyphs: SystemFontGlyphs?, class348_sub21: CameraSplineNode?, i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, structConfig: StructConfig?) {
+            var i_2_ = i_2_
+            try {
+                if (i_0_ == 64) {
+                    anInt4242++
+                    val i_4_ = -5 + i - i_3_ / 2
+                    val i_5_ = i_2_ - -2
+                    if (structConfig!!.anInt602 != 0) var_renderer!!.method3675(i_3_ + 10, (-125).toByte(), i_4_, i_5_, (i_2_ - -(systemFontGlyphs!!.method2565() * i_1_) - (i_5_ - 1)), structConfig.anInt602)
+                    if (structConfig.anInt604 != 0) var_renderer!!.method3668(i_3_ + 10, i_5_, structConfig.anInt604, i_4_, (i_1_ * systemFontGlyphs!!.method2565() + i_2_ - (i_5_ + -1)), 92)
+                    var i_6_ = structConfig.anInt580
+                    if (class348_sub21!!.aBoolean6848 && structConfig.anInt567 != -1) i_6_ = structConfig.anInt567
+                    var i_7_ = 0
+                    while (i_1_ > i_7_) {
+                        var string = NativeRenderer.aStringArray8019!![i_7_]
+                        if (-1 + i_1_ > i_7_) string = string!!.substring(0, -4 + string.length)
+                        systemFontGlyphs!!.method2563(var_renderer!!, string!!, i, i_2_, i_6_, true)
+                        i_2_ += systemFontGlyphs.method2565()
+                        i_7_++
+                    }
+                }
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("eca.A(" + (if (systemFontGlyphs != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + (if (structConfig != null) "{...}" else "null") + ')'))
+            }
+        }
+
     }
 }

@@ -1,4 +1,4 @@
-import CompositeRgbNoiseTexture.Companion.method573
+import LruByteCache.Companion.method573
 import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt

@@ -1,7 +1,6 @@
 import LinkedListIterator.Companion.method1242
-import SocketFactory.Companion.method2049
 import NormalMapTextureNode.Companion.method3141
-import HardCacheEntryReference.Companion.method3201
+import SocketFactory.Companion.method2049
 import java.io.IOException
 
 /* Class292 - Decompiled by JODE
@@ -52,7 +51,7 @@ class MapArchiveSource internal constructor(private val aJs5Archive_4804: Js5Arc
             val i_1_ = 11 % ((12 - i) / 53)
             anInt4802++
             try {
-                return method3201(true)
+                return Client.method3201(true)
             } catch (ioexception: IOException) {
                 method2049(106)
                 return true
@@ -70,8 +69,21 @@ class MapArchiveSource internal constructor(private val aJs5Archive_4804: Js5Arc
             }
         }
 
+        var anInt2355: Int = 0
+        fun method1365(i: Int, i_11_: Byte, class348_sub49: ByteBuffer) {
+            if (BufferedFileReader.aBufferedRandomAccessFile_4538 != null) {
+                try {
+                    BufferedFileReader.aBufferedRandomAccessFile_4538!!.method789(0L, 59.toByte())
+                    BufferedFileReader.aBufferedRandomAccessFile_4538!!.method783(i, 24, true, (class348_sub49.aByteArray7154))
+                } catch (exception: Exception) {
+                    /* empty */
+                }
+            }
+            anInt2355++
+        }
         init {
             aIntRange_4798 = IntRange(29, 7)
         }
+
     }
 }

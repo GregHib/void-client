@@ -128,7 +128,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         container.setLayout(null)
         ParticleSystemRenderer.aCanvas3869 = DelegatingRenderCanvas(this)
         container.add(ParticleSystemRenderer.aCanvas3869)
-        ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
+        ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
         ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
         if (container === RsaVarbitHandler.aFrame4904) {
             val insets = (RsaVarbitHandler.aFrame4904 as Container).getInsets()
@@ -172,7 +172,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         if (ParticleAmountConfig.anInt2127++ > 50) {
             ParticleAmountConfig.anInt2127 -= 50
             SpriteRenderable.aBoolean4726 = true
-            ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
+            ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
             ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
             if (RsaVarbitHandler.aFrame4904 != null && SkeletalAnimFrameLoader.aFrame476 == null) {
                 val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
@@ -362,8 +362,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         try {
             if (EdgeDetectTextureNode.anGameApplet_Frame_9169 == null) {
                 ModelResourceBundle.anInt7129 = 0
-                HardCacheEntryReference.anInt10432 = i_16_
-                NpcReference.anInt6857 = HardCacheEntryReference.anInt10432
+                GameDisplayManager.anInt10432 = i_16_
+                NpcReference.anInt6857 = GameDisplayManager.anInt10432
                 LocTypeDefinition.anInt4017 = i
                 SocketFactory.anInt3473 = LocTypeDefinition.anInt4017
                 TimingCounters.anInt4167 = 0
@@ -391,8 +391,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             if (i_23_ != 23499) return
             LocTypeDefinition.anInt4017 = i_20_
             SocketFactory.anInt3473 = LocTypeDefinition.anInt4017
-            HardCacheEntryReference.anInt10432 = i_24_
-            NpcReference.anInt6857 = HardCacheEntryReference.anInt10432
+            GameDisplayManager.anInt10432 = i_24_
+            NpcReference.anInt6857 = GameDisplayManager.anInt10432
             EdgeDetectTextureNode.anGameApplet_Frame_9169 = this
             TimingCounters.anInt4167 = 0
             ModelResourceBundle.anInt7129 = 0

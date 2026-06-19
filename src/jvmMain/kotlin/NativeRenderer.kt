@@ -776,8 +776,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3926(67.toByte(), false)
         method3933(-70)
         method3926(83.toByte(), true)
-        method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
-        method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)
+        method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
     }
 
     private fun method3845(i: Byte) {
@@ -850,8 +850,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3926(45.toByte(), false)
             method3907(true)
             method3926(48.toByte(), true)
-            method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
-            method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+            method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)
+            method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
         }
     }
 
@@ -894,7 +894,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3905(127.toByte())
             method3933(-127)
             method3879(-8629)
-            method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+            method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("wga.A(" + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_85_ + ',' + i_86_ + ')'))
         }
@@ -1227,8 +1227,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3862(0, aModelBatchBase_8190)
         method3899(256, 0, AsyncResourceRequest.aCameraRotationStub_9661, true)
         method3926(41.toByte(), true)
-        method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
-        method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)
+        method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
     }
 
     override fun i(): Int {
@@ -2054,8 +2054,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             f_248_ = f_244_
         }
         method3926(88.toByte(), true)
-        method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
-        method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)
+        method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
     }
 
     override fun pa() {
@@ -2263,8 +2263,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3926(98.toByte(), false)
         method3860(GlBloomEffect.aCameraRotationStub_8832, 4, 8)
         method3926(104.toByte(), true)
-        method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
-        method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)
+        method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
     }
 
     fun method3934(i: Int): FloatCameraTransform {
@@ -2952,12 +2952,13 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt8018++
         }
 
+        var aHuffmanCodec_1131: HuffmanCodec? = null
         @JvmStatic
         fun method3896(huffmanCodec: HuffmanCodec?, i: Byte) {
             do {
                 try {
                     anInt8028++
-                    AbstractModel.aHuffmanCodec_1131 = huffmanCodec
+                    NativeRenderer.aHuffmanCodec_1131 = huffmanCodec
                     break
                 } catch (runtimeexception: RuntimeException) {
                     throw TextureLoadException.method2929(runtimeexception, ("wga.DI(" + (if (huffmanCodec != null) "{...}" else "null") + ',' + i + ')'))

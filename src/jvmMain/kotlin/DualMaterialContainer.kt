@@ -23,7 +23,7 @@ class DualMaterialContainer internal constructor(js5Archive: Js5Archive?, js5Arc
         if (class223 == ByteBufferStatics.aProjectileFactory_7175) return SolidFillComponent(aJs5Archive_1637!!, aJs5Archive_1641!!, configTypeProvider as WorldMapTextLabel)
         if (class223 == SkyboxGradient.aProjectileFactory_3934) return SpriteComponent(aJs5Archive_1637, aJs5Archive_1641!!, configTypeProvider as WorldMapAreaLabel)
         if (class223 == MapSceneDefLoader.aProjectileFactory_2489) return ScrollbarComponent(aJs5Archive_1637!!, aJs5Archive_1641!!, configTypeProvider as WorldMapIconLabel)
-        if (class223 == SpotAnimVector.aProjectileFactory_2307) return TooltipComponentRenderer(aJs5Archive_1637, aJs5Archive_1641, configTypeProvider as HeapInfoRecord)
+        if (class223 == TypedRecordTable.aProjectileFactory_2307) return TooltipComponentRenderer(aJs5Archive_1637, aJs5Archive_1641, configTypeProvider as HeapInfoRecord)
         if (bool != true) anIntArray1636 = null
         if (OrientationRotator.aProjectileFactory_2045 == class223) return SplashImageLoadable(aJs5Archive_1637, configTypeProvider as ConfigValueProvider)
         if (LocTypeDefLoader.aProjectileFactory_2507 == class223) return ProportionalScrollbarComponent(aJs5Archive_1637!!, aJs5Archive_1641!!, configTypeProvider as WorldMapPolygonIconLabel)

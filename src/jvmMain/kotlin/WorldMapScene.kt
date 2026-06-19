@@ -418,7 +418,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                 is_99_ = (MenuActionNode.anIntArrayArray6780!![i_76_.toInt()]!!)
                                 i_98_ = (if (class22 != null) DataHolder.anIntArray3659!![i_76_.toInt()] else 0)
                             } else {
-                                i_98_ = (if (class22 == null) 0 else ParticleEmitterFactory.anIntArray3173!![i_76_.toInt()])
+                                i_98_ = (if (class22 == null) 0 else ParticleEmitterFactoryStatics.anIntArray3173!![i_76_.toInt()])
                                 i_100_ = (if (class277 == null) 0 else CameraOrModelTransform.anIntArray4152!![i_76_.toInt()])
                                 is_97_ = ViewportTransform.anIntArrayArray3677!![i_76_.toInt()]!!
                                 is_99_ = (FogOptionState.anIntArrayArray6054!![i_76_.toInt()]!!)

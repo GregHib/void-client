@@ -14,11 +14,11 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
         anInt9675++
         if (this.aNpcModelTransformArray9673 != null) return true
         if (aByteArrayArray9671 == null) {
-            withLock(RectangleRegion.aJs5Archive_1940!!) {
-                if (!RectangleRegion.aJs5Archive_1940!!.method408((-116).toByte(), anInt9669)) return false
-                val `is` = RectangleRegion.aJs5Archive_1940!!.method396(anInt9669, 0)
+            withLock(aJs5Archive_1940!!) {
+                if (!aJs5Archive_1940!!.method408((-116).toByte(), anInt9669)) return false
+                val `is` = aJs5Archive_1940!!.method396(anInt9669, 0)
                 aByteArrayArray9671 = arrayOfNulls<ByteArray>(`is`!!.size)
-                for (i_1_ in `is`.indices) aByteArrayArray9671!![i_1_] = RectangleRegion.aJs5Archive_1940!!.method410(-1860, anInt9669, `is`[i_1_])!!
+                for (i_1_ in `is`.indices) aByteArrayArray9671!![i_1_] = aJs5Archive_1940!!.method410(-1860, anInt9669, `is`[i_1_])!!
             }
         }
         var bool = true
@@ -27,17 +27,17 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
             val class348_sub49 = ByteBuffer(`is`)
             class348_sub49.anInt7197 = 1
             val i_3_ = class348_sub49.readUnsignedShort(842397944)
-            withLock(GlElementArrayBuffer.aJs5Archive_4843!!) {
-                bool = bool and GlElementArrayBuffer.aJs5Archive_4843!!.method421(false, i_3_)
+            withLock(aJs5Archive_4843!!) {
+                bool = bool and aJs5Archive_4843!!.method421(false, i_3_)
             }
         }
         if (!bool) return false
         val nodeDeque = NodeDeque()
-        val `is`: IntArray?
-        withLock(RectangleRegion.aJs5Archive_1940!!) {
-            val i_4_ = RectangleRegion.aJs5Archive_1940!!.method407(0, anInt9669)
+        var `is`: IntArray? = null
+        withLock(aJs5Archive_1940!!) {
+            val i_4_ = aJs5Archive_1940!!.method407(0, anInt9669)
             this.aNpcModelTransformArray9673 = arrayOfNulls<NpcModelTransform>(i_4_)
-            `is` = RectangleRegion.aJs5Archive_1940!!.method396(anInt9669, 0)
+            `is` = aJs5Archive_1940!!.method396(anInt9669, 0)
         }
         for (i_5_ in `is`!!.indices) {
             val is_6_ = aByteArrayArray9671!![i_5_]
@@ -54,8 +54,8 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
                 class348_sub33_8_ = nodeDeque.method1990(78.toByte()) as AnimationFrameDefinition?
             }
             if (class348_sub33 == null) {
-                withLock(GlElementArrayBuffer.aJs5Archive_4843!!) {
-                    class348_sub33 = AnimationFrameDefinition(i_7_, GlElementArrayBuffer.aJs5Archive_4843!!.method415(73.toByte(), i_7_))
+                withLock(aJs5Archive_4843!!) {
+                    class348_sub33 = AnimationFrameDefinition(i_7_, aJs5Archive_4843!!.method415(73.toByte(), i_7_))
                 }
                 nodeDeque.method1999(class348_sub33!!, -20180)
             }
@@ -81,5 +81,7 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
         var anInt9675: Int = 0
         var anInt9670: Int = 0
         var anInt9677: Int = 0
+        var aJs5Archive_1940: Js5Archive? = null
+        var aJs5Archive_4843: Js5Archive? = null
     }
 }

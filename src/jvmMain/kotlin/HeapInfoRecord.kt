@@ -21,7 +21,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
     override fun method51(i: Byte): ProjectileFactory? {
         anInt4941++
         if (i <= 116) aCircleRasterizer_4938 = null
-        return SpotAnimVector.aProjectileFactory_2307
+        return TypedRecordTable.aProjectileFactory_2307
     }
 
     init {

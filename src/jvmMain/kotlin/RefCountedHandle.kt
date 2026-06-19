@@ -135,8 +135,8 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
 
         @JvmStatic
         fun method1323(i: Int, i_44_: Int) {
-            withLock(WidgetRedrawRegion.aLruByteCache_4254!!) {
-                WidgetRedrawRegion.aLruByteCache_4254!!.method578(2, i)
+            withLock(LoadingBarRenderer.aLruByteCache_4254!!) {
+                LoadingBarRenderer.aLruByteCache_4254!!.method578(2, i)
             }
             if (i_44_ == 26603) anInt2271++
         }

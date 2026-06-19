@@ -149,7 +149,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                             i_41_ = i_39_
                                         }
                                     }
-                                    val class243 = (HardCacheEntryReference.aSceneObjectSpawner_10436!!.aDoublyLinkedNodeList_1282)
+                                    val class243 = (SceneProjector.aSceneObjectSpawner_10436!!.aDoublyLinkedNodeList_1282)
                                     var class318_sub4 = (class243.method1872(8) as SceneEntityModel?)
                                     while (class318_sub4 != null) {
                                         val class318_sub3s = (class318_sub4.aClass318_Sub3Array6414)!!
@@ -209,7 +209,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                         FireParticleStream.anInt95 = i_21_
                                         CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
                                     }
-                                    method1274(HardCacheEntryReference.aSceneObjectSpawner_10436)
+                                    method1274(SceneProjector.aSceneObjectSpawner_10436)
                                     if (i_51_ > 0) {
                                         CameraRotationStub.aRenderer326!!.KA(0, i_49_, (WhirlpoolHash.anInt8854), i_51_ + i_49_)
                                         CameraRotationStub.aRenderer326!!.ya()
@@ -280,8 +280,8 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                 CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
                             }
                             GlCubeMapTexture.aDouble8621 = 0.0
-                            HardCacheEntryReference.aSceneObjectSpawner_10436!!.method775(69.toByte())
-                            method1274(HardCacheEntryReference.aSceneObjectSpawner_10436)
+                            SceneProjector.aSceneObjectSpawner_10436!!.method775(69.toByte())
+                            method1274(SceneProjector.aSceneObjectSpawner_10436)
                             method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
                             ParticleEffectCache.method2046()
                             PcmStreamBuffer.aBoolean8870 = false
@@ -298,16 +298,16 @@ class SceneProjector internal constructor(string: String?, i: Int) {
                                 CameraRotationStub.aRenderer326!!.ya()
                             }
                             TextureHandle.anInt2590 = i_20_
-                            ModelFacePriorityNode.anInt1879 = i_21_
+                            anInt1879 = i_21_
                             AnimationFrameState.anInt1537 = (-MapRegionLoaderThread.anInt4211 + -ShaderObject.anInt4100 + (i_16_ + WhirlpoolHash.anInt2747))
                             SceneTextLabel.anInt6417 = (-PerlinNoiseTextureNode.anInt9157 + (i_17_ + WhirlpoolHash.anInt10444 + -ModelVertexColorBuffer.anInt6568))
-                            CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
+                            CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
                         } else if (WhirlpoolHash.anInt7207 == 1) {
                             TextureHandle.anInt2590 = i_20_
                             AnimationFrameState.anInt1537 = i_16_ + -ShaderObject.anInt4100
                             SceneTextLabel.anInt6417 = -ModelVertexColorBuffer.anInt6568 + i_17_
-                            ModelFacePriorityNode.anInt1879 = i_21_
-                            CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, ModelFacePriorityNode.anInt1879)
+                            anInt1879 = i_21_
+                            CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
                             CameraRotationStub.aRenderer326!!.KA(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, (MapRegionLoaderThread.anInt4211 - -WhirlpoolHash.anInt5283), (WhirlpoolHash.anInt1651 + PerlinNoiseTextureNode.anInt9157))
                         }
                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, if (WhirlpoolHash.anInt7207 != 2) 2 else 0, WhirlpoolHash.anInt7207 == 1)
@@ -554,7 +554,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
             val l = (i_76_.toLong() * 76724863L xor (i.toLong() * 32147369L xor (i_74_.toLong() * 986053L xor (i_75_.toLong() * 67481L xor i_77_.toLong() * 97549L xor i_79_.toLong() * 475427L))))
             var circleRasterizer = PlayerAppearanceUpdateDecoder.aLruByteCache_4543!!.method583(l, 90) as CircleRasterizer?
             if (circleRasterizer != null) return circleRasterizer
-            circleRasterizer = LruByteCache.aRenderer1098!!.method3697(i_75_, i_77_, i_79_, i_74_, i, i_76_)
+            circleRasterizer = TerrainChunkBuilder.aRenderer1098!!.method3697(i_75_, i_77_, i_79_, i_74_, i, i_76_)
             if (i_78_ != -1) method1636(58, 63, -99, -89, -7, 18, 71)
             PlayerAppearanceUpdateDecoder.aLruByteCache_4543!!.method582(circleRasterizer, l, (-106).toByte())
             return circleRasterizer
@@ -565,5 +565,7 @@ class SceneProjector internal constructor(string: String?, i: Int) {
             if (i_80_ != 32768) return true
             return (0x8000 and i_81_) != 0
         }
+        var anInt1879: Int = 0
+        var aSceneObjectSpawner_10436: SceneObjectSpawner? = SceneObjectSpawner(true)
     }
 }

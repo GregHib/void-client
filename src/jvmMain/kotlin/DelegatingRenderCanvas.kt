@@ -165,9 +165,9 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         bool = false
                     }
                 }
-                if (LocalizedTextTriple.anIntArray3759!![i_19_] != -1 && ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
-                    ModelFacePriorityNode.aByteArrayArray1887!![i_19_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method410(-1860, LocalizedTextTriple.anIntArray3759!![i_19_], 0)
-                    if (ModelFacePriorityNode.aByteArrayArray1887!![i_19_] == null) {
+                if (LocalizedTextTriple.anIntArray3759!![i_19_] != -1 && RegionMapDecoder.aByteArrayArray1887!![i_19_] == null) {
+                    RegionMapDecoder.aByteArrayArray1887!![i_19_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method410(-1860, LocalizedTextTriple.anIntArray3759!![i_19_], 0)
+                    if (RegionMapDecoder.aByteArrayArray1887!![i_19_] == null) {
                         LocDefinitionCache.anInt3441++
                         bool = false
                     }
@@ -223,7 +223,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                 }
                 if (bool) {
-                    if (AnimationFrameTable.anInt489 != 0) Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactory.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
+                    if (AnimationFrameTable.anInt489 != 0) Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
                     method3570(false)
                     InterfaceBounds.method2938(102.toByte())
                     method1772(i xor 0x41)
@@ -231,7 +231,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (FacingDirectionNode.aRenderer6654!!.method3639() && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2) {
                         var i_26_ = 0
                         while ((i_26_ < DragDropController.aByteArrayArray4281!!.size)) {
-                            if ((VorbisOggDecoder.aByteArrayArray8996!![i_26_] != null) || ModelFacePriorityNode.aByteArrayArray1887!![i_26_] != null) {
+                            if ((VorbisOggDecoder.aByteArrayArray8996!![i_26_] != null) || RegionMapDecoder.aByteArrayArray1887!![i_26_] != null) {
                                 bool_25_ = true
                                 break
                             }
@@ -272,10 +272,10 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         DoublyLinkedNodeList.method1879(true)
                         VarpStore.aClass237_Sub1_5067 = WorldMapSceneSoftware(1, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, true)
                         if (WidgetRedrawTracker.anInt3931 == 0) {
-                            TerrainTileShape.method2727((-44).toByte(), (VarpStore.aClass237_Sub1_5067), (ModelFacePriorityNode.aByteArrayArray1887))
+                            TerrainTileShape.method2727((-44).toByte(), (VarpStore.aClass237_Sub1_5067), (RegionMapDecoder.aByteArrayArray1887))
                             RegionSceneLoader.method2193(true, (-119).toByte())
                         } else {
-                            MapSceneRenderer.method385(false, VarpStore.aClass237_Sub1_5067, ModelFacePriorityNode.aByteArrayArray1887)
+                            MapSceneRenderer.method385(false, VarpStore.aClass237_Sub1_5067, RegionMapDecoder.aByteArrayArray1887)
                             RegionSceneLoader.method2193(true, (-125).toByte())
                         }
                         VarpStore.aClass237_Sub1_5067!!.method1679(0, 0, (MapTileShape.aClass237_Sub1_4197!!.anIntArrayArrayArray3122[0]!!))

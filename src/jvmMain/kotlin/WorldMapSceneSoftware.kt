@@ -22,6 +22,7 @@ import ActiveMapRegion.method770
 import WidgetCache.Companion.method837
 import NativeBufferHandle.Companion.method850
 import OpenGlRenderNode.Companion.method3297
+import PositionedSceneNode.Companion.method2519
 
 /* Class237_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -737,7 +738,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
 
     fun method1697(bool: Boolean, var_renderer: Renderer?, i: Int) {
         try {
-            WidgetRedrawRegion.method2686()
+            method2686()
             anInt5816++
             if (!bool) {
                 if (this.anInt3130 > 1) {
@@ -866,6 +867,44 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     break
                 }
                 class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1990(123.toByte()) as? CharacterRenderState?
+            }
+        }
+
+
+        fun method2686() {
+            for (i in DelegatingRenderCanvas.anInt67..<MapAreaDefinition.anInt2524) {
+                for (i_8_ in 0..<SpotAnimEntity.anInt6451) {
+                    for (i_9_ in 0..<RegionSceneShifter.anInt7054) {
+                        val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_8_]!![i_9_]
+                        if (class357 != null) {
+                            val class318_sub1_sub4 = class357.aClass318_Sub1_Sub4_4406
+                            val class318_sub1_sub4_10_ = class357.aClass318_Sub1_Sub4_4403
+                            if (class318_sub1_sub4 != null && class318_sub1_sub4.method2388(-121)) {
+                                method2519(class318_sub1_sub4, i, i_8_, i_9_, 1, 1)
+                                if (class318_sub1_sub4_10_ != null && class318_sub1_sub4_10_.method2388(-125)) {
+                                    method2519(class318_sub1_sub4_10_, i, i_8_, i_9_, 1, 1)
+                                    class318_sub1_sub4_10_.method2380(NativeLibraryState.aRenderer171, 0, false, class318_sub1_sub4, 0, (-110).toByte(), 0)
+                                    class318_sub1_sub4_10_.method2392(true)
+                                }
+                                class318_sub1_sub4.method2392(true)
+                            }
+                            var class148 = class357.aWidgetNodeLink_4396
+                            while (class148 != null) {
+                                val class318_sub1_sub3 = (class148.aClass318_Sub1_Sub3_2040)
+                                if (class318_sub1_sub3 != null && class318_sub1_sub3.method2388(-71)) {
+                                    method2519(class318_sub1_sub3, i, i_8_, i_9_, (class318_sub1_sub3.aShort8751 - class318_sub1_sub3.aShort8743 + 1), (class318_sub1_sub3.aShort8747 - class318_sub1_sub3.aShort8750 + 1))
+                                    class318_sub1_sub3.method2392(true)
+                                }
+                                class148 = class148.aWidgetNodeLink_2038
+                            }
+                            val class318_sub1_sub1 = class357.aClass318_Sub1_Sub1_4402
+                            if (class318_sub1_sub1 != null && class318_sub1_sub1.method2388(-85)) {
+                                NodeDequeStatics.method1992(class318_sub1_sub1, i, i_8_, i_9_)
+                                class318_sub1_sub1.method2392(true)
+                            }
+                        }
+                    }
+                }
             }
         }
     }

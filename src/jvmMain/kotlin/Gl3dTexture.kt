@@ -41,7 +41,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
         fun method247(i: Int): DisplaySettingsConfig? {
             anInt8632++
             var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
-            var class348_sub51 = DisplaySettingsConfig(HardCacheEntryReference.aSceneProjector_10434, 0)
+            var class348_sub51 = DisplaySettingsConfig(Client.aSceneProjector_10434, 0)
             try {
                 val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2233((-46).toByte(), "", true)
                 while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-85).toByte(), 1L)
@@ -55,7 +55,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                         if (i_2_ == -1) throw IOException("EOF")
                         i_3_ += i_2_
                     }
-                    class348_sub51 = DisplaySettingsConfig(ByteBuffer(`is`), (HardCacheEntryReference.aSceneProjector_10434), 0)
+                    class348_sub51 = DisplaySettingsConfig(ByteBuffer(`is`), (Client.aSceneProjector_10434), 0)
                 }
             } catch (exception: Exception) {
                 /* empty */
@@ -77,7 +77,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 ItemDefinitionLoader.aIntRange_2183,
                 LocalizedTextTriple.aIntRange_3751,
                 SequencedWallEntity.aIntRange_10168,
-                Hashtable.aIntRange_4388,
+                ChatCommandProcessor.aIntRange_4388,
                 WidgetDefinition.aIntRange_250,
                 VideoStreamDecoder.aIntRange_4126,
                 EmoteDefinition.aIntRange_3264,
@@ -131,7 +131,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 RgbColorPalette.aIntRange_1234,
                 HuffmanCodec.aIntRange_3773,
                 WalkingTypeUtil.aIntRange_3307,
-                SpotAnimVector.aIntRange_2305,
+                Client.aIntRange_2305,
                 WorldMapTextLabel.aIntRange_8590,
                 ItemNameResolver.aIntRange_4998,
                 NpcCountAccessor.aIntRange_2279,
@@ -146,7 +146,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 BinaryGraphicsOptionState.aIntRange_5949,
                 WorldListEntry.aIntRange_304,
                 InputStream_Sub2.aIntRange_82,
-                CacheEntryReference.aIntRange_9552,
+                Client.aIntRange_9552,
                 BlankTextureNode.aIntRange_9254,
                 ArchiveResourceProvider.aIntRange_6340,
                 InputStream_Sub1.aIntRange_79,
@@ -183,7 +183,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 MapSceneIconDef.aIntRange_2860,
                 GroundDecorEntity.aIntRange_8756,
                 GraphicsOptionState.aIntRange_3135,
-                CacheEntryReference.aIntRange_9550,
+                ChatCommandProcessor.aIntRange_9550,
                 CacheStateResetter.aIntRange_123,
                 ParticleSystemState.aIntRange_2196,
                 CompassSmoother.aIntRange_3368,
@@ -203,7 +203,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
             anInt8627++
             ArbFogMaterialPass.aStringArray6200 = arrayOfNulls<String>(500)
             ProducerImageSurface.anInt9077 = 2 + (WorldMapLabel.aFontDefinition_4962!!.anInt1993 + WorldMapLabel.aFontDefinition_4962!!.anInt1988)
-            MovementDirection.anInt1188 = (ParticleEmitterFactory.aFontDefinition_3179!!.anInt1988 - (-ParticleEmitterFactory.aFontDefinition_3179!!.anInt1993 - i))
+            MovementDirection.anInt1188 = (ParticleEmitterFactoryStatics.aFontDefinition_3179!!.anInt1988 - (-ParticleEmitterFactoryStatics.aFontDefinition_3179!!.anInt1993 - i))
             var i_4_ = 0
             while ((i_4_ < ArbFogMaterialPass.aStringArray6200!!.size)) {
                 ArbFogMaterialPass.aStringArray6200!![i_4_] = ""

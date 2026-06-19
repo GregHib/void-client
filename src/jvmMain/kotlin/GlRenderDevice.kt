@@ -115,53 +115,53 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         i = i and 0x7fffffff
         while (!aNodeDeque_9899!!.method2002(18.toByte())) {
             val class348_sub35 = aNodeDeque_9899!!.method1997(8) as IntKeyNode?
-            LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
+            GlRenderDevice.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt8063 -= class348_sub35.anInt6976
             if (i_0_ == 1000) {
-                glDeleteBuffersARB(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+                glDeleteBuffersARB(i_0_, GlRenderDevice.anIntArray1650, 0)
                 i_0_ = 0
             }
         }
         if (i_0_ > 0) {
-            glDeleteBuffersARB(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+            glDeleteBuffersARB(i_0_, GlRenderDevice.anIntArray1650, 0)
             i_0_ = 0
         }
         while (!aNodeDeque_9901.method2002(18.toByte())) {
             val class348_sub35 = aNodeDeque_9901.method1997(8) as IntKeyNode?
-            LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
+            GlRenderDevice.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt8062 -= class348_sub35.anInt6976
             if (i_0_ == 1000) {
-                glDeleteTextures(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+                glDeleteTextures(i_0_, GlRenderDevice.anIntArray1650, 0)
                 i_0_ = 0
             }
         }
         if (i_0_ > 0) {
-            glDeleteTextures(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+            glDeleteTextures(i_0_, GlRenderDevice.anIntArray1650, 0)
             i_0_ = 0
         }
         while (!aNodeDeque_9902!!.method2002(18.toByte())) {
             val class348_sub35 = aNodeDeque_9902!!.method1997(8) as IntKeyNode?
-            LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.anInt6976
+            GlRenderDevice.anIntArray1650!![i_0_++] = class348_sub35!!.anInt6976
             if (i_0_ == 1000) {
-                glDeleteFramebuffersEXT(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+                glDeleteFramebuffersEXT(i_0_, GlRenderDevice.anIntArray1650, 0)
                 i_0_ = 0
             }
         }
         if (i_0_ > 0) {
-            glDeleteFramebuffersEXT(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+            glDeleteFramebuffersEXT(i_0_, GlRenderDevice.anIntArray1650, 0)
             i_0_ = 0
         }
         while (!aNodeDeque_9903!!.method2002(18.toByte())) {
             val class348_sub35 = aNodeDeque_9903!!.method1997(8) as IntKeyNode?
-            LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
+            GlRenderDevice.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt8079 -= class348_sub35.anInt6976
             if (i_0_ == 1000) {
-                glDeleteRenderbuffersEXT(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+                glDeleteRenderbuffersEXT(i_0_, GlRenderDevice.anIntArray1650, 0)
                 i_0_ = 0
             }
         }
         if (i_0_ > 0) {
-            glDeleteRenderbuffersEXT(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+            glDeleteRenderbuffersEXT(i_0_, GlRenderDevice.anIntArray1650, 0)
             val bool = false
         }
         while (!aNodeDeque_9869.method2002(18.toByte())) {
@@ -1386,5 +1386,13 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val i_10_ = 69 % ((-67 - i) / 57)
             aRectangleRegion_9860 = null
         }
+
+
+        @JvmStatic
+        fun method1004(i: Byte) {
+            anIntArray1650 = null
+        }
+
+        var anIntArray1650: IntArray? = IntArray(1000)
     }
 }

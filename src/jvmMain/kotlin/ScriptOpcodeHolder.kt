@@ -53,7 +53,7 @@ object ScriptOpcodeHolder {
         var string_2_ = string_2_
         try {
             anInt2337++
-            SpotAnimVector.Companion.aJs5Archive_2306!!.anInt634 = 1
+            aJs5Archive_2306!!.anInt634 = 1
             string_2_ = string_2_!!.lowercase(Locale.getDefault())
             var `is` = ShortArray(16)
             var i_4_ = -1
@@ -104,9 +104,9 @@ object ScriptOpcodeHolder {
                 strings[i_10_] = ClientException.aModelHeaderCache_112!!.method1940(123, `is`[i_10_].toInt()).aString2795
                 i_10_++
             }
-            SpotAnimVector.Companion.method1333(AsyncTaskHandle.aShortArray2579, 26073, strings)
-            SpotAnimVector.Companion.aJs5Archive_2306!!.method412(116.toByte())
-            SpotAnimVector.Companion.aJs5Archive_2306!!.anInt634 = 2
+            MapSceneCache.method1333(AsyncTaskHandle.aShortArray2579, 26073, strings)
+            aJs5Archive_2306!!.method412(116.toByte())
+            aJs5Archive_2306!!.anInt634 = 2
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("qa.A(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + (if (string_2_ != null) "{...}" else "null") + ',' + bool_3_ + ')'))
         }
@@ -115,5 +115,14 @@ object ScriptOpcodeHolder {
     init {
         val class29s = method188(59.toByte())
         for (i in class29s.indices) aConfigIdPairArray2354s!![class29s[i]!!.anInt400] = class29s[i]
+    }
+    var aJs5Archive_2306: Js5Archive? = null
+
+    @JvmStatic
+    fun method1334(i: Byte) {
+        TypedRecordTable.aProjectileFactory_2307 = null
+        Client.aIntRange_2305 = null
+        MapSceneCache.aAbstractModelRenderer_2309 = null
+        aJs5Archive_2306 = null
     }
 }

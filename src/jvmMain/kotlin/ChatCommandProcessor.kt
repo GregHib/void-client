@@ -63,7 +63,9 @@ import SpriteComponent.Companion.method199
 import SpriteComponent.Companion.method201
 import GameClock.method596
 import GameClock.method599
-import AbstractModel.Companion.method606
+import ChatCommandProcessor.method606
+import ChatCommandProcessor.aString9554
+import MidiSequencePlayer.Companion.method2862
 import OpenGlModel.Companion.method690
 import Sprite.Companion.method160
 import java.awt.datatransfer.DataFlavor
@@ -663,7 +665,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5213) {
-                val class348_sub21 = Hashtable.method3479(-1)
+                val class348_sub21 = SpriteComponent.method3479(-1)
                 if (class348_sub21 == null) {
                     anIntArray1149!![anInt1173++] = -1
                     anIntArray1149!![anInt1173++] = -1
@@ -1004,7 +1006,7 @@ object ChatCommandProcessor {
                 if (SkeletalAnimFrameLoader.aFrame476 != null) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 if (RsaVarbitHandler.aFrame4904 == null) {
                     val string = (if (InputSettingsState.aString1761 != null) InputSettingsState.aString1761 else method2162(false))
-                    HardCacheEntryReference.method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
+                    ChatCommandProcessor.method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
                     return
                 } else {
                     method2405(97)
@@ -1030,7 +1032,7 @@ object ChatCommandProcessor {
                 val string = aStringArray1152!![--anInt1170]
                 val bool_118_ = anIntArray1149!![--anInt1173] == 1
                 val string_119_ = method2162(false) + string
-                HardCacheEntryReference.method1360(string_119_, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, bool_118_, 104)
+                ChatCommandProcessor.method1360(string_119_, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, bool_118_, 104)
                 return
             }
             if (i == 5422) {
@@ -1039,11 +1041,11 @@ object ChatCommandProcessor {
                 val string_120_ = aStringArray1152!![anInt1170 + 1]!!
                 val i_121_ = anIntArray1149!![--anInt1173]
                 if (string.length > 0) {
-                    if (GlEnvMappedWaterPass.aStringArray7378 == null) GlEnvMappedWaterPass.aStringArray7378 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![HardCacheEntryReference.aSceneProjector_10434!!.anInt2987]))
+                    if (GlEnvMappedWaterPass.aStringArray7378 == null) GlEnvMappedWaterPass.aStringArray7378 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![Client.aSceneProjector_10434!!.anInt2987]))
                     GlEnvMappedWaterPass.aStringArray7378!![i_121_] = string
                 }
                 if (string_120_.length > 0) {
-                    if (FloorOverlayDefinition.aStringArray974 == null) FloorOverlayDefinition.aStringArray974 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![HardCacheEntryReference.aSceneProjector_10434!!.anInt2987]))
+                    if (FloorOverlayDefinition.aStringArray974 == null) FloorOverlayDefinition.aStringArray974 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![Client.aSceneProjector_10434!!.anInt2987]))
                     FloorOverlayDefinition.aStringArray974!![i_121_] = string_120_
                 }
                 return
@@ -1070,8 +1072,8 @@ object ChatCommandProcessor {
                 CameraRotationStub.aJs5Archive_322!!.method421(false, ProjectedGroundDecor.anInt10257)
                 CameraRotationStub.aJs5Archive_322!!.method421(false, SkyboxGradient.anInt3937)
                 CameraRotationStub.aJs5Archive_322!!.method421(false, NpcType.anInt1387)
-                SpotAnimVector.aAbstractModelRenderer_2309 = null
-                AbstractMenuEntryStatics.aAbstractModelRenderer_1706 = SpotAnimVector.aAbstractModelRenderer_2309
+                MapSceneCache.aAbstractModelRenderer_2309 = null
+                AbstractMenuEntryStatics.aAbstractModelRenderer_1706 = MapSceneCache.aAbstractModelRenderer_2309
                 TimedTileQueueEntry.aAbstractModelRenderer_9659 = AbstractMenuEntryStatics.aAbstractModelRenderer_1706
                 AbstractBloomEffect.aAbstractModelRenderer_6627 = null
                 MinimapFlagRenderer.aAbstractModelRenderer_1800 = AbstractBloomEffect.aAbstractModelRenderer_6627
@@ -1292,7 +1294,7 @@ object ChatCommandProcessor {
             }
             if (i == 5602) {
                 if (NpcDefinition.anInt2955 == 0) {
-                    LinkedNodeListIterator.anInt1645 = -2
+                    GlRectangleTexture.anInt1645 = -2
                     HslColorTableNode.anInt6634 = -2
                 }
                 return
@@ -1372,7 +1374,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5617) {
-                anIntArray1149!![anInt1173++] = LinkedNodeListIterator.anInt1645
+                anIntArray1149!![anInt1173++] = GlRectangleTexture.anInt1645
                 return
             }
             if (i == 5618) {
@@ -1842,11 +1844,11 @@ object ChatCommandProcessor {
             }
             if (i == 6202) {
                 anInt1173 -= 4
-                CacheEntryReference.aShort9555 = anIntArray1149!![anInt1173].toShort()
-                if (CacheEntryReference.aShort9555 <= 0) CacheEntryReference.aShort9555 = 1.toShort()
+                ChatCommandProcessor.aShort9555 = anIntArray1149!![anInt1173].toShort()
+                if (ChatCommandProcessor.aShort9555 <= 0) ChatCommandProcessor.aShort9555 = 1.toShort()
                 ColourAdjustment.aShort851 = anIntArray1149!![anInt1173 + 1].toShort()
                 if (ColourAdjustment.aShort851 <= 0) ColourAdjustment.aShort851 = 32767.toShort()
-                else if (ColourAdjustment.aShort851 < CacheEntryReference.aShort9555) ColourAdjustment.aShort851 = CacheEntryReference.aShort9555
+                else if (ColourAdjustment.aShort851 < ChatCommandProcessor.aShort9555) ColourAdjustment.aShort851 = ChatCommandProcessor.aShort9555
                 FixedFunctionWaterPass.aShort7355 = anIntArray1149!![anInt1173 + 2].toShort()
                 if (FixedFunctionWaterPass.aShort7355 <= 0) FixedFunctionWaterPass.aShort7355 = 1.toShort()
                 RefCountedHandle.aShort2269 = anIntArray1149!![anInt1173 + 3].toShort()
@@ -3919,7 +3921,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3306) {
                     val i_325_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = SpotAnimDefCache.anIntArray3295!![i_325_]
+                    anIntArray1149!![anInt1173++] = ChatCommandProcessor.anIntArray3295!![i_325_]
                     return
                 }
                 if (i == 3307) {
@@ -5290,5 +5292,100 @@ object ChatCommandProcessor {
 
     fun method390(i: Byte) {
         ChatCommandProcessor.aFontMetaRef_643 = null
+    }
+
+    var anInt1128: Int = 0
+    fun method606(i: Int, bool: Boolean, string: String) {
+        var string = string
+        anInt1128++
+        string = string.lowercase(Locale.getDefault())
+        var `is` = ShortArray(16)
+        var i_52_ = i
+        val i_53_ = if (bool) 32768 else 0
+        val i_54_ = ((if (!bool) BrightnessOptionState.aCompiledScriptCache_5900!!.anInt4365 else BrightnessOptionState.aCompiledScriptCache_5900!!.anInt4364) + i_53_)
+        for (i_55_ in i_53_..<i_54_) {
+            val class348_sub42_sub10 = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_55_, (-102).toByte())
+            if (class348_sub42_sub10.aBoolean9562 && class348_sub42_sub10.method3219(98).lowercase(Locale.getDefault()).indexOf(string) != -1) {
+                if (i_52_ >= 50) {
+                    AsyncTaskHandle.aShortArray2579 = null
+                    SceneObjectSpawner.anInt1285 = -1
+                    return
+                }
+                if (`is`.size <= i_52_) {
+                    val is_56_ = ShortArray(`is`.size * 2)
+                    var i_57_ = 0
+                    while (i_52_ > i_57_) {
+                        is_56_[i_57_] = `is`[i_57_]
+                        i_57_++
+                    }
+                    `is` = is_56_
+                }
+                `is`[i_52_++] = i_55_.toShort()
+            }
+        }
+        SceneObjectSpawner.anInt1285 = i_52_
+        WidgetNodeLink.anInt2037 = 0
+        AsyncTaskHandle.aShortArray2579 = `is`
+        val strings = arrayOfNulls<String>(SceneObjectSpawner.anInt1285)
+        var i_58_ = 0
+        while (SceneObjectSpawner.anInt1285 > i_58_) {
+            strings[i_58_] = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(`is`[i_58_].toInt(), (-91).toByte()).method3219(CameraSplineNode.method2955(i, 81))
+            i_58_++
+        }
+        MapSceneCache.method1333(AsyncTaskHandle.aShortArray2579, i + 26073, strings)
+    }
+
+
+    var aString9554: String? = null
+    var anInt2369: Int = 0
+    fun method1360(string: String?, privilegedOperationWorker: PrivilegedOperationWorker?, bool: Boolean, bool_3_: Boolean, i: Int) {
+        try {
+            anInt2369++
+            if (bool_3_) {
+                if (PrivilegedOperationWorker.aString3803.startsWith("win") && privilegedOperationWorker!!.aBoolean3777) {
+                    var string_4_: String? = null
+                    if (JagGlToolkitFactory.anApplet1530 != null) string_4_ = JagGlToolkitFactory.anApplet1530!!.getParameter("haveie6")
+                    if (string_4_ == null || string_4_ != "1") {
+                        val class144 = method2862(privilegedOperationWorker, string, -117, 0)
+                        WallEntity.aLinkedQueueNode_8766 = class144
+                        RenderableGroup.aPrivilegedOperationWorker_5017 = privilegedOperationWorker
+                        aString9554 = string
+                        return
+                    }
+                }
+                if (PrivilegedOperationWorker.aString3803.startsWith("mac")) {
+                    var string_5_: String? = null
+                    if (JagGlToolkitFactory.anApplet1530 != null) string_5_ = JagGlToolkitFactory.anApplet1530!!.getParameter("havefirefox")
+                    if (string_5_ != null && string_5_ == "1" && bool) {
+                        method2862(privilegedOperationWorker, string, 42, 1)
+                        return
+                    }
+                }
+                method2862(privilegedOperationWorker, string, 96, 2)
+            } else method2862(privilegedOperationWorker, string, -96, 3)
+            val i_6_ = -6 / ((i - 20) / 44)
+        } catch (runtimeexception: RuntimeException) {
+            throw TextureLoadException.method2929(runtimeexception, ("bo.C(" + (if (string != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ',' + bool_3_ + ',' + i + ')'))
+        }
+    }
+    var anIntArray3295: IntArray? = IntArray(25)
+    fun method1944(i: Int) {
+        anIntArray3295 = null
+    }
+    var aIntRange_4388: IntRange? = IntRange(3, 3)
+    @JvmStatic
+    fun method3478(bool: Boolean) {
+        aIntRange_4388 = null
+    }
+    var aIntRange_9550: IntRange? = IntRange(109, 7)
+
+    var aShort9555: Short = 1
+
+    @JvmStatic
+    fun method3199(i: Int) {
+        ChatCommandProcessor.aIntRange_9550 = null
+        Client.aIntRange_9552 = null
+        SpriteMaskShape.aFontMetaRef_9553 = null
+        ChatCommandProcessor.aString9554 = null
     }
 }

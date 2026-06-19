@@ -66,10 +66,10 @@ abstract class GraphicsOptionState {
         @JvmStatic
         fun method1711(i: Int, js5Archive: Js5Archive?, i_0_: Int, js5Archive_1_: Js5Archive?) {
             try {
-                GlElementArrayBuffer.aJs5Archive_4843 = js5Archive_1_
+                TextureMaterialGroup.aJs5Archive_4843 = js5Archive_1_
                 anInt3140++
                 if (i != 7) aJs5Archive_3146 = null
-                RectangleRegion.aJs5Archive_1940 = js5Archive
+                TextureMaterialGroup.aJs5Archive_1940 = js5Archive
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("su.Q(" + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (js5Archive_1_ != null) "{...}" else "null") + ')'))
             }
@@ -77,7 +77,7 @@ abstract class GraphicsOptionState {
 
         @JvmStatic
         fun method1713(bool: Boolean, i: Int) {
-            method1728(HardCacheEntryReference.anInt10432, -1, RenderNodeStatics.anInt9721, bool, LocTypeDefinition.anInt4017)
+            method1728(GameDisplayManager.anInt10432, -1, RenderNodeStatics.anInt9721, bool, LocTypeDefinition.anInt4017)
             if (i == 520) anInt3137++
         }
 

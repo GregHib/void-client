@@ -144,7 +144,7 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
                                     }
                                 }
                             } else {
-                                val audioClipDefinition = AudioClipDefinition.method2372(ModelFacePriorityNode.aJs5Archive_1878!!, (class348_sub9.anInt6685), 0)
+                                val audioClipDefinition = AudioClipDefinition.method2372(ClientLoadStateMachine.aJs5Archive_1878!!, (class348_sub9.anInt6685), 0)
                                 if (audioClipDefinition != null) {
                                     val class348_sub19_sub1 = audioClipDefinition.method2369().method2944(MapSceneTile.aAudioResampler_1050!!)
                                     val class348_sub16_sub5 = (SampledVoice.method2911(class348_sub19_sub1, i_15_, i_9_ shl 6, i_10_))
@@ -175,7 +175,7 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
                                         }
                                     } else {
                                         val i_18_ = (Math.random() * (class348_sub9.anIntArray6697!!).size.toDouble()).toInt()
-                                        val audioClipDefinition = AudioClipDefinition.method2372((ModelFacePriorityNode.aJs5Archive_1878!!), (class348_sub9.anIntArray6697!![i_18_]), 0)
+                                        val audioClipDefinition = AudioClipDefinition.method2372((ClientLoadStateMachine.aJs5Archive_1878!!), (class348_sub9.anIntArray6697!![i_18_]), 0)
                                         if (audioClipDefinition == null) break
                                         val class348_sub19_sub1 = (audioClipDefinition.method2369().method2944(MapSceneTile.aAudioResampler_1050!!))
                                         val class348_sub16_sub5 = (SampledVoice.method2911(class348_sub19_sub1, i_16_, i_9_ shl 6, i_10_))

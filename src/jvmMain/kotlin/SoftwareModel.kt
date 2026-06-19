@@ -1,8 +1,10 @@
-import ParticleEmitterFactory.Companion.method1885
+import ParticleEmitterFactoryStatics.method1885
 import SpriteStore.Companion.method303
 import PcmStreamBuffer.Companion.method2832
 import CachedRgbNoiseTexture.Companion.method565
 import IdentKitRecolor.Companion.method206
+import kotlin.math.asin
+import kotlin.math.atan2
 import kotlin.math.sqrt
 
 /* Class64_Sub1 - Decompiled by JODE
@@ -550,22 +552,22 @@ class SoftwareModel : AbstractModel {
                             anIntArray5332!![i_66_] -= anInt5375
                             anIntArray5312!![i_66_] -= anInt5342
                             if (i_46_ != 0) {
-                                val i_67_ = TrigLookupTables.anIntArray1207!![i_46_]
-                                val i_68_ = TrigLookupTables.anIntArray1204!![i_46_]
+                                val i_67_ = SpotAnimVector.anIntArray1207!![i_46_]
+                                val i_68_ = SpotAnimVector.anIntArray1204!![i_46_]
                                 val i_69_ = ((anIntArray5332!![i_66_] * i_67_ + anIntArray5356!![i_66_] * i_68_ + 16383) shr 14)
                                 anIntArray5332!![i_66_] = (anIntArray5332!![i_66_] * i_68_ - anIntArray5356!![i_66_] * i_67_ + 16383) shr 14
                                 anIntArray5356!![i_66_] = i_69_
                             }
                             if (i_44_ != 0) {
-                                val i_70_ = TrigLookupTables.anIntArray1207!![i_44_]
-                                val i_71_ = TrigLookupTables.anIntArray1204!![i_44_]
+                                val i_70_ = SpotAnimVector.anIntArray1207!![i_44_]
+                                val i_71_ = SpotAnimVector.anIntArray1204!![i_44_]
                                 val i_72_ = ((anIntArray5332!![i_66_] * i_71_ - anIntArray5312!![i_66_] * i_70_ + 16383) shr 14)
                                 anIntArray5312!![i_66_] = (anIntArray5332!![i_66_] * i_70_ + anIntArray5312!![i_66_] * i_71_ + 16383) shr 14
                                 anIntArray5332!![i_66_] = i_72_
                             }
                             if (i_45_ != 0) {
-                                val i_73_ = TrigLookupTables.anIntArray1207!![i_45_]
-                                val i_74_ = TrigLookupTables.anIntArray1204!![i_45_]
+                                val i_73_ = SpotAnimVector.anIntArray1207!![i_45_]
+                                val i_74_ = SpotAnimVector.anIntArray1204!![i_45_]
                                 val i_75_ = ((anIntArray5312!![i_66_] * i_73_ + anIntArray5356!![i_66_] * i_74_ + 16383) shr 14)
                                 anIntArray5312!![i_66_] = (anIntArray5312!![i_66_] * i_74_ - anIntArray5356!![i_66_] * i_73_ + 16383) shr 14
                                 anIntArray5356!![i_66_] = i_75_
@@ -581,22 +583,22 @@ class SoftwareModel : AbstractModel {
                             anIntArray5332!![i_77_] -= anInt5375
                             anIntArray5312!![i_77_] -= anInt5342
                             if (i_44_ != 0) {
-                                val i_78_ = TrigLookupTables.anIntArray1207!![i_44_]
-                                val i_79_ = TrigLookupTables.anIntArray1204!![i_44_]
+                                val i_78_ = SpotAnimVector.anIntArray1207!![i_44_]
+                                val i_79_ = SpotAnimVector.anIntArray1204!![i_44_]
                                 val i_80_ = ((anIntArray5332!![i_77_] * i_79_ - anIntArray5312!![i_77_] * i_78_ + 16383) shr 14)
                                 anIntArray5312!![i_77_] = (anIntArray5332!![i_77_] * i_78_ + anIntArray5312!![i_77_] * i_79_ + 16383) shr 14
                                 anIntArray5332!![i_77_] = i_80_
                             }
                             if (i_46_ != 0) {
-                                val i_81_ = TrigLookupTables.anIntArray1207!![i_46_]
-                                val i_82_ = TrigLookupTables.anIntArray1204!![i_46_]
+                                val i_81_ = SpotAnimVector.anIntArray1207!![i_46_]
+                                val i_82_ = SpotAnimVector.anIntArray1204!![i_46_]
                                 val i_83_ = ((anIntArray5332!![i_77_] * i_81_ + anIntArray5356!![i_77_] * i_82_ + 16383) shr 14)
                                 anIntArray5332!![i_77_] = (anIntArray5332!![i_77_] * i_82_ - anIntArray5356!![i_77_] * i_81_ + 16383) shr 14
                                 anIntArray5356!![i_77_] = i_83_
                             }
                             if (i_45_ != 0) {
-                                val i_84_ = TrigLookupTables.anIntArray1207!![i_45_]
-                                val i_85_ = TrigLookupTables.anIntArray1204!![i_45_]
+                                val i_84_ = SpotAnimVector.anIntArray1207!![i_45_]
+                                val i_85_ = SpotAnimVector.anIntArray1204!![i_45_]
                                 val i_86_ = ((anIntArray5312!![i_77_] * i_84_ + anIntArray5356!![i_77_] * i_85_ + 16383) shr 14)
                                 anIntArray5312!![i_77_] = (anIntArray5312!![i_77_] * i_85_ - anIntArray5356!![i_77_] * i_84_ + 16383) shr 14
                                 anIntArray5356!![i_77_] = i_86_
@@ -726,8 +728,8 @@ class SoftwareModel : AbstractModel {
 
     public override fun FA(i: Int) {
         check((anInt5316 and 0x6) == 6)
-        val i_121_ = TrigLookupTables.anIntArray1207!![i]
-        val i_122_ = TrigLookupTables.anIntArray1204!![i]
+        val i_121_ = SpotAnimVector.anIntArray1207!![i]
+        val i_122_ = SpotAnimVector.anIntArray1204!![i]
         withLock(this) {
             for (i_123_ in 0..<anInt5340) {
                 val i_124_ = ((anIntArray5332!![i_123_] * i_122_ - anIntArray5312!![i_123_] * i_121_) shr 14)
@@ -851,22 +853,22 @@ class SoftwareModel : AbstractModel {
                                 anIntArray5332!![i_200_] -= anInt5375
                                 anIntArray5312!![i_200_] -= anInt5342
                                 if (i_127_ != 0) {
-                                    val i_201_ = TrigLookupTables.anIntArray1207!![i_127_]
-                                    val i_202_ = TrigLookupTables.anIntArray1204!![i_127_]
+                                    val i_201_ = SpotAnimVector.anIntArray1207!![i_127_]
+                                    val i_202_ = SpotAnimVector.anIntArray1204!![i_127_]
                                     val i_203_ = ((anIntArray5332!![i_200_] * i_201_ + anIntArray5356!![i_200_] * i_202_ + 16383) shr 14)
                                     anIntArray5332!![i_200_] = (anIntArray5332!![i_200_] * i_202_ - anIntArray5356!![i_200_] * i_201_ + 16383) shr 14
                                     anIntArray5356!![i_200_] = i_203_
                                 }
                                 if (i_125_ != 0) {
-                                    val i_204_ = TrigLookupTables.anIntArray1207!![i_125_]
-                                    val i_205_ = TrigLookupTables.anIntArray1204!![i_125_]
+                                    val i_204_ = SpotAnimVector.anIntArray1207!![i_125_]
+                                    val i_205_ = SpotAnimVector.anIntArray1204!![i_125_]
                                     val i_206_ = ((anIntArray5332!![i_200_] * i_205_ - anIntArray5312!![i_200_] * i_204_ + 16383) shr 14)
                                     anIntArray5312!![i_200_] = (anIntArray5332!![i_200_] * i_204_ + anIntArray5312!![i_200_] * i_205_ + 16383) shr 14
                                     anIntArray5332!![i_200_] = i_206_
                                 }
                                 if (i_126_ != 0) {
-                                    val i_207_ = TrigLookupTables.anIntArray1207!![i_126_]
-                                    val i_208_ = TrigLookupTables.anIntArray1204!![i_126_]
+                                    val i_207_ = SpotAnimVector.anIntArray1207!![i_126_]
+                                    val i_208_ = SpotAnimVector.anIntArray1204!![i_126_]
                                     val i_209_ = ((anIntArray5312!![i_200_] * i_207_ + anIntArray5356!![i_200_] * i_208_ + 16383) shr 14)
                                     anIntArray5312!![i_200_] = (anIntArray5312!![i_200_] * i_208_ - anIntArray5356!![i_200_] * i_207_ + 16383) shr 14
                                     anIntArray5356!![i_200_] = i_209_
@@ -906,12 +908,12 @@ class SoftwareModel : AbstractModel {
                     aBoolean5369 = false
                 }
                 val is_157_ = IntArray(9)
-                val i_158_ = TrigLookupTables.anIntArray1204!![i_125_]
-                val i_159_ = TrigLookupTables.anIntArray1207!![i_125_]
-                val i_160_ = TrigLookupTables.anIntArray1204!![i_126_]
-                val i_161_ = TrigLookupTables.anIntArray1207!![i_126_]
-                val i_162_ = TrigLookupTables.anIntArray1204!![i_127_]
-                val i_163_ = TrigLookupTables.anIntArray1207!![i_127_]
+                val i_158_ = SpotAnimVector.anIntArray1204!![i_125_]
+                val i_159_ = SpotAnimVector.anIntArray1207!![i_125_]
+                val i_160_ = SpotAnimVector.anIntArray1204!![i_126_]
+                val i_161_ = SpotAnimVector.anIntArray1207!![i_126_]
+                val i_162_ = SpotAnimVector.anIntArray1204!![i_127_]
+                val i_163_ = SpotAnimVector.anIntArray1207!![i_127_]
                 val i_164_ = i_159_ * i_162_ + 8192 shr 14
                 val i_165_ = i_159_ * i_163_ + 8192 shr 14
                 is_157_[0] = i_160_ * i_162_ + i_161_ * i_165_ + 8192 shr 14
@@ -1317,8 +1319,8 @@ class SoftwareModel : AbstractModel {
             else if (i == 8192) method652()
             else if (i == 12288) method641()
             else {
-                val i_293_ = TrigLookupTables.anIntArray1207!![i]
-                val i_294_ = TrigLookupTables.anIntArray1204!![i]
+                val i_293_ = SpotAnimVector.anIntArray1207!![i]
+                val i_294_ = SpotAnimVector.anIntArray1204!![i]
                 withLock(this) {
                     for (i_295_ in 0..<anInt5387) {
                         var i_296_ = ((anIntArray5312!![i_295_] * i_293_ + anIntArray5356!![i_295_] * i_294_) shr 14)
@@ -1523,22 +1525,22 @@ class SoftwareModel : AbstractModel {
                 anIntArray5332!![i_344_] -= anInt5375
                 anIntArray5312!![i_344_] -= anInt5342
                 if (i_340_ != 0) {
-                    val i_345_ = TrigLookupTables.anIntArray1207!![i_340_]
-                    val i_346_ = TrigLookupTables.anIntArray1204!![i_340_]
+                    val i_345_ = SpotAnimVector.anIntArray1207!![i_340_]
+                    val i_346_ = SpotAnimVector.anIntArray1204!![i_340_]
                     val i_347_ = ((anIntArray5332!![i_344_] * i_345_ + anIntArray5356!![i_344_] * i_346_ + 16383) shr 14)
                     anIntArray5332!![i_344_] = (anIntArray5332!![i_344_] * i_346_ - anIntArray5356!![i_344_] * i_345_ + 16383) shr 14
                     anIntArray5356!![i_344_] = i_347_
                 }
                 if (i_338_ != 0) {
-                    val i_348_ = TrigLookupTables.anIntArray1207!![i_338_]
-                    val i_349_ = TrigLookupTables.anIntArray1204!![i_338_]
+                    val i_348_ = SpotAnimVector.anIntArray1207!![i_338_]
+                    val i_349_ = SpotAnimVector.anIntArray1204!![i_338_]
                     val i_350_ = ((anIntArray5332!![i_344_] * i_349_ - anIntArray5312!![i_344_] * i_348_ + 16383) shr 14)
                     anIntArray5312!![i_344_] = (anIntArray5332!![i_344_] * i_348_ + anIntArray5312!![i_344_] * i_349_ + 16383) shr 14
                     anIntArray5332!![i_344_] = i_350_
                 }
                 if (i_339_ != 0) {
-                    val i_351_ = TrigLookupTables.anIntArray1207!![i_339_]
-                    val i_352_ = TrigLookupTables.anIntArray1204!![i_339_]
+                    val i_351_ = SpotAnimVector.anIntArray1207!![i_339_]
+                    val i_352_ = SpotAnimVector.anIntArray1204!![i_339_]
                     val i_353_ = ((anIntArray5312!![i_344_] * i_351_ + anIntArray5356!![i_344_] * i_352_ + 16383) shr 14)
                     anIntArray5312!![i_344_] = (anIntArray5312!![i_344_] * i_352_ - anIntArray5356!![i_344_] * i_351_ + 16383) shr 14
                     anIntArray5356!![i_344_] = i_353_
@@ -2297,8 +2299,8 @@ class SoftwareModel : AbstractModel {
 
     public override fun VA(i: Int) {
         check((anInt5316 and 0x3) == 3)
-        val i_574_ = TrigLookupTables.anIntArray1207!![i]
-        val i_575_ = TrigLookupTables.anIntArray1204!![i]
+        val i_574_ = SpotAnimVector.anIntArray1207!![i]
+        val i_575_ = SpotAnimVector.anIntArray1204!![i]
         withLock(this) {
             for (i_576_ in 0..<anInt5340) {
                 val i_577_ = ((anIntArray5332!![i_576_] * i_574_ + anIntArray5356!![i_576_] * i_575_) shr 14)
@@ -2315,8 +2317,8 @@ class SoftwareModel : AbstractModel {
         else if (i == 8192) method651()
         else if (i == 12288) method639()
         else {
-            val i_578_ = TrigLookupTables.anIntArray1207!![i]
-            val i_579_ = TrigLookupTables.anIntArray1204!![i]
+            val i_578_ = SpotAnimVector.anIntArray1207!![i]
+            val i_579_ = SpotAnimVector.anIntArray1204!![i]
             withLock(this) {
                 for (i_580_ in 0..<anInt5340) {
                     val i_581_ = ((anIntArray5312!![i_580_] * i_578_ + anIntArray5356!![i_580_] * i_579_) shr 14)
@@ -3556,13 +3558,13 @@ class SoftwareModel : AbstractModel {
                             fs_807_[2] = fs[0]
                             fs_808_[2] = fs[1]
                         } else if (i_810_.toInt() == 3) {
-                            SpotAnimDefinition.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_841_.toInt()], fs, anIntArray5312!![i_841_.toInt()], i_844_, anIntArray5332!![i_841_.toInt()], i_845_, -4, fs_847_)
+                            SoftwareModel.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_841_.toInt()], fs, anIntArray5312!![i_841_.toInt()], i_844_, anIntArray5332!![i_841_.toInt()], i_845_, -4, fs_847_)
                             fs_807_[0] = fs[0]
                             fs_808_[0] = fs[1]
-                            SpotAnimDefinition.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_842_.toInt()], fs, anIntArray5312!![i_842_.toInt()], i_844_, anIntArray5332!![i_842_.toInt()], i_845_, -4, fs_847_)
+                            SoftwareModel.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_842_.toInt()], fs, anIntArray5312!![i_842_.toInt()], i_844_, anIntArray5332!![i_842_.toInt()], i_845_, -4, fs_847_)
                             fs_807_[1] = fs[0]
                             fs_808_[1] = fs[1]
-                            SpotAnimDefinition.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_843_.toInt()], fs, anIntArray5312!![i_843_.toInt()], i_844_, anIntArray5332!![i_843_.toInt()], i_845_, -4, fs_847_)
+                            SoftwareModel.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_843_.toInt()], fs, anIntArray5312!![i_843_.toInt()], i_844_, anIntArray5332!![i_843_.toInt()], i_845_, -4, fs_847_)
                             fs_807_[2] = fs[0]
                             fs_808_[2] = fs[1]
                             if ((i_848_.toInt() and 0x1) == 0) {
@@ -3621,6 +3623,41 @@ class SoftwareModel : AbstractModel {
         init {
             anInt5341 = 0
             anInt5350 = 4096
+        }
+
+        var anInt2409: Int = 0
+        fun method1367(i: Int, i_0_: Int, f: Float, i_1_: Int, fs: FloatArray?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, fs_7_: FloatArray?) {
+            var i_1_ = i_1_
+            var i_2_ = i_2_
+            var i_4_ = i_4_
+            try {
+                i_2_ -= i
+                anInt2409++
+                i_1_ -= i_3_
+                i_4_ -= i_5_
+                val f_8_ = i_2_.toFloat() * fs_7_!![2] + (fs_7_[1] * i_4_.toFloat() + fs_7_[0] * i_1_.toFloat())
+                val f_9_ = i_2_.toFloat() * fs_7_[5] + (i_1_.toFloat() * fs_7_[3] + i_4_.toFloat() * fs_7_[4])
+                val f_10_ = (fs_7_[6] * i_1_.toFloat() + i_4_.toFloat() * fs_7_[7] + i_2_.toFloat() * fs_7_[8])
+                val f_11_ = sqrt((f_8_ * f_8_ + f_9_ * f_9_ + f_10_ * f_10_).toDouble()).toFloat()
+                var f_12_ = 0.5f + (atan2(f_8_.toDouble(), f_10_.toDouble()).toFloat() / 6.2831855f)
+                var f_13_ = f + (0.5f + (asin((f_9_ / f_11_).toDouble()).toFloat() / 3.1415927f))
+                if (i_0_ == 1) {
+                    val f_15_ = f_12_
+                    f_12_ = -f_13_
+                    f_13_ = f_15_
+                } else if (i_0_ == 2) {
+                    f_13_ = -f_13_
+                    f_12_ = -f_12_
+                } else if (i_0_ == 3) {
+                    val f_14_ = f_12_
+                    f_12_ = f_13_
+                    f_13_ = -f_14_
+                }
+                fs!![0] = f_12_
+                fs[1] = f_13_
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("qb.E(" + i + ',' + i_0_ + ',' + f + ',' + i_1_ + ',' + (if (fs != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + (if (fs_7_ != null) "{...}" else "null") + ')'))
+            }
         }
     }
 }

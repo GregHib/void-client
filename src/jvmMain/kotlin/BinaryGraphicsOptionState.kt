@@ -104,7 +104,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 SlotBinding.aSlotBinding_3411!!.method2025(MapArchiveSource(AnimationFrameState.aJs5Archive_1538!!), false)
                 SlotBinding.aSlotBinding_3412!!.method2025(MapArchiveSource(VideoAdChecker.aJs5Archive_3183!!), false)
                 SlotBinding.aSlotBinding_3413!!.method2025(MapArchiveSource(FloatGrid.aJs5Archive_4975!!), false)
-                SlotBinding.aSlotBinding_3414!!.method2025(MapArchiveSource(SpotAnimVector.aJs5Archive_2306!!), false)
+                SlotBinding.aSlotBinding_3414!!.method2025(MapArchiveSource(ScriptOpcodeHolder.aJs5Archive_2306!!), false)
                 SlotBinding.aSlotBinding_3415!!.method2025(MapArchiveSource(OpenGlRenderNode.aJs5Archive_10480!!), false)
                 SlotBinding.aSlotBinding_3416!!.method2025(MapArchiveSource(BufferedRandomAccessFile.aJs5Archive_1322!!), false)
                 SlotBinding.aSlotBinding_3417!!.method2025(MapArchiveSource(MidiSequencePlayer.aJs5Archive_8926!!), false)

@@ -1,5 +1,5 @@
 import TwoStateOptionState.Companion.method1846
-import ParticleEmitterFactory.Companion.method1885
+import ParticleEmitterFactoryStatics.method1885
 import SphereMapMaterialPass.Companion.method2174
 import Texture2DProvider.Companion.method2259
 import ArchiveResourceProvider.Companion.method2352
@@ -74,8 +74,8 @@ class OpenGlModel : AbstractModel {
     private var aShortArray5649: ShortArray? = null
     public override fun FA(i: Int) {
         anInt5650++
-        val i_0_ = TrigLookupTables.anIntArray1207!![i]
-        val i_1_ = TrigLookupTables.anIntArray1204!![i]
+        val i_0_ = SpotAnimVector.anIntArray1207!![i]
+        val i_1_ = SpotAnimVector.anIntArray1204!![i]
         for (i_2_ in 0..<anInt5557) {
             val i_3_ = (-(i_0_ * anIntArray5644!![i_2_]) + anIntArray5593!![i_2_] * i_1_ shr 14)
             anIntArray5644!![i_2_] = (anIntArray5593!![i_2_] * i_0_ - -(anIntArray5644!![i_2_] * i_1_) shr 14)
@@ -187,8 +187,8 @@ class OpenGlModel : AbstractModel {
 
     public override fun VA(i: Int) {
         anInt5561++
-        val i_25_ = TrigLookupTables.anIntArray1207!![i]
-        val i_26_ = TrigLookupTables.anIntArray1204!![i]
+        val i_25_ = SpotAnimVector.anIntArray1207!![i]
+        val i_26_ = SpotAnimVector.anIntArray1204!![i]
         var i_27_ = 0
         while (anInt5557 > i_27_) {
             val i_28_ = ((anIntArray5543!![i_27_] * i_26_ + i_25_ * anIntArray5593!![i_27_]) shr 14)
@@ -691,8 +691,8 @@ class OpenGlModel : AbstractModel {
 
     public override fun k(i: Int) {
         anInt5622++
-        val i_171_ = TrigLookupTables.anIntArray1207!![i]
-        val i_172_ = TrigLookupTables.anIntArray1204!![i]
+        val i_171_ = SpotAnimVector.anIntArray1207!![i]
+        val i_172_ = SpotAnimVector.anIntArray1204!![i]
         for (i_173_ in 0..<anInt5557) {
             val i_174_ = ((anIntArray5543!![i_173_] * i_172_ + anIntArray5644!![i_173_] * i_171_) shr 14)
             anIntArray5644!![i_173_] = anIntArray5644!![i_173_] * i_172_ + -(anIntArray5543!![i_173_] * i_171_) shr 14
@@ -793,8 +793,8 @@ class OpenGlModel : AbstractModel {
 
     public override fun a(i: Int) {
         anInt5538++
-        val i_207_ = TrigLookupTables.anIntArray1207!![i]
-        val i_208_ = TrigLookupTables.anIntArray1204!![i]
+        val i_207_ = SpotAnimVector.anIntArray1207!![i]
+        val i_208_ = SpotAnimVector.anIntArray1204!![i]
         var i_209_ = 0
         while (anInt5557 > i_209_) {
             val i_210_ = ((i_208_ * anIntArray5543!![i_209_] + i_207_ * anIntArray5644!![i_209_]) shr 14)
@@ -873,7 +873,7 @@ class OpenGlModel : AbstractModel {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x1).toByte()
                 class64_sub3_211_.aHoverActionEntry_5605!!.anByteBufferReader_1811 = aHoverActionEntry_5605!!.anByteBufferReader_1811
                 class64_sub3_211_.aHoverActionEntry_5605!!.aByte1812 = aHoverActionEntry_5605!!.aByte1812
-            } else if (!method616(i_212_ + 2, i, anInt5556)) class64_sub3_211_.aHoverActionEntry_5605 = null
+            } else if (!ParticleEmitterDef.method616(i_212_ + 2, i, anInt5556)) class64_sub3_211_.aHoverActionEntry_5605 = null
             else class64_sub3_211_.aHoverActionEntry_5605 = aHoverActionEntry_5605
             if (ObjectSpawnDecoder.method1087(12644, anInt5556, i)) {
                 if (class64_sub3_213_!!.aShortArray5580 != null && (class64_sub3_213_.aShortArray5580!!.size >= anInt5632)) class64_sub3_211_.aShortArray5580 = class64_sub3_213_.aShortArray5580
@@ -1956,22 +1956,22 @@ class OpenGlModel : AbstractModel {
                                 anIntArray5593!![i_417_] -= ScreenAnchorAlignment.anInt2880
                                 anIntArray5644!![i_417_] -= SpotAnimDefinition.anInt2398
                                 if (i_388_ != 0) {
-                                    val i_418_ = TrigLookupTables.anIntArray1207!![i_388_]
-                                    val i_419_ = TrigLookupTables.anIntArray1204!![i_388_]
+                                    val i_418_ = SpotAnimVector.anIntArray1207!![i_388_]
+                                    val i_419_ = SpotAnimVector.anIntArray1204!![i_388_]
                                     val i_420_ = ((anIntArray5543!![i_417_] * i_419_ + i_418_ * anIntArray5593!![i_417_] - -16383) shr 14)
                                     anIntArray5593!![i_417_] = (anIntArray5593!![i_417_] * i_419_ + -(i_418_ * anIntArray5543!![i_417_]) - -16383) shr 14
                                     anIntArray5543!![i_417_] = i_420_
                                 }
                                 if (i_386_ != 0) {
-                                    val i_421_ = TrigLookupTables.anIntArray1207!![i_386_]
-                                    val i_422_ = TrigLookupTables.anIntArray1204!![i_386_]
+                                    val i_421_ = SpotAnimVector.anIntArray1207!![i_386_]
+                                    val i_422_ = SpotAnimVector.anIntArray1204!![i_386_]
                                     val i_423_ = ((-(anIntArray5644!![i_417_] * i_421_) + (i_422_ * anIntArray5593!![i_417_] + 16383)) shr 14)
                                     anIntArray5644!![i_417_] = ((16383 + i_422_ * anIntArray5644!![i_417_] + i_421_ * anIntArray5593!![i_417_]) shr 14)
                                     anIntArray5593!![i_417_] = i_423_
                                 }
                                 if (i_387_ != 0) {
-                                    val i_424_ = TrigLookupTables.anIntArray1207!![i_387_]
-                                    val i_425_ = TrigLookupTables.anIntArray1204!![i_387_]
+                                    val i_424_ = SpotAnimVector.anIntArray1207!![i_387_]
+                                    val i_425_ = SpotAnimVector.anIntArray1204!![i_387_]
                                     val i_426_ = (i_424_ * anIntArray5644!![i_417_] - -(i_425_ * anIntArray5543!![i_417_]) + 16383) shr 14
                                     anIntArray5644!![i_417_] = (16383 + (anIntArray5644!![i_417_] * i_425_ - (anIntArray5543!![i_417_] * i_424_))) shr 14
                                     anIntArray5543!![i_417_] = i_426_
@@ -1989,22 +1989,22 @@ class OpenGlModel : AbstractModel {
                                 anIntArray5593!![i_406_] -= ScreenAnchorAlignment.anInt2880
                                 anIntArray5644!![i_406_] -= SpotAnimDefinition.anInt2398
                                 if (i_386_ != 0) {
-                                    val i_407_ = TrigLookupTables.anIntArray1207!![i_386_]
-                                    val i_408_ = TrigLookupTables.anIntArray1204!![i_386_]
+                                    val i_407_ = SpotAnimVector.anIntArray1207!![i_386_]
+                                    val i_408_ = SpotAnimVector.anIntArray1204!![i_386_]
                                     val i_409_ = ((16383 + (i_408_ * anIntArray5593!![i_406_] + -(anIntArray5644!![i_406_] * i_407_))) shr 14)
                                     anIntArray5644!![i_406_] = ((16383 + (anIntArray5593!![i_406_] * i_407_ - -(i_408_ * anIntArray5644!![i_406_]))) shr 14)
                                     anIntArray5593!![i_406_] = i_409_
                                 }
                                 if (i_388_ != 0) {
-                                    val i_410_ = TrigLookupTables.anIntArray1207!![i_388_]
-                                    val i_411_ = TrigLookupTables.anIntArray1204!![i_388_]
+                                    val i_410_ = SpotAnimVector.anIntArray1207!![i_388_]
+                                    val i_411_ = SpotAnimVector.anIntArray1204!![i_388_]
                                     val i_412_ = ((16383 + (anIntArray5543!![i_406_] * i_411_ + (i_410_ * anIntArray5593!![i_406_]))) shr 14)
                                     anIntArray5593!![i_406_] = (-(i_410_ * anIntArray5543!![i_406_]) + (anIntArray5593!![i_406_] * i_411_ - -16383)) shr 14
                                     anIntArray5543!![i_406_] = i_412_
                                 }
                                 if (i_387_ != 0) {
-                                    val i_413_ = TrigLookupTables.anIntArray1207!![i_387_]
-                                    val i_414_ = TrigLookupTables.anIntArray1204!![i_387_]
+                                    val i_413_ = SpotAnimVector.anIntArray1207!![i_387_]
+                                    val i_414_ = SpotAnimVector.anIntArray1204!![i_387_]
                                     val i_415_ = ((i_413_ * anIntArray5644!![i_406_] - (-(anIntArray5543!![i_406_] * i_414_) - 16383)) shr 14)
                                     anIntArray5644!![i_406_] = (anIntArray5644!![i_406_] * i_414_ + (-(i_413_ * anIntArray5543!![i_406_]) - -16383)) shr 14
                                     anIntArray5543!![i_406_] = i_415_
@@ -2032,22 +2032,22 @@ class OpenGlModel : AbstractModel {
                                     val i_435_ = aShortArray5649!![i_434_] - 1
                                     if (i_435_ == -1) break
                                     if (i_388_ != 0) {
-                                        val i_436_ = TrigLookupTables.anIntArray1207!![i_388_]
-                                        val i_437_ = TrigLookupTables.anIntArray1204!![i_388_]
+                                        val i_436_ = SpotAnimVector.anIntArray1207!![i_388_]
+                                        val i_437_ = SpotAnimVector.anIntArray1204!![i_388_]
                                         val i_438_ = ((16383 + (i_437_ * aShortArray5564!![i_435_]) + (aShortArray5583!![i_435_] * i_436_)) shr 14)
                                         aShortArray5583!![i_435_] = ((16383 + (i_437_ * (aShortArray5583!![i_435_])) + -((aShortArray5564!![i_435_]) * i_436_)) shr 14).toShort()
                                         aShortArray5564!![i_435_] = i_438_.toShort()
                                     }
                                     if (i_386_ != 0) {
-                                        val i_439_ = TrigLookupTables.anIntArray1207!![i_386_]
-                                        val i_440_ = TrigLookupTables.anIntArray1204!![i_386_]
+                                        val i_439_ = SpotAnimVector.anIntArray1207!![i_386_]
+                                        val i_440_ = SpotAnimVector.anIntArray1204!![i_386_]
                                         val i_441_ = (i_440_ * aShortArray5583!![i_435_] - ((aShortArray5576!![i_435_] * i_439_) + -16383)) shr 14
                                         aShortArray5576!![i_435_] = ((16383 + ((i_440_ * (aShortArray5576!![i_435_])) + (i_439_ * (aShortArray5583!![i_435_])))) shr 14).toShort()
                                         aShortArray5583!![i_435_] = i_441_.toShort()
                                     }
                                     if (i_387_ != 0) {
-                                        val i_442_ = TrigLookupTables.anIntArray1207!![i_387_]
-                                        val i_443_ = TrigLookupTables.anIntArray1204!![i_387_]
+                                        val i_442_ = SpotAnimVector.anIntArray1207!![i_387_]
+                                        val i_443_ = SpotAnimVector.anIntArray1204!![i_387_]
                                         val i_444_ = ((16383 + (i_442_ * aShortArray5576!![i_435_]) + (aShortArray5564!![i_435_] * i_443_)) shr 14)
                                         aShortArray5576!![i_435_] = ((16383 + (-((aShortArray5564!![i_435_]) * i_442_) + ((aShortArray5576!![i_435_]) * i_443_))) shr 14).toShort()
                                         aShortArray5564!![i_435_] = i_444_.toShort()
@@ -2238,22 +2238,22 @@ class OpenGlModel : AbstractModel {
                 anIntArray5593!![i_485_] -= ScreenAnchorAlignment.anInt2880
                 anIntArray5644!![i_485_] -= SpotAnimDefinition.anInt2398
                 if (i_481_ != 0) {
-                    val i_486_ = TrigLookupTables.anIntArray1207!![i_481_]
-                    val i_487_ = TrigLookupTables.anIntArray1204!![i_481_]
+                    val i_486_ = SpotAnimVector.anIntArray1207!![i_481_]
+                    val i_487_ = SpotAnimVector.anIntArray1204!![i_481_]
                     val i_488_ = (16383 + (i_487_ * anIntArray5543!![i_485_] + anIntArray5593!![i_485_] * i_486_) shr 14)
                     anIntArray5593!![i_485_] = ((-(anIntArray5543!![i_485_] * i_486_) + anIntArray5593!![i_485_] * i_487_ + 16383) shr 14)
                     anIntArray5543!![i_485_] = i_488_
                 }
                 if (i_479_ != 0) {
-                    val i_489_ = TrigLookupTables.anIntArray1207!![i_479_]
-                    val i_490_ = TrigLookupTables.anIntArray1204!![i_479_]
+                    val i_489_ = SpotAnimVector.anIntArray1207!![i_479_]
+                    val i_490_ = SpotAnimVector.anIntArray1204!![i_479_]
                     val i_491_ = ((-(anIntArray5644!![i_485_] * i_489_) + i_490_ * anIntArray5593!![i_485_] + 16383) shr 14)
                     anIntArray5644!![i_485_] = ((i_489_ * anIntArray5593!![i_485_] - (-(i_490_ * anIntArray5644!![i_485_]) + -16383)) shr 14)
                     anIntArray5593!![i_485_] = i_491_
                 }
                 if (i_480_ != 0) {
-                    val i_492_ = TrigLookupTables.anIntArray1207!![i_480_]
-                    val i_493_ = TrigLookupTables.anIntArray1204!![i_480_]
+                    val i_492_ = SpotAnimVector.anIntArray1207!![i_480_]
+                    val i_493_ = SpotAnimVector.anIntArray1204!![i_480_]
                     val i_494_ = (16383 + (anIntArray5644!![i_485_] * i_492_ - -(i_493_ * anIntArray5543!![i_485_])) shr 14)
                     anIntArray5644!![i_485_] = (16383 + (-(anIntArray5543!![i_485_] * i_492_) + i_493_ * anIntArray5644!![i_485_]) shr 14)
                     anIntArray5543!![i_485_] = i_494_
@@ -2494,22 +2494,22 @@ class OpenGlModel : AbstractModel {
                                     anIntArray5593!![i_534_] -= ScreenAnchorAlignment.anInt2880
                                     anIntArray5644!![i_534_] -= SpotAnimDefinition.anInt2398
                                     if (i_512_ != 0) {
-                                        val i_535_ = TrigLookupTables.anIntArray1207!![i_512_]
-                                        val i_536_ = TrigLookupTables.anIntArray1204!![i_512_]
+                                        val i_535_ = SpotAnimVector.anIntArray1207!![i_512_]
+                                        val i_536_ = SpotAnimVector.anIntArray1204!![i_512_]
                                         val i_537_ = ((i_535_ * anIntArray5593!![i_534_] - (-(anIntArray5543!![i_534_] * i_536_) - 16383)) shr 14)
                                         anIntArray5593!![i_534_] = (-(anIntArray5543!![i_534_] * i_535_) + (anIntArray5593!![i_534_] * i_536_) + 16383) shr 14
                                         anIntArray5543!![i_534_] = i_537_
                                     }
                                     if (i_510_ != 0) {
-                                        val i_538_ = TrigLookupTables.anIntArray1207!![i_510_]
-                                        val i_539_ = TrigLookupTables.anIntArray1204!![i_510_]
+                                        val i_538_ = SpotAnimVector.anIntArray1207!![i_510_]
+                                        val i_539_ = SpotAnimVector.anIntArray1204!![i_510_]
                                         val i_540_ = ((-(anIntArray5644!![i_534_] * i_538_) + (i_539_ * anIntArray5593!![i_534_]) + 16383) shr 14)
                                         anIntArray5644!![i_534_] = (16383 + ((i_538_ * anIntArray5593!![i_534_]) + (anIntArray5644!![i_534_] * i_539_))) shr 14
                                         anIntArray5593!![i_534_] = i_540_
                                     }
                                     if (i_511_ != 0) {
-                                        val i_541_ = TrigLookupTables.anIntArray1207!![i_511_]
-                                        val i_542_ = TrigLookupTables.anIntArray1204!![i_511_]
+                                        val i_541_ = SpotAnimVector.anIntArray1207!![i_511_]
+                                        val i_542_ = SpotAnimVector.anIntArray1204!![i_511_]
                                         val i_543_ = ((i_541_ * anIntArray5644!![i_534_] + ((i_542_ * anIntArray5543!![i_534_]) - -16383)) shr 14)
                                         anIntArray5644!![i_534_] = ((16383 + ((anIntArray5644!![i_534_] * i_542_) + -(anIntArray5543!![i_534_] * i_541_))) shr 14)
                                         anIntArray5543!![i_534_] = i_543_
@@ -2539,22 +2539,22 @@ class OpenGlModel : AbstractModel {
                                             val i_552_ = aShortArray5649!![i_551_] + -1
                                             if (i_552_ == -1) break
                                             if (i_512_ != 0) {
-                                                val i_553_ = (TrigLookupTables.anIntArray1207!![i_512_])
-                                                val i_554_ = (TrigLookupTables.anIntArray1204!![i_512_])
+                                                val i_553_ = (SpotAnimVector.anIntArray1207!![i_512_])
+                                                val i_554_ = (SpotAnimVector.anIntArray1204!![i_512_])
                                                 val i_555_ = ((16383 + (aShortArray5564!![i_552_]) * i_554_ + (aShortArray5583!![i_552_]) * i_553_) shr 14)
                                                 aShortArray5583!![i_552_] = ((16383 + ((i_554_ * (aShortArray5583!![i_552_])) + -(i_553_ * (aShortArray5564!![i_552_])))) shr 14).toShort()
                                                 aShortArray5564!![i_552_] = i_555_.toShort()
                                             }
                                             if (i_510_ != 0) {
-                                                val i_556_ = (TrigLookupTables.anIntArray1207!![i_510_])
-                                                val i_557_ = (TrigLookupTables.anIntArray1204!![i_510_])
+                                                val i_556_ = (SpotAnimVector.anIntArray1207!![i_510_])
+                                                val i_557_ = (SpotAnimVector.anIntArray1204!![i_510_])
                                                 val i_558_ = ((16383 + (-(i_556_ * (aShortArray5576!![i_552_])) + ((aShortArray5583!![i_552_]) * i_557_))) shr 14)
                                                 aShortArray5576!![i_552_] = (((i_556_ * (aShortArray5583!![i_552_])) + (i_557_ * (aShortArray5576!![i_552_])) + 16383) shr 14).toShort()
                                                 aShortArray5583!![i_552_] = i_558_.toShort()
                                             }
                                             if (i_511_ != 0) {
-                                                val i_559_ = (TrigLookupTables.anIntArray1207!![i_511_])
-                                                val i_560_ = (TrigLookupTables.anIntArray1204!![i_511_])
+                                                val i_559_ = (SpotAnimVector.anIntArray1207!![i_511_])
+                                                val i_560_ = (SpotAnimVector.anIntArray1204!![i_511_])
                                                 val i_561_ = ((16383 + (i_560_ * (aShortArray5564!![i_552_])) + (i_559_ * (aShortArray5576!![i_552_]))) shr 14)
                                                 aShortArray5576!![i_552_] = ((((aShortArray5576!![i_552_]) * i_560_) + -(i_559_ * (aShortArray5564!![i_552_])) + 16383) shr 14).toShort()
                                                 aShortArray5564!![i_552_] = i_561_.toShort()
@@ -2589,12 +2589,12 @@ class OpenGlModel : AbstractModel {
                         StreamingResourceRequest.aBoolean10450 = false
                     }
                     val is_571_ = IntArray(9)
-                    val i_572_ = TrigLookupTables.anIntArray1204!![i_510_]
-                    val i_573_ = TrigLookupTables.anIntArray1207!![i_510_]
-                    val i_574_ = TrigLookupTables.anIntArray1204!![i_511_]
-                    val i_575_ = TrigLookupTables.anIntArray1207!![i_511_]
-                    val i_576_ = TrigLookupTables.anIntArray1204!![i_512_]
-                    val i_577_ = TrigLookupTables.anIntArray1207!![i_512_]
+                    val i_572_ = SpotAnimVector.anIntArray1204!![i_510_]
+                    val i_573_ = SpotAnimVector.anIntArray1207!![i_510_]
+                    val i_574_ = SpotAnimVector.anIntArray1204!![i_511_]
+                    val i_575_ = SpotAnimVector.anIntArray1207!![i_511_]
+                    val i_576_ = SpotAnimVector.anIntArray1204!![i_512_]
+                    val i_577_ = SpotAnimVector.anIntArray1207!![i_512_]
                     val i_578_ = 8192 + i_576_ * i_573_ shr 14
                     val i_579_ = 8192 + i_573_ * i_577_ shr 14
                     is_571_[6] = (8192 + (i_579_ * i_574_ + i_576_ * -i_575_) shr 14)
@@ -2965,7 +2965,7 @@ class OpenGlModel : AbstractModel {
                 anInt5556 = i_697_
                 anInt5648 = i
                 aHa_Sub2_5598 = var_ha_Sub2
-                if (method616(2, i, i_697_)) aHoverActionEntry_5605 = HoverActionEntry(null, 5126, 3, 0)
+                if (ParticleEmitterDef.method616(2, i, i_697_)) aHoverActionEntry_5605 = HoverActionEntry(null, 5126, 3, 0)
                 if (IndexedFileCache.method1163(i_697_, 78.toByte(), i)) aHoverActionEntry_5620 = HoverActionEntry(null, 5126, 2, 0)
                 if (method166(69.toByte(), i_697_, i)) aHoverActionEntry_5563 = HoverActionEntry(null, 5126, 3, 0)
                 if (HitsplatDefinition.method1193(i_697_, i, true)) aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
@@ -3324,13 +3324,13 @@ class OpenGlModel : AbstractModel {
                                     f_743_ = OpenGlModel.aFloatArray2075!![0]
                                     f_744_ = OpenGlModel.aFloatArray2075!![1]
                                 } else if (i_748_.toInt() == 3) {
-                                    SpotAnimDefinition.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_780_.toInt()]), OpenGlModel.aFloatArray2075, (modelDefinition.anIntArray1852[i_780_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_780_.toInt()]), i_784_, -4, fs)
+                                    SoftwareModel.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_780_.toInt()]), OpenGlModel.aFloatArray2075, (modelDefinition.anIntArray1852[i_780_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_780_.toInt()]), i_784_, -4, fs)
                                     f_740_ = OpenGlModel.aFloatArray2075!![1]
                                     f = OpenGlModel.aFloatArray2075!![0]
-                                    SpotAnimDefinition.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_781_.toInt()]), OpenGlModel.aFloatArray2075, (modelDefinition.anIntArray1852[i_781_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_781_.toInt()]), i_784_, -4, fs)
+                                    SoftwareModel.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_781_.toInt()]), OpenGlModel.aFloatArray2075, (modelDefinition.anIntArray1852[i_781_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_781_.toInt()]), i_784_, -4, fs)
                                     f_741_ = OpenGlModel.aFloatArray2075!![0]
                                     f_742_ = OpenGlModel.aFloatArray2075!![1]
-                                    SpotAnimDefinition.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_782_.toInt()]), OpenGlModel.aFloatArray2075, (modelDefinition.anIntArray1852[i_782_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_782_.toInt()]), i_784_, -4, fs)
+                                    SoftwareModel.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_782_.toInt()]), OpenGlModel.aFloatArray2075, (modelDefinition.anIntArray1852[i_782_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_782_.toInt()]), i_784_, -4, fs)
                                     f_744_ = OpenGlModel.aFloatArray2075!![1]
                                     f_743_ = OpenGlModel.aFloatArray2075!![0]
                                     if ((0x1 and i_786_.toInt()) == 0) {

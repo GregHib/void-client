@@ -49,11 +49,11 @@ class MinimapAreaMarkerNode : HashLinkedListNode() {
                         if (i_7_ < 0) i_7_ = 0
                         if (i_8_ >= SpotAnimEntity.anInt6451) i_8_ = SpotAnimEntity.anInt6451 - 1
                         for (i_9_ in i_7_..i_8_) {
-                            val l = (HardCacheEntryReference.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_])
-                            if ((l and 0xffffL) == 0L) HardCacheEntryReference.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or CalendarUtil.anInt4135.toLong()
-                            else if ((l and 0xffff0000L) == 0L) HardCacheEntryReference.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or (CalendarUtil.anInt4135.toLong() shl 16)
-                            else if ((l and 0xffff00000000L) == 0L) HardCacheEntryReference.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or (CalendarUtil.anInt4135.toLong() shl 32)
-                            else if ((l and 0xffffffffffffL.inv()) == 0L) HardCacheEntryReference.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or (CalendarUtil.anInt4135.toLong() shl 48)
+                            val l = (RenderbufferObject.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_])
+                            if ((l and 0xffffL) == 0L) RenderbufferObject.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or CalendarUtil.anInt4135.toLong()
+                            else if ((l and 0xffff0000L) == 0L) RenderbufferObject.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or (CalendarUtil.anInt4135.toLong() shl 16)
+                            else if ((l and 0xffff00000000L) == 0L) RenderbufferObject.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or (CalendarUtil.anInt4135.toLong() shl 32)
+                            else if ((l and 0xffffffffffffL.inv()) == 0L) RenderbufferObject.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or (CalendarUtil.anInt4135.toLong() shl 48)
                         }
                     }
                 }

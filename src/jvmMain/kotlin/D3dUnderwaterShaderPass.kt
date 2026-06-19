@@ -57,13 +57,13 @@ class D3dUnderwaterShaderPass internal constructor(private var aD3dRenderDevice_
         this.aHa_Sub3_4479.method3897(1, -4382)
         this.aHa_Sub3_4479.method3850(82.toByte(), null)
         this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, i + 25, ParticleSystemState.aRenderConfigFactory_2207)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
         this.aHa_Sub3_4479.method3849(47.toByte(), 2, RenderListTextureNode.aTrigLookupTables_9485)
-        this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+        this.aHa_Sub3_4479.method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)
         this.aHa_Sub3_4479.method3897(0, i.toInt() xor 0x114a.inv())
         if (aBoolean7326) {
-            this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
-            this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
+            this.aHa_Sub3_4479.method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)
             aBoolean7326 = false
         }
         if (null != anIDirect3DVertexShader7333) {
@@ -105,8 +105,8 @@ class D3dUnderwaterShaderPass internal constructor(private var aD3dRenderDevice_
             }
         } else {
             if (aBoolean7326) {
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
-                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)
                 aBoolean7326 = false
             }
             this.aHa_Sub3_4479.method3850((-103).toByte(), renderable)
@@ -136,7 +136,7 @@ class D3dUnderwaterShaderPass internal constructor(private var aD3dRenderDevice_
         if (i != 15192) method3520((-41).toByte())
         this.aHa_Sub3_4479.method3874(RenderQueueState.aRenderConfigFactory_6519, 105, MediaStreamClient.aRenderConfigFactory_3196)
         this.aHa_Sub3_4479.method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
-        this.aHa_Sub3_4479.method3924(true, false, 2, WidgetRedrawRegion.aTrigLookupTables_4247, false)
+        this.aHa_Sub3_4479.method3924(true, false, 2, LoadingBarRenderer.aTrigLookupTables_4247, false)
         this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aTrigLookupTables_8737)
         this.aHa_Sub3_4479.method3897(0, -4382)
         method3528(106)

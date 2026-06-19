@@ -68,7 +68,7 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
         fun method1077(var_renderer: Renderer?, i: Byte) {
             anInt4700++
             if ((FileExistsCondition.anInt4776 >= 2 || RenderNodeStatics.aBoolean9722) && RegionSceneLoader.aWidgetComponent_3701 == null) {
-                if (i >= -71) Companion.method1077(null, (-41).toByte())
+                if (i >= -71) method1077(null, (-41).toByte())
                 var string: String?
                 if (RenderNodeStatics.aBoolean9722 && FileExistsCondition.anInt4776 < 2) string = (ItemNameResolver.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.anInt6967, 544) + ItemNameResolver.aString5000 + " ->")
                 else if (!InputSettingsState.shiftClick || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -121) || FileExistsCondition.anInt4776 <= 2) {
@@ -112,15 +112,15 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
                         FireParticleStream.aRandom93,
                         WidgetActionEntry.aWidgetComponent_6990!!.anInt762,
                         LongHashTable.anInt451,
-                        Hashtable.anInt4383,
+                        SpriteRenderEntry.anInt4383,
                         -33,
                         SoundCacheState.anInt4141,
                         string,
                         RenderableGroup.anIntArray5007
                     )
                     method226(RenderableGroup.anIntArray5007!![0], RenderableGroup.anIntArray5007!![2], RenderableGroup.anIntArray5007!![1], 0, RenderableGroup.anIntArray5007!![3])
-                } else if (CameraRotationStub.aWidgetComponent_323 != null && (HardCacheEntryReference.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186)) {
-                    val i_1_ = (NodeDequeStatics.aFont_3326!!.method2571(-1, Hashtable.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, TileRenderState.aAbstractModelRendererArray4234, 16 + SocketGameConnection.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, FireParticleStream.aRandom93))
+                } else if (CameraRotationStub.aWidgetComponent_323 != null && (Client.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186)) {
+                    val i_1_ = (NodeDequeStatics.aFont_3326!!.method2571(-1, SpriteRenderEntry.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, TileRenderState.aAbstractModelRendererArray4234, 16 + SocketGameConnection.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, FireParticleStream.aRandom93))
                     method226(ConfigValueProvider.Companion.anInt4911 - -4, (WorldMapLabel.aFontDefinition_4962!!.method1183(true, string) + i_1_), SocketGameConnection.anInt5832, 0, 16)
                 }
             }

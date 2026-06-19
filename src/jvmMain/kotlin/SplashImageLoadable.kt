@@ -17,7 +17,7 @@ class SplashImageLoadable internal constructor(js5Archive: Js5Archive?, configVa
         anInt4696++
         if (bool) {
             val i_0_ = (max(LocTypeDefinition.anInt4017, NpcSpawnDecoder.anInt1524))
-            val i_1_ = (max(HardCacheEntryReference.anInt10432, OpenGlRenderer.anInt7666))
+            val i_1_ = (max(GameDisplayManager.anInt10432, OpenGlRenderer.anInt7666))
             val i_2_ = aAbstractModelRenderer_4688!!.method966()
             val i_3_ = aAbstractModelRenderer_4688!!.method980()
             var i_4_ = 0

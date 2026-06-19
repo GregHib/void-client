@@ -1,4 +1,4 @@
-import InputTracker.Companion.method3591
+import ModelFacePriorityNode.Companion.method3591
 import MapRegionLoader.Companion.method756
 import MapRegionLoader.Companion.method760
 import MapRegionLoader.Companion.method761
@@ -144,12 +144,12 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                             } else {
                                 var i_28_ = ((Math.random() * anInt6456.toDouble()).toInt() + anInt6459)
                                 i_28_ = i_28_ and 0x3fff
-                                val i_29_ = TrigLookupTables.anIntArray1207!![i_28_]
-                                val i_30_ = TrigLookupTables.anIntArray1204!![i_28_]
+                                val i_29_ = SpotAnimVector.anIntArray1207!![i_28_]
+                                val i_30_ = SpotAnimVector.anIntArray1204!![i_28_]
                                 var i_31_ = anInt6452 + (anInt6454.toDouble() * Math.random()).toInt()
                                 i_31_ = i_31_ and 0x1fff
-                                val i_32_ = TrigLookupTables.anIntArray1207!![i_31_]
-                                val i_33_ = TrigLookupTables.anIntArray1204!![i_31_]
+                                val i_32_ = SpotAnimVector.anIntArray1207!![i_31_]
+                                val i_33_ = SpotAnimVector.anIntArray1204!![i_31_]
                                 val i_34_ = 13
                                 i_25_ = i_32_ * i_30_ shr i_34_
                                 i_26_ = -1 * (i_33_ shl 1)

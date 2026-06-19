@@ -1,4 +1,3 @@
-
 /* Class356 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -10,7 +9,6 @@ class Hashtable internal constructor(var anInt4377: Int) {
     private var anInt4391 = 0
 
     fun method3474(i: Int): Int {
-        if (i != 1) method3479(20)
         anInt4387++
         var i_0_ = 0
         var i_1_ = 0
@@ -28,7 +26,6 @@ class Hashtable internal constructor(var anInt4377: Int) {
 
     fun method3475(bool: Boolean): Int {
         anInt4376++
-        if (bool != true) method3478(false)
         return this.anInt4377
     }
 
@@ -36,7 +33,6 @@ class Hashtable internal constructor(var anInt4377: Int) {
         anInt4384++
         if (aLinkedListNode_4389 == null) return null
         val class348 = (this.aLinkedListNodeArray4374[((this.anInt4377 - 1).toLong() and aLong4385).toInt()])
-        if (bool != true) method3479(4)
         while ( /**/aLinkedListNode_4389 !== class348) {
             if (aLinkedListNode_4389!!.aLong4291 == aLong4385) {
                 val class348_3_ = aLinkedListNode_4389
@@ -50,7 +46,6 @@ class Hashtable internal constructor(var anInt4377: Int) {
     }
 
     fun method3477(i: Int, linkedListNodes: Array<LinkedListNode?>): Int {
-        if (i != 3) anInt4383 = -76
         anInt4380++
         var i_4_ = 0
         var i_5_ = 0
@@ -155,34 +150,13 @@ class Hashtable internal constructor(var anInt4377: Int) {
     companion object {
         var anInt4375: Int = 0
         var anInt4376: Int = 0
-        var anInt4378: Int = 0
         var anInt4379: Int = 0
         var anInt4380: Int = 0
         var anInt4381: Int = 0
         var anInt4382: Int = 0
-        @JvmField
-        var anInt4383: Int = 0
         var anInt4384: Int = 0
         var anInt4386: Int = 0
         var anInt4387: Int = 0
-        var aIntRange_4388: IntRange? = IntRange(3, 3)
-        @JvmStatic
-        fun method3478(bool: Boolean) {
-            aIntRange_4388 = null
-            if (bool != false) anInt4383 = 67
-        }
 
-        fun method3479(i: Int): CameraSplineNode? {
-            anInt4378++
-            if (i != -1) anInt4383 = 43
-            if (MapRegionLoader.aNodeDeque_1254 == null || RenderNodeStatics.aWidgetRedrawTracker_9716 == null) return null
-            var class348_sub21 = RenderNodeStatics.aWidgetRedrawTracker_9716!!.method2329(10) as CameraSplineNode?
-            while (class348_sub21 != null) {
-                val class42 = MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 92.toByte())
-                if (class42 != null && class42.aBoolean609 && class42.method373(MapRegionLoader.anVarResolver_1244!!, 127)) return class348_sub21
-                class348_sub21 = RenderNodeStatics.aWidgetRedrawTracker_9716!!.method2329(i xor 0xa.inv()) as CameraSplineNode?
-            }
-            return null
-        }
     }
 }

@@ -9,6 +9,7 @@ import java.awt.Container
  * Class215
  */
 object GameDisplayManager {
+    var anInt10432: Int = 0
     @JvmField
     var anInt2834: Int = 0
     var anInt2835: Int = 0
@@ -52,19 +53,19 @@ object GameDisplayManager {
             }
             if (i_2_ == 1) {
                 LocTypeDefinition.anInt4017 = NpcSpawnDecoder.anInt1524
-                HardCacheEntryReference.anInt10432 = OpenGlRenderer.anInt7666
+                GameDisplayManager.anInt10432 = OpenGlRenderer.anInt7666
                 ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 + -NpcSpawnDecoder.anInt1524) / 2
                 TimingCounters.anInt4167 = 0
             } else method2158(56.toByte())
             if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) {
-                if (LocTypeDefinition.anInt4017 < 1024 && (HardCacheEntryReference.anInt10432 < 768)) {
+                if (LocTypeDefinition.anInt4017 < 1024 && (GameDisplayManager.anInt10432 < 768)) {
                     /* empty */
                 }
             }
             if (bool) OutgoingPacketNode.method3327(1406)
             else {
-                ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
-                if (!GrayscaleNoiseTexture.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
+                ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (GameDisplayManager.anInt10432))
+                if (!GrayscaleNoiseTexture.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, (GameDisplayManager.anInt10432))
                 else TerrainTileStatics.method3980(86, ParticleSystemRenderer.aCanvas3869!!)
                 if (RsaVarbitHandler.aFrame4904 === container) {
                     val insets = RsaVarbitHandler.aFrame4904!!.getInsets()

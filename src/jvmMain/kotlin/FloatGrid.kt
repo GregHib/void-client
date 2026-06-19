@@ -36,7 +36,7 @@ class FloatGrid internal constructor(var anInt4974: Int, var anInt4978: Int) : M
                     i_2_ = NativeTerrainTile.method4008((-128).toByte())
                     i_3_ = method260(false)
                 }
-                method1373(RenderNodeStatics.anInt9721, i_2_, i_2_, LocTypeDefinition.anInt4017 + i_2_, i_1_, i_0_, -1391, i_0_ + i_2_, HardCacheEntryReference.anInt10432 + i_3_, i_3_, i_3_ + i_1_, i_3_)
+                method1373(RenderNodeStatics.anInt9721, i_2_, i_2_, LocTypeDefinition.anInt4017 + i_2_, i_1_, i_0_, -1391, i_0_ + i_2_, GameDisplayManager.anInt10432 + i_3_, i_3_, i_3_ + i_1_, i_3_)
                 if (HeapDiagnosticsHolder.aWidgetComponent_2249 != null) NativeLibraryUnloader.method1630(0, i_3_ + i_1_, i_2_ + i_0_)
             }
         }

@@ -24,7 +24,7 @@ class TypedRecordTable {
             if (projectileFactory == WeaveTextureNode.aProjectileFactory_9274) return ParticleEmitterDefExt.Companion.method2189(class348_sub49!!, 86)
             if (projectileFactory == SkyboxGradient.aProjectileFactory_3934) return WorldMapElement.method179(16533, class348_sub49!!)
             if (MapSceneDefLoader.aProjectileFactory_2489 == projectileFactory) return StringValueNode.method3322(0, class348_sub49!!)
-            if (projectileFactory == SpotAnimVector.aProjectileFactory_2307) return MinimapLineDrawer.method472(-27794, class348_sub49!!)
+            if (projectileFactory == aProjectileFactory_2307) return MinimapLineDrawer.method472(-27794, class348_sub49!!)
             if (OrientationRotator.aProjectileFactory_2045 == projectileFactory) return MaterialTypeMarker.method2612(class348_sub49!!, true)
             if (LocTypeDefLoader.aProjectileFactory_2507 == projectileFactory) return GlVertexBufferArb.method2128(-1730, class348_sub49!!)
             return null
@@ -119,8 +119,8 @@ class TypedRecordTable {
                         val i_20_: Int
                         if (WeaveTextureNode.anInt9282 == 4) i_20_ = CameraDistanceOptionState.aFloat3938.toInt() and 0x3fff
                         else i_20_ = 0x3fff and (CameraDistanceOptionState.aFloat3938.toInt() + OpenGlRenderNode.anInt10483)
-                        var i_21_ = TrigLookupTables.anIntArray1207!![i_20_]
-                        var i_22_ = TrigLookupTables.anIntArray1204!![i_20_]
+                        var i_21_ = SpotAnimVector.anIntArray1207!![i_20_]
+                        var i_22_ = SpotAnimVector.anIntArray1204!![i_20_]
                         if (WeaveTextureNode.anInt9282 != 4) {
                             i_22_ = i_22_ * 256 / (FloatBuffer.anInt9750 - -256)
                             i_21_ = 256 * i_21_ / (FloatBuffer.anInt9750 - -256)
@@ -200,5 +200,6 @@ class TypedRecordTable {
             } while (false)
             return c.lowercaseChar()
         }
+        var aProjectileFactory_2307: ProjectileFactory? = ProjectileFactory(7, 2)
     }
 }

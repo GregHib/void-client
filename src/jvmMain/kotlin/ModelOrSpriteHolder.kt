@@ -38,7 +38,7 @@ class ModelOrSpriteHolder {
         fun method172(i: Int, js5Archive: Js5Archive?) {
             if (i != 30284) method170(true)
             anInt116++
-            CachedRgbNoiseTexture.aJs5Archive_8670 = js5Archive
+            SpotAnimDefCache.aJs5Archive_8670 = js5Archive
         }
 
         @JvmStatic

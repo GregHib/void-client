@@ -1,13 +1,17 @@
 import AbstractFrameBufferSurface.Companion.method3007
-import CacheEntryReference.Companion.method3196
+import Client.Companion.method3196
 import CacheIndexManager.Companion.method2355
 import CameraConfigDefinition.Companion.method1922
+import ChatCommandProcessor.method703
 import CombineTextureNode.Companion.method3088
+import GlTextureBase.Companion.method235
+import GraphicsOptionState.Companion.method1713
+import ChatCommandProcessor.aShort9555
 import HeadIconRenderer.Companion.method1213
-import LinkedNodeListIterator.Companion.method1006
 import LoadProgressCounters.Companion.method1372
 import LoadingScreenImageNode.Companion.method3177
 import RsaPacketDecoder.Companion.method2672
+import SpriteBlitter.method882
 import SpriteRgbTextureNode.Companion.method3093
 
 object ByteBufferStatics {
@@ -49,6 +53,48 @@ object ByteBufferStatics {
         if (i != -2) method3376(-87)
     }
 
+    var anInt9547: Int = 0
+    fun method3198(bool: Boolean, i: Byte) {
+        anInt9547++
+        if (bool) {
+            if (RenderNodeStatics.anInt9721 != -1) GlTextureBase.method235(RenderNodeStatics.anInt9721, (-113).toByte())
+            var class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as RegionSceneShifter?
+            while (class348_sub41 != null) {
+                if (!class348_sub41.method2712(4.toByte())) {
+                    class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3484(i.toInt() xor 0x2c.inv()) as RegionSceneShifter?)
+                    if (class348_sub41 == null) break
+                }
+                ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
+                class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as RegionSceneShifter?)
+            }
+            RenderNodeStatics.anInt9721 = -1
+            MinimapSpriteRenderer.aHashtable_4915 = Hashtable(8)
+            SpriteBlitter.method882(11.toByte())
+            RenderNodeStatics.anInt9721 = GlBufferObject.anInt4737
+            method1713(false, 520)
+            TextureCache.method3466(100)
+            ChatCommandProcessor.method703(RenderNodeStatics.anInt9721)
+        }
+        ProjectileFactory.aBoolean2895 = false
+        TextureGenerator.aString2496 = ""
+        OpenGlModel.aString5600 = TextureGenerator.aString2496
+        RenderableGroup.method1448(-56)
+        Tooltip.anInt4458 = -1
+        CacheArchiveIndexLoader.method338(i + 45, StreamingResourceRequest.anInt10447)
+        LocalPlayerState.aPlayer_1907 = Player()
+        LocalPlayerState.aPlayer_1907!!.x = 512 * GlCubemapLightPass.anInt7319 / 2
+        LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0] = GlCubemapLightPass.anInt7319 / 2
+        LocalPlayerState.aPlayer_1907!!.y = 512 * RangeThresholdTextureNode.anInt9109 / 2
+        LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0] = RangeThresholdTextureNode.anInt9109 / 2
+        CompositeRgbNoiseTexture.anInt8685 = 0
+        GlslMaterialPass.anInt6246 = CompositeRgbNoiseTexture.anInt8685
+        if (WeaveTextureNode.anInt9282 == 2) {
+            GlslMaterialPass.anInt6246 = IntKeyNode.anInt6981 shl 9
+            CompositeRgbNoiseTexture.anInt8685 = CollisionMapAccessor.anInt3550 shl 9
+        } else CameraSplineNode.method2954(62.toByte())
+        SceneObjectSpawner.method773(true)
+    }
+
     fun method3379(i: Int, i_71_: Int) {
         anInt7201++
         if (i_71_ != WorldMapRenderer.anInt4674) {
@@ -60,7 +106,7 @@ object ByteBufferStatics {
                 ItemDefinition.aAbstractGameSocket_2773!!.method1700(36.toByte())
                 ItemDefinition.aAbstractGameSocket_2773 = null
             }
-            if (i_71_ == 3) CacheEntryReference.method3198((GlBufferObject.anInt4737 != RenderNodeStatics.anInt9721), (-45).toByte())
+            if (i_71_ == 3) method3198((GlBufferObject.anInt4737 != RenderNodeStatics.anInt9721), (-45).toByte())
             if (i_71_ == 7) method1006((RenderNodeStatics.anInt9721 != FloorOverlayDefinition.anInt970), 102.toByte())
             if (i_71_ == 5) {
                 if (NullOggStream.aString9043 == null) method1213(OpenGlModel.aString5600, TextureGenerator.aString2496, -124)
@@ -80,7 +126,7 @@ object ByteBufferStatics {
                 VideoAdChecker.aJs5Archive_3183!!.anInt634 = 2
                 AnimationFrameState.aJs5Archive_1538!!.anInt634 = 2
                 FloatGrid.aJs5Archive_4975!!.anInt634 = 2
-                SpotAnimVector.aJs5Archive_2306!!.anInt634 = 2
+                ScriptOpcodeHolder.aJs5Archive_2306!!.anInt634 = 2
                 OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 2
                 BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 2
             }
@@ -95,7 +141,7 @@ object ByteBufferStatics {
                 VideoAdChecker.aJs5Archive_3183!!.anInt634 = 1
                 AnimationFrameState.aJs5Archive_1538!!.anInt634 = 1
                 FloatGrid.aJs5Archive_4975!!.anInt634 = 1
-                SpotAnimVector.aJs5Archive_2306!!.anInt634 = 1
+                ScriptOpcodeHolder.aJs5Archive_2306!!.anInt634 = 1
                 OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 1
                 BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 1
             }
@@ -118,5 +164,32 @@ object ByteBufferStatics {
             if (GroundDecorSceneEntity.method2402(i_71_, (-64).toByte()) || i_71_ == 13) FacingDirectionNode.aRenderer6654!!.method3673()
             WorldMapRenderer.anInt4674 = i_71_
         }
+    }
+
+
+    var anInt1655: Int = 0
+    fun method1006(bool: Boolean, i: Byte) {
+        anInt1655++
+        if (bool) {
+            if (RenderNodeStatics.anInt9721 != -1) method235(RenderNodeStatics.anInt9721, ((-108).toByte()).toByte())
+            var class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as? RegionSceneShifter
+            while (class348_sub41 != null) {
+                if (!class348_sub41.method2712(4.toByte())) {
+                    class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3484(0) as? RegionSceneShifter)
+                    if (class348_sub41 == null) break
+                }
+                ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
+                class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as? RegionSceneShifter)
+            }
+            RenderNodeStatics.anInt9721 = -1
+            MinimapSpriteRenderer.aHashtable_4915 = Hashtable(8)
+            method882(11.toByte())
+            RenderNodeStatics.anInt9721 = FloorOverlayDefinition.anInt970
+            method1713(false, 520)
+            TextureCache.method3466(-119)
+            method703(RenderNodeStatics.anInt9721)
+        }
+        ProjectileFactory.aBoolean2895 = true
+        if (i < 49) WhirlpoolHash.anInt1651 = 10
     }
 }

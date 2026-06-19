@@ -3,8 +3,10 @@ import MidiSequencePlayer.Companion.method2862
 import FixedFunctionWaterPass.Companion.method3548
 import WorldMapElement.Companion.method181
 import GameClock.method599
+import RegionMapDecoder.aByteArrayArray1887
 import TrigLookupTables.Companion.method726
 import NativeTerrainTile.Companion.method4004
+import kotlin.collections.set
 
 /* Class170 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -52,7 +54,7 @@ class VarpStore : VarResolver {
         if (i_3_ != -65536) return -52
         val i_5_ = class146.anInt2016
         val i_6_ = class146.anInt2020
-        val i_7_ = ModelFacePriorityNode.anIntArray1885!![-i_5_ + i_6_]
+        val i_7_ = anIntArray1885!![-i_5_ + i_6_]
         return this.anIntArray5063[i_4_] shr i_5_ and i_7_
     }
 
@@ -63,7 +65,7 @@ class VarpStore : VarResolver {
         val i_10_ = class146!!.anInt2019
         val i_11_ = class146.anInt2016
         val i_12_ = class146.anInt2020
-        var i_13_ = ModelFacePriorityNode.anIntArray1885!![-i_11_ + i_12_]
+        var i_13_ = anIntArray1885!![-i_11_ + i_12_]
         if (i_8_ < (i_9_.inv()) || i_13_ < i_9_) i_9_ = 0
         i_13_ = i_13_ shl i_11_
         method1306((-78).toByte(), i_9_ shl i_11_ and i_13_ or ((this.anIntArray5063[i_10_]) and (i_13_.inv())), i_10_)
@@ -109,7 +111,7 @@ class VarpStore : VarResolver {
         val i_33_ = class146.anInt2016
         if (i < -56) {
             val i_34_ = class146.anInt2020
-            var i_35_ = ModelFacePriorityNode.anIntArray1885!![i_34_ - i_33_]
+            var i_35_ = anIntArray1885!![i_34_ - i_33_]
             if (i_31_ < 0 || i_35_ < i_31_) i_31_ = 0
             i_35_ = i_35_ shl i_33_
             method1313(42.toByte(), (i_31_ shl i_33_ and i_35_ or ((i_35_.inv()) and anIntArray5078[i_32_])), i_32_)
@@ -191,7 +193,7 @@ class VarpStore : VarResolver {
                     return
                 }
                 if (WallEntity.aLinkedQueueNode_8766!!.anInt1997 == 2) {
-                    method2862(RenderableGroup.aPrivilegedOperationWorker_5017, CacheEntryReference.aString9554, -120, 2)
+                    method2862(RenderableGroup.aPrivilegedOperationWorker_5017, ChatCommandProcessor.aString9554, -120, 2)
                     WallEntity.aLinkedQueueNode_8766 = null
                     return
                 }
@@ -348,6 +350,22 @@ class VarpStore : VarResolver {
                 }
             }
             anInt5080++
+        }
+        var anIntArray1885: IntArray? = IntArray(32)
+        init {
+            var i = 2
+            for (i_7_ in 0..31) {
+                anIntArray1885!![i_7_] = -1 + i
+                i += i
+            }
+        }
+        @JvmStatic
+        fun method1126(i: Int) {
+            if (i == 32) {
+                ClientLoadStateMachine.aJs5Archive_1878 = null
+                aByteArrayArray1887 = null
+                VarpStore.anIntArray1885 = null
+            }
         }
     }
 }

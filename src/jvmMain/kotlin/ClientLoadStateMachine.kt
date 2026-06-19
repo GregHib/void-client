@@ -85,7 +85,7 @@ object ClientLoadStateMachine {
             GroundItemRenderState.anInt1663 = SpriteRgbTextureNode.aJs5Archive_10426!!.method389(i + 28561)
             DualMaterialContainer.method1001(ScrollTexMaterialPass.aJs5Archive_6277!!, 0)
             val i_3_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(i xor 0x11ae)
-            PerlinTextureProvider.aCollisionMapRegion_5813 = CollisionMapRegion(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, SpriteRgbTextureNode.aJs5Archive_10426)
+            PerlinTextureProvider.aCollisionMapRegion_5813 = CollisionMapRegion(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, SpriteRgbTextureNode.aJs5Archive_10426)
             var `is` = PerlinTextureProvider.aCollisionMapRegion_5813!!.method1046(i_3_, 0)
             if (`is`!!.size == 0) `is` = PerlinTextureProvider.aCollisionMapRegion_5813!!.method1046(0, 0)
             val dualMaterialContainer = DualMaterialContainer(ScrollTexMaterialPass.aJs5Archive_6277, SoftwareSpriteRaster.aJs5Archive_1627)
@@ -122,7 +122,7 @@ object ClientLoadStateMachine {
             TextureGenerator.aJs5Archive_2490 = WorldMapTextLabel.method3571(false, 1, (-23).toByte(), 1)
             DirectionUtil.aJs5Archive_1541 = WorldMapTextLabel.method3571(false, 2, (-23).toByte(), 1)
             IntKeyNode.aJs5Archive_6980 = WorldMapTextLabel.method3571(false, 3, (-23).toByte(), 1)
-            ModelFacePriorityNode.aJs5Archive_1878 = WorldMapTextLabel.method3571(false, 4, (-23).toByte(), 1)
+            ClientLoadStateMachine.aJs5Archive_1878 = WorldMapTextLabel.method3571(false, 4, (-23).toByte(), 1)
             AbstractCameraTransformStatics.aJs5Archive_7382 = WorldMapTextLabel.method3571(true, 5, (-23).toByte(), 1)
             CachedRgbNoiseTexture.aJs5Archive_8667 = WorldMapTextLabel.method3571(true, 6, (-23).toByte(), 1)
             RasterSprite.aJs5Archive_5207 = WorldMapTextLabel.method3571(false, 7, (-23).toByte(), 1)
@@ -135,7 +135,7 @@ object ClientLoadStateMachine {
             AnimationFrameState.aJs5Archive_1538 = WorldMapTextLabel.method3571(false, 16, (-23).toByte(), 1)
             VideoAdChecker.aJs5Archive_3183 = WorldMapTextLabel.method3571(false, 17, (-23).toByte(), 1)
             FloatGrid.aJs5Archive_4975 = WorldMapTextLabel.method3571(false, 18, (-23).toByte(), 1)
-            SpotAnimVector.aJs5Archive_2306 = WorldMapTextLabel.method3571(false, 19, (-23).toByte(), 1)
+            ScriptOpcodeHolder.aJs5Archive_2306 = WorldMapTextLabel.method3571(false, 19, (-23).toByte(), 1)
             OpenGlRenderNode.aJs5Archive_10480 = WorldMapTextLabel.method3571(false, 20, (-23).toByte(), 1)
             BufferedRandomAccessFile.aJs5Archive_1322 = WorldMapTextLabel.method3571(false, 21, (-23).toByte(), 1)
             MidiSequencePlayer.aJs5Archive_8926 = WorldMapTextLabel.method3571(false, 22, (-23).toByte(), 1)
@@ -178,31 +178,31 @@ object ClientLoadStateMachine {
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1035) {
             if (AbstractFrameBufferSurface.anInt6923 != -1 && !RasterSprite.aJs5Archive_5207!!.method420(-10499, AbstractFrameBufferSurface.anInt6923, 0)) return 99
             SourceRowTextureNode.aRenderConfig9113 = TextureMetadataProvider(KeyEventNode.aJs5Archive_4770, WorldMapTextLabel.aJs5Archive_8589, CameraRotationStub.aJs5Archive_322)
-            ProjectionCameraTransform.aEmoteDefCache_5764 = EmoteDefCache(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            OpenGlModel.aNpcDefinitionCache_5558 = NpcDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            GraphicsOptionState.aItemDefinitionLoader_3147 = ItemDefinitionLoader(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
-            RegionTileNode.aCacheArchiveIndexLoader_6653 = CacheArchiveIndexLoader(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, VideoAdChecker.aJs5Archive_3183)
-            RenderConfigFactory.aLocDefinitionCache_2979 = LocDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            Tooltip.aParticleDefLoader_4460 = ParticleDefLoader(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            FileExistsCondition.aModelDefinitionCache_4782 = ModelDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
-            RadialTextureNode.aModelDefinitionLoader_9342 = ModelDefinitionLoader(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, RasterSprite.aJs5Archive_5207)
-            ScrollingWidgetComponentNode.aParticleEffectCache_8378 = ParticleEffectCache(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            AbstractTileShapeStatics.aMapSceneDefLoader_6559 = MapSceneDefLoader(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            GradientLookupEffect.aSeqDefinitionCache_9195 = SeqDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, AnimationFrameState.aJs5Archive_1538, RasterSprite.aJs5Archive_5207)
-            TheoraVideoStream.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
-            ModelOrSpriteHolder.aTextureDefinitionLoader_117 = TextureDefinitionLoader(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
-            MapAreaDefinition.aBufferedMessageQueue_2529 = BufferedMessageQueue(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, FloatGrid.aJs5Archive_4975, RasterSprite.aJs5Archive_5207)
-            ClientException.aModelHeaderCache_112 = ModelHeaderCache(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, ProjectionCameraTransform.aEmoteDefCache_5764, SpotAnimVector.aJs5Archive_2306, RasterSprite.aJs5Archive_5207)
-            TheoraVideoStream.aLocTypeDefLoader_9036 = LocTypeDefLoader(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            ParticleEmitterNode.aWidgetCache_191 = WidgetCache(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, OpenGlRenderNode.aJs5Archive_10480, ShortKeyNode.aJs5Archive_6909, TextureGenerator.aJs5Archive_2490)
-            CircleHitbox.aMapSceneCache_413 = MapSceneCache(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            HoverActionEntry.aSpriteStore_1813 = SpriteStore(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            ConstantColourTextureNode.aMapElementDefinitionCache_9245 = MapElementDefinitionCache(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, BufferedRandomAccessFile.aJs5Archive_1322, RasterSprite.aJs5Archive_5207)
-            SpriteLoadValidator.aWorldMapImageBuilder_4787 = WorldMapImageBuilder(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            NpcUpdateProcessor.aConfigArchiveLoader_1523 = ConfigArchiveLoader(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            WaterDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            RenderConfigFactory.aVarbitDefLoader_2981 = VarbitDefLoader(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, MidiSequencePlayer.aJs5Archive_8926)
-            NormalMapGenerator.aParticleAmountCache_3453 = ParticleAmountCache(HardCacheEntryReference.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            ProjectionCameraTransform.aEmoteDefCache_5764 = EmoteDefCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            OpenGlModel.aNpcDefinitionCache_5558 = NpcDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            GraphicsOptionState.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
+            RegionTileNode.aCacheArchiveIndexLoader_6653 = CacheArchiveIndexLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, VideoAdChecker.aJs5Archive_3183)
+            RenderConfigFactory.aLocDefinitionCache_2979 = LocDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            Tooltip.aParticleDefLoader_4460 = ParticleDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            FileExistsCondition.aModelDefinitionCache_4782 = ModelDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
+            RadialTextureNode.aModelDefinitionLoader_9342 = ModelDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, RasterSprite.aJs5Archive_5207)
+            ScrollingWidgetComponentNode.aParticleEffectCache_8378 = ParticleEffectCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            AbstractTileShapeStatics.aMapSceneDefLoader_6559 = MapSceneDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            GradientLookupEffect.aSeqDefinitionCache_9195 = SeqDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, AnimationFrameState.aJs5Archive_1538, RasterSprite.aJs5Archive_5207)
+            TheoraVideoStream.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
+            ModelOrSpriteHolder.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
+            MapAreaDefinition.aBufferedMessageQueue_2529 = BufferedMessageQueue(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, FloatGrid.aJs5Archive_4975, RasterSprite.aJs5Archive_5207)
+            ClientException.aModelHeaderCache_112 = ModelHeaderCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, ProjectionCameraTransform.aEmoteDefCache_5764, ScriptOpcodeHolder.aJs5Archive_2306, RasterSprite.aJs5Archive_5207)
+            TheoraVideoStream.aLocTypeDefLoader_9036 = LocTypeDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            ParticleEmitterNode.aWidgetCache_191 = WidgetCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, OpenGlRenderNode.aJs5Archive_10480, ShortKeyNode.aJs5Archive_6909, TextureGenerator.aJs5Archive_2490)
+            CircleHitbox.aMapSceneCache_413 = MapSceneCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            HoverActionEntry.aSpriteStore_1813 = SpriteStore(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            ConstantColourTextureNode.aMapElementDefinitionCache_9245 = MapElementDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, BufferedRandomAccessFile.aJs5Archive_1322, RasterSprite.aJs5Archive_5207)
+            SpriteLoadValidator.aWorldMapImageBuilder_4787 = WorldMapImageBuilder(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            NpcUpdateProcessor.aConfigArchiveLoader_1523 = ConfigArchiveLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            WaterDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            RenderConfigFactory.aVarbitDefLoader_2981 = VarbitDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, MidiSequencePlayer.aJs5Archive_8926)
+            NormalMapGenerator.aParticleAmountCache_3453 = ParticleAmountCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             WorldMapImageBuilder.method699(SoftwareSpriteRaster.aJs5Archive_1627, (-100).toByte(), IntKeyNode.aJs5Archive_6980, CameraRotationStub.aJs5Archive_322, RasterSprite.aJs5Archive_5207)
             method85(0, NodeDequeStatics.aJs5Archive_3323)
             ScriptResources.aTextureDefinitionCache_2639 = TextureDefinitionCache(ChatCommandProcessor.anInt6967, ModelBatchBase.aJs5Archive_1897, ConfigArchiveLoader.aJs5Archive_1434)
@@ -257,7 +257,7 @@ object ClientLoadStateMachine {
             VideoAdChecker.aJs5Archive_3183!!.anInt634 = 2
             AnimationFrameState.aJs5Archive_1538!!.anInt634 = 2
             FloatGrid.aJs5Archive_4975!!.anInt634 = 2
-            SpotAnimVector.aJs5Archive_2306!!.anInt634 = 2
+            ScriptOpcodeHolder.aJs5Archive_2306!!.anInt634 = 2
             OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 2
             BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 2
         }
@@ -270,7 +270,7 @@ object ClientLoadStateMachine {
             }
             if (!bool) return 0
         }
-        if (ConnectionStateType.aConnectionStateType_1041 == TimedTileQueueEntry.aConnectionStateType_9660) CacheEntryReference.method3198(true, (-45).toByte())
+        if (ConnectionStateType.aConnectionStateType_1041 == TimedTileQueueEntry.aConnectionStateType_9660) ByteBufferStatics.method3198(true, (-45).toByte())
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1042) {
             NpcConfig.aResourceLoaderThread_897!!.method2319((-56).toByte())
             try {
@@ -333,4 +333,5 @@ object ClientLoadStateMachine {
             throw TextureLoadException.method2929(runtimeexception, ("pea.C(" + bool + ',' + i + ',' + (if (strings != null) "{...}" else "null") + ',' + i_15_ + ')'))
         }
     }
+    var aJs5Archive_1878: Js5Archive? = null
 }

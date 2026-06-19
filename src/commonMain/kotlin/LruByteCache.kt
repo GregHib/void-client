@@ -1,5 +1,3 @@
-import CompositeRgbNoiseTexture.Companion.method573
-
 /* Class60 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -27,12 +25,12 @@ class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int
     fun method578(i: Int, i_2_: Int) {
         if (i == 2) {
             anInt1093++
-            if (MatrixCameraTransform.aParticleEmitterFactory_5675 != null) {
+            if (aParticleEmitterFactory_5675 != null) {
                 var class348_sub42_sub8 = (aLinkedNodeListIterator_1089!!.method1011(-59) as CacheEntryReference?)
                 while (class348_sub42_sub8 != null) {
                     if (!class348_sub42_sub8.method3195(-4)) {
                         if (i_2_.toLong() < ++class348_sub42_sub8.aLong7057) {
-                            val class348_sub42_sub8_3_ = MatrixCameraTransform.aParticleEmitterFactory_5675!!.method1888(3, class348_sub42_sub8)
+                            val class348_sub42_sub8_3_ = aParticleEmitterFactory_5675!!.method1888(3, class348_sub42_sub8)
                             aHashtable_1100.method3483(86.toByte(), (class348_sub42_sub8.aLong4291), class348_sub42_sub8_3_)
                             method573(class348_sub42_sub8_3_, class348_sub42_sub8, 63.toByte())
                             class348_sub42_sub8.method2715(116.toByte())
@@ -61,7 +59,6 @@ class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int
             class348_sub42_sub8_4_.method3162(true)
             anInt1086 += class348_sub42_sub8_4_.anInt9545
         }
-        if (i > -67) aRenderer1098 = null
         return null
     }
 
@@ -77,7 +74,6 @@ class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int
             }
             val class348_sub42_sub8_sub2 = HardCacheEntryReference(`object`, i_5_)
             aHashtable_1100.method3483(54.toByte(), l, class348_sub42_sub8_sub2)
-            if (i != 31902) anInt1086 = -106
             aLinkedNodeListIterator_1089!!.method1005(true, class348_sub42_sub8_sub2)
             class348_sub42_sub8_sub2.aLong7057 = 0L
         } catch (runtimeexception: RuntimeException) {
@@ -93,7 +89,6 @@ class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int
 
     fun method582(`object`: Any?, l: Long, i: Byte) {
         try {
-            if (i >= -92) method589(null, -7)
             anInt1095++
             method580(31902, `object`, l, 1)
         } catch (runtimeexception: RuntimeException) {
@@ -206,8 +201,6 @@ class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int
         @JvmField
         var anInt1087: Int = 0
         @JvmField
-        var anInt1088: Int = 0
-        @JvmField
         var anInt1090: Int = 0
         @JvmField
         var anInt1091: Int = 0
@@ -224,37 +217,37 @@ class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int
         @JvmField
         var anInt1097: Int = 0
         @JvmField
-        var aRenderer1098: Renderer? = null
-        @JvmField
         var anInt1099: Int = 0
         @JvmField
         var anInt1101: Int = 0
         @JvmField
         var anInt1102: Int = 0
-        @JvmField
-        var anInt1103: Int = 0
 
-        fun method576(i: Int, i_1_: Int): Boolean {
-            if (i_1_ <= 21) method589(null, -21)
-            anInt1088++
-            return i == 2 || i == 3
+        var aParticleEmitterFactory_5675: ParticleEmitterFactory? = method2118(((-42).toByte()).toByte())
+
+        var anInt3674: Int = 0
+
+        fun method2118(i: Byte): ParticleEmitterFactory? {
+            anInt3674++
+            return try {
+                ScaledParticleEmitter()
+            } catch (throwable: Throwable) {
+                null
+            }
         }
 
-        @JvmStatic
-        fun method584(i: Byte) {
-            aRenderer1098 = null
-            val i_7_ = -19 % ((i - 59) / 55)
-        }
-
-        @JvmStatic
-        fun method589(structConfig: StructConfig?, i: Int): Boolean {
-            anInt1103++
-            if (structConfig == null) return false
-            if (i != -4) return false
-            if (!structConfig.aBoolean574) return false
-            if (!structConfig.method373(MapRegionLoader.anVarResolver_1244!!, i xor 0x2d.inv())) return false
-            if (HeapInfoRecord.aHashtable_4934!!.method3480(structConfig.anInt581.toLong(), i xor 0x1774) != null) return false
-            return HardKeyedCacheEntryReference.aHashtable_10442!!.method3480(structConfig.anInt596.toLong(), i + -6004) == null
+        var anInt8680: Int = 0
+        fun method573(class348_sub42: HashLinkedListNode?, class348_sub42_15_: HashLinkedListNode?, i: Byte) {
+            try {
+                if (class348_sub42!!.aClass348_Sub42_7060 != null) class348_sub42.method3162(true)
+                anInt8680++
+                class348_sub42.aClass348_Sub42_7060 = class348_sub42_15_
+                class348_sub42.aClass348_Sub42_7063 = class348_sub42_15_!!.aClass348_Sub42_7063
+                class348_sub42.aClass348_Sub42_7060!!.aClass348_Sub42_7063 = class348_sub42
+                class348_sub42.aClass348_Sub42_7063!!.aClass348_Sub42_7060 = class348_sub42
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("wd.F(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + (if (class348_sub42_15_ != null) "{...}" else "null") + ',' + i + ')'))
+            }
         }
     }
 }

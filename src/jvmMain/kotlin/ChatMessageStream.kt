@@ -41,10 +41,10 @@ class ChatMessageStream : OutputStream() {
         @JvmStatic
         fun method136(i: Int, bool: Boolean, bool_2_: Boolean): SceneEntityModel {
             anInt105++
-            withLock(SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!) {
+            withLock(MapElementManager.aDoublyLinkedNodeListArray3974s!!) {
                 val class318_sub4: SceneEntityModel
-                if (SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!.size > i && !SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!![i]!!.method1871(111.toByte())) {
-                    class318_sub4 = SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!![i]!!.method1870(-104) as SceneEntityModel
+                if (MapElementManager.aDoublyLinkedNodeListArray3974s!!.size > i && !MapElementManager.aDoublyLinkedNodeListArray3974s!![i]!!.method1871(111.toByte())) {
+                    class318_sub4 = MapElementManager.aDoublyLinkedNodeListArray3974s!![i]!!.method1870(-104) as SceneEntityModel
                     class318_sub4.method2373(false)
                     CalendarUtil.anIntArray4128!![i]--
                 } else {

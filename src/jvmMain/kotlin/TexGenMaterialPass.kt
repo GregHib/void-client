@@ -149,7 +149,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, water
                     LocTypeDefinition.anInt4017 = i_1_
                     ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 + -i_1_) / 2
                     val i_2_ = (min(NpcReference.anInt6857, 600))
-                    HardCacheEntryReference.anInt10432 = i_2_
+                    GameDisplayManager.anInt10432 = i_2_
                     TimingCounters.anInt4167 = 0
                 } else if (i_0_ == 1) {
                     val i_3_ = min(SocketFactory.anInt3473, 1024)
@@ -157,10 +157,10 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, water
                     val i_4_ = (min(NpcReference.anInt6857, 768))
                     LocTypeDefinition.anInt4017 = i_3_
                     TimingCounters.anInt4167 = 0
-                    HardCacheEntryReference.anInt10432 = i_4_
+                    GameDisplayManager.anInt10432 = i_4_
                 } else {
                     TimingCounters.anInt4167 = 0
-                    HardCacheEntryReference.anInt10432 = NpcReference.anInt6857
+                    GameDisplayManager.anInt10432 = NpcReference.anInt6857
                     ModelResourceBundle.anInt7129 = 0
                     LocTypeDefinition.anInt4017 = SocketFactory.anInt3473
                 }

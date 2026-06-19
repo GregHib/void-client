@@ -121,7 +121,7 @@ class TextureFormatInfo internal constructor(var anInt3850: Int) {
             if (i_10_ < 0) i_10_ = 0
             var i_11_ = i_5_
             if (i > -108) method2290()
-            if (i_11_ + i_7_ > HardCacheEntryReference.anInt10432) i_11_ = HardCacheEntryReference.anInt10432 + -i_7_
+            if (i_11_ + i_7_ > GameDisplayManager.anInt10432) i_11_ = GameDisplayManager.anInt10432 + -i_7_
             if (i_11_ < 0) i_11_ = 0
             GlArrayBufferObject.anInt4717 = i_10_
             ScrollbarComponent.aBoolean8335 = true

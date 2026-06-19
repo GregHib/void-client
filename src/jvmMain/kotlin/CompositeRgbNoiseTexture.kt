@@ -31,10 +31,6 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
         @JvmField
         var anInt8678: Int = 0
         @JvmField
-        var aHashtable_8679: Hashtable? = Hashtable(16)
-        @JvmField
-        var anInt8680: Int = 0
-        @JvmField
         var anInt8682: Int = 0
         var aIntRange_8683: IntRange? = IntRange(100, -1)
         @JvmField
@@ -76,13 +72,12 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
             if (i < 51) method570(-85)
             aIntRange_8683 = null
             ByteArrayPool.anIntArray8684 = null
-            aHashtable_8679 = null
+            SpotAnimDefCache.aHashtable_8679 = null
         }
 
         @JvmStatic
         fun method572(string: String, i: Int): String {
             anInt8677++
-            if (i != 23034) aHashtable_8679 = null
             val i_11_ = string.length
             var i_12_ = 0
             var i_13_ = 0
@@ -100,21 +95,6 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
                 } else stringbuffer.append("<lt>")
             }
             return stringbuffer.toString()
-        }
-
-        @JvmStatic
-        fun method573(class348_sub42: HashLinkedListNode?, class348_sub42_15_: HashLinkedListNode?, i: Byte) {
-            try {
-                if (class348_sub42!!.aClass348_Sub42_7060 != null) class348_sub42.method3162(true)
-                anInt8680++
-                class348_sub42.aClass348_Sub42_7060 = class348_sub42_15_
-                class348_sub42.aClass348_Sub42_7063 = class348_sub42_15_!!.aClass348_Sub42_7063
-                if (i.toInt() != 63) anInt8685 = 110
-                class348_sub42.aClass348_Sub42_7060!!.aClass348_Sub42_7063 = class348_sub42
-                class348_sub42.aClass348_Sub42_7063!!.aClass348_Sub42_7060 = class348_sub42
-            } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("wd.F(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + (if (class348_sub42_15_ != null) "{...}" else "null") + ',' + i + ')'))
-            }
         }
 
         @JvmStatic

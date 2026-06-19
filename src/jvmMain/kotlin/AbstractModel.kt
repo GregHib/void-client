@@ -201,7 +201,6 @@ public abstract class AbstractModel {
                     }
                     i_75_++
                 }
-                if (i_74_ != -8700) anIntArray1127 = null
                 wa()
                 method621()
             } else method621()
@@ -436,15 +435,7 @@ public abstract class AbstractModel {
         @JvmField
         var anInt1126: Int = 0
         @JvmField
-        var anIntArray1127: IntArray? = IntArray(2)
-        @JvmField
-        var anInt1128: Int = 0
-        @JvmField
-        var anInt1129: Int = 0
-        @JvmField
         var anInt1130: Int = 0
-        @JvmField
-        var aHuffmanCodec_1131: HuffmanCodec? = null
         @JvmField
         var anInt1132: Int = 0
         @JvmField
@@ -457,47 +448,6 @@ public abstract class AbstractModel {
         var aFloat1136: Float = 0f
         @JvmField
         var anInt1137: Int = 0
-
-        @JvmStatic
-        fun method606(i: Int, bool: Boolean, string: String) {
-            var string = string
-            anInt1128++
-            string = string.lowercase(Locale.getDefault())
-            var `is` = ShortArray(16)
-            var i_52_ = i
-            val i_53_ = if (bool) 32768 else 0
-            val i_54_ = ((if (!bool) BrightnessOptionState.aCompiledScriptCache_5900!!.anInt4365 else BrightnessOptionState.aCompiledScriptCache_5900!!.anInt4364) + i_53_)
-            for (i_55_ in i_53_..<i_54_) {
-                val class348_sub42_sub10 = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_55_, (-102).toByte())
-                if (class348_sub42_sub10.aBoolean9562 && class348_sub42_sub10.method3219(98).lowercase(Locale.getDefault()).indexOf(string) != -1) {
-                    if (i_52_ >= 50) {
-                        AsyncTaskHandle.aShortArray2579 = null
-                        SceneObjectSpawner.anInt1285 = -1
-                        return
-                    }
-                    if (`is`.size <= i_52_) {
-                        val is_56_ = ShortArray(`is`.size * 2)
-                        var i_57_ = 0
-                        while (i_52_ > i_57_) {
-                            is_56_[i_57_] = `is`[i_57_]
-                            i_57_++
-                        }
-                        `is` = is_56_
-                    }
-                    `is`[i_52_++] = i_55_.toShort()
-                }
-            }
-            SceneObjectSpawner.anInt1285 = i_52_
-            WidgetNodeLink.anInt2037 = 0
-            AsyncTaskHandle.aShortArray2579 = `is`
-            val strings = arrayOfNulls<String>(SceneObjectSpawner.anInt1285)
-            var i_58_ = 0
-            while (SceneObjectSpawner.anInt1285 > i_58_) {
-                strings[i_58_] = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(`is`[i_58_].toInt(), (-91).toByte()).method3219(CameraSplineNode.method2955(i, 81))
-                i_58_++
-            }
-            SpotAnimVector.method1333(AsyncTaskHandle.aShortArray2579, i + 26073, strings)
-        }
 
         @JvmStatic
         fun method607(i: Int, strings: Array<String?>?, `is`: ShortArray?, i_64_: Int, bool: Boolean) {
@@ -535,19 +485,5 @@ public abstract class AbstractModel {
             }
         }
 
-        @JvmStatic
-        fun method609(i: Byte) {
-            if (i <= -7) {
-                aHuffmanCodec_1131 = null
-                anIntArray1127 = null
-            }
-        }
-
-        @JvmStatic
-        fun method616(i: Int, i_81_: Int, i_82_: Int): Boolean {
-            anInt1129++
-            if (i != 2) return false
-            return (i_81_ and 0x800) != 0
-        }
     }
 }

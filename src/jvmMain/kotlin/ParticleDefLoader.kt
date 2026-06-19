@@ -1,5 +1,5 @@
 import DetailLevelOptionState.Companion.method1837
-import CacheEntryReference.Companion.method3194
+import direct.Direct3dModel
 
 /* Class183 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -127,7 +127,7 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         fun method1379(i: Int, i_4_: Int, i_5_: Int): Boolean {
             anInt2459++
             if (i != 4) return true
-            return (method3194(i_5_, i_4_, 126.toByte()) and method1837(i_4_, 46, i_5_))
+            return (Direct3dModel.method3194(i_5_, i_4_, 126.toByte()) and method1837(i_4_, 46, i_5_))
         }
 
         fun method1382(i: Int, i_6_: Int): Int {

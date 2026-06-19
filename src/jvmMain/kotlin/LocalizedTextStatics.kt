@@ -100,7 +100,7 @@ object LocalizedTextStatics {
     fun method2061(i: Int) {
         TimedTileQueueEntry.aAbstractModelRenderer_9658 = null
         TimedTileQueueEntry.aAbstractModelRenderer_9659 = null
-        SpotAnimVector.aAbstractModelRenderer_2309 = null
+        MapSceneCache.aAbstractModelRenderer_2309 = null
         TileRenderState.aAbstractModelRendererArray4234 = null
         MinimapFlagRenderer.aAbstractModelRenderer_1800 = null
         anInt3477++

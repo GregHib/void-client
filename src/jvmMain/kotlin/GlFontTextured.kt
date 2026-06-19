@@ -167,6 +167,6 @@ class GlFontTextured internal constructor(private val aHa_Sub3_6494: NativeRende
         aHa_Sub3_6494.method3925(54, anInterface5_Impl1_6495, 0)
         aHa_Sub3_6494.method3862(0, aHa_Sub3_6494.aModelBatchBase_8204)
         aHa_Sub3_6494.method3899(2, c.code * '\u0004'.code, AsyncResourceRequest.aCameraRotationStub_9661, true)
-        if (aBoolean6493 || bool) aHa_Sub3_6494.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        if (aBoolean6493 || bool) aHa_Sub3_6494.method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
     }
 }

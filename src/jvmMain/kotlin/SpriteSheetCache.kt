@@ -88,7 +88,7 @@ class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
 
         @JvmStatic
         fun method1428(bool: Boolean) {
-            WidgetRedrawRegion.anImage4249 = null
+            LoadingBarRenderer.anImage4249 = null
             anInt2569++
             FontMetaRef.aFont4329 = null
             if (bool != true) method1431(-122)

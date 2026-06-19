@@ -71,5 +71,6 @@ class SpriteRenderEntry internal constructor(widgetRedrawRegion: WidgetRedrawReg
             anInt9713++
             val i_7_ = 9 / ((i - 60) / 50)
         }
+        var anInt4383: Int = 0
     }
 }

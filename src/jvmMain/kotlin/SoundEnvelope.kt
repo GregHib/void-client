@@ -200,7 +200,7 @@ class SoundEnvelope {
                         while_71_@ do {
                             do {
                                 if (i_42_ == 1) {
-                                    i_40_ = ((TrigLookupTables.anIntArray1207!![i_41_ shl 3]) shr 4) + 1024
+                                    i_40_ = ((SpotAnimVector.anIntArray1207!![i_41_ shl 3]) shr 4) + 1024
                                     break@while_74_
                                 } else if (i_42_ != 3) {
                                     if (i_42_ != 4) {

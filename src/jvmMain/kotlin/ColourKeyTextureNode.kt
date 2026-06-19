@@ -115,7 +115,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
                 for (i_20_ in 0..3) BrightnessOptionState.anIntArrayArray5894!![i_19_]!![i_20_] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
             }
             VorbisOggDecoder.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_18_)
-            ModelFacePriorityNode.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_18_)
+            RegionMapDecoder.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_18_)
             NativeSprite.anIntArray5192 = IntArray(i_18_)
             GlRectangleTexture.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_18_)
             GameAppletFrame.anIntArray38 = IntArray(i_18_)

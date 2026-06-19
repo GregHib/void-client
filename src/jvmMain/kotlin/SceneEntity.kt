@@ -49,7 +49,7 @@ abstract class SceneEntity : SceneLinkedListNode() {
     fun method2390(class348_sub1s: Array<AbstractTileShape?>, i: Int, i_30_: Int, i_31_: Int): Int {
         anInt6384++
         if (i_30_ != -2) this.aByte6376 = 33.toByte()
-        val l = (HardCacheEntryReference.aLongArrayArrayArray10431!![this.plane.toInt()]!![i]!![i_31_])
+        val l = (RenderbufferObject.aLongArrayArrayArray10431!![this.plane.toInt()]!![i]!![i_31_])
         var l_32_ = 0L
         var i_33_ = 0
         while ( /**/l_32_ <= 48) {
@@ -120,8 +120,8 @@ abstract class SceneEntity : SceneLinkedListNode() {
                                 val i_10_: Int
                                 if (WeaveTextureNode.anInt9282 != 4) i_10_ = 0x3fff and (OpenGlRenderNode.anInt10483 + CameraDistanceOptionState.aFloat3938.toInt())
                                 else i_10_ = CameraDistanceOptionState.aFloat3938.toInt() and 0x3fff
-                                var i_11_ = TrigLookupTables.anIntArray1207!![i_10_]
-                                var i_12_ = TrigLookupTables.anIntArray1204!![i_10_]
+                                var i_11_ = SpotAnimVector.anIntArray1207!![i_10_]
+                                var i_12_ = SpotAnimVector.anIntArray1204!![i_10_]
                                 if (WeaveTextureNode.anInt9282 != 4) {
                                     i_11_ = (i_11_ * 256 / (FloatBuffer.anInt9750 + 256))
                                     i_12_ = i_12_ * 256 / (256 + (FloatBuffer.anInt9750))
@@ -193,7 +193,7 @@ abstract class SceneEntity : SceneLinkedListNode() {
                         var class143 = GlTexture3D.aFontDefinition_8527
                         if (class42.anInt576 == 1) {
                             class324 = GameAppletFrame.aFont_20
-                            class143 = ParticleEmitterFactory.aFontDefinition_3179
+                            class143 = ParticleEmitterFactoryStatics.aFontDefinition_3179
                         }
                         if (class42.anInt576 == 2) {
                             class143 = WorldMapLabel.aFontDefinition_4962

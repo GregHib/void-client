@@ -43,19 +43,19 @@ class ChatEffectsOptionState : GraphicsOptionState {
 
     override fun method1714(i: Int, i_24_: Int): Int {
         anInt5866++
-        if (LruByteCache.method576(i_24_, 29)) {
+        if (method576(i_24_, 29)) {
             if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-97).toByte()) && !HeadIconRenderer.method1210((-113).toByte(), this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
             if (this.aClass348_Sub51_3136.aClass239_Sub8_7254!!.method1751(-32350) == 1) return 3
         }
         if (i_24_ == i) return 3
-        if (LruByteCache.method576(i_24_, i xor 0x56)) return 2
+        if (method576(i_24_, i xor 0x56)) return 2
         return 1
     }
 
     fun method1735(bool: Boolean): Boolean {
         if (bool != false) anInt5871 = -86
         anInt5858++
-        return LruByteCache.method576(this.anInt3138, 29)
+        return method576(this.anInt3138, 29)
     }
 
     companion object {
@@ -87,6 +87,12 @@ class ChatEffectsOptionState : GraphicsOptionState {
         var anInt5870: Int = 0
         @JvmField
         var anInt5871: Int = 0
+
+        var anInt1088: Int = 0
+        fun method576(i: Int, i_1_: Int): Boolean {
+            anInt1088++
+            return i == 2 || i == 3
+        }
 
         @JvmStatic
         fun method1728(i: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int) {

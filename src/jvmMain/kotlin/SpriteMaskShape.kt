@@ -481,7 +481,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             SpriteArchiveLoader.anInt385 = i_73_
                             LinkedListNodeStatics.anInt4292 = 0
                             CameraRotationStub.anInt321++
-                            val class348_sub47 = method2148((CacheEntryReference.aFontMetaRef_9553), (TheoraVideoStream.aIsaacCipher_9029), -113)
+                            val class348_sub47 = method2148((SpriteMaskShape.aFontMetaRef_9553), (TheoraVideoStream.aIsaacCipher_9029), -113)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, RegionMapDecoder.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(120, i_74_ + ArbVertexProgram.regionTileX)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract(117.toByte(), (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -122)) 0 else 1))
@@ -1002,6 +1002,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                 break
             } while (false)
         }
+        var aFontMetaRef_9553: FontMetaRef? = FontMetaRef(36, 7)
         var aFontMetaRef_4264: FontMetaRef? = FontMetaRef(40, 12)
         var aFontMetaRef_4262: FontMetaRef? = FontMetaRef(34, 15)
         fun method2690(i: Int) {

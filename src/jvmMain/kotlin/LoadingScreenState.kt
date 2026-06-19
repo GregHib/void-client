@@ -58,12 +58,12 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                     if (color_0_ == null) color_0_ = Color(140, 17, 17)
                     if (color_2_ == null) color_2_ = Color(255, 255, 255)
                     try {
-                        if (WidgetRedrawRegion.anImage4249 == null) WidgetRedrawRegion.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432))
-                        val graphics_3_ = WidgetRedrawRegion.anImage4249!!.getGraphics()
+                        if (LoadingBarRenderer.anImage4249 == null) LoadingBarRenderer.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432))
+                        val graphics_3_ = LoadingBarRenderer.anImage4249!!.getGraphics()
                         graphics_3_.setColor(Color.black)
-                        graphics_3_.fillRect(0, 0, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
+                        graphics_3_.fillRect(0, 0, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
                         val i_4_ = -152 + LocTypeDefinition.anInt4017 / 2
-                        val i_5_ = -18 + HardCacheEntryReference.anInt10432 / 2
+                        val i_5_ = -18 + GameDisplayManager.anInt10432 / 2
                         graphics_3_.setColor(color_0_)
                         graphics_3_.drawRect(i_4_, i_5_, 303, 33)
                         graphics_3_.setColor(color)
@@ -78,14 +78,14 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         if (AsyncResourceRequest.aString9665 != null) {
                             graphics_3_.setFont(FontMetaRef.aFont4329)
                             graphics_3_.setColor(color_2_)
-                            graphics_3_.drawString(AsyncResourceRequest.aString9665, (LocTypeDefinition.anInt4017 / 2 - (AsyncResourceRequest.aString9665!!.length * 6 / 2)), -26 + HardCacheEntryReference.anInt10432 / 2)
+                            graphics_3_.drawString(AsyncResourceRequest.aString9665, (LocTypeDefinition.anInt4017 / 2 - (AsyncResourceRequest.aString9665!!.length * 6 / 2)), -26 + GameDisplayManager.anInt10432 / 2)
                         }
-                        graphics.drawImage(WidgetRedrawRegion.anImage4249, 0, 0, null)
+                        graphics.drawImage(LoadingBarRenderer.anImage4249, 0, 0, null)
                     } catch (exception: Exception) {
                         graphics.setColor(Color.black)
-                        graphics.fillRect(0, 0, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
+                        graphics.fillRect(0, 0, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
                         val i_6_ = -152 + LocTypeDefinition.anInt4017 / 2
-                        val i_7_ = HardCacheEntryReference.anInt10432 / 2 + -18
+                        val i_7_ = GameDisplayManager.anInt10432 / 2 + -18
                         graphics.setColor(color_0_)
                         graphics.drawRect(i_6_, i_7_, 303, 33)
                         graphics.setColor(color)
@@ -98,7 +98,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         if (AsyncResourceRequest.aString9665 != null) {
                             graphics.setFont(FontMetaRef.aFont4329)
                             graphics.setColor(color_2_)
-                            graphics.drawString(AsyncResourceRequest.aString9665, (LocTypeDefinition.anInt4017 / 2 + -(6 * AsyncResourceRequest.aString9665!!.length / 2)), HardCacheEntryReference.anInt10432 / 2 - 26)
+                            graphics.drawString(AsyncResourceRequest.aString9665, (LocTypeDefinition.anInt4017 / 2 + -(6 * AsyncResourceRequest.aString9665!!.length / 2)), GameDisplayManager.anInt10432 / 2 - 26)
                         }
                         graphics.drawString(string, i_6_ - -((304 + -(string!!.length * 6)) / 2), 22 + i_7_)
                     }

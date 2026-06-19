@@ -64,7 +64,7 @@ object RegionMapDecoder {
         LocalizedTextTriple.anIntArray3759 = IntArray(i_7_)
         StringCacheNode.aByteArrayArray7212 = null
         VorbisOggDecoder.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_7_)
-        ModelFacePriorityNode.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_7_)
+        RegionMapDecoder.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_7_)
         GlRectangleTexture.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_7_)
         DragDropController.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_7_)
         i_7_ = 0
@@ -107,4 +107,5 @@ object RegionMapDecoder {
         anInt1513++
         if (NpcDefinition.anInt2955 == 5 && i < -48) NpcDefinition.anInt2955 = 6
     }
+    var aByteArrayArray1887: Array<ByteArray?>? = null
 }

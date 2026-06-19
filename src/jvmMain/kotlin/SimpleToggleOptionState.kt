@@ -1,3 +1,5 @@
+import direct.Direct3dModel
+
 /* Class239_Sub5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -62,7 +64,7 @@ class SimpleToggleOptionState : GraphicsOptionState {
         fun method1740(i: Int, i_2_: Int, bool: Boolean): Boolean {
             if (bool != false) return true
             anInt5890++
-            return DetailLevelOptionState.method1833((-128).toByte(), i_2_, i) || HardCacheEntryReference.method3200(i_2_, i, 96.toByte())
+            return DetailLevelOptionState.method1833((-128).toByte(), i_2_, i) || Direct3dModel.method3200(i_2_, i, 96.toByte())
         }
 
         @JvmStatic

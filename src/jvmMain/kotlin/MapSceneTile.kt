@@ -44,7 +44,7 @@ class MapSceneTile {
         fun method531(i: Byte, trigLookupTables: TrigLookupTables?): Int {
             val i_0_ = -45 / ((i - 54) / 43)
             anInt1049++
-            if (WidgetRedrawRegion.aTrigLookupTables_4247 != trigLookupTables) {
+            if (LoadingBarRenderer.aTrigLookupTables_4247 != trigLookupTables) {
                 if (trigLookupTables != GlIndexBufferArb.aTrigLookupTables_8503) {
                     if (SceneObjectEntity.aTrigLookupTables_8737 != trigLookupTables) {
                         if (RenderListTextureNode.aTrigLookupTables_9485 == trigLookupTables) return 34166

@@ -42,7 +42,7 @@ class D3dWaterShaderPass internal constructor(private var aD3dRenderDevice_7340:
     override fun method3520(i: Byte) {
         if (i.toInt() == 87) {
             aD3dRenderDevice_7340!!.method3957(null, (-89).toByte())
-            this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
             this.aHa_Sub3_4479.method3849(47.toByte(), 1, GlIndexBufferArb.aTrigLookupTables_8503)
             this.aHa_Sub3_4479.method3849(47.toByte(), 2, RenderListTextureNode.aTrigLookupTables_9485)
             this.aHa_Sub3_4479.method3852(9, true)
@@ -103,7 +103,7 @@ class D3dWaterShaderPass internal constructor(private var aD3dRenderDevice_7340:
 
     override fun method3525(i: Int, bool: Boolean) {
         if (i != 15192) method3531(true)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
         this.aHa_Sub3_4479.method3849(47.toByte(), 1, RenderListTextureNode.aTrigLookupTables_9485)
         this.aHa_Sub3_4479.method3924(false, false, 2, GlIndexBufferArb.aTrigLookupTables_8503, true)
         this.aHa_Sub3_4479.method3852(9, false)

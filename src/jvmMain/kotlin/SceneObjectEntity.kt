@@ -60,8 +60,6 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
         @JvmField
         var anInt8731: Int = 0
         @JvmField
-        var aLruByteCache_8732: LruByteCache? = LruByteCache(64)
-        @JvmField
         var anInt8733: Int = 0
         @JvmField
         var anInt8734: Int = 0
@@ -108,7 +106,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
         @JvmStatic
         fun method2406(i: Int) {
             if (i > -126) anInt8731 = 118
-            aLruByteCache_8732 = null
+            SpotAnimDefCache.aLruByteCache_8732 = null
             aTrigLookupTables_8737 = null
         }
     }

@@ -26,7 +26,7 @@ object ModelDataCache {
     @JvmStatic
     fun method297(bool: Boolean) {
         if (bool != false) aLruByteCache_355 = null
-        WorldMapElement.aLruByteCache_4636!!.method590(0)
+        ModelFacePriorityNode.aLruByteCache_4636!!.method590(0)
         anInt356++
     }
 

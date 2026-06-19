@@ -40,8 +40,8 @@ object LinkedListNodeStatics {
             }
             val l = ((i_10_.toLong() shl 48) + (i_7_ + ((i_9_ shl 16) + (i_11_ shl 24))).toLong() - -(i_6_.toLong() shl 32))
             var abstractModel_13_: AbstractModel?
-            withLock(WidgetRedrawRegion.aLruByteCache_4254!!) {
-                abstractModel_13_ = WidgetRedrawRegion.aLruByteCache_4254!!.method583(l, -64) as AbstractModel?
+            withLock(LoadingBarRenderer.aLruByteCache_4254!!) {
+                abstractModel_13_ = LoadingBarRenderer.aLruByteCache_4254!!.method583(l, -64) as AbstractModel?
             }
             if (abstractModel_13_ == null || (var_renderer!!.method3667(abstractModel_13_.ua(), i_12_) != 0)) {
                 if (abstractModel_13_ != null) i_12_ = var_renderer!!.method3679(i_12_, abstractModel_13_.ua())
@@ -64,8 +64,8 @@ object LinkedListNodeStatics {
                     var i_21_ = 0
                     while (i_14_ > i_21_) {
                         val i_22_ = (i_21_ shl 14) / i_14_
-                        val i_23_ = (TrigLookupTables.anIntArray1207!![i_22_] * i_19_ shr 14)
-                        val i_24_ = (TrigLookupTables.anIntArray1204!![i_22_] * i_20_ shr 14)
+                        val i_23_ = (SpotAnimVector.anIntArray1207!![i_22_] * i_19_ shr 14)
+                        val i_24_ = (SpotAnimVector.anIntArray1204!![i_22_] * i_20_ shr 14)
                         is_17_[i_18_]!![i_21_] = modelDefinition.method1101(0, i_24_, i_23_, 123)
                         i_21_++
                     }
@@ -86,8 +86,8 @@ object LinkedListNodeStatics {
                     i_25_++
                 }
                 abstractModel_13_ = var_renderer!!.method3625(modelDefinition, i_12_, MapSceneDefLoader.anInt2482, 64, 768)
-                withLock(WidgetRedrawRegion.aLruByteCache_4254!!) {
-                    WidgetRedrawRegion.aLruByteCache_4254!!.method582(abstractModel_13_, l, (-103).toByte())
+                withLock(LoadingBarRenderer.aLruByteCache_4254!!) {
+                    LoadingBarRenderer.aLruByteCache_4254!!.method582(abstractModel_13_, l, (-103).toByte())
                 }
             }
             val i_31_ = abstractModel.V()

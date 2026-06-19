@@ -1,4 +1,5 @@
 import KaraokeSubtitleStream.Companion.method2985
+import direct.Direct3dModel
 
 /* Class348_Sub40_Sub29 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -72,8 +73,6 @@ class TextureMapImageNode : AbstractProceduralTextureNode(0, false) {
 
     companion object {
         @JvmField
-        var anInt9371: Int = 0
-        @JvmField
         var anInt9372: Int = 1
         @JvmField
         var anInt9373: Int = 0
@@ -88,11 +87,11 @@ class TextureMapImageNode : AbstractProceduralTextureNode(0, false) {
         @JvmField
         var anInt9382: Int = 0
 
-        @JvmStatic
+        var anInt9371: Int = 0
         fun method3124(i: Int, i_13_: Byte, i_14_: Int): Boolean {
             anInt9371++
             if (i_13_ > -55) Companion.method3124(-76, (-110).toByte(), -59)
-            return ((i_14_ and 0x40000) != 0) or method2985(-31735, i, i_14_) || HardCacheEntryReference.method3200(i_14_, i, (-120).toByte())
+            return ((i_14_ and 0x40000) != 0) or method2985(-31735, i, i_14_) || Direct3dModel.method3200(i_14_, i, (-120).toByte())
         }
 
         @JvmStatic

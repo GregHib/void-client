@@ -1,4 +1,5 @@
 import ScanlineRasterFiller.Companion.method1387
+import GlTextureBase.Companion.aTextureFormatInfo_3977
 
 /* Class363 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -10,17 +11,33 @@ object MapElementManager {
     var anInt4464: Int = 0
     var anInt4465: Int = 0
 
+    var aDoublyLinkedNodeListArray3974s: Array<DoublyLinkedNodeList?>? = arrayOfNulls<DoublyLinkedNodeList>(5)
     fun method3513(i: Int) {
-        withLock(SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!) {
+        withLock(aDoublyLinkedNodeListArray3974s!!) {
             var i_0_ = 0
-            while ((i_0_ < SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!.size)) {
-                SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!![i_0_] = DoublyLinkedNodeList()
+            while ((i_0_ < aDoublyLinkedNodeListArray3974s!!.size)) {
+                aDoublyLinkedNodeListArray3974s!![i_0_] = DoublyLinkedNodeList()
                 CalendarUtil.anIntArray4128!![i_0_] = 0
                 i_0_++
             }
         }
         anInt4462++
         val i_1_ = 60 / ((-36 - i) / 57)
+    }
+
+    @JvmStatic
+    fun method2374(i: Byte) {
+        aTextureFormatInfo_3977 = null
+        val i_0_ = 108 / ((i - -83) / 41)
+        MapElementManager.aDoublyLinkedNodeListArray3974s = null
+    }
+
+    init {
+        var i = 0
+        while (aDoublyLinkedNodeListArray3974s!!.size > i) {
+            aDoublyLinkedNodeListArray3974s!![i] = DoublyLinkedNodeList()
+            i++
+        }
     }
 
     fun method3514(i: Byte) {

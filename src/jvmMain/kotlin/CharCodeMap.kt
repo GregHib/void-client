@@ -117,6 +117,16 @@ class CharCodeMap : HashLinkedListNode() {
             DrawListState.anInt1477 = 0
         }
 
+        @JvmStatic
+        fun method609(i: Byte) {
+            if (i <= -7) {
+                NativeRenderer.aHuffmanCodec_1131 = null
+                anIntArray1127 = null
+            }
+        }
+
+        var anIntArray1127: IntArray? = IntArray(2)
+
         fun method3225(i: Int) {
             anInt9589++
             if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) == 2) {
@@ -134,7 +144,7 @@ class CharCodeMap : HashLinkedListNode() {
                         FileIoUtil.anIntArray4097!![i_9_] = -1000000
                         LinkedListIterator.anIntArray2117!![i_9_] = 1000000
                         BlankTextureNode.anIntArray9259!![i_9_] = 0
-                        AbstractModel.anIntArray1127!![i_9_] = 1000000
+                        CharCodeMap.anIntArray1127!![i_9_] = 1000000
                         ConnectionStateType.anIntArray1045!![i_9_] = 0
                     }
                     var i_10_ = (LocalPlayerState.aPlayer_1907!!.x)

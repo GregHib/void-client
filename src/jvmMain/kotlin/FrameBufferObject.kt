@@ -212,7 +212,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
                     class10.anInt188--
                     if (class10.anInt188 >= (if (!class10.method220((-66).toByte())) -10 else -1500)) {
                         if (class10.aByte180.toInt() == 1 && class10.aAudioClipDefinition_183 == null) {
-                            class10.aAudioClipDefinition_183 = AudioClipDefinition.method2372(ModelFacePriorityNode.aJs5Archive_1878!!, class10.anInt185, 0)
+                            class10.aAudioClipDefinition_183 = AudioClipDefinition.method2372(ClientLoadStateMachine.aJs5Archive_1878!!, class10.anInt185, 0)
                             if (class10.aAudioClipDefinition_183 == null) {
                                 i_4_++
                                 continue
@@ -301,7 +301,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
                 RgbColorPalette.aBoolean1236 = false
                 UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 = null
             } else if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1 && !method1296(true)) {
-                SceneLinkedListNode.anInt3973++
+                anInt3973++
                 val class348_sub47 = method2148(OpenGlRenderer.aFontMetaRef_7554, TheoraVideoStream.aIsaacCipher_9029, -107)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(118.toByte(), SlotBinding.anInt3428)
                 InterfaceComponentGroup.method3243(-54, class348_sub47)
@@ -313,5 +313,6 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
             aClass209_4874 = UnusedToStringStub()
             anInt4889 = 0
         }
+        var anInt3973: Int = 0
     }
 }

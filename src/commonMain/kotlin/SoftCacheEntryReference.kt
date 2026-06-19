@@ -1,7 +1,5 @@
-import java.lang.ref.SoftReference
-
 class SoftCacheEntryReference internal constructor(`object`: Any?, i: Int) : CacheEntryReference(i) {
-    private val aSoftReference10428: SoftReference<*>
+    private val aSoftReference10428: SoftRef<*>
 
     override fun method3195(i: Int): Boolean {
         if (i != -4) method3193(-41)
@@ -14,6 +12,6 @@ class SoftCacheEntryReference internal constructor(`object`: Any?, i: Int) : Cac
     }
 
     init {
-        aSoftReference10428 = SoftReference<Any?>(`object`)
+        aSoftReference10428 = SoftRef<Any?>(`object`)
     }
 }

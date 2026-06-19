@@ -46,8 +46,8 @@ class HeadIconRenderer {
                     val i_7_ = 10 + max(widgetComponent!!.anInt709 / 2, widgetComponent.anInt789 / i_4_)
                     val i_8_ = i_5_ * i_5_ - -(i_3_ * i_3_)
                     if (i_7_ * i_7_ >= i_8_) {
-                        var i_9_ = TrigLookupTables.anIntArray1207!![i_6_]
-                        var i_10_ = TrigLookupTables.anIntArray1204!![i_6_]
+                        var i_9_ = SpotAnimVector.anIntArray1207!![i_6_]
+                        var i_10_ = SpotAnimVector.anIntArray1204!![i_6_]
                         if (WeaveTextureNode.anInt9282 != 4) {
                             i_10_ = 256 * i_10_ / (FloatBuffer.anInt9750 - -256)
                             i_9_ = i_9_ * 256 / (FloatBuffer.anInt9750 - -256)
@@ -84,7 +84,7 @@ class HeadIconRenderer {
                 ModelDefinition.aJs5Archive_1848 = js5Archive
                 NpcActorEntity.anInt10074 = i_1_
                 GlBufferObject.aClass348_Sub16_Sub3_4743 = null
-                SceneLinkedListNode.anInt3971 = i_2_
+                CacheIndexManager.anInt3971 = i_2_
                 DirectionPath.anInt1059 = i
                 WaterDetailOptionState.anInt5994 = (NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2844(103.toByte()) / i_3_)
                 if (WaterDetailOptionState.anInt5994 < 1) WaterDetailOptionState.anInt5994 = 1

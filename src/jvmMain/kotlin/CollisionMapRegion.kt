@@ -169,7 +169,7 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
             val i_15_: Int
             val i_16_: Int
             if (class46_14_ == null) {
-                i_15_ = HardCacheEntryReference.anInt10432
+                i_15_ = GameDisplayManager.anInt10432
                 i_16_ = LocTypeDefinition.anInt4017
             } else {
                 i_15_ = class46_14_.anInt789

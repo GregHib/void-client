@@ -141,7 +141,7 @@ class CacheArchiveIndex {
 
         fun method1072(js5Archive: Js5Archive?, i: Byte) {
             if (i >= -91) method1070(((-93).toByte()).toByte(), 92)
-            BloomGraphicsOptionState.aJs5Archive_5964 = js5Archive
+            ModelFacePriorityNode.aJs5Archive_5964 = js5Archive
             anInt1771++
         }
     }
