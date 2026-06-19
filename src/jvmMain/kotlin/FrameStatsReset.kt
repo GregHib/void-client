@@ -2043,7 +2043,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             HuffmanCodec.anInt3765 = 0
             AbstractProceduralTextureNode.anInt7029 = 0
             GlRectangleTexture.anInt8635 = 0
-            WidgetComponent.anInt837 = 0
+            ConfigArchiveLoader.anInt837 = 0
             SphereMapMaterialPass.anInt6311 = 0
             NativeRenderer.anInt7943 = 0
             KeyEventNode.anInt4760 = 0
@@ -2784,7 +2784,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MapElementDecor.anInt10363 = 0
             RegionSceneLoader.anInt3698 = 0
             StaticNoiseTexture.anInt8661 = 0
-            RectangleBounds.anInt2152 = 0
+            ClientLoadStateMachine.anInt2152 = 0
             LoadingBarRenderer.anInt5033 = 0
             WidgetNodeLink.anInt2041 = 0
             VorbisOggDecoder.anInt8997 = 0

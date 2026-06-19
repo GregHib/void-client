@@ -82,11 +82,12 @@ object GroundItemRenderState {
         if (i != -4) aBoolean1661 = false
     }
 
+    var anInt2601: Int = -50
     fun method1015(i: Int, i_20_: Int, bool: Boolean) {
         anInt1658++
         val class190 = NodeDequeStatics.aModelLightingConfigArrayArray3335!![i]!![i_20_]
         if (class190 != null) {
-            SingletonMarker.anInt2601 = class190.anInt2535
+            GroundItemRenderState.anInt2601 = class190.anInt2535
             CameraRotationStub.anInt325 = class190.anInt2538
             ModelGroundDecor.anInt10023 = class190.anInt2548
         }

@@ -61,8 +61,8 @@ import HeapInfoRecord.Companion.method1249
 import SceneTilePlaneManager.method260
 import KeyboardLayoutConfig.Companion.method1254
 import ServerConnectionInfo.Companion.method1261
-import RectangleBounds.Companion.method1265
-import RectangleBounds.Companion.method1267
+import ClientLoadStateMachine.method1265
+import RgbColorPalette.Companion.method1267
 import AudioResampler.Companion.method1269
 import AudioResampler.Companion.method1276
 import ItemDefinitionLoader.Companion.method1284
@@ -156,7 +156,6 @@ import ParticleEmitterFactoryStatics.method1886
 import VideoAdChecker.method1889
 import MediaStreamClient.Companion.method1897
 import TileTransform.method1907
-import SpriteStore.Companion.method305
 import BackgroundWorkerThread.Companion.method1910
 import ConfigFlagUtil.Companion.method1912
 import SmoothingBuffer.Companion.method1917
@@ -374,7 +373,7 @@ import RegionTileNode.Companion.method2773
 import FacingDirectionNode.Companion.method2774
 import CharacterRenderState.Companion.method2780
 import FormantSynthFilter.Companion.method3450
-import FontMetaRef.Companion.method3457
+import LoadingBarRenderer.Companion.method3457
 import RenderableEntry.Companion.method3458
 import TextureMipDescriptor.Companion.method3462
 import TextureCache.Companion.method3466
@@ -751,7 +750,7 @@ class Client : GameAppletFrame() {
         method1931(true)
         method1407(124.toByte())
         method825(i + -204)
-        method305(79.toByte())
+        SpriteMaskShape.method305(79.toByte())
         method2545(true)
         method698(i + -106)
         ConfigArchiveLoader.method811((-123).toByte())
@@ -955,7 +954,7 @@ class Client : GameAppletFrame() {
         method869(3)
         FileIoUtil.method2604((-102).toByte())
         method3217(61.toByte())
-        RectangleRegion.method1164((-52).toByte())
+        SolidFillComponent.method1164((-52).toByte())
         method2407(false)
         method1673(i.toInt() xor 0x75.inv())
         method2492(1)
@@ -2844,7 +2843,7 @@ class Client : GameAppletFrame() {
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == ObjectByteSerializerHolder.aIntRange_2285) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == IntRange.aIntRange_2285) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 WallSceneEntity.method2397((-124).toByte())
                 AbstractGameSocketStatics.method1703(3, i, -1, 4, -1)
@@ -2871,7 +2870,7 @@ class Client : GameAppletFrame() {
                     }
                     if (i <= 1) {
                         if ((RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || MinimapTriangleDrawer.aBoolean5233) bool_20_ = true
-                        else if (FontMetaRef.method3455(string_16_, 28280)) bool_20_ = true
+                        else if (ObjectSpawnDecoder.method3455(string_16_, 28280)) bool_20_ = true
                     }
                 } while (false)
                 if (!bool_20_ && BackgroundWorkerThread.anInt3227 == 0) {
@@ -3348,7 +3347,7 @@ class Client : GameAppletFrame() {
                 var bool_83_ = false
                 if (i <= 1) {
                     if (RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915 || MinimapTriangleDrawer.aBoolean5233) bool_83_ = true
-                    else if (i <= 1 && FontMetaRef.method3455(string_82_, 28280)) bool_83_ = true
+                    else if (i <= 1 && ObjectSpawnDecoder.method3455(string_82_, 28280)) bool_83_ = true
                 }
                 if (!bool_83_ && BackgroundWorkerThread.anInt3227 == 0) {
                     val string_84_ = (CompositeRgbNoiseTexture.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
@@ -3452,7 +3451,7 @@ class Client : GameAppletFrame() {
                     var bool_94_ = false
                     if (i_92_ <= 1) {
                         if (!bool_93_ && ((RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || MinimapTriangleDrawer.aBoolean5233)) bool_94_ = true
-                        else if (FontMetaRef.method3455(player.aString10544, 28280)) bool_94_ = true
+                        else if (ObjectSpawnDecoder.method3455(player.aString10544, 28280)) bool_94_ = true
                     }
                     if (!bool_94_ && BackgroundWorkerThread.anInt3227 == 0) {
                         var i_95_ = -1
@@ -3498,7 +3497,7 @@ class Client : GameAppletFrame() {
                     }
                     if (i <= 1) {
                         if ((RangeThresholdTextureNode.aBoolean9103 && !PlayerUpdateDecoder.aBoolean1915) || MinimapTriangleDrawer.aBoolean5233) bool_101_ = true
-                        else if (FontMetaRef.method3455(string_98_, 28280)) bool_101_ = true
+                        else if (ObjectSpawnDecoder.method3455(string_98_, 28280)) bool_101_ = true
                     }
                 } while (false)
                 if (!bool_101_ && BackgroundWorkerThread.anInt3227 == 0) {
@@ -3609,7 +3608,7 @@ class Client : GameAppletFrame() {
                             break@while_219_
                         }
                     }
-                    if (i <= 1 && FontMetaRef.method3455(string_114_, 28280)) bool_119_ = true
+                    if (i <= 1 && ObjectSpawnDecoder.method3455(string_114_, 28280)) bool_119_ = true
                 } while (false)
                 if (!bool_119_ && BackgroundWorkerThread.anInt3227 == 0) {
                     SceneCollisionEntry.aLongArray4410!![NpcType.anInt1359] = l_118_
@@ -3770,7 +3769,7 @@ class Client : GameAppletFrame() {
                 if (i == 99) method94(string_142_, -93)
                 else if (i == 98) GameAppletFrame.set(string_142_)
                 else {
-                    if (string_141_ != "" && FontMetaRef.method3455(string_141_, 28280)) {
+                    if (string_141_ != "" && ObjectSpawnDecoder.method3455(string_141_, 28280)) {
                         ModelVertexColorBuffer.aIntRange_6584 = null
                         return true
                     }
@@ -4007,7 +4006,7 @@ class Client : GameAppletFrame() {
                             break@while_220_
                         }
                     }
-                    if (i <= 1 && FontMetaRef.method3455(string_175_, 28280)) bool_179_ = true
+                    if (i <= 1 && ObjectSpawnDecoder.method3455(string_175_, 28280)) bool_179_ = true
                 } while (false)
                 if (!bool_179_ && BackgroundWorkerThread.anInt3227 == 0) {
                     SceneCollisionEntry.aLongArray4410!![NpcType.anInt1359] = l_178_
@@ -4267,7 +4266,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (WorldListEntry.aIntRange_315 == ModelVertexColorBuffer.aIntRange_6584) {
-                method128(RectangleBounds.aRgbColorPalette_2157, 8.toByte())
+                method128(RgbColorPalette.aRgbColorPalette_2157, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -4330,7 +4329,7 @@ class Client : GameAppletFrame() {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_229_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 var bool_230_ = false
-                if (i <= 1 && FontMetaRef.method3455(string_228_, 28280)) bool_230_ = true
+                if (i <= 1 && ObjectSpawnDecoder.method3455(string_228_, 28280)) bool_230_ = true
                 if (!bool_230_ && BackgroundWorkerThread.anInt3227 == 0) {
                     val string_231_ = (BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_229_, (-108).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 93.toByte()))
                     if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_228_, string_231_, (-127).toByte(), i_229_, "<img=1>" + string, null, 25, 0, string)

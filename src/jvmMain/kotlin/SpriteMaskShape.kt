@@ -5,6 +5,8 @@ import CircleRasterizer.Companion.method2253
 import ConfigVarProgress.Companion.method2307
 import FlipTextureNode.Companion.method3065
 import CharacterRenderState.Companion.method2780
+import SpriteStore.Companion.aAbstractModelRendererArray367
+import SpriteStore.Companion.anIntArray369
 import WorldMapImageBuilder.Companion.method696
 
 /* Class325 - Decompiled by JODE
@@ -812,7 +814,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 Gl3dTexture.anInt8625++
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 LinkedListNodeStatics.anInt4292 = 0
-                                val class348_sub47 = method2148((SpriteStore.aFontMetaRef_364), (TheoraVideoStream.aIsaacCipher_9029), -113)
+                                val class348_sub47 = method2148((aFontMetaRef_364), (TheoraVideoStream.aIsaacCipher_9029), -113)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -126)) 0 else 1))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 InterfaceComponentGroup.method3243(121, class348_sub47)
@@ -1005,11 +1007,18 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
         var aFontMetaRef_9553: FontMetaRef? = FontMetaRef(36, 7)
         var aFontMetaRef_4264: FontMetaRef? = FontMetaRef(40, 12)
         var aFontMetaRef_4262: FontMetaRef? = FontMetaRef(34, 15)
+        var aFontMetaRef_364: FontMetaRef? = FontMetaRef(12, 3)
         fun method2690(i: Int) {
             ItemActionPacketSender.aFontMetaRef_4266 = null
             aFontMetaRef_4264 = null
             aFontMetaRef_4262 = null
             val i_2_ = -29 / ((i - -54) / 45)
+        }
+        @JvmStatic
+        fun method305(i: Byte) {
+            anIntArray369 = null
+            aFontMetaRef_364 = null
+            aAbstractModelRendererArray367 = null
         }
     }
 }

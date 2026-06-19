@@ -251,7 +251,7 @@ class InputStream_Sub2 : InputStream() {
                                 if (bool) ProjectileSpawner.method1479(i_99_, (-120).toByte(), i_101_, (GradientLookupEffect.anInt9200))
                             }
                         }
-                    } else if (rgbColorPalette == RectangleBounds.aRgbColorPalette_2157) {
+                    } else if (rgbColorPalette == RgbColorPalette.aRgbColorPalette_2157) {
                         val i_105_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                         val bool = (0x80 and i_105_) != 0
                         var i_106_ = BufferedMessageQueue.anInt3581 - -(i_105_ shr 3 and 0x7)

@@ -1,3 +1,5 @@
+import FontMetaRef.Companion.aBoolean4328
+import FontMetaRef.Companion.anInt4324
 import WorldMapAreaLabel.Companion.method3570
 
 /* Class122 - Decompiled by JODE
@@ -20,6 +22,19 @@ object ObjectSpawnDecoder {
     var aStringArray1808: Array<String?>?
     @JvmField
     var anInt1809: Int = 0
+
+    fun method3455(string: String?, i: Int): Boolean {
+        anInt4324++
+        if (string == null) return false
+        var i_0_ = 0
+        while ((i_0_ < ContactEntry.anInt9604)) {
+            if (string.equals(ObjectSpawnDecoder.aStringArray1808!![i_0_], ignoreCase = true)) return true
+            if (string.equals(IndexedSprite.aStringArray5197!![i_0_], ignoreCase = true)) return true
+            i_0_++
+        }
+        if (i != 28280) aBoolean4328 = false
+        return false
+    }
 
     fun method1085(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int, i_3_: Int) {
         anInt1805++

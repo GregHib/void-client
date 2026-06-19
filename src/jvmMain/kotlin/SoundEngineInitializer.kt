@@ -14,7 +14,7 @@ object SoundEngineInitializer {
     @JvmStatic
     fun method352(i: Int) {
         anInt483++
-        RectangleBounds.method1265(i + 15)
+        ClientLoadStateMachine.method1265(i + 15)
         method131(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub5_7240!!.method1739(-32350) == 1, 2, true, 22050)
         ClientLoadStateMachine.aSoundChannelMixer_7042 = TextureHandle.method1439(22050, VorbisOggDecoder.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 0, 7)
         ParticleEmitterListNode.method3273(true, i + -82, NpcCountAccessor.method1326(null, 9))

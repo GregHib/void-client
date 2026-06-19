@@ -121,10 +121,11 @@ class SceneNodeDeque {
             aBoxedIntHolder_2568 = null
         }
 
+        var aWidgetComponentArray1942: Array<WidgetComponent?>? = null
         @JvmStatic
         fun method842(bool: Boolean) {
             anInt1501++
-            RectangleRegion.aWidgetComponentArray1942 = null
+            SceneNodeDeque.aWidgetComponentArray1942 = null
             if (GrayscaleNoiseTexture.aBoolean5300 && ContactEntry.method3229(-82) != 1) method132(106, (WorldMapRenderer.anInt4674 == 3) || WorldMapRenderer.anInt4674 == 7, method3439(107), 0, PackedFlagsAccessor.method3306((-111).toByte()), 0)
             var i = 0
             var i_1_ = 0
@@ -133,9 +134,9 @@ class SceneNodeDeque {
                 i_1_ = method260(false)
             }
             ParticleAmountConfig.method1252(i_1_, RenderNodeStatics.anInt9721, i_1_, -1, i, i + LocTypeDefinition.anInt4017, i_1_ - -GameDisplayManager.anInt10432, 116.toByte(), i)
-            if (RectangleRegion.aWidgetComponentArray1942 != null) {
-                method3064(i, SpriteLoadValidator.anInt4792, true, AbstractTileShapeStatics.anInt6555, i_1_, CalendarUtil.aWidgetComponent_4130!!.anInt760, i + LocTypeDefinition.anInt4017, false, RectangleRegion.aWidgetComponentArray1942, -1412584499, i_1_ - -GameDisplayManager.anInt10432)
-                RectangleRegion.aWidgetComponentArray1942 = null
+            if (SceneNodeDeque.aWidgetComponentArray1942 != null) {
+                method3064(i, SpriteLoadValidator.anInt4792, true, AbstractTileShapeStatics.anInt6555, i_1_, CalendarUtil.aWidgetComponent_4130!!.anInt760, i + LocTypeDefinition.anInt4017, false, SceneNodeDeque.aWidgetComponentArray1942, -1412584499, i_1_ - -GameDisplayManager.anInt10432)
+                SceneNodeDeque.aWidgetComponentArray1942 = null
             }
         }
 

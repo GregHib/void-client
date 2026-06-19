@@ -141,7 +141,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                     if (i_16_ != -1412584499 && ((WidgetRedrawTracker.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
                                         SpriteLoadValidator.anInt4792 = i_10_
                                         AbstractTileShapeStatics.anInt6555 = i_11_
-                                        RectangleRegion.aWidgetComponentArray1942 = widgetComponents
+                                        SceneNodeDeque.aWidgetComponentArray1942 = widgetComponents
                                         i_18_++
                                         continue
                                     }
@@ -252,7 +252,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     if (i_40_ > 98304) {
                                                         i_41_ = -65536
                                                         if (ServerConnectionInfo.aBoolean2151) {
-                                                            WidgetComponent.method427(-35)
+                                                            ConfigArchiveLoader.method427(-35)
                                                             for (i_42_ in 0..9) System.gc()
                                                             i_40_ = (((runtime.totalMemory()) - (runtime.freeMemory())) / 1024L).toInt()
                                                             if (i_40_ > 65536) method544("WARNING: Memory usage over 64MB! Please inform whoever is responsible for the content/area you are using/in.", false, 4)

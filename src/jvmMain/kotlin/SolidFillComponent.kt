@@ -46,16 +46,25 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
         var aIntRange_8365: IntRange? = IntRange(30, -1)
 
         @JvmStatic
+        fun method1164(i: Byte) {
+            if (i <= -42) {
+                TextureMaterialGroup.aJs5Archive_1940 = null
+                aClass348_Sub42_Sub12_1946 = null
+                SceneNodeDeque.aWidgetComponentArray1942 = null
+            }
+        }
+        var aClass348_Sub42_Sub12_1946: ContactEntry? = null
+        @JvmStatic
         fun method191(bool: Boolean, i: Int, i_0_: Int) {
             if (NpcEntityUpdater.anInt3655 != 1) {
                 if (NpcEntityUpdater.anInt3655 == 2) {
                     if (!GrayscaleNoiseTexture.aBoolean5300) TextureFormatInfo.method2291((-127).toByte(), i, i_0_)
                     else TextureFormatInfo.method2291((-122).toByte(), i + NativeTerrainTile.method4008((-128).toByte()), SceneTilePlaneManager.method260(!bool) + i_0_)
                 }
-            } else SpriteMaskShape.method2599(101.toByte(), RectangleRegion.aClass348_Sub42_Sub12_1946, i_0_, i)
+            } else SpriteMaskShape.method2599(101.toByte(), SolidFillComponent.aClass348_Sub42_Sub12_1946, i_0_, i)
             anInt8354++
             NpcEntityUpdater.anInt3655 = 0
-            RectangleRegion.aClass348_Sub42_Sub12_1946 = null
+            SolidFillComponent.aClass348_Sub42_Sub12_1946 = null
             if (bool != true) method197(true)
         }
 

@@ -304,7 +304,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     else if (RenderNodeStatics.aBoolean9722) TileRenderState.method2678(-2049)
                 }
                 if (RegionSceneLoader.aWidgetComponent_3701 == null && HashLinkedListNodeStatics.anInt7059 == 0) {
-                    RectangleRegion.aClass348_Sub42_Sub12_1946 = null
+                    SolidFillComponent.aClass348_Sub42_Sub12_1946 = null
                     NpcEntityUpdater.anInt3655 = 0
                 }
             }

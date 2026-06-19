@@ -14,11 +14,11 @@ import VorbisOggDecoder.Companion.method2972
 import TurbulenceTextureNode.Companion.method3113
 import GlTexture2DRegion.Companion.method3553
 import GlCubemapLightPass.Companion.method3544
-import WidgetComponent.Companion.method427
 import MinimapTriangleDrawer.Companion.method464
 import GameClock.method599
 import ChatCommandProcessor.method706
 import ChatCommandProcessor.method715
+import NoiseTextureNode.Companion.method3102
 import jagex3.jagmisc.jagmisc.availablePhysicalMemory
 import java.io.File
 import java.io.FileNotFoundException
@@ -866,6 +866,46 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("ls.B(" + (if (string != null) "{...}" else "null") + ',' + i + ')'))
             }
+        }
+
+
+
+        var anInt837: Int = 0
+        @JvmStatic
+        fun method427(i: Int) {
+            anInt837++
+            RenderConfigFactory.aLocDefinitionCache_2979!!.method2033(46.toByte())
+            Tooltip.aParticleDefLoader_4460!!.method1377(2)
+            RadialTextureNode.aModelDefinitionLoader_9342!!.method1204(0)
+            GradientLookupEffect.aSeqDefinitionCache_9195!!.method2006(88)
+            MapAreaDefinition.aBufferedMessageQueue_2529!!.method2080(127)
+            ClientException.aModelHeaderCache_112!!.method1938(126)
+            ParticleEmitterNode.aWidgetCache_191!!.method838(7)
+            ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2542(-101)
+            RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)
+            NormalMapGenerator.aParticleAmountCache_3453!!.method1590(0)
+            OpenGlModel.aNpcDefinitionCache_5558!!.method1986((-91).toByte())
+            ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1174((-99).toByte())
+            TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1222(true)
+            TheoraVideoStream.aLocTypeDefLoader_9036!!.method1410(-27995)
+            ProjectionCameraTransform.aEmoteDefCache_5764!!.method2602(0)
+            Client.aMapSceneCache_413!!.method816(false)
+            HoverActionEntry.aSpriteStore_1813!!.method302(-797644856)
+            AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1390(23)
+            GraphicsOptionState.aItemDefinitionLoader_3147!!.method1283(1)
+            SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method694(-1007)
+            FileExistsCondition.aModelDefinitionCache_4782!!.method1598(111)
+            CalendarUtil.method2638(-4631)
+            NpcCountAccessor.method1328(-26162)
+            method3102(22385)
+            MapSceneRenderer.method386((-106).toByte())
+            AudioResampler.method1271(0)
+            TextureMipDescriptor.aLruByteCache_4346!!.method587(-108)
+            MaterialTypeMarker.aLruByteCache_6517!!.method587(-109)
+            TerrainTileShape.aLruByteCache_8807!!.method587(-113)
+            SkeletalAnimFrameLoader.aLruByteCache_463!!.method587(-83)
+            ChatCommandProcessor.aLruByteCache_1174!!.method587(-91)
+            val i_17_ = 54 / ((26 - i) / 53)
         }
     }
 }

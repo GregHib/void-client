@@ -339,4 +339,11 @@ object ClientLoadStateMachine {
         ClientLoadStateMachine.aSoundChannelMixer_7042 = null
         Client.aHashtable_7041 = null
     }
+    var anInt2152: Int = 0
+    @JvmStatic
+    fun method1265(i: Int) {
+        anInt2152++
+        if (ClientLoadStateMachine.aSoundChannelMixer_7042 != null) ClientLoadStateMachine.aSoundChannelMixer_7042!!.method2093(true)
+        if (VarbitDefLoader.aSoundChannelMixer_2596 != null) VarbitDefLoader.aSoundChannelMixer_2596!!.method2093(true)
+    }
 }

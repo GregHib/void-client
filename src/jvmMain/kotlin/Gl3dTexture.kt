@@ -151,7 +151,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 ArchiveResourceProvider.aIntRange_6340,
                 InputStream_Sub1.aIntRange_79,
                 FileExistsCondition.aIntRange_4779,
-                ObjectByteSerializerHolder.aIntRange_2285,
+                IntRange.aIntRange_2285,
                 SceneTileBounds.aIntRange_1123,
                 GroundDecorRenderer.aIntRange_3641,
                 PingHostListHolder.aIntRange_2335,

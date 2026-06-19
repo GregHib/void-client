@@ -1,4 +1,5 @@
 import ActorEntity.Companion.method163
+import FontMetaRef.Companion.aLruByteCache_4327
 import java.awt.Color
 import java.awt.Font
 import java.awt.FontMetrics
@@ -312,11 +313,17 @@ class LoadingBarRenderer : CursorController {
             }
         }
 
+        var aFont4329: Font? = null
         var anInt2569: Int = 0
         fun method1428(bool: Boolean) {
             anImage4249 = null
             anInt2569++
-            FontMetaRef.aFont4329 = null
+            aFont4329 = null
+        }
+        @JvmStatic
+        fun method3457(bool: Boolean) {
+            aFont4329 = null
+            aLruByteCache_4327 = null
         }
         var aColorArray9163: Array<Color?>? = arrayOf<Color?>(Color(9179409), Color(16777215), Color(16726277), Color(16726277))
     }
