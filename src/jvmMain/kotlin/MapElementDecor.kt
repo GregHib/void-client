@@ -278,7 +278,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         var_renderer.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0)
                         var_renderer.method3628(-152 + i_16_, i_17_, 304, 34, LoadingBarRenderer.aColorArray9163!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
                         var_renderer.aa(i_16_ - 150, 2 + i_17_, LinkedListNodeStatics.anInt4290 * 3, 30, GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
-                        NodeDequeStatics.aFont_3326!!.method2575((-116).toByte(), i_16_, MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884]!!.getRGB(), LocalizedText.aLocalizedText_3501!!.method2063(ChatCommandProcessor.anInt6967, i + 551), -1, i_15_ + i_17_)
+                        NodeDequeStatics.aRSFont_3326!!.method2575((-116).toByte(), i_16_, MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884]!!.getRGB(), LocalizedText.aLocalizedText_3501!!.method2063(ChatCommandProcessor.anInt6967, i + 551), -1, i_15_ + i_17_)
                     } else {
                         val i_18_ = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / MapRegionLoader.aFloat1247).toInt())
                         val i_19_ = ((i_13_.toFloat() / MapRegionLoader.aFloat1247).toInt() + DebugOverlayRenderer.anInt3170)
@@ -303,13 +303,13 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         if (!PixelBlender.aBoolean3811) break
                         val i_22_ = -5 + i_11_ + i_12_
                         var i_23_ = -8 + i_13_ + i_14_
-                        GameAppletFrame.aFont_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_23_, 16776960, i_22_, i + -116, -1)
+                        GameAppletFrame.aRSFont_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_23_, 16776960, i_22_, i + -116, -1)
                         i_23_ -= 15
                         val runtime = Runtime.getRuntime()
                         val i_24_ = ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L).toInt()
                         var i_25_ = 16776960
                         if (i_24_ > 65536) i_25_ = 16711680
-                        GameAppletFrame.aFont_20!!.method2569("Mem:" + i_24_ + "k", i_23_, i_25_, i_22_, -127, -1)
+                        GameAppletFrame.aRSFont_20!!.method2569("Mem:" + i_24_ + "k", i_23_, i_25_, i_22_, -127, -1)
                         i_23_ -= 15
                     }
                 } catch (runtimeexception: RuntimeException) {

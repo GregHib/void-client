@@ -2,21 +2,21 @@
 * Visit http://jode.sourceforge.net/
 */
 class RenderableEntry {
-    var aFont_4332: Font?
+    var aRSFont_4332: RSFont?
     var aFontDefinition_4333: FontDefinition? = null
 
-    internal constructor(font: Font?) {
-        this.aFont_4332 = null
-        this.aFont_4332 = font
+    internal constructor(RSFont: RSFont?) {
+        this.aRSFont_4332 = null
+        this.aRSFont_4332 = RSFont
     }
 
-    internal constructor(font: Font?, fontDefinition: FontDefinition?) {
-        this.aFont_4332 = null
+    internal constructor(RSFont: RSFont?, fontDefinition: FontDefinition?) {
+        this.aRSFont_4332 = null
         try {
             this.aFontDefinition_4333 = fontDefinition
-            this.aFont_4332 = font
+            this.aRSFont_4332 = RSFont
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("el.<init>(" + (if (font != null) "{...}" else "null") + ',' + (if (fontDefinition != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("el.<init>(" + (if (RSFont != null) "{...}" else "null") + ',' + (if (fontDefinition != null) "{...}" else "null") + ')'))
         }
     }
 

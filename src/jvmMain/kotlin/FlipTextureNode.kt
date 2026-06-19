@@ -244,7 +244,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 if (PixelBlender.aBoolean3811) {
                                                     var i_39_ = -256
                                                     if (SimpleToggleOptionState.anInt5891 < 20) i_39_ = -65536
-                                                    GameAppletFrame.aFont_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_38_, i_39_, i_37_, -128, -1)
+                                                    GameAppletFrame.aRSFont_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_38_, i_39_, i_37_, -128, -1)
                                                     i_38_ += 15
                                                     val runtime = Runtime.getRuntime()
                                                     var i_40_ = (((runtime.totalMemory()) + -(runtime.freeMemory())) / 1024L).toInt()
@@ -258,12 +258,12 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                             if (i_40_ > 65536) method544("WARNING: Memory usage over 64MB! Please inform whoever is responsible for the content/area you are using/in.", false, 4)
                                                         }
                                                     }
-                                                    GameAppletFrame.aFont_20!!.method2569("Mem:" + i_40_ + "k", i_38_, i_41_, i_37_, -124, -1)
+                                                    GameAppletFrame.aRSFont_20!!.method2569("Mem:" + i_40_ + "k", i_38_, i_41_, i_37_, -124, -1)
                                                     i_38_ += 15
-                                                    GameAppletFrame.aFont_20!!.method2569(("In:" + CompassSmoother.anInt3372 + "B/s Out:" + (ModelResourceBundle.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1)
+                                                    GameAppletFrame.aRSFont_20!!.method2569(("In:" + CompassSmoother.anInt3372 + "B/s Out:" + (ModelResourceBundle.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 15
                                                     val i_43_ = (FacingDirectionNode.aRenderer6654!!.E() / 1024)
-                                                    GameAppletFrame.aFont_20!!.method2569("Offheap:" + i_43_ + "k", i_38_, (if (i_43_ <= 65536) -256 else -65536), i_37_, -125, -1)
+                                                    GameAppletFrame.aRSFont_20!!.method2569("Offheap:" + i_43_ + "k", i_38_, (if (i_43_ <= 65536) -256 else -65536), i_37_, -125, -1)
                                                     i_38_ += 15
                                                     var i_44_ = 0
                                                     var i_45_ = 0
@@ -280,25 +280,25 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     val i_48_ = i_46_ * 100 / i_44_
                                                     val i_49_ = 10000 * i_45_ / i_44_
                                                     val string = ("Cache:" + (SceneCollisionEntry.method3486(2, true, 0, i_49_.toLong(), 16980)) + "% (" + i_48_ + "%)")
-                                                    WorldMapRenderer.aFont_4684!!.method2569(string, i_38_, -256, i_37_, -127, -1)
+                                                    WorldMapRenderer.aRSFont_4684!!.method2569(string, i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
                                                     if (Loader.showCoordinates) {
                                                         val playerX = (LocalPlayerState.aPlayer_1907!!.x shr 9) + ArbVertexProgram.regionTileX
                                                         val playerY = (LocalPlayerState.aPlayer_1907!!.y shr 9) + RegionMapDecoder.regionTileY
-                                                        WorldMapRenderer.aFont_4684!!.method2569("Coordinates: " + playerX + ", " + playerY + ", " + LocalPlayerState.aPlayer_1907!!.plane, i_38_, -256, i_37_, -127, -1)
+                                                        WorldMapRenderer.aRSFont_4684!!.method2569("Coordinates: " + playerX + ", " + playerY + ", " + LocalPlayerState.aPlayer_1907!!.plane, i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
-                                                        WorldMapRenderer.aFont_4684!!.method2569("Region id: " + (((playerX shr 6) shl 8) + (playerY shr 6)) + " (" + (playerX shr 6) + ", " + (playerY shr 6) + ")", i_38_, -256, i_37_, -127, -1)
+                                                        WorldMapRenderer.aRSFont_4684!!.method2569("Region id: " + (((playerX shr 6) shl 8) + (playerY shr 6)) + " (" + (playerX shr 6) + ", " + (playerY shr 6) + ")", i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
-                                                        WorldMapRenderer.aFont_4684!!.method2569("Chunk: " + (playerX shr 3) + ", " + (playerY shr 3), i_38_, -256, i_37_, -127, -1)
+                                                        WorldMapRenderer.aRSFont_4684!!.method2569("Chunk: " + (playerX shr 3) + ", " + (playerY shr 3), i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
                                                     }
                                                 }
-                                                if (SkyboxGradient.anInt3936 > 0) WorldMapRenderer.aFont_4684!!.method2569(("Particles: " + (WallEntity.anInt8780) + " / " + SkyboxGradient.anInt3936), i_38_, -256, i_37_, -121, -1)
+                                                if (SkyboxGradient.anInt3936 > 0) WorldMapRenderer.aRSFont_4684!!.method2569(("Particles: " + (WallEntity.anInt8780) + " / " + SkyboxGradient.anInt3936), i_38_, -256, i_37_, -121, -1)
                                                 i_38_ += 12
                                                 if (GlowPostProcessor.aBoolean2514) {
-                                                    WorldMapRenderer.aFont_4684!!.method2569(("Polys: " + FacingDirectionNode.aRenderer6654!!.I() + " Models: " + FacingDirectionNode.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)
+                                                    WorldMapRenderer.aRSFont_4684!!.method2569(("Polys: " + FacingDirectionNode.aRenderer6654!!.I() + " Models: " + FacingDirectionNode.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
-                                                    WorldMapRenderer.aFont_4684!!.method2569(("Ls: " + ClickFeedbackTask.anInt4666 + " La: " + DrawListState.anInt1482 + " NPC: " + BoxedIntHolder.anInt2968 + " Pl: " + NativeShaderProgram.anInt9776), i_38_, -256, i_37_, -122, -1)
+                                                    WorldMapRenderer.aRSFont_4684!!.method2569(("Ls: " + ClickFeedbackTask.anInt4666 + " La: " + DrawListState.anInt1482 + " NPC: " + BoxedIntHolder.anInt2968 + " Pl: " + NativeShaderProgram.anInt9776), i_38_, -256, i_37_, -122, -1)
                                                     MapLabelMenuEntry.method1042((-123).toByte())
                                                     i_38_ += 12
                                                 }
@@ -652,15 +652,15 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                         if (class42.aString597 == null) break
                         var i_29_ = 0
                         if (abstractModelRenderer != null) i_29_ = abstractModelRenderer.method969()
-                        var class324 = WorldMapRenderer.aFont_4684
+                        var class324 = WorldMapRenderer.aRSFont_4684
                         var class143 = GlTexture3D.aFontDefinition_8527
                         if (class42.anInt576 == 1) {
-                            class324 = GameAppletFrame.aFont_20
+                            class324 = GameAppletFrame.aRSFont_20
                             class143 = ParticleEmitterFactoryStatics.aFontDefinition_3179
                         }
                         if (class42.anInt576 == 2) {
                             class143 = WorldMapLabel.aFontDefinition_4962
-                            class324 = NodeDequeStatics.aFont_3326
+                            class324 = NodeDequeStatics.aRSFont_3326
                         }
                         CameraOrModelTransform.method2650(class143, class42.anInt580, var_sprite, i_8_, i_6_, class42.aString597, i, class324, i_29_, widgetComponent, i_5_, 100)
                     }

@@ -2,7 +2,7 @@ package external
 
 import AbstractModelRenderer
 import Disposable
-import Font
+import RSFont
 import FontDefinition
 import Sprite
 import SpriteImage
@@ -11,7 +11,7 @@ import SpriteImage
 * Visit http://jode.sourceforge.net/
 * NativeFontRenderer
 */
-class h(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, abstractModelRenderers: Array<AbstractModelRenderer?>?) : Font(var_oa, fontDefinition), Disposable {
+class h(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, abstractModelRenderers: Array<AbstractModelRenderer?>?) : RSFont(var_oa, fontDefinition), Disposable {
     var nativeid: Long = 0
 
     init {

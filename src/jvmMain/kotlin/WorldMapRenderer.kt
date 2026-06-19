@@ -23,23 +23,23 @@ class WorldMapRenderer internal constructor(mapRegionLoaderThread: MapRegionLoad
             val i_7_ = ((aMinimapSpriteRenderer_4685.aScreenAnchorAlignment_4922!!.method1607(NpcSpawnDecoder.anInt1524, aMinimapSpriteRenderer_4685.anInt4929, (-118).toByte())) - -aMinimapSpriteRenderer_4685.anInt4924)
             var i_8_ = ((aMinimapSpriteRenderer_4685.aTileRenderState_4925!!.method2679(OpenGlRenderer.anInt7666, aMinimapSpriteRenderer_4685.anInt4923, i.toInt() xor 0x60b.inv())) - -aMinimapSpriteRenderer_4685.anInt4920)
             if (aMinimapSpriteRenderer_4685.aBoolean4914) FacingDirectionNode.aRenderer6654!!.method3628(i_7_, i_8_, aMinimapSpriteRenderer_4685.anInt4929, aMinimapSpriteRenderer_4685.anInt4923, aMinimapSpriteRenderer_4685.anInt4917, 0)
-            i_8_ += method1855(5, class295.aString3756, true, NodeDequeStatics.aFont_3326, i_7_, i_8_) * 12
+            i_8_ += method1855(5, class295.aString3756, true, NodeDequeStatics.aRSFont_3326, i_7_, i_8_) * 12
             i_8_ += 8
             if (aMinimapSpriteRenderer_4685.aBoolean4914) FacingDirectionNode.aRenderer6654!!.method3709(i_7_, i_8_, i_7_ + aMinimapSpriteRenderer_4685.anInt4929 + -1, i_8_, aMinimapSpriteRenderer_4685.anInt4917, 0)
-            i_8_ = ++i_8_ + method1855(5, class295.aString3754, true, NodeDequeStatics.aFont_3326, i_7_, i_8_) * 12
+            i_8_ = ++i_8_ + method1855(5, class295.aString3754, true, NodeDequeStatics.aRSFont_3326, i_7_, i_8_) * 12
             i_8_ += 5
-            i_8_ += method1855(5, class295.aString3758, true, NodeDequeStatics.aFont_3326, i_7_, i_8_) * 12
+            i_8_ += method1855(5, class295.aString3758, true, NodeDequeStatics.aRSFont_3326, i_7_, i_8_) * 12
         }
         if (i.toInt() != -49) method8(12.toByte())
     }
 
-    private fun method1855(i: Int, string: String?, bool: Boolean, font: Font?, i_9_: Int, i_10_: Int): Int {
+    private fun method1855(i: Int, string: String?, bool: Boolean, RSFont: RSFont?, i_9_: Int, i_10_: Int): Int {
         try {
             if (bool != true) return -62
             anInt4677++
-            return (font!!.method2584(null, 0, aMinimapSpriteRenderer_4685!!.anInt4928, null, aMinimapSpriteRenderer_4685.anInt4913, 0, -(i * 2) + aMinimapSpriteRenderer_4685.anInt4923, null, i + i_10_, 0, 0, -(i * 2) + aMinimapSpriteRenderer_4685.anInt4929, i_9_ + i, false, 0, string))
+            return (RSFont!!.method2584(null, 0, aMinimapSpriteRenderer_4685!!.anInt4928, null, aMinimapSpriteRenderer_4685.anInt4913, 0, -(i * 2) + aMinimapSpriteRenderer_4685.anInt4923, null, i + i_10_, 0, 0, -(i * 2) + aMinimapSpriteRenderer_4685.anInt4929, i_9_ + i, false, 0, string))
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("ta.A(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + (if (font != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ta.A(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + (if (RSFont != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ')'))
         }
     }
 
@@ -67,7 +67,7 @@ class WorldMapRenderer internal constructor(mapRegionLoaderThread: MapRegionLoad
         var anInt4680: Int = 0
         var anInt4681: Int = 0
         var aLong4683: Long = 0
-        var aFont_4684: Font? = null
+        var aRSFont_4684: RSFont? = null
 
         var anInt4686: Int = 0
 
@@ -92,7 +92,7 @@ class WorldMapRenderer internal constructor(mapRegionLoaderThread: MapRegionLoad
             aAbstractModelRendererArray4679 = null
             if (i.toInt() != 48) anInt4674 = -62
             aSystemFontGlyphs_4672 = null
-            aFont_4684 = null
+            aRSFont_4684 = null
         }
 
         fun method1854(i: Int, i_5_: Int, bool: Boolean, i_6_: Int): Int {

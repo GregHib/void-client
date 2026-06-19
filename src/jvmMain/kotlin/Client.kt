@@ -248,8 +248,8 @@ import PositionedSceneNode.Companion.method2518
 import MapElementDefinitionCache.Companion.method2545
 import AbstractCameraTransformStatics.method2555
 import SystemFontGlyphs.Companion.method2562
-import Font.Companion.method2570
-import Font.Companion.method2572
+import RSFont.Companion.method2570
+import RSFont.Companion.method2572
 import SpriteMaskShape.Companion.method2597
 import ShaderState.Companion.method2610
 import ShaderStateVariant.method2611
@@ -508,15 +508,6 @@ import InvertTextureNode.Companion.method3134
 import KaraokeSubtitleStream.Companion.method2988
 import MapLabelMenuEntry.Companion.method1041
 import MaterialPass.Companion.method2138
-import MovementDirection.Companion.aMovementDirection_1179
-import MovementDirection.Companion.aMovementDirection_1181
-import MovementDirection.Companion.aMovementDirection_1182
-import MovementDirection.Companion.aMovementDirection_1183
-import MovementDirection.Companion.aMovementDirection_1184
-import MovementDirection.Companion.aMovementDirection_1185
-import MovementDirection.Companion.aMovementDirection_1186
-import MovementDirection.Companion.aMovementDirection_1187
-import MovementDirection.Companion.anIntArrayArray1190
 import MultiLevelOptionState.Companion.method1851
 import NoOpGraphicsOptionState.Companion.method1803
 import ShadowQualityOptionState.Companion.method1788
@@ -912,7 +903,7 @@ class Client : GameAppletFrame() {
         method1298(-1)
         method3252(353)
         method445(i.toInt() xor 0x6e)
-        Font.method1543(-4524)
+        RSFont.method1543(-4524)
         method2395(50.toByte())
         method2406(i.toInt() xor 0x12.inv())
         method2479(i + 19316)
@@ -1705,14 +1696,14 @@ class Client : GameAppletFrame() {
                         if (AnimationFrameTable.anInt489 == 1) {
                             if (LocDefinitionCache.anInt3441 > StringValueNode.anInt7115) StringValueNode.anInt7115 = LocDefinitionCache.anInt3441
                             val i = ((-LocDefinitionCache.anInt3441 + StringValueNode.anInt7115) * 50 / StringValueNode.anInt7115)
-                            method3511(true, aFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
+                            method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
                         } else if (AnimationFrameTable.anInt489 == 2) {
                             if (ItemModelDefinition.anInt443 < CompositeNpcModelBuilder.anInt2101) ItemModelDefinition.anInt443 = CompositeNpcModelBuilder.anInt2101
                             val i = (((ItemModelDefinition.anInt443 - CompositeNpcModelBuilder.anInt2101) * 50 / ItemModelDefinition.anInt443) + 50)
-                            method3511(true, aFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
-                        } else method3511(true, aFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)), 2, FacingDirectionNode.aRenderer6654)
+                            method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
+                        } else method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)), 2, FacingDirectionNode.aRenderer6654)
                     } else if (WorldMapRenderer.anInt4674 != 10) {
-                        if (WorldMapRenderer.anInt4674 == 13) method3511(false, aFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3497!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>" + (LocalizedText.aLocalizedText_3498!!.method2063(ChatCommandProcessor.anInt6967, 544))), 2, FacingDirectionNode.aRenderer6654)
+                        if (WorldMapRenderer.anInt4674 == 13) method3511(false, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3497!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>" + (LocalizedText.aLocalizedText_3498!!.method2063(ChatCommandProcessor.anInt6967, 544))), 2, FacingDirectionNode.aRenderer6654)
                     } else MinimapPositionState.method2284((-43).toByte(), l)
                 } else method1761(85)
             } else method1761(85)

@@ -2295,7 +2295,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
 
     abstract fun method3939(i: Byte)
 
-    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Font {
+    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): RSFont {
         try {
             anInt7952++
             return GlFontTextured(this, fontDefinition, spriteImages as Array<SpriteImage>, bool)

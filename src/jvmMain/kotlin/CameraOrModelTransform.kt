@@ -57,7 +57,7 @@ class CameraOrModelTransform {
             return c >= '0' && c <= '9'
         }
 
-        fun method2650(fontDefinition: FontDefinition?, i: Int, var_sprite: Sprite?, i_1_: Int, i_2_: Int, string: String?, i_3_: Int, font: Font?, i_4_: Int, widgetComponent: WidgetComponent?, i_5_: Int, i_6_: Int) {
+        fun method2650(fontDefinition: FontDefinition?, i: Int, var_sprite: Sprite?, i_1_: Int, i_2_: Int, string: String?, i_3_: Int, RSFont: RSFont?, i_4_: Int, widgetComponent: WidgetComponent?, i_5_: Int, i_6_: Int) {
             try {
                 anInt4153++
                 val i_7_: Int
@@ -77,10 +77,10 @@ class CameraOrModelTransform {
                     val i_14_ = fontDefinition!!.method1187(string, false, 100, null)
                     val i_15_ = fontDefinition.method1185(null, 0, 0, i_6_, string)
                     i_12_ -= i_14_ / 2
-                    if (-widgetComponent.anInt709 <= i_12_ && widgetComponent.anInt709 >= i_12_ && (i_13_ >= -widgetComponent.anInt789) && widgetComponent.anInt789 >= i_13_) font!!.method2584(null, 0, 0, null, i, 0, 50, var_sprite, (-i_4_ + (i_3_ + (widgetComponent.anInt789 / 2 + (-i_13_ - i_15_)))), i_2_, i_3_, i_14_, (widgetComponent.anInt709 / 2 + (i_2_ + i_12_)), false, 1, string)
+                    if (-widgetComponent.anInt709 <= i_12_ && widgetComponent.anInt709 >= i_12_ && (i_13_ >= -widgetComponent.anInt789) && widgetComponent.anInt789 >= i_13_) RSFont!!.method2584(null, 0, 0, null, i, 0, 50, var_sprite, (-i_4_ + (i_3_ + (widgetComponent.anInt789 / 2 + (-i_13_ - i_15_)))), i_2_, i_3_, i_14_, (widgetComponent.anInt709 / 2 + (i_2_ + i_12_)), false, 1, string)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("dk.H(" + (if (fontDefinition != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (font != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("dk.H(" + (if (fontDefinition != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (RSFont != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ')'))
             }
         }
 

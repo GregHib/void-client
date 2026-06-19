@@ -214,7 +214,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun K(`is`: IntArray?)
 
-    abstract fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Font?
+    abstract fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): RSFont?
 
     abstract fun H(i: Int, i_146_: Int, i_147_: Int, `is`: IntArray?)
 

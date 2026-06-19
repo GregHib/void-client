@@ -6,18 +6,18 @@ import TextureAtlasState.Companion.method3490
 * Visit http://jode.sourceforge.net/
 */
 object Tooltip {
-    var aFont_4456: Font? = null
+    var aRSFont_4456: RSFont? = null
     var anInt4457: Int = 0
 
     var anInt4458: Int = -1
     var aParticleDefLoader_4460: ParticleDefLoader? = null
 
     @JvmStatic
-    fun method3511(bool: Boolean, font: Font?, fontDefinition: FontDefinition?, string: String?, i: Int, var_renderer: Renderer?) {
-        var class324 = font
+    fun method3511(bool: Boolean, RSFont: RSFont?, fontDefinition: FontDefinition?, string: String?, i: Int, var_renderer: Renderer?) {
+        var class324 = RSFont
         var class143 = fontDefinition
         try {
-            if (i != 2) aFont_4456 = null
+            if (i != 2) aRSFont_4456 = null
             anInt4457++
             val bool_0_ = !LocalizedTextTriple.aBoolean3763 || method3490(true)
             if (bool_0_) {
@@ -86,7 +86,7 @@ object Tooltip {
     fun method3512(i: Int) {
         aParticleDefLoader_4460 = null
         if (i != 4) anInt4458 = 96
-        aFont_4456 = null
+        aRSFont_4456 = null
     }
 
     var anInt642: Int = 0

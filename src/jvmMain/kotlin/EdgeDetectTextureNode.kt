@@ -49,13 +49,13 @@ class EdgeDetectTextureNode : AbstractProceduralTextureNode(1, true) {
 
         var anInt9172: Int = 0
 
-        var aFont_9173: Font? = null
+        var aRSFont_9173: RSFont? = null
 
         @JvmStatic
         fun method3071(i: Byte) {
             if (i.toInt() != 59) anGameApplet_Frame_9169 = null
             aLruByteCache_9171 = null
-            aFont_9173 = null
+            aRSFont_9173 = null
         }
 
         @JvmStatic

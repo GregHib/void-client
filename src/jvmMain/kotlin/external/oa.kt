@@ -7,7 +7,7 @@ import AbstractTileShape
 import CameraMarker
 import CircleRasterizer
 import Disposable
-import Font
+import RSFont
 import FontDefinition
 import RendererType
 import HashTileShape
@@ -132,7 +132,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         /* empty */
     }
 
-    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Font {
+    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): RSFont {
         val `is` = IntArray(spriteImages!!.size)
         val is_60_ = IntArray(spriteImages.size)
         var bool_61_ = false

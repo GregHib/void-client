@@ -222,7 +222,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                 }
                 if (bool) {
-                    if (AnimationFrameTable.anInt489 != 0) Tooltip.method3511(true, GameAppletFrame.aFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
+                    if (AnimationFrameTable.anInt489 != 0) Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
                     method3570(false)
                     InterfaceBounds.method2938(102.toByte())
                     method1772(i xor 0x41)
@@ -243,7 +243,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (FacingDirectionNode.aRenderer6654!!.method3670()) i_27_++
                     RenderbufferObject.method3171(FacingDirectionNode.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, i_27_, bool_25_, FacingDirectionNode.aRenderer6654!!.method3704() > 0)
                     TerrainShadowBuilderGl2.method3018(SequencedActorEntity.anInt10096)
-                    if (SequencedActorEntity.anInt10096 != 0) ModelResourceBundle.method3328(WorldMapRenderer.aFont_4684)
+                    if (SequencedActorEntity.anInt10096 != 0) ModelResourceBundle.method3328(WorldMapRenderer.aRSFont_4684)
                     else ModelResourceBundle.method3328(null)
                     for (i_28_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_28_]!!.method3500(i xor 0x2bc)
                     RsaVarbitHandler.method491((-86).toByte())

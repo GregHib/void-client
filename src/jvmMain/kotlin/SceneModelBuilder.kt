@@ -49,7 +49,7 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                     } else `is` = (ClientException.aModelHeaderCache_112!!.method1940(-67, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
                     var string = IntHashSetStatics.method2367(125.toByte(), class348_sub42_sub12)
                     if (`is` != null) string += method1273(`is`, true)
-                    NodeDequeStatics.aFont_3326!!.method2567(i_1_, string, 116.toByte(), i_4_, 0, i_7_ - -3, TileRenderState.aAbstractModelRendererArray4234, SizeBoundedSoftCache.anIntArray2330)
+                    NodeDequeStatics.aRSFont_3326!!.method2567(i_1_, string, 116.toByte(), i_4_, 0, i_7_ - -3, TileRenderState.aAbstractModelRendererArray4234, SizeBoundedSoftCache.anIntArray2330)
                     if (!class348_sub42_sub12.aBoolean9597) break
                     SceneryDetailOptionState.aAbstractModelRenderer_6097!!.method974(WorldMapLabel.aFontDefinition_4962!!.method1183(true, string) + (i_7_ - -5), -12 + i_1_)
                 } catch (runtimeexception: RuntimeException) {

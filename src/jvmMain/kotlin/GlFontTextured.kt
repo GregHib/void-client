@@ -1,6 +1,6 @@
 import jaclib.memory.Stream.Companion.c
 
-class GlFontTextured internal constructor(private val aHa_Sub3_6494: NativeRenderer, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, bool: Boolean) : Font(aHa_Sub3_6494, fontDefinition) {
+class GlFontTextured internal constructor(private val aHa_Sub3_6494: NativeRenderer, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, bool: Boolean) : RSFont(aHa_Sub3_6494, fontDefinition) {
     private val anInterface18_Impl3_6492: Renderable2dTexture?
     private val aBoolean6493: Boolean
     private val anInterface5_Impl1_6495: VertexBufferResource

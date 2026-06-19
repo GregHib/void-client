@@ -5,7 +5,7 @@ object NodeDequeStatics {
     var aJs5Archive_3323: Js5Archive? = null
     var anInt3324: Int = 0
 
-    var aFont_3326: Font? = null
+    var aRSFont_3326: RSFont? = null
     var anObject3331: Any? = null
     var aModelLightingConfigArrayArray3335: Array<Array<ModelLightingConfig?>?>? = null
     var anInt3338: Int = 0
@@ -92,7 +92,7 @@ object NodeDequeStatics {
         anObject3331 = null
         if (i != -13722) method2000(-104, 106, null, null)
         aJs5Archive_3323 = null
-        aFont_3326 = null
+        aRSFont_3326 = null
     }
 
     fun method2000(i: Int, i_23_: Int, canvas: Canvas?, var_renderConfig: RenderConfig?): Renderer {

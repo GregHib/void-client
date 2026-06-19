@@ -11,7 +11,7 @@ import jaggl.OpenGL.Companion.glTexGeni
 import jaggl.OpenGL.Companion.glTranslatef
 import jaggl.OpenGL.Companion.glVertex2i
 
-class GlFontDisplayList internal constructor(private val aHa_Sub2_6509: OpenGlRenderer, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, bool: Boolean) : Font(aHa_Sub2_6509, fontDefinition) {
+class GlFontDisplayList internal constructor(private val aHa_Sub2_6509: OpenGlRenderer, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, bool: Boolean) : RSFont(aHa_Sub2_6509, fontDefinition) {
     private val aGlDisplayListFont_6510: GlDisplayListFont
     private val aClass258_Sub3_Sub1_6511: GlTexture2DRegion?
     private val aBoolean6512: Boolean

@@ -61,7 +61,7 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
                     AbstractBloomEffect.aAbstractModelRenderer_6627!!.method974((-AbstractBloomEffect.aAbstractModelRenderer_6627!!.method971() + i_4_ - -i), i_5_)
                 }
                 if (bool == false) {
-                    NodeDequeStatics.aFont_3326!!.method2576(string, (CharCodeMap.anInt9586) or 0xffffff.inv(), 14 + i_5_, 3 + i_4_, -1, -127)
+                    NodeDequeStatics.aRSFont_3326!!.method2576(string, (CharCodeMap.anInt9586) or 0xffffff.inv(), 14 + i_5_, 3 + i_4_, -1, -127)
                     var_renderer!!.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (CompassSmoother.anInt3376 or (255 + -NpcConfig.anInt948 shl 24)), 1)
                 }
             } catch (runtimeexception: RuntimeException) {

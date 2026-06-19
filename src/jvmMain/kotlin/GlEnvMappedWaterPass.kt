@@ -1,4 +1,4 @@
-import Font.Companion.method2582
+import RSFont.Companion.method2582
 import jaggl.OpenGL.Companion.glGetUniformLocationARB
 import jaggl.OpenGL.Companion.glUniform1fARB
 import jaggl.OpenGL.Companion.glUniform1iARB

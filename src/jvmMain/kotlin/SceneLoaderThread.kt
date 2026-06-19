@@ -63,7 +63,7 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
                     if (class318_sub1.aBoolean6387) class318_sub1.method2387(NativeLibraryState.aRenderer171, -127)
                     else {
                         method365(class318_sub1, aClass348_Sub1Array3748)
-                        if (Tooltip.aFont_4456 != null) Tooltip.aFont_4456!!.method2576(aCacheIndexManager_3743!!.aString3953, -256, class318_sub1.anInt6380, class318_sub1.anInt6386, -16777216, -114)
+                        if (Tooltip.aRSFont_4456 != null) Tooltip.aRSFont_4456!!.method2576(aCacheIndexManager_3743!!.aString3953, -256, class318_sub1.anInt6380, class318_sub1.anInt6386, -16777216, -114)
                     }
                 } else {
                     val i = (class318 as SceneModelBuilder).anInt6394

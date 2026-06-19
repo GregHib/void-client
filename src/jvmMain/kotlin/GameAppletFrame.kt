@@ -478,7 +478,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
         var anInt19: Int = 0
 
-        var aFont_20: Font? = null
+        var aRSFont_20: RSFont? = null
 
         var anInt21: Int = 0
 
@@ -576,7 +576,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         @JvmStatic
         fun method98(i: Int) {
             anIntArray38 = null
-            aFont_20 = null
+            aRSFont_20 = null
             if (i != 32717) method86(null, 65)
         }
         var anInt2071: Int = 0

@@ -352,12 +352,12 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         var anInt5104: Int = 0
 
         @JvmStatic
-        fun method232(var_renderer: Renderer?, i: Byte, bool: Boolean, i_22_: Int): Font? {
+        fun method232(var_renderer: Renderer?, i: Byte, bool: Boolean, i_22_: Int): RSFont? {
             if (i.toInt() != -53) method237(true)
             anInt5094++
             val class352 = ChatEffectsOptionState.method1734(i_22_, var_renderer, 55.toByte(), bool)
             if (class352 == null) return null
-            return class352.aFont_4332
+            return class352.aRSFont_4332
         }
 
         @JvmStatic

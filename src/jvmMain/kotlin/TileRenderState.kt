@@ -116,10 +116,10 @@ class TileRenderState {
             CustomCursorsOptionState.aAbstractModelRendererArray5933 = null
             ScriptResources.aAbstractModelRendererArray2640 = null
             BoxBlurTextureNode.aAbstractModelRendererArray9467 = null
-            NodeDequeStatics.aFont_3326 = null
+            NodeDequeStatics.aRSFont_3326 = null
             SceneryDetailOptionState.aAbstractModelRenderer_6097 = null
-            GameAppletFrame.aFont_20 = null
-            WorldMapRenderer.aFont_4684 = null
+            GameAppletFrame.aRSFont_20 = null
+            WorldMapRenderer.aRSFont_4684 = null
             HostPingThread.aAbstractModelRendererArray2260 = null
             CameraNodeList.aAbstractModelRendererArray1744 = null
             CompassSmoother.aAbstractModelRendererArray3378 = null

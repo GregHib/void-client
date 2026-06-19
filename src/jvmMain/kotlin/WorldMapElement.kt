@@ -8,7 +8,7 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
     var aJs5Archive_4632: Js5Archive? = null
 
     var aWorldMapLabel_4635: WorldMapLabel? = null
-    private var aFont_4637: Font? = null
+    private var aRSFont_4637: RSFont? = null
     private var aLong4640: Long = 0
     abstract fun method178(i: Int, bool: Boolean, i_0_: Byte, i_1_: Int)
 
@@ -25,7 +25,7 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
         anInt4639++
         if (i == 10286) {
             val class143 = RangedGraphicsOptionState.method1766((-85).toByte(), (this.aWorldMapLabel_4635!!.anInt4965), aJs5Archive_4631)
-            aFont_4637 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aJs5Archive_4632!!, (this.aWorldMapLabel_4635!!.anInt4965)), true))
+            aRSFont_4637 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aJs5Archive_4632!!, (this.aWorldMapLabel_4635!!.anInt4965)), true))
         }
     }
 
@@ -63,7 +63,7 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
             method182(63, i_14_, i_13_, bool)
             var string = ActorEntity.aResourceLoaderThread_897!!.method2318(i.toInt() xor 0x245b)
             if (-aLong4640 + GameClock.method599(-100) > 10000L) string += " (" + ActorEntity.aResourceLoaderThread_897!!.method2324(i + 149)!!.method525(-117) + ")"
-            aFont_4637!!.method2575(115.toByte(), (i_13_ + this.aWorldMapLabel_4635!!.anInt4971 / 2), this.aWorldMapLabel_4635!!.anInt4961, string, -1, (this.aWorldMapLabel_4635!!.anInt4966 + 4 + (i_14_ - -(this.aWorldMapLabel_4635!!.anInt4963 / 2))))
+            aRSFont_4637!!.method2575(115.toByte(), (i_13_ + this.aWorldMapLabel_4635!!.anInt4971 / 2), this.aWorldMapLabel_4635!!.anInt4961, string, -1, (this.aWorldMapLabel_4635!!.anInt4966 + 4 + (i_14_ - -(this.aWorldMapLabel_4635!!.anInt4963 / 2))))
         }
     }
 

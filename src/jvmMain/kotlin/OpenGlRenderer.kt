@@ -872,7 +872,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         anInt7726++
     }
 
-    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Font {
+    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): RSFont {
         try {
             anInt7574++
             return GlFontDisplayList(this, fontDefinition, spriteImages!!, bool)
@@ -3852,8 +3852,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 i_373_ = HeadIconRenderer.anIntArray2062!![0]
                                             }
                                         }
-                                        var class324 = WorldMapRenderer.aFont_4684
-                                        var class324_387_ = WorldMapRenderer.aFont_4684
+                                        var class324 = WorldMapRenderer.aRSFont_4684
+                                        var class324_387_ = WorldMapRenderer.aRSFont_4684
                                         var class143 = GlTexture3D.aFontDefinition_8527
                                         var i_388_ = itemModelDefinition.anInt435
                                         var class143_389_ = GlTexture3D.aFontDefinition_8527
@@ -4069,21 +4069,21 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     }
                     val i_452_ = 0xffffff.inv() or i_448_
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 0) {
-                        NodeDequeStatics.aFont_3326!!.method2575(115.toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i)
+                        NodeDequeStatics.aRSFont_3326!!.method2575(115.toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_446_ -= i_443_ shr 1
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 1) {
                         i_446_ -= i_443_ shr 1
                         i_444_ -= i_443_ shr 1
-                        NodeDequeStatics.aFont_3326!!.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, TextureQualityOptionState.anInt6006, false)
+                        NodeDequeStatics.aRSFont_3326!!.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, TextureQualityOptionState.anInt6006, false)
                         i_447_ += 5
                         i_445_ -= 5
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 2) {
                         i_447_ += 5
                         i_446_ -= -5 + (i_443_ shr 1)
-                        NodeDequeStatics.aFont_3326!!.method2581(string, i_452_, (TextureQualityOptionState.anInt6006), i_440_ + i, (-112).toByte(), -16777216, i_317_ - -i_439_)
+                        NodeDequeStatics.aRSFont_3326!!.method2581(string, i_452_, (TextureQualityOptionState.anInt6006), i_440_ + i, (-112).toByte(), -16777216, i_317_ - -i_439_)
                         i_445_ -= 5
                         i_444_ -= (i_443_ shr 1) - -5
                     }
@@ -4091,7 +4091,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         i_446_ -= i_443_ shr 1
                         i_444_ -= i_443_ shr 1
                         i_447_ += 7
-                        NodeDequeStatics.aFont_3326!!.method2577(TextureQualityOptionState.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -ConfigVarProgress.anIntArray4812!![i_438_], i_439_ + i_317_, -20509)
+                        NodeDequeStatics.aRSFont_3326!!.method2577(TextureQualityOptionState.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -ConfigVarProgress.anIntArray4812!![i_438_], i_439_ + i_317_, -20509)
                         i_445_ -= 7
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 4) {
@@ -4099,7 +4099,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         FacingDirectionNode.aRenderer6654!!.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_)
                         i_444_ += 50 - i_453_
                         i_446_ += -i_453_ + 50
-                        NodeDequeStatics.aFont_3326!!.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125)
+                        NodeDequeStatics.aRSFont_3326!!.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125)
                         FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i + i_315_)
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 5) {
@@ -4112,7 +4112,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                         FacingDirectionNode.aRenderer6654!!.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_447_ += i_455_
-                        NodeDequeStatics.aFont_3326!!.method2575((-105).toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_))
+                        NodeDequeStatics.aRSFont_3326!!.method2575((-105).toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_))
                         i_445_ += i_455_
                         i_446_ -= i_443_ shr 1
                         FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i_315_ + i)
@@ -4120,7 +4120,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 } else {
                     i_444_ -= i_443_ shr 1
                     i_446_ -= i_443_ shr 1
-                    NodeDequeStatics.aFont_3326!!.method2575(118.toByte(), i_439_ + i_317_, -256, string, -16777216, i_440_ + i)
+                    NodeDequeStatics.aRSFont_3326!!.method2575(118.toByte(), i_439_ + i_317_, -256, string, -16777216, i_440_ + i)
                 }
                 MapTileShape.method2663(i_316_ + -5592, i_444_, 1 + i_446_, i_445_, 1 + i_447_)
             }

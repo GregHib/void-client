@@ -26,7 +26,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         anInt3275++
     }
 
-    fun method1932(var_renderer: Renderer?, i: Int, i_0_: Int, font: Font?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_1_: Int, bool: Boolean, i_2_: Byte, var_renderer_3_: Renderer?, i_4_: Int, bool_5_: Boolean, i_6_: Int): AbstractModelRenderer? {
+    fun method1932(var_renderer: Renderer?, i: Int, i_0_: Int, font: RSFont?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_1_: Int, bool: Boolean, i_2_: Byte, var_renderer_3_: Renderer?, i_4_: Int, bool_5_: Boolean, i_6_: Int): AbstractModelRenderer? {
         try {
             anInt3266++
             val class105 = method1941(i_6_, (-74).toByte(), i_4_, i_0_, i, i_1_, var_renderer_3_, compositeNpcModelBuilder)

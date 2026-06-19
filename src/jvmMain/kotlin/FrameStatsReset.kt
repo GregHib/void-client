@@ -135,7 +135,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DoublyLinkedNodeList.anInt3162 = 0
             VorbisOggDecoder.anInt8999 = 0
             DoublyLinkedNodeList.anInt3160 = 0
-            Font.anInt4054 = 0
+            RSFont.anInt4054 = 0
             GlShadowRenderPass.anInt7389 = 0
             Npc.anInt10496 = 0
             GlRenderDevice.anInt9842 = 0
@@ -207,7 +207,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WallSceneEntity.anInt9962 = 0
             VarbitDefLoader.anInt2598 = 0
             GlRenderDevice.anInt9824 = 0
-            Font.anInt4051 = 0
+            RSFont.anInt4051 = 0
             ConfigShortValueNode.anInt9540 = 0
             MidiSequencePlayer.anInt8951 = 0
             ModelGroundDecor.anInt10007 = 0
@@ -595,7 +595,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9864 = 0
             InboundPacketHeader.anInt1746 = 0
             SeqDefinitionCache.anInt3348 = 0
-            Font.anInt4050 = 0
+            RSFont.anInt4050 = 0
             NativeRenderer.anInt8006 = 0
             TileSceneEntity.anInt8722 = 0
             BasicGlRenderPass.anInt7302 = 0
@@ -665,7 +665,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TextureDefinitionCache.anInt2963 = 0
             OpenGlRenderer.anInt7534 = 0
             PackedFlagsAccessor.anInt7091 = 0
-            Font.anInt4052 = 0
+            RSFont.anInt4052 = 0
             InterfaceBounds.anInt6808 = 0
             ModelLightingConfig.anInt2543 = 0
             RenderConfigFactory.anInt2977 = 0
@@ -903,7 +903,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MatrixCameraTransform.anInt5656 = 0
             MultiFieldRecord.anInt6906 = 0
             NpcActorEntity.anInt10070 = 0
-            Font.anInt4060 = 0
+            RSFont.anInt4060 = 0
             ParticleDefLoader.anInt2465 = 0
             MinimapTileEntry.anInt616 = 0
             ItemDefinition.anInt2806 = 0
@@ -957,7 +957,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MouseInputTracker.anInt7428 = 0
             SimpleBinaryOptionState.anInt6071 = 0
             Player.anInt10523 = 0
-            Font.anInt4064 = 0
+            RSFont.anInt4064 = 0
             NpcActorEntity.anInt10077 = 0
             WorldMapAreaLabel.anInt8581 = 0
             VarpStore.anInt5076 = 0
@@ -1410,7 +1410,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlCubemapLightPass.anInt7316 = 0
             OpenGlRenderer.anInt7615 = 0
             TypedRecordTable.anInt3692 = 0
-            Font.anInt4045 = 0
+            RSFont.anInt4045 = 0
             ByteBuffer.anInt7178 = 0
             MapElementLookup.anInt4149 = 0
             Client.anInt5173 = 0
@@ -1689,7 +1689,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             AbstractProceduralTextureNode.anInt7038 = 0
             ArchiveResourceProvider.anInt6367 = 0
             ByteBuffer.anInt7181 = 0
-            Font.anInt4058 = 0
+            RSFont.anInt4058 = 0
             FloatCameraTransform.anInt5721 = 0
             WarpTextureNode.anInt9428 = 0
             WidgetRedrawRegion.anInt4243 = 0
@@ -1716,7 +1716,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9890 = 0
             MidiSequencePlayer.anInt8905 = 0
             ScrollTexMaterialPass.anInt6291 = 0
-            Font.anInt4059 = 0
+            RSFont.anInt4059 = 0
             Player.anInt10533 = 0
             PerlinNoiseTextureNode.anInt9161 = 0
             ParticleDetailOptionState.anInt6026 = 0
@@ -2170,7 +2170,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Direct3dModel.anInt5513 = 0
             SoundBankPatch.anInt6803 = 0
             BufferedRandomAccessFile.anInt1310 = 0
-            Font.anInt4055 = 0
+            RSFont.anInt4055 = 0
             WidgetNodeLink.anInt2043 = 0
             CacheIndexManager.anInt3947 = 0
             NativeRenderer.anInt8024 = 0
@@ -2285,7 +2285,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7699 = 0
             AbstractModel.anInt1125 = 0
             FileExistsCondition.anInt4775 = 0
-            Font.anInt4065 = 0
+            RSFont.anInt4065 = 0
             TextureQualityOptionState.anInt6004 = 0
             AbstractModel.anInt1134 = 0
             ArchiveResourceProvider.anInt6349 = 0
@@ -2322,7 +2322,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt8033 = 0
             KeyEventNode.anInt4769 = 0
             TexGenMaterialPass.anInt6256 = 0
-            Font.anInt4061 = 0
+            RSFont.anInt4061 = 0
             NodeDequeHolder.anInt1568 = 0
             MinimapLineDrawer.anInt5261 = 0
             KeyEventNode.anInt4768 = 0
@@ -2464,7 +2464,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CacheLruCache.anInt3880 = 0
             MinimapTileEntry.anInt613 = 0
             TerrainTile.anInt4593 = 0
-            Font.anInt4049 = 0
+            RSFont.anInt4049 = 0
             CompositeRgbNoiseTexture.anInt8676 = 0
             GrayscaleNoiseTexture.anInt5295 = 0
             NativeRenderNode.anInt10470 = 0
@@ -2546,7 +2546,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ProducerImageSurface.anInt9068 = 0
             RemoveRoofsOptionState.anInt6069 = 0
             GlRenderDevice.anInt9846 = 0
-            Font.anInt4057 = 0
+            RSFont.anInt4057 = 0
             DelegatingRenderCanvas.anInt69 = 0
             GlRenderDevice.anInt9892 = 0
             FloorOverlayDefinition.anInt972 = 0
@@ -2750,7 +2750,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             AbstractRenderPass.anInt4482 = 0
             SceneObjectSpawner.anInt1278 = 0
             GlRenderDevice.anInt9863 = 0
-            Font.anInt4053 = 0
+            RSFont.anInt4053 = 0
             ChatEffectsOptionState.anInt5861 = 0
             ModelGroundDecor.anInt10011 = 0
             GlGroundShaderPass.anInt7400 = 0
@@ -3049,7 +3049,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ModelHeaderCache.anInt3272 = 0
             anInt5802 = 0
             OutgoingPacketNode.anInt7117 = 0
-            Font.anInt4047 = 0
+            RSFont.anInt4047 = 0
             GlRenderDevice.anInt9891 = 0
             ChatMessageStream.anInt104 = 0
             NpcDefinitionCache.anInt3317 = 0
@@ -3176,7 +3176,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ModelFacePriorityNode.anInt4535 = 0
             LightDetailOptionState.anInt6029 = 0
             SequencedActorEntity.anInt10107 = 0
-            Font.anInt4046 = 0
+            RSFont.anInt4046 = 0
             OpenGlRenderer.anInt7610 = 0
             VorbisOggDecoder.anInt8989 = 0
             TooltipComponentRenderer.anInt4645 = 0
@@ -3537,7 +3537,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GroundDecorRenderer.anInt3640 = 0
             GlTexture2D.anInt8548 = 0
             ParticleEmitterNode.anInt182 = 0
-            Font.anInt4056 = 0
+            RSFont.anInt4056 = 0
             SineWaveTextureNode.anInt9454 = 0
             ResourceLoaderThread.anInt3905 = 0
             TerrainTileShape.anInt8804 = 0

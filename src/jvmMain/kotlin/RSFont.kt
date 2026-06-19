@@ -11,7 +11,7 @@ import kotlin.math.sin
 /*
  * Class324
  */
-abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition: FontDefinition?) {
+abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefinition: FontDefinition?) {
     private var aRenderer4048: Renderer? = null
     private var aFontDefinition_4063: FontDefinition? = null
     private fun method2566(abstractModelRenderers: Array<AbstractModelRenderer?>?, `is`: IntArray?, i: Int, is_0_: IntArray?, is_1_: IntArray?, i_2_: Int, string: String?, i_3_: Int) {
@@ -549,16 +549,16 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                     i_101_++
                 }
                 glLinkProgramARB(l)
-                glGetObjectParameterivARB(l, 35714, Font.anIntArray2744, 0)
-                if (Font.anIntArray2744!![0] == 0) {
-                    if (Font.anIntArray2744!![0] == 0) println("Shader linking failed:")
-                    glGetObjectParameterivARB(l, 35716, Font.anIntArray2744, 1)
-                    if (Font.anIntArray2744!![1] > 1) {
-                        val `is` = ByteArray(Font.anIntArray2744!![1])
-                        glGetInfoLogARB(l, Font.anIntArray2744!![1], Font.anIntArray2744, 0, `is`, 0)
+                glGetObjectParameterivARB(l, 35714, RSFont.anIntArray2744, 0)
+                if (RSFont.anIntArray2744!![0] == 0) {
+                    if (RSFont.anIntArray2744!![0] == 0) println("Shader linking failed:")
+                    glGetObjectParameterivARB(l, 35716, RSFont.anIntArray2744, 1)
+                    if (RSFont.anIntArray2744!![1] > 1) {
+                        val `is` = ByteArray(RSFont.anIntArray2744!![1])
+                        glGetInfoLogARB(l, RSFont.anIntArray2744!![1], RSFont.anIntArray2744, 0, `is`, 0)
                         println(String(`is`))
                     }
-                    if (Font.anIntArray2744!![0] == 0) {
+                    if (RSFont.anIntArray2744!![0] == 0) {
                         var i_102_ = 0
                         while (glShaderObjectHandles.size > i_102_) {
                             glDetachObjectARB(l, (glShaderObjectHandles[i_102_]!!.aLong517))

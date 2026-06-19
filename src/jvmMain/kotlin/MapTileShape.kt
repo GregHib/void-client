@@ -1,6 +1,6 @@
 import ConfigFlagUtil.Companion.method1913
 import ConfigFlagUtil.Companion.method1916
-import Font.Companion.method2570
+import RSFont.Companion.method2570
 import RegionTileNode.Companion.method2772
 import ChatCommandProcessor.method703
 import ParticleDetailOptionState.Companion.method1796

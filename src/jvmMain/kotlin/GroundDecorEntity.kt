@@ -1,4 +1,4 @@
-import Font.Companion.method2570
+import RSFont.Companion.method2570
 
 /* Class318_Sub1_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

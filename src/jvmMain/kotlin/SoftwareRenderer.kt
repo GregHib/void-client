@@ -1028,7 +1028,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         class109.aBoolean1669 = true
     }
 
-    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): Font {
+    override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): RSFont {
         val `is` = IntArray(spriteImages!!.size)
         val is_283_ = IntArray(spriteImages.size)
         var bool_284_ = false
