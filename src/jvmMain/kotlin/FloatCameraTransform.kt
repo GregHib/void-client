@@ -702,7 +702,7 @@ class FloatCameraTransform : AbstractCameraTransform() {
         var anInt5740: Int = 0
         @JvmField
         var anInt5741: Int = 0
-        var aIntRange_5742: IntRange?
+        var aInboundPacketHeader_5742: InboundPacketHeader?
         @JvmField
         var anInt5743: Int = 0
         var anInt5744: Int = 0
@@ -754,13 +754,13 @@ class FloatCameraTransform : AbstractCameraTransform() {
         fun method925(i: Int) {
             if (i == -5997) {
                 aFontMetaRef_5699 = null
-                aIntRange_5742 = null
+                aInboundPacketHeader_5742 = null
             }
         }
 
         init {
             aFontMetaRef_5699 = FontMetaRef(53, -1)
-            aIntRange_5742 = IntRange(119, 6)
+            aInboundPacketHeader_5742 = InboundPacketHeader(119, 6)
         }
     }
 }

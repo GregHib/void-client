@@ -11,7 +11,7 @@ class IOException_Sub1(string: String?) : IOException(string) {
         @JvmField
         var anInt89: Int = 0
         @JvmField
-        var aIntRange_90: IntRange? = IntRange(42, -1)
+        var aInboundPacketHeader_90: InboundPacketHeader? = InboundPacketHeader(42, -1)
         @JvmField
         var anIntArray91: IntArray? = IntArray(8)
 
@@ -62,7 +62,7 @@ class IOException_Sub1(string: String?) : IOException(string) {
         fun method130(i: Int) {
             if (i == 8) {
                 anIntArray91 = null
-                aIntRange_90 = null
+                aInboundPacketHeader_90 = null
             }
         }
 

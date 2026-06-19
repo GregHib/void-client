@@ -51,7 +51,7 @@ class RemoveRoofsOptionState : GraphicsOptionState {
         @JvmField
         var anInt6057: Int = 0
         @JvmField
-        var aIntRange_6058: IntRange?
+        var aInboundPacketHeader_6058: InboundPacketHeader?
         @JvmField
         var anInt6059: Int = 0
         @JvmField
@@ -195,12 +195,12 @@ class RemoveRoofsOptionState : GraphicsOptionState {
             anIntArray6062 = null
             val i_39_ = 41 % ((i - -32) / 32)
             anIntArray6061 = null
-            aIntRange_6058 = null
+            aInboundPacketHeader_6058 = null
         }
 
         init {
             anIntArray6061 = IntArray(32)
-            aIntRange_6058 = IntRange(46, -1)
+            aInboundPacketHeader_6058 = InboundPacketHeader(46, -1)
         }
     }
 }

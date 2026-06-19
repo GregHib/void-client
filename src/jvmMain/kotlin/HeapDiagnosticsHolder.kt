@@ -5,7 +5,7 @@ import kotlin.concurrent.Volatile
 * Visit http://jode.sourceforge.net/
 */
 object HeapDiagnosticsHolder {
-    var aIntRange_2248: IntRange?
+    var aInboundPacketHeader_2248: InboundPacketHeader?
     @JvmField
     var aWidgetComponent_2249: WidgetComponent? = null
     @JvmField
@@ -16,7 +16,7 @@ object HeapDiagnosticsHolder {
     var anInt2253: Int = 0
     @JvmField
     var anInt2254: Int = 0
-    var aIntRange_2255: IntRange?
+    var aInboundPacketHeader_2255: InboundPacketHeader?
 
     @Volatile
     var anObject2256: Any?
@@ -25,9 +25,9 @@ object HeapDiagnosticsHolder {
     fun method1298(i: Int) {
         if (i != -1) aWidgetComponent_2249 = null
         anObject2256 = null
-        aIntRange_2255 = null
+        aInboundPacketHeader_2255 = null
         aWidgetComponent_2249 = null
-        aIntRange_2248 = null
+        aInboundPacketHeader_2248 = null
         aSystemFontGlyphs_2252 = null
     }
 
@@ -38,8 +38,8 @@ object HeapDiagnosticsHolder {
     }
 
     init {
-        aIntRange_2248 = IntRange(25, 6)
-        aIntRange_2255 = IntRange(99, -1)
+        aInboundPacketHeader_2248 = InboundPacketHeader(25, 6)
+        aInboundPacketHeader_2255 = InboundPacketHeader(99, -1)
         anObject2256 = null
     }
 }

@@ -12,15 +12,15 @@ class SceneTileBounds {
     companion object {
         @JvmField
         var anInt1117: Int = 0
-        var aIntRange_1120: IntRange? = IntRange(53, -2)
+        var aInboundPacketHeader_1120: InboundPacketHeader? = InboundPacketHeader(53, -2)
         @JvmField
         var anInt1121: Int = 0
-        var aIntRange_1123: IntRange? = IntRange(78, -1)
+        var aInboundPacketHeader_1123: InboundPacketHeader? = InboundPacketHeader(78, -1)
 
         @JvmStatic
         fun method601(i: Byte) {
-            aIntRange_1120 = null
-            aIntRange_1123 = null
+            aInboundPacketHeader_1120 = null
+            aInboundPacketHeader_1123 = null
             if (i.toInt() != -85) Companion.method601((-70).toByte())
         }
     }

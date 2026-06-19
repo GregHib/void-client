@@ -62,7 +62,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
         @JvmField
         var anInt6088: Int = 0
         @JvmField
-        var aIntRange_6089: IntRange? = IntRange(41, 3)
+        var aInboundPacketHeader_6089: InboundPacketHeader? = InboundPacketHeader(41, 3)
         @JvmField
         var anInt6090: Int = 0
         @JvmField
@@ -91,7 +91,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1822(i: Byte) {
-            aIntRange_6089 = null
+            aInboundPacketHeader_6089 = null
             aLruByteCache_6096 = null
             aAbstractModelRenderer_6097 = null
             aStringArrayArray6093 = null

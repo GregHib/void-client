@@ -4,7 +4,7 @@
 object DirectionUtil {
     @JvmField
     var anInt1539: Int = 0
-    var aIntRange_1540: IntRange? = IntRange(113, 1)
+    var aInboundPacketHeader_1540: InboundPacketHeader? = InboundPacketHeader(113, 1)
     @JvmField
     var aJs5Archive_1541: Js5Archive? = null
     @JvmField
@@ -23,7 +23,7 @@ object DirectionUtil {
     @JvmStatic
     fun method869(i: Int) {
         aJs5Archive_1541 = null
-        aIntRange_1540 = null
+        aInboundPacketHeader_1540 = null
         aClass348_Sub42_Sub17Array1543 = null
         aScreenAnchorAlignment_1542 = null
         if (i != 3) method869(55)

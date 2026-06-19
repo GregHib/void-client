@@ -1,6 +1,5 @@
 import ScrollingWidgetComponentNode.Companion.method1118
 import FixedFunctionMaterialPass.Companion.method2145
-import Client.Companion.method2480
 import CombineTextureNode.Companion.method3089
 import RenderListTextureNode.Companion.method3153
 import SceneObjectSpawner.Companion.method773
@@ -264,7 +263,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ResourceLoaderThread.anInt3911 = 0
             OpenGlModel.anInt5615 = 0
             FlickeringEffectsOptionState.anInt5917 = 0
-            IntRange.anInt1748 = 0
+            InboundPacketHeader.anInt1748 = 0
             Direct3dModel.anInt5417 = 0
             NodeDequeHolder.anInt1570 = 0
             HuffmanCodec.anInt3775 = 0
@@ -594,7 +593,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MapArchiveSource.anInt4802 = 0
             MapSceneIconDef.anInt2850 = 0
             GlRenderDevice.anInt9864 = 0
-            IntRange.anInt1746 = 0
+            InboundPacketHeader.anInt1746 = 0
             SeqDefinitionCache.anInt3348 = 0
             Font.anInt4050 = 0
             NativeRenderer.anInt8006 = 0
@@ -2576,7 +2575,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7570 = 0
             ParticleTileShape.anInt8820 = 0
             NpcDefinitionCache.anInt3322 = 0
-            IntRange.anInt1750 = 0
+            InboundPacketHeader.anInt1750 = 0
             Direct3dModel.anInt5448 = 0
             DirectionPath.anInt1061 = 0
             MouseInputTracker.anInt7443 = 0

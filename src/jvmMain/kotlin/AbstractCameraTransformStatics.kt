@@ -80,7 +80,7 @@ object AbstractCameraTransformStatics {
     @JvmStatic
     fun method2555(i: Byte) {
         AbstractCameraTransformStatics.anIntArray4031 = null
-        Gl3dTexture.aIntRange_4027 = null
+        Gl3dTexture.aInboundPacketHeader_4027 = null
         ChatCommandProcessor.aCacheLruCache_4036 = null
     }
 

@@ -355,7 +355,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
     }
 
     fun method2105(i: Int) {
-        if (i > -118) aIntRange_3641 = null
+        if (i > -118) aInboundPacketHeader_3641 = null
         anInt3634++
         anInterface5_Impl1_3638.method21(23315)
     }
@@ -445,13 +445,13 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
         var anInt3634: Int = 0
         var anInt3639: Int = 0
         var anInt3640: Int = 0
-        var aIntRange_3641: IntRange? = IntRange(79, 3)
+        var aInboundPacketHeader_3641: InboundPacketHeader? = InboundPacketHeader(79, 3)
         @JvmField
         var anInt3643: Int = 0
 
         @JvmStatic
         fun method2104(i: Int) {
-            aIntRange_3641 = null
+            aInboundPacketHeader_3641 = null
             if (i < 66) method2104(127)
         }
     }

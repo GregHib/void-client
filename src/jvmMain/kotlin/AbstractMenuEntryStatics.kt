@@ -4,7 +4,7 @@ object AbstractMenuEntryStatics {
     @JvmField
     var anInt1701: Int = 0
     @JvmField
-    var aIntRange_1702: IntRange?
+    var aInboundPacketHeader_1702: InboundPacketHeader?
     @JvmField
     var aAbstractModelRenderer_1706: AbstractModelRenderer? = null
     @JvmField
@@ -20,7 +20,7 @@ object AbstractMenuEntryStatics {
 
     @JvmStatic
     fun method1030(i: Int) {
-        aIntRange_1702 = null
+        aInboundPacketHeader_1702 = null
         aAbstractModelRenderer_1706 = null
         if (i > -19) method1034(-89, null, null, -72)
     }
@@ -116,6 +116,6 @@ object AbstractMenuEntryStatics {
     }
 
     init {
-        aIntRange_1702 = IntRange(24, 6)
+        aInboundPacketHeader_1702 = InboundPacketHeader(24, 6)
     }
 }

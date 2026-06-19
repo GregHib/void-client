@@ -9,7 +9,7 @@ class BasicGlRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abst
     }
 
     override fun method3527(i: Int, renderable: Renderable?, i_1_: Int) {
-        if (i_1_ != -16776) aIntRange_7301 = null
+        if (i_1_ != -16776) aInboundPacketHeader_7301 = null
         this.aHa_Sub3_4479.method3850((-105).toByte(), renderable)
         anInt7300++
         this.aHa_Sub3_4479.method3923(true, i)
@@ -33,7 +33,7 @@ class BasicGlRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abst
     }
 
     override fun method3526(i: Int, i_10_: Int, i_11_: Int) {
-        if (i != 10756) aIntRange_7301 = null
+        if (i != 10756) aInboundPacketHeader_7301 = null
         anInt7298++
     }
 
@@ -45,7 +45,7 @@ class BasicGlRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abst
         @JvmField
         var anInt7300: Int = 0
         @JvmField
-        var aIntRange_7301: IntRange? = IntRange(21, -1)
+        var aInboundPacketHeader_7301: InboundPacketHeader? = InboundPacketHeader(21, -1)
         @JvmField
         var anInt7302: Int = 0
         @JvmField
@@ -63,7 +63,7 @@ class BasicGlRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abst
         fun method3539(i: Byte) {
             val i_0_ = 74 % ((72 - i) / 37)
             aBooleanArray7304 = null
-            aIntRange_7301 = null
+            aInboundPacketHeader_7301 = null
             anIntArray7299 = null
         }
 

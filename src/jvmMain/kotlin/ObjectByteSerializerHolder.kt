@@ -18,7 +18,7 @@ class ObjectByteSerializerHolder {
         @JvmStatic
         fun method1329(i: Int) {
             if (i != 4) method1329(95)
-            IntRange.aIntRange_2285 = null
+            InboundPacketHeader.aInboundPacketHeader_2285 = null
         }
 
         fun method1330(i: Int, i_0_: Int, i_1_: Int) {
@@ -37,7 +37,7 @@ class ObjectByteSerializerHolder {
                 val `is` = `object`
                 return method864(i_2_, `is`, i_3_, -104)
             }
-            if (i < 89) IntRange.aIntRange_2285 = null
+            if (i < 89) InboundPacketHeader.aInboundPacketHeader_2285 = null
             if (`object` is NioByteStore) {
                 val class344 = `object`
                 return class344.method2689(2, i_3_, i_2_)

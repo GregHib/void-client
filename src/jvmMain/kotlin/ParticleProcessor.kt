@@ -8,22 +8,22 @@ abstract class ParticleProcessor {
         @JvmField
         var aFloat4268: Float = 0f
         @JvmField
-        var aIntRange_4269: IntRange? = IntRange(87, 1)
+        var aInboundPacketHeader_4269: InboundPacketHeader? = InboundPacketHeader(87, 1)
         @JvmField
         var anInt4270: Int = -1
         @JvmField
         var anIntArray4271: IntArray? = null
         @JvmField
-        var aIntRange_4272: IntRange? = IntRange(67, 3)
+        var aInboundPacketHeader_4272: InboundPacketHeader? = InboundPacketHeader(67, 3)
         @JvmField
         var aLruByteCache_4273: LruByteCache? = LruByteCache(128, 4)
 
         @JvmStatic
         fun method2693(i: Int) {
-            if (i != 3) aIntRange_4269 = null
-            aIntRange_4272 = null
+            if (i != 3) aInboundPacketHeader_4269 = null
+            aInboundPacketHeader_4272 = null
             anIntArray4271 = null
-            aIntRange_4269 = null
+            aInboundPacketHeader_4269 = null
             aLruByteCache_4273 = null
         }
     }

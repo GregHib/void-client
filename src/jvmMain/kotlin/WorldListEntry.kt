@@ -16,14 +16,14 @@ class WorldListEntry {
 
     companion object {
         @JvmField
-        var aIntRange_304: IntRange?
+        var aInboundPacketHeader_304: InboundPacketHeader?
         @JvmField
         var anInt305: Int = 0
         @JvmField
         var anInt307: Int = 0
         @JvmField
         var anInt309: Int = 0
-        var aIntRange_315: IntRange?
+        var aInboundPacketHeader_315: InboundPacketHeader?
 
         fun method283(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
             var class318_sub5 = NpcDefinition.aDoublyLinkedNodeList_2957!!.method1872(8) as SceneTextLabel?
@@ -36,13 +36,13 @@ class WorldListEntry {
                 class318_sub5 = (NpcDefinition.aDoublyLinkedNodeList_2957!!.method1878(0.toByte()) as SceneTextLabel?)
             }
             anInt305++
-            if (i >= -108) aIntRange_304 = null
+            if (i >= -108) aInboundPacketHeader_304 = null
         }
 
         @JvmStatic
         fun method284(i: Byte) {
-            aIntRange_315 = null
-            aIntRange_304 = null
+            aInboundPacketHeader_315 = null
+            aInboundPacketHeader_304 = null
             SpotAnimDefCache.aSpotAnimVectorArray311s = null
         }
 
@@ -76,8 +76,8 @@ class WorldListEntry {
         }
 
         init {
-            aIntRange_304 = IntRange(70, -2)
-            aIntRange_315 = IntRange(15, 16)
+            aInboundPacketHeader_304 = InboundPacketHeader(70, -2)
+            aInboundPacketHeader_315 = InboundPacketHeader(15, 16)
         }
     }
 }

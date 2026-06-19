@@ -134,7 +134,7 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
         var anInt1720: Int = -1
         @JvmField
         var anInt1721: Int = 0
-        var aIntRange_1722: IntRange? = IntRange(8, -2)
+        var aInboundPacketHeader_1722: InboundPacketHeader? = InboundPacketHeader(8, -2)
         @JvmField
         var anInt1723: Int = 0
         @JvmStatic
@@ -159,7 +159,7 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
         @JvmStatic
         fun method1047(i: Int) {
             if (i != 1) anInt1720 = 93
-            aIntRange_1722 = null
+            aInboundPacketHeader_1722 = null
         }
 
         fun method1048(widgetComponent: WidgetComponent, i: Int) {

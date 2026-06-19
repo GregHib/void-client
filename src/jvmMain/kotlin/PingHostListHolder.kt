@@ -2,27 +2,27 @@
 * Visit http://jode.sourceforge.net/
 */
 object PingHostListHolder {
-    var aIntRange_2331: IntRange? = IntRange(120, -2)
+    var aInboundPacketHeader_2331: InboundPacketHeader? = InboundPacketHeader(120, -2)
     @JvmField
     var aClass348_Sub26_2332: NamedIdEntry?
     @JvmField
     var aSystemFontGlyphs_2333: SystemFontGlyphs? = null
     @JvmField
     var aClass348_Sub47Array2334: Array<OutgoingPacketNode?>? = arrayOfNulls<OutgoingPacketNode>(300)
-    var aIntRange_2335: IntRange?
+    var aInboundPacketHeader_2335: InboundPacketHeader?
 
     @JvmStatic
     fun method1351(i: Int) {
-        aIntRange_2331 = null
+        aInboundPacketHeader_2331 = null
         aClass348_Sub26_2332 = null
-        aIntRange_2335 = null
-        if (i != 1) aIntRange_2331 = null
+        aInboundPacketHeader_2335 = null
+        if (i != 1) aInboundPacketHeader_2331 = null
         aClass348_Sub47Array2334 = null
         aSystemFontGlyphs_2333 = null
     }
 
     init {
         aClass348_Sub26_2332 = null
-        aIntRange_2335 = IntRange(80, 0)
+        aInboundPacketHeader_2335 = InboundPacketHeader(80, 0)
     }
 }

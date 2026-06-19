@@ -6,7 +6,7 @@ abstract class NanoTimer {
 
     companion object {
         @JvmField
-        var aIntRange_843: IntRange?
+        var aInboundPacketHeader_843: InboundPacketHeader?
         @JvmField
         var anInt844: Int = 0
         @JvmField
@@ -16,7 +16,7 @@ abstract class NanoTimer {
 
         @JvmStatic
         fun method445(i: Int) {
-            if (i == 2) aIntRange_843 = null
+            if (i == 2) aInboundPacketHeader_843 = null
         }
 
         @JvmStatic
@@ -52,7 +52,7 @@ abstract class NanoTimer {
         }
 
         init {
-            aIntRange_843 = IntRange(66, 8)
+            aInboundPacketHeader_843 = InboundPacketHeader(66, 8)
         }
     }
 }

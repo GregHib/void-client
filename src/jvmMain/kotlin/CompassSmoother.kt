@@ -77,9 +77,9 @@ class CompassSmoother {
         var anInt3364: Int = 0
         var anInt3366: Int = 0
         var anInt3367: Int = 0
-        var aIntRange_3368: IntRange? = IntRange(112, 4)
+        var aInboundPacketHeader_3368: InboundPacketHeader? = InboundPacketHeader(112, 4)
         var anInt3369: Int = 0
-        var aIntRange_3371: IntRange? = IntRange(63, 5)
+        var aInboundPacketHeader_3371: InboundPacketHeader? = InboundPacketHeader(63, 5)
         @JvmField
         var anInt3372: Int = 0
         @JvmField
@@ -119,8 +119,8 @@ class CompassSmoother {
         @JvmStatic
         fun method2018(i: Int) {
             aAbstractModelRendererArray3378 = null
-            aIntRange_3371 = null
-            aIntRange_3368 = null
+            aInboundPacketHeader_3371 = null
+            aInboundPacketHeader_3368 = null
             if (i != 0) method2015(30, 1, -62)
         }
     }

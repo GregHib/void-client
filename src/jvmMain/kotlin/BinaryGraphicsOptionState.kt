@@ -38,9 +38,9 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
 
     companion object {
         @JvmField
-        var aIntRange_5949: IntRange? = IntRange(69, 12)
+        var aInboundPacketHeader_5949: InboundPacketHeader? = InboundPacketHeader(69, 12)
         @JvmField
-        var aIntRange_5950: IntRange?
+        var aInboundPacketHeader_5950: InboundPacketHeader?
         @JvmField
         var anInt5951: Int = 1339
         @JvmField
@@ -75,9 +75,9 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1769(i: Int) {
-            aIntRange_5950 = null
+            aInboundPacketHeader_5950 = null
             if (i != 100) method1769(-25)
-            aIntRange_5949 = null
+            aInboundPacketHeader_5949 = null
         }
 
         @JvmStatic
@@ -160,7 +160,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
         }
 
         init {
-            aIntRange_5950 = IntRange(64, 2)
+            aInboundPacketHeader_5950 = InboundPacketHeader(64, 2)
             anInt5959 = 0
         }
     }

@@ -4,14 +4,14 @@
 object NpcCountAccessor {
     var anInt2277: Int = 0
     var anInt2278: Int = 0
-    var aIntRange_2279: IntRange? = IntRange(60, 0)
+    var aInboundPacketHeader_2279: InboundPacketHeader? = InboundPacketHeader(60, 0)
     var anIntArray2280: IntArray? = IntArray(200)
     var anInt2281: Int = 0
 
     @JvmStatic
     fun method1325(i: Int) {
         anIntArray2280 = null
-        if (i <= -123) aIntRange_2279 = null
+        if (i <= -123) aInboundPacketHeader_2279 = null
     }
 
     fun method1326(class348_sub16_sub3: MidiSequencePlayer?, i: Int): MidiSequencePlayer {

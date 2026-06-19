@@ -25,18 +25,18 @@ class RendererType internal constructor(i: Int, string: String?, i_0_: Int, stri
         @JvmField
         var aNodeDeque_4473: NodeDeque?
         var anInt4474: Int = 0
-        var aIntRange_4477: IntRange?
+        var aInboundPacketHeader_4477: InboundPacketHeader?
 
         @JvmStatic
         fun method3518(i: Int) {
             aNodeDeque_4473 = null
             if (i != 88) method3518(-49)
-            aIntRange_4477 = null
+            aInboundPacketHeader_4477 = null
         }
 
         init {
             aNodeDeque_4473 = NodeDeque()
-            aIntRange_4477 = IntRange(88, 10)
+            aInboundPacketHeader_4477 = InboundPacketHeader(88, 10)
         }
     }
 }

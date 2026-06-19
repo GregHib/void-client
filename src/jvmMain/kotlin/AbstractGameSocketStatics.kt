@@ -2,7 +2,7 @@ object AbstractGameSocketStatics {
     @JvmField
     var anInt3132: Int = 0
     @JvmField
-    var aIntRange_3133: IntRange? = null
+    var aInboundPacketHeader_3133: InboundPacketHeader? = null
 
     @JvmStatic
     fun method1703(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
@@ -16,7 +16,7 @@ object AbstractGameSocketStatics {
 
     @JvmStatic
     fun method1704(i: Byte) {
-        if (i >= -90) aIntRange_3133 = null
-        aIntRange_3133 = null
+        if (i >= -90) aInboundPacketHeader_3133 = null
+        aInboundPacketHeader_3133 = null
     }
 }

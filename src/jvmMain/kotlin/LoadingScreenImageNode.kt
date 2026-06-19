@@ -1,11 +1,5 @@
 import MinimapFlagRenderer.method1083
-import FrameStatsReset.Companion.method1131
 import GlFramebufferBlitter.Companion.method282
-import RsaPacketDecoder.Companion.method2672
-import KaraokeSubtitleStream.Companion.method2988
-import HslAdjustTextureNode.Companion.method3126
-import InvertTextureNode.Companion.method3134
-import Client.Companion.method3196
 import MapRegionLoader.Companion.method749
 
 /* Class348_Sub42_Sub3 - Decompiled by JODE
@@ -20,7 +14,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
         var anInt9501: Int
         @JvmField
         var aShortArray9502: ShortArray?
-        var aIntRange_9503: IntRange?
+        var aInboundPacketHeader_9503: InboundPacketHeader?
         @JvmField
         var anInt9504: Int = 0
         var anIntArray9505: IntArray? = IntArray(3)
@@ -89,7 +83,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             anIntArray9505 = null
             aShortArray9502 = null
             if (bool != true) aShortArray9502 = null
-            aIntRange_9503 = null
+            aInboundPacketHeader_9503 = null
         }
 
         @JvmStatic
@@ -158,7 +152,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
         init {
             anInt9501 = 0
             aShortArray9502 = ShortArray(256)
-            aIntRange_9503 = IntRange(9, -1)
+            aInboundPacketHeader_9503 = InboundPacketHeader(9, -1)
         }
     }
 }

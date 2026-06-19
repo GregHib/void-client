@@ -10,13 +10,13 @@ object CharCountUtil {
     var anInt227: Int = 0
     @JvmField
     var anInt228: Int = 0
-    var aIntRange_229: IntRange? = IntRange(51, 17)
+    var aInboundPacketHeader_229: InboundPacketHeader? = InboundPacketHeader(51, 17)
 
     @JvmStatic
     fun method255(i: Int) {
         aLruByteCache_225 = null
         if (i != 6725) aLruByteCache_225 = null
-        aIntRange_229 = null
+        aInboundPacketHeader_229 = null
     }
 
     @JvmStatic
@@ -28,7 +28,7 @@ object CharCountUtil {
     fun method257(i: Int, string: String, c: Char): Int {
         anInt227++
         var i_1_ = 0
-        if (i != 4) aIntRange_229 = null
+        if (i != 4) aInboundPacketHeader_229 = null
         val i_2_ = string.length
         var i_3_ = 0
         while (i_2_ > i_3_) {

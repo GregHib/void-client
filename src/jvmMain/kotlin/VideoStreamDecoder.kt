@@ -303,14 +303,14 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
         var anInt4119: Int = 0
         var anInt4120: Int = 0
         var anInt4125: Int = 0
-        var aIntRange_4126: IntRange? = IntRange(5, 8)
+        var aInboundPacketHeader_4126: InboundPacketHeader? = InboundPacketHeader(5, 8)
         @JvmField
         var aBoolean4127: Boolean = false
 
         @JvmStatic
         fun method2631(i: Int) {
             val i_47_ = -46 / ((65 - i) / 61)
-            aIntRange_4126 = null
+            aInboundPacketHeader_4126 = null
         }
     }
 }

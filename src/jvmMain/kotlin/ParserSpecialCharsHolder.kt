@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 object ParserSpecialCharsHolder {
-    var aIntRange_1901: IntRange? = IntRange(38, -1)
+    var aInboundPacketHeader_1901: InboundPacketHeader? = InboundPacketHeader(38, -1)
     var anInt1902: Int
     var aCharArray1903: CharArray? = charArrayOf('[', ']', '#')
     @JvmField
@@ -12,7 +12,7 @@ object ParserSpecialCharsHolder {
     fun method1136(i: Byte) {
         aCharArray1903 = null
         if (i.toInt() == -98) {
-            aIntRange_1901 = null
+            aInboundPacketHeader_1901 = null
             aFontMetaRef_1904 = null
         }
     }

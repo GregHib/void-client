@@ -37,7 +37,6 @@ import MidiSequencePlayer.Companion.method2839
 import ParticleTileShape.Companion.method2732
 import VorbisOggDecoder.Companion.method2972
 import ClientMachineInfo.Companion.method2749
-import ChatCommandProcessor.method3038
 import GradientLookupEffect.Companion.method3076
 import SpriteRgbTextureNode.Companion.method3093
 import HslAdjustTextureNode.Companion.method3128
@@ -63,8 +62,6 @@ import SpriteComponent.Companion.method199
 import SpriteComponent.Companion.method201
 import GameClock.method596
 import GameClock.method599
-import ChatCommandProcessor.method606
-import ChatCommandProcessor.aString9554
 import FlickeringEffectsOptionState.Companion.method1750
 import GlTexture1D.Companion.method1974
 import MidiSequencePlayer.Companion.method2862
@@ -5430,19 +5427,19 @@ object ChatCommandProcessor {
     fun method1944(i: Int) {
         anIntArray3295 = null
     }
-    var aIntRange_4388: IntRange? = IntRange(3, 3)
+    var aInboundPacketHeader_4388: InboundPacketHeader? = InboundPacketHeader(3, 3)
     @JvmStatic
     fun method3478(bool: Boolean) {
-        aIntRange_4388 = null
+        aInboundPacketHeader_4388 = null
     }
-    var aIntRange_9550: IntRange? = IntRange(109, 7)
+    var aInboundPacketHeader_9550: InboundPacketHeader? = InboundPacketHeader(109, 7)
 
     var aShort9555: Short = 1
 
     @JvmStatic
     fun method3199(i: Int) {
-        ChatCommandProcessor.aIntRange_9550 = null
-        Client.aIntRange_9552 = null
+        ChatCommandProcessor.aInboundPacketHeader_9550 = null
+        Client.aInboundPacketHeader_9552 = null
         SpriteMaskShape.aFontMetaRef_9553 = null
         ChatCommandProcessor.aString9554 = null
     }

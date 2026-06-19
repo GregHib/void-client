@@ -199,7 +199,7 @@ class HuffmanCodec internal constructor(`is`: ByteArray) {
         var anInt3770: Int = 0
         var anInt3771: Int = 0
         var anInt3772: Int = 0
-        var aIntRange_3773: IntRange? = IntRange(55, 0)
+        var aInboundPacketHeader_3773: InboundPacketHeader? = InboundPacketHeader(55, 0)
         var anInt3775: Int = 0
 
         fun method2224(i: Int, i_0_: Byte, i_1_: Int): Boolean {
@@ -210,8 +210,8 @@ class HuffmanCodec internal constructor(`is`: ByteArray) {
 
         @JvmStatic
         fun method2225(i: Int) {
-            if (i != 32) aIntRange_3773 = null
-            aIntRange_3773 = null
+            if (i != 32) aInboundPacketHeader_3773 = null
+            aInboundPacketHeader_3773 = null
         }
 
         @JvmStatic

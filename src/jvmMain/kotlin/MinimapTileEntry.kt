@@ -38,7 +38,7 @@ class MinimapTileEntry {
         fun method381(i: Byte): GrowableStringList {
             anInt616++
             if (i.toInt() != 68) Companion.method381((-42).toByte())
-            return IntRange.method1059(95.toByte(), 1)
+            return InboundPacketHeader.method1059(95.toByte(), 1)
         }
 
         fun method382(string: String, bool: Boolean) {

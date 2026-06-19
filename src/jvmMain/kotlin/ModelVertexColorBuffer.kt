@@ -197,7 +197,7 @@ class ModelVertexColorBuffer internal constructor(private val aS_Sub3_6566: Nati
         @JvmField
         var anInt6583: Int = 0
         @JvmField
-        var aIntRange_6584: IntRange? = null
+        var aInboundPacketHeader_6584: InboundPacketHeader? = null
         @JvmField
         var anInt6585: Int = 0
         @JvmField
@@ -208,7 +208,7 @@ class ModelVertexColorBuffer internal constructor(private val aS_Sub3_6566: Nati
         var anInt6588: Int = 0
         @JvmStatic
         fun method2738(i: Byte) {
-            aIntRange_6584 = null
+            aInboundPacketHeader_6584 = null
             aSystemFontGlyphs_6581 = null
             val i_21_ = 89 / ((19 - i) / 43)
         }

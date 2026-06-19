@@ -34,7 +34,7 @@ abstract class GraphicsOptionState {
         @JvmField
         var anInt3134: Int = 0
         @JvmField
-        var aIntRange_3135: IntRange? = IntRange(108, 5)
+        var aInboundPacketHeader_3135: InboundPacketHeader? = InboundPacketHeader(108, 5)
         @JvmField
         var anInt3137: Int = 0
         @JvmField
@@ -46,11 +46,11 @@ abstract class GraphicsOptionState {
         @JvmField
         var anInt3142: Int = 0
         @JvmField
-        var aIntRange_3143: IntRange?
+        var aInboundPacketHeader_3143: InboundPacketHeader?
         @JvmField
         var aByteArray3144: ByteArray? = ByteArray(520)
         @JvmField
-        var aIntRange_3145: IntRange? = null
+        var aInboundPacketHeader_3145: InboundPacketHeader? = null
         @JvmField
         var aJs5Archive_3146: Js5Archive? = null
         @JvmField
@@ -83,10 +83,10 @@ abstract class GraphicsOptionState {
 
         @JvmStatic
         fun method1715(i: Int) {
-            aIntRange_3145 = null
-            aIntRange_3143 = null
+            aInboundPacketHeader_3145 = null
+            aInboundPacketHeader_3143 = null
             aJs5Archive_3146 = null
-            aIntRange_3135 = null
+            aInboundPacketHeader_3135 = null
             aByteArray3144 = null
             aItemDefinitionLoader_3147 = null
             if (i < 13) method1709(-99)
@@ -106,7 +106,7 @@ abstract class GraphicsOptionState {
         }
 
         init {
-            aIntRange_3143 = IntRange(7, 3)
+            aInboundPacketHeader_3143 = InboundPacketHeader(7, 3)
         }
     }
 }

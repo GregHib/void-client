@@ -111,7 +111,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
     companion object {
         var anInt2193: Int = 0
         var anInt2194: Int = 0
-        var aIntRange_2196: IntRange? = IntRange(111, -1)
+        var aInboundPacketHeader_2196: InboundPacketHeader? = InboundPacketHeader(111, -1)
         var anInt2199: Int = 0
         var anInt2200: Int = 0
         var aFloat2203: Float = 0f
@@ -123,7 +123,7 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
         var aJs5Archive_2208: Js5Archive? = null
         @JvmStatic
         fun method1293(i: Int) {
-            aIntRange_2196 = null
+            aInboundPacketHeader_2196 = null
             aJs5Archive_2208 = null
             aRenderConfigFactory_2207 = null
         }

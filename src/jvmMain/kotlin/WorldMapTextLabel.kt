@@ -33,7 +33,7 @@ class WorldMapTextLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRende
         @JvmField
         var aJs5Archive_8589: Js5Archive? = null
         @JvmField
-        var aIntRange_8590: IntRange? = IntRange(58, 2)
+        var aInboundPacketHeader_8590: InboundPacketHeader? = InboundPacketHeader(58, 2)
         @JvmField
         var anObject8592: Any? = null
         @JvmField
@@ -52,7 +52,7 @@ class WorldMapTextLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRende
 
         @JvmStatic
         fun method3572(i: Int) {
-            aIntRange_8590 = null
+            aInboundPacketHeader_8590 = null
             aJs5Archive_8589 = null
             if (i != 1000000) method3571(false, -66, 13.toByte(), 13)
             aWidgetComponentArrayArray8584 = null

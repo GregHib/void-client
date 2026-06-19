@@ -339,7 +339,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
         @JvmField
         var anInt9196: Int = 0
         @JvmField
-        var aIntRange_9197: IntRange? = IntRange(61, -1)
+        var aInboundPacketHeader_9197: InboundPacketHeader? = InboundPacketHeader(61, -1)
         @JvmField
         var anInt9198: Int = 0
         var anInt9200: Int = 0
@@ -377,7 +377,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
         @JvmStatic
         fun method3077(i: Byte) {
             aFontMetaRef_9189 = null
-            aIntRange_9197 = null
+            aInboundPacketHeader_9197 = null
             if (i.toInt() != -98) method3077(27.toByte())
             aSeqDefinitionCache_9195 = null
         }

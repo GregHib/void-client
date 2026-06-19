@@ -170,16 +170,16 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
         @JvmField
         var anInt7322: Int = 0
         @JvmField
-        var aIntRange_7323: IntRange? = IntRange(105, -2)
+        var aInboundPacketHeader_7323: InboundPacketHeader? = InboundPacketHeader(105, -2)
         @JvmField
-        var aIntRange_7324: IntRange? = IntRange(96, 8)
+        var aInboundPacketHeader_7324: InboundPacketHeader? = InboundPacketHeader(96, 8)
         @JvmField
         var aLinkedNodeListIterator_7325: LinkedNodeListIterator? = LinkedNodeListIterator()
 
         @JvmStatic
         fun method3541(i: Byte) {
-            aIntRange_7323 = null
-            aIntRange_7324 = null
+            aInboundPacketHeader_7323 = null
+            aInboundPacketHeader_7324 = null
             aLinkedNodeListIterator_7325 = null
             if (i.toInt() == 23) aFontMetaRef_7318 = null
         }

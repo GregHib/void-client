@@ -373,7 +373,7 @@ class CombineTextureNode : AbstractProceduralTextureNode(2, false) {
         @JvmField
         var anInt9224: Int = 0
         @JvmField
-        var aIntRange_9225: IntRange?
+        var aInboundPacketHeader_9225: InboundPacketHeader?
         @JvmField
         var anInt9227: Int = 0
         @JvmField
@@ -389,7 +389,7 @@ class CombineTextureNode : AbstractProceduralTextureNode(2, false) {
         @JvmStatic
         fun method3087(bool: Boolean) {
             anIntArray9230 = null
-            aIntRange_9225 = null
+            aInboundPacketHeader_9225 = null
             if (bool != false) method3089(-42)
         }
 
@@ -416,7 +416,7 @@ class CombineTextureNode : AbstractProceduralTextureNode(2, false) {
         }
 
         init {
-            aIntRange_9225 = IntRange(28, -2)
+            aInboundPacketHeader_9225 = InboundPacketHeader(28, -2)
         }
     }
 }

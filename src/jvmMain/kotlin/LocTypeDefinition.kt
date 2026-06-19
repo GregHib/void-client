@@ -146,14 +146,14 @@ class LocTypeDefinition {
         @JvmField
         var anInt4005: Int = -1
         var anInt4013: Int = 0
-        var aIntRange_4015: IntRange? = IntRange(116, 6)
+        var aInboundPacketHeader_4015: InboundPacketHeader? = InboundPacketHeader(116, 6)
         @JvmField
         var anInt4017: Int = 0
 
         @JvmStatic
         fun method2549(i: Byte) {
             if (i > -74) method2549(75.toByte())
-            aIntRange_4015 = null
+            aInboundPacketHeader_4015 = null
         }
     }
 }

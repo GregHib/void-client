@@ -22,8 +22,8 @@ class ScrollingWidgetComponentNode internal constructor(js5Archive: Js5Archive?,
         var anInt8381: Int = 0
         @JvmField
         var anInt8382: Int = 0
-        var aIntRange_8384: IntRange? = IntRange(18, 0)
-        var aIntRange_8385: IntRange?
+        var aInboundPacketHeader_8384: InboundPacketHeader? = InboundPacketHeader(18, 0)
+        var aInboundPacketHeader_8385: InboundPacketHeader?
         @JvmField
         var aBoolean8386: Boolean = false
         @JvmField
@@ -80,14 +80,14 @@ class ScrollingWidgetComponentNode internal constructor(js5Archive: Js5Archive?,
 
         @JvmStatic
         fun method1120(i: Int) {
-            aIntRange_8384 = null
+            aInboundPacketHeader_8384 = null
             aParticleEffectCache_8378 = null
-            aIntRange_8385 = null
+            aInboundPacketHeader_8385 = null
             if (i != 1) method1119(true)
         }
 
         init {
-            aIntRange_8385 = IntRange(10, -2)
+            aInboundPacketHeader_8385 = InboundPacketHeader(10, -2)
             anInt8388 = 0
         }
     }

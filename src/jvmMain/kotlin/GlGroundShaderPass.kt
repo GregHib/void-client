@@ -150,7 +150,7 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
         @JvmField
         var anIntArray7397: IntArray? = IntArray(4096)
         @JvmField
-        var aIntRange_7398: IntRange? = IntRange(16, 6)
+        var aInboundPacketHeader_7398: InboundPacketHeader? = InboundPacketHeader(16, 6)
         @JvmField
         var anInt7400: Int = 0
         @JvmField
@@ -236,7 +236,7 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
             anIntArray7397 = null
             aLongHashTable_7415 = null
             if (bool == true) {
-                aIntRange_7398 = null
+                aInboundPacketHeader_7398 = null
                 aByteArray7394 = null
             }
         }

@@ -54,7 +54,7 @@ class TextureQualityOptionState : GraphicsOptionState {
         @JvmField
         var anInt5996: Int = 0
         @JvmField
-        var aIntRange_5997: IntRange? = IntRange(115, 11)
+        var aInboundPacketHeader_5997: InboundPacketHeader? = InboundPacketHeader(115, 11)
         @JvmField
         var anInt5998: Int = 0
         @JvmField
@@ -163,8 +163,8 @@ class TextureQualityOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1785(i: Int) {
-            aIntRange_5997 = null
-            if (i != 8) aIntRange_5997 = null
+            aInboundPacketHeader_5997 = null
+            if (i != 8) aInboundPacketHeader_5997 = null
         }
 
         @JvmStatic

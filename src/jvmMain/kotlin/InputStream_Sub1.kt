@@ -19,7 +19,7 @@ class InputStream_Sub1 : InputStream() {
         @JvmField
         var anInt78: Int
         @JvmField
-        var aIntRange_79: IntRange?
+        var aInboundPacketHeader_79: InboundPacketHeader?
 
         @JvmStatic
         fun method124(i: Int) {
@@ -27,7 +27,7 @@ class InputStream_Sub1 : InputStream() {
             if (i == 2) {
                 aFontMetaRef_77 = null
                 WhirlpoolHash.aLongArray76 = null
-                aIntRange_79 = null
+                aInboundPacketHeader_79 = null
             }
         }
 
@@ -48,7 +48,7 @@ class InputStream_Sub1 : InputStream() {
         init {
             aFontMetaRef_77 = FontMetaRef(8, 1)
             anInt78 = 0
-            aIntRange_79 = IntRange(75, 6)
+            aInboundPacketHeader_79 = InboundPacketHeader(75, 6)
         }
     }
 }

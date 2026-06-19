@@ -32,7 +32,7 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
         var anInt8678: Int = 0
         @JvmField
         var anInt8682: Int = 0
-        var aIntRange_8683: IntRange? = IntRange(100, -1)
+        var aInboundPacketHeader_8683: InboundPacketHeader? = InboundPacketHeader(100, -1)
         @JvmField
         var anInt8685: Int = 0
 
@@ -70,7 +70,7 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
         @JvmStatic
         fun method570(i: Int) {
             if (i < 51) method570(-85)
-            aIntRange_8683 = null
+            aInboundPacketHeader_8683 = null
             ByteArrayPool.anIntArray8684 = null
             SpotAnimDefCache.aHashtable_8679 = null
         }
@@ -150,7 +150,7 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
                 }
                 if (i_20_ == i_32_ && i_33_ == i_21_) return 0
                 var i_44_ = 0
-                if (i_18_.toInt() != 120) aIntRange_8683 = null
+                if (i_18_.toInt() != 120) aInboundPacketHeader_8683 = null
                 GlGroundShaderPass.anIntArray7397!![i_44_] = i_32_
                 CircleDrawer.anIntArray2694!![i_44_++] = i_33_
                 var i_46_: Int

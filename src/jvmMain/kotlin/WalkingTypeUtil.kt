@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 object WalkingTypeUtil {
-    var aIntRange_3307: IntRange? = IntRange(56, 2)
+    var aInboundPacketHeader_3307: InboundPacketHeader? = InboundPacketHeader(56, 2)
     var anInt3308: Int = 0
     @JvmField
     var aJs5Archive_3309: Js5Archive? = null
@@ -29,7 +29,7 @@ object WalkingTypeUtil {
         aJs5Archive_3309 = null
         anIntArray3311 = null
         if (i < 105) method1978()
-        aIntRange_3307 = null
+        aInboundPacketHeader_3307 = null
     }
 
     init {

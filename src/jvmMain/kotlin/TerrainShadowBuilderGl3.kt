@@ -309,10 +309,10 @@ class TerrainShadowBuilderGl3 internal constructor(var_ha_Sub3: NativeRenderer?,
         var anInt7008: Int = 0
         var anInt7009: Int = 0
         var anInt7012: Int = 0
-        var aIntRange_7015: IntRange? = IntRange(33, 3)
+        var aInboundPacketHeader_7015: InboundPacketHeader? = InboundPacketHeader(33, 3)
         @JvmStatic
         fun method3035(i: Int) {
-            aIntRange_7015 = null
+            aInboundPacketHeader_7015 = null
             if (i != 1) method3035(-34)
         }
     }

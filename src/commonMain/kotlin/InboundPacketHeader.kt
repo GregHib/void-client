@@ -1,7 +1,7 @@
 /* Class114 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class IntRange internal constructor(private var anInt1747: Int, var anInt1749: Int) {
+class InboundPacketHeader internal constructor(private var anInt1747: Int, var anInt1749: Int) {
     fun method1058(i: Byte): Int {
         if (i <= 108) anInt1747 = 110
         anInt1746++
@@ -18,7 +18,7 @@ class IntRange internal constructor(private var anInt1747: Int, var anInt1749: I
         var anInt1746: Int = 0
         @JvmField
         var anInt1750: Int = 0
-        var aIntRange_2285: IntRange? = IntRange(77, 4)
+        var aInboundPacketHeader_2285: InboundPacketHeader? = InboundPacketHeader(77, 4)
 
         var anInt1748: Int = 0
         fun method1059(i: Byte, i_1_: Int): GrowableStringList {

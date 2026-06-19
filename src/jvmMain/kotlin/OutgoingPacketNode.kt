@@ -22,14 +22,14 @@ class OutgoingPacketNode : LinkedListNode() {
         var anInt7120: Int = 0
         var anInt7121: Int = 0
         var anInt7123: Int = 0
-        var aIntRange_7124: IntRange? = IntRange(62, 4)
+        var aInboundPacketHeader_7124: InboundPacketHeader? = InboundPacketHeader(62, 4)
         @JvmField
         var anInt7125: Int = 1406
 
         @JvmStatic
         fun method3323(i: Int) {
             val i_0_ = -14 / ((73 - i) / 51)
-            aIntRange_7124 = null
+            aInboundPacketHeader_7124 = null
         }
 
         fun method3324(var_renderer: Renderer?, i: Byte, l: Long) {

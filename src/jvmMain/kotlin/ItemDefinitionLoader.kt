@@ -62,7 +62,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
         }
         withLock(this.aLruByteCache_2190!!) {
             this.aLruByteCache_2190!!.method590(0)
-            if (i != -8) aIntRange_2183 = null
+            if (i != -8) aInboundPacketHeader_2183 = null
         }
     }
 
@@ -81,7 +81,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
         var anInt2179: Int = 0
         var anInt2181: Int = 0
         var anInt2182: Int = 0
-        var aIntRange_2183: IntRange? = IntRange(0, -1)
+        var aInboundPacketHeader_2183: InboundPacketHeader? = InboundPacketHeader(0, -1)
         var anInt2184: Int = 0
         var anInt2186: Int = 0
         @JvmField
@@ -89,7 +89,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
         var anInt2189: Int = 0
         @JvmStatic
         fun method1284(i: Int) {
-            aIntRange_2183 = null
+            aInboundPacketHeader_2183 = null
             if (i == -21165) aNodeDeque_2187 = null
         }
 
@@ -99,7 +99,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
                     anInt2181++
                     CollisionMapAccessor.aHashtable3548!!.put(string, file)
                     if (i == 64) break
-                    aIntRange_2183 = null
+                    aInboundPacketHeader_2183 = null
                 } catch (runtimeexception: RuntimeException) {
                     throw TextureLoadException.method2929(runtimeexception, ("pg.F(" + (if (file != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
                 }

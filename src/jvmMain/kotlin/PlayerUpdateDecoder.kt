@@ -8,10 +8,10 @@ import SceneObjectSpawner.Companion.method773
 object PlayerUpdateDecoder {
     var anInt1912: Int = 0
     var anInt1913: Int = 0
-    var aIntRange_1914: IntRange? = IntRange(84, 7)
+    var aInboundPacketHeader_1914: InboundPacketHeader? = InboundPacketHeader(84, 7)
     var aBoolean1915: Boolean = false
     var anInt1916: Int = 0
-    var aIntRange_1917: IntRange? = IntRange(20, -2)
+    var aInboundPacketHeader_1917: InboundPacketHeader? = InboundPacketHeader(20, -2)
 
     /*synthetic*/
     var aClass1919: Class<*>? = null
@@ -23,8 +23,8 @@ object PlayerUpdateDecoder {
     fun method1139(i: Int) {
         if (i == 2767) {
             ByteArrayPool.aByteArrayArray1918 = null
-            aIntRange_1917 = null
-            aIntRange_1914 = null
+            aInboundPacketHeader_1917 = null
+            aInboundPacketHeader_1914 = null
         }
     }
 

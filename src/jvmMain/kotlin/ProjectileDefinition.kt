@@ -8,7 +8,7 @@ import GameClock.method596
 * Visit http://jode.sourceforge.net/
 */
 object ProjectileDefinition {
-    var aIntRange_3842: IntRange?
+    var aInboundPacketHeader_3842: InboundPacketHeader?
     var anInt3843: Int = 0
     @JvmField
     var anInt3844: Int = 1
@@ -16,7 +16,7 @@ object ProjectileDefinition {
     var anInt3846: Int = 0
 
     fun method2285(bool: Boolean, i: Byte, i_0_: Int) {
-        if (i > -61) aIntRange_3842 = null
+        if (i > -61) aInboundPacketHeader_3842 = null
         anInt3843++
         if (bool) {
             val class348_sub47 = method2148(BufferPositionTracker.aFontMetaRef_3150, TheoraVideoStream.aIsaacCipher_9029, -126)
@@ -27,7 +27,7 @@ object ProjectileDefinition {
 
     @JvmStatic
     fun method2286(i: Int) {
-        aIntRange_3842 = null
+        aInboundPacketHeader_3842 = null
         if (i != 114) anInt3844 = 87
     }
 
@@ -57,6 +57,6 @@ object ProjectileDefinition {
     }
 
     init {
-        aIntRange_3842 = IntRange(114, 4)
+        aInboundPacketHeader_3842 = InboundPacketHeader(114, 4)
     }
 }

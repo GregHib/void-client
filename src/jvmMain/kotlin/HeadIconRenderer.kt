@@ -21,12 +21,12 @@ class HeadIconRenderer {
         @JvmField
         var anInt2065: Int = 0
         var anInt2066: Int = 0
-        var aIntRange_2068: IntRange? = IntRange(68, 6)
+        var aInboundPacketHeader_2068: InboundPacketHeader? = InboundPacketHeader(68, 6)
         @JvmStatic
         fun method1209(i: Int) {
             val i_0_ = 95 / ((-21 - i) / 45)
             anIntArray2062 = null
-            aIntRange_2068 = null
+            aInboundPacketHeader_2068 = null
         }
 
         fun method1210(i: Byte, i_1_: Int): Boolean {
@@ -94,7 +94,7 @@ class HeadIconRenderer {
         @JvmStatic
         fun method1213(string: String?, string_16_: String?, i: Int) {
             try {
-                if (i > -48) aIntRange_2068 = null
+                if (i > -48) aInboundPacketHeader_2068 = null
                 anInt2063++
                 TextureLoadExceptionStatics.anInt4596 = -1
                 BloomGraphicsOptionState.anInt5969 = if (Loader.skipLobby) 2 else 1

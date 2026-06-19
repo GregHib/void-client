@@ -9,7 +9,7 @@ class TextureAtlasState {
 
     companion object {
         var anInt4419: Int = 0
-        var aIntRange_4421: IntRange? = IntRange(13, -2)
+        var aInboundPacketHeader_4421: InboundPacketHeader? = InboundPacketHeader(13, -2)
         var anInt4422: Int = 0
         var anInt4424: Int = 0
         @JvmStatic
@@ -41,7 +41,7 @@ class TextureAtlasState {
 
         @JvmStatic
         fun method3491(i: Int) {
-            aIntRange_4421 = null
+            aInboundPacketHeader_4421 = null
             if (i != 1) method3491(-30)
         }
 

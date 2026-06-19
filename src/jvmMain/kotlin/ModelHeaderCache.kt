@@ -212,7 +212,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     }
 
     companion object {
-        var aIntRange_3265: IntRange?
+        var aInboundPacketHeader_3265: InboundPacketHeader?
         var anInt3266: Int = 0
         var anInt3270: Int = 0
         var anInt3272: Int = 0
@@ -239,8 +239,8 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         @JvmStatic
         fun method1931(bool: Boolean) {
             anIntArray3273 = null
-            if (bool != true) aIntRange_3265 = null
-            aIntRange_3265 = null
+            if (bool != true) aInboundPacketHeader_3265 = null
+            aInboundPacketHeader_3265 = null
             aServerConnectionInfo_3285 = null
         }
 
@@ -361,7 +361,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         }
 
         init {
-            aIntRange_3265 = IntRange(48, -2)
+            aInboundPacketHeader_3265 = InboundPacketHeader(48, -2)
         }
     }
 }

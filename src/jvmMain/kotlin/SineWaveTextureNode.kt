@@ -74,12 +74,12 @@ class SineWaveTextureNode : AbstractProceduralTextureNode(0, true) {
         @JvmField
         var anInt9454: Int = 0
         @JvmField
-        var aIntRange_9456: IntRange? = null
+        var aInboundPacketHeader_9456: InboundPacketHeader? = null
 
         @JvmStatic
         fun method3145(i: Int) {
-            if (i != 0) aIntRange_9456 = null
-            aIntRange_9456 = null
+            if (i != 0) aInboundPacketHeader_9456 = null
+            aInboundPacketHeader_9456 = null
         }
     }
 }

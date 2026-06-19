@@ -165,7 +165,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
 
     companion object {
         @JvmField
-        var aIntRange_9285: IntRange? = IntRange(104, 1)
+        var aInboundPacketHeader_9285: InboundPacketHeader? = InboundPacketHeader(104, 1)
         @JvmField
         var anInt9289: Int = 0
         @JvmField
@@ -184,7 +184,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
             aFontMetaRef_9304 = null
             aTextureFormatInfo_9303 = null
             if (i != -1633784916) aTextureFormatInfo_9303 = null
-            aIntRange_9285 = null
+            aInboundPacketHeader_9285 = null
         }
 
         @JvmStatic

@@ -324,7 +324,7 @@ class WidgetDefinition {
         var anInt243: Int = 0
         @JvmField
         var anInt246: Int = 0
-        var aIntRange_250: IntRange? = IntRange(4, 1)
+        var aInboundPacketHeader_250: InboundPacketHeader? = InboundPacketHeader(4, 1)
         @JvmField
         var anSpriteDrawTarget_252: SpriteDrawTarget? = null
         @JvmField
@@ -342,7 +342,7 @@ class WidgetDefinition {
         @JvmStatic
         fun method265(bool: Boolean) {
             anIntArray256 = null
-            aIntRange_250 = null
+            aInboundPacketHeader_250 = null
             anIntArrayArray255 = null
             if (bool != false) method268(-22, -54, -101, -115, -107, 90, 13, -47)
             anSpriteDrawTarget_252 = null

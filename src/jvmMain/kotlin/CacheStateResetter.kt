@@ -3,7 +3,7 @@
 */
 object CacheStateResetter {
     @JvmField
-    var aIntRange_123: IntRange? = IntRange(110, 10)
+    var aInboundPacketHeader_123: InboundPacketHeader? = InboundPacketHeader(110, 10)
     @JvmField
     var anInt124: Int = 0
     @JvmField
@@ -29,7 +29,7 @@ object CacheStateResetter {
 
     @JvmStatic
     fun method176(i: Int) {
-        aIntRange_123 = null
+        aInboundPacketHeader_123 = null
         aServerConnectionInfo_125 = null
         if (i != -1) method176(-19)
     }

@@ -17,7 +17,7 @@ object CircleDrawer {
     @JvmField
     var aFontMetaRef_2691: FontMetaRef?
     var aClass348_Sub44_2692: PackedFlagsAccessor?
-    var aIntRange_2693: IntRange?
+    var aInboundPacketHeader_2693: InboundPacketHeader?
     @JvmField
     var anIntArray2694: IntArray?
 
@@ -126,7 +126,7 @@ object CircleDrawer {
         anIntArray2694 = null
         aClass348_Sub44_2692 = null
         aFontMetaRef_2691 = null
-        aIntRange_2693 = null
+        aInboundPacketHeader_2693 = null
         if (i != 16384) method1496(-23, 118, -17, -52, 33, 108, 2)
         aFontMetaRef_2686 = null
     }
@@ -136,6 +136,6 @@ object CircleDrawer {
         aFontMetaRef_2691 = FontMetaRef(46, 2)
         aClass348_Sub44_2692 = PackedFlagsAccessor(0, -1)
         anIntArray2694 = IntArray(4096)
-        aIntRange_2693 = IntRange(94, -1)
+        aInboundPacketHeader_2693 = InboundPacketHeader(94, -1)
     }
 }

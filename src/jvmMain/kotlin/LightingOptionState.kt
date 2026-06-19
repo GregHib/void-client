@@ -29,7 +29,7 @@ class LightingOptionState : GraphicsOptionState {
     internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1710(i: Int): Int {
-        if (i != 20014) aIntRange_5883 = null
+        if (i != 20014) aInboundPacketHeader_5883 = null
         anInt5877++
         return 1
     }
@@ -74,7 +74,7 @@ class LightingOptionState : GraphicsOptionState {
         @JvmField
         var aString5882: String? = null
         @JvmField
-        var aIntRange_5883: IntRange? = IntRange(34, 12)
+        var aInboundPacketHeader_5883: InboundPacketHeader? = InboundPacketHeader(34, 12)
 
         @JvmStatic
         fun method1738(i: Int) {
@@ -84,7 +84,7 @@ class LightingOptionState : GraphicsOptionState {
             if (i != 21921) method1738(11)
             aFloatArray5876 = null
             aClass348_Sub26_5881 = null
-            aIntRange_5883 = null
+            aInboundPacketHeader_5883 = null
         }
 
         init {

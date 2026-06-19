@@ -62,13 +62,13 @@ class FogOptionState : GraphicsOptionState {
         @JvmField
         var anInt6055: Int = 0
         @JvmField
-        var aIntRange_6056: IntRange? = IntRange(26, 11)
+        var aInboundPacketHeader_6056: InboundPacketHeader? = InboundPacketHeader(26, 11)
 
         @JvmStatic
         fun method1807(i: Byte) {
             anIntArrayArray6054 = null
             if (i.toInt() != -121) anIntArrayArray6054 = null
-            aIntRange_6056 = null
+            aInboundPacketHeader_6056 = null
         }
     }
 }

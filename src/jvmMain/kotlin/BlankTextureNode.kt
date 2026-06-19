@@ -5,7 +5,7 @@ import Font.Companion.method2570
 */
 class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
     override fun method3042(i: Int, i_3_: Int): IntArray? {
-        if (i_3_ != 255) aIntRange_9254 = null
+        if (i_3_ != 255) aInboundPacketHeader_9254 = null
         anInt9256++
         return PerlinNoiseTextureNode.anIntArray6432
     }
@@ -14,13 +14,13 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
         @JvmField
         var anInt9253: Int = 0
         @JvmField
-        var aIntRange_9254: IntRange? = IntRange(73, 3)
+        var aInboundPacketHeader_9254: InboundPacketHeader? = InboundPacketHeader(73, 3)
         @JvmField
         var anInt9255: Int = 0
         @JvmField
         var anInt9256: Int = 0
         @JvmField
-        var aIntRange_9257: IntRange?
+        var aInboundPacketHeader_9257: InboundPacketHeader?
         @JvmField
         var anInt9258: Int = 0
         @JvmField
@@ -78,8 +78,8 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
 
         @JvmStatic
         fun method3099(i: Byte) {
-            aIntRange_9254 = null
-            aIntRange_9257 = null
+            aInboundPacketHeader_9254 = null
+            aInboundPacketHeader_9257 = null
             anIntArray9259 = null
             if (i >= -63) anIntArray9259 = null
         }
@@ -92,7 +92,7 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
         }
 
         init {
-            aIntRange_9257 = IntRange(102, 3)
+            aInboundPacketHeader_9257 = InboundPacketHeader(102, 3)
         }
     }
 }
