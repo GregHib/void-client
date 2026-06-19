@@ -161,10 +161,10 @@ class Player : ProjectedGroundDecor() {
                 }
                 if (i_18_ >= 32768) {
                     i_18_ = SpriteStore.anIntArray369!![-32768 + i_18_]
-                    `is`[i_15_] = BoundsConstraintEntry.method2057(1073741824, i_18_)
+                    `is`[i_15_] = WhirlpoolHash.method2057(1073741824, i_18_)
                     val i_19_ = (ClientException.aModelHeaderCache_112!!.method1940(-111, i_18_).anInt2827)
                     if (i_19_ != 0) this.anInt10542 = i_19_
-                } else `is`[i_15_] = BoundsConstraintEntry.method2057(-256 + i_18_, -2147483648)
+                } else `is`[i_15_] = WhirlpoolHash.method2057(-256 + i_18_, -2147483648)
             }
         }
         val is_20_ = IntArray(5)

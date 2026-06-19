@@ -289,54 +289,54 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                 }
                 if (!bool_24_) {
                     if (i_19_ >= 1 && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_]) != i_16_) {
-                        PcmStreamBuffer.anIntArray8862!![i_17_] = BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(1179648, i_19_ + -1), -754974720)
-                        ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 1245184)
+                        PcmStreamBuffer.anIntArray8862!![i_17_] = WhirlpoolHash.method2057(WhirlpoolHash.method2057(1179648, i_19_ + -1), -754974720)
+                        ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(i_22_, 1245184)
                         i_17_ = 0xfff and 1 + i_17_
                         RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_] = i_16_
                     }
                     if (++i_22_ < RangeThresholdTextureNode.anInt9109) {
                         if (i_19_ - 1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![i_22_]) && ((GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![-1 + i_22_]).toInt()) == 0) {
-                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(1375731712, BoundsConstraintEntry.method2057(i_19_ + -1, 1179648)))
-                            ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 1245184)
+                            PcmStreamBuffer.anIntArray8862!![i_17_] = (WhirlpoolHash.method2057(1375731712, WhirlpoolHash.method2057(i_19_ + -1, 1179648)))
+                            ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(i_22_, 1245184)
                             RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![i_22_] = i_16_
                             i_17_ = 0xfff and 1 + i_17_
                         }
                         if ((RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]) != i_16_) {
-                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(318767104, BoundsConstraintEntry.method2057(i_19_, 5373952)))
-                            ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 5439488)
+                            PcmStreamBuffer.anIntArray8862!![i_17_] = (WhirlpoolHash.method2057(318767104, WhirlpoolHash.method2057(i_19_, 5373952)))
+                            ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(i_22_, 5439488)
                             RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_] = i_16_
                             i_17_ = i_17_ + 1 and 0xfff
                         }
                         if (1 + i_19_ < anInt7319 && ((RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ + 1]!![i_22_]) != i_16_) && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![1 + i_19_]!![i_22_ + -1]).toInt()) == 0) {
-                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(-1845493760, BoundsConstraintEntry.method2057(1 + i_19_, 5373952)))
-                            ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(5439488, i_22_)
+                            PcmStreamBuffer.anIntArray8862!![i_17_] = (WhirlpoolHash.method2057(-1845493760, WhirlpoolHash.method2057(1 + i_19_, 5373952)))
+                            ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(5439488, i_22_)
                             i_17_ = 1 + i_17_ and 0xfff
                             RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
                         }
                     }
                     i_22_--
                     if (i_19_ - -1 < anInt7319 && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_]) != i_16_) {
-                        PcmStreamBuffer.anIntArray8862!![i_17_] = BoundsConstraintEntry.method2057(1392508928, BoundsConstraintEntry.method2057(9568256, 1 + i_19_))
-                        ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 9633792)
+                        PcmStreamBuffer.anIntArray8862!![i_17_] = WhirlpoolHash.method2057(1392508928, WhirlpoolHash.method2057(9568256, 1 + i_19_))
+                        ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(i_22_, 9633792)
                         i_17_ = 1 + i_17_ and 0xfff
                         RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
                     }
                     if (--i_22_ >= 0) {
                         if (i_19_ + -1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_]) && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![1 + i_22_]).toInt()) == 0) {
-                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(301989888, BoundsConstraintEntry.method2057(13762560, -1 + i_19_)))
-                            ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 13828096)
+                            PcmStreamBuffer.anIntArray8862!![i_17_] = (WhirlpoolHash.method2057(301989888, WhirlpoolHash.method2057(13762560, -1 + i_19_)))
+                            ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(i_22_, 13828096)
                             RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_] = i_16_
                             i_17_ = i_17_ - -1 and 0xfff
                         }
                         if ((RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]) != i_16_) {
-                            PcmStreamBuffer.anIntArray8862!![i_17_] = BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(13762560, i_19_), -1828716544)
-                            ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(13828096, i_22_)
+                            PcmStreamBuffer.anIntArray8862!![i_17_] = WhirlpoolHash.method2057(WhirlpoolHash.method2057(13762560, i_19_), -1828716544)
+                            ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(13828096, i_22_)
                             RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_] = i_16_
                             i_17_ = 0xfff and i_17_ - -1
                         }
                         if (anInt7319 > 1 + i_19_ && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![1 + i_19_]!![i_22_]) != i_16_ && ((GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && ((GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_ + 1]!![i_22_ + 1]).toInt() and 0x4) == 0) {
-                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(-771751936, BoundsConstraintEntry.method2057(i_19_ - -1, 9568256)))
-                            ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 9633792)
+                            PcmStreamBuffer.anIntArray8862!![i_17_] = (WhirlpoolHash.method2057(-771751936, WhirlpoolHash.method2057(i_19_ - -1, 9568256)))
+                            ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(i_22_, 9633792)
                             RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
                             i_17_ = 0xfff and i_17_ - -1
                         }

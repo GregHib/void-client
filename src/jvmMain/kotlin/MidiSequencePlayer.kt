@@ -82,51 +82,51 @@ class MidiSequencePlayer : AudioStreamNode {
             val i_15_ = 0xf and i_4_
             val i_16_ = (0x7f93 and i_4_) shr 8
             val i_17_ = 0x7f and (i_4_ shr 16)
-            if (i_16_ == 0) anIntArray8947!![i_15_] = ((i_17_ shl 14) + NpcSummaryDefinition.method1166(anIntArray8947!![i_15_], -2080769))
-            if (i_16_ == 32) anIntArray8947!![i_15_] = ((i_17_ shl 7) + NpcSummaryDefinition.method1166(anIntArray8947!![i_15_], -16257))
-            if (i_16_ == 1) anIntArray8899[i_15_] = (NpcSummaryDefinition.method1166(-16257, anIntArray8899[i_15_]) + (i_17_ shl 7))
-            if (i_16_ == 33) anIntArray8899[i_15_] = (NpcSummaryDefinition.method1166(anIntArray8899[i_15_], -128) - -i_17_)
-            if (i_16_ == 5) anIntArray8939[i_15_] = (NpcSummaryDefinition.method1166(anIntArray8939[i_15_], -16257) - -(i_17_ shl 7))
-            if (i_16_ == 37) anIntArray8939[i_15_] = i_17_ + NpcSummaryDefinition.method1166(-128, anIntArray8939[i_15_])
-            if (i_16_ == 7) anIntArray8953[i_15_] = ((i_17_ shl 7) + NpcSummaryDefinition.method1166(-16257, anIntArray8953[i_15_]))
-            if (i_16_ == 39) anIntArray8953[i_15_] = i_17_ + NpcSummaryDefinition.method1166(anIntArray8953[i_15_], -128)
-            if (i_16_ == 10) anIntArray8894[i_15_] = ((i_17_ shl 7) + NpcSummaryDefinition.method1166(anIntArray8894[i_15_], -16257))
-            if (i_16_ == 42) anIntArray8894[i_15_] = i_17_ + NpcSummaryDefinition.method1166(anIntArray8894[i_15_], -128)
-            if (i_16_ == 11) anIntArray8896[i_15_] = ((i_17_ shl 7) + NpcSummaryDefinition.method1166(-16257, anIntArray8896[i_15_]))
-            if (i_16_ == 43) anIntArray8896[i_15_] = (NpcSummaryDefinition.method1166(-128, anIntArray8896[i_15_]) - -i_17_)
+            if (i_16_ == 0) anIntArray8947!![i_15_] = ((i_17_ shl 14) + WhirlpoolHash.method1166(anIntArray8947!![i_15_], -2080769))
+            if (i_16_ == 32) anIntArray8947!![i_15_] = ((i_17_ shl 7) + WhirlpoolHash.method1166(anIntArray8947!![i_15_], -16257))
+            if (i_16_ == 1) anIntArray8899[i_15_] = (WhirlpoolHash.method1166(-16257, anIntArray8899[i_15_]) + (i_17_ shl 7))
+            if (i_16_ == 33) anIntArray8899[i_15_] = (WhirlpoolHash.method1166(anIntArray8899[i_15_], -128) - -i_17_)
+            if (i_16_ == 5) anIntArray8939[i_15_] = (WhirlpoolHash.method1166(anIntArray8939[i_15_], -16257) - -(i_17_ shl 7))
+            if (i_16_ == 37) anIntArray8939[i_15_] = i_17_ + WhirlpoolHash.method1166(-128, anIntArray8939[i_15_])
+            if (i_16_ == 7) anIntArray8953[i_15_] = ((i_17_ shl 7) + WhirlpoolHash.method1166(-16257, anIntArray8953[i_15_]))
+            if (i_16_ == 39) anIntArray8953[i_15_] = i_17_ + WhirlpoolHash.method1166(anIntArray8953[i_15_], -128)
+            if (i_16_ == 10) anIntArray8894[i_15_] = ((i_17_ shl 7) + WhirlpoolHash.method1166(anIntArray8894[i_15_], -16257))
+            if (i_16_ == 42) anIntArray8894[i_15_] = i_17_ + WhirlpoolHash.method1166(anIntArray8894[i_15_], -128)
+            if (i_16_ == 11) anIntArray8896[i_15_] = ((i_17_ shl 7) + WhirlpoolHash.method1166(-16257, anIntArray8896[i_15_]))
+            if (i_16_ == 43) anIntArray8896[i_15_] = (WhirlpoolHash.method1166(-128, anIntArray8896[i_15_]) - -i_17_)
             if (i_16_ == 64) {
-                if (i_17_ < 64) this.anIntArray8895[i_15_] = NpcSummaryDefinition.method1166((this.anIntArray8895[i_15_]), -2)
-                else this.anIntArray8895[i_15_] = BoundsConstraintEntry.method2057((this.anIntArray8895[i_15_]), 1)
+                if (i_17_ < 64) this.anIntArray8895[i_15_] = WhirlpoolHash.method1166((this.anIntArray8895[i_15_]), -2)
+                else this.anIntArray8895[i_15_] = WhirlpoolHash.method2057((this.anIntArray8895[i_15_]), 1)
             }
             if (i_16_ == 65) {
-                if (i_17_ >= 64) this.anIntArray8895[i_15_] = BoundsConstraintEntry.method2057((this.anIntArray8895[i_15_]), 2)
+                if (i_17_ >= 64) this.anIntArray8895[i_15_] = WhirlpoolHash.method2057((this.anIntArray8895[i_15_]), 2)
                 else {
                     method2858(-106, i_15_)
-                    this.anIntArray8895[i_15_] = NpcSummaryDefinition.method1166((this.anIntArray8895[i_15_]), -3)
+                    this.anIntArray8895[i_15_] = WhirlpoolHash.method1166((this.anIntArray8895[i_15_]), -3)
                 }
             }
-            if (i_16_ == 99) anIntArray8904[i_15_] = ((i_17_ shl 7) + NpcSummaryDefinition.method1166(127, anIntArray8904[i_15_]))
-            if (i_16_ == 98) anIntArray8904[i_15_] = (NpcSummaryDefinition.method1166(16256, anIntArray8904[i_15_]) + i_17_)
-            if (i_16_ == 101) anIntArray8904[i_15_] = (16384 - -NpcSummaryDefinition.method1166(anIntArray8904[i_15_], 127) + (i_17_ shl 7))
-            if (i_16_ == 100) anIntArray8904[i_15_] = i_17_ + (NpcSummaryDefinition.method1166(16256, anIntArray8904[i_15_]) + 16384)
+            if (i_16_ == 99) anIntArray8904[i_15_] = ((i_17_ shl 7) + WhirlpoolHash.method1166(127, anIntArray8904[i_15_]))
+            if (i_16_ == 98) anIntArray8904[i_15_] = (WhirlpoolHash.method1166(16256, anIntArray8904[i_15_]) + i_17_)
+            if (i_16_ == 101) anIntArray8904[i_15_] = (16384 - -WhirlpoolHash.method1166(anIntArray8904[i_15_], 127) + (i_17_ shl 7))
+            if (i_16_ == 100) anIntArray8904[i_15_] = i_17_ + (WhirlpoolHash.method1166(16256, anIntArray8904[i_15_]) + 16384)
             if (i_16_ == 120) method2872(2005674600, i_15_)
             if (i_16_ == 121) method2865(0, i_15_)
             if (i_16_ == 123) method2855(i_15_, (-70).toByte())
             if (i_16_ == 6) {
                 val i_18_ = anIntArray8904[i_15_]
-                if (i_18_ == 16384) anIntArray8902!![i_15_] = ((i_17_ shl 7) + NpcSummaryDefinition.method1166(anIntArray8902!![i_15_], -16257))
+                if (i_18_ == 16384) anIntArray8902!![i_15_] = ((i_17_ shl 7) + WhirlpoolHash.method1166(anIntArray8902!![i_15_], -16257))
             }
             if (i_16_ == 38) {
                 val i_19_ = anIntArray8904[i_15_]
-                if (i_19_ == 16384) anIntArray8902!![i_15_] = i_17_ + NpcSummaryDefinition.method1166(-128, anIntArray8902!![i_15_])
+                if (i_19_ == 16384) anIntArray8902!![i_15_] = i_17_ + WhirlpoolHash.method1166(-128, anIntArray8902!![i_15_])
             }
-            if (i_16_ == 16) this.anIntArray8914[i_15_] = (NpcSummaryDefinition.method1166(-16257, (this.anIntArray8914[i_15_])) + (i_17_ shl 7))
-            if (i_16_ == 48) this.anIntArray8914[i_15_] = NpcSummaryDefinition.method1166((this.anIntArray8914[i_15_]), -128) - -i_17_
+            if (i_16_ == 16) this.anIntArray8914[i_15_] = (WhirlpoolHash.method1166(-16257, (this.anIntArray8914[i_15_])) + (i_17_ shl 7))
+            if (i_16_ == 48) this.anIntArray8914[i_15_] = WhirlpoolHash.method1166((this.anIntArray8914[i_15_]), -128) - -i_17_
             if (i_16_ == 81) {
-                if (i_17_ >= 64) this.anIntArray8895[i_15_] = BoundsConstraintEntry.method2057((this.anIntArray8895[i_15_]), 4)
+                if (i_17_ >= 64) this.anIntArray8895[i_15_] = WhirlpoolHash.method2057((this.anIntArray8895[i_15_]), 4)
                 else {
                     method2850(i_15_, 0)
-                    this.anIntArray8895[i_15_] = NpcSummaryDefinition.method1166((this.anIntArray8895[i_15_]), -5)
+                    this.anIntArray8895[i_15_] = WhirlpoolHash.method1166((this.anIntArray8895[i_15_]), -5)
                 }
             }
             if (i_16_ == 17) method2857(i_15_, 125, (i_17_ shl 7) + (0x3f80.inv() and anIntArray8942!![i_15_]))
@@ -282,7 +282,7 @@ class MidiSequencePlayer : AudioStreamNode {
         method2865(0, -1)
         if (bool != true) anIntArray8947 = null
         for (i in 0..15) anIntArray8916!![i] = anIntArray8945[i]
-        for (i in 0..15) anIntArray8947!![i] = NpcSummaryDefinition.method1166(anIntArray8945[i], -128)
+        for (i in 0..15) anIntArray8947!![i] = WhirlpoolHash.method1166(anIntArray8945[i], -128)
     }
 
     fun method2852(`is`: IntArray?, i: Int, class348_sub43: SpriteDefinition?, i_46_: Int, i_47_: Byte): Boolean {
@@ -410,7 +410,7 @@ class MidiSequencePlayer : AudioStreamNode {
         anInt8943++
         anIntArray8945[i_54_] = i
         if (i_55_ < 39) aJs5Archive_8926 = null
-        anIntArray8947!![i_54_] = NpcSummaryDefinition.method1166(i, -128)
+        anIntArray8947!![i_54_] = WhirlpoolHash.method1166(i, -128)
         method2873((-21).toByte(), i, i_54_)
     }
 

@@ -92,15 +92,6 @@ class FacingDirectionNode internal constructor(@JvmField var aByteArray6657: Byt
             return null
         }
 
-        @JvmStatic
-        fun method2777(l: Long, l_7_: Long): Long {
-            try {
-                return l and l_7_
-            } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, "gia.C(" + l + ',' + l_7_ + ')')
-            }
-        }
-
         init {
             aShortArray6658 = shortArrayOf(952, 20413, -21592, 11204, -10305)
             aShortArray6665 = shortArrayOf(962, 20423, -21582, 11214, -10295)

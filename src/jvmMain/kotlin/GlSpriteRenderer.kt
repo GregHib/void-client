@@ -571,12 +571,5 @@ class GlSpriteRenderer : AbstractModelRenderer {
             return '\u0000'
         }
 
-        fun method993(l: Long, l_104_: Long): Long {
-            try {
-                return l xor l_104_
-            } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, "nda.Q($l,$l_104_)")
-            }
-        }
     }
 }

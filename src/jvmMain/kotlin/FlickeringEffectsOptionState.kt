@@ -61,8 +61,6 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
         @JvmField
         var anIntArrayArray5921: Array<IntArray?>? = null
         @JvmField
-        var anInt5922: Int = 0
-        @JvmField
         var anInt5923: Int = 0
         @JvmField
         var anInt5924: Int = 0
@@ -150,28 +148,6 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
             SocketStreamWorker.aLruByteCache_2671!!.method590(0)
         }
 
-        @JvmStatic
-        fun method1752(i: Int, i_10_: Int, i_11_: Int) {
-            GrayscaleNoiseTexture.anInt5283 = i_11_
-            anInt5922++
-            LinkedNodeListIterator.anInt1651 = i_10_
-            if (i == -1) {
-                if (ByteBufferStatics.anInt7207 == 0) {
-                    ShadowQualityOptionState.anInt6008 = (2 * HardKeyedCacheEntryReference.anInt10444 + LinkedNodeListIterator.anInt1651)
-                    SynthVoiceGroup.anInt8854 = SoundEnvelope.anInt2747 * 2 + GrayscaleNoiseTexture.anInt5283
-                } else if (ByteBufferStatics.anInt7207 == 1) {
-                    ItemModelDefinition.anInt425 = (BloomGraphicsOptionState.anInt5965 + GrayscaleNoiseTexture.anInt5283 / DirectionPath.anInt1067 - -2)
-                    BackgroundWorkerThread.anInt3225 = (FileExistsCondition.anInt4784 + LinkedNodeListIterator.anInt1651 / ByteStore.anInt4267 - -2)
-                    SynthVoiceGroup.anInt8854 = DirectionPath.anInt1067 * ItemModelDefinition.anInt425
-                    ShadowQualityOptionState.anInt6008 = ByteStore.anInt4267 * BackgroundWorkerThread.anInt3225
-                    SoundEnvelope.anInt2747 = (-GrayscaleNoiseTexture.anInt5283 + SynthVoiceGroup.anInt8854 shr 1)
-                    HardKeyedCacheEntryReference.anInt10444 = (ShadowQualityOptionState.anInt6008 - LinkedNodeListIterator.anInt1651 shr 1)
-                } else if (ByteBufferStatics.anInt7207 == 2) {
-                    SynthVoiceGroup.anInt8854 = GrayscaleNoiseTexture.anInt5283
-                    ShadowQualityOptionState.anInt6008 = LinkedNodeListIterator.anInt1651
-                }
-            }
-        }
 
         @JvmStatic
         fun method1753(i: Int, widgetComponent: WidgetComponent): String? {

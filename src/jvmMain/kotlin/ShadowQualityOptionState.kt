@@ -17,7 +17,7 @@ class ShadowQualityOptionState : GraphicsOptionState {
     }
 
     fun method1789(i: Int): Int {
-        if (i != -32350) anInt6008 = 32
+        if (i != -32350) WhirlpoolHash.anInt6008 = 32
         anInt6017++
         return this.anInt3138
     }
@@ -47,8 +47,6 @@ class ShadowQualityOptionState : GraphicsOptionState {
     companion object {
         @JvmField
         var anInt6007: Int = 0
-        @JvmField
-        var anInt6008: Int = 0
         @JvmField
         var anInt6009: Int = 0
         @JvmField

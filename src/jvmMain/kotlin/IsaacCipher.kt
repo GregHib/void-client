@@ -182,9 +182,9 @@ class IsaacCipher {
             else anInt1293 = anInt1293 xor (anInt1293 shl 13)
             anInt1293 += anIntArray1296!![0xff and 128 + i]
             val i_14_: Int
-            i_14_ = (anIntArray1296!![NpcSummaryDefinition.method1166(255, i_13_ shr 2)] - (-anInt1293 - anInt1291))
+            i_14_ = (anIntArray1296!![WhirlpoolHash.method1166(255, i_13_ shr 2)] - (-anInt1293 - anInt1291))
             anIntArray1296!![i] = i_14_
-            anInt1291 = i_13_ + anIntArray1296!![(NpcSummaryDefinition.method1166(261268, i_14_) shr 278777480 shr 242087490)]
+            anInt1291 = i_13_ + anIntArray1296!![(WhirlpoolHash.method1166(261268, i_14_) shr 278777480 shr 242087490)]
             anIntArray1289[i] = anInt1291
         }
         if (bool != false) method776(-33, -56, 52)

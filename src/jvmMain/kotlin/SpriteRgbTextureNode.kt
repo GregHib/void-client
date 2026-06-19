@@ -15,9 +15,9 @@ class SpriteRgbTextureNode : SpriteTextureNode() {
             val i_4_ = (this.anInt9241 * (i % this.anInt9241))
             for (i_5_ in 0..<DisplaceTextureNode.Companion.anInt9139) {
                 val i_6_ = (this.anIntArray9232!![(i_5_ % this.anInt9237 + i_4_)])
-                is_3_[i_5_] = NpcSummaryDefinition.method1166(4080, i_6_ shl 4)
-                is_2_[i_5_] = NpcSummaryDefinition.method1166(65280, i_6_) shr 4
-                is_1_[i_5_] = NpcSummaryDefinition.method1166(4080, i_6_ shr 12)
+                is_3_[i_5_] = WhirlpoolHash.method1166(4080, i_6_ shl 4)
+                is_2_[i_5_] = WhirlpoolHash.method1166(65280, i_6_) shr 4
+                is_1_[i_5_] = WhirlpoolHash.method1166(4080, i_6_ shr 12)
             }
         }
         return `is`

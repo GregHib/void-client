@@ -581,7 +581,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                     aHashtable_8325!!.method3483(27.toByte(), l, class348_sub3s[i_178_])
                 } else class348_sub3s[i_178_] = linkedListNode as ModelVertexColorBuffer
             }
-            if (bool) aByteArrayArray8317[i]!![i_167_] = BoundsConstraintEntry.method2057((aByteArrayArray8317[i]!![i_167_]).toInt(), 1).toByte()
+            if (bool) aByteArrayArray8317[i]!![i_167_] = WhirlpoolHash.method2057((aByteArrayArray8317[i]!![i_167_]).toInt(), 1).toByte()
             if (is_171_.size > anInt8331) anInt8331 = is_171_.size
             anInt8329 += is_171_.size
         } catch (runtimeexception: RuntimeException) {
@@ -828,7 +828,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
         fun method4008(i: Byte): Int {
             anInt8289++
             if (i >= -121) aCameraRotationStub_8320 = null
-            if (ByteBufferStatics.anInt7207 == 1) return MapRegionLoaderThread.anInt4211
+            if (WhirlpoolHash.anInt7207 == 1) return MapRegionLoaderThread.anInt4211
             return 0
         }
     }

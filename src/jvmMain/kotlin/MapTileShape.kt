@@ -92,21 +92,21 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
 
         fun method2663(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
             anInt4195++
-            if (ByteBufferStatics.anInt7207 == 1) {
-                var i_7_ = i_3_ / DirectionPath.anInt1067
-                var i_8_ = i_4_ / DirectionPath.anInt1067
-                var i_9_ = i_5_ / ByteStore.anInt4267
-                var i_10_ = i_6_ / ByteStore.anInt4267
-                if (i_7_ < ItemModelDefinition.anInt425 && i_8_ >= 0 && BackgroundWorkerThread.anInt3225 > i_9_ && i_10_ >= 0 && i == -5590) {
-                    if (i_8_ >= ItemModelDefinition.anInt425) i_8_ = -1 + ItemModelDefinition.anInt425
+            if (WhirlpoolHash.anInt7207 == 1) {
+                var i_7_ = i_3_ / WhirlpoolHash.anInt1067
+                var i_8_ = i_4_ / WhirlpoolHash.anInt1067
+                var i_9_ = i_5_ / WhirlpoolHash.anInt4267
+                var i_10_ = i_6_ / WhirlpoolHash.anInt4267
+                if (i_7_ < WhirlpoolHash.anInt425 && i_8_ >= 0 && WhirlpoolHash.anInt3225 > i_9_ && i_10_ >= 0 && i == -5590) {
+                    if (i_8_ >= WhirlpoolHash.anInt425) i_8_ = -1 + WhirlpoolHash.anInt425
                     if (i_9_ < 0) i_9_ = 0
-                    if (i_10_ >= BackgroundWorkerThread.anInt3225) i_10_ = BackgroundWorkerThread.anInt3225 + -1
+                    if (i_10_ >= WhirlpoolHash.anInt3225) i_10_ = WhirlpoolHash.anInt3225 + -1
                     if (i_7_ < 0) i_7_ = 0
                     for (i_11_ in i_9_..i_10_) {
-                        val i_12_ = (ModelTransformParams.method3452(i_11_ + MaterialPass.anInt3682, (-15).toByte(), BackgroundWorkerThread.anInt3225) * ItemModelDefinition.anInt425)
+                        val i_12_ = (ModelTransformParams.method3452(i_11_ + MaterialPass.anInt3682, (-15).toByte(), WhirlpoolHash.anInt3225) * WhirlpoolHash.anInt425)
                         var i_13_ = i_7_
                         while (i_8_ >= i_13_) {
-                            val i_14_ = (i_12_ + ModelTransformParams.method3452((SceneryDetailOptionState.anInt6095 + i_13_), (-15).toByte(), ItemModelDefinition.anInt425))
+                            val i_14_ = (i_12_ + ModelTransformParams.method3452((SceneryDetailOptionState.anInt6095 + i_13_), (-15).toByte(), WhirlpoolHash.anInt425))
                             LocalPlayerState.anIntArray1909!![i_14_] = GroundDecorSceneEntity.anInt9997
                             i_13_++
                         }

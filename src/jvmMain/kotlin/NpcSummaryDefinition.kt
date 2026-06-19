@@ -68,10 +68,6 @@ class NpcSummaryDefinition {
             }
         }
 
-        @JvmStatic
-        fun method1166(i: Int, i_12_: Int): Int {
-            return i and i_12_
-        }
 
         @JvmStatic
         fun method1167(i: Int, i_13_: Byte): Boolean {

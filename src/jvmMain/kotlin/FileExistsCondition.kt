@@ -46,7 +46,6 @@ class FileExistsCondition internal constructor(js5Archive: Js5Archive?, string: 
         var aModelDefinitionCache_4782: ModelDefinitionCache? = null
         @JvmField
         var aLong4783: Long = 20000000L
-        var anInt4784: Int = 0
         var anInt4786: Int = 0
 
         @JvmStatic

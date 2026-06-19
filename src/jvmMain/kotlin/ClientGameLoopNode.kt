@@ -1,4 +1,4 @@
-import NpcSummaryDefinition.Companion.method1166
+import WhirlpoolHash.Companion.method1166
 import Gl2dTexture.Companion.method241
 import SizeBoundedSoftCache.Companion.method1343
 import TextureGenerator.Companion.method1397

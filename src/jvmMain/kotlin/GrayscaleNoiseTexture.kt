@@ -74,8 +74,6 @@ open class GrayscaleNoiseTexture(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_2
         @JvmField
         var anInt5282: Int = 0
         @JvmField
-        var anInt5283: Int = 0
-        @JvmField
         var anInt5286: Int = 0
         var aFontMetaRef_5288: FontMetaRef? = FontMetaRef(7, 6)
         @JvmField

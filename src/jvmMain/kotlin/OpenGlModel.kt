@@ -765,7 +765,7 @@ class OpenGlModel : AbstractModel {
             var i_202_ = i_199_ and 0x7f
             if (i_195_ != -1) i_201_ = (i_197_ * (i_195_ - i_201_) shr 7) + i_201_
             if (i_196_ != -1) i_202_ += (i_196_ + -i_202_) * i_197_ shr 7
-            aShortArray5580!![i_198_] = (BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(i_201_ shl 7, i_200_ shl 10), i_202_)).toShort()
+            aShortArray5580!![i_198_] = (WhirlpoolHash.method2057(WhirlpoolHash.method2057(i_201_ shl 7, i_200_ shl 10), i_202_)).toShort()
             i_198_++
         }
         if (aMapSceneTileDefinitionArray5621 != null) {
@@ -2126,7 +2126,7 @@ class OpenGlModel : AbstractModel {
                                 } else i_464_ = 0
                                 if (i_465_ < 0) i_465_ = 0
                                 else if (i_465_ > 127) i_465_ = 127
-                                aShortArray5580!![i_461_] = (BoundsConstraintEntry.method2057((BoundsConstraintEntry.method2057(i_464_ shl 7, i_463_ shl 10)), i_465_)).toShort()
+                                aShortArray5580!![i_461_] = (WhirlpoolHash.method2057((WhirlpoolHash.method2057(i_464_ shl 7, i_463_ shl 10)), i_465_)).toShort()
                             }
                             if (is_459_.size > 0 && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
                         }
@@ -2306,7 +2306,7 @@ class OpenGlModel : AbstractModel {
                 if (i_503_ >= 0) {
                     if (i_503_ > 127) i_503_ = 127
                 } else i_503_ = 0
-                aShortArray5580!![i_499_] = (BoundsConstraintEntry.method2057(i_503_, BoundsConstraintEntry.method2057(i_502_ shl 7, i_501_ shl 10))).toShort()
+                aShortArray5580!![i_499_] = (WhirlpoolHash.method2057(i_503_, WhirlpoolHash.method2057(i_502_ shl 7, i_501_ shl 10))).toShort()
                 i_499_++
             }
             if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
@@ -2820,7 +2820,7 @@ class OpenGlModel : AbstractModel {
                                     i_668_ += i_512_
                                     if (i_668_ < 0) i_668_ = 0
                                     else if (i_668_ > 127) i_668_ = 127
-                                    aShortArray5580!![i_664_] = (BoundsConstraintEntry.method2057(i_668_, (BoundsConstraintEntry.method2057(i_666_ shl 10, i_667_ shl 7)))).toShort()
+                                    aShortArray5580!![i_664_] = (WhirlpoolHash.method2057(i_668_, (WhirlpoolHash.method2057(i_666_ shl 10, i_667_ shl 7)))).toShort()
                                     if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
                                 }
                                 i_663_++

@@ -40,7 +40,6 @@ class BloomGraphicsOptionState : GraphicsOptionState {
 
     override fun method1710(i: Int): Int {
         anInt5970++
-        if (i != 20014) anInt5965 = -58
         return 0
     }
 
@@ -55,8 +54,6 @@ class BloomGraphicsOptionState : GraphicsOptionState {
         var anInt5963: Int = 0
         @JvmField
         var aJs5Archive_5964: Js5Archive? = null
-        @JvmField
-        var anInt5965: Int = 0
         @JvmField
         var aString5966: String? = null
         @JvmField

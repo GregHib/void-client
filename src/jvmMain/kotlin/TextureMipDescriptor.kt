@@ -1,6 +1,6 @@
-import NpcSummaryDefinition.Companion.method1166
+import WhirlpoolHash.Companion.method1166
 import AsyncTaskHandle.Companion.method1436
-import BoundsConstraintEntry.Companion.method2057
+import WhirlpoolHash.Companion.method2057
 import jaggl.OpenGL.Companion.glTexImage2Di
 import kotlin.math.min
 

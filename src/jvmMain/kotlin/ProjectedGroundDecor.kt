@@ -229,8 +229,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 this.anIntArray10296 = null
                 return true
             }
-            if (i_10_ > 0 && i_10_ <= 8192 || i_10_ <= -8192) this.anIntArray10296!![i_3_] = NpcSummaryDefinition.method1166(16383, i_9_ - -i_7_)
-            else this.anIntArray10296!![i_3_] = NpcSummaryDefinition.method1166(-i_7_ + i_9_, 16383)
+            if (i_10_ > 0 && i_10_ <= 8192 || i_10_ <= -8192) this.anIntArray10296!![i_3_] = WhirlpoolHash.method1166(16383, i_9_ - -i_7_)
+            else this.anIntArray10296!![i_3_] = WhirlpoolHash.method1166(-i_7_ + i_9_, 16383)
             return false
         }
         if (this.anIntArray10296!![i_3_] == -1) this.anIntArray10296!![i_3_] = this.aCompassSmoother_10217.method2019((-104).toByte())
@@ -240,8 +240,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             this.anIntArray10296!![i_3_] = i_4_
             return true
         }
-        if ((i_13_ <= 0 || i_13_ > 8192) && i_13_ > -8192) this.anIntArray10296!![i_3_] = NpcSummaryDefinition.method1166(16383, i_12_ - i_7_)
-        else this.anIntArray10296!![i_3_] = NpcSummaryDefinition.method1166(16383, i_12_ - -i_7_)
+        if ((i_13_ <= 0 || i_13_ > 8192) && i_13_ > -8192) this.anIntArray10296!![i_3_] = WhirlpoolHash.method1166(16383, i_12_ - i_7_)
+        else this.anIntArray10296!![i_3_] = WhirlpoolHash.method1166(16383, i_12_ - -i_7_)
         return false
     }
 

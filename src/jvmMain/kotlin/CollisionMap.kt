@@ -1,6 +1,6 @@
-import NpcSummaryDefinition.Companion.method1166
+import WhirlpoolHash.Companion.method1166
 import TwoStateOptionState.Companion.method1842
-import BoundsConstraintEntry.Companion.method2057
+import WhirlpoolHash.Companion.method2057
 import LruByteCache.Companion.method589
 import MapRegionLoader.Companion.method751
 import kotlin.math.max

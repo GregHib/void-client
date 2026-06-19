@@ -148,8 +148,6 @@ class SynthVoiceGroup internal constructor(private val aClass348_Sub16_Sub3_8852
         @JvmField
         var aRgbColorPalette_8853: RgbColorPalette? = RgbColorPalette(11, 8)
         @JvmField
-        var anInt8854: Int = 0
-        @JvmField
         var anInt8856: Int = 0
         @JvmField
         var aFontMetaRef_8857: FontMetaRef? = FontMetaRef(54, 15)

@@ -56,9 +56,9 @@ open class SpriteTextureNode : AbstractProceduralTextureNode(0, false) {
                 var i_6_ = 0
                 while ((DisplaceTextureNode.Companion.anInt9139 > i_6_)) {
                     val i_7_ = this.anIntArray9232!![i_5_++]
-                    is_4_[i_6_] = NpcSummaryDefinition.method1166(4080, i_7_ shl 4)
-                    is_3_[i_6_] = NpcSummaryDefinition.method1166(65280, i_7_) shr 4
-                    is_2_[i_6_] = NpcSummaryDefinition.method1166(4080, i_7_ shr 12)
+                    is_4_[i_6_] = WhirlpoolHash.method1166(4080, i_7_ shl 4)
+                    is_3_[i_6_] = WhirlpoolHash.method1166(65280, i_7_) shr 4
+                    is_2_[i_6_] = WhirlpoolHash.method1166(4080, i_7_ shr 12)
                     i_6_++
                 }
             } else {
@@ -66,9 +66,9 @@ open class SpriteTextureNode : AbstractProceduralTextureNode(0, false) {
                 while ((DisplaceTextureNode.Companion.anInt9139 > i_8_)) {
                     val i_9_: Int = (this.anInt9237 * i_8_ / DisplaceTextureNode.Companion.anInt9139)
                     val i_10_ = (this.anIntArray9232!![i_9_ + i_5_])
-                    is_4_[i_8_] = NpcSummaryDefinition.method1166(i_10_, 255) shl 4
-                    is_3_[i_8_] = NpcSummaryDefinition.method1166(i_10_ shr 4, 4080)
-                    is_2_[i_8_] = NpcSummaryDefinition.method1166(i_10_, 16711680) shr 12
+                    is_4_[i_8_] = WhirlpoolHash.method1166(i_10_, 255) shl 4
+                    is_3_[i_8_] = WhirlpoolHash.method1166(i_10_ shr 4, 4080)
+                    is_2_[i_8_] = WhirlpoolHash.method1166(i_10_, 16711680) shr 12
                     i_8_++
                 }
             }

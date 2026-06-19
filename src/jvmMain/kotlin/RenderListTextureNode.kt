@@ -91,9 +91,9 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
                 val is_20_ = is_17_[2]!!
                 for (i_21_ in 0..<DisplaceTextureNode.Companion.anInt9139) {
                     val i_22_ = is_16_[i_21_]
-                    is_20_[i_21_] = NpcSummaryDefinition.method1166(i_22_, 255) shl 4
-                    is_19_[i_21_] = NpcSummaryDefinition.method1166(i_22_ shr 4, 4080)
-                    is_18_[i_21_] = NpcSummaryDefinition.method1166(4080, i_22_ shr 12)
+                    is_20_[i_21_] = WhirlpoolHash.method1166(i_22_, 255) shl 4
+                    is_19_[i_21_] = WhirlpoolHash.method1166(i_22_ shr 4, 4080)
+                    is_18_[i_21_] = WhirlpoolHash.method1166(4080, i_22_ shr 12)
                 }
                 i_15_++
             }

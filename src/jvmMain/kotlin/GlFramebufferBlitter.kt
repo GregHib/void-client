@@ -377,16 +377,16 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             NpcConfig.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
             MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
             RenderNodeStatics.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
-            FileExistsCondition.anInt4784 = i_26_
+            WhirlpoolHash.anInt4784 = i_26_
             SceneryDetailOptionState.anInt6095 = 0
             if (i_22_ <= 64) anIntArray279 = null
-            ByteStore.anInt4267 = i_23_
+            WhirlpoolHash.anInt4267 = i_23_
             MaterialPass.anInt3682 = 0
-            DirectionPath.anInt1067 = i_24_
-            WidgetDefinition.Companion.anSpriteDrawTarget_252 = null
-            ByteBufferStatics.anInt7207 = 1
-            BloomGraphicsOptionState.anInt5965 = i
-            WhirlpoolHash.method828(38.toByte(), i_25_, i_21_)
+            WhirlpoolHash.anInt1067 = i_24_
+            WidgetDefinition.anSpriteDrawTarget_252 = null
+            WhirlpoolHash.anInt7207 = 1
+            WhirlpoolHash.anInt5965 = i
+            MinimapFlagRenderer.method828(38.toByte(), i_25_, i_21_)
         }
     }
 }

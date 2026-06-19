@@ -1,4 +1,4 @@
-import NpcSummaryDefinition.Companion.method1166
+import WhirlpoolHash.Companion.method1166
 import EmoteDefinition.Companion.method1928
 import TypedRecordTable.Companion.method2178
 

@@ -220,11 +220,11 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
             SceneryDetailOptionState.anInt6095 = 0
             val i_0_ = 29 % ((-42 - i) / 63)
             var i_1_ = 0
-            while (BackgroundWorkerThread.anInt3225 > i_1_) {
-                val i_2_ = ItemModelDefinition.anInt425 * i_1_
-                for (i_3_ in 0..<ItemModelDefinition.anInt425) {
+            while (WhirlpoolHash.anInt3225 > i_1_) {
+                val i_2_ = WhirlpoolHash.anInt425 * i_1_
+                for (i_3_ in 0..<WhirlpoolHash.anInt425) {
                     val i_4_ = i_2_ - -i_3_
-                    NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_4_]!!.method15(i_3_ * DirectionPath.anInt1067, i_1_ * ByteStore.anInt4267, DirectionPath.anInt1067, ByteStore.anInt4267, 0, 0, true, true)
+                    NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_4_]!!.method15(i_3_ * WhirlpoolHash.anInt1067, i_1_ * WhirlpoolHash.anInt4267, WhirlpoolHash.anInt1067, WhirlpoolHash.anInt4267, 0, 0, true, true)
                 }
                 i_1_++
             }

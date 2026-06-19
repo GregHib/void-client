@@ -16,7 +16,6 @@ object ByteBufferStatics {
     var aProjectileFactory_7175: ProjectileFactory? = ProjectileFactory(1, 2)
     var anInt7201: Int = 0
     var aLongArray7206: LongArray? = LongArray(32)
-    var anInt7207: Int = 0
 
     fun method3331(i: Int, i_0_: Byte, i_1_: Int): Int {
         var i = i

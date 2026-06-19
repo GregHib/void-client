@@ -145,8 +145,6 @@ class ItemModelDefinition {
 
     companion object {
         @JvmField
-        var anInt425: Int = 0
-        @JvmField
         var anInt427: Int = 0
         @JvmField
         var anInt428: Int = 0
@@ -183,7 +181,7 @@ class ItemModelDefinition {
 
         @JvmStatic
         fun method328(i: Int) {
-            if (i != 0) anInt425 = -128
+            if (i != 0) WhirlpoolHash.anInt425 = -128
             aCameraNodeList_430 = null
         }
 

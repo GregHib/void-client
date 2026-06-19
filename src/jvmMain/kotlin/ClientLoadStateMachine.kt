@@ -13,7 +13,6 @@ import WorldMapLabel.Companion.method3568
 import ScrollbarComponent.Companion.method184
 import GameClock.method599
 import MapRegionLoader.Companion.method752
-import WhirlpoolHash.Companion.method830
 import NativeRenderer.Companion.method3886
 import NativeRenderer.Companion.method3896
 import jagex3.jagmisc.jagmisc.init
@@ -295,7 +294,7 @@ object ClientLoadStateMachine {
             method243(i xor 0x6fd6.inv())
             if (TheoraVideoStream.aBoolean9038) method3553(false, 108.toByte(), 0)
             else method3553(false, 102.toByte(), IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1829(-32350))
-            method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+            ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
             method3568(FacingDirectionNode.aRenderer6654, i xor 0x6ff7.inv())
             ModelHeaderCache.method1933(CameraRotationStub.aJs5Archive_322, FacingDirectionNode.aRenderer6654, true)

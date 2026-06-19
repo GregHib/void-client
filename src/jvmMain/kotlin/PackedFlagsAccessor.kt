@@ -54,8 +54,8 @@ class PackedFlagsAccessor internal constructor(@JvmField var anInt7098: Int, @Jv
         fun method3306(i: Byte): Int {
             if (i >= -90) anInt7101 = -7
             anInt7097++
-            if (ByteBufferStatics.anInt7207 == 1) return ShadowQualityOptionState.anInt6008
-            return LinkedNodeListIterator.anInt1651
+            if (WhirlpoolHash.anInt7207 == 1) return WhirlpoolHash.anInt6008
+            return WhirlpoolHash.anInt1651
         }
     }
 }

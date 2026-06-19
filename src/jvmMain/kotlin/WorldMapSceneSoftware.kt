@@ -1,6 +1,6 @@
 import CollisionMapRegion.Companion.method1045
 import NativeVertexBuffer.Companion.method1079
-import NpcSummaryDefinition.Companion.method1166
+import WhirlpoolHash.Companion.method1166
 import OrientationRotator.method1201
 import SceneTilePlaneManager.method258
 import ClickFeedbackTask.Companion.method1353
@@ -119,7 +119,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 if (class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(i_3_ + 786, var_renderer)
                             } else class318_sub1_sub3 = (SequencedGroundDecor(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i + (i_9_ - 1), i_5_, i_5_ - (-i_8_ - -1), i_4_, i_7_, i_6_))
                             method850(class318_sub1_sub3, false)
-                            if (LoadingScreenImageNode.aBoolean9498 && !this.aBoolean3109 && i_4_ >= 12 && i_4_ <= 17 && i_4_ != 13 && i_0_ > 0 && (class51.anInt955 != 0)) this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_] = (BoundsConstraintEntry.method2057((this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_]).toInt(), 4)).toByte()
+                            if (LoadingScreenImageNode.aBoolean9498 && !this.aBoolean3109 && i_4_ >= 12 && i_4_ <= 17 && i_4_ != 13 && i_0_ > 0 && (class51.anInt955 != 0)) this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_] = (WhirlpoolHash.method2057((this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_]).toInt(), 4)).toByte()
                             if ((class51.anInt920 != 0) && collisionMap != null) collisionMap.method3505(!(class51.aBoolean876), i_9_, i_5_, true, i, (class51.aBoolean896), i_8_)
                         } else if (i_4_ == 0) {
                             var i_22_ = class51.anInt955

@@ -37,9 +37,9 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
                 if (i_9_ < 0) i_9_ = 0
                 if (i_9_ > 256) i_9_ = 256
                 i_9_ = anIntArray9199[i_9_]
-                is_5_[i_8_] = NpcSummaryDefinition.method1166(i_9_, 16711680) shr 12
-                is_6_[i_8_] = NpcSummaryDefinition.method1166(65280, i_9_) shr 4
-                is_7_[i_8_] = NpcSummaryDefinition.method1166(4080, i_9_ shl 4)
+                is_5_[i_8_] = WhirlpoolHash.method1166(i_9_, 16711680) shr 12
+                is_6_[i_8_] = WhirlpoolHash.method1166(65280, i_9_) shr 4
+                is_7_[i_8_] = WhirlpoolHash.method1166(4080, i_9_ shl 4)
                 i_8_++
             }
         }
@@ -318,7 +318,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
                 if (i_19_ >= 0) {
                     if (i_19_ > 255) i_19_ = 255
                 } else i_19_ = 0
-                anIntArray9199[i_13_] = (BoundsConstraintEntry.method2057(i_18_, BoundsConstraintEntry.method2057(i_17_ shl 16, i_19_ shl 8)))
+                anIntArray9199[i_13_] = (WhirlpoolHash.method2057(i_18_, WhirlpoolHash.method2057(i_17_ shl 16, i_19_ shl 8)))
             }
         }
     }

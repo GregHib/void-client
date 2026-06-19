@@ -411,7 +411,7 @@ class ItemDefinition {
             if (i_39_ == 1 || (i_39_ == 2 && (this.anInt2820 == 1 || i != 1) && i != -1)) font!!.method2576(method1557(i, i_40_ + -11517), -256, 9, 0, -16777215, i_40_ + -15)
             `is` = var_renderer_38_.na(0, 0, 36, 32)
             for (i_52_ in `is`!!.indices) {
-                if ((0xffffff and `is`[i_52_]) != 0) `is`[i_52_] = BoundsConstraintEntry.method2057(`is`[i_52_], -16777216)
+                if ((0xffffff and `is`[i_52_]) != 0) `is`[i_52_] = WhirlpoolHash.method2057(`is`[i_52_], -16777216)
                 else `is`[i_52_] = 0
             }
             return `is`

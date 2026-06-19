@@ -2124,9 +2124,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             glLightfv(i_251_, 4611, ShaderState.aFloatArray6514, 0)
             val i_252_ = class348_sub1.method2720(-1)
             val f = class348_sub1.method2721(-76) / 255.0f
-            ShaderState.aFloatArray6514!![2] = NpcSummaryDefinition.method1166(i_252_, 255).toFloat() * f
-            ShaderState.aFloatArray6514!![0] = ((NpcSummaryDefinition.method1166(16762087, i_252_) shr 16).toFloat() * f)
-            ShaderState.aFloatArray6514!![1] = ((NpcSummaryDefinition.method1166(i_252_, 65533) shr 8).toFloat() * f)
+            ShaderState.aFloatArray6514!![2] = WhirlpoolHash.method1166(i_252_, 255).toFloat() * f
+            ShaderState.aFloatArray6514!![0] = ((WhirlpoolHash.method1166(16762087, i_252_) shr 16).toFloat() * f)
+            ShaderState.aFloatArray6514!![1] = ((WhirlpoolHash.method1166(i_252_, 65533) shr 8).toFloat() * f)
             glLightfv(i_251_, 4609, ShaderState.aFloatArray6514, 0)
             glLightf(i_251_, 4617, 1.0f / (class348_sub1.method2723(-1) * class348_sub1.method2723(-1)).toFloat())
             glEnable(i_251_)
@@ -2714,9 +2714,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         if (this.anInt7826.toFloat() > this.aFloat7792) this.aFloat7792 = this.anInt7826.toFloat()
         glFogf(2915, this.aFloat7792)
         glFogf(2916, aFloat7824)
-        InputStream_Sub2.aFloatArray84!![0] = (NpcSummaryDefinition.method1166(i, this.anInt7856).toFloat() / 1.671168E7f)
-        InputStream_Sub2.aFloatArray84!![1] = (NpcSummaryDefinition.method1166(this.anInt7856, 65280).toFloat() / 65280.0f)
-        InputStream_Sub2.aFloatArray84!![2] = (NpcSummaryDefinition.method1166(this.anInt7856, 255).toFloat() / 255.0f)
+        InputStream_Sub2.aFloatArray84!![0] = (WhirlpoolHash.method1166(i, this.anInt7856).toFloat() / 1.671168E7f)
+        InputStream_Sub2.aFloatArray84!![1] = (WhirlpoolHash.method1166(this.anInt7856, 65280).toFloat() / 65280.0f)
+        InputStream_Sub2.aFloatArray84!![2] = (WhirlpoolHash.method1166(this.anInt7856, 255).toFloat() / 255.0f)
         glFogfv(2918, InputStream_Sub2.aFloatArray84, 0)
     }
 
@@ -2849,7 +2849,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     var i_471_ = 0
                     while ((spriteImage.anInt2702 > i_471_)) {
                         val i_472_ = (spriteImage.anIntArray2697[0xff and (spriteImage.aByteArray2699[i++]).toInt()])
-                        `is`[i_467_++] = if (i_472_ == 0) 0 else BoundsConstraintEntry.method2057(-16777216, i_472_)
+                        `is`[i_467_++] = if (i_472_ == 0) 0 else WhirlpoolHash.method2057(-16777216, i_472_)
                         i_471_++
                     }
                     i_470_++
@@ -2859,7 +2859,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 while (spriteImage.anInt2696 > i_468_) {
                     var i_469_ = 0
                     while ((i_469_ < spriteImage.anInt2702)) {
-                        `is`[i_467_++] = (BoundsConstraintEntry.method2057((spriteImage.aByteArray2695!![i].toInt() shl 24), (spriteImage.anIntArray2697[NpcSummaryDefinition.method1166((spriteImage.aByteArray2699[i]).toInt(), 255)])))
+                        `is`[i_467_++] = (WhirlpoolHash.method2057((spriteImage.aByteArray2695!![i].toInt() shl 24), (spriteImage.anIntArray2697[WhirlpoolHash.method1166((spriteImage.aByteArray2699[i]).toInt(), 255)])))
                         i++
                         i_469_++
                     }
@@ -2885,12 +2885,12 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     }
 
     fun method3808(i: Int, i_473_: Int) {
-        InputStream_Sub2.aFloatArray84!![2] = NpcSummaryDefinition.method1166(i, 255).toFloat() / 255.0f
+        InputStream_Sub2.aFloatArray84!![2] = WhirlpoolHash.method1166(i, 255).toFloat() / 255.0f
         if (i_473_ <= 116) this.anInt7771 = 76
         InputStream_Sub2.aFloatArray84!![3] = (i ushr 24).toFloat() / 255.0f
-        InputStream_Sub2.aFloatArray84!![1] = NpcSummaryDefinition.method1166(i, 65280).toFloat() / 65280.0f
+        InputStream_Sub2.aFloatArray84!![1] = WhirlpoolHash.method1166(i, 65280).toFloat() / 65280.0f
         anInt7659++
-        InputStream_Sub2.aFloatArray84!![0] = NpcSummaryDefinition.method1166(16711680, i).toFloat() / 1.671168E7f
+        InputStream_Sub2.aFloatArray84!![0] = WhirlpoolHash.method1166(16711680, i).toFloat() / 1.671168E7f
         glTexEnvfv(8960, 8705, InputStream_Sub2.aFloatArray84, 0)
     }
 

@@ -44,8 +44,6 @@ class BackgroundWorkerThread : Runnable {
         var anInt3222: Int = 0
         var anInt3224: Int = 0
         @JvmField
-        var anInt3225: Int = 0
-        @JvmField
         var aClass318_Sub1Array3226: Array<SceneEntity?>? = null
         @JvmField
         var anInt3227: Int = 0

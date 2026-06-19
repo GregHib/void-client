@@ -1,4 +1,3 @@
-import WhirlpoolHash.Companion.method828
 import java.awt.Canvas
 import java.util.*
 
@@ -407,7 +406,7 @@ class ModelDefinition {
         val i_106_ = modelDefinition_101_.anIntArray1852[i_102_]
         for (i_107_ in i..<this.anInt1836) {
             if (this.anIntArray1841[i_107_] == i_104_ && i_105_ == this.anIntArray1847[i_107_] && (i_106_ == this.anIntArray1852[i_107_])) {
-                this.aShortArray1842[i_107_] = BoundsConstraintEntry.method2057((this.aShortArray1842[i_107_]).toInt(), i_103_.toInt()).toShort()
+                this.aShortArray1842[i_107_] = WhirlpoolHash.method2057((this.aShortArray1842[i_107_]).toInt(), i_103_.toInt()).toShort()
                 return i_107_
             }
         }
@@ -1106,9 +1105,9 @@ class ModelDefinition {
             anInt1850++
             val dimension = canvas.getSize()
             if (i.toInt() != -99) method1096(57)
-            method828(38.toByte(), dimension.height, dimension.width)
-            if (ByteBufferStatics.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3643(canvas, GrayscaleNoiseTexture.anInt5283, LinkedNodeListIterator.anInt1651)
-            else CameraRotationStub.aRenderer326!!.method3643(canvas, SynthVoiceGroup.anInt8854, ShadowQualityOptionState.anInt6008)
+            MinimapFlagRenderer.method828(38.toByte(), dimension.height, dimension.width)
+            if (WhirlpoolHash.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3643(canvas, WhirlpoolHash.anInt5283, WhirlpoolHash.anInt1651)
+            else CameraRotationStub.aRenderer326!!.method3643(canvas, WhirlpoolHash.anInt8854, WhirlpoolHash.anInt6008)
         }
     }
 }

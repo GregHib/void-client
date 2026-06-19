@@ -1,4 +1,4 @@
-import BoundsConstraintEntry.Companion.method2057
+import WhirlpoolHash.Companion.method2057
 import jaclib.memory.Stream
 import jaclib.memory.heap.NativeHeapBuffer
 import jaggl.OpenGL.Companion.glMatrixMode

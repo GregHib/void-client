@@ -32,8 +32,8 @@ class NativeShaderProgram(i: Int) : ShaderProgram() {
         fun method3439(i: Int): Int {
             anInt9771++
             if (i <= 92) return 99
-            if (ByteBufferStatics.anInt7207 == 1) return SynthVoiceGroup.anInt8854
-            return GrayscaleNoiseTexture.anInt5283
+            if (WhirlpoolHash.anInt7207 == 1) return WhirlpoolHash.anInt8854
+            return WhirlpoolHash.anInt5283
         }
 
         @JvmStatic

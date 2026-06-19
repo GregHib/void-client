@@ -34,7 +34,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
         fun method2960(bool: Boolean, i: Int): Int {
             if (i >= -16) aFloatArray6865 = null
             anInt6870++
-            val i_0_ = ByteBufferStatics.anInt7207
+            val i_0_ = WhirlpoolHash.anInt7207
             while_128_@ do {
                 do {
                     if (i_0_ == 0) {

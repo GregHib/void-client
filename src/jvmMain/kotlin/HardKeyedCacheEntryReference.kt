@@ -33,8 +33,6 @@ class HardKeyedCacheEntryReference internal constructor(keyedComparable: KeyedCo
         @JvmField
         var anInt10443: Int = 2
         @JvmField
-        var anInt10444: Int = 0
-        @JvmField
         var anInt10445: Int = 0
 
         @JvmStatic

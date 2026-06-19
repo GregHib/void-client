@@ -1,5 +1,4 @@
 import LinkedListIterator.Companion.method1242
-import BoundsConstraintEntry.Companion.method2057
 import CollisionMapAccessor.method2064
 import GlCubemapLightPass.Companion.method3542
 import MinimapSquareDrawer.Companion.method462
@@ -39,7 +38,7 @@ class CharCodeMap : HashLinkedListNode() {
         if (this.anIntArray9580 != null) {
             var i_3_ = 0
             while ((this.anIntArray9580!!.size > i_3_)) {
-                this.anIntArray9580!![i_3_] = method2057((this.anIntArray9580!![i_3_]), 32768)
+                this.anIntArray9580!![i_3_] = WhirlpoolHash.method2057((this.anIntArray9580!![i_3_]), 32768)
                 i_3_++
             }
         }
@@ -47,7 +46,7 @@ class CharCodeMap : HashLinkedListNode() {
         if (this.anIntArray9592 != null) {
             var i_4_ = 0
             while ((this.anIntArray9592!!.size > i_4_)) {
-                this.anIntArray9592!![i_4_] = method2057((this.anIntArray9592!![i_4_]), 32768)
+                this.anIntArray9592!![i_4_] = WhirlpoolHash.method2057((this.anIntArray9592!![i_4_]), 32768)
                 i_4_++
             }
         }

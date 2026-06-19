@@ -142,7 +142,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     ObjectSpawnDecoder.aStringArray1808!![ContactEntry.anInt9604] = string_4_
                     WeaveTextureNode.aStringArray9275!![(ContactEntry.anInt9604)] = string_5_
                     IndexedSprite.aStringArray5197!![ContactEntry.anInt9604] = string_6_
-                    BasicGlRenderPass.aBooleanArray7304!![ContactEntry.anInt9604] = NpcSummaryDefinition.method1166(i, 2) == 2
+                    BasicGlRenderPass.aBooleanArray7304!![ContactEntry.anInt9604] = WhirlpoolHash.method1166(i, 2) == 2
                     ContactEntry.anInt9604++
                 }
                 Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
@@ -350,7 +350,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     val i_35_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-78)
                     DelegatingRenderCanvas.method121(i, -364570972, bool_31_, i_33_, i_34_, i_35_ - 1)
                 }
-                LoadingScreenState.anIntArray2633!![NpcSummaryDefinition.method1166(31, DualMaterialContainer.anInt1631++)] = i
+                LoadingScreenState.anIntArray2633!![WhirlpoolHash.method1166(31, DualMaterialContainer.anInt1631++)] = i
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1301,7 +1301,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 return true
             }
             if (CompositeRgbNoiseTexture.aIntRange_8683 == ModelVertexColorBuffer.aIntRange_6584) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) WhirlpoolHash.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val `is` = ByteArray(RadialTextureNode.anInt9341)
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3409(RadialTextureNode.anInt9341, `is`, 0, -32769)
                 val string = ByteBuffer.method3546(`is`, 0, RadialTextureNode.anInt9341, 0)
@@ -1639,7 +1639,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     if (StaticNoiseTexture.anIntArray8663!![i_217_] <= i_215_) SpotAnimDefCache.anIntArray3295!![i_214_] = i_217_ - -2
                     i_217_++
                 }
-                LoadingScreenState.anIntArray2632!![NpcSummaryDefinition.method1166(31, EmoteDefCache.anInt4086++)] = i_214_
+                LoadingScreenState.anIntArray2632!![WhirlpoolHash.method1166(31, EmoteDefCache.anInt4086++)] = i_214_
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1653,7 +1653,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val i_218_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(70.toByte())
                 val bool_219_ = (0x1 and i_218_) == 1
                 RangeThresholdTextureNode.method3054(bool_219_, i, -128)
-                LoadingScreenState.anIntArray2633!![NpcSummaryDefinition.method1166(31, DualMaterialContainer.anInt1631++)] = i
+                LoadingScreenState.anIntArray2633!![WhirlpoolHash.method1166(31, DualMaterialContainer.anInt1631++)] = i
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1671,7 +1671,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                     }
                     DelegatingRenderCanvas.method121(i, -364570972, bool_221_, i_222_, i_224_, -1 + i_223_)
                 }
-                LoadingScreenState.anIntArray2633!![NpcSummaryDefinition.method1166(31, DualMaterialContainer.anInt1631++)] = i
+                LoadingScreenState.anIntArray2633!![WhirlpoolHash.method1166(31, DualMaterialContainer.anInt1631++)] = i
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }

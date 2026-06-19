@@ -1,10 +1,10 @@
 import MinimapFlagRenderer.method1084
-import NpcSummaryDefinition.Companion.method1166
+import WhirlpoolHash.Companion.method1166
 import WidgetNodeLink.Companion.method1197
 import AudioResampler.Companion.method1273
 import PerlinTextureProvider.Companion.method1399
 import RemoveRoofsOptionState.Companion.method1813
-import BoundsConstraintEntry.Companion.method2057
+import WhirlpoolHash.Companion.method2057
 import ConfigVarProgress.Companion.method2308
 
 /* Class318_Sub2 - Decompiled by JODE

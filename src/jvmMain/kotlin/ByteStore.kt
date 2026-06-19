@@ -19,9 +19,6 @@ abstract class ByteStore {
         var anInt4265: Int = 0
         @JvmField
         var aFontMetaRef_4266: FontMetaRef? = FontMetaRef(72, 16)
-        @JvmField
-        var anInt4267: Int = 0
-
         @JvmStatic
         fun method2690(i: Int) {
             aFontMetaRef_4266 = null

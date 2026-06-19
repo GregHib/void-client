@@ -115,21 +115,21 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                         if (anInt9312 == 0) {
                             for (i_23_ in 0..<i_16_) {
                                 val i_24_ = i_6_ * i_23_ / i_16_
-                                is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))] = i_22_ * i_24_ shr 12
-                                is_21_[NpcSummaryDefinition.method1166(i_23_ + i_3_, (SimpleBinaryOptionState.anInt6076))] = is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))]
+                                is_21_[(WhirlpoolHash.method1166(SimpleBinaryOptionState.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))] = i_22_ * i_24_ shr 12
+                                is_21_[WhirlpoolHash.method1166(i_23_ + i_3_, (SimpleBinaryOptionState.anInt6076))] = is_21_[(WhirlpoolHash.method1166(SimpleBinaryOptionState.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))]
                             }
                         } else {
                             var i_25_ = 0
                             while (i_16_ > i_25_) {
                                 val i_26_ = i_6_ * i_25_ / i_16_
-                                is_21_[(NpcSummaryDefinition.method1166(i_3_ - -i_5_ + (-i_25_ - 1), SimpleBinaryOptionState.anInt6076))] = min(i_26_, i_22_)
-                                is_21_[NpcSummaryDefinition.method1166((SimpleBinaryOptionState.anInt6076), i_25_ + i_3_)] = is_21_[(NpcSummaryDefinition.method1166(i_3_ - -i_5_ + (-i_25_ - 1), SimpleBinaryOptionState.anInt6076))]
+                                is_21_[(WhirlpoolHash.method1166(i_3_ - -i_5_ + (-i_25_ - 1), SimpleBinaryOptionState.anInt6076))] = min(i_26_, i_22_)
+                                is_21_[WhirlpoolHash.method1166((SimpleBinaryOptionState.anInt6076), i_25_ + i_3_)] = is_21_[(WhirlpoolHash.method1166(i_3_ - -i_5_ + (-i_25_ - 1), SimpleBinaryOptionState.anInt6076))]
                                 i_25_++
                             }
                         }
-                        if (DisplaceTextureNode.Companion.anInt9139 >= i_19_ + i_18_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_22_)
+                        if (DisplaceTextureNode.anInt9139 >= i_19_ + i_18_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_22_)
                         else {
-                            val i_27_: Int = -i_18_ + DisplaceTextureNode.Companion.anInt9139
+                            val i_27_: Int = -i_18_ + DisplaceTextureNode.anInt9139
                             ArrayCopyUtil.method1579(is_21_, i_18_, i_27_, i_22_)
                             ArrayCopyUtil.method1579(is_21_, 0, i_19_ - i_27_, i_22_)
                         }
@@ -141,16 +141,16 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                                 var i_30_ = 0
                                 while (i_16_ > i_30_) {
                                     val i_31_ = i_6_ * i_30_ / i_16_
-                                    is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, -1 + i_5_ + i_3_ - i_30_))] = i_31_ * i_29_ shr 12
-                                    is_21_[NpcSummaryDefinition.method1166((SimpleBinaryOptionState.anInt6076), i_30_ + i_3_)] = is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, -1 + i_5_ + i_3_ - i_30_))]
+                                    is_21_[(WhirlpoolHash.method1166(SimpleBinaryOptionState.anInt6076, -1 + i_5_ + i_3_ - i_30_))] = i_31_ * i_29_ shr 12
+                                    is_21_[WhirlpoolHash.method1166((SimpleBinaryOptionState.anInt6076), i_30_ + i_3_)] = is_21_[(WhirlpoolHash.method1166(SimpleBinaryOptionState.anInt6076, -1 + i_5_ + i_3_ - i_30_))]
                                     i_30_++
                                 }
                             } else {
                                 var i_32_ = 0
                                 while ((i_16_ > i_32_)) {
                                     val i_33_ = i_32_ * i_6_ / i_16_
-                                    is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, -i_32_ + i_5_ + (i_3_ + -1)))] = min(i_29_, i_33_)
-                                    is_21_[NpcSummaryDefinition.method1166((SimpleBinaryOptionState.anInt6076), i_3_ + i_32_)] = is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, -i_32_ + i_5_ + (i_3_ + -1)))]
+                                    is_21_[(WhirlpoolHash.method1166(SimpleBinaryOptionState.anInt6076, -i_32_ + i_5_ + (i_3_ + -1)))] = min(i_29_, i_33_)
+                                    is_21_[WhirlpoolHash.method1166((SimpleBinaryOptionState.anInt6076), i_3_ + i_32_)] = is_21_[(WhirlpoolHash.method1166(SimpleBinaryOptionState.anInt6076, -i_32_ + i_5_ + (i_3_ + -1)))]
                                     i_32_++
                                 }
                             }
@@ -162,8 +162,8 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                             }
                         } else {
                             for (i_35_ in 0..<i_16_) {
-                                is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))] = i_6_ * i_35_ / i_16_
-                                is_21_[NpcSummaryDefinition.method1166(i_35_ + i_3_, (SimpleBinaryOptionState.anInt6076))] = is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))]
+                                is_21_[(WhirlpoolHash.method1166(SimpleBinaryOptionState.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))] = i_6_ * i_35_ / i_16_
+                                is_21_[WhirlpoolHash.method1166(i_35_ + i_3_, (SimpleBinaryOptionState.anInt6076))] = is_21_[(WhirlpoolHash.method1166(SimpleBinaryOptionState.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))]
                             }
                             if (DisplaceTextureNode.Companion.anInt9139 >= i_18_ - -i_19_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_6_)
                             else {

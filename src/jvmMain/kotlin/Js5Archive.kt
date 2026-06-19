@@ -589,7 +589,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         @JvmStatic
         @Throws(ClientException::class)
         fun method395(i: Int) {
-            if (ByteBufferStatics.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
+            if (WhirlpoolHash.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
             else CameraRotationStub.aRenderer326!!.method3626(0, 0)
             if (i >= 73) anInt642++
         }

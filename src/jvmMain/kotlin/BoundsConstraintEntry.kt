@@ -34,9 +34,5 @@ class BoundsConstraintEntry internal constructor(string: String?, var anInt5167:
             return ((method1241(i_1_, i, -128) or method1722(i, i_1_, 92.toByte())) and ((0x37 and i_1_) == 0))
         }
 
-        @JvmStatic
-        fun method2057(i: Int, i_2_: Int): Int {
-            return i or i_2_
-        }
     }
 }

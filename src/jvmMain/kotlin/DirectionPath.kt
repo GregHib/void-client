@@ -58,8 +58,6 @@ class DirectionPath {
         var anInt1065: Int = 0
         @JvmField
         var anInt1066: Int = 0
-        @JvmField
-        var anInt1067: Int = 0
 
         @JvmStatic
         fun method532(i: Int, i_0_: Int, bool: Boolean, i_1_: Int): Int {

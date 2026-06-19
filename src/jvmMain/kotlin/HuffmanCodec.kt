@@ -1,5 +1,5 @@
 import GameDisplayManager.method1582
-import BoundsConstraintEntry.Companion.method2057
+import WhirlpoolHash.Companion.method2057
 import WorldMapAreaLabel.Companion.method3570
 
 /* Class296 - Decompiled by JODE

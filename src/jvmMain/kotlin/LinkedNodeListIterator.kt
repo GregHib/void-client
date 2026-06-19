@@ -99,8 +99,6 @@ class LinkedNodeListIterator {
         var anInt1649: Int = 0
         var anIntArray1650: IntArray? = IntArray(1000)
         @JvmField
-        var anInt1651: Int = 0
-        @JvmField
         var anInt1653: Int = 0
         @JvmField
         var anInt1654: Int = 0
@@ -136,7 +134,7 @@ class LinkedNodeListIterator {
                 method703(RenderNodeStatics.anInt9721)
             }
             ProjectileFactory.aBoolean2895 = true
-            if (i < 49) anInt1651 = 10
+            if (i < 49) WhirlpoolHash.anInt1651 = 10
         }
 
         fun method1007(widgetComponent: WidgetComponent?, var_renderer: Renderer?, i: Int, i_1_: Int, i_2_: Int) {

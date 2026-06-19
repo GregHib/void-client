@@ -484,7 +484,6 @@ import FogState.method810
 import WaterTextureSet.Companion.method815
 import MapSceneCache.Companion.method817
 import MapSceneCache.Companion.method825
-import WhirlpoolHash.Companion.method830
 import SceneNodeDeque.Companion.method843
 import NativeLibraryState.method216
 import RegionMapDecoder.method852
@@ -1642,7 +1641,7 @@ class Client : GameAppletFrame() {
             val bool_118_ = method2163(!bool)
             if (bool_118_ && RgbColorPalette.aBoolean1236 && AbstractProceduralTextureNode.aSoundChannelMixer_7042 != null) AbstractProceduralTextureNode.aSoundChannelMixer_7042!!.method2087(-115)
             if (WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) {
-                if ((PcmStreamBuffer.aLong8866 != 0L) && method599(-98) > PcmStreamBuffer.aLong8866) method830(method3229(-128), LocTypeDefinition.anInt4005, 102.toByte(), false, RadialTextureNode.anInt9335)
+                if ((PcmStreamBuffer.aLong8866 != 0L) && method599(-98) > PcmStreamBuffer.aLong8866) ChatCommandProcessor.method830(method3229(-128), LocTypeDefinition.anInt4005, 102.toByte(), false, RadialTextureNode.anInt9335)
                 else if (!FacingDirectionNode.aRenderer6654!!.method3655() && ProjectileSpawner.aBoolean2674) method3327(1406)
             }
             if (SkeletalAnimFrameLoader.aFrame476 == null) {
@@ -1668,7 +1667,7 @@ class Client : GameAppletFrame() {
                     TextureLoadExceptionStatics.aBoolean4604 = false
                 }
             }
-            if (SkeletalAnimFrameLoader.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+            if (SkeletalAnimFrameLoader.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             var bool_120_ = false
             if (SpriteRenderable.aBoolean4726) {
                 bool_120_ = true

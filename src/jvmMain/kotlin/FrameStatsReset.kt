@@ -519,7 +519,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9873 = 0
             OggMediaStream.anInt989 = 0
             OpenGlRenderer.anInt7727 = 0
-            WhirlpoolHash.anInt1461 = 0
+            ChatCommandProcessor.anInt1461 = 0
             GroundDecorSceneEntity.anInt9970 = 0
             NativeRenderer.anInt7946 = 0
             NpcConfig.anInt958 = 0
@@ -1488,7 +1488,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DisplayModeOptionState.anInt6107 = 0
             AnimatedModelRenderer.anInt8402 = 0
             CubemapTextureImplSource.anInt8720 = 0
-            WhirlpoolHash.anInt1467 = 0
+            MinimapFlagRenderer.anInt1467 = 0
             CameraOrModelTransform.anInt4153 = 0
             TerrainShadowBuilderGl3.anInt7012 = 0
             DelegatingRenderCanvas.anInt63 = 0
@@ -3496,7 +3496,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OggMediaStream.anInt997 = 0
             AnimatedModelRenderer.anInt8395 = 0
             WorldMapAreaLabel.anInt8579 = 0
-            FlickeringEffectsOptionState.anInt5922 = 0
+            WhirlpoolHash.anInt5922 = 0
             ChatMessageStream.anInt102 = 0
             AnimatedModelRenderer.anInt8399 = 0
             Direct3dModel.anInt5504 = 0

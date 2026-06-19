@@ -62,12 +62,12 @@ class MinimapTileEntry {
         @JvmStatic
         fun method383(i: Int) {
             var i_3_ = i
-            while (BackgroundWorkerThread.anInt3225 > i_3_) {
-                val i_4_ = (ModelTransformParams.method3452(MaterialPass.anInt3682 + i_3_, (-15).toByte(), BackgroundWorkerThread.anInt3225) * ItemModelDefinition.anInt425)
+            while (WhirlpoolHash.anInt3225 > i_3_) {
+                val i_4_ = (ModelTransformParams.method3452(MaterialPass.anInt3682 + i_3_, (-15).toByte(), WhirlpoolHash.anInt3225) * WhirlpoolHash.anInt425)
                 var i_5_ = 0
-                while (ItemModelDefinition.anInt425 > i_5_) {
-                    val i_6_ = (ModelTransformParams.method3452(i_5_ - -SceneryDetailOptionState.anInt6095, (-15).toByte(), ItemModelDefinition.anInt425) + i_4_)
-                    if (LocalPlayerState.anIntArray1909!![i_6_] == GroundDecorSceneEntity.anInt9997) NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_6_]!!.method14(0, 0, DirectionPath.anInt1067, ByteStore.anInt4267, i_5_ * DirectionPath.anInt1067, ByteStore.anInt4267 * i_3_, true, true)
+                while (WhirlpoolHash.anInt425 > i_5_) {
+                    val i_6_ = (ModelTransformParams.method3452(i_5_ - -SceneryDetailOptionState.anInt6095, (-15).toByte(), WhirlpoolHash.anInt425) + i_4_)
+                    if (LocalPlayerState.anIntArray1909!![i_6_] == GroundDecorSceneEntity.anInt9997) NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_6_]!!.method14(0, 0, WhirlpoolHash.anInt1067, WhirlpoolHash.anInt4267, i_5_ * WhirlpoolHash.anInt1067, WhirlpoolHash.anInt4267 * i_3_, true, true)
                     i_5_++
                 }
                 i_3_++

@@ -36,7 +36,7 @@ open class RgbNoiseTexture(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, f
     }
 
     open fun method563(i: Byte, i_7_: Int, i_8_: Byte) {
-        aByteArray5309[anInt5308++] = (NpcSummaryDefinition.method1166(127, i_8_.toInt() shr 1) + 127).toByte()
+        aByteArray5309[anInt5308++] = (WhirlpoolHash.method1166(127, i_8_.toInt() shr 1) + 127).toByte()
         if (i < 79) method543(true)
         anInt5310++
     }

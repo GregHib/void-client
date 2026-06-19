@@ -263,7 +263,7 @@ class VarpStore : VarResolver {
                         val i_56_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                         if ((0xc000 and i_56_) == 49152) {
                             val i_57_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842463480)
-                            `is`[i_55_] = BoundsConstraintEntry.method2057(i_57_, i_56_ shl 16)
+                            `is`[i_55_] = WhirlpoolHash.method2057(i_57_, i_56_ shl 16)
                         } else `is`[i_55_] = i_56_
                         is_54_[i_55_] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         i_55_++

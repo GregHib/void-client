@@ -254,7 +254,7 @@ class SoundEnvelope {
                 if (i_47_ <= i_50_) i_50_ = i_47_ - 1
                 var i_51_ = 0xff and i_49_
                 if (-i_50_ + i_47_ < i_51_) i_51_ = i_47_ - i_50_
-                this.aShortArray2742!![i_48_] = BoundsConstraintEntry.method2057(i_51_, i_50_ shl 8).toShort()
+                this.aShortArray2742!![i_48_] = WhirlpoolHash.method2057(i_51_, i_50_ shl 8).toShort()
                 i_48_++
             }
             i_46_ = ((i_46_ shl Tooltip.anInt4459) + TheoraVideoStream.anInt9037)
@@ -276,8 +276,6 @@ class SoundEnvelope {
         var anInt2741: Int = 0
         var anIntArray2744: IntArray? = IntArray(2)
         var anInt2746: Int = 0
-        @JvmField
-        var anInt2747: Int = 0
         var anInt2748: Int = 0
         fun method1538(i: Int, i_0_: Byte, class348_sub49_sub2: CipheredPacketBuffer): Boolean {
             anInt2732++
@@ -372,7 +370,7 @@ class SoundEnvelope {
         @JvmStatic
         fun method1543(i: Int) {
             anIntArray2744 = null
-            if (i != -4524) anInt2747 = 24
+            if (i != -4524) WhirlpoolHash.anInt2747 = 24
         }
     }
 }

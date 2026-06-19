@@ -1,4 +1,3 @@
-import NpcSummaryDefinition.Companion.method1166
 import RefCountedHandle.Companion.method1320
 import MapSceneDefLoader.Companion.method1394
 import LoadingScreenState.Companion.method1457
@@ -137,14 +136,14 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         ProjectileFactory.anIntArray2899!![i_33_] = (class277_30_.anInt3575)
                                         HslColorTableNode.anIntArray6631!![i_33_] = (class277_30_.anInt3570)
                                         if (WorldMapToggle.anIntArray3873!![i_33_] != (class277_30_.anInt3564)) HintIconState.anIntArray2370!![i_33_] = 32
-                                        else HintIconState.anIntArray2370!![i_33_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_33_]), 32))
+                                        else HintIconState.anIntArray2370!![i_33_] = (WhirlpoolHash.method2057((HintIconState.anIntArray2370!![i_33_]), 32))
                                         WorldMapToggle.anIntArray3873!![i_33_] = (class277_30_.anInt3564)
                                     }
                                     i_34_++
                                     i_33_--
                                 }
-                                if (!bools_8_[0x3 and i_4_]) bools!![0] = (MinimapSquareDrawer.aBooleanArrayArray5225!![i_31_.toInt()]!![method1166(i_32_ + 2, 3)])
-                            } else if (!bools_8_[0x3 and i_4_]) bools!![0] = (SplashImageLoadable.aBooleanArrayArray4693!![i_31_.toInt()]!![method1166(3, i_32_ + 2)])
+                                if (!bools_8_[0x3 and i_4_]) bools!![0] = (MinimapSquareDrawer.aBooleanArrayArray5225!![i_31_.toInt()]!![WhirlpoolHash.method1166(i_32_ + 2, 3)])
+                            } else if (!bools_8_[0x3 and i_4_]) bools!![0] = (SplashImageLoadable.aBooleanArrayArray4693!![i_31_.toInt()]!![WhirlpoolHash.method1166(3, i_32_ + 2)])
                         }
                     }
                 }
@@ -168,14 +167,14 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         ProjectileFactory.anIntArray2899!![i_41_] = (class277_38_.anInt3575)
                                         HslColorTableNode.anIntArray6631!![i_41_] = (class277_38_.anInt3570)
                                         if (WorldMapToggle.anIntArray3873!![i_41_] != (class277_38_.anInt3564)) HintIconState.anIntArray2370!![i_41_] = 16
-                                        else HintIconState.anIntArray2370!![i_41_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_41_]), 16))
+                                        else HintIconState.anIntArray2370!![i_41_] = (WhirlpoolHash.method2057((HintIconState.anIntArray2370!![i_41_]), 16))
                                         WorldMapToggle.anIntArray3873!![i_41_] = (class277_38_.anInt3564)
                                     }
                                     i_42_--
                                     i_41_++
                                 }
-                                if (!bools_8_[0x3 and i_4_ + 2]) bools!![2] = (MinimapSquareDrawer.aBooleanArrayArray5225!![i_39_.toInt()]!![method1166(3, --i_40_)])
-                            } else if (!bools_8_[0x3 and 2 + i_4_]) bools!![2] = (SplashImageLoadable.aBooleanArrayArray4693!![i_39_.toInt()]!![method1166(3, i_40_)])
+                                if (!bools_8_[0x3 and i_4_ + 2]) bools!![2] = (MinimapSquareDrawer.aBooleanArrayArray5225!![i_39_.toInt()]!![WhirlpoolHash.method1166(3, --i_40_)])
+                            } else if (!bools_8_[0x3 and 2 + i_4_]) bools!![2] = (SplashImageLoadable.aBooleanArrayArray4693!![i_39_.toInt()]!![WhirlpoolHash.method1166(3, i_40_)])
                         }
                     }
                 }
@@ -199,14 +198,14 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         ProjectileFactory.anIntArray2899!![i_49_] = (class277_46_.anInt3575)
                                         HslColorTableNode.anIntArray6631!![i_49_] = (class277_46_.anInt3570)
                                         if (WorldMapToggle.anIntArray3873!![i_49_] != (class277_46_.anInt3564)) HintIconState.anIntArray2370!![i_49_] = 8
-                                        else HintIconState.anIntArray2370!![i_49_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_49_]), 8))
+                                        else HintIconState.anIntArray2370!![i_49_] = (WhirlpoolHash.method2057((HintIconState.anIntArray2370!![i_49_]), 8))
                                         WorldMapToggle.anIntArray3873!![i_49_] = (class277_46_.anInt3564)
                                     }
                                     i_49_++
                                     i_50_--
                                 }
-                                if (!bools_8_[3 - -i_4_ and 0x3]) bools!![3] = (MinimapSquareDrawer.aBooleanArrayArray5225!![i_47_.toInt()]!![method1166(3, 1 + i_48_)])
-                            } else if (!bools_8_[0x3 and 3 - -i_4_]) bools!![3] = (SplashImageLoadable.aBooleanArrayArray4693!![i_47_.toInt()]!![method1166(3, 1 + i_48_)])
+                                if (!bools_8_[3 - -i_4_ and 0x3]) bools!![3] = (MinimapSquareDrawer.aBooleanArrayArray5225!![i_47_.toInt()]!![WhirlpoolHash.method1166(3, 1 + i_48_)])
+                            } else if (!bools_8_[0x3 and 3 - -i_4_]) bools!![3] = (SplashImageLoadable.aBooleanArrayArray4693!![i_47_.toInt()]!![WhirlpoolHash.method1166(3, 1 + i_48_)])
                         }
                     }
                 }
@@ -229,15 +228,15 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         ClampTextureNode.anIntArray9480!![i_57_] = i_59_
                                         ProjectileFactory.anIntArray2899!![i_57_] = (class277_54_.anInt3575)
                                         HslColorTableNode.anIntArray6631!![i_57_] = (class277_54_.anInt3570)
-                                        if (class277_54_.anInt3564 == WorldMapToggle.anIntArray3873!![i_57_]) HintIconState.anIntArray2370!![i_57_] = (BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_57_]), 4))
+                                        if (class277_54_.anInt3564 == WorldMapToggle.anIntArray3873!![i_57_]) HintIconState.anIntArray2370!![i_57_] = (WhirlpoolHash.method2057((HintIconState.anIntArray2370!![i_57_]), 4))
                                         else HintIconState.anIntArray2370!![i_57_] = 4
                                         WorldMapToggle.anIntArray3873!![i_57_] = (class277_54_.anInt3564)
                                     }
                                     i_58_++
                                     i_57_--
                                 }
-                                if (!bools_8_[1 + i_4_ and 0x3]) bools!![1] = (MinimapSquareDrawer.aBooleanArrayArray5225!![i_55_.toInt()]!![method1166(3, i_56_ + 3)])
-                            } else if (!bools_8_[1 - -i_4_ and 0x3]) bools!![1] = (SplashImageLoadable.aBooleanArrayArray4693!![i_55_.toInt()]!![method1166(3, 3 - -i_56_)])
+                                if (!bools_8_[1 + i_4_ and 0x3]) bools!![1] = (MinimapSquareDrawer.aBooleanArrayArray5225!![i_55_.toInt()]!![WhirlpoolHash.method1166(3, i_56_ + 3)])
+                            } else if (!bools_8_[1 - -i_4_ and 0x3]) bools!![1] = (SplashImageLoadable.aBooleanArrayArray4693!![i_55_.toInt()]!![WhirlpoolHash.method1166(3, 3 - -i_56_)])
                         }
                     }
                 }
@@ -252,7 +251,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                         ProjectileFactory.anIntArray2899!![i_63_] = locTypeConfig.anInt3575
                         HslColorTableNode.anIntArray6631!![i_63_] = locTypeConfig.anInt3570
                         if (WorldMapToggle.anIntArray3873!![i_63_] != locTypeConfig.anInt3564) HintIconState.anIntArray2370!![i_63_] = 2
-                        else HintIconState.anIntArray2370!![i_63_] = BoundsConstraintEntry.method2057((HintIconState.anIntArray2370!![i_63_]), 2)
+                        else HintIconState.anIntArray2370!![i_63_] = WhirlpoolHash.method2057((HintIconState.anIntArray2370!![i_63_]), 2)
                         WorldMapToggle.anIntArray3873!![i_63_] = locTypeConfig.anInt3564
                     }
                 }
@@ -367,10 +366,10 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     }
                                 }
                             }
-                            if (!bools_91_[i_77_ + 1 and 0x3]) bools[1] = (method3576(bools[1], method1166((HintIconState.anIntArray2370!![2]), (HintIconState.anIntArray2370!![4])) == 0))
-                            if (!bools_91_[0x3 and i_77_ + 3]) bools[3] = (method3576(bools[3], method1166((HintIconState.anIntArray2370!![0]), (HintIconState.anIntArray2370!![6])) == 0))
-                            if (!bools_91_[i_77_ and 0x3]) bools[0] = (method3576(bools[0], method1166((HintIconState.anIntArray2370!![0]), (HintIconState.anIntArray2370!![2])) == 0))
-                            if (!bools_91_[i_77_ + 2 and 0x3]) bools[2] = (method3576(bools[2], method1166((HintIconState.anIntArray2370!![4]), (HintIconState.anIntArray2370!![6])) == 0))
+                            if (!bools_91_[i_77_ + 1 and 0x3]) bools[1] = (method3576(bools[1], WhirlpoolHash.method1166((HintIconState.anIntArray2370!![2]), (HintIconState.anIntArray2370!![4])) == 0))
+                            if (!bools_91_[0x3 and i_77_ + 3]) bools[3] = (method3576(bools[3], WhirlpoolHash.method1166((HintIconState.anIntArray2370!![0]), (HintIconState.anIntArray2370!![6])) == 0))
+                            if (!bools_91_[i_77_ and 0x3]) bools[0] = (method3576(bools[0], WhirlpoolHash.method1166((HintIconState.anIntArray2370!![0]), (HintIconState.anIntArray2370!![2])) == 0))
+                            if (!bools_91_[i_77_ + 2 and 0x3]) bools[2] = (method3576(bools[2], WhirlpoolHash.method1166((HintIconState.anIntArray2370!![4]), (HintIconState.anIntArray2370!![6])) == 0))
                             if (!bool_75_ && (i_76_.toInt() == 0 || i_76_.toInt() == 12)) {
                                 if (!bools[0] || bools[1] || bools[2] || !bools[3]) {
                                     if (!bools[0] || !bools[1] || bools[2] || bools[3]) {
@@ -726,7 +725,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     if (class22 != null && !class22.aBoolean334) bool_160_ = false
                                     else if (i_79_ == 0 && i_76_.toInt() != 0) bool_160_ = false
                                     else if (i_78_ > 0 && class277_83_ != null && !(class277_83_.aBoolean3561)) bool_160_ = false
-                                    if (bool_160_ && (i_156_ == i_155_) && i_157_ == i_155_ && i_155_ == i_158_) this.aByteArrayArrayArray3108!![i_66_]!![i_71_]!![i_73_] = (BoundsConstraintEntry.method2057((this.aByteArrayArrayArray3108!![i_66_]!![i_71_]!![i_73_]).toInt(), 4)).toByte()
+                                    if (bool_160_ && (i_156_ == i_155_) && i_157_ == i_155_ && i_155_ == i_158_) this.aByteArrayArrayArray3108!![i_66_]!![i_71_]!![i_73_] = (WhirlpoolHash.method2057((this.aByteArrayArrayArray3108!![i_66_]!![i_71_]!![i_73_]).toInt(), 4)).toByte()
                                 }
                                 var i_161_ = 0
                                 var i_162_ = 0
@@ -978,7 +977,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                     else {
                         aByteArrayArrayArray3123[i_219_]!![i_216_]!![i_212_] = class348_sub49.readByte(i_215_ + -1115212859)
                         aByteArrayArrayArray3126[i_219_]!![i_216_]!![i_212_] = ((i_221_ + -2) / 4).toByte()
-                        aByteArrayArrayArray3129[i_219_]!![i_216_]!![i_212_] = method1166(3, -2 + i_221_ + i_213_).toByte()
+                        aByteArrayArrayArray3129[i_219_]!![i_216_]!![i_212_] = WhirlpoolHash.method1166(3, -2 + i_221_ + i_213_).toByte()
                     }
                 } else if (i_221_ <= 81) {
                     if (!this.aBoolean3109 && !bool) GraphicsOptionState.aByteArrayArrayArray6962!![i_219_]!![i_216_]!![i_212_] = (i_221_ - 49).toByte()
@@ -1117,7 +1116,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     if (class22 != null && !class22.aBoolean334) bool_268_ = false
                                     else if (i_231_ == 0 && i_228_.toInt() != 0) bool_268_ = false
                                     else if (i_230_ > 0 && class277 != null && !(class277.aBoolean3561)) bool_268_ = false
-                                    if (bool_268_ && (i_264_ == i_263_) && (i_263_ == i_265_) && (i_263_ == i_266_)) this.aByteArrayArrayArray3108!![i]!![i_226_]!![i_227_] = (BoundsConstraintEntry.method2057((this.aByteArrayArrayArray3108!![i]!![i_226_]!![i_227_]).toInt(), 4)).toByte()
+                                    if (bool_268_ && (i_264_ == i_263_) && (i_263_ == i_265_) && (i_263_ == i_266_)) this.aByteArrayArrayArray3108!![i]!![i_226_]!![i_227_] = (WhirlpoolHash.method2057((this.aByteArrayArrayArray3108!![i]!![i_226_]!![i_227_]).toInt(), 4)).toByte()
                                 }
                                 var i_269_ = 0
                                 var i_270_ = 0
