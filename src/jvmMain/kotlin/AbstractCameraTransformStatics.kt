@@ -49,7 +49,7 @@ object AbstractCameraTransformStatics {
                 GameAppletFrame.anIntArray38!![i_6_] = aJs5Archive_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
                 AbstractCameraTransformStatics.anIntArray4031!![i_6_] = aJs5Archive_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
                 LocalizedTextTriple.anIntArray3759!![i_6_] = aJs5Archive_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
-                RenderNodeStatics.anIntArray9724!![i_6_] = (aJs5Archive_7382!!.method417("ul" + i_7_ + "_" + i_8_, CameraSplineNode.method2955(i.toInt(), -49)))
+                RenderNodeStatics.anIntArray9724!![i_6_] = (aJs5Archive_7382!!.method417("ul" + i_7_ + "_" + i_8_, ModelDefinition.method2955(i.toInt(), -49)))
                 if (AbstractCameraTransformStatics.anIntArray4031!![i_6_] == -1) {
                     NativeSprite.anIntArray5192!![i_6_] = -1
                     GameAppletFrame.anIntArray38!![i_6_] = -1

@@ -1,4 +1,3 @@
-
 /* Class365 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -29,7 +28,6 @@ class RendererType internal constructor(i: Int, string: String?, i_0_: Int, stri
         @JvmStatic
         fun method3518(i: Int) {
             aNodeDeque_4473 = null
-            if (i != 88) method3518(-49)
             InboundPacketHeader.aInboundPacketHeader_4477 = null
         }
 

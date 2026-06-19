@@ -163,7 +163,7 @@ class WidgetDefinition {
                                                     i_24_++
                                                 }
                                             }
-                                            this.anIntArray253!![class348_sub49.readUnsignedByte(255)] = (class348_sub49.readUnsignedByte(CameraSplineNode.method2955(i_10_, -15092)))
+                                            this.anIntArray253!![class348_sub49.readUnsignedByte(255)] = (class348_sub49.readUnsignedByte(ModelDefinition.method2955(i_10_, -15092)))
                                         } else if (i == 20) {
                                             if ((this.anIntArray236 == null) || (this.anIntArray265) == null) {
                                                 this.anIntArray236 = (IntArray((this.anIntArrayArray264)!!.size))

@@ -1,6 +1,3 @@
-import DefaultGraphicsOptionState.Companion.method1839
-import AbstractBloomEffect.Companion.method2753
-import OggMediaStream.Companion.method515
 import java.awt.Canvas
 import java.awt.Rectangle
 
@@ -49,7 +46,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
     fun method3635(i: Byte) {
         val i_15_ = -90 % ((i - 8) / 33)
         anInt4573++
-        ColourKeyTextureNode.aBooleanArray9351!![this.anInt4567] = false
+        aBooleanArray9351!![this.anInt4567] = false
         method3652()
     }
 
@@ -301,8 +298,8 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
     init {
         var i = -1
         for (i_215_ in 0..7) {
-            if (!ColourKeyTextureNode.aBooleanArray9351!![i_215_]) {
-                ColourKeyTextureNode.aBooleanArray9351!![i_215_] = true
+            if (!aBooleanArray9351!![i_215_]) {
+                aBooleanArray9351!![i_215_] = true
                 i = i_215_
                 break
             }
@@ -312,6 +309,8 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
     }
 
     companion object {
+
+        var aBooleanArray9351: BooleanArray? = BooleanArray(8)
 
         var anInt4561: Int = 0
 
@@ -336,9 +335,6 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
         var anInt4574: Int = 0
 
-        var anInt4575: Int = 0
-
-        var anInt4576: Int = 0
 
         var anInt4577: Int = 0
 
@@ -352,14 +348,6 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
         var anInt4583: Int = 0
 
-        @JvmStatic
-        fun method3641(i: Int, i_35_: Int, i_36_: Byte, i_37_: Int, i_38_: Int, i_39_: Int) {
-            anInt4575++
-            if (i_36_.toInt() != -75) anInt4581 = 73
-            if (i_35_ == i_38_) WidgetComponentNode.method1116(i, i_37_, i_39_, i_38_, (-99).toByte())
-            else if (WorldMapLabel.anInt4960 <= i_39_ + -i_38_ && CameraNodeList.anInt1745 >= i_39_ - -i_38_ && -i_35_ + i >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i + i_35_) method515(i_37_, i_39_, i, i_35_, i_38_, -122)
-            else method1839(i_39_, i_35_, i, i_36_.toInt() xor 0x4a, i_37_, i_38_)
-        }
 
         @JvmStatic
         fun method3680(i: Int) {
@@ -368,21 +356,6 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
             aFontMetaRef_4571 = null
         }
 
-        @JvmStatic
-        @Synchronized
-        fun method3692(i: Int, i_168_: Int, i_169_: Int, js5Archive: Js5Archive?, i_170_: Int, var_renderConfig: RenderConfig?, canvas: Canvas?, i_171_: Int): Renderer? {
-            try {
-                anInt4576++
-                if (i_170_ == i_171_) return method2753(true, i_168_, i_169_, canvas, var_renderConfig)
-                if (i_171_ == 2) return WorldMapToggle.method2297(-6, i_168_, var_renderConfig, canvas, i_169_)
-                if (i_171_ == 1) return NodeDequeStatics.method2000(3, i, canvas, var_renderConfig)
-                if (i_171_ == 5) return JagGlToolkitFactory.method862(canvas, var_renderConfig, js5Archive, 25542, i)
-                if (i_171_ == 3) return JagDxToolkitFactory.method870(i, i_170_ xor 0x4a31, var_renderConfig!!, js5Archive!!, canvas!!)
-                throw IllegalArgumentException("UM")
-            } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_170_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_171_ + ')'))
-            }
-        }
 
         init {
             aFontMetaRef_4571 = FontMetaRef(73, -1)

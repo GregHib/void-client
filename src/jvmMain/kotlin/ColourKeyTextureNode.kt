@@ -78,8 +78,6 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
 
         var anInt9350: Int = 0
 
-        var aBooleanArray9351: BooleanArray?
-
         var aBoolean9352: Boolean = true
 
         var anInt9353: Int = 0
@@ -88,7 +86,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
 
         @JvmStatic
         fun method3118(i: Byte) {
-            aBooleanArray9351 = null
+            Renderer.aBooleanArray9351 = null
             val i_0_ = 37 / ((28 - i) / 61)
         }
 
@@ -154,8 +152,5 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             RegionSceneShifter.method3157(i_16_, 123.toByte(), i_17_, 11, bool)
         }
 
-        init {
-            aBooleanArray9351 = BooleanArray(8)
-        }
     }
 }

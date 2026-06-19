@@ -42,7 +42,7 @@ class TypedRecordTable {
         var i_27_ = 0
         if (i != 21890) method2180(25.toByte())
         while ( /**/this.anConfigTypeProviderArray3688.size > i_27_) {
-            this.anConfigTypeProviderArray3688[i_27_] = method2182(true, class223s[(class348_sub49.readUnsignedByte(CameraSplineNode.method2955(i, 21885)))], class348_sub49)
+            this.anConfigTypeProviderArray3688[i_27_] = method2182(true, class223s[(class348_sub49.readUnsignedByte(ModelDefinition.method2955(i, 21885)))], class348_sub49)
             i_27_++
         }
     }

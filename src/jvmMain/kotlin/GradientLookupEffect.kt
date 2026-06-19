@@ -14,7 +14,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
                     anIntArrayArray9194!![i_2_][0] = class348_sub49.readUnsignedShort(842397944)
                     anIntArrayArray9194!![i_2_][1] = class348_sub49.readUnsignedByte(255) shl 4
                     anIntArrayArray9194!![i_2_][2] = class348_sub49.readUnsignedByte(255) shl 4
-                    anIntArrayArray9194!![i_2_][3] = ((class348_sub49.readUnsignedByte(CameraSplineNode.method2955(i_0_, 31192))) shl 4)
+                    anIntArrayArray9194!![i_2_][3] = ((class348_sub49.readUnsignedByte(ModelDefinition.method2955(i_0_, 31192))) shl 4)
                     i_2_++
                 }
             } else method3078(i_1_, i_0_ + -31111)

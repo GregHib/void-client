@@ -1,3 +1,7 @@
+import DefaultGraphicsOptionState.Companion.method1839
+import OggMediaStream.Companion.method515
+import Renderer.Companion.anInt4581
+
 /* Class50_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -24,7 +28,7 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
         val i_17_ = anInt5213 * i_14_ shr 12
         val i_18_ = anInt5212 * i_15_ shr 12
         val i_19_ = i_15_ * anInt5222 shr 12
-        Renderer.method3641(i_18_, i_19_, (-75).toByte(), this.anInt864, i_17_, i_16_)
+        method3641(i_18_, i_19_, (-75).toByte(), this.anInt864, i_17_, i_16_)
     }
 
     companion object {
@@ -237,6 +241,16 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
                     }
                 }
             }
+        }
+
+        var anInt4575: Int = 0
+        @JvmStatic
+        fun method3641(i: Int, i_35_: Int, i_36_: Byte, i_37_: Int, i_38_: Int, i_39_: Int) {
+            anInt4575++
+            if (i_36_.toInt() != -75) anInt4581 = 73
+            if (i_35_ == i_38_) WidgetComponentNode.method1116(i, i_37_, i_39_, i_38_, (-99).toByte())
+            else if (WorldMapLabel.anInt4960 <= i_39_ + -i_38_ && CameraNodeList.anInt1745 >= i_39_ - -i_38_ && -i_35_ + i >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i + i_35_) method515(i_37_, i_39_, i, i_35_, i_38_, -122)
+            else method1839(i_39_, i_35_, i, i_36_.toInt() xor 0x4a, i_37_, i_38_)
         }
     }
 }

@@ -57,11 +57,11 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
                             } else break
                             break@while_214_
                         }
-                        aMinimapShapeDrawerArray9481!![i_7_] = (method2970(CameraSplineNode.method2955(i_6_, 31013), class348_sub49))
+                        aMinimapShapeDrawerArray9481!![i_7_] = (method2970(ModelDefinition.method2955(i_6_, 31013), class348_sub49))
                         i_7_++
                         continue@while_216_
                     } while (false)
-                    aMinimapShapeDrawerArray9481!![i_7_] = (method3036(class348_sub49, CameraSplineNode.method2955(i_6_, -31102)))
+                    aMinimapShapeDrawerArray9481!![i_7_] = (method3036(class348_sub49, ModelDefinition.method2955(i_6_, -31102)))
                     i_7_++
                     continue@while_216_
                 } while (false)

@@ -1791,7 +1791,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             IdleAnimationsOptionState.anInt5905 = 0
             WaterMaterialPass.anInt6226 = 0
             Player.anInt10562 = 0
-            Renderer.anInt4576 = 0
+            SoftwareSpriteRaster.anInt4576 = 0
             MenuActionNode.anInt6771 = 0
             OpenGlRenderer.anInt7576 = 0
             GameAppletFrame.anInt21 = 0
@@ -2108,7 +2108,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ItemDefinitionLoader.anInt2179 = 0
             KaraokeSubtitleStream.anInt9052 = 0
             OpenGlRenderer.anInt7637 = 0
-            Renderer.anInt4575 = 0
+            MinimapSquareDrawer.anInt4575 = 0
             ModelDefinition.anInt1828 = 0
             IndexedSprite.anInt5194 = 0
             TextureLoadExceptionStatics.anInt4605 = 0

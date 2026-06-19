@@ -293,7 +293,7 @@ class ModelDefinition {
             i_82_ = this.anIntArray1852[i_83_]
             i_81_ = this.anIntArray1847[i_83_]
             i_80_ = this.anIntArray1841[i_83_]
-            if (i_61_ == 1) this.anIntArray1868!![i_83_] = class348_sub49_56_.readUnsignedByte(CameraSplineNode.method2955(i, 254))
+            if (i_61_ == 1) this.anIntArray1868!![i_83_] = class348_sub49_56_.readUnsignedByte(method2955(i, 254))
         }
         class348_sub49.anInt7197 = i_75_
         class348_sub49_53_.anInt7197 = i_71_
@@ -319,7 +319,7 @@ class ModelDefinition {
                 }
             }
             if (i_58_ == 255) this.aByteArray1839!![i_88_] = class348_sub49_54_.readByte(-108)
-            if (i_59_ == 1) this.aByteArray1834!![i_88_] = class348_sub49_55_.readByte(CameraSplineNode.method2955(i, -120))
+            if (i_59_ == 1) this.aByteArray1834!![i_88_] = class348_sub49_55_.readByte(method2955(i, -120))
             if (i_60_ == 1) this.anIntArray1824!![i_88_] = class348_sub49_56_.readUnsignedByte(255)
         }
         class348_sub49.anInt7197 = i_74_
@@ -1107,6 +1107,10 @@ class ModelDefinition {
             anInt4315++
             val i_2_ = i_1_ + -1 and (i shr 31)
             return (i + (i ushr 31)) % i_1_ + i_2_
+        }
+
+        fun method2955(i: Int, i_24_: Int): Int {
+            return i xor i_24_
         }
     }
 }

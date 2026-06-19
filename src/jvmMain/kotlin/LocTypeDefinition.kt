@@ -74,7 +74,7 @@ class LocTypeDefinition {
                                 anIntArrayArray4002 = Array<IntArray?>(i_13_) { IntArray(2) }
                                 for (i_14_ in 0..<i_13_) {
                                     anIntArrayArray4002[i_14_]!![0] = class348_sub49.readUnsignedByte(255)
-                                    anIntArrayArray4002[i_14_]!![1] = (class348_sub49.readUnsignedByte(CameraSplineNode.method2955(i_0_.toInt(), 203)))
+                                    anIntArrayArray4002[i_14_]!![1] = (class348_sub49.readUnsignedByte(ModelDefinition.method2955(i_0_.toInt(), 203)))
                                 }
                             } else if (i == 15) class348_sub49.readUnsignedShort(842397944)
                             else if (i == 17) this.anInt4000 = class348_sub49.readUnsignedShort(842397944)

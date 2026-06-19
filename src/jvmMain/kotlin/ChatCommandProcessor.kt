@@ -5384,7 +5384,7 @@ object ChatCommandProcessor {
         val strings = arrayOfNulls<String>(SceneObjectSpawner.anInt1285)
         var i_58_ = 0
         while (SceneObjectSpawner.anInt1285 > i_58_) {
-            strings[i_58_] = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(`is`[i_58_].toInt(), (-91).toByte()).method3219(CameraSplineNode.method2955(i, 81))
+            strings[i_58_] = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(`is`[i_58_].toInt(), (-91).toByte()).method3219(ModelDefinition.method2955(i, 81))
             i_58_++
         }
         MapSceneCache.method1333(AsyncTaskHandle.aShortArray2579, i + 26073, strings)

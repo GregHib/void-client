@@ -1167,7 +1167,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     val i_175_ = anInt5406
                     class64_sub2_153_.aCameraOrModelTransformArray5442 = arrayOfNulls<CameraOrModelTransform>(i_175_)
                     class64_sub2_154_.aCameraOrModelTransformArray5442 = class64_sub2_153_.aCameraOrModelTransformArray5442
-                    for (i_176_ in 0..<anInt5406) class64_sub2_154_.aCameraOrModelTransformArray5442!![i_176_] = (aCameraOrModelTransformArray5442!![i_176_]!!.method2649(CameraSplineNode.method2955(i_156_, 26792)))
+                    for (i_176_ in 0..<anInt5406) class64_sub2_154_.aCameraOrModelTransformArray5442!![i_176_] = (aCameraOrModelTransformArray5442!![i_176_]!!.method2649(ModelDefinition.method2955(i_156_, 26792)))
                 }
             } else class64_sub2_154_.aCameraOrModelTransformArray5442 = aCameraOrModelTransformArray5442
             if (aBoolean5477) {

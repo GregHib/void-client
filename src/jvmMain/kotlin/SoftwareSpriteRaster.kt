@@ -1,6 +1,7 @@
+import AbstractBloomEffect.Companion.method2753
 import HslColorConfig.Companion.method295
 import GrayscaleNoiseTexture.Companion.method552
-import Renderer.Companion.method3692
+import awt.AwtCanvas
 import jaggl.OpenGL.Companion.glLoadIdentity
 import jaggl.OpenGL.Companion.glMatrixMode
 import jaggl.OpenGL.Companion.glScalef
@@ -358,5 +359,23 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
             SpriteDefinition.anInt7068 = i
             ModelDefinition.aJs5Archive_1848 = null
         }
+
+        var anInt4576: Int = 0
+        @JvmStatic
+        @Synchronized
+        fun method3692(i: Int, i_168_: Int, i_169_: Int, js5Archive: Js5Archive?, i_170_: Int, var_renderConfig: RenderConfig?, canvas: AwtCanvas?, i_171_: Int): Renderer? {
+            try {
+                anInt4576++
+                if (i_170_ == i_171_) return method2753(true, i_168_, i_169_, canvas, var_renderConfig)
+                if (i_171_ == 2) return WorldMapToggle.method2297(-6, i_168_, var_renderConfig, canvas, i_169_)
+                if (i_171_ == 1) return NodeDequeStatics.method2000(3, i, canvas, var_renderConfig)
+                if (i_171_ == 5) return JagGlToolkitFactory.method862(canvas, var_renderConfig, js5Archive, 25542, i)
+                if (i_171_ == 3) return JagDxToolkitFactory.method870(i, i_170_ xor 0x4a31, var_renderConfig!!, js5Archive!!, canvas!!)
+                throw IllegalArgumentException("UM")
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_170_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_171_ + ')'))
+            }
+        }
+
     }
 }

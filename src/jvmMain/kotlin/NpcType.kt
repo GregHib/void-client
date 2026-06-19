@@ -215,7 +215,7 @@ class NpcType {
                                                     while ((i_14_ > i_15_)) {
                                                         val i_16_ = (class348_sub49.readUnsignedByte(255))
                                                         val `is` = (IntArray(3).also { anIntArrayArray1388!![i_16_] = it })
-                                                        `is`[0] = (class348_sub49.readByte(CameraSplineNode.method2955(i_4_, -50))).toInt()
+                                                        `is`[0] = (class348_sub49.readByte(ModelDefinition.method2955(i_4_, -50))).toInt()
                                                         `is`[1] = (class348_sub49.readByte(-113)).toInt()
                                                         `is`[2] = (class348_sub49.readByte(-84)).toInt()
                                                         i_15_++

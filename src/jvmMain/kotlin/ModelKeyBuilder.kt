@@ -103,7 +103,7 @@ class ModelKeyBuilder : LinkedListNode() {
                 if (bool_29_) return null
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(`is`.size)
                 for (i_31_ in `is`.indices) {
-                    if (`is`[i_31_] != -1) modelDefinitions[i_31_] = ClientException.aModelHeaderCache_112!!.method1940(CameraSplineNode.Companion.method2955(i_14_, -112), `is`[i_31_]).method1558(bool, false)
+                    if (`is`[i_31_] != -1) modelDefinitions[i_31_] = ClientException.aModelHeaderCache_112!!.method1940(ModelDefinition.method2955(i_14_, -112), `is`[i_31_]).method1558(bool, false)
                 }
                 if (npcDefinition != null && npcDefinition.anIntArrayArray2939 != null) {
                     var i_32_ = 0

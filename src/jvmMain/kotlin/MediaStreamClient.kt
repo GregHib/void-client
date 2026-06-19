@@ -107,7 +107,7 @@ class MediaStreamClient {
                     if (aByte3212.toInt() != 0) {
                         var i_6_ = 0
                         while (i_5_ > i_6_) {
-                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!![i_6_ + aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197] = (CameraSplineNode.method2955((aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!![(i_6_ + (aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197))]).toInt(), aByte3212.toInt())).toByte()
+                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!![i_6_ + aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197] = (ModelDefinition.method2955((aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!![(i_6_ + (aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197))]).toInt(), aByte3212.toInt())).toByte()
                             i_6_++
                         }
                     }
@@ -123,7 +123,7 @@ class MediaStreamClient {
                     if (i_2_ < i_7_) i_7_ = i_2_
                     aSocketStreamWorker_3209!!.method1474((aClass348_Sub49_3211.aByteArray7154!!), aClass348_Sub49_3211.anInt7197, (-72).toByte(), i_7_)
                     if (aByte3212.toInt() != 0) {
-                        for (i_8_ in 0..<i_7_) aClass348_Sub49_3211.aByteArray7154!![i_8_ + aClass348_Sub49_3211.anInt7197] = (CameraSplineNode.method2955((aClass348_Sub49_3211.aByteArray7154!![i_8_ + (aClass348_Sub49_3211.anInt7197)]).toInt(), aByte3212.toInt())).toByte()
+                        for (i_8_ in 0..<i_7_) aClass348_Sub49_3211.aByteArray7154!![i_8_ + aClass348_Sub49_3211.anInt7197] = (ModelDefinition.method2955((aClass348_Sub49_3211.aByteArray7154!![i_8_ + (aClass348_Sub49_3211.anInt7197)]).toInt(), aByte3212.toInt())).toByte()
                     }
                     aClass348_Sub49_3211.anInt7197 += i_7_
                     if (aClass348_Sub49_3211.anInt7197 >= i_3_) {

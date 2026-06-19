@@ -79,10 +79,6 @@ class CameraSplineNode internal constructor(i: Int) : LinkedListNode() {
             }
         }
 
-        fun method2955(i: Int, i_24_: Int): Int {
-            return i xor i_24_
-        }
-
         @JvmStatic
         fun method2956(i: Byte) {
             aString6854 = null
