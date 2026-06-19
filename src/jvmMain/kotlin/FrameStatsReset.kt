@@ -282,7 +282,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ByteBuffer.anInt7160 = 0
             PackedFlagsAccessor.anInt7097 = 0
             SplashImageLoadable.anInt4695 = 0
-            CollisionFlagQuery.anInt1196 = 0
+            OpenGlModel.anInt1196 = 0
             SpotAnimDefinition.anInt2378 = 0
             TrackedGroundDecor.anInt10404 = 0
             ScanlineRasterFiller.anInt2475 = 0
@@ -445,7 +445,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ByteBuffer.anInt7179 = 0
             ChatCommandProcessor.anInt1153 = 0
             TileRenderState.anInt4237 = 0
-            CollisionFlagQuery.anInt1191 = 0
+            OpenGlModel.anInt1191 = 0
             WallSceneEntity.anInt9964 = 0
             CubeMapMaterialPass.anInt6303 = 0
             CompiledScriptCache.anInt4370 = 0
@@ -505,7 +505,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CameraRotationStub.anInt321 = 0
             GlRenderDevice.anInt9836 = 0
             SynthVoiceGroup.anInt8846 = 0
-            NpcAppearanceFlags.anInt210 = 0
+            RenderListTextureNode.anInt210 = 0
             DefaultGraphicsOptionState.anInt6129 = 0
             NativeTerrainTile.anInt8292 = 0
             GlVertexBufferArb.anInt8487 = 0
@@ -844,7 +844,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MidiSequencePlayer.anInt8948 = 0
             NativeRenderer.anInt7986 = 0
             SphereMapMaterialPass.anInt6319 = 0
-            ProjectileFactory.anInt2898 = 0
+            IdentKitRecolor.anInt2898 = 0
             ByteBufferStatics.anInt7201 = 0
             SeqDefinitionCache.anInt3358 = 0
             SoundChannelMixer.anInt3597 = 0
@@ -1126,7 +1126,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ScreenBorderFiller.anInt1956 = 0
             ModelHeaderCache.anInt3275 = 0
             GameDisplayManager.anInt2838 = 0
-            NpcAppearanceFlags.anInt214 = 0
+            SolidFillComponent.anInt214 = 0
             GlTexture2D.anInt8542 = 0
             FloatCameraTransform.anInt5717 = 0
             MouseInputTracker.anInt7438 = 0
@@ -1279,7 +1279,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CubeMapMaterialPass.anInt6297 = 0
             MinimapStateReset.anInt1870 = 0
             Player.anInt10527 = 0
-            CollisionFlagQuery.anInt1193 = 0
+            CompositeNpcModelBuilder.anInt1193 = 0
             DefaultGraphicsOptionState.anInt6130 = 0
             ProjectionCameraTransform.anInt5777 = 0
             ModelHeaderCache.anInt3284 = 0
@@ -3317,7 +3317,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Js5Archive.anInt658 = 0
             WidgetCache.anInt1485 = 0
             CurveTextureNode.anInt9207 = 0
-            CollisionFlagQuery.anInt1194 = 0
+            ContactList.anInt1194 = 0
             FlickeringEffectsOptionState.anInt5914 = 0
             ByteBuffer.anInt7192 = 0
             MapLabelMenuEntry.anInt5793 = 0

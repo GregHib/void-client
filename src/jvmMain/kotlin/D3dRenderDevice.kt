@@ -1,3 +1,7 @@
+import CollisionFlagQuery.Companion.aCollisionFlagQuery_1195
+import CollisionFlagQuery.Companion.aCollisionFlagQuery_1197
+import CollisionFlagQuery.Companion.aCollisionFlagQuery_1198
+import CollisionFlagQuery.Companion.aCollisionFlagQuery_1199
 import direct.Direct3dVertexDeclaration
 import jaclib.peer.hb
 import jagdx.*
@@ -727,7 +731,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         if (ClientMachineInfo.aObjectByteSerializerHolder_6602 == this.aObjectByteSerializerHolder_8163) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 5)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 6)
-        } else if (this.aObjectByteSerializerHolder_8163 == CollisionFlagQuery.aObjectByteSerializerHolder_1201) {
+        } else if (this.aObjectByteSerializerHolder_8163 == D3dRenderDevice.aObjectByteSerializerHolder_1201) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 2)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 2)
         } else if (BoundsConstraintEntry.aObjectByteSerializerHolder_5169 == this.aObjectByteSerializerHolder_8163) {
@@ -922,5 +926,16 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
                 return false
             }
         }
+        var aObjectByteSerializerHolder_1201: ObjectByteSerializerHolder? = ObjectByteSerializerHolder()
+        @JvmStatic
+        fun method722(i: Int) {
+            CollisionFlagQuery.aCollisionFlagQuery_1198 = null
+            if (i != 13569) CollisionFlagQuery.aCollisionFlagQuery_1199 = null
+            CollisionFlagQuery.aCollisionFlagQuery_1197 = null
+            CollisionFlagQuery.aCollisionFlagQuery_1195 = null
+            CollisionFlagQuery.aCollisionFlagQuery_1199 = null
+            aObjectByteSerializerHolder_1201 = null
+        }
+
     }
 }

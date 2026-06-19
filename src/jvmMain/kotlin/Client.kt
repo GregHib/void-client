@@ -104,7 +104,7 @@ import MidiTrackReader.Companion.method1493
 import CircleDrawer.method1497
 import FrameBufferObject.Companion.method1499
 import BufferedOutputStreamWorker.Companion.method1525
-import UnusedToStringStub.Companion.method1529
+import HeadIconRenderer.Companion.method1529
 import CameraRotationStub.Companion.method288
 import VorbisFloorDecoder.Companion.method1536
 import CompressedBlockDecoder.method1551
@@ -448,8 +448,7 @@ import WorldMapImageBuilder.Companion.method698
 import ChatCommandProcessor.method705
 import ChatCommandProcessor.method713
 import TooltipComponentRenderer.Companion.method716
-import MovementDirection.Companion.method719
-import CollisionFlagQuery.Companion.method722
+import D3dRenderDevice.Companion.method722
 import TrigLookupTables.Companion.method725
 import PlayerSequenceSelector.method728
 import PlayerSequenceSelector.method729
@@ -511,6 +510,15 @@ import InvertTextureNode.Companion.method3134
 import KaraokeSubtitleStream.Companion.method2988
 import MapLabelMenuEntry.Companion.method1041
 import MaterialPass.Companion.method2138
+import MovementDirection.Companion.aMovementDirection_1179
+import MovementDirection.Companion.aMovementDirection_1181
+import MovementDirection.Companion.aMovementDirection_1182
+import MovementDirection.Companion.aMovementDirection_1183
+import MovementDirection.Companion.aMovementDirection_1184
+import MovementDirection.Companion.aMovementDirection_1185
+import MovementDirection.Companion.aMovementDirection_1186
+import MovementDirection.Companion.aMovementDirection_1187
+import MovementDirection.Companion.anIntArrayArray1190
 import MultiLevelOptionState.Companion.method1851
 import NoOpGraphicsOptionState.Companion.method1803
 import ShadowQualityOptionState.Companion.method1788
@@ -962,7 +970,7 @@ class Client : GameAppletFrame() {
         method1889(255)
         method2705(i + 14537)
         method3609(48.toByte())
-        ProjectileFactory.method1612((-9).toByte())
+        HeapInfoRecord.method1612((-9).toByte())
         TypedRecordTable.method2180((-72).toByte())
         method1447(i.toInt() xor 0x20)
         method492(i + -216)
@@ -1317,7 +1325,7 @@ class Client : GameAppletFrame() {
                 NpcAnimationResolver.aNamedIdRecord_165 = OggCacheStream.aNamedIdRecord_5271
             }
             SceneRegionState.aHudTabPanel_196 = (method1677(-121, this.getParameter("modewhat")!!.toInt()))
-            if (SceneRegionState.aHudTabPanel_196 != ParticleEmitterDef.aHudTabPanel_4953 && SceneRegionState.aHudTabPanel_196 != NoiseTextureNode.aHudTabPanel_9263 && MovementDirection.aHudTabPanel_1189 != SceneRegionState.aHudTabPanel_196) SceneRegionState.aHudTabPanel_196 = MovementDirection.aHudTabPanel_1189
+            if (SceneRegionState.aHudTabPanel_196 != ParticleEmitterDef.aHudTabPanel_4953 && SceneRegionState.aHudTabPanel_196 != NoiseTextureNode.aHudTabPanel_9263 && Client.aHudTabPanel_1189 != SceneRegionState.aHudTabPanel_196) SceneRegionState.aHudTabPanel_196 = Client.aHudTabPanel_1189
             try {
                 ChatCommandProcessor.anInt6967 = this.getParameter("lang")!!.toInt()
             } catch (exception: Exception) {
@@ -1972,7 +1980,7 @@ class Client : GameAppletFrame() {
                     DirectionalLightTextureNode.aServerConnectionInfo_9443 = ServerConnectionInfo()
                     DirectionalLightTextureNode.aServerConnectionInfo_9443!!.anInt2143 = strings[2].toInt()
                     NpcAnimationResolver.aNamedIdRecord_165 = SceneObjectSpawner.aNamedIdRecord_1279
-                    if (strings[3] == "live") SceneRegionState.aHudTabPanel_196 = MovementDirection.aHudTabPanel_1189
+                    if (strings[3] == "live") SceneRegionState.aHudTabPanel_196 = Client.aHudTabPanel_1189
                     else if (strings[3] != "rc") {
                         if (strings[3] == "wip") SceneRegionState.aHudTabPanel_196 = ParticleEmitterDef.aHudTabPanel_4953
                         else method518("modewhat", 41.toByte())
@@ -5366,6 +5374,24 @@ class Client : GameAppletFrame() {
             aShortArray6428 = null
             PerlinNoiseTextureNode.anIntArray6432 = null
             aInboundPacketHeader_6424 = null
+        }
+        var aHudTabPanel_1189: HudTabPanel? = HudTabPanel("LIVE", 0)
+
+
+        @JvmStatic
+        fun method719(i: Byte) {
+            MovementDirection.aMovementDirection_1183 = null
+            MovementDirection.aMovementDirection_1184 = null
+            MovementDirection.aMovementDirection_1181 = null
+            if (i.toInt() == 72) {
+                MovementDirection.aMovementDirection_1182 = null
+                MovementDirection.anIntArrayArray1190 = null
+                MovementDirection.aMovementDirection_1187 = null
+                Client.aHudTabPanel_1189 = null
+                MovementDirection.aMovementDirection_1179 = null
+                MovementDirection.aMovementDirection_1186 = null
+                MovementDirection.aMovementDirection_1185 = null
+            }
         }
     }
 }

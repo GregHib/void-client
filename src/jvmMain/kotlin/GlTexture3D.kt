@@ -1,4 +1,5 @@
 import GlVertexBufferArb.Companion.method2131
+import TexGenMaterialPass.Companion.method2161
 import jaggl.OpenGL.Companion.glCopyTexSubImage3D
 import jaggl.OpenGL.Companion.glFlush
 import jaggl.OpenGL.Companion.glFramebufferTexture3DEXT
@@ -169,7 +170,7 @@ class GlTexture3D : GlTexture {
                 DoublyLinkedNodeList.method1879(true)
                 NativeLibraryState.aRenderer171!!.ra(-1, 1583160, 40, 127)
                 FloatBuffer.method3398(true, `is`, i_20_, i_21_, i_25_, i_26_, bool_27_)
-                if (VoronoiNoiseTextureNode.aBoolean9121) TextureFormatInfo.method2290()
+                if (VoronoiNoiseTextureNode.aBoolean9121) method2290()
                 NativeLibraryState.aRenderer171!!.pa()
                 DoublyLinkedNodeList.method1879(false)
             }
@@ -180,7 +181,7 @@ class GlTexture3D : GlTexture {
                 for (i_47_ in NormalMapTextureNode.aSceneLoaderThreadArray9432!!.indices) NormalMapTextureNode.aSceneLoaderThreadArray9432!![i_47_]!!.method2209()
             }
             if (VoronoiNoiseTextureNode.aBoolean9121) {
-                TextureFormatInfo.method2290()
+                method2290()
                 for (i_48_ in 0..<MapAreaDefinition.anInt2524) OverlayColorTable.aBooleanArrayArrayArray1751!![i_48_] = SolidFillComponent.aBooleanArrayArrayArray8361!![i_48_]!!
                 if (Npc.anInt10503 == 2) {
                     if (HitsplatDefinition.aLongArray2013!![0] < HitsplatDefinition.aLongArray2013!![1]) {
@@ -199,6 +200,58 @@ class GlTexture3D : GlTexture {
         fun method2199(i: Byte) {
             SoundEnvelope.anIntArray3726 = null
             aClass318_Sub1Array3737 = null
+        }
+
+        fun method2290() {
+            while (true) {
+                var bool = true
+                for (i in NormalMapTextureNode.aSceneLoaderThreadArray9432!!.indices) {
+                    if (!NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2210()) {
+                        withLock(NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!) {
+                            (NormalMapTextureNode.aSceneLoaderThreadArray9432!![i] as Object).notify()
+                        }
+                        bool = false
+                    } else HitsplatDefinition.aLongArray2013!![i] = NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2204()
+                }
+                if (bool) break
+                try {
+                    TexGenMaterialPass.method2161((-18).toByte(), 1L)
+                } catch (exception: Exception) {
+                    /* empty */
+                }
+            }
+            NormalMapTextureNode.aSceneLoaderThreadArray9432!![NormalMapTextureNode.aSceneLoaderThreadArray9432!!.size - 1]!!.method2208()
+            method2131(1)
+            while (true) {
+                var bool = true
+                for (i in 0..<NormalMapTextureNode.aSceneLoaderThreadArray9432!!.size - 1) {
+                    if (!NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2210()) {
+                        withLock(NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!) {
+                            (NormalMapTextureNode.aSceneLoaderThreadArray9432!![i] as Object).notify()
+                        }
+                        bool = false
+                    }
+                }
+                if (bool) break
+                try {
+                    method2161(72.toByte(), 1L)
+                } catch (exception: Exception) {
+                    /* empty */
+                }
+            }
+            for (i in 1..<NormalMapTextureNode.aSceneLoaderThreadArray9432!!.size - 2) NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2208()
+            method2131(2)
+            while (!NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2210()) {
+                withLock(NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!) {
+                    (NormalMapTextureNode.aSceneLoaderThreadArray9432!![0] as Object).notify()
+                }
+                try {
+                    method2161(112.toByte(), 1L)
+                } catch (exception: Exception) {
+                    /* empty */
+                }
+            }
+            NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2208()
         }
     }
 }

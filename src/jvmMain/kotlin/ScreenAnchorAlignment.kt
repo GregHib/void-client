@@ -9,7 +9,7 @@ class ScreenAnchorAlignment {
         val i_2_ = (max(LocTypeDefinition.anInt4017, i))
         if (ScrollbarComponent.aScreenAnchorAlignment_8344 == this) return 0
         if (i_1_ >= -103) aBoolean2881 = true
-        if (this == ProjectileFactory.Companion.aScreenAnchorAlignment_2893) return i_2_ - i_0_
+        if (this == HeapInfoRecord.aScreenAnchorAlignment_2893) return i_2_ - i_0_
         if (SoftwareSpriteRaster.aScreenAnchorAlignment_1620 == this) return (-i_0_ + i_2_) / 2
         return 0
     }

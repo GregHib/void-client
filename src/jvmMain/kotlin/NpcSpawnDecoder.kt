@@ -16,7 +16,7 @@ object NpcSpawnDecoder {
         anInt1526++
         val class348_sub9 = ((CompletedResourceRequest.aHashtable_10465!!.method3480(player.anInt10290.toLong(), -6008)) as CharacterRenderState)
         if (bool == true) {
-            if (class348_sub9 == null) ProjectileFactory.method1614(979190089, null, player.plane.toInt(), (player.anIntArray10317!![0]), (player.anIntArray10320!![0]), player, null, 0)
+            if (class348_sub9 == null) IdentKitRecolor.method1614(979190089, null, player.plane.toInt(), (player.anIntArray10317!![0]), (player.anIntArray10320!![0]), player, null, 0)
             else class348_sub9.method2781(21.toByte())
         }
     }

@@ -1,5 +1,6 @@
+import CollisionFlagQuery.Companion.aCollisionFlagQuery_1199
 import SceneModelBuilder.Companion.method2496
-import CollisionFlagQuery.Companion.method721
+import ContactList.Companion.method721
 import kotlin.math.min
 import kotlin.math.pow
 
@@ -76,5 +77,27 @@ class ContactList internal constructor(var aString9617: String?) : HashLinkedLis
                 anInt9618++
             }
         }
+
+
+        var anInt1194: Int = 0
+        @JvmStatic
+        fun method721(class348_sub42: HashLinkedListNode?, class348_sub42_1_: HashLinkedListNode?, i: Int) {
+            do {
+                try {
+                    if (class348_sub42_1_!!.aClass348_Sub42_7060 != null) class348_sub42_1_.method3162(true)
+                    anInt1194++
+                    class348_sub42_1_.aClass348_Sub42_7063 = class348_sub42
+                    class348_sub42_1_.aClass348_Sub42_7060 = class348_sub42!!.aClass348_Sub42_7060
+                    class348_sub42_1_.aClass348_Sub42_7060!!.aClass348_Sub42_7063 = class348_sub42_1_
+                    class348_sub42_1_.aClass348_Sub42_7063!!.aClass348_Sub42_7060 = class348_sub42_1_
+                    if (i == -1) break
+                    aCollisionFlagQuery_1199 = null
+                } catch (runtimeexception: RuntimeException) {
+                    throw TextureLoadException.method2929(runtimeexception, ("kea.B(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + (if (class348_sub42_1_ != null) "{...}" else "null") + ',' + i + ')'))
+                }
+                break
+            } while (false)
+        }
+
     }
 }

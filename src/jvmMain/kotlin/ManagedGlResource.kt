@@ -1,5 +1,5 @@
 import WaterMaterialPass.Companion.method2148
-import CollisionFlagQuery.Companion.method721
+import ContactList.Companion.method721
 
 /* Class242 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

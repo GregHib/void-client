@@ -1,3 +1,7 @@
+import ChatMessageStream.Companion.method138
+import RegionSceneLoader.method2194
+import TextureFormatInfo.Companion.anInt3849
+
 /* Class5_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -58,8 +62,8 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
         fun method191(bool: Boolean, i: Int, i_0_: Int) {
             if (NpcEntityUpdater.anInt3655 != 1) {
                 if (NpcEntityUpdater.anInt3655 == 2) {
-                    if (!GrayscaleNoiseTexture.aBoolean5300) TextureFormatInfo.method2291((-127).toByte(), i, i_0_)
-                    else TextureFormatInfo.method2291((-122).toByte(), i + NativeTerrainTile.method4008((-128).toByte()), SceneTilePlaneManager.method260(!bool) + i_0_)
+                    if (!GrayscaleNoiseTexture.aBoolean5300) SolidFillComponent.method2291((-127).toByte(), i, i_0_)
+                    else SolidFillComponent.method2291((-122).toByte(), i + NativeTerrainTile.method4008((-128).toByte()), SceneTilePlaneManager.method260(!bool) + i_0_)
                 }
             } else SpriteMaskShape.method2599(101.toByte(), SolidFillComponent.aClass348_Sub42_Sub12_1946, i_0_, i)
             anInt8354++
@@ -112,7 +116,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
             if (LocalPlayerState.anInt1910 <= i_15_ && WidgetTextConfig.anInt513 >= i_15_) {
                 i_14_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_14_, WorldMapLabel.anInt4960, 71)
                 i = WhirlpoolHash.method831(CameraNodeList.anInt1745, i, WorldMapLabel.anInt4960, -87)
-                NpcAppearanceFlags.method223(i, i_13_, i_15_, i_14_, 39.toByte())
+                method223(i, i_13_, i_15_, i_14_, 39.toByte())
             }
             anInt8357++
         }
@@ -131,6 +135,55 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
             CameraRotationStub.aWidgetComponent_323 = widgetComponent
             anInt8359++
             if (bool != false) anInt8363 = 112
+        }
+        fun method2291(i: Byte, i_4_: Int, i_5_: Int) {
+            anInt3849++
+            var i_6_ = (WorldMapLabel.aFontDefinition_4962!!.method1183(true, LocalizedText.aLocalizedText_3507!!.method2063(ChatCommandProcessor.anInt6967, 544)))
+            val i_7_: Int
+            if (ChatScriptListNode.aBoolean9535) {
+                var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-87) as? ContactList?)
+                while (class348_sub42_sub13 != null) {
+                    val i_9_: Int
+                    if (class348_sub42_sub13.anInt9615 != 1) i_9_ = method2194(-1, class348_sub42_sub13)
+                    else i_9_ = (ChatMessageStream.method138((((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as ContactEntry?)!!), false))
+                    if (i_6_ < i_9_) i_6_ = i_9_
+                    class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(126.toByte()) as? ContactList?)
+                }
+                i_6_ += 8
+                i_7_ = 21 + 16 * NpcAnimationResolver.anInt166
+                WorldMapSceneSoftware.anInt5819 = (if (PlayerSequenceSelector.aBoolean1211) 26 else 22) + 16 * NpcAnimationResolver.anInt166
+            } else {
+                var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as? ContactEntry?)
+                while (class348_sub42_sub12 != null) {
+                    val i_8_ = method138(class348_sub42_sub12, false)
+                    if (i_6_ < i_8_) i_6_ = i_8_
+                    class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(69.toByte()) as? ContactEntry?
+                }
+                i_6_ += 8
+                WorldMapSceneSoftware.anInt5819 = (if (!PlayerSequenceSelector.aBoolean1211) 22 else 26) + 16 * FileExistsCondition.anInt4776
+                i_7_ = 21 + FileExistsCondition.anInt4776 * 16
+            }
+            var i_10_ = -(i_6_ / 2) + i_4_
+            if (LocTypeDefinition.anInt4017 < i_6_ + i_10_) i_10_ = -i_6_ + LocTypeDefinition.anInt4017
+            if (i_10_ < 0) i_10_ = 0
+            var i_11_ = i_5_
+            if (i_11_ + i_7_ > GameDisplayManager.anInt10432) i_11_ = GameDisplayManager.anInt10432 + -i_7_
+            if (i_11_ < 0) i_11_ = 0
+            GlArrayBufferObject.anInt4717 = i_10_
+            ScrollbarComponent.aBoolean8335 = true
+            ProceduralTextureGraph.anInt9532 = i_11_
+            SceneTileBounds.anInt1117 = i_6_
+        }
+
+
+        var anInt214: Int = 0
+        fun method223(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Byte) {
+            if (i_2_ > i) GlElementArrayBuffer.method1156(-27, i_2_, WidgetDefinition.anIntArrayArray255!![i_1_]!!, i, i_0_)
+            else GlElementArrayBuffer.method1156(-27, i, WidgetDefinition.anIntArrayArray255!![i_1_]!!, i_2_, i_0_)
+            anInt214++
+            if (i_3_ >= 20) {
+                /* empty */
+            }
         }
     }
 }

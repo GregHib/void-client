@@ -5469,7 +5469,7 @@ object ChatCommandProcessor {
         ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2541(119, i_0_)
         method3535(i_0_, i.inv())
         NormalMapGenerator.method2040(i_0_, true)
-        CollisionFlagQuery.method720(i_0_, i + 1227)
+        CompositeNpcModelBuilder.method720(i_0_, i + 1227)
         method1750(14056, i_0_)
         TextureTileRenderer.method2953((-106).toByte())
     }

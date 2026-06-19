@@ -110,7 +110,7 @@ class TextureQualityOptionState : GraphicsOptionState {
                 if (i_7_ != 0) SoundCacheState.method2641(i_4_, i_3_, -117, i, i_6_)
                 return
             } else if (i_7_ == 0) {
-                NpcAppearanceFlags.method223(i_5_, i_6_, i_3_, i, 47.toByte())
+                SolidFillComponent.method223(i_5_, i_6_, i_3_, i, 47.toByte())
                 return
             }
             if (i_7_ < 0) i_7_ = -i_7_

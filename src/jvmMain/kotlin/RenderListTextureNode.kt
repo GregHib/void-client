@@ -10,7 +10,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
         if (i.toInt() != -27) method3152(86)
         val i_0_: Int = PerlinNoiseTextureNode.anInt9139
         val i_1_ = FixedFunctionMaterialPass.anInt6212
-        NpcAppearanceFlags.method224((-40).toByte(), `is`)
+        method224((-40).toByte(), `is`)
         MultiFieldRecord.method3000(SimpleBinaryOptionState.anInt6076, 0, TextureCubeProvider.anInt6325, 0, i.toInt() xor 0x28)
         if (aMinimapShapeDrawerArray9481 != null) {
             var i_2_ = 0
@@ -146,6 +146,11 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
             anInt7026++
             if (i > -4) return null
             return MinimapTriangleDrawer(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
+        }
+        var anInt210: Int = 0
+        fun method224(i: Byte, `is`: Array<IntArray?>?) {
+            WidgetDefinition.anIntArrayArray255 = `is`
+            anInt210++
         }
     }
 }

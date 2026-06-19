@@ -1,6 +1,7 @@
 import SoftwareSpriteRaster.Companion.method960
 import SpriteRgbTextureNode.Companion.method3093
 import ParticleTileShape.Companion.method2732
+import UnusedToStringStub.Companion.aInboundPacketHeader_2717
 import kotlin.math.max
 
 /* Class151 - Decompiled by JODE
@@ -71,7 +72,7 @@ class HeadIconRenderer {
                 method368(i, 18002, false, i_13_, CachedRgbNoiseTexture.aJs5Archive_8667, 0, i_15_)
                 method3093(93)
             }
-            if (SlotBinding.anInt3428 != i_13_) UnusedToStringStub.aClass348_Sub16_Sub3_2718 = null
+            if (SlotBinding.anInt3428 != i_13_) HeadIconRenderer.aClass348_Sub16_Sub3_2718 = null
             SlotBinding.anInt3428 = i_13_
         }
 
@@ -102,6 +103,13 @@ class HeadIconRenderer {
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("ok.E(" + (if (string != null) "{...}" else "null") + ',' + (if (string_16_ != null) "{...}" else "null") + ',' + i + ')'))
             }
+        }
+        var aClass348_Sub16_Sub3_2718: MidiSequencePlayer? = null
+        @JvmStatic
+        fun method1529(bool: Boolean) {
+            aInboundPacketHeader_2717 = null
+            if (bool != true) aInboundPacketHeader_2717 = null
+            aClass348_Sub16_Sub3_2718 = null
         }
     }
 }

@@ -1,4 +1,6 @@
 import PlayerUpdateDecoder.method1142
+import ProjectileFactory.Companion.anIntArray2899
+import ProjectileFactory.Companion.anIntArrayArray2900
 import java.io.File
 
 /*
@@ -67,12 +69,20 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
                 exception.printStackTrace()
             }
         }
+        var aScreenAnchorAlignment_2893: ScreenAnchorAlignment? = ScreenAnchorAlignment()
+
+        @JvmStatic
+        fun method1612(i: Byte) {
+            anIntArray2899 = null
+            anIntArrayArray2900 = null
+            aScreenAnchorAlignment_2893 = null
+        }
 
         @JvmStatic
         fun method1248(i: Int): Array<ScreenAnchorAlignment?> {
             anInt4933++
             if (i < 11) aCircleRasterizer_4938 = null
-            return (arrayOf<ScreenAnchorAlignment?>(ScrollbarComponent.aScreenAnchorAlignment_8344, SoftwareSpriteRaster.aScreenAnchorAlignment_1620, ProjectileFactory.aScreenAnchorAlignment_2893))
+            return (arrayOf<ScreenAnchorAlignment?>(ScrollbarComponent.aScreenAnchorAlignment_8344, SoftwareSpriteRaster.aScreenAnchorAlignment_1620, aScreenAnchorAlignment_2893))
         }
 
         @JvmStatic

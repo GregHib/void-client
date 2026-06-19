@@ -4,7 +4,6 @@ import WhirlpoolHash.Companion.method1166
 import OrientationRotator.method1201
 import SceneTilePlaneManager.method258
 import ClickFeedbackTask.Companion.method1353
-import ProjectileFactory.Companion.method1614
 import HudTabPanel.Companion.method1639
 import RemoveRoofsOptionState.Companion.method1810
 import GlTexture2D.Companion.method1966
@@ -69,7 +68,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     val i_15_ = (i shl 9) - -(i_9_ shl 8)
                     val i_16_ = (i_8_ shl 8) + (i_5_ shl 9)
                     val bool = (LoadingScreenImageNode.aBoolean9498 && !this.aBoolean3109 && class51.aBoolean906)
-                    if (class51.method474(82.toByte())) method1614(979190089, null, i_0_, i_5_, i, null, class51, i_7_)
+                    if (class51.method474(82.toByte())) IdentKitRecolor.method1614(979190089, null, i_0_, i_5_, i, null, class51, i_7_)
                     val bool_17_ = (i_6_ == -1 && class51.anInt868 == -1 && class51.anIntArray943 == null && class51.anIntArray945 == null && !class51.aBoolean929)
                     if (!SpriteRenderable.aBoolean4728 || ((!ScreenBorderFiller.method1172((-85).toByte(), i_4_) || class51.anInt955 == 1) && (!method1639(i_4_, i_3_ xor 0x3918) || class51.anInt955 != 0))) {
                         if (i_4_ == 22) {

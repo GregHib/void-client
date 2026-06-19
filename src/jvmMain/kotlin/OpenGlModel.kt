@@ -1010,7 +1010,7 @@ class OpenGlModel : AbstractModel {
                 class64_sub3_211_.aShortArray5579 = aShortArray5579
                 class64_sub3_211_.aShortArray5592 = aShortArray5592
             }
-            if (CollisionFlagQuery.method723(i, anInt5556, (-70).toByte())) {
+            if (method723(i, anInt5556, (-70).toByte())) {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x10).toByte()
                 class64_sub3_211_.aArchiveFileConditionWrapper_5575 = class64_sub3_213_!!.aArchiveFileConditionWrapper_5575
                 class64_sub3_211_.aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 = aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463
@@ -1775,7 +1775,7 @@ class OpenGlModel : AbstractModel {
                 if (aHoverActionEntry_5610 != null && aHoverActionEntry_5610!!.anByteBufferReader_1811 == null) aBoolean5555 = true
                 else aShortArray5601 = null
             }
-            if (aShortArray5592 != null && !CollisionFlagQuery.method724(anInt5648, anInt5556, 393216)) {
+            if (aShortArray5592 != null && !method724(anInt5648, anInt5556, 393216)) {
                 if ((aArchiveFileConditionWrapper_5575 != null && aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 == null) || aHoverActionEntry_5610 != null && (aHoverActionEntry_5610!!.anByteBufferReader_1811) == null) aBoolean5555 = true
                 else {
                     aShortArray5566 = null
@@ -3661,6 +3661,21 @@ class OpenGlModel : AbstractModel {
             if (i != -3157) return false
             anInt2088++
             return method2259(0, i_4_, i_3_) or ((i_3_ and 0x70000) != 0) || ParticleEmitterDef.method2187(i_3_, -79, i_4_)
+        }
+
+
+        var anInt1196: Int = 0
+        fun method723(i: Int, i_2_: Int, i_3_: Byte): Boolean {
+            anInt1196++
+            if (i_3_ >= -66) return true
+            return (method2352(113, i_2_, i) and LinkedListIterator.method1238(i, i_2_, -29))
+        }
+
+        var anInt1191: Int = 0
+        fun method724(i: Int, i_4_: Int, i_5_: Int): Boolean {
+            anInt1191++
+            if (i_5_ != 393216) method723(25, 30, (-113).toByte())
+            return method2352(124, i_4_, i) or ((0x60000 and i) != 0) || BoundsConstraintEntry.method2056(i, 90, i_4_) || method723(i, i_4_, (-120).toByte())
         }
     }
 }

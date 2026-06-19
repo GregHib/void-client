@@ -562,5 +562,16 @@ class CompositeNpcModelBuilder {
             if (i.toInt() != 7) anInt2101 = -42
             aClass348_Sub49Array2105 = null
         }
+        var anInt1193: Int = 0
+        fun method720(i: Int, i_0_: Int) {
+            anInt1193++
+            HeapDiagnosticsHolder.anInt2251 = i
+            withLock(ModelBatchBase.aLruByteCache_1894!!) {
+                ModelBatchBase.aLruByteCache_1894!!.method590(0)
+            }
+            withLock(ModelDataCache.aLruByteCache_355!!) {
+                ModelDataCache.aLruByteCache_355!!.method590(0)
+            }
+        }
     }
 }
