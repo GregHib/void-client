@@ -429,7 +429,7 @@ object ChatCommandProcessor {
             }
             if (i == 5059) {
                 anInt1165++
-                val class348_sub47 = method2148(Js5Archive.aFontMetaRef_643, (TheoraVideoStream.aIsaacCipher_9029), -93)
+                val class348_sub47 = method2148(ChatCommandProcessor.aFontMetaRef_643, (TheoraVideoStream.aIsaacCipher_9029), -93)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_41_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
@@ -454,7 +454,7 @@ object ChatCommandProcessor {
             }
             if (i == 5061) {
                 anInt1165++
-                val class348_sub47 = method2148(Js5Archive.aFontMetaRef_643, (TheoraVideoStream.aIsaacCipher_9029), -104)
+                val class348_sub47 = method2148(ChatCommandProcessor.aFontMetaRef_643, (TheoraVideoStream.aIsaacCipher_9029), -104)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_43_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 1)
@@ -5285,5 +5285,10 @@ object ChatCommandProcessor {
         aStringArray1176 = arrayOf<String>("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
         aLruByteCache_1174 = LruByteCache(4)
         anInt1177 = 0
+    }
+    var aFontMetaRef_643: FontMetaRef? = FontMetaRef(3, -1)
+
+    fun method390(i: Byte) {
+        ChatCommandProcessor.aFontMetaRef_643 = null
     }
 }

@@ -21,7 +21,7 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
 
     private fun method2200(i: Byte, `is`: ByteArray?) {
         anInt3731++
-        val class348_sub49 = ByteBuffer(Js5Archive.method3158(`is`, -105))
+        val class348_sub49 = ByteBuffer(method3158(`is`, -105))
         val i_2_ = class348_sub49.readUnsignedByte(255)
         if (i_2_ < 5 || i_2_ > 6) throw RuntimeException()
         if (i_2_ < 6) this.anInt3732 = 0
@@ -157,6 +157,38 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
             val is_8_ = ByteArray(64)
             whirlpoolHash.method833(true, 0, is_8_)
             return is_8_
+        }
+
+
+        var anInt7046: Int = 0
+        var aGzipDecompressor_6955: GzipDecompressor? = GzipDecompressor()
+        var anInt401: Int = 0
+
+        fun method3158(`is`: ByteArray?, i: Int): ByteArray {
+            anInt7046++
+            val class348_sub49 = ByteBuffer(`is`)
+            val i_37_ = class348_sub49.readUnsignedByte(255)
+            val i_38_ = class348_sub49.readInt((-126).toByte())
+            if (i_38_ < 0 || (anInt401 != 0 && i_38_ > anInt401)) {
+                throw RuntimeException()
+            }
+            if (i_37_ != 0) {
+                val i_39_ = class348_sub49.readInt((-126).toByte())
+                if (i_39_ < 0 || (anInt401 != 0 && i_39_ > anInt401) || i_39_ > 10000000) {
+                    return ByteArray(4)
+                }
+                val is_40_ = ByteArray(i_39_)
+                if (i_37_ == 1) CompressedBlockDecoder.method1547(is_40_, i_39_, `is`, i_38_, 9)
+                else {
+                    withLock(aGzipDecompressor_6955!!) {
+                        aGzipDecompressor_6955!!.method1218(is_40_, 29123, class348_sub49)
+                    }
+                }
+                return is_40_
+            }
+            val is_41_ = ByteArray(i_38_)
+            class348_sub49.method3389(2147483647, 0, i_38_, is_41_)
+            return is_41_
         }
     }
 }

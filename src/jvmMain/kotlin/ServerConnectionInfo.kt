@@ -63,6 +63,7 @@ class ServerConnectionInfo {
             anInt2150++
             return (0x800 and i) != 0
         }
+        var aFloat670: Float = 0f
 
         fun method1260(bool: Boolean, i: Int, modelLightingConfig: ModelLightingConfig?) {
             var i = i
@@ -83,7 +84,7 @@ class ServerConnectionInfo {
                     SceneryDetailOptionState.aCircleRasterizer_6098 = HeapInfoRecord.aCircleRasterizer_4938
                     AbstractModel.aFloat1136 = TextureMetadataProvider.aFloat4626
                     DebugOverlayRenderer.aFloat3172 = NormalMapGenerator.aFloat3462
-                    Js5Archive.aFloat670 = ModelVertexColorBuffer.aFloat6586
+                    aFloat670 = ModelVertexColorBuffer.aFloat6586
                     GlTexture1D.aFloat8560 = RangedGraphicsOptionState.aFloat5945
                     ParticleEmitterFactory.aFloat3177 = CollisionMap.aFloat4455
                     GroundDecorEntity.anInt8739 = NativeIndexBuffer.anInt4703

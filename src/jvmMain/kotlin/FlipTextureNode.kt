@@ -188,7 +188,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 method132(124, (WidgetRedrawTracker.anInt3932 == (class46.anInt765)), class46.anInt709, i_24_, class46.anInt789, i_25_)
                                                 FacingDirectionNode.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                             }
-                                            GzipDecompressor.aBooleanArray2076!![i_23_] = true
+                                            OpenGlModel.aBooleanArray2076!![i_23_] = true
                                             i_18_++
                                             continue
                                         }
@@ -221,14 +221,14 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                         }
                                         if (class46.anInt765 == TimedRecordAccessor.anInt7102) {
                                             MapElementDecor.method2464((-7).toByte(), i_24_, class46.anInt709, class46.anInt789, FacingDirectionNode.aRenderer6654, i_25_, SourceRowTextureNode.Companion.aRenderConfig9113)
-                                            GzipDecompressor.aBooleanArray2076!![i_23_] = true
+                                            OpenGlModel.aBooleanArray2076!![i_23_] = true
                                             FacingDirectionNode.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                             i_18_++
                                             continue
                                         }
                                         if (MapSceneIconDef.anInt2861 == class46.anInt765) {
                                             CollisionMap.method3498(class46.anInt789, FacingDirectionNode.aRenderer6654, i_24_, class46.anInt709, true, i_25_)
-                                            GzipDecompressor.aBooleanArray2076!![i_23_] = true
+                                            OpenGlModel.aBooleanArray2076!![i_23_] = true
                                             FacingDirectionNode.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                             i_18_++
                                             continue
@@ -302,7 +302,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     MapLabelMenuEntry.method1042((-123).toByte())
                                                     i_38_ += 12
                                                 }
-                                                GzipDecompressor.aBooleanArray2076!![i_23_] = true
+                                                OpenGlModel.aBooleanArray2076!![i_23_] = true
                                             }
                                             i_18_++
                                             continue

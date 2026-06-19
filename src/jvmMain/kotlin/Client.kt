@@ -427,8 +427,6 @@ import GlShaderObjectHandle.Companion.method367
 import NpcModelTransform.Companion.method177
 import MinimapTileEntry.Companion.method380
 import MapSceneRenderer.method387
-import Js5Archive.Companion.method390
-import Js5Archive.Companion.method395
 import NanoTimer.Companion.method445
 import SpriteRenderable.Companion.method453
 import WorldMapElement.Companion.method180
@@ -718,7 +716,7 @@ class Client : GameAppletFrame() {
         ScriptCompilerThread.method1052((-124).toByte())
         method2671(0)
         method2344(i + -108)
-        method390(10.toByte())
+        ChatCommandProcessor.method390(10.toByte())
         method786(0.toByte())
         method584(116.toByte())
         method1980(i.toInt() xor 0xe)
@@ -875,7 +873,7 @@ class Client : GameAppletFrame() {
         method1619(108.toByte())
         ProjectileConfigUtil.method316((-94).toByte())
         GlTexture3D.method2199(63.toByte())
-        GzipDecompressor.method1216((-97).toByte())
+        OpenGlModel.method1216((-97).toByte())
         method2286(114)
         method2645(i + -16777324)
         method2331(true)
@@ -1727,7 +1725,7 @@ class Client : GameAppletFrame() {
                     i++
                 }
                 try {
-                    if (GrayscaleNoiseTexture.aBoolean5300) method395(107)
+                    if (GrayscaleNoiseTexture.aBoolean5300) Tooltip.method395(107)
                     else FacingDirectionNode.aRenderer6654!!.method3689(104.toByte())
                 } catch (clientException_: ClientException) {
                     method1242((clientException_.message + " (Recovered) " + method81(79.toByte())), clientException_, 15004)

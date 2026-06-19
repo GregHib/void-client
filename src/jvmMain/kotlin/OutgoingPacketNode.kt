@@ -39,14 +39,14 @@ class OutgoingPacketNode : LinkedListNode() {
                     anInt7120++
                     SkyboxGradient.anInt3936 = 0
                     val l_1_ = method599(-53)
-                    var class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1872(8) as SceneGraphContainer?
+                    var class318_sub10 = OpenGlModel.aDoublyLinkedNodeList_2077!!.method1872(8) as SceneGraphContainer?
                     if (i > 40) {
                         while ( /**/class318_sub10 != null) {
                             if (class318_sub10.method2535(var_renderer, l)) WallEntity.anInt8780++
-                            class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1878((-64).toByte()) as SceneGraphContainer?
+                            class318_sub10 = OpenGlModel.aDoublyLinkedNodeList_2077!!.method1878((-64).toByte()) as SceneGraphContainer?
                         }
                         if (!PcmStreamBuffer.aBoolean8874 || l % 100L != 0L) break
-                        println("Particle system count: " + GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1874(0) + ", running: " + WallEntity.anInt8780)
+                        println("Particle system count: " + OpenGlModel.aDoublyLinkedNodeList_2077!!.method1874(0) + ", running: " + WallEntity.anInt8780)
                         println("Emitters: " + ObjectSpawnDecoder.anInt1803 + " Particles: " + SkyboxGradient.anInt3936 + ". Time taken: " + (-l_1_ + method599(-112)) + "ms")
                     }
                 } catch (runtimeexception: RuntimeException) {

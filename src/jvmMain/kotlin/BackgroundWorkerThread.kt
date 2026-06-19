@@ -82,10 +82,10 @@ class BackgroundWorkerThread : Runnable {
             GlGroundShaderPass.aLongHashTable_7415 = LongHashTable(8)
             anInt3219++
             SpotAnimEntity.anInt6450 = 0
-            var class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1872(8) as SceneGraphContainer?
+            var class318_sub10 = OpenGlModel.aDoublyLinkedNodeList_2077!!.method1872(8) as SceneGraphContainer?
             while (class318_sub10 != null) {
                 class318_sub10.method2530()
-                class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1878((-115).toByte()) as SceneGraphContainer?
+                class318_sub10 = OpenGlModel.aDoublyLinkedNodeList_2077!!.method1878((-115).toByte()) as SceneGraphContainer?
             }
         }
     }

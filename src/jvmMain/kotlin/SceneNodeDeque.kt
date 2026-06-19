@@ -183,7 +183,7 @@ class SceneNodeDeque {
                             GlRectangleTexture.method254(i_3_, (-113).toByte())
                             PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
                             PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
-                            GzipDecompressor.method1215(3.toByte())
+                            method1215(3.toByte())
                             return
                         }
                         CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
@@ -287,7 +287,7 @@ class SceneNodeDeque {
                                             GlRectangleTexture.method254(i_11_, (-87).toByte())
                                             PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
                                             PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
-                                            GzipDecompressor.method1215(3.toByte())
+                                            method1215(3.toByte())
                                             return
                                         }
                                         return
@@ -316,7 +316,7 @@ class SceneNodeDeque {
                             GlRectangleTexture.method254(21, (-95).toByte())
                             PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
                             PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
-                            GzipDecompressor.method1215(3.toByte())
+                            method1215(3.toByte())
                         }
                     } else if (NpcDefinition.anInt2955 == 13) {
                         if (PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 102)) {
@@ -326,7 +326,7 @@ class SceneNodeDeque {
                             GlRectangleTexture.method254(29, (-97).toByte())
                             PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
                             PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
-                            GzipDecompressor.method1215(3.toByte())
+                            method1215(3.toByte())
                         }
                     } else if (NpcDefinition.anInt2955 == 8) {
                         if (PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 107)) {
@@ -487,7 +487,7 @@ class SceneNodeDeque {
                     if (GroundDecorSceneEntity.anInt9971 >= 3) {
                         NpcDefinition.anInt2955 = 0
                         GlRectangleTexture.method254(-4, (-87).toByte())
-                        GzipDecompressor.method1215(3.toByte())
+                        method1215(3.toByte())
                     } else {
                         if (BloomGraphicsOptionState.anInt5969 != 2) ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
                         else CacheStateResetter.aServerConnectionInfo_125!!.method1259(0)
@@ -504,6 +504,14 @@ class SceneNodeDeque {
             println("Error: " + TileRenderState.method2680("\n", true, "%0a", string))
             anInt1492++
             if (i != -5192) method843(17.toByte())
+        }
+        var anInt2078: Int = 0
+        fun method1215(i: Byte) {
+            anInt2078++
+            if (WorldMapRenderer.anInt4674 != 9) {
+                if (WorldMapRenderer.anInt4674 == 5 || WorldMapRenderer.anInt4674 == 6) ByteBufferStatics.method3379(2, 3)
+                else if (WorldMapRenderer.anInt4674 == 12) ByteBufferStatics.method3379(2, 3)
+            } else ByteBufferStatics.method3379(2, 5)
         }
     }
 }

@@ -124,7 +124,7 @@ class TextureCache internal constructor(var_ha_Sub2: OpenGlRenderer?, var_render
         fun method3466(i: Int) {
             val i_2_ = 22 / ((-2 - i) / 52)
             anInt4352++
-            for (i_3_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_3_] = true
+            for (i_3_ in 0..99) OpenGlModel.aBooleanArray2076!![i_3_] = true
         }
 
         @JvmStatic

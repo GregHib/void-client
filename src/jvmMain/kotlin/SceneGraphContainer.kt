@@ -58,7 +58,7 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
     }
 
     private fun method2531(i: Int, bool: Boolean) {
-        GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1869(-88, this)
+        OpenGlModel.aDoublyLinkedNodeList_2077!!.method1869(-88, this)
         aLong6472 = i.toLong()
         aLong6471 = i.toLong()
         aBoolean6484 = true

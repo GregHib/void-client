@@ -56,8 +56,8 @@ class ParticleAmountConfig {
                     FloorOverlayDefinition.anInt3941 = i_11_
                 }
             } else if (i_4_ == -1) {
-                for (i_10_ in 0..99) GzipDecompressor.Companion.aBooleanArray2076!![i_10_] = true
-            } else GzipDecompressor.Companion.aBooleanArray2076!![i_4_] = true
+                for (i_10_ in 0..99) OpenGlModel.aBooleanArray2076!![i_10_] = true
+            } else OpenGlModel.aBooleanArray2076!![i_4_] = true
         }
     }
 }

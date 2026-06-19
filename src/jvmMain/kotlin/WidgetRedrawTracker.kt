@@ -85,7 +85,7 @@ class WidgetRedrawTracker {
                 NativeLibraryState.anInt167 = SequencedWallEntity.anInt10163
                 WeaveTextureNode.anInt9282 = 1
                 ByteBufferStatics.method3379(2, 10)
-                for (i_2_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_2_] = true
+                for (i_2_ in 0..99) OpenGlModel.aBooleanArray2076!![i_2_] = true
                 method2145(-24498)
                 LightingOptionState.aClass348_Sub26_5881 = null
                 FloatCameraTransform.aLong5745 = 0L

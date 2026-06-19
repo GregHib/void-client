@@ -50,7 +50,7 @@ object TextureLoadExceptionStatics {
         if (i != 1024) method4012(null, 68.toByte())
         Client.anInt5171 = 0
         TerrainTileShape.anInt8808 = 0
-        GzipDecompressor.aDoublyLinkedNodeList_2077 = DoublyLinkedNodeList()
+        OpenGlModel.aDoublyLinkedNodeList_2077 = DoublyLinkedNodeList()
         DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103 = arrayOfNulls<ProjectileNode>(1024)
         DisplaySettingsConfig.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>((KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637]) + 1)
         GlTexture2D.anInt8550 = 0

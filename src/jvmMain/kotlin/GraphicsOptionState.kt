@@ -94,7 +94,7 @@ abstract class GraphicsOptionState {
         var aByteArrayArrayArray6962: Array<Array<ByteArray?>?>? = null
 
         fun method3024(i: Int) {
-            Js5Archive.aGzipDecompressor_6955 = null
+            CutsceneSequenceData.aGzipDecompressor_6955 = null
             aByteArrayArrayArray6962 = null
         }
 

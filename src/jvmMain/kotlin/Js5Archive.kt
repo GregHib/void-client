@@ -1,5 +1,3 @@
-import CompressedBlockDecoder.method1547
-import java.util.*
 
 /* Class45 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -25,8 +23,8 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         try {
             anInt647++
             if (!method399(false)) return null
-            string = string!!.lowercase(Locale.getDefault())
-            string_1_ = string_1_!!.lowercase(Locale.getDefault())
+            string = string!!.lowercase()
+            string_1_ = string_1_!!.lowercase()
             val i_2_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
             if (!method392(i_2_, (-40).toByte())) return null
             if (i != -29832) method392(22, 12.toByte())
@@ -49,7 +47,6 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
 
     fun method393(i: Int, i_5_: Int, i_6_: Int, `is`: IntArray?): ByteArray? {
         anInt639++
-        if (i_6_ != 2) anInt669 = 51
         if (!method418(i_5_, i_6_ + -2, i)) return null
         if (anObjectArrayArray664!![i] == null || anObjectArrayArray664!![i]!![i_5_] == null) {
             var bool = method394(i_5_, (-78).toByte(), `is`, i)
@@ -97,7 +94,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         }
         val is_15_: ByteArray?
         try {
-            is_15_ = method3158(is_14_, -120)
+            is_15_ = CutsceneSequenceData.method3158(is_14_, -120)
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("T3 - " + (`is` != null) + "," + i_9_ + "," + is_14_.size + "," + CutsceneSequenceData.method554(5126, is_14_.size, is_14_) + "," + CutsceneSequenceData.method554(5126, -2 + is_14_.size, is_14_) + "," + aCutsceneSequenceData_629!!.anIntArray3729[i_9_] + "," + aCutsceneSequenceData_629!!.anInt3719))
         }
@@ -215,7 +212,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         var string = string
         anInt633++
         if (!method399(false)) return 0
-        string = string.lowercase(Locale.getDefault())
+        string = string.lowercase()
         val i_47_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, i xor 0x7265.inv()))
         return method419(i, i_47_)
     }
@@ -255,7 +252,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         anInt635++
         if (!method399(false)) return false
         if (i != -18308) return false
-        string = string.lowercase(Locale.getDefault())
+        string = string.lowercase()
         val i_52_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
         return i_52_ >= 0
     }
@@ -288,8 +285,8 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         try {
             anInt626++
             if (!method399(false)) return false
-            string = string!!.lowercase(Locale.getDefault())
-            string_56_ = string_56_!!.lowercase(Locale.getDefault())
+            string = string!!.lowercase()
+            string_56_ = string_56_!!.lowercase()
             val i_57_ = (aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(i xor 0x1c1a, ClanChatRequestSender.method2108(string, -29286)))
             if (i != 7195) method403(null, -20, null)
             if (!method392(i_57_, (-40).toByte())) return false
@@ -351,7 +348,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         var string = string
         anInt663++
         if (bool == true && method399(false)) {
-            string = string.lowercase(Locale.getDefault())
+            string = string.lowercase()
             val i = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
             method402((-86).toByte(), i)
         }
@@ -387,9 +384,8 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         var string = string
         anInt636++
         if (!method399(false)) return false
-        string = string.lowercase(Locale.getDefault())
+        string = string.lowercase()
         val i_69_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(i + -99, ClanChatRequestSender.method2108(string, -29286))
-        if (i != 100) aFloat670 = 0.37849286f
         return method408((-120).toByte(), i_69_)
     }
 
@@ -423,7 +419,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         if (i != 0) return 113
         anInt654++
         if (!method399(false)) return -1
-        string = string.lowercase(Locale.getDefault())
+        string = string.lowercase()
         val i_72_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
         if (!method392(i_72_, (-40).toByte())) return -1
         return i_72_
@@ -473,9 +469,8 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         try {
             anInt668++
             if (!method399(false)) return false
-            string_78_ = string_78_!!.lowercase(Locale.getDefault())
-            if (i > -18) anInt669 = 40
-            string = string!!.lowercase(Locale.getDefault())
+            string_78_ = string_78_!!.lowercase()
+            string = string!!.lowercase()
             val i_79_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string_78_, -29286))
             if (i_79_ < 0) return false
             val i_80_ = aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_79_]!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
@@ -530,10 +525,6 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         @JvmField
         var anInt641: Int = 0
         @JvmField
-        var anInt642: Int = 0
-        @JvmField
-        var aFontMetaRef_643: FontMetaRef? = FontMetaRef(3, -1)
-        @JvmField
         var anInt644: Int = 0
         @JvmField
         var anInt645: Int = 0
@@ -577,53 +568,6 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         var anInt668: Int = 0
         @JvmField
         var anInt669: Int = 0
-        @JvmField
-        var aFloat670: Float = 0f
 
-        @JvmStatic
-        fun method390(i: Byte) {
-            aFontMetaRef_643 = null
-            if (i.toInt() != 10) Companion.method390((-3).toByte())
-        }
-
-        @JvmStatic
-        @Throws(ClientException::class)
-        fun method395(i: Int) {
-            if (WhirlpoolHash.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
-            else CameraRotationStub.aRenderer326!!.method3626(0, 0)
-            if (i >= 73) anInt642++
-        }
-
-        var aGzipDecompressor_6955: GzipDecompressor? = GzipDecompressor()
-
-        var anInt7046: Int = 0
-        var anInt401: Int = 0
-
-        fun method3158(`is`: ByteArray?, i: Int): ByteArray {
-            anInt7046++
-            val class348_sub49 = ByteBuffer(`is`)
-            val i_37_ = class348_sub49.readUnsignedByte(255)
-            val i_38_ = class348_sub49.readInt((-126).toByte())
-            if (i_38_ < 0 || (anInt401 != 0 && i_38_ > anInt401)) {
-                throw RuntimeException()
-            }
-            if (i_37_ != 0) {
-                val i_39_ = class348_sub49.readInt((-126).toByte())
-                if (i_39_ < 0 || (anInt401 != 0 && i_39_ > anInt401) || i_39_ > 10000000) {
-                    return ByteArray(4)
-                }
-                val is_40_ = ByteArray(i_39_)
-                if (i_37_ == 1) method1547(is_40_, i_39_, `is`, i_38_, 9)
-                else {
-                    withLock(aGzipDecompressor_6955!!) {
-                        aGzipDecompressor_6955!!.method1218(is_40_, 29123, class348_sub49)
-                    }
-                }
-                return is_40_
-            }
-            val is_41_ = ByteArray(i_38_)
-            class348_sub49.method3389(2147483647, 0, i_38_, is_41_)
-            return is_41_
-        }
     }
 }

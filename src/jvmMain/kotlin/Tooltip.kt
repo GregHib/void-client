@@ -1,7 +1,6 @@
 import MinimapRectClipper.method226
 import SceneTilePlaneManager.method260
 import TextureAtlasState.Companion.method3490
-import Js5Archive.Companion.method395
 
 /* Class362 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -90,5 +89,13 @@ object Tooltip {
         aParticleDefLoader_4460 = null
         if (i != 4) anInt4458 = 96
         aFont_4456 = null
+    }
+
+    var anInt642: Int = 0
+    @Throws(ClientException::class)
+    fun method395(i: Int) {
+        if (WhirlpoolHash.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
+        else CameraRotationStub.aRenderer326!!.method3626(0, 0)
+        if (i >= 73) anInt642++
     }
 }

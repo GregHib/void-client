@@ -1550,7 +1550,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 RegionTileNode.method2772(i_202_, 123.toByte())
                 method1713(false, 520)
                 ChatCommandProcessor.method703(RenderNodeStatics.anInt9721)
-                for (i_203_ in 0..99) GzipDecompressor.aBooleanArray2076!![i_203_] = true
+                for (i_203_ in 0..99) OpenGlModel.aBooleanArray2076!![i_203_] = true
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }

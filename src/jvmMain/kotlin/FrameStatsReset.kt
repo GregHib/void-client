@@ -2508,7 +2508,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRectangleTexture.anInt8646 = 0
             ProjectedGroundDecor.anInt10216 = 0
             LocTypeDefLoader.anInt2508 = 0
-            Js5Archive.anInt7046 = 0
+            CutsceneSequenceData.anInt7046 = 0
             NoiseTextureGenerator.anInt1077 = 0
             TerrainTileShape.anInt8809 = 0
             SpriteRenderable.anInt4723 = 0
@@ -3454,7 +3454,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             AnimatedModelRenderer.anInt8401 = 0
             SocketStreamWorker.anInt2660 = 0
             NativeRenderer.anInt7889 = 0
-            GzipDecompressor.anInt2070 = 0
+            CubemapTextureImplSource.anInt2070 = 0
             ByteBuffer.anInt7148 = 0
             OpenGlRenderer.anInt7696 = 0
             AbstractFrameBufferSurface.anInt6915 = 0
@@ -3861,7 +3861,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9825 = 0
             Direct3dModel.anInt5451 = 0
             GlRectangleTexture.anInt8643 = 0
-            GzipDecompressor.anInt2078 = 0
+            SceneNodeDeque.anInt2078 = 0
             NativeRenderer.anInt8022 = 0
             NativeRenderer.anInt7915 = 0
             LocConfigModelBuilder.anInt4510 = 0
@@ -3986,7 +3986,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RangedGraphicsOptionState.anInt5937 = 0
             NullOggStream.anInt9046 = 0
             IntHashSet.anInt3960 = 0
-            Js5Archive.anInt642 = 0
+            Tooltip.anInt642 = 0
             TrackedGroundDecor.anInt10382 = 0
             GlGroundShaderPass.anInt7414 = 0
             ScriptCompilerThread.anInt1732 = 0
@@ -4165,7 +4165,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
 
             MapElementManager.method3515(-45)
             SocketGameConnection.aBoolean5840 = true
-            for (j1 in 0..99) GzipDecompressor.aBooleanArray2076!![j1] = true
+            for (j1 in 0..99) OpenGlModel.aBooleanArray2076!![j1] = true
 
             for (k1 in 0..5) DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![k1] = FloorOverlayDefinition()
 

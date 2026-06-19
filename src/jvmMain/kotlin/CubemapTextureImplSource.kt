@@ -73,8 +73,8 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
         fun method2271(i: Int) {
             anInt8710++
             if (!OggCacheStream.aBoolean5265) {
-                GzipDecompressor.method1217(0, WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!!)
-                if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) GzipDecompressor.method1217(0, (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!!))
+                method1217(0, WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!!)
+                if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) method1217(0, (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!!))
                 OggCacheStream.aBoolean5265 = true
             }
         }
@@ -83,6 +83,34 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
         fun method2272(i: Int) {
             if (i < 85) method2271(-124)
             anIntArray8712 = null
+        }
+
+        var anInt2070: Int = 0
+        fun method1217(i: Int, sceneCollisionEntries: Array<Array<Array<SceneCollisionEntry?>?>?>) {
+            anInt2070++
+            for (i_2_ in i..<sceneCollisionEntries.size) {
+                val sceneCollisionEntryS_3_: Array<Array<SceneCollisionEntry?>?> = sceneCollisionEntries[i_2_]!!
+                for (i_4_ in sceneCollisionEntryS_3_.indices) {
+                    var i_5_ = 0
+                    while ((sceneCollisionEntryS_3_[i_4_]!!.size > i_5_)) {
+                        val class357 = sceneCollisionEntryS_3_[i_4_]!![i_5_]
+                        if (class357 != null) {
+                            if (class357.aClass318_Sub1_Sub1_4402 is RenderTarget) (class357.aClass318_Sub1_Sub1_4402 as RenderTarget).method40(-12031)
+                            if (class357.aClass318_Sub1_Sub5_4395 is RenderTarget) (class357.aClass318_Sub1_Sub5_4395 as RenderTarget).method40(-12031)
+                            if (class357.aClass318_Sub1_Sub5_4407 is RenderTarget) (class357.aClass318_Sub1_Sub5_4407 as RenderTarget).method40(-12031)
+                            if (class357.aClass318_Sub1_Sub4_4406 is RenderTarget) (class357.aClass318_Sub1_Sub4_4406 as RenderTarget).method40(-12031)
+                            if (class357.aClass318_Sub1_Sub4_4403 is RenderTarget) (class357.aClass318_Sub1_Sub4_4403 as RenderTarget).method40(-12031)
+                            var class148 = class357.aWidgetNodeLink_4396
+                            while (class148 != null) {
+                                val class318_sub1_sub3 = (class148.aClass318_Sub1_Sub3_2040)
+                                if (class318_sub1_sub3 is RenderTarget) (class318_sub1_sub3 as RenderTarget).method40(i xor 0x2efe.inv())
+                                class148 = class148.aWidgetNodeLink_2038
+                            }
+                        }
+                        i_5_++
+                    }
+                }
+            }
         }
     }
 }

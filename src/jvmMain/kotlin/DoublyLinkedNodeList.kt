@@ -114,10 +114,10 @@ class DoublyLinkedNodeList {
         fun method1877(var_renderer: Renderer?, i: Int) {
             anInt3164++
             if (i >= -20) method1877(null, -112)
-            var class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1872(8) as SceneGraphContainer?
+            var class318_sub10 = OpenGlModel.aDoublyLinkedNodeList_2077!!.method1872(8) as SceneGraphContainer?
             while (class318_sub10 != null) {
                 if (class318_sub10.aBoolean6482) class318_sub10.method2528(var_renderer)
-                class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1878(124.toByte()) as SceneGraphContainer?
+                class318_sub10 = OpenGlModel.aDoublyLinkedNodeList_2077!!.method1878(124.toByte()) as SceneGraphContainer?
             }
         }
 

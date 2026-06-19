@@ -162,13 +162,13 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     private fun method88(i: Int) {
         anInt2++
         val l = GameClock.method599(-119)
-        val l_2_ = ByteBufferStatics.aLongArray7206!![GzipDecompressor.anInt2071]
-        ByteBufferStatics.aLongArray7206!![GzipDecompressor.anInt2071] = l
+        val l_2_ = ByteBufferStatics.aLongArray7206!![anInt2071]
+        ByteBufferStatics.aLongArray7206!![anInt2071] = l
         if (l_2_ != 0L && l_2_ < l) {
             val i_3_ = (l - l_2_).toInt()
             SimpleToggleOptionState.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_
         }
-        GzipDecompressor.anInt2071 = GzipDecompressor.anInt2071 - -1 and 0x1f
+        anInt2071 = anInt2071 - -1 and 0x1f
         if (ParticleAmountConfig.anInt2127++ > 50) {
             ParticleAmountConfig.anInt2127 -= 50
             SpriteRenderable.aBoolean4726 = true
@@ -578,5 +578,6 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             aFont_20 = null
             if (i != 32717) method86(null, 65)
         }
+        var anInt2071: Int = 0
     }
 }
