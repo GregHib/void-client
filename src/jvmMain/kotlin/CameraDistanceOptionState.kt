@@ -60,7 +60,8 @@ class CameraDistanceOptionState : GraphicsOptionState {
         }
 
         var aFloat3938: Float = 0.0f
-        
+
+        var anInt6979: Int = 0
         @JvmStatic
         fun method1725(i: Int) {
             anInt5855++
@@ -101,8 +102,8 @@ class CameraDistanceOptionState : GraphicsOptionState {
             var i_12_ = 1536 * (i_6_ shr 2)
             if (i_12_ > 786432) i_12_ = 786432
             if (i_12_ < i) i_12_ = 262144
-            if (IntKeyNode.anInt6979 < i_12_) IntKeyNode.anInt6979 += (i_12_ - IntKeyNode.anInt6979) / 24
-            else if (IntKeyNode.anInt6979 > i_12_) IntKeyNode.anInt6979 += (-IntKeyNode.anInt6979 + i_12_) / 80
+            if (anInt6979 < i_12_) anInt6979 += (i_12_ - anInt6979) / 24
+            else if (anInt6979 > i_12_) anInt6979 += (-anInt6979 + i_12_) / 80
         }
     }
 }

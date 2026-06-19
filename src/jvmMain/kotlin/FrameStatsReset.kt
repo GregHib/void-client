@@ -513,7 +513,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WaterDetailOptionState.anInt5982 = 0
             OpenGlRenderer.anInt7659 = 0
             WidgetComponentNode.anInt4662 = 0
-            IntKeyNode.anInt6975 = 0
+            ClientGameLoopNode.anInt6975 = 0
             GlTexture2D.anInt8544 = 0
             GlRenderDevice.anInt9873 = 0
             OggMediaStream.anInt989 = 0
@@ -4137,7 +4137,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ShortMatrixNode.anInt9515 = 0
             RenderableEntry.anInt4336 = 0
             TileTextureNode.anInt9406 = 0
-            IntKeyNode.anInt6981 = 0
+            TwoStateOptionState.anInt6981 = 0
             GlGroundShaderPass.anInt7403 = 0
             for (l in IsaacCipher.anIntArray1303!!.indices) if (!GlslEnvMaterialPass.aBooleanArray6270!![l]) IsaacCipher.anIntArray1303!![l] = -1
 

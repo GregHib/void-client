@@ -84,7 +84,7 @@ class InputStream_Sub2 : InputStream() {
                             i_25_
                         )
                     }
-                } else if (rgbColorPalette == IntKeyNode.aRgbColorPalette_6977) {
+                } else if (rgbColorPalette == InputStream_Sub2.aRgbColorPalette_6977) {
                     val i_29_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     val i_30_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_29_).method478(i_30_, -31076)
@@ -306,5 +306,6 @@ class InputStream_Sub2 : InputStream() {
             if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350) != 0 && i != 0 && HintArrowOrMessage.anInt2021 < 50 && i_7_ != -1) GlTextureCubeMap.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(1.toByte(), i_7_, i, i_4_, i_5_, i_3_, i_6_, null)
             anInt490++
         }
+        var aRgbColorPalette_6977: RgbColorPalette? = RgbColorPalette(8, 3)
     }
 }

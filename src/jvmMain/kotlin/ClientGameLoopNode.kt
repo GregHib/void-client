@@ -207,7 +207,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
                     else KeyboardLayoutConfig.aBoolean2130 = false
                     if (!MinimapSquareDrawer.aBoolean5224) MultiFieldRecord.Companion.aFloat6898 /= 2.0f
                     else MinimapSquareDrawer.aBoolean5224 = false
-                    IntKeyNode.Companion.method3027(33.toByte())
+                    method3027(33.toByte())
                     if (WorldMapRenderer.anInt4674 == 10) {
                         LoadingScreenImageNode.method3175(55.toByte())
                         method362(i + -11335)
@@ -601,7 +601,7 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
         var anInt6961: Int = 0
         fun method3025(i: Byte, class348_sub49_sub2: CipheredPacketBuffer) {
             anInt6961++
-            val class348_sub48 = IntKeyNode.Companion.aNodeDeque_6978!!.method1995(4) as ModelResourceBundle?
+            val class348_sub48 = aNodeDeque_6978!!.method1995(4) as ModelResourceBundle?
             if (class348_sub48 != null) {
                 var bool = false
                 for (i_0_ in 0..<class348_sub48.anInt7126) {
@@ -698,5 +698,24 @@ class ClientGameLoopNode internal constructor(var anInt6872: Int, var anInt6875:
             }
         }
         var anInt4263: Int = 2
+        var anInt6975: Int = 0
+        fun method3027(i: Byte) {
+            anInt6975++
+            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && CompiledScriptCache.anInt4372 != ParticleSystemState.anInt2204) RegionSceneShifter.Companion.method3157(FileIoUtil.anInt4095, 123.toByte(), Renderer.anInt4581, 11, false)
+            else {
+                StringValueNode.method3319(FacingDirectionNode.aRenderer6654, (-121).toByte())
+                if (i.toInt() != 33) method3028(-79)
+                if (TrackedGroundDecor.anInt10395 != CompiledScriptCache.anInt4372) EdgeDetectTextureNode.method3072((-96).toByte())
+            }
+        }
+        var aNodeDeque_6978: NodeDeque? = NodeDeque()
+
+        @JvmStatic
+        fun method3028(i: Int) {
+            InputStream_Sub2.aRgbColorPalette_6977 = null
+            ClientLoadStateMachine.aJs5Archive_6980 = null
+            aNodeDeque_6978 = null
+        }
+
     }
 }

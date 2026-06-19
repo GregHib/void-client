@@ -29,7 +29,7 @@ abstract class MaterialPass internal constructor(var aHa_Sub2_3684: OpenGlRender
         @JvmStatic
         fun method2138(i: Int): Boolean {
             anInt3681++
-            val class348_sub48 = IntKeyNode.aNodeDeque_6978!!.method1995(4) as ModelResourceBundle?
+            val class348_sub48 = ClientGameLoopNode.aNodeDeque_6978!!.method1995(4) as ModelResourceBundle?
             if (class348_sub48 == null) return false
             val i_3_ = 118 % ((-40 - i) / 50)
             var i_4_ = 0

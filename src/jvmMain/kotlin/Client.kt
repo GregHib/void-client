@@ -311,7 +311,7 @@ import ModelVertexColorBuffer.Companion.method2738
 import AbstractFrameBufferSurface.Companion.method3010
 import ProducerImageSurface.Companion.method3016
 import IntPair.Companion.method3026
-import IntKeyNode.Companion.method3028
+import ClientGameLoopNode.Companion.method3028
 import WidgetActionEntry.Companion.method3029
 import TerrainShadowBuilderGl3.Companion.method3035
 import ClientMachineInfo.Companion.method2748
@@ -3945,7 +3945,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == GroundDecorRenderer.aIntRange_3641) {
-                method128(IntKeyNode.aRgbColorPalette_6977, 8.toByte())
+                method128(InputStream_Sub2.aRgbColorPalette_6977, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }

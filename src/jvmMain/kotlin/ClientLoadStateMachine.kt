@@ -121,7 +121,7 @@ object ClientLoadStateMachine {
             ShortKeyNode.aJs5Archive_6909 = WorldMapTextLabel.method3571(false, 0, (-23).toByte(), 1)
             TextureGenerator.aJs5Archive_2490 = WorldMapTextLabel.method3571(false, 1, (-23).toByte(), 1)
             DirectionUtil.aJs5Archive_1541 = WorldMapTextLabel.method3571(false, 2, (-23).toByte(), 1)
-            IntKeyNode.aJs5Archive_6980 = WorldMapTextLabel.method3571(false, 3, (-23).toByte(), 1)
+            ClientLoadStateMachine.aJs5Archive_6980 = WorldMapTextLabel.method3571(false, 3, (-23).toByte(), 1)
             ClientLoadStateMachine.aJs5Archive_1878 = WorldMapTextLabel.method3571(false, 4, (-23).toByte(), 1)
             AbstractCameraTransformStatics.aJs5Archive_7382 = WorldMapTextLabel.method3571(true, 5, (-23).toByte(), 1)
             CachedRgbNoiseTexture.aJs5Archive_8667 = WorldMapTextLabel.method3571(true, 6, (-23).toByte(), 1)
@@ -203,7 +203,7 @@ object ClientLoadStateMachine {
             WaterDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             RenderConfigFactory.aVarbitDefLoader_2981 = VarbitDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, MidiSequencePlayer.aJs5Archive_8926)
             NormalMapGenerator.aParticleAmountCache_3453 = ParticleAmountCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            WorldMapImageBuilder.method699(SoftwareSpriteRaster.aJs5Archive_1627, (-100).toByte(), IntKeyNode.aJs5Archive_6980, CameraRotationStub.aJs5Archive_322, RasterSprite.aJs5Archive_5207)
+            WorldMapImageBuilder.method699(SoftwareSpriteRaster.aJs5Archive_1627, (-100).toByte(), ClientLoadStateMachine.aJs5Archive_6980, CameraRotationStub.aJs5Archive_322, RasterSprite.aJs5Archive_5207)
             method85(0, NodeDequeStatics.aJs5Archive_3323)
             ScriptResources.aTextureDefinitionCache_2639 = TextureDefinitionCache(ChatCommandProcessor.anInt6967, ModelBatchBase.aJs5Archive_1897, ConfigArchiveLoader.aJs5Archive_1434)
             BrightnessOptionState.aCompiledScriptCache_5900 = CompiledScriptCache(ChatCommandProcessor.anInt6967, ModelBatchBase.aJs5Archive_1897, ConfigArchiveLoader.aJs5Archive_1434, ItemNameResolver())
@@ -244,14 +244,14 @@ object ClientLoadStateMachine {
                 i_13_++
             }
             method1063(1)
-            GlBufferObject.anInt4737 = IntKeyNode.aJs5Archive_6980!!.method417("loginscreen", i xor 0x6ff3.inv())
-            FloorOverlayDefinition.anInt970 = IntKeyNode.aJs5Archive_6980!!.method417("lobbyscreen", 0)
+            GlBufferObject.anInt4737 = ClientLoadStateMachine.aJs5Archive_6980!!.method417("loginscreen", i xor 0x6ff3.inv())
+            FloorOverlayDefinition.anInt970 = ClientLoadStateMachine.aJs5Archive_6980!!.method417("lobbyscreen", 0)
             AbstractCameraTransformStatics.aJs5Archive_7382!!.method404(0, true, false)
             CachedRgbNoiseTexture.aJs5Archive_8667!!.method404(0, true, true)
             CameraRotationStub.aJs5Archive_322!!.method404(i + 28660, true, true)
             SoftwareSpriteRaster.aJs5Archive_1627!!.method404(0, true, true)
             SceneTilePlaneManager.aJs5Archive_233!!.method404(0, true, true)
-            IntKeyNode.aJs5Archive_6980!!.method404(0, true, true)
+            ClientLoadStateMachine.aJs5Archive_6980!!.method404(0, true, true)
             DirectionUtil.aJs5Archive_1541!!.anInt634 = 2
             MapElementDefinitionCache.aBoolean3988 = true
             VideoAdChecker.aJs5Archive_3183!!.anInt634 = 2
@@ -334,4 +334,5 @@ object ClientLoadStateMachine {
         }
     }
     var aJs5Archive_1878: Js5Archive? = null
+    var aJs5Archive_6980: Js5Archive? = null
 }

@@ -206,7 +206,7 @@ class RegionSceneShifter : LinkedListNode() {
                         GlslMaterialPass.anInt6246 -= 512 * i_20_
                         RenderableEntry.anInt4336 -= i_20_
                         ClanChatRequestSender.anInt3647 -= i_21_
-                        IntKeyNode.Companion.anInt6981 -= i_20_
+                        TwoStateOptionState.anInt6981 -= i_20_
                         CompositeRgbNoiseTexture.anInt8685 -= 512 * i_21_
                         if ((GlCubemapLightPass.anInt7319 < abs(i_20_)) || abs(i_21_) > RangeThresholdTextureNode.anInt9109) method773(true)
                     } else if (WeaveTextureNode.anInt9282 == 4) {

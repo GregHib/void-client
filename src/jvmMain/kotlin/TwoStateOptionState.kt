@@ -101,6 +101,7 @@ class TwoStateOptionState : GraphicsOptionState {
             }
         }
 
+        var anInt6981: Int = 0
         @JvmStatic
         fun method1844(i: Int, i_12_: Int, bool: Boolean, i_13_: Int, bool_14_: Boolean, i_15_: Int, i_16_: Int) {
             ShortMatrixNode.anInt9515 = i_13_
@@ -108,11 +109,11 @@ class TwoStateOptionState : GraphicsOptionState {
             if (bool_14_ == false) {
                 TileTextureNode.anInt9406 = i
                 anInt6136++
-                IntKeyNode.anInt6981 = i_12_
+                TwoStateOptionState.anInt6981 = i_12_
                 GlTextureCubeMap.anInt8537 = i_15_
                 if (bool && GlTextureCubeMap.anInt8537 >= 100) {
                     CompositeRgbNoiseTexture.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
-                    GlslMaterialPass.anInt6246 = 256 + IntKeyNode.anInt6981 * 512
+                    GlslMaterialPass.anInt6246 = 256 + TwoStateOptionState.anInt6981 * 512
                     ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, CompiledScriptCache.anInt4372, 11219, CompositeRgbNoiseTexture.anInt8685) + -ShortMatrixNode.anInt9515)
                 }
                 WeaveTextureNode.anInt9282 = 2

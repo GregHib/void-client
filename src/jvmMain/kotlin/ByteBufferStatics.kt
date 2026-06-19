@@ -89,7 +89,7 @@ object ByteBufferStatics {
         CompositeRgbNoiseTexture.anInt8685 = 0
         GlslMaterialPass.anInt6246 = CompositeRgbNoiseTexture.anInt8685
         if (WeaveTextureNode.anInt9282 == 2) {
-            GlslMaterialPass.anInt6246 = IntKeyNode.anInt6981 shl 9
+            GlslMaterialPass.anInt6246 = TwoStateOptionState.anInt6981 shl 9
             CompositeRgbNoiseTexture.anInt8685 = CollisionMapAccessor.anInt3550 shl 9
         } else CameraSplineNode.method2954(62.toByte())
         SceneObjectSpawner.method773(true)

@@ -113,7 +113,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 SlotBinding.aSlotBinding_3420!!.method2025(MapArchiveSource(aJs5Archive_3146!!), false)
                 SlotBinding.aSlotBinding_3421!!.method2025(MapArchiveSource(NodeDequeStatics.aJs5Archive_3323!!), false)
                 SlotBinding.aSlotBinding_3422!!.method2025(FileExistsCondition((SceneTilePlaneManager.aJs5Archive_233), "huffman"), false)
-                SlotBinding.aSlotBinding_3423!!.method2025(MapArchiveSource(IntKeyNode.aJs5Archive_6980!!), false)
+                SlotBinding.aSlotBinding_3423!!.method2025(MapArchiveSource(ClientLoadStateMachine.aJs5Archive_6980!!), false)
                 SlotBinding.aSlotBinding_3424!!.method2025(MapArchiveSource(CameraNodeList.aJs5Archive_1743!!), false)
                 SlotBinding.aSlotBinding_3425!!.method2025(MapArchiveSource(SoftwareSpriteRaster.aJs5Archive_1627!!), false)
                 SlotBinding.aSlotBinding_3426!!.method2025(SpriteLoadValidator((TerrainShadowBuilderGl2.aJs5Archive_6950), "details"), false)
