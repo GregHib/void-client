@@ -368,7 +368,7 @@
 "Class321","LocTypeDefinition","Parses many opcode fields (models, names, params) from buffer","Has Class356 params, model/recolor arrays, configs; config definition"
 "Class322","ImageFrameCache","Holds 3D int-array image cache with Class262 LRU eviction","Caches IntArray frames; aBoolean4035 dirty flag"
 "Class323","SystemFontGlyphs","Rasterizes AWT Helvetica glyphs into Class105 sprites","Builds 256-glyph sprite/width tables via PixelGrabber"
-"Class324","Font","Abstract font with glyph layout, markup parsing, draw methods","Base for sw/gl font variants; abstract fa/method2578"
+"Class324","RSFont","Abstract font with glyph layout, markup parsing, draw methods","Base for sw/gl font variants; abstract fa/method2578"
 "Class324_Sub1","SoftwareFontPlain","Class324 variant drawing glyphs via ha_Sub1 pixel arrays","Software raster font; byte-mask glyph blitting"
 "Class324_Sub2","GlFontTextured","Class324 variant rendering glyphs via ha_Sub3 GL textures","Hardware font atlas using Interface18_Impl3 texture, vertex buffer"
 "Class324_Sub3","SoftwareFontPalette","Class324 variant blitting palette-indexed glyphs via ha_Sub1","Software font using anIntArray2697 palette lookup"
