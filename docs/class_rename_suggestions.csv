@@ -29,7 +29,7 @@
 "Class111","CollisionMapRegion","Class230/Class45, IntArrayArray + BooleanArray flag grids, returns Class287","No superclass; collision/pathing flag grid per region"
 "Class112","ScriptCompilerThread","Implements Runnable; Thread field, Class107 list, builds Class348_Sub42_Sub16_Sub2","Impl Runnable; background compile/load worker thread"
 "Class113","CameraNodeList","toString throws; companion holds Class105 array, Class45, ints","No superclass; instance trivial - name from Class105Array static scene refs"
-"Class114","IntRange","Two int fields with accessor and toString","No superclass; min/max or value pair holder"
+"Class114","InboundPacketHeader","Two int fields with accessor and toString","No superclass; min/max or value pair holder"
 "Class115","OverlayColorTable","Object; boolean grids, Class348_Sub1/Class318_Sub1 arrays, RGB color array","Singleton object; overlay/minimap color and flag tables"
 "Class116","InputSettingsState","Object; shiftClick boolean, String, Class114, IOException import","Singleton object; input/config state flags"
 "Class117","CacheArchiveIndex","Class356 cache maps, reads via Class348_Sub49, returns Class348_Sub35/46/50","No superclass; indexed cache record store/loader"
