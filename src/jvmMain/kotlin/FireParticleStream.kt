@@ -1,7 +1,15 @@
+import AudioResampler.Companion.method1274
+import GlTexture3D.Companion.method1960
+import MinimapTileEntry.Companion.method383
 import OpenGlRenderer.Companion.method3802
+import Client.Companion.anInt2986
+import ScrollingNoiseTexture.Companion.method560
+import SocketStreamWorker.Companion.method1469
 import java.io.IOException
 import java.io.OutputStream
 import java.util.*
+import kotlin.math.max
+import kotlin.math.min
 import kotlin.math.sin
 
 /*
@@ -70,7 +78,7 @@ class FireParticleStream : OutputStream() {
                     if (i_6_ < CameraDistanceOptionState.anInt6979 shr 8) i_6_ = CameraDistanceOptionState.anInt6979 shr 8
                     if (MinimapStateReset.aBooleanArray2374!![4] && (i_6_ < ModelHeaderCache.anIntArray3273!![4] + 128)) i_6_ = 128 + ModelHeaderCache.anIntArray3273!![4]
                     val i_7_ = CameraDistanceOptionState.aFloat3938.toInt() and 0x3fff
-                    WidgetDefinition.method268(i_6_, -200 + CollisionMapAccessor.method2064(HslColorTableNode.anInt6633, CompiledScriptCache.anInt4372, 11219, RegionTileNode.anInt6652), i_7_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
+                    WidgetDefinition.method268(i_6_, -200 + CollisionMapAccessor.method2064(OpenGlRenderer.anInt6633, CompiledScriptCache.anInt4372, 11219, RegionTileNode.anInt6652), i_7_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
                 } else if (WeaveTextureNode.anInt9282 == 5) LocDefinitionCache.method2035(i_2_, 0)
                 val i_8_ = GlslMaterialPass.anInt6246
                 val i_9_ = ParticleSystemRenderer.anInt3855
@@ -120,7 +128,7 @@ class FireParticleStream : OutputStream() {
                     val i_16_ = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
                     if (GrayscaleNoiseTexture.aBoolean5300) {
                         CameraRotationStub.method289(-15902, 0x3fff and -WorldMapElement.anInt4638, -MapTileShape.anInt4186 and 0x3fff, (-MinimapAreaMarkerNode.anInt9701 and 0x3fff))
-                        SceneProjector.method1634(
+                        method1634(
                             CharCodeMap.anIntArray1127,
                             -2,
                             RegionSceneLoader.aByteArrayArrayArray3700,
@@ -212,5 +220,299 @@ class FireParticleStream : OutputStream() {
         init {
             anIntArray99 = intArrayOf(1, -1, -1, 1)
         }
+
+
+        var anInt2982: Int = 0
+        fun method1634(`is`: IntArray?, i: Int, is_0_: Array<Array<ByteArray?>?>?, i_1_: Int, i_2_: Int, is_3_: IntArray?, i_4_: Int, i_5_: Int, bool: Boolean, i_6_: Int, i_7_: Int, is_8_: IntArray?, is_9_: IntArray?, i_10_: Byte, is_11_: IntArray?, i_12_: Int, bool_13_: Boolean, i_14_: Int) {
+            do {
+                try {
+                    anInt2982++
+                    if (WhirlpoolHash.anInt7207 != -1) {
+                        val is_15_ = CameraRotationStub.aRenderer326!!.Y()
+                        val i_16_ = is_15_[0]
+                        val i_17_ = is_15_[1]
+                        val i_18_ = is_15_[2]
+                        val i_19_ = is_15_[3]
+                        var i_20_ = i_18_
+                        var i_21_ = i_19_
+                        if (WhirlpoolHash.anInt7207 == 1) {
+                            i_20_ = (i_18_.toDouble() * WhirlpoolHash.anInt1651.toDouble() / WhirlpoolHash.anInt6008.toDouble()).toInt()
+                            i_21_ = (WhirlpoolHash.anInt1651.toDouble() * i_19_.toDouble() / WhirlpoolHash.anInt6008.toDouble()).toInt()
+                        }
+                        if (!PcmStreamBuffer.aBoolean8870) {
+                            if (WhirlpoolHash.anInt7207 == 1) method383(0)
+                            val i_22_ = -AnimatedModelRenderer.anInt8422 + i_4_
+                            val i_23_ = i_6_ + -ConfigIdPair.anInt403
+                            val i_24_ = -CameraSplineNode.anInt6849 + i_5_
+                            val i_25_ = ((VideoAdChecker.aDouble3182 * i_22_.toDouble() + i_23_.toDouble() * MapElementDefinitionCache.aDouble3980 + i_24_.toDouble() * SceneCollisionEntry.aDouble4404) * i_20_.toDouble() / i_14_.toDouble()).toInt()
+                            val i_26_ = (((i_24_.toDouble() * ProceduralTextureGraph.aDouble9531) + ((i_22_.toDouble() * TheoraVideoStream.aDouble9023) + (i_23_.toDouble() * LocalizedTextTriple.aDouble3761))) * i_21_.toDouble() / i_14_.toDouble()).toInt()
+                            val d = (i_24_.toDouble() * PcmStreamBuffer.aDouble8869 + (MenuActionNode.aDouble6774 * i_23_.toDouble() + i_22_.toDouble() * NoiseTextureGenerator.aDouble1083))
+                            val i_27_ = i_25_ + WhirlpoolHash.anInt2747 - ShaderObject.anInt4100
+                            val i_28_ = (WhirlpoolHash.anInt10444 + i_26_ + -ModelVertexColorBuffer.anInt6568)
+                            val i_29_ = WhirlpoolHash.anInt5283 + i_27_
+                            val i_30_ = WhirlpoolHash.anInt1651 + i_28_
+                            if ((i_27_ < 0 || i_28_ < 0 || i_29_ > WhirlpoolHash.anInt8854 || (i_30_ > WhirlpoolHash.anInt6008)) && WhirlpoolHash.anInt7207 != 2) {
+                                if (i_29_ <= 0 || i_30_ <= 0 || (WhirlpoolHash.anInt8854 <= i_27_) || (i_28_ >= WhirlpoolHash.anInt6008)) PcmStreamBuffer.aBoolean8870 = true
+                                else {
+                                    val i_31_ = i_27_ - WhirlpoolHash.anInt2747
+                                    val i_32_ = (i_28_ - WhirlpoolHash.anInt10444)
+                                    var i_33_ = 0
+                                    var i_34_ = 0
+                                    var i_35_ = 0
+                                    var i_36_ = 0
+                                    var d_37_ = 0.0
+                                    if (WhirlpoolHash.anInt7207 == 0) {
+                                        d_37_ = d + ShortMatrixNode.aDouble9517
+                                        i_33_ = i_31_
+                                        i_34_ = i_32_
+                                    } else if (WhirlpoolHash.anInt7207 == 1) {
+                                        i_35_ = i_31_ / WhirlpoolHash.anInt1067
+                                        i_36_ = i_32_ / WhirlpoolHash.anInt4267
+                                        i_33_ = i_35_ * WhirlpoolHash.anInt1067
+                                        i_34_ = i_36_ * WhirlpoolHash.anInt4267
+                                        d_37_ = ((d + ShortMatrixNode.aDouble9517) * (i_32_ * i_34_ + i_33_ * i_31_).toDouble() / (i_32_ * i_32_ + i_31_ * i_31_).toDouble())
+                                    }
+                                    d_37_ = -d_37_
+                                    var i_38_ = 0
+                                    var i_39_ = 0
+                                    var i_40_ = 0
+                                    var i_41_ = 0
+                                    var i_42_ = 0
+                                    val i_43_: Int
+                                    val i_44_: Int
+                                    val i_45_: Int
+                                    val i_46_: Int
+                                    if (i_33_ >= 0) {
+                                        i_45_ = 0
+                                        i_43_ = (-i_33_ + WhirlpoolHash.anInt8854)
+                                        if (WhirlpoolHash.anInt7207 == 1) {
+                                            i_42_ = i_35_
+                                            i_40_ = -i_35_ + WhirlpoolHash.anInt425
+                                        }
+                                        i_46_ = i_33_
+                                        i_44_ = i_43_
+                                    } else {
+                                        i_43_ = (WhirlpoolHash.anInt8854 + i_33_)
+                                        i_44_ = 0
+                                        i_45_ = -i_33_
+                                        i_46_ = i_45_
+                                        if (WhirlpoolHash.anInt7207 == 1) {
+                                            i_42_ = -i_35_
+                                            i_40_ = 0
+                                        }
+                                    }
+                                    var i_47_ = 0
+                                    val i_48_: Int
+                                    val i_49_: Int
+                                    val i_50_: Int
+                                    val i_51_: Int
+                                    val i_52_: Int
+                                    val i_53_: Int
+                                    if (i_34_ >= 0) {
+                                        i_50_ = WhirlpoolHash.anInt6008 + -i_34_
+                                        i_48_ = 0
+                                        i_49_ = i_50_
+                                        i_51_ = i_34_
+                                        i_53_ = 0
+                                        if (WhirlpoolHash.anInt7207 == 1) {
+                                            i_41_ = 0
+                                            i_39_ = i_36_
+                                            i_38_ = -i_36_ + WhirlpoolHash.anInt3225
+                                            i_47_ = i_38_
+                                        }
+                                        i_52_ = i_50_
+                                    } else {
+                                        i_48_ = -i_34_
+                                        i_49_ = 0
+                                        i_50_ = WhirlpoolHash.anInt6008 + i_34_
+                                        i_51_ = i_48_
+                                        i_52_ = i_50_
+                                        i_53_ = i_51_
+                                        if (WhirlpoolHash.anInt7207 == 1) {
+                                            i_39_ = -i_36_
+                                            i_38_ = 0
+                                            i_47_ = i_36_ + WhirlpoolHash.anInt3225
+                                            i_41_ = i_39_
+                                        }
+                                    }
+                                    val class243 = (aSceneObjectSpawner_10436!!.aDoublyLinkedNodeList_1282)
+                                    var class318_sub4 = (class243.method1872(8) as SceneEntityModel?)
+                                    while (class318_sub4 != null) {
+                                        val class318_sub3s = (class318_sub4.aClass318_Sub3Array6414)!!
+                                        var bool_54_ = true
+                                        var i_55_ = 0
+                                        while (class318_sub3s.size > i_55_) {
+                                            val class318_sub3 = class318_sub3s[i_55_]!!
+                                            var i_56_ = (class318_sub3.anInt6405)
+                                            var i_57_ = (class318_sub3.anInt6402)
+                                            var i_58_ = (class318_sub3.anInt6406)
+                                            var i_59_ = (class318_sub3.anInt6404)
+                                            val i_60_ = (class318_sub3.anInt6403)
+                                            i_59_ = -i_34_ + i_59_
+                                            class318_sub3.anInt6404 = i_59_
+                                            i_56_ = -i_33_ + i_56_
+                                            class318_sub3.anInt6405 = i_56_
+                                            i_58_ += -i_33_
+                                            class318_sub3.anInt6406 = i_58_
+                                            i_57_ = -i_34_ + i_57_
+                                            class318_sub3.anInt6402 = i_57_
+                                            if (bool_54_) {
+                                                val i_61_ = -i_60_ + (min(i_58_, i_56_))
+                                                if (i_61_ <= WhirlpoolHash.anInt8854) {
+                                                    val i_62_ = (-i_60_ + (min(i_59_, i_57_)))
+                                                    if (WhirlpoolHash.anInt6008 >= i_62_) {
+                                                        val i_63_ = ((max(i_58_, i_56_)) - -i_60_)
+                                                        if (i_63_ >= 0) {
+                                                            val i_64_ = ((max(i_59_, i_57_)) + i_60_)
+                                                            if (i_64_ >= 0) bool_54_ = false
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            i_55_++
+                                        }
+                                        if (bool_54_) {
+                                            class318_sub4.method2373(false)
+                                            method560(class318_sub4, i xor 0x4b)
+                                        }
+                                        class318_sub4 = (class243.method1878(122.toByte()) as SceneEntityModel?)
+                                    }
+                                    if (WhirlpoolHash.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3687(WidgetDefinition.anSpriteDrawTarget_252)
+                                    CameraRotationStub.aRenderer326!!.F(-i_33_, -i_34_)
+                                    CameraRotationStub.aRenderer326!!.b(i_45_, i_48_, i_43_, i_50_, d_37_)
+                                    RenderNodeStatics.method3284(true, (ShortMatrixNode.aDouble9517 + d_37_))
+                                    GlCubeMapTexture.aDouble8621 = d_37_ + ShortMatrixNode.aDouble9517
+                                    if (WhirlpoolHash.anInt7207 == 1) {
+                                        ShaderStateVariant.anInt8799 = (i_17_ + -ModelVertexColorBuffer.anInt6568 - i_34_)
+                                        FireParticleStream.anInt95 = i_21_
+                                        ConfigValueProvider.anInt4910 = -ShaderObject.anInt4100 + (i_16_ - i_33_)
+                                        TexGenMaterialPass.anInt6255 = i_20_
+                                        CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
+                                    } else {
+                                        TexGenMaterialPass.anInt6255 = i_20_
+                                        ShaderStateVariant.anInt8799 = (-ModelVertexColorBuffer.anInt6568 + i_17_ - (-(WhirlpoolHash.anInt10444) - -i_34_))
+                                        ConfigValueProvider.anInt4910 = (-ShaderObject.anInt4100 + i_16_ + (WhirlpoolHash.anInt2747 + -i_33_))
+                                        FireParticleStream.anInt95 = i_21_
+                                        CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
+                                    }
+                                    method1274(aSceneObjectSpawner_10436)
+                                    if (i_51_ > 0) {
+                                        CameraRotationStub.aRenderer326!!.KA(0, i_49_, (WhirlpoolHash.anInt8854), i_51_ + i_49_)
+                                        CameraRotationStub.aRenderer326!!.ya()
+                                        CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
+                                        method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
+                                    }
+                                    if (i_46_ > 0) {
+                                        CameraRotationStub.aRenderer326!!.KA(i_44_, i_53_, i_44_ - -i_46_, i_53_ + i_52_)
+                                        CameraRotationStub.aRenderer326!!.ya()
+                                        CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
+                                        method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
+                                    }
+                                    CameraRotationStub.aRenderer326!!.la()
+                                    ParticleEffectCache.method2046()
+                                    if (WhirlpoolHash.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
+                                    ModelVertexColorBuffer.anInt6568 += i_34_
+                                    ShaderObject.anInt4100 += i_33_
+                                    ShortMatrixNode.aDouble9517 += d_37_
+                                    PerlinNoiseTextureNode.anInt9157 = (-ModelVertexColorBuffer.anInt6568 + i_26_ + WhirlpoolHash.anInt10444)
+                                    MapRegionLoaderThread.anInt4211 = (-ShaderObject.anInt4100 + WhirlpoolHash.anInt2747 + i_25_)
+                                    if (WhirlpoolHash.anInt7207 == 1) {
+                                        SceneryDetailOptionState.anInt6095 += i_35_
+                                        MaterialPass.anInt3682 += i_36_
+                                        for (i_65_ in 0..<WhirlpoolHash.anInt3225) {
+                                            val i_66_ = ((ModelTransformParams.method3452(i_65_ - -MaterialPass.anInt3682, (-15).toByte(), WhirlpoolHash.anInt3225)) * WhirlpoolHash.anInt425)
+                                            var i_67_ = 0
+                                            while ((WhirlpoolHash.anInt425 > i_67_)) {
+                                                val i_68_ = ((ModelTransformParams.method3452(i_67_ + (SceneryDetailOptionState.anInt6095), (-15).toByte(), WhirlpoolHash.anInt425)) + i_66_)
+                                                val bool_69_ = (((i_38_ <= i_65_) && i_39_ + i_38_ > i_65_) || (i_65_ >= i_41_ && (i_65_ < i_41_ - -i_47_) && i_67_ >= i_40_ && (i_40_ - -i_42_ > i_67_)))
+                                                NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_68_]!!.method15(WhirlpoolHash.anInt1067 * i_67_, i_65_ * WhirlpoolHash.anInt4267, WhirlpoolHash.anInt1067, WhirlpoolHash.anInt4267, 0, 0, bool_69_, true)
+                                                i_67_++
+                                            }
+                                        }
+                                    }
+                                }
+                            } else {
+                                MapRegionLoaderThread.anInt4211 = i_27_
+                                PerlinNoiseTextureNode.anInt9157 = i_28_
+                                if (WhirlpoolHash.anInt7207 == 2) ShortMatrixNode.aDouble9517 = -d
+                            }
+                        }
+                        if (PcmStreamBuffer.aBoolean8870) {
+                            CameraSplineNode.anInt6849 = i_5_
+                            ConfigIdPair.anInt403 = i_6_
+                            PerlinNoiseTextureNode.anInt9157 = WhirlpoolHash.anInt10444
+                            ShaderObject.anInt4100 = 0
+                            MapRegionLoaderThread.anInt4211 = WhirlpoolHash.anInt2747
+                            AnimatedModelRenderer.anInt8422 = i_4_
+                            ModelVertexColorBuffer.anInt6568 = 0
+                            ShortMatrixNode.aDouble9517 = 0.0
+                            if (WhirlpoolHash.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3687(WidgetDefinition.anSpriteDrawTarget_252)
+                            CameraRotationStub.aRenderer326!!.la()
+                            CameraRotationStub.aRenderer326!!.ya()
+                            CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
+                            NpcConfig.aAbstractCameraTransform_905!!.method903(AnimatedModelRenderer.anInt8422, ConfigIdPair.anInt403, CameraSplineNode.anInt6849, WorldMapAreaLabel.anInt8583, LocalizedTextTriple.anInt3760, ProjectileConfigUtil.anInt396)
+                            CameraRotationStub.aRenderer326!!.method3638(NpcConfig.aAbstractCameraTransform_905)
+                            if (WhirlpoolHash.anInt7207 == 1) {
+                                ShaderStateVariant.anInt8799 = i_17_
+                                ConfigValueProvider.anInt4910 = i_16_
+                                FireParticleStream.anInt95 = i_21_
+                                TexGenMaterialPass.anInt6255 = i_20_
+                                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
+                            } else {
+                                ConfigValueProvider.anInt4910 = i_16_ - -WhirlpoolHash.anInt2747
+                                ShaderStateVariant.anInt8799 = WhirlpoolHash.anInt10444 + i_17_
+                                TexGenMaterialPass.anInt6255 = i_20_
+                                FireParticleStream.anInt95 = i_21_
+                                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
+                            }
+                            GlCubeMapTexture.aDouble8621 = 0.0
+                            aSceneObjectSpawner_10436!!.method775(69.toByte())
+                            method1274(aSceneObjectSpawner_10436)
+                            method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
+                            ParticleEffectCache.method2046()
+                            PcmStreamBuffer.aBoolean8870 = false
+                            if (WhirlpoolHash.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
+                            if (WhirlpoolHash.anInt7207 == 1) method1469(-117)
+                        }
+                        if (WhirlpoolHash.anInt7207 == 0) WidgetDefinition.anSpriteDrawTarget_252!!.method14(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, WhirlpoolHash.anInt5283, WhirlpoolHash.anInt1651, 0, 0, true, true)
+                        GroundDecorSceneEntity.anInt9997++
+                        RenderNodeStatics.method3284(true, ShortMatrixNode.aDouble9517)
+                        ModelWallEntity.aDouble10120 = ShortMatrixNode.aDouble9517
+                        if (WhirlpoolHash.anInt7207 == 0 || WhirlpoolHash.anInt7207 == 2) {
+                            if (WhirlpoolHash.anInt7207 == 2) {
+                                CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
+                                CameraRotationStub.aRenderer326!!.ya()
+                            }
+                            TextureHandle.anInt2590 = i_20_
+                            anInt1879 = i_21_
+                            AnimationFrameState.anInt1537 = (-MapRegionLoaderThread.anInt4211 + -ShaderObject.anInt4100 + (i_16_ + WhirlpoolHash.anInt2747))
+                            SceneTextLabel.anInt6417 = (-PerlinNoiseTextureNode.anInt9157 + (i_17_ + WhirlpoolHash.anInt10444 + -ModelVertexColorBuffer.anInt6568))
+                            CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
+                        } else if (WhirlpoolHash.anInt7207 == 1) {
+                            TextureHandle.anInt2590 = i_20_
+                            AnimationFrameState.anInt1537 = i_16_ + -ShaderObject.anInt4100
+                            SceneTextLabel.anInt6417 = -ModelVertexColorBuffer.anInt6568 + i_17_
+                            anInt1879 = i_21_
+                            CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
+                            CameraRotationStub.aRenderer326!!.KA(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, (MapRegionLoaderThread.anInt4211 - -WhirlpoolHash.anInt5283), (WhirlpoolHash.anInt1651 + PerlinNoiseTextureNode.anInt9157))
+                        }
+                        method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, if (WhirlpoolHash.anInt7207 != 2) 2 else 0, WhirlpoolHash.anInt7207 == 1)
+                        CameraRotationStub.aRenderer326!!.la()
+                        CameraRotationStub.aRenderer326!!.DA(i_16_, i_17_, i_18_, i_19_)
+                        if (i == -2) break
+                        anInt2986 = -82
+                    }
+                } catch (runtimeexception: RuntimeException) {
+                    throw TextureLoadException.method2929(
+                        runtimeexception,
+                        ("sj.D(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (is_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + i_6_ + ',' + i_7_ + ',' + (if (is_8_ != null) "{...}" else "null") + ',' + (if (is_9_ != null) "{...}" else "null") + ',' + i_10_ + ',' + (if (is_11_ != null) "{...}" else "null") + ',' + i_12_ + ',' + bool_13_ + ',' + i_14_ + ')')
+                    )
+                }
+                break
+            } while (false)
+        }
+        var aSceneObjectSpawner_10436: SceneObjectSpawner? = SceneObjectSpawner(true)
+        var anInt1879: Int = 0
+
     }
 }

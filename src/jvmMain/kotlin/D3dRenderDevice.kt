@@ -846,9 +846,9 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
             if (movementDirection == MovementDirection.aMovementDirection_1183) {
                 if (TimedRecordAccessor.aTextureFormatInfo_7103 != textureFormatInfo) {
                     if (GroundItemRenderState.aTextureFormatInfo_1662 == textureFormatInfo) return 21
-                    if (ClampTextureNode.aTextureFormatInfo_9471 == textureFormatInfo) return 28
+                    if (GlFontTextured.aTextureFormatInfo_9471 == textureFormatInfo) return 28
                     if (CellNoiseTextureNode.aTextureFormatInfo_9303 == textureFormatInfo) return 50
-                    if (textureFormatInfo == SpriteSheetCache.aTextureFormatInfo_2571) return 51
+                    if (textureFormatInfo == NormalMapGenerator.aTextureFormatInfo_2571) return 51
                     if (textureFormatInfo == GlTextureBase.aTextureFormatInfo_3977) return 77
                 } else return 22
             }
@@ -870,7 +870,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
             if (i != 594) return 7
             if (configFlagUtil == GlElementArrayBuffer.aConfigFlagUtil_4835) return 1
             if (configFlagUtil != LightDetailOptionState.aConfigFlagUtil_6030) {
-                if (configFlagUtil != ClampTextureNode.aConfigFlagUtil_9477) {
+                if (configFlagUtil != GlCubemapLightPass.aConfigFlagUtil_9477) {
                     if (MapSceneTile.aConfigFlagUtil_1051 == configFlagUtil) return 4
                     if (configFlagUtil == WaterDetailOptionState.aConfigFlagUtil_5989) return 256
                 } else return 3

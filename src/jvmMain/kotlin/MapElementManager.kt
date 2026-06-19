@@ -55,7 +55,7 @@ object MapElementManager {
 
     fun method3515(i: Int) {
         val i_2_ = 52 / ((33 - i) / 40)
-        AbstractProceduralTextureNode.aHashtable_7041!!.method3481(0)
+        Client.aHashtable_7041!!.method3481(0)
         anInt4464++
     }
 

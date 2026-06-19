@@ -112,7 +112,13 @@ class SceneNodeDeque {
         var anInt1504: Int = 0
         fun method841(i: Int): Array<BoxedIntHolder?> {
             anInt1504++
-            return (arrayOf<BoxedIntHolder?>(SpriteSheetCache.aBoxedIntHolder_2568, MinimapRenderer.aBoxedIntHolder_1591, IdentKitRecolor.aBoxedIntHolder_151))
+            return (arrayOf<BoxedIntHolder?>(aBoxedIntHolder_2568, MinimapRenderer.aBoxedIntHolder_1591, IdentKitRecolor.aBoxedIntHolder_151))
+        }
+
+        var aBoxedIntHolder_2568: BoxedIntHolder? = BoxedIntHolder(0)
+        fun method1431(i: Int) {
+            NormalMapGenerator.aTextureFormatInfo_2571 = null
+            aBoxedIntHolder_2568 = null
         }
 
         @JvmStatic
@@ -366,13 +372,13 @@ class SceneNodeDeque {
                                 InputSettingsState.anInt1758 = class348_sub49_sub2.readShort(13638)
                                 FrameBufferObject.aBoolean4888 = InputSettingsState.anInt1758 > 0
                                 GlArrayBufferObject.anInt4716 = class348_sub49_sub2.readUnsignedShort(842397944)
-                                ImageFrameCache.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944)
+                                SceneNodeDeque.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 FrameBufferObject.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 VarpStore.anInt5065 = class348_sub49_sub2.readInt((-126).toByte())
                                 ChatScriptListNode.aLinkedQueueNode_9536 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2232(116, VarpStore.anInt5065)
                                 FloatGrid.anInt4976 = class348_sub49_sub2.readUnsignedByte(255)
                                 FrameStatsReset.anInt5797 = class348_sub49_sub2.readUnsignedShort(842397944)
-                                HslColorTableNode.anInt6632 = class348_sub49_sub2.readUnsignedShort(842397944)
+                                anInt6632 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 BufferToggleState.aBoolean3706 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 OpenGlTerrainTile.aString8265 = class348_sub49_sub2.method3371(-13487)
                                 LocalPlayerState.aPlayer_1907!!.aString10537 = OpenGlTerrainTile.aString8265
@@ -498,6 +504,8 @@ class SceneNodeDeque {
                 }
             }
         }
+        var anInt4026: Int = 0
+        var anInt6632: Int = 0
 
         @JvmStatic
         fun method847(string: String, i: Int) {

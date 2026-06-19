@@ -20,7 +20,7 @@ class ConstantColourTextureNode private constructor(i: Int) : AbstractProcedural
             val is_15_ = `is`[0]!!
             val is_16_ = `is`[1]!!
             val is_17_ = `is`[2]!!
-            for (i_18_ in 0..<DisplaceTextureNode.Companion.anInt9139) {
+            for (i_18_ in 0..<ClampTextureNode.Companion.anInt9139) {
                 is_15_[i_18_] = anInt9244
                 is_16_[i_18_] = anInt9252
                 is_17_[i_18_] = anInt9250

@@ -39,7 +39,7 @@ class SceneEntityModel : SceneLinkedListNode() {
             try {
                 if (i_0_ >= -32) method2502(null, -18)
                 anInt6412++
-                if (var_ha_Sub3!!.method3880(MovementDirection.aMovementDirection_1183, ClampTextureNode.aTextureFormatInfo_9471, 125.toByte())) {
+                if (var_ha_Sub3!!.method3880(MovementDirection.aMovementDirection_1183, GlFontTextured.aTextureFormatInfo_9471, 125.toByte())) {
                     val is_3_ = ByteArray(i * i_2_)
                     var i_4_ = 0
                     while (i > i_4_) {

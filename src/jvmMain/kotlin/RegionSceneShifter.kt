@@ -213,7 +213,7 @@ class RegionSceneShifter : LinkedListNode() {
                         RegionTileNode.anInt6652 -= i_21_ * 512
                         FrameStatsReset.anInt5799 -= i_20_ * 512
                         AsyncTaskHandle.anInt2578 -= 512 * i_21_
-                        HslColorTableNode.anInt6633 -= i_20_ * 512
+                        OpenGlRenderer.anInt6633 -= i_20_ * 512
                     } else {
                         WeaveTextureNode.anInt9282 = 1
                         SequencedWallEntity.anInt10163 = -1

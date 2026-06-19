@@ -22,5 +22,6 @@ class RgbColorPalette internal constructor(i: Int, i_0_: Int) {
             anIntArray1233 = null
             if (i < 87) Companion.method744((-102).toByte())
         }
+        var aRgbColorPalette_9475: RgbColorPalette? = RgbColorPalette(12, 7)
     }
 }

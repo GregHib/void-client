@@ -8,6 +8,7 @@ import java.awt.event.FocusEvent
 import java.awt.event.FocusListener
 import java.awt.event.WindowEvent
 import java.awt.event.WindowListener
+import java.io.File
 import java.io.IOException
 import java.net.URL
 import java.util.*
@@ -560,7 +561,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 ArbFogMaterialPass.aStringArray6200!![0] = string_11_ + ": " + strings[i_12_]
                 if (Texture2DProvider.aFileOutputStream6323 != null) {
                     try {
-                        Texture2DProvider.aFileOutputStream6323!!.write(ClientGameLoopNode.method2992(((ArbFogMaterialPass.aStringArray6200!![0]) + "\n"), (-20).toByte()))
+                        Texture2DProvider.aFileOutputStream6323!!.write(ConfigArchiveLoader.method2992(((ArbFogMaterialPass.aStringArray6200!![0]) + "\n"), (-20).toByte()))
                     } catch (ioexception: IOException) {
                         /* empty */
                     }
@@ -579,5 +580,37 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             if (i != 32717) method86(null, 65)
         }
         var anInt2071: Int = 0
+
+
+        var anInt6639: Int = 0
+        /*synthetic*/
+        var aClass6640: Class<*>? = null
+        fun method2769(var_class: Class<*>?, i: Byte, string: String?): Boolean {
+            try {
+                anInt6639++
+                val var_class_0_ = (Player.aHashtable10565!!.get(string) as? Class<*>?)
+                if (var_class_0_ != null) {
+                    return var_class_0_.getClassLoader() === var_class!!.getClassLoader()
+                }
+                val file = CollisionMapAccessor.aHashtable3548!!.get(string) as? File?
+                if (file != null) {
+                    try {
+                        System.load(file.path)
+                        if (aClass6640 == null) {
+                            aClass6640 = RegionMapDecoder::class.java
+                        }
+                        Player.aHashtable10565!![string] = aClass6640
+                        return true
+                    } catch (throwable: Throwable) {
+                        if (Loader.trace) {
+                            throwable.printStackTrace()
+                        }
+                    }
+                }
+                return false
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("gba.C(" + (if (var_class != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
+            }
+        }
     }
 }

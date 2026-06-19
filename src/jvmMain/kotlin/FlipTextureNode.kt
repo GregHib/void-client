@@ -28,14 +28,14 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_6_ = `is`[1]!!
             val is_7_ = `is`[2]!!
             if (aBoolean9140) {
-                for (i_8_ in 0..<DisplaceTextureNode.Companion.anInt9139) {
+                for (i_8_ in 0..<ClampTextureNode.anInt9139) {
                     is_5_[i_8_] = is_2_[SimpleBinaryOptionState.anInt6076 + -i_8_]
                     is_6_[i_8_] = is_3_[SimpleBinaryOptionState.anInt6076 - i_8_]
                     is_7_[i_8_] = is_4_[-i_8_ + SimpleBinaryOptionState.anInt6076]
                 }
             } else {
                 var i_9_ = 0
-                while ((i_9_ < DisplaceTextureNode.Companion.anInt9139)) {
+                while ((i_9_ < ClampTextureNode.anInt9139)) {
                     is_5_[i_9_] = is_2_[i_9_]
                     is_6_[i_9_] = is_3_[i_9_]
                     is_7_[i_9_] = is_4_[i_9_]
@@ -82,11 +82,11 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_76_ = this.method3048((if (aBoolean9147) TextureCubeProvider.anInt6325 - i else i), i_75_ + 633706082, 0)!!
             if (aBoolean9140) {
                 var i_77_ = 0
-                while ((i_77_ < DisplaceTextureNode.Companion.anInt9139)) {
+                while ((i_77_ < ClampTextureNode.Companion.anInt9139)) {
                     `is`[i_77_] = is_76_[SimpleBinaryOptionState.anInt6076 + -i_77_]
                     i_77_++
                 }
-            } else ArrayCopyUtil.method1578(is_76_, 0, `is`, 0, DisplaceTextureNode.Companion.anInt9139)
+            } else ArrayCopyUtil.method1578(is_76_, 0, `is`, 0, ClampTextureNode.Companion.anInt9139)
         }
         return `is`
     }
@@ -583,7 +583,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                         val i_6_: Int
                         if (WeaveTextureNode.anInt9282 == 4) {
                             i_3_ = RegionTileNode.anInt6652
-                            i_4_ = HslColorTableNode.anInt6633
+                            i_4_ = OpenGlRenderer.anInt6633
                             i_5_ = 4096
                             i_6_ = 0x3fff and -CameraDistanceOptionState.aFloat3938.toInt()
                         } else {
@@ -606,7 +606,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                             class348_sub35 = ModelWallEntity.aNodeDeque_10125!!.method1990(92.toByte()) as? IntKeyNode
                         }
                         var i_14_ = 0
-                        while ((ClampTextureNode.anInt9479 > i_14_)) {
+                        while ((LongKeyNode.anInt9479 > i_14_)) {
                             val i_15_ = (MenuActionNode.anIntArray6770!![i_14_] * 4 - -2 - i_4_ / 128)
                             val i_16_ = (-(i_3_ / 128) + BoxBlurTextureNode.anIntArray9458!![i_14_] * 4 - -2)
                             var npcConfig: NpcConfig? = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, SeqDefinitionCache.anIntArray3347!![i_14_]))

@@ -22,7 +22,7 @@ class StringCacheNode : LinkedListNode {
         }
 
         fun method3419(i: Int) {
-            ClientGameLoopNode.anIntArray6878 = null
+            WorldMapScene.anIntArray6878 = null
             NamedTimedNode.anIntArray8785 = null
             DisplaceTextureNode.anIntArray9135 = null
             anInt7210++

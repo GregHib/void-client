@@ -122,25 +122,26 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             }
         }
 
+        var aNodeDeque_9478: NodeDeque? = NodeDeque()
         @JvmStatic
         fun method1987(i: Int) {
             val i_12_ = 81 % ((i - -70) / 35)
             anInt3313++
             if (!ScrollbarComponent.aBoolean8335) ChatScriptListNode.aBoolean9535 = ((SoundCacheState.anInt4143 != -1 && FileExistsCondition.anInt4776 >= SoundCacheState.anInt4143) || (GameDisplayManager.anInt10432 < 16 * FileExistsCondition.anInt4776 - -(if (!PlayerSequenceSelector.aBoolean1211) 22 else 26)))
             ItemDefinitionLoader.aNodeDeque_2187!!.method1996(103)
-            ClampTextureNode.aNodeDeque_9478!!.method1996(104)
+            aNodeDeque_9478!!.method1996(104)
             var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as ContactEntry?)
             while (class348_sub42_sub12 != null) {
                 val i_13_ = class348_sub42_sub12.anInt9608
                 if (i_13_ < 1000) {
                     class348_sub42_sub12.method2715(97.toByte())
-                    if (i_13_ == 15 || i_13_ == 2 || i_13_ == 30 || i_13_ == 49 || i_13_ == 51 || i_13_ == 50 || i_13_ == 6) ClampTextureNode.aNodeDeque_9478!!.method1999(class348_sub42_sub12, -20180)
+                    if (i_13_ == 15 || i_13_ == 2 || i_13_ == 30 || i_13_ == 49 || i_13_ == 51 || i_13_ == 50 || i_13_ == 6) aNodeDeque_9478!!.method1999(class348_sub42_sub12, -20180)
                     else ItemDefinitionLoader.aNodeDeque_2187!!.method1999(class348_sub42_sub12, -20180)
                 }
                 class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(83.toByte()) as ContactEntry?
             }
             ItemDefinitionLoader.aNodeDeque_2187!!.method1988(SourceRowTextureNode.aNodeDeque_9111, (-115).toByte())
-            ClampTextureNode.aNodeDeque_9478!!.method1988(SourceRowTextureNode.aNodeDeque_9111, (-115).toByte())
+            aNodeDeque_9478!!.method1988(SourceRowTextureNode.aNodeDeque_9111, (-115).toByte())
             if (FileExistsCondition.anInt4776 > 1) {
                 if (!InputSettingsState.shiftClick || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -122) || FileExistsCondition.anInt4776 <= 2) IntHashSetStatics.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295 as ContactEntry?)
                 else IntHashSetStatics.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295!!.aLinkedListNode_4295 as ContactEntry?)

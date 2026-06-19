@@ -27,7 +27,6 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
     }
 
     override fun method3047(i: Int, i_2_: Int): Array<IntArray?>? {
-        if (i_2_ != -1564599039) method3150(true)
         anInt9468++
         val `is` = this.aImageFrameCache_7033!!.method2557(-117, i)!!
         if (this.aImageFrameCache_7033!!.aBoolean4035) {
@@ -39,7 +38,7 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_8_ = `is`[1]!!
             val is_9_ = `is`[2]!!
             var i_10_ = 0
-            while ((i_10_ < DisplaceTextureNode.Companion.anInt9139)) {
+            while ((i_10_ < anInt9139)) {
                 val i_11_ = is_4_[i_10_]
                 val i_12_ = is_5_[i_10_]
                 val i_13_ = is_6_[i_10_]
@@ -61,7 +60,7 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_16_ = this.method3048(i, 633706337, 0)!!
-            for (i_17_ in 0..<DisplaceTextureNode.Companion.anInt9139) {
+            for (i_17_ in 0..<anInt9139) {
                 val i_18_ = is_16_[i_17_]
                 if (anInt9474 > i_18_) `is`[i_17_] = anInt9474
                 else `is`[i_17_] = min(i_18_, anInt9470)
@@ -74,49 +73,9 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
         @JvmField
         var anInt9468: Int = 0
         @JvmField
-        var anInt9469: Int = 0
-        @JvmField
-        var aTextureFormatInfo_9471: TextureFormatInfo? = TextureFormatInfo(1)
-        @JvmField
         var anInt9472: Int = 0
         @JvmField
-        var anInt9473: Int = 0
-        @JvmField
-        var aRgbColorPalette_9475: RgbColorPalette? = RgbColorPalette(12, 7)
-        @JvmField
         var anInt9476: Int = 0
-        var aConfigFlagUtil_9477: ConfigFlagUtil? = ConfigFlagUtil()
-        @JvmField
-        var aNodeDeque_9478: NodeDeque? = NodeDeque()
-        @JvmField
-        var anInt9479: Int = 0
-        @JvmField
-        var anIntArray9480: IntArray? = IntArray(13)
-
-        @JvmStatic
-        fun method3149(i: Int) {
-            aRgbColorPalette_9475 = null
-            anIntArray9480 = null
-            aTextureFormatInfo_9471 = null
-            aConfigFlagUtil_9477 = null
-            aNodeDeque_9478 = null
-            if (i < 32) method3149(58)
-        }
-
-        @JvmStatic
-        fun method3150(bool: Boolean) {
-            anInt9469++
-            var i = 0
-            if (bool != true) method3150(false)
-            while ( /**/ModelDefinitionLoader.anInt2057 > i) {
-                val i_14_ = RgbColorPalette.anIntArray1233!![i]
-                val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_14_.toLong(), -6008) as NpcReference?)
-                if (class348_sub22 != null) {
-                    val npc = (class348_sub22.aNpc_6859)!!
-                    ImageFrameCache.method2556(false, npc.aNpcType_10505!!.anInt1399, npc)
-                }
-                i++
-            }
-        }
+        var anInt9139: Int = 0
     }
 }

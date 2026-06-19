@@ -714,7 +714,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
         fun method814(i: Byte, l: Long) {
             try {
                 anInt1438++
-                val i_27_ = HslColorTableNode.anInt6633
+                val i_27_ = OpenGlRenderer.anInt6633
                 if (i > 106) {
                     if (FrameStatsReset.anInt5799 != i_27_) {
                         val i_28_ = i_27_ - FrameStatsReset.anInt5799
@@ -745,6 +745,64 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, "lba.A(" + i + ',' + l + ')')
+            }
+        }
+
+        var anInt6873: Int = 0
+        fun method2992(string: String?, i: Byte): ByteArray {
+            try {
+                anInt6873++
+                val i_34_ = string!!.length
+                val `is` = ByteArray(i_34_)
+                for (i_35_ in 0..<i_34_) {
+                    val i_36_ = string.get(i_35_).code
+                    if (i_36_ > 0 && i_36_ < 128 || i_36_ >= 160 && i_36_ <= 255) `is`[i_35_] = i_36_.toByte()
+                    else if (i_36_ != 8364) {
+                        if (i_36_ != 8218) {
+                            if (i_36_ != 402) {
+                                if (i_36_ == 8222) `is`[i_35_] = (-124).toByte()
+                                else if (i_36_ == 8230) `is`[i_35_] = (-123).toByte()
+                                else if (i_36_ != 8224) {
+                                    if (i_36_ != 8225) {
+                                        if (i_36_ == 710) `is`[i_35_] = (-120).toByte()
+                                        else if (i_36_ == 8240) `is`[i_35_] = (-119).toByte()
+                                        else if (i_36_ == 352) `is`[i_35_] = (-118).toByte()
+                                        else if (i_36_ != 8249) {
+                                            if (i_36_ != 338) {
+                                                if (i_36_ != 381) {
+                                                    if (i_36_ == 8216) `is`[i_35_] = (-111).toByte()
+                                                    else if (i_36_ == 8217) `is`[i_35_] = (-110).toByte()
+                                                    else if (i_36_ != 8220) {
+                                                        if (i_36_ != 8221) {
+                                                            if (i_36_ == 8226) `is`[i_35_] = (-107).toByte()
+                                                            else if (i_36_ == 8211) `is`[i_35_] = (-106).toByte()
+                                                            else if (i_36_ != 8212) {
+                                                                if (i_36_ != 732) {
+                                                                    if (i_36_ != 8482) {
+                                                                        if (i_36_ == 353) `is`[i_35_] = (-102).toByte()
+                                                                        else if (i_36_ == 8250) `is`[i_35_] = (-101).toByte()
+                                                                        else if (i_36_ != 339) {
+                                                                            if (i_36_ == 382) `is`[i_35_] = (-98).toByte()
+                                                                            else if (i_36_ != 376) `is`[i_35_] = 63.toByte()
+                                                                            else `is`[i_35_] = (-97).toByte()
+                                                                        } else `is`[i_35_] = (-100).toByte()
+                                                                    } else `is`[i_35_] = (-103).toByte()
+                                                                } else `is`[i_35_] = (-104).toByte()
+                                                            } else `is`[i_35_] = (-105).toByte()
+                                                        } else `is`[i_35_] = (-108).toByte()
+                                                    } else `is`[i_35_] = (-109).toByte()
+                                                } else `is`[i_35_] = (-114).toByte()
+                                            } else `is`[i_35_] = (-116).toByte()
+                                        } else `is`[i_35_] = (-117).toByte()
+                                    } else `is`[i_35_] = (-121).toByte()
+                                } else `is`[i_35_] = (-122).toByte()
+                            } else `is`[i_35_] = (-125).toByte()
+                        } else `is`[i_35_] = (-126).toByte()
+                    } else `is`[i_35_] = (-128).toByte()
+                }
+                return `is`
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("ls.B(" + (if (string != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

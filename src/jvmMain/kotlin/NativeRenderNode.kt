@@ -386,7 +386,7 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
             if (i < 30) aNodeDeque_10479 = null
             method131(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub5_7240!!.method1739(-32350) == 1, 2, true, 22050)
             anInt10470++
-            AbstractProceduralTextureNode.aSoundChannelMixer_7042 = TextureHandle.method1439(22050, VorbisOggDecoder.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 0, 7)
+            ClientLoadStateMachine.aSoundChannelMixer_7042 = TextureHandle.method1439(22050, VorbisOggDecoder.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 0, 7)
             ParticleEmitterListNode.method3273(true, -114, NpcCountAccessor.method1326(null, 9))
             VarbitDefLoader.aSoundChannelMixer_2596 = TextureHandle.method1439(2048, VorbisOggDecoder.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 1, 7)
             SpriteDefinition.aClass348_Sub16_Sub4_7065 = AudioMixerScheduler()

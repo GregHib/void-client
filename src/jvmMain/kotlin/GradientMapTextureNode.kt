@@ -22,9 +22,9 @@ class GradientMapTextureNode : AbstractProceduralTextureNode(0, true) {
                         break
                     }
                 }
-                ArrayCopyUtil.method1579(`is`, 0, DisplaceTextureNode.Companion.anInt9139, i_7_)
+                ArrayCopyUtil.method1579(`is`, 0, ClampTextureNode.Companion.anInt9139, i_7_)
             } else {
-                for (i_2_ in 0..<DisplaceTextureNode.Companion.anInt9139) {
+                for (i_2_ in 0..<ClampTextureNode.Companion.anInt9139) {
                     var i_3_ = 0
                     var i_4_ = 0
                     val i_5_ = SceneEffectMarker.anIntArray6432!![i_2_]

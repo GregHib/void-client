@@ -1,3 +1,4 @@
+
 /* Class348_Sub40_Sub26 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -18,7 +19,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_9_ = `is`[1]!!
             val is_10_ = `is`[2]!!
             var i_11_ = 0
-            while ((i_11_ < DisplaceTextureNode.Companion.anInt9139)) {
+            while ((i_11_ < ClampTextureNode.Companion.anInt9139)) {
                 val i_12_ = is_5_[i_11_]
                 val i_13_ = is_7_[i_11_]
                 val i_14_ = is_6_[i_11_]
@@ -98,6 +99,17 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             return (i and 0xc580) != 0
         }
 
+        var anInt4030: Int = 0
+        fun method2554(i: Byte) {
+            anInt4030++
+            if (WidgetRedrawTracker.anInt3931 == 1 || WidgetRedrawTracker.anInt3931 == 3 || (WidgetRedrawTracker.anInt3931 != WaterTextureSet.anInt1447 && (WidgetRedrawTracker.anInt3931 == 0 || WaterTextureSet.anInt1447 == 0))) {
+                TerrainShadowBuilderGl2.anInt6930 = 0
+                ModelDefinitionLoader.anInt2057 = 0
+                NpcEntityUpdater.aHashtable_3654!!.method3481(0)
+            }
+            WaterTextureSet.anInt1447 = WidgetRedrawTracker.anInt3931
+        }
+
         @JvmStatic
         fun method3120(i: Int) {
             WidgetRedrawTracker.anInt3931 = 0
@@ -107,7 +119,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             val i_17_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
             val bool = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte()) == 1)
 
-            ImageFrameCache.method2554((-45).toByte())
+            method2554((-45).toByte())
             CellNoiseTextureNode.Companion.method3111(111, i_15_)
             var i_18_: Int = (-CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 + RadialTextureNode.Companion.anInt9341) / 16
             BrightnessOptionState.anIntArrayArray5894 = Array<IntArray?>(i_18_) { IntArray(4) }
@@ -121,7 +133,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             GameAppletFrame.anIntArray38 = IntArray(i_18_)
             StringCacheNode.aByteArrayArray7212 = null
             RenderNodeStatics.anIntArray9724 = IntArray(i_18_)
-            ImageFrameCache.anIntArray4031 = null
+            AbstractCameraTransformStatics.anIntArray4031 = null
             DragDropController.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_18_)
             if (i >= -47) anInt9349 = -54
             LocalizedTextTriple.anIntArray3759 = IntArray(i_18_)

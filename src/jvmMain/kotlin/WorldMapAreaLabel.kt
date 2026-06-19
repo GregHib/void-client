@@ -31,7 +31,7 @@ class WorldMapAreaLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRende
 
         @JvmStatic
         fun method3570(bool: Boolean) {
-            if (AbstractProceduralTextureNode.aSoundChannelMixer_7042 != null) AbstractProceduralTextureNode.aSoundChannelMixer_7042!!.method2084(-6858)
+            if (ClientLoadStateMachine.aSoundChannelMixer_7042 != null) ClientLoadStateMachine.aSoundChannelMixer_7042!!.method2084(-6858)
             anInt8579++
             if (VarbitDefLoader.aSoundChannelMixer_2596 != null) VarbitDefLoader.aSoundChannelMixer_2596!!.method2084(-6858)
             if (bool != false) anInt8583 = 30

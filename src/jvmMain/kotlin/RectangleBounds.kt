@@ -17,7 +17,7 @@ class RectangleBounds internal constructor(var anInt2153: Int, var anInt2155: In
         fun method1265(i: Int) {
             anInt2152++
             if (i != 16) aRgbColorPalette_2157 = null
-            if (AbstractProceduralTextureNode.aSoundChannelMixer_7042 != null) AbstractProceduralTextureNode.aSoundChannelMixer_7042!!.method2093(true)
+            if (ClientLoadStateMachine.aSoundChannelMixer_7042 != null) ClientLoadStateMachine.aSoundChannelMixer_7042!!.method2093(true)
             if (VarbitDefLoader.aSoundChannelMixer_2596 != null) VarbitDefLoader.aSoundChannelMixer_2596!!.method2093(true)
         }
 

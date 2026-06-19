@@ -129,7 +129,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
             val i_15_ = anIntArray9297[i_11_ - 1]
             if (anInt9298 + i_15_ < i_12_ && i_12_ < i_14_ - anInt9298) {
                 var i_16_ = 0
-                while (DisplaceTextureNode.Companion.anInt9139 > i_16_) {
+                while (ClampTextureNode.Companion.anInt9139 > i_16_) {
                     var i_17_ = 0
                     val i_18_ = if (!bool) -anInt9288 else anInt9288
                     var i_19_: Int
@@ -151,7 +151,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                     else `is`[i_16_] = anIntArrayArray9286[i_13_]!![i_20_]
                     i_16_++
                 }
-            } else ArrayCopyUtil.method1579(`is`, 0, DisplaceTextureNode.Companion.anInt9139, 0)
+            } else ArrayCopyUtil.method1579(`is`, 0, ClampTextureNode.Companion.anInt9139, 0)
         }
         if (i_10_ != 255) method3110(44)
         return `is`

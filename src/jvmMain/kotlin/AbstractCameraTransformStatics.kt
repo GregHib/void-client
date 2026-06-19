@@ -26,7 +26,7 @@ object AbstractCameraTransformStatics {
         LocalPlayerState.aPlayer_1907!!.method2449(8, 8, 118.toByte())
         if (i.toInt() != -49) anInt1597 = 115
         var i_6_ = 18
-        ImageFrameCache.anIntArray4031 = IntArray(i_6_)
+        AbstractCameraTransformStatics.anIntArray4031 = IntArray(i_6_)
         StringCacheNode.aByteArrayArray7212 = arrayOfNulls<ByteArray>(i_6_)
         BrightnessOptionState.anIntArrayArray5894 = Array<IntArray?>(i_6_) { IntArray(4) }
         NativeSprite.anIntArray5192 = IntArray(i_6_)
@@ -47,10 +47,10 @@ object AbstractCameraTransformStatics {
                 NullOggStream.anIntArray9042!![i_6_] = i_9_
                 NativeSprite.anIntArray5192!![i_6_] = aJs5Archive_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
                 GameAppletFrame.anIntArray38!![i_6_] = aJs5Archive_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
-                ImageFrameCache.anIntArray4031!![i_6_] = aJs5Archive_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
+                AbstractCameraTransformStatics.anIntArray4031!![i_6_] = aJs5Archive_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
                 LocalizedTextTriple.anIntArray3759!![i_6_] = aJs5Archive_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
                 RenderNodeStatics.anIntArray9724!![i_6_] = (aJs5Archive_7382!!.method417("ul" + i_7_ + "_" + i_8_, CameraSplineNode.method2955(i.toInt(), -49)))
-                if (ImageFrameCache.anIntArray4031!![i_6_] == -1) {
+                if (AbstractCameraTransformStatics.anIntArray4031!![i_6_] == -1) {
                     NativeSprite.anIntArray5192!![i_6_] = -1
                     GameAppletFrame.anIntArray38!![i_6_] = -1
                     LocalizedTextTriple.anIntArray3759!![i_6_] = -1
@@ -62,8 +62,8 @@ object AbstractCameraTransformStatics {
             i_7_++
         }
         var i_10_ = i_6_
-        while (ImageFrameCache.anIntArray4031!!.size > i_10_) {
-            ImageFrameCache.anIntArray4031!![i_10_] = -1
+        while (AbstractCameraTransformStatics.anIntArray4031!!.size > i_10_) {
+            AbstractCameraTransformStatics.anIntArray4031!![i_10_] = -1
             NativeSprite.anIntArray5192!![i_10_] = -1
             GameAppletFrame.anIntArray38!![i_10_] = -1
             LocalizedTextTriple.anIntArray3759!![i_10_] = -1
@@ -74,6 +74,14 @@ object AbstractCameraTransformStatics {
         if (WorldMapRenderer.anInt4674 != 3) i_11_ = 8
         else i_11_ = 4
         RegionSceneShifter.method3157(i_5_, 123.toByte(), i_4_, i_11_, false)
+    }
+    var anIntArray4031: IntArray? = null
+
+    @JvmStatic
+    fun method2555(i: Byte) {
+        AbstractCameraTransformStatics.anIntArray4031 = null
+        Gl3dTexture.aIntRange_4027 = null
+        ChatCommandProcessor.aCacheLruCache_4036 = null
     }
 
     @JvmStatic

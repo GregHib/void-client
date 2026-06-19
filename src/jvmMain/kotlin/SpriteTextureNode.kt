@@ -52,9 +52,9 @@ open class SpriteTextureNode : AbstractProceduralTextureNode(0, false) {
             val is_3_ = `is`[1]!!
             val is_4_ = `is`[2]!!
             var i_5_ = (this.anInt9237 * (if (this.anInt9241 != FixedFunctionMaterialPass.anInt6212) (this.anInt9241 * i / FixedFunctionMaterialPass.anInt6212) else i))
-            if (DisplaceTextureNode.Companion.anInt9139 == this.anInt9237) {
+            if (ClampTextureNode.Companion.anInt9139 == this.anInt9237) {
                 var i_6_ = 0
-                while ((DisplaceTextureNode.Companion.anInt9139 > i_6_)) {
+                while ((ClampTextureNode.Companion.anInt9139 > i_6_)) {
                     val i_7_ = this.anIntArray9232!![i_5_++]
                     is_4_[i_6_] = WhirlpoolHash.method1166(4080, i_7_ shl 4)
                     is_3_[i_6_] = WhirlpoolHash.method1166(65280, i_7_) shr 4
@@ -63,8 +63,8 @@ open class SpriteTextureNode : AbstractProceduralTextureNode(0, false) {
                 }
             } else {
                 var i_8_ = 0
-                while ((DisplaceTextureNode.Companion.anInt9139 > i_8_)) {
-                    val i_9_: Int = (this.anInt9237 * i_8_ / DisplaceTextureNode.Companion.anInt9139)
+                while ((ClampTextureNode.Companion.anInt9139 > i_8_)) {
+                    val i_9_: Int = (this.anInt9237 * i_8_ / ClampTextureNode.Companion.anInt9139)
                     val i_10_ = (this.anIntArray9232!![i_9_ + i_5_])
                     is_4_[i_8_] = WhirlpoolHash.method1166(i_10_, 255) shl 4
                     is_3_[i_8_] = WhirlpoolHash.method1166(i_10_ shr 4, 4080)

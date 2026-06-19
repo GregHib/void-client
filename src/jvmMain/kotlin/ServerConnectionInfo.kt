@@ -1,4 +1,4 @@
-import AbstractProceduralTextureNode.Companion.method3038
+import ChatCommandProcessor.method3038
 import InvertTextureNode.Companion.method3134
 import GameClock.method599
 import SceneObjectSpawner.Companion.method773

@@ -6,7 +6,7 @@ class SourceRowTextureNode : AbstractProceduralTextureNode(0, true) {
         anInt9115++
         if (i_0_ != 255) aNodeDeque_9111 = null
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
-        if (this.aSpriteSheetCache_7032!!.aBoolean2570) ArrayCopyUtil.method1579(`is`, 0, DisplaceTextureNode.Companion.anInt9139, LightDetailOptionState.anIntArray6035!![i])
+        if (this.aSpriteSheetCache_7032!!.aBoolean2570) ArrayCopyUtil.method1579(`is`, 0, ClampTextureNode.Companion.anInt9139, LightDetailOptionState.anIntArray6035!![i])
         return `is`
     }
 

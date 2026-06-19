@@ -142,19 +142,24 @@ class GlTexture2DRegion : GlTexture2D {
             TileRenderState.method2681(9864)
             NpcReference.method2959(-1)
             OggBitstreamDecoder.method2965(string, i_11_, bool, 0)
-            ClientGameLoopNode.method2994(2)
+            method2994(2)
             VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
             method3568(FacingDirectionNode.aRenderer6654, 4)
             ModelHeaderCache.method1933(CameraRotationStub.aJs5Archive_322, FacingDirectionNode.aRenderer6654, true)
             LocalizedTextStatics.method2061(-128)
             AbstractCameraTransformStatics.method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
             TextureCache.method3466(i xor 0x4f.inv())
-            AbstractProceduralTextureNode.method3038(-1)
+            ChatCommandProcessor.method3038(-1)
             if (WorldMapRenderer.anInt4674 == 3) ByteBufferStatics.method3379(2, 4)
             else if (WorldMapRenderer.anInt4674 == 7) ByteBufferStatics.method3379(2, 8)
             else if (WorldMapRenderer.anInt4674 != 10) {
                 if (WorldMapRenderer.anInt4674 == 1 || WorldMapRenderer.anInt4674 == 2) method3616(12639)
             } else ByteBufferStatics.method3379(2, 11)
+        }
+        var anInt6871: Int = 0
+        fun method2994(i: Int) {
+            anInt6871++
+            if (i == 2) LoadingScreenState.aRenderableEntryArray2636 = null
         }
     }
 }

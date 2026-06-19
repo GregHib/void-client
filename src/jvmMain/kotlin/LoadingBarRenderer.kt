@@ -1,4 +1,3 @@
-import SpriteSheetCache.Companion.method1428
 import IndexedSprite.Companion.method163
 import java.awt.Color
 import java.awt.Font
@@ -311,6 +310,13 @@ class LoadingBarRenderer : CursorController {
                 aLruByteCache_4254 = null
                 anImage4249 = null
             }
+        }
+
+        var anInt2569: Int = 0
+        fun method1428(bool: Boolean) {
+            anImage4249 = null
+            anInt2569++
+            FontMetaRef.aFont4329 = null
         }
     }
 }

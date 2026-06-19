@@ -35,7 +35,7 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
             if (js5Archive.method421(false, CameraNodeList.anInt1742)) i_2_++
             if (js5Archive.method421(false, NamedIdRecord.anInt4469)) i_2_++
             if (i != 22388) return 8
-            if (js5Archive.method421(false, ClampTextureNode.anInt9473)) i_2_++
+            if (js5Archive.method421(false, TexGenMaterialPass.anInt9473)) i_2_++
             if (js5Archive.method421(false, LocTypeDefLoader.anInt2510)) i_2_++
             if (js5Archive.method421(false, RsaVarbitHandler.anInt4895)) i_2_++
             if (js5Archive.method421(false, PerlinTextureProvider.anInt5814)) i_2_++

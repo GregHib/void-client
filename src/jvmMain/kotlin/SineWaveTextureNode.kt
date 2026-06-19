@@ -41,7 +41,7 @@ class SineWaveTextureNode : AbstractProceduralTextureNode(0, true) {
             val i_3_ = LightDetailOptionState.anIntArray6035!![i]
             val i_4_ = -2048 + i_3_ shr 1
             var i_5_ = 0
-            while ((i_5_ < DisplaceTextureNode.Companion.anInt9139)) {
+            while ((i_5_ < ClampTextureNode.Companion.anInt9139)) {
                 val i_6_ = SceneEffectMarker.anIntArray6432!![i_5_]
                 val i_7_ = -2048 + i_6_ shr 1
                 var i_8_: Int

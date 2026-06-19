@@ -18,7 +18,7 @@ class BrightnessTextureNode internal constructor(i: Int) : AbstractProceduralTex
     override fun method3042(i: Int, i_8_: Int): IntArray? {
         anInt9221++
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
-        if (this.aSpriteSheetCache_7032!!.aBoolean2570) ArrayCopyUtil.method1579(`is`, 0, DisplaceTextureNode.Companion.anInt9139, anInt9220)
+        if (this.aSpriteSheetCache_7032!!.aBoolean2570) ArrayCopyUtil.method1579(`is`, 0, ClampTextureNode.Companion.anInt9139, anInt9220)
         if (i_8_ != 255) method3085(63)
         return `is`
     }

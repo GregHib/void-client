@@ -57,24 +57,24 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
 
     init {
         this.aBoolean3458 = aHa_Sub3_3457.aBoolean8159
-        if (this.aBoolean3458 && !aHa_Sub3_3457.method3931(true, SpriteSheetCache.aTextureFormatInfo_2571, MovementDirection.aMovementDirection_1183)) this.aBoolean3458 = false
-        if (this.aBoolean3458 || aHa_Sub3_3457.method3880(MovementDirection.aMovementDirection_1183, SpriteSheetCache.aTextureFormatInfo_2571, 123.toByte())) {
+        if (this.aBoolean3458 && !aHa_Sub3_3457.method3931(true, aTextureFormatInfo_2571, MovementDirection.aMovementDirection_1183)) this.aBoolean3458 = false
+        if (this.aBoolean3458 || aHa_Sub3_3457.method3880(MovementDirection.aMovementDirection_1183, aTextureFormatInfo_2571, 123.toByte())) {
             FireParticleStream.method134((-126).toByte())
             if (this.aBoolean3458) {
                 var `is` = method461(false, CompiledScriptCache.anObject4366, 53146732)
-                this.anInterface18_Impl1_3452 = aHa_Sub3_3457.method3872(16, 128, SpriteSheetCache.aTextureFormatInfo_2571, true, 128, `is`)
+                this.anInterface18_Impl1_3452 = aHa_Sub3_3457.method3872(16, 128, aTextureFormatInfo_2571, true, 128, `is`)
                 `is` = method461(false, BoxedIntHolder.anObject2969, 53146732)
-                aHa_Sub3_3457.method3872(16, 128, SpriteSheetCache.aTextureFormatInfo_2571, true, 128, `is`)
+                aHa_Sub3_3457.method3872(16, 128, aTextureFormatInfo_2571, true, 128, `is`)
             } else {
                 this.anInterface18_Impl3Array3459 = arrayOfNulls<Renderable2dTexture>(16)
                 for (i in 0..15) {
                     val `is` = method1331(100.toByte(), CompiledScriptCache.anObject4366, 128 * (i * 128 * 2), 32768)
-                    this.anInterface18_Impl3Array3459!![i] = aHa_Sub3_3457.method3944(`is`, 128, SpriteSheetCache.aTextureFormatInfo_2571, 2, true, 128)
+                    this.anInterface18_Impl3Array3459!![i] = aHa_Sub3_3457.method3944(`is`, 128, aTextureFormatInfo_2571, 2, true, 128)
                 }
                 anInterface18_Impl3Array3454 = arrayOfNulls<Renderable2dTexture>(16)
                 for (i in 0..15) {
                     val `is` = method1331(120.toByte(), BoxedIntHolder.anObject2969, 128 * (128 * i) * 2, 32768)
-                    anInterface18_Impl3Array3454!![i] = aHa_Sub3_3457.method3944(`is`, 128, SpriteSheetCache.aTextureFormatInfo_2571, 2, true, 128)
+                    anInterface18_Impl3Array3454!![i] = aHa_Sub3_3457.method3944(`is`, 128, aTextureFormatInfo_2571, 2, true, 128)
                 }
             }
         }
@@ -105,5 +105,7 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
         fun method2042(i: Byte) {
             if (i.toInt() == -67) aParticleAmountCache_3453 = null
         }
+
+        var aTextureFormatInfo_2571: TextureFormatInfo? = TextureFormatInfo(2)
     }
 }

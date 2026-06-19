@@ -9,7 +9,7 @@ class DisplaceTextureNode : AbstractProceduralTextureNode(3, false) {
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_1_ = this.method3048(i, i_0_ + 633706082, 1)!!
             val is_2_ = this.method3048(i, i_0_ xor 0x25c5979e, 2)!!
-            for (i_3_ in 0..<anInt9139) {
+            for (i_3_ in 0..<ClampTextureNode.anInt9139) {
                 val i_4_ = 0xff and (is_1_[i_3_] shr 4)
                 val i_5_ = anInt9133 * is_2_[i_3_] shr 12
                 val i_6_ = WidgetComponentNode.anIntArray4654!![i_4_] * i_5_ shr 12
@@ -38,7 +38,6 @@ class DisplaceTextureNode : AbstractProceduralTextureNode(3, false) {
     override fun method3044(i: Int) {
         TrigLookupInit.method1605(26188)
         anInt9136++
-        if (i < 108) anInt9139 = 126
     }
 
     override fun method3047(i: Int, i_13_: Int): Array<IntArray?>? {
@@ -52,7 +51,7 @@ class DisplaceTextureNode : AbstractProceduralTextureNode(3, false) {
             val is_17_ = `is`[1]!!
             val is_18_ = `is`[2]!!
             var i_19_ = 0
-            while (anInt9139 > i_19_) {
+            while (ClampTextureNode.anInt9139 > i_19_) {
                 val i_20_ = 0xff and (255 * is_14_[i_19_] shr 12)
                 val i_21_ = anInt9133 * is_15_[i_19_] shr 12
                 val i_22_ = i_21_ * WidgetComponentNode.anIntArray4654!![i_20_] shr 12
@@ -82,8 +81,6 @@ class DisplaceTextureNode : AbstractProceduralTextureNode(3, false) {
         var anInt9137: Int = 0
         @JvmField
         var anInt9138: Int = 0
-        @JvmField
-        var anInt9139: Int = 0
 
         @JvmStatic
         fun method3062(bool: Boolean) {

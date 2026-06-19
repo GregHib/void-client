@@ -19,7 +19,7 @@ class BlendTextureNode : AbstractProceduralTextureNode(3, false) {
             val is_11_ = is_3_[1]!!
             val is_12_ = is_3_[2]!!
             var i_13_ = 0
-            while ((i_13_ < DisplaceTextureNode.Companion.anInt9139)) {
+            while ((i_13_ < ClampTextureNode.Companion.anInt9139)) {
                 val i_14_ = is_1_[i_13_]
                 if (i_14_ == 4096) {
                     is_4_[i_13_] = is_7_[i_13_]
@@ -50,7 +50,7 @@ class BlendTextureNode : AbstractProceduralTextureNode(3, false) {
             val is_18_ = this.method3048(i, 633706337, 1)!!
             val is_19_ = this.method3048(i, i_16_ + 633706082, 2)!!
             var i_20_ = 0
-            while (DisplaceTextureNode.Companion.anInt9139 > i_20_) {
+            while (ClampTextureNode.Companion.anInt9139 > i_20_) {
                 val i_21_ = is_19_[i_20_]
                 if (i_21_ != 4096) {
                     if (i_21_ == 0) `is`[i_20_] = is_18_[i_20_]

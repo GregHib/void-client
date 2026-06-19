@@ -73,7 +73,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
             this.aHa_Sub3_4479.method3871(ItemModelDefinition.aCameraNodeList_430, 0)
             val class101_sub2 = this.aHa_Sub3_4479.method3820(false)
             class101_sub2.method899(1024)
-            this.aHa_Sub3_4479.method3853(-32, ClampTextureNode.aConfigFlagUtil_9477)
+            this.aHa_Sub3_4479.method3853(-32, GlCubemapLightPass.aConfigFlagUtil_9477)
             if (aBoolean7311) {
                 this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 113, (TheoraVideoStream.aRenderConfigFactory_9011))
                 this.aHa_Sub3_4479.method3924(true, false, 0, LoadingBarRenderer.aTrigLookupTables_4247, false)
@@ -367,7 +367,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
             try {
                 anInt7321++
                 val i_38_ = class348_sub49!!.anInt7197
-                val `is` = ClientGameLoopNode.method2992(string, (-20).toByte())
+                val `is` = ConfigArchiveLoader.method2992(string, (-20).toByte())
                 val i_39_ = 1 % ((-6 - i) / 63)
                 class348_sub49.method3381(5537, `is`.size)
                 class348_sub49.anInt7197 += (NativeRenderer.aHuffmanCodec_1131!!.method2227(`is`.size, 0, class348_sub49.anInt7197, `is`, 103, class348_sub49.aByteArray7154))
@@ -376,5 +376,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                 throw TextureLoadException.method2929(runtimeexception, ("bk.O(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
             }
         }
+
+        var aConfigFlagUtil_9477: ConfigFlagUtil? = ConfigFlagUtil()
     }
 }

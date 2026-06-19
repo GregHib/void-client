@@ -188,7 +188,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                 var i_27_ = 0
                 while ((i_27_ < (if (!GrayscaleNoiseTexture.aBoolean5300) 1 else 2))) {
                     val bool = i_27_ == 0
-                    val class76 = (if (bool) PlayerSequenceSelector.aSceneObjectSpawner_1208 else SceneProjector.aSceneObjectSpawner_10436)
+                    val class76 = (if (bool) PlayerSequenceSelector.aSceneObjectSpawner_1208 else FireParticleStream.aSceneObjectSpawner_10436)
                     var i_28_ = i
                     var i_29_ = i_4_
                     if (GrayscaleNoiseTexture.aBoolean5300) {

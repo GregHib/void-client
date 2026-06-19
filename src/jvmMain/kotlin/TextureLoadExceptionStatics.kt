@@ -52,7 +52,7 @@ object TextureLoadExceptionStatics {
         TerrainTileShape.anInt8808 = 0
         OpenGlModel.aDoublyLinkedNodeList_2077 = DoublyLinkedNodeList()
         DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103 = arrayOfNulls<ProjectileNode>(1024)
-        DisplaySettingsConfig.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>((KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637]) + 1)
+        DisplaySettingsConfig.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>((KeyedCacheEntryReference.anIntArray9558!![TextureQualityOptionState.anInt6637]) + 1)
         GlTexture2D.anInt8550 = 0
         RingBufferInputStream.anInt4559 = 0
         CacheArchiveIndex.method1072(js5Archive, (-107).toByte())

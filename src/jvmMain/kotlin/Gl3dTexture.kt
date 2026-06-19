@@ -164,7 +164,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 ParticleProcessor.aIntRange_4269,
                 RendererType.aIntRange_4477,
                 SimpleBinaryOptionState.aIntRange_6075,
-                ImageFrameCache.aIntRange_4027,
+                Gl3dTexture.aIntRange_4027,
                 BrightnessTextureNode.aIntRange_9216,
                 ScriptOpcodeHolder.aIntRange_2338,
                 SlotBinding.aIntRange_3427,
@@ -197,6 +197,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 PingHostListHolder.aIntRange_2331
             ))
         }
+        var aIntRange_4027: IntRange? = IntRange(90, 10)
 
         @JvmStatic
         fun method249(i: Int) {

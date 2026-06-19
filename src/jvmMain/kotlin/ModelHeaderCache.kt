@@ -233,7 +233,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         fun method1929(i: Byte): Array<RgbColorPalette?> {
             if (i.toInt() != -19) method1933(null, null, false)
             anInt3280++
-            return (arrayOf<RgbColorPalette?>(Client.aRgbColorPalette_10437, NamedIdEntry.aRgbColorPalette_6891, SplashImageLoadable.aRgbColorPalette_4689, BufferedFileReader.aRgbColorPalette_4537, FileIoUtil.aRgbColorPalette_4098, RectangleBounds.aRgbColorPalette_2157, StaticNoiseTexture.aRgbColorPalette_8662, GlShaderObjectHandle.aRgbColorPalette_515, InputStream_Sub2.aRgbColorPalette_6977, ArbFogMaterialPass.aRgbColorPalette_6201, NpcUpdateProcessor.aRgbColorPalette_1519, SynthVoiceGroup.aRgbColorPalette_8853, ClampTextureNode.aRgbColorPalette_9475, TextureGenerator.aRgbColorPalette_2491))
+            return (arrayOf<RgbColorPalette?>(Client.aRgbColorPalette_10437, NamedIdEntry.aRgbColorPalette_6891, SplashImageLoadable.aRgbColorPalette_4689, BufferedFileReader.aRgbColorPalette_4537, FileIoUtil.aRgbColorPalette_4098, RectangleBounds.aRgbColorPalette_2157, StaticNoiseTexture.aRgbColorPalette_8662, GlShaderObjectHandle.aRgbColorPalette_515, InputStream_Sub2.aRgbColorPalette_6977, ArbFogMaterialPass.aRgbColorPalette_6201, NpcUpdateProcessor.aRgbColorPalette_1519, SynthVoiceGroup.aRgbColorPalette_8853, RgbColorPalette.aRgbColorPalette_9475, TextureGenerator.aRgbColorPalette_2491))
         }
 
         @JvmStatic
@@ -328,7 +328,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 spriteImages = SpriteImage.method1519(js5Archive, NamedIdRecord.anInt4469, 0)
                 WorldMapRenderer.aAbstractModelRendererArray4679 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) WorldMapRenderer.aAbstractModelRendererArray4679!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                spriteImages = SpriteImage.method1519(js5Archive, ClampTextureNode.anInt9473, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, TexGenMaterialPass.anInt9473, 0)
                 CameraNodeList.aAbstractModelRendererArray1744 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0

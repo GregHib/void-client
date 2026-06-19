@@ -85,7 +85,7 @@ class ModelLightingConfig {
             val i_30_ = class348_sub49.readUnsignedShort(842397944)
             val i_31_ = class348_sub49.readUnsignedShort(842397944)
             val i_32_ = class348_sub49.readUnsignedShort(842397944)
-            this.aCircleRasterizer_2541 = SceneProjector.method1636(i_31_, i_30_, i_27_, i_32_, i_28_, -1, i_29_)
+            this.aCircleRasterizer_2541 = ModelLightingConfig.method1636(i_31_, i_30_, i_27_, i_32_, i_28_, -1, i_29_)
         } else this.aCircleRasterizer_2541 = ParameterizedText.aCircleRasterizer_9571
     }
 
@@ -250,5 +250,16 @@ class ModelLightingConfig {
             }
         }
 
+        var anInt2988: Int = 0
+        fun method1636(i: Int, i_74_: Int, i_75_: Int, i_76_: Int, i_77_: Int, i_78_: Int, i_79_: Int): CircleRasterizer? {
+            anInt2988++
+            val l = (i_76_.toLong() * 76724863L xor (i.toLong() * 32147369L xor (i_74_.toLong() * 986053L xor (i_75_.toLong() * 67481L xor i_77_.toLong() * 97549L xor i_79_.toLong() * 475427L))))
+            var circleRasterizer = PlayerAppearanceUpdateDecoder.aLruByteCache_4543!!.method583(l, 90) as CircleRasterizer?
+            if (circleRasterizer != null) return circleRasterizer
+            circleRasterizer = TerrainChunkBuilder.aRenderer1098!!.method3697(i_75_, i_77_, i_79_, i_74_, i, i_76_)
+            if (i_78_ != -1) method1636(58, 63, -99, -89, -7, 18, 71)
+            PlayerAppearanceUpdateDecoder.aLruByteCache_4543!!.method582(circleRasterizer, l, (-106).toByte())
+            return circleRasterizer
+        }
     }
 }

@@ -37,7 +37,7 @@ class RadialTextureNode : AbstractProceduralTextureNode(0, true) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (i_2_ != 255) return null
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            for (i_3_ in 0..<DisplaceTextureNode.Companion.anInt9139) {
+            for (i_3_ in 0..<ClampTextureNode.Companion.anInt9139) {
                 val i_4_ = anInt9339 + (SceneEffectMarker.anIntArray6432!![i_3_] shl 12) / anInt9340
                 val i_5_ = anInt9338 + (LightDetailOptionState.anIntArray6035!![i] shl 12) / anInt9340
                 val i_6_ = i_4_

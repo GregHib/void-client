@@ -23,8 +23,6 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
         @JvmField
         var anInt5205: Int = 0
         @JvmField
-        var aClass348_Sub6_5206: HslColorTableNode? = HslColorTableNode(0, 0)
-        @JvmField
         var aJs5Archive_5207: Js5Archive? = null
 
         /*synthetic*/
@@ -42,7 +40,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
             if (i != 19612) method167(-70)
             aFontMetaRef_5200 = null
             aFontMetaRef_5204 = null
-            aClass348_Sub6_5206 = null
+            SpriteSheetCache.aClass348_Sub6_5206 = null
             aJs5Archive_5207 = null
         }
 

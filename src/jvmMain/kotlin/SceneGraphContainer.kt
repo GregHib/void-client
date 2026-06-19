@@ -54,7 +54,7 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
         anInt6485 = 0
         this.method2373(false)
         DisplaySettingsConfig.aClass318_Sub10Array7249!![GlTexture2D.anInt8550] = this
-        GlTexture2D.anInt8550 = (GlTexture2D.anInt8550 + 1 and KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637])
+        GlTexture2D.anInt8550 = (GlTexture2D.anInt8550 + 1 and KeyedCacheEntryReference.anIntArray9558!![TextureQualityOptionState.anInt6637])
     }
 
     private fun method2531(i: Int, bool: Boolean) {
@@ -219,7 +219,7 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
         fun method2526(i: Int, bool: Boolean): SceneGraphContainer {
             if (GlTexture2D.anInt8550 != RingBufferInputStream.anInt4559) {
                 val class318_sub10 = DisplaySettingsConfig.aClass318_Sub10Array7249!![RingBufferInputStream.anInt4559]!!
-                RingBufferInputStream.anInt4559 = RingBufferInputStream.anInt4559 + 1 and (KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637])
+                RingBufferInputStream.anInt4559 = RingBufferInputStream.anInt4559 + 1 and (KeyedCacheEntryReference.anIntArray9558!![TextureQualityOptionState.anInt6637])
                 class318_sub10.method2531(i, bool)
                 return class318_sub10
             }

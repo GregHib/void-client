@@ -89,8 +89,8 @@ class Crc64Hashable : KeyedComparable {
             var i = i
             anInt4986++
             if (i < 0 || i > 2) i = 0
-            HslColorTableNode.anInt6637 = i
-            DisplaySettingsConfig.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>(1 + (KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637]))
+            TextureQualityOptionState.anInt6637 = i
+            DisplaySettingsConfig.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>(1 + (KeyedCacheEntryReference.anIntArray9558!![TextureQualityOptionState.anInt6637]))
             GlTexture2D.anInt8550 = 0
             if (i_2_ >= -118) method1114(-43, -71)
             RingBufferInputStream.anInt4559 = 0

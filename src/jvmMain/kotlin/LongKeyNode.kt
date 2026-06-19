@@ -84,6 +84,7 @@ class LongKeyNode : LinkedListNode {
             return class348_sub47
         }
 
+        var anInt9479: Int = 0
         @JvmStatic
         fun method2808(i: Int, var_renderer: Renderer?, bool: Boolean): Boolean {
             try {
@@ -189,7 +190,7 @@ class LongKeyNode : LinkedListNode {
                 var_renderer.la()
                 var_renderer.GA(-16777215)
                 TextureCache.method3466(-86)
-                ClampTextureNode.anInt9479 = 0
+                LongKeyNode.anInt9479 = 0
                 ModelWallEntity.aNodeDeque_10125!!.method1996(116)
                 if (!PlayerAppearanceUpdateDecoder.aBoolean4542) {
                     var i_37_ = i_5_
@@ -237,10 +238,10 @@ class LongKeyNode : LinkedListNode {
                                                         if (i_50_ == 3 && (104 + i_6_ - 1 > i_45_) && 3 + i_38_ > i_45_ && ((0x2c0120 and (is_46_[i_44_ - i_47_]!![(-i_48_ + 1 + i_45_)])) == 0)) i_45_++
                                                     }
                                                 }
-                                                SeqDefinitionCache.anIntArray3347!![(ClampTextureNode.anInt9479)] = class51.anInt941
-                                                MenuActionNode.Companion.anIntArray6770!![(ClampTextureNode.anInt9479)] = i_44_
-                                                BoxBlurTextureNode.anIntArray9458!![(ClampTextureNode.anInt9479)] = i_45_
-                                                ClampTextureNode.anInt9479++
+                                                SeqDefinitionCache.anIntArray3347!![(LongKeyNode.anInt9479)] = class51.anInt941
+                                                MenuActionNode.Companion.anIntArray6770!![(LongKeyNode.anInt9479)] = i_44_
+                                                BoxBlurTextureNode.anIntArray9458!![(LongKeyNode.anInt9479)] = i_45_
+                                                LongKeyNode.anInt9479++
                                             }
                                         }
                                     }

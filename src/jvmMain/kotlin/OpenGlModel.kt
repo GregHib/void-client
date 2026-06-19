@@ -1016,7 +1016,7 @@ class OpenGlModel : AbstractModel {
                 class64_sub3_211_.aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 = aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463
             } else if (!LinkedListIterator.method1238(i, anInt5556, -93)) class64_sub3_211_.aArchiveFileConditionWrapper_5575 = null
             else class64_sub3_211_.aArchiveFileConditionWrapper_5575 = aArchiveFileConditionWrapper_5575
-            if (SceneProjector.method1637(anInt5556, 32768, i)) {
+            if (method1637(anInt5556, 32768, i)) {
                 if (class64_sub3_213_!!.aShortArray5601 == null || class64_sub3_213_.aShortArray5601!!.size < anInt5632) {
                     val i_230_ = anInt5632
                     class64_sub3_213_.aShortArray5601 = ShortArray(i_230_)
@@ -1728,7 +1728,7 @@ class OpenGlModel : AbstractModel {
                         anIntArray5593 = null
                     }
                 }
-                if (anIntArray5644 != null && !ConfigDefinitionLoader.method1221(-3157, anInt5648, anInt5556)) {
+                if (anIntArray5644 != null && !method1221(-3157, anInt5648, anInt5556)) {
                     if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anByteBufferReader_1811 != null)) {
                         if (!aBoolean5527) method692((-123).toByte())
                         anIntArray5644 = null
@@ -3645,6 +3645,22 @@ class OpenGlModel : AbstractModel {
             aDoublyLinkedNodeList_2077 = null
             aBooleanArray2076 = null
             aFloatArray2075 = null
+        }
+
+
+        var anInt2984: Int = 0
+        fun method1637(i: Int, i_80_: Int, i_81_: Int): Boolean {
+            anInt2984++
+            if (i_80_ != 32768) return true
+            return (0x8000 and i_81_) != 0
+        }
+
+
+        var anInt2088: Int = 0
+        fun method1221(i: Int, i_3_: Int, i_4_: Int): Boolean {
+            if (i != -3157) return false
+            anInt2088++
+            return method2259(0, i_4_, i_3_) or ((i_3_ and 0x70000) != 0) || ParticleEmitterDef.method2187(i_3_, -79, i_4_)
         }
     }
 }

@@ -19,7 +19,7 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
             anInt8703++
             var bool = true
             val class206 = aHa_Sub2_8707.aFrameBufferObject_7778
-            aHa_Sub2_8707.K(HslColorTableNode.anIntArray6635)
+            aHa_Sub2_8707.K(anIntArray6635)
             aHa_Sub2_8707.la()
             aHa_Sub2_8707.method3755(-32)
             glMatrixMode(5889)
@@ -163,7 +163,7 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
             aHa_Sub2_8707.method3738(-15039, 0)
             aHa_Sub2_8707.method3771((-88).toByte(), null)
             glPopAttrib()
-            aHa_Sub2_8707.KA(HslColorTableNode.anIntArray6635!![0], HslColorTableNode.anIntArray6635!![1], HslColorTableNode.anIntArray6635!![2], HslColorTableNode.anIntArray6635!![3])
+            aHa_Sub2_8707.KA(anIntArray6635!![0], anIntArray6635!![1], anIntArray6635!![2], anIntArray6635!![3])
             if (bool && !aHa_Sub2_8707.aBoolean7847) aClass258_Sub2_8701.method1950(69)
             return bool
         } catch (runtimeexception: RuntimeException) {
@@ -230,6 +230,11 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
             aClass348_Sub49_8698 = null
             if (i != -10794) aFontMetaRef_8706 = null
             aFontMetaRef_8706 = null
+        }
+        var anIntArray6635: IntArray? = IntArray(4)
+        fun method2768(i: Int) {
+            WorldMapScene.anIntArray6631 = null
+            CubemapTextureGlSource.anIntArray6635 = null
         }
     }
 }

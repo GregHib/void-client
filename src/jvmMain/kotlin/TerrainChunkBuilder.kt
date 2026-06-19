@@ -48,7 +48,7 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                 if (i != -12763) anInt1546 = -8
                 var i_13_ = 0
                 i_10_ = anInt1544 + anInt1559 * i_9_
-                if (aHa_Sub3_1561!!.method3880(MovementDirection.aMovementDirection_1183, (ClampTextureNode.aTextureFormatInfo_9471), 122.toByte())) {
+                if (aHa_Sub3_1561!!.method3880(MovementDirection.aMovementDirection_1183, (GlFontTextured.aTextureFormatInfo_9471), 122.toByte())) {
                     if (GlGroundShaderPass.aByteArray7394 == null) GlGroundShaderPass.aByteArray7394 = ByteArray(16384)
                     val is_14_ = GlGroundShaderPass.aByteArray7394!!
                     for (i_15_ in -128..-1) {
@@ -66,9 +66,9 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                         i_10_ += -128 + aVideoStreamDecoder_1560.anInt4113
                     }
                     if (anInterface18_Impl3_1556 == null) {
-                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3944((GlGroundShaderPass.aByteArray7394), 128, (ClampTextureNode.aTextureFormatInfo_9471), i xor 0x31d8.inv(), false, 128)
+                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3944((GlGroundShaderPass.aByteArray7394), 128, (GlFontTextured.aTextureFormatInfo_9471), i xor 0x31d8.inv(), false, 128)
                         anInterface18_Impl3_1556!!.method66(false, false, i xor 0x5582.inv())
-                    } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (GlGroundShaderPass.aByteArray7394), (ClampTextureNode.aTextureFormatInfo_9471))
+                    } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (GlGroundShaderPass.aByteArray7394), (GlFontTextured.aTextureFormatInfo_9471))
                 } else {
                     if (anIntArray543 == null) anIntArray543 = IntArray(16384)
                     val is_18_ = anIntArray543!!
@@ -222,7 +222,7 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
             NodeDequeStatics.aModelLightingConfigArrayArray3335 = Array(i) { arrayOfNulls(i_7_) }
             if (i_6_ == 21719) {
                 anInt1549++
-                if (FogState.anIntArray1432 != null) ParameterizedText.aCircleRasterizer_9571 = SceneProjector.method1636(FogState.anIntArray1432!![4], FogState.anIntArray1432!![3], FogState.anIntArray1432!![0], FogState.anIntArray1432!![5], FogState.anIntArray1432!![1], -1, FogState.anIntArray1432!![2])
+                if (FogState.anIntArray1432 != null) ParameterizedText.aCircleRasterizer_9571 = ModelLightingConfig.method1636(FogState.anIntArray1432!![4], FogState.anIntArray1432!![3], FogState.anIntArray1432!![0], FogState.anIntArray1432!![5], FogState.anIntArray1432!![1], -1, FogState.anIntArray1432!![2])
                 LocalizedTextStatics.aModelLightingConfig_3547 = ModelLightingConfig()
                 method3936(0)
             }

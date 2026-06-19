@@ -7,7 +7,7 @@ class IndexedSprite : Sprite {
 
     constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_16_: Int, `is`: ByteArray?) {
         try {
-            this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3944(`is`, i, ClampTextureNode.aTextureFormatInfo_9471, 2, false, i_16_)
+            this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3944(`is`, i, GlFontTextured.aTextureFormatInfo_9471, 2, false, i_16_)
             this.anInterface18_Impl3_5196!!.method66(false, false, 25688)
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_16_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
@@ -115,7 +115,7 @@ class IndexedSprite : Sprite {
             ProjectileConfigUtil.anInt394 = `is`[3]
             SimpleToggleOptionState.anInt5886 = `is`[1]
             if (bool_42_) {
-                CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, SceneProjector.anInt1879)
+                CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, FireParticleStream.anInt1879)
                 RenderNodeStatics.method3284(true, ModelWallEntity.aDouble10120)
             } else {
                 CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)

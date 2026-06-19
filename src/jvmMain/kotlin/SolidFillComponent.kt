@@ -112,7 +112,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
         fun method197(bool: Boolean): Int {
             anInt8358++
             if (bool != false) aBoundsConstraintEntry_8356 = null
-            return HslColorTableNode.anInt6637
+            return TextureQualityOptionState.anInt6637
         }
 
         @JvmStatic

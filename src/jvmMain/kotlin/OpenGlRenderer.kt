@@ -1,3 +1,5 @@
+import AbstractRenderPass.Companion.method3529
+import IndexedSprite.Companion.method165
 import jaclib.memory.Buffer
 import jaclib.memory.Stream
 import jaclib.memory.heap.NativeHeap
@@ -4012,7 +4014,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 val class318_sub1_sub3_sub3_436_: ProjectedGroundDecor?
                 if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = ((NpcEntityUpdater.aHashtable_3654!!.method3480((-2048 + i_435_).toLong(), -6008) as? NpcReference)?.aNpc_6859)
                 else class318_sub1_sub3_sub3_436_ = LoadingBarRenderer.aPlayerArray5058!![i_435_]
-                SpriteSheetCache.method1430(--class318_sub1_sub3_sub3!!.anInt10261, 119.toByte(), i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3)
+                method1430(--class318_sub1_sub3_sub3!!.anInt10261, 119.toByte(), i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3)
             }
             val i_437_ = i_316_ + (WorldMapLabel.aFontDefinition_4962!!.anInt1993 + WorldMapLabel.aFontDefinition_4962!!.anInt1988)
             for (i_438_ in 0..<SceneNodeDeque.anInt1497) {
@@ -4121,6 +4123,43 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     NodeDequeStatics.aFont_3326!!.method2575(118.toByte(), i_439_ + i_317_, -256, string, -16777216, i_440_ + i)
                 }
                 MapTileShape.method2663(i_316_ + -5592, i_444_, 1 + i_446_, i_445_, 1 + i_447_)
+            }
+        }
+
+        var anInt2567: Int = 0
+        var anInt6633: Int = 0
+        fun method1430(i: Int, i_1_: Byte, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, class318_sub1_sub3_sub3: ProjectedGroundDecor?, class318_sub1_sub3_sub3_8_: ProjectedGroundDecor?) {
+            try {
+                anInt2567++
+                val i_9_ = class318_sub1_sub3_sub3!!.method2425(-1)
+                if (i_9_ != -1) {
+                    val `object`: Any? = null
+                    var abstractModelRenderer = (TerrainTileShape.aLruByteCache_8807!!.method583(i_9_.toLong(), 118) as? AbstractModelRenderer?)
+                    if (abstractModelRenderer == null) {
+                        val spriteImages = SpriteImage.method1519(CameraRotationStub.aJs5Archive_322!!, i_9_, 0)
+                        if (spriteImages == null) return
+                        abstractModelRenderer = FacingDirectionNode.aRenderer6654!!.method3691(spriteImages[0], true)
+                        TerrainTileShape.aLruByteCache_8807!!.method582(abstractModelRenderer, i_9_.toLong(), (-115).toByte())
+                    }
+                    method165(class318_sub1_sub3_sub3_8_!!.plane.toInt(), i_5_, 0, i_3_ shr 1, class318_sub1_sub3_sub3_8_.x, class318_sub1_sub3_sub3_8_.method2436(126.toByte()) * 256, class318_sub1_sub3_sub3_8_.y, 92.toByte(), i_6_ shr 1, i_2_)
+                    var i_10_ = i_7_ + (RemoveRoofsOptionState.anIntArray6062!![0] + -18)
+                    var i_11_ = -54 + (RemoveRoofsOptionState.anIntArray6062!![1] + i_4_) - 16
+                    i_10_ += i / 4 * 18
+                    i_11_ += 18 * (i % 4)
+                    val i_12_ = -76 / ((i_1_ - 3) / 38)
+                    abstractModelRenderer!!.method974(i_10_, i_11_)
+                    if (class318_sub1_sub3_sub3 === class318_sub1_sub3_sub3_8_) FacingDirectionNode.aRenderer6654!!.method3668(18, -1 + i_11_, -256, i_10_ - 1, 18, 57)
+                    MapTileShape.method2663(-5590, i_10_ + -1, 18 + i_10_, i_11_ + -1, i_11_ - -18)
+                    val class318_sub6 = method3529(32564)
+                    class318_sub6.anInt6426 = 16 + i_10_
+                    class318_sub6.anInt6427 = i_11_
+                    class318_sub6.aClass318_Sub1_Sub3_Sub3_6431 = class318_sub1_sub3_sub3
+                    class318_sub6.anInt6425 = i_11_ - -16
+                    class318_sub6.anInt6429 = i_10_
+                    InputStream_Sub2.aDoublyLinkedNodeList_83!!.method1869(-87, class318_sub6)
+                }
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("qk.G(" + i + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (class318_sub1_sub3_sub3 != null) "{...}" else "null") + ',' + (if (class318_sub1_sub3_sub3_8_ != null) "{...}" else "null") + ')'))
             }
         }
     }

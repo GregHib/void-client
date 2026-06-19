@@ -24,7 +24,7 @@ class RangeThresholdTextureNode : AbstractProceduralTextureNode(1, true) {
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_4_ = this.method3048(i, 633706337, 0)!!
             var i_5_ = 0
-            while ((DisplaceTextureNode.Companion.anInt9139 > i_5_)) {
+            while ((ClampTextureNode.anInt9139 > i_5_)) {
                 val i_6_ = is_4_[i_5_]
                 `is`[i_5_] = if (i_6_ >= anInt9104 && (i_6_ <= anInt9107)) 4096 else 0
                 i_5_++
@@ -63,9 +63,9 @@ class RangeThresholdTextureNode : AbstractProceduralTextureNode(1, true) {
             if (i < 94) method3054(false, -98, -116)
             if (textureFormatInfo != TimedRecordAccessor.aTextureFormatInfo_7103) {
                 if (GroundItemRenderState.aTextureFormatInfo_1662 == textureFormatInfo) return 6408
-                if (textureFormatInfo == ClampTextureNode.Companion.aTextureFormatInfo_9471) return 6406
-                if (CellNoiseTextureNode.Companion.aTextureFormatInfo_9303 != textureFormatInfo) {
-                    if (textureFormatInfo == SpriteSheetCache.aTextureFormatInfo_2571) return 6410
+                if (textureFormatInfo == GlFontTextured.aTextureFormatInfo_9471) return 6406
+                if (CellNoiseTextureNode.aTextureFormatInfo_9303 != textureFormatInfo) {
+                    if (textureFormatInfo == NormalMapGenerator.aTextureFormatInfo_2571) return 6410
                     if (textureFormatInfo == GlTextureBase.aTextureFormatInfo_3977) return 6145
                 } else return 6409
             } else return 6407

@@ -69,7 +69,7 @@ class ColorThresholdEffect : AbstractProceduralTextureNode(1, false) {
             val is_11_ = `is`[1]!!
             val is_12_ = `is`[2]!!
             var i_13_ = 0
-            while (DisplaceTextureNode.Companion.anInt9139 > i_13_) {
+            while (ClampTextureNode.Companion.anInt9139 > i_13_) {
                 val i_14_ = is_7_[i_13_]
                 var i_15_ = i_14_ - anIntArray9086[0]
                 if (i_15_ < 0) i_15_ = -i_15_

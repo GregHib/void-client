@@ -43,7 +43,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_6_ = BufferedMessageQueue.anInt3581 + (0x7 and (i_5_ shr 4))
                     val i_7_ = FileExistsCondition.anInt4786 - -(i_5_ and 0x7)
                     if (NpcEntityUpdater.method2112(126, WidgetRedrawTracker.anInt3931) || (i_6_ >= 0 && i_7_ >= 0 && GlCubemapLightPass.anInt7319 > i_6_ && (i_7_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_7_, -1, i_1_, i_3_, i_2_, i_4_, 121.toByte(), i_6_)
-                } else if (rgbColorPalette == ClampTextureNode.aRgbColorPalette_9475) {
+                } else if (rgbColorPalette == RgbColorPalette.aRgbColorPalette_9475) {
                     val i_8_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_9_ = BufferedMessageQueue.anInt3581 + ((0x7a and i_8_) shr 4)
                     val i_10_ = FileExistsCondition.anInt4786 - -(i_8_ and 0x7)

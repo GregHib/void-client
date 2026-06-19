@@ -50,7 +50,7 @@ class FixedFunctionWaterPass internal constructor(var_ha_Sub3: NativeRenderer, n
             class101_sub2_21_.method898(class101_sub2)
             class101_sub2_21_.method914(0.125f, 1.0f, 0, 0.125f)
             class101_sub2_21_.method920(0.0f, false, aFloat7350, 0.0f)
-            this.aHa_Sub3_4479.method3853(-32, ClampTextureNode.aConfigFlagUtil_9477)
+            this.aHa_Sub3_4479.method3853(-32, GlCubemapLightPass.aConfigFlagUtil_9477)
             this.aHa_Sub3_4479.method3897(0, -4382)
         }
         anInt7352++

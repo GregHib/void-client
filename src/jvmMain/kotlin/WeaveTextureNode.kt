@@ -16,7 +16,7 @@ class WeaveTextureNode : AbstractProceduralTextureNode(0, true) {
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val i_1_ = -2048 + LightDetailOptionState.anIntArray6035!![i]
             var i_2_ = 0
-            while ((i_2_ < DisplaceTextureNode.Companion.anInt9139)) {
+            while ((i_2_ < ClampTextureNode.Companion.anInt9139)) {
                 val i_3_ = -2048 + SceneEffectMarker.anIntArray6432!![i_2_]
                 var i_4_ = i_3_ - -anInt9269
                 i_4_ = if (i_4_ < -2048) 4096 + i_4_ else i_4_

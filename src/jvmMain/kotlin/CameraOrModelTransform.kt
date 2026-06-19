@@ -87,9 +87,9 @@ class CameraOrModelTransform {
         fun method2651(string: String?, i: Int): String? {
             if (i != 3) method2650(null, -94, null, 2, -110, null, -7, null, -71, null, -47, 104)
             anInt4160++
-            if (!ClientGameLoopNode.aString6877!!.startsWith("win")) {
-                if (ClientGameLoopNode.aString6877!!.startsWith("linux")) return "lib" + string + ".so"
-                if (ClientGameLoopNode.aString6877!!.startsWith("mac")) return "lib" + string + ".dylib"
+            if (!OSInfo.aString6877!!.startsWith("win")) {
+                if (OSInfo.aString6877!!.startsWith("linux")) return "lib" + string + ".so"
+                if (OSInfo.aString6877!!.startsWith("mac")) return "lib" + string + ".dylib"
             } else return string + ".dll"
             return null
         }

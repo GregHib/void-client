@@ -41,11 +41,11 @@ class GlFontTextured internal constructor(private val aHa_Sub3_6494: NativeRende
                     }
                 }
             }
-            if (!aHa_Sub3_6494.method3880(MovementDirection.aMovementDirection_1183, ClampTextureNode.aTextureFormatInfo_9471, 126.toByte())) {
+            if (!aHa_Sub3_6494.method3880(MovementDirection.aMovementDirection_1183, GlFontTextured.aTextureFormatInfo_9471, 126.toByte())) {
                 val is_19_ = IntArray(`is`.size)
                 for (i_20_ in `is`.indices) is_19_[i_20_] = `is`[i_20_].toInt() shl 24
                 anInterface18_Impl3_6492 = aHa_Sub3_6494.method3839(i_5_, i_5_, -15137, false, is_19_)
-            } else anInterface18_Impl3_6492 = aHa_Sub3_6494.method3944(`is`, i_5_, (ClampTextureNode.aTextureFormatInfo_9471), 2, false, i_5_)
+            } else anInterface18_Impl3_6492 = aHa_Sub3_6494.method3944(`is`, i_5_, (GlFontTextured.aTextureFormatInfo_9471), 2, false, i_5_)
             aBoolean6493 = true
         } else {
             val `is` = IntArray(i_5_ * i_5_)
@@ -169,4 +169,9 @@ class GlFontTextured internal constructor(private val aHa_Sub3_6494: NativeRende
         aHa_Sub3_6494.method3899(2, c.code * '\u0004'.code, AsyncResourceRequest.aCameraRotationStub_9661, true)
         if (aBoolean6493 || bool) aHa_Sub3_6494.method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
     }
+
+    companion object {
+        var aTextureFormatInfo_9471: TextureFormatInfo? = TextureFormatInfo(1)
+    }
+
 }

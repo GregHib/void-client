@@ -1,0 +1,1 @@
+class HslColorTableNode internal constructor(@JvmField var anInt6630: Int, @JvmField var anInt6636: Int) : LinkedListNode()

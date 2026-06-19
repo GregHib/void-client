@@ -46,19 +46,19 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
             if (MovementDirection.aMovementDirection_1186 == this.aMovementDirection_5088) {
                 if (this.aTextureFormatInfo_5084 == TimedRecordAccessor.aTextureFormatInfo_7103) return 34843
                 if (GroundItemRenderState.aTextureFormatInfo_1662 == this.aTextureFormatInfo_5084) return 34842
-                if (this.aTextureFormatInfo_5084 != ClampTextureNode.aTextureFormatInfo_9471) {
+                if (this.aTextureFormatInfo_5084 != GlFontTextured.aTextureFormatInfo_9471) {
                     if (this.aTextureFormatInfo_5084 != CellNoiseTextureNode.aTextureFormatInfo_9303) {
-                        if (SpriteSheetCache.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
-                            if (this.aTextureFormatInfo_5084 == GlTextureBase.aTextureFormatInfo_3977) return 6145
+                        if (NormalMapGenerator.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
+                            if (this.aTextureFormatInfo_5084 == aTextureFormatInfo_3977) return 6145
                         } else return 34847
                     } else return 34846
                 } else return 34844
             } else if (this.aMovementDirection_5088 == MovementDirection.aMovementDirection_1187) {
                 if (TimedRecordAccessor.aTextureFormatInfo_7103 != this.aTextureFormatInfo_5084) {
                     if (this.aTextureFormatInfo_5084 == GroundItemRenderState.aTextureFormatInfo_1662) return 34836
-                    if (this.aTextureFormatInfo_5084 != ClampTextureNode.aTextureFormatInfo_9471) {
+                    if (this.aTextureFormatInfo_5084 != GlFontTextured.aTextureFormatInfo_9471) {
                         if (CellNoiseTextureNode.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 34840
-                        if (SpriteSheetCache.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
+                        if (NormalMapGenerator.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
                             if (aTextureFormatInfo_3977 == this.aTextureFormatInfo_5084) return 6145
                         } else return 34841
                     } else return 34838
@@ -66,10 +66,10 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
             }
         } else if (this.aTextureFormatInfo_5084 != TimedRecordAccessor.aTextureFormatInfo_7103) {
             if (this.aTextureFormatInfo_5084 != GroundItemRenderState.aTextureFormatInfo_1662) {
-                if (this.aTextureFormatInfo_5084 != ClampTextureNode.aTextureFormatInfo_9471) {
+                if (this.aTextureFormatInfo_5084 != GlFontTextured.aTextureFormatInfo_9471) {
                     if (CellNoiseTextureNode.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 6409
-                    if (this.aTextureFormatInfo_5084 == SpriteSheetCache.aTextureFormatInfo_2571) return 6410
-                    if (this.aTextureFormatInfo_5084 == GlTextureBase.aTextureFormatInfo_3977) return 6145
+                    if (this.aTextureFormatInfo_5084 == NormalMapGenerator.aTextureFormatInfo_2571) return 6410
+                    if (this.aTextureFormatInfo_5084 == aTextureFormatInfo_3977) return 6145
                 } else return 6406
             } else return 6408
         } else return 6407

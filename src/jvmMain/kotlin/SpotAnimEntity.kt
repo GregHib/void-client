@@ -78,8 +78,8 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
         do {
             try {
                 if (!this.aBoolean6446) {
-                    if (HslColorTableNode.anInt6637 < (this.aSpotAnimDefinition_6441!!.anInt2379)) bool = false
-                    else if (MapArchiveSource.anInt4797 <= (CollisionMapAccessor.anIntArray3551!![HslColorTableNode.anInt6637])) {
+                    if (TextureQualityOptionState.anInt6637 < (this.aSpotAnimDefinition_6441!!.anInt2379)) bool = false
+                    else if (MapArchiveSource.anInt4797 <= (CollisionMapAccessor.anIntArray3551!![TextureQualityOptionState.anInt6637])) {
                         if (!aBoolean6453) {
                             if (this.aSpotAnimDefinition_6441!!.anInt2425 != -1) {
                                 var i_10_ = (-aLong6435 + l).toInt()

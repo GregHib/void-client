@@ -45,7 +45,7 @@ open class ShaderObject {
 
         fun method2609(i: Int, i_2_: Int): MinimapAreaMarkerNode? {
             anInt4101++
-            var class348_sub42_sub19 = (ImageFrameCache.aCacheLruCache_4036!!.method2302(i_2_.toLong(), (-68).toByte()) as MinimapAreaMarkerNode?)
+            var class348_sub42_sub19 = (ChatCommandProcessor.aCacheLruCache_4036!!.method2302(i_2_.toLong(), (-68).toByte()) as MinimapAreaMarkerNode?)
             if (class348_sub42_sub19 != null) return class348_sub42_sub19
             val `is` = CameraNodeList.aJs5Archive_1743!!.method410(-1860, i_2_, 0)
             if (`is` == null || `is`.size <= 1) return null
@@ -55,7 +55,7 @@ open class ShaderObject {
                 throw RuntimeException(exception.message + " S: " + i_2_)
             }
             if (i > -103) return null
-            ImageFrameCache.aCacheLruCache_4036!!.method2305(i_2_.toLong(), class348_sub42_sub19, -1)
+            ChatCommandProcessor.aCacheLruCache_4036!!.method2305(i_2_.toLong(), class348_sub42_sub19, -1)
             return class348_sub42_sub19
         }
     }

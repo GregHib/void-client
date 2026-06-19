@@ -1,5 +1,4 @@
 import DisplayModeOptionState.Companion.method1827
-import HslColorTableNode.Companion.method2770
 
 /* Class59_Sub2_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -142,7 +141,7 @@ class CachedRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
             }
             if (bool_25_) {
                 SpriteArchiveLoader.anInt383++
-                method2770(2)
+                SoftwareRenderer.method2770(2)
             }
         }
 

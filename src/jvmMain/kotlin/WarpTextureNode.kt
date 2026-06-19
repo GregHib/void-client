@@ -13,7 +13,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_4_ = `is`[1]!!
             val is_5_ = `is`[2]!!
             var i_6_ = 0
-            while ((DisplaceTextureNode.Companion.anInt9139 > i_6_)) {
+            while ((ClampTextureNode.Companion.anInt9139 > i_6_)) {
                 method3139(i_6_, i, (-31).toByte())
                 val is_7_ = this.method3039(43.toByte(), anInt4265, 0)!!
                 is_3_[i_6_] = is_7_[0]!![MinimapFlagRenderer.anInt1796]
@@ -31,7 +31,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             var i_9_ = 0
-            while ((i_9_ < DisplaceTextureNode.Companion.anInt9139)) {
+            while ((i_9_ < ClampTextureNode.Companion.anInt9139)) {
                 method3139(i_9_, i, (-31).toByte())
                 val is_10_ = this.method3048(anInt4265, i_8_ xor 0x25c5979e, 0)!!
                 `is`[i_9_] = is_10_[MinimapFlagRenderer.anInt1796]
@@ -66,14 +66,14 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
                                 MinimapFlagRenderer.anInt1796 = i_12_
                             } else if (f.toDouble() >= 2.356194490192345 && f.toDouble() <= 3.141592653589793) {
                                 anInt4265 = i_12_
-                                MinimapFlagRenderer.anInt1796 = -i + DisplaceTextureNode.Companion.anInt9139
+                                MinimapFlagRenderer.anInt1796 = -i + ClampTextureNode.Companion.anInt9139
                             }
                         } else {
-                            MinimapFlagRenderer.anInt1796 = -i_12_ + DisplaceTextureNode.Companion.anInt9139
+                            MinimapFlagRenderer.anInt1796 = -i_12_ + ClampTextureNode.Companion.anInt9139
                             anInt4265 = -i + FixedFunctionMaterialPass.anInt6212
                         }
                     } else {
-                        MinimapFlagRenderer.anInt1796 = -i + DisplaceTextureNode.Companion.anInt9139
+                        MinimapFlagRenderer.anInt1796 = -i + ClampTextureNode.Companion.anInt9139
                         anInt4265 = -i_12_ + FixedFunctionMaterialPass.anInt6212
                     }
                 } else {
@@ -81,7 +81,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
                     anInt4265 = FixedFunctionMaterialPass.anInt6212 - i_12_
                 }
             } else {
-                MinimapFlagRenderer.anInt1796 = DisplaceTextureNode.Companion.anInt9139 - i_12_
+                MinimapFlagRenderer.anInt1796 = ClampTextureNode.Companion.anInt9139 - i_12_
                 anInt4265 = i
             }
         } else {

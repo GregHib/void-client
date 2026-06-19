@@ -91,7 +91,6 @@ import GlowPostProcessor.Companion.method1411
 import GlowPostProcessor.Companion.method1416
 import WorldListEntry.Companion.method284
 import ModelLightingConfig.Companion.method1426
-import SpriteSheetCache.Companion.method1431
 import AsyncTaskHandle.Companion.method1438
 import TextureHandle.Companion.method1440
 import VarbitDefLoader.Companion.method1441
@@ -121,7 +120,6 @@ import TextureDefinitionCache.Companion.method1624
 import BoxedIntHolder.Companion.method1627
 import NativeLibraryUnloader.method1628
 import RenderConfigFactory.Companion.method1632
-import SceneProjector.Companion.method1635
 import HudTabPanel.Companion.method1641
 import TerrainTileGeometry.Companion.method1645
 import ParticleSortRenderer.Companion.method1653
@@ -253,7 +251,7 @@ import SpotAnimEntity.Companion.method2508
 import NamedTimedNode.Companion.method2517
 import PositionedSceneNode.Companion.method2518
 import MapElementDefinitionCache.Companion.method2545
-import ImageFrameCache.Companion.method2555
+import AbstractCameraTransformStatics.method2555
 import SystemFontGlyphs.Companion.method2562
 import Font.Companion.method2570
 import Font.Companion.method2572
@@ -302,8 +300,6 @@ import OggBitstreamDecoder.Companion.method2962
 import TheoraVideoStream.Companion.method2974
 import NullOggStream.Companion.method2981
 import KaraokeSubtitleStream.Companion.method2990
-import ClientGameLoopNode.Companion.method2991
-import ClientGameLoopNode.Companion.method2993
 import ImageBoxBlurScroller.Companion.method2996
 import MultiFieldRecord.Companion.method3001
 import ShortKeyNode.Companion.method3003
@@ -311,11 +307,10 @@ import ModelVertexColorBuffer.Companion.method2738
 import AbstractFrameBufferSurface.Companion.method3010
 import ProducerImageSurface.Companion.method3016
 import IntPair.Companion.method3026
-import ClientGameLoopNode.Companion.method3028
 import WidgetActionEntry.Companion.method3029
 import TerrainShadowBuilderGl3.Companion.method3035
 import ClientMachineInfo.Companion.method2748
-import AbstractProceduralTextureNode.Companion.method3040
+import ClientLoadStateMachine.method3040
 import ColorThresholdEffect.Companion.method3050
 import BrightnessContrastEffect.Companion.method3074
 import RadialGradientMaskEffect.Companion.method3075
@@ -340,7 +335,7 @@ import NormalMapTextureNode.Companion.method3142
 import DirectionalLightTextureNode.Companion.method3144
 import SineWaveTextureNode.Companion.method3145
 import BoxBlurTextureNode.Companion.method3148
-import ClampTextureNode.Companion.method3149
+import WorldMapScene.Companion.method3149
 import RenderListTextureNode.Companion.method3152
 import VoronoiNoiseTextureNode.Companion.method3059
 import DisplaceTextureNode.Companion.method3062
@@ -379,7 +374,6 @@ import AbstractBloomEffect.Companion.method2762
 import StringCacheNode.Companion.method3418
 import DisplaySettingsConfig.Companion.method3430
 import GlBloomEffect.Companion.method2765
-import HslColorTableNode.Companion.method2768
 import RegionTileNode.Companion.method2773
 import FacingDirectionNode.Companion.method2774
 import CharacterRenderState.Companion.method2780
@@ -504,23 +498,45 @@ import ShaderProgram.Companion.method3438
 import NativeShaderProgram.Companion.method3441
 import ArbVertexProgram.Companion.method3443
 import ArbVertexProgram.Companion.method3444
+import BinaryGraphicsOptionState.Companion.method1767
 import DisplayModeOptionState.Companion.method1825
 import GlRenderDevice.Companion.method3965
 import GlVertexBufferArb.Companion.method2127
 import GraphicsOptionState.Companion.method1713
 import ChatCommandProcessor.anIntArray3295
+import CompassSmoother.Companion.method2017
+import ConfigFlagUtil.Companion.method1916
+import FrameBufferObject.Companion.method1501
+import Gl3dTexture.Companion.aIntRange_4027
+import HslAdjustTextureNode.Companion.method3127
 import MapArchiveSource.Companion.method1365
 import InputStream_Sub2.Companion.method128
+import MapLabelMenuEntry.Companion.method1041
+import MaterialPass.Companion.method2138
 import MultiLevelOptionState.Companion.method1851
 import NoOpGraphicsOptionState.Companion.method1803
 import ShadowQualityOptionState.Companion.method1788
+import SkeletalAnimFrameLoader.Companion.method349
+import SkyboxGradient.method2334
+import SocketFactory.Companion.method2049
+import TextureGenerator.Companion.method1397
 import TileSceneEntity.Companion.method2396
 import TwoStateOptionState.Companion.method1844
+import WhirlpoolHash.Companion.method1166
+import WidgetTextConfig.Companion.method362
 import java.awt.Canvas
 import java.awt.Component
 import java.awt.Container
 import java.awt.Frame
+import java.io.ByteArrayInputStream
 import java.io.IOException
+import java.io.InvalidClassException
+import java.io.ObjectInputStream
+import java.io.OptionalDataException
+import java.io.StreamCorruptedException
+import java.lang.reflect.Field
+import java.lang.reflect.InvocationTargetException
+import java.lang.reflect.Method
 import java.net.Socket
 import java.net.URL
 import java.util.*
@@ -1033,7 +1049,7 @@ class Client : GameAppletFrame() {
         method2065(31913)
         method548(10)
         method2555(28.toByte())
-        method1431(0)
+        SceneNodeDeque.method1431(0)
         HardKeyedCacheEntryReference.method3207((-120).toByte())
         method2693(3)
         method3085(0)
@@ -1203,8 +1219,8 @@ class Client : GameAppletFrame() {
         FireParticleStream.method133((-41).toByte())
         method124(i.toInt() xor 0x6e)
         method2117(0)
-        method2993(50.toByte())
-        method2768(3)
+        OSInfo.method2993(50.toByte())
+        CubemapTextureGlSource.method2768(3)
         method3176(true)
         method2707(false)
         NpcAnimationResolver.method213((-106).toByte())
@@ -1605,7 +1621,7 @@ class Client : GameAppletFrame() {
                 else if (method2653(true, WorldMapRenderer.anInt4674) && !GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-86).toByte())) method2991(11432)
                 else if (WorldMapRenderer.anInt4674 == 13) {
                     SceneNodeDeque.method843((-75).toByte())
-                    if (HslColorTableNode.anInt6634 != -3 && HslColorTableNode.anInt6634 != 2 && HslColorTableNode.anInt6634 != 15) method3141(false, 11.toByte())
+                    if (Client.anInt6634 != -3 && Client.anInt6634 != 2 && Client.anInt6634 != 15) method3141(false, 11.toByte())
                 }
             } else {
                 method113(112.toByte())
@@ -1642,7 +1658,7 @@ class Client : GameAppletFrame() {
             val l = (BufferPositionTracker.method1857((-45).toByte()) / 1000000L + -RenderbufferObject.aLong8573)
             RenderbufferObject.aLong8573 = BufferPositionTracker.method1857((-45).toByte()) / 1000000L
             val bool_118_ = method2163(!bool)
-            if (bool_118_ && RgbColorPalette.aBoolean1236 && AbstractProceduralTextureNode.aSoundChannelMixer_7042 != null) AbstractProceduralTextureNode.aSoundChannelMixer_7042!!.method2087(-115)
+            if (bool_118_ && RgbColorPalette.aBoolean1236 && ClientLoadStateMachine.aSoundChannelMixer_7042 != null) ClientLoadStateMachine.aSoundChannelMixer_7042!!.method2087(-115)
             if (WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) {
                 if ((PcmStreamBuffer.aLong8866 != 0L) && method599(-98) > PcmStreamBuffer.aLong8866) ChatCommandProcessor.method830(method3229(-128), LocTypeDefinition.anInt4005, 102.toByte(), false, RadialTextureNode.anInt9335)
                 else if (!FacingDirectionNode.aRenderer6654!!.method3655() && ProjectileSpawner.aBoolean2674) method3327(1406)
@@ -2169,7 +2185,7 @@ class Client : GameAppletFrame() {
                                                 val i_66_: Int
                                                 val i_67_: Int
                                                 if (WeaveTextureNode.anInt9282 == 4) {
-                                                    i_66_ = (HslColorTableNode.anInt6633 shr 9) + (i_64_ shr 2)
+                                                    i_66_ = (OpenGlRenderer.anInt6633 shr 9) + (i_64_ shr 2)
                                                     i_67_ = (RegionTileNode.anInt6652 shr 9) - (i_65_ shr 2)
                                                 } else {
                                                     val i_68_ = ((LocalPlayerState.aPlayer_1907!!.method2436(51.toByte())) - 1) * 256
@@ -2449,7 +2465,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray734
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
-                                if ((SceneProjector.anInt2986 > class46.anInt726) && (class46.anObjectArray761 != null)) {
+                                if ((Client.anInt2986 > class46.anInt726) && (class46.anObjectArray761 != null)) {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aWidgetComponent_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray761
@@ -2929,7 +2945,7 @@ class Client : GameAppletFrame() {
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ImageFrameCache.aIntRange_4027 == ModelVertexColorBuffer.aIntRange_6584) {
+            if (Gl3dTexture.aIntRange_4027 == ModelVertexColorBuffer.aIntRange_6584) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 if (i == 65535) i = -1
                 val i_28_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
@@ -3199,7 +3215,7 @@ class Client : GameAppletFrame() {
                             HostPingThread.aWorldListEntryArray2261!![i_73_]!!.aByte310 = i_68_
                             HostPingThread.aWorldListEntryArray2261!![i_73_]!!.aString313 = string_72_
                             if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
-                            SceneProjector.anInt2986 = ResourceLoaderThread.anInt3918
+                            Client.anInt2986 = ResourceLoaderThread.anInt3918
                             ModelVertexColorBuffer.aIntRange_6584 = null
                             return true
                         }
@@ -3216,7 +3232,7 @@ class Client : GameAppletFrame() {
                     ByteArrayPool.anInt496++
                     if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
                 }
-                SceneProjector.anInt2986 = ResourceLoaderThread.anInt3918
+                Client.anInt2986 = ResourceLoaderThread.anInt3918
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -3638,7 +3654,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (PlayerUpdateDecoder.aIntRange_1914 == ModelVertexColorBuffer.aIntRange_6584) {
-                method128(ClampTextureNode.aRgbColorPalette_9475, 8.toByte())
+                method128(RgbColorPalette.aRgbColorPalette_9475, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -4334,7 +4350,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == TextureAtlasState.aIntRange_4421) {
-                SceneProjector.anInt2986 = ResourceLoaderThread.anInt3918
+                Client.anInt2986 = ResourceLoaderThread.anInt3918
                 if (RadialTextureNode.anInt9341 == 0) {
                     ByteArrayPool.anInt496 = 0
                     MinimapShapeDrawer.aString863 = null
@@ -4402,7 +4418,7 @@ class Client : GameAppletFrame() {
             Client.aSceneProjector_10434 = null
             if (i > 38) {
                 RenderbufferObject.aLongArrayArrayArray10431 = null
-                SceneProjector.aSceneObjectSpawner_10436 = null
+                FireParticleStream.aSceneObjectSpawner_10436 = null
                 Client.aRgbColorPalette_10437 = null
             }
         }
@@ -4444,6 +4460,858 @@ class Client : GameAppletFrame() {
             aLinkedQueueNode_114 = null
         }
 
+        var anInt6634: Int = -2
 
+        var anInt9469: Int = 0
+        fun method3150(bool: Boolean) {
+            anInt9469++
+            var i = 0
+            if (bool != true) method3150(false)
+            while ( /**/ModelDefinitionLoader.anInt2057 > i) {
+                val i_14_ = RgbColorPalette.anIntArray1233!![i]
+                val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_14_.toLong(), -6008) as NpcReference?)
+                if (class348_sub22 != null) {
+                    val npc = (class348_sub22.aNpc_6859)!!
+                    method2556(false, npc.aNpcType_10505!!.anInt1399, npc)
+                }
+                i++
+            }
+        }
+        var aHashtable_7041: Hashtable? = Hashtable(32)
+
+
+        var anInt4028: Int = 0
+        fun method2556(bool: Boolean, i: Int, class318_sub1_sub3_sub3: ProjectedGroundDecor) {
+            anInt4028++
+            var i_3_ = -1
+            var i_4_ = 0
+            if (GlGroundShaderPass.anInt7396 < class318_sub1_sub3_sub3.anInt10239) DetailLevelOptionState.method1834(class318_sub1_sub3_sub3, (-16).toByte())
+            else if (GlGroundShaderPass.anInt7396 <= (class318_sub1_sub3_sub3.anInt10300)) method1041(-1, class318_sub1_sub3_sub3)
+            else {
+                method1600(false, 0, class318_sub1_sub3_sub3)
+                i_3_ = SceneObjectAnimator.anInt3062
+                i_4_ = ScrollingWidgetComponentNode.anInt8387
+            }
+            if (bool != false) aIntRange_4027 = null
+            if ((class318_sub1_sub3_sub3.x < 512) || class318_sub1_sub3_sub3.y < 512 || (-512 + GlCubemapLightPass.anInt7319 * 512 <= class318_sub1_sub3_sub3.x) || (-512 + RangeThresholdTextureNode.anInt9109 * 512 <= class318_sub1_sub3_sub3.y)) {
+                class318_sub1_sub3_sub3.anInt10291 = -1
+                class318_sub1_sub3_sub3.anInt10300 = 0
+                i_4_ = 0
+                i_3_ = -1
+                class318_sub1_sub3_sub3.anIntArray10236 = null
+                class318_sub1_sub3_sub3.anInt10269 = -1
+                class318_sub1_sub3_sub3.anInt10286 = -1
+                class318_sub1_sub3_sub3.anInt10239 = 0
+                class318_sub1_sub3_sub3.x = (512 * (class318_sub1_sub3_sub3.anIntArray10320!![0]) + 256 * class318_sub1_sub3_sub3.method2436(120.toByte()))
+                class318_sub1_sub3_sub3.y = (512 * (class318_sub1_sub3_sub3.anIntArray10317!![0]) + class318_sub1_sub3_sub3.method2436(88.toByte()) * 256)
+                class318_sub1_sub3_sub3.method2427(70)
+            }
+            if ((LocalPlayerState.aPlayer_1907 == class318_sub1_sub3_sub3) && (class318_sub1_sub3_sub3.x < 6144 || class318_sub1_sub3_sub3.y < 6144 || (class318_sub1_sub3_sub3.x >= 512 * (GlCubemapLightPass.anInt7319 + -12)) || (512 * (RangeThresholdTextureNode.anInt9109 - 12) <= class318_sub1_sub3_sub3.y))) {
+                class318_sub1_sub3_sub3.anInt10291 = -1
+                i_3_ = -1
+                class318_sub1_sub3_sub3.anInt10300 = 0
+                class318_sub1_sub3_sub3.anInt10269 = -1
+                class318_sub1_sub3_sub3.anInt10239 = 0
+                i_4_ = 0
+                class318_sub1_sub3_sub3.anIntArray10236 = null
+                class318_sub1_sub3_sub3.anInt10286 = -1
+                class318_sub1_sub3_sub3.x = (512 * (class318_sub1_sub3_sub3.anIntArray10320!![0]) + 256 * class318_sub1_sub3_sub3.method2436(115.toByte()))
+                class318_sub1_sub3_sub3.y = (512 * (class318_sub1_sub3_sub3.anIntArray10317!![0]) + 256 * class318_sub1_sub3_sub3.method2436(115.toByte()))
+                class318_sub1_sub3_sub3.method2427(54)
+            }
+            val i_5_ = method2774(108.toByte(), class318_sub1_sub3_sub3)
+            method3443(true, class318_sub1_sub3_sub3)
+            method729(i_3_, i_5_, 67.toByte(), class318_sub1_sub3_sub3, i_4_)
+            method3208(class318_sub1_sub3_sub3, i_3_, -98)
+            method1635(-69, class318_sub1_sub3_sub3)
+        }
+
+        var anInt2983: Int = 0
+        fun method1635(i: Int, class318_sub1_sub3_sub3: ProjectedGroundDecor?) {
+            try {
+                anInt2983++
+                do {
+                    if ((class318_sub1_sub3_sub3!!.anInt10268) != -1) {
+                        var class17 = (ParticleEmitterNode.aWidgetCache_191!!.method835(class318_sub1_sub3_sub3.anInt10268, 7))
+                        if (class17 == null || class17.anIntArray237 == null) {
+                            class318_sub1_sub3_sub3.aBoolean10213 = false
+                            class318_sub1_sub3_sub3.anInt10268 = -1
+                        } else {
+                            class318_sub1_sub3_sub3.anInt10203++
+                            if ((class318_sub1_sub3_sub3.anInt10245 < class17.anIntArray237.size) && ((class17.anIntArray267!![class318_sub1_sub3_sub3.anInt10245]) < class318_sub1_sub3_sub3.anInt10203)) {
+                                class318_sub1_sub3_sub3.anInt10312++
+                                class318_sub1_sub3_sub3.anInt10245++
+                                class318_sub1_sub3_sub3.anInt10203 = 1
+                                if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10245), class17, -58)
+                            }
+                            if (class318_sub1_sub3_sub3.anInt10245 >= class17.anIntArray237.size) {
+                                class318_sub1_sub3_sub3.anInt10245 = 0
+                                class318_sub1_sub3_sub3.anInt10203 = 0
+                                if (class318_sub1_sub3_sub3.aBoolean10213) {
+                                    class318_sub1_sub3_sub3.anInt10268 = class318_sub1_sub3_sub3.method2422(72.toByte()).method1621((-16).toByte())
+                                    if (class318_sub1_sub3_sub3.anInt10268 == -1) {
+                                        class318_sub1_sub3_sub3.aBoolean10213 = false
+                                        break
+                                    }
+                                    class17 = (ParticleEmitterNode.aWidgetCache_191!!.method835(class318_sub1_sub3_sub3.anInt10268, 7))
+                                }
+                                if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10245), class17, -23)
+                            }
+                            class318_sub1_sub3_sub3.anInt10312 = class318_sub1_sub3_sub3.anInt10245 + 1
+                            if (class17.anIntArray237 == null) {
+                                class318_sub1_sub3_sub3.anInt10268 = -1
+                                class318_sub1_sub3_sub3.aBoolean10213 = false
+                            } else if (class318_sub1_sub3_sub3.anInt10312 >= class17.anIntArray237.size) class318_sub1_sub3_sub3.anInt10312 = 0
+                        }
+                    }
+                } while (false)
+                do {
+                    if ((class318_sub1_sub3_sub3.anInt10269) != -1 && (GlGroundShaderPass.anInt7396 >= (class318_sub1_sub3_sub3.anInt10225))) {
+                        val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(90.toByte(), class318_sub1_sub3_sub3.anInt10269))
+                        val i_70_ = class368.anInt4503
+                        if (i_70_ != -1) {
+                            val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_70_, 7)
+                            if (class368.aBoolean4487) {
+                                if (class17.anInt262 == 3) {
+                                    if (class318_sub1_sub3_sub3.anInt10322 > 0 && (class318_sub1_sub3_sub3.anInt10239 <= GlGroundShaderPass.anInt7396) && (GlGroundShaderPass.anInt7396 > (class318_sub1_sub3_sub3.anInt10300))) {
+                                        class318_sub1_sub3_sub3.anInt10269 = -1
+                                        break
+                                    }
+                                } else if (class17.anInt262 == 1 && class318_sub1_sub3_sub3.anInt10322 > 0 && (GlGroundShaderPass.anInt7396 >= (class318_sub1_sub3_sub3.anInt10239)) && (GlGroundShaderPass.anInt7396 > (class318_sub1_sub3_sub3.anInt10300))) {
+                                    class318_sub1_sub3_sub3.anInt10225 = 1 + GlGroundShaderPass.anInt7396
+                                    break
+                                }
+                            }
+                            if (class17 != null && class17.anIntArray237 != null) {
+                                if (class318_sub1_sub3_sub3.anInt10240 < 0) {
+                                    class318_sub1_sub3_sub3.anInt10240 = 0
+                                    if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, 0, class17, -89)
+                                }
+                                class318_sub1_sub3_sub3.anInt10243++
+                                if ((class17.anIntArray237.size > class318_sub1_sub3_sub3.anInt10240) && ((class17.anIntArray267!![class318_sub1_sub3_sub3.anInt10240]) < class318_sub1_sub3_sub3.anInt10243)) {
+                                    class318_sub1_sub3_sub3.anInt10240++
+                                    class318_sub1_sub3_sub3.anInt10243 = 1
+                                    if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, class318_sub1_sub3_sub3.anInt10240, class17, -17)
+                                }
+                                if (class318_sub1_sub3_sub3.anInt10240 >= class17.anIntArray237.size) {
+                                    if (class368.aBoolean4487) {
+                                        class318_sub1_sub3_sub3.anInt10305++
+                                        class318_sub1_sub3_sub3.anInt10240 -= class17.anInt238
+                                        if (class17.anInt244 <= (class318_sub1_sub3_sub3.anInt10305)) class318_sub1_sub3_sub3.anInt10269 = -1
+                                        else if ((class318_sub1_sub3_sub3.anInt10240) >= 0 && ((class17.anIntArray237).size > (class318_sub1_sub3_sub3.anInt10240))) {
+                                            if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10240), class17, -70)
+                                        } else class318_sub1_sub3_sub3.anInt10269 = -1
+                                    } else class318_sub1_sub3_sub3.anInt10269 = -1
+                                }
+                                class318_sub1_sub3_sub3.anInt10283 = class318_sub1_sub3_sub3.anInt10240 - -1
+                                if (class318_sub1_sub3_sub3.anInt10283 >= class17.anIntArray237.size) {
+                                    if (class368.aBoolean4487) {
+                                        class318_sub1_sub3_sub3.anInt10283 -= class17.anInt238
+                                        if ((class318_sub1_sub3_sub3.anInt10305 - -1) >= class17.anInt244) class318_sub1_sub3_sub3.anInt10283 = -1
+                                        else if ((class318_sub1_sub3_sub3.anInt10283) < 0 || ((class17.anIntArray237).size <= (class318_sub1_sub3_sub3.anInt10283))) class318_sub1_sub3_sub3.anInt10283 = -1
+                                    } else class318_sub1_sub3_sub3.anInt10283 = -1
+                                }
+                            } else class318_sub1_sub3_sub3.anInt10269 = -1
+                        } else class318_sub1_sub3_sub3.anInt10269 = -1
+                    }
+                } while (false)
+                do {
+                    if ((class318_sub1_sub3_sub3.anInt10291) != -1 && (class318_sub1_sub3_sub3.anInt10211 <= GlGroundShaderPass.anInt7396)) {
+                        val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(93.toByte(), class318_sub1_sub3_sub3.anInt10291))
+                        val i_71_ = class368.anInt4503
+                        if (i_71_ != -1) {
+                            val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_71_, 7)
+                            if (class368.aBoolean4487) {
+                                if (class17.anInt262 != 3) {
+                                    if (class17.anInt262 == 1 && class318_sub1_sub3_sub3.anInt10322 > 0 && (GlGroundShaderPass.anInt7396 >= (class318_sub1_sub3_sub3.anInt10239)) && (class318_sub1_sub3_sub3.anInt10300 < GlGroundShaderPass.anInt7396)) {
+                                        class318_sub1_sub3_sub3.anInt10211 = GlGroundShaderPass.anInt7396 - -1
+                                        break
+                                    }
+                                } else if (class318_sub1_sub3_sub3.anInt10322 > 0 && ((class318_sub1_sub3_sub3.anInt10239) <= GlGroundShaderPass.anInt7396) && ((class318_sub1_sub3_sub3.anInt10300) < GlGroundShaderPass.anInt7396)) {
+                                    class318_sub1_sub3_sub3.anInt10291 = -1
+                                    break
+                                }
+                            }
+                            if (class17 == null || class17.anIntArray237 == null) class318_sub1_sub3_sub3.anInt10291 = -1
+                            else {
+                                if (class318_sub1_sub3_sub3.anInt10224 < 0) {
+                                    class318_sub1_sub3_sub3.anInt10224 = 0
+                                    if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, 0, class17, -70)
+                                }
+                                class318_sub1_sub3_sub3.anInt10273++
+                                if ((class17.anIntArray237.size > class318_sub1_sub3_sub3.anInt10224) && ((class17.anIntArray267!![class318_sub1_sub3_sub3.anInt10224]) < class318_sub1_sub3_sub3.anInt10273)) {
+                                    class318_sub1_sub3_sub3.anInt10224++
+                                    class318_sub1_sub3_sub3.anInt10273 = 1
+                                    if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, class318_sub1_sub3_sub3.anInt10224, class17, -114)
+                                }
+                                if (class17.anIntArray237.size <= class318_sub1_sub3_sub3.anInt10224) {
+                                    if (class368.aBoolean4487) {
+                                        class318_sub1_sub3_sub3.anInt10265++
+                                        class318_sub1_sub3_sub3.anInt10224 -= class17.anInt238
+                                        if (class17.anInt244 <= (class318_sub1_sub3_sub3.anInt10265)) class318_sub1_sub3_sub3.anInt10291 = -1
+                                        else if ((class318_sub1_sub3_sub3.anInt10224) >= 0 && ((class318_sub1_sub3_sub3.anInt10224) < (class17.anIntArray237).size)) {
+                                            if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10224), class17, -92)
+                                        } else class318_sub1_sub3_sub3.anInt10291 = -1
+                                    } else class318_sub1_sub3_sub3.anInt10291 = -1
+                                }
+                                class318_sub1_sub3_sub3.anInt10276 = class318_sub1_sub3_sub3.anInt10224 - -1
+                                if (class318_sub1_sub3_sub3.anInt10276 >= class17.anIntArray237.size) {
+                                    if (class368.aBoolean4487) {
+                                        class318_sub1_sub3_sub3.anInt10276 -= class17.anInt238
+                                        if (1 + (class318_sub1_sub3_sub3.anInt10265) < class17.anInt244) {
+                                            if ((class318_sub1_sub3_sub3.anInt10276) < 0 || ((class318_sub1_sub3_sub3.anInt10276) >= (class17.anIntArray237).size)) class318_sub1_sub3_sub3.anInt10276 = -1
+                                        } else class318_sub1_sub3_sub3.anInt10276 = -1
+                                    } else class318_sub1_sub3_sub3.anInt10276 = -1
+                                }
+                            }
+                        } else class318_sub1_sub3_sub3.anInt10291 = -1
+                    }
+                } while (false)
+                if ((class318_sub1_sub3_sub3.anInt10286 != -1) && (class318_sub1_sub3_sub3.anInt10218) <= 1) {
+                    val class17 = (ParticleEmitterNode.aWidgetCache_191!!.method835((class318_sub1_sub3_sub3.anInt10286), 7))
+                    if (class17.anInt262 != 3) {
+                        if (class17.anInt262 == 1 && class318_sub1_sub3_sub3.anInt10322 > 0 && (class318_sub1_sub3_sub3.anInt10239) <= GlGroundShaderPass.anInt7396 && (class318_sub1_sub3_sub3.anInt10300) < GlGroundShaderPass.anInt7396) class318_sub1_sub3_sub3.anInt10218 = 2
+                    } else if ((class318_sub1_sub3_sub3.anInt10322) > 0 && (class318_sub1_sub3_sub3.anInt10239 <= GlGroundShaderPass.anInt7396) && (GlGroundShaderPass.anInt7396 > class318_sub1_sub3_sub3.anInt10300)) {
+                        class318_sub1_sub3_sub3.anInt10286 = -1
+                        class318_sub1_sub3_sub3.anIntArray10236 = null
+                    }
+                }
+                if ((class318_sub1_sub3_sub3.anInt10286 != -1) && (class318_sub1_sub3_sub3.anInt10218) == 0) {
+                    val class17 = (ParticleEmitterNode.aWidgetCache_191!!.method835((class318_sub1_sub3_sub3.anInt10286), 7))
+                    if (class17 == null || class17.anIntArray237 == null) {
+                        class318_sub1_sub3_sub3.anInt10286 = -1
+                        class318_sub1_sub3_sub3.anIntArray10236 = null
+                    } else {
+                        class318_sub1_sub3_sub3.anInt10232++
+                        if ((class17.anIntArray237.size > (class318_sub1_sub3_sub3.anInt10267)) && (class318_sub1_sub3_sub3.anInt10232 > (class17.anIntArray267!![class318_sub1_sub3_sub3.anInt10267]))) {
+                            class318_sub1_sub3_sub3.anInt10267++
+                            class318_sub1_sub3_sub3.anInt10232 = 1
+                            if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10267), class17, -34)
+                        }
+                        if (class17.anIntArray237.size <= (class318_sub1_sub3_sub3.anInt10267)) {
+                            class318_sub1_sub3_sub3.anInt10267 -= class17.anInt238
+                            class318_sub1_sub3_sub3.anInt10294++
+                            if (class17.anInt244 <= class318_sub1_sub3_sub3.anInt10294) {
+                                class318_sub1_sub3_sub3.anIntArray10236 = null
+                                class318_sub1_sub3_sub3.anInt10286 = -1
+                            } else if (class318_sub1_sub3_sub3.anInt10267 < 0 || (class318_sub1_sub3_sub3.anInt10267 >= (class17.anIntArray237).size)) {
+                                class318_sub1_sub3_sub3.anIntArray10236 = null
+                                class318_sub1_sub3_sub3.anInt10286 = -1
+                            } else if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, (class318_sub1_sub3_sub3.anInt10267), class17, -88)
+                        }
+                        class318_sub1_sub3_sub3.anInt10244 = (class318_sub1_sub3_sub3.anInt10267) + 1
+                        if (class17.anIntArray237.size <= (class318_sub1_sub3_sub3.anInt10244)) {
+                            class318_sub1_sub3_sub3.anInt10244 -= class17.anInt238
+                            if (class17.anInt244 <= 1 + class318_sub1_sub3_sub3.anInt10294) class318_sub1_sub3_sub3.anInt10244 = -1
+                            else if (class318_sub1_sub3_sub3.anInt10244 < 0 || (class318_sub1_sub3_sub3.anInt10244 >= class17.anIntArray237.size)) class318_sub1_sub3_sub3.anInt10244 = -1
+                        }
+                    }
+                }
+                val i_72_ = -86 / ((-18 - i) / 51)
+                if (class318_sub1_sub3_sub3.anInt10218 > 0) class318_sub1_sub3_sub3.anInt10218--
+                var i_73_ = 0
+                while (((class318_sub1_sub3_sub3.aLoadProgressCountersArray10308)!!.size > i_73_)) {
+                    val class182 = (class318_sub1_sub3_sub3.aLoadProgressCountersArray10308!![i_73_])
+                    if (class182 != null) {
+                        if (class182.anInt2448 > 0) class182.anInt2448--
+                        else {
+                            val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835((class182.anInt2454), 7)
+                            if (class17 == null || class17.anIntArray237 == null) class318_sub1_sub3_sub3.aLoadProgressCountersArray10308!![i_73_] = null
+                            else {
+                                class182.anInt2456++
+                                if ((class17.anIntArray237.size > class182.anInt2451) && (class182.anInt2456 > (class17.anIntArray267!![class182.anInt2451]))) {
+                                    class182.anInt2451++
+                                    class182.anInt2456 = 1
+                                    if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, class182.anInt2451, class17, -108)
+                                }
+                                if (class182.anInt2451 >= class17.anIntArray237.size) {
+                                    class182.anInt2451 -= class17.anInt238
+                                    class182.anInt2445++
+                                    if (class17.anInt244 > class182.anInt2445) {
+                                        if (class182.anInt2451 < 0 || ((class17.anIntArray237).size <= (class182.anInt2451))) class318_sub1_sub3_sub3.aLoadProgressCountersArray10308!![i_73_] = null
+                                        else if (!class318_sub1_sub3_sub3.aBoolean10309) TypedRecordTable.method2178(class318_sub1_sub3_sub3, class182.anInt2451, class17, -46)
+                                    } else class318_sub1_sub3_sub3.aLoadProgressCountersArray10308!![i_73_] = null
+                                }
+                                class182.anInt2455 = 1 + class182.anInt2451
+                                if (class182.anInt2455 >= class17.anIntArray237.size) {
+                                    class182.anInt2455 -= class17.anInt238
+                                    if (class17.anInt244 > class182.anInt2445 - -1) {
+                                        if (class182.anInt2455 < 0 || ((class17.anIntArray237).size <= (class182.anInt2455))) class182.anInt2455 = -1
+                                    } else class182.anInt2455 = -1
+                                }
+                            }
+                        }
+                    }
+                    i_73_++
+                }
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("sj.A(" + i + ',' + (if (class318_sub1_sub3_sub3 != null) "{...}" else "null") + ')'))
+            }
+        }
+
+
+        var anInt2986: Int = 0
+
+
+        var anInt6874: Int = 0
+        @JvmStatic
+        fun method2991(i: Int) {
+            if (RegionSceneLoader.anInt3699 > 1) {
+                TurbulenceTextureNode.anInt9313 = ResourceLoaderThread.anInt3918
+                RegionSceneLoader.anInt3699--
+            }
+            anInt6874++
+            if (AbstractMenuEntryStatics.aBoolean1712) {
+                AbstractMenuEntryStatics.aBoolean1712 = false
+                method2049(67)
+            } else {
+                if (!ScrollbarComponent.aBoolean8335) method661(95.toByte())
+                for (i_0_ in 0..99) {
+                    if (!MapArchiveSource.method2203((-52).toByte())) break
+                }
+                if (WorldMapRenderer.anInt4674 == 10) {
+                    while (method2138(i xor 0x2ca2)) {
+                        val class348_sub47 = method2148(ScreenBorderFiller.aFontMetaRef_1961, (TheoraVideoStream.aIsaacCipher_9029), -92)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                        val i_1_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
+                        method3025(121.toByte(), (class348_sub47.aClass348_Sub49_Sub2_7116!!))
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(113, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) + -i_1_)
+                        InterfaceComponentGroup.method3243(119, class348_sub47)
+                    }
+                    if (LightingOptionState.aClass348_Sub26_5881 != null) {
+                        if ((LightingOptionState.aClass348_Sub26_5881!!.anInt6887) != -1) {
+                            val class348_sub47 = method2148((GlCubemapLightPass.aFontMetaRef_7318), (TheoraVideoStream.aIsaacCipher_9029), -81)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), LightingOptionState.aClass348_Sub26_5881!!.anInt6887)
+                            InterfaceComponentGroup.method3243(122, class348_sub47)
+                            LightingOptionState.aClass348_Sub26_5881 = null
+                            FloatCameraTransform.aLong5745 = method599(-106) + 30000L
+                        }
+                    } else if (FloatCameraTransform.aLong5745 <= method599(-121)) LightingOptionState.aClass348_Sub26_5881 = SceneObjectSpawner.aHostPingThread_1286!!.method1302(-5255, (CacheStateResetter.aServerConnectionInfo_125!!.aString2147!!))
+                    val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as TimedRecordAccessor?)
+                    if (class348_sub45 != null || (CompiledScriptCache.aLong4367 < -2000L + method599(-97))) {
+                        var class348_sub47: OutgoingPacketNode? = null
+                        var i_2_ = 0
+                        var class348_sub45_3_ = (NativeRenderNode.aNodeDeque_10479!!.method1995(4) as TimedRecordAccessor?)
+                        while (class348_sub45_3_ != null) {
+                            if (class348_sub47 != null && (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 - i_2_ >= 240)) break
+                            class348_sub45_3_.method2715(107.toByte())
+                            var i_4_ = class348_sub45_3_.method3311(-15)
+                            if (i_4_ >= -1) {
+                                if (i_4_ > 65534) i_4_ = 65534
+                            } else i_4_ = -1
+                            var i_5_ = class348_sub45_3_.method3308((-127).toByte())
+                            if (i_5_ >= -1) {
+                                if (i_5_ > 65534) i_5_ = 65534
+                            } else i_5_ = -1
+                            if (OpenGlTerrainTile.anInt8270 != i_5_ || i_4_ != anInt4032) {
+                                if (class348_sub47 == null) {
+                                    CollisionMap.anInt4450++
+                                    class348_sub47 = (method2148(CharCodeMap.aFontMetaRef_9590, TheoraVideoStream.aIsaacCipher_9029, -94))
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                                    i_2_ = class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197
+                                }
+                                var i_6_ = -OpenGlTerrainTile.anInt8270 + i_5_
+                                OpenGlTerrainTile.anInt8270 = i_5_
+                                var i_7_ = i_4_ - anInt4032
+                                anInt4032 = i_4_
+                                val i_8_ = ((class348_sub45_3_.method3312((-107).toByte()) + -CompiledScriptCache.aLong4367) / 20L).toInt()
+                                if (i_8_ >= 8 || i_6_ < -32 || i_6_ > 31 || i_7_ < -32 || i_7_ > 31) {
+                                    if (i_8_ < 32 && i_6_ >= -128 && i_6_ <= 127 && i_7_ >= -128 && i_7_ <= 127) {
+                                        i_6_ += 128
+                                        i_7_ += 128
+                                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 128 + i_8_)
+                                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_7_ + (i_6_ shl 8))
+                                    } else if (i_8_ >= 32) {
+                                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), 57344 + i_8_)
+                                        if (i_5_ == 1 || i_4_ == -1) class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(99.toByte(), -2147483648)
+                                        else class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(101.toByte(), i_4_ shl 16 or i_5_)
+                                    } else {
+                                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 192 + i_8_)
+                                        if (i_5_ != 1 && i_4_ != -1) class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(100.toByte(), i_5_ or (i_4_ shl 16))
+                                        else class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(114.toByte(), -2147483648)
+                                    }
+                                } else {
+                                    i_6_ += 32
+                                    i_7_ += 32
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), (i_7_ + (i_6_ shl 6) + (i_8_ shl 12)))
+                                }
+                                CompiledScriptCache.aLong4367 = class348_sub45_3_.method3312((-109).toByte())
+                            }
+                            class348_sub45_3_ = NativeRenderNode.aNodeDeque_10479!!.method1990(79.toByte()) as TimedRecordAccessor?
+                        }
+                        if (class348_sub47 != null) {
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(105, class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 + -i_2_)
+                            InterfaceComponentGroup.method3243(23, class348_sub47)
+                        }
+                    }
+                    if (class348_sub45 != null) {
+                        var l = ((class348_sub45.method3312((-110).toByte()) + -GlTextureBase.aLong5089) / 50L)
+                        GlTextureBase.aLong5089 = class348_sub45.method3312((-87).toByte())
+                        if (l > 32767) l = 32767L
+                        var i_9_ = class348_sub45.method3311(20)
+                        if (i_9_ >= 0) {
+                            if (i_9_ > 65535) i_9_ = 65535
+                        } else i_9_ = 0
+                        var i_10_ = class348_sub45.method3308((-128).toByte())
+                        if (i_10_ < 0) i_10_ = 0
+                        else if (i_10_ > 65535) i_10_ = 65535
+                        var i_11_ = 0
+                        if (class348_sub45.method3310(i xor 0x2cee) == 2) i_11_ = 1
+                        val i_12_ = l.toInt()
+                        ParticleEmitterNode.anInt182++
+                        val class348_sub47 = method2148(ProjectileConfigUtil.aFontMetaRef_395, (TheoraVideoStream.aIsaacCipher_9029), i + -11525)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_12_ or (i_11_ shl 15))
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(121.toByte(), i_9_ shl 16 or i_10_)
+                        InterfaceComponentGroup.method3243(25, class348_sub47)
+                    }
+                    if (CameraConfigDefinition.anInt3246 > 0) {
+                        ColourKeyTextureNode.anInt9348++
+                        val class348_sub47 = method2148((ShaderStateVariant.aFontMetaRef_8798), (TheoraVideoStream.aIsaacCipher_9029), -111)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * CameraConfigDefinition.anInt3246)
+                        var i_13_ = 0
+                        while ((i_13_ < CameraConfigDefinition.anInt3246)) {
+                            val interface6 = CacheLruCache.anCharStreamReaderArray3884s!![i_13_]
+                            var l = ((interface6!!.method29((-29).toByte()) + -RegionTileNode.aLong6651) / 50L)
+                            RegionTileNode.aLong6651 = interface6.method29(106.toByte())
+                            if (l > 65535L) l = 65535L
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, interface6.method30(false))
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), l.toInt())
+                            i_13_++
+                        }
+                        InterfaceComponentGroup.method3243(-49, class348_sub47)
+                    }
+                    if (HintArrowOrMessage.anInt2035 > 0) HintArrowOrMessage.anInt2035--
+                    if (WorldMapPolygonIconLabel.aBoolean10174 && HintArrowOrMessage.anInt2035 <= 0) {
+                        LightDetailOptionState.anInt6033++
+                        WorldMapPolygonIconLabel.aBoolean10174 = false
+                        HintArrowOrMessage.anInt2035 = 20
+                        val class348_sub47 = method2148(ClanChatRequestSender.aFontMetaRef_3648, (TheoraVideoStream.aIsaacCipher_9029), i + -11549)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(i xor 0x3c4d, CameraDistanceOptionState.aFloat3938.toInt() shr 3)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), SceneObjectSpawner.aFloat1287.toInt() shr 3)
+                        InterfaceComponentGroup.method3243(-31, class348_sub47)
+                    }
+                    if (DragDropController.aBoolean4278 != SizeBoundedSoftCache.aBoolean2329) {
+                        NormalMapGenerator.anInt3460++
+                        DragDropController.aBoolean4278 = SizeBoundedSoftCache.aBoolean2329
+                        val class348_sub47 = method2148((InputStream_Sub1.aFontMetaRef_77), (TheoraVideoStream.aIsaacCipher_9029), i xor 0x2cc8.inv())
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!SizeBoundedSoftCache.aBoolean2329) 0 else 1)
+                        InterfaceComponentGroup.method3243(i + -11501, class348_sub47)
+                    }
+                    if (!RenderNodeStatics.aBoolean9719) {
+                        GameClock.anInt1110++
+                        val class348_sub47 = method2148((FloatBuffer.aFontMetaRef_9743), (TheoraVideoStream.aIsaacCipher_9029), -113)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                        val i_14_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
+                        val class348_sub49 = IntHashSetStatics.aClass348_Sub51_3959!!.method3427(i xor 0x2cb0)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154!!, 82)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(96, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) + -i_14_)
+                        InterfaceComponentGroup.method3243(i + -11473, class348_sub47)
+                        RenderNodeStatics.aBoolean9719 = true
+                    }
+                    if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null) {
+                        if (WeaveTextureNode.anInt9282 == 2) method241(127.toByte())
+                        else if (WeaveTextureNode.anInt9282 == 3) CameraSplineNode.Companion.method2954((-4).toByte())
+                    }
+                    if (!KeyboardLayoutConfig.aBoolean2130) CircleDrawer.aFloat2687 /= 2.0f
+                    else KeyboardLayoutConfig.aBoolean2130 = false
+                    if (!MinimapSquareDrawer.aBoolean5224) MultiFieldRecord.Companion.aFloat6898 /= 2.0f
+                    else MinimapSquareDrawer.aBoolean5224 = false
+                    method3027(33.toByte())
+                    if (WorldMapRenderer.anInt4674 == 10) {
+                        LoadingScreenImageNode.method3175(55.toByte())
+                        method362(i + -11335)
+                        method1501(-123)
+                        StringCacheNode.anInt7213++
+                        if (StringCacheNode.anInt7213 > 750) method2049(83)
+                        else {
+                            method349(i + -6692)
+                            method3150(true)
+                            method1397(0)
+                            var i_15_ = ProjectedGroundDecor.aVarpStore_10209!!.method1305((-126).toByte(), true)
+                            while (i_15_ != -1) {
+                                method1767(true, i_15_)
+                                FileIoUtil.anIntArray4096!![method1166(31, TypedRecordTable.anInt3695++)] = i_15_
+                                i_15_ = ProjectedGroundDecor.aVarpStore_10209!!.method1305((-128).toByte(), false)
+                            }
+                            var class348_sub42_sub15 = method3127(2681)
+                            while (class348_sub42_sub15 != null) {
+                                val i_16_ = class348_sub42_sub15.method3245(true)
+                                val i_17_ = class348_sub42_sub15.method3248(1)
+                                if (i_16_ == 1) {
+                                    IsaacCipher.anIntArray1303!![i_17_] = class348_sub42_sub15.anInt9652
+                                    ScanlineRasterFiller.aBoolean2469 = ScanlineRasterFiller.aBoolean2469 or GlslEnvMaterialPass.aBooleanArray6270!![i_17_]
+                                    NamedIdEntry.Companion.anIntArray6890!![method1166(31, ScrollbarComponent.anInt8352++)] = i_17_
+                                } else if (i_16_ == 2) {
+                                    GlTextureCubeMap.aStringArray8532!![i_17_] = class348_sub42_sub15.aString9654
+                                    RemoveRoofsOptionState.anIntArray6061!![method1166(HslAdjustTextureNode.anInt9385++, 31)] = i_17_
+                                } else if (i_16_ == 3) {
+                                    val class46 = method2570(1512932720, i_17_)
+                                    if (class348_sub42_sub15.aString9654 != class46!!.aString792) {
+                                        class46.aString792 = class348_sub42_sub15.aString9654
+                                        ConfigFlagUtil.method1916(-9343, class46)
+                                    }
+                                } else if (i_16_ == 4) {
+                                    val class46 = method2570(1512932720, i_17_)
+                                    val i_18_ = (class348_sub42_sub15.anInt9652)
+                                    val i_19_ = (class348_sub42_sub15.anInt9651)
+                                    val i_20_ = (class348_sub42_sub15.anInt9650)
+                                    if (i_18_ != class46!!.anInt770 || (class46.anInt753 != i_19_) || (i_20_ != class46.anInt779)) {
+                                        class46.anInt753 = i_19_
+                                        class46.anInt770 = i_18_
+                                        class46.anInt779 = i_20_
+                                        ConfigFlagUtil.method1916(-9343, class46)
+                                    }
+                                } else if (i_16_ == 5) {
+                                    val class46 = method2570(i xor 0x5a2da9d8, i_17_)
+                                    if ((class46!!.anInt699 != class348_sub42_sub15.anInt9652) || (class348_sub42_sub15.anInt9652 == -1)) {
+                                        class46.anInt699 = class348_sub42_sub15.anInt9652
+                                        class46.anInt795 = 0
+                                        class46.anInt841 = 0
+                                        class46.anInt730 = 1
+                                        val class17 = (if (class46.anInt699 == -1) null else (ParticleEmitterNode.aWidgetCache_191!!.method835((class46.anInt699), 7)))
+                                        if (class17 != null) method2017((class46.anInt795), class17, 30)
+                                        ConfigFlagUtil.method1916(-9343, class46)
+                                    }
+                                } else if (i_16_ == 6) {
+                                    val i_21_ = (class348_sub42_sub15.anInt9652)
+                                    val i_22_ = (0x7ff9 and i_21_) shr 10
+                                    val i_23_ = 0x1f and (i_21_ shr 5)
+                                    val i_24_ = 0x1f and i_21_
+                                    val i_25_ = ((i_24_ shl 3) + ((i_22_ shl 19) - -(i_23_ shl 11)))
+                                    val class46 = method2570(1512932720, i_17_)
+                                    if (class46!!.anInt749 != i_25_) {
+                                        class46.anInt749 = i_25_
+                                        ConfigFlagUtil.method1916(-9343, class46)
+                                    }
+                                } else if (i_16_ == 7) {
+                                    val class46 = method2570(1512932720, i_17_)
+                                    val bool = (class348_sub42_sub15.anInt9652 == 1)
+                                    if (!class46!!.aBoolean813 == bool) {
+                                        class46.aBoolean813 = bool
+                                        ConfigFlagUtil.method1916(-9343, class46)
+                                    }
+                                } else if (i_16_ == 8) {
+                                    val class46 = method2570(1512932720, i_17_)
+                                    if ((class46!!.anInt757 != class348_sub42_sub15.anInt9652) || (class46.anInt675 != class348_sub42_sub15.anInt9651) || (class46.anInt716 != class348_sub42_sub15.anInt9650)) {
+                                        class46.anInt716 = class348_sub42_sub15.anInt9650
+                                        class46.anInt675 = class348_sub42_sub15.anInt9651
+                                        class46.anInt757 = class348_sub42_sub15.anInt9652
+                                        if (class46.anInt812 != -1) {
+                                            if (class46.anInt796 <= 0) {
+                                                if ((class46.anInt842) > 0) class46.anInt716 = (32 * class46.anInt716 / (class46.anInt842))
+                                            } else class46.anInt716 = ((class46.anInt716) * 32 / (class46.anInt796))
+                                        }
+                                        ConfigFlagUtil.method1916(-9343, class46)
+                                    }
+                                } else if (i_16_ == 9) {
+                                    val class46 = method2570(1512932720, i_17_)
+                                    if ((class348_sub42_sub15.anInt9652 != class46!!.anInt812) || (class348_sub42_sub15.anInt9651 != class46.anInt781)) {
+                                        class46.anInt781 = class348_sub42_sub15.anInt9651
+                                        class46.anInt812 = class348_sub42_sub15.anInt9652
+                                        ConfigFlagUtil.method1916(-9343, class46)
+                                    }
+                                } else if (i_16_ == 10) {
+                                    val class46 = method2570(1512932720, i_17_)
+                                    if ((class46!!.anInt808 != (class348_sub42_sub15.anInt9652)) || ((class46.anInt786) != (class348_sub42_sub15.anInt9651)) || ((class348_sub42_sub15.anInt9650) != class46.anInt717)) {
+                                        class46.anInt786 = (class348_sub42_sub15.anInt9651)
+                                        class46.anInt808 = (class348_sub42_sub15.anInt9652)
+                                        class46.anInt717 = (class348_sub42_sub15.anInt9650)
+                                        ConfigFlagUtil.method1916(-9343, class46)
+                                    }
+                                } else if (i_16_ == 11) {
+                                    val class46 = (method2570(1512932720, i_17_))
+                                    class46!!.aByte817 = 0.toByte()
+                                    class46.anInt739 = (class348_sub42_sub15.anInt9651)
+                                    class46.anInt750 = class46.anInt739
+                                    class46.aByte681 = 0.toByte()
+                                    class46.anInt788 = (class348_sub42_sub15.anInt9652)
+                                    class46.anInt800 = class46.anInt788
+                                    ConfigFlagUtil.method1916(-9343, class46)
+                                } else if (i_16_ == 12) {
+                                    val class46 = (method2570(1512932720, i_17_))
+                                    var i_26_ = (class348_sub42_sub15.anInt9652)
+                                    if (class46 != null && (class46.anInt774) == 0) {
+                                        if ((-(class46.anInt789) + (class46.anInt791)) < i_26_) i_26_ = ((class46.anInt791) - (class46.anInt789))
+                                        if (i_26_ < 0) i_26_ = 0
+                                        if (i_26_ != (class46.anInt755)) {
+                                            class46.anInt755 = i_26_
+                                            method1916(-9343, class46)
+                                        }
+                                    }
+                                } else if (i_16_ == 14) {
+                                    val class46 = (method2570(1512932720, i_17_))
+                                    class46!!.anInt756 = (class348_sub42_sub15.anInt9652)
+                                } else if (i_16_ == 15) {
+                                    TerrainChunkBuilder.anInt1548 = (class348_sub42_sub15.anInt9651)
+                                    MediaStreamClient.anInt3203 = (class348_sub42_sub15.anInt9652)
+                                    ModelKeyBuilder.Companion.aBoolean6759 = true
+                                } else if (i_16_ == 16) {
+                                    val class46 = (method2570(1512932720, i_17_))
+                                    class46!!.anInt702 = (class348_sub42_sub15.anInt9652)
+                                } else if (i_16_ == 17) {
+                                    val class46 = (method2570(1512932720, i_17_))
+                                    class46!!.anInt806 = (class348_sub42_sub15.anInt9652)
+                                }
+                                class348_sub42_sub15 = method3127(2681)
+                            }
+                            DisplaySettingsConfig.anInt7267++
+                            if (FogOptionState.anInt6048 != 0) {
+                                LinkedListNodeStatics.anInt4292 += 20
+                                if (LinkedListNodeStatics.anInt4292 >= 400) FogOptionState.anInt6048 = 0
+                            }
+                            if (ResourceLoaderThread.aWidgetComponent_3913 != null) {
+                                GroundItemRenderState.anInt1656++
+                                if (GroundItemRenderState.anInt1656 >= 15) {
+                                    ConfigFlagUtil.method1916(-9343, ResourceLoaderThread.aWidgetComponent_3913!!)
+                                    ResourceLoaderThread.aWidgetComponent_3913 = null
+                                }
+                            }
+                            MapElementDecor.aWidgetComponent_10336 = null
+                            MinimapSquareDrawer.aBoolean5221 = false
+                            HeapDiagnosticsHolder.aWidgetComponent_2249 = null
+                            ScrollingWidgetComponentNode.aBoolean8386 = false
+                            method198(null, false, -1, -1)
+                            method1343(-1, null, 1, -1)
+                            if (!RenderNodeStatics.aBoolean9722) Tooltip.anInt4458 = -1
+                            FloatGrid.method1583((-73).toByte())
+                            ResourceLoaderThread.anInt3918++
+                            if (WorldMapScene.aBoolean3103) {
+                                NodeDequeHolder.anInt1568++
+                                val class348_sub47 = method2148((OpenGlRenderer.aFontMetaRef_7715), (TheoraVideoStream.aIsaacCipher_9029), i + -11525)
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(117.toByte(), (InputStream_Sub2.anInt85 shl 14 or (ColourKeyTextureNode.anInt9349 shl 28) or NpcType.anInt1404))
+                                InterfaceComponentGroup.method3243(30, class348_sub47)
+                                WorldMapScene.aBoolean3103 = false
+                            }
+                            while (true) {
+                                val class348_sub36 = (BufferedOutputStreamWorker.aNodeDeque_2707!!.method1997(8) as? WidgetActionEntry?)
+                                if (class348_sub36 == null) break
+                                val class46 = (class348_sub36.aWidgetComponent_6989)!!
+                                if (class46.anInt704 >= 0) {
+                                    val class46_27_ = method2570(1512932720, (class46.anInt834))
+                                    if (class46_27_ == null || (class46_27_.aWidgetComponentArray798) == null || ((class46_27_.aWidgetComponentArray798!!).size <= class46.anInt704) || (class46 != (class46_27_.aWidgetComponentArray798!![class46.anInt704]))) {
+                                        continue
+                                    }
+                                }
+                                method705(class348_sub36)
+                            }
+                            while (true) {
+                                val class348_sub36 = (RendererType.aNodeDeque_4473!!.method1997(8) as? WidgetActionEntry?)
+                                if (class348_sub36 == null) break
+                                val class46 = (class348_sub36.aWidgetComponent_6989)!!
+                                if (class46.anInt704 >= 0) {
+                                    val class46_28_ = method2570(1512932720, (class46.anInt834))
+                                    if (class46_28_ == null || (class46_28_.aWidgetComponentArray798) == null || (class46.anInt704 >= (class46_28_.aWidgetComponentArray798!!).size) || ((class46_28_.aWidgetComponentArray798!![class46.anInt704]) != class46)) {
+                                        continue
+                                    }
+                                }
+                                method705(class348_sub36)
+                            }
+                            while (true) {
+                                val class348_sub36 = (HashTileShape.aNodeDeque_8810!!.method1997(i + -11424) as? WidgetActionEntry?)
+                                if (class348_sub36 == null) break
+                                val class46 = (class348_sub36.aWidgetComponent_6989)!!
+                                if (class46.anInt704 >= 0) {
+                                    val class46_29_ = method2570(1512932720, (class46.anInt834))
+                                    if (class46_29_ == null || (class46_29_.aWidgetComponentArray798) == null || (class46.anInt704 >= (class46_29_.aWidgetComponentArray798!!).size) || ((class46_29_.aWidgetComponentArray798!![class46.anInt704]) != class46)) {
+                                        continue
+                                    }
+                                }
+                                method705(class348_sub36)
+                            }
+                            if (HeapDiagnosticsHolder.aWidgetComponent_2249 == null) HashLinkedListNodeStatics.anInt7059 = 0
+                            if (RegionSceneLoader.aWidgetComponent_3701 != null) method2708(-30206)
+                            if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, i xor 0x2cd5.inv()) && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -121) && NodeDequeHolder.anInt1565 != 0) {
+                                var i_30_ = ((LocalPlayerState.aPlayer_1907!!.plane) - NodeDequeHolder.anInt1565)
+                                if (i_30_ >= 0) {
+                                    if (i_30_ > 3) i_30_ = 3
+                                } else i_30_ = 0
+                                CollisionMap.method3502((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) + RegionMapDecoder.regionTileY, i xor 0x2caa, i_30_, (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + ArbVertexProgram.regionTileX)
+                            }
+                            method1987(-120)
+                            var i_31_ = 0
+                            if (i == 11432) {
+                                while ( /**/i_31_ < 5) {
+                                    GroundDecorSceneEntity.anIntArray9981!![i_31_] = GroundDecorSceneEntity.anIntArray9981!![i_31_] + 1
+                                    i_31_++
+                                }
+                                if (ScanlineRasterFiller.aBoolean2469 && (-60000L + method599(-84) > SkeletalAnimFrameLoader.aLong482)) method2405(i + -11313)
+                                var class318_sub9_sub1 = (InterfaceComponentGroup.aDoublyLinkedNodeList_9642!!.method1872(i + -11424) as? NamedTimedNode?)
+                                while (class318_sub9_sub1 != null) {
+                                    if ((method599(i xor 0x2ce9.inv()) / 1000L + -5L) > class318_sub9_sub1.anInt8787.toLong()) {
+                                        if (class318_sub9_sub1.aShort8786 > 0) FixedFunctionMaterialPass.method2144("", 5, (-128).toByte(), 0, (class318_sub9_sub1.aString8783 + (LocalizedText.aLocalizedText_3502!!.method2063(ChatCommandProcessor.anInt6967, 544))), "", "")
+                                        if (class318_sub9_sub1.aShort8786.toInt() == 0) FixedFunctionMaterialPass.method2144("", 5, (-105).toByte(), 0, (class318_sub9_sub1.aString8783 + (LocalizedText.aLocalizedText_3503!!.method2063(ChatCommandProcessor.anInt6967, 544))), "", "")
+                                        class318_sub9_sub1.method2373(false)
+                                    }
+                                    class318_sub9_sub1 = (InterfaceComponentGroup.aDoublyLinkedNodeList_9642!!.method1878((-105).toByte()) as? NamedTimedNode?)
+                                }
+                                ItemNameResolver.anInt4999++
+                                if (ItemNameResolver.anInt4999 > 500) {
+                                    ItemNameResolver.anInt4999 = 0
+                                    val i_32_ = (8.0 * Math.random()).toInt()
+                                    if ((0x4 and i_32_) == 4) RenderableGroup.anInt5016 += ProjectileDefinition.anInt3844
+                                    if ((i_32_ and 0x1) == 1) ConnectionStateRefs.anInt319 += WallEntity.anInt8775
+                                    if ((0x2 and i_32_) == 2) WalkingTypeUtil.anInt3310 += anInt4263
+                                }
+                                if (ConnectionStateRefs.anInt319 < -50) WallEntity.anInt8775 = 2
+                                if (ConnectionStateRefs.anInt319 > 50) WallEntity.anInt8775 = -2
+                                if (WalkingTypeUtil.anInt3310 < -55) anInt4263 = 2
+                                if (RenderableGroup.anInt5016 < -40) ProjectileDefinition.anInt3844 = 1
+                                if (WalkingTypeUtil.anInt3310 > 55) anInt4263 = -2
+                                GlBufferObject.anInt4753++
+                                if (RenderableGroup.anInt5016 > 40) ProjectileDefinition.anInt3844 = -1
+                                if (GlBufferObject.anInt4753 > 500) {
+                                    GlBufferObject.anInt4753 = 0
+                                    val i_33_ = (Math.random() * 8.0).toInt()
+                                    if ((i_33_ and 0x2) == 2) FloatBuffer.anInt9750 += InterfaceComponentGroup.anInt9645
+                                    if ((i_33_ and 0x1) == 1) OpenGlRenderNode.anInt10483 += HardKeyedCacheEntryReference.anInt10443
+                                }
+                                if (OpenGlRenderNode.anInt10483 < -60) HardKeyedCacheEntryReference.anInt10443 = 2
+                                if (FloatBuffer.anInt9750 < -20) InterfaceComponentGroup.anInt9645 = 1
+                                if (OpenGlRenderNode.anInt10483 > 60) HardKeyedCacheEntryReference.anInt10443 = -2
+                                if (FloatBuffer.anInt9750 > 10) InterfaceComponentGroup.anInt9645 = -1
+                                SceneRegionState.anInt193++
+                                if (SceneRegionState.anInt193 > 50) {
+                                    IOException_Sub1.anInt88++
+                                    val class348_sub47 = (method2148(RangedGraphicsOptionState.aFontMetaRef_5938, TheoraVideoStream.aIsaacCipher_9029, -125))
+                                    InterfaceComponentGroup.method3243(i xor 0x2cc0.inv(), class348_sub47)
+                                }
+                                if (MultiLevelOptionState.aBoolean6147) {
+                                    method2334(0)
+                                    MultiLevelOptionState.aBoolean6147 = false
+                                }
+                                try {
+                                    method1802(0)
+                                } catch (ioexception: IOException) {
+                                    method2049(93)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        var anInt4032: Int = -1
+
+
+        var anInt6961: Int = 0
+        fun method3025(i: Byte, class348_sub49_sub2: CipheredPacketBuffer) {
+            anInt6961++
+            val class348_sub48 = aNodeDeque_6978!!.method1995(4) as ModelResourceBundle?
+            if (class348_sub48 != null) {
+                var bool = false
+                for (i_0_ in 0..<class348_sub48.anInt7126) {
+                    if (class348_sub48.aLinkedQueueNodeArray7135!![i_0_] != null) {
+                        if ((class348_sub48.aLinkedQueueNodeArray7135!![i_0_]!!.anInt1997) == 2) class348_sub48.anIntArray7131!![i_0_] = -5
+                        if ((class348_sub48.aLinkedQueueNodeArray7135!![i_0_]!!.anInt1997) == 0) bool = true
+                    }
+                    if (class348_sub48.aLinkedQueueNodeArray7127!![i_0_] != null) {
+                        if ((class348_sub48.aLinkedQueueNodeArray7127!![i_0_]!!.anInt1997) == 2) class348_sub48.anIntArray7131!![i_0_] = -6
+                        if ((class348_sub48.aLinkedQueueNodeArray7127!![i_0_]!!.anInt1997) == 0) bool = true
+                    }
+                }
+                if (i < 37) LoadProgressCounters.aLong6966 = -3L
+                if (!bool) {
+                    val i_1_ = class348_sub49_sub2.anInt7197
+                    class348_sub49_sub2.writeInt(94.toByte(), class348_sub48.anInt7130)
+                    var i_2_ = 0
+                    while ((i_2_ < class348_sub48.anInt7126)) {
+                        if (class348_sub48.anIntArray7131!![i_2_] == 0) {
+                            try {
+                                val i_3_ = (class348_sub48.anIntArray7132!![i_2_])
+                                if (i_3_ == 0) {
+                                    val field = ((class348_sub48.aLinkedQueueNodeArray7135!![i_2_]!!.anObject1998) as Field?)
+                                    val i_5_ = field!!.getInt(null)
+                                    class348_sub49_sub2.writeByte(false, 0)
+                                    class348_sub49_sub2.writeInt(108.toByte(), i_5_)
+                                } else if (i_3_ == 1) {
+                                    val field = ((class348_sub48.aLinkedQueueNodeArray7135!![i_2_]!!.anObject1998) as Field?)
+                                    field!!.setInt(null, (class348_sub48.anIntArray7136!![i_2_]))
+                                    class348_sub49_sub2.writeByte(false, 0)
+                                } else if (i_3_ == 2) {
+                                    val field = ((class348_sub48.aLinkedQueueNodeArray7135!![i_2_]!!.anObject1998) as Field?)
+                                    val i_4_ = field!!.getModifiers()
+                                    class348_sub49_sub2.writeByte(false, 0)
+                                    class348_sub49_sub2.writeInt(122.toByte(), i_4_)
+                                }
+                                if (i_3_ == 3) {
+                                    val method = ((class348_sub48.aLinkedQueueNodeArray7127!![i_2_]!!.anObject1998) as Method?)
+                                    val `is` = (class348_sub48.aByteArrayArrayArray7128!![i_2_])!!
+                                    val objects = arrayOfNulls<Any>(`is`.size)
+                                    var i_6_ = 0
+                                    while (`is`.size > i_6_) {
+                                        val objectinputstream = (ObjectInputStream(ByteArrayInputStream(`is`[i_6_])))
+                                        objects[i_6_] = objectinputstream.readObject()
+                                        i_6_++
+                                    }
+                                    val `object` = method!!.invoke(null, *objects)
+                                    if (`object` != null) {
+                                        if (`object` is Number) {
+                                            class348_sub49_sub2.writeByte(false, 1)
+                                            class348_sub49_sub2.writeLong(`object`.toLong(), (-81).toByte())
+                                        } else if (`object` is String) {
+                                            class348_sub49_sub2.writeByte(false, 2)
+                                            class348_sub49_sub2.writeString((-5).toByte(), `object`)
+                                        } else class348_sub49_sub2.writeByte(false, 4)
+                                    } else class348_sub49_sub2.writeByte(false, 0)
+                                } else if (i_3_ == 4) {
+                                    val method = ((class348_sub48.aLinkedQueueNodeArray7127!![i_2_]!!.anObject1998) as Method?)
+                                    val i_7_ = method!!.getModifiers()
+                                    class348_sub49_sub2.writeByte(false, 0)
+                                    class348_sub49_sub2.writeInt(95.toByte(), i_7_)
+                                }
+                            } catch (classnotfoundexception: ClassNotFoundException) {
+                                class348_sub49_sub2.writeByte(false, -10)
+                            } catch (invalidclassexception: InvalidClassException) {
+                                class348_sub49_sub2.writeByte(false, -11)
+                            } catch (streamcorruptedexception: StreamCorruptedException) {
+                                class348_sub49_sub2.writeByte(false, -12)
+                            } catch (optionaldataexception: OptionalDataException) {
+                                class348_sub49_sub2.writeByte(false, -13)
+                            } catch (illegalaccessexception: IllegalAccessException) {
+                                class348_sub49_sub2.writeByte(false, -14)
+                            } catch (illegalargumentexception: IllegalArgumentException) {
+                                class348_sub49_sub2.writeByte(false, -15)
+                            } catch (invocationtargetexception: InvocationTargetException) {
+                                class348_sub49_sub2.writeByte(false, -16)
+                            } catch (securityexception: SecurityException) {
+                                class348_sub49_sub2.writeByte(false, -17)
+                            } catch (ioexception: IOException) {
+                                class348_sub49_sub2.writeByte(false, -18)
+                            } catch (nullpointerexception: NullPointerException) {
+                                class348_sub49_sub2.writeByte(false, -19)
+                            } catch (exception: Exception) {
+                                class348_sub49_sub2.writeByte(false, -20)
+                            } catch (throwable: Throwable) {
+                                class348_sub49_sub2.writeByte(false, -21)
+                            }
+                        } else class348_sub49_sub2.writeByte(false, (class348_sub48.anIntArray7131!![i_2_]))
+                        i_2_++
+                    }
+                    class348_sub49_sub2.method3344(i_1_, false)
+                    class348_sub48.method2715(46.toByte())
+                }
+            }
+        }
+
+
+        var anInt4263: Int = 2
+        var anInt6975: Int = 0
+        fun method3027(i: Byte) {
+            anInt6975++
+            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && CompiledScriptCache.anInt4372 != ParticleSystemState.anInt2204) RegionSceneShifter.Companion.method3157(FileIoUtil.anInt4095, 123.toByte(), Renderer.anInt4581, 11, false)
+            else {
+                StringValueNode.method3319(FacingDirectionNode.aRenderer6654, (-121).toByte())
+                if (TrackedGroundDecor.anInt10395 != CompiledScriptCache.anInt4372) EdgeDetectTextureNode.method3072((-96).toByte())
+            }
+        }
+        var aNodeDeque_6978: NodeDeque? = NodeDeque()
+
+        @JvmStatic
+        fun method3028(i: Int) {
+            InputStream_Sub2.aRgbColorPalette_6977 = null
+            ClientLoadStateMachine.aJs5Archive_6980 = null
+            aNodeDeque_6978 = null
+        }
     }
 }

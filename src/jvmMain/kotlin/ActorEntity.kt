@@ -140,7 +140,7 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
         fun method2480(i: Int) {
             if (i == -1) {
                 anInt8761++
-                ClientGameLoopNode.aNodeDeque_6978 = NodeDeque()
+                Client.aNodeDeque_6978 = NodeDeque()
             }
         }
     }

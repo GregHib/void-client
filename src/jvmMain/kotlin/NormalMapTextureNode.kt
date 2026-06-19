@@ -40,7 +40,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_12_ = `is`[1]!!
             val is_13_ = `is`[2]!!
             var i_14_ = 0
-            while (DisplaceTextureNode.Companion.anInt9139 > i_14_) {
+            while (ClampTextureNode.Companion.anInt9139 > i_14_) {
                 val i_15_ = (-is_8_[i_14_] + is_10_[i_14_]) * anInt9438
                 val i_16_ = (anInt9438 * (is_9_[1 + i_14_ and SimpleBinaryOptionState.anInt6076] - is_9_[SimpleBinaryOptionState.anInt6076 and -1 + i_14_]))
                 val i_17_ = i_16_ shr 12

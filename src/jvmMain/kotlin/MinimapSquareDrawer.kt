@@ -1,5 +1,3 @@
-import TextureCubeProvider.Companion.method2267
-
 /* Class50_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -115,6 +113,130 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
             ))
             aBoolean5226 = false
             aBoolean5224 = false
+        }
+        var anInt6324: Int = 0
+        fun method2267(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
+            anInt6324++
+            if (i_6_ == i_0_) Npc.method2441(i_2_, i_6_, i_4_, -22728, i_5_, i_3_, i_1_)
+            else if (WorldMapLabel.anInt4960 > -i_6_ + i_1_ || i_6_ + i_1_ > CameraNodeList.anInt1745 || -i_0_ + i_5_ < LocalPlayerState.anInt1910 || i_0_ + i_5_ > WidgetTextConfig.anInt513) method3041(i_6_, i_1_, i_5_, i xor 0x2903.inv(), i_0_, i_3_, i_2_, i_4_)
+            else AbstractFrameBufferSurface.method3012(i_0_, i_3_, i_6_, i_2_, i_1_, (-117).toByte(), i_5_, i_4_)
+        }
+
+        var anInt7030: Int = 0
+        fun method3041(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int) {
+            anInt7030++
+            var i_12_ = 0
+            var i_13_ = i_8_
+            var i_14_ = 0
+            val i_15_ = -i_11_ + i
+            val i_16_ = i_8_ - i_11_
+            val i_17_ = i * i
+            val i_18_ = i_8_ * i_8_
+            val i_19_ = i_15_ * i_15_
+            val i_20_ = i_16_ * i_16_
+            val i_21_ = i_18_ shl 1
+            val i_22_ = i_17_ shl 1
+            val i_23_ = i_20_ shl 1
+            val i_24_ = i_19_ shl 1
+            val i_25_ = i_8_ shl 1
+            val i_26_ = i_16_ shl 1
+            var i_27_ = i_21_ + i_17_ * (-i_25_ + 1)
+            var i_28_ = i_18_ + -(i_22_ * (-1 + i_25_))
+            var i_29_ = (1 - i_26_) * i_19_ + i_23_
+            var i_30_ = i_20_ + -(i_24_ * (-1 + i_26_))
+            val i_31_ = i_17_ shl 2
+            val i_32_ = i_18_ shl 2
+            val i_33_ = i_19_ shl 2
+            val i_34_ = i_20_ shl 2
+            var i_35_ = 3 * i_21_
+            var i_36_ = i_22_ * (-3 + i_25_)
+            var i_37_ = 3 * i_23_
+            var i_38_ = (i_26_ - 3) * i_24_
+            var i_39_ = i_32_
+            var i_40_ = i_31_ * (i_7_ + i_8_)
+            var i_41_ = i_34_
+            var i_42_ = i_33_ * (-1 + i_16_)
+            if (i_6_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_6_) {
+                val `is` = WidgetDefinition.anIntArrayArray255!![i_6_]!!
+                val i_43_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_5_ + -i, WorldMapLabel.anInt4960, 77)
+                val i_44_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i + i_5_, WorldMapLabel.anInt4960, -68)
+                val i_45_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_5_ + -i_15_, WorldMapLabel.anInt4960, i_7_ + -115)
+                val i_46_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_5_ + i_15_, WorldMapLabel.anInt4960, 97)
+                GlElementArrayBuffer.method1156(-27, i_45_, `is`, i_43_, i_10_)
+                GlElementArrayBuffer.method1156(-27, i_46_, `is`, i_45_, i_9_)
+                GlElementArrayBuffer.method1156(-27, i_44_, `is`, i_46_, i_10_)
+            }
+            while (i_13_ > 0) {
+                val bool = i_16_ >= i_13_
+                if (bool) {
+                    if (i_29_ < 0) {
+                        while (i_29_ < 0) {
+                            i_29_ += i_37_
+                            i_30_ += i_41_
+                            i_41_ += i_34_
+                            i_14_++
+                            i_37_ += i_34_
+                        }
+                    }
+                    if (i_30_ < 0) {
+                        i_29_ += i_37_
+                        i_30_ += i_41_
+                        i_41_ += i_34_
+                        i_37_ += i_34_
+                        i_14_++
+                    }
+                    i_29_ += -i_42_
+                    i_30_ += -i_38_
+                    i_42_ -= i_33_
+                    i_38_ -= i_33_
+                }
+                if (i_27_ < 0) {
+                    while (i_27_ < 0) {
+                        i_27_ += i_35_
+                        i_28_ += i_39_
+                        i_12_++
+                        i_39_ += i_32_
+                        i_35_ += i_32_
+                    }
+                }
+                if (i_28_ < 0) {
+                    i_28_ += i_39_
+                    i_27_ += i_35_
+                    i_35_ += i_32_
+                    i_12_++
+                    i_39_ += i_32_
+                }
+                i_27_ += -i_40_
+                i_28_ += -i_36_
+                i_13_--
+                i_36_ -= i_31_
+                i_40_ -= i_31_
+                val i_47_ = -i_13_ + i_6_
+                val i_48_ = i_13_ + i_6_
+                if (i_48_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_47_) {
+                    val i_49_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_12_ + i_5_, WorldMapLabel.anInt4960, 36)
+                    val i_50_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_12_ + i_5_, WorldMapLabel.anInt4960, 97)
+                    if (bool) {
+                        val i_51_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_5_ - -i_14_, WorldMapLabel.anInt4960, i_7_ xor 0x5c.inv())
+                        val i_52_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_14_ + i_5_, WorldMapLabel.anInt4960, 32)
+                        if (LocalPlayerState.anInt1910 <= i_47_) {
+                            val `is` = WidgetDefinition.anIntArrayArray255!![i_47_]!!
+                            GlElementArrayBuffer.method1156(-27, i_52_, `is`, i_50_, i_10_)
+                            GlElementArrayBuffer.method1156(-27, i_51_, `is`, i_52_, i_9_)
+                            GlElementArrayBuffer.method1156(i_7_ + -26, i_49_, `is`, i_51_, i_10_)
+                        }
+                        if (WidgetTextConfig.anInt513 >= i_48_) {
+                            val `is` = WidgetDefinition.anIntArrayArray255!![i_48_]!!
+                            GlElementArrayBuffer.method1156(i_7_ xor 0x1a, i_52_, `is`, i_50_, i_10_)
+                            GlElementArrayBuffer.method1156(-27, i_51_, `is`, i_52_, i_9_)
+                            GlElementArrayBuffer.method1156(-27, i_49_, `is`, i_51_, i_10_)
+                        }
+                    } else {
+                        if (i_47_ >= LocalPlayerState.anInt1910) GlElementArrayBuffer.method1156(-27, i_49_, (WidgetDefinition.anIntArrayArray255!![i_47_]!!), i_50_, i_10_)
+                        if (i_48_ <= WidgetTextConfig.anInt513) GlElementArrayBuffer.method1156(-27, i_49_, (WidgetDefinition.anIntArrayArray255!![i_48_]!!), i_50_, i_10_)
+                    }
+                }
+            }
         }
     }
 }

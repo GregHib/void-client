@@ -17,7 +17,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_15_ = `is`[1]!!
             val is_16_ = `is`[2]!!
             var i_17_ = 0
-            while (DisplaceTextureNode.Companion.anInt9139 > i_17_) {
+            while (ClampTextureNode.Companion.anInt9139 > i_17_) {
                 is_14_[i_17_] = -is_11_[i_17_] + 4096
                 is_15_[i_17_] = 4096 + -is_12_[i_17_]
                 is_16_[i_17_] = -is_13_[i_17_] + 4096
@@ -34,7 +34,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_19_ = this.method3048(i, 633706337, 0)!!
             var i_20_ = 0
-            while ((i_20_ < DisplaceTextureNode.Companion.anInt9139)) {
+            while ((i_20_ < ClampTextureNode.Companion.anInt9139)) {
                 `is`[i_20_] = 4096 + -is_19_[i_20_]
                 i_20_++
             }

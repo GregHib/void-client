@@ -30,7 +30,6 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
         if (anInt418 > i_16_ || i_16_ > anInt419) return false
         if (anInt416 > i_15_ || i_15_ > anInt406) return false
         if (i_14_ < anInt412 || anInt404 < i_14_) return false
-        if (i != -14735) method323(null, null, 29.toByte())
         val i_17_ = -anInt409 + i_16_
         val i_18_ = i_14_ + -anInt408
         return anInt405 > i_17_ * i_17_ + i_18_ * i_18_
@@ -74,30 +73,5 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
             if (i != 1) method322(-112)
         }
 
-        @JvmStatic
-        fun method323(js5Archive: Js5Archive?, privilegedOperationWorker: PrivilegedOperationWorker?, i: Byte) {
-            try {
-                RegionSceneShifter.aString7048 = ""
-                GrayscaleNoiseTexture.aPrivilegedOperationWorker_5297 = privilegedOperationWorker
-                anInt410++
-                ParticleSystemState.aJs5Archive_2208 = js5Archive
-                if (!ClientGameLoopNode.aString6877!!.startsWith("win")) {
-                    if (!ClientGameLoopNode.aString6877!!.startsWith("linux")) {
-                        if (ClientGameLoopNode.aString6877!!.startsWith("mac")) RegionSceneShifter.aString7048 += "macos/"
-                    } else RegionSceneShifter.aString7048 += "linux/"
-                } else RegionSceneShifter.aString7048 += "windows/"
-                if (i.toInt() != 95) anIntArray407 = null
-                if (!GrayscaleNoiseTexture.aPrivilegedOperationWorker_5297!!.aBoolean3794) {
-                    if (!ClientGameLoopNode.aString6876!!.startsWith("amd64") && !ClientGameLoopNode.aString6876!!.startsWith("x86_64")) {
-                        if (!ClientGameLoopNode.aString6876!!.startsWith("i386") && !ClientGameLoopNode.aString6876!!.startsWith("i486") && !ClientGameLoopNode.aString6876!!.startsWith("i586") && !ClientGameLoopNode.aString6876!!.startsWith("x86")) {
-                            if (!ClientGameLoopNode.aString6876!!.startsWith("ppc")) RegionSceneShifter.aString7048 += "universal/"
-                            else RegionSceneShifter.aString7048 += "ppc/"
-                        } else RegionSceneShifter.aString7048 += "x86/"
-                    } else RegionSceneShifter.aString7048 += "x86_64/"
-                } else RegionSceneShifter.aString7048 += "msjava/"
-            } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("hw.A(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
-            }
-        }
     }
 }

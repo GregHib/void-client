@@ -3,9 +3,8 @@ import AnimatedModelRenderer.Companion.method988
 import InputSettingsState.method1063
 import GlCubeMapTexture.Companion.method243
 import ModelDefinitionLoader.Companion.method1202
-import CircleHitbox.Companion.method323
 import OggBitstreamDecoder.Companion.method2965
-import AbstractProceduralTextureNode.Companion.method3038
+import ChatCommandProcessor.method3038
 import DisplaceTextureNode.Companion.method3063
 import AsyncResourceRequest.Companion.method3256
 import GlTexture2DRegion.Companion.method3553
@@ -167,7 +166,7 @@ object ClientLoadStateMachine {
             method3290(56)
             ByteBufferStatics.method3379(2, 2)
         }
-        if (ConnectionStateType.aConnectionStateType_1033 == TimedTileQueueEntry.aConnectionStateType_9660) method323(Crc64Hashable.aJs5Archive_4984, VorbisOggDecoder.aPrivilegedOperationWorker_8992, 95.toByte())
+        if (ConnectionStateType.aConnectionStateType_1033 == TimedTileQueueEntry.aConnectionStateType_9660) OSInfo.method323(Crc64Hashable.aJs5Archive_4984, VorbisOggDecoder.aPrivilegedOperationWorker_8992, 95.toByte())
         if (ConnectionStateType.aConnectionStateType_1034 == TimedTileQueueEntry.aConnectionStateType_9660) {
             val i_10_ = BinaryGraphicsOptionState.method1770((-25).toByte())
             if (i_10_ < 100) return i_10_
@@ -335,4 +334,9 @@ object ClientLoadStateMachine {
     }
     var aJs5Archive_1878: Js5Archive? = null
     var aJs5Archive_6980: Js5Archive? = null
+    var aSoundChannelMixer_7042: SoundChannelMixer? = null
+    fun method3040(bool: Boolean) {
+        ClientLoadStateMachine.aSoundChannelMixer_7042 = null
+        Client.aHashtable_7041 = null
+    }
 }

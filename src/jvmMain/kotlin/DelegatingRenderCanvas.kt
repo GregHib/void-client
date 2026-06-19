@@ -39,8 +39,6 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
         @JvmField
         var anInt67: Int = 0
         @JvmField
-        var anInt68: Int = 0
-        @JvmField
         var anInt69: Int = 0
         @JvmField
         var anInt70: Int = 0
@@ -93,14 +91,15 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             if (bool != false) anIntArray60 = null
         }
 
+        var anInt68: Int = 0
         fun method121(i: Int, i_6_: Int, bool: Boolean, i_7_: Int, i_8_: Int, i_9_: Int) {
             if (i_6_ != -364570972) anInt70 = -4
             anInt68++
             val l = (i or (if (!bool) 0 else -2147483648)).toLong()
-            var class348_sub13 = (AbstractProceduralTextureNode.aHashtable_7041!!.method3480(l, -6008) as ModelKeyBuilder?)
+            var class348_sub13 = (Client.aHashtable_7041!!.method3480(l, -6008) as ModelKeyBuilder?)
             if (class348_sub13 == null) {
                 class348_sub13 = ModelKeyBuilder()
-                AbstractProceduralTextureNode.aHashtable_7041!!.method3483(109.toByte(), l, class348_sub13)
+                Client.aHashtable_7041!!.method3483(109.toByte(), l, class348_sub13)
             }
             if (class348_sub13.anIntArray6757!!.size <= i_7_) {
                 val `is` = IntArray(1 + i_7_)
@@ -179,8 +178,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         LocDefinitionCache.anInt3441++
                     }
                 }
-                if (ImageFrameCache.anIntArray4031 != null && StringCacheNode.aByteArrayArray7212!![i_19_] == null && ImageFrameCache.anIntArray4031!![i_19_] != -1) {
-                    StringCacheNode.aByteArrayArray7212!![i_19_] = (AbstractCameraTransformStatics.aJs5Archive_7382!!.method393(ImageFrameCache.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
+                if (AbstractCameraTransformStatics.anIntArray4031 != null && StringCacheNode.aByteArrayArray7212!![i_19_] == null && AbstractCameraTransformStatics.anIntArray4031!![i_19_] != -1) {
+                    StringCacheNode.aByteArrayArray7212!![i_19_] = (AbstractCameraTransformStatics.aJs5Archive_7382!!.method393(AbstractCameraTransformStatics.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (StringCacheNode.aByteArrayArray7212!![i_19_] == null) {
                         bool = false
                         LocDefinitionCache.anInt3441++

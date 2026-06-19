@@ -37,7 +37,7 @@ import MidiSequencePlayer.Companion.method2839
 import ParticleTileShape.Companion.method2732
 import VorbisOggDecoder.Companion.method2972
 import ClientMachineInfo.Companion.method2749
-import AbstractProceduralTextureNode.Companion.method3038
+import ChatCommandProcessor.method3038
 import GradientLookupEffect.Companion.method3076
 import SpriteRgbTextureNode.Companion.method3093
 import HslAdjustTextureNode.Companion.method3128
@@ -65,9 +65,13 @@ import GameClock.method596
 import GameClock.method599
 import ChatCommandProcessor.method606
 import ChatCommandProcessor.aString9554
+import FlickeringEffectsOptionState.Companion.method1750
+import GlTexture1D.Companion.method1974
 import MidiSequencePlayer.Companion.method2862
 import OpenGlModel.Companion.method690
 import LocTypeConfig.Companion.method160
+import NullRenderPass.Companion.method3535
+import ProjectedGroundDecor.Companion.method2420
 import java.awt.datatransfer.DataFlavor
 import java.util.*
 import kotlin.math.max
@@ -122,7 +126,7 @@ object ChatCommandProcessor {
 
     @JvmStatic
     fun method701(boundsConstraintEntry: BoundsConstraintEntry, i: Int, i_0_: Int) {
-        val class348_sub42_sub19 = ConfigDefinitionLoader.method1223(i, i_0_, 96837648, boundsConstraintEntry)
+        val class348_sub42_sub19 = method1223(i, i_0_, 96837648, boundsConstraintEntry)
         if (class348_sub42_sub19 != null) {
             anIntArray1164 = (IntArray(class348_sub42_sub19.anInt9688))
             aStringArray1155 = (arrayOfNulls<String>(class348_sub42_sub19.anInt9689))
@@ -139,6 +143,60 @@ object ChatCommandProcessor {
             method711(class348_sub42_sub19, 200000)
         }
     }
+
+
+    var anInt2086: Int = 0
+    fun method1223(i: Int, i_5_: Int, i_6_: Int, boundsConstraintEntry: BoundsConstraintEntry): MinimapAreaMarkerNode? {
+        anInt2086++
+        var i_7_ = boundsConstraintEntry.anInt5167 or (i shl 10)
+        var class348_sub42_sub19 = (ChatCommandProcessor.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-91).toByte()) as MinimapAreaMarkerNode?)
+        if (class348_sub42_sub19 != null) return class348_sub42_sub19
+        var `is` = (CameraNodeList.aJs5Archive_1743!!.method415(73.toByte(), CameraNodeList.aJs5Archive_1743!!.method423(i_7_, (-90).toByte())))
+        if (`is` != null) {
+            if (`is`.size <= 1) return null
+            try {
+                class348_sub42_sub19 = SceneEntityModel.method2502(`is`, -85)
+            } catch (exception: Exception) {
+                throw RuntimeException(exception.message + " S: " + i_7_)
+            }
+            class348_sub42_sub19!!.aBoundsConstraintEntry_9691 = boundsConstraintEntry
+            ChatCommandProcessor.aCacheLruCache_4036!!.method2305(i_7_.toLong() shl 16, class348_sub42_sub19, -1)
+            return class348_sub42_sub19
+        }
+        i_7_ = boundsConstraintEntry.anInt5167 or (65536 + i_5_ shl 10)
+        class348_sub42_sub19 = (ChatCommandProcessor.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-31).toByte()) as MinimapAreaMarkerNode?)
+        if (class348_sub42_sub19 != null) return class348_sub42_sub19
+        `is` = (CameraNodeList.aJs5Archive_1743!!.method415(73.toByte(), CameraNodeList.aJs5Archive_1743!!.method423(i_7_, (-107).toByte())))
+        if (`is` != null) {
+            if (`is`.size <= 1) return null
+            try {
+                class348_sub42_sub19 = SceneEntityModel.method2502(`is`, -101)
+            } catch (exception: Exception) {
+                throw RuntimeException(exception.message + " S: " + i_7_)
+            }
+            class348_sub42_sub19!!.aBoundsConstraintEntry_9691 = boundsConstraintEntry
+            ChatCommandProcessor.aCacheLruCache_4036!!.method2305(i_7_.toLong() shl 16, class348_sub42_sub19, -1)
+            return class348_sub42_sub19
+        }
+        i_7_ = boundsConstraintEntry.anInt5167 or 0x3fffc00
+        class348_sub42_sub19 = (ChatCommandProcessor.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-107).toByte()) as MinimapAreaMarkerNode?)
+        if (class348_sub42_sub19 != null) return class348_sub42_sub19
+        `is` = (CameraNodeList.aJs5Archive_1743!!.method415(73.toByte(), CameraNodeList.aJs5Archive_1743!!.method423(i_7_, 104.toByte())))
+        if (`is` != null) {
+            if (`is`.size <= 1) return null
+            try {
+                class348_sub42_sub19 = SceneEntityModel.method2502(`is`, -110)
+            } catch (exception: Exception) {
+                throw RuntimeException(exception.message + " S: " + i_7_)
+            }
+            class348_sub42_sub19!!.aBoundsConstraintEntry_9691 = boundsConstraintEntry
+            ChatCommandProcessor.aCacheLruCache_4036!!.method2305(i_7_.toLong() shl 16, class348_sub42_sub19, -1)
+            return class348_sub42_sub19
+        }
+        if (i_6_ != 96837648) return null
+        return null
+    }
+    var aCacheLruCache_4036: CacheLruCache? = CacheLruCache(128)
 
     private fun method702(i: Int) {
         val class46 = method2570(1512932720, i)
@@ -1230,7 +1288,7 @@ object ChatCommandProcessor {
                 i_138_ -= RegionMapDecoder.regionTileY
                 if (i_138_ < 0) i_138_ = 0
                 else if (i_138_ >= RangeThresholdTextureNode.anInt9109) i_138_ = RangeThresholdTextureNode.anInt9109
-                HslColorTableNode.anInt6633 = (i_137_ shl 9) + 256
+                OpenGlRenderer.anInt6633 = (i_137_ shl 9) + 256
                 RegionTileNode.anInt6652 = (i_138_ shl 9) + 256
                 WeaveTextureNode.anInt9282 = 4
                 SequencedWallEntity.anInt10163 = -1
@@ -1295,7 +1353,7 @@ object ChatCommandProcessor {
             if (i == 5602) {
                 if (NpcDefinition.anInt2955 == 0) {
                     GlRectangleTexture.anInt1645 = -2
-                    HslColorTableNode.anInt6634 = -2
+                    Client.anInt6634 = -2
                 }
                 return
             }
@@ -1321,7 +1379,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5607) {
-                anIntArray1149!![anInt1173++] = HslColorTableNode.anInt6634
+                anIntArray1149!![anInt1173++] = Client.anInt6634
                 return
             }
             if (i == 5608) {
@@ -1350,7 +1408,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5613) {
-                anIntArray1149!![anInt1173++] = HslColorTableNode.anInt6634
+                anIntArray1149!![anInt1173++] = Client.anInt6634
                 return
             }
             if (i == 5615) {
@@ -2271,7 +2329,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 6903) {
-                    anIntArray1149!![anInt1173++] = ImageFrameCache.anInt4026
+                    anIntArray1149!![anInt1173++] = SceneNodeDeque.anInt4026
                     return
                 }
                 if (i == 6904) {
@@ -2296,7 +2354,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 6908) {
-                    anIntArray1149!![anInt1173++] = HslColorTableNode.anInt6632
+                    anIntArray1149!![anInt1173++] = SceneNodeDeque.anInt6632
                     return
                 }
                 if (i == 6909) {
@@ -3727,7 +3785,7 @@ object ChatCommandProcessor {
             } else if (i < 3200) {
                 if (i == 3100) {
                     val string = aStringArray1152!![--anInt1170]
-                    SpriteSheetCache.method1429(string, 0)
+                    method1429(string, 0)
                     return
                 }
                 if (i == 3101) {
@@ -3892,7 +3950,7 @@ object ChatCommandProcessor {
                     anInt1173 -= 2
                     val i_317_ = anIntArray1149!![anInt1173]
                     val i_318_ = anIntArray1149!![anInt1173 + 1]
-                    anIntArray1149!![anInt1173++] = ImageFrameCache.method2552(false, i_317_, i_318_, -24667)
+                    anIntArray1149!![anInt1173++] = method2552(false, i_317_, i_318_, -24667)
                     return
                 }
                 if (i == 3302) {
@@ -3959,7 +4017,7 @@ object ChatCommandProcessor {
                     anInt1173 -= 2
                     val i_333_ = anIntArray1149!![anInt1173]
                     val i_334_ = anIntArray1149!![anInt1173 + 1]
-                    anIntArray1149!![anInt1173++] = ImageFrameCache.method2552(true, i_333_, i_334_, -24667)
+                    anIntArray1149!![anInt1173++] = method2552(true, i_333_, i_334_, -24667)
                     return
                 }
                 if (i == 3314) {
@@ -5388,4 +5446,46 @@ object ChatCommandProcessor {
         SpriteMaskShape.aFontMetaRef_9553 = null
         ChatCommandProcessor.aString9554 = null
     }
+    var anInt2560: Int = 0
+    fun method1429(string: String?, i: Int) {
+        FixedFunctionMaterialPass.method2144("", i, (-125).toByte(), 0, string, "", "")
+        anInt2560++
+    }
+
+
+    var anInt7044: Int = 0
+    fun method3038(i: Int) {
+        anInt7044++
+        var i_0_ = 0
+        if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) == 1) {
+            i_0_ = i_0_ or 0x1
+            i_0_ = i_0_ or 0x10
+            i_0_ = i_0_ or 0x20
+            i_0_ = i_0_ or 0x2
+            i_0_ = i_0_ or 0x4
+        }
+        if ((IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350).inv()) == i) i_0_ = i_0_ or 0x40
+        method2420(i_0_, i)
+        GradientLookupEffect.aSeqDefinitionCache_9195!!.method2009(i_0_, 109.toByte())
+        ClientException.aModelHeaderCache_112!!.method1942(i_0_, (-125).toByte())
+        MapAreaDefinition.aBufferedMessageQueue_2529!!.method2073(-25032, i_0_)
+        ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2541(119, i_0_)
+        method3535(i_0_, i.inv())
+        NormalMapGenerator.method2040(i_0_, true)
+        CollisionFlagQuery.method720(i_0_, i + 1227)
+        method1750(14056, i_0_)
+        TextureTileRenderer.method2953((-106).toByte())
+    }
+
+    var anInt4023: Int = 0
+
+    fun method2552(bool: Boolean, i: Int, i_0_: Int, i_1_: Int): Int {
+        anInt4023++
+        val class348_sub13 = method1974(4.toByte(), i, bool)
+        if (class348_sub13 == null) return -1
+        if (i_0_ < 0 || i_0_ >= class348_sub13.anIntArray6757!!.size) return -1
+        return class348_sub13.anIntArray6757!![i_0_]
+    }
+
+
 }

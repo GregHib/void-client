@@ -39,7 +39,7 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
             val i_2_ = i_1_ shr 12
             val i_3_ = 1 + i_2_
             var i_4_ = 0
-            while_140_@ while ( /**/DisplaceTextureNode.Companion.anInt9139 > i_4_) {
+            while_140_@ while ( /**/ClampTextureNode.Companion.anInt9139 > i_4_) {
                 GlArrayBufferObject.anInt4715 = 2147483647
                 HintArrowOrMessage.anInt2023 = GlArrayBufferObject.anInt4715
                 GameDisplayManager.anInt2835 = HintArrowOrMessage.anInt2023

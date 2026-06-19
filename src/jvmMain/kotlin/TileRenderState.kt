@@ -28,7 +28,6 @@ class TileRenderState {
     }
 
     companion object {
-        var aClass348_Sub24_4226: ClientGameLoopNode? = ClientGameLoopNode(0, 0)
         var anInt4227: Int = 0
         @JvmField
         var anInt4228: Int = 0
@@ -66,7 +65,7 @@ class TileRenderState {
         @JvmStatic
         fun method2677(i: Int) {
             anIntArrayArray4233 = null
-            aClass348_Sub24_4226 = null
+            ImageFrameCache.aClass348_Sub24_4226 = null
             if (i >= 93) {
                 aAbstractModelRendererArray4234 = null
                 aModelDefinitionArray4236s = null

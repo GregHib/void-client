@@ -1,5 +1,5 @@
 import ShadowQualityOptionState.Companion.method1791
-import AbstractProceduralTextureNode.Companion.method3038
+import ChatCommandProcessor.method3038
 import SceneObjectSpawner.Companion.method773
 
 /*

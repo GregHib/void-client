@@ -18,9 +18,9 @@ class TextureMapImageNode : AbstractProceduralTextureNode(0, false) {
             val is_2_ = `is`[0]!!
             val is_3_ = `is`[1]!!
             val is_4_ = `is`[2]!!
-            if (DisplaceTextureNode.Companion.anInt9139 == anInt9374) {
+            if (ClampTextureNode.Companion.anInt9139 == anInt9374) {
                 var i_8_ = 0
-                while ((DisplaceTextureNode.Companion.anInt9139 > i_8_)) {
+                while ((ClampTextureNode.Companion.anInt9139 > i_8_)) {
                     val i_9_ = anIntArray9375!![i_1_++]
                     is_4_[i_8_] = WhirlpoolHash.method1166(255, i_9_) shl 4
                     is_3_[i_8_] = WhirlpoolHash.method1166(i_9_ shr 4, 4080)
@@ -28,8 +28,8 @@ class TextureMapImageNode : AbstractProceduralTextureNode(0, false) {
                     i_8_++
                 }
             } else {
-                for (i_5_ in 0..<DisplaceTextureNode.Companion.anInt9139) {
-                    val i_6_: Int = anInt9374 * i_5_ / DisplaceTextureNode.Companion.anInt9139
+                for (i_5_ in 0..<ClampTextureNode.Companion.anInt9139) {
+                    val i_6_: Int = anInt9374 * i_5_ / ClampTextureNode.Companion.anInt9139
                     val i_7_ = anIntArray9375!![i_6_ + i_1_]
                     is_4_[i_5_] = WhirlpoolHash.method1166(i_7_, 255) shl 4
                     is_3_[i_5_] = WhirlpoolHash.method1166(65280, i_7_) shr 4

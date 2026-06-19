@@ -111,7 +111,7 @@ class CurveTextureNode : AbstractProceduralTextureNode(1, true) {
         if (i_33_ != 255) anIntArray9214 = null
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_34_ = this.method3048(i, 633706337, 0)!!
-            for (i_35_ in 0..<DisplaceTextureNode.Companion.anInt9139) {
+            for (i_35_ in 0..<ClampTextureNode.Companion.anInt9139) {
                 var i_36_ = is_34_[i_35_] shr 4
                 if (i_36_ < 0) i_36_ = 0
                 if (i_36_ > 256) i_36_ = 256

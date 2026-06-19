@@ -778,16 +778,16 @@ class NpcType {
         @JvmStatic
         fun method797(i: Int, i_29_: Int, i_30_: Byte) {
             anInt1379++
-            if (DisplaceTextureNode.anInt9139 != i_29_) {
+            if (ClampTextureNode.anInt9139 != i_29_) {
                 SceneEffectMarker.anIntArray6432 = IntArray(i_29_)
                 for (i_31_ in 0..<i_29_) SceneEffectMarker.anIntArray6432!![i_31_] = (i_31_ shl 12) / i_29_
                 SimpleBinaryOptionState.anInt6076 = i_29_ + -1
-                DisplaceTextureNode.anInt9139 = i_29_
+                ClampTextureNode.anInt9139 = i_29_
                 MediaStreamClient.anInt3201 = 32 * i_29_
             }
             if (i_30_ <= 108) aClient1367 = null
             if (FixedFunctionMaterialPass.anInt6212 != i) {
-                if (DisplaceTextureNode.anInt9139 != i) {
+                if (ClampTextureNode.anInt9139 != i) {
                     LightDetailOptionState.anIntArray6035 = IntArray(i)
                     for (i_32_ in 0..<i) LightDetailOptionState.anIntArray6035!![i_32_] = (i_32_ shl 12) / i
                 } else LightDetailOptionState.anIntArray6035 = SceneEffectMarker.anIntArray6432

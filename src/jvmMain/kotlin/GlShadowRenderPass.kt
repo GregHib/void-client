@@ -26,7 +26,7 @@ class GlShadowRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
             this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aTrigLookupTables_8503)
             val class101_sub2 = this.aHa_Sub3_4479.method3820(false)
             class101_sub2.method926(i + -30891, this.aHa_Sub3_4479.method3854((-44).toByte()))
-            this.aHa_Sub3_4479.method3853(i xor 0x3b47.inv(), ClampTextureNode.aConfigFlagUtil_9477)
+            this.aHa_Sub3_4479.method3853(i xor 0x3b47.inv(), GlCubemapLightPass.aConfigFlagUtil_9477)
             this.aHa_Sub3_4479.method3897(0, -4382)
             aBoolean7385 = true
         } else this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aTrigLookupTables_8503)

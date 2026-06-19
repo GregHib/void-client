@@ -31,7 +31,7 @@ object RegionMapDecoder {
         val bool = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 156) == 1
         val i_2_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(i + -172)
         WidgetRedrawTracker.anInt3931 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-112).toByte())
-        ImageFrameCache.method2554((-45).toByte())
+        ColourKeyTextureNode.method2554((-45).toByte())
         method3111(125, i_0_)
         CircleRasterizer.aClass348_Sub49_Sub2_3813!!.startBitAccess(-122)
         for (i_3_ in 0..3) {
@@ -56,7 +56,7 @@ object RegionMapDecoder {
             for (i_9_ in 0..3) BrightnessOptionState.anIntArrayArray5894!![i_8_]!![i_9_] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
             i_8_++
         }
-        ImageFrameCache.anIntArray4031 = null
+        AbstractCameraTransformStatics.anIntArray4031 = null
         GameAppletFrame.anIntArray38 = IntArray(i_7_)
         RenderNodeStatics.anIntArray9724 = IntArray(i_7_)
         NativeSprite.anIntArray5192 = IntArray(i_7_)
