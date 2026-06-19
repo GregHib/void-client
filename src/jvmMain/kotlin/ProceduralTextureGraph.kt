@@ -1,4 +1,3 @@
-import HashTableContainer.Companion.method3031
 import NpcType.Companion.method797
 
 /* Class348_Sub42_Sub5 - Decompiled by JODE
@@ -323,6 +322,26 @@ class ProceduralTextureGraph : HashLinkedListNode {
 
         init {
             aFontMetaRef_9533 = FontMetaRef(57, 3)
+        }
+
+
+        var anInt6996: Int = 0
+        fun method3031(i: Int, class348_sub49: ByteBuffer): AbstractProceduralTextureNode? {
+            anInt6996++
+            class348_sub49.readUnsignedByte(255)
+            val i_0_ = class348_sub49.readUnsignedByte(255)
+            val class348_sub40 = ScrollingNoiseTexture.method557(i_0_, (-84).toByte())
+            class348_sub40!!.anInt7036 = class348_sub49.readUnsignedByte(255)
+            val i_1_ = class348_sub49.readUnsignedByte(255)
+            if (i < 123) return null
+            var i_2_ = 0
+            while (i_1_ > i_2_) {
+                val i_3_ = class348_sub49.readUnsignedByte(255)
+                class348_sub40.method3049(class348_sub49, i_3_, 31015)
+                i_2_++
+            }
+            class348_sub40.method3044(120)
+            return class348_sub40
         }
     }
 }

@@ -324,8 +324,6 @@ class WidgetDefinition {
         var anInt243: Int = 0
         @JvmField
         var anInt246: Int = 0
-        @JvmField
-        var aBoolean247: Boolean = false
         var aIntRange_250: IntRange? = IntRange(4, 1)
         @JvmField
         var anSpriteDrawTarget_252: SpriteDrawTarget? = null

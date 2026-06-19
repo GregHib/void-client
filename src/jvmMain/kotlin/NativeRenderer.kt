@@ -2768,8 +2768,6 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         @JvmField
         var anInt8013: Int = 0
         @JvmField
-        var anInt8015: Int = 0
-        @JvmField
         var anInt8016: Int = 0
         @JvmField
         var anInt8017: Int = 0
@@ -2946,18 +2944,6 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             if (i <= 99) anInt8045 = -72
         }
 
-        @JvmStatic
-        fun method3873(`is`: ByteArray?, i: Int): ByteArray {
-            try {
-                anInt8015++
-                val i_127_ = `is`!!.size
-                val is_128_ = ByteArray(i_127_)
-                ArrayCopyUtil.method1577(`is`, i, is_128_, 0, i_127_)
-                return is_128_
-            } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("wga.GI(" + (if (`is` != null) "{...}" else "null") + ',' + i + ')'))
-            }
-        }
 
         @JvmStatic
         fun method3886(i: Int) {
@@ -2972,8 +2958,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 try {
                     anInt8028++
                     AbstractModel.aHuffmanCodec_1131 = huffmanCodec
-                    if (i.toInt() == 13) break
-                    method3873(null, -3)
+                    break
                 } catch (runtimeexception: RuntimeException) {
                     throw TextureLoadException.method2929(runtimeexception, ("wga.DI(" + (if (huffmanCodec != null) "{...}" else "null") + ',' + i + ')'))
                 }

@@ -18,7 +18,7 @@ object ItemActionPacketSender {
     @JvmStatic
     fun method1237(i: Byte, widgetComponent: WidgetComponent) {
         anInt2108++
-        if (i < 69) ItemActionPacketSender.method1236((-52).toByte())
+        if (i < 69) method1236((-52).toByte())
         if (RenderNodeStatics.aBoolean9722) {
             HuffmanCodec.anInt3775++
             if (widgetComponent.anObjectArray679 != null) {
@@ -31,7 +31,7 @@ object ItemActionPacketSender {
                     method705(class348_sub36)
                 }
             }
-            val class348_sub47 = method2148(ByteStore.aFontMetaRef_4266, TheoraVideoStream.aIsaacCipher_9029, -120)
+            val class348_sub47 = method2148(aFontMetaRef_4266, TheoraVideoStream.aIsaacCipher_9029, -120)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(100.toByte(), widgetComponent.anInt830)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-123, NativeLibraryState.anInt169)
@@ -41,4 +41,5 @@ object ItemActionPacketSender {
             InterfaceComponentGroup.method3243(-89, class348_sub47)
         }
     }
+    var aFontMetaRef_4266: FontMetaRef? = FontMetaRef(72, 16)
 }

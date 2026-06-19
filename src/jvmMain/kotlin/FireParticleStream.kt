@@ -199,13 +199,13 @@ class FireParticleStream : OutputStream() {
             if (CompiledScriptCache.anObject4366 == null) {
                 val class59_sub1_sub1 = ScrollingNoiseTexture()
                 val `is` = class59_sub1_sub1.method559(128, 128, 106.toByte(), 16)
-                CompiledScriptCache.anObject4366 = GrowableStringList.method1357(`is`, false, 111.toByte())
+                CompiledScriptCache.anObject4366 = Js5Archive.method1357(`is`, false, 111.toByte())
             }
             anInt92++
             if (BoxedIntHolder.anObject2969 == null) {
                 val class59_sub2_sub2 = CompositeRgbNoiseTexture()
                 val `is` = class59_sub2_sub2.method571(128, (-38).toByte(), 16, 128)
-                BoxedIntHolder.anObject2969 = GrowableStringList.method1357(`is`, false, 106.toByte())
+                BoxedIntHolder.anObject2969 = Js5Archive.method1357(`is`, false, 106.toByte())
             }
         }
 

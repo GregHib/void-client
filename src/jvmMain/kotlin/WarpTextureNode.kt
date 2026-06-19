@@ -15,7 +15,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
             var i_6_ = 0
             while ((DisplaceTextureNode.Companion.anInt9139 > i_6_)) {
                 method3139(i_6_, i, (-31).toByte())
-                val is_7_ = this.method3039(43.toByte(), ByteStore.anInt4265, 0)!!
+                val is_7_ = this.method3039(43.toByte(), anInt4265, 0)!!
                 is_3_[i_6_] = is_7_[0]!![MinimapFlagRenderer.anInt1796]
                 is_4_[i_6_] = is_7_[1]!![MinimapFlagRenderer.anInt1796]
                 is_5_[i_6_] = is_7_[2]!![MinimapFlagRenderer.anInt1796]
@@ -33,7 +33,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
             var i_9_ = 0
             while ((i_9_ < DisplaceTextureNode.Companion.anInt9139)) {
                 method3139(i_9_, i, (-31).toByte())
-                val is_10_ = this.method3048(ByteStore.anInt4265, i_8_ xor 0x25c5979e, 0)!!
+                val is_10_ = this.method3048(anInt4265, i_8_ xor 0x25c5979e, 0)!!
                 `is`[i_9_] = is_10_[MinimapFlagRenderer.anInt1796]
                 i_9_++
             }
@@ -54,7 +54,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
         if (i_13_.toInt() != -31) method3139(-44, -111, 48.toByte())
         val f = atan2((i_14_ + -2048).toDouble(), (i_15_ + -2048).toDouble()).toFloat()
         if (f.toDouble() >= -3.141592653589793 && f.toDouble() <= -2.356194490192345) {
-            ByteStore.anInt4265 = i_12_
+            anInt4265 = i_12_
             MinimapFlagRenderer.anInt1796 = i
         } else if (!(f.toDouble() <= -1.5707963267948966) || !(f.toDouble() >= -2.356194490192345)) {
             if (!(f.toDouble() <= -0.7853981633974483) || !(f.toDouble() >= -1.5707963267948966)) {
@@ -62,33 +62,33 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
                     if (!(f >= 0.0f) || !(f.toDouble() <= 0.7853981633974483)) {
                         if (!(f.toDouble() >= 0.7853981633974483) || !(f.toDouble() <= 1.5707963267948966)) {
                             if (f.toDouble() >= 1.5707963267948966 && f.toDouble() <= 2.356194490192345) {
-                                ByteStore.anInt4265 = FixedFunctionMaterialPass.anInt6212 + -i
+                                anInt4265 = FixedFunctionMaterialPass.anInt6212 + -i
                                 MinimapFlagRenderer.anInt1796 = i_12_
                             } else if (f.toDouble() >= 2.356194490192345 && f.toDouble() <= 3.141592653589793) {
-                                ByteStore.anInt4265 = i_12_
+                                anInt4265 = i_12_
                                 MinimapFlagRenderer.anInt1796 = -i + DisplaceTextureNode.Companion.anInt9139
                             }
                         } else {
                             MinimapFlagRenderer.anInt1796 = -i_12_ + DisplaceTextureNode.Companion.anInt9139
-                            ByteStore.anInt4265 = -i + FixedFunctionMaterialPass.anInt6212
+                            anInt4265 = -i + FixedFunctionMaterialPass.anInt6212
                         }
                     } else {
                         MinimapFlagRenderer.anInt1796 = -i + DisplaceTextureNode.Companion.anInt9139
-                        ByteStore.anInt4265 = -i_12_ + FixedFunctionMaterialPass.anInt6212
+                        anInt4265 = -i_12_ + FixedFunctionMaterialPass.anInt6212
                     }
                 } else {
                     MinimapFlagRenderer.anInt1796 = i
-                    ByteStore.anInt4265 = FixedFunctionMaterialPass.anInt6212 - i_12_
+                    anInt4265 = FixedFunctionMaterialPass.anInt6212 - i_12_
                 }
             } else {
                 MinimapFlagRenderer.anInt1796 = DisplaceTextureNode.Companion.anInt9139 - i_12_
-                ByteStore.anInt4265 = i
+                anInt4265 = i
             }
         } else {
-            ByteStore.anInt4265 = i
+            anInt4265 = i
             MinimapFlagRenderer.anInt1796 = i_12_
         }
-        ByteStore.anInt4265 = ByteStore.anInt4265 and TextureCubeProvider.anInt6325
+        anInt4265 = anInt4265 and TextureCubeProvider.anInt6325
         MinimapFlagRenderer.anInt1796 = MinimapFlagRenderer.anInt1796 and SimpleBinaryOptionState.anInt6076
     }
 
@@ -126,5 +126,6 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
             aWidgetComponentArrayArray9427 = null
             val i_1_ = 93 % ((-58 - i) / 55)
         }
+        var anInt4265: Int = 0
     }
 }

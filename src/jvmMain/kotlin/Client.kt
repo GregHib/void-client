@@ -284,7 +284,6 @@ import TileRenderState.Companion.method2676
 import TileRenderState.Companion.method2677
 import TileRenderState.Companion.method2678
 import WidgetRedrawRegion.Companion.method2682
-import ByteStore.Companion.method2690
 import ParticleProcessor.Companion.method2693
 import AwtKeyboardListener.Companion.method2705
 import DragDropController.Companion.method2707
@@ -971,7 +970,7 @@ class Client : GameAppletFrame() {
         ModelDataCache.method296((-99).toByte())
         method176(-1)
         IntHashSetStatics.method2366(true)
-        method2690(-124)
+        SpriteMaskShape.method2690(-124)
         method1551()
         TerrainChunkBuilder.method370(true)
         method3202(79.toByte())
@@ -1305,7 +1304,7 @@ class Client : GameAppletFrame() {
                 ChatCommandProcessor.anInt6967 = 0
             }
             val string = this.getParameter("objecttag")
-            HashTableContainer.aBoolean6997 = string != null && string == "1"
+            aBoolean6997 = string != null && string == "1"
             val string_24_ = this.getParameter("js")
             RegionSceneLoader.aBoolean3697 = string_24_ != null && string_24_ == "1"
             val string_25_ = this.getParameter("advert")
@@ -1965,7 +1964,7 @@ class Client : GameAppletFrame() {
                             else OggMediaStream.method518("language", (-128).toByte())
                         } else ChatCommandProcessor.anInt6967 = 0
                     }
-                    HashTableContainer.aBoolean6997 = false
+                    aBoolean6997 = false
                     RegionSceneLoader.aBoolean3697 = false
                     if (strings[5] != "game0") {
                         if (strings[5] != "game1") {
@@ -2656,5 +2655,6 @@ class Client : GameAppletFrame() {
                 }
             }
         }
+        var aBoolean6997: Boolean = false
     }
 }

@@ -1,4 +1,3 @@
-import GrowableStringList.Companion.method1359
 
 /* Class194 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -86,6 +85,12 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
         fun method1441(i: Byte) {
             aSoundChannelMixer_2596 = null
             if (i.toInt() != 18) aSoundChannelMixer_2596 = null
+        }
+
+        var anInt2368: Int = 0
+        fun method1359(bool: Boolean, i: Int): Int {
+            anInt2368++
+            return i ushr 10
         }
     }
 }

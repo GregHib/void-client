@@ -13,7 +13,6 @@ class NioByteStore : ByteStore() {
 
     override fun method2692(i: Int): ByteArray {
         val `is` = ByteArray(aByteBuffer6524!!.capacity())
-        if (i != -3672) method2692(78)
         aByteBuffer6524!!.position(0)
         aByteBuffer6524!!.get(`is`)
         return `is`
@@ -22,7 +21,6 @@ class NioByteStore : ByteStore() {
     override fun method2691(i: Byte, `is`: ByteArray) {
         aByteBuffer6524 = ByteBuffer.allocateDirect(`is`.size)
         aByteBuffer6524!!.position(0)
-        if (i.toInt() != 62) method2692(73)
         aByteBuffer6524!!.put(`is`)
     }
 }

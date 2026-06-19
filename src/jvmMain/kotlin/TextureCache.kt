@@ -56,58 +56,11 @@ class TextureCache internal constructor(var_ha_Sub2: OpenGlRenderer?, var_render
     companion object {
         var anInt4352: Int = 0
         var anInt4353: Int = 0
-        var anInt4354: Int = 0
         var anIntArrayArrayArray4356: Array<Array<IntArray?>?>? = null
         var anInt4357: Int = 0
         var anInt4358: Int = 0
         var anInt4360: Int = 0
-        fun method3464(c: Char, bool: Boolean): Byte {
-            anInt4354++
-            if (bool != false) method3464('\uffe1', false)
-            val i: Byte
-            if ((c.code <= 0 || c.code >= 128) && (c.code < 160 || c.code > 255)) {
-                if (c.code != 8364) {
-                    if (c.code != 8218) {
-                        if (c.code == 402) i = (-125).toByte()
-                        else if (c.code == 8222) i = (-124).toByte()
-                        else if (c.code == 8230) i = (-123).toByte()
-                        else if (c.code == 8224) i = (-122).toByte()
-                        else if (c.code == 8225) i = (-121).toByte()
-                        else if (c.code != 710) {
-                            if (c.code == 8240) i = (-119).toByte()
-                            else if (c.code == 352) i = (-118).toByte()
-                            else if (c.code == 8249) i = (-117).toByte()
-                            else if (c.code == 338) i = (-116).toByte()
-                            else if (c.code != 381) {
-                                if (c.code != 8216) {
-                                    if (c.code == 8217) i = (-110).toByte()
-                                    else if (c.code != 8220) {
-                                        if (c.code != 8221) {
-                                            if (c.code == 8226) i = (-107).toByte()
-                                            else if (c.code != 8211) {
-                                                if (c.code != 8212) {
-                                                    if (c.code == 732) i = (-104).toByte()
-                                                    else if (c.code == 8482) i = (-103).toByte()
-                                                    else if (c.code == 353) i = (-102).toByte()
-                                                    else if (c.code != 8250) {
-                                                        if (c.code != 339) {
-                                                            if (c.code == 382) i = (-98).toByte()
-                                                            else if (c.code == 376) i = (-97).toByte()
-                                                            else i = 63.toByte()
-                                                        } else i = (-100).toByte()
-                                                    } else i = (-101).toByte()
-                                                } else i = (-105).toByte()
-                                            } else i = (-106).toByte()
-                                        } else i = (-108).toByte()
-                                    } else i = (-109).toByte()
-                                } else i = (-111).toByte()
-                            } else i = (-114).toByte()
-                        } else i = (-120).toByte()
-                    } else i = (-126).toByte()
-                } else i = (-128).toByte()
-            } else i = c.code.toByte()
-            return i
-        }
+
 
         fun method3465(i: Int, i_0_: Int, mapTileShape: MapTileShape): Boolean {
             anInt4358++

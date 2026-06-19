@@ -1,6 +1,5 @@
 import ObjectByteSerializerHolder.Companion.method1331
-import GrowableStringList.Companion.method1357
-import MinimapSquareDrawer.Companion.method461
+import Js5Archive.Companion.method461
 import SolidFillComponent.Companion.method194
 import kotlin.math.sqrt
 
@@ -27,7 +26,7 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
         if (this.anInterface18_Impl1_3455 == null) {
             if (NodeDequeStatics.anObject3331 == null) {
                 val `is` = method194(128, -1922, 8, 0.6f, 128, 4.0f, 4.0f, 0.5f, 16.0f, PerlinTextureProvider(419684), 16)
-                NodeDequeStatics.anObject3331 = method1357(`is`, false, 87.toByte())
+                NodeDequeStatics.anObject3331 = Js5Archive.method1357(`is`, false, 87.toByte())
             }
             val `is` = method461(false, NodeDequeStatics.anObject3331, 53146732)
             val is_0_ = ByteArray(4 * `is`!!.size)

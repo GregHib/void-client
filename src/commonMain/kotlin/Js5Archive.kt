@@ -1,4 +1,3 @@
-
 /* Class45 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -25,10 +24,10 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
             if (!method399(false)) return null
             string = string!!.lowercase()
             string_1_ = string_1_!!.lowercase()
-            val i_2_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+            val i_2_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, method2108(string, -29286))
             if (!method392(i_2_, (-40).toByte())) return null
             if (i != -29832) method392(22, 12.toByte())
-            val i_3_ = (aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_2_]!!.method2365(i xor 0x7486.inv(), ClanChatRequestSender.method2108(string_1_, -29286)))
+            val i_3_ = (aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_2_]!!.method2365(i xor 0x7486.inv(), method2108(string_1_, -29286)))
             return method410(-1860, i_2_, i_3_)
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("in.EA(" + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + i + ')'))
@@ -39,7 +38,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         anInt646++
         if (!method399(false)) return false
         if (i < 0 || aCutsceneSequenceData_629!!.anIntArray3724.size <= i || (aCutsceneSequenceData_629!!.anIntArray3724[i] == 0)) {
-            require(!GlBufferObject.aBoolean4741) { i.toString() }
+            require(!aBoolean4741) { i.toString() }
             return false
         }
         return i_4_.toInt() == -40
@@ -56,7 +55,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
                 if (!bool) return null
             }
         }
-        val is_7_ = MinimapSquareDrawer.method461(false, anObjectArrayArray664!![i]!![i_5_], 53146732)
+        val is_7_ = method461(false, anObjectArrayArray664!![i]!![i_5_], 53146732)
         if (this.anInt634 == 1) {
             anObjectArrayArray664!![i]!![i_5_] = null
             if (aCutsceneSequenceData_629!!.anIntArray3724[i] == 1) anObjectArrayArray664!![i] = null
@@ -86,9 +85,9 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         }
         if (bool) return true
         val is_14_: ByteArray
-        if (`is` == null || (`is`[0] == 0 && `is`[1] == 0 && `is`[2] == 0 && `is`[3] == 0)) is_14_ = MinimapSquareDrawer.method461(false, anObjectArray656!![i_9_], 53146732)!!
+        if (`is` == null || (`is`[0] == 0 && `is`[1] == 0 && `is`[2] == 0 && `is`[3] == 0)) is_14_ = method461(false, anObjectArray656!![i_9_], 53146732)!!
         else {
-            is_14_ = MinimapSquareDrawer.method461(true, anObjectArray656!![i_9_], 53146732)!!
+            is_14_ = method461(true, anObjectArray656!![i_9_], 53146732)!!
             val class348_sub49 = ByteBuffer(is_14_)
             class348_sub49.method3367(607818341, `is`, 5, (class348_sub49.aByteArray7154)!!.size)
         }
@@ -182,7 +181,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
                     if (is_11_ == null) i_29_ = i_28_
                     else i_29_ = is_11_[i_28_]
                     if (this.anInt634 != 0) objects[i_29_] = is_22_[i_28_]
-                    else objects[i_29_] = GrowableStringList.method1357(is_22_[i_28_], false, 126.toByte())
+                    else objects[i_29_] = method1357(is_22_[i_28_], false, 126.toByte())
                     i_28_++
                 }
             }
@@ -191,7 +190,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
             if (is_11_ != null) i_44_ = is_11_[0]
             else i_44_ = 0
             if (this.anInt634 != 0) objects[i_44_] = is_15_
-            else objects[i_44_] = GrowableStringList.method1357(is_15_, false, 104.toByte())
+            else objects[i_44_] = method1357(is_15_, false, 104.toByte())
         }
         return true
     }
@@ -213,7 +212,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         anInt633++
         if (!method399(false)) return 0
         string = string.lowercase()
-        val i_47_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, i xor 0x7265.inv()))
+        val i_47_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, method2108(string, i xor 0x7265.inv()))
         return method419(i, i_47_)
     }
 
@@ -253,7 +252,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         if (!method399(false)) return false
         if (i != -18308) return false
         string = string.lowercase()
-        val i_52_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+        val i_52_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, method2108(string, -29286))
         return i_52_ >= 0
     }
 
@@ -287,10 +286,10 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
             if (!method399(false)) return false
             string = string!!.lowercase()
             string_56_ = string_56_!!.lowercase()
-            val i_57_ = (aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(i xor 0x1c1a, ClanChatRequestSender.method2108(string, -29286)))
+            val i_57_ = (aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(i xor 0x1c1a, method2108(string, -29286)))
             if (i != 7195) method403(null, -20, null)
             if (!method392(i_57_, (-40).toByte())) return false
-            val i_58_ = aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_57_]!!.method2365(1, ClanChatRequestSender.method2108(string_56_, -29286))
+            val i_58_ = aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_57_]!!.method2365(1, method2108(string_56_, -29286))
             return method420(i + -17694, i_57_, i_58_)
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("in.Q(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (string_56_ != null) "{...}" else "null") + ')'))
@@ -322,7 +321,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
 
     private fun method406(i: Int, i_61_: Int) {
         if (i_61_ > -105) anObjectArrayArray664 = null
-        if (!aBoolean655) anObjectArray656!![i] = GrowableStringList.method1357(aResourceProvider_659!!.method2339(i, 73.toByte()), false, 123.toByte())
+        if (!aBoolean655) anObjectArray656!![i] = method1357(aResourceProvider_659!!.method2339(i, 73.toByte()), false, 123.toByte())
         else anObjectArray656!![i] = aResourceProvider_659!!.method2339(i, 12.toByte())
         anInt665++
     }
@@ -349,7 +348,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         anInt663++
         if (bool == true && method399(false)) {
             string = string.lowercase()
-            val i = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+            val i = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, method2108(string, -29286))
             method402((-86).toByte(), i)
         }
     }
@@ -385,7 +384,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         anInt636++
         if (!method399(false)) return false
         string = string.lowercase()
-        val i_69_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(i + -99, ClanChatRequestSender.method2108(string, -29286))
+        val i_69_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(i + -99, method2108(string, -29286))
         return method408((-120).toByte(), i_69_)
     }
 
@@ -420,7 +419,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         anInt654++
         if (!method399(false)) return -1
         string = string.lowercase()
-        val i_72_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+        val i_72_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, method2108(string, -29286))
         if (!method392(i_72_, (-40).toByte())) return -1
         return i_72_
     }
@@ -429,7 +428,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         anInt662++
         if (!method399(false)) return false
         if (i_74_ < i_73_ || i < 0 || (aCutsceneSequenceData_629!!.anIntArray3724.size <= i_74_) || (aCutsceneSequenceData_629!!.anIntArray3724[i_74_] <= i)) {
-            require(!GlBufferObject.aBoolean4741) { i_74_.toString() + "," + i }
+            require(!aBoolean4741) { i_74_.toString() + "," + i }
             return false
         }
         return true
@@ -471,9 +470,9 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
             if (!method399(false)) return false
             string_78_ = string_78_!!.lowercase()
             string = string!!.lowercase()
-            val i_79_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, ClanChatRequestSender.method2108(string_78_, -29286))
+            val i_79_ = aCutsceneSequenceData_629!!.aIntHashSet_3723!!.method2365(1, method2108(string_78_, -29286))
             if (i_79_ < 0) return false
-            val i_80_ = aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_79_]!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
+            val i_80_ = aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_79_]!!.method2365(1, method2108(string, -29286))
             return i_80_ >= 0
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("in.M(" + (if (string != null) "{...}" else "null") + ',' + (if (string_78_ != null) "{...}" else "null") + ',' + i + ')'))
@@ -569,5 +568,119 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         @JvmField
         var anInt669: Int = 0
 
+
+        var anInt3646: Int = 0
+        fun method2108(string: String, i: Int): Int {
+            anInt3646++
+            val i_2_ = string.length
+            var i_3_ = 0
+            var i_4_ = 0
+            while (i_2_ > i_4_) {
+                i_3_ = (method3464(string.get(i_4_), false) + ((i_3_ shl 5) - i_3_))
+                i_4_++
+            }
+            if (i != -29286) return 0
+            return i_3_
+        }
+
+        var anInt4354: Int = 0
+        fun method3464(c: Char, bool: Boolean): Byte {
+            anInt4354++
+            if (bool != false) method3464('\uffe1', false)
+            val i: Byte
+            if ((c.code <= 0 || c.code >= 128) && (c.code < 160 || c.code > 255)) {
+                if (c.code != 8364) {
+                    if (c.code != 8218) {
+                        if (c.code == 402) i = (-125).toByte()
+                        else if (c.code == 8222) i = (-124).toByte()
+                        else if (c.code == 8230) i = (-123).toByte()
+                        else if (c.code == 8224) i = (-122).toByte()
+                        else if (c.code == 8225) i = (-121).toByte()
+                        else if (c.code != 710) {
+                            if (c.code == 8240) i = (-119).toByte()
+                            else if (c.code == 352) i = (-118).toByte()
+                            else if (c.code == 8249) i = (-117).toByte()
+                            else if (c.code == 338) i = (-116).toByte()
+                            else if (c.code != 381) {
+                                if (c.code != 8216) {
+                                    if (c.code == 8217) i = (-110).toByte()
+                                    else if (c.code != 8220) {
+                                        if (c.code != 8221) {
+                                            if (c.code == 8226) i = (-107).toByte()
+                                            else if (c.code != 8211) {
+                                                if (c.code != 8212) {
+                                                    if (c.code == 732) i = (-104).toByte()
+                                                    else if (c.code == 8482) i = (-103).toByte()
+                                                    else if (c.code == 353) i = (-102).toByte()
+                                                    else if (c.code != 8250) {
+                                                        if (c.code != 339) {
+                                                            if (c.code == 382) i = (-98).toByte()
+                                                            else if (c.code == 376) i = (-97).toByte()
+                                                            else i = 63.toByte()
+                                                        } else i = (-100).toByte()
+                                                    } else i = (-101).toByte()
+                                                } else i = (-105).toByte()
+                                            } else i = (-106).toByte()
+                                        } else i = (-108).toByte()
+                                    } else i = (-109).toByte()
+                                } else i = (-111).toByte()
+                            } else i = (-114).toByte()
+                        } else i = (-120).toByte()
+                    } else i = (-126).toByte()
+                } else i = (-128).toByte()
+            } else i = c.code.toByte()
+            return i
+        }
+
+
+        var anInt5215: Int = 0
+        fun method461(bool: Boolean, `object`: Any?, i: Int): ByteArray? {
+            anInt5215++
+            if (`object` == null) return null
+            if (`object` is ByteArray) {
+                val `is` = `object`
+                if (bool) return method3873(`is`, 0)
+                return `is`
+            }
+            if (i != 53146732) return null
+            if (`object` is ByteStore) {
+                val class344 = `object`
+                return class344.method2692(-3672)
+            }
+            throw IllegalArgumentException()
+        }
+
+        var anInt8015: Int = 0
+        fun method3873(`is`: ByteArray?, i: Int): ByteArray {
+            try {
+                anInt8015++
+                val i_127_ = `is`!!.size
+                val is_128_ = ByteArray(i_127_)
+                ArrayCopyUtil.method1577(`is`, i, is_128_, 0, i_127_)
+                return is_128_
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("wga.GI(" + (if (`is` != null) "{...}" else "null") + ',' + i + ')'))
+            }
+        }
+        var aBoolean4741: Boolean = false
+
+
+        var anInt2363: Int = 0
+        var aBoolean247: Boolean = false
+        fun method1357(`is`: ByteArray?, bool: Boolean, i: Byte): Any? {
+            anInt2363++
+            if (`is` == null) return null
+            if (`is`.size > 136 && !aBoolean247) {
+                try {
+                    val byteStore = ByteStoreArray() // NioByteStore()
+                    byteStore.method2691(62.toByte(), `is`)
+                    return byteStore
+                } catch (throwable: Throwable) {
+                    aBoolean247 = true
+                }
+            }
+            if (bool) return method3873(`is`, 0)
+            return `is`
+        }
     }
 }

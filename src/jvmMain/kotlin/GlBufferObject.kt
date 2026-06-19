@@ -149,8 +149,6 @@ abstract class GlBufferObject internal constructor(var aGlRenderDevice_4759: GlR
         @JvmField
         var anInt4740: Int = 0
         @JvmField
-        var aBoolean4741: Boolean = false
-        @JvmField
         var anInt4742: Int = 0
         @JvmField
         var aClass348_Sub16_Sub3_4743: MidiSequencePlayer? = null

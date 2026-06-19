@@ -144,7 +144,7 @@ class VorbisOggDecoder internal constructor(oggstreamstate: OggStreamState) : Og
             if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) string_4_ = ":" + (7000 + i)
             var string_5_ = ""
             if (BloomGraphicsOptionState.aString5966 != null) string_5_ = "/p=" + BloomGraphicsOptionState.aString5966
-            val string_6_ = ("http://" + string + string_4_ + "/l=" + ChatCommandProcessor.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_5_ + "/j" + (if (!RegionSceneLoader.aBoolean3697) "0" else "1") + ",o" + (if (HashTableContainer.aBoolean6997) "1" else "0") + ",a2")
+            val string_6_ = ("http://" + string + string_4_ + "/l=" + ChatCommandProcessor.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_5_ + "/j" + (if (!RegionSceneLoader.aBoolean3697) "0" else "1") + ",o" + (if (Client.aBoolean6997) "1" else "0") + ",a2")
             try {
                 NpcType.aClient1367!!.showDocument(URL(string_6_), "_self")
                 if (i_3_ >= -17) aPrivilegedOperationWorker_8992 = null

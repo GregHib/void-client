@@ -528,7 +528,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             FogOptionState.anInt6048 = 2
                             JagGlToolkitFactory.anInt1534 = i_72_
                             CircleDrawer.anInt2689++
-                            val class348_sub47 = method2148(ByteStore.aFontMetaRef_4262, (TheoraVideoStream.aIsaacCipher_9029), -107)
+                            val class348_sub47 = method2148(aFontMetaRef_4262, (TheoraVideoStream.aIsaacCipher_9029), -107)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_74_ + ArbVertexProgram.regionTileX, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-107, i_77_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(NativeLibraryState.anInt169, 3.toByte())
@@ -747,7 +747,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             LinkedListNodeStatics.anInt4292 = 0
                             JagGlToolkitFactory.anInt1534 = i_72_
                             Client.anInt5187++
-                            val class348_sub47 = method2148(ByteStore.aFontMetaRef_4264, (TheoraVideoStream.aIsaacCipher_9029), -127)
+                            val class348_sub47 = method2148(aFontMetaRef_4264, (TheoraVideoStream.aIsaacCipher_9029), -127)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(ArbVertexProgram.regionTileX - -i_74_, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-85, HeightMapNoise.anInt3829)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(NativeLibraryState.anInt169, 3.toByte())
@@ -1001,6 +1001,14 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                 }
                 break
             } while (false)
+        }
+        var aFontMetaRef_4264: FontMetaRef? = FontMetaRef(40, 12)
+        var aFontMetaRef_4262: FontMetaRef? = FontMetaRef(34, 15)
+        fun method2690(i: Int) {
+            ItemActionPacketSender.aFontMetaRef_4266 = null
+            aFontMetaRef_4264 = null
+            aFontMetaRef_4262 = null
+            val i_2_ = -29 / ((i - -54) / 45)
         }
     }
 }

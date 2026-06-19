@@ -1,5 +1,4 @@
 import TextureCubeProvider.Companion.method2267
-import NativeRenderer.Companion.method3873
 
 /* Class50_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -38,8 +37,6 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
         @JvmField
         var anInt5211: Int = 0
         @JvmField
-        var anInt5215: Int = 0
-        @JvmField
         var anInt5216: Int = 0
         var aFontMetaRef_5217: FontMetaRef?
         @JvmField
@@ -67,22 +64,6 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
             aFontMetaRef_5217 = null
         }
 
-        @JvmStatic
-        fun method461(bool: Boolean, `object`: Any?, i: Int): ByteArray? {
-            anInt5215++
-            if (`object` == null) return null
-            if (`object` is ByteArray) {
-                val `is` = `object`
-                if (bool) return method3873(`is`, 0)
-                return `is`
-            }
-            if (i != 53146732) return null
-            if (`object` is ByteStore) {
-                val class344 = `object`
-                return class344.method2692(-3672)
-            }
-            throw IllegalArgumentException()
-        }
 
         @JvmStatic
         fun method462(i: Byte, i_20_: Int): Char {

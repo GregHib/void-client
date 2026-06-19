@@ -11,7 +11,10 @@ import TileSceneEntity.Companion.method2396
 import Font.Companion.method2570
 import KeyedCacheEntryReference.Companion.method3203
 import GlRenderDevice.Companion.method3965
+import GrowableStringList.Companion.anInt2361
 import InputStream_Sub2.Companion.method128
+import Js5Archive.Companion.method3873
+import MidiSequencePlayer.Companion.method2862
 import java.io.IOException
 
 class HardCacheEntryReference internal constructor(private val anObject10429: Any?, i: Int) : CacheEntryReference(i) {
@@ -1305,7 +1308,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 val `is` = ByteArray(RadialTextureNode.anInt9341)
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3409(RadialTextureNode.anInt9341, `is`, 0, -32769)
                 val string = ByteBuffer.method3546(`is`, 0, RadialTextureNode.anInt9341, 0)
-                GrowableStringList.method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, true, 99)
+                method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, true, 99)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1616,7 +1619,7 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
             }
             if (ModelVertexColorBuffer.aIntRange_6584 == ArchiveResourceProvider.aIntRange_6340) {
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 += 28
-                if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3352(-25541)) GrowableStringList.method1365((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + -28, (-126).toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813!!)
+                if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3352(-25541)) method1365((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + -28, (-126).toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813!!)
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -1797,5 +1800,50 @@ class HardCacheEntryReference internal constructor(private val anObject10429: An
                 aRgbColorPalette_10437 = null
             }
         }
+        var anInt2369: Int = 0
+        fun method1360(string: String?, privilegedOperationWorker: PrivilegedOperationWorker?, bool: Boolean, bool_3_: Boolean, i: Int) {
+            try {
+                anInt2369++
+                if (bool_3_) {
+                    if (PrivilegedOperationWorker.aString3803.startsWith("win") && privilegedOperationWorker!!.aBoolean3777) {
+                        var string_4_: String? = null
+                        if (JagGlToolkitFactory.anApplet1530 != null) string_4_ = JagGlToolkitFactory.anApplet1530!!.getParameter("haveie6")
+                        if (string_4_ == null || string_4_ != "1") {
+                            val class144 = method2862(privilegedOperationWorker, string, -117, 0)
+                            WallEntity.aLinkedQueueNode_8766 = class144
+                            RenderableGroup.aPrivilegedOperationWorker_5017 = privilegedOperationWorker
+                            CacheEntryReference.aString9554 = string
+                            return
+                        }
+                    }
+                    if (PrivilegedOperationWorker.aString3803.startsWith("mac")) {
+                        var string_5_: String? = null
+                        if (JagGlToolkitFactory.anApplet1530 != null) string_5_ = JagGlToolkitFactory.anApplet1530!!.getParameter("havefirefox")
+                        if (string_5_ != null && string_5_ == "1" && bool) {
+                            method2862(privilegedOperationWorker, string, 42, 1)
+                            return
+                        }
+                    }
+                    method2862(privilegedOperationWorker, string, 96, 2)
+                } else method2862(privilegedOperationWorker, string, -96, 3)
+                val i_6_ = -6 / ((i - 20) / 44)
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("bo.C(" + (if (string != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ',' + bool_3_ + ',' + i + ')'))
+            }
+        }
+
+        var anInt2355: Int = 0
+        fun method1365(i: Int, i_11_: Byte, class348_sub49: ByteBuffer) {
+            if (BufferedFileReader.aBufferedRandomAccessFile_4538 != null) {
+                try {
+                    BufferedFileReader.aBufferedRandomAccessFile_4538!!.method789(0L, 59.toByte())
+                    BufferedFileReader.aBufferedRandomAccessFile_4538!!.method783(i, 24, true, (class348_sub49.aByteArray7154))
+                } catch (exception: Exception) {
+                    /* empty */
+                }
+            }
+            anInt2355++
+        }
+
     }
 }

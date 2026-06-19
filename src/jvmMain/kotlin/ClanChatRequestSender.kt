@@ -6,7 +6,6 @@ import ProjectileSpawner.method1478
 object ClanChatRequestSender {
     var aFontMetaRef_3644: FontMetaRef? = FontMetaRef(42, 8)
     var anInt3645: Int = 0
-    var anInt3646: Int = 0
     @JvmField
     var anInt3647: Int = 0
     @JvmField
@@ -43,18 +42,5 @@ object ClanChatRequestSender {
         aFontDefinition_3649 = null
         aFontMetaRef_3644 = null
         if (i.toInt() != 77) ClanChatRequestSender.method2107((-107).toByte())
-    }
-
-    fun method2108(string: String, i: Int): Int {
-        anInt3646++
-        val i_2_ = string.length
-        var i_3_ = 0
-        var i_4_ = 0
-        while (i_2_ > i_4_) {
-            i_3_ = (TextureCache.method3464(string.get(i_4_), false) + ((i_3_ shl 5) - i_3_))
-            i_4_++
-        }
-        if (i != -29286) return 0
-        return i_3_
     }
 }

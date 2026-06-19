@@ -1,4 +1,7 @@
-import MinimapSquareDrawer.Companion.method461
+import GrowableStringList.Companion.anInt2361
+import Js5Archive.Companion.method3873
+import Js5Archive.Companion.method461
+import SolidFillComponent.Companion.method194
 
 /* Class83 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -13,7 +16,7 @@ class WaterTextureSet internal constructor(var_ha_Sub2: OpenGlRenderer) {
 
     init {
         this.aBoolean1442 = var_ha_Sub2.aBoolean7831
-        HashTableContainer.method3030(8, var_ha_Sub2)
+        method3030(8, var_ha_Sub2)
         if (this.aBoolean1442) {
             var `is` = method461(false, GlShaderProgramHandle.anObject4177, 53146732)
             this.aClass258_Sub1_1440 = GlTexture3D(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)
@@ -56,5 +59,26 @@ class WaterTextureSet internal constructor(var_ha_Sub2: OpenGlRenderer) {
             if (bool != false) method815(true)
             aStringArray1441 = null
         }
+
+        var anInt6999: Int = 0
+        fun method3030(i: Int, var_ha_Sub2: OpenGlRenderer) {
+            anInt6999++
+            if (GlShaderProgramHandle.anObject4177 == null) {
+                val class59_sub1_sub2 = StaticNoiseTexture()
+                val `is` = class59_sub1_sub2.method562(128, 128, 121.toByte(), 16)
+                GlShaderProgramHandle.anObject4177 = Js5Archive.method1357(`is`, false, 81.toByte())
+            }
+            if (MapElementDefinitionCache.anObject3985 == null) {
+                val class59_sub2_sub1 = CachedRgbNoiseTexture()
+                val `is` = class59_sub2_sub1.method567(128, 111.toByte(), 16, 128)
+                MapElementDefinitionCache.anObject3985 = Js5Archive.method1357(`is`, false, 103.toByte())
+            }
+            val class188 = var_ha_Sub2.aGlowPostProcessor_7736
+            if (class188!!.method1414(35632) && WorldMapTextLabel.anObject8592 == null) {
+                val `is` = method194(128, -1922, 8, 0.6f, 128, 4.0f, 4.0f, 0.5f, 16.0f, PerlinTextureProvider(419684), 16)
+                WorldMapTextLabel.anObject8592 = Js5Archive.method1357(`is`, false, 78.toByte())
+            }
+        }
+
     }
 }
