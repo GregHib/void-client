@@ -32,7 +32,7 @@ import TileSceneEntity.Companion.method2396
 import SceneObjectEntity.Companion.method2405
 import ConfigArchiveLoader.Companion.method2478
 import WallEntity.Companion.method2487
-import Font.Companion.method2570
+import RSFont.Companion.method2570
 import MidiSequencePlayer.Companion.method2839
 import ParticleTileShape.Companion.method2732
 import VorbisOggDecoder.Companion.method2972
