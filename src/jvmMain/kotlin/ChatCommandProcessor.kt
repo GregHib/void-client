@@ -67,7 +67,7 @@ import ChatCommandProcessor.method606
 import ChatCommandProcessor.aString9554
 import MidiSequencePlayer.Companion.method2862
 import OpenGlModel.Companion.method690
-import Sprite.Companion.method160
+import LocTypeConfig.Companion.method160
 import java.awt.datatransfer.DataFlavor
 import java.util.*
 import kotlin.math.max

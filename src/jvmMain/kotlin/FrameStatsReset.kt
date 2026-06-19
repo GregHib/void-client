@@ -1401,7 +1401,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7884 = 0
             ByteBuffer.anInt7157 = 0
             OpenGlRenderer.anInt7597 = 0
-            Sprite.anInt115 = 0
+            Client.anInt115 = 0
             RadialTextureNode.anInt9336 = 0
             ParticleDetailOptionState.anInt6028 = 0
             SoundEnvelope.anInt2736 = 0
@@ -1455,7 +1455,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlTextureBase.anInt5095 = 0
             CollisionMap.anInt4454 = 0
             SceneObjectAnimator.anInt3050 = 0
-            Sprite.anInt113 = 0
+            LocTypeConfig.anInt113 = 0
             SoundCacheState.anInt4140 = 0
             OpenGlModel.anInt5567 = 0
             BooleanGraphicsOptionState.anInt5842 = 0

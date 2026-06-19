@@ -3,7 +3,7 @@ import WallEntity.Companion.method2483
 import TurbulenceTextureNode.Companion.method3113
 import FixedFunctionWaterPass.Companion.method3547
 import SolidFillComponent.Companion.method195
-import Sprite.Companion.method159
+import Client.Companion.method159
 import java.awt.datatransfer.DataFlavor
 import java.awt.datatransfer.StringSelection
 import kotlin.math.max

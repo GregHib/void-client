@@ -559,19 +559,19 @@ class Client : GameAppletFrame() {
         else {
             try {
                 if (NanoTimer.anInt846 == 0) {
-                    Sprite.aLinkedQueueNode_114 = CacheStateResetter.aServerConnectionInfo_125!!.method1262((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!), 36.toByte())
+                    aLinkedQueueNode_114 = CacheStateResetter.aServerConnectionInfo_125!!.method1262((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!), 36.toByte())
                     NanoTimer.anInt846++
                 }
                 if (NanoTimer.anInt846 == 1) {
-                    if (Sprite.aLinkedQueueNode_114!!.anInt1997 == 2) {
-                        if (Sprite.aLinkedQueueNode_114!!.anObject1998 != null) AbstractFrameBufferSurface.aString6926 = Sprite.aLinkedQueueNode_114!!.anObject1998 as String?
+                    if (aLinkedQueueNode_114!!.anInt1997 == 2) {
+                        if (aLinkedQueueNode_114!!.anObject1998 != null) AbstractFrameBufferSurface.aString6926 = aLinkedQueueNode_114!!.anObject1998 as String?
                         method103(1000, 100.toByte())
                         return
                     }
-                    if (Sprite.aLinkedQueueNode_114!!.anInt1997 == 1) NanoTimer.anInt846++
+                    if (aLinkedQueueNode_114!!.anInt1997 == 1) NanoTimer.anInt846++
                 }
                 if (NanoTimer.anInt846 == 2) {
-                    TextureHandle.aSocketStreamWorker_2589 = SocketStreamWorker(Sprite.aLinkedQueueNode_114!!.anObject1998 as Socket?, VorbisOggDecoder.aPrivilegedOperationWorker_8992, 25000)
+                    TextureHandle.aSocketStreamWorker_2589 = SocketStreamWorker(aLinkedQueueNode_114!!.anObject1998 as Socket?, VorbisOggDecoder.aPrivilegedOperationWorker_8992, 25000)
                     val class348_sub49 = ByteBuffer(5)
                     class348_sub49.writeByte(false, (ScriptOpcodeHolder.aConfigIdPair_2341!!.anInt400))
                     class348_sub49.writeInt(103.toByte(), 634)
@@ -600,7 +600,7 @@ class Client : GameAppletFrame() {
                     for (i_1_ in class267s.indices) class267s[i_1_]!!.method2030(1, class348_sub49.readInt((-126).toByte()))
                     ClientMachineInfo.aMediaStreamClient_6601!!.method1903(false, !bool, TextureHandle.aSocketStreamWorker_2589)
                     NanoTimer.anInt846 = 0
-                    Sprite.aLinkedQueueNode_114 = null
+                    aLinkedQueueNode_114 = null
                     TextureHandle.aSocketStreamWorker_2589 = null
                 }
                 val i_2_ = 127 / ((1 - i) / 60)
@@ -828,7 +828,7 @@ class Client : GameAppletFrame() {
         method852(6)
         method3518(i.toInt() xor 0x34)
         ClientException.method140((-126).toByte())
-        Sprite.method158((-67).toByte())
+        method158((-67).toByte())
         method3438(59.toByte())
         FontDefinition.method1180((-76).toByte())
         method879(96)
@@ -1232,7 +1232,7 @@ class Client : GameAppletFrame() {
     private fun method103(i: Int, i_5_: Byte) {
         anInt5182++
         ClientMachineInfo.aMediaStreamClient_6601!!.anInt3213++
-        Sprite.aLinkedQueueNode_114 = null
+        aLinkedQueueNode_114 = null
         ClientMachineInfo.aMediaStreamClient_6601!!.anInt3214 = i
         if (i_5_ > 74) {
             NanoTimer.anInt846 = 0
@@ -4420,5 +4420,30 @@ class Client : GameAppletFrame() {
             anInt9546++
             return i == 3 || i == 4 || i == 5 || i == 6
         }
+
+
+        var anInt115: Int = 0
+        fun method159(i: Int) {
+            if (WalkingTypeUtil.anInt3312 > 0) {
+                var i_1_ = 0
+                var i_2_ = 0
+                while (ArbFogMaterialPass.aStringArray6200!!.size > i_2_) {
+                    if (ArbFogMaterialPass.aStringArray6200!![i_2_]!!.indexOf("--> ") != -1 && ++i_1_ == WalkingTypeUtil.anInt3312) {
+                        MapElementManager.aString4461 = (ArbFogMaterialPass.aStringArray6200!![i_2_]!!.substring(2 + ArbFogMaterialPass.aStringArray6200!![i_2_]!!.indexOf(">")))
+                        break
+                    }
+                    i_2_++
+                }
+            } else MapElementManager.aString4461 = ""
+            anInt115++
+        }
+
+        var aLinkedQueueNode_114: LinkedQueueNode? = null
+
+        fun method158(i: Byte) {
+            aLinkedQueueNode_114 = null
+        }
+
+
     }
 }

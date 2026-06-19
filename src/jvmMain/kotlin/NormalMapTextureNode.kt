@@ -1,6 +1,6 @@
 import ProjectedGroundDecor.Companion.method2433
 import AbstractFrameBufferSurface.Companion.method3007
-import Sprite.Companion.method160
+import LocTypeConfig.Companion.method160
 import kotlin.math.sqrt
 
 /* Class348_Sub40_Sub34 - Decompiled by JODE
