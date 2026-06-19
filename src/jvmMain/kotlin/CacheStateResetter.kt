@@ -3,8 +3,6 @@
 */
 object CacheStateResetter {
 
-    var aInboundPacketHeader_123: InboundPacketHeader? = InboundPacketHeader(110, 10)
-
     var anInt124: Int = 0
 
     var aServerConnectionInfo_125: ServerConnectionInfo? = null
@@ -29,7 +27,7 @@ object CacheStateResetter {
 
     @JvmStatic
     fun method176(i: Int) {
-        aInboundPacketHeader_123 = null
+        InboundPacketHeader.aInboundPacketHeader_123 = null
         aServerConnectionInfo_125 = null
         if (i != -1) method176(-19)
     }

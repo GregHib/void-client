@@ -8,7 +8,6 @@ import java.util.Vector
  */
 object NativeLibraryUnloader {
     var anInt2971: Int = 0
-    var aInboundPacketHeader_2972: InboundPacketHeader? = InboundPacketHeader(49, 4)
     var anInt2973: Int = 0
 
     var aMapSceneTileArray2974: Array<MapSceneTile?>? = null
@@ -19,7 +18,7 @@ object NativeLibraryUnloader {
     fun method1628(i: Byte) {
         aMapSceneTileArray2974 = null
         if (i <= 47) aMapSceneTileArray2974 = null
-        aInboundPacketHeader_2972 = null
+        InboundPacketHeader.aInboundPacketHeader_2972 = null
     }
 
     fun method1629(bool: Boolean): Boolean {

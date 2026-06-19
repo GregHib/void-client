@@ -19,7 +19,6 @@ class StringValueNode : LinkedListNode {
         var anInt7109: Int = 0
         var anInt7110: Int = 0
         var anInt7112: Int = 0
-        var aInboundPacketHeader_7113: InboundPacketHeader? = InboundPacketHeader(97, 0)
         var anInt7114: Int = 0
 
         var anInt7115: Int = 1
@@ -40,7 +39,7 @@ class StringValueNode : LinkedListNode {
 
         @JvmStatic
         fun method3318(i: Byte) {
-            aInboundPacketHeader_7113 = null
+            InboundPacketHeader.aInboundPacketHeader_7113 = null
         }
 
         fun method3319(var_renderer: Renderer?, i: Byte) {
@@ -88,7 +87,7 @@ class StringValueNode : LinkedListNode {
             val class369 = PcmStreamBuffer.method2834((-125).toByte(), class348_sub49)
             val i_4_ = class348_sub49.readUnsignedShort(i xor 0x3235f8f8)
             val i_5_ = class348_sub49.readUnsignedShort(842397944)
-            if (i != 0) aInboundPacketHeader_7113 = null
+            if (i != 0) InboundPacketHeader.aInboundPacketHeader_7113 = null
             val i_6_ = class348_sub49.readUnsignedShort(842397944)
             val i_7_ = class348_sub49.readUnsignedShort(i + 842397944)
             val i_8_ = class348_sub49.readUnsignedShort(842397944)

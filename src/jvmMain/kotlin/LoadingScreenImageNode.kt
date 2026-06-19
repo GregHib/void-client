@@ -14,7 +14,6 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
         var anInt9501: Int
 
         var aShortArray9502: ShortArray?
-        var aInboundPacketHeader_9503: InboundPacketHeader?
 
         var anInt9504: Int = 0
         var anIntArray9505: IntArray? = IntArray(3)
@@ -83,7 +82,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             anIntArray9505 = null
             aShortArray9502 = null
             if (bool != true) aShortArray9502 = null
-            aInboundPacketHeader_9503 = null
+            InboundPacketHeader.aInboundPacketHeader_9503 = null
         }
 
         @JvmStatic
@@ -152,7 +151,6 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
         init {
             anInt9501 = 0
             aShortArray9502 = ShortArray(256)
-            aInboundPacketHeader_9503 = InboundPacketHeader(9, -1)
         }
     }
 }

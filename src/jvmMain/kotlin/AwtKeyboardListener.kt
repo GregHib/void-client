@@ -187,7 +187,6 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
 
         var anInt6527: Int = 0
 
-        var aInboundPacketHeader_6528: InboundPacketHeader? = InboundPacketHeader(14, 2)
 
         var anInt6529: Int = 0
 
@@ -221,7 +220,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
 
         @JvmStatic
         fun method2705(i: Int) {
-            aInboundPacketHeader_6528 = null
+            InboundPacketHeader.aInboundPacketHeader_6528 = null
             if (i != 14645) method2705(1)
         }
     }

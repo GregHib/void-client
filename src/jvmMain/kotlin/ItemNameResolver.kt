@@ -26,7 +26,6 @@ class ItemNameResolver : TextFormatter {
         var anInt4996: Int = 0
 
         var aProjectileFactory_4997: ProjectileFactory? = ProjectileFactory(6, 1)
-        var aInboundPacketHeader_4998: InboundPacketHeader?
 
         var anInt4999: Int = 0
 
@@ -42,11 +41,8 @@ class ItemNameResolver : TextFormatter {
             aString5000 = null
             val i_0_ = 74 / ((i - 58) / 49)
             aProjectileFactory_4997 = null
-            aInboundPacketHeader_4998 = null
+            InboundPacketHeader.aInboundPacketHeader_4998 = null
         }
 
-        init {
-            aInboundPacketHeader_4998 = InboundPacketHeader(59, 3)
-        }
     }
 }

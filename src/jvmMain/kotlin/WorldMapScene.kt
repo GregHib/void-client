@@ -1,7 +1,7 @@
 import RefCountedHandle.Companion.method1320
 import MapSceneDefLoader.Companion.method1394
 import LoadingScreenState.Companion.method1457
-import GraphicsOptionState.Companion.method1709
+import WorldMapScene.Companion.method1709
 import GlTexture2D.Companion.method1968
 import WallEntity.Companion.method2483
 import Font.Companion.method2570
@@ -9,6 +9,7 @@ import TimedRecordAccessor.Companion.method3313
 import FixedFunctionWaterPass.Companion.method3547
 import WorldMapPolygonIconLabel.Companion.method3576
 import DirectionPath.Companion.method536
+import GraphicsOptionState.Companion.anInt3141
 import NpcType.Companion.method802
 import WidgetCache.Companion.method837
 
@@ -1330,6 +1331,11 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
         var anInt3125: Int = 0
         var anInt3127: Int = 0
         var anInt3131: Int = 0
+        @JvmStatic
+        fun method1709(i: Int): Array<HudTabPanel?> {
+            anInt3141++
+            return (arrayOf<HudTabPanel?>(Client.aHudTabPanel_1189, NoiseTextureNode.aHudTabPanel_9263, ParticleEmitterDef.aHudTabPanel_4953))
+        }
 
         @JvmStatic
         fun method1677(i: Int, i_164_: Int): HudTabPanel? {

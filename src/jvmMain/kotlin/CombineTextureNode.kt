@@ -373,7 +373,6 @@ class CombineTextureNode : AbstractProceduralTextureNode(2, false) {
 
         var anInt9224: Int = 0
 
-        var aInboundPacketHeader_9225: InboundPacketHeader?
 
         var anInt9227: Int = 0
 
@@ -389,7 +388,7 @@ class CombineTextureNode : AbstractProceduralTextureNode(2, false) {
         @JvmStatic
         fun method3087(bool: Boolean) {
             anIntArray9230 = null
-            aInboundPacketHeader_9225 = null
+            InboundPacketHeader.aInboundPacketHeader_9225 = null
             if (bool != false) method3089(-42)
         }
 
@@ -413,10 +412,6 @@ class CombineTextureNode : AbstractProceduralTextureNode(2, false) {
             anInt9222++
             KeyboardLayoutCache.anInt3306 = 0
             val i_67_ = -95 % ((i - -46) / 52)
-        }
-
-        init {
-            aInboundPacketHeader_9225 = InboundPacketHeader(28, -2)
         }
     }
 }

@@ -39,12 +39,10 @@ class EmoteDefinition {
         var anInt3260: Int = 0
         var anInt3262: Int = 0
         var anInt3263: Int = 0
-        var aInboundPacketHeader_3264: InboundPacketHeader? = InboundPacketHeader(6, 2)
 
         @JvmStatic
         fun method1926(i: Int) {
-            if (i >= -125) aInboundPacketHeader_3264 = null
-            aInboundPacketHeader_3264 = null
+            InboundPacketHeader.aInboundPacketHeader_3264 = null
         }
 
         @JvmStatic

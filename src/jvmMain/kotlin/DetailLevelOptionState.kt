@@ -50,7 +50,6 @@ class DetailLevelOptionState : GraphicsOptionState {
 
         var aFloat6120: Float = 1.0f
 
-        var aInboundPacketHeader_6121: InboundPacketHeader?
 
         var anInt6122: Int = 0
 
@@ -88,7 +87,7 @@ class DetailLevelOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1835(i: Int) {
             aFloorOverlayDefinitionArray6114 = null
-            aInboundPacketHeader_6121 = null
+            InboundPacketHeader.aInboundPacketHeader_6121 = null
             if (i != -28594) anInt6115 = -7
         }
 
@@ -127,14 +126,13 @@ class DetailLevelOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1837(i: Int, i_14_: Int, i_15_: Int): Boolean {
-            if (i_14_ < 41) aInboundPacketHeader_6121 = null
+            if (i_14_ < 41) InboundPacketHeader.aInboundPacketHeader_6121 = null
             anInt6122++
             return (i_15_ and 0x800) != 0
         }
 
         init {
             aFloorOverlayDefinitionArray6114 = arrayOfNulls<FloorOverlayDefinition>(6)
-            aInboundPacketHeader_6121 = InboundPacketHeader(32, 6)
         }
     }
 }

@@ -2,8 +2,6 @@ object AbstractGameSocketStatics {
 
     var anInt3132: Int = 0
 
-    var aInboundPacketHeader_3133: InboundPacketHeader? = null
-
     @JvmStatic
     fun method1703(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
         anInt3132++
@@ -16,7 +14,6 @@ object AbstractGameSocketStatics {
 
     @JvmStatic
     fun method1704(i: Byte) {
-        if (i >= -90) aInboundPacketHeader_3133 = null
-        aInboundPacketHeader_3133 = null
+        InboundPacketHeader.aInboundPacketHeader_3133 = null
     }
 }

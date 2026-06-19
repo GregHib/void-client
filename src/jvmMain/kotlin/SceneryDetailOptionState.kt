@@ -62,8 +62,6 @@ class SceneryDetailOptionState : GraphicsOptionState {
 
         var anInt6088: Int = 0
 
-        var aInboundPacketHeader_6089: InboundPacketHeader? = InboundPacketHeader(41, 3)
-
         var anInt6090: Int = 0
 
         var anInt6091: Int = 0
@@ -91,7 +89,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1822(i: Byte) {
-            aInboundPacketHeader_6089 = null
+            InboundPacketHeader.aInboundPacketHeader_6089 = null
             aLruByteCache_6096 = null
             aAbstractModelRenderer_6097 = null
             aStringArrayArray6093 = null

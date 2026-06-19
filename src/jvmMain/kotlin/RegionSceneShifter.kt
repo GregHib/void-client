@@ -24,7 +24,6 @@ class RegionSceneShifter : LinkedListNode() {
         var aString7048: String? = null
         var anInt7049: Int = 0
         var anInt7051: Int = 0
-        var aInboundPacketHeader_7052: InboundPacketHeader? = InboundPacketHeader(86, 6)
         var anInt7055: Int = 0
 
         /*synthetic*/
@@ -32,7 +31,7 @@ class RegionSceneShifter : LinkedListNode() {
 
         fun method3154(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, `is`: ByteArray?, i_3_: Byte): Boolean {
             anInt7047++
-            if (i_3_.toInt() != 39) aInboundPacketHeader_7052 = null
+            if (i_3_.toInt() != 39) InboundPacketHeader.aInboundPacketHeader_7052 = null
             var bool = true
             val class348_sub49 = ByteBuffer(`is`)
             var i_4_ = -1
@@ -75,13 +74,13 @@ class RegionSceneShifter : LinkedListNode() {
         @JvmStatic
         fun method3155(i: Int) {
             aString7048 = null
-            aInboundPacketHeader_7052 = null
+            InboundPacketHeader.aInboundPacketHeader_7052 = null
             if (i != -5) ActorEntity.anInt7054 = 110
         }
 
         fun method3156(bool: Boolean, string: String): Int {
             anInt7055++
-            if (bool != true) aInboundPacketHeader_7052 = null
+            if (bool != true) InboundPacketHeader.aInboundPacketHeader_7052 = null
             return method1836(-123, 10, true, string)
         }
 

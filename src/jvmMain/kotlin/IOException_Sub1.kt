@@ -11,7 +11,6 @@ class IOException_Sub1(string: String?) : IOException(string) {
 
         var anInt89: Int = 0
 
-        var aInboundPacketHeader_90: InboundPacketHeader? = InboundPacketHeader(42, -1)
 
         var anIntArray91: IntArray? = IntArray(8)
 
@@ -62,7 +61,7 @@ class IOException_Sub1(string: String?) : IOException(string) {
         fun method130(i: Int) {
             if (i == 8) {
                 anIntArray91 = null
-                aInboundPacketHeader_90 = null
+                InboundPacketHeader.aInboundPacketHeader_90 = null
             }
         }
 

@@ -1,5 +1,5 @@
 import GlCubeMapTexture.Companion.method243
-import GraphicsOptionState.Companion.method1713
+import ByteBufferStatics.method1713
 import FixedFunctionMaterialPass.Companion.method2145
 import TexGenMaterialPass.Companion.method2158
 import ConnectionStateType.Companion.method527

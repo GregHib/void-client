@@ -17,7 +17,6 @@ class LocalizedTextTriple internal constructor(string: String?, string_4_: Strin
     }
 
     companion object {
-        var aInboundPacketHeader_3751: InboundPacketHeader?
         var anInt3752: Int = 0
         var aClass348_Sub42_Sub17Array3753: Array<TextureMaterialGroup?>? = arrayOfNulls<TextureMaterialGroup>(14)
         var anInt3755: Int = 0
@@ -66,12 +65,11 @@ class LocalizedTextTriple internal constructor(string: String?, string_4_: Strin
         fun method2223(i: Int) {
             aClass348_Sub42_Sub17Array3753 = null
             anIntArray3759 = null
-            aInboundPacketHeader_3751 = null
+            InboundPacketHeader.aInboundPacketHeader_3751 = null
             if (i < 100) aBoolean3763 = false
         }
 
         init {
-            aInboundPacketHeader_3751 = InboundPacketHeader(1, 2)
             anInt3760 = -1
             anInt3764 = 0
         }

@@ -6,7 +6,6 @@ abstract class NanoTimer {
 
     companion object {
 
-        var aInboundPacketHeader_843: InboundPacketHeader?
 
         var anInt844: Int = 0
 
@@ -16,7 +15,7 @@ abstract class NanoTimer {
 
         @JvmStatic
         fun method445(i: Int) {
-            if (i == 2) aInboundPacketHeader_843 = null
+            if (i == 2) InboundPacketHeader.aInboundPacketHeader_843 = null
         }
 
         @JvmStatic
@@ -51,8 +50,5 @@ abstract class NanoTimer {
             }
         }
 
-        init {
-            aInboundPacketHeader_843 = InboundPacketHeader(66, 8)
-        }
     }
 }

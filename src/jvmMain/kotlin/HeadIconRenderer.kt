@@ -1,7 +1,6 @@
 import SoftwareSpriteRaster.Companion.method960
 import SpriteRgbTextureNode.Companion.method3093
 import ParticleTileShape.Companion.method2732
-import UnusedToStringStub.Companion.aInboundPacketHeader_2717
 import kotlin.math.max
 
 /* Class151 - Decompiled by JODE
@@ -22,12 +21,11 @@ class HeadIconRenderer {
 
         var anInt2065: Int = 0
         var anInt2066: Int = 0
-        var aInboundPacketHeader_2068: InboundPacketHeader? = InboundPacketHeader(68, 6)
         @JvmStatic
         fun method1209(i: Int) {
             val i_0_ = 95 / ((-21 - i) / 45)
             anIntArray2062 = null
-            aInboundPacketHeader_2068 = null
+            InboundPacketHeader.aInboundPacketHeader_2068 = null
         }
 
         fun method1210(i: Byte, i_1_: Int): Boolean {
@@ -95,7 +93,7 @@ class HeadIconRenderer {
         @JvmStatic
         fun method1213(string: String?, string_16_: String?, i: Int) {
             try {
-                if (i > -48) aInboundPacketHeader_2068 = null
+                if (i > -48) InboundPacketHeader.aInboundPacketHeader_2068 = null
                 anInt2063++
                 TextureLoadExceptionStatics.anInt4596 = -1
                 BloomGraphicsOptionState.anInt5969 = if (Loader.skipLobby) 2 else 1
@@ -107,8 +105,7 @@ class HeadIconRenderer {
         var aClass348_Sub16_Sub3_2718: MidiSequencePlayer? = null
         @JvmStatic
         fun method1529(bool: Boolean) {
-            aInboundPacketHeader_2717 = null
-            if (bool != true) aInboundPacketHeader_2717 = null
+            InboundPacketHeader.aInboundPacketHeader_2717 = null
             aClass348_Sub16_Sub3_2718 = null
         }
     }

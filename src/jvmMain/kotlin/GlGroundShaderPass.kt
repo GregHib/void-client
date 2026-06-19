@@ -1,4 +1,4 @@
-import GraphicsOptionState.Companion.method1713
+import ByteBufferStatics.method1713
 import TexGenMaterialPass.Companion.method2158
 import CubemapTexture2dSource.Companion.method2260
 import jaggl.OpenGL.Companion.glBindProgramARB
@@ -150,8 +150,6 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
 
         var anIntArray7397: IntArray? = IntArray(4096)
 
-        var aInboundPacketHeader_7398: InboundPacketHeader? = InboundPacketHeader(16, 6)
-
         var anInt7400: Int = 0
 
         var anInt7401: Int = 0
@@ -236,7 +234,7 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
             anIntArray7397 = null
             aLongHashTable_7415 = null
             if (bool == true) {
-                aInboundPacketHeader_7398 = null
+                InboundPacketHeader.aInboundPacketHeader_7398 = null
                 aByteArray7394 = null
             }
         }

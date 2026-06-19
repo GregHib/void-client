@@ -48,6 +48,7 @@ class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjecto
 
         var anInt461: Int = 0
 
+        var aItemDefinitionLoader_3147: ItemDefinitionLoader? = null
         @JvmStatic
         fun method338(i: Int, i_0_: Int) {
             var i_0_ = i_0_
@@ -55,7 +56,7 @@ class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjecto
             anInt456++
             if (i_0_ != GlShaderProgramHandle.anInt4179) {
                 if (i_0_ != -1) {
-                    val class222 = GraphicsOptionState.aItemDefinitionLoader_3147!!.method1287((-104).toByte(), i_0_)
+                    val class222 = aItemDefinitionLoader_3147!!.method1287((-104).toByte(), i_0_)
                     val class207 = class222.method1610(71.toByte())
                     if (class207 == null) i_0_ = -1
                     else {

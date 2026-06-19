@@ -7,8 +7,6 @@ object MinimapRectClipper {
 
     var anInt219: Int = 0
 
-    var aInboundPacketHeader_220: InboundPacketHeader? = InboundPacketHeader(40, -1)
-
     var anInt221: Int = 0
 
     var anIntArray222: IntArray?
@@ -20,7 +18,7 @@ object MinimapRectClipper {
     @JvmStatic
     fun method225(i: Byte) {
         if (i > 54) {
-            aInboundPacketHeader_220 = null
+            InboundPacketHeader.aInboundPacketHeader_220 = null
             anIntArray224 = null
             anIntArray222 = null
             aClass314_Sub1Array223 = null

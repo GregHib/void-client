@@ -127,7 +127,7 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
                         if (GlWaterRenderPass.anInt7297 == 2) {
                             if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 == 2) throw IOException()
                             if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 != 1) return
-                            Client.aAbstractGameSocket_9165 = NullOggStream.method2982(((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket), 24.toByte(), 7500)
+                            Client.aAbstractGameSocket_9165 = SocketGameConnection.method2982(((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket), 24.toByte(), 7500)
                             FrameStatsReset.aLinkedQueueNode_5800 = null
                             method1802(0)
                             GlWaterRenderPass.anInt7297 = 4

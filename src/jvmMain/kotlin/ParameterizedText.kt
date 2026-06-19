@@ -161,12 +161,12 @@ class ParameterizedText : HashLinkedListNode() {
             anInt9569++
             method2739(0)
             RegionSceneLoader.anInt3699 = 0
-            SineWaveTextureNode.aInboundPacketHeader_9456 = null
+            InboundPacketHeader.aInboundPacketHeader_9456 = null
             StringCacheNode.anInt7213 = 0
-            GraphicsOptionState.aInboundPacketHeader_3145 = null
+            InboundPacketHeader.aInboundPacketHeader_3145 = null
             CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
             val i_3_ = -122 % ((i - 13) / 45)
-            AbstractGameSocketStatics.aInboundPacketHeader_3133 = null
+            InboundPacketHeader.aInboundPacketHeader_3133 = null
             method2296(-99)
             HslAdjustTextureNode.anInt9383 = 0
             MinimapShapeDrawer.aString863 = null

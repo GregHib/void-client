@@ -5,7 +5,6 @@ import Font.Companion.method2570
 */
 class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
     override fun method3042(i: Int, i_3_: Int): IntArray? {
-        if (i_3_ != 255) aInboundPacketHeader_9254 = null
         anInt9256++
         return PerlinNoiseTextureNode.anIntArray6432
     }
@@ -14,13 +13,10 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
 
         var anInt9253: Int = 0
 
-        var aInboundPacketHeader_9254: InboundPacketHeader? = InboundPacketHeader(73, 3)
-
         var anInt9255: Int = 0
 
         var anInt9256: Int = 0
 
-        var aInboundPacketHeader_9257: InboundPacketHeader?
 
         var anInt9258: Int = 0
 
@@ -78,8 +74,8 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
 
         @JvmStatic
         fun method3099(i: Byte) {
-            aInboundPacketHeader_9254 = null
-            aInboundPacketHeader_9257 = null
+            InboundPacketHeader.aInboundPacketHeader_9254 = null
+            InboundPacketHeader.aInboundPacketHeader_9257 = null
             anIntArray9259 = null
             if (i >= -63) anIntArray9259 = null
         }
@@ -91,8 +87,5 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
             return OpenGlModel.method1637(i, 32768, i_4_) or ((0x800 and i_4_) != 0) || BoundsConstraintEntry.method2056(i_4_, 86, i)
         }
 
-        init {
-            aInboundPacketHeader_9257 = InboundPacketHeader(102, 3)
-        }
     }
 }

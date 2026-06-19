@@ -892,7 +892,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
             Client.aMapSceneCache_413!!.method816(false)
             HoverActionEntry.aSpriteStore_1813!!.method302(-797644856)
             AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1390(23)
-            GraphicsOptionState.aItemDefinitionLoader_3147!!.method1283(1)
+            CacheArchiveIndexLoader.aItemDefinitionLoader_3147!!.method1283(1)
             SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method694(-1007)
             FileExistsCondition.aModelDefinitionCache_4782!!.method1598(111)
             CalendarUtil.method2638(-4631)

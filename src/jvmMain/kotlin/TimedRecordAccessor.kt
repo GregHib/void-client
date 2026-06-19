@@ -22,9 +22,6 @@ abstract class TimedRecordAccessor : LinkedListNode() {
 
         var anInt7104: Int = 0
 
-        var aInboundPacketHeader_7105: InboundPacketHeader? = InboundPacketHeader(101, 20)
-
-        var aInboundPacketHeader_7106: InboundPacketHeader? = InboundPacketHeader(36, -2)
 
         var aAbstractModelRendererArray7107: Array<AbstractModelRenderer?>? = null
 
@@ -56,9 +53,9 @@ abstract class TimedRecordAccessor : LinkedListNode() {
 
         @JvmStatic
         fun method3314(i: Int) {
-            aInboundPacketHeader_7106 = null
+            InboundPacketHeader.aInboundPacketHeader_7106 = null
             if (i != 5) method3313(-103, null)
-            aInboundPacketHeader_7105 = null
+            InboundPacketHeader.aInboundPacketHeader_7105 = null
             aCollisionMapArray7108s = null
             aAbstractModelRendererArray7107 = null
             aTextureFormatInfo_7103 = null

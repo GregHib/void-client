@@ -10,7 +10,6 @@ object ScreenBorderFiller {
     var anInt1956: Int = 0
     var anInt1957: Int = 0
     var anInt1958: Int = 0
-    var aInboundPacketHeader_1959: InboundPacketHeader? = InboundPacketHeader(81, 6)
     var anInt1960: Int = 0
 
     var aFontMetaRef_1961: FontMetaRef? = FontMetaRef(77, -1)
@@ -27,7 +26,7 @@ object ScreenBorderFiller {
     @JvmStatic
     fun method1169(bool: Boolean) {
         aFontMetaRef_1961 = null
-        aInboundPacketHeader_1959 = null
+        InboundPacketHeader.aInboundPacketHeader_1959 = null
         if (bool != false) aFontMetaRef_1961 = null
     }
 

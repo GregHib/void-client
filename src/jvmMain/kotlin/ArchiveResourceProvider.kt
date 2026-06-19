@@ -376,7 +376,6 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
 
     companion object {
 
-        var aInboundPacketHeader_6340: InboundPacketHeader? = InboundPacketHeader(74, 28)
 
         var anInt6341: Int = 0
 
@@ -409,7 +408,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
         var anInt6370: Int = 0
         @JvmStatic
         fun method2344(i: Int) {
-            if (i == 0) aInboundPacketHeader_6340 = null
+            if (i == 0) InboundPacketHeader.aInboundPacketHeader_6340 = null
         }
 
         @JvmStatic

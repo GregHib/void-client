@@ -27,7 +27,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
     @Throws(IOException::class)
     fun method1467(i: Byte): Int {
         anInt2651++
-        if (i.toInt() != 83) aInboundPacketHeader_2665 = null
+        if (i.toInt() != 83) InboundPacketHeader.aInboundPacketHeader_2665 = null
         if (aBoolean2654) return 0
         return anInputStream2652!!.available()
     }
@@ -205,7 +205,6 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
         var aFontMetaRef_2661: FontMetaRef? = FontMetaRef(24, 7)
         var anInt2662: Int = 0
         var anInt2664: Int = 0
-        var aInboundPacketHeader_2665: InboundPacketHeader? = InboundPacketHeader(12, 0)
         var anInt2666: Int = 0
         var anInt2667: Int = 0
 
@@ -234,7 +233,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
         fun method1471(i: Byte) {
             if (i >= 80) {
                 aLruByteCache_2671 = null
-                aInboundPacketHeader_2665 = null
+                InboundPacketHeader.aInboundPacketHeader_2665 = null
                 aFontMetaRef_2661 = null
             }
         }

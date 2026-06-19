@@ -1,3 +1,4 @@
+import NullOggStream.Companion.anInt9040
 import java.io.IOException
 import java.net.Socket
 import kotlin.math.atan2
@@ -199,6 +200,13 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
                     }
                 }
             }
+        }
+
+        @JvmStatic
+        @Throws(IOException::class)
+        fun method2982(socket: Socket, i: Byte, i_0_: Int): AbstractGameSocket {
+            anInt9040++
+            return SocketGameConnection(socket, i_0_)
         }
     }
 }

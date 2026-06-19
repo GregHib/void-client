@@ -9,6 +9,5 @@ class UnusedToStringStub {
 
     companion object {
         var anInt2716: Int = 0
-        var aInboundPacketHeader_2717: InboundPacketHeader? = InboundPacketHeader(118, -2)
     }
 }

@@ -13,12 +13,11 @@ object InputSettingsState {
     var anInt1760: Int = 0
 
     var aString1761: String? = null
-    var aInboundPacketHeader_1762: InboundPacketHeader? = null
 
     @JvmStatic
     fun method1062(i: Byte) {
         if (i.toInt() == 35) {
-            aInboundPacketHeader_1762 = null
+            InboundPacketHeader.aInboundPacketHeader_1762 = null
             aString1761 = null
         }
     }
@@ -57,7 +56,4 @@ object InputSettingsState {
         } while (false)
     }
 
-    init {
-        aInboundPacketHeader_1762 = InboundPacketHeader(50, -1)
-    }
 }

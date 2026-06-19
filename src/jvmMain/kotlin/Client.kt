@@ -125,7 +125,6 @@ import ParticleSortRenderer.Companion.method1653
 import SceneObjectAnimator.Companion.method1673
 import WorldMapScene.Companion.method1677
 import WorldMapSceneSoftware.Companion.method1698
-import GraphicsOptionState.Companion.method1715
 import BooleanGraphicsOptionState.Companion.method1723
 import RangedGraphicsOptionState.Companion.method1761
 import RangedGraphicsOptionState.Companion.method1763
@@ -495,13 +494,12 @@ import BinaryGraphicsOptionState.Companion.method1767
 import DisplayModeOptionState.Companion.method1825
 import GlRenderDevice.Companion.method3965
 import GlVertexBufferArb.Companion.method2127
-import GraphicsOptionState.Companion.method1713
+import ByteBufferStatics.method1713
 import ChatCommandProcessor.anIntArray3295
 import CompassSmoother.Companion.method2017
 import ConfigFlagUtil.Companion.method1916
 import FrameBufferObject.Companion.method1501
 import FrameStatsReset.Companion.method1131
-import Gl3dTexture.Companion.aInboundPacketHeader_4027
 import HslAdjustTextureNode.Companion.method3126
 import HslAdjustTextureNode.Companion.method3127
 import MapArchiveSource.Companion.method1365
@@ -846,7 +844,7 @@ class Client : GameAppletFrame() {
         method1794(63)
         method1769(100)
         method1835(i + -28702)
-        method1715(103)
+        ClientLoadStateMachine.method1715(103)
         method852(6)
         method3518(i.toInt() xor 0x34)
         ClientException.method140((-126).toByte())
@@ -2691,7 +2689,7 @@ class Client : GameAppletFrame() {
         fun method3201(bool: Boolean): Boolean {
             anInt10430++
             if (Client.aAbstractGameSocket_9165 == null) return false
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == null) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == null) {
                 if (GroundItemRenderState.aBoolean1661) {
                     if (!Client.aAbstractGameSocket_9165!!.method1705(1, 119)) return false
                     Client.aAbstractGameSocket_9165!!.method1701(1, 0, 6.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
@@ -2710,11 +2708,11 @@ class Client : GameAppletFrame() {
                 val class114s = Gl3dTexture.method248(-11271)
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3407(15295)
                 if (i < 0 || i >= class114s.size) throw IOException("invo:" + i + " ip:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197))
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = class114s[i]
+                InboundPacketHeader.aInboundPacketHeader_6584 = class114s[i]
                 if (Loader.debug) {
-                    println("Packet read: " + i + " length: " + ModelVertexColorBuffer.aInboundPacketHeader_6584!!.anInt1749)
+                    println("Packet read: " + i + " length: " + InboundPacketHeader.aInboundPacketHeader_6584!!.anInt1749)
                 }
-                RadialTextureNode.anInt9341 = ModelVertexColorBuffer.aInboundPacketHeader_6584!!.anInt1749
+                RadialTextureNode.anInt9341 = InboundPacketHeader.aInboundPacketHeader_6584!!.anInt1749
             }
             if (RadialTextureNode.anInt9341 == -1) {
                 if (!Client.aAbstractGameSocket_9165!!.method1705(1, 116)) return false
@@ -2738,15 +2736,15 @@ class Client : GameAppletFrame() {
                 MinimapRectClipper.anInt221 += RadialTextureNode.anInt9341
                 StringCacheNode.anInt7213 = 0
             }
-            SineWaveTextureNode.aInboundPacketHeader_9456 = GraphicsOptionState.aInboundPacketHeader_3145
-            GraphicsOptionState.aInboundPacketHeader_3145 = AbstractGameSocketStatics.aInboundPacketHeader_3133
-            AbstractGameSocketStatics.aInboundPacketHeader_3133 = ModelVertexColorBuffer.aInboundPacketHeader_6584
-            if (IOException_Sub1.aInboundPacketHeader_90 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            InboundPacketHeader.aInboundPacketHeader_9456 = InboundPacketHeader.aInboundPacketHeader_3145
+            InboundPacketHeader.aInboundPacketHeader_3145 = InboundPacketHeader.aInboundPacketHeader_3133
+            InboundPacketHeader.aInboundPacketHeader_3133 = InboundPacketHeader.aInboundPacketHeader_6584
+            if (InboundPacketHeader.aInboundPacketHeader_90 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 MinimapTileEntry.method382(CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(118.toByte()), true)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == LoadingScreenImageNode.aInboundPacketHeader_9503) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_9503) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val bool_3_ = (i and 0x1) == 1
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(108.toByte())
@@ -2776,23 +2774,23 @@ class Client : GameAppletFrame() {
                     ContactEntry.anInt9604++
                 }
                 Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == aInboundPacketHeader_6424) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_6424) {
                 method128(NamedIdEntry.aRgbColorPalette_6891, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ChatCommandProcessor.aInboundPacketHeader_4388 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_4388 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-100)
                 val i_8_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-111)
                 WallSceneEntity.method2397((-126).toByte())
                 MinimapPolygonDrawer.method467(i_8_, -18075, i.toInt())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (GlArrayBufferObject.aInboundPacketHeader_4707 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_4707 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-123).toByte())
                 val i_9_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 WallSceneEntity.method2397((-124).toByte())
@@ -2811,54 +2809,54 @@ class Client : GameAppletFrame() {
                     ConfigFlagUtil.method1913(true, -123, class46)
                 }
                 if (RenderNodeStatics.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNodeStatics.anInt9721, 1)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
             if (bool != true) aSceneProjector_10434 = null
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == InputSettingsState.aInboundPacketHeader_1762) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1762) {
                 LightingOptionState.aString5882 = (if (RadialTextureNode.anInt9341 > 2) CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else LocalizedText.aLocalizedText_3509!!.method2063(ChatCommandProcessor.anInt6967, 544))
                 MapElementLookup.anInt4144 = (if (RadialTextureNode.anInt9341 <= 0) -1 else CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944))
                 if (MapElementLookup.anInt4144 == 65535) MapElementLookup.anInt4144 = -1
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (GraphicsOptionState.aInboundPacketHeader_3135 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_3135 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(62.toByte())
                 val i_11_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-126).toByte())
                 WallSceneEntity.method2397((-124).toByte())
                 MenuActionNode.method2813(true, i, i_11_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == ConnectionStateRefs.aInboundPacketHeader_316) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_316) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_12_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 val i_13_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(10)
                 val i_14_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 WallSceneEntity.method2397((-127).toByte())
                 AbstractGameSocketStatics.method1703(7, i, i_13_ shl 16 or i_14_, 4, i_12_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (BrightnessTextureNode.aInboundPacketHeader_9216 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_9216 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 MinimapStateReset.anInt1872 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 TurbulenceTextureNode.anInt9313 = ResourceLoaderThread.anInt3918
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == VideoStreamDecoder.aInboundPacketHeader_4126) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_4126) {
                 method128(SynthVoiceGroup.aRgbColorPalette_8853, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_2285) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_2285) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 WallSceneEntity.method2397((-124).toByte())
                 AbstractGameSocketStatics.method1703(3, i, -1, 4, -1)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == HslColorConfig.aInboundPacketHeader_330) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_330) {
                 val bool_15_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-34).toByte())
                 var string_16_ = string
@@ -2889,22 +2887,22 @@ class Client : GameAppletFrame() {
                     else if (i != 1) TrackedGroundDecor.method2477(string_16_, string_22_, (-125).toByte(), -1, string, ShadowQualityOptionState.method1788((-83).toByte(), l), 9, 0, string)
                     else TrackedGroundDecor.method2477("<img=0>" + string_16_, string_22_, (-126).toByte(), -1, "<img=0>" + string, ShadowQualityOptionState.method1788((-75).toByte(), l), 9, 0, string)
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == LocalizedTextTriple.aInboundPacketHeader_3751) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_3751) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool)
                 WallSceneEntity.method2397((-126).toByte())
                 FontDefinition.method1189(-1, i)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == InputStream_Sub2.aInboundPacketHeader_82) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_82) {
                 method128(GlShaderObjectHandle.aRgbColorPalette_515, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == FileExistsCondition.aInboundPacketHeader_4779) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_4779) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-78).toByte())
                 val i_23_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val i_24_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
@@ -2916,42 +2914,42 @@ class Client : GameAppletFrame() {
                 ModelHeaderCache.anIntArray3273!![i_23_] = i_25_
                 MapTileShape.anIntArray4196!![i_23_] = i_26_
                 GroundDecorSceneEntity.anIntArray9981!![i_23_] = i_24_
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == SceneryDetailOptionState.aInboundPacketHeader_6089) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_6089) {
                 FileExistsCondition.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 GradientLookupEffect.anInt9200 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-84).toByte())
                 BufferedMessageQueue.anInt3581 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3341(-8679).toInt() shl 3)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == WorldListEntry.aInboundPacketHeader_304) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_304) {
                 RegionMapDecoder.method853(99.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return false
             }
-            if (ParticleProcessor.aInboundPacketHeader_4269 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_4269 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(71.toByte())
                 WallSceneEntity.method2397((-128).toByte())
                 ByteArrayPool.anInt495 = i
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (WorldMapTextLabel.aInboundPacketHeader_8590 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_8590 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 method128(BufferedFileReader.aRgbColorPalette_4537, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == SmoothingBuffer.aInboundPacketHeader_3240) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_3240) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
                 val i_27_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
                 WallSceneEntity.method2397((-128).toByte())
                 method2396(i, i_27_, 0, 3)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (Gl3dTexture.aInboundPacketHeader_4027 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_4027 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 if (i == 65535) i = -1
                 val i_28_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
@@ -2961,10 +2959,10 @@ class Client : GameAppletFrame() {
                 val class213 = ClientException.aModelHeaderCache_112!!.method1940(-126, i)
                 ObjectSpawnDecoder.method1085(class213.anInt2825, class213.anInt2787, (-59).toByte(), class213.anInt2781, i_28_)
                 SkeletalAnimFrameLoader.method350(class213.anInt2779, class213.anInt2826, 125, i_28_, class213.anInt2810)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (PlayerUpdateDecoder.aInboundPacketHeader_1917 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_1917 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_30_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val bool_31_ = (0x1 and i_30_) == 1
@@ -2981,22 +2979,22 @@ class Client : GameAppletFrame() {
                     DelegatingRenderCanvas.method121(i, -364570972, bool_31_, i_33_, i_34_, i_35_ - 1)
                 }
                 LoadingScreenState.anIntArray2633!![WhirlpoolHash.method1166(31, DualMaterialContainer.anInt1631++)] = i
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == HuffmanCodec.aInboundPacketHeader_3773) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_3773) {
                 NormalMapTextureNode.method3141(false, 11.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return false
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == PixelBlender.aInboundPacketHeader_3809) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_3809) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_36_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                 ProjectedGroundDecor.aVarpStore_10209!!.method1313(42.toByte(), i, i_36_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == FogOptionState.aInboundPacketHeader_6056) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_6056) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(75.toByte())
                 val i_37_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                 var i_38_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
@@ -3156,24 +3154,24 @@ class Client : GameAppletFrame() {
                         OpenGlRenderNode.aNodeDeque_10492!!.method1999(ChatScriptListNode(class318_sub1_sub3_sub4), -20180)
                     }
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == SceneTileBounds.aInboundPacketHeader_1120) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1120) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-116)
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-85).toByte())
                 WallSceneEntity.method2397((-125).toByte())
                 method3965(string, i, 2)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == Client.aInboundPacketHeader_1234) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1234) {
                 ModelDataCache.anInt359 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3369(125.toByte())
                 RangeThresholdTextureNode.aBoolean9103 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (RenderableEntry.aInboundPacketHeader_4331 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_4331 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(122.toByte())
                 val bool_66_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 val string_67_: String?
@@ -3185,7 +3183,7 @@ class Client : GameAppletFrame() {
                 if (i_68_.toInt() == -128) bool_69_ = true
                 if (bool_69_) {
                     if (ByteArrayPool.anInt496 == 0) {
-                        ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                        InboundPacketHeader.aInboundPacketHeader_6584 = null
                         return true
                     }
                     val bool_70_ = false
@@ -3222,14 +3220,14 @@ class Client : GameAppletFrame() {
                             HostPingThread.aWorldListEntryArray2261!![i_73_]!!.aString313 = string_72_
                             if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
                             Client.anInt2986 = ResourceLoaderThread.anInt3918
-                            ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                            InboundPacketHeader.aInboundPacketHeader_6584 = null
                             return true
                         }
                         if (i_74_ < 0) break
                         i_73_--
                     }
                     if (HostPingThread.aWorldListEntryArray2261!!.size <= ByteArrayPool.anInt496) {
-                        ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                        InboundPacketHeader.aInboundPacketHeader_6584 = null
                         return true
                     }
                     for (i_75_ in ByteArrayPool.anInt496 - 1 downTo i_73_ + 1) HostPingThread.aWorldListEntryArray2261!![1 + i_75_] = HostPingThread.aWorldListEntryArray2261!![i_75_]
@@ -3239,16 +3237,16 @@ class Client : GameAppletFrame() {
                     if (string_67_ == LocalPlayerState.aPlayer_1907!!.aString10544) NativeIndexBuffer.aByte4702 = i_68_
                 }
                 Client.anInt2986 = ResourceLoaderThread.anInt3918
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (BinaryGraphicsOptionState.aInboundPacketHeader_5949 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_5949 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_76_ = i shr 5
                 val i_77_ = 0x1f and i
                 if (i_77_ == 0) {
                     MultiFieldRecord.aMinimapPositionStateArray6897s!![i_76_] = null
-                    ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                    InboundPacketHeader.aInboundPacketHeader_6584 = null
                     return true
                 }
                 val minimapPositionState = MinimapPositionState()
@@ -3290,63 +3288,63 @@ class Client : GameAppletFrame() {
                     if (minimapPositionState.anInt3834 == 65535) minimapPositionState.anInt3834 = -1
                     MultiFieldRecord.aMinimapPositionStateArray6897s!![i_76_] = minimapPositionState
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (NpcCountAccessor.aInboundPacketHeader_2279 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_2279 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 NormalMapTextureNode.method3141(ProjectileFactory.aBoolean2895, 11.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return false
             }
 
-            if (GlCubemapLightPass.aInboundPacketHeader_7323 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_7323 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 SynthVoiceGroup.method2822(-101, CircleRasterizer.aClass348_Sub49_Sub2_3813!!, RadialTextureNode.anInt9341)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == DetailLevelOptionState.aInboundPacketHeader_6121) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_6121) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                 val i_78_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-118).toByte())
                 WallSceneEntity.method2397((-128).toByte())
                 NpcUpdateProcessor.method855(6, i, i_78_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (CompassSmoother.aInboundPacketHeader_3371 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_3371 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 method128(StaticNoiseTexture.aRgbColorPalette_8662, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == GlCubemapLightPass.aInboundPacketHeader_7324) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_7324) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 val i_79_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-120)
                 val i_80_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
                 WallSceneEntity.method2397((-125).toByte())
                 method1540(-101, i, i_79_ + (i_80_ shl 16))
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == CollisionMap.aInboundPacketHeader_4433) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_4433) {
                 ProjectedGroundDecor.aVarpStore_10209!!.method1314(80.toByte())
                 TypedRecordTable.anInt3695 += 32
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == ProjectileDefinition.aInboundPacketHeader_3842) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_3842) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 WallSceneEntity.method2397((-128).toByte())
                 AbstractGameSocketStatics.method1703(5, i, CharCodeMap.anInt9591, 4, 0)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (AwtKeyboardListener.aInboundPacketHeader_6528 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_6528 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-124)
                 WallSceneEntity.method2397((-124).toByte())
                 OpenGlModel.method690((-107).toByte(), i)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (SolidFillComponent.aInboundPacketHeader_8365 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_8365 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val bool_81_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-29).toByte())
                 var string_82_ = string
@@ -3363,15 +3361,15 @@ class Client : GameAppletFrame() {
                     else if (i == 1) TrackedGroundDecor.method2477("<img=0>" + string_82_, string_84_, (-119).toByte(), -1, "<img=0>" + string, null, 24, 0, string)
                     else TrackedGroundDecor.method2477(string_82_, string_84_, (-115).toByte(), -1, string, null, 24, 0, string)
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (CharCountUtil.aInboundPacketHeader_229 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_229 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 method128(ArbFogMaterialPass.aRgbColorPalette_6201, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == FloatCameraTransform.aInboundPacketHeader_5742) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_5742) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(31.toByte())
                 val i_85_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-104).toByte())
                 val i_86_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
@@ -3379,10 +3377,10 @@ class Client : GameAppletFrame() {
                 val i_88_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(126) shl 2)
                 WallSceneEntity.method2397((-127).toByte())
                 method1844(i_85_, i_86_, true, i_88_, !bool, i_87_, i)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == CollisionMapRegion.aInboundPacketHeader_1722) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1722) {
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-100).toByte())
                 val objects = arrayOfNulls<Any>(1 + string.length)
                 for (i in -1 + string.length downTo 0) {
@@ -3394,25 +3392,25 @@ class Client : GameAppletFrame() {
                 val class348_sub36 = WidgetActionEntry()
                 class348_sub36.anObjectArray6987 = objects
                 ChatCommandProcessor.method705(class348_sub36)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (SimpleBinaryOptionState.aInboundPacketHeader_6075 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_6075 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 WallSceneEntity.method2397((-127).toByte())
                 method1851(125.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == RegionSceneShifter.aInboundPacketHeader_7052) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_7052) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-118).toByte())
                 var i_89_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
                 if (i_89_ == 65535) i_89_ = -1
                 WallSceneEntity.method2397((-126).toByte())
                 AbstractGameSocketStatics.method1703(2, i, i_89_, 4, -1)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == CompassSmoother.aInboundPacketHeader_3368) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_3368) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 WallSceneEntity.method2397((-124).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i.toLong(), -6008) as RegionSceneShifter?)
@@ -3421,35 +3419,35 @@ class Client : GameAppletFrame() {
                     ConfigFlagUtil.method1916(-9343, SpriteRenderable.aWidgetComponent_4730!!)
                     SpriteRenderable.aWidgetComponent_4730 = null
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (InputStream_Sub1.aInboundPacketHeader_79 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_79 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-86)
                 val i_90_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 WallSceneEntity.method2397((-124).toByte())
                 OggBitstreamDecoder.method2966(i_90_, i, false)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (WidgetRedrawTracker.aInboundPacketHeader_3925 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_3925 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 method128(aRgbColorPalette_10437, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == NativeLibraryUnloader.aInboundPacketHeader_2972) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_2972) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 ChatScriptListNode.aLinkedQueueNode_9536 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2232(80, i)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == ParserSpecialCharsHolder.aInboundPacketHeader_1901) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1901) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val player: Player?
                 if (i != CharCodeMap.anInt9591) player = LoadingBarRenderer.aPlayerArray5058!![i]
                 else player = LocalPlayerState.aPlayer_1907
                 if (player == null) {
-                    ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                    InboundPacketHeader.aInboundPacketHeader_6584 = null
                     return true
                 }
                 var i_91_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
@@ -3483,10 +3481,10 @@ class Client : GameAppletFrame() {
                         } else TrackedGroundDecor.method2477("<img=1>" + player.method2450(false, -95), string, (-120).toByte(), i_95_, "<img=1>" + player.method2456(true, 255), null, i_96_, 0, player.aString10537)
                     }
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (SceneTileBounds.aInboundPacketHeader_1123 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_1123 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val bool_97_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(126.toByte())
                 var string_98_ = string
@@ -3516,15 +3514,15 @@ class Client : GameAppletFrame() {
                     else if (i == 1) TrackedGroundDecor.method2477("<img=0>" + string_98_, string_103_, (-115).toByte(), -1, "<img=0>" + string, null, 7, 0, string)
                     else TrackedGroundDecor.method2477(string_98_, string_103_, (-128).toByte(), -1, string, null, 3, 0, string)
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (aInboundPacketHeader_9552 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_9552 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 if (RenderNodeStatics.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNodeStatics.anInt9721, 0)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (HeapDiagnosticsHolder.aInboundPacketHeader_2248 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_2248 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_104_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-87).toByte())
                 val i_105_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
@@ -3532,36 +3530,36 @@ class Client : GameAppletFrame() {
                 val i_107_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 WallSceneEntity.method2397((-125).toByte())
                 ContactEntry.method3231(i_104_, i, i_106_, i_107_, i_105_, -127)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
 
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == StringValueNode.aInboundPacketHeader_7113) {
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_7113) {
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return false
             }
-            if (SlotBinding.aInboundPacketHeader_3427 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_3427 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 AbstractMenuEntryStatics.method1034(RadialTextureNode.anInt9341, CircleRasterizer.aClass348_Sub49_Sub2_3813, VorbisOggDecoder.aPrivilegedOperationWorker_8992, 110)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (MapAreaDefinition.aInboundPacketHeader_2527 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_2527 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val bool_108_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                 val `is` = ByteArray(RadialTextureNode.anInt9341 - 1)
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3389(2147483647, 0, (RadialTextureNode.anInt9341) + -1, `is`)
                 ScanlineRasterFiller.method1385(bool_108_, `is`, (-104).toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == EmoteDefinition.aInboundPacketHeader_3264) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_3264) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_109_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3341(-8679)
                 WallSceneEntity.method2397((-128).toByte())
                 InterfaceComponentGroup.method3244(i_109_.toInt(), i, 120)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelHeaderCache.aInboundPacketHeader_3265 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_3265 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 BufferedMessageQueue.anInt3581 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 GradientLookupEffect.anInt9200 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(98.toByte())
                 FileExistsCondition.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt() shl 3)
@@ -3569,35 +3567,35 @@ class Client : GameAppletFrame() {
                     val class74 = (ModelHeaderCache.method1929((-19).toByte())[CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)])
                     method128(class74, 8.toByte())
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ParticleEffectCache.aInboundPacketHeader_3467 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_3467 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
                 val i_110_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 val i_111_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3375(84.toByte())
                 WallSceneEntity.method2397((-124).toByte())
                 ConfigValueProvider.method1080(i_111_, -23697, i, i_110_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ScriptOpcodeHolder.aInboundPacketHeader_2338 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_2338 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(100.toByte())
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                 WallSceneEntity.method2397((-127).toByte())
                 method3965(string, i, 2)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == SequencedWallEntity.aInboundPacketHeader_10168) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_10168) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
                 val i_112_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 WallSceneEntity.method2397((-127).toByte())
                 BrightnessTextureNode.method3084(i, (-88).toByte(), i_112_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ParticleSystemState.aInboundPacketHeader_2196 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_2196 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val bool_113_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-81).toByte())
                 var string_114_ = string
@@ -3626,10 +3624,10 @@ class Client : GameAppletFrame() {
                     else if (i != 1) TrackedGroundDecor.method2477(string_114_, string_121_, (-111).toByte(), i_117_, string, method1788(80.toByte(), l), 20, 0, string)
                     else TrackedGroundDecor.method2477("<img=0>" + string_114_, string_121_, (-116).toByte(), i_117_, "<img=0>" + string, ShadowQualityOptionState.method1788((-98).toByte(), l), 20, 0, string)
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (OutgoingPacketNode.aInboundPacketHeader_7124 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_7124 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 WallSceneEntity.method2397((-125).toByte())
                 if (i == -1) {
@@ -3649,22 +3647,22 @@ class Client : GameAppletFrame() {
                     } else i_123_ = 0
                     SequencedWallEntity.anInt10163 = 256 + (i_123_ shl 9)
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == BlankTextureNode.aInboundPacketHeader_9254) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_9254) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-88).toByte())
                 val i_124_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool)
                 ProjectedGroundDecor.aVarpStore_10209!!.method1316((-58).toByte(), i_124_, i)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (PlayerUpdateDecoder.aInboundPacketHeader_1914 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_1914 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 method128(RgbColorPalette.aRgbColorPalette_9475, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == MapArchiveSource.aInboundPacketHeader_4798) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_4798) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-107)
                 if (i == 65535) i = -1
                 val i_125_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-121).toByte())
@@ -3678,23 +3676,23 @@ class Client : GameAppletFrame() {
                 i_131_ -= ArbVertexProgram.regionTileX
                 i_132_ -= RegionMapDecoder.regionTileY
                 NativeRenderer.method3824(i_132_, i, i_126_, i_131_, i_127_, 102, i_130_, i_128_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == HeapDiagnosticsHolder.aInboundPacketHeader_2255) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_2255) {
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-104).toByte())
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val string_133_ = (BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i, (-98).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
                 TrackedGroundDecor.method2477(string, string_133_, (-122).toByte(), i, string, null, 19, 0, string)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == ChatCommandProcessor.aInboundPacketHeader_9550) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_9550) {
                 method128(FileIoUtil.aRgbColorPalette_4098, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (SocketStreamWorker.aInboundPacketHeader_2665 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_2665 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 for (i in LoadingBarRenderer.aPlayerArray5058!!.indices) {
                     if (LoadingBarRenderer.aPlayerArray5058!![i] != null) {
                         LoadingBarRenderer.aPlayerArray5058!![i]!!.anIntArray10236 = null
@@ -3707,30 +3705,30 @@ class Client : GameAppletFrame() {
                     TurbulenceTextureNode.aClass348_Sub22Array9319!![i]!!.aNpc_6859!!.anInt10286 = -1
                     i++
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (RendererType.aInboundPacketHeader_4477 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_4477 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_134_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_135_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-109)
                 val i_136_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(16)
                 WallSceneEntity.method2397((-125).toByte())
                 ObjectSpawnDecoder.method1085(i_136_, i_134_, (-86).toByte(), i_135_, i)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (DirectionUtil.aInboundPacketHeader_1540 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_1540 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 MapSceneTile.aBoxedIntHolder_1055 = WidgetTextConfig.method360((-57).toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255))
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (RemoveRoofsOptionState.aInboundPacketHeader_6058 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_6058 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 method128(TextureGenerator.aRgbColorPalette_2491, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (PingHostListHolder.aInboundPacketHeader_2331 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_2331 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 ContactEntry.anInt9604 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 var i = 0
                 while (ContactEntry.anInt9604 > i) {
@@ -3744,10 +3742,10 @@ class Client : GameAppletFrame() {
                     i++
                 }
                 Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == ItemDefinitionLoader.aInboundPacketHeader_2183) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_2183) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-121)
                 if (i == 65535) i = -1
                 var string: String? = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(103.toByte())
@@ -3759,10 +3757,10 @@ class Client : GameAppletFrame() {
                     DelegatingRenderCanvas.anIntArray60!![i_137_ + -1] = i
                     PlayerSequenceSelector.aBooleanArray1214!![i_137_ - 1] = i_138_ == 0
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (MinimapStateReset.aInboundPacketHeader_1871 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_1871 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readSmart(-117)
                 val i_139_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 val i_140_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
@@ -3778,34 +3776,34 @@ class Client : GameAppletFrame() {
                 else if (i == 98) GameAppletFrame.set(string_142_)
                 else {
                     if (string_141_ != "" && ObjectSpawnDecoder.method3455(string_141_, 28280)) {
-                        ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                        InboundPacketHeader.aInboundPacketHeader_6584 = null
                         return true
                     }
                     FixedFunctionMaterialPass.method2144(string_141_, i, (-92).toByte(), i_139_, string_142_, string, string)
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == TimedRecordAccessor.aInboundPacketHeader_7105) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_7105) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 0) DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i] = FloorOverlayDefinition()
                 else {
                     CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197--
                     DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i] = FloorOverlayDefinition(CircleRasterizer.aClass348_Sub49_Sub2_3813!!)
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 MapAreaDefinition.anInt2523 = ResourceLoaderThread.anInt3918
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == AbstractMenuEntryStatics.aInboundPacketHeader_1702) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1702) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
                 val i_143_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 WallSceneEntity.method2397((-126).toByte())
                 ObjectByteSerializerHolder.method1330(i, -19906, i_143_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == CacheStateResetter.aInboundPacketHeader_123) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_123) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 val i_144_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 var i_145_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
@@ -3828,10 +3826,10 @@ class Client : GameAppletFrame() {
                     TextureDefinitionCache.aHashtable_2959!!.method3483(125.toByte(), l, class348_sub44_148_)
                     i_147_++
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == TimedRecordAccessor.aInboundPacketHeader_7106) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_7106) {
                 while ((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) < RadialTextureNode.anInt9341) {
                     val bool_149_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                     var string: String? = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-95).toByte())
@@ -3927,19 +3925,19 @@ class Client : GameAppletFrame() {
                     }
                     if (bool_156_) break
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (CompositeRgbNoiseTexture.aInboundPacketHeader_8683 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_8683 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 if (SkeletalAnimFrameLoader.aFrame476 != null) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val `is` = ByteArray(RadialTextureNode.anInt9341)
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3409(RadialTextureNode.anInt9341, `is`, 0, -32769)
                 val string = ByteBuffer.method3546(`is`, 0, RadialTextureNode.anInt9341, 0)
                 ChatCommandProcessor.method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, true, 99)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (FixedFunctionWaterPass.aInboundPacketHeader_7363 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_7363 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 if (i == 65535) i = -1
                 val i_163_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
@@ -3947,31 +3945,31 @@ class Client : GameAppletFrame() {
                 val i_165_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_166_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 TextureTileRenderer.method2947(true, i_165_, i, i_163_, i_164_, i_166_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == GraphicsOptionState.aInboundPacketHeader_3143) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_3143) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_167_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-83)
                 ProjectedGroundDecor.aVarpStore_10209!!.method1313(42.toByte(), i_167_.toInt(), i)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == GroundDecorEntity.aInboundPacketHeader_8756) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_8756) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 if (i == 65535) i = -1
                 val i_168_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 WallSceneEntity.method2397((-127).toByte())
                 SpriteStore.method304(i, 437853543, i_168_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == GroundDecorRenderer.aInboundPacketHeader_3641) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_3641) {
                 method128(InputStream_Sub2.aRgbColorPalette_6977, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == MapSceneIconDef.aInboundPacketHeader_2860) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_2860) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 if (i == 65535) i = -1
                 val i_169_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
@@ -3979,24 +3977,24 @@ class Client : GameAppletFrame() {
                 val i_171_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_172_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 SoundChannelMixer.method2090(i_169_, i_172_, false, (-35).toByte(), i_171_, i_170_, i)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
 
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == ConnectionStateRefs.aInboundPacketHeader_318) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_318) {
                 ColourKeyTextureNode.method3120(-86)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return false
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == ParticleProcessor.aInboundPacketHeader_4272) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_4272) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-127)
                 val i_173_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 WallSceneEntity.method2397((-128).toByte())
                 OggCacheStream.method524(i_173_, true, i, -127)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (CircleDrawer.aInboundPacketHeader_2693 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_2693 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val bool_174_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(107.toByte())
                 var string_175_ = string
@@ -4024,10 +4022,10 @@ class Client : GameAppletFrame() {
                     else if (i == 1) TrackedGroundDecor.method2477("<img=0>" + string_175_, string_181_, (-112).toByte(), i_177_, "<img=0>" + string, null, 18, 0, string)
                     else TrackedGroundDecor.method2477(string_175_, string_181_, (-118).toByte(), i_177_, string, null, 18, 0, string)
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == GlEnvMappedWaterPass.aInboundPacketHeader_7367) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_7367) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 val i_182_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-122).toByte())
                 val i_183_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-95).toByte())
@@ -4035,22 +4033,22 @@ class Client : GameAppletFrame() {
                 val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i_182_.toLong(), -6008) as RegionSceneShifter?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(i != (class348_sub41.anInt7050), false, class348_sub41, 2533)
                 MapTileShape.method2661(i, i_182_, i_183_, false, 2)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == ScrollingWidgetComponentNode.aInboundPacketHeader_8384) {
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_8384) {
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 MinimapSpriteRenderer.anInt4930 = 1
                 Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == PingHostListHolder.aInboundPacketHeader_2335) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_2335) {
                 WallSceneEntity.method2397((-125).toByte())
                 MinimapStateReset.method1122(0)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (MinimapRectClipper.aInboundPacketHeader_220 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_220 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_184_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_185_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
@@ -4063,15 +4061,15 @@ class Client : GameAppletFrame() {
                         i_186_++
                     }
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == WaterDetailOptionState.aInboundPacketHeader_5992) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_5992) {
                 method128(SplashImageLoadable.aRgbColorPalette_4689, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (TerrainShadowBuilderGl3.aInboundPacketHeader_7015 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_7015 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 GradientLookupEffect.anInt9200 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(126.toByte())
                 FileExistsCondition.anInt4786 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 BufferedMessageQueue.anInt3581 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
@@ -4093,85 +4091,85 @@ class Client : GameAppletFrame() {
                     if ((BufferedMessageQueue.anInt3581 <= class348_sub27.anInt6905) && (class348_sub27.anInt6905 < BufferedMessageQueue.anInt3581 - -8) && (class348_sub27.anInt6896 >= FileExistsCondition.anInt4786) && (class348_sub27.anInt6896 < FileExistsCondition.anInt4786 + 8) && (class348_sub27.anInt6899 == GradientLookupEffect.anInt9200)) class348_sub27.anInt6893 = 0
                     class348_sub27 = SpriteRenderEntry.aNodeDeque_9711!!.method1990(31.toByte()) as? MultiFieldRecord?
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == TextureQualityOptionState.aInboundPacketHeader_5997) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_5997) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val `is` = IntArray(4)
                 for (i_192_ in 0..3) `is`[i_192_] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_193_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_193_.toLong(), -6008) as NpcReference?)
                 if (class348_sub22 != null) SoundBankPatch.method2931(i, 110.toByte(), `is`, (class348_sub22.aNpc_6859))
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == CellNoiseTextureNode.aInboundPacketHeader_9285) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_9285) {
                 KeyboardLayoutCache.anInt3306 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (GradientMapTextureNode.aInboundPacketHeader_9324 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_9324 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-104).toByte())
                 val i_194_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-92).toByte())
                 var i_195_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-127)
                 if (i_195_ == 65535) i_195_ = -1
                 HeadIconRenderer.method1212(i_194_, i_195_, -1, i)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (LocTypeDefinition.aInboundPacketHeader_4015 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_4015 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3363(-13309)
                 var i_196_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-124)
                 if (i_196_ == 65535) i_196_ = -1
                 val i_197_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 ClickFeedbackTask.method1352(i_196_, i_197_, i, (-98).toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (GradientLookupEffect.aInboundPacketHeader_9197 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_9197 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-43).toByte())
                 val string_198_ = CompositeRgbNoiseTexture.method572((InvertTextureNode.method3136(64.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813))), 23034)
                 FixedFunctionMaterialPass.method2144(string, 6, (-101).toByte(), 0, string_198_, string, string)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == ScrollingWidgetComponentNode.aInboundPacketHeader_8385) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_8385) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-124).toByte())
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-97).toByte())
                 WallSceneEntity.method2397((-125).toByte())
                 method1803(i, string, -32394)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == aInboundPacketHeader_2305) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_2305) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 val i_199_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_200_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 WallSceneEntity.method2397((-126).toByte())
                 AbstractGameSocketStatics.method1703(5, i, i_200_, 4, i_199_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (LocConfigModelBuilder.aInboundPacketHeader_4500 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_4500 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val bool_201_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte()) == 1)
                 WallSceneEntity.method2397((-124).toByte())
                 ObjectSpawnDecoder.aBoolean1801 = bool_201_
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == NoiseTextureGenerator.aInboundPacketHeader_1068) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1068) {
                 LocDefinitionCache.method2038(-103)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (HashTileShape.aInboundPacketHeader_8817 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_8817 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 ShaderProgram.anInt7276 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(69.toByte())
                 BufferToggleState.anInt3713 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-82).toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == BlankTextureNode.aInboundPacketHeader_9257) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_9257) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val i_202_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(127)
                 WallSceneEntity.method2397((-125).toByte())
@@ -4181,41 +4179,41 @@ class Client : GameAppletFrame() {
                 method1713(false, 520)
                 ChatCommandProcessor.method703(RenderNodeStatics.anInt9721)
                 for (i_203_ in 0..99) OpenGlModel.aBooleanArray2076!![i_203_] = true
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == WalkingTypeUtil.aInboundPacketHeader_3307) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_3307) {
                 if (!RsaPacketDecoder.method2672(WorldMapRenderer.anInt4674, -105)) RegionSceneLoader.anInt3699 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) * 30)
                 else RegionSceneLoader.anInt3699 = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944).toFloat() * 2.5f).toInt()
                 TurbulenceTextureNode.anInt9313 = ResourceLoaderThread.anInt3918
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == aInboundPacketHeader_6383) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_6383) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 if (i == 65535) i = -1
                 val i_204_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val i_205_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_206_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 SoundChannelMixer.method2090(i_204_, 256, true, (-35).toByte(), i_206_, i_205_, i)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (SequencedWallEntity.aInboundPacketHeader_10149 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_10149 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-16)
                 if (i == 65535) i = -1
                 val i_207_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 WallSceneEntity.method2397((-125).toByte())
                 AbstractGameSocketStatics.method1703(1, i_207_, i, 4, -1)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == NanoTimer.aInboundPacketHeader_843) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_843) {
                 method128(NpcUpdateProcessor.aRgbColorPalette_1519, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == LightingOptionState.aInboundPacketHeader_5883) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_5883) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
                 if (i == 65535) i = -1
                 var i_208_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
@@ -4234,29 +4232,29 @@ class Client : GameAppletFrame() {
                     else class348_sub44_212_ = PackedFlagsAccessor(i_210_, -1)
                     TextureDefinitionCache.aHashtable_2959!!.method3483(114.toByte(), l, class348_sub44_212_)
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == HeadIconRenderer.aInboundPacketHeader_2068) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_2068) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-103)
                 val i_213_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 ProjectedGroundDecor.aVarpStore_10209!!.method1316((-124).toByte(), i, i_213_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == ArchiveResourceProvider.aInboundPacketHeader_6340) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_6340) {
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 += 28
                 if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3352(-25541)) method1365((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + -28, (-126).toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813!!)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == WidgetDefinition.aInboundPacketHeader_250) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_250) {
                 ConfigVarProgress.anInt4816 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 TurbulenceTextureNode.anInt9313 = ResourceLoaderThread.anInt3918
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (MapSceneDefLoader.aInboundPacketHeader_2483 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_2483 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(20.toByte())
                 val i_214_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val i_215_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
@@ -4270,24 +4268,24 @@ class Client : GameAppletFrame() {
                     i_217_++
                 }
                 LoadingScreenState.anIntArray2632!![WhirlpoolHash.method1166(31, EmoteDefCache.anInt4086++)] = i_214_
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (WorldListEntry.aInboundPacketHeader_315 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_315 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 method128(RgbColorPalette.aRgbColorPalette_2157, 8.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ItemNameResolver.aInboundPacketHeader_4998 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_4998 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(10)
                 val i_218_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(70.toByte())
                 val bool_219_ = (0x1 and i_218_) == 1
                 RangeThresholdTextureNode.method3054(bool_219_, i, -128)
                 LoadingScreenState.anIntArray2633!![WhirlpoolHash.method1166(31, DualMaterialContainer.anInt1631++)] = i
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (CombineTextureNode.aInboundPacketHeader_9225 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_9225 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_220_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 val bool_221_ = (i_220_ and 0x1) == 1
@@ -4302,10 +4300,10 @@ class Client : GameAppletFrame() {
                     DelegatingRenderCanvas.method121(i, -364570972, bool_221_, i_222_, i_224_, -1 + i_223_)
                 }
                 LoadingScreenState.anIntArray2633!![WhirlpoolHash.method1166(31, DualMaterialContainer.anInt1631++)] = i
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (BinaryGraphicsOptionState.aInboundPacketHeader_5950 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_5950 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-113).toByte())
                 var i_225_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(127.toByte())
                 if (i == 255) {
@@ -4313,23 +4311,23 @@ class Client : GameAppletFrame() {
                     i = -1
                 }
                 method1825(120, i_225_, i)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (GlGroundShaderPass.aInboundPacketHeader_7398 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_7398 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntLittle((-124).toByte())
                 val i_226_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 WallSceneEntity.method2397((-124).toByte())
                 MinimapPolygonDrawer.method467(i_226_, -18075, i)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (UnusedToStringStub.aInboundPacketHeader_2717 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_2717 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 NpcUpdateProcessor.method856(63.toByte())
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (BasicGlRenderPass.aInboundPacketHeader_7301 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_7301 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val bool_227_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1)
                 val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString(89.toByte())
                 var string_228_ = string
@@ -4344,25 +4342,25 @@ class Client : GameAppletFrame() {
                     else if (i != 1) TrackedGroundDecor.method2477(string_228_, string_231_, (-119).toByte(), i_229_, string, null, 25, 0, string)
                     else TrackedGroundDecor.method2477("<img=0>" + string_228_, string_231_, (-125).toByte(), i_229_, "<img=0>" + string, null, 25, 0, string)
                 }
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ScreenBorderFiller.aInboundPacketHeader_1959 == ModelVertexColorBuffer.aInboundPacketHeader_6584) {
+            if (InboundPacketHeader.aInboundPacketHeader_1959 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_232_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-110)
                 WallSceneEntity.method2397((-124).toByte())
                 CipheredPacketBuffer.method3411(i, 12, i_232_)
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == TextureAtlasState.aInboundPacketHeader_4421) {
+            if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_4421) {
                 Client.anInt2986 = ResourceLoaderThread.anInt3918
                 if (RadialTextureNode.anInt9341 == 0) {
                     ByteArrayPool.anInt496 = 0
                     MinimapShapeDrawer.aString863 = null
                     HostPingThread.aWorldListEntryArray2261 = null
                     CameraSplineNode.aString6854 = null
-                    ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                    InboundPacketHeader.aInboundPacketHeader_6584 = null
                     return true
                 }
                 CameraSplineNode.aString6854 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-112).toByte())
@@ -4373,7 +4371,7 @@ class Client : GameAppletFrame() {
                 ModelDefinitionCache.aByte2871 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-90)
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 if (i == 255) {
-                    ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                    InboundPacketHeader.aInboundPacketHeader_6584 = null
                     return true
                 }
                 ByteArrayPool.anInt496 = i
@@ -4410,10 +4408,10 @@ class Client : GameAppletFrame() {
                     if (bool_235_) break
                 }
                 HostPingThread.aWorldListEntryArray2261 = worldListEntries
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            LinkedListIterator.method1242(("T1 - " + (if (ModelVertexColorBuffer.aInboundPacketHeader_6584 == null) -1 else ModelVertexColorBuffer.aInboundPacketHeader_6584!!.method1058(110.toByte())) + "," + (if (GraphicsOptionState.aInboundPacketHeader_3145 == null) -1 else GraphicsOptionState.aInboundPacketHeader_3145!!.method1058(127.toByte())) + "," + (if (SineWaveTextureNode.aInboundPacketHeader_9456 == null) -1 else SineWaveTextureNode.aInboundPacketHeader_9456!!.method1058(125.toByte())) + " - " + RadialTextureNode.anInt9341), null, 15004)
+            LinkedListIterator.method1242(("T1 - " + (if (InboundPacketHeader.aInboundPacketHeader_6584 == null) -1 else InboundPacketHeader.aInboundPacketHeader_6584!!.method1058(110.toByte())) + "," + (if (InboundPacketHeader.aInboundPacketHeader_3145 == null) -1 else InboundPacketHeader.aInboundPacketHeader_3145!!.method1058(127.toByte())) + "," + (if (InboundPacketHeader.aInboundPacketHeader_9456 == null) -1 else InboundPacketHeader.aInboundPacketHeader_9456!!.method1058(125.toByte())) + " - " + RadialTextureNode.anInt9341), null, 15004)
             NormalMapTextureNode.method3141(false, 11.toByte())
             return true
         }
@@ -4428,8 +4426,6 @@ class Client : GameAppletFrame() {
                 Client.aRgbColorPalette_10437 = null
             }
         }
-        var aInboundPacketHeader_2305: InboundPacketHeader? = InboundPacketHeader(57, 10)
-        var aInboundPacketHeader_9552: InboundPacketHeader? = InboundPacketHeader(72, 0)
 
         var anInt9549: Int = 0
         fun method3197(i: Int, i_3_: Byte): Boolean {
@@ -4498,7 +4494,7 @@ class Client : GameAppletFrame() {
                 i_3_ = SceneObjectAnimator.anInt3062
                 i_4_ = ScrollingWidgetComponentNode.anInt8387
             }
-            if (bool != false) aInboundPacketHeader_4027 = null
+            if (bool != false) InboundPacketHeader.aInboundPacketHeader_4027 = null
             if ((class318_sub1_sub3_sub3.x < 512) || class318_sub1_sub3_sub3.y < 512 || (-512 + GlCubemapLightPass.anInt7319 * 512 <= class318_sub1_sub3_sub3.x) || (-512 + RangeThresholdTextureNode.anInt9109 * 512 <= class318_sub1_sub3_sub3.y)) {
                 class318_sub1_sub3_sub3.anInt10291 = -1
                 class318_sub1_sub3_sub3.anInt10300 = 0
@@ -5326,9 +5322,8 @@ class Client : GameAppletFrame() {
             ClientLoadStateMachine.aJs5Archive_6980 = null
             aNodeDeque_6978 = null
         }
-        var aInboundPacketHeader_6383: InboundPacketHeader? = InboundPacketHeader(11, 6)
         fun method2389(i: Int) {
-            Client.aInboundPacketHeader_6383 = null
+            InboundPacketHeader.aInboundPacketHeader_6383 = null
         }
         var aMapSceneCache_413: MapSceneCache? = null
         fun method322(i: Int) {
@@ -5348,9 +5343,8 @@ class Client : GameAppletFrame() {
             Client.aAbstractGameSocket_9165 = null
         }
         var anIntArray1233: IntArray? = IntArray(1024)
-        var aInboundPacketHeader_1234: InboundPacketHeader? = InboundPacketHeader(54, 4)
         fun method744(i: Byte) {
-            Client.aInboundPacketHeader_1234 = null
+            InboundPacketHeader.aInboundPacketHeader_1234 = null
             anIntArray1233 = null
         }
         var anInt9509: Int = 0
@@ -5369,11 +5363,10 @@ class Client : GameAppletFrame() {
             method1131(117)
         }
         var aShortArray6428: ShortArray? = null
-        var aInboundPacketHeader_6424: InboundPacketHeader? = InboundPacketHeader(82, 4)
         fun method2506(i: Byte) {
             aShortArray6428 = null
             PerlinNoiseTextureNode.anIntArray6432 = null
-            aInboundPacketHeader_6424 = null
+            InboundPacketHeader.aInboundPacketHeader_6424 = null
         }
         var aHudTabPanel_1189: HudTabPanel? = HudTabPanel("LIVE", 0)
 

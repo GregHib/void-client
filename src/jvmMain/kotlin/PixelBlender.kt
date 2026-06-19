@@ -6,7 +6,6 @@ import CompositeRgbNoiseTexture.Companion.method574
 */
 object PixelBlender {
     var anInt3808: Int = 0
-    var aInboundPacketHeader_3809: InboundPacketHeader? = InboundPacketHeader(44, 6)
     var anInt3810: Int = 0
 
     var aBoolean3811: Boolean = false
@@ -22,8 +21,7 @@ object PixelBlender {
 
     @JvmStatic
     fun method2251(i: Int) {
-        if (i != 16711680) aInboundPacketHeader_3809 = null
-        aInboundPacketHeader_3809 = null
+        InboundPacketHeader.aInboundPacketHeader_3809 = null
     }
 
     @JvmStatic

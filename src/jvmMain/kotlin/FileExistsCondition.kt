@@ -38,7 +38,6 @@ class FileExistsCondition internal constructor(js5Archive: Js5Archive?, string: 
         var anInt4776: Int
 
         var anInt4777: Int = 0
-        var aInboundPacketHeader_4779: InboundPacketHeader?
         var anIntArray4780: IntArray?
 
         var anInt4781: Int = 0
@@ -53,7 +52,7 @@ class FileExistsCondition internal constructor(js5Archive: Js5Archive?, string: 
             aFloatArray4772 = null
             anIntArray4780 = null
             if (i.toInt() != -128) method743(113, -98)
-            aInboundPacketHeader_4779 = null
+            InboundPacketHeader.aInboundPacketHeader_4779 = null
             aModelDefinitionCache_4782 = null
         }
 
@@ -79,7 +78,6 @@ class FileExistsCondition internal constructor(js5Archive: Js5Archive?, string: 
             anInt4776 = 0
             aFloatArray4772 = FloatArray(16)
             anIntArray4780 = intArrayOf(104, 120, 136, 168)
-            aInboundPacketHeader_4779 = InboundPacketHeader(76, 6)
         }
     }
 }

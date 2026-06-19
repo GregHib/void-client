@@ -69,7 +69,6 @@ class SlotBinding private constructor(private val aCollisionFlagQuery_3392: Coll
         var aSlotBinding_3424: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
         var aSlotBinding_3425: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
         var aSlotBinding_3426: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1198)
-        var aInboundPacketHeader_3427: InboundPacketHeader? = InboundPacketHeader(93, -2)
 
         var anInt3428: Int = -1
 
@@ -101,7 +100,7 @@ class SlotBinding private constructor(private val aCollisionFlagQuery_3392: Coll
                 aSlotBinding_3402 = null
                 aSlotBinding_3415 = null
                 aSlotBinding_3396 = null
-                aInboundPacketHeader_3427 = null
+                InboundPacketHeader.aInboundPacketHeader_3427 = null
                 aSlotBinding_3422 = null
                 aSlotBinding_3417 = null
             }

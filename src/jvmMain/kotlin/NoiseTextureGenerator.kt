@@ -146,8 +146,6 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
 
     companion object {
 
-        var aInboundPacketHeader_1068: InboundPacketHeader? = InboundPacketHeader(35, 0)
-
         var anInt1070: Int = 0
 
         var anInt1072: Int = 0
@@ -176,7 +174,7 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
             FontMetaRef.aLruByteCache_4327!!.method578(2, i)
             anInt1077++
             ParticleGeometry.aLruByteCache_4417!!.method578(2, i)
-            if (i_49_ != -1) aInboundPacketHeader_1068 = null
+            if (i_49_ != -1) InboundPacketHeader.aInboundPacketHeader_1068 = null
             SceneryDetailOptionState.aLruByteCache_6096!!.method578(2, i)
             EdgeDetectTextureNode.aLruByteCache_9171!!.method578(i_49_ xor 0x2.inv(), i)
         }
@@ -230,8 +228,7 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
 
         @JvmStatic
         fun method548(i: Int) {
-            aInboundPacketHeader_1068 = null
-            if (i != 10) aInboundPacketHeader_1068 = null
+            InboundPacketHeader.aInboundPacketHeader_1068 = null
         }
 
         @JvmStatic

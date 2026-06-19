@@ -26,8 +26,6 @@ class HashTileShape internal constructor(i: Int, i_9_: Int, i_10_: Int, i_11_: I
 
         var aByteArrayArray8816: Array<ByteArray?>? = null
 
-        var aInboundPacketHeader_8817: InboundPacketHeader? = InboundPacketHeader(83, 2)
-
         @JvmStatic
         fun method2729(i: Int, i_3_: Int): Int {
             anInt8813++
@@ -41,7 +39,7 @@ class HashTileShape internal constructor(i: Int, i_9_: Int, i_10_: Int, i_11_: I
             aByteArrayArray8816 = null
             aNodeDeque_8810 = null
             PerlinNoiseTextureNode.aCacheLruCache_8815 = null
-            aInboundPacketHeader_8817 = null
+            InboundPacketHeader.aInboundPacketHeader_8817 = null
         }
     }
 }

@@ -4,7 +4,6 @@
 object MinimapStateReset {
 
     var anInt1870: Int = 0
-    var aInboundPacketHeader_1871: InboundPacketHeader? = InboundPacketHeader(52, -1)
     var anInt1872: Int = 0
 
     var aBooleanArray2374: BooleanArray? = BooleanArray(5)
@@ -22,7 +21,7 @@ object MinimapStateReset {
 
     @JvmStatic
     fun method1123(i: Int) {
-        aInboundPacketHeader_1871 = null
+        InboundPacketHeader.aInboundPacketHeader_1871 = null
         if (i != -1) method1122(-78)
     }
     @JvmStatic

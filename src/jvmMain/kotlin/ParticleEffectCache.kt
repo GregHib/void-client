@@ -34,12 +34,11 @@ class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, 
     }
 
     companion object {
-        var aInboundPacketHeader_3467: InboundPacketHeader? = InboundPacketHeader(45, 8)
         var anInt3469: Int = 0
 
         @JvmStatic
         fun method2045(i: Byte) {
-            aInboundPacketHeader_3467 = null
+            InboundPacketHeader.aInboundPacketHeader_3467 = null
             if (i.toInt() != 62) method2046()
         }
 

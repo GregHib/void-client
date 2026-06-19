@@ -38,10 +38,6 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
 
     companion object {
 
-        var aInboundPacketHeader_5949: InboundPacketHeader? = InboundPacketHeader(69, 12)
-
-        var aInboundPacketHeader_5950: InboundPacketHeader?
-
         var anInt5951: Int = 1339
 
         var anInt5952: Int = 0
@@ -75,9 +71,9 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1769(i: Int) {
-            aInboundPacketHeader_5950 = null
+            InboundPacketHeader.aInboundPacketHeader_5950 = null
             if (i != 100) method1769(-25)
-            aInboundPacketHeader_5949 = null
+            InboundPacketHeader.aInboundPacketHeader_5949 = null
         }
 
         @JvmStatic
@@ -110,7 +106,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 SlotBinding.aSlotBinding_3417!!.method2025(MapArchiveSource(MidiSequencePlayer.aJs5Archive_8926!!), false)
                 SlotBinding.aSlotBinding_3418!!.method2025(MapArchiveSource(ModelBatchBase.aJs5Archive_1897!!), false)
                 SlotBinding.aSlotBinding_3419!!.method2025(MapArchiveSource(ConfigArchiveLoader.aJs5Archive_1434!!), false)
-                SlotBinding.aSlotBinding_3420!!.method2025(MapArchiveSource(aJs5Archive_3146!!), false)
+                SlotBinding.aSlotBinding_3420!!.method2025(MapArchiveSource(ClientLoadStateMachine.aJs5Archive_3146!!), false)
                 SlotBinding.aSlotBinding_3421!!.method2025(MapArchiveSource(NodeDequeStatics.aJs5Archive_3323!!), false)
                 SlotBinding.aSlotBinding_3422!!.method2025(FileExistsCondition((SceneTilePlaneManager.aJs5Archive_233), "huffman"), false)
                 SlotBinding.aSlotBinding_3423!!.method2025(MapArchiveSource(ClientLoadStateMachine.aJs5Archive_6980!!), false)
@@ -160,7 +156,6 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
         }
 
         init {
-            aInboundPacketHeader_5950 = InboundPacketHeader(64, 2)
             anInt5959 = 0
         }
     }

@@ -50,7 +50,6 @@ class MapAreaDefinition {
         var anInt2523: Int = 0
 
         var anInt2524: Int = 0
-        var aInboundPacketHeader_2527: InboundPacketHeader? = InboundPacketHeader(98, -2)
         var anInt2528: Int = 0
 
         var aBufferedMessageQueue_2529: BufferedMessageQueue? = null
@@ -253,7 +252,7 @@ class MapAreaDefinition {
         fun method1421(i: Byte) {
             aBufferedMessageQueue_2529 = null
             if (i.toInt() != -85) method1421(39.toByte())
-            aInboundPacketHeader_2527 = null
+            InboundPacketHeader.aInboundPacketHeader_2527 = null
         }
     }
 }

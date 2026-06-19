@@ -62,13 +62,12 @@ class FogOptionState : GraphicsOptionState {
 
         var anInt6055: Int = 0
 
-        var aInboundPacketHeader_6056: InboundPacketHeader? = InboundPacketHeader(26, 11)
 
         @JvmStatic
         fun method1807(i: Byte) {
             anIntArrayArray6054 = null
             if (i.toInt() != -121) anIntArrayArray6054 = null
-            aInboundPacketHeader_6056 = null
+            InboundPacketHeader.aInboundPacketHeader_6056 = null
         }
     }
 }

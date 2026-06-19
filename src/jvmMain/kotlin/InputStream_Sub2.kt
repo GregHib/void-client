@@ -14,8 +14,6 @@ class InputStream_Sub2 : InputStream() {
 
         var anInt81: Int = 0
 
-        var aInboundPacketHeader_82: InboundPacketHeader? = InboundPacketHeader(71, 7)
-
         var aDoublyLinkedNodeList_83: DoublyLinkedNodeList? = DoublyLinkedNodeList()
         var aFloatArray84: FloatArray? = FloatArray(4)
 
@@ -26,7 +24,7 @@ class InputStream_Sub2 : InputStream() {
             if (i.toInt() != 118) Companion.method128(null, (-48).toByte())
             aFloatArray84 = null
             aDoublyLinkedNodeList_83 = null
-            aInboundPacketHeader_82 = null
+            InboundPacketHeader.aInboundPacketHeader_82 = null
         }
 
         @JvmStatic
@@ -209,7 +207,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_88_ = FileExistsCondition.anInt4786 - -(0x7 and i_86_)
                     if (NpcEntityUpdater.method2112(i.toInt() xor 0x73, WidgetRedrawTracker.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && GlCubemapLightPass.anInt7319 > i_87_ && (i_88_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
                 } else {
-                    if (i.toInt() != 8) aInboundPacketHeader_82 = null
+                    if (i.toInt() != 8) InboundPacketHeader.aInboundPacketHeader_82 = null
                     if (GlShaderObjectHandle.aRgbColorPalette_515 == rgbColorPalette) {
                         val i_89_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_90_ = FileExistsCondition.anInt4786 + (0x7 and i_89_)

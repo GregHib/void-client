@@ -10,7 +10,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
         FacingDirectionNode.aRenderer6654!!.method3628(-2 + i, i_17_, 4 + this.aWorldMapLabel_4635!!.anInt4971, 2 + this.aWorldMapLabel_4635!!.anInt4963, ((this.aWorldMapLabel_4635 as WorldMapTextLabel).anInt8585), 0)
         anInt8360++
         FacingDirectionNode.aRenderer6654!!.method3628(i - 1, 1 + i_17_, this.aWorldMapLabel_4635!!.anInt4971 - -2, this.aWorldMapLabel_4635!!.anInt4963, 0, 0)
-        if (i_16_ > -6) aInboundPacketHeader_8365 = null
+        if (i_16_ > -6) InboundPacketHeader.aInboundPacketHeader_8365 = null
     }
 
     public override fun method182(i: Int, i_18_: Int, i_19_: Int, bool: Boolean) {
@@ -47,8 +47,6 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
 
         var anInt8364: Int = 0
 
-        var aInboundPacketHeader_8365: InboundPacketHeader? = InboundPacketHeader(30, -1)
-
         @JvmStatic
         fun method1164(i: Byte) {
             if (i <= -42) {
@@ -84,7 +82,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
             if (i == 30) {
                 aBoundsConstraintEntry_8356 = null
                 aBooleanArrayArrayArray8361 = null
-                aInboundPacketHeader_8365 = null
+                InboundPacketHeader.aInboundPacketHeader_8365 = null
             }
         }
 

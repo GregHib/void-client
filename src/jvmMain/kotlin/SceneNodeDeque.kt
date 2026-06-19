@@ -7,6 +7,7 @@ import ColourKeyTextureNode.Companion.method3120
 import TileTextureNode.Companion.method3131
 import FlipTextureNode.Companion.method3064
 import FireParticleStream.Companion.method132
+import InboundPacketHeader
 import OpenGlTerrainTile.Companion.method4002
 import NativeShaderProgram.Companion.method3439
 import java.io.IOException
@@ -179,7 +180,7 @@ class SceneNodeDeque {
                     if (NpcDefinition.anInt2955 == 2) {
                         if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 == 2) throw IOException()
                         if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 != 1) return
-                        Client.aAbstractGameSocket_9165 = NullOggStream.method2982((((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
+                        Client.aAbstractGameSocket_9165 = SocketGameConnection.method2982((((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
                         FrameStatsReset.aLinkedQueueNode_5800 = null
                         method2739(0)
                         val class348_sub47 = ProjectileSpawner.method1478(true)
@@ -435,7 +436,7 @@ class SceneNodeDeque {
                                 GlRectangleTexture.method254(2, (-92).toByte())
                                 method1804(8839)
                                 ByteBufferStatics.method3379(2, 7)
-                                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                                InboundPacketHeader.aInboundPacketHeader_6584 = null
                                 return
                             }
                         }
@@ -451,7 +452,7 @@ class SceneNodeDeque {
                                 if (!Client.aAbstractGameSocket_9165!!.method1705(1, 110)) return
                                 Client.aAbstractGameSocket_9165!!.method1701(1, 3, (-127).toByte(), (class348_sub49_sub2.aByteArray7154!!))
                             }
-                            ModelVertexColorBuffer.aInboundPacketHeader_6584 = (method248(-11271)[class348_sub49_sub2.method3407(15295)])
+                            InboundPacketHeader.aInboundPacketHeader_6584 = (method248(-11271)[class348_sub49_sub2.method3407(15295)])
                             RadialTextureNode.anInt9341 = class348_sub49_sub2.readUnsignedShort(842397944)
                             NpcDefinition.anInt2955 = 10
                         }
@@ -465,10 +466,10 @@ class SceneNodeDeque {
                                 FrameStatsReset.method1135(0)
                                 SimpleToggleOptionState.method1741(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                 Renderer.anInt4581 = -1
-                                if (ModelVertexColorBuffer.aInboundPacketHeader_6584 != WorldListEntry.aInboundPacketHeader_304) method3120(-92)
+                                if (InboundPacketHeader.aInboundPacketHeader_6584 != InboundPacketHeader.aInboundPacketHeader_304) method3120(-92)
                                 else RegionMapDecoder.method853(99.toByte())
                                 if (i_13_ != CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("lswp pos:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_13_)
-                                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                                InboundPacketHeader.aInboundPacketHeader_6584 = null
                             }
                         } else {
                             val i_14_ = -128 / (-i / 53)
@@ -488,7 +489,7 @@ class SceneNodeDeque {
                                     WidgetRedrawTracker.method2330(86.toByte())
                                     SimpleToggleOptionState.method1741(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                     if (i_15_ != (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197)) throw RuntimeException("lswpr pos:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_15_)
-                                    ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                                    InboundPacketHeader.aInboundPacketHeader_6584 = null
                                 }
                             }
                         }

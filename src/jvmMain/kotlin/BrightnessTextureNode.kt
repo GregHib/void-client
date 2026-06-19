@@ -27,7 +27,6 @@ class BrightnessTextureNode internal constructor(i: Int) : AbstractProceduralTex
 
     companion object {
 
-        var aInboundPacketHeader_9216: InboundPacketHeader? = InboundPacketHeader(91, 2)
 
         var anInt9217: Int = 0
 
@@ -47,15 +46,14 @@ class BrightnessTextureNode internal constructor(i: Int) : AbstractProceduralTex
 
         @JvmStatic
         fun method3085(i: Int) {
-            aInboundPacketHeader_9216 = null
-            if (i != 0) aInboundPacketHeader_9216 = null
+            InboundPacketHeader.aInboundPacketHeader_9216 = null
         }
 
         @JvmStatic
         fun method3086(i: Int, class348_sub16_sub3: MidiSequencePlayer?, i_5_: Int, js5Archive: Js5Archive?, bool: Boolean, i_6_: Int, i_7_: Int) {
             try {
                 anInt9219++
-                if (i != 2) aInboundPacketHeader_9216 = null
+                if (i != 2) InboundPacketHeader.aInboundPacketHeader_9216 = null
                 method2732(i_6_, i_7_, bool, 96, js5Archive, i_5_)
                 GlBufferObject.aClass348_Sub16_Sub3_4743 = class348_sub16_sub3
             } catch (runtimeexception: RuntimeException) {

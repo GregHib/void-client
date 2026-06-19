@@ -48,14 +48,13 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
     }
 
     override fun method12(i: Byte): Long {
-        if (i.toInt() != 42) aInboundPacketHeader_4707 = null
+        if (i.toInt() != 42) InboundPacketHeader.aInboundPacketHeader_4707 = null
         anInt4712++
         return 0L
     }
 
     companion object {
         var anInt4706: Int = 0
-        var aInboundPacketHeader_4707: InboundPacketHeader?
         var anIntArray4709: IntArray? = IntArray(2048)
         var anInt4710: Int = 0
         var anInt4711: Int = 0
@@ -157,11 +156,10 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
         fun method1154(i: Byte) {
             val i_23_ = -93 / ((i - -75) / 36)
             anIntArray4709 = null
-            aInboundPacketHeader_4707 = null
+            InboundPacketHeader.aInboundPacketHeader_4707 = null
         }
 
         init {
-            aInboundPacketHeader_4707 = InboundPacketHeader(39, 8)
             anInt4718 = 0
         }
     }

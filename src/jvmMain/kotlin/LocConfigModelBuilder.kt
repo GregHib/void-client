@@ -203,8 +203,6 @@ class LocConfigModelBuilder {
 
         var anInt4497: Int = 0
 
-        var aInboundPacketHeader_4500: InboundPacketHeader? = InboundPacketHeader(117, 1)
-
         var anInt4505: Int = 0
 
         var anInt4509: Int = 0
@@ -215,7 +213,7 @@ class LocConfigModelBuilder {
         @JvmStatic
         fun method3560(i: Int) {
             if (i != -13) method3563(-34, 21.toByte(), -111)
-            aInboundPacketHeader_4500 = null
+            InboundPacketHeader.aInboundPacketHeader_4500 = null
         }
 
         @JvmStatic

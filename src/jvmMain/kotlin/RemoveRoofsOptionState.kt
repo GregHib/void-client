@@ -51,8 +51,6 @@ class RemoveRoofsOptionState : GraphicsOptionState {
 
         var anInt6057: Int = 0
 
-        var aInboundPacketHeader_6058: InboundPacketHeader?
-
         var anInt6059: Int = 0
 
         var anInt6060: Int = 0
@@ -195,12 +193,11 @@ class RemoveRoofsOptionState : GraphicsOptionState {
             anIntArray6062 = null
             val i_39_ = 41 % ((i - -32) / 32)
             anIntArray6061 = null
-            aInboundPacketHeader_6058 = null
+            InboundPacketHeader.aInboundPacketHeader_6058 = null
         }
 
         init {
             anIntArray6061 = IntArray(32)
-            aInboundPacketHeader_6058 = InboundPacketHeader(46, -1)
         }
     }
 }

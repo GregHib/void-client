@@ -5427,19 +5427,17 @@ object ChatCommandProcessor {
     fun method1944(i: Int) {
         anIntArray3295 = null
     }
-    var aInboundPacketHeader_4388: InboundPacketHeader? = InboundPacketHeader(3, 3)
     @JvmStatic
     fun method3478(bool: Boolean) {
-        aInboundPacketHeader_4388 = null
+        InboundPacketHeader.aInboundPacketHeader_4388 = null
     }
-    var aInboundPacketHeader_9550: InboundPacketHeader? = InboundPacketHeader(109, 7)
 
     var aShort9555: Short = 1
 
     @JvmStatic
     fun method3199(i: Int) {
-        ChatCommandProcessor.aInboundPacketHeader_9550 = null
-        Client.aInboundPacketHeader_9552 = null
+        InboundPacketHeader.aInboundPacketHeader_9550 = null
+        InboundPacketHeader.aInboundPacketHeader_9552 = null
         SpriteMaskShape.aFontMetaRef_9553 = null
         ChatCommandProcessor.aString9554 = null
     }

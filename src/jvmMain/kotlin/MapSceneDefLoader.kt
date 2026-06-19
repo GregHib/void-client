@@ -60,7 +60,6 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         var anInt2481: Int = 0
 
         var anInt2482: Int = 0
-        var aInboundPacketHeader_2483: InboundPacketHeader?
         var anInt2484: Int = 0
         var anInt2485: Int = 0
         var anInt2486: Int = 0
@@ -136,14 +135,13 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
 
         @JvmStatic
         fun method1395(i: Byte) {
-            aInboundPacketHeader_2483 = null
+            InboundPacketHeader.aInboundPacketHeader_2483 = null
             aCharArray2488 = null
             aProjectileFactory_2489 = null
             if (i.toInt() != 82) method1394(120, -36, -100)
         }
 
         init {
-            aInboundPacketHeader_2483 = InboundPacketHeader(47, 6)
             aProjectileFactory_2489 = ProjectileFactory(3, 2)
         }
     }

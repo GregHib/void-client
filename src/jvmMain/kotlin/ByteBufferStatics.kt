@@ -5,8 +5,8 @@ import CameraConfigDefinition.Companion.method1922
 import ChatCommandProcessor.method703
 import CombineTextureNode.Companion.method3088
 import GlTextureBase.Companion.method235
-import GraphicsOptionState.Companion.method1713
-import ChatCommandProcessor.aShort9555
+import ChatEffectsOptionState.Companion.method1728
+import GraphicsOptionState.Companion.anInt3137
 import HeadIconRenderer.Companion.method1213
 import LoadProgressCounters.Companion.method1372
 import LoadingScreenImageNode.Companion.method3177
@@ -93,6 +93,12 @@ object ByteBufferStatics {
             CompositeRgbNoiseTexture.anInt8685 = CollisionMapAccessor.anInt3550 shl 9
         } else CameraSplineNode.method2954(62.toByte())
         SceneObjectSpawner.method773(true)
+    }
+
+    @JvmStatic
+    fun method1713(bool: Boolean, i: Int) {
+        method1728(GameDisplayManager.anInt10432, -1, RenderNodeStatics.anInt9721, bool, LocTypeDefinition.anInt4017)
+        if (i == 520) anInt3137++
     }
 
     fun method3379(i: Int, i_71_: Int) {

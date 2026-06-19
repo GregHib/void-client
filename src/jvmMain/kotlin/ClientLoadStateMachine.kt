@@ -11,6 +11,9 @@ import GlTexture2DRegion.Companion.method3553
 import WorldMapLabel.Companion.method3568
 import ScrollbarComponent.Companion.method184
 import GameClock.method599
+import GraphicsOptionState.Companion.aByteArray3144
+import CacheArchiveIndexLoader.Companion.aItemDefinitionLoader_3147
+import WorldMapScene.Companion.method1709
 import MapRegionLoader.Companion.method752
 import NativeRenderer.Companion.method3886
 import NativeRenderer.Companion.method3896
@@ -142,7 +145,7 @@ object ClientLoadStateMachine {
             ModelBatchBase.aJs5Archive_1897 = WorldMapTextLabel.method3571(false, 24, (-23).toByte(), 1)
             ConfigArchiveLoader.aJs5Archive_1434 = WorldMapTextLabel.method3571(false, 25, (-23).toByte(), 1)
             KeyEventNode.aJs5Archive_4770 = WorldMapTextLabel.method3571(true, 26, (-23).toByte(), 1)
-            GraphicsOptionState.aJs5Archive_3146 = WorldMapTextLabel.method3571(false, 27, (-23).toByte(), 1)
+            ClientLoadStateMachine.aJs5Archive_3146 = WorldMapTextLabel.method3571(false, 27, (-23).toByte(), 1)
             FixedFunctionWaterPass.aJs5Archive_7362 = WorldMapTextLabel.method3571(true, 28, (-23).toByte(), 1)
             NodeDequeStatics.aJs5Archive_3323 = WorldMapTextLabel.method3571(false, 29, (-23).toByte(), 1)
             Crc64Hashable.aJs5Archive_4984 = WorldMapTextLabel.method3571(true, 30, (-23).toByte(), 1)
@@ -179,7 +182,7 @@ object ClientLoadStateMachine {
             SourceRowTextureNode.aRenderConfig9113 = TextureMetadataProvider(KeyEventNode.aJs5Archive_4770, WorldMapTextLabel.aJs5Archive_8589, CameraRotationStub.aJs5Archive_322)
             ProjectionCameraTransform.aEmoteDefCache_5764 = EmoteDefCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             OpenGlModel.aNpcDefinitionCache_5558 = NpcDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            GraphicsOptionState.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
+            CacheArchiveIndexLoader.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
             RegionTileNode.aCacheArchiveIndexLoader_6653 = CacheArchiveIndexLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, VideoAdChecker.aJs5Archive_3183)
             RenderConfigFactory.aLocDefinitionCache_2979 = LocDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             Tooltip.aParticleDefLoader_4460 = ParticleDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
@@ -210,7 +213,7 @@ object ClientLoadStateMachine {
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2008(i + 28539, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)
             ProjectedGroundDecor.aVarpStore_10209 = VarpStore()
             method3038(-1)
-            TextureLoadExceptionStatics.method4011(i + 29684, GraphicsOptionState.aJs5Archive_3146)
+            TextureLoadExceptionStatics.method4011(i + 29684, ClientLoadStateMachine.aJs5Archive_3146)
             ShortKeyNode.method3004(RasterSprite.aJs5Archive_5207, false, SourceRowTextureNode.aRenderConfig9113)
             val huffmanCodec = HuffmanCodec(SceneTilePlaneManager.aJs5Archive_233!!.method391("huffman", "", -29832)!!)
             method3896(huffmanCodec, 13.toByte())
@@ -345,5 +348,16 @@ object ClientLoadStateMachine {
         anInt2152++
         if (ClientLoadStateMachine.aSoundChannelMixer_7042 != null) ClientLoadStateMachine.aSoundChannelMixer_7042!!.method2093(true)
         if (VarbitDefLoader.aSoundChannelMixer_2596 != null) VarbitDefLoader.aSoundChannelMixer_2596!!.method2093(true)
+    }
+
+    var aJs5Archive_3146: Js5Archive? = null
+    @JvmStatic
+    fun method1715(i: Int) {
+        InboundPacketHeader.aInboundPacketHeader_3145 = null
+        InboundPacketHeader.aInboundPacketHeader_3143 = null
+        ClientLoadStateMachine.aJs5Archive_3146 = null
+        InboundPacketHeader.aInboundPacketHeader_3135 = null
+        aByteArray3144 = null
+        aItemDefinitionLoader_3147 = null
     }
 }

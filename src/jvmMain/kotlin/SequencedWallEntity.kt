@@ -142,7 +142,6 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, npcConfi
     }
 
     companion object {
-        var aInboundPacketHeader_10149: InboundPacketHeader? = InboundPacketHeader(23, 6)
         var anInt10151: Int = 0
         var anInt10152: Int = 0
         var anInt10154: Int = 0
@@ -160,7 +159,6 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, npcConfi
         var anInt10165: Int = 0
         var anInt10166: Int = 0
         var anInt10167: Int = 0
-        var aInboundPacketHeader_10168: InboundPacketHeader?
         var anInt10169: Int = 0
         var anInt10170: Int = 0
         var anInt10171: Int = 0
@@ -168,8 +166,8 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, npcConfi
         @JvmStatic
         fun method2492(i: Int) {
             if (i != 1) anInt10163 = -36
-            aInboundPacketHeader_10149 = null
-            aInboundPacketHeader_10168 = null
+            InboundPacketHeader.aInboundPacketHeader_10149 = null
+            InboundPacketHeader.aInboundPacketHeader_10168 = null
             ActorEntity.anIntArray10172 = null
         }
 
@@ -212,7 +210,6 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, npcConfi
         }
 
         init {
-            aInboundPacketHeader_10168 = InboundPacketHeader(2, 6)
         }
     }
 }

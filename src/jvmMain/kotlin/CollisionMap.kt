@@ -748,7 +748,6 @@ class CollisionMap {
     companion object {
         var anInt4431: Int = 0
         var anInt4432: Int = 0
-        var aInboundPacketHeader_4433: InboundPacketHeader? = InboundPacketHeader(22, 0)
         var anInt4434: Int = 0
         var anInt4435: Int = 0
         var anInt4436: Int = 0
@@ -836,7 +835,7 @@ class CollisionMap {
 
         @JvmStatic
         fun method3508(i: Int) {
-            aInboundPacketHeader_4433 = null
+            InboundPacketHeader.aInboundPacketHeader_4433 = null
             if (i != 2) aFloat4455 = 0.7198636f
         }
     }

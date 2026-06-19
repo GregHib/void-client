@@ -22,7 +22,6 @@ class RenderableEntry {
 
     companion object {
         var anInt4330: Int = 0
-        var aInboundPacketHeader_4331: InboundPacketHeader? = InboundPacketHeader(31, -1)
         var anInt4334: Int = 0
         var anInt4335: Int = 0
         var anInt4336: Int = 0
@@ -30,7 +29,7 @@ class RenderableEntry {
 
         @JvmStatic
         fun method3458(i: Int) {
-            aInboundPacketHeader_4331 = null
+            InboundPacketHeader.aInboundPacketHeader_4331 = null
         }
 
         fun method3459(class348_sub34: IntPair, i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {

@@ -115,7 +115,6 @@ class FixedFunctionWaterPass internal constructor(var_ha_Sub3: NativeRenderer, n
 
         var aJs5Archive_7362: Js5Archive? = null
 
-        var aInboundPacketHeader_7363: InboundPacketHeader?
 
         var anInt7364: Int = 0
         var anInt7365: Int = 0
@@ -195,14 +194,11 @@ class FixedFunctionWaterPass internal constructor(var_ha_Sub3: NativeRenderer, n
 
         @JvmStatic
         fun method3550(i: Byte) {
-            aInboundPacketHeader_7363 = null
+            InboundPacketHeader.aInboundPacketHeader_7363 = null
             aJs5Archive_7362 = null
             val i_20_ = -90 % ((-54 - i) / 60)
             aNamedIdRecord_7361 = null
         }
 
-        init {
-            aInboundPacketHeader_7363 = InboundPacketHeader(103, 8)
-        }
     }
 }

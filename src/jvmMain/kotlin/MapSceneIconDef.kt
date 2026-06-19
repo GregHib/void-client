@@ -32,7 +32,7 @@ class MapSceneIconDef {
 
     fun method1596(i: Int, bool: Boolean, i_18_: Int, var_renderer: Renderer): AbstractModelRenderer? {
         anInt2857++
-        if (i_18_ < 51) aInboundPacketHeader_2860 = null
+        if (i_18_ < 51) InboundPacketHeader.aInboundPacketHeader_2860 = null
         val l = (var_renderer.anInt4567 shl 19 or (this.anInt2853 or (i shl 16) or (if (!bool) 0 else 262144))).toLong()
         var abstractModelRenderer = this.aTextureDefinitionLoader_2851!!.aLruByteCache_1976.method583(l, -87) as AbstractModelRenderer?
         if (abstractModelRenderer != null) return abstractModelRenderer
@@ -70,7 +70,6 @@ class MapSceneIconDef {
         var anInt2858: Int = 0
 
         var aNodeDeque_2859: NodeDeque? = NodeDeque()
-        var aInboundPacketHeader_2860: InboundPacketHeader?
 
         var anInt2861: Int = 1401
 
@@ -110,11 +109,6 @@ class MapSceneIconDef {
         fun method1594(i: Int) {
             aNodeDeque_2859 = null
             if (i != -1966608624) aNodeDeque_2859 = null
-            aInboundPacketHeader_2860 = null
-        }
-
-        init {
-            aInboundPacketHeader_2860 = InboundPacketHeader(106, 8)
         }
     }
 }

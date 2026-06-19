@@ -4,7 +4,6 @@ object AbstractMenuEntryStatics {
 
     var anInt1701: Int = 0
 
-    var aInboundPacketHeader_1702: InboundPacketHeader?
 
     var aAbstractModelRenderer_1706: AbstractModelRenderer? = null
 
@@ -20,7 +19,7 @@ object AbstractMenuEntryStatics {
 
     @JvmStatic
     fun method1030(i: Int) {
-        aInboundPacketHeader_1702 = null
+        InboundPacketHeader.aInboundPacketHeader_1702 = null
         aAbstractModelRenderer_1706 = null
         if (i > -19) method1034(-89, null, null, -72)
     }
@@ -113,9 +112,5 @@ object AbstractMenuEntryStatics {
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("mr.E(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i_5_ + ')'))
         }
-    }
-
-    init {
-        aInboundPacketHeader_1702 = InboundPacketHeader(24, 6)
     }
 }

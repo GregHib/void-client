@@ -8,7 +8,6 @@ object ScriptOpcodeHolder {
 
     var anInt2336: Int = 0
     var anInt2337: Int = 0
-    var aInboundPacketHeader_2338: InboundPacketHeader? = InboundPacketHeader(92, -1)
     var aConfigIdPair_2339: ConfigIdPair? = ConfigIdPair(14, 0)
     var anInt2340: Int = 0
 
@@ -34,7 +33,7 @@ object ScriptOpcodeHolder {
         aConfigIdPair_2349 = null
         aConfigIdPair_2344 = null
         aConfigIdPair_2352 = null
-        aInboundPacketHeader_2338 = null
+        InboundPacketHeader.aInboundPacketHeader_2338 = null
         if (i > -74) method1356(true, null, -116, -47, true, null, true)
         aConfigIdPair_2350 = null
         aConfigIdPairArray2354s = null
@@ -121,7 +120,7 @@ object ScriptOpcodeHolder {
     @JvmStatic
     fun method1334(i: Byte) {
         TypedRecordTable.aProjectileFactory_2307 = null
-        Client.aInboundPacketHeader_2305 = null
+        InboundPacketHeader.aInboundPacketHeader_2305 = null
         MapSceneCache.aAbstractModelRenderer_2309 = null
         aJs5Archive_2306 = null
     }

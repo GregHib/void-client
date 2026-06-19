@@ -1,6 +1,7 @@
 import FixedFunctionMaterialPass.Companion.method2145
 import ModelVertexColorBuffer.Companion.method2739
 import BoxBlurTextureNode.Companion.method3147
+import InboundPacketHeader
 import RenderListTextureNode.Companion.method3153
 
 /* Class312 - Decompiled by JODE
@@ -47,7 +48,6 @@ class WidgetRedrawTracker {
 
     companion object {
         var anInt3924: Int = 0
-        var aInboundPacketHeader_3925: InboundPacketHeader?
         var anInt3926: Int = 0
         var anInt3927: Int = 0
         var anInt3928: Int = 0
@@ -63,12 +63,12 @@ class WidgetRedrawTracker {
             anInt3924++
             if (i.toInt() == 86) {
                 RadialTextureNode.anInt9341 = 0
-                SineWaveTextureNode.aInboundPacketHeader_9456 = null
+                InboundPacketHeader.aInboundPacketHeader_9456 = null
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                AbstractGameSocketStatics.aInboundPacketHeader_3133 = null
-                GraphicsOptionState.aInboundPacketHeader_3145 = null
+                InboundPacketHeader.aInboundPacketHeader_3133 = null
+                InboundPacketHeader.aInboundPacketHeader_3145 = null
                 StringCacheNode.anInt7213 = 0
-                ModelVertexColorBuffer.aInboundPacketHeader_6584 = null
+                InboundPacketHeader.aInboundPacketHeader_6584 = null
                 RegionSceneLoader.anInt3699 = 0
                 method3153(0)
                 method3147(27.toByte())
@@ -94,7 +94,7 @@ class WidgetRedrawTracker {
 
         @JvmStatic
         fun method2331(bool: Boolean) {
-            aInboundPacketHeader_3925 = null
+            InboundPacketHeader.aInboundPacketHeader_3925 = null
             if (bool != true) anInt3930 = -53
         }
 
@@ -105,7 +105,6 @@ class WidgetRedrawTracker {
         }
 
         init {
-            aInboundPacketHeader_3925 = InboundPacketHeader(27, 3)
             anInt3931 = 0
             anInt3932 = 1403
         }

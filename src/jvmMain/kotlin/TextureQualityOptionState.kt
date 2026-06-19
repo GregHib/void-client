@@ -54,8 +54,6 @@ class TextureQualityOptionState : GraphicsOptionState {
 
         var anInt5996: Int = 0
 
-        var aInboundPacketHeader_5997: InboundPacketHeader? = InboundPacketHeader(115, 11)
-
         var anInt5998: Int = 0
 
         var anInt5999: Int = 0
@@ -163,8 +161,7 @@ class TextureQualityOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1785(i: Int) {
-            aInboundPacketHeader_5997 = null
-            if (i != 8) aInboundPacketHeader_5997 = null
+            InboundPacketHeader.aInboundPacketHeader_5997 = null
         }
 
         @JvmStatic

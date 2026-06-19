@@ -48,14 +48,12 @@ class SimpleBinaryOptionState : GraphicsOptionState {
 
         var anInt6074: Int = 0
 
-        var aInboundPacketHeader_6075: InboundPacketHeader? = InboundPacketHeader(89, 0)
-
         var anInt6076: Int = 0
 
         @JvmStatic
         fun method1816(i: Int) {
-            aInboundPacketHeader_6075 = null
-            if (i != 1) aInboundPacketHeader_6075 = null
+            InboundPacketHeader.aInboundPacketHeader_6075 = null
+            if (i != 1) InboundPacketHeader.aInboundPacketHeader_6075 = null
         }
     }
 }

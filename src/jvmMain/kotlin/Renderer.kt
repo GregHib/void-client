@@ -3,7 +3,6 @@ import AbstractBloomEffect.Companion.method2753
 import OggMediaStream.Companion.method515
 import java.awt.Canvas
 import java.awt.Rectangle
-import java.util.*
 
 abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: RenderConfig?) {
 

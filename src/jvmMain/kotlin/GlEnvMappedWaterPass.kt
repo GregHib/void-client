@@ -99,8 +99,6 @@ class GlEnvMappedWaterPass internal constructor(glRenderDevice: GlRenderDevice, 
 
         var anInt7366: Int = 0
 
-        var aInboundPacketHeader_7367: InboundPacketHeader? = InboundPacketHeader(37, 7)
-
         var anInt7368: Int = 0
 
         var anInt7370: Int = 0
@@ -149,7 +147,7 @@ class GlEnvMappedWaterPass internal constructor(glRenderDevice: GlRenderDevice, 
         @JvmStatic
         fun method3552(i: Int) {
             aJs5Archive_7371 = null
-            aInboundPacketHeader_7367 = null
+            InboundPacketHeader.aInboundPacketHeader_7367 = null
             aStringArray7378 = null
             if (i != 87) anInt7379 = 80
         }

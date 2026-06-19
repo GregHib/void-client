@@ -212,7 +212,6 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     }
 
     companion object {
-        var aInboundPacketHeader_3265: InboundPacketHeader?
         var anInt3266: Int = 0
         var anInt3270: Int = 0
         var anInt3272: Int = 0
@@ -239,8 +238,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         @JvmStatic
         fun method1931(bool: Boolean) {
             anIntArray3273 = null
-            if (bool != true) aInboundPacketHeader_3265 = null
-            aInboundPacketHeader_3265 = null
+            InboundPacketHeader.aInboundPacketHeader_3265 = null
             aServerConnectionInfo_3285 = null
         }
 
@@ -360,8 +358,5 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             }
         }
 
-        init {
-            aInboundPacketHeader_3265 = InboundPacketHeader(48, -2)
-        }
     }
 }

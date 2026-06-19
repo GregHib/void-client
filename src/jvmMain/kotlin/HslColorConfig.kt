@@ -91,7 +91,6 @@ class HslColorConfig {
         var anInt328: Int = 0
 
         var anInt329: Int = 0
-        var aInboundPacketHeader_330: InboundPacketHeader? = InboundPacketHeader(65, -1)
 
         var anInt333: Int = 0
 
@@ -102,7 +101,7 @@ class HslColorConfig {
         var anInt340: Int = 0
         @JvmStatic
         fun method293(i: Byte) {
-            aInboundPacketHeader_330 = null
+            InboundPacketHeader.aInboundPacketHeader_330 = null
         }
 
         @JvmStatic

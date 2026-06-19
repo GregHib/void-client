@@ -53,8 +53,6 @@ class WaterDetailOptionState : GraphicsOptionState {
 
         var anIntArrayArray5991: Array<IntArray?>? = arrayOfNulls<IntArray>(6)
 
-        var aInboundPacketHeader_5992: InboundPacketHeader? = InboundPacketHeader(17, 4)
-
         var anInt5994: Int = 0
 
         var aKeyboardLayoutCache_5995: KeyboardLayoutCache? = null
@@ -73,7 +71,7 @@ class WaterDetailOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1780(i: Int) {
-            aInboundPacketHeader_5992 = null
+            InboundPacketHeader.aInboundPacketHeader_5992 = null
             val i_0_ = 108 % ((-24 - i) / 54)
             aConfigFlagUtil_5989 = null
             anIntArrayArray5991 = null

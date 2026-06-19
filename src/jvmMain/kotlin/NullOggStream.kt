@@ -1,7 +1,5 @@
 import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggStreamState
-import java.io.IOException
-import java.net.Socket
 
 class NullOggStream internal constructor(oggstreamstate: OggStreamState) : OggBitstreamDecoder(oggstreamstate) {
     override fun method2964(i: Byte, oggpacket: OggPacket) {
@@ -37,12 +35,5 @@ class NullOggStream internal constructor(oggstreamstate: OggStreamState) : OggBi
             aString9043 = null
         }
 
-        @JvmStatic
-        @Throws(IOException::class)
-        fun method2982(socket: Socket, i: Byte, i_0_: Int): AbstractGameSocket {
-            val i_1_ = -41 / ((i - -40) / 42)
-            anInt9040++
-            return SocketGameConnection(socket, i_0_)
-        }
     }
 }
