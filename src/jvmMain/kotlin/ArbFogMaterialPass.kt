@@ -1,8 +1,16 @@
-import MinimapShapeDrawer.Companion.method459
-import jaggl.OpenGL.Companion.glBindProgramARB
-import jaggl.OpenGL.Companion.glDisable
-import jaggl.OpenGL.Companion.glEnable
-import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
+import MinimapShapeDrawerStatics.method459
+import jaggl.OpenGLStatics.glBindProgramARB
+import jaggl.OpenGLStatics.glDisable
+import jaggl.OpenGLStatics.glEnable
+import jaggl.OpenGLStatics.glProgramLocalParameter4fARB
+import ArbFogMaterialPassStatics.anInt6184
+import ArbFogMaterialPassStatics.anInt6185
+import ArbFogMaterialPassStatics.anInt6186
+import ArbFogMaterialPassStatics.anInt6190
+import ArbFogMaterialPassStatics.anInt6191
+import ArbFogMaterialPassStatics.anInt6192
+import ArbFogMaterialPassStatics.anInt6195
+import ArbFogMaterialPassStatics.anInt6202
 
 class ArbFogMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : MaterialPass(var_ha_Sub2) {
     private var aBoolean6183 = false
@@ -149,37 +157,5 @@ class ArbFogMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Mat
             this.aHa_Sub2_3684.method3761(0, i_8_)
         }
         if (i < -89) anInt6185++
-    }
-
-    companion object {
-        @JvmField
-        var anInt6184: Int = 0
-        @JvmField
-        var anInt6185: Int = 0
-        @JvmField
-        var anInt6186: Int = 0
-        var anIntArray6189: IntArray? = IntArray(1)
-        @JvmField
-        var anInt6190: Int = 0
-        @JvmField
-        var anInt6191: Int = 0
-        @JvmField
-        var anInt6192: Int = 0
-        @JvmField
-        var anInt6195: Int = 0
-        @JvmField
-        var aStringArray6200: Array<String?>? = null
-        @JvmField
-        var aRgbColorPalette_6201: RgbColorPalette? = RgbColorPalette(9, 19)
-        @JvmField
-        var anInt6202: Int = 0
-
-        @JvmStatic
-        fun method2142(i: Byte) {
-            aStringArray6200 = null
-            val i_1_ = 19 % ((i - -67) / 59)
-            aRgbColorPalette_6201 = null
-            anIntArray6189 = null
-        }
     }
 }

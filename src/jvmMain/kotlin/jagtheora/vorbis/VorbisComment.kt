@@ -1,6 +1,7 @@
 package jagtheora.vorbis
 
 import jagtheora.misc.SimplePeer
+import jagtheora.vorbis.VorbisCommentStatics.init
 
 class VorbisComment : SimplePeer() {
     init {
@@ -9,8 +10,4 @@ class VorbisComment : SimplePeer() {
     }
 
     external override fun clear()
-
-    companion object {
-        protected external fun init()
-    }
 }

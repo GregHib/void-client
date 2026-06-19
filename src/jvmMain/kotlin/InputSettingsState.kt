@@ -1,5 +1,5 @@
-import TexGenMaterialPass.Companion.method2161
-import AbstractFrameBufferSurface.Companion.method3014
+import TexGenMaterialPassStatics.method2161
+import AbstractFrameBufferSurfaceStatics.method3014
 import java.io.IOException
 
 /*
@@ -29,7 +29,7 @@ object InputSettingsState {
         anInt1760++
         var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
         try {
-            val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2233(((-46).toByte()).toByte(), "2", true)
+            val class144 = VorbisOggDecoderStatics.aPrivilegedOperationWorker_8992!!.method2233(((-46).toByte()).toByte(), "2", true)
             while (class144!!.anInt1997 == 0) method2161(63.toByte(), 1L)
             if (class144.anInt1997 == 1) {
                 randomAccessFileOnDisk = class144.anObject1998 as RandomAccessFileOnDisk

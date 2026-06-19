@@ -1,4 +1,8 @@
 import java.util.*
+import ScatterTextureNodeStatics.anInt9363
+import ScatterTextureNodeStatics.anInt9366
+import ScatterTextureNodeStatics.anInt9370
+import ScatterTextureNodeStatics.method3122
 
 class ScatterTextureNode : AbstractProceduralTextureNode(0, true) {
     private var anInt9362 = 2000
@@ -9,7 +13,7 @@ class ScatterTextureNode : AbstractProceduralTextureNode(0, true) {
     override fun method3044(i: Int) {
         anInt9363++
         TrigLookupInit.method1605(26188)
-        if (i < 108) Companion.method3122((-111).toByte())
+        if (i < 108) method3122((-111).toByte())
     }
 
     override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
@@ -55,12 +59,12 @@ class ScatterTextureNode : AbstractProceduralTextureNode(0, true) {
             val random = Random(anInt9367.toLong())
             var i_5_ = 0
             while (anInt9362 > i_5_) {
-                var i_6_ = (if (anInt9364 > 0) anInt9369 + ModelDefinition.method1097(92.toByte(), anInt9364, random) + -i_3_ else anInt9369)
+                var i_6_ = (if (anInt9364 > 0) anInt9369 + ModelDefinitionStatics.method1097(92.toByte(), anInt9364, random) + -i_3_ else anInt9369)
                 i_6_ = i_6_ shr 4 and 0xff
-                var i_7_ = ModelDefinition.method1097(81.toByte(), DisplaceTextureNode.Companion.anInt9139, random)
-                var i_8_ = ModelDefinition.method1097(123.toByte(), FixedFunctionMaterialPass.anInt6212, random)
-                var i_9_ = i_7_ - -(anInt9368 * WidgetComponentNode.anIntArray4654!![i_6_] shr 12)
-                var i_10_ = ((SceneObjectAnimator.anIntArray3068!![i_6_] * anInt9368 shr 12) + i_8_)
+                var i_7_ = ModelDefinitionStatics.method1097(81.toByte(), DisplaceTextureNodeStatics.anInt9139, random)
+                var i_8_ = ModelDefinitionStatics.method1097(123.toByte(), FixedFunctionMaterialPassStatics.anInt6212, random)
+                var i_9_ = i_7_ - -(anInt9368 * WidgetComponentNodeStatics.anIntArray4654!![i_6_] shr 12)
+                var i_10_ = ((SceneObjectAnimatorStatics.anIntArray3068!![i_6_] * anInt9368 shr 12) + i_8_)
                 var i_11_ = -i_8_ + i_10_
                 var i_12_ = -i_7_ + i_9_
                 if (i_12_ != 0 || i_11_ != 0) {
@@ -88,13 +92,13 @@ class ScatterTextureNode : AbstractProceduralTextureNode(0, true) {
                     var i_19_ = -i_8_ + i_10_
                     var i_20_ = -i_18_ / 2
                     val i_21_ = 2048 / i_18_
-                    val i_22_ = 1024 - (ModelDefinition.method1097(90.toByte(), 4096, random) shr 2)
+                    val i_22_ = 1024 - (ModelDefinitionStatics.method1097(90.toByte(), 4096, random) shr 2)
                     if (i_19_ < 0) i_19_ = -i_19_
                     val i_23_ = if (i_10_ <= i_8_) -1 else 1
                     for (i_24_ in i_7_..<i_9_) {
                         val i_25_ = (i_24_ - i_7_) * i_21_ + (i_22_ + 1024)
-                        val i_26_ = SimpleBinaryOptionState.anInt6076 and i_24_
-                        val i_27_ = i_17_ and TextureCubeProvider.anInt6325
+                        val i_26_ = SimpleBinaryOptionStateStatics.anInt6076 and i_24_
+                        val i_27_ = i_17_ and TextureCubeProviderStatics.anInt6325
                         if (bool) is_4_[i_27_]!![i_26_] = i_25_
                         else is_4_[i_26_]!![i_27_] = i_25_
                         i_20_ += i_19_
@@ -108,30 +112,5 @@ class ScatterTextureNode : AbstractProceduralTextureNode(0, true) {
             }
         }
         return `is`
-    }
-
-    companion object {
-        @JvmField
-        var anInt9361: Int = 0
-        @JvmField
-        var anInt9363: Int = 0
-        @JvmField
-        var aJs5Archive_9365: Js5Archive? = null
-        @JvmField
-        var anInt9366: Int = 0
-        @JvmField
-        var anInt9370: Int = 0
-
-        fun method3122(i: Byte): Array<NamedIdRecord?> {
-            if (i < 86) aJs5Archive_9365 = null
-            anInt9361++
-            return (arrayOf<NamedIdRecord?>(OggCacheStream.aNamedIdRecord_5271, FixedFunctionWaterPass.aNamedIdRecord_7361, SpriteArchiveLoader.aNamedIdRecord_382, GroundItemRenderState.aNamedIdRecord_1657, SceneObjectSpawner.aNamedIdRecord_1279, WidgetRedrawRegion.aNamedIdRecord_4246))
-        }
-
-        @JvmStatic
-        fun method3123(i: Int) {
-            aJs5Archive_9365 = null
-            if (i != 0) Companion.method3122((-98).toByte())
-        }
     }
 }

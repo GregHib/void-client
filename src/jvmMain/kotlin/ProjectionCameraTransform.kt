@@ -1,4 +1,26 @@
-import WorldMapAreaLabel.Companion.method3570
+import WorldMapAreaLabelStatics.method3570
+import ProjectionCameraTransformStatics.anInt5746
+import ProjectionCameraTransformStatics.anInt5748
+import ProjectionCameraTransformStatics.anInt5749
+import ProjectionCameraTransformStatics.anInt5753
+import ProjectionCameraTransformStatics.anInt5757
+import ProjectionCameraTransformStatics.anInt5758
+import ProjectionCameraTransformStatics.anInt5759
+import ProjectionCameraTransformStatics.anInt5760
+import ProjectionCameraTransformStatics.anInt5763
+import ProjectionCameraTransformStatics.anInt5765
+import ProjectionCameraTransformStatics.anInt5766
+import ProjectionCameraTransformStatics.anInt5767
+import ProjectionCameraTransformStatics.anInt5771
+import ProjectionCameraTransformStatics.anInt5773
+import ProjectionCameraTransformStatics.anInt5774
+import ProjectionCameraTransformStatics.anInt5775
+import ProjectionCameraTransformStatics.anInt5777
+import ProjectionCameraTransformStatics.anInt5778
+import ProjectionCameraTransformStatics.anInt5779
+import ProjectionCameraTransformStatics.anInt5780
+import ProjectionCameraTransformStatics.anInt5782
+import ProjectionCameraTransformStatics.anInt5785
 
 /* Class101_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -23,9 +45,9 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
     override fun method902(i: Int) {
         anInt5779++
         this.aFloat5784 = 1.0f
-        this.aFloat5769 = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i]
+        this.aFloat5769 = OggBitstreamDecoderStatics.aFloatArray6867!![0x3fff and i]
         this.aFloat5770 = this.aFloat5769
-        this.aFloat5761 = OggBitstreamDecoder.aFloatArray6865!![0x3fff and i]
+        this.aFloat5761 = OggBitstreamDecoderStatics.aFloatArray6865!![0x3fff and i]
         this.aFloat5751 = 0.0f
         this.aFloat5754 = this.aFloat5751
         this.aFloat5756 = this.aFloat5754
@@ -73,8 +95,8 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
     override fun method900(i: Int) {
         anInt5763++
-        val f = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i]
-        val f_11_ = OggBitstreamDecoder.aFloatArray6865!![0x3fff and i]
+        val f = OggBitstreamDecoderStatics.aFloatArray6867!![0x3fff and i]
+        val f_11_ = OggBitstreamDecoderStatics.aFloatArray6865!![0x3fff and i]
         val f_12_ = this.aFloat5761
         val f_13_ = this.aFloat5769
         val f_14_ = this.aFloat5762
@@ -101,8 +123,8 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
             this.aFloat5784 = 1.0f
             this.aFloat5769 = i_17_.toFloat()
         } else {
-            val f_21_ = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i_18_]
-            val f_22_ = OggBitstreamDecoder.aFloatArray6865!![i_18_ and 0x3fff]
+            val f_21_ = OggBitstreamDecoderStatics.aFloatArray6867!![0x3fff and i_18_]
+            val f_22_ = OggBitstreamDecoderStatics.aFloatArray6865!![i_18_ and 0x3fff]
             this.aFloat5761 = i.toFloat() * f_22_
             this.aFloat5769 = i_17_.toFloat() * f_21_
             this.aFloat5762 = 0.0f
@@ -155,12 +177,12 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
     override fun method903(i: Int, i_30_: Int, i_31_: Int, i_32_: Int, i_33_: Int, i_34_: Int) {
         anInt5782++
-        val f = OggBitstreamDecoder.aFloatArray6867!![i_32_ and 0x3fff]
-        val f_35_ = OggBitstreamDecoder.aFloatArray6865!![i_32_ and 0x3fff]
-        val f_36_ = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i_33_]
-        val f_37_ = OggBitstreamDecoder.aFloatArray6865!![0x3fff and i_33_]
-        val f_38_ = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i_34_]
-        val f_39_ = OggBitstreamDecoder.aFloatArray6865!![0x3fff and i_34_]
+        val f = OggBitstreamDecoderStatics.aFloatArray6867!![i_32_ and 0x3fff]
+        val f_35_ = OggBitstreamDecoderStatics.aFloatArray6865!![i_32_ and 0x3fff]
+        val f_36_ = OggBitstreamDecoderStatics.aFloatArray6867!![0x3fff and i_33_]
+        val f_37_ = OggBitstreamDecoderStatics.aFloatArray6865!![0x3fff and i_33_]
+        val f_38_ = OggBitstreamDecoderStatics.aFloatArray6867!![0x3fff and i_34_]
+        val f_39_ = OggBitstreamDecoderStatics.aFloatArray6865!![0x3fff and i_34_]
         val f_40_ = f_35_ * f_38_
         val f_41_ = f_39_ * f_35_
         this.aFloat5762 = f_40_ * f_36_ + f_37_ * f_39_
@@ -179,8 +201,8 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
     override fun method908(i: Int) {
         anInt5774++
-        val f = OggBitstreamDecoder.aFloatArray6867!![i and 0x3fff]
-        val f_42_ = OggBitstreamDecoder.aFloatArray6865!![i and 0x3fff]
+        val f = OggBitstreamDecoderStatics.aFloatArray6867!![i and 0x3fff]
+        val f_42_ = OggBitstreamDecoderStatics.aFloatArray6865!![i and 0x3fff]
         val f_43_ = this.aFloat5770
         val f_44_ = this.aFloat5750
         val f_45_ = this.aFloat5781
@@ -196,20 +218,20 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
     }
 
     fun method940(i: Int): FloatArray {
-        ParticleEmitterDefExt.aFloatArray8575!![0] = this.aFloat5770
-        ParticleEmitterDefExt.aFloatArray8575!![9] = this.aFloat5762
-        ParticleEmitterDefExt.aFloatArray8575!![12] = this.aFloat5747
+        ParticleEmitterDefExtStatics.aFloatArray8575!![0] = this.aFloat5770
+        ParticleEmitterDefExtStatics.aFloatArray8575!![9] = this.aFloat5762
+        ParticleEmitterDefExtStatics.aFloatArray8575!![12] = this.aFloat5747
         anInt5777++
-        ParticleEmitterDefExt.aFloatArray8575!![i] = this.aFloat5761
-        ParticleEmitterDefExt.aFloatArray8575!![6] = this.aFloat5754
-        ParticleEmitterDefExt.aFloatArray8575!![4] = this.aFloat5750
-        ParticleEmitterDefExt.aFloatArray8575!![10] = this.aFloat5784
-        ParticleEmitterDefExt.aFloatArray8575!![8] = this.aFloat5781
-        ParticleEmitterDefExt.aFloatArray8575!![14] = this.aFloat5751
-        ParticleEmitterDefExt.aFloatArray8575!![13] = this.aFloat5772
-        ParticleEmitterDefExt.aFloatArray8575!![2] = this.aFloat5756
-        ParticleEmitterDefExt.aFloatArray8575!![5] = this.aFloat5769
-        return ParticleEmitterDefExt.aFloatArray8575!!
+        ParticleEmitterDefExtStatics.aFloatArray8575!![i] = this.aFloat5761
+        ParticleEmitterDefExtStatics.aFloatArray8575!![6] = this.aFloat5754
+        ParticleEmitterDefExtStatics.aFloatArray8575!![4] = this.aFloat5750
+        ParticleEmitterDefExtStatics.aFloatArray8575!![10] = this.aFloat5784
+        ParticleEmitterDefExtStatics.aFloatArray8575!![8] = this.aFloat5781
+        ParticleEmitterDefExtStatics.aFloatArray8575!![14] = this.aFloat5751
+        ParticleEmitterDefExtStatics.aFloatArray8575!![13] = this.aFloat5772
+        ParticleEmitterDefExtStatics.aFloatArray8575!![2] = this.aFloat5756
+        ParticleEmitterDefExtStatics.aFloatArray8575!![5] = this.aFloat5769
+        return ParticleEmitterDefExtStatics.aFloatArray8575!!
     }
 
     override fun method907(): AbstractCameraTransform {
@@ -277,9 +299,9 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
     override fun method895(i: Int) {
         anInt5780++
         this.aFloat5769 = 1.0f
-        this.aFloat5784 = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i]
+        this.aFloat5784 = OggBitstreamDecoderStatics.aFloatArray6867!![0x3fff and i]
         this.aFloat5770 = this.aFloat5784
-        this.aFloat5781 = OggBitstreamDecoder.aFloatArray6865!![0x3fff and i]
+        this.aFloat5781 = OggBitstreamDecoderStatics.aFloatArray6865!![0x3fff and i]
         this.aFloat5756 = -this.aFloat5781
         this.aFloat5751 = 0.0f
         this.aFloat5754 = this.aFloat5751
@@ -293,9 +315,9 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
     override fun method899(i: Int) {
         anInt5757++
         this.aFloat5770 = 1.0f
-        this.aFloat5784 = OggBitstreamDecoder.aFloatArray6867!![0x3fff and i]
+        this.aFloat5784 = OggBitstreamDecoderStatics.aFloatArray6867!![0x3fff and i]
         this.aFloat5769 = this.aFloat5784
-        this.aFloat5754 = OggBitstreamDecoder.aFloatArray6865!![0x3fff and i]
+        this.aFloat5754 = OggBitstreamDecoderStatics.aFloatArray6865!![0x3fff and i]
         this.aFloat5762 = -this.aFloat5754
         this.aFloat5751 = 0.0f
         this.aFloat5756 = this.aFloat5751
@@ -324,8 +346,8 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
     override fun method896(i: Int) {
         anInt5766++
-        val f = OggBitstreamDecoder.aFloatArray6867!![i and 0x3fff]
-        val f_62_ = OggBitstreamDecoder.aFloatArray6865!![i and 0x3fff]
+        val f = OggBitstreamDecoderStatics.aFloatArray6867!![i and 0x3fff]
+        val f_62_ = OggBitstreamDecoderStatics.aFloatArray6865!![i and 0x3fff]
         val f_63_ = this.aFloat5770
         val f_64_ = this.aFloat5750
         val f_65_ = this.aFloat5781
@@ -342,20 +364,20 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
     fun method945(bool: Boolean): FloatArray {
         if (bool != true) this.aFloat5756 = 0.66213727f
-        ParticleEmitterDefExt.aFloatArray8575!![14] = 0.0f
-        ParticleEmitterDefExt.aFloatArray8575!![0] = this.aFloat5770
-        ParticleEmitterDefExt.aFloatArray8575!![13] = 0.0f
-        ParticleEmitterDefExt.aFloatArray8575!![1] = this.aFloat5761
-        ParticleEmitterDefExt.aFloatArray8575!![12] = 0.0f
-        ParticleEmitterDefExt.aFloatArray8575!![10] = this.aFloat5784
-        ParticleEmitterDefExt.aFloatArray8575!![5] = this.aFloat5769
-        ParticleEmitterDefExt.aFloatArray8575!![6] = this.aFloat5754
-        ParticleEmitterDefExt.aFloatArray8575!![9] = this.aFloat5762
+        ParticleEmitterDefExtStatics.aFloatArray8575!![14] = 0.0f
+        ParticleEmitterDefExtStatics.aFloatArray8575!![0] = this.aFloat5770
+        ParticleEmitterDefExtStatics.aFloatArray8575!![13] = 0.0f
+        ParticleEmitterDefExtStatics.aFloatArray8575!![1] = this.aFloat5761
+        ParticleEmitterDefExtStatics.aFloatArray8575!![12] = 0.0f
+        ParticleEmitterDefExtStatics.aFloatArray8575!![10] = this.aFloat5784
+        ParticleEmitterDefExtStatics.aFloatArray8575!![5] = this.aFloat5769
+        ParticleEmitterDefExtStatics.aFloatArray8575!![6] = this.aFloat5754
+        ParticleEmitterDefExtStatics.aFloatArray8575!![9] = this.aFloat5762
         anInt5778++
-        ParticleEmitterDefExt.aFloatArray8575!![2] = this.aFloat5756
-        ParticleEmitterDefExt.aFloatArray8575!![4] = this.aFloat5750
-        ParticleEmitterDefExt.aFloatArray8575!![8] = this.aFloat5781
-        return ParticleEmitterDefExt.aFloatArray8575!!
+        ParticleEmitterDefExtStatics.aFloatArray8575!![2] = this.aFloat5756
+        ParticleEmitterDefExtStatics.aFloatArray8575!![4] = this.aFloat5750
+        ParticleEmitterDefExtStatics.aFloatArray8575!![8] = this.aFloat5781
+        return ParticleEmitterDefExtStatics.aFloatArray8575!!
     }
 
     fun method946(abstractCameraTransform: AbstractCameraTransform, i: Int) {
@@ -385,136 +407,5 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
         `is`[1] = (i_69_.toFloat() * this.aFloat5762 + (i_68_.toFloat() * this.aFloat5769 + this.aFloat5761 * i.toFloat())).toInt()
         `is`[2] = (this.aFloat5754 * i_68_.toFloat() + this.aFloat5756 * i.toFloat() + i_69_.toFloat() * this.aFloat5784).toInt()
         `is`[0] = (this.aFloat5750 * i_68_.toFloat() + this.aFloat5770 * i.toFloat() + this.aFloat5781 * i_69_.toFloat()).toInt()
-    }
-
-    companion object {
-        @JvmField
-        var anInt5746: Int = 0
-        @JvmField
-        var anInt5748: Int = 0
-        @JvmField
-        var anInt5749: Int = 0
-        @JvmField
-        var anInt5752: Int = 0
-        @JvmField
-        var anInt5753: Int = 0
-        @JvmField
-        var anInt5755: Int = 0
-        @JvmField
-        var anInt5757: Int = 0
-        @JvmField
-        var anInt5758: Int = 0
-        @JvmField
-        var anInt5759: Int = 0
-        @JvmField
-        var anInt5760: Int = 0
-        @JvmField
-        var anInt5763: Int = 0
-        @JvmField
-        var aEmoteDefCache_5764: EmoteDefCache? = null
-        @JvmField
-        var anInt5765: Int = 0
-        @JvmField
-        var anInt5766: Int = 0
-        @JvmField
-        var anInt5767: Int = 0
-        @JvmField
-        var anInt5768: Int = 0
-        @JvmField
-        var anInt5771: Int = 0
-        @JvmField
-        var anInt5773: Int = 0
-        @JvmField
-        var anInt5774: Int = 0
-        @JvmField
-        var anInt5775: Int = 0
-        @JvmField
-        var anInt5776: Int = 0
-        @JvmField
-        var anInt5777: Int = 0
-        @JvmField
-        var anInt5778: Int = 0
-        @JvmField
-        var anInt5779: Int = 0
-        @JvmField
-        var anInt5780: Int = 0
-        @JvmField
-        var anInt5782: Int = 0
-        @JvmField
-        var anInt5783: Int = 0
-        @JvmField
-        var anInt5785: Int = 0
-
-        @JvmStatic
-        fun method938(i: Int) {
-            aEmoteDefCache_5764 = null
-            if (i <= 8) aEmoteDefCache_5764 = null
-        }
-
-        fun method941(i: Int, i_48_: Int) {
-            IsaacCipher.anInt1290 = i_48_
-            anInt5755++
-            if (i <= 113) aEmoteDefCache_5764 = null
-        }
-
-        @JvmStatic
-        fun method943(bool: Boolean): MidiSequencePlayer? {
-            anInt5776++
-            if (bool != false) method943(true)
-            return NodeDequeHolder.aClass348_Sub16_Sub3_1564
-        }
-
-        fun method944(i: Int, `is`: Array<ByteArray?>?, class237_sub1: WorldMapSceneSoftware?) {
-            try {
-                if (i != -8212) method944(65, null, null)
-                anInt5752++
-                for (i_52_ in 0..<class237_sub1!!.anInt3130) {
-                    method3570(false)
-                    var i_53_ = 0
-                    while ((i_53_ < GlCubemapLightPass.anInt7319 shr 3)) {
-                        var i_54_ = 0
-                        while ((RangeThresholdTextureNode.anInt9109 shr 3 > i_54_)) {
-                            val i_55_ = (GameClock.anIntArrayArrayArray1116!![i_52_]!![i_53_]!![i_54_])
-                            if (i_55_ != -1) {
-                                val i_56_ = 0x3 and (i_55_ shr 24)
-                                if (!class237_sub1.aBoolean3109 || i_56_ == 0) {
-                                    val i_57_ = (0x6 and i_55_) shr 1
-                                    val i_58_ = i_55_ shr 14 and 0x3ff
-                                    val i_59_ = (0x3ff9 and i_55_) shr 3
-                                    val i_60_ = i_59_ / 8 + (i_58_ / 8 shl 8)
-                                    for (i_61_ in NullOggStream.anIntArray9042!!.indices) {
-                                        if (i_60_ == (NullOggStream.anIntArray9042!![i_61_]) && `is`!![i_61_] != null) {
-                                            class237_sub1.method1692((i_58_ and 0x7) * 8, i_57_, `is`[i_61_], i_56_, (i_59_ and 0x7) * 8, FacingDirectionNode.aRenderer6654, 8 * i_54_, 8 * i_53_, i + 8219, TimedRecordAccessor.aCollisionMapArray7108s, i_52_)
-                                            break
-                                        }
-                                    }
-                                }
-                            }
-                            i_54_++
-                        }
-                        i_53_++
-                    }
-                }
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("iaa.W(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class237_sub1 != null) "{...}" else "null") + ')'))
-            }
-        }
-
-        fun method947(i: Byte) {
-            anInt5783++
-            if (i.toInt() != 41) anInt5768 = 38
-            run {
-                var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as? CharacterRenderState
-                while (class348_sub9 != null) {
-                    if (class348_sub9!!.aBoolean6684) class348_sub9!!.method2781(21.toByte())
-                    class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1990(117.toByte()) as? CharacterRenderState
-                }
-            }
-            var class348_sub9 = Client.aNodeDeque_5185!!.method1995(4) as? CharacterRenderState
-            while (class348_sub9 != null) {
-                if (class348_sub9!!.aBoolean6684) class348_sub9!!.method2781(21.toByte())
-                class348_sub9 = (Client.aNodeDeque_5185!!.method1990(39.toByte()) as? CharacterRenderState)
-            }
-        }
     }
 }

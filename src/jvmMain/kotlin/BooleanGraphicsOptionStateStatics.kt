@@ -1,0 +1,78 @@
+import NoiseTextureGeneratorStatics.method544
+
+object BooleanGraphicsOptionStateStatics {
+    @JvmField
+            var anInt5841: Int = 0
+            @JvmField
+            var anInt5842: Int = 0
+            @JvmField
+            var anInt5843: Int = 0
+            @JvmField
+            var anInt5844: Int = 0
+            @JvmField
+            var anInt5845: Int = 0
+            @JvmField
+            var anInt5846: Int = 0
+            @JvmField
+            var aShortArrayArray5847: Array<ShortArray?>? = null
+            @JvmField
+            var anInt5848: Int = 0
+            @JvmField
+            var anInt5849: Int = 0
+            @JvmField
+            var anInt5850: Int = 0
+    
+            @JvmStatic
+            fun method1719(bool: Boolean, string: String?, string_0_: String?, i: Int, i_1_: Int) {
+                try {
+                    ScriptOpcodeHolder.method1356(true, string_0_, i_1_, i, bool, string, true)
+                    anInt5845++
+                } catch (runtimeexception: RuntimeException) {
+                    throw SoundBankPatchStatics.method2929(runtimeexception, ("aj.G(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + (if (string_0_ != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
+                }
+            }
+    
+            @JvmStatic
+            fun method1721(string: String?, i: Byte) {
+                anInt5849++
+                if (RenderNodeStatics.aBoolean9722 && (0x18 and WidgetTextConfigStatics.anInt500) != 0) {
+                    val i_2_ = -88 / ((i - -33) / 37)
+                    var bool = false
+                    val i_3_ = ShaderStateStatics.anInt6513
+                    val `is` = ScrollTexMaterialPassStatics.anIntArray6290!!
+                    var i_4_ = 0
+                    while (i_3_ > i_4_) {
+                        val player = (LoadingBarRendererStatics.aPlayerArray5058!![`is`[i_4_]])!!
+                        if (player.aString10544 != null && player.aString10544.equals(string, ignoreCase = true) && (((player == LocalPlayerState.aPlayer_1907) && (0x10 and WidgetTextConfigStatics.anInt500) != 0) || (player != null && (WidgetTextConfigStatics.anInt500 and 0x8) != 0))) {
+                            NativeLibraryUnloader.anInt2975++
+                            val class348_sub47 = WaterMaterialPassStatics.method2148(RsaVarbitHandlerStatics.aFontMetaRef_4907, (TheoraVideoStreamStatics.aIsaacCipher_9029), -102)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, NativeLibraryState.anInt169)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(`is`[i_4_], 3.toByte())
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(HeightMapNoise.anInt3829, 3.toByte())
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-64).toByte(), 0)
+                            InterfaceComponentGroupStatics.method3243(116, class348_sub47)
+                            bool = true
+                            PixelBlender.method2252(true, player.anIntArray10320!![0], player.anIntArray10317!![0], (-99).toByte(), player.method2436(54.toByte()), 0, player.method2436(91.toByte()), -2, 0)
+                            break
+                        }
+                        i_4_++
+                    }
+                    if (!bool) method544((LocalizedTextStatics.aLocalizedText_3504!!.method2063(AnimationFrameDefinitionStatics.anInt6967, 544)) + string, false, 4)
+                    if (RenderNodeStatics.aBoolean9722) TileRenderStateStatics.method2678(-2049)
+                }
+            }
+    
+            @JvmStatic
+            fun method1722(i: Int, i_5_: Int, i_6_: Byte): Boolean {
+                val i_7_ = 92 % ((i_6_ - 48) / 32)
+                anInt5848++
+                return (0x10000 and i) != 0
+            }
+    
+            @JvmStatic
+            fun method1723(i: Byte) {
+                aShortArrayArray5847 = null
+                if (i.toInt() != 119) anInt5850 = -51
+            }
+}

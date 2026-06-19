@@ -1,3 +1,22 @@
+import SoftwareModelRendererStatics.anInt8450
+import SoftwareModelRendererStatics.anInt8451
+import SoftwareModelRendererStatics.anInt8452
+import SoftwareModelRendererStatics.anInt8453
+import SoftwareModelRendererStatics.anInt8457
+import SoftwareModelRendererStatics.anInt8458
+import SoftwareModelRendererStatics.anInt8467
+import SoftwareModelRendererStatics.anInt8468
+import SoftwareModelRendererStatics.anInt8475
+import SoftwareModelRendererStatics.anInt8478
+import SoftwareModelRendererStatics.anInt8479
+import SoftwareModelRendererStatics.anInt8481
+import SoftwareModelRendererStatics.anInt8469
+import SoftwareModelRendererStatics.anInt8463
+import SoftwareModelRendererStatics.anInt8465
+import SoftwareModelRendererStatics.anInt8480
+import SoftwareModelRendererStatics.anInt8477
+import SoftwareModelRendererStatics.anInt8474
+import SoftwareModelRendererStatics.anInt8472
 import kotlin.math.min
 
 /* Class105_Sub3_Sub2 - Decompiled by JODE

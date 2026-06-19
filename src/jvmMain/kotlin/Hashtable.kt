@@ -1,4 +1,16 @@
-import SoundBankPatch.Companion.method2929
+import SoundBankPatchStatics.method2929
+import HashtableStatics.method3478
+import HashtableStatics.method3479
+import HashtableStatics.anInt4375
+import HashtableStatics.anInt4376
+import HashtableStatics.anInt4379
+import HashtableStatics.anInt4380
+import HashtableStatics.anInt4381
+import HashtableStatics.anInt4382
+import HashtableStatics.anInt4383
+import HashtableStatics.anInt4384
+import HashtableStatics.anInt4386
+import HashtableStatics.anInt4387
 
 /* Class356 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -150,40 +162,6 @@ class Hashtable internal constructor(var anInt4377: Int) {
             linkedListNode.aLinkedListNode_4294 = linkedListNode
             linkedListNode.aLinkedListNode_4295 = linkedListNode
             linkedListNode
-        }
-    }
-
-    companion object {
-        var anInt4375: Int = 0
-        var anInt4376: Int = 0
-        var anInt4378: Int = 0
-        var anInt4379: Int = 0
-        var anInt4380: Int = 0
-        var anInt4381: Int = 0
-        var anInt4382: Int = 0
-        @JvmField
-        var anInt4383: Int = 0
-        var anInt4384: Int = 0
-        var anInt4386: Int = 0
-        var anInt4387: Int = 0
-        var aIntRange_4388: IntRange? = IntRange(3, 3)
-        @JvmStatic
-        fun method3478(bool: Boolean) {
-            aIntRange_4388 = null
-            if (bool != false) anInt4383 = 67
-        }
-
-        fun method3479(i: Int): CameraSplineNode? {
-            anInt4378++
-            if (i != -1) anInt4383 = 43
-            if (MapRegionLoader.aNodeDeque_1254 == null || RenderNode.aWidgetRedrawTracker_9716 == null) return null
-            var class348_sub21 = RenderNode.aWidgetRedrawTracker_9716!!.method2329(10) as CameraSplineNode?
-            while (class348_sub21 != null) {
-                val class42 = MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 92.toByte())
-                if (class42 != null && class42.aBoolean609 && class42.method373(MapRegionLoader.anVarResolver_1244!!, 127)) return class348_sub21
-                class348_sub21 = RenderNode.aWidgetRedrawTracker_9716!!.method2329(i xor 0xa.inv()) as CameraSplineNode?
-            }
-            return null
         }
     }
 }

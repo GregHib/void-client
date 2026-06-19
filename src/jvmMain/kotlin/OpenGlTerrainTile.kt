@@ -1,11 +1,26 @@
 import jaclib.memory.Stream
-import jaggl.OpenGL.Companion.glLoadMatrixf
-import jaggl.OpenGL.Companion.glMatrixMode
-import jaggl.OpenGL.Companion.glPopMatrix
-import jaggl.OpenGL.Companion.glPushMatrix
-import jaggl.OpenGL.Companion.glTranslatef
+import jaggl.OpenGLStatics.glLoadMatrixf
+import jaggl.OpenGLStatics.glMatrixMode
+import jaggl.OpenGLStatics.glPopMatrix
+import jaggl.OpenGLStatics.glPushMatrix
+import jaggl.OpenGLStatics.glTranslatef
 import java.io.IOException
 import kotlin.math.sqrt
+import OpenGlTerrainTileStatics.anInt8236
+import OpenGlTerrainTileStatics.anInt8239
+import OpenGlTerrainTileStatics.anInt8242
+import OpenGlTerrainTileStatics.anInt8244
+import OpenGlTerrainTileStatics.anInt8247
+import OpenGlTerrainTileStatics.anInt8249
+import OpenGlTerrainTileStatics.anInt8250
+import OpenGlTerrainTileStatics.anInt8251
+import OpenGlTerrainTileStatics.anInt8254
+import OpenGlTerrainTileStatics.anInt8255
+import OpenGlTerrainTileStatics.anInt8259
+import OpenGlTerrainTileStatics.anInt8261
+import OpenGlTerrainTileStatics.anInt8262
+import OpenGlTerrainTileStatics.anInt8263
+import OpenGlTerrainTileStatics.anInt8271
 
 class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134_: Int, i_135_: Int, `is`: Array<IntArray?>, is_136_: Array<IntArray?>?, i_137_: Int) : TerrainTile(i_134_, i_135_, i_137_, `is`) {
     @JvmField
@@ -104,7 +119,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             }
             U(i, i_5_, is_20_, is_26_, is_21_, is_27_, is_22_, is_23_, is_24_, is_25_, i_16_, i_17_, i_18_, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw SoundBankPatchStatics.method2929(
                 runtimeexception,
                 ("ed.E(" + i + ',' + i_5_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_6_ != null) "{...}" else "null") + ',' + (if (is_7_ != null) "{...}" else "null") + ',' + (if (is_8_ != null) "{...}" else "null") + ',' + (if (is_9_ != null) "{...}" else "null") + ',' + (if (is_10_ != null) "{...}" else "null") + ',' + (if (is_11_ != null) "{...}" else "null") + ',' + (if (is_12_ != null) "{...}" else "null") + ',' + (if (is_13_ != null) "{...}" else "null") + ',' + (if (is_14_ != null) "{...}" else "null") + ',' + (if (is_15_ != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ')')
             )
@@ -133,7 +148,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             val nativeheapbuffer = this.aHa_Sub2_8272!!.aNativeHeap7730!!.a(anInt8284 * i, false)
             val stream = Stream(nativeheapbuffer)
             val class348_sub20s = arrayOfNulls<TextureTileRenderer>(anInt8284)
-            var i_34_ = ColorThresholdEffect.method3051(anInt8284 / 4, 4096)
+            var i_34_ = ColorThresholdEffectStatics.method3051(anInt8284 / 4, 4096)
             if (i_34_ < 1) i_34_ = 1
             val hashtable = Hashtable(i_34_)
             val class348_sub20s_35_ = arrayOfNulls<TextureTileRenderer>(anInt8280)
@@ -246,7 +261,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                                     f_89_ = ((this.aHa_Sub2_8272!!.aFloatArray7825[2]) * f_78_ + (f_77_ * (this.aHa_Sub2_8272!!.aFloatArray7825[0]) + f_76_ * (this.aHa_Sub2_8272!!.aFloatArray7825[1])))
                                     f_89_ = ((this.aHa_Sub2_8272!!.aFloat7768) + (if (f_89_ > 0.0f) (this.aHa_Sub2_8272!!.aFloat7832) else (this.aHa_Sub2_8272!!.aFloat7871)) * f_89_)
                                 }
-                                i_75_ = (ParticleEmitterNode.anIntArray179!![0xff80 and i_69_ or i_90_])
+                                i_75_ = (ParticleEmitterNodeStatics.anIntArray179!![0xff80 and i_69_ or i_90_])
                             }
                             var linkedListNode: LinkedListNode? = null
                             if ((i_65_ and -1 + anInt8260) == 0 && (anInt8260 + -1 and i_66_) == 0) linkedListNode = hashtable.method3480(l, -6008)
@@ -257,7 +272,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                                     var i_93_ = (i_70_ and 0x7f) * i_74_ shr 7
                                     if (i_93_ < 2) i_93_ = 2
                                     else if (i_93_ > 126) i_93_ = 126
-                                    i_92_ = (ParticleEmitterNode.anIntArray179!![0xff80 and i_70_ or i_93_])
+                                    i_92_ = (ParticleEmitterNodeStatics.anIntArray179!![0xff80 and i_70_ or i_93_])
                                     if ((0x7 and this.anInt8235) == 0) {
                                         var f_94_ = ((this.aHa_Sub2_8272!!.aFloatArray7825[0]) * f_77_ + f_76_ * (this.aHa_Sub2_8272!!.aFloatArray7825[1]) + f_78_ * (this.aHa_Sub2_8272!!.aFloatArray7825[2]))
                                         f_94_ = ((if (f_89_ > 0.0f) (this.aHa_Sub2_8272!!.aFloat7832) else (this.aHa_Sub2_8272!!.aFloat7871)) * f_89_ + (this.aHa_Sub2_8272!!.aFloat7768))
@@ -392,7 +407,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 ls[i_112_] = class348_sub20.aLong4291
                 class348_sub20.method2952(17795, anInt8246)
             }
-            MapRegionLoaderThread.method2669(aClass348_Sub20Array8282 as? Array<Any?>, ls, -21)
+            MapRegionLoaderThreadStatics.method2669(aClass348_Sub20Array8282 as? Array<Any?>, ls, -21)
             if (aSoftwareSpriteRaster_8266 != null) aSoftwareSpriteRaster_8266!!.method957(0)
         }
         anInt8247++
@@ -474,42 +489,42 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             this.aHa_Sub2_8272!!.method3753(0, 1)
             this.aHa_Sub2_8272!!.method3757(-2, -100)
             this.aHa_Sub2_8272!!.method3771((-86).toByte(), null)
-            FileExistsCondition.aFloatArray4772!![0] = (i_153_.toFloat() / ((this.aHa_Sub2_8272!!.anInt7688).toFloat() * (this.anInt4592.toFloat() * 128.0f)))
-            FileExistsCondition.aFloatArray4772!![8] = 0.0f
-            FileExistsCondition.aFloatArray4772!![13] = 1.0f - (((i_157_ * i_153_).toFloat() / 128.0f + (i_152_ * 2).toFloat()) / (this.aHa_Sub2_8272!!.anInt7641).toFloat())
-            FileExistsCondition.aFloatArray4772!![7] = 0.0f
-            FileExistsCondition.aFloatArray4772!![6] = 0.0f
-            FileExistsCondition.aFloatArray4772!![5] = (i_153_.toFloat() / ((this.aHa_Sub2_8272!!.anInt7641).toFloat() * (this.anInt4592.toFloat() * 128.0f)))
-            FileExistsCondition.aFloatArray4772!![1] = 0.0f
-            FileExistsCondition.aFloatArray4772!![4] = 0.0f
-            FileExistsCondition.aFloatArray4772!![14] = 0.0f
-            FileExistsCondition.aFloatArray4772!![12] = -(((i_153_ * i_154_).toFloat() / 128.0f - (2 * i).toFloat()) / (this.aHa_Sub2_8272!!.anInt7688).toFloat()) + -1.0f
-            FileExistsCondition.aFloatArray4772!![10] = 0.0f
-            FileExistsCondition.aFloatArray4772!![15] = 1.0f
-            FileExistsCondition.aFloatArray4772!![3] = 0.0f
-            FileExistsCondition.aFloatArray4772!![2] = 0.0f
-            FileExistsCondition.aFloatArray4772!![9] = 0.0f
-            FileExistsCondition.aFloatArray4772!![11] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![0] = (i_153_.toFloat() / ((this.aHa_Sub2_8272!!.anInt7688).toFloat() * (this.anInt4592.toFloat() * 128.0f)))
+            FileExistsConditionStatics.aFloatArray4772!![8] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![13] = 1.0f - (((i_157_ * i_153_).toFloat() / 128.0f + (i_152_ * 2).toFloat()) / (this.aHa_Sub2_8272!!.anInt7641).toFloat())
+            FileExistsConditionStatics.aFloatArray4772!![7] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![6] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![5] = (i_153_.toFloat() / ((this.aHa_Sub2_8272!!.anInt7641).toFloat() * (this.anInt4592.toFloat() * 128.0f)))
+            FileExistsConditionStatics.aFloatArray4772!![1] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![4] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![14] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![12] = -(((i_153_ * i_154_).toFloat() / 128.0f - (2 * i).toFloat()) / (this.aHa_Sub2_8272!!.anInt7688).toFloat()) + -1.0f
+            FileExistsConditionStatics.aFloatArray4772!![10] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![15] = 1.0f
+            FileExistsConditionStatics.aFloatArray4772!![3] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![2] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![9] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![11] = 0.0f
             glMatrixMode(5889)
-            glLoadMatrixf(FileExistsCondition.aFloatArray4772, 0)
-            FileExistsCondition.aFloatArray4772!![12] = 0.0f
-            FileExistsCondition.aFloatArray4772!![4] = 0.0f
-            FileExistsCondition.aFloatArray4772!![0] = 1.0f
-            FileExistsCondition.aFloatArray4772!![14] = 0.0f
-            FileExistsCondition.aFloatArray4772!![6] = 1.0f
-            FileExistsCondition.aFloatArray4772!![8] = 0.0f
-            FileExistsCondition.aFloatArray4772!![11] = 0.0f
-            FileExistsCondition.aFloatArray4772!![13] = 0.0f
-            FileExistsCondition.aFloatArray4772!![7] = 0.0f
-            FileExistsCondition.aFloatArray4772!![5] = 0.0f
-            FileExistsCondition.aFloatArray4772!![15] = 1.0f
-            FileExistsCondition.aFloatArray4772!![2] = 0.0f
-            FileExistsCondition.aFloatArray4772!![3] = 0.0f
-            FileExistsCondition.aFloatArray4772!![9] = 1.0f
-            FileExistsCondition.aFloatArray4772!![10] = 0.0f
-            FileExistsCondition.aFloatArray4772!![1] = 0.0f
+            glLoadMatrixf(FileExistsConditionStatics.aFloatArray4772, 0)
+            FileExistsConditionStatics.aFloatArray4772!![12] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![4] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![0] = 1.0f
+            FileExistsConditionStatics.aFloatArray4772!![14] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![6] = 1.0f
+            FileExistsConditionStatics.aFloatArray4772!![8] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![11] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![13] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![7] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![5] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![15] = 1.0f
+            FileExistsConditionStatics.aFloatArray4772!![2] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![3] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![9] = 1.0f
+            FileExistsConditionStatics.aFloatArray4772!![10] = 0.0f
+            FileExistsConditionStatics.aFloatArray4772!![1] = 0.0f
             glMatrixMode(5888)
-            glLoadMatrixf(FileExistsCondition.aFloatArray4772, 0)
+            glLoadMatrixf(FileExistsConditionStatics.aFloatArray4772, 0)
             if ((0x7 and this.anInt8235) == 0) this.aHa_Sub2_8272!!.method3728(false, 56)
             else {
                 this.aHa_Sub2_8272!!.method3728(true, 91)
@@ -590,7 +605,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             anInt8271++
             aNodeDeque_8256.method1999(TerrainShadowBuilderGl2((this.aHa_Sub2_8272), this, class348_sub1, `is`), -20180)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ed.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ed.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -627,11 +642,11 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                     aHashtable_8278!!.method3483(99.toByte(), l, class348_sub20s[i_187_])
                 } else class348_sub20s[i_187_] = linkedListNode as TextureTileRenderer
             }
-            if (bool) aByteArrayArray8240[i]!![i_176_] = BoundsConstraintEntry.method2057((aByteArrayArray8240[i]!![i_176_]).toInt(), 1).toByte()
+            if (bool) aByteArrayArray8240[i]!![i_176_] = BoundsConstraintEntryStatics.method2057((aByteArrayArray8240[i]!![i_176_]).toInt(), 1).toByte()
             if (is_180_.size > anInt8280) anInt8280 = is_180_.size
             anInt8284 += is_180_.size
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw SoundBankPatchStatics.method2929(
                 runtimeexception,
                 ("ed.U(" + i + ',' + i_176_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_177_ != null) "{...}" else "null") + ',' + (if (is_178_ != null) "{...}" else "null") + ',' + (if (is_179_ != null) "{...}" else "null") + ',' + (if (is_180_ != null) "{...}" else "null") + ',' + (if (is_181_ != null) "{...}" else "null") + ',' + (if (is_182_ != null) "{...}" else "null") + ',' + (if (is_183_ != null) "{...}" else "null") + ',' + i_184_ + ',' + i_185_ + ',' + i_186_ + ',' + bool + ')')
             )
@@ -753,110 +768,9 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 if ((0x10 and this.anInt8235) == 0) break
                 aSoftwareSpriteRaster_8266 = SoftwareSpriteRaster(this.aHa_Sub2_8272, this)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ed.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_133_ + ',' + i_134_ + ',' + i_135_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_136_ != null) "{...}" else "null") + ',' + i_137_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("ed.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_133_ + ',' + i_134_ + ',' + i_135_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_136_ != null) "{...}" else "null") + ',' + i_137_ + ')'))
             }
             break
         } while (false)
-    }
-
-    companion object {
-        @JvmField
-        var anInt8236: Int = 0
-        @JvmField
-        var anInt8237: Int = 0
-        @JvmField
-        var anInt8238: Int = 0
-        @JvmField
-        var anInt8239: Int = 0
-        @JvmField
-        var aLinkedNodeListIterator_8241: LinkedNodeListIterator? = LinkedNodeListIterator()
-        @JvmField
-        var anInt8242: Int = 0
-        @JvmField
-        var anInt8244: Int = 0
-        @JvmField
-        var anInt8247: Int = 0
-        @JvmField
-        var anInt8248: Int = 0
-        @JvmField
-        var anInt8249: Int = 0
-        @JvmField
-        var anInt8250: Int = 0
-        @JvmField
-        var anInt8251: Int = 0
-        @JvmField
-        var anInt8254: Int = 0
-        @JvmField
-        var anInt8255: Int = 0
-        @JvmField
-        var anInt8259: Int = 0
-        @JvmField
-        var anInt8261: Int = 0
-        @JvmField
-        var anInt8262: Int = 0
-        @JvmField
-        var anInt8263: Int = 0
-        @JvmField
-        var aString8265: String? = null
-        @JvmField
-        var anIntArray8269: IntArray?
-        @JvmField
-        var anInt8270: Int = -1
-        @JvmField
-        var anInt8271: Int = 0
-        @JvmStatic
-        fun method3999(i: Int, i_147_: Int, i_148_: Int): Boolean {
-            if (i_148_ != 458752) anInt8237 = -28
-            anInt8238++
-            return ((0x70000 and i_147_) != 0) or ProjectileFactory.method1613(false, i, i_147_) || ParticleEmitterDef.method2187(i_147_, -121, i)
-        }
-
-        @JvmStatic
-        fun method4000(i: Int) {
-            if (i != 8448) aString8265 = null
-            anIntArray8269 = null
-            aString8265 = null
-            aLinkedNodeListIterator_8241 = null
-        }
-
-        @JvmStatic
-        fun method4001(class318_sub1: SceneEntity) {
-            NativeLibraryState.aRenderer171!!.H(class318_sub1.x, (class318_sub1.anInt6382 + (class318_sub1.method2394(true) shr 1)), class318_sub1.y, LoadingScreenImageNode.anIntArray9505)
-            class318_sub1.anInt6386 = LoadingScreenImageNode.anIntArray9505!![0]
-            class318_sub1.anInt6380 = LoadingScreenImageNode.anIntArray9505!![1]
-            class318_sub1.anInt6389 = LoadingScreenImageNode.anIntArray9505!![2]
-        }
-
-        @JvmStatic
-        fun method4002(class348_sub49: ByteBuffer, i: Byte) {
-            anInt8248++
-            val `is` = ByteArray(24)
-            if (i.toInt() == 55) {
-                if (BufferedFileReader.aBufferedRandomAccessFile_4538 != null) {
-                    try {
-                        BufferedFileReader.aBufferedRandomAccessFile_4538!!.method789(0L, (-120).toByte())
-                        BufferedFileReader.aBufferedRandomAccessFile_4538!!.method784(-89, `is`)
-                        var i_170_: Int
-                        i_170_ = 0
-                        while (i_170_ < 24) {
-                            if (`is`[i_170_].toInt() != 0) break
-                            i_170_++
-                        }
-                        if (i_170_ >= 24) throw IOException()
-                    } catch (exception: Exception) {
-                        var i_171_ = 0
-                        while (i_171_ < 24) {
-                            `is`[i_171_] = (-1).toByte()
-                            i_171_++
-                        }
-                    }
-                }
-                class348_sub49.writeBytes(24, 0, `is`, i.toInt() xor 0x8)
-            }
-        }
-
-        init {
-            anIntArray8269 = IntArray(8)
-        }
     }
 }

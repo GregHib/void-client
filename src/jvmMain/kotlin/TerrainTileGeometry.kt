@@ -1,3 +1,10 @@
+import TerrainTileGeometryStatics.method1647
+import TerrainTileGeometryStatics.anInt3004
+import TerrainTileGeometryStatics.anInt3005
+import TerrainTileGeometryStatics.anInt3006
+import TerrainTileGeometryStatics.anInt3007
+import TerrainTileGeometryStatics.anInt3013
+
 /* Class232 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -99,7 +106,7 @@ class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, sof
                 aClass119_Sub2_3011 = NativeVertexBuffer(aHa_Sub2_3000, 5123, null, 1)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sm.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (softwareSpriteRaster != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("sm.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (softwareSpriteRaster != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))
         }
     }
 
@@ -146,29 +153,6 @@ class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, sof
                     } else aClass258_Sub3_2998!!.method1970(0, 0, 128, false, 0, 128, 6406, -69, aHa_Sub2_3000.aByteArray7879, 0)
                 }
             }
-        }
-    }
-
-    companion object {
-        var anInt3004: Int = 0
-        var anInt3005: Int = 0
-        @JvmField
-        var anInt3006: Int = 0
-        var anInt3007: Int = 0
-        var anInt3012: Int = 0
-        var anInt3013: Int = 0
-        var anIntArray3014: IntArray? = IntArray(1)
-
-        @JvmStatic
-        fun method1645(i: Int) {
-            if (i >= 35) anIntArray3014 = null
-        }
-
-        fun method1647(i: Int, i_3_: Int) {
-            if (i != -128) anIntArray3014 = null
-            anInt3012++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i_3_, 105.toByte(), 1)
-            class348_sub42_sub15.method3251(-16058)
         }
     }
 }

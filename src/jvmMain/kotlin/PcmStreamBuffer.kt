@@ -1,4 +1,20 @@
-import IOException_Sub1.Companion.method129
+import IOException_Sub1Statics.method129
+import PcmStreamBufferStatics.method2830
+import PcmStreamBufferStatics.anInt8860
+import PcmStreamBufferStatics.anInt8863
+import PcmStreamBufferStatics.anInt8864
+import PcmStreamBufferStatics.anInt8865
+import PcmStreamBufferStatics.anInt8867
+import PcmStreamBufferStatics.anInt8868
+import PcmStreamBufferStatics.aDouble8869
+import PcmStreamBufferStatics.anInt8871
+import PcmStreamBufferStatics.anInt8872
+import PcmStreamBufferStatics.anInt8873
+import PcmStreamBufferStatics.anInt8875
+import PcmStreamBufferStatics.anInt8877
+import PcmStreamBufferStatics.anInt8878
+import PcmStreamBufferStatics.anInt8880
+import PcmStreamBufferStatics.anInt8881
 
 /* Class348_Sub16_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -46,7 +62,7 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
             class348_sub42_sub4.method2715(71.toByte())
             anInt8888--
             anInt8883 = 0
-            BrightnessContrastEffect.aCacheLruCache_9180!!.method2305(class348_sub42_sub4.method3182(90), class348_sub42_sub4, -1)
+            BrightnessContrastEffectStatics.aCacheLruCache_9180!!.method2305(class348_sub42_sub4.method3182(90), class348_sub42_sub4, -1)
         }
     }
 
@@ -58,7 +74,7 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
             if (method2828(-23076) == null) {
                 if (aBoolean8884) {
                     this.method2715(23.toByte())
-                    BrightnessContrastEffect.aCacheLruCache_9180!!.method2303(true)
+                    BrightnessContrastEffectStatics.aCacheLruCache_9180!!.method2303(true)
                 }
             } else {
                 var i_3_ = i - -i_2_
@@ -123,18 +139,18 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
         if (i != -21987) method2818()
         val class348_sub42_sub4 = aNodeDeque_8861!!.method1995(4) as ShortMatrixNode?
         if (class348_sub42_sub4 == null) return -1.0
-        return (-((class348_sub42_sub4.aShortArrayArray9518[0])!!.size.toFloat() / HslColorConfig.anInt339.toFloat()).toDouble() + class348_sub42_sub4.aDouble9512)
+        return (-((class348_sub42_sub4.aShortArrayArray9518[0])!!.size.toFloat() / HslColorConfigStatics.anInt339.toFloat()).toDouble() + class348_sub42_sub4.aDouble9512)
     }
 
     fun method2838(i: Int, d: Double, i_14_: Int): ShortMatrixNode? {
         anInt8860++
         val l = (i or (anInt8879 shl 0)).toLong()
-        var class348_sub42_sub4 = (BrightnessContrastEffect.aCacheLruCache_9180!!.method2302(l, (-31).toByte()) as ShortMatrixNode?)
+        var class348_sub42_sub4 = (BrightnessContrastEffectStatics.aCacheLruCache_9180!!.method2302(l, (-31).toByte()) as ShortMatrixNode?)
         if (i_14_ != 1401320384) return null
         if (class348_sub42_sub4 == null) class348_sub42_sub4 = ShortMatrixNode(Array<ShortArray?>(anInt8879) { ShortArray(i) }, d)
         else {
             class348_sub42_sub4.aDouble9512 = d
-            BrightnessContrastEffect.aCacheLruCache_9180!!.method2304(-121, l)
+            BrightnessContrastEffectStatics.aCacheLruCache_9180!!.method2304(-121, l)
         }
         return class348_sub42_sub4
     }
@@ -149,7 +165,7 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
                 if (class348_sub42_sub4 == null) {
                     if (aBoolean8884) {
                         this.method2715(108.toByte())
-                        BrightnessContrastEffect.aCacheLruCache_9180!!.method2303(true)
+                        BrightnessContrastEffectStatics.aCacheLruCache_9180!!.method2303(true)
                     }
                     break
                 }
@@ -166,85 +182,5 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
     override fun method2821(): Int {
         anInt8873++
         return 1
-    }
-
-    companion object {
-        @JvmField
-        var anInt8860: Int = 0
-        var anIntArray8862: IntArray?
-        @JvmField
-        var anInt8863: Int = 0
-        @JvmField
-        var anInt8864: Int = 0
-        @JvmField
-        var anInt8865: Int = 0
-        @JvmField
-        var aLong8866: Long
-        @JvmField
-        var anInt8867: Int = 0
-        @JvmField
-        var anInt8868: Int = 0
-        @JvmField
-        var aDouble8869: Double = 0.0
-        @JvmField
-        var aBoolean8870: Boolean = true
-        @JvmField
-        var anInt8871: Int = 0
-        @JvmField
-        var anInt8872: Int = 0
-        @JvmField
-        var anInt8873: Int = 0
-        @JvmField
-        var aBoolean8874: Boolean
-        @JvmField
-        var anInt8875: Int = 0
-        @JvmField
-        var anInt8876: Int = 0
-        @JvmField
-        var anInt8877: Int = 0
-        @JvmField
-        var anInt8878: Int = 0
-        @JvmField
-        var anInt8880: Int = 0
-        @JvmField
-        var anInt8881: Int = 0
-        @JvmField
-        var anInt8882: Int = 0
-        @JvmStatic
-        fun method2830(i: Int) {
-            anIntArray8862 = null
-        }
-
-        @JvmStatic
-        fun method2832(`is`: IntArray?, ls: LongArray?, i: Int) {
-            try {
-                method129(i, i + -107, ls, ls!!.size - 1, `is`)
-                anInt8882++
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("iha.I(" + (if (`is` != null) "{...}" else "null") + ',' + (if (ls != null) "{...}" else "null") + ',' + i + ')'))
-            }
-        }
-
-        @JvmStatic
-        fun method2834(i: Byte, class348_sub49: ByteBuffer): WorldMapLabel {
-            anInt8876++
-            val class221 = HeapInfoRecord.method1248(15)[class348_sub49.readUnsignedByte(255)]
-            if (i > -113) aDouble8869 = -1.5911312034627048
-            val class341 = GameClock.method596(20000)[class348_sub49.readUnsignedByte(255)]
-            val i_7_ = class348_sub49.readShort(13638)
-            val i_8_ = class348_sub49.readShort(13638)
-            val i_9_ = class348_sub49.readUnsignedShort(842397944)
-            val i_10_ = class348_sub49.readUnsignedShort(842397944)
-            val i_11_ = class348_sub49.readShort(13638)
-            val i_12_ = class348_sub49.readInt((-126).toByte())
-            val i_13_ = class348_sub49.readInt((-126).toByte())
-            return WorldMapLabel(class221, class341, i_7_, i_8_, i_9_, i_10_, i_11_, i_12_, i_13_)
-        }
-
-        init {
-            anIntArray8862 = IntArray(4096)
-            aBoolean8874 = false
-            aLong8866 = 0L
-        }
     }
 }

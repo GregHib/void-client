@@ -1,4 +1,4 @@
-import ScanlineRasterFiller.Companion.method1387
+import ScanlineRasterFillerStatics.method1387
 
 /* Class363 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -11,10 +11,10 @@ object MapElementManager {
     var anInt4465: Int = 0
 
     fun method3513(i: Int) {
-        synchronized(SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!) {
+        synchronized(SceneLinkedListNodeStatics.aDoublyLinkedNodeListArray3974s!!) {
             var i_0_ = 0
-            while ((i_0_ < SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!.size)) {
-                SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!![i_0_] = DoublyLinkedNodeList()
+            while ((i_0_ < SceneLinkedListNodeStatics.aDoublyLinkedNodeListArray3974s!!.size)) {
+                SceneLinkedListNodeStatics.aDoublyLinkedNodeListArray3974s!![i_0_] = DoublyLinkedNodeList()
                 CalendarUtil.anIntArray4128!![i_0_] = 0
                 i_0_++
             }
@@ -25,20 +25,20 @@ object MapElementManager {
 
     fun method3514(i: Byte) {
         anInt4465++
-        var class348_sub27 = (SpriteRenderEntry.aNodeDeque_9711!!.method1995(4) as MultiFieldRecord?)
+        var class348_sub27 = (SpriteRenderEntryStatics.aNodeDeque_9711!!.method1995(4) as MultiFieldRecord?)
         while (class348_sub27 != null) {
             if (class348_sub27.anInt6893 == -1) {
                 class348_sub27.anInt6894 = 0
-                if ((class348_sub27.anInt6905 >= 0) && class348_sub27.anInt6896 >= 0 && (class348_sub27.anInt6905 < GlCubemapLightPass.anInt7319) && (class348_sub27.anInt6896 < RangeThresholdTextureNode.anInt9109)) method1387(i + 26, class348_sub27)
+                if ((class348_sub27.anInt6905 >= 0) && class348_sub27.anInt6896 >= 0 && (class348_sub27.anInt6905 < GlCubemapLightPassStatics.anInt7319) && (class348_sub27.anInt6896 < RangeThresholdTextureNodeStatics.anInt9109)) method1387(i + 26, class348_sub27)
             } else class348_sub27.method2715(39.toByte())
-            class348_sub27 = SpriteRenderEntry.aNodeDeque_9711!!.method1990(57.toByte()) as MultiFieldRecord?
+            class348_sub27 = SpriteRenderEntryStatics.aNodeDeque_9711!!.method1990(57.toByte()) as MultiFieldRecord?
         }
         if (i.toInt() != -105) method3516(-128)
     }
 
     fun method3515(i: Int) {
         val i_2_ = 52 / ((33 - i) / 40)
-        AbstractProceduralTextureNode.aHashtable_7041!!.method3481(0)
+        AbstractProceduralTextureNodeStatics.aHashtable_7041!!.method3481(0)
         anInt4464++
     }
 

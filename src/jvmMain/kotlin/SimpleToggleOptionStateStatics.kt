@@ -1,0 +1,81 @@
+object SimpleToggleOptionStateStatics {
+    @JvmField
+            var anInt5884: Int = 0
+            @JvmField
+            var anInt5885: Int = 0
+            @JvmField
+            var anInt5886: Int = 0
+            @JvmField
+            var anInt5887: Int = 0
+            @JvmField
+            var anInt5888: Int = 0
+            @JvmField
+            var anInt5889: Int = 0
+            @JvmField
+            var anInt5890: Int = 0
+            @JvmField
+            var anInt5891: Int = 0
+            @JvmField
+            var anInt5892: Int = 0
+            @JvmField
+            var anInt5893: Int = 0
+    
+            @JvmStatic
+            fun method1740(i: Int, i_2_: Int, bool: Boolean): Boolean {
+                if (bool != false) return true
+                anInt5890++
+                return DetailLevelOptionStateStatics.method1833((-128).toByte(), i_2_, i) || HardCacheEntryReferenceStatics.method3200(i_2_, i, 96.toByte())
+            }
+    
+            @JvmStatic
+            fun method1741(class348_sub49_sub2: CipheredPacketBuffer, i: Byte) {
+                anInt5893++
+                class348_sub49_sub2.startBitAccess(122)
+                val i_3_ = CharCodeMapStatics.anInt9591
+                val player = (Player().also { LoadingBarRendererStatics.aPlayerArray5058!![i_3_] = it }.also { LocalPlayerState.aPlayer_1907 = it })
+                player.anInt10290 = i_3_
+                val i_4_ = class348_sub49_sub2.readBits((-24).toByte(), 30)
+                if (i.toInt() != 118) anInt5886 = 111
+                val i_5_ = (i_4_ shr 28).toByte()
+                val i_6_ = i_4_ shr 14 and 0x3fff
+                player.anIntArray10320!![0] = -ArbVertexProgramStatics.regionTileX + i_6_
+                val i_7_ = 0x3fff and i_4_
+                player.x = (((player.anIntArray10320!![0]) shl 9) + (player.method2436(91.toByte()) shl 8))
+                player.anIntArray10317!![0] = i_7_ + -RegionMapDecoder.regionTileY
+                player.y = (((player.anIntArray10317!![0]) shl 9) - -(player.method2436(85.toByte()) shl 8))
+                player.aByte6376 = i_5_
+                player.plane = player.aByte6376
+                CompiledScriptCacheStatics.anInt4372 = player.plane.toInt()
+                if (NpcTypeStatics.method802((player.anIntArray10317!![0]), (player.anIntArray10320!![0]), true)) player.aByte6376++
+                if (CompositeNpcModelBuilderStatics.aClass348_Sub49Array2105!![i_3_] != null) player.method2452(84.toByte(), (CompositeNpcModelBuilderStatics.aClass348_Sub49Array2105!![i_3_]!!))
+                ShaderStateStatics.anInt6513 = 0
+                ScrollTexMaterialPassStatics.anIntArray6290!![ShaderStateStatics.anInt6513++] = i_3_
+                AbstractBloomEffectStatics.aByteArray6624!![i_3_] = 0.toByte()
+                ShortMatrixNodeStatics.anInt9513 = 0
+                for (i_8_ in 1..2047) {
+                    if (i_8_ != i_3_) {
+                        val i_9_ = class348_sub49_sub2.readBits((-24).toByte(), 18)
+                        val i_10_ = i_9_ shr 16
+                        val i_11_ = (i_9_ and 0xff78) shr 8
+                        val i_12_ = i_9_ and 0xff
+                        SoundBankPatchStatics.aTextureAtlasStateArray6802s!![i_8_] = TextureAtlasState()
+                        val class359 = SoundBankPatchStatics.aTextureAtlasStateArray6802s!![i_8_]!!
+                        class359.aBoolean4426 = false
+                        class359.anInt4420 = (i_11_ shl 14) + ((i_10_ shl 28) + i_12_)
+                        class359.anInt4423 = 0
+                        class359.anInt4425 = -1
+                        GlArrayBufferObjectStatics.anIntArray4709!![ShortMatrixNodeStatics.anInt9513++] = i_8_
+                        AbstractBloomEffectStatics.aByteArray6624!![i_8_] = 0.toByte()
+                    }
+                }
+                class348_sub49_sub2.stopBitAccess(false)
+            }
+    
+            @JvmStatic
+            fun method1742(bool: Boolean, i: Int): MapLabelMenuEntry? {
+                if (bool != false) method1740(35, -126, false)
+                anInt5885++
+                if (!RenderableGroupStatics.aBoolean5013 || SceneObjectEntityStatics.anInt8731 > i || MultiLevelOptionStateStatics.anInt6151 < i) return null
+                return (FireParticleStreamStatics.aClass110_Sub1Array97!![i + -SceneObjectEntityStatics.anInt8731])
+            }
+}

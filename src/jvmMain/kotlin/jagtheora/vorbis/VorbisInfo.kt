@@ -2,6 +2,7 @@ package jagtheora.vorbis
 
 import jagtheora.misc.SimplePeer
 import jagtheora.ogg.OggPacket
+import jagtheora.vorbis.VorbisInfoStatics.init
 
 class VorbisInfo : SimplePeer() {
     @JvmField
@@ -18,14 +19,4 @@ class VorbisInfo : SimplePeer() {
     external fun headerIn(arg0: VorbisComment?, arg1: OggPacket?): Int
 
     external override fun clear()
-
-    companion object {
-        init {
-            initFields()
-        }
-
-        private external fun initFields()
-
-        protected external fun init()
-    }
 }

@@ -2,6 +2,7 @@ package jagdx
 
 import jaclib.peer.IUnknown
 import jaclib.peer.hb
+import jagdx.IDirect3DDeviceStatics.c
 
 class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
     fun b(): IDirect3DEventQuery? {
@@ -256,8 +257,4 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
     private external fun _CreatePixelShader(arg0: ByteArray?, arg1: IDirect3DPixelShader?): Int
 
     private external fun _GetSwapChain(arg0: Int, arg1: IDirect3DSwapChain?): Int
-
-    companion object {
-        private val c = FloatArray(4)
-    }
 }

@@ -7,10 +7,10 @@ class IndexedSprite : Sprite {
 
     constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_16_: Int, `is`: ByteArray?) {
         try {
-            this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3944(`is`, i, ClampTextureNode.aTextureFormatInfo_9471, 2, false, i_16_)
+            this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3944(`is`, i, ClampTextureNodeStatics.aTextureFormatInfo_9471, 2, false, i_16_)
             this.anInterface18_Impl3_5196!!.method66(false, false, 25688)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_16_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_16_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -19,90 +19,7 @@ class IndexedSprite : Sprite {
             this.anInterface18_Impl3_5196 = var_ha_Sub3!!.method3839(i_17_, i, -15137, false, `is`)
             this.anInterface18_Impl3_5196!!.method66(false, false, 25688)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_17_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt5194: Int = 0
-        @JvmField
-        var anInt5195: Int = 0
-        @JvmField
-        var aStringArray5197: Array<String?>? = arrayOfNulls<String>(100)
-        @JvmField
-        var anInt5198: Int = 0
-        @JvmField
-        var aServerConnectionInfo_5199: ServerConnectionInfo? = null
-
-        @JvmStatic
-        fun method162(i: Byte) {
-            aStringArray5197 = null
-            if (i >= -67) aServerConnectionInfo_5199 = null
-            aServerConnectionInfo_5199 = null
-        }
-
-        @JvmStatic
-        fun method163(i: Int): Int {
-            anInt5198++
-            if (i != 512) method165(122, 62, -125, 72, -74, 116, 43, 104.toByte(), 62, -115)
-            return NpcConfig.aResourceLoaderThread_897!!.method2325((-98).toByte())
-        }
-
-        @JvmStatic
-        fun method164(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int): Boolean {
-            anInt5195++
-            if (!TurbulenceTextureNode.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
-            if (NpcDefinition.anInt2946 < 100) return false
-            val i_3_ = TextureCache.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_]
-            if (i_3_ == -RandomAccessFileOnDisk.anInt3049) return false
-            if (RandomAccessFileOnDisk.anInt3049 == i_3_) return true
-            if (SoundCacheState.aTerrainTileArray4142 == NativeSprite.Companion.aTerrainTileArray5191) return false
-            val i_4_ = i_0_ shl Tooltip.anInt4459
-            val i_5_ = i_2_ shl Tooltip.anInt4459
-            if (i_1_.toInt() != -97) method163(-4)
-            if ((ScrollTexMaterialPass.method2169(i_4_ - -1, i_4_ - (-ArchiveFileConditionWrapper.anInt3465 - -1), 1 + i_5_, 1 + i_4_, -1 + (i_5_ - -ArchiveFileConditionWrapper.anInt3465), NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, i_0_), NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, 1 + i_0_), NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_), -1 + ArchiveFileConditionWrapper.anInt3465 + i_5_, false)) && (ScrollTexMaterialPass.method2169(
-                    1 + i_4_,
-                    ArchiveFileConditionWrapper.anInt3465 + (i_4_ + -1),
-                    i_5_ + 1,
-                    ArchiveFileConditionWrapper.anInt3465 + (i_4_ - 1),
-                    i_5_ + ArchiveFileConditionWrapper.anInt3465 - 1,
-                    NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_2_ - -1, 1 + i_0_),
-                    NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_ + 1),
-                    NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_),
-                    1 + i_5_,
-                    false
-                ))
-            ) {
-                TheoraVideoStream.anInt9039++
-                TextureCache.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = RandomAccessFileOnDisk.anInt3049
-                return true
-            }
-            TextureCache.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = -RandomAccessFileOnDisk.anInt3049
-            return false
-        }
-
-        @JvmStatic
-        fun method165(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Byte, i_13_: Int, i_14_: Int) {
-            anInt5194++
-            if (i_9_ < 512 || i_11_ < 512 || (-2 + GlCubemapLightPass.anInt7319) * 512 < i_9_ || (-2 + RangeThresholdTextureNode.anInt9109) * 512 < i_11_) {
-                RemoveRoofsOptionState.anIntArray6062!![1] = -1
-                RemoveRoofsOptionState.anIntArray6062!![0] = RemoveRoofsOptionState.anIntArray6062!![1]
-            } else if (i_12_ >= 22) {
-                val i_15_ = CollisionMapAccessor.method2064(i_9_, i, 11219, i_11_) - i_7_
-                if (GrayscaleNoiseTexture.aBoolean5300) LinkedNodeListIterator.method1010(false, true)
-                else {
-                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method891(i_10_, 0, 0)
-                    FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
-                }
-                if (!ParticleSystemRenderer.aBoolean3870) FacingDirectionNode.aRenderer6654!!.da(i_9_, i_15_, i_11_, RemoveRoofsOptionState.anIntArray6062)
-                else FacingDirectionNode.aRenderer6654!!.HA(i_9_, i_15_, i_11_, LocalPlayerState.anInt1906, RemoveRoofsOptionState.anIntArray6062)
-                if (GrayscaleNoiseTexture.aBoolean5300) GlVertexBufferArb.method2129(60.toByte())
-                else {
-                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method891(-i_10_, 0, 0)
-                    FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
-                }
-            }
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("lp.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_17_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 }

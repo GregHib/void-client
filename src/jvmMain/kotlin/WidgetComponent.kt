@@ -1,6 +1,24 @@
-import NoiseTextureNode.Companion.method3102
-import VoronoiNoiseTextureNode.Companion.method3060
+import NoiseTextureNodeStatics.method3102
+import VoronoiNoiseTextureNodeStatics.method3060
 import kotlin.math.sqrt
+import WidgetComponentStatics.method424
+import WidgetComponentStatics.anInt684
+import WidgetComponentStatics.anInt691
+import WidgetComponentStatics.anInt694
+import WidgetComponentStatics.anInt712
+import WidgetComponentStatics.anInt718
+import WidgetComponentStatics.anInt722
+import WidgetComponentStatics.anInt736
+import WidgetComponentStatics.anInt743
+import WidgetComponentStatics.anInt758
+import WidgetComponentStatics.anInt766
+import WidgetComponentStatics.anInt767
+import WidgetComponentStatics.anInt783
+import WidgetComponentStatics.anInt802
+import WidgetComponentStatics.anInt804
+import WidgetComponentStatics.anInt819
+import WidgetComponentStatics.anInt827
+import WidgetComponentStatics.anInt829
 
 /* Class46 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -304,9 +322,9 @@ class WidgetComponent {
 
     fun method425(var_renderer: Renderer, i: Byte): Sprite? {
         anInt767++
-        var var_sprite = SceneryDetailOptionState.aLruByteCache_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
+        var var_sprite = SceneryDetailOptionStateStatics.aLruByteCache_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
         if (var_sprite != null) return var_sprite
-        val spriteImage = SpriteImage.method1521(GroundDecorEntity.aJs5Archive_8755!!, this.anInt756, 0)
+        val spriteImage = SpriteImageStatics.method1521(GroundDecorEntityStatics.aJs5Archive_8755!!, this.anInt756, 0)
         if (spriteImage == null) return null
         val i_10_ = (spriteImage.anInt2703 + (spriteImage.anInt2702 + spriteImage.anInt2698))
         val i_11_ = (spriteImage.anInt2700 + (spriteImage.anInt2696 + spriteImage.anInt2701))
@@ -337,15 +355,15 @@ class WidgetComponent {
             i_12_++
         }
         var_sprite = var_renderer.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772)
-        SceneryDetailOptionState.aLruByteCache_6096!!.method582(var_sprite, this.anInt830.toLong(), (-104).toByte())
+        SceneryDetailOptionStateStatics.aLruByteCache_6096!!.method582(var_sprite, this.anInt830.toLong(), (-104).toByte())
         return var_sprite
     }
 
     fun method426(var_renderer: Renderer?, i: Byte): Font? {
         anInt827++
-        val class324 = GlTextureBase.method232(var_renderer, (-53).toByte(), false, this.anInt702)
+        val class324 = GlTextureBaseStatics.method232(var_renderer, (-53).toByte(), false, this.anInt702)
         if (i.toInt() != 68) method436(-71, -56, -125)
-        ContactList.aBoolean9616 = class324 == null
+        ContactListStatics.aBoolean9616 = class324 == null
         return class324
     }
 
@@ -371,24 +389,24 @@ class WidgetComponent {
         var i = i
         try {
             anInt684++
-            ContactList.aBoolean9616 = false
+            ContactListStatics.aBoolean9616 = false
             if (this.anInt770 == 0) return null
             if (this.anInt770 == 1 && this.anInt753 == -1) return null
             if (this.anInt770 == 1) {
                 val i_25_ = i
                 if (widgetDefinition != null) i = i or widgetDefinition.method263(i_24_, 106, i_21_, true)
                 val l = (this.anInt753 + ((this.anInt770 shl 16) + (var_renderer!!.anInt4567 shl 29))).toLong()
-                var abstractModel = ParticleGeometry.aLruByteCache_4417!!.method583(l, -90) as AbstractModel?
+                var abstractModel = ParticleGeometryStatics.aLruByteCache_4417!!.method583(l, -90) as AbstractModel?
                 if (abstractModel == null || var_renderer.method3667(abstractModel.ua(), i) != 0) {
                     if (abstractModel != null) i = var_renderer.method3679(i, abstractModel.ua())
-                    val class124 = ParticleConfigParser.method2277(0, (ScatterTextureNode.aJs5Archive_9365!!), this.anInt753, -1)
+                    val class124 = ParticleConfigParserStatics.method2277(0, (ScatterTextureNodeStatics.aJs5Archive_9365!!), this.anInt753, -1)
                     if (class124 == null) {
-                        ContactList.aBoolean9616 = true
+                        ContactListStatics.aBoolean9616 = true
                         return null
                     }
                     if (class124.anInt1830 < 13) class124.method1092(2, 114)
-                    abstractModel = var_renderer.method3625(class124, i, Gl3dTexture.anInt8628, 64, 768)
-                    ParticleGeometry.aLruByteCache_4417!!.method582(abstractModel, l, (-125).toByte())
+                    abstractModel = var_renderer.method3625(class124, i, Gl3dTextureStatics.anInt8628, 64, 768)
+                    ParticleGeometryStatics.aLruByteCache_4417!!.method582(abstractModel, l, (-125).toByte())
                 }
                 if (widgetDefinition != null) abstractModel = widgetDefinition.method269(-101, abstractModel, i_24_, i_22_, i, i_21_)
                 abstractModel!!.s(i_25_)
@@ -397,7 +415,7 @@ class WidgetComponent {
             if (this.anInt770 == 2) {
                 val class64 = (bufferedMessageQueue!!.method2079(this.anInt753, -1).method803(varResolver, var_renderer, i_22_, i_24_, widgetDefinition, widgetCache, i_21_, 104, i))
                 if (class64 == null) {
-                    ContactList.aBoolean9616 = true
+                    ContactListStatics.aBoolean9616 = true
                     return null
                 }
                 return class64
@@ -406,7 +424,7 @@ class WidgetComponent {
                 if (compositeNpcModelBuilder == null) return null
                 val class64 = compositeNpcModelBuilder.method1230(modelHeaderCache, -402058072, widgetCache, modelDefinitionLoader, varResolver, bufferedMessageQueue, i_21_, i_24_, i, widgetDefinition, i_22_, var_renderer)
                 if (class64 == null) {
-                    ContactList.aBoolean9616 = true
+                    ContactListStatics.aBoolean9616 = true
                     return null
                 }
                 return class64
@@ -415,7 +433,7 @@ class WidgetComponent {
                 val class213 = modelHeaderCache!!.method1940(i_23_ + -365, this.anInt753)
                 val class64 = class213.method1559(compositeNpcModelBuilder, widgetDefinition, var_renderer, i, i_22_, 10, i_21_, 88.toByte(), i_24_)
                 if (class64 == null) {
-                    ContactList.aBoolean9616 = true
+                    ContactListStatics.aBoolean9616 = true
                     return null
                 }
                 return class64
@@ -423,7 +441,7 @@ class WidgetComponent {
             if (this.anInt770 == 6) {
                 val class64 = (bufferedMessageQueue!!.method2079(this.anInt753, -1).method800(0, null, widgetCache, false, null, 0, npcDefinitionCache, i_21_, widgetDefinition, varResolver, var_renderer, 0, null, i_24_, 0, i, i_22_))
                 if (class64 == null) {
-                    ContactList.aBoolean9616 = true
+                    ContactListStatics.aBoolean9616 = true
                     return null
                 }
                 return class64
@@ -435,14 +453,14 @@ class WidgetComponent {
                 val i_28_ = this.anInt779
                 val class64 = compositeNpcModelBuilder.method1232(i_24_, i, i_28_, i_27_, widgetCache, modelDefinitionLoader, -15331, i_26_, i_22_, var_renderer, i_21_, widgetDefinition)
                 if (class64 == null) {
-                    ContactList.aBoolean9616 = true
+                    ContactListStatics.aBoolean9616 = true
                     return null
                 }
                 return class64
             }
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw SoundBankPatchStatics.method2929(
                 runtimeexception,
                 ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + i_24_ + ')')
             )
@@ -752,11 +770,11 @@ class WidgetComponent {
                 abstractModel!!.method620(abstractCameraTransform)
                 val class129s = abstractModel.method619()
                 val class342s = abstractModel.method604()
-                if ((this.aClass318_Sub10_740 == null || this.aClass318_Sub10_740!!.aBoolean6470) && (class129s != null || class342s != null)) this.aClass318_Sub10_740 = SceneGraphContainer.method2526(i_63_, false)
+                if ((this.aClass318_Sub10_740 == null || this.aClass318_Sub10_740!!.aBoolean6470) && (class129s != null || class342s != null)) this.aClass318_Sub10_740 = SceneGraphContainerStatics.method2526(i_63_, false)
                 if (this.aClass318_Sub10_740 == null) break
                 this.aClass318_Sub10_740!!.method2536(var_renderer, i_63_.toLong(), class129s, class342s, false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("at.J(" + i + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_63_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("at.J(" + i + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_63_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -805,14 +823,14 @@ class WidgetComponent {
 
     fun method443(var_renderer: Renderer, i: Byte): AbstractModelRenderer? {
         anInt819++
-        ContactList.aBoolean9616 = false
+        ContactListStatics.aBoolean9616 = false
         val l = ((this.anInt809.toLong() shl 40) + (((if (this.aBoolean790) 1L else 0L) shl 38) + ((this.anInt672.toLong() shl 36) + ((if (this.aBoolean745) 1L else 0L) shl 35))) + (this.anInt756.toLong() + ((if (!this.aBoolean735) 0L else 1L) shl 39)))
-        var abstractModelRenderer = FontMetaRef.aLruByteCache_4327!!.method583(l, -71) as AbstractModelRenderer?
+        var abstractModelRenderer = FontMetaRefStatics.aLruByteCache_4327!!.method583(l, -71) as AbstractModelRenderer?
         if (i > -27) method434(true)
         if (abstractModelRenderer != null) return abstractModelRenderer
-        val spriteImage = SpriteImage.method1521(GroundDecorEntity.aJs5Archive_8755!!, this.anInt756, 0)
+        val spriteImage = SpriteImageStatics.method1521(GroundDecorEntityStatics.aJs5Archive_8755!!, this.anInt756, 0)
         if (spriteImage == null) {
-            ContactList.aBoolean9616 = true
+            ContactListStatics.aBoolean9616 = true
             return null
         }
         if (this.aBoolean790) spriteImage.method1514()
@@ -823,7 +841,7 @@ class WidgetComponent {
         if (this.anInt672 >= 2) spriteImage.method1515(16777215)
         if (this.anInt809 != 0) spriteImage.method1511(0xffffff.inv() or this.anInt809)
         abstractModelRenderer = var_renderer.method3691(spriteImage, true)
-        FontMetaRef.aLruByteCache_4327!!.method580(31902, abstractModelRenderer, l, (abstractModelRenderer!!.method971() * abstractModelRenderer.method969() * 4))
+        FontMetaRefStatics.aLruByteCache_4327!!.method580(31902, abstractModelRenderer, l, (abstractModelRenderer!!.method971() * abstractModelRenderer.method969() * 4))
         return abstractModelRenderer
     }
 
@@ -833,14 +851,14 @@ class WidgetComponent {
             anInt804++
             if (this.anInt705 == -1) return null
             val l = ((this.anInt693.toLong() shl 16 and (65535L shl 16)) or ((this.anInt733.toLong() shl 32 and (65535L shl 32)) or (this.anInt674.toLong() shl 48 and (65535L shl 48))) or (this.anInt705.toLong() and 0xffffL))
-            var particleSystemRenderer = (EdgeDetectTextureNode.aLruByteCache_9171!!.method583(l, 78) as ParticleSystemRenderer?)
+            var particleSystemRenderer = (EdgeDetectTextureNodeStatics.aLruByteCache_9171!!.method583(l, 78) as ParticleSystemRenderer?)
             if (particleSystemRenderer == null) {
                 particleSystemRenderer = mapSceneCache!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, spriteStore!!, this.anInt705)
-                EdgeDetectTextureNode.aLruByteCache_9171!!.method582(particleSystemRenderer, l, (-120).toByte())
+                EdgeDetectTextureNodeStatics.aLruByteCache_9171!!.method582(particleSystemRenderer, l, (-120).toByte())
             }
             return particleSystemRenderer
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (spriteStore != null) "{...}" else "null") + ',' + (if (mapSceneCache != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (spriteStore != null) "{...}" else "null") + ',' + (if (mapSceneCache != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -851,7 +869,7 @@ class WidgetComponent {
         this.anInt756 = -1
         this.anInt699 = -1
         this.anInt713 = -1
-        this.anInt797 = InputStream_Sub1.anInt78
+        this.anInt797 = InputStream_Sub1Statics.anInt78
         this.anInt779 = -1
         this.anInt719 = -1
         this.aClass348_Sub44_748 = CircleDrawer.aClass348_Sub44_2692
@@ -867,145 +885,5 @@ class WidgetComponent {
         this.anInt812 = -1
         this.anInt806 = -1
         this.aByte817 = 0.toByte()
-    }
-
-    companion object {
-        @JvmField
-        var anInt684: Int = 0
-        @JvmField
-        var anInt691: Int = 0
-        @JvmField
-        var anInt694: Int = 0
-        @JvmField
-        var anInt712: Int = 0
-        @JvmField
-        var anInt718: Int = 0
-        @JvmField
-        var anInt722: Int = 0
-        @JvmField
-        var anInt736: Int = 0
-        @JvmField
-        var anInt743: Int = 0
-        @JvmField
-        var anInt758: Int = 0
-        @JvmField
-        var anInt766: Int = 0
-        @JvmField
-        var anInt767: Int = 0
-        @JvmField
-        var anInt768: Int = 0
-        @JvmField
-        var anInt783: Int = 0
-        @JvmField
-        var anInt802: Int = 0
-        @JvmField
-        var anInt804: Int = 0
-        @JvmField
-        var anInt819: Int = 0
-        var aByteArray821: ByteArray? = ByteArray(32896)
-        @JvmField
-        var anInt825: Int = 0
-        @JvmField
-        var anInt827: Int = 0
-        @JvmField
-        var anInt829: Int = 0
-        @JvmField
-        var anInt837: Int = 0
-        @JvmField
-        var aSingletonMarker_838: SingletonMarker?
-
-        @JvmStatic
-        fun method424(i: Int, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, `is`: Array<Array<ByteArray?>?>?, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) {
-            var i_4_ = i_4_
-            var i_7_ = i_7_
-            try {
-                anInt768++
-                if (i_7_ != i_1_ && i_3_ != 0) {
-                    if (i_7_ == 9) {
-                        i_7_ = 1
-                        i_4_ = i_4_ - -1 and 0x3
-                    }
-                    if (i_7_ == 10) {
-                        i_4_ = 3 + i_4_ and 0x3
-                        i_7_ = 1
-                    }
-                    if (i_7_ == 11) {
-                        i_4_ = i_4_ + 3 and 0x3
-                        i_7_ = 8
-                    }
-                    var_renderer!!.Q(i_6_, i_9_, i_5_, i_8_, i_0_, i, `is`!![i_7_ - 1]!![i_4_], i_3_, i_2_)
-                }
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("at.S(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
-            }
-        }
-
-        @JvmStatic
-        fun method427(i: Int) {
-            anInt837++
-            RenderConfigFactory.aLocDefinitionCache_2979!!.method2033(46.toByte())
-            Tooltip.aParticleDefLoader_4460!!.method1377(2)
-            RadialTextureNode.aModelDefinitionLoader_9342!!.method1204(0)
-            GradientLookupEffect.aSeqDefinitionCache_9195!!.method2006(88)
-            MapAreaDefinition.aBufferedMessageQueue_2529!!.method2080(127)
-            ClientException.aModelHeaderCache_112!!.method1938(126)
-            ParticleEmitterNode.aWidgetCache_191!!.method838(7)
-            ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2542(-101)
-            RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)
-            NormalMapGenerator.aParticleAmountCache_3453!!.method1590(0)
-            OpenGlModel.aNpcDefinitionCache_5558!!.method1986((-91).toByte())
-            ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1174((-99).toByte())
-            TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1222(true)
-            TheoraVideoStream.aLocTypeDefLoader_9036!!.method1410(-27995)
-            ProjectionCameraTransform.aEmoteDefCache_5764!!.method2602(0)
-            CircleHitbox.aMapSceneCache_413!!.method816(false)
-            HoverActionEntry.aSpriteStore_1813!!.method302(-797644856)
-            AbstractTileShape.aMapSceneDefLoader_6559!!.method1390(23)
-            GraphicsOptionState.aItemDefinitionLoader_3147!!.method1283(1)
-            SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method694(-1007)
-            FileExistsCondition.aModelDefinitionCache_4782!!.method1598(111)
-            CalendarUtil.method2638(-4631)
-            NpcCountAccessor.method1328(-26162)
-            method3102(22385)
-            MapSceneRenderer.method386((-106).toByte())
-            AudioResampler.method1271(0)
-            TextureMipDescriptor.aLruByteCache_4346!!.method587(-108)
-            MaterialTypeMarker.aLruByteCache_6517!!.method587(-109)
-            TerrainTileShape.aLruByteCache_8807!!.method587(-113)
-            SkeletalAnimFrameLoader.aLruByteCache_463!!.method587(-83)
-            ChatCommandProcessor.aLruByteCache_1174!!.method587(-91)
-            val i_17_ = 54 / ((26 - i) / 53)
-        }
-
-        fun method440(i: Int, i_67_: Byte) {
-            BlankTextureNode.anIntArray9259 = IntArray(i)
-            if (i_67_.toInt() == -61) {
-                ConnectionStateType.anIntArray1045 = IntArray(i)
-                LinkedListIterator.anIntArray2117 = IntArray(i)
-                anInt825++
-                AbstractModel.anIntArray1127 = IntArray(i)
-                FileIoUtil.anIntArray4097 = IntArray(i)
-            }
-        }
-
-        @JvmStatic
-        fun method442(i: Byte) {
-            if (i <= -8) {
-                aSingletonMarker_838 = null
-                aByteArray821 = null
-            }
-        }
-
-        init {
-            var i = 0
-            for (i_69_ in 0..255) {
-                var i_70_ = 0
-                while (i_69_ >= i_70_) {
-                    aByteArray821!![i++] = (255.0 / sqrt((((i_69_ * i_69_) + (i_70_ * i_70_) - -65535).toFloat() / 65535.0f).toDouble())).toInt().toByte()
-                    i_70_++
-                }
-            }
-            aSingletonMarker_838 = SingletonMarker()
-        }
     }
 }

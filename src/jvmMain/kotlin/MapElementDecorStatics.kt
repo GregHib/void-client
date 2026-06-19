@@ -1,0 +1,167 @@
+import TexGenMaterialPassStatics.method2161
+import TypedRecordTableStatics.method2178
+import HeightMapNoise.method2278
+import ConfigVarProgressStatics.method2312
+import ConnectionStateTypeStatics.method527
+import MapRegionLoaderStatics.method751
+import MapRegionLoaderStatics.method758
+import ChatMessageStreamStatics.method136
+import java.awt.Frame
+
+object MapElementDecorStatics {
+    var anInt10328: Int = 0
+            var anInt10329: Int = 0
+            @JvmField
+            var aMapTileShapeArray10330: Array<MapTileShape?>? = null
+            var anInt10333: Int = 0
+            @JvmField
+            var aWidgetComponent_10336: WidgetComponent? = null
+            var anInt10337: Int = 0
+            var anInt10340: Int = 0
+            var anInt10342: Int = 0
+            var anInt10343: Int = 0
+            var anInt10344: Int = 0
+            var anInt10346: Int = 0
+            var anInt10347: Int = 0
+            var anInt10348: Int = 0
+            var anInt10351: Int = 0
+            var anInt10352: Int = 0
+            var anInt10353: Int = 0
+            var anInt10354: Int = 0
+            var anInt10357: Int = 0
+            var anInt10358: Int = 0
+            var anInt10359: Int = 0
+            var anInt10360: Int = 0
+            var anInt10361: Int = 0
+            var anInt10362: Int = 0
+            var anInt10363: Int = 0
+            @JvmField
+            var anInt10364: Int = 0
+    
+            fun method2461(class318_sub6: SceneEffectMarker, bool: Boolean) {
+                if (bool != true) aWidgetComponent_10336 = null
+                class318_sub6.aClass318_Sub1_Sub3_Sub3_6431 = null
+                anInt10361++
+                if (FriendChatMemberStatics.anInt4474 < 20) {
+                    GameClock.aDoublyLinkedNodeList_1114!!.method1869(-89, class318_sub6)
+                    FriendChatMemberStatics.anInt4474++
+                }
+            }
+    
+            fun method2462(i: Int, i_3_: Int, i_4_: Int): Int {
+                anInt10351++
+                var i_5_ = (method2278(4, 91923 + i_4_, 120.toByte(), i_3_ + 45365) - 128 + ((method2278(2, 37821 + i_4_, 122.toByte(), 10294 + i_3_) - 128 shr 1) + (-128 + method2278(1, i_4_, 120.toByte(), i_3_) shr 2)))
+                i_5_ = (0.3 * i_5_.toDouble()).toInt() + 35
+                if (i_5_ >= 10) {
+                    if (i_5_ > 60) i_5_ = 60
+                } else i_5_ = 10
+                return i_5_
+            }
+    
+            fun method2463(i: Int, i_6_: Int, privilegedOperationWorker: PrivilegedOperationWorker, i_7_: Int, i_8_: Int, i_9_: Int): Frame? {
+                var i_7_ = i_7_
+                anInt10344++
+                if (!privilegedOperationWorker.method2247(-4)) return null
+                if (i_7_ == 0) {
+                    val class57s = WorldListEntryStatics.method286((-49).toByte(), privilegedOperationWorker)
+                    if (class57s == null) return null
+                    var bool = false
+                    var i_10_ = 0
+                    while (class57s.size > i_10_) {
+                        if (i_6_ == class57s[i_10_]!!.anInt1047 && (i == class57s[i_10_]!!.anInt1054) && (i_9_ == 0 || (class57s[i_10_]!!.anInt1052 == i_9_)) && (!bool || (class57s[i_10_]!!.anInt1046 > i_7_))) {
+                            i_7_ = class57s[i_10_]!!.anInt1046
+                            bool = true
+                        }
+                        i_10_++
+                    }
+                    if (!bool) return null
+                }
+                val class144 = privilegedOperationWorker.method2229(i_9_, i, i_7_, i_6_, (-11).toByte())
+                while (class144.anInt1997 == 0) method2161(19.toByte(), 10L)
+                val frame = class144.anObject1998 as Frame?
+                if (frame == null) return null
+                if (i_8_ != 14199) return null
+                if (class144.anInt1997 == 2) {
+                    method527(frame, privilegedOperationWorker, false)
+                    return null
+                }
+                return frame
+            }
+    
+            fun method2464(i: Byte, i_11_: Int, i_12_: Int, i_13_: Int, var_renderer: Renderer?, i_14_: Int, var_renderConfig: RenderConfig?) {
+                do {
+                    try {
+                        anInt10357++
+                        if (LinkedListNodeStatics.anInt4290 < 100) SpotAnimEntityStatics.method2512(var_renderConfig, var_renderer, i.toInt() xor 0x74)
+                        var_renderer!!.KA(i_11_, i_14_, i_12_ + i_11_, i_14_ + i_13_)
+                        if (LinkedListNodeStatics.anInt4290 < 100) {
+                            val i_15_ = 20
+                            val i_16_ = i_12_ / 2 + i_11_
+                            val i_17_ = i_14_ - -(i_13_ / 2) - 18 - i_15_
+                            var_renderer.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0)
+                            var_renderer.method3628(-152 + i_16_, i_17_, 304, 34, PerlinNoiseTextureNodeStatics.aColorArray9163!![UnderlayDefinitionStatics.anInt2884]!!.getRGB(), 0)
+                            var_renderer.aa(i_16_ - 150, 2 + i_17_, LinkedListNodeStatics.anInt4290 * 3, 30, GlVertexBufferBaseStatics.aColorArray1928!![UnderlayDefinitionStatics.anInt2884]!!.getRGB(), 0)
+                            NodeDequeStatics.aFont_3326!!.method2575((-116).toByte(), i_16_, MinimapPolygonDrawerStatics.aColorArray5242!![UnderlayDefinitionStatics.anInt2884]!!.getRGB(), LocalizedTextStatics.aLocalizedText_3501!!.method2063(AnimationFrameDefinitionStatics.anInt6967, i + 551), -1, i_15_ + i_17_)
+                        } else {
+                            val i_18_ = (WidgetActionEntryStatics.anInt6992 + -(i_12_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt())
+                            val i_19_ = ((i_13_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt() + DebugOverlayRenderer.anInt3170)
+                            val i_20_ = ((i_12_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt() + WidgetActionEntryStatics.anInt6992)
+                            StaticNoiseTextureStatics.anInt8665 = DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt()
+                            LocConfigModelBuilderStatics.anInt4509 = (WidgetActionEntryStatics.anInt6992 + -(i_12_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt())
+                            val i_21_ = (DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt())
+                            LoadProgressCountersStatics.anInt2446 = ((2 * i_13_).toFloat() / MapRegionLoaderStatics.aFloat1247).toInt()
+                            SpriteStoreStatics.anInt370 = ((i_12_ * 2).toFloat() / MapRegionLoaderStatics.aFloat1247).toInt()
+                            method751(i_18_ + MapRegionLoaderStatics.anInt1266, i_19_ + MapRegionLoaderStatics.anInt1263, i_20_ - -MapRegionLoaderStatics.anInt1266, MapRegionLoaderStatics.anInt1263 + i_21_, i_11_, i_14_, i_12_ + i_11_, i_13_ + i_14_ + 1)
+                            MapRegionLoaderStatics.method748(var_renderer)
+                            if (i.toInt() != -7) method2462(63, -7, -14)
+                            val class262 = method758(var_renderer)
+                            method2312(-13084, 0, class262, 0, var_renderer)
+                            if (GlEnvMappedWaterPassStatics.anInt7379 > 0) {
+                                ClientLoadStateMachine.anInt2173--
+                                if (ClientLoadStateMachine.anInt2173 == 0) {
+                                    GlEnvMappedWaterPassStatics.anInt7379--
+                                    ClientLoadStateMachine.anInt2173 = 20
+                                }
+                            }
+                            if (!PixelBlender.aBoolean3811) break
+                            val i_22_ = -5 + i_11_ + i_12_
+                            var i_23_ = -8 + i_13_ + i_14_
+                            GameAppletFrameStatics.aFont_20!!.method2569("Fps:" + (SimpleToggleOptionStateStatics.anInt5891), i_23_, 16776960, i_22_, i + -116, -1)
+                            i_23_ -= 15
+                            val runtime = Runtime.getRuntime()
+                            val i_24_ = ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L).toInt()
+                            var i_25_ = 16776960
+                            if (i_24_ > 65536) i_25_ = 16711680
+                            GameAppletFrameStatics.aFont_20!!.method2569("Mem:" + i_24_ + "k", i_23_, i_25_, i_22_, -127, -1)
+                            i_23_ -= 15
+                        }
+                    } catch (runtimeexception: RuntimeException) {
+                        throw SoundBankPatchStatics.method2929(runtimeexception, ("lf.L(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_14_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
+                    }
+                    break
+                } while (false)
+            }
+    
+            fun method2468(i: Int) {
+                anInt10348++
+                if (i == 3613) {
+                    var i_31_ = 0
+                    var i_32_ = 0
+                    while (GlCubemapLightPassStatics.anInt7319 > i_32_) {
+                        var i_33_ = 0
+                        while (RangeThresholdTextureNodeStatics.anInt9109 > i_33_) {
+                            if (GlCubemapLightPassStatics.method3542(i_33_, HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029, i_32_, 0, i_31_, true)) i_31_++
+                            if (i_31_ >= 512) return
+                            i_33_++
+                        }
+                        i_32_++
+                    }
+                }
+            }
+    
+            @JvmStatic
+            fun method2469(bool: Boolean) {
+                aWidgetComponent_10336 = null
+                if (bool == true) aMapTileShapeArray10330 = null
+            }
+}

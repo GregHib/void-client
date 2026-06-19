@@ -1,4 +1,11 @@
-import NullRenderPass.Companion.method3533
+import NullRenderPassStatics.method3533
+import TextureDefinitionLoaderStatics.anInt1964
+import TextureDefinitionLoaderStatics.aBoundsConstraintEntry_1966
+import TextureDefinitionLoaderStatics.anInt1967
+import TextureDefinitionLoaderStatics.anInt1968
+import TextureDefinitionLoaderStatics.anInt1969
+import TextureDefinitionLoaderStatics.anInt1972
+import TextureDefinitionLoaderStatics.method1177
 
 /* Class141 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -56,7 +63,7 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
     }
 
     fun method1176(i: Int, i_1_: Byte) {
-        if (i_1_ < 31) Companion.method1177((-119).toByte())
+        if (i_1_ < 31) method1177((-119).toByte())
         synchronized(aLruByteCache_1963) {
             aLruByteCache_1963.method578(2, i)
         }
@@ -79,44 +86,7 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
             aJs5Archive_1971 = js5Archive
             aJs5Archive_1971!!.method407(0, 34)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_4_ != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        var anInt1964: Int = 0
-        @JvmField
-        var aBoundsConstraintEntry_1966: BoundsConstraintEntry?
-        var anInt1967: Int = 0
-        var anInt1968: Int = 0
-        var anInt1969: Int = 0
-        var anInt1970: Int = 0
-        var anInt1972: Int = 0
-        var anIntArray1973: IntArray? = intArrayOf(0, 1, 2, 3, 4, 5, 6, 14)
-        @JvmField
-        var anInt1974: Int = 0
-        var anIntArray1975: IntArray?
-        @JvmField
-        var aSpriteArchiveLoader_1977: SpriteArchiveLoader? = null
-
-        @JvmStatic
-        fun method1177(i: Byte) {
-            CutsceneSequenceData.anIntArray3726 = method3533(127.toByte(), 2048, 4, 8, 0.4f, 35, true, 8)
-            if (i.toInt() == 122) anInt1970++
-        }
-
-        @JvmStatic
-        fun method1179(i: Byte) {
-            anIntArray1975 = null
-            aSpriteArchiveLoader_1977 = null
-            anIntArray1973 = null
-            aBoundsConstraintEntry_1966 = null
-            if (i >= -111) method1177(47.toByte())
-        }
-
-        init {
-            aBoundsConstraintEntry_1966 = BoundsConstraintEntry("", 18)
-            anIntArray1975 = IntArray(1)
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("oda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_4_ != null) "{...}" else "null") + ')'))
         }
     }
 }

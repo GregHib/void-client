@@ -1,7 +1,25 @@
 import TrigLookupInit.method1606
-import ModelHeaderCache.Companion.method1935
-import VorbisOggDecoder.Companion.method2967
-import ChatMessageStream.Companion.method136
+import ModelHeaderCacheStatics.method1935
+import VorbisOggDecoderStatics.method2967
+import ChatMessageStreamStatics.method136
+import SequencedGroundDecorStatics.anInt10038
+import SequencedGroundDecorStatics.anInt10039
+import SequencedGroundDecorStatics.anInt10040
+import SequencedGroundDecorStatics.anInt10041
+import SequencedGroundDecorStatics.anInt10042
+import SequencedGroundDecorStatics.anInt10043
+import SequencedGroundDecorStatics.anInt10044
+import SequencedGroundDecorStatics.anInt10048
+import SequencedGroundDecorStatics.anInt10049
+import SequencedGroundDecorStatics.anInt10050
+import SequencedGroundDecorStatics.anInt10052
+import SequencedGroundDecorStatics.anInt10053
+import SequencedGroundDecorStatics.anInt10054
+import SequencedGroundDecorStatics.anInt10057
+import SequencedGroundDecorStatics.anInt10058
+import SequencedGroundDecorStatics.anInt10059
+import SequencedGroundDecorStatics.anInt10060
+import SequencedGroundDecorStatics.anInt10061
 
 /* Class318_Sub1_Sub3_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -22,7 +40,7 @@ class SequencedGroundDecor internal constructor(var_renderer: Renderer?, npcConf
             this.aSceneObjectAnimator_10045 = SceneObjectAnimator(var_renderer, npcConfig, i_8_, i_9_, this.plane.toInt(), i_0_, this, bool, i_10_)
             aBoolean10056 = npcConfig.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fea.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("fea.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))
         }
     }
 
@@ -50,7 +68,7 @@ class SequencedGroundDecor internal constructor(var_renderer: Renderer?, npcConf
         if (i_12_ != 0) return false
         val class101 = var_renderer!!.method3705()
         class101.method894(this.x, this.anInt6382, this.y)
-        if (!ParticleSystemRenderer.aBoolean3870) return class64.method628(i_11_, i, class101, false, 0)
+        if (!ParticleSystemRendererStatics.aBoolean3870) return class64.method628(i_11_, i, class101, false, 0)
         return class64.method623(i_11_, i, class101, false, 0, LocalPlayerState.anInt1906)
     }
 
@@ -86,11 +104,11 @@ class SequencedGroundDecor internal constructor(var_renderer: Renderer?, npcConf
         class101.method894(this.x, this.anInt6382, this.y)
         val class318_sub4 = method136(i, aBoolean10056, false)
         this.aSceneObjectAnimator_10045!!.method1670(this.aShort8751.toInt(), class101, this.aShort8747.toInt(), var_renderer, this.aShort8743.toInt(), class64, true, (-73).toByte(), this.aShort8750.toInt())
-        if (!ParticleSystemRenderer.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
+        if (!ParticleSystemRendererStatics.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
         if ((this.aSceneObjectAnimator_10045!!.aClass318_Sub10_3081) != null) {
             val class98 = this.aSceneObjectAnimator_10045!!.aClass318_Sub10_3081!!.method2525()
-            if (ParticleSystemRenderer.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
+            if (ParticleSystemRendererStatics.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
             else var_renderer.method3684(class98)
         }
         aBoolean10055 = class64.F() || (this.aSceneObjectAnimator_10045!!.aClass318_Sub10_3081) != null
@@ -130,7 +148,7 @@ class SequencedGroundDecor internal constructor(var_renderer: Renderer?, npcConf
             if (i_15_ >= -106) method44(97, null)
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fea.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("fea.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ')'))
         }
     }
 
@@ -155,28 +173,5 @@ class SequencedGroundDecor internal constructor(var_renderer: Renderer?, npcConf
         if (bool != true) return 68
         anInt10038++
         return this.aSceneObjectAnimator_10045!!.method1663(80)
-    }
-
-    companion object {
-        var anInt10038: Int = 0
-        var anInt10039: Int = 0
-        var anInt10040: Int = 0
-        var anInt10041: Int = 0
-        var anInt10042: Int = 0
-        var anInt10043: Int = 0
-        var anInt10044: Int = 0
-        var aBoolean10046: Boolean = false
-        var anInt10047: Int = 0
-        var anInt10048: Int = 0
-        var anInt10049: Int = 0
-        var anInt10050: Int = 0
-        var anInt10052: Int = 0
-        var anInt10053: Int = 0
-        var anInt10054: Int = 0
-        var anInt10057: Int = 0
-        var anInt10058: Int = 0
-        var anInt10059: Int = 0
-        var anInt10060: Int = 0
-        var anInt10061: Int = 0
     }
 }

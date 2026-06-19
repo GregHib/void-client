@@ -1,11 +1,20 @@
-import SceneEntity.Companion.method2383
-import jaggl.OpenGL.Companion.glBegin
-import jaggl.OpenGL.Companion.glBlitFramebufferEXT
-import jaggl.OpenGL.Companion.glEnd
-import jaggl.OpenGL.Companion.glMultiTexCoord2f
-import jaggl.OpenGL.Companion.glTexCoord2f
-import jaggl.OpenGL.Companion.glVertex2i
+import SceneEntityStatics.method2383
+import jaggl.OpenGLStatics.glBegin
+import jaggl.OpenGLStatics.glBlitFramebufferEXT
+import jaggl.OpenGLStatics.glEnd
+import jaggl.OpenGLStatics.glMultiTexCoord2f
+import jaggl.OpenGLStatics.glTexCoord2f
+import jaggl.OpenGLStatics.glVertex2i
 import kotlin.math.min
+import GlFramebufferBlitterStatics.anInt270
+import GlFramebufferBlitterStatics.anInt271
+import GlFramebufferBlitterStatics.anInt272
+import GlFramebufferBlitterStatics.anInt273
+import GlFramebufferBlitterStatics.anInt277
+import GlFramebufferBlitterStatics.anInt280
+import GlFramebufferBlitterStatics.anInt282
+import GlFramebufferBlitterStatics.anInt283
+import GlFramebufferBlitterStatics.anInt291
 
 /*
  * Class18
@@ -319,74 +328,6 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
                 aFrameBufferObject_285 = FrameBufferObject(aHa_Sub2_290)
                 aFrameBufferObject_284 = aFrameBufferObject_285
             }
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt270: Int = 0
-        @JvmField
-        var anInt271: Int = 0
-        @JvmField
-        var anInt272: Int = 0
-        @JvmField
-        var anInt273: Int = 0
-        @JvmField
-        var anInt274: Int = 0
-        @JvmField
-        var anInt277: Int = 0
-        @JvmField
-        var anInt278: Int = 0
-        @JvmField
-        var anIntArray279: IntArray? = IntArray(2048)
-        @JvmField
-        var anInt280: Int = 0
-        @JvmField
-        var anInt282: Int = 0
-        @JvmField
-        var anInt283: Int = 0
-        @JvmField
-        var anInt288: Int = 0
-        @JvmField
-        var anInt291: Int = 0
-        fun method271(i: Int, widgetComponent: WidgetComponent, i_0_: Byte, i_1_: Int) {
-            anInt278++
-            val var_aa = widgetComponent.method425(FacingDirectionNode.aRenderer6654!!, 19.toByte())
-            if (var_aa != null) {
-                FacingDirectionNode.aRenderer6654!!.KA(i_1_, i, widgetComponent.anInt709 + i_1_, i - -widgetComponent.anInt789)
-                if (KeyboardLayoutCache.anInt3306 >= 3) FacingDirectionNode.aRenderer6654!!.A(-16777216, var_aa, i_1_, i)
-                else NpcType.aAbstractModelRenderer_1365!!.method976((widgetComponent.anInt709.toFloat() / 2.0f + i_1_.toFloat()), i.toFloat() + widgetComponent.anInt789.toFloat() / 2.0f, 4096, (0x3fff and -ResourceProvider.aFloat3938.toInt()) shl 2, var_aa, i_1_, i)
-            }
-        }
-
-        @JvmStatic
-        fun method273(widgetComponent: WidgetComponent, i: Int) {
-            anInt288++
-            if (widgetComponent.anInt774 == 5 && widgetComponent.anInt812 != -1) method2383(FacingDirectionNode.aRenderer6654, -2, widgetComponent)
-        }
-
-        @JvmStatic
-        fun method277(i: Byte) {
-            if (i >= 77) anIntArray279 = null
-        }
-
-        @JvmStatic
-        fun method282(i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Byte, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int) {
-            anInt274++
-            CameraRotationStub.aRenderer326 = var_renderer
-            NpcConfig.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
-            MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
-            RenderNode.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
-            FileExistsCondition.anInt4784 = i_26_
-            SceneryDetailOptionState.anInt6095 = 0
-            if (i_22_ <= 64) anIntArray279 = null
-            ByteStore.anInt4267 = i_23_
-            MaterialPass.anInt3682 = 0
-            DirectionPath.anInt1067 = i_24_
-            WidgetDefinition.Companion.anSpriteDrawTarget_252 = null
-            ByteBuffer.anInt7207 = 1
-            BloomGraphicsOptionState.anInt5965 = i
-            WhirlpoolHash.method828(38.toByte(), i_25_, i_21_)
         }
     }
 }

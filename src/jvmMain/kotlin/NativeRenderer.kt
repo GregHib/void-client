@@ -1,18 +1,190 @@
-import CubeMapMaterialPass.Companion.method2173
-import MidiSequencePlayer.Companion.method2878
-import InvertTextureNode.Companion.method3135
+import CubeMapMaterialPassStatics.method2173
+import MidiSequencePlayerStatics.method2878
+import InvertTextureNodeStatics.method3135
 import jaclib.memory.Buffer
 import jaclib.memory.Stream
 import jaclib.memory.heap.NativeHeap
 import jaclib.memory.heap.NativeHeapBuffer
 import jagex3.graphics2.hw.NativeInterface
-import OpenGlRenderNode.Companion.method3297
+import OpenGlRenderNodeStatics.method3297
 import java.awt.Canvas
 import java.util.Hashtable
 import kotlin.math.cos
 import kotlin.math.max
 import kotlin.math.sin
 import kotlin.math.sqrt
+import NativeRendererStatics.anInt7884
+import NativeRendererStatics.anInt7885
+import NativeRendererStatics.anInt7886
+import NativeRendererStatics.anInt7887
+import NativeRendererStatics.anInt7888
+import NativeRendererStatics.anInt7889
+import NativeRendererStatics.anInt7890
+import NativeRendererStatics.anInt7892
+import NativeRendererStatics.anInt7893
+import NativeRendererStatics.anInt7894
+import NativeRendererStatics.anInt7895
+import NativeRendererStatics.anInt7896
+import NativeRendererStatics.anInt7897
+import NativeRendererStatics.anInt7898
+import NativeRendererStatics.anInt7899
+import NativeRendererStatics.anInt7900
+import NativeRendererStatics.anInt7901
+import NativeRendererStatics.anInt7902
+import NativeRendererStatics.anInt7903
+import NativeRendererStatics.anInt7904
+import NativeRendererStatics.anInt7906
+import NativeRendererStatics.anInt7907
+import NativeRendererStatics.anInt7908
+import NativeRendererStatics.anInt7909
+import NativeRendererStatics.anInt7911
+import NativeRendererStatics.anInt7912
+import NativeRendererStatics.anInt7913
+import NativeRendererStatics.anInt7914
+import NativeRendererStatics.anInt7915
+import NativeRendererStatics.anInt7916
+import NativeRendererStatics.anInt7917
+import NativeRendererStatics.anInt7918
+import NativeRendererStatics.anInt7920
+import NativeRendererStatics.anInt7921
+import NativeRendererStatics.anInt7922
+import NativeRendererStatics.anInt7923
+import NativeRendererStatics.anInt7926
+import NativeRendererStatics.anInt7928
+import NativeRendererStatics.anInt7929
+import NativeRendererStatics.anInt7930
+import NativeRendererStatics.anInt7932
+import NativeRendererStatics.anInt7934
+import NativeRendererStatics.anInt7935
+import NativeRendererStatics.anInt7936
+import NativeRendererStatics.anInt7938
+import NativeRendererStatics.anInt7939
+import NativeRendererStatics.anInt7940
+import NativeRendererStatics.anInt7941
+import NativeRendererStatics.anInt7942
+import NativeRendererStatics.anInt7943
+import NativeRendererStatics.anInt7944
+import NativeRendererStatics.anInt7945
+import NativeRendererStatics.anInt7946
+import NativeRendererStatics.anInt7947
+import NativeRendererStatics.anInt7948
+import NativeRendererStatics.anInt7949
+import NativeRendererStatics.anInt7950
+import NativeRendererStatics.anInt7951
+import NativeRendererStatics.anInt7952
+import NativeRendererStatics.anInt7953
+import NativeRendererStatics.anInt7954
+import NativeRendererStatics.anInt7955
+import NativeRendererStatics.anInt7956
+import NativeRendererStatics.anInt7957
+import NativeRendererStatics.anInt7959
+import NativeRendererStatics.anInt7960
+import NativeRendererStatics.anInt7961
+import NativeRendererStatics.anInt7963
+import NativeRendererStatics.anInt7964
+import NativeRendererStatics.anInt7965
+import NativeRendererStatics.anInt7966
+import NativeRendererStatics.anInt7967
+import NativeRendererStatics.anInt7968
+import NativeRendererStatics.anInt7969
+import NativeRendererStatics.anInt7970
+import NativeRendererStatics.anInt7971
+import NativeRendererStatics.anInt7972
+import NativeRendererStatics.anInt7973
+import NativeRendererStatics.anInt7975
+import NativeRendererStatics.anInt7976
+import NativeRendererStatics.anInt7977
+import NativeRendererStatics.anInt7978
+import NativeRendererStatics.anInt7979
+import NativeRendererStatics.anInt7980
+import NativeRendererStatics.anInt7981
+import NativeRendererStatics.anInt7982
+import NativeRendererStatics.anInt7983
+import NativeRendererStatics.anInt7984
+import NativeRendererStatics.anInt7985
+import NativeRendererStatics.anInt7986
+import NativeRendererStatics.anInt7988
+import NativeRendererStatics.anInt7989
+import NativeRendererStatics.anInt7991
+import NativeRendererStatics.anInt7992
+import NativeRendererStatics.anInt7993
+import NativeRendererStatics.anInt7994
+import NativeRendererStatics.anInt7995
+import NativeRendererStatics.anInt7996
+import NativeRendererStatics.anInt7997
+import NativeRendererStatics.anInt7998
+import NativeRendererStatics.anInt7999
+import NativeRendererStatics.anInt8000
+import NativeRendererStatics.anInt8001
+import NativeRendererStatics.anInt8002
+import NativeRendererStatics.anInt8003
+import NativeRendererStatics.anInt8004
+import NativeRendererStatics.anInt8005
+import NativeRendererStatics.anInt8006
+import NativeRendererStatics.anInt8007
+import NativeRendererStatics.anInt8008
+import NativeRendererStatics.anInt8009
+import NativeRendererStatics.anInt8010
+import NativeRendererStatics.anInt8011
+import NativeRendererStatics.anInt8012
+import NativeRendererStatics.anInt8013
+import NativeRendererStatics.anInt8016
+import NativeRendererStatics.anInt8017
+import NativeRendererStatics.aStringArray8019
+import NativeRendererStatics.anInt8021
+import NativeRendererStatics.anInt8022
+import NativeRendererStatics.anInt8023
+import NativeRendererStatics.anInt8024
+import NativeRendererStatics.anInt8025
+import NativeRendererStatics.anInt8026
+import NativeRendererStatics.anInt8027
+import NativeRendererStatics.anInt8029
+import NativeRendererStatics.anInt8030
+import NativeRendererStatics.anInt8031
+import NativeRendererStatics.anInt8032
+import NativeRendererStatics.anInt8033
+import NativeRendererStatics.anInt8034
+import NativeRendererStatics.anInt8035
+import NativeRendererStatics.anInt8036
+import NativeRendererStatics.anInt8037
+import NativeRendererStatics.anInt8038
+import NativeRendererStatics.anInt8040
+import NativeRendererStatics.anInt8041
+import NativeRendererStatics.anInt8042
+import NativeRendererStatics.anInt8043
+import NativeRendererStatics.anInt8044
+import NativeRendererStatics.anInt8045
+import NativeRendererStatics.anInt8046
+import NativeRendererStatics.anInt8047
+import NativeRendererStatics.anInt8048
+import NativeRendererStatics.anInt8049
+import NativeRendererStatics.anInt8050
+import NativeRendererStatics.anInt8051
+import NativeRendererStatics.anInt8052
+import NativeRendererStatics.anInt8053
+import NativeRendererStatics.anInt8054
+import NativeRendererStatics.anInt8055
+import NativeRendererStatics.anInt8056
+import NativeRendererStatics.anInt8057
+import NativeRendererStatics.anInt8058
+import NativeRendererStatics.anInt8059
+import NativeRendererStatics.anInt8060
+import NativeRendererStatics.anInt8061
+import NativeRendererStatics.anInt8064
+import NativeRendererStatics.anInt8065
+import NativeRendererStatics.anInt8066
+import NativeRendererStatics.anInt8067
+import NativeRendererStatics.anInt8068
+import NativeRendererStatics.anInt8070
+import NativeRendererStatics.anInt8071
+import NativeRendererStatics.anInt8072
+import NativeRendererStatics.anInt8073
+import NativeRendererStatics.anInt8075
+import NativeRendererStatics.anInt8076
+import NativeRendererStatics.anInt8077
+import NativeRendererStatics.anInt8078
+import NativeRendererStatics.anInt8081
+import jaclib.memory.StreamStatics
 
 abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig: RenderConfig?, js5Archive: Js5Archive?, i: Int, i_289_: Int) : Renderer(var_renderConfig) {
     var aNativeHeap7891: NativeHeap? = null
@@ -217,7 +389,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             `is`[0] = (i_3_.toFloat() - this.aFloat8126).toInt()
             `is`[1] = (i_2_.toFloat() - this.aFloat8103).toInt()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.da(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.da(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -227,7 +399,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             this.aNativeHeap7891 = (var_shaderProgram as ArbVertexProgram).aNativeHeap9782
             this.aNativeHeapBuffer7974 = this.aNativeHeap7891!!.a(32768, false)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "wga.PF(" + (if (var_shaderProgram != null) "{...}" else "null") + ')')
         }
     }
 
@@ -313,7 +485,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                         val i_27_ = i_26_ * 50
                         val class101_sub2 = method3820(false)
                         class101_sub2.method916(((this.anInt8146 % i_27_ * class12.aByte211).toFloat() / i_27_.toFloat()), true, 0.0f, ((class12.aByte198 * (this.anInt8146 % i_27_)).toFloat() / i_27_.toFloat()))
-                        method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
+                        method3853(-32, LightDetailOptionStateStatics.aConfigFlagUtil_6030)
                     }
                     i_22_ = class12.anInt203
                     if (!this.aBoolean8160) {
@@ -342,7 +514,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             this.aBoolean8069 = false
             method3836(1)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.JH(" + i + ',' + (if (class101_sub2 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.JH(" + i + ',' + (if (class101_sub2 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -351,7 +523,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         val i_28_ = -85 / ((41 - i) / 54)
         anInt7948++
         anInterface5_Impl1_8203!!.method20(24, 125.toByte(), 12)
-        aModelBatchBase_8205 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShape.aSpriteMaskShape_4073!!))))
+        aModelBatchBase_8205 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4073!!))))
     }
 
     fun method3817(i: Int, i_29_: Int) {
@@ -362,19 +534,19 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             val bool_30_: Boolean
             if (i_29_ == 1) {
                 bool = true
-                objectByteSerializerHolder = ClientMachineInfo.aObjectByteSerializerHolder_6602
+                objectByteSerializerHolder = ClientMachineInfoStatics.aObjectByteSerializerHolder_6602
                 bool_30_ = true
             } else if (i_29_ == 2) {
-                objectByteSerializerHolder = CollisionFlagQuery.aObjectByteSerializerHolder_1201
+                objectByteSerializerHolder = CollisionFlagQueryStatics.aObjectByteSerializerHolder_1201
                 bool_30_ = true
                 bool = false
             } else if (i_29_ == 128) {
                 bool = true
-                objectByteSerializerHolder = BoundsConstraintEntry.aObjectByteSerializerHolder_5169
+                objectByteSerializerHolder = BoundsConstraintEntryStatics.aObjectByteSerializerHolder_5169
                 bool_30_ = true
             } else {
                 bool_30_ = false
-                objectByteSerializerHolder = NpcDefinition.aObjectByteSerializerHolder_2944
+                objectByteSerializerHolder = NpcDefinitionStatics.aObjectByteSerializerHolder_2944
                 bool = false
             }
             if (bool != this.aBoolean8141) {
@@ -398,9 +570,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     override fun method3661(i: Int, i_31_: Int, `is`: IntArray?, is_32_: IntArray?): Sprite {
         try {
             anInt7957++
-            return SceneEntityModel.method2501(i_31_, this, `is`, (-42).toByte(), is_32_, i)
+            return SceneEntityModelStatics.method2501(i_31_, this, `is`, (-42).toByte(), is_32_, i)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.RF(" + i + ',' + i_31_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_32_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.RF(" + i + ',' + i_31_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_32_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -492,7 +664,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 `is`[0] = `is`[1]
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.HA(" + i + ',' + i_44_ + ',' + i_45_ + ',' + i_46_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.HA(" + i + ',' + i_44_ + ',' + i_45_ + ',' + i_46_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -511,7 +683,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         try {
             anInt8000++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.Q(" + i + ',' + i_49_ + ',' + i_50_ + ',' + i_51_ + ',' + i_52_ + ',' + i_53_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_54_ + ',' + i_55_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.Q(" + i + ',' + i_49_ + ',' + i_50_ + ',' + i_51_ + ',' + i_52_ + ',' + i_53_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_54_ + ',' + i_55_ + ')'))
         }
     }
 
@@ -527,7 +699,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (!this.aSingletonMarker_8184.method1450(-112)) break
                 method3913(107.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "wga.DE(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
+                throw SoundBankPatchStatics.method2929(runtimeexception, "wga.DE(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -543,7 +715,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             val buffer = anInterface5_Impl1_8193!!.method19(true, 26775)
             if (buffer != null) {
                 val stream = method3893(buffer, 9179)
-                if (Stream.c()) {
+                if (StreamStatics.c()) {
                     stream.a(0.0f)
                     stream.a(0.0f)
                     stream.a(0.0f)
@@ -620,7 +792,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (anInterface5_Impl1_8193!!.method18(6331)) break
             }
         }
-        aModelBatchBase_8197 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078, SpriteMaskShape.aSpriteMaskShape_4078)))))
+        aModelBatchBase_8197 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShapeStatics.aSpriteMaskShape_4073, SpriteMaskShapeStatics.aSpriteMaskShape_4078, SpriteMaskShapeStatics.aSpriteMaskShape_4078)))))
     }
 
     abstract fun method3829(trigLookupTables: TrigLookupTables?, i: Int, i_56_: Byte, bool: Boolean)
@@ -699,12 +871,12 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             fs[11] = this.aFloatArray8135[14]
             return fs
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.OA(" + (if (fs != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.OA(" + (if (fs != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
     private fun method3836(i: Int) {
-        if (WidgetNodeLink.aSingletonMarker_2042 == this.aSingletonMarker_8184) {
+        if (WidgetNodeLinkStatics.aSingletonMarker_2042 == this.aSingletonMarker_8184) {
             val f = method3858(false)
             this.aClass101_Sub2_8074.method920(f, false, 0.0f, f)
         }
@@ -737,7 +909,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt7965++
             return method3830(i_64_, `is`, bool, 107.toByte(), 0, 0, i)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.JG(" + i + ',' + i_64_ + ',' + i_65_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.JG(" + i + ',' + i_64_ + ',' + i_65_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -766,8 +938,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3903(false)
         anInt8017++
         method3894(-28186, i_73_)
-        method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
-        method3885(0, true, RenderListTextureNode.aTrigLookupTables_9485)
+        method3849(47.toByte(), 0, RenderListTextureNodeStatics.aTrigLookupTables_9485)
+        method3885(0, true, RenderListTextureNodeStatics.aTrigLookupTables_9485)
         method3817(113, i_74_)
         this.aClass101_Sub2_8074.method932(1.0f, i_72_.toFloat(), i_71_.toFloat(), (-22).toByte())
         this.aClass101_Sub2_8074.method891(i, i_70_, 0)
@@ -775,14 +947,14 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3926(67.toByte(), false)
         method3933(-70)
         method3926(83.toByte(), true)
-        method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
-        method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        method3885(0, true, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
+        method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
     }
 
     private fun method3845(i: Byte) {
-        if (WidgetNodeLink.aSingletonMarker_2042 != this.aSingletonMarker_8184) {
+        if (WidgetNodeLinkStatics.aSingletonMarker_2042 != this.aSingletonMarker_8184) {
             val class196 = this.aSingletonMarker_8184
-            this.aSingletonMarker_8184 = WidgetNodeLink.aSingletonMarker_2042!!
+            this.aSingletonMarker_8184 = WidgetNodeLinkStatics.aSingletonMarker_2042!!
             if (class196.method1450(-48)) method3913((-121).toByte())
             method3919(20794)
             this.aFloatArray8135 = aFloatArray8120
@@ -798,13 +970,13 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         aBoolean8112 = false
         val i_75_ = -77 / ((i - 78) / 48)
         method3949((-58).toByte())
-        if (WidgetComponent.aSingletonMarker_838 == this.aSingletonMarker_8184) method3929(true)
+        if (WidgetComponentStatics.aSingletonMarker_838 == this.aSingletonMarker_8184) method3929(true)
     }
 
     private fun method3847(i: Int) {
-        if (WidgetComponent.aSingletonMarker_838 != this.aSingletonMarker_8184) {
+        if (WidgetComponentStatics.aSingletonMarker_838 != this.aSingletonMarker_8184) {
             val class196 = this.aSingletonMarker_8184
-            this.aSingletonMarker_8184 = WidgetComponent.aSingletonMarker_838!!
+            this.aSingletonMarker_8184 = WidgetComponentStatics.aSingletonMarker_838!!
             if (!class196.method1450(-45)) method3913(94.toByte())
             method3949((-113).toByte())
             this.aFloatArray8135 = aFloatArray8157
@@ -826,7 +998,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt8036++
             method3924(false, false, i_76_, trigLookupTables, false)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.NJ(" + i + ',' + i_76_ + ',' + (if (trigLookupTables != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.NJ(" + i + ',' + i_76_ + ',' + (if (trigLookupTables != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -842,15 +1014,15 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         if (method3878(i_77_.toFloat(), 0, i_78_.toFloat() + f, 0.0f, f_82_ + i_79_.toFloat(), 0.0f, i.toFloat())) {
             method3903(false)
             method3894(-28186, i_80_)
-            method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
-            method3885(0, true, RenderListTextureNode.aTrigLookupTables_9485)
+            method3849(47.toByte(), 0, RenderListTextureNodeStatics.aTrigLookupTables_9485)
+            method3885(0, true, RenderListTextureNodeStatics.aTrigLookupTables_9485)
             method3817(112, i_81_)
             method3942(5)
             method3926(45.toByte(), false)
             method3907(true)
             method3926(48.toByte(), true)
-            method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
-            method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+            method3885(0, true, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
+            method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
         }
     }
 
@@ -865,7 +1037,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             val i_84_ = 96 / ((i - 20) / 42)
             anInt7900++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.WA(" + i + ',' + (if (renderable != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.WA(" + i + ',' + (if (renderable != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -883,19 +1055,19 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3850((-47).toByte(), interface18_impl3)
             method3817(99, 1)
             method3874(RenderQueueState.aRenderConfigFactory_6519, 114, RenderQueueState.aRenderConfigFactory_6519)
-            method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
+            method3849(47.toByte(), 0, RenderListTextureNodeStatics.aTrigLookupTables_9485)
             method3894(-28186, i)
             this.aClass101_Sub2_8074.method932(0.0f, this.anInt7962.toFloat(), this.anInt7931.toFloat(), (-52).toByte())
             method3915(0)
             this.aClass101_Sub2Array8131[0]!!.method932(1.0f, interface18_impl3!!.method71((-46).toByte(), this.anInt7962.toFloat()), interface18_impl3.method67(this.anInt7931.toFloat(), 109), (-37).toByte())
             this.aClass101_Sub2Array8131[0]!!.method920(interface18_impl3.method71((-52).toByte(), -i_86_.toFloat()), false, 0.0f, interface18_impl3.method67(-i_85_.toFloat(), 94))
-            this.aConfigFlagUtilArray8113[0] = LightDetailOptionState.aConfigFlagUtil_6030
+            this.aConfigFlagUtilArray8113[0] = LightDetailOptionStateStatics.aConfigFlagUtil_6030
             method3905(127.toByte())
             method3933(-127)
             method3879(-8629)
-            method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+            method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.A(" + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_85_ + ',' + i_86_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.A(" + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_85_ + ',' + i_86_ + ')'))
         }
     }
 
@@ -904,7 +1076,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt8016++
             return Direct3dModel(this, modelDefinition, i, i_88_, i_89_, i_87_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.EG(" + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_87_ + ',' + i_88_ + ',' + i_89_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.EG(" + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_87_ + ',' + i_88_ + ',' + i_89_ + ')'))
         }
     }
 
@@ -920,7 +1092,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (canvas !== aCanvas7910) break
                 method3917(false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.HF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_90_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.HF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_90_ + ')'))
             }
             break
         } while (false)
@@ -949,7 +1121,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             this.aConfigFlagUtilArray8113[this.anInt8175] = configFlagUtil
             method3905(111.toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.HI(" + i + ',' + (if (configFlagUtil != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.HI(" + i + ',' + (if (configFlagUtil != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1002,7 +1174,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3862(0, aModelBatchBase_8197)
             method3899(i, 0, cameraRotationStub, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.QI(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + i_98_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.QI(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + i_98_ + ')'))
         }
     }
 
@@ -1024,7 +1196,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             `is`[2] = this.anInt8183
             `is`[1] = this.anInt8165
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.K(" + (if (`is` != null) "{...}" else "null") + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "wga.K(" + (if (`is` != null) "{...}" else "null") + ')')
         }
     }
 
@@ -1075,7 +1247,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         try {
             anInt7914++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.IF(" + i + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + i_107_ + ',' + i_108_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + i_112_ + ',' + i_113_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.IF(" + i + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + i_107_ + ',' + i_108_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + i_112_ + ',' + i_113_ + ')'))
         }
     }
 
@@ -1132,7 +1304,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt8011++
             return NativeTerrainTile(this, i_125_, i_126_, i, i_122_, `is`, is_123_, i_124_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.VE(" + i + ',' + i_122_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_123_ != null) "{...}" else "null") + ',' + i_124_ + ',' + i_125_ + ',' + i_126_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.VE(" + i + ',' + i_122_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_123_ != null) "{...}" else "null") + ',' + i_124_ + ',' + i_125_ + ',' + i_126_ + ')'))
         }
     }
 
@@ -1163,7 +1335,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (!bool) break
                 anInt8100 = anInt8100 and 0x1d.inv()
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.RI(" + (if (renderConfigFactory != null) "{...}" else "null") + ',' + i + ',' + (if (renderConfigFactory_129_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.RI(" + (if (renderConfigFactory != null) "{...}" else "null") + ',' + i + ',' + (if (renderConfigFactory_129_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -1215,8 +1387,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt8026++
         method3903(false)
         method3894(-28186, i_136_)
-        method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
-        method3885(0, true, RenderListTextureNode.aTrigLookupTables_9485)
+        method3849(47.toByte(), 0, RenderListTextureNodeStatics.aTrigLookupTables_9485)
+        method3885(0, true, RenderListTextureNodeStatics.aTrigLookupTables_9485)
         method3817(83, i_137_)
         this.aClass101_Sub2_8074.method932(1.0f, i_135_.toFloat(), i_135_.toFloat(), (-75).toByte())
         this.aClass101_Sub2_8074.method891(i, i_134_, 0)
@@ -1224,10 +1396,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3926(75.toByte(), false)
         method3925(23, anInterface5_Impl1_8201, 0)
         method3862(0, aModelBatchBase_8190)
-        method3899(256, 0, AsyncResourceRequest.aCameraRotationStub_9661, true)
+        method3899(256, 0, AsyncResourceRequestStatics.aCameraRotationStub_9661, true)
         method3926(41.toByte(), true)
-        method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
-        method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        method3885(0, true, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
+        method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
     }
 
     override fun i(): Int {
@@ -1278,7 +1450,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         val buffer = anInterface5_Impl1_8203!!.method19(true, 26775)
         if (buffer == null) return false
         val stream = method3893(buffer, 9179)
-        if (Stream.c()) {
+        if (StreamStatics.c()) {
             stream.a(f_148_)
             stream.a(f)
             stream.a(f_145_)
@@ -1298,8 +1470,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     }
 
     fun method3879(i: Int) {
-        if (this.aConfigFlagUtilArray8113[this.anInt8175] != ParticleEmitterListNode.aConfigFlagUtil_9685) {
-            this.aConfigFlagUtilArray8113[this.anInt8175] = ParticleEmitterListNode.aConfigFlagUtil_9685
+        if (this.aConfigFlagUtilArray8113[this.anInt8175] != ParticleEmitterListNodeStatics.aConfigFlagUtil_9685) {
+            this.aConfigFlagUtilArray8113[this.anInt8175] = ParticleEmitterListNodeStatics.aConfigFlagUtil_9685
             this.aClass101_Sub2Array8131[this.anInt8175]!!.method910()
             method3905(95.toByte())
         }
@@ -1365,7 +1537,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (bool == true) break
                 method3643(null, -42, 69)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.IH(" + i + ',' + bool + ',' + (if (trigLookupTables != null) "{...}" else "null") + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.IH(" + i + ',' + bool + ',' + (if (trigLookupTables != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -1431,7 +1603,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt8052++
             return method3855(textureFormatInfo, i, 0, fs, bool, 0, 2, i_168_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.LI(" + (if (fs != null) "{...}" else "null") + ',' + i + ',' + i_168_ + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_169_ + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.LI(" + (if (fs != null) "{...}" else "null") + ',' + i + ',' + i_168_ + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_169_ + ',' + bool + ')'))
         }
     }
 
@@ -1444,7 +1616,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             if (i != 9179) this.aFloat8093 = -1.2765714f
             return aStream8088!!
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.FI(" + (if (buffer != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.FI(" + (if (buffer != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -1467,7 +1639,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             `is`[0] = this.anInt7931
             anInt8076++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.KE(" + (if (`is` != null) "{...}" else "null") + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "wga.KE(" + (if (`is` != null) "{...}" else "null") + ')')
         }
     }
 
@@ -1476,7 +1648,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             aClass299_Sub2_8171 = circleRasterizer as TextureCubeProvider?
             anInt7950++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.DF(" + (if (circleRasterizer != null) "{...}" else "null") + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "wga.DF(" + (if (circleRasterizer != null) "{...}" else "null") + ')')
         }
     }
 
@@ -1629,7 +1801,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (`object` == null) throw RuntimeException()
                 aHashtable8014!!.put(canvas, `object`)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.VF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_195_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.VF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_195_ + ')'))
             }
             break
         } while (false)
@@ -1734,7 +1906,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             aGroundDecorRenderer_8136!!.method2101(this, nodeDequeHolder, i, 0)
             anInt7968++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.FG(" + (if (nodeDequeHolder != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.FG(" + (if (nodeDequeHolder != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -1752,7 +1924,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     while ((i_212_ < spriteImage.anInt2696)) {
                         for (i_213_ in 0..<spriteImage.anInt2702) {
                             val i_214_ = (spriteImage.anIntArray2697[0xff and (spriteImage.aByteArray2699[i++]).toInt()])
-                            `is`[i_211_++] = (if (i_214_ != 0) BoundsConstraintEntry.method2057(i_214_, -16777216) else 0)
+                            `is`[i_211_++] = (if (i_214_ != 0) BoundsConstraintEntryStatics.method2057(i_214_, -16777216) else 0)
                         }
                         i_212_++
                     }
@@ -1760,7 +1932,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     for (i_215_ in 0..<spriteImage.anInt2696) {
                         var i_216_ = 0
                         while (spriteImage.anInt2702 > i_216_) {
-                            `is`[i_211_++] = (BoundsConstraintEntry.method2057((spriteImage.anIntArray2697[NpcSummaryDefinition.method1166((spriteImage.aByteArray2699[i]).toInt(), 255)]), (spriteImage.aByteArray2695!![i].toInt() shl 24)))
+                            `is`[i_211_++] = (BoundsConstraintEntryStatics.method2057((spriteImage.anIntArray2697[NpcSummaryDefinitionStatics.method1166((spriteImage.aByteArray2699[i]).toInt(), 255)]), (spriteImage.aByteArray2695!![i].toInt() shl 24)))
                             i++
                             i_216_++
                         }
@@ -1771,7 +1943,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             abstractModelRenderer.method985(spriteImage.anInt2703, spriteImage.anInt2700, spriteImage.anInt2698, spriteImage.anInt2701)
             return abstractModelRenderer
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.GF(" + (if (spriteImage != null) "{...}" else "null") + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.GF(" + (if (spriteImage != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -1779,7 +1951,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         try {
             anInt7918++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.ME(" + i + ',' + i_217_ + ',' + i_218_ + ',' + i_219_ + ',' + i_220_ + ',' + i_221_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_222_ + ',' + i_223_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.ME(" + i + ',' + i_217_ + ',' + i_218_ + ',' + i_219_ + ',' + i_220_ + ',' + i_221_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_222_ + ',' + i_223_ + ')'))
         }
     }
 
@@ -1828,7 +2000,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                         val d = (3.141592653589793 * (i_226_ * 2).toDouble() / 256.0)
                         val f = cos(d).toFloat()
                         val f_227_ = sin(d).toFloat()
-                        if (Stream.c()) {
+                        if (StreamStatics.c()) {
                             stream.a(f_227_)
                             stream.a(f)
                             stream.a(0.0f)
@@ -1842,7 +2014,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     if (anInterface5_Impl1_8201!!.method18(6331)) break
                 }
             }
-            aModelBatchBase_8190 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShape.aSpriteMaskShape_4073!!))))
+            aModelBatchBase_8190 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4073!!))))
         }
     }
 
@@ -1909,7 +2081,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt7904++
         if (i != 1) aStream8088 = null
         aBoolean8127 = false
-        if (WidgetNodeLink.aSingletonMarker_2042 == this.aSingletonMarker_8184) {
+        if (WidgetNodeLinkStatics.aSingletonMarker_2042 == this.aSingletonMarker_8184) {
             method3919(i + 20793)
             method3929(true)
         }
@@ -1981,7 +2153,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3881(anObject8020, 99.toByte(), aCanvas7910)
             method3917(false)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.MF(" + (if (canvas != null) "{...}" else "null") + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "wga.MF(" + (if (canvas != null) "{...}" else "null") + ')')
         }
     }
 
@@ -2007,8 +2179,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         } else f = 1.0f
         method3903(false)
         method3894(-28186, i_236_)
-        method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
-        method3885(0, true, RenderListTextureNode.aTrigLookupTables_9485)
+        method3849(47.toByte(), 0, RenderListTextureNodeStatics.aTrigLookupTables_9485)
+        method3885(0, true, RenderListTextureNodeStatics.aTrigLookupTables_9485)
         method3817(94, i_237_)
         method3942(5)
         method3926(86.toByte(), false)
@@ -2053,8 +2225,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             f_248_ = f_244_
         }
         method3926(88.toByte(), true)
-        method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
-        method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        method3885(0, true, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
+        method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
     }
 
     override fun pa() {
@@ -2085,10 +2257,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     fun method3923(bool: Boolean, i: Int) {
         if (i != 1) {
             if (i != 0) {
-                if (i == 2) method3874(RenderQueueState.aRenderConfigFactory_6519, 117, MediaStreamClient.aRenderConfigFactory_3196)
-                else if (i == 3) method3874(ParticleSystemState.aRenderConfigFactory_2207, 111, TheoraVideoStream.aRenderConfigFactory_9011)
-                else if (i == 4) method3874(RegionTileNode.aRenderConfigFactory_6644, 126, RegionTileNode.aRenderConfigFactory_6644)
-            } else method3874(ParticleSystemState.aRenderConfigFactory_2207, 120, ParticleSystemState.aRenderConfigFactory_2207)
+                if (i == 2) method3874(RenderQueueState.aRenderConfigFactory_6519, 117, MediaStreamClientStatics.aRenderConfigFactory_3196)
+                else if (i == 3) method3874(ParticleSystemStateStatics.aRenderConfigFactory_2207, 111, TheoraVideoStreamStatics.aRenderConfigFactory_9011)
+                else if (i == 4) method3874(RegionTileNodeStatics.aRenderConfigFactory_6644, 126, RegionTileNodeStatics.aRenderConfigFactory_6644)
+            } else method3874(ParticleSystemStateStatics.aRenderConfigFactory_2207, 120, ParticleSystemStateStatics.aRenderConfigFactory_2207)
         } else method3874(RenderQueueState.aRenderConfigFactory_6519, 127, RenderQueueState.aRenderConfigFactory_6519)
         anInt8034++
     }
@@ -2131,7 +2303,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 method3911(canvas, 1, aHashtable8014!!.get(canvas))
                 aHashtable8014!!.remove(canvas)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "wga.AG(" + (if (canvas != null) "{...}" else "null") + ')')
+                throw SoundBankPatchStatics.method2929(runtimeexception, "wga.AG(" + (if (canvas != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -2142,7 +2314,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt7944++
             return AnimatedModelRenderer(this, i_261_, i_262_, `is`, i, i_260_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.BE(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_260_ + ',' + i_261_ + ',' + i_262_ + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.BE(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_260_ + ',' + i_261_ + ',' + i_262_ + ',' + bool + ')'))
         }
     }
 
@@ -2161,19 +2333,19 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt7889++
         var i_263_ = 0
         while (this.anInt8090 > i_263_) {
-            this.aRenderConfigFactoryArray8092[i_263_] = ParticleSystemState.aRenderConfigFactory_2207
-            this.aRenderConfigFactoryArray8086[i_263_] = ParticleSystemState.aRenderConfigFactory_2207
-            this.aConfigFlagUtilArray8113[i_263_] = ParticleEmitterListNode.aConfigFlagUtil_9685
+            this.aRenderConfigFactoryArray8092[i_263_] = ParticleSystemStateStatics.aRenderConfigFactory_2207
+            this.aRenderConfigFactoryArray8086[i_263_] = ParticleSystemStateStatics.aRenderConfigFactory_2207
+            this.aConfigFlagUtilArray8113[i_263_] = ParticleEmitterListNodeStatics.aConfigFlagUtil_9685
             this.aClass101_Sub2Array8131[i_263_] = FloatCameraTransform()
             i_263_++
         }
         this.aClass348_Sub1Array8132 = arrayOfNulls<AbstractTileShape>(-2 + this.anInt8138)
-        this.anRenderable_8147 = method3861(1, (-84).toByte(), 1, MovementDirection.aMovementDirection_1183, GroundItemRenderState.aTextureFormatInfo_1662)
+        this.anRenderable_8147 = method3861(1, (-84).toByte(), 1, MovementDirectionStatics.aMovementDirection_1183, GroundItemRenderState.aTextureFormatInfo_1662)
         method3651(ArbVertexProgram(262144))
-        this.aModelBatchBase_8204 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078)))))
-        this.aModelBatchBase_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4076)))))
-        this.aModelBatchBase_8208 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShape.aSpriteMaskShape_4073!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4076!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4078!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4075!!))))
-        this.aModelBatchBase_8191 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShape.aSpriteMaskShape_4073!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4076!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4078!!))))
+        this.aModelBatchBase_8204 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShapeStatics.aSpriteMaskShape_4073, SpriteMaskShapeStatics.aSpriteMaskShape_4078)))))
+        this.aModelBatchBase_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShapeStatics.aSpriteMaskShape_4073, SpriteMaskShapeStatics.aSpriteMaskShape_4076)))))
+        this.aModelBatchBase_8208 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4073!!), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4076!!), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4078!!), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4075!!))))
+        this.aModelBatchBase_8191 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4073!!), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4076!!), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4078!!))))
         this.aClass64_Sub2_8206 = Direct3dModel(this, 0, 0, false, false)
         this.aClass64_Sub2_8198 = Direct3dModel(this, 0, 0, true, true)
         this.aClass64_Sub2_8192 = Direct3dModel(this, 0, 0, false, false)
@@ -2210,9 +2382,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     abstract fun method3931(bool: Boolean, textureFormatInfo: TextureFormatInfo?, movementDirection: MovementDirection?): Boolean
 
     fun method3932(i: Byte) {
-        if (this.aSingletonMarker_8184 != ModelDefinitionCache.aSingletonMarker_2864) {
+        if (this.aSingletonMarker_8184 != ModelDefinitionCacheStatics.aSingletonMarker_2864) {
             val class196 = this.aSingletonMarker_8184
-            this.aSingletonMarker_8184 = ModelDefinitionCache.aSingletonMarker_2864!!
+            this.aSingletonMarker_8184 = ModelDefinitionCacheStatics.aSingletonMarker_2864!!
             if (class196.method1450(-116)) method3913((-100).toByte())
             anInt8100 = anInt8100 and 0x1f.inv()
             this.aFloatArray8135 = aFloatArray8111
@@ -2238,14 +2410,14 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             `is`[0] = (i_267_.toFloat() - this.aFloat8126).toInt()
             `is`[2] = f.toInt()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.H(" + i + ',' + i_264_ + ',' + i_265_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.H(" + i + ',' + i_264_ + ',' + i_265_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
     fun method3933(i: Int) {
         anInt7956++
         if (i >= -34) aClass299_Sub2_8171 = null
-        method3860(AsyncResourceRequest.aCameraRotationStub_9661, 2, 8)
+        method3860(AsyncResourceRequestStatics.aCameraRotationStub_9661, 2, 8)
     }
 
     override fun method3628(i: Int, i_268_: Int, i_269_: Int, i_270_: Int, i_271_: Int, i_272_: Int) {
@@ -2253,17 +2425,17 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         val f = method3858(false)
         method3903(false)
         method3894(-28186, i_271_)
-        method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
-        method3885(0, true, RenderListTextureNode.aTrigLookupTables_9485)
+        method3849(47.toByte(), 0, RenderListTextureNodeStatics.aTrigLookupTables_9485)
+        method3885(0, true, RenderListTextureNodeStatics.aTrigLookupTables_9485)
         method3817(89, i_272_)
         this.aClass101_Sub2_8074.method932(1.0f, (-1 + i_270_).toFloat(), (i_269_ - 1).toFloat(), (-33).toByte())
         this.aClass101_Sub2_8074.method920(-f + i_268_.toFloat(), false, 0.0f, i.toFloat() - f)
         method3915(0)
         method3926(98.toByte(), false)
-        method3860(GlBloomEffect.aCameraRotationStub_8832, 4, 8)
+        method3860(GlBloomEffectStatics.aCameraRotationStub_8832, 4, 8)
         method3926(104.toByte(), true)
-        method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
-        method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+        method3885(0, true, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
+        method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
     }
 
     fun method3934(i: Int): FloatCameraTransform {
@@ -2299,7 +2471,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt7952++
             return GlFontTextured(this, fontDefinition, spriteImages as Array<SpriteImage>, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (spriteImages != null) "{...}" else "null") + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.JE(" + (if (fontDefinition != null) "{...}" else "null") + ',' + (if (spriteImages != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -2312,7 +2484,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (!this.aSingletonMarker_8184.method1450(-94)) break
                 method3823(51.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.FF(" + i + ',' + (if (class348_sub1s != null) "{...}" else "null") + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.FF(" + i + ',' + (if (class348_sub1s != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -2370,7 +2542,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt7929++
             return method3843(i_288_, 0, i, 0, `is`, textureFormatInfo, i_287_ xor 0x22, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.MG(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_287_ + ',' + bool + ',' + i_288_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.MG(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_287_ + ',' + bool + ',' + i_288_ + ')'))
         }
     }
 
@@ -2397,7 +2569,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             aGroundDecorRenderer_8136!!.method2101(this, nodeDequeHolder, -1, 0)
             anInt7984++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wga.EF(" + (if (nodeDequeHolder != null) "{...}" else "null") + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "wga.EF(" + (if (nodeDequeHolder != null) "{...}" else "null") + ')')
         }
     }
 
@@ -2475,7 +2647,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.anInt8144 = -1
         aAbstractRenderPassArray8139 = arrayOfNulls<AbstractRenderPass>(10)
         aFloatArray8140 = floatArrayOf(0.0f, 0.0f, 1.0f, 0.0f)
-        this.aObjectByteSerializerHolder_8163 = ClientMachineInfo.aObjectByteSerializerHolder_6602
+        this.aObjectByteSerializerHolder_8163 = ClientMachineInfoStatics.aObjectByteSerializerHolder_6602
         aFloatArray8152 = FloatArray(16)
         this.aFloatArray8135 = aFloatArray8111
         anInt8167 = 1
@@ -2486,7 +2658,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.aFloat8174 = -1.0f
         this.aFloatArray8170 = floatArrayOf(0.0f, 0.0f, 1.0f, 0.0f)
         this.anInt8181 = 0
-        this.aSingletonMarker_8184 = ModelDefinitionCache.aSingletonMarker_2864!!
+        this.aSingletonMarker_8184 = ModelDefinitionCacheStatics.aSingletonMarker_2864!!
         this.aFloat8180 = 1.0f
         this.aFloat8186 = -1.0f
         anInt8172 = 16777215
@@ -2507,7 +2679,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 anInt7958 = dimension.width
                 this.anInt7931 = anInt7958
                 this.anInt8178 = i_289_
-                CachedRgbNoiseTexture.method566(false, true, (-127).toByte())
+                CachedRgbNoiseTextureStatics.method566(false, true, (-127).toByte())
                 if (this.aRenderConfig4579 == null) {
                     this.aNativeInterface7924 = NativeInterface(0, this.anInt8178)
                     aMaterialTextureCache_8137 = null
@@ -2527,478 +2699,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 throw RuntimeException("")
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wga.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + i_289_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt7884: Int = 0
-        @JvmField
-        var anInt7885: Int = 0
-        @JvmField
-        var anInt7886: Int = 0
-        @JvmField
-        var anInt7887: Int = 0
-        @JvmField
-        var anInt7888: Int = 0
-        @JvmField
-        var anInt7889: Int = 0
-        @JvmField
-        var anInt7890: Int = 0
-        @JvmField
-        var anInt7892: Int = 0
-        @JvmField
-        var anInt7893: Int = 0
-        @JvmField
-        var anInt7894: Int = 0
-        @JvmField
-        var anInt7895: Int = 0
-        @JvmField
-        var anInt7896: Int = 0
-        @JvmField
-        var anInt7897: Int = 0
-        @JvmField
-        var anInt7898: Int = 0
-        @JvmField
-        var anInt7899: Int = 0
-        @JvmField
-        var anInt7900: Int = 0
-        @JvmField
-        var anInt7901: Int = 0
-        @JvmField
-        var anInt7902: Int = 0
-        @JvmField
-        var anInt7903: Int = 0
-        @JvmField
-        var anInt7904: Int = 0
-        @JvmField
-        var anInt7906: Int = 0
-        @JvmField
-        var anInt7907: Int = 0
-        @JvmField
-        var anInt7908: Int = 0
-        @JvmField
-        var anInt7909: Int = 0
-        @JvmField
-        var anInt7911: Int = 0
-        @JvmField
-        var anInt7912: Int = 0
-        @JvmField
-        var anInt7913: Int = 0
-        @JvmField
-        var anInt7914: Int = 0
-        @JvmField
-        var anInt7915: Int = 0
-        @JvmField
-        var anInt7916: Int = 0
-        @JvmField
-        var anInt7917: Int = 0
-        @JvmField
-        var anInt7918: Int = 0
-        @JvmField
-        var anInt7920: Int = 0
-        @JvmField
-        var anInt7921: Int = 0
-        @JvmField
-        var anInt7922: Int = 0
-        @JvmField
-        var anInt7923: Int = 0
-        @JvmField
-        var anInt7926: Int = 0
-        @JvmField
-        var anInt7928: Int = 0
-        @JvmField
-        var anInt7929: Int = 0
-        @JvmField
-        var anInt7930: Int = 0
-        @JvmField
-        var anInt7932: Int = 0
-        @JvmField
-        var anInt7933: Int = 0
-        @JvmField
-        var anInt7934: Int = 0
-        @JvmField
-        var anInt7935: Int = 0
-        @JvmField
-        var anInt7936: Int = 0
-        @JvmField
-        var anInt7938: Int = 0
-        @JvmField
-        var anInt7939: Int = 0
-        @JvmField
-        var anInt7940: Int = 0
-        @JvmField
-        var anInt7941: Int = 0
-        @JvmField
-        var anInt7942: Int = 0
-        @JvmField
-        var anInt7943: Int = 0
-        @JvmField
-        var anInt7944: Int = 0
-        @JvmField
-        var anInt7945: Int = 0
-        @JvmField
-        var anInt7946: Int = 0
-        @JvmField
-        var anInt7947: Int = 0
-        @JvmField
-        var anInt7948: Int = 0
-        @JvmField
-        var anInt7949: Int = 0
-        @JvmField
-        var anInt7950: Int = 0
-        @JvmField
-        var anInt7951: Int = 0
-        @JvmField
-        var anInt7952: Int = 0
-        @JvmField
-        var anInt7953: Int = 0
-        @JvmField
-        var anInt7954: Int = 0
-        @JvmField
-        var anInt7955: Int = 0
-        @JvmField
-        var anInt7956: Int = 0
-        @JvmField
-        var anInt7957: Int = 0
-        @JvmField
-        var anInt7959: Int = 0
-        @JvmField
-        var anInt7960: Int = 0
-        @JvmField
-        var anInt7961: Int = 0
-        @JvmField
-        var anInt7963: Int = 0
-        @JvmField
-        var anInt7964: Int = 0
-        @JvmField
-        var anInt7965: Int = 0
-        @JvmField
-        var anInt7966: Int = 0
-        @JvmField
-        var anInt7967: Int = 0
-        @JvmField
-        var anInt7968: Int = 0
-        @JvmField
-        var anInt7969: Int = 0
-        @JvmField
-        var anInt7970: Int = 0
-        @JvmField
-        var anInt7971: Int = 0
-        @JvmField
-        var anInt7972: Int = 0
-        @JvmField
-        var anInt7973: Int = 0
-        @JvmField
-        var anInt7975: Int = 0
-        @JvmField
-        var anInt7976: Int = 0
-        @JvmField
-        var anInt7977: Int = 0
-        @JvmField
-        var anInt7978: Int = 0
-        @JvmField
-        var anInt7979: Int = 0
-        @JvmField
-        var anInt7980: Int = 0
-        @JvmField
-        var anInt7981: Int = 0
-        @JvmField
-        var anInt7982: Int = 0
-        @JvmField
-        var anInt7983: Int = 0
-        @JvmField
-        var anInt7984: Int = 0
-        @JvmField
-        var anInt7985: Int = 0
-        @JvmField
-        var anInt7986: Int = 0
-        @JvmField
-        var anInt7988: Int = 0
-        @JvmField
-        var anInt7989: Int = 0
-        @JvmField
-        var anInt7990: Int = 0
-        @JvmField
-        var anInt7991: Int = 0
-        @JvmField
-        var anInt7992: Int = 0
-        @JvmField
-        var anInt7993: Int = 0
-        @JvmField
-        var anInt7994: Int = 0
-        @JvmField
-        var anInt7995: Int = 0
-        @JvmField
-        var anInt7996: Int = 0
-        @JvmField
-        var anInt7997: Int = 0
-        @JvmField
-        var anInt7998: Int = 0
-        @JvmField
-        var anInt7999: Int = 0
-        @JvmField
-        var anInt8000: Int = 0
-        @JvmField
-        var anInt8001: Int
-        @JvmField
-        var anInt8002: Int = 0
-        @JvmField
-        var anInt8003: Int = 0
-        @JvmField
-        var anInt8004: Int = 0
-        @JvmField
-        var anInt8005: Int = 0
-        @JvmField
-        var anInt8006: Int = 0
-        @JvmField
-        var anInt8007: Int = 0
-        @JvmField
-        var anInt8008: Int = 0
-        @JvmField
-        var anInt8009: Int = 0
-        @JvmField
-        var anInt8010: Int = 0
-        @JvmField
-        var anInt8011: Int = 0
-        @JvmField
-        var anInt8012: Int = 0
-        @JvmField
-        var anInt8013: Int = 0
-        @JvmField
-        var anInt8015: Int = 0
-        @JvmField
-        var anInt8016: Int = 0
-        @JvmField
-        var anInt8017: Int = 0
-        @JvmField
-        var anInt8018: Int = 0
-        @JvmField
-        var aStringArray8019: Array<String?>? = arrayOfNulls<String>(5)
-        @JvmField
-        var anInt8021: Int = 0
-        @JvmField
-        var anInt8022: Int = 0
-        @JvmField
-        var anInt8023: Int = 0
-        @JvmField
-        var anInt8024: Int = 0
-        @JvmField
-        var anInt8025: Int = 0
-        @JvmField
-        var anInt8026: Int = 0
-        @JvmField
-        var anInt8027: Int = 0
-        @JvmField
-        var anInt8028: Int = 0
-        @JvmField
-        var anInt8029: Int = 0
-        @JvmField
-        var anInt8030: Int = 0
-        @JvmField
-        var anInt8031: Int = 0
-        @JvmField
-        var anInt8032: Int = 0
-        @JvmField
-        var anInt8033: Int = 0
-        @JvmField
-        var anInt8034: Int = 0
-        @JvmField
-        var anInt8035: Int = 0
-        @JvmField
-        var anInt8036: Int = 0
-        @JvmField
-        var anInt8037: Int = 0
-        @JvmField
-        var anInt8038: Int = 0
-        @JvmField
-        var anInt8040: Int = 0
-        @JvmField
-        var anInt8041: Int = 0
-        @JvmField
-        var anInt8042: Int = 0
-        @JvmField
-        var anInt8043: Int = 0
-        @JvmField
-        var anInt8044: Int = 0
-        @JvmField
-        var anInt8045: Int = 0
-        @JvmField
-        var anInt8046: Int = 0
-        @JvmField
-        var anInt8047: Int = 0
-        @JvmField
-        var anInt8048: Int = 0
-        @JvmField
-        var anInt8049: Int = 0
-        @JvmField
-        var anInt8050: Int = 0
-        @JvmField
-        var anInt8051: Int = 0
-        @JvmField
-        var anInt8052: Int = 0
-        @JvmField
-        var anInt8053: Int = 0
-        @JvmField
-        var anInt8054: Int = 0
-        @JvmField
-        var anInt8055: Int = 0
-        @JvmField
-        var anInt8056: Int = 0
-        @JvmField
-        var anInt8057: Int = 0
-        @JvmField
-        var anInt8058: Int = 0
-        @JvmField
-        var anInt8059: Int = 0
-        @JvmField
-        var anInt8060: Int = 0
-        @JvmField
-        var anInt8061: Int = 0
-        @JvmField
-        var anInt8064: Int = 0
-        @JvmField
-        var anInt8065: Int = 0
-        @JvmField
-        var anInt8066: Int = 0
-        @JvmField
-        var anInt8067: Int = 0
-        @JvmField
-        var anInt8068: Int = 0
-        @JvmField
-        var anInt8070: Int = 0
-        @JvmField
-        var anInt8071: Int = 0
-        @JvmField
-        var anInt8072: Int = 0
-        @JvmField
-        var anInt8073: Int = 0
-        @JvmField
-        var anInt8075: Int = 0
-        @JvmField
-        var anInt8076: Int = 0
-        @JvmField
-        var anInt8077: Int = 0
-        @JvmField
-        var anInt8078: Int = 0
-        @JvmField
-        var anInt8081: Int = 0
-
-        /*synthetic*/
-        var aClass8211: Class<*>? = null
-
-        fun method3824(i: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int) {
-            var i_36_ = i_36_
-            anInt7933++
-            if (i_37_ >= 0 && i >= 0 && -1 + GlCubemapLightPass.anInt7319 > i_37_ && (i < -1 + RangeThresholdTextureNode.anInt9109)) {
-                if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) return
-                if (i_41_ == 0) {
-                    val renderTarget = method3297(i_40_, i_37_, i) as RenderTarget?
-                    val renderTarget_42_ = ConfigArchiveLoader.method813(i_40_, i_37_, i) as RenderTarget?
-                    if (renderTarget != null && i_36_ != 2) {
-                        if (renderTarget is SequencedActorEntity) renderTarget.aSceneObjectAnimator_10115!!.method1671(262144, i_35_)
-                        else MapSceneIconDef.method1591(i_37_, 89, i_41_, i_35_, renderTarget.method42(-76), i_36_, i, i_38_, i_40_)
-                    }
-                    if (renderTarget_42_ != null) {
-                        if (renderTarget_42_ is SequencedActorEntity) renderTarget_42_.aSceneObjectAnimator_10115!!.method1671(262144, i_35_)
-                        else MapSceneIconDef.method1591(i_37_, 92, i_41_, i_35_, renderTarget_42_.method42(-71), i_36_, i, i_38_, i_40_)
-                    }
-                } else if (i_41_ == 1) {
-                    val renderTarget = (method3135(i_40_, i_37_, i) as RenderTarget?)
-                    if (renderTarget != null) {
-                        if (renderTarget is SequencedWallEntity) renderTarget.aSceneObjectAnimator_10155!!.method1671(262144, i_35_)
-                        else {
-                            val i_43_ = renderTarget.method42(-83)
-                            if (i_36_ != 4 && i_36_ != 5) {
-                                if (i_36_ != 6) {
-                                    if (i_36_ == 7) MapSceneIconDef.method1591(i_37_, 50, i_41_, i_35_, i_43_, 4, i, 4 + (0x3 and 2 + i_38_), i_40_)
-                                    else if (i_36_ == 8) {
-                                        MapSceneIconDef.method1591(i_37_, 116, i_41_, i_35_, i_43_, 4, i, 4 + i_38_, i_40_)
-                                        MapSceneIconDef.method1591(i_37_, 91, i_41_, i_35_, i_43_, 4, i, 4 + (0x3 and i_38_ - -2), i_40_)
-                                    }
-                                } else MapSceneIconDef.method1591(i_37_, 22, i_41_, i_35_, i_43_, 4, i, i_38_ + 4, i_40_)
-                            } else MapSceneIconDef.method1591(i_37_, 86, i_41_, i_35_, i_43_, 4, i, i_38_, i_40_)
-                        }
-                    }
-                } else if (i_41_ == 2) {
-                    val renderTarget = ((ClickFeedbackTask.method1353(i_40_, i_37_, i, (if (aClass8211 != null) aClass8211 else (RenderTarget::class.java.also { aClass8211 = it })))) as RenderTarget?)
-                    if (renderTarget != null) {
-                        if (i_36_ == 11) i_36_ = 10
-                        if (renderTarget !is SequencedGroundDecor) MapSceneIconDef.method1591(i_37_, 43, i_41_, i_35_, renderTarget.method42(-107), i_36_, i, i_38_, i_40_)
-                        else renderTarget.aSceneObjectAnimator_10045!!.method1671(262144, i_35_)
-                    }
-                } else if (i_41_ == 3) {
-                    val renderTarget = (method2878(i_40_, i_37_, i) as RenderTarget?)
-                    if (renderTarget != null) {
-                        if (renderTarget is WallSceneEntity) renderTarget.aSceneObjectAnimator_9955!!.method1671(262144, i_35_)
-                        else MapSceneIconDef.method1591(i_37_, 28, i_41_, i_35_, renderTarget.method42(-123), i_36_, i, i_38_, i_40_)
-                    }
-                }
-            }
-            if (i_39_ < 98) method3936(-100)
-        }
-
-        @JvmStatic
-        fun method3870(i: Int) {
-            aStringArray8019 = null
-            if (i <= 99) anInt8045 = -72
-        }
-
-        @JvmStatic
-        fun method3873(`is`: ByteArray?, i: Int): ByteArray {
-            try {
-                anInt8015++
-                val i_127_ = `is`!!.size
-                val is_128_ = ByteArray(i_127_)
-                ArrayCopyUtil.method1577(`is`, i, is_128_, 0, i_127_)
-                return is_128_
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("wga.GI(" + (if (`is` != null) "{...}" else "null") + ',' + i + ')'))
-            }
-        }
-
-        @JvmStatic
-        fun method3886(i: Int) {
-            ParticleProcessor.aLruByteCache_4273!!.method590(0)
-            if (i >= -58) method3824(43, 63, -121, -1, 72, 77, -11, 22)
-            anInt8018++
-        }
-
-        @JvmStatic
-        fun method3896(huffmanCodec: HuffmanCodec?, i: Byte) {
-            do {
-                try {
-                    anInt8028++
-                    AbstractModel.aHuffmanCodec_1131 = huffmanCodec
-                    if (i.toInt() == 13) break
-                    method3873(null, -3)
-                } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("wga.DI(" + (if (huffmanCodec != null) "{...}" else "null") + ',' + i + ')'))
-                }
-                break
-            } while (false)
-        }
-
-        @JvmStatic
-        fun method3936(i: Int) {
-            anInt7990++
-            if (NodeDeque.aModelLightingConfigArrayArray3335 != null) {
-                var i_274_ = 0
-                while ((i_274_ < NodeDeque.aModelLightingConfigArrayArray3335!!.size)) {
-                    var i_275_ = 0
-                    while ((NodeDeque.aModelLightingConfigArrayArray3335!![i_274_]!!.size > i_275_)) {
-                        NodeDeque.aModelLightingConfigArrayArray3335!![i_274_]!![i_275_] = LocalizedText.aModelLightingConfig_3547
-                        i_275_++
-                    }
-                    i_274_++
-                }
-            }
-            if (i != 0) method3870(-90)
-        }
-
-        init {
-            anInt8001 = -1
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wga.<init>(" + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + i_289_ + ')'))
         }
     }
 }

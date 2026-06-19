@@ -1,3 +1,5 @@
+import KeyboardLayoutCacheStatics.anInt3302
+
 /* Class259 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -30,27 +32,7 @@ class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, 
             aJs5Archive_3299 = js5Archive
             this.anInt3305 = aJs5Archive_3299!!.method407(0, 19)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("uea.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var aByteArray3300: ByteArray? = ByteArray(2048)
-        @JvmField
-        var aLruByteCache_3301: LruByteCache? = LruByteCache(30)
-        var anInt3302: Int = 0
-        @JvmField
-        var aParticleSystemRenderer_3304: ParticleSystemRenderer? = null
-        @JvmField
-        var anInt3306: Int = 0
-
-        @JvmStatic
-        fun method1975(i: Byte) {
-            aLruByteCache_3301 = null
-            val i_0_ = -54 / ((i - 77) / 37)
-            aParticleSystemRenderer_3304 = null
-            aByteArray3300 = null
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("uea.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 }

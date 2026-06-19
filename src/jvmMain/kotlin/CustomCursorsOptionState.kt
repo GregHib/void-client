@@ -1,3 +1,12 @@
+import CustomCursorsOptionStateStatics.anInt5925
+import CustomCursorsOptionStateStatics.anInt5926
+import CustomCursorsOptionStateStatics.anInt5927
+import CustomCursorsOptionStateStatics.anInt5928
+import CustomCursorsOptionStateStatics.aFontMetaRef_5929
+import CustomCursorsOptionStateStatics.anInt5930
+import CustomCursorsOptionStateStatics.anInt5931
+import CustomCursorsOptionStateStatics.aFontMetaRef_5934
+
 /* Class239_Sub9 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -14,13 +23,13 @@ class CustomCursorsOptionState : GraphicsOptionState {
         anInt5927++
         if (this.aClass348_Sub51_3136.method3425(-122)) return false
         if (i < 85) method1759(117)
-        return this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aSceneProjector_186
+        return this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNodeStatics.aSceneProjector_186
     }
 
     override fun method1714(i: Int, i_2_: Int): Int {
         anInt5926++
         if (this.aClass348_Sub51_3136.method3425(-114)) return 3
-        if (this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aSceneProjector_186) {
+        if (this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNodeStatics.aSceneProjector_186) {
             if (i_2_ == 0) {
                 if (this.aClass348_Sub51_3136.aClass239_Sub16_7247!!.method1789(-32350) == 1) return 2
                 if (this.aClass348_Sub51_3136.aClass239_Sub24_7235!!.method1820(i + -32353) == 1) return 2
@@ -35,7 +44,7 @@ class CustomCursorsOptionState : GraphicsOptionState {
     override fun method1716(bool: Boolean) {
         anInt5931++
         if (bool != false) aFontMetaRef_5929 = null
-        if (this.aClass348_Sub51_3136.method3422(674) != ParticleEmitterNode.aSceneProjector_186) this.anInt3138 = 1
+        if (this.aClass348_Sub51_3136.method3422(674) != ParticleEmitterNodeStatics.aSceneProjector_186) this.anInt3138 = 1
         else if (this.aClass348_Sub51_3136.method3425(-125)) this.anInt3138 = 0
         if (this.anInt3138 != 0 && this.anInt3138 != 1) this.anInt3138 = method1710(20014)
     }
@@ -52,37 +61,5 @@ class CustomCursorsOptionState : GraphicsOptionState {
         if (i != 20014) aFontMetaRef_5934 = null
         anInt5928++
         return 1
-    }
-
-    companion object {
-        @JvmField
-        var anInt5925: Int = 0
-        @JvmField
-        var anInt5926: Int = 0
-        @JvmField
-        var anInt5927: Int = 0
-        @JvmField
-        var anInt5928: Int = 0
-        @JvmField
-        var aFontMetaRef_5929: FontMetaRef? = FontMetaRef(25, 3)
-        @JvmField
-        var anInt5930: Int = 0
-        @JvmField
-        var anInt5931: Int = 0
-        @JvmField
-        var aSceneProjector_5932: SceneProjector? = SceneProjector("game4", 3)
-        @JvmField
-        var aAbstractModelRendererArray5933: Array<AbstractModelRenderer?>? = null
-        @JvmField
-        var aFontMetaRef_5934: FontMetaRef? = FontMetaRef(78, 16)
-
-        @JvmStatic
-        fun method1758(i: Int) {
-            if (i != -16211) aFontMetaRef_5934 = null
-            aSceneProjector_5932 = null
-            aFontMetaRef_5929 = null
-            aAbstractModelRendererArray5933 = null
-            aFontMetaRef_5934 = null
-        }
     }
 }

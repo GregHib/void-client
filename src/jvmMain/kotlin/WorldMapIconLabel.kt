@@ -1,3 +1,5 @@
+import WorldMapIconLabelStatics.anInt8594
+
 /* Class369_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -18,7 +20,7 @@ public open class WorldMapIconLabel(screenAnchorAlignment: ScreenAnchorAlignment
     override fun method51(i: Byte): ProjectileFactory? {
         anInt8594++
         if (i <= 116) return null
-        return MapSceneDefLoader.aProjectileFactory_2489
+        return MapSceneDefLoaderStatics.aProjectileFactory_2489
     }
 
     init {
@@ -30,37 +32,7 @@ public open class WorldMapIconLabel(screenAnchorAlignment: ScreenAnchorAlignment
             this.anInt8597 = i_11_
             this.anInt8595 = i_7_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("um.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt8594: Int = 0
-        @JvmField
-        var aBooleanArrayArray8596: Array<BooleanArray?>? = null
-        @JvmField
-        var anInt8598: Int = 0
-        @JvmField
-        var aJs5Archive_8601: Js5Archive? = null
-        @JvmStatic
-        fun method3573(i: Int) {
-            synchronized(ModelDataCache.aLruByteCache_355!!) {
-                ModelDataCache.aLruByteCache_355!!.method590(0)
-            }
-            anInt8598++
-            synchronized(ModelBatchBase.aLruByteCache_1894!!) {
-                ModelBatchBase.aLruByteCache_1894!!.method590(0)
-            }
-            if (i != -15326) method3573(-67)
-        }
-
-        @JvmStatic
-        fun method3574(i: Int) {
-            if (i == 19499) {
-                aBooleanArrayArray8596 = null
-                aJs5Archive_8601 = null
-            }
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("um.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'))
         }
     }
 }

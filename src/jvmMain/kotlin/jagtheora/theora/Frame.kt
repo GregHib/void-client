@@ -1,6 +1,7 @@
 package jagtheora.theora
 
 import jagtheora.misc.SimplePeer
+import jagtheora.theora.FrameStatics.init
 
 class Frame(@JvmField val a: Int, @JvmField val b: Int) : SimplePeer() {
     @JvmField
@@ -11,12 +12,4 @@ class Frame(@JvmField val a: Int, @JvmField val b: Int) : SimplePeer() {
     }
 
     external override fun clear()
-
-    companion object {
-        init {
-            init()
-        }
-
-        protected external fun init()
-    }
 }

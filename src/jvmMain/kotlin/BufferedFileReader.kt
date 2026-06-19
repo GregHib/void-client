@@ -25,7 +25,7 @@ internal object BufferedFileReader {
             }
             datainputstream.close()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("gca.A(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (file != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("gca.A(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (file != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -1,5 +1,11 @@
-import GraphicsOptionState.Companion.method1717
+import GraphicsOptionStateStatics.method1717
 import java.util.*
+import CellNoiseTextureNodeStatics.method3110
+import CellNoiseTextureNodeStatics.method3111
+import CellNoiseTextureNodeStatics.anInt9289
+import CellNoiseTextureNodeStatics.anInt9292
+import CellNoiseTextureNodeStatics.anInt9295
+import CellNoiseTextureNodeStatics.anInt9296
 
 class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
     private var anInt9284 = 1024
@@ -33,7 +39,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         for (i_2_ in 0..<anInt9301) {
             if (i_2_ > 0) {
                 var i_3_ = anInt9300
-                val i_4_ = ((ModelDefinition.method1097(90.toByte(), 4096, random) - 2048) * anInt9305 shr 12)
+                val i_4_ = ((ModelDefinitionStatics.method1097(90.toByte(), 4096, random) - 2048) * anInt9305 shr 12)
                 i_3_ += i_4_ * i_1_ shr 12
                 anIntArray9297[i_2_] = i_3_ + anIntArray9297[-1 + i_2_]
             }
@@ -42,11 +48,11 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
             while (anInt9299 > i_5_) {
                 if (i_5_ > 0) {
                     var i_6_ = anInt9291
-                    val i_7_ = ((ModelDefinition.method1097(117.toByte(), 4096, random) - 2048) * anInt9302 shr 12)
+                    val i_7_ = ((ModelDefinitionStatics.method1097(117.toByte(), 4096, random) - 2048) * anInt9302 shr 12)
                     i_6_ += i_0_ * i_7_ shr 12
                     anIntArrayArray9287[i_2_]!![i_5_] = anIntArrayArray9287[i_2_]!![i_5_ + -1] + i_6_
                 }
-                anIntArrayArray9286[i_2_]!![i_5_] = (if (anInt9284 <= 0) 4096 else (-ModelDefinition.method1097(124.toByte(), anInt9284, random) + 4096))
+                anIntArrayArray9286[i_2_]!![i_5_] = (if (anInt9284 <= 0) 4096 else (-ModelDefinitionStatics.method1097(124.toByte(), anInt9284, random) + 4096))
                 i_5_++
             }
             anIntArrayArray9287[i_2_]!![anInt9299] = 4096
@@ -112,7 +118,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             var i_11_ = 0
             var i_12_: Int
-            i_12_ = anInt9293 + LightDetailOptionState.anIntArray6035!![i]
+            i_12_ = anInt9293 + LightDetailOptionStateStatics.anIntArray6035!![i]
             while (i_12_ < 0) {
                 i_12_ += 4096
             }
@@ -129,11 +135,11 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
             val i_15_ = anIntArray9297[i_11_ - 1]
             if (anInt9298 + i_15_ < i_12_ && i_12_ < i_14_ - anInt9298) {
                 var i_16_ = 0
-                while (DisplaceTextureNode.Companion.anInt9139 > i_16_) {
+                while (DisplaceTextureNodeStatics.anInt9139 > i_16_) {
                     var i_17_ = 0
                     val i_18_ = if (!bool) -anInt9288 else anInt9288
                     var i_19_: Int
-                    i_19_ = (SceneEffectMarker.anIntArray6432!![i_16_] + (i_18_ * anInt9291 shr 12))
+                    i_19_ = (SceneEffectMarkerStatics.anIntArray6432!![i_16_] + (i_18_ * anInt9291 shr 12))
                     while (i_19_ < 0) {
                         i_19_ += 4096
                     }
@@ -151,7 +157,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                     else `is`[i_16_] = anIntArrayArray9286[i_13_]!![i_20_]
                     i_16_++
                 }
-            } else ArrayCopyUtil.method1579(`is`, 0, DisplaceTextureNode.Companion.anInt9139, 0)
+            } else ArrayCopyUtil.method1579(`is`, 0, DisplaceTextureNodeStatics.anInt9139, 0)
         }
         if (i_10_ != 255) method3110(44)
         return `is`
@@ -161,49 +167,5 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         if (i <= 108) method3111(-110, -119)
         anInt9295++
         method3109((-125).toByte())
-    }
-
-    companion object {
-        @JvmField
-        var aIntRange_9285: IntRange? = IntRange(104, 1)
-        @JvmField
-        var anInt9289: Int = 0
-        @JvmField
-        var anInt9290: Int = 0
-        @JvmField
-        var anInt9292: Int = 0
-        @JvmField
-        var anInt9295: Int = 0
-        @JvmField
-        var anInt9296: Int = 0
-        var aTextureFormatInfo_9303: TextureFormatInfo? = TextureFormatInfo(1)
-        @JvmField
-        var aFontMetaRef_9304: FontMetaRef? = FontMetaRef(20, -1)
-        @JvmStatic
-        fun method3110(i: Int) {
-            aFontMetaRef_9304 = null
-            aTextureFormatInfo_9303 = null
-            if (i != -1633784916) aTextureFormatInfo_9303 = null
-            aIntRange_9285 = null
-        }
-
-        @JvmStatic
-        fun method3111(i: Int, i_23_: Int) {
-            anInt9290++
-            if (i_23_ != MenuActionNode.anInt6769) {
-                if (i < 18) aTextureFormatInfo_9303 = null
-                RangeThresholdTextureNode.Companion.anInt9109 = FileExistsCondition.anIntArray4780!![i_23_]
-                GlCubemapLightPass.anInt7319 = RangeThresholdTextureNode.Companion.anInt9109
-                BufferToggleState.method2196((-9).toByte())
-                GameClock.anIntArrayArrayArray1116 = (Array<Array<IntArray?>?>(4) { Array<IntArray?>(GlCubemapLightPass.anInt7319 shr 3) { IntArray(RangeThresholdTextureNode.Companion.anInt9109 shr 3) } })
-                FlickeringEffectsOptionState.anIntArrayArray5921 = (Array<IntArray?>(GlCubemapLightPass.anInt7319) { IntArray(RangeThresholdTextureNode.Companion.anInt9109) })
-                TextureMaterialGroup.anIntArrayArray9678 = (Array<IntArray?>(GlCubemapLightPass.anInt7319) { IntArray(RangeThresholdTextureNode.Companion.anInt9109) })
-                for (i_24_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_24_] = AnimatedModelRenderer.method988(RangeThresholdTextureNode.Companion.anInt9109, 1, GlCubemapLightPass.anInt7319)
-                RegionSceneLoader.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(GlCubemapLightPass.anInt7319) { ByteArray(RangeThresholdTextureNode.Companion.anInt9109) } })
-                method1717(19278, RangeThresholdTextureNode.Companion.anInt9109, GlCubemapLightPass.anInt7319, 4)
-                TerrainChunkBuilder.method873(GlCubemapLightPass.anInt7319 shr 3, 21719, FacingDirectionNode.aRenderer6654, RangeThresholdTextureNode.Companion.anInt9109 shr 3)
-                MenuActionNode.anInt6769 = i_23_
-            }
-        }
     }
 }

@@ -1,7 +1,29 @@
-import ModelBatchBase.Companion.method1130
-import HostPingThread.Companion.method1301
-import VorbisOggDecoder.Companion.method2967
-import ChatMessageStream.Companion.method136
+import ModelBatchBaseStatics.method1130
+import HostPingThreadStatics.method1301
+import VorbisOggDecoderStatics.method2967
+import ChatMessageStreamStatics.method136
+import GroundDecorSceneEntityStatics.method2402
+import GroundDecorSceneEntityStatics.anInt9969
+import GroundDecorSceneEntityStatics.anInt9970
+import GroundDecorSceneEntityStatics.anInt9972
+import GroundDecorSceneEntityStatics.anInt9973
+import GroundDecorSceneEntityStatics.anInt9975
+import GroundDecorSceneEntityStatics.anInt9978
+import GroundDecorSceneEntityStatics.anInt9979
+import GroundDecorSceneEntityStatics.anInt9982
+import GroundDecorSceneEntityStatics.anInt9984
+import GroundDecorSceneEntityStatics.anInt9985
+import GroundDecorSceneEntityStatics.anInt9986
+import GroundDecorSceneEntityStatics.anInt9987
+import GroundDecorSceneEntityStatics.anInt9990
+import GroundDecorSceneEntityStatics.anInt9992
+import GroundDecorSceneEntityStatics.anInt9995
+import GroundDecorSceneEntityStatics.anInt9996
+import GroundDecorSceneEntityStatics.anInt9997
+import GroundDecorSceneEntityStatics.anInt9998
+import GroundDecorSceneEntityStatics.anInt10000
+import GroundDecorSceneEntityStatics.anInt10001
+import GroundDecorSceneEntityStatics.anInt10002
 
 /* Class318_Sub1_Sub1_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -26,7 +48,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
                 if (aAbstractModel_9993 == null || class318_sub1_sub1_sub2_3_.aAbstractModel_9993 == null) break
                 aAbstractModel_9993!!.method613((class318_sub1_sub1_sub2_3_.aAbstractModel_9993), i_2_, i, i_0_, bool)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("uo.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("uo.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'))
             }
             break
         } while (false)
@@ -55,15 +77,15 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
 
     private fun method2401(var_renderer: Renderer?, i: Int, bool: Boolean, i_4_: Int): ModelOrSpriteHolder? {
         anInt9985++
-        val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, aShort9991.toInt() and 0xffff)
+        val class51 = GradientLookupEffectStatics.aSeqDefinitionCache_9195!!.method2005(0, aShort9991.toInt() and 0xffff)
         val var_terrainTile: TerrainTile?
         val var_terrainTile_5_: TerrainTile?
         if (aBoolean9983) {
             var_terrainTile = SoundCacheState.aTerrainTileArray4142!![this.aByte6376.toInt()]
-            var_terrainTile_5_ = TerrainTileShape.aTerrainTileArray8801!![0]
+            var_terrainTile_5_ = TerrainTileShapeStatics.aTerrainTileArray8801!![0]
         } else {
-            var_terrainTile = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376.toInt()])
-            if (this.aByte6376 < 3) var_terrainTile_5_ = (TerrainTileShape.aTerrainTileArray8801!![1 + this.aByte6376])
+            var_terrainTile = (TerrainTileShapeStatics.aTerrainTileArray8801!![this.aByte6376.toInt()])
+            if (this.aByte6376 < 3) var_terrainTile_5_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![1 + this.aByte6376])
             else var_terrainTile_5_ = null
         }
         return class51.method476(var_renderer, var_terrainTile_5_, 22, i, this.x, bool, var_terrainTile, this.anInt6382, this.y, aByte9980.toInt(), 128)
@@ -89,7 +111,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
         val class101 = var_renderer!!.method3705()
         class101.method894(this.x, this.anInt6382, this.y)
         val class318_sub4 = method136(i, aBoolean9974, false)
-        if (ParticleSystemRenderer.aBoolean3870) aAbstractModel_9993!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
+        if (ParticleSystemRendererStatics.aBoolean3870) aAbstractModel_9993!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
         else aAbstractModel_9993!!.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         return class318_sub4
     }
@@ -164,7 +186,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
         if (class64 != null) {
             val class101 = var_renderer!!.method3705()
             class101.method894(this.x, this.anInt6382, this.y)
-            if (ParticleSystemRenderer.aBoolean3870) return class64.method623(i_16_, i, class101, false, 0, LocalPlayerState.anInt1906)
+            if (ParticleSystemRendererStatics.aBoolean3870) return class64.method623(i_16_, i, class101, false, 0, LocalPlayerState.anInt1906)
             return class64.method628(i_16_, i, class101, false, 0)
         }
         return false
@@ -189,7 +211,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
                 this.x = i_21_
                 aByte9980 = i_24_.toByte()
                 aShort9991 = npcConfig.anInt941.toShort()
-                aBoolean9988 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean9983 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
+                aBoolean9988 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean9983 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 var i_26_ = 2048
                 if (aBoolean9989) i_26_ = i_26_ or 0x10000
                 val class2 = method2401(var_renderer, i_26_, aBoolean9988, 22)
@@ -199,7 +221,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
                 if (!aBoolean9989) break
                 aAbstractModel_9993 = aAbstractModel_9993!!.method614(0.toByte(), i_26_, false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("uo.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + i_24_ + ',' + bool_25_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("uo.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + i_24_ + ',' + bool_25_ + ')'))
             }
             break
         } while (false)
@@ -221,67 +243,5 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
         val i_27_ = -125 % ((i - -91) / 35)
         anInt9992++
         return 22
-    }
-
-    companion object {
-        var anInt9969: Int = 0
-        var anInt9970: Int = 0
-        var anInt9971: Int = 0
-        var anInt9972: Int = 0
-        var anInt9973: Int = 0
-        var anInt9975: Int = 0
-        var anInt9977: Int = 0
-        var anInt9978: Int = 0
-        var anInt9979: Int = 0
-        @JvmField
-        var anIntArray9981: IntArray? = IntArray(5)
-        var anInt9982: Int = 0
-        var anInt9984: Int = 0
-        var anInt9985: Int = 0
-        var anInt9986: Int = 0
-        var anInt9987: Int = 0
-        var anInt9990: Int = 0
-        var anInt9992: Int = 0
-        var anInt9994: Int = 0
-        var anInt9995: Int = 0
-        var anInt9996: Int = 0
-        @JvmField
-        var anInt9997: Int = 1
-        var anInt9998: Int = 0
-        var anInt10000: Int = 0
-        var anInt10001: Int = 0
-        var anInt10002: Int = 0
-
-        @JvmStatic
-        fun method2400(i: Byte) {
-            if (i.toInt() != 3) anIntArray9981 = null
-            anIntArray9981 = null
-        }
-
-        @JvmStatic
-        fun method2402(i: Int, i_6_: Byte): Boolean {
-            anInt9994++
-            if (i_6_ >= -52) return true
-            return i == 4 || i == 8 || i == 11
-        }
-
-        fun method2403(i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int) {
-            anInt9977++
-            if (i_10_ != 19206) method2402(-3, 46.toByte())
-            val class302s = MultiFieldRecord.aMinimapPositionStateArray6897s!!
-            for (i_13_ in class302s.indices) {
-                val class302 = class302s[i_13_]
-                if (class302 != null && class302.anInt3840 == 2) {
-                    SceneTextLabel.Companion.method2505(i_9_ shr 1, 2 * class302.anInt3839, 0, i_12_, i_11_ shr 1, class302.anInt3838, class302.anInt3832, i_7_, class302.anInt3835)
-                    if (RemoveRoofsOptionState.anIntArray6062!![0] > -1 && GlGroundShaderPass.anInt7396 % 20 < 10) {
-                        val class105 = (CustomCursorsOptionState.aAbstractModelRendererArray5933!![class302.anInt3831])
-                        val i_14_ = -12 + (i - -RemoveRoofsOptionState.anIntArray6062!![0])
-                        val i_15_ = i_8_ - -RemoveRoofsOptionState.anIntArray6062!![1] - 28
-                        class105!!.method974(i_14_, i_15_)
-                        MapTileShape.method2663(-5590, i_14_, i_14_ - -class105.method966(), i_15_, class105.method980() + i_15_)
-                    }
-                }
-            }
-        }
     }
 }

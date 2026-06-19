@@ -1,5 +1,5 @@
-import MinimapLineDrawer.Companion.method473
-import ScrollingNoiseTexture.Companion.method558
+import MinimapLineDrawerStatics.method473
+import ScrollingNoiseTextureStatics.method558
 
 /* Class103 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -26,7 +26,7 @@ object MinimapDrawController {
         while (i_0_ >= i_5_) {
             var i_6_ = i
             while (i_4_ >= i_6_) {
-                if ((TextureMaterialGroup.anIntArrayArray9678!![i_5_]!![i_6_] == i_1_) && FlickeringEffectsOptionState.anIntArrayArray5921!![i_5_]!![i_6_] <= 1) return true
+                if ((TextureMaterialGroupStatics.anIntArrayArray9678!![i_5_]!![i_6_] == i_1_) && FlickeringEffectsOptionStateStatics.anIntArrayArray5921!![i_5_]!![i_6_] <= 1) return true
                 i_6_++
             }
             i_5_++
@@ -40,18 +40,18 @@ object MinimapDrawController {
         if (i_8_ > i_7_) {
             val i_13_ = (i_8_ + i_7_) / 2
             var i_14_ = i_7_
-            val class110_sub1 = WorldMapImageBuilder.aClass110_Sub1Array1146!![i_13_]!!
-            WorldMapImageBuilder.aClass110_Sub1Array1146!![i_13_] = WorldMapImageBuilder.aClass110_Sub1Array1146!![i_8_]
-            WorldMapImageBuilder.aClass110_Sub1Array1146!![i_8_] = class110_sub1
+            val class110_sub1 = WorldMapImageBuilderStatics.aClass110_Sub1Array1146!![i_13_]!!
+            WorldMapImageBuilderStatics.aClass110_Sub1Array1146!![i_13_] = WorldMapImageBuilderStatics.aClass110_Sub1Array1146!![i_8_]
+            WorldMapImageBuilderStatics.aClass110_Sub1Array1146!![i_8_] = class110_sub1
             for (i_15_ in i_7_..<i_8_) {
-                if (method473(((-122).toByte()).toByte(), i_10_, class110_sub1, i, bool_11_, bool, (WorldMapImageBuilder.aClass110_Sub1Array1146!![i_15_])) <= 0) {
-                    val class110_sub1_16_ = WorldMapImageBuilder.aClass110_Sub1Array1146!![i_15_]!!
-                    WorldMapImageBuilder.aClass110_Sub1Array1146!![i_15_] = WorldMapImageBuilder.aClass110_Sub1Array1146!![i_14_]
-                    WorldMapImageBuilder.aClass110_Sub1Array1146!![i_14_++] = class110_sub1_16_
+                if (method473(((-122).toByte()).toByte(), i_10_, class110_sub1, i, bool_11_, bool, (WorldMapImageBuilderStatics.aClass110_Sub1Array1146!![i_15_])) <= 0) {
+                    val class110_sub1_16_ = WorldMapImageBuilderStatics.aClass110_Sub1Array1146!![i_15_]!!
+                    WorldMapImageBuilderStatics.aClass110_Sub1Array1146!![i_15_] = WorldMapImageBuilderStatics.aClass110_Sub1Array1146!![i_14_]
+                    WorldMapImageBuilderStatics.aClass110_Sub1Array1146!![i_14_++] = class110_sub1_16_
                 }
             }
-            WorldMapImageBuilder.aClass110_Sub1Array1146!![i_8_] = WorldMapImageBuilder.aClass110_Sub1Array1146!![i_14_]
-            WorldMapImageBuilder.aClass110_Sub1Array1146!![i_14_] = class110_sub1
+            WorldMapImageBuilderStatics.aClass110_Sub1Array1146!![i_8_] = WorldMapImageBuilderStatics.aClass110_Sub1Array1146!![i_14_]
+            WorldMapImageBuilderStatics.aClass110_Sub1Array1146!![i_14_] = class110_sub1
             method950(i, i_7_, i_14_ + -1, bool, 114.toByte(), i_10_, bool_11_)
             method950(i, i_14_ - -1, i_8_, bool, 50.toByte(), i_10_, bool_11_)
         }

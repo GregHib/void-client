@@ -1,4 +1,4 @@
-import WorldMapAreaLabel.Companion.method3570
+import WorldMapAreaLabelStatics.method3570
 
 /* Class122 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -23,7 +23,7 @@ object ObjectSpawnDecoder {
 
     fun method1085(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int, i_3_: Int) {
         anInt1805++
-        val class348_sub42_sub15 = NamedTimedNode.method2516(i_3_, 105.toByte(), 8)
+        val class348_sub42_sub15 = NamedTimedNodeStatics.method2516(i_3_, 105.toByte(), 8)
         class348_sub42_sub15.method3246(-25490)
         class348_sub42_sub15.anInt9652 = i_0_
         if (i_1_ < -57) {
@@ -49,7 +49,7 @@ object ObjectSpawnDecoder {
     @JvmStatic
     fun method1088(i: Int, i_6_: Byte, i_7_: Int, i_8_: Int, i_9_: Int): Int {
         anInt1804++
-        val i_10_ = -TrigLookupTables.anIntArray1204!![8192 * i_8_ / i_7_] + 65536 shr 1
+        val i_10_ = -TrigLookupTablesStatics.anIntArray1204!![8192 * i_8_ / i_7_] + 65536 shr 1
         if (i_6_.toInt() != 22) return -73
         return ((i_10_ * i shr 16) + (i_9_ * (65536 + -i_10_) shr 16))
     }
@@ -73,20 +73,20 @@ object ObjectSpawnDecoder {
     fun method1090(`is`: Array<ByteArray?>?, i: Int, class237_sub1: WorldMapSceneSoftware?) {
         try {
             anInt1802++
-            val i_13_ = DragDropController.aByteArrayArray4281!!.size
+            val i_13_ = DragDropControllerStatics.aByteArrayArray4281!!.size
             if (i == 65536) {
                 for (i_14_ in 0..<i_13_) {
                     val is_15_ = `is`!![i_14_]
                     if (is_15_ != null) {
-                        val i_16_ = (64 * (NullOggStream.anIntArray9042!![i_14_] shr 8) + -ArbVertexProgram.regionTileX)
-                        val i_17_ = ((NullOggStream.anIntArray9042!![i_14_] and 0xff) * 64 - RegionMapDecoder.regionTileY)
+                        val i_16_ = (64 * (NullOggStreamStatics.anIntArray9042!![i_14_] shr 8) + -ArbVertexProgramStatics.regionTileX)
+                        val i_17_ = ((NullOggStreamStatics.anIntArray9042!![i_14_] and 0xff) * 64 - RegionMapDecoder.regionTileY)
                         method3570(false)
-                        class237_sub1!!.method1695(is_15_, (TimedRecordAccessor.aCollisionMapArray7108s), i_17_, FacingDirectionNode.aRenderer6654, i_16_, i xor 0x1054f)
+                        class237_sub1!!.method1695(is_15_, (TimedRecordAccessorStatics.aCollisionMapArray7108s), i_17_, FacingDirectionNodeStatics.aRenderer6654, i_16_, i xor 0x1054f)
                     }
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nga.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class237_sub1 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nga.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class237_sub1 != null) "{...}" else "null") + ')'))
         }
     }
 

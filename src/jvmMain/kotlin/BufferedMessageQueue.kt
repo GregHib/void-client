@@ -1,5 +1,13 @@
 import OverlayColorTable.method1060
-import CameraConfigDefinition.Companion.method1920
+import CameraConfigDefinitionStatics.method1920
+import BufferedMessageQueueStatics.method2075
+import BufferedMessageQueueStatics.anInt3579
+import BufferedMessageQueueStatics.anInt3580
+import BufferedMessageQueueStatics.anInt3582
+import BufferedMessageQueueStatics.anInt3586
+import BufferedMessageQueueStatics.anInt3587
+import BufferedMessageQueueStatics.anInt3589
+import BufferedMessageQueueStatics.anInt3591
 
 /* Class278 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -124,33 +132,9 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
                 val i_8_ = aJs5Archive_3585.method414(-1) + -1
                 aJs5Archive_3585.method407(0, i_8_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("vda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_7_ != null) "{...}" else "null") + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("vda.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_7_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
-    }
-
-    companion object {
-        var anInt3579: Int = 0
-        var anInt3580: Int = 0
-        var anInt3581: Int = 0
-        var anInt3582: Int = 0
-        var anInt3584: Int = 0
-        var anInt3586: Int = 0
-        var anInt3587: Int = 0
-        var anInt3588: Int = 0
-        var anInt3589: Int = 0
-        var anInt3591: Int = 0
-        fun method2075(i: Int, i_1_: Int, i_2_: Int): Boolean {
-            anInt3584++
-            if (i_1_ > -125) anInt3581 = -110
-            return (i and 0x100100) != 0
-        }
-
-        fun method2077(i: Int, i_3_: Int, i_4_: Int): Boolean {
-            val i_5_ = -75 % ((-43 - i) / 40)
-            anInt3588++
-            return (i_4_ and 0x8000) != 0
-        }
     }
 }

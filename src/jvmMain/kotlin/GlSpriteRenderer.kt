@@ -1,18 +1,34 @@
-import AbstractCameraTransform.Companion.method904
-import PerlinTextureProvider.Companion.method1401
-import InvertTextureNode.Companion.method3132
-import jaggl.OpenGL.Companion.glBegin
-import jaggl.OpenGL.Companion.glColor3f
-import jaggl.OpenGL.Companion.glColor4ub
-import jaggl.OpenGL.Companion.glEnd
-import jaggl.OpenGL.Companion.glMultiTexCoord2f
-import jaggl.OpenGL.Companion.glPixelTransferf
-import jaggl.OpenGL.Companion.glPopMatrix
-import jaggl.OpenGL.Companion.glPushMatrix
-import jaggl.OpenGL.Companion.glTexCoord2f
-import jaggl.OpenGL.Companion.glTranslatef
-import jaggl.OpenGL.Companion.glVertex2f
-import jaggl.OpenGL.Companion.glVertex2i
+import AbstractCameraTransformStatics.method904
+import PerlinTextureProviderStatics.method1401
+import InvertTextureNodeStatics.method3132
+import jaggl.OpenGLStatics.glBegin
+import jaggl.OpenGLStatics.glColor3f
+import jaggl.OpenGLStatics.glColor4ub
+import jaggl.OpenGLStatics.glEnd
+import jaggl.OpenGLStatics.glMultiTexCoord2f
+import jaggl.OpenGLStatics.glPixelTransferf
+import jaggl.OpenGLStatics.glPopMatrix
+import jaggl.OpenGLStatics.glPushMatrix
+import jaggl.OpenGLStatics.glTexCoord2f
+import jaggl.OpenGLStatics.glTranslatef
+import jaggl.OpenGLStatics.glVertex2f
+import jaggl.OpenGLStatics.glVertex2i
+import GlSpriteRendererStatics.anInt8424
+import GlSpriteRendererStatics.anInt8425
+import GlSpriteRendererStatics.anInt8426
+import GlSpriteRendererStatics.anInt8428
+import GlSpriteRendererStatics.anInt8433
+import GlSpriteRendererStatics.anInt8435
+import GlSpriteRendererStatics.anInt8436
+import GlSpriteRendererStatics.anInt8437
+import GlSpriteRendererStatics.anInt8438
+import GlSpriteRendererStatics.anInt8439
+import GlSpriteRendererStatics.anInt8440
+import GlSpriteRendererStatics.anInt8441
+import GlSpriteRendererStatics.anInt8442
+import GlSpriteRendererStatics.anInt8443
+import GlSpriteRendererStatics.anInt8445
+import GlSpriteRendererStatics.anInt8448
 
 class GlSpriteRenderer : AbstractModelRenderer {
     private var aBoolean8427: Boolean
@@ -522,62 +538,7 @@ class GlSpriteRenderer : AbstractModelRenderer {
             aHa_Sub2_8430 = var_ha_Sub2
             aClass258_Sub3_Sub1_8434 = method3132(`is`, i_110_, i_111_, i_109_, i, var_ha_Sub2, false, 12.toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nda.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_109_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_110_ + ',' + i_111_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt8424: Int = 0
-        @JvmField
-        var anInt8425: Int = 0
-        @JvmField
-        var anInt8426: Int = 0
-        @JvmField
-        var anInt8428: Int = 0
-        @JvmField
-        var anInt8433: Int = 0
-        @JvmField
-        var anInt8435: Int = 0
-        @JvmField
-        var anInt8436: Int = 0
-        @JvmField
-        var anInt8437: Int = 0
-        @JvmField
-        var anInt8438: Int = 0
-        @JvmField
-        var anInt8439: Int = 0
-        @JvmField
-        var anInt8440: Int = 0
-        @JvmField
-        var anInt8441: Int = 0
-        @JvmField
-        var anInt8442: Int = 0
-        @JvmField
-        var anInt8443: Int = 0
-        @JvmField
-        var anInt8444: Int = 0
-        @JvmField
-        var anInt8445: Int = 0
-        @JvmField
-        var anInt8448: Int = 0
-        fun method990(c: Char, i: Byte): Char {
-            anInt8444++
-            if (c.code == 198) return 'E'
-            if (c.code == 230) return 'e'
-            if (c.code == 223) return 's'
-            if (c.code == 338) return 'E'
-            if (c.code == 339) return 'e'
-            if (i >= -18) return 'M'
-            return '\u0000'
-        }
-
-        fun method993(l: Long, l_104_: Long): Long {
-            try {
-                return l xor l_104_
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "nda.Q($l,$l_104_)")
-            }
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nda.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_109_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_110_ + ',' + i_111_ + ')'))
         }
     }
 }

@@ -1,4 +1,8 @@
 import SceneTilePlaneManager.method259
+import ParticleAmountCacheStatics.anInt2841
+import ParticleAmountCacheStatics.anInt2843
+import ParticleAmountCacheStatics.anInt2846
+import ParticleAmountCacheStatics.anInt2847
 
 /* Class217 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -58,27 +62,7 @@ class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, 
             if (aJs5Archive_2842 != null) this.anInt2845 = aJs5Archive_2842.method407(0, 16)
             else this.anInt2845 = 0
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rv.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        var anInt2840: Int = 0
-        var anInt2841: Int = 0
-        var anInt2843: Int = 0
-        var aLruByteCache_2844: LruByteCache? = LruByteCache(64)
-        var anInt2846: Int = 0
-        var anInt2847: Int = 0
-        @JvmStatic
-        fun method1585(i: Int) {
-            if (i != -1) method1585(-34)
-            aLruByteCache_2844 = null
-        }
-
-        fun method1586(bool: Boolean, i: Byte, string: String?) {
-            if (i >= -51) aLruByteCache_2844 = null
-            anInt2840++
-            method259(-1, 113, bool, string, -1)
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rv.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 }

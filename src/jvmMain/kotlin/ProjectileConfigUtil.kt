@@ -1,7 +1,7 @@
-import BrightnessOptionState.Companion.method1745
-import GlVertexBufferArb.Companion.method2127
-import WaterMaterialPass.Companion.method2148
-import NoiseTextureGenerator.Companion.method544
+import BrightnessOptionStateStatics.method1745
+import GlVertexBufferArbStatics.method2127
+import WaterMaterialPassStatics.method2148
+import NoiseTextureGeneratorStatics.method544
 
 /* Class27 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -34,18 +34,18 @@ object ProjectileConfigUtil {
 
     @JvmStatic
     fun method312(i: Int, i_0_: Byte) {
-        ColourAdjustment.anInt859 = -1
+        ColourAdjustmentStatics.anInt859 = -1
         if (i != 37) {
             if (i != 50) {
                 if (i != 75) {
                     if (i != 100) {
-                        if (i == 200) MapRegionLoader.aFloat1249 = 16.0f
-                    } else MapRegionLoader.aFloat1249 = 8.0f
-                } else MapRegionLoader.aFloat1249 = 6.0f
-            } else MapRegionLoader.aFloat1249 = 4.0f
-        } else MapRegionLoader.aFloat1249 = 3.0f
+                        if (i == 200) MapRegionLoaderStatics.aFloat1249 = 16.0f
+                    } else MapRegionLoaderStatics.aFloat1249 = 8.0f
+                } else MapRegionLoaderStatics.aFloat1249 = 6.0f
+            } else MapRegionLoaderStatics.aFloat1249 = 4.0f
+        } else MapRegionLoaderStatics.aFloat1249 = 3.0f
         anInt397++
-        ColourAdjustment.anInt859 = -1
+        ColourAdjustmentStatics.anInt859 = -1
         if (i_0_.toInt() != 56) anInt394 = 32
     }
 
@@ -67,22 +67,22 @@ object ProjectileConfigUtil {
             while (l != 0L) {
                 val l_3_ = l
                 l /= 37L
-                stringbuffer.append(ColourAdjustment.aCharArray852!![(-(37L * l) + l_3_).toInt()])
+                stringbuffer.append(ColourAdjustmentStatics.aCharArray852!![(-(37L * l) + l_3_).toInt()])
             }
             return stringbuffer.reverse().toString()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "ht.A(" + l + ',' + i + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "ht.A(" + l + ',' + i + ')')
         }
     }
 
     @JvmStatic
     fun method314(i: Byte, i_4_: Int) {
         if (i >= -31) anInt394 = -128
-        SkeletalAnimFrameLoader.anInt481 = i_4_
-        GlEnvMappedWaterPass.anInt7379 = 3
+        SkeletalAnimFrameLoaderStatics.anInt481 = i_4_
+        GlEnvMappedWaterPassStatics.anInt7379 = 3
         anInt390++
         ClientLoadStateMachine.anInt2173 = 100
-        HslAdjustTextureNode.anInt9399 = -1
+        HslAdjustTextureNodeStatics.anInt9399 = -1
     }
 
     @JvmStatic
@@ -90,8 +90,8 @@ object ProjectileConfigUtil {
         anInt393++
         var i_5_ = 0
         if (i <= 70) return -84
-        while ( /**/i_5_ < RgbNoiseTexture.aStringArray5305!!.size) {
-            if (RgbNoiseTexture.aStringArray5305!![i_5_].equals(string, ignoreCase = true)) return i_5_
+        while ( /**/i_5_ < RgbNoiseTextureStatics.aStringArray5305!!.size) {
+            if (RgbNoiseTextureStatics.aStringArray5305!![i_5_].equals(string, ignoreCase = true)) return i_5_
             i_5_++
         }
         return -1
@@ -110,49 +110,49 @@ object ProjectileConfigUtil {
     fun method317(string: String?, i: Int, bool: Boolean) {
         anInt391++
         if (string != null) {
-            if (ContactEntry.anInt9604 >= 100) method544((LocalizedText.aLocalizedText_3522!!.method2063(AnimationFrameDefinition.anInt6967, 544)), false, 4)
+            if (ContactEntryStatics.anInt9604 >= 100) method544((LocalizedTextStatics.aLocalizedText_3522!!.method2063(AnimationFrameDefinitionStatics.anInt6967, 544)), false, 4)
             else {
                 val string_6_ = method2127(2, string)
                 if (string_6_ != null) {
                     var i_7_ = 0
-                    while ((i_7_ < ContactEntry.anInt9604)) {
-                        val string_8_ = method2127(2, (NpcConfig.aStringArray932!![i_7_]))
+                    while ((i_7_ < ContactEntryStatics.anInt9604)) {
+                        val string_8_ = method2127(2, (NpcConfigStatics.aStringArray932!![i_7_]))
                         if (string_8_ != null && string_8_ == string_6_) {
-                            method544((string + (LocalizedText.aLocalizedText_3523!!.method2063(AnimationFrameDefinition.anInt6967, 544))), false, 4)
+                            method544((string + (LocalizedTextStatics.aLocalizedText_3523!!.method2063(AnimationFrameDefinitionStatics.anInt6967, 544))), false, 4)
                             return
                         }
-                        if (WeaveTextureNode.aStringArray9275!![i_7_] != null) {
-                            val string_9_ = (method2127(2, (WeaveTextureNode.aStringArray9275!![i_7_])))
+                        if (WeaveTextureNodeStatics.aStringArray9275!![i_7_] != null) {
+                            val string_9_ = (method2127(2, (WeaveTextureNodeStatics.aStringArray9275!![i_7_])))
                             if (string_9_ != null && string_9_ == string_6_) {
-                                method544(string + (LocalizedText.aLocalizedText_3523!!.method2063((AnimationFrameDefinition.anInt6967), 544)), false, 4)
+                                method544(string + (LocalizedTextStatics.aLocalizedText_3523!!.method2063((AnimationFrameDefinitionStatics.anInt6967), 544)), false, 4)
                                 return
                             }
                         }
                         i_7_++
                     }
                     if (i >= 90) {
-                        for (i_10_ in 0..<HslAdjustTextureNode.anInt9383) {
-                            val string_11_ = method2127(2, (WaterTextureSet.aStringArray1441!![i_10_]))
+                        for (i_10_ in 0..<HslAdjustTextureNodeStatics.anInt9383) {
+                            val string_11_ = method2127(2, (WaterTextureSetStatics.aStringArray1441!![i_10_]))
                             if (string_11_ != null && string_11_ == string_6_) {
-                                method544(((LocalizedText.aLocalizedText_3528!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3529!!.method2063(AnimationFrameDefinition.anInt6967, 544))), false, 4)
+                                method544(((LocalizedTextStatics.aLocalizedText_3528!!.method2063(AnimationFrameDefinitionStatics.anInt6967, 544)) + string + (LocalizedTextStatics.aLocalizedText_3529!!.method2063(AnimationFrameDefinitionStatics.anInt6967, 544))), false, 4)
                                 return
                             }
-                            if (FixedFunctionMaterialPass.aStringArray6205!![i_10_] != null) {
-                                val string_12_ = (method2127(2, (FixedFunctionMaterialPass.aStringArray6205!![i_10_])))
+                            if (FixedFunctionMaterialPassStatics.aStringArray6205!![i_10_] != null) {
+                                val string_12_ = (method2127(2, (FixedFunctionMaterialPassStatics.aStringArray6205!![i_10_])))
                                 if (string_12_ != null && string_12_ == string_6_) {
-                                    method544(((LocalizedText.aLocalizedText_3528!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3529!!.method2063(AnimationFrameDefinition.anInt6967, 544))), false, 4)
+                                    method544(((LocalizedTextStatics.aLocalizedText_3528!!.method2063(AnimationFrameDefinitionStatics.anInt6967, 544)) + string + (LocalizedTextStatics.aLocalizedText_3529!!.method2063(AnimationFrameDefinitionStatics.anInt6967, 544))), false, 4)
                                     return
                                 }
                             }
                         }
-                        if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_6_) method544((LocalizedText.aLocalizedText_3525!!.method2063(AnimationFrameDefinition.anInt6967, 544)), false, 4)
+                        if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_6_) method544((LocalizedTextStatics.aLocalizedText_3525!!.method2063(AnimationFrameDefinitionStatics.anInt6967, 544)), false, 4)
                         else {
-                            WorldMapElement.anInt4628++
-                            val class348_sub47 = (method2148(MinimapAreaMarkerNode.aFontMetaRef_9687, TheoraVideoStream.aIsaacCipher_9029, -94))
+                            WorldMapElementStatics.anInt4628++
+                            val class348_sub47 = (method2148(MinimapAreaMarkerNodeStatics.aFontMetaRef_9687, TheoraVideoStreamStatics.aIsaacCipher_9029, -94))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65) - -1)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!bool) 0 else 1)
-                            InterfaceComponentGroup.method3243(-116, class348_sub47)
+                            InterfaceComponentGroupStatics.method3243(-116, class348_sub47)
                         }
                     }
                 }

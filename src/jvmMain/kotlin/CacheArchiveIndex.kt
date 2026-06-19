@@ -1,5 +1,13 @@
-import CacheArchiveIndexLoader.Companion.method340
-import MinimapSquareDrawer.Companion.method462
+import CacheArchiveIndexLoaderStatics.method340
+import MinimapSquareDrawerStatics.method462
+import CacheArchiveIndexStatics.anInt1763
+import CacheArchiveIndexStatics.anInt1765
+import CacheArchiveIndexStatics.anInt1768
+import CacheArchiveIndexStatics.anInt1772
+import CacheArchiveIndexStatics.anInt1773
+import CacheArchiveIndexStatics.anInt1775
+import CacheArchiveIndexStatics.anInt1776
+import CacheArchiveIndexStatics.anInt1777
 
 /* Class117 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -35,7 +43,7 @@ class CacheArchiveIndex {
         if (this.aHashtable_1767 == null) return false
         if (bool != false) aHashtable_1770 = null
         if (aHashtable_1770 == null) method1071(true)
-        var class348_sub46 = (aHashtable_1770!!.method3480(TypedRecordTable.method2179(string, 109.toByte()), -6008) as? StringValueNode)
+        var class348_sub46 = (aHashtable_1770!!.method3480(TypedRecordTableStatics.method2179(string, 109.toByte()), -6008) as? StringValueNode)
         while (class348_sub46 != null) {
             if (class348_sub46.aString7111 == string) return true
             class348_sub46 = aHashtable_1770!!.method3476(true) as? StringValueNode
@@ -79,7 +87,7 @@ class CacheArchiveIndex {
         var class348_sub50 = (aHashtable_1767!!.method3484(0) as? StringCacheNode)
         while (class348_sub50 != null) {
             val class348_sub46 = StringValueNode((class348_sub50.aString7211), (class348_sub50.aLong4291).toInt())
-            aHashtable_1770!!.method3483(102.toByte(), TypedRecordTable.method2179((class348_sub50.aString7211!!), 120.toByte()), class348_sub46)
+            aHashtable_1770!!.method3483(102.toByte(), TypedRecordTableStatics.method2179((class348_sub50.aString7211!!), 120.toByte()), class348_sub46)
             class348_sub50 = aHashtable_1767!!.method3482(0) as? StringCacheNode
         }
     }
@@ -98,51 +106,5 @@ class CacheArchiveIndex {
         if (this.aHashtable_1767 == null) return aString1774
         val class348_sub50 = (aHashtable_1767!!.method3480(i.toLong(), -6008) as? StringCacheNode) ?: return aString1774
         return class348_sub50.aString7211
-    }
-
-    companion object {
-        @JvmField
-        var anInt1763: Int = 0
-        @JvmField
-        var anInt1765: Int = 0
-        @JvmField
-        var aFontMetaRef_1766: FontMetaRef? = FontMetaRef(74, -1)
-        @JvmField
-        var anInt1768: Int = 0
-        @JvmField
-        var anInt1769: Int = 0
-        @JvmField
-        var anInt1771: Int = 0
-        @JvmField
-        var anInt1772: Int = 0
-        @JvmField
-        var anInt1773: Int = 0
-        @JvmField
-        var anInt1775: Int = 0
-        @JvmField
-        var anInt1776: Int = 0
-        @JvmField
-        var anInt1777: Int = 0
-        @JvmField
-        var anInt1780: Int = 0
-
-        @JvmStatic
-        fun method1064(i: Int) {
-            if (i != -3) aFontMetaRef_1766 = null
-            aFontMetaRef_1766 = null
-        }
-
-        @JvmStatic
-        fun method1070(i: Byte, i_6_: Int) {
-            if (i < 109) anInt1780 = 10
-            anInt1769++
-            if (CipheredPacketBuffer.anIntArray9757 == null || CipheredPacketBuffer.anIntArray9757!!.size < i_6_) CipheredPacketBuffer.anIntArray9757 = IntArray(i_6_)
-        }
-
-        fun method1072(js5Archive: Js5Archive?, i: Byte) {
-            if (i >= -91) method1070(((-93).toByte()).toByte(), 92)
-            BloomGraphicsOptionState.aJs5Archive_5964 = js5Archive
-            anInt1771++
-        }
     }
 }

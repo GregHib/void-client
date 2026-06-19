@@ -1,5 +1,12 @@
-import ModelGroundDecor.Companion.method2419
-import HashTileShape.Companion.method2729
+import ModelGroundDecorStatics.method2419
+import HashTileShapeStatics.method2729
+import MapElementDefinitionCacheStatics.anInt3978
+import MapElementDefinitionCacheStatics.aDouble3980
+import MapElementDefinitionCacheStatics.aCacheIndexManagerArray3982
+import MapElementDefinitionCacheStatics.anInt3983
+import MapElementDefinitionCacheStatics.anInt3984
+import MapElementDefinitionCacheStatics.anInt3986
+import MapElementDefinitionCacheStatics.anInt3987
 
 /* Class319 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -81,29 +88,7 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
             val i_4_ = -1 + aJs5Archive_3979!!.method414(-1)
             aJs5Archive_3979.method407(0, i_4_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("cn.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_3_ != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        var anInt3978: Int = 0
-        var aDouble3980: Double = 0.0
-        @JvmField
-        var aCacheIndexManagerArray3982: Array<CacheIndexManager?>? = null
-        var anInt3983: Int = 0
-        var anInt3984: Int = 0
-        @JvmField
-        var anObject3985: Any? = null
-        var anInt3986: Int = 0
-        var anInt3987: Int = 0
-        @JvmField
-        var aBoolean3988: Boolean = false
-        @JvmStatic
-        fun method2545(bool: Boolean) {
-            if (bool == true) {
-                aCacheIndexManagerArray3982 = null
-                anObject3985 = null
-            }
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("cn.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_3_ != null) "{...}" else "null") + ')'))
         }
     }
 }

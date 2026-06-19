@@ -1,5 +1,10 @@
 import kotlin.math.cos
 import kotlin.math.pow
+import FormantSynthFilterStatics.method3448
+import FormantSynthFilterStatics.anIntArrayArray4301
+import FormantSynthFilterStatics.anInt4303
+import FormantSynthFilterStatics.aFloat4305
+import FormantSynthFilterStatics.aFloatArrayArray4306
 
 /* Class349 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -84,23 +89,5 @@ class FormantSynthFilter {
     init {
         anIntArrayArrayArray4302 = Array<Array<IntArray?>?>(2) { Array<IntArray?>(2) { IntArray(4) } }
         anIntArrayArrayArray4300 = Array<Array<IntArray?>?>(2) { Array<IntArray?>(2) { IntArray(4) } }
-    }
-
-    companion object {
-        var anIntArrayArray4301: Array<IntArray?>? = Array<IntArray?>(2) { IntArray(8) }
-        var anInt4303: Int = 0
-        private var aFloat4305 = 0f
-        private var aFloatArrayArray4306: Array<FloatArray?>? = Array<FloatArray?>(2) { FloatArray(8) }
-
-        private fun method3448(f: Float): Float {
-            val f_7_ = 32.703197f * 2.0.pow(f.toDouble()).toFloat()
-            return f_7_ * 3.1415927f / 11025.0f
-        }
-
-        @JvmStatic
-        fun method3450() {
-            aFloatArrayArray4306 = null
-            anIntArrayArray4301 = null
-        }
     }
 }

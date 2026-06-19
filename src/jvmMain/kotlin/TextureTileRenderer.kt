@@ -1,10 +1,16 @@
-import BoundsConstraintEntry.Companion.method2057
+import BoundsConstraintEntryStatics.method2057
 import jaclib.memory.Stream
 import jaclib.memory.heap.NativeHeapBuffer
-import jaggl.OpenGL.Companion.glMatrixMode
-import jaggl.OpenGL.Companion.glPopMatrix
-import jaggl.OpenGL.Companion.glPushMatrix
-import jaggl.OpenGL.Companion.glScalef
+import jaggl.OpenGLStatics.glMatrixMode
+import jaggl.OpenGLStatics.glPopMatrix
+import jaggl.OpenGLStatics.glPushMatrix
+import jaggl.OpenGLStatics.glScalef
+import TextureTileRendererStatics.anInt6827
+import TextureTileRendererStatics.anInt6828
+import TextureTileRendererStatics.anInt6829
+import TextureTileRendererStatics.anInt6834
+import TextureTileRendererStatics.anInt6838
+import TextureTileRendererStatics.anInt6845
 
 class TextureTileRenderer internal constructor(private val aS_Sub2_6839: OpenGlTerrainTile, var anInt6841: Int, i_38_: Int, var anInt6825: Int, var anInt6833: Int, var anInt6826: Int) : LinkedListNode() {
     private var aHa_Sub2_6831: OpenGlRenderer?
@@ -173,38 +179,5 @@ class TextureTileRenderer internal constructor(private val aS_Sub2_6839: OpenGlT
         this.aFloat6832 = i_38_.toFloat()
         aHa_Sub2_6831 = aS_Sub2_6839.aHa_Sub2_8272
         aClass119_Sub2_6843 = NativeVertexBuffer(aHa_Sub2_6831, 5123, null, 1)
-    }
-
-    companion object {
-        var anInt6827: Int = 0
-        var anInt6828: Int = 0
-        var anInt6829: Int = 0
-        var anIntArray6830: IntArray? = intArrayOf(16, 32, 64, 128)
-        var anInt6834: Int = 0
-        var aFloat6835: Float = 0f
-        var anInt6836: Int = 0
-        var anInt6837: Int = 0
-        var anInt6838: Int = 0
-        var anInt6845: Int = 0
-        fun method2947(bool: Boolean, i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
-            anInt6837++
-            if (bool != true) method2950(121)
-            if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350) != 0 && i_5_ != 0 && HintArrowOrMessage.anInt2021 < 50 && i_4_ != -1) GlTextureCubeMap.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(1.toByte(), i_4_, i_5_, i_6_, i, 0, i_7_, null)
-        }
-
-        @JvmStatic
-        fun method2950(i: Int) {
-            if (i <= 37) aFloat6835 = 2.1337976f
-            anIntArray6830 = null
-        }
-
-        fun method2953(i: Byte) {
-            if (i > -102) anIntArray6830 = null
-            anInt6836++
-            if (WorldMapRenderer.anInt4674 == 3) ByteBuffer.method3379(2, 4)
-            else if (WorldMapRenderer.anInt4674 != 7) {
-                if (WorldMapRenderer.anInt4674 == 10) ByteBuffer.method3379(2, 11)
-            } else ByteBuffer.method3379(2, 8)
-        }
     }
 }

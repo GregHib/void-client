@@ -1,3 +1,10 @@
+import LocConfigModelBuilderStatics.anInt4486
+import LocConfigModelBuilderStatics.anInt4491
+import LocConfigModelBuilderStatics.anInt4496
+import LocConfigModelBuilderStatics.anInt4497
+import LocConfigModelBuilderStatics.anInt4505
+import LocConfigModelBuilderStatics.anInt4511
+
 /* Class368 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -30,7 +37,7 @@ class LocConfigModelBuilder {
             anInt4505++
             return method3566(var_renderer, i_3_, i_1_, null, 0, widgetCache, i, 5.toByte(), null, 0, false, 0, (-68).toByte(), i_0_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_3_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_3_ + ')'))
         }
     }
 
@@ -51,7 +58,7 @@ class LocConfigModelBuilder {
             anInt4511++
             return method3566(var_renderer, i, i_6_, null, 0, widgetCache, i_5_, 2.toByte(), null, 0, false, 0, (-68).toByte(), i_7_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fk.A(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_8_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("fk.A(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_8_ + ')'))
         }
     }
 
@@ -118,7 +125,7 @@ class LocConfigModelBuilder {
             if (i_21_ != -129) method3566(null, 36, -84, null, 43, null, 2, 54.toByte(), null, -17, true, -42, 95.toByte(), -81)
             return method3566(var_renderer, i_16_, i_18_, var_terrainTile, i_22_, widgetCache, i, 2.toByte(), var_terrainTile_23_, i_17_, bool, i_20_, (-68).toByte(), i_19_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (var_terrainTile_23_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (var_terrainTile_23_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -148,7 +155,7 @@ class LocConfigModelBuilder {
                 var i_34_ = i_33_
                 if (aShortArray4490 != null) i_34_ = i_34_ or 0x4000
                 if (aShortArray4499 != null) i_34_ = i_34_ or 0x8000
-                val class124 = ParticleConfigParser.method2277(0, (this.aMapElementDefinitionCache_4513!!.aJs5Archive_3981!!), anInt4506, -1)
+                val class124 = ParticleConfigParserStatics.method2277(0, (this.aMapElementDefinitionCache_4513!!.aJs5Archive_3981!!), anInt4506, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 114)
                 abstractModel = var_renderer!!.method3625(class124, i_34_, (this.aMapElementDefinitionCache_4513!!.anInt3991), 64 + anInt4489, anInt4512 - -850)
@@ -183,58 +190,7 @@ class LocConfigModelBuilder {
             class64_37_!!.s(i_24_)
             return class64_37_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fk.I(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_25_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_26_ + ',' + i_27_ + ',' + (if (var_terrainTile_28_ != null) "{...}" else "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt4486: Int = 0
-        @JvmField
-        var anInt4491: Int = 0
-        @JvmField
-        var anInt4493: Int = 0
-        @JvmField
-        var anInt4494: Int = 0
-        @JvmField
-        var anInt4495: Int = 0
-        @JvmField
-        var anInt4496: Int = 0
-        @JvmField
-        var anInt4497: Int = 0
-        @JvmField
-        var aIntRange_4500: IntRange? = IntRange(117, 1)
-        @JvmField
-        var anInt4505: Int = 0
-        @JvmField
-        var anInt4509: Int = 0
-        @JvmField
-        var anInt4510: Int = 0
-        @JvmField
-        var anInt4511: Int = 0
-        @JvmStatic
-        fun method3560(i: Int) {
-            if (i != -13) method3563(-34, 21.toByte(), -111)
-            aIntRange_4500 = null
-        }
-
-        @JvmStatic
-        fun method3561(i: Int, widgetComponent: WidgetComponent, bool: Boolean): String? {
-            anInt4495++
-            if (bool != true) method3560(68)
-            if (!Client.method105(widgetComponent)!!.method3301(i, !bool) && widgetComponent.anObjectArray741 == null) return null
-            if (widgetComponent.aStringArray833 == null || (i >= widgetComponent.aStringArray833!!.size) || widgetComponent.aStringArray833!![i] == null || widgetComponent.aStringArray833!![i]!!.trim { it <= ' ' }.length == 0) {
-                if (TextureCubeProvider.aBoolean6327) return "Hidden-" + i
-                return null
-            }
-            return widgetComponent.aStringArray833!![i]
-        }
-
-        @JvmStatic
-        fun method3563(i: Int, i_9_: Byte, i_10_: Int): Boolean {
-            anInt4493++
-            if (i_9_.toInt() != 56) method3563(-107, 118.toByte(), 32)
-            return (i and 0x800) != 0
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("fk.I(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_25_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_26_ + ',' + i_27_ + ',' + (if (var_terrainTile_28_ != null) "{...}" else "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'))
         }
     }
 }

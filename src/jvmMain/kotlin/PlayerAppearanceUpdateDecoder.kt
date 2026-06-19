@@ -19,9 +19,9 @@ internal object PlayerAppearanceUpdateDecoder {
     @JvmStatic
     fun method3612(i: Int, class348_sub49_sub2: CipheredPacketBuffer?) {
         if (i < 59) PlayerAppearanceUpdateDecoder.method3614(-51, 64, -115, null, -96)
-        for (i_0_ in 0..<ProjectionCameraTransform.anInt5768) {
-            val i_1_ = GlFramebufferBlitter.anIntArray279!![i_0_]
-            val player = LoadingBarRenderer.aPlayerArray5058!![i_1_]
+        for (i_0_ in 0..<ProjectionCameraTransformStatics.anInt5768) {
+            val i_1_ = GlFramebufferBlitterStatics.anIntArray279!![i_0_]
+            val player = LoadingBarRendererStatics.aPlayerArray5058!![i_1_]
             var i_2_ = class348_sub49_sub2!!.readUnsignedByte(255)
             if ((i_2_ and 0x40) != 0) i_2_ += class348_sub49_sub2.readUnsignedByte(255) shl 8
             if ((i_2_ and 0x4000) != 0) i_2_ += class348_sub49_sub2.readUnsignedByte(255) shl 16

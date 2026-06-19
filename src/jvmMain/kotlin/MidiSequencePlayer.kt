@@ -2,6 +2,50 @@ import java.net.URL
 import kotlin.math.max
 import kotlin.math.pow
 import kotlin.math.sin
+import MidiSequencePlayerStatics.method2878
+import MidiSequencePlayerStatics.method2879
+import MidiSequencePlayerStatics.anInt8889
+import MidiSequencePlayerStatics.anInt8892
+import MidiSequencePlayerStatics.anInt8893
+import MidiSequencePlayerStatics.anInt8897
+import MidiSequencePlayerStatics.anInt8898
+import MidiSequencePlayerStatics.anInt8900
+import MidiSequencePlayerStatics.anInt8901
+import MidiSequencePlayerStatics.anInt8903
+import MidiSequencePlayerStatics.anInt8905
+import MidiSequencePlayerStatics.anInt8907
+import MidiSequencePlayerStatics.anInt8908
+import MidiSequencePlayerStatics.anInt8909
+import MidiSequencePlayerStatics.anInt8912
+import MidiSequencePlayerStatics.anInt8913
+import MidiSequencePlayerStatics.anInt8917
+import MidiSequencePlayerStatics.anInt8918
+import MidiSequencePlayerStatics.anInt8919
+import MidiSequencePlayerStatics.anInt8920
+import MidiSequencePlayerStatics.anInt8922
+import MidiSequencePlayerStatics.anInt8923
+import MidiSequencePlayerStatics.anInt8924
+import MidiSequencePlayerStatics.aJs5Archive_8926
+import MidiSequencePlayerStatics.anInt8927
+import MidiSequencePlayerStatics.anInt8929
+import MidiSequencePlayerStatics.anInt8930
+import MidiSequencePlayerStatics.anInt8931
+import MidiSequencePlayerStatics.anInt8932
+import MidiSequencePlayerStatics.anInt8934
+import MidiSequencePlayerStatics.anInt8935
+import MidiSequencePlayerStatics.anInt8936
+import MidiSequencePlayerStatics.anInt8938
+import MidiSequencePlayerStatics.anInt8940
+import MidiSequencePlayerStatics.anInt8941
+import MidiSequencePlayerStatics.anInt8943
+import MidiSequencePlayerStatics.anInt8946
+import MidiSequencePlayerStatics.anInt8948
+import MidiSequencePlayerStatics.anInt8949
+import MidiSequencePlayerStatics.anInt8950
+import MidiSequencePlayerStatics.anInt8951
+import MidiSequencePlayerStatics.anInt8952
+import MidiSequencePlayerStatics.anInt8954
+import MidiSequencePlayerStatics.anInt8955
 
 class MidiSequencePlayer : AudioStreamNode {
     private val aHashtable_8891: Hashtable
@@ -82,51 +126,51 @@ class MidiSequencePlayer : AudioStreamNode {
             val i_15_ = 0xf and i_4_
             val i_16_ = (0x7f93 and i_4_) shr 8
             val i_17_ = 0x7f and (i_4_ shr 16)
-            if (i_16_ == 0) anIntArray8947!![i_15_] = ((i_17_ shl 14) + NpcSummaryDefinition.method1166(anIntArray8947!![i_15_], -2080769))
-            if (i_16_ == 32) anIntArray8947!![i_15_] = ((i_17_ shl 7) + NpcSummaryDefinition.method1166(anIntArray8947!![i_15_], -16257))
-            if (i_16_ == 1) anIntArray8899[i_15_] = (NpcSummaryDefinition.method1166(-16257, anIntArray8899[i_15_]) + (i_17_ shl 7))
-            if (i_16_ == 33) anIntArray8899[i_15_] = (NpcSummaryDefinition.method1166(anIntArray8899[i_15_], -128) - -i_17_)
-            if (i_16_ == 5) anIntArray8939[i_15_] = (NpcSummaryDefinition.method1166(anIntArray8939[i_15_], -16257) - -(i_17_ shl 7))
-            if (i_16_ == 37) anIntArray8939[i_15_] = i_17_ + NpcSummaryDefinition.method1166(-128, anIntArray8939[i_15_])
-            if (i_16_ == 7) anIntArray8953[i_15_] = ((i_17_ shl 7) + NpcSummaryDefinition.method1166(-16257, anIntArray8953[i_15_]))
-            if (i_16_ == 39) anIntArray8953[i_15_] = i_17_ + NpcSummaryDefinition.method1166(anIntArray8953[i_15_], -128)
-            if (i_16_ == 10) anIntArray8894[i_15_] = ((i_17_ shl 7) + NpcSummaryDefinition.method1166(anIntArray8894[i_15_], -16257))
-            if (i_16_ == 42) anIntArray8894[i_15_] = i_17_ + NpcSummaryDefinition.method1166(anIntArray8894[i_15_], -128)
-            if (i_16_ == 11) anIntArray8896[i_15_] = ((i_17_ shl 7) + NpcSummaryDefinition.method1166(-16257, anIntArray8896[i_15_]))
-            if (i_16_ == 43) anIntArray8896[i_15_] = (NpcSummaryDefinition.method1166(-128, anIntArray8896[i_15_]) - -i_17_)
+            if (i_16_ == 0) anIntArray8947!![i_15_] = ((i_17_ shl 14) + NpcSummaryDefinitionStatics.method1166(anIntArray8947!![i_15_], -2080769))
+            if (i_16_ == 32) anIntArray8947!![i_15_] = ((i_17_ shl 7) + NpcSummaryDefinitionStatics.method1166(anIntArray8947!![i_15_], -16257))
+            if (i_16_ == 1) anIntArray8899[i_15_] = (NpcSummaryDefinitionStatics.method1166(-16257, anIntArray8899[i_15_]) + (i_17_ shl 7))
+            if (i_16_ == 33) anIntArray8899[i_15_] = (NpcSummaryDefinitionStatics.method1166(anIntArray8899[i_15_], -128) - -i_17_)
+            if (i_16_ == 5) anIntArray8939[i_15_] = (NpcSummaryDefinitionStatics.method1166(anIntArray8939[i_15_], -16257) - -(i_17_ shl 7))
+            if (i_16_ == 37) anIntArray8939[i_15_] = i_17_ + NpcSummaryDefinitionStatics.method1166(-128, anIntArray8939[i_15_])
+            if (i_16_ == 7) anIntArray8953[i_15_] = ((i_17_ shl 7) + NpcSummaryDefinitionStatics.method1166(-16257, anIntArray8953[i_15_]))
+            if (i_16_ == 39) anIntArray8953[i_15_] = i_17_ + NpcSummaryDefinitionStatics.method1166(anIntArray8953[i_15_], -128)
+            if (i_16_ == 10) anIntArray8894[i_15_] = ((i_17_ shl 7) + NpcSummaryDefinitionStatics.method1166(anIntArray8894[i_15_], -16257))
+            if (i_16_ == 42) anIntArray8894[i_15_] = i_17_ + NpcSummaryDefinitionStatics.method1166(anIntArray8894[i_15_], -128)
+            if (i_16_ == 11) anIntArray8896[i_15_] = ((i_17_ shl 7) + NpcSummaryDefinitionStatics.method1166(-16257, anIntArray8896[i_15_]))
+            if (i_16_ == 43) anIntArray8896[i_15_] = (NpcSummaryDefinitionStatics.method1166(-128, anIntArray8896[i_15_]) - -i_17_)
             if (i_16_ == 64) {
-                if (i_17_ < 64) this.anIntArray8895[i_15_] = NpcSummaryDefinition.method1166((this.anIntArray8895[i_15_]), -2)
-                else this.anIntArray8895[i_15_] = BoundsConstraintEntry.method2057((this.anIntArray8895[i_15_]), 1)
+                if (i_17_ < 64) this.anIntArray8895[i_15_] = NpcSummaryDefinitionStatics.method1166((this.anIntArray8895[i_15_]), -2)
+                else this.anIntArray8895[i_15_] = BoundsConstraintEntryStatics.method2057((this.anIntArray8895[i_15_]), 1)
             }
             if (i_16_ == 65) {
-                if (i_17_ >= 64) this.anIntArray8895[i_15_] = BoundsConstraintEntry.method2057((this.anIntArray8895[i_15_]), 2)
+                if (i_17_ >= 64) this.anIntArray8895[i_15_] = BoundsConstraintEntryStatics.method2057((this.anIntArray8895[i_15_]), 2)
                 else {
                     method2858(-106, i_15_)
-                    this.anIntArray8895[i_15_] = NpcSummaryDefinition.method1166((this.anIntArray8895[i_15_]), -3)
+                    this.anIntArray8895[i_15_] = NpcSummaryDefinitionStatics.method1166((this.anIntArray8895[i_15_]), -3)
                 }
             }
-            if (i_16_ == 99) anIntArray8904[i_15_] = ((i_17_ shl 7) + NpcSummaryDefinition.method1166(127, anIntArray8904[i_15_]))
-            if (i_16_ == 98) anIntArray8904[i_15_] = (NpcSummaryDefinition.method1166(16256, anIntArray8904[i_15_]) + i_17_)
-            if (i_16_ == 101) anIntArray8904[i_15_] = (16384 - -NpcSummaryDefinition.method1166(anIntArray8904[i_15_], 127) + (i_17_ shl 7))
-            if (i_16_ == 100) anIntArray8904[i_15_] = i_17_ + (NpcSummaryDefinition.method1166(16256, anIntArray8904[i_15_]) + 16384)
+            if (i_16_ == 99) anIntArray8904[i_15_] = ((i_17_ shl 7) + NpcSummaryDefinitionStatics.method1166(127, anIntArray8904[i_15_]))
+            if (i_16_ == 98) anIntArray8904[i_15_] = (NpcSummaryDefinitionStatics.method1166(16256, anIntArray8904[i_15_]) + i_17_)
+            if (i_16_ == 101) anIntArray8904[i_15_] = (16384 - -NpcSummaryDefinitionStatics.method1166(anIntArray8904[i_15_], 127) + (i_17_ shl 7))
+            if (i_16_ == 100) anIntArray8904[i_15_] = i_17_ + (NpcSummaryDefinitionStatics.method1166(16256, anIntArray8904[i_15_]) + 16384)
             if (i_16_ == 120) method2872(2005674600, i_15_)
             if (i_16_ == 121) method2865(0, i_15_)
             if (i_16_ == 123) method2855(i_15_, (-70).toByte())
             if (i_16_ == 6) {
                 val i_18_ = anIntArray8904[i_15_]
-                if (i_18_ == 16384) anIntArray8902!![i_15_] = ((i_17_ shl 7) + NpcSummaryDefinition.method1166(anIntArray8902!![i_15_], -16257))
+                if (i_18_ == 16384) anIntArray8902!![i_15_] = ((i_17_ shl 7) + NpcSummaryDefinitionStatics.method1166(anIntArray8902!![i_15_], -16257))
             }
             if (i_16_ == 38) {
                 val i_19_ = anIntArray8904[i_15_]
-                if (i_19_ == 16384) anIntArray8902!![i_15_] = i_17_ + NpcSummaryDefinition.method1166(-128, anIntArray8902!![i_15_])
+                if (i_19_ == 16384) anIntArray8902!![i_15_] = i_17_ + NpcSummaryDefinitionStatics.method1166(-128, anIntArray8902!![i_15_])
             }
-            if (i_16_ == 16) this.anIntArray8914[i_15_] = (NpcSummaryDefinition.method1166(-16257, (this.anIntArray8914[i_15_])) + (i_17_ shl 7))
-            if (i_16_ == 48) this.anIntArray8914[i_15_] = NpcSummaryDefinition.method1166((this.anIntArray8914[i_15_]), -128) - -i_17_
+            if (i_16_ == 16) this.anIntArray8914[i_15_] = (NpcSummaryDefinitionStatics.method1166(-16257, (this.anIntArray8914[i_15_])) + (i_17_ shl 7))
+            if (i_16_ == 48) this.anIntArray8914[i_15_] = NpcSummaryDefinitionStatics.method1166((this.anIntArray8914[i_15_]), -128) - -i_17_
             if (i_16_ == 81) {
-                if (i_17_ >= 64) this.anIntArray8895[i_15_] = BoundsConstraintEntry.method2057((this.anIntArray8895[i_15_]), 4)
+                if (i_17_ >= 64) this.anIntArray8895[i_15_] = BoundsConstraintEntryStatics.method2057((this.anIntArray8895[i_15_]), 4)
                 else {
                     method2850(i_15_, 0)
-                    this.anIntArray8895[i_15_] = NpcSummaryDefinition.method1166((this.anIntArray8895[i_15_]), -5)
+                    this.anIntArray8895[i_15_] = NpcSummaryDefinitionStatics.method1166((this.anIntArray8895[i_15_]), -5)
                 }
             }
             if (i_16_ == 17) method2857(i_15_, 125, (i_17_ shl 7) + (0x3f80.inv() and anIntArray8942!![i_15_]))
@@ -182,10 +226,10 @@ class MidiSequencePlayer : AudioStreamNode {
                 val d = sin(((class348_sub43.anInt7076) and 0x1ff).toDouble() * 0.01227184630308513)
                 i_30_ += (d * i_31_.toDouble()).toInt()
             }
-            val i_33_ = (((class348_sub43.aClass348_Sub19_Sub1_7077!!.anInt8988 * 256).toDouble() * 2.0.pow(3.255208333333333E-4 * i_30_.toDouble()) / HslColorConfig.anInt339.toDouble()) + 0.5).toInt()
+            val i_33_ = (((class348_sub43.aClass348_Sub19_Sub1_7077!!.anInt8988 * 256).toDouble() * 2.0.pow(3.255208333333333E-4 * i_30_.toDouble()) / HslColorConfigStatics.anInt339.toDouble()) + 0.5).toInt()
             return max(i_33_, 1)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.JA(" + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ma.JA(" + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -210,7 +254,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 if (bool == false) break
                 aClass348_Sub16_Sub1_8958 = null
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ma.T(" + bool + ',' + bool_34_ + ',' + (if (class348_sub2 != null) "{...}" else "null") + ',' + bool_35_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("ma.T(" + bool + ',' + bool_34_ + ',' + (if (class348_sub2 != null) "{...}" else "null") + ',' + bool_35_ + ')'))
             }
             break
         } while (false)
@@ -229,7 +273,7 @@ class MidiSequencePlayer : AudioStreamNode {
             }
             return false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.W(" + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ma.W(" + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -241,7 +285,7 @@ class MidiSequencePlayer : AudioStreamNode {
             if (i_38_ >= 8192) return 16384 - ((-class348_sub43.anInt7074 + 128) * (16384 - i_38_) - -32 shr 6)
             return (class348_sub43.anInt7074 * i_38_ - -32 shr 6)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.GA(" + (if (class348_sub43 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ma.GA(" + (if (class348_sub43 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -282,12 +326,12 @@ class MidiSequencePlayer : AudioStreamNode {
         method2865(0, -1)
         if (bool != true) anIntArray8947 = null
         for (i in 0..15) anIntArray8916!![i] = anIntArray8945[i]
-        for (i in 0..15) anIntArray8947!![i] = NpcSummaryDefinition.method1166(anIntArray8945[i], -128)
+        for (i in 0..15) anIntArray8947!![i] = NpcSummaryDefinitionStatics.method1166(anIntArray8945[i], -128)
     }
 
     fun method2852(`is`: IntArray?, i: Int, class348_sub43: SpriteDefinition?, i_46_: Int, i_47_: Byte): Boolean {
         try {
-            class348_sub43!!.anInt7086 = HslColorConfig.anInt339 / 100
+            class348_sub43!!.anInt7086 = HslColorConfigStatics.anInt339 / 100
             anInt8952++
             if (class348_sub43.anInt7087 >= 0 && ((class348_sub43.aClass348_Sub16_Sub5_7081) == null || class348_sub43.aClass348_Sub16_Sub5_7081!!.method2890())) {
                 class348_sub43.method3299(36.toByte())
@@ -344,7 +388,7 @@ class MidiSequencePlayer : AudioStreamNode {
             class348_sub43.aClass348_Sub16_Sub5_7081!!.method2888(class348_sub43.anInt7086, method2868(class348_sub43, -76), method2848(class348_sub43, (-70).toByte()))
             return false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.U(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ',' + i_46_ + ',' + i_47_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ma.U(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ',' + i_46_ + ',' + i_47_ + ')'))
         }
     }
 
@@ -386,9 +430,9 @@ class MidiSequencePlayer : AudioStreamNode {
                 class348_sub43.anInt7069 = i
                 class348_sub43.anInt7090 = 0
                 class348_sub43.anInt7084 = 0
-                if (this.anIntArray8914[i_51_] == 0) class348_sub43.aClass348_Sub16_Sub5_7081 = (SampledVoice.Companion.method2911(class348_sub19_sub1, method2845(0, class348_sub43), method2868(class348_sub43, i + -82), method2848(class348_sub43, (-70).toByte())))
+                if (this.anIntArray8914[i_51_] == 0) class348_sub43.aClass348_Sub16_Sub5_7081 = (SampledVoiceStatics.method2911(class348_sub19_sub1, method2845(0, class348_sub43), method2868(class348_sub43, i + -82), method2848(class348_sub43, (-70).toByte())))
                 else {
-                    class348_sub43.aClass348_Sub16_Sub5_7081 = (SampledVoice.Companion.method2911(class348_sub19_sub1, method2845(0, class348_sub43), 0, method2848(class348_sub43, (-70).toByte())))
+                    class348_sub43.aClass348_Sub16_Sub5_7081 = (SampledVoiceStatics.method2911(class348_sub19_sub1, method2845(0, class348_sub43), 0, method2848(class348_sub43, (-70).toByte())))
                     method2874(i xor 0x7a, (class348_sub17.aShortArray6795!![i_50_]) < 0, class348_sub43)
                 }
                 if (class348_sub17.aShortArray6795!![i_50_] < 0) class348_sub43.aClass348_Sub16_Sub5_7081!!.method2917(-1)
@@ -410,7 +454,7 @@ class MidiSequencePlayer : AudioStreamNode {
         anInt8943++
         anIntArray8945[i_54_] = i
         if (i_55_ < 39) aJs5Archive_8926 = null
-        anIntArray8947!![i_54_] = NpcSummaryDefinition.method1166(i, -128)
+        anIntArray8947!![i_54_] = NpcSummaryDefinitionStatics.method1166(i, -128)
         method2873((-21).toByte(), i, i_54_)
     }
 
@@ -503,7 +547,7 @@ class MidiSequencePlayer : AudioStreamNode {
         var i = i
         anInt8908++
         if (aMidiTrackReader_8944!!.method1491()) {
-            val i_63_ = (aMidiTrackReader_8944!!.anInt2683 * anInt8921 / HslColorConfig.anInt339)
+            val i_63_ = (aMidiTrackReader_8944!!.anInt2683 * anInt8921 / HslColorConfigStatics.anInt339)
             do {
                 val l = aLong8959 + i_63_.toLong() * i.toLong()
                 if (-l + aLong8957 >= 0L) {
@@ -539,7 +583,7 @@ class MidiSequencePlayer : AudioStreamNode {
         try {
             anInt8898++
             if (aMidiTrackReader_8944!!.method1491()) {
-                val i_68_ = (anInt8921 * aMidiTrackReader_8944!!.anInt2683 / HslColorConfig.anInt339)
+                val i_68_ = (anInt8921 * aMidiTrackReader_8944!!.anInt2683 / HslColorConfigStatics.anInt339)
                 do {
                     val l = aLong8959 + i_67_.toLong() * i_68_.toLong()
                     if (aLong8957 + -l >= 0L) {
@@ -556,7 +600,7 @@ class MidiSequencePlayer : AudioStreamNode {
             }
             aClass348_Sub16_Sub1_8958!!.method2817(`is`, i, i_67_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_67_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ma.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_67_ + ')'))
         }
     }
 
@@ -622,7 +666,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 val i_78_ = class348_sub8.aLong4291.toInt()
                 var class348_sub17 = (aHashtable_8891.method3480(i_78_.toLong(), -6008) as SoundBankPatch?)
                 if (class348_sub17 == null) {
-                    class348_sub17 = GlowPostProcessor.method1417(0, js5Archive!!, i_78_)
+                    class348_sub17 = GlowPostProcessorStatics.method1417(0, js5Archive!!, i_78_)
                     if (class348_sub17 == null) {
                         bool = false
                         class348_sub8 = class348_sub2.aHashtable_6565!!.method3482(0) as FacingDirectionNode?
@@ -637,7 +681,7 @@ class MidiSequencePlayer : AudioStreamNode {
             if (bool) class348_sub2.method2735()
             return bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.CA(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (spriteArchiveLoader != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_77_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ma.CA(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (spriteArchiveLoader != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i_77_ + ')'))
         }
     }
 
@@ -687,7 +731,7 @@ class MidiSequencePlayer : AudioStreamNode {
             }
             return i_79_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.DA(" + (if (class348_sub43 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ma.DA(" + (if (class348_sub43 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -697,7 +741,7 @@ class MidiSequencePlayer : AudioStreamNode {
             anInt8932++
             method2846(bool_88_, true, class348_sub2, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.L(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + bool + ',' + bool_88_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ma.L(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + bool + ',' + bool_88_ + ')'))
         }
     }
 
@@ -710,7 +754,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 method2876(aMidiTrackReader_8944!!.anInt2683.toLong() * l, -125)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.O(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + l + ',' + bool + ',' + bool_89_ + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ma.O(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + l + ',' + bool + ',' + bool_89_ + ',' + i + ')'))
         }
     }
 
@@ -726,7 +770,7 @@ class MidiSequencePlayer : AudioStreamNode {
         while (class348_sub43 != null) {
             if (i_90_ < 0 || (class348_sub43.anInt7067 == i_90_)) {
                 if (class348_sub43.aClass348_Sub16_Sub5_7081 != null) {
-                    class348_sub43.aClass348_Sub16_Sub5_7081!!.method2902(HslColorConfig.anInt339 / 100)
+                    class348_sub43.aClass348_Sub16_Sub5_7081!!.method2902(HslColorConfigStatics.anInt339 / 100)
                     if (class348_sub43.aClass348_Sub16_Sub5_7081!!.method2895()) aClass348_Sub16_Sub1_8958!!.aClass348_Sub16_Sub4_8855.method2883(class348_sub43.aClass348_Sub16_Sub5_7081!!)
                     class348_sub43.method3299(72.toByte())
                 }
@@ -764,7 +808,7 @@ class MidiSequencePlayer : AudioStreamNode {
             } else i_95_ = ((i_94_.toLong() * (this.anIntArray8914[(class348_sub43.anInt7067)]).toLong()) shr 6).toInt()
             if (i > 93) class348_sub43.aClass348_Sub16_Sub5_7081!!.method2924(i_95_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.WA(" + i + ',' + bool + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ma.WA(" + i + ',' + bool + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -814,7 +858,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "ma.UA(" + l + ',' + i + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "ma.UA(" + l + ',' + i + ')')
         }
     }
 
@@ -887,183 +931,7 @@ class MidiSequencePlayer : AudioStreamNode {
             method2843(256, -1, -7836)
             method2851(true, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ma.<init>(" + (if (class348_sub16_sub3_107_ != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt8889: Int = 0
-        @JvmField
-        var anInt8890: Int = 0
-        @JvmField
-        var anInt8892: Int = 0
-        @JvmField
-        var anInt8893: Int = 0
-        @JvmField
-        var anInt8897: Int = 0
-        @JvmField
-        var anInt8898: Int = 0
-        @JvmField
-        var anInt8900: Int = 0
-        @JvmField
-        var anInt8901: Int = 0
-        @JvmField
-        var anInt8903: Int = 0
-        @JvmField
-        var anInt8905: Int = 0
-        @JvmField
-        var anInt8907: Int = 0
-        @JvmField
-        var anInt8908: Int = 0
-        @JvmField
-        var anInt8909: Int = 0
-        @JvmField
-        var anIntArrayArray8910: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(0, 1, 2, 3), intArrayOf(1, 2, 3, 0), intArrayOf(1, 2, -1, 0), intArrayOf(2, 0, -1, 1), intArrayOf(0, 1, -1, 2), intArrayOf(1, 2, -1, 0), intArrayOf(-1, 4, -1, 1), intArrayOf(-1, 1, 3, -1), intArrayOf(-1, 0, 2, -1), intArrayOf(3, 5, 2, 0), intArrayOf(0, 2, 5, 3), intArrayOf(0, 2, 3, 5), intArrayOf(0, 1, 2, 3))
-        @JvmField
-        var anInt8911: Int = 0
-        @JvmField
-        var anInt8912: Int = 0
-        @JvmField
-        var anInt8913: Int = 0
-        @JvmField
-        var anInt8917: Int = 0
-        @JvmField
-        var anInt8918: Int = 0
-        @JvmField
-        var anInt8919: Int = 0
-        @JvmField
-        var anInt8920: Int = 0
-        @JvmField
-        var anInt8922: Int = 0
-        @JvmField
-        var anInt8923: Int = 0
-        @JvmField
-        var anInt8924: Int = 0
-        @JvmField
-        var aJs5Archive_8926: Js5Archive? = null
-        @JvmField
-        var anInt8927: Int = 0
-        @JvmField
-        var anInt8929: Int = 0
-        @JvmField
-        var anInt8930: Int = 0
-        @JvmField
-        var anInt8931: Int = 0
-        @JvmField
-        var anInt8932: Int = 0
-        @JvmField
-        var anInt8934: Int = 0
-        @JvmField
-        var anInt8935: Int = 0
-        @JvmField
-        var anInt8936: Int = 0
-        @JvmField
-        var anInt8938: Int = 0
-        @JvmField
-        var anInt8940: Int = 0
-        @JvmField
-        var anInt8941: Int = 0
-        @JvmField
-        var anInt8943: Int = 0
-        @JvmField
-        var anInt8946: Int = 0
-        @JvmField
-        var anInt8948: Int = 0
-        @JvmField
-        var anInt8949: Int = 0
-        @JvmField
-        var anInt8950: Int = 0
-        @JvmField
-        var anInt8951: Int = 0
-        @JvmField
-        var anInt8952: Int = 0
-        @JvmField
-        var anInt8954: Int = 0
-        @JvmField
-        var anInt8955: Int = 0
-        @JvmStatic
-        fun method2839(i: Int, i_0_: Int, i_1_: Int) {
-            anInt8890++
-            TextureMetadataProvider.anInt4609 = i - MapRegionLoader.anInt1266
-            ColourAdjustment.anInt859 = i_1_ + -MapRegionLoader.anInt1263
-            if (i_0_ != -17) method2839(-112, -58, -95)
-        }
-
-        @JvmStatic
-        fun method2862(privilegedOperationWorker: PrivilegedOperationWorker?, string: String?, i: Int, i_71_: Int): LinkedQueueNode? {
-            try {
-                val i_72_ = 16 % ((-37 - i) / 51)
-                anInt8911++
-                if (i_71_ == 0) return privilegedOperationWorker!!.method2245(string, 16)
-                if (i_71_ == 1) {
-                    try {
-                        JavaScriptBridge.method1616("openjs", (arrayOf<Any?>(URL(JagGlToolkitFactory.anApplet1530!!.getCodeBase(), string).toString())), JagGlToolkitFactory.anApplet1530, 38.toByte())
-                        val linkedQueueNode = LinkedQueueNode()
-                        linkedQueueNode.anInt1997 = 1
-                        return linkedQueueNode
-                    } catch (throwable: Throwable) {
-                        val linkedQueueNode = LinkedQueueNode()
-                        linkedQueueNode.anInt1997 = 2
-                        return linkedQueueNode
-                    }
-                }
-                if (i_71_ == 2) {
-                    try {
-                        JagGlToolkitFactory.anApplet1530!!.showDocument(URL(JagGlToolkitFactory.anApplet1530!!.getCodeBase(), string), "_blank")
-                        val linkedQueueNode = LinkedQueueNode()
-                        linkedQueueNode.anInt1997 = 1
-                        return linkedQueueNode
-                    } catch (exception: Exception) {
-                        val linkedQueueNode = LinkedQueueNode()
-                        linkedQueueNode.anInt1997 = 2
-                        return linkedQueueNode
-                    }
-                }
-                if (i_71_ == 3) {
-                    try {
-                        JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "loggedout")
-                    } catch (throwable: Throwable) {
-                        /* empty */
-                    }
-                    try {
-                        JagGlToolkitFactory.anApplet1530!!.showDocument(URL(JagGlToolkitFactory.anApplet1530!!.getCodeBase(), string), "_top")
-                        val linkedQueueNode = LinkedQueueNode()
-                        linkedQueueNode.anInt1997 = 1
-                        return linkedQueueNode
-                    } catch (exception: Exception) {
-                        val linkedQueueNode = LinkedQueueNode()
-                        linkedQueueNode.anInt1997 = 2
-                        return linkedQueueNode
-                    }
-                }
-                throw IllegalArgumentException()
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ma.EA(" + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ')'))
-            }
-        }
-
-        @JvmStatic
-        fun method2871(i: Int) {
-            anIntArrayArray8910 = null
-            if (i != -65) method2862(null, null, 96, -71)
-            aJs5Archive_8926 = null
-        }
-
-        @JvmStatic
-        fun method2878(i: Int, i_103_: Int, i_104_: Int): TileSceneEntity? {
-            val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_103_]!![i_104_]
-            if (class357 == null || class357.aClass318_Sub1_Sub1_4402 == null) return null
-            return class357.aClass318_Sub1_Sub1_4402
-        }
-
-        @JvmStatic
-        fun method2879(i: Int, i_105_: Int, i_106_: Int) {
-            val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_105_]!![i_106_]
-            if (class357 != null) {
-                ParticleDefLoader.method1376(class357.aClass318_Sub1_Sub1_4402)
-                if (class357.aClass318_Sub1_Sub1_4402 != null) class357.aClass318_Sub1_Sub1_4402 = null
-            }
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ma.<init>(" + (if (class348_sub16_sub3_107_ != null) "{...}" else "null") + ')'))
         }
     }
 }

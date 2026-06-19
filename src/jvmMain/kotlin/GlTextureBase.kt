@@ -1,12 +1,24 @@
-import jaggl.OpenGL.Companion.glBindTexture
-import jaggl.OpenGL.Companion.glDisable
-import jaggl.OpenGL.Companion.glEnable
-import jaggl.OpenGL.Companion.glGenTextures
-import jaggl.OpenGL.Companion.glTexImage2Df
-import jaggl.OpenGL.Companion.glTexImage2Di
-import jaggl.OpenGL.Companion.glTexImage2Dub
-import jaggl.OpenGL.Companion.glTexParameteri
+import jaggl.OpenGLStatics.glBindTexture
+import jaggl.OpenGLStatics.glDisable
+import jaggl.OpenGLStatics.glEnable
+import jaggl.OpenGLStatics.glGenTextures
+import jaggl.OpenGLStatics.glTexImage2Df
+import jaggl.OpenGLStatics.glTexImage2Di
+import jaggl.OpenGLStatics.glTexImage2Dub
+import jaggl.OpenGLStatics.glTexParameteri
 import kotlin.math.min
+import GlTextureBaseStatics.method232
+import GlTextureBaseStatics.anInt5083
+import GlTextureBaseStatics.anInt5085
+import GlTextureBaseStatics.anInt5086
+import GlTextureBaseStatics.anInt5092
+import GlTextureBaseStatics.anInt5095
+import GlTextureBaseStatics.anInt5097
+import GlTextureBaseStatics.anInt5098
+import GlTextureBaseStatics.anInt5100
+import GlTextureBaseStatics.anInt5102
+import GlTextureBaseStatics.anInt5103
+import GlTextureBaseStatics.anInt5104
 
 /*
  * Class14
@@ -42,34 +54,34 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
 
     fun method228(i: Int): Int {
         anInt5085++
-        if (MovementDirection.aMovementDirection_1183 != this.aMovementDirection_5088) {
-            if (MovementDirection.aMovementDirection_1186 == this.aMovementDirection_5088) {
-                if (this.aTextureFormatInfo_5084 == TimedRecordAccessor.aTextureFormatInfo_7103) return 34843
+        if (MovementDirectionStatics.aMovementDirection_1183 != this.aMovementDirection_5088) {
+            if (MovementDirectionStatics.aMovementDirection_1186 == this.aMovementDirection_5088) {
+                if (this.aTextureFormatInfo_5084 == TimedRecordAccessorStatics.aTextureFormatInfo_7103) return 34843
                 if (GroundItemRenderState.aTextureFormatInfo_1662 == this.aTextureFormatInfo_5084) return 34842
-                if (this.aTextureFormatInfo_5084 != ClampTextureNode.aTextureFormatInfo_9471) {
-                    if (this.aTextureFormatInfo_5084 != CellNoiseTextureNode.aTextureFormatInfo_9303) {
-                        if (SpriteSheetCache.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
-                            if (this.aTextureFormatInfo_5084 == SceneLinkedListNode.aTextureFormatInfo_3977) return 6145
+                if (this.aTextureFormatInfo_5084 != ClampTextureNodeStatics.aTextureFormatInfo_9471) {
+                    if (this.aTextureFormatInfo_5084 != CellNoiseTextureNodeStatics.aTextureFormatInfo_9303) {
+                        if (SpriteSheetCacheStatics.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
+                            if (this.aTextureFormatInfo_5084 == SceneLinkedListNodeStatics.aTextureFormatInfo_3977) return 6145
                         } else return 34847
                     } else return 34846
                 } else return 34844
-            } else if (this.aMovementDirection_5088 == MovementDirection.aMovementDirection_1187) {
-                if (TimedRecordAccessor.aTextureFormatInfo_7103 != this.aTextureFormatInfo_5084) {
+            } else if (this.aMovementDirection_5088 == MovementDirectionStatics.aMovementDirection_1187) {
+                if (TimedRecordAccessorStatics.aTextureFormatInfo_7103 != this.aTextureFormatInfo_5084) {
                     if (this.aTextureFormatInfo_5084 == GroundItemRenderState.aTextureFormatInfo_1662) return 34836
-                    if (this.aTextureFormatInfo_5084 != ClampTextureNode.aTextureFormatInfo_9471) {
-                        if (CellNoiseTextureNode.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 34840
-                        if (SpriteSheetCache.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
-                            if (SceneLinkedListNode.aTextureFormatInfo_3977 == this.aTextureFormatInfo_5084) return 6145
+                    if (this.aTextureFormatInfo_5084 != ClampTextureNodeStatics.aTextureFormatInfo_9471) {
+                        if (CellNoiseTextureNodeStatics.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 34840
+                        if (SpriteSheetCacheStatics.aTextureFormatInfo_2571 != this.aTextureFormatInfo_5084) {
+                            if (SceneLinkedListNodeStatics.aTextureFormatInfo_3977 == this.aTextureFormatInfo_5084) return 6145
                         } else return 34841
                     } else return 34838
                 } else return 34837
             }
-        } else if (this.aTextureFormatInfo_5084 != TimedRecordAccessor.aTextureFormatInfo_7103) {
+        } else if (this.aTextureFormatInfo_5084 != TimedRecordAccessorStatics.aTextureFormatInfo_7103) {
             if (this.aTextureFormatInfo_5084 != GroundItemRenderState.aTextureFormatInfo_1662) {
-                if (this.aTextureFormatInfo_5084 != ClampTextureNode.aTextureFormatInfo_9471) {
-                    if (CellNoiseTextureNode.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 6409
-                    if (this.aTextureFormatInfo_5084 == SpriteSheetCache.aTextureFormatInfo_2571) return 6410
-                    if (this.aTextureFormatInfo_5084 == SceneLinkedListNode.aTextureFormatInfo_3977) return 6145
+                if (this.aTextureFormatInfo_5084 != ClampTextureNodeStatics.aTextureFormatInfo_9471) {
+                    if (CellNoiseTextureNodeStatics.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 6409
+                    if (this.aTextureFormatInfo_5084 == SpriteSheetCacheStatics.aTextureFormatInfo_2571) return 6410
+                    if (this.aTextureFormatInfo_5084 == SceneLinkedListNodeStatics.aTextureFormatInfo_3977) return 6145
                 } else return 6406
             } else return 6408
         } else return 6407
@@ -94,8 +106,8 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         var i_2_ = i_2_
         var i_3_ = i_3_
         anInt5100++
-        require(!(i_2_ > 0 && !AsyncTaskHandle.method1436(66, i_2_))) { "" }
-        require(!(i_3_ > 0 && !AsyncTaskHandle.method1436(i xor 0x1cb6, i_3_))) { "" }
+        require(!(i_2_ > 0 && !AsyncTaskHandleStatics.method1436(66, i_2_))) { "" }
+        require(!(i_3_ > 0 && !AsyncTaskHandleStatics.method1436(i xor 0x1cb6, i_3_))) { "" }
         val i_5_ = this.aTextureFormatInfo_5084!!.anInt3850
         var i_6_ = 0
         var i_7_ = min(i_2_, i_3_)
@@ -105,7 +117,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         var is_10_ = `is`
         var is_11_ = ByteArray(i_9_ * (i_8_ * i_5_))
         while (true) {
-            glTexImage2Dub(i_4_, i_6_, method228(108), i_2_, i_3_, 0, RangeThresholdTextureNode.method3055(i + -7265, this.aTextureFormatInfo_5084), 5121, is_10_, 0)
+            glTexImage2Dub(i_4_, i_6_, method228(108), i_2_, i_3_, 0, RangeThresholdTextureNodeStatics.method3055(i + -7265, this.aTextureFormatInfo_5084), 5121, is_10_, 0)
             if (i_7_ <= 1) break
             val i_12_ = i_2_ * i_5_
             var i_13_ = 0
@@ -157,8 +169,8 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         var i = i
         var i_23_ = i_23_
         anInt5092++
-        require(!(i > 0 && !AsyncTaskHandle.method1436(-43, i))) { "" }
-        require(!(i_23_ > 0 && !AsyncTaskHandle.method1436(i_25_ xor 0xd2.inv(), i_23_))) { "" }
+        require(!(i > 0 && !AsyncTaskHandleStatics.method1436(-43, i))) { "" }
+        require(!(i_23_ > 0 && !AsyncTaskHandleStatics.method1436(i_25_ xor 0xd2.inv(), i_23_))) { "" }
         require(GroundItemRenderState.aTextureFormatInfo_1662 == this.aTextureFormatInfo_5084) { "" }
         var i_26_ = 0
         var i_27_ = min(i, i_23_)
@@ -197,7 +209,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
                     i_40_ += 0xff and (i_44_ shr 16)
                     i_43_ += 0xff and (i_44_ shr 8)
                     i_42_ += i_44_ and 0xff
-                    is_31_[i_32_++] = (BoundsConstraintEntry.method2057((BoundsConstraintEntry.method2057(NpcSummaryDefinition.method1166(i_43_ shl 6, 65280), BoundsConstraintEntry.method2057((NpcSummaryDefinition.method1166(i_41_, 1020) shl 22), (NpcSummaryDefinition.method1166(1020, i_40_) shl 14)))), NpcSummaryDefinition.method1166(255, i_42_ shr 2)))
+                    is_31_[i_32_++] = (BoundsConstraintEntryStatics.method2057((BoundsConstraintEntryStatics.method2057(NpcSummaryDefinitionStatics.method1166(i_43_ shl 6, 65280), BoundsConstraintEntryStatics.method2057((NpcSummaryDefinitionStatics.method1166(i_41_, 1020) shl 22), (NpcSummaryDefinitionStatics.method1166(1020, i_40_) shl 14)))), NpcSummaryDefinitionStatics.method1166(255, i_42_ shr 2)))
                     i_36_++
                 }
                 i_33_ += i
@@ -246,8 +258,8 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         var i_49_ = i_49_
         var i_50_ = i_50_
         anInt5102++
-        require(!(i_49_ > 0 && !AsyncTaskHandle.method1436(100, i_49_))) { "" }
-        require(!(i_50_ > 0 && !AsyncTaskHandle.method1436(i_48_ + 109, i_50_))) { "" }
+        require(!(i_49_ > 0 && !AsyncTaskHandleStatics.method1436(100, i_49_))) { "" }
+        require(!(i_50_ > 0 && !AsyncTaskHandleStatics.method1436(i_48_ + 109, i_50_))) { "" }
         val i_51_ = this.aTextureFormatInfo_5084!!.anInt3850
         var i_52_ = 0
         if (i_48_ != 1) method228(107)
@@ -257,7 +269,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         var fs_56_ = fs!!
         var fs_57_ = FloatArray(i_54_ * (i_55_ * i_51_))
         while (true) {
-            glTexImage2Df(i, i_52_, method228(123), i_49_, i_50_, 0, (RangeThresholdTextureNode.method3055(124, this.aTextureFormatInfo_5084)), 5126, fs_56_, 0)
+            glTexImage2Df(i, i_52_, method228(123), i_49_, i_50_, 0, (RangeThresholdTextureNodeStatics.method3055(124, this.aTextureFormatInfo_5084)), 5126, fs_56_, 0)
             if (i_53_ <= 1) break
             val i_58_ = i_49_ * i_51_
             var i_59_ = 0
@@ -312,71 +324,12 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
             this.aMovementDirection_5088 = movementDirection
             aBoolean5099 = bool
             this.anInt5093 = i
-            glGenTextures(1, TextureDefinitionLoader.anIntArray1975, 0)
-            anInt5096 = TextureDefinitionLoader.anIntArray1975!![0]
+            glGenTextures(1, TextureDefinitionLoaderStatics.anIntArray1975, 0)
+            anInt5096 = TextureDefinitionLoaderStatics.anIntArray1975!![0]
             method229(true)
             method236(0, (-126).toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("hda.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + i_66_ + ',' + bool + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt5083: Int = 0
-        @JvmField
-        var anInt5085: Int = 0
-        @JvmField
-        var anInt5086: Int = 0
-        @JvmField
-        var anInt5087: Int = 0
-        @JvmField
-        var aLong5089: Long = -1L
-        @JvmField
-        var anIntArray5091: IntArray? = null
-        @JvmField
-        var anInt5092: Int = 0
-        @JvmField
-        var anInt5094: Int = 0
-        @JvmField
-        var anInt5095: Int = 0
-        @JvmField
-        var anInt5097: Int = 0
-        @JvmField
-        var anInt5098: Int = 0
-        @JvmField
-        var anInt5100: Int = 0
-        @JvmField
-        var anInt5102: Int = 0
-        @JvmField
-        var anInt5103: Int = 0
-        @JvmField
-        var anInt5104: Int = 0
-
-        @JvmStatic
-        fun method232(var_renderer: Renderer?, i: Byte, bool: Boolean, i_22_: Int): Font? {
-            if (i.toInt() != -53) method237(true)
-            anInt5094++
-            val class352 = ChatEffectsOptionState.method1734(i_22_, var_renderer, 55.toByte(), bool)
-            if (class352 == null) return null
-            return class352.aFont_4332
-        }
-
-        @JvmStatic
-        fun method235(i: Int, i_46_: Byte) {
-            anInt5087++
-            if (i != -1 && AudioResampler.aBooleanArray2162!![i]) {
-                RenderConfigFactory.aJs5Archive_2978!!.method411(i, -120)
-                WarpTextureNode.aWidgetComponentArrayArray9427!![i] = null
-                WorldMapTextLabel.aWidgetComponentArrayArray8584!![i] = null
-                if (i_46_ <= -94) AudioResampler.aBooleanArray2162!![i] = false
-            }
-        }
-
-        @JvmStatic
-        fun method237(bool: Boolean) {
-            if (bool != false) aLong5089 = -54L
-            anIntArray5091 = null
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("hda.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + i_66_ + ',' + bool + ')'))
         }
     }
 }

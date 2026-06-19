@@ -1,3 +1,7 @@
+import RadialGradientMaskEffectStatics.anIntArray9185
+import RadialGradientMaskEffectStatics.anInt9186
+import RadialGradientMaskEffectStatics.anInt9188
+
 /* Class348_Sub40_Sub11 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -8,10 +12,10 @@ class RadialGradientMaskEffect : AbstractProceduralTextureNode(0, true) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (i_0_ != 255) anIntArray9185 = null
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_1_ = LightDetailOptionState.anIntArray6035!![i]
+            val i_1_ = LightDetailOptionStateStatics.anIntArray6035!![i]
             var i_2_ = 0
-            while ((i_2_ < DisplaceTextureNode.Companion.anInt9139)) {
-                val i_3_ = SceneEffectMarker.anIntArray6432!![i_2_]
+            while ((i_2_ < DisplaceTextureNodeStatics.anInt9139)) {
+                val i_3_ = SceneEffectMarkerStatics.anIntArray6432!![i_2_]
                 if (anInt9187 < i_3_ && 4096 - anInt9187 > i_3_ && i_1_ > 2048 + -anInt9187 && i_1_ < 2048 + anInt9187) {
                     var i_4_ = -i_3_ + 2048
                     i_4_ = if (i_4_ < 0) -i_4_ else i_4_
@@ -48,21 +52,6 @@ class RadialGradientMaskEffect : AbstractProceduralTextureNode(0, true) {
         if (i_8_ == 31015) {
             val i_9_ = i
             if (i_9_ == 0) anInt9187 = class348_sub49.readUnsignedShort(842397944)
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anIntArray9185: IntArray? = IntArray(50)
-        @JvmField
-        var anInt9186: Int = 0
-        @JvmField
-        var anInt9188: Int = 0
-
-        @JvmStatic
-        fun method3075(bool: Boolean) {
-            anIntArray9185 = null
-            if (bool != false) anIntArray9185 = null
         }
     }
 }

@@ -1,0 +1,81 @@
+import SoftwareSpriteRasterStatics.method960
+import SpriteRgbTextureNodeStatics.method3093
+import Bzip2DecoderStateStatics.method368
+import kotlin.math.max
+
+object HeadIconRendererStatics {
+    var anInt2059: Int = 0
+            var anInt2061: Int = 0
+            var anIntArray2062: IntArray? = IntArray(4)
+            var anInt2063: Int = 0
+            var anInt2064: Int = 0
+            @JvmField
+            var anInt2065: Int = 0
+            var anInt2066: Int = 0
+            var aIntRange_2068: IntRange? = IntRange(68, 6)
+            @JvmStatic
+            fun method1209(i: Int) {
+                val i_0_ = 95 / ((-21 - i) / 45)
+                anIntArray2062 = null
+                aIntRange_2068 = null
+            }
+    
+            fun method1210(i: Byte, i_1_: Int): Boolean {
+                anInt2066++
+                if (i > -93) anInt2061 = -39
+                return i_1_ == 0 || i_1_ == 2
+            }
+    
+            @JvmStatic
+            fun method1211(i: Int, abstractModelRenderer: AbstractModelRenderer?, i_2_: Int, widgetComponent: WidgetComponent?, var_sprite: Sprite?, i_3_: Int, i_4_: Int, i_5_: Int) {
+                try {
+                    anInt2064++
+                    if (abstractModelRenderer != null) {
+                        val i_6_: Int
+                        if (WeaveTextureNodeStatics.anInt9282 != 4) i_6_ = (0x3fff and ResourceProviderStatics.aFloat3938.toInt() - -OpenGlRenderNodeStatics.anInt10483)
+                        else i_6_ = 0x3fff and ResourceProviderStatics.aFloat3938.toInt()
+                        val i_7_ = 10 + max(widgetComponent!!.anInt709 / 2, widgetComponent.anInt789 / i_4_)
+                        val i_8_ = i_5_ * i_5_ - -(i_3_ * i_3_)
+                        if (i_7_ * i_7_ >= i_8_) {
+                            var i_9_ = TrigLookupTablesStatics.anIntArray1207!![i_6_]
+                            var i_10_ = TrigLookupTablesStatics.anIntArray1204!![i_6_]
+                            if (WeaveTextureNodeStatics.anInt9282 != 4) {
+                                i_10_ = 256 * i_10_ / (FloatBufferStatics.anInt9750 - -256)
+                                i_9_ = i_9_ * 256 / (FloatBufferStatics.anInt9750 - -256)
+                            }
+                            val i_11_ = i_5_ * i_10_ + i_3_ * i_9_ shr 14
+                            val i_12_ = i_3_ * i_10_ + -(i_9_ * i_5_) shr 14
+                            abstractModelRenderer.method963((i_11_ + (widgetComponent.anInt709 / 2 + (i_2_ + -(abstractModelRenderer.method966() / 2)))), (i - -(widgetComponent.anInt789 / 2) + (-i_12_ + -(abstractModelRenderer.method980() / 2))), var_sprite, i_2_, i)
+                        }
+                    }
+                } catch (runtimeexception: RuntimeException) {
+                    throw SoundBankPatchStatics.method2929(runtimeexception, ("ok.C(" + i + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
+                }
+            }
+    
+            fun method1212(i: Int, i_13_: Int, i_14_: Int, i_15_: Int) {
+                var i = i
+                anInt2059++
+                i = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) * i shr 8
+                if (i_14_ == i_13_ && !RgbColorPaletteStatics.aBoolean1236) method960(1)
+                else if (i_13_ != -1 && (i_13_ != SlotBindingStatics.anInt3428 || !ParticleSystemStateStatics.method1296(true)) && i != 0 && !RgbColorPaletteStatics.aBoolean1236) {
+                    method368(i, 18002, false, i_13_, CachedRgbNoiseTextureStatics.aJs5Archive_8667, 0, i_15_)
+                    method3093(93)
+                }
+                if (SlotBindingStatics.anInt3428 != i_13_) UnusedToStringStubStatics.aClass348_Sub16_Sub3_2718 = null
+                SlotBindingStatics.anInt3428 = i_13_
+            }
+    
+            @JvmStatic
+            fun method1213(string: String?, string_16_: String?, i: Int) {
+                try {
+                    if (i > -48) aIntRange_2068 = null
+                    anInt2063++
+                    TextureLoadExceptionStatics.anInt4596 = -1
+                    BloomGraphicsOptionStateStatics.anInt5969 = if (LoaderStatics.skipLobby) 2 else 1
+                    LocalPlayerState.method1138(string, false, string_16_, (-95).toByte())
+                } catch (runtimeexception: RuntimeException) {
+                    throw SoundBankPatchStatics.method2929(runtimeexception, ("ok.E(" + (if (string != null) "{...}" else "null") + ',' + (if (string_16_ != null) "{...}" else "null") + ',' + i + ')'))
+                }
+            }
+}

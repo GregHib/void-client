@@ -1,14 +1,34 @@
-import ParticleSystemState.Companion.method1296
-import WaterMaterialPass.Companion.method2148
-import ParticleTileShape.Companion.method2732
-import BrightnessTextureNode.Companion.method3086
-import jaggl.OpenGL.Companion.glBindFramebufferEXT
-import jaggl.OpenGL.Companion.glCheckFramebufferStatusEXT
-import jaggl.OpenGL.Companion.glDrawBuffer
-import jaggl.OpenGL.Companion.glGenFramebuffersEXT
-import jaggl.OpenGL.Companion.glReadBuffer
+import ParticleSystemStateStatics.method1296
+import WaterMaterialPassStatics.method2148
+import ParticleTileShapeStatics.method2732
+import BrightnessTextureNodeStatics.method3086
+import jaggl.OpenGLStatics.glBindFramebufferEXT
+import jaggl.OpenGLStatics.glCheckFramebufferStatusEXT
+import jaggl.OpenGLStatics.glDrawBuffer
+import jaggl.OpenGLStatics.glGenFramebuffersEXT
+import jaggl.OpenGLStatics.glReadBuffer
 import kotlin.math.abs
 import kotlin.math.atan2
+import FrameBufferObjectStatics.anInt4864
+import FrameBufferObjectStatics.anInt4865
+import FrameBufferObjectStatics.anInt4866
+import FrameBufferObjectStatics.anInt4867
+import FrameBufferObjectStatics.anInt4868
+import FrameBufferObjectStatics.anInt4869
+import FrameBufferObjectStatics.anInt4871
+import FrameBufferObjectStatics.aClass209_4874
+import FrameBufferObjectStatics.anInt4876
+import FrameBufferObjectStatics.anInt4877
+import FrameBufferObjectStatics.anInt4878
+import FrameBufferObjectStatics.anInt4879
+import FrameBufferObjectStatics.anInt4880
+import FrameBufferObjectStatics.anInt4881
+import FrameBufferObjectStatics.anInt4885
+import FrameBufferObjectStatics.anInt4887
+import FrameBufferObjectStatics.aBoolean4888
+import FrameBufferObjectStatics.anInt4889
+import FrameBufferObjectStatics.anInt4892
+import FrameBufferObjectStatics.anInt4893
 
 /*
  * Class206
@@ -61,7 +81,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
             anInt4882 = class258_sub2.anInt8538
             anInt4886 = class258_sub2.anInt8538
         } else if (class258_sub2.anInt8538 != anInt4882 || anInt4886 != class258_sub2.anInt8538) throw RuntimeException()
-        class258_sub2.method1961(anInt4873, i_22_, RgbNoiseTexture.anIntArray5306!![i_21_], i, -1)
+        class258_sub2.method1961(anInt4873, i_22_, RgbNoiseTextureStatics.anIntArray5306!![i_21_], i, -1)
         anIndexedDisposableArray4875[i_21_] = class258_sub2
         anInt4884 = anInt4884 or i_23_
     }
@@ -70,7 +90,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
         anInt4885++
         if (i_24_.toInt() != 3) aClass209_4874 = null
         if (anInt4873 == -1) throw RuntimeException()
-        glDrawBuffer(RgbNoiseTexture.anIntArray5306!![i])
+        glDrawBuffer(RgbNoiseTextureStatics.anIntArray5306!![i])
     }
 
     override fun method48(i: Int) {
@@ -99,7 +119,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
     fun method1505(i: Int, i_26_: Int) {
         anInt4880++
         if ((anInt4873.inv()) == i) throw RuntimeException()
-        glReadBuffer(RgbNoiseTexture.anIntArray5306!![i_26_])
+        glReadBuffer(RgbNoiseTextureStatics.anIntArray5306!![i_26_])
     }
 
     private fun method1506(i: Int, class258_sub3: GlTexture2D, i_27_: Int, i_28_: Int) {
@@ -110,7 +130,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
             anInt4882 = class258_sub3.anInt8547
             anInt4886 = class258_sub3.anInt8551
         } else if ((anInt4882 != class258_sub3.anInt8547) || class258_sub3.anInt8551 != anInt4886) throw RuntimeException()
-        class258_sub3.method1963(anInt4873, i, 0, RgbNoiseTexture.anIntArray5306!![i_27_])
+        class258_sub3.method1963(anInt4873, i, 0, RgbNoiseTextureStatics.anIntArray5306!![i_27_])
         anIndexedDisposableArray4875[i_27_] = class258_sub3
         anInt4884 = anInt4884 or i_29_
     }
@@ -138,7 +158,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
             anInt4882 = class348_sub42_sub2.anInt8572
         } else if ((class348_sub42_sub2.anInt8572 != anInt4882) || (anInt4886 != class348_sub42_sub2.anInt8565)) throw RuntimeException()
         val i_34_ = -68 / ((i_32_ - 64) / 49)
-        class348_sub42_sub2.method3173(36161, RgbNoiseTexture.anIntArray5306!![i], anInt4873)
+        class348_sub42_sub2.method3173(36161, RgbNoiseTextureStatics.anIntArray5306!![i], anInt4873)
         anIndexedDisposableArray4875[i] = class348_sub42_sub2
         anInt4884 = anInt4884 or i_33_
     }
@@ -167,151 +187,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
         anInt4873 = -1
         check(var_ha_Sub2.aBoolean7820) { "" }
         aHa_Sub2_4883 = var_ha_Sub2
-        glGenFramebuffersEXT(1, DualMaterialContainer.anIntArray1635, 0)
-        anInt4891 = DualMaterialContainer.anIntArray1635!![0]
-    }
-
-    companion object {
-        var anInt4864: Int = 0
-        var anInt4865: Int = 0
-        var anInt4866: Int = 0
-        var anInt4867: Int = 0
-        var anInt4868: Int = 0
-        var anInt4869: Int = 0
-        var anInt4870: Int = 0
-        var anInt4871: Int = 0
-        var aClass209_4874: UnusedToStringStub?
-        var anInt4876: Int = 0
-        var anInt4877: Int = 0
-        var anInt4878: Int = 0
-        var anInt4879: Int = 0
-        var anInt4880: Int = 0
-        var anInt4881: Int = 0
-        var anInt4885: Int = 0
-        var anInt4887: Int = 0
-        @JvmField
-        var aBoolean4888: Boolean = false
-        var anInt4889: Int
-        var anInt4890: Int = 0
-        var anInt4892: Int = 0
-        var anInt4893: Int = 0
-
-        @JvmStatic
-        fun method1499(i: Int) {
-            if (i < -124) aClass209_4874 = null
-        }
-
-        @JvmStatic
-        fun method1501(i: Int) {
-            val i_3_ = 56 / ((i - -56) / 42)
-            var i_4_ = 0
-            while (i_4_ < HintArrowOrMessage.anInt2021) {
-                val class10 = GlTextureCubeMap.aParticleEmitterNodeArray8531s!![i_4_]
-                var bool = false
-                if (class10!!.aClass348_Sub16_Sub5_176 == null) {
-                    class10.anInt188--
-                    if (class10.anInt188 >= (if (!class10.method220((-66).toByte())) -10 else -1500)) {
-                        if (class10.aByte180.toInt() == 1 && class10.aAudioClipDefinition_183 == null) {
-                            class10.aAudioClipDefinition_183 = AudioClipDefinition.method2372(ModelFacePriorityNode.aJs5Archive_1878!!, class10.anInt185, 0)
-                            if (class10.aAudioClipDefinition_183 == null) {
-                                i_4_++
-                                continue
-                            }
-                            class10.anInt188 += class10.aAudioClipDefinition_183!!.method2370()
-                        } else if (class10.method220((-39).toByte()) && ((class10.aClass348_Sub10_192 == null) || (class10.aClass348_Sub19_Sub1_189) == null)) {
-                            if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = VorbisAudioDecoder.method2793((LightingOptionState.aJs5Archive_5878!!), (class10.anInt185))
-                            if (class10.aClass348_Sub10_192 == null) {
-                                i_4_++
-                                continue
-                            }
-                            if (class10.aClass348_Sub19_Sub1_189 == null) {
-                                class10.aClass348_Sub19_Sub1_189 = class10.aClass348_Sub10_192!!.method2791(intArrayOf(22050))
-                                if (class10.aClass348_Sub19_Sub1_189 == null) {
-                                    i_4_++
-                                    continue
-                                }
-                            }
-                        }
-                        if (class10.anInt188 < 0) {
-                            var i_5_ = 8192
-                            val i_6_: Int
-                            if (class10.anInt178 == 0) i_6_ = ((class10.anInt184 * (if (class10.aByte180.toInt() == 3) IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350))) shr 2)
-                            else {
-                                val i_7_ = 0x3 and (class10.anInt178 shr 24)
-                                if ((LocalPlayerState.aPlayer_1907!!.plane).toInt() == i_7_) {
-                                    val i_8_ = 0x1fe00 and (class10.anInt178 shl 9)
-                                    val i_9_ = (LocalPlayerState.aPlayer_1907!!.method2436(52.toByte()) shl 8)
-                                    val i_10_ = ((class10.anInt178 and 0xff7e29) shr 16)
-                                    val i_11_ = (-(LocalPlayerState.aPlayer_1907!!.x) + 256 + (i_10_ shl 9) + i_9_)
-                                    val i_12_ = ((class10.anInt178 and 0xffc1) shr 8)
-                                    val i_13_ = (256 + (i_12_ shl 9) - ((LocalPlayerState.aPlayer_1907!!.y) - i_9_))
-                                    var i_14_ = (abs(i_11_) + (abs(i_13_) + -512))
-                                    if (i_8_ < i_14_) {
-                                        class10.anInt188 = -99999
-                                        i_4_++
-                                        continue
-                                    }
-                                    if (i_14_ < 0) i_14_ = 0
-                                    i_6_ = ((i_8_ + -i_14_) * (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350) * class10.anInt184) / i_8_) shr 2
-                                    if ((class10.aClass318_Sub1_172 != null) && (class10.aClass318_Sub1_172 is GroundDecorEntity)) {
-                                        val class318_sub1_sub3 = ((class10.aClass318_Sub1_172) as GroundDecorEntity)
-                                        val i_15_ = (class318_sub1_sub3.aShort8743)
-                                        val i_16_ = (class318_sub1_sub3.aShort8750)
-                                    }
-                                    if (i_11_ != 0 || i_13_ != 0) {
-                                        var i_17_ = (0x3fff and (-4096 + -WorldMapElement.anInt4638 + -(2607.5945876176133 * (atan2(i_11_.toDouble(), i_13_.toDouble()))).toInt()))
-                                        if (i_17_ > 8192) i_17_ = 16384 + -i_17_
-                                        val i_18_: Int
-                                        if (i_14_ <= 0) i_18_ = 8192
-                                        else if (i_14_ >= 4096) i_18_ = 16384
-                                        else i_18_ = 8192 + (-i_14_ + 8192) / 4096
-                                        i_5_ = ((-i_18_ + 16384 shr 1) + i_18_ * i_17_ / 8192)
-                                    }
-                                } else i_6_ = 0
-                            }
-                            if (i_6_ > 0) {
-                                var class348_sub19_sub1: PcmSampleData? = null
-                                if (class10.aByte180.toInt() != 1) {
-                                    if (class10.method220((-112).toByte())) class348_sub19_sub1 = (class10.aClass348_Sub19_Sub1_189)
-                                } else class348_sub19_sub1 = class10.aAudioClipDefinition_183!!.method2369().method2944(MapSceneTile.aAudioResampler_1050!!)
-                                val class348_sub16_sub5 = (SampledVoice.method2911(class348_sub19_sub1!!, class10.anInt173, i_6_, i_5_).also { class10.aClass348_Sub16_Sub5_176 = it })
-                                class348_sub16_sub5!!.method2917(-1 + class10.anInt177)
-                                SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
-                            }
-                        }
-                    } else bool = true
-                } else if (!class10.aClass348_Sub16_Sub5_176!!.method2712(4.toByte())) bool = true
-                if (bool) {
-                    HintArrowOrMessage.anInt2021--
-                    var i_19_ = i_4_
-                    while (HintArrowOrMessage.anInt2021 > i_19_) {
-                        GlTextureCubeMap.aParticleEmitterNodeArray8531s!![i_19_] = GlTextureCubeMap.aParticleEmitterNodeArray8531s!![i_19_ - -1]
-                        i_19_++
-                    }
-                    i_4_--
-                }
-                i_4_++
-            }
-            anInt4890++
-            if (RgbColorPalette.aBoolean1236 && !method1296(true)) {
-                if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1) {
-                    if (UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 != null) method3086(2, UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), CachedRgbNoiseTexture.aJs5Archive_8667, false, 0, SlotBinding.anInt3428)
-                    else method2732(0, SlotBinding.anInt3428, false, 124, CachedRgbNoiseTexture.aJs5Archive_8667, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
-                }
-                RgbColorPalette.aBoolean1236 = false
-                UnusedToStringStub.Companion.aClass348_Sub16_Sub3_2718 = null
-            } else if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1 && !method1296(true)) {
-                SceneLinkedListNode.anInt3973++
-                val class348_sub47 = method2148(OpenGlRenderer.aFontMetaRef_7554, TheoraVideoStream.aIsaacCipher_9029, -107)
-                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(118.toByte(), SlotBinding.anInt3428)
-                InterfaceComponentGroup.method3243(-54, class348_sub47)
-                SlotBinding.anInt3428 = -1
-            }
-        }
-
-        init {
-            aClass209_4874 = UnusedToStringStub()
-            anInt4889 = 0
-        }
+        glGenFramebuffersEXT(1, DualMaterialContainerStatics.anIntArray1635, 0)
+        anInt4891 = DualMaterialContainerStatics.anIntArray1635!![0]
     }
 }

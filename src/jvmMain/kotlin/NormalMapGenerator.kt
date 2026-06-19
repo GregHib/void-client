@@ -1,8 +1,11 @@
-import ObjectByteSerializerHolder.Companion.method1331
-import GrowableStringList.Companion.method1357
-import MinimapSquareDrawer.Companion.method461
-import SolidFillComponent.Companion.method194
+import ObjectByteSerializerHolderStatics.method1331
+import GrowableStringListStatics.method1357
+import MinimapSquareDrawerStatics.method461
+import SolidFillComponentStatics.method194
 import kotlin.math.sqrt
+import NormalMapGeneratorStatics.anInt3456
+import NormalMapGeneratorStatics.anInt3461
+import NormalMapGeneratorStatics.aFloat3462
 
 /* Class269 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -25,11 +28,11 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
     fun method2041(i: Byte): Boolean {
         if (i < 42) aFloat3462 = 2.1357973f
         if (this.anInterface18_Impl1_3455 == null) {
-            if (NodeDeque.Companion.anObject3331 == null) {
+            if (NodeDequeStatics.anObject3331 == null) {
                 val `is` = method194(128, -1922, 8, 0.6f, 128, 4.0f, 4.0f, 0.5f, 16.0f, PerlinTextureProvider(419684), 16)
-                NodeDeque.Companion.anObject3331 = method1357(`is`, false, 87.toByte())
+                NodeDequeStatics.anObject3331 = method1357(`is`, false, 87.toByte())
             }
-            val `is` = method461(false, NodeDeque.Companion.anObject3331, 53146732)
+            val `is` = method461(false, NodeDequeStatics.anObject3331, 53146732)
             val is_0_ = ByteArray(4 * `is`!!.size)
             var i_1_ = 0
             for (i_2_ in 0..15) {
@@ -58,53 +61,26 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
 
     init {
         this.aBoolean3458 = aHa_Sub3_3457.aBoolean8159
-        if (this.aBoolean3458 && !aHa_Sub3_3457.method3931(true, SpriteSheetCache.aTextureFormatInfo_2571, MovementDirection.aMovementDirection_1183)) this.aBoolean3458 = false
-        if (this.aBoolean3458 || aHa_Sub3_3457.method3880(MovementDirection.aMovementDirection_1183, SpriteSheetCache.aTextureFormatInfo_2571, 123.toByte())) {
-            FireParticleStream.method134((-126).toByte())
+        if (this.aBoolean3458 && !aHa_Sub3_3457.method3931(true, SpriteSheetCacheStatics.aTextureFormatInfo_2571, MovementDirectionStatics.aMovementDirection_1183)) this.aBoolean3458 = false
+        if (this.aBoolean3458 || aHa_Sub3_3457.method3880(MovementDirectionStatics.aMovementDirection_1183, SpriteSheetCacheStatics.aTextureFormatInfo_2571, 123.toByte())) {
+            FireParticleStreamStatics.method134((-126).toByte())
             if (this.aBoolean3458) {
-                var `is` = method461(false, CompiledScriptCache.anObject4366, 53146732)
-                this.anInterface18_Impl1_3452 = aHa_Sub3_3457.method3872(16, 128, SpriteSheetCache.aTextureFormatInfo_2571, true, 128, `is`)
-                `is` = method461(false, BoxedIntHolder.anObject2969, 53146732)
-                aHa_Sub3_3457.method3872(16, 128, SpriteSheetCache.aTextureFormatInfo_2571, true, 128, `is`)
+                var `is` = method461(false, CompiledScriptCacheStatics.anObject4366, 53146732)
+                this.anInterface18_Impl1_3452 = aHa_Sub3_3457.method3872(16, 128, SpriteSheetCacheStatics.aTextureFormatInfo_2571, true, 128, `is`)
+                `is` = method461(false, BoxedIntHolderStatics.anObject2969, 53146732)
+                aHa_Sub3_3457.method3872(16, 128, SpriteSheetCacheStatics.aTextureFormatInfo_2571, true, 128, `is`)
             } else {
                 this.anInterface18_Impl3Array3459 = arrayOfNulls<Renderable2dTexture>(16)
                 for (i in 0..15) {
-                    val `is` = method1331(100.toByte(), CompiledScriptCache.anObject4366, 128 * (i * 128 * 2), 32768)
-                    this.anInterface18_Impl3Array3459!![i] = aHa_Sub3_3457.method3944(`is`, 128, SpriteSheetCache.aTextureFormatInfo_2571, 2, true, 128)
+                    val `is` = method1331(100.toByte(), CompiledScriptCacheStatics.anObject4366, 128 * (i * 128 * 2), 32768)
+                    this.anInterface18_Impl3Array3459!![i] = aHa_Sub3_3457.method3944(`is`, 128, SpriteSheetCacheStatics.aTextureFormatInfo_2571, 2, true, 128)
                 }
                 anInterface18_Impl3Array3454 = arrayOfNulls<Renderable2dTexture>(16)
                 for (i in 0..15) {
-                    val `is` = method1331(120.toByte(), BoxedIntHolder.anObject2969, 128 * (128 * i) * 2, 32768)
-                    anInterface18_Impl3Array3454!![i] = aHa_Sub3_3457.method3944(`is`, 128, SpriteSheetCache.aTextureFormatInfo_2571, 2, true, 128)
+                    val `is` = method1331(120.toByte(), BoxedIntHolderStatics.anObject2969, 128 * (128 * i) * 2, 32768)
+                    anInterface18_Impl3Array3454!![i] = aHa_Sub3_3457.method3944(`is`, 128, SpriteSheetCacheStatics.aTextureFormatInfo_2571, 2, true, 128)
                 }
             }
-        }
-    }
-
-    companion object {
-        var anInt3450: Int = 0
-        @JvmField
-        var anInt3451: Int = 0
-        @JvmField
-        var aParticleAmountCache_3453: ParticleAmountCache? = null
-        var anInt3456: Int = 0
-        @JvmField
-        var anInt3460: Int = 0
-        var anInt3461: Int = 0
-        var aFloat3462: Float = 0f
-
-        fun method2040(i: Int, bool: Boolean) {
-            MapSceneDefLoader.anInt2482 = i
-            if (bool != true) aFloat3462 = -0.54794437f
-            anInt3450++
-            synchronized(WidgetRedrawRegion.aLruByteCache_4254!!) {
-                WidgetRedrawRegion.aLruByteCache_4254!!.method590(0)
-            }
-        }
-
-        @JvmStatic
-        fun method2042(i: Byte) {
-            if (i.toInt() == -67) aParticleAmountCache_3453 = null
         }
     }
 }

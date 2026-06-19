@@ -1,6 +1,12 @@
-import ParticleDetailOptionState.Companion.method1796
-import SoundBankPatch.Companion.method2929
-import SpriteComponent.Companion.method202
+import ParticleDetailOptionStateStatics.method1796
+import SoundBankPatchStatics.method2929
+import SpriteComponentStatics.method202
+import TextureMaterialGroupStatics.method3266
+import TextureMaterialGroupStatics.method3269
+import TextureMaterialGroupStatics.anInt9670
+import TextureMaterialGroupStatics.anInt9675
+import TextureMaterialGroupStatics.anInt9676
+import TextureMaterialGroupStatics.anInt9677
 
 /* Class348_Sub42_Sub17 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -18,11 +24,11 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
         anInt9675++
         if (this.aNpcModelTransformArray9673 != null) return true
         if (aByteArrayArray9671 == null) {
-            synchronized(RectangleRegion.aJs5Archive_1940!!) {
-                if (!RectangleRegion.aJs5Archive_1940!!.method408((-116).toByte(), anInt9669)) return false
-                val `is` = RectangleRegion.aJs5Archive_1940!!.method396(anInt9669, 0)
+            synchronized(RectangleRegionStatics.aJs5Archive_1940!!) {
+                if (!RectangleRegionStatics.aJs5Archive_1940!!.method408((-116).toByte(), anInt9669)) return false
+                val `is` = RectangleRegionStatics.aJs5Archive_1940!!.method396(anInt9669, 0)
                 aByteArrayArray9671 = arrayOfNulls<ByteArray>(`is`!!.size)
-                for (i_1_ in `is`.indices) aByteArrayArray9671!![i_1_] = RectangleRegion.aJs5Archive_1940!!.method410(-1860, anInt9669, `is`[i_1_])!!
+                for (i_1_ in `is`.indices) aByteArrayArray9671!![i_1_] = RectangleRegionStatics.aJs5Archive_1940!!.method410(-1860, anInt9669, `is`[i_1_])!!
             }
         }
         var bool = true
@@ -31,17 +37,17 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
             val class348_sub49 = ByteBuffer(`is`)
             class348_sub49.anInt7197 = 1
             val i_3_ = class348_sub49.readUnsignedShort(842397944)
-            synchronized(GlElementArrayBuffer.aJs5Archive_4843!!) {
-                bool = bool and GlElementArrayBuffer.aJs5Archive_4843!!.method421(false, i_3_)
+            synchronized(GlElementArrayBufferStatics.aJs5Archive_4843!!) {
+                bool = bool and GlElementArrayBufferStatics.aJs5Archive_4843!!.method421(false, i_3_)
             }
         }
         if (!bool) return false
         val nodeDeque = NodeDeque()
         val `is`: IntArray?
-        synchronized(RectangleRegion.aJs5Archive_1940!!) {
-            val i_4_ = RectangleRegion.aJs5Archive_1940!!.method407(0, anInt9669)
+        synchronized(RectangleRegionStatics.aJs5Archive_1940!!) {
+            val i_4_ = RectangleRegionStatics.aJs5Archive_1940!!.method407(0, anInt9669)
             this.aNpcModelTransformArray9673 = arrayOfNulls<NpcModelTransform>(i_4_)
-            `is` = RectangleRegion.aJs5Archive_1940!!.method396(anInt9669, 0)
+            `is` = RectangleRegionStatics.aJs5Archive_1940!!.method396(anInt9669, 0)
             if (i > -115) method3266(null, 123, null)
         }
         for (i_5_ in `is`!!.indices) {
@@ -59,8 +65,8 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
                 class348_sub33_8_ = nodeDeque.method1990(78.toByte()) as AnimationFrameDefinition?
             }
             if (class348_sub33 == null) {
-                synchronized(GlElementArrayBuffer.aJs5Archive_4843!!) {
-                    class348_sub33 = AnimationFrameDefinition(i_7_, GlElementArrayBuffer.aJs5Archive_4843!!.method415(73.toByte(), i_7_))
+                synchronized(GlElementArrayBufferStatics.aJs5Archive_4843!!) {
+                    class348_sub33 = AnimationFrameDefinition(i_7_, GlElementArrayBufferStatics.aJs5Archive_4843!!.method415(73.toByte(), i_7_))
                 }
                 nodeDeque.method1999(class348_sub33!!, -20180)
             }
@@ -80,52 +86,5 @@ class TextureMaterialGroup internal constructor(private val anInt9669: Int) : Ha
         anInt9677++
         if (i_10_ != 0) return true
         return (this.aNpcModelTransformArray9673!![i]!!.aBoolean131)
-    }
-
-    companion object {
-        var anInt9670: Int = 0
-        var aClass348_Sub42_Sub17Array9672: Array<TextureMaterialGroup?>? = arrayOfNulls<TextureMaterialGroup>(14)
-        var anInt9674: Int = 0
-        var anInt9675: Int = 0
-        var anInt9676: Int = 0
-        var anInt9677: Int = 0
-        @JvmField
-        var anIntArrayArray9678: Array<IntArray?>? = null
-        var aFontMetaRef_9679: FontMetaRef? = FontMetaRef(27, 7)
-        var anInt9680: Int = 0
-
-        fun method3266(var_renderer: Renderer?, i: Int, locTypeConfig: LocTypeConfig?): Int {
-            try {
-                anInt9674++
-                if (locTypeConfig!!.anInt3569 == -1) {
-                    if (locTypeConfig.anInt3575 != -1) {
-                        val class12 = var_renderer!!.aRenderConfig4579!!.method3(locTypeConfig.anInt3575, -6662)
-                        if (!class12!!.aBoolean209) return class12.aShort208.toInt()
-                    }
-                } else return locTypeConfig.anInt3569
-                if (i <= 123) return -68
-                return locTypeConfig.anInt3563
-            } catch (runtimeexception: RuntimeException) {
-                throw method2929(runtimeexception, ("gw.F(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (locTypeConfig != null) "{...}" else "null") + ')'))
-            }
-        }
-
-        @JvmStatic
-        fun method3269(bool: Boolean) {
-            aClass348_Sub42_Sub17Array9672 = null
-            aFontMetaRef_9679 = null
-            anIntArrayArray9678 = null
-            if (bool != true) Companion.method3270((-116).toByte())
-        }
-
-        fun method3270(i: Byte) {
-            if (i <= 106) method3266(null, -91, null)
-            var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as ContactEntry?)
-            while (class348_sub42_sub12 != null) {
-                if (method1796(69, class348_sub42_sub12.anInt9608)) method202(6, class348_sub42_sub12)
-                class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(115.toByte()) as ContactEntry?
-            }
-            anInt9680++
-        }
     }
 }

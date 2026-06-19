@@ -1,5 +1,5 @@
-import GlslMaterialPass.Companion.method2154
-import WidgetTextConfig.Companion.method365
+import GlslMaterialPassStatics.method2154
+import WidgetTextConfigStatics.method365
 import kotlin.concurrent.Volatile
 
 /* Class293 - Decompiled by JODE
@@ -47,7 +47,7 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
         while (!aBoolean3750 && aBoolean3745) {
             if (aCacheIndexManager_3743 == null || aCacheIndexManager_3743!!.method2360(-112)) {
                 aBoolean3744 = false
-                aLong3742 = MinimapLineDrawer.aNanoTimer_5262!!.method446(1)
+                aLong3742 = MinimapLineDrawerStatics.aNanoTimer_5262!!.method446(1)
                 synchronized(this) {
                     try {
                         (this as Object).wait()
@@ -68,12 +68,12 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
                 } else {
                     val i = (class318 as SceneModelBuilder).anInt6394
                     if (i >= 1 && i <= 4) {
-                        val var_s = NativeSprite.aTerrainTileArray5191!![i - 1]
-                        for (i_0_ in 0..<(NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084)) {
-                            for (i_1_ in 0..<(NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084)) {
+                        val var_s = NativeSpriteStatics.aTerrainTileArray5191!![i - 1]
+                        for (i_0_ in 0..<(NpcActorEntityStatics.anInt10084 + NpcActorEntityStatics.anInt10084)) {
+                            for (i_1_ in 0..<(NpcActorEntityStatics.anInt10084 + NpcActorEntityStatics.anInt10084)) {
                                 if (OverlayColorTable.aBooleanArrayArrayArray1751!![i - 1]!![i_0_]!![i_1_]) {
-                                    val i_2_ = (DisplayModeOptionState.anInt6111 - NpcActorEntity.anInt10084 + i_0_)
-                                    val i_3_ = (GlIndexBufferArb.anInt8502 - NpcActorEntity.anInt10084 + i_1_)
+                                    val i_2_ = (DisplayModeOptionStateStatics.anInt6111 - NpcActorEntityStatics.anInt10084 + i_0_)
+                                    val i_3_ = (GlIndexBufferArbStatics.anInt8502 - NpcActorEntityStatics.anInt10084 + i_1_)
                                     if (i_2_ >= 0 && i_2_ < var_s!!.anInt4587 && i_3_ >= 0 && i_3_ < var_s.anInt4590) {
                                         NativeLibraryState.aRenderer171!!.H(i_2_ shl Tooltip.anInt4459, var_s.method3982((-86).toByte(), i_3_, i_2_), i_3_ shl Tooltip.anInt4459, anIntArray3747)
                                         if (method2154(anIntArray3747[0]) == anInt3749 - 1) var_s.method3979(i_2_, i_3_)

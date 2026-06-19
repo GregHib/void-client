@@ -1,6 +1,12 @@
-import SceneEntityModel.Companion.method2503
+import SceneEntityModelStatics.method2503
 import SpriteBlitter.method880
-import jaclib.memory.Stream.Companion.c
+import jaclib.memory.StreamStatics.c
+import VideoStreamDecoderStatics.anInt4110
+import VideoStreamDecoderStatics.anInt4114
+import VideoStreamDecoderStatics.anInt4115
+import VideoStreamDecoderStatics.anInt4119
+import VideoStreamDecoderStatics.anInt4120
+import VideoStreamDecoderStatics.anInt4125
 
 /*
  * Class330
@@ -95,7 +101,7 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
             i_20_ += i_23_
         }
         if (i_17_ > 0 && i_16_ > 0) {
-            BoxBlurTextureNode.method3146(i_18_, i_17_, (-116).toByte(), i_20_, i_16_, i_14_, this.aByteArray4112, (var_r_Sub1.aByteArray10471), i_15_)
+            BoxBlurTextureNodeStatics.method3146(i_18_, i_17_, (-116).toByte(), i_20_, i_16_, i_14_, this.aByteArray4112, (var_r_Sub1.aByteArray10471), i_15_)
             method2634(i, -1, i_13_, i_16_, i_17_)
         }
     }
@@ -126,7 +132,7 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
                                         val class101_sub2 = aHa_Sub3_4111.method3820(false)
                                         class101_sub2.method932(1.0f, f, f, (-65).toByte())
                                         class101_sub2.method891(-i_30_, -i_27_, 0)
-                                        aHa_Sub3_4111.method3853(i xor 0x9f.inv(), LightDetailOptionState.aConfigFlagUtil_6030)
+                                        aHa_Sub3_4111.method3853(i xor 0x9f.inv(), LightDetailOptionStateStatics.aConfigFlagUtil_6030)
                                         aTerrainChunkBuilderArrayArray4122!![i_30_]!![i_27_]!!.method871(116.toByte())
                                         break@while_119_
                                     }
@@ -189,7 +195,7 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
                                 val class101_sub2 = aHa_Sub3_4111.method3820(false)
                                 class101_sub2.method932(1.0f, f, f, (-62).toByte())
                                 class101_sub2.method891(-i_38_, -i_35_, 0)
-                                aHa_Sub3_4111.method3853(i xor 0x9f.inv(), (LightDetailOptionState.aConfigFlagUtil_6030))
+                                aHa_Sub3_4111.method3853(i xor 0x9f.inv(), (LightDetailOptionStateStatics.aConfigFlagUtil_6030))
                                 class97.method875(-82, interface5_impl2, i_39_ / 3)
                             }
                         }
@@ -291,26 +297,7 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
             anInt4121 = aS_Sub3_4116.anInt4587 shr anInt4124
             anInt4118 = aS_Sub3_4116.anInt4590 shr anInt4124
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("dg.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        var anInt4110: Int = 0
-        var anInt4114: Int = 0
-        var anInt4115: Int = 0
-        var aBoolean4117: Boolean = false
-        var anInt4119: Int = 0
-        var anInt4120: Int = 0
-        var anInt4125: Int = 0
-        var aIntRange_4126: IntRange? = IntRange(5, 8)
-        @JvmField
-        var aBoolean4127: Boolean = false
-
-        @JvmStatic
-        fun method2631(i: Int) {
-            val i_47_ = -46 / ((65 - i) / 61)
-            aIntRange_4126 = null
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("dg.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ')'))
         }
     }
 }

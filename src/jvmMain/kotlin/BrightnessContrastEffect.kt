@@ -1,3 +1,8 @@
+import BrightnessContrastEffectStatics.anInt9174
+import BrightnessContrastEffectStatics.anInt9177
+import BrightnessContrastEffectStatics.anInt9178
+import BrightnessContrastEffectStatics.anInt9179
+
 /* Class348_Sub40_Sub10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -36,7 +41,7 @@ class BrightnessContrastEffect : AbstractProceduralTextureNode(1, false) {
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_3_ = this.method3048(i, 633706337, 0)!!
             var i_4_ = 0
-            while (DisplaceTextureNode.Companion.anInt9139 > i_4_) {
+            while (DisplaceTextureNodeStatics.anInt9139 > i_4_) {
                 `is`[i_4_] = anInt9176 - -(anInt9182 * is_3_[i_4_] shr 12)
                 i_4_++
             }
@@ -57,7 +62,7 @@ class BrightnessContrastEffect : AbstractProceduralTextureNode(1, false) {
             val is_11_ = `is`[1]!!
             val is_12_ = `is`[2]!!
             var i_13_ = 0
-            while ((DisplaceTextureNode.Companion.anInt9139 > i_13_)) {
+            while ((DisplaceTextureNodeStatics.anInt9139 > i_13_)) {
                 is_10_[i_13_] = (anInt9182 * is_7_[i_13_] shr 12) + anInt9176
                 is_11_[i_13_] = (anInt9182 * is_8_[i_13_] shr 12) + anInt9176
                 is_12_[i_13_] = (is_9_[i_13_] * anInt9182 shr 12) + anInt9176
@@ -65,36 +70,5 @@ class BrightnessContrastEffect : AbstractProceduralTextureNode(1, false) {
             }
         }
         return `is`
-    }
-
-    companion object {
-        @JvmField
-        var anInt9174: Int = 0
-        @JvmField
-        var anInt9177: Int = 0
-        @JvmField
-        var anInt9178: Int = 0
-        @JvmField
-        var anInt9179: Int = 0
-        var aCacheLruCache_9180: CacheLruCache?
-        @JvmField
-        var aBoolean9181: Boolean = false
-        @JvmField
-        var anIntArray9183: IntArray?
-        @JvmField
-        var aBoolean9184: Boolean
-
-        @JvmStatic
-        fun method3074(i: Int) {
-            anIntArray9183 = null
-            aCacheLruCache_9180 = null
-            if (i != 0) anIntArray9183 = null
-        }
-
-        init {
-            aCacheLruCache_9180 = CacheLruCache(64)
-            anIntArray9183 = IntArray(4)
-            aBoolean9184 = false
-        }
     }
 }

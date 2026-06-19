@@ -1,14 +1,22 @@
 import jaclib.peer.hb
 import jagdx.*
-import jagdx.IDirect3D.Companion.a
+import jagdx.IDirect3DStatics.a
 import jagdx.ue.a
 import java.awt.Canvas
 import java.awt.Rectangle
+import D3dRenderDeviceStatics.method3952
+import D3dRenderDeviceStatics.method3953
+import D3dRenderDeviceStatics.method3955
+import D3dRenderDeviceStatics.method3958
+import D3dRenderDeviceStatics.method3961
+import D3dRenderDeviceStatics.method3963
+import D3dRenderDeviceStatics.aFloatArray9797
+import D3dRenderDeviceStatics.anIntArray9809
 
 /*
  * Class378
  */
-class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: hb, idirect3d: IDirect3D?, idirect3ddevice: IDirect3DDevice, d3dSwapChainWrapper: D3dSwapChainWrapper?, d3dpresent_parameters: D3DPRESENT_PARAMETERS?, d3dcaps: D3DCAPS?, var_renderConfig: RenderConfig?, js5Archive: Js5Archive?, i_39_: Int) : NativeRenderer(canvas, d3dSwapChainWrapper, var_renderConfig, js5Archive, i_39_, 0) {
+class D3dRenderDevice internal constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: hb, idirect3d: IDirect3D?, idirect3ddevice: IDirect3DDevice, d3dSwapChainWrapper: D3dSwapChainWrapper?, d3dpresent_parameters: D3DPRESENT_PARAMETERS?, d3dcaps: D3DCAPS?, var_renderConfig: RenderConfig?, js5Archive: Js5Archive?, i_39_: Int) : NativeRenderer(canvas, d3dSwapChainWrapper, var_renderConfig, js5Archive, i_39_, 0) {
     private val aBooleanArray9784: BooleanArray
     private var anInt9785 = 0
     private var aBooleanArray9786: BooleanArray?
@@ -244,7 +252,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
 
     override fun method3938(cameraRotationStub: CameraRotationStub?, i: Int, interface5_impl2: IndexBufferResource?, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
         this.anIDirect3DDevice9810!!.SetIndices((interface5_impl2 as D3dIndexBuffer).anIDirect3DIndexBuffer8517)
-        this.anIDirect3DDevice9810!!.DrawIndexedPrimitive(Companion.method3953(cameraRotationStub, (-111).toByte()), 0, i_24_, i_26_, i_25_, i)
+        this.anIDirect3DDevice9810!!.DrawIndexedPrimitive(method3953(cameraRotationStub, (-111).toByte()), 0, i_24_, i_26_, i_25_, i)
         if (i_27_ < 46) method3931(true, null, null)
     }
 
@@ -422,7 +430,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
 
     override fun method3840(i: Int, bool: Boolean): IndexBufferResource {
         if (i != -28633) method3937(102.toByte())
-        return D3dIndexBuffer(this, MovementDirection.aMovementDirection_1184, bool)
+        return D3dIndexBuffer(this, MovementDirectionStatics.aMovementDirection_1184, bool)
     }
 
     override fun GA(i: Int) {
@@ -484,7 +492,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
     }
 
     override fun method3899(i: Int, i_45_: Int, cameraRotationStub: CameraRotationStub?, bool: Boolean) {
-        this.anIDirect3DDevice9810!!.DrawPrimitive(Companion.method3953(cameraRotationStub, (-111).toByte()), i_45_, i)
+        this.anIDirect3DDevice9810!!.DrawPrimitive(method3953(cameraRotationStub, (-111).toByte()), i_45_, i)
         if (bool != true) aClass209Array9795 = null
     }
 
@@ -541,7 +549,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
             d3dSwapChainWrapper.method496(84.toByte())
             aD3DPRESENT_PARAMETERS9800!!.BackBufferHeight = 0
             aD3DPRESENT_PARAMETERS9800!!.BackBufferWidth = 0
-            if (Companion.method3964(aD3DPRESENT_PARAMETERS9800!!, 0, anInt9799, anIDirect3D9793!!, anInt9807, this.anInt8117)) {
+            if (D3dRenderDeviceStatics.method3964(aD3DPRESENT_PARAMETERS9800!!, 0, anInt9799, anIDirect3D9793!!, anInt9807, this.anInt8117)) {
                 val i_53_ = this.anIDirect3DDevice9810!!.Reset(aD3DPRESENT_PARAMETERS9800)
                 if (a(i_53_, false)) {
                     d3dSwapChainWrapper.method497(this.anIDirect3DDevice9810!!.b(0), (-107).toByte(), this.anIDirect3DDevice9810!!.c())
@@ -630,9 +638,9 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
 
     override fun method3871(cameraNodeList: CameraNodeList?, i: Int) {
         var i_68_ = i
-        if (ItemModelDefinition.aCameraNodeList_430 == cameraNodeList) i_68_ = 65536
-        else if (NativeShaderProgram.aCameraNodeList_9773 == cameraNodeList) i_68_ = 131072
-        else if (cameraNodeList == NpcDefinitionCache.aCameraNodeList_3314) i_68_ = 196608
+        if (ItemModelDefinitionStatics.aCameraNodeList_430 == cameraNodeList) i_68_ = 65536
+        else if (NativeShaderProgramStatics.aCameraNodeList_9773 == cameraNodeList) i_68_ = 131072
+        else if (cameraNodeList == NpcDefinitionCacheStatics.aCameraNodeList_3314) i_68_ = 196608
         this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 11, this.anInt8175 or i_68_)
     }
 
@@ -685,8 +693,8 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
     }
 
     override fun method3940(i: Int) {
-        if (anIDirect3DVertexShader9794 == null && ((this.aConfigFlagUtilArray8113[this.anInt8175]) != ParticleEmitterListNode.aConfigFlagUtil_9685)) {
-            if (LightDetailOptionState.aConfigFlagUtil_6030 == (this.aConfigFlagUtilArray8113[this.anInt8175])) this.anIDirect3DDevice9810!!.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175]!!.method928(aFloatArray9797!!, i))
+        if (anIDirect3DVertexShader9794 == null && ((this.aConfigFlagUtilArray8113[this.anInt8175]) != ParticleEmitterListNodeStatics.aConfigFlagUtil_9685)) {
+            if (LightDetailOptionStateStatics.aConfigFlagUtil_6030 == (this.aConfigFlagUtilArray8113[this.anInt8175])) this.anIDirect3DDevice9810!!.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175]!!.method928(aFloatArray9797!!, i))
             else this.anIDirect3DDevice9810!!.SetTransform(16 - -this.anInt8175, this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(aFloatArray9797!!, i xor 0x1))
             val i_72_: Int = method3963(594, (this.aConfigFlagUtilArray8113[this.anInt8175]))
             if (anIntArray9805!![this.anInt8175] != i_72_) {
@@ -723,13 +731,13 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
 
     override fun method3950(i: Int) {
         if (i != 0) anIntArray9809 = null
-        if (ClientMachineInfo.aObjectByteSerializerHolder_6602 == this.aObjectByteSerializerHolder_8163) {
+        if (ClientMachineInfoStatics.aObjectByteSerializerHolder_6602 == this.aObjectByteSerializerHolder_8163) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 5)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 6)
-        } else if (this.aObjectByteSerializerHolder_8163 == CollisionFlagQuery.aObjectByteSerializerHolder_1201) {
+        } else if (this.aObjectByteSerializerHolder_8163 == CollisionFlagQueryStatics.aObjectByteSerializerHolder_1201) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 2)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 2)
-        } else if (BoundsConstraintEntry.aObjectByteSerializerHolder_5169 == this.aObjectByteSerializerHolder_8163) {
+        } else if (BoundsConstraintEntryStatics.aObjectByteSerializerHolder_5169 == this.aObjectByteSerializerHolder_8163) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 9)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 2)
         }
@@ -757,169 +765,5 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
     override fun ya() {
         method3946(-32, true)
         this.anIDirect3DDevice9810!!.Clear(2, 0, 1.0f, 0)
-    }
-
-    companion object {
-        private var anIntArray9790: IntArray? = intArrayOf(22, 23)
-        private var aFloatArray9797: FloatArray? = FloatArray(16)
-        private var anIntArray9809: IntArray? = intArrayOf(77, 80)
-        private fun method3952(class209: UnusedToStringStub?, i: Byte): Int {
-            if (PlayerSequenceSelector.aClass209_1212 == class209) return 2
-            if (FrameBufferObject.aClass209_4874 == class209) return 1
-            if (i <= 57) anIntArray9790 = null
-            throw IllegalArgumentException()
-        }
-
-        private fun method3953(cameraRotationStub: CameraRotationStub?, i: Byte): Int {
-            if (i.toInt() != -111) Companion.method3952(null, (-118).toByte())
-            if (cameraRotationStub == TileTransform.aCameraRotationStub_3217) return 2
-            if (GlBloomEffect.aCameraRotationStub_8832 == cameraRotationStub) return 3
-            if (LocTypeConfig.aCameraRotationStub_3572 == cameraRotationStub) return 1
-            if (cameraRotationStub == VideoAdChecker.aCameraRotationStub_3181) return 4
-            if (AsyncResourceRequest.aCameraRotationStub_9661 == cameraRotationStub) return 6
-            if (cameraRotationStub == NativeTerrainTile.aCameraRotationStub_8320) return 5
-            throw IllegalArgumentException("")
-        }
-
-        private fun method3955(i: Int, renderConfigFactory: RenderConfigFactory?): Int {
-            if (RenderQueueState.aRenderConfigFactory_6519 == renderConfigFactory) return 2
-            if (ParticleSystemState.aRenderConfigFactory_2207 == renderConfigFactory) return 4
-            if (MediaStreamClient.aRenderConfigFactory_3196 != renderConfigFactory) {
-                if (renderConfigFactory != TheoraVideoStream.aRenderConfigFactory_9011) {
-                    if (renderConfigFactory == RegionTileNode.aRenderConfigFactory_6644) return 10
-                } else return 7
-            } else return 26
-            if (i <= 16) method3955(-116, null)
-            throw IllegalArgumentException()
-        }
-
-        @JvmStatic
-        fun createToolkit(canvas: Canvas?, var_renderConfig: RenderConfig?, js5Archive: Js5Archive?, integer: Int): Renderer {
-            var d3dRenderDevice: D3dRenderDevice? = null
-            val d3dRenderDevice_19_: D3dRenderDevice?
-            try {
-                val i = 0
-                val i_20_ = 1
-                val var_hb = hb()
-                val idirect3d = a(-2147483616, var_hb)
-                val d3dcaps = idirect3d.b(i, i_20_)
-                if ((d3dcaps.RasterCaps and 0x1000000) == 0) throw RuntimeException("")
-                if (d3dcaps.MaxSimultaneousTextures < 2) throw RuntimeException("")
-                if ((0x2 and d3dcaps.TextureOpCaps) == 0) throw RuntimeException("")
-                if ((d3dcaps.TextureOpCaps and 0x8) == 0) throw RuntimeException("")
-                if ((0x40 and d3dcaps.TextureOpCaps) == 0) throw RuntimeException("")
-                if ((0x200 and d3dcaps.TextureOpCaps) == 0) throw RuntimeException("")
-                if ((0x2000000 and d3dcaps.TextureOpCaps) == 0) throw RuntimeException("")
-                if (0 == (0x10 and (d3dcaps.DestBlendCaps and d3dcaps.SrcBlendCaps))) throw RuntimeException("")
-                if ((d3dcaps.DestBlendCaps and d3dcaps.SrcBlendCaps and 0x20) == 0) throw RuntimeException("")
-                if (0 == (d3dcaps.SrcBlendCaps and d3dcaps.DestBlendCaps and 0x2)) throw RuntimeException("")
-                if (0 < d3dcaps.MaxActiveLights && 2 > d3dcaps.MaxActiveLights) throw RuntimeException("")
-                if (d3dcaps.MaxStreams < 5) throw RuntimeException("")
-                val d3dpresent_parameters = D3DPRESENT_PARAMETERS(canvas)
-                if (!method3964(d3dpresent_parameters, 0, i, idirect3d, i_20_, integer)) throw RuntimeException("")
-                d3dpresent_parameters.PresentationInterval = -2147483648
-                d3dpresent_parameters.EnableAutoDepthStencil = true
-                d3dpresent_parameters.Windowed = true
-                var i_21_ = 2
-                if ((0x100000 and d3dcaps.DevCaps) != 0) i_21_ = i_21_ or 0x10
-                val `object`: Any? = null
-                var idirect3ddevice: IDirect3DDevice?
-                try {
-                    idirect3ddevice = idirect3d.a(i, i_20_, canvas, i_21_ or 0x40, d3dpresent_parameters)
-                } catch (var_fda: fda) {
-                    idirect3ddevice = idirect3d.a(i, i_20_, canvas, i_21_ or 0x20, d3dpresent_parameters)
-                }
-                val d3dSwapChainWrapper = D3dSwapChainWrapper(idirect3ddevice.b(0), idirect3ddevice.c())
-                d3dRenderDevice = D3dRenderDevice(i, i_20_, canvas, var_hb, idirect3d, idirect3ddevice, d3dSwapChainWrapper, d3dpresent_parameters, d3dcaps, var_renderConfig, js5Archive, integer)
-                d3dRenderDevice.method3930(26.toByte())
-                d3dRenderDevice_19_ = d3dRenderDevice
-            } catch (runtimeexception: RuntimeException) {
-                if (d3dRenderDevice != null) d3dRenderDevice.method3652()
-                throw runtimeexception
-            }
-            return d3dRenderDevice_19_
-        }
-
-        @JvmStatic
-        fun method3958(i: Int, movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?): Int {
-            if (movementDirection == MovementDirection.aMovementDirection_1183) {
-                if (TimedRecordAccessor.aTextureFormatInfo_7103 != textureFormatInfo) {
-                    if (GroundItemRenderState.aTextureFormatInfo_1662 == textureFormatInfo) return 21
-                    if (ClampTextureNode.aTextureFormatInfo_9471 == textureFormatInfo) return 28
-                    if (CellNoiseTextureNode.aTextureFormatInfo_9303 == textureFormatInfo) return 50
-                    if (textureFormatInfo == SpriteSheetCache.aTextureFormatInfo_2571) return 51
-                    if (textureFormatInfo == SceneLinkedListNode.aTextureFormatInfo_3977) return 77
-                } else return 22
-            }
-            if (i != 22) anIntArray9790 = null
-            throw IllegalArgumentException("")
-        }
-
-        private fun method3961(trigLookupTables: TrigLookupTables?, i: Int): Int {
-            if (i != 2) aFloatArray9797 = null
-            if (WidgetRedrawRegion.aTrigLookupTables_4247 == trigLookupTables) return 2
-            if (trigLookupTables == GlIndexBufferArb.aTrigLookupTables_8503) return 0
-            if (SceneObjectEntity.aTrigLookupTables_8737 != trigLookupTables) {
-                if (RenderListTextureNode.aTrigLookupTables_9485 == trigLookupTables) return 3
-            } else return 1
-            throw IllegalArgumentException()
-        }
-
-        private fun method3963(i: Int, configFlagUtil: ConfigFlagUtil?): Int {
-            if (i != 594) return 7
-            if (configFlagUtil == GlElementArrayBuffer.aConfigFlagUtil_4835) return 1
-            if (configFlagUtil != LightDetailOptionState.aConfigFlagUtil_6030) {
-                if (configFlagUtil != ClampTextureNode.aConfigFlagUtil_9477) {
-                    if (MapSceneTile.aConfigFlagUtil_1051 == configFlagUtil) return 4
-                    if (configFlagUtil == WaterDetailOptionState.aConfigFlagUtil_5989) return 256
-                } else return 3
-            } else return 2
-            return 0
-        }
-
-        private fun method3964(d3dpresent_parameters: D3DPRESENT_PARAMETERS, i: Int, j: Int, idirect3d: IDirect3D, k: Int, l: Int): Boolean {
-            var l = l
-            try {
-                var i1: Int
-                var j1: Int
-                var k1: Int
-                i1 = 0
-                j1 = 0
-                k1 = i
-                val d3ddisplaymode = D3DDISPLAYMODE()
-                if (a(97.toByte(), idirect3d.a(j, d3ddisplaymode))) return false
-                label0@ while (l >= 0) {
-                    if (1 == l) {
-                        l--
-                        continue
-                    }
-                    k1 = l + 0
-                    label1@ for (l1 in anIntArray9790!!.indices) {
-                        if (idirect3d.CheckDeviceType(j, k, d3ddisplaymode.Format, anIntArray9790!![l1], true) != 0 || idirect3d.CheckDeviceFormat(j, k, d3ddisplaymode.Format, 1, 1, anIntArray9790!![l1]) != 0 || l != 0 && idirect3d.CheckDeviceMultiSampleType(j, k, anIntArray9790!![l1], true, k1) != 0) continue
-                        var i2 = 0
-                        do {
-                            if (anIntArray9809!!.size <= i2) continue@label1
-                            if (idirect3d.CheckDeviceFormat(j, k, d3ddisplaymode.Format, 2, 1, anIntArray9809!![i2]) == 0 && idirect3d.CheckDepthStencilMatch(j, k, d3ddisplaymode.Format, anIntArray9790!![l1], anIntArray9809!![i2]) == 0 && (l == 0 || idirect3d.CheckDeviceMultiSampleType(j, k, anIntArray9809!![l1], true, k1) == 0)) {
-                                i1 = anIntArray9809!![i2]
-                                j1 = anIntArray9790!![l1]
-                                break@label0
-                            }
-                            i2++
-                        } while (true)
-                    }
-
-                    l--
-                }
-
-                if (l < 0 || j1 == 0 || i1 == 0) return false
-                d3dpresent_parameters.MultiSampleType = k1
-                d3dpresent_parameters.AutoDepthStencilFormat = i1
-                d3dpresent_parameters.MultiSampleQuality = 0
-                d3dpresent_parameters.BackBufferFormat = j1
-                return true
-            } catch (t: Throwable) {
-                return false
-            }
-        }
     }
 }

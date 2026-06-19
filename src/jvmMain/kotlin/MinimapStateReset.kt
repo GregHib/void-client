@@ -8,15 +8,15 @@ object MinimapStateReset {
     var anInt1872: Int = 0
 
     fun method1122(i: Int) {
-        for (i_0_ in i..4) SpotAnimDefinition.aBooleanArray2374!![i_0_] = false
+        for (i_0_ in i..4) SpotAnimDefinitionStatics.aBooleanArray2374!![i_0_] = false
         anInt1870++
-        SequencedWallEntity.anInt10163 = -1
-        NativeLibraryState.anInt167 = SequencedWallEntity.anInt10163
-        WeaveTextureNode.anInt9282 = 1
-        NativeShaderProgram.anInt9775 = -1
-        BloomGraphicsOptionState.anInt5973 = 0
-        MapArchiveSource.anInt4803 = -1
-        GlGroundShaderPass.anInt7403 = 0
+        SequencedWallEntityStatics.anInt10163 = -1
+        NativeLibraryState.anInt167 = SequencedWallEntityStatics.anInt10163
+        WeaveTextureNodeStatics.anInt9282 = 1
+        NativeShaderProgramStatics.anInt9775 = -1
+        BloomGraphicsOptionStateStatics.anInt5973 = 0
+        MapArchiveSourceStatics.anInt4803 = -1
+        GlGroundShaderPassStatics.anInt7403 = 0
     }
 
     @JvmStatic

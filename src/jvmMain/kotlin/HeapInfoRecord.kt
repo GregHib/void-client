@@ -1,5 +1,7 @@
 import PlayerUpdateDecoder.method1142
 import java.io.File
+import HeapInfoRecordStatics.aCircleRasterizer_4938
+import HeapInfoRecordStatics.anInt4941
 
 /*
  * Class158
@@ -21,7 +23,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
     override fun method51(i: Byte): ProjectileFactory? {
         anInt4941++
         if (i <= 116) aCircleRasterizer_4938 = null
-        return SpotAnimVector.aProjectileFactory_2307
+        return SpotAnimVectorStatics.aProjectileFactory_2307
     }
 
     init {
@@ -40,46 +42,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
             this.anInt4935 = i_8_
             this.anInt4937 = i_4_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ot.<init>(" + (if (string != null) "{...}" else "null") + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
-        }
-    }
-
-    companion object {
-        var anInt4933: Int = 0
-        var aHashtable_4934: Hashtable? = Hashtable(8)
-        @JvmField
-        var aCircleRasterizer_4938: CircleRasterizer? = null
-        var anInt4939: Int = 0
-        var anInt4941: Int = 0
-
-        /*synthetic*/
-        var aClass4949: Class<*>? = null
-
-        fun method1247(file: File, bool: Boolean, bool_0_: Boolean) {
-            if (HeapDiagnosticsHolder.anObject2256 == null) method1142(26.toByte())
-            anInt4939++
-            if (bool_0_ != false) aCircleRasterizer_4938 = null
-            try {
-//                val method = (HotSpotDiagnosticMXBean::class.java.getDeclaredMethod("dumpHeap", (if (aClass4949 != null) aClass4949 else (String::class.java.also { aClass4949 = it })), java.lang.Boolean.TYPE))
-//                method.invoke(Class168.anObject2256, file.getAbsolutePath(), bool)
-            } catch (exception: Exception) {
-                println("HeapDump error:")
-                exception.printStackTrace()
-            }
-        }
-
-        @JvmStatic
-        fun method1248(i: Int): Array<ScreenAnchorAlignment?> {
-            anInt4933++
-            if (i < 11) aCircleRasterizer_4938 = null
-            return (arrayOf<ScreenAnchorAlignment?>(ScrollbarComponent.aScreenAnchorAlignment_8344, SoftwareSpriteRaster.aScreenAnchorAlignment_1620, ProjectileFactory.aScreenAnchorAlignment_2893))
-        }
-
-        @JvmStatic
-        fun method1249(bool: Boolean) {
-            if (bool != true) method1248(-21)
-            aHashtable_4934 = null
-            aCircleRasterizer_4938 = null
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ot.<init>(" + (if (string != null) "{...}" else "null") + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
         }
     }
 }

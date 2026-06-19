@@ -1,6 +1,8 @@
-import jaggl.OpenGL.Companion.glPixelStorei
-import jaggl.OpenGL.Companion.glTexImage1Dub
-import jaggl.OpenGL.Companion.glTexParameteri
+import jaggl.OpenGLStatics.glPixelStorei
+import jaggl.OpenGLStatics.glTexImage1Dub
+import jaggl.OpenGLStatics.glTexParameteri
+import GlTexture1DStatics.anInt8554
+import GlTexture1DStatics.anInt8555
 
 class GlTexture1D internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_: Int, `is`: ByteArray?, i_1_: Int) : GlTexture(var_ha_Sub2, 3552, i, i_0_, false) {
     private val anInt8556: Int
@@ -24,45 +26,7 @@ class GlTexture1D internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_
             glPixelStorei(3317, 4)
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wha.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var aInputTracker_8552: InputTracker? = null
-        @JvmField
-        var aRectangleRegion_8553: RectangleRegion?
-        @JvmField
-        var anInt8554: Int = 0
-        @JvmField
-        var anInt8555: Int = 0
-        @JvmField
-        var anIntArray8557: IntArray? = IntArray(500)
-        @JvmField
-        var aBoolean8558: Boolean = false
-        @JvmField
-        var anInt8559: Int = 0
-        @JvmField
-        var aFloat8560: Float = 0f
-
-        @JvmStatic
-        fun method1973(i: Int) {
-            aRectangleRegion_8553 = null
-            aInputTracker_8552 = null
-            if (i == 24885) anIntArray8557 = null
-        }
-
-        @JvmStatic
-        fun method1974(i: Byte, i_3_: Int, bool: Boolean): ModelKeyBuilder? {
-            anInt8559++
-            val i_4_ = -43 / ((-65 - i) / 55)
-            val l = (i_3_ or (if (bool) -2147483648 else 0)).toLong()
-            return (AbstractProceduralTextureNode.aHashtable_7041!!.method3480(l, -6008) as ModelKeyBuilder?)
-        }
-
-        init {
-            aRectangleRegion_8553 = RectangleRegion(9, 0, 4, 1)
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wha.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ')'))
         }
     }
 }

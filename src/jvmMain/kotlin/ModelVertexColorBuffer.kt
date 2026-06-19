@@ -1,7 +1,15 @@
 import jaclib.memory.Stream
-import jaclib.memory.Stream.Companion.c
+import jaclib.memory.StreamStatics.c
 import jaclib.memory.heap.NativeHeapBuffer
 import java.awt.Component
+import ModelVertexColorBufferStatics.method2743
+import ModelVertexColorBufferStatics.anInt6570
+import ModelVertexColorBufferStatics.anInt6576
+import ModelVertexColorBufferStatics.anInt6578
+import ModelVertexColorBufferStatics.anInt6580
+import ModelVertexColorBufferStatics.anInt6583
+import ModelVertexColorBufferStatics.aFloat6586
+import ModelVertexColorBufferStatics.anInt6588
 
 class ModelVertexColorBuffer internal constructor(private val aS_Sub3_6566: NativeTerrainTile, var anInt6567: Int, i_43_: Int, var anInt6571: Int, var anInt6575: Int, var anInt6569: Int) : LinkedListNode() {
     private var aNativeHeapBuffer6572: NativeHeapBuffer? = null
@@ -83,7 +91,7 @@ class ModelVertexColorBuffer internal constructor(private val aS_Sub3_6566: Nati
                 if (aHa_Sub3_6590.aBoolean8160) aHa_Sub3_6590.EA(2147483647, this.anInt6571, this.anInt6575, this.anInt6569)
                 val class101_sub2 = aHa_Sub3_6590.method3820(false)
                 class101_sub2.method932(1.0f, 1.0f / this.aFloat6582, 1.0f / this.aFloat6582, (-80).toByte())
-                aHa_Sub3_6590.method3853(i + -2, LightDetailOptionState.aConfigFlagUtil_6030)
+                aHa_Sub3_6590.method3853(i + -2, LightDetailOptionStateStatics.aConfigFlagUtil_6030)
                 aHa_Sub3_6590.method3925(55, anInterface5_Impl1_6577, 1)
                 aHa_Sub3_6590.method3862(i + 30, (aS_Sub3_6566.aModelBatchBase_8324))
                 aHa_Sub3_6590.method3938(VideoAdChecker.aCameraRotationStub_3181, i_2_, interface5_impl2, i_3_, 0, 1 + -i_3_ + i_4_, 104)
@@ -161,7 +169,7 @@ class ModelVertexColorBuffer internal constructor(private val aS_Sub3_6566: Nati
 
     fun method2742(i: Int, i_38_: Int, i_39_: Int, i_40_: Byte) {
         anInt6570++
-        anIntArray6573[i_38_ * aS_Sub3_6566.anInt4587 - -i_39_] = BoundsConstraintEntry.method2057((anIntArray6573[(i_38_ * aS_Sub3_6566.anInt4587 - -i_39_)]), 1 shl i)
+        anIntArray6573[i_38_ * aS_Sub3_6566.anInt4587 - -i_39_] = BoundsConstraintEntryStatics.method2057((anIntArray6573[(i_38_ * aS_Sub3_6566.anInt4587 - -i_39_)]), 1 shl i)
         if (i_40_ > -65) aFloat6586 = -1.0413289f
         this.anInt6589++
     }
@@ -177,54 +185,5 @@ class ModelVertexColorBuffer internal constructor(private val aS_Sub3_6566: Nati
         this.aFloat6582 = i_43_.toFloat()
         aHa_Sub3_6590 = aS_Sub3_6566.aHa_Sub3_8322
         anIntArray6573 = IntArray((aS_Sub3_6566.anInt4590 * aS_Sub3_6566.anInt4587))
-    }
-
-    companion object {
-        @JvmField
-        var anInt6568: Int = 0
-        @JvmField
-        var anInt6570: Int = 0
-        @JvmField
-        var anInt6576: Int = 0
-        @JvmField
-        var anInt6578: Int = 0
-        @JvmField
-        var anInt6579: Int = 0
-        @JvmField
-        var anInt6580: Int = 0
-        @JvmField
-        var aSystemFontGlyphs_6581: SystemFontGlyphs? = null
-        @JvmField
-        var anInt6583: Int = 0
-        @JvmField
-        var aIntRange_6584: IntRange? = null
-        @JvmField
-        var anInt6585: Int = 0
-        @JvmField
-        var aFloat6586: Float = 0f
-        @JvmField
-        var anInt6587: Int = 0
-        @JvmField
-        var anInt6588: Int = 0
-        @JvmStatic
-        fun method2738(i: Byte) {
-            aIntRange_6584 = null
-            aSystemFontGlyphs_6581 = null
-            val i_21_ = 89 / ((19 - i) / 43)
-        }
-
-        @JvmStatic
-        fun method2739(i: Int) {
-            GrayscaleEffect.aNodeDeque_9201!!.method1996(98)
-            anInt6579++
-            IntPair.anInt6969 = i
-        }
-
-        @JvmStatic
-        fun method2743(component: Component?, i: Byte): KeyboardInputSource {
-            anInt6587++
-            val i_41_ = -16 % ((i - -58) / 63)
-            return AwtKeyboardListener(component)
-        }
     }
 }

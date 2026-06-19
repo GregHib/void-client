@@ -1,9 +1,14 @@
-import BrightnessOptionState.Companion.method1745
-import GlVertexBufferArb.Companion.method2127
-import WaterMaterialPass.Companion.method2148
-import NoiseTextureGenerator.Companion.method544
+import BrightnessOptionStateStatics.method1745
+import GlVertexBufferArbStatics.method2127
+import WaterMaterialPassStatics.method2148
+import NoiseTextureGeneratorStatics.method544
 import kotlin.math.max
 import kotlin.math.min
+import HslAdjustTextureNodeStatics.anInt9384
+import HslAdjustTextureNodeStatics.anInt9393
+import HslAdjustTextureNodeStatics.anInt9394
+import HslAdjustTextureNodeStatics.anInt9397
+import HslAdjustTextureNodeStatics.anInt9399
 
 /* Class348_Sub40_Sub30 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -30,7 +35,7 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_14_ = `is`[1]!!
             val is_15_ = `is`[2]!!
             var i_16_ = 0
-            while ((i_16_ < DisplaceTextureNode.Companion.anInt9139)) {
+            while ((i_16_ < DisplaceTextureNodeStatics.anInt9139)) {
                 method3129(is_10_[i_16_], is_11_[i_16_], 82.toByte(), is_12_[i_16_])
                 anInt9401 += anInt9390
                 anInt9400 += anInt9402
@@ -170,125 +175,8 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
                 }
                 break
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("vj.F(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + i_39_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("vj.F(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + i_39_ + ')'))
             }
         } while (false)
-    }
-
-    companion object {
-        @JvmField
-        var anInt9383: Int = 0
-        @JvmField
-        var anInt9384: Int = 0
-        @JvmField
-        var anInt9385: Int = 0
-        @JvmField
-        var anInt9387: Int = 0
-        @JvmField
-        var anInt9388: Int = 0
-        @JvmField
-        var anInt9391: Int = 0
-        @JvmField
-        var anInt9393: Int = 0
-        @JvmField
-        var anInt9394: Int = 0
-        @JvmField
-        var anInt9395: Int = 0
-        @JvmField
-        var anInt9397: Int = 0
-        @JvmField
-        var anInt9399: Int = -1
-        @JvmField
-        var aBoolean9403: Boolean = false
-
-        @JvmStatic
-        fun method3126(i: Byte) {
-            if (i.toInt() != 98) anInt9388 = 46
-            LruByteCache.aRenderer1098!!.method3700(RangedGraphicsOptionState.aFloat5945, ModelVertexColorBuffer.aFloat6586, NormalMapGenerator.aFloat3462)
-            anInt9387++
-        }
-
-        @JvmStatic
-        fun method3127(i: Int): TimedTileQueueEntry? {
-            anInt9395++
-            if (i != 2681) aBoolean9403 = true
-            var class348_sub42_sub15 = (GlCubemapLightPass.aLinkedNodeListIterator_7325!!.method1011(-47) as TimedTileQueueEntry?)
-            if (class348_sub42_sub15 != null) {
-                class348_sub42_sub15.method2715(81.toByte())
-                class348_sub42_sub15.method3162(true)
-                return class348_sub42_sub15
-            }
-            do {
-                class348_sub42_sub15 = OpenGlTerrainTile.aLinkedNodeListIterator_8241!!.method1011(-87) as TimedTileQueueEntry?
-                if (class348_sub42_sub15 == null) return null
-                if (GameClock.method599(-59) < class348_sub42_sub15.method3250((-51).toByte())) return null
-                class348_sub42_sub15.method2715(113.toByte())
-                class348_sub42_sub15.method3162(true)
-            } while ((0x7fffffffffffffffL.inv() and class348_sub42_sub15.aLong7057) == 0L)
-            return class348_sub42_sub15
-        }
-
-        @JvmStatic
-        fun method3128(i: Int, string: String?) {
-            do {
-                try {
-                    anInt9391++
-                    if (string != null) {
-                        if (anInt9383 >= 200 && !FrameBufferObject.aBoolean4888 || anInt9383 >= 200) {
-                            method544((LocalizedText.aLocalizedText_3493!!.method2063(AnimationFrameDefinition.anInt6967, 544)), false, 4)
-                            val string_0_ = LocalizedText.aLocalizedText_3494!!.method2063(AnimationFrameDefinition.anInt6967, 544)
-                            if (string_0_ != null) method544(string_0_, false, 4)
-                        } else {
-                            val string_1_ = method2127(2, string)
-                            if (string_1_ != null) {
-                                var i_2_ = 0
-                                while ((anInt9383 > i_2_)) {
-                                    val string_3_ = (method2127(2, WaterTextureSet.aStringArray1441!![i_2_]))
-                                    if (string_3_ != null && string_3_ == string_1_) {
-                                        method544((string + (LocalizedText.aLocalizedText_3521!!.method2063((AnimationFrameDefinition.anInt6967), 544))), false, 4)
-                                        return
-                                    }
-                                    if (FixedFunctionMaterialPass.aStringArray6205!![i_2_] != null) {
-                                        val string_4_ = (method2127(2, (FixedFunctionMaterialPass.aStringArray6205!![i_2_])))
-                                        if (string_4_ != null && string_4_ == string_1_) {
-                                            method544((string + (LocalizedText.aLocalizedText_3521!!.method2063(AnimationFrameDefinition.anInt6967, 544))), false, 4)
-                                            return
-                                        }
-                                    }
-                                    i_2_++
-                                }
-                                for (i_5_ in 0..<ContactEntry.anInt9604) {
-                                    val string_6_ = (method2127(2, NpcConfig.aStringArray932!![i_5_]))
-                                    if (string_6_ != null && string_6_ == string_1_) {
-                                        method544(((LocalizedText.aLocalizedText_3526!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3527!!.method2063(AnimationFrameDefinition.anInt6967, 544))), false, 4)
-                                        return
-                                    }
-                                    if (WeaveTextureNode.Companion.aStringArray9275!![i_5_] != null) {
-                                        val string_7_ = (method2127(2, (WeaveTextureNode.Companion.aStringArray9275!![i_5_])))
-                                        if (string_7_ != null && string_7_ == string_1_) {
-                                            method544(((LocalizedText.aLocalizedText_3526!!.method2063(AnimationFrameDefinition.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3527!!.method2063(AnimationFrameDefinition.anInt6967, 544))), false, 4)
-                                            return
-                                        }
-                                    }
-                                }
-                                if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_1_) method544((LocalizedText.aLocalizedText_3524!!.method2063(AnimationFrameDefinition.anInt6967, 544)), false, 4)
-                                else {
-                                    HitsplatDefinition.anInt2012++
-                                    val class348_sub47 = (method2148(LoadingBarRenderer.aFontMetaRef_5057, TheoraVideoStream.aIsaacCipher_9029, -85))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
-                                    InterfaceComponentGroup.method3243(123, class348_sub47)
-                                    if (i <= -31) break
-                                    method3127(-4)
-                                }
-                            }
-                        }
-                    }
-                } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("vj.B(" + i + ',' + (if (string != null) "{...}" else "null") + ')'))
-                }
-                break
-            } while (false)
-        }
     }
 }

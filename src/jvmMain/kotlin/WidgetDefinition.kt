@@ -1,3 +1,10 @@
+import WidgetDefinitionStatics.anInt240
+import WidgetDefinitionStatics.anInt243
+import WidgetDefinitionStatics.anInt246
+import WidgetDefinitionStatics.anInt257
+import WidgetDefinitionStatics.anInt258
+import WidgetDefinitionStatics.anInt266
+
 /* Class17 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -55,7 +62,7 @@ class WidgetDefinition {
         val class348_sub42_sub17_5_ = this.aWidgetCache_251!!.method839(i_4_ shr 16, 3)
         i_4_ = i_4_ and 0xffff
         if (class348_sub42_sub17_5_ == null) return i_2_
-        if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i != -1 && i < this.anIntArray237.size) {
+        if ((this.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i != -1 && i < this.anIntArray237.size) {
             i_3_ = this.anIntArray237[i]
             class348_sub42_sub17 = this.aWidgetCache_251!!.method839(i_3_ shr 16, 3)
             i_3_ = i_3_ and 0xffff
@@ -83,7 +90,7 @@ class WidgetDefinition {
                     }
                 }
             }
-            if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i != -1 && anIntArray260!!.size > i) {
+            if ((this.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i != -1 && anIntArray260!!.size > i) {
                 var i_8_ = anIntArray260!![i]
                 if (i_8_ != 65535) {
                     val class348_sub42_sub17_9_ = this.aWidgetCache_251!!.method839(i_8_ shr 16, 3)
@@ -163,7 +170,7 @@ class WidgetDefinition {
                                                     i_24_++
                                                 }
                                             }
-                                            this.anIntArray253!![class348_sub49.readUnsignedByte(255)] = (class348_sub49.readUnsignedByte(CameraSplineNode.method2955(i_10_, -15092)))
+                                            this.anIntArray253!![class348_sub49.readUnsignedByte(255)] = (class348_sub49.readUnsignedByte(CameraSplineNodeStatics.method2955(i_10_, -15092)))
                                         } else if (i == 20) {
                                             if ((this.anIntArray236 == null) || (this.anIntArray265) == null) {
                                                 this.anIntArray236 = (IntArray((this.anIntArrayArray264)!!.size))
@@ -201,7 +208,7 @@ class WidgetDefinition {
         i_29_ = i_29_ and 0xffff
         if (class348_sub42_sub17 == null) return abstractModel.method614(i_28_, i_32_, true)
         var class348_sub42_sub17_34_: TextureMaterialGroup? = null
-        if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_27_ != -1 && this.anIntArray237.size > i_27_) {
+        if ((this.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i_27_ != -1 && this.anIntArray237.size > i_27_) {
             i_27_ = this.anIntArray237[i_27_]
             class348_sub42_sub17_34_ = this.aWidgetCache_251!!.method839(i_27_ shr 16, 3)
             i_27_ = i_27_ and 0xffff
@@ -242,7 +249,7 @@ class WidgetDefinition {
         i_55_ = i_55_ and 0xffff
         if (class348_sub42_sub17 == null) return abstractModel.method614(1.toByte(), i_52_, true)
         var class348_sub42_sub17_56_: TextureMaterialGroup? = null
-        if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_50_ != -1 && this.anIntArray237.size > i_50_) {
+        if ((this.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i_50_ != -1 && this.anIntArray237.size > i_50_) {
             i_50_ = this.anIntArray237[i_50_]
             class348_sub42_sub17_56_ = this.aWidgetCache_251!!.method839(i_50_ shr 16, 3)
             i_50_ = i_50_ and 0xffff
@@ -259,7 +266,7 @@ class WidgetDefinition {
                     i_59_ = i_59_ and 0xffff
                 }
             }
-            if ((this.aBoolean241 || ItemNameResolver.aBoolean5002) && i_50_ != -1 && i_50_ < anIntArray260!!.size) {
+            if ((this.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i_50_ != -1 && i_50_ < anIntArray260!!.size) {
                 i_60_ = anIntArray260!![i_50_]
                 if (i_60_ != 65535) {
                     class348_sub42_sub17_58_ = this.aWidgetCache_251!!.method839(i_60_ shr 16, 3)
@@ -313,73 +320,5 @@ class WidgetDefinition {
         this.anInt262 = -1
         this.anInt249 = -1
         this.anInt261 = -1
-    }
-
-    companion object {
-        @JvmField
-        var anInt235: Int = 0
-        @JvmField
-        var anInt240: Int = 0
-        @JvmField
-        var anInt243: Int = 0
-        @JvmField
-        var anInt246: Int = 0
-        @JvmField
-        var aBoolean247: Boolean = false
-        var aIntRange_250: IntRange? = IntRange(4, 1)
-        @JvmField
-        var anSpriteDrawTarget_252: SpriteDrawTarget? = null
-        @JvmField
-        var anIntArrayArray255: Array<IntArray?>? = null
-        @JvmField
-        var anIntArray256: IntArray? = null
-        @JvmField
-        var anInt257: Int = 0
-        @JvmField
-        var anInt258: Int = 0
-        @JvmField
-        var anInt259: Int = 0
-        @JvmField
-        var anInt266: Int = 0
-        @JvmStatic
-        fun method265(bool: Boolean) {
-            anIntArray256 = null
-            aIntRange_250 = null
-            anIntArrayArray255 = null
-            if (bool != false) method268(-22, -54, -101, -115, -107, 90, 13, -47)
-            anSpriteDrawTarget_252 = null
-        }
-
-        @JvmStatic
-        fun method268(i: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int, i_42_: Int) {
-            var i_42_ = i_42_
-            anInt259++
-            var i_43_ = -334 + i_39_
-            if (i_43_ < 0) i_43_ = 0
-            else if (i_43_ > 100) i_43_ = 100
-            val i_44_ = (i_43_ * (-NullOggStream.aShort9044 + TextureLoaderUtil.aShort3992) / 100 + NullOggStream.aShort9044)
-            i_42_ = i_42_ * i_44_ shr 8
-            LocalPlayerState.anInt1906 = LocalPlayerState.anInt1911 * i_44_ shr 8
-            val i_45_ = 16384 - i and 0x3fff
-            val i_46_ = 0x3fff and 16384 - i_37_
-            if (i_40_ != -19360) anSpriteDrawTarget_252 = null
-            var i_47_ = 0
-            var i_48_ = 0
-            var i_49_ = i_42_
-            if (i_45_ != 0) {
-                i_48_ = -i_49_ * TrigLookupTables.anIntArray1207!![i_45_] shr 14
-                i_49_ = TrigLookupTables.anIntArray1204!![i_45_] * i_49_ shr 14
-            }
-            if (i_46_ != 0) {
-                i_47_ = TrigLookupTables.anIntArray1207!![i_46_] * i_49_ shr 14
-                i_49_ = i_49_ * TrigLookupTables.anIntArray1204!![i_46_] shr 14
-            }
-            WorldMapElement.anInt4638 = i_37_
-            MapTileShape.anInt4186 = 0
-            CompositeRgbNoiseTexture.anInt8685 = i_38_ - i_49_
-            ParticleSystemRenderer.anInt3855 = -i_48_ + i_36_
-            GlslMaterialPass.anInt6246 = -i_47_ + i_41_
-            MinimapAreaMarkerNode.anInt9701 = i
-        }
     }
 }

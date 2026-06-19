@@ -1,7 +1,7 @@
 /* Class348_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class MidiFileBuilder private constructor(class348_sub49: ByteBuffer) : LinkedListNode() {
+class MidiFileBuilder internal constructor(class348_sub49: ByteBuffer) : LinkedListNode() {
     @JvmField
     var aByteArray6564: ByteArray?
     @JvmField
@@ -289,14 +289,6 @@ class MidiFileBuilder private constructor(class348_sub49: ByteBuffer) : LinkedLi
                 throw RuntimeException()
             } while (false)
             class348_sub49_69_.method3338(-1, (class348_sub49_69_.anInt7197 - i_78_))
-        }
-    }
-
-    companion object {
-        fun method2734(js5Archive: Js5Archive, i: Int, i_15_: Int): MidiFileBuilder? {
-            val `is` = js5Archive.method410(-1860, i, i_15_)
-            if (`is` == null) return null
-            return MidiFileBuilder(ByteBuffer(`is`))
         }
     }
 }

@@ -1,3 +1,5 @@
+import WorldMapAreaLabelStatics.anInt8581
+
 /* Class369_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -17,24 +19,7 @@ class WorldMapAreaLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRende
             this.anInt8580 = i_7_
             this.anInt8582 = i_8_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("kh.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt8579: Int = 0
-        @JvmField
-        var anInt8581: Int = 0
-        @JvmField
-        var anInt8583: Int = -1
-
-        @JvmStatic
-        fun method3570(bool: Boolean) {
-            if (AbstractProceduralTextureNode.aSoundChannelMixer_7042 != null) AbstractProceduralTextureNode.aSoundChannelMixer_7042!!.method2084(-6858)
-            anInt8579++
-            if (VarbitDefLoader.aSoundChannelMixer_2596 != null) VarbitDefLoader.aSoundChannelMixer_2596!!.method2084(-6858)
-            if (bool != false) anInt8583 = 30
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("kh.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 }

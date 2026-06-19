@@ -1,5 +1,13 @@
 import kotlin.math.cos
 import kotlin.math.sin
+import LightingOptionStateStatics.anInt5872
+import LightingOptionStateStatics.anInt5873
+import LightingOptionStateStatics.anInt5875
+import LightingOptionStateStatics.anInt5877
+import LightingOptionStateStatics.anInt5879
+import LightingOptionStateStatics.anInt5880
+import LightingOptionStateStatics.aString5882
+import LightingOptionStateStatics.aIntRange_5883
 
 /* Class239_Sub4 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
@@ -8,7 +16,7 @@ class LightingOptionState : GraphicsOptionState {
     override fun method1716(bool: Boolean) {
         if (bool != false) method1736(-57)
         anInt5880++
-        if (this.aClass348_Sub51_3136.method3422(674) != ParticleEmitterNode.aSceneProjector_186) this.anInt3138 = 1
+        if (this.aClass348_Sub51_3136.method3422(674) != ParticleEmitterNodeStatics.aSceneProjector_186) this.anInt3138 = 1
         else if (this.aClass348_Sub51_3136.method3425(-95)) this.anInt3138 = 0
         if (this.anInt3138 != 0 && this.anInt3138 != 1) this.anInt3138 = method1710(20014)
     }
@@ -23,7 +31,7 @@ class LightingOptionState : GraphicsOptionState {
         anInt5873++
         if (this.aClass348_Sub51_3136.method3425(-80)) return false
         if (i < 85) method1716(true)
-        return this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aSceneProjector_186
+        return this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNodeStatics.aSceneProjector_186
     }
 
     internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
@@ -44,55 +52,9 @@ class LightingOptionState : GraphicsOptionState {
         if (i != 3) aString5882 = null
         anInt5872++
         if (this.aClass348_Sub51_3136.method3425(-63)) return 3
-        if (this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aSceneProjector_186) return 1
+        if (this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNodeStatics.aSceneProjector_186) return 1
         return 3
     }
 
     internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
-
-    companion object {
-        @JvmField
-        var anInt5872: Int = 0
-        @JvmField
-        var anInt5873: Int = 0
-        @JvmField
-        var aFloatArray5874: FloatArray? = FloatArray(16384)
-        @JvmField
-        var anInt5875: Int = 0
-        @JvmField
-        var aFloatArray5876: FloatArray? = FloatArray(16384)
-        @JvmField
-        var anInt5877: Int = 0
-        @JvmField
-        var aJs5Archive_5878: Js5Archive? = null
-        @JvmField
-        var anInt5879: Int = 0
-        @JvmField
-        var anInt5880: Int = 0
-        @JvmField
-        var aClass348_Sub26_5881: NamedIdEntry? = null
-        @JvmField
-        var aString5882: String? = null
-        @JvmField
-        var aIntRange_5883: IntRange? = IntRange(34, 12)
-
-        @JvmStatic
-        fun method1738(i: Int) {
-            aJs5Archive_5878 = null
-            aFloatArray5874 = null
-            aString5882 = null
-            if (i != 21921) method1738(11)
-            aFloatArray5876 = null
-            aClass348_Sub26_5881 = null
-            aIntRange_5883 = null
-        }
-
-        init {
-            val d = 3.834951969714103E-4
-            for (i in 0..16383) {
-                aFloatArray5874!![i] = sin(d * i.toDouble()).toFloat()
-                aFloatArray5876!![i] = cos(i.toDouble() * d).toFloat()
-            }
-        }
-    }
 }

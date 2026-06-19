@@ -1,8 +1,11 @@
-import WorldMapPolygonIconLabel.Companion.method3575
-import DirectionPath.Companion.method535
-import NativeBufferHandle.Companion.method849
-import NativeRenderer.Companion.method3936
-import jaclib.memory.Stream.Companion.c
+import WorldMapPolygonIconLabelStatics.method3575
+import DirectionPathStatics.method535
+import NativeBufferHandleStatics.method849
+import NativeRendererStatics.method3936
+import jaclib.memory.StreamStatics.c
+import TerrainChunkBuilderStatics.anInt1545
+import TerrainChunkBuilderStatics.anInt1552
+import TerrainChunkBuilderStatics.anInt1553
 
 /*
  * Class97
@@ -48,9 +51,9 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                 if (i != -12763) anInt1546 = -8
                 var i_13_ = 0
                 i_10_ = anInt1544 + anInt1559 * i_9_
-                if (aHa_Sub3_1561!!.method3880(MovementDirection.aMovementDirection_1183, (ClampTextureNode.aTextureFormatInfo_9471), 122.toByte())) {
-                    if (GlGroundShaderPass.aByteArray7394 == null) GlGroundShaderPass.aByteArray7394 = ByteArray(16384)
-                    val is_14_ = GlGroundShaderPass.aByteArray7394!!
+                if (aHa_Sub3_1561!!.method3880(MovementDirectionStatics.aMovementDirection_1183, (ClampTextureNodeStatics.aTextureFormatInfo_9471), 122.toByte())) {
+                    if (GlGroundShaderPassStatics.aByteArray7394 == null) GlGroundShaderPassStatics.aByteArray7394 = ByteArray(16384)
+                    val is_14_ = GlGroundShaderPassStatics.aByteArray7394!!
                     for (i_15_ in -128..-1) {
                         for (i_16_ in -128..-1) {
                             if (`is`[i_10_].toInt() == 0) {
@@ -66,12 +69,12 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                         i_10_ += -128 + aVideoStreamDecoder_1560.anInt4113
                     }
                     if (anInterface18_Impl3_1556 == null) {
-                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3944((GlGroundShaderPass.aByteArray7394), 128, (ClampTextureNode.aTextureFormatInfo_9471), i xor 0x31d8.inv(), false, 128)
+                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3944((GlGroundShaderPassStatics.aByteArray7394), 128, (ClampTextureNodeStatics.aTextureFormatInfo_9471), i xor 0x31d8.inv(), false, 128)
                         anInterface18_Impl3_1556!!.method66(false, false, i xor 0x5582.inv())
-                    } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (GlGroundShaderPass.aByteArray7394), (ClampTextureNode.aTextureFormatInfo_9471))
+                    } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (GlGroundShaderPassStatics.aByteArray7394), (ClampTextureNodeStatics.aTextureFormatInfo_9471))
                 } else {
-                    if (Bzip2DecoderState.anIntArray543 == null) Bzip2DecoderState.anIntArray543 = IntArray(16384)
-                    val is_18_ = Bzip2DecoderState.anIntArray543!!
+                    if (Bzip2DecoderStateStatics.anIntArray543 == null) Bzip2DecoderStateStatics.anIntArray543 = IntArray(16384)
+                    val is_18_ = Bzip2DecoderStateStatics.anIntArray543!!
                     for (i_19_ in -128..-1) {
                         for (i_20_ in -128..-1) {
                             if (`is`[i_10_].toInt() == 0) {
@@ -87,9 +90,9 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                         i_10_ += -128 + aVideoStreamDecoder_1560.anInt4113
                     }
                     if (anInterface18_Impl3_1556 == null) {
-                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3839(128, 128, -15137, false, Bzip2DecoderState.anIntArray543)
+                        anInterface18_Impl3_1556 = aHa_Sub3_1561.method3839(128, 128, -15137, false, Bzip2DecoderStateStatics.anIntArray543)
                         anInterface18_Impl3_1556!!.method66(false, false, i + 38451)
-                    } else anInterface18_Impl3_1556!!.method68(128, i + 35572, (Bzip2DecoderState.anIntArray543), 0, 0, 128, 0, 128)
+                    } else anInterface18_Impl3_1556!!.method68(128, i + 35572, (Bzip2DecoderStateStatics.anIntArray543), 0, 0, 128, 0, 128)
                 }
             }
         }
@@ -184,60 +187,7 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
                 this.anInt1563 = i_29_ / 3
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("mc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (videoStreamDecoder != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + i_27_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt1545: Int = 0
-        @JvmField
-        var anInt1548: Int = -1
-        @JvmField
-        var anInt1549: Int = 0
-        @JvmField
-        var anInt1550: Int = 0
-        @JvmField
-        var anInt1552: Int = 0
-        @JvmField
-        var anInt1553: Int = 0
-        @JvmField
-        var anInt1554: Int = 0
-        @JvmField
-        var anInt1555: Int = 0
-        @JvmField
-        var anInt1557: Int = 0
-        fun method872(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
-            anInt1554++
-            if (i_5_ >= WorldMapLabel.anInt4960 && CameraNodeList.anInt1745 >= i_4_ && LocalPlayerState.anInt1910 <= i_2_ && WidgetTextConfig.anInt513 >= i_3_) {
-                if (i_1_ == 1) ScanlineRasterFiller.method1388(i_2_, i, i_0_ + 107, i_4_, i_5_, i_3_)
-                else method849(i_1_, i_2_, i_5_, i_4_, i_3_, 100, i)
-            } else if (i_1_ != 1) method535(i_5_, i_3_, i_1_, i_4_, i, i_2_, ((-106).toByte()).toByte())
-            else method3575(103.toByte(), i_4_, i, i_3_, i_2_, i_5_)
-            if (i_0_ != 1) method873(47, 5, null, 1)
-        }
-
-        fun method873(i: Int, i_6_: Int, var_renderer: Renderer?, i_7_: Int) {
-            LruByteCache.aRenderer1098 = var_renderer
-            NodeDeque.aModelLightingConfigArrayArray3335 = Array(i) { arrayOfNulls(i_7_) }
-            if (i_6_ == 21719) {
-                anInt1549++
-                if (FogState.anIntArray1432 != null) ParameterizedText.aCircleRasterizer_9571 = SceneProjector.method1636(FogState.anIntArray1432!![4], FogState.anIntArray1432!![3], FogState.anIntArray1432!![0], FogState.anIntArray1432!![5], FogState.anIntArray1432!![1], -1, FogState.anIntArray1432!![2])
-                LocalizedText.aModelLightingConfig_3547 = ModelLightingConfig()
-                method3936(0)
-            }
-        }
-
-        @JvmStatic
-        fun method876(i: Int, i_23_: Int) {
-            anInt1557++
-            synchronized(ModelDataCache.aLruByteCache_355!!) {
-                ModelDataCache.aLruByteCache_355!!.method578(2, i)
-            }
-            synchronized(ModelBatchBase.aLruByteCache_1894!!) {
-                ModelBatchBase.aLruByteCache_1894!!.method578(2, i)
-                if (i_23_ != 0) method876(51, 108)
-            }
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("mc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (videoStreamDecoder != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + i_27_ + ')'))
         }
     }
 }

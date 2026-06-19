@@ -1,4 +1,9 @@
-import HardCacheEntryReference.Companion.method3200
+import HardCacheEntryReferenceStatics.method3200
+import IsaacCipherStatics.method776
+import IsaacCipherStatics.anInt1295
+import IsaacCipherStatics.anInt1300
+import IsaacCipherStatics.anInt1301
+import IsaacCipherStatics.anInt1302
 
 /* Class77 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -182,9 +187,9 @@ class IsaacCipher {
             else anInt1293 = anInt1293 xor (anInt1293 shl 13)
             anInt1293 += anIntArray1296!![0xff and 128 + i]
             val i_14_: Int
-            i_14_ = (anIntArray1296!![NpcSummaryDefinition.method1166(255, i_13_ shr 2)] - (-anInt1293 - anInt1291))
+            i_14_ = (anIntArray1296!![NpcSummaryDefinitionStatics.method1166(255, i_13_ shr 2)] - (-anInt1293 - anInt1291))
             anIntArray1296!![i] = i_14_
-            anInt1291 = i_13_ + anIntArray1296!![(NpcSummaryDefinition.method1166(261268, i_14_) shr 278777480 shr 242087490)]
+            anInt1291 = i_13_ + anIntArray1296!![(NpcSummaryDefinitionStatics.method1166(261268, i_14_) shr 278777480 shr 242087490)]
             anIntArray1289[i] = anInt1291
         }
         if (bool != false) method776(-33, -56, 52)
@@ -198,46 +203,5 @@ class IsaacCipher {
         anInt1295++
         if (i >= -47) method779(false)
         return anIntArray1289[--anInt1292]
-    }
-
-    companion object {
-        @JvmField
-        var anInt1290: Int = 0
-        @JvmField
-        var anInt1295: Int = 0
-        @JvmField
-        var anInt1297: Int = 0
-        @JvmField
-        var aBoundsConstraintEntry_1298: BoundsConstraintEntry? = BoundsConstraintEntry("", 16)
-        @JvmField
-        var anInt1299: Int = 0
-        @JvmField
-        var anInt1300: Int = 0
-        @JvmField
-        var anInt1301: Int = 0
-        @JvmField
-        var anInt1302: Int = 0
-        @JvmField
-        var anIntArray1303: IntArray? = null
-
-        fun method776(i: Int, i_0_: Int, i_1_: Int): Boolean {
-            anInt1297++
-            if (i_1_ != 65536) method780(-106, -24, 57)
-            val bool = (if ((i and 0x37) != 0) Crc64Hashable.method1113(i_0_, i, -7) else method3200(i_0_, i, 111.toByte()))
-            return bool or (LocalizedText.method2058(i_0_, i, i_1_ xor 0x1003d) or ((0x10000 and i_0_) != 0))
-        }
-
-        fun method780(i: Int, i_15_: Int, i_16_: Int): Boolean {
-            if (i_15_ != 0) return true
-            anInt1299++
-            return (0x400 and i_16_) != 0
-        }
-
-        @JvmStatic
-        fun method782(i: Int) {
-            anIntArray1303 = null
-            if (i != 1) anInt1290 = 114
-            aBoundsConstraintEntry_1298 = null
-        }
     }
 }

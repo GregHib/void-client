@@ -1,3 +1,5 @@
+import MidiTrackReaderStatics.aByteArray2676
+
 /* Class204 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -167,13 +169,5 @@ class MidiTrackReader {
     internal constructor(`is`: ByteArray?) {
         aClass348_Sub49_2677 = ByteBuffer(null)
         method1482(`is`)
-    }
-
-    companion object {
-        private var aByteArray2676: ByteArray? = byteArrayOf(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-        @JvmStatic
-        fun method1493() {
-            aByteArray2676 = null
-        }
     }
 }

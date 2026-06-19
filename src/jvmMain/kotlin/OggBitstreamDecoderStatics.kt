@@ -1,0 +1,141 @@
+import AntialiasOptionStateStatics.method1819
+import jagtheora.ogg.OggPacket
+import jagtheora.ogg.OggStreamState
+import kotlin.math.cos
+import kotlin.math.sin
+
+object OggBitstreamDecoderStatics {
+    @JvmField
+            var anInt6863: Int = 0
+            @JvmField
+            var anInt6864: Int = 0
+            @JvmField
+            var aFloatArray6865: FloatArray? = FloatArray(16384)
+            @JvmField
+            var anInt6866: Int = 0
+            @JvmField
+            var aFloatArray6867: FloatArray? = FloatArray(16384)
+            @JvmField
+            var anInt6870: Int = 0
+    
+            fun method2960(bool: Boolean, i: Int): Int {
+                if (i >= -16) aFloatArray6865 = null
+                anInt6870++
+                val i_0_ = ByteBufferStatics.anInt7207
+                while_128_@ do {
+                    do {
+                        if (i_0_ == 0) {
+                            if (bool) return 0
+                            return PerlinNoiseTextureNodeStatics.anInt9157
+                        } else if (i_0_ != 1) {
+                            if (i_0_ == 2) break
+                            break@while_128_
+                        }
+                        return PerlinNoiseTextureNodeStatics.anInt9157
+                    } while (false)
+                    return 0
+                } while (false)
+                return 0
+            }
+    
+            @JvmStatic
+            fun method2962(i: Int) {
+                aFloatArray6865 = null
+                aFloatArray6867 = null
+                if (i != -31055) method2966(-119, -98, true)
+            }
+    
+            @JvmStatic
+            fun method2965(string: String?, i: Int, bool: Boolean, i_1_: Int) {
+                anInt6866++
+                LocTypeDefLoaderStatics.method1406(true)
+                if (i == 0) {
+                    FacingDirectionNodeStatics.aRenderer6654 = SoftwareSpriteRasterStatics.method958(true, 0, SourceRowTextureNodeStatics.aRenderConfig9113, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350) * 2, ParticleSystemRendererStatics.aCanvas3869, SpriteLoadValidatorStatics.aJs5Archive_4796)
+                    if (string != null) {
+                        FacingDirectionNodeStatics.aRenderer6654!!.GA(0)
+                        val class143 = method1819(WidgetDefinitionStatics.anInt235, 0, -117, SoftwareSpriteRasterStatics.aJs5Archive_1627!!)
+                        val class324 = (FacingDirectionNodeStatics.aRenderer6654!!.method3686(class143, SpriteImageStatics.method1519(CameraRotationStubStatics.aJs5Archive_322!!, WidgetDefinitionStatics.anInt235, 0), true))
+                        ScreenBorderFiller.method1170((-89).toByte())
+                        Tooltip.method3511(true, class324, class143, string, 2, FacingDirectionNodeStatics.aRenderer6654)
+                    }
+                } else {
+                    var var_renderer: Renderer? = null
+                    if (string != null) {
+                        var_renderer = SoftwareSpriteRasterStatics.method958(true, 0, SourceRowTextureNodeStatics.aRenderConfig9113, 0, ParticleSystemRendererStatics.aCanvas3869, SpriteLoadValidatorStatics.aJs5Archive_4796)!!
+                        var_renderer.GA(0)
+                        val class143 = method1819(WidgetDefinitionStatics.anInt235, 0, -115, SoftwareSpriteRasterStatics.aJs5Archive_1627!!)
+                        val class324 = var_renderer.method3686(class143, SpriteImageStatics.method1519((CameraRotationStubStatics.aJs5Archive_322!!), WidgetDefinitionStatics.anInt235, 0), true)
+                        ScreenBorderFiller.method1170((-107).toByte())
+                        Tooltip.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
+                    }
+                    try {
+                        FacingDirectionNodeStatics.aRenderer6654 = SoftwareSpriteRasterStatics.method958(true, i, SourceRowTextureNodeStatics.aRenderConfig9113, 2 * IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(i_1_ + -32350), ParticleSystemRendererStatics.aCanvas3869, SpriteLoadValidatorStatics.aJs5Archive_4796)
+                        if (string != null) {
+                            var_renderer!!.GA(0)
+                            val class143 = method1819(WidgetDefinitionStatics.anInt235, 0, -51, SoftwareSpriteRasterStatics.aJs5Archive_1627!!)
+                            val class324 = (var_renderer.method3686(class143, SpriteImageStatics.method1519(CameraRotationStubStatics.aJs5Archive_322!!, WidgetDefinitionStatics.anInt235, 0), true))
+                            ScreenBorderFiller.method1170((-26).toByte())
+                            Tooltip.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
+                        }
+                        if (FacingDirectionNodeStatics.aRenderer6654!!.method3693()) {
+                            var bool_2_ = true
+                            try {
+                                bool_2_ = (NoiseTextureNodeStatics.aClass348_Sub4_9264!!.anInt6609) > 256
+                            } catch (throwable: Throwable) {
+                                /* empty */
+                            }
+                            val var_shaderProgram: ShaderProgram?
+                            if (!bool_2_) var_shaderProgram = FacingDirectionNodeStatics.aRenderer6654!!.method3702(104857600)
+                            else var_shaderProgram = FacingDirectionNodeStatics.aRenderer6654!!.method3702(146800640)
+                            FacingDirectionNodeStatics.aRenderer6654!!.method3651(var_shaderProgram)
+                        }
+                    } catch (throwable: Throwable) {
+                        val i_3_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
+                        if (i_3_ == 2) NpcSummaryDefinitionStatics.aBoolean1952 = true
+                        IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271), 0)
+                        method2965(string, i_3_, bool, i_1_)
+                        return
+                    } finally {
+                        if (var_renderer != null) {
+                            try {
+                                var_renderer.method3635((-111).toByte())
+                            } catch (throwable: Throwable) {
+                                /* empty */
+                            }
+                        }
+                    }
+                }
+                IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1826(!bool, -142238264)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271), i)
+                ByteBufferStatics.method3354(i_1_ + -78)
+                FacingDirectionNodeStatics.aRenderer6654!!.method3650(10000)
+                FacingDirectionNodeStatics.aRenderer6654!!.X(32)
+                SettingsCrcWriter.aAbstractCameraTransform_2123 = FacingDirectionNodeStatics.aRenderer6654!!.method3654()
+                MinimapSquareDrawerStatics.aAbstractCameraTransform_5209 = FacingDirectionNodeStatics.aRenderer6654!!.method3654()
+                BufferToggleStateStatics.method2196((-9).toByte())
+                FacingDirectionNodeStatics.aRenderer6654!!.method3630(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub2_7228!!.method1726(-32350) == 1)
+                if (FacingDirectionNodeStatics.aRenderer6654!!.method3627()) WarpTextureNodeStatics.method3137(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) == 1, (-24).toByte())
+                TerrainChunkBuilderStatics.method873(GlCubemapLightPassStatics.anInt7319 shr 3, 21719, FacingDirectionNodeStatics.aRenderer6654, RangeThresholdTextureNodeStatics.anInt9109 shr 3)
+                SceneObjectSpawnerStatics.method773(true)
+                RenderNodeStatics.aBoolean9719 = false
+                NativeLibraryUnloader.aMapSceneTileArray2974 = null
+                TextureLoadExceptionStatics.aBoolean4604 = true
+                LoadingScreenImageNodeStatics.method3179(i_1_)
+            }
+    
+            fun method2966(i: Int, i_4_: Int, bool: Boolean) {
+                anInt6864++
+                val class348_sub42_sub15 = NamedTimedNodeStatics.method2516(i, 105.toByte(), 14)
+                if (bool != false) aFloatArray6865 = null
+                class348_sub42_sub15.method3246(-25490)
+                class348_sub42_sub15.anInt9652 = i_4_
+            }
+    
+            init {
+                val d = 3.834951969714103E-4
+                for (i in 0..16383) {
+                    aFloatArray6865!![i] = sin(d * i.toDouble()).toFloat()
+                    aFloatArray6867!![i] = cos(i.toDouble() * d).toFloat()
+                }
+            }
+}

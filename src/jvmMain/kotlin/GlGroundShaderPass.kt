@@ -1,12 +1,22 @@
-import GraphicsOptionState.Companion.method1713
-import TexGenMaterialPass.Companion.method2158
-import CubemapTexture2dSource.Companion.method2260
-import jaggl.OpenGL.Companion.glBindProgramARB
-import jaggl.OpenGL.Companion.glDisable
-import jaggl.OpenGL.Companion.glEnable
-import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
-import ArbVertexProgram.Companion.method3442
+import GraphicsOptionStateStatics.method1713
+import TexGenMaterialPassStatics.method2158
+import CubemapTexture2dSourceStatics.method2260
+import jaggl.OpenGLStatics.glBindProgramARB
+import jaggl.OpenGLStatics.glDisable
+import jaggl.OpenGLStatics.glEnable
+import jaggl.OpenGLStatics.glProgramLocalParameter4fARB
+import ArbVertexProgramStatics.method3442
 import java.awt.Container
+import GlGroundShaderPassStatics.method3557
+import GlGroundShaderPassStatics.anInt7393
+import GlGroundShaderPassStatics.anInt7400
+import GlGroundShaderPassStatics.anInt7401
+import GlGroundShaderPassStatics.anInt7402
+import GlGroundShaderPassStatics.anInt7408
+import GlGroundShaderPassStatics.anInt7409
+import GlGroundShaderPassStatics.anInt7412
+import GlGroundShaderPassStatics.anInt7414
+import GlGroundShaderPassStatics.aLongHashTable_7415
 
 class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?) : AbstractRenderPass(glRenderDevice) {
     private var anInterface18_Impl3_7390: Renderable2dTexture? = null
@@ -43,14 +53,14 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
         anInt7408++
         this.aHa_Sub3_4479.method3897(1, -4382)
         this.aHa_Sub3_4479.method3850((-128).toByte(), null)
-        this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 116, ParticleSystemState.aRenderConfigFactory_2207)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 2, RenderListTextureNode.aTrigLookupTables_9485)
-        this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+        this.aHa_Sub3_4479.method3874(ParticleSystemStateStatics.aRenderConfigFactory_2207, 116, ParticleSystemStateStatics.aRenderConfigFactory_2207)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 2, RenderListTextureNodeStatics.aTrigLookupTables_9485)
+        this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
         this.aHa_Sub3_4479.method3897(0, -4382)
         if (aBoolean7399) {
-            this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
-            this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
+            this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
             aBoolean7399 = false
         }
         if (i.toInt() != 87) aLongHashTable_7415 = null
@@ -70,8 +80,8 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
     override fun method3527(i: Int, renderable: Renderable?, i_3_: Int) {
         if (renderable != null) {
             if (aBoolean7399) {
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
-                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
                 aBoolean7399 = false
             }
             this.aHa_Sub3_4479.method3850((-122).toByte(), renderable)
@@ -79,8 +89,8 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
         } else if (!aBoolean7399) {
             this.aHa_Sub3_4479.method3850(99.toByte(), (this.aHa_Sub3_4479.anRenderable_8147))
             this.aHa_Sub3_4479.method3923(true, 1)
-            this.aHa_Sub3_4479.method3849(47.toByte(), 0, SceneObjectEntity.aTrigLookupTables_8737)
-            this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aTrigLookupTables_8737)
+            this.aHa_Sub3_4479.method3849(47.toByte(), 0, SceneObjectEntityStatics.aTrigLookupTables_8737)
+            this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntityStatics.aTrigLookupTables_8737)
             aBoolean7399 = true
         }
         if (i_3_ != -16776) method3525(16, true)
@@ -116,7 +126,7 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
                 } else aBoolean7391 = false
             } else aBoolean7391 = false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("or.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("or.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -125,11 +135,11 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
         aBoolean7411 = bool
         this.aHa_Sub3_4479.method3897(1, i xor 0x2a45.inv())
         this.aHa_Sub3_4479.method3850((-32).toByte(), anInterface18_Impl3_7390)
-        this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 109, MediaStreamClient.aRenderConfigFactory_3196)
-        this.aHa_Sub3_4479.method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
+        this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 109, MediaStreamClientStatics.aRenderConfigFactory_3196)
+        this.aHa_Sub3_4479.method3849(47.toByte(), 0, RenderListTextureNodeStatics.aTrigLookupTables_9485)
         if (i == 15192) {
-            this.aHa_Sub3_4479.method3924(true, false, 2, WidgetRedrawRegion.aTrigLookupTables_4247, false)
-            this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntity.aTrigLookupTables_8737)
+            this.aHa_Sub3_4479.method3924(true, false, 2, WidgetRedrawRegionStatics.aTrigLookupTables_4247, false)
+            this.aHa_Sub3_4479.method3885(0, true, SceneObjectEntityStatics.aTrigLookupTables_8737)
             this.aHa_Sub3_4479.method3897(0, i + -19574)
             method3528(75)
         }
@@ -138,107 +148,5 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
     override fun method3521(bool: Boolean, i: Byte) {
         anInt7393++
         if (i.toInt() != -103) aTextureHandle_7392 = null
-    }
-
-    companion object {
-        @JvmField
-        var anInt7393: Int = 0
-        @JvmField
-        var aByteArray7394: ByteArray? = null
-        @JvmField
-        var anInt7396: Int = 0
-        @JvmField
-        var anIntArray7397: IntArray? = IntArray(4096)
-        @JvmField
-        var aIntRange_7398: IntRange? = IntRange(16, 6)
-        @JvmField
-        var anInt7400: Int = 0
-        @JvmField
-        var anInt7401: Int = 0
-        @JvmField
-        var anInt7402: Int = 0
-        @JvmField
-        var anInt7403: Int = 0
-        @JvmField
-        var anInt7405: Int = 0
-        @JvmField
-        var anInt7408: Int = 0
-        @JvmField
-        var anInt7409: Int = 0
-        @JvmField
-        var anInt7410: Int = 0
-        @JvmField
-        var anInt7412: Int = 0
-        @JvmField
-        var anInt7414: Int = 0
-        @JvmField
-        var aLongHashTable_7415: LongHashTable? = LongHashTable(8)
-
-        @JvmStatic
-        fun method3555(js5Archive: Js5Archive?, i: Int, bool: Boolean, l: Long, i_7_: Int, i_8_: Int, i_9_: Int) {
-            try {
-                anInt7410++
-                method2260(i_9_, i_8_, l, 0, bool, js5Archive, 126.toByte(), i_7_)
-                val i_10_ = -35 / ((-41 - i) / 38)
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("or.Q(" + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + l + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'))
-            }
-        }
-
-        @JvmStatic
-        fun method3556(bool: Boolean) {
-            anInt7405++
-            if (bool == false) {
-                synchronized(NpcType.aClient1367!!) {
-                    if (SkeletalAnimFrameLoader.aFrame476 == null) {
-                        val container: Container
-                        if (RsaVarbitHandler.aFrame4904 != null) container = RsaVarbitHandler.aFrame4904!!
-                        else if (JagGlToolkitFactory.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169!!
-                        else container = JagGlToolkitFactory.anApplet1530!! as Container
-                        SocketFactory.anInt3473 = container.getSize().width
-                        NpcReference.anInt6857 = container.getSize().height
-                        if (RsaVarbitHandler.aFrame4904 === container) {
-                            val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
-                            SocketFactory.anInt3473 -= insets.left - -insets.right
-                            NpcReference.anInt6857 -= insets.bottom + insets.top
-                        }
-                        if (ContactEntry.method3229(-86) == 1) {
-                            LocTypeDefinition.anInt4017 = NpcSpawnDecoder.anInt1524
-                            TimingCounters.anInt4167 = 0
-                            ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 - NpcSpawnDecoder.anInt1524) / 2
-                            HardCacheEntryReference.anInt10432 = OpenGlRenderer.anInt7666
-                        } else method2158(56.toByte())
-                        if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) {
-                            if (LocTypeDefinition.anInt4017 < 1024 && HardCacheEntryReference.anInt10432 < 768) {
-                                /* empty */
-                            }
-                        }
-                        ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (HardCacheEntryReference.anInt10432))
-                        if (FacingDirectionNode.aRenderer6654 != null) {
-                            if (GrayscaleNoiseTexture.aBoolean5300) TerrainTile.method3980(120, ParticleSystemRenderer.aCanvas3869!!)
-                            else FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
-                        }
-                        if (RsaVarbitHandler.aFrame4904 === container) {
-                            val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
-                            ParticleSystemRenderer.aCanvas3869!!.setLocation(insets.left - -ModelResourceBundle.anInt7129, TimingCounters.anInt4167 + insets.top)
-                        } else ParticleSystemRenderer.aCanvas3869!!.setLocation((ModelResourceBundle.anInt7129), TimingCounters.anInt4167)
-                        if (RenderNode.anInt9721 != -1) method1713(true, 520)
-                        ScreenBorderFiller.method1170((-78).toByte())
-                    } else {
-                        /* empty */
-                    }
-                }
-            }
-        }
-
-        @JvmStatic
-        fun method3557(bool: Boolean) {
-            anIntArray7397 = null
-            aLongHashTable_7415 = null
-            if (bool == true) {
-                aIntRange_7398 = null
-                aByteArray7394 = null
-            }
-        }
     }
 }

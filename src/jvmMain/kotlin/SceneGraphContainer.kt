@@ -1,7 +1,10 @@
+import SceneGraphContainerStatics.aBooleanArray6474
+import SceneGraphContainerStatics.aBooleanArray6477
+
 /* Class318_Sub10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLinkedListNode() {
+class SceneGraphContainer internal constructor(i: Int, bool: Boolean) : SceneLinkedListNode() {
     var aBoolean6470: Boolean = false
     private var aLong6471: Long = 0
     private var aLong6472: Long = 0
@@ -53,12 +56,12 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
         this.aNodeDeque_6479 = NodeDeque()
         anInt6485 = 0
         this.method2373(false)
-        DisplaySettingsConfig.aClass318_Sub10Array7249!![GlTexture2D.anInt8550] = this
-        GlTexture2D.anInt8550 = (GlTexture2D.anInt8550 + 1 and KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637])
+        DisplaySettingsConfigStatics.aClass318_Sub10Array7249!![GlTexture2DStatics.anInt8550] = this
+        GlTexture2DStatics.anInt8550 = (GlTexture2DStatics.anInt8550 + 1 and KeyedCacheEntryReferenceStatics.anIntArray9558!![HslColorTableNodeStatics.anInt6637])
     }
 
-    private fun method2531(i: Int, bool: Boolean) {
-        GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1869(-88, this)
+    fun method2531(i: Int, bool: Boolean) {
+        GzipDecompressorStatics.aDoublyLinkedNodeList_2077!!.method1869(-88, this)
         aLong6472 = i.toLong()
         aLong6471 = i.toLong()
         aBoolean6484 = true
@@ -165,7 +168,7 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
                 anInt6485--
                 if (class348_sub42_sub20.method3164(1.toByte())) {
                     class348_sub42_sub20.method3162(true)
-                    SpotAnimEntity.Companion.anInt6450--
+                    SpotAnimEntityStatics.anInt6450--
                 }
             }
             class348_sub42_sub20 = this.aNodeDeque_6479.method1990(85.toByte()) as SpriteRenderEntry?
@@ -175,10 +178,10 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
                 if (i == 8 || anInt6485 == 8) break
                 if (!aBooleanArray6477!![i]) {
                     var class348_sub42_sub20: SpriteRenderEntry? = null
-                    if ((widgetRedrawRegions[i]!!.method2685((-13).toByte()).anInt2296) == 1 && SpotAnimEntity.Companion.anInt6450 < 32) {
+                    if ((widgetRedrawRegions[i]!!.method2685((-13).toByte()).anInt2296) == 1 && SpotAnimEntityStatics.anInt6450 < 32) {
                         class348_sub42_sub20 = SpriteRenderEntry(widgetRedrawRegions[i], this)
-                        GlGroundShaderPass.aLongHashTable_7415!!.method335(class348_sub42_sub20, -8098, widgetRedrawRegions[i]!!.anInt4245.toLong())
-                        SpotAnimEntity.Companion.anInt6450++
+                        GlGroundShaderPassStatics.aLongHashTable_7415!!.method335(class348_sub42_sub20, -8098, widgetRedrawRegions[i]!!.anInt4245.toLong())
+                        SpotAnimEntityStatics.anInt6450++
                     }
                     if (class348_sub42_sub20 == null) class348_sub42_sub20 = SpriteRenderEntry(widgetRedrawRegions[i], this)
                     this.aNodeDeque_6479.method1999(class348_sub42_sub20, -20180)
@@ -211,25 +214,5 @@ class SceneGraphContainer private constructor(i: Int, bool: Boolean) : SceneLink
         this.aNodeDequeHolder_6481 = NodeDequeHolder()
         this.aClass318_Sub9_Sub2_Sub1Array6475 = arrayOfNulls<ProjectileNode>(8192)
         method2531(i, bool)
-    }
-
-    companion object {
-        private var aBooleanArray6474: BooleanArray? = BooleanArray(32)
-        private var aBooleanArray6477: BooleanArray? = BooleanArray(8)
-        fun method2526(i: Int, bool: Boolean): SceneGraphContainer {
-            if (GlTexture2D.anInt8550 != RingBufferInputStream.anInt4559) {
-                val class318_sub10 = DisplaySettingsConfig.aClass318_Sub10Array7249!![RingBufferInputStream.anInt4559]!!
-                RingBufferInputStream.anInt4559 = RingBufferInputStream.anInt4559 + 1 and (KeyedCacheEntryReference.anIntArray9558!![HslColorTableNode.anInt6637])
-                class318_sub10.method2531(i, bool)
-                return class318_sub10
-            }
-            return SceneGraphContainer(i, bool)
-        }
-
-        @JvmStatic
-        fun method2527() {
-            aBooleanArray6474 = null
-            aBooleanArray6477 = null
-        }
     }
 }

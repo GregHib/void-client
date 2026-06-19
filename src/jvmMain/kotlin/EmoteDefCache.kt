@@ -1,3 +1,9 @@
+import EmoteDefCacheStatics.anInt4083
+import EmoteDefCacheStatics.anInt4084
+import EmoteDefCacheStatics.anInt4086
+import EmoteDefCacheStatics.anInt4088
+import EmoteDefCacheStatics.anInt4089
+
 /* Class326 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -55,18 +61,9 @@ class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int
                 if (aJs5Archive_4085 == null) break
                 aJs5Archive_4085.method407(0, 11)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("dc.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("dc.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
-    }
-
-    companion object {
-        var anInt4083: Int = 0
-        var anInt4084: Int = 0
-        @JvmField
-        var anInt4086: Int = 0
-        var anInt4088: Int = 0
-        var anInt4089: Int = 0
     }
 }

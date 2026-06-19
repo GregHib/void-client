@@ -1,25 +1,88 @@
-import ParticleEmitterNode.Companion.method219
-import DetailLevelOptionState.Companion.method1837
-import SimpleToggleOptionState.Companion.method1740
-import ParticleEmitterFactory.Companion.method1885
-import ParticleEmitterFactory.Companion.method1887
-import PcmStreamBuffer.Companion.method2832
-import KaraokeSubtitleStream.Companion.method2985
-import ColourKeyTextureNode.Companion.method3119
-import RangeThresholdTextureNode.Companion.method3056
-import EdgeDetectTextureNode.Companion.method3073
-import AsyncResourceRequest.Companion.method3258
-import StreamingResourceRequest.Companion.method3262
-import CacheEntryReference.Companion.method3194
-import HardCacheEntryReference.Companion.method3200
-import CharacterRenderState.Companion.method2783
-import LocConfigModelBuilder.Companion.method3563
-import CachedRgbNoiseTexture.Companion.method565
-import ChatMessageStream.Companion.method135
-import ChatMessageStream.Companion.method137
-import OpenGlRenderer.Companion.method3743
-import jaclib.memory.Stream.Companion.c
+import ParticleEmitterNodeStatics.method219
+import DetailLevelOptionStateStatics.method1837
+import SimpleToggleOptionStateStatics.method1740
+import ParticleEmitterFactoryStatics.method1885
+import ParticleEmitterFactoryStatics.method1887
+import PcmStreamBufferStatics.method2832
+import KaraokeSubtitleStreamStatics.method2985
+import ColourKeyTextureNodeStatics.method3119
+import RangeThresholdTextureNodeStatics.method3056
+import EdgeDetectTextureNodeStatics.method3073
+import AsyncResourceRequestStatics.method3258
+import StreamingResourceRequestStatics.method3262
+import CacheEntryReferenceStatics.method3194
+import HardCacheEntryReferenceStatics.method3200
+import CharacterRenderStateStatics.method2783
+import LocConfigModelBuilderStatics.method3563
+import CachedRgbNoiseTextureStatics.method565
+import ChatMessageStreamStatics.method135
+import ChatMessageStreamStatics.method137
+import OpenGlRendererStatics.method3743
+import jaclib.memory.StreamStatics.c
 import kotlin.math.sqrt
+import Direct3dModelStatics.anInt5403
+import Direct3dModelStatics.anInt5405
+import Direct3dModelStatics.anInt5407
+import Direct3dModelStatics.anInt5408
+import Direct3dModelStatics.anInt5409
+import Direct3dModelStatics.anInt5410
+import Direct3dModelStatics.anInt5411
+import Direct3dModelStatics.anInt5414
+import Direct3dModelStatics.anInt5417
+import Direct3dModelStatics.anInt5421
+import Direct3dModelStatics.anInt5422
+import Direct3dModelStatics.anInt5425
+import Direct3dModelStatics.anInt5426
+import Direct3dModelStatics.anInt5430
+import Direct3dModelStatics.anInt5431
+import Direct3dModelStatics.anInt5434
+import Direct3dModelStatics.anInt5435
+import Direct3dModelStatics.anInt5437
+import Direct3dModelStatics.anInt5440
+import Direct3dModelStatics.anInt5441
+import Direct3dModelStatics.anInt5444
+import Direct3dModelStatics.anInt5445
+import Direct3dModelStatics.anInt5446
+import Direct3dModelStatics.anInt5447
+import Direct3dModelStatics.anInt5448
+import Direct3dModelStatics.anInt5449
+import Direct3dModelStatics.anInt5450
+import Direct3dModelStatics.anInt5451
+import Direct3dModelStatics.anInt5453
+import Direct3dModelStatics.anInt5454
+import Direct3dModelStatics.anInt5456
+import Direct3dModelStatics.anInt5458
+import Direct3dModelStatics.anInt5459
+import Direct3dModelStatics.anInt5464
+import Direct3dModelStatics.anInt5465
+import Direct3dModelStatics.anInt5468
+import Direct3dModelStatics.anInt5469
+import Direct3dModelStatics.anInt5471
+import Direct3dModelStatics.anInt5479
+import Direct3dModelStatics.anInt5480
+import Direct3dModelStatics.anInt5481
+import Direct3dModelStatics.anInt5483
+import Direct3dModelStatics.anInt5484
+import Direct3dModelStatics.anInt5487
+import Direct3dModelStatics.anInt5488
+import Direct3dModelStatics.anInt5489
+import Direct3dModelStatics.anInt5490
+import Direct3dModelStatics.anInt5491
+import Direct3dModelStatics.anInt5496
+import Direct3dModelStatics.anInt5498
+import Direct3dModelStatics.anInt5500
+import Direct3dModelStatics.anInt5501
+import Direct3dModelStatics.anInt5504
+import Direct3dModelStatics.anInt5505
+import Direct3dModelStatics.anInt5513
+import Direct3dModelStatics.anInt5514
+import Direct3dModelStatics.anInt5517
+import Direct3dModelStatics.anInt5518
+import Direct3dModelStatics.anInt5521
+import Direct3dModelStatics.anInt5522
+import Direct3dModelStatics.anInt5523
+import Direct3dModelStatics.anInt5525
+import Direct3dModelStatics.anInt5526
 
 class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_764_: Int, bool: Boolean, bool_765_: Boolean) : AbstractModel() {
     private var anInt5401 = 0
@@ -87,8 +150,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
         if (aTextureMipDescriptorArray5524 != null) {
             aHa_Sub3_5419!!.C(!aBoolean5428)
             aHa_Sub3_5419!!.method3866(false, true)
-            aHa_Sub3_5419!!.method3849(47.toByte(), 1, RenderListTextureNode.aTrigLookupTables_9485)
-            aHa_Sub3_5419!!.method3885(1, true, RenderListTextureNode.aTrigLookupTables_9485)
+            aHa_Sub3_5419!!.method3849(47.toByte(), 1, RenderListTextureNodeStatics.aTrigLookupTables_9485)
+            aHa_Sub3_5419!!.method3885(1, true, RenderListTextureNodeStatics.aTrigLookupTables_9485)
             var i_0_ = 0
             while (anInt5406 > i_0_) {
                 val class353 = aTextureMipDescriptorArray5524!![i_0_]!!
@@ -97,9 +160,9 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     val f = (0.3333333f * ((anIntArray5511!![class353.anInt4349]) - -(anIntArray5511!![class353.anInt4344]) + (anIntArray5511!![class353.anInt4339])).toFloat())
                     val f_1_ = (0.3333333f * ((anIntArray5519!![class353.anInt4344]) + (anIntArray5519!![class353.anInt4349]) + (anIntArray5519!![class353.anInt4339])).toFloat())
                     val f_2_ = (0.3333333f * ((anIntArray5429!![class353.anInt4339]) + (anIntArray5429!![class353.anInt4344]) + (anIntArray5429!![class353.anInt4349])).toFloat())
-                    val f_3_ = (f_2_ * ShortMatrixNode.aFloat9516 + (OggMediaStream.aFloat1010 * f + f_1_ * DynamicSceneObjectEntity.aFloat10199) + ParticleProcessor.aFloat4268)
-                    val f_4_ = (BoundingBoxNode.aFloat6752 + (SceneEffectMarker.aFloat6430 * f_2_ + (TextureTileRenderer.aFloat6835 * f + f_1_ * BufferToggleState.aFloat3710)))
-                    val f_5_ = WorldMapRenderer.aFloat4673 + (TextureMipDescriptor.aFloat4338 * f_1_ + f * RenderQueueState.aFloat6523 + f_2_ * Renderer.aFloat4582)
+                    val f_3_ = (f_2_ * ShortMatrixNodeStatics.aFloat9516 + (OggMediaStreamStatics.aFloat1010 * f + f_1_ * DynamicSceneObjectEntityStatics.aFloat10199) + ParticleProcessorStatics.aFloat4268)
+                    val f_4_ = (BoundingBoxNodeStatics.aFloat6752 + (SceneEffectMarkerStatics.aFloat6430 * f_2_ + (TextureTileRendererStatics.aFloat6835 * f + f_1_ * BufferToggleStateStatics.aFloat3710)))
+                    val f_5_ = WorldMapRendererStatics.aFloat4673 + (TextureMipDescriptorStatics.aFloat4338 * f_1_ + f * RenderQueueState.aFloat6523 + f_2_ * RendererStatics.aFloat4582)
                     val f_6_ = ((1.0 / sqrt((f_5_ * f_5_ + (f_4_ * f_4_ + f_3_ * f_3_)).toDouble())).toFloat() * class353.anInt4347.toFloat())
                     val class101_sub2 = aHa_Sub3_5419!!.method3934(-96)
                     class101_sub2.method936(class334.anInt4151, 0, (class353.aShort4340 * class334.anInt4162) shr 7, (-(f_3_ * f_6_) + (class334.anInt4158.toFloat() + f_3_)), -(f_6_ * f_5_) + f_5_, (class334.anInt4154.toFloat() + f_4_ - f_4_ * f_6_), (class334.anInt4165 * class353.aShort4341) shr 7)
@@ -113,8 +176,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
                 i_0_++
             }
-            aHa_Sub3_5419!!.method3885(1, true, SceneObjectEntity.aTrigLookupTables_8737)
-            aHa_Sub3_5419!!.method3849(47.toByte(), 1, SceneObjectEntity.aTrigLookupTables_8737)
+            aHa_Sub3_5419!!.method3885(1, true, SceneObjectEntityStatics.aTrigLookupTables_8737)
+            aHa_Sub3_5419!!.method3849(47.toByte(), 1, SceneObjectEntityStatics.aTrigLookupTables_8737)
             aHa_Sub3_5419!!.C(true)
         }
         if (i < 70) ia(112.toShort(), 86.toShort())
@@ -235,9 +298,9 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             anIntArray5429!![i] = anIntArray5429!![i] shl 4
             i++
         }
-        SpriteLoadValidator.anInt4795 = 0
-        KeyboardInputSource.anInt4274 = 0
-        SpriteArchiveLoader.anInt386 = 0
+        SpriteLoadValidatorStatics.anInt4795 = 0
+        KeyboardInputSourceStatics.anInt4274 = 0
+        SpriteArchiveLoaderStatics.anInt386 = 0
         return true
     }
 
@@ -259,8 +322,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
 
     public override fun VA(i: Int) {
         anInt5479++
-        val i_18_ = TrigLookupTables.anIntArray1207!![i]
-        val i_19_ = TrigLookupTables.anIntArray1204!![i]
+        val i_18_ = TrigLookupTablesStatics.anIntArray1207!![i]
+        val i_19_ = TrigLookupTablesStatics.anIntArray1204!![i]
         var i_20_ = 0
         while (anInt5433 > i_20_) {
             val i_21_ = ((anIntArray5511!![i_20_] * i_19_ + i_18_ * anIntArray5519!![i_20_]) shr 14)
@@ -277,7 +340,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             anInt5414++
             return method662(i, i_23_, -1, 127, i_22_, bool, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.MA(" + i + ',' + i_22_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_23_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.MA(" + i + ',' + i_22_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_23_ + ')'))
         }
     }
 
@@ -317,7 +380,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             method665(41, var_r_Sub1_29_)
             return var_r_Sub1_29_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "nca.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "nca.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
         }
     }
 
@@ -347,16 +410,16 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             val class101_sub2_34_ = aHa_Sub3_5419!!.aClass101_Sub2_8080
             val f = (class101_sub2_34_.aFloat5729 + ((class101_sub2_34_.aFloat5711 * class101_sub2.aFloat5729) + (class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5710) + (class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5724)))
             val f_35_ = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5724) + ((class101_sub2.aFloat5710 * class101_sub2_34_.aFloat5722) + (class101_sub2.aFloat5729 * class101_sub2_34_.aFloat5708)) + class101_sub2_34_.aFloat5710)
-            ShortMatrixNode.aFloat9516 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5716) + ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5711) + (class101_sub2.aFloat5732 * class101_sub2_34_.aFloat5700)))
+            ShortMatrixNodeStatics.aFloat9516 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5716) + ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5711) + (class101_sub2.aFloat5732 * class101_sub2_34_.aFloat5700)))
             RenderQueueState.aFloat6523 = ((class101_sub2.aFloat5736 * class101_sub2_34_.aFloat5716) + ((class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5736)))
-            BufferToggleState.aFloat3710 = ((class101_sub2.aFloat5722 * class101_sub2_34_.aFloat5722) + (class101_sub2_34_.aFloat5708 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5691))
-            Renderer.aFloat4582 = ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5736) + (class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5716))
-            DynamicSceneObjectEntity.aFloat10199 = ((class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5704) + ((class101_sub2_34_.aFloat5711 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5722)))
-            TextureTileRenderer.aFloat6835 = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5736) + ((class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5708 * class101_sub2_34_.aFloat5722)))
-            OggMediaStream.aFloat1010 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5736) + ((class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5711)))
+            BufferToggleStateStatics.aFloat3710 = ((class101_sub2.aFloat5722 * class101_sub2_34_.aFloat5722) + (class101_sub2_34_.aFloat5708 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5691))
+            RendererStatics.aFloat4582 = ((class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5736) + (class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5716))
+            DynamicSceneObjectEntityStatics.aFloat10199 = ((class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5704) + ((class101_sub2_34_.aFloat5711 * class101_sub2.aFloat5700) + (class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5722)))
+            TextureTileRendererStatics.aFloat6835 = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5736) + ((class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5708 * class101_sub2_34_.aFloat5722)))
+            OggMediaStreamStatics.aFloat1010 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5736) + ((class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5711)))
             val f_36_ = (class101_sub2_34_.aFloat5724 + ((class101_sub2_34_.aFloat5716 * class101_sub2.aFloat5724) + ((class101_sub2_34_.aFloat5736 * class101_sub2.aFloat5729) + (class101_sub2.aFloat5710 * (class101_sub2_34_.aFloat5691)))))
-            SceneEffectMarker.aFloat6430 = ((class101_sub2_34_.aFloat5722 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5732))
-            TextureMipDescriptor.aFloat4338 = ((class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5722) + (class101_sub2.aFloat5700 * class101_sub2_34_.aFloat5736) + (class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5716))
+            SceneEffectMarkerStatics.aFloat6430 = ((class101_sub2_34_.aFloat5722 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5732))
+            TextureMipDescriptorStatics.aFloat4338 = ((class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5722) + (class101_sub2.aFloat5700 * class101_sub2_34_.aFloat5736) + (class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5716))
             var bool_37_ = false
             var f_38_ = 3.4028235E38f
             var f_39_ = -3.4028235E38f
@@ -377,38 +440,38 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             val i_52_ = -(i_46_ shl i_30_) + i_49_
             val i_53_ = (i_44_ shl i_30_) + i_47_
             val i_54_ = i_48_ + (i_45_ shl i_30_)
-            OpenGlTerrainTile.anIntArray8269!![0] = i_50_
+            OpenGlTerrainTileStatics.anIntArray8269!![0] = i_50_
             val i_55_ = (i_46_ shl i_30_) + i_49_
-            ContactEntry.anIntArray9612!![0] = i_51_
-            OpenGlTerrainTile.anIntArray8269!![1] = i_53_
+            ContactEntryStatics.anIntArray9612!![0] = i_51_
+            OpenGlTerrainTileStatics.anIntArray8269!![1] = i_53_
             MapElementManager.anIntArray4463!![0] = i_52_
-            ContactEntry.anIntArray9612!![1] = i_51_
+            ContactEntryStatics.anIntArray9612!![1] = i_51_
             MapElementManager.anIntArray4463!![1] = i_52_
-            OpenGlTerrainTile.anIntArray8269!![2] = i_50_
-            ContactEntry.anIntArray9612!![2] = i_54_
+            OpenGlTerrainTileStatics.anIntArray8269!![2] = i_50_
+            ContactEntryStatics.anIntArray9612!![2] = i_54_
             MapElementManager.anIntArray4463!![2] = i_52_
-            OpenGlTerrainTile.anIntArray8269!![3] = i_53_
-            ContactEntry.anIntArray9612!![3] = i_54_
+            OpenGlTerrainTileStatics.anIntArray8269!![3] = i_53_
+            ContactEntryStatics.anIntArray9612!![3] = i_54_
             MapElementManager.anIntArray4463!![3] = i_52_
-            OpenGlTerrainTile.anIntArray8269!![4] = i_50_
-            ContactEntry.anIntArray9612!![4] = i_51_
+            OpenGlTerrainTileStatics.anIntArray8269!![4] = i_50_
+            ContactEntryStatics.anIntArray9612!![4] = i_51_
             MapElementManager.anIntArray4463!![4] = i_55_
-            OpenGlTerrainTile.anIntArray8269!![5] = i_53_
-            ContactEntry.anIntArray9612!![5] = i_51_
+            OpenGlTerrainTileStatics.anIntArray8269!![5] = i_53_
+            ContactEntryStatics.anIntArray9612!![5] = i_51_
             MapElementManager.anIntArray4463!![5] = i_55_
-            OpenGlTerrainTile.anIntArray8269!![6] = i_50_
-            ContactEntry.anIntArray9612!![6] = i_54_
-            OpenGlTerrainTile.anIntArray8269!![7] = i_53_
+            OpenGlTerrainTileStatics.anIntArray8269!![6] = i_50_
+            ContactEntryStatics.anIntArray9612!![6] = i_54_
+            OpenGlTerrainTileStatics.anIntArray8269!![7] = i_53_
             MapElementManager.anIntArray4463!![6] = i_55_
-            ContactEntry.anIntArray9612!![7] = i_54_
+            ContactEntryStatics.anIntArray9612!![7] = i_54_
             MapElementManager.anIntArray4463!![7] = i_55_
             for (i_56_ in 0..7) {
-                val f_57_ = OpenGlTerrainTile.anIntArray8269!![i_56_].toFloat()
+                val f_57_ = OpenGlTerrainTileStatics.anIntArray8269!![i_56_].toFloat()
                 val f_58_ = MapElementManager.anIntArray4463!![i_56_].toFloat()
-                val f_59_ = ContactEntry.anIntArray9612!![i_56_].toFloat()
-                val f_60_ = (f_57_ * TextureTileRenderer.aFloat6835 + f_59_ * BufferToggleState.aFloat3710 + SceneEffectMarker.aFloat6430 * f_58_ + f_35_)
-                val f_61_ = (OggMediaStream.aFloat1010 * f_57_ + f_59_ * DynamicSceneObjectEntity.aFloat10199 + f_58_ * ShortMatrixNode.aFloat9516 + f)
-                var f_62_ = f_36_ + (f_58_ * Renderer.aFloat4582 + (TextureMipDescriptor.aFloat4338 * f_59_ + RenderQueueState.aFloat6523 * f_57_))
+                val f_59_ = ContactEntryStatics.anIntArray9612!![i_56_].toFloat()
+                val f_60_ = (f_57_ * TextureTileRendererStatics.aFloat6835 + f_59_ * BufferToggleStateStatics.aFloat3710 + SceneEffectMarkerStatics.aFloat6430 * f_58_ + f_35_)
+                val f_61_ = (OggMediaStreamStatics.aFloat1010 * f_57_ + f_59_ * DynamicSceneObjectEntityStatics.aFloat10199 + f_58_ * ShortMatrixNodeStatics.aFloat9516 + f)
+                var f_62_ = f_36_ + (f_58_ * RendererStatics.aFloat4582 + (TextureMipDescriptorStatics.aFloat4338 * f_59_ + RenderQueueState.aFloat6523 * f_57_))
                 if (f_62_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
                     if (i_31_ > 0) f_62_ = i_31_.toFloat()
                     val f_63_ = (f_61_ * i_42_.toFloat() / f_62_ + aHa_Sub3_5419!!.anInt8094.toFloat())
@@ -422,17 +485,17 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             }
             if (bool_37_ && f_38_ < i.toFloat() && f_39_ > i.toFloat() && f_40_ < i_33_.toFloat() && f_41_ > i_33_.toFloat()) {
                 if (bool) return true
-                if (anInt5475 > WallSceneEntity.anIntArray9949!!.size) {
-                    AbstractCameraTransform.anIntArray1593 = IntArray(anInt5475)
-                    WallSceneEntity.anIntArray9949 = IntArray(anInt5475)
+                if (anInt5475 > WallSceneEntityStatics.anIntArray9949!!.size) {
+                    AbstractCameraTransformStatics.anIntArray1593 = IntArray(anInt5475)
+                    WallSceneEntityStatics.anIntArray9949 = IntArray(anInt5475)
                 }
                 for (i_65_ in 0..<anInt5433) {
                     val f_66_ = anIntArray5429!![i_65_].toFloat()
                     val f_67_ = anIntArray5519!![i_65_].toFloat()
                     val f_68_ = anIntArray5511!![i_65_].toFloat()
-                    var f_69_ = (Renderer.aFloat4582 * f_66_ + (f_68_ * RenderQueueState.aFloat6523 + TextureMipDescriptor.aFloat4338 * f_67_) + f_36_)
-                    val f_70_ = f + (DynamicSceneObjectEntity.aFloat10199 * f_67_ + OggMediaStream.aFloat1010 * f_68_ + f_66_ * ShortMatrixNode.aFloat9516)
-                    val f_71_ = (SceneEffectMarker.aFloat6430 * f_66_ + (f_68_ * TextureTileRenderer.aFloat6835 + BufferToggleState.aFloat3710 * f_67_) + f_35_)
+                    var f_69_ = (RendererStatics.aFloat4582 * f_66_ + (f_68_ * RenderQueueState.aFloat6523 + TextureMipDescriptorStatics.aFloat4338 * f_67_) + f_36_)
+                    val f_70_ = f + (DynamicSceneObjectEntityStatics.aFloat10199 * f_67_ + OggMediaStreamStatics.aFloat1010 * f_68_ + f_66_ * ShortMatrixNodeStatics.aFloat9516)
+                    val f_71_ = (SceneEffectMarkerStatics.aFloat6430 * f_66_ + (f_68_ * TextureTileRendererStatics.aFloat6835 + BufferToggleStateStatics.aFloat3710 * f_67_) + f_35_)
                     if (f_69_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
                         if (i_31_ > 0) f_69_ = i_31_.toFloat()
                         val i_72_ = (i_42_.toFloat() * f_70_ / f_69_ + (aHa_Sub3_5419!!.anInt8094).toFloat()).toInt()
@@ -442,8 +505,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         for (i_76_ in i_74_..<i_75_) {
                             val i_77_ = -1 + aShortArray5439!![i_76_]
                             if (i_77_ == -1) break
-                            WallSceneEntity.anIntArray9949!![i_77_] = i_72_
-                            AbstractCameraTransform.anIntArray1593!![i_77_] = i_73_
+                            WallSceneEntityStatics.anIntArray9949!![i_77_] = i_72_
+                            AbstractCameraTransformStatics.anIntArray1593!![i_77_] = i_73_
                         }
                     } else {
                         val i_78_ = anIntArray5455!![i_65_]
@@ -452,23 +515,23 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         while (i_79_ > i_80_) {
                             val i_81_ = aShortArray5439!![i_80_] + -1
                             if (i_81_ == -1) break
-                            WallSceneEntity.anIntArray9949!![aShortArray5439!![i_80_] - 1] = -999999
+                            WallSceneEntityStatics.anIntArray9949!![aShortArray5439!![i_80_] - 1] = -999999
                             i_80_++
                         }
                     }
                 }
                 var i_82_ = 0
                 while (anInt5478 > i_82_) {
-                    if ((WallSceneEntity.anIntArray9949!![aShortArray5508!![i_82_].toInt()]) != -999999 && (WallSceneEntity.anIntArray9949!![aShortArray5495!![i_82_].toInt()]) != -999999 && (WallSceneEntity.anIntArray9949!![aShortArray5512!![i_82_].toInt()]) != -999999 && method671(
+                    if ((WallSceneEntityStatics.anIntArray9949!![aShortArray5508!![i_82_].toInt()]) != -999999 && (WallSceneEntityStatics.anIntArray9949!![aShortArray5495!![i_82_].toInt()]) != -999999 && (WallSceneEntityStatics.anIntArray9949!![aShortArray5512!![i_82_].toInt()]) != -999999 && method671(
                             i,
-                            (WallSceneEntity.anIntArray9949!![aShortArray5512!![i_82_].toInt()]),
-                            (WallSceneEntity.anIntArray9949!![aShortArray5495!![i_82_].toInt()]),
-                            (AbstractCameraTransform.anIntArray1593!![aShortArray5512!![i_82_].toInt()]),
-                            (AbstractCameraTransform.anIntArray1593!![aShortArray5508!![i_82_].toInt()]),
+                            (WallSceneEntityStatics.anIntArray9949!![aShortArray5512!![i_82_].toInt()]),
+                            (WallSceneEntityStatics.anIntArray9949!![aShortArray5495!![i_82_].toInt()]),
+                            (AbstractCameraTransformStatics.anIntArray1593!![aShortArray5512!![i_82_].toInt()]),
+                            (AbstractCameraTransformStatics.anIntArray1593!![aShortArray5508!![i_82_].toInt()]),
                             i_33_,
                             0,
-                            (WallSceneEntity.anIntArray9949!![aShortArray5508!![i_82_].toInt()]),
-                            (AbstractCameraTransform.anIntArray1593!![aShortArray5495!![i_82_].toInt()])
+                            (WallSceneEntityStatics.anIntArray9949!![aShortArray5508!![i_82_].toInt()]),
+                            (AbstractCameraTransformStatics.anIntArray1593!![aShortArray5495!![i_82_].toInt()])
                         )
                     ) return true
                     i_82_++
@@ -476,7 +539,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             }
             return false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.AB(" + i + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + i_33_ + ',' + bool + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.AB(" + i + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + i_33_ + ',' + bool + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -485,7 +548,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
         if (aBoolean5402) {
             aBoolean5402 = false
             if (aModelFacePriorityNodeArray5457 == null && aWidgetRedrawRegionArray5474 == null && aTextureMipDescriptorArray5524 == null) {
-                if (anIntArray5511 != null && !VarpStore.method1317(anInt5472, (-91).toByte(), anInt5463)) {
+                if (anIntArray5511 != null && !VarpStoreStatics.method1317(anInt5472, (-91).toByte(), anInt5463)) {
                     if (aBufferToggleState_5520 == null || aBufferToggleState_5520!!.method2197((-62).toByte())) {
                         if (!aBoolean5477) method675(0)
                         anIntArray5511 = null
@@ -508,7 +571,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 anIntArray5455 = null
                 aShortArray5439 = null
             }
-            if (aByteArray5499 != null && !IsaacCipher.method776(anInt5472, anInt5463, i + -196608)) {
+            if (aByteArray5499 != null && !IsaacCipherStatics.method776(anInt5472, anInt5463, i + -196608)) {
                 if (if ((0x37 and anInt5472) != 0) (aBufferToggleState_5424 == null || aBufferToggleState_5424!!.method2197((-10).toByte())) else (aBufferToggleState_5482 == null || aBufferToggleState_5482!!.method2197((-73).toByte()))) {
                     aShortArray5436 = null
                     aShortArray5438 = aShortArray5436
@@ -520,11 +583,11 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 if (aBufferToggleState_5482 != null && !aBufferToggleState_5482!!.method2197((-74).toByte())) aBoolean5402 = true
                 else aShortArray5486 = null
             }
-            if (aByteArray5515 != null && !TextureMapImageNode.method3124(anInt5472, (-119).toByte(), anInt5463)) {
+            if (aByteArray5515 != null && !TextureMapImageNodeStatics.method3124(anInt5472, (-119).toByte(), anInt5463)) {
                 if (aBufferToggleState_5482 == null || aBufferToggleState_5482!!.method2197((-20).toByte())) aByteArray5515 = null
                 else aBoolean5402 = true
             }
-            if (aFloatArray5476 != null && !FrameStatsReset.method1132(1673, anInt5472, anInt5463)) {
+            if (aFloatArray5476 != null && !FrameStatsResetStatics.method1132(1673, anInt5472, anInt5463)) {
                 if (aBufferToggleState_5460 == null || aBufferToggleState_5460!!.method2197((-66).toByte())) {
                     aFloatArray5506 = null
                     aFloatArray5476 = aFloatArray5506
@@ -550,15 +613,15 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 if (aBufferToggleState_5482 == null || aBufferToggleState_5482!!.method2197((-36).toByte())) aShortArray5416 = null
                 else aBoolean5402 = true
             }
-            if (anIntArrayArray5492 != null && !GlElementArrayBuffer.method1158(anInt5472, -1, anInt5463)) {
+            if (anIntArrayArray5492 != null && !GlElementArrayBufferStatics.method1158(anInt5472, -1, anInt5463)) {
                 aShortArray5432 = null
                 anIntArrayArray5492 = null
             }
-            if (anIntArrayArray5413 != null && !KeyboardLayoutConfig.method1257(-83, anInt5472, anInt5463)) {
+            if (anIntArrayArray5413 != null && !KeyboardLayoutConfigStatics.method1257(-83, anInt5472, anInt5463)) {
                 anIntArrayArray5413 = null
                 aShortArray5494 = null
             }
-            if (anIntArrayArray5412 != null && !IsaacCipher.method780(anInt5472, 0, anInt5463)) anIntArrayArray5412 = null
+            if (anIntArrayArray5412 != null && !IsaacCipherStatics.method780(anInt5472, 0, anInt5463)) anIntArrayArray5412 = null
             if (anIntArray5404 != null && (0x800 and anInt5463) == 0 && (anInt5463 and 0x40000) == 0) {
                 anIntArray5404 = null
                 anIntArray5473 = null
@@ -569,8 +632,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
 
     public override fun a(i: Int) {
         anInt5435++
-        val i_83_ = TrigLookupTables.anIntArray1207!![i]
-        val i_84_ = TrigLookupTables.anIntArray1204!![i]
+        val i_83_ = TrigLookupTablesStatics.anIntArray1207!![i]
+        val i_84_ = TrigLookupTablesStatics.anIntArray1204!![i]
         var i_85_ = 0
         while (anInt5433 > i_85_) {
             val i_86_ = ((i_84_ * anIntArray5511!![i_85_] + anIntArray5429!![i_85_] * i_83_) shr 14)
@@ -584,8 +647,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
 
     public override fun FA(i: Int) {
         anInt5488++
-        val i_87_ = TrigLookupTables.anIntArray1207!![i]
-        val i_88_ = TrigLookupTables.anIntArray1204!![i]
+        val i_87_ = TrigLookupTablesStatics.anIntArray1207!![i]
+        val i_88_ = TrigLookupTablesStatics.anIntArray1204!![i]
         for (i_89_ in 0..<anInt5433) {
             val i_90_ = (anIntArray5519!![i_89_] * i_88_ + -(anIntArray5429!![i_89_] * i_87_) shr 14)
             anIntArray5429!![i_89_] = (anIntArray5429!![i_89_] * i_88_ + anIntArray5519!![i_89_] * i_87_) shr 14
@@ -625,23 +688,23 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
         anInt5480++
         if (i == 0) {
             var i_94_ = 0
-            SpriteLoadValidator.anInt4795 = 0
-            KeyboardInputSource.anInt4274 = 0
-            SpriteArchiveLoader.anInt386 = 0
+            SpriteLoadValidatorStatics.anInt4795 = 0
+            KeyboardInputSourceStatics.anInt4274 = 0
+            SpriteArchiveLoaderStatics.anInt386 = 0
             for (i_95_ in 0..<anInt5433) {
-                SpriteLoadValidator.anInt4795 += anIntArray5511!![i_95_]
-                SpriteArchiveLoader.anInt386 += anIntArray5519!![i_95_]
-                KeyboardInputSource.anInt4274 += anIntArray5429!![i_95_]
+                SpriteLoadValidatorStatics.anInt4795 += anIntArray5511!![i_95_]
+                SpriteArchiveLoaderStatics.anInt386 += anIntArray5519!![i_95_]
+                KeyboardInputSourceStatics.anInt4274 += anIntArray5429!![i_95_]
                 i_94_++
             }
             if (i_94_ > 0) {
-                KeyboardInputSource.anInt4274 = i_93_ + KeyboardInputSource.anInt4274 / i_94_
-                SpriteArchiveLoader.anInt386 = i_92_ + SpriteArchiveLoader.anInt386 / i_94_
-                SpriteLoadValidator.anInt4795 = i_91_ + SpriteLoadValidator.anInt4795 / i_94_
+                KeyboardInputSourceStatics.anInt4274 = i_93_ + KeyboardInputSourceStatics.anInt4274 / i_94_
+                SpriteArchiveLoaderStatics.anInt386 = i_92_ + SpriteArchiveLoaderStatics.anInt386 / i_94_
+                SpriteLoadValidatorStatics.anInt4795 = i_91_ + SpriteLoadValidatorStatics.anInt4795 / i_94_
             } else {
-                SpriteArchiveLoader.anInt386 = i_92_
-                KeyboardInputSource.anInt4274 = i_93_
-                SpriteLoadValidator.anInt4795 = i_91_
+                SpriteArchiveLoaderStatics.anInt386 = i_92_
+                KeyboardInputSourceStatics.anInt4274 = i_93_
+                SpriteLoadValidatorStatics.anInt4795 = i_91_
             }
         } else if (i == 1) {
             for (i_96_ in 0..<anInt5433) {
@@ -652,46 +715,46 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
         } else if (i == 2) {
             var i_97_ = 0
             while (anInt5433 > i_97_) {
-                anIntArray5511!![i_97_] -= SpriteLoadValidator.anInt4795
-                anIntArray5519!![i_97_] -= SpriteArchiveLoader.anInt386
-                anIntArray5429!![i_97_] -= KeyboardInputSource.anInt4274
+                anIntArray5511!![i_97_] -= SpriteLoadValidatorStatics.anInt4795
+                anIntArray5519!![i_97_] -= SpriteArchiveLoaderStatics.anInt386
+                anIntArray5429!![i_97_] -= KeyboardInputSourceStatics.anInt4274
                 if (i_93_ != 0) {
-                    val i_98_ = TrigLookupTables.anIntArray1207!![i_93_]
-                    val i_99_ = TrigLookupTables.anIntArray1204!![i_93_]
+                    val i_98_ = TrigLookupTablesStatics.anIntArray1207!![i_93_]
+                    val i_99_ = TrigLookupTablesStatics.anIntArray1204!![i_93_]
                     val i_100_ = ((16383 + i_99_ * anIntArray5511!![i_97_] + anIntArray5519!![i_97_] * i_98_) shr 14)
                     anIntArray5519!![i_97_] = (16383 + (-(anIntArray5511!![i_97_] * i_98_) + anIntArray5519!![i_97_] * i_99_) shr 14)
                     anIntArray5511!![i_97_] = i_100_
                 }
                 if (i_91_ != 0) {
-                    val i_101_ = TrigLookupTables.anIntArray1207!![i_91_]
-                    val i_102_ = TrigLookupTables.anIntArray1204!![i_91_]
+                    val i_101_ = TrigLookupTablesStatics.anIntArray1207!![i_91_]
+                    val i_102_ = TrigLookupTablesStatics.anIntArray1204!![i_91_]
                     val i_103_ = (16383 + (anIntArray5519!![i_97_] * i_102_ + -(i_101_ * anIntArray5429!![i_97_])) shr 14)
                     anIntArray5429!![i_97_] = (anIntArray5429!![i_97_] * i_102_ + (anIntArray5519!![i_97_] * i_101_ - -16383)) shr 14
                     anIntArray5519!![i_97_] = i_103_
                 }
                 if (i_92_ != 0) {
-                    val i_104_ = TrigLookupTables.anIntArray1207!![i_92_]
-                    val i_105_ = TrigLookupTables.anIntArray1204!![i_92_]
+                    val i_104_ = TrigLookupTablesStatics.anIntArray1207!![i_92_]
+                    val i_105_ = TrigLookupTablesStatics.anIntArray1204!![i_92_]
                     val i_106_ = ((i_105_ * anIntArray5511!![i_97_] + anIntArray5429!![i_97_] * i_104_ + 16383) shr 14)
                     anIntArray5429!![i_97_] = (16383 + -(i_104_ * anIntArray5511!![i_97_]) + i_105_ * anIntArray5429!![i_97_]) shr 14
                     anIntArray5511!![i_97_] = i_106_
                 }
-                anIntArray5511!![i_97_] += SpriteLoadValidator.anInt4795
-                anIntArray5519!![i_97_] += SpriteArchiveLoader.anInt386
-                anIntArray5429!![i_97_] += KeyboardInputSource.anInt4274
+                anIntArray5511!![i_97_] += SpriteLoadValidatorStatics.anInt4795
+                anIntArray5519!![i_97_] += SpriteArchiveLoaderStatics.anInt386
+                anIntArray5429!![i_97_] += KeyboardInputSourceStatics.anInt4274
                 i_97_++
             }
         } else if (i == 3) {
             for (i_107_ in 0..<anInt5433) {
-                anIntArray5511!![i_107_] -= SpriteLoadValidator.anInt4795
-                anIntArray5519!![i_107_] -= SpriteArchiveLoader.anInt386
-                anIntArray5429!![i_107_] -= KeyboardInputSource.anInt4274
+                anIntArray5511!![i_107_] -= SpriteLoadValidatorStatics.anInt4795
+                anIntArray5519!![i_107_] -= SpriteArchiveLoaderStatics.anInt386
+                anIntArray5429!![i_107_] -= KeyboardInputSourceStatics.anInt4274
                 anIntArray5511!![i_107_] = anIntArray5511!![i_107_] * i_91_ / 128
                 anIntArray5519!![i_107_] = anIntArray5519!![i_107_] * i_92_ / 128
                 anIntArray5429!![i_107_] = anIntArray5429!![i_107_] * i_93_ / 128
-                anIntArray5511!![i_107_] += SpriteLoadValidator.anInt4795
-                anIntArray5519!![i_107_] += SpriteArchiveLoader.anInt386
-                anIntArray5429!![i_107_] += KeyboardInputSource.anInt4274
+                anIntArray5511!![i_107_] += SpriteLoadValidatorStatics.anInt4795
+                anIntArray5519!![i_107_] += SpriteArchiveLoaderStatics.anInt386
+                anIntArray5429!![i_107_] += KeyboardInputSourceStatics.anInt4274
             }
         } else if (i == 5) {
             var i_108_ = 0
@@ -727,13 +790,13 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 } else i_114_ = 0
                 if (i_115_ < 0) i_115_ = 0
                 else if (i_115_ > 127) i_115_ = 127
-                aShortArray5486!![i_111_] = (BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(i_114_ shl 7, i_113_ shl 10), i_115_)).toShort()
+                aShortArray5486!![i_111_] = (BoundsConstraintEntryStatics.method2057(BoundsConstraintEntryStatics.method2057(i_114_ shl 7, i_113_ shl 10), i_115_)).toShort()
             }
             if (aTextureMipDescriptorArray5524 != null) {
                 for (i_116_ in 0..<anInt5406) {
                     val class353 = aTextureMipDescriptorArray5524!![i_116_]!!
                     val class334 = aCameraOrModelTransformArray5442!![i_116_]!!
-                    class334.anInt4156 = ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class334.anInt4156))
+                    class334.anInt4156 = ((ParticleEmitterNodeStatics.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class334.anInt4156))
                 }
             }
             method670(-109)
@@ -778,9 +841,9 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
 
     private fun method665(i: Int, var_r_Sub1: NativeRenderNode) {
         try {
-            if (anInt5475 > WallSceneEntity.anIntArray9949!!.size) {
-                AbstractCameraTransform.anIntArray1593 = IntArray(anInt5475)
-                WallSceneEntity.anIntArray9949 = IntArray(anInt5475)
+            if (anInt5475 > WallSceneEntityStatics.anIntArray9949!!.size) {
+                AbstractCameraTransformStatics.anIntArray1593 = IntArray(anInt5475)
+                WallSceneEntityStatics.anIntArray9949 = IntArray(anInt5475)
             }
             anInt5453++
             if (i >= 0) {
@@ -793,8 +856,8 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     for (i_128_ in i_126_..<i_127_) {
                         val i_129_ = aShortArray5439!![i_128_] - 1
                         if (i_129_ == -1) break
-                        WallSceneEntity.anIntArray9949!![i_129_] = i_124_
-                        AbstractCameraTransform.anIntArray1593!![i_129_] = i_125_
+                        WallSceneEntityStatics.anIntArray9949!![i_129_] = i_124_
+                        AbstractCameraTransformStatics.anIntArray1593!![i_129_] = i_125_
                     }
                     i_123_++
                 }
@@ -804,26 +867,26 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         val i_131_ = aShortArray5508!![i_130_]
                         val i_132_ = aShortArray5495!![i_130_]
                         val i_133_ = aShortArray5512!![i_130_]
-                        val i_134_ = WallSceneEntity.anIntArray9949!![i_131_.toInt()]
-                        val i_135_ = WallSceneEntity.anIntArray9949!![i_132_.toInt()]
-                        val i_136_ = WallSceneEntity.anIntArray9949!![i_133_.toInt()]
-                        val i_137_ = AbstractCameraTransform.anIntArray1593!![i_131_.toInt()]
-                        val i_138_ = AbstractCameraTransform.anIntArray1593!![i_132_.toInt()]
-                        val i_139_ = AbstractCameraTransform.anIntArray1593!![i_133_.toInt()]
+                        val i_134_ = WallSceneEntityStatics.anIntArray9949!![i_131_.toInt()]
+                        val i_135_ = WallSceneEntityStatics.anIntArray9949!![i_132_.toInt()]
+                        val i_136_ = WallSceneEntityStatics.anIntArray9949!![i_133_.toInt()]
+                        val i_137_ = AbstractCameraTransformStatics.anIntArray1593!![i_131_.toInt()]
+                        val i_138_ = AbstractCameraTransformStatics.anIntArray1593!![i_132_.toInt()]
+                        val i_139_ = AbstractCameraTransformStatics.anIntArray1593!![i_133_.toInt()]
                         if ((-((i_136_ - i_135_) * (-i_137_ + i_138_)) + (i_138_ - i_139_) * (-i_135_ + i_134_)) > 0) var_r_Sub1.method3287(i_137_, 50, i_134_, i_135_, i_138_, i_139_, i_136_)
                     }
                     i_130_++
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.B(" + i + ',' + (if (var_r_Sub1 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.B(" + i + ',' + (if (var_r_Sub1 != null) "{...}" else "null") + ')'))
         }
     }
 
     public override fun k(i: Int) {
         anInt5490++
-        val i_140_ = TrigLookupTables.anIntArray1207!![i]
-        val i_141_ = TrigLookupTables.anIntArray1204!![i]
+        val i_140_ = TrigLookupTablesStatics.anIntArray1207!![i]
+        val i_141_ = TrigLookupTablesStatics.anIntArray1204!![i]
         for (i_142_ in 0..<anInt5433) {
             val i_143_ = ((anIntArray5511!![i_142_] * i_141_ + anIntArray5429!![i_142_] * i_140_) shr 14)
             anIntArray5429!![i_142_] = (i_141_ * anIntArray5429!![i_142_] + -(i_140_ * anIntArray5511!![i_142_])) shr 14
@@ -893,7 +956,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
         }
     }
 
@@ -933,7 +996,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             if ((0x100 and i) == 0) class64_sub2_154_.aBoolean5428 = aBoolean5428
             else class64_sub2_154_.aBoolean5428 = true
             class64_sub2_154_.aShort5452 = aShort5452
-            val bool_157_ = LoadingBarRenderer.method2217(anInt5472, i, 0)
+            val bool_157_ = LoadingBarRendererStatics.method2217(anInt5472, i, 0)
             val bool_158_ = method3056(i_156_ + -26704, i, anInt5472)
             val bool_159_ = method3073(anInt5472, i, 50.toByte())
             val bool_160_ = bool_157_ or bool_158_ or bool_159_
@@ -970,14 +1033,14 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 class64_sub2_154_.anIntArray5429 = anIntArray5429
                 class64_sub2_154_.anIntArray5519 = anIntArray5519
             }
-            if (CompassSmoother.method2015(i, anInt5472, 7)) {
+            if (CompassSmootherStatics.method2015(i, anInt5472, 7)) {
                 class64_sub2_154_.aBufferToggleState_5520 = class64_sub2_153_!!.aBufferToggleState_5520
                 class64_sub2_154_.aBufferToggleState_5520!!.anInterface5_Impl1_3711 = aBufferToggleState_5520!!.anInterface5_Impl1_3711
                 class64_sub2_154_.aBufferToggleState_5520!!.aBoolean3714 = aBufferToggleState_5520!!.aBoolean3714
                 class64_sub2_154_.aBufferToggleState_5520!!.aBoolean3709 = true
-            } else if (!ServerConnectionInfo.method1258(i, -9301, anInt5472)) class64_sub2_154_.aBufferToggleState_5520 = null
+            } else if (!ServerConnectionInfoStatics.method1258(i, -9301, anInt5472)) class64_sub2_154_.aBufferToggleState_5520 = null
             else class64_sub2_154_.aBufferToggleState_5520 = aBufferToggleState_5520
-            if (DetailLevelOptionState.method1833((-122).toByte(), i, anInt5472)) {
+            if (DetailLevelOptionStateStatics.method1833((-122).toByte(), i, anInt5472)) {
                 if (class64_sub2_153_!!.aShortArray5486 != null && (anInt5478 <= class64_sub2_153_.aShortArray5486!!.size)) class64_sub2_154_.aShortArray5486 = class64_sub2_153_.aShortArray5486
                 else {
                     class64_sub2_153_.aShortArray5486 = ShortArray(anInt5478)
@@ -996,14 +1059,14 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 } else class64_sub2_154_.aByteArray5515 = class64_sub2_153_.aByteArray5515
                 for (i_163_ in 0..<anInt5478) class64_sub2_154_.aByteArray5515!![i_163_] = aByteArray5515!![i_163_]
             } else class64_sub2_154_.aByteArray5515 = aByteArray5515
-            if (HardCacheEntryReference.method3200(i, anInt5472, (-75).toByte())) {
+            if (HardCacheEntryReferenceStatics.method3200(i, anInt5472, (-75).toByte())) {
                 class64_sub2_154_.aBufferToggleState_5482 = class64_sub2_153_!!.aBufferToggleState_5482
                 class64_sub2_154_.aBufferToggleState_5482!!.aBoolean3709 = true
                 class64_sub2_154_.aBufferToggleState_5482!!.aBoolean3714 = aBufferToggleState_5482!!.aBoolean3714
                 class64_sub2_154_.aBufferToggleState_5482!!.anInterface5_Impl1_3711 = aBufferToggleState_5482!!.anInterface5_Impl1_3711
-            } else if (HuffmanCodec.method2224(i, 117.toByte(), anInt5472)) class64_sub2_154_.aBufferToggleState_5482 = aBufferToggleState_5482
+            } else if (HuffmanCodecStatics.method2224(i, 117.toByte(), anInt5472)) class64_sub2_154_.aBufferToggleState_5482 = aBufferToggleState_5482
             else class64_sub2_154_.aBufferToggleState_5482 = null
-            if (LocalizedText.method2058(i, anInt5472, 116)) {
+            if (LocalizedTextStatics.method2058(i, anInt5472, 116)) {
                 if (class64_sub2_153_!!.aShortArray5493 == null || (anInt5475 > class64_sub2_153_.aShortArray5493!!.size)) {
                     val i_164_ = anInt5475
                     class64_sub2_153_.aShortArray5436 = ShortArray(i_164_)
@@ -1054,12 +1117,12 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 class64_sub2_154_.aShortArray5493 = aShortArray5493
                 class64_sub2_154_.aShortArray5438 = aShortArray5438
             }
-            if (Crc64Hashable.method1113(i, anInt5472, -30)) {
+            if (Crc64HashableStatics.method1113(i, anInt5472, -30)) {
                 class64_sub2_154_.aBufferToggleState_5424 = class64_sub2_153_!!.aBufferToggleState_5424
                 class64_sub2_154_.aBufferToggleState_5424!!.anInterface5_Impl1_3711 = aBufferToggleState_5424!!.anInterface5_Impl1_3711
                 class64_sub2_154_.aBufferToggleState_5424!!.aBoolean3709 = true
                 class64_sub2_154_.aBufferToggleState_5424!!.aBoolean3714 = aBufferToggleState_5424!!.aBoolean3714
-            } else if (!GlowPostProcessor.method1412((-35).toByte(), anInt5472, i)) class64_sub2_154_.aBufferToggleState_5424 = null
+            } else if (!GlowPostProcessorStatics.method1412((-35).toByte(), anInt5472, i)) class64_sub2_154_.aBufferToggleState_5424 = null
             else class64_sub2_154_.aBufferToggleState_5424 = aBufferToggleState_5424
             if (method3194(i, anInt5472, 121.toByte())) {
                 if (class64_sub2_153_!!.aFloatArray5476 == null || (class64_sub2_153_.aFloatArray5476!!.size < anInt5478)) {
@@ -1080,7 +1143,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 class64_sub2_154_.aFloatArray5476 = aFloatArray5476
                 class64_sub2_154_.aFloatArray5506 = aFloatArray5506
             }
-            if (ParticleDefLoader.method1379(4, anInt5472, i)) {
+            if (ParticleDefLoaderStatics.method1379(4, anInt5472, i)) {
                 class64_sub2_154_.aBufferToggleState_5460 = class64_sub2_153_!!.aBufferToggleState_5460
                 class64_sub2_154_.aBufferToggleState_5460!!.anInterface5_Impl1_3711 = aBufferToggleState_5460!!.anInterface5_Impl1_3711
                 class64_sub2_154_.aBufferToggleState_5460!!.aBoolean3714 = aBufferToggleState_5460!!.aBoolean3714
@@ -1118,7 +1181,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 class64_sub2_154_.aAsyncTaskHandle_5485!!.anInterface5_Impl2_2572 = aAsyncTaskHandle_5485!!.anInterface5_Impl2_2572
             } else if (method3563(i, 56.toByte(), anInt5472)) class64_sub2_154_.aAsyncTaskHandle_5485 = aAsyncTaskHandle_5485
             else class64_sub2_154_.aAsyncTaskHandle_5485 = null
-            if (BufferedMessageQueue.method2077(-122, anInt5472, i)) {
+            if (BufferedMessageQueueStatics.method2077(-122, anInt5472, i)) {
                 if (class64_sub2_153_!!.aShortArray5423 != null && class64_sub2_153_.aShortArray5423!!.size >= anInt5478) class64_sub2_154_.aShortArray5423 = class64_sub2_153_.aShortArray5423
                 else {
                     val i_172_ = anInt5478
@@ -1143,7 +1206,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     val i_175_ = anInt5406
                     class64_sub2_153_.aCameraOrModelTransformArray5442 = arrayOfNulls<CameraOrModelTransform>(i_175_)
                     class64_sub2_154_.aCameraOrModelTransformArray5442 = class64_sub2_153_.aCameraOrModelTransformArray5442
-                    for (i_176_ in 0..<anInt5406) class64_sub2_154_.aCameraOrModelTransformArray5442!![i_176_] = (aCameraOrModelTransformArray5442!![i_176_]!!.method2649(CameraSplineNode.method2955(i_156_, 26792)))
+                    for (i_176_ in 0..<anInt5406) class64_sub2_154_.aCameraOrModelTransformArray5442!![i_176_] = (aCameraOrModelTransformArray5442!![i_176_]!!.method2649(CameraSplineNodeStatics.method2955(i_156_, 26792)))
                 }
             } else class64_sub2_154_.aCameraOrModelTransformArray5442 = aCameraOrModelTransformArray5442
             if (aBoolean5477) {
@@ -1175,7 +1238,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             class64_sub2_154_.aShortArray5470 = aShortArray5470
             return class64_sub2_154_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.U(" + bool + ',' + (if (class64_sub2_153_ != null) "{...}" else "null") + ',' + (if (class64_sub2_154_ != null) "{...}" else "null") + ',' + i + ',' + bool_155_ + ',' + i_156_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.U(" + bool + ',' + (if (class64_sub2_153_ != null) "{...}" else "null") + ',' + (if (class64_sub2_154_ != null) "{...}" else "null") + ',' + i + ',' + bool_155_ + ',' + i_156_ + ')'))
         }
     }
 
@@ -1227,7 +1290,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     i++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "nca.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
+                throw SoundBankPatchStatics.method2929(runtimeexception, "nca.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -1246,10 +1309,10 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 val class101_sub2 = aHa_Sub3_5419!!.aClass101_Sub2_8080
                 val class101_sub2_180_ = abstractCameraTransform as FloatCameraTransform
                 if (!aBoolean5477) method675(0)
-                WorldMapRenderer.aFloat4673 = (class101_sub2.aFloat5724 + ((class101_sub2_180_.aFloat5710 * class101_sub2.aFloat5691) + (class101_sub2_180_.aFloat5729 * class101_sub2.aFloat5736) + (class101_sub2_180_.aFloat5724 * class101_sub2.aFloat5716)))
-                TextureMipDescriptor.aFloat4338 = ((class101_sub2.aFloat5691 * class101_sub2_180_.aFloat5722) + (class101_sub2.aFloat5736 * class101_sub2_180_.aFloat5700) + (class101_sub2.aFloat5716 * class101_sub2_180_.aFloat5691))
-                val f = (WorldMapRenderer.aFloat4673 + anInt5461.toFloat() * TextureMipDescriptor.aFloat4338)
-                val f_181_ = (TextureMipDescriptor.aFloat4338 * anInt5509.toFloat() + WorldMapRenderer.aFloat4673)
+                WorldMapRendererStatics.aFloat4673 = (class101_sub2.aFloat5724 + ((class101_sub2_180_.aFloat5710 * class101_sub2.aFloat5691) + (class101_sub2_180_.aFloat5729 * class101_sub2.aFloat5736) + (class101_sub2_180_.aFloat5724 * class101_sub2.aFloat5716)))
+                TextureMipDescriptorStatics.aFloat4338 = ((class101_sub2.aFloat5691 * class101_sub2_180_.aFloat5722) + (class101_sub2.aFloat5736 * class101_sub2_180_.aFloat5700) + (class101_sub2.aFloat5716 * class101_sub2_180_.aFloat5691))
+                val f = (WorldMapRendererStatics.aFloat4673 + anInt5461.toFloat() * TextureMipDescriptorStatics.aFloat4338)
+                val f_181_ = (TextureMipDescriptorStatics.aFloat4338 * anInt5509.toFloat() + WorldMapRendererStatics.aFloat4673)
                 val f_182_: Float
                 val f_183_: Float
                 if (f_181_ < f) {
@@ -1260,10 +1323,10 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     f_183_ = anInt5510.toFloat() + f_181_
                 }
                 if (!(aHa_Sub3_5419!!.aFloat8089 <= f_182_) && !(aHa_Sub3_5419!!.anInt8095.toFloat() >= f_183_)) {
-                    DynamicSceneObjectEntity.aFloat10199 = ((class101_sub2.aFloat5711 * class101_sub2_180_.aFloat5700) + (class101_sub2_180_.aFloat5722 * class101_sub2.aFloat5700) + (class101_sub2_180_.aFloat5691 * class101_sub2.aFloat5704))
-                    ParticleProcessor.aFloat4268 = ((class101_sub2_180_.aFloat5710 * class101_sub2.aFloat5700) + (class101_sub2.aFloat5711 * (class101_sub2_180_.aFloat5729)) + (class101_sub2.aFloat5704 * (class101_sub2_180_.aFloat5724)) + class101_sub2.aFloat5729)
-                    val f_184_ = ((anInt5461.toFloat() * DynamicSceneObjectEntity.aFloat10199) + ParticleProcessor.aFloat4268)
-                    val f_185_ = ((DynamicSceneObjectEntity.aFloat10199 * anInt5509.toFloat()) + ParticleProcessor.aFloat4268)
+                    DynamicSceneObjectEntityStatics.aFloat10199 = ((class101_sub2.aFloat5711 * class101_sub2_180_.aFloat5700) + (class101_sub2_180_.aFloat5722 * class101_sub2.aFloat5700) + (class101_sub2_180_.aFloat5691 * class101_sub2.aFloat5704))
+                    ParticleProcessorStatics.aFloat4268 = ((class101_sub2_180_.aFloat5710 * class101_sub2.aFloat5700) + (class101_sub2.aFloat5711 * (class101_sub2_180_.aFloat5729)) + (class101_sub2.aFloat5704 * (class101_sub2_180_.aFloat5724)) + class101_sub2.aFloat5729)
+                    val f_184_ = ((anInt5461.toFloat() * DynamicSceneObjectEntityStatics.aFloat10199) + ParticleProcessorStatics.aFloat4268)
+                    val f_185_ = ((DynamicSceneObjectEntityStatics.aFloat10199 * anInt5509.toFloat()) + ParticleProcessorStatics.aFloat4268)
                     val f_186_: Float
                     val f_187_: Float
                     if (f_185_ < f_184_) {
@@ -1274,10 +1337,10 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         f_187_ = ((-anInt5510.toFloat() + f_184_) * aHa_Sub3_5419!!.anInt8129.toFloat())
                     }
                     if (!(aHa_Sub3_5419!!.aFloat8158 <= f_187_ / i.toFloat()) && !(f_186_ / i.toFloat() <= aHa_Sub3_5419!!.aFloat8126)) {
-                        BufferToggleState.aFloat3710 = ((class101_sub2_180_.aFloat5691 * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (class101_sub2_180_.aFloat5722)) + ((class101_sub2_180_.aFloat5700) * (class101_sub2.aFloat5708))))
-                        BoundingBoxNode.aFloat6752 = (class101_sub2.aFloat5710 + ((class101_sub2.aFloat5708 * (class101_sub2_180_.aFloat5729)) + ((class101_sub2_180_.aFloat5710) * (class101_sub2.aFloat5722)) + ((class101_sub2_180_.aFloat5724) * (class101_sub2.aFloat5732))))
-                        val f_188_ = (BoundingBoxNode.aFloat6752 + BufferToggleState.aFloat3710 * anInt5461.toFloat())
-                        val f_189_ = (anInt5509.toFloat() * BufferToggleState.aFloat3710 + BoundingBoxNode.aFloat6752)
+                        BufferToggleStateStatics.aFloat3710 = ((class101_sub2_180_.aFloat5691 * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (class101_sub2_180_.aFloat5722)) + ((class101_sub2_180_.aFloat5700) * (class101_sub2.aFloat5708))))
+                        BoundingBoxNodeStatics.aFloat6752 = (class101_sub2.aFloat5710 + ((class101_sub2.aFloat5708 * (class101_sub2_180_.aFloat5729)) + ((class101_sub2_180_.aFloat5710) * (class101_sub2.aFloat5722)) + ((class101_sub2_180_.aFloat5724) * (class101_sub2.aFloat5732))))
+                        val f_188_ = (BoundingBoxNodeStatics.aFloat6752 + BufferToggleStateStatics.aFloat3710 * anInt5461.toFloat())
+                        val f_189_ = (anInt5509.toFloat() * BufferToggleStateStatics.aFloat3710 + BoundingBoxNodeStatics.aFloat6752)
                         val f_190_: Float
                         val f_191_: Float
                         if (f_189_ < f_188_) {
@@ -1289,26 +1352,26 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         }
                         if (!(f_191_ / i.toFloat() >= aHa_Sub3_5419!!.aFloat8185) && !(f_190_ / i.toFloat() <= aHa_Sub3_5419!!.aFloat8103)) {
                             if (class318_sub3 != null || aTextureMipDescriptorArray5524 != null) {
-                                OggMediaStream.aFloat1010 = (((class101_sub2.aFloat5700) * (class101_sub2_180_.aFloat5708)) + ((class101_sub2.aFloat5711) * class101_sub2_180_.aFloat5711) + ((class101_sub2.aFloat5704) * class101_sub2_180_.aFloat5736))
-                                ShortMatrixNode.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2_180_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5704)))
-                                SceneEffectMarker.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5722) * class101_sub2_180_.aFloat5732) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5716))
+                                OggMediaStreamStatics.aFloat1010 = (((class101_sub2.aFloat5700) * (class101_sub2_180_.aFloat5708)) + ((class101_sub2.aFloat5711) * class101_sub2_180_.aFloat5711) + ((class101_sub2.aFloat5704) * class101_sub2_180_.aFloat5736))
+                                ShortMatrixNodeStatics.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2_180_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5704)))
+                                SceneEffectMarkerStatics.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5722) * class101_sub2_180_.aFloat5732) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5716))
                                 RenderQueueState.aFloat6523 = (((class101_sub2_180_.aFloat5736) * (class101_sub2.aFloat5716)) + (((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5708) + ((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5711))))
-                                TextureTileRenderer.aFloat6835 = (((class101_sub2_180_.aFloat5711) * (class101_sub2.aFloat5708)) + ((class101_sub2_180_.aFloat5708) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5736))
-                                Renderer.aFloat4582 = (((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5732) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5716)))
+                                TextureTileRendererStatics.aFloat6835 = (((class101_sub2_180_.aFloat5711) * (class101_sub2.aFloat5708)) + ((class101_sub2_180_.aFloat5708) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5736))
+                                RendererStatics.aFloat4582 = (((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5732) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5716)))
                             }
                             if (class318_sub3 != null) {
                                 val i_192_ = anInt5467 + anInt5507 shr 1
                                 val i_193_ = anInt5418 + anInt5443 shr 1
-                                val i_194_ = (ParticleProcessor.aFloat4268 + (i_192_.toFloat() * OggMediaStream.aFloat1010) + ((DynamicSceneObjectEntity.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (ShortMatrixNode.aFloat9516))).toInt()
-                                val i_195_ = (BoundingBoxNode.aFloat6752 + (TextureTileRenderer.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * BufferToggleState.aFloat3710) + (SceneEffectMarker.aFloat6430 * i_193_.toFloat())).toInt()
-                                val i_196_ = ((anInt5461.toFloat() * TextureMipDescriptor.aFloat4338) + ((RenderQueueState.aFloat6523 * i_192_.toFloat()) + WorldMapRenderer.aFloat4673) + i_193_.toFloat() * Renderer.aFloat4582).toInt()
-                                val i_197_ = ((anInt5509.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (OggMediaStream.aFloat1010 * i_192_.toFloat())) + (ShortMatrixNode.aFloat9516 * i_193_.toFloat())).toInt()
-                                val i_198_ = ((SceneEffectMarker.aFloat6430 * i_193_.toFloat()) + (BoundingBoxNode.aFloat6752 + (TextureTileRenderer.aFloat6835 * i_192_.toFloat()) + (BufferToggleState.aFloat3710 * anInt5509.toFloat()))).toInt()
+                                val i_194_ = (ParticleProcessorStatics.aFloat4268 + (i_192_.toFloat() * OggMediaStreamStatics.aFloat1010) + ((DynamicSceneObjectEntityStatics.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (ShortMatrixNodeStatics.aFloat9516))).toInt()
+                                val i_195_ = (BoundingBoxNodeStatics.aFloat6752 + (TextureTileRendererStatics.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * BufferToggleStateStatics.aFloat3710) + (SceneEffectMarkerStatics.aFloat6430 * i_193_.toFloat())).toInt()
+                                val i_196_ = ((anInt5461.toFloat() * TextureMipDescriptorStatics.aFloat4338) + ((RenderQueueState.aFloat6523 * i_192_.toFloat()) + WorldMapRendererStatics.aFloat4673) + i_193_.toFloat() * RendererStatics.aFloat4582).toInt()
+                                val i_197_ = ((anInt5509.toFloat() * (DynamicSceneObjectEntityStatics.aFloat10199)) + (ParticleProcessorStatics.aFloat4268 + (OggMediaStreamStatics.aFloat1010 * i_192_.toFloat())) + (ShortMatrixNodeStatics.aFloat9516 * i_193_.toFloat())).toInt()
+                                val i_198_ = ((SceneEffectMarkerStatics.aFloat6430 * i_193_.toFloat()) + (BoundingBoxNodeStatics.aFloat6752 + (TextureTileRendererStatics.aFloat6835 * i_192_.toFloat()) + (BufferToggleStateStatics.aFloat3710 * anInt5509.toFloat()))).toInt()
                                 class318_sub3.anInt6402 = ((i_195_ * aHa_Sub3_5419!!.anInt8134 / i) + aHa_Sub3_5419!!.anInt8130)
                                 class318_sub3.anInt6405 = (aHa_Sub3_5419!!.anInt8094 - -(i_194_ * (aHa_Sub3_5419!!.anInt8129) / i))
                                 class318_sub3.anInt6404 = (aHa_Sub3_5419!!.anInt8130 - -(aHa_Sub3_5419!!.anInt8134 * i_198_ / i))
                                 class318_sub3.anInt6406 = ((i_197_ * aHa_Sub3_5419!!.anInt8129 / i) + aHa_Sub3_5419!!.anInt8094)
-                                val i_199_ = (Renderer.aFloat4582 * i_193_.toFloat() + ((anInt5509.toFloat() * TextureMipDescriptor.aFloat4338) + ((RenderQueueState.aFloat6523 * i_192_.toFloat()) + WorldMapRenderer.aFloat4673))).toInt()
+                                val i_199_ = (RendererStatics.aFloat4582 * i_193_.toFloat() + ((anInt5509.toFloat() * TextureMipDescriptorStatics.aFloat4338) + ((RenderQueueState.aFloat6523 * i_192_.toFloat()) + WorldMapRendererStatics.aFloat4673))).toInt()
                                 if (i_196_ >= aHa_Sub3_5419!!.anInt8095 || (aHa_Sub3_5419!!.anInt8095 <= i_199_)) {
                                     class318_sub3.anInt6403 = (aHa_Sub3_5419!!.anInt8094 + (((anInt5510 + i_194_) * (aHa_Sub3_5419!!.anInt8129) / i) + -class318_sub3.anInt6405))
                                     class318_sub3.aBoolean6401 = true
@@ -1324,7 +1387,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_179_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_179_ + ')'))
         }
     }
 
@@ -1341,10 +1404,10 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     i_209_ = i_210_
                     break
                 }
-                if (BoxBlurTextureNode.aLongArray9465!![i_210_] == l) return (-1 + i_211_).toShort()
+                if (BoxBlurTextureNodeStatics.aLongArray9465!![i_210_] == l) return (-1 + i_211_).toShort()
             }
             aShortArray5439!![i_209_] = (1 + anInt5475).toShort()
-            BoxBlurTextureNode.aLongArray9465!![i_209_] = l
+            BoxBlurTextureNodeStatics.aLongArray9465!![i_209_] = l
             aShortArray5416!![anInt5475] = i_200_.toShort()
             aShortArray5470!![anInt5475] = i_204_.toShort()
             aShortArray5493!![anInt5475] = i_202_.toShort()
@@ -1355,7 +1418,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             aFloatArray5506!![anInt5475] = f_205_
             return (anInt5475++).toShort()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.SA(" + i + ',' + l + ',' + i_200_ + ',' + i_201_ + ',' + i_202_ + ',' + i_203_ + ',' + f + ',' + i_204_ + ',' + f_205_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_206_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.SA(" + i + ',' + l + ',' + i_200_ + ',' + i_201_ + ',' + i_202_ + ',' + i_203_ + ',' + f + ',' + i_204_ + ',' + f_205_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_206_ + ')'))
         }
     }
 
@@ -1398,31 +1461,31 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 i_213_ = i_213_ shl 4
                 i_212_ = i_212_ shl 4
                 i_214_ = i_214_ shl 4
-                SpriteArchiveLoader.anInt386 = 0
-                SpriteLoadValidator.anInt4795 = 0
+                SpriteArchiveLoaderStatics.anInt386 = 0
+                SpriteLoadValidatorStatics.anInt4795 = 0
                 var i_217_ = 0
-                KeyboardInputSource.anInt4274 = 0
+                KeyboardInputSourceStatics.anInt4274 = 0
                 for (i_218_ in 0..<i_216_) {
                     val i_219_ = `is`[i_218_]
                     if (i_219_ < anIntArrayArray5413!!.size) {
                         val is_220_ = anIntArrayArray5413!![i_219_]!!
                         for (i_221_ in is_220_.indices) {
                             val i_222_ = is_220_[i_221_]
-                            SpriteLoadValidator.anInt4795 += anIntArray5511!![i_222_]
-                            SpriteArchiveLoader.anInt386 += anIntArray5519!![i_222_]
-                            KeyboardInputSource.anInt4274 += anIntArray5429!![i_222_]
+                            SpriteLoadValidatorStatics.anInt4795 += anIntArray5511!![i_222_]
+                            SpriteArchiveLoaderStatics.anInt386 += anIntArray5519!![i_222_]
+                            KeyboardInputSourceStatics.anInt4274 += anIntArray5429!![i_222_]
                             i_217_++
                         }
                     }
                 }
                 if (i_217_ > 0) {
-                    SpriteArchiveLoader.anInt386 = SpriteArchiveLoader.anInt386 / i_217_ - -i_213_
-                    KeyboardInputSource.anInt4274 = KeyboardInputSource.anInt4274 / i_217_ + i_214_
-                    SpriteLoadValidator.anInt4795 = SpriteLoadValidator.anInt4795 / i_217_ - -i_212_
+                    SpriteArchiveLoaderStatics.anInt386 = SpriteArchiveLoaderStatics.anInt386 / i_217_ - -i_213_
+                    KeyboardInputSourceStatics.anInt4274 = KeyboardInputSourceStatics.anInt4274 / i_217_ + i_214_
+                    SpriteLoadValidatorStatics.anInt4795 = SpriteLoadValidatorStatics.anInt4795 / i_217_ - -i_212_
                 } else {
-                    SpriteArchiveLoader.anInt386 = i_213_
-                    KeyboardInputSource.anInt4274 = i_214_
-                    SpriteLoadValidator.anInt4795 = i_212_
+                    SpriteArchiveLoaderStatics.anInt386 = i_213_
+                    KeyboardInputSourceStatics.anInt4274 = i_214_
+                    SpriteLoadValidatorStatics.anInt4795 = i_212_
                 }
             } else if (i == 1) {
                 i_213_ = i_213_ shl 4
@@ -1453,65 +1516,65 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             var i_231_ = 0
                             while ((is_230_.size > i_231_)) {
                                 val i_232_ = is_230_[i_231_]
-                                anIntArray5511!![i_232_] -= SpriteLoadValidator.anInt4795
-                                anIntArray5519!![i_232_] -= SpriteArchiveLoader.anInt386
-                                anIntArray5429!![i_232_] -= KeyboardInputSource.anInt4274
+                                anIntArray5511!![i_232_] -= SpriteLoadValidatorStatics.anInt4795
+                                anIntArray5519!![i_232_] -= SpriteArchiveLoaderStatics.anInt386
+                                anIntArray5429!![i_232_] -= KeyboardInputSourceStatics.anInt4274
                                 if (i_214_ != 0) {
-                                    val i_233_ = TrigLookupTables.anIntArray1207!![i_214_]
-                                    val i_234_ = TrigLookupTables.anIntArray1204!![i_214_]
+                                    val i_233_ = TrigLookupTablesStatics.anIntArray1207!![i_214_]
+                                    val i_234_ = TrigLookupTablesStatics.anIntArray1204!![i_214_]
                                     val i_235_ = ((16383 + (i_234_ * anIntArray5511!![i_232_] + (anIntArray5519!![i_232_] * i_233_))) shr 14)
                                     anIntArray5519!![i_232_] = ((16383 + (i_234_ * anIntArray5519!![i_232_] + -(i_233_ * anIntArray5511!![i_232_]))) shr 14)
                                     anIntArray5511!![i_232_] = i_235_
                                 }
                                 if (i_212_ != 0) {
-                                    val i_236_ = TrigLookupTables.anIntArray1207!![i_212_]
-                                    val i_237_ = TrigLookupTables.anIntArray1204!![i_212_]
+                                    val i_236_ = TrigLookupTablesStatics.anIntArray1207!![i_212_]
+                                    val i_237_ = TrigLookupTablesStatics.anIntArray1204!![i_212_]
                                     val i_238_ = (16383 + (-(i_236_ * anIntArray5429!![i_232_]) + i_237_ * (anIntArray5519!![i_232_])) shr 14)
                                     anIntArray5429!![i_232_] = (16383 + (i_236_ * anIntArray5519!![i_232_] - -(anIntArray5429!![i_232_] * i_237_))) shr 14
                                     anIntArray5519!![i_232_] = i_238_
                                 }
                                 if (i_213_ != 0) {
-                                    val i_239_ = TrigLookupTables.anIntArray1207!![i_213_]
-                                    val i_240_ = TrigLookupTables.anIntArray1204!![i_213_]
+                                    val i_239_ = TrigLookupTablesStatics.anIntArray1207!![i_213_]
+                                    val i_240_ = TrigLookupTablesStatics.anIntArray1204!![i_213_]
                                     val i_241_ = ((i_239_ * anIntArray5429!![i_232_] + i_240_ * anIntArray5511!![i_232_] + 16383) shr 14)
                                     anIntArray5429!![i_232_] = (16383 + (-(i_239_ * anIntArray5511!![i_232_]) + i_240_ * (anIntArray5429!![i_232_])) shr 14)
                                     anIntArray5511!![i_232_] = i_241_
                                 }
-                                anIntArray5511!![i_232_] += SpriteLoadValidator.anInt4795
-                                anIntArray5519!![i_232_] += SpriteArchiveLoader.anInt386
-                                anIntArray5429!![i_232_] += KeyboardInputSource.anInt4274
+                                anIntArray5511!![i_232_] += SpriteLoadValidatorStatics.anInt4795
+                                anIntArray5519!![i_232_] += SpriteArchiveLoaderStatics.anInt386
+                                anIntArray5429!![i_232_] += KeyboardInputSourceStatics.anInt4274
                                 i_231_++
                             }
                         } else {
                             for (i_242_ in is_230_.indices) {
                                 val i_243_ = is_230_[i_242_]
-                                anIntArray5511!![i_243_] -= SpriteLoadValidator.anInt4795
-                                anIntArray5519!![i_243_] -= SpriteArchiveLoader.anInt386
-                                anIntArray5429!![i_243_] -= KeyboardInputSource.anInt4274
+                                anIntArray5511!![i_243_] -= SpriteLoadValidatorStatics.anInt4795
+                                anIntArray5519!![i_243_] -= SpriteArchiveLoaderStatics.anInt386
+                                anIntArray5429!![i_243_] -= KeyboardInputSourceStatics.anInt4274
                                 if (i_212_ != 0) {
-                                    val i_244_ = TrigLookupTables.anIntArray1207!![i_212_]
-                                    val i_245_ = TrigLookupTables.anIntArray1204!![i_212_]
+                                    val i_244_ = TrigLookupTablesStatics.anIntArray1207!![i_212_]
+                                    val i_245_ = TrigLookupTablesStatics.anIntArray1204!![i_212_]
                                     val i_246_ = (anIntArray5519!![i_243_] * i_245_ + -(i_244_ * anIntArray5429!![i_243_]) + 16383) shr 14
                                     anIntArray5429!![i_243_] = ((16383 + anIntArray5429!![i_243_] * i_245_ + i_244_ * anIntArray5519!![i_243_]) shr 14)
                                     anIntArray5519!![i_243_] = i_246_
                                 }
                                 if (i_214_ != 0) {
-                                    val i_247_ = TrigLookupTables.anIntArray1207!![i_214_]
-                                    val i_248_ = TrigLookupTables.anIntArray1204!![i_214_]
+                                    val i_247_ = TrigLookupTablesStatics.anIntArray1207!![i_214_]
+                                    val i_248_ = TrigLookupTablesStatics.anIntArray1204!![i_214_]
                                     val i_249_ = ((i_248_ * anIntArray5511!![i_243_] + i_247_ * anIntArray5519!![i_243_] + 16383) shr 14)
                                     anIntArray5519!![i_243_] = (anIntArray5519!![i_243_] * i_248_ - (anIntArray5511!![i_243_] * i_247_ + -16383)) shr 14
                                     anIntArray5511!![i_243_] = i_249_
                                 }
                                 if (i_213_ != 0) {
-                                    val i_250_ = TrigLookupTables.anIntArray1207!![i_213_]
-                                    val i_251_ = TrigLookupTables.anIntArray1204!![i_213_]
+                                    val i_250_ = TrigLookupTablesStatics.anIntArray1207!![i_213_]
+                                    val i_251_ = TrigLookupTablesStatics.anIntArray1204!![i_213_]
                                     val i_252_ = ((i_251_ * anIntArray5511!![i_243_] + i_250_ * anIntArray5429!![i_243_] - -16383) shr 14)
                                     anIntArray5429!![i_243_] = ((16383 + -(anIntArray5511!![i_243_] * i_250_) + anIntArray5429!![i_243_] * i_251_) shr 14)
                                     anIntArray5511!![i_243_] = i_252_
                                 }
-                                anIntArray5511!![i_243_] += SpriteLoadValidator.anInt4795
-                                anIntArray5519!![i_243_] += SpriteArchiveLoader.anInt386
-                                anIntArray5429!![i_243_] += KeyboardInputSource.anInt4274
+                                anIntArray5511!![i_243_] += SpriteLoadValidatorStatics.anInt4795
+                                anIntArray5519!![i_243_] += SpriteArchiveLoaderStatics.anInt386
+                                anIntArray5429!![i_243_] += KeyboardInputSourceStatics.anInt4274
                             }
                         }
                     }
@@ -1531,22 +1594,22 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                     val i_261_ = aShortArray5439!![i_260_] + -1
                                     if (i_261_ == -1) break
                                     if (i_214_ != 0) {
-                                        val i_262_ = TrigLookupTables.anIntArray1207!![i_214_]
-                                        val i_263_ = TrigLookupTables.anIntArray1204!![i_214_]
+                                        val i_262_ = TrigLookupTablesStatics.anIntArray1207!![i_214_]
+                                        val i_263_ = TrigLookupTablesStatics.anIntArray1204!![i_214_]
                                         val i_264_ = ((16383 + (aShortArray5438!![i_261_] * i_262_) + (aShortArray5493!![i_261_] * i_263_)) shr 14)
                                         aShortArray5438!![i_261_] = (((i_263_ * (aShortArray5438!![i_261_])) + -((aShortArray5493!![i_261_]) * i_262_) + 16383) shr 14).toShort()
                                         aShortArray5493!![i_261_] = i_264_.toShort()
                                     }
                                     if (i_212_ != 0) {
-                                        val i_265_ = TrigLookupTables.anIntArray1207!![i_212_]
-                                        val i_266_ = TrigLookupTables.anIntArray1204!![i_212_]
+                                        val i_265_ = TrigLookupTablesStatics.anIntArray1207!![i_212_]
+                                        val i_266_ = TrigLookupTablesStatics.anIntArray1204!![i_212_]
                                         val i_267_ = ((16383 + (aShortArray5438!![i_261_] * i_266_) + -(i_265_ * aShortArray5436!![i_261_])) shr 14)
                                         aShortArray5436!![i_261_] = ((16383 + ((i_266_ * (aShortArray5436!![i_261_])) + ((aShortArray5438!![i_261_]) * i_265_))) shr 14).toShort()
                                         aShortArray5438!![i_261_] = i_267_.toShort()
                                     }
                                     if (i_213_ != 0) {
-                                        val i_268_ = TrigLookupTables.anIntArray1207!![i_213_]
-                                        val i_269_ = TrigLookupTables.anIntArray1204!![i_213_]
+                                        val i_268_ = TrigLookupTablesStatics.anIntArray1207!![i_213_]
+                                        val i_269_ = TrigLookupTablesStatics.anIntArray1204!![i_213_]
                                         val i_270_ = (i_269_ * aShortArray5493!![i_261_] + (i_268_ * aShortArray5436!![i_261_]) - -16383) shr 14
                                         aShortArray5436!![i_261_] = ((-(i_268_ * (aShortArray5493!![i_261_])) + (aShortArray5436!![i_261_]) * i_269_ - -16383) shr 14).toShort()
                                         aShortArray5493!![i_261_] = i_270_.toShort()
@@ -1568,15 +1631,15 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         var i_274_ = 0
                         while (is_273_.size > i_274_) {
                             val i_275_ = is_273_[i_274_]
-                            anIntArray5511!![i_275_] -= SpriteLoadValidator.anInt4795
-                            anIntArray5519!![i_275_] -= SpriteArchiveLoader.anInt386
-                            anIntArray5429!![i_275_] -= KeyboardInputSource.anInt4274
+                            anIntArray5511!![i_275_] -= SpriteLoadValidatorStatics.anInt4795
+                            anIntArray5519!![i_275_] -= SpriteArchiveLoaderStatics.anInt386
+                            anIntArray5429!![i_275_] -= KeyboardInputSourceStatics.anInt4274
                             anIntArray5511!![i_275_] = (anIntArray5511!![i_275_] * i_212_ shr 7)
                             anIntArray5519!![i_275_] = anIntArray5519!![i_275_] * i_213_ shr 7
                             anIntArray5429!![i_275_] = i_214_ * anIntArray5429!![i_275_] shr 7
-                            anIntArray5511!![i_275_] += SpriteLoadValidator.anInt4795
-                            anIntArray5519!![i_275_] += SpriteArchiveLoader.anInt386
-                            anIntArray5429!![i_275_] += KeyboardInputSource.anInt4274
+                            anIntArray5511!![i_275_] += SpriteLoadValidatorStatics.anInt4795
+                            anIntArray5519!![i_275_] += SpriteArchiveLoaderStatics.anInt386
+                            anIntArray5429!![i_275_] += KeyboardInputSourceStatics.anInt4274
                             i_274_++
                         }
                     }
@@ -1638,7 +1701,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                 if (i_293_ >= 0) {
                                     if (i_293_ > 127) i_293_ = 127
                                 } else i_293_ = 0
-                                aShortArray5486!![i_289_] = (BoundsConstraintEntry.method2057(i_293_, (BoundsConstraintEntry.method2057(i_291_ shl 10, i_292_ shl 7)))).toShort()
+                                aShortArray5486!![i_289_] = (BoundsConstraintEntryStatics.method2057(i_293_, (BoundsConstraintEntryStatics.method2057(i_291_ shl 10, i_292_ shl 7)))).toShort()
                             }
                             bool_284_ = bool_284_ or (is_287_.size > 0)
                         }
@@ -1650,7 +1713,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             while (anInt5406 > i_294_) {
                                 val class353 = aTextureMipDescriptorArray5524!![i_294_]!!
                                 val class334 = aCameraOrModelTransformArray5442!![i_294_]!!
-                                class334.anInt4156 = (0xffffff and (ParticleEmitterNode.anIntArray179!![(aShortArray5486!![(class353.anInt4342)]).toInt() and 0xffff]) or (0xffffff.inv() and class334.anInt4156))
+                                class334.anInt4156 = (0xffffff and (ParticleEmitterNodeStatics.anIntArray179!![(aShortArray5486!![(class353.anInt4342)]).toInt() and 0xffff]) or (0xffffff.inv() and class334.anInt4156))
                                 i_294_++
                             }
                         }
@@ -1710,7 +1773,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.BB(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_212_ + ',' + i_213_ + ',' + i_214_ + ',' + i_215_ + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.BB(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_212_ + ',' + i_213_ + ',' + i_214_ + ',' + i_215_ + ',' + bool + ')'))
         }
     }
 
@@ -1721,10 +1784,10 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 val class101_sub2 = aHa_Sub3_5419!!.aClass101_Sub2_8080
                 val class101_sub2_307_ = abstractCameraTransform as FloatCameraTransform
                 if (!aBoolean5477) method675(0)
-                TextureMipDescriptor.aFloat4338 = ((class101_sub2.aFloat5736 * class101_sub2_307_.aFloat5700) + (class101_sub2.aFloat5691 * class101_sub2_307_.aFloat5722) + (class101_sub2_307_.aFloat5691 * class101_sub2.aFloat5716))
-                WorldMapRenderer.aFloat4673 = ((class101_sub2_307_.aFloat5724 * class101_sub2.aFloat5716) + ((class101_sub2.aFloat5691 * class101_sub2_307_.aFloat5710) + (class101_sub2_307_.aFloat5729 * class101_sub2.aFloat5736)) + class101_sub2.aFloat5724)
-                val f = (TextureMipDescriptor.aFloat4338 * anInt5461.toFloat() + WorldMapRenderer.aFloat4673)
-                val f_308_ = (anInt5509.toFloat() * TextureMipDescriptor.aFloat4338 + WorldMapRenderer.aFloat4673)
+                TextureMipDescriptorStatics.aFloat4338 = ((class101_sub2.aFloat5736 * class101_sub2_307_.aFloat5700) + (class101_sub2.aFloat5691 * class101_sub2_307_.aFloat5722) + (class101_sub2_307_.aFloat5691 * class101_sub2.aFloat5716))
+                WorldMapRendererStatics.aFloat4673 = ((class101_sub2_307_.aFloat5724 * class101_sub2.aFloat5716) + ((class101_sub2.aFloat5691 * class101_sub2_307_.aFloat5710) + (class101_sub2_307_.aFloat5729 * class101_sub2.aFloat5736)) + class101_sub2.aFloat5724)
+                val f = (TextureMipDescriptorStatics.aFloat4338 * anInt5461.toFloat() + WorldMapRendererStatics.aFloat4673)
+                val f_308_ = (anInt5509.toFloat() * TextureMipDescriptorStatics.aFloat4338 + WorldMapRendererStatics.aFloat4673)
                 val f_309_: Float
                 val f_310_: Float
                 if (f > f_308_) {
@@ -1735,10 +1798,10 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     f_310_ = f - anInt5510.toFloat()
                 }
                 if (!(aHa_Sub3_5419!!.aFloat8169 <= f_310_) && !(f_309_ <= aHa_Sub3_5419!!.anInt8095.toFloat())) {
-                    ParticleProcessor.aFloat4268 = (class101_sub2.aFloat5729 + ((class101_sub2.aFloat5700 * (class101_sub2_307_.aFloat5710)) + (class101_sub2.aFloat5711 * (class101_sub2_307_.aFloat5729)) + (class101_sub2.aFloat5704 * (class101_sub2_307_.aFloat5724))))
-                    DynamicSceneObjectEntity.aFloat10199 = ((class101_sub2.aFloat5704 * class101_sub2_307_.aFloat5691) + ((class101_sub2_307_.aFloat5700 * class101_sub2.aFloat5711) + (class101_sub2.aFloat5700 * (class101_sub2_307_.aFloat5722))))
-                    val f_311_ = ((anInt5461.toFloat() * DynamicSceneObjectEntity.aFloat10199) + ParticleProcessor.aFloat4268)
-                    val f_312_ = (ParticleProcessor.aFloat4268 + (DynamicSceneObjectEntity.aFloat10199 * anInt5509.toFloat()))
+                    ParticleProcessorStatics.aFloat4268 = (class101_sub2.aFloat5729 + ((class101_sub2.aFloat5700 * (class101_sub2_307_.aFloat5710)) + (class101_sub2.aFloat5711 * (class101_sub2_307_.aFloat5729)) + (class101_sub2.aFloat5704 * (class101_sub2_307_.aFloat5724))))
+                    DynamicSceneObjectEntityStatics.aFloat10199 = ((class101_sub2.aFloat5704 * class101_sub2_307_.aFloat5691) + ((class101_sub2_307_.aFloat5700 * class101_sub2.aFloat5711) + (class101_sub2.aFloat5700 * (class101_sub2_307_.aFloat5722))))
+                    val f_311_ = ((anInt5461.toFloat() * DynamicSceneObjectEntityStatics.aFloat10199) + ParticleProcessorStatics.aFloat4268)
+                    val f_312_ = (ParticleProcessorStatics.aFloat4268 + (DynamicSceneObjectEntityStatics.aFloat10199 * anInt5509.toFloat()))
                     val f_313_: Float
                     val f_314_: Float
                     if (f_311_ > f_312_) {
@@ -1749,10 +1812,10 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         f_314_ = (aHa_Sub3_5419!!.anInt8129.toFloat() * (-anInt5510.toFloat() + f_311_))
                     }
                     if (!(aHa_Sub3_5419!!.aFloat8158 <= f_314_ / f_309_) && !(f_313_ / f_309_ <= aHa_Sub3_5419!!.aFloat8126)) {
-                        BufferToggleState.aFloat3710 = ((class101_sub2_307_.aFloat5691 * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (class101_sub2_307_.aFloat5722)) + (class101_sub2.aFloat5708 * (class101_sub2_307_.aFloat5700))))
-                        BoundingBoxNode.aFloat6752 = ((class101_sub2_307_.aFloat5724 * class101_sub2.aFloat5732) + (((class101_sub2_307_.aFloat5729) * (class101_sub2.aFloat5708)) + ((class101_sub2_307_.aFloat5710) * (class101_sub2.aFloat5722))) + class101_sub2.aFloat5710)
-                        val f_315_ = (anInt5461.toFloat() * BufferToggleState.aFloat3710 + BoundingBoxNode.aFloat6752)
-                        val f_316_ = (BufferToggleState.aFloat3710 * anInt5509.toFloat() + BoundingBoxNode.aFloat6752)
+                        BufferToggleStateStatics.aFloat3710 = ((class101_sub2_307_.aFloat5691 * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (class101_sub2_307_.aFloat5722)) + (class101_sub2.aFloat5708 * (class101_sub2_307_.aFloat5700))))
+                        BoundingBoxNodeStatics.aFloat6752 = ((class101_sub2_307_.aFloat5724 * class101_sub2.aFloat5732) + (((class101_sub2_307_.aFloat5729) * (class101_sub2.aFloat5708)) + ((class101_sub2_307_.aFloat5710) * (class101_sub2.aFloat5722))) + class101_sub2.aFloat5710)
+                        val f_315_ = (anInt5461.toFloat() * BufferToggleStateStatics.aFloat3710 + BoundingBoxNodeStatics.aFloat6752)
+                        val f_316_ = (BufferToggleStateStatics.aFloat3710 * anInt5509.toFloat() + BoundingBoxNodeStatics.aFloat6752)
                         val f_317_: Float
                         val f_318_: Float
                         if (f_316_ < f_315_) {
@@ -1765,28 +1828,28 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         if (!(aHa_Sub3_5419!!.aFloat8185 <= f_318_ / f_309_) && !(f_317_ / f_309_ <= aHa_Sub3_5419!!.aFloat8103)) {
                             if (class318_sub3 != null || aTextureMipDescriptorArray5524 != null) {
                                 RenderQueueState.aFloat6523 = (((class101_sub2.aFloat5716) * (class101_sub2_307_.aFloat5736)) + ((class101_sub2_307_.aFloat5711 * (class101_sub2.aFloat5736)) + ((class101_sub2.aFloat5691) * (class101_sub2_307_.aFloat5708))))
-                                SceneEffectMarker.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5716))
-                                OggMediaStream.aFloat1010 = (((class101_sub2.aFloat5704) * (class101_sub2_307_.aFloat5736)) + (((class101_sub2.aFloat5700) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5711))))
-                                ShortMatrixNode.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2.aFloat5704) * class101_sub2_307_.aFloat5716))
-                                TextureTileRenderer.aFloat6835 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5711)) + ((class101_sub2.aFloat5722) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5736))
-                                Renderer.aFloat4582 = (((class101_sub2_307_.aFloat5716) * (class101_sub2.aFloat5716)) + ((class101_sub2_307_.aFloat5704 * (class101_sub2.aFloat5736)) + (class101_sub2_307_.aFloat5732 * (class101_sub2.aFloat5691))))
+                                SceneEffectMarkerStatics.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5716))
+                                OggMediaStreamStatics.aFloat1010 = (((class101_sub2.aFloat5704) * (class101_sub2_307_.aFloat5736)) + (((class101_sub2.aFloat5700) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5711))))
+                                ShortMatrixNodeStatics.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2.aFloat5704) * class101_sub2_307_.aFloat5716))
+                                TextureTileRendererStatics.aFloat6835 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5711)) + ((class101_sub2.aFloat5722) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5736))
+                                RendererStatics.aFloat4582 = (((class101_sub2_307_.aFloat5716) * (class101_sub2.aFloat5716)) + ((class101_sub2_307_.aFloat5704 * (class101_sub2.aFloat5736)) + (class101_sub2_307_.aFloat5732 * (class101_sub2.aFloat5691))))
                             }
                             if (class318_sub3 != null) {
                                 var bool = false
                                 var bool_319_ = true
                                 val i_320_ = anInt5507 - -anInt5467 shr 1
                                 val i_321_ = anInt5418 + anInt5443 shr 1
-                                val i_322_ = ((anInt5461.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (OggMediaStream.aFloat1010 * i_320_.toFloat())) + (ShortMatrixNode.aFloat9516 * i_321_.toFloat())).toInt()
-                                val i_323_ = ((SceneEffectMarker.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * TextureTileRenderer.aFloat6835) + BoundingBoxNode.aFloat6752 + (BufferToggleState.aFloat3710 * anInt5461.toFloat()))).toInt()
-                                val i_324_ = (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523) + (anInt5461.toFloat() * TextureMipDescriptor.aFloat4338) + i_321_.toFloat() * Renderer.aFloat4582).toInt()
+                                val i_322_ = ((anInt5461.toFloat() * (DynamicSceneObjectEntityStatics.aFloat10199)) + (ParticleProcessorStatics.aFloat4268 + (OggMediaStreamStatics.aFloat1010 * i_320_.toFloat())) + (ShortMatrixNodeStatics.aFloat9516 * i_321_.toFloat())).toInt()
+                                val i_323_ = ((SceneEffectMarkerStatics.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * TextureTileRendererStatics.aFloat6835) + BoundingBoxNodeStatics.aFloat6752 + (BufferToggleStateStatics.aFloat3710 * anInt5461.toFloat()))).toInt()
+                                val i_324_ = (WorldMapRendererStatics.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523) + (anInt5461.toFloat() * TextureMipDescriptorStatics.aFloat4338) + i_321_.toFloat() * RendererStatics.aFloat4582).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_324_) bool = true
                                 else {
                                     class318_sub3.anInt6402 = (aHa_Sub3_5419!!.anInt8130 - -(i_323_ * (aHa_Sub3_5419!!.anInt8134) / i_324_))
                                     class318_sub3.anInt6405 = ((aHa_Sub3_5419!!.anInt8129 * i_322_ / i_324_) + (aHa_Sub3_5419!!.anInt8094))
                                 }
-                                val i_325_ = ((DynamicSceneObjectEntity.aFloat10199) * anInt5509.toFloat() + (ParticleProcessor.aFloat4268 + (OggMediaStream.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (ShortMatrixNode.aFloat9516))).toInt()
-                                val i_326_ = ((BufferToggleState.aFloat3710 * anInt5509.toFloat()) + (BoundingBoxNode.aFloat6752 + (i_320_.toFloat() * (TextureTileRenderer.aFloat6835))) + (i_321_.toFloat() * SceneEffectMarker.aFloat6430)).toInt()
-                                val i_327_ = ((anInt5509.toFloat() * TextureMipDescriptor.aFloat4338) + (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523)) + Renderer.aFloat4582 * i_321_.toFloat()).toInt()
+                                val i_325_ = ((DynamicSceneObjectEntityStatics.aFloat10199) * anInt5509.toFloat() + (ParticleProcessorStatics.aFloat4268 + (OggMediaStreamStatics.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (ShortMatrixNodeStatics.aFloat9516))).toInt()
+                                val i_326_ = ((BufferToggleStateStatics.aFloat3710 * anInt5509.toFloat()) + (BoundingBoxNodeStatics.aFloat6752 + (i_320_.toFloat() * (TextureTileRendererStatics.aFloat6835))) + (i_321_.toFloat() * SceneEffectMarkerStatics.aFloat6430)).toInt()
+                                val i_327_ = ((anInt5509.toFloat() * TextureMipDescriptorStatics.aFloat4338) + (WorldMapRendererStatics.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523)) + RendererStatics.aFloat4582 * i_321_.toFloat()).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_327_) bool = true
                                 else {
                                     class318_sub3.anInt6406 = (aHa_Sub3_5419!!.anInt8094 + (i_325_ * (aHa_Sub3_5419!!.anInt8129) / i_327_))
@@ -1825,16 +1888,16 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
     public override fun s(i: Int) {
         anInt5445++
-        if (aBufferToggleState_5520 != null) aBufferToggleState_5520!!.aBoolean3709 = CompassSmoother.method2015(i, anInt5472, 7)
-        if (aBufferToggleState_5460 != null) aBufferToggleState_5460!!.aBoolean3709 = ParticleDefLoader.method1379(4, anInt5472, i)
+        if (aBufferToggleState_5520 != null) aBufferToggleState_5520!!.aBoolean3709 = CompassSmootherStatics.method2015(i, anInt5472, 7)
+        if (aBufferToggleState_5460 != null) aBufferToggleState_5460!!.aBoolean3709 = ParticleDefLoaderStatics.method1379(4, anInt5472, i)
         if (aBufferToggleState_5482 != null) aBufferToggleState_5482!!.aBoolean3709 = method3200(i, anInt5472, 73.toByte())
-        if (aBufferToggleState_5424 != null) aBufferToggleState_5424!!.aBoolean3709 = Crc64Hashable.method1113(i, anInt5472, -10)
+        if (aBufferToggleState_5424 != null) aBufferToggleState_5424!!.aBoolean3709 = Crc64HashableStatics.method1113(i, anInt5472, -10)
         anInt5463 = i
         aBoolean5402 = true
         if (aHeadIconRenderer_5503 != null && (anInt5463 and 0x10000) == 0) {
@@ -1895,7 +1958,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         for (i_345_ in (modelDefinition.aRectangleBoundsArray1832)!!.indices) {
                             val class162 = (modelDefinition.aRectangleBoundsArray1832!![i_345_])!!
                             if (class162.anInt2155 == i_339_) {
-                                val class189 = FileExistsCondition.method742(104, (class162.anInt2153))
+                                val class189 = FileExistsConditionStatics.method742(104, (class162.anInt2153))
                                 if (class189.aBoolean2531) bool_344_ = true
                                 if (class189.anInt2525 != -1) {
                                     val class12_346_ = var_renderConfig.method3((class189.anInt2525), -6662)
@@ -1952,7 +2015,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     var i_350_ = 0
                     while (anInt5406 > i_350_) {
                         val class162 = modelDefinition.aRectangleBoundsArray1832!![i_350_]!!
-                        val class189 = FileExistsCondition.method742(104, (class162.anInt2153))
+                        val class189 = FileExistsConditionStatics.method742(104, (class162.anInt2153))
                         var i_351_ = -1
                         for (i_352_ in 0..<anInt5478) {
                             if (class162.anInt2155 == `is`[i_352_]) {
@@ -1961,7 +2024,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             }
                         }
                         if (i_351_ == -1) throw RuntimeException()
-                        var i_353_ = (0xffffff and (ParticleEmitterNode.anIntArray179!![((modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff)]))
+                        var i_353_ = (0xffffff and (ParticleEmitterNodeStatics.anIntArray179!![((modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff)]))
                         i_353_ = (i_353_ or (-(if (modelDefinition.aByteArray1834 == null) 0 else (modelDefinition.aByteArray1834!![(class162.anInt2155)])) + 255 shl 24))
                         aTextureMipDescriptorArray5524!![i_350_] = TextureMipDescriptor(i_351_, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
                         aCameraOrModelTransformArray5442!![i_350_] = CameraOrModelTransform(i_353_)
@@ -1981,7 +2044,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 if (modelDefinition.aShortArray1856 != null) aShortArray5432 = ShortArray(anInt5478)
                 aShortArray5470 = ShortArray(i_354_)
                 aShortArray5416 = ShortArray(i_354_)
-                BoxBlurTextureNode.aLongArray9465 = LongArray(i_354_)
+                BoxBlurTextureNodeStatics.aLongArray9465 = LongArray(i_354_)
                 aShortArray5495 = ShortArray(anInt5478)
                 aShort5452 = i_334_.toShort()
                 aByteArray5515 = ByteArray(anInt5478)
@@ -2141,15 +2204,15 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                 val f_395_ = ((modelDefinition.anIntArray1867[i_376_]).toFloat() / 256.0f)
                                 if (i_387_.toInt() == 1) {
                                     val f_413_ = ((modelDefinition.anIntArray1844[i_376_]).toFloat() / 1024.0f)
-                                    method1885(i_393_, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_394_.toInt(), 8, (modelDefinition.anIntArray1841[i_388_.toInt()]), DataHolder.aFloatArray3658, (modelDefinition.anIntArray1847[i_388_.toInt()]), f_395_, i_392_, i_391_, f_413_, fs)
-                                    f_379_ = DataHolder.aFloatArray3658!![1]
-                                    f = DataHolder.aFloatArray3658!![0]
-                                    method1885(i_393_, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_394_.toInt(), 8, (modelDefinition.anIntArray1841[i_389_.toInt()]), DataHolder.aFloatArray3658, (modelDefinition.anIntArray1847[i_389_.toInt()]), f_395_, i_392_, i_391_, f_413_, fs)
-                                    f_381_ = DataHolder.aFloatArray3658!![1]
-                                    f_380_ = DataHolder.aFloatArray3658!![0]
-                                    method1885(i_393_, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_394_.toInt(), 8, (modelDefinition.anIntArray1841[i_390_.toInt()]), DataHolder.aFloatArray3658, (modelDefinition.anIntArray1847[i_390_.toInt()]), f_395_, i_392_, i_391_, f_413_, fs)
-                                    f_382_ = DataHolder.aFloatArray3658!![0]
-                                    f_383_ = DataHolder.aFloatArray3658!![1]
+                                    method1885(i_393_, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_394_.toInt(), 8, (modelDefinition.anIntArray1841[i_388_.toInt()]), DataHolderStatics.aFloatArray3658, (modelDefinition.anIntArray1847[i_388_.toInt()]), f_395_, i_392_, i_391_, f_413_, fs)
+                                    f_379_ = DataHolderStatics.aFloatArray3658!![1]
+                                    f = DataHolderStatics.aFloatArray3658!![0]
+                                    method1885(i_393_, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_394_.toInt(), 8, (modelDefinition.anIntArray1841[i_389_.toInt()]), DataHolderStatics.aFloatArray3658, (modelDefinition.anIntArray1847[i_389_.toInt()]), f_395_, i_392_, i_391_, f_413_, fs)
+                                    f_381_ = DataHolderStatics.aFloatArray3658!![1]
+                                    f_380_ = DataHolderStatics.aFloatArray3658!![0]
+                                    method1885(i_393_, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_394_.toInt(), 8, (modelDefinition.anIntArray1841[i_390_.toInt()]), DataHolderStatics.aFloatArray3658, (modelDefinition.anIntArray1847[i_390_.toInt()]), f_395_, i_392_, i_391_, f_413_, fs)
+                                    f_382_ = DataHolderStatics.aFloatArray3658!![0]
+                                    f_383_ = DataHolderStatics.aFloatArray3658!![1]
                                     val f_414_ = f_413_ / 2.0f
                                     if ((i_394_.toInt() and 0x1) == 0) {
                                         if (f_414_ < -f + f_380_) {
@@ -2201,25 +2264,25 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                     val f_411_ = ((fs[5] * i_406_.toFloat() + (fs[3] * i_404_.toFloat() + i_405_.toFloat() * fs[4])) / f_408_)
                                     val f_412_ = ((i_405_.toFloat() * fs[7] + fs[6] * i_404_.toFloat() + fs[8] * i_406_.toFloat()) / f_409_)
                                     i_386_ = CalendarUtil.method2635(f_411_, false, f_412_, f_410_)
-                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_388_.toInt()]), (modelDefinition.anIntArray1847[i_388_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
-                                    f_379_ = DataHolder.aFloatArray3658!![1]
-                                    f = DataHolder.aFloatArray3658!![0]
-                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_389_.toInt()]), (modelDefinition.anIntArray1847[i_389_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
-                                    f_381_ = DataHolder.aFloatArray3658!![1]
-                                    f_380_ = DataHolder.aFloatArray3658!![0]
-                                    NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_390_.toInt()]), (modelDefinition.anIntArray1847[i_390_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
-                                    f_382_ = DataHolder.aFloatArray3658!![0]
-                                    f_383_ = DataHolder.aFloatArray3658!![1]
+                                    NodeDequeStatics.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_388_.toInt()]), (modelDefinition.anIntArray1847[i_388_.toInt()]), f_396_, DataHolderStatics.aFloatArray3658, i_392_, i_386_)
+                                    f_379_ = DataHolderStatics.aFloatArray3658!![1]
+                                    f = DataHolderStatics.aFloatArray3658!![0]
+                                    NodeDequeStatics.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_389_.toInt()]), (modelDefinition.anIntArray1847[i_389_.toInt()]), f_396_, DataHolderStatics.aFloatArray3658, i_392_, i_386_)
+                                    f_381_ = DataHolderStatics.aFloatArray3658!![1]
+                                    f_380_ = DataHolderStatics.aFloatArray3658!![0]
+                                    NodeDequeStatics.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_390_.toInt()]), (modelDefinition.anIntArray1847[i_390_.toInt()]), f_396_, DataHolderStatics.aFloatArray3658, i_392_, i_386_)
+                                    f_382_ = DataHolderStatics.aFloatArray3658!![0]
+                                    f_383_ = DataHolderStatics.aFloatArray3658!![1]
                                 } else if (i_387_.toInt() == 3) {
-                                    SpotAnimDefinition.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_388_.toInt()]), DataHolder.aFloatArray3658, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_388_.toInt()]), i_392_, -4, fs)
-                                    f = DataHolder.aFloatArray3658!![0]
-                                    f_379_ = DataHolder.aFloatArray3658!![1]
-                                    SpotAnimDefinition.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_389_.toInt()]), DataHolder.aFloatArray3658, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_389_.toInt()]), i_392_, -4, fs)
-                                    f_380_ = DataHolder.aFloatArray3658!![0]
-                                    f_381_ = DataHolder.aFloatArray3658!![1]
-                                    SpotAnimDefinition.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_390_.toInt()]), DataHolder.aFloatArray3658, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_390_.toInt()]), i_392_, -4, fs)
-                                    f_382_ = DataHolder.aFloatArray3658!![0]
-                                    f_383_ = DataHolder.aFloatArray3658!![1]
+                                    SpotAnimDefinitionStatics.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_388_.toInt()]), DataHolderStatics.aFloatArray3658, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_388_.toInt()]), i_392_, -4, fs)
+                                    f = DataHolderStatics.aFloatArray3658!![0]
+                                    f_379_ = DataHolderStatics.aFloatArray3658!![1]
+                                    SpotAnimDefinitionStatics.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_389_.toInt()]), DataHolderStatics.aFloatArray3658, (modelDefinition.anIntArray1852[i_389_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_389_.toInt()]), i_392_, -4, fs)
+                                    f_380_ = DataHolderStatics.aFloatArray3658!![0]
+                                    f_381_ = DataHolderStatics.aFloatArray3658!![1]
+                                    SpotAnimDefinitionStatics.method1367(i_393_, i_394_.toInt(), f_395_, (modelDefinition.anIntArray1841[i_390_.toInt()]), DataHolderStatics.aFloatArray3658, (modelDefinition.anIntArray1852[i_390_.toInt()]), i_391_, (modelDefinition.anIntArray1847[i_390_.toInt()]), i_392_, -4, fs)
+                                    f_382_ = DataHolderStatics.aFloatArray3658!![0]
+                                    f_383_ = DataHolderStatics.aFloatArray3658!![1]
                                     if ((i_394_.toInt() and 0x1) == 0) {
                                         if (-f + f_382_ > 0.5f) {
                                             f_382_--
@@ -2325,7 +2388,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     anIntArray5473!![i_450_] = i_455_ + -i_454_ + 1
                     anIntArray5404!![++i_450_] = anInt5516
                 }
-                BoxBlurTextureNode.aLongArray9465 = null
+                BoxBlurTextureNodeStatics.aLongArray9465 = null
                 aShortArray5470 = CalendarUtil.method2639((-111).toByte(), aShortArray5470!!, anInt5475)
                 aShortArray5416 = CalendarUtil.method2639(26.toByte(), aShortArray5416!!, anInt5475)
                 aShortArray5493 = CalendarUtil.method2639(68.toByte(), aShortArray5493!!, anInt5475)
@@ -2334,9 +2397,9 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 aByteArray5499 = method135(111.toByte(), aByteArray5499, anInt5475)
                 aFloatArray5476 = method3258(0, anInt5475, aFloatArray5476)
                 aFloatArray5506 = method3258(0, anInt5475, aFloatArray5506)
-                if (modelDefinition.anIntArray1868 != null && KeyboardLayoutConfig.method1257(-58, anInt5472, i)) anIntArrayArray5413 = modelDefinition.method1100(false, -20)
-                if (modelDefinition.aRectangleBoundsArray1832 != null && IsaacCipher.method780(anInt5472, 0, i)) anIntArrayArray5412 = modelDefinition.method1093((-120).toByte())
-                if (modelDefinition.anIntArray1824 == null || !GlElementArrayBuffer.method1158(anInt5472, -1, i)) break
+                if (modelDefinition.anIntArray1868 != null && KeyboardLayoutConfigStatics.method1257(-58, anInt5472, i)) anIntArrayArray5413 = modelDefinition.method1100(false, -20)
+                if (modelDefinition.aRectangleBoundsArray1832 != null && IsaacCipherStatics.method780(anInt5472, 0, i)) anIntArrayArray5412 = modelDefinition.method1093((-120).toByte())
+                if (modelDefinition.anIntArray1824 == null || !GlElementArrayBufferStatics.method1158(anInt5472, -1, i)) break
                 var i_459_ = 0
                 val is_460_ = IntArray(256)
                 for (i_461_ in 0..<anInt5478) {
@@ -2360,7 +2423,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     i_464_++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_334_ + ',' + i_335_ + ',' + i_336_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_334_ + ',' + i_335_ + ',' + i_336_ + ')'))
             }
             break
         } while (false)
@@ -2423,7 +2486,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             anInt5517++
             return method662(i, i_479_, i_480_, 126, i_478_, bool, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.OA(" + i + ',' + i_478_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_479_ + ',' + i_480_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.OA(" + i + ',' + i_478_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_479_ + ',' + i_480_ + ')'))
         }
     }
 
@@ -2524,24 +2587,24 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                             if (i_518_ != -1) {
                                                 if (is_494_ == null) {
                                                     aHeadIconRenderer_5503 = HeadIconRenderer()
-                                                    aHeadIconRenderer_5503!!.aShortArray2067 = (MinimapPolygonDrawer.method470(aShortArray5493, (-123).toByte()))
+                                                    aHeadIconRenderer_5503!!.aShortArray2067 = (MinimapPolygonDrawerStatics.method470(aShortArray5493, (-123).toByte()))
                                                     is_494_ = aHeadIconRenderer_5503!!.aShortArray2067
-                                                    aHeadIconRenderer_5503!!.aShortArray2060 = (MinimapPolygonDrawer.method470(aShortArray5438, (-126).toByte()))
+                                                    aHeadIconRenderer_5503!!.aShortArray2060 = (MinimapPolygonDrawerStatics.method470(aShortArray5438, (-126).toByte()))
                                                     is_493_ = aHeadIconRenderer_5503!!.aShortArray2060
-                                                    aHeadIconRenderer_5503!!.aShortArray2058 = (MinimapPolygonDrawer.method470(aShortArray5436, (-111).toByte()))
+                                                    aHeadIconRenderer_5503!!.aShortArray2058 = (MinimapPolygonDrawerStatics.method470(aShortArray5436, (-111).toByte()))
                                                     is_496_ = aHeadIconRenderer_5503!!.aShortArray2058
-                                                    aHeadIconRenderer_5503!!.aByteArray2069 = (ConfigVarProgress.method2309(-106, aByteArray5499))
+                                                    aHeadIconRenderer_5503!!.aByteArray2069 = (ConfigVarProgressStatics.method2309(-106, aByteArray5499))
                                                     is_495_ = aHeadIconRenderer_5503!!.aByteArray2069
                                                 }
                                                 if (is_500_ == null) {
                                                     val headIconRenderer = (HeadIconRenderer().also { class64_sub2_485_.aHeadIconRenderer_5503 = it })
-                                                    headIconRenderer.aShortArray2067 = (MinimapPolygonDrawer.method470(is_489_, (-120).toByte()))
+                                                    headIconRenderer.aShortArray2067 = (MinimapPolygonDrawerStatics.method470(is_489_, (-120).toByte()))
                                                     is_500_ = headIconRenderer.aShortArray2067
-                                                    headIconRenderer.aShortArray2060 = (MinimapPolygonDrawer.method470(is_490_, (-104).toByte()))
+                                                    headIconRenderer.aShortArray2060 = (MinimapPolygonDrawerStatics.method470(is_490_, (-104).toByte()))
                                                     is_497_ = headIconRenderer.aShortArray2060
-                                                    headIconRenderer.aShortArray2058 = (MinimapPolygonDrawer.method470(is_491_, (-118).toByte()))
+                                                    headIconRenderer.aShortArray2058 = (MinimapPolygonDrawerStatics.method470(is_491_, (-118).toByte()))
                                                     is_499_ = headIconRenderer.aShortArray2058
-                                                    headIconRenderer.aByteArray2069 = (ConfigVarProgress.method2309(-114, is_492_))
+                                                    headIconRenderer.aByteArray2069 = (ConfigVarProgressStatics.method2309(-114, is_492_))
                                                     is_498_ = headIconRenderer.aByteArray2069
                                                 }
                                                 var i_520_ = aShortArray5493!![i_513_]
@@ -2594,7 +2657,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.PA(" + (if (abstractModel != null) "{...}" else "null") + ',' + i + ',' + i_483_ + ',' + i_484_ + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.PA(" + (if (abstractModel != null) "{...}" else "null") + ',' + i + ',' + i_483_ + ',' + i_484_ + ',' + bool + ')'))
         }
     }
 
@@ -2609,7 +2672,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             for (i_530_ in 0..<anInt5406) {
                 val class353 = aTextureMipDescriptorArray5524!![i_530_]!!
                 val class334 = aCameraOrModelTransformArray5442!![i_530_]!!
-                class334.anInt4156 = ((ParticleEmitterNode.anIntArray179!![0xffff and aShortArray5486!![(class353.anInt4342)].toInt()]) and 0xffffff or (class334.anInt4156 and 0xffffff.inv()))
+                class334.anInt4156 = ((ParticleEmitterNodeStatics.anIntArray179!![0xffff and aShortArray5486!![(class353.anInt4342)].toInt()]) and 0xffffff or (class334.anInt4156 and 0xffffff.inv()))
             }
         }
         method670(-119)
@@ -2703,7 +2766,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 aBoolean5477 = false
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.p(" + i + ',' + i_534_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_535_ != null) "{...}" else "null") + ',' + i_536_ + ',' + i_537_ + ',' + i_538_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.p(" + i + ',' + i_534_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_535_ != null) "{...}" else "null") + ',' + i_536_ + ',' + i_537_ + ',' + i_538_ + ')'))
         }
     }
 
@@ -2727,7 +2790,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             var i_567_ = i_564_ and 0x7f
             if (i_560_ != -1) i_566_ += (-i_566_ + i_560_) * i_562_ shr 7
             if (i_561_ != -1) i_567_ = ((-i_567_ + i_561_) * i_562_ shr 7) + i_567_
-            aShortArray5486!![i_563_] = (BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(i_565_ shl 10, i_566_ shl 7), i_567_)).toShort()
+            aShortArray5486!![i_563_] = (BoundsConstraintEntryStatics.method2057(BoundsConstraintEntryStatics.method2057(i_565_ shl 10, i_566_ shl 7), i_567_)).toShort()
             i_563_++
         }
         if (aTextureMipDescriptorArray5524 != null) {
@@ -2735,7 +2798,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             while (anInt5406 > i_568_) {
                 val class353 = aTextureMipDescriptorArray5524!![i_568_]!!
                 val class334 = aCameraOrModelTransformArray5442!![i_568_]!!
-                class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff))
+                class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((ParticleEmitterNodeStatics.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff))
                 i_568_++
             }
         }
@@ -2793,7 +2856,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 for (i_576_ in 0..<anInt5406) {
                     val class353 = aTextureMipDescriptorArray5524!![i_576_]!!
                     val class334 = aCameraOrModelTransformArray5442!![i_576_]!!
-                    class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342]).toInt() and 0xffff]) and 0xffffff))
+                    class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((ParticleEmitterNodeStatics.anIntArray179!![(aShortArray5486!![class353.anInt4342]).toInt() and 0xffff]) and 0xffffff))
                 }
             }
             method670(-109)
@@ -2853,10 +2916,10 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 i_590_ = i_590_ shl 4
                 i_591_ = i_591_ shl 4
                 i_592_ = i_592_ shl 4
-                SpriteArchiveLoader.anInt386 = 0
+                SpriteArchiveLoaderStatics.anInt386 = 0
                 var i_596_ = 0
-                KeyboardInputSource.anInt4274 = 0
-                SpriteLoadValidator.anInt4795 = 0
+                KeyboardInputSourceStatics.anInt4274 = 0
+                SpriteLoadValidatorStatics.anInt4795 = 0
                 var i_597_ = 0
                 while (i_595_ > i_597_) {
                     val i_598_ = `is`[i_597_]
@@ -2866,9 +2929,9 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         while (is_599_.size > i_600_) {
                             val i_601_ = is_599_[i_600_]
                             if (aShortArray5494 == null || (aShortArray5494!![i_601_].toInt() and i_593_) != 0) {
-                                SpriteLoadValidator.anInt4795 += anIntArray5511!![i_601_]
-                                SpriteArchiveLoader.anInt386 += anIntArray5519!![i_601_]
-                                KeyboardInputSource.anInt4274 += anIntArray5429!![i_601_]
+                                SpriteLoadValidatorStatics.anInt4795 += anIntArray5511!![i_601_]
+                                SpriteArchiveLoaderStatics.anInt386 += anIntArray5519!![i_601_]
+                                KeyboardInputSourceStatics.anInt4274 += anIntArray5429!![i_601_]
                                 i_596_++
                             }
                             i_600_++
@@ -2877,14 +2940,14 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     i_597_++
                 }
                 if (i_596_ > 0) {
-                    KeyboardInputSource.anInt4274 = KeyboardInputSource.anInt4274 / i_596_ - -i_592_
-                    OpenGlModel.aBoolean5609 = true
-                    SpriteArchiveLoader.anInt386 = SpriteArchiveLoader.anInt386 / i_596_ + i_591_
-                    SpriteLoadValidator.anInt4795 = i_590_ + SpriteLoadValidator.anInt4795 / i_596_
+                    KeyboardInputSourceStatics.anInt4274 = KeyboardInputSourceStatics.anInt4274 / i_596_ - -i_592_
+                    OpenGlModelStatics.aBoolean5609 = true
+                    SpriteArchiveLoaderStatics.anInt386 = SpriteArchiveLoaderStatics.anInt386 / i_596_ + i_591_
+                    SpriteLoadValidatorStatics.anInt4795 = i_590_ + SpriteLoadValidatorStatics.anInt4795 / i_596_
                 } else {
-                    KeyboardInputSource.anInt4274 = i_592_
-                    SpriteLoadValidator.anInt4795 = i_590_
-                    SpriteArchiveLoader.anInt386 = i_591_
+                    KeyboardInputSourceStatics.anInt4274 = i_592_
+                    SpriteLoadValidatorStatics.anInt4795 = i_590_
+                    SpriteArchiveLoaderStatics.anInt386 = i_591_
                 }
             } else if (i == 1) {
                 if (is_594_ != null) {
@@ -2925,33 +2988,33 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             while (is_660_.size > i_661_) {
                                 val i_662_ = is_660_[i_661_]
                                 if (aShortArray5494 == null || ((aShortArray5494!![i_662_].toInt() and i_593_) != 0)) {
-                                    anIntArray5511!![i_662_] -= SpriteLoadValidator.anInt4795
-                                    anIntArray5519!![i_662_] -= SpriteArchiveLoader.anInt386
-                                    anIntArray5429!![i_662_] -= KeyboardInputSource.anInt4274
+                                    anIntArray5511!![i_662_] -= SpriteLoadValidatorStatics.anInt4795
+                                    anIntArray5519!![i_662_] -= SpriteArchiveLoaderStatics.anInt386
+                                    anIntArray5429!![i_662_] -= KeyboardInputSourceStatics.anInt4274
                                     if (i_592_ != 0) {
-                                        val i_663_ = TrigLookupTables.anIntArray1207!![i_592_]
-                                        val i_664_ = TrigLookupTables.anIntArray1204!![i_592_]
+                                        val i_663_ = TrigLookupTablesStatics.anIntArray1207!![i_592_]
+                                        val i_664_ = TrigLookupTablesStatics.anIntArray1204!![i_592_]
                                         val i_665_ = ((i_663_ * anIntArray5519!![i_662_] + ((i_664_ * anIntArray5511!![i_662_]) - -16383)) shr 14)
                                         anIntArray5519!![i_662_] = (-(anIntArray5511!![i_662_] * i_663_) + (anIntArray5519!![i_662_] * i_664_) - -16383) shr 14
                                         anIntArray5511!![i_662_] = i_665_
                                     }
                                     if (i_590_ != 0) {
-                                        val i_666_ = TrigLookupTables.anIntArray1207!![i_590_]
-                                        val i_667_ = TrigLookupTables.anIntArray1204!![i_590_]
+                                        val i_666_ = TrigLookupTablesStatics.anIntArray1207!![i_590_]
+                                        val i_667_ = TrigLookupTablesStatics.anIntArray1204!![i_590_]
                                         val i_668_ = ((16383 + ((i_667_ * anIntArray5519!![i_662_]) - i_666_ * (anIntArray5429!![i_662_]))) shr 14)
                                         anIntArray5429!![i_662_] = ((16383 + (i_667_ * anIntArray5429!![i_662_]) + (i_666_ * anIntArray5519!![i_662_])) shr 14)
                                         anIntArray5519!![i_662_] = i_668_
                                     }
                                     if (i_591_ != 0) {
-                                        val i_669_ = TrigLookupTables.anIntArray1207!![i_591_]
-                                        val i_670_ = TrigLookupTables.anIntArray1204!![i_591_]
+                                        val i_669_ = TrigLookupTablesStatics.anIntArray1207!![i_591_]
+                                        val i_670_ = TrigLookupTablesStatics.anIntArray1204!![i_591_]
                                         val i_671_ = ((16383 + (anIntArray5429!![i_662_] * i_669_) + (i_670_ * anIntArray5511!![i_662_])) shr 14)
                                         anIntArray5429!![i_662_] = (-(i_669_ * anIntArray5511!![i_662_]) + ((i_670_ * anIntArray5429!![i_662_]) - -16383)) shr 14
                                         anIntArray5511!![i_662_] = i_671_
                                     }
-                                    anIntArray5511!![i_662_] += SpriteLoadValidator.anInt4795
-                                    anIntArray5519!![i_662_] += SpriteArchiveLoader.anInt386
-                                    anIntArray5429!![i_662_] += KeyboardInputSource.anInt4274
+                                    anIntArray5511!![i_662_] += SpriteLoadValidatorStatics.anInt4795
+                                    anIntArray5519!![i_662_] += SpriteArchiveLoaderStatics.anInt386
+                                    anIntArray5429!![i_662_] += KeyboardInputSourceStatics.anInt4274
                                 }
                                 i_661_++
                             }
@@ -2973,22 +3036,22 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                             val i_680_ = -1 + aShortArray5439!![i_679_]
                                             if (i_680_ == -1) break
                                             if (i_592_ != 0) {
-                                                val i_681_ = (TrigLookupTables.anIntArray1207!![i_592_])
-                                                val i_682_ = (TrigLookupTables.anIntArray1204!![i_592_])
+                                                val i_681_ = (TrigLookupTablesStatics.anIntArray1207!![i_592_])
+                                                val i_682_ = (TrigLookupTablesStatics.anIntArray1204!![i_592_])
                                                 val i_683_ = (((i_682_ * (aShortArray5493!![i_680_])) + (aShortArray5438!![i_680_]) * i_681_ - -16383) shr 14)
                                                 aShortArray5438!![i_680_] = ((16383 + -((aShortArray5493!![i_680_]) * i_681_) + (i_682_ * (aShortArray5438!![i_680_]))) shr 14).toShort()
                                                 aShortArray5493!![i_680_] = i_683_.toShort()
                                             }
                                             if (i_590_ != 0) {
-                                                val i_684_ = (TrigLookupTables.anIntArray1207!![i_590_])
-                                                val i_685_ = (TrigLookupTables.anIntArray1204!![i_590_])
+                                                val i_684_ = (TrigLookupTablesStatics.anIntArray1207!![i_590_])
+                                                val i_685_ = (TrigLookupTablesStatics.anIntArray1204!![i_590_])
                                                 val i_686_ = ((16383 + ((aShortArray5438!![i_680_]) * i_685_ - ((aShortArray5436!![i_680_]) * i_684_))) shr 14)
                                                 aShortArray5436!![i_680_] = (((i_684_ * (aShortArray5438!![i_680_])) + (i_685_ * (aShortArray5436!![i_680_])) - -16383) shr 14).toShort()
                                                 aShortArray5438!![i_680_] = i_686_.toShort()
                                             }
                                             if (i_591_ != 0) {
-                                                val i_687_ = (TrigLookupTables.anIntArray1207!![i_591_])
-                                                val i_688_ = (TrigLookupTables.anIntArray1204!![i_591_])
+                                                val i_687_ = (TrigLookupTablesStatics.anIntArray1207!![i_591_])
+                                                val i_688_ = (TrigLookupTablesStatics.anIntArray1204!![i_591_])
                                                 val i_689_ = ((16383 + ((aShortArray5436!![i_680_]) * i_687_ + (i_688_ * (aShortArray5493!![i_680_])))) shr 14)
                                                 aShortArray5436!![i_680_] = (((i_688_ * (aShortArray5436!![i_680_])) + (-(i_687_ * (aShortArray5493!![i_680_])) - -16383)) shr 14).toShort()
                                                 aShortArray5493!![i_680_] = i_689_.toShort()
@@ -3008,25 +3071,25 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     val i_613_ = is_594_[12] shl 4
                     val i_614_ = is_594_[13] shl 4
                     val i_615_ = is_594_[14] shl 4
-                    if (OpenGlModel.aBoolean5609) {
-                        var i_616_ = ((is_594_[6] * KeyboardInputSource.anInt4274 + (SpriteLoadValidator.anInt4795 * is_594_[0] - -(SpriteArchiveLoader.anInt386 * is_594_[3])) + 8192) shr 14)
-                        var i_617_ = ((is_594_[7] * KeyboardInputSource.anInt4274 + (is_594_[1] * SpriteLoadValidator.anInt4795 - -(is_594_[4] * SpriteArchiveLoader.anInt386) + 8192)) shr 14)
+                    if (OpenGlModelStatics.aBoolean5609) {
+                        var i_616_ = ((is_594_[6] * KeyboardInputSourceStatics.anInt4274 + (SpriteLoadValidatorStatics.anInt4795 * is_594_[0] - -(SpriteArchiveLoaderStatics.anInt386 * is_594_[3])) + 8192) shr 14)
+                        var i_617_ = ((is_594_[7] * KeyboardInputSourceStatics.anInt4274 + (is_594_[1] * SpriteLoadValidatorStatics.anInt4795 - -(is_594_[4] * SpriteArchiveLoaderStatics.anInt386) + 8192)) shr 14)
                         i_616_ += i_613_
-                        var i_618_ = ((8192 + KeyboardInputSource.anInt4274 * is_594_[8] + SpriteLoadValidator.anInt4795 * is_594_[2] + SpriteArchiveLoader.anInt386 * is_594_[5]) shr 14)
+                        var i_618_ = ((8192 + KeyboardInputSourceStatics.anInt4274 * is_594_[8] + SpriteLoadValidatorStatics.anInt4795 * is_594_[2] + SpriteArchiveLoaderStatics.anInt386 * is_594_[5]) shr 14)
                         i_617_ += i_614_
                         i_618_ += i_615_
-                        SpriteLoadValidator.anInt4795 = i_616_
-                        SpriteArchiveLoader.anInt386 = i_617_
-                        OpenGlModel.aBoolean5609 = false
-                        KeyboardInputSource.anInt4274 = i_618_
+                        SpriteLoadValidatorStatics.anInt4795 = i_616_
+                        SpriteArchiveLoaderStatics.anInt386 = i_617_
+                        OpenGlModelStatics.aBoolean5609 = false
+                        KeyboardInputSourceStatics.anInt4274 = i_618_
                     }
                     val is_619_ = IntArray(9)
-                    val i_620_ = TrigLookupTables.anIntArray1204!![i_590_]
-                    val i_621_ = TrigLookupTables.anIntArray1207!![i_590_]
-                    val i_622_ = TrigLookupTables.anIntArray1204!![i_591_]
-                    val i_623_ = TrigLookupTables.anIntArray1207!![i_591_]
-                    val i_624_ = TrigLookupTables.anIntArray1204!![i_592_]
-                    val i_625_ = TrigLookupTables.anIntArray1207!![i_592_]
+                    val i_620_ = TrigLookupTablesStatics.anIntArray1204!![i_590_]
+                    val i_621_ = TrigLookupTablesStatics.anIntArray1207!![i_590_]
+                    val i_622_ = TrigLookupTablesStatics.anIntArray1204!![i_591_]
+                    val i_623_ = TrigLookupTablesStatics.anIntArray1207!![i_591_]
+                    val i_624_ = TrigLookupTablesStatics.anIntArray1204!![i_592_]
+                    val i_625_ = TrigLookupTablesStatics.anIntArray1207!![i_592_]
                     val i_626_ = i_621_ * i_624_ + 8192 shr 14
                     val i_627_ = 8192 + i_621_ * i_625_ shr 14
                     is_619_[5] = -i_621_
@@ -3038,12 +3101,12 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     is_619_[2] = i_620_ * i_623_ + 8192 shr 14
                     is_619_[8] = i_622_ * i_620_ + 8192 shr 14
                     is_619_[3] = 8192 + i_625_ * i_620_ shr 14
-                    val i_628_ = ((-KeyboardInputSource.anInt4274 * is_619_[2] + is_619_[1] * -SpriteArchiveLoader.anInt386 + (is_619_[0] * -SpriteLoadValidator.anInt4795 + 8192)) shr 14)
-                    val i_629_ = ((8192 + -KeyboardInputSource.anInt4274 * is_619_[5] + (-SpriteLoadValidator.anInt4795 * is_619_[3] - -(is_619_[4] * -SpriteArchiveLoader.anInt386))) shr 14)
-                    val i_630_ = ((8192 + -KeyboardInputSource.anInt4274 * is_619_[8] + (-SpriteLoadValidator.anInt4795 * is_619_[6] + -SpriteArchiveLoader.anInt386 * is_619_[7])) shr 14)
-                    val i_631_ = SpriteLoadValidator.anInt4795 + i_628_
-                    val i_632_ = i_629_ + SpriteArchiveLoader.anInt386
-                    val i_633_ = i_630_ - -KeyboardInputSource.anInt4274
+                    val i_628_ = ((-KeyboardInputSourceStatics.anInt4274 * is_619_[2] + is_619_[1] * -SpriteArchiveLoaderStatics.anInt386 + (is_619_[0] * -SpriteLoadValidatorStatics.anInt4795 + 8192)) shr 14)
+                    val i_629_ = ((8192 + -KeyboardInputSourceStatics.anInt4274 * is_619_[5] + (-SpriteLoadValidatorStatics.anInt4795 * is_619_[3] - -(is_619_[4] * -SpriteArchiveLoaderStatics.anInt386))) shr 14)
+                    val i_630_ = ((8192 + -KeyboardInputSourceStatics.anInt4274 * is_619_[8] + (-SpriteLoadValidatorStatics.anInt4795 * is_619_[6] + -SpriteArchiveLoaderStatics.anInt386 * is_619_[7])) shr 14)
+                    val i_631_ = SpriteLoadValidatorStatics.anInt4795 + i_628_
+                    val i_632_ = i_629_ + SpriteArchiveLoaderStatics.anInt386
+                    val i_633_ = i_630_ - -KeyboardInputSourceStatics.anInt4274
                     val is_634_ = IntArray(9)
                     for (i_635_ in 0..2) {
                         for (i_636_ in 0..2) {
@@ -3106,15 +3169,15 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             while (is_692_.size > i_693_) {
                                 val i_694_ = is_692_[i_693_]
                                 if (aShortArray5494 == null || ((i_593_ and aShortArray5494!![i_694_].toInt()) != 0)) {
-                                    anIntArray5511!![i_694_] -= SpriteLoadValidator.anInt4795
-                                    anIntArray5519!![i_694_] -= SpriteArchiveLoader.anInt386
-                                    anIntArray5429!![i_694_] -= KeyboardInputSource.anInt4274
+                                    anIntArray5511!![i_694_] -= SpriteLoadValidatorStatics.anInt4795
+                                    anIntArray5519!![i_694_] -= SpriteArchiveLoaderStatics.anInt386
+                                    anIntArray5429!![i_694_] -= KeyboardInputSourceStatics.anInt4274
                                     anIntArray5511!![i_694_] = (i_590_ * anIntArray5511!![i_694_] shr 7)
                                     anIntArray5519!![i_694_] = (anIntArray5519!![i_694_] * i_591_ shr 7)
                                     anIntArray5429!![i_694_] = (i_592_ * anIntArray5429!![i_694_] shr 7)
-                                    anIntArray5511!![i_694_] += SpriteLoadValidator.anInt4795
-                                    anIntArray5519!![i_694_] += SpriteArchiveLoader.anInt386
-                                    anIntArray5429!![i_694_] += KeyboardInputSource.anInt4274
+                                    anIntArray5511!![i_694_] += SpriteLoadValidatorStatics.anInt4795
+                                    anIntArray5519!![i_694_] += SpriteArchiveLoaderStatics.anInt386
+                                    anIntArray5429!![i_694_] += KeyboardInputSourceStatics.anInt4274
                                 }
                                 i_693_++
                             }
@@ -3128,27 +3191,27 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     val i_698_ = is_594_[12] shl 4
                     val i_699_ = is_594_[13] shl 4
                     val i_700_ = is_594_[14] shl 4
-                    if (OpenGlModel.aBoolean5609) {
-                        var i_701_ = ((KeyboardInputSource.anInt4274 * is_594_[6] + (SpriteLoadValidator.anInt4795 * is_594_[0] + (is_594_[3] * SpriteArchiveLoader.anInt386 + 8192))) shr 14)
-                        var i_702_ = (8192 + (SpriteLoadValidator.anInt4795 * is_594_[1] + (SpriteArchiveLoader.anInt386 * is_594_[4] - -(is_594_[7] * KeyboardInputSource.anInt4274))) shr 14)
+                    if (OpenGlModelStatics.aBoolean5609) {
+                        var i_701_ = ((KeyboardInputSourceStatics.anInt4274 * is_594_[6] + (SpriteLoadValidatorStatics.anInt4795 * is_594_[0] + (is_594_[3] * SpriteArchiveLoaderStatics.anInt386 + 8192))) shr 14)
+                        var i_702_ = (8192 + (SpriteLoadValidatorStatics.anInt4795 * is_594_[1] + (SpriteArchiveLoaderStatics.anInt386 * is_594_[4] - -(is_594_[7] * KeyboardInputSourceStatics.anInt4274))) shr 14)
                         i_701_ += i_698_
                         i_702_ += i_699_
-                        var i_703_ = ((8192 + is_594_[2] * SpriteLoadValidator.anInt4795 - -(is_594_[5] * SpriteArchiveLoader.anInt386) - -(KeyboardInputSource.anInt4274 * is_594_[8])) shr 14)
+                        var i_703_ = ((8192 + is_594_[2] * SpriteLoadValidatorStatics.anInt4795 - -(is_594_[5] * SpriteArchiveLoaderStatics.anInt386) - -(KeyboardInputSourceStatics.anInt4274 * is_594_[8])) shr 14)
                         i_703_ += i_700_
-                        SpriteLoadValidator.anInt4795 = i_701_
-                        SpriteArchiveLoader.anInt386 = i_702_
-                        OpenGlModel.aBoolean5609 = false
-                        KeyboardInputSource.anInt4274 = i_703_
+                        SpriteLoadValidatorStatics.anInt4795 = i_701_
+                        SpriteArchiveLoaderStatics.anInt386 = i_702_
+                        OpenGlModelStatics.aBoolean5609 = false
+                        KeyboardInputSourceStatics.anInt4274 = i_703_
                     }
                     val i_704_ = i_590_ shl 15 shr 7
                     val i_705_ = i_591_ shl 15 shr 7
                     val i_706_ = i_592_ shl 15 shr 7
-                    val i_707_ = -SpriteLoadValidator.anInt4795 * i_704_ + 8192 shr 14
-                    val i_708_ = 8192 + -SpriteArchiveLoader.anInt386 * i_705_ shr 14
-                    val i_709_ = 8192 + -KeyboardInputSource.anInt4274 * i_706_ shr 14
-                    val i_710_ = i_707_ + SpriteLoadValidator.anInt4795
-                    val i_711_ = i_708_ + SpriteArchiveLoader.anInt386
-                    val i_712_ = KeyboardInputSource.anInt4274 + i_709_
+                    val i_707_ = -SpriteLoadValidatorStatics.anInt4795 * i_704_ + 8192 shr 14
+                    val i_708_ = 8192 + -SpriteArchiveLoaderStatics.anInt386 * i_705_ shr 14
+                    val i_709_ = 8192 + -KeyboardInputSourceStatics.anInt4274 * i_706_ shr 14
+                    val i_710_ = i_707_ + SpriteLoadValidatorStatics.anInt4795
+                    val i_711_ = i_708_ + SpriteArchiveLoaderStatics.anInt386
+                    val i_712_ = KeyboardInputSourceStatics.anInt4274 + i_709_
                     val is_713_ = IntArray(9)
                     is_713_[0] = 8192 + i_704_ * is_594_[0] shr 14
                     is_713_[1] = is_594_[3] * i_704_ + 8192 shr 14
@@ -3261,7 +3324,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                     if (i_750_ >= 0) {
                                         if (i_750_ > 127) i_750_ = 127
                                     } else i_750_ = 0
-                                    aShortArray5486!![i_746_] = (BoundsConstraintEntry.method2057((BoundsConstraintEntry.method2057(i_749_ shl 7, i_748_ shl 10)), i_750_)).toShort()
+                                    aShortArray5486!![i_746_] = (BoundsConstraintEntryStatics.method2057((BoundsConstraintEntryStatics.method2057(i_749_ shl 7, i_748_ shl 10)), i_750_)).toShort()
                                 }
                                 i_745_++
                             }
@@ -3275,7 +3338,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             while (anInt5406 > i_751_) {
                                 val class353 = aTextureMipDescriptorArray5524!![i_751_]!!
                                 val class334 = aCameraOrModelTransformArray5442!![i_751_]!!
-                                class334.anInt4156 = ((class334.anInt4156 and 0xffffff.inv()) or (0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5486!![(class353.anInt4342)]).toInt()])))
+                                class334.anInt4156 = ((class334.anInt4156 and 0xffffff.inv()) or (0xffffff and (ParticleEmitterNodeStatics.anIntArray179!![0xffff and (aShortArray5486!![(class353.anInt4342)]).toInt()])))
                                 i_751_++
                             }
                         }
@@ -3335,7 +3398,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.I(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_590_ + ',' + i_591_ + ',' + i_592_ + ',' + bool + ',' + i_593_ + ',' + (if (is_594_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.I(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_590_ + ',' + i_591_ + ',' + i_592_ + ',' + bool + ',' + i_593_ + ',' + (if (is_594_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -3345,172 +3408,13 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             aBoolean5462 = bool_765_
             anInt5472 = i_764_
             aHa_Sub3_5419 = var_ha_Sub3
-            if (bool || ServerConnectionInfo.method1258(anInt5463, -9301, anInt5472)) aBufferToggleState_5520 = BufferToggleState(CompassSmoother.method2015(anInt5463, anInt5472, 7))
-            if (bool || method1837(anInt5472, 102, anInt5463)) aBufferToggleState_5460 = BufferToggleState(ParticleDefLoader.method1379(4, anInt5472, anInt5463))
-            if (bool || HuffmanCodec.method2224(anInt5463, 110.toByte(), anInt5472)) aBufferToggleState_5482 = BufferToggleState(HardCacheEntryReference.method3200(anInt5463, anInt5472, (-82).toByte()))
-            if (bool || GlowPostProcessor.method1412((-35).toByte(), anInt5472, anInt5463)) aBufferToggleState_5424 = BufferToggleState(Crc64Hashable.method1113(anInt5463, anInt5472, -21))
-            if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aAsyncTaskHandle_5485 = AsyncTaskHandle(CharacterRenderState.method2783(anInt5472, (-97).toByte(), anInt5463))
+            if (bool || ServerConnectionInfoStatics.method1258(anInt5463, -9301, anInt5472)) aBufferToggleState_5520 = BufferToggleState(CompassSmootherStatics.method2015(anInt5463, anInt5472, 7))
+            if (bool || method1837(anInt5472, 102, anInt5463)) aBufferToggleState_5460 = BufferToggleState(ParticleDefLoaderStatics.method1379(4, anInt5472, anInt5463))
+            if (bool || HuffmanCodecStatics.method2224(anInt5463, 110.toByte(), anInt5472)) aBufferToggleState_5482 = BufferToggleState(HardCacheEntryReferenceStatics.method3200(anInt5463, anInt5472, (-82).toByte()))
+            if (bool || GlowPostProcessorStatics.method1412((-35).toByte(), anInt5472, anInt5463)) aBufferToggleState_5424 = BufferToggleState(Crc64HashableStatics.method1113(anInt5463, anInt5472, -21))
+            if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aAsyncTaskHandle_5485 = AsyncTaskHandle(CharacterRenderStateStatics.method2783(anInt5472, (-97).toByte(), anInt5463))
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_764_ + ',' + bool + ',' + bool_765_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt5403: Int = 0
-        @JvmField
-        var anInt5405: Int = 0
-        @JvmField
-        var anInt5407: Int = 0
-        @JvmField
-        var anInt5408: Int = 0
-        @JvmField
-        var anInt5409: Int = 0
-        @JvmField
-        var anInt5410: Int = 0
-        @JvmField
-        var anInt5411: Int = 0
-        @JvmField
-        var anInt5414: Int = 0
-        @JvmField
-        var anInt5417: Int = 0
-        var aString5420: String? = null
-        @JvmField
-        var anInt5421: Int = 0
-        @JvmField
-        var anInt5422: Int = 0
-        @JvmField
-        var anInt5425: Int = 0
-        @JvmField
-        var anInt5426: Int = 0
-        @JvmField
-        var anInt5430: Int = 0
-        @JvmField
-        var anInt5431: Int = 0
-        @JvmField
-        var anInt5434: Int = 0
-        @JvmField
-        var anInt5435: Int = 0
-        @JvmField
-        var anInt5437: Int = 0
-        @JvmField
-        var anInt5440: Int = 0
-        @JvmField
-        var anInt5441: Int = 0
-        @JvmField
-        var anInt5444: Int = 0
-        @JvmField
-        var anInt5445: Int = 0
-        @JvmField
-        var anInt5446: Int = 0
-        @JvmField
-        var anInt5447: Int = 0
-        @JvmField
-        var anInt5448: Int = 0
-        @JvmField
-        var anInt5449: Int = 0
-        @JvmField
-        var anInt5450: Int = 0
-        @JvmField
-        var anInt5451: Int = 0
-        @JvmField
-        var anInt5453: Int = 0
-        @JvmField
-        var anInt5454: Int = 0
-        @JvmField
-        var anInt5456: Int = 0
-        @JvmField
-        var anInt5458: Int = 0
-        @JvmField
-        var anInt5459: Int = 0
-        @JvmField
-        var anInt5464: Int = 0
-        @JvmField
-        var anInt5465: Int = 0
-        @JvmField
-        var anInt5466: Int = 0
-        @JvmField
-        var anInt5468: Int = 0
-        @JvmField
-        var anInt5469: Int = 0
-        @JvmField
-        var anInt5471: Int = 0
-        @JvmField
-        var anInt5479: Int = 0
-        @JvmField
-        var anInt5480: Int = 0
-        @JvmField
-        var anInt5481: Int = 0
-        @JvmField
-        var anInt5483: Int = 0
-        @JvmField
-        var anInt5484: Int = 0
-        @JvmField
-        var anInt5487: Int = 0
-        @JvmField
-        var anInt5488: Int = 0
-        @JvmField
-        var anInt5489: Int = 0
-        @JvmField
-        var anInt5490: Int = 0
-        @JvmField
-        var anInt5491: Int = 0
-        @JvmField
-        var anInt5496: Int = 0
-        @JvmField
-        var anInt5498: Int = 0
-        @JvmField
-        var anInt5500: Int = 0
-        @JvmField
-        var anInt5501: Int = 0
-        @JvmField
-        var anInt5504: Int = 0
-        @JvmField
-        var anInt5505: Int = 0
-        @JvmField
-        var anInt5513: Int = 0
-        @JvmField
-        var anInt5514: Int = 0
-        @JvmField
-        var anInt5517: Int = 0
-        @JvmField
-        var anInt5518: Int = 0
-        @JvmField
-        var anInt5521: Int = 0
-        @JvmField
-        var anInt5522: Int = 0
-        @JvmField
-        var anInt5523: Int = 0
-        @JvmField
-        var anInt5525: Int = 0
-        @JvmField
-        var anInt5526: Int = 0
-
-        @JvmStatic
-        fun method661(i: Byte) {
-            anInt5466++
-            var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-93) as ContactList?)
-            while (class348_sub42_sub13 != null) {
-                if (class348_sub42_sub13.anInt9615 > 1) {
-                    class348_sub42_sub13.anInt9615 = 0
-                    KeyboardLayoutCache.aLruByteCache_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry).aLong9600, (-124).toByte())
-                    class348_sub42_sub13.aLinkedNodeListIterator_9621.method1009(2110355138)
-                }
-                class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(46.toByte()) as ContactList?)
-            }
-            NpcAnimationResolver.anInt166 = 0
-            if (i < 92) method661(114.toByte())
-            FileExistsCondition.anInt4776 = 0
-            SourceRowTextureNode.aNodeDeque_9111!!.method1996(115)
-            ContactEntry.aHashtable_9603!!.method3481(0)
-            ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1009(2110355138)
-            method3743(6.toByte(), FlipTextureNode.aClass348_Sub42_Sub12_9144)
-        }
-
-        @JvmStatic
-        fun method676(i: Int) {
-            aString5420 = null
-            if (i <= 11) Companion.method661((-43).toByte())
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nca.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_764_ + ',' + bool + ',' + bool_765_ + ')'))
         }
     }
 }

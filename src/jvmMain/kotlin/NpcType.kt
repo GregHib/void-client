@@ -1,4 +1,14 @@
-import CacheArchiveIndexLoader.Companion.method340
+import CacheArchiveIndexLoaderStatics.method340
+import NpcTypeStatics.anInt1326
+import NpcTypeStatics.anInt1334
+import NpcTypeStatics.anInt1341
+import NpcTypeStatics.anInt1351
+import NpcTypeStatics.anInt1357
+import NpcTypeStatics.anInt1378
+import NpcTypeStatics.anInt1389
+import NpcTypeStatics.anInt1394
+import NpcTypeStatics.anInt1400
+import NpcTypeStatics.anInt1403
 
 /* Class79 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -215,7 +225,7 @@ class NpcType {
                                                     while ((i_14_ > i_15_)) {
                                                         val i_16_ = (class348_sub49.readUnsignedByte(255))
                                                         val `is` = (IntArray(3).also { anIntArrayArray1388!![i_16_] = it })
-                                                        `is`[0] = (class348_sub49.readByte(CameraSplineNode.method2955(i_4_, -50))).toInt()
+                                                        `is`[0] = (class348_sub49.readByte(CameraSplineNodeStatics.method2955(i_4_, -50))).toInt()
                                                         `is`[1] = (class348_sub49.readByte(-113)).toInt()
                                                         `is`[2] = (class348_sub49.readByte(-84)).toInt()
                                                         i_15_++
@@ -335,7 +345,7 @@ class NpcType {
         if (i >= -75) aByte1376 = 102.toByte()
         anInt1334++
         if (this.aByte1384.toInt() == -1) {
-            if (ParticleEmitterNode.aSceneProjector_186 == this.aBufferedMessageQueue_1348!!.aSceneProjector_3578) this.aByte1384 = 1.toByte()
+            if (ParticleEmitterNodeStatics.aSceneProjector_186 == this.aBufferedMessageQueue_1348!!.aSceneProjector_3578) this.aByte1384 = 1.toByte()
             else this.aByte1384 = 0.toByte()
         }
     }
@@ -358,41 +368,41 @@ class NpcType {
             var bool_48_ = bool
             val i_49_ = if (loadProgressCounters == null) 0 else loadProgressCounters.size
             for (i_50_ in 0..<i_49_) {
-                ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_] = null
+                ModelGroundDecorStatics.aClass348_Sub42_Sub17Array10010!![i_50_] = null
                 if (loadProgressCounters!![i_50_] != null) {
                     val class17_51_ = widgetCache!!.method835((loadProgressCounters[i_50_]!!.anInt2454), 7)
                     if (class17_51_.anIntArray237 != null) {
                         bool_44_ = true
-                        AudioResampler.aWidgetDefinitionArray2169s!![i_50_] = class17_51_
+                        AudioResamplerStatics.aWidgetDefinitionArray2169s!![i_50_] = class17_51_
                         val i_52_ = loadProgressCounters[i_50_]!!.anInt2451
                         val i_53_ = loadProgressCounters[i_50_]!!.anInt2455
                         var i_54_ = class17_51_.anIntArray237[i_52_]
-                        ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_] = widgetCache.method839(i_54_ ushr 16, 3)
+                        ModelGroundDecorStatics.aClass348_Sub42_Sub17Array10010!![i_50_] = widgetCache.method839(i_54_ ushr 16, 3)
                         i_54_ = i_54_ and 0xffff
                         RegionMapDecoder.anIntArray1518!![i_50_] = i_54_
-                        if ((ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]) != null) {
-                            bool_46_ = bool_46_ or ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3272(i_54_, 0)
-                            bool_45_ = bool_45_ or ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3271(i_54_, 14)
-                            bool_48_ = bool_48_ or ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3267((-92).toByte(), i_54_)
+                        if ((ModelGroundDecorStatics.aClass348_Sub42_Sub17Array10010!![i_50_]) != null) {
+                            bool_46_ = bool_46_ or ModelGroundDecorStatics.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3272(i_54_, 0)
+                            bool_45_ = bool_45_ or ModelGroundDecorStatics.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3271(i_54_, 14)
+                            bool_48_ = bool_48_ or ModelGroundDecorStatics.aClass348_Sub42_Sub17Array10010!![i_50_]!!.method3267((-92).toByte(), i_54_)
                             bool_47_ = bool_47_ or class17_51_.aBoolean242
                         }
-                        if ((class17_51_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_53_ != -1 && i_53_ < (class17_51_.anIntArray237).size) {
-                            KaraokeSubtitleStream.anIntArray9050!![i_50_] = class17_51_.anIntArray267!![i_52_]
-                            TooltipComponentRenderer.anIntArray4648!![i_50_] = loadProgressCounters[i_50_]!!.anInt2456
+                        if ((class17_51_.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i_53_ != -1 && i_53_ < (class17_51_.anIntArray237).size) {
+                            KaraokeSubtitleStreamStatics.anIntArray9050!![i_50_] = class17_51_.anIntArray267!![i_52_]
+                            TooltipComponentRendererStatics.anIntArray4648!![i_50_] = loadProgressCounters[i_50_]!!.anInt2456
                             var i_55_ = class17_51_.anIntArray237[i_53_]
-                            TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_] = widgetCache.method839(i_55_ ushr 16, 3)
+                            TextureMaterialGroupStatics.aClass348_Sub42_Sub17Array9672!![i_50_] = widgetCache.method839(i_55_ ushr 16, 3)
                             i_55_ = i_55_ and 0xffff
-                            ParticleDefLoader.anIntArray2466!![i_50_] = i_55_
-                            if ((TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]) != null) {
-                                bool_46_ = bool_46_ or TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3272(i_55_, 0)
-                                bool_45_ = bool_45_ or TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3271(i_55_, 14)
-                                bool_48_ = bool_48_ or TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3267((-99).toByte(), i_55_)
+                            ParticleDefLoaderStatics.anIntArray2466!![i_50_] = i_55_
+                            if ((TextureMaterialGroupStatics.aClass348_Sub42_Sub17Array9672!![i_50_]) != null) {
+                                bool_46_ = bool_46_ or TextureMaterialGroupStatics.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3272(i_55_, 0)
+                                bool_45_ = bool_45_ or TextureMaterialGroupStatics.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3271(i_55_, 14)
+                                bool_48_ = bool_48_ or TextureMaterialGroupStatics.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3267((-99).toByte(), i_55_)
                             }
                         } else {
-                            KaraokeSubtitleStream.anIntArray9050!![i_50_] = 0
-                            TooltipComponentRenderer.anIntArray4648!![i_50_] = 0
-                            TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_50_] = null
-                            ParticleDefLoader.anIntArray2466!![i_50_] = -1
+                            KaraokeSubtitleStreamStatics.anIntArray9050!![i_50_] = 0
+                            TooltipComponentRendererStatics.anIntArray4648!![i_50_] = 0
+                            TextureMaterialGroupStatics.aClass348_Sub42_Sub17Array9672!![i_50_] = null
+                            ParticleDefLoaderStatics.anIntArray2466!![i_50_] = -1
                         }
                     }
                 }
@@ -420,7 +430,7 @@ class NpcType {
                         bool_48_ = bool_48_ or class348_sub42_sub17.method3267((-125).toByte(), i_56_)
                         bool_47_ = bool_47_ or widgetDefinition_36_.aBoolean242
                     }
-                    if ((widgetDefinition_36_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_38_ != -1 && (widgetDefinition_36_.anIntArray237.size > i_38_)) {
+                    if ((widgetDefinition_36_.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i_38_ != -1 && (widgetDefinition_36_.anIntArray237.size > i_38_)) {
                         i_57_ = widgetDefinition_36_.anIntArray237[i_38_]
                         i_58_ = widgetDefinition_36_.anIntArray267!![i_35_]
                         val i_66_ = i_57_ ushr 16
@@ -445,7 +455,7 @@ class NpcType {
                         bool_48_ = bool_48_ or class348_sub42_sub17_63_.method3267((-102).toByte(), i_60_)
                         bool_47_ = bool_47_ or widgetDefinition.aBoolean242
                     }
-                    if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i_37_ != -1 && widgetDefinition.anIntArray237.size > i_37_) {
+                    if ((widgetDefinition.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i_37_ != -1 && widgetDefinition.anIntArray237.size > i_37_) {
                         i_62_ = widgetDefinition.anIntArray267!![i_39_]
                         i_61_ = widgetDefinition.anIntArray237[i_37_]
                         val i_68_ = i_61_ ushr 16
@@ -487,7 +497,7 @@ class NpcType {
                 for (i_72_ in anIntArray1402!!.indices) {
                     if (anIntArray1402!![i_72_] != -1) {
                         synchronized(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
-                            modelDefinitions[i_72_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1402!![i_72_], -1)
+                            modelDefinitions[i_72_] = ParticleConfigParserStatics.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1402!![i_72_], -1)
                         }
                         if (modelDefinitions[i_72_] != null) {
                             if (modelDefinitions[i_72_]!!.anInt1830 < 13) modelDefinitions[i_72_]!!.method1092(2, 115)
@@ -530,7 +540,7 @@ class NpcType {
                     var i_80_ = 0
                     while ((i_80_ < aShortArray1328!!.size)) {
                         if (aByteArray1374 == null || aByteArray1374!!.size <= i_80_) abstractModel.ia(aShortArray1328!![i_80_], aShortArray1352[i_80_])
-                        else abstractModel.ia(aShortArray1328!![i_80_], (LoadingScreenImageNode.aShortArray9502!![aByteArray1374!![i_80_].toInt() and 0xff]))
+                        else abstractModel.ia(aShortArray1328!![i_80_], (LoadingScreenImageNodeStatics.aShortArray9502!![aByteArray1374!![i_80_].toInt() and 0xff]))
                         i_80_++
                     }
                 }
@@ -565,18 +575,18 @@ class NpcType {
             var i_86_ = 0
             var i_87_ = 1
             while (i_86_ < i_49_) {
-                if ((ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_86_]) != null) class64_82_!!.method603(
+                if ((ModelGroundDecorStatics.aClass348_Sub42_Sub17Array10010!![i_86_]) != null) class64_82_!!.method603(
                     (-55).toByte(),
-                    -1 + TooltipComponentRenderer.anIntArray4648!![i_86_],
+                    -1 + TooltipComponentRendererStatics.anIntArray4648!![i_86_],
                     null,
                     i_87_,
                     RegionMapDecoder.anIntArray1518!![i_86_],
-                    ParticleDefLoader.anIntArray2466!![i_86_],
-                    (TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_86_]),
+                    ParticleDefLoaderStatics.anIntArray2466!![i_86_],
+                    (TextureMaterialGroupStatics.aClass348_Sub42_Sub17Array9672!![i_86_]),
                     0,
-                    (ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_86_]),
-                    (AudioResampler.aWidgetDefinitionArray2169s!![i_86_]!!.aBoolean242),
-                    KaraokeSubtitleStream.anIntArray9050!![i_86_]
+                    (ModelGroundDecorStatics.aClass348_Sub42_Sub17Array10010!![i_86_]),
+                    (AudioResamplerStatics.aWidgetDefinitionArray2169s!![i_86_]!!.aBoolean242),
+                    KaraokeSubtitleStreamStatics.anIntArray9050!![i_86_]
                 )
                 i_86_++
                 i_87_ = i_87_ shl 1
@@ -602,16 +612,16 @@ class NpcType {
             else if (class348_sub42_sub17_63_ != null) class64_82_!!.method617(i_60_, i_62_, class348_sub42_sub17_64_, 0, class348_sub42_sub17_63_, false, widgetDefinition!!.aBoolean242, i_61_, i_34_ - 1)
             var i_91_ = 0
             while (i_49_ > i_91_) {
-                ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_91_] = null
-                TextureMaterialGroup.aClass348_Sub42_Sub17Array9672!![i_91_] = null
-                AudioResampler.aWidgetDefinitionArray2169s!![i_91_] = null
+                ModelGroundDecorStatics.aClass348_Sub42_Sub17Array10010!![i_91_] = null
+                TextureMaterialGroupStatics.aClass348_Sub42_Sub17Array9672!![i_91_] = null
+                AudioResamplerStatics.aWidgetDefinitionArray2169s!![i_91_] = null
                 i_91_++
             }
             if (anInt1346 != 128 || anInt1358 != 128) class64_82_!!.O(anInt1346, anInt1358, anInt1346)
             class64_82_!!.s(i_40_)
             return class64_82_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw SoundBankPatchStatics.method2929(
                 runtimeexception,
                 ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
             )
@@ -658,7 +668,7 @@ class NpcType {
                 synchronized(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
                     var i_102_ = 0
                     while ((anIntArray1380!!.size > i_102_)) {
-                        modelDefinitions[i_102_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1380!![i_102_], -1)
+                        modelDefinitions[i_102_] = ParticleConfigParserStatics.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1380!![i_102_], -1)
                         i_102_++
                     }
                 }
@@ -677,7 +687,7 @@ class NpcType {
                 if (aShortArray1328 != null) {
                     var i_104_ = 0
                     while ((aShortArray1328!!.size > i_104_)) {
-                        if (aByteArray1374 != null && aByteArray1374!!.size > i_104_) abstractModel.ia(aShortArray1328!![i_104_], (LoadingScreenImageNode.aShortArray9502!![0xff and aByteArray1374!![i_104_].toInt()]))
+                        if (aByteArray1374 != null && aByteArray1374!!.size > i_104_) abstractModel.ia(aShortArray1328!![i_104_], (LoadingScreenImageNodeStatics.aShortArray9502!![0xff and aByteArray1374!![i_104_].toInt()]))
                         else abstractModel.ia(aShortArray1328!![i_104_], aShortArray1352[i_104_])
                         i_104_++
                     }
@@ -699,7 +709,7 @@ class NpcType {
             abstractModel!!.s(i_97_)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bb.H(" + (if (varResolver != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bb.H(" + (if (varResolver != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
         }
     }
 
@@ -740,75 +750,5 @@ class NpcType {
         this.anInt1385 = -1
         this.anInt1395 = -1
         this.anInt1401 = -1
-    }
-
-    companion object {
-        @JvmField
-        var anInt1326: Int = 0
-        @JvmField
-        var anInt1332: Int = 0
-        @JvmField
-        var anInt1334: Int = 0
-        @JvmField
-        var anInt1341: Int = 0
-        @JvmField
-        var anInt1351: Int = 0
-        @JvmField
-        var anInt1357: Int = 0
-        var anInt1359: Int = 0
-        @JvmField
-        var aAbstractModelRenderer_1365: AbstractModelRenderer? = null
-        @JvmField
-        var aClient1367: Client? = null
-        @JvmField
-        var anInt1378: Int = 0
-        @JvmField
-        var anInt1379: Int = 0
-        var anInt1387: Int = 0
-        @JvmField
-        var anInt1389: Int = 0
-        @JvmField
-        var anInt1394: Int = 0
-        @JvmField
-        var anInt1400: Int = 0
-        @JvmField
-        var anInt1403: Int = 0
-        @JvmField
-        var anInt1404: Int = 0
-        @JvmStatic
-        fun method797(i: Int, i_29_: Int, i_30_: Byte) {
-            anInt1379++
-            if (DisplaceTextureNode.anInt9139 != i_29_) {
-                SceneEffectMarker.anIntArray6432 = IntArray(i_29_)
-                for (i_31_ in 0..<i_29_) SceneEffectMarker.anIntArray6432!![i_31_] = (i_31_ shl 12) / i_29_
-                SimpleBinaryOptionState.anInt6076 = i_29_ + -1
-                DisplaceTextureNode.anInt9139 = i_29_
-                MediaStreamClient.anInt3201 = 32 * i_29_
-            }
-            if (i_30_ <= 108) aClient1367 = null
-            if (FixedFunctionMaterialPass.anInt6212 != i) {
-                if (DisplaceTextureNode.anInt9139 != i) {
-                    LightDetailOptionState.anIntArray6035 = IntArray(i)
-                    for (i_32_ in 0..<i) LightDetailOptionState.anIntArray6035!![i_32_] = (i_32_ shl 12) / i
-                } else LightDetailOptionState.anIntArray6035 = SceneEffectMarker.anIntArray6432
-                FixedFunctionMaterialPass.anInt6212 = i
-                TextureCubeProvider.anInt6325 = -1 + i
-            }
-        }
-
-        @JvmStatic
-        fun method802(i: Int, i_93_: Int, bool: Boolean): Boolean {
-            if (bool != true) return false
-            anInt1332++
-            if (i_93_ < 0 || i < 0 || i_93_ >= AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!!.size || i >= AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_93_]!!.size) return false
-            return (AnimationFrameDefinition.aByteArrayArrayArray6962!![1]!![i_93_]!![i].toInt() and 0x2) != 0
-        }
-
-        @JvmStatic
-        fun method804(i: Int) {
-            aAbstractModelRenderer_1365 = null
-            aClient1367 = null
-            if (i != -3752) anInt1387 = 14
-        }
     }
 }

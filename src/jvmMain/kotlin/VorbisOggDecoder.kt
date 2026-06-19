@@ -1,4 +1,4 @@
-import KeyboardInputSource.Companion.method2699
+import KeyboardInputSourceStatics.method2699
 import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggStreamState
 import jagtheora.vorbis.DSPState
@@ -6,6 +6,12 @@ import jagtheora.vorbis.VorbisBlock
 import jagtheora.vorbis.VorbisComment
 import jagtheora.vorbis.VorbisInfo
 import java.net.URL
+import VorbisOggDecoderStatics.method2967
+import VorbisOggDecoderStatics.anInt8989
+import VorbisOggDecoderStatics.anInt8990
+import VorbisOggDecoderStatics.anInt8997
+import VorbisOggDecoderStatics.anInt8999
+import VorbisOggDecoderStatics.anInt9003
 
 class VorbisOggDecoder internal constructor(oggstreamstate: OggStreamState) : OggBitstreamDecoder(oggstreamstate) {
     private var aDSPState8993: DSPState? = null
@@ -42,7 +48,7 @@ class VorbisOggDecoder internal constructor(oggstreamstate: OggStreamState) : Og
             d = aClass348_Sub16_Sub2_8995!!.method2837(i.toInt() xor 0x5599.inv())
             if (d < 0.0) d = aDouble9005
         }
-        return -(256.0f / HslColorConfig.anInt339.toFloat()).toDouble() + d
+        return -(256.0f / HslColorConfigStatics.anInt339.toFloat()).toDouble() + d
     }
 
     override fun method2961(i: Byte) {
@@ -64,7 +70,7 @@ class VorbisOggDecoder internal constructor(oggstreamstate: OggStreamState) : Og
                 if (aVorbisInfo9006.channels > 2 || aVorbisInfo9006.channels < 1) throw RuntimeException(aVorbisInfo9006.channels.toString())
                 aDSPState8993 = DSPState(aVorbisInfo9006)
                 aVorbisBlock9000 = VorbisBlock(aDSPState8993)
-                aAudioResampler_8994 = AudioResampler(aVorbisInfo9006.rate, HslColorConfig.anInt339)
+                aAudioResampler_8994 = AudioResampler(aVorbisInfo9006.rate, HslColorConfigStatics.anInt339)
                 aClass348_Sub16_Sub2_8995 = PcmStreamBuffer(aVorbisInfo9006.channels)
             }
         } else {
@@ -80,78 +86,5 @@ class VorbisOggDecoder internal constructor(oggstreamstate: OggStreamState) : Og
             aClass348_Sub16_Sub2_8995!!.method2835(class348_sub42_sub4, 30700)
         }
         if (i > -91) method2961((-106).toByte())
-    }
-
-    companion object {
-        @JvmField
-        var anInt8989: Int = 0
-        @JvmField
-        var anInt8990: Int = 0
-        @JvmField
-        var anInt8991: Int = 0
-        @JvmField
-        var aPrivilegedOperationWorker_8992: PrivilegedOperationWorker? = null
-        @JvmField
-        var aByteArrayArray8996: Array<ByteArray?>? = null
-        @JvmField
-        var anInt8997: Int = 0
-        @JvmField
-        var anInt8998: Int = 0
-        @JvmField
-        var anInt8999: Int = 0
-        @JvmField
-        var anInt9003: Int = 0
-        @JvmField
-        var anInt9004: Int = 0
-        @JvmStatic
-        fun method2967(i: Int, abstractModel: AbstractModel?, i_0_: Int, i_1_: Int, i_2_: Int): CircleHitbox? {
-            anInt8991++
-            if (i_2_ != 2) aByteArrayArray8996 = null
-            if (abstractModel == null) return null
-            val circleHitbox = CircleHitbox(i, i_1_, i_0_, abstractModel.na(), abstractModel.V(), abstractModel.RA(), abstractModel.fa(), abstractModel.EA(), abstractModel.HA(), abstractModel.G())
-            return circleHitbox
-        }
-
-        @JvmStatic
-        fun method2968(i: Byte) {
-            aPrivilegedOperationWorker_8992 = null
-            aByteArrayArray8996 = null
-            if (i > -114) Companion.method2968((-12).toByte())
-        }
-
-        @JvmStatic
-        fun method2970(i: Int, class348_sub49: ByteBuffer): MinimapPolygonDrawer {
-            anInt8998++
-            if (i != 2) Companion.method2972(null, -114, 15)
-            return MinimapPolygonDrawer(class348_sub49.readShort(13638), class348_sub49.readShort(i + 13636), class348_sub49.readShort(13638), class348_sub49.readShort(i xor 0x3544), class348_sub49.readShort(13638), class348_sub49.readShort(i + 13636), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
-        }
-
-        @JvmStatic
-        fun method2972(string: String?, i: Int, i_3_: Int): Boolean {
-            anInt9004++
-            if (aPrivilegedOperationWorker_8992!!.aBoolean3777) {
-                CacheStateResetter.aServerConnectionInfo_125 = ServerConnectionInfo()
-                CacheStateResetter.aServerConnectionInfo_125!!.anInt2143 = i
-                CacheStateResetter.aServerConnectionInfo_125!!.aString2147 = string
-                if (NpcAnimationResolver.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271) {
-                    CacheStateResetter.aServerConnectionInfo_125!!.anInt2138 = 50000 - -CacheStateResetter.aServerConnectionInfo_125!!.anInt2143
-                    CacheStateResetter.aServerConnectionInfo_125!!.anInt2148 = 40000 - -CacheStateResetter.aServerConnectionInfo_125!!.anInt2143
-                }
-                if (i < WorldMapImageBuilder.aClass110_Sub1Array1146!!.size && WorldMapImageBuilder.aClass110_Sub1Array1146!![i] != null) ConfigFlagUtil.anInt3234 = (WorldMapImageBuilder.aClass110_Sub1Array1146!![i]!!.anInt1708)
-                return true
-            }
-            var string_4_ = ""
-            if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) string_4_ = ":" + (7000 + i)
-            var string_5_ = ""
-            if (BloomGraphicsOptionState.aString5966 != null) string_5_ = "/p=" + BloomGraphicsOptionState.aString5966
-            val string_6_ = ("http://" + string + string_4_ + "/l=" + AnimationFrameDefinition.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_5_ + "/j" + (if (!RegionSceneLoader.aBoolean3697) "0" else "1") + ",o" + (if (HashTableContainer.aBoolean6997) "1" else "0") + ",a2")
-            try {
-                NpcType.aClient1367!!.showDocument(URL(string_6_), "_self")
-                if (i_3_ >= -17) aPrivilegedOperationWorker_8992 = null
-            } catch (exception: Exception) {
-                return false
-            }
-            return true
-        }
     }
 }

@@ -1,6 +1,11 @@
 import java.util.*
 import kotlin.math.max
 import kotlin.math.min
+import TurbulenceTextureNodeStatics.aBoolean9307
+import TurbulenceTextureNodeStatics.anInt9308
+import TurbulenceTextureNodeStatics.anInt9309
+import TurbulenceTextureNodeStatics.anInt9316
+import TurbulenceTextureNodeStatics.anInt9321
 
 class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
     private var anInt9306 = 0
@@ -81,14 +86,14 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
         var i_3_ = i_3_
         try {
             anInt9309++
-            val i_6_ = (if (anInt9310 <= 0) 4096 else 4096 - ModelDefinition.method1097(117.toByte(), anInt9310, random))
+            val i_6_ = (if (anInt9310 <= 0) 4096 else 4096 - ModelDefinitionStatics.method1097(117.toByte(), anInt9310, random))
             val i_7_ = 88 % ((i - 57) / 55)
             val i_8_ = anInt9306 * anInt9314 shr 12
-            val i_9_ = (anInt9306 - (if (i_8_ > 0) ModelDefinition.method1097(82.toByte(), i_8_, random) else 0))
-            if (DisplaceTextureNode.Companion.anInt9139 <= i_3_) i_3_ -= DisplaceTextureNode.Companion.anInt9139
+            val i_9_ = (anInt9306 - (if (i_8_ > 0) ModelDefinitionStatics.method1097(82.toByte(), i_8_, random) else 0))
+            if (DisplaceTextureNodeStatics.anInt9139 <= i_3_) i_3_ -= DisplaceTextureNodeStatics.anInt9139
             if (i_9_ <= 0) {
-                if (DisplaceTextureNode.Companion.anInt9139 < i_3_ + i_5_) {
-                    val i_10_: Int = DisplaceTextureNode.Companion.anInt9139 + -i_3_
+                if (DisplaceTextureNodeStatics.anInt9139 < i_3_ + i_5_) {
+                    val i_10_: Int = DisplaceTextureNodeStatics.anInt9139 + -i_3_
                     for (i_11_ in 0..<i_2_) {
                         val is_12_: IntArray = `is`!![i_11_ + i_4_]!!
                         ArrayCopyUtil.method1579(is_12_, i_3_, i_10_, i_6_)
@@ -115,21 +120,21 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                         if (anInt9312 == 0) {
                             for (i_23_ in 0..<i_16_) {
                                 val i_24_ = i_6_ * i_23_ / i_16_
-                                is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))] = i_22_ * i_24_ shr 12
-                                is_21_[NpcSummaryDefinition.method1166(i_23_ + i_3_, (SimpleBinaryOptionState.anInt6076))] = is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))]
+                                is_21_[(NpcSummaryDefinitionStatics.method1166(SimpleBinaryOptionStateStatics.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))] = i_22_ * i_24_ shr 12
+                                is_21_[NpcSummaryDefinitionStatics.method1166(i_23_ + i_3_, (SimpleBinaryOptionStateStatics.anInt6076))] = is_21_[(NpcSummaryDefinitionStatics.method1166(SimpleBinaryOptionStateStatics.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))]
                             }
                         } else {
                             var i_25_ = 0
                             while (i_16_ > i_25_) {
                                 val i_26_ = i_6_ * i_25_ / i_16_
-                                is_21_[(NpcSummaryDefinition.method1166(i_3_ - -i_5_ + (-i_25_ - 1), SimpleBinaryOptionState.anInt6076))] = min(i_26_, i_22_)
-                                is_21_[NpcSummaryDefinition.method1166((SimpleBinaryOptionState.anInt6076), i_25_ + i_3_)] = is_21_[(NpcSummaryDefinition.method1166(i_3_ - -i_5_ + (-i_25_ - 1), SimpleBinaryOptionState.anInt6076))]
+                                is_21_[(NpcSummaryDefinitionStatics.method1166(i_3_ - -i_5_ + (-i_25_ - 1), SimpleBinaryOptionStateStatics.anInt6076))] = min(i_26_, i_22_)
+                                is_21_[NpcSummaryDefinitionStatics.method1166((SimpleBinaryOptionStateStatics.anInt6076), i_25_ + i_3_)] = is_21_[(NpcSummaryDefinitionStatics.method1166(i_3_ - -i_5_ + (-i_25_ - 1), SimpleBinaryOptionStateStatics.anInt6076))]
                                 i_25_++
                             }
                         }
-                        if (DisplaceTextureNode.Companion.anInt9139 >= i_19_ + i_18_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_22_)
+                        if (DisplaceTextureNodeStatics.anInt9139 >= i_19_ + i_18_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_22_)
                         else {
-                            val i_27_: Int = -i_18_ + DisplaceTextureNode.Companion.anInt9139
+                            val i_27_: Int = -i_18_ + DisplaceTextureNodeStatics.anInt9139
                             ArrayCopyUtil.method1579(is_21_, i_18_, i_27_, i_22_)
                             ArrayCopyUtil.method1579(is_21_, 0, i_19_ - i_27_, i_22_)
                         }
@@ -141,33 +146,33 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                                 var i_30_ = 0
                                 while (i_16_ > i_30_) {
                                     val i_31_ = i_6_ * i_30_ / i_16_
-                                    is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, -1 + i_5_ + i_3_ - i_30_))] = i_31_ * i_29_ shr 12
-                                    is_21_[NpcSummaryDefinition.method1166((SimpleBinaryOptionState.anInt6076), i_30_ + i_3_)] = is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, -1 + i_5_ + i_3_ - i_30_))]
+                                    is_21_[(NpcSummaryDefinitionStatics.method1166(SimpleBinaryOptionStateStatics.anInt6076, -1 + i_5_ + i_3_ - i_30_))] = i_31_ * i_29_ shr 12
+                                    is_21_[NpcSummaryDefinitionStatics.method1166((SimpleBinaryOptionStateStatics.anInt6076), i_30_ + i_3_)] = is_21_[(NpcSummaryDefinitionStatics.method1166(SimpleBinaryOptionStateStatics.anInt6076, -1 + i_5_ + i_3_ - i_30_))]
                                     i_30_++
                                 }
                             } else {
                                 var i_32_ = 0
                                 while ((i_16_ > i_32_)) {
                                     val i_33_ = i_32_ * i_6_ / i_16_
-                                    is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, -i_32_ + i_5_ + (i_3_ + -1)))] = min(i_29_, i_33_)
-                                    is_21_[NpcSummaryDefinition.method1166((SimpleBinaryOptionState.anInt6076), i_3_ + i_32_)] = is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, -i_32_ + i_5_ + (i_3_ + -1)))]
+                                    is_21_[(NpcSummaryDefinitionStatics.method1166(SimpleBinaryOptionStateStatics.anInt6076, -i_32_ + i_5_ + (i_3_ + -1)))] = min(i_29_, i_33_)
+                                    is_21_[NpcSummaryDefinitionStatics.method1166((SimpleBinaryOptionStateStatics.anInt6076), i_3_ + i_32_)] = is_21_[(NpcSummaryDefinitionStatics.method1166(SimpleBinaryOptionStateStatics.anInt6076, -i_32_ + i_5_ + (i_3_ + -1)))]
                                     i_32_++
                                 }
                             }
-                            if (i_19_ + i_18_ <= DisplaceTextureNode.Companion.anInt9139) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_29_)
+                            if (i_19_ + i_18_ <= DisplaceTextureNodeStatics.anInt9139) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_29_)
                             else {
-                                val i_34_: Int = -i_18_ + DisplaceTextureNode.Companion.anInt9139
+                                val i_34_: Int = -i_18_ + DisplaceTextureNodeStatics.anInt9139
                                 ArrayCopyUtil.method1579(is_21_, i_18_, i_34_, i_29_)
                                 ArrayCopyUtil.method1579(is_21_, 0, -i_34_ + i_19_, i_29_)
                             }
                         } else {
                             for (i_35_ in 0..<i_16_) {
-                                is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))] = i_6_ * i_35_ / i_16_
-                                is_21_[NpcSummaryDefinition.method1166(i_35_ + i_3_, (SimpleBinaryOptionState.anInt6076))] = is_21_[(NpcSummaryDefinition.method1166(SimpleBinaryOptionState.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))]
+                                is_21_[(NpcSummaryDefinitionStatics.method1166(SimpleBinaryOptionStateStatics.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))] = i_6_ * i_35_ / i_16_
+                                is_21_[NpcSummaryDefinitionStatics.method1166(i_35_ + i_3_, (SimpleBinaryOptionStateStatics.anInt6076))] = is_21_[(NpcSummaryDefinitionStatics.method1166(SimpleBinaryOptionStateStatics.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))]
                             }
-                            if (DisplaceTextureNode.Companion.anInt9139 >= i_18_ - -i_19_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_6_)
+                            if (DisplaceTextureNodeStatics.anInt9139 >= i_18_ - -i_19_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_6_)
                             else {
-                                val i_36_: Int = -i_18_ + DisplaceTextureNode.Companion.anInt9139
+                                val i_36_: Int = -i_18_ + DisplaceTextureNodeStatics.anInt9139
                                 ArrayCopyUtil.method1579(is_21_, i_18_, i_36_, i_6_)
                                 ArrayCopyUtil.method1579(is_21_, 0, i_19_ - i_36_, i_6_)
                             }
@@ -176,7 +181,7 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("cc.C(" + i + ',' + i_2_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (random != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("cc.C(" + i + ',' + i_2_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (random != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
         }
     }
 
@@ -195,23 +200,23 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
             var bool_48_ = true
             var i_49_ = 0
             var i_50_ = 0
-            val i_51_: Int = anInt9317 * DisplaceTextureNode.Companion.anInt9139 shr 12
-            val i_52_: Int = DisplaceTextureNode.Companion.anInt9139 * anInt9320 shr 12
-            val i_53_ = anInt9322 * FixedFunctionMaterialPass.anInt6212 shr 12
-            val i_54_ = FixedFunctionMaterialPass.anInt6212 * anInt9323 shr 12
+            val i_51_: Int = anInt9317 * DisplaceTextureNodeStatics.anInt9139 shr 12
+            val i_52_: Int = DisplaceTextureNodeStatics.anInt9139 * anInt9320 shr 12
+            val i_53_ = anInt9322 * FixedFunctionMaterialPassStatics.anInt6212 shr 12
+            val i_54_ = FixedFunctionMaterialPassStatics.anInt6212 * anInt9323 shr 12
             if (i_54_ <= 1) return is_42_[i]
-            anInt9306 = DisplaceTextureNode.Companion.anInt9139 / 8 * anInt9311 shr 12
-            val i_55_: Int = 1 + DisplaceTextureNode.Companion.anInt9139 / i_51_
+            anInt9306 = DisplaceTextureNodeStatics.anInt9139 / 8 * anInt9311 shr 12
+            val i_55_: Int = 1 + DisplaceTextureNodeStatics.anInt9139 / i_51_
             var is_56_: Array<IntArray> = Array<IntArray>(i_55_) { IntArray(3) }
             var is_57_: Array<IntArray> = Array<IntArray>(i_55_) { IntArray(3) }
             val random = Random(anInt9318.toLong())
             while (true) {
-                var i_58_ = i_51_ + ModelDefinition.method1097(106.toByte(), i_52_ - i_51_, random)
-                var i_59_ = (ModelDefinition.method1097(117.toByte(), -i_53_ + i_54_, random) + i_53_)
+                var i_58_ = i_51_ + ModelDefinitionStatics.method1097(106.toByte(), i_52_ - i_51_, random)
+                var i_59_ = (ModelDefinitionStatics.method1097(117.toByte(), -i_53_ + i_54_, random) + i_53_)
                 var i_60_ = i_46_ + i_58_
-                if (i_60_ > DisplaceTextureNode.Companion.anInt9139) {
-                    i_60_ = DisplaceTextureNode.Companion.anInt9139
-                    i_58_ = DisplaceTextureNode.Companion.anInt9139 - i_46_
+                if (i_60_ > DisplaceTextureNodeStatics.anInt9139) {
+                    i_60_ = DisplaceTextureNodeStatics.anInt9139
+                    i_58_ = DisplaceTextureNodeStatics.anInt9139 - i_46_
                 }
                 var i_61_: Int
                 if (bool_48_) i_61_ = 0
@@ -220,8 +225,8 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                     val is_63_ = is_57_[i_47_]
                     var i_64_ = 0
                     var i_65_ = i_43_ + i_60_
-                    if (i_65_ < 0) i_65_ += DisplaceTextureNode.Companion.anInt9139
-                    if (i_65_ > DisplaceTextureNode.Companion.anInt9139) i_65_ -= DisplaceTextureNode.Companion.anInt9139
+                    if (i_65_ < 0) i_65_ += DisplaceTextureNodeStatics.anInt9139
+                    if (i_65_ > DisplaceTextureNodeStatics.anInt9139) i_65_ -= DisplaceTextureNodeStatics.anInt9139
                     while (true) {
                         val is_66_ = is_57_[i_62_]
                         if (i_65_ >= is_66_[0] && is_66_[1] >= i_65_) break
@@ -231,8 +236,8 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                     i_61_ = is_63_[2]
                     if (i_62_ != i_47_) {
                         var i_67_ = i_46_ - -i_43_
-                        if (i_67_ < 0) i_67_ += DisplaceTextureNode.Companion.anInt9139
-                        if (DisplaceTextureNode.Companion.anInt9139 < i_67_) i_67_ -= DisplaceTextureNode.Companion.anInt9139
+                        if (i_67_ < 0) i_67_ += DisplaceTextureNodeStatics.anInt9139
+                        if (DisplaceTextureNodeStatics.anInt9139 < i_67_) i_67_ -= DisplaceTextureNodeStatics.anInt9139
                         var i_68_ = 1
                         while (i_64_ >= i_68_) {
                             val is_69_ = is_57_[(i_68_ + i_47_) % i_49_]
@@ -253,7 +258,7 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                                         i_76_ = min(i_65_, i_74_)
                                     } else {
                                         i_75_ = max(i_67_, i_73_)
-                                        i_76_ = DisplaceTextureNode.Companion.anInt9139
+                                        i_76_ = DisplaceTextureNodeStatics.anInt9139
                                     }
                                 } else {
                                     i_75_ = max(i_67_, i_73_)
@@ -265,9 +270,9 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                     }
                     i_47_ = i_62_
                 }
-                if (FixedFunctionMaterialPass.anInt6212 >= i_59_ + i_61_) bool = false
-                else i_59_ = -i_61_ + FixedFunctionMaterialPass.anInt6212
-                if (i_60_ == DisplaceTextureNode.Companion.anInt9139) {
+                if (FixedFunctionMaterialPassStatics.anInt6212 >= i_59_ + i_61_) bool = false
+                else i_59_ = -i_61_ + FixedFunctionMaterialPassStatics.anInt6212
+                if (i_60_ == DisplaceTextureNodeStatics.anInt9139) {
                     method3112(-59, i_59_, is_42_, random, i_46_ + i_44_, i_61_, i_58_)
                     if (bool) break
                     bool = true
@@ -281,13 +286,13 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                     i_49_ = i_50_
                     i_45_ = i_44_
                     i_50_ = 0
-                    i_44_ = ModelDefinition.method1097(113.toByte(), DisplaceTextureNode.Companion.anInt9139, random)
+                    i_44_ = ModelDefinitionStatics.method1097(113.toByte(), DisplaceTextureNodeStatics.anInt9139, random)
                     i_43_ = -i_45_ + i_44_
                     i_46_ = 0
                     var i_80_ = i_43_
-                    if (i_80_ < 0) i_80_ += DisplaceTextureNode.Companion.anInt9139
+                    if (i_80_ < 0) i_80_ += DisplaceTextureNodeStatics.anInt9139
                     i_47_ = 0
-                    if (i_80_ > DisplaceTextureNode.Companion.anInt9139) i_80_ -= DisplaceTextureNode.Companion.anInt9139
+                    if (i_80_ > DisplaceTextureNodeStatics.anInt9139) i_80_ -= DisplaceTextureNodeStatics.anInt9139
                     bool_48_ = false
                     while (true) {
                         val is_81_ = is_57_[i_47_]
@@ -305,54 +310,5 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
             }
         }
         return `is`
-    }
-
-    companion object {
-        @JvmField
-        var aBoolean9307: Boolean = true
-        @JvmField
-        var anInt9308: Int = 0
-        @JvmField
-        var anInt9309: Int = 0
-        @JvmField
-        var anInt9313: Int
-        @JvmField
-        var anInt9315: Int = 0
-        @JvmField
-        var anInt9316: Int = 0
-        @JvmField
-        var aClass348_Sub22Array9319: Array<NpcReference?>? = arrayOfNulls<NpcReference>(1024)
-        @JvmField
-        var anInt9321: Int = 0
-        @JvmStatic
-        fun method3113(c: Char, bool: Boolean, string: String): Array<String?> {
-            anInt9315++
-            val i = CharCountUtil.method257(4, string, c)
-            val strings = arrayOfNulls<String>(i - -1)
-            var i_37_ = 0
-            var i_38_ = 0
-            if (bool != true) Companion.method3114((-76).toByte())
-            for (i_39_ in 0..<i) {
-                var i_40_: Int
-                i_40_ = i_38_
-                while (string.get(i_40_) != c) {
-                    i_40_++
-                }
-                strings[i_37_++] = string.substring(i_38_, i_40_)
-                i_38_ = 1 + i_40_
-            }
-            strings[i] = string.substring(i_38_)
-            return strings
-        }
-
-        @JvmStatic
-        fun method3114(i: Byte) {
-            aClass348_Sub22Array9319 = null
-            if (i > -63) Companion.method3114((-91).toByte())
-        }
-
-        init {
-            anInt9313 = 0
-        }
     }
 }

@@ -1,12 +1,32 @@
-import ModelBatchBase.Companion.method1130
-import HostPingThread.Companion.method1301
-import VorbisOggDecoder.Companion.method2967
-import ChatMessageStream.Companion.method136
+import ModelBatchBaseStatics.method1130
+import HostPingThreadStatics.method1301
+import VorbisOggDecoderStatics.method2967
+import ChatMessageStreamStatics.method136
+import NpcActorEntityStatics.anInt10063
+import NpcActorEntityStatics.anInt10065
+import NpcActorEntityStatics.anInt10067
+import NpcActorEntityStatics.anInt10068
+import NpcActorEntityStatics.anInt10069
+import NpcActorEntityStatics.anInt10070
+import NpcActorEntityStatics.anInt10072
+import NpcActorEntityStatics.anInt10075
+import NpcActorEntityStatics.anInt10077
+import NpcActorEntityStatics.anInt10078
+import NpcActorEntityStatics.anInt10080
+import NpcActorEntityStatics.anInt10083
+import NpcActorEntityStatics.anInt10085
+import NpcActorEntityStatics.anInt10086
+import NpcActorEntityStatics.anInt10087
+import NpcActorEntityStatics.anInt10088
+import NpcActorEntityStatics.anInt10089
+import NpcActorEntityStatics.anInt10091
+import NpcActorEntityStatics.anInt10092
+import NpcActorEntityStatics.anInt10093
 
 /* Class318_Sub1_Sub4_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, bool_6_: Boolean) : ActorEntity(i_1_, i_2_, i_3_, i, i_0_, SphereMapMaterialPass.method2175(i_5_, (-34).toByte(), i_4_)), RenderTarget {
+class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, bool_6_: Boolean) : ActorEntity(i_1_, i_2_, i_3_, i, i_0_, SphereMapMaterialPassStatics.method2175(i_5_, (-34).toByte(), i_4_)), RenderTarget {
     private var aByte10062: Byte = 0
     private val aBoolean10064: Boolean
     private var aBoolean10066 = false
@@ -29,7 +49,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
                 this.y = i_3_
                 aByte10079 = i_4_.toByte()
                 aByte10062 = i_5_.toByte()
-                aBoolean10064 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10066 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
+                aBoolean10064 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10066 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 var i_7_ = 2048
                 if (aBoolean10090) i_7_ = i_7_ or 0x10000
                 val class2 = method2481(aBoolean10064, i_7_, -4, var_renderer)
@@ -39,7 +59,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
                 if (!aBoolean10090) break
                 this.aAbstractModel_10071 = this.aAbstractModel_10071!!.method614(0.toByte(), i_7_, false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ge.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + bool_6_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("ge.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + bool_6_ + ')'))
             }
             break
         } while (false)
@@ -64,7 +84,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
         if (class64 != null) {
             val class101 = var_renderer!!.method3705()
             class101.method894(this.x, this.anInt6382, this.y)
-            if (ParticleSystemRenderer.aBoolean3870) return class64.method623(i_9_, i, class101, false, 0, LocalPlayerState.anInt1906)
+            if (ParticleSystemRendererStatics.aBoolean3870) return class64.method623(i_9_, i, class101, false, 0, LocalPlayerState.anInt1906)
             return class64.method628(i_9_, i, class101, false, 0)
         }
         return false
@@ -127,7 +147,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
             anInt10083++
         } catch (runtimeexception: RuntimeException) {
             runtimeexception.printStackTrace()
-            throw SoundBankPatch.method2929(runtimeexception, ("ge.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ge.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
         }
     }
 
@@ -149,15 +169,15 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
     private fun method2481(bool: Boolean, i: Int, i_15_: Int, var_renderer: Renderer?): ModelOrSpriteHolder? {
         if (i_15_ != -4) aCircleHitbox_10082 = null
         anInt10086++
-        val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, aShort10081.toInt() and 0xffff)
+        val class51 = GradientLookupEffectStatics.aSeqDefinitionCache_9195!!.method2005(0, aShort10081.toInt() and 0xffff)
         val var_terrainTile: TerrainTile?
         val var_terrainTile_16_: TerrainTile?
         if (aBoolean10066) {
-            var_terrainTile = TerrainTileShape.aTerrainTileArray8801!![0]
+            var_terrainTile = TerrainTileShapeStatics.aTerrainTileArray8801!![0]
             var_terrainTile_16_ = SoundCacheState.aTerrainTileArray4142!![this.aByte6376.toInt()]
         } else {
-            var_terrainTile_16_ = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376.toInt()])
-            if (this.aByte6376 < 3) var_terrainTile = (TerrainTileShape.aTerrainTileArray8801!![1 + this.aByte6376])
+            var_terrainTile_16_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![this.aByte6376.toInt()])
+            if (this.aByte6376 < 3) var_terrainTile = (TerrainTileShapeStatics.aTerrainTileArray8801!![1 + this.aByte6376])
             else var_terrainTile = null
         }
         return class51.method476(var_renderer, var_terrainTile, aByte10079.toInt(), i, this.x, bool, var_terrainTile_16_, this.anInt6382, this.y, aByte10062.toInt(), i_15_ + 132)
@@ -169,7 +189,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
         val class101 = var_renderer!!.method3705()
         class101.method894(this.x, this.anInt6382, this.y)
         val class318_sub4 = method136(i, aBoolean10076, false)
-        if (!ParticleSystemRenderer.aBoolean3870) this.aAbstractModel_10071!!.method615(class101, class318_sub4.aClass318_Sub3Array6414!![0], 0)
+        if (!ParticleSystemRendererStatics.aBoolean3870) this.aAbstractModel_10071!!.method615(class101, class318_sub4.aClass318_Sub3Array6414!![0], 0)
         else this.aAbstractModel_10071!!.method608(class101, class318_sub4.aClass318_Sub3Array6414!![0], LocalPlayerState.anInt1906, 0)
         return class318_sub4
     }
@@ -225,33 +245,5 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
             aRenderNode10094 = null
         }
         if (var_renderNode != null) method1301(var_renderNode, this.aByte6376.toInt(), this.x, this.y, null)
-    }
-
-    companion object {
-        var anInt10063: Int = 0
-        var anInt10065: Int = 0
-        var anInt10067: Int = 0
-        var anInt10068: Int = 0
-        var anInt10069: Int = 0
-        var anInt10070: Int = 0
-        var anInt10072: Int = 0
-        @JvmField
-        var anInt10073: Int = 0
-        var anInt10074: Int = 0
-        var anInt10075: Int = 0
-        var anInt10077: Int = 0
-        var anInt10078: Int = 0
-        var anInt10080: Int = 0
-        var anInt10083: Int = 0
-        @JvmField
-        var anInt10084: Int = 0
-        var anInt10085: Int = 0
-        var anInt10086: Int = 0
-        var anInt10087: Int = 0
-        var anInt10088: Int = 0
-        var anInt10089: Int = 0
-        var anInt10091: Int = 0
-        var anInt10092: Int = 0
-        var anInt10093: Int = 0
     }
 }

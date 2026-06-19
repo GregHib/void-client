@@ -1,5 +1,5 @@
-import ScrollTexMaterialPass.Companion.method2169
-import WhirlpoolHash.Companion.method828
+import ScrollTexMaterialPassStatics.method2169
+import WhirlpoolHashStatics.method828
 
 /* Class121 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -27,17 +27,17 @@ object MinimapFlagRenderer {
 
     fun method1082(i: Int, bool: Boolean): Int {
         anInt1795++
-        var i_1_ = ByteBuffer.anInt7207
+        var i_1_ = ByteBufferStatics.anInt7207
         while_44_@ do {
             do {
                 if (i_1_ == 0) {
                     if (bool) return 0
-                    return MapRegionLoaderThread.anInt4211
+                    return MapRegionLoaderThreadStatics.anInt4211
                 } else if (i_1_ != 1) {
                     if (i_1_ == 2) break
                     break@while_44_
                 }
-                return MapRegionLoaderThread.anInt4211
+                return MapRegionLoaderThreadStatics.anInt4211
             } while (false)
             return 0
         } while (false)
@@ -48,19 +48,19 @@ object MinimapFlagRenderer {
     @JvmStatic
     fun method1083(var_renderer: Renderer?, i: Int, i_2_: Byte, i_3_: Int, i_4_: Int, i_5_: Int) {
         anInt1798++
-        CameraRotationStub.aRenderer326 = var_renderer
-        NpcConfig.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
-        MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
-        RenderNode.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
-        HardKeyedCacheEntryReference.anInt10444 = i_4_
-        ByteBuffer.anInt7207 = 0
-        SoundEnvelope.anInt2747 = i
+        CameraRotationStubStatics.aRenderer326 = var_renderer
+        NpcConfigStatics.aAbstractCameraTransform_905 = CameraRotationStubStatics.aRenderer326!!.method3654()
+        MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStubStatics.aRenderer326!!.method3654()
+        RenderNodeStatics.aAbstractCameraTransform_9720 = CameraRotationStubStatics.aRenderer326!!.method3654()
+        HardKeyedCacheEntryReferenceStatics.anInt10444 = i_4_
+        ByteBufferStatics.anInt7207 = 0
+        SoundEnvelopeStatics.anInt2747 = i
         LocalPlayerState.anIntArray1909 = null
         NpcSpawnDecoder.anSpriteDrawTargetArray1525 = null
         method828(38.toByte(), i_3_, i_5_)
         ProjectileConfigUtil.anInt396 = -1
-        LocalizedTextTriple.anInt3760 = -1
-        WorldMapAreaLabel.anInt8583 = -1
+        LocalizedTextTripleStatics.anInt3760 = -1
+        WorldMapAreaLabelStatics.anInt8583 = -1
         val i_6_ = 90 % ((70 - i_2_) / 33)
     }
 
@@ -73,14 +73,14 @@ object MinimapFlagRenderer {
         if (!method2169(i_9_, i_13_, i_8_, i_9_, i_15_, i_14_, i_14_, i_14_, i_15_, false)) return false
         if (i_12_ != 18507) method1082(-107, false)
         if (!method2169(i_9_, i_13_, i_8_, i_13_, i_15_, i_14_, i_14_, i_14_, i_8_, false)) return false
-        if (TextureDefinitionLoader.anInt1974 > i_9_) {
+        if (TextureDefinitionLoaderStatics.anInt1974 > i_9_) {
             if (!method2169(i_9_, i_9_, i_15_, i_9_, i_15_, i_14_, i_14_, i_10_, i_8_, false)) return false
             if (!method2169(i_9_, i_9_, i_15_, i_9_, i_8_, i_14_, i_10_, i_10_, i_8_, false)) return false
         } else {
             if (!method2169(i_13_, i_13_, i_15_, i_13_, i_15_, i_14_, i_14_, i_10_, i_8_, false)) return false
             if (!method2169(i_13_, i_13_, i_15_, i_13_, i_8_, i_14_, i_10_, i_10_, i_8_, false)) return false
         }
-        if (i_8_ >= BlendTextureNode.anInt9360) {
+        if (i_8_ >= BlendTextureNodeStatics.anInt9360) {
             if (!method2169(i_9_, i_13_, i_15_, i_9_, i_15_, i_14_, i_14_, i_10_, i_15_, false)) return false
             return method2169(i_9_, i_13_, i_15_, i_13_, i_15_, i_14_, i_10_, i_10_, i_15_, false)
         } else {

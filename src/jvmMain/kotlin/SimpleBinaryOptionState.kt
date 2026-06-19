@@ -1,3 +1,11 @@
+import SimpleBinaryOptionStateStatics.method1816
+import SimpleBinaryOptionStateStatics.anInt6070
+import SimpleBinaryOptionStateStatics.anInt6071
+import SimpleBinaryOptionStateStatics.anInt6072
+import SimpleBinaryOptionStateStatics.anInt6073
+import SimpleBinaryOptionStateStatics.anInt6074
+import SimpleBinaryOptionStateStatics.anInt6076
+
 /* Class239_Sub22 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -34,28 +42,5 @@ class SimpleBinaryOptionState : GraphicsOptionState {
         anInt6073++
         if (i != 3) anInt6076 = -121
         return 1
-    }
-
-    companion object {
-        @JvmField
-        var anInt6070: Int = 0
-        @JvmField
-        var anInt6071: Int = 0
-        @JvmField
-        var anInt6072: Int = 0
-        @JvmField
-        var anInt6073: Int = 0
-        @JvmField
-        var anInt6074: Int = 0
-        @JvmField
-        var aIntRange_6075: IntRange? = IntRange(89, 0)
-        @JvmField
-        var anInt6076: Int = 0
-
-        @JvmStatic
-        fun method1816(i: Int) {
-            aIntRange_6075 = null
-            if (i != 1) aIntRange_6075 = null
-        }
     }
 }

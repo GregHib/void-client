@@ -1,25 +1,27 @@
-import RefCountedHandle.Companion.method1323
-import ModelOrSpriteHolder.Companion.method174
-import NoiseTextureGenerator.Companion.method545
+import RefCountedHandleStatics.method1323
+import ModelOrSpriteHolderStatics.method174
+import NoiseTextureGeneratorStatics.method545
 import AnimationFrameState.method865
-import TerrainChunkBuilder.Companion.method876
-import jaggl.OpenGL.Companion.glBegin
-import jaggl.OpenGL.Companion.glEnd
-import jaggl.OpenGL.Companion.glGetUniformLocationARB
-import jaggl.OpenGL.Companion.glLoadIdentity
-import jaggl.OpenGL.Companion.glMatrixMode
-import jaggl.OpenGL.Companion.glOrtho
-import jaggl.OpenGL.Companion.glPopAttrib
-import jaggl.OpenGL.Companion.glPopMatrix
-import jaggl.OpenGL.Companion.glPushAttrib
-import jaggl.OpenGL.Companion.glPushMatrix
-import jaggl.OpenGL.Companion.glTexCoord3f
-import jaggl.OpenGL.Companion.glUniform1fARB
-import jaggl.OpenGL.Companion.glUniform1iARB
-import jaggl.OpenGL.Companion.glUniform2fARB
-import jaggl.OpenGL.Companion.glUseProgramObjectARB
-import jaggl.OpenGL.Companion.glVertex2f
-import jaggl.OpenGL.Companion.glViewport
+import TerrainChunkBuilderStatics.method876
+import jaggl.OpenGLStatics.glBegin
+import jaggl.OpenGLStatics.glEnd
+import jaggl.OpenGLStatics.glGetUniformLocationARB
+import jaggl.OpenGLStatics.glLoadIdentity
+import jaggl.OpenGLStatics.glMatrixMode
+import jaggl.OpenGLStatics.glOrtho
+import jaggl.OpenGLStatics.glPopAttrib
+import jaggl.OpenGLStatics.glPopMatrix
+import jaggl.OpenGLStatics.glPushAttrib
+import jaggl.OpenGLStatics.glPushMatrix
+import jaggl.OpenGLStatics.glTexCoord3f
+import jaggl.OpenGLStatics.glUniform1fARB
+import jaggl.OpenGLStatics.glUniform1iARB
+import jaggl.OpenGLStatics.glUniform2fARB
+import jaggl.OpenGLStatics.glUseProgramObjectARB
+import jaggl.OpenGLStatics.glVertex2f
+import jaggl.OpenGLStatics.glViewport
+import GlowPostProcessorStatics.anInt2517
+import GlowPostProcessorStatics.anInt2518
 
 /*
  * Class188
@@ -75,100 +77,22 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             aHa_Sub2_2511.method3770(-422613672, class206)
             return bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qi.D(" + (if (class258_sub1 != null) "{...}" else "null") + ',' + (if (class258_sub1_2_ != null) "{...}" else "null") + ',' + i + ',' + f + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("qi.D(" + (if (class258_sub1 != null) "{...}" else "null") + ',' + (if (class258_sub1_2_ != null) "{...}" else "null") + ',' + i + ',' + f + ')'))
         }
     }
 
     fun method1414(i: Int): Boolean {
         if (aHa_Sub2_2511.aBoolean7820 && aHa_Sub2_2511.aBoolean7783 && aGlShaderProgramHandle_2513 == null) {
-            val class242 = (TimedTileQueueEntry.method3249(
+            val class242 = (TimedTileQueueEntryStatics.method3249(
                 35632,
                 121,
                 aHa_Sub2_2511,
                 "uniform float rcpRelief;\nuniform vec2 sampleSize;\nuniform sampler3D heightMap;\nvoid main() {\nfloat dx = texture3D(heightMap, vec3(-sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r;\nfloat dy = texture3D(heightMap, vec3(0.0, -sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(0.0, sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r;\ngl_FragColor = vec4(0.5+normalize(vec3(dx, dy, rcpRelief))*0.5, texture3D(heightMap, gl_TexCoord[0].xyz).r);\n}\n"
             ))
-            if (class242 != null) aGlShaderProgramHandle_2513 = SequencedWallEntity.method2493(aHa_Sub2_2511, i + -35633, (arrayOf<ManagedGlResource?>(class242)))
+            if (class242 != null) aGlShaderProgramHandle_2513 = SequencedWallEntityStatics.method2493(aHa_Sub2_2511, i + -35633, (arrayOf<ManagedGlResource?>(class242)))
         }
         anInt2518++
         if (i != 35632) method1413(null, null, 102, 0.17865802f)
         return aGlShaderProgramHandle_2513 != null
-    }
-
-    companion object {
-        @JvmField
-        var aFontMetaRef_2512: FontMetaRef?
-        var aBoolean2514: Boolean = false
-        var anInt2515: Int = 0
-        var anInt2516: Int = 0
-        var anInt2517: Int = 0
-        var anInt2518: Int = 0
-        var anInt2519: Int = 0
-        var anInt2520: Int = 0
-
-        @JvmStatic
-        fun method1411(bool: Boolean) {
-            if (bool != true) method1416(121)
-            aFontMetaRef_2512 = null
-        }
-
-        fun method1412(i: Byte, i_0_: Int, i_1_: Int): Boolean {
-            if (i.toInt() != -35) method1411(true)
-            anInt2519++
-            return (i_1_ and 0x800) != 0 && (0x37 and i_0_) != 0
-        }
-
-        fun method1415(i: Int, i_6_: Int) {
-            anInt2520++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), 17)
-            class348_sub42_sub15.method3251(-16058)
-        }
-
-        @JvmStatic
-        fun method1416(i: Int) {
-            RenderConfigFactory.aLocDefinitionCache_2979!!.method2032(5, -101)
-            anInt2515++
-            Tooltip.aParticleDefLoader_4460!!.method1383(i xor 0x804c, 5)
-            RadialTextureNode.aModelDefinitionLoader_9342!!.method1207(-17452, 5)
-            GradientLookupEffect.aSeqDefinitionCache_9195!!.method2010(5, i + -6)
-            MapAreaDefinition.Companion.aBufferedMessageQueue_2529!!.method2076(5, true)
-            ClientException.aModelHeaderCache_112!!.method1937(5, false)
-            ParticleEmitterNode.aWidgetCache_191!!.method836(5, 93)
-            ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2544(5, (-41).toByte())
-            RenderConfigFactory.aVarbitDefLoader_2981!!.method1442(5, 1.toByte())
-            NormalMapGenerator.aParticleAmountCache_3453!!.method1587(5, i xor 0xeab)
-            OpenGlModel.aNpcDefinitionCache_5558!!.method1984(119.toByte(), 5)
-            TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1224(5, (-98).toByte())
-            ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1176(5, 52.toByte())
-            ProjectionCameraTransform.aEmoteDefCache_5764!!.method2603(5, 11)
-            TheoraVideoStream.aLocTypeDefLoader_9036!!.method1409(5, -20721)
-            CircleHitbox.aMapSceneCache_413!!.method819(74.toByte(), 5)
-            HoverActionEntry.aSpriteStore_1813!!.method299(5, 16)
-            AbstractTileShape.aMapSceneDefLoader_6559!!.method1392(88, 5)
-            GraphicsOptionState.aItemDefinitionLoader_3147!!.method1285(i, 8)
-            SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method697(5, 26)
-            FileExistsCondition.aModelDefinitionCache_4782!!.method1603(5, -66)
-            method876(5, 0)
-            method545(50, -1)
-            method174(50, -30742)
-            method865(-8186, 5)
-            method1323(5, 26603)
-            TextureMipDescriptor.aLruByteCache_4346!!.method578(i + -3, 5)
-            MaterialTypeMarker.aLruByteCache_6517!!.method578(2, 5)
-            TerrainTileShape.aLruByteCache_8807!!.method578(i xor 0x7, 5)
-            SkeletalAnimFrameLoader.aLruByteCache_463!!.method578(2, 5)
-            ChatCommandProcessor.aLruByteCache_1174!!.method578(2, 5)
-        }
-
-        fun method1417(i: Int, js5Archive: Js5Archive, i_7_: Int): SoundBankPatch? {
-            anInt2516++
-            if (i != 0) aBoolean2514 = true
-            val `is` = js5Archive.method415(73.toByte(), i_7_)
-            if (`is` == null) return null
-            return SoundBankPatch(`is`)
-        }
-
-        init {
-            aFontMetaRef_2512 = FontMetaRef(16, 7)
-        }
     }
 }

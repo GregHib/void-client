@@ -1,3 +1,6 @@
+import ParticleEffectCacheStatics.method2046
+import ParticleEffectCacheStatics.anInt3469
+
 /* Class271 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -29,22 +32,7 @@ class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, 
             aJs5Archive_3468 = js5Archive
             aJs5Archive_3468!!.method407(0, 5)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ut.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        var aIntRange_3467: IntRange? = IntRange(45, 8)
-        var anInt3469: Int = 0
-
-        @JvmStatic
-        fun method2045(i: Byte) {
-            aIntRange_3467 = null
-            if (i.toInt() != 62) method2046()
-        }
-
-        fun method2046() {
-            PlayerSequenceSelector.aSceneObjectSpawner_1208 = PlayerSequenceSelector.aSceneObjectSpawner_1210
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ut.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
         }
     }
 }

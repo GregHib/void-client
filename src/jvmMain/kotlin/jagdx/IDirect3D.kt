@@ -3,8 +3,9 @@ package jagdx
 import jaclib.peer.IUnknown
 import jaclib.peer.hb
 import java.awt.Canvas
+import jagdx.IDirect3DStatics.a
 
-class IDirect3D private constructor(private val b: hb?) : IUnknown(b) {
+class IDirect3D internal constructor(private val b: hb?) : IUnknown(b) {
     fun a(arg0: Int, arg1: D3DDISPLAYMODE?): Int {
         return this._GetAdapterDisplayMode(arg0, arg1)
     }
@@ -51,19 +52,4 @@ class IDirect3D private constructor(private val b: hb?) : IUnknown(b) {
     private external fun _GetAdapterIdentifier(arg0: Int, arg1: Int, arg2: D3DADAPTER_IDENTIFIER?): Int
 
     private external fun _GetDeviceCaps(arg0: Int, arg1: Int, arg2: D3DCAPS?): Int
-
-    companion object {
-        @JvmStatic
-        fun a(arg0: Int, arg1: hb?): IDirect3D {
-            val local4 = IDirect3D(arg1)
-            val local8: Int = _Direct3DCreate(arg0, local4)
-            if (ue.a(97.toByte(), local8)) {
-                throw fda(local8.toString())
-            }
-            return local4
-        }
-
-        @JvmStatic
-        private external fun _Direct3DCreate(arg0: Int, arg1: IDirect3D?): Int
-    }
 }

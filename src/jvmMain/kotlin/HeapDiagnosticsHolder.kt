@@ -1,4 +1,4 @@
-import StreamingResourceRequest.Companion.method3262
+import StreamingResourceRequestStatics.method3262
 import kotlin.concurrent.Volatile
 
 /* Class168 - Decompiled by JODE
@@ -34,7 +34,7 @@ object HeapDiagnosticsHolder {
     fun method1299(i: Int, i_0_: Int, i_1_: Int): Boolean {
         anInt2253++
         if (i != 393216) anInt2251 = -106
-        return method3262(i_0_, i_1_, 102) or ((i_0_ and 0x60000) != 0) || CharacterRenderState.method2783(i_1_, (-99).toByte(), i_0_)
+        return method3262(i_0_, i_1_, 102) or ((i_0_ and 0x60000) != 0) || CharacterRenderStateStatics.method2783(i_1_, (-99).toByte(), i_0_)
     }
 
     init {

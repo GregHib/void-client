@@ -1,3 +1,8 @@
+import GradientMapTextureNodeStatics.anInt9326
+import GradientMapTextureNodeStatics.anInt9328
+import GradientMapTextureNodeStatics.anInt9330
+import GradientMapTextureNodeStatics.anInt9331
+
 /* Class348_Sub40_Sub24 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -13,7 +18,7 @@ class GradientMapTextureNode : AbstractProceduralTextureNode(0, true) {
         anInt9328++
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_1_ = LightDetailOptionState.anIntArray6035!![i]
+            val i_1_ = LightDetailOptionStateStatics.anIntArray6035!![i]
             if (anInt9325 == 0) {
                 var i_7_ = 0
                 for (i_8_ in 0..<anInt9329) {
@@ -22,12 +27,12 @@ class GradientMapTextureNode : AbstractProceduralTextureNode(0, true) {
                         break
                     }
                 }
-                ArrayCopyUtil.method1579(`is`, 0, DisplaceTextureNode.Companion.anInt9139, i_7_)
+                ArrayCopyUtil.method1579(`is`, 0, DisplaceTextureNodeStatics.anInt9139, i_7_)
             } else {
-                for (i_2_ in 0..<DisplaceTextureNode.Companion.anInt9139) {
+                for (i_2_ in 0..<DisplaceTextureNodeStatics.anInt9139) {
                     var i_3_ = 0
                     var i_4_ = 0
-                    val i_5_ = SceneEffectMarker.anIntArray6432!![i_2_]
+                    val i_5_ = SceneEffectMarkerStatics.anIntArray6432!![i_2_]
                     var i_6_ = anInt9325
                     while_197_@ do {
                         do {
@@ -99,23 +104,5 @@ class GradientMapTextureNode : AbstractProceduralTextureNode(0, true) {
         if (i.toInt() != -111) anIntArray9332 = null
         anIntArray9332!![anInt9329] = 4096
         anIntArray9333!![anInt9329] = 4096 - -anIntArray9333!![0]
-    }
-
-    companion object {
-        @JvmField
-        var aIntRange_9324: IntRange? = IntRange(85, 4)
-        @JvmField
-        var anInt9326: Int = 0
-        var anInt9327: Int = 0
-        @JvmField
-        var anInt9328: Int = 0
-        @JvmField
-        var anInt9330: Int = 0
-        @JvmField
-        var anInt9331: Int = 0
-        @JvmStatic
-        fun method3115(i: Int) {
-            if (i <= -72) aIntRange_9324 = null
-        }
     }
 }

@@ -1,8 +1,29 @@
-import ModelBatchBase.Companion.method1130
-import HostPingThread.Companion.method1301
-import VorbisOggDecoder.Companion.method2967
-import CharacterRenderState.Companion.method2782
-import ChatMessageStream.Companion.method136
+import ModelBatchBaseStatics.method1130
+import HostPingThreadStatics.method1301
+import VorbisOggDecoderStatics.method2967
+import CharacterRenderStateStatics.method2782
+import ChatMessageStreamStatics.method136
+import ModelGroundDecorStatics.anInt10004
+import ModelGroundDecorStatics.anInt10005
+import ModelGroundDecorStatics.anInt10006
+import ModelGroundDecorStatics.anInt10007
+import ModelGroundDecorStatics.anInt10008
+import ModelGroundDecorStatics.anInt10009
+import ModelGroundDecorStatics.anInt10012
+import ModelGroundDecorStatics.anInt10013
+import ModelGroundDecorStatics.anInt10016
+import ModelGroundDecorStatics.anInt10020
+import ModelGroundDecorStatics.anInt10021
+import ModelGroundDecorStatics.anInt10022
+import ModelGroundDecorStatics.anInt10026
+import ModelGroundDecorStatics.anInt10027
+import ModelGroundDecorStatics.anInt10029
+import ModelGroundDecorStatics.anInt10030
+import ModelGroundDecorStatics.anInt10031
+import ModelGroundDecorStatics.anInt10033
+import ModelGroundDecorStatics.anInt10034
+import ModelGroundDecorStatics.anInt10035
+import ModelGroundDecorStatics.anInt10037
 
 /* Class318_Sub1_Sub3_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -57,7 +78,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
                 aBoolean10017 = bool
                 aBoolean10019 = bool_10_
                 this.aByte6376 = i_0_.toByte()
-                aBoolean10003 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10017 && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
+                aBoolean10003 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10017 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 var i_11_ = 2048
                 if (aBoolean10019) i_11_ = i_11_ or 0x10000
                 val class2 = method2417(0, var_renderer, i_11_, aBoolean10003)
@@ -67,7 +88,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
                 if (!aBoolean10019) break
                 this.aAbstractModel_10028 = this.aAbstractModel_10028!!.method614(0.toByte(), i_11_, false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("dm.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + bool_10_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("dm.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + bool_10_ + ')'))
             }
             break
         } while (false)
@@ -92,7 +113,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
         if (class64 != null) {
             val class101 = var_renderer!!.method3705()
             class101.method894(this.x, this.anInt6382, this.y)
-            if (ParticleSystemRenderer.aBoolean3870) return class64.method623(i_12_, i, class101, false, 0, LocalPlayerState.anInt1906)
+            if (ParticleSystemRendererStatics.aBoolean3870) return class64.method623(i_12_, i, class101, false, 0, LocalPlayerState.anInt1906)
             return class64.method628(i_12_, i, class101, false, 0)
         }
         return false
@@ -145,7 +166,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
                 if (i_17_ < -106) break
                 method2392(false)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("dm.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("dm.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ')'))
             }
             break
         } while (false)
@@ -173,16 +194,16 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
 
     private fun method2417(i: Int, var_renderer: Renderer?, i_20_: Int, bool: Boolean): ModelOrSpriteHolder? {
         anInt10007++
-        val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(i, 0xffff and aShort10032.toInt())
+        val class51 = GradientLookupEffectStatics.aSeqDefinitionCache_9195!!.method2005(i, 0xffff and aShort10032.toInt())
         val var_terrainTile: TerrainTile?
         val var_terrainTile_21_: TerrainTile?
         if (aBoolean10017) {
             var_terrainTile = SoundCacheState.aTerrainTileArray4142!![this.aByte6376.toInt()]
-            var_terrainTile_21_ = TerrainTileShape.aTerrainTileArray8801!![0]
+            var_terrainTile_21_ = TerrainTileShapeStatics.aTerrainTileArray8801!![0]
         } else {
-            var_terrainTile = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376.toInt()])
+            var_terrainTile = (TerrainTileShapeStatics.aTerrainTileArray8801!![this.aByte6376.toInt()])
             if (this.aByte6376 >= 3) var_terrainTile_21_ = null
-            else var_terrainTile_21_ = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376 - -1])
+            else var_terrainTile_21_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![this.aByte6376 - -1])
         }
         return class51.method476(var_renderer, var_terrainTile_21_, (if (aByte10024.toInt() != 11) aByte10024 else 10).toInt(), i_20_, this.x, bool, var_terrainTile, this.anInt6382, this.y, (if (aByte10024.toInt() != 11) aByte10015.toInt() else aByte10015 + 4), 128)
     }
@@ -230,63 +251,8 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
         val class101 = var_renderer!!.method3705()
         class101.method894(this.x, this.anInt6382, this.y)
         val class318_sub4 = method136(i, aBoolean10014, false)
-        if (!ParticleSystemRenderer.aBoolean3870) this.aAbstractModel_10028!!.method615(class101, class318_sub4.aClass318_Sub3Array6414!![0], 0)
+        if (!ParticleSystemRendererStatics.aBoolean3870) this.aAbstractModel_10028!!.method615(class101, class318_sub4.aClass318_Sub3Array6414!![0], 0)
         else this.aAbstractModel_10028!!.method608(class101, class318_sub4.aClass318_Sub3Array6414!![0], LocalPlayerState.anInt1906, 0)
         return class318_sub4
-    }
-
-    companion object {
-        var anInt10004: Int = 0
-        var anInt10005: Int = 0
-        var anInt10006: Int = 0
-        var anInt10007: Int = 0
-        var anInt10008: Int = 0
-        var anInt10009: Int = 0
-        var aClass348_Sub42_Sub17Array10010: Array<TextureMaterialGroup?>? = arrayOfNulls<TextureMaterialGroup>(14)
-        var anInt10011: Int = 0
-        var anInt10012: Int = 0
-        var anInt10013: Int = 0
-        var anInt10016: Int = 0
-        var anInt10018: Int = 0
-        var anInt10020: Int = 0
-        var anInt10021: Int = 0
-        var anInt10022: Int = 0
-        var anInt10023: Int = -60
-        var anInt10026: Int = 0
-        var anInt10027: Int = 0
-        var anInt10029: Int = 0
-        var anInt10030: Int = 0
-        var anInt10031: Int = 0
-        var anInt10033: Int = 0
-        var anInt10034: Int = 0
-        var anInt10035: Int = 0
-        var anInt10037: Int = 0
-
-        @JvmStatic
-        fun method2415(i: Int) {
-            aClass348_Sub42_Sub17Array10010 = null
-            val i_15_ = 93 / ((i - -62) / 35)
-        }
-
-        @JvmStatic
-        fun method2418(string: String, i: Byte): Int {
-            anInt10011++
-            val i_22_ = -51 / ((i - 3) / 42)
-            val i_23_ = string.length
-            var i_24_ = 0
-            var i_25_ = 0
-            while (i_23_ > i_25_) {
-                i_24_ = string.get(i_25_).code + ((i_24_ shl 5) + -i_24_)
-                i_25_++
-            }
-            return i_24_
-        }
-
-        @JvmStatic
-        fun method2419(i: Byte, i_26_: Int): Int {
-            anInt10018++
-            if (i < 122) return -49
-            return i_26_ ushr 8
-        }
     }
 }

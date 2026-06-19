@@ -1,3 +1,13 @@
+import CompositeNpcModelBuilderStatics.anInt2090
+import CompositeNpcModelBuilderStatics.anInt2091
+import CompositeNpcModelBuilderStatics.anInt2096
+import CompositeNpcModelBuilderStatics.anInt2097
+import CompositeNpcModelBuilderStatics.anInt2098
+import CompositeNpcModelBuilderStatics.anInt2099
+import CompositeNpcModelBuilderStatics.anInt2104
+import CompositeNpcModelBuilderStatics.anInt2106
+import CompositeNpcModelBuilderStatics.anInt2107
+
 /* Class154 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -25,7 +35,7 @@ class CompositeNpcModelBuilder {
                         is_10_[5] = 0
                         l = l xor 0xffffffffL.inv()
                     } else {
-                        is_10_[5] = BoundsConstraintEntry.method2057((widgetDefinition_0_.anInt249), 1073741824)
+                        is_10_[5] = BoundsConstraintEntryStatics.method2057((widgetDefinition_0_.anInt249), 1073741824)
                         l = l xor (is_10_[5].toLong() shl 32)
                     }
                 }
@@ -34,7 +44,7 @@ class CompositeNpcModelBuilder {
                         is_10_[3] = 0
                         l = l xor 0xffffffffL
                     } else {
-                        is_10_[3] = BoundsConstraintEntry.method2057((widgetDefinition_0_.anInt261), 1073741824)
+                        is_10_[3] = BoundsConstraintEntryStatics.method2057((widgetDefinition_0_.anInt261), 1073741824)
                         l = l xor is_10_[3].toLong()
                     }
                 }
@@ -51,35 +61,35 @@ class CompositeNpcModelBuilder {
                     val class17_18_ = widgetCache!!.method835((loadProgressCounters[i_17_]!!.anInt2454), 7)
                     if (class17_18_.anIntArray237 != null) {
                         bool_15_ = true
-                        MapSceneTile.aWidgetDefinitionArray1048s!![i_17_] = class17_18_
+                        MapSceneTileStatics.aWidgetDefinitionArray1048s!![i_17_] = class17_18_
                         val i_19_ = loadProgressCounters[i_17_]!!.anInt2451
                         val i_20_ = loadProgressCounters[i_17_]!!.anInt2455
                         var i_21_ = class17_18_.anIntArray237[i_19_]
                         DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_] = widgetCache.method839(i_21_ ushr 16, 3)
                         i_21_ = i_21_ and 0xffff
-                        ScanlineRasterFiller.anIntArray2471!![i_17_] = i_21_
+                        ScanlineRasterFillerStatics.anIntArray2471!![i_17_] = i_21_
                         if (DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_] != null) {
                             bool_13_ = bool_13_ or DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3272(i_21_, 0)
                             bool_12_ = bool_12_ or DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3271(i_21_, 14)
                             bool_14_ = bool_14_ or DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_]!!.method3267((-109).toByte(), i_21_)
                         }
-                        if ((class17_18_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_20_ != -1 && (class17_18_.anIntArray237.size > i_20_)) {
-                            MinimapRenderer.anIntArray1583!![i_17_] = class17_18_.anIntArray267!![i_19_]
-                            MinimapPolygonDrawer.anIntArray5241!![i_17_] = loadProgressCounters[i_17_]!!.anInt2456
+                        if ((class17_18_.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i_20_ != -1 && (class17_18_.anIntArray237.size > i_20_)) {
+                            MinimapRendererStatics.anIntArray1583!![i_17_] = class17_18_.anIntArray267!![i_19_]
+                            MinimapPolygonDrawerStatics.anIntArray5241!![i_17_] = loadProgressCounters[i_17_]!!.anInt2456
                             var i_22_ = class17_18_.anIntArray237[i_20_]
-                            LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_17_] = widgetCache.method839(i_22_ ushr 16, 3)
+                            LocalizedTextTripleStatics.aClass348_Sub42_Sub17Array3753!![i_17_] = widgetCache.method839(i_22_ ushr 16, 3)
                             i_22_ = i_22_ and 0xffff
-                            BoxedIntHolder.anIntArray2967!![i_17_] = i_22_
-                            if (LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_17_] != null) {
-                                bool_13_ = bool_13_ or LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_17_]!!.method3272(i_22_, 0)
-                                bool_12_ = bool_12_ or LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_17_]!!.method3271(i_22_, 14)
-                                bool_14_ = bool_14_ or LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_17_]!!.method3267((-115).toByte(), i_22_)
+                            BoxedIntHolderStatics.anIntArray2967!![i_17_] = i_22_
+                            if (LocalizedTextTripleStatics.aClass348_Sub42_Sub17Array3753!![i_17_] != null) {
+                                bool_13_ = bool_13_ or LocalizedTextTripleStatics.aClass348_Sub42_Sub17Array3753!![i_17_]!!.method3272(i_22_, 0)
+                                bool_12_ = bool_12_ or LocalizedTextTripleStatics.aClass348_Sub42_Sub17Array3753!![i_17_]!!.method3271(i_22_, 14)
+                                bool_14_ = bool_14_ or LocalizedTextTripleStatics.aClass348_Sub42_Sub17Array3753!![i_17_]!!.method3267((-115).toByte(), i_22_)
                             }
                         } else {
-                            MinimapRenderer.anIntArray1583!![i_17_] = 0
-                            MinimapPolygonDrawer.anIntArray5241!![i_17_] = 0
-                            LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_17_] = null
-                            BoxedIntHolder.anIntArray2967!![i_17_] = -1
+                            MinimapRendererStatics.anIntArray1583!![i_17_] = 0
+                            MinimapPolygonDrawerStatics.anIntArray5241!![i_17_] = 0
+                            LocalizedTextTripleStatics.aClass348_Sub42_Sub17Array3753!![i_17_] = null
+                            BoxedIntHolderStatics.anIntArray2967!![i_17_] = -1
                         }
                     }
                 }
@@ -106,7 +116,7 @@ class CompositeNpcModelBuilder {
                         bool_12_ = bool_12_ or class348_sub42_sub17.method3271(i_23_, 14)
                         bool_14_ = bool_14_ or class348_sub42_sub17.method3267((-110).toByte(), i_23_)
                     }
-                    if ((widgetDefinition_0_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_1_ != -1 && i_1_ < widgetDefinition_0_.anIntArray237.size) {
+                    if ((widgetDefinition_0_.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i_1_ != -1 && i_1_ < widgetDefinition_0_.anIntArray237.size) {
                         i_24_ = widgetDefinition_0_.anIntArray237[i_1_]
                         i_25_ = widgetDefinition_0_.anIntArray267!![i_7_]
                         val i_33_ = i_24_ ushr 16
@@ -130,7 +140,7 @@ class CompositeNpcModelBuilder {
                         bool_12_ = bool_12_ or class348_sub42_sub17_30_.method3271(i_27_, 14)
                         bool_14_ = bool_14_ or class348_sub42_sub17_30_.method3267((-123).toByte(), i_27_)
                     }
-                    if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i_3_ != -1 && i_3_ < widgetDefinition.anIntArray237.size) {
+                    if ((widgetDefinition.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i_3_ != -1 && i_3_ < widgetDefinition.anIntArray237.size) {
                         i_28_ = widgetDefinition.anIntArray237[i_3_]
                         i_29_ = widgetDefinition.anIntArray267!![i_6_]
                         val i_35_ = i_28_ ushr 16
@@ -213,8 +223,8 @@ class CompositeNpcModelBuilder {
                     abstractModel = var_renderer!!.method3625(modelDefinition, i_36_, HeapDiagnosticsHolder.anInt2251, 64, 850)
                     for (i_49_ in 0..4) {
                         var i_50_ = 0
-                        while ((GlWaterRenderPass.aShortArrayArrayArray7290!!.size > i_50_)) {
-                            if ((GlWaterRenderPass.aShortArrayArrayArray7290!![i_50_]!![i_49_])!!.size > this.anIntArray2095!![i_49_]) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_50_]!![i_49_]), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_50_]!![i_49_]!![(this.anIntArray2095!![i_49_])]))
+                        while ((GlWaterRenderPassStatics.aShortArrayArrayArray7290!!.size > i_50_)) {
+                            if ((GlWaterRenderPassStatics.aShortArrayArrayArray7290!![i_50_]!![i_49_])!!.size > this.anIntArray2095!![i_49_]) abstractModel.ia((SpriteLoadValidatorStatics.aShortArrayArray4791!![i_50_]!![i_49_]), (GlWaterRenderPassStatics.aShortArrayArrayArray7290!![i_50_]!![i_49_]!![(this.anIntArray2095!![i_49_])]))
                             i_50_++
                         }
                     }
@@ -245,7 +255,7 @@ class CompositeNpcModelBuilder {
             var i_55_ = 0
             var i_56_ = 1
             while ( /**/i_16_ > i_55_) {
-                if (DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_55_] != null) class64_51_!!.method603((-55).toByte(), -1 + MinimapPolygonDrawer.anIntArray5241!![i_55_], null, i_56_, ScanlineRasterFiller.anIntArray2471!![i_55_], BoxedIntHolder.anIntArray2967!![i_55_], LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_55_], 0, DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_55_], false, MinimapRenderer.anIntArray1583!![i_55_])
+                if (DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_55_] != null) class64_51_!!.method603((-55).toByte(), -1 + MinimapPolygonDrawerStatics.anIntArray5241!![i_55_], null, i_56_, ScanlineRasterFillerStatics.anIntArray2471!![i_55_], BoxedIntHolderStatics.anIntArray2967!![i_55_], LocalizedTextTripleStatics.aClass348_Sub42_Sub17Array3753!![i_55_], 0, DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_55_], false, MinimapRendererStatics.anIntArray1583!![i_55_])
                 i_56_ = i_56_ shl 1
                 i_55_++
             }
@@ -271,13 +281,13 @@ class CompositeNpcModelBuilder {
             var i_60_ = 0
             while (i_16_ > i_60_) {
                 DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_60_] = null
-                LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_60_] = null
-                MapSceneTile.aWidgetDefinitionArray1048s!![i_60_] = null
+                LocalizedTextTripleStatics.aClass348_Sub42_Sub17Array3753!![i_60_] = null
+                MapSceneTileStatics.aWidgetDefinitionArray1048s!![i_60_] = null
                 i_60_++
             }
             return class64_51_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw SoundBankPatchStatics.method2929(
                 runtimeexception,
                 ("oo.C(" + (if (varResolver != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + bool + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ')')
             )
@@ -290,12 +300,12 @@ class CompositeNpcModelBuilder {
                 anInt2099++
                 if (i_62_ == -1) anIntArray2092!![i_61_] = 0
                 else if (modelHeaderCache!!.method1940(-125, i_62_) != null) {
-                    anIntArray2092!![i_61_] = BoundsConstraintEntry.method2057(1073741824, i_62_)
+                    anIntArray2092!![i_61_] = BoundsConstraintEntryStatics.method2057(1073741824, i_62_)
                     method1234(-100)
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oo.H(" + i + ',' + i_61_ + ',' + i_62_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("oo.H(" + i + ',' + i_61_ + ',' + i_62_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -310,7 +320,7 @@ class CompositeNpcModelBuilder {
             this.aBoolean2100 = bool
             method1234(-25)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oo.F(" + i + ',' + i_63_ + ',' + i_64_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + (if (is_65_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("oo.F(" + i + ',' + i_63_ + ',' + i_64_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + (if (is_65_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -346,7 +356,7 @@ class CompositeNpcModelBuilder {
                     bool_73_ = bool_73_ or class348_sub42_sub17.method3267((-125).toByte(), i_74_)
                     bool_72_ = bool_72_ or widgetDefinition.aBoolean242
                 }
-                if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i_67_ != -1 && i_67_ < widgetDefinition.anIntArray237.size) {
+                if ((widgetDefinition.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i_67_ != -1 && i_67_ < widgetDefinition.anIntArray237.size) {
                     i_75_ = widgetDefinition.anIntArray237[i_67_]
                     val i_78_ = i_75_ ushr 16
                     val class348_sub42_sub17_79_ = (if (i_78_ != i_77_) widgetCache.method839(i_78_, i xor 0x17f6eb54.inv()) else class348_sub42_sub17)
@@ -364,8 +374,8 @@ class CompositeNpcModelBuilder {
             }
             if (i != -402058072) aLong2094 = -101L
             var abstractModel: AbstractModel?
-            synchronized(ModelBatchBase.aLruByteCache_1894!!) {
-                abstractModel = ModelBatchBase.aLruByteCache_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as AbstractModel?
+            synchronized(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+                abstractModel = ModelBatchBaseStatics.aLruByteCache_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as AbstractModel?
             }
             if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_70_) != 0) {
                 if (abstractModel != null) i_70_ = var_renderer!!.method3679(i_70_, abstractModel.ua())
@@ -397,14 +407,14 @@ class CompositeNpcModelBuilder {
                 abstractModel = var_renderer!!.method3625(modelDefinition, i_80_, HeapDiagnosticsHolder.anInt2251, 64, 768)
                 for (i_86_ in 0..4) {
                     var i_87_ = 0
-                    while ((GlWaterRenderPass.aShortArrayArrayArray7290!!.size > i_87_)) {
-                        if (this.anIntArray2095!![i_86_] < (GlWaterRenderPass.aShortArrayArrayArray7290!![i_87_]!![i_86_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_87_]!![i_86_]), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_87_]!![i_86_]!![(this.anIntArray2095!![i_86_])]))
+                    while ((GlWaterRenderPassStatics.aShortArrayArrayArray7290!!.size > i_87_)) {
+                        if (this.anIntArray2095!![i_86_] < (GlWaterRenderPassStatics.aShortArrayArrayArray7290!![i_87_]!![i_86_])!!.size) abstractModel.ia((SpriteLoadValidatorStatics.aShortArrayArray4791!![i_87_]!![i_86_]), (GlWaterRenderPassStatics.aShortArrayArrayArray7290!![i_87_]!![i_86_]!![(this.anIntArray2095!![i_86_])]))
                         i_87_++
                     }
                 }
                 abstractModel.s(i_70_)
-                synchronized(ModelBatchBase.aLruByteCache_1894!!) {
-                    ModelBatchBase.aLruByteCache_1894!!.method582(abstractModel, aLong2102, (-97).toByte())
+                synchronized(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+                    ModelBatchBaseStatics.aLruByteCache_1894!!.method582(abstractModel, aLong2102, (-97).toByte())
                 }
             }
             if (widgetDefinition == null) return abstractModel
@@ -412,7 +422,7 @@ class CompositeNpcModelBuilder {
             class64_88_ = widgetDefinition.method269(123, abstractModel, i_67_, i_69_, i_68_, i_66_)
             return class64_88_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw SoundBankPatchStatics.method2929(
                 runtimeexception,
                 ("oo.J(" + (if (modelHeaderCache != null) "{...}" else "null") + ',' + i + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
             )
@@ -451,7 +461,7 @@ class CompositeNpcModelBuilder {
                     bool_101_ = bool_101_ or class348_sub42_sub17.method3267((-125).toByte(), i_102_)
                     bool_100_ = bool_100_ or widgetDefinition.aBoolean242
                 }
-                if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i != -1 && i < widgetDefinition.anIntArray237.size) {
+                if ((widgetDefinition.aBoolean241 || ItemNameResolverStatics.aBoolean5002) && i != -1 && i < widgetDefinition.anIntArray237.size) {
                     i_103_ = widgetDefinition.anIntArray237[i]
                     val i_106_ = i_103_ ushr 16
                     i_103_ = i_103_ and 0xffff
@@ -471,8 +481,8 @@ class CompositeNpcModelBuilder {
             }
             val l = i_95_.toLong() or ((i_93_ shl 16).toLong() or (i_92_.toLong() shl 32))
             var abstractModel: AbstractModel?
-            synchronized(ModelBatchBase.aLruByteCache_1894!!) {
-                abstractModel = ModelBatchBase.aLruByteCache_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as AbstractModel?
+            synchronized(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+                abstractModel = ModelBatchBaseStatics.aLruByteCache_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as AbstractModel?
             }
             if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_98_) != 0) {
                 if (abstractModel != null) i_98_ = var_renderer!!.method3679(i_98_, abstractModel.ua())
@@ -491,14 +501,14 @@ class CompositeNpcModelBuilder {
                 abstractModel = var_renderer!!.method3625(class124, i_108_, HeapDiagnosticsHolder.anInt2251, 64, 768)
                 for (i_110_ in 0..4) {
                     var i_111_ = 0
-                    while ((i_111_ < GlWaterRenderPass.aShortArrayArrayArray7290!!.size)) {
-                        if (this.anIntArray2095!![i_110_] < (GlWaterRenderPass.aShortArrayArrayArray7290!![i_111_]!![i_110_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_111_]!![i_110_]), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_111_]!![i_110_]!![(this.anIntArray2095!![i_110_])]))
+                    while ((i_111_ < GlWaterRenderPassStatics.aShortArrayArrayArray7290!!.size)) {
+                        if (this.anIntArray2095!![i_110_] < (GlWaterRenderPassStatics.aShortArrayArrayArray7290!![i_111_]!![i_110_])!!.size) abstractModel.ia((SpriteLoadValidatorStatics.aShortArrayArray4791!![i_111_]!![i_110_]), (GlWaterRenderPassStatics.aShortArrayArrayArray7290!![i_111_]!![i_110_]!![(this.anIntArray2095!![i_110_])]))
                         i_111_++
                     }
                 }
                 abstractModel.s(i_98_)
-                synchronized(ModelBatchBase.aLruByteCache_1894!!) {
-                    ModelBatchBase.aLruByteCache_1894!!.method582(abstractModel, l, (-109).toByte())
+                synchronized(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+                    ModelBatchBaseStatics.aLruByteCache_1894!!.method582(abstractModel, l, (-109).toByte())
                 }
             }
             if (widgetDefinition == null) return abstractModel
@@ -507,28 +517,28 @@ class CompositeNpcModelBuilder {
             abstractModel = widgetDefinition.method269(-32, abstractModel!!, i, i_96_, i_91_, i_97_)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
         }
     }
 
     fun method1233(modelDefinitionLoader: ModelDefinitionLoader?, i: Int, i_112_: Int, i_113_: Int) {
         try {
             anInt2098++
-            val i_114_ = DataHolder.anIntArray3661!![i_113_]
+            val i_114_ = DataHolderStatics.anIntArray3661!![i_113_]
             if (modelDefinitionLoader!!.method1203(33.toByte(), i) != null) {
                 if (i_112_ != -1) aLong2094 = -53L
-                anIntArray2092!![i_114_] = BoundsConstraintEntry.method2057(i, -2147483648)
+                anIntArray2092!![i_114_] = BoundsConstraintEntryStatics.method2057(i, -2147483648)
                 method1234(-54)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("oo.D(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i + ',' + i_112_ + ',' + i_113_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("oo.D(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i + ',' + i_112_ + ',' + i_113_ + ')'))
         }
     }
 
     private fun method1234(i: Int) {
         anInt2096++
         aLong2102 = -1L
-        val ls = WeaveTextureNode.aLongArray9283
+        val ls = WeaveTextureNodeStatics.aLongArray9283
         aLong2102 = ls!![(((anInt2103 shr 8).toLong() xor aLong2102) and 0xffL).toInt()] xor (aLong2102 ushr 8)
         if (i > -6) aLong2094 = 43L
         aLong2102 = aLong2102 ushr 8 xor ls[(0xffL and (anInt2103.toLong() xor aLong2102)).toInt()]
@@ -540,27 +550,5 @@ class CompositeNpcModelBuilder {
         }
         for (i_116_ in 0..4) aLong2102 = (ls[(0xffL and (aLong2102 xor (this.anIntArray2095!![i_116_]).toLong())).toInt()] xor (aLong2102 ushr 8))
         aLong2102 = (aLong2102 ushr 8 xor ls[(0xffL and (aLong2102 xor (if (!this.aBoolean2100) 0 else 1).toLong())).toInt()])
-    }
-
-    companion object {
-        var anInt2090: Int = 0
-        var anInt2091: Int = 0
-        var anInt2096: Int = 0
-        var anInt2097: Int = 0
-        var anInt2098: Int = 0
-        var anInt2099: Int = 0
-        @JvmField
-        var anInt2101: Int = 0
-        var anInt2104: Int = 0
-        @JvmField
-        var aClass348_Sub49Array2105: Array<ByteBuffer?>? = arrayOfNulls<ByteBuffer>(2048)
-        var anInt2106: Int = 0
-        var anInt2107: Int = 0
-
-        @JvmStatic
-        fun method1235(i: Byte) {
-            if (i.toInt() != 7) anInt2101 = -42
-            aClass348_Sub49Array2105 = null
-        }
     }
 }

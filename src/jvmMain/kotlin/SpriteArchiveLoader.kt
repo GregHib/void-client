@@ -1,3 +1,9 @@
+import SpriteArchiveLoaderStatics.anInt373
+import SpriteArchiveLoaderStatics.anInt375
+import SpriteArchiveLoaderStatics.anInt376
+import SpriteArchiveLoaderStatics.anInt378
+import SpriteArchiveLoaderStatics.method311
+
 /* Class26 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -14,8 +20,8 @@ class SpriteArchiveLoader internal constructor(js5Archive: Js5Archive?, js5Archi
         var class348_sub19_sub1 = aHashtable_381.method3480(l, -6008) as PcmSampleData?
         if (class348_sub19_sub1 != null) return class348_sub19_sub1
         if (`is` != null && `is`[0] <= 0) return null
-        val audioClipDefinition = AudioClipDefinition.method2372(aJs5Archive_379!!, i_1_, i)
-        if (i_0_ < 50) Companion.method311((-60).toByte(), 'n')
+        val audioClipDefinition = AudioClipDefinitionStatics.method2372(aJs5Archive_379!!, i_1_, i)
+        if (i_0_ < 50) method311((-60).toByte(), 'n')
         if (audioClipDefinition == null) return null
         class348_sub19_sub1 = audioClipDefinition.method2369()
         aHashtable_381.method3483(32.toByte(), l, class348_sub19_sub1)
@@ -49,7 +55,7 @@ class SpriteArchiveLoader internal constructor(js5Archive: Js5Archive?, js5Archi
         if (`is` != null && `is`[0] <= 0) return null
         var class348_sub10 = aHashtable_374.method3480(l, -6008) as VorbisAudioDecoder?
         if (class348_sub10 == null) {
-            class348_sub10 = VorbisAudioDecoder.method2795(aJs5Archive_377!!, i_5_, i)
+            class348_sub10 = VorbisAudioDecoderStatics.method2795(aJs5Archive_377!!, i_5_, i)
             if (class348_sub10 == null) return null
             aHashtable_374.method3483(108.toByte(), l, class348_sub10)
         }
@@ -65,45 +71,7 @@ class SpriteArchiveLoader internal constructor(js5Archive: Js5Archive?, js5Archi
             aJs5Archive_377 = js5Archive_9_
             aJs5Archive_379 = js5Archive
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("hs.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_9_ != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt373: Int = 0
-        @JvmField
-        var anInt375: Int = 0
-        @JvmField
-        var anInt376: Int = 0
-        @JvmField
-        var anInt378: Int = 0
-        @JvmField
-        var anInt380: Int = 0
-        @JvmField
-        var aNamedIdRecord_382: NamedIdRecord? = NamedIdRecord("WTQA", 2)
-        @JvmField
-        var anInt383: Int
-        var aBoolean384: Boolean = false
-        @JvmField
-        var anInt385: Int = 0
-        @JvmField
-        var anInt386: Int = 0
-
-        @JvmStatic
-        fun method306(bool: Boolean) {
-            aNamedIdRecord_382 = null
-            if (bool != true) Companion.method311((-5).toByte(), '\u0002')
-        }
-
-        fun method311(i: Byte, c: Char): Boolean {
-            anInt380++
-            if (i <= 85) Companion.method311((-75).toByte(), '\u000c')
-            return c.code == 160 || c.code == 32 || c.code == 95 || c.code == 45
-        }
-
-        init {
-            anInt383 = 0
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("hs.<init>(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_9_ != null) "{...}" else "null") + ')'))
         }
     }
 }

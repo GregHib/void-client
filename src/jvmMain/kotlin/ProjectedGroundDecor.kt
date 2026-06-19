@@ -1,5 +1,30 @@
 import kotlin.math.atan2
 import kotlin.math.min
+import ProjectedGroundDecorStatics.method2420
+import ProjectedGroundDecorStatics.method2429
+import ProjectedGroundDecorStatics.anInt10200
+import ProjectedGroundDecorStatics.anInt10205
+import ProjectedGroundDecorStatics.anInt10214
+import ProjectedGroundDecorStatics.anInt10216
+import ProjectedGroundDecorStatics.anInt10228
+import ProjectedGroundDecorStatics.anInt10233
+import ProjectedGroundDecorStatics.anInt10235
+import ProjectedGroundDecorStatics.anInt10249
+import ProjectedGroundDecorStatics.anInt10251
+import ProjectedGroundDecorStatics.anInt10254
+import ProjectedGroundDecorStatics.anInt10256
+import ProjectedGroundDecorStatics.anInt10257
+import ProjectedGroundDecorStatics.aShortArrayArray10258
+import ProjectedGroundDecorStatics.anInt10262
+import ProjectedGroundDecorStatics.anInt10263
+import ProjectedGroundDecorStatics.anInt10277
+import ProjectedGroundDecorStatics.anInt10281
+import ProjectedGroundDecorStatics.anInt10297
+import ProjectedGroundDecorStatics.anInt10298
+import ProjectedGroundDecorStatics.anInt10299
+import ProjectedGroundDecorStatics.anInt10307
+import ProjectedGroundDecorStatics.anInt10311
+import ProjectedGroundDecorStatics.anInt10313
 
 /* Class318_Sub1_Sub3_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -191,8 +216,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         if (i.toInt() != 72) method2438(-88, 93, -127, 68, 7, -76, 116, 122.toByte())
         anInt10249++
         val i_1_ = method2421(127.toByte())
-        if (i_1_ != -1) return OpenGlModel.aNpcDefinitionCache_5558!!.method1983(i_1_, 32)
-        return NpcDefinition.aNpcDefinition_2931!!
+        if (i_1_ != -1) return OpenGlModelStatics.aNpcDefinitionCache_5558!!.method1983(i_1_, 32)
+        return NpcDefinitionStatics.aNpcDefinition_2931!!
     }
 
     override fun method2409(i: Byte) {
@@ -229,8 +254,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 this.anIntArray10296 = null
                 return true
             }
-            if (i_10_ > 0 && i_10_ <= 8192 || i_10_ <= -8192) this.anIntArray10296!![i_3_] = NpcSummaryDefinition.method1166(16383, i_9_ - -i_7_)
-            else this.anIntArray10296!![i_3_] = NpcSummaryDefinition.method1166(-i_7_ + i_9_, 16383)
+            if (i_10_ > 0 && i_10_ <= 8192 || i_10_ <= -8192) this.anIntArray10296!![i_3_] = NpcSummaryDefinitionStatics.method1166(16383, i_9_ - -i_7_)
+            else this.anIntArray10296!![i_3_] = NpcSummaryDefinitionStatics.method1166(-i_7_ + i_9_, 16383)
             return false
         }
         if (this.anIntArray10296!![i_3_] == -1) this.anIntArray10296!![i_3_] = this.aCompassSmoother_10217.method2019((-104).toByte())
@@ -240,8 +265,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             this.anIntArray10296!![i_3_] = i_4_
             return true
         }
-        if ((i_13_ <= 0 || i_13_ > 8192) && i_13_ > -8192) this.anIntArray10296!![i_3_] = NpcSummaryDefinition.method1166(16383, i_12_ - i_7_)
-        else this.anIntArray10296!![i_3_] = NpcSummaryDefinition.method1166(16383, i_12_ - -i_7_)
+        if ((i_13_ <= 0 || i_13_ > 8192) && i_13_ > -8192) this.anIntArray10296!![i_3_] = NpcSummaryDefinitionStatics.method1166(16383, i_12_ - i_7_)
+        else this.anIntArray10296!![i_3_] = NpcSummaryDefinitionStatics.method1166(16383, i_12_ - -i_7_)
         return false
     }
 
@@ -249,29 +274,29 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         anInt10263++
         val i_19_ = ((this.aShort8743 + this.aShort8751) shr 1)
         val i_20_ = ((this.aShort8750 + this.aShort8747) shr 1)
-        val i_21_ = TrigLookupTables.anIntArray1207!![i]
-        val i_22_ = TrigLookupTables.anIntArray1204!![i]
+        val i_21_ = TrigLookupTablesStatics.anIntArray1207!![i]
+        val i_22_ = TrigLookupTablesStatics.anIntArray1204!![i]
         val i_23_ = -i_14_ / 2
         val i_24_ = -i_16_ / 2
         val i_25_ = i_23_ * i_22_ + i_24_ * i_21_ shr 14
         val i_26_ = -(i_21_ * i_23_) + i_24_ * i_22_ shr 14
-        val i_27_ = RefCountedHandle.method1321((-125).toByte(), i_25_ + this.x, i_26_ + this.y, i_19_, this.plane.toInt(), i_20_)
+        val i_27_ = RefCountedHandleStatics.method1321((-125).toByte(), i_25_ + this.x, i_26_ + this.y, i_19_, this.plane.toInt(), i_20_)
         val i_28_ = i_14_ / 2
         val i_29_ = -i_16_ / 2
         val i_30_ = i_28_ * i_22_ + i_21_ * i_29_ shr 14
         val i_31_ = -(i_21_ * i_28_) + i_29_ * i_22_ shr 14
-        val i_32_ = RefCountedHandle.method1321((-119).toByte(), i_30_ + this.x, this.y + i_31_, i_19_, this.plane.toInt(), i_20_)
+        val i_32_ = RefCountedHandleStatics.method1321((-119).toByte(), i_30_ + this.x, this.y + i_31_, i_19_, this.plane.toInt(), i_20_)
         val i_33_ = -i_14_ / 2
         val i_34_ = i_16_ / 2
         val i_35_ = i_34_ * i_21_ - -(i_33_ * i_22_) shr 14
         val i_36_ = -(i_33_ * i_21_) + i_34_ * i_22_ shr 14
-        val i_37_ = RefCountedHandle.method1321(101.toByte(), i_35_ + this.x, this.y + i_36_, i_19_, this.plane.toInt(), i_20_)
+        val i_37_ = RefCountedHandleStatics.method1321(101.toByte(), i_35_ + this.x, this.y + i_36_, i_19_, this.plane.toInt(), i_20_)
         if (i_17_ <= 63) this.anInt10243 = -62
         val i_38_ = i_14_ / 2
         val i_39_ = i_16_ / 2
         val i_40_ = i_22_ * i_38_ + i_39_ * i_21_ shr 14
         val i_41_ = i_22_ * i_39_ + -(i_21_ * i_38_) shr 14
-        val i_42_ = RefCountedHandle.method1321((-114).toByte(), i_40_ + this.x, this.y + i_41_, i_19_, this.plane.toInt(), i_20_)
+        val i_42_ = RefCountedHandleStatics.method1321((-114).toByte(), i_40_ + this.x, this.y + i_41_, i_19_, this.plane.toInt(), i_20_)
         val i_43_ = min(i_32_, i_27_)
         val i_44_ = min(i_37_, i_42_)
         val i_45_ = min(i_42_, i_32_)
@@ -362,7 +387,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 if (i < -71) break
                 this.anIntArray10236 = null
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("kda.DB(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_51_ != null) "{...}" else "null") + ',' + i + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("kda.DB(" + (if (`is` != null) "{...}" else "null") + ',' + (if (is_51_ != null) "{...}" else "null") + ',' + i + ')'))
             }
             break
         } while (false)
@@ -423,7 +448,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                                 i_67_ += modelFacePriorityNodeS_73_.size
                                 i_68_++
                             }
-                            if (((this.aClass318_Sub10_10327) == null || this.aClass318_Sub10_10327!!.aBoolean6470) && (i_68_ > 0 || i_70_ > 0)) this.aClass318_Sub10_10327 = SceneGraphContainer.method2526((GlGroundShaderPass.anInt7396), true)
+                            if (((this.aClass318_Sub10_10327) == null || this.aClass318_Sub10_10327!!.aBoolean6470) && (i_68_ > 0 || i_70_ > 0)) this.aClass318_Sub10_10327 = SceneGraphContainerStatics.method2526((GlGroundShaderPassStatics.anInt7396), true)
                             if ((this.aClass318_Sub10_10327) != null) {
                                 val `object`: Any? = null
                                 val modelFacePriorityNodeS_75_: Array<ModelFacePriorityNode?>?
@@ -461,16 +486,16 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                                     }
                                     if (widgetRedrawRegionS_74_ != null) ArrayCopyUtil.method1575(widgetRedrawRegionS_74_, 0, widgetRedrawRegionS_78_, i_79_, widgetRedrawRegionS_74_.size)
                                 }
-                                this.aClass318_Sub10_10327!!.method2536(var_renderer, GlGroundShaderPass.anInt7396.toLong(), modelFacePriorityNodeS_75_, widgetRedrawRegionS_78_, false)
+                                this.aClass318_Sub10_10327!!.method2536(var_renderer, GlGroundShaderPassStatics.anInt7396.toLong(), modelFacePriorityNodeS_75_, widgetRedrawRegionS_78_, false)
                             }
                             this.aBoolean10318 = true
                         }
-                    } else if ((this.aClass318_Sub10_10327) != null) this.aClass318_Sub10_10327!!.method2540(GlGroundShaderPass.anInt7396.toLong())
+                    } else if ((this.aClass318_Sub10_10327) != null) this.aClass318_Sub10_10327!!.method2540(GlGroundShaderPassStatics.anInt7396.toLong())
                     if (this.aClass318_Sub10_10327 == null) break
                     this.aClass318_Sub10_10327!!.method2533(this.plane.toInt(), this.aShort8743.toInt(), this.aShort8751.toInt(), this.aShort8750.toInt(), this.aShort8747.toInt())
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("kda.L(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + (if (abstractModels != null) "{...}" else "null") + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("kda.L(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + (if (abstractModels != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -532,9 +557,9 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         val i_92_ = (if (!bool) this.anInt10269 else this.anInt10291)
         if (i_88_ != -1 && i_92_ != -1) {
             if (i_92_ == i_88_) {
-                val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(65.toByte(), i_88_)
+                val class368 = ConstantColourTextureNodeStatics.aMapElementDefinitionCache_9245!!.method2543(65.toByte(), i_88_)
                 if (class368.aBoolean4487 && class368.anInt4503 != -1) {
-                    val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7)
+                    val class17 = ParticleEmitterNodeStatics.aWidgetCache_191!!.method835(class368.anInt4503, 7)
                     val i_95_ = class17.anInt248
                     if (i_95_ == 0) return
                     if (i_95_ == 2) {
@@ -546,16 +571,16 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                     }
                 }
             } else {
-                val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(109.toByte(), i_88_)
-                val class368_93_ = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(99.toByte(), i_92_)
+                val class368 = ConstantColourTextureNodeStatics.aMapElementDefinitionCache_9245!!.method2543(109.toByte(), i_88_)
+                val class368_93_ = ConstantColourTextureNodeStatics.aMapElementDefinitionCache_9245!!.method2543(99.toByte(), i_92_)
                 if (class368.anInt4503 != -1 && class368_93_.anInt4503 != -1) {
-                    val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7)
-                    val class17_94_ = ParticleEmitterNode.aWidgetCache_191!!.method835((class368_93_.anInt4503), i_89_ xor 0x3c5664d6.inv())
+                    val class17 = ParticleEmitterNodeStatics.aWidgetCache_191!!.method835(class368.anInt4503, 7)
+                    val class17_94_ = ParticleEmitterNodeStatics.aWidgetCache_191!!.method835((class368_93_.anInt4503), i_89_ xor 0x3c5664d6.inv())
                     if (class17_94_.anInt239 > class17.anInt239) return
                 }
             }
         }
-        val i_96_ = GlGroundShaderPass.anInt7396
+        val i_96_ = GlGroundShaderPassStatics.anInt7396
         if (i_89_ != -1012294866) method2423(84, 124, 113)
         if (bool) {
             this.anInt10276 = 1
@@ -568,10 +593,10 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             this.anInt10273 = 0
             if (i_96_ < this.anInt10211) this.anInt10224 = -1
             if (this.anInt10291 != -1 && (this.anInt10211 == i_96_)) {
-                val i_97_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(98.toByte(), this.anInt10291).anInt4503)
+                val i_97_ = (ConstantColourTextureNodeStatics.aMapElementDefinitionCache_9245!!.method2543(98.toByte(), this.anInt10291).anInt4503)
                 if (i_97_ != -1) {
-                    val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_97_, 7)
-                    if (class17 != null && class17.anIntArray237 != null && !this.aBoolean10309) TypedRecordTable.method2178(this, 0, class17, i_89_ + 1012294835)
+                    val class17 = ParticleEmitterNodeStatics.aWidgetCache_191!!.method835(i_97_, 7)
+                    if (class17 != null && class17.anIntArray237 != null && !this.aBoolean10309) TypedRecordTableStatics.method2178(this, 0, class17, i_89_ + 1012294835)
                 }
             }
         } else {
@@ -585,10 +610,10 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             this.anInt10220 = i_91_ shr 16
             if (i_96_ < this.anInt10225) this.anInt10240 = -1
             if (this.anInt10269 != -1 && this.anInt10225 == i_96_) {
-                val i_98_ = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(103.toByte(), this.anInt10269).anInt4503)
+                val i_98_ = (ConstantColourTextureNodeStatics.aMapElementDefinitionCache_9245!!.method2543(103.toByte(), this.anInt10269).anInt4503)
                 if (i_98_ != -1) {
-                    val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_98_, 7)
-                    if (class17 != null && class17.anIntArray237 != null && !this.aBoolean10309) TypedRecordTable.method2178(this, 0, class17, -128)
+                    val class17 = ParticleEmitterNodeStatics.aWidgetCache_191!!.method835(i_98_, 7)
+                    if (class17 != null && class17.anIntArray237 != null && !this.aBoolean10309) TypedRecordTableStatics.method2178(this, 0, class17, -128)
                 }
             }
         }
@@ -609,7 +634,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             var i_109_ = -1
             var i_110_ = 0
             if (i_100_ >= 0) {
-                val class31 = FileExistsCondition.aModelDefinitionCache_4782!!.method1601(46, i_100_)
+                val class31 = FileExistsConditionStatics.aModelDefinitionCache_4782!!.method1601(46, i_100_)
                 i_109_ = class31.anInt431
                 i_110_ = class31.anInt434
             }
@@ -668,7 +693,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 abstractModel.H(0, i_117_, 0)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("kda.GB(" + i + ',' + (if (abstractModel != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("kda.GB(" + i + ',' + (if (abstractModel != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -724,187 +749,5 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         this.anInt10319 = 0
         this.anIntArray10320 = IntArray(10)
         this.anInt10326 = 0
-    }
-
-    companion object {
-        @JvmField
-        var anInt10200: Int = 0
-        private var aShortArrayArray10204: Array<ShortArray?>?
-        @JvmField
-        var anInt10205: Int = 0
-        @JvmField
-        var aVarpStore_10209: VarpStore? = null
-        @JvmField
-        var anInt10212: Int = 0
-        @JvmField
-        var anInt10214: Int = 0
-        @JvmField
-        var anInt10216: Int = 0
-        @JvmField
-        var aBoolean10221: Boolean = false
-        @JvmField
-        var anInt10228: Int = 0
-        @JvmField
-        var anInt10233: Int = 0
-        @JvmField
-        var anInt10235: Int = 0
-        @JvmField
-        var aBoolean10238: Boolean
-        private var aShortArrayArray10246: Array<ShortArray?>? = arrayOf<ShortArray?>(ShortArray(0), ShortArray(0), ShortArray(0), ShortArray(0), ShortArray(0))
-        @JvmField
-        var anInt10249: Int = 0
-        @JvmField
-        var anInt10251: Int = 0
-        @JvmField
-        var aShortArrayArrayArray10253: Array<Array<ShortArray?>?>?
-        @JvmField
-        var anInt10254: Int = 0
-        @JvmField
-        var anInt10256: Int = 0
-        @JvmField
-        var anInt10257: Int = 0
-        private var aShortArrayArray10258: Array<ShortArray?>?
-        @JvmField
-        var anInt10262: Int = 0
-        @JvmField
-        var anInt10263: Int = 0
-        @JvmField
-        var anIntArray10266: IntArray? = IntArray(256)
-        @JvmField
-        var anInt10272: Int = 0
-        @JvmField
-        var anInt10277: Int = 0
-        @JvmField
-        var anInt10281: Int = 0
-        @JvmField
-        var anInt10297: Int = 0
-        @JvmField
-        var anInt10298: Int = 0
-        @JvmField
-        var anInt10299: Int = 0
-        @JvmField
-        var anInt10307: Int = 0
-        @JvmField
-        var anInt10311: Int = 0
-        @JvmField
-        var anInt10313: Int = 0
-        @JvmStatic
-        fun method2420(i: Int, i_0_: Int) {
-            if (i_0_ != -1) aBoolean10238 = false
-            Gl3dTexture.anInt8628 = i
-            anInt10272++
-            ParticleGeometry.aLruByteCache_4417!!.method590(0)
-        }
-
-        @JvmStatic
-        fun method2429(i: Int) {
-            aVarpStore_10209 = null
-            aShortArrayArray10246 = null
-            anIntArray10266 = null
-            aShortArrayArray10204 = null
-            aShortArrayArrayArray10253 = null
-            if (i > -101) aShortArrayArray10246 = null
-            aShortArrayArray10258 = null
-        }
-
-        @JvmStatic
-        fun method2431(i: Int, i_56_: Int, class348_sub42_sub13: ContactList?, i_57_: Int, i_58_: Int, i_59_: Int, i_60_: Int, var_renderer: Renderer?, i_61_: Int, i_62_: Int, i_63_: Int, i_64_: Int) {
-            var i = i
-            try {
-                if (i_62_ < 111) aShortArrayArray10246 = null
-                if (i_63_ < i_57_ && i_57_ < i_58_ + i_63_ && i_60_ > i_56_ - 13 && i_60_ < 3 + i_56_) i = i_59_
-                anInt10212++
-                val string = MenuActionNode.method2812(-44, class348_sub42_sub13!!)
-                NodeDeque.aFont_3326!!.method2567(i_56_, string, 120.toByte(), i, 0, i_63_ - -3, TileRenderState.aAbstractModelRendererArray4234, SizeBoundedSoftCache.anIntArray2330)
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("kda.VA(" + i + ',' + i_56_ + ',' + (if (class348_sub42_sub13 != null) "{...}" else "null") + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ',' + i_64_ + ')'))
-            }
-        }
-
-        @JvmStatic
-        fun method2433() {
-            if (WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 != null) {
-                for (i in WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!!.indices) {
-                    for (i_80_ in 0..<SpotAnimEntity.anInt6451) {
-                        for (i_81_ in 0..<RegionSceneShifter.anInt7054) {
-                            if ((WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]) != null) WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]!!.method3485(true)
-                            WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_] = null
-                        }
-                    }
-                }
-            }
-            WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 = null
-            TerrainTileShape.aTerrainTileArray8801 = null
-            if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) {
-                for (i in ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!!.indices) {
-                    for (i_82_ in 0..<SpotAnimEntity.anInt6451) {
-                        for (i_83_ in 0..<RegionSceneShifter.anInt7054) {
-                            if ((ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!![i]!![i_82_]!![i_83_]) != null) ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!![i]!![i_82_]!![i_83_]!!.method3485(true)
-                            ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!![i]!![i_82_]!![i_83_] = null
-                        }
-                    }
-                }
-            }
-            ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = null
-            SoundCacheState.aTerrainTileArray4142 = null
-            HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 = null
-            NativeSprite.aTerrainTileArray5191 = null
-            SpriteBlitter.aBooleanArrayArray1572 = null
-            FacingDirectionNode.aBooleanArrayArray6656 = null
-            RefCountedHandle.anIntArray2272 = null
-            OverlayColorTable.aBooleanArrayArrayArray1751 = null
-            SolidFillComponent.aBooleanArrayArrayArray8361 = null
-            LocalizedText.method2062(89.toByte())
-            if (ModelDataCache.aClass318_Sub1_Sub3Array357 != null) {
-                for (i in 0..<DrawListState.anInt1477) ModelDataCache.aClass318_Sub1_Sub3Array357!![i] = null
-                DrawListState.anInt1477 = 0
-            }
-            LinkedListNode.aClass318_Sub1Array4293 = null
-            BackgroundWorkerThread.aClass318_Sub1Array3226 = null
-            OverlayColorTable.aClass318_Sub1Array1754 = null
-            if (RemoveRoofsOptionState.aClass318_Sub1Array6066 != null) {
-                for (i in RemoveRoofsOptionState.aClass318_Sub1Array6066!!.indices) RemoveRoofsOptionState.aClass318_Sub1Array6066!![i] = null
-                ProportionalScrollbarComponent.anInt9930 = 0
-            }
-            if (CutsceneSequenceData.aClass318_Sub1Array3737 != null) {
-                for (i in CutsceneSequenceData.aClass318_Sub1Array3737!!.indices) CutsceneSequenceData.aClass318_Sub1Array3737!![i] = null
-                LoadingScreenImageNode.anInt9504 = 0
-            }
-            if (WaterDetailOptionState.aSoundEnvelopeArray5993 != null) {
-                for (i in 0..<CalendarUtil.anInt4135) WaterDetailOptionState.aSoundEnvelopeArray5993!![i] = null
-                for (i in 0..<MapAreaDefinition.anInt2524) {
-                    for (i_84_ in 0..<SpotAnimEntity.anInt6451) {
-                        for (i_85_ in 0..<RegionSceneShifter.anInt7054) HardCacheEntryReference.aLongArrayArrayArray10431!![i]!![i_84_]!![i_85_] = 0L
-                    }
-                }
-                CalendarUtil.anInt4135 = 0
-            }
-            MapElementManager.method3513(-120)
-            PlayerSequenceSelector.aSceneObjectSpawner_1208 = PlayerSequenceSelector.aSceneObjectSpawner_1210
-            PlayerSequenceSelector.aSceneObjectSpawner_1208!!.method775(69.toByte())
-            HashTileShape.aByteArrayArray8816 = null
-            WidgetRedrawRegion.anIntArrayArray4253 = null
-            BooleanGraphicsOptionState.aShortArrayArray5847 = null
-            if (NormalMapTextureNode.aSceneLoaderThreadArray9432 != null) {
-                WalkingTypeUtil.method1978()
-                NativeLibraryState.aRenderer171!!.method3631(1)
-                NativeLibraryState.aRenderer171!!.method3659(0)
-            }
-            if (MapElementDefinitionCache.aCacheIndexManagerArray3982 != null) MapElementDefinitionCache.aCacheIndexManagerArray3982 = null
-            NativeLibraryState.aRenderer171 = null
-        }
-
-        init {
-            aBoolean10238 = false
-            aShortArrayArray10258 = (arrayOf<ShortArray?>(
-                shortArrayOf(6798, 12, 78, 8384, 14511, 9162, 5056, 939, 5025, 4760, 9108, 7719, 14241, 22443, 30247, -29781, -25675, -21568, -17472, -12373, -8256, -3545),
-                shortArrayOf(8741, 12, 78, 8384, 14511, 9162, 5056, 939, 5025, 4760, 9108, 7719, 14241, 22443, 30247, -29781, -25675, -21568, -17472, -12373, -8256, -3545),
-                shortArrayOf(25238, 12, 78, 8384, 14511, 9162, 5056, 939, 5025, 4760, 9108, 7719, 14241, 22443, 30247, -29781, -25675, -21568, -17472, -12373, -8256, -3545),
-                shortArrayOf(4626, 12, 78, 8384, 14511, 9162, 5056, 939, 5025, 4760, 9108, 7719, 14241, 22443, 30247, -29781, -25675, -21568, -17472, -12373, -8256, -3545),
-                shortArrayOf(4550, 12, 78, 8384, 14511, 9162, 5056, 939, 5025, 4760, 9108, 7719, 14241, 22443, 30247, -29781, -25675, -21568, -17472, -12373, -8256, -3545)
-            ))
-            aShortArrayArray10204 = arrayOf<ShortArray?>(ShortArray(0), ShortArray(0), ShortArray(0), ShortArray(0), ShortArray(0))
-            aShortArrayArrayArray10253 = arrayOf<Array<ShortArray?>?>(aShortArrayArray10258, aShortArrayArray10204, aShortArrayArray10246)
-        }
     }
 }

@@ -2,6 +2,14 @@ import java.io.EOFException
 import java.io.File
 import java.io.IOException
 import java.io.RandomAccessFile
+import RandomAccessFileOnDiskStatics.anInt3038
+import RandomAccessFileOnDiskStatics.anInt3040
+import RandomAccessFileOnDiskStatics.anInt3041
+import RandomAccessFileOnDiskStatics.anInt3042
+import RandomAccessFileOnDiskStatics.anInt3043
+import RandomAccessFileOnDiskStatics.anInt3045
+import RandomAccessFileOnDiskStatics.anInt3048
+import RandomAccessFileOnDiskStatics.method1659
 
 /*
  * Class234
@@ -46,7 +54,7 @@ class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, 
 
     fun method1660(i: Int): File {
         anInt3042++
-        if (i <= 64) Companion.method1659((-48).toByte())
+        if (i <= 64) method1659((-48).toByte())
         return aFile3046!!
     }
 
@@ -58,7 +66,7 @@ class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, 
             aRandomAccessFile3036!!.seek(l)
             aLong3039 = l
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "so.B(" + i + ',' + l + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "so.B(" + i + ',' + l + ')')
         }
     }
 
@@ -94,33 +102,7 @@ class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, 
             }
             aRandomAccessFile3036!!.seek(0L)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("so.<init>(" + (if (file != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + l + ')'))
-        }
-    }
-
-    companion object {
-        var anInt3038: Int = 0
-        var anInt3040: Int = 0
-        var anInt3041: Int = 0
-        var anInt3042: Int = 0
-        var anInt3043: Int = 0
-        @JvmField
-        var aRectangleRegion_3044: RectangleRegion?
-        var anInt3045: Int = 0
-        @JvmField
-        var anInt3047: Int = 0
-        var anInt3048: Int = 0
-        @JvmField
-        var anInt3049: Int = 0
-
-        @JvmStatic
-        fun method1659(i: Byte) {
-            if (i >= -2) method1659(126.toByte())
-            aRectangleRegion_3044 = null
-        }
-
-        init {
-            aRectangleRegion_3044 = RectangleRegion(0, 2, 2, 1)
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("so.<init>(" + (if (file != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + l + ')'))
         }
     }
 }

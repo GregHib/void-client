@@ -1,6 +1,7 @@
 package jagtheora.theora
 
 import jagtheora.misc.SimplePeer
+import jagtheora.theora.TheoraInfoStatics.init
 
 class TheoraInfo : SimplePeer() {
     private val colourSpace = 0
@@ -43,14 +44,4 @@ class TheoraInfo : SimplePeer() {
     }
 
     external override fun clear()
-
-    companion object {
-        init {
-            initFields()
-        }
-
-        private external fun initFields()
-
-        protected external fun init()
-    }
 }

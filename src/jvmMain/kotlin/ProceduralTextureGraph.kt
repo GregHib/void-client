@@ -1,6 +1,12 @@
-import SoundBankPatch.Companion.method2929
-import HashTableContainer.Companion.method3031
-import NpcType.Companion.method797
+import SoundBankPatchStatics.method2929
+import HashTableContainerStatics.method3031
+import LinkedListNodeStatics.aJs5Archive_4286
+import NpcTypeStatics.method797
+import ProceduralTextureGraphStatics.anInt9522
+import ProceduralTextureGraphStatics.anInt9525
+import ProceduralTextureGraphStatics.anInt9526
+import ProceduralTextureGraphStatics.anInt9529
+import ProceduralTextureGraphStatics.anInt9532
 
 /* Class348_Sub42_Sub5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -15,14 +21,14 @@ class ProceduralTextureGraph : HashLinkedListNode {
     fun method3183(var_renderConfig: RenderConfig?, i: Int, i_0_: Int, bool: Boolean, d: Double, js5Archive: Js5Archive?, i_1_: Byte): IntArray {
         try {
             anInt9522++
-            TexGenMaterialPass.aRenderConfig6247 = var_renderConfig
+            TexGenMaterialPassStatics.aRenderConfig6247 = var_renderConfig
             aJs5Archive_4286 = js5Archive
             var i_2_ = 0
             while (aClass348_Sub40Array9520.size > i_2_) {
                 aClass348_Sub40Array9520[i_2_]!!.method3045(i, i_0_, -256)
                 i_2_++
             }
-            ContactList.Companion.method3232(d, (-122).toByte())
+            ContactListStatics.method3232(d, (-122).toByte())
             method797(i_0_, i, 114.toByte())
             val `is` = IntArray(i * i_0_)
             var i_3_ = 0
@@ -55,10 +61,10 @@ class ProceduralTextureGraph : HashLinkedListNode {
                     if (i_13_ < 0) i_13_ = 0
                     var i_14_ = is_5_!![i_11_] shr 4
                     if (i_14_ > 255) i_14_ = 255
-                    i_13_ = ProjectedGroundDecor.anIntArray10266!![i_13_]
+                    i_13_ = ProjectedGroundDecorStatics.anIntArray10266!![i_13_]
                     if (i_14_ < 0) i_14_ = 0
-                    i_12_ = ProjectedGroundDecor.anIntArray10266!![i_12_]
-                    i_14_ = ProjectedGroundDecor.anIntArray10266!![i_14_]
+                    i_12_ = ProjectedGroundDecorStatics.anIntArray10266!![i_12_]
+                    i_14_ = ProjectedGroundDecorStatics.anIntArray10266!![i_14_]
                     var i_15_: Int
                     if (i_12_ == 0 && i_13_ == 0 && i_14_ == 0) i_15_ = 0
                     else {
@@ -86,7 +92,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
     fun method3184(var_renderConfig: RenderConfig?, js5Archive: Js5Archive?, i: Int): Boolean {
         try {
             anInt9529++
-            if (FloatCameraTransform.anInt5713 < 0) {
+            if (FloatCameraTransformStatics.anInt5713 < 0) {
                 var i_17_ = 0
                 while ((anIntArray9524.size > i_17_)) {
                     if (!js5Archive!!.method421(false, anIntArray9524[i_17_])) return false
@@ -95,7 +101,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
             } else {
                 var i_18_ = 0
                 while ((i_18_ < anIntArray9524.size)) {
-                    if (!js5Archive!!.method420(-10499, FloatCameraTransform.anInt5713, anIntArray9524[i_18_])) return false
+                    if (!js5Archive!!.method420(-10499, FloatCameraTransformStatics.anInt5713, anIntArray9524[i_18_])) return false
                     i_18_++
                 }
             }
@@ -113,7 +119,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
 
     fun method3185(i: Int, var_renderConfig: RenderConfig?, i_21_: Int, bool: Boolean, d: Double, bool_22_: Boolean, js5Archive: Js5Archive?, i_23_: Int): IntArray {
         try {
-            TexGenMaterialPass.aRenderConfig6247 = var_renderConfig
+            TexGenMaterialPassStatics.aRenderConfig6247 = var_renderConfig
             aJs5Archive_4286 = js5Archive
             anInt9526++
             var i_24_ = 0
@@ -121,7 +127,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
                 aClass348_Sub40Array9520[i_24_]!!.method3045(i, i_23_, i_21_ + -256)
                 i_24_++
             }
-            ContactList.Companion.method3232(d, (-89).toByte())
+            ContactListStatics.method3232(d, (-89).toByte())
             method797(i_23_, i, 122.toByte())
             val `is` = IntArray(i_23_ * i)
             val i_25_: Int
@@ -164,10 +170,10 @@ class ProceduralTextureGraph : HashLinkedListNode {
                     if (i_37_ < 0) i_37_ = 0
                     var i_38_ = is_32_!![i_35_] shr 4
                     if (i_38_ > 255) i_38_ = 255
-                    i_37_ = ProjectedGroundDecor.anIntArray10266!![i_37_]
-                    i_36_ = ProjectedGroundDecor.anIntArray10266!![i_36_]
+                    i_37_ = ProjectedGroundDecorStatics.anIntArray10266!![i_37_]
+                    i_36_ = ProjectedGroundDecorStatics.anIntArray10266!![i_36_]
                     if (i_38_ < 0) i_38_ = 0
-                    i_38_ = ProjectedGroundDecor.anIntArray10266!![i_38_]
+                    i_38_ = ProjectedGroundDecorStatics.anIntArray10266!![i_38_]
                     var i_39_ = (i_37_ shl 8) + (i_36_ shl 16) + i_38_
                     if (i_39_ != 0) i_39_ = i_39_ or 0xffffff.inv()
                     `is`[i_28_++] = i_39_
@@ -191,7 +197,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
         try {
             anInt9525++
             aJs5Archive_4286 = js5Archive
-            TexGenMaterialPass.aRenderConfig6247 = var_renderConfig
+            TexGenMaterialPassStatics.aRenderConfig6247 = var_renderConfig
             if (i_42_ >= -1) method3183(null, -60, 98, false, -0.11623531533038078, null, (-72).toByte())
             var i_43_ = 0
             while (aClass348_Sub40Array9520.size > i_43_) {
@@ -300,30 +306,5 @@ class ProceduralTextureGraph : HashLinkedListNode {
         aClass348_Sub40_9527 = aClass348_Sub40Array9520[class348_sub49.readUnsignedByte(255)]!!
         aClass348_Sub40_9528 = aClass348_Sub40Array9520[class348_sub49.readUnsignedByte(255)]!!
         val `object`: Any? = null
-    }
-
-    companion object {
-        var anInt9522: Int = 0
-        var anInt9525: Int = 0
-        var anInt9526: Int = 0
-        var anInt9529: Int = 0
-        var aRectangleRegion_9530: RectangleRegion? = RectangleRegion(6, 0, 4, 2)
-        var aDouble9531: Double = 0.0
-        var anInt9532: Int = 0
-        var aFontMetaRef_9533: FontMetaRef?
-        @JvmField
-        var anCharStreamReaderArray9534s: Array<CharStreamReader?>? = arrayOfNulls<CharStreamReader>(128)
-
-        @JvmStatic
-        fun method3187(i: Byte) {
-            anCharStreamReaderArray9534s = null
-            val i_55_ = 19 % ((76 - i) / 39)
-            aFontMetaRef_9533 = null
-            aRectangleRegion_9530 = null
-        }
-
-        init {
-            aFontMetaRef_9533 = FontMetaRef(57, 3)
-        }
     }
 }

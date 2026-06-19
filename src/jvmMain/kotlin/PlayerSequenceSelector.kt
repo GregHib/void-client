@@ -56,7 +56,7 @@ object PlayerSequenceSelector {
                     class318_sub1_sub3_sub3.aBoolean10213 = false
                 }
             } else {
-                val i_4_ = 0x3fff and (ParticleEmitterNode.anIntArray187!![i_2_] - class318_sub1_sub3_sub3.aCompassSmoother_10217.anInt3370)
+                val i_4_ = 0x3fff and (ParticleEmitterNodeStatics.anIntArray187!![i_2_] - class318_sub1_sub3_sub3.aCompassSmoother_10217.anInt3370)
                 if (i != 2 || class225.anInt2919 == -1) {
                     if (i == 0 && (class225.anInt2940 != -1)) {
                         if (i_4_ <= 2048 || i_4_ > 6144 || class225.anInt2947 == -1) {

@@ -24,15 +24,15 @@ object NpcCountAccessor {
     fun method1327(i: Int): Int {
         if (i <= 17) anIntArray2280 = null
         anInt2277++
-        return AbstractFrameBufferSurface.anInt6924
+        return AbstractFrameBufferSurfaceStatics.anInt6924
     }
 
     fun method1328(i: Int) {
         if (i != -26162) anIntArray2280 = null
-        FontMetaRef.aLruByteCache_4327!!.method587(-118)
+        FontMetaRefStatics.aLruByteCache_4327!!.method587(-118)
         anInt2281++
-        ParticleGeometry.aLruByteCache_4417!!.method587(-89)
-        SceneryDetailOptionState.aLruByteCache_6096!!.method587(-87)
-        EdgeDetectTextureNode.aLruByteCache_9171!!.method587(-95)
+        ParticleGeometryStatics.aLruByteCache_4417!!.method587(-89)
+        SceneryDetailOptionStateStatics.aLruByteCache_6096!!.method587(-87)
+        EdgeDetectTextureNodeStatics.aLruByteCache_9171!!.method587(-95)
     }
 }

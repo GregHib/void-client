@@ -1,69 +1,154 @@
 import jaclib.memory.Stream
 import jaggl.MapBuffer
 import jaggl.OpenGL
-import jaggl.OpenGL.Companion.glActiveTexture
-import jaggl.OpenGL.Companion.glAlphaFunc
-import jaggl.OpenGL.Companion.glBindTexture
-import jaggl.OpenGL.Companion.glBlendFunc
-import jaggl.OpenGL.Companion.glClear
-import jaggl.OpenGL.Companion.glClearColor
-import jaggl.OpenGL.Companion.glClearDepth
-import jaggl.OpenGL.Companion.glClientActiveTexture
-import jaggl.OpenGL.Companion.glColorMaterial
-import jaggl.OpenGL.Companion.glColorPointer
-import jaggl.OpenGL.Companion.glCopyPixels
-import jaggl.OpenGL.Companion.glCullFace
-import jaggl.OpenGL.Companion.glDeleteBuffersARB
-import jaggl.OpenGL.Companion.glDeleteFramebuffersEXT
-import jaggl.OpenGL.Companion.glDeleteLists
-import jaggl.OpenGL.Companion.glDeleteObjectARB
-import jaggl.OpenGL.Companion.glDeleteProgramARB
-import jaggl.OpenGL.Companion.glDeleteRenderbuffersEXT
-import jaggl.OpenGL.Companion.glDeleteTextures
-import jaggl.OpenGL.Companion.glDepthFunc
-import jaggl.OpenGL.Companion.glDepthMask
-import jaggl.OpenGL.Companion.glDisable
-import jaggl.OpenGL.Companion.glDisableClientState
-import jaggl.OpenGL.Companion.glDrawArrays
-import jaggl.OpenGL.Companion.glDrawBuffer
-import jaggl.OpenGL.Companion.glDrawElements
-import jaggl.OpenGL.Companion.glEnable
-import jaggl.OpenGL.Companion.glEnableClientState
-import jaggl.OpenGL.Companion.glFinish
-import jaggl.OpenGL.Companion.glFlush
-import jaggl.OpenGL.Companion.glFogf
-import jaggl.OpenGL.Companion.glFogfv
-import jaggl.OpenGL.Companion.glFogi
-import jaggl.OpenGL.Companion.glGenBuffersARB
-import jaggl.OpenGL.Companion.glGetIntegerv
-import jaggl.OpenGL.Companion.glGetString
-import jaggl.OpenGL.Companion.glHint
-import jaggl.OpenGL.Companion.glLightModelfv
-import jaggl.OpenGL.Companion.glLightf
-import jaggl.OpenGL.Companion.glLightfv
-import jaggl.OpenGL.Companion.glLoadIdentity
-import jaggl.OpenGL.Companion.glLoadMatrixf
-import jaggl.OpenGL.Companion.glMatrixMode
-import jaggl.OpenGL.Companion.glMultMatrixf
-import jaggl.OpenGL.Companion.glNormalPointer
-import jaggl.OpenGL.Companion.glOrtho
-import jaggl.OpenGL.Companion.glPolygonMode
-import jaggl.OpenGL.Companion.glPopMatrix
-import jaggl.OpenGL.Companion.glPushMatrix
-import jaggl.OpenGL.Companion.glRasterPos2i
-import jaggl.OpenGL.Companion.glReadBuffer
-import jaggl.OpenGL.Companion.glReadPixelsi
-import jaggl.OpenGL.Companion.glScissor
-import jaggl.OpenGL.Companion.glShadeModel
-import jaggl.OpenGL.Companion.glTexCoordPointer
-import jaggl.OpenGL.Companion.glTexEnvfv
-import jaggl.OpenGL.Companion.glTexEnvi
-import jaggl.OpenGL.Companion.glTexGeni
-import jaggl.OpenGL.Companion.glVertexPointer
-import jaggl.OpenGL.Companion.glViewport
+import jaggl.OpenGLStatics.glActiveTexture
+import jaggl.OpenGLStatics.glAlphaFunc
+import jaggl.OpenGLStatics.glBindTexture
+import jaggl.OpenGLStatics.glBlendFunc
+import jaggl.OpenGLStatics.glClear
+import jaggl.OpenGLStatics.glClearColor
+import jaggl.OpenGLStatics.glClearDepth
+import jaggl.OpenGLStatics.glClientActiveTexture
+import jaggl.OpenGLStatics.glColorMaterial
+import jaggl.OpenGLStatics.glColorPointer
+import jaggl.OpenGLStatics.glCopyPixels
+import jaggl.OpenGLStatics.glCullFace
+import jaggl.OpenGLStatics.glDeleteBuffersARB
+import jaggl.OpenGLStatics.glDeleteFramebuffersEXT
+import jaggl.OpenGLStatics.glDeleteLists
+import jaggl.OpenGLStatics.glDeleteObjectARB
+import jaggl.OpenGLStatics.glDeleteProgramARB
+import jaggl.OpenGLStatics.glDeleteRenderbuffersEXT
+import jaggl.OpenGLStatics.glDeleteTextures
+import jaggl.OpenGLStatics.glDepthFunc
+import jaggl.OpenGLStatics.glDepthMask
+import jaggl.OpenGLStatics.glDisable
+import jaggl.OpenGLStatics.glDisableClientState
+import jaggl.OpenGLStatics.glDrawArrays
+import jaggl.OpenGLStatics.glDrawBuffer
+import jaggl.OpenGLStatics.glDrawElements
+import jaggl.OpenGLStatics.glEnable
+import jaggl.OpenGLStatics.glEnableClientState
+import jaggl.OpenGLStatics.glFinish
+import jaggl.OpenGLStatics.glFlush
+import jaggl.OpenGLStatics.glFogf
+import jaggl.OpenGLStatics.glFogfv
+import jaggl.OpenGLStatics.glFogi
+import jaggl.OpenGLStatics.glGenBuffersARB
+import jaggl.OpenGLStatics.glGetIntegerv
+import jaggl.OpenGLStatics.glGetString
+import jaggl.OpenGLStatics.glHint
+import jaggl.OpenGLStatics.glLightModelfv
+import jaggl.OpenGLStatics.glLightf
+import jaggl.OpenGLStatics.glLightfv
+import jaggl.OpenGLStatics.glLoadIdentity
+import jaggl.OpenGLStatics.glLoadMatrixf
+import jaggl.OpenGLStatics.glMatrixMode
+import jaggl.OpenGLStatics.glMultMatrixf
+import jaggl.OpenGLStatics.glNormalPointer
+import jaggl.OpenGLStatics.glOrtho
+import jaggl.OpenGLStatics.glPolygonMode
+import jaggl.OpenGLStatics.glPopMatrix
+import jaggl.OpenGLStatics.glPushMatrix
+import jaggl.OpenGLStatics.glRasterPos2i
+import jaggl.OpenGLStatics.glReadBuffer
+import jaggl.OpenGLStatics.glReadPixelsi
+import jaggl.OpenGLStatics.glScissor
+import jaggl.OpenGLStatics.glShadeModel
+import jaggl.OpenGLStatics.glTexCoordPointer
+import jaggl.OpenGLStatics.glTexEnvfv
+import jaggl.OpenGLStatics.glTexEnvi
+import jaggl.OpenGLStatics.glTexGeni
+import jaggl.OpenGLStatics.glVertexPointer
+import jaggl.OpenGLStatics.glViewport
 import java.awt.Canvas
 import java.awt.Rectangle
 import java.util.*
+import GlRenderDeviceStatics.anInt9812
+import GlRenderDeviceStatics.anInt9813
+import GlRenderDeviceStatics.anInt9814
+import GlRenderDeviceStatics.anInt9815
+import GlRenderDeviceStatics.anInt9816
+import GlRenderDeviceStatics.anInt9817
+import GlRenderDeviceStatics.anInt9818
+import GlRenderDeviceStatics.anInt9819
+import GlRenderDeviceStatics.anInt9820
+import GlRenderDeviceStatics.anInt9821
+import GlRenderDeviceStatics.anInt9822
+import GlRenderDeviceStatics.anInt9823
+import GlRenderDeviceStatics.anInt9824
+import GlRenderDeviceStatics.anInt9825
+import GlRenderDeviceStatics.anInt9826
+import GlRenderDeviceStatics.anInt9827
+import GlRenderDeviceStatics.anInt9828
+import GlRenderDeviceStatics.anInt9829
+import GlRenderDeviceStatics.anInt9830
+import GlRenderDeviceStatics.anInt9831
+import GlRenderDeviceStatics.anInt9832
+import GlRenderDeviceStatics.anInt9833
+import GlRenderDeviceStatics.anInt9834
+import GlRenderDeviceStatics.anInt9835
+import GlRenderDeviceStatics.anInt9836
+import GlRenderDeviceStatics.anInt9837
+import GlRenderDeviceStatics.anInt9838
+import GlRenderDeviceStatics.anInt9839
+import GlRenderDeviceStatics.anInt9840
+import GlRenderDeviceStatics.anInt9842
+import GlRenderDeviceStatics.anInt9843
+import GlRenderDeviceStatics.anInt9844
+import GlRenderDeviceStatics.anInt9845
+import GlRenderDeviceStatics.anInt9846
+import GlRenderDeviceStatics.anInt9847
+import GlRenderDeviceStatics.anInt9848
+import GlRenderDeviceStatics.anInt9849
+import GlRenderDeviceStatics.anInt9850
+import GlRenderDeviceStatics.anInt9851
+import GlRenderDeviceStatics.anInt9852
+import GlRenderDeviceStatics.anInt9853
+import GlRenderDeviceStatics.anInt9854
+import GlRenderDeviceStatics.anInt9855
+import GlRenderDeviceStatics.anInt9857
+import GlRenderDeviceStatics.anInt9858
+import GlRenderDeviceStatics.anInt9859
+import GlRenderDeviceStatics.anInt9861
+import GlRenderDeviceStatics.anInt9862
+import GlRenderDeviceStatics.anInt9863
+import GlRenderDeviceStatics.anInt9864
+import GlRenderDeviceStatics.anInt9865
+import GlRenderDeviceStatics.anInt9866
+import GlRenderDeviceStatics.anInt9867
+import GlRenderDeviceStatics.anInt9868
+import GlRenderDeviceStatics.anInt9870
+import GlRenderDeviceStatics.anInt9871
+import GlRenderDeviceStatics.anInt9872
+import GlRenderDeviceStatics.anInt9873
+import GlRenderDeviceStatics.anInt9874
+import GlRenderDeviceStatics.anInt9875
+import GlRenderDeviceStatics.anInt9876
+import GlRenderDeviceStatics.anInt9877
+import GlRenderDeviceStatics.anInt9878
+import GlRenderDeviceStatics.anInt9879
+import GlRenderDeviceStatics.anInt9880
+import GlRenderDeviceStatics.anInt9881
+import GlRenderDeviceStatics.anInt9882
+import GlRenderDeviceStatics.anInt9883
+import GlRenderDeviceStatics.anInt9884
+import GlRenderDeviceStatics.anInt9885
+import GlRenderDeviceStatics.anInt9886
+import GlRenderDeviceStatics.anInt9887
+import GlRenderDeviceStatics.anInt9888
+import GlRenderDeviceStatics.anInt9889
+import GlRenderDeviceStatics.anInt9890
+import GlRenderDeviceStatics.anInt9891
+import GlRenderDeviceStatics.anInt9892
+import GlRenderDeviceStatics.anInt9893
+import GlRenderDeviceStatics.anInt9894
+import GlRenderDeviceStatics.anInt9895
+import GlRenderDeviceStatics.anInt9896
+import GlRenderDeviceStatics.anInt9897
+import GlRenderDeviceStatics.anInt9898
+import GlRenderDeviceStatics.anInt9900
+import jaclib.memory.StreamStatics
 
 /*
  * Class377
@@ -115,53 +200,53 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         i = i and 0x7fffffff
         while (!aNodeDeque_9899!!.method2002(18.toByte())) {
             val class348_sub35 = aNodeDeque_9899!!.method1997(8) as IntKeyNode?
-            LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
+            LinkedNodeListIteratorStatics.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt8063 -= class348_sub35.anInt6976
             if (i_0_ == 1000) {
-                glDeleteBuffersARB(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+                glDeleteBuffersARB(i_0_, LinkedNodeListIteratorStatics.anIntArray1650, 0)
                 i_0_ = 0
             }
         }
         if (i_0_ > 0) {
-            glDeleteBuffersARB(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+            glDeleteBuffersARB(i_0_, LinkedNodeListIteratorStatics.anIntArray1650, 0)
             i_0_ = 0
         }
         while (!aNodeDeque_9901.method2002(18.toByte())) {
             val class348_sub35 = aNodeDeque_9901.method1997(8) as IntKeyNode?
-            LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
+            LinkedNodeListIteratorStatics.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt8062 -= class348_sub35.anInt6976
             if (i_0_ == 1000) {
-                glDeleteTextures(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+                glDeleteTextures(i_0_, LinkedNodeListIteratorStatics.anIntArray1650, 0)
                 i_0_ = 0
             }
         }
         if (i_0_ > 0) {
-            glDeleteTextures(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+            glDeleteTextures(i_0_, LinkedNodeListIteratorStatics.anIntArray1650, 0)
             i_0_ = 0
         }
         while (!aNodeDeque_9902!!.method2002(18.toByte())) {
             val class348_sub35 = aNodeDeque_9902!!.method1997(8) as IntKeyNode?
-            LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.anInt6976
+            LinkedNodeListIteratorStatics.anIntArray1650!![i_0_++] = class348_sub35!!.anInt6976
             if (i_0_ == 1000) {
-                glDeleteFramebuffersEXT(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+                glDeleteFramebuffersEXT(i_0_, LinkedNodeListIteratorStatics.anIntArray1650, 0)
                 i_0_ = 0
             }
         }
         if (i_0_ > 0) {
-            glDeleteFramebuffersEXT(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+            glDeleteFramebuffersEXT(i_0_, LinkedNodeListIteratorStatics.anIntArray1650, 0)
             i_0_ = 0
         }
         while (!aNodeDeque_9903!!.method2002(18.toByte())) {
             val class348_sub35 = aNodeDeque_9903!!.method1997(8) as IntKeyNode?
-            LinkedNodeListIterator.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
+            LinkedNodeListIteratorStatics.anIntArray1650!![i_0_++] = class348_sub35!!.aLong4291.toInt()
             this.anInt8079 -= class348_sub35.anInt6976
             if (i_0_ == 1000) {
-                glDeleteRenderbuffersEXT(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+                glDeleteRenderbuffersEXT(i_0_, LinkedNodeListIteratorStatics.anIntArray1650, 0)
                 i_0_ = 0
             }
         }
         if (i_0_ > 0) {
-            glDeleteRenderbuffersEXT(i_0_, LinkedNodeListIterator.anIntArray1650, 0)
+            glDeleteRenderbuffersEXT(i_0_, LinkedNodeListIteratorStatics.anIntArray1650, 0)
             val bool = false
         }
         while (!aNodeDeque_9869.method2002(18.toByte())) {
@@ -199,7 +284,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9875++
             return FrameStatsReset(directionPaths)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.KD(" + i + ',' + (if (directionPaths != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.KD(" + i + ',' + (if (directionPaths != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -223,7 +308,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 if (!anOpenGL9856!!.setSurface(var_long)) throw RuntimeException()
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.UB(" + (if (`object` != null) "{...}" else "null") + ',' + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.UB(" + (if (`object` != null) "{...}" else "null") + ',' + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -236,12 +321,12 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         try {
             anInt9852++
             if (bool_2_ == false) {
-                glTexEnvi(8960, i + 34176, MapSceneTile.method531(101.toByte(), trigLookupTables))
+                glTexEnvi(8960, i + 34176, MapSceneTileStatics.method531(101.toByte(), trigLookupTables))
                 if (bool) glTexEnvi(8960, i + 34192, if (!bool_3_) 770 else 771)
                 else glTexEnvi(8960, i + 34192, if (!bool_3_) 768 else 769)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.DD(" + bool + ',' + bool_2_ + ',' + i + ',' + (if (trigLookupTables != null) "{...}" else "null") + ',' + bool_3_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.DD(" + bool + ',' + bool_2_ + ',' + i + ',' + (if (trigLookupTables != null) "{...}" else "null") + ',' + bool_3_ + ')'))
         }
     }
 
@@ -251,7 +336,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val i_4_ = -21 / ((85 - i) / 37)
             return true
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.FB(" + (if (movementDirection != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.FB(" + (if (movementDirection != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -277,7 +362,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             linkedListNode.aLong4291 = l
             if (i == 34192) aNodeDeque_9905!!.method1999(linkedListNode, i xor 0xcb43.inv())
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "bga.N(" + l + ',' + i + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "bga.N(" + l + ',' + i + ')')
         }
     }
 
@@ -288,7 +373,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
 
     override fun method3935(i: Int) {
         anInt9861++
-        glTexEnvi(8960, 34162, TerrainShadowBuilderGl2.method3021(32.toByte(), (this.aRenderConfigFactoryArray8092[(this.anInt8175)])))
+        glTexEnvi(8960, 34162, TerrainShadowBuilderGl2Statics.method3021(32.toByte(), (this.aRenderConfigFactoryArray8092[(this.anInt8175)])))
         if (i >= -99) method3658(-123, -102, -33, -112)
     }
 
@@ -298,7 +383,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9832++
             return Gl3dTexture(this, textureFormatInfo, i_6_, i_7_, i, `is`)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.ND(" + i + ',' + i_6_ + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + bool + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.ND(" + i + ',' + i_6_ + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + bool + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -317,27 +402,27 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     }
 
     override fun method3928(i: Int) {
-        TextureLoadException.aFloatArray4602!![0] = this.aFloat8180 * this.aFloat8093
+        TextureLoadExceptionStatics.aFloatArray4602!![0] = this.aFloat8180 * this.aFloat8093
         anInt9864++
-        TextureLoadException.aFloatArray4602!![2] = this.aFloat8093 * this.aFloat8168
-        TextureLoadException.aFloatArray4602!![1] = this.aFloat8087 * this.aFloat8093
-        TextureLoadException.aFloatArray4602!![3] = 1.0f
-        glLightModelfv(2899, TextureLoadException.aFloatArray4602, i)
+        TextureLoadExceptionStatics.aFloatArray4602!![2] = this.aFloat8093 * this.aFloat8168
+        TextureLoadExceptionStatics.aFloatArray4602!![1] = this.aFloat8087 * this.aFloat8093
+        TextureLoadExceptionStatics.aFloatArray4602!![3] = 1.0f
+        glLightModelfv(2899, TextureLoadExceptionStatics.aFloatArray4602, i)
     }
 
     override fun method3843(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, `is`: ByteArray?, textureFormatInfo: TextureFormatInfo?, i_14_: Int, bool: Boolean): Renderable2dTexture {
         try {
             anInt9846++
             if (i_14_ != 32) anOpenGL9856 = null
-            if (!aBoolean9926 && (!AsyncTaskHandle.method1436(i_14_ xor 0x46, i_12_) || !AsyncTaskHandle.method1436(i_14_ + 83, i))) {
+            if (!aBoolean9926 && (!AsyncTaskHandleStatics.method1436(i_14_ xor 0x46, i_12_) || !AsyncTaskHandleStatics.method1436(i_14_ + 83, i))) {
                 if (aBoolean9919) return GlRectangleTexture(this, textureFormatInfo, i_12_, i, `is`, i_11_, i_13_)
-                val class14_sub1 = Gl2dTexture(this, textureFormatInfo, MovementDirection.aMovementDirection_1183, CacheArchiveIndexLoader.method340(i_12_, 108.toByte()), CacheArchiveIndexLoader.method340(i, 108.toByte()))
+                val class14_sub1 = Gl2dTexture(this, textureFormatInfo, MovementDirectionStatics.aMovementDirection_1183, CacheArchiveIndexLoaderStatics.method340(i_12_, 108.toByte()), CacheArchiveIndexLoaderStatics.method340(i, 108.toByte()))
                 class14_sub1.method70(0, i_11_, (-45).toByte(), i_13_, i, i_12_, 0, `is`, textureFormatInfo)
                 return class14_sub1
             }
             return Gl2dTexture(this, textureFormatInfo, i_12_, i, bool, `is`, i_11_, i_13_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.B(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_14_ + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.B(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_14_ + ',' + bool + ')'))
         }
     }
 
@@ -349,12 +434,12 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         try {
             if (i == 0) {
                 anInt9836++
-                if (cameraNodeList == ModelDefinitionLoader.aCameraNodeList_2047) {
+                if (cameraNodeList == ModelDefinitionLoaderStatics.aCameraNodeList_2047) {
                     glDisable(3168)
                     glDisable(3169)
                     glDisable(3170)
                 } else {
-                    val i_16_ = GroundDecorEntity.method2411(cameraNodeList, 25602)
+                    val i_16_ = GroundDecorEntityStatics.method2411(cameraNodeList, 25602)
                     glTexGeni(8192, 9472, i_16_)
                     glEnable(3168)
                     glTexGeni(8193, 9472, i_16_)
@@ -364,7 +449,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.CD(" + (if (cameraNodeList != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.CD(" + (if (cameraNodeList != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -378,7 +463,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     override fun method3940(i: Int) {
         glMatrixMode(5890)
         anInt9888++
-        if (ParticleEmitterListNode.aConfigFlagUtil_9685 != this.aConfigFlagUtilArray8113[this.anInt8175]) glLoadMatrixf(this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(ParticleSortRenderer.aFloatArray3015!!, 0), 0)
+        if (ParticleEmitterListNodeStatics.aConfigFlagUtil_9685 != this.aConfigFlagUtilArray8113[this.anInt8175]) glLoadMatrixf(this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(ParticleSortRendererStatics.aFloatArray3015!!, 0), 0)
         else glLoadIdentity()
         if (i != 1) method3862(37, null)
         glMatrixMode(5888)
@@ -390,14 +475,14 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val i_18_ = 86 / ((i - -26) / 39)
             aClass285_Sub1Array9907!![i_17_] = (interface5_impl1 as GlVertexBufferArb?)!!
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.WB(" + i + ',' + (if (interface5_impl1 != null) "{...}" else "null") + ',' + i_17_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.WB(" + i + ',' + (if (interface5_impl1 != null) "{...}" else "null") + ',' + i_17_ + ')'))
         }
     }
 
     override fun method3920(i: Int) {
         anInt9862++
         if (i != 10) method3911(null, 34, null)
-        glTexEnvi(8960, 34161, TerrainShadowBuilderGl2.method3021(32.toByte(), (this.aRenderConfigFactoryArray8086[(this.anInt8175)])))
+        glTexEnvi(8960, 34161, TerrainShadowBuilderGl2Statics.method3021(32.toByte(), (this.aRenderConfigFactoryArray8086[(this.anInt8175)])))
     }
 
     override fun method3665(i: Int, i_19_: Int): CameraMarker? {
@@ -467,7 +552,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9897++
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.NB(" + (if (cameraMarker != null) "{...}" else "null") + ',' + (if (marker != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.NB(" + (if (cameraMarker != null) "{...}" else "null") + ',' + (if (marker != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -479,7 +564,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             if (l == -1L) throw RuntimeException()
             return l
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.MC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.MC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -498,7 +583,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             if (f < 0.5f) return circleRasterizer
             return circleRasterizer_24_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.SD(" + (if (circleRasterizer != null) "{...}" else "null") + ',' + (if (circleRasterizer_24_ != null) "{...}" else "null") + ',' + f + ',' + (if (circleRasterizer_25_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.SD(" + (if (circleRasterizer != null) "{...}" else "null") + ',' + (if (circleRasterizer_24_ != null) "{...}" else "null") + ',' + f + ',' + (if (circleRasterizer_25_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -512,18 +597,18 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     }
 
     override fun method3842(bool: Boolean) {
-        TextureLoadException.aFloatArray4602!![2] = this.aFloat8168 * this.aFloat8174
-        TextureLoadException.aFloatArray4602!![3] = 1.0f
-        TextureLoadException.aFloatArray4602!![0] = this.aFloat8180 * this.aFloat8174
+        TextureLoadExceptionStatics.aFloatArray4602!![2] = this.aFloat8168 * this.aFloat8174
+        TextureLoadExceptionStatics.aFloatArray4602!![3] = 1.0f
+        TextureLoadExceptionStatics.aFloatArray4602!![0] = this.aFloat8180 * this.aFloat8174
         anInt9825++
-        TextureLoadException.aFloatArray4602!![1] = this.aFloat8087 * this.aFloat8174
-        glLightfv(16384, 4609, TextureLoadException.aFloatArray4602, 0)
-        TextureLoadException.aFloatArray4602!![0] = this.aFloat8180 * -this.aFloat8186
-        TextureLoadException.aFloatArray4602!![2] = -this.aFloat8186 * this.aFloat8168
+        TextureLoadExceptionStatics.aFloatArray4602!![1] = this.aFloat8087 * this.aFloat8174
+        glLightfv(16384, 4609, TextureLoadExceptionStatics.aFloatArray4602, 0)
+        TextureLoadExceptionStatics.aFloatArray4602!![0] = this.aFloat8180 * -this.aFloat8186
+        TextureLoadExceptionStatics.aFloatArray4602!![2] = -this.aFloat8186 * this.aFloat8168
         if (bool == true) {
-            TextureLoadException.aFloatArray4602!![3] = 1.0f
-            TextureLoadException.aFloatArray4602!![1] = -this.aFloat8186 * this.aFloat8087
-            glLightfv(16385, 4609, TextureLoadException.aFloatArray4602, 0)
+            TextureLoadExceptionStatics.aFloatArray4602!![3] = 1.0f
+            TextureLoadExceptionStatics.aFloatArray4602!![1] = -this.aFloat8186 * this.aFloat8087
+            glLightfv(16385, 4609, TextureLoadExceptionStatics.aFloatArray4602, 0)
         }
     }
 
@@ -533,21 +618,21 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         if (i != 1) method3950(69)
         if (this.aSingletonMarker_8184.method1450(-98)) {
             if (!aBoolean9914) {
-                glLoadMatrixf(this.aClass101_Sub2_8083.method918(ParticleSortRenderer.aFloatArray3015!!, 0), 0)
+                glLoadMatrixf(this.aClass101_Sub2_8083.method918(ParticleSortRendererStatics.aFloatArray3015!!, 0), 0)
                 aBoolean9914 = true
                 method3892(0)
                 method3823((-104).toByte())
             }
             if (!this.aBoolean8069) {
                 glPushMatrix()
-                glMultMatrixf(this.aClass101_Sub2_8074.method918(ParticleSortRenderer.aFloatArray3015!!, i xor 0x1), 0)
+                glMultMatrixf(this.aClass101_Sub2_8074.method918(ParticleSortRendererStatics.aFloatArray3015!!, i xor 0x1), 0)
                 aBoolean9911 = true
             } else aBoolean9911 = false
         } else if (this.aBoolean8069) {
             glLoadIdentity()
             aBoolean9911 = false
         } else {
-            glLoadMatrixf(this.aClass101_Sub2_8074.method918(ParticleSortRenderer.aFloatArray3015!!, 0), 0)
+            glLoadMatrixf(this.aClass101_Sub2_8074.method918(ParticleSortRendererStatics.aFloatArray3015!!, 0), 0)
             aBoolean9911 = false
         }
     }
@@ -570,10 +655,10 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         if (this.aFloat8173 < this.anInt8095.toFloat()) this.aFloat8173 = this.anInt8095.toFloat()
         glFogf(2915, this.aFloat8173)
         glFogf(2916, this.aFloat8115)
-        TextureLoadException.aFloatArray4602!![2] = (NpcSummaryDefinition.method1166(this.anInt8144, 255).toFloat() / 255.0f)
-        TextureLoadException.aFloatArray4602!![0] = (NpcSummaryDefinition.method1166(16711680, this.anInt8144).toFloat() / 1.671168E7f)
-        TextureLoadException.aFloatArray4602!![1] = (NpcSummaryDefinition.method1166(65280, this.anInt8144).toFloat() / 65280.0f)
-        glFogfv(2918, TextureLoadException.aFloatArray4602, 0)
+        TextureLoadExceptionStatics.aFloatArray4602!![2] = (NpcSummaryDefinitionStatics.method1166(this.anInt8144, 255).toFloat() / 255.0f)
+        TextureLoadExceptionStatics.aFloatArray4602!![0] = (NpcSummaryDefinitionStatics.method1166(16711680, this.anInt8144).toFloat() / 1.671168E7f)
+        TextureLoadExceptionStatics.aFloatArray4602!![1] = (NpcSummaryDefinitionStatics.method1166(65280, this.anInt8144).toFloat() / 65280.0f)
+        glFogfv(2918, TextureLoadExceptionStatics.aFloatArray4602, 0)
     }
 
     override fun method3671(): Boolean {
@@ -615,11 +700,11 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 aString9916 = glGetString(7937).lowercase(Locale.getDefault())
                 if (aString9917.indexOf("microsoft") != -1 || aString9917.indexOf("brian paul") != -1 || aString9917.indexOf("mesa") != -1) throw RuntimeException("")
                 val string = glGetString(7938)
-                val strings = TurbulenceTextureNode.method3113(' ', true, string.replace('.', ' '))
+                val strings = TurbulenceTextureNodeStatics.method3113(' ', true, string.replace('.', ' '))
                 if (strings.size < 2) throw RuntimeException("")
                 try {
-                    val i_32_ = RegionSceneShifter.method3156(true, strings!![0]!!)
-                    val i_33_ = RegionSceneShifter.method3156(true, strings!![1]!!)
+                    val i_32_ = RegionSceneShifterStatics.method3156(true, strings!![0]!!)
+                    val i_33_ = RegionSceneShifterStatics.method3156(true, strings!![1]!!)
                     anInt9924 = i_32_ * 10 - -i_33_
                 } catch (numberformatexception: NumberFormatException) {
                     throw RuntimeException("")
@@ -643,18 +728,18 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 this.aBoolean9922 = anOpenGL9856!!.a("GL_ARB_fragment_shader")
                 anOpenGL9856!!.a("GL_ARB_fragment_program")
                 this.anIntArray9927 = IntArray(this.anInt8090)
-                this.anInt9918 = if (Stream.c()) 33639 else 5121
+                this.anInt9918 = if (StreamStatics.c()) 33639 else 5121
                 if (aString9916!!.indexOf("radeon") != -1) {
                     var i_34_ = 0
                     var bool = false
                     var bool_35_ = false
-                    val strings_36_ = (TurbulenceTextureNode.method3113(' ', true, aString9916!!.replace('/', ' ')))
+                    val strings_36_ = (TurbulenceTextureNodeStatics.method3113(' ', true, aString9916!!.replace('/', ' ')))
                     var i_37_ = 0
                     while ((i_37_ < strings_36_.size)) {
                         var string_38_ = strings_36_[i_37_]!!
                         try {
                             if (string_38_.length > 0) {
-                                if (string_38_.get(0) == 'x' && string_38_.length >= 3 && (MinimapPolygonDrawer.method468(string_38_.substring(1, 3), -115))) {
+                                if (string_38_.get(0) == 'x' && string_38_.length >= 3 && (MinimapPolygonDrawerStatics.method468(string_38_.substring(1, 3), -115))) {
                                     bool_35_ = true
                                     string_38_ = string_38_.substring(1)
                                 }
@@ -664,8 +749,8 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                                         bool = true
                                         string_38_ = string_38_.substring(2)
                                     }
-                                    if (string_38_.length >= 4 && (MinimapPolygonDrawer.method468(string_38_.substring(0, 4), 92))) {
-                                        i_34_ = (RegionSceneShifter.method3156(true, string_38_.substring(0, 4)))
+                                    if (string_38_.length >= 4 && (MinimapPolygonDrawerStatics.method468(string_38_.substring(0, 4), 92))) {
+                                        i_34_ = (RegionSceneShifterStatics.method3156(true, string_38_.substring(0, 4)))
                                         break
                                     }
                                 }
@@ -696,7 +781,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 throw RuntimeException("")
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.<init>(" + (if (opengl != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + l + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.<init>(" + (if (opengl != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + l + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -709,16 +794,16 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             if (TileTransform.aCameraRotationStub_3217 == cameraRotationStub) {
                 i_44_ = 1
                 i_45_ = i * 2
-            } else if (cameraRotationStub == GlBloomEffect.aCameraRotationStub_8832) {
+            } else if (cameraRotationStub == GlBloomEffectStatics.aCameraRotationStub_8832) {
                 i_45_ = 1 + i
                 i_44_ = 3
             } else if (cameraRotationStub == VideoAdChecker.aCameraRotationStub_3181) {
                 i_44_ = 4
                 i_45_ = i * 3
-            } else if (AsyncResourceRequest.aCameraRotationStub_9661 == cameraRotationStub) {
+            } else if (AsyncResourceRequestStatics.aCameraRotationStub_9661 == cameraRotationStub) {
                 i_44_ = 6
                 i_45_ = 2 + i
-            } else if (cameraRotationStub == NativeTerrainTile.aCameraRotationStub_8320) {
+            } else if (cameraRotationStub == NativeTerrainTileStatics.aCameraRotationStub_8320) {
                 i_45_ = 2 + i
                 i_44_ = 5
             } else {
@@ -728,9 +813,9 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val class68 = interface5_impl2!!.method25(51.toByte())
             val class285_sub2 = interface5_impl2 as GlIndexBufferArb
             class285_sub2.method2125(0)
-            glDrawElements(i_44_, i_45_, ModelBatchBase.method1128(-20, class68), (class285_sub2.method2122(27819) + (i_41_ * (class68!!.anInt1178)).toLong()))
+            glDrawElements(i_44_, i_45_, ModelBatchBaseStatics.method1128(-20, class68), (class285_sub2.method2122(27819) + (i_41_ * (class68!!.anInt1178)).toLong()))
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.JC(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + (if (interface5_impl2 != null) "{...}" else "null") + ',' + i_40_ + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.JC(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + (if (interface5_impl2 != null) "{...}" else "null") + ',' + i_40_ + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ')'))
         }
     }
 
@@ -745,16 +830,16 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val i_48_ = class348_sub1.method2720(-1)
             val i_49_ = i_47_ + 16386
             val f = class348_sub1.method2721(-37) / 255.0f
-            TextureLoadException.aFloatArray4602!![0] = class348_sub1.method2724(-1).toFloat()
-            TextureLoadException.aFloatArray4602!![1] = class348_sub1.method2722(124).toFloat()
-            TextureLoadException.aFloatArray4602!![2] = class348_sub1.method2717(111.toByte()).toFloat()
-            TextureLoadException.aFloatArray4602!![3] = 1.0f
-            glLightfv(i_49_, 4611, TextureLoadException.aFloatArray4602, 0)
-            TextureLoadException.aFloatArray4602!![2] = NpcSummaryDefinition.method1166(255, i_48_).toFloat() * f
-            TextureLoadException.aFloatArray4602!![1] = f * (NpcSummaryDefinition.method1166(i_48_, 65338) shr 8).toFloat()
-            TextureLoadException.aFloatArray4602!![0] = NpcSummaryDefinition.method1166(255, i_48_ shr 16).toFloat() * f
-            TextureLoadException.aFloatArray4602!![3] = 1.0f
-            glLightfv(i_49_, 4609, TextureLoadException.aFloatArray4602, 0)
+            TextureLoadExceptionStatics.aFloatArray4602!![0] = class348_sub1.method2724(-1).toFloat()
+            TextureLoadExceptionStatics.aFloatArray4602!![1] = class348_sub1.method2722(124).toFloat()
+            TextureLoadExceptionStatics.aFloatArray4602!![2] = class348_sub1.method2717(111.toByte()).toFloat()
+            TextureLoadExceptionStatics.aFloatArray4602!![3] = 1.0f
+            glLightfv(i_49_, 4611, TextureLoadExceptionStatics.aFloatArray4602, 0)
+            TextureLoadExceptionStatics.aFloatArray4602!![2] = NpcSummaryDefinitionStatics.method1166(255, i_48_).toFloat() * f
+            TextureLoadExceptionStatics.aFloatArray4602!![1] = f * (NpcSummaryDefinitionStatics.method1166(i_48_, 65338) shr 8).toFloat()
+            TextureLoadExceptionStatics.aFloatArray4602!![0] = NpcSummaryDefinitionStatics.method1166(255, i_48_ shr 16).toFloat() * f
+            TextureLoadExceptionStatics.aFloatArray4602!![3] = 1.0f
+            glLightfv(i_49_, 4609, TextureLoadExceptionStatics.aFloatArray4602, 0)
             glLightf(i_49_, 4617, 1.0f / (class348_sub1.method2723(-1) * class348_sub1.method2723(-1)).toFloat())
             glEnable(i_49_)
             i_47_++
@@ -773,7 +858,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val var_long = `object` as Long
             anOpenGL9856!!.surfaceResized(var_long)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.FC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.FC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -788,7 +873,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9855++
             return true
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.RA(" + bool + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.RA(" + bool + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -801,16 +886,16 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             if (cameraRotationStub == TileTransform.aCameraRotationStub_3217) {
                 i_51_ = 2 * i
                 i_52_ = 1
-            } else if (GlBloomEffect.aCameraRotationStub_8832 == cameraRotationStub) {
+            } else if (GlBloomEffectStatics.aCameraRotationStub_8832 == cameraRotationStub) {
                 i_51_ = i - -1
                 i_52_ = 3
             } else if (VideoAdChecker.aCameraRotationStub_3181 == cameraRotationStub) {
                 i_52_ = 4
                 i_51_ = i * 3
-            } else if (cameraRotationStub == AsyncResourceRequest.aCameraRotationStub_9661) {
+            } else if (cameraRotationStub == AsyncResourceRequestStatics.aCameraRotationStub_9661) {
                 i_52_ = 6
                 i_51_ = 2 + i
-            } else if (NativeTerrainTile.aCameraRotationStub_8320 == cameraRotationStub) {
+            } else if (NativeTerrainTileStatics.aCameraRotationStub_8320 == cameraRotationStub) {
                 i_51_ = 2 + i
                 i_52_ = 5
             } else {
@@ -819,7 +904,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             }
             glDrawArrays(i_52_, i_50_, i_51_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.V(" + i + ',' + i_50_ + ',' + (if (cameraRotationStub != null) "{...}" else "null") + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.V(" + i + ',' + i_50_ + ',' + (if (cameraRotationStub != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
@@ -829,22 +914,22 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9883++
             return GlCubeMapTexture(this, i_53_, bool, `is`)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.HB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_53_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.HB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_53_ + ')'))
         }
     }
 
     override fun method3855(textureFormatInfo: TextureFormatInfo?, i: Int, i_54_: Int, fs: FloatArray?, bool: Boolean, i_55_: Int, i_56_: Int, i_57_: Int): Renderable2dTexture {
         try {
             anInt9890++
-            if (!aBoolean9926 && (!AsyncTaskHandle.method1436(60, i) || !AsyncTaskHandle.method1436(-73, i_57_))) {
+            if (!aBoolean9926 && (!AsyncTaskHandleStatics.method1436(60, i) || !AsyncTaskHandleStatics.method1436(-73, i_57_))) {
                 if (aBoolean9919) return GlRectangleTexture(this, textureFormatInfo, i, i_57_, fs, i_54_, i_55_)
-                val class14_sub1 = Gl2dTexture(this, textureFormatInfo, MovementDirection.aMovementDirection_1187, CacheArchiveIndexLoader.method340(i, 108.toByte()), CacheArchiveIndexLoader.method340(i_57_, 108.toByte()))
+                val class14_sub1 = Gl2dTexture(this, textureFormatInfo, MovementDirectionStatics.aMovementDirection_1187, CacheArchiveIndexLoaderStatics.method340(i, 108.toByte()), CacheArchiveIndexLoaderStatics.method340(i_57_, 108.toByte()))
                 class14_sub1.method240(i_55_, (-126).toByte(), fs, textureFormatInfo, 0, i_54_, 0, i, i_57_)
                 return class14_sub1
             }
             return Gl2dTexture(this, textureFormatInfo, i, i_57_, bool, fs, i_54_, i_55_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.WC(" + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_54_ + ',' + (if (fs != null) "{...}" else "null") + ',' + bool + ',' + i_55_ + ',' + i_56_ + ',' + i_57_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.WC(" + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_54_ + ',' + (if (fs != null) "{...}" else "null") + ',' + bool + ',' + i_55_ + ',' + i_56_ + ',' + i_57_ + ')'))
         }
     }
 
@@ -876,15 +961,15 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         try {
             val i_64_ = 101 / ((i_60_ - -21) / 46)
             anInt9830++
-            if (aBoolean9926 || AsyncTaskHandle.method1436(103, i) && AsyncTaskHandle.method1436(-53, i_63_)) return Gl2dTexture(this, i, i_63_, bool, `is`, i_61_, i_62_)
+            if (aBoolean9926 || AsyncTaskHandleStatics.method1436(103, i) && AsyncTaskHandleStatics.method1436(-53, i_63_)) return Gl2dTexture(this, i, i_63_, bool, `is`, i_61_, i_62_)
             if (!aBoolean9919) {
-                val class14_sub1 = Gl2dTexture(this, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirection.aMovementDirection_1183, CacheArchiveIndexLoader.method340(i, 108.toByte()), CacheArchiveIndexLoader.method340(i_63_, 108.toByte()))
+                val class14_sub1 = Gl2dTexture(this, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirectionStatics.aMovementDirection_1183, CacheArchiveIndexLoaderStatics.method340(i, 108.toByte()), CacheArchiveIndexLoaderStatics.method340(i_63_, 108.toByte()))
                 class14_sub1.method68(i_62_, 22809, `is`, 0, i_61_, i, 0, i_63_)
                 return class14_sub1
             }
             return GlRectangleTexture(this, i, i_63_, `is`, i_61_, i_62_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.R(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_60_ + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.R(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i_60_ + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ')'))
         }
     }
 
@@ -957,12 +1042,12 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     override fun method3829(trigLookupTables: TrigLookupTables?, i: Int, i_71_: Byte, bool: Boolean) {
         try {
             if (i_71_.toInt() == 80) {
-                glTexEnvi(8960, i + 34184, MapSceneTile.method531(123.toByte(), trigLookupTables))
+                glTexEnvi(8960, i + 34184, MapSceneTileStatics.method531(123.toByte(), trigLookupTables))
                 anInt9885++
                 glTexEnvi(8960, 34200 + i, if (bool) 771 else 770)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.AD(" + (if (trigLookupTables != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.AD(" + (if (trigLookupTables != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ',' + bool + ')'))
         }
     }
 
@@ -972,7 +1057,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9823++
             method3626(i_72_, i_73_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.UA(" + (if (rectangles != null) "{...}" else "null") + ',' + i + ',' + i_72_ + ',' + i_73_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.UA(" + (if (rectangles != null) "{...}" else "null") + ',' + i + ',' + i_72_ + ',' + i_73_ + ')'))
         }
     }
 
@@ -994,25 +1079,25 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 var i_80_ = 0
                 while ((i_80_ < class58.method538((-119).toByte()))) {
                     val class325 = class58.method537(i_80_, -119)!!
-                    if (class325 == SpriteMaskShape.aSpriteMaskShape_4073) {
+                    if (class325 == SpriteMaskShapeStatics.aSpriteMaskShape_4073) {
                         glVertexPointer(3, 5126, i_79_, i_78_.toLong() + l)
                         bool_76_ = true
-                    } else if (SpriteMaskShape.aSpriteMaskShape_4075 == class325) {
+                    } else if (SpriteMaskShapeStatics.aSpriteMaskShape_4075 == class325) {
                         bool_75_ = true
                         glNormalPointer(5126, i_79_, i_78_.toLong() + l)
-                    } else if (class325 == SpriteMaskShape.aSpriteMaskShape_4076) {
+                    } else if (class325 == SpriteMaskShapeStatics.aSpriteMaskShape_4076) {
                         glColorPointer(4, 5121, i_79_, i_78_.toLong() + l)
                         bool = true
-                    } else if (SpriteMaskShape.aSpriteMaskShape_4077 == class325) {
+                    } else if (SpriteMaskShapeStatics.aSpriteMaskShape_4077 == class325) {
                         glClientActiveTexture(33984 + i_74_++)
                         glTexCoordPointer(1, 5126, i_79_, i_78_.toLong() + l)
-                    } else if (SpriteMaskShape.aSpriteMaskShape_4078 == class325) {
+                    } else if (SpriteMaskShapeStatics.aSpriteMaskShape_4078 == class325) {
                         glClientActiveTexture(i_74_++ + 33984)
                         glTexCoordPointer(2, 5126, i_79_, i_78_.toLong() + l)
-                    } else if (SpriteMaskShape.aSpriteMaskShape_4079 == class325) {
+                    } else if (SpriteMaskShapeStatics.aSpriteMaskShape_4079 == class325) {
                         glClientActiveTexture(i_74_++ + 33984)
                         glTexCoordPointer(3, 5126, i_79_, i_78_.toLong() + l)
-                    } else if (class325 == SpriteMaskShape.aSpriteMaskShape_4080) {
+                    } else if (class325 == SpriteMaskShapeStatics.aSpriteMaskShape_4080) {
                         glClientActiveTexture(33984 - -i_74_++)
                         glTexCoordPointer(4, 5126, i_79_, l + i_78_.toLong())
                     }
@@ -1053,7 +1138,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 anInt9909 = i_74_
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.KC(" + i + ',' + (if (modelBatchBase != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.KC(" + i + ',' + (if (modelBatchBase != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1064,7 +1149,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     override fun method3840(i: Int, bool: Boolean): IndexBufferResource? {
         anInt9826++
         if (i != -28633) return null
-        return GlIndexBufferArb(this, MovementDirection.aMovementDirection_1184, bool)
+        return GlIndexBufferArb(this, MovementDirectionStatics.aMovementDirection_1184, bool)
     }
 
     override fun I(): Int {
@@ -1096,18 +1181,18 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             if (i != 1) this.anInt9918 = -120
             anOpenGL9856!!.releaseSurface(canvas, var_long)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.QD(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + (if (`object` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.QD(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + (if (`object` != null) "{...}" else "null") + ')'))
         }
     }
 
     override fun method3945(i: Int) {
-        TextureLoadException.aFloatArray4602!![1] = (NpcSummaryDefinition.method1166(65280, this.anInt8119).toFloat() / 65280.0f)
-        TextureLoadException.aFloatArray4602!![2] = (NpcSummaryDefinition.method1166(255, this.anInt8119).toFloat() / 255.0f)
-        TextureLoadException.aFloatArray4602!![3] = (this.anInt8119 ushr 24).toFloat() / 255.0f
+        TextureLoadExceptionStatics.aFloatArray4602!![1] = (NpcSummaryDefinitionStatics.method1166(65280, this.anInt8119).toFloat() / 65280.0f)
+        TextureLoadExceptionStatics.aFloatArray4602!![2] = (NpcSummaryDefinitionStatics.method1166(255, this.anInt8119).toFloat() / 255.0f)
+        TextureLoadExceptionStatics.aFloatArray4602!![3] = (this.anInt8119 ushr 24).toFloat() / 255.0f
         anInt9889++
-        TextureLoadException.aFloatArray4602!![0] = (NpcSummaryDefinition.method1166(16711680, this.anInt8119).toFloat() / 1.671168E7f)
+        TextureLoadExceptionStatics.aFloatArray4602!![0] = (NpcSummaryDefinitionStatics.method1166(16711680, this.anInt8119).toFloat() / 1.671168E7f)
         if (i >= -107) anInt9909 = -64
-        glTexEnvfv(8960, 8705, TextureLoadException.aFloatArray4602, 0)
+        glTexEnvfv(8960, 8705, TextureLoadExceptionStatics.aFloatArray4602, 0)
     }
 
     override fun method3892(i: Int) {
@@ -1140,11 +1225,11 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         try {
             if (i_88_.toInt() != -84) method3842(false)
             anInt9882++
-            if (aBoolean9926 || (AsyncTaskHandle.method1436(i_88_ + 15, i_89_) && AsyncTaskHandle.method1436(65, i))) return Gl2dTexture(this, textureFormatInfo, movementDirection, i_89_, i)
-            if (!aBoolean9919) return Gl2dTexture(this, textureFormatInfo, movementDirection, CacheArchiveIndexLoader.method340(i_89_, 108.toByte()), CacheArchiveIndexLoader.method340(i, 108.toByte()))
+            if (aBoolean9926 || (AsyncTaskHandleStatics.method1436(i_88_ + 15, i_89_) && AsyncTaskHandleStatics.method1436(65, i))) return Gl2dTexture(this, textureFormatInfo, movementDirection, i_89_, i)
+            if (!aBoolean9919) return Gl2dTexture(this, textureFormatInfo, movementDirection, CacheArchiveIndexLoaderStatics.method340(i_89_, 108.toByte()), CacheArchiveIndexLoaderStatics.method340(i, 108.toByte()))
             return GlRectangleTexture(this, textureFormatInfo, movementDirection, i_89_, i)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bga.NC(" + i + ',' + i_88_ + ',' + i_89_ + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bga.NC(" + i + ',' + i_88_ + ',' + i_89_ + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1164,9 +1249,9 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
 
     override fun method3950(i: Int) {
         anInt9886++
-        if (ClientMachineInfo.aObjectByteSerializerHolder_6602 == this.aObjectByteSerializerHolder_8163) glBlendFunc(770, 771)
-        else if (CollisionFlagQuery.aObjectByteSerializerHolder_1201 == this.aObjectByteSerializerHolder_8163) glBlendFunc(1, 1)
-        else if (BoundsConstraintEntry.aObjectByteSerializerHolder_5169 == this.aObjectByteSerializerHolder_8163) glBlendFunc(774, 1)
+        if (ClientMachineInfoStatics.aObjectByteSerializerHolder_6602 == this.aObjectByteSerializerHolder_8163) glBlendFunc(770, 771)
+        else if (CollisionFlagQueryStatics.aObjectByteSerializerHolder_1201 == this.aObjectByteSerializerHolder_8163) glBlendFunc(1, 1)
+        else if (BoundsConstraintEntryStatics.aObjectByteSerializerHolder_5169 == this.aObjectByteSerializerHolder_8163) glBlendFunc(774, 1)
         if (i != 0) this.anInt9918 = 74
     }
 
@@ -1192,199 +1277,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         try {
             anInt9816++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "bga.IA(" + (if (spriteDrawTarget != null) "{...}" else "null") + ')')
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt9812: Int = 0
-        @JvmField
-        var anInt9813: Int = 0
-        @JvmField
-        var anInt9814: Int = 0
-        @JvmField
-        var anInt9815: Int = 0
-        @JvmField
-        var anInt9816: Int = 0
-        @JvmField
-        var anInt9817: Int = 0
-        @JvmField
-        var anInt9818: Int = 0
-        @JvmField
-        var anInt9819: Int = 0
-        @JvmField
-        var anInt9820: Int = 0
-        @JvmField
-        var anInt9821: Int = 0
-        @JvmField
-        var anInt9822: Int = 0
-        @JvmField
-        var anInt9823: Int = 0
-        @JvmField
-        var anInt9824: Int = 0
-        @JvmField
-        var anInt9825: Int = 0
-        @JvmField
-        var anInt9826: Int = 0
-        @JvmField
-        var anInt9827: Int = 0
-        @JvmField
-        var anInt9828: Int = 0
-        @JvmField
-        var anInt9829: Int = 0
-        @JvmField
-        var anInt9830: Int = 0
-        @JvmField
-        var anInt9831: Int = 0
-        @JvmField
-        var anInt9832: Int = 0
-        @JvmField
-        var anInt9833: Int = 0
-        @JvmField
-        var anInt9834: Int = 0
-        @JvmField
-        var anInt9835: Int = 0
-        @JvmField
-        var anInt9836: Int = 0
-        @JvmField
-        var anInt9837: Int = 0
-        @JvmField
-        var anInt9838: Int = 0
-        @JvmField
-        var anInt9839: Int = 0
-        @JvmField
-        var anInt9840: Int = 0
-        @JvmField
-        var anInt9841: Int = 0
-        @JvmField
-        var anInt9842: Int = 0
-        @JvmField
-        var anInt9843: Int = 0
-        @JvmField
-        var anInt9844: Int = 0
-        @JvmField
-        var anInt9845: Int = 0
-        @JvmField
-        var anInt9846: Int = 0
-        @JvmField
-        var anInt9847: Int = 0
-        @JvmField
-        var anInt9848: Int = 0
-        @JvmField
-        var anInt9849: Int = 0
-        @JvmField
-        var anInt9850: Int = 0
-        @JvmField
-        var anInt9851: Int = 0
-        @JvmField
-        var anInt9852: Int = 0
-        @JvmField
-        var anInt9853: Int = 0
-        @JvmField
-        var anInt9854: Int = 0
-        @JvmField
-        var anInt9855: Int = 0
-        @JvmField
-        var anInt9857: Int = 0
-        @JvmField
-        var anInt9858: Int = 0
-        @JvmField
-        var anInt9859: Int = 0
-        @JvmField
-        var aRectangleRegion_9860: RectangleRegion? = RectangleRegion(15, 0, 1, 0)
-        @JvmField
-        var anInt9861: Int = 0
-        @JvmField
-        var anInt9862: Int = 0
-        @JvmField
-        var anInt9863: Int = 0
-        @JvmField
-        var anInt9864: Int = 0
-        @JvmField
-        var anInt9865: Int = 0
-        @JvmField
-        var anInt9866: Int = 0
-        @JvmField
-        var anInt9867: Int = 0
-        @JvmField
-        var anInt9868: Int = 0
-        @JvmField
-        var anInt9870: Int = 0
-        @JvmField
-        var anInt9871: Int = 0
-        @JvmField
-        var anInt9872: Int = 0
-        @JvmField
-        var anInt9873: Int = 0
-        @JvmField
-        var anInt9874: Int = 0
-        @JvmField
-        var anInt9875: Int = 0
-        @JvmField
-        var anInt9876: Int = 0
-        @JvmField
-        var anInt9877: Int = 0
-        @JvmField
-        var anInt9878: Int = 0
-        @JvmField
-        var anInt9879: Int = 0
-        @JvmField
-        var anInt9880: Int = 0
-        @JvmField
-        var anInt9881: Int = 0
-        @JvmField
-        var anInt9882: Int = 0
-        @JvmField
-        var anInt9883: Int = 0
-        @JvmField
-        var anInt9884: Int = 0
-        @JvmField
-        var anInt9885: Int = 0
-        @JvmField
-        var anInt9886: Int = 0
-        @JvmField
-        var anInt9887: Int = 0
-        @JvmField
-        var anInt9888: Int = 0
-        @JvmField
-        var anInt9889: Int = 0
-        @JvmField
-        var anInt9890: Int = 0
-        @JvmField
-        var anInt9891: Int = 0
-        @JvmField
-        var anInt9892: Int = 0
-        @JvmField
-        var anInt9893: Int = 0
-        @JvmField
-        var anInt9894: Int = 0
-        @JvmField
-        var anInt9895: Int = 0
-        @JvmField
-        var anInt9896: Int = 0
-        @JvmField
-        var anInt9897: Int = 0
-        @JvmField
-        var anInt9898: Int = 0
-        @JvmField
-        var anInt9900: Int = 0
-        @JvmStatic
-        fun method3965(string: String?, i: Int, i_1_: Int) {
-            try {
-                anInt9841++
-                val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), i_1_) //2
-                class348_sub42_sub15.method3246(-25490)
-                class348_sub42_sub15.aString9654 = string
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("bga.AA(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
-            }
-        }
-
-        @JvmStatic
-        fun method3968(i: Int) {
-            val i_10_ = 69 % ((-67 - i) / 57)
-            aRectangleRegion_9860 = null
+            throw SoundBankPatchStatics.method2929(runtimeexception, "bga.IA(" + (if (spriteDrawTarget != null) "{...}" else "null") + ')')
         }
     }
 }

@@ -1,7 +1,25 @@
-import ModelHeaderCache.Companion.method1935
-import VorbisOggDecoder.Companion.method2967
+import ModelHeaderCacheStatics.method1935
+import VorbisOggDecoderStatics.method2967
 import DirectionUtil.method868
-import ChatMessageStream.Companion.method136
+import ChatMessageStreamStatics.method136
+import SequencedActorEntityStatics.anInt10097
+import SequencedActorEntityStatics.anInt10098
+import SequencedActorEntityStatics.anInt10099
+import SequencedActorEntityStatics.anInt10100
+import SequencedActorEntityStatics.anInt10101
+import SequencedActorEntityStatics.anInt10102
+import SequencedActorEntityStatics.anInt10103
+import SequencedActorEntityStatics.anInt10104
+import SequencedActorEntityStatics.anInt10105
+import SequencedActorEntityStatics.anInt10106
+import SequencedActorEntityStatics.anInt10107
+import SequencedActorEntityStatics.anInt10108
+import SequencedActorEntityStatics.anInt10109
+import SequencedActorEntityStatics.anInt10110
+import SequencedActorEntityStatics.anInt10111
+import SequencedActorEntityStatics.anInt10112
+import SequencedActorEntityStatics.anInt10113
+import SequencedActorEntityStatics.anInt10117
 
 /* Class318_Sub1_Sub4_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -49,7 +67,7 @@ class SequencedActorEntity internal constructor(var_renderer: Renderer?, npcConf
         val class101 = var_renderer!!.method3705()
         class101.method894(this.x, this.anInt6382, this.y)
         if (i_4_ != 0) return true
-        if (ParticleSystemRenderer.aBoolean3870) return class64.method623(i_3_, i, class101, false, 0, LocalPlayerState.anInt1906)
+        if (ParticleSystemRendererStatics.aBoolean3870) return class64.method623(i_3_, i, class101, false, 0, LocalPlayerState.anInt1906)
         return class64.method628(i_3_, i, class101, false, 0)
     }
 
@@ -64,7 +82,7 @@ class SequencedActorEntity internal constructor(var_renderer: Renderer?, npcConf
             this.aSceneObjectAnimator_10115 = SceneObjectAnimator(var_renderer, npcConfig, i_9_, i_10_, this.plane.toInt(), i_5_, this, bool, i_11_)
             aBoolean10114 = npcConfig!!.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ju.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ju.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'))
         }
     }
 
@@ -102,11 +120,11 @@ class SequencedActorEntity internal constructor(var_renderer: Renderer?, npcConf
         val i_12_ = this.x shr 9
         val i_13_ = this.y shr 9
         this.aSceneObjectAnimator_10115!!.method1670(i_12_, class101, i_13_, var_renderer, i_12_, class64, true, (-73).toByte(), i_13_)
-        if (!ParticleSystemRenderer.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
+        if (!ParticleSystemRendererStatics.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
         if ((this.aSceneObjectAnimator_10115!!.aClass318_Sub10_3081) != null) {
             val class98 = this.aSceneObjectAnimator_10115!!.aClass318_Sub10_3081!!.method2525()
-            if (ParticleSystemRenderer.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
+            if (ParticleSystemRendererStatics.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
             else var_renderer.method3684(class98)
         }
         aBoolean10095 = class64.F() || (this.aSceneObjectAnimator_10115!!.aClass318_Sub10_3081) != null
@@ -155,29 +173,7 @@ class SequencedActorEntity internal constructor(var_renderer: Renderer?, npcConf
             anInt10112++
             check(i_15_ >= -106)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ju.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ju.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ')'))
         }
-    }
-
-    companion object {
-        var anInt10096: Int = 0
-        var anInt10097: Int = 0
-        var anInt10098: Int = 0
-        var anInt10099: Int = 0
-        var anInt10100: Int = 0
-        var anInt10101: Int = 0
-        var anInt10102: Int = 0
-        var anInt10103: Int = 0
-        var anInt10104: Int = 0
-        var anInt10105: Int = 0
-        var anInt10106: Int = 0
-        var anInt10107: Int = 0
-        var anInt10108: Int = 0
-        var anInt10109: Int = 0
-        var anInt10110: Int = 0
-        var anInt10111: Int = 0
-        var anInt10112: Int = 0
-        var anInt10113: Int = 0
-        var anInt10117: Int = 0
     }
 }

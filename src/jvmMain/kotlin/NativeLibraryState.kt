@@ -1,4 +1,4 @@
-import BlankTextureNode.Companion.method3098
+import BlankTextureNodeStatics.method3098
 
 /* Class9 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -1,4 +1,20 @@
-import CacheArchiveIndexLoader.Companion.method340
+import CacheArchiveIndexLoaderStatics.method340
+import NpcConfigStatics.method486
+import NpcConfigStatics.anInt866
+import NpcConfigStatics.anInt867
+import NpcConfigStatics.anInt870
+import NpcConfigStatics.anInt871
+import NpcConfigStatics.anInt891
+import NpcConfigStatics.anInt898
+import NpcConfigStatics.anInt899
+import NpcConfigStatics.anInt901
+import NpcConfigStatics.anInt910
+import NpcConfigStatics.anInt927
+import NpcConfigStatics.anInt938
+import NpcConfigStatics.anInt956
+import NpcConfigStatics.anInt957
+import NpcConfigStatics.anInt958
+import NpcConfigStatics.anInt960
 
 /* Class51 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -154,7 +170,7 @@ class NpcConfig {
     fun method476(var_renderer: Renderer?, var_terrainTile: TerrainTile?, i: Int, i_4_: Int, i_5_: Int, bool: Boolean, var_terrainTile_6_: TerrainTile?, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int): ModelOrSpriteHolder? {
         var i = i
         try {
-            if (SoftwareSpriteRaster.method955(22311, i)) i = 4
+            if (SoftwareSpriteRasterStatics.method955(22311, i)) i = 4
             anInt938++
             var l = (i_9_ + (i shl 3) + (this.anInt941 shl 10)).toLong()
             l = l or (var_renderer!!.anInt4567 shl 29).toLong()
@@ -203,12 +219,12 @@ class NpcConfig {
                 if (bool_14_) class64!!.H(anInt893, anInt954, anInt890)
                 class64!!.s(i_4_)
             } else class64 = class64!!.method614(0.toByte(), i_4_, true)
-            HashLinkedListNode.aModelOrSpriteHolder_7058!!.aAbstractModel_119 = class64
-            HashLinkedListNode.aModelOrSpriteHolder_7058!!.aRenderNode118 = var_renderNode
-            return HashLinkedListNode.aModelOrSpriteHolder_7058
+            HashLinkedListNodeStatics.aModelOrSpriteHolder_7058!!.aAbstractModel_119 = class64
+            HashLinkedListNodeStatics.aModelOrSpriteHolder_7058!!.aRenderNode118 = var_renderNode
+            return HashLinkedListNodeStatics.aModelOrSpriteHolder_7058
         } catch (runtimeexception: RuntimeException) {
             runtimeexception.printStackTrace()
-            throw SoundBankPatch.method2929(runtimeexception, ("iv.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + (if (var_terrainTile_6_ != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("iv.B(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + (if (var_terrainTile_6_ != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))
         }
     }
 
@@ -261,16 +277,16 @@ class NpcConfig {
                 var i_25_ = i_17_ or 0x1f01f
                 if (abstractModel != null) i_25_ = var_renderer.method3679(i_25_, abstractModel.ua())
                 var modelDefinition: ModelDefinition? = null
-                synchronized(TileRenderState.aModelDefinitionArray4236s!!) {
+                synchronized(TileRenderStateStatics.aModelDefinitionArray4236s!!) {
                     for (i_26_ in 0..<i_23_) {
                         synchronized(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
-                            modelDefinition = ParticleConfigParser.method2277(0, (this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
+                            modelDefinition = ParticleConfigParserStatics.method2277(0, (this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
                         }
                         if (modelDefinition == null) return null
                         if (modelDefinition.anInt1830 < 13) modelDefinition.method1092(2, 96)
-                        if (i_23_ > 1) TileRenderState.aModelDefinitionArray4236s!![i_26_] = modelDefinition
+                        if (i_23_ > 1) TileRenderStateStatics.aModelDefinitionArray4236s!![i_26_] = modelDefinition
                     }
-                    if (i_23_ > 1) modelDefinition = ModelDefinition(TileRenderState.aModelDefinitionArray4236s!!, i_23_)
+                    if (i_23_ > 1) modelDefinition = ModelDefinition(TileRenderStateStatics.aModelDefinitionArray4236s!!, i_23_)
                 }
                 abstractModel = var_renderer.method3625(modelDefinition, i_25_, (this.aSeqDefinitionCache_933!!.anInt3363), i_18_, i_19_)
                 synchronized(this.aSeqDefinitionCache_933!!.aLruByteCache_3360) {
@@ -294,7 +310,7 @@ class NpcConfig {
         if (aShortArray940 != null) {
             var i_28_ = 0
             while (aShortArray940!!.size > i_28_) {
-                if (aByteArray872 != null && aByteArray872!!.size > i_28_) class64_27_!!.ia(aShortArray940!![i_28_], (NamedIdEntry.aShortArray6889!![0xff and aByteArray872!![i_28_].toInt()]))
+                if (aByteArray872 != null && aByteArray872!!.size > i_28_) class64_27_!!.ia(aShortArray940!![i_28_], (NamedIdEntryStatics.aShortArray6889!![0xff and aByteArray872!![i_28_].toInt()]))
                 else class64_27_!!.ia(aShortArray940!![i_28_], aShortArray908[i_28_])
                 i_28_++
             }
@@ -589,7 +605,7 @@ class NpcConfig {
         var i_64_ = i_64_
         var i_67_ = i_67_
         try {
-            if (SoftwareSpriteRaster.method955(22311, i_64_)) i_64_ = 4
+            if (SoftwareSpriteRasterStatics.method955(22311, i_64_)) i_64_ = 4
             anInt910++
             var l = ((this.anInt941 shl 10) + ((i_64_ shl 3) - -i_66_)).toLong()
             val i_73_ = i_67_
@@ -643,7 +659,7 @@ class NpcConfig {
             if (bool) abstractModel!!.s(i_73_)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_terrainTile_72_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_terrainTile_72_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -733,53 +749,5 @@ class NpcConfig {
         this.anInt955 = -1
         this.anInt950 = -1
         this.anInt887 = -1
-    }
-
-    companion object {
-        @JvmField
-        var anInt866: Int = 0
-        @JvmField
-        var anInt867: Int = 0
-        @JvmField
-        var anInt870: Int = 0
-        @JvmField
-        var anInt871: Int = 0
-        @JvmField
-        var anInt891: Int = 0
-        @JvmField
-        var aResourceLoaderThread_897: ResourceLoaderThread? = null
-        @JvmField
-        var anInt898: Int = 0
-        @JvmField
-        var anInt899: Int = 0
-        @JvmField
-        var anInt901: Int = 0
-        @JvmField
-        var aAbstractCameraTransform_905: AbstractCameraTransform? = null
-        @JvmField
-        var anInt910: Int = 0
-        @JvmField
-        var anInt927: Int = 0
-        @JvmField
-        var aStringArray932: Array<String?>? = arrayOfNulls<String>(100)
-        @JvmField
-        var anInt938: Int = 0
-        @JvmField
-        var anInt948: Int = 0
-        @JvmField
-        var anInt956: Int = 0
-        @JvmField
-        var anInt957: Int = 0
-        @JvmField
-        var anInt958: Int = 0
-        @JvmField
-        var anInt960: Int = 0
-        @JvmStatic
-        fun method486(i: Int) {
-            aStringArray932 = null
-            if (i > -19) method486(-34)
-            aAbstractCameraTransform_905 = null
-            aResourceLoaderThread_897 = null
-        }
     }
 }

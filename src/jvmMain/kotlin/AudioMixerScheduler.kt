@@ -1,4 +1,4 @@
-import CompletedResourceRequest.Companion.method3265
+import CompletedResourceRequestStatics.method3265
 
 /* Class348_Sub16_Sub4 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

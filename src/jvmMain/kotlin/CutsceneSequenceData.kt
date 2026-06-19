@@ -1,4 +1,5 @@
-import GrayscaleNoiseTexture.Companion.method554
+import GrayscaleNoiseTextureStatics.method554
+import CutsceneSequenceDataStatics.anInt3731
 
 /* Class291 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -23,7 +24,7 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
 
     private fun method2200(i: Byte, `is`: ByteArray?) {
         anInt3731++
-        val class348_sub49 = ByteBuffer(RegionSceneShifter.method3158(`is`, -105))
+        val class348_sub49 = ByteBuffer(RegionSceneShifterStatics.method3158(`is`, -105))
         val i_2_ = class348_sub49.readUnsignedByte(255)
         if (i_2_ < 5 || i_2_ > 6) throw RuntimeException()
         if (i_2_ < 6) this.anInt3732 = 0
@@ -120,44 +121,14 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
             if (i != this.anInt3719) throw RuntimeException()
             if (is_27_ != null) {
                 if (is_27_.size != 64) throw RuntimeException()
-                aByteArray3740 = HashTileShape.method2730(4567, 0, `is`, `is`.size)
+                aByteArray3740 = HashTileShapeStatics.method2730(4567, 0, `is`, `is`.size)
                 for (i_28_ in 0..63) {
                     if (aByteArray3740!![i_28_] != is_27_[i_28_]) throw RuntimeException()
                 }
             }
             method2200((-120).toByte(), `is`)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("vw.<init>(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_27_ != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        var anInt3720: Int = 0
-        var anIntArray3726: IntArray? = null
-        var anInt3731: Int = 0
-        var anInt3736: Int = 0
-        @JvmField
-        var aClass318_Sub1Array3737: Array<SceneEntity?>? = null
-        @JvmField
-        var anInt3739: Int = 0
-        var anInt3741: Int = 0
-
-        fun method2198(i: Int, i_0_: Int, i_1_: Int): Int {
-            var i_0_ = i_0_
-            i_0_ = i_0_ * (i_1_ and 0x7f) shr 7
-            if (i != 0) method2198(52, -11, 108)
-            anInt3741++
-            if (i_0_ >= 2) {
-                if (i_0_ > 126) i_0_ = 126
-            } else i_0_ = 2
-            return (0xff80 and i_1_) - -i_0_
-        }
-
-        @JvmStatic
-        fun method2199(i: Byte) {
-            anIntArray3726 = null
-            if (i < 55) aClass318_Sub1Array3737 = null
-            aClass318_Sub1Array3737 = null
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("vw.<init>(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_27_ != null) "{...}" else "null") + ')'))
         }
     }
 }

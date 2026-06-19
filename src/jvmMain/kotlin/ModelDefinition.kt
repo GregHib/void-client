@@ -1,6 +1,20 @@
-import WhirlpoolHash.Companion.method828
+import WhirlpoolHashStatics.method828
 import java.awt.Canvas
 import java.util.*
+import ModelDefinitionStatics.anInt1819
+import ModelDefinitionStatics.anInt1826
+import ModelDefinitionStatics.anInt1827
+import ModelDefinitionStatics.anInt1828
+import ModelDefinitionStatics.anInt1831
+import ModelDefinitionStatics.anInt1837
+import ModelDefinitionStatics.anInt1838
+import ModelDefinitionStatics.anInt1840
+import ModelDefinitionStatics.anInt1845
+import ModelDefinitionStatics.anInt1854
+import ModelDefinitionStatics.anInt1858
+import ModelDefinitionStatics.anInt1860
+import ModelDefinitionStatics.anInt1864
+import ModelDefinitionStatics.anInt1869
 
 class ModelDefinition {
     var anIntArray1816: IntArray = intArrayOf()
@@ -295,7 +309,7 @@ class ModelDefinition {
             i_82_ = this.anIntArray1852[i_83_]
             i_81_ = this.anIntArray1847[i_83_]
             i_80_ = this.anIntArray1841[i_83_]
-            if (i_61_ == 1) this.anIntArray1868!![i_83_] = class348_sub49_56_.readUnsignedByte(CameraSplineNode.method2955(i, 254))
+            if (i_61_ == 1) this.anIntArray1868!![i_83_] = class348_sub49_56_.readUnsignedByte(CameraSplineNodeStatics.method2955(i, 254))
         }
         class348_sub49.anInt7197 = i_75_
         class348_sub49_53_.anInt7197 = i_71_
@@ -321,7 +335,7 @@ class ModelDefinition {
                 }
             }
             if (i_58_ == 255) this.aByteArray1839!![i_88_] = class348_sub49_54_.readByte(-108)
-            if (i_59_ == 1) this.aByteArray1834!![i_88_] = class348_sub49_55_.readByte(CameraSplineNode.method2955(i, -120))
+            if (i_59_ == 1) this.aByteArray1834!![i_88_] = class348_sub49_55_.readByte(CameraSplineNodeStatics.method2955(i, -120))
             if (i_60_ == 1) this.anIntArray1824!![i_88_] = class348_sub49_56_.readUnsignedByte(255)
         }
         class348_sub49.anInt7197 = i_74_
@@ -407,7 +421,7 @@ class ModelDefinition {
         val i_106_ = modelDefinition_101_.anIntArray1852[i_102_]
         for (i_107_ in i..<this.anInt1836) {
             if (this.anIntArray1841[i_107_] == i_104_ && i_105_ == this.anIntArray1847[i_107_] && (i_106_ == this.anIntArray1852[i_107_])) {
-                this.aShortArray1842[i_107_] = BoundsConstraintEntry.method2057((this.aShortArray1842[i_107_]).toInt(), i_103_.toInt()).toShort()
+                this.aShortArray1842[i_107_] = BoundsConstraintEntryStatics.method2057((this.aShortArray1842[i_107_]).toInt(), i_103_.toInt()).toShort()
                 return i_107_
             }
         }
@@ -784,8 +798,8 @@ class ModelDefinition {
 
     fun method1107(i: Int, i_199_: Int, i_200_: Int, i_201_: Int) {
         if (i_200_ != 0) {
-            val i_202_ = TrigLookupTables.anIntArray1207!![i_200_]
-            val i_203_ = TrigLookupTables.anIntArray1204!![i_200_]
+            val i_202_ = TrigLookupTablesStatics.anIntArray1207!![i_200_]
+            val i_203_ = TrigLookupTablesStatics.anIntArray1204!![i_200_]
             for (i_204_ in 0..<this.anInt1836) {
                 val i_205_ = ((i_203_ * this.anIntArray1841[i_204_] + this.anIntArray1847[i_204_] * i_202_) shr 14)
                 this.anIntArray1847[i_204_] = ((-(this.anIntArray1841[i_204_] * i_202_) + this.anIntArray1847[i_204_] * i_203_) shr 14)
@@ -795,8 +809,8 @@ class ModelDefinition {
         if (i != 6875) this.aShortArray1835 = null
         anInt1837++
         if (i_201_ != 0) {
-            val i_206_ = TrigLookupTables.anIntArray1207!![i_201_]
-            val i_207_ = TrigLookupTables.anIntArray1204!![i_201_]
+            val i_206_ = TrigLookupTablesStatics.anIntArray1207!![i_201_]
+            val i_207_ = TrigLookupTablesStatics.anIntArray1204!![i_201_]
             for (i_208_ in 0..<this.anInt1836) {
                 val i_209_ = ((this.anIntArray1847[i_208_] * i_207_ + -(i_206_ * this.anIntArray1852[i_208_])) shr 14)
                 this.anIntArray1852[i_208_] = ((this.anIntArray1847[i_208_] * i_206_ - -(i_207_ * this.anIntArray1852[i_208_])) shr 14)
@@ -804,8 +818,8 @@ class ModelDefinition {
             }
         }
         if (i_199_ != 0) {
-            val i_210_ = TrigLookupTables.anIntArray1207!![i_199_]
-            val i_211_ = TrigLookupTables.anIntArray1204!![i_199_]
+            val i_210_ = TrigLookupTablesStatics.anIntArray1207!![i_199_]
+            val i_211_ = TrigLookupTablesStatics.anIntArray1204!![i_199_]
             var i_212_ = 0
             while (this.anInt1836 > i_212_) {
                 val i_213_ = ((i_211_ * this.anIntArray1841[i_212_] + this.anIntArray1852[i_212_] * i_210_) shr 14)
@@ -1046,69 +1060,6 @@ class ModelDefinition {
                 }
             }
             i_238_++
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt1819: Int = 0
-        @JvmField
-        var anInt1826: Int = 0
-        @JvmField
-        var anInt1827: Int = 0
-        @JvmField
-        var anInt1828: Int = 0
-        @JvmField
-        var anInt1831: Int = 0
-        @JvmField
-        var anInt1837: Int = 0
-        @JvmField
-        var anInt1838: Int = 0
-        @JvmField
-        var anInt1840: Int = 0
-        @JvmField
-        var anInt1845: Int = 0
-        @JvmField
-        var aJs5Archive_1848: Js5Archive? = null
-        @JvmField
-        var anInt1850: Int = 0
-        @JvmField
-        var anInt1854: Int = 0
-        @JvmField
-        var anInt1858: Int = 0
-        @JvmField
-        var anInt1860: Int = 0
-        @JvmField
-        var anInt1861: Int = 0
-        @JvmField
-        var anInt1864: Int = 0
-        @JvmField
-        var anInt1869: Int = 0
-
-        @JvmStatic
-        fun method1096(i: Int) {
-            if (i >= 88) aJs5Archive_1848 = null
-        }
-
-        fun method1097(i: Byte, i_20_: Int, random: Random): Int {
-            anInt1861++
-            require(i_20_ > 0)
-            if (AsyncTaskHandle.method1436(-19, i_20_)) return (i_20_.toLong() * (0xffffffffL and random.nextInt().toLong()) shr 32).toInt()
-            val i_21_ = -2147483648 + -(4294967296L % i_20_.toLong()).toInt()
-            if (i < 78) aJs5Archive_1848 = null
-            var i_22_: Int
-            do i_22_ = random.nextInt() while (i_22_ >= i_21_)
-            return ModelTransformParams.method3452(i_22_, (-15).toByte(), i_20_)
-        }
-
-        @JvmStatic
-        fun method1108(i: Byte, canvas: Canvas) {
-            anInt1850++
-            val dimension = canvas.getSize()
-            if (i.toInt() != -99) method1096(57)
-            method828(38.toByte(), dimension.height, dimension.width)
-            if (ByteBuffer.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3643(canvas, GrayscaleNoiseTexture.anInt5283, LinkedNodeListIterator.anInt1651)
-            else CameraRotationStub.aRenderer326!!.method3643(canvas, SynthVoiceGroup.anInt8854, ShadowQualityOptionState.anInt6008)
         }
     }
 }

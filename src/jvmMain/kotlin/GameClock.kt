@@ -1,6 +1,6 @@
-import GlCubeMapTexture.Companion.method243
-import GradientLookupEffect.Companion.method3076
-import GlShadowRenderPass.Companion.method3553
+import GlCubeMapTextureStatics.method243
+import GradientLookupEffectStatics.method3076
+import GlShadowRenderPassStatics.method3553
 
 /* Class62 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -25,7 +25,7 @@ object GameClock {
     fun method596(i: Int): Array<TileRenderState?> {
         if (i != 20000) anIntArrayArrayArray1116 = null
         anInt1112++
-        return (arrayOf<TileRenderState?>(PerlinTextureProvider.aTileRenderState_5808, ProjectileConfigUtil.aTileRenderState_399, WorldMapSceneSoftware.aTileRenderState_5821))
+        return (arrayOf<TileRenderState?>(PerlinTextureProviderStatics.aTileRenderState_5808, ProjectileConfigUtil.aTileRenderState_399, WorldMapSceneSoftwareStatics.aTileRenderState_5821))
     }
 
     @JvmStatic
@@ -41,7 +41,7 @@ object GameClock {
         if (i != 9013) method597(86.toByte())
         var class348_sub15 = ProjectileConfigUtil.aHashtable_389!!.method3484(0) as? MenuActionNode?
         while (class348_sub15 != null) {
-            if (!class348_sub15.aBoolean6772) OpenGlModel.method690((-94).toByte(), (class348_sub15.anInt6773))
+            if (!class348_sub15.aBoolean6772) OpenGlModelStatics.method690((-94).toByte(), (class348_sub15.anInt6773))
             else class348_sub15.aBoolean6772 = false
             class348_sub15 = ProjectileConfigUtil.aHashtable_389!!.method3482(0) as? MenuActionNode?
         }
@@ -53,9 +53,9 @@ object GameClock {
         if (i > -52) return -121L
         anInt1113++
         val l = System.currentTimeMillis()
-        if (MatrixCameraTransform.aLong5663 > l) TileSceneEntity.aLong8728 += MatrixCameraTransform.aLong5663 - l
-        MatrixCameraTransform.aLong5663 = l
-        return l + TileSceneEntity.aLong8728
+        if (MatrixCameraTransformStatics.aLong5663 > l) TileSceneEntityStatics.aLong8728 += MatrixCameraTransformStatics.aLong5663 - l
+        MatrixCameraTransformStatics.aLong5663 = l
+        return l + TileSceneEntityStatics.aLong8728
     }
 
     fun method600(i: Byte, i_1_: Int, i_2_: Int): Int {
@@ -68,18 +68,18 @@ object GameClock {
                     i_3_ = 1
                 } else {
                     i_3_ = 2
-                    ServerConnectionInfo.method1263(true)
+                    ServerConnectionInfoStatics.method1263(true)
                 }
             } else {
                 i_3_ = 3
-                NanoTimer.method447((-59).toByte())
+                NanoTimerStatics.method447((-59).toByte())
             }
         } else {
             PlayerUpdateDecoder.method1140(120)
             i_3_ = 4
         }
-        if (i_1_ != IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) {
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7251), i_1_)
+        if (i_1_ != IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) {
+            IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251), i_1_)
             method3553(false, 122.toByte(), i_1_)
         }
         if (i >= -20) aDoublyLinkedNodeList_1114 = null

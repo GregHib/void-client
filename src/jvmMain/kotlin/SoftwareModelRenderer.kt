@@ -1,3 +1,29 @@
+import SoftwareModelRendererStatics.anInt8450
+import SoftwareModelRendererStatics.anInt8451
+import SoftwareModelRendererStatics.anInt8452
+import SoftwareModelRendererStatics.anInt8453
+import SoftwareModelRendererStatics.anInt8455
+import SoftwareModelRendererStatics.anInt8457
+import SoftwareModelRendererStatics.anInt8458
+import SoftwareModelRendererStatics.anInt8459
+import SoftwareModelRendererStatics.anInt8463
+import SoftwareModelRendererStatics.anInt8465
+import SoftwareModelRendererStatics.anInt8466
+import SoftwareModelRendererStatics.anInt8467
+import SoftwareModelRendererStatics.anInt8468
+import SoftwareModelRendererStatics.anInt8469
+import SoftwareModelRendererStatics.anInt8472
+import SoftwareModelRendererStatics.anInt8473
+import SoftwareModelRendererStatics.anInt8474
+import SoftwareModelRendererStatics.anInt8475
+import SoftwareModelRendererStatics.anInt8476
+import SoftwareModelRendererStatics.anInt8477
+import SoftwareModelRendererStatics.anInt8478
+import SoftwareModelRendererStatics.anInt8479
+import SoftwareModelRendererStatics.anInt8480
+import SoftwareModelRendererStatics.anInt8481
+import SoftwareModelRendererStatics.anInt8482
+
 /* Class105_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -200,61 +226,5 @@ abstract class SoftwareModelRenderer(@JvmField var aHa_Sub1_8460: SoftwareRender
         anInt8466 = f_81_.toInt()
         anInt8468 = f_82_.toInt()
         return true
-    }
-
-    companion object {
-        @JvmField
-        var anInt8450: Int = 0
-        @JvmField
-        var anInt8451: Int = 0
-        @JvmField
-        var anInt8452: Int = 0
-        @JvmField
-        var anInt8453: Int = 0
-        private var anInt8455: Int
-        @JvmField
-        var anInt8457: Int = 0
-        @JvmField
-        var anInt8458: Int = 0
-        private var anInt8459: Int
-        @JvmField
-        var anInt8463: Int
-        @JvmField
-        var anInt8465: Int = 0
-        private var anInt8466 = 0
-        @JvmField
-        var anInt8467: Int = 0
-        @JvmField
-        var anInt8468: Int = 0
-        @JvmField
-        var anInt8469: Int
-        @JvmField
-        var anInt8472: Int
-        private var anInt8473 = 0
-        @JvmField
-        var anInt8474: Int = 0
-        @JvmField
-        var anInt8475: Int = 0
-        private var anInt8476 = 0
-        @JvmField
-        var anInt8477: Int
-        @JvmField
-        var anInt8478: Int = 0
-        @JvmField
-        var anInt8479: Int = 0
-        @JvmField
-        var anInt8480: Int = 0
-        @JvmField
-        var anInt8481: Int = 0
-        private var anInt8482 = 0
-
-        init {
-            anInt8472 = 0
-            anInt8463 = 0
-            anInt8469 = 0
-            anInt8477 = 0
-            anInt8459 = 0
-            anInt8455 = 0
-        }
     }
 }

@@ -1,14 +1,17 @@
-import jaggl.OpenGL.Companion.glBegin
-import jaggl.OpenGL.Companion.glEnd
-import jaggl.OpenGL.Companion.glLoadIdentity
-import jaggl.OpenGL.Companion.glMatrixMode
-import jaggl.OpenGL.Companion.glMultiTexCoord3i
-import jaggl.OpenGL.Companion.glOrtho
-import jaggl.OpenGL.Companion.glPopAttrib
-import jaggl.OpenGL.Companion.glPushAttrib
-import jaggl.OpenGL.Companion.glTexCoord3i
-import jaggl.OpenGL.Companion.glVertex2f
-import jaggl.OpenGL.Companion.glViewport
+import jaggl.OpenGLStatics.glBegin
+import jaggl.OpenGLStatics.glEnd
+import jaggl.OpenGLStatics.glLoadIdentity
+import jaggl.OpenGLStatics.glMatrixMode
+import jaggl.OpenGLStatics.glMultiTexCoord3i
+import jaggl.OpenGLStatics.glOrtho
+import jaggl.OpenGLStatics.glPopAttrib
+import jaggl.OpenGLStatics.glPushAttrib
+import jaggl.OpenGLStatics.glTexCoord3i
+import jaggl.OpenGLStatics.glVertex2f
+import jaggl.OpenGLStatics.glViewport
+import CubemapTextureGlSourceStatics.anInt8699
+import CubemapTextureGlSourceStatics.anInt8700
+import CubemapTextureGlSourceStatics.anInt8703
 
 class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int) : Texture2DProvider() {
     private val aClass258_Sub2_8701: GlTextureCubeMap
@@ -19,7 +22,7 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
             anInt8703++
             var bool = true
             val class206 = aHa_Sub2_8707.aFrameBufferObject_7778
-            aHa_Sub2_8707.K(HslColorTableNode.anIntArray6635)
+            aHa_Sub2_8707.K(HslColorTableNodeStatics.anIntArray6635)
             aHa_Sub2_8707.la()
             aHa_Sub2_8707.method3755(-32)
             glMatrixMode(5889)
@@ -163,11 +166,11 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
             aHa_Sub2_8707.method3738(-15039, 0)
             aHa_Sub2_8707.method3771((-88).toByte(), null)
             glPopAttrib()
-            aHa_Sub2_8707.KA(HslColorTableNode.anIntArray6635!![0], HslColorTableNode.anIntArray6635!![1], HslColorTableNode.anIntArray6635!![2], HslColorTableNode.anIntArray6635!![3])
+            aHa_Sub2_8707.KA(HslColorTableNodeStatics.anIntArray6635!![0], HslColorTableNodeStatics.anIntArray6635!![1], HslColorTableNodeStatics.anIntArray6635!![2], HslColorTableNodeStatics.anIntArray6635!![3])
             if (bool && !aHa_Sub2_8707.aBoolean7847) aClass258_Sub2_8701.method1950(69)
             return bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qda.L(" + (if (class258_sub2 != null) "{...}" else "null") + ',' + f + ',' + i + ',' + (if (class258_sub2_0_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("qda.L(" + (if (class258_sub2 != null) "{...}" else "null") + ',' + f + ',' + i + ',' + (if (class258_sub2_0_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -185,51 +188,5 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
     init {
         aHa_Sub2_8707 = var_ha_Sub2
         aClass258_Sub2_8701 = GlTextureCubeMap(var_ha_Sub2, 6408, i)
-    }
-
-    companion object {
-        @JvmField
-        var aClass348_Sub49_8698: ByteBuffer? = null
-        @JvmField
-        var anInt8699: Int = 0
-        @JvmField
-        var anInt8700: Int = 0
-        @JvmField
-        var anInt8702: Int = 0
-        @JvmField
-        var anInt8703: Int = 0
-        @JvmField
-        var anInt8704: Int = 0
-        @JvmField
-        var anInt8705: Int = 0
-        @JvmField
-        var aFontMetaRef_8706: FontMetaRef? = FontMetaRef(79, 3)
-        @JvmStatic
-        fun method2263(var_renderer: Renderer?, i: Int, i_4_: Int): AbstractModelRenderer? {
-            anInt8705++
-            val class348_sub15 = (ProjectileConfigUtil.aHashtable_389!!.method3480(i_4_.toLong(), -6008) as MenuActionNode?)
-            if (class348_sub15 != null) {
-                val class348_sub23_sub2 = class348_sub15.aClass55_Sub1_6768!!.method506(false)
-                class348_sub15.aBoolean6772 = true
-                if (class348_sub23_sub2 != null) return class348_sub23_sub2.method2975(var_renderer!!, 0)
-            }
-            if (i != 0) aFontMetaRef_8706 = null
-            return null
-        }
-
-        @JvmStatic
-        fun method2264(bool: Boolean) {
-            if (bool != false) aClass348_Sub49_8698 = null
-            anInt8704++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(0, 105.toByte(), 15)
-            class348_sub42_sub15.method3251(-16058)
-        }
-
-        @JvmStatic
-        fun method2265(i: Int) {
-            aClass348_Sub49_8698 = null
-            if (i != -10794) aFontMetaRef_8706 = null
-            aFontMetaRef_8706 = null
-        }
     }
 }

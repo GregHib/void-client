@@ -1,3 +1,12 @@
+import BasicGlRenderPassStatics.method3540
+import BasicGlRenderPassStatics.anInt7298
+import BasicGlRenderPassStatics.anInt7300
+import BasicGlRenderPassStatics.aIntRange_7301
+import BasicGlRenderPassStatics.anInt7303
+import BasicGlRenderPassStatics.anInt7305
+import BasicGlRenderPassStatics.anInt7306
+import BasicGlRenderPassStatics.anInt7307
+
 /* Class367_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -35,55 +44,5 @@ class BasicGlRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abst
     override fun method3526(i: Int, i_10_: Int, i_11_: Int) {
         if (i != 10756) aIntRange_7301 = null
         anInt7298++
-    }
-
-    companion object {
-        @JvmField
-        var anInt7298: Int = 0
-        @JvmField
-        var anIntArray7299: IntArray? = null
-        @JvmField
-        var anInt7300: Int = 0
-        @JvmField
-        var aIntRange_7301: IntRange? = IntRange(21, -1)
-        @JvmField
-        var anInt7302: Int = 0
-        @JvmField
-        var anInt7303: Int = 0
-        @JvmField
-        var aBooleanArray7304: BooleanArray? = BooleanArray(100)
-        @JvmField
-        var anInt7305: Int = 0
-        @JvmField
-        var anInt7306: Int = 0
-        @JvmField
-        var anInt7307: Int = 0
-
-        @JvmStatic
-        fun method3539(i: Byte) {
-            val i_0_ = 74 % ((72 - i) / 37)
-            aBooleanArray7304 = null
-            aIntRange_7301 = null
-            anIntArray7299 = null
-        }
-
-        @JvmStatic
-        fun method3540(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, bool: Boolean) {
-            if (i_6_ >= WorldMapLabel.anInt4960 && CameraNodeList.anInt1745 >= i_6_ && WorldMapLabel.anInt4960 <= i_5_ && CameraNodeList.anInt1745 >= i_5_ && i_7_ >= WorldMapLabel.anInt4960 && i_7_ <= CameraNodeList.anInt1745 && WorldMapLabel.anInt4960 <= i_9_ && CameraNodeList.anInt1745 >= i_9_ && i >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i && i_2_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_2_ && LocalPlayerState.anInt1910 <= i_8_ && i_8_ <= WidgetTextConfig.anInt513 && LocalPlayerState.anInt1910 <= i_4_ && i_4_ <= WidgetTextConfig.anInt513) AbstractFrameBufferSurface.method3009(
-                i_2_,
-                i_8_,
-                i_5_,
-                i_9_,
-                i_4_,
-                (-1).toByte(),
-                i_7_,
-                i,
-                i_3_,
-                i_6_
-            )
-            else IntHashSet.method2364(i_3_, i_7_, i_6_, i_2_, i_5_, i_8_, i_9_, i, 3, i_4_)
-            if (bool != true) method3540(37, -122, 69, -89, -8, -19, 89, 112, 12, false)
-            anInt7302++
-        }
     }
 }

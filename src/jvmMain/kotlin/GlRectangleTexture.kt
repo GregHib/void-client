@@ -1,12 +1,24 @@
-import ModelBatchBase.Companion.method1128
-import RangeThresholdTextureNode.Companion.method3055
-import jaggl.OpenGL.Companion.glGetTexImagei
-import jaggl.OpenGL.Companion.glPixelStorei
-import jaggl.OpenGL.Companion.glTexImage2Df
-import jaggl.OpenGL.Companion.glTexImage2Di
-import jaggl.OpenGL.Companion.glTexImage2Dub
-import jaggl.OpenGL.Companion.glTexSubImage2Di
-import jaggl.OpenGL.Companion.glTexSubImage2Dub
+import ModelBatchBaseStatics.method1128
+import RangeThresholdTextureNodeStatics.method3055
+import jaggl.OpenGLStatics.glGetTexImagei
+import jaggl.OpenGLStatics.glPixelStorei
+import jaggl.OpenGLStatics.glTexImage2Df
+import jaggl.OpenGLStatics.glTexImage2Di
+import jaggl.OpenGLStatics.glTexImage2Dub
+import jaggl.OpenGLStatics.glTexSubImage2Di
+import jaggl.OpenGLStatics.glTexSubImage2Dub
+import GlRectangleTextureStatics.method250
+import GlRectangleTextureStatics.anInt8635
+import GlRectangleTextureStatics.anInt8637
+import GlRectangleTextureStatics.anInt8639
+import GlRectangleTextureStatics.aByteArrayArray8642
+import GlRectangleTextureStatics.anInt8645
+import GlRectangleTextureStatics.anInt8646
+import GlRectangleTextureStatics.anInt8647
+import GlRectangleTextureStatics.anInt8649
+import GlRectangleTextureStatics.anInt8650
+import GlRectangleTextureStatics.anInt8651
+import GlRectangleTextureStatics.method254
 
 class GlRectangleTexture : GlTextureBase, Renderable2dTexture {
     private var anInt8634 = 0
@@ -17,7 +29,7 @@ class GlRectangleTexture : GlTextureBase, Renderable2dTexture {
         return anInt8634
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, i: Int, i_3_: Int, `is`: IntArray?, i_4_: Int, i_5_: Int) : super(glRenderDevice, 34037, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirection.aMovementDirection_1183, i * i_3_, false) {
+    internal constructor(glRenderDevice: GlRenderDevice?, i: Int, i_3_: Int, `is`: IntArray?, i_4_: Int, i_5_: Int) : super(glRenderDevice, 34037, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirectionStatics.aMovementDirection_1183, i * i_3_, false) {
         try {
             anInt8640 = i
             anInt8634 = i_3_
@@ -26,11 +38,11 @@ class GlRectangleTexture : GlTextureBase, Renderable2dTexture {
             glTexImage2Di(this.anInt5093, 0, 6408, anInt8640, anInt8634, 0, 32993, (this.aGlRenderDevice_5082!!.anInt9918), `is`, i_4_ * 4)
             glPixelStorei(3314, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("tw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ')'))
         }
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_6_: Int, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(glRenderDevice, 34037, textureFormatInfo, MovementDirection.aMovementDirection_1183, i * i_6_, false) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_6_: Int, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(glRenderDevice, 34037, textureFormatInfo, MovementDirectionStatics.aMovementDirection_1183, i * i_6_, false) {
         try {
             anInt8634 = i_6_
             anInt8640 = i
@@ -41,12 +53,12 @@ class GlRectangleTexture : GlTextureBase, Renderable2dTexture {
             glPixelStorei(3314, 0)
             glPixelStorei(3317, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("tw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 
     override fun method66(bool: Boolean, bool_9_: Boolean, i: Int) {
-        if (i != 25688) Companion.method254(-82, (-35).toByte())
+        if (i != 25688) method254(-82, (-35).toByte())
         anInt8639++
     }
 
@@ -57,7 +69,7 @@ class GlRectangleTexture : GlTextureBase, Renderable2dTexture {
             this.aGlRenderDevice_5082!!.method3850(115.toByte(), this)
             glTexImage2Dub(this.anInt5093, 0, this.method228(109), i, i_10_, 0, method3055(105, this.aTextureFormatInfo_5084), method1128(-54, this.aMovementDirection_5088), null, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("tw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ')'))
         }
     }
 
@@ -80,7 +92,7 @@ class GlRectangleTexture : GlTextureBase, Renderable2dTexture {
         return f
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_33_: Int, fs: FloatArray?, i_34_: Int, i_35_: Int) : super(glRenderDevice, 34037, textureFormatInfo, MovementDirection.aMovementDirection_1187, i_33_ * i, false) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_33_: Int, fs: FloatArray?, i_34_: Int, i_35_: Int) : super(glRenderDevice, 34037, textureFormatInfo, MovementDirectionStatics.aMovementDirection_1187, i_33_ * i, false) {
         try {
             anInt8640 = i
             anInt8634 = i_33_
@@ -89,7 +101,7 @@ class GlRectangleTexture : GlTextureBase, Renderable2dTexture {
             glTexImage2Df(this.anInt5093, 0, this.method228(107), i, i_33_, 0, (method3055(126, this.aTextureFormatInfo_5084)), 5126, fs, i_34_ * 4)
             glPixelStorei(3314, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_33_ + ',' + (if (fs != null) "{...}" else "null") + ',' + i_34_ + ',' + i_35_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("tw.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_33_ + ',' + (if (fs != null) "{...}" else "null") + ',' + i_34_ + ',' + i_35_ + ')'))
         }
     }
 
@@ -135,118 +147,7 @@ class GlRectangleTexture : GlTextureBase, Renderable2dTexture {
             if (i_46_ != i_44_) glPixelStorei(3314, 0)
             glPixelStorei(3317, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tw.T(" + i + ',' + i_42_ + ',' + i_43_ + ',' + i_44_ + ',' + i_45_ + ',' + i_46_ + ',' + i_47_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt8633: Int = 0
-        @JvmField
-        var anInt8635: Int = 0
-        @JvmField
-        var anInt8636: Int = 0
-        @JvmField
-        var anInt8637: Int = 0
-        @JvmField
-        var aSceneProjector_8638: SceneProjector? = SceneProjector("stellardawn", 1)
-        @JvmField
-        var anInt8639: Int = 0
-        @JvmField
-        var anInt8641: Int = 0
-        @JvmField
-        var aByteArrayArray8642: Array<ByteArray?>? = null
-        @JvmField
-        var anInt8643: Int = 0
-        @JvmField
-        var aSystemFontGlyphs_8644: SystemFontGlyphs? = null
-        @JvmField
-        var anInt8645: Int = 0
-        @JvmField
-        var anInt8646: Int = 0
-        @JvmField
-        var anInt8647: Int = 0
-        @JvmField
-        var anInt8648: Int = 0
-        @JvmField
-        var anInt8649: Int = 0
-        @JvmField
-        var anInt8650: Int = 0
-        @JvmField
-        var anInt8651: Int = 0
-
-        @JvmStatic
-        fun method250(i: Int, bool: Boolean, i_0_: Int): String {
-            if (bool != true) method251(96.toByte())
-            anInt8641++
-            val i_1_ = -i_0_ + i
-            if (i_1_ < -9) return "<col=ff0000>"
-            if (i_1_ < -6) return "<col=ff3000>"
-            if (i_1_ < -3) return "<col=ff7000>"
-            if (i_1_ < 0) return "<col=ffb000>"
-            if (i_1_ > 9) return "<col=00ff00>"
-            if (i_1_ > 6) return "<col=40ff00>"
-            if (i_1_ > 3) return "<col=80ff00>"
-            if (i_1_ > 0) return "<col=c0ff00>"
-            return "<col=ffff00>"
-        }
-
-        @JvmStatic
-        fun method251(i: Byte) {
-            if (i.toInt() != 2) method250(-45, false, -102)
-            aSystemFontGlyphs_8644 = null
-            aSceneProjector_8638 = null
-            aByteArrayArray8642 = null
-        }
-
-        fun method252(i: Int, i_11_: Int): Boolean {
-            anInt8636++
-            if (i_11_ != 5126) aByteArrayArray8642 = null
-            return i == 0 || i == 2
-        }
-
-        @JvmStatic
-        fun method253(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int) {
-            anInt8648++
-            if (i_13_ != -648) aSystemFontGlyphs_8644 = null
-            var i_16_ = 0
-            var i_17_ = i_15_
-            var i_18_ = -i_15_
-            var i_19_ = -1
-            GlElementArrayBuffer.method1156(i_13_ + 621, i_12_ + i_15_, WidgetDefinition.anIntArrayArray255!![i]!!, i_12_ + -i_15_, i_14_)
-            while (i_16_ < i_17_) {
-                i_19_ += 2
-                i_18_ += i_19_
-                i_16_++
-                if (i_18_ >= 0) {
-                    i_17_--
-                    i_18_ -= i_17_ shl 1
-                    val `is` = WidgetDefinition.anIntArrayArray255!![i - -i_17_]!!
-                    val is_20_ = WidgetDefinition.anIntArrayArray255!![i + -i_17_]!!
-                    val i_21_ = i_16_ + i_12_
-                    val i_22_ = i_12_ + -i_16_
-                    GlElementArrayBuffer.method1156(-27, i_21_, `is`, i_22_, i_14_)
-                    GlElementArrayBuffer.method1156(-27, i_21_, is_20_, i_22_, i_14_)
-                }
-                val i_23_ = i_17_ + i_12_
-                val i_24_ = i_12_ - i_17_
-                val `is` = WidgetDefinition.anIntArrayArray255!![i_16_ + i]!!
-                val is_25_ = WidgetDefinition.anIntArrayArray255!![-i_16_ + i]!!
-                GlElementArrayBuffer.method1156(i_13_ + 621, i_23_, `is`, i_24_, i_14_)
-                GlElementArrayBuffer.method1156(-27, i_23_, is_25_, i_24_, i_14_)
-            }
-        }
-
-        @JvmStatic
-        fun method254(i: Int, i_48_: Byte) {
-            if (i_48_ > -79) method252(127, 53)
-            if (Loader.skipLobby) {
-                HslColorTableNode.anInt6634 = i
-                LinkedNodeListIterator.anInt1645 = i
-            } else if (BloomGraphicsOptionState.anInt5969 != 1) {
-                if (BloomGraphicsOptionState.anInt5969 == 2) HslColorTableNode.anInt6634 = i
-            } else LinkedNodeListIterator.anInt1645 = i
-            anInt8643++
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("tw.T(" + i + ',' + i_42_ + ',' + i_43_ + ',' + i_44_ + ',' + i_45_ + ',' + i_46_ + ',' + i_47_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
         }
     }
 }

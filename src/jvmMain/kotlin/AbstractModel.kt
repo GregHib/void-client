@@ -1,6 +1,15 @@
 import java.util.*
 import kotlin.math.atan2
 import kotlin.math.min
+import AbstractModelStatics.anInt1125
+import AbstractModelStatics.anInt1126
+import AbstractModelStatics.anIntArray1127
+import AbstractModelStatics.anInt1130
+import AbstractModelStatics.anInt1132
+import AbstractModelStatics.anInt1133
+import AbstractModelStatics.anInt1135
+import AbstractModelStatics.aFloat1136
+import AbstractModelStatics.anInt1137
 
 /* Class64 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -125,7 +134,7 @@ public abstract class AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ka.AC(" + i + ',' + (if (class348_sub33 != null) "{...}" else "null") + ',' + i_5_ + ',' + bool + ',' + i_6_ + ',' + (if (npcModelTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + (if (npcModelTransform_8_ != null) "{...}" else "null") + ',' + i_9_ + ',' + bool_10_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ka.AC(" + i + ',' + (if (class348_sub33 != null) "{...}" else "null") + ',' + i_5_ + ',' + bool + ',' + i_6_ + ',' + (if (npcModelTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + (if (npcModelTransform_8_ != null) "{...}" else "null") + ',' + i_9_ + ',' + bool_10_ + ')'))
         }
     }
 
@@ -149,7 +158,7 @@ public abstract class AbstractModel {
                 } else method621()
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ka.QB(" + i + ',' + i_40_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ',' + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i_44_ + ',' + (if (class348_sub42_sub17_45_ != null) "{...}" else "null") + ',' + bool + ',' + i_46_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ka.QB(" + i + ',' + i_40_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ',' + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i_44_ + ',' + (if (class348_sub42_sub17_45_ != null) "{...}" else "null") + ',' + bool + ',' + i_46_ + ')'))
         }
     }
 
@@ -243,7 +252,7 @@ public abstract class AbstractModel {
                 } else method621()
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ka.BC(" + i + ',' + i_83_ + ',' + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i_84_ + ',' + (if (class348_sub42_sub17_85_ != null) "{...}" else "null") + ',' + bool + ',' + bool_86_ + ',' + i_87_ + ',' + i_88_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ka.BC(" + i + ',' + i_83_ + ',' + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i_84_ + ',' + (if (class348_sub42_sub17_85_ != null) "{...}" else "null") + ',' + bool + ',' + bool_86_ + ',' + i_87_ + ',' + i_88_ + ')'))
         }
     }
 
@@ -312,7 +321,7 @@ public abstract class AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw SoundBankPatchStatics.method2929(
                 runtimeexception,
                 ("ka.VB(" + (if (class348_sub42_sub17 != null) "{...}" else "null") + ',' + i + ',' + i_101_ + ',' + i_102_ + ',' + (if (class348_sub42_sub17_103_ != null) "{...}" else "null") + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + (if (class348_sub42_sub17_107_ != null) "{...}" else "null") + ',' + bool + ',' + i_108_ + ',' + (if (class348_sub42_sub17_109_ != null) "{...}" else "null") + ',' + i_110_ + ',' + (if (bools != null) "{...}" else "null") + ',' + i_111_ + ')')
             )
@@ -420,7 +429,7 @@ public abstract class AbstractModel {
                 else I(i_147_, `is`, i_150_, i_146_, i_152_, bool, i_148_, is_151_)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ka.PB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_146_ + ',' + i_147_ + ',' + i_148_ + ',' + i_149_ + ',' + i_150_ + ',' + (if (is_151_ != null) "{...}" else "null") + ',' + i_152_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ka.PB(" + (if (`is` != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + i_146_ + ',' + i_147_ + ',' + i_148_ + ',' + i_149_ + ',' + i_150_ + ',' + (if (is_151_ != null) "{...}" else "null") + ',' + i_152_ + ')'))
         }
     }
 
@@ -429,125 +438,4 @@ public abstract class AbstractModel {
     abstract fun aa(i: Short, i_161_: Short)
 
     abstract fun ba(var_renderNode: RenderNode?): RenderNode?
-
-    companion object {
-        @JvmField
-        var anInt1125: Int = 0
-        @JvmField
-        var anInt1126: Int = 0
-        @JvmField
-        var anIntArray1127: IntArray? = IntArray(2)
-        @JvmField
-        var anInt1128: Int = 0
-        @JvmField
-        var anInt1129: Int = 0
-        @JvmField
-        var anInt1130: Int = 0
-        @JvmField
-        var aHuffmanCodec_1131: HuffmanCodec? = null
-        @JvmField
-        var anInt1132: Int = 0
-        @JvmField
-        var anInt1133: Int = 0
-        @JvmField
-        var anInt1134: Int = 0
-        @JvmField
-        var anInt1135: Int = 0
-        @JvmField
-        var aFloat1136: Float = 0f
-        @JvmField
-        var anInt1137: Int = 0
-
-        @JvmStatic
-        fun method606(i: Int, bool: Boolean, string: String) {
-            var string = string
-            anInt1128++
-            string = string.lowercase(Locale.getDefault())
-            var `is` = ShortArray(16)
-            var i_52_ = i
-            val i_53_ = if (bool) 32768 else 0
-            val i_54_ = ((if (!bool) BrightnessOptionState.aCompiledScriptCache_5900!!.anInt4365 else BrightnessOptionState.aCompiledScriptCache_5900!!.anInt4364) + i_53_)
-            for (i_55_ in i_53_..<i_54_) {
-                val class348_sub42_sub10 = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_55_, (-102).toByte())
-                if (class348_sub42_sub10.aBoolean9562 && class348_sub42_sub10.method3219(98).lowercase(Locale.getDefault()).indexOf(string) != -1) {
-                    if (i_52_ >= 50) {
-                        AsyncTaskHandle.aShortArray2579 = null
-                        SceneObjectSpawner.anInt1285 = -1
-                        return
-                    }
-                    if (`is`.size <= i_52_) {
-                        val is_56_ = ShortArray(`is`.size * 2)
-                        var i_57_ = 0
-                        while (i_52_ > i_57_) {
-                            is_56_[i_57_] = `is`[i_57_]
-                            i_57_++
-                        }
-                        `is` = is_56_
-                    }
-                    `is`[i_52_++] = i_55_.toShort()
-                }
-            }
-            SceneObjectSpawner.anInt1285 = i_52_
-            WidgetNodeLink.anInt2037 = 0
-            AsyncTaskHandle.aShortArray2579 = `is`
-            val strings = arrayOfNulls<String>(SceneObjectSpawner.anInt1285)
-            var i_58_ = 0
-            while (SceneObjectSpawner.anInt1285 > i_58_) {
-                strings[i_58_] = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(`is`[i_58_].toInt(), (-91).toByte()).method3219(CameraSplineNode.method2955(i, 81))
-                i_58_++
-            }
-            SpotAnimVector.method1333(AsyncTaskHandle.aShortArray2579, i + 26073, strings)
-        }
-
-        @JvmStatic
-        fun method607(i: Int, strings: Array<String?>?, `is`: ShortArray?, i_64_: Int, bool: Boolean) {
-            try {
-                if (bool != false) aFloat1136 = 0.5791872f
-                if (i > i_64_) {
-                    val i_65_ = (i_64_ - -i) / 2
-                    var i_66_ = i_64_
-                    val string = strings!![i_65_]
-                    strings[i_65_] = strings[i]
-                    strings[i] = string
-                    val i_67_ = `is`!![i_65_]
-                    `is`[i_65_] = `is`[i]
-                    `is`[i] = i_67_
-                    for (i_68_ in i_64_..<i) {
-                        if (string == null || (strings[i_68_] != null && (strings[i_68_]!!.compareTo(string) < (i_68_ and 0x1)))) {
-                            val string_69_ = strings[i_68_]
-                            strings[i_68_] = strings[i_66_]
-                            strings[i_66_] = string_69_
-                            val i_70_ = `is`[i_68_]
-                            `is`[i_68_] = `is`[i_66_]
-                            `is`[i_66_++] = i_70_
-                        }
-                    }
-                    strings[i] = strings[i_66_]
-                    strings[i_66_] = string
-                    `is`[i] = `is`[i_66_]
-                    `is`[i_66_] = i_67_
-                    method607(i_66_ + -1, strings, `is`, i_64_, false)
-                    method607(i, strings, `is`, 1 + i_66_, bool)
-                }
-                anInt1134++
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ka.UB(" + i + ',' + (if (strings != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_64_ + ',' + bool + ')'))
-            }
-        }
-
-        @JvmStatic
-        fun method609(i: Byte) {
-            if (i <= -7) {
-                aHuffmanCodec_1131 = null
-                anIntArray1127 = null
-            }
-        }
-
-        @JvmStatic
-        fun method616(i: Int, i_81_: Int, i_82_: Int): Boolean {
-            anInt1129++
-            if (i != 2) return false
-            return (i_81_ and 0x800) != 0
-        }
-    }
 }

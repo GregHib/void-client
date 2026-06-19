@@ -1,6 +1,6 @@
-import AbstractCameraTransform.Companion.method901
-import WorldMapLabel.Companion.method3568
-import RingBufferInputStream.Companion.method3616
+import AbstractCameraTransformStatics.method901
+import WorldMapLabelStatics.method3568
+import RingBufferInputStreamStatics.method3616
 
 /* Class258_Sub3_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -73,7 +73,7 @@ class GlTexture2DRegion : GlTexture2D {
             this.aBoolean9941 = false
             this.method1965(false, false, 10243)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_21_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_21_ + ')'))
         }
     }
 
@@ -91,7 +91,7 @@ class GlTexture2DRegion : GlTexture2D {
             this.anInt9939 = i_23_
             this.anInt9940 = i_22_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ')'))
         }
     }
 
@@ -105,7 +105,7 @@ class GlTexture2DRegion : GlTexture2D {
             this.aBoolean9941 = false
             this.method1965(false, false, 10243)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_26_ + ',' + i_27_ + ',' + i_28_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_26_ + ',' + i_27_ + ',' + i_28_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -123,34 +123,7 @@ class GlTexture2DRegion : GlTexture2D {
             }
             this.anInt9939 = i_31_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_32_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt9942: Int = 0
-
-        @JvmStatic
-        fun method1971(i: Int, string: String?, bool: Boolean, i_11_: Int) {
-            anInt9942++
-            ScrollingNoiseTexture.method556(false)
-            TileRenderState.method2681(9864)
-            NpcReference.method2959(-1)
-            OggBitstreamDecoder.method2965(string, i_11_, bool, 0)
-            ClientGameLoopNode.method2994(2)
-            VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
-            method3568(FacingDirectionNode.aRenderer6654, 4)
-            ModelHeaderCache.method1933(CameraRotationStub.aJs5Archive_322, FacingDirectionNode.aRenderer6654, true)
-            LocalizedText.method2061(-128)
-            method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
-            TextureCache.method3466(i xor 0x4f.inv())
-            AbstractProceduralTextureNode.method3038(-1)
-            if (WorldMapRenderer.anInt4674 == 3) ByteBuffer.method3379(2, 4)
-            else if (WorldMapRenderer.anInt4674 == 7) ByteBuffer.method3379(2, 8)
-            else if (WorldMapRenderer.anInt4674 != 10) {
-                if (WorldMapRenderer.anInt4674 == 1 || WorldMapRenderer.anInt4674 == 2) method3616(12639)
-            } else ByteBuffer.method3379(2, 11)
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("eba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_32_ + ')'))
         }
     }
 }

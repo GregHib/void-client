@@ -1,3 +1,5 @@
+import SceneListNodeStatics.anInt6467
+
 /* Class318_Sub9 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -14,9 +16,5 @@ open class SceneListNode : SceneLinkedListNode() {
             this.aClass318_Sub9_6468 = null
             val i_0_ = 123 / ((6 - i) / 37)
         }
-    }
-
-    companion object {
-        var anInt6467: Int = 0
     }
 }

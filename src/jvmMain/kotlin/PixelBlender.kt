@@ -1,5 +1,5 @@
-import CubemapTextureGlSource.Companion.method2264
-import CompositeRgbNoiseTexture.Companion.method574
+import CubemapTextureGlSourceStatics.method2264
+import CompositeRgbNoiseTextureStatics.method574
 
 /* Class298 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -31,13 +31,13 @@ object PixelBlender {
         anInt3808++
         val i_11_ = (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0])
         val i_12_ = (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])
-        if (i_11_ < 0 || i_11_ >= GlCubemapLightPass.anInt7319 || i_12_ < 0 || RangeThresholdTextureNode.anInt9109 <= i_12_) return false
-        if (i < 0 || i >= GlCubemapLightPass.anInt7319 || i_4_ < 0 || RangeThresholdTextureNode.anInt9109 <= i_4_) return false
-        val i_13_ = (method574(i, LocalPlayerState.aPlayer_1907!!.method2436(70.toByte()), i_6_, RadialGradientMaskEffect.anIntArray9185, bool, 120.toByte(), i_9_, i_11_, i_12_, InterfaceComponentGroup.anIntArray9626, i_4_, (TimedRecordAccessor.aCollisionMapArray7108s!![LocalPlayerState.aPlayer_1907!!.plane.toInt()]), i_8_, i_7_, i_10_))
+        if (i_11_ < 0 || i_11_ >= GlCubemapLightPassStatics.anInt7319 || i_12_ < 0 || RangeThresholdTextureNodeStatics.anInt9109 <= i_12_) return false
+        if (i < 0 || i >= GlCubemapLightPassStatics.anInt7319 || i_4_ < 0 || RangeThresholdTextureNodeStatics.anInt9109 <= i_4_) return false
+        val i_13_ = (method574(i, LocalPlayerState.aPlayer_1907!!.method2436(70.toByte()), i_6_, RadialGradientMaskEffectStatics.anIntArray9185, bool, 120.toByte(), i_9_, i_11_, i_12_, InterfaceComponentGroupStatics.anIntArray9626, i_4_, (TimedRecordAccessorStatics.aCollisionMapArray7108s!![LocalPlayerState.aPlayer_1907!!.plane.toInt()]), i_8_, i_7_, i_10_))
         if (i_13_ < 1) return false
-        MediaStreamClient.anInt3203 = InterfaceComponentGroup.anIntArray9626!![-1 + i_13_]
-        TerrainChunkBuilder.anInt1548 = RadialGradientMaskEffect.anIntArray9185!![-1 + i_13_]
-        ModelKeyBuilder.aBoolean6759 = false
+        MediaStreamClientStatics.anInt3203 = InterfaceComponentGroupStatics.anIntArray9626!![-1 + i_13_]
+        TerrainChunkBuilderStatics.anInt1548 = RadialGradientMaskEffectStatics.anIntArray9185!![-1 + i_13_]
+        ModelKeyBuilderStatics.aBoolean6759 = false
         if (i_5_ > -83) aBoolean3811 = true
         method2264(false)
         return true

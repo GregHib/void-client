@@ -1,20 +1,28 @@
-import jaggl.OpenGL.Companion.glBegin
-import jaggl.OpenGL.Companion.glEnd
-import jaggl.OpenGL.Companion.glGetUniformLocationARB
-import jaggl.OpenGL.Companion.glLoadIdentity
-import jaggl.OpenGL.Companion.glMatrixMode
-import jaggl.OpenGL.Companion.glOrtho
-import jaggl.OpenGL.Companion.glPopAttrib
-import jaggl.OpenGL.Companion.glPopMatrix
-import jaggl.OpenGL.Companion.glPushAttrib
-import jaggl.OpenGL.Companion.glPushMatrix
-import jaggl.OpenGL.Companion.glTexCoord2f
-import jaggl.OpenGL.Companion.glUniform1iARB
-import jaggl.OpenGL.Companion.glUniform3fARB
-import jaggl.OpenGL.Companion.glUseProgramObjectARB
-import jaggl.OpenGL.Companion.glVertex2i
-import jaggl.OpenGL.Companion.glViewport
+import jaggl.OpenGLStatics.glBegin
+import jaggl.OpenGLStatics.glEnd
+import jaggl.OpenGLStatics.glGetUniformLocationARB
+import jaggl.OpenGLStatics.glLoadIdentity
+import jaggl.OpenGLStatics.glMatrixMode
+import jaggl.OpenGLStatics.glOrtho
+import jaggl.OpenGLStatics.glPopAttrib
+import jaggl.OpenGLStatics.glPopMatrix
+import jaggl.OpenGLStatics.glPushAttrib
+import jaggl.OpenGLStatics.glPushMatrix
+import jaggl.OpenGLStatics.glTexCoord2f
+import jaggl.OpenGLStatics.glUniform1iARB
+import jaggl.OpenGLStatics.glUniform3fARB
+import jaggl.OpenGLStatics.glUseProgramObjectARB
+import jaggl.OpenGLStatics.glVertex2i
+import jaggl.OpenGLStatics.glViewport
 import java.io.*
+import GlBloomEffectStatics.anInt8827
+import GlBloomEffectStatics.anInt8828
+import GlBloomEffectStatics.anInt8829
+import GlBloomEffectStatics.anInt8831
+import GlBloomEffectStatics.anInt8834
+import GlBloomEffectStatics.anInt8839
+import GlBloomEffectStatics.anInt8840
+import GlBloomEffectStatics.anInt8843
 
 class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : AbstractBloomEffect(var_ha_Sub2) {
     private var aGlShaderProgramHandle_8822: GlShaderProgramHandle? = null
@@ -69,8 +77,8 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
                 glEnd()
             } else {
                 this.aHa_Sub2_6618.method3773(-1, aFrameBufferObject_8844)
-                var i_4_ = ColorThresholdEffect.method3051(anInt8841, 4096)
-                var i_5_ = ColorThresholdEffect.method3051(anInt8833, 4096)
+                var i_4_ = ColorThresholdEffectStatics.method3051(anInt8841, 4096)
+                var i_5_ = ColorThresholdEffectStatics.method3051(anInt8833, 4096)
                 var i_6_ = 0
                 while (i_4_ > 256 || i_5_ > 256) {
                     glViewport(0, 0, i_4_, i_5_)
@@ -162,13 +170,13 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
             glUseProgramObjectARB(l_7_)
             glUniform1iARB(glGetUniformLocationARB(l_7_, "sceneTex"), 0)
             glUniform1iARB(glGetUniformLocationARB(l_7_, "bloomTex"), 1)
-            glUniform3fARB(glGetUniformLocationARB(l_7_, "params"), GrayscaleEffect.aFloat9204, DetailLevelOptionState.aFloat6120, 0.0f)
+            glUniform3fARB(glGetUniformLocationARB(l_7_, "params"), GrayscaleEffectStatics.aFloat9204, DetailLevelOptionStateStatics.aFloat6120, 0.0f)
             this.aHa_Sub2_6618.method3738(-15039, 1)
             this.aHa_Sub2_6618.method3771((-99).toByte(), aClass258_Sub3_8835)
             this.aHa_Sub2_6618.method3738(-15039, 0)
             this.aHa_Sub2_6618.method3771((-82).toByte(), class258_sub3_2_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rda.H(" + (if (class258_sub3 != null) "{...}" else "null") + ',' + (if (class258_sub3_2_ != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rda.H(" + (if (class258_sub3 != null) "{...}" else "null") + ',' + (if (class258_sub3_2_ != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ')'))
         }
     }
 
@@ -177,8 +185,8 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
         if (i_14_ >= 7) {
             anInt8843++
             anInt8841 = i_15_
-            val i_16_ = ColorThresholdEffect.method3051(anInt8841, 4096)
-            val i_17_ = ColorThresholdEffect.method3051(anInt8833, 4096)
+            val i_16_ = ColorThresholdEffectStatics.method3051(anInt8841, 4096)
+            val i_17_ = ColorThresholdEffectStatics.method3051(anInt8833, 4096)
             if (anInt8826 != i_16_ || anInt8838 != i_17_) {
                 if (aClass258_Sub3Array8837 != null) {
                     var i_18_ = 0
@@ -264,17 +272,17 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
                 return false
             }
             this.aHa_Sub2_6618.method3770(-422613672, aFrameBufferObject_8825)
-            aGlShaderProgramHandle_8842 = (SequencedWallEntity.method2493(
+            aGlShaderProgramHandle_8842 = (SequencedWallEntityStatics.method2493(
                 this.aHa_Sub2_6618,
                 -1,
-                (arrayOf<ManagedGlResource?>(TimedTileQueueEntry.method3249(35632, 80, this.aHa_Sub2_6618, "#extension GL_ARB_texture_rectangle : enable\nuniform vec3 params;\nuniform sampler2DRect sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2DRect(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))
+                (arrayOf<ManagedGlResource?>(TimedTileQueueEntryStatics.method3249(35632, 80, this.aHa_Sub2_6618, "#extension GL_ARB_texture_rectangle : enable\nuniform vec3 params;\nuniform sampler2DRect sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2DRect(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))
             ))
-            aGlShaderProgramHandle_8824 = (SequencedWallEntity.method2493(this.aHa_Sub2_6618, -1, (arrayOf<ManagedGlResource?>(TimedTileQueueEntry.method3249(35632, -45, this.aHa_Sub2_6618, "uniform vec3 params;\nuniform sampler2D sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2D(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))))
-            aGlShaderProgramHandle_8836 = (SequencedWallEntity.method2493(
+            aGlShaderProgramHandle_8824 = (SequencedWallEntityStatics.method2493(this.aHa_Sub2_6618, -1, (arrayOf<ManagedGlResource?>(TimedTileQueueEntryStatics.method3249(35632, -45, this.aHa_Sub2_6618, "uniform vec3 params;\nuniform sampler2D sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2D(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))))
+            aGlShaderProgramHandle_8836 = (SequencedWallEntityStatics.method2493(
                 this.aHa_Sub2_6618,
                 -1,
                 (arrayOf<ManagedGlResource?>(
-                    TimedTileQueueEntry.method3249(
+                    TimedTileQueueEntryStatics.method3249(
                         35632,
                         -108,
                         this.aHa_Sub2_6618,
@@ -282,9 +290,9 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
                     )
                 ))
             ))
-            aGlShaderProgramHandle_8822 = (SequencedWallEntity.method2493(
+            aGlShaderProgramHandle_8822 = (SequencedWallEntityStatics.method2493(
                 this.aHa_Sub2_6618, -1, (arrayOf<ManagedGlResource?>(
-                    TimedTileQueueEntry.method3249(
+                    TimedTileQueueEntryStatics.method3249(
                         35632,
                         -31,
                         this.aHa_Sub2_6618,
@@ -295,74 +303,5 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
             return aGlShaderProgramHandle_8824 != null && aGlShaderProgramHandle_8842 != null && aGlShaderProgramHandle_8836 != null && aGlShaderProgramHandle_8822 != null
         }
         return false
-    }
-
-    companion object {
-        @JvmField
-        var anInt8823: Int = 0
-        @JvmField
-        var anInt8827: Int = 0
-        @JvmField
-        var anInt8828: Int = 0
-        @JvmField
-        var anInt8829: Int = 0
-        @JvmField
-        var anInt8831: Int = 0
-        @JvmField
-        var aCameraRotationStub_8832: CameraRotationStub? = CameraRotationStub()
-        @JvmField
-        var anInt8834: Int = 0
-        @JvmField
-        var anInt8839: Int = 0
-        @JvmField
-        var anInt8840: Int = 0
-        @JvmField
-        var anInt8843: Int = 0
-        @JvmStatic
-        fun method2765(i: Int) {
-            aCameraRotationStub_8832 = null
-            if (i != 2048) method2765(52)
-        }
-
-        @JvmStatic
-        @Throws(IOException::class)
-        fun method2766(bool: Boolean, throwable: Throwable): String {
-            var throwable = throwable
-            anInt8823++
-            var string: String
-            if (throwable is TextureLoadException) {
-                val runtimeexception_sub1 = throwable
-                string = (runtimeexception_sub1.aString4594 + " | ")
-                throwable = (runtimeexception_sub1.aThrowable4595!!)
-            } else string = ""
-            val stringwriter = StringWriter()
-            val printwriter = PrintWriter(stringwriter)
-            throwable.printStackTrace(printwriter)
-            printwriter.close()
-            val string_8_ = stringwriter.toString()
-            val bufferedreader = BufferedReader(StringReader(string_8_))
-            if (bool != false) method2765(-61)
-            val string_9_ = bufferedreader.readLine()
-            while (true) {
-                val string_10_ = bufferedreader.readLine()
-                if (string_10_ == null) break
-                val i = string_10_.indexOf('(')
-                val i_11_ = string_10_.indexOf(')', 1 + i)
-                var string_12_: String?
-                if (i == -1) string_12_ = string_10_
-                else string_12_ = string_10_.substring(0, i)
-                string_12_ = string_12_.trim { it <= ' ' }
-                string_12_ = string_12_.substring(1 + string_12_.lastIndexOf(' '))
-                string_12_ = string_12_.substring(1 + string_12_.lastIndexOf('\t'))
-                string += string_12_
-                if (i != -1 && i_11_ != -1) {
-                    val i_13_ = string_10_.indexOf(".java:", i)
-                    if (i_13_ >= 0) string += string_10_.substring(i_13_ - -5, i_11_)
-                }
-                string += ' '
-            }
-            string += "| " + string_9_
-            return string
-        }
     }
 }

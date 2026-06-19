@@ -1,6 +1,13 @@
 import java.awt.Canvas
 import java.awt.Rectangle
 import kotlin.math.max
+import oaStatics.anIntArray5130
+import oaStatics.aShortArray5133
+import oaStatics.aByteArray5134
+import oaStatics.anIntArray5135
+import oaStatics.anIntArray5136
+import oaStatics.aFloatArray5138
+import oaStatics.anIntArray5139
 
 /*
  * NativeGraphicsContext
@@ -262,7 +269,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
             aNodeDeque_5123.method1996(117)
             FA()
             if (aBoolean5142) {
-                CubeMapMaterialPass.method2173(true, -110, false)
+                CubeMapMaterialPassStatics.method2173(true, -110, false)
                 aBoolean5142 = false
             }
             g()
@@ -577,10 +584,10 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         aBoolean5142 = false
         do {
             try {
-                if (!BlankTextureNode.method3098(-30282, "sw3d")) throw RuntimeException("")
+                if (!BlankTextureNodeStatics.method3098(-30282, "sw3d")) throw RuntimeException("")
                 RequestGate.method1949((-128).toByte())
                 MA(aRenderConfig4579, 0, 0)
-                CachedRgbNoiseTexture.method566(false, true, 23.toByte())
+                CachedRgbNoiseTextureStatics.method566(false, true, 23.toByte())
                 aBoolean5142 = true
                 aAbstractCameraTransform_5131 = ja()
                 method3638(ja())
@@ -596,19 +603,5 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
             }
             break
         } while (false)
-    }
-
-    companion object {
-        private val anIntArray5122 = IntArray(max(max(104, 20), 24573))
-        private val aFloatArray5129 = FloatArray(20)
-        private val anIntArray5130: IntArray = anIntArray5122
-        var anIntArray5132: IntArray = IntArray(6)
-        private val aShortArray5133: ShortArray = ShortArray(8191)
-        private val aByteArray5134: ByteArray = ByteArray(8191)
-        private val anIntArray5135: IntArray = IntArray(8191)
-        private val anIntArray5136: IntArray = anIntArray5122
-        private val aFloatArray5138: FloatArray = aFloatArray5129
-        private val anIntArray5139: IntArray = IntArray(8191)
-        var anIntArray5140: IntArray = anIntArray5122
     }
 }

@@ -1,5 +1,6 @@
-import WaterMaterialPass.Companion.method2148
-import CollisionFlagQuery.Companion.method721
+import WaterMaterialPassStatics.method2148
+import CollisionFlagQueryStatics.method721
+import ManagedGlResourceStatics.anInt3151
 
 /* Class242 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -21,45 +22,7 @@ class ManagedGlResource internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Lo
             aHa_Sub2_3153 = var_ha_Sub2
             this.aLong3156 = l
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
-        }
-    }
-
-    companion object {
-        var anInt3151: Int = 0
-        @JvmField
-        var aClass348_Sub42_Sub13_3152: ContactList? = null
-        var anInt3154: Int = 0
-        var anInt3155: Int = 0
-        @JvmStatic
-        fun method1866(i: Int) {
-            if (i != 0) aClass348_Sub42_Sub13_3152 = null
-            aClass348_Sub42_Sub13_3152 = null
-        }
-
-        fun method1867(i: Int) {
-            anInt3155++
-            SceneNodeDeque.anInt1498++
-            val class348_sub47 = method2148(TileSceneEntity.aFontMetaRef_8724, TheoraVideoStream.aIsaacCipher_9029, -99)
-            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
-            InterfaceComponentGroup.method3243(118, class348_sub47)
-        }
-
-        fun method1868(i: Byte, class348_sub42_sub13: ContactList) {
-            val i_0_ = -104 / ((i - 38) / 54)
-            anInt3154++
-            class348_sub42_sub13.method3162(true)
-            var bool = false
-            var class348_sub42_sub13_1_ = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-85) as ContactList?)
-            while (class348_sub42_sub13_1_ != null) {
-                if (SceneModelBuilder.method2496(class348_sub42_sub13_1_.method3235(-17937), class348_sub42_sub13.method3235(-17937), true)) {
-                    method721(class348_sub42_sub13_1_, class348_sub42_sub13, -1)
-                    bool = true
-                    break
-                }
-                class348_sub42_sub13_1_ = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(84.toByte()) as ContactList?)
-            }
-            if (!bool) ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1005(true, class348_sub42_sub13)
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("tba.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + l + ',' + i + ')'))
         }
     }
 }

@@ -1,3 +1,13 @@
+import DoublyLinkedNodeListStatics.method1879
+import DoublyLinkedNodeListStatics.anInt3157
+import DoublyLinkedNodeListStatics.anInt3158
+import DoublyLinkedNodeListStatics.anInt3159
+import DoublyLinkedNodeListStatics.anInt3160
+import DoublyLinkedNodeListStatics.anInt3161
+import DoublyLinkedNodeListStatics.anInt3162
+import DoublyLinkedNodeListStatics.anInt3163
+import DoublyLinkedNodeListStatics.anInt3168
+
 /* Class243 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -91,46 +101,5 @@ class DoublyLinkedNodeList {
     init {
         aSceneLinkedListNode_3166.aSceneLinkedListNode_3976 = aSceneLinkedListNode_3166
         aSceneLinkedListNode_3166.aSceneLinkedListNode_3970 = aSceneLinkedListNode_3166
-    }
-
-    companion object {
-        var anInt3157: Int = 0
-        var anInt3158: Int = 0
-        var anInt3159: Int = 0
-        var anInt3160: Int = 0
-        var anInt3161: Int = 0
-        var anInt3162: Int = 0
-        var anInt3163: Int = 0
-        var anInt3164: Int = 0
-        var aFontMetaRef_3165: FontMetaRef? = FontMetaRef(60, 8)
-        var anInt3168: Int = 0
-
-        @JvmStatic
-        fun method1873(i: Byte) {
-            if (i > -111) aFontMetaRef_3165 = null
-            aFontMetaRef_3165 = null
-        }
-
-        fun method1877(var_renderer: Renderer?, i: Int) {
-            anInt3164++
-            if (i >= -20) method1877(null, -112)
-            var class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1872(8) as SceneGraphContainer?
-            while (class318_sub10 != null) {
-                if (class318_sub10.aBoolean6482) class318_sub10.method2528(var_renderer)
-                class318_sub10 = GzipDecompressor.aDoublyLinkedNodeList_2077!!.method1878(124.toByte()) as SceneGraphContainer?
-            }
-        }
-
-        @JvmStatic
-        fun method1879(bool: Boolean) {
-            if (bool) {
-                HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 = ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082
-                NativeSprite.aTerrainTileArray5191 = SoundCacheState.aTerrainTileArray4142
-            } else {
-                HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 = WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148
-                NativeSprite.aTerrainTileArray5191 = TerrainTileShape.aTerrainTileArray8801
-            }
-            MapAreaDefinition.anInt2524 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!!.size
-        }
     }
 }

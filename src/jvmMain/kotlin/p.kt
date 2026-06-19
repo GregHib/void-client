@@ -1,5 +1,7 @@
 import java.awt.Canvas
 import java.awt.Rectangle
+import pStatics.aBoolean5144
+import pStatics.aLong5146
 
 /*
  * NativeFrameBuffer
@@ -69,10 +71,5 @@ class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145
         w(true)
         this.nativeid = 0L
         this.aCanvas5147 = null
-    }
-
-    companion object {
-        private var aBoolean5144 = false
-        private var aLong5146: Long = 0
     }
 }

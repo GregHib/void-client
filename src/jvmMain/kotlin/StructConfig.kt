@@ -1,4 +1,12 @@
-import CacheArchiveIndexLoader.Companion.method340
+import CacheArchiveIndexLoaderStatics.method340
+import StructConfigStatics.anInt563
+import StructConfigStatics.anInt571
+import StructConfigStatics.anInt579
+import StructConfigStatics.anInt589
+import StructConfigStatics.anInt594
+import StructConfigStatics.anInt600
+import StructConfigStatics.anInt608
+import StructConfigStatics.anInt610
 
 /* Class42 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -116,7 +124,7 @@ class StructConfig {
         var abstractModelRenderer = this.aConfigDefinitionLoader_593!!.aLruByteCache_2089.method583(i_4_.toLong(), 64) as AbstractModelRenderer?
         if (abstractModelRenderer != null) return abstractModelRenderer
         if (!this.aConfigDefinitionLoader_593!!.aJs5Archive_2087!!.method421(false, i_3_)) return null
-        val spriteImage = SpriteImage.method1521((this.aConfigDefinitionLoader_593!!.aJs5Archive_2087!!), i_3_, 0)
+        val spriteImage = SpriteImageStatics.method1521((this.aConfigDefinitionLoader_593!!.aJs5Archive_2087!!), i_3_, 0)
         if (spriteImage != null) {
             abstractModelRenderer = var_renderer.method3691(spriteImage, true)
             this.aConfigDefinitionLoader_593!!.aLruByteCache_2089.method582(abstractModelRenderer, i_4_.toLong(), (-111).toByte())
@@ -129,7 +137,7 @@ class StructConfig {
         var abstractModelRenderer = (this.aConfigDefinitionLoader_593!!.aLruByteCache_2089.method583((anInt598 or 0x20000 or (var_renderer.anInt4567 shl 29)).toLong(), -75)) as AbstractModelRenderer?
         if (abstractModelRenderer != null) return abstractModelRenderer
         this.aConfigDefinitionLoader_593!!.aJs5Archive_2087!!.method421(bool, anInt598)
-        val spriteImage = SpriteImage.method1521((this.aConfigDefinitionLoader_593!!.aJs5Archive_2087!!), anInt598, 0)
+        val spriteImage = SpriteImageStatics.method1521((this.aConfigDefinitionLoader_593!!.aJs5Archive_2087!!), anInt598, 0)
         if (spriteImage != null) {
             abstractModelRenderer = var_renderer.method3691(spriteImage, true)
             this.aConfigDefinitionLoader_593!!.aLruByteCache_2089.method582(abstractModelRenderer, (var_renderer.anInt4567 shl 29 or (anInt598 or 0x20000)).toLong(), (-121).toByte())
@@ -260,26 +268,5 @@ class StructConfig {
         anInt606 = -1
         this.anInt601 = -1
         this.anInt605 = -1
-    }
-
-    companion object {
-        @JvmField
-        var anInt562: Int = 0
-        @JvmField
-        var anInt563: Int = 0
-        @JvmField
-        var anInt571: Int = 0
-        @JvmField
-        var anInt579: Int = 0
-        @JvmField
-        var anInt589: Int = 0
-        @JvmField
-        var anInt594: Int = 0
-        @JvmField
-        var anInt600: Int = 0
-        @JvmField
-        var anInt608: Int = 0
-        @JvmField
-        var anInt610: Int = 0
     }
 }

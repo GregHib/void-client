@@ -1,15 +1,15 @@
-import CubemapTextureFactory.Companion.method3583
-import jaggl.OpenGL.Companion.glBegin
-import jaggl.OpenGL.Companion.glColor4ub
-import jaggl.OpenGL.Companion.glDisable
-import jaggl.OpenGL.Companion.glEnable
-import jaggl.OpenGL.Companion.glEnd
-import jaggl.OpenGL.Companion.glLoadIdentity
-import jaggl.OpenGL.Companion.glTexCoord2f
-import jaggl.OpenGL.Companion.glTexGenfv
-import jaggl.OpenGL.Companion.glTexGeni
-import jaggl.OpenGL.Companion.glTranslatef
-import jaggl.OpenGL.Companion.glVertex2i
+import CubemapTextureFactoryStatics.method3583
+import jaggl.OpenGLStatics.glBegin
+import jaggl.OpenGLStatics.glColor4ub
+import jaggl.OpenGLStatics.glDisable
+import jaggl.OpenGLStatics.glEnable
+import jaggl.OpenGLStatics.glEnd
+import jaggl.OpenGLStatics.glLoadIdentity
+import jaggl.OpenGLStatics.glTexCoord2f
+import jaggl.OpenGLStatics.glTexGenfv
+import jaggl.OpenGLStatics.glTexGeni
+import jaggl.OpenGLStatics.glTranslatef
+import jaggl.OpenGLStatics.glVertex2i
 
 class GlFontDisplayList internal constructor(private val aHa_Sub2_6509: OpenGlRenderer, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, bool: Boolean) : Font(aHa_Sub2_6509, fontDefinition) {
     private val aGlDisplayListFont_6510: GlDisplayListFont
@@ -82,7 +82,7 @@ class GlFontDisplayList internal constructor(private val aHa_Sub2_6509: OpenGlRe
                     }
                 }
             }
-            aClass258_Sub3_Sub1_6511 = InvertTextureNode.method3132(`is`, 0, 0, i_1_, i_1_, aHa_Sub2_6509, false, 12.toByte())
+            aClass258_Sub3_Sub1_6511 = InvertTextureNodeStatics.method3132(`is`, 0, 0, i_1_, i_1_, aHa_Sub2_6509, false, 12.toByte())
             aBoolean6512 = false
         }
         aClass258_Sub3_Sub1_6511!!.method1957(9728, false)

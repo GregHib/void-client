@@ -1,10 +1,20 @@
-import LinkedListIterator.Companion.method1242
-import TexGenMaterialPass.Companion.method2161
+import LinkedListIteratorStatics.method1242
+import TexGenMaterialPassStatics.method2161
 import java.io.EOFException
 import java.io.IOException
 import java.io.InputStream
 import java.io.OutputStream
 import java.net.Socket
+import SocketStreamWorkerStatics.anInt2646
+import SocketStreamWorkerStatics.anInt2647
+import SocketStreamWorkerStatics.anInt2650
+import SocketStreamWorkerStatics.anInt2651
+import SocketStreamWorkerStatics.anInt2655
+import SocketStreamWorkerStatics.anInt2660
+import SocketStreamWorkerStatics.anInt2664
+import SocketStreamWorkerStatics.aIntRange_2665
+import SocketStreamWorkerStatics.anInt2666
+import SocketStreamWorkerStatics.anInt2667
 
 /*
  * Class202
@@ -185,60 +195,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
             anOutputStream2657 = aSocket2668.getOutputStream()
             anInt2669 = i
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("re.<init>(" + (if (socket != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
-        }
-    }
-
-    companion object {
-        var anInt2646: Int = 0
-        var anInt2647: Int = 0
-        var anInt2650: Int = 0
-        var anInt2651: Int = 0
-        var anInt2653: Int = 0
-        var anInt2655: Int = 0
-        var anInt2660: Int = 0
-        @JvmField
-        var aFontMetaRef_2661: FontMetaRef? = FontMetaRef(24, 7)
-        var anInt2662: Int = 0
-        var anInt2664: Int = 0
-        var aIntRange_2665: IntRange? = IntRange(12, 0)
-        var anInt2666: Int = 0
-        var anInt2667: Int = 0
-        @JvmField
-        var anInt2670: Int = 0
-        @JvmField
-        var aLruByteCache_2671: LruByteCache? = LruByteCache(10)
-
-        @JvmStatic
-        fun method1469(i: Int) {
-            anInt2662++
-            MaterialPass.anInt3682 = 0
-            SceneryDetailOptionState.anInt6095 = 0
-            val i_0_ = 29 % ((-42 - i) / 63)
-            var i_1_ = 0
-            while (BackgroundWorkerThread.anInt3225 > i_1_) {
-                val i_2_ = ItemModelDefinition.anInt425 * i_1_
-                for (i_3_ in 0..<ItemModelDefinition.anInt425) {
-                    val i_4_ = i_2_ - -i_3_
-                    NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_4_]!!.method15(i_3_ * DirectionPath.anInt1067, i_1_ * ByteStore.anInt4267, DirectionPath.anInt1067, ByteStore.anInt4267, 0, 0, true, true)
-                }
-                i_1_++
-            }
-        }
-
-        @JvmStatic
-        fun method1471(i: Byte) {
-            if (i >= 80) {
-                aLruByteCache_2671 = null
-                aIntRange_2665 = null
-                aFontMetaRef_2661 = null
-            }
-        }
-
-        fun method1475(i: Byte, i_12_: Int, i_13_: Int): Boolean {
-            anInt2653++
-            if (i > -95) method1469(-48)
-            return (SphereMapMaterialPass.method2174((-115).toByte(), i_13_, i_12_) and IndexedFileCache.method1163(i_12_, (-72).toByte(), i_13_))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("re.<init>(" + (if (socket != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 }

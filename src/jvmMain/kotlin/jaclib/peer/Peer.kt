@@ -11,13 +11,4 @@ abstract class Peer protected constructor() {
     protected open fun a(): Long {
         return this.reference!!.a(false)
     }
-
-    companion object {
-        init {
-            init(PeerReference::class.java)
-        }
-
-        @JvmStatic
-        private external fun init(arg0: Class<*>?)
-    }
 }

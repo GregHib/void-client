@@ -1,5 +1,5 @@
-import GlWaterRenderPass.Companion.method3536
-import NpcType.Companion.method802
+import GlWaterRenderPassStatics.method3536
+import NpcTypeStatics.method802
 import kotlin.concurrent.Volatile
 
 /* Class203 - Decompiled by JODE
@@ -16,14 +16,14 @@ object ProjectileSpawner {
 
     fun method1477(i: Int, i_0_: Int) {
         anInt2672++
-        val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), i_0_) //14
+        val class348_sub42_sub15 = NamedTimedNodeStatics.method2516(i, 105.toByte(), i_0_) //14
         class348_sub42_sub15.method3251(-16058)
     }
 
     @JvmStatic
     fun method1478(bool: Boolean): OutgoingPacketNode? {
         anInt2673++
-        val class348_sub47 = ParticleConfigParser.method2273((-103).toByte())
+        val class348_sub47 = ParticleConfigParserStatics.method2273((-103).toByte())
         if (bool != true) return null
         class348_sub47!!.anInt7122 = 0
         class348_sub47.aFontMetaRef_7118 = null
@@ -33,18 +33,18 @@ object ProjectileSpawner {
 
     fun method1479(i: Int, i_1_: Byte, i_2_: Int, i_3_: Int) {
         anInt2675++
-        val i_4_ = i_2_ - -ArbVertexProgram.regionTileX
+        val i_4_ = i_2_ - -ArbVertexProgramStatics.regionTileX
         val i_5_ = RegionMapDecoder.regionTileY + i
-        if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null && i_2_ >= 0 && i >= 0 && GlCubemapLightPass.anInt7319 > i_2_ && RangeThresholdTextureNode.anInt9109 > i && (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 0 || i_3_ == (LocalPlayerState.aPlayer_1907!!.plane).toInt())) {
+        if (HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029 != null && i_2_ >= 0 && i >= 0 && GlCubemapLightPassStatics.anInt7319 > i_2_ && RangeThresholdTextureNodeStatics.anInt9109 > i && (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 0 || i_3_ == (LocalPlayerState.aPlayer_1907!!.plane).toInt())) {
             val l = (i_5_ shl 14 or (i_3_ shl 28) or i_4_).toLong()
-            val class348_sub37 = (ModelBatchBase.aHashtable_1895!!.method3480(l, -6008) as? HashTableContainer?)
+            val class348_sub37 = (ModelBatchBaseStatics.aHashtable_1895!!.method3480(l, -6008) as? HashTableContainer?)
             if (class348_sub37 == null) NpcEntityUpdater.method2110(i_3_, i_2_, i)
             else {
                 val class348_sub34 = class348_sub37.aNodeDeque_6998.method1995(4) as? IntPair?
                 if (class348_sub34 == null) NpcEntityUpdater.method2110(i_3_, i_2_, i)
                 else {
                     var class318_sub1_sub2_sub1 = (NpcEntityUpdater.method2110(i_3_, i_2_, i) as? DynamicSceneObjectEntity?)
-                    if (class318_sub1_sub2_sub1 == null) class318_sub1_sub2_sub1 = (DynamicSceneObjectEntity(i_2_ shl 9, NativeSprite.aTerrainTileArray5191!![i_3_]!!.method3982((-86).toByte(), i, i_2_), i shl 9, i_3_, i_3_))
+                    if (class318_sub1_sub2_sub1 == null) class318_sub1_sub2_sub1 = (DynamicSceneObjectEntity(i_2_ shl 9, NativeSpriteStatics.aTerrainTileArray5191!![i_3_]!!.method3982((-86).toByte(), i, i_2_), i shl 9, i_3_, i_3_))
                     else {
                         class318_sub1_sub2_sub1.anInt10180 = -1
                         class318_sub1_sub2_sub1.anInt10189 = class318_sub1_sub2_sub1.anInt10180

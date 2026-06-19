@@ -1,3 +1,10 @@
+import CurveTextureNodeStatics.anInt9205
+import CurveTextureNodeStatics.anInt9206
+import CurveTextureNodeStatics.anInt9207
+import CurveTextureNodeStatics.anInt9209
+import CurveTextureNodeStatics.anInt9212
+import CurveTextureNodeStatics.anInt9213
+
 /* Class348_Sub40_Sub14 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -71,7 +78,7 @@ class CurveTextureNode : AbstractProceduralTextureNode(1, true) {
                     val `is` = anIntArrayArray9210!![-1 + i_21_]
                     val is_22_ = anIntArrayArray9210!![i_21_]
                     val i_23_ = ((-`is`[0] + i_20_ shl 12) / (is_22_[0] - `is`[0]))
-                    val i_24_ = (-(WidgetComponentNode.anIntArray4654!![(i_23_ and 0x1ff6) shr 5]) + 4096 shr 1)
+                    val i_24_ = (-(WidgetComponentNodeStatics.anIntArray4654!![(i_23_ and 0x1ff6) shr 5]) + 4096 shr 1)
                     val i_25_ = -i_24_ + 4096
                     var i_26_ = `is`[1] * i_25_ + is_22_[1] * i_24_ shr 12
                     if (i_26_ <= -32768) i_26_ = -32767
@@ -111,7 +118,7 @@ class CurveTextureNode : AbstractProceduralTextureNode(1, true) {
         if (i_33_ != 255) anIntArray9214 = null
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_34_ = this.method3048(i, 633706337, 0)!!
-            for (i_35_ in 0..<DisplaceTextureNode.Companion.anInt9139) {
+            for (i_35_ in 0..<DisplaceTextureNodeStatics.anInt9139) {
                 var i_36_ = is_34_[i_35_] shr 4
                 if (i_36_ < 0) i_36_ = 0
                 if (i_36_ > 256) i_36_ = 256
@@ -148,20 +155,5 @@ class CurveTextureNode : AbstractProceduralTextureNode(1, true) {
         val i_41_ = -48 % ((i_40_ - 13) / 56)
         if (anIntArrayArray9210!!.size <= i) return anIntArray9208
         return anIntArrayArray9210!![i]
-    }
-
-    companion object {
-        @JvmField
-        var anInt9205: Int = 0
-        @JvmField
-        var anInt9206: Int = 0
-        @JvmField
-        var anInt9207: Int = 0
-        @JvmField
-        var anInt9209: Int = 0
-        @JvmField
-        var anInt9212: Int = 0
-        @JvmField
-        var anInt9213: Int = 0
     }
 }

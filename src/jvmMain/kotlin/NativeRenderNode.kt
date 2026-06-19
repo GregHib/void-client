@@ -1,4 +1,8 @@
-import IOException_Sub1.Companion.method131
+import IOException_Sub1Statics.method131
+import NativeRenderNodeStatics.anInt10469
+import NativeRenderNodeStatics.anInt10472
+import NativeRenderNodeStatics.anInt10473
+import NativeRenderNodeStatics.anInt10475
 
 /* r_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -58,13 +62,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                         i -= i_7_
                         i_7_ = this.anInt10466 * i_7_
                         while (--i >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                            CacheArchiveIndexLoaderStatics.method339(i_7_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                             i_9_ += i_10_
                             i_7_ += this.anInt10466
                             i_6_ += i_11_
                         }
                         while (--i_8_ >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                            CacheArchiveIndexLoaderStatics.method339(i_7_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                             i_6_ += i_11_
                             i_7_ += this.anInt10466
                             i_5_ += i_13_
@@ -74,13 +78,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                         i -= i_7_
                         i_7_ = this.anInt10466 * i_7_
                         while (--i >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                            CacheArchiveIndexLoaderStatics.method339(i_7_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                             i_7_ += this.anInt10466
                             i_6_ += i_11_
                             i_9_ += i_10_
                         }
                         while (--i_8_ >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                            CacheArchiveIndexLoaderStatics.method339(i_7_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                             i_6_ += i_11_
                             i_5_ += i_13_
                             i_7_ += this.anInt10466
@@ -104,13 +108,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                         i_8_ -= i_7_
                         i_7_ *= this.anInt10466
                         while (--i_8_ >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                            CacheArchiveIndexLoaderStatics.method339(i_7_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                             i_7_ += this.anInt10466
                             i_5_ += i_10_
                             i_6_ += i_11_
                         }
                         while (--i >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                            CacheArchiveIndexLoaderStatics.method339(i_7_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                             i_7_ += this.anInt10466
                             i_5_ += i_10_
                             i_9_ += i_13_
@@ -120,13 +124,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                         i_8_ -= i_7_
                         i_7_ *= this.anInt10466
                         while (--i_8_ >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                            CacheArchiveIndexLoaderStatics.method339(i_7_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                             i_6_ += i_11_
                             i_7_ += this.anInt10466
                             i_5_ += i_10_
                         }
                         while (--i >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                            CacheArchiveIndexLoaderStatics.method339(i_7_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                             i_7_ += this.anInt10466
                             i_9_ += i_13_
                             i_5_ += i_10_
@@ -151,13 +155,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                     i -= i_8_
                     i_8_ *= this.anInt10466
                     while (--i >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                        CacheArchiveIndexLoaderStatics.method339(i_8_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                         i_8_ += this.anInt10466
                         i_6_ += i_11_
                         i_9_ += i_13_
                     }
                     while (--i_7_ >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                        CacheArchiveIndexLoaderStatics.method339(i_8_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                         i_5_ += i_10_
                         i_8_ += this.anInt10466
                         i_6_ += i_11_
@@ -167,13 +171,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                     i -= i_8_
                     i_8_ = this.anInt10466 * i_8_
                     while (--i >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                        CacheArchiveIndexLoaderStatics.method339(i_8_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                         i_6_ += i_11_
                         i_8_ += this.anInt10466
                         i_9_ += i_13_
                     }
                     while (--i_7_ >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                        CacheArchiveIndexLoaderStatics.method339(i_8_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                         i_5_ += i_10_
                         i_8_ += this.anInt10466
                         i_6_ += i_11_
@@ -197,13 +201,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                     i_7_ -= i_8_
                     i_8_ = this.anInt10466 * i_8_
                     while (--i_7_ >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                        CacheArchiveIndexLoaderStatics.method339(i_8_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                         i_8_ += this.anInt10466
                         i_5_ += i_11_
                         i_9_ += i_13_
                     }
                     while (--i >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                        CacheArchiveIndexLoaderStatics.method339(i_8_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                         i_6_ += i_10_
                         i_9_ += i_13_
                         i_8_ += this.anInt10466
@@ -213,13 +217,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                     i_7_ -= i_8_
                     i_8_ = this.anInt10466 * i_8_
                     while (--i_7_ >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                        CacheArchiveIndexLoaderStatics.method339(i_8_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                         i_5_ += i_11_
                         i_9_ += i_13_
                         i_8_ += this.anInt10466
                     }
                     while (--i >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                        CacheArchiveIndexLoaderStatics.method339(i_8_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                         i_9_ += i_13_
                         i_8_ += this.anInt10466
                         i_6_ += i_10_
@@ -244,13 +248,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                 i_8_ -= i
                 i = this.anInt10466 * i
                 while (--i_8_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                    CacheArchiveIndexLoaderStatics.method339(i, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                     i += this.anInt10466
                     i_5_ += i_10_
                     i_6_ += i_13_
                 }
                 while (--i_7_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                    CacheArchiveIndexLoaderStatics.method339(i, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                     i += this.anInt10466
                     i_9_ += i_11_
                     i_5_ += i_10_
@@ -260,13 +264,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                 i_8_ -= i
                 i *= this.anInt10466
                 while (--i_8_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                    CacheArchiveIndexLoaderStatics.method339(i, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                     i_6_ += i_13_
                     i_5_ += i_10_
                     i += this.anInt10466
                 }
                 while (--i_7_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                    CacheArchiveIndexLoaderStatics.method339(i, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                     i += this.anInt10466
                     i_9_ += i_11_
                     i_5_ += i_10_
@@ -290,13 +294,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                 i_7_ -= i
                 i = this.anInt10466 * i
                 while (--i_7_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                    CacheArchiveIndexLoaderStatics.method339(i, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                     i_9_ += i_13_
                     i += this.anInt10466
                     i_5_ += i_10_
                 }
                 while (--i_8_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                    CacheArchiveIndexLoaderStatics.method339(i, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                     i_6_ += i_11_
                     i += this.anInt10466
                     i_9_ += i_13_
@@ -306,13 +310,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                 i_7_ -= i
                 i *= this.anInt10466
                 while (--i_7_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                    CacheArchiveIndexLoaderStatics.method339(i, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                     i_5_ += i_10_
                     i_9_ += i_13_
                     i += this.anInt10466
                 }
                 while (--i_8_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                    CacheArchiveIndexLoaderStatics.method339(i, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                     i += this.anInt10466
                     i_9_ += i_13_
                     i_6_ += i_11_
@@ -349,55 +353,7 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
         try {
             this.aByteArray10471 = ByteArray(i_19_ * i)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_19_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt10469: Int = 0
-        @JvmField
-        var anInt10470: Int = 0
-        @JvmField
-        var anInt10472: Int = 0
-        @JvmField
-        var anInt10473: Int = 0
-        @JvmField
-        var anInt10475: Int = 0
-        @JvmField
-        var anInt10476: Int = 0
-        @JvmField
-        var aFontMetaRef_10477: FontMetaRef? = FontMetaRef(22, 7)
-        @JvmField
-        var anIntArray10478: IntArray? = IntArray(1)
-        @JvmField
-        var aNodeDeque_10479: NodeDeque?
-
-        @JvmStatic
-        fun method3288(i: Byte) {
-            val i_14_ = 107 % ((i - 27) / 34)
-            anIntArray10478 = null
-            aFontMetaRef_10477 = null
-            aNodeDeque_10479 = null
-        }
-
-        @JvmStatic
-        fun method3290(i: Int) {
-            if (i < 30) aNodeDeque_10479 = null
-            method131(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub5_7240!!.method1739(-32350) == 1, 2, true, 22050)
-            anInt10470++
-            AbstractProceduralTextureNode.aSoundChannelMixer_7042 = TextureHandle.method1439(22050, VorbisOggDecoder.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 0, 7)
-            ParticleEmitterListNode.method3273(true, -114, NpcCountAccessor.method1326(null, 9))
-            VarbitDefLoader.aSoundChannelMixer_2596 = TextureHandle.method1439(2048, VorbisOggDecoder.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 1, 7)
-            SpriteDefinition.aClass348_Sub16_Sub4_7065 = AudioMixerScheduler()
-            VarbitDefLoader.aSoundChannelMixer_2596!!.method2088(false, SpriteDefinition.aClass348_Sub16_Sub4_7065)
-            MapSceneTile.aAudioResampler_1050 = AudioResampler(22050, HslColorConfig.anInt339)
-            SpriteRgbTextureNode.method3093(110)
-        }
-
-        init {
-            BoundsConstraintEntry("", 76)
-            aNodeDeque_10479 = NodeDeque()
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("fc.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_19_ + ')'))
         }
     }
 }

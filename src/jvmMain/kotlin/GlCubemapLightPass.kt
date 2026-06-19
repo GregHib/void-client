@@ -1,5 +1,12 @@
 import kotlin.math.pow
 import kotlin.math.sqrt
+import GlCubemapLightPassStatics.method3542
+import GlCubemapLightPassStatics.anInt7308
+import GlCubemapLightPassStatics.anInt7312
+import GlCubemapLightPassStatics.anInt7313
+import GlCubemapLightPassStatics.anInt7314
+import GlCubemapLightPassStatics.anInt7316
+import GlCubemapLightPassStatics.anInt7322
 
 /* Class367_Sub4 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -70,27 +77,27 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
         if (i != 15192) method3527(-85, null, -72)
         if (anInterface18_Impl2Array7315 != null && bool) {
             this.aHa_Sub3_4479.method3897(1, -4382)
-            this.aHa_Sub3_4479.method3871(ItemModelDefinition.aCameraNodeList_430, 0)
+            this.aHa_Sub3_4479.method3871(ItemModelDefinitionStatics.aCameraNodeList_430, 0)
             val class101_sub2 = this.aHa_Sub3_4479.method3820(false)
             class101_sub2.method899(1024)
-            this.aHa_Sub3_4479.method3853(-32, ClampTextureNode.aConfigFlagUtil_9477)
+            this.aHa_Sub3_4479.method3853(-32, ClampTextureNodeStatics.aConfigFlagUtil_9477)
             if (aBoolean7311) {
-                this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 113, (TheoraVideoStream.aRenderConfigFactory_9011))
-                this.aHa_Sub3_4479.method3924(true, false, 0, WidgetRedrawRegion.aTrigLookupTables_4247, false)
-                this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aTrigLookupTables_8503)
+                this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 113, (TheoraVideoStreamStatics.aRenderConfigFactory_9011))
+                this.aHa_Sub3_4479.method3924(true, false, 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247, false)
+                this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArbStatics.aTrigLookupTables_8503)
             } else {
-                this.aHa_Sub3_4479.method3874((ParticleSystemState.aRenderConfigFactory_2207), 117, (RenderQueueState.aRenderConfigFactory_6519))
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, (SceneObjectEntity.aTrigLookupTables_8737))
+                this.aHa_Sub3_4479.method3874((ParticleSystemStateStatics.aRenderConfigFactory_2207), 117, (RenderQueueState.aRenderConfigFactory_6519))
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, (SceneObjectEntityStatics.aTrigLookupTables_8737))
                 this.aHa_Sub3_4479.method3897(2, -4382)
-                this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 122, (TheoraVideoStream.aRenderConfigFactory_9011))
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, (SceneObjectEntity.aTrigLookupTables_8737))
-                this.aHa_Sub3_4479.method3924(true, false, 1, (SceneObjectEntity.aTrigLookupTables_8737), false)
-                this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aTrigLookupTables_8503)
+                this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 122, (TheoraVideoStreamStatics.aRenderConfigFactory_9011))
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, (SceneObjectEntityStatics.aTrigLookupTables_8737))
+                this.aHa_Sub3_4479.method3924(true, false, 1, (SceneObjectEntityStatics.aTrigLookupTables_8737), false)
+                this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArbStatics.aTrigLookupTables_8503)
                 this.aHa_Sub3_4479.method3850((-61).toByte(), (this.aHa_Sub3_4479.anRenderable_8147))
             }
             this.aHa_Sub3_4479.method3897(0, i + -19574)
             aBoolean7317 = true
-        } else this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArb.aTrigLookupTables_8503)
+        } else this.aHa_Sub3_4479.method3885(0, true, GlIndexBufferArbStatics.aTrigLookupTables_8503)
         anInt7313++
     }
 
@@ -105,32 +112,32 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
         if (aBoolean7317) {
             this.aHa_Sub3_4479.method3897(1, i.toInt() xor 0x114a.inv())
             this.aHa_Sub3_4479.method3850((-121).toByte(), null)
-            this.aHa_Sub3_4479.method3871(ModelDefinitionLoader.aCameraNodeList_2047, 0)
+            this.aHa_Sub3_4479.method3871(ModelDefinitionLoaderStatics.aCameraNodeList_2047, 0)
             this.aHa_Sub3_4479.method3879(-8629)
             if (aBoolean7311) {
-                this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 120, ParticleSystemState.aRenderConfigFactory_2207)
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
-                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3874(ParticleSystemStateStatics.aRenderConfigFactory_2207, 120, ParticleSystemStateStatics.aRenderConfigFactory_2207)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
             } else {
-                this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 115, ParticleSystemState.aRenderConfigFactory_2207)
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3874(ParticleSystemStateStatics.aRenderConfigFactory_2207, 115, ParticleSystemStateStatics.aRenderConfigFactory_2207)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
                 this.aHa_Sub3_4479.method3897(2, i + -4469)
-                this.aHa_Sub3_4479.method3874((ParticleSystemState.aRenderConfigFactory_2207), i.toInt() xor 0x21, (ParticleSystemState.aRenderConfigFactory_2207))
-                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
-                this.aHa_Sub3_4479.method3849(47.toByte(), 1, (SceneObjectEntity.aTrigLookupTables_8737))
-                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3874((ParticleSystemStateStatics.aRenderConfigFactory_2207), i.toInt() xor 0x21, (ParticleSystemStateStatics.aRenderConfigFactory_2207))
+                this.aHa_Sub3_4479.method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
+                this.aHa_Sub3_4479.method3849(47.toByte(), 1, (SceneObjectEntityStatics.aTrigLookupTables_8737))
+                this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
                 this.aHa_Sub3_4479.method3850(64.toByte(), null)
             }
             this.aHa_Sub3_4479.method3897(0, i.toInt() xor 0x114a.inv())
             aBoolean7317 = false
-        } else this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+        } else this.aHa_Sub3_4479.method3885(0, true, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
         anInt7312++
         if (i.toInt() != 87) aBoolean7311 = true
-        this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, i + 13, ParticleSystemState.aRenderConfigFactory_2207)
+        this.aHa_Sub3_4479.method3874(ParticleSystemStateStatics.aRenderConfigFactory_2207, i + 13, ParticleSystemStateStatics.aRenderConfigFactory_2207)
     }
 
     override fun method3521(bool: Boolean, i: Byte) {
-        this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 126, ParticleSystemState.aRenderConfigFactory_2207)
+        this.aHa_Sub3_4479.method3874((RenderQueueState.aRenderConfigFactory_6519), 126, ParticleSystemStateStatics.aRenderConfigFactory_2207)
         if (i.toInt() != -103) method3542(74, null, 65, 65, -77, true)
         anInt7308++
     }
@@ -143,238 +150,5 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
             this.aHa_Sub3_4479.method3897(0, i xor 0x3b19.inv())
         }
         anInt7322++
-    }
-
-    companion object {
-        @JvmField
-        var anInt7308: Int = 0
-        @JvmField
-        var anInt7309: Int = 0
-        @JvmField
-        var anInt7310: Int = 0
-        @JvmField
-        var anInt7312: Int = 0
-        @JvmField
-        var anInt7313: Int = 0
-        @JvmField
-        var anInt7314: Int = 0
-        @JvmField
-        var anInt7316: Int = 0
-        @JvmField
-        var aFontMetaRef_7318: FontMetaRef? = FontMetaRef(21, 2)
-        @JvmField
-        var anInt7319: Int = 104
-        var aBoolean7320: Boolean = false
-        @JvmField
-        var anInt7321: Int = 0
-        @JvmField
-        var anInt7322: Int = 0
-        @JvmField
-        var aIntRange_7323: IntRange? = IntRange(105, -2)
-        @JvmField
-        var aIntRange_7324: IntRange? = IntRange(96, 8)
-        @JvmField
-        var aLinkedNodeListIterator_7325: LinkedNodeListIterator? = LinkedNodeListIterator()
-
-        @JvmStatic
-        fun method3541(i: Byte) {
-            aIntRange_7323 = null
-            aIntRange_7324 = null
-            aLinkedNodeListIterator_7325 = null
-            if (i.toInt() == 23) aFontMetaRef_7318 = null
-        }
-
-        @JvmStatic
-        fun method3542(i: Int, sceneCollisionEntries: Array<Array<Array<SceneCollisionEntry?>?>?>?, i_13_: Int, i_14_: Int, i_15_: Int, bool: Boolean): Boolean {
-            anInt7310++
-            val i_16_ = if (bool) 1.toByte() else (TextureQualityOptionState.anInt6006 and 0xff).toByte()
-            if (i_16_ == RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_13_]!![i]) return false
-            if (((AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_13_]!![i]).toInt() and 0x4) == 0) return false
-            var i_17_ = i_14_
-            var i_18_ = 0
-            PcmStreamBuffer.anIntArray8862!![i_17_] = i_13_
-            ClientException.anIntArray110!![i_17_++] = i
-            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_13_]!![i] = i_16_
-            while (i_17_ != i_18_) {
-                val i_19_ = 0xffff and PcmStreamBuffer.anIntArray8862!![i_18_]
-                val i_20_ = ((PcmStreamBuffer.anIntArray8862!![i_18_] and 0xff3677) shr 16)
-                val i_21_ = (0xff and (PcmStreamBuffer.anIntArray8862!![i_18_] shr 24))
-                var i_22_ = 0xffff and ClientException.anIntArray110!![i_18_]
-                val i_23_ = ((0xff5347 and ClientException.anIntArray110!![i_18_]) shr 16)
-                i_18_ = i_18_ + 1 and 0xfff
-                var bool_24_ = false
-                if ((0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0) bool_24_ = true
-                var bool_25_ = false
-                if (sceneCollisionEntries != null) {
-                    var i_26_ = CompiledScriptCache.anInt4372 + 1
-                    while_223_@ while ( /**/i_26_ <= 3) {
-                        if (sceneCollisionEntries[i_26_] != null && (0x8 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![i_26_]!![i_19_]!![i_22_]).toInt()) == 0) {
-                            if (bool_24_ && sceneCollisionEntries[i_26_]!![i_19_]!![i_22_] != null) {
-                                if ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406) != null) {
-                                    val i_27_ = TextureAtlasState.method3492(i_20_, 226)
-                                    if (((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_27_) || ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_27_ == (sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt()))) {
-                                        i_26_++
-                                        continue
-                                    }
-                                    if (i_21_ != 0) {
-                                        val i_28_ = TextureAtlasState.method3492(i_21_, 226)
-                                        if (((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_28_) || ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt() == i_28_))) {
-                                            i_26_++
-                                            continue
-                                        }
-                                    }
-                                    if (i_23_ != 0) {
-                                        val i_29_ = TextureAtlasState.method3492(i_23_, 226)
-                                        if ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_29_ || ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_29_ == (sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt()))) {
-                                            i_26_++
-                                            continue
-                                        }
-                                    }
-                                }
-                                val class357 = sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!
-                                if (class357.aWidgetNodeLink_4396 != null) {
-                                    var class148 = (class357.aWidgetNodeLink_4396)
-                                    while (class148 != null) {
-                                        val class318_sub1_sub3 = (class148.aClass318_Sub1_Sub3_2040)
-                                        if (class318_sub1_sub3 is RenderTarget) {
-                                            val renderTarget = class318_sub1_sub3 as RenderTarget
-                                            var i_30_ = renderTarget.method39(59)
-                                            val i_31_ = renderTarget.method41(-32228)
-                                            if (i_30_ == 21) i_30_ = 19
-                                            val i_32_ = i_31_ shl 6 or i_30_
-                                            if (i_32_ == i_20_ || i_21_ != 0 && i_21_ == i_32_ || i_23_ != 0 && i_23_ == i_32_) {
-                                                i_26_++
-                                                continue@while_223_
-                                            }
-                                        }
-                                        class148 = (class148.aWidgetNodeLink_2038)
-                                    }
-                                }
-                            }
-                            val sceneCollisionEntry: SceneCollisionEntry? = sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]
-                            if (sceneCollisionEntry != null && sceneCollisionEntry.aWidgetNodeLink_4396 != null) {
-                                var class148 = sceneCollisionEntry.aWidgetNodeLink_4396
-                                while (class148 != null) {
-                                    val class318_sub1_sub3 = (class148.aClass318_Sub1_Sub3_2040)!!
-                                    if (((class318_sub1_sub3.aShort8743) != class318_sub1_sub3.aShort8751) || (class318_sub1_sub3.aShort8750 != class318_sub1_sub3.aShort8747)) {
-                                        var i_33_ = (class318_sub1_sub3.aShort8743).toInt()
-                                        while ((i_33_ <= class318_sub1_sub3.aShort8751)) {
-                                            var i_34_ = (class318_sub1_sub3.aShort8750).toInt()
-                                            while ((i_34_ <= class318_sub1_sub3.aShort8747)) {
-                                                RegionSceneLoader.aByteArrayArrayArray3700!![i_26_]!![i_33_]!![i_34_] = i_16_
-                                                i_34_++
-                                            }
-                                            i_33_++
-                                        }
-                                    }
-                                    class148 = class148.aWidgetNodeLink_2038
-                                }
-                            }
-                            RegionSceneLoader.aByteArrayArrayArray3700!![i_26_]!![i_19_]!![i_22_] = i_16_
-                            bool_25_ = true
-                        }
-                        i_26_++
-                    }
-                }
-                if (bool_25_) {
-                    val i_35_ = NativeSprite.aTerrainTileArray5191!![1 + CompiledScriptCache.anInt4372]!!.method3982((-86).toByte(), i_22_, i_19_)
-                    if (i_35_ > FileIoUtil.anIntArray4097!![i_15_]) FileIoUtil.anIntArray4097!![i_15_] = i_35_
-                    val i_36_ = i_19_ shl 9
-                    if (i_36_ < LinkedListIterator.anIntArray2117!![i_15_]) LinkedListIterator.anIntArray2117!![i_15_] = i_36_
-                    else if (i_36_ > BlankTextureNode.anIntArray9259!![i_15_]) BlankTextureNode.anIntArray9259!![i_15_] = i_36_
-                    val i_37_ = i_22_ shl 9
-                    if (i_37_ >= AbstractModel.anIntArray1127!![i_15_]) {
-                        if (ConnectionStateType.anIntArray1045!![i_15_] < i_37_) ConnectionStateType.anIntArray1045!![i_15_] = i_37_
-                    } else AbstractModel.anIntArray1127!![i_15_] = i_37_
-                }
-                if (!bool_24_) {
-                    if (i_19_ >= 1 && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_]) != i_16_) {
-                        PcmStreamBuffer.anIntArray8862!![i_17_] = BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(1179648, i_19_ + -1), -754974720)
-                        ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 1245184)
-                        i_17_ = 0xfff and 1 + i_17_
-                        RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_] = i_16_
-                    }
-                    if (++i_22_ < RangeThresholdTextureNode.anInt9109) {
-                        if (i_19_ - 1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![i_22_]) && ((AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![-1 + i_22_]).toInt()) == 0) {
-                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(1375731712, BoundsConstraintEntry.method2057(i_19_ + -1, 1179648)))
-                            ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 1245184)
-                            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![i_22_] = i_16_
-                            i_17_ = 0xfff and 1 + i_17_
-                        }
-                        if ((RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]) != i_16_) {
-                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(318767104, BoundsConstraintEntry.method2057(i_19_, 5373952)))
-                            ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 5439488)
-                            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_] = i_16_
-                            i_17_ = i_17_ + 1 and 0xfff
-                        }
-                        if (1 + i_19_ < anInt7319 && ((RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ + 1]!![i_22_]) != i_16_) && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![1 + i_19_]!![i_22_ + -1]).toInt()) == 0) {
-                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(-1845493760, BoundsConstraintEntry.method2057(1 + i_19_, 5373952)))
-                            ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(5439488, i_22_)
-                            i_17_ = 1 + i_17_ and 0xfff
-                            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
-                        }
-                    }
-                    i_22_--
-                    if (i_19_ - -1 < anInt7319 && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_]) != i_16_) {
-                        PcmStreamBuffer.anIntArray8862!![i_17_] = BoundsConstraintEntry.method2057(1392508928, BoundsConstraintEntry.method2057(9568256, 1 + i_19_))
-                        ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 9633792)
-                        i_17_ = 1 + i_17_ and 0xfff
-                        RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
-                    }
-                    if (--i_22_ >= 0) {
-                        if (i_19_ + -1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_]) && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![1 + i_22_]).toInt()) == 0) {
-                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(301989888, BoundsConstraintEntry.method2057(13762560, -1 + i_19_)))
-                            ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 13828096)
-                            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_] = i_16_
-                            i_17_ = i_17_ - -1 and 0xfff
-                        }
-                        if ((RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]) != i_16_) {
-                            PcmStreamBuffer.anIntArray8862!![i_17_] = BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(13762560, i_19_), -1828716544)
-                            ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(13828096, i_22_)
-                            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_] = i_16_
-                            i_17_ = 0xfff and i_17_ - -1
-                        }
-                        if (anInt7319 > 1 + i_19_ && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![1 + i_19_]!![i_22_]) != i_16_ && ((AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && ((AnimationFrameDefinition.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_ + 1]!![i_22_ + 1]).toInt() and 0x4) == 0) {
-                            PcmStreamBuffer.anIntArray8862!![i_17_] = (BoundsConstraintEntry.method2057(-771751936, BoundsConstraintEntry.method2057(i_19_ - -1, 9568256)))
-                            ClientException.anIntArray110!![i_17_] = BoundsConstraintEntry.method2057(i_22_, 9633792)
-                            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
-                            i_17_ = 0xfff and i_17_ - -1
-                        }
-                    }
-                }
-            }
-            if (FileIoUtil.anIntArray4097!![i_15_] != -1000000) {
-                FileIoUtil.anIntArray4097!![i_15_] += 40
-                LinkedListIterator.anIntArray2117!![i_15_] -= 512
-                BlankTextureNode.anIntArray9259!![i_15_] += 512
-                ConnectionStateType.anIntArray1045!![i_15_] += 512
-                AbstractModel.anIntArray1127!![i_15_] -= 512
-            }
-            return true
-        }
-
-        @JvmStatic
-        fun method3543(i: Byte) {
-            anInt7309++
-            if (i.toInt() == -89) {
-                FontMetaRef.aBoolean4328 = false
-                TextureCache.method3466(i + 6)
-            }
-        }
-
-        @JvmStatic
-        fun method3544(class348_sub49: ByteBuffer?, i: Int, string: String?): Int {
-            try {
-                anInt7321++
-                val i_38_ = class348_sub49!!.anInt7197
-                val `is` = ClientGameLoopNode.method2992(string, (-20).toByte())
-                val i_39_ = 1 % ((-6 - i) / 63)
-                class348_sub49.method3381(5537, `is`.size)
-                class348_sub49.anInt7197 += (AbstractModel.aHuffmanCodec_1131!!.method2227(`is`.size, 0, class348_sub49.anInt7197, `is`, 103, class348_sub49.aByteArray7154))
-                return class348_sub49.anInt7197 + -i_38_
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("bk.O(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
-            }
-        }
     }
 }

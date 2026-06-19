@@ -1,7 +1,10 @@
-import CacheArchiveIndexLoader.Companion.method340
+import CacheArchiveIndexLoaderStatics.method340
 import jaclib.memory.Stream
-import jaclib.memory.Stream.Companion.c
+import jaclib.memory.StreamStatics.c
 import kotlin.math.sqrt
+import TerrainShadowBuilderGl3Statics.anInt7000
+import TerrainShadowBuilderGl3Statics.anInt7003
+import TerrainShadowBuilderGl3Statics.anInt7012
 
 class TerrainShadowBuilderGl3 internal constructor(var_ha_Sub3: NativeRenderer?, var_s_Sub3: NativeTerrainTile?, class348_sub1: AbstractTileShape?, `is`: IntArray?) : LinkedListNode() {
     private var aFloatArrayArray7001: Array<FloatArray?>?
@@ -296,24 +299,7 @@ class TerrainShadowBuilderGl3 internal constructor(var_ha_Sub3: NativeRenderer?,
             aStream7021 = null
             aHashtable_7011 = null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.Companion.method2929(runtimeexception, ("sea.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        var anInt7000: Int = 0
-        var anInt7003: Int = 0
-        @JvmField
-        var anInt7006: Int = 0
-        @JvmField
-        var anInt7008: Int = 0
-        var anInt7009: Int = 0
-        var anInt7012: Int = 0
-        var aIntRange_7015: IntRange? = IntRange(33, 3)
-        @JvmStatic
-        fun method3035(i: Int) {
-            aIntRange_7015 = null
-            if (i != 1) method3035(-34)
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("sea.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_s_Sub3 != null) "{...}" else "null") + ',' + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 }

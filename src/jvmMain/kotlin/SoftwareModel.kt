@@ -1,9 +1,10 @@
-import ParticleEmitterFactory.Companion.method1885
-import SpriteStore.Companion.method303
-import PcmStreamBuffer.Companion.method2832
-import CachedRgbNoiseTexture.Companion.method565
-import IdentKitRecolor.Companion.method206
+import ParticleEmitterFactoryStatics.method1885
+import SpriteStoreStatics.method303
+import PcmStreamBufferStatics.method2832
+import CachedRgbNoiseTextureStatics.method565
+import IdentKitRecolorStatics.method206
 import kotlin.math.sqrt
+import SoftwareModelStatics.anInt5341
 
 /* Class64_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -388,7 +389,7 @@ class SoftwareModel : AbstractModel {
                 anIntArray5355[i_39_.toInt()].toFloat(),
                 anIntArray5355[i_40_.toInt()].toFloat(),
                 anIntArray5355[i_41_.toInt()].toFloat(),
-                (Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff])
+                (Crc64HashableStatics.anIntArray4983!![anIntArray5368!![i] and 0xffff])
             )
             else aShadowProjector_5383!!.method1022(
                 anIntArray5343[i_39_.toInt()].toFloat(),
@@ -550,22 +551,22 @@ class SoftwareModel : AbstractModel {
                             anIntArray5332!![i_66_] -= anInt5375
                             anIntArray5312!![i_66_] -= anInt5342
                             if (i_46_ != 0) {
-                                val i_67_ = TrigLookupTables.anIntArray1207!![i_46_]
-                                val i_68_ = TrigLookupTables.anIntArray1204!![i_46_]
+                                val i_67_ = TrigLookupTablesStatics.anIntArray1207!![i_46_]
+                                val i_68_ = TrigLookupTablesStatics.anIntArray1204!![i_46_]
                                 val i_69_ = ((anIntArray5332!![i_66_] * i_67_ + anIntArray5356!![i_66_] * i_68_ + 16383) shr 14)
                                 anIntArray5332!![i_66_] = (anIntArray5332!![i_66_] * i_68_ - anIntArray5356!![i_66_] * i_67_ + 16383) shr 14
                                 anIntArray5356!![i_66_] = i_69_
                             }
                             if (i_44_ != 0) {
-                                val i_70_ = TrigLookupTables.anIntArray1207!![i_44_]
-                                val i_71_ = TrigLookupTables.anIntArray1204!![i_44_]
+                                val i_70_ = TrigLookupTablesStatics.anIntArray1207!![i_44_]
+                                val i_71_ = TrigLookupTablesStatics.anIntArray1204!![i_44_]
                                 val i_72_ = ((anIntArray5332!![i_66_] * i_71_ - anIntArray5312!![i_66_] * i_70_ + 16383) shr 14)
                                 anIntArray5312!![i_66_] = (anIntArray5332!![i_66_] * i_70_ + anIntArray5312!![i_66_] * i_71_ + 16383) shr 14
                                 anIntArray5332!![i_66_] = i_72_
                             }
                             if (i_45_ != 0) {
-                                val i_73_ = TrigLookupTables.anIntArray1207!![i_45_]
-                                val i_74_ = TrigLookupTables.anIntArray1204!![i_45_]
+                                val i_73_ = TrigLookupTablesStatics.anIntArray1207!![i_45_]
+                                val i_74_ = TrigLookupTablesStatics.anIntArray1204!![i_45_]
                                 val i_75_ = ((anIntArray5312!![i_66_] * i_73_ + anIntArray5356!![i_66_] * i_74_ + 16383) shr 14)
                                 anIntArray5312!![i_66_] = (anIntArray5312!![i_66_] * i_74_ - anIntArray5356!![i_66_] * i_73_ + 16383) shr 14
                                 anIntArray5356!![i_66_] = i_75_
@@ -581,22 +582,22 @@ class SoftwareModel : AbstractModel {
                             anIntArray5332!![i_77_] -= anInt5375
                             anIntArray5312!![i_77_] -= anInt5342
                             if (i_44_ != 0) {
-                                val i_78_ = TrigLookupTables.anIntArray1207!![i_44_]
-                                val i_79_ = TrigLookupTables.anIntArray1204!![i_44_]
+                                val i_78_ = TrigLookupTablesStatics.anIntArray1207!![i_44_]
+                                val i_79_ = TrigLookupTablesStatics.anIntArray1204!![i_44_]
                                 val i_80_ = ((anIntArray5332!![i_77_] * i_79_ - anIntArray5312!![i_77_] * i_78_ + 16383) shr 14)
                                 anIntArray5312!![i_77_] = (anIntArray5332!![i_77_] * i_78_ + anIntArray5312!![i_77_] * i_79_ + 16383) shr 14
                                 anIntArray5332!![i_77_] = i_80_
                             }
                             if (i_46_ != 0) {
-                                val i_81_ = TrigLookupTables.anIntArray1207!![i_46_]
-                                val i_82_ = TrigLookupTables.anIntArray1204!![i_46_]
+                                val i_81_ = TrigLookupTablesStatics.anIntArray1207!![i_46_]
+                                val i_82_ = TrigLookupTablesStatics.anIntArray1204!![i_46_]
                                 val i_83_ = ((anIntArray5332!![i_77_] * i_81_ + anIntArray5356!![i_77_] * i_82_ + 16383) shr 14)
                                 anIntArray5332!![i_77_] = (anIntArray5332!![i_77_] * i_82_ - anIntArray5356!![i_77_] * i_81_ + 16383) shr 14
                                 anIntArray5356!![i_77_] = i_83_
                             }
                             if (i_45_ != 0) {
-                                val i_84_ = TrigLookupTables.anIntArray1207!![i_45_]
-                                val i_85_ = TrigLookupTables.anIntArray1204!![i_45_]
+                                val i_84_ = TrigLookupTablesStatics.anIntArray1207!![i_45_]
+                                val i_85_ = TrigLookupTablesStatics.anIntArray1204!![i_45_]
                                 val i_86_ = ((anIntArray5312!![i_77_] * i_84_ + anIntArray5356!![i_77_] * i_85_ + 16383) shr 14)
                                 anIntArray5312!![i_77_] = (anIntArray5312!![i_77_] * i_85_ - anIntArray5356!![i_77_] * i_84_ + 16383) shr 14
                                 anIntArray5356!![i_77_] = i_86_
@@ -678,7 +679,7 @@ class SoftwareModel : AbstractModel {
                     for (i_108_ in 0..<anInt5389) {
                         val class6 = aIdentKitRecolorArray5361!![i_108_]!!
                         val class350 = aModelTransformParamsArray5363!![i_108_]!!
-                        class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
+                        class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64HashableStatics.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
                     }
                 }
             }
@@ -726,8 +727,8 @@ class SoftwareModel : AbstractModel {
 
     public override fun FA(i: Int) {
         check((anInt5316 and 0x6) == 6)
-        val i_121_ = TrigLookupTables.anIntArray1207!![i]
-        val i_122_ = TrigLookupTables.anIntArray1204!![i]
+        val i_121_ = TrigLookupTablesStatics.anIntArray1207!![i]
+        val i_122_ = TrigLookupTablesStatics.anIntArray1204!![i]
         synchronized(this) {
             for (i_123_ in 0..<anInt5340) {
                 val i_124_ = ((anIntArray5332!![i_123_] * i_122_ - anIntArray5312!![i_123_] * i_121_) shr 14)
@@ -851,22 +852,22 @@ class SoftwareModel : AbstractModel {
                                 anIntArray5332!![i_200_] -= anInt5375
                                 anIntArray5312!![i_200_] -= anInt5342
                                 if (i_127_ != 0) {
-                                    val i_201_ = TrigLookupTables.anIntArray1207!![i_127_]
-                                    val i_202_ = TrigLookupTables.anIntArray1204!![i_127_]
+                                    val i_201_ = TrigLookupTablesStatics.anIntArray1207!![i_127_]
+                                    val i_202_ = TrigLookupTablesStatics.anIntArray1204!![i_127_]
                                     val i_203_ = ((anIntArray5332!![i_200_] * i_201_ + anIntArray5356!![i_200_] * i_202_ + 16383) shr 14)
                                     anIntArray5332!![i_200_] = (anIntArray5332!![i_200_] * i_202_ - anIntArray5356!![i_200_] * i_201_ + 16383) shr 14
                                     anIntArray5356!![i_200_] = i_203_
                                 }
                                 if (i_125_ != 0) {
-                                    val i_204_ = TrigLookupTables.anIntArray1207!![i_125_]
-                                    val i_205_ = TrigLookupTables.anIntArray1204!![i_125_]
+                                    val i_204_ = TrigLookupTablesStatics.anIntArray1207!![i_125_]
+                                    val i_205_ = TrigLookupTablesStatics.anIntArray1204!![i_125_]
                                     val i_206_ = ((anIntArray5332!![i_200_] * i_205_ - anIntArray5312!![i_200_] * i_204_ + 16383) shr 14)
                                     anIntArray5312!![i_200_] = (anIntArray5332!![i_200_] * i_204_ + anIntArray5312!![i_200_] * i_205_ + 16383) shr 14
                                     anIntArray5332!![i_200_] = i_206_
                                 }
                                 if (i_126_ != 0) {
-                                    val i_207_ = TrigLookupTables.anIntArray1207!![i_126_]
-                                    val i_208_ = TrigLookupTables.anIntArray1204!![i_126_]
+                                    val i_207_ = TrigLookupTablesStatics.anIntArray1207!![i_126_]
+                                    val i_208_ = TrigLookupTablesStatics.anIntArray1204!![i_126_]
                                     val i_209_ = ((anIntArray5312!![i_200_] * i_207_ + anIntArray5356!![i_200_] * i_208_ + 16383) shr 14)
                                     anIntArray5312!![i_200_] = (anIntArray5312!![i_200_] * i_208_ - anIntArray5356!![i_200_] * i_207_ + 16383) shr 14
                                     anIntArray5356!![i_200_] = i_209_
@@ -906,12 +907,12 @@ class SoftwareModel : AbstractModel {
                     aBoolean5369 = false
                 }
                 val is_157_ = IntArray(9)
-                val i_158_ = TrigLookupTables.anIntArray1204!![i_125_]
-                val i_159_ = TrigLookupTables.anIntArray1207!![i_125_]
-                val i_160_ = TrigLookupTables.anIntArray1204!![i_126_]
-                val i_161_ = TrigLookupTables.anIntArray1207!![i_126_]
-                val i_162_ = TrigLookupTables.anIntArray1204!![i_127_]
-                val i_163_ = TrigLookupTables.anIntArray1207!![i_127_]
+                val i_158_ = TrigLookupTablesStatics.anIntArray1204!![i_125_]
+                val i_159_ = TrigLookupTablesStatics.anIntArray1207!![i_125_]
+                val i_160_ = TrigLookupTablesStatics.anIntArray1204!![i_126_]
+                val i_161_ = TrigLookupTablesStatics.anIntArray1207!![i_126_]
+                val i_162_ = TrigLookupTablesStatics.anIntArray1204!![i_127_]
+                val i_163_ = TrigLookupTablesStatics.anIntArray1207!![i_127_]
                 val i_164_ = i_159_ * i_162_ + 8192 shr 14
                 val i_165_ = i_159_ * i_163_ + 8192 shr 14
                 is_157_[0] = i_160_ * i_162_ + i_161_ * i_165_ + 8192 shr 14
@@ -1142,7 +1143,7 @@ class SoftwareModel : AbstractModel {
                     for (i_270_ in 0..<anInt5389) {
                         val class6 = aIdentKitRecolorArray5361!![i_270_]!!
                         val class350 = aModelTransformParamsArray5363!![i_270_]!!
-                        class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
+                        class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64HashableStatics.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
                     }
                 }
             }
@@ -1296,14 +1297,14 @@ class SoftwareModel : AbstractModel {
                 val i_290_ = method303(i_288_ and 0x7f.inv() or i_289_, 30)
                 if (anIntArray5366!![i] == -1) {
                     val i_291_ = anIntArray5368!![i] and 0x1ffff.inv()
-                    anIntArray5368!![i] = i_291_ or CutsceneSequenceData.method2198(0, i_291_ shr 17, i_290_.toInt())
+                    anIntArray5368!![i] = i_291_ or CutsceneSequenceDataStatics.method2198(0, i_291_ shr 17, i_290_.toInt())
                 } else if (anIntArray5366!![i] != -2) {
                     var i_292_ = anIntArray5368!![i] and 0x1ffff.inv()
-                    anIntArray5368!![i] = i_292_ or CutsceneSequenceData.method2198(0, i_292_ shr 17, i_290_.toInt())
+                    anIntArray5368!![i] = i_292_ or CutsceneSequenceDataStatics.method2198(0, i_292_ shr 17, i_290_.toInt())
                     i_292_ = anIntArray5337!![i] and 0x1ffff.inv()
-                    anIntArray5337!![i] = i_292_ or CutsceneSequenceData.method2198(0, i_292_ shr 17, i_290_.toInt())
+                    anIntArray5337!![i] = i_292_ or CutsceneSequenceDataStatics.method2198(0, i_292_ shr 17, i_290_.toInt())
                     i_292_ = anIntArray5366!![i] and 0x1ffff.inv()
-                    anIntArray5366!![i] = i_292_ or CutsceneSequenceData.method2198(0, i_292_ shr 17, i_290_.toInt())
+                    anIntArray5366!![i] = i_292_ or CutsceneSequenceDataStatics.method2198(0, i_292_ shr 17, i_290_.toInt())
                 }
             }
         }
@@ -1317,8 +1318,8 @@ class SoftwareModel : AbstractModel {
             else if (i == 8192) method652()
             else if (i == 12288) method641()
             else {
-                val i_293_ = TrigLookupTables.anIntArray1207!![i]
-                val i_294_ = TrigLookupTables.anIntArray1204!![i]
+                val i_293_ = TrigLookupTablesStatics.anIntArray1207!![i]
+                val i_294_ = TrigLookupTablesStatics.anIntArray1204!![i]
                 synchronized(this) {
                     for (i_295_ in 0..<anInt5387) {
                         var i_296_ = ((anIntArray5312!![i_295_] * i_293_ + anIntArray5356!![i_295_] * i_294_) shr 14)
@@ -1402,7 +1403,7 @@ class SoftwareModel : AbstractModel {
     }
 
     private fun method642(i: Int, i_305_: Short, i_306_: Int): Int {
-        var i_307_ = ParticleEmitterNode.anIntArray179!![method637(i, i_306_)]
+        var i_307_ = ParticleEmitterNodeStatics.anIntArray179!![method637(i, i_306_)]
         val class12 = aHa_Sub1_5353.aRenderConfig4579!!.method3(i_305_.toInt() and 0xffff, -6662)
         val i_308_ = class12!!.aByte201.toInt() and 0xff
         if (i_308_ != 0) {
@@ -1523,22 +1524,22 @@ class SoftwareModel : AbstractModel {
                 anIntArray5332!![i_344_] -= anInt5375
                 anIntArray5312!![i_344_] -= anInt5342
                 if (i_340_ != 0) {
-                    val i_345_ = TrigLookupTables.anIntArray1207!![i_340_]
-                    val i_346_ = TrigLookupTables.anIntArray1204!![i_340_]
+                    val i_345_ = TrigLookupTablesStatics.anIntArray1207!![i_340_]
+                    val i_346_ = TrigLookupTablesStatics.anIntArray1204!![i_340_]
                     val i_347_ = ((anIntArray5332!![i_344_] * i_345_ + anIntArray5356!![i_344_] * i_346_ + 16383) shr 14)
                     anIntArray5332!![i_344_] = (anIntArray5332!![i_344_] * i_346_ - anIntArray5356!![i_344_] * i_345_ + 16383) shr 14
                     anIntArray5356!![i_344_] = i_347_
                 }
                 if (i_338_ != 0) {
-                    val i_348_ = TrigLookupTables.anIntArray1207!![i_338_]
-                    val i_349_ = TrigLookupTables.anIntArray1204!![i_338_]
+                    val i_348_ = TrigLookupTablesStatics.anIntArray1207!![i_338_]
+                    val i_349_ = TrigLookupTablesStatics.anIntArray1204!![i_338_]
                     val i_350_ = ((anIntArray5332!![i_344_] * i_349_ - anIntArray5312!![i_344_] * i_348_ + 16383) shr 14)
                     anIntArray5312!![i_344_] = (anIntArray5332!![i_344_] * i_348_ + anIntArray5312!![i_344_] * i_349_ + 16383) shr 14
                     anIntArray5332!![i_344_] = i_350_
                 }
                 if (i_339_ != 0) {
-                    val i_351_ = TrigLookupTables.anIntArray1207!![i_339_]
-                    val i_352_ = TrigLookupTables.anIntArray1204!![i_339_]
+                    val i_351_ = TrigLookupTablesStatics.anIntArray1207!![i_339_]
+                    val i_352_ = TrigLookupTablesStatics.anIntArray1204!![i_339_]
                     val i_353_ = ((anIntArray5312!![i_344_] * i_351_ + anIntArray5356!![i_344_] * i_352_ + 16383) shr 14)
                     anIntArray5312!![i_344_] = (anIntArray5312!![i_344_] * i_352_ - anIntArray5356!![i_344_] * i_351_ + 16383) shr 14
                     anIntArray5356!![i_344_] = i_353_
@@ -1593,7 +1594,7 @@ class SoftwareModel : AbstractModel {
                 for (i_363_ in 0..<anInt5389) {
                     val class6 = aIdentKitRecolorArray5361!![i_363_]!!
                     val class350 = aModelTransformParamsArray5363!![i_363_]!!
-                    class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
+                    class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64HashableStatics.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
                 }
             }
         } else if (i == 8) {
@@ -1860,7 +1861,7 @@ class SoftwareModel : AbstractModel {
             for (i_485_ in 0..<anInt5389) {
                 val class6 = aIdentKitRecolorArray5361!![i_485_]!!
                 val class350 = aModelTransformParamsArray5363!![i_485_]!!
-                class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303(((aShortArray5311!![class6.anInt144]).toInt() and 0xffff), 30).toInt()]) and 0xffffff))
+                class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64HashableStatics.anIntArray4983!![method303(((aShortArray5311!![class6.anInt144]).toInt() and 0xffff), 30).toInt()]) and 0xffffff))
             }
         }
         if (anInt5354 == 2) anInt5354 = 1
@@ -2083,7 +2084,7 @@ class SoftwareModel : AbstractModel {
         if (i_540_ == 3) {
             if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aParticleSystemState_5367!!.anInt2221 || i_564_ > aParticleSystemState_5367!!.anInt2221 || i_565_ > aParticleSystemState_5367!!.anInt2221) aShadowProjector_5383!!.aBoolean1671 = true
             if (aShortArray5388 == null || aShortArray5388!![i].toInt() == -1) {
-                if (anIntArray5366!![i] == -1) aShadowProjector_5383!!.method1018(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), (Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]))
+                if (anIntArray5366!![i] == -1) aShadowProjector_5383!!.method1018(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), (Crc64HashableStatics.anIntArray4983!![anIntArray5368!![i] and 0xffff]))
                 else aShadowProjector_5383!!.method1022(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), anIntArray5377[0].toFloat(), anIntArray5377[1].toFloat(), anIntArray5377[2].toFloat())
             } else {
                 var i_569_ = -16777216
@@ -2145,7 +2146,7 @@ class SoftwareModel : AbstractModel {
             if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aParticleSystemState_5367!!.anInt2221 || i_564_ > aParticleSystemState_5367!!.anInt2221 || i_565_ > aParticleSystemState_5367!!.anInt2221 || anIntArray5315[3] < 0 || anIntArray5315[3] > aParticleSystemState_5367!!.anInt2221) aShadowProjector_5383!!.aBoolean1671 = true
             if (aShortArray5388 == null || aShortArray5388!![i].toInt() == -1) {
                 if (anIntArray5366!![i] == -1) {
-                    val i_571_ = Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]
+                    val i_571_ = Crc64HashableStatics.anIntArray4983!![anIntArray5368!![i] and 0xffff]
                     aShadowProjector_5383!!.method1018(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), i_571_)
                     aShadowProjector_5383!!.method1018(i_566_.toFloat(), i_568_.toFloat(), anIntArray5371[3].toFloat(), i_563_.toFloat(), i_565_.toFloat(), anIntArray5315[3].toFloat(), i_545_.toFloat(), i_546_.toFloat(), anIntArray5381[3].toFloat(), i_571_)
                 } else {
@@ -2297,8 +2298,8 @@ class SoftwareModel : AbstractModel {
 
     public override fun VA(i: Int) {
         check((anInt5316 and 0x3) == 3)
-        val i_574_ = TrigLookupTables.anIntArray1207!![i]
-        val i_575_ = TrigLookupTables.anIntArray1204!![i]
+        val i_574_ = TrigLookupTablesStatics.anIntArray1207!![i]
+        val i_575_ = TrigLookupTablesStatics.anIntArray1204!![i]
         synchronized(this) {
             for (i_576_ in 0..<anInt5340) {
                 val i_577_ = ((anIntArray5332!![i_576_] * i_574_ + anIntArray5356!![i_576_] * i_575_) shr 14)
@@ -2315,8 +2316,8 @@ class SoftwareModel : AbstractModel {
         else if (i == 8192) method651()
         else if (i == 12288) method639()
         else {
-            val i_578_ = TrigLookupTables.anIntArray1207!![i]
-            val i_579_ = TrigLookupTables.anIntArray1204!![i]
+            val i_578_ = TrigLookupTablesStatics.anIntArray1207!![i]
+            val i_579_ = TrigLookupTablesStatics.anIntArray1204!![i]
             synchronized(this) {
                 for (i_580_ in 0..<anInt5340) {
                     val i_581_ = ((anIntArray5312!![i_580_] * i_578_ + anIntArray5356!![i_580_] * i_579_) shr 14)
@@ -2574,7 +2575,7 @@ class SoftwareModel : AbstractModel {
             for (i_628_ in 0..<anInt5389) {
                 val class6 = aIdentKitRecolorArray5361!![i_628_]!!
                 val class350 = aModelTransformParamsArray5363!![i_628_]!!
-                class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303((aShortArray5311!![class6.anInt144]).toInt(), 30).toInt() and 0xffff]) and 0xffffff))
+                class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64HashableStatics.anIntArray4983!![method303((aShortArray5311!![class6.anInt144]).toInt(), 30).toInt() and 0xffff]) and 0xffffff))
             }
         }
         if (anInt5354 == 2) anInt5354 = 1
@@ -2995,19 +2996,19 @@ class SoftwareModel : AbstractModel {
                         var i_746_ = (((i * rectangle.anInt4430 + i_734_ * rectangle.anInt4428 + i_735_ * rectangle.anInt4427) / rectangle.anInt4429) shr 16)
                         var i_747_ = if (i_746_ > 256) i_737_ else i_738_
                         var i_748_ = (i_736_ shr 1) + (i_747_ * i_746_ shr 17)
-                        anIntArray5368!![i_739_] = i_748_ shl 17 or CutsceneSequenceData.method2198(0, i_748_, i_745_.toInt())
+                        anIntArray5368!![i_739_] = i_748_ shl 17 or CutsceneSequenceDataStatics.method2198(0, i_748_, i_745_.toInt())
                         if (aRectangleArray5313 != null && (aRectangleArray5313!![aShortArray5394[i_739_].toInt()] != null)) rectangle = aRectangleArray5313!![aShortArray5394[i_739_].toInt()]!!
                         else rectangle = aRectangleArray5360!![aShortArray5394[i_739_].toInt()]!!
                         i_746_ = ((i * rectangle.anInt4430 + i_734_ * rectangle.anInt4428 + i_735_ * rectangle.anInt4427) / rectangle.anInt4429) shr 16
                         i_747_ = if (i_746_ > 256) i_737_ else i_738_
                         i_748_ = (i_736_ shr 1) + (i_747_ * i_746_ shr 17)
-                        anIntArray5337!![i_739_] = i_748_ shl 17 or CutsceneSequenceData.method2198(0, i_748_, i_745_.toInt())
+                        anIntArray5337!![i_739_] = i_748_ shl 17 or CutsceneSequenceDataStatics.method2198(0, i_748_, i_745_.toInt())
                         if (aRectangleArray5313 != null && (aRectangleArray5313!![aShortArray5364[i_739_].toInt()] != null)) rectangle = aRectangleArray5313!![aShortArray5364[i_739_].toInt()]!!
                         else rectangle = aRectangleArray5360!![aShortArray5364[i_739_].toInt()]!!
                         i_746_ = ((i * rectangle.anInt4430 + i_734_ * rectangle.anInt4428 + i_735_ * rectangle.anInt4427) / rectangle.anInt4429) shr 16
                         i_747_ = if (i_746_ > 256) i_737_ else i_738_
                         i_748_ = (i_736_ shr 1) + (i_747_ * i_746_ shr 17)
-                        anIntArray5366!![i_739_] = i_748_ shl 17 or CutsceneSequenceData.method2198(0, i_748_, i_745_.toInt())
+                        anIntArray5366!![i_739_] = i_748_ shl 17 or CutsceneSequenceDataStatics.method2198(0, i_748_, i_745_.toInt())
                     } else if (i_740_.toInt() == 1) {
                         val i_749_ = aShortArray5311!![i_739_].toInt() and 0xffff
                         val i_750_ = (i_749_ and 0x7f) * anInt5344 shr 7
@@ -3016,7 +3017,7 @@ class SoftwareModel : AbstractModel {
                         val i_752_ = ((i * class41.anInt561 + i_734_ * class41.anInt560 + i_735_ * class41.anInt559) shr 16)
                         val i_753_ = if (i_752_ > 256) i_737_ else i_738_
                         val i_754_ = (i_736_ shr 1) + (i_753_ * i_752_ shr 17)
-                        anIntArray5368!![i_739_] = i_754_ shl 17 or CutsceneSequenceData.method2198(0, i_754_, i_751_.toInt())
+                        anIntArray5368!![i_739_] = i_754_ shl 17 or CutsceneSequenceDataStatics.method2198(0, i_754_, i_751_.toInt())
                         anIntArray5366!![i_739_] = -1
                     } else if (i_740_.toInt() == 3) {
                         anIntArray5368!![i_739_] = 128
@@ -3134,9 +3135,9 @@ class SoftwareModel : AbstractModel {
                     anIntArray5355[i_777_.toInt()].toFloat(),
                     anIntArray5355[i_778_.toInt()].toFloat(),
                     anIntArray5355[i_779_.toInt()].toFloat(),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_780_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_781_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_782_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
+                    method206((Crc64HashableStatics.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_780_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                    method206((Crc64HashableStatics.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_781_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                    method206((Crc64HashableStatics.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_782_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
                 )
                 else aShadowProjector_5383!!.method1027(
                     anIntArray5343[i_777_.toInt()].toFloat(),
@@ -3148,9 +3149,9 @@ class SoftwareModel : AbstractModel {
                     anIntArray5355[i_777_.toInt()].toFloat(),
                     anIntArray5355[i_778_.toInt()].toFloat(),
                     anIntArray5355[i_779_.toInt()].toFloat(),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_780_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5337!![i] and 0xffff]), (i_781_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5366!![i] and 0xffff]), (i_782_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
+                    method206((Crc64HashableStatics.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_780_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                    method206((Crc64HashableStatics.anIntArray4983!![anIntArray5337!![i] and 0xffff]), (i_781_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                    method206((Crc64HashableStatics.anIntArray4983!![anIntArray5366!![i] and 0xffff]), (i_782_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
                 )
             } else {
                 var i_783_ = -16777216
@@ -3238,9 +3239,9 @@ class SoftwareModel : AbstractModel {
                             anIntArray5355[i_768_.toInt()].toFloat(),
                             anIntArray5355[i_769_.toInt()].toFloat(),
                             anIntArray5355[i_770_.toInt()].toFloat(),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_771_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_772_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_773_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
+                            method206((Crc64HashableStatics.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_771_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                            method206((Crc64HashableStatics.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_772_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                            method206((Crc64HashableStatics.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_773_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
                         )
                         else aShadowProjector_5383!!.method1027(
                             anIntArray5343[i_768_.toInt()].toFloat(),
@@ -3252,9 +3253,9 @@ class SoftwareModel : AbstractModel {
                             anIntArray5355[i_768_.toInt()].toFloat(),
                             anIntArray5355[i_769_.toInt()].toFloat(),
                             anIntArray5355[i_770_.toInt()].toFloat(),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_771_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5337!![i] and 0xffff)]), (i_772_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5366!![i] and 0xffff)]), (i_773_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
+                            method206((Crc64HashableStatics.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_771_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                            method206((Crc64HashableStatics.anIntArray4983!![(anIntArray5337!![i] and 0xffff)]), (i_772_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                            method206((Crc64HashableStatics.anIntArray4983!![(anIntArray5366!![i] and 0xffff)]), (i_773_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
                         )
                     } else {
                         var i_775_ = -16777216
@@ -3374,7 +3375,7 @@ class SoftwareModel : AbstractModel {
                 for (i_796_ in modelDefinition.aRectangleBoundsArray1832!!.indices) {
                     val class162 = modelDefinition.aRectangleBoundsArray1832!![i_796_]!!
                     if (i_790_ == class162.anInt2155) {
-                        val class189 = FileExistsCondition.method742(104, (class162.anInt2153))
+                        val class189 = FileExistsConditionStatics.method742(104, (class162.anInt2153))
                         if (class189.aBoolean2531) bool_795_ = true
                         if (class189.anInt2525 != -1) {
                             val class12_797_ = var_d!!.method3((class189.anInt2525), -6662)
@@ -3412,8 +3413,8 @@ class SoftwareModel : AbstractModel {
             aModelTransformParamsArray5363 = arrayOfNulls<ModelTransformParams>(anInt5389)
             for (i_800_ in modelDefinition.aRectangleBoundsArray1832!!.indices) {
                 val class162 = modelDefinition.aRectangleBoundsArray1832!![i_800_]!!
-                val class189 = FileExistsCondition.method742(104, class162.anInt2153)
-                var i_801_ = ((Crc64Hashable.anIntArray4983!![(modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff]) and 0xffffff)
+                val class189 = FileExistsConditionStatics.method742(104, class162.anInt2153)
+                var i_801_ = ((Crc64HashableStatics.anIntArray4983!![(modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff]) and 0xffffff)
                 i_801_ = (i_801_ or (255 - (if (modelDefinition.aByteArray1834 != null) (modelDefinition.aByteArray1834!![class162.anInt2155]).toInt() and 0xff else 0) shl 24))
                 aIdentKitRecolorArray5361!![i_800_] = IdentKitRecolor(class162.anInt2155, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class162.anInt2158)
                 aModelTransformParamsArray5363!![i_800_] = ModelTransformParams(i_801_)
@@ -3546,23 +3547,23 @@ class SoftwareModel : AbstractModel {
                             val f_866_ = ((i_859_.toFloat() * fs_847_[3] + i_860_.toFloat() * fs_847_[4] + i_861_.toFloat() * fs_847_[5]) / f_863_)
                             val f_867_ = ((i_859_.toFloat() * fs_847_[6] + i_860_.toFloat() * fs_847_[7] + i_861_.toFloat() * fs_847_[8]) / f_864_)
                             val i_868_ = CalendarUtil.method2635(f_866_, false, f_867_, f_865_)
-                            NodeDeque.method1991(f_852_, f, fs_847_, anIntArray5312!![i_841_.toInt()], i_846_, false, i_848_.toInt(), i_844_, anIntArray5356!![i_841_.toInt()], anIntArray5332!![i_841_.toInt()], f_851_, fs, i_845_, i_868_)
+                            NodeDequeStatics.method1991(f_852_, f, fs_847_, anIntArray5312!![i_841_.toInt()], i_846_, false, i_848_.toInt(), i_844_, anIntArray5356!![i_841_.toInt()], anIntArray5332!![i_841_.toInt()], f_851_, fs, i_845_, i_868_)
                             fs_807_[0] = fs[0]
                             fs_808_[0] = fs[1]
-                            NodeDeque.method1991(f_852_, f, fs_847_, anIntArray5312!![i_842_.toInt()], i_846_, false, i_848_.toInt(), i_844_, anIntArray5356!![i_842_.toInt()], anIntArray5332!![i_842_.toInt()], f_851_, fs, i_845_, i_868_)
+                            NodeDequeStatics.method1991(f_852_, f, fs_847_, anIntArray5312!![i_842_.toInt()], i_846_, false, i_848_.toInt(), i_844_, anIntArray5356!![i_842_.toInt()], anIntArray5332!![i_842_.toInt()], f_851_, fs, i_845_, i_868_)
                             fs_807_[1] = fs[0]
                             fs_808_[1] = fs[1]
-                            NodeDeque.method1991(f_852_, f, fs_847_, anIntArray5312!![i_843_.toInt()], i_846_, false, i_848_.toInt(), i_844_, anIntArray5356!![i_843_.toInt()], anIntArray5332!![i_843_.toInt()], f_851_, fs, i_845_, i_868_)
+                            NodeDequeStatics.method1991(f_852_, f, fs_847_, anIntArray5312!![i_843_.toInt()], i_846_, false, i_848_.toInt(), i_844_, anIntArray5356!![i_843_.toInt()], anIntArray5332!![i_843_.toInt()], f_851_, fs, i_845_, i_868_)
                             fs_807_[2] = fs[0]
                             fs_808_[2] = fs[1]
                         } else if (i_810_.toInt() == 3) {
-                            SpotAnimDefinition.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_841_.toInt()], fs, anIntArray5312!![i_841_.toInt()], i_844_, anIntArray5332!![i_841_.toInt()], i_845_, -4, fs_847_)
+                            SpotAnimDefinitionStatics.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_841_.toInt()], fs, anIntArray5312!![i_841_.toInt()], i_844_, anIntArray5332!![i_841_.toInt()], i_845_, -4, fs_847_)
                             fs_807_[0] = fs[0]
                             fs_808_[0] = fs[1]
-                            SpotAnimDefinition.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_842_.toInt()], fs, anIntArray5312!![i_842_.toInt()], i_844_, anIntArray5332!![i_842_.toInt()], i_845_, -4, fs_847_)
+                            SpotAnimDefinitionStatics.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_842_.toInt()], fs, anIntArray5312!![i_842_.toInt()], i_844_, anIntArray5332!![i_842_.toInt()], i_845_, -4, fs_847_)
                             fs_807_[1] = fs[0]
                             fs_808_[1] = fs[1]
-                            SpotAnimDefinition.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_843_.toInt()], fs, anIntArray5312!![i_843_.toInt()], i_844_, anIntArray5332!![i_843_.toInt()], i_845_, -4, fs_847_)
+                            SpotAnimDefinitionStatics.method1367(i_846_, i_848_.toInt(), f, anIntArray5356!![i_843_.toInt()], fs, anIntArray5312!![i_843_.toInt()], i_844_, anIntArray5332!![i_843_.toInt()], i_845_, -4, fs_847_)
                             fs_807_[2] = fs[0]
                             fs_808_[2] = fs[1]
                             if ((i_848_.toInt() and 0x1) == 0) {
@@ -3608,19 +3609,6 @@ class SoftwareModel : AbstractModel {
         if (aBoolean5382 || aIdentKitRecolorArray5361 != null) {
             aShortArray5327 = ShortArray(anInt5351)
             for (i_872_ in 0..<anInt5351) aShortArray5327!![i_872_] = `is`[i_872_].toShort()
-        }
-    }
-
-    companion object {
-        private var anInt5341: Int
-        @JvmField
-        var anInt5346: Int = 4096
-        @JvmField
-        var anInt5350: Int
-
-        init {
-            anInt5341 = 0
-            anInt5350 = 4096
         }
     }
 }

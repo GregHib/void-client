@@ -1,3 +1,8 @@
+import MaterialTextureCacheStatics.anInt4527
+import MaterialTextureCacheStatics.anInt4529
+import MaterialTextureCacheStatics.anInt4530
+import MaterialTextureCacheStatics.anInt4532
+
 /* Class372 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -30,7 +35,7 @@ class MaterialTextureCache(var_ha_Sub3: NativeRenderer?, var_renderConfig: Rende
             interface18_impl3 = aHa_Sub3_4526.method3891(fs, i_1_, i_1_, GroundItemRenderState.aTextureFormatInfo_1662, -109, class12.aByte205.toInt() != 0)!!
         } else {
             val `is`: IntArray?
-            if (class12.anInt200 == 2 || !ConfigFlagUtil.method1915(4.toByte(), class12.aByte213.toInt())) `is` = aRenderConfig4528.method6(-21540, i_1_, 0.7f, i_0_, false, i_1_)
+            if (class12.anInt200 == 2 || !ConfigFlagUtilStatics.method1915(4.toByte(), class12.aByte213.toInt())) `is` = aRenderConfig4528.method6(-21540, i_1_, 0.7f, i_0_, false, i_1_)
             else `is` = aRenderConfig4528.method5(true, i_0_, 0.7f, i_1_, i_1_, 83)
             interface18_impl3 = aHa_Sub3_4526!!.method3839(i_1_, i_1_, -15137, class12.aByte205.toInt() != 0, `is`)!!
         }
@@ -44,18 +49,7 @@ class MaterialTextureCache(var_ha_Sub3: NativeRenderer?, var_renderConfig: Rende
             aHa_Sub3_4526 = var_ha_Sub3
             aRenderConfig4528 = var_renderConfig
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fw.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("fw.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ')'))
         }
-    }
-
-    companion object {
-        @JvmField
-        var anInt4527: Int = 0
-        @JvmField
-        var anInt4529: Int = 0
-        @JvmField
-        var anInt4530: Int = 0
-        @JvmField
-        var anInt4532: Int = 1407
     }
 }

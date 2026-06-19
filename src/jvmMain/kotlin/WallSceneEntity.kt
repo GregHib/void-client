@@ -1,8 +1,27 @@
-import BrightnessOptionState.Companion.method1745
-import ModelHeaderCache.Companion.method1935
-import WaterMaterialPass.Companion.method2148
-import VorbisOggDecoder.Companion.method2967
-import ChatMessageStream.Companion.method136
+import BrightnessOptionStateStatics.method1745
+import ModelHeaderCacheStatics.method1935
+import WaterMaterialPassStatics.method2148
+import VorbisOggDecoderStatics.method2967
+import ChatMessageStreamStatics.method136
+import WallSceneEntityStatics.anInt9943
+import WallSceneEntityStatics.anInt9944
+import WallSceneEntityStatics.anInt9946
+import WallSceneEntityStatics.anInt9947
+import WallSceneEntityStatics.anInt9948
+import WallSceneEntityStatics.anInt9951
+import WallSceneEntityStatics.anInt9952
+import WallSceneEntityStatics.anInt9953
+import WallSceneEntityStatics.anInt9954
+import WallSceneEntityStatics.anInt9956
+import WallSceneEntityStatics.anInt9957
+import WallSceneEntityStatics.aAbstractModelRendererArray9959
+import WallSceneEntityStatics.anInt9960
+import WallSceneEntityStatics.anInt9961
+import WallSceneEntityStatics.anInt9962
+import WallSceneEntityStatics.anInt9963
+import WallSceneEntityStatics.anInt9964
+import WallSceneEntityStatics.anInt9965
+import WallSceneEntityStatics.anInt9968
 
 /* Class318_Sub1_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -56,11 +75,11 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: N
         val i_2_ = this.x shr 9
         val i_3_ = this.y shr 9
         this.aSceneObjectAnimator_9955!!.method1670(i_2_, class101, i_3_, var_renderer, i_2_, class64, true, (-73).toByte(), i_3_)
-        if (!ParticleSystemRenderer.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
+        if (!ParticleSystemRendererStatics.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
         else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
         if ((this.aSceneObjectAnimator_9955!!.aClass318_Sub10_3081) != null) {
             val class98 = this.aSceneObjectAnimator_9955!!.aClass318_Sub10_3081!!.method2525()
-            if (ParticleSystemRenderer.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
+            if (ParticleSystemRendererStatics.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
             else var_renderer.method3684(class98)
         }
         aBoolean9945 = (class64.F() || (this.aSceneObjectAnimator_9955!!.aClass318_Sub10_3081) != null)
@@ -75,7 +94,7 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: N
             if (i_5_ > -106) this.aSceneObjectAnimator_9955 = null
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("saa.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("saa.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'))
         }
     }
 
@@ -84,7 +103,7 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: N
             this.aSceneObjectAnimator_9955 = SceneObjectAnimator(var_renderer, npcConfig, 22, i_11_, i, i_7_, this, bool, i_12_)
             aBoolean9966 = npcConfig.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("saa.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("saa.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ')'))
         }
     }
 
@@ -113,7 +132,7 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: N
         val class101 = var_renderer!!.method3705()
         if (i_14_ != 0) return true
         class101.method894(this.x, this.anInt6382, this.y)
-        if (ParticleSystemRenderer.aBoolean3870) return class64.method623(i_13_, i, class101, false, 0, LocalPlayerState.anInt1906)
+        if (ParticleSystemRendererStatics.aBoolean3870) return class64.method623(i_13_, i, class101, false, 0, LocalPlayerState.anInt1906)
         return class64.method628(i_13_, i, class101, false, 0)
     }
 
@@ -157,57 +176,5 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: N
         if (i != 836) aBoolean9966 = true
         this.aSceneObjectAnimator_9955!!.method1667(116.toByte(), var_renderer)
         anInt9961++
-    }
-
-    companion object {
-        var anInt9943: Int = 0
-        var anInt9944: Int = 0
-        var anInt9946: Int = 0
-        var anInt9947: Int = 0
-        var anInt9948: Int = 0
-        var anIntArray9949: IntArray? = IntArray(1)
-        var anInt9951: Int = 0
-        var anInt9952: Int = 0
-        var anInt9953: Int = 0
-        var anInt9954: Int = 0
-        var anInt9956: Int = 0
-        var anInt9957: Int = 0
-        var anInt9958: Int = 0
-        var aAbstractModelRendererArray9959: Array<AbstractModelRenderer?>? = null
-        var anInt9960: Int = 0
-        var anInt9961: Int = 0
-        var anInt9962: Int = 0
-        var anInt9963: Int = 0
-        var anInt9964: Int = 0
-        var anInt9965: Int = 0
-        var anInt9967: Int = 0
-        var anInt9968: Int = 0
-
-        fun method2397(i: Byte): Boolean {
-            GlArrayBufferObject.anInt4718++
-            MultiLevelOptionState.aBoolean6147 = true
-            if (i > -123) anIntArray9949 = null
-            anInt9967++
-            return true
-        }
-
-        @JvmStatic
-        fun method2398(i: Byte) {
-            if (i.toInt() != -83) anIntArray9949 = null
-            aAbstractModelRendererArray9959 = null
-            anIntArray9949 = null
-        }
-
-        fun method2399(string: String, i: Int) {
-            val i_15_ = 87 / ((i - -7) / 56)
-            anInt9958++
-            if (string != "") {
-                SceneNodeDeque.anInt1498++
-                val class348_sub47 = method2148(aFontMetaRef_8724, TheoraVideoStream.aIsaacCipher_9029, -124)
-                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
-                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
-                InterfaceComponentGroup.method3243(121, class348_sub47)
-            }
-        }
     }
 }

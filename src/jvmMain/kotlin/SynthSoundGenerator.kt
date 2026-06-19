@@ -1,6 +1,14 @@
 import java.util.*
 import kotlin.math.pow
 import kotlin.math.sin
+import SynthSoundGeneratorStatics.anIntArray1409
+import SynthSoundGeneratorStatics.anIntArray1412
+import SynthSoundGeneratorStatics.anIntArray1416
+import SynthSoundGeneratorStatics.anIntArray1424
+import SynthSoundGeneratorStatics.anIntArray1426
+import SynthSoundGeneratorStatics.anIntArray1429
+import SynthSoundGeneratorStatics.anIntArray1430
+import SynthSoundGeneratorStatics.anIntArray1431
 
 /*
  * Class80
@@ -173,9 +181,9 @@ class SynthSoundGenerator {
                 var i_33_ = i_31_
                 if (i_33_ > i - i_30_) i_33_ = i - i_30_
                 while ( /**/i_32_ < i_33_) {
-                    var i_34_ = ((anIntArray1409!![i_32_ + i_30_].toLong() * FormantSynthFilter.anInt4303.toLong()) shr 16).toInt()
-                    for (i_35_ in 0..<i_30_) i_34_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_35_]).toLong() * (FormantSynthFilter.anIntArrayArray4301!![0]!![i_35_]).toLong()) shr 16).toInt()
-                    for (i_36_ in 0..<i_32_) i_34_ -= ((anIntArray1409!![i_32_ - 1 - i_36_].toLong() * (FormantSynthFilter.anIntArrayArray4301!![1]!![i_36_]).toLong()) shr 16).toInt()
+                    var i_34_ = ((anIntArray1409!![i_32_ + i_30_].toLong() * FormantSynthFilterStatics.anInt4303.toLong()) shr 16).toInt()
+                    for (i_35_ in 0..<i_30_) i_34_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_35_]).toLong() * (FormantSynthFilterStatics.anIntArrayArray4301!![0]!![i_35_]).toLong()) shr 16).toInt()
+                    for (i_36_ in 0..<i_32_) i_34_ -= ((anIntArray1409!![i_32_ - 1 - i_36_].toLong() * (FormantSynthFilterStatics.anIntArrayArray4301!![1]!![i_36_]).toLong()) shr 16).toInt()
                     anIntArray1409!![i_32_] = i_34_
                     i_29_ = aEnvelopeInterpolator_1417!!.method1451(i + 1)
                     i_32_++
@@ -184,9 +192,9 @@ class SynthSoundGenerator {
                 while (true) {
                     if (i_33_ > i - i_30_) i_33_ = i - i_30_
                     while ( /**/i_32_ < i_33_) {
-                        var i_37_ = ((anIntArray1409!![i_32_ + i_30_].toLong() * FormantSynthFilter.anInt4303.toLong()) shr 16).toInt()
-                        for (i_38_ in 0..<i_30_) i_37_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_38_]).toLong() * (FormantSynthFilter.anIntArrayArray4301!![0]!![i_38_]).toLong()) shr 16).toInt()
-                        for (i_39_ in 0..<i_31_) i_37_ -= (((anIntArray1409!![i_32_ - 1 - i_39_]).toLong() * (FormantSynthFilter.anIntArrayArray4301!![1]!![i_39_]).toLong()) shr 16).toInt()
+                        var i_37_ = ((anIntArray1409!![i_32_ + i_30_].toLong() * FormantSynthFilterStatics.anInt4303.toLong()) shr 16).toInt()
+                        for (i_38_ in 0..<i_30_) i_37_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_38_]).toLong() * (FormantSynthFilterStatics.anIntArrayArray4301!![0]!![i_38_]).toLong()) shr 16).toInt()
+                        for (i_39_ in 0..<i_31_) i_37_ -= (((anIntArray1409!![i_32_ - 1 - i_39_]).toLong() * (FormantSynthFilterStatics.anIntArrayArray4301!![1]!![i_39_]).toLong()) shr 16).toInt()
                         anIntArray1409!![i_32_] = i_37_
                         i_29_ = aEnvelopeInterpolator_1417!!.method1451(i + 1)
                         i_32_++
@@ -198,8 +206,8 @@ class SynthSoundGenerator {
                 }
                 while ( /**/i_32_ < i) {
                     var i_40_ = 0
-                    for (i_41_ in i_32_ + i_30_ - i..<i_30_) i_40_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_41_]).toLong() * (FormantSynthFilter.anIntArrayArray4301!![0]!![i_41_]).toLong()) shr 16).toInt()
-                    for (i_42_ in 0..<i_31_) i_40_ -= ((anIntArray1409!![i_32_ - 1 - i_42_].toLong() * (FormantSynthFilter.anIntArrayArray4301!![1]!![i_42_]).toLong()) shr 16).toInt()
+                    for (i_41_ in i_32_ + i_30_ - i..<i_30_) i_40_ += (((anIntArray1409!![i_32_ + i_30_ - 1 - i_41_]).toLong() * (FormantSynthFilterStatics.anIntArrayArray4301!![0]!![i_41_]).toLong()) shr 16).toInt()
+                    for (i_42_ in 0..<i_31_) i_40_ -= ((anIntArray1409!![i_32_ - 1 - i_42_].toLong() * (FormantSynthFilterStatics.anIntArrayArray4301!![1]!![i_42_]).toLong()) shr 16).toInt()
                     anIntArray1409!![i_32_] = i_40_
                     i_29_ = aEnvelopeInterpolator_1417!!.method1451(i + 1)
                     i_32_++
@@ -215,41 +223,5 @@ class SynthSoundGenerator {
 
     init {
         anIntArray1428 = IntArray(5)
-    }
-
-    companion object {
-        private var anIntArray1409: IntArray?
-        private var anIntArray1412: IntArray?
-        private var anIntArray1416: IntArray? = IntArray(32768)
-        private var anIntArray1424: IntArray?
-        private var anIntArray1426: IntArray?
-        private var anIntArray1429: IntArray?
-        private var anIntArray1430: IntArray?
-        private var anIntArray1431: IntArray?
-
-        @JvmStatic
-        fun method808() {
-            anIntArray1409 = null
-            anIntArray1416 = null
-            anIntArray1412 = null
-            anIntArray1431 = null
-            anIntArray1424 = null
-            anIntArray1430 = null
-            anIntArray1429 = null
-            anIntArray1426 = null
-        }
-
-        init {
-            val random = Random(0L)
-            for (i in 0..32767) anIntArray1416!![i] = (random.nextInt() and 0x2) - 1
-            anIntArray1412 = IntArray(32768)
-            for (i in 0..32767) anIntArray1412!![i] = (sin(i.toDouble() / 5215.1903) * 16384.0).toInt()
-            anIntArray1409 = IntArray(220500)
-            anIntArray1424 = IntArray(5)
-            anIntArray1426 = IntArray(5)
-            anIntArray1429 = IntArray(5)
-            anIntArray1431 = IntArray(5)
-            anIntArray1430 = IntArray(5)
-        }
     }
 }

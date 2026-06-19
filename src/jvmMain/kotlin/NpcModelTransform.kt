@@ -1,3 +1,10 @@
+import NpcModelTransformStatics.aShortArray127
+import NpcModelTransformStatics.aShortArray133
+import NpcModelTransformStatics.aByteArray136
+import NpcModelTransformStatics.aShortArray138
+import NpcModelTransformStatics.aShortArray141
+import NpcModelTransformStatics.aShortArray142
+
 /* Class4 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -82,29 +89,6 @@ class NpcModelTransform internal constructor(`is`: ByteArray, class348_sub33: An
             this.anInt126 = 0
             this.aBoolean139 = false
             this.aBoolean131 = false
-        }
-    }
-
-    companion object {
-        private var aShortArray127: ShortArray? = ShortArray(500)
-        private var aShortArray133: ShortArray? = ShortArray(500)
-        private var aByteArray136: ByteArray? = ByteArray(500)
-        private var aShortArray138: ShortArray? = ShortArray(500)
-        private var aShortArray141: ShortArray?
-        private var aShortArray142: ShortArray? = ShortArray(500)
-
-        @JvmStatic
-        fun method177() {
-            aShortArray141 = null
-            aShortArray127 = null
-            aShortArray133 = null
-            aShortArray142 = null
-            aShortArray138 = null
-            aByteArray136 = null
-        }
-
-        init {
-            aShortArray141 = ShortArray(500)
         }
     }
 }

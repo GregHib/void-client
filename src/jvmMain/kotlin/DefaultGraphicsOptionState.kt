@@ -1,3 +1,10 @@
+import DefaultGraphicsOptionStateStatics.anInt6127
+import DefaultGraphicsOptionStateStatics.aTileRenderState_6128
+import DefaultGraphicsOptionStateStatics.anInt6130
+import DefaultGraphicsOptionStateStatics.anInt6131
+import DefaultGraphicsOptionStateStatics.anInt6132
+import DefaultGraphicsOptionStateStatics.anInt6133
+
 /* Class239_Sub27 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -27,7 +34,7 @@ class DefaultGraphicsOptionState : GraphicsOptionState {
     override fun method1710(i: Int): Int {
         anInt6133++
         if (i != 20014) method1716(true)
-        if ((this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aSceneProjector_186) && this.aClass348_Sub51_3136.method3425(-111)) return 0
+        if ((this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNodeStatics.aSceneProjector_186) && this.aClass348_Sub51_3136.method3425(-111)) return 0
         return 1
     }
 
@@ -35,84 +42,5 @@ class DefaultGraphicsOptionState : GraphicsOptionState {
         anInt6131++
         this.anInt3138 = method1710(20014)
         if (bool != false) method1710(98)
-    }
-
-    companion object {
-        @JvmField
-        var anInt6127: Int = 0
-        @JvmField
-        var aTileRenderState_6128: TileRenderState? = null
-        @JvmField
-        var anInt6129: Int = 0
-        @JvmField
-        var anInt6130: Int = 0
-        @JvmField
-        var anInt6131: Int = 0
-        @JvmField
-        var anInt6132: Int = 0
-        @JvmField
-        var anInt6133: Int = 0
-
-        @JvmStatic
-        fun method1839(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int) {
-            anInt6129++
-            var i_5_ = 0
-            var i_6_ = i_0_
-            val i_7_ = i_4_ * i_4_
-            val i_8_ = i_0_ * i_0_
-            val i_9_ = i_8_ shl 1
-            val i_10_ = i_7_ shl 1
-            val i_11_ = i_0_ shl 1
-            var i_12_ = i_9_ + i_7_ * (-i_11_ + 1)
-            var i_13_ = -((i_11_ + i_2_) * i_10_) + i_8_
-            val i_14_ = i_7_ shl 2
-            val i_15_ = i_8_ shl 2
-            var i_16_ = i_9_ * (3 + (i_5_ shl 1))
-            var i_17_ = i_10_ * (-3 + (i_6_ shl 1))
-            var i_18_ = i_15_ * (i_5_ - -1)
-            if (LocalPlayerState.anInt1910 <= i_1_ && WidgetTextConfig.anInt513 >= i_1_) {
-                val i_19_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i + i_4_, WorldMapLabel.anInt4960, -89)
-                val i_20_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_4_ + i, WorldMapLabel.anInt4960, -116)
-                GlElementArrayBuffer.method1156(-27, i_19_, WidgetDefinition.anIntArrayArray255!![i_1_]!!, i_20_, i_3_)
-            }
-            var i_21_ = i_14_ * (i_6_ - 1)
-            while (i_6_ > 0) {
-                if (i_12_ < 0) {
-                    while (i_12_ < 0) {
-                        i_13_ += i_18_
-                        i_12_ += i_16_
-                        i_5_++
-                        i_16_ += i_15_
-                        i_18_ += i_15_
-                    }
-                }
-                if (i_13_ < 0) {
-                    i_12_ += i_16_
-                    i_13_ += i_18_
-                    i_16_ += i_15_
-                    i_18_ += i_15_
-                    i_5_++
-                }
-                i_13_ += -i_17_
-                i_12_ += -i_21_
-                i_21_ -= i_14_
-                i_17_ -= i_14_
-                i_6_--
-                val i_22_ = i_1_ + -i_6_
-                val i_23_ = i_6_ + i_1_
-                if (i_23_ >= LocalPlayerState.anInt1910 && i_22_ <= WidgetTextConfig.anInt513) {
-                    val i_24_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i + i_5_, WorldMapLabel.anInt4960, 86)
-                    val i_25_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_5_ + i, WorldMapLabel.anInt4960, 32)
-                    if (LocalPlayerState.anInt1910 <= i_22_) GlElementArrayBuffer.method1156(i_2_ + -26, i_24_, WidgetDefinition.anIntArrayArray255!![i_22_]!!, i_25_, i_3_)
-                    if (WidgetTextConfig.anInt513 >= i_23_) GlElementArrayBuffer.method1156(-27, i_24_, WidgetDefinition.anIntArrayArray255!![i_23_]!!, i_25_, i_3_)
-                }
-            }
-        }
-
-        @JvmStatic
-        fun method1841(i: Int) {
-            if (i != 16878) method1839(-83, -10, 27, 111, 41, 109)
-            aTileRenderState_6128 = null
-        }
     }
 }

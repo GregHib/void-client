@@ -1,6 +1,10 @@
-import jaggl.OpenGL.Companion.glFramebufferTexture2DEXT
-import jaggl.OpenGL.Companion.glTexImage2Di
-import jaggl.OpenGL.Companion.glTexImage2Dub
+import jaggl.OpenGLStatics.glFramebufferTexture2DEXT
+import jaggl.OpenGLStatics.glTexImage2Di
+import jaggl.OpenGLStatics.glTexImage2Dub
+import GlTextureCubeMapStatics.aStringArray8532
+import GlTextureCubeMapStatics.anInt8533
+import GlTextureCubeMapStatics.anInt8534
+import GlTextureCubeMapStatics.anInt8537
 
 class GlTextureCubeMap : GlTexture {
     private var anInt8535 = -1
@@ -19,7 +23,7 @@ class GlTextureCubeMap : GlTexture {
     internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_4_: Int) : super(var_ha_Sub2, 34067, i, i_4_ * (i_4_ * 6), false) {
         this.anInt8538 = i_4_
         this.aHa_Sub2_4851.method3771((-81).toByte(), this)
-        for (i_5_ in 0..5) glTexImage2Dub(i_5_ + 34069, 0, this.anInt4858, i_4_, i_4_, 0, CharacterRenderState.method2779(true, (this.anInt4858)), 5121, null, 0)
+        for (i_5_ in 0..5) glTexImage2Dub(i_5_ + 34069, 0, this.anInt4858, i_4_, i_4_, 0, CharacterRenderStateStatics.method2779(true, (this.anInt4858)), 5121, null, 0)
         this.method1957(9728, true)
     }
 
@@ -38,7 +42,7 @@ class GlTextureCubeMap : GlTexture {
             for (i_8_ in 0..5) glTexImage2Dub(i_8_ + 34069, 0, this.anInt4858, i_6_, i_6_, 0, i_7_, 5121, `is`!![i_8_], 0)
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("q.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("q.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ')'))
         }
     }
 
@@ -47,35 +51,13 @@ class GlTextureCubeMap : GlTexture {
             this.anInt8538 = i_9_
             this.aHa_Sub2_4851.method3771((-77).toByte(), this)
             if (bool) {
-                for (i_10_ in 0..5) TextureMipDescriptor.method3460(i_10_ + 34069, this.anInt4858, i_9_, this.aHa_Sub2_4851.anInt7812, i_9_, `is`!![i_10_]!!, 32993, -83)
+                for (i_10_ in 0..5) TextureMipDescriptorStatics.method3460(i_10_ + 34069, this.anInt4858, i_9_, this.aHa_Sub2_4851.anInt7812, i_9_, `is`!![i_10_]!!, 32993, -83)
             } else {
                 for (i_11_ in 0..5) glTexImage2Di(i_11_ + 34069, 0, this.anInt4858, i_9_, i_9_, 0, 32993, (this.aHa_Sub2_4851.anInt7812), `is`!![i_11_], 0)
             }
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("q.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_9_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var aLongArray8530: LongArray? = null
-        @JvmField
-        var aParticleEmitterNodeArray8531s: Array<ParticleEmitterNode?>? = arrayOfNulls<ParticleEmitterNode>(50)
-        @JvmField
-        var aStringArray8532: Array<String?>? = null
-        @JvmField
-        var anInt8533: Int = 0
-        @JvmField
-        var anInt8534: Int = 0
-        @JvmField
-        var anInt8537: Int = 0
-        @JvmStatic
-        fun method1962(i: Int) {
-            aStringArray8532 = null
-            aLongArray8530 = null
-            aParticleEmitterNodeArray8531s = null
-            if (i != -1) aStringArray8532 = null
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("q.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_9_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 }

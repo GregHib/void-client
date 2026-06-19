@@ -1,4 +1,7 @@
-import SoundBankPatch.Companion.method2929
+import SoundBankPatchStatics.method2929
+import CompiledScriptCacheStatics.method3473
+import CompiledScriptCacheStatics.anInt4363
+import CompiledScriptCacheStatics.anInt4370
 
 /* Class355 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -57,31 +60,5 @@ class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, 
             }
             break
         } while (false)
-    }
-
-    companion object {
-        var anInt4363: Int = 0
-        var anObject4366: Any? = null
-        var aLong4367: Long = -1L
-        var anInt4370: Int = 0
-        var anInt4371: Int = 0
-        @JvmField
-        var anInt4372: Int = 0
-        fun method3470(i: Int) {
-            if (i == 1) {
-                anInt4371++
-                if (!MinimapSquareDrawer.aBoolean5224) {
-                    MinimapSquareDrawer.aBoolean5224 = true
-                    WorldMapPolygonIconLabel.aBoolean10174 = true
-                    MultiFieldRecord.aFloat6898 += (-12.0f - MultiFieldRecord.aFloat6898) / 2.0f
-                }
-            }
-        }
-
-        @JvmStatic
-        fun method3473(i: Int) {
-            if (i != 12949) anInt4372 = -30
-            anObject4366 = null
-        }
     }
 }

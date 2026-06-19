@@ -1,3 +1,12 @@
+import FogOptionStateStatics.method1807
+import FogOptionStateStatics.anInt6048
+import FogOptionStateStatics.anInt6049
+import FogOptionStateStatics.anInt6050
+import FogOptionStateStatics.anInt6051
+import FogOptionStateStatics.anInt6052
+import FogOptionStateStatics.anInt6053
+import FogOptionStateStatics.anInt6055
+
 /* Class239_Sub20 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -10,7 +19,7 @@ class FogOptionState : GraphicsOptionState {
 
     override fun method1714(i: Int, i_0_: Int): Int {
         anInt6051++
-        if (!LinkedListNode.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
+        if (!LinkedListNodeStatics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
         if (i != 3) method1807(64.toByte())
         return 1
     }
@@ -20,7 +29,7 @@ class FogOptionState : GraphicsOptionState {
     fun method1806(i: Int): Boolean {
         if (i < 85) method1714(-53, -119)
         anInt6049++
-        return LinkedListNode.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))
+        return LinkedListNodeStatics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))
     }
 
     internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
@@ -40,35 +49,7 @@ class FogOptionState : GraphicsOptionState {
     override fun method1716(bool: Boolean) {
         anInt6050++
         if (bool != false) method1714(-51, -128)
-        if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-123).toByte()) && !LinkedListNode.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 0
+        if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-123).toByte()) && !LinkedListNodeStatics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 0
         if (this.anInt3138 < 0 || this.anInt3138 > 2) this.anInt3138 = method1710(20014)
-    }
-
-    companion object {
-        @JvmField
-        var anInt6048: Int = 0
-        @JvmField
-        var anInt6049: Int = 0
-        @JvmField
-        var anInt6050: Int = 0
-        @JvmField
-        var anInt6051: Int = 0
-        @JvmField
-        var anInt6052: Int = 0
-        @JvmField
-        var anInt6053: Int = 0
-        @JvmField
-        var anIntArrayArray6054: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(12, 12, 12, 12), intArrayOf(12, 12, 12, 12), intArrayOf(5, 5, 5), intArrayOf(5, 5, 5), intArrayOf(5, 5, 5), intArrayOf(5, 5, 5), intArrayOf(12, 12, 12, 12, 12, 12), intArrayOf(1, 1, 1, 7), intArrayOf(1, 1, 7, 1), intArrayOf(8, 9, 9, 8, 8, 9), intArrayOf(8, 8, 9, 8, 9, 9), intArrayOf(10, 10, 11, 11, 11, 10), intArrayOf(12, 12, 12, 12))
-        @JvmField
-        var anInt6055: Int = 0
-        @JvmField
-        var aIntRange_6056: IntRange? = IntRange(26, 11)
-
-        @JvmStatic
-        fun method1807(i: Byte) {
-            anIntArrayArray6054 = null
-            if (i.toInt() != -121) anIntArrayArray6054 = null
-            aIntRange_6056 = null
-        }
     }
 }

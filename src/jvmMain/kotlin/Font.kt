@@ -1,12 +1,30 @@
-import jaggl.OpenGL.Companion.glAttachObjectARB
-import jaggl.OpenGL.Companion.glCreateProgramObjectARB
-import jaggl.OpenGL.Companion.glDeleteObjectARB
-import jaggl.OpenGL.Companion.glDetachObjectARB
-import jaggl.OpenGL.Companion.glGetInfoLogARB
-import jaggl.OpenGL.Companion.glGetObjectParameterivARB
-import jaggl.OpenGL.Companion.glLinkProgramARB
+import jaggl.OpenGLStatics.glAttachObjectARB
+import jaggl.OpenGLStatics.glCreateProgramObjectARB
+import jaggl.OpenGLStatics.glDeleteObjectARB
+import jaggl.OpenGLStatics.glDetachObjectARB
+import jaggl.OpenGLStatics.glGetInfoLogARB
+import jaggl.OpenGLStatics.glGetObjectParameterivARB
+import jaggl.OpenGLStatics.glLinkProgramARB
 import java.util.*
 import kotlin.math.sin
+import FontStatics.method2570
+import FontStatics.anInt4045
+import FontStatics.anInt4046
+import FontStatics.anInt4047
+import FontStatics.anInt4049
+import FontStatics.anInt4050
+import FontStatics.anInt4051
+import FontStatics.anInt4052
+import FontStatics.anInt4053
+import FontStatics.anInt4054
+import FontStatics.anInt4056
+import FontStatics.anInt4057
+import FontStatics.anInt4058
+import FontStatics.anInt4059
+import FontStatics.anInt4060
+import FontStatics.anInt4061
+import FontStatics.aRectangleRegion_4062
+import FontStatics.anInt4064
 
 /*
  * Class324
@@ -27,7 +45,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                 val i_7_ = string!!.length
                 var i_8_ = 0
                 while ( /**/i_7_ > i_8_) {
-                    var c = (TextureCache.method3464(string.get(i_8_), false).toInt() and 0xff).toChar()
+                    var c = (TextureCacheStatics.method3464(string.get(i_8_), false).toInt() and 0xff).toChar()
                     if (c.code == 60) i_4_ = i_8_
                     else {
                         if (c.code == 62 && i_4_ != -1) {
@@ -51,7 +69,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                                                     if (`is` != null) i_11_ = `is`[i_6_]
                                                     else i_11_ = 0
                                                     i_6_++
-                                                    val i_12_ = (RegionSceneShifter.method3156(true, (string_9_.substring(4))))
+                                                    val i_12_ = (RegionSceneShifterStatics.method3156(true, (string_9_.substring(4))))
                                                     val class105 = abstractModelRenderers!![i_12_]!!
                                                     val i_13_ = (if (is_0_ == null) class105.method980() else is_0_[i_12_])
                                                     class105.method964(i + i_10_, (-i_13_ + (aFontDefinition_4063!!.anInt1992) + (i_2_ - -i_11_)), 1, 0, 1)
@@ -78,16 +96,16 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                             else i_15_ = `is`[i_6_]
                             if (c.code != 32) {
                                 if ((ConnectionStateRefs.anInt320 and 0xffffff.inv()) != 0) fa(c, 1 + i - -i_14_, i_2_ - -1 + i_15_, ConnectionStateRefs.anInt320, true)
-                                fa(c, i + i_14_, i_2_ + i_15_, ParamMap.anInt9492, false)
+                                fa(c, i + i_14_, i_2_ + i_15_, ParamMapStatics.anInt9492, false)
                             } else if (ParserSpecialCharsHolder.anInt1902 > 0) {
-                                GlTexture.anInt4848 += ParserSpecialCharsHolder.anInt1902
-                                i += GlTexture.anInt4848 shr 8
-                                GlTexture.anInt4848 = GlTexture.anInt4848 and 0xff
+                                GlTextureStatics.anInt4848 += ParserSpecialCharsHolder.anInt1902
+                                i += GlTextureStatics.anInt4848 shr 8
+                                GlTextureStatics.anInt4848 = GlTextureStatics.anInt4848 and 0xff
                             }
                             i_6_++
                             val i_16_ = aFontDefinition_4063!!.method1184((-48).toByte(), c.code)
-                            if (Player.anInt10567 != -1) aRenderer4048!!.method3649((-103).toByte(), i_16_, i_2_ - -((aFontDefinition_4063!!.anInt1992).toDouble() * 0.7).toInt(), Player.anInt10567, i)
-                            if (DirectionalStripeTextureNode.anInt9101 != -1) aRenderer4048!!.method3649((-96).toByte(), i_16_, (aFontDefinition_4063!!.anInt1992) + i_2_, (DirectionalStripeTextureNode.anInt9101), i)
+                            if (PlayerStatics.anInt10567 != -1) aRenderer4048!!.method3649((-103).toByte(), i_16_, i_2_ - -((aFontDefinition_4063!!.anInt1992).toDouble() * 0.7).toInt(), PlayerStatics.anInt10567, i)
+                            if (DirectionalStripeTextureNodeStatics.anInt9101 != -1) aRenderer4048!!.method3649((-96).toByte(), i_16_, (aFontDefinition_4063!!.anInt1992) + i_2_, (DirectionalStripeTextureNodeStatics.anInt9101), i)
                             i_5_ = c.code
                             i += i_16_
                         }
@@ -96,7 +114,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("da.V(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("da.V(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ')'))
         }
     }
 
@@ -108,7 +126,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                 method2583(0, i, 0, abstractModelRenderers, null, string, `is`, 25625, i_20_)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("da.R(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("da.R(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -124,13 +142,13 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             val is_33_: IntArray?
             if ((aFontDefinition_4063!!.anInt1993 + aFontDefinition_4063!!.anInt1988 - -i_32_) <= i || i_32_ + i_32_ <= i) is_33_ = intArrayOf(i_25_)
             else is_33_ = null
-            var i_34_ = aFontDefinition_4063!!.method1188(string, is_33_, LinkedListIterator.aStringArray2113, 87.toByte(), abstractModelRenderers)
+            var i_34_ = aFontDefinition_4063!!.method1188(string, is_33_, LinkedListIteratorStatics.aStringArray2113, 87.toByte(), abstractModelRenderers)
             if (i_31_ == -1) {
                 i_31_ = i / i_32_
                 if (i_31_ <= 0) i_31_ = 1
             }
             if (i_31_ > 0 && i_31_ <= i_34_) {
-                LinkedListIterator.aStringArray2113!![i_31_ - 1] = aFontDefinition_4063!!.method1181(abstractModelRenderers, i_25_, (LinkedListIterator.aStringArray2113!![i_31_ - 1]), 55.toByte())
+                LinkedListIteratorStatics.aStringArray2113!![i_31_ - 1] = aFontDefinition_4063!!.method1181(abstractModelRenderers, i_25_, (LinkedListIteratorStatics.aStringArray2113!![i_31_ - 1]), 55.toByte())
                 i_34_ = i_31_
             }
             if (i_26_ == 3 && i_34_ == 1) i_26_ = 1
@@ -146,19 +164,19 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                 } else i_36_ = (-aFontDefinition_4063!!.anInt1993 + i + (i_24_ - (i_34_ + -1) * i_32_))
             } else i_36_ = ((-aFontDefinition_4063!!.anInt1993 + (-aFontDefinition_4063!!.anInt1988 + i + -(i_32_ * (-1 + i_34_)))) / 2 + (aFontDefinition_4063!!.anInt1988 + i_24_))
             for (i_38_ in 0..<i_34_) {
-                if (i_29_ == 0) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIterator.aStringArray2113!![i_38_], `is`, 25625, i_28_)
-                else if (i_29_ == 1) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIterator.aStringArray2113!![i_38_], `is`, 25625, (-aFontDefinition_4063!!.method1183(true, (LinkedListIterator.aStringArray2113!![i_38_])) + i_25_) / 2 + i_28_)
-                else if (i_29_ == 2) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIterator.aStringArray2113!![i_38_], `is`, 25625, (-aFontDefinition_4063!!.method1183(true, (LinkedListIterator.aStringArray2113!![i_38_])) + (i_25_ + i_28_)))
+                if (i_29_ == 0) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIteratorStatics.aStringArray2113!![i_38_], `is`, 25625, i_28_)
+                else if (i_29_ == 1) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIteratorStatics.aStringArray2113!![i_38_], `is`, 25625, (-aFontDefinition_4063!!.method1183(true, (LinkedListIteratorStatics.aStringArray2113!![i_38_])) + i_25_) / 2 + i_28_)
+                else if (i_29_ == 2) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIteratorStatics.aStringArray2113!![i_38_], `is`, 25625, (-aFontDefinition_4063!!.method1183(true, (LinkedListIteratorStatics.aStringArray2113!![i_38_])) + (i_25_ + i_28_)))
                 else if (i_38_ != i_34_ - 1) {
-                    method2580(LinkedListIterator.aStringArray2113!![i_38_]!!, 0, i_25_)
-                    method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIterator.aStringArray2113!![i_38_], `is`, 25625, i_28_)
+                    method2580(LinkedListIteratorStatics.aStringArray2113!![i_38_]!!, 0, i_25_)
+                    method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIteratorStatics.aStringArray2113!![i_38_], `is`, 25625, i_28_)
                     ParserSpecialCharsHolder.anInt1902 = 0
-                } else method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIterator.aStringArray2113!![i_38_], `is`, 25625, i_28_)
+                } else method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, LinkedListIteratorStatics.aStringArray2113!![i_38_], `is`, 25625, i_28_)
                 i_36_ += i_32_
             }
             return i_34_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw SoundBankPatchStatics.method2929(
                 runtimeexception,
                 ("da.W(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')')
             )
@@ -196,7 +214,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             method2566(abstractModelRenderers, null, i_52_, `is`, is_55_, i_51_, string, 174)
             return i_56_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("da.BA(" + i + ',' + i_48_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i_49_ + ',' + i_50_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_51_ + ',' + i_52_ + ',' + (if (random != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("da.BA(" + i + ',' + i_48_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i_49_ + ',' + i_50_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_51_ + ',' + i_52_ + ',' + (if (random != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -204,29 +222,29 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
         anInt4046++
         try {
             if (i <= -78) {
-                if (string.startsWith("col=")) ParamMap.anInt9492 = (ParamMap.anInt9492 and 0xffffff.inv() or (ColourAdjustment.method450(-20188, string.substring(4), 16) and 0xffffff))
-                else if (string == "/col") ParamMap.anInt9492 = (ParamMap.anInt9492 and 0xffffff.inv() or (0xffffff and PerlinTextureProvider.anInt5807))
-                if (string.startsWith("argb=")) ParamMap.anInt9492 = ColourAdjustment.method450(-20188, string.substring(5), 16)
+                if (string.startsWith("col=")) ParamMapStatics.anInt9492 = (ParamMapStatics.anInt9492 and 0xffffff.inv() or (ColourAdjustmentStatics.method450(-20188, string.substring(4), 16) and 0xffffff))
+                else if (string == "/col") ParamMapStatics.anInt9492 = (ParamMapStatics.anInt9492 and 0xffffff.inv() or (0xffffff and PerlinTextureProviderStatics.anInt5807))
+                if (string.startsWith("argb=")) ParamMapStatics.anInt9492 = ColourAdjustmentStatics.method450(-20188, string.substring(5), 16)
                 else if (string != "/argb") {
                     if (!string.startsWith("str=")) {
-                        if (string == "str") Player.anInt10567 = (ParamMap.anInt9492 and 0xffffff.inv() or 0x800000)
+                        if (string == "str") PlayerStatics.anInt10567 = (ParamMapStatics.anInt9492 and 0xffffff.inv() or 0x800000)
                         else if (string != "/str") {
                             if (!string.startsWith("u=")) {
                                 if (string != "u") {
                                     if (string != "/u") {
                                         if (!string.equals("shad=-1", ignoreCase = true)) {
-                                            if (string.startsWith("shad=")) ConnectionStateRefs.anInt320 = ((0xffffff.inv() and (ParamMap.anInt9492)) or (ColourAdjustment.method450(-20188, string.substring(5), 16)))
-                                            else if (string == "shad") ConnectionStateRefs.anInt320 = (0xffffff.inv() and (ParamMap.anInt9492))
+                                            if (string.startsWith("shad=")) ConnectionStateRefs.anInt320 = ((0xffffff.inv() and (ParamMapStatics.anInt9492)) or (ColourAdjustmentStatics.method450(-20188, string.substring(5), 16)))
+                                            else if (string == "shad") ConnectionStateRefs.anInt320 = (0xffffff.inv() and (ParamMapStatics.anInt9492))
                                             else if (string != "/shad") {
-                                                if (string == "br") method2579((HeadIconRenderer.anInt2061), 117, (PerlinTextureProvider.anInt5807))
-                                            } else ConnectionStateRefs.anInt320 = HeadIconRenderer.anInt2061
+                                                if (string == "br") method2579((HeadIconRendererStatics.anInt2061), 117, (PerlinTextureProviderStatics.anInt5807))
+                                            } else ConnectionStateRefs.anInt320 = HeadIconRendererStatics.anInt2061
                                         } else ConnectionStateRefs.anInt320 = 0
-                                    } else DirectionalStripeTextureNode.anInt9101 = -1
-                                } else DirectionalStripeTextureNode.anInt9101 = (ParamMap.anInt9492 and 0xffffff.inv())
-                            } else DirectionalStripeTextureNode.anInt9101 = ((ParamMap.anInt9492 and 0xffffff.inv()) or ColourAdjustment.method450(-20188, string.substring(2), 16))
-                        } else Player.anInt10567 = -1
-                    } else Player.anInt10567 = (ParamMap.anInt9492 and 0xffffff.inv() or ColourAdjustment.method450(-20188, string.substring(4), 16))
-                } else ParamMap.anInt9492 = PerlinTextureProvider.anInt5807
+                                    } else DirectionalStripeTextureNodeStatics.anInt9101 = -1
+                                } else DirectionalStripeTextureNodeStatics.anInt9101 = (ParamMapStatics.anInt9492 and 0xffffff.inv())
+                            } else DirectionalStripeTextureNodeStatics.anInt9101 = ((ParamMapStatics.anInt9492 and 0xffffff.inv()) or ColourAdjustmentStatics.method450(-20188, string.substring(2), 16))
+                        } else PlayerStatics.anInt10567 = -1
+                    } else PlayerStatics.anInt10567 = (ParamMapStatics.anInt9492 and 0xffffff.inv() or ColourAdjustmentStatics.method450(-20188, string.substring(4), 16))
+                } else ParamMapStatics.anInt9492 = PerlinTextureProviderStatics.anInt5807
             }
         } catch (exception: Exception) {
             /* empty */
@@ -286,17 +304,17 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
 
     private fun method2579(i: Int, i_85_: Int, i_86_: Int) {
         var i = i
-        DirectionalStripeTextureNode.anInt9101 = -1
+        DirectionalStripeTextureNodeStatics.anInt9101 = -1
         if (i == -1) i = 0
-        PerlinTextureProvider.anInt5807 = i_86_
-        ParamMap.anInt9492 = PerlinTextureProvider.anInt5807
-        GlTexture.anInt4848 = 0
+        PerlinTextureProviderStatics.anInt5807 = i_86_
+        ParamMapStatics.anInt9492 = PerlinTextureProviderStatics.anInt5807
+        GlTextureStatics.anInt4848 = 0
         ParserSpecialCharsHolder.anInt1902 = 0
         val i_87_ = -28 / ((56 - i_85_) / 49)
         anInt4053++
-        Player.anInt10567 = -1
-        HeadIconRenderer.anInt2061 = i
-        ConnectionStateRefs.anInt320 = HeadIconRenderer.anInt2061
+        PlayerStatics.anInt10567 = -1
+        HeadIconRendererStatics.anInt2061 = i
+        ConnectionStateRefs.anInt320 = HeadIconRendererStatics.anInt2061
     }
 
     private fun method2580(string: String, i: Int, i_88_: Int) {
@@ -343,7 +361,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             if (i_105_ == 25625) {
                 var i_110_ = 0
                 while ( /**/i_110_ < i_109_) {
-                    var c = (TextureCache.method3464(string.get(i_110_), false).toInt() and 0xff).toChar()
+                    var c = (TextureCacheStatics.method3464(string.get(i_110_), false).toInt() and 0xff).toChar()
                     if (c.code == 60) i_107_ = i_110_
                     else {
                         if (c.code == 62 && i_107_ != -1) {
@@ -360,10 +378,10 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                                         else {
                                             if (string_111_.startsWith("img=")) {
                                                 try {
-                                                    val i_112_ = (RegionSceneShifter.method3156(true, (string_111_.substring(4))))
+                                                    val i_112_ = (RegionSceneShifterStatics.method3156(true, (string_111_.substring(4))))
                                                     val class105 = abstractModelRenderers!![i_112_]!!
                                                     val i_113_ = (if (`is` == null) class105.method980() else `is`[i_112_])
-                                                    if (((ParamMap.anInt9492) and 0xffffff.inv()) != -16777216) class105.method964(i_106_, (-i_113_ + (aFontDefinition_4063!!.anInt1992) + i_103_), 0, (0xffffff or (0xffffff.inv() and (ParamMap.anInt9492))), 1)
+                                                    if (((ParamMapStatics.anInt9492) and 0xffffff.inv()) != -16777216) class105.method964(i_106_, (-i_113_ + (aFontDefinition_4063!!.anInt1992) + i_103_), 0, (0xffffff or (0xffffff.inv() and (ParamMapStatics.anInt9492))), 1)
                                                     else class105.method964(i_106_, ((aFontDefinition_4063!!.anInt1992) + (i_103_ - i_113_)), 1, 0, 1)
                                                     i_108_ = -1
                                                     i_106_ += abstractModelRenderers[i_112_]!!.method966()
@@ -383,19 +401,19 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                             if (c.code != 32) {
                                 if (var_sprite == null) {
                                     if ((ConnectionStateRefs.anInt320 and 0xffffff.inv()) != 0) fa(c, i_106_ + 1, 1 + i_103_, ConnectionStateRefs.anInt320, true)
-                                    fa(c, i_106_, i_103_, ParamMap.anInt9492, false)
+                                    fa(c, i_106_, i_103_, ParamMapStatics.anInt9492, false)
                                 } else {
                                     if ((0xffffff.inv() and ConnectionStateRefs.anInt320) != 0) method2578(c, 1 + i_106_, i_103_ + 1, ConnectionStateRefs.anInt320, true, var_sprite, i_104_, i)
-                                    method2578(c, i_106_, i_103_, ParamMap.anInt9492, false, var_sprite, i_104_, i)
+                                    method2578(c, i_106_, i_103_, ParamMapStatics.anInt9492, false, var_sprite, i_104_, i)
                                 }
                             } else if (ParserSpecialCharsHolder.anInt1902 > 0) {
-                                GlTexture.anInt4848 += ParserSpecialCharsHolder.anInt1902
-                                i_106_ += GlTexture.anInt4848 shr 8
-                                GlTexture.anInt4848 = GlTexture.anInt4848 and 0xff
+                                GlTextureStatics.anInt4848 += ParserSpecialCharsHolder.anInt1902
+                                i_106_ += GlTextureStatics.anInt4848 shr 8
+                                GlTextureStatics.anInt4848 = GlTextureStatics.anInt4848 and 0xff
                             }
                             val i_114_ = aFontDefinition_4063!!.method1184((-48).toByte(), c.code)
-                            if (Player.anInt10567 != -1) aRenderer4048!!.method3649((-119).toByte(), i_114_, (aFontDefinition_4063!!.anInt1992.toDouble() * 0.7).toInt() + i_103_, Player.anInt10567, i_106_)
-                            if (DirectionalStripeTextureNode.anInt9101 != -1) aRenderer4048!!.method3649((-114).toByte(), i_114_, (aFontDefinition_4063!!.anInt1992) + (i_103_ + 1), (DirectionalStripeTextureNode.anInt9101), i_106_)
+                            if (PlayerStatics.anInt10567 != -1) aRenderer4048!!.method3649((-119).toByte(), i_114_, (aFontDefinition_4063!!.anInt1992.toDouble() * 0.7).toInt() + i_103_, PlayerStatics.anInt10567, i_106_)
+                            if (DirectionalStripeTextureNodeStatics.anInt9101 != -1) aRenderer4048!!.method3649((-114).toByte(), i_114_, (aFontDefinition_4063!!.anInt1992) + (i_103_ + 1), (DirectionalStripeTextureNodeStatics.anInt9101), i_106_)
                             i_106_ += i_114_
                             i_108_ = c.code
                         }
@@ -404,7 +422,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("da.AA(" + i + ',' + i_103_ + ',' + i_104_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_105_ + ',' + i_106_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("da.AA(" + i + ',' + i_103_ + ',' + i_104_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_105_ + ',' + i_106_ + ')'))
         }
     }
 
@@ -413,7 +431,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             aFontDefinition_4063 = fontDefinition
             aRenderer4048 = var_renderer
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("da.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (fontDefinition != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("da.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (fontDefinition != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -423,7 +441,7 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             anInt4057++
             return method2568(`is`, i_118_, 97.toByte(), var_sprite, i_120_, abstractModelRenderers, i_116_, i_119_, i_122_, i_117_, string, i_121_, i_123_, i_124_, i_115_, 0, i)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("da.J(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_115_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_119_ + ',' + i_120_ + ',' + i_121_ + ',' + i_122_ + ',' + i_123_ + ',' + bool + ',' + i_124_ + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("da.J(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_115_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_119_ + ',' + i_120_ + ',' + i_121_ + ',' + i_122_ + ',' + i_123_ + ',' + bool + ',' + i_124_ + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -466,112 +484,10 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             }
             return i_138_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw SoundBankPatchStatics.method2929(
                 runtimeexception,
                 ("da.P(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_125_ + ',' + i_126_ + ',' + i_127_ + ',' + i_128_ + ',' + (if (random != null) "{...}" else "null") + ',' + i_129_ + ',' + i_130_ + ',' + i_131_ + ',' + i_132_ + ',' + i_133_ + ',' + (if (string != null) "{...}" else "null") + ',' + (if (is_134_ != null) "{...}" else "null") + ')')
             )
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt4045: Int = 0
-        @JvmField
-        var anInt4046: Int = 0
-        @JvmField
-        var anInt4047: Int = 0
-        @JvmField
-        var anInt4049: Int = 0
-        @JvmField
-        var anInt4050: Int = 0
-        @JvmField
-        var anInt4051: Int = 0
-        @JvmField
-        var anInt4052: Int = 0
-        @JvmField
-        var anInt4053: Int = 0
-        @JvmField
-        var anInt4054: Int = 0
-        @JvmField
-        var anInt4055: Int = 0
-        @JvmField
-        var anInt4056: Int = 0
-        @JvmField
-        var anInt4057: Int = 0
-        @JvmField
-        var anInt4058: Int = 0
-        @JvmField
-        var anInt4059: Int = 0
-        @JvmField
-        var anInt4060: Int = 0
-        @JvmField
-        var anInt4061: Int = 0
-        @JvmField
-        var aRectangleRegion_4062: RectangleRegion? = RectangleRegion(2, 4, 4, 0)
-        @JvmField
-        var anInt4064: Int = 0
-        @JvmField
-        var anInt4065: Int = 0
-
-        @JvmStatic
-        fun method2570(i: Int, i_45_: Int): WidgetComponent? {
-            anInt4055++
-            if (i != 1512932720) return null
-            val i_46_ = i_45_ shr 16
-            val i_47_ = i_45_ and 0xffff
-            if (WarpTextureNode.aWidgetComponentArrayArray9427!![i_46_] == null || (WarpTextureNode.aWidgetComponentArrayArray9427!![i_46_]!![i_47_] == null)) {
-                val bool = TextureLoaderUtil.method2547(i_46_, 84.toByte())
-                if (!bool) return null
-            }
-            return WarpTextureNode.aWidgetComponentArrayArray9427!![i_46_]!![i_47_]
-        }
-
-        @JvmStatic
-        fun method2572(i: Byte) {
-            aRectangleRegion_4062 = null
-            if (i.toInt() != 23) aRectangleRegion_4062 = null
-        }
-
-        @JvmStatic
-        fun method2582(glRenderDevice: GlRenderDevice?, glShaderObjectHandles: Array<GlShaderObjectHandle?>?, i: Int): NativeBufferHandle? {
-            try {
-                anInt4065++
-                if (i != -2113) aRectangleRegion_4062 = null
-                var i_100_ = 0
-                while (glShaderObjectHandles!!.size > i_100_) {
-                    if (glShaderObjectHandles[i_100_] == null || glShaderObjectHandles[i_100_]!!.aLong517 <= 0) return null
-                    i_100_++
-                }
-                val l = glCreateProgramObjectARB()
-                var i_101_ = 0
-                while (glShaderObjectHandles.size > i_101_) {
-                    glAttachObjectARB(l, (glShaderObjectHandles[i_101_]!!.aLong517))
-                    i_101_++
-                }
-                glLinkProgramARB(l)
-                glGetObjectParameterivARB(l, 35714, SoundEnvelope.anIntArray2744, 0)
-                if (SoundEnvelope.anIntArray2744!![0] == 0) {
-                    if (SoundEnvelope.anIntArray2744!![0] == 0) println("Shader linking failed:")
-                    glGetObjectParameterivARB(l, 35716, SoundEnvelope.anIntArray2744, 1)
-                    if (SoundEnvelope.anIntArray2744!![1] > 1) {
-                        val `is` = ByteArray(SoundEnvelope.anIntArray2744!![1])
-                        glGetInfoLogARB(l, SoundEnvelope.anIntArray2744!![1], SoundEnvelope.anIntArray2744, 0, `is`, 0)
-                        println(String(`is`))
-                    }
-                    if (SoundEnvelope.anIntArray2744!![0] == 0) {
-                        var i_102_ = 0
-                        while (glShaderObjectHandles.size > i_102_) {
-                            glDetachObjectARB(l, (glShaderObjectHandles[i_102_]!!.aLong517))
-                            i_102_++
-                        }
-                        glDeleteObjectARB(l)
-                        return null
-                    }
-                }
-                return NativeBufferHandle(glRenderDevice, l, glShaderObjectHandles)
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("da.M(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (glShaderObjectHandles != null) "{...}" else "null") + ',' + i + ')'))
-            }
         }
     }
 }

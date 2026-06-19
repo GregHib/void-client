@@ -15,9 +15,9 @@ object SceneTilePlaneManager {
 
     @JvmStatic
     fun method258(i: Int, i_0_: Int) {
-        val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_]
+        val class357 = HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_]
         for (i_1_ in 0..2) {
-            val class357_2_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_1_ + 1]!![i]!![i_0_].also { HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_1_]!![i]!![i_0_] = it })
+            val class357_2_ = (HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![i_1_ + 1]!![i]!![i_0_].also { HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![i_1_]!![i]!![i_0_] = it })
             if (class357_2_ != null) {
                 var class148 = class357_2_.aWidgetNodeLink_4396
                 while (class148 != null) {
@@ -32,12 +32,12 @@ object SceneTilePlaneManager {
                 if (class357_2_.aClass318_Sub1_Sub5_4407 != null) class357_2_.aClass318_Sub1_Sub5_4407!!.plane--
             }
         }
-        if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_] == null) {
-            HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_] = SceneCollisionEntry(0)
-            HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_]!!.aByte4399 = 1.toByte()
+        if (HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_] == null) {
+            HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_] = SceneCollisionEntry(0)
+            HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_]!!.aByte4399 = 1.toByte()
         }
-        HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_]!!.aSceneCollisionEntry_4400 = class357
-        HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![3]!![i]!![i_0_] = null
+        HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_]!!.aSceneCollisionEntry_4400 = class357
+        HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![3]!![i]!![i_0_] = null
     }
 
     @JvmStatic
@@ -51,7 +51,7 @@ object SceneTilePlaneManager {
     fun method260(bool: Boolean): Int {
         if (bool != false) aJs5Archive_233 = null
         anInt232++
-        if (ByteBuffer.anInt7207 == 1) return PerlinNoiseTextureNode.anInt9157
+        if (ByteBufferStatics.anInt7207 == 1) return PerlinNoiseTextureNodeStatics.anInt9157
         return 0
     }
 
@@ -66,10 +66,10 @@ object SceneTilePlaneManager {
     fun method262(i: Int) {
         anInt234++
         if (i != 0) aWidgetNodeLink_231 = null
-        if (!KeyboardLayoutConfig.aBoolean2130) {
-            KeyboardLayoutConfig.aBoolean2130 = true
+        if (!KeyboardLayoutConfigStatics.aBoolean2130) {
+            KeyboardLayoutConfigStatics.aBoolean2130 = true
             CircleDrawer.aFloat2687 += (-CircleDrawer.aFloat2687 + -24.0f) / 2.0f
-            WorldMapPolygonIconLabel.aBoolean10174 = true
+            WorldMapPolygonIconLabelStatics.aBoolean10174 = true
         }
     }
 }

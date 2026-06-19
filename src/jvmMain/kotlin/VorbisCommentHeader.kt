@@ -1,5 +1,5 @@
-import VorbisAudioDecoder.Companion.method2788
-import VorbisAudioDecoder.Companion.method2789
+import VorbisAudioDecoderStatics.method2788
+import VorbisAudioDecoderStatics.method2789
 
 /* Class276 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

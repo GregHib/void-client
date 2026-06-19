@@ -1,4 +1,9 @@
-import GrowableStringList.Companion.method1359
+import GrowableStringListStatics.method1359
+import VarbitDefLoaderStatics.anInt2591
+import VarbitDefLoaderStatics.anInt2592
+import VarbitDefLoaderStatics.anInt2593
+import VarbitDefLoaderStatics.anInt2595
+import VarbitDefLoaderStatics.anInt2598
 
 /* Class194 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -49,7 +54,7 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
         if (hitsplatDefinition != null) return hitsplatDefinition
         val `is`: ByteArray?
         synchronized(aJs5Archive_2597!!) {
-            `is` = aJs5Archive_2597.method410(i_4_ xor 0x743, method1359(true, i), LongKeyNode.method2806(false, i))
+            `is` = aJs5Archive_2597.method410(i_4_ xor 0x743, method1359(true, i), LongKeyNodeStatics.method2806(false, i))
         }
         hitsplatDefinition = HitsplatDefinition()
         if (i_4_ != -1) return null
@@ -68,24 +73,9 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
                 val i_5_ = aJs5Archive_2597.method414(-1) + -1
                 aJs5Archive_2597.method407(0, i_5_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qs.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("qs.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
-    }
-
-    companion object {
-        var anInt2591: Int = 0
-        var anInt2592: Int = 0
-        var anInt2593: Int = 0
-        var anInt2595: Int = 0
-        var aSoundChannelMixer_2596: SoundChannelMixer? = null
-        var anInt2598: Int = 0
-
-        @JvmStatic
-        fun method1441(i: Byte) {
-            aSoundChannelMixer_2596 = null
-            if (i.toInt() != 18) aSoundChannelMixer_2596 = null
-        }
     }
 }

@@ -1,3 +1,13 @@
+import SceneObjectEntityStatics.method2405
+import SceneObjectEntityStatics.method2406
+import SceneObjectEntityStatics.anInt8730
+import SceneObjectEntityStatics.anInt8731
+import SceneObjectEntityStatics.anInt8733
+import SceneObjectEntityStatics.anInt8734
+import SceneObjectEntityStatics.anInt8735
+import SceneObjectEntityStatics.anInt8736
+import SceneObjectEntityStatics.anInt8738
+
 /* Class318_Sub1_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -5,15 +15,15 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
     override fun method2382(i: Byte): Boolean {
         if (i > -51) return false
         anInt8733++
-        val class148 = RenderableGroup.method1449(this.plane.toInt(), (this.x shr Tooltip.anInt4459), (this.y shr Tooltip.anInt4459))
-        if (class148 == null || !class148.aClass318_Sub1_Sub3_2040!!.aBoolean8741) return IndexedSprite.method164(this.plane.toInt(), (this.x shr Tooltip.anInt4459), (-97).toByte(), (this.y shr Tooltip.anInt4459))
-        return (MinimapSpriteRenderer.method1110(this.y shr Tooltip.anInt4459, class148.aClass318_Sub1_Sub3_2040!!.method2394(true) + this.method2394(true), this.plane.toInt(), (-79).toByte(), this.x shr Tooltip.anInt4459))
+        val class148 = RenderableGroupStatics.method1449(this.plane.toInt(), (this.x shr Tooltip.anInt4459), (this.y shr Tooltip.anInt4459))
+        if (class148 == null || !class148.aClass318_Sub1_Sub3_2040!!.aBoolean8741) return IndexedSpriteStatics.method164(this.plane.toInt(), (this.x shr Tooltip.anInt4459), (-97).toByte(), (this.y shr Tooltip.anInt4459))
+        return (MinimapSpriteRendererStatics.method1110(this.y shr Tooltip.anInt4459, class148.aClass318_Sub1_Sub3_2040!!.method2394(true) + this.method2394(true), this.plane.toInt(), (-79).toByte(), this.x shr Tooltip.anInt4459))
     }
 
     override fun method2378(i: Int): Boolean {
         if (i != 0) method2406(79)
         anInt8734++
-        return (SpriteBlitter.aBooleanArrayArray1572!![(NpcActorEntity.anInt10084 + -DisplayModeOptionState.anInt6111 + (this.x shr Tooltip.anInt4459))]!![(NpcActorEntity.anInt10084 + (-GlIndexBufferArb.anInt8502 + (this.y shr Tooltip.anInt4459)))])
+        return (SpriteBlitter.aBooleanArrayArray1572!![(NpcActorEntityStatics.anInt10084 + -DisplayModeOptionStateStatics.anInt6111 + (this.x shr Tooltip.anInt4459))]!![(NpcActorEntityStatics.anInt10084 + (-GlIndexBufferArbStatics.anInt8502 + (this.y shr Tooltip.anInt4459)))])
     }
 
     override fun method2392(bool: Boolean) {
@@ -40,7 +50,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
             anInt8736++
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fha.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("fha.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
         }
     }
 
@@ -50,66 +60,5 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
         this.anInt6382 = i_6_
         this.aByte6376 = i_9_.toByte()
         this.y = i_7_
-    }
-
-    companion object {
-        @JvmField
-        var anInt8729: Int = 0
-        @JvmField
-        var anInt8730: Int = 0
-        @JvmField
-        var anInt8731: Int = 0
-        @JvmField
-        var aLruByteCache_8732: LruByteCache? = LruByteCache(64)
-        @JvmField
-        var anInt8733: Int = 0
-        @JvmField
-        var anInt8734: Int = 0
-        @JvmField
-        var anInt8735: Int = 0
-        @JvmField
-        var anInt8736: Int = 0
-        @JvmField
-        var aTrigLookupTables_8737: TrigLookupTables? = TrigLookupTables()
-        @JvmField
-        var anInt8738: Int = 0
-
-        @JvmStatic
-        fun method2405(i: Int) {
-            anInt8729++
-            var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
-            try {
-                randomAccessFileOnDisk = PrivilegedOperationWorker.method2231("2", -1141472112)!!
-                val class348_sub49 = ByteBuffer(3 + 6 * TimingCounters.anInt4168)
-                class348_sub49.writeByte(false, 1)
-                class348_sub49.writeShort(107.toByte(), TimingCounters.anInt4168)
-                val i_0_ = -4 % ((-12 - i) / 38)
-                var i_1_ = 0
-                while ((i_1_ < IsaacCipher.anIntArray1303!!.size)) {
-                    if (GlslEnvMaterialPass.aBooleanArray6270!![i_1_]) {
-                        class348_sub49.writeShort(107.toByte(), i_1_)
-                        class348_sub49.writeInt(124.toByte(), IsaacCipher.anIntArray1303!![i_1_])
-                    }
-                    i_1_++
-                }
-                randomAccessFileOnDisk.method1658(117.toByte(), 0, class348_sub49.anInt7197, (class348_sub49.aByteArray7154))
-            } catch (exception: Exception) {
-                /* empty */
-            }
-            try {
-                if (randomAccessFileOnDisk != null) randomAccessFileOnDisk.method1657(false)
-            } catch (exception: Exception) {
-                /* empty */
-            }
-            SkeletalAnimFrameLoader.aLong482 = GameClock.method599(-117)
-            ScanlineRasterFiller.aBoolean2469 = false
-        }
-
-        @JvmStatic
-        fun method2406(i: Int) {
-            if (i > -126) anInt8731 = 118
-            aLruByteCache_8732 = null
-            aTrigLookupTables_8737 = null
-        }
     }
 }

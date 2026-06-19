@@ -1,4 +1,22 @@
-import CacheArchiveIndexLoader.Companion.method340
+import CacheArchiveIndexLoaderStatics.method340
+import ItemDefinitionStatics.method1564
+import ItemDefinitionStatics.anInt2751
+import ItemDefinitionStatics.anInt2754
+import ItemDefinitionStatics.anInt2768
+import ItemDefinitionStatics.anInt2776
+import ItemDefinitionStatics.anInt2780
+import ItemDefinitionStatics.anInt2790
+import ItemDefinitionStatics.anInt2793
+import ItemDefinitionStatics.anInt2796
+import ItemDefinitionStatics.anInt2800
+import ItemDefinitionStatics.anInt2806
+import ItemDefinitionStatics.anInt2809
+import ItemDefinitionStatics.anInt2813
+import ItemDefinitionStatics.anInt2814
+import ItemDefinitionStatics.anInt2816
+import ItemDefinitionStatics.anInt2828
+import ItemDefinitionStatics.anInt2829
+import ItemDefinitionStatics.anInt2832
 
 /* Class213 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -95,10 +113,10 @@ class ItemDefinition {
             i_0_ = anInt2822
         }
         if (i_0_ == -1) return null
-        var class124 = ParticleConfigParser.method2277(0, this.aModelHeaderCache_2761!!.aJs5Archive_3268!!, i_0_, -1)
+        var class124 = ParticleConfigParserStatics.method2277(0, this.aModelHeaderCache_2761!!.aJs5Archive_3268!!, i_0_, -1)
         if ((class124!!.anInt1830.inv()) > i) class124.method1092(2, 54)
         if (i_1_ != -1) {
-            val class124_2_ = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), i_1_, -1)
+            val class124_2_ = ParticleConfigParserStatics.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), i_1_, -1)
             if (class124_2_!!.anInt1830 < 13) class124_2_.method1092(2, i xor 0x78.inv())
             val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_2_)
             class124 = ModelDefinition(modelDefinitions, 2)
@@ -170,9 +188,9 @@ class ItemDefinition {
             if (itemDefinition_9_.aStringArray2763 != null) {
                 for (i_11_ in 0..3) this.aStringArray2763!![i_11_] = itemDefinition_9_.aStringArray2763!![i_11_]
             }
-            this.aStringArray2763!![4] = LocalizedText.aLocalizedText_3489!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544)
+            this.aStringArray2763!![4] = LocalizedTextStatics.aLocalizedText_3489!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.G(" + (if (itemDefinition_9_ != null) "{...}" else "null") + ',' + i + ',' + (if (itemDefinition_10_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rq.G(" + (if (itemDefinition_9_ != null) "{...}" else "null") + ',' + i + ',' + (if (itemDefinition_10_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -180,8 +198,8 @@ class ItemDefinition {
         anInt2816++
         if (i_12_ != -11619) this.anInt2788 = -113
         if (i < 100000) return "<col=ffff00>" + i + "</col>"
-        if (i < 10000000) return ("<col=ffffff>" + i / 1000 + LocalizedText.aLocalizedText_3519!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544) + "</col>")
-        return ("<col=00ff80>" + i / 1000000 + LocalizedText.aLocalizedText_3517!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544) + "</col>")
+        if (i < 10000000) return ("<col=ffffff>" + i / 1000 + LocalizedTextStatics.aLocalizedText_3519!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544) + "</col>")
+        return ("<col=00ff80>" + i / 1000000 + LocalizedTextStatics.aLocalizedText_3517!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544) + "</col>")
     }
 
     fun method1558(bool: Boolean, bool_13_: Boolean): ModelDefinition? {
@@ -196,16 +214,16 @@ class ItemDefinition {
             i_14_ = anInt2760
         }
         if (i == -1) return null
-        var class124 = ParticleConfigParser.method2277(0, this.aModelHeaderCache_2761!!.aJs5Archive_3268!!, i, -1)
+        var class124 = ParticleConfigParserStatics.method2277(0, this.aModelHeaderCache_2761!!.aJs5Archive_3268!!, i, -1)
         if (class124!!.anInt1830 < 13) class124.method1092(2, 64)
         if (i_14_ != -1) {
-            val class124_16_ = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), i_14_, -1)
+            val class124_16_ = ParticleConfigParserStatics.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), i_14_, -1)
             if (class124_16_!!.anInt1830 < 13) class124_16_.method1092(2, 89)
             if (i_15_ == -1) {
                 val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_16_)
                 class124 = ModelDefinition(modelDefinitions, 2)
             } else {
-                val class124_17_ = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), i_15_, -1)
+                val class124_17_ = ParticleConfigParserStatics.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), i_15_, -1)
                 if (class124_17_!!.anInt1830 < 13) class124_17_.method1092(2, 109)
                 val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_16_, class124_17_)
                 class124 = ModelDefinition(modelDefinitions, 3)
@@ -256,7 +274,7 @@ class ItemDefinition {
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x1
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x2
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x4
-                val class124 = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), anInt2756, -1)
+                val class124 = ParticleConfigParserStatics.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), anInt2756, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 97)
                 abstractModel = var_renderer!!.method3625(class124, i_28_, (this.aModelHeaderCache_2761!!.anInt3291), anInt2791 + 64, 850 - -anInt2824)
@@ -279,8 +297,8 @@ class ItemDefinition {
                 if (compositeNpcModelBuilder != null) {
                     for (i_31_ in 0..4) {
                         var i_32_ = 0
-                        while ((GlWaterRenderPass.aShortArrayArrayArray7290!!.size > i_32_)) {
-                            if (compositeNpcModelBuilder.anIntArray2095!![i_31_] < (GlWaterRenderPass.aShortArrayArrayArray7290!![i_32_]!![i_31_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_32_]!![i_31_]), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_32_]!![i_31_]!![(compositeNpcModelBuilder.anIntArray2095!![i_31_])]))
+                        while ((GlWaterRenderPassStatics.aShortArrayArrayArray7290!!.size > i_32_)) {
+                            if (compositeNpcModelBuilder.anIntArray2095!![i_31_] < (GlWaterRenderPassStatics.aShortArrayArrayArray7290!![i_32_]!![i_31_])!!.size) abstractModel.ia((SpriteLoadValidatorStatics.aShortArrayArray4791!![i_32_]!![i_31_]), (GlWaterRenderPassStatics.aShortArrayArrayArray7290!![i_32_]!![i_31_]!![(compositeNpcModelBuilder.anIntArray2095!![i_31_])]))
                             i_32_++
                         }
                     }
@@ -294,7 +312,7 @@ class ItemDefinition {
             abstractModel!!.s(i)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.S(" + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rq.S(" + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
         }
     }
 
@@ -320,14 +338,14 @@ class ItemDefinition {
             if (class348_sub50 == null) return string
             return class348_sub50.aString7211
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.N(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_36_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rq.N(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_36_ + ')'))
         }
     }
 
     fun method1562(i: Int, bool: Boolean, i_37_: Int, var_renderer: Renderer?, var_renderer_38_: Renderer?, font: Font?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_39_: Int, i_40_: Byte, i_41_: Int): IntArray? {
         try {
             anInt2806++
-            val class124 = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), anInt2756, i_40_.toInt() xor 0x65)
+            val class124 = ParticleConfigParserStatics.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), anInt2756, i_40_.toInt() xor 0x65)
             if (class124 == null) return null
             if (class124.anInt1830 < 13) class124.method1092(2, i_40_.toInt() xor 0xb.inv())
             if (aShortArray2777 != null) {
@@ -348,8 +366,8 @@ class ItemDefinition {
             if (compositeNpcModelBuilder != null) {
                 for (i_44_ in 0..4) {
                     var i_45_ = 0
-                    while ((i_45_ < GlWaterRenderPass.aShortArrayArrayArray7290!!.size)) {
-                        if ((GlWaterRenderPass.aShortArrayArrayArray7290!![i_45_]!![i_44_])!!.size > compositeNpcModelBuilder.anIntArray2095!![i_44_]) class124.method1098((SpriteLoadValidator.aShortArrayArray4791!![i_45_]!![i_44_]), 126.toByte(), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_45_]!![i_44_]!![(compositeNpcModelBuilder.anIntArray2095!![i_44_])]))
+                    while ((i_45_ < GlWaterRenderPassStatics.aShortArrayArrayArray7290!!.size)) {
+                        if ((GlWaterRenderPassStatics.aShortArrayArrayArray7290!![i_45_]!![i_44_])!!.size > compositeNpcModelBuilder.anIntArray2095!![i_44_]) class124.method1098((SpriteLoadValidatorStatics.aShortArrayArray4791!![i_45_]!![i_44_]), 126.toByte(), (GlWaterRenderPassStatics.aShortArrayArrayArray7290!![i_45_]!![i_44_]!![(compositeNpcModelBuilder.anIntArray2095!![i_44_])]))
                         i_45_++
                     }
                 }
@@ -387,7 +405,7 @@ class ItemDefinition {
             val class101_49_ = var_renderer_38_.method3705()
             class101_49_.method902(-this.anInt2810 shl 3)
             class101_49_.method896(this.anInt2781 shl 3)
-            class101_49_.method891(this.anInt2779 shl 2, ((i_48_ * (TrigLookupTables.anIntArray1207!![this.anInt2787 shl 3]) shr 14) - class64.fa() / 2 + (this.anInt2826 shl 2)), ((i_48_ * (TrigLookupTables.anIntArray1204!![this.anInt2787 shl 3]) shr 14) - -(this.anInt2826 shl 2)))
+            class101_49_.method891(this.anInt2779 shl 2, ((i_48_ * (TrigLookupTablesStatics.anIntArray1207!![this.anInt2787 shl 3]) shr 14) - class64.fa() / 2 + (this.anInt2826 shl 2)), ((i_48_ * (TrigLookupTablesStatics.anIntArray1204!![this.anInt2787 shl 3]) shr 14) - -(this.anInt2826 shl 2)))
             class101_49_.method900(this.anInt2787 shl 3)
             val i_50_ = var_renderer_38_.i()
             val i_51_ = var_renderer_38_.XA()
@@ -411,12 +429,12 @@ class ItemDefinition {
             if (i_39_ == 1 || (i_39_ == 2 && (this.anInt2820 == 1 || i != 1) && i != -1)) font!!.method2576(method1557(i, i_40_ + -11517), -256, 9, 0, -16777215, i_40_ + -15)
             `is` = var_renderer_38_.na(0, 0, 36, 32)
             for (i_52_ in `is`!!.indices) {
-                if ((0xffffff and `is`[i_52_]) != 0) `is`[i_52_] = BoundsConstraintEntry.method2057(`is`[i_52_], -16777216)
+                if ((0xffffff and `is`[i_52_]) != 0) `is`[i_52_] = BoundsConstraintEntryStatics.method2057(`is`[i_52_], -16777216)
                 else `is`[i_52_] = 0
             }
             return `is`
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_renderer_38_ != null) "{...}" else "null") + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (var_renderer_38_ != null) "{...}" else "null") + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'))
         }
     }
 
@@ -574,7 +592,7 @@ class ItemDefinition {
             } else anInt2756 = class348_sub49!!.readUnsignedShort(i + 842397940)
             anInt2754++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.L(" + i + ',' + i_57_ + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rq.L(" + i + ',' + i_57_ + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -597,7 +615,7 @@ class ItemDefinition {
             }
             anInt2800++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.I(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rq.I(" + i + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -621,7 +639,7 @@ class ItemDefinition {
             this.aString2795 = itemDefinition_94_.aString2795
             anInt2756 = itemDefinition_95_.anInt2756
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.F(" + i + ',' + (if (itemDefinition_94_ != null) "{...}" else "null") + ',' + (if (itemDefinition_95_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rq.F(" + i + ',' + (if (itemDefinition_94_ != null) "{...}" else "null") + ',' + (if (itemDefinition_95_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -636,7 +654,7 @@ class ItemDefinition {
             }
             anInt2790++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.M(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_96_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rq.M(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_96_ + ')'))
         }
     }
 
@@ -685,81 +703,7 @@ class ItemDefinition {
             }
             return is_101_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rq.K(" + i + ',' + i_100_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        var anInt2751: Int = 0
-        var anInt2754: Int = 0
-        var anInt2768: Int = 0
-        @JvmField
-        var aAbstractGameSocket_2773: AbstractGameSocket? = null
-        var anInt2776: Int = 0
-        var anInt2780: Int = 0
-        var anInt2782: Int = 0
-        @JvmField
-        var aLong2789: Long = 0
-        var anInt2790: Int = 0
-        var anInt2793: Int = 0
-        var anInt2796: Int = 0
-        @JvmField
-        var anInt2798: Int = 0
-        var anInt2800: Int = 0
-        var anInt2806: Int = 0
-        var anInt2809: Int = 0
-        var anInt2813: Int = 0
-        var anInt2814: Int = 0
-        var anInt2816: Int = 0
-        var anInt2828: Int = 0
-        var anInt2829: Int = 0
-        var anInt2832: Int = 0
-        @JvmStatic
-        fun method1564(i: Int) {
-            aAbstractGameSocket_2773 = null
-            if (i <= 54) aLong2789 = -74L
-        }
-
-        fun method1568(`is`: IntArray?, i: Int, i_73_: Int, i_74_: Int, fs: FloatArray?, is_75_: IntArray?, i_76_: Int, i_77_: Int, i_78_: Int, i_79_: Int, i_80_: Int, i_81_: Int, fs_82_: FloatArray?) {
-            try {
-                if (i_77_ <= 112) aLong2789 = 95L
-                anInt2782++
-                var i_83_ = i * i_80_ - -i_73_
-                var i_84_ = i_81_ + i_79_ * i_74_
-                val i_85_ = -i_76_ + i_80_
-                val i_86_ = -i_76_ + i_79_
-                if (is_75_ == null) {
-                    var i_87_ = 0
-                    while (i_78_ > i_87_) {
-                        val i_88_ = i_83_ - -i_76_
-                        while (i_83_ < i_88_) fs!![i_84_++] = fs_82_!![i_83_++]
-                        i_83_ += i_85_
-                        i_84_ += i_86_
-                        i_87_++
-                    }
-                } else if (fs_82_ == null) {
-                    for (i_91_ in 0..<i_78_) {
-                        val i_92_ = i_76_ + i_83_
-                        while (i_83_ < i_92_) `is`!![i_84_++] = is_75_[i_83_++]
-                        i_83_ += i_85_
-                        i_84_ += i_86_
-                    }
-                } else {
-                    var i_89_ = 0
-                    while (i_78_ > i_89_) {
-                        val i_90_ = i_83_ - -i_76_
-                        while (i_83_ < i_90_) {
-                            `is`!![i_84_] = is_75_[i_83_]
-                            fs!![i_84_++] = fs_82_[i_83_++]
-                        }
-                        i_83_ += i_85_
-                        i_84_ += i_86_
-                        i_89_++
-                    }
-                }
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("rq.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_73_ + ',' + i_74_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (is_75_ != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + i_79_ + ',' + i_80_ + ',' + i_81_ + ',' + (if (fs_82_ != null) "{...}" else "null") + ')'))
-            }
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rq.K(" + i + ',' + i_100_ + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 }

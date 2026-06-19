@@ -1,9 +1,12 @@
 import jaclib.memory.Buffer
-import jaggl.OpenGL.Companion.glBufferDataARBa
-import jaggl.OpenGL.Companion.glBufferDataARBub
-import jaggl.OpenGL.Companion.glBufferSubDataARBub
-import jaggl.OpenGL.Companion.glGenBuffersARB
+import jaggl.OpenGLStatics.glBufferDataARBa
+import jaggl.OpenGLStatics.glBufferDataARBub
+import jaggl.OpenGLStatics.glBufferSubDataARBub
+import jaggl.OpenGLStatics.glGenBuffersARB
 import java.awt.Color
+import GlVertexBufferBaseStatics.method1148
+import GlVertexBufferBaseStatics.anInt1922
+import GlVertexBufferBaseStatics.anInt1926
 
 abstract class GlVertexBufferBase {
     private var anInt1921 = 0
@@ -41,13 +44,13 @@ abstract class GlVertexBufferBase {
             this.aHa_Sub2_1927 = var_ha_Sub2
             anInt1930 = i
             anInt1921 = i_4_
-            glGenBuffersARB(1, NativeRenderNode.anIntArray10478, 0)
-            this.anInt1929 = NativeRenderNode.anIntArray10478!![0]
+            glGenBuffersARB(1, NativeRenderNodeStatics.anIntArray10478, 0)
+            this.anInt1929 = NativeRenderNodeStatics.anIntArray10478!![0]
             method1152(-111)
             glBufferDataARBub(i, anInt1921, `is`, 0, if (aBoolean1923) 35040 else 35044)
             this.aHa_Sub2_1927!!.anInt7747 += anInt1921
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bi.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bi.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ')'))
         }
     }
 
@@ -57,47 +60,13 @@ abstract class GlVertexBufferBase {
             anInt1921 = i_5_
             this.aHa_Sub2_1927 = var_ha_Sub2
             aBoolean1923 = bool
-            glGenBuffersARB(1, NativeRenderNode.anIntArray10478, 0)
-            this.anInt1929 = NativeRenderNode.anIntArray10478!![0]
+            glGenBuffersARB(1, NativeRenderNodeStatics.anIntArray10478, 0)
+            this.anInt1929 = NativeRenderNodeStatics.anIntArray10478!![0]
             method1152(-126)
             glBufferDataARBa(i, anInt1921, buffer!!.getAddress(), if (!aBoolean1923) 35044 else 35040)
             this.aHa_Sub2_1927!!.anInt7747 += anInt1921
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bi.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (buffer != null) "{...}" else "null") + ',' + i_5_ + ',' + bool + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt1922: Int = 0
-        @JvmField
-        var anInt1924: Int = 0
-        @JvmField
-        var anInt1925: Int = 0
-        @JvmField
-        var anInt1926: Int = 0
-        @JvmField
-        var aColorArray1928: Array<Color?>? = arrayOf<Color?>(Color(9179409), Color(3289650), Color(3289650), Color(3289650))
-        @JvmStatic
-        fun method1148(i: Int, i_0_: Int) {
-            anInt1925++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), i_0_) //6
-            class348_sub42_sub15.method3251(i_0_ xor 0x3ebf.inv())
-        }
-
-        @JvmStatic
-        fun method1149(i: Int) {
-            val i_1_ = -90 / ((-50 - i) / 37)
-            aColorArray1928 = null
-        }
-
-        @JvmStatic
-        fun method1151(i: Int, var_renderer: Renderer?, i_3_: Int): FontDefinition? {
-            anInt1924++
-            if (i != -25411) return null
-            val class352 = ChatEffectsOptionState.method1734(i_3_, var_renderer, (-81).toByte(), true)
-            if (class352 == null) return null
-            return class352.aFontDefinition_4333
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bi.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (buffer != null) "{...}" else "null") + ',' + i_5_ + ',' + bool + ')'))
         }
     }
 }

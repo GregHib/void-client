@@ -23,18 +23,18 @@ object ClanChatRequestSender {
         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), 0)
         val i_0_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), 634)
-        val `is` = MinimapSquareDrawer.method463(class348_sub47, false)
+        val `is` = MinimapSquareDrawerStatics.method463(class348_sub47, false)
         val i_1_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
-        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, AnimationFrameDefinition.anInt6967)
+        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, AnimationFrameDefinitionStatics.anInt6967)
         class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 += 7
         class348_sub47.aClass348_Sub49_Sub2_7116!!.method3350(i_1_, true, `is`, class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
         class348_sub47.aClass348_Sub49_Sub2_7116!!.method3383(1809639944, -i_0_ + (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197))
-        InterfaceComponentGroup.method3243(118, class348_sub47)
-        GlWaterRenderPass.anInt7297 = 1
-        RenderableEntry.anInt4337 = -3
-        HostPingThread.anInt2264 = 0
-        AnimatedModelRenderer.anInt8398 = 0
+        InterfaceComponentGroupStatics.method3243(118, class348_sub47)
+        GlWaterRenderPassStatics.anInt7297 = 1
+        RenderableEntryStatics.anInt4337 = -3
+        HostPingThreadStatics.anInt2264 = 0
+        AnimatedModelRendererStatics.anInt8398 = 0
     }
 
     @JvmStatic
@@ -51,7 +51,7 @@ object ClanChatRequestSender {
         var i_3_ = 0
         var i_4_ = 0
         while (i_2_ > i_4_) {
-            i_3_ = (TextureCache.method3464(string.get(i_4_), false) + ((i_3_ shl 5) - i_3_))
+            i_3_ = (TextureCacheStatics.method3464(string.get(i_4_), false) + ((i_3_ shl 5) - i_3_))
             i_4_++
         }
         if (i != -29286) return 0

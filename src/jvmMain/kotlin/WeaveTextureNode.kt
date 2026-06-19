@@ -1,3 +1,9 @@
+import WeaveTextureNodeStatics.anInt9267
+import WeaveTextureNodeStatics.anInt9268
+import WeaveTextureNodeStatics.anInt9271
+import WeaveTextureNodeStatics.anInt9272
+import WeaveTextureNodeStatics.anInt9273
+
 /* Class348_Sub40_Sub21 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -14,10 +20,10 @@ class WeaveTextureNode : AbstractProceduralTextureNode(0, true) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (i_0_ != 255) method3108(-114, -119, -89)
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_1_ = -2048 + LightDetailOptionState.anIntArray6035!![i]
+            val i_1_ = -2048 + LightDetailOptionStateStatics.anIntArray6035!![i]
             var i_2_ = 0
-            while ((i_2_ < DisplaceTextureNode.Companion.anInt9139)) {
-                val i_3_ = -2048 + SceneEffectMarker.anIntArray6432!![i_2_]
+            while ((i_2_ < DisplaceTextureNodeStatics.anInt9139)) {
+                val i_3_ = -2048 + SceneEffectMarkerStatics.anIntArray6432!![i_2_]
                 var i_4_ = i_3_ - -anInt9269
                 i_4_ = if (i_4_ < -2048) 4096 + i_4_ else i_4_
                 i_4_ = if (i_4_ <= 2048) i_4_ else -4096 + i_4_
@@ -46,7 +52,7 @@ class WeaveTextureNode : AbstractProceduralTextureNode(0, true) {
     private fun method3105(i: Int, i_8_: Int, i_9_: Int): Boolean {
         anInt9273++
         val i_10_ = (i_9_ + i) * anInt9279 shr 12
-        var i_11_ = WidgetComponentNode.anIntArray4654!![(i_10_ * 255 and 0xfff2f) shr 12]
+        var i_11_ = WidgetComponentNodeStatics.anIntArray4654!![(i_10_ * 255 and 0xfff2f) shr 12]
         if (i_8_ != -7981) anInt9266 = -52
         i_11_ = (i_11_ shl 12) / anInt9279
         i_11_ = (i_11_ shl 12) / anInt9277
@@ -104,71 +110,10 @@ class WeaveTextureNode : AbstractProceduralTextureNode(0, true) {
         if (i_20_ != 9619) return true
         anInt9271++
         val i_22_ = anInt9279 * (i - i_21_) shr 12
-        var i_23_ = WidgetComponentNode.anIntArray4654!![(0xff530 and 255 * i_22_) shr 12]
+        var i_23_ = WidgetComponentNodeStatics.anIntArray4654!![(0xff530 and 255 * i_22_) shr 12]
         i_23_ = (i_23_ shl 12) / anInt9279
         i_23_ = (i_23_ shl 12) / anInt9277
         i_23_ = anInt9276 * i_23_ shr 12
         return i_23_ > i_21_ - -i && -i_23_ < i + i_21_
-    }
-
-    companion object {
-        @JvmField
-        var anInt9267: Int = 0
-        @JvmField
-        var anInt9268: Int = 0
-        @JvmField
-        var anInt9270: Int = 0
-        @JvmField
-        var anInt9271: Int = 0
-        @JvmField
-        var anInt9272: Int = 0
-        @JvmField
-        var anInt9273: Int = 0
-        @JvmField
-        var aProjectileFactory_9274: ProjectileFactory?
-        @JvmField
-        var aStringArray9275: Array<String?>? = arrayOfNulls<String>(100)
-        @JvmField
-        var anInt9280: Int
-        @JvmField
-        var anInt9282: Int = 0
-        @JvmField
-        var aLongArray9283: LongArray?
-
-        @JvmStatic
-        fun method3106(i: Byte) {
-            aLongArray9283 = null
-            aStringArray9275 = null
-            aProjectileFactory_9274 = null
-            val i_12_ = 69 % ((19 - i) / 41)
-        }
-
-        fun method3107(i: Byte, renderTarget: RenderTarget, i_15_: Int, i_16_: Int): Long {
-            anInt9270++
-            val l = 4194304L
-            val l_17_: Long = Long.MIN_VALUE
-            val npcConfig: NpcConfig = GradientLookupEffect.Companion.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-107))
-            var l_18_ = (renderTarget.method39(-14) shl 14 or (i_16_ or (i_15_ shl 7)) or (renderTarget.method41(-32228) shl 20) or 0x40000000).toLong()
-            if (npcConfig.anInt874 == 0) l_18_ = l_18_ or l_17_
-            if (npcConfig.anInt895 == 1) l_18_ = l_18_ or l
-            val i_19_ = 57 % ((-24 - i) / 57)
-            l_18_ = l_18_ or (renderTarget.method42(-102).toLong() shl 32)
-            return l_18_
-        }
-
-        init {
-            aProjectileFactory_9274 = ProjectileFactory(5, 1)
-            anInt9280 = 0
-            aLongArray9283 = LongArray(256)
-            for (i in 0..255) {
-                var l = i.toLong()
-                for (i_24_ in 0..7) {
-                    if ((0x1L and l) == 1L) l = 0x3693a86a2878f0bdL.inv() xor (l ushr 1)
-                    else l = l ushr 1
-                }
-                aLongArray9283!![i] = l
-            }
-        }
-
     }
 }

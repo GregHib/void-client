@@ -1,9 +1,9 @@
-import D3dRenderDevice.Companion.method3958
+import D3dRenderDeviceStatics.method3958
 import jagdx.IDirect3DBaseTexture
 import jagdx.IDirect3DVolumeTexture
 import jagdx.ue.a
 
-class D3DVolumeTexture internal constructor(d3dRenderDevice: D3dRenderDevice, textureFormatInfo: TextureFormatInfo, private var anInt6338: Int, private val anInt6339: Int, private val anInt6337: Int, `is`: ByteArray?) : D3DBaseTexture(d3dRenderDevice, textureFormatInfo, MovementDirection.aMovementDirection_1183!!, false, anInt6337 * anInt6339 * anInt6338), Renderable3dTexture {
+class D3DVolumeTexture internal constructor(d3dRenderDevice: D3dRenderDevice, textureFormatInfo: TextureFormatInfo, private var anInt6338: Int, private val anInt6339: Int, private val anInt6337: Int, `is`: ByteArray?) : D3DBaseTexture(d3dRenderDevice, textureFormatInfo, MovementDirectionStatics.aMovementDirection_1183!!, false, anInt6337 * anInt6339 * anInt6338), Renderable3dTexture {
     private val anIDirect3DVolumeTexture6336: IDirect3DVolumeTexture
 
     override fun method63(i: Byte) {

@@ -1,17 +1,25 @@
-import jaggl.OpenGL.Companion.glCopyTexImage2D
-import jaggl.OpenGL.Companion.glCopyTexSubImage2D
-import jaggl.OpenGL.Companion.glFlush
-import jaggl.OpenGL.Companion.glFramebufferTexture2DEXT
-import jaggl.OpenGL.Companion.glPixelStorei
-import jaggl.OpenGL.Companion.glTexImage2Df
-import jaggl.OpenGL.Companion.glTexImage2Di
-import jaggl.OpenGL.Companion.glTexImage2Dub
-import jaggl.OpenGL.Companion.glTexParameteri
-import jaggl.OpenGL.Companion.glTexSubImage2Di
-import jaggl.OpenGL.Companion.glTexSubImage2Dub
+import jaggl.OpenGLStatics.glCopyTexImage2D
+import jaggl.OpenGLStatics.glCopyTexSubImage2D
+import jaggl.OpenGLStatics.glFlush
+import jaggl.OpenGLStatics.glFramebufferTexture2DEXT
+import jaggl.OpenGLStatics.glPixelStorei
+import jaggl.OpenGLStatics.glTexImage2Df
+import jaggl.OpenGLStatics.glTexImage2Di
+import jaggl.OpenGLStatics.glTexImage2Dub
+import jaggl.OpenGLStatics.glTexParameteri
+import jaggl.OpenGLStatics.glTexSubImage2Di
+import jaggl.OpenGLStatics.glTexSubImage2Dub
 import java.awt.MediaTracker
 import java.awt.Toolkit
 import java.awt.image.PixelGrabber
+import GlTexture2DStatics.anInt8539
+import GlTexture2DStatics.anInt8540
+import GlTexture2DStatics.anInt8541
+import GlTexture2DStatics.anInt8542
+import GlTexture2DStatics.anInt8543
+import GlTexture2DStatics.anInt8544
+import GlTexture2DStatics.anInt8550
+import GlTexture2DStatics.method1966
 
 open class GlTexture2D : GlTexture {
     private var anInt8545: Int
@@ -26,7 +34,7 @@ open class GlTexture2D : GlTexture {
         this.anInt8547 = i_1_
         this.anInt8551 = i_2_
         this.aHa_Sub2_4851.method3771((-111).toByte(), this)
-        glTexImage2Dub(this.anInt4849, 0, this.anInt4858, i_1_, i_2_, 0, CharacterRenderState.method2779(true, (this.anInt4858)), 5121, null, 0)
+        glTexImage2Dub(this.anInt4849, 0, this.anInt4858, i_1_, i_2_, 0, CharacterRenderStateStatics.method2779(true, (this.anInt4858)), 5121, null, 0)
         this.method1957(9728, true)
     }
 
@@ -45,7 +53,7 @@ open class GlTexture2D : GlTexture {
             this.anInt8551 = i_8_
             this.aHa_Sub2_4851.method3771((-91).toByte(), this)
             if (bool && this.anInt4849 != 34037) {
-                GrayscaleNoiseTexture.method551(i_7_, i_9_, i, fs, 0, i_8_, i_6_)
+                GrayscaleNoiseTextureStatics.method551(i_7_, i_9_, i, fs, 0, i_8_, i_6_)
                 this.method1955(true, (-123).toByte())
             } else {
                 glTexImage2Df(this.anInt4849, 0, this.anInt4858, this.anInt8547, this.anInt8551, 0, i_9_, 5126, fs, 0)
@@ -53,7 +61,7 @@ open class GlTexture2D : GlTexture {
             }
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_9_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_9_ + ')'))
         }
     }
 
@@ -102,12 +110,12 @@ open class GlTexture2D : GlTexture {
                 glPixelStorei(3314, 0)
                 this.method1955(false, (-123).toByte())
             } else {
-                TextureMipDescriptor.method3460(this.anInt4849, this.anInt4858, this.anInt8551, this.aHa_Sub2_4851.anInt7812, this.anInt8547, `is`!!, 32993, -103)
+                TextureMipDescriptorStatics.method3460(this.anInt4849, this.anInt4858, this.anInt8551, this.aHa_Sub2_4851.anInt7812, this.anInt8547, `is`!!, 32993, -103)
                 this.method1955(true, (-123).toByte())
             }
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + bool_26_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + bool_26_ + ')'))
         }
     }
 
@@ -138,19 +146,19 @@ open class GlTexture2D : GlTexture {
                 glTexImage2Dub(this.anInt4849, 0, this.anInt4858, this.anInt8547, this.anInt8551, 0, i_35_, 5121, `is`, 0)
                 this.method1955(false, (-123).toByte())
             } else {
-                PerlinTextureProvider.method1403(i_34_, i_33_, `is`!!, false, i_35_, i, i_32_)
+                PerlinTextureProviderStatics.method1403(i_34_, i_33_, `is`!!, false, i_35_, i, i_32_)
                 this.method1955(true, (-123).toByte())
             }
             glPixelStorei(3317, 4)
             this.method1957(9728, true)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_32_ + ',' + i_33_ + ',' + i_34_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_35_ + ',' + bool_36_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("tp.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_32_ + ',' + i_33_ + ',' + i_34_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_35_ + ',' + bool_36_ + ')'))
         }
     }
 
     fun method1965(bool: Boolean, bool_42_: Boolean, i: Int) {
         anInt8540++
-        if (i != 10243) Companion.method1966(-20, 83, 1, -22, (-31).toByte(), 74, -57, 109, -102)
+        if (i != 10243) method1966(-20, 83, 1, -22, (-31).toByte(), 74, -57, 109, -102)
         if (this.anInt4849 == 3553) {
             this.aHa_Sub2_4851.method3771((-102).toByte(), this)
             glTexParameteri(this.anInt4849, 10242, if (bool_42_) 10497 else 33071)
@@ -181,7 +189,7 @@ open class GlTexture2D : GlTexture {
         if (i_63_ == 0) i_63_ = i_62_
         anInt8539++
         if (bool) {
-            val i_68_ = ParticleDefLoader.method1382(i_65_, -6409)
+            val i_68_ = ParticleDefLoaderStatics.method1382(i_65_, -6409)
             val i_69_ = i_68_ * i_62_
             val i_70_ = i_63_ * i_68_
             val is_71_ = ByteArray(i_64_ * i_69_)
@@ -211,62 +219,5 @@ open class GlTexture2D : GlTexture {
         this.aHa_Sub2_4851.method3771((-111).toByte(), this)
         glCopyTexImage2D(this.anInt4849, 0, this.anInt4858, i_77_, i_81_, i_79_, i_80_, 0)
         this.method1957(9728, true)
-    }
-
-    companion object {
-        @JvmField
-        var anInt8539: Int = 0
-        @JvmField
-        var anInt8540: Int = 0
-        @JvmField
-        var anInt8541: Int = 0
-        @JvmField
-        var anInt8542: Int = 0
-        @JvmField
-        var anInt8543: Int = 0
-        @JvmField
-        var anInt8544: Int = 0
-        @JvmField
-        var anInt8546: Int = 0
-        @JvmField
-        var anInt8548: Int = 0
-        @JvmField
-        var anInt8550: Int = 0
-
-        @JvmStatic
-        fun method1966(i: Int, i_43_: Int, i_44_: Int, i_45_: Int, i_46_: Byte, i_47_: Int, i_48_: Int, i_49_: Int, i_50_: Int) {
-            HintArrowOrMessage.aMapTileShapeArray2034!![DetailLevelOptionState.anInt6115++] = MapTileShape(i_47_, i_49_, i_50_, i, i, i_50_, i_45_, i_43_, i_43_, i_45_, i_44_, i_44_, i_48_, i_48_)
-            anInt8548++
-            if (i_46_.toInt() != 0) method1968()
-        }
-
-        @JvmStatic
-        fun method1968() {
-            ShaderProgram.method3437(1, MapAreaDefinition.anInt2524)
-        }
-
-        @JvmStatic
-        fun method1969(`is`: ByteArray, i: Int): AbstractModelRenderer? {
-            anInt8546++
-            if (i != -5901) anInt8550 = 83
-            if (`is` == null) throw RuntimeException("")
-            while (true) {
-                try {
-                    val image = Toolkit.getDefaultToolkit().createImage(`is`)
-                    val mediatracker = MediaTracker(NpcType.aClient1367)
-                    mediatracker.addImage(image, 0)
-                    mediatracker.waitForAll()
-                    val i_58_ = image.getWidth(NpcType.aClient1367)
-                    val i_59_ = image.getHeight(NpcType.aClient1367)
-                    if (mediatracker.isErrorAny() || i_58_ < 0 || i_59_ < 0) throw RuntimeException("")
-                    val is_60_ = IntArray(i_59_ * i_58_)
-                    val pixelgrabber = PixelGrabber(image, 0, 0, i_58_, i_59_, is_60_, 0, i_58_)
-                    pixelgrabber.grabPixels()
-                    return FacingDirectionNode.aRenderer6654!!.method3662(i_58_, is_60_, 94.toByte(), 0, i_58_, i_59_)
-                } catch (interruptedexception: InterruptedException) {
-                    /* empty */
-                }
-            }
-        }
     }
 }

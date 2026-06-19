@@ -1,11 +1,15 @@
-import InputTracker.Companion.method3591
-import MapRegionLoader.Companion.method756
-import MapRegionLoader.Companion.method760
-import MapRegionLoader.Companion.method761
+import InputTrackerStatics.method3591
+import MapRegionLoaderStatics.method756
+import MapRegionLoaderStatics.method760
+import MapRegionLoaderStatics.method761
 import AnimationFrameState.method867
-import InputStream_Sub1.Companion.method126
+import InputStream_Sub1Statics.method126
 import kotlin.math.atan2
 import kotlin.math.sqrt
+import SpotAnimEntityStatics.method2508
+import SpotAnimEntityStatics.anInt6437
+import SpotAnimEntityStatics.anInt6445
+import SpotAnimEntityStatics.anInt6448
 
 /* Class318_Sub7 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -69,7 +73,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 class318_sub9_sub2_sub1 = this.aDoublyLinkedNodeList_6433!!.method1878(126.toByte()) as ProjectileNode?
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rba.F(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + l + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rba.F(" + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + l + ')'))
         }
     }
 
@@ -78,8 +82,8 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
         do {
             try {
                 if (!this.aBoolean6446) {
-                    if (HslColorTableNode.anInt6637 < (this.aSpotAnimDefinition_6441!!.anInt2379)) bool = false
-                    else if (MapArchiveSource.anInt4797 <= (CollisionMapAccessor.anIntArray3551!![HslColorTableNode.anInt6637])) {
+                    if (HslColorTableNodeStatics.anInt6637 < (this.aSpotAnimDefinition_6441!!.anInt2379)) bool = false
+                    else if (MapArchiveSourceStatics.anInt4797 <= (CollisionMapAccessor.anIntArray3551!![HslColorTableNodeStatics.anInt6637])) {
                         if (!aBoolean6453) {
                             if (this.aSpotAnimDefinition_6441!!.anInt2425 != -1) {
                                 var i_10_ = (-aLong6435 + l).toInt()
@@ -144,12 +148,12 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                             } else {
                                 var i_28_ = ((Math.random() * anInt6456.toDouble()).toInt() + anInt6459)
                                 i_28_ = i_28_ and 0x3fff
-                                val i_29_ = TrigLookupTables.anIntArray1207!![i_28_]
-                                val i_30_ = TrigLookupTables.anIntArray1204!![i_28_]
+                                val i_29_ = TrigLookupTablesStatics.anIntArray1207!![i_28_]
+                                val i_30_ = TrigLookupTablesStatics.anIntArray1204!![i_28_]
                                 var i_31_ = anInt6452 + (anInt6454.toDouble() * Math.random()).toInt()
                                 i_31_ = i_31_ and 0x1fff
-                                val i_32_ = TrigLookupTables.anIntArray1207!![i_31_]
-                                val i_33_ = TrigLookupTables.anIntArray1204!![i_31_]
+                                val i_32_ = TrigLookupTablesStatics.anIntArray1207!![i_31_]
+                                val i_33_ = TrigLookupTablesStatics.anIntArray1204!![i_31_]
                                 val i_34_ = 13
                                 i_25_ = i_32_ * i_30_ shr i_34_
                                 i_26_ = -1 * (i_33_ shl 1)
@@ -186,11 +190,11 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                                 (((((this.aSpotAnimDefinition_6441!!.anInt2410).toDouble() * Math.random()) + (this.aSpotAnimDefinition_6441!!.anInt2413).toDouble()).toInt() shl 24) or ((((Math.random() * (this.aSpotAnimDefinition_6441!!.anInt2433).toDouble()) + (this.aSpotAnimDefinition_6441!!.anInt2429).toDouble()).toInt() shl 16) or (((Math.random() * (this.aSpotAnimDefinition_6441!!.anInt2403).toDouble()) + (this.aSpotAnimDefinition_6441!!.anInt2390).toDouble()).toInt() shl 8) or (((this.aSpotAnimDefinition_6441!!.anInt2408).toDouble() * Math.random()) + (this.aSpotAnimDefinition_6441!!.anInt2399).toDouble()).toInt()))
                             var i_53_ = (this.aSpotAnimDefinition_6441!!.anInt2414)
                             if (!var_renderer!!.method3644() && !(this.aSpotAnimDefinition_6441!!.aBoolean2382)) i_53_ = -1
-                            if (Client.anInt5171 == TerrainTileShape.anInt8808) {
+                            if (ClientStatics.anInt5171 == TerrainTileShapeStatics.anInt8808) {
                                 val class318_sub9_sub2_sub1 = (ProjectileNode(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aSpotAnimDefinition_6441!!.aBoolean2435), (this.aSpotAnimDefinition_6441!!.aBoolean2430)))
                             } else {
-                                val class318_sub9_sub2_sub1 = (DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103!![TerrainTileShape.anInt8808])
-                                TerrainTileShape.anInt8808 = 0x3ff and 1 + TerrainTileShape.anInt8808
+                                val class318_sub9_sub2_sub1 = (DisplayModeOptionStateStatics.aClass318_Sub9_Sub2_Sub1Array6103!![TerrainTileShapeStatics.anInt8808])
+                                TerrainTileShapeStatics.anInt8808 = 0x3ff and 1 + TerrainTileShapeStatics.anInt8808
                                 class318_sub9_sub2_sub1!!.method2523(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aSpotAnimDefinition_6441!!.aBoolean2435), (this.aSpotAnimDefinition_6441!!.aBoolean2430))
                             }
                         }
@@ -224,7 +228,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 if (i_9_ == 3) break
                 method2508(124)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("rba.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + l + ',' + i_9_ + ',' + bool + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("rba.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + l + ',' + i_9_ + ',' + bool + ')'))
             }
             break
         } while (false)
@@ -253,204 +257,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
             aViewportTransform_6449.anInt3672 = this.aViewportTransform_6444.anInt3672
             aViewportTransform_6449.anInt3679 = this.aViewportTransform_6444.anInt3679
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("rba.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (modelFacePriorityNode != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ',' + l + ')'))
-        }
-    }
-
-    companion object {
-        var anInt6437: Int = 0
-        var anInt6438: Int = 0
-        var anInt6440: Int = 0
-        var anInt6442: Int = 0
-        @JvmField
-        var aFontMetaRef_6443: FontMetaRef? = FontMetaRef(68, 2)
-        var anInt6445: Int = 0
-        var anInt6448: Int = 0
-        var anInt6450: Int = 0
-        @JvmField
-        var anInt6451: Int = 0
-        @JvmStatic
-        fun method2508(i: Int) {
-            if (i != 32767) method2512(null, null, 5)
-            aFontMetaRef_6443 = null
-        }
-
-        fun method2509(i: Int, i_0_: Int, var_renderer: Renderer, i_1_: Int, i_2_: Int, bool: Boolean, i_3_: Int, i_4_: Int) {
-            anInt6438++
-            if (bool != true) anInt6451 = -14
-            var_renderer.method3675(i, (-125).toByte(), i_1_, i_0_, i_3_, i_2_)
-            var_renderer.method3675(i - 2, (-125).toByte(), 1 + i_1_, 1 + i_0_, 16, i_4_)
-            var_renderer.method3668(-2 + i, 18 + i_0_, i_4_, 1 + i_1_, -19 + i_3_, 115)
-        }
-
-        @JvmStatic
-        fun method2510(js5Archive: Js5Archive?, class348_sub16_sub3: MidiSequencePlayer?, js5Archive_5_: Js5Archive?, bool: Boolean, soundChannelMixer: SoundChannelMixer?, js5Archive_6_: Js5Archive?): Boolean {
-            try {
-                ActorEntity.aSoundChannelMixer_8764 = soundChannelMixer
-                NodeDequeHolder.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
-                MinimapTileEntry.aJs5Archive_611 = js5Archive
-                GlEnvMappedWaterPass.aJs5Archive_7371 = js5Archive_6_
-                MapElementLookup.aJs5Archive_4147 = js5Archive_5_
-                BasicGlRenderPass.anIntArray7299 = IntArray(16)
-                if (bool != false) anInt6451 = 71
-                anInt6442++
-                for (i in 0..15) BasicGlRenderPass.anIntArray7299!![i] = 255
-                return true
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("rba.G(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (class348_sub16_sub3 != null) "{...}" else "null") + ',' + (if (js5Archive_5_ != null) "{...}" else "null") + ',' + bool + ',' + (if (soundChannelMixer != null) "{...}" else "null") + ',' + (if (js5Archive_6_ != null) "{...}" else "null") + ')'))
-            }
-        }
-
-        fun method2512(var_renderConfig: RenderConfig?, var_renderer: Renderer?, i: Int) {
-            try {
-                anInt6440++
-                if (MapRegionLoader.aClass348_Sub42_Sub14_1243 != null) {
-                    if (LinkedListNode.anInt4290 < 10) {
-                        if (!MapRegionLoader.aJs5Archive_1237!!.method413(100, MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625!!)) {
-                            LinkedListNode.anInt4290 = (TerrainShadowBuilderGl2.aJs5Archive_6950!!.method397((MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625!!), 0)) / 10
-                            return
-                        }
-                        method126(-16203)
-                        LinkedListNode.anInt4290 = 10
-                    }
-                    if (LinkedListNode.anInt4290 == 10) {
-                        MapRegionLoader.anInt1266 = (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9644 shr 6 shl 6)
-                        MapRegionLoader.anInt1263 = (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9643 shr 6 shl 6)
-                        MapRegionLoader.anInt1259 = 64 + ((MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9635 shr 6 shl 6) - MapRegionLoader.anInt1266)
-                        MapRegionLoader.anInt1267 = 64 + ((MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9627 shr 6 shl 6) - MapRegionLoader.anInt1263)
-                        val `is` = IntArray(3)
-                        var i_7_ = -1
-                        var i_8_ = -1
-                        if (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.method3236(`is`, (ArbVertexProgram.regionTileX - -((LocalPlayerState.aPlayer_1907!!.x) shr 9)), ((LocalPlayerState.aPlayer_1907!!.y) shr 9) + RegionMapDecoder.regionTileY, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), (-28).toByte())) {
-                            i_7_ = -MapRegionLoader.anInt1266 + `is`[1]
-                            i_8_ = -MapRegionLoader.anInt1263 + `is`[2]
-                        }
-                        if (SceneNodeDeque.aBoolean1500 || i_7_ < 0 || MapRegionLoader.anInt1259 <= i_7_ || i_8_ < 0 || MapRegionLoader.anInt1267 <= i_8_) {
-                            if (IdleAnimationsOptionState.anInt5909 == -1 || MapRegionLoaderThread.anInt4202 == -1) {
-                                MapRegionLoader.aClass348_Sub42_Sub14_1243!!.method3242(`is`, 123, 0x3fff and (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9640), (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9640) shr 14 and 0x3fff)
-                                DebugOverlayRenderer.anInt3170 = `is`[2] - MapRegionLoader.anInt1263
-                                WidgetActionEntry.anInt6992 = `is`[1] - MapRegionLoader.anInt1266
-                            } else {
-                                MapRegionLoader.aClass348_Sub42_Sub14_1243!!.method3242(`is`, 88, MapRegionLoaderThread.anInt4202, IdleAnimationsOptionState.anInt5909)
-                                MapRegionLoaderThread.anInt4202 = -1
-                                IdleAnimationsOptionState.anInt5909 = MapRegionLoaderThread.anInt4202
-                                if (`is` != null) {
-                                    WidgetActionEntry.anInt6992 = -MapRegionLoader.anInt1266 + `is`[1]
-                                    DebugOverlayRenderer.anInt3170 = -MapRegionLoader.anInt1263 + `is`[2]
-                                }
-                                SceneNodeDeque.aBoolean1500 = false
-                            }
-                        } else {
-                            i_7_ += (10.0 * Math.random()).toInt() + -5
-                            i_8_ += (Math.random() * 10.0).toInt() + -5
-                            WidgetActionEntry.anInt6992 = i_7_
-                            DebugOverlayRenderer.anInt3170 = i_8_
-                        }
-                        if (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9631 != 37) {
-                            if (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9631 != 50) {
-                                if (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9631 != 75) {
-                                    if ((MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9631) == 100) {
-                                        MapRegionLoader.aFloat1247 = 8.0f
-                                        MapRegionLoader.aFloat1249 = MapRegionLoader.aFloat1247
-                                    } else if ((MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9631) != 200) {
-                                        MapRegionLoader.aFloat1247 = 8.0f
-                                        MapRegionLoader.aFloat1249 = MapRegionLoader.aFloat1247
-                                    } else {
-                                        MapRegionLoader.aFloat1247 = 16.0f
-                                        MapRegionLoader.aFloat1249 = MapRegionLoader.aFloat1247
-                                    }
-                                } else {
-                                    MapRegionLoader.aFloat1247 = 6.0f
-                                    MapRegionLoader.aFloat1249 = MapRegionLoader.aFloat1247
-                                }
-                            } else {
-                                MapRegionLoader.aFloat1247 = 4.0f
-                                MapRegionLoader.aFloat1249 = MapRegionLoader.aFloat1247
-                            }
-                        } else {
-                            MapRegionLoader.aFloat1247 = 3.0f
-                            MapRegionLoader.aFloat1249 = MapRegionLoader.aFloat1247
-                        }
-                        MapRegionLoader.anInt1255 = MapRegionLoader.aFloat1247.toInt() shr 1
-                        MapRegionLoader.aByteArrayArrayArray1251 = SpriteMaskShape.method2596(MapRegionLoader.anInt1255, 12871)
-                        MenuActionNode.method2811(false)
-                        method760()
-                        RegionSceneLoader.aNodeDeque_3705 = NodeDeque()
-                        MapRegionLoader.anInt1250 += (Math.random() * 5.0).toInt() + -2
-                        if (MapRegionLoader.anInt1250 < -8) MapRegionLoader.anInt1250 = -8
-                        if (MapRegionLoader.anInt1250 > 8) MapRegionLoader.anInt1250 = 8
-                        MapRegionLoader.anInt1253 += -2 + (5.0 * Math.random()).toInt()
-                        if (MapRegionLoader.anInt1253 < -16) MapRegionLoader.anInt1253 = -16
-                        if (MapRegionLoader.anInt1253 > 16) MapRegionLoader.anInt1253 = 16
-                        MapRegionLoader.method764(var_renderConfig!!, (MapRegionLoader.anInt1250 shr 2 shl 10), MapRegionLoader.anInt1253 shr 1)
-                        MapRegionLoader.aConfigDefinitionLoader_1238!!.method1220(73.toByte(), 256, 1024)
-                        MapRegionLoader.aTextureDefinitionLoader_1242!!.method1178(256, 1, 256)
-                        MapRegionLoader.aSeqDefinitionCache_1245!!.method2014(4096, true)
-                        RenderConfigFactory.aVarbitDefLoader_2981!!.method1444(256, 123)
-                        LinkedListNode.anInt4290 = 20
-                    } else if (LinkedListNode.anInt4290 == 20) {
-                        RegionSceneLoader.method2193(true, (-123).toByte())
-                        method756(var_renderer, MapRegionLoader.anInt1250, MapRegionLoader.anInt1253)
-                        LinkedListNode.anInt4290 = 60
-                        RegionSceneLoader.method2193(true, (-122).toByte())
-                        method867(true)
-                    } else if (i <= -43) {
-                        if (LinkedListNode.anInt4290 == 60) {
-                            if (MapRegionLoader.aJs5Archive_1237!!.method400(-18308, (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) {
-                                if (!MapRegionLoader.aJs5Archive_1237!!.method413(100, (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) return
-                                MapRegionLoader.aSmoothingBuffer_1246 = (SkeletonSequenceLoader.method2300(MapRegionLoader.aJs5Archive_1237, (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements", ModelBatchBase.aBoolean1900, (-91).toByte()))
-                            } else MapRegionLoader.aSmoothingBuffer_1246 = SmoothingBuffer(0)
-                            method761()
-                            LinkedListNode.anInt4290 = 70
-                            RegionSceneLoader.method2193(true, (-127).toByte())
-                            method867(true)
-                        } else if (LinkedListNode.anInt4290 == 70) {
-                            MinimapSpriteRenderer.aSystemFontGlyphs_4921 = SystemFontGlyphs(var_renderer!!, 11, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 73
-                            RegionSceneLoader.method2193(true, (-123).toByte())
-                            method867(true)
-                        } else if (LinkedListNode.anInt4290 == 73) {
-                            GlRectangleTexture.aSystemFontGlyphs_8644 = SystemFontGlyphs(var_renderer!!, 12, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 76
-                            RegionSceneLoader.method2193(true, (-125).toByte())
-                            method867(true)
-                        } else if (LinkedListNode.anInt4290 == 76) {
-                            GlShaderObjectHandle.aSystemFontGlyphs_521 = SystemFontGlyphs(var_renderer!!, 14, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 79
-                            RegionSceneLoader.method2193(true, (-123).toByte())
-                            method867(true)
-                        } else if (LinkedListNode.anInt4290 == 79) {
-                            HeapDiagnosticsHolder.aSystemFontGlyphs_2252 = SystemFontGlyphs(var_renderer!!, 17, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 82
-                            RegionSceneLoader.method2193(true, (-124).toByte())
-                            method867(true)
-                        } else if (LinkedListNode.anInt4290 == 82) {
-                            PingHostListHolder.aSystemFontGlyphs_2333 = SystemFontGlyphs(var_renderer!!, 19, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 85
-                            RegionSceneLoader.method2193(true, (-128).toByte())
-                            method867(true)
-                        } else if (LinkedListNode.anInt4290 == 85) {
-                            GlBufferObject.aSystemFontGlyphs_4754 = SystemFontGlyphs(var_renderer!!, 22, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 88
-                            RegionSceneLoader.method2193(true, (-124).toByte())
-                            method867(true)
-                        } else if (LinkedListNode.anInt4290 == 88) {
-                            ModelVertexColorBuffer.aSystemFontGlyphs_6581 = SystemFontGlyphs(var_renderer!!, 26, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 91
-                            RegionSceneLoader.method2193(true, (-125).toByte())
-                            method867(true)
-                        } else {
-                            WorldMapRenderer.aSystemFontGlyphs_4672 = SystemFontGlyphs(var_renderer!!, 30, true, ParticleSystemRenderer.aCanvas3869!!)
-                            LinkedListNode.anInt4290 = 100
-                            RegionSceneLoader.method2193(true, (-119).toByte())
-                            method867(true)
-                            System.gc()
-                        }
-                    }
-                }
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("rba.A(" + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (var_renderer!! != null) "{...}" else "null") + ',' + i + ')'))
-            }
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("rba.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (modelFacePriorityNode != null) "{...}" else "null") + ',' + (if (class318_sub10 != null) "{...}" else "null") + ',' + l + ')'))
         }
     }
 }

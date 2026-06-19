@@ -16,7 +16,7 @@ class MapBuffer : NativeBuffer() {
         if (this.c != 0) {
             return false
         }
-        val local8: Long = OpenGL.Companion.glMapBufferARB(arg0, arg2)
+        val local8: Long = OpenGLStatics.glMapBufferARB(arg0, arg2)
         if (local8 == 0L) {
             return false
         } else {
@@ -33,7 +33,7 @@ class MapBuffer : NativeBuffer() {
     fun b(): Boolean {
         var local1 = true
         if (this.c != 0) {
-            local1 = OpenGL.Companion.glUnmapBufferARB(this.c)
+            local1 = OpenGLStatics.glUnmapBufferARB(this.c)
             this.a(0L, 0)
             this.c = 0
         }

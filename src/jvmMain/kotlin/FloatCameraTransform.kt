@@ -1,3 +1,42 @@
+import FloatCameraTransformStatics.method921
+import FloatCameraTransformStatics.anInt5690
+import FloatCameraTransformStatics.anInt5692
+import FloatCameraTransformStatics.anInt5693
+import FloatCameraTransformStatics.anInt5694
+import FloatCameraTransformStatics.anInt5695
+import FloatCameraTransformStatics.anInt5696
+import FloatCameraTransformStatics.anInt5697
+import FloatCameraTransformStatics.anInt5698
+import FloatCameraTransformStatics.anInt5701
+import FloatCameraTransformStatics.anInt5702
+import FloatCameraTransformStatics.anInt5703
+import FloatCameraTransformStatics.anInt5705
+import FloatCameraTransformStatics.anInt5706
+import FloatCameraTransformStatics.anInt5707
+import FloatCameraTransformStatics.anInt5709
+import FloatCameraTransformStatics.anInt5712
+import FloatCameraTransformStatics.anInt5715
+import FloatCameraTransformStatics.anInt5717
+import FloatCameraTransformStatics.anInt5718
+import FloatCameraTransformStatics.anInt5719
+import FloatCameraTransformStatics.anInt5720
+import FloatCameraTransformStatics.anInt5721
+import FloatCameraTransformStatics.anInt5723
+import FloatCameraTransformStatics.anInt5725
+import FloatCameraTransformStatics.anInt5726
+import FloatCameraTransformStatics.anInt5727
+import FloatCameraTransformStatics.anInt5728
+import FloatCameraTransformStatics.anInt5730
+import FloatCameraTransformStatics.anInt5731
+import FloatCameraTransformStatics.anInt5733
+import FloatCameraTransformStatics.anInt5734
+import FloatCameraTransformStatics.anInt5735
+import FloatCameraTransformStatics.anInt5737
+import FloatCameraTransformStatics.anInt5738
+import FloatCameraTransformStatics.anInt5740
+import FloatCameraTransformStatics.anInt5741
+import FloatCameraTransformStatics.anInt5743
+
 /* Class101_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -27,9 +66,9 @@ class FloatCameraTransform : AbstractCameraTransform() {
     override fun method902(i: Int) {
         this.aFloat5716 = 1.0f
         anInt5712++
-        this.aFloat5722 = LightingOptionState.aFloatArray5876!![0x3fff and i]
+        this.aFloat5722 = LightingOptionStateStatics.aFloatArray5876!![0x3fff and i]
         this.aFloat5711 = this.aFloat5722
-        this.aFloat5708 = LightingOptionState.aFloatArray5874!![i and 0x3fff]
+        this.aFloat5708 = LightingOptionStateStatics.aFloatArray5874!![i and 0x3fff]
         this.aFloat5700 = -this.aFloat5708
         this.aFloat5724 = 0.0f
         this.aFloat5691 = this.aFloat5724
@@ -105,12 +144,12 @@ class FloatCameraTransform : AbstractCameraTransform() {
 
     override fun method903(i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
         anInt5733++
-        val f = LightingOptionState.aFloatArray5876!![i_6_ and 0x3fff]
-        val f_9_ = LightingOptionState.aFloatArray5874!![i_6_ and 0x3fff]
-        val f_10_ = LightingOptionState.aFloatArray5876!![0x3fff and i_7_]
-        val f_11_ = LightingOptionState.aFloatArray5874!![0x3fff and i_7_]
-        val f_12_ = LightingOptionState.aFloatArray5876!![0x3fff and i_8_]
-        val f_13_ = LightingOptionState.aFloatArray5874!![i_8_ and 0x3fff]
+        val f = LightingOptionStateStatics.aFloatArray5876!![i_6_ and 0x3fff]
+        val f_9_ = LightingOptionStateStatics.aFloatArray5874!![i_6_ and 0x3fff]
+        val f_10_ = LightingOptionStateStatics.aFloatArray5876!![0x3fff and i_7_]
+        val f_11_ = LightingOptionStateStatics.aFloatArray5874!![0x3fff and i_7_]
+        val f_12_ = LightingOptionStateStatics.aFloatArray5876!![0x3fff and i_8_]
+        val f_13_ = LightingOptionStateStatics.aFloatArray5874!![i_8_ and 0x3fff]
         val f_14_ = f_12_ * f_9_
         val f_15_ = f_9_ * f_13_
         this.aFloat5700 = f_13_ * f
@@ -130,9 +169,9 @@ class FloatCameraTransform : AbstractCameraTransform() {
     override fun method895(i: Int) {
         this.aFloat5722 = 1.0f
         anInt5738++
-        this.aFloat5716 = LightingOptionState.aFloatArray5876!![0x3fff and i]
+        this.aFloat5716 = LightingOptionStateStatics.aFloatArray5876!![0x3fff and i]
         this.aFloat5711 = this.aFloat5716
-        this.aFloat5704 = LightingOptionState.aFloatArray5874!![i and 0x3fff]
+        this.aFloat5704 = LightingOptionStateStatics.aFloatArray5874!![i and 0x3fff]
         this.aFloat5736 = -this.aFloat5704
         this.aFloat5724 = 0.0f
         this.aFloat5691 = this.aFloat5724
@@ -146,9 +185,9 @@ class FloatCameraTransform : AbstractCameraTransform() {
     override fun method899(i: Int) {
         this.aFloat5711 = 1.0f
         anInt5721++
-        this.aFloat5716 = LightingOptionState.aFloatArray5876!![0x3fff and i]
+        this.aFloat5716 = LightingOptionStateStatics.aFloatArray5876!![0x3fff and i]
         this.aFloat5722 = this.aFloat5716
-        this.aFloat5691 = LightingOptionState.aFloatArray5874!![0x3fff and i]
+        this.aFloat5691 = LightingOptionStateStatics.aFloatArray5874!![0x3fff and i]
         this.aFloat5724 = 0.0f
         this.aFloat5736 = this.aFloat5724
         this.aFloat5710 = this.aFloat5736
@@ -274,8 +313,8 @@ class FloatCameraTransform : AbstractCameraTransform() {
 
     override fun method900(i: Int) {
         anInt5734++
-        val f = LightingOptionState.aFloatArray5876!![0x3fff and i]
-        val f_39_ = LightingOptionState.aFloatArray5874!![0x3fff and i]
+        val f = LightingOptionStateStatics.aFloatArray5876!![0x3fff and i]
+        val f_39_ = LightingOptionStateStatics.aFloatArray5874!![0x3fff and i]
         val f_40_ = this.aFloat5708
         val f_41_ = this.aFloat5722
         val f_42_ = this.aFloat5732
@@ -385,7 +424,7 @@ class FloatCameraTransform : AbstractCameraTransform() {
             this.aFloat5710 = (class101_sub2_53_.aFloat5710 + ((class101_sub2_53_.aFloat5732 * class101_sub2_54_.aFloat5724) + ((class101_sub2_54_.aFloat5710 * class101_sub2_53_.aFloat5722) + (class101_sub2_53_.aFloat5708 * (class101_sub2_54_.aFloat5729)))))
             this.aFloat5724 = ((class101_sub2_53_.aFloat5691 * class101_sub2_54_.aFloat5710) + (class101_sub2_53_.aFloat5736 * class101_sub2_54_.aFloat5729) + (class101_sub2_54_.aFloat5724 * class101_sub2_53_.aFloat5716) + class101_sub2_53_.aFloat5724)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("haa.HA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (abstractCameraTransform_52_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("haa.HA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (abstractCameraTransform_52_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -418,8 +457,8 @@ class FloatCameraTransform : AbstractCameraTransform() {
 
     override fun method908(i: Int) {
         anInt5702++
-        val f = LightingOptionState.aFloatArray5876!![i and 0x3fff]
-        val f_57_ = LightingOptionState.aFloatArray5874!![i and 0x3fff]
+        val f = LightingOptionStateStatics.aFloatArray5876!![i and 0x3fff]
+        val f_57_ = LightingOptionStateStatics.aFloatArray5874!![i and 0x3fff]
         val f_58_ = this.aFloat5711
         val f_59_ = this.aFloat5700
         val f_60_ = this.aFloat5704
@@ -499,8 +538,8 @@ class FloatCameraTransform : AbstractCameraTransform() {
 
     override fun method896(i: Int) {
         anInt5725++
-        val f = LightingOptionState.aFloatArray5876!![i and 0x3fff]
-        val f_69_ = LightingOptionState.aFloatArray5874!![i and 0x3fff]
+        val f = LightingOptionStateStatics.aFloatArray5876!![i and 0x3fff]
+        val f_69_ = LightingOptionStateStatics.aFloatArray5874!![i and 0x3fff]
         val f_70_ = this.aFloat5711
         val f_71_ = this.aFloat5700
         val f_72_ = this.aFloat5704
@@ -601,8 +640,8 @@ class FloatCameraTransform : AbstractCameraTransform() {
             this.aFloat5722 = (2 * i_88_).toFloat()
             this.aFloat5724 = f_89_
         } else {
-            val f_92_ = LightingOptionState.aFloatArray5876!![i and 0x3fff]
-            val f_93_ = LightingOptionState.aFloatArray5874!![0x3fff and i]
+            val f_92_ = LightingOptionStateStatics.aFloatArray5876!![i and 0x3fff]
+            val f_93_ = LightingOptionStateStatics.aFloatArray5874!![0x3fff and i]
             this.aFloat5711 = 2.0f * f_92_ * i_91_.toFloat()
             this.aFloat5710 = (-0.5f * f_93_ - f_92_ * 0.5f) * (2 * i_88_).toFloat() + f_90_
             this.aFloat5722 = i_88_.toFloat() * (f_92_ * 2.0f)
@@ -620,147 +659,5 @@ class FloatCameraTransform : AbstractCameraTransform() {
 
     init {
         method910()
-    }
-
-    companion object {
-        @JvmField
-        var anInt5690: Int = 0
-        @JvmField
-        var anInt5692: Int = 0
-        @JvmField
-        var anInt5693: Int = 0
-        @JvmField
-        var anInt5694: Int = 0
-        @JvmField
-        var anInt5695: Int = 0
-        @JvmField
-        var anInt5696: Int = 0
-        @JvmField
-        var anInt5697: Int = 0
-        @JvmField
-        var anInt5698: Int = 0
-        var aFontMetaRef_5699: FontMetaRef?
-        @JvmField
-        var anInt5701: Int = 0
-        @JvmField
-        var anInt5702: Int = 0
-        @JvmField
-        var anInt5703: Int = 0
-        @JvmField
-        var anInt5705: Int = 0
-        @JvmField
-        var anInt5706: Int = 0
-        @JvmField
-        var anInt5707: Int = 0
-        @JvmField
-        var anInt5709: Int = 0
-        @JvmField
-        var anInt5712: Int = 0
-        @JvmField
-        var anInt5713: Int = -1
-        @JvmField
-        var anInt5714: Int = 0
-        @JvmField
-        var anInt5715: Int = 0
-        @JvmField
-        var anInt5717: Int = 0
-        @JvmField
-        var anInt5718: Int = 0
-        @JvmField
-        var anInt5719: Int = 0
-        @JvmField
-        var anInt5720: Int = 0
-        @JvmField
-        var anInt5721: Int = 0
-        @JvmField
-        var anInt5723: Int = 0
-        @JvmField
-        var anInt5725: Int = 0
-        @JvmField
-        var anInt5726: Int = 0
-        @JvmField
-        var anInt5727: Int = 0
-        @JvmField
-        var anInt5728: Int = 0
-        @JvmField
-        var anInt5730: Int = 0
-        @JvmField
-        var anInt5731: Int = 0
-        @JvmField
-        var anInt5733: Int = 0
-        @JvmField
-        var anInt5734: Int = 0
-        @JvmField
-        var anInt5735: Int = 0
-        @JvmField
-        var anInt5737: Int = 0
-        @JvmField
-        var anInt5738: Int = 0
-        @JvmField
-        var anInt5739: Int = 0
-        @JvmField
-        var anInt5740: Int = 0
-        @JvmField
-        var anInt5741: Int = 0
-        var aIntRange_5742: IntRange?
-        @JvmField
-        var anInt5743: Int = 0
-        var anInt5744: Int = 0
-        @JvmField
-        var aLong5745: Long = 0
-
-        fun method921(i: Byte, bool: Boolean) {
-            if (i.toInt() == 99) {
-                var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as? CharacterRenderState
-                while (class348_sub9 != null) {
-                    if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
-                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
-                        class348_sub9.aClass348_Sub16_Sub5_6676 = null
-                    }
-                    if (class348_sub9.aClass348_Sub16_Sub5_6673 != null) {
-                        SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6673!!)
-                        class348_sub9.aClass348_Sub16_Sub5_6673 = null
-                    }
-                    class348_sub9.method2715(94.toByte())
-                    class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1990(120.toByte()) as? CharacterRenderState
-                }
-                anInt5739++
-                if (bool) {
-                    run {
-                        var class348_sub9 = Client.aNodeDeque_5185!!.method1995(4) as? CharacterRenderState
-                        while (class348_sub9 != null) {
-                            if ((class348_sub9!!.aClass348_Sub16_Sub5_6676) != null) {
-                                SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9!!.aClass348_Sub16_Sub5_6676!!)
-                                class348_sub9!!.aClass348_Sub16_Sub5_6676 = null
-                            }
-                            class348_sub9!!.method2715(66.toByte())
-                            class348_sub9 = (Client.aNodeDeque_5185!!.method1990(69.toByte()) as? CharacterRenderState)
-                        }
-                    }
-                    var class348_sub9 = CompletedResourceRequest.aHashtable_10465!!.method3484(0) as? CharacterRenderState
-                    while (class348_sub9 != null) {
-                        if ((class348_sub9!!.aClass348_Sub16_Sub5_6676) != null) {
-                            SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9!!.aClass348_Sub16_Sub5_6676!!)
-                            class348_sub9!!.aClass348_Sub16_Sub5_6676 = null
-                        }
-                        class348_sub9!!.method2715(112.toByte())
-                        class348_sub9 = CompletedResourceRequest.aHashtable_10465!!.method3482(0) as? CharacterRenderState
-                    }
-                }
-            }
-        }
-
-        @JvmStatic
-        fun method925(i: Int) {
-            if (i == -5997) {
-                aFontMetaRef_5699 = null
-                aIntRange_5742 = null
-            }
-        }
-
-        init {
-            aFontMetaRef_5699 = FontMetaRef(53, -1)
-            aIntRange_5742 = IntRange(119, 6)
-        }
     }
 }

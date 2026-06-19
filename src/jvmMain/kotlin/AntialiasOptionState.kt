@@ -1,3 +1,10 @@
+import AntialiasOptionStateStatics.anInt6077
+import AntialiasOptionStateStatics.anInt6078
+import AntialiasOptionStateStatics.anInt6079
+import AntialiasOptionStateStatics.anInt6080
+import AntialiasOptionStateStatics.anInt6082
+import AntialiasOptionStateStatics.anInt6083
+
 /* Class239_Sub23 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -6,7 +13,7 @@ class AntialiasOptionState : GraphicsOptionState {
         anInt6077++
         if (i != 20014) return -71
         if (!this.aClass348_Sub51_3136.method3425(-109)) {
-            if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-107).toByte()) && GlRectangleTexture.method252(this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350), 5126)) return 1
+            if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-107).toByte()) && GlRectangleTextureStatics.method252(this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350), 5126)) return 1
             return 0
         }
         return 2
@@ -48,29 +55,4 @@ class AntialiasOptionState : GraphicsOptionState {
     }
 
     internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
-
-    companion object {
-        @JvmField
-        var anInt6077: Int = 0
-        @JvmField
-        var anInt6078: Int = 0
-        @JvmField
-        var anInt6079: Int = 0
-        @JvmField
-        var anInt6080: Int = 0
-        @JvmField
-        var anInt6081: Int = 0
-        @JvmField
-        var anInt6082: Int = 0
-        @JvmField
-        var anInt6083: Int = 0
-
-        @JvmStatic
-        fun method1819(i: Int, i_1_: Int, i_2_: Int, js5Archive: Js5Archive): FontDefinition? {
-            anInt6081++
-            val `is` = js5Archive.method410(-1860, i, i_1_)
-            if (`is` == null) return null
-            return FontDefinition(`is`)
-        }
-    }
 }

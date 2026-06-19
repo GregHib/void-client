@@ -1,3 +1,8 @@
+import NativeVertexBufferStatics.anInt4828
+import NativeVertexBufferStatics.anInt4830
+import NativeVertexBufferStatics.anInt4831
+import NativeVertexBufferStatics.anInt4832
+
 /* Class119_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -32,42 +37,7 @@ class NativeVertexBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i: I
         try {
             anInt4827 = i
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wv.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt4826: Int = 0
-        @JvmField
-        var anInt4828: Int = 0
-        @JvmField
-        var anInt4829: Int = 0
-        @JvmField
-        var anInt4830: Int = 0
-        @JvmField
-        var anInt4831: Int = 0
-        @JvmField
-        var anInt4832: Int = 0
-
-        fun method1078(`is`: ShortArray?, i: Int, i_0_: Int): ShortArray {
-            anInt4829++
-            if (i_0_ < 87) method1078(null, 22, -24)
-            val is_1_ = ShortArray(i)
-            ArrayCopyUtil.method1576(`is`!!, 0, is_1_, 0, i)
-            return is_1_
-        }
-
-        @JvmStatic
-        fun method1079(i: Int, i_2_: Int, i_3_: Int, i_4_: Int): Int {
-            var i_2_ = i_2_
-            anInt4826++
-            if (i != 4095) return 14
-            i_2_ = i_2_ and 0x3
-            if (i_2_ == 0) return i_3_
-            if (i_2_ == 1) return 4095 - i_4_
-            if (i_2_ == 2) return 4095 + -i_3_
-            return i_4_
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wv.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ')'))
         }
     }
 }

@@ -1,3 +1,10 @@
+import AbstractRenderPassStatics.anInt4480
+import AbstractRenderPassStatics.anInt4481
+import AbstractRenderPassStatics.anInt4482
+import AbstractRenderPassStatics.anInt4483
+import AbstractRenderPassStatics.anInt4484
+import AbstractRenderPassStatics.anInt4485
+
 /* Class367 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -38,34 +45,5 @@ abstract class AbstractRenderPass internal constructor(var aHa_Sub3_4479: Native
 
     open fun method3532(i: Int) {
         if (i == 10425) anInt4485++
-    }
-
-    companion object {
-        @JvmField
-        var anInt4478: Int = 0
-        @JvmField
-        var anInt4480: Int = 0
-        @JvmField
-        var anInt4481: Int = 0
-        @JvmField
-        var anInt4482: Int = 0
-        @JvmField
-        var anInt4483: Int = 0
-        @JvmField
-        var anInt4484: Int = 0
-        @JvmField
-        var anInt4485: Int = 0
-
-        @JvmStatic
-        fun method3529(i: Int): SceneEffectMarker {
-            anInt4478++
-            val class318_sub6 = GameClock.aDoublyLinkedNodeList_1114!!.method1875(60) as SceneEffectMarker?
-            if (i != 32564) method3529(-38)
-            if (class318_sub6 != null) {
-                FriendChatMember.anInt4474--
-                return class318_sub6
-            }
-            return SceneEffectMarker()
-        }
     }
 }

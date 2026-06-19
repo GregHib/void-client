@@ -1,6 +1,7 @@
 package jagtheora.ogg
 
 import jagtheora.misc.SimplePeer
+import jagtheora.ogg.OggSyncStateStatics.init
 
 class OggSyncState : SimplePeer() {
     init {
@@ -17,8 +18,4 @@ class OggSyncState : SimplePeer() {
     external fun pageOut(arg0: OggPage?): Int
 
     private external fun pageSeek(arg0: OggPage?): Long
-
-    companion object {
-        protected external fun init()
-    }
 }

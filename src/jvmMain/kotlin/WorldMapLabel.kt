@@ -1,3 +1,5 @@
+import WorldMapLabelStatics.anInt4967
+
 /* Class369 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -39,47 +41,7 @@ public open class WorldMapLabel(screenAnchorAlignment: ScreenAnchorAlignment?, t
             this.aScreenAnchorAlignment_4968 = screenAnchorAlignment
             this.anInt4963 = i_5_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("fn.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt4960: Int = 0
-        @JvmField
-        var aFontDefinition_4962: FontDefinition? = null
-        @JvmField
-        var anInt4964: Int = 0
-        @JvmField
-        var anInt4967: Int = 0
-        @JvmField
-        var anInt4969: Int = 0
-        @JvmField
-        var aBoolean4972: Boolean = false
-        @JvmStatic
-        fun method3567(i: Int) {
-            aFontDefinition_4962 = null
-            val i_0_ = 105 % ((-15 - i) / 36)
-        }
-
-        @JvmStatic
-        fun method3568(var_renderer: Renderer?, i: Int) {
-            anInt4964++
-            WorldMapRenderer.aFont_4684 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, ConnectionStateType.anInt1044)
-            GlTexture3D.aFontDefinition_8527 = GlVertexBufferBase.method1151(-25411, var_renderer, ConnectionStateType.anInt1044)
-            if (i != 4) aFontDefinition_4962 = null
-            GameAppletFrame.aFont_20 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, WidgetDefinition.anInt235)
-            ParticleEmitterFactory.aFontDefinition_3179 = GlVertexBufferBase.method1151(-25411, var_renderer, WidgetDefinition.anInt235)
-            NodeDeque.aFont_3326 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, CutsceneSequenceData.anInt3736)
-            aFontDefinition_4962 = GlVertexBufferBase.method1151(-25411, var_renderer, CutsceneSequenceData.anInt3736)
-        }
-
-        @JvmStatic
-        fun method3569(i: Int, i_1_: Int) {
-            anInt4969++
-            val i_2_ = 83 % ((i_1_ - -87) / 37)
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), 4)
-            class348_sub42_sub15.method3251(-16058)
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("fn.<init>(" + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 }

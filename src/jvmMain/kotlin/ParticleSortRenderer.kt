@@ -1,9 +1,17 @@
-import CircleRasterizer.Companion.method2253
-import jaggl.OpenGL.Companion.glDisable
-import jaggl.OpenGL.Companion.glEnable
-import jaggl.OpenGL.Companion.glGetFloatv
-import jaggl.OpenGL.Companion.glNormal3f
+import CircleRasterizerStatics.method2253
+import jaggl.OpenGLStatics.glDisable
+import jaggl.OpenGLStatics.glEnable
+import jaggl.OpenGLStatics.glGetFloatv
+import jaggl.OpenGLStatics.glNormal3f
 import kotlin.math.min
+import ParticleSortRendererStatics.aFloatArray3015
+import ParticleSortRendererStatics.anInt3016
+import ParticleSortRendererStatics.anInt3017
+import ParticleSortRendererStatics.anInt3018
+import ParticleSortRendererStatics.anInt3019
+import ParticleSortRendererStatics.anInt3021
+import ParticleSortRendererStatics.aLinkedNodeListIterator_3022
+import ParticleSortRendererStatics.anInt3023
 
 /*
  * Class233
@@ -130,7 +138,7 @@ class ParticleSortRenderer internal constructor() {
                 method1650(var_ha_Sub2, (-5).toByte())
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("sn.G(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + (if (nodeDequeHolder != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("sn.G(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ',' + (if (nodeDequeHolder != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -402,23 +410,5 @@ class ParticleSortRenderer internal constructor() {
         anInt3034 = 0
         aClass318_Sub9_Sub2ArrayArray3030 = Array<Array<PositionedSceneNode?>?>(64) { arrayOfNulls<PositionedSceneNode>(768) }
         anIntArray3035 = IntArray(64)
-    }
-
-    companion object {
-        var aFloatArray3015: FloatArray? = FloatArray(16)
-        var anInt3016: Int = 0
-        var anInt3017: Int = 0
-        var anInt3018: Int = 0
-        var anInt3019: Int = 0
-        var anInt3021: Int = 0
-        @JvmField
-        var aLinkedNodeListIterator_3022: LinkedNodeListIterator? = LinkedNodeListIterator()
-        var anInt3023: Int = 0
-        @JvmStatic
-        fun method1653(i: Int) {
-            aLinkedNodeListIterator_3022 = null
-            aFloatArray3015 = null
-            if (i != 1489574736) aLinkedNodeListIterator_3022 = null
-        }
     }
 }

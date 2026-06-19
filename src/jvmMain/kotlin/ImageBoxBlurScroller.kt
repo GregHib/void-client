@@ -1,3 +1,5 @@
+import ImageBoxBlurScrollerStatics.anIntArray6881
+
 /* Class348_Sub25 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -106,14 +108,6 @@ class ImageBoxBlurScroller internal constructor(var anInt6883: Int, private val 
             val is_43_ = anIntArray6884
             anIntArray6884 = anIntArray6881
             anIntArray6881 = is_43_
-        }
-    }
-
-    companion object {
-        private var anIntArray6881: IntArray? = null
-        @JvmStatic
-        fun method2996() {
-            anIntArray6881 = null
         }
     }
 }

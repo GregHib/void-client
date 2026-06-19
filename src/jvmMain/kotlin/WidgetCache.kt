@@ -1,6 +1,11 @@
 import CharCountUtil.method256
-import GraphicsOptionState.Companion.method1711
-import RsaVarbitHandler.Companion.method494
+import GraphicsOptionStateStatics.method1711
+import RsaVarbitHandlerStatics.method494
+import WidgetCacheStatics.anInt1483
+import WidgetCacheStatics.anInt1484
+import WidgetCacheStatics.anInt1485
+import WidgetCacheStatics.anInt1489
+import WidgetCacheStatics.anInt1490
 
 /* Class87 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -90,33 +95,7 @@ class WidgetCache internal constructor(sceneProjector: SceneProjector?, i: Int, 
             }
             method1711(7, js5Archive_6_, 2, js5Archive_7_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lfa.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_6_ != null) "{...}" else "null") + ',' + (if (js5Archive_7_ != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt1483: Int = 0
-        @JvmField
-        var anInt1484: Int = 0
-        @JvmField
-        var anInt1485: Int = 0
-        @JvmField
-        var anInt1486: Int = 0
-        @JvmField
-        var anInt1489: Int = 0
-        @JvmField
-        var anInt1490: Int = 0
-        @JvmStatic
-        fun method837(i: Int, bool: Boolean, i_3_: Int, i_4_: Int): Int {
-            var i_4_ = i_4_
-            i_4_ = i_4_ and 0x3
-            anInt1486++
-            if (i_4_ == 0) return i_3_
-            if (bool != true) return -75
-            if (i_4_ == 1) return 7 - i
-            if (i_4_ == 2) return 7 - i_3_
-            return i
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("lfa.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_6_ != null) "{...}" else "null") + ',' + (if (js5Archive_7_ != null) "{...}" else "null") + ')'))
         }
     }
 }

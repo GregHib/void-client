@@ -1,6 +1,28 @@
 import java.util.*
 import java.util.Hashtable
 import kotlin.math.atan2
+import PlayerStatics.anInt10518
+import PlayerStatics.anInt10523
+import PlayerStatics.anInt10525
+import PlayerStatics.anInt10527
+import PlayerStatics.anInt10528
+import PlayerStatics.anInt10529
+import PlayerStatics.anInt10530
+import PlayerStatics.anInt10532
+import PlayerStatics.anInt10533
+import PlayerStatics.anInt10534
+import PlayerStatics.anInt10541
+import PlayerStatics.anInt10543
+import PlayerStatics.anInt10545
+import PlayerStatics.anInt10546
+import PlayerStatics.anInt10547
+import PlayerStatics.anInt10548
+import PlayerStatics.anInt10550
+import PlayerStatics.anInt10555
+import PlayerStatics.anInt10562
+import PlayerStatics.anInt10563
+import PlayerStatics.anInt10567
+import ProjectedGroundDecorStatics.aVarpStore_10209
 
 class Player : ProjectedGroundDecor() {
     @JvmField
@@ -80,7 +102,7 @@ class Player : ProjectedGroundDecor() {
         val i_2_ = method2436(103.toByte())
         this.y = (256 * i_2_ + 512 * this.anIntArray10317!![0])
         this.x = (this.anIntArray10320!![0] * 512 + i_2_ * 256)
-        if (LocalPlayerState.aPlayer_1907 == this) SceneObjectSpawner.method773(true)
+        if (LocalPlayerState.aPlayer_1907 == this) SceneObjectSpawnerStatics.method773(true)
         if (this.aClass318_Sub10_10327 != null) this.aClass318_Sub10_10327!!.method2529()
     }
 
@@ -115,7 +137,7 @@ class Player : ProjectedGroundDecor() {
         var bool = false
         var i_10_ = 0
         while ((this.aAbstractModelArray10323!!.size > i_10_)) {
-            if ((this.aAbstractModelArray10323!![i_10_] != null) && (if (ParticleSystemRenderer.aBoolean3870) (this.aAbstractModelArray10323!![i_10_]!!.method623(i_7_, i, class101, true, 0, LocalPlayerState.anInt1906)) else this.aAbstractModelArray10323!![i_10_]!!.method628(i_7_, i, class101, true, 0))) {
+            if ((this.aAbstractModelArray10323!![i_10_] != null) && (if (ParticleSystemRendererStatics.aBoolean3870) (this.aAbstractModelArray10323!![i_10_]!!.method623(i_7_, i, class101, true, 0, LocalPlayerState.anInt1906)) else this.aAbstractModelArray10323!![i_10_]!!.method628(i_7_, i, class101, true, 0))) {
                 bool = true
                 break
             }
@@ -144,7 +166,7 @@ class Player : ProjectedGroundDecor() {
         this.anInt10540 = class348_sub49.readByte(-89).toInt()
         this.anInt10522 = class348_sub49.readByte(i.toInt() xor 0x1.inv()).toInt()
         this.aBoolean10551 = class348_sub49.readByte(i + -199).toInt() == 1
-        if (NpcAnimationResolver.aNamedIdRecord_165 == OggCacheStream.aNamedIdRecord_5271 && AsyncTaskHandle.anInt2581 >= 2) this.aBoolean10551 = false
+        if (NpcAnimationResolverStatics.aNamedIdRecord_165 == OggCacheStreamStatics.aNamedIdRecord_5271 && AsyncTaskHandleStatics.anInt2581 >= 2) this.aBoolean10551 = false
         this.anInt10542 = 0
         var i_14_ = -1
         val `is` = IntArray(12)
@@ -160,23 +182,23 @@ class Player : ProjectedGroundDecor() {
                     break
                 }
                 if (i_18_ >= 32768) {
-                    i_18_ = SpriteStore.anIntArray369!![-32768 + i_18_]
-                    `is`[i_15_] = BoundsConstraintEntry.method2057(1073741824, i_18_)
-                    val i_19_ = (ClientException.aModelHeaderCache_112!!.method1940(-111, i_18_).anInt2827)
+                    i_18_ = SpriteStoreStatics.anIntArray369!![-32768 + i_18_]
+                    `is`[i_15_] = BoundsConstraintEntryStatics.method2057(1073741824, i_18_)
+                    val i_19_ = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-111, i_18_).anInt2827)
                     if (i_19_ != 0) this.anInt10542 = i_19_
-                } else `is`[i_15_] = BoundsConstraintEntry.method2057(-256 + i_18_, -2147483648)
+                } else `is`[i_15_] = BoundsConstraintEntryStatics.method2057(-256 + i_18_, -2147483648)
             }
         }
         val is_20_ = IntArray(5)
         for (i_21_ in 0..4) {
             var i_22_ = class348_sub49.readUnsignedByte(255)
-            if (GlWaterRenderPass.aShortArrayArrayArray7290!!.size < 1 || i_22_ < 0 || i_22_ >= GlWaterRenderPass.aShortArrayArrayArray7290!![0]!![i_21_]!!.size) i_22_ = 0
+            if (GlWaterRenderPassStatics.aShortArrayArrayArray7290!!.size < 1 || i_22_ < 0 || i_22_ >= GlWaterRenderPassStatics.aShortArrayArrayArray7290!![0]!![i_21_]!!.size) i_22_ = 0
             is_20_[i_21_] = i_22_
         }
         anInt10520 = class348_sub49.readUnsignedShort(842397944)
         this.aString10537 = class348_sub49.readString((-47).toByte())
         this.aString10544 = this.aString10537
-        if (this == LocalPlayerState.aPlayer_1907) OpenGlTerrainTile.aString8265 = this.aString10537
+        if (this == LocalPlayerState.aPlayer_1907) OpenGlTerrainTileStatics.aString8265 = this.aString10537
         this.anInt10516 = class348_sub49.readUnsignedByte(i.toInt() xor 0xab)
         if (i.toInt() != 84) anInt10520 = 87
         if (bool_12_) {
@@ -192,7 +214,7 @@ class Player : ProjectedGroundDecor() {
         }
         val i_23_ = this.anInt10553
         this.anInt10553 = class348_sub49.readUnsignedByte(255)
-        if (this.anInt10553 == 0) LocalizedTextTriple.method2221(this, -28482)
+        if (this.anInt10553 == 0) LocalizedTextTripleStatics.method2221(this, -28482)
         else {
             val i_24_ = this.anInt10535
             val i_25_ = this.anInt10526
@@ -214,10 +236,10 @@ class Player : ProjectedGroundDecor() {
             this.x = (this.anIntArray10320!![0] shl 9) - -(method2436(89.toByte()) shl 8)
             this.y = (this.anIntArray10317!![0] shl 9) - -(method2436(98.toByte()) shl 8)
         }
-        if ((CharCodeMap.anInt9591 == this.anInt10290) && is_30_ != null) {
+        if ((CharCodeMapStatics.anInt9591 == this.anInt10290) && is_30_ != null) {
             for (i_31_ in is_20_.indices) {
                 if (is_20_[i_31_] != is_30_[i_31_]) {
-                    ClientException.aModelHeaderCache_112!!.method1936(72)
+                    ClientExceptionStatics.aModelHeaderCache_112!!.method1936(72)
                     break
                 }
             }
@@ -240,7 +262,7 @@ class Player : ProjectedGroundDecor() {
                     val i_36_ = i * i + i_34_ * i_34_
                     if (i_36_ >= 262144 && i_32_ >= i_36_) {
                         val i_37_ = 0x3fff and (atan2(i.toDouble(), i_34_.toDouble()) * 2607.5945876176133).toInt()
-                        val class64_38_ = (DelegatingRenderCanvas.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_37_, i_35_, (-35).toByte(), var_renderer!!))
+                        val class64_38_ = (DelegatingRenderCanvasStatics.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_37_, i_35_, (-35).toByte(), var_renderer!!))
                         if (class64_38_ == null) break
                         var_renderer!!.C(false)
                         class64_38_.method615(abstractCameraTransform, null, 0)
@@ -248,7 +270,7 @@ class Player : ProjectedGroundDecor() {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ke.OB(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_32_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_33_ + ',' + i_34_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_35_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("ke.OB(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_32_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_33_ + ',' + i_34_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_35_ + ')'))
             }
             break
         } while (false)
@@ -262,14 +284,14 @@ class Player : ProjectedGroundDecor() {
                 val i_44_ = i_43_ * i_43_ + i_39_ * i_39_
                 if (i_44_ >= 262144 && i_44_ <= i_42_) {
                     val i_45_ = ((2607.5945876176133 * atan2(i_39_.toDouble(), i_43_.toDouble())).toInt() and 0x3fff)
-                    val class64_46_ = (DelegatingRenderCanvas.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_45_, i_41_, (-35).toByte(), var_renderer!!))
+                    val class64_46_ = (DelegatingRenderCanvasStatics.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_45_, i_41_, (-35).toByte(), var_renderer!!))
                     if (class64_46_ == null) break
                     var_renderer!!.C(false)
                     class64_46_.method608(abstractCameraTransform, null, i_40_, 0)
                     var_renderer.C(true)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_42_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_43_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_42_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_43_ + ')'))
             }
             break
         } while (false)
@@ -293,29 +315,29 @@ class Player : ProjectedGroundDecor() {
             anInt10545++
             throw IllegalStateException()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ke.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_47_ + ',' + i_48_ + ',' + i_49_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ke.N(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_47_ + ',' + i_48_ + ',' + i_49_ + ')'))
         }
     }
 
     fun method2455(i: Int, i_50_: Int, i_51_: Byte, i_52_: Int) {
         anInt10529++
         if (i_50_ != -26443) method2451((-35).toByte(), 9, 26, 87)
-        if (this.anInt10286 != -1 && ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10286, 7).anInt245 == 1) {
+        if (this.anInt10286 != -1 && ParticleEmitterNodeStatics.aWidgetCache_191!!.method835(this.anInt10286, 7).anInt245 == 1) {
             this.anInt10286 = -1
             this.anIntArray10236 = null
         }
         if (this.anInt10269 != -1) {
-            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(59.toByte(), this.anInt10269))
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && ParticleEmitterNode.aWidgetCache_191!!.method835((class368.anInt4503), i_50_ xor 0x674d.inv()).anInt245 == 1) this.anInt10269 = -1
+            val class368 = (ConstantColourTextureNodeStatics.aMapElementDefinitionCache_9245!!.method2543(59.toByte(), this.anInt10269))
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && ParticleEmitterNodeStatics.aWidgetCache_191!!.method835((class368.anInt4503), i_50_ xor 0x674d.inv()).anInt245 == 1) this.anInt10269 = -1
         }
         if (this.anInt10291 != -1) {
-            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(124.toByte(), this.anInt10291))
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
+            val class368 = (ConstantColourTextureNodeStatics.aMapElementDefinitionCache_9245!!.method2543(124.toByte(), this.anInt10291))
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (ParticleEmitterNodeStatics.aWidgetCache_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
         }
         this.anInt10524 = -1
-        if (i_52_ >= 0 && GlCubemapLightPass.anInt7319 > i_52_ && i >= 0 && RangeThresholdTextureNode.anInt9109 > i) {
-            if (this.anIntArray10320!![0] >= 0 && (this.anIntArray10320!![0] < GlCubemapLightPass.anInt7319) && this.anIntArray10317!![0] >= 0 && (RangeThresholdTextureNode.anInt9109 > this.anIntArray10317!![0])) {
-                if (i_51_.toInt() == 2) MapSceneIconDef.method1592(2.toByte(), i, 4, i_52_, this)
+        if (i_52_ >= 0 && GlCubemapLightPassStatics.anInt7319 > i_52_ && i >= 0 && RangeThresholdTextureNodeStatics.anInt9109 > i) {
+            if (this.anIntArray10320!![0] >= 0 && (this.anIntArray10320!![0] < GlCubemapLightPassStatics.anInt7319) && this.anIntArray10317!![0] >= 0 && (RangeThresholdTextureNodeStatics.anInt9109 > this.anIntArray10317!![0])) {
+                if (i_51_.toInt() == 2) MapSceneIconDefStatics.method1592(2.toByte(), i, 4, i_52_, this)
                 method2451(i_51_, i_52_, -29034, i)
             } else method2449(i, i_52_, 111.toByte())
         } else method2449(i, i_52_, 112.toByte())
@@ -327,7 +349,7 @@ class Player : ProjectedGroundDecor() {
         val class101 = var_renderer!!.method3705()
         val i_53_ = this.aCompassSmoother_10217.method2019((-126).toByte())
         class101.method895(i_53_)
-        val class357 = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![this.plane.toInt()]!![this.x shr Tooltip.anInt4459]!![this.y shr Tooltip.anInt4459])
+        val class357 = (HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![this.plane.toInt()]!![this.x shr Tooltip.anInt4459]!![this.y shr Tooltip.anInt4459])
         if (class357 == null || class357.aClass318_Sub1_Sub1_4402 == null) this.anInt10274 = (this.anInt10274 - this.anInt10274.toFloat() / 10.0f).toInt()
         else {
             val i_54_ = (this.anInt10274 + -(class357.aClass318_Sub1_Sub1_4402!!.aShort8727))
@@ -336,17 +358,17 @@ class Player : ProjectedGroundDecor() {
         class101.method891(this.x, (-20 + (this.anInt6382 - this.anInt10274)), this.y)
         var class318_sub4: SceneEntityModel? = null
         this.aBoolean10324 = false
-        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == 1) {
+        if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == 1) {
             val class225 = this.method2422(72.toByte())
-            if (class225.aBoolean2913 && (this.aCompositeNpcModelBuilder_10536!!.anInt2093 == -1 || MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(this.aCompositeNpcModelBuilder_10536!!.anInt2093, i + -2).aBoolean1369)) {
-                val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10286, 7)) else null)
-                val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10268, 7)))
-                val class64 = (LinkedListNode.method2711(this.anInt10302, i_53_, this.aAbstractModelArray10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_renderer, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
+            if (class225.aBoolean2913 && (this.aCompositeNpcModelBuilder_10536!!.anInt2093 == -1 || MapAreaDefinitionStatics.aBufferedMessageQueue_2529!!.method2079(this.aCompositeNpcModelBuilder_10536!!.anInt2093, i + -2).aBoolean1369)) {
+                val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (ParticleEmitterNodeStatics.aWidgetCache_191!!.method835(this.anInt10286, 7)) else null)
+                val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (ParticleEmitterNodeStatics.aWidgetCache_191!!.method835(this.anInt10268, 7)))
+                val class64 = (LinkedListNodeStatics.method2711(this.anInt10302, i_53_, this.aAbstractModelArray10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_renderer, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
                 if (class64 != null) {
-                    class318_sub4 = (ChatMessageStream.method136(1 + (this.aAbstractModelArray10323).size, true, false))
+                    class318_sub4 = (ChatMessageStreamStatics.method136(1 + (this.aAbstractModelArray10323).size, true, false))
                     this.aBoolean10324 = true
                     var_renderer.C(false)
-                    if (ParticleSystemRenderer.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aAbstractModelArray10323).size]), LocalPlayerState.anInt1906, 0)
+                    if (ParticleSystemRendererStatics.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aAbstractModelArray10323).size]), LocalPlayerState.anInt1906, 0)
                     else class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aAbstractModelArray10323).size]), 0)
                     var_renderer.C(true)
                 }
@@ -354,8 +376,8 @@ class Player : ProjectedGroundDecor() {
         }
         if (this == LocalPlayerState.aPlayer_1907) {
             class101.method894(this.x, this.anInt6382, this.y)
-            for (i_56_ in -1 + MultiFieldRecord.aMinimapPositionStateArray6897s!!.size downTo 0) {
-                val class302 = MultiFieldRecord.aMinimapPositionStateArray6897s!![i_56_]
+            for (i_56_ in -1 + MultiFieldRecordStatics.aMinimapPositionStateArray6897s!!.size downTo 0) {
+                val class302 = MultiFieldRecordStatics.aMinimapPositionStateArray6897s!![i_56_]
                 if (class302 != null && class302.anInt3834 != -1) {
                     if (class302.anInt3840 == 1) {
                         val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? NpcReference?)
@@ -363,7 +385,7 @@ class Player : ProjectedGroundDecor() {
                             val npc = (class348_sub22.aNpc_6859)!!
                             val i_57_ = (-(LocalPlayerState.aPlayer_1907!!.x) + npc.x)
                             val i_58_ = (-(LocalPlayerState.aPlayer_1907!!.y) + npc.y)
-                            if (ParticleSystemRenderer.aBoolean3870) method2454(6253, i_57_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aAbstractModelArray10323[0]), 92160000, class101, var_renderer, i_58_)
+                            if (ParticleSystemRendererStatics.aBoolean3870) method2454(6253, i_57_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aAbstractModelArray10323[0]), 92160000, class101, var_renderer, i_58_)
                             else method2453(i_57_, var_renderer, 92160000, (this.aAbstractModelArray10323[0]), 0, i_58_, class101, class302.anInt3834)
                         }
                     }
@@ -372,15 +394,15 @@ class Player : ProjectedGroundDecor() {
                         val i_60_ = (-(LocalPlayerState.aPlayer_1907!!.y) + 256 + class302.anInt3832)
                         var i_61_ = class302.anInt3837 shl 9
                         i_61_ *= i_61_
-                        if (ParticleSystemRenderer.aBoolean3870) method2454(6253, i_59_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aAbstractModelArray10323[0]), i_61_, class101, var_renderer, i_60_)
+                        if (ParticleSystemRendererStatics.aBoolean3870) method2454(6253, i_59_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aAbstractModelArray10323[0]), i_61_, class101, var_renderer, i_60_)
                         else method2453(i_59_, var_renderer, i_61_, (this.aAbstractModelArray10323[0]), 0, i_60_, class101, class302.anInt3834)
                     }
-                    if (class302.anInt3840 == 10 && class302.anInt3833 >= 0 && (class302.anInt3833 < (LoadingBarRenderer.aPlayerArray5058)!!.size)) {
-                        val player_62_ = (LoadingBarRenderer.aPlayerArray5058!![class302.anInt3833])
+                    if (class302.anInt3840 == 10 && class302.anInt3833 >= 0 && (class302.anInt3833 < (LoadingBarRendererStatics.aPlayerArray5058)!!.size)) {
+                        val player_62_ = (LoadingBarRendererStatics.aPlayerArray5058!![class302.anInt3833])
                         if (player_62_ != null) {
                             val i_63_ = (-(LocalPlayerState.aPlayer_1907!!.x) + (player_62_.x))
                             val i_64_ = (-(LocalPlayerState.aPlayer_1907!!.y) + (player_62_.y))
-                            if (ParticleSystemRenderer.aBoolean3870) method2454(6253, i_63_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aAbstractModelArray10323[0]), 92160000, class101, var_renderer, i_64_)
+                            if (ParticleSystemRendererStatics.aBoolean3870) method2454(6253, i_63_, LocalPlayerState.anInt1906, class302.anInt3834, (this.aAbstractModelArray10323[0]), 92160000, class101, var_renderer, i_64_)
                             else method2453(i_63_, var_renderer, 92160000, (this.aAbstractModelArray10323[0]), i xor 0x1, i_64_, class101, class302.anInt3834)
                         }
                     }
@@ -391,9 +413,9 @@ class Player : ProjectedGroundDecor() {
         }
         class101.method895(i_53_)
         class101.method891(this.x, (this.anInt6382 + (-5 + -(this.anInt10274))), this.y)
-        if (class318_sub4 == null) class318_sub4 = ChatMessageStream.method136((this.aAbstractModelArray10323).size, true, false)
+        if (class318_sub4 == null) class318_sub4 = ChatMessageStreamStatics.method136((this.aAbstractModelArray10323).size, true, false)
         this.method2432(var_renderer, -15074, class101, false, this.aAbstractModelArray10323)
-        if (ParticleSystemRenderer.aBoolean3870) {
+        if (ParticleSystemRendererStatics.aBoolean3870) {
             for (i_65_ in (this.aAbstractModelArray10323).indices) {
                 if (this.aAbstractModelArray10323[i_65_] != null) this.aAbstractModelArray10323[i_65_]!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![i_65_]), LocalPlayerState.anInt1906, (if (this != LocalPlayerState.aPlayer_1907) 0 else 1))
             }
@@ -404,7 +426,7 @@ class Player : ProjectedGroundDecor() {
         }
         if (this.aClass318_Sub10_10327 != null) {
             val class98 = this.aClass318_Sub10_10327!!.method2525()
-            if (ParticleSystemRenderer.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
+            if (ParticleSystemRendererStatics.aBoolean3870) var_renderer.method3685(class98, LocalPlayerState.anInt1906)
             else var_renderer.method3684(class98)
         }
         var i_67_ = 0
@@ -415,28 +437,28 @@ class Player : ProjectedGroundDecor() {
         this.aAbstractModelArray10323[2] = null
         this.aAbstractModelArray10323[i] = this.aAbstractModelArray10323[2]
         this.aAbstractModelArray10323[0] = this.aAbstractModelArray10323[i]
-        this.anInt10301 = TextureQualityOptionState.anInt6006
+        this.anInt10301 = TextureQualityOptionStateStatics.anInt6006
         return class318_sub4
     }
 
     fun method2456(bool: Boolean, i: Int): String {
         anInt10550++
         var string: String? = ""
-        if (GlEnvMappedWaterPass.aStringArray7378 != null) string += GlEnvMappedWaterPass.aStringArray7378!![aByte10552.toInt()]
+        if (GlEnvMappedWaterPassStatics.aStringArray7378 != null) string += GlEnvMappedWaterPassStatics.aStringArray7378!![aByte10552.toInt()]
         val `is`: IntArray?
-        if (aByte10538.toInt() != 1 || ParticleDetailOptionState.anIntArray6021 == null) `is` = TextureLoadException.anIntArray4603
-        else `is` = ParticleDetailOptionState.anIntArray6021
+        if (aByte10538.toInt() != 1 || ParticleDetailOptionStateStatics.anIntArray6021 == null) `is` = TextureLoadExceptionStatics.anIntArray4603
+        else `is` = ParticleDetailOptionStateStatics.anIntArray6021
         if (i != 255) anInt10567 = 81
         if (`is` != null && `is`[aByte10552.toInt()] != -1) {
-            val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, `is`[aByte10552.toInt()])
+            val class117 = RegionTileNodeStatics.aCacheArchiveIndexLoader_6653!!.method337(true, `is`[aByte10552.toInt()])
             if (class117.aChar1779.code != 115) {
-                LinkedListIterator.method1242("gdn1", Throwable(), 15004)
+                LinkedListIteratorStatics.method1242("gdn1", Throwable(), 15004)
                 `is`[aByte10552.toInt()] = -1
             } else string += class117.method1074(0xff and aByte10556.toInt(), i + -145)
         }
         if (!bool) string += this.aString10544
         else string += this.aString10537
-        if (FloorOverlayDefinition.aStringArray974 != null) string += FloorOverlayDefinition.aStringArray974!![aByte10552.toInt()]
+        if (FloorOverlayDefinitionStatics.aStringArray974 != null) string += FloorOverlayDefinitionStatics.aStringArray974!![aByte10552.toInt()]
         return string
     }
 
@@ -461,7 +483,7 @@ class Player : ProjectedGroundDecor() {
     public override fun method2436(i: Byte): Int {
         if (i <= 39) method2455(-97, -62, 0.toByte(), 103)
         anInt10546++
-        if (this.aCompositeNpcModelBuilder_10536 != null && this.aCompositeNpcModelBuilder_10536!!.anInt2093 != -1) return (MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(this.aCompositeNpcModelBuilder_10536!!.anInt2093, -1).anInt1399)
+        if (this.aCompositeNpcModelBuilder_10536 != null && this.aCompositeNpcModelBuilder_10536!!.anInt2093 != -1) return (MapAreaDefinitionStatics.aBufferedMessageQueue_2529!!.method2079(this.aCompositeNpcModelBuilder_10536!!.anInt2093, -1).anInt1399)
         return super.method2436(72.toByte())
     }
 
@@ -470,33 +492,33 @@ class Player : ProjectedGroundDecor() {
         anInt10525++
         val i_70_ = i
         val class225 = this.method2422(72.toByte())
-        val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10286, 7))
-        val class17_71_ = (if (this.anInt10268 != -1 && !this.aBoolean10521 && (!this.aBoolean10213 || class17 == null)) ParticleEmitterNode.aWidgetCache_191!!.method835(this.anInt10268, 7) else null)
+        val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else ParticleEmitterNodeStatics.aWidgetCache_191!!.method835(this.anInt10286, 7))
+        val class17_71_ = (if (this.anInt10268 != -1 && !this.aBoolean10521 && (!this.aBoolean10213 || class17 == null)) ParticleEmitterNodeStatics.aWidgetCache_191!!.method835(this.anInt10268, 7) else null)
         val i_72_ = class225.anInt2932
         val i_73_ = class225.anInt2941
         if (i_72_ != 0 || i_73_ != 0 || class225.anInt2950 != 0 || class225.anInt2926 != 0) i = i or 0x7
         val i_74_ = this.aCompassSmoother_10217.method2019((-106).toByte())
-        val bool = (this.aByte10279.toInt() != 0 && (this.anInt10248 <= GlGroundShaderPass.anInt7396) && (GlGroundShaderPass.anInt7396 < this.anInt10250))
+        val bool = (this.aByte10279.toInt() != 0 && (this.anInt10248 <= GlGroundShaderPassStatics.anInt7396) && (GlGroundShaderPassStatics.anInt7396 < this.anInt10250))
         if (bool) i = i or 0x80000
         val class64 =
-            (this.aCompositeNpcModelBuilder_10536!!.method1226(aVarpStore_10209, class17_71_, this.aLoadProgressCountersArray10308, true, ClientException.aModelHeaderCache_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, RadialTextureNode.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, MapAreaDefinition.aBufferedMessageQueue_2529, ParticleEmitterNode.aWidgetCache_191, this.anInt10245, this.anInt10267, this.anInt10203, OpenGlModel.aNpcDefinitionCache_5558).also { this.aAbstractModelArray10323[0] = it })
-        val i_75_ = MapArchiveSource.method2201(2121)
-        if (TextureDefinitionCache.anInt2964 < 96 && i_75_ > 50) CubemapTextureImplSource.method2271(31268)
+            (this.aCompositeNpcModelBuilder_10536!!.method1226(aVarpStore_10209, class17_71_, this.aLoadProgressCountersArray10308, true, ClientExceptionStatics.aModelHeaderCache_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, RadialTextureNodeStatics.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, MapAreaDefinitionStatics.aBufferedMessageQueue_2529, ParticleEmitterNodeStatics.aWidgetCache_191, this.anInt10245, this.anInt10267, this.anInt10203, OpenGlModelStatics.aNpcDefinitionCache_5558).also { this.aAbstractModelArray10323[0] = it })
+        val i_75_ = MapArchiveSourceStatics.method2201(2121)
+        if (TextureDefinitionCacheStatics.anInt2964 < 96 && i_75_ > 50) CubemapTextureImplSourceStatics.method2271(31268)
         val i_76_ = 3 % ((63 - i_69_) / 47)
-        if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165 && i_75_ < 50) {
+        if (OggCacheStreamStatics.aNamedIdRecord_5271 != NpcAnimationResolverStatics.aNamedIdRecord_165 && i_75_ < 50) {
             val i_77_: Int
             i_77_ = -i_75_ + 50
-            while (ScrollingWidgetComponentNode.anInt8388 < i_77_) {
-                CacheLruCache.aByteArrayArray3882!![ScrollingWidgetComponentNode.anInt8388] = ByteArray(102400)
-                ScrollingWidgetComponentNode.anInt8388++
+            while (ScrollingWidgetComponentNodeStatics.anInt8388 < i_77_) {
+                CacheLruCacheStatics.aByteArrayArray3882!![ScrollingWidgetComponentNodeStatics.anInt8388] = ByteArray(102400)
+                ScrollingWidgetComponentNodeStatics.anInt8388++
             }
-            while (ScrollingWidgetComponentNode.anInt8388 > i_77_) {
-                ScrollingWidgetComponentNode.anInt8388--
-                CacheLruCache.aByteArrayArray3882!![ScrollingWidgetComponentNode.anInt8388] = null
+            while (ScrollingWidgetComponentNodeStatics.anInt8388 > i_77_) {
+                ScrollingWidgetComponentNodeStatics.anInt8388--
+                CacheLruCacheStatics.aByteArrayArray3882!![ScrollingWidgetComponentNodeStatics.anInt8388] = null
             }
-        } else if (NpcAnimationResolver.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271) {
-            ScrollingWidgetComponentNode.anInt8388 = 0
-            CacheLruCache.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
+        } else if (NpcAnimationResolverStatics.aNamedIdRecord_165 != OggCacheStreamStatics.aNamedIdRecord_5271) {
+            ScrollingWidgetComponentNodeStatics.anInt8388 = 0
+            CacheLruCacheStatics.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
         }
         if (class64 == null) return false
         this.anInt10207 = class64.fa()
@@ -510,7 +532,7 @@ class Player : ProjectedGroundDecor() {
         } else this.method2424(i_74_, method2436(124.toByte()) shl 9, 0, method2436(58.toByte()) shl 9, 65.toByte(), 0)
         if (bool) class64.method624(this.aByte10255.toInt(), this.aByte10206.toInt(), this.aByte10270.toInt(), (this.aByte10279.toInt() and 0xff))
         if (!this.aBoolean10521 && this.anInt10269 != -1 && this.anInt10240 != -1) {
-            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(76.toByte(), this.anInt10269))
+            val class368 = (ConstantColourTextureNodeStatics.aMapElementDefinitionCache_9245!!.method2543(76.toByte(), this.anInt10269))
             val bool_78_ = (class368.aByte4488.toInt() == 3 && (i_72_ != 0 || i_73_ != 0))
             var i_79_ = i_70_
             if (!bool_78_) {
@@ -518,7 +540,7 @@ class Player : ProjectedGroundDecor() {
                 if (this.anInt10220 != 0) i_79_ = i_79_ or 0x2
                 if (this.anInt10278 >= 0) i_79_ = i_79_ or 0x7
             } else i_79_ = i_79_ or 0x7
-            val class64_80_ = (class368.method3562(this.anInt10240, var_renderer, this.anInt10243, i_79_, this.anInt10283, ParticleEmitterNode.aWidgetCache_191, 46.toByte()).also { this.aAbstractModelArray10323[1] = it })
+            val class64_80_ = (class368.method3562(this.anInt10240, var_renderer, this.anInt10243, i_79_, this.anInt10283, ParticleEmitterNodeStatics.aWidgetCache_191, 46.toByte()).also { this.aAbstractModelArray10323[1] = it })
             if (class64_80_ != null) {
                 if (this.anInt10278 >= 0 && class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939!![this.anInt10278]) != null)) {
                     var i_81_ = 0
@@ -539,8 +561,8 @@ class Player : ProjectedGroundDecor() {
                         if ((this.anIntArray10296 != null) && ((this.anIntArray10296!![this.anInt10278]) != -1)) i_84_ = (this.anIntArray10296!![(this.anInt10278)])
                         val i_85_ = (i_84_ + (this.anInt10237) * 2048 + -i_74_ and 0x3fff)
                         if (i_85_ != 0) class64_80_.a(i_85_)
-                        val i_86_ = TrigLookupTables.anIntArray1207!![i_85_]
-                        val i_87_ = TrigLookupTables.anIntArray1204!![i_85_]
+                        val i_86_ = TrigLookupTablesStatics.anIntArray1207!![i_85_]
+                        val i_87_ = TrigLookupTablesStatics.anIntArray1204!![i_85_]
                         val i_88_ = i_87_ * i_81_ + i_83_ * i_86_ shr 14
                         i_83_ = -(i_81_ * i_86_) + i_83_ * i_87_ shr 14
                         i_81_ = i_88_
@@ -557,7 +579,7 @@ class Player : ProjectedGroundDecor() {
         } else this.aAbstractModelArray10323[1] = null
         if (this.aBoolean10521 || this.anInt10291 == -1 || this.anInt10224 == -1) this.aAbstractModelArray10323[2] = null
         else {
-            val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(76.toByte(), this.anInt10291))
+            val class368 = (ConstantColourTextureNodeStatics.aMapElementDefinitionCache_9245!!.method2543(76.toByte(), this.anInt10291))
             val bool_89_ = (class368.aByte4488.toInt() == 3 && (i_72_ != 0 || i_73_ != 0))
             var i_90_ = i_70_
             if (bool_89_) i_90_ = i_90_ or 0x7
@@ -566,7 +588,7 @@ class Player : ProjectedGroundDecor() {
                 if (this.anInt10260 != 0) i_90_ = i_90_ or 0x2
                 if (this.anInt10289 >= 0) i_90_ = i_90_ or 0x7
             }
-            val class64_91_ = (class368.method3558(this.anInt10273, this.anInt10276, var_renderer, i_90_, 3172, ParticleEmitterNode.aWidgetCache_191, this.anInt10224).also { this.aAbstractModelArray10323[2] = it })
+            val class64_91_ = (class368.method3558(this.anInt10273, this.anInt10276, var_renderer, i_90_, 3172, ParticleEmitterNodeStatics.aWidgetCache_191, this.anInt10224).also { this.aAbstractModelArray10323[2] = it })
             if (class64_91_ != null) {
                 if (this.anInt10289 < 0 || class225.anIntArrayArray2939 == null || ((class225.anIntArrayArray2939!![this.anInt10289]) == null)) {
                     if (this.anInt10202 != 0) class64_91_.a(2048 * (this.anInt10202))
@@ -589,8 +611,8 @@ class Player : ProjectedGroundDecor() {
                         if ((this.anIntArray10296 != null) && ((this.anIntArray10296!![this.anInt10289]) != -1)) i_95_ = (this.anIntArray10296!![(this.anInt10289)])
                         val i_96_ = (0x3fff and -i_74_ + ((this.anInt10202) * 2048 + i_95_))
                         if (i_96_ != 0) class64_91_.a(i_96_)
-                        val i_97_ = TrigLookupTables.anIntArray1207!![i_96_]
-                        val i_98_ = TrigLookupTables.anIntArray1204!![i_96_]
+                        val i_97_ = TrigLookupTablesStatics.anIntArray1207!![i_96_]
+                        val i_98_ = TrigLookupTablesStatics.anIntArray1204!![i_96_]
                         val i_99_ = i_94_ * i_97_ + i_98_ * i_92_ shr 14
                         i_94_ = -(i_97_ * i_92_) + i_98_ * i_94_ shr 14
                         i_92_ = i_99_
@@ -626,104 +648,5 @@ class Player : ProjectedGroundDecor() {
         aByte10552 = 0.toByte()
         aByte10538 = 0.toByte()
         this.anInt10561 = -1
-    }
-
-    companion object {
-        @JvmField
-        var anInt10518: Int = 0
-        @JvmField
-        var anInt10523: Int = 0
-        @JvmField
-        var anInt10525: Int = 0
-        @JvmField
-        var anInt10527: Int = 0
-        @JvmField
-        var anInt10528: Int = 0
-        @JvmField
-        var anInt10529: Int = 0
-        @JvmField
-        var anInt10530: Int = 0
-        @JvmField
-        var anInt10532: Int = 0
-        @JvmField
-        var anInt10533: Int = 0
-        @JvmField
-        var anInt10534: Int = 0
-        @JvmField
-        var anInt10541: Int = 0
-        @JvmField
-        var anInt10543: Int = 0
-        @JvmField
-        var anInt10545: Int = 0
-        @JvmField
-        var anInt10546: Int = 0
-        @JvmField
-        var anInt10547: Int = 0
-        @JvmField
-        var anInt10548: Int = 0
-        @JvmField
-        var anInt10550: Int = 0
-        @JvmField
-        var anInt10555: Int = 0
-        @JvmField
-        var anInt10559: Int = 0
-        @JvmField
-        var anInt10562: Int = 0
-        @JvmField
-        var anInt10563: Int = 0
-        @JvmField
-        var aHashtable10565: Hashtable<Any?, Any?>? = Hashtable<Any?, Any?>()
-        @JvmField
-        var anIntArray10566: IntArray? = null
-        @JvmField
-        var anInt10567: Int = -1
-
-        @JvmStatic
-        fun method2458(bool: Boolean) {
-            anIntArray10566 = null
-            if (bool != true) method2458(false)
-            aHashtable10565 = null
-        }
-
-        @JvmStatic
-        fun method2460(f: Float, i: Int, f_100_: Float, i_101_: Int, i_102_: Int, f_103_: Float, textureGenerator: TextureGenerator?, i_104_: Int, i_105_: Byte, i_106_: Int, f_107_: Float, `is`: ByteArray?, i_108_: Int, f_109_: Float) {
-            var f = f
-            var f_100_ = f_100_
-            var f_107_ = f_107_
-            var f_109_ = f_109_
-            do {
-                try {
-                    anInt10559++
-                    val i_110_ = i_102_ * i_106_
-                    val fs = FloatArray(i_110_)
-                    var i_111_ = 0
-                    while (i_101_ > i_111_) {
-                        var i_112_ = i
-                        textureGenerator!!.method1398(i_108_, i_102_, f_100_ / i_106_.toFloat(), f_109_ / i_108_.toFloat(), 0, f * 127.0f, 1, f_107_ / i_102_.toFloat(), i_106_, i_104_, fs)
-                        f_107_ *= 2.0f
-                        f_100_ *= 2.0f
-                        var i_113_ = 0
-                        while (i_110_ > i_113_) {
-                            `is`!![i_112_] = (`is`[i_112_] + fs[i_113_]).toInt().toByte()
-                            i_112_++
-                            i_113_++
-                        }
-                        f_109_ *= 2.0f
-                        f *= f_103_
-                        i_111_++
-                    }
-                    var i_114_ = i
-                    for (i_115_ in 0..<i_110_) {
-                        `is`!![i_114_] = (127 + `is`[i_114_]).toByte()
-                        i_114_++
-                    }
-                    if (i_105_.toInt() == 30) break
-                    aHashtable10565 = null
-                } catch (runtimeexception: RuntimeException) {
-                    throw SoundBankPatch.method2929(runtimeexception, ("ke.LB(" + f + ',' + i + ',' + f_100_ + ',' + i_101_ + ',' + i_102_ + ',' + f_103_ + ',' + (if (textureGenerator != null) "{...}" else "null") + ',' + i_104_ + ',' + i_105_ + ',' + i_106_ + ',' + f_107_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_108_ + ',' + f_109_ + ')'))
-                }
-                break
-            } while (false)
-        }
     }
 }

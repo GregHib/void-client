@@ -1,8 +1,9 @@
-import GlslMaterialPass.Companion.method2155
-import CacheArchiveIndexLoader.Companion.method340
+import GlslMaterialPassStatics.method2155
+import CacheArchiveIndexLoaderStatics.method340
 import java.awt.Component
 import java.util.*
 import javax.sound.sampled.*
+import JavaSoundOutputStatics.aClass6180
 
 class JavaSoundOutput : SoundChannelMixer() {
     private var anInt6175 = 0
@@ -45,7 +46,7 @@ class JavaSoundOutput : SoundChannelMixer() {
                 }
             }
         }
-        anAudioFormat6179 = AudioFormat(HslColorConfig.anInt339.toFloat(), 16, if (NpcEntityUpdater.aBoolean3652) 2 else 1, true, false)
+        anAudioFormat6179 = AudioFormat(HslColorConfigStatics.anInt339.toFloat(), 16, if (NpcEntityUpdater.aBoolean3652) 2 else 1, true, false)
         aByteArray6176 = ByteArray(256 shl (if (!NpcEntityUpdater.aBoolean3652) 1 else 2))
     }
 
@@ -76,9 +77,5 @@ class JavaSoundOutput : SoundChannelMixer() {
             aByteArray6176[i_1_ * 2 + 1] = (i_2_ shr 16).toByte()
         }
         aSourceDataLine6177!!.write(aByteArray6176, 0, i shl 1)
-    }
-
-    companion object {
-        var aClass6180: Class<*>? = null
     }
 }

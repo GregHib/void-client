@@ -7,13 +7,4 @@ class MapSceneTileDefinition internal constructor(var anInt1783: Int, var anInt1
 
     var aByte1789: Byte = i_7_.toByte()
     var aShort1790: Short = i_4_.toShort()
-
-    companion object {
-        var anIntArray1786: IntArray? = null
-        @JvmStatic
-        fun method1075(i: Byte) {
-            anIntArray1786 = null
-            if (i.toInt() != 17) anIntArray1786 = null
-        }
-    }
 }

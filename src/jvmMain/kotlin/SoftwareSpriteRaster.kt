@@ -1,11 +1,17 @@
-import HslColorConfig.Companion.method295
-import GrayscaleNoiseTexture.Companion.method552
-import Renderer.Companion.method3692
-import jaggl.OpenGL.Companion.glLoadIdentity
-import jaggl.OpenGL.Companion.glMatrixMode
-import jaggl.OpenGL.Companion.glScalef
-import jaggl.OpenGL.Companion.glTranslatef
+import HslColorConfigStatics.method295
+import GrayscaleNoiseTextureStatics.method552
+import RendererStatics.method3692
+import jaggl.OpenGLStatics.glLoadIdentity
+import jaggl.OpenGLStatics.glMatrixMode
+import jaggl.OpenGLStatics.glScalef
+import jaggl.OpenGLStatics.glTranslatef
 import java.awt.Canvas
+import SoftwareSpriteRasterStatics.anInt1614
+import SoftwareSpriteRasterStatics.anInt1619
+import SoftwareSpriteRasterStatics.anInt1621
+import SoftwareSpriteRasterStatics.anInt1628
+import SoftwareSpriteRasterStatics.anInt1629
+import SoftwareSpriteRasterStatics.anInt1630
 
 class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: OpenGlTerrainTile?) {
     private val anInt1612: Int
@@ -60,7 +66,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
         }
         val i_12_ = 101 / ((-30 - i_1_) / 62)
         if (i_5_ > 0 && i_4_ > 0) {
-            MediaStreamClient.method1895(i_3_, this.aByteArray1617, i_4_, i_2_, i_6_, i_7_, var_r_Sub2.aByteArray10486, i_5_, 121.toByte())
+            MediaStreamClientStatics.method1895(i_3_, this.aByteArray1617, i_4_, i_2_, i_6_, i_7_, var_r_Sub2.aByteArray10486, i_5_, 121.toByte())
             method952(i_4_, i_5_, i, -1, i_0_)
         }
     }
@@ -289,74 +295,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
             anInt1618 = aS_Sub2_1622.anInt4587 shr anInt1613
             anInt1625 = aS_Sub2_1622.anInt4590 shr anInt1613
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("mha.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt1610: Int = 0
-        @JvmField
-        var anInt1611: Int = 0
-        @JvmField
-        var anInt1614: Int = 0
-        @JvmField
-        var anInt1615: Int = 0
-        @JvmField
-        var anInt1619: Int = 0
-        @JvmField
-        var aScreenAnchorAlignment_1620: ScreenAnchorAlignment? = ScreenAnchorAlignment()
-        @JvmField
-        var anInt1621: Int = 0
-        var anIntArray1626: IntArray? = IntArray(1)
-        @JvmField
-        var aJs5Archive_1627: Js5Archive? = null
-        @JvmField
-        var anInt1628: Int = 0
-        @JvmField
-        var anInt1629: Int = 0
-        @JvmField
-        var anInt1630: Int = 0
-
-        @JvmStatic
-        fun method953(i: Byte) {
-            anIntArray1626 = null
-            aJs5Archive_1627 = null
-            aScreenAnchorAlignment_1620 = null
-            if (i.toInt() != 9) aScreenAnchorAlignment_1620 = null
-        }
-
-        fun method955(i: Int, i_34_: Int): Boolean {
-            if (i != 22311) aScreenAnchorAlignment_1620 = null
-            anInt1615++
-            return i_34_ >= 4 && i_34_ <= 8
-        }
-
-        @JvmStatic
-        fun method958(bool: Boolean, i: Int, var_renderConfig: RenderConfig?, i_61_: Int, canvas: Canvas?, js5Archive: Js5Archive?): Renderer? {
-            try {
-                if (bool != true) aScreenAnchorAlignment_1620 = null
-                anInt1610++
-                var i_62_ = 0
-                var i_63_ = 0
-                if (canvas != null) {
-                    val dimension = canvas.size
-                    i_63_ = dimension.height
-                    i_62_ = dimension.width
-                }
-                return method3692(i_61_, i_63_, i_62_, js5Archive, 0, var_renderConfig, canvas, i)
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("mha.E(" + bool + ',' + i + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + i_61_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ')'))
-            }
-        }
-
-        @JvmStatic
-        fun method960(i: Int) {
-            NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2877(-128)
-            anInt1611++
-            GlBufferObject.aClass348_Sub16_Sub3_4743 = null
-            SpriteDefinition.anInt7068 = i
-            ModelDefinition.aJs5Archive_1848 = null
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("mha.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (var_s_Sub2 != null) "{...}" else "null") + ')'))
         }
     }
 }

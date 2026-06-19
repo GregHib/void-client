@@ -1,8 +1,15 @@
-import jaggl.OpenGL.Companion.glDisable
-import jaggl.OpenGL.Companion.glEnable
-import jaggl.OpenGL.Companion.glTexGenfv
-import jaggl.OpenGL.Companion.glTexGeni
+import jaggl.OpenGLStatics.glDisable
+import jaggl.OpenGLStatics.glEnable
+import jaggl.OpenGLStatics.glTexGenfv
+import jaggl.OpenGLStatics.glTexGeni
 import kotlin.math.min
+import TexGenMaterialPassStatics.anInt6248
+import TexGenMaterialPassStatics.anInt6249
+import TexGenMaterialPassStatics.anInt6250
+import TexGenMaterialPassStatics.anInt6252
+import TexGenMaterialPassStatics.anInt6253
+import TexGenMaterialPassStatics.anInt6257
+import TexGenMaterialPassStatics.anInt6261
 
 class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterTextureSet: WaterTextureSet?) : MaterialPass(var_ha_Sub2) {
     private val aGlDisplayListFont_6254: GlDisplayListFont
@@ -15,29 +22,29 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, water
         val bool = (i and 0x80) != 0
         this.aHa_Sub2_3684.method3738(-15039, 1)
         if (bool) {
-            MapLabelMenuEntry.aFloatArray5791!![1] = 0.0f
-            MapLabelMenuEntry.aFloatArray5791!![0] = f_8_
-            MapLabelMenuEntry.aFloatArray5791!![3] = 0.0f
-            MapLabelMenuEntry.aFloatArray5791!![2] = 0.0f
+            MapLabelMenuEntryStatics.aFloatArray5791!![1] = 0.0f
+            MapLabelMenuEntryStatics.aFloatArray5791!![0] = f_8_
+            MapLabelMenuEntryStatics.aFloatArray5791!![3] = 0.0f
+            MapLabelMenuEntryStatics.aFloatArray5791!![2] = 0.0f
         } else {
-            MapLabelMenuEntry.aFloatArray5791!![1] = 0.0f
-            MapLabelMenuEntry.aFloatArray5791!![0] = 0.0f
-            MapLabelMenuEntry.aFloatArray5791!![2] = f_8_
-            MapLabelMenuEntry.aFloatArray5791!![3] = 0.0f
+            MapLabelMenuEntryStatics.aFloatArray5791!![1] = 0.0f
+            MapLabelMenuEntryStatics.aFloatArray5791!![0] = 0.0f
+            MapLabelMenuEntryStatics.aFloatArray5791!![2] = f_8_
+            MapLabelMenuEntryStatics.aFloatArray5791!![3] = 0.0f
         }
-        glTexGenfv(8192, 9474, MapLabelMenuEntry.aFloatArray5791, 0)
-        MapLabelMenuEntry.aFloatArray5791!![0] = 0.0f
-        MapLabelMenuEntry.aFloatArray5791!![1] = f_8_
-        MapLabelMenuEntry.aFloatArray5791!![3] = (f * this.aHa_Sub2_3684.anInt7735.toFloat() % 1.0f)
+        glTexGenfv(8192, 9474, MapLabelMenuEntryStatics.aFloatArray5791, 0)
+        MapLabelMenuEntryStatics.aFloatArray5791!![0] = 0.0f
+        MapLabelMenuEntryStatics.aFloatArray5791!![1] = f_8_
+        MapLabelMenuEntryStatics.aFloatArray5791!![3] = (f * this.aHa_Sub2_3684.anInt7735.toFloat() % 1.0f)
         if (i_6_ >= -42) method2136(-27, -15, (-43).toByte())
-        MapLabelMenuEntry.aFloatArray5791!![2] = 0.0f
-        glTexGenfv(8193, 9474, MapLabelMenuEntry.aFloatArray5791, 0)
+        MapLabelMenuEntryStatics.aFloatArray5791!![2] = 0.0f
+        glTexGenfv(8193, 9474, MapLabelMenuEntryStatics.aFloatArray5791, 0)
         if (aWaterTextureSet_6259!!.aBoolean1442) {
-            MapLabelMenuEntry.aFloatArray5791!![0] = 0.0f
-            MapLabelMenuEntry.aFloatArray5791!![3] = (this.aHa_Sub2_3684.anInt7735).toFloat() * f_7_ % 1.0f
-            MapLabelMenuEntry.aFloatArray5791!![2] = 0.0f
-            MapLabelMenuEntry.aFloatArray5791!![1] = 0.0f
-            glTexGenfv(8194, 9473, MapLabelMenuEntry.aFloatArray5791, 0)
+            MapLabelMenuEntryStatics.aFloatArray5791!![0] = 0.0f
+            MapLabelMenuEntryStatics.aFloatArray5791!![3] = (this.aHa_Sub2_3684.anInt7735).toFloat() * f_7_ % 1.0f
+            MapLabelMenuEntryStatics.aFloatArray5791!![2] = 0.0f
+            MapLabelMenuEntryStatics.aFloatArray5791!![1] = 0.0f
+            glTexGenfv(8194, 9473, MapLabelMenuEntryStatics.aFloatArray5791, 0)
         } else {
             val i_9_ = (16.0f * (this.aHa_Sub2_3684.anInt7735.toFloat() * f_7_)).toInt()
             this.aHa_Sub2_3684.method3771((-81).toByte(), aWaterTextureSet_6259.aClass258_Sub3Array1448!![i_9_ % 16])
@@ -85,7 +92,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, water
             this.aHa_Sub2_3684.method3738(-15039, 0)
             aGlDisplayListFont_6254.method591(-1)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("gn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("gn.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -109,108 +116,5 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, water
         if (i >= -5) anInt6248 = 124
         anInt6253++
         return true
-    }
-
-    companion object {
-        @JvmField
-        var aRenderConfig6247: RenderConfig? = null
-        @JvmField
-        var anInt6248: Int = -1
-        @JvmField
-        var anInt6249: Int = 0
-        @JvmField
-        var anInt6250: Int = 0
-        @JvmField
-        var anInt6251: Int = 0
-        @JvmField
-        var anInt6252: Int = 0
-        @JvmField
-        var anInt6253: Int = 0
-        @JvmField
-        var anInt6255: Int = 0
-        @JvmField
-        var anInt6256: Int = 0
-        @JvmField
-        var anInt6257: Int = 0
-        @JvmField
-        var anInt6258: Int = 0
-        var anIntArray6260: IntArray? = IntArray(1)
-        @JvmField
-        var anInt6261: Int = 0
-
-        @JvmStatic
-        fun method2158(i: Byte) {
-            anInt6256++
-            var i_0_ = 0
-            if (IntHashSet.aClass348_Sub51_3959 != null) i_0_ = IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1818(-32350)
-            if (i.toInt() == 56) {
-                if (i_0_ == 2) {
-                    val i_1_ = (min(SocketFactory.anInt3473, 800))
-                    LocTypeDefinition.anInt4017 = i_1_
-                    ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 + -i_1_) / 2
-                    val i_2_ = (min(NpcReference.anInt6857, 600))
-                    HardCacheEntryReference.anInt10432 = i_2_
-                    TimingCounters.anInt4167 = 0
-                } else if (i_0_ == 1) {
-                    val i_3_ = min(SocketFactory.anInt3473, 1024)
-                    ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 + -i_3_) / 2
-                    val i_4_ = (min(NpcReference.anInt6857, 768))
-                    LocTypeDefinition.anInt4017 = i_3_
-                    TimingCounters.anInt4167 = 0
-                    HardCacheEntryReference.anInt10432 = i_4_
-                } else {
-                    TimingCounters.anInt4167 = 0
-                    HardCacheEntryReference.anInt10432 = NpcReference.anInt6857
-                    ModelResourceBundle.anInt7129 = 0
-                    LocTypeDefinition.anInt4017 = SocketFactory.anInt3473
-                }
-            }
-        }
-
-        @JvmStatic
-        fun method2159(i: Byte, js5Archive: Js5Archive) {
-            NpcReference.anInt6862 = js5Archive.method417("hitmarks", 0)
-            anInt6258++
-            DualMaterialContainer.anInt1639 = js5Archive.method417("hitbar_default", 0)
-            MouseInputTracker.anInt7429 = js5Archive.method417("timerbar_default", 0)
-            Renderer.anInt4562 = js5Archive.method417("headicons_pk", 0)
-            ConfigArchiveLoader.anInt1435 = js5Archive.method417("headicons_prayer", 0)
-            OverlayColorTable.anInt1756 = js5Archive.method417("hint_headicons", 0)
-            CutsceneSequenceData.anInt3739 = js5Archive.method417("hint_mapmarkers", 0)
-            DrawListState.anInt1481 = js5Archive.method417("mapflag", 0)
-            RangedGraphicsOptionState.anInt5948 = js5Archive.method417("cross", 0)
-            CameraNodeList.anInt1742 = js5Archive.method417("mapdots", 0)
-            NamedIdRecord.anInt4469 = js5Archive.method417("scrollbar", 0)
-            ClampTextureNode.anInt9473 = js5Archive.method417("name_icons", 0)
-            LocTypeDefLoader.anInt2510 = js5Archive.method417("floorshadows", 0)
-            RsaVarbitHandler.anInt4895 = js5Archive.method417("compass", 0)
-            if (i > -72) method2161(106.toByte(), 125L)
-            PerlinTextureProvider.anInt5814 = js5Archive.method417("otherlevel", 0)
-            SpriteComponent.anInt8370 = js5Archive.method417("hint_mapedge", 0)
-        }
-
-        @JvmStatic
-        fun method2160(i: Int) {
-            if (i == 0) {
-                aRenderConfig6247 = null
-                anIntArray6260 = null
-            }
-        }
-
-        @JvmStatic
-        fun method2161(i: Byte, l: Long) {
-            try {
-                anInt6251++
-                if (l > 0L) {
-                    if (l % 10L == 0L) {
-                        FileIoUtil.method2606(-125, -1L + l)
-                        FileIoUtil.method2606(-125, 1L)
-                    } else FileIoUtil.method2606(59, l)
-                    val i_13_ = 70 % ((i - -52) / 32)
-                }
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "gn.D(" + i + ',' + l + ')')
-            }
-        }
     }
 }

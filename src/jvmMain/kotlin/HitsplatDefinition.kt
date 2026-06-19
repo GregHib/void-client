@@ -1,3 +1,7 @@
+import HitsplatDefinitionStatics.method1194
+import HitsplatDefinitionStatics.anInt2014
+import HitsplatDefinitionStatics.anInt2018
+
 /* Class146 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -27,30 +31,6 @@ class HitsplatDefinition {
             this.anInt2019 = class348_sub49.readUnsignedShort(842397944)
             this.anInt2016 = class348_sub49.readUnsignedByte(255)
             this.anInt2020 = class348_sub49.readUnsignedByte(i_1_.toInt() xor 0xee)
-        }
-    }
-
-    companion object {
-        var anInt2012: Int = 0
-        @JvmField
-        var aLongArray2013: LongArray? = LongArray(10)
-        var anInt2014: Int = 0
-        @JvmField
-        var aJs5Archive_2015: Js5Archive? = null
-        var anInt2017: Int = 0
-        var anInt2018: Int = 0
-        @JvmStatic
-        fun method1193(i: Int, i_2_: Int, bool: Boolean): Boolean {
-            if (!bool) return true
-            anInt2017++
-            return (i_2_ and 0x800) != 0
-        }
-
-        @JvmStatic
-        fun method1194(i: Int) {
-            if (i != 10) method1193(91, -68, true)
-            aLongArray2013 = null
-            aJs5Archive_2015 = null
         }
     }
 }

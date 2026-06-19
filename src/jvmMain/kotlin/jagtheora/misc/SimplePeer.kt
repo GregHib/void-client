@@ -27,12 +27,4 @@ abstract class SimplePeer {
     private fun setPeer(arg0: Long) {
         this.peer = arg0
     }
-
-    companion object {
-        init {
-            init()
-        }
-
-        protected external fun init()
-    }
 }

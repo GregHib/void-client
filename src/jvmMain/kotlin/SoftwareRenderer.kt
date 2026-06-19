@@ -834,7 +834,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     override fun method3643(canvas: Canvas?, i: Int, i_232_: Int) {
         var class348_sub31 = (aHashtable_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
         if (class348_sub31 == null) {
-            class348_sub31 = AbstractMenuEntry.method1035(9029, i_232_, canvas, i)
+            class348_sub31 = AbstractMenuEntryStatics.method1035(9029, i_232_, canvas, i)
             aHashtable_7467!!.method3483(21.toByte(), canvas.hashCode().toLong(), class348_sub31)
         } else if (class348_sub31.anInt6917 != i || class348_sub31.anInt6920 != i_232_) method3669(canvas, i, i_232_)
     }
@@ -1294,7 +1294,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
 
     override fun method3652() {
         if (aBoolean7471) {
-            CubeMapMaterialPass.method2173(false, -101, true)
+            CubeMapMaterialPassStatics.method2173(false, -101, true)
             aBoolean7471 = false
         }
         this.aClass348_Sub31_7469 = null
@@ -1863,8 +1863,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3650(i: Int) {
-        SoftwareModel.anInt5350 = i
-        SoftwareModel.anInt5346 = SoftwareModel.anInt5350
+        SoftwareModelStatics.anInt5350 = i
+        SoftwareModelStatics.anInt5346 = SoftwareModelStatics.anInt5350
         check(this.anInt7485 <= 1) { "No MT" }
         method3631(this.anInt7485)
         method3659(0)
@@ -2072,7 +2072,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         var class348_sub31 = (aHashtable_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
         if (class348_sub31 != null) {
             class348_sub31.method2715(95.toByte())
-            class348_sub31 = AbstractMenuEntry.method1035(9029, i_578_, canvas, i)!!
+            class348_sub31 = AbstractMenuEntryStatics.method1035(9029, i_578_, canvas, i)!!
             aHashtable_7467!!.method3483(112.toByte(), canvas.hashCode().toLong(), class348_sub31)
             if (aCanvas7468 === canvas && aSpriteRenderable_7475 == null) {
                 val dimension = canvas!!.getSize()
@@ -2140,7 +2140,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             this.aClass101_Sub1_7492 = MatrixCameraTransform()
             method3631(1)
             method3659(0)
-            CachedRgbNoiseTexture.method566(true, true, (-126).toByte())
+            CachedRgbNoiseTextureStatics.method566(true, true, (-126).toByte())
             aBoolean7471 = true
             anInt7466 = GameClock.method599(-70).toInt()
         } catch (throwable: Throwable) {

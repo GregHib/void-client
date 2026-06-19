@@ -1,5 +1,18 @@
-import NamedTimedNode.Companion.method2516
-import NpcType.Companion.method797
+import NamedTimedNodeStatics.method2516
+import NpcTypeStatics.method797
+import CipheredPacketBufferStatics.method3405
+import CipheredPacketBufferStatics.anInt9752
+import CipheredPacketBufferStatics.anInt9753
+import CipheredPacketBufferStatics.anInt9755
+import CipheredPacketBufferStatics.anIntArray9757
+import CipheredPacketBufferStatics.anInt9758
+import CipheredPacketBufferStatics.anInt9760
+import CipheredPacketBufferStatics.anInt9762
+import CipheredPacketBufferStatics.anInt9763
+import CipheredPacketBufferStatics.anInt9766
+import CipheredPacketBufferStatics.anInt9767
+import CipheredPacketBufferStatics.aShortArray9768
+import CipheredPacketBufferStatics.anInt9769
 
 /* Class348_Sub49_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -49,12 +62,12 @@ class CipheredPacketBuffer internal constructor(i: Int) : ByteBuffer(i) {
         anInt9754 += i_9_
         var i_12_ = 0
         while ( /**/i_11_ < i_9_) {
-            i_12_ += (this.aByteArray7154!![i_10_++].toInt() and IntPair.anIntArray6972!![i_11_]) shl i_9_ - i_11_
+            i_12_ += (this.aByteArray7154!![i_10_++].toInt() and IntPairStatics.anIntArray6972!![i_11_]) shl i_9_ - i_11_
             i_9_ -= i_11_
             i_11_ = 8
         }
-        if (i_11_ != i_9_) i_12_ += (this.aByteArray7154!![i_10_].toInt() shr i_11_ - i_9_) and IntPair.anIntArray6972!![i_9_]
-        else i_12_ += (IntPair.anIntArray6972!![i_11_] and this.aByteArray7154!![i_10_].toInt())
+        if (i_11_ != i_9_) i_12_ += (this.aByteArray7154!![i_10_].toInt() shr i_11_ - i_9_) and IntPairStatics.anIntArray6972!![i_9_]
+        else i_12_ += (IntPairStatics.anIntArray6972!![i_11_] and this.aByteArray7154!![i_10_].toInt())
         return i_12_
     }
 
@@ -80,70 +93,5 @@ class CipheredPacketBuffer internal constructor(i: Int) : ByteBuffer(i) {
         val i_24_ = -126 / ((-15 - i) / 49)
         anInt9767++
         anInt9754 = 8 * this.anInt7197
-    }
-
-    companion object {
-        var anInt9752: Int = 0
-        var anInt9753: Int = 0
-        var anInt9755: Int = 0
-        var anIntArray9757: IntArray? = null
-        var anInt9758: Int = 0
-        @JvmField
-        var anInt9759: Int = 0
-        var anInt9760: Int = 0
-        var anInt9761: Int = 0
-        var anInt9762: Int = 0
-        var anInt9763: Int = 0
-        var anInt9764: Int = 0
-        var anInt9765: Int = 0
-        var anInt9766: Int = 0
-        var anInt9767: Int = 0
-        var aShortArray9768: ShortArray? = shortArrayOf(11, 17, 45, 23, 48, 8, 57, 58)
-        var anInt9769: Int = 0
-
-        fun method3405(i: Int, bool: Boolean): Int {
-            anInt9765++
-            if (AbstractTileShape.anIntArray6547 == null) return 0
-            if (!bool && LoadingScreenState.aRenderableEntryArray2636 != null) return AbstractTileShape.anIntArray6547!!.size * 2
-            var i_1_ = 0
-            if (i != 2012104999) method3405(118, false)
-            var i_2_ = 0
-            while (AbstractTileShape.anIntArray6547!!.size > i_2_) {
-                val i_3_ = AbstractTileShape.anIntArray6547!![i_2_]
-                if (GlShaderObjectHandle.aJs5Archive_518!!.method421(false, i_3_)) i_1_++
-                if (TerrainTile.aJs5Archive_4585!!.method421(false, i_3_)) i_1_++
-                i_2_++
-            }
-            return i_1_
-        }
-
-        fun method3411(i: Int, i_13_: Int, i_14_: Int) {
-            anInt9761++
-            val class348_sub42_sub15 = method2516(i, 105.toByte(), i_13_) //12
-            class348_sub42_sub15.method3246(-25490)
-            class348_sub42_sub15.anInt9652 = i_14_
-        }
-
-        fun method3413(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean, i_19_: Int, f: Float, bool_20_: Boolean): Array<IntArray?> {
-            anInt9764++
-            val `is` = Array<IntArray?>(i_18_) { IntArray(i_16_) }
-            val class348_sub40_sub8 = PerlinNoiseTextureNode()
-            class348_sub40_sub8.anInt9149 = (f * 4096.0f).toInt()
-            class348_sub40_sub8.anInt9150 = i_15_
-            class348_sub40_sub8.anInt9158 = i_17_
-            class348_sub40_sub8.anInt9164 = i
-            class348_sub40_sub8.aBoolean9160 = bool_20_
-            class348_sub40_sub8.method3044(109)
-            method797(i_18_, i_16_, 120.toByte())
-            if (bool != true) anIntArray9757 = null
-            for (i_21_ in 0..<i_18_) class348_sub40_sub8.method3069(i_21_, `is`[i_21_]!!, 99.toByte())
-            return `is`
-        }
-
-        @JvmStatic
-        fun method3414(i: Int) {
-            aShortArray9768 = null
-            if (i == 21515) anIntArray9757 = null
-        }
     }
 }

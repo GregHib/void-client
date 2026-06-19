@@ -1,6 +1,14 @@
-import CircleRasterizer.Companion.method2253
-import jaclib.memory.Stream.Companion.c
+import CircleRasterizerStatics.method2253
+import jaclib.memory.StreamStatics.c
 import kotlin.math.min
+import GroundDecorRendererStatics.anInt3625
+import GroundDecorRendererStatics.anInt3628
+import GroundDecorRendererStatics.anInt3629
+import GroundDecorRendererStatics.anInt3633
+import GroundDecorRendererStatics.anInt3634
+import GroundDecorRendererStatics.anInt3639
+import GroundDecorRendererStatics.anInt3640
+import GroundDecorRendererStatics.aIntRange_3641
 
 /*
  * Class280
@@ -18,7 +26,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
     private var aClass318_Sub9_Sub2ArrayArray3642: Array<Array<PositionedSceneNode?>?>?
     private fun method2098(var_ha_Sub3: NativeRenderer, i: Int, i_0_: Int) {
         anInt3629++
-        GrayscaleNoiseTexture.aFloat5299 = var_ha_Sub3.aFloat8093
+        GrayscaleNoiseTextureStatics.aFloat5299 = var_ha_Sub3.aFloat8093
         val i_1_ = 75 % ((2 - i) / 34)
         var_ha_Sub3.method3867(i_0_.toFloat(), -86)
         var_ha_Sub3.method3857(92.toByte())
@@ -32,7 +40,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
         var_ha_Sub3.method3946(i + -26358, true)
         var_ha_Sub3.method3865(true, 54)
         if (i != 26326) anIntArray3631 = null
-        if (GrayscaleNoiseTexture.aFloat5299 != var_ha_Sub3.aFloat8093) var_ha_Sub3.xa(GrayscaleNoiseTexture.aFloat5299)
+        if (GrayscaleNoiseTextureStatics.aFloat5299 != var_ha_Sub3.aFloat8093) var_ha_Sub3.xa(GrayscaleNoiseTextureStatics.aFloat5299)
     }
 
     fun method2100(i: Byte, var_ha_Sub3: NativeRenderer?) {
@@ -68,7 +76,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
                     var i_12_ = -i_8_ + i_9_
                     val i_13_: Int
                     if (2 + i_12_ > 1600) {
-                        i_13_ = (method2253(i_12_, i_3_ + 119) + 1 + -HostPingThread.anInt2265)
+                        i_13_ = (method2253(i_12_, i_3_ + 119) + 1 + -HostPingThreadStatics.anInt2265)
                         i_12_ = 2 + (i_12_ shr i_13_)
                     } else {
                         i_13_ = 0
@@ -115,7 +123,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
                             class318_sub9_14_ = (class318_sub9_14_.aClass318_Sub9_6469)
                         }
                         var_ha_Sub3.method3814(false, false, if (i_15_ >= 0) i_15_ else -1, 117.toByte())
-                        if (bool && (GrayscaleNoiseTexture.aFloat5299 != var_ha_Sub3.aFloat8093)) var_ha_Sub3.xa(GrayscaleNoiseTexture.aFloat5299)
+                        if (bool && (GrayscaleNoiseTextureStatics.aFloat5299 != var_ha_Sub3.aFloat8093)) var_ha_Sub3.xa(GrayscaleNoiseTextureStatics.aFloat5299)
                         else if (var_ha_Sub3.aFloat8093 != 1.0f) var_ha_Sub3.xa(1.0f)
                         method2102(false, var_ha_Sub3, i_12_)
                     }
@@ -125,7 +133,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
                 method2099(i_3_ xor 0x66d6, var_ha_Sub3)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ve.G(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (nodeDequeHolder != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ve.G(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (nodeDequeHolder != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ')'))
         }
     }
 
@@ -347,7 +355,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
     private fun method2103(i: Byte, var_ha_Sub3: NativeRenderer) {
         if (i.toInt() != -33) aClass318_Sub9_Sub2ArrayArray3642 = null
         anInt3639++
-        GrayscaleNoiseTexture.aFloat5299 = var_ha_Sub3.aFloat8093
+        GrayscaleNoiseTextureStatics.aFloat5299 = var_ha_Sub3.aFloat8093
         var_ha_Sub3.method3825(8)
         var_ha_Sub3.method3865(false, i + 89)
         var_ha_Sub3.method3946(-32, false)
@@ -365,7 +373,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
         anIntArray3631 = IntArray(8191)
         aClass318_Sub9_Sub2ArrayArray3642 = Array<Array<PositionedSceneNode?>?>(64) { arrayOfNulls<PositionedSceneNode>(768) }
         anIntArray3636 = IntArray(1600)
-        aModelBatchBase_3637 = (var_ha_Sub3.method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4076, SpriteMaskShape.aSpriteMaskShape_4078)), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4075!!)))))
+        aModelBatchBase_3637 = (var_ha_Sub3.method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShapeStatics.aSpriteMaskShape_4073, SpriteMaskShapeStatics.aSpriteMaskShape_4076, SpriteMaskShapeStatics.aSpriteMaskShape_4078)), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4075!!)))))
         anInterface5_Impl1_3638 = var_ha_Sub3.method3889(true, 16711680)
         anInterface5_Impl1_3630 = var_ha_Sub3.method3889(false, 16711680)
         anInterface5_Impl1_3630.method20(393168, 124.toByte(), 12)
@@ -434,25 +442,6 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
             }
             stream.a()
             anInterface5_Impl1_3630.method18(6331)
-        }
-    }
-
-    companion object {
-        var anInt3625: Int = 0
-        var anInt3628: Int = 0
-        var anInt3629: Int = 0
-        var anInt3633: Int = 0
-        var anInt3634: Int = 0
-        var anInt3639: Int = 0
-        var anInt3640: Int = 0
-        var aIntRange_3641: IntRange? = IntRange(79, 3)
-        @JvmField
-        var anInt3643: Int = 0
-
-        @JvmStatic
-        fun method2104(i: Int) {
-            aIntRange_3641 = null
-            if (i < 66) method2104(127)
         }
     }
 }

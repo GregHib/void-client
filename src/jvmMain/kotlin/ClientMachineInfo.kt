@@ -1,5 +1,8 @@
 import jaclib.hardware_info.HardwareInfo.cPUInfo
 import java.util.*
+import ClientMachineInfoStatics.anInt6600
+import ClientMachineInfoStatics.anInt6611
+import ClientMachineInfoStatics.anInt6615
 
 class ClientMachineInfo : LinkedListNode {
     private var anInt6591 = 0
@@ -36,11 +39,11 @@ class ClientMachineInfo : LinkedListNode {
     fun method2746(i: Byte): Int {
         anInt6600++
         var i_0_ = 23
-        i_0_ += ParticleEmitterDef.method2186((-114).toByte(), aString6604!!)
-        i_0_ += ParticleEmitterDef.method2186((-114).toByte(), aString6614!!)
-        i_0_ += ParticleEmitterDef.method2186((-114).toByte(), aString6610!!)
+        i_0_ += ParticleEmitterDefStatics.method2186((-114).toByte(), aString6604!!)
+        i_0_ += ParticleEmitterDefStatics.method2186((-114).toByte(), aString6614!!)
+        i_0_ += ParticleEmitterDefStatics.method2186((-114).toByte(), aString6610!!)
         val i_1_ = 42 % ((44 - i) / 49)
-        i_0_ += ParticleEmitterDef.method2186((-114).toByte(), aString6597!!)
+        i_0_ += ParticleEmitterDefStatics.method2186((-114).toByte(), aString6597!!)
         return i_0_
     }
 
@@ -76,40 +79,40 @@ class ClientMachineInfo : LinkedListNode {
 
     internal constructor(bool: Boolean, privilegedOperationWorker: PrivilegedOperationWorker) {
         if (bool) {
-            if (PrivilegedOperationWorker.aString3803.startsWith("win")) anInt6613 = 1
-            else if (PrivilegedOperationWorker.aString3803.startsWith("mac")) anInt6613 = 2
-            else if (PrivilegedOperationWorker.aString3803.startsWith("linux")) anInt6613 = 3
+            if (PrivilegedOperationWorkerStatics.aString3803.startsWith("win")) anInt6613 = 1
+            else if (PrivilegedOperationWorkerStatics.aString3803.startsWith("mac")) anInt6613 = 2
+            else if (PrivilegedOperationWorkerStatics.aString3803.startsWith("linux")) anInt6613 = 3
             else anInt6613 = 4
-            aBoolean6608 = PrivilegedOperationWorker.aString3780!!.startsWith("amd64") || PrivilegedOperationWorker.aString3780!!.startsWith("x86_64")
+            aBoolean6608 = PrivilegedOperationWorkerStatics.aString3780!!.startsWith("amd64") || PrivilegedOperationWorkerStatics.aString3780!!.startsWith("x86_64")
             if (anInt6613 != 1) {
                 if (anInt6613 == 2) {
-                    if (PrivilegedOperationWorker.aString3778!!.indexOf("10.4") == -1) {
-                        if (PrivilegedOperationWorker.aString3778!!.indexOf("10.5") == -1) {
-                            if (PrivilegedOperationWorker.aString3778!!.indexOf("10.6") != -1) anInt6595 = 22
+                    if (PrivilegedOperationWorkerStatics.aString3778!!.indexOf("10.4") == -1) {
+                        if (PrivilegedOperationWorkerStatics.aString3778!!.indexOf("10.5") == -1) {
+                            if (PrivilegedOperationWorkerStatics.aString3778!!.indexOf("10.6") != -1) anInt6595 = 22
                         } else anInt6595 = 21
                     } else anInt6595 = 20
                 }
-            } else if (PrivilegedOperationWorker.aString3778!!.indexOf("4.0") != -1) anInt6595 = 1
-            else if (PrivilegedOperationWorker.aString3778!!.indexOf("4.1") == -1) {
-                if (PrivilegedOperationWorker.aString3778!!.indexOf("4.9") == -1) {
-                    if (PrivilegedOperationWorker.aString3778!!.indexOf("5.0") != -1) anInt6595 = 4
-                    else if (PrivilegedOperationWorker.aString3778!!.indexOf("5.1") == -1) {
-                        if (PrivilegedOperationWorker.aString3778!!.indexOf("6.0") != -1) anInt6595 = 6
-                        else if (PrivilegedOperationWorker.aString3778!!.indexOf("6.1") != -1) anInt6595 = 7
+            } else if (PrivilegedOperationWorkerStatics.aString3778!!.indexOf("4.0") != -1) anInt6595 = 1
+            else if (PrivilegedOperationWorkerStatics.aString3778!!.indexOf("4.1") == -1) {
+                if (PrivilegedOperationWorkerStatics.aString3778!!.indexOf("4.9") == -1) {
+                    if (PrivilegedOperationWorkerStatics.aString3778!!.indexOf("5.0") != -1) anInt6595 = 4
+                    else if (PrivilegedOperationWorkerStatics.aString3778!!.indexOf("5.1") == -1) {
+                        if (PrivilegedOperationWorkerStatics.aString3778!!.indexOf("6.0") != -1) anInt6595 = 6
+                        else if (PrivilegedOperationWorkerStatics.aString3778!!.indexOf("6.1") != -1) anInt6595 = 7
                     } else anInt6595 = 5
                 } else anInt6595 = 3
             } else anInt6595 = 2
-            if (PrivilegedOperationWorker.aString3782!!.lowercase(Locale.getDefault()).indexOf("sun") != -1) anInt6594 = 1
-            else if (PrivilegedOperationWorker.aString3782!!.lowercase(Locale.getDefault()).indexOf("microsoft") == -1) {
-                if (PrivilegedOperationWorker.aString3782!!.lowercase(Locale.getDefault()).indexOf("apple") != -1) anInt6594 = 3
+            if (PrivilegedOperationWorkerStatics.aString3782!!.lowercase(Locale.getDefault()).indexOf("sun") != -1) anInt6594 = 1
+            else if (PrivilegedOperationWorkerStatics.aString3782!!.lowercase(Locale.getDefault()).indexOf("microsoft") == -1) {
+                if (PrivilegedOperationWorkerStatics.aString3782!!.lowercase(Locale.getDefault()).indexOf("apple") != -1) anInt6594 = 3
                 else anInt6594 = 4
             } else anInt6594 = 2
-            val oldJava = PrivilegedOperationWorker.aString3796!!.startsWith("1.")
+            val oldJava = PrivilegedOperationWorkerStatics.aString3796!!.startsWith("1.")
             var i = if (oldJava) 2 else 0
             var i_3_ = 0
             try {
-                while (PrivilegedOperationWorker.aString3796!!.length > i) {
-                    val i_4_ = PrivilegedOperationWorker.aString3796!!.get(i).code
+                while (PrivilegedOperationWorkerStatics.aString3796!!.length > i) {
+                    val i_4_ = PrivilegedOperationWorkerStatics.aString3796!!.get(i).code
                     if (i_4_ < 48 || i_4_ > 57) break
                     i++
                     i_3_ = i_3_ * 10 - -i_4_ + -48
@@ -118,11 +121,11 @@ class ClientMachineInfo : LinkedListNode {
                 /* empty */
             }
             anInt6616 = i_3_
-            i = PrivilegedOperationWorker.aString3796!!.indexOf('.', 2) - -1
+            i = PrivilegedOperationWorkerStatics.aString3796!!.indexOf('.', 2) - -1
             i_3_ = 0
             try {
-                while ( /**/(i < PrivilegedOperationWorker.aString3796!!.length)) {
-                    val i_5_ = PrivilegedOperationWorker.aString3796!!.get(i).code
+                while ( /**/(i < PrivilegedOperationWorkerStatics.aString3796!!.length)) {
+                    val i_5_ = PrivilegedOperationWorkerStatics.aString3796!!.get(i).code
                     if (i_5_ < 48 || i_5_ > 57) break
                     i_3_ = i_3_ * 10 + i_5_ + -48
                     i++
@@ -132,10 +135,10 @@ class ClientMachineInfo : LinkedListNode {
             }
             anInt6605 = i_3_
             i_3_ = 0
-            i = 1 + PrivilegedOperationWorker.aString3796!!.indexOf(if (oldJava) '_' else '.', 4)
+            i = 1 + PrivilegedOperationWorkerStatics.aString3796!!.indexOf(if (oldJava) '_' else '.', 4)
             try {
-                while ( /**/PrivilegedOperationWorker.aString3796!!.length > i) {
-                    val i_6_ = PrivilegedOperationWorker.aString3796!!.get(i).code
+                while ( /**/PrivilegedOperationWorkerStatics.aString3796!!.length > i) {
+                    val i_6_ = PrivilegedOperationWorkerStatics.aString3796!!.get(i).code
                     if (i_6_ < 48 || i_6_ > 57) break
                     i_3_ = i_6_ + -48 + i_3_ * 10
                     i++
@@ -145,9 +148,9 @@ class ClientMachineInfo : LinkedListNode {
             }
             aBoolean6607 = !privilegedOperationWorker.aBoolean3777
             anInt6612 = i_3_
-            anInt6592 = TextureDefinitionCache.anInt2964
+            anInt6592 = TextureDefinitionCacheStatics.anInt2964
             if (anInt6616 <= 3) anInt6599 = 0
-            else anInt6599 = TextureMapImageNode.anInt9372
+            else anInt6599 = TextureMapImageNodeStatics.anInt9372
             try {
                 val `is` = cPUInfo
                 if (`is` != null && `is`.size == 7) {
@@ -166,33 +169,5 @@ class ClientMachineInfo : LinkedListNode {
         if (aString6597 == null) aString6597 = ""
         if (aString6614 == null) aString6614 = ""
         method2745(10)
-    }
-
-    companion object {
-        @JvmField
-        var anInt6593: Int = 0
-        @JvmField
-        var anInt6600: Int = 0
-        @JvmField
-        var aMediaStreamClient_6601: MediaStreamClient? = null
-        @JvmField
-        var aObjectByteSerializerHolder_6602: ObjectByteSerializerHolder? = ObjectByteSerializerHolder()
-        @JvmField
-        var anInt6611: Int = 0
-        @JvmField
-        var anInt6615: Int = 0
-        @JvmStatic
-        fun method2748(i: Int) {
-            val i_2_ = 80 / ((52 - i) / 57)
-            aObjectByteSerializerHolder_6602 = null
-            aMediaStreamClient_6601 = null
-        }
-
-        @JvmStatic
-        fun method2749(i: Int): Int {
-            if (i != -1) method2749(20)
-            anInt6593++
-            return NativeShaderProgram.anInt9774
-        }
     }
 }

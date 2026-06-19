@@ -16,8 +16,8 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
 
     fun method2520() {
         this.aClass318_Sub7_10419.aClass318_Sub10_6439!!.aClass318_Sub9_Sub2_Sub1Array6475[aShort10416.toInt()] = null
-        DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103!![Client.anInt5171] = this
-        Client.anInt5171 = Client.anInt5171 + 1 and 0x3ff
+        DisplayModeOptionStateStatics.aClass318_Sub9_Sub2_Sub1Array6103!![ClientStatics.anInt5171] = this
+        ClientStatics.anInt5171 = ClientStatics.anInt5171 + 1 and 0x3ff
         this.method2373(false)
         this.method2514(-108)
     }
@@ -35,17 +35,17 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
         val i = this.anInt8791 shr 12 + Tooltip.anInt4459
         val i_0_ = this.anInt8789 shr 12 + Tooltip.anInt4459
         val i_1_ = this.anInt8796 shr 12
-        if (i_1_ > 0 || i_1_ < -262144 || i < 0 || i >= SpotAnimEntity.Companion.anInt6451 || i_0_ < 0 || i_0_ >= RegionSceneShifter.anInt7054) method2520()
+        if (i_1_ > 0 || i_1_ < -262144 || i < 0 || i >= SpotAnimEntityStatics.anInt6451 || i_0_ < 0 || i_0_ >= RegionSceneShifterStatics.anInt7054) method2520()
         else {
             val class318_sub10 = (this.aClass318_Sub7_10419.aClass318_Sub10_6439)!!
             val class181 = (this.aClass318_Sub7_10419.aSpotAnimDefinition_6441)!!
-            val var_ses = NativeSprite.aTerrainTileArray5191
+            val var_ses = NativeSpriteStatics.aTerrainTileArray5191
             var i_2_ = class318_sub10.anInt6483
-            var class357 = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![class318_sub10.anInt6483]!![i]!![i_0_])
+            var class357 = (HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![class318_sub10.anInt6483]!![i]!![i_0_])
             if (class357 != null) i_2_ = class357.aByte4399.toInt()
             val i_3_ = var_ses!![i_2_]!!.method3982((-86).toByte(), i_0_, i)
             val i_4_: Int
-            if (i_2_ < MapAreaDefinition.anInt2524 - 1) i_4_ = var_ses[i_2_ + 1]!!.method3982((-86).toByte(), i_0_, i)
+            if (i_2_ < MapAreaDefinitionStatics.anInt2524 - 1) i_4_ = var_ses[i_2_ + 1]!!.method3982((-86).toByte(), i_0_, i)
             else i_4_ = i_3_ - (8 shl Tooltip.anInt4459)
             if (class181.aBoolean2397) {
                 if (class181.anInt2384 == -1 && i_1_ > i_3_) {
@@ -66,28 +66,28 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
                 }
             }
             var i_5_: Int
-            i_5_ = MapAreaDefinition.anInt2524 - 1
+            i_5_ = MapAreaDefinitionStatics.anInt2524 - 1
             while ((i_5_ > 0 && i_1_ > var_ses[i_5_]!!.method3982((-86).toByte(), i_0_, i))) {
                 i_5_--
             }
             if (class181.aBoolean2376 && i_5_ == 0 && i_1_ > var_ses[0]!!.method3982((-86).toByte(), i_0_, i)) method2520()
-            else if (i_5_ == MapAreaDefinition.anInt2524 - 1 && (var_ses[i_5_]!!.method3982((-86).toByte(), i_0_, i) - i_1_ > 8 shl Tooltip.anInt4459)) method2520()
+            else if (i_5_ == MapAreaDefinitionStatics.anInt2524 - 1 && (var_ses[i_5_]!!.method3982((-86).toByte(), i_0_, i) - i_1_ > 8 shl Tooltip.anInt4459)) method2520()
             else {
-                class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_5_]!![i]!![i_0_]
+                class357 = HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![i_5_]!![i]!![i_0_]
                 if (class357 == null) {
-                    if (i_5_ == 0 || (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_] == null)) {
-                        HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_] = SceneCollisionEntry(0)
-                        class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_]
+                    if (i_5_ == 0 || (HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_] == null)) {
+                        HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_] = SceneCollisionEntry(0)
+                        class357 = HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_]
                     }
-                    val bool = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_]!!.aSceneCollisionEntry_4400 != null)
+                    val bool = (HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![0]!![i]!![i_0_]!!.aSceneCollisionEntry_4400 != null)
                     if (i_5_ == 3 && bool) {
                         method2520()
                         return
                     }
                     for (i_6_ in 1..i_5_) {
-                        if ((HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_6_]!![i]!![i_0_]) == null) {
-                            HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_6_]!![i]!![i_0_] = SceneCollisionEntry(i_6_)
-                            class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_6_]!![i]!![i_0_]
+                        if ((HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![i_6_]!![i]!![i_0_]) == null) {
+                            HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![i_6_]!![i]!![i_0_] = SceneCollisionEntry(i_6_)
+                            class357 = HintArrowOrMessageStatics.aSceneCollisionEntryArrayArrayArray2029!![i_6_]!![i]!![i_0_]
                             if (bool) class357!!.aByte4399++
                         }
                     }
@@ -270,19 +270,19 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
             }
             if (class181.anIntArray2380 != null) {
                 for (i_52_ in class181.anIntArray2380.indices) {
-                    var class348_sub42_sub20 = ((GlGroundShaderPass.aLongHashTable_7415!!.method334(class181.anIntArray2380[i_52_].toLong(), 121.toByte())) as SpriteRenderEntry?)
+                    var class348_sub42_sub20 = ((GlGroundShaderPassStatics.aLongHashTable_7415!!.method334(class181.anIntArray2380[i_52_].toLong(), 121.toByte())) as SpriteRenderEntry?)
                     while (class348_sub42_sub20 != null) {
                         val class174 = (class348_sub42_sub20.aSpotAnimVector_9704)!!
                         val d_53_ = (i_20_ - class348_sub42_sub20.anInt9712).toDouble()
                         val d_54_ = (i_21_ - class348_sub42_sub20.anInt9706).toDouble()
                         val d_55_ = (i_22_ - class348_sub42_sub20.anInt9710).toDouble()
                         val d_56_ = d_53_ * d_53_ + d_54_ * d_54_ + d_55_ * d_55_
-                        if (d_56_ > class174.aLong2301.toDouble()) class348_sub42_sub20 = GlGroundShaderPass.aLongHashTable_7415!!.method336(true) as SpriteRenderEntry?
+                        if (d_56_ > class174.aLong2301.toDouble()) class348_sub42_sub20 = GlGroundShaderPassStatics.aLongHashTable_7415!!.method336(true) as SpriteRenderEntry?
                         else {
                             var d_57_ = sqrt(d_56_)
                             if (d_57_ == 0.0) d_57_ = 1.0
                             val d_58_ = ((d_53_ * (class348_sub42_sub20.anInt9705).toDouble() + d_54_ * (class174.anInt2290).toDouble() + d_55_ * (class348_sub42_sub20.anInt9707).toDouble()) * 65535.0 / (class174.anInt2299.toDouble() * d_57_))
-                            if (d_58_ < class174.anInt2298.toDouble()) class348_sub42_sub20 = (GlGroundShaderPass.aLongHashTable_7415!!.method336(true) as SpriteRenderEntry?)
+                            if (d_58_ < class174.anInt2298.toDouble()) class348_sub42_sub20 = (GlGroundShaderPassStatics.aLongHashTable_7415!!.method336(true) as SpriteRenderEntry?)
                             else {
                                 var d_59_ = 0.0
                                 if (class174.anInt2289 == 1) d_59_ = (d_57_ / 16.0 * (class174.anInt2304).toDouble())
@@ -313,7 +313,7 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
                                         this.anInt8789 = (this.anInt8789 + d_62_ * i.toDouble()).toInt()
                                     }
                                 }
-                                class348_sub42_sub20 = (GlGroundShaderPass.aLongHashTable_7415!!.method336(true) as SpriteRenderEntry?)
+                                class348_sub42_sub20 = (GlGroundShaderPassStatics.aLongHashTable_7415!!.method336(true) as SpriteRenderEntry?)
                             }
                         }
                     }
@@ -324,11 +324,11 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
                     class181.anIntArray2385 = IntArray(class181.anIntArray2395.size)
                     for (i_63_ in class181.anIntArray2395.indices) {
                         method1943(false, (class181.anIntArray2395[i_63_]))
-                        class181.anIntArray2385!![i_63_] = (CompositeRgbNoiseTexture.aHashtable_8679!!.method3480(class181.anIntArray2395[i_63_].toLong(), -6008) as IntKeyNode).anInt6976
+                        class181.anIntArray2385!![i_63_] = (CompositeRgbNoiseTextureStatics.aHashtable_8679!!.method3480(class181.anIntArray2395[i_63_].toLong(), -6008) as IntKeyNode).anInt6976
                     }
                 }
                 for (i_64_ in class181.anIntArray2385!!.indices) {
-                    val class174 = (WorldListEntry.aSpotAnimVectorArray311s!![class181.anIntArray2385!![i_64_]])
+                    val class174 = (WorldListEntryStatics.aSpotAnimVectorArray311s!![class181.anIntArray2385!![i_64_]])
                     if (class174!!.anInt2297 == 0) {
                         d += (class174.anInt2291 * i).toDouble()
                         d_27_ += (class174.anInt2290 * i).toDouble()

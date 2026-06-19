@@ -4,6 +4,8 @@ import java.io.InputStreamReader
 import java.net.*
 import java.nio.charset.StandardCharsets
 import java.util.*
+import ProxySocketFactoryStatics.aClass6173
+import ProxySocketFactoryStatics.aClass6174
 
 class ProxySocketFactory : SocketFactory() {
     private val aProxySelector6172: ProxySelector = ProxySelector.getDefault()
@@ -122,10 +124,5 @@ class ProxySocketFactory : SocketFactory() {
             return socket
         }
         return null
-    }
-
-    companion object {
-        var aClass6173: Class<*>? = null
-        var aClass6174: Class<*>? = null
     }
 }

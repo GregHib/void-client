@@ -1,5 +1,17 @@
-import ModelBatchBase.Companion.method1130
-import HostPingThread.Companion.method1301
+import ModelBatchBaseStatics.method1130
+import HostPingThreadStatics.method1301
+import SceneObjectAnimatorStatics.anInt3050
+import SceneObjectAnimatorStatics.anInt3058
+import SceneObjectAnimatorStatics.anInt3061
+import SceneObjectAnimatorStatics.anInt3070
+import SceneObjectAnimatorStatics.aBufferedRandomAccessFile_3075
+import SceneObjectAnimatorStatics.anInt3076
+import SceneObjectAnimatorStatics.anInt3077
+import SceneObjectAnimatorStatics.anInt3078
+import SceneObjectAnimatorStatics.anInt3080
+import SceneObjectAnimatorStatics.anInt3082
+import SceneObjectAnimatorStatics.anInt3086
+import SceneObjectAnimatorStatics.anInt3087
 
 /* Class235 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -56,9 +68,9 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         var i_1_ = i_0_
         var bool = false
         if (i_1_ == -1) {
-            var npcConfig: NpcConfig? = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(i.toInt() xor 0x45, this.anInt3063)
+            var npcConfig: NpcConfig? = GradientLookupEffectStatics.aSeqDefinitionCache_9195!!.method2005(i.toInt() xor 0x45, this.anInt3063)
             var class51_2_ = npcConfig
-            if (npcConfig!!.anIntArray945 != null) npcConfig = npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
+            if (npcConfig!!.anIntArray945 != null) npcConfig = npcConfig.method480((ProjectedGroundDecorStatics.aVarpStore_10209!!), 47.toByte())
             if (npcConfig == null) return
             if (class51_2_ == npcConfig) class51_2_ = null
             if (npcConfig.anIntArray943 == null) {
@@ -86,7 +98,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             aAbstractModel_3059 = null
             if (aWidgetDefinition_3057 != null && i_1_ == aWidgetDefinition_3057!!.anInt269) {
                 if (aWidgetDefinition_3057!!.anInt248 == 0) return
-            } else aWidgetDefinition_3057 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_1_, i + -62)
+            } else aWidgetDefinition_3057 = ParticleEmitterNodeStatics.aWidgetCache_191!!.method835(i_1_, i + -62)
             if (aWidgetDefinition_3057!!.anIntArray237 == null) aWidgetDefinition_3057 = null
             else {
                 if (bool) {
@@ -98,7 +110,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
                 }
                 anInt3083 = anInt3084 - -1
                 if (anInt3083 < 0 || anInt3083 >= aWidgetDefinition_3057!!.anIntArray237.size) anInt3083 = -1
-                anInt3074 = -anInt3054 + GlGroundShaderPass.anInt7396
+                anInt3074 = -anInt3054 + GlGroundShaderPassStatics.anInt7396
             }
         }
     }
@@ -113,8 +125,8 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         var bool_3_ = bool_3_
         var i_4_ = i_4_
         anInt3082++
-        var npcConfig: NpcConfig? = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
-        if (npcConfig!!.anIntArray945 != null) npcConfig = npcConfig.method480(ProjectedGroundDecor.aVarpStore_10209!!, 47.toByte())
+        var npcConfig: NpcConfig? = GradientLookupEffectStatics.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
+        if (npcConfig!!.anIntArray945 != null) npcConfig = npcConfig.method480(ProjectedGroundDecorStatics.aVarpStore_10209!!, 47.toByte())
         if (npcConfig == null) {
             method1674(-1, var_renderer)
             anInt3073 = -1
@@ -128,8 +140,8 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         }
         method1672(aClass318_Sub1_3051, true)
         if (bool_3_) {
-            bool_3_ = bool_3_ and (aBoolean3065 and (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0))
-            bool_3_ = (bool_3_ and (npcConfig.anInt941 != anInt3056 || (aWidgetDefinition_3057 != null && IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aWidgetDefinition_3057!!.aBoolean254 || ItemNameResolver.aBoolean5002) && (anInt3083 != anInt3084))))))
+            bool_3_ = bool_3_ and (aBoolean3065 and (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0))
+            bool_3_ = (bool_3_ and (npcConfig.anInt941 != anInt3056 || (aWidgetDefinition_3057 != null && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aWidgetDefinition_3057!!.aBoolean254 || ItemNameResolverStatics.aBoolean5002) && (anInt3083 != anInt3084))))))
         }
         if (bool && !bool_3_) {
             anInt3053 = npcConfig.anInt941
@@ -141,10 +153,10 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             anInt3073 = -1
         }
         if (i > -126) return null
-        val var_s = NativeSprite.aTerrainTileArray5191!![aByte3067.toInt()]
+        val var_s = NativeSpriteStatics.aTerrainTileArray5191!![aByte3067.toInt()]
         val var_terrainTile_5_: TerrainTile?
-        if (!aBoolean3069) var_terrainTile_5_ = if (aByte3067 >= 3) null else NativeSprite.aTerrainTileArray5191!![1 + aByte3067]
-        else var_terrainTile_5_ = TerrainTileShape.aTerrainTileArray8801!![0]
+        if (!aBoolean3069) var_terrainTile_5_ = if (aByte3067 >= 3) null else NativeSpriteStatics.aTerrainTileArray5191!![1 + aByte3067]
+        else var_terrainTile_5_ = TerrainTileShapeStatics.aTerrainTileArray8801!![0]
         var abstractModel: AbstractModel? = null
         if (aWidgetDefinition_3057 == null) {
             if (aAbstractModel_3059 == null || i_4_ != (i_4_ and aAbstractModel_3059!!.ua()) || (anInt3053 != npcConfig.anInt941)) {
@@ -203,17 +215,17 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
                 val class129s = abstractModel!!.method619()
                 val class342s = abstractModel.method604()
                 if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081!!.aBoolean6470) && (class129s != null || class342s != null)) {
-                    var npcConfig: NpcConfig? = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
-                    if (npcConfig!!.anIntArray945 != null) npcConfig = npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
-                    if (npcConfig != null) this.aClass318_Sub10_3081 = SceneGraphContainer.method2526(GlGroundShaderPass.anInt7396, true)
+                    var npcConfig: NpcConfig? = GradientLookupEffectStatics.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
+                    if (npcConfig!!.anIntArray945 != null) npcConfig = npcConfig.method480((ProjectedGroundDecorStatics.aVarpStore_10209!!), 47.toByte())
+                    if (npcConfig != null) this.aClass318_Sub10_3081 = SceneGraphContainerStatics.method2526(GlGroundShaderPassStatics.anInt7396, true)
                 }
                 if (this.aClass318_Sub10_3081 == null) break
                 abstractModel.method620(abstractCameraTransform)
-                if (bool) this.aClass318_Sub10_3081!!.method2536(var_renderer, GlGroundShaderPass.anInt7396.toLong(), class129s, class342s, false)
-                else this.aClass318_Sub10_3081!!.method2540(GlGroundShaderPass.anInt7396.toLong())
+                if (bool) this.aClass318_Sub10_3081!!.method2536(var_renderer, GlGroundShaderPassStatics.anInt7396.toLong(), class129s, class342s, false)
+                else this.aClass318_Sub10_3081!!.method2540(GlGroundShaderPassStatics.anInt7396.toLong())
                 this.aClass318_Sub10_3081!!.method2533(aByte3085.toInt(), i_8_, i, i_10_, i_7_)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("bv.E(" + i + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'))
             }
             break
         } while (false)
@@ -241,7 +253,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
                 method1666(69.toByte(), -1)
                 if (aWidgetDefinition_3057 == null) return
             }
-            i = -anInt3074 + GlGroundShaderPass.anInt7396
+            i = -anInt3074 + GlGroundShaderPassStatics.anInt7396
             if (i > 100 && aWidgetDefinition_3057!!.anInt238 > 0) {
                 val i_12_: Int
                 i_12_ = (-aWidgetDefinition_3057!!.anInt238 + aWidgetDefinition_3057!!.anIntArray237.size)
@@ -266,7 +278,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             }
             while (true) {
                 if (aWidgetDefinition_3057!!.anIntArray267!![anInt3084] >= i) break@while_76_
-                TypedRecordTable.method2178(class318_sub1, anInt3084, aWidgetDefinition_3057, -99)
+                TypedRecordTableStatics.method2178(class318_sub1, anInt3084, aWidgetDefinition_3057, -99)
                 i -= aWidgetDefinition_3057!!.anIntArray267!![anInt3084]
                 anInt3084++
                 if (aWidgetDefinition_3057!!.anIntArray237.size <= anInt3084) {
@@ -284,7 +296,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             }
         }
         anInt3054 = i
-        anInt3074 = -i + GlGroundShaderPass.anInt7396
+        anInt3074 = -i + GlGroundShaderPassStatics.anInt7396
     }
 
     init {
@@ -303,7 +315,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             if (i_18_ != -1) aBoolean3064 = true
             method1666(69.toByte(), i_18_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bv.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bv.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ')'))
         }
     }
 
@@ -315,38 +327,5 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             aBooleanArray3072 = null
         }
         anInt3050++
-    }
-
-    companion object {
-        var anInt3050: Int = 0
-        var anInt3058: Int = 0
-        var anInt3061: Int = 0
-        @JvmField
-        var anInt3062: Int = 0
-        var anInt3066: Int = 0
-        var anIntArray3068: IntArray? = null
-        var anInt3070: Int = 0
-        @JvmField
-        var aBufferedRandomAccessFile_3075: BufferedRandomAccessFile? = null
-        var anInt3076: Int = 0
-        var anInt3077: Int = 0
-        var anInt3078: Int = 0
-        var anInt3080: Int = 0
-        var anInt3082: Int = 0
-        var anInt3086: Int = 0
-        var anInt3087: Int = 0
-
-        fun method1669(i: Int, i_6_: Int): String {
-            if (i != -19918) method1669(75, 33)
-            anInt3066++
-            return ((0xff and (i_6_ shr 24)).toString() + "." + ((i_6_ and 0xffb428) shr 16) + "." + (i_6_ shr 8 and 0xff) + "." + (i_6_ and 0xff))
-        }
-
-        @JvmStatic
-        fun method1673(i: Int) {
-            aBufferedRandomAccessFile_3075 = null
-            anIntArray3068 = null
-            if (i >= -19) method1669(-110, -13)
-        }
     }
 }

@@ -1,3 +1,7 @@
+import DirectionalStripeTextureNodeStatics.anIntArray9096
+import DirectionalStripeTextureNodeStatics.anInt9097
+import DirectionalStripeTextureNodeStatics.anInt9100
+
 /* Class348_Sub40_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -30,9 +34,9 @@ class DirectionalStripeTextureNode : AbstractProceduralTextureNode(0, true) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             var i_3_ = 0
-            while ( /**/i_3_ < DisplaceTextureNode.Companion.anInt9139) {
-                val i_4_ = SceneEffectMarker.anIntArray6432!![i_3_]
-                val i_5_ = LightDetailOptionState.anIntArray6035!![i]
+            while ( /**/i_3_ < DisplaceTextureNodeStatics.anInt9139) {
+                val i_4_ = SceneEffectMarkerStatics.anIntArray6432!![i_3_]
+                val i_5_ = LightDetailOptionStateStatics.anIntArray6035!![i]
                 var i_6_ = anInt9099 * i_4_ shr 12
                 val i_7_ = anInt9095 * i_5_ shr 12
                 val i_8_ = i_4_ % (4096 / anInt9099) * anInt9099
@@ -76,20 +80,5 @@ class DirectionalStripeTextureNode : AbstractProceduralTextureNode(0, true) {
         }
         if (i_2_ != 255) anIntArray9096 = null
         return `is`
-    }
-
-    companion object {
-        @JvmField
-        var anIntArray9096: IntArray? = IntArray(2)
-        @JvmField
-        var anInt9097: Int = 0
-        @JvmField
-        var anInt9100: Int = 0
-        var anInt9101: Int = -1
-
-        @JvmStatic
-        fun method3053(i: Int) {
-            if (i == 4) anIntArray9096 = null
-        }
     }
 }

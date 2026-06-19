@@ -1,6 +1,15 @@
 import java.io.EOFException
 import java.io.File
 import java.io.IOException
+import BufferedRandomAccessFileStatics.anInt1304
+import BufferedRandomAccessFileStatics.anInt1306
+import BufferedRandomAccessFileStatics.anInt1307
+import BufferedRandomAccessFileStatics.anInt1308
+import BufferedRandomAccessFileStatics.anInt1309
+import BufferedRandomAccessFileStatics.anInt1310
+import BufferedRandomAccessFileStatics.anInt1313
+import BufferedRandomAccessFileStatics.anInt1316
+import BufferedRandomAccessFileStatics.anInt1318
 
 /*
  * Class78
@@ -175,7 +184,7 @@ class BufferedRandomAccessFile internal constructor(private val aRandomAccessFil
             val i_16_ = -67 / ((i - -49) / 34)
             aLong1324 = l
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "l.A(" + l + ',' + i + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "l.A(" + l + ',' + i + ')')
         }
     }
 
@@ -240,33 +249,5 @@ class BufferedRandomAccessFile internal constructor(private val aRandomAccessFil
         aByteArray1305 = ByteArray(i_22_)
         aByteArray1311 = ByteArray(i)
         aLong1324 = 0L
-    }
-
-    companion object {
-        @JvmField
-        var anInt1304: Int = 0
-        @JvmField
-        var anInt1306: Int = 0
-        @JvmField
-        var anInt1307: Int = 0
-        @JvmField
-        var anInt1308: Int = 0
-        @JvmField
-        var anInt1309: Int = 0
-        @JvmField
-        var anInt1310: Int = 0
-        @JvmField
-        var anInt1313: Int = 0
-        @JvmField
-        var anInt1316: Int = 0
-        @JvmField
-        var anInt1318: Int = 0
-        @JvmField
-        var aJs5Archive_1322: Js5Archive? = null
-        @JvmStatic
-        fun method786(i: Byte) {
-            if (i.toInt() != 0) aJs5Archive_1322 = null
-            aJs5Archive_1322 = null
-        }
     }
 }

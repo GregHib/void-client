@@ -1,9 +1,23 @@
-import SpriteSheetCache.Companion.method1428
-import IndexedSprite.Companion.method163
+import SpriteSheetCacheStatics.method1428
+import IndexedSpriteStatics.method163
 import java.awt.Color
 import java.awt.Font
 import java.awt.FontMetrics
 import java.awt.Image
+import LoadingBarRendererStatics.method2217
+import LoadingBarRendererStatics.anInt5025
+import LoadingBarRendererStatics.anInt5028
+import LoadingBarRendererStatics.anInt5031
+import LoadingBarRendererStatics.anInt5033
+import LoadingBarRendererStatics.anInt5038
+import LoadingBarRendererStatics.anInt5039
+import LoadingBarRendererStatics.anInt5043
+import LoadingBarRendererStatics.anInt5044
+import LoadingBarRendererStatics.anInt5048
+import LoadingBarRendererStatics.anInt5049
+import LoadingBarRendererStatics.anInt5052
+import LoadingBarRendererStatics.anInt5055
+import LoadingBarRendererStatics.anInt5061
 
 /*
  * Class294
@@ -74,7 +88,7 @@ class LoadingBarRenderer : CursorController {
             val field = var_class!!.getDeclaredField(string)
             return field.getInt(`object`)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wba.K(" + (if (`object` != null) "{...}" else "null") + ',' + (if (var_class != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wba.K(" + (if (`object` != null) "{...}" else "null") + ',' + (if (var_class != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -88,7 +102,7 @@ class LoadingBarRenderer : CursorController {
             field.set(JagGlToolkitFactory.anApplet1530, null)
             return `object`
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wba.C(" + (if (var_class != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wba.C(" + (if (var_class != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -104,7 +118,7 @@ class LoadingBarRenderer : CursorController {
             anInt5061++
             return true
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wba.I(" + i + ',' + l + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "wba.I(" + i + ',' + l + ')')
         }
     }
 
@@ -117,7 +131,7 @@ class LoadingBarRenderer : CursorController {
     private fun method2215(i: Byte, i_2_: Int): Int {
         anInt5033++
         if (i < 23) anImage5030 = null
-        if (aBoolean5020) return (-i_2_ + LocTypeDefinition.anInt4017) / 2
+        if (aBoolean5020) return (-i_2_ + LocTypeDefinitionStatics.anInt4017) / 2
         return 0
     }
 
@@ -140,7 +154,7 @@ class LoadingBarRenderer : CursorController {
             val field = var_class!!.getDeclaredField(string)
             return field.getBoolean(`object`)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wba.H(" + (if (`object` != null) "{...}" else "null") + ',' + bool + ',' + (if (var_class != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wba.H(" + (if (`object` != null) "{...}" else "null") + ',' + bool + ',' + (if (var_class != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -159,14 +173,14 @@ class LoadingBarRenderer : CursorController {
         }
         if (aBoolean5022) method2219(33)
         else {
-            val graphics = ParticleSystemRenderer.aCanvas3869!!.getGraphics()
+            val graphics = ParticleSystemRendererStatics.aCanvas3869!!.getGraphics()
             if (graphics != null) {
                 try {
-                    val i_5_ = NpcConfig.aResourceLoaderThread_897!!.method2320(103.toByte())
-                    val string = NpcConfig.aResourceLoaderThread_897!!.method2318(-9324)
-                    if (WidgetRedrawRegion.anImage4249 == null) WidgetRedrawRegion.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432))
-                    val graphics_6_ = WidgetRedrawRegion.anImage4249!!.getGraphics()
-                    graphics_6_.clearRect(0, 0, LocTypeDefinition.anInt4017, HardCacheEntryReference.anInt10432)
+                    val i_5_ = NpcConfigStatics.aResourceLoaderThread_897!!.method2320(103.toByte())
+                    val string = NpcConfigStatics.aResourceLoaderThread_897!!.method2318(-9324)
+                    if (WidgetRedrawRegionStatics.anImage4249 == null) WidgetRedrawRegionStatics.anImage4249 = (ParticleSystemRendererStatics.aCanvas3869!!.createImage(LocTypeDefinitionStatics.anInt4017, HardCacheEntryReferenceStatics.anInt10432))
+                    val graphics_6_ = WidgetRedrawRegionStatics.anImage4249!!.getGraphics()
+                    graphics_6_.clearRect(0, 0, LocTypeDefinitionStatics.anInt4017, HardCacheEntryReferenceStatics.anInt10432)
                     val i_7_ = anImage5030!!.getWidth(null)
                     val i_8_ = anImage5026!!.getWidth(null)
                     val i_9_ = anImage5056!!.getWidth(null)
@@ -196,7 +210,7 @@ class LoadingBarRenderer : CursorController {
                     val i_27_ = method2218(anInt5036, -6277) - -anInt5051
                     graphics_6_.drawImage(anImage5032, i_26_, i_27_ - -((anInt5036 + -i_17_) / 2), null)
                     graphics_6_.drawImage(anImage5037, anInt5023 + i_26_ - i_18_, (anInt5036 - i_19_) / 2 + i_27_, null)
-                    if (anImage5059 == null) anImage5059 = (ParticleSystemRenderer.aCanvas3869!!.createImage(-i_18_ + (-i_16_ + anInt5023), anInt5036))
+                    if (anImage5059 == null) anImage5059 = (ParticleSystemRendererStatics.aCanvas3869!!.createImage(-i_18_ + (-i_16_ + anInt5023), anInt5036))
                     val graphics_28_ = anImage5059!!.getGraphics()
                     var i_29_ = 0
                     while ((-i_18_ + (anInt5023 + -i_16_) > i_29_)) {
@@ -210,7 +224,7 @@ class LoadingBarRenderer : CursorController {
                     }
                     var i_31_ = i_5_ * (-i_18_ + (-i_16_ + anInt5023)) / 100
                     if (i_31_ > 0) {
-                        val image = ParticleSystemRenderer.aCanvas3869!!.createImage(i_31_, (-i_22_ + (anInt5036 + -i_20_)))
+                        val image = ParticleSystemRendererStatics.aCanvas3869!!.createImage(i_31_, (-i_22_ + (anInt5036 + -i_20_)))
                         val i_32_ = image.getWidth(null)
                         val graphics_33_ = image.getGraphics()
                         val i_34_ = anInt5042 * method163(512) / 10 % i_24_
@@ -224,7 +238,7 @@ class LoadingBarRenderer : CursorController {
                     val i_36_ = i_31_
                     i_31_ = -i_31_ + -i_18_ + anInt5023 + -i_16_
                     if (i_31_ > 0) {
-                        val image = ParticleSystemRenderer.aCanvas3869!!.createImage(i_31_, (-i_22_ + (anInt5036 + -i_20_)))
+                        val image = ParticleSystemRendererStatics.aCanvas3869!!.createImage(i_31_, (-i_22_ + (anInt5036 + -i_20_)))
                         val i_37_ = image.getWidth(null)
                         val graphics_38_ = image.getGraphics()
                         var i_39_ = 0
@@ -238,60 +252,24 @@ class LoadingBarRenderer : CursorController {
                     graphics_6_.setFont(aFont5053)
                     graphics_6_.setColor(aColor5034)
                     graphics_6_.drawString(string, i_26_ + (anInt5023 + -aFontMetrics5024!!.stringWidth(string)) / 2, anInt5046 + (4 + anInt5036 / 2 + i_27_))
-                    graphics.drawImage(WidgetRedrawRegion.anImage4249, 0, 0, null)
+                    graphics.drawImage(WidgetRedrawRegionStatics.anImage4249, 0, 0, null)
                 } catch (exception: Exception) {
                     aBoolean5022 = true
                 }
-            } else ParticleSystemRenderer.aCanvas3869!!.repaint()
+            } else ParticleSystemRendererStatics.aCanvas3869!!.repaint()
         }
     }
 
     private fun method2218(i: Int, i_40_: Int): Int {
         anInt5028++
-        if (aBoolean5045) return (-i + HardCacheEntryReference.anInt10432) / 2
+        if (aBoolean5045) return (-i + HardCacheEntryReferenceStatics.anInt10432) / 2
         if (i_40_ != -6277) anImage5026 = null
         return 0
     }
 
     private fun method2219(i: Int) {
         anInt5031++
-        LoadingScreenState.method1455(NpcConfig.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884], NpcConfig.aResourceLoaderThread_897!!.method2318(-9324), (PerlinNoiseTextureNode.aColorArray9163!![UnderlayDefinition.anInt2884]), (-100).toByte(), MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884])
+        LoadingScreenStateStatics.method1455(NpcConfigStatics.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBaseStatics.aColorArray1928!![UnderlayDefinitionStatics.anInt2884], NpcConfigStatics.aResourceLoaderThread_897!!.method2318(-9324), (PerlinNoiseTextureNodeStatics.aColorArray9163!![UnderlayDefinitionStatics.anInt2884]), (-100).toByte(), MinimapPolygonDrawerStatics.aColorArray5242!![UnderlayDefinitionStatics.anInt2884])
         if (i != 33) method55(1.toByte())
-    }
-
-    companion object {
-        var anInt5025: Int = 0
-        var anInt5027: Int = 0
-        var anInt5028: Int = 0
-        var anInt5031: Int = 0
-        var anInt5033: Int = 0
-        var anInt5038: Int = 0
-        var anInt5039: Int = 0
-        var anInt5043: Int = 0
-        var anInt5044: Int = 0
-        var anInt5048: Int = 0
-        var anInt5049: Int = 0
-        var anInt5052: Int = 0
-        var anInt5055: Int = 0
-        var aFontMetaRef_5057: FontMetaRef? = FontMetaRef(10, -1)
-        @JvmField
-        var aPlayerArray5058: Array<Player?>? = arrayOfNulls<Player>(2048)
-        @JvmField
-        var aMapTileShapeArray5060: Array<MapTileShape?>? = null
-        var anInt5061: Int = 0
-
-        @JvmStatic
-        fun method2214(i: Int) {
-            aFontMetaRef_5057 = null
-            if (i != 0) aPlayerArray5058 = null
-            aMapTileShapeArray5060 = null
-            aPlayerArray5058 = null
-        }
-
-        fun method2217(i: Int, i_3_: Int, i_4_: Int): Boolean {
-            anInt5027++
-            if (i_4_ != 0) aMapTileShapeArray5060 = null
-            return (i_3_ and 0x21) != 0
-        }
     }
 }

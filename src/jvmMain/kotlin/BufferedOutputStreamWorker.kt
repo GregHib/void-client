@@ -1,5 +1,10 @@
 import java.io.IOException
 import java.io.OutputStream
+import BufferedOutputStreamWorkerStatics.method1525
+import BufferedOutputStreamWorkerStatics.anInt2709
+import BufferedOutputStreamWorkerStatics.anInt2710
+import BufferedOutputStreamWorkerStatics.anInt2711
+import BufferedOutputStreamWorkerStatics.anInt2714
 
 /*
  * Class208
@@ -95,19 +100,5 @@ class BufferedOutputStreamWorker internal constructor(private var anOutputStream
         aThread2708 = Thread(this)
         aThread2708.setDaemon(true)
         aThread2708.start()
-    }
-
-    companion object {
-        @JvmField
-        var aNodeDeque_2707: NodeDeque? = NodeDeque()
-        var anInt2709: Int = 0
-        var anInt2710: Int = 0
-        var anInt2711: Int = 0
-        var anInt2714: Int = 0
-        @JvmStatic
-        fun method1525(i: Byte) {
-            if (i.toInt() != 4) aNodeDeque_2707 = null
-            aNodeDeque_2707 = null
-        }
     }
 }

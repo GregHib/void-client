@@ -1,4 +1,4 @@
-import BlankTextureNode.Companion.method3098
+import BlankTextureNodeStatics.method3098
 import NativeLibraryState.method215
 import jaggl.OpenGL
 import java.awt.Canvas
@@ -39,7 +39,7 @@ object JagGlToolkitFactory {
             glRenderDevice.method3930(26.toByte())
             return glRenderDevice
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("lt.D(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("lt.D(" + (if (canvas != null) "{...}" else "null") + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
         }
     }
 

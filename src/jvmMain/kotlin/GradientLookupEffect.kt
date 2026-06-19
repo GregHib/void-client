@@ -1,3 +1,12 @@
+import GradientLookupEffectStatics.method3076
+import GradientLookupEffectStatics.method3077
+import GradientLookupEffectStatics.anInt9190
+import GradientLookupEffectStatics.anInt9191
+import GradientLookupEffectStatics.anInt9192
+import GradientLookupEffectStatics.anInt9193
+import GradientLookupEffectStatics.anInt9196
+import GradientLookupEffectStatics.anInt9200
+
 /* Class348_Sub40_Sub12 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -14,7 +23,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
                     anIntArrayArray9194!![i_2_][0] = class348_sub49.readUnsignedShort(842397944)
                     anIntArrayArray9194!![i_2_][1] = class348_sub49.readUnsignedByte(255) shl 4
                     anIntArrayArray9194!![i_2_][2] = class348_sub49.readUnsignedByte(255) shl 4
-                    anIntArrayArray9194!![i_2_][3] = ((class348_sub49.readUnsignedByte(CameraSplineNode.method2955(i_0_, 31192))) shl 4)
+                    anIntArrayArray9194!![i_2_][3] = ((class348_sub49.readUnsignedByte(CameraSplineNodeStatics.method2955(i_0_, 31192))) shl 4)
                     i_2_++
                 }
             } else method3078(i_1_, i_0_ + -31111)
@@ -32,14 +41,14 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
             val is_6_ = `is`[1]!!
             val is_7_ = `is`[2]!!
             var i_8_ = 0
-            while ((DisplaceTextureNode.Companion.anInt9139 > i_8_)) {
+            while ((DisplaceTextureNodeStatics.anInt9139 > i_8_)) {
                 var i_9_ = is_4_[i_8_] shr 4
                 if (i_9_ < 0) i_9_ = 0
                 if (i_9_ > 256) i_9_ = 256
                 i_9_ = anIntArray9199[i_9_]
-                is_5_[i_8_] = NpcSummaryDefinition.method1166(i_9_, 16711680) shr 12
-                is_6_[i_8_] = NpcSummaryDefinition.method1166(65280, i_9_) shr 4
-                is_7_[i_8_] = NpcSummaryDefinition.method1166(4080, i_9_ shl 4)
+                is_5_[i_8_] = NpcSummaryDefinitionStatics.method1166(i_9_, 16711680) shr 12
+                is_6_[i_8_] = NpcSummaryDefinitionStatics.method1166(65280, i_9_) shr 4
+                is_7_[i_8_] = NpcSummaryDefinitionStatics.method1166(4080, i_9_ shl 4)
                 i_8_++
             }
         }
@@ -318,68 +327,8 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
                 if (i_19_ >= 0) {
                     if (i_19_ > 255) i_19_ = 255
                 } else i_19_ = 0
-                anIntArray9199[i_13_] = (BoundsConstraintEntry.method2057(i_18_, BoundsConstraintEntry.method2057(i_17_ shl 16, i_19_ shl 8)))
+                anIntArray9199[i_13_] = (BoundsConstraintEntryStatics.method2057(i_18_, BoundsConstraintEntryStatics.method2057(i_17_ shl 16, i_19_ shl 8)))
             }
-        }
-    }
-
-    companion object {
-        @JvmField
-        var aFontMetaRef_9189: FontMetaRef? = FontMetaRef(28, 2)
-        @JvmField
-        var anInt9190: Int = 0
-        @JvmField
-        var anInt9191: Int = 0
-        @JvmField
-        var anInt9192: Int = 0
-        @JvmField
-        var anInt9193: Int = 0
-        @JvmField
-        var aSeqDefinitionCache_9195: SeqDefinitionCache? = null
-        @JvmField
-        var anInt9196: Int = 0
-        @JvmField
-        var aIntRange_9197: IntRange? = IntRange(61, -1)
-        @JvmField
-        var anInt9198: Int = 0
-        var anInt9200: Int = 0
-
-        @JvmStatic
-        fun method3076(i: Int, bool: Boolean) {
-            anInt9198++
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7255), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub27_7261), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7250), 1)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub14_7264), 1)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub4_7220), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub16_7247), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub9_7256), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub13_7236), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub1_7246), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub21_7270), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub7_7238), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub24_7235), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub28_7230), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub18_7259), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7216), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub20_7248), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub15_7224), 0)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub12_7243), 0)
-            WorldMapScene.method1686(i xor 0x6e)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub23_7231), 2)
-            IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub29_7229), 1)
-            method3038(-1)
-            SceneObjectSpawner.method773(true)
-            TextureLoadException.aBoolean4604 = true
-        }
-
-        @JvmStatic
-        fun method3077(i: Byte) {
-            aFontMetaRef_9189 = null
-            aIntRange_9197 = null
-            if (i.toInt() != -98) method3077(27.toByte())
-            aSeqDefinitionCache_9195 = null
         }
     }
 }

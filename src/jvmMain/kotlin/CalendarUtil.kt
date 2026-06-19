@@ -40,9 +40,9 @@ object CalendarUtil {
     fun method2636(i: Int) {
         val i_5_ = -114 % ((i - 22) / 33)
         anInt4137++
-        MinimapRenderer.aHashtable_1585!!.method3481(0)
-        OpenGlTerrainTile.aLinkedNodeListIterator_8241!!.method1009(2110355138)
-        GlCubemapLightPass.aLinkedNodeListIterator_7325!!.method1009(2110355138)
+        MinimapRendererStatics.aHashtable_1585!!.method3481(0)
+        OpenGlTerrainTileStatics.aLinkedNodeListIterator_8241!!.method1009(2110355138)
+        GlCubemapLightPassStatics.aLinkedNodeListIterator_7325!!.method1009(2110355138)
     }
 
     @JvmStatic
@@ -58,8 +58,8 @@ object CalendarUtil {
             ModelDataCache.aLruByteCache_355!!.method587(-98)
         }
         anInt4136++
-        synchronized(ModelBatchBase.aLruByteCache_1894!!) {
-            ModelBatchBase.aLruByteCache_1894!!.method587(i + 4530)
+        synchronized(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+            ModelBatchBaseStatics.aLruByteCache_1894!!.method587(i + 4530)
         }
         if (i != -4631) anInt4135 = 37
     }

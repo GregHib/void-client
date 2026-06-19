@@ -1,3 +1,5 @@
+import GrayscaleEffectStatics.anInt9202
+
 /* Class348_Sub40_Sub13 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -12,32 +14,11 @@ class GrayscaleEffect : AbstractProceduralTextureNode(1, true) {
             val is_3_ = is_1_[1]!!
             val is_4_ = is_1_[2]!!
             var i_5_ = 0
-            while (DisplaceTextureNode.Companion.anInt9139 > i_5_) {
+            while (DisplaceTextureNodeStatics.anInt9139 > i_5_) {
                 `is`[i_5_] = (is_2_[i_5_] - (-is_3_[i_5_] - is_4_[i_5_])) / 3
                 i_5_++
             }
         }
         return `is`
-    }
-
-    companion object {
-        @JvmField
-        var aNodeDeque_9201: NodeDeque?
-        @JvmField
-        var anInt9202: Int = 0
-        @JvmField
-        var anInt9203: Int = -1
-        var aFloat9204: Float
-
-        @JvmStatic
-        fun method3080(i: Byte) {
-            aNodeDeque_9201 = null
-            if (i < 39) method3080(100.toByte())
-        }
-
-        init {
-            aNodeDeque_9201 = NodeDeque()
-            aFloat9204 = 0.25f
-        }
     }
 }

@@ -1,7 +1,18 @@
-import RenderableGroup.Companion.method1449
-import ChatMessageStream.Companion.method136
+import RenderableGroupStatics.method1449
+import ChatMessageStreamStatics.method136
 import kotlin.math.atan2
 import kotlin.math.min
+import DynamicSceneObjectEntityStatics.anInt10179
+import DynamicSceneObjectEntityStatics.anInt10182
+import DynamicSceneObjectEntityStatics.anInt10183
+import DynamicSceneObjectEntityStatics.anInt10187
+import DynamicSceneObjectEntityStatics.anInt10188
+import DynamicSceneObjectEntityStatics.anInt10192
+import DynamicSceneObjectEntityStatics.anInt10193
+import DynamicSceneObjectEntityStatics.aRectangleRegion_10194
+import DynamicSceneObjectEntityStatics.aStringArray10195
+import DynamicSceneObjectEntityStatics.anInt10197
+import DynamicSceneObjectEntityStatics.anInt10198
 
 /* Class318_Sub1_Sub2_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -19,14 +30,14 @@ class DynamicSceneObjectEntity internal constructor(i: Int, i_3_: Int, i_4_: Int
     public override fun method2393(i: Int): Int {
         anInt10197++
         if (i > -109) aStringArray10195 = null
-        val class213 = (ClientException.aModelHeaderCache_112!!.method1940(-115, this.anInt10181))
+        val class213 = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-115, this.anInt10181))
         var i_0_ = class213.anInt2784
         if (this.anInt10189 != -1) {
-            val class213_1_ = (ClientException.aModelHeaderCache_112!!.method1940(74, this.anInt10189))
+            val class213_1_ = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(74, this.anInt10189))
             if (class213_1_.anInt2784 > i_0_) i_0_ = class213_1_.anInt2784
         }
         if (this.anInt10180 != -1) {
-            val class213_2_ = (ClientException.aModelHeaderCache_112!!.method1940(-88, this.anInt10180))
+            val class213_2_ = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-88, this.anInt10180))
             if (i_0_ < class213_2_.anInt2784) i_0_ = class213_2_.anInt2784
         }
         return i_0_
@@ -53,18 +64,18 @@ class DynamicSceneObjectEntity internal constructor(i: Int, i_3_: Int, i_4_: Int
         anInt10188++
         val class101 = var_renderer!!.method3705()
         class101.method894(this.x, -10 + this.anInt6382, this.y)
-        val class213 = (ClientException.aModelHeaderCache_112!!.method1940(i_8_ xor 0x6b, this.anInt10181))
+        val class213 = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(i_8_ xor 0x6b, this.anInt10181))
         var class64 = class213.method1559(null, null, var_renderer, 131072, 0, this.anInt10185, 0, 88.toByte(), -1)
-        if (class64 != null && (if (ParticleSystemRenderer.aBoolean3870) class64.method623(i_7_, i, class101, true, class213.anInt2784, LocalPlayerState.anInt1906) else class64.method628(i_7_, i, class101, true, class213.anInt2784))) return true
+        if (class64 != null && (if (ParticleSystemRendererStatics.aBoolean3870) class64.method623(i_7_, i, class101, true, class213.anInt2784, LocalPlayerState.anInt1906) else class64.method628(i_7_, i, class101, true, class213.anInt2784))) return true
         if ((this.anInt10189.inv()) != i_8_) {
-            val class213_9_ = (ClientException.aModelHeaderCache_112!!.method1940(-88, this.anInt10189))
+            val class213_9_ = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-88, this.anInt10189))
             class64 = class213_9_.method1559(null, null, var_renderer, 131072, 0, (this.anInt10190), 0, 88.toByte(), -1)
-            if (class64 != null && (if (ParticleSystemRenderer.aBoolean3870) class64.method623(i_7_, i, class101, true, class213_9_.anInt2784, LocalPlayerState.anInt1906) else class64.method628(i_7_, i, class101, true, class213_9_.anInt2784))) return true
+            if (class64 != null && (if (ParticleSystemRendererStatics.aBoolean3870) class64.method623(i_7_, i, class101, true, class213_9_.anInt2784, LocalPlayerState.anInt1906) else class64.method628(i_7_, i, class101, true, class213_9_.anInt2784))) return true
         }
         if (this.anInt10180 != -1) {
-            val class213_10_ = (ClientException.aModelHeaderCache_112!!.method1940(-99, this.anInt10180))
+            val class213_10_ = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-99, this.anInt10180))
             class64 = class213_10_.method1559(null, null, var_renderer, 131072, 0, (this.anInt10186), 0, 88.toByte(), -1)
-            return class64 != null && (if (!ParticleSystemRenderer.aBoolean3870) class64.method628(i_7_, i, class101, true, class213_10_.anInt2784) else class64.method623(i_7_, i, class101, true, class213_10_.anInt2784, LocalPlayerState.anInt1906))
+            return class64 != null && (if (!ParticleSystemRendererStatics.aBoolean3870) class64.method628(i_7_, i, class101, true, class213_10_.anInt2784) else class64.method623(i_7_, i, class101, true, class213_10_.anInt2784, LocalPlayerState.anInt1906))
         }
         return false
     }
@@ -87,7 +98,7 @@ class DynamicSceneObjectEntity internal constructor(i: Int, i_3_: Int, i_4_: Int
             val bool = false
             val bool_12_ = false
             val bool_13_ = false
-            val var_s = NativeSprite.aTerrainTileArray5191!![this.aByte6376.toInt()]
+            val var_s = NativeSpriteStatics.aTerrainTileArray5191!![this.aByte6376.toInt()]
             val i_14_ = anInt10184 shl 1
             val i_15_ = i_14_
             val i_16_ = -i_14_ / 2
@@ -124,26 +135,26 @@ class DynamicSceneObjectEntity internal constructor(i: Int, i_3_: Int, i_4_: Int
         aBoolean10191 = false
         anInt10184 = 0
         if (this.anInt10180 != -1) {
-            val class64 = (ClientException.aModelHeaderCache_112!!.method1940(i xor 0x6c, this.anInt10180).method1559(null, null, var_renderer, 2048, 0, this.anInt10186, 0, 88.toByte(), -1))
+            val class64 = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(i xor 0x6c, this.anInt10180).method1559(null, null, var_renderer, 2048, 0, this.anInt10186, 0, 88.toByte(), -1))
             if (class64 != null) {
-                if (ParticleSystemRenderer.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![2]), LocalPlayerState.anInt1906, 0)
+                if (ParticleSystemRendererStatics.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![2]), LocalPlayerState.anInt1906, 0)
                 else class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![2]), 0)
                 aBoolean10191 = aBoolean10191 or class64.F()
                 anInt10184 = class64.ma()
             }
         }
         if (this.anInt10189 != -1) {
-            val class64 = (ClientException.aModelHeaderCache_112!!.method1940(i xor 0x3b.inv(), this.anInt10189).method1559(null, null, var_renderer, 2048, 0, this.anInt10190, 0, 88.toByte(), -1))
+            val class64 = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(i xor 0x3b.inv(), this.anInt10189).method1559(null, null, var_renderer, 2048, 0, this.anInt10190, 0, 88.toByte(), -1))
             if (class64 != null) {
-                if (!ParticleSystemRenderer.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![1]), 0)
+                if (!ParticleSystemRendererStatics.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![1]), 0)
                 else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![1]), LocalPlayerState.anInt1906, 0)
                 aBoolean10191 = aBoolean10191 or class64.F()
                 if (anInt10184 < class64.ma()) anInt10184 = class64.ma()
             }
         }
-        val class64 = (ClientException.aModelHeaderCache_112!!.method1940(-48, this.anInt10181).method1559(null, null, var_renderer, 2048, 0, this.anInt10185, 0, 88.toByte(), -1))
+        val class64 = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-48, this.anInt10181).method1559(null, null, var_renderer, 2048, 0, this.anInt10185, 0, 88.toByte(), -1))
         if (class64 != null) {
-            if (!ParticleSystemRenderer.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
+            if (!ParticleSystemRendererStatics.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), 0)
             else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![0]), LocalPlayerState.anInt1906, 0)
             aBoolean10191 = aBoolean10191 or class64.F()
             if (anInt10184 < class64.ma()) anInt10184 = class64.ma()
@@ -171,33 +182,5 @@ class DynamicSceneObjectEntity internal constructor(i: Int, i_3_: Int, i_4_: Int
 
     init {
         this.anInt10189 = -1
-    }
-
-    companion object {
-        var anInt10179: Int = 0
-        var anInt10182: Int = 0
-        var anInt10183: Int = 0
-        var anInt10187: Int = 0
-        var anInt10188: Int = 0
-        var anInt10192: Int = 0
-        var anInt10193: Int = 0
-        @JvmField
-        var aRectangleRegion_10194: RectangleRegion?
-        @JvmField
-        var aStringArray10195: Array<String?>? = arrayOfNulls<String>(8)
-        var anInt10197: Int = 0
-        var anInt10198: Int = 0
-        var aFloat10199: Float = 0f
-
-        @JvmStatic
-        fun method2407(bool: Boolean) {
-            aStringArray10195 = null
-            aRectangleRegion_10194 = null
-            if (bool != false) method2407(true)
-        }
-
-        init {
-            aRectangleRegion_10194 = RectangleRegion(13, 0, 1, 0)
-        }
     }
 }

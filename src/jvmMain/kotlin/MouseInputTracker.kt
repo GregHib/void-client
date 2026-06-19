@@ -2,6 +2,28 @@ import java.awt.Component
 import java.awt.event.MouseEvent
 import java.awt.event.MouseListener
 import java.awt.event.MouseMotionListener
+import MouseInputTrackerStatics.anInt7426
+import MouseInputTrackerStatics.anInt7427
+import MouseInputTrackerStatics.anInt7428
+import MouseInputTrackerStatics.anInt7429
+import MouseInputTrackerStatics.anInt7430
+import MouseInputTrackerStatics.anInt7431
+import MouseInputTrackerStatics.anInt7433
+import MouseInputTrackerStatics.anInt7434
+import MouseInputTrackerStatics.anInt7435
+import MouseInputTrackerStatics.anInt7436
+import MouseInputTrackerStatics.anInt7437
+import MouseInputTrackerStatics.anInt7438
+import MouseInputTrackerStatics.anInt7439
+import MouseInputTrackerStatics.anInt7440
+import MouseInputTrackerStatics.anInt7443
+import MouseInputTrackerStatics.anInt7445
+import MouseInputTrackerStatics.anInt7447
+import MouseInputTrackerStatics.anInt7449
+import MouseInputTrackerStatics.anInt7452
+import MouseInputTrackerStatics.anInt7455
+import MouseInputTrackerStatics.anInt7457
+import MouseInputTrackerStatics.method3607
 
 class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), MouseListener, MouseMotionListener {
     private var anInt7432 = 0
@@ -111,7 +133,7 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
         class348_sub45_sub2.anInt9736 = i
         class348_sub45_sub2.aLong9734 = GameClock.method599(-110)
         aNodeDeque_7450!!.method1999(class348_sub45_sub2, -20180)
-        if (i_8_ >= -110) Companion.method3607(28, null, -68)
+        if (i_8_ >= -110) method3607(28, null, -68)
     }
 
     @Synchronized
@@ -189,77 +211,5 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
     init {
         method3603((-108).toByte(), component)
         aBoolean7458 = bool
-    }
-
-    companion object {
-        @JvmField
-        var anInt7426: Int = 0
-        @JvmField
-        var anInt7427: Int = 0
-        @JvmField
-        var anInt7428: Int = 0
-        @JvmField
-        var anInt7429: Int = 0
-        @JvmField
-        var anInt7430: Int = 0
-        @JvmField
-        var anInt7431: Int = 0
-        @JvmField
-        var anInt7433: Int = 0
-        @JvmField
-        var anInt7434: Int = 0
-        @JvmField
-        var anInt7435: Int = 0
-        @JvmField
-        var anInt7436: Int = 0
-        @JvmField
-        var anInt7437: Int = 0
-        @JvmField
-        var anInt7438: Int = 0
-        @JvmField
-        var anInt7439: Int = 0
-        @JvmField
-        var anInt7440: Int = 0
-        @JvmField
-        var anInt7443: Int = 0
-        @JvmField
-        var aBoolean7444: Boolean = false
-        @JvmField
-        var anInt7445: Int = 0
-        @JvmField
-        var aDataHolderArray7446: Array<DataHolder?>? = null
-        @JvmField
-        var anInt7447: Int = 0
-        @JvmField
-        var anInt7449: Int = 0
-        @JvmField
-        var anInt7451: Int = 0
-        @JvmField
-        var anInt7452: Int = 0
-        @JvmField
-        var anInt7455: Int = 0
-        @JvmField
-        var anInt7457: Int = 0
-        @JvmStatic
-        fun method3607(i: Int, class348_sub49: ByteBuffer?, i_10_: Int): String {
-            val i_11_ = 17 % ((9 - i_10_) / 59)
-            anInt7451++
-            try {
-                var i_12_ = class348_sub49!!.readSmart(-122)
-                if (i < i_12_) i_12_ = i
-                val `is` = ByteArray(i_12_)
-                class348_sub49.anInt7197 += (AbstractModel.aHuffmanCodec_1131!!.method2226(`is`, class348_sub49.anInt7197, class348_sub49.aByteArray7154, i_12_, -1, 0))
-                val string = FixedFunctionWaterPass.method3546(`is`, 0, i_12_, 0)
-                return string
-            } catch (exception: Exception) {
-                return "Cabbage"
-            }
-        }
-
-        @JvmStatic
-        fun method3609(i: Byte) {
-            val i_14_ = 49 % ((i - -35) / 41)
-            aDataHolderArray7446 = null
-        }
     }
 }

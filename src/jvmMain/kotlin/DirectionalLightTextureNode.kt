@@ -1,6 +1,11 @@
 import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt
+import DirectionalLightTextureNodeStatics.anInt9440
+import DirectionalLightTextureNodeStatics.anInt9441
+import DirectionalLightTextureNodeStatics.anInt9442
+import DirectionalLightTextureNodeStatics.aServerConnectionInfo_9443
+import DirectionalLightTextureNodeStatics.anInt9446
 
 /* Class348_Sub40_Sub35 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -33,21 +38,21 @@ class DirectionalLightTextureNode : AbstractProceduralTextureNode(1, true) {
         anInt9446++
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_5_ = MediaStreamClient.anInt3201 * anInt9448 shr 12
-            val is_6_ = this.method3048(TextureCubeProvider.anInt6325 and -1 + i, 633706337, 0)!!
+            val i_5_ = MediaStreamClientStatics.anInt3201 * anInt9448 shr 12
+            val is_6_ = this.method3048(TextureCubeProviderStatics.anInt6325 and -1 + i, 633706337, 0)!!
             val is_7_ = this.method3048(i, 633706337, 0)!!
-            val is_8_ = this.method3048(TextureCubeProvider.anInt6325 and i - -1, i_4_ + 633706082, 0)!!
+            val is_8_ = this.method3048(TextureCubeProviderStatics.anInt6325 and i - -1, i_4_ + 633706082, 0)!!
             var i_9_ = 0
-            while (DisplaceTextureNode.Companion.anInt9139 > i_9_) {
+            while (DisplaceTextureNodeStatics.anInt9139 > i_9_) {
                 val i_10_ = i_5_ * (is_8_[i_9_] - is_6_[i_9_]) shr 12
-                val i_11_ = (i_5_ * (-is_7_[SimpleBinaryOptionState.anInt6076 and i_9_ - -1] + is_7_[-1 + i_9_ and SimpleBinaryOptionState.anInt6076]) shr 12)
+                val i_11_ = (i_5_ * (-is_7_[SimpleBinaryOptionStateStatics.anInt6076 and i_9_ - -1] + is_7_[-1 + i_9_ and SimpleBinaryOptionStateStatics.anInt6076]) shr 12)
                 var i_12_ = i_11_ shr 4
                 var i_13_ = i_10_ shr 4
                 if (i_12_ < 0) i_12_ = -i_12_
                 if (i_13_ < 0) i_13_ = -i_13_
                 if (i_12_ > 255) i_12_ = 255
                 if (i_13_ > 255) i_13_ = 255
-                val i_14_ = (WidgetComponent.aByteArray821!![i_12_ + (i_13_ * (1 + i_13_) shr 1)].toInt() and 0xff)
+                val i_14_ = (WidgetComponentStatics.aByteArray821!![i_12_ + (i_13_ * (1 + i_13_) shr 1)].toInt() and 0xff)
                 var i_15_ = i_14_ * 4096 shr 8
                 var i_16_ = i_14_ * i_11_ shr 8
                 var i_17_ = i_10_ * i_14_ shr 8
@@ -86,25 +91,5 @@ class DirectionalLightTextureNode : AbstractProceduralTextureNode(1, true) {
         } while (false)
         anInt9442++
         if (i_18_ != 31015) aServerConnectionInfo_9443 = null
-    }
-
-    companion object {
-        @JvmField
-        var anInt9440: Int = 0
-        @JvmField
-        var anInt9441: Int = 0
-        @JvmField
-        var anInt9442: Int = 0
-        @JvmField
-        var aServerConnectionInfo_9443: ServerConnectionInfo? = null
-        @JvmField
-        var anInt9444: Int = 0
-        @JvmField
-        var anInt9446: Int = 0
-        @JvmStatic
-        fun method3144(i: Byte) {
-            aServerConnectionInfo_9443 = null
-            if (i < 34) method3144(127.toByte())
-        }
     }
 }

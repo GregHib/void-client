@@ -13,6 +13,19 @@ import java.net.Socket
 import java.net.URL
 import java.util.*
 import kotlin.concurrent.Volatile
+import PrivilegedOperationWorkerStatics.method2241
+import PrivilegedOperationWorkerStatics.aString3778
+import PrivilegedOperationWorkerStatics.aString3780
+import PrivilegedOperationWorkerStatics.aLong3781
+import PrivilegedOperationWorkerStatics.aString3782
+import PrivilegedOperationWorkerStatics.aMethod3783
+import PrivilegedOperationWorkerStatics.aString3784
+import PrivilegedOperationWorkerStatics.aMethod3786
+import PrivilegedOperationWorkerStatics.anInt3792
+import PrivilegedOperationWorkerStatics.aString3796
+import PrivilegedOperationWorkerStatics.aString3800
+import PrivilegedOperationWorkerStatics.aString3803
+import PrivilegedOperationWorkerStatics.aString3789
 
 /*
  * Class297
@@ -85,14 +98,14 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                 val i = linkedQueueNode!!.anInt1994
                 if (i == 1) {
                     if (aLong3781 > method599(-53)) throw IOException()
-                    if (Loader.debug) {
+                    if (LoaderStatics.debug) {
                         println("Connect: " + linkedQueueNode.anObject1996 + " " + linkedQueueNode.anInt2000)
                     }
                     linkedQueueNode.anObject1998 = Socket(InetAddress.getByName((linkedQueueNode.anObject1996) as String?), linkedQueueNode.anInt2000)
                 } else if (i == 22) {
                     if (aLong3781 > method599(-92)) throw IOException()
                     try {
-                        linkedQueueNode.anObject1998 = GlDisplayListFont.method593(linkedQueueNode.anInt2000, (-90).toByte(), (linkedQueueNode.anObject1996 as String?))!!.method2050(-112)
+                        linkedQueueNode.anObject1998 = GlDisplayListFontStatics.method593(linkedQueueNode.anInt2000, (-90).toByte(), (linkedQueueNode.anObject1996 as String?))!!.method2050(-112)
                     } catch (ioexception_sub1: IOException_Sub1) {
                         linkedQueueNode.anObject1998 = ioexception_sub1.message
                         throw ioexception_sub1
@@ -140,7 +153,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                             if (this.aBoolean3794) aDirectDrawDisplayMode_3802!!.method1147(((linkedQueueNode.anObject1996) as Frame?), 8)
                             else (anObject3793 as FullscreenDisplayController).method211()
                         } else if (i == 12) {
-                            val randomAccessFileOnDisk: RandomAccessFileOnDisk? = (method2241(((linkedQueueNode.anObject1996) as String?), 12606, Companion.aString3789, anInt3792))
+                            val randomAccessFileOnDisk: RandomAccessFileOnDisk? = (method2241(((linkedQueueNode.anObject1996) as String?), 12606, aString3789, anInt3792))
                             linkedQueueNode.anObject1998 = randomAccessFileOnDisk
                         } else if (i == 13) {
                             val randomAccessFileOnDisk: RandomAccessFileOnDisk? = (method2241(((linkedQueueNode.anObject1996) as String?), 12606, "", anInt3792))
@@ -181,7 +194,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                 } else throw Exception("")
                 linkedQueueNode.anInt1997 = 1
             } catch (throwable: Throwable) {
-                if (Loader.trace) {
+                if (LoaderStatics.trace) {
                     throwable.printStackTrace()
                 }
                 linkedQueueNode!!.anInt1997 = 2
@@ -331,7 +344,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
     }
 
     init {
-        Companion.aString3789 = aString3789
+        PrivilegedOperationWorkerStatics.aString3789 = aString3789
         this.aBoolean3777 = bool
         aString3796 = "1.1"
         aString3782 = "Unknown"
@@ -383,7 +396,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                 /* empty */
             }
         }
-        FileStoreLocator.method1465((-121).toByte(), Companion.aString3789, anInt3792)
+        FileStoreLocator.method1465((-121).toByte(), aString3789, anInt3792)
         if (this.aBoolean3777) {
             this.aRandomAccessFileOnDisk_3788 = RandomAccessFileOnDisk(method1464(0, anInt3792, "random.dat", null), "rw", 25L)
             this.aRandomAccessFileOnDisk_3785 = RandomAccessFileOnDisk(method1466(-2, "main_file_cache.dat2"), "rw", 209715200L)
@@ -434,65 +447,5 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
         aThread3790.setPriority(10)
         aThread3790.setDaemon(true)
         aThread3790.start()
-    }
-
-    companion object {
-        var aString3778: String? = null
-        @JvmField
-        var aString3780: String? = null
-
-        @Volatile
-        private var aLong3781 = 0L
-        @JvmField
-        var aString3782: String? = null
-        @JvmField
-        var aMethod3783: Method? = null
-        private var aString3784: String? = null
-        var aMethod3786: Method? = null
-        var anInt3792: Int = -1
-        var aString3796: String? = null
-        private var aString3800: String? = null
-        lateinit var aString3803: String
-        private var aString3789: String? = null
-
-        /*synthetic*/
-        var aClass3804: Class<*>? = null
-
-        /*synthetic*/
-        var aClass3805: Class<*>? = null
-
-        /*synthetic*/
-        var aClass3806: Class<*>? = null
-
-        /*synthetic*/
-        var aClass3807: Class<*>? = null
-
-        fun method2231(string: String?, i: Int): RandomAccessFileOnDisk? {
-            if (i != -1141472112) return null
-            return method2241(string, 12606, Companion.aString3789, anInt3792)
-        }
-
-        private fun method2241(string: String?, i: Int, string_14_: String?, i_15_: Int): RandomAccessFileOnDisk? {
-            val string_16_: String?
-            if (i_15_ == 33) string_16_ = "jagex_" + string_14_ + "_preferences" + string + "_rc.dat"
-            else if (i_15_ != 34) string_16_ = "jagex_" + string_14_ + "_preferences" + string + ".dat"
-            else string_16_ = "jagex_" + string_14_ + "_preferences" + string + "_wip.dat"
-            if (i != 12606) return null
-            val strings = arrayOf<String>("c:/rscache/", "/rscache/", aString3800!!, "c:/windows/", "c:/winnt/", "c:/", "/tmp/", "")
-            var i_17_ = 0
-            while (strings.size > i_17_) {
-                val string_18_ = strings[i_17_]
-                if (string_18_.length <= 0 || File(string_18_).exists()) {
-                    try {
-                        val randomAccessFileOnDisk = RandomAccessFileOnDisk(File(string_18_, string_16_), "rw", 10000L)
-                        return randomAccessFileOnDisk
-                    } catch (exception: Exception) {
-                        /* empty */
-                    }
-                }
-                i_17_++
-            }
-            return null
-        }
     }
 }

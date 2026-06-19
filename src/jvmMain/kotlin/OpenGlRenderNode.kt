@@ -1,3 +1,8 @@
+import OpenGlRenderNodeStatics.anInt10481
+import OpenGlRenderNodeStatics.anInt10485
+import OpenGlRenderNodeStatics.anInt10490
+import OpenGlRenderNodeStatics.anInt10491
+
 /* r_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -73,13 +78,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
                     i_11_ -= i_7_
                     i_7_ = this.anInt10482 * i_7_
                     while (--i_11_ >= 0) {
-                        TextureFormatInfo.method2289(i_6_ shr 16, i_7_, -36, 0, this.aByteArray10486, i shr 16)
+                        TextureFormatInfoStatics.method2289(i_6_ shr 16, i_7_, -36, 0, this.aByteArray10486, i shr 16)
                         i_6_ += i_12_
                         i_7_ += this.anInt10482
                         i += i_15_
                     }
                     while (--i_10_ >= 0) {
-                        TextureFormatInfo.method2289(i_9_ shr 16, i_7_, -104, 0, this.aByteArray10486, i shr 16)
+                        TextureFormatInfoStatics.method2289(i_9_ shr 16, i_7_, -104, 0, this.aByteArray10486, i shr 16)
                         i += i_15_
                         i_7_ += this.anInt10482
                         i_9_ += i_14_
@@ -89,13 +94,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
                     i_11_ -= i_7_
                     i_7_ = this.anInt10482 * i_7_
                     while (--i_11_ >= 0) {
-                        TextureFormatInfo.method2289(i shr 16, i_7_, -111, 0, this.aByteArray10486, i_6_ shr 16)
+                        TextureFormatInfoStatics.method2289(i shr 16, i_7_, -111, 0, this.aByteArray10486, i_6_ shr 16)
                         i_7_ += this.anInt10482
                         i += i_15_
                         i_6_ += i_12_
                     }
                     while (--i_10_ >= 0) {
-                        TextureFormatInfo.method2289(i shr 16, i_7_, -120, 0, this.aByteArray10486, i_9_ shr 16)
+                        TextureFormatInfoStatics.method2289(i shr 16, i_7_, -120, 0, this.aByteArray10486, i_9_ shr 16)
                         i_9_ += i_14_
                         i_7_ += this.anInt10482
                         i += i_15_
@@ -119,13 +124,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
                     i_10_ -= i_7_
                     i_7_ = this.anInt10482 * i_7_
                     while (--i_10_ >= 0) {
-                        TextureFormatInfo.method2289(i_6_ shr 16, i_7_, -75, 0, this.aByteArray10486, i_9_ shr 16)
+                        TextureFormatInfoStatics.method2289(i_6_ shr 16, i_7_, -75, 0, this.aByteArray10486, i_9_ shr 16)
                         i_9_ += i_15_
                         i_7_ += this.anInt10482
                         i_6_ += i_12_
                     }
                     while (--i_11_ >= 0) {
-                        TextureFormatInfo.method2289(i_6_ shr 16, i_7_, -62, 0, this.aByteArray10486, i shr 16)
+                        TextureFormatInfoStatics.method2289(i_6_ shr 16, i_7_, -62, 0, this.aByteArray10486, i shr 16)
                         i_7_ += this.anInt10482
                         i_6_ += i_12_
                         i += i_14_
@@ -135,13 +140,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
                     i_10_ -= i_7_
                     i_7_ *= this.anInt10482
                     while (--i_10_ >= 0) {
-                        TextureFormatInfo.method2289(i_9_ shr 16, i_7_, -102, 0, this.aByteArray10486, i_6_ shr 16)
+                        TextureFormatInfoStatics.method2289(i_9_ shr 16, i_7_, -102, 0, this.aByteArray10486, i_6_ shr 16)
                         i_7_ += this.anInt10482
                         i_9_ += i_15_
                         i_6_ += i_12_
                     }
                     while (--i_11_ >= 0) {
-                        TextureFormatInfo.method2289(i shr 16, i_7_, -92, 0, this.aByteArray10486, i_6_ shr 16)
+                        TextureFormatInfoStatics.method2289(i shr 16, i_7_, -92, 0, this.aByteArray10486, i_6_ shr 16)
                         i += i_14_
                         i_6_ += i_12_
                         i_7_ += this.anInt10482
@@ -167,13 +172,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
                     i_11_ -= i_10_
                     i_10_ = this.anInt10482 * i_10_
                     while (--i_11_ >= 0) {
-                        TextureFormatInfo.method2289(i shr 16, i_10_, -68, 0, this.aByteArray10486, i_6_ shr 16)
+                        TextureFormatInfoStatics.method2289(i shr 16, i_10_, -68, 0, this.aByteArray10486, i_6_ shr 16)
                         i_6_ += i_14_
                         i_10_ += this.anInt10482
                         i += i_15_
                     }
                     while (--i_7_ >= 0) {
-                        TextureFormatInfo.method2289(i shr 16, i_10_, -101, 0, this.aByteArray10486, i_9_ shr 16)
+                        TextureFormatInfoStatics.method2289(i shr 16, i_10_, -101, 0, this.aByteArray10486, i_9_ shr 16)
                         i_9_ += i_12_
                         i += i_15_
                         i_10_ += this.anInt10482
@@ -183,13 +188,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
                     i_11_ -= i_10_
                     i_10_ *= this.anInt10482
                     while (--i_11_ >= 0) {
-                        TextureFormatInfo.method2289(i_6_ shr 16, i_10_, -99, 0, this.aByteArray10486, i shr 16)
+                        TextureFormatInfoStatics.method2289(i_6_ shr 16, i_10_, -99, 0, this.aByteArray10486, i shr 16)
                         i += i_15_
                         i_6_ += i_14_
                         i_10_ += this.anInt10482
                     }
                     while (--i_7_ >= 0) {
-                        TextureFormatInfo.method2289(i_9_ shr 16, i_10_, -122, 0, this.aByteArray10486, i shr 16)
+                        TextureFormatInfoStatics.method2289(i_9_ shr 16, i_10_, -122, 0, this.aByteArray10486, i shr 16)
                         i += i_15_
                         i_9_ += i_12_
                         i_10_ += this.anInt10482
@@ -213,13 +218,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
                     i_7_ -= i_10_
                     i_10_ = this.anInt10482 * i_10_
                     while (--i_7_ >= 0) {
-                        TextureFormatInfo.method2289(i_9_ shr 16, i_10_, -36, 0, this.aByteArray10486, i shr 16)
+                        TextureFormatInfoStatics.method2289(i_9_ shr 16, i_10_, -36, 0, this.aByteArray10486, i shr 16)
                         i_10_ += this.anInt10482
                         i += i_15_
                         i_9_ += i_14_
                     }
                     while (--i_11_ >= 0) {
-                        TextureFormatInfo.method2289(i_9_ shr 16, i_10_, -48, 0, this.aByteArray10486, i_6_ shr 16)
+                        TextureFormatInfoStatics.method2289(i_9_ shr 16, i_10_, -48, 0, this.aByteArray10486, i_6_ shr 16)
                         i_9_ += i_14_
                         i_6_ += i_12_
                         i_10_ += this.anInt10482
@@ -229,13 +234,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
                     i_7_ -= i_10_
                     i_10_ *= this.anInt10482
                     while (--i_7_ >= 0) {
-                        TextureFormatInfo.method2289(i shr 16, i_10_, -83, 0, this.aByteArray10486, i_9_ shr 16)
+                        TextureFormatInfoStatics.method2289(i shr 16, i_10_, -83, 0, this.aByteArray10486, i_9_ shr 16)
                         i += i_15_
                         i_9_ += i_14_
                         i_10_ += this.anInt10482
                     }
                     while (--i_11_ >= 0) {
-                        TextureFormatInfo.method2289(i_6_ shr 16, i_10_, -104, 0, this.aByteArray10486, i_9_ shr 16)
+                        TextureFormatInfoStatics.method2289(i_6_ shr 16, i_10_, -104, 0, this.aByteArray10486, i_9_ shr 16)
                         i_10_ += this.anInt10482
                         i_9_ += i_14_
                         i_6_ += i_12_
@@ -260,13 +265,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
                 i_7_ -= i_11_
                 i_11_ = this.anInt10482 * i_11_
                 while (--i_7_ >= 0) {
-                    TextureFormatInfo.method2289(i shr 16, i_11_, -62, 0, this.aByteArray10486, i_9_ shr 16)
+                    TextureFormatInfoStatics.method2289(i shr 16, i_11_, -62, 0, this.aByteArray10486, i_9_ shr 16)
                     i += i_12_
                     i_9_ += i_14_
                     i_11_ += this.anInt10482
                 }
                 while (--i_10_ >= 0) {
-                    TextureFormatInfo.method2289(i_6_ shr 16, i_11_, -66, 0, this.aByteArray10486, i_9_ shr 16)
+                    TextureFormatInfoStatics.method2289(i_6_ shr 16, i_11_, -66, 0, this.aByteArray10486, i_9_ shr 16)
                     i_6_ += i_15_
                     i_9_ += i_14_
                     i_11_ += this.anInt10482
@@ -276,13 +281,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
                 i_7_ -= i_11_
                 i_11_ *= this.anInt10482
                 while (--i_7_ >= 0) {
-                    TextureFormatInfo.method2289(i_9_ shr 16, i_11_, -67, 0, this.aByteArray10486, i shr 16)
+                    TextureFormatInfoStatics.method2289(i_9_ shr 16, i_11_, -67, 0, this.aByteArray10486, i shr 16)
                     i_9_ += i_14_
                     i += i_12_
                     i_11_ += this.anInt10482
                 }
                 while (--i_10_ >= 0) {
-                    TextureFormatInfo.method2289(i_9_ shr 16, i_11_, -108, 0, this.aByteArray10486, i_6_ shr 16)
+                    TextureFormatInfoStatics.method2289(i_9_ shr 16, i_11_, -108, 0, this.aByteArray10486, i_6_ shr 16)
                     i_9_ += i_14_
                     i_6_ += i_15_
                     i_11_ += this.anInt10482
@@ -306,13 +311,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
                 i_10_ -= i_11_
                 i_11_ = this.anInt10482 * i_11_
                 while (--i_10_ >= 0) {
-                    TextureFormatInfo.method2289(i_9_ shr 16, i_11_, -85, 0, this.aByteArray10486, i_6_ shr 16)
+                    TextureFormatInfoStatics.method2289(i_9_ shr 16, i_11_, -85, 0, this.aByteArray10486, i_6_ shr 16)
                     i_6_ += i_12_
                     i_11_ += this.anInt10482
                     i_9_ += i_14_
                 }
                 while (--i_7_ >= 0) {
-                    TextureFormatInfo.method2289(i shr 16, i_11_, -92, 0, this.aByteArray10486, i_6_ shr 16)
+                    TextureFormatInfoStatics.method2289(i shr 16, i_11_, -92, 0, this.aByteArray10486, i_6_ shr 16)
                     i_11_ += this.anInt10482
                     i += i_15_
                     i_6_ += i_12_
@@ -322,13 +327,13 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
                 i_10_ -= i_11_
                 i_11_ = this.anInt10482 * i_11_
                 while (--i_10_ >= 0) {
-                    TextureFormatInfo.method2289(i_6_ shr 16, i_11_, -113, 0, this.aByteArray10486, i_9_ shr 16)
+                    TextureFormatInfoStatics.method2289(i_6_ shr 16, i_11_, -113, 0, this.aByteArray10486, i_9_ shr 16)
                     i_11_ += this.anInt10482
                     i_6_ += i_12_
                     i_9_ += i_14_
                 }
                 while (--i_7_ >= 0) {
-                    TextureFormatInfo.method2289(i_6_ shr 16, i_11_, -125, 0, this.aByteArray10486, i shr 16)
+                    TextureFormatInfoStatics.method2289(i_6_ shr 16, i_11_, -125, 0, this.aByteArray10486, i shr 16)
                     i_6_ += i_12_
                     i += i_15_
                     i_11_ += this.anInt10482
@@ -345,39 +350,5 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
 
     init {
         this.aByteArray10486 = ByteArray(i * i_19_)
-    }
-
-    companion object {
-        @JvmField
-        var aJs5Archive_10480: Js5Archive? = null
-        @JvmField
-        var anInt10481: Int = 0
-        @JvmField
-        var anInt10483: Int = 0
-        @JvmField
-        var anInt10485: Int = 0
-        @JvmField
-        var aSmoothingBuffer_10488: SmoothingBuffer? = null
-        @JvmField
-        var anInt10490: Int = 0
-        @JvmField
-        var anInt10491: Int = 0
-        @JvmField
-        var aNodeDeque_10492: NodeDeque? = NodeDeque()
-
-        @JvmStatic
-        fun method3295(i: Int) {
-            aJs5Archive_10480 = null
-            aSmoothingBuffer_10488 = null
-            aNodeDeque_10492 = null
-            if (i != -1) method3295(109)
-        }
-
-        @JvmStatic
-        fun method3297(i: Int, i_20_: Int, i_21_: Int): ActorEntity? {
-            val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_20_]!![i_21_]
-            if (class357 == null) return null
-            return class357.aClass318_Sub1_Sub4_4406
-        }
     }
 }

@@ -5,6 +5,16 @@ import java.awt.image.ColorModel
 import java.awt.image.DirectColorModel
 import java.awt.image.ImageConsumer
 import java.awt.image.ImageProducer
+import ProducerImageSurfaceStatics.anInt9068
+import ProducerImageSurfaceStatics.anIntArray9069
+import ProducerImageSurfaceStatics.anInt9070
+import ProducerImageSurfaceStatics.anInt9071
+import ProducerImageSurfaceStatics.anInt9072
+import ProducerImageSurfaceStatics.anInt9074
+import ProducerImageSurfaceStatics.anInt9076
+import ProducerImageSurfaceStatics.anInt9079
+import ProducerImageSurfaceStatics.anInt9080
+import ProducerImageSurfaceStatics.anInt9081
 
 class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
     private var aCanvas9073: Canvas? = null
@@ -89,37 +99,5 @@ class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
 
     override fun requestTopDownLeftRightResend(imageconsumer: ImageConsumer?) {
         anInt9070++
-    }
-
-    companion object {
-        @JvmField
-        var anInt9068: Int = 0
-        var anIntArray9069: IntArray? = IntArray(1)
-        @JvmField
-        var anInt9070: Int = 0
-        @JvmField
-        var anInt9071: Int = 0
-        @JvmField
-        var anInt9072: Int = 0
-        @JvmField
-        var anInt9074: Int = 0
-        @JvmField
-        var anInt9076: Int = 0
-        @JvmField
-        var anInt9077: Int = 0
-        @JvmField
-        var anInt9079: Int = 0
-        @JvmField
-        var anInt9080: Int = 0
-        @JvmField
-        var anInt9081: Int = 0
-        @JvmField
-        var aSceneCollisionEntryArrayArrayArray9082: Array<Array<Array<SceneCollisionEntry?>?>?>? = null
-        @JvmStatic
-        fun method3016(i: Int) {
-            if (i != 65280) method3016(-19)
-            anIntArray9069 = null
-            aSceneCollisionEntryArrayArrayArray9082 = null
-        }
     }
 }

@@ -1,3 +1,11 @@
+import IdleAnimationsOptionStateStatics.anInt5904
+import IdleAnimationsOptionStateStatics.anInt5905
+import IdleAnimationsOptionStateStatics.anInt5906
+import IdleAnimationsOptionStateStatics.anInt5907
+import IdleAnimationsOptionStateStatics.anInt5908
+import IdleAnimationsOptionStateStatics.anInt5909
+import IdleAnimationsOptionStateStatics.anInt5910
+
 /* Class239_Sub7 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -46,22 +54,5 @@ class IdleAnimationsOptionState : GraphicsOptionState {
         anInt5907++
         if (i != 20014) anInt5909 = 100
         return 2
-    }
-
-    companion object {
-        @JvmField
-        var anInt5904: Int = 0
-        @JvmField
-        var anInt5905: Int = 0
-        @JvmField
-        var anInt5906: Int = 0
-        @JvmField
-        var anInt5907: Int = 0
-        @JvmField
-        var anInt5908: Int = 0
-        @JvmField
-        var anInt5909: Int = -1
-        @JvmField
-        var anInt5910: Int = 0
     }
 }

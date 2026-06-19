@@ -1,3 +1,12 @@
+import ItemModelDefinitionStatics.anInt427
+import ItemModelDefinitionStatics.anInt428
+import ItemModelDefinitionStatics.anInt432
+import ItemModelDefinitionStatics.anInt437
+import ItemModelDefinitionStatics.anInt440
+import ItemModelDefinitionStatics.anInt441
+import ItemModelDefinitionStatics.anInt445
+import ItemModelDefinitionStatics.anInt446
+
 /* Class31 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -83,20 +92,20 @@ class ItemModelDefinition {
         anInt446++
         val class45 = this.aModelDefinitionCache_438!!.aJs5Archive_2873!!
         if (anInt421 >= 0 && this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt421.toLong(), 121) == null && class45.method421(false, anInt421)) {
-            val spriteImage = SpriteImage.method1512(class45, anInt421)
+            val spriteImage = SpriteImageStatics.method1512(class45, anInt421)
             this.aModelDefinitionCache_438!!.aLruByteCache_2862.method582(var_renderer.method3691(spriteImage, true), anInt421.toLong(), (-112).toByte())
         }
         if (anInt433 >= 0 && this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt433.toLong(), -99) == null && class45.method421(false, anInt433)) {
-            val spriteImage = SpriteImage.method1512(class45, anInt433)
+            val spriteImage = SpriteImageStatics.method1512(class45, anInt433)
             this.aModelDefinitionCache_438!!.aLruByteCache_2862.method582(var_renderer.method3691(spriteImage, true), anInt433.toLong(), (-128).toByte())
         }
         if (anInt429 >= 0 && this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt429.toLong(), 86) == null && class45.method421(false, anInt429)) {
-            val spriteImage = SpriteImage.method1512(class45, anInt429)
+            val spriteImage = SpriteImageStatics.method1512(class45, anInt429)
             this.aModelDefinitionCache_438!!.aLruByteCache_2862.method582(var_renderer.method3691(spriteImage, true), anInt429.toLong(), (-108).toByte())
         }
         if (i > -7) this.anInt434 = -14
         if (anInt439 >= 0 && this.aModelDefinitionCache_438!!.aLruByteCache_2862.method583(anInt439.toLong(), -83) == null && class45.method421(false, anInt439)) {
-            val spriteImage = SpriteImage.method1512(class45, anInt439)
+            val spriteImage = SpriteImageStatics.method1512(class45, anInt439)
             this.aModelDefinitionCache_438!!.aLruByteCache_2862.method582(var_renderer.method3691(spriteImage, true), anInt439.toLong(), (-101).toByte())
         }
     }
@@ -141,54 +150,5 @@ class ItemModelDefinition {
         this.anInt431 = -1
         this.anInt435 = -1
         anInt421 = -1
-    }
-
-    companion object {
-        @JvmField
-        var anInt425: Int = 0
-        @JvmField
-        var anInt427: Int = 0
-        @JvmField
-        var anInt428: Int = 0
-        var aCameraNodeList_430: CameraNodeList?
-        @JvmField
-        var anInt432: Int = 0
-        @JvmField
-        var anInt436: Int = 0
-        @JvmField
-        var anInt437: Int = 0
-        @JvmField
-        var anInt440: Int = 0
-        @JvmField
-        var anInt441: Int = 0
-        @JvmField
-        var anInt442: Int = 0
-        @JvmField
-        var anInt443: Int = 1
-        @JvmField
-        var anInt445: Int = 0
-        @JvmField
-        var anInt446: Int = 0
-
-        @JvmStatic
-        fun method326(i: Byte) {
-            anInt442++
-            if (!MinimapSquareDrawer.aBoolean5224) {
-                WorldMapPolygonIconLabel.aBoolean10174 = true
-                MultiFieldRecord.aFloat6898 += (12.0f - MultiFieldRecord.aFloat6898) / 2.0f
-                MinimapSquareDrawer.aBoolean5224 = true
-                if (i.toInt() != 68) aCameraNodeList_430 = null
-            }
-        }
-
-        @JvmStatic
-        fun method328(i: Int) {
-            if (i != 0) anInt425 = -128
-            aCameraNodeList_430 = null
-        }
-
-        init {
-            aCameraNodeList_430 = CameraNodeList()
-        }
     }
 }

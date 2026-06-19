@@ -1,6 +1,7 @@
 import jagdx.IDirect3DPixelShader
 import jagdx.IDirect3DVertexShader
 import kotlin.math.abs
+import D3dEnvMappedWaterPassStatics.aFloatArray7342
 
 class D3dEnvMappedWaterPass internal constructor(private var aD3dRenderDevice_7346: D3dRenderDevice, js5Archive: Js5Archive?, private val aNormalMapGenerator_7348: NormalMapGenerator) : AbstractRenderPass(aD3dRenderDevice_7346) {
     private var anIDirect3DPixelShader7343: IDirect3DPixelShader? = null
@@ -134,9 +135,5 @@ class D3dEnvMappedWaterPass internal constructor(private var aD3dRenderDevice_73
                 idirect3ddevice.a(4, class101_sub2.method930(0, aFloatArray7342!!))
             }
         }
-    }
-
-    companion object {
-        private var aFloatArray7342: FloatArray? = FloatArray(16)
     }
 }

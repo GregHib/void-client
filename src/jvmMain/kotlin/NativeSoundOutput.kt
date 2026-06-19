@@ -1,4 +1,5 @@
 import java.awt.Component
+import NativeSoundOutputStatics.anAudioDeviceController_6182
 
 class NativeSoundOutput internal constructor(privilegedOperationWorker: PrivilegedOperationWorker, private val anInt6181: Int) : SoundChannelMixer() {
     override fun method2083() {
@@ -15,7 +16,7 @@ class NativeSoundOutput internal constructor(privilegedOperationWorker: Privileg
 
     @Throws(Exception::class)
     override fun method2095(component: Component?) {
-        anAudioDeviceController_6182!!.method78(HslColorConfig.anInt339, NpcEntityUpdater.aBoolean3652, component, 27929)
+        anAudioDeviceController_6182!!.method78(HslColorConfigStatics.anInt339, NpcEntityUpdater.aBoolean3652, component, 27929)
     }
 
     override fun method2094() {
@@ -30,14 +31,5 @@ class NativeSoundOutput internal constructor(privilegedOperationWorker: Privileg
     override fun method2082(i: Int) {
         require(i <= 32768)
         anAudioDeviceController_6182!!.method79(i, anInt6181, 112.toByte())
-    }
-
-    companion object {
-        private var anAudioDeviceController_6182: AudioDeviceController? = null
-
-        @JvmStatic
-        fun method2097() {
-            anAudioDeviceController_6182 = null
-        }
     }
 }

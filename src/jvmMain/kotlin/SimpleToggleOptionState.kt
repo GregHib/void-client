@@ -1,3 +1,11 @@
+import SimpleToggleOptionStateStatics.anInt5884
+import SimpleToggleOptionStateStatics.anInt5886
+import SimpleToggleOptionStateStatics.anInt5887
+import SimpleToggleOptionStateStatics.anInt5888
+import SimpleToggleOptionStateStatics.anInt5889
+import SimpleToggleOptionStateStatics.anInt5891
+import SimpleToggleOptionStateStatics.anInt5892
+
 /* Class239_Sub5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -34,87 +42,5 @@ class SimpleToggleOptionState : GraphicsOptionState {
         anInt5888++
         if (bool != false) method1710(-110)
         if (this.anInt3138 != 1 && this.anInt3138 != 0) this.anInt3138 = method1710(20014)
-    }
-
-    companion object {
-        @JvmField
-        var anInt5884: Int = 0
-        @JvmField
-        var anInt5885: Int = 0
-        @JvmField
-        var anInt5886: Int = 0
-        @JvmField
-        var anInt5887: Int = 0
-        @JvmField
-        var anInt5888: Int = 0
-        @JvmField
-        var anInt5889: Int = 0
-        @JvmField
-        var anInt5890: Int = 0
-        @JvmField
-        var anInt5891: Int = 0
-        @JvmField
-        var anInt5892: Int = 0
-        @JvmField
-        var anInt5893: Int = 0
-
-        @JvmStatic
-        fun method1740(i: Int, i_2_: Int, bool: Boolean): Boolean {
-            if (bool != false) return true
-            anInt5890++
-            return DetailLevelOptionState.method1833((-128).toByte(), i_2_, i) || HardCacheEntryReference.method3200(i_2_, i, 96.toByte())
-        }
-
-        @JvmStatic
-        fun method1741(class348_sub49_sub2: CipheredPacketBuffer, i: Byte) {
-            anInt5893++
-            class348_sub49_sub2.startBitAccess(122)
-            val i_3_ = CharCodeMap.anInt9591
-            val player = (Player().also { LoadingBarRenderer.aPlayerArray5058!![i_3_] = it }.also { LocalPlayerState.aPlayer_1907 = it })
-            player.anInt10290 = i_3_
-            val i_4_ = class348_sub49_sub2.readBits((-24).toByte(), 30)
-            if (i.toInt() != 118) anInt5886 = 111
-            val i_5_ = (i_4_ shr 28).toByte()
-            val i_6_ = i_4_ shr 14 and 0x3fff
-            player.anIntArray10320!![0] = -ArbVertexProgram.regionTileX + i_6_
-            val i_7_ = 0x3fff and i_4_
-            player.x = (((player.anIntArray10320!![0]) shl 9) + (player.method2436(91.toByte()) shl 8))
-            player.anIntArray10317!![0] = i_7_ + -RegionMapDecoder.regionTileY
-            player.y = (((player.anIntArray10317!![0]) shl 9) - -(player.method2436(85.toByte()) shl 8))
-            player.aByte6376 = i_5_
-            player.plane = player.aByte6376
-            CompiledScriptCache.anInt4372 = player.plane.toInt()
-            if (NpcType.method802((player.anIntArray10317!![0]), (player.anIntArray10320!![0]), true)) player.aByte6376++
-            if (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_3_] != null) player.method2452(84.toByte(), (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_3_]!!))
-            ShaderState.anInt6513 = 0
-            ScrollTexMaterialPass.anIntArray6290!![ShaderState.anInt6513++] = i_3_
-            AbstractBloomEffect.aByteArray6624!![i_3_] = 0.toByte()
-            ShortMatrixNode.anInt9513 = 0
-            for (i_8_ in 1..2047) {
-                if (i_8_ != i_3_) {
-                    val i_9_ = class348_sub49_sub2.readBits((-24).toByte(), 18)
-                    val i_10_ = i_9_ shr 16
-                    val i_11_ = (i_9_ and 0xff78) shr 8
-                    val i_12_ = i_9_ and 0xff
-                    SoundBankPatch.aTextureAtlasStateArray6802s!![i_8_] = TextureAtlasState()
-                    val class359 = SoundBankPatch.aTextureAtlasStateArray6802s!![i_8_]!!
-                    class359.aBoolean4426 = false
-                    class359.anInt4420 = (i_11_ shl 14) + ((i_10_ shl 28) + i_12_)
-                    class359.anInt4423 = 0
-                    class359.anInt4425 = -1
-                    GlArrayBufferObject.anIntArray4709!![ShortMatrixNode.anInt9513++] = i_8_
-                    AbstractBloomEffect.aByteArray6624!![i_8_] = 0.toByte()
-                }
-            }
-            class348_sub49_sub2.stopBitAccess(false)
-        }
-
-        @JvmStatic
-        fun method1742(bool: Boolean, i: Int): MapLabelMenuEntry? {
-            if (bool != false) method1740(35, -126, false)
-            anInt5885++
-            if (!RenderableGroup.aBoolean5013 || SceneObjectEntity.anInt8731 > i || MultiLevelOptionState.anInt6151 < i) return null
-            return (FireParticleStream.aClass110_Sub1Array97!![i + -SceneObjectEntity.anInt8731])
-        }
     }
 }

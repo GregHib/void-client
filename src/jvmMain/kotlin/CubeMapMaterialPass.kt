@@ -1,9 +1,18 @@
-import jaggl.OpenGL.Companion.glDisable
-import jaggl.OpenGL.Companion.glEnable
-import jaggl.OpenGL.Companion.glLoadIdentity
-import jaggl.OpenGL.Companion.glLoadMatrixf
-import jaggl.OpenGL.Companion.glMatrixMode
-import jaggl.OpenGL.Companion.glTexGeni
+import jaggl.OpenGLStatics.glDisable
+import jaggl.OpenGLStatics.glEnable
+import jaggl.OpenGLStatics.glLoadIdentity
+import jaggl.OpenGLStatics.glLoadMatrixf
+import jaggl.OpenGLStatics.glMatrixMode
+import jaggl.OpenGLStatics.glTexGeni
+import CubeMapMaterialPassStatics.method2171
+import CubeMapMaterialPassStatics.method2172
+import CubeMapMaterialPassStatics.anInt6293
+import CubeMapMaterialPassStatics.anInt6294
+import CubeMapMaterialPassStatics.anInt6297
+import CubeMapMaterialPassStatics.anInt6298
+import CubeMapMaterialPassStatics.anInt6303
+import CubeMapMaterialPassStatics.aFloat6304
+import CubeMapMaterialPassStatics.anInt6305
 
 class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : MaterialPass(var_ha_Sub2) {
     private var aBoolean6301 = false
@@ -92,78 +101,5 @@ class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Ma
     override fun method2136(i: Int, i_9_: Int, i_10_: Byte) {
         anInt6305++
         if (i_10_ > -42) aBoolean6301 = false
-    }
-
-    companion object {
-        @JvmField
-        var anInt6292: Int = 0
-        @JvmField
-        var anInt6293: Int = 0
-        @JvmField
-        var anInt6294: Int = 0
-        @JvmField
-        var anInt6295: Int = 0
-        @JvmField
-        var anIntArray6296: IntArray? = intArrayOf(32, 39, 44, 47)
-        @JvmField
-        var anInt6297: Int = 0
-        @JvmField
-        var anInt6298: Int = 0
-        @JvmField
-        var anInt6299: Int = -1
-        @JvmField
-        var anInt6300: Int = 0
-        @JvmField
-        var anInt6303: Int = 0
-        @JvmField
-        var aFloat6304: Float = 0f
-        @JvmField
-        var anInt6305: Int = 0
-
-        @JvmStatic
-        fun method2170(i: Int, i_0_: Byte) {
-            ColourAdjustment.anInt859 = -1
-            anInt6300++
-            if (i_0_.toInt() != 3) method2170(-109, 7.toByte())
-            DebugOverlayRenderer.anInt3170 = i
-            ColourAdjustment.anInt859 = -1
-            MenuActionNode.method2811(false)
-        }
-
-        @JvmStatic
-        fun method2171(i: Int) {
-            if (i != 0) method2172(-6)
-            anIntArray6296 = null
-        }
-
-        @JvmStatic
-        fun method2172(i: Int) {
-            val i_2_ = 27 / ((i - -12) / 57)
-            anInt6295++
-            if (JagGlToolkitFactory.anApplet1530 != null) {
-                try {
-                    val string = JagGlToolkitFactory.anApplet1530!!.getParameter("cookiehost")
-                    val i_3_ = (GameClock.method599(-74) / 86400000L).toInt() - 11745
-                    val string_4_ = ("usrdob=" + i_3_ + "; version=1; path=/; domain=" + string)
-                    JavaScriptBridge.method1615(JagGlToolkitFactory.anApplet1530, -15092, "document.cookie=\"" + string_4_ + "\"")
-                } catch (throwable: Throwable) {
-                    /* empty */
-                }
-            }
-        }
-
-        @JvmStatic
-        fun method2173(bool: Boolean, i: Int, bool_6_: Boolean) {
-            val i_7_ = 111 % ((i - -62) / 38)
-            anInt6292++
-            if (bool) {
-                SpriteArchiveLoader.anInt383--
-                if (SpriteArchiveLoader.anInt383 == 0) ParticleEmitterNode.anIntArray179 = null
-            }
-            if (bool_6_) {
-                ColourKeyTextureNode.anInt9346--
-                if (ColourKeyTextureNode.anInt9346 == 0) Crc64Hashable.anIntArray4983 = null
-            }
-        }
     }
 }

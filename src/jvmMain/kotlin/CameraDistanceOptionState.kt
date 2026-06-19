@@ -1,3 +1,10 @@
+import CameraDistanceOptionStateStatics.anInt5851
+import CameraDistanceOptionStateStatics.anInt5852
+import CameraDistanceOptionStateStatics.anInt5853
+import CameraDistanceOptionStateStatics.anInt5854
+import CameraDistanceOptionStateStatics.anInt5856
+import CameraDistanceOptionStateStatics.aAbstractModelRendererArray5857
+
 /* Class239_Sub2 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
@@ -36,71 +43,4 @@ class CameraDistanceOptionState : GraphicsOptionState {
     }
 
     internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
-
-    companion object {
-        @JvmField
-        var anInt5851: Int = 0
-        @JvmField
-        var anInt5852: Int = 0
-        @JvmField
-        var anInt5853: Int = 0
-        @JvmField
-        var anInt5854: Int = 0
-        @JvmField
-        var anInt5855: Int = 0
-        @JvmField
-        var anInt5856: Int = 0
-        @JvmField
-        var aAbstractModelRendererArray5857: Array<AbstractModelRenderer?>? = null
-
-        @JvmStatic
-        fun method1724(i: Int) {
-            aAbstractModelRendererArray5857 = null
-            if (i != -4) aAbstractModelRendererArray5857 = null
-        }
-
-        @JvmStatic
-        fun method1725(i: Int) {
-            anInt5855++
-            var i_1_ = 1024
-            var i_2_ = 3072
-            if (ParticleSystemRenderer.aBoolean3870) {
-                i_2_ = 4096
-                if (FloatBuffer.aBoolean9746) i_1_ = 2048
-            }
-            if (SceneObjectSpawner.aFloat1287 < i_1_.toFloat()) SceneObjectSpawner.aFloat1287 = i_1_.toFloat()
-            if (SceneObjectSpawner.aFloat1287 > i_2_.toFloat()) SceneObjectSpawner.aFloat1287 = i_2_.toFloat()
-            while ( /**/ResourceProvider.aFloat3938 >= 16384.0f) {
-                ResourceProvider.aFloat3938 -= 16384.0f
-            }
-            while ( /**/ResourceProvider.aFloat3938 < 0.0f) {
-                ResourceProvider.aFloat3938 += 16384.0f
-            }
-            val i_3_ = FrameStatsReset.anInt5799 shr 9
-            val i_4_ = AsyncTaskHandle.anInt2578 shr 9
-            val i_5_ = CollisionMapAccessor.method2064(FrameStatsReset.anInt5799, CompiledScriptCache.anInt4372, 11219, AsyncTaskHandle.anInt2578)
-            var i_6_ = 0
-            if (i_3_ > 3 && i_4_ > 3 && -4 + GlCubemapLightPass.anInt7319 > i_3_ && RangeThresholdTextureNode.anInt9109 - 4 > i_4_) {
-                var i_7_ = i_3_ - 4
-                while (i_3_ - -4 >= i_7_) {
-                    for (i_8_ in -4 + i_4_..4 + i_4_) {
-                        var i_9_ = CompiledScriptCache.anInt4372
-                        if (i_9_ < 3 && NpcType.method802(i_8_, i_7_, true)) i_9_++
-                        var i_10_ = 0
-                        if ((MapTileShape.aClass237_Sub1_4197!!.aByteArrayArrayArray3104) != null && (MapTileShape.aClass237_Sub1_4197!!.aByteArrayArrayArray3104!![i_9_]) != null) i_10_ = 8 * ((MapTileShape.aClass237_Sub1_4197!!.aByteArrayArrayArray3104!![i_9_]!![i_7_]!![i_8_]).toInt() and 0xff) shl 2
-                        if (NativeSprite.aTerrainTileArray5191 != null && NativeSprite.aTerrainTileArray5191!![i_9_] != null) {
-                            val i_11_ = (i_5_ + i_10_ + -NativeSprite.aTerrainTileArray5191!![i_9_]!!.method3982((-86).toByte(), i_8_, i_7_))
-                            if (i_6_ < i_11_) i_6_ = i_11_
-                        }
-                    }
-                    i_7_++
-                }
-            }
-            var i_12_ = 1536 * (i_6_ shr 2)
-            if (i_12_ > 786432) i_12_ = 786432
-            if (i_12_ < i) i_12_ = 262144
-            if (IntKeyNode.anInt6979 < i_12_) IntKeyNode.anInt6979 += (i_12_ - IntKeyNode.anInt6979) / 24
-            else if (IntKeyNode.anInt6979 > i_12_) IntKeyNode.anInt6979 += (-IntKeyNode.anInt6979 + i_12_) / 80
-        }
-    }
 }

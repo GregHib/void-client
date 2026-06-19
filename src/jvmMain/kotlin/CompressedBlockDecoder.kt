@@ -71,7 +71,7 @@ object CompressedBlockDecoder {
         var i_19_ = bzip2DecoderState.anInt533
         var i_20_ = bzip2DecoderState.anInt555
         var i_21_ = bzip2DecoderState.anInt537
-        val `is` = WaterMaterialPass.anIntArray6228
+        val `is` = WaterMaterialPassStatics.anIntArray6228
         var i_22_ = bzip2DecoderState.anInt552
         val is_23_ = bzip2DecoderState.aByteArray527
         var i_24_ = bzip2DecoderState.anInt548
@@ -158,7 +158,7 @@ object CompressedBlockDecoder {
         bzip2DecoderState.anInt533 = i_19_
         bzip2DecoderState.anInt555 = i_20_
         bzip2DecoderState.anInt537 = i_21_
-        WaterMaterialPass.anIntArray6228 = `is`
+        WaterMaterialPassStatics.anIntArray6228 = `is`
         bzip2DecoderState.anInt552 = i_22_
         bzip2DecoderState.aByteArray527 = is_23_
         bzip2DecoderState.anInt548 = i_24_
@@ -204,7 +204,7 @@ object CompressedBlockDecoder {
         var is_48_: IntArray? = null
         var is_49_: IntArray? = null
         bzip2DecoderState.anInt526 = 1
-        if (WaterMaterialPass.anIntArray6228 == null) WaterMaterialPass.anIntArray6228 = IntArray(bzip2DecoderState.anInt526 * 100000)
+        if (WaterMaterialPassStatics.anIntArray6228 == null) WaterMaterialPassStatics.anIntArray6228 = IntArray(bzip2DecoderState.anInt526 * 100000)
         var bool_50_ = true
         while (bool_50_) {
             var i_51_ = method1548(bzip2DecoderState)
@@ -351,7 +351,7 @@ object CompressedBlockDecoder {
                     i_52_ = (bzip2DecoderState.aByteArray528!![(bzip2DecoderState.aByteArray545!![bzip2DecoderState.anIntArray540!![0]]).toInt() and 0xff]).toInt()
                     bzip2DecoderState.anIntArray535!![i_52_ and 0xff] += i_87_
                     while ( /**/i_87_ > 0) {
-                        WaterMaterialPass.anIntArray6228!![i_81_] = i_52_ and 0xff
+                        WaterMaterialPassStatics.anIntArray6228!![i_81_] = i_52_ and 0xff
                         i_81_++
                         i_87_--
                     }
@@ -402,7 +402,7 @@ object CompressedBlockDecoder {
                         }
                     }
                     bzip2DecoderState.anIntArray535!![(bzip2DecoderState.aByteArray528!![i_51_.toInt() and 0xff].toInt() and 0xff)] = bzip2DecoderState.anIntArray535!![(bzip2DecoderState.aByteArray528!![i_51_.toInt() and 0xff].toInt() and 0xff)] + 1
-                    WaterMaterialPass.anIntArray6228!![i_81_] = (bzip2DecoderState.aByteArray528!![i_51_.toInt() and 0xff].toInt() and 0xff)
+                    WaterMaterialPassStatics.anIntArray6228!![i_81_] = (bzip2DecoderState.aByteArray528!![i_51_.toInt() and 0xff].toInt() and 0xff)
                     i_81_++
                     if (i_76_ == 0) {
                         i_75_++
@@ -430,13 +430,13 @@ object CompressedBlockDecoder {
             for (i_100_ in 1..256) bzip2DecoderState.anIntArray557!![i_100_] = bzip2DecoderState.anIntArray535!![i_100_ - 1]
             for (i_101_ in 1..256) bzip2DecoderState.anIntArray557!![i_101_] += bzip2DecoderState.anIntArray557!![i_101_ - 1]
             for (i_102_ in 0..<i_81_) {
-                i_52_ = (WaterMaterialPass.anIntArray6228!![i_102_] and 0xff).toByte().toInt()
-                WaterMaterialPass.anIntArray6228!![(bzip2DecoderState.anIntArray557!![i_52_ and 0xff])] = WaterMaterialPass.anIntArray6228!![(bzip2DecoderState.anIntArray557!![i_52_ and 0xff])] or (i_102_ shl 8)
+                i_52_ = (WaterMaterialPassStatics.anIntArray6228!![i_102_] and 0xff).toByte().toInt()
+                WaterMaterialPassStatics.anIntArray6228!![(bzip2DecoderState.anIntArray557!![i_52_ and 0xff])] = WaterMaterialPassStatics.anIntArray6228!![(bzip2DecoderState.anIntArray557!![i_52_ and 0xff])] or (i_102_ shl 8)
                 bzip2DecoderState.anIntArray557!![i_52_ and 0xff] = bzip2DecoderState.anIntArray557!![i_52_ and 0xff] + 1
             }
-            bzip2DecoderState.anInt552 = (WaterMaterialPass.anIntArray6228!![bzip2DecoderState.anInt530] shr 8)
+            bzip2DecoderState.anInt552 = (WaterMaterialPassStatics.anIntArray6228!![bzip2DecoderState.anInt530] shr 8)
             bzip2DecoderState.anInt555 = 0
-            bzip2DecoderState.anInt552 = WaterMaterialPass.anIntArray6228!![bzip2DecoderState.anInt552]
+            bzip2DecoderState.anInt552 = WaterMaterialPassStatics.anIntArray6228!![bzip2DecoderState.anInt552]
             bzip2DecoderState.anInt537 = (bzip2DecoderState.anInt552 and 0xff).toByte().toInt()
             bzip2DecoderState.anInt552 = bzip2DecoderState.anInt552 shr 8
             bzip2DecoderState.anInt555++

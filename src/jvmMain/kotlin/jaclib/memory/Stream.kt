@@ -1,5 +1,8 @@
 package jaclib.memory
 
+import jaclib.memory.StreamStatics.floatToRawIntBits
+import jaclib.memory.StreamStatics.c
+
 
 class Stream private constructor(arg0: Int) {
     private var a = 0
@@ -141,18 +144,5 @@ class Stream private constructor(arg0: Int) {
             this.a()
         }
         this.e[this.c++] = arg0.toByte()
-    }
-
-    companion object {
-        @JvmStatic
-        external fun floatToRawIntBits(arg0: Float): Int
-
-        @JvmStatic
-        private external fun getLSB(arg0: Int): Byte
-
-        @JvmStatic
-        fun c(): Boolean {
-            return getLSB(-65536).toInt() == -1
-        }
     }
 }

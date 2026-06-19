@@ -1,3 +1,5 @@
+import BufferPositionTrackerStatics.anInt3149
+
 /* Class241 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -12,34 +14,12 @@ abstract class BufferPositionTracker {
         try {
             anInt3149++
             val l_1_ = method1858(-73)
-            if (i.toLong() < l_1_) TexGenMaterialPass.method2161(61.toByte(), l_1_)
+            if (i.toLong() < l_1_) TexGenMaterialPassStatics.method2161(61.toByte(), l_1_)
             return method1859(71, l)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "tb.H(" + i + ',' + l + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "tb.H(" + i + ',' + l + ')')
         }
     }
 
     abstract fun method1862(i: Int): Long
-
-    companion object {
-        @JvmField
-        var anInt3148: Int = 0
-        @JvmField
-        var anInt3149: Int = 0
-        @JvmField
-        var aFontMetaRef_3150: FontMetaRef? = FontMetaRef(71, 2)
-
-        @JvmStatic
-        fun method1857(i: Byte): Long {
-            anInt3148++
-            if (i.toInt() != -45) return -58L
-            return FacingDirectionNode.aBufferPositionTracker_6660!!.method1862(-18931)
-        }
-
-        @JvmStatic
-        fun method1860(i: Byte) {
-            aFontMetaRef_3150 = null
-            val i_0_ = -52 / ((-22 - i) / 55)
-        }
-    }
 }

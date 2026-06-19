@@ -1,4 +1,6 @@
-import TextureDefinitionCache.Companion.method1626
+import TextureDefinitionCacheStatics.method1626
+import BufferToggleStateStatics.anInt3715
+import BufferToggleStateStatics.anInt3718
 
 /* Class290 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -17,32 +19,5 @@ class BufferToggleState internal constructor(var aBoolean3709: Boolean) {
         if (i >= -4) method2195(true)
         anInt3718++
         return this.aBoolean3714 && !this.aBoolean3709
-    }
-
-    companion object {
-        var aBoolean3706: Boolean = false
-        @JvmField
-        var anInt3707: Int = 0
-        var aFloat3710: Float = 0f
-        @JvmField
-        var anInt3712: Int = 0
-        var anInt3713: Int = 0
-        var anInt3715: Int = 0
-        var anInt3716: Int = 0
-        @JvmField
-        var anInt3717: Int = 1338
-        var anInt3718: Int = 0
-
-        @JvmStatic
-        fun method2196(i: Byte) {
-            NoOpGraphicsOptionState.anInt6043 = (GlCubemapLightPass.anInt7319.toDouble() * 34.46).toInt()
-            AnimationFrameDefinition.anInt6964 = 200
-            anInt3716++
-            if (i.toInt() == -9) {
-                NoOpGraphicsOptionState.anInt6043 = NoOpGraphicsOptionState.anInt6043 shl 2
-                if (FacingDirectionNode.aRenderer6654!!.method3670()) NoOpGraphicsOptionState.anInt6043 += 512
-                method1626(1, false)
-            }
-        }
     }
 }

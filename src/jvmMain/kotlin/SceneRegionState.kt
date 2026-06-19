@@ -1,4 +1,4 @@
-import ShadowQualityOptionState.Companion.method1791
+import ShadowQualityOptionStateStatics.method1791
 
 /* Class11 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

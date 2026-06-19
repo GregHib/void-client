@@ -1,8 +1,21 @@
 import ArrayCopyUtil.method1573
-import TexGenMaterialPass.Companion.method2161
+import TexGenMaterialPassStatics.method2161
 import GameClock.method599
 import java.awt.Component
 import kotlin.math.min
+import SoundChannelMixerStatics.method2090
+import SoundChannelMixerStatics.anInt3595
+import SoundChannelMixerStatics.anInt3596
+import SoundChannelMixerStatics.anInt3597
+import SoundChannelMixerStatics.anInt3598
+import SoundChannelMixerStatics.anInt3599
+import SoundChannelMixerStatics.anInt3600
+import SoundChannelMixerStatics.anInt3605
+import SoundChannelMixerStatics.anInt3606
+import SoundChannelMixerStatics.anInt3607
+import SoundChannelMixerStatics.anInt3609
+import SoundChannelMixerStatics.anInt3611
+import SoundChannelMixerStatics.anInt3612
 
 /*
  * Class279
@@ -52,7 +65,7 @@ open class SoundChannelMixer {
                 if (i != -6858) anInt3616 = 114
                 while ( /**/aLong3602 + 5000L < l) {
                     method2089(256, (-99).toByte())
-                    aLong3602 += (256000 / HslColorConfig.anInt339).toLong()
+                    aLong3602 += (256000 / HslColorConfigStatics.anInt339).toLong()
                     l = method599(-96)
                 }
             } catch (exception: Exception) {
@@ -126,8 +139,8 @@ open class SoundChannelMixer {
         method1573(`is`, 0, i_5_)
         anInt3615 -= i
         if (aClass348_Sub16_3604 != null && anInt3615 <= 0) {
-            anInt3615 += HslColorConfig.anInt339 shr 4
-            MenuActionNode.method2814(aClass348_Sub16_3604!!, 112)
+            anInt3615 += HslColorConfigStatics.anInt339 shr 4
+            MenuActionNodeStatics.method2814(aClass348_Sub16_3604!!, 112)
             method2085(-1846918107, aClass348_Sub16_3604!!, aClass348_Sub16_3604!!.method2820())
             var i_6_ = 0
             var i_7_ = 255
@@ -234,16 +247,16 @@ open class SoundChannelMixer {
     @Synchronized
     fun method2093(bool: Boolean) {
         anInt3609++
-        if (ParticleDefLoader.aBackgroundWorkerThread_2462 != null) {
+        if (ParticleDefLoaderStatics.aBackgroundWorkerThread_2462 != null) {
             var bool_35_ = true
             for (i in 0..1) {
-                if (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] === this) ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] = null
-                if (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] != null) bool_35_ = false
+                if (ParticleDefLoaderStatics.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] === this) ParticleDefLoaderStatics.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] = null
+                if (ParticleDefLoaderStatics.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] != null) bool_35_ = false
             }
             if (bool_35_) {
-                ParticleDefLoader.aBackgroundWorkerThread_2462!!.aBoolean3221 = true
-                while (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aBoolean3223) method2161(68.toByte(), 50L)
-                ParticleDefLoader.aBackgroundWorkerThread_2462 = null
+                ParticleDefLoaderStatics.aBackgroundWorkerThread_2462!!.aBoolean3221 = true
+                while (ParticleDefLoaderStatics.aBackgroundWorkerThread_2462!!.aBoolean3223) method2161(68.toByte(), 50L)
+                ParticleDefLoaderStatics.aBackgroundWorkerThread_2462 = null
             }
         }
         method2091()
@@ -265,64 +278,5 @@ open class SoundChannelMixer {
         aLong3602 = method599(-99)
         aClass348_Sub16Array3621 = arrayOfNulls<AudioStreamNode>(8)
         aClass348_Sub16Array3619 = arrayOfNulls<AudioStreamNode>(8)
-    }
-
-    companion object {
-        var anInt3594: Int = 0
-        var anInt3595: Int = 0
-        var anInt3596: Int = 0
-        var anInt3597: Int = 0
-        var anInt3598: Int = 0
-        var anInt3599: Int = 0
-        var anInt3600: Int = 0
-        var anInt3605: Int = 0
-        var anInt3606: Int = 0
-        var anInt3607: Int = 0
-        var anInt3608: Int = 0
-        var anInt3609: Int = 0
-        var anInt3611: Int = 0
-        var anInt3612: Int = 0
-        @JvmStatic
-        fun method2090(i: Int, i_20_: Int, bool: Boolean, i_21_: Byte, i_22_: Int, i_23_: Int, i_24_: Int) {
-            if ((if (bool) IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350)) != 0 && i != 0 && HintArrowOrMessage.anInt2021 < 50 && i_24_ != -1) GlTextureCubeMap.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(if (!bool) 2.toByte() else 3.toByte(), i_24_, i, i_23_, i_22_, 0, i_20_, null)
-            if (i_21_.toInt() == -35) anInt3608++
-        }
-
-        @JvmStatic
-        fun method2092(i: Int, i_25_: Int, `is`: IntArray?, i_26_: Int, objects: Array<Any?>?) {
-            try {
-                val i_27_ = -92 / ((i_26_ - -55) / 57)
-                if (i_25_ < i) {
-                    val i_28_ = (i + i_25_) / 2
-                    var i_29_ = i_25_
-                    val i_30_ = `is`!![i_28_]
-                    `is`[i_28_] = `is`[i]
-                    `is`[i] = i_30_
-                    val `object` = objects!![i_28_]
-                    objects[i_28_] = objects[i]
-                    objects[i] = `object`
-                    val i_31_ = if (i_30_ != 2147483647) 1 else 0
-                    for (i_32_ in i_25_..<i) {
-                        if (`is`[i_32_] < (i_31_ and i_32_) + i_30_) {
-                            val i_33_ = `is`[i_32_]
-                            `is`[i_32_] = `is`[i_29_]
-                            `is`[i_29_] = i_33_
-                            val object_34_ = objects[i_32_]
-                            objects[i_32_] = objects[i_29_]
-                            objects[i_29_++] = object_34_
-                        }
-                    }
-                    `is`[i] = `is`[i_29_]
-                    `is`[i_29_] = i_30_
-                    objects[i] = objects[i_29_]
-                    objects[i_29_] = `object`
-                    method2092(-1 + i_29_, i_25_, `is`, 9, objects)
-                    method2092(i, i_29_ - -1, `is`, -127, objects)
-                }
-                anInt3594++
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("cba.K(" + i + ',' + i_25_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_26_ + ',' + (if (objects != null) "{...}" else "null") + ')'))
-            }
-        }
     }
 }

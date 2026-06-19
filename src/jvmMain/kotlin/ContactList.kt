@@ -1,7 +1,10 @@
-import SceneModelBuilder.Companion.method2496
-import CollisionFlagQuery.Companion.method721
+import SceneModelBuilderStatics.method2496
+import CollisionFlagQueryStatics.method721
 import kotlin.math.min
 import kotlin.math.pow
+import ContactListStatics.anInt9613
+import ContactListStatics.anInt9614
+import ContactListStatics.anInt9619
 
 /* Class348_Sub42_Sub13 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -39,8 +42,8 @@ class ContactList internal constructor(var aString9617: String?) : HashLinkedLis
         if (this.anInt9615 == 0) {
             this.method2715(112.toByte())
             this.method3162(true)
-            NpcAnimationResolver.anInt166--
-            KeyboardLayoutCache.aLruByteCache_3301!!.method582(this, class348_sub42_sub12.aLong9600, (-128).toByte())
+            NpcAnimationResolverStatics.anInt166--
+            KeyboardLayoutCacheStatics.aLruByteCache_3301!!.method582(this, class348_sub42_sub12.aLong9600, (-128).toByte())
             return false
         }
         return i_5_ != method3235(-17937)
@@ -55,26 +58,5 @@ class ContactList internal constructor(var aString9617: String?) : HashLinkedLis
         anInt9619++
         if ((this.aLinkedNodeListIterator_9621.aClass348_Sub42_1647) !== this.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) return (this.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry).anInt9608
         return -1
-    }
-
-    companion object {
-        var anInt9613: Int = 0
-        var anInt9614: Int = 0
-        var aBoolean9616: Boolean = false
-        var anInt9618: Int = 0
-        var anInt9619: Int = 0
-        var anInt9620: Int = 0
-        fun method3232(d: Double, i: Byte) {
-            if (i <= -54) {
-                if (d != CubemapTextureImplSource.aDouble8713) {
-                    for (i_0_ in 0..255) {
-                        val i_1_ = (255.0 * (i_0_.toDouble() / 255.0).pow(d)).toInt()
-                        ProjectedGroundDecor.anIntArray10266!![i_0_] = min(i_1_, 255)
-                    }
-                    CubemapTextureImplSource.aDouble8713 = d
-                }
-                anInt9618++
-            }
-        }
     }
 }

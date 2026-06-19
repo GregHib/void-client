@@ -88,7 +88,7 @@ class FullscreenDisplayController {
                 bool = true
             }
         } catch (throwable: Throwable) {
-            if (Loader.trace) {
+            if (LoaderStatics.trace) {
                 throwable.printStackTrace()
             }
             /* empty */
@@ -101,7 +101,7 @@ class FullscreenDisplayController {
                     val field = GraphicsDevice::class.java.getDeclaredField("valid")
                     field.set(aGraphicsDevice157, java.lang.Boolean.TRUE)
                 } catch (e: Exception) {
-                    if (Loader.trace) {
+                    if (LoaderStatics.trace) {
                         e.printStackTrace()
                     }
                 }
@@ -112,7 +112,7 @@ class FullscreenDisplayController {
                 val field = GraphicsDevice::class.java.getDeclaredField("valid")
                 field.set(aGraphicsDevice157, java.lang.Boolean.TRUE)
             } catch (throwable: Throwable) {
-                if (Loader.trace) {
+                if (LoaderStatics.trace) {
                     throwable.printStackTrace()
                 }
                 /* empty */

@@ -1,3 +1,8 @@
+import CircleHitboxStatics.method323
+import CircleHitboxStatics.anInt411
+import CircleHitboxStatics.aMapSceneCache_413
+import CircleHitboxStatics.anInt415
+
 /* Class30 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -44,60 +49,5 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
         anInt404 = i_27_ + anInt408
         anInt419 = i_23_ + anInt409
         anInt418 = anInt409 - -i_22_
-    }
-
-    companion object {
-        var anIntArray407: IntArray? = IntArray(1)
-        @JvmField
-        var anInt410: Int = 0
-        @JvmField
-        var anInt411: Int = 0
-        @JvmField
-        var aMapSceneCache_413: MapSceneCache? = null
-        @JvmField
-        var anInt414: Int = 0
-        @JvmField
-        var anInt415: Int = 0
-        fun method319(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int, i_3_: Int) {
-            if (i_1_.toInt() != -18) method322(73)
-            anInt414++
-            HslPaletteState.anInt4171 = i_2_
-            ParticleSystemRenderer.anInt3861 = i_0_
-            GlFramebufferBlitter.anInt282 = i
-            CircleDrawer.anInt2688 = i_3_
-        }
-
-        @JvmStatic
-        fun method322(i: Int) {
-            anIntArray407 = null
-            aMapSceneCache_413 = null
-            if (i != 1) method322(-112)
-        }
-
-        @JvmStatic
-        fun method323(js5Archive: Js5Archive?, privilegedOperationWorker: PrivilegedOperationWorker?, i: Byte) {
-            try {
-                RegionSceneShifter.aString7048 = ""
-                GrayscaleNoiseTexture.aPrivilegedOperationWorker_5297 = privilegedOperationWorker
-                anInt410++
-                ParticleSystemState.aJs5Archive_2208 = js5Archive
-                if (!ClientGameLoopNode.aString6877!!.startsWith("win")) {
-                    if (!ClientGameLoopNode.aString6877!!.startsWith("linux")) {
-                        if (ClientGameLoopNode.aString6877!!.startsWith("mac")) RegionSceneShifter.aString7048 += "macos/"
-                    } else RegionSceneShifter.aString7048 += "linux/"
-                } else RegionSceneShifter.aString7048 += "windows/"
-                if (i.toInt() != 95) anIntArray407 = null
-                if (!GrayscaleNoiseTexture.aPrivilegedOperationWorker_5297!!.aBoolean3794) {
-                    if (!ClientGameLoopNode.aString6876!!.startsWith("amd64") && !ClientGameLoopNode.aString6876!!.startsWith("x86_64")) {
-                        if (!ClientGameLoopNode.aString6876!!.startsWith("i386") && !ClientGameLoopNode.aString6876!!.startsWith("i486") && !ClientGameLoopNode.aString6876!!.startsWith("i586") && !ClientGameLoopNode.aString6876!!.startsWith("x86")) {
-                            if (!ClientGameLoopNode.aString6876!!.startsWith("ppc")) RegionSceneShifter.aString7048 += "universal/"
-                            else RegionSceneShifter.aString7048 += "ppc/"
-                        } else RegionSceneShifter.aString7048 += "x86/"
-                    } else RegionSceneShifter.aString7048 += "x86_64/"
-                } else RegionSceneShifter.aString7048 += "msjava/"
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("hw.A(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
-            }
-        }
     }
 }

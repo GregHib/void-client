@@ -1,3 +1,11 @@
+import MultiLevelOptionStateStatics.anInt6145
+import MultiLevelOptionStateStatics.anInt6146
+import MultiLevelOptionStateStatics.aBoolean6147
+import MultiLevelOptionStateStatics.anInt6148
+import MultiLevelOptionStateStatics.anInt6150
+import MultiLevelOptionStateStatics.anInt6151
+import MultiLevelOptionStateStatics.anInt6153
+
 /* Class239_Sub29 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -34,78 +42,5 @@ class MultiLevelOptionState : GraphicsOptionState {
         if (this.anInt3138 < 0 || this.anInt3138 > 4) this.anInt3138 = method1710(20014)
         anInt6150++
         if (bool != false) anInt6151 = 62
-    }
-
-    companion object {
-        @JvmField
-        var anInt6144: Int = 0
-        @JvmField
-        var anInt6145: Int = 0
-        @JvmField
-        var anInt6146: Int = 0
-        @JvmField
-        var aBoolean6147: Boolean = false
-        @JvmField
-        var anInt6148: Int = 0
-        @JvmField
-        var anInt6149: Int = 0
-        @JvmField
-        var anInt6150: Int = 0
-        @JvmField
-        var anInt6151: Int = 0
-        @JvmField
-        var anInt6152: Int = 0
-        @JvmField
-        var anInt6153: Int = 0
-
-        @JvmStatic
-        fun method1849(c: Char, i: Int): Boolean {
-            anInt6149++
-            if (Character.isISOControl(c)) return false
-            if (Npc.method2446(c, 105.toByte())) return true
-            val cs = MapSceneDefLoader.aCharArray2488!!
-            var i_2_ = 0
-            while (cs.size > i_2_) {
-                val i_3_ = cs[i_2_].code
-                if (c.code == i_3_) return true
-                i_2_++
-            }
-            val i_4_ = -127 / ((i - 44) / 45)
-            val cs_5_ = ParserSpecialCharsHolder.aCharArray1903!!
-            var i_6_ = 0
-            while (cs_5_.size > i_6_) {
-                val i_7_ = cs_5_[i_6_].code
-                if (i_7_ == c.code) return true
-                i_6_++
-            }
-            return false
-        }
-
-        @JvmStatic
-        fun method1850(i: Int, i_8_: Int): Int {
-            anInt6144++
-            val i_9_ = 101 % ((-20 - i_8_) / 37)
-            return i ushr 8
-        }
-
-        @JvmStatic
-        fun method1851(i: Byte) {
-            anInt6152++
-            for (i_11_ in 0..4) SpotAnimDefinition.aBooleanArray2374!![i_11_] = false
-            TextureAtlasState.anInt4424 = CompositeRgbNoiseTexture.anInt8685
-            DataHolder.anInt3662 = MinimapAreaMarkerNode.anInt9701
-            SpriteComponent.anInt8368 = ParticleSystemRenderer.anInt3855
-            FloatBuffer.anInt9751 = GlGroundShaderPass.anInt7396
-            SequencedWallEntity.anInt10163 = -1
-            NativeLibraryState.anInt167 = SequencedWallEntity.anInt10163
-            SequencedGroundDecor.anInt10047 = GlslMaterialPass.anInt6246
-            val i_12_ = -99 % ((i - 11) / 56)
-            BloomGraphicsOptionState.anInt5973 = 0
-            CameraConfigDefinition.anInt3253 = WorldMapElement.anInt4638
-            GlGroundShaderPass.anInt7403 = 0
-            WeaveTextureNode.anInt9282 = 5
-            NativeShaderProgram.anInt9775 = -1
-            MapArchiveSource.anInt4803 = -1
-        }
     }
 }

@@ -1,11 +1,18 @@
-import jaggl.OpenGL.Companion.glGetUniformLocationARB
-import jaggl.OpenGL.Companion.glUniform1fARB
-import jaggl.OpenGL.Companion.glUniform1iARB
-import jaggl.OpenGL.Companion.glUniform3fARB
-import jaggl.OpenGL.Companion.glUniform4fARB
-import jaggl.OpenGL.Companion.glUseProgramObjectARB
+import jaggl.OpenGLStatics.glGetUniformLocationARB
+import jaggl.OpenGLStatics.glUniform1fARB
+import jaggl.OpenGLStatics.glUniform1iARB
+import jaggl.OpenGLStatics.glUniform3fARB
+import jaggl.OpenGLStatics.glUniform4fARB
+import jaggl.OpenGLStatics.glUseProgramObjectARB
 import kotlin.math.abs
 import kotlin.math.min
+import GlslEnvMaterialPassStatics.method2163
+import GlslEnvMaterialPassStatics.anInt6263
+import GlslEnvMaterialPassStatics.anInt6264
+import GlslEnvMaterialPassStatics.anInt6265
+import GlslEnvMaterialPassStatics.anInt6267
+import GlslEnvMaterialPassStatics.anInt6269
+import GlslEnvMaterialPassStatics.anInt6275
 
 class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterTextureSet: WaterTextureSet?) : MaterialPass(var_ha_Sub2) {
     private var aBoolean6266 = false
@@ -72,22 +79,22 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
             try {
                 aWaterTextureSet_6268 = waterTextureSet
                 if (aWaterTextureSet_6268!!.aClass258_Sub1_1443 == null || !(this.aHa_Sub2_3684.aBoolean7791) || !(this.aHa_Sub2_3684.aBoolean7783)) break
-                val class242 = (TimedTileQueueEntry.method3249(
+                val class242 = (TimedTileQueueEntryStatics.method3249(
                     35633,
                     -110,
                     this.aHa_Sub2_3684,
                     "uniform float time;\nuniform float scale;\nvarying vec3 wvVertex;\nvarying float waterDepth;\nvoid main() {\nwaterDepth = gl_MultiTexCoord0.z;\nvec4 ecVertex = gl_ModelViewMatrix*gl_Vertex;\nwvVertex.x = dot(gl_NormalMatrix[0], ecVertex.xyz);\nwvVertex.y = dot(gl_NormalMatrix[1], ecVertex.xyz);\nwvVertex.z = dot(gl_NormalMatrix[2], ecVertex.xyz);\ngl_TexCoord[0].x = dot(gl_TextureMatrix[0][0], gl_MultiTexCoord0)*scale;\ngl_TexCoord[0].y = dot(gl_TextureMatrix[0][1], gl_MultiTexCoord0)*scale;\ngl_TexCoord[0].z = time;\ngl_TexCoord[0].w = 1.0;\ngl_FogFragCoord = 1.0-clamp((gl_Fog.end+ecVertex.z)*gl_Fog.scale, 0.0, 1.0);\ngl_Position = ftransform();\n}\n"
                 ))
-                val class242_4_ = (TimedTileQueueEntry.method3249(
+                val class242_4_ = (TimedTileQueueEntryStatics.method3249(
                     35632,
                     -38,
                     this.aHa_Sub2_3684,
                     "varying vec3 wvVertex;\nvarying float waterDepth;\nuniform vec3 sunDir;\nuniform vec4 sunColour;\nuniform float sunExponent;\nuniform float breakWaterDepth;\nuniform float breakWaterOffset;\nuniform sampler3D normalSampler;\nuniform samplerCube envMapSampler;\nvoid main() {\nvec4 wnNormal = texture3D(normalSampler, gl_TexCoord[0].xyz).rbga;\nwnNormal.xyz = 2.0*wnNormal.xyz-1.0;\nvec3 wnVector = normalize(wvVertex);\nvec3 wnReflection = reflect(wnVector, wnNormal.xyz);\nvec3 envColour = textureCube(envMapSampler, wnReflection).rgb;\nvec4 specularColour = sunColour*pow(clamp(-dot(sunDir, wnReflection), 0.0, 1.0), sunExponent);\nfloat shoreFactor = clamp(waterDepth/breakWaterDepth-breakWaterOffset*wnNormal.w, 0.0, 1.0);\nfloat ndote = dot(wnVector, wnNormal.xyz);\nfloat fresnel = pow(1.0-abs(ndote), 2.0);\nvec4 surfaceColour = vec4(envColour, fresnel*shoreFactor)+specularColour*shoreFactor;\ngl_FragColor = vec4(mix(surfaceColour.rgb, gl_Fog.color.rgb, gl_FogFragCoord), surfaceColour.a);\n}\n"
                 ))
-                aGlShaderProgramHandle_6274 = SequencedWallEntity.method2493((this.aHa_Sub2_3684), -1, (arrayOf<ManagedGlResource?>(class242, class242_4_)))
+                aGlShaderProgramHandle_6274 = SequencedWallEntityStatics.method2493((this.aHa_Sub2_3684), -1, (arrayOf<ManagedGlResource?>(class242, class242_4_)))
                 aBoolean6272 = aGlShaderProgramHandle_6274 != null
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("tia.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("tia.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (waterTextureSet != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)
@@ -107,111 +114,5 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
         }
         if (i_6_ >= -42) method2163(false)
         anInt6275++
-    }
-
-    companion object {
-        @JvmField
-        var aSceneProjector_6262: SceneProjector? = SceneProjector("game3", 2)
-        @JvmField
-        var anInt6263: Int = 0
-        @JvmField
-        var anInt6264: Int = 0
-        @JvmField
-        var anInt6265: Int = 0
-        @JvmField
-        var anInt6267: Int = 0
-        @JvmField
-        var anInt6269: Int = 0
-        @JvmField
-        var aBooleanArray6270: BooleanArray? = null
-        @JvmField
-        var anInt6271: Int = 0
-        @JvmField
-        var anInt6273: Int = 0
-        @JvmField
-        var anInt6275: Int = 0
-        @JvmField
-        var aLong6276: Long = 0
-
-        @JvmStatic
-        fun method2162(bool: Boolean): String {
-            if (bool != false) aLong6276 = -88L
-            anInt6271++
-            var string = "www"
-            if (FixedFunctionWaterPass.aNamedIdRecord_7361 != NpcAnimationResolver.aNamedIdRecord_165) {
-                if (NpcAnimationResolver.aNamedIdRecord_165 != SpriteArchiveLoader.aNamedIdRecord_382) {
-                    if (NpcAnimationResolver.aNamedIdRecord_165 == GroundItemRenderState.aNamedIdRecord_1657) string = "www-wtwip"
-                } else string = "www-wtqa"
-            } else string = "www-wtrc"
-            var string_2_ = ""
-            if (BloomGraphicsOptionState.aString5966 != null) string_2_ = "/p=" + BloomGraphicsOptionState.aString5966
-            return ("http://" + string + "." + (HardCacheEntryReference.aSceneProjector_10434?.aString2985) + ".com/l=" + AnimationFrameDefinition.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_2_ + "/")
-        }
-
-        @JvmStatic
-        fun method2163(bool: Boolean): Boolean {
-            anInt6273++
-            try {
-                if (SpriteDefinition.anInt7068 == 2) {
-                    if (MaterialPass.Companion.aClass348_Sub2_3683 == null) {
-                        MaterialPass.Companion.aClass348_Sub2_3683 = MidiFileBuilder.method2734(ModelDefinition.aJs5Archive_1848!!, (NpcActorEntity.anInt10074), SceneLinkedListNode.anInt3971)
-                        if (MaterialPass.Companion.aClass348_Sub2_3683 == null) return false
-                    }
-                    if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(MinimapTileEntry.aJs5Archive_611, MapElementLookup.aJs5Archive_4147)
-                    var class348_sub16_sub3 = NodeDequeHolder.aClass348_Sub16_Sub3_1564!!
-                    if (GlBufferObject.aClass348_Sub16_Sub3_4743 != null) class348_sub16_sub3 = GlBufferObject.aClass348_Sub16_Sub3_4743!!
-                    if (class348_sub16_sub3.method2866((MaterialPass.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, GlEnvMappedWaterPass.aJs5Archive_7371, -35)) {
-                        NodeDequeHolder.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
-                        NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2864(52.toByte())
-                        if (DirectionalLightTextureNode.anInt9444 <= 0) {
-                            SpriteDefinition.anInt7068 = 0
-                            NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2861(0, DirectionPath.anInt1059)
-                            for (i in BasicGlRenderPass.anIntArray7299!!.indices) {
-                                NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2843(BasicGlRenderPass.anIntArray7299!![i], i, -7836)
-                                BasicGlRenderPass.anIntArray7299!![i] = 255
-                            }
-                        } else {
-                            SpriteDefinition.anInt7068 = 3
-                            NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2861(0, (min(DirectionPath.anInt1059, DirectionalLightTextureNode.anInt9444)))
-                            var i = 0
-                            while ((BasicGlRenderPass.anIntArray7299!!.size > i)) {
-                                NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2843(BasicGlRenderPass.anIntArray7299!![i], i, -7836)
-                                BasicGlRenderPass.anIntArray7299!![i] = 255
-                                i++
-                            }
-                        }
-                        if (GlBufferObject.aClass348_Sub16_Sub3_4743 == null) {
-                            if (BloomGraphicsOptionState.aLong5971 <= 0) NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2869(MaterialPass.Companion.aClass348_Sub2_3683, KeyboardInputSource.aBoolean4275, false)
-                            else NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2870(MaterialPass.Companion.aClass348_Sub2_3683, BloomGraphicsOptionState.aLong5971, KeyboardInputSource.aBoolean4275, true, 24.toByte())
-                        }
-                        if (ActorEntity.aSoundChannelMixer_8764 != null) ActorEntity.aSoundChannelMixer_8764!!.method2088(bool, NodeDequeHolder.aClass348_Sub16_Sub3_1564)
-                        ModelDefinition.aJs5Archive_1848 = null
-                        MaterialPass.Companion.aClass348_Sub2_3683 = null
-                        BloomGraphicsOptionState.aLong5971 = 0L
-                        TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
-                        GlBufferObject.aClass348_Sub16_Sub3_4743 = null
-                        return true
-                    }
-                }
-                if (bool != false) aBooleanArray6270 = null
-            } catch (exception: Exception) {
-                exception.printStackTrace()
-                NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2877(-128)
-                GlBufferObject.aClass348_Sub16_Sub3_4743 = null
-                TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
-                MaterialPass.Companion.aClass348_Sub2_3683 = null
-                ModelDefinition.aJs5Archive_1848 = null
-                SpriteDefinition.anInt7068 = 0
-            }
-            return false
-        }
-
-        @JvmStatic
-        fun method2164(bool: Boolean) {
-            if (bool == true) {
-                aSceneProjector_6262 = null
-                aBooleanArray6270 = null
-            }
-        }
     }
 }

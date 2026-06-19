@@ -1,5 +1,5 @@
-import BrightnessOptionState.Companion.method1745
-import WaterMaterialPass.Companion.method2148
+import BrightnessOptionStateStatics.method1745
+import WaterMaterialPassStatics.method2148
 import java.awt.Canvas
 
 /*
@@ -20,19 +20,19 @@ object WorldMapToggle {
             anInt3875++
             return oa(canvas, var_renderConfig, i_1_, i_0_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ws.C(" + i + ',' + i_0_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_1_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ws.C(" + i + ',' + i_0_ + ',' + (if (var_renderConfig != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_1_ + ')'))
         }
     }
 
     fun method2298(i: Byte, string: String) {
         anInt3876++
-        if (HostPingThread.aWorldListEntryArray2261 != null) {
-            NativeIndexBuffer.anInt4698++
-            val class348_sub47 = method2148(SceneCollisionEntry.aFontMetaRef_4405, TheoraVideoStream.aIsaacCipher_9029, -97)
+        if (HostPingThreadStatics.aWorldListEntryArray2261 != null) {
+            NativeIndexBufferStatics.anInt4698++
+            val class348_sub47 = method2148(SceneCollisionEntryStatics.aFontMetaRef_4405, TheoraVideoStreamStatics.aIsaacCipher_9029, -97)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
             if (i > -50) method2297(104, 26, null, null, -19)
-            InterfaceComponentGroup.method3243(-43, class348_sub47)
+            InterfaceComponentGroupStatics.method3243(-43, class348_sub47)
         }
     }
 

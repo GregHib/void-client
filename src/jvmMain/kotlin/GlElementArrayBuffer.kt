@@ -1,5 +1,12 @@
 import ProjectileConfigUtil.method313
-import NodeDequeHolder.Companion.method878
+import NodeDequeHolderStatics.method878
+import GlElementArrayBufferStatics.anInt4833
+import GlElementArrayBufferStatics.aConfigFlagUtil_4835
+import GlElementArrayBufferStatics.anInt4836
+import GlElementArrayBufferStatics.anInt4838
+import GlElementArrayBufferStatics.aServerConnectionInfo_4839
+import GlElementArrayBufferStatics.anInt4840
+import GlElementArrayBufferStatics.anInt4842
 
 /* Class135_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -42,91 +49,7 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
         try {
             anInt4837 = i
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("kaa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_8_ + ',' + bool + ')'))
-        }
-    }
-
-    companion object {
-        var anInt4833: Int = 0
-        var anInt4834: Int = 0
-        var aConfigFlagUtil_4835: ConfigFlagUtil? = ConfigFlagUtil()
-        var anInt4836: Int = 0
-        var anInt4838: Int = 0
-        @JvmField
-        var aServerConnectionInfo_4839: ServerConnectionInfo? = null
-        var anInt4840: Int = 0
-        var anInt4841: Int = 0
-        var anInt4842: Int = 0
-        @JvmField
-        var aJs5Archive_4843: Js5Archive? = null
-        var anInt4844: Int = 0
-        private var aCharArray4845: CharArray? = CharArray(64)
-        @JvmField
-        var aClass348_Sub42_Sub12_4846: ContactEntry? = null
-
-        @JvmStatic
-        fun method1155(i: Byte) {
-            aConfigFlagUtil_4835 = null
-            aServerConnectionInfo_4839 = null
-            val i_2_ = -29 / ((i - -49) / 43)
-            aJs5Archive_4843 = null
-            aCharArray4845 = null
-            aClass348_Sub42_Sub12_4846 = null
-        }
-
-        @JvmStatic
-        fun method1156(i: Int, i_3_: Int, `is`: IntArray, i_4_: Int, i_5_: Int) {
-            var i_3_ = i_3_
-            var i_4_ = i_4_
-            i_4_--
-            anInt4841++
-            val i_6_ = --i_3_ - 7
-            if (i == -27) {
-                while (i_6_ > i_4_) {
-                    `is`[++i_4_] = i_5_
-                    `is`[++i_4_] = i_5_
-                    `is`[++i_4_] = i_5_
-                    `is`[++i_4_] = i_5_
-                    `is`[++i_4_] = i_5_
-                    `is`[++i_4_] = i_5_
-                    `is`[++i_4_] = i_5_
-                    `is`[++i_4_] = i_5_
-                }
-                while (i_3_ > i_4_) `is`[++i_4_] = i_5_
-            }
-        }
-
-        @JvmStatic
-        fun method1157(i: Int, i_7_: Byte) {
-            if (i_7_ < -77) {
-                BloomGraphicsOptionState.anInt5969 = 2
-                anInt4834++
-                TextureLoadException.anInt4596 = i
-                var l = 0L
-                if (NullOggStream.aString9043 == null) {
-                    GlRectangleTexture.method254(35, (-87).toByte())
-                    return
-                } else {
-                    val class348_sub49 = (ByteBuffer(method878((MapLabelMenuEntry.method1039(NullOggStream.aString9043!!, true)), -126)))
-                    l = class348_sub49.readLong(-456577760)
-                    AnimationFrameDefinition.aLong6966 = class348_sub49.readLong(-456577760)
-                }
-                LocalPlayerState.method1138(method313(l, -95), true, "", 79.toByte())
-            }
-        }
-
-        fun method1158(i: Int, i_9_: Int, i_10_: Int): Boolean {
-            if (i_9_ != -1) aServerConnectionInfo_4839 = null
-            anInt4844++
-            return (i_10_ and 0x180) != 0
-        }
-
-        init {
-            for (i in 0..25) aCharArray4845!![i] = (65 + i).toChar()
-            for (i in 26..51) aCharArray4845!![i] = (i + 71).toChar()
-            for (i in 52..61) aCharArray4845!![i] = (-4 + i).toChar()
-            aCharArray4845!![63] = '-'
-            aCharArray4845!![62] = '*'
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("kaa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_8_ + ',' + bool + ')'))
         }
     }
 }

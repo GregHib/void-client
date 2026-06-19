@@ -3,6 +3,21 @@ import java.awt.event.FocusEvent
 import java.awt.event.FocusListener
 import java.awt.event.KeyEvent
 import java.awt.event.KeyListener
+import AwtKeyboardListenerStatics.method2705
+import AwtKeyboardListenerStatics.anInt6525
+import AwtKeyboardListenerStatics.anInt6526
+import AwtKeyboardListenerStatics.anInt6527
+import AwtKeyboardListenerStatics.anInt6529
+import AwtKeyboardListenerStatics.anInt6530
+import AwtKeyboardListenerStatics.anInt6531
+import AwtKeyboardListenerStatics.anInt6532
+import AwtKeyboardListenerStatics.anInt6533
+import AwtKeyboardListenerStatics.anInt6534
+import AwtKeyboardListenerStatics.anInt6535
+import AwtKeyboardListenerStatics.anInt6537
+import AwtKeyboardListenerStatics.anInt6538
+import AwtKeyboardListenerStatics.anInt6539
+import AwtKeyboardListenerStatics.anInt6540
 
 class AwtKeyboardListener internal constructor(component: Component?) : KeyboardInputSource(), KeyListener, FocusListener {
     private val aNodeDeque_6541 = NodeDeque()
@@ -47,8 +62,8 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
         anInt6538++
         var i_3_ = keyevent.getKeyCode()
         if (i_3_ != 0) {
-            if (i_3_ >= 0 && GlIndexBufferArb.anIntArray8507!!.size > i_3_) {
-                i_3_ = GlIndexBufferArb.anIntArray8507!![i_3_]
+            if (i_3_ >= 0 && GlIndexBufferArbStatics.anIntArray8507!!.size > i_3_) {
+                i_3_ = GlIndexBufferArbStatics.anIntArray8507!![i_3_]
                 if (i_2_ == 0 && (i_3_ and 0x80) != 0) i_3_ = 0
                 else i_3_ = i_3_ and 0x80.inv()
             } else i_3_ = 0
@@ -162,7 +177,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
         if (i != 2) method2705(-19)
         anInt6535++
         aComponent6544 = component
-        val method = PrivilegedOperationWorker.aMethod3783
+        val method = PrivilegedOperationWorkerStatics.aMethod3783
         if (method != null) {
             try {
                 method.invoke(aComponent6544, java.lang.Boolean.FALSE)
@@ -175,54 +190,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
     }
 
     init {
-        FloatBuffer.method3402((-82).toByte())
+        FloatBufferStatics.method3402((-82).toByte())
         method2706(component, 2)
-    }
-
-    companion object {
-        @JvmField
-        var anInt6525: Int = 0
-        @JvmField
-        var anInt6526: Int = 0
-        @JvmField
-        var anInt6527: Int = 0
-        @JvmField
-        var aIntRange_6528: IntRange? = IntRange(14, 2)
-        @JvmField
-        var anInt6529: Int = 0
-        @JvmField
-        var anInt6530: Int = 0
-        @JvmField
-        var anInt6531: Int = 0
-        @JvmField
-        var anInt6532: Int = 0
-        @JvmField
-        var anInt6533: Int = 0
-        @JvmField
-        var anInt6534: Int = 0
-        @JvmField
-        var anInt6535: Int = 0
-        @JvmField
-        var anInt6536: Int = 0
-        @JvmField
-        var anInt6537: Int = 0
-        @JvmField
-        var anInt6538: Int = 0
-        @JvmField
-        var anInt6539: Int = 0
-        @JvmField
-        var anInt6540: Int = 0
-        @JvmStatic
-        fun method2703(i: Int, i_6_: Int, i_7_: Int, i_8_: Byte) {
-            anInt6536++
-            val class190 = NodeDeque.aModelLightingConfigArrayArray3335!![i_6_]!![i_7_]
-            if (i_8_.toInt() == -13) ServerConnectionInfo.method1260(false, i, (if (class190 == null) LocalizedText.aModelLightingConfig_3547 else class190))
-        }
-
-        @JvmStatic
-        fun method2705(i: Int) {
-            aIntRange_6528 = null
-            if (i != 14645) method2705(1)
-        }
     }
 }

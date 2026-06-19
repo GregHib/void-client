@@ -26,8 +26,8 @@ object ByteArrayPool {
             string = string.substring(0, i_1_) + "," + string.substring(i_1_)
             i_1_ -= 3
         }
-        if (string.length > 9) return (" <col=00ff80>" + string.substring(0, string.length + -8) + LocalizedText.aLocalizedText_3516!!.method2063(AnimationFrameDefinition.anInt6967, 544) + " (" + string + ")</col>")
-        if (string.length > 6) return (" <col=ffffff>" + string.substring(0, -4 + string.length) + LocalizedText.aLocalizedText_3518!!.method2063(AnimationFrameDefinition.anInt6967, 544) + " (" + string + ")</col>")
+        if (string.length > 9) return (" <col=00ff80>" + string.substring(0, string.length + -8) + LocalizedTextStatics.aLocalizedText_3516!!.method2063(AnimationFrameDefinitionStatics.anInt6967, 544) + " (" + string + ")</col>")
+        if (string.length > 6) return (" <col=ffffff>" + string.substring(0, -4 + string.length) + LocalizedTextStatics.aLocalizedText_3518!!.method2063(AnimationFrameDefinitionStatics.anInt6967, 544) + " (" + string + ")</col>")
         return " <col=ffff00>" + string + "</col>"
     }
 
@@ -35,16 +35,16 @@ object ByteArrayPool {
     @Synchronized
     fun method357(i: Int, `is`: ByteArray) {
         anInt491++
-        if (`is`.size == 100 && TileTextureNode.anInt9412 < 1000) ModelDataCache.aByteArrayArray358!![TileTextureNode.anInt9412++] = `is`
+        if (`is`.size == 100 && TileTextureNodeStatics.anInt9412 < 1000) ModelDataCache.aByteArrayArray358!![TileTextureNodeStatics.anInt9412++] = `is`
         else {
             if (i != 0) method359(-119, -101)
-            if (`is`.size == 5000 && WeaveTextureNode.anInt9280 < 250) PlayerUpdateDecoder.aByteArrayArray1918!![WeaveTextureNode.anInt9280++] = `is`
-            else if (`is`.size == 30000 && AbstractFrameBufferSurface.anInt6913 < 50) GlIndexBufferArb.aByteArrayArray8505!![AbstractFrameBufferSurface.anInt6913++] = `is`
-            else if (DisplaceTextureNode.aByteArrayArrayArray9134 != null) {
+            if (`is`.size == 5000 && WeaveTextureNodeStatics.anInt9280 < 250) PlayerUpdateDecoder.aByteArrayArray1918!![WeaveTextureNodeStatics.anInt9280++] = `is`
+            else if (`is`.size == 30000 && AbstractFrameBufferSurfaceStatics.anInt6913 < 50) GlIndexBufferArbStatics.aByteArrayArray8505!![AbstractFrameBufferSurfaceStatics.anInt6913++] = `is`
+            else if (DisplaceTextureNodeStatics.aByteArrayArrayArray9134 != null) {
                 var i_2_ = 0
-                while (CompositeRgbNoiseTexture.anIntArray8684!!.size > i_2_) {
-                    if ((`is`.size == CompositeRgbNoiseTexture.anIntArray8684!![i_2_]) && (DisplaceTextureNode.aByteArrayArrayArray9134!![i_2_])!!.size > ModelLightingConfig.anIntArray2552!![i_2_]) {
-                        DisplaceTextureNode.aByteArrayArrayArray9134!![i_2_]!![ModelLightingConfig.anIntArray2552!![i_2_]++] = `is`
+                while (CompositeRgbNoiseTextureStatics.anIntArray8684!!.size > i_2_) {
+                    if ((`is`.size == CompositeRgbNoiseTextureStatics.anIntArray8684!![i_2_]) && (DisplaceTextureNodeStatics.aByteArrayArrayArray9134!![i_2_])!!.size > ModelLightingConfigStatics.anIntArray2552!![i_2_]) {
+                        DisplaceTextureNodeStatics.aByteArrayArrayArray9134!![i_2_]!![ModelLightingConfigStatics.anIntArray2552!![i_2_]++] = `is`
                         break
                     }
                     i_2_++
@@ -55,7 +55,7 @@ object ByteArrayPool {
 
     fun method358(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
         if (i_8_ != -29494) anInt496 = 32
-        if (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350) != 0 && i != 0 && HintArrowOrMessage.anInt2021 < 50 && i_7_ != -1) GlTextureCubeMap.aParticleEmitterNodeArray8531s!![HintArrowOrMessage.anInt2021++] = ParticleEmitterNode(1.toByte(), i_7_, i, i_4_, i_5_, i_3_, i_6_, null)
+        if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350) != 0 && i != 0 && HintArrowOrMessageStatics.anInt2021 < 50 && i_7_ != -1) GlTextureCubeMapStatics.aParticleEmitterNodeArray8531s!![HintArrowOrMessageStatics.anInt2021++] = ParticleEmitterNode(1.toByte(), i_7_, i, i_4_, i_5_, i_3_, i_6_, null)
         anInt490++
     }
 
@@ -63,28 +63,28 @@ object ByteArrayPool {
     @Synchronized
     fun method359(i: Int, i_9_: Int): ByteArray? {
         anInt493++
-        if (i == 100 && TileTextureNode.anInt9412 > 0) {
-            val `is` = ModelDataCache.aByteArrayArray358!![--TileTextureNode.anInt9412]
-            ModelDataCache.aByteArrayArray358!![TileTextureNode.anInt9412] = null
+        if (i == 100 && TileTextureNodeStatics.anInt9412 > 0) {
+            val `is` = ModelDataCache.aByteArrayArray358!![--TileTextureNodeStatics.anInt9412]
+            ModelDataCache.aByteArrayArray358!![TileTextureNodeStatics.anInt9412] = null
             return `is`
         }
-        if (i == 5000 && WeaveTextureNode.anInt9280 > 0) {
-            val `is` = (PlayerUpdateDecoder.aByteArrayArray1918!![--WeaveTextureNode.anInt9280])
-            PlayerUpdateDecoder.aByteArrayArray1918!![WeaveTextureNode.anInt9280] = null
+        if (i == 5000 && WeaveTextureNodeStatics.anInt9280 > 0) {
+            val `is` = (PlayerUpdateDecoder.aByteArrayArray1918!![--WeaveTextureNodeStatics.anInt9280])
+            PlayerUpdateDecoder.aByteArrayArray1918!![WeaveTextureNodeStatics.anInt9280] = null
             return `is`
         }
         if (i_9_ != -1) method359(-88, -45)
-        if (i == 30000 && AbstractFrameBufferSurface.anInt6913 > 0) {
-            val `is` = (GlIndexBufferArb.aByteArrayArray8505!![--AbstractFrameBufferSurface.anInt6913])
-            GlIndexBufferArb.aByteArrayArray8505!![AbstractFrameBufferSurface.anInt6913] = null
+        if (i == 30000 && AbstractFrameBufferSurfaceStatics.anInt6913 > 0) {
+            val `is` = (GlIndexBufferArbStatics.aByteArrayArray8505!![--AbstractFrameBufferSurfaceStatics.anInt6913])
+            GlIndexBufferArbStatics.aByteArrayArray8505!![AbstractFrameBufferSurfaceStatics.anInt6913] = null
             return `is`
         }
-        if (DisplaceTextureNode.aByteArrayArrayArray9134 != null) {
+        if (DisplaceTextureNodeStatics.aByteArrayArrayArray9134 != null) {
             var i_10_ = 0
-            while (CompositeRgbNoiseTexture.anIntArray8684!!.size > i_10_) {
-                if ((i == CompositeRgbNoiseTexture.anIntArray8684!![i_10_]) && ModelLightingConfig.anIntArray2552!![i_10_] > 0) {
-                    val `is` = (DisplaceTextureNode.aByteArrayArrayArray9134!![i_10_]!![--ModelLightingConfig.anIntArray2552!![i_10_]])
-                    DisplaceTextureNode.aByteArrayArrayArray9134!![i_10_]!![ModelLightingConfig.anIntArray2552!![i_10_]] = null
+            while (CompositeRgbNoiseTextureStatics.anIntArray8684!!.size > i_10_) {
+                if ((i == CompositeRgbNoiseTextureStatics.anIntArray8684!![i_10_]) && ModelLightingConfigStatics.anIntArray2552!![i_10_] > 0) {
+                    val `is` = (DisplaceTextureNodeStatics.aByteArrayArrayArray9134!![i_10_]!![--ModelLightingConfigStatics.anIntArray2552!![i_10_]])
+                    DisplaceTextureNodeStatics.aByteArrayArrayArray9134!![i_10_]!![ModelLightingConfigStatics.anIntArray2552!![i_10_]] = null
                     return `is`
                 }
                 i_10_++

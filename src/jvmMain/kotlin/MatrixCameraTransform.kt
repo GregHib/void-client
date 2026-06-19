@@ -1,3 +1,20 @@
+import MatrixCameraTransformStatics.anInt5656
+import MatrixCameraTransformStatics.anInt5658
+import MatrixCameraTransformStatics.anInt5659
+import MatrixCameraTransformStatics.anInt5660
+import MatrixCameraTransformStatics.anInt5661
+import MatrixCameraTransformStatics.anInt5665
+import MatrixCameraTransformStatics.anInt5667
+import MatrixCameraTransformStatics.anInt5668
+import MatrixCameraTransformStatics.anInt5670
+import MatrixCameraTransformStatics.anInt5671
+import MatrixCameraTransformStatics.anInt5674
+import MatrixCameraTransformStatics.anInt5676
+import MatrixCameraTransformStatics.anInt5682
+import MatrixCameraTransformStatics.anInt5683
+import MatrixCameraTransformStatics.anInt5687
+import MatrixCameraTransformStatics.anInt5688
+
 /* Class101_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -48,12 +65,12 @@ class MatrixCameraTransform : AbstractCameraTransform() {
 
     override fun method903(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
         anInt5682++
-        val f = LightingOptionState.aFloatArray5876!![i_4_ and 0x3fff]
-        val f_7_ = LightingOptionState.aFloatArray5874!![0x3fff and i_4_]
-        val f_8_ = LightingOptionState.aFloatArray5876!![i_5_ and 0x3fff]
-        val f_9_ = LightingOptionState.aFloatArray5874!![0x3fff and i_5_]
-        val f_10_ = LightingOptionState.aFloatArray5876!![0x3fff and i_6_]
-        val f_11_ = LightingOptionState.aFloatArray5874!![0x3fff and i_6_]
+        val f = LightingOptionStateStatics.aFloatArray5876!![i_4_ and 0x3fff]
+        val f_7_ = LightingOptionStateStatics.aFloatArray5874!![0x3fff and i_4_]
+        val f_8_ = LightingOptionStateStatics.aFloatArray5876!![i_5_ and 0x3fff]
+        val f_9_ = LightingOptionStateStatics.aFloatArray5874!![0x3fff and i_5_]
+        val f_10_ = LightingOptionStateStatics.aFloatArray5876!![0x3fff and i_6_]
+        val f_11_ = LightingOptionStateStatics.aFloatArray5874!![0x3fff and i_6_]
         val f_12_ = f_10_ * f_7_
         val f_13_ = f_7_ * f_11_
         this.aFloat5666 = f_11_ * f_9_ + f_8_ * f_12_
@@ -103,8 +120,8 @@ class MatrixCameraTransform : AbstractCameraTransform() {
 
     override fun method908(i: Int) {
         anInt5656++
-        val f = LightingOptionState.aFloatArray5876!![i and 0x3fff]
-        val f_19_ = LightingOptionState.aFloatArray5874!![i and 0x3fff]
+        val f = LightingOptionStateStatics.aFloatArray5876!![i and 0x3fff]
+        val f_19_ = LightingOptionStateStatics.aFloatArray5874!![i and 0x3fff]
         val f_20_ = this.aFloat5672
         val f_21_ = this.aFloat5673
         val f_22_ = this.aFloat5669
@@ -121,8 +138,8 @@ class MatrixCameraTransform : AbstractCameraTransform() {
 
     override fun method900(i: Int) {
         anInt5658++
-        val f = LightingOptionState.aFloatArray5876!![0x3fff and i]
-        val f_24_ = LightingOptionState.aFloatArray5874!![0x3fff and i]
+        val f = LightingOptionStateStatics.aFloatArray5876!![0x3fff and i]
+        val f_24_ = LightingOptionStateStatics.aFloatArray5874!![0x3fff and i]
         val f_25_ = this.aFloat5655
         val f_26_ = this.aFloat5678
         val f_27_ = this.aFloat5666
@@ -153,9 +170,9 @@ class MatrixCameraTransform : AbstractCameraTransform() {
     override fun method899(i: Int) {
         anInt5670++
         this.aFloat5672 = 1.0f
-        this.aFloat5664 = LightingOptionState.aFloatArray5876!![i and 0x3fff]
+        this.aFloat5664 = LightingOptionStateStatics.aFloatArray5876!![i and 0x3fff]
         this.aFloat5678 = this.aFloat5664
-        this.aFloat5680 = LightingOptionState.aFloatArray5874!![0x3fff and i]
+        this.aFloat5680 = LightingOptionStateStatics.aFloatArray5874!![0x3fff and i]
         this.aFloat5666 = -this.aFloat5680
         this.aFloat5681 = 0.0f
         this.aFloat5662 = this.aFloat5681
@@ -169,9 +186,9 @@ class MatrixCameraTransform : AbstractCameraTransform() {
     override fun method902(i: Int) {
         anInt5667++
         this.aFloat5664 = 1.0f
-        this.aFloat5678 = LightingOptionState.aFloatArray5876!![0x3fff and i]
+        this.aFloat5678 = LightingOptionStateStatics.aFloatArray5876!![0x3fff and i]
         this.aFloat5672 = this.aFloat5678
-        this.aFloat5655 = LightingOptionState.aFloatArray5874!![0x3fff and i]
+        this.aFloat5655 = LightingOptionStateStatics.aFloatArray5874!![0x3fff and i]
         this.aFloat5681 = 0.0f
         this.aFloat5680 = this.aFloat5681
         this.aFloat5662 = this.aFloat5680
@@ -203,9 +220,9 @@ class MatrixCameraTransform : AbstractCameraTransform() {
     override fun method895(i: Int) {
         this.aFloat5678 = 1.0f
         anInt5676++
-        this.aFloat5664 = LightingOptionState.aFloatArray5876!![0x3fff and i]
+        this.aFloat5664 = LightingOptionStateStatics.aFloatArray5876!![0x3fff and i]
         this.aFloat5672 = this.aFloat5664
-        this.aFloat5669 = LightingOptionState.aFloatArray5874!![i and 0x3fff]
+        this.aFloat5669 = LightingOptionStateStatics.aFloatArray5874!![i and 0x3fff]
         this.aFloat5681 = 0.0f
         this.aFloat5680 = this.aFloat5681
         this.aFloat5685 = this.aFloat5680
@@ -218,8 +235,8 @@ class MatrixCameraTransform : AbstractCameraTransform() {
 
     override fun method896(i: Int) {
         anInt5659++
-        val f = LightingOptionState.aFloatArray5876!![0x3fff and i]
-        val f_32_ = LightingOptionState.aFloatArray5874!![i and 0x3fff]
+        val f = LightingOptionStateStatics.aFloatArray5876!![0x3fff and i]
+        val f_32_ = LightingOptionStateStatics.aFloatArray5874!![i and 0x3fff]
         val f_33_ = this.aFloat5672
         val f_34_ = this.aFloat5673
         val f_35_ = this.aFloat5669
@@ -253,75 +270,5 @@ class MatrixCameraTransform : AbstractCameraTransform() {
         `is`[1] = (i.toFloat() * this.aFloat5655 + this.aFloat5678 * i_39_.toFloat() + i_40_.toFloat() * this.aFloat5666 + this.aFloat5685).toInt()
         `is`[0] = (i_40_.toFloat() * this.aFloat5669 + (this.aFloat5673 * i_39_.toFloat() + i.toFloat() * this.aFloat5672) + this.aFloat5686).toInt()
         `is`[2] = (this.aFloat5681 + (this.aFloat5680 * i_39_.toFloat() + i.toFloat() * this.aFloat5662 + i_40_.toFloat() * this.aFloat5664)).toInt()
-    }
-
-    companion object {
-        @JvmField
-        var anInt5656: Int = 0
-        @JvmField
-        var anInt5657: Int = 0
-        @JvmField
-        var anInt5658: Int = 0
-        @JvmField
-        var anInt5659: Int = 0
-        @JvmField
-        var anInt5660: Int = 0
-        @JvmField
-        var anInt5661: Int = 0
-        var aLong5663: Long = 0
-        @JvmField
-        var anInt5665: Int = 0
-        @JvmField
-        var anInt5667: Int = 0
-        @JvmField
-        var anInt5668: Int = 0
-        @JvmField
-        var anInt5670: Int = 0
-        @JvmField
-        var anInt5671: Int = 0
-        @JvmField
-        var anInt5674: Int = 0
-        var aParticleEmitterFactory_5675: ParticleEmitterFactory? = ViewportTransform.method2118(((-42).toByte()).toByte())
-        @JvmField
-        var anInt5676: Int = 0
-        @JvmField
-        var aFontMetaRef_5677: FontMetaRef? = FontMetaRef(56, 7)
-        @JvmField
-        var anInt5679: Int = 0
-        @JvmField
-        var anInt5682: Int = 0
-        @JvmField
-        var anInt5683: Int = 0
-        @JvmField
-        var aRenderConfig5684: RenderConfig? = null
-        @JvmField
-        var anInt5687: Int = 0
-        @JvmField
-        var anInt5688: Int = 0
-        @JvmField
-        var aProjectileFactory_5689: ProjectileFactory? = ProjectileFactory(4, 1)
-
-        @JvmStatic
-        fun method911(i: Int) {
-            if (i != 0) method911(-121)
-            aProjectileFactory_5689 = null
-            aRenderConfig5684 = null
-            aParticleEmitterFactory_5675 = null
-            aFontMetaRef_5677 = null
-        }
-
-        @JvmStatic
-        fun method912(i: Int): Int {
-            if (i != 0) return -41
-            anInt5657++
-            return GroundItemRenderState.anInt1663
-        }
-
-        @JvmStatic
-        fun method913(i: Byte): Boolean {
-            if (i <= 115) return true
-            anInt5679++
-            return FileExistsCondition.anInt4776 > 0
-        }
     }
 }

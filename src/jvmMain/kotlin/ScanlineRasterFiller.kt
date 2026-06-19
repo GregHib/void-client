@@ -1,10 +1,10 @@
-import GlElementArrayBuffer.Companion.method1156
-import ClickFeedbackTask.Companion.method1353
-import SimpleToggleOptionState.Companion.method1742
-import MidiSequencePlayer.Companion.method2878
-import InvertTextureNode.Companion.method3135
+import GlElementArrayBufferStatics.method1156
+import ClickFeedbackTaskStatics.method1353
+import SimpleToggleOptionStateStatics.method1742
+import MidiSequencePlayerStatics.method2878
+import InvertTextureNodeStatics.method3135
 import GameClock.method599
-import OpenGlRenderNode.Companion.method3297
+import OpenGlRenderNodeStatics.method3297
 
 /* Class184 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -14,97 +14,4 @@ class ScanlineRasterFiller {
     var aStringArray2473: Array<String?>? = null
     var aClass348_Sub42_Sub19_2474: MinimapAreaMarkerNode? = null
     var anInt2477: Int = -1
-
-    companion object {
-        @JvmField
-        var aBoolean2469: Boolean
-        var anInt2470: Int = 0
-        var anIntArray2471: IntArray? = IntArray(14)
-        var anInt2472: Int = 0
-        var anInt2475: Int = 0
-        var anInt2476: Int = 0
-
-        /*synthetic*/
-        var aClass2478: Class<*>? = null
-
-        fun method1384(i: Int, i_0_: Int, i_1_: Int): Int {
-            var i_1_ = i_1_
-            i_1_ = (0x7f and i) * i_1_ shr 7
-            if (i_0_ != 1421041063) return -72
-            anInt2476++
-            if (i_1_ >= 2) {
-                if (i_1_ > 126) i_1_ = 126
-            } else i_1_ = 2
-            return i_1_ + (0xff80 and i)
-        }
-
-        fun method1385(bool: Boolean, `is`: ByteArray, i: Byte) {
-            anInt2475++
-            if (CubemapTextureGlSource.aClass348_Sub49_8698 == null) CubemapTextureGlSource.aClass348_Sub49_8698 = ByteBuffer(20000)
-            CubemapTextureGlSource.aClass348_Sub49_8698!!.writeBytes(`is`.size, 0, `is`, 97)
-            if (bool) {
-                ParticleSystemState.method1294((-113).toByte(), (CubemapTextureGlSource.aClass348_Sub49_8698!!.aByteArray7154))
-                WorldMapImageBuilder.aClass110_Sub1Array1146 = arrayOfNulls<MapLabelMenuEntry>(NpcDefinition.anInt2956)
-                var i_2_ = 0
-                var i_3_ = SceneObjectEntity.anInt8731
-                while ((MultiLevelOptionState.anInt6151 >= i_3_)) {
-                    val class110_sub1 = method1742(false, i_3_)
-                    if (class110_sub1 != null) WorldMapImageBuilder.aClass110_Sub1Array1146!![i_2_++] = class110_sub1
-                    i_3_++
-                }
-                ModelBatchBase.aBoolean1899 = false
-                WorldMapRenderer.aLong4683 = method599(-92)
-                CubemapTextureGlSource.aClass348_Sub49_8698 = null
-            }
-            if (i > -21) aBoolean2469 = true
-        }
-
-        @JvmStatic
-        fun method1386(bool: Boolean) {
-            anIntArray2471 = null
-            if (bool != true) aBoolean2469 = true
-        }
-
-        @JvmStatic
-        fun method1387(i: Int, class348_sub27: MultiFieldRecord) {
-            anInt2470++
-            if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null) {
-                if (i >= -38) method1384(-77, 22, 77)
-                var renderTarget: RenderTarget? = null
-                if (class348_sub27.anInt6904 == 0) renderTarget = (method3297((class348_sub27.anInt6899), (class348_sub27.anInt6905), (class348_sub27.anInt6896)) as RenderTarget?)
-                if (class348_sub27.anInt6904 == 1) renderTarget = ((method3135(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896)) as RenderTarget?)
-                if (class348_sub27.anInt6904 == 2) renderTarget = ((method1353(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896, (if (aClass2478 != null) aClass2478 else (RenderTarget::class.java.also { aClass2478 = it })))) as RenderTarget?)
-                if (class348_sub27.anInt6904 == 3) renderTarget = ((method2878(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896)) as RenderTarget?)
-                if (renderTarget == null) {
-                    class348_sub27.anInt6892 = 0
-                    class348_sub27.anInt6902 = -1
-                    class348_sub27.anInt6903 = 0
-                } else {
-                    class348_sub27.anInt6902 = renderTarget.method42(-103)
-                    class348_sub27.anInt6903 = renderTarget.method39(111)
-                    class348_sub27.anInt6892 = renderTarget.method41(-32228)
-                }
-            }
-        }
-
-        fun method1388(i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
-            var i = i
-            var i_8_ = i_8_
-            method1156(-27, i_6_, WidgetDefinition.anIntArrayArray255!![i++]!!, i_7_, i_4_)
-            anInt2472++
-            method1156(-27, i_6_, WidgetDefinition.anIntArrayArray255!![i_8_--]!!, i_7_, i_4_)
-            val i_9_ = -52 / ((i_5_ - -32) / 55)
-            var i_10_ = i
-            while (i_8_ >= i_10_) {
-                val `is` = WidgetDefinition.anIntArrayArray255!![i_10_]!!
-                `is`[i_6_] = i_4_
-                `is`[i_7_] = `is`[i_6_]
-                i_10_++
-            }
-        }
-
-        init {
-            aBoolean2469 = false
-        }
-    }
 }

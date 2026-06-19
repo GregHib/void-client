@@ -1,3 +1,7 @@
+import ColourKeyTextureNodeStatics.method3118
+import ColourKeyTextureNodeStatics.anInt9350
+import ColourKeyTextureNodeStatics.anInt9353
+
 /* Class348_Sub40_Sub26 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -18,7 +22,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_9_ = `is`[1]!!
             val is_10_ = `is`[2]!!
             var i_11_ = 0
-            while ((i_11_ < DisplaceTextureNode.Companion.anInt9139)) {
+            while ((i_11_ < DisplaceTextureNodeStatics.anInt9139)) {
                 val i_12_ = is_5_[i_11_]
                 val i_13_ = is_7_[i_11_]
                 val i_14_ = is_6_[i_11_]
@@ -59,91 +63,9 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
                 if (i_23_ == 31015) break
                 method3118(96.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("uf.F(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + i_23_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("uf.F(" + (if (class348_sub49 != null) "{...}" else "null") + ',' + i + ',' + i_23_ + ')'))
             }
             break
         } while (false)
-    }
-
-    companion object {
-        @JvmField
-        var anInt9345: Int = 0
-        @JvmField
-        var anInt9346: Int = 0
-        @JvmField
-        var anInt9348: Int = 0
-        @JvmField
-        var anInt9349: Int = 0
-        @JvmField
-        var anInt9350: Int = 0
-        @JvmField
-        var aBooleanArray9351: BooleanArray?
-        @JvmField
-        var aBoolean9352: Boolean = true
-        @JvmField
-        var anInt9353: Int = 0
-        @JvmField
-        var anInt9355: Int = 0
-
-        @JvmStatic
-        fun method3118(i: Byte) {
-            aBooleanArray9351 = null
-            val i_0_ = 37 / ((28 - i) / 61)
-        }
-
-        @JvmStatic
-        fun method3119(i: Int, i_1_: Int, i_2_: Int): Boolean {
-            if (i_1_ <= 39) method3119(-106, 118, -21)
-            anInt9355++
-            return (i and 0xc580) != 0
-        }
-
-        @JvmStatic
-        fun method3120(i: Int) {
-            WidgetRedrawTracker.anInt3931 = 0
-            anInt9345++
-            val i_15_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-118).toByte())
-            val i_16_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
-            val i_17_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-            val bool = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte()) == 1)
-
-            ImageFrameCache.method2554((-45).toByte())
-            CellNoiseTextureNode.Companion.method3111(111, i_15_)
-            var i_18_: Int = (-CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 + RadialTextureNode.Companion.anInt9341) / 16
-            BrightnessOptionState.anIntArrayArray5894 = Array<IntArray?>(i_18_) { IntArray(4) }
-            for (i_19_ in 0..<i_18_) {
-                for (i_20_ in 0..3) BrightnessOptionState.anIntArrayArray5894!![i_19_]!![i_20_] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
-            }
-            VorbisOggDecoder.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_18_)
-            ModelFacePriorityNode.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_18_)
-            NativeSprite.anIntArray5192 = IntArray(i_18_)
-            GlRectangleTexture.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_18_)
-            GameAppletFrame.anIntArray38 = IntArray(i_18_)
-            StringCacheNode.aByteArrayArray7212 = null
-            RenderNode.anIntArray9724 = IntArray(i_18_)
-            ImageFrameCache.anIntArray4031 = null
-            DragDropController.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_18_)
-            if (i >= -47) anInt9349 = -54
-            LocalizedTextTriple.anIntArray3759 = IntArray(i_18_)
-            NullOggStream.anIntArray9042 = IntArray(i_18_)
-            i_18_ = 0
-            for (i_21_ in (-(GlCubemapLightPass.anInt7319 shr 4) + i_17_) / 8..(i_17_ + (GlCubemapLightPass.anInt7319 shr 4)) / 8) {
-                var i_22_: Int = (i_16_ - (RangeThresholdTextureNode.Companion.anInt9109 shr 4)) / 8
-                while ((i_22_ <= ((RangeThresholdTextureNode.Companion.anInt9109 shr 4) + i_16_) / 8)) {
-                    NullOggStream.anIntArray9042!![i_18_] = i_22_ + (i_21_ shl 8)
-                    NativeSprite.anIntArray5192!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("m" + i_21_ + "_" + i_22_, 0)
-                    GameAppletFrame.anIntArray38!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("l" + i_21_ + "_" + i_22_, 0)
-                    LocalizedTextTriple.anIntArray3759!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("um" + i_21_ + "_" + i_22_, 0)
-                    RenderNode.anIntArray9724!![i_18_] = GlShadowRenderPass.aJs5Archive_7382!!.method417("ul" + i_21_ + "_" + i_22_, 0)
-                    i_18_++
-                    i_22_++
-                }
-            }
-            RegionSceneShifter.method3157(i_16_, 123.toByte(), i_17_, 11, bool)
-        }
-
-        init {
-            aBooleanArray9351 = BooleanArray(8)
-        }
     }
 }

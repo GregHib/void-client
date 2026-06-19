@@ -1,3 +1,12 @@
+import BloomGraphicsOptionStateStatics.method1773
+import BloomGraphicsOptionStateStatics.anInt5960
+import BloomGraphicsOptionStateStatics.anInt5961
+import BloomGraphicsOptionStateStatics.anInt5962
+import BloomGraphicsOptionStateStatics.anInt5963
+import BloomGraphicsOptionStateStatics.anInt5965
+import BloomGraphicsOptionStateStatics.anInt5970
+import BloomGraphicsOptionStateStatics.anInt5972
+
 /* Class239_Sub12 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -5,7 +14,7 @@ class BloomGraphicsOptionState : GraphicsOptionState {
     override fun method1714(i: Int, i_0_: Int): Int {
         anInt5972++
         if (i != 3) return 121
-        if (!LinkedListNode.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
+        if (!LinkedListNodeStatics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
         return 1
     }
 
@@ -26,7 +35,7 @@ class BloomGraphicsOptionState : GraphicsOptionState {
     override fun method1716(bool: Boolean) {
         if (bool != false) method1716(false)
         anInt5962++
-        if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-119).toByte()) && !LinkedListNode.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 0
+        if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-119).toByte()) && !LinkedListNodeStatics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 0
         if (this.anInt3138 < 0 || this.anInt3138 > 1) this.anInt3138 = method1710(20014)
     }
 
@@ -35,67 +44,12 @@ class BloomGraphicsOptionState : GraphicsOptionState {
     fun method1774(i: Int): Boolean {
         if (i < 85) method1773(116.toByte())
         anInt5961++
-        return LinkedListNode.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))
+        return LinkedListNodeStatics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))
     }
 
     override fun method1710(i: Int): Int {
         anInt5970++
         if (i != 20014) anInt5965 = -58
         return 0
-    }
-
-    companion object {
-        @JvmField
-        var anInt5960: Int = 0
-        @JvmField
-        var anInt5961: Int = 0
-        @JvmField
-        var anInt5962: Int = 0
-        @JvmField
-        var anInt5963: Int = 0
-        @JvmField
-        var aJs5Archive_5964: Js5Archive? = null
-        @JvmField
-        var anInt5965: Int = 0
-        @JvmField
-        var aString5966: String? = null
-        @JvmField
-        var anInt5967: Int = 0
-        @JvmField
-        var anInt5968: Int = 0
-        @JvmField
-        var anInt5969: Int = 0
-        @JvmField
-        var anInt5970: Int = 0
-        @JvmField
-        var aLong5971: Long = 0
-        @JvmField
-        var anInt5972: Int = 0
-        @JvmField
-        var anInt5973: Int = 0
-
-        @JvmStatic
-        fun method1772(i: Int) {
-            anInt5968++
-            var class348_sub15 = ProjectileConfigUtil.aHashtable_389!!.method3484(0) as MenuActionNode?
-            if (i <= 4) aString5966 = null
-            while ( /**/class348_sub15 != null) {
-                OpenGlModel.method690(108.toByte(), (class348_sub15.anInt6773))
-                class348_sub15 = ProjectileConfigUtil.aHashtable_389!!.method3482(0) as MenuActionNode?
-            }
-        }
-
-        @JvmStatic
-        fun method1773(i: Byte) {
-            val i_3_ = -86 / ((i - 13) / 45)
-            aString5966 = null
-            aJs5Archive_5964 = null
-        }
-
-        @JvmStatic
-        fun method1775(i: Byte, i_4_: Int, i_5_: Int) {
-            anInt5967++
-            if (i.toInt() == -8 && TextureLoaderUtil.method2547(i_4_, 84.toByte())) BlankTextureNode.method3097((WarpTextureNode.aWidgetComponentArrayArray9427!![i_4_]!!), i_5_, 119)
-        }
     }
 }

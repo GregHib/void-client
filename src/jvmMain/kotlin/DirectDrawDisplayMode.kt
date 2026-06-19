@@ -5,6 +5,8 @@ import com.ms.directX.IEnumModesCallback
 import com.ms.win32.User32
 import java.awt.Component
 import java.awt.Frame
+import DirectDrawDisplayModeStatics.anIntArray4606
+import DirectDrawDisplayModeStatics.anInt4608
 
 /*
  * Class134
@@ -66,10 +68,5 @@ class DirectDrawDisplayMode : IEnumModesCallback {
 
     init {
         aDirectDraw4607.initialize(null)
-    }
-
-    companion object {
-        private var anIntArray4606: IntArray? = null
-        private var anInt4608 = 0
     }
 }

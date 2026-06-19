@@ -1,3 +1,7 @@
+import ConfigShortValueNodeStatics.anInt9541
+import ConfigShortValueNodeStatics.anInt9543
+import ConfigShortValueNodeStatics.anInt9544
+
 /* Class348_Sub42_Sub7 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -17,12 +21,5 @@ class ConfigShortValueNode : HashLinkedListNode() {
         }
         if (i.toInt() != 16) anInt9541 = -83
         anInt9543++
-    }
-
-    companion object {
-        var anInt9540: Int = 0
-        var anInt9541: Int = -1
-        var anInt9543: Int = 0
-        var anInt9544: Int = 0
     }
 }

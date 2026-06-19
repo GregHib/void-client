@@ -32,7 +32,7 @@ object FileIoUtil {
     fun method2605(i: Byte): Boolean {
         anInt4092++
         if (i.toInt() != -99) anIntArray4097 = null
-        return SpriteDefinition.anInt7068 != 0
+        return SpriteDefinitionStatics.anInt7068 != 0
     }
 
     fun method2606(i: Int, l: Long) {
@@ -45,7 +45,7 @@ object FileIoUtil {
                 /* empty */
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "de.A(" + i + ',' + l + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "de.A(" + i + ',' + l + ')')
         }
     }
 

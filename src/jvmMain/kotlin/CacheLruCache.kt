@@ -1,3 +1,8 @@
+import CacheLruCacheStatics.anInt3879
+import CacheLruCacheStatics.anInt3880
+import CacheLruCacheStatics.anInt3881
+import CacheLruCacheStatics.anInt3885
+
 /* Class308 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -15,7 +20,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
             if (class348_sub42 != null) aLinkedNodeListIterator_3889!!.method1005(true, class348_sub42)
             return class348_sub42
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "wu.D(" + l + ',' + i + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "wu.D(" + l + ',' + i + ')')
         }
     }
 
@@ -41,7 +46,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
                 if (i <= -110) break
                 method2304(36, -86L)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "wu.C(" + i + ',' + l + ')')
+                throw SoundBankPatchStatics.method2929(runtimeexception, "wu.C(" + i + ',' + l + ')')
             }
             break
         } while (false)
@@ -63,7 +68,7 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
             aHashtable_3888.method3483(37.toByte(), l, class348_sub42)
             aLinkedNodeListIterator_3889!!.method1005(true, class348_sub42!!)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wu.E(" + l + ',' + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wu.E(" + l + ',' + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -75,29 +80,5 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
             i_1_ += i_1_
         }
         aHashtable_3888 = Hashtable(i_1_)
-    }
-
-    companion object {
-        var anInt3879: Int = 0
-        var anInt3880: Int = 0
-        var anInt3881: Int = 0
-        @JvmField
-        var aByteArrayArray3882: Array<ByteArray?>? = null
-        var anIntArray3883: IntArray?
-        @JvmField
-        var anCharStreamReaderArray3884s: Array<CharStreamReader?>? = arrayOfNulls<CharStreamReader>(75)
-        var anInt3885: Int = 0
-        var anInt3886: Int = 0
-        @JvmStatic
-        fun method2306(i: Byte) {
-            if (i.toInt() != -90) Companion.method2306((-74).toByte())
-            anIntArray3883 = null
-            anCharStreamReaderArray3884s = null
-            aByteArrayArray3882 = null
-        }
-
-        init {
-            anIntArray3883 = IntArray(6)
-        }
     }
 }

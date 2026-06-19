@@ -1,6 +1,8 @@
 import GameDisplayManager.method1582
-import BoundsConstraintEntry.Companion.method2057
-import WorldMapAreaLabel.Companion.method3570
+import BoundsConstraintEntryStatics.method2057
+import WorldMapAreaLabelStatics.method3570
+import HuffmanCodecStatics.anInt3770
+import HuffmanCodecStatics.anInt3771
 
 /* Class296 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -82,7 +84,7 @@ class HuffmanCodec internal constructor(`is`: ByteArray) {
             }
             return i_8_ + 1 + -i
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wda.A(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wda.A(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'))
         }
     }
 
@@ -131,7 +133,7 @@ class HuffmanCodec internal constructor(`is`: ByteArray) {
             }
             return -i_12_ + (i_16_ - -7 shr 3)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("wda.C(" + i + ',' + i_11_ + ',' + i_12_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_13_ + ',' + (if (is_14_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("wda.C(" + i + ',' + i_11_ + ',' + i_12_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_13_ + ',' + (if (is_14_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -187,39 +189,6 @@ class HuffmanCodec internal constructor(`is`: ByteArray) {
                 }
                 anIntArray3774!![i_34_] = i_25_.inv()
                 if (i_34_ >= i_24_) i_24_ = 1 + i_34_
-            }
-        }
-    }
-
-    companion object {
-        var anInt3765: Int = 0
-        var aBoolean3767: Boolean = false
-        @JvmField
-        var anInt3768: Int = 0
-        var anInt3770: Int = 0
-        var anInt3771: Int = 0
-        var anInt3772: Int = 0
-        var aIntRange_3773: IntRange? = IntRange(55, 0)
-        var anInt3775: Int = 0
-
-        fun method2224(i: Int, i_0_: Byte, i_1_: Int): Boolean {
-            val i_2_ = 41 / ((59 - i_0_) / 37)
-            anInt3765++
-            return (i and 0x800) != 0
-        }
-
-        @JvmStatic
-        fun method2225(i: Int) {
-            if (i != 32) aIntRange_3773 = null
-            aIntRange_3773 = null
-        }
-
-        @JvmStatic
-        fun method2228(i: Int) {
-            if (i == 0) {
-                method1582(7851)
-                anInt3772++
-                method3570(false)
             }
         }
     }

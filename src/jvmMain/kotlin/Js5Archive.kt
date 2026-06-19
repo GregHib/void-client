@@ -1,4 +1,39 @@
 import java.util.*
+import Js5ArchiveStatics.anInt626
+import Js5ArchiveStatics.anInt627
+import Js5ArchiveStatics.anInt628
+import Js5ArchiveStatics.anInt630
+import Js5ArchiveStatics.anInt631
+import Js5ArchiveStatics.anInt632
+import Js5ArchiveStatics.anInt633
+import Js5ArchiveStatics.anInt635
+import Js5ArchiveStatics.anInt636
+import Js5ArchiveStatics.anInt637
+import Js5ArchiveStatics.anInt638
+import Js5ArchiveStatics.anInt639
+import Js5ArchiveStatics.anInt640
+import Js5ArchiveStatics.anInt641
+import Js5ArchiveStatics.anInt644
+import Js5ArchiveStatics.anInt645
+import Js5ArchiveStatics.anInt646
+import Js5ArchiveStatics.anInt647
+import Js5ArchiveStatics.anInt648
+import Js5ArchiveStatics.anInt649
+import Js5ArchiveStatics.anInt650
+import Js5ArchiveStatics.anInt651
+import Js5ArchiveStatics.anInt652
+import Js5ArchiveStatics.anInt653
+import Js5ArchiveStatics.anInt654
+import Js5ArchiveStatics.anInt657
+import Js5ArchiveStatics.anInt658
+import Js5ArchiveStatics.anInt660
+import Js5ArchiveStatics.anInt661
+import Js5ArchiveStatics.anInt662
+import Js5ArchiveStatics.anInt663
+import Js5ArchiveStatics.anInt665
+import Js5ArchiveStatics.anInt668
+import Js5ArchiveStatics.anInt669
+import Js5ArchiveStatics.aFloat670
 
 /* Class45 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -32,7 +67,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
             val i_3_ = (aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_2_]!!.method2365(i xor 0x7486.inv(), ClanChatRequestSender.method2108(string_1_, -29286)))
             return method410(-1860, i_2_, i_3_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("in.EA(" + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("in.EA(" + (if (string != null) "{...}" else "null") + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -40,7 +75,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         anInt646++
         if (!method399(false)) return false
         if (i < 0 || aCutsceneSequenceData_629!!.anIntArray3724.size <= i || (aCutsceneSequenceData_629!!.anIntArray3724[i] == 0)) {
-            require(!GlBufferObject.aBoolean4741) { i.toString() }
+            require(!GlBufferObjectStatics.aBoolean4741) { i.toString() }
             return false
         }
         return i_4_.toInt() == -40
@@ -58,7 +93,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
                 if (!bool) return null
             }
         }
-        val is_7_ = MinimapSquareDrawer.method461(false, anObjectArrayArray664!![i]!![i_5_], 53146732)
+        val is_7_ = MinimapSquareDrawerStatics.method461(false, anObjectArrayArray664!![i]!![i_5_], 53146732)
         if (this.anInt634 == 1) {
             anObjectArrayArray664!![i]!![i_5_] = null
             if (aCutsceneSequenceData_629!!.anIntArray3724[i] == 1) anObjectArrayArray664!![i] = null
@@ -88,17 +123,17 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         }
         if (bool) return true
         val is_14_: ByteArray
-        if (`is` == null || (`is`[0] == 0 && `is`[1] == 0 && `is`[2] == 0 && `is`[3] == 0)) is_14_ = MinimapSquareDrawer.method461(false, anObjectArray656!![i_9_], 53146732)!!
+        if (`is` == null || (`is`[0] == 0 && `is`[1] == 0 && `is`[2] == 0 && `is`[3] == 0)) is_14_ = MinimapSquareDrawerStatics.method461(false, anObjectArray656!![i_9_], 53146732)!!
         else {
-            is_14_ = MinimapSquareDrawer.method461(true, anObjectArray656!![i_9_], 53146732)!!
+            is_14_ = MinimapSquareDrawerStatics.method461(true, anObjectArray656!![i_9_], 53146732)!!
             val class348_sub49 = ByteBuffer(is_14_)
             class348_sub49.method3367(607818341, `is`, 5, (class348_sub49.aByteArray7154)!!.size)
         }
         val is_15_: ByteArray?
         try {
-            is_15_ = RegionSceneShifter.method3158(is_14_, -120)
+            is_15_ = RegionSceneShifterStatics.method3158(is_14_, -120)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("T3 - " + (`is` != null) + "," + i_9_ + "," + is_14_.size + "," + GrayscaleNoiseTexture.method554(5126, is_14_.size, is_14_) + "," + GrayscaleNoiseTexture.method554(5126, -2 + is_14_.size, is_14_) + "," + aCutsceneSequenceData_629!!.anIntArray3729[i_9_] + "," + aCutsceneSequenceData_629!!.anInt3719))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("T3 - " + (`is` != null) + "," + i_9_ + "," + is_14_.size + "," + GrayscaleNoiseTextureStatics.method554(5126, is_14_.size, is_14_) + "," + GrayscaleNoiseTextureStatics.method554(5126, -2 + is_14_.size, is_14_) + "," + aCutsceneSequenceData_629!!.anIntArray3729[i_9_] + "," + aCutsceneSequenceData_629!!.anInt3719))
         }
         if (aBoolean655) anObjectArray656!![i_9_] = null
         if (i_8_ >= -17) method415(70.toByte(), -7)
@@ -184,7 +219,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
                     if (is_11_ == null) i_29_ = i_28_
                     else i_29_ = is_11_[i_28_]
                     if (this.anInt634 != 0) objects[i_29_] = is_22_[i_28_]
-                    else objects[i_29_] = GrowableStringList.method1357(is_22_[i_28_], false, 126.toByte())
+                    else objects[i_29_] = GrowableStringListStatics.method1357(is_22_[i_28_], false, 126.toByte())
                     i_28_++
                 }
             }
@@ -193,7 +228,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
             if (is_11_ != null) i_44_ = is_11_[0]
             else i_44_ = 0
             if (this.anInt634 != 0) objects[i_44_] = is_15_
-            else objects[i_44_] = GrowableStringList.method1357(is_15_, false, 104.toByte())
+            else objects[i_44_] = GrowableStringListStatics.method1357(is_15_, false, 104.toByte())
         }
         return true
     }
@@ -295,7 +330,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
             val i_58_ = aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_57_]!!.method2365(1, ClanChatRequestSender.method2108(string_56_, -29286))
             return method420(i + -17694, i_57_, i_58_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("in.Q(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (string_56_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("in.Q(" + (if (string != null) "{...}" else "null") + ',' + i + ',' + (if (string_56_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -324,7 +359,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
 
     private fun method406(i: Int, i_61_: Int) {
         if (i_61_ > -105) anObjectArrayArray664 = null
-        if (!aBoolean655) anObjectArray656!![i] = GrowableStringList.method1357(aResourceProvider_659!!.method2339(i, 73.toByte()), false, 123.toByte())
+        if (!aBoolean655) anObjectArray656!![i] = GrowableStringListStatics.method1357(aResourceProvider_659!!.method2339(i, 73.toByte()), false, 123.toByte())
         else anObjectArray656!![i] = aResourceProvider_659!!.method2339(i, 12.toByte())
         anInt665++
     }
@@ -432,7 +467,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         anInt662++
         if (!method399(false)) return false
         if (i_74_ < i_73_ || i < 0 || (aCutsceneSequenceData_629!!.anIntArray3724.size <= i_74_) || (aCutsceneSequenceData_629!!.anIntArray3724[i_74_] <= i)) {
-            require(!GlBufferObject.aBoolean4741) { i_74_.toString() + "," + i }
+            require(!GlBufferObjectStatics.aBoolean4741) { i_74_.toString() + "," + i }
             return false
         }
         return true
@@ -480,7 +515,7 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
             val i_80_ = aCutsceneSequenceData_629!!.aIntHashSetArray3728!![i_79_]!!.method2365(1, ClanChatRequestSender.method2108(string, -29286))
             return i_80_ >= 0
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("in.M(" + (if (string != null) "{...}" else "null") + ',' + (if (string_78_ != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("in.M(" + (if (string != null) "{...}" else "null") + ',' + (if (string_78_ != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -497,104 +532,5 @@ class Js5Archive internal constructor(resourceProvider: ResourceProvider, bool: 
         require(!(i < 0 || i > 2)) { "js5: Invalid value " + i + " supplied for discardunpacked" }
         aBoolean655 = bool
         this.anInt634 = i
-    }
-
-    companion object {
-        @JvmField
-        var anInt626: Int = 0
-        @JvmField
-        var anInt627: Int = 0
-        @JvmField
-        var anInt628: Int = 0
-        @JvmField
-        var anInt630: Int = 0
-        @JvmField
-        var anInt631: Int = 0
-        @JvmField
-        var anInt632: Int = 0
-        @JvmField
-        var anInt633: Int = 0
-        @JvmField
-        var anInt635: Int = 0
-        @JvmField
-        var anInt636: Int = 0
-        @JvmField
-        var anInt637: Int = 0
-        @JvmField
-        var anInt638: Int = 0
-        @JvmField
-        var anInt639: Int = 0
-        @JvmField
-        var anInt640: Int = 0
-        @JvmField
-        var anInt641: Int = 0
-        @JvmField
-        var anInt642: Int = 0
-        @JvmField
-        var aFontMetaRef_643: FontMetaRef? = FontMetaRef(3, -1)
-        @JvmField
-        var anInt644: Int = 0
-        @JvmField
-        var anInt645: Int = 0
-        @JvmField
-        var anInt646: Int = 0
-        @JvmField
-        var anInt647: Int = 0
-        @JvmField
-        var anInt648: Int = 0
-        @JvmField
-        var anInt649: Int = 0
-        @JvmField
-        var anInt650: Int = 0
-        @JvmField
-        var anInt651: Int = 0
-        @JvmField
-        var anInt652: Int = 0
-        @JvmField
-        var anInt653: Int = 0
-        @JvmField
-        var anInt654: Int = 0
-        @JvmField
-        var anInt657: Int = 0
-        @JvmField
-        var anInt658: Int = 0
-        @JvmField
-        var anInt660: Int = 0
-        @JvmField
-        var anInt661: Int = 0
-        @JvmField
-        var anInt662: Int = 0
-        @JvmField
-        var anInt663: Int = 0
-        @JvmField
-        var anInt665: Int = 0
-        @JvmField
-        var anInt666: Int
-        @JvmField
-        var aLong667: Long = 0
-        @JvmField
-        var anInt668: Int = 0
-        @JvmField
-        var anInt669: Int = 0
-        @JvmField
-        var aFloat670: Float = 0f
-
-        @JvmStatic
-        fun method390(i: Byte) {
-            aFontMetaRef_643 = null
-            if (i.toInt() != 10) Companion.method390((-3).toByte())
-        }
-
-        @JvmStatic
-        @Throws(ClientException::class)
-        fun method395(i: Int) {
-            if (ByteBuffer.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
-            else CameraRotationStub.aRenderer326!!.method3626(0, 0)
-            if (i >= 73) anInt642++
-        }
-
-        init {
-            anInt666 = 100
-        }
     }
 }

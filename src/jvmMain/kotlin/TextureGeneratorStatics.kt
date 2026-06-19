@@ -1,0 +1,62 @@
+object TextureGeneratorStatics {
+    @JvmField
+            var aJs5Archive_2490: Js5Archive? = null
+            @JvmField
+            var aRgbColorPalette_2491: RgbColorPalette?
+            @JvmField
+            var aBoolean2492: Boolean = false
+            @JvmField
+            var anInt2493: Int = 0
+            @JvmField
+            var aStringArray2494: Array<String?>?
+            @JvmField
+            var aFontMetaRef_2495: FontMetaRef?
+            @JvmField
+            var aString2496: String?
+            @JvmField
+            var anIntArray2497: IntArray?
+    
+            @JvmStatic
+            fun method1396(i: Int) {
+                aJs5Archive_2490 = null
+                aRgbColorPalette_2491 = null
+                aStringArray2494 = null
+                anIntArray2497 = null
+                aString2496 = null
+                aFontMetaRef_2495 = null
+                if (i != 25) aFontMetaRef_2495 = null
+            }
+    
+            @JvmStatic
+            fun method1397(i: Int) {
+                anInt2493++
+                val i_0_ = ShaderStateStatics.anInt6513
+                val `is` = ScrollTexMaterialPassStatics.anIntArray6290!!
+                for (i_1_ in 0..<i_0_) {
+                    val player = LoadingBarRendererStatics.aPlayerArray5058!![`is`[i_1_]]
+                    if (player != null && (player.anInt10264) > 0) {
+                        player.anInt10264--
+                        if ((player.anInt10264) == 0) player.aString10292 = null
+                    }
+                }
+                for (i_2_ in i..<ModelDefinitionLoaderStatics.anInt2057) {
+                    val l = RgbColorPaletteStatics.anIntArray1233!![i_2_].toLong()
+                    val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(l, -6008) as? NpcReference?)
+                    if (class348_sub22 != null) {
+                        val npc = (class348_sub22.aNpc_6859)!!
+                        if ((npc.anInt10264) > 0) {
+                            npc.anInt10264--
+                            if (npc.anInt10264 == 0) npc.aString10292 = null
+                        }
+                    }
+                }
+            }
+    
+            init {
+                aRgbColorPalette_2491 = RgbColorPalette(13, -1)
+                aStringArray2494 = arrayOfNulls<String>(100)
+                aFontMetaRef_2495 = FontMetaRef(35, 5)
+                aString2496 = ""
+                anIntArray2497 = IntArray(25)
+            }
+}

@@ -1,4 +1,15 @@
-import FloorOverlayDefinition.Companion.method500
+import FloorOverlayDefinitionStatics.method500
+import ModelHeaderCacheStatics.method1935
+import ModelHeaderCacheStatics.anInt3266
+import ModelHeaderCacheStatics.anInt3272
+import ModelHeaderCacheStatics.anInt3274
+import ModelHeaderCacheStatics.anInt3275
+import ModelHeaderCacheStatics.anInt3276
+import ModelHeaderCacheStatics.anInt3277
+import ModelHeaderCacheStatics.anInt3281
+import ModelHeaderCacheStatics.anInt3282
+import ModelHeaderCacheStatics.anInt3283
+import ModelHeaderCacheStatics.anInt3284
 
 /* Class255 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -58,7 +69,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             }
             return abstractModelRenderer_9_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ub.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (if (var_renderer_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ub.C(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (font != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (if (var_renderer_3_ != null) "{...}" else "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'))
         }
     }
 
@@ -130,20 +141,20 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         if (itemDefinition != null) return itemDefinition
         val `is`: ByteArray?
         synchronized(aJs5Archive_3267!!) {
-            `is` = aJs5Archive_3267.method410(-1860, method500(7, i_13_), ConfigFlagUtil.Companion.method1914(-23590, i_13_))
+            `is` = aJs5Archive_3267.method410(-1860, method500(7, i_13_), ConfigFlagUtilStatics.method1914(-23590, i_13_))
         }
         itemDefinition = ItemDefinition()
         itemDefinition.aModelHeaderCache_2761 = this
         itemDefinition.anInt2769 = i_13_
-        itemDefinition.aStringArray2811 = arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null)
-        itemDefinition.aStringArray2763 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
+        itemDefinition.aStringArray2811 = arrayOf<String?>(null, null, LocalizedTextStatics.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null)
+        itemDefinition.aStringArray2763 = (arrayOf<String?>(null, null, null, null, LocalizedTextStatics.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
         if (`is` != null) itemDefinition.method1569(768, ByteBuffer(`is`))
         itemDefinition.method1563(92.toByte())
         val i_14_ = 4 / ((i - 13) / 59)
         if (itemDefinition.anInt2833 != -1) itemDefinition.method1570(1, method1940(90, itemDefinition.anInt2758), method1940(101, itemDefinition.anInt2833))
         if (itemDefinition.anInt2812 != -1) itemDefinition.method1556(method1940(-58, itemDefinition.anInt2778), (-29).toByte(), method1940(-82, itemDefinition.anInt2812))
         if (!aBoolean3269 && itemDefinition.aBoolean2783) {
-            itemDefinition.aString2795 = LocalizedText.aLocalizedText_3488!!.method2063(this.anInt3286, 544)
+            itemDefinition.aString2795 = LocalizedTextStatics.aLocalizedText_3488!!.method2063(this.anInt3286, 544)
             itemDefinition.anInt2827 = 0
             itemDefinition.aStringArray2811 = aStringArray3290
             itemDefinition.aStringArray2763 = aStringArray3293
@@ -180,7 +191,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             aCrc64Hashable_3289!!.anInt4993 = i
             return this.aSizeBoundedSoftCache_3288.method1340(123, aCrc64Hashable_3289!!) as AbstractModelRenderer?
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -204,164 +215,10 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 val i_23_ = -1 + aJs5Archive_3267.method414(-1)
                 this.anInt3271 = aJs5Archive_3267.method407(0, i_23_) + i_23_ * 256
             } else this.anInt3271 = 0
-            aStringArray3290 = (arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null))
-            aStringArray3293 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
+            aStringArray3290 = (arrayOf<String?>(null, null, LocalizedTextStatics.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null))
+            aStringArray3293 = (arrayOf<String?>(null, null, null, null, LocalizedTextStatics.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (emoteDefCache != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_22_ != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        var aIntRange_3265: IntRange?
-        var anInt3266: Int = 0
-        var anInt3270: Int = 0
-        var anInt3272: Int = 0
-        @JvmField
-        var anIntArray3273: IntArray? = IntArray(5)
-        var anInt3274: Int = 0
-        var anInt3275: Int = 0
-        var anInt3276: Int = 0
-        var anInt3277: Int = 0
-        var anInt3279: Int = 0
-        var anInt3280: Int = 0
-        var anInt3281: Int = 0
-        var anInt3282: Int = 0
-        var anInt3283: Int = 0
-        var anInt3284: Int = 0
-        @JvmField
-        var aServerConnectionInfo_3285: ServerConnectionInfo? = null
-        fun method1929(i: Byte): Array<RgbColorPalette?> {
-            if (i.toInt() != -19) method1933(null, null, false)
-            anInt3280++
-            return (arrayOf<RgbColorPalette?>(HardCacheEntryReference.aRgbColorPalette_10437, NamedIdEntry.aRgbColorPalette_6891, SplashImageLoadable.aRgbColorPalette_4689, BufferedFileReader.aRgbColorPalette_4537, FileIoUtil.aRgbColorPalette_4098, RectangleBounds.aRgbColorPalette_2157, StaticNoiseTexture.aRgbColorPalette_8662, GlShaderObjectHandle.aRgbColorPalette_515, IntKeyNode.aRgbColorPalette_6977, ArbFogMaterialPass.aRgbColorPalette_6201, NpcUpdateProcessor.aRgbColorPalette_1519, SynthVoiceGroup.aRgbColorPalette_8853, ClampTextureNode.aRgbColorPalette_9475, TextureGenerator.aRgbColorPalette_2491))
-        }
-
-        @JvmStatic
-        fun method1931(bool: Boolean) {
-            anIntArray3273 = null
-            if (bool != true) aIntRange_3265 = null
-            aIntRange_3265 = null
-            aServerConnectionInfo_3285 = null
-        }
-
-        fun method1933(js5Archive: Js5Archive?, var_renderer: Renderer?, bool: Boolean) {
-            try {
-                anInt3279++
-                var spriteImages: Array<SpriteImage>? = SpriteImage.method1519(js5Archive!!, NpcReference.anInt6862, 0)
-                HostPingThread.aAbstractModelRendererArray2260 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                run {
-                    var i = 0
-                    while (spriteImages.size > i) {
-                        HostPingThread.aAbstractModelRendererArray2260!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                        i++
-                    }
-                }
-                spriteImages = SpriteImage.method1519(js5Archive, DualMaterialContainer.anInt1639, 0)
-                TimedRecordAccessor.aAbstractModelRendererArray7107 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                run {
-                    var i = 0
-                    while (spriteImages.size > i) {
-                        TimedRecordAccessor.aAbstractModelRendererArray7107!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                        i++
-                    }
-                }
-                spriteImages = SpriteImage.method1519(js5Archive, MouseInputTracker.anInt7429, 0)
-                CameraDistanceOptionState.aAbstractModelRendererArray5857 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                run {
-                    var i = 0
-                    while (spriteImages.size > i) {
-                        CameraDistanceOptionState.aAbstractModelRendererArray5857!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                        i++
-                    }
-                }
-                spriteImages = SpriteImage.method1519(js5Archive, Renderer.anInt4562, 0)
-                WallSceneEntity.aAbstractModelRendererArray9959 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                run {
-                    var i = 0
-                    while (spriteImages.size > i) {
-                        WallSceneEntity.aAbstractModelRendererArray9959!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                        i++
-                    }
-                }
-                spriteImages = SpriteImage.method1519(js5Archive, ConfigArchiveLoader.anInt1435, 0)
-                CompassSmoother.aAbstractModelRendererArray3378 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                run {
-                    var i = 0
-                    while (spriteImages.size > i) {
-                        CompassSmoother.aAbstractModelRendererArray3378!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                        i++
-                    }
-                }
-                spriteImages = SpriteImage.method1519(js5Archive, OverlayColorTable.anInt1756, 0)
-                CustomCursorsOptionState.aAbstractModelRendererArray5933 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                for (i in spriteImages.indices) CustomCursorsOptionState.aAbstractModelRendererArray5933!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                spriteImages = SpriteImage.method1519(js5Archive, CutsceneSequenceData.anInt3739, 0)
-                GrayscaleNoiseTexture.aAbstractModelRendererArray5294 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                run {
-                    var i = 0
-                    while (spriteImages.size > i) {
-                        GrayscaleNoiseTexture.aAbstractModelRendererArray5294!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                        i++
-                    }
-                }
-                spriteImages = SpriteImage.method1519(js5Archive, DrawListState.anInt1481, 0)
-                SpriteStore.aAbstractModelRendererArray367 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                run {
-                    var i = 0
-                    while (spriteImages.size > i) {
-                        SpriteStore.aAbstractModelRendererArray367!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                        i++
-                    }
-                }
-                spriteImages = SpriteImage.method1519(js5Archive, RangedGraphicsOptionState.anInt5948, 0)
-                BoxBlurTextureNode.aAbstractModelRendererArray9467 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                for (i in spriteImages.indices) BoxBlurTextureNode.aAbstractModelRendererArray9467!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                spriteImages = SpriteImage.method1519(js5Archive, CameraNodeList.anInt1742, 0)
-                BoundingBoxNode.aAbstractModelRendererArray6742 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                run {
-                    var i = 0
-                    while (spriteImages.size > i) {
-                        BoundingBoxNode.aAbstractModelRendererArray6742!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                        i++
-                    }
-                }
-                spriteImages = SpriteImage.method1519(js5Archive, NamedIdRecord.anInt4469, 0)
-                WorldMapRenderer.aAbstractModelRendererArray4679 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                for (i in spriteImages.indices) WorldMapRenderer.aAbstractModelRendererArray4679!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                spriteImages = SpriteImage.method1519(js5Archive, ClampTextureNode.anInt9473, 0)
-                CameraNodeList.aAbstractModelRendererArray1744 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                run {
-                    var i = 0
-                    while (spriteImages.size > i) {
-                        CameraNodeList.aAbstractModelRendererArray1744!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                        i++
-                    }
-                }
-                NpcType.aAbstractModelRenderer_1365 = var_renderer!!.method3691(SpriteImage.method1521(js5Archive, RsaVarbitHandler.anInt4895, 0), bool)
-                SceneryDetailOptionState.aAbstractModelRenderer_6097 = var_renderer.method3691(SpriteImage.method1521(js5Archive, (PerlinTextureProvider.anInt5814), 0), true)
-                spriteImages = SpriteImage.method1519(js5Archive, SpriteComponent.anInt8370, 0)
-                ScriptResources.aAbstractModelRendererArray2640 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                for (i in spriteImages.indices) ScriptResources.aAbstractModelRendererArray2640!![i] = var_renderer.method3691(spriteImages[i], true)
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ub.N(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ')'))
-            }
-        }
-
-        @JvmStatic
-        fun method1935(i: Int, i_10_: Int, circleHitbox: CircleHitbox?, abstractModel: AbstractModel?, bool: Boolean, i_11_: Int) {
-            try {
-                anInt3270++
-                if (abstractModel != null) {
-                    if (bool != false) method1929(106.toByte())
-                    circleHitbox!!.method320(abstractModel.EA(), abstractModel.fa(), (-4).toByte(), i_11_, abstractModel.na(), i, abstractModel.V(), abstractModel.G(), abstractModel.HA(), i_10_, abstractModel.RA())
-                }
-            } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("ub.H(" + i + ',' + i_10_ + ',' + (if (circleHitbox != null) "{...}" else "null") + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + bool + ',' + i_11_ + ')'))
-            }
-        }
-
-        init {
-            aIntRange_3265 = IntRange(48, -2)
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (emoteDefCache != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_22_ != null) "{...}" else "null") + ')'))
         }
     }
 }

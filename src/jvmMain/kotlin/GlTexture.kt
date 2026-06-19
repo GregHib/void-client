@@ -1,6 +1,15 @@
-import jaggl.OpenGL.Companion.glGenTextures
-import jaggl.OpenGL.Companion.glGenerateMipmapEXT
-import jaggl.OpenGL.Companion.glTexParameteri
+import jaggl.OpenGLStatics.glGenTextures
+import jaggl.OpenGLStatics.glGenerateMipmapEXT
+import jaggl.OpenGLStatics.glTexParameteri
+import GlTextureStatics.anInt4850
+import GlTextureStatics.anInt4852
+import GlTextureStatics.anInt4853
+import GlTextureStatics.anInt4854
+import GlTextureStatics.anInt4855
+import GlTextureStatics.anInt4857
+import GlTextureStatics.anInt4861
+import GlTextureStatics.anInt4862
+import GlTextureStatics.anInt4863
 
 /*
  * Class258
@@ -94,33 +103,10 @@ abstract class GlTexture internal constructor(var aHa_Sub2_4851: OpenGlRenderer,
     }
 
     init {
-        glGenTextures(1, TexGenMaterialPass.anIntArray6260, 0)
-        this.anInt4859 = TexGenMaterialPass.anIntArray6260!![0]
+        glGenTextures(1, TexGenMaterialPassStatics.anIntArray6260, 0)
+        this.anInt4859 = TexGenMaterialPassStatics.anIntArray6260!![0]
         method1954(0, 94)
     }
 
     abstract override fun method37(i: Int)
-
-    companion object {
-        @JvmField
-        var anInt4848: Int = 0
-        @JvmField
-        var anInt4850: Int = 0
-        @JvmField
-        var anInt4852: Int = 0
-        @JvmField
-        var anInt4853: Int = 0
-        @JvmField
-        var anInt4854: Int = 0
-        @JvmField
-        var anInt4855: Int = 0
-        @JvmField
-        var anInt4857: Int = 0
-        @JvmField
-        var anInt4861: Int = 0
-        @JvmField
-        var anInt4862: Int = 0
-        @JvmField
-        var anInt4863: Int = 0
-    }
 }

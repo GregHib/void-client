@@ -25,24 +25,24 @@ object LocalPlayerState {
     fun method1138(string: String?, bool: Boolean, string_0_: String?, i: Byte) {
         try {
             anInt1908++
-            OpenGlModel.aString5600 = string
-            TextureGenerator.aString2496 = string_0_
-            ProjectedGroundDecor.aBoolean10238 = bool
-            if (!ProjectedGroundDecor.aBoolean10238 && (OpenGlModel.aString5600 == "" || TextureGenerator.aString2496 == "")) GlRectangleTexture.method254(3, (-100).toByte())
+            OpenGlModelStatics.aString5600 = string
+            TextureGeneratorStatics.aString2496 = string_0_
+            ProjectedGroundDecorStatics.aBoolean10238 = bool
+            if (!ProjectedGroundDecorStatics.aBoolean10238 && (OpenGlModelStatics.aString5600 == "" || TextureGeneratorStatics.aString2496 == "")) GlRectangleTextureStatics.method254(3, (-100).toByte())
             else {
                 val i_1_ = 34 % ((16 - i) / 55)
-                if (BloomGraphicsOptionState.anInt5969 != 1) {
-                    SceneTileBounds.anInt1121 = 0
-                    ConfigShortValueNode.anInt9541 = -1
+                if (BloomGraphicsOptionStateStatics.anInt5969 != 1) {
+                    SceneTileBoundsStatics.anInt1121 = 0
+                    ConfigShortValueNodeStatics.anInt9541 = -1
                 }
-                AbstractMenuEntry.aBoolean1712 = false
-                GlRectangleTexture.method254(-3, (-94).toByte())
-                NpcDefinition.anInt2955 = 1
+                AbstractMenuEntryStatics.aBoolean1712 = false
+                GlRectangleTextureStatics.method254(-3, (-94).toByte())
+                NpcDefinitionStatics.anInt2955 = 1
                 SceneRegionState.anInt197 = 0
-                GroundDecorSceneEntity.anInt9971 = 0
+                GroundDecorSceneEntityStatics.anInt9971 = 0
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("nr.A(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + (if (string_0_ != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("nr.A(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + (if (string_0_ != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

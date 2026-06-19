@@ -1,5 +1,5 @@
 import ObjectSpawnDecoder.method1088
-import GlShadowRenderPass.Companion.method3553
+import GlShadowRenderPassStatics.method3553
 import MapSceneRenderer.method384
 
 /* Class301 - Decompiled by JODE
@@ -43,13 +43,13 @@ object HeightMapNoise {
 
     fun method2280(i: Byte, i_20_: Int) {
         anInt3826++
-        if (RegionSceneLoader.aByteArrayArrayArray3700 == null) RegionSceneLoader.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(GlCubemapLightPass.anInt7319) { ByteArray(RangeThresholdTextureNode.anInt9109) } })
+        if (RegionSceneLoader.aByteArrayArrayArray3700 == null) RegionSceneLoader.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(GlCubemapLightPassStatics.anInt7319) { ByteArray(RangeThresholdTextureNodeStatics.anInt9109) } })
         if (i_20_ != 28587) method2278(35, -47, 56.toByte(), -93)
         for (i_21_ in 0..3) {
             var i_22_ = 0
-            while (GlCubemapLightPass.anInt7319 > i_22_) {
+            while (GlCubemapLightPassStatics.anInt7319 > i_22_) {
                 var i_23_ = 0
-                while ((RangeThresholdTextureNode.anInt9109 > i_23_)) {
+                while ((RangeThresholdTextureNodeStatics.anInt9109 > i_23_)) {
                     RegionSceneLoader.aByteArrayArrayArray3700!![i_21_]!![i_22_]!![i_23_] = i
                     i_23_++
                 }
@@ -66,11 +66,11 @@ object HeightMapNoise {
 
     fun method2282(i: Int) {
         anInt3827++
-        LoadingScreenImageNode.method3177(i xor 0x315e, false)
+        LoadingScreenImageNodeStatics.method3177(i xor 0x315e, false)
         if (i == -12648) {
-            if (CollisionMapRegion.anInt1720 >= 0 && CollisionMapRegion.anInt1720 != 0) {
-                method3553(false, 116.toByte(), CollisionMapRegion.anInt1720)
-                CollisionMapRegion.anInt1720 = -1
+            if (CollisionMapRegionStatics.anInt1720 >= 0 && CollisionMapRegionStatics.anInt1720 != 0) {
+                method3553(false, 116.toByte(), CollisionMapRegionStatics.anInt1720)
+                CollisionMapRegionStatics.anInt1720 = -1
             }
         }
     }

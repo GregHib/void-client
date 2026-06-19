@@ -1,3 +1,8 @@
+import UnderlayDefinitionStatics.method1609
+import UnderlayDefinitionStatics.anInt2887
+import UnderlayDefinitionStatics.anInt2888
+import UnderlayDefinitionStatics.anInt2889
+
 /* Class222 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -20,7 +25,7 @@ class UnderlayDefinition {
         anInt2888++
         var spriteImage = this.aItemDefinitionLoader_2886!!.aLruByteCache_2190!!.method583(anInt2891.toLong(), -70) as? SpriteImage?
         if (spriteImage != null) return spriteImage
-        spriteImage = SpriteImage.method1521(this.aItemDefinitionLoader_2886!!.aJs5Archive_2180!!, anInt2891, 0)
+        spriteImage = SpriteImageStatics.method1521(this.aItemDefinitionLoader_2886!!.aJs5Archive_2180!!, anInt2891, 0)
         if (i < 49) method1609(93.toByte())
         if (spriteImage != null) this.aItemDefinitionLoader_2886!!.aLruByteCache_2190!!.method582(spriteImage, anInt2891.toLong(), (-120).toByte())
         return spriteImage
@@ -34,24 +39,5 @@ class UnderlayDefinition {
         }
         anInt2889++
         if (bool != false) method1610((-86).toByte())
-    }
-
-    companion object {
-        @JvmField
-        var anInt2884: Int = 0
-        @JvmField
-        var aRectangleRegion_2885: RectangleRegion? = RectangleRegion(4, 1, 1, 1)
-        var anInt2887: Int = 0
-        var anInt2888: Int = 0
-        var anInt2889: Int = 0
-        var aFontMetaRef_2892: FontMetaRef? = FontMetaRef(39, 8)
-
-        @JvmStatic
-        fun method1609(i: Byte) {
-            if (i <= -71) {
-                aFontMetaRef_2892 = null
-                aRectangleRegion_2885 = null
-            }
-        }
     }
 }

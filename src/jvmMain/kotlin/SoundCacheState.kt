@@ -23,13 +23,13 @@ object SoundCacheState {
         if (i < i_0_) {
             var i_4_ = i
             while (i_0_ > i_4_) {
-                WidgetDefinition.anIntArrayArray255!![i_4_]!![i_2_] = i_3_
+                WidgetDefinitionStatics.anIntArrayArray255!![i_4_]!![i_2_] = i_3_
                 i_4_++
             }
         } else {
             var i_5_ = i_0_
             while (i > i_5_) {
-                WidgetDefinition.anIntArrayArray255!![i_5_]!![i_2_] = i_3_
+                WidgetDefinitionStatics.anIntArrayArray255!![i_5_]!![i_2_] = i_3_
                 i_5_++
             }
         }
@@ -38,12 +38,12 @@ object SoundCacheState {
     fun method2642(i: Int, i_6_: Int, bool: Boolean, i_7_: Int, i_8_: Int) {
         anInt4138++
         var i_9_ = 0
-        while (TerrainShadowBuilderGl3.anInt7008 > i_9_) {
+        while (TerrainShadowBuilderGl3Statics.anInt7008 > i_9_) {
             val rectangle = HintIconState.aRectangleArray2371!![i_9_]
-            if (rectangle!!.width + rectangle.x > i_7_ && rectangle.x < i + i_7_ && rectangle.height + rectangle.y > i_6_ && rectangle.y < i_8_ + i_6_) LocDefinitionCache.aBooleanArray3438!![i_9_] = true
+            if (rectangle!!.width + rectangle.x > i_7_ && rectangle.x < i + i_7_ && rectangle.height + rectangle.y > i_6_ && rectangle.y < i_8_ + i_6_) LocDefinitionCacheStatics.aBooleanArray3438!![i_9_] = true
             i_9_++
         }
-        MapTileShape.Companion.method2663(-5590, i_7_, i_7_ + i, i_6_, i_6_ - -i_8_)
+        MapTileShapeStatics.method2663(-5590, i_7_, i_7_ + i, i_6_, i_6_ - -i_8_)
         if (bool != true) method2642(-120, -24, false, -125, -16)
     }
 

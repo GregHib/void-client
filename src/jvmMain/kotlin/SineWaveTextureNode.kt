@@ -1,4 +1,8 @@
 import kotlin.math.sqrt
+import SineWaveTextureNodeStatics.method3145
+import SineWaveTextureNodeStatics.anInt9450
+import SineWaveTextureNodeStatics.anInt9452
+import SineWaveTextureNodeStatics.anInt9454
 
 /* Class348_Sub40_Sub36 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -38,11 +42,11 @@ class SineWaveTextureNode : AbstractProceduralTextureNode(0, true) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (i_2_ != 255) anInt9451 = -74
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_3_ = LightDetailOptionState.anIntArray6035!![i]
+            val i_3_ = LightDetailOptionStateStatics.anIntArray6035!![i]
             val i_4_ = -2048 + i_3_ shr 1
             var i_5_ = 0
-            while ((i_5_ < DisplaceTextureNode.Companion.anInt9139)) {
-                val i_6_ = SceneEffectMarker.anIntArray6432!![i_5_]
+            while ((i_5_ < DisplaceTextureNodeStatics.anInt9139)) {
+                val i_6_ = SceneEffectMarkerStatics.anIntArray6432!![i_5_]
                 val i_7_ = -2048 + i_6_ shr 1
                 var i_8_: Int
                 if (anInt9451 == 0) i_8_ = anInt9453 * (-i_3_ + i_6_)
@@ -58,28 +62,11 @@ class SineWaveTextureNode : AbstractProceduralTextureNode(0, true) {
                         if (i_8_ < 0) i_8_ = -i_8_
                         i_8_ = 2048 - i_8_ shl 1
                     }
-                } else i_8_ = 4096 + (SceneObjectAnimator.anIntArray3068!![i_8_ shr 4 and 0xff]) shr 1
+                } else i_8_ = 4096 + (SceneObjectAnimatorStatics.anIntArray3068!![i_8_ shr 4 and 0xff]) shr 1
                 `is`[i_5_] = i_8_
                 i_5_++
             }
         }
         return `is`
-    }
-
-    companion object {
-        @JvmField
-        var anInt9450: Int = 0
-        @JvmField
-        var anInt9452: Int = 0
-        @JvmField
-        var anInt9454: Int = 0
-        @JvmField
-        var aIntRange_9456: IntRange? = null
-
-        @JvmStatic
-        fun method3145(i: Int) {
-            if (i != 0) aIntRange_9456 = null
-            aIntRange_9456 = null
-        }
     }
 }

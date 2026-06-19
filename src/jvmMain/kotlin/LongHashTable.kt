@@ -1,3 +1,7 @@
+import LongHashTableStatics.anInt447
+import LongHashTableStatics.anInt449
+import LongHashTableStatics.anInt455
+
 /* Class32 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -23,7 +27,7 @@ class LongHashTable internal constructor(private val anInt448: Int) {
             aClass348_Sub42_454 = null
             return null
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "ib.C(" + l + ',' + i + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "ib.C(" + l + ',' + i + ')')
         }
     }
 
@@ -39,7 +43,7 @@ class LongHashTable internal constructor(private val anInt448: Int) {
             class348_sub42.aClass348_Sub42_7063!!.aClass348_Sub42_7060 = class348_sub42
             class348_sub42.aLong7057 = l
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("ib.A(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ',' + l + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("ib.A(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ',' + l + ')'))
         }
     }
 
@@ -68,18 +72,5 @@ class LongHashTable internal constructor(private val anInt448: Int) {
         }
         aClass348_Sub42_454 = null
         return null
-    }
-
-    companion object {
-        @JvmField
-        var anInt447: Int = 0
-        @JvmField
-        var anInt449: Int = 0
-        @JvmField
-        var anInt450: Int = 0
-        @JvmField
-        var anInt451: Int = -1
-        @JvmField
-        var anInt455: Int = 0
     }
 }

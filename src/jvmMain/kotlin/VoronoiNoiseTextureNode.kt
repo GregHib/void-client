@@ -1,6 +1,10 @@
 import java.util.*
 import kotlin.math.max
 import kotlin.math.sqrt
+import VoronoiNoiseTextureNodeStatics.anInt9120
+import VoronoiNoiseTextureNodeStatics.anInt9123
+import VoronoiNoiseTextureNodeStatics.anInt9126
+import VoronoiNoiseTextureNodeStatics.anInt9127
 
 class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
     private var aShortArray9116 = ShortArray(512)
@@ -17,14 +21,14 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
             val random = Random(anInt9122.toLong())
             aShortArray9116 = ShortArray(512)
             if (anInt9125 > 0) {
-                for (i in 0..511) aShortArray9116[i] = ModelDefinition.method1097(81.toByte(), anInt9125, random).toShort()
+                for (i in 0..511) aShortArray9116[i] = ModelDefinitionStatics.method1097(81.toByte(), anInt9125, random).toShort()
             }
         }
     }
 
     override fun method3044(i: Int) {
         if (i > 108) {
-            aByteArray9119 = Renderer.method3664(anInt9122, 124)
+            aByteArray9119 = RendererStatics.method3664(anInt9122, 124)
             anInt9126++
             method3061(true)
         }
@@ -35,16 +39,16 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (i_0_ != 255) method3044(-57)
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_1_ = anInt9117 * LightDetailOptionState.anIntArray6035!![i] + 2048
+            val i_1_ = anInt9117 * LightDetailOptionStateStatics.anIntArray6035!![i] + 2048
             val i_2_ = i_1_ shr 12
             val i_3_ = 1 + i_2_
             var i_4_ = 0
-            while_140_@ while ( /**/DisplaceTextureNode.Companion.anInt9139 > i_4_) {
-                GlArrayBufferObject.anInt4715 = 2147483647
-                HintArrowOrMessage.anInt2023 = GlArrayBufferObject.anInt4715
-                GameDisplayManager.anInt2835 = HintArrowOrMessage.anInt2023
-                SpriteRenderEntry.anInt9715 = GameDisplayManager.anInt2835
-                val i_5_ = 2048 - -(SceneEffectMarker.anIntArray6432!![i_4_] * anInt9129)
+            while_140_@ while ( /**/DisplaceTextureNodeStatics.anInt9139 > i_4_) {
+                GlArrayBufferObjectStatics.anInt4715 = 2147483647
+                HintArrowOrMessageStatics.anInt2023 = GlArrayBufferObjectStatics.anInt4715
+                GameDisplayManager.anInt2835 = HintArrowOrMessageStatics.anInt2023
+                SpriteRenderEntryStatics.anInt9715 = GameDisplayManager.anInt2835
+                val i_5_ = 2048 - -(SceneEffectMarkerStatics.anIntArray6432!![i_4_] * anInt9129)
                 val i_6_ = i_5_ shr 12
                 val i_7_ = i_6_ + 1
                 for (i_8_ in i_2_ + -1..i_3_) {
@@ -94,22 +98,22 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                             } while (false)
                             i_15_ = (4096.0 * (sqrt(((i_12_ * i_12_ - -(i_13_ * i_13_)).toFloat() / 1.6777216E7f).toDouble()))).toInt()
                         } while (false)
-                        if (SpriteRenderEntry.anInt9715 <= i_15_) {
+                        if (SpriteRenderEntryStatics.anInt9715 <= i_15_) {
                             if (i_15_ >= GameDisplayManager.anInt2835) {
-                                if (i_15_ < HintArrowOrMessage.anInt2023) {
-                                    GlArrayBufferObject.anInt4715 = HintArrowOrMessage.anInt2023
-                                    HintArrowOrMessage.anInt2023 = i_15_
-                                } else if (i_15_ < GlArrayBufferObject.anInt4715) GlArrayBufferObject.anInt4715 = i_15_
+                                if (i_15_ < HintArrowOrMessageStatics.anInt2023) {
+                                    GlArrayBufferObjectStatics.anInt4715 = HintArrowOrMessageStatics.anInt2023
+                                    HintArrowOrMessageStatics.anInt2023 = i_15_
+                                } else if (i_15_ < GlArrayBufferObjectStatics.anInt4715) GlArrayBufferObjectStatics.anInt4715 = i_15_
                             } else {
-                                GlArrayBufferObject.anInt4715 = HintArrowOrMessage.anInt2023
-                                HintArrowOrMessage.anInt2023 = GameDisplayManager.anInt2835
+                                GlArrayBufferObjectStatics.anInt4715 = HintArrowOrMessageStatics.anInt2023
+                                HintArrowOrMessageStatics.anInt2023 = GameDisplayManager.anInt2835
                                 GameDisplayManager.anInt2835 = i_15_
                             }
                         } else {
-                            GlArrayBufferObject.anInt4715 = HintArrowOrMessage.anInt2023
-                            HintArrowOrMessage.anInt2023 = GameDisplayManager.anInt2835
-                            GameDisplayManager.anInt2835 = SpriteRenderEntry.anInt9715
-                            SpriteRenderEntry.anInt9715 = i_15_
+                            GlArrayBufferObjectStatics.anInt4715 = HintArrowOrMessageStatics.anInt2023
+                            HintArrowOrMessageStatics.anInt2023 = GameDisplayManager.anInt2835
+                            GameDisplayManager.anInt2835 = SpriteRenderEntryStatics.anInt9715
+                            SpriteRenderEntryStatics.anInt9715 = i_15_
                         }
                         i_10_++
                     }
@@ -119,7 +123,7 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                     while_137_@ do {
                         do {
                             if (i_16_ == 0) {
-                                `is`[i_4_] = SpriteRenderEntry.anInt9715
+                                `is`[i_4_] = SpriteRenderEntryStatics.anInt9715
                                 i_4_++
                                 continue@while_140_
                             } else if (i_16_ != 1) {
@@ -136,15 +140,15 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                             i_4_++
                             continue@while_140_
                         } while (false)
-                        `is`[i_4_] = HintArrowOrMessage.anInt2023
+                        `is`[i_4_] = HintArrowOrMessageStatics.anInt2023
                         i_4_++
                         continue@while_140_
                     } while (false)
-                    `is`[i_4_] = GlArrayBufferObject.anInt4715
+                    `is`[i_4_] = GlArrayBufferObjectStatics.anInt4715
                     i_4_++
                     continue@while_140_
                 } while (false)
-                `is`[i_4_] = GameDisplayManager.anInt2835 + -SpriteRenderEntry.anInt9715
+                `is`[i_4_] = GameDisplayManager.anInt2835 + -SpriteRenderEntryStatics.anInt9715
                 i_4_++
             }
         }
@@ -196,36 +200,6 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                 anInt9117 = class348_sub49.readUnsignedByte(255)
             } while (false)
             anInt9127++
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt9120: Int = 0
-        @JvmField
-        var aBoolean9121: Boolean = false
-        @JvmField
-        var anInt9123: Int = 0
-        @JvmField
-        var anInt9126: Int = 0
-        @JvmField
-        var anInt9127: Int = 0
-        @JvmField
-        var anInt9128: Int = 0
-        @JvmField
-        var aFontMetaRef_9130: FontMetaRef? = FontMetaRef(1, -1)
-
-        @JvmStatic
-        fun method3059(i: Int) {
-            aFontMetaRef_9130 = null
-            if (i >= -111) method3059(-83)
-        }
-
-        @JvmStatic
-        fun method3060(i: Int, bool: Boolean): Int {
-            anInt9128++
-            if (bool != true) aFontMetaRef_9130 = null
-            return 0x7f and (i shr 11)
         }
     }
 }

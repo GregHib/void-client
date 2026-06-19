@@ -1,6 +1,21 @@
 import jaclib.memory.Stream
-import jaclib.memory.Stream.Companion.c
+import jaclib.memory.StreamStatics.c
 import kotlin.math.sqrt
+import NativeTerrainTileStatics.anInt8287
+import NativeTerrainTileStatics.anInt8288
+import NativeTerrainTileStatics.anInt8290
+import NativeTerrainTileStatics.anInt8293
+import NativeTerrainTileStatics.anInt8295
+import NativeTerrainTileStatics.anInt8297
+import NativeTerrainTileStatics.anInt8298
+import NativeTerrainTileStatics.anInt8300
+import NativeTerrainTileStatics.anInt8304
+import NativeTerrainTileStatics.anInt8309
+import NativeTerrainTileStatics.anInt8310
+import NativeTerrainTileStatics.anInt8315
+import NativeTerrainTileStatics.anInt8316
+import NativeTerrainTileStatics.anInt8318
+import NativeTerrainTileStatics.anInt8319
 
 class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140_: Int, i_141_: Int, `is`: Array<IntArray?>, is_142_: Array<IntArray?>?, i_143_: Int) : TerrainTile(i_140_, i_141_, i_143_, `is`) {
     private val aNodeDeque_8286: NodeDeque
@@ -62,22 +77,22 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
         val `is` = this.anIntArrayArrayArray8321!![i_21_]!![i]!!
         val is_23_ = this.anIntArrayArrayArray8313!![i_21_]!![i]!!
         val i_24_ = `is`.size
-        if (CircleHitbox.anIntArray407!!.size < i_24_) {
-            CircleHitbox.anIntArray407 = IntArray(i_24_)
-            TerrainTileGeometry.anIntArray3014 = IntArray(i_24_)
+        if (CircleHitboxStatics.anIntArray407!!.size < i_24_) {
+            CircleHitboxStatics.anIntArray407 = IntArray(i_24_)
+            TerrainTileGeometryStatics.anIntArray3014 = IntArray(i_24_)
         }
         for (i_25_ in 0..<i_24_) {
-            CircleHitbox.anIntArray407!![i_25_] = (`is`[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
-            TerrainTileGeometry.anIntArray3014!![i_25_] = (is_23_[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
+            CircleHitboxStatics.anIntArray407!![i_25_] = (`is`[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
+            TerrainTileGeometryStatics.anIntArray3014!![i_25_] = (is_23_[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
         }
         var i_26_ = 0
         while (i_24_ > i_26_) {
-            val i_27_ = CircleHitbox.anIntArray407!![i_26_]
-            val i_28_ = TerrainTileGeometry.anIntArray3014!![i_26_++]
-            val i_29_ = CircleHitbox.anIntArray407!![i_26_]
-            val i_30_ = TerrainTileGeometry.anIntArray3014!![i_26_++]
-            val i_31_ = CircleHitbox.anIntArray407!![i_26_]
-            val i_32_ = TerrainTileGeometry.anIntArray3014!![i_26_++]
+            val i_27_ = CircleHitboxStatics.anIntArray407!![i_26_]
+            val i_28_ = TerrainTileGeometryStatics.anIntArray3014!![i_26_++]
+            val i_29_ = CircleHitboxStatics.anIntArray407!![i_26_]
+            val i_30_ = TerrainTileGeometryStatics.anIntArray3014!![i_26_++]
+            val i_31_ = CircleHitboxStatics.anIntArray407!![i_26_]
+            val i_32_ = TerrainTileGeometryStatics.anIntArray3014!![i_26_++]
             if ((-((-i_29_ + i_31_) * (i_30_ - i_28_)) + (i_27_ - i_29_) * (i_30_ - i_32_)) > 0) var_r_Sub1.method3287(i_28_, i_22_ + -21622, i_27_, i_29_, i_30_, i_32_, i_31_)
         }
     }
@@ -126,7 +141,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             val stream = Stream(nativeheapbuffer_45_)
             val stream_46_ = Stream(nativeheapbuffer)
             val class348_sub3s_47_ = arrayOfNulls<ModelVertexColorBuffer>(anInt8329)
-            var i_48_ = ColorThresholdEffect.method3051(anInt8329 / 4, 4096)
+            var i_48_ = ColorThresholdEffectStatics.method3051(anInt8329 / 4, 4096)
             if (i_48_ < 1) i_48_ = 1
             val hashtable = Hashtable(i_48_)
             val class348_sub3s_49_ = arrayOfNulls<ModelVertexColorBuffer>(anInt8331)
@@ -228,7 +243,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                                 var i_104_ = i_88_ * (i_83_ and 0x7f) shr 7
                                 if (i_104_ < 2) i_104_ = 2
                                 else if (i_104_ > 126) i_104_ = 126
-                                i_89_ = (ParticleEmitterNode.anIntArray179!![i_104_ or (i_83_ and 0xff80)])
+                                i_89_ = (ParticleEmitterNodeStatics.anIntArray179!![i_104_ or (i_83_ and 0xff80)])
                                 if ((this.anInt8294 and 0x7) == 0) {
                                     f_103_ = ((f_91_ * (this.aHa_Sub3_8322!!.aFloatArray8170[0])) + f_90_ * (this.aHa_Sub3_8322!!.aFloatArray8170[1]) + (this.aHa_Sub3_8322!!.aFloatArray8170[2]) * f_92_)
                                     f_103_ = ((f_103_ * (if (!(f_103_ > 0.0f)) (this.aHa_Sub3_8322!!.aFloat8186) else (this.aHa_Sub3_8322!!.aFloat8174))) + (this.aHa_Sub3_8322!!.aFloat8093))
@@ -244,7 +259,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                                     if (i_107_ >= 2) {
                                         if (i_107_ > 126) i_107_ = 126
                                     } else i_107_ = 2
-                                    i_106_ = (ParticleEmitterNode.anIntArray179!![i_107_ or (i_84_ and 0xff80)])
+                                    i_106_ = (ParticleEmitterNodeStatics.anIntArray179!![i_107_ or (i_84_ and 0xff80)])
                                     if ((0x7 and this.anInt8294) == 0) {
                                         var f_108_ = ((this.aHa_Sub3_8322!!.aFloatArray8170[2]) * f_92_ + (f_90_ * (this.aHa_Sub3_8322!!.aFloatArray8170[1]) + ((this.aHa_Sub3_8322!!.aFloatArray8170[0]) * f_91_)))
                                         f_108_ = ((this.aHa_Sub3_8322!!.aFloat8093) + (if (f_103_ > 0.0f) (this.aHa_Sub3_8322!!.aFloat8174) else (this.aHa_Sub3_8322!!.aFloat8186)) * f_103_)
@@ -362,10 +377,10 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             anInterface5_Impl1_8327 = this.aHa_Sub3_8322!!.method3889(false, 16711680)
             anInterface5_Impl1_8327!!.method17(nativeheapbuffer_45_, i, i * anInt8303, (-59).toByte())
             if ((0x7 and this.anInt8294) == 0) {
-                if (anIntArrayArrayArray8314 == null) this.aModelBatchBase_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078)), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4076!!)))))
-                else this.aModelBatchBase_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078, SpriteMaskShape.aSpriteMaskShape_4077)), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4076!!)))))
-            } else if (anIntArrayArrayArray8314 != null) this.aModelBatchBase_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078, SpriteMaskShape.aSpriteMaskShape_4077, SpriteMaskShape.aSpriteMaskShape_4075)), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4076!!)))))
-            else this.aModelBatchBase_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078, SpriteMaskShape.aSpriteMaskShape_4075)), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4076!!)))))
+                if (anIntArrayArrayArray8314 == null) this.aModelBatchBase_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShapeStatics.aSpriteMaskShape_4073, SpriteMaskShapeStatics.aSpriteMaskShape_4078)), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4076!!)))))
+                else this.aModelBatchBase_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShapeStatics.aSpriteMaskShape_4073, SpriteMaskShapeStatics.aSpriteMaskShape_4078, SpriteMaskShapeStatics.aSpriteMaskShape_4077)), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4076!!)))))
+            } else if (anIntArrayArrayArray8314 != null) this.aModelBatchBase_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShapeStatics.aSpriteMaskShape_4073, SpriteMaskShapeStatics.aSpriteMaskShape_4078, SpriteMaskShapeStatics.aSpriteMaskShape_4077, SpriteMaskShapeStatics.aSpriteMaskShape_4075)), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4076!!)))))
+            else this.aModelBatchBase_8324 = (this.aHa_Sub3_8322!!.method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShapeStatics.aSpriteMaskShape_4073, SpriteMaskShapeStatics.aSpriteMaskShape_4078, SpriteMaskShapeStatics.aSpriteMaskShape_4075)), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4076!!)))))
             var i_125_ = 0
             for (i_126_ in class348_sub3s.indices) {
                 if (class348_sub3s[i_126_]!!.anInt6589 > 0) class348_sub3s[i_125_++] = class348_sub3s[i_126_]
@@ -380,7 +395,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 class348_sub3.method2740(-84, anInt8303)
                 i_127_++
             }
-            MapRegionLoaderThread.method2669(aClass348_Sub3Array8328 as? Array<Any?>, ls, -101)
+            MapRegionLoaderThreadStatics.method2669(aClass348_Sub3Array8328 as? Array<Any?>, ls, -101)
             if (aVideoStreamDecoder_8307 != null) aVideoStreamDecoder_8307!!.method2632(128)
         }
         anInt8298++
@@ -461,7 +476,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 if ((this.anInt8294 and 0x10) == 0) break
                 aVideoStreamDecoder_8307 = VideoStreamDecoder(this.aHa_Sub3_8322, this)
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("qm.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_139_ + ',' + i_140_ + ',' + i_141_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_142_ != null) "{...}" else "null") + ',' + i_143_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("qm.<init>(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + i + ',' + i_139_ + ',' + i_140_ + ',' + i_141_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_142_ != null) "{...}" else "null") + ',' + i_143_ + ')'))
             }
             break
         } while (false)
@@ -472,7 +487,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             if (aClass348_Sub3Array8328 != null) {
                 var i_154_ = i_153_ - -i_153_ + 1
                 i_154_ *= i_154_
-                if (i_154_ > ArbFogMaterialPass.anIntArray6189!!.size) ArbFogMaterialPass.anIntArray6189 = IntArray(i_154_)
+                if (i_154_ > ArbFogMaterialPassStatics.anIntArray6189!!.size) ArbFogMaterialPassStatics.anIntArray6189 = IntArray(i_154_)
                 var i_155_ = -i_153_ + i
                 val i_156_ = i_155_
                 if (i_155_ < 0) i_155_ = 0
@@ -483,12 +498,12 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 if (this.anInt4587 - 1 < i_159_) i_159_ = this.anInt4587 - 1
                 var i_160_ = i_149_ + i_153_
                 if (i_160_ > this.anInt4590 - 1) i_160_ = this.anInt4590 - 1
-                ModelResourceBundle.anInt7133 = 0
+                ModelResourceBundleStatics.anInt7133 = 0
                 for (i_161_ in i_155_..i_159_) {
                     val bools_162_ = bools[i_161_ - i_156_]!!
                     var i_163_ = i_157_
                     while (i_160_ >= i_163_) {
-                        if (bools_162_[i_163_ - i_158_]) ArbFogMaterialPass.anIntArray6189!![ModelResourceBundle.anInt7133++] = i_161_ + this.anInt4587 * i_163_
+                        if (bools_162_[i_163_ - i_158_]) ArbFogMaterialPassStatics.anIntArray6189!![ModelResourceBundleStatics.anInt7133++] = i_161_ + this.anInt4587 * i_163_
                         i_163_++
                     }
                 }
@@ -501,7 +516,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 this.aHa_Sub3_8322!!.method3866(((this.anInt8294) and 0x7) != 0, true)
                 this.aHa_Sub3_8322!!.method3814(false, false, -1, 101.toByte())
                 this.aHa_Sub3_8322!!.method3925(112, anInterface5_Impl1_8327, 0)
-                for (i_164_ in aClass348_Sub3Array8328!!.indices) aClass348_Sub3Array8328!![i_164_]!!.method2737((-30).toByte(), ArbFogMaterialPass.anIntArray6189!!, ModelResourceBundle.anInt7133)
+                for (i_164_ in aClass348_Sub3Array8328!!.indices) aClass348_Sub3Array8328!![i_164_]!!.method2737((-30).toByte(), ArbFogMaterialPassStatics.anIntArray6189!!, ModelResourceBundleStatics.anInt7133)
                 val class101_sub2 = this.aHa_Sub3_8322!!.method3934(-97)
                 class101_sub2!!.method894(0, -1, 0)
                 this.aHa_Sub3_8322!!.method3915(0)
@@ -514,17 +529,17 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                     this.aHa_Sub3_8322!!.method3817(60, 128)
                     this.aHa_Sub3_8322!!.method3814(false, false, -2, 100.toByte())
                     this.aHa_Sub3_8322!!.method3850(63.toByte(), (this.aHa_Sub3_8322!!.anRenderable_8147))
-                    this.aHa_Sub3_8322!!.method3874(RenderQueueState.aRenderConfigFactory_6519, 116, ParticleSystemState.aRenderConfigFactory_2207)
-                    this.aHa_Sub3_8322!!.method3849(47.toByte(), 0, RenderListTextureNode.aTrigLookupTables_9485)
-                    this.aHa_Sub3_8322!!.method3885(0, true, GlIndexBufferArb.aTrigLookupTables_8503)
+                    this.aHa_Sub3_8322!!.method3874(RenderQueueState.aRenderConfigFactory_6519, 116, ParticleSystemStateStatics.aRenderConfigFactory_2207)
+                    this.aHa_Sub3_8322!!.method3849(47.toByte(), 0, RenderListTextureNodeStatics.aTrigLookupTables_9485)
+                    this.aHa_Sub3_8322!!.method3885(0, true, GlIndexBufferArbStatics.aTrigLookupTables_8503)
                     var class348 = aNodeDeque_8286.method1995(i_151_ + 5)
                     while (class348 != null) {
                         val class348_sub38 = class348 as TerrainShadowBuilderGl3
                         class348_sub38.method3032(i_149_, i_153_, bools, false, i)
                         class348 = aNodeDeque_8286.method1990(106.toByte())
                     }
-                    this.aHa_Sub3_8322!!.method3849(47.toByte(), 0, WidgetRedrawRegion.aTrigLookupTables_4247)
-                    this.aHa_Sub3_8322!!.method3885(0, true, WidgetRedrawRegion.aTrigLookupTables_4247)
+                    this.aHa_Sub3_8322!!.method3849(47.toByte(), 0, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
+                    this.aHa_Sub3_8322!!.method3885(0, true, WidgetRedrawRegionStatics.aTrigLookupTables_4247)
                     this.aHa_Sub3_8322!!.method3850(90.toByte(), null)
                     this.aHa_Sub3_8322!!.L(i_165_, i_166_, this.aHa_Sub3_8322!!.anInt8105)
                 }
@@ -544,7 +559,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             aNodeDeque_8286.method1999(TerrainShadowBuilderGl3((this.aHa_Sub3_8322), this, class348_sub1, `is`), -20180)
             anInt8287++
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qm.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("qm.L(" + (if (class348_sub1 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -581,11 +596,11 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                     aHashtable_8325!!.method3483(27.toByte(), l, class348_sub3s[i_178_])
                 } else class348_sub3s[i_178_] = linkedListNode as ModelVertexColorBuffer
             }
-            if (bool) aByteArrayArray8317[i]!![i_167_] = BoundsConstraintEntry.method2057((aByteArrayArray8317[i]!![i_167_]).toInt(), 1).toByte()
+            if (bool) aByteArrayArray8317[i]!![i_167_] = BoundsConstraintEntryStatics.method2057((aByteArrayArray8317[i]!![i_167_]).toInt(), 1).toByte()
             if (is_171_.size > anInt8331) anInt8331 = is_171_.size
             anInt8329 += is_171_.size
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw SoundBankPatchStatics.method2929(
                 runtimeexception,
                 ("qm.U(" + i + ',' + i_167_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_168_ != null) "{...}" else "null") + ',' + (if (is_169_ != null) "{...}" else "null") + ',' + (if (is_170_ != null) "{...}" else "null") + ',' + (if (is_171_ != null) "{...}" else "null") + ',' + (if (is_172_ != null) "{...}" else "null") + ',' + (if (is_173_ != null) "{...}" else "null") + ',' + (if (is_174_ != null) "{...}" else "null") + ',' + i_175_ + ',' + i_176_ + ',' + i_177_ + ',' + bool + ')')
             )
@@ -644,7 +659,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             }
             U(i, i_184_, is_199_, is_205_!!, is_200_, is_206_!!, is_201_, is_202_, is_203_, is_204_, i_195_, i_196_, i_197_, bool)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(
+            throw SoundBankPatchStatics.method2929(
                 runtimeexception,
                 ("qm.E(" + i + ',' + i_184_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_185_ != null) "{...}" else "null") + ',' + (if (is_186_ != null) "{...}" else "null") + ',' + (if (is_187_ != null) "{...}" else "null") + ',' + (if (is_188_ != null) "{...}" else "null") + ',' + (if (is_189_ != null) "{...}" else "null") + ',' + (if (is_190_ != null) "{...}" else "null") + ',' + (if (is_191_ != null) "{...}" else "null") + ',' + (if (is_192_ != null) "{...}" else "null") + ',' + (if (is_193_ != null) "{...}" else "null") + ',' + (if (is_194_ != null) "{...}" else "null") + ',' + i_195_ + ',' + i_196_ + ',' + i_197_ + ',' + bool + ')')
             )
@@ -755,81 +770,6 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                 this.aHa_Sub3_8322!!.method3938(VideoAdChecker.aCameraRotationStub_3181, i_218_ / 3, interface5_impl2, i_219_, 0, -i_219_ + i_220_ - -1, 114)
                 this.aHa_Sub3_8322!!.method3926(82.toByte(), true)
             }
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt8287: Int = 0
-        @JvmField
-        var anInt8288: Int = 0
-        @JvmField
-        var anInt8289: Int = 0
-        @JvmField
-        var anInt8290: Int = 0
-        @JvmField
-        var anInt8292: Int = 0
-        @JvmField
-        var anInt8293: Int = 0
-        @JvmField
-        var anInt8295: Int = 0
-        @JvmField
-        var anInt8297: Int = 0
-        @JvmField
-        var anInt8298: Int = 0
-        @JvmField
-        var anInt8300: Int = 0
-        @JvmField
-        var anInt8304: Int = 0
-        @JvmField
-        var anInt8309: Int = 0
-        @JvmField
-        var anInt8310: Int = 0
-        @JvmField
-        var anInt8315: Int = 0
-        @JvmField
-        var anInt8316: Int = 0
-        @JvmField
-        var anInt8318: Int = 0
-        @JvmField
-        var anInt8319: Int = 0
-        @JvmField
-        var aCameraRotationStub_8320: CameraRotationStub? = CameraRotationStub()
-        @JvmStatic
-        fun method4004(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) {
-            anInt8292++
-            val i_10_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i_4_, LocalPlayerState.anInt1910, -118)
-            val i_11_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i, LocalPlayerState.anInt1910, 72)
-            val i_12_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_8_, WorldMapLabel.anInt4960, -80)
-            val i_13_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_3_, WorldMapLabel.anInt4960, -101)
-            val i_14_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i_4_ + i_6_, LocalPlayerState.anInt1910, -110)
-            val i_15_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i + -i_6_, LocalPlayerState.anInt1910, 28)
-            if (i_7_ < -33) {
-                for (i_16_ in i_10_..<i_14_) GlElementArrayBuffer.method1156(-27, i_13_, WidgetDefinition.anIntArrayArray255!![i_16_]!!, i_12_, i_9_)
-                for (i_17_ in i_11_ downTo i_15_ + 1) GlElementArrayBuffer.method1156(-27, i_13_, WidgetDefinition.anIntArrayArray255!![i_17_]!!, i_12_, i_9_)
-                val i_18_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_8_ + i_6_, WorldMapLabel.anInt4960, 114)
-                val i_19_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_6_ + i_3_, WorldMapLabel.anInt4960, 34)
-                for (i_20_ in i_14_..i_15_) {
-                    val `is` = WidgetDefinition.anIntArrayArray255!![i_20_]!!
-                    GlElementArrayBuffer.method1156(-27, i_18_, `is`, i_12_, i_9_)
-                    GlElementArrayBuffer.method1156(-27, i_19_, `is`, i_18_, i_5_)
-                    GlElementArrayBuffer.method1156(-27, i_13_, `is`, i_19_, i_9_)
-                }
-            }
-        }
-
-        @JvmStatic
-        fun method4006(i: Int) {
-            aCameraRotationStub_8320 = null
-            if (i > -42) aCameraRotationStub_8320 = null
-        }
-
-        @JvmStatic
-        fun method4008(i: Byte): Int {
-            anInt8289++
-            if (i >= -121) aCameraRotationStub_8320 = null
-            if (ByteBuffer.anInt7207 == 1) return MapRegionLoaderThread.anInt4211
-            return 0
         }
     }
 }

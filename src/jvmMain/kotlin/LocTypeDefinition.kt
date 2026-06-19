@@ -1,4 +1,7 @@
-import CacheArchiveIndexLoader.Companion.method340
+import CacheArchiveIndexLoaderStatics.method340
+import LocTypeDefinitionStatics.anInt3995
+import LocTypeDefinitionStatics.anInt3999
+import LocTypeDefinitionStatics.anInt4013
 
 /* Class321 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -74,7 +77,7 @@ class LocTypeDefinition {
                                 anIntArrayArray4002 = Array<IntArray?>(i_13_) { IntArray(2) }
                                 for (i_14_ in 0..<i_13_) {
                                     anIntArrayArray4002[i_14_]!![0] = class348_sub49.readUnsignedByte(255)
-                                    anIntArrayArray4002[i_14_]!![1] = (class348_sub49.readUnsignedByte(CameraSplineNode.method2955(i_0_.toInt(), 203)))
+                                    anIntArrayArray4002[i_14_]!![1] = (class348_sub49.readUnsignedByte(CameraSplineNodeStatics.method2955(i_0_.toInt(), 203)))
                                 }
                             } else if (i == 15) class348_sub49.readUnsignedShort(842397944)
                             else if (i == 17) this.anInt4000 = class348_sub49.readUnsignedShort(842397944)
@@ -137,23 +140,6 @@ class LocTypeDefinition {
             val i_20_ = class348_sub49.readUnsignedByte(255)
             if (i_20_ == 0) break
             method2550(class348_sub49, i_20_, 52.toByte())
-        }
-    }
-
-    companion object {
-        var anInt3995: Int = 0
-        var anInt3999: Int = 0
-        @JvmField
-        var anInt4005: Int = -1
-        var anInt4013: Int = 0
-        var aIntRange_4015: IntRange? = IntRange(116, 6)
-        @JvmField
-        var anInt4017: Int = 0
-
-        @JvmStatic
-        fun method2549(i: Byte) {
-            if (i > -74) method2549(75.toByte())
-            aIntRange_4015 = null
         }
     }
 }

@@ -9,6 +9,8 @@ import kotlin.Int
 import kotlin.IntArray
 import kotlin.String
 import kotlin.Throws
+import ColorThresholdEffectStatics.anInt9087
+import ColorThresholdEffectStatics.anInt9093
 
 /* Class348_Sub40_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -50,9 +52,9 @@ class ColorThresholdEffect : AbstractProceduralTextureNode(1, false) {
                 return
             } while (false)
             val i_2_ = class348_sub49.readMedium(-1)
-            anIntArray9086[2] = NpcSummaryDefinition.method1166(0, i_2_ shr 12)
-            anIntArray9086[1] = NpcSummaryDefinition.method1166(i_2_, 65280) shr 4
-            anIntArray9086[0] = NpcSummaryDefinition.method1166(i_2_ shl 4, 267386880)
+            anIntArray9086[2] = NpcSummaryDefinitionStatics.method1166(0, i_2_ shr 12)
+            anIntArray9086[1] = NpcSummaryDefinitionStatics.method1166(i_2_, 65280) shr 4
+            anIntArray9086[0] = NpcSummaryDefinitionStatics.method1166(i_2_ shl 4, 267386880)
         } while (false)
     }
 
@@ -69,7 +71,7 @@ class ColorThresholdEffect : AbstractProceduralTextureNode(1, false) {
             val is_11_ = `is`[1]!!
             val is_12_ = `is`[2]!!
             var i_13_ = 0
-            while (DisplaceTextureNode.Companion.anInt9139 > i_13_) {
+            while (DisplaceTextureNodeStatics.anInt9139 > i_13_) {
                 val i_14_ = is_7_[i_13_]
                 var i_15_ = i_14_ - anIntArray9086[0]
                 if (i_15_ < 0) i_15_ = -i_15_
@@ -104,53 +106,5 @@ class ColorThresholdEffect : AbstractProceduralTextureNode(1, false) {
             }
         }
         return `is`
-    }
-
-    companion object {
-        @JvmField
-        var anInt9085: Int = 0
-        @JvmField
-        var anInt9087: Int = 0
-        @JvmField
-        var anInt9088: Int = 0
-        var aFontMetaRef_9089: FontMetaRef? = FontMetaRef(2, 6)
-        @JvmField
-        var aSpriteImage_9090: SpriteImage? = null
-        @JvmField
-        var anInt9093: Int = 0
-        @JvmStatic
-        fun method3050(bool: Boolean) {
-            aFontMetaRef_9089 = null
-            aSpriteImage_9090 = null
-            if (bool != true) method3050(true)
-        }
-
-        @JvmStatic
-        fun method3051(i: Int, i_3_: Int): Int {
-            if (i_3_ != 4096) return -68
-            anInt9085++
-            var i_4_ = i ushr 1
-            i_4_ = i_4_ or (i_4_ ushr 1)
-            i_4_ = i_4_ or (i_4_ ushr 2)
-            i_4_ = i_4_ or (i_4_ ushr 4)
-            i_4_ = i_4_ or (i_4_ ushr 8)
-            i_4_ = i_4_ or (i_4_ ushr 16)
-            return (i_4_.inv()) and i
-        }
-
-        @Throws(ClassNotFoundException::class)
-        fun method3052(i: Int, string: String?): Class<*> {
-            if (i != 11012) aFontMetaRef_9089 = null
-            anInt9088++
-            if (string == "B") return Byte.TYPE
-            if (string == "I") return Integer.TYPE
-            if (string == "S") return Short.TYPE
-            if (string == "J") return Long.TYPE
-            if (string == "Z") return java.lang.Boolean.TYPE
-            if (string == "F") return Float.TYPE
-            if (string == "D") return Double.TYPE
-            if (string == "C") return Character.TYPE
-            return Class.forName(string)
-        }
     }
 }

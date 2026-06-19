@@ -1,4 +1,5 @@
 import jaclib.memory.heap.NativeHeap
+import NativeShaderProgramStatics.anInt9772
 
 class NativeShaderProgram(i: Int) : ShaderProgram() {
     @JvmField
@@ -12,34 +13,5 @@ class NativeShaderProgram(i: Int) : ShaderProgram() {
         anInt9772++
         this.aNativeHeap9770.b()
         val i_0_ = -30 / ((i - -26) / 52)
-    }
-
-    companion object {
-        @JvmField
-        var anInt9771: Int = 0
-        @JvmField
-        var anInt9772: Int = 0
-        @JvmField
-        var aCameraNodeList_9773: CameraNodeList? = CameraNodeList()
-        @JvmField
-        var anInt9774: Int = 0
-        @JvmField
-        var anInt9775: Int = -1
-        @JvmField
-        var anInt9776: Int = 0
-
-        @JvmStatic
-        fun method3439(i: Int): Int {
-            anInt9771++
-            if (i <= 92) return 99
-            if (ByteBuffer.anInt7207 == 1) return SynthVoiceGroup.anInt8854
-            return GrayscaleNoiseTexture.anInt5283
-        }
-
-        @JvmStatic
-        fun method3441(i: Int) {
-            aCameraNodeList_9773 = null
-            if (i != 1) method3439(-118)
-        }
     }
 }

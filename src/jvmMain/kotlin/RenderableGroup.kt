@@ -1,4 +1,13 @@
 import GameClock.method599
+import RenderableGroupStatics.method1447
+import RenderableGroupStatics.method1449
+import RenderableGroupStatics.anInt5004
+import RenderableGroupStatics.anInt5005
+import RenderableGroupStatics.anInt5008
+import RenderableGroupStatics.anInt5009
+import RenderableGroupStatics.anInt5014
+import RenderableGroupStatics.aFontMetaRef_5015
+import RenderableGroupStatics.anInt5018
 
 /* Class195 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -10,8 +19,8 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
     private val anLifecycleArray5012: Array<Lifecycle?>
     override fun method57(i: Int) {
         anInt5004++
-        if (aRenderer5010 !== FacingDirectionNode.aRenderer6654) {
-            aRenderer5010 = FacingDirectionNode.aRenderer6654
+        if (aRenderer5010 !== FacingDirectionNodeStatics.aRenderer6654) {
+            aRenderer5010 = FacingDirectionNodeStatics.aRenderer6654
             aBoolean5011 = true
         }
         aRenderer5010!!.GA(0)
@@ -57,7 +66,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
             if (i < 30) method1449(-81, 10, -115)
             return l - -aTypedRecordTable_5006!!.anInt3690.toLong() <= method599(-97)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "qt.I(" + i + ',' + l + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "qt.I(" + i + ',' + l + ')')
         }
     }
 
@@ -85,52 +94,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
                 i++
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("qt.<init>(" + (if (typedRecordTable != null) "{...}" else "null") + ',' + (if (dualMaterialContainer != null) "{...}" else "null") + ')'))
-        }
-    }
-
-    companion object {
-        var anInt5003: Int = 0
-        var anInt5004: Int = 0
-        var anInt5005: Int = 0
-        var anIntArray5007: IntArray? = IntArray(4)
-        var anInt5008: Int = 0
-        var anInt5009: Int = 0
-        var aBoolean5013: Boolean = false
-        var anInt5014: Int = 0
-        @JvmField
-        var aFontMetaRef_5015: FontMetaRef?
-        @JvmField
-        var anInt5016: Int = 0
-        var aPrivilegedOperationWorker_5017: PrivilegedOperationWorker? = null
-        var anInt5018: Int = 0
-        @JvmField
-        var anInt5019: Int
-
-        @JvmStatic
-        fun method1447(i: Int) {
-            if (i == 76) {
-                anIntArray5007 = null
-                aPrivilegedOperationWorker_5017 = null
-                aFontMetaRef_5015 = null
-            }
-        }
-
-        fun method1448(i: Int) {
-            anInt5003++
-            if (i <= -55) FlipTextureNode.aClass348_Sub42_Sub12_9144 = ContactEntry((LocalizedText.aLocalizedText_3487!!.method2063(AnimationFrameDefinition.anInt6967, 544)), "", Tooltip.anInt4458, 1004, -1, 0L, 0, 0, true, false, 0L, true)
-        }
-
-        @JvmStatic
-        fun method1449(i: Int, i_2_: Int, i_3_: Int): WidgetNodeLink? {
-            val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_2_]!![i_3_]
-            if (class357 == null) return null
-            return class357.aWidgetNodeLink_4396
-        }
-
-        init {
-            aFontMetaRef_5015 = FontMetaRef(76, 4)
-            anInt5019 = 0
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("qt.<init>(" + (if (typedRecordTable != null) "{...}" else "null") + ',' + (if (dualMaterialContainer != null) "{...}" else "null") + ')'))
         }
     }
 }

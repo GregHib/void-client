@@ -1,16 +1,28 @@
-import ModelBatchBase.Companion.method1128
-import RangeThresholdTextureNode.Companion.method3055
-import jaggl.OpenGL.Companion.glGetTexImagei
-import jaggl.OpenGL.Companion.glPixelStorei
-import jaggl.OpenGL.Companion.glTexImage2Df
-import jaggl.OpenGL.Companion.glTexImage2Di
-import jaggl.OpenGL.Companion.glTexImage2Dub
-import jaggl.OpenGL.Companion.glTexParameteri
-import jaggl.OpenGL.Companion.glTexSubImage2Df
-import jaggl.OpenGL.Companion.glTexSubImage2Di
-import jaggl.OpenGL.Companion.glTexSubImage2Dub
+import ModelBatchBaseStatics.method1128
+import RangeThresholdTextureNodeStatics.method3055
+import jaggl.OpenGLStatics.glGetTexImagei
+import jaggl.OpenGLStatics.glPixelStorei
+import jaggl.OpenGLStatics.glTexImage2Df
+import jaggl.OpenGLStatics.glTexImage2Di
+import jaggl.OpenGLStatics.glTexImage2Dub
+import jaggl.OpenGLStatics.glTexParameteri
+import jaggl.OpenGLStatics.glTexSubImage2Df
+import jaggl.OpenGLStatics.glTexSubImage2Di
+import jaggl.OpenGLStatics.glTexSubImage2Dub
 import kotlin.math.atan2
 import kotlin.math.sqrt
+import Gl2dTextureStatics.method242
+import Gl2dTextureStatics.aString8605
+import Gl2dTextureStatics.anInt8606
+import Gl2dTextureStatics.anInt8607
+import Gl2dTextureStatics.anInt8608
+import Gl2dTextureStatics.anInt8609
+import Gl2dTextureStatics.anInt8611
+import Gl2dTextureStatics.anInt8613
+import Gl2dTextureStatics.anInt8614
+import Gl2dTextureStatics.anInt8615
+import Gl2dTextureStatics.anInt8616
+import Gl2dTextureStatics.anInt8618
 
 class Gl2dTexture : GlTextureBase, Renderable2dTexture {
     private var anInt8604 = 0
@@ -21,7 +33,7 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
         return f / anInt8604.toFloat()
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(glRenderDevice, 3553, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirection.aMovementDirection_1183, i * i_0_, bool) {
+    internal constructor(glRenderDevice: GlRenderDevice?, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(glRenderDevice, 3553, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirectionStatics.aMovementDirection_1183, i * i_0_, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_0_
@@ -33,11 +45,11 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
                 glPixelStorei(3314, 0)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
         }
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_6_: Int, bool: Boolean, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(glRenderDevice, 3553, textureFormatInfo, MovementDirection.aMovementDirection_1183, i_6_ * i, bool) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_6_: Int, bool: Boolean, `is`: ByteArray?, i_7_: Int, i_8_: Int) : super(glRenderDevice, 3553, textureFormatInfo, MovementDirectionStatics.aMovementDirection_1183, i_6_ * i, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_6_
@@ -50,7 +62,7 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
             } else this.method230(7365, i, `is`!!, i_6_, this.anInt5093)
             glPixelStorei(3317, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ')'))
         }
     }
 
@@ -69,7 +81,7 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
             glTexSubImage2Df(this.anInt5093, 0, i_12_, i_10_, i_13_, i_14_, method3055(106, textureFormatInfo), 5121, fs, i_11_)
             glPixelStorei(3314, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bm.CA(" + i + ',' + i_9_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bm.CA(" + i + ',' + i_9_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))
         }
     }
 
@@ -84,7 +96,7 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
             glPixelStorei(3314, 0)
             glPixelStorei(3317, 4)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bm.T(" + i + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bm.T(" + i + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -135,7 +147,7 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
             this.aGlRenderDevice_5082!!.method3850(110.toByte(), this)
             glTexImage2Dub(this.anInt5093, 0, this.method228(113), i, i_47_, 0, method3055(113, this.aTextureFormatInfo_5084), method1128(-112, this.aMovementDirection_5088), null, 0)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + i + ',' + i_47_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + i + ',' + i_47_ + ')'))
         }
     }
 
@@ -147,7 +159,7 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
         if (i != 25688) anInt8604 = -90
     }
 
-    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_49_: Int, bool: Boolean, fs: FloatArray?, i_50_: Int, i_51_: Int) : super(glRenderDevice, 3553, textureFormatInfo, MovementDirection.aMovementDirection_1187, i * i_49_, bool) {
+    internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_49_: Int, bool: Boolean, fs: FloatArray?, i_50_: Int, i_51_: Int) : super(glRenderDevice, 3553, textureFormatInfo, MovementDirectionStatics.aMovementDirection_1187, i * i_49_, bool) {
         try {
             anInt8612 = i
             anInt8604 = i_49_
@@ -158,146 +170,7 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
                 glPixelStorei(3314, 0)
             } else this.method238(this.anInt5093, 1, i, fs, i_49_)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_49_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_50_ + ',' + i_51_ + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var aString8605: String? = null
-        @JvmField
-        var anInt8606: Int = 0
-        @JvmField
-        var anInt8607: Int = 0
-        @JvmField
-        var anInt8608: Int = 0
-        @JvmField
-        var anInt8609: Int = 0
-        @JvmField
-        var anInt8610: Int = 0
-        @JvmField
-        var anInt8611: Int = 0
-        @JvmField
-        var anInt8613: Int = 0
-        @JvmField
-        var anInt8614: Int = 0
-        @JvmField
-        var anInt8615: Int = 0
-        @JvmField
-        var anInt8616: Int = 0
-        @JvmField
-        var anInt8617: Int = 0
-        @JvmField
-        var anInt8618: Int = 0
-
-        @JvmStatic
-        fun method239(i: Byte, i_3_: Int, i_4_: Int, widgetComponent: WidgetComponent) {
-            anInt8610++
-            if (widgetComponent.aByte817.toInt() != 0) {
-                if (widgetComponent.aByte817.toInt() == 1) widgetComponent.anInt800 = ((-widgetComponent.anInt709 + i_3_) / 2 + widgetComponent.anInt788)
-                else if (widgetComponent.aByte817.toInt() != 2) {
-                    if (widgetComponent.aByte817.toInt() != 3) {
-                        if (widgetComponent.aByte817.toInt() != 4) widgetComponent.anInt800 = (-widgetComponent.anInt709 + i_3_ + -(i_3_ * widgetComponent.anInt788 shr 14))
-                        else widgetComponent.anInt800 = ((-widgetComponent.anInt709 + i_3_) / 2 - -(i_3_ * widgetComponent.anInt788 shr 14))
-                    } else widgetComponent.anInt800 = i_3_ * widgetComponent.anInt788 shr 14
-                } else widgetComponent.anInt800 = (-widgetComponent.anInt788 + (-widgetComponent.anInt709 + i_3_))
-            } else widgetComponent.anInt800 = widgetComponent.anInt788
-            val i_5_ = 83 % ((i - 50) / 50)
-            if (widgetComponent.aByte681.toInt() != 0) {
-                if (widgetComponent.aByte681.toInt() == 1) widgetComponent.anInt750 = ((i_4_ + -widgetComponent.anInt789) / 2 - -widgetComponent.anInt739)
-                else if (widgetComponent.aByte681.toInt() == 2) widgetComponent.anInt750 = (i_4_ - widgetComponent.anInt789 - widgetComponent.anInt739)
-                else if (widgetComponent.aByte681.toInt() != 3) {
-                    if (widgetComponent.aByte681.toInt() != 4) widgetComponent.anInt750 = (-(i_4_ * widgetComponent.anInt739 shr 14) + (i_4_ + -widgetComponent.anInt789))
-                    else widgetComponent.anInt750 = ((i_4_ * widgetComponent.anInt739 shr 14) + (-widgetComponent.anInt789 + i_4_) / 2)
-                } else widgetComponent.anInt750 = widgetComponent.anInt739 * i_4_ shr 14
-            } else widgetComponent.anInt750 = widgetComponent.anInt739
-            if (TextureCubeProvider.aBoolean6327 && (Client.method105(widgetComponent)!!.anInt7098 != 0 || widgetComponent.anInt774 == 0)) {
-                if (widgetComponent.anInt750 < 0) widgetComponent.anInt750 = 0
-                else if (i_4_ < (widgetComponent.anInt789 + widgetComponent.anInt750)) widgetComponent.anInt750 = i_4_ - widgetComponent.anInt789
-                if (widgetComponent.anInt800 >= 0) {
-                    if (i_3_ < (widgetComponent.anInt800 - -widgetComponent.anInt709)) widgetComponent.anInt800 = i_3_ + -widgetComponent.anInt709
-                } else widgetComponent.anInt800 = 0
-            }
-        }
-
-        @JvmStatic
-        fun method241(i: Byte) {
-            anInt8617++
-            var i_16_ = IntKeyNode.anInt6981 * 512 + 256
-            var i_17_ = 512 * CollisionMapAccessor.anInt3550 + 256
-            var i_18_ = (CollisionMapAccessor.method2064(i_16_, CompiledScriptCache.anInt4372, 11219, i_17_) + -ShortMatrixNode.anInt9515)
-            if (GlTextureCubeMap.anInt8537 >= 100) {
-                CompositeRgbNoiseTexture.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
-                GlslMaterialPass.anInt6246 = IntKeyNode.anInt6981 * 512 + 256
-                ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, CompiledScriptCache.anInt4372, 11219, CompositeRgbNoiseTexture.anInt8685) + -ShortMatrixNode.anInt9515)
-            } else {
-                if (GlslMaterialPass.anInt6246 < i_16_) {
-                    GlslMaterialPass.anInt6246 += (TileTextureNode.anInt9406 + (GlTextureCubeMap.anInt8537 * (i_16_ + -GlslMaterialPass.anInt6246) / 1000))
-                    if (i_16_ < GlslMaterialPass.anInt6246) GlslMaterialPass.anInt6246 = i_16_
-                }
-                if (GlslMaterialPass.anInt6246 > i_16_) {
-                    GlslMaterialPass.anInt6246 -= (TileTextureNode.anInt9406 - -(GlTextureCubeMap.anInt8537 * (-i_16_ + GlslMaterialPass.anInt6246) / 1000))
-                    if (GlslMaterialPass.anInt6246 < i_16_) GlslMaterialPass.anInt6246 = i_16_
-                }
-                if (ParticleSystemRenderer.anInt3855 < i_18_) {
-                    ParticleSystemRenderer.anInt3855 += ((-ParticleSystemRenderer.anInt3855 + i_18_) * GlTextureCubeMap.anInt8537 / 1000) + TileTextureNode.anInt9406
-                    if (i_18_ < ParticleSystemRenderer.anInt3855) ParticleSystemRenderer.anInt3855 = i_18_
-                }
-                if (CompositeRgbNoiseTexture.anInt8685 < i_17_) {
-                    CompositeRgbNoiseTexture.anInt8685 += (TileTextureNode.anInt9406 - -((i_17_ + -CompositeRgbNoiseTexture.anInt8685) * GlTextureCubeMap.anInt8537 / 1000))
-                    if (CompositeRgbNoiseTexture.anInt8685 > i_17_) CompositeRgbNoiseTexture.anInt8685 = i_17_
-                }
-                if (i_18_ < ParticleSystemRenderer.anInt3855) {
-                    ParticleSystemRenderer.anInt3855 -= ((ParticleSystemRenderer.anInt3855 - i_18_) * GlTextureCubeMap.anInt8537 / 1000) + TileTextureNode.anInt9406
-                    if (i_18_ > ParticleSystemRenderer.anInt3855) ParticleSystemRenderer.anInt3855 = i_18_
-                }
-                if (CompositeRgbNoiseTexture.anInt8685 > i_17_) {
-                    CompositeRgbNoiseTexture.anInt8685 -= (TileTextureNode.anInt9406 + ((CompositeRgbNoiseTexture.anInt8685 - i_17_) * GlTextureCubeMap.anInt8537 / 1000))
-                    if (i_17_ > CompositeRgbNoiseTexture.anInt8685) CompositeRgbNoiseTexture.anInt8685 = i_17_
-                }
-            }
-            i_17_ = 256 + ClanChatRequestSender.anInt3647 * 512
-            i_16_ = 256 + 512 * RenderableEntry.anInt4336
-            i_18_ = (CollisionMapAccessor.method2064(i_16_, CompiledScriptCache.anInt4372, 11219, i_17_) - MinimapFlagRenderer.anInt1797)
-            val i_19_ = -GlslMaterialPass.anInt6246 + i_16_
-            val i_20_ = -ParticleSystemRenderer.anInt3855 + i_18_
-            val i_21_ = -CompositeRgbNoiseTexture.anInt8685 + i_17_
-            val i_22_ = sqrt((i_19_ * i_19_ - -(i_21_ * i_21_)).toDouble()).toInt()
-            var i_23_ = ((atan2(i_20_.toDouble(), i_22_.toDouble()) * 2607.5945876176133).toInt() and 0x3fff)
-            if (i < 126) aString8605 = null
-            if (i_23_ < 1024) i_23_ = 1024
-            val i_24_ = 0x3fff and (-2607.5945876176133 * atan2(i_19_.toDouble(), i_21_.toDouble())).toInt()
-            if (i_23_ > 3072) i_23_ = 3072
-            if (i_23_ > MinimapAreaMarkerNode.anInt9701) {
-                MinimapAreaMarkerNode.anInt9701 += (BloomGraphicsOptionState.anInt5973 * (i_23_ - MinimapAreaMarkerNode.anInt9701 shr 3) / 1000) + GlGroundShaderPass.anInt7403 shl 3
-                if (i_23_ < MinimapAreaMarkerNode.anInt9701) MinimapAreaMarkerNode.anInt9701 = i_23_
-            }
-            if (MinimapAreaMarkerNode.anInt9701 > i_23_) {
-                MinimapAreaMarkerNode.anInt9701 -= (((-i_23_ + MinimapAreaMarkerNode.anInt9701 shr 3) * BloomGraphicsOptionState.anInt5973 / 1000) + GlGroundShaderPass.anInt7403) shl 3
-                if (MinimapAreaMarkerNode.anInt9701 < i_23_) MinimapAreaMarkerNode.anInt9701 = i_23_
-            }
-            var i_25_ = -WorldMapElement.anInt4638 + i_24_
-            if (i_25_ > 8192) i_25_ -= 16384
-            if (i_25_ < -8192) i_25_ += 16384
-            i_25_ = i_25_ shr 3
-            if (i_25_ > 0) {
-                WorldMapElement.anInt4638 += (GlGroundShaderPass.anInt7403 + BloomGraphicsOptionState.anInt5973 * i_25_ / 1000) shl 3
-                WorldMapElement.anInt4638 = WorldMapElement.anInt4638 and 0x3fff
-            }
-            if (i_25_ < 0) {
-                WorldMapElement.anInt4638 -= GlGroundShaderPass.anInt7403 - -(-i_25_ * BloomGraphicsOptionState.anInt5973 / 1000) shl 3
-                WorldMapElement.anInt4638 = WorldMapElement.anInt4638 and 0x3fff
-            }
-            var i_26_ = i_24_ - WorldMapElement.anInt4638
-            if (i_26_ > 8192) i_26_ -= 16384
-            if (i_26_ < -8192) i_26_ += 16384
-            MapTileShape.anInt4186 = 0
-            if (i_26_ < 0 && i_25_ > 0 || i_26_ > 0 && i_25_ < 0) WorldMapElement.anInt4638 = i_24_
-        }
-
-        @JvmStatic
-        fun method242(bool: Boolean) {
-            if (bool == true) aString8605 = null
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("bm.<init>(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ',' + i + ',' + i_49_ + ',' + bool + ',' + (if (fs != null) "{...}" else "null") + ',' + i_50_ + ',' + i_51_ + ')'))
         }
     }
 }

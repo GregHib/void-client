@@ -1,4 +1,4 @@
-import BlankTextureNode.Companion.method3098
+import BlankTextureNodeStatics.method3098
 import NativeLibraryState.method215
 import java.awt.Canvas
 
@@ -12,7 +12,7 @@ object JagDxToolkitFactory {
         try {
             if (!method215(27165)) throw RuntimeException("")
             if (!method3098(-30282, "jagdx")) throw RuntimeException("")
-            var_renderer = D3dRenderDevice.createToolkit(canvas, var_renderConfig, js5Archive, i) as Renderer
+            var_renderer = D3dRenderDeviceStatics.createToolkit(canvas, var_renderConfig, js5Archive, i) as Renderer
         } catch (throwable: Throwable) {
             throw RuntimeException("")
         }

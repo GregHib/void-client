@@ -1,0 +1,39 @@
+import SceneTilePlaneManager.method260
+import LoadProgressCountersStatics.method1373
+
+object FloatGridStatics {
+    @JvmField
+            var aJs5Archive_4975: Js5Archive? = null
+            var anInt4976: Int = 0
+            var anInt4977: Int = 0
+            @JvmField
+            var anInt4979: Int = 0
+            @JvmStatic
+            fun method1583(i: Byte) {
+                anInt4977++
+                if (RenderNodeStatics.anInt9721 != -1) {
+                    var i_0_ = GlTexture1DStatics.aInputTracker_8552!!.method3597(true)
+                    var i_1_ = GlTexture1DStatics.aInputTracker_8552!!.method3594(72.toByte())
+                    val class348_sub45 = (GroundDecorEntityStatics.aNodeDeque_8744!!.method1995(4) as TimedRecordAccessor?)
+                    if (class348_sub45 != null) {
+                        i_0_ = class348_sub45.method3308((-128).toByte())
+                        i_1_ = class348_sub45.method3311(58)
+                    }
+                    var i_2_ = 0
+                    if (i.toInt() != -73) anInt4976 = 105
+                    var i_3_ = 0
+                    if (GrayscaleNoiseTextureStatics.aBoolean5300) {
+                        i_2_ = NativeTerrainTileStatics.method4008((-128).toByte())
+                        i_3_ = method260(false)
+                    }
+                    method1373(RenderNodeStatics.anInt9721, i_2_, i_2_, LocTypeDefinitionStatics.anInt4017 + i_2_, i_1_, i_0_, -1391, i_0_ + i_2_, HardCacheEntryReferenceStatics.anInt10432 + i_3_, i_3_, i_3_ + i_1_, i_3_)
+                    if (HeapDiagnosticsHolder.aWidgetComponent_2249 != null) NativeLibraryUnloader.method1630(0, i_3_ + i_1_, i_2_ + i_0_)
+                }
+            }
+    
+            @JvmStatic
+            fun method1584(i: Byte) {
+                if (i.toInt() != -64) method1584((-48).toByte())
+                aJs5Archive_4975 = null
+            }
+}

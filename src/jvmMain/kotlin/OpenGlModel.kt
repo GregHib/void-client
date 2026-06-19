@@ -1,18 +1,78 @@
-import TwoStateOptionState.Companion.method1846
-import ParticleEmitterFactory.Companion.method1885
-import SphereMapMaterialPass.Companion.method2174
-import Texture2DProvider.Companion.method2259
-import ArchiveResourceProvider.Companion.method2352
-import LinkedListNode.Companion.method2709
-import PcmStreamBuffer.Companion.method2832
-import BlankTextureNode.Companion.method3100
-import Bzip2DecoderState.Companion.method371
-import CachedRgbNoiseTexture.Companion.method565
-import RasterSprite.Companion.method166
-import jaclib.memory.Stream.Companion.floatToRawIntBits
-import jaggl.OpenGL.Companion.glColor4ub
-import OpenGlTerrainTile.Companion.method3999
+import AbstractModelStatics.method616
+import TwoStateOptionStateStatics.method1846
+import ParticleEmitterFactoryStatics.method1885
+import SphereMapMaterialPassStatics.method2174
+import Texture2DProviderStatics.method2259
+import ArchiveResourceProviderStatics.method2352
+import LinkedListNodeStatics.method2709
+import PcmStreamBufferStatics.method2832
+import BlankTextureNodeStatics.method3100
+import Bzip2DecoderStateStatics.method371
+import CachedRgbNoiseTextureStatics.method565
+import RasterSpriteStatics.method166
+import jaclib.memory.StreamStatics.floatToRawIntBits
+import jaggl.OpenGLStatics.glColor4ub
+import OpenGlTerrainTileStatics.method3999
 import kotlin.math.sqrt
+import OpenGlModelStatics.anInt5530
+import OpenGlModelStatics.anInt5531
+import OpenGlModelStatics.anInt5532
+import OpenGlModelStatics.anInt5533
+import OpenGlModelStatics.anInt5534
+import OpenGlModelStatics.anInt5535
+import OpenGlModelStatics.anInt5538
+import OpenGlModelStatics.anInt5545
+import OpenGlModelStatics.anInt5546
+import OpenGlModelStatics.anInt5547
+import OpenGlModelStatics.anInt5548
+import OpenGlModelStatics.anInt5549
+import OpenGlModelStatics.anInt5550
+import OpenGlModelStatics.anInt5551
+import OpenGlModelStatics.anInt5560
+import OpenGlModelStatics.anInt5561
+import OpenGlModelStatics.anInt5562
+import OpenGlModelStatics.anInt5567
+import OpenGlModelStatics.anInt5568
+import OpenGlModelStatics.anInt5569
+import OpenGlModelStatics.anInt5574
+import OpenGlModelStatics.anInt5578
+import OpenGlModelStatics.anInt5582
+import OpenGlModelStatics.anInt5585
+import OpenGlModelStatics.anInt5587
+import OpenGlModelStatics.anInt5588
+import OpenGlModelStatics.anInt5589
+import OpenGlModelStatics.anInt5590
+import OpenGlModelStatics.anInt5597
+import OpenGlModelStatics.anInt5599
+import OpenGlModelStatics.anInt5602
+import OpenGlModelStatics.anInt5603
+import OpenGlModelStatics.anInt5604
+import OpenGlModelStatics.anInt5606
+import OpenGlModelStatics.anInt5607
+import OpenGlModelStatics.anInt5611
+import OpenGlModelStatics.anInt5612
+import OpenGlModelStatics.anInt5613
+import OpenGlModelStatics.anInt5614
+import OpenGlModelStatics.anInt5615
+import OpenGlModelStatics.anInt5616
+import OpenGlModelStatics.anInt5618
+import OpenGlModelStatics.anInt5619
+import OpenGlModelStatics.anInt5622
+import OpenGlModelStatics.anInt5623
+import OpenGlModelStatics.anInt5624
+import OpenGlModelStatics.anInt5625
+import OpenGlModelStatics.anInt5628
+import OpenGlModelStatics.anInt5630
+import OpenGlModelStatics.anInt5631
+import OpenGlModelStatics.anInt5633
+import OpenGlModelStatics.anInt5635
+import OpenGlModelStatics.anInt5636
+import OpenGlModelStatics.anInt5637
+import OpenGlModelStatics.anInt5639
+import OpenGlModelStatics.anInt5641
+import OpenGlModelStatics.anInt5643
+import OpenGlModelStatics.anInt5650
+import OpenGlModelStatics.anInt5651
 
 class OpenGlModel : AbstractModel {
     private var aBoolean5527: Boolean
@@ -76,8 +136,8 @@ class OpenGlModel : AbstractModel {
     private var aShortArray5649: ShortArray? = null
     public override fun FA(i: Int) {
         anInt5650++
-        val i_0_ = TrigLookupTables.anIntArray1207!![i]
-        val i_1_ = TrigLookupTables.anIntArray1204!![i]
+        val i_0_ = TrigLookupTablesStatics.anIntArray1207!![i]
+        val i_1_ = TrigLookupTablesStatics.anIntArray1204!![i]
         for (i_2_ in 0..<anInt5557) {
             val i_3_ = (-(i_0_ * anIntArray5644!![i_2_]) + anIntArray5593!![i_2_] * i_1_ shr 14)
             anIntArray5644!![i_2_] = (anIntArray5593!![i_2_] * i_0_ - -(anIntArray5644!![i_2_] * i_1_) shr 14)
@@ -174,7 +234,7 @@ class OpenGlModel : AbstractModel {
             anInt5533++
             return method684(bool, 1566382404, -1, i_14_, i_15_, i, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.MA(" + i + ',' + i_14_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_15_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.MA(" + i + ',' + i_14_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_15_ + ')'))
         }
     }
 
@@ -189,8 +249,8 @@ class OpenGlModel : AbstractModel {
 
     public override fun VA(i: Int) {
         anInt5561++
-        val i_25_ = TrigLookupTables.anIntArray1207!![i]
-        val i_26_ = TrigLookupTables.anIntArray1204!![i]
+        val i_25_ = TrigLookupTablesStatics.anIntArray1207!![i]
+        val i_26_ = TrigLookupTablesStatics.anIntArray1204!![i]
         var i_27_ = 0
         while (anInt5557 > i_27_) {
             val i_28_ = ((anIntArray5543!![i_27_] * i_26_ + i_25_ * anIntArray5593!![i_27_]) shr 14)
@@ -205,7 +265,7 @@ class OpenGlModel : AbstractModel {
     private fun method680(i: Int, i_29_: Int, i_30_: Byte, i_31_: Short, i_32_: Int): Int {
         if (i != 19995) return -13
         anInt5582++
-        var i_33_ = (ParticleEmitterNode.anIntArray179!![ScanlineRasterFiller.method1384(i_32_, i xor 0x54b313bc, i_29_)])
+        var i_33_ = (ParticleEmitterNodeStatics.anIntArray179!![ScanlineRasterFillerStatics.method1384(i_32_, i xor 0x54b313bc, i_29_)])
         if (i_31_.toInt() != -1) {
             val class12 = aHa_Sub2_5598!!.aRenderConfig4579!!.method3(i_31_.toInt() and 0xffff, -6662)
             val i_34_ = 0xff and class12!!.aByte201.toInt()
@@ -329,24 +389,24 @@ class OpenGlModel : AbstractModel {
                                             if (i_77_ != -1) {
                                                 if (is_55_ == null) {
                                                     aNpcSummaryDefinition_5572 = NpcSummaryDefinition()
-                                                    aNpcSummaryDefinition_5572!!.aShortArray1954 = (MinimapPolygonDrawer.method470(aShortArray5564, (-120).toByte()))
+                                                    aNpcSummaryDefinition_5572!!.aShortArray1954 = (MinimapPolygonDrawerStatics.method470(aShortArray5564, (-120).toByte()))
                                                     is_55_ = aNpcSummaryDefinition_5572!!.aShortArray1954
-                                                    aNpcSummaryDefinition_5572!!.aShortArray1951 = (MinimapPolygonDrawer.method470(aShortArray5583, (-109).toByte()))
+                                                    aNpcSummaryDefinition_5572!!.aShortArray1951 = (MinimapPolygonDrawerStatics.method470(aShortArray5583, (-109).toByte()))
                                                     is_53_ = aNpcSummaryDefinition_5572!!.aShortArray1951
-                                                    aNpcSummaryDefinition_5572!!.aShortArray1953 = (MinimapPolygonDrawer.method470(aShortArray5576, (-107).toByte()))
+                                                    aNpcSummaryDefinition_5572!!.aShortArray1953 = (MinimapPolygonDrawerStatics.method470(aShortArray5576, (-107).toByte()))
                                                     is_52_ = aNpcSummaryDefinition_5572!!.aShortArray1953
-                                                    aNpcSummaryDefinition_5572!!.aByteArray1948 = (ConfigVarProgress.method2309(-37, aByteArray5594))
+                                                    aNpcSummaryDefinition_5572!!.aByteArray1948 = (ConfigVarProgressStatics.method2309(-37, aByteArray5594))
                                                     is_54_ = aNpcSummaryDefinition_5572!!.aByteArray1948
                                                 }
                                                 if (is_58_ == null) {
                                                     val npcSummaryDefinition = (NpcSummaryDefinition().also { class64_sub3_44_.aNpcSummaryDefinition_5572 = it })
-                                                    npcSummaryDefinition.aShortArray1954 = (MinimapPolygonDrawer.method470(is_48_, (-127).toByte()))
+                                                    npcSummaryDefinition.aShortArray1954 = (MinimapPolygonDrawerStatics.method470(is_48_, (-127).toByte()))
                                                     is_58_ = npcSummaryDefinition.aShortArray1954
-                                                    npcSummaryDefinition.aShortArray1951 = (MinimapPolygonDrawer.method470(is_49_, (-111).toByte()))
+                                                    npcSummaryDefinition.aShortArray1951 = (MinimapPolygonDrawerStatics.method470(is_49_, (-111).toByte()))
                                                     is_57_ = npcSummaryDefinition.aShortArray1951
-                                                    npcSummaryDefinition.aShortArray1953 = (MinimapPolygonDrawer.method470(is_50_, (-120).toByte()))
+                                                    npcSummaryDefinition.aShortArray1953 = (MinimapPolygonDrawerStatics.method470(is_50_, (-120).toByte()))
                                                     is_59_ = npcSummaryDefinition.aShortArray1953
-                                                    npcSummaryDefinition.aByteArray1948 = (ConfigVarProgress.method2309(-91, is_51_))
+                                                    npcSummaryDefinition.aByteArray1948 = (ConfigVarProgressStatics.method2309(-91, is_51_))
                                                     is_56_ = npcSummaryDefinition.aByteArray1948
                                                 }
                                                 var i_79_ = aShortArray5564!![i_72_]
@@ -400,7 +460,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.PA(" + (if (abstractModel != null) "{...}" else "null") + ',' + i + ',' + i_42_ + ',' + i_43_ + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.PA(" + (if (abstractModel != null) "{...}" else "null") + ',' + i + ',' + i_42_ + ',' + i_43_ + ',' + bool + ')'))
         }
     }
 
@@ -409,7 +469,7 @@ class OpenGlModel : AbstractModel {
             anInt5633++
             return method684(bool, 1566382404, i_89_, i_87_, i_88_, i, abstractCameraTransform)
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.OA(" + i + ',' + i_87_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_88_ + ',' + i_89_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.OA(" + i + ',' + i_87_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + bool + ',' + i_88_ + ',' + i_89_ + ')'))
         }
     }
 
@@ -427,9 +487,9 @@ class OpenGlModel : AbstractModel {
                     val f = (((anIntArray5543!![class118.anInt1782]) + ((anIntArray5543!![class118.anInt1788]) + (anIntArray5543!![class118.anInt1781]))).toFloat() * 0.3333333f)
                     val f_90_ = (((anIntArray5593!![class118.anInt1788]) + ((anIntArray5593!![class118.anInt1781]) + (anIntArray5593!![class118.anInt1782]))).toFloat() * 0.3333333f)
                     val f_91_ = (((anIntArray5644!![class118.anInt1788]) + (anIntArray5644!![class118.anInt1781]) + (anIntArray5644!![class118.anInt1782])).toFloat() * 0.3333333f)
-                    val f_92_ = (ModelLightingConfig.aFloat2555 + (f_91_ * SkyboxGradient.aFloat3935 + (f_90_ * CubemapTexture2dSource.aFloat8696 + ParticleSystemState.aFloat2203 * f)))
-                    val f_93_ = (LinkedListIterator.aFloat2111 + (GameDisplayManager.aFloat2836 * f_91_ + (f_90_ * SmoothingBuffer.aFloat3242 + ResourceProvider.aFloat3943 * f)))
-                    val f_94_ = (f * NamedTimedNode.aFloat8784 + f_90_ * TextureLoaderUtil.aFloat3994 + f_91_ * CubeMapMaterialPass.aFloat6304 + SpriteRenderable.aFloat4720)
+                    val f_92_ = (ModelLightingConfigStatics.aFloat2555 + (f_91_ * SkyboxGradient.aFloat3935 + (f_90_ * CubemapTexture2dSourceStatics.aFloat8696 + ParticleSystemStateStatics.aFloat2203 * f)))
+                    val f_93_ = (LinkedListIteratorStatics.aFloat2111 + (GameDisplayManager.aFloat2836 * f_91_ + (f_90_ * SmoothingBufferStatics.aFloat3242 + ResourceProviderStatics.aFloat3943 * f)))
+                    val f_94_ = (f * NamedTimedNodeStatics.aFloat8784 + f_90_ * TextureLoaderUtil.aFloat3994 + f_91_ * CubeMapMaterialPassStatics.aFloat6304 + SpriteRenderableStatics.aFloat4720)
                     val f_95_ = ((1.0 / sqrt((f_94_ * f_94_ + (f_93_ * f_93_ + (f_92_ * f_92_))).toDouble())).toFloat() * class118.anInt1784.toFloat())
                     class101_sub3!!.method939(-f_94_ + f_94_ * f_95_, (class118.aShort1785 * class48.anInt856) shr 7, (-(f_92_ * f_95_) + (f_92_ + class48.anInt854.toFloat())), (class118.aShort1790 * class48.anInt857) shr 7, class48.anInt853, 90, (f_95_ * f_93_ + (-f_93_ + class48.anInt847.toFloat())))
                     aHa_Sub2_5598.method3766(55.toByte(), class101_sub3)
@@ -460,11 +520,11 @@ class OpenGlModel : AbstractModel {
                     i_105_ = i_106_
                     break
                 }
-                if (l == GlTextureCubeMap.aLongArray8530!![i_106_]) return (i_107_ - 1).toShort()
+                if (l == GlTextureCubeMapStatics.aLongArray8530!![i_106_]) return (i_107_ - 1).toShort()
                 i_106_++
             }
             aShortArray5649!![i_105_] = (anInt5529 + 1).toShort()
-            GlTextureCubeMap.aLongArray8530!![i_105_] = l
+            GlTextureCubeMapStatics.aLongArray8530!![i_105_] = l
             aShortArray5564!![anInt5529] = i_98_.toShort()
             aShortArray5583!![anInt5529] = i.toShort()
             aShortArray5576!![anInt5529] = i_97_.toShort()
@@ -473,7 +533,7 @@ class OpenGlModel : AbstractModel {
             aFloatArray5571!![anInt5529] = f_102_
             return (anInt5529++).toShort()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.R(" + i + ',' + i_97_ + ',' + l + ',' + i_98_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_99_ + ',' + f + ',' + i_100_ + ',' + i_101_ + ',' + f_102_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.R(" + i + ',' + i_97_ + ',' + l + ',' + i_98_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_99_ + ',' + f + ',' + i_100_ + ',' + i_101_ + ',' + f_102_ + ')'))
         }
     }
 
@@ -490,15 +550,15 @@ class OpenGlModel : AbstractModel {
             val class101_sub3_112_ = aHa_Sub2_5598!!.aClass101_Sub3_7760
             val f = (class101_sub3_112_.aFloat5747 + ((class101_sub3.aFloat5751 * class101_sub3_112_.aFloat5781) + ((class101_sub3_112_.aFloat5770 * class101_sub3.aFloat5747) + (class101_sub3.aFloat5772 * (class101_sub3_112_.aFloat5750)))))
             val f_113_ = (class101_sub3_112_.aFloat5772 + ((class101_sub3.aFloat5751 * class101_sub3_112_.aFloat5762) + ((class101_sub3.aFloat5747 * class101_sub3_112_.aFloat5761) + (class101_sub3.aFloat5772 * (class101_sub3_112_.aFloat5769)))))
-            CubemapTexture2dSource.aFloat8696 = ((class101_sub3_112_.aFloat5781 * class101_sub3.aFloat5754) + ((class101_sub3.aFloat5769 * class101_sub3_112_.aFloat5750) + (class101_sub3_112_.aFloat5770 * class101_sub3.aFloat5750)))
+            CubemapTexture2dSourceStatics.aFloat8696 = ((class101_sub3_112_.aFloat5781 * class101_sub3.aFloat5754) + ((class101_sub3.aFloat5769 * class101_sub3_112_.aFloat5750) + (class101_sub3_112_.aFloat5770 * class101_sub3.aFloat5750)))
             GameDisplayManager.aFloat2836 = ((class101_sub3.aFloat5781 * class101_sub3_112_.aFloat5761) + (class101_sub3_112_.aFloat5769 * class101_sub3.aFloat5762) + (class101_sub3_112_.aFloat5762 * class101_sub3.aFloat5784))
-            NamedTimedNode.aFloat8784 = ((class101_sub3_112_.aFloat5754 * class101_sub3.aFloat5761) + (class101_sub3.aFloat5770 * class101_sub3_112_.aFloat5756) + (class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5784))
-            CubeMapMaterialPass.aFloat6304 = ((class101_sub3.aFloat5781 * class101_sub3_112_.aFloat5756) + (class101_sub3.aFloat5762 * class101_sub3_112_.aFloat5754) + (class101_sub3_112_.aFloat5784 * class101_sub3.aFloat5784))
+            NamedTimedNodeStatics.aFloat8784 = ((class101_sub3_112_.aFloat5754 * class101_sub3.aFloat5761) + (class101_sub3.aFloat5770 * class101_sub3_112_.aFloat5756) + (class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5784))
+            CubeMapMaterialPassStatics.aFloat6304 = ((class101_sub3.aFloat5781 * class101_sub3_112_.aFloat5756) + (class101_sub3.aFloat5762 * class101_sub3_112_.aFloat5754) + (class101_sub3_112_.aFloat5784 * class101_sub3.aFloat5784))
             val f_114_ = ((class101_sub3_112_.aFloat5756 * class101_sub3.aFloat5747) + (class101_sub3_112_.aFloat5754 * class101_sub3.aFloat5772) + (class101_sub3.aFloat5751 * class101_sub3_112_.aFloat5784) + class101_sub3_112_.aFloat5751)
-            SmoothingBuffer.aFloat3242 = ((class101_sub3_112_.aFloat5761 * class101_sub3.aFloat5750) + (class101_sub3_112_.aFloat5769 * class101_sub3.aFloat5769) + (class101_sub3_112_.aFloat5762 * class101_sub3.aFloat5754))
-            ResourceProvider.aFloat3943 = ((class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5762) + ((class101_sub3.aFloat5761 * class101_sub3_112_.aFloat5769) + (class101_sub3_112_.aFloat5761 * class101_sub3.aFloat5770)))
+            SmoothingBufferStatics.aFloat3242 = ((class101_sub3_112_.aFloat5761 * class101_sub3.aFloat5750) + (class101_sub3_112_.aFloat5769 * class101_sub3.aFloat5769) + (class101_sub3_112_.aFloat5762 * class101_sub3.aFloat5754))
+            ResourceProviderStatics.aFloat3943 = ((class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5762) + ((class101_sub3.aFloat5761 * class101_sub3_112_.aFloat5769) + (class101_sub3_112_.aFloat5761 * class101_sub3.aFloat5770)))
             SkyboxGradient.aFloat3935 = ((class101_sub3_112_.aFloat5750 * class101_sub3.aFloat5762) + (class101_sub3_112_.aFloat5770 * class101_sub3.aFloat5781) + (class101_sub3.aFloat5784 * class101_sub3_112_.aFloat5781))
-            ParticleSystemState.aFloat2203 = ((class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5781) + ((class101_sub3.aFloat5770 * class101_sub3_112_.aFloat5770) + (class101_sub3.aFloat5761 * class101_sub3_112_.aFloat5750)))
+            ParticleSystemStateStatics.aFloat2203 = ((class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5781) + ((class101_sub3.aFloat5770 * class101_sub3_112_.aFloat5770) + (class101_sub3.aFloat5761 * class101_sub3_112_.aFloat5750)))
             TextureLoaderUtil.aFloat3994 = ((class101_sub3_112_.aFloat5784 * class101_sub3.aFloat5754) + ((class101_sub3.aFloat5769 * class101_sub3_112_.aFloat5754) + (class101_sub3.aFloat5750 * class101_sub3_112_.aFloat5756)))
             var bool_115_ = false
             var f_116_ = 3.4028235E38f
@@ -520,38 +580,38 @@ class OpenGlModel : AbstractModel {
             val i_131_ = i_125_ + (i_122_ shl i_110_)
             val i_132_ = (i_123_ shl i_110_) + i_126_
             val i_133_ = (i_124_ shl i_110_) + i_127_
-            SceneModelBuilder.anIntArray6393!![0] = i_128_
-            IOException_Sub1.anIntArray91!![0] = i_129_
-            SceneModelBuilder.anIntArray6393!![1] = i_131_
-            TextureMetadataProvider.anIntArray4623!![0] = i_130_
-            IOException_Sub1.anIntArray91!![1] = i_129_
-            SceneModelBuilder.anIntArray6393!![2] = i_128_
+            SceneModelBuilderStatics.anIntArray6393!![0] = i_128_
+            IOException_Sub1Statics.anIntArray91!![0] = i_129_
+            SceneModelBuilderStatics.anIntArray6393!![1] = i_131_
+            TextureMetadataProviderStatics.anIntArray4623!![0] = i_130_
+            IOException_Sub1Statics.anIntArray91!![1] = i_129_
+            SceneModelBuilderStatics.anIntArray6393!![2] = i_128_
             if (i != 1566382404) method621()
-            TextureMetadataProvider.anIntArray4623!![1] = i_130_
-            IOException_Sub1.anIntArray91!![2] = i_132_
-            TextureMetadataProvider.anIntArray4623!![2] = i_130_
-            SceneModelBuilder.anIntArray6393!![3] = i_131_
-            IOException_Sub1.anIntArray91!![3] = i_132_
-            SceneModelBuilder.anIntArray6393!![4] = i_128_
-            TextureMetadataProvider.anIntArray4623!![3] = i_130_
-            IOException_Sub1.anIntArray91!![4] = i_129_
-            TextureMetadataProvider.anIntArray4623!![4] = i_133_
-            SceneModelBuilder.anIntArray6393!![5] = i_131_
-            IOException_Sub1.anIntArray91!![5] = i_129_
-            TextureMetadataProvider.anIntArray4623!![5] = i_133_
-            SceneModelBuilder.anIntArray6393!![6] = i_128_
-            IOException_Sub1.anIntArray91!![6] = i_132_
-            SceneModelBuilder.anIntArray6393!![7] = i_131_
-            TextureMetadataProvider.anIntArray4623!![6] = i_133_
-            IOException_Sub1.anIntArray91!![7] = i_132_
-            TextureMetadataProvider.anIntArray4623!![7] = i_133_
+            TextureMetadataProviderStatics.anIntArray4623!![1] = i_130_
+            IOException_Sub1Statics.anIntArray91!![2] = i_132_
+            TextureMetadataProviderStatics.anIntArray4623!![2] = i_130_
+            SceneModelBuilderStatics.anIntArray6393!![3] = i_131_
+            IOException_Sub1Statics.anIntArray91!![3] = i_132_
+            SceneModelBuilderStatics.anIntArray6393!![4] = i_128_
+            TextureMetadataProviderStatics.anIntArray4623!![3] = i_130_
+            IOException_Sub1Statics.anIntArray91!![4] = i_129_
+            TextureMetadataProviderStatics.anIntArray4623!![4] = i_133_
+            SceneModelBuilderStatics.anIntArray6393!![5] = i_131_
+            IOException_Sub1Statics.anIntArray91!![5] = i_129_
+            TextureMetadataProviderStatics.anIntArray4623!![5] = i_133_
+            SceneModelBuilderStatics.anIntArray6393!![6] = i_128_
+            IOException_Sub1Statics.anIntArray91!![6] = i_132_
+            SceneModelBuilderStatics.anIntArray6393!![7] = i_131_
+            TextureMetadataProviderStatics.anIntArray4623!![6] = i_133_
+            IOException_Sub1Statics.anIntArray91!![7] = i_132_
+            TextureMetadataProviderStatics.anIntArray4623!![7] = i_133_
             for (i_134_ in 0..7) {
-                val f_135_ = TextureMetadataProvider.anIntArray4623!![i_134_].toFloat()
-                val f_136_ = IOException_Sub1.anIntArray91!![i_134_].toFloat()
-                val f_137_ = SceneModelBuilder.anIntArray6393!![i_134_].toFloat()
-                var f_138_ = (CubeMapMaterialPass.aFloat6304 * f_135_ + (f_137_ * NamedTimedNode.aFloat8784 + TextureLoaderUtil.aFloat3994 * f_136_) + f_114_)
-                val f_139_ = f_113_ + (ResourceProvider.aFloat3943 * f_137_ + SmoothingBuffer.aFloat3242 * f_136_ + GameDisplayManager.aFloat2836 * f_135_)
-                val f_140_ = f + (CubemapTexture2dSource.aFloat8696 * f_136_ + f_137_ * ParticleSystemState.aFloat2203 + SkyboxGradient.aFloat3935 * f_135_)
+                val f_135_ = TextureMetadataProviderStatics.anIntArray4623!![i_134_].toFloat()
+                val f_136_ = IOException_Sub1Statics.anIntArray91!![i_134_].toFloat()
+                val f_137_ = SceneModelBuilderStatics.anIntArray6393!![i_134_].toFloat()
+                var f_138_ = (CubeMapMaterialPassStatics.aFloat6304 * f_135_ + (f_137_ * NamedTimedNodeStatics.aFloat8784 + TextureLoaderUtil.aFloat3994 * f_136_) + f_114_)
+                val f_139_ = f_113_ + (ResourceProviderStatics.aFloat3943 * f_137_ + SmoothingBufferStatics.aFloat3242 * f_136_ + GameDisplayManager.aFloat2836 * f_135_)
+                val f_140_ = f + (CubemapTexture2dSourceStatics.aFloat8696 * f_136_ + f_137_ * ParticleSystemStateStatics.aFloat2203 + SkyboxGradient.aFloat3935 * f_135_)
                 if (aHa_Sub2_5598.anInt7826.toFloat() <= f_138_) {
                     if (i_108_ > 0) f_138_ = i_108_.toFloat()
                     val f_141_ = (f_140_ * i_120_.toFloat() / f_138_ + aHa_Sub2_5598.anInt7853.toFloat())
@@ -575,9 +635,9 @@ class OpenGlModel : AbstractModel {
                     val f_145_ = anIntArray5543!![i_144_].toFloat()
                     val f_146_ = anIntArray5644!![i_144_].toFloat()
                     val f_147_ = anIntArray5593!![i_144_].toFloat()
-                    var f_148_ = f_114_ + (f_146_ * CubeMapMaterialPass.aFloat6304 + (NamedTimedNode.aFloat8784 * f_145_ + f_147_ * TextureLoaderUtil.aFloat3994))
-                    val f_149_ = f + (f_147_ * CubemapTexture2dSource.aFloat8696 + f_145_ * ParticleSystemState.aFloat2203 + SkyboxGradient.aFloat3935 * f_146_)
-                    val f_150_ = f_113_ + (SmoothingBuffer.aFloat3242 * f_147_ + f_145_ * ResourceProvider.aFloat3943 + f_146_ * GameDisplayManager.aFloat2836)
+                    var f_148_ = f_114_ + (f_146_ * CubeMapMaterialPassStatics.aFloat6304 + (NamedTimedNodeStatics.aFloat8784 * f_145_ + f_147_ * TextureLoaderUtil.aFloat3994))
+                    val f_149_ = f + (f_147_ * CubemapTexture2dSourceStatics.aFloat8696 + f_145_ * ParticleSystemStateStatics.aFloat2203 + SkyboxGradient.aFloat3935 * f_146_)
+                    val f_150_ = f_113_ + (SmoothingBufferStatics.aFloat3242 * f_147_ + f_145_ * ResourceProviderStatics.aFloat3943 + f_146_ * GameDisplayManager.aFloat2836)
                     if (f_148_ >= aHa_Sub2_5598.anInt7826.toFloat()) {
                         if (i_108_ > 0) f_148_ = i_108_.toFloat()
                         val i_155_ = ((aHa_Sub2_5598.anInt7853).toFloat() + f_149_ * i_120_.toFloat() / f_148_).toInt()
@@ -619,7 +679,7 @@ class OpenGlModel : AbstractModel {
             }
             return false
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.SA(" + bool + ',' + i + ',' + i_108_ + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.SA(" + bool + ',' + i + ',' + i_108_ + ',' + i_109_ + ',' + i_110_ + ',' + i_111_ + ',' + (if (abstractCameraTransform != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -672,7 +732,7 @@ class OpenGlModel : AbstractModel {
             method685(118.toByte(), var_r_Sub2_170_)
             return var_r_Sub2_170_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, "paa.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
+            throw SoundBankPatchStatics.method2929(runtimeexception, "paa.ba(" + (if (var_renderNode != null) "{...}" else "null") + ')')
         }
     }
 
@@ -693,8 +753,8 @@ class OpenGlModel : AbstractModel {
 
     public override fun k(i: Int) {
         anInt5622++
-        val i_171_ = TrigLookupTables.anIntArray1207!![i]
-        val i_172_ = TrigLookupTables.anIntArray1204!![i]
+        val i_171_ = TrigLookupTablesStatics.anIntArray1207!![i]
+        val i_172_ = TrigLookupTablesStatics.anIntArray1204!![i]
         for (i_173_ in 0..<anInt5557) {
             val i_174_ = ((anIntArray5543!![i_173_] * i_172_ + anIntArray5644!![i_173_] * i_171_) shr 14)
             anIntArray5644!![i_173_] = anIntArray5644!![i_173_] * i_172_ + -(anIntArray5543!![i_173_] * i_171_) shr 14
@@ -752,7 +812,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.U(" + i + ',' + (if (var_r_Sub2 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.U(" + i + ',' + (if (var_r_Sub2 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -767,14 +827,14 @@ class OpenGlModel : AbstractModel {
             var i_202_ = i_199_ and 0x7f
             if (i_195_ != -1) i_201_ = (i_197_ * (i_195_ - i_201_) shr 7) + i_201_
             if (i_196_ != -1) i_202_ += (i_196_ + -i_202_) * i_197_ shr 7
-            aShortArray5580!![i_198_] = (BoundsConstraintEntry.method2057(BoundsConstraintEntry.method2057(i_201_ shl 7, i_200_ shl 10), i_202_)).toShort()
+            aShortArray5580!![i_198_] = (BoundsConstraintEntryStatics.method2057(BoundsConstraintEntryStatics.method2057(i_201_ shl 7, i_200_ shl 10), i_202_)).toShort()
             i_198_++
         }
         if (aMapSceneTileDefinitionArray5621 != null) {
             for (i_203_ in 0..<anInt5536) {
                 val class118 = aMapSceneTileDefinitionArray5621!![i_203_]!!
                 val class48 = aColourAdjustmentArray5596!![i_203_]!!
-                class48.anInt858 = ((0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
+                class48.anInt858 = ((0xffffff and (ParticleEmitterNodeStatics.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
             }
         }
         if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
@@ -795,8 +855,8 @@ class OpenGlModel : AbstractModel {
 
     public override fun a(i: Int) {
         anInt5538++
-        val i_207_ = TrigLookupTables.anIntArray1207!![i]
-        val i_208_ = TrigLookupTables.anIntArray1204!![i]
+        val i_207_ = TrigLookupTablesStatics.anIntArray1207!![i]
+        val i_208_ = TrigLookupTablesStatics.anIntArray1204!![i]
         var i_209_ = 0
         while (anInt5557 > i_209_) {
             val i_210_ = ((i_208_ * anIntArray5543!![i_209_] + i_207_ * anIntArray5644!![i_209_]) shr 14)
@@ -835,7 +895,7 @@ class OpenGlModel : AbstractModel {
             if ((i and 0x100) == 0) class64_sub3_211_.aBoolean5595 = aBoolean5595
             else class64_sub3_211_.aBoolean5595 = true
             val bool_215_ = method2709(anInt5556, i, -1)
-            val bool_216_ = ProjectileFactory.method1613(false, anInt5556, i)
+            val bool_216_ = ProjectileFactoryStatics.method1613(false, anInt5556, i)
             val bool_217_ = method2259(i_212_, anInt5556, i)
             val bool_218_ = bool_217_ or (bool_216_ or bool_215_)
             if (bool_218_) {
@@ -870,7 +930,7 @@ class OpenGlModel : AbstractModel {
                 class64_sub3_211_.anIntArray5593 = anIntArray5593
                 class64_sub3_211_.anIntArray5543 = anIntArray5543
             }
-            if (ParticleEmitterDef.method2187(i, -79, anInt5556)) {
+            if (ParticleEmitterDefStatics.method2187(i, -79, anInt5556)) {
                 class64_sub3_211_.aHoverActionEntry_5605 = class64_sub3_213_!!.aHoverActionEntry_5605
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x1).toByte()
                 class64_sub3_211_.aHoverActionEntry_5605!!.anByteBufferReader_1811 = aHoverActionEntry_5605!!.anByteBufferReader_1811
@@ -885,7 +945,7 @@ class OpenGlModel : AbstractModel {
                 }
                 for (i_220_ in 0..<anInt5632) class64_sub3_211_.aShortArray5580!![i_220_] = aShortArray5580!![i_220_]
             } else class64_sub3_211_.aShortArray5580 = aShortArray5580
-            if (BufferedMessageQueue.method2075(i, -128, anInt5556)) {
+            if (BufferedMessageQueueStatics.method2075(i, -128, anInt5556)) {
                 if (class64_sub3_213_!!.aByteArray5542 == null || (class64_sub3_213_.aByteArray5542!!.size < anInt5632)) {
                     class64_sub3_213_.aByteArray5542 = ByteArray(anInt5632)
                     class64_sub3_211_.aByteArray5542 = class64_sub3_213_.aByteArray5542
@@ -896,14 +956,14 @@ class OpenGlModel : AbstractModel {
                     i_221_++
                 }
             } else class64_sub3_211_.aByteArray5542 = aByteArray5542
-            if (BoundsConstraintEntry.method2056(i, 108, anInt5556)) {
+            if (BoundsConstraintEntryStatics.method2056(i, 108, anInt5556)) {
                 class64_sub3_211_.aHoverActionEntry_5610 = class64_sub3_213_!!.aHoverActionEntry_5610
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x2).toByte()
                 class64_sub3_211_.aHoverActionEntry_5610!!.anByteBufferReader_1811 = aHoverActionEntry_5610!!.anByteBufferReader_1811
                 class64_sub3_211_.aHoverActionEntry_5610!!.aByte1812 = aHoverActionEntry_5610!!.aByte1812
-            } else if (HitsplatDefinition.method1193(anInt5556, i, true)) class64_sub3_211_.aHoverActionEntry_5610 = aHoverActionEntry_5610
+            } else if (HitsplatDefinitionStatics.method1193(anInt5556, i, true)) class64_sub3_211_.aHoverActionEntry_5610 = aHoverActionEntry_5610
             else class64_sub3_211_.aHoverActionEntry_5610 = null
-            if (LinkedListIterator.method1241(anInt5556, i, -119)) {
+            if (LinkedListIteratorStatics.method1241(anInt5556, i, -119)) {
                 if (class64_sub3_213_!!.aShortArray5564 != null && class64_sub3_213_.aShortArray5564!!.size >= anInt5529) {
                     class64_sub3_211_.aShortArray5564 = class64_sub3_213_.aShortArray5564
                     class64_sub3_211_.aShortArray5583 = class64_sub3_213_.aShortArray5583
@@ -953,7 +1013,7 @@ class OpenGlModel : AbstractModel {
                 class64_sub3_211_.aByteArray5594 = aByteArray5594
                 class64_sub3_211_.aShortArray5576 = aShortArray5576
             }
-            if (OutgoingPacketNode.method3325(i, anInt5556, true)) {
+            if (OutgoingPacketNodeStatics.method3325(i, anInt5556, true)) {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x4).toByte()
                 class64_sub3_211_.aHoverActionEntry_5563 = class64_sub3_213_!!.aHoverActionEntry_5563
                 class64_sub3_211_.aHoverActionEntry_5563!!.anByteBufferReader_1811 = aHoverActionEntry_5563!!.anByteBufferReader_1811
@@ -979,12 +1039,12 @@ class OpenGlModel : AbstractModel {
                 class64_sub3_211_.aFloatArray5571 = aFloatArray5571
                 class64_sub3_211_.aFloatArray5552 = aFloatArray5552
             }
-            if (SocketStreamWorker.method1475((-96).toByte(), anInt5556, i)) {
+            if (SocketStreamWorkerStatics.method1475((-96).toByte(), anInt5556, i)) {
                 class64_sub3_211_.aHoverActionEntry_5620 = class64_sub3_213_!!.aHoverActionEntry_5620
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x8).toByte()
                 class64_sub3_211_.aHoverActionEntry_5620!!.anByteBufferReader_1811 = aHoverActionEntry_5620!!.anByteBufferReader_1811
                 class64_sub3_211_.aHoverActionEntry_5620!!.aByte1812 = aHoverActionEntry_5620!!.aByte1812
-            } else if (IndexedFileCache.method1163(anInt5556, (-60).toByte(), i)) class64_sub3_211_.aHoverActionEntry_5620 = aHoverActionEntry_5620
+            } else if (IndexedFileCacheStatics.method1163(anInt5556, (-60).toByte(), i)) class64_sub3_211_.aHoverActionEntry_5620 = aHoverActionEntry_5620
             else class64_sub3_211_.aHoverActionEntry_5620 = null
             if (method2352(-19, anInt5556, i)) {
                 if (class64_sub3_213_!!.aShortArray5592 != null && (anInt5632 <= class64_sub3_213_.aShortArray5592!!.size)) {
@@ -1012,13 +1072,13 @@ class OpenGlModel : AbstractModel {
                 class64_sub3_211_.aShortArray5579 = aShortArray5579
                 class64_sub3_211_.aShortArray5592 = aShortArray5592
             }
-            if (CollisionFlagQuery.method723(i, anInt5556, (-70).toByte())) {
+            if (CollisionFlagQueryStatics.method723(i, anInt5556, (-70).toByte())) {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x10).toByte()
                 class64_sub3_211_.aArchiveFileConditionWrapper_5575 = class64_sub3_213_!!.aArchiveFileConditionWrapper_5575
                 class64_sub3_211_.aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 = aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463
-            } else if (!LinkedListIterator.method1238(i, anInt5556, -93)) class64_sub3_211_.aArchiveFileConditionWrapper_5575 = null
+            } else if (!LinkedListIteratorStatics.method1238(i, anInt5556, -93)) class64_sub3_211_.aArchiveFileConditionWrapper_5575 = null
             else class64_sub3_211_.aArchiveFileConditionWrapper_5575 = aArchiveFileConditionWrapper_5575
-            if (SceneProjector.method1637(anInt5556, 32768, i)) {
+            if (SceneProjectorStatics.method1637(anInt5556, 32768, i)) {
                 if (class64_sub3_213_!!.aShortArray5601 == null || class64_sub3_213_.aShortArray5601!!.size < anInt5632) {
                     val i_230_ = anInt5632
                     class64_sub3_213_.aShortArray5601 = ShortArray(i_230_)
@@ -1030,7 +1090,7 @@ class OpenGlModel : AbstractModel {
                     i_231_++
                 }
             } else class64_sub3_211_.aShortArray5601 = aShortArray5601
-            if (ModelDefinitionCache.method1599((-113).toByte(), i, anInt5556)) {
+            if (ModelDefinitionCacheStatics.method1599((-113).toByte(), i, anInt5556)) {
                 if (class64_sub3_213_!!.aColourAdjustmentArray5596 != null && (class64_sub3_213_.aColourAdjustmentArray5596!!.size >= anInt5536)) {
                     class64_sub3_211_.aColourAdjustmentArray5596 = class64_sub3_213_.aColourAdjustmentArray5596
                     for (i_232_ in 0..<anInt5536) class64_sub3_211_.aColourAdjustmentArray5596!![i_232_]!!.method451(aColourAdjustmentArray5596!![i_232_]!!, (-110).toByte())
@@ -1069,7 +1129,7 @@ class OpenGlModel : AbstractModel {
             class64_sub3_211_.aModelFacePriorityNodeArray5640 = aModelFacePriorityNodeArray5640
             return class64_sub3_211_
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.K(" + (if (class64_sub3_211_ != null) "{...}" else "null") + ',' + i + ',' + i_212_ + ',' + bool + ',' + (if (class64_sub3_213_ != null) "{...}" else "null") + ',' + bool_214_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.K(" + (if (class64_sub3_211_ != null) "{...}" else "null") + ',' + i + ',' + i_212_ + ',' + bool + ',' + (if (class64_sub3_213_ != null) "{...}" else "null") + ',' + bool_214_ + ')'))
         }
     }
 
@@ -1099,9 +1159,9 @@ class OpenGlModel : AbstractModel {
                 val class101_sub3_236_ = abstractCameraTransform as ProjectionCameraTransform
                 if (!aBoolean5527) method692((-123).toByte())
                 TextureLoaderUtil.aFloat3994 = ((class101_sub3_236_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3.aFloat5754 * class101_sub3_236_.aFloat5769) + (class101_sub3.aFloat5784 * class101_sub3_236_.aFloat5754))
-                SpriteRenderable.aFloat4720 = ((class101_sub3_236_.aFloat5751 * class101_sub3.aFloat5784) + ((class101_sub3.aFloat5756 * class101_sub3_236_.aFloat5747) + (class101_sub3_236_.aFloat5772 * class101_sub3.aFloat5754)) + class101_sub3.aFloat5751)
-                val f = (SpriteRenderable.aFloat4720 + TextureLoaderUtil.aFloat3994 * aShort5591.toFloat())
-                val f_237_ = (TextureLoaderUtil.aFloat3994 * aShort5629.toFloat() + SpriteRenderable.aFloat4720)
+                SpriteRenderableStatics.aFloat4720 = ((class101_sub3_236_.aFloat5751 * class101_sub3.aFloat5784) + ((class101_sub3.aFloat5756 * class101_sub3_236_.aFloat5747) + (class101_sub3_236_.aFloat5772 * class101_sub3.aFloat5754)) + class101_sub3.aFloat5751)
+                val f = (SpriteRenderableStatics.aFloat4720 + TextureLoaderUtil.aFloat3994 * aShort5591.toFloat())
+                val f_237_ = (TextureLoaderUtil.aFloat3994 * aShort5629.toFloat() + SpriteRenderableStatics.aFloat4720)
                 val f_238_: Float
                 val f_239_: Float
                 if (f > f_237_) {
@@ -1112,10 +1172,10 @@ class OpenGlModel : AbstractModel {
                     f_239_ = f - aShort5634.toFloat()
                 }
                 if (!(f_239_ >= aHa_Sub2_5598.aFloat7875) && !(aHa_Sub2_5598.anInt7826.toFloat() >= f_238_)) {
-                    CubemapTexture2dSource.aFloat8696 = ((class101_sub3.aFloat5781 * class101_sub3_236_.aFloat5754) + ((class101_sub3_236_.aFloat5769 * class101_sub3.aFloat5750) + ((class101_sub3_236_.aFloat5750) * (class101_sub3.aFloat5770))))
-                    ModelLightingConfig.aFloat2555 = ((class101_sub3.aFloat5781 * class101_sub3_236_.aFloat5751) + ((class101_sub3_236_.aFloat5772 * class101_sub3.aFloat5750) + (class101_sub3.aFloat5770 * (class101_sub3_236_.aFloat5747))) + class101_sub3.aFloat5747)
-                    val f_240_ = (ModelLightingConfig.aFloat2555 + (aShort5591.toFloat() * CubemapTexture2dSource.aFloat8696))
-                    val f_241_ = (ModelLightingConfig.aFloat2555 + (aShort5629.toFloat() * CubemapTexture2dSource.aFloat8696))
+                    CubemapTexture2dSourceStatics.aFloat8696 = ((class101_sub3.aFloat5781 * class101_sub3_236_.aFloat5754) + ((class101_sub3_236_.aFloat5769 * class101_sub3.aFloat5750) + ((class101_sub3_236_.aFloat5750) * (class101_sub3.aFloat5770))))
+                    ModelLightingConfigStatics.aFloat2555 = ((class101_sub3.aFloat5781 * class101_sub3_236_.aFloat5751) + ((class101_sub3_236_.aFloat5772 * class101_sub3.aFloat5750) + (class101_sub3.aFloat5770 * (class101_sub3_236_.aFloat5747))) + class101_sub3.aFloat5747)
+                    val f_240_ = (ModelLightingConfigStatics.aFloat2555 + (aShort5591.toFloat() * CubemapTexture2dSourceStatics.aFloat8696))
+                    val f_241_ = (ModelLightingConfigStatics.aFloat2555 + (aShort5629.toFloat() * CubemapTexture2dSourceStatics.aFloat8696))
                     val f_242_: Float
                     val f_243_: Float
                     if (f_240_ > f_241_) {
@@ -1126,10 +1186,10 @@ class OpenGlModel : AbstractModel {
                         f_242_ = (aHa_Sub2_5598.anInt7771.toFloat() * (f_241_ + aShort5634.toFloat()))
                     }
                     if (!(aHa_Sub2_5598.aFloat7835 <= f_243_ / i.toFloat()) && !(f_242_ / i.toFloat() <= aHa_Sub2_5598.aFloat7872)) {
-                        SmoothingBuffer.aFloat3242 = ((class101_sub3.aFloat5769 * (class101_sub3_236_.aFloat5769)) + ((class101_sub3_236_.aFloat5750) * class101_sub3.aFloat5761) + ((class101_sub3_236_.aFloat5754) * (class101_sub3.aFloat5762)))
-                        LinkedListIterator.aFloat2111 = (class101_sub3.aFloat5772 + ((class101_sub3.aFloat5762 * (class101_sub3_236_.aFloat5751)) + (((class101_sub3.aFloat5769) * (class101_sub3_236_.aFloat5772)) + ((class101_sub3.aFloat5761) * (class101_sub3_236_.aFloat5747)))))
-                        val f_244_ = (SmoothingBuffer.aFloat3242 * aShort5591.toFloat() + LinkedListIterator.aFloat2111)
-                        val f_245_ = (LinkedListIterator.aFloat2111 + aShort5629.toFloat() * SmoothingBuffer.aFloat3242)
+                        SmoothingBufferStatics.aFloat3242 = ((class101_sub3.aFloat5769 * (class101_sub3_236_.aFloat5769)) + ((class101_sub3_236_.aFloat5750) * class101_sub3.aFloat5761) + ((class101_sub3_236_.aFloat5754) * (class101_sub3.aFloat5762)))
+                        LinkedListIteratorStatics.aFloat2111 = (class101_sub3.aFloat5772 + ((class101_sub3.aFloat5762 * (class101_sub3_236_.aFloat5751)) + (((class101_sub3.aFloat5769) * (class101_sub3_236_.aFloat5772)) + ((class101_sub3.aFloat5761) * (class101_sub3_236_.aFloat5747)))))
+                        val f_244_ = (SmoothingBufferStatics.aFloat3242 * aShort5591.toFloat() + LinkedListIteratorStatics.aFloat2111)
+                        val f_245_ = (LinkedListIteratorStatics.aFloat2111 + aShort5629.toFloat() * SmoothingBufferStatics.aFloat3242)
                         val f_246_: Float
                         val f_247_: Float
                         if (f_245_ < f_244_) {
@@ -1141,25 +1201,25 @@ class OpenGlModel : AbstractModel {
                         }
                         if (!(f_247_ / i.toFloat() >= aHa_Sub2_5598.aFloat7830) && !(aHa_Sub2_5598.aFloat7836 >= f_246_ / i.toFloat())) {
                             if (class318_sub3 != null || aMapSceneTileDefinitionArray5621 != null) {
-                                ResourceProvider.aFloat3943 = (((class101_sub3_236_.aFloat5770) * (class101_sub3.aFloat5761)) + ((class101_sub3.aFloat5769) * class101_sub3_236_.aFloat5761) + ((class101_sub3_236_.aFloat5756) * (class101_sub3.aFloat5762)))
+                                ResourceProviderStatics.aFloat3943 = (((class101_sub3_236_.aFloat5770) * (class101_sub3.aFloat5761)) + ((class101_sub3.aFloat5769) * class101_sub3_236_.aFloat5761) + ((class101_sub3_236_.aFloat5756) * (class101_sub3.aFloat5762)))
                                 SkyboxGradient.aFloat3935 = (((class101_sub3.aFloat5781) * (class101_sub3_236_.aFloat5784)) + ((class101_sub3_236_.aFloat5781 * (class101_sub3.aFloat5770)) + ((class101_sub3.aFloat5750) * (class101_sub3_236_.aFloat5762))))
-                                NamedTimedNode.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_236_.aFloat5756)) + ((class101_sub3_236_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_236_.aFloat5761))))
+                                NamedTimedNodeStatics.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_236_.aFloat5756)) + ((class101_sub3_236_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_236_.aFloat5761))))
                                 GameDisplayManager.aFloat2836 = (((class101_sub3_236_.aFloat5762) * (class101_sub3.aFloat5769)) + ((class101_sub3_236_.aFloat5781) * (class101_sub3.aFloat5761)) + ((class101_sub3.aFloat5762) * class101_sub3_236_.aFloat5784))
-                                CubeMapMaterialPass.aFloat6304 = (((class101_sub3.aFloat5784) * (class101_sub3_236_.aFloat5784)) + ((class101_sub3_236_.aFloat5762 * (class101_sub3.aFloat5754)) + (class101_sub3_236_.aFloat5781 * (class101_sub3.aFloat5756))))
-                                ParticleSystemState.aFloat2203 = (((class101_sub3_236_.aFloat5756) * (class101_sub3.aFloat5781)) + ((class101_sub3_236_.aFloat5761 * (class101_sub3.aFloat5750)) + (class101_sub3_236_.aFloat5770 * (class101_sub3.aFloat5770))))
+                                CubeMapMaterialPassStatics.aFloat6304 = (((class101_sub3.aFloat5784) * (class101_sub3_236_.aFloat5784)) + ((class101_sub3_236_.aFloat5762 * (class101_sub3.aFloat5754)) + (class101_sub3_236_.aFloat5781 * (class101_sub3.aFloat5756))))
+                                ParticleSystemStateStatics.aFloat2203 = (((class101_sub3_236_.aFloat5756) * (class101_sub3.aFloat5781)) + ((class101_sub3_236_.aFloat5761 * (class101_sub3.aFloat5750)) + (class101_sub3_236_.aFloat5770 * (class101_sub3.aFloat5770))))
                             }
                             if (class318_sub3 != null) {
                                 val i_248_ = aShort5586 + aShort5540 shr 1
                                 val i_249_ = aShort5617 + aShort5646 shr 1
-                                val i_250_ = ((aShort5591.toFloat() * CubemapTexture2dSource.aFloat8696) + ((i_248_.toFloat() * ParticleSystemState.aFloat2203) + ModelLightingConfig.aFloat2555) + (SkyboxGradient.aFloat3935 * i_249_.toFloat())).toInt()
-                                val i_251_ = (LinkedListIterator.aFloat2111 + (i_248_.toFloat() * ResourceProvider.aFloat3943) + (SmoothingBuffer.aFloat3242 * aShort5591.toFloat()) + (GameDisplayManager.aFloat2836 * i_249_.toFloat())).toInt()
-                                val i_252_ = (SpriteRenderable.aFloat4720 + (i_248_.toFloat() * (NamedTimedNode.aFloat8784)) + (TextureLoaderUtil.aFloat3994 * aShort5591.toFloat()) + (CubeMapMaterialPass.aFloat6304 * i_249_.toFloat())).toInt()
-                                val i_253_ = ((SkyboxGradient.aFloat3935 * i_249_.toFloat()) + ((CubemapTexture2dSource.aFloat8696 * aShort5629.toFloat()) + (ModelLightingConfig.aFloat2555 + (ParticleSystemState.aFloat2203 * i_248_.toFloat())))).toInt()
-                                val i_254_ = (LinkedListIterator.aFloat2111 + (ResourceProvider.aFloat3943 * i_248_.toFloat()) + (SmoothingBuffer.aFloat3242 * aShort5629.toFloat()) + (i_249_.toFloat() * GameDisplayManager.aFloat2836)).toInt()
+                                val i_250_ = ((aShort5591.toFloat() * CubemapTexture2dSourceStatics.aFloat8696) + ((i_248_.toFloat() * ParticleSystemStateStatics.aFloat2203) + ModelLightingConfigStatics.aFloat2555) + (SkyboxGradient.aFloat3935 * i_249_.toFloat())).toInt()
+                                val i_251_ = (LinkedListIteratorStatics.aFloat2111 + (i_248_.toFloat() * ResourceProviderStatics.aFloat3943) + (SmoothingBufferStatics.aFloat3242 * aShort5591.toFloat()) + (GameDisplayManager.aFloat2836 * i_249_.toFloat())).toInt()
+                                val i_252_ = (SpriteRenderableStatics.aFloat4720 + (i_248_.toFloat() * (NamedTimedNodeStatics.aFloat8784)) + (TextureLoaderUtil.aFloat3994 * aShort5591.toFloat()) + (CubeMapMaterialPassStatics.aFloat6304 * i_249_.toFloat())).toInt()
+                                val i_253_ = ((SkyboxGradient.aFloat3935 * i_249_.toFloat()) + ((CubemapTexture2dSourceStatics.aFloat8696 * aShort5629.toFloat()) + (ModelLightingConfigStatics.aFloat2555 + (ParticleSystemStateStatics.aFloat2203 * i_248_.toFloat())))).toInt()
+                                val i_254_ = (LinkedListIteratorStatics.aFloat2111 + (ResourceProviderStatics.aFloat3943 * i_248_.toFloat()) + (SmoothingBufferStatics.aFloat3242 * aShort5629.toFloat()) + (i_249_.toFloat() * GameDisplayManager.aFloat2836)).toInt()
                                 class318_sub3.anInt6405 = (aHa_Sub2_5598.anInt7853 - -(i_250_ * (aHa_Sub2_5598.anInt7771) / i))
                                 class318_sub3.anInt6402 = ((i_251_ * aHa_Sub2_5598.anInt7794 / i) + aHa_Sub2_5598.anInt7810)
                                 class318_sub3.anInt6404 = (aHa_Sub2_5598.anInt7810 + (i_254_ * aHa_Sub2_5598.anInt7794 / i))
-                                val i_255_ = ((i_249_.toFloat() * CubeMapMaterialPass.aFloat6304) + ((TextureLoaderUtil.aFloat3994 * aShort5629.toFloat()) + (((NamedTimedNode.aFloat8784) * i_248_.toFloat()) + SpriteRenderable.aFloat4720))).toInt()
+                                val i_255_ = ((i_249_.toFloat() * CubeMapMaterialPassStatics.aFloat6304) + ((TextureLoaderUtil.aFloat3994 * aShort5629.toFloat()) + (((NamedTimedNodeStatics.aFloat8784) * i_248_.toFloat()) + SpriteRenderableStatics.aFloat4720))).toInt()
                                 class318_sub3.anInt6406 = (aHa_Sub2_5598.anInt7853 + (i_253_ * aHa_Sub2_5598.anInt7771 / i))
                                 if (i_252_ >= aHa_Sub2_5598.anInt7826 || i_255_ >= (aHa_Sub2_5598.anInt7826)) {
                                     class318_sub3.aBoolean6401 = true
@@ -1177,7 +1237,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_235_ + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.Q(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ',' + i_235_ + ')'))
         }
     }
 
@@ -1194,9 +1254,9 @@ class OpenGlModel : AbstractModel {
             anIntArray5593!![i] = anIntArray5593!![i] shl 4
             anIntArray5644!![i] = anIntArray5644!![i] shl 4
         }
-        ScreenAnchorAlignment.anInt2880 = 0
-        ShaderProgram.anInt7275 = 0
-        SpotAnimDefinition.anInt2398 = 0
+        ScreenAnchorAlignmentStatics.anInt2880 = 0
+        ShaderProgramStatics.anInt7275 = 0
+        SpotAnimDefinitionStatics.anInt2398 = 0
         return true
     }
 
@@ -1272,7 +1332,7 @@ class OpenGlModel : AbstractModel {
                     aHoverActionEntry_5605!!.anByteBufferReader_1811 = null
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("paa.p(" + i + ',' + i_256_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_257_ != null) "{...}" else "null") + ',' + i_258_ + ',' + i_259_ + ',' + i_260_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.p(" + i + ',' + i_256_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + (if (var_terrainTile_257_ != null) "{...}" else "null") + ',' + i_258_ + ',' + i_259_ + ',' + i_260_ + ')'))
             }
             break
         } while (false)
@@ -1304,7 +1364,7 @@ class OpenGlModel : AbstractModel {
                 for (i_290_ in 0..<anInt5536) {
                     val class118 = aMapSceneTileDefinitionArray5621!![i_290_]!!
                     val class48 = aColourAdjustmentArray5596!![i_290_]!!
-                    class48.anInt858 = ((0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
+                    class48.anInt858 = ((0xffffff and (ParticleEmitterNodeStatics.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
                 }
             }
             if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
@@ -1602,9 +1662,9 @@ class OpenGlModel : AbstractModel {
                 if (!aBoolean5527) method692((-123).toByte())
                 val class101_sub3_350_ = abstractCameraTransform as ProjectionCameraTransform
                 TextureLoaderUtil.aFloat3994 = ((class101_sub3_350_.aFloat5754 * class101_sub3.aFloat5784) + ((class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3_350_.aFloat5769 * class101_sub3.aFloat5754)))
-                SpriteRenderable.aFloat4720 = (class101_sub3.aFloat5751 + ((class101_sub3.aFloat5756 * class101_sub3_350_.aFloat5747) + (class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5754) + (class101_sub3_350_.aFloat5751 * class101_sub3.aFloat5784)))
-                val f = (SpriteRenderable.aFloat4720 + TextureLoaderUtil.aFloat3994 * aShort5591.toFloat())
-                val f_351_ = (TextureLoaderUtil.aFloat3994 * aShort5629.toFloat() + SpriteRenderable.aFloat4720)
+                SpriteRenderableStatics.aFloat4720 = (class101_sub3.aFloat5751 + ((class101_sub3.aFloat5756 * class101_sub3_350_.aFloat5747) + (class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5754) + (class101_sub3_350_.aFloat5751 * class101_sub3.aFloat5784)))
+                val f = (SpriteRenderableStatics.aFloat4720 + TextureLoaderUtil.aFloat3994 * aShort5591.toFloat())
+                val f_351_ = (TextureLoaderUtil.aFloat3994 * aShort5629.toFloat() + SpriteRenderableStatics.aFloat4720)
                 val f_352_: Float
                 val f_353_: Float
                 if (f > f_351_) {
@@ -1615,10 +1675,10 @@ class OpenGlModel : AbstractModel {
                     f_353_ = f_351_ + aShort5634.toFloat()
                 }
                 if (!(aHa_Sub2_5598.aFloat7874 <= f_352_) && !(aHa_Sub2_5598.anInt7826.toFloat() >= f_353_)) {
-                    CubemapTexture2dSource.aFloat8696 = ((class101_sub3.aFloat5750 * class101_sub3_350_.aFloat5769) + (class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5770) + (class101_sub3.aFloat5781 * (class101_sub3_350_.aFloat5754)))
-                    ModelLightingConfig.aFloat2555 = (class101_sub3.aFloat5747 + ((class101_sub3.aFloat5781 * (class101_sub3_350_.aFloat5751)) + ((class101_sub3.aFloat5770 * (class101_sub3_350_.aFloat5747)) + ((class101_sub3_350_.aFloat5772) * (class101_sub3.aFloat5750)))))
-                    val f_354_ = (aShort5591.toFloat() * CubemapTexture2dSource.aFloat8696 + ModelLightingConfig.aFloat2555)
-                    val f_355_ = (aShort5629.toFloat() * CubemapTexture2dSource.aFloat8696 + ModelLightingConfig.aFloat2555)
+                    CubemapTexture2dSourceStatics.aFloat8696 = ((class101_sub3.aFloat5750 * class101_sub3_350_.aFloat5769) + (class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5770) + (class101_sub3.aFloat5781 * (class101_sub3_350_.aFloat5754)))
+                    ModelLightingConfigStatics.aFloat2555 = (class101_sub3.aFloat5747 + ((class101_sub3.aFloat5781 * (class101_sub3_350_.aFloat5751)) + ((class101_sub3.aFloat5770 * (class101_sub3_350_.aFloat5747)) + ((class101_sub3_350_.aFloat5772) * (class101_sub3.aFloat5750)))))
+                    val f_354_ = (aShort5591.toFloat() * CubemapTexture2dSourceStatics.aFloat8696 + ModelLightingConfigStatics.aFloat2555)
+                    val f_355_ = (aShort5629.toFloat() * CubemapTexture2dSourceStatics.aFloat8696 + ModelLightingConfigStatics.aFloat2555)
                     val f_356_: Float
                     val f_357_: Float
                     if (f_354_ > f_355_) {
@@ -1629,10 +1689,10 @@ class OpenGlModel : AbstractModel {
                         f_356_ = ((-aShort5634.toFloat() + f_354_) * aHa_Sub2_5598.anInt7771.toFloat())
                     }
                     if (!(aHa_Sub2_5598.aFloat7835 <= f_356_ / f_353_) && !(f_357_ / f_353_ <= aHa_Sub2_5598.aFloat7872)) {
-                        LinkedListIterator.aFloat2111 = ((class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5769) + ((class101_sub3_350_.aFloat5747) * class101_sub3.aFloat5761) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5751)) + class101_sub3.aFloat5772)
-                        SmoothingBuffer.aFloat3242 = ((class101_sub3.aFloat5761 * (class101_sub3_350_.aFloat5750)) + (class101_sub3.aFloat5769 * (class101_sub3_350_.aFloat5769)) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5754)))
-                        val f_358_ = (LinkedListIterator.aFloat2111 + SmoothingBuffer.aFloat3242 * aShort5591.toFloat())
-                        val f_359_ = (LinkedListIterator.aFloat2111 + aShort5629.toFloat() * SmoothingBuffer.aFloat3242)
+                        LinkedListIteratorStatics.aFloat2111 = ((class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5769) + ((class101_sub3_350_.aFloat5747) * class101_sub3.aFloat5761) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5751)) + class101_sub3.aFloat5772)
+                        SmoothingBufferStatics.aFloat3242 = ((class101_sub3.aFloat5761 * (class101_sub3_350_.aFloat5750)) + (class101_sub3.aFloat5769 * (class101_sub3_350_.aFloat5769)) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5754)))
+                        val f_358_ = (LinkedListIteratorStatics.aFloat2111 + SmoothingBufferStatics.aFloat3242 * aShort5591.toFloat())
+                        val f_359_ = (LinkedListIteratorStatics.aFloat2111 + aShort5629.toFloat() * SmoothingBufferStatics.aFloat3242)
                         val f_360_: Float
                         val f_361_: Float
                         if (f_358_ > f_359_) {
@@ -1644,11 +1704,11 @@ class OpenGlModel : AbstractModel {
                         }
                         if (!(f_361_ / f_353_ >= aHa_Sub2_5598.aFloat7830) && !(aHa_Sub2_5598.aFloat7836 >= f_360_ / f_353_)) {
                             if (class318_sub3 != null || aMapSceneTileDefinitionArray5621 != null) {
-                                CubeMapMaterialPass.aFloat6304 = (((class101_sub3_350_.aFloat5762) * (class101_sub3.aFloat5754)) + ((class101_sub3_350_.aFloat5781) * (class101_sub3.aFloat5756)) + ((class101_sub3_350_.aFloat5784) * (class101_sub3.aFloat5784)))
-                                NamedTimedNode.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_350_.aFloat5756)) + ((class101_sub3_350_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_350_.aFloat5761))))
+                                CubeMapMaterialPassStatics.aFloat6304 = (((class101_sub3_350_.aFloat5762) * (class101_sub3.aFloat5754)) + ((class101_sub3_350_.aFloat5781) * (class101_sub3.aFloat5756)) + ((class101_sub3_350_.aFloat5784) * (class101_sub3.aFloat5784)))
+                                NamedTimedNodeStatics.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_350_.aFloat5756)) + ((class101_sub3_350_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_350_.aFloat5761))))
                                 SkyboxGradient.aFloat3935 = (((class101_sub3.aFloat5781) * (class101_sub3_350_.aFloat5784)) + ((class101_sub3_350_.aFloat5762 * (class101_sub3.aFloat5750)) + (class101_sub3_350_.aFloat5781 * (class101_sub3.aFloat5770))))
-                                ResourceProvider.aFloat3943 = (((class101_sub3.aFloat5761) * (class101_sub3_350_.aFloat5770)) + ((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5769)) + ((class101_sub3_350_.aFloat5756) * (class101_sub3.aFloat5762)))
-                                ParticleSystemState.aFloat2203 = (((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5750)) + ((class101_sub3.aFloat5770) * class101_sub3_350_.aFloat5770) + ((class101_sub3.aFloat5781) * class101_sub3_350_.aFloat5756))
+                                ResourceProviderStatics.aFloat3943 = (((class101_sub3.aFloat5761) * (class101_sub3_350_.aFloat5770)) + ((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5769)) + ((class101_sub3_350_.aFloat5756) * (class101_sub3.aFloat5762)))
+                                ParticleSystemStateStatics.aFloat2203 = (((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5750)) + ((class101_sub3.aFloat5770) * class101_sub3_350_.aFloat5770) + ((class101_sub3.aFloat5781) * class101_sub3_350_.aFloat5756))
                                 GameDisplayManager.aFloat2836 = (((class101_sub3_350_.aFloat5784) * (class101_sub3.aFloat5762)) + (((class101_sub3.aFloat5769) * class101_sub3_350_.aFloat5762) + ((class101_sub3.aFloat5761) * (class101_sub3_350_.aFloat5781))))
                             }
                             if (class318_sub3 != null) {
@@ -1656,16 +1716,16 @@ class OpenGlModel : AbstractModel {
                                 var bool_362_ = true
                                 val i_363_ = aShort5540 - -aShort5586 shr 1
                                 val i_364_ = aShort5617 - -aShort5646 shr 1
-                                val i_365_ = ((i_364_.toFloat() * SkyboxGradient.aFloat3935) + ((ParticleSystemState.aFloat2203 * i_363_.toFloat()) + ModelLightingConfig.aFloat2555 + (aShort5591.toFloat() * (CubemapTexture2dSource.aFloat8696)))).toInt()
-                                val i_366_ = (LinkedListIterator.aFloat2111 + (i_363_.toFloat() * ResourceProvider.aFloat3943) + (aShort5591.toFloat() * SmoothingBuffer.aFloat3242) + (i_364_.toFloat() * GameDisplayManager.aFloat2836)).toInt()
-                                val i_367_ = ((NamedTimedNode.aFloat8784 * i_363_.toFloat()) + SpriteRenderable.aFloat4720 + (TextureLoaderUtil.aFloat3994 * aShort5591.toFloat()) + (CubeMapMaterialPass.aFloat6304 * i_364_.toFloat())).toInt()
+                                val i_365_ = ((i_364_.toFloat() * SkyboxGradient.aFloat3935) + ((ParticleSystemStateStatics.aFloat2203 * i_363_.toFloat()) + ModelLightingConfigStatics.aFloat2555 + (aShort5591.toFloat() * (CubemapTexture2dSourceStatics.aFloat8696)))).toInt()
+                                val i_366_ = (LinkedListIteratorStatics.aFloat2111 + (i_363_.toFloat() * ResourceProviderStatics.aFloat3943) + (aShort5591.toFloat() * SmoothingBufferStatics.aFloat3242) + (i_364_.toFloat() * GameDisplayManager.aFloat2836)).toInt()
+                                val i_367_ = ((NamedTimedNodeStatics.aFloat8784 * i_363_.toFloat()) + SpriteRenderableStatics.aFloat4720 + (TextureLoaderUtil.aFloat3994 * aShort5591.toFloat()) + (CubeMapMaterialPassStatics.aFloat6304 * i_364_.toFloat())).toInt()
                                 if (aHa_Sub2_5598.anInt7826 <= i_367_) {
                                     class318_sub3.anInt6405 = (i_365_ * (aHa_Sub2_5598.anInt7771) / i_367_ + (aHa_Sub2_5598.anInt7853))
                                     class318_sub3.anInt6402 = (i_366_ * (aHa_Sub2_5598.anInt7794) / i_367_ + (aHa_Sub2_5598.anInt7810))
                                 } else bool = true
-                                val i_368_ = (ModelLightingConfig.aFloat2555 + (ParticleSystemState.aFloat2203 * i_363_.toFloat()) + (CubemapTexture2dSource.aFloat8696 * aShort5629.toFloat()) + (SkyboxGradient.aFloat3935 * i_364_.toFloat())).toInt()
-                                val i_369_ = ((i_364_.toFloat() * GameDisplayManager.aFloat2836) + ((SmoothingBuffer.aFloat3242 * aShort5629.toFloat()) + (LinkedListIterator.aFloat2111 + (ResourceProvider.aFloat3943 * i_363_.toFloat())))).toInt()
-                                val i_370_ = ((CubeMapMaterialPass.aFloat6304 * i_364_.toFloat()) + ((i_363_.toFloat() * (NamedTimedNode.aFloat8784)) + SpriteRenderable.aFloat4720 + (aShort5629.toFloat() * TextureLoaderUtil.aFloat3994))).toInt()
+                                val i_368_ = (ModelLightingConfigStatics.aFloat2555 + (ParticleSystemStateStatics.aFloat2203 * i_363_.toFloat()) + (CubemapTexture2dSourceStatics.aFloat8696 * aShort5629.toFloat()) + (SkyboxGradient.aFloat3935 * i_364_.toFloat())).toInt()
+                                val i_369_ = ((i_364_.toFloat() * GameDisplayManager.aFloat2836) + ((SmoothingBufferStatics.aFloat3242 * aShort5629.toFloat()) + (LinkedListIteratorStatics.aFloat2111 + (ResourceProviderStatics.aFloat3943 * i_363_.toFloat())))).toInt()
+                                val i_370_ = ((CubeMapMaterialPassStatics.aFloat6304 * i_364_.toFloat()) + ((i_363_.toFloat() * (NamedTimedNodeStatics.aFloat8784)) + SpriteRenderableStatics.aFloat4720 + (aShort5629.toFloat() * TextureLoaderUtil.aFloat3994))).toInt()
                                 if (i_370_ >= aHa_Sub2_5598.anInt7826) {
                                     class318_sub3.anInt6406 = (i_368_ * (aHa_Sub2_5598.anInt7771) / i_370_ + (aHa_Sub2_5598.anInt7853))
                                     class318_sub3.anInt6404 = (i_369_ * (aHa_Sub2_5598.anInt7794) / i_370_ + (aHa_Sub2_5598.anInt7810))
@@ -1703,7 +1763,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 
@@ -1717,7 +1777,7 @@ class OpenGlModel : AbstractModel {
         if (aBoolean5555) {
             aBoolean5555 = false
             if (aModelFacePriorityNodeArray5640 == null && aWidgetRedrawRegionArray5541 == null && aMapSceneTileDefinitionArray5621 == null) {
-                if (anIntArray5543 != null && !GlShaderProgramHandle.method2659(123.toByte(), anInt5648, anInt5556)) {
+                if (anIntArray5543 != null && !GlShaderProgramHandleStatics.method2659(123.toByte(), anInt5648, anInt5556)) {
                     if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anByteBufferReader_1811 != null)) {
                         if (!aBoolean5527) method692((-123).toByte())
                         anIntArray5543 = null
@@ -1730,7 +1790,7 @@ class OpenGlModel : AbstractModel {
                         anIntArray5593 = null
                     }
                 }
-                if (anIntArray5644 != null && !ConfigDefinitionLoader.method1221(-3157, anInt5648, anInt5556)) {
+                if (anIntArray5644 != null && !ConfigDefinitionLoaderStatics.method1221(-3157, anInt5648, anInt5556)) {
                     if (aHoverActionEntry_5605 == null || (aHoverActionEntry_5605!!.anByteBufferReader_1811 != null)) {
                         if (!aBoolean5527) method692((-123).toByte())
                         anIntArray5644 = null
@@ -1741,7 +1801,7 @@ class OpenGlModel : AbstractModel {
                 aShortArray5649 = null
                 anIntArray5528 = null
             }
-            if (aByteArray5594 != null && !AnimatedModelRenderer.method989(anInt5648, -385, anInt5556)) {
+            if (aByteArray5594 != null && !AnimatedModelRendererStatics.method989(anInt5648, -385, anInt5556)) {
                 if (aHoverActionEntry_5563 == null) {
                     if (aHoverActionEntry_5610 == null || (aHoverActionEntry_5610!!.anByteBufferReader_1811 != null)) {
                         aByteArray5594 = null
@@ -1757,7 +1817,7 @@ class OpenGlModel : AbstractModel {
                     aShortArray5564 = aShortArray5583
                 }
             }
-            if (aShortArray5580 != null && !CacheIndexManager.method2358(-116, anInt5648, anInt5556)) {
+            if (aShortArray5580 != null && !CacheIndexManagerStatics.method2358(-116, anInt5648, anInt5556)) {
                 if (aHoverActionEntry_5610 == null || aHoverActionEntry_5610!!.anByteBufferReader_1811 != null) aShortArray5580 = null
                 else aBoolean5555 = true
             }
@@ -1765,7 +1825,7 @@ class OpenGlModel : AbstractModel {
                 if (aHoverActionEntry_5610 == null || aHoverActionEntry_5610!!.anByteBufferReader_1811 != null) aByteArray5542 = null
                 else aBoolean5555 = true
             }
-            if (aFloatArray5552 != null && !NodeDequeHolder.method877(anInt5648, anInt5556, (-127).toByte())) {
+            if (aFloatArray5552 != null && !NodeDequeHolderStatics.method877(anInt5648, anInt5556, (-127).toByte())) {
                 if (aHoverActionEntry_5620 != null && aHoverActionEntry_5620!!.anByteBufferReader_1811 == null) aBoolean5555 = true
                 else {
                     aFloatArray5571 = null
@@ -1777,7 +1837,7 @@ class OpenGlModel : AbstractModel {
                 if (aHoverActionEntry_5610 != null && aHoverActionEntry_5610!!.anByteBufferReader_1811 == null) aBoolean5555 = true
                 else aShortArray5601 = null
             }
-            if (aShortArray5592 != null && !CollisionFlagQuery.method724(anInt5648, anInt5556, 393216)) {
+            if (aShortArray5592 != null && !CollisionFlagQueryStatics.method724(anInt5648, anInt5556, 393216)) {
                 if ((aArchiveFileConditionWrapper_5575 != null && aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 == null) || aHoverActionEntry_5610 != null && (aHoverActionEntry_5610!!.anByteBufferReader_1811) == null) aBoolean5555 = true
                 else {
                     aShortArray5566 = null
@@ -1789,11 +1849,11 @@ class OpenGlModel : AbstractModel {
                 aShortArray5573 = null
                 anIntArrayArray5553 = null
             }
-            if (anIntArrayArray5539 != null && !WidgetRedrawTracker.method2332(anInt5556, 124.toByte(), anInt5648)) {
+            if (anIntArrayArray5539 != null && !WidgetRedrawTrackerStatics.method2332(anInt5556, 124.toByte(), anInt5648)) {
                 anIntArrayArray5539 = null
                 aShortArray5608 = null
             }
-            if (anIntArrayArray5627 != null && !RenderConfigFactory.method1633(false, anInt5648, anInt5556)) anIntArrayArray5627 = null
+            if (anIntArrayArray5627 != null && !RenderConfigFactoryStatics.method1633(false, anInt5648, anInt5556)) anIntArrayArray5627 = null
             if (anIntArray5626 != null && (anInt5648 and 0x800) == 0 && (anInt5648 and 0x40000) == 0) anIntArray5626 = null
         }
     }
@@ -1813,7 +1873,7 @@ class OpenGlModel : AbstractModel {
             for (i_383_ in 0..<anInt5536) {
                 val class118 = aMapSceneTileDefinitionArray5621!![i_383_]!!
                 val class48 = aColourAdjustmentArray5596!![i_383_]!!
-                class48.anInt858 = ((ParticleEmitterNode.anIntArray179!![(aShortArray5580!![class118.anInt1783].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class48.anInt858))
+                class48.anInt858 = ((ParticleEmitterNodeStatics.anIntArray179!![(aShortArray5580!![class118.anInt1783].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class48.anInt858))
             }
         }
         if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
@@ -1875,7 +1935,7 @@ class OpenGlModel : AbstractModel {
                     i++
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, "paa.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
+                throw SoundBankPatchStatics.method2929(runtimeexception, "paa.J(" + (if (abstractCameraTransform != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -1898,10 +1958,10 @@ class OpenGlModel : AbstractModel {
                 i_388_ = i_388_ shl 4
                 i_387_ = i_387_ shl 4
                 i_386_ = i_386_ shl 4
-                SpotAnimDefinition.anInt2398 = 0
+                SpotAnimDefinitionStatics.anInt2398 = 0
                 var i_391_ = 0
-                ScreenAnchorAlignment.anInt2880 = 0
-                ShaderProgram.anInt7275 = 0
+                ScreenAnchorAlignmentStatics.anInt2880 = 0
+                ShaderProgramStatics.anInt7275 = 0
                 for (i_392_ in 0..<i_390_) {
                     val i_393_ = `is`[i_392_]
                     if (i_393_ < anIntArrayArray5539!!.size) {
@@ -1909,22 +1969,22 @@ class OpenGlModel : AbstractModel {
                         var i_395_ = 0
                         while ((i_395_ < is_394_.size)) {
                             val i_396_ = is_394_[i_395_]
-                            ShaderProgram.anInt7275 += anIntArray5543!![i_396_]
-                            ScreenAnchorAlignment.anInt2880 += anIntArray5593!![i_396_]
+                            ShaderProgramStatics.anInt7275 += anIntArray5543!![i_396_]
+                            ScreenAnchorAlignmentStatics.anInt2880 += anIntArray5593!![i_396_]
                             i_391_++
-                            SpotAnimDefinition.anInt2398 += anIntArray5644!![i_396_]
+                            SpotAnimDefinitionStatics.anInt2398 += anIntArray5644!![i_396_]
                             i_395_++
                         }
                     }
                 }
                 if (i_391_ <= 0) {
-                    ScreenAnchorAlignment.anInt2880 = i_387_
-                    SpotAnimDefinition.anInt2398 = i_388_
-                    ShaderProgram.anInt7275 = i_386_
+                    ScreenAnchorAlignmentStatics.anInt2880 = i_387_
+                    SpotAnimDefinitionStatics.anInt2398 = i_388_
+                    ShaderProgramStatics.anInt7275 = i_386_
                 } else {
-                    ScreenAnchorAlignment.anInt2880 = i_387_ + ScreenAnchorAlignment.anInt2880 / i_391_
-                    ShaderProgram.anInt7275 = ShaderProgram.anInt7275 / i_391_ + i_386_
-                    SpotAnimDefinition.anInt2398 = i_388_ + SpotAnimDefinition.anInt2398 / i_391_
+                    ScreenAnchorAlignmentStatics.anInt2880 = i_387_ + ScreenAnchorAlignmentStatics.anInt2880 / i_391_
+                    ShaderProgramStatics.anInt7275 = ShaderProgramStatics.anInt7275 / i_391_ + i_386_
+                    SpotAnimDefinitionStatics.anInt2398 = i_388_ + SpotAnimDefinitionStatics.anInt2398 / i_391_
                 }
             } else if (i == 1) {
                 i_386_ = i_386_ shl 4
@@ -1954,66 +2014,66 @@ class OpenGlModel : AbstractModel {
                             var i_416_ = 0
                             while ((is_404_.size > i_416_)) {
                                 val i_417_ = is_404_[i_416_]
-                                anIntArray5543!![i_417_] -= ShaderProgram.anInt7275
-                                anIntArray5593!![i_417_] -= ScreenAnchorAlignment.anInt2880
-                                anIntArray5644!![i_417_] -= SpotAnimDefinition.anInt2398
+                                anIntArray5543!![i_417_] -= ShaderProgramStatics.anInt7275
+                                anIntArray5593!![i_417_] -= ScreenAnchorAlignmentStatics.anInt2880
+                                anIntArray5644!![i_417_] -= SpotAnimDefinitionStatics.anInt2398
                                 if (i_388_ != 0) {
-                                    val i_418_ = TrigLookupTables.anIntArray1207!![i_388_]
-                                    val i_419_ = TrigLookupTables.anIntArray1204!![i_388_]
+                                    val i_418_ = TrigLookupTablesStatics.anIntArray1207!![i_388_]
+                                    val i_419_ = TrigLookupTablesStatics.anIntArray1204!![i_388_]
                                     val i_420_ = ((anIntArray5543!![i_417_] * i_419_ + i_418_ * anIntArray5593!![i_417_] - -16383) shr 14)
                                     anIntArray5593!![i_417_] = (anIntArray5593!![i_417_] * i_419_ + -(i_418_ * anIntArray5543!![i_417_]) - -16383) shr 14
                                     anIntArray5543!![i_417_] = i_420_
                                 }
                                 if (i_386_ != 0) {
-                                    val i_421_ = TrigLookupTables.anIntArray1207!![i_386_]
-                                    val i_422_ = TrigLookupTables.anIntArray1204!![i_386_]
+                                    val i_421_ = TrigLookupTablesStatics.anIntArray1207!![i_386_]
+                                    val i_422_ = TrigLookupTablesStatics.anIntArray1204!![i_386_]
                                     val i_423_ = ((-(anIntArray5644!![i_417_] * i_421_) + (i_422_ * anIntArray5593!![i_417_] + 16383)) shr 14)
                                     anIntArray5644!![i_417_] = ((16383 + i_422_ * anIntArray5644!![i_417_] + i_421_ * anIntArray5593!![i_417_]) shr 14)
                                     anIntArray5593!![i_417_] = i_423_
                                 }
                                 if (i_387_ != 0) {
-                                    val i_424_ = TrigLookupTables.anIntArray1207!![i_387_]
-                                    val i_425_ = TrigLookupTables.anIntArray1204!![i_387_]
+                                    val i_424_ = TrigLookupTablesStatics.anIntArray1207!![i_387_]
+                                    val i_425_ = TrigLookupTablesStatics.anIntArray1204!![i_387_]
                                     val i_426_ = (i_424_ * anIntArray5644!![i_417_] - -(i_425_ * anIntArray5543!![i_417_]) + 16383) shr 14
                                     anIntArray5644!![i_417_] = (16383 + (anIntArray5644!![i_417_] * i_425_ - (anIntArray5543!![i_417_] * i_424_))) shr 14
                                     anIntArray5543!![i_417_] = i_426_
                                 }
-                                anIntArray5543!![i_417_] += ShaderProgram.anInt7275
-                                anIntArray5593!![i_417_] += ScreenAnchorAlignment.anInt2880
-                                anIntArray5644!![i_417_] += SpotAnimDefinition.anInt2398
+                                anIntArray5543!![i_417_] += ShaderProgramStatics.anInt7275
+                                anIntArray5593!![i_417_] += ScreenAnchorAlignmentStatics.anInt2880
+                                anIntArray5644!![i_417_] += SpotAnimDefinitionStatics.anInt2398
                                 i_416_++
                             }
                         } else {
                             var i_405_ = 0
                             while (is_404_.size > i_405_) {
                                 val i_406_ = is_404_[i_405_]
-                                anIntArray5543!![i_406_] -= ShaderProgram.anInt7275
-                                anIntArray5593!![i_406_] -= ScreenAnchorAlignment.anInt2880
-                                anIntArray5644!![i_406_] -= SpotAnimDefinition.anInt2398
+                                anIntArray5543!![i_406_] -= ShaderProgramStatics.anInt7275
+                                anIntArray5593!![i_406_] -= ScreenAnchorAlignmentStatics.anInt2880
+                                anIntArray5644!![i_406_] -= SpotAnimDefinitionStatics.anInt2398
                                 if (i_386_ != 0) {
-                                    val i_407_ = TrigLookupTables.anIntArray1207!![i_386_]
-                                    val i_408_ = TrigLookupTables.anIntArray1204!![i_386_]
+                                    val i_407_ = TrigLookupTablesStatics.anIntArray1207!![i_386_]
+                                    val i_408_ = TrigLookupTablesStatics.anIntArray1204!![i_386_]
                                     val i_409_ = ((16383 + (i_408_ * anIntArray5593!![i_406_] + -(anIntArray5644!![i_406_] * i_407_))) shr 14)
                                     anIntArray5644!![i_406_] = ((16383 + (anIntArray5593!![i_406_] * i_407_ - -(i_408_ * anIntArray5644!![i_406_]))) shr 14)
                                     anIntArray5593!![i_406_] = i_409_
                                 }
                                 if (i_388_ != 0) {
-                                    val i_410_ = TrigLookupTables.anIntArray1207!![i_388_]
-                                    val i_411_ = TrigLookupTables.anIntArray1204!![i_388_]
+                                    val i_410_ = TrigLookupTablesStatics.anIntArray1207!![i_388_]
+                                    val i_411_ = TrigLookupTablesStatics.anIntArray1204!![i_388_]
                                     val i_412_ = ((16383 + (anIntArray5543!![i_406_] * i_411_ + (i_410_ * anIntArray5593!![i_406_]))) shr 14)
                                     anIntArray5593!![i_406_] = (-(i_410_ * anIntArray5543!![i_406_]) + (anIntArray5593!![i_406_] * i_411_ - -16383)) shr 14
                                     anIntArray5543!![i_406_] = i_412_
                                 }
                                 if (i_387_ != 0) {
-                                    val i_413_ = TrigLookupTables.anIntArray1207!![i_387_]
-                                    val i_414_ = TrigLookupTables.anIntArray1204!![i_387_]
+                                    val i_413_ = TrigLookupTablesStatics.anIntArray1207!![i_387_]
+                                    val i_414_ = TrigLookupTablesStatics.anIntArray1204!![i_387_]
                                     val i_415_ = ((i_413_ * anIntArray5644!![i_406_] - (-(anIntArray5543!![i_406_] * i_414_) - 16383)) shr 14)
                                     anIntArray5644!![i_406_] = (anIntArray5644!![i_406_] * i_414_ + (-(i_413_ * anIntArray5543!![i_406_]) - -16383)) shr 14
                                     anIntArray5543!![i_406_] = i_415_
                                 }
-                                anIntArray5543!![i_406_] += ShaderProgram.anInt7275
-                                anIntArray5593!![i_406_] += ScreenAnchorAlignment.anInt2880
-                                anIntArray5644!![i_406_] += SpotAnimDefinition.anInt2398
+                                anIntArray5543!![i_406_] += ShaderProgramStatics.anInt7275
+                                anIntArray5593!![i_406_] += ScreenAnchorAlignmentStatics.anInt2880
+                                anIntArray5644!![i_406_] += SpotAnimDefinitionStatics.anInt2398
                                 i_405_++
                             }
                         }
@@ -2034,22 +2094,22 @@ class OpenGlModel : AbstractModel {
                                     val i_435_ = aShortArray5649!![i_434_] - 1
                                     if (i_435_ == -1) break
                                     if (i_388_ != 0) {
-                                        val i_436_ = TrigLookupTables.anIntArray1207!![i_388_]
-                                        val i_437_ = TrigLookupTables.anIntArray1204!![i_388_]
+                                        val i_436_ = TrigLookupTablesStatics.anIntArray1207!![i_388_]
+                                        val i_437_ = TrigLookupTablesStatics.anIntArray1204!![i_388_]
                                         val i_438_ = ((16383 + (i_437_ * aShortArray5564!![i_435_]) + (aShortArray5583!![i_435_] * i_436_)) shr 14)
                                         aShortArray5583!![i_435_] = ((16383 + (i_437_ * (aShortArray5583!![i_435_])) + -((aShortArray5564!![i_435_]) * i_436_)) shr 14).toShort()
                                         aShortArray5564!![i_435_] = i_438_.toShort()
                                     }
                                     if (i_386_ != 0) {
-                                        val i_439_ = TrigLookupTables.anIntArray1207!![i_386_]
-                                        val i_440_ = TrigLookupTables.anIntArray1204!![i_386_]
+                                        val i_439_ = TrigLookupTablesStatics.anIntArray1207!![i_386_]
+                                        val i_440_ = TrigLookupTablesStatics.anIntArray1204!![i_386_]
                                         val i_441_ = (i_440_ * aShortArray5583!![i_435_] - ((aShortArray5576!![i_435_] * i_439_) + -16383)) shr 14
                                         aShortArray5576!![i_435_] = ((16383 + ((i_440_ * (aShortArray5576!![i_435_])) + (i_439_ * (aShortArray5583!![i_435_])))) shr 14).toShort()
                                         aShortArray5583!![i_435_] = i_441_.toShort()
                                     }
                                     if (i_387_ != 0) {
-                                        val i_442_ = TrigLookupTables.anIntArray1207!![i_387_]
-                                        val i_443_ = TrigLookupTables.anIntArray1204!![i_387_]
+                                        val i_442_ = TrigLookupTablesStatics.anIntArray1207!![i_387_]
+                                        val i_443_ = TrigLookupTablesStatics.anIntArray1204!![i_387_]
                                         val i_444_ = ((16383 + (i_442_ * aShortArray5576!![i_435_]) + (aShortArray5564!![i_435_] * i_443_)) shr 14)
                                         aShortArray5576!![i_435_] = ((16383 + (-((aShortArray5564!![i_435_]) * i_442_) + ((aShortArray5576!![i_435_]) * i_443_))) shr 14).toShort()
                                         aShortArray5564!![i_435_] = i_444_.toShort()
@@ -2069,15 +2129,15 @@ class OpenGlModel : AbstractModel {
                         val is_447_ = anIntArrayArray5539!![i_446_]!!
                         for (i_448_ in is_447_.indices) {
                             val i_449_ = is_447_[i_448_]
-                            anIntArray5543!![i_449_] -= ShaderProgram.anInt7275
-                            anIntArray5593!![i_449_] -= ScreenAnchorAlignment.anInt2880
-                            anIntArray5644!![i_449_] -= SpotAnimDefinition.anInt2398
+                            anIntArray5543!![i_449_] -= ShaderProgramStatics.anInt7275
+                            anIntArray5593!![i_449_] -= ScreenAnchorAlignmentStatics.anInt2880
+                            anIntArray5644!![i_449_] -= SpotAnimDefinitionStatics.anInt2398
                             anIntArray5543!![i_449_] = i_386_ * anIntArray5543!![i_449_] shr 7
                             anIntArray5593!![i_449_] = anIntArray5593!![i_449_] * i_387_ shr 7
                             anIntArray5644!![i_449_] = anIntArray5644!![i_449_] * i_388_ shr 7
-                            anIntArray5543!![i_449_] += ShaderProgram.anInt7275
-                            anIntArray5593!![i_449_] += ScreenAnchorAlignment.anInt2880
-                            anIntArray5644!![i_449_] += SpotAnimDefinition.anInt2398
+                            anIntArray5543!![i_449_] += ShaderProgramStatics.anInt7275
+                            anIntArray5593!![i_449_] += ScreenAnchorAlignmentStatics.anInt2880
+                            anIntArray5644!![i_449_] += SpotAnimDefinitionStatics.anInt2398
                         }
                     }
                 }
@@ -2128,7 +2188,7 @@ class OpenGlModel : AbstractModel {
                                 } else i_464_ = 0
                                 if (i_465_ < 0) i_465_ = 0
                                 else if (i_465_ > 127) i_465_ = 127
-                                aShortArray5580!![i_461_] = (BoundsConstraintEntry.method2057((BoundsConstraintEntry.method2057(i_464_ shl 7, i_463_ shl 10)), i_465_)).toShort()
+                                aShortArray5580!![i_461_] = (BoundsConstraintEntryStatics.method2057((BoundsConstraintEntryStatics.method2057(i_464_ shl 7, i_463_ shl 10)), i_465_)).toShort()
                             }
                             if (is_459_.size > 0 && aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
                         }
@@ -2139,7 +2199,7 @@ class OpenGlModel : AbstractModel {
                         while (anInt5536 > i_466_) {
                             val class118 = aMapSceneTileDefinitionArray5621!![i_466_]!!
                             val class48 = aColourAdjustmentArray5596!![i_466_]!!
-                            class48.anInt858 = (0xffffff and (ParticleEmitterNode.anIntArray179!![(aShortArray5580!![(class118.anInt1783)]).toInt() and 0xffff]) or (0xffffff.inv() and class48.anInt858))
+                            class48.anInt858 = (0xffffff and (ParticleEmitterNodeStatics.anIntArray179!![(aShortArray5580!![(class118.anInt1783)]).toInt() and 0xffff]) or (0xffffff.inv() and class48.anInt858))
                             i_466_++
                         }
                     }
@@ -2191,7 +2251,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.BB(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_386_ + ',' + i_387_ + ',' + i_388_ + ',' + i_389_ + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.BB(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_386_ + ',' + i_387_ + ',' + i_388_ + ',' + i_389_ + ',' + bool + ')'))
         }
     }
 
@@ -2209,24 +2269,24 @@ class OpenGlModel : AbstractModel {
     public override fun P(i: Int, i_479_: Int, i_480_: Int, i_481_: Int) {
         anInt5567++
         if (i == 0) {
-            ShaderProgram.anInt7275 = 0
-            SpotAnimDefinition.anInt2398 = 0
-            ScreenAnchorAlignment.anInt2880 = 0
+            ShaderProgramStatics.anInt7275 = 0
+            SpotAnimDefinitionStatics.anInt2398 = 0
+            ScreenAnchorAlignmentStatics.anInt2880 = 0
             var i_482_ = 0
             for (i_483_ in 0..<anInt5557) {
-                ShaderProgram.anInt7275 += anIntArray5543!![i_483_]
-                ScreenAnchorAlignment.anInt2880 += anIntArray5593!![i_483_]
+                ShaderProgramStatics.anInt7275 += anIntArray5543!![i_483_]
+                ScreenAnchorAlignmentStatics.anInt2880 += anIntArray5593!![i_483_]
                 i_482_++
-                SpotAnimDefinition.anInt2398 += anIntArray5644!![i_483_]
+                SpotAnimDefinitionStatics.anInt2398 += anIntArray5644!![i_483_]
             }
             if (i_482_ <= 0) {
-                ScreenAnchorAlignment.anInt2880 = i_480_
-                SpotAnimDefinition.anInt2398 = i_481_
-                ShaderProgram.anInt7275 = i_479_
+                ScreenAnchorAlignmentStatics.anInt2880 = i_480_
+                SpotAnimDefinitionStatics.anInt2398 = i_481_
+                ShaderProgramStatics.anInt7275 = i_479_
             } else {
-                ScreenAnchorAlignment.anInt2880 = ScreenAnchorAlignment.anInt2880 / i_482_ - -i_480_
-                ShaderProgram.anInt7275 = i_479_ + ShaderProgram.anInt7275 / i_482_
-                SpotAnimDefinition.anInt2398 = SpotAnimDefinition.anInt2398 / i_482_ + i_481_
+                ScreenAnchorAlignmentStatics.anInt2880 = ScreenAnchorAlignmentStatics.anInt2880 / i_482_ - -i_480_
+                ShaderProgramStatics.anInt7275 = i_479_ + ShaderProgramStatics.anInt7275 / i_482_
+                SpotAnimDefinitionStatics.anInt2398 = SpotAnimDefinitionStatics.anInt2398 / i_482_ + i_481_
             }
         } else if (i == 1) {
             for (i_484_ in 0..<anInt5557) {
@@ -2236,45 +2296,45 @@ class OpenGlModel : AbstractModel {
             }
         } else if (i == 2) {
             for (i_485_ in 0..<anInt5557) {
-                anIntArray5543!![i_485_] -= ShaderProgram.anInt7275
-                anIntArray5593!![i_485_] -= ScreenAnchorAlignment.anInt2880
-                anIntArray5644!![i_485_] -= SpotAnimDefinition.anInt2398
+                anIntArray5543!![i_485_] -= ShaderProgramStatics.anInt7275
+                anIntArray5593!![i_485_] -= ScreenAnchorAlignmentStatics.anInt2880
+                anIntArray5644!![i_485_] -= SpotAnimDefinitionStatics.anInt2398
                 if (i_481_ != 0) {
-                    val i_486_ = TrigLookupTables.anIntArray1207!![i_481_]
-                    val i_487_ = TrigLookupTables.anIntArray1204!![i_481_]
+                    val i_486_ = TrigLookupTablesStatics.anIntArray1207!![i_481_]
+                    val i_487_ = TrigLookupTablesStatics.anIntArray1204!![i_481_]
                     val i_488_ = (16383 + (i_487_ * anIntArray5543!![i_485_] + anIntArray5593!![i_485_] * i_486_) shr 14)
                     anIntArray5593!![i_485_] = ((-(anIntArray5543!![i_485_] * i_486_) + anIntArray5593!![i_485_] * i_487_ + 16383) shr 14)
                     anIntArray5543!![i_485_] = i_488_
                 }
                 if (i_479_ != 0) {
-                    val i_489_ = TrigLookupTables.anIntArray1207!![i_479_]
-                    val i_490_ = TrigLookupTables.anIntArray1204!![i_479_]
+                    val i_489_ = TrigLookupTablesStatics.anIntArray1207!![i_479_]
+                    val i_490_ = TrigLookupTablesStatics.anIntArray1204!![i_479_]
                     val i_491_ = ((-(anIntArray5644!![i_485_] * i_489_) + i_490_ * anIntArray5593!![i_485_] + 16383) shr 14)
                     anIntArray5644!![i_485_] = ((i_489_ * anIntArray5593!![i_485_] - (-(i_490_ * anIntArray5644!![i_485_]) + -16383)) shr 14)
                     anIntArray5593!![i_485_] = i_491_
                 }
                 if (i_480_ != 0) {
-                    val i_492_ = TrigLookupTables.anIntArray1207!![i_480_]
-                    val i_493_ = TrigLookupTables.anIntArray1204!![i_480_]
+                    val i_492_ = TrigLookupTablesStatics.anIntArray1207!![i_480_]
+                    val i_493_ = TrigLookupTablesStatics.anIntArray1204!![i_480_]
                     val i_494_ = (16383 + (anIntArray5644!![i_485_] * i_492_ - -(i_493_ * anIntArray5543!![i_485_])) shr 14)
                     anIntArray5644!![i_485_] = (16383 + (-(anIntArray5543!![i_485_] * i_492_) + i_493_ * anIntArray5644!![i_485_]) shr 14)
                     anIntArray5543!![i_485_] = i_494_
                 }
-                anIntArray5543!![i_485_] += ShaderProgram.anInt7275
-                anIntArray5593!![i_485_] += ScreenAnchorAlignment.anInt2880
-                anIntArray5644!![i_485_] += SpotAnimDefinition.anInt2398
+                anIntArray5543!![i_485_] += ShaderProgramStatics.anInt7275
+                anIntArray5593!![i_485_] += ScreenAnchorAlignmentStatics.anInt2880
+                anIntArray5644!![i_485_] += SpotAnimDefinitionStatics.anInt2398
             }
         } else if (i == 3) {
             for (i_495_ in 0..<anInt5557) {
-                anIntArray5543!![i_495_] -= ShaderProgram.anInt7275
-                anIntArray5593!![i_495_] -= ScreenAnchorAlignment.anInt2880
-                anIntArray5644!![i_495_] -= SpotAnimDefinition.anInt2398
+                anIntArray5543!![i_495_] -= ShaderProgramStatics.anInt7275
+                anIntArray5593!![i_495_] -= ScreenAnchorAlignmentStatics.anInt2880
+                anIntArray5644!![i_495_] -= SpotAnimDefinitionStatics.anInt2398
                 anIntArray5543!![i_495_] = i_479_ * anIntArray5543!![i_495_] / 128
                 anIntArray5593!![i_495_] = i_480_ * anIntArray5593!![i_495_] / 128
                 anIntArray5644!![i_495_] = anIntArray5644!![i_495_] * i_481_ / 128
-                anIntArray5543!![i_495_] += ShaderProgram.anInt7275
-                anIntArray5593!![i_495_] += ScreenAnchorAlignment.anInt2880
-                anIntArray5644!![i_495_] += SpotAnimDefinition.anInt2398
+                anIntArray5543!![i_495_] += ShaderProgramStatics.anInt7275
+                anIntArray5593!![i_495_] += ScreenAnchorAlignmentStatics.anInt2880
+                anIntArray5644!![i_495_] += SpotAnimDefinitionStatics.anInt2398
             }
         } else if (i == 5) {
             for (i_496_ in 0..<anInt5632) {
@@ -2308,7 +2368,7 @@ class OpenGlModel : AbstractModel {
                 if (i_503_ >= 0) {
                     if (i_503_ > 127) i_503_ = 127
                 } else i_503_ = 0
-                aShortArray5580!![i_499_] = (BoundsConstraintEntry.method2057(i_503_, BoundsConstraintEntry.method2057(i_502_ shl 7, i_501_ shl 10))).toShort()
+                aShortArray5580!![i_499_] = (BoundsConstraintEntryStatics.method2057(i_503_, BoundsConstraintEntryStatics.method2057(i_502_ shl 7, i_501_ shl 10))).toShort()
                 i_499_++
             }
             if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
@@ -2316,7 +2376,7 @@ class OpenGlModel : AbstractModel {
                 for (i_504_ in 0..<anInt5536) {
                     val class118 = aMapSceneTileDefinitionArray5621!![i_504_]!!
                     val class48 = aColourAdjustmentArray5596!![i_504_]!!
-                    class48.anInt858 = (((ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()]) and 0xffffff) or (class48.anInt858 and 0xffffff.inv()))
+                    class48.anInt858 = (((ParticleEmitterNodeStatics.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()]) and 0xffffff) or (class48.anInt858 and 0xffffff.inv()))
                 }
             }
         } else if (i == 8) {
@@ -2407,7 +2467,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.za(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + i + ',' + bool + ')'))
         }
     }
 
@@ -2423,9 +2483,9 @@ class OpenGlModel : AbstractModel {
                 i_512_ = i_512_ shl 4
                 i_510_ = i_510_ shl 4
                 var i_516_ = 0
-                ShaderProgram.anInt7275 = 0
-                ScreenAnchorAlignment.anInt2880 = 0
-                SpotAnimDefinition.anInt2398 = 0
+                ShaderProgramStatics.anInt7275 = 0
+                ScreenAnchorAlignmentStatics.anInt2880 = 0
+                SpotAnimDefinitionStatics.anInt2398 = 0
                 var i_517_ = 0
                 while (i_515_ > i_517_) {
                     val i_518_ = `is`[i_517_]
@@ -2434,24 +2494,24 @@ class OpenGlModel : AbstractModel {
                         for (i_520_ in is_519_.indices) {
                             val i_521_ = is_519_[i_520_]
                             if (aShortArray5608 == null || (i_513_ and aShortArray5608!![i_521_].toInt()) != 0) {
-                                ShaderProgram.anInt7275 += anIntArray5543!![i_521_]
-                                ScreenAnchorAlignment.anInt2880 += anIntArray5593!![i_521_]
+                                ShaderProgramStatics.anInt7275 += anIntArray5543!![i_521_]
+                                ScreenAnchorAlignmentStatics.anInt2880 += anIntArray5593!![i_521_]
                                 i_516_++
-                                SpotAnimDefinition.anInt2398 += anIntArray5644!![i_521_]
+                                SpotAnimDefinitionStatics.anInt2398 += anIntArray5644!![i_521_]
                             }
                         }
                     }
                     i_517_++
                 }
                 if (i_516_ <= 0) {
-                    ShaderProgram.anInt7275 = i_510_
-                    SpotAnimDefinition.anInt2398 = i_512_
-                    ScreenAnchorAlignment.anInt2880 = i_511_
+                    ShaderProgramStatics.anInt7275 = i_510_
+                    SpotAnimDefinitionStatics.anInt2398 = i_512_
+                    ScreenAnchorAlignmentStatics.anInt2880 = i_511_
                 } else {
-                    ShaderProgram.anInt7275 = i_510_ + ShaderProgram.anInt7275 / i_516_
-                    ScreenAnchorAlignment.anInt2880 = ScreenAnchorAlignment.anInt2880 / i_516_ - -i_511_
-                    SpotAnimDefinition.anInt2398 = i_512_ + SpotAnimDefinition.anInt2398 / i_516_
-                    StreamingResourceRequest.aBoolean10450 = true
+                    ShaderProgramStatics.anInt7275 = i_510_ + ShaderProgramStatics.anInt7275 / i_516_
+                    ScreenAnchorAlignmentStatics.anInt2880 = ScreenAnchorAlignmentStatics.anInt2880 / i_516_ - -i_511_
+                    SpotAnimDefinitionStatics.anInt2398 = i_512_ + SpotAnimDefinitionStatics.anInt2398 / i_516_
+                    StreamingResourceRequestStatics.aBoolean10450 = true
                 }
             } else if (i == 1) {
                 if (is_514_ != null) {
@@ -2492,33 +2552,33 @@ class OpenGlModel : AbstractModel {
                             while (is_532_.size > i_533_) {
                                 val i_534_ = is_532_[i_533_]
                                 if (aShortArray5608 == null || ((i_513_ and aShortArray5608!![i_534_].toInt()) != 0)) {
-                                    anIntArray5543!![i_534_] -= ShaderProgram.anInt7275
-                                    anIntArray5593!![i_534_] -= ScreenAnchorAlignment.anInt2880
-                                    anIntArray5644!![i_534_] -= SpotAnimDefinition.anInt2398
+                                    anIntArray5543!![i_534_] -= ShaderProgramStatics.anInt7275
+                                    anIntArray5593!![i_534_] -= ScreenAnchorAlignmentStatics.anInt2880
+                                    anIntArray5644!![i_534_] -= SpotAnimDefinitionStatics.anInt2398
                                     if (i_512_ != 0) {
-                                        val i_535_ = TrigLookupTables.anIntArray1207!![i_512_]
-                                        val i_536_ = TrigLookupTables.anIntArray1204!![i_512_]
+                                        val i_535_ = TrigLookupTablesStatics.anIntArray1207!![i_512_]
+                                        val i_536_ = TrigLookupTablesStatics.anIntArray1204!![i_512_]
                                         val i_537_ = ((i_535_ * anIntArray5593!![i_534_] - (-(anIntArray5543!![i_534_] * i_536_) - 16383)) shr 14)
                                         anIntArray5593!![i_534_] = (-(anIntArray5543!![i_534_] * i_535_) + (anIntArray5593!![i_534_] * i_536_) + 16383) shr 14
                                         anIntArray5543!![i_534_] = i_537_
                                     }
                                     if (i_510_ != 0) {
-                                        val i_538_ = TrigLookupTables.anIntArray1207!![i_510_]
-                                        val i_539_ = TrigLookupTables.anIntArray1204!![i_510_]
+                                        val i_538_ = TrigLookupTablesStatics.anIntArray1207!![i_510_]
+                                        val i_539_ = TrigLookupTablesStatics.anIntArray1204!![i_510_]
                                         val i_540_ = ((-(anIntArray5644!![i_534_] * i_538_) + (i_539_ * anIntArray5593!![i_534_]) + 16383) shr 14)
                                         anIntArray5644!![i_534_] = (16383 + ((i_538_ * anIntArray5593!![i_534_]) + (anIntArray5644!![i_534_] * i_539_))) shr 14
                                         anIntArray5593!![i_534_] = i_540_
                                     }
                                     if (i_511_ != 0) {
-                                        val i_541_ = TrigLookupTables.anIntArray1207!![i_511_]
-                                        val i_542_ = TrigLookupTables.anIntArray1204!![i_511_]
+                                        val i_541_ = TrigLookupTablesStatics.anIntArray1207!![i_511_]
+                                        val i_542_ = TrigLookupTablesStatics.anIntArray1204!![i_511_]
                                         val i_543_ = ((i_541_ * anIntArray5644!![i_534_] + ((i_542_ * anIntArray5543!![i_534_]) - -16383)) shr 14)
                                         anIntArray5644!![i_534_] = ((16383 + ((anIntArray5644!![i_534_] * i_542_) + -(anIntArray5543!![i_534_] * i_541_))) shr 14)
                                         anIntArray5543!![i_534_] = i_543_
                                     }
-                                    anIntArray5543!![i_534_] += ShaderProgram.anInt7275
-                                    anIntArray5593!![i_534_] += ScreenAnchorAlignment.anInt2880
-                                    anIntArray5644!![i_534_] += SpotAnimDefinition.anInt2398
+                                    anIntArray5543!![i_534_] += ShaderProgramStatics.anInt7275
+                                    anIntArray5593!![i_534_] += ScreenAnchorAlignmentStatics.anInt2880
+                                    anIntArray5644!![i_534_] += SpotAnimDefinitionStatics.anInt2398
                                 }
                                 i_533_++
                             }
@@ -2541,22 +2601,22 @@ class OpenGlModel : AbstractModel {
                                             val i_552_ = aShortArray5649!![i_551_] + -1
                                             if (i_552_ == -1) break
                                             if (i_512_ != 0) {
-                                                val i_553_ = (TrigLookupTables.anIntArray1207!![i_512_])
-                                                val i_554_ = (TrigLookupTables.anIntArray1204!![i_512_])
+                                                val i_553_ = (TrigLookupTablesStatics.anIntArray1207!![i_512_])
+                                                val i_554_ = (TrigLookupTablesStatics.anIntArray1204!![i_512_])
                                                 val i_555_ = ((16383 + (aShortArray5564!![i_552_]) * i_554_ + (aShortArray5583!![i_552_]) * i_553_) shr 14)
                                                 aShortArray5583!![i_552_] = ((16383 + ((i_554_ * (aShortArray5583!![i_552_])) + -(i_553_ * (aShortArray5564!![i_552_])))) shr 14).toShort()
                                                 aShortArray5564!![i_552_] = i_555_.toShort()
                                             }
                                             if (i_510_ != 0) {
-                                                val i_556_ = (TrigLookupTables.anIntArray1207!![i_510_])
-                                                val i_557_ = (TrigLookupTables.anIntArray1204!![i_510_])
+                                                val i_556_ = (TrigLookupTablesStatics.anIntArray1207!![i_510_])
+                                                val i_557_ = (TrigLookupTablesStatics.anIntArray1204!![i_510_])
                                                 val i_558_ = ((16383 + (-(i_556_ * (aShortArray5576!![i_552_])) + ((aShortArray5583!![i_552_]) * i_557_))) shr 14)
                                                 aShortArray5576!![i_552_] = (((i_556_ * (aShortArray5583!![i_552_])) + (i_557_ * (aShortArray5576!![i_552_])) + 16383) shr 14).toShort()
                                                 aShortArray5583!![i_552_] = i_558_.toShort()
                                             }
                                             if (i_511_ != 0) {
-                                                val i_559_ = (TrigLookupTables.anIntArray1207!![i_511_])
-                                                val i_560_ = (TrigLookupTables.anIntArray1204!![i_511_])
+                                                val i_559_ = (TrigLookupTablesStatics.anIntArray1207!![i_511_])
+                                                val i_560_ = (TrigLookupTablesStatics.anIntArray1204!![i_511_])
                                                 val i_561_ = ((16383 + (i_560_ * (aShortArray5564!![i_552_])) + (i_559_ * (aShortArray5576!![i_552_]))) shr 14)
                                                 aShortArray5576!![i_552_] = ((((aShortArray5576!![i_552_]) * i_560_) + -(i_559_ * (aShortArray5564!![i_552_])) + 16383) shr 14).toShort()
                                                 aShortArray5564!![i_552_] = i_561_.toShort()
@@ -2578,25 +2638,25 @@ class OpenGlModel : AbstractModel {
                     val i_565_ = is_514_[12] shl 4
                     val i_566_ = is_514_[13] shl 4
                     val i_567_ = is_514_[14] shl 4
-                    if (StreamingResourceRequest.aBoolean10450) {
-                        var i_568_ = ((ShaderProgram.anInt7275 * is_514_[0] - -(is_514_[3] * ScreenAnchorAlignment.anInt2880) - -(is_514_[6] * SpotAnimDefinition.anInt2398) - -8192) shr 14)
-                        var i_569_ = ((is_514_[1] * ShaderProgram.anInt7275 - -(ScreenAnchorAlignment.anInt2880 * is_514_[4]) - (-(is_514_[7] * SpotAnimDefinition.anInt2398) - 8192)) shr 14)
+                    if (StreamingResourceRequestStatics.aBoolean10450) {
+                        var i_568_ = ((ShaderProgramStatics.anInt7275 * is_514_[0] - -(is_514_[3] * ScreenAnchorAlignmentStatics.anInt2880) - -(is_514_[6] * SpotAnimDefinitionStatics.anInt2398) - -8192) shr 14)
+                        var i_569_ = ((is_514_[1] * ShaderProgramStatics.anInt7275 - -(ScreenAnchorAlignmentStatics.anInt2880 * is_514_[4]) - (-(is_514_[7] * SpotAnimDefinitionStatics.anInt2398) - 8192)) shr 14)
                         i_568_ += i_565_
                         i_569_ += i_566_
-                        var i_570_ = (8192 + (SpotAnimDefinition.anInt2398 * is_514_[8] + is_514_[2] * ShaderProgram.anInt7275 + is_514_[5] * ScreenAnchorAlignment.anInt2880) shr 14)
+                        var i_570_ = (8192 + (SpotAnimDefinitionStatics.anInt2398 * is_514_[8] + is_514_[2] * ShaderProgramStatics.anInt7275 + is_514_[5] * ScreenAnchorAlignmentStatics.anInt2880) shr 14)
                         i_570_ += i_567_
-                        ShaderProgram.anInt7275 = i_568_
-                        ScreenAnchorAlignment.anInt2880 = i_569_
-                        SpotAnimDefinition.anInt2398 = i_570_
-                        StreamingResourceRequest.aBoolean10450 = false
+                        ShaderProgramStatics.anInt7275 = i_568_
+                        ScreenAnchorAlignmentStatics.anInt2880 = i_569_
+                        SpotAnimDefinitionStatics.anInt2398 = i_570_
+                        StreamingResourceRequestStatics.aBoolean10450 = false
                     }
                     val is_571_ = IntArray(9)
-                    val i_572_ = TrigLookupTables.anIntArray1204!![i_510_]
-                    val i_573_ = TrigLookupTables.anIntArray1207!![i_510_]
-                    val i_574_ = TrigLookupTables.anIntArray1204!![i_511_]
-                    val i_575_ = TrigLookupTables.anIntArray1207!![i_511_]
-                    val i_576_ = TrigLookupTables.anIntArray1204!![i_512_]
-                    val i_577_ = TrigLookupTables.anIntArray1207!![i_512_]
+                    val i_572_ = TrigLookupTablesStatics.anIntArray1204!![i_510_]
+                    val i_573_ = TrigLookupTablesStatics.anIntArray1207!![i_510_]
+                    val i_574_ = TrigLookupTablesStatics.anIntArray1204!![i_511_]
+                    val i_575_ = TrigLookupTablesStatics.anIntArray1207!![i_511_]
+                    val i_576_ = TrigLookupTablesStatics.anIntArray1204!![i_512_]
+                    val i_577_ = TrigLookupTablesStatics.anIntArray1207!![i_512_]
                     val i_578_ = 8192 + i_576_ * i_573_ shr 14
                     val i_579_ = 8192 + i_573_ * i_577_ shr 14
                     is_571_[6] = (8192 + (i_579_ * i_574_ + i_576_ * -i_575_) shr 14)
@@ -2608,12 +2668,12 @@ class OpenGlModel : AbstractModel {
                     is_571_[0] = (8192 + (i_575_ * i_579_ + i_576_ * i_574_) shr 14)
                     is_571_[7] = (8192 + i_574_ * i_578_ + i_577_ * i_575_ shr 14)
                     is_571_[2] = i_575_ * i_572_ - -8192 shr 14
-                    val i_580_ = ((is_571_[1] * -ScreenAnchorAlignment.anInt2880 + -ShaderProgram.anInt7275 * is_571_[0] - (-(-SpotAnimDefinition.anInt2398 * is_571_[2]) + -8192)) shr 14)
-                    val i_581_ = ((-ShaderProgram.anInt7275 * is_571_[3] + is_571_[4] * -ScreenAnchorAlignment.anInt2880 - -(is_571_[5] * -SpotAnimDefinition.anInt2398) + 8192) shr 14)
-                    val i_582_ = ((-SpotAnimDefinition.anInt2398 * is_571_[8] + (is_571_[6] * -ShaderProgram.anInt7275 - -(is_571_[7] * -ScreenAnchorAlignment.anInt2880)) - -8192) shr 14)
-                    val i_583_ = i_580_ - -ShaderProgram.anInt7275
-                    val i_584_ = i_581_ - -ScreenAnchorAlignment.anInt2880
-                    val i_585_ = SpotAnimDefinition.anInt2398 + i_582_
+                    val i_580_ = ((is_571_[1] * -ScreenAnchorAlignmentStatics.anInt2880 + -ShaderProgramStatics.anInt7275 * is_571_[0] - (-(-SpotAnimDefinitionStatics.anInt2398 * is_571_[2]) + -8192)) shr 14)
+                    val i_581_ = ((-ShaderProgramStatics.anInt7275 * is_571_[3] + is_571_[4] * -ScreenAnchorAlignmentStatics.anInt2880 - -(is_571_[5] * -SpotAnimDefinitionStatics.anInt2398) + 8192) shr 14)
+                    val i_582_ = ((-SpotAnimDefinitionStatics.anInt2398 * is_571_[8] + (is_571_[6] * -ShaderProgramStatics.anInt7275 - -(is_571_[7] * -ScreenAnchorAlignmentStatics.anInt2880)) - -8192) shr 14)
+                    val i_583_ = i_580_ - -ShaderProgramStatics.anInt7275
+                    val i_584_ = i_581_ - -ScreenAnchorAlignmentStatics.anInt2880
+                    val i_585_ = SpotAnimDefinitionStatics.anInt2398 + i_582_
                     val is_586_ = IntArray(9)
                     for (i_587_ in 0..2) {
                         for (i_588_ in 0..2) {
@@ -2676,15 +2736,15 @@ class OpenGlModel : AbstractModel {
                             while ((i_651_ < is_650_.size)) {
                                 val i_652_ = is_650_[i_651_]
                                 if (aShortArray5608 == null || ((i_513_ and aShortArray5608!![i_652_].toInt()) != 0)) {
-                                    anIntArray5543!![i_652_] -= ShaderProgram.anInt7275
-                                    anIntArray5593!![i_652_] -= ScreenAnchorAlignment.anInt2880
-                                    anIntArray5644!![i_652_] -= SpotAnimDefinition.anInt2398
+                                    anIntArray5543!![i_652_] -= ShaderProgramStatics.anInt7275
+                                    anIntArray5593!![i_652_] -= ScreenAnchorAlignmentStatics.anInt2880
+                                    anIntArray5644!![i_652_] -= SpotAnimDefinitionStatics.anInt2398
                                     anIntArray5543!![i_652_] = (anIntArray5543!![i_652_] * i_510_ shr 7)
                                     anIntArray5593!![i_652_] = (anIntArray5593!![i_652_] * i_511_ shr 7)
                                     anIntArray5644!![i_652_] = (i_512_ * anIntArray5644!![i_652_] shr 7)
-                                    anIntArray5543!![i_652_] += ShaderProgram.anInt7275
-                                    anIntArray5593!![i_652_] += ScreenAnchorAlignment.anInt2880
-                                    anIntArray5644!![i_652_] += SpotAnimDefinition.anInt2398
+                                    anIntArray5543!![i_652_] += ShaderProgramStatics.anInt7275
+                                    anIntArray5593!![i_652_] += ScreenAnchorAlignmentStatics.anInt2880
+                                    anIntArray5644!![i_652_] += SpotAnimDefinitionStatics.anInt2398
                                 }
                                 i_651_++
                             }
@@ -2698,27 +2758,27 @@ class OpenGlModel : AbstractModel {
                     val i_613_ = is_514_[12] shl 4
                     val i_614_ = is_514_[13] shl 4
                     val i_615_ = is_514_[14] shl 4
-                    if (StreamingResourceRequest.aBoolean10450) {
-                        var i_616_ = (8192 + (ShaderProgram.anInt7275 * is_514_[0] - -(ScreenAnchorAlignment.anInt2880 * is_514_[3]) - -(is_514_[6] * SpotAnimDefinition.anInt2398)) shr 14)
-                        var i_617_ = (8192 + (is_514_[7] * SpotAnimDefinition.anInt2398 + (ScreenAnchorAlignment.anInt2880 * is_514_[4] + is_514_[1] * ShaderProgram.anInt7275)) shr 14)
+                    if (StreamingResourceRequestStatics.aBoolean10450) {
+                        var i_616_ = (8192 + (ShaderProgramStatics.anInt7275 * is_514_[0] - -(ScreenAnchorAlignmentStatics.anInt2880 * is_514_[3]) - -(is_514_[6] * SpotAnimDefinitionStatics.anInt2398)) shr 14)
+                        var i_617_ = (8192 + (is_514_[7] * SpotAnimDefinitionStatics.anInt2398 + (ScreenAnchorAlignmentStatics.anInt2880 * is_514_[4] + is_514_[1] * ShaderProgramStatics.anInt7275)) shr 14)
                         i_617_ += i_614_
-                        var i_618_ = ((is_514_[5] * ScreenAnchorAlignment.anInt2880 + ShaderProgram.anInt7275 * is_514_[2] + is_514_[8] * SpotAnimDefinition.anInt2398 - -8192) shr 14)
+                        var i_618_ = ((is_514_[5] * ScreenAnchorAlignmentStatics.anInt2880 + ShaderProgramStatics.anInt7275 * is_514_[2] + is_514_[8] * SpotAnimDefinitionStatics.anInt2398 - -8192) shr 14)
                         i_616_ += i_613_
-                        ScreenAnchorAlignment.anInt2880 = i_617_
+                        ScreenAnchorAlignmentStatics.anInt2880 = i_617_
                         i_618_ += i_615_
-                        ShaderProgram.anInt7275 = i_616_
-                        StreamingResourceRequest.aBoolean10450 = false
-                        SpotAnimDefinition.anInt2398 = i_618_
+                        ShaderProgramStatics.anInt7275 = i_616_
+                        StreamingResourceRequestStatics.aBoolean10450 = false
+                        SpotAnimDefinitionStatics.anInt2398 = i_618_
                     }
                     val i_619_ = i_510_ shl 15 shr 7
                     val i_620_ = i_511_ shl 15 shr 7
                     val i_621_ = i_512_ shl 15 shr 7
-                    val i_622_ = -ShaderProgram.anInt7275 * i_619_ + 8192 shr 14
-                    val i_623_ = i_620_ * -ScreenAnchorAlignment.anInt2880 + 8192 shr 14
-                    val i_624_ = -SpotAnimDefinition.anInt2398 * i_621_ - -8192 shr 14
-                    val i_625_ = i_622_ + ShaderProgram.anInt7275
-                    val i_626_ = i_623_ - -ScreenAnchorAlignment.anInt2880
-                    val i_627_ = SpotAnimDefinition.anInt2398 + i_624_
+                    val i_622_ = -ShaderProgramStatics.anInt7275 * i_619_ + 8192 shr 14
+                    val i_623_ = i_620_ * -ScreenAnchorAlignmentStatics.anInt2880 + 8192 shr 14
+                    val i_624_ = -SpotAnimDefinitionStatics.anInt2398 * i_621_ - -8192 shr 14
+                    val i_625_ = i_622_ + ShaderProgramStatics.anInt7275
+                    val i_626_ = i_623_ - -ScreenAnchorAlignmentStatics.anInt2880
+                    val i_627_ = SpotAnimDefinitionStatics.anInt2398 + i_624_
                     val is_628_ = IntArray(9)
                     is_628_[1] = 8192 + is_514_[3] * i_619_ shr 14
                     is_628_[0] = is_514_[0] * i_619_ - -8192 shr 14
@@ -2822,7 +2882,7 @@ class OpenGlModel : AbstractModel {
                                     i_668_ += i_512_
                                     if (i_668_ < 0) i_668_ = 0
                                     else if (i_668_ > 127) i_668_ = 127
-                                    aShortArray5580!![i_664_] = (BoundsConstraintEntry.method2057(i_668_, (BoundsConstraintEntry.method2057(i_666_ shl 10, i_667_ shl 7)))).toShort()
+                                    aShortArray5580!![i_664_] = (BoundsConstraintEntryStatics.method2057(i_668_, (BoundsConstraintEntryStatics.method2057(i_666_ shl 10, i_667_ shl 7)))).toShort()
                                     if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
                                 }
                                 i_663_++
@@ -2835,7 +2895,7 @@ class OpenGlModel : AbstractModel {
                         while (anInt5536 > i_669_) {
                             val class118 = aMapSceneTileDefinitionArray5621!![i_669_]!!
                             val class48 = aColourAdjustmentArray5596!![i_669_]!!
-                            class48.anInt858 = (0xffffff and (ParticleEmitterNode.anIntArray179!![(aShortArray5580!![(class118.anInt1783)]).toInt() and 0xffff]) or (class48.anInt858 and 0xffffff.inv()))
+                            class48.anInt858 = (0xffffff and (ParticleEmitterNodeStatics.anIntArray179!![(aShortArray5580!![(class118.anInt1783)]).toInt() and 0xffff]) or (class48.anInt858 and 0xffffff.inv()))
                             i_669_++
                         }
                     }
@@ -2889,7 +2949,7 @@ class OpenGlModel : AbstractModel {
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.I(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_510_ + ',' + i_511_ + ',' + i_512_ + ',' + bool + ',' + i_513_ + ',' + (if (is_514_ != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.I(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_510_ + ',' + i_511_ + ',' + i_512_ + ',' + bool + ',' + i_513_ + ',' + (if (is_514_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2951,7 +3011,7 @@ class OpenGlModel : AbstractModel {
             aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
             aArchiveFileConditionWrapper_5575 = ArchiveFileConditionWrapper()
         } catch (runtimeexception: RuntimeException) {
-            throw SoundBankPatch.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ')'))
+            throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -2968,10 +3028,10 @@ class OpenGlModel : AbstractModel {
                 anInt5648 = i
                 aHa_Sub2_5598 = var_ha_Sub2
                 if (method616(2, i, i_697_)) aHoverActionEntry_5605 = HoverActionEntry(null, 5126, 3, 0)
-                if (IndexedFileCache.method1163(i_697_, 78.toByte(), i)) aHoverActionEntry_5620 = HoverActionEntry(null, 5126, 2, 0)
+                if (IndexedFileCacheStatics.method1163(i_697_, 78.toByte(), i)) aHoverActionEntry_5620 = HoverActionEntry(null, 5126, 2, 0)
                 if (method166(69.toByte(), i_697_, i)) aHoverActionEntry_5563 = HoverActionEntry(null, 5126, 3, 0)
-                if (HitsplatDefinition.method1193(i_697_, i, true)) aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
-                if (LinkedListIterator.method1238(i, i_697_, -31)) aArchiveFileConditionWrapper_5575 = ArchiveFileConditionWrapper()
+                if (HitsplatDefinitionStatics.method1193(i_697_, i, true)) aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
+                if (LinkedListIteratorStatics.method1238(i, i_697_, -31)) aArchiveFileConditionWrapper_5575 = ArchiveFileConditionWrapper()
                 val var_renderConfig: RenderConfig = var_ha_Sub2!!.aRenderConfig4579!!
                 anIntArray5528 = IntArray(modelDefinition!!.anInt1821 + 1)
                 val `is` = IntArray(modelDefinition.anInt1817)
@@ -3009,7 +3069,7 @@ class OpenGlModel : AbstractModel {
                         while ((modelDefinition.aRectangleBoundsArray1832!!.size > i_706_)) {
                             val class162 = (modelDefinition.aRectangleBoundsArray1832!![i_706_])!!
                             if (i_700_ == class162.anInt2155) {
-                                val class189 = FileExistsCondition.method742(104, (class162.anInt2153))
+                                val class189 = FileExistsConditionStatics.method742(104, (class162.anInt2153))
                                 if (class189.aBoolean2531) bool_705_ = true
                                 if (class189.anInt2525 != -1) {
                                     val class12_707_ = var_renderConfig.method3((class189.anInt2525), -6662)
@@ -3070,7 +3130,7 @@ class OpenGlModel : AbstractModel {
                     var i_711_ = 0
                     while (anInt5536 > i_711_) {
                         val class162 = modelDefinition.aRectangleBoundsArray1832!![i_711_]!!
-                        val class189 = FileExistsCondition.method742(104, (class162.anInt2153))
+                        val class189 = FileExistsConditionStatics.method742(104, (class162.anInt2153))
                         var i_712_ = -1
                         for (i_713_ in 0..<anInt5632) {
                             if (class162.anInt2155 == `is`[i_713_]) {
@@ -3079,16 +3139,17 @@ class OpenGlModel : AbstractModel {
                             }
                         }
                         if (i_712_ == -1) throw RuntimeException()
-                        var i_714_ = ((ParticleEmitterNode.anIntArray179!![0xffff and (modelDefinition.aShortArray1862[class162.anInt2155]).toInt()]) and 0xffffff)
+                        var i_714_ = ((ParticleEmitterNodeStatics.anIntArray179!![0xffff and (modelDefinition.aShortArray1862[class162.anInt2155]).toInt()]) and 0xffffff)
                         i_714_ = i_714_ or (255 + -(if ((modelDefinition.aByteArray1834) == null) 0 else (modelDefinition.aByteArray1834!![(class162.anInt2155)])) shl 24)
-                        aMapSceneTileDefinitionArray5621!![i_711_] = MapSceneTileDefinition(i_712_, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
+                        aMapSceneTileDefinitionArray5621!![i_711_] =
+                            MapSceneTileDefinition(i_712_, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
                         aColourAdjustmentArray5596!![i_711_] = ColourAdjustment(i_714_)
                         i_711_++
                     }
                 }
                 val i_715_ = anInt5632 * 3
                 aShortArray5649 = ShortArray(i_715_)
-                GlTextureCubeMap.aLongArray8530 = LongArray(i_715_)
+                GlTextureCubeMapStatics.aLongArray8530 = LongArray(i_715_)
                 aShortArray5601 = ShortArray(anInt5632)
                 aFloatArray5571 = FloatArray(i_715_)
                 aShortArray5564 = ShortArray(i_715_)
@@ -3256,15 +3317,15 @@ class OpenGlModel : AbstractModel {
                                 val f_787_ = ((modelDefinition.anIntArray1867[i_737_]).toFloat() / 256.0f)
                                 if (i_748_.toInt() == 1) {
                                     val f_805_ = ((modelDefinition.anIntArray1844[i_737_]).toFloat() / 1024.0f)
-                                    method1885(i_785_, (modelDefinition.anIntArray1852[i_780_.toInt()]), i_786_.toInt(), 8, (modelDefinition.anIntArray1841[i_780_.toInt()]), GzipDecompressor.aFloatArray2075, (modelDefinition.anIntArray1847[i_780_.toInt()]), f_787_, i_784_, i_783_, f_805_, fs)
-                                    f = GzipDecompressor.aFloatArray2075!![0]
-                                    f_740_ = GzipDecompressor.aFloatArray2075!![1]
-                                    method1885(i_785_, (modelDefinition.anIntArray1852[i_781_.toInt()]), i_786_.toInt(), 8, (modelDefinition.anIntArray1841[i_781_.toInt()]), GzipDecompressor.aFloatArray2075, (modelDefinition.anIntArray1847[i_781_.toInt()]), f_787_, i_784_, i_783_, f_805_, fs)
-                                    f_741_ = GzipDecompressor.aFloatArray2075!![0]
-                                    f_742_ = GzipDecompressor.aFloatArray2075!![1]
-                                    method1885(i_785_, (modelDefinition.anIntArray1852[i_782_.toInt()]), i_786_.toInt(), 8, (modelDefinition.anIntArray1841[i_782_.toInt()]), GzipDecompressor.aFloatArray2075, (modelDefinition.anIntArray1847[i_782_.toInt()]), f_787_, i_784_, i_783_, f_805_, fs)
-                                    f_743_ = GzipDecompressor.aFloatArray2075!![0]
-                                    f_744_ = GzipDecompressor.aFloatArray2075!![1]
+                                    method1885(i_785_, (modelDefinition.anIntArray1852[i_780_.toInt()]), i_786_.toInt(), 8, (modelDefinition.anIntArray1841[i_780_.toInt()]), GzipDecompressorStatics.aFloatArray2075, (modelDefinition.anIntArray1847[i_780_.toInt()]), f_787_, i_784_, i_783_, f_805_, fs)
+                                    f = GzipDecompressorStatics.aFloatArray2075!![0]
+                                    f_740_ = GzipDecompressorStatics.aFloatArray2075!![1]
+                                    method1885(i_785_, (modelDefinition.anIntArray1852[i_781_.toInt()]), i_786_.toInt(), 8, (modelDefinition.anIntArray1841[i_781_.toInt()]), GzipDecompressorStatics.aFloatArray2075, (modelDefinition.anIntArray1847[i_781_.toInt()]), f_787_, i_784_, i_783_, f_805_, fs)
+                                    f_741_ = GzipDecompressorStatics.aFloatArray2075!![0]
+                                    f_742_ = GzipDecompressorStatics.aFloatArray2075!![1]
+                                    method1885(i_785_, (modelDefinition.anIntArray1852[i_782_.toInt()]), i_786_.toInt(), 8, (modelDefinition.anIntArray1841[i_782_.toInt()]), GzipDecompressorStatics.aFloatArray2075, (modelDefinition.anIntArray1847[i_782_.toInt()]), f_787_, i_784_, i_783_, f_805_, fs)
+                                    f_743_ = GzipDecompressorStatics.aFloatArray2075!![0]
+                                    f_744_ = GzipDecompressorStatics.aFloatArray2075!![1]
                                     val f_806_ = f_805_ / 2.0f
                                     if ((0x1 and i_786_.toInt()) == 0) {
                                         if (f_806_ < -f + f_743_) {
@@ -3316,25 +3377,25 @@ class OpenGlModel : AbstractModel {
                                     val f_803_ = ((fs[5] * i_798_.toFloat() + (i_797_.toFloat() * fs[4] + fs[3] * i_796_.toFloat())) / f_800_)
                                     val f_804_ = ((i_798_.toFloat() * fs[8] + (fs[7] * i_797_.toFloat() + i_796_.toFloat() * fs[6])) / f_801_)
                                     i_747_ = CalendarUtil.method2635(f_803_, false, f_804_, f_802_)
-                                    NodeDeque.method1991(f_789_, f_787_, fs, (modelDefinition.anIntArray1852[i_780_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (modelDefinition.anIntArray1841[i_780_.toInt()]), (modelDefinition.anIntArray1847[i_780_.toInt()]), f_788_, GzipDecompressor.aFloatArray2075, i_784_, i_747_)
-                                    f_740_ = GzipDecompressor.aFloatArray2075!![1]
-                                    f = GzipDecompressor.aFloatArray2075!![0]
-                                    NodeDeque.method1991(f_789_, f_787_, fs, (modelDefinition.anIntArray1852[i_781_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (modelDefinition.anIntArray1841[i_781_.toInt()]), (modelDefinition.anIntArray1847[i_781_.toInt()]), f_788_, GzipDecompressor.aFloatArray2075!!, i_784_, i_747_)
-                                    f_742_ = GzipDecompressor.aFloatArray2075!![1]
-                                    f_741_ = GzipDecompressor.aFloatArray2075!![0]
-                                    NodeDeque.method1991(f_789_, f_787_, fs, (modelDefinition.anIntArray1852[i_782_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (modelDefinition.anIntArray1841[i_782_.toInt()]), (modelDefinition.anIntArray1847[i_782_.toInt()]), f_788_, GzipDecompressor.aFloatArray2075, i_784_, i_747_)
-                                    f_743_ = GzipDecompressor.aFloatArray2075!![0]
-                                    f_744_ = GzipDecompressor.aFloatArray2075!![1]
+                                    NodeDequeStatics.method1991(f_789_, f_787_, fs, (modelDefinition.anIntArray1852[i_780_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (modelDefinition.anIntArray1841[i_780_.toInt()]), (modelDefinition.anIntArray1847[i_780_.toInt()]), f_788_, GzipDecompressorStatics.aFloatArray2075, i_784_, i_747_)
+                                    f_740_ = GzipDecompressorStatics.aFloatArray2075!![1]
+                                    f = GzipDecompressorStatics.aFloatArray2075!![0]
+                                    NodeDequeStatics.method1991(f_789_, f_787_, fs, (modelDefinition.anIntArray1852[i_781_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (modelDefinition.anIntArray1841[i_781_.toInt()]), (modelDefinition.anIntArray1847[i_781_.toInt()]), f_788_, GzipDecompressorStatics.aFloatArray2075!!, i_784_, i_747_)
+                                    f_742_ = GzipDecompressorStatics.aFloatArray2075!![1]
+                                    f_741_ = GzipDecompressorStatics.aFloatArray2075!![0]
+                                    NodeDequeStatics.method1991(f_789_, f_787_, fs, (modelDefinition.anIntArray1852[i_782_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (modelDefinition.anIntArray1841[i_782_.toInt()]), (modelDefinition.anIntArray1847[i_782_.toInt()]), f_788_, GzipDecompressorStatics.aFloatArray2075, i_784_, i_747_)
+                                    f_743_ = GzipDecompressorStatics.aFloatArray2075!![0]
+                                    f_744_ = GzipDecompressorStatics.aFloatArray2075!![1]
                                 } else if (i_748_.toInt() == 3) {
-                                    SpotAnimDefinition.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_780_.toInt()]), GzipDecompressor.aFloatArray2075, (modelDefinition.anIntArray1852[i_780_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_780_.toInt()]), i_784_, -4, fs)
-                                    f_740_ = GzipDecompressor.aFloatArray2075!![1]
-                                    f = GzipDecompressor.aFloatArray2075!![0]
-                                    SpotAnimDefinition.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_781_.toInt()]), GzipDecompressor.aFloatArray2075, (modelDefinition.anIntArray1852[i_781_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_781_.toInt()]), i_784_, -4, fs)
-                                    f_741_ = GzipDecompressor.aFloatArray2075!![0]
-                                    f_742_ = GzipDecompressor.aFloatArray2075!![1]
-                                    SpotAnimDefinition.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_782_.toInt()]), GzipDecompressor.aFloatArray2075, (modelDefinition.anIntArray1852[i_782_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_782_.toInt()]), i_784_, -4, fs)
-                                    f_744_ = GzipDecompressor.aFloatArray2075!![1]
-                                    f_743_ = GzipDecompressor.aFloatArray2075!![0]
+                                    SpotAnimDefinitionStatics.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_780_.toInt()]), GzipDecompressorStatics.aFloatArray2075, (modelDefinition.anIntArray1852[i_780_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_780_.toInt()]), i_784_, -4, fs)
+                                    f_740_ = GzipDecompressorStatics.aFloatArray2075!![1]
+                                    f = GzipDecompressorStatics.aFloatArray2075!![0]
+                                    SpotAnimDefinitionStatics.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_781_.toInt()]), GzipDecompressorStatics.aFloatArray2075, (modelDefinition.anIntArray1852[i_781_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_781_.toInt()]), i_784_, -4, fs)
+                                    f_741_ = GzipDecompressorStatics.aFloatArray2075!![0]
+                                    f_742_ = GzipDecompressorStatics.aFloatArray2075!![1]
+                                    SpotAnimDefinitionStatics.method1367(i_785_, i_786_.toInt(), f_787_, (modelDefinition.anIntArray1841[i_782_.toInt()]), GzipDecompressorStatics.aFloatArray2075, (modelDefinition.anIntArray1852[i_782_.toInt()]), i_783_, (modelDefinition.anIntArray1847[i_782_.toInt()]), i_784_, -4, fs)
+                                    f_744_ = GzipDecompressorStatics.aFloatArray2075!![1]
+                                    f_743_ = GzipDecompressorStatics.aFloatArray2075!![0]
                                     if ((0x1 and i_786_.toInt()) == 0) {
                                         if (-f + f_743_ > 0.5f) {
                                             i_746_ = 1
@@ -3419,15 +3480,15 @@ class OpenGlModel : AbstractModel {
                     i_815_++
                 }
                 anIntArray5626!![i_811_] = anInt5537
-                GlTextureCubeMap.aLongArray8530 = null
-                aShortArray5564 = NativeVertexBuffer.method1078(aShortArray5564, anInt5529, 114)
-                aShortArray5583 = NativeVertexBuffer.method1078(aShortArray5583, anInt5529, 126)
-                aShortArray5576 = NativeVertexBuffer.method1078(aShortArray5576, anInt5529, 100)
+                GlTextureCubeMapStatics.aLongArray8530 = null
+                aShortArray5564 = NativeVertexBufferStatics.method1078(aShortArray5564, anInt5529, 114)
+                aShortArray5583 = NativeVertexBufferStatics.method1078(aShortArray5583, anInt5529, 126)
+                aShortArray5576 = NativeVertexBufferStatics.method1078(aShortArray5576, anInt5529, 100)
                 aByteArray5594 = JagGlToolkitFactory.method863(anInt5529, 113.toByte(), aByteArray5594)
-                aFloatArray5552 = HudTabPanel.method1638(anInt5529, aFloatArray5552!!, -1)
-                aFloatArray5571 = HudTabPanel.method1638(anInt5529, aFloatArray5571!!, -1)
-                if (modelDefinition.anIntArray1868 != null && WidgetRedrawTracker.method2332(anInt5556, 125.toByte(), i)) anIntArrayArray5539 = modelDefinition.method1100(false, -42)
-                if (modelDefinition.aRectangleBoundsArray1832 != null && RenderConfigFactory.method1633(false, i, anInt5556)) anIntArrayArray5627 = modelDefinition.method1093((-69).toByte())
+                aFloatArray5552 = HudTabPanelStatics.method1638(anInt5529, aFloatArray5552!!, -1)
+                aFloatArray5571 = HudTabPanelStatics.method1638(anInt5529, aFloatArray5571!!, -1)
+                if (modelDefinition.anIntArray1868 != null && WidgetRedrawTrackerStatics.method2332(anInt5556, 125.toByte(), i)) anIntArrayArray5539 = modelDefinition.method1100(false, -42)
+                if (modelDefinition.aRectangleBoundsArray1832 != null && RenderConfigFactoryStatics.method1633(false, i, anInt5556)) anIntArrayArray5627 = modelDefinition.method1093((-69).toByte())
                 if (modelDefinition.anIntArray1824 == null || !method371(i, 256, anInt5556)) break
                 var i_817_ = 0
                 val is_818_ = IntArray(256)
@@ -3450,180 +3511,9 @@ class OpenGlModel : AbstractModel {
                     if (i_823_ >= 0) anIntArrayArray5553!![i_823_]!![is_818_[i_823_]++] = i_822_
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw SoundBankPatch.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_695_ + ',' + i_696_ + ',' + i_697_ + ')'))
+                throw SoundBankPatchStatics.method2929(runtimeexception, ("paa.<init>(" + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i + ',' + i_695_ + ',' + i_696_ + ',' + i_697_ + ')'))
             }
             break
         } while (false)
-    }
-
-    companion object {
-        @JvmField
-        var anInt5530: Int = 0
-        @JvmField
-        var anInt5531: Int = 0
-        @JvmField
-        var anInt5532: Int = 0
-        @JvmField
-        var anInt5533: Int = 0
-        @JvmField
-        var anInt5534: Int = 0
-        @JvmField
-        var anInt5535: Int = 0
-        @JvmField
-        var anInt5538: Int = 0
-        @JvmField
-        var anInt5545: Int = 0
-        @JvmField
-        var anInt5546: Int = 0
-        @JvmField
-        var anInt5547: Int = 0
-        @JvmField
-        var anInt5548: Int = 0
-        @JvmField
-        var anInt5549: Int = 0
-        @JvmField
-        var anInt5550: Int = 0
-        @JvmField
-        var anInt5551: Int = 0
-        @JvmField
-        var aNpcDefinitionCache_5558: NpcDefinitionCache? = null
-        @JvmField
-        var anInt5560: Int = 0
-        @JvmField
-        var anInt5561: Int = 0
-        @JvmField
-        var anInt5562: Int = 0
-        @JvmField
-        var anInt5565: Int = 0
-        @JvmField
-        var anInt5567: Int = 0
-        @JvmField
-        var anInt5568: Int = 0
-        @JvmField
-        var anInt5569: Int = 0
-        @JvmField
-        var anInt5570: Int = 0
-        @JvmField
-        var anInt5574: Int = 0
-        @JvmField
-        var anInt5577: Int = 0
-        @JvmField
-        var anInt5578: Int = 0
-        @JvmField
-        var anInt5582: Int = 0
-        @JvmField
-        var anInt5584: Int = 0
-        @JvmField
-        var anInt5585: Int = 0
-        @JvmField
-        var anInt5587: Int = 0
-        @JvmField
-        var anInt5588: Int = 0
-        @JvmField
-        var anInt5589: Int = 0
-        @JvmField
-        var anInt5590: Int = 0
-        @JvmField
-        var anInt5597: Int = 0
-        @JvmField
-        var anInt5599: Int = 0
-        @JvmField
-        var aString5600: String? = ""
-        @JvmField
-        var anInt5602: Int = 0
-        @JvmField
-        var anInt5603: Int = 0
-        @JvmField
-        var anInt5604: Int = 0
-        @JvmField
-        var anInt5606: Int = 0
-        @JvmField
-        var anInt5607: Int = 0
-        var aBoolean5609: Boolean = false
-        @JvmField
-        var anInt5611: Int = 0
-        @JvmField
-        var anInt5612: Int = 0
-        @JvmField
-        var anInt5613: Int = 0
-        @JvmField
-        var anInt5614: Int = 0
-        @JvmField
-        var anInt5615: Int = 0
-        @JvmField
-        var anInt5616: Int = 0
-        @JvmField
-        var anInt5618: Int = 0
-        @JvmField
-        var anInt5619: Int = 0
-        @JvmField
-        var anInt5622: Int = 0
-        @JvmField
-        var anInt5623: Int = 0
-        @JvmField
-        var anInt5624: Int = 0
-        @JvmField
-        var anInt5625: Int = 0
-        @JvmField
-        var anInt5628: Int = 0
-        @JvmField
-        var anInt5630: Int = 0
-        @JvmField
-        var anInt5631: Int = 0
-        @JvmField
-        var anInt5633: Int = 0
-        @JvmField
-        var anInt5635: Int = 0
-        @JvmField
-        var anInt5636: Int = 0
-        @JvmField
-        var anInt5637: Int = 0
-        @JvmField
-        var anInt5639: Int = 0
-        @JvmField
-        var anInt5641: Int = 0
-        @JvmField
-        var anInt5643: Int = 0
-        @JvmField
-        var anInt5650: Int = 0
-        @JvmField
-        var anInt5651: Int = 0
-
-        @JvmStatic
-        fun method681(i: Int) {
-            aNpcDefinitionCache_5558 = null
-            if (i <= 75) aString5600 = null
-            aString5600 = null
-        }
-
-        @JvmStatic
-        fun method687(i: Byte, i_282_: Int) {
-            val i_283_ = 113 / ((-63 - i) / 53)
-            anInt5570++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i_282_, 105.toByte(), 5)
-            class348_sub42_sub15.method3251(-16058)
-        }
-
-        @JvmStatic
-        fun method689(i: Byte, i_377_: Int) {
-            ColourAdjustment.anInt859 = -1
-            TextureMetadataProvider.anInt4609 = -1
-            if (i.toInt() != -59) anInt5584 = 77
-            anInt5577++
-            WidgetActionEntry.anInt6992 = i_377_
-            MenuActionNode.method2811(false)
-        }
-
-        @JvmStatic
-        fun method690(i: Byte, i_378_: Int) {
-            anInt5565++
-            val class348_sub15 = (ProjectileConfigUtil.aHashtable_389!!.method3480(i_378_.toLong(), -6008) as MenuActionNode?)
-            val i_379_ = -8 % ((i - -49) / 44)
-            if (class348_sub15 != null) {
-                class348_sub15.aClass55_Sub1_6768!!.method508(1)
-                ProjectileDefinition.method2285(class348_sub15.aBoolean6776, (-114).toByte(), class348_sub15.anInt6773)
-                class348_sub15.method2715(52.toByte())
-            }
-        }
     }
 }

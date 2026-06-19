@@ -1,8 +1,8 @@
 import MinimapRectClipper.method226
 import SceneTilePlaneManager.method260
-import SoundBankPatch.Companion.method2929
-import TextureAtlasState.Companion.method3490
-import Js5Archive.Companion.method395
+import SoundBankPatchStatics.method2929
+import TextureAtlasStateStatics.method3490
+import Js5ArchiveStatics.method395
 
 /* Class362 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -23,42 +23,42 @@ object Tooltip {
         try {
             if (i != 2) aFont_4456 = null
             anInt4457++
-            val bool_0_ = !LocalizedTextTriple.aBoolean3763 || method3490(true)
+            val bool_0_ = !LocalizedTextTripleStatics.aBoolean3763 || method3490(true)
             if (bool_0_) {
-                if (LocalizedTextTriple.aBoolean3763 && bool_0_) {
+                if (LocalizedTextTripleStatics.aBoolean3763 && bool_0_) {
                     class143 = ClanChatRequestSender.aFontDefinition_3649
-                    class324 = var_renderer!!.method3686(class143, (ProportionalScrollbarComponent.aSpriteImageArray9929), true)
+                    class324 = var_renderer!!.method3686(class143, (ProportionalScrollbarComponentStatics.aSpriteImageArray9929), true)
                     var i_1_ = class143!!.method1187(string, false, 250, null)
                     var i_2_ = class143.method1185(null, i xor 0x2, class143.anInt1992, 250, string)
-                    val i_3_ = RegionTileNode.aSpriteImage_6643!!.anInt2702
+                    val i_3_ = RegionTileNodeStatics.aSpriteImage_6643!!.anInt2702
                     val i_4_ = i_3_ + 4
                     i_2_ += 2 * i_4_
                     i_1_ += 2 * i_4_
-                    if (i_2_ < NormalMapGenerator.anInt3451) i_2_ = NormalMapGenerator.anInt3451
+                    if (i_2_ < NormalMapGeneratorStatics.anInt3451) i_2_ = NormalMapGeneratorStatics.anInt3451
                     if (i_1_ < RegionSceneLoader.anInt3704) i_1_ = RegionSceneLoader.anInt3704
-                    var i_5_ = (DirectionUtil.aScreenAnchorAlignment_1542!!.method1607(NpcSpawnDecoder.anInt1524, i_1_, (-107).toByte()) - -BufferToggleState.anInt3712)
-                    var i_6_ = (DefaultGraphicsOptionState.aTileRenderState_6128!!.method2679(OpenGlRenderer.anInt7666, i_2_, 1595) + ChatEffectsOptionState.anInt5871)
-                    if (GrayscaleNoiseTexture.aBoolean5300) {
-                        i_5_ += NativeTerrainTile.method4008((-124).toByte())
+                    var i_5_ = (DirectionUtil.aScreenAnchorAlignment_1542!!.method1607(NpcSpawnDecoder.anInt1524, i_1_, (-107).toByte()) - -BufferToggleStateStatics.anInt3712)
+                    var i_6_ = (DefaultGraphicsOptionStateStatics.aTileRenderState_6128!!.method2679(OpenGlRendererStatics.anInt7666, i_2_, 1595) + ChatEffectsOptionStateStatics.anInt5871)
+                    if (GrayscaleNoiseTextureStatics.aBoolean5300) {
+                        i_5_ += NativeTerrainTileStatics.method4008((-124).toByte())
                         i_6_ += method260(false)
                     }
-                    var_renderer.method3691(ScriptCompilerThread.aSpriteImage_1727, false)!!.method965((ColorThresholdEffect.aSpriteImage_9090!!.anInt2702) + i_5_, (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696) + i_6_, -(2 * (ColorThresholdEffect.aSpriteImage_9090!!.anInt2702)) + i_1_, -((ColorThresholdEffect.aSpriteImage_9090!!.anInt2696) * 2) + i_2_, 1, 0, 0)
-                    var_renderer.method3691(ColorThresholdEffect.aSpriteImage_9090, true)!!.method974(i_5_, i_6_)
-                    ColorThresholdEffect.aSpriteImage_9090!!.method1518()
-                    var_renderer.method3691(ColorThresholdEffect.aSpriteImage_9090, true)!!.method974(i_5_ + i_1_ - i_3_, i_6_)
-                    ColorThresholdEffect.aSpriteImage_9090!!.method1514()
-                    var_renderer.method3691(ColorThresholdEffect.aSpriteImage_9090, true)!!.method974(i_5_ - -i_1_ + -i_3_, -i_3_ + (i_6_ - -i_2_))
-                    ColorThresholdEffect.aSpriteImage_9090!!.method1518()
-                    var_renderer.method3691(ColorThresholdEffect.aSpriteImage_9090, true)!!.method974(i_5_, -i_3_ + i_6_ - -i_2_)
-                    ColorThresholdEffect.aSpriteImage_9090!!.method1514()
-                    var_renderer.method3691(RegionTileNode.aSpriteImage_6643, true)!!.method972(i_5_, (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696) + i_6_, i_3_, -(2 * (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696)) + i_2_)
-                    RegionTileNode.aSpriteImage_6643!!.method1520()
-                    var_renderer.method3691(RegionTileNode.aSpriteImage_6643, true)!!.method972((ColorThresholdEffect.aSpriteImage_9090!!.anInt2702) + i_5_, i_6_, -((ColorThresholdEffect.aSpriteImage_9090!!.anInt2702) * 2) + i_1_, i_3_)
-                    RegionTileNode.aSpriteImage_6643!!.method1520()
-                    var_renderer.method3691(RegionTileNode.aSpriteImage_6643, true)!!.method972(i_5_ - -i_1_ + -i_3_, (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696) + i_6_, i_3_, -(2 * (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696)) + i_2_)
-                    RegionTileNode.aSpriteImage_6643!!.method1520()
-                    var_renderer.method3691(RegionTileNode.aSpriteImage_6643, true)!!.method972((ColorThresholdEffect.aSpriteImage_9090!!.anInt2702) + i_5_, -i_3_ + i_6_ - -i_2_, -(2 * (ColorThresholdEffect.aSpriteImage_9090!!.anInt2702)) + i_1_, i_3_)
-                    RegionTileNode.aSpriteImage_6643!!.method1520()
+                    var_renderer.method3691(ScriptCompilerThreadStatics.aSpriteImage_1727, false)!!.method965((ColorThresholdEffectStatics.aSpriteImage_9090!!.anInt2702) + i_5_, (ColorThresholdEffectStatics.aSpriteImage_9090!!.anInt2696) + i_6_, -(2 * (ColorThresholdEffectStatics.aSpriteImage_9090!!.anInt2702)) + i_1_, -((ColorThresholdEffectStatics.aSpriteImage_9090!!.anInt2696) * 2) + i_2_, 1, 0, 0)
+                    var_renderer.method3691(ColorThresholdEffectStatics.aSpriteImage_9090, true)!!.method974(i_5_, i_6_)
+                    ColorThresholdEffectStatics.aSpriteImage_9090!!.method1518()
+                    var_renderer.method3691(ColorThresholdEffectStatics.aSpriteImage_9090, true)!!.method974(i_5_ + i_1_ - i_3_, i_6_)
+                    ColorThresholdEffectStatics.aSpriteImage_9090!!.method1514()
+                    var_renderer.method3691(ColorThresholdEffectStatics.aSpriteImage_9090, true)!!.method974(i_5_ - -i_1_ + -i_3_, -i_3_ + (i_6_ - -i_2_))
+                    ColorThresholdEffectStatics.aSpriteImage_9090!!.method1518()
+                    var_renderer.method3691(ColorThresholdEffectStatics.aSpriteImage_9090, true)!!.method974(i_5_, -i_3_ + i_6_ - -i_2_)
+                    ColorThresholdEffectStatics.aSpriteImage_9090!!.method1514()
+                    var_renderer.method3691(RegionTileNodeStatics.aSpriteImage_6643, true)!!.method972(i_5_, (ColorThresholdEffectStatics.aSpriteImage_9090!!.anInt2696) + i_6_, i_3_, -(2 * (ColorThresholdEffectStatics.aSpriteImage_9090!!.anInt2696)) + i_2_)
+                    RegionTileNodeStatics.aSpriteImage_6643!!.method1520()
+                    var_renderer.method3691(RegionTileNodeStatics.aSpriteImage_6643, true)!!.method972((ColorThresholdEffectStatics.aSpriteImage_9090!!.anInt2702) + i_5_, i_6_, -((ColorThresholdEffectStatics.aSpriteImage_9090!!.anInt2702) * 2) + i_1_, i_3_)
+                    RegionTileNodeStatics.aSpriteImage_6643!!.method1520()
+                    var_renderer.method3691(RegionTileNodeStatics.aSpriteImage_6643, true)!!.method972(i_5_ - -i_1_ + -i_3_, (ColorThresholdEffectStatics.aSpriteImage_9090!!.anInt2696) + i_6_, i_3_, -(2 * (ColorThresholdEffectStatics.aSpriteImage_9090!!.anInt2696)) + i_2_)
+                    RegionTileNodeStatics.aSpriteImage_6643!!.method1520()
+                    var_renderer.method3691(RegionTileNodeStatics.aSpriteImage_6643, true)!!.method972((ColorThresholdEffectStatics.aSpriteImage_9090!!.anInt2702) + i_5_, -i_3_ + i_6_ - -i_2_, -(2 * (ColorThresholdEffectStatics.aSpriteImage_9090!!.anInt2702)) + i_1_, i_3_)
+                    RegionTileNodeStatics.aSpriteImage_6643!!.method1520()
                     class324!!.method2584(null, 0, -1, null, 0xffffff.inv() or DrawListState.anInt1479, 1, i_2_ + -(i_4_ * 2), null, i_6_ + i_4_, 0, 0, -(2 * i_4_) + i_1_, i_5_ + i_4_, false, 1, string)
                     method226(i_5_, i_1_, i_6_, i xor 0x2, i_2_)
                 } else {
@@ -74,7 +74,7 @@ object Tooltip {
                 }
                 if (bool) {
                     try {
-                        if (!GrayscaleNoiseTexture.aBoolean5300) var_renderer.method3689(118.toByte())
+                        if (!GrayscaleNoiseTextureStatics.aBoolean5300) var_renderer.method3689(118.toByte())
                         else method395(i + 79)
                     } catch (clientException_: ClientException) {
                         /* empty */

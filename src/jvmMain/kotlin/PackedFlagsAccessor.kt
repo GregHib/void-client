@@ -1,4 +1,11 @@
-import VoronoiNoiseTextureNode.Companion.method3060
+import VoronoiNoiseTextureNodeStatics.method3060
+import PackedFlagsAccessorStatics.anInt7091
+import PackedFlagsAccessorStatics.anInt7092
+import PackedFlagsAccessorStatics.anInt7094
+import PackedFlagsAccessorStatics.anInt7095
+import PackedFlagsAccessorStatics.anInt7096
+import PackedFlagsAccessorStatics.anInt7099
+import PackedFlagsAccessorStatics.anInt7100
 
 /* Class348_Sub44 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -38,24 +45,5 @@ class PackedFlagsAccessor internal constructor(@JvmField var anInt7098: Int, @Jv
         anInt7100++
         if (i < 10) this.anInt7093 = -51
         return method3060(this.anInt7098, true)
-    }
-
-    companion object {
-        var anInt7091: Int = 0
-        var anInt7092: Int = 0
-        var anInt7094: Int = 0
-        var anInt7095: Int = 0
-        var anInt7096: Int = 0
-        var anInt7097: Int = 0
-        var anInt7099: Int = 0
-        var anInt7100: Int = 0
-        var anInt7101: Int = 0
-
-        fun method3306(i: Byte): Int {
-            if (i >= -90) anInt7101 = -7
-            anInt7097++
-            if (ByteBuffer.Companion.anInt7207 == 1) return ShadowQualityOptionState.anInt6008
-            return LinkedNodeListIterator.anInt1651
-        }
     }
 }

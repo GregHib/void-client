@@ -1,5 +1,8 @@
-import ColorThresholdEffect.Companion.method3051
+import ColorThresholdEffectStatics.method3051
 import java.awt.Canvas
+import ParticleSystemRendererStatics.anInt3856
+import ParticleSystemRendererStatics.anInt3860
+import ParticleSystemRendererStatics.anInt3864
 
 /*
  * Class305
@@ -35,7 +38,7 @@ class ParticleSystemRenderer internal constructor(private val anInt3858: Int, pr
                     }
                     i_2_++
                 }
-                SoundChannelMixer.method2092(-1 + anInt3852, 0, `is`, -120, aHintArrowRendererArray3865 as? Array<Any?>)
+                SoundChannelMixerStatics.method2092(-1 + anInt3852, 0, `is`, -120, aHintArrowRendererArray3865 as? Array<Any?>)
             }
             aBoolean3857 = true
         }
@@ -59,9 +62,9 @@ class ParticleSystemRenderer internal constructor(private val anInt3858: Int, pr
         i_10_ = 0x3fff and i + i_10_
         anInt3860++
         if (anInt3858 != -1 && anInt3863 != 0) {
-            val class12 = MatrixCameraTransform.aRenderConfig5684!!.method3(anInt3858, -6662)
-            if (aAbstractModelRenderer_3867 == null && MatrixCameraTransform.aRenderConfig5684!!.method4(-7953, anInt3858)) {
-                val `is` = (if (class12!!.anInt200 == 2) MatrixCameraTransform.aRenderConfig5684!!.method6(-21540, anInt3863, 0.7f, anInt3858, false, anInt3863) else MatrixCameraTransform.aRenderConfig5684!!.method5(false, anInt3858, 0.7f, anInt3863, anInt3863, -119))
+            val class12 = MatrixCameraTransformStatics.aRenderConfig5684!!.method3(anInt3858, -6662)
+            if (aAbstractModelRenderer_3867 == null && MatrixCameraTransformStatics.aRenderConfig5684!!.method4(-7953, anInt3858)) {
+                val `is` = (if (class12!!.anInt200 == 2) MatrixCameraTransformStatics.aRenderConfig5684!!.method6(-21540, anInt3863, 0.7f, anInt3858, false, anInt3863) else MatrixCameraTransformStatics.aRenderConfig5684!!.method5(false, anInt3858, 0.7f, anInt3863, anInt3863, -119))
                 aAbstractModelRenderer_3867 = var_renderer.method3662(anInt3863, `is`, 94.toByte(), 0, anInt3863, anInt3863)
             }
             if (class12!!.anInt200 == 2) var_renderer.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0)
@@ -116,34 +119,6 @@ class ParticleSystemRenderer internal constructor(private val anInt3858: Int, pr
         } else {
             aHintArrowRendererArray3865 = arrayOfNulls<HintArrowRenderer>(aHintArrowRendererArray3862.size)
             aHintArrowRenderer_3871 = if (i_23_ < 0) null else aHintArrowRendererArray3862[i_23_]
-        }
-    }
-
-    companion object {
-        @JvmField
-        var anInt3855: Int = 0
-        var anInt3856: Int = 0
-        var anInt3860: Int = 0
-        var anInt3861: Int = 0
-        var anInt3864: Int = 0
-        var anInt3868: Int = 0
-        @JvmField
-        var aCanvas3869: Canvas? = null
-        @JvmField
-        var aBoolean3870: Boolean = false
-        @JvmStatic
-        fun method2294(i: Int) {
-            aCanvas3869 = null
-            if (i <= 94) method2296(-107)
-        }
-
-        @JvmStatic
-        fun method2296(i: Int) {
-            anInt3868++
-            if (i < -46) {
-                for (i_22_ in 0..99) SceneModelBuilder.aHintArrowOrMessageArray6400s!![i_22_] = null
-                NativeShaderProgram.anInt9774 = 0
-            }
         }
     }
 }

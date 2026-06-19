@@ -1,7 +1,12 @@
-import GameAppletFrame.Companion.method94
-import jaggl.OpenGL.Companion.glTexImage2Df
+import GameAppletFrameStatics.method94
+import jaggl.OpenGLStatics.glTexImage2Df
 import kotlin.math.min
 import kotlin.math.pow
+import GrayscaleNoiseTextureStatics.method555
+import GrayscaleNoiseTextureStatics.anInt5281
+import GrayscaleNoiseTextureStatics.anInt5291
+import GrayscaleNoiseTextureStatics.anInt5292
+import GrayscaleNoiseTextureStatics.anInt5295
 
 open class GrayscaleNoiseTexture(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, f: Float, f_26_: Float, f_27_: Float) : NoiseTextureGenerator(i, i_22_, i_23_, i_24_, i_25_) {
     private val anInt5278: Int
@@ -64,141 +69,5 @@ open class GrayscaleNoiseTexture(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_2
         if (i != -1538606516) anInt5289 = 17
         method550(anInt5287++, anInt5290.toByte(), 14.toByte())
         anInt5290 = 0
-    }
-
-    companion object {
-        @JvmField
-        var anInt5277: Int = 0
-        @JvmField
-        var anInt5281: Int = 0
-        @JvmField
-        var anInt5282: Int = 0
-        @JvmField
-        var anInt5283: Int = 0
-        @JvmField
-        var anInt5284: Int = 0
-        @JvmField
-        var anInt5286: Int = 0
-        var aFontMetaRef_5288: FontMetaRef? = FontMetaRef(7, 6)
-        @JvmField
-        var anInt5291: Int = 0
-        @JvmField
-        var anInt5292: Int = 0
-        var anInt5293: Int = 0
-        @JvmField
-        var aAbstractModelRendererArray5294: Array<AbstractModelRenderer?>? = null
-        @JvmField
-        var anInt5295: Int = 0
-        var aPrivilegedOperationWorker_5297: PrivilegedOperationWorker? = null
-        @JvmField
-        var aFloat5299: Float = 0f
-        @JvmField
-        var aBoolean5300: Boolean = false
-
-        fun method551(i: Int, i_2_: Int, i_3_: Int, fs: FloatArray, i_4_: Int, i_5_: Int, i_6_: Int) {
-            var i = i
-            var i_5_ = i_5_
-            anInt5277++
-            require(!(i_4_ < i && !AsyncTaskHandle.method1436(i_4_ + -23, i))) { "" }
-            require(!(i_5_ > 0 && !AsyncTaskHandle.method1436(56, i_5_))) { "" }
-            val i_7_ = ParticleDefLoader.method1382(i_2_, -6409)
-            var i_8_ = 0
-            var i_9_ = min(i_5_, i)
-            var i_10_ = i shr 1
-            var i_11_ = i_5_ shr 1
-            var fs_12_ = fs
-            var fs_13_ = FloatArray(i_7_ * i_10_ * i_11_)
-            while (true) {
-                glTexImage2Df(i_3_, i_8_, i_6_, i, i_5_, 0, i_2_, 5126, fs_12_, 0)
-                if (i_9_ <= 1) break
-                val i_14_ = i * i_7_
-                val fs_15_ = fs_13_
-                for (i_16_ in 0..<i_7_) {
-                    var i_17_ = i_16_
-                    var i_18_ = i_16_
-                    var i_19_ = i_14_ + i_18_
-                    var i_20_ = 0
-                    while (i_11_ > i_20_) {
-                        var i_21_ = 0
-                        while (i_10_ > i_21_) {
-                            var f = fs_12_[i_18_]
-                            i_18_ += i_7_
-                            f += fs_12_[i_18_]
-                            i_18_ += i_7_
-                            f += fs_12_[i_19_]
-                            i_19_ += i_7_
-                            f += fs_12_[i_19_]
-                            i_19_ += i_7_
-                            fs_13_[i_17_] = f * 0.25f
-                            i_17_ += i_7_
-                            i_21_++
-                        }
-                        i_18_ += i_14_
-                        i_19_ += i_14_
-                        i_20_++
-                    }
-                }
-                fs_13_ = fs_12_
-                fs_12_ = fs_15_
-                i = i_10_
-                i_5_ = i_11_
-                i_8_++
-                i_9_ = i_9_ shr 1
-                i_10_ = i_10_ shr 1
-                i_11_ = i_11_ shr 1
-            }
-        }
-
-        @JvmStatic
-        fun method552(i: Int, i_28_: Int, i_29_: Byte, i_30_: Int, i_31_: Int, i_32_: Int, `is`: ByteArray): Boolean {
-            var i_32_ = i_32_
-            anInt5282++
-            val i_33_ = i_31_ % i_30_
-            val i_34_ = 39 / ((31 - i_29_) / 63)
-            val i_35_: Int
-            if (i_33_ != 0) i_35_ = i_30_ - i_33_
-            else i_35_ = 0
-            val i_36_ = -((i_28_ - -i_30_ + -1) / i_30_)
-            val i_37_ = -((i_30_ + i_31_ - 1) / i_30_)
-            for (i_38_ in i_36_..-1) {
-                for (i_39_ in i_37_..-1) {
-                    if (`is`[i_32_].toInt() == 0) return true
-                    i_32_ += i_30_
-                }
-                i_32_ -= i_35_
-                if (`is`[i_32_ + -1].toInt() == 0) return true
-                i_32_ += i
-            }
-            return false
-        }
-
-        @JvmStatic
-        fun method553(i: Int) {
-            aAbstractModelRendererArray5294 = null
-            aFontMetaRef_5288 = null
-            if (i != 0) aPrivilegedOperationWorker_5297 = null
-            aPrivilegedOperationWorker_5297 = null
-        }
-
-        @JvmStatic
-        fun method554(i: Int, i_42_: Int, `is`: ByteArray?): Int {
-            if (i != 5126) method553(52)
-            anInt5284++
-            return RefCountedHandle.method1319(i_42_, true, `is`!!, 0)
-        }
-
-        @JvmStatic
-        fun method555(bool: Boolean, i: Int) {
-            anInt5286++
-            if (i != MapElementManager.aString4461!!.length) {
-                ConfigArchiveLoader.method812(MapElementManager.aString4461, false, bool, (-79).toByte())
-                if (!bool) {
-                    method94("--> " + MapElementManager.aString4461, 110)
-                    TerrainShadowBuilderGl3.anInt7006 = 0
-                    MapElementManager.aString4461 = ""
-                    WalkingTypeUtil.anInt3312 = 0
-                }
-            }
-        }
     }
 }

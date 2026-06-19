@@ -1,4 +1,4 @@
-import SoundBankPatch.Companion.method2929
+import SoundBankPatchStatics.method2929
 
 /* Class365 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -19,25 +19,6 @@ class FriendChatMember internal constructor(i: Int, string: String?, i_0_: Int, 
             this.aString4470 = string
         } catch (runtimeexception: RuntimeException) {
             throw method2929(runtimeexception, ("fia.<init>(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (string_1_ != null) "{...}" else "null") + ',' + l + ')'))
-        }
-    }
-
-    companion object {
-        @JvmField
-        var aNodeDeque_4473: NodeDeque?
-        var anInt4474: Int = 0
-        var aIntRange_4477: IntRange?
-
-        @JvmStatic
-        fun method3518(i: Int) {
-            aNodeDeque_4473 = null
-            if (i != 88) method3518(-49)
-            aIntRange_4477 = null
-        }
-
-        init {
-            aNodeDeque_4473 = NodeDeque()
-            aIntRange_4477 = IntRange(88, 10)
         }
     }
 }
