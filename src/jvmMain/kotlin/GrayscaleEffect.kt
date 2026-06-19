@@ -21,11 +21,11 @@ class GrayscaleEffect : AbstractProceduralTextureNode(1, true) {
     }
 
     companion object {
-        @JvmField
+
         var aNodeDeque_9201: NodeDeque?
-        @JvmField
+
         var anInt9202: Int = 0
-        @JvmField
+
         var anInt9203: Int = -1
         var aFloat9204: Float
 

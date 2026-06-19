@@ -49,17 +49,17 @@ class ConstantColourTextureNode private constructor(i: Int) : AbstractProcedural
     constructor() : this(0)
 
     companion object {
-        @JvmField
+
         var aMapElementDefinitionCache_9245: MapElementDefinitionCache? = null
-        @JvmField
+
         var anInt9246: Int = 0
-        @JvmField
+
         var anInt9247: Int = 0
-        @JvmField
+
         var anInt9248: Int = 0
-        @JvmField
+
         var anIntArray9249: IntArray? = intArrayOf(2, 1, 1, 1, 2, 2, 2, 1, 3, 3, 3, 2, 0, 4, 0)
-        @JvmField
+
         var anInt9251: Int = 0
 
         var anInt2732: Int = 0

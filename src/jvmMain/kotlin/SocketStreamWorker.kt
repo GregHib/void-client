@@ -201,16 +201,16 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
         var anInt2653: Int = 0
         var anInt2655: Int = 0
         var anInt2660: Int = 0
-        @JvmField
+
         var aFontMetaRef_2661: FontMetaRef? = FontMetaRef(24, 7)
         var anInt2662: Int = 0
         var anInt2664: Int = 0
         var aInboundPacketHeader_2665: InboundPacketHeader? = InboundPacketHeader(12, 0)
         var anInt2666: Int = 0
         var anInt2667: Int = 0
-        @JvmField
+
         var anInt2670: Int = 0
-        @JvmField
+
         var aLruByteCache_2671: LruByteCache? = LruByteCache(10)
 
         @JvmStatic

@@ -4,17 +4,17 @@ import ArrayCopyUtil.method1576
 * Visit http://jode.sourceforge.net/
 */
 object CalendarUtil {
-    @JvmField
+
     var anIntArray4128: IntArray? = IntArray(5)
     var aStringArray4129: Array<String?>? = arrayOf<String?>("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
-    @JvmField
+
     var aWidgetComponent_4130: WidgetComponent?
     var anInt4131: Int = 0
     var anInt4132: Int = 0
-    @JvmField
+
     var anInt4133: Int = 0
     var anInt4134: Int = 0
-    @JvmField
+
     var anInt4135: Int = 0
     var anInt4136: Int = 0
     var anInt4137: Int = 0

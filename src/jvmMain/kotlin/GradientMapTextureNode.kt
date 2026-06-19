@@ -102,16 +102,16 @@ class GradientMapTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var aInboundPacketHeader_9324: InboundPacketHeader? = InboundPacketHeader(85, 4)
-        @JvmField
+
         var anInt9326: Int = 0
         var anInt9327: Int = 0
-        @JvmField
+
         var anInt9328: Int = 0
-        @JvmField
+
         var anInt9330: Int = 0
-        @JvmField
+
         var anInt9331: Int = 0
         @JvmStatic
         fun method3115(i: Int) {

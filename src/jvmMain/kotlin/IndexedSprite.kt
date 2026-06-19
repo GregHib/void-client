@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class IndexedSprite : Sprite {
-    @JvmField
+
     var anInterface18_Impl3_5196: Renderable2dTexture? = null
 
     constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_16_: Int, `is`: ByteArray?) {
@@ -24,11 +24,11 @@ class IndexedSprite : Sprite {
     }
 
     companion object {
-        @JvmField
+
         var anInt5194: Int = 0
-        @JvmField
+
         var aStringArray5197: Array<String?>? = arrayOfNulls<String>(100)
-        @JvmField
+
         var aServerConnectionInfo_5199: ServerConnectionInfo? = null
 
         @JvmStatic

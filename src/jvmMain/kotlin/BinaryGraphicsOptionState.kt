@@ -37,27 +37,27 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
     }
 
     companion object {
-        @JvmField
+
         var aInboundPacketHeader_5949: InboundPacketHeader? = InboundPacketHeader(69, 12)
-        @JvmField
+
         var aInboundPacketHeader_5950: InboundPacketHeader?
-        @JvmField
+
         var anInt5951: Int = 1339
-        @JvmField
+
         var anInt5952: Int = 0
-        @JvmField
+
         var anInt5953: Int = 0
-        @JvmField
+
         var anInt5954: Int = 0
-        @JvmField
+
         var anInt5955: Int = 0
-        @JvmField
+
         var anInt5956: Int = 0
-        @JvmField
+
         var anInt5957: Int = 0
-        @JvmField
+
         var anInt5958: Int = 0
-        @JvmField
+
         var anInt5959: Int
 
         @JvmStatic

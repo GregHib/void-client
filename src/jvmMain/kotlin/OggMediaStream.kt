@@ -287,47 +287,47 @@ abstract class OggMediaStream(i: Int) {
     }
 
     companion object {
-        @JvmField
+
         var anInt978: Int = 0
-        @JvmField
+
         var aBoolean979: Boolean
-        @JvmField
+
         var anInt980: Int = 0
-        @JvmField
+
         var anInt982: Int = 0
-        @JvmField
+
         var anInt984: Int = 4
-        @JvmField
+
         var anInt985: Int = 0
-        @JvmField
+
         var anInt986: Int = 0
-        @JvmField
+
         var anInt988: Int = 0
-        @JvmField
+
         var anInt989: Int = 0
-        @JvmField
+
         var anInt990: Int = 0
-        @JvmField
+
         var anInt992: Int = 0
-        @JvmField
+
         var anInt994: Int = 0
-        @JvmField
+
         var anInt996: Int = 0
-        @JvmField
+
         var anInt997: Int = 0
-        @JvmField
+
         var anInt998: Int = 0
-        @JvmField
+
         var anInt1000: Int = 0
-        @JvmField
+
         var anInt1002: Int = 0
-        @JvmField
+
         var anInt1003: Int = 0
-        @JvmField
+
         var anInt1004: Int = 0
-        @JvmField
+
         var anInt1005: Int = 0
-        @JvmField
+
         var aFloat1010: Float = 0f
         @JvmStatic
         fun method515(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {

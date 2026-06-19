@@ -74,23 +74,23 @@ class GlWaterRenderPass internal constructor(glRenderDevice: GlRenderDevice, js5
     }
 
     companion object {
-        @JvmField
+
         var anInt7286: Int = 0
-        @JvmField
+
         var anInt7287: Int = 0
-        @JvmField
+
         var anInt7288: Int = 0
-        @JvmField
+
         var anInt7289: Int = 0
-        @JvmField
+
         var aShortArrayArrayArray7290: Array<Array<ShortArray?>?>? = null
-        @JvmField
+
         var anInt7291: Int = 0
-        @JvmField
+
         var anInt7292: Int = 0
-        @JvmField
+
         var anInt7295: Int = 0
-        @JvmField
+
         var anInt7297: Int = 0
 
         @JvmStatic

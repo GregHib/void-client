@@ -102,17 +102,17 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9482: Int = 0
-        @JvmField
+
         var anInt9483: Int = 0
-        @JvmField
+
         var anInt9484: Int = 0
-        @JvmField
+
         var aTrigLookupTables_9485: TrigLookupTables? = TrigLookupTables()
-        @JvmField
+
         var anInt9486: Int = 0
-        @JvmField
+
         var anInt9487: Int = 0
 
         @JvmStatic

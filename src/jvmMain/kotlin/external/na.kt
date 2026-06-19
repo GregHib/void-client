@@ -8,7 +8,7 @@ import Sprite
  * NativeSpriteRenderer
  */
 class na(var_oa: oa?, var_ya: ya?, i: Int, i_2_: Int, `is`: IntArray?, is_3_: IntArray?) : Sprite(), Disposable {
-    @JvmField
+
     var nativeid: Long = 0
 
     external override fun w(bool: Boolean)

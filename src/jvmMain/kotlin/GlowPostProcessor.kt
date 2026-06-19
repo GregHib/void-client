@@ -95,7 +95,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
     }
 
     companion object {
-        @JvmField
+
         var aFontMetaRef_2512: FontMetaRef?
         var aBoolean2514: Boolean = false
         var anInt2515: Int = 0

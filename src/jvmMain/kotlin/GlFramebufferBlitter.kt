@@ -322,31 +322,31 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     }
 
     companion object {
-        @JvmField
+
         var anInt270: Int = 0
-        @JvmField
+
         var anInt271: Int = 0
-        @JvmField
+
         var anInt272: Int = 0
-        @JvmField
+
         var anInt273: Int = 0
-        @JvmField
+
         var anInt274: Int = 0
-        @JvmField
+
         var anInt277: Int = 0
-        @JvmField
+
         var anInt278: Int = 0
-        @JvmField
+
         var anIntArray279: IntArray? = IntArray(2048)
-        @JvmField
+
         var anInt280: Int = 0
-        @JvmField
+
         var anInt282: Int = 0
-        @JvmField
+
         var anInt283: Int = 0
-        @JvmField
+
         var anInt288: Int = 0
-        @JvmField
+
         var anInt291: Int = 0
         fun method271(i: Int, widgetComponent: WidgetComponent, i_0_: Byte, i_1_: Int) {
             anInt278++

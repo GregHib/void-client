@@ -6,13 +6,13 @@ abstract class Texture2DProvider : CircleRasterizer() {
     abstract fun method2256(i: Byte): GlTextureCubeMap?
 
     companion object {
-        @JvmField
+
         var anInt6320: Int = 0
-        @JvmField
+
         var aRectangleRegion_6321: RectangleRegion? = RectangleRegion(1, 2, 2, 0)
-        @JvmField
+
         var anInt6322: Int = 0
-        @JvmField
+
         var aFileOutputStream6323: FileOutputStream? = null
 
         @JvmStatic

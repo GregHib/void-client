@@ -22,7 +22,7 @@ class RendererType internal constructor(i: Int, string: String?, i_0_: Int, stri
     }
 
     companion object {
-        @JvmField
+
         var aNodeDeque_4473: NodeDeque?
         var anInt4474: Int = 0
         var aInboundPacketHeader_4477: InboundPacketHeader?

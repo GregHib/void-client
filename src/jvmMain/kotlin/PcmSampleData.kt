@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 class PcmSampleData : AbstractAudioSample {
-    @JvmField
+
     var aByteArray8984: ByteArray?
     var anInt8985: Int
     var anInt8986: Int

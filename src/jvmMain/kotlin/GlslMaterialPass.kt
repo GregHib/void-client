@@ -114,25 +114,25 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterTe
     }
 
     companion object {
-        @JvmField
+
         var anInt6235: Int = 0
-        @JvmField
+
         var anInt6236: Int = 0
-        @JvmField
+
         var anInt6238: Int = 0
-        @JvmField
+
         var anInt6239: Int = 0
-        @JvmField
+
         var anInt6240: Int = 0
-        @JvmField
+
         var anInt6241: Int = 0
-        @JvmField
+
         var anInt6243: Int = 0
-        @JvmField
+
         var aFontMetaRef_6244: FontMetaRef? = FontMetaRef(9, 8)
-        @JvmField
+
         var anInt6245: Int = 0
-        @JvmField
+
         var anInt6246: Int = 0
 
         @JvmStatic

@@ -37,9 +37,9 @@ class ParticleConfigParser {
         var anInt3815: Int = 0
         var anInt3816: Int = 0
         var anInt3818: Int = 0
-        @JvmField
+
         var aBoolean3819: Boolean = false
-        @JvmField
+
         var anInt3820: Int = 0
         var anInt3822: Int = 0
         var anInt3824: Int = 0

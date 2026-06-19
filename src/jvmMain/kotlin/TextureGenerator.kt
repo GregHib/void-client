@@ -5,21 +5,21 @@ abstract class TextureGenerator {
     abstract fun method1398(i: Int, i_3_: Int, f: Float, f_4_: Float, i_5_: Int, f_6_: Float, i_7_: Int, f_8_: Float, i_9_: Int, i_10_: Int, fs: FloatArray)
 
     companion object {
-        @JvmField
+
         var aJs5Archive_2490: Js5Archive? = null
-        @JvmField
+
         var aRgbColorPalette_2491: RgbColorPalette?
-        @JvmField
+
         var aBoolean2492: Boolean = false
-        @JvmField
+
         var anInt2493: Int = 0
-        @JvmField
+
         var aStringArray2494: Array<String?>?
-        @JvmField
+
         var aFontMetaRef_2495: FontMetaRef?
-        @JvmField
+
         var aString2496: String?
-        @JvmField
+
         var anIntArray2497: IntArray?
 
         @JvmStatic

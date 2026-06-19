@@ -2,27 +2,27 @@
 * Visit http://jode.sourceforge.net/
 */
 abstract class SceneEntity : SceneLinkedListNode() {
-    @JvmField
+
     var aByte6376: Byte = 0
-    @JvmField
+
     var x: Int = 0
-    @JvmField
+
     var aClass318_Sub1_6379: SceneEntity? = null
-    @JvmField
+
     var anInt6380: Int = 0
-    @JvmField
+
     var plane: Byte = 0
-    @JvmField
+
     var anInt6382: Int = 0
-    @JvmField
+
     var anInt6386: Int = 0
-    @JvmField
+
     var aBoolean6387: Boolean = false
-    @JvmField
+
     var y: Int = 0
-    @JvmField
+
     var anInt6389: Int = 0
-    @JvmField
+
     var aBoolean6391: Boolean = false
     abstract fun method2376(i: Int): Boolean
 
@@ -74,9 +74,9 @@ abstract class SceneEntity : SceneLinkedListNode() {
     abstract fun method2394(bool: Boolean): Int
 
     companion object {
-        @JvmField
+
         var anInt6378: Int = 0
-        @JvmField
+
         var anInt6384: Int = 0
         var aLongArrayArrayArray10431: Array<Array<LongArray?>?>? = null
         var aSoundEnvelopeArray5993: Array<SoundEnvelope?>? = null

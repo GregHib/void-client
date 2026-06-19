@@ -11,9 +11,9 @@ class ProjectileFactory internal constructor(i: Int, var anInt2896: Int) {
         var anInt2894: Int = 0
         var aBoolean2895: Boolean = false
         var anInt2897: Int = 0
-        @JvmField
+
         var anIntArray2899: IntArray?
-        @JvmField
+
         var anIntArrayArray2900: Array<IntArray?>?
 
 

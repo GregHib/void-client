@@ -115,10 +115,10 @@ class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
         var anInt2199: Int = 0
         var anInt2200: Int = 0
         var aFloat2203: Float = 0f
-        @JvmField
+
         var anInt2204: Int = 0
         var anInt2206: Int = 0
-        @JvmField
+
         var aRenderConfigFactory_2207: RenderConfigFactory? = RenderConfigFactory()
         var aJs5Archive_2208: Js5Archive? = null
         @JvmStatic

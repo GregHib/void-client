@@ -4,10 +4,10 @@ import jagtheora.misc.SimplePeer
 import jagtheora.ogg.OggPacket
 
 class VorbisInfo : SimplePeer() {
-    @JvmField
+
     var rate: Int = 0
 
-    @JvmField
+
     var channels: Int = 0
 
     init {

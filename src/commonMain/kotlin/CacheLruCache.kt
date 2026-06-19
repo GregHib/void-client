@@ -81,10 +81,10 @@ class CacheLruCache internal constructor(private var anInt3891: Int) {
         var anInt3879: Int = 0
         var anInt3880: Int = 0
         var anInt3881: Int = 0
-        @JvmField
+
         var aByteArrayArray3882: Array<ByteArray?>? = null
         var anIntArray3883: IntArray?
-        @JvmField
+
         var anCharStreamReaderArray3884s: Array<CharStreamReader?>? = arrayOfNulls<CharStreamReader>(75)
         var anInt3885: Int = 0
         var anInt3886: Int = 0

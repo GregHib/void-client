@@ -562,7 +562,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
         )
         var anInt9623: Int = 0
         var anInt9624: Int = 0
-        @JvmField
+
         var anIntArray9626: IntArray? = IntArray(50)
         var anInt9630: Int = 0
         var anInt9633: Int = 0
@@ -570,7 +570,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
         var anInt9637: Int = 0
         var anInt9638: Int = 0
         var anInt9641: Int = 0
-        @JvmField
+
         var aDoublyLinkedNodeList_9642: DoublyLinkedNodeList? = DoublyLinkedNodeList()
         var anInt9645: Int = 1
 

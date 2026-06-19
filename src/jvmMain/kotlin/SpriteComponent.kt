@@ -40,27 +40,27 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
     }
 
     companion object {
-        @JvmField
+
         var anInt8367: Int = 0
-        @JvmField
+
         var anInt8368: Int = 0
-        @JvmField
+
         var anInt8369: Int = 0
-        @JvmField
+
         var anInt8370: Int = 0
-        @JvmField
+
         var anInt8371: Int = 0
-        @JvmField
+
         var anInt8372: Int = 0
-        @JvmField
+
         var anInt8373: Int = 0
-        @JvmField
+
         var anInt8374: Int = 0
-        @JvmField
+
         var anInt8375: Int = 0
-        @JvmField
+
         var anInt8376: Int = 0
-        @JvmField
+
         var anInt8377: Int = 0
 
         @JvmStatic

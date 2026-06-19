@@ -40,23 +40,23 @@ class DirectionPath {
     }
 
     companion object {
-        @JvmField
+
         var anInt1056: Int = 0
-        @JvmField
+
         var anInt1059: Int = 0
-        @JvmField
+
         var anInt1060: Int = 0
-        @JvmField
+
         var anInt1061: Int = 0
-        @JvmField
+
         var anInt1062: Int = 0
-        @JvmField
+
         var anInt1063: Int = 0
-        @JvmField
+
         var anInt1064: Int = -2
-        @JvmField
+
         var anInt1065: Int = 0
-        @JvmField
+
         var anInt1066: Int = 0
 
         @JvmStatic

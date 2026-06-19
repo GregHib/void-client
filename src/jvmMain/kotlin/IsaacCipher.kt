@@ -201,23 +201,23 @@ class IsaacCipher {
     }
 
     companion object {
-        @JvmField
+
         var anInt1290: Int = 0
-        @JvmField
+
         var anInt1295: Int = 0
-        @JvmField
+
         var anInt1297: Int = 0
-        @JvmField
+
         var aBoundsConstraintEntry_1298: BoundsConstraintEntry? = BoundsConstraintEntry("", 16)
-        @JvmField
+
         var anInt1299: Int = 0
-        @JvmField
+
         var anInt1300: Int = 0
-        @JvmField
+
         var anInt1301: Int = 0
-        @JvmField
+
         var anInt1302: Int = 0
-        @JvmField
+
         var anIntArray1303: IntArray? = null
 
         fun method776(i: Int, i_0_: Int, i_1_: Int): Boolean {

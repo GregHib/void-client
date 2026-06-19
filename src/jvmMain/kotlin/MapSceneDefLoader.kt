@@ -58,7 +58,7 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
 
     companion object {
         var anInt2481: Int = 0
-        @JvmField
+
         var anInt2482: Int = 0
         var aInboundPacketHeader_2483: InboundPacketHeader?
         var anInt2484: Int = 0
@@ -120,7 +120,7 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
             '\u00d1',
             '\u00df'
         )
-        @JvmField
+
         var aProjectileFactory_2489: ProjectileFactory?
 
         @JvmStatic

@@ -75,19 +75,19 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
     }
 
     companion object {
-        @JvmField
+
         var anIntArray9431: IntArray? = IntArray(1)
-        @JvmField
+
         var aSceneLoaderThreadArray9432: Array<SceneLoaderThread?>? = null
-        @JvmField
+
         var anInt9433: Int = 0
-        @JvmField
+
         var anInt9434: Int = 0
-        @JvmField
+
         var anInt9435: Int = 0
-        @JvmField
+
         var anIntArray9436: IntArray? = IntArray(2)
-        @JvmField
+
         var anInt9437: Int = 0
         @JvmStatic
         fun method3140(i: Int, i_0_: Int): Int {

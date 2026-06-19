@@ -188,10 +188,10 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
     companion object {
         var anInt10328: Int = 0
         var anInt10329: Int = 0
-        @JvmField
+
         var aMapTileShapeArray10330: Array<MapTileShape?>? = null
         var anInt10333: Int = 0
-        @JvmField
+
         var aWidgetComponent_10336: WidgetComponent? = null
         var anInt10337: Int = 0
         var anInt10340: Int = 0
@@ -212,7 +212,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
         var anInt10361: Int = 0
         var anInt10362: Int = 0
         var anInt10363: Int = 0
-        @JvmField
+
         var anInt10364: Int = 0
 
         fun method2461(class318_sub6: SceneEffectMarker, bool: Boolean) {

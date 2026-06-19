@@ -44,23 +44,23 @@ class LightDetailOptionState : GraphicsOptionState {
     internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     companion object {
-        @JvmField
+
         var anInt6029: Int = 0
-        @JvmField
+
         var aConfigFlagUtil_6030: ConfigFlagUtil? = ConfigFlagUtil()
-        @JvmField
+
         var anInt6031: Int = 0
-        @JvmField
+
         var anInt6032: Int = 0
-        @JvmField
+
         var anInt6033: Int = 0
-        @JvmField
+
         var anInt6034: Int = 0
-        @JvmField
+
         var anInt6036: Int = 0
-        @JvmField
+
         var anInt6037: Int = 0
-        @JvmField
+
         var anInt6038: Int = 0
 
         @JvmStatic

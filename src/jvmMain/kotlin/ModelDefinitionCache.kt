@@ -76,12 +76,12 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
         var aSingletonMarker_2864: SingletonMarker? = SingletonMarker()
         var anInt2865: Int = 0
         var anInt2867: Int = 0
-        @JvmField
+
         var aProjectileFactory_2868: ProjectileFactory? = ProjectileFactory(0, 1)
         var anInt2869: Int = 0
         var anInt2870: Int = 0
         var aByte2871: Byte = 0
-        @JvmField
+
         var anInt2872: Int = 0
         var anInt2874: Int = 0
         fun method1599(i: Byte, i_0_: Int, i_1_: Int): Boolean {

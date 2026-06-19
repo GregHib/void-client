@@ -7,16 +7,16 @@ import java.awt.Canvas
  * Class93
  */
 object JagGlToolkitFactory {
-    @JvmField
+
     var anInt1529: Int = 0
-    @JvmField
+
     var anApplet1530: GameApplet? = null
     var aStringArray1531: Array<String>? = arrayOf("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")
-    @JvmField
+
     var anInt1532: Int = 0
-    @JvmField
+
     var anInt1533: Int = 0
-    @JvmField
+
     var anInt1534: Int = 0
 
     @JvmStatic

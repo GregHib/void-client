@@ -69,7 +69,7 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
         var anInt2053: Int = 0
         var anInt2055: Int = 0
         var anInt2056: Int = 0
-        @JvmField
+
         var anInt2057: Int = 0
 
         @JvmStatic

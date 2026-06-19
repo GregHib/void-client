@@ -144,27 +144,27 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wa
     }
 
     companion object {
-        @JvmField
+
         var aJs5Archive_6277: Js5Archive? = null
-        @JvmField
+
         var anInt6279: Int = 0
-        @JvmField
+
         var anInt6280: Int = 0
-        @JvmField
+
         var anInt6282: Int = 0
-        @JvmField
+
         var anInt6283: Int = 0
-        @JvmField
+
         var anInt6286: Int = 0
-        @JvmField
+
         var anInt6287: Int = 0
-        @JvmField
+
         var anInt6288: Int = 0
-        @JvmField
+
         var aBoolean6289: Boolean = false
-        @JvmField
+
         var anIntArray6290: IntArray? = IntArray(2048)
-        @JvmField
+
         var anInt6291: Int = 0
 
         @JvmStatic

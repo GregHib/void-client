@@ -47,7 +47,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
         var aSpriteMaskShape_4079: SpriteMaskShape? = SpriteMaskShape(5, 3, MovementDirection.aMovementDirection_1187)
         var aSpriteMaskShape_4080: SpriteMaskShape? = SpriteMaskShape(6, 4, MovementDirection.aMovementDirection_1187)
         var anInt4081: Int = method2253(16, 119)
-        @JvmField
+
         var aRectangleRegion_4082: RectangleRegion? = RectangleRegion(8, 0, 4, 1)
 
         fun method2596(i: Int, i_0_: Int): Array<Array<ByteArray?>?> {

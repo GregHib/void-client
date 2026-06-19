@@ -1,9 +1,9 @@
 abstract class AbstractMenuEntry {
-    @JvmField
+
     var anInt1704: Int = 0
-    @JvmField
+
     var anInt1708: Int = 0
-    @JvmField
+
     var anInt1711: Int = 0
     fun method1029(bool: Boolean): Boolean {
         anInt1707++

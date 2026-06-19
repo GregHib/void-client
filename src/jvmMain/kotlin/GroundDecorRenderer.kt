@@ -446,7 +446,7 @@ class GroundDecorRenderer internal constructor(var_ha_Sub3: NativeRenderer) {
         var anInt3639: Int = 0
         var anInt3640: Int = 0
         var aInboundPacketHeader_3641: InboundPacketHeader? = InboundPacketHeader(79, 3)
-        @JvmField
+
         var anInt3643: Int = 0
 
         @JvmStatic

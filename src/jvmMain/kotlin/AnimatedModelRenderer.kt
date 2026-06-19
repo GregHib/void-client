@@ -462,47 +462,47 @@ class AnimatedModelRenderer : AbstractModelRenderer {
     }
 
     companion object {
-        @JvmField
+
         var anInt8390: Int = 0
-        @JvmField
+
         var anInt8392: Int = 0
-        @JvmField
+
         var anInt8393: Int = 0
-        @JvmField
+
         var anInt8394: Int = 0
-        @JvmField
+
         var anInt8395: Int = 0
-        @JvmField
+
         var anInt8398: Int = 0
-        @JvmField
+
         var anInt8399: Int = 0
-        @JvmField
+
         var anInt8401: Int = 0
-        @JvmField
+
         var anInt8402: Int = 0
-        @JvmField
+
         var anInt8404: Int = 0
-        @JvmField
+
         var anInt8405: Int = 0
-        @JvmField
+
         var anInt8406: Int = 0
-        @JvmField
+
         var anInt8409: Int = 0
-        @JvmField
+
         var anInt8412: Int = 0
-        @JvmField
+
         var anInt8413: Int = 0
-        @JvmField
+
         var anInt8414: Int = 0
-        @JvmField
+
         var anInt8415: Int = 0
-        @JvmField
+
         var anInt8420: Int = 0
-        @JvmField
+
         var anInt8421: Int = 0
-        @JvmField
+
         var anInt8422: Int = 0
-        @JvmField
+
         var anInt8423: Int = 0
 
         @JvmStatic

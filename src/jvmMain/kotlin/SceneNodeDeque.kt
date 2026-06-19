@@ -17,7 +17,7 @@ import java.net.URL
  * Class88
  */
 class SceneNodeDeque {
-    @JvmField
+
     var aClass318_Sub9_1503: SceneListNode? = SceneListNode()
     private var aClass318_Sub9_1505: SceneListNode? = null
 
@@ -87,28 +87,28 @@ class SceneNodeDeque {
     }
 
     companion object {
-        @JvmField
+
         var anInt1492: Int = 0
-        @JvmField
+
         var anInt1493: Int = 0
-        @JvmField
+
         var anInt1494: Int = 0
-        @JvmField
+
         var anInt1495: Int = 0
-        @JvmField
+
         var anInt1496: Int = 0
         var anInt1497: Int = 0
-        @JvmField
+
         var anInt1498: Int = 0
-        @JvmField
+
         var anInt1499: Int = 0
-        @JvmField
+
         var aBoolean1500: Boolean = false
-        @JvmField
+
         var anInt1501: Int = 0
-        @JvmField
+
         var anInt1502: Int = 0
-        @JvmField
+
         var anInt1504: Int = 0
         fun method841(i: Int): Array<BoxedIntHolder?> {
             anInt1504++

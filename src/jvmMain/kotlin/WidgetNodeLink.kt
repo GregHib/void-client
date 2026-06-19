@@ -2,9 +2,9 @@
 * Visit http://jode.sourceforge.net/
 */
 class WidgetNodeLink {
-    @JvmField
+
     var aWidgetNodeLink_2038: WidgetNodeLink? = null
-    @JvmField
+
     var aClass318_Sub1_Sub3_2040: GroundDecorEntity? = null
     fun method1199(i: Byte) {
         anInt2043++
@@ -17,9 +17,9 @@ class WidgetNodeLink {
     }
 
     companion object {
-        @JvmField
+
         var anInt2037: Int = 0
-        @JvmField
+
         var anIntArray2039: IntArray? = intArrayOf(1, 0, -1, 0)
         var anInt2041: Int = 0
         var aSingletonMarker_2042: SingletonMarker? = SingletonMarker()

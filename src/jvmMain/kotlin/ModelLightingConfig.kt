@@ -91,11 +91,11 @@ class ModelLightingConfig {
 
     companion object {
         var anInt2537: Int = 0
-        @JvmField
+
         var aFontMetaRef_2539: FontMetaRef? = FontMetaRef(26, 7)
         var anInt2543: Int = 0
         var anInt2553: Int = 0
-        @JvmField
+
         var aRectangleArray2554: Array<Rectangle?>? = arrayOfNulls<Rectangle>(100)
         var aFloat2555: Float = 0f
 

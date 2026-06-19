@@ -6,41 +6,41 @@ import CacheArchiveIndexLoader.Companion.method340
 class ItemDefinition {
     var anInt2752: Int = -1
     private var anInt2753 = 0
-    @JvmField
+
     var aBoolean2755: Boolean = false
     private var anInt2756 = 0
-    @JvmField
+
     var aHashtable_2757: Hashtable? = null
-    @JvmField
+
     var anInt2758: Int
     var anInt2759: Int
     private var anInt2760: Int
-    @JvmField
+
     var aModelHeaderCache_2761: ModelHeaderCache? = null
-    @JvmField
+
     var anIntArray2762: IntArray? = null
-    @JvmField
+
     var aStringArray2763: Array<String?>? = null
     var anInt2764: Int
     private var anInt2765 = 128
     var anInt2766: Int
     private var anInt2767: Int
-    @JvmField
+
     var anInt2769: Int = 0
     private var anInt2770 = -1
     private var aShortArray2771: ShortArray = shortArrayOf()
-    @JvmField
+
     var anIntArray2772: IntArray? = intArrayOf()
     var anInt2774: Int
     private var anInt2775: Int
     private var aShortArray2777: ShortArray? = null
-    @JvmField
+
     var anInt2778: Int
     var anInt2779: Int = 0
     var anInt2781: Int = 0
-    @JvmField
+
     var aBoolean2783: Boolean = false
-    @JvmField
+
     var anInt2784: Int = 0
     private var aShortArray2785: ShortArray? = null
     private var anInt2786 = 128
@@ -49,7 +49,7 @@ class ItemDefinition {
     private var anInt2791 = 0
     private var anInt2792: Int
     private var anInt2794 = 128
-    @JvmField
+
     var aString2795: String? = "null"
     private var anInt2797 = 0
     var anInt2799: Int = 0
@@ -61,16 +61,16 @@ class ItemDefinition {
     private var anInt2807 = 0
     private var anInt2808 = 0
     var anInt2810: Int = 0
-    @JvmField
+
     var aStringArray2811: Array<String?> = emptyArray()
-    @JvmField
+
     var anInt2812: Int
     var anInt2815: Int
     var anInt2817: Int
     var anInt2818: Int
-    @JvmField
+
     var anInt2819: Int = 1
-    @JvmField
+
     var anInt2820: Int = 0
     private var aByteArray2821: ByteArray? = null
     private var anInt2822: Int
@@ -78,12 +78,12 @@ class ItemDefinition {
     private var anInt2824 = 0
     var anInt2825: Int = 2000
     var anInt2826: Int = 0
-    @JvmField
+
     var anInt2827: Int = 0
     var anInt2830: Int
-    @JvmField
+
     var anIntArray2831: IntArray = intArrayOf()
-    @JvmField
+
     var anInt2833: Int
 
     fun method1554(bool: Boolean, i: Int): ModelDefinition? {
@@ -693,17 +693,17 @@ class ItemDefinition {
         var anInt2751: Int = 0
         var anInt2754: Int = 0
         var anInt2768: Int = 0
-        @JvmField
+
         var aAbstractGameSocket_2773: AbstractGameSocket? = null
         var anInt2776: Int = 0
         var anInt2780: Int = 0
         var anInt2782: Int = 0
-        @JvmField
+
         var aLong2789: Long = 0
         var anInt2790: Int = 0
         var anInt2793: Int = 0
         var anInt2796: Int = 0
-        @JvmField
+
         var anInt2798: Int = 0
         var anInt2800: Int = 0
         var anInt2806: Int = 0

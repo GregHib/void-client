@@ -28,23 +28,23 @@ class FileExistsCondition internal constructor(js5Archive: Js5Archive?, string: 
 
     companion object {
         var aFloatArray4772: FloatArray?
-        @JvmField
+
         var anInt4773: Int = 0
-        @JvmField
+
         var anInt4774: Int = 0
-        @JvmField
+
         var anInt4775: Int = 0
-        @JvmField
+
         var anInt4776: Int
-        @JvmField
+
         var anInt4777: Int = 0
         var aInboundPacketHeader_4779: InboundPacketHeader?
         var anIntArray4780: IntArray?
-        @JvmField
+
         var anInt4781: Int = 0
-        @JvmField
+
         var aModelDefinitionCache_4782: ModelDefinitionCache? = null
-        @JvmField
+
         var aLong4783: Long = 20000000L
         var anInt4786: Int = 0
 

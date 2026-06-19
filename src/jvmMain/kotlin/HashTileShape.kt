@@ -15,17 +15,17 @@ class HashTileShape internal constructor(i: Int, i_9_: Int, i_10_: Int, i_11_: I
     }
 
     companion object {
-        @JvmField
+
         var aNodeDeque_8810: NodeDeque? = NodeDeque()
-        @JvmField
+
         var anInt8812: Int = 0
-        @JvmField
+
         var anInt8813: Int = 0
-        @JvmField
+
         var anInt8814: Int = 0
-        @JvmField
+
         var aByteArrayArray8816: Array<ByteArray?>? = null
-        @JvmField
+
         var aInboundPacketHeader_8817: InboundPacketHeader? = InboundPacketHeader(83, 2)
 
         @JvmStatic

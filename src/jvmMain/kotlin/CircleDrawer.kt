@@ -8,17 +8,17 @@ import WhirlpoolHash.Companion.method831
 object CircleDrawer {
     var anInt2685: Int = 0
     var aFontMetaRef_2686: FontMetaRef?
-    @JvmField
+
     var aFloat2687: Float = 0.0f
     var anInt2688: Int = 0
-    @JvmField
+
     var anInt2689: Int = 0
     var anInt2690: Int = 0
-    @JvmField
+
     var aFontMetaRef_2691: FontMetaRef?
     var aClass348_Sub44_2692: PackedFlagsAccessor?
     var aInboundPacketHeader_2693: InboundPacketHeader?
-    @JvmField
+
     var anIntArray2694: IntArray?
 
     @JvmStatic

@@ -4,7 +4,7 @@ import java.awt.Color
 
 class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedListNode() {
     companion object {
-        @JvmField
+
         var anInt6857: Int = 0
         var anInt6858: Int = 0
         var anInt6860: Int = 0

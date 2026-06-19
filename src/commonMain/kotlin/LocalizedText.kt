@@ -37,45 +37,45 @@ class LocalizedText private constructor(string: String?, string_7_: String?, str
         var aLocalizedText_3492: LocalizedText?
         var aLocalizedText_3493: LocalizedText?
         var aLocalizedText_3494: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3495: LocalizedText?
         var aLocalizedText_3496: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3497: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3498: LocalizedText?
         var aLocalizedText_3499: LocalizedText?
         var aLocalizedText_3500: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3501: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3502: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3503: LocalizedText?
         var aLocalizedText_3504: LocalizedText?
         var aLocalizedText_3505: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3506: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3507: LocalizedText?
         var aLocalizedText_3508: LocalizedText?
         var aLocalizedText_3509: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3510: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3511: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3512: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3513: LocalizedText?
         var aLocalizedText_3514: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3515: LocalizedText?
         var aLocalizedText_3516: LocalizedText?
         var aLocalizedText_3517: LocalizedText?
         var aLocalizedText_3518: LocalizedText?
         var aLocalizedText_3519: LocalizedText?
-        @JvmField
+
         var aLocalizedText_3520: LocalizedText?
         var aLocalizedText_3521: LocalizedText?
         var aLocalizedText_3522: LocalizedText?

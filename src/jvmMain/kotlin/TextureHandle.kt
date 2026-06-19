@@ -14,12 +14,12 @@ class TextureHandle internal constructor(private val aGlRenderDevice_2585: GlRen
     companion object {
         var anInt2583: Int = 0
         var anInt2586: Int = 0
-        @JvmField
+
         var aFontMetaRef_2587: FontMetaRef? = FontMetaRef(38, 7)
         var anInt2588: Int = 0
-        @JvmField
+
         var aSocketStreamWorker_2589: SocketStreamWorker? = null
-        @JvmField
+
         var anInt2590: Int = 0
 
         fun method1439(i: Int, privilegedOperationWorker: PrivilegedOperationWorker?, component: Component?, i_0_: Int, i_1_: Int): SoundChannelMixer {

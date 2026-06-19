@@ -12,14 +12,14 @@ import kotlin.math.min
  * Class14
  */
 abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFormatInfo: TextureFormatInfo?, movementDirection: MovementDirection?, i_66_: Int, bool: Boolean) : Renderable {
-    @JvmField
+
     var aGlRenderDevice_5082: GlRenderDevice? = null
-    @JvmField
+
     var aTextureFormatInfo_5084: TextureFormatInfo? = null
-    @JvmField
+
     var aMovementDirection_5088: MovementDirection? = null
     private val anInt5090: Int
-    @JvmField
+
     var anInt5093: Int = 0
     private var anInt5096 = 0
     private var aBoolean5099 = false
@@ -322,33 +322,33 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
     }
 
     companion object {
-        @JvmField
+
         var anInt5083: Int = 0
-        @JvmField
+
         var anInt5085: Int = 0
-        @JvmField
+
         var anInt5086: Int = 0
-        @JvmField
+
         var anInt5087: Int = 0
-        @JvmField
+
         var aLong5089: Long = -1L
-        @JvmField
+
         var anInt5092: Int = 0
-        @JvmField
+
         var anInt5094: Int = 0
-        @JvmField
+
         var anInt5095: Int = 0
-        @JvmField
+
         var anInt5097: Int = 0
-        @JvmField
+
         var anInt5098: Int = 0
-        @JvmField
+
         var anInt5100: Int = 0
-        @JvmField
+
         var anInt5102: Int = 0
-        @JvmField
+
         var anInt5103: Int = 0
-        @JvmField
+
         var anInt5104: Int = 0
 
         @JvmStatic

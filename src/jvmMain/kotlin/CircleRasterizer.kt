@@ -3,11 +3,11 @@
 */
 abstract class CircleRasterizer {
     companion object {
-        @JvmField
+
         var anInt3812: Int = 0
-        @JvmField
+
         var aClass348_Sub49_Sub2_3813: CipheredPacketBuffer? = CipheredPacketBuffer(7500)
-        @JvmField
+
         var anInt3814: Int = 0
 
         @JvmStatic

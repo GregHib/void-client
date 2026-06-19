@@ -83,31 +83,31 @@ open class ScrollbarComponent(js5Archive: Js5Archive, js5Archive_0_: Js5Archive,
     }
 
     companion object {
-        @JvmField
+
         var anInt8334: Int = 0
-        @JvmField
+
         var aBoolean8335: Boolean = false
-        @JvmField
+
         var anInt8336: Int = 0
-        @JvmField
+
         var anInt8337: Int = 0
-        @JvmField
+
         var anInt8340: Int = 0
-        @JvmField
+
         var anInt8341: Int = 0
-        @JvmField
+
         var aScreenAnchorAlignment_8344: ScreenAnchorAlignment?
-        @JvmField
+
         var anInt8345: Int = 0
-        @JvmField
+
         var anInt8346: Int = 0
-        @JvmField
+
         var anInt8348: Int = 0
-        @JvmField
+
         var anInt8349: Int = 0
-        @JvmField
+
         var anInt8351: Int = 0
-        @JvmField
+
         var anInt8352: Int = 0
 
         @JvmStatic

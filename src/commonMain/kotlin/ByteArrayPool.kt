@@ -2,13 +2,13 @@
 * Visit http://jode.sourceforge.net/
 */
 object ByteArrayPool {
-    @JvmField
+
     var anInt491: Int = 0
-    @JvmField
+
     var anInt492: Int = 0
-    @JvmField
+
     var anInt495: Int = 0
-    @JvmField
+
     var anInt496: Int = 0
 
 

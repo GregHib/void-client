@@ -15,19 +15,19 @@ class NullOggStream internal constructor(oggstreamstate: OggStreamState) : OggBi
     }
 
     companion object {
-        @JvmField
+
         var anInt9040: Int = 0
-        @JvmField
+
         var anInt9041: Int = 0
-        @JvmField
+
         var anIntArray9042: IntArray? = null
-        @JvmField
+
         var aString9043: String? = null
-        @JvmField
+
         var aShort9044: Short = 256
-        @JvmField
+
         var anInt9045: Int = 0
-        @JvmField
+
         var anInt9046: Int = 0
 
         @JvmStatic

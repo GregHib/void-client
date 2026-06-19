@@ -21,7 +21,7 @@ class StringValueNode : LinkedListNode {
         var anInt7112: Int = 0
         var aInboundPacketHeader_7113: InboundPacketHeader? = InboundPacketHeader(97, 0)
         var anInt7114: Int = 0
-        @JvmField
+
         var anInt7115: Int = 1
 
         @JvmStatic

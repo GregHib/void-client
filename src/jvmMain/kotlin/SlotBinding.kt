@@ -70,7 +70,7 @@ class SlotBinding private constructor(private val aCollisionFlagQuery_3392: Coll
         var aSlotBinding_3425: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1195)
         var aSlotBinding_3426: SlotBinding? = SlotBinding(CollisionFlagQuery.aCollisionFlagQuery_1198)
         var aInboundPacketHeader_3427: InboundPacketHeader? = InboundPacketHeader(93, -2)
-        @JvmField
+
         var anInt3428: Int = -1
 
         @JvmStatic

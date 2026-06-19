@@ -5,7 +5,7 @@ open class MaterialTypeMarker : ShaderObject() {
     companion object {
         var aConnectionStateTypeArray6515: Array<ConnectionStateType?>? = null
         var anInt6516: Int = 0
-        @JvmField
+
         var aLruByteCache_6517: LruByteCache? = LruByteCache(4)
         var anInt6518: Int = 0
 

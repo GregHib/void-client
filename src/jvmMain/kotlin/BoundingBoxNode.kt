@@ -30,7 +30,7 @@ class BoundingBoxNode internal constructor(var aClass348_Sub21_6751: CameraSplin
 
     companion object {
         var anInt6734: Int = 0
-        @JvmField
+
         var aShortArrayArrayArray6736: Array<Array<ShortArray?>?>?
         var anInt6739: Int = 0
         var anIntArrayArray6740: Array<IntArray?>?

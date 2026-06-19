@@ -53,7 +53,7 @@ class SplashImageLoadable internal constructor(js5Archive: Js5Archive?, configVa
         var aRgbColorPalette_4689: RgbColorPalette? = RgbColorPalette(2, 4)
         var anInt4690: Int = 0
         var anInt4691: Int = 0
-        @JvmField
+
         var anIntArray4692: IntArray? = null
         var aBooleanArrayArray4693: Array<BooleanArray?>? =
             arrayOf<BooleanArray?>(BooleanArray(4), BooleanArray(4), booleanArrayOf(false, false, true, false), booleanArrayOf(false, false, true, false), booleanArrayOf(false, false, true, false), booleanArrayOf(false, false, true, false), booleanArrayOf(true, false, true, false), booleanArrayOf(true, false, false, true), booleanArrayOf(true, false, false, true), BooleanArray(4), BooleanArray(4), BooleanArray(4), BooleanArray(4))

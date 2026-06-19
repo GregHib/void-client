@@ -9,11 +9,11 @@ class ConfigValueProvider internal constructor(@JvmField var anInt4912: Int) : C
     }
 
     companion object {
-        @JvmField
+
         var anInt4908: Int = 0
-        @JvmField
+
         var anInt4909: Int = 0
-        @JvmField
+
         var anInt4910: Int = 0
         var anInt4911: Int = -1
         fun method1080(i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {

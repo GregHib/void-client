@@ -6,7 +6,7 @@ import ContactList.Companion.method721
 */
 class ManagedGlResource internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Long, i: Int) {
     private val aHa_Sub2_3153: OpenGlRenderer?
-    @JvmField
+
     var aLong3156: Long = 0
 
     @Throws(Throwable::class)
@@ -27,7 +27,7 @@ class ManagedGlResource internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Lo
 
     companion object {
         var anInt3151: Int = 0
-        @JvmField
+
         var aClass348_Sub42_Sub13_3152: ContactList? = null
         var anInt3154: Int = 0
         var anInt3155: Int = 0

@@ -21,14 +21,14 @@ class MapArchiveSource internal constructor(private val aJs5Archive_4804: Js5Arc
     }
 
     companion object {
-        @JvmField
+
         var anInt4797: Int = 0
         var aInboundPacketHeader_4798: InboundPacketHeader?
         var anInt4799: Int = 0
         var anInt4800: Int = 0
         var anInt4801: Int = 0
         var anInt4802: Int = 0
-        @JvmField
+
         var anInt4803: Int = -1
         var anInt4805: Int = 0
 

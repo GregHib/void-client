@@ -5,7 +5,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
     private var aByteArrayArray1979: Array<ByteArray?>? = null
     private val aByteArray1986: ByteArray
     var anInt1988: Int
-    @JvmField
+
     var anInt1992: Int = 0
     var anInt1993: Int
 

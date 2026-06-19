@@ -3,15 +3,15 @@
 */
 class FloorOverlayDefinition {
     private var aByte966: Byte = 0
-    @JvmField
+
     var anInt967: Int = 0
-    @JvmField
+
     var anInt969: Int = 0
-    @JvmField
+
     var anInt973: Int = 0
-    @JvmField
+
     var anInt976: Int = 0
-    @JvmField
+
     var anInt977: Int = 0
 
     fun method499(i: Int): Int {
@@ -39,17 +39,17 @@ class FloorOverlayDefinition {
     }
 
     companion object {
-        @JvmField
+
         var anInt968: Int = 0
-        @JvmField
+
         var anInt970: Int = 0
-        @JvmField
+
         var anInt971: Int = 0
-        @JvmField
+
         var anInt972: Int = 0
-        @JvmField
+
         var aStringArray974: Array<String?>? = null
-        @JvmField
+
         var anInt975: Int = 0
         @JvmStatic
         fun method500(i: Int, i_0_: Int): Int {

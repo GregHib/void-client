@@ -285,7 +285,7 @@ class VorbisAudioDecoder private constructor(`is`: ByteArray?) : LinkedListNode(
         private var aBooleanArray6713: BooleanArray? = null
         private var aByteArray6714: ByteArray? = null
         private var aVorbisFloorDecoderArray6715: Array<VorbisFloorDecoder?>? = null
-        @JvmField
+
         var aVorbisCodebookArray6718: Array<VorbisCodebook?>? = null
         private var anIntArray6719: IntArray? = null
         private var aFloatArray6720: FloatArray? = null

@@ -53,22 +53,22 @@ class WorldMapRenderer internal constructor(mapRegionLoaderThread: MapRegionLoad
     }
 
     companion object {
-        @JvmField
+
         var aSystemFontGlyphs_4672: SystemFontGlyphs? = null
         var aFloat4673: Float = 0f
-        @JvmField
+
         var anInt4674: Int = 0
         var anInt4675: Int = 0
         var anInt4676: Int = 0
         var anInt4677: Int = 0
         var anInt4678: Int = 0
-        @JvmField
+
         var aAbstractModelRendererArray4679: Array<AbstractModelRenderer?>? = null
         var anInt4680: Int = 0
         var anInt4681: Int = 0
         var aLong4683: Long = 0
         var aFont_4684: Font? = null
-        @JvmField
+
         var anInt4686: Int = 0
 
         fun method1852(i: Int, i_1_: Int, i_2_: Int, i_3_: Int) {

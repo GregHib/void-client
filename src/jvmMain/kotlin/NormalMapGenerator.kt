@@ -82,12 +82,12 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
 
     companion object {
         var anInt3450: Int = 0
-        @JvmField
+
         var anInt3451: Int = 0
-        @JvmField
+
         var aParticleAmountCache_3453: ParticleAmountCache? = null
         var anInt3456: Int = 0
-        @JvmField
+
         var anInt3460: Int = 0
         var anInt3461: Int = 0
         var aFloat3462: Float = 0f

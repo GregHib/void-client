@@ -2,48 +2,48 @@
 * Visit http://jode.sourceforge.net/
 */
 class WidgetDefinition {
-    @JvmField
+
     var anIntArray236: IntArray? = null
-    @JvmField
+
     var anIntArray237: IntArray = IntArray(0)
-    @JvmField
+
     var anInt238: Int
-    @JvmField
+
     var anInt239: Int = 5
-    @JvmField
+
     var aBoolean241: Boolean = false
-    @JvmField
+
     var aBoolean242: Boolean = false
-    @JvmField
+
     var anInt244: Int = 99
-    @JvmField
+
     var anInt245: Int
-    @JvmField
+
     var anInt248: Int = 2
-    @JvmField
+
     var anInt249: Int
-    @JvmField
+
     var aWidgetCache_251: WidgetCache? = null
-    @JvmField
+
     var anIntArray253: IntArray? = null
-    @JvmField
+
     var aBoolean254: Boolean = false
     private var anIntArray260: IntArray? = null
-    @JvmField
+
     var anInt261: Int
-    @JvmField
+
     var anInt262: Int
-    @JvmField
+
     var aBooleanArray263: BooleanArray? = null
-    @JvmField
+
     var anIntArrayArray264: Array<IntArray?>? = null
-    @JvmField
+
     var anIntArray265: IntArray? = null
-    @JvmField
+
     var anIntArray267: IntArray? = null
-    @JvmField
+
     var aBoolean268: Boolean = false
-    @JvmField
+
     var anInt269: Int = 0
 
     fun method263(i: Int, i_0_: Int, i_1_: Int, bool: Boolean): Int {
@@ -316,28 +316,28 @@ class WidgetDefinition {
     }
 
     companion object {
-        @JvmField
+
         var anInt235: Int = 0
-        @JvmField
+
         var anInt240: Int = 0
-        @JvmField
+
         var anInt243: Int = 0
-        @JvmField
+
         var anInt246: Int = 0
         var aInboundPacketHeader_250: InboundPacketHeader? = InboundPacketHeader(4, 1)
-        @JvmField
+
         var anSpriteDrawTarget_252: SpriteDrawTarget? = null
-        @JvmField
+
         var anIntArrayArray255: Array<IntArray?>? = null
-        @JvmField
+
         var anIntArray256: IntArray? = null
-        @JvmField
+
         var anInt257: Int = 0
-        @JvmField
+
         var anInt258: Int = 0
-        @JvmField
+
         var anInt259: Int = 0
-        @JvmField
+
         var anInt266: Int = 0
         @JvmStatic
         fun method265(bool: Boolean) {

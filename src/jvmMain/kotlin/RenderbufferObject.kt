@@ -91,7 +91,7 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
         var anInt8566: Int = 0
         var anInt8568: Int = 0
         var anInt8570: Int = 0
-        @JvmField
+
         var aLong8573: Long = 0L
 
         fun method3171(var_renderer: Renderer?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, bool: Boolean, bool_5_: Boolean) {

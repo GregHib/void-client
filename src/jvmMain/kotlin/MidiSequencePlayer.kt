@@ -892,95 +892,95 @@ class MidiSequencePlayer : AudioStreamNode {
     }
 
     companion object {
-        @JvmField
+
         var anInt8889: Int = 0
-        @JvmField
+
         var anInt8890: Int = 0
-        @JvmField
+
         var anInt8892: Int = 0
-        @JvmField
+
         var anInt8893: Int = 0
-        @JvmField
+
         var anInt8897: Int = 0
-        @JvmField
+
         var anInt8898: Int = 0
-        @JvmField
+
         var anInt8900: Int = 0
-        @JvmField
+
         var anInt8901: Int = 0
-        @JvmField
+
         var anInt8903: Int = 0
-        @JvmField
+
         var anInt8905: Int = 0
-        @JvmField
+
         var anInt8907: Int = 0
-        @JvmField
+
         var anInt8908: Int = 0
-        @JvmField
+
         var anInt8909: Int = 0
-        @JvmField
+
         var anIntArrayArray8910: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(0, 1, 2, 3), intArrayOf(1, 2, 3, 0), intArrayOf(1, 2, -1, 0), intArrayOf(2, 0, -1, 1), intArrayOf(0, 1, -1, 2), intArrayOf(1, 2, -1, 0), intArrayOf(-1, 4, -1, 1), intArrayOf(-1, 1, 3, -1), intArrayOf(-1, 0, 2, -1), intArrayOf(3, 5, 2, 0), intArrayOf(0, 2, 5, 3), intArrayOf(0, 2, 3, 5), intArrayOf(0, 1, 2, 3))
-        @JvmField
+
         var anInt8911: Int = 0
-        @JvmField
+
         var anInt8912: Int = 0
-        @JvmField
+
         var anInt8913: Int = 0
-        @JvmField
+
         var anInt8917: Int = 0
-        @JvmField
+
         var anInt8918: Int = 0
-        @JvmField
+
         var anInt8919: Int = 0
-        @JvmField
+
         var anInt8920: Int = 0
-        @JvmField
+
         var anInt8922: Int = 0
-        @JvmField
+
         var anInt8923: Int = 0
-        @JvmField
+
         var anInt8924: Int = 0
-        @JvmField
+
         var aJs5Archive_8926: Js5Archive? = null
-        @JvmField
+
         var anInt8927: Int = 0
-        @JvmField
+
         var anInt8929: Int = 0
-        @JvmField
+
         var anInt8930: Int = 0
-        @JvmField
+
         var anInt8931: Int = 0
-        @JvmField
+
         var anInt8932: Int = 0
-        @JvmField
+
         var anInt8934: Int = 0
-        @JvmField
+
         var anInt8935: Int = 0
-        @JvmField
+
         var anInt8936: Int = 0
-        @JvmField
+
         var anInt8938: Int = 0
-        @JvmField
+
         var anInt8940: Int = 0
-        @JvmField
+
         var anInt8941: Int = 0
-        @JvmField
+
         var anInt8943: Int = 0
-        @JvmField
+
         var anInt8946: Int = 0
-        @JvmField
+
         var anInt8948: Int = 0
-        @JvmField
+
         var anInt8949: Int = 0
-        @JvmField
+
         var anInt8950: Int = 0
-        @JvmField
+
         var anInt8951: Int = 0
-        @JvmField
+
         var anInt8952: Int = 0
-        @JvmField
+
         var anInt8954: Int = 0
-        @JvmField
+
         var anInt8955: Int = 0
         @JvmStatic
         fun method2839(i: Int, i_0_: Int, i_1_: Int) {

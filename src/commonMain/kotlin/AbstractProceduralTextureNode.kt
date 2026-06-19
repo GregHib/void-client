@@ -2,11 +2,11 @@
 * Visit http://jode.sourceforge.net/
 */
 abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmField var aBoolean7045: Boolean) : LinkedListNode() {
-    @JvmField
+
     var aClass348_Sub40Array7031: Array<AbstractProceduralTextureNode?>
     var aSpriteSheetCache_7032: SpriteSheetCache? = null
     var aImageFrameCache_7033: ImageFrameCache? = null
-    @JvmField
+
     var anInt7036: Int = 0
 
     open fun method3037(i: Int): Int {
@@ -87,25 +87,25 @@ abstract class AbstractProceduralTextureNode internal constructor(i: Int, @JvmFi
     }
 
     companion object {
-        @JvmField
+
         var anInt7027: Int = 0
-        @JvmField
+
         var anInt7028: Int = 0
-        @JvmField
+
         var anInt7029: Int = 0
-        @JvmField
+
         var anInt7034: Int = 0
-        @JvmField
+
         var anInt7035: Int = 0
-        @JvmField
+
         var anInt7037: Int = 0
-        @JvmField
+
         var anInt7038: Int = 0
-        @JvmField
+
         var anInt7039: Int = 0
-        @JvmField
+
         var anInt7040: Int = 0
-        @JvmField
+
         var anInt7043: Int = 0
     }
 }

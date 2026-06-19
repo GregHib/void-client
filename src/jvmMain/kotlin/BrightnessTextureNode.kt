@@ -26,15 +26,15 @@ class BrightnessTextureNode internal constructor(i: Int) : AbstractProceduralTex
     constructor() : this(4096)
 
     companion object {
-        @JvmField
+
         var aInboundPacketHeader_9216: InboundPacketHeader? = InboundPacketHeader(91, 2)
-        @JvmField
+
         var anInt9217: Int = 0
-        @JvmField
+
         var anInt9218: Int = 0
-        @JvmField
+
         var anInt9219: Int = 0
-        @JvmField
+
         var anInt9221: Int = 0
 
         fun method3084(i: Int, i_2_: Byte, i_3_: Int) {

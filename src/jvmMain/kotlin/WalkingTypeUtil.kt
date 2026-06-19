@@ -4,9 +4,9 @@
 object WalkingTypeUtil {
     var aInboundPacketHeader_3307: InboundPacketHeader? = InboundPacketHeader(56, 2)
     var anInt3308: Int = 0
-    @JvmField
+
     var aJs5Archive_3309: Js5Archive? = null
-    @JvmField
+
     var anInt3310: Int
     var anIntArray3311: IntArray?
     var anInt3312: Int = 0

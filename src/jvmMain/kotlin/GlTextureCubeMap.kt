@@ -5,7 +5,7 @@ import jaggl.OpenGL.Companion.glTexImage2Dub
 class GlTextureCubeMap : GlTexture {
     private var anInt8535 = -1
     private var anInt8536 = -1
-    @JvmField
+
     var anInt8538: Int = 0
 
     fun method1961(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
@@ -58,17 +58,17 @@ class GlTextureCubeMap : GlTexture {
     }
 
     companion object {
-        @JvmField
+
         var aLongArray8530: LongArray? = null
-        @JvmField
+
         var aParticleEmitterNodeArray8531s: Array<ParticleEmitterNode?>? = arrayOfNulls<ParticleEmitterNode>(50)
-        @JvmField
+
         var aStringArray8532: Array<String?>? = null
-        @JvmField
+
         var anInt8533: Int = 0
-        @JvmField
+
         var anInt8534: Int = 0
-        @JvmField
+
         var anInt8537: Int = 0
         @JvmStatic
         fun method1962(i: Int) {

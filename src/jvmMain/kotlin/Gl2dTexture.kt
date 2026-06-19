@@ -163,31 +163,31 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
     }
 
     companion object {
-        @JvmField
+
         var aString8605: String? = null
-        @JvmField
+
         var anInt8606: Int = 0
-        @JvmField
+
         var anInt8607: Int = 0
-        @JvmField
+
         var anInt8608: Int = 0
-        @JvmField
+
         var anInt8609: Int = 0
-        @JvmField
+
         var anInt8610: Int = 0
-        @JvmField
+
         var anInt8611: Int = 0
-        @JvmField
+
         var anInt8613: Int = 0
-        @JvmField
+
         var anInt8614: Int = 0
-        @JvmField
+
         var anInt8615: Int = 0
-        @JvmField
+
         var anInt8616: Int = 0
-        @JvmField
+
         var anInt8617: Int = 0
-        @JvmField
+
         var anInt8618: Int = 0
 
         @JvmStatic

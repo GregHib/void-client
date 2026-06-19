@@ -34,12 +34,12 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
         var anInt2627: Int = 0
         var anInt2628: Int = 0
         var anInt2630: Int = 0
-        @JvmField
+
         var anIntArray2632: IntArray?
-        @JvmField
+
         var anIntArray2633: IntArray?
         var anInt2634: Int = 0
-        @JvmField
+
         var aRenderableEntryArray2636: Array<RenderableEntry?>?
         var anInt2637: Int = 0
 

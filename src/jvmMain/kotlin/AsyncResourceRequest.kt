@@ -4,10 +4,10 @@ import kotlin.concurrent.Volatile
 * Visit http://jode.sourceforge.net/
 */
 abstract class AsyncResourceRequest : HashLinkedListNode() {
-    @JvmField
+
     var aBoolean9663: Boolean = false
 
-    @JvmField
+
     @Volatile
     var aBoolean9664: Boolean = true
     var aBoolean9667: Boolean = false
@@ -16,13 +16,13 @@ abstract class AsyncResourceRequest : HashLinkedListNode() {
     abstract fun method3259(i: Int): ByteArray?
 
     companion object {
-        @JvmField
+
         var aCameraRotationStub_9661: CameraRotationStub?
-        @JvmField
+
         var anInt9662: Int = 0
-        @JvmField
+
         var aString9665: String? = null
-        @JvmField
+
         var anInt9668: Int = 0
 
         @JvmStatic

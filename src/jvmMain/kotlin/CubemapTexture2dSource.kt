@@ -31,13 +31,13 @@ class CubemapTexture2dSource internal constructor(private val aHa_Sub2_8693: Ope
     }
 
     companion object {
-        @JvmField
+
         var anInt8687: Int = 0
-        @JvmField
+
         var anInt8692: Int = 0
-        @JvmField
+
         var aLong8694: Long = 0
-        @JvmField
+
         var aFloat8696: Float = 0f
         @JvmStatic
         fun method2260(i: Int, i_4_: Int, l: Long, i_5_: Int, bool: Boolean, js5Archive: Js5Archive?, i_6_: Byte, i_7_: Int) {

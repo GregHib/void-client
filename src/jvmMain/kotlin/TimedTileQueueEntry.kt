@@ -9,7 +9,7 @@ import jaggl.OpenGL.Companion.glShaderSourceARB
 class TimedTileQueueEntry internal constructor(i: Int, i_2_: Int) : HashLinkedListNode() {
     var anInt9650: Int = 0
     var anInt9651: Int = 0
-    @JvmField
+
     var anInt9652: Int = 0
     var aString9654: String? = null
     fun method3245(bool: Boolean): Int {

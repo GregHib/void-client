@@ -5,17 +5,17 @@ abstract class ParticleProcessor {
     abstract fun method2694(i: Int, class348_sub42_sub9: KeyedCacheEntryReference): KeyedCacheEntryReference?
 
     companion object {
-        @JvmField
+
         var aFloat4268: Float = 0f
-        @JvmField
+
         var aInboundPacketHeader_4269: InboundPacketHeader? = InboundPacketHeader(87, 1)
-        @JvmField
+
         var anInt4270: Int = -1
-        @JvmField
+
         var anIntArray4271: IntArray? = null
-        @JvmField
+
         var aInboundPacketHeader_4272: InboundPacketHeader? = InboundPacketHeader(67, 3)
-        @JvmField
+
         var aLruByteCache_4273: LruByteCache? = LruByteCache(128, 4)
 
         @JvmStatic

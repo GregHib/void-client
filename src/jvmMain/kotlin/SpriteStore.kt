@@ -58,23 +58,23 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
     }
 
     companion object {
-        @JvmField
+
         var anInt361: Int = 0
-        @JvmField
+
         var anInt363: Int = 0
-        @JvmField
+
         var anInt365: Int = 0
-        @JvmField
+
         var aAbstractModelRendererArray367: Array<AbstractModelRenderer?>? = null
-        @JvmField
+
         var aBoolean368: Boolean = false
-        @JvmField
+
         var anIntArray369: IntArray? = null
-        @JvmField
+
         var anInt370: Int = 0
-        @JvmField
+
         var anInt371: Int = 0
-        @JvmField
+
         var anInt372: Int = 0
 
 

@@ -38,19 +38,19 @@ class DefaultGraphicsOptionState : GraphicsOptionState {
     }
 
     companion object {
-        @JvmField
+
         var anInt6127: Int = 0
-        @JvmField
+
         var aTileRenderState_6128: TileRenderState? = null
-        @JvmField
+
         var anInt6129: Int = 0
-        @JvmField
+
         var anInt6130: Int = 0
-        @JvmField
+
         var anInt6131: Int = 0
-        @JvmField
+
         var anInt6132: Int = 0
-        @JvmField
+
         var anInt6133: Int = 0
 
         @JvmStatic

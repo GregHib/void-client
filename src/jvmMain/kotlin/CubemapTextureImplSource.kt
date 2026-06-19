@@ -30,15 +30,15 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
     }
 
     companion object {
-        @JvmField
+
         var anInt8709: Int = 0
-        @JvmField
+
         var anInt8710: Int = 0
-        @JvmField
+
         var anIntArray8712: IntArray? = null
-        @JvmField
+
         var aDouble8713: Double = -1.0
-        @JvmField
+
         var anInt8720: Int = 0
 
         @JvmStatic

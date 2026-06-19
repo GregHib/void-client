@@ -3,11 +3,11 @@
 */
 object PingHostListHolder {
     var aInboundPacketHeader_2331: InboundPacketHeader? = InboundPacketHeader(120, -2)
-    @JvmField
+
     var aClass348_Sub26_2332: NamedIdEntry?
-    @JvmField
+
     var aSystemFontGlyphs_2333: SystemFontGlyphs? = null
-    @JvmField
+
     var aClass348_Sub47Array2334: Array<OutgoingPacketNode?>? = arrayOfNulls<OutgoingPacketNode>(300)
     var aInboundPacketHeader_2335: InboundPacketHeader?
 

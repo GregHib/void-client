@@ -48,20 +48,20 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
     }
 
     companion object {
-        @JvmField
+
         var anInt4698: Int = 0
-        @JvmField
+
         var anInt4699: Int = 0
-        @JvmField
+
         var anInt4700: Int = 0
-        @JvmField
+
         var anInt4701: Int = 0
         var aByte4702: Byte = 0
-        @JvmField
+
         var anInt4703: Int = 0
-        @JvmField
+
         var anInt4704: Int = 0
-        @JvmField
+
         var anInt4705: Int = 0
 
         @JvmStatic

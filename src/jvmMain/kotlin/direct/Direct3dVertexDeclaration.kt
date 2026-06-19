@@ -10,7 +10,7 @@ import jagdx.VertexElementCollection
  * dxVertexLayout
  */
 class Direct3dVertexDeclaration internal constructor(d3dRenderDevice: D3dRenderDevice, directionPaths: Array<DirectionPath>) : ModelBatchBase() {
-    @JvmField
+
     var anIDirect3DVertexDeclaration5803: IDirect3DVertexDeclaration?
 
     init {

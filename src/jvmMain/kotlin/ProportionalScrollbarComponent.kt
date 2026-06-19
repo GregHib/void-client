@@ -11,15 +11,15 @@ class ProportionalScrollbarComponent internal constructor(js5Archive: Js5Archive
     }
 
     companion object {
-        @JvmField
+
         var anInt9928: Int = 0
-        @JvmField
+
         var aSpriteImageArray9929: Array<SpriteImage>? = null
-        @JvmField
+
         var anInt9930: Int = 0
-        @JvmField
+
         var aNodeDeque_9931: NodeDeque? = NodeDeque()
-        @JvmField
+
         var anIntArray9932: IntArray? = IntArray(1000)
 
         @JvmStatic

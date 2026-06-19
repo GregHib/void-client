@@ -11,19 +11,19 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9253: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_9254: InboundPacketHeader? = InboundPacketHeader(73, 3)
-        @JvmField
+
         var anInt9255: Int = 0
-        @JvmField
+
         var anInt9256: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_9257: InboundPacketHeader?
-        @JvmField
+
         var anInt9258: Int = 0
-        @JvmField
+
         var anIntArray9259: IntArray? = IntArray(2)
 
         /*synthetic*/

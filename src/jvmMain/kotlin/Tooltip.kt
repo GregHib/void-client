@@ -8,7 +8,7 @@ import TextureAtlasState.Companion.method3490
 object Tooltip {
     var aFont_4456: Font? = null
     var anInt4457: Int = 0
-    @JvmField
+
     var anInt4458: Int = -1
     var aParticleDefLoader_4460: ParticleDefLoader? = null
 

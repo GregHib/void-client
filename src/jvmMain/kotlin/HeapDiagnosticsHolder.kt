@@ -6,15 +6,15 @@ import kotlin.concurrent.Volatile
 */
 object HeapDiagnosticsHolder {
     var aInboundPacketHeader_2248: InboundPacketHeader?
-    @JvmField
+
     var aWidgetComponent_2249: WidgetComponent? = null
-    @JvmField
+
     var aShort2250: Short = 205
     var anInt2251: Int = 0
-    @JvmField
+
     var aSystemFontGlyphs_2252: SystemFontGlyphs? = null
     var anInt2253: Int = 0
-    @JvmField
+
     var anInt2254: Int = 0
     var aInboundPacketHeader_2255: InboundPacketHeader?
 

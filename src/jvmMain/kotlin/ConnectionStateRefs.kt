@@ -3,10 +3,10 @@
 */
 object ConnectionStateRefs {
     var aInboundPacketHeader_316: InboundPacketHeader? = InboundPacketHeader(95, 10)
-    @JvmField
+
     var anInt317: Int = 0
     var aInboundPacketHeader_318: InboundPacketHeader? = InboundPacketHeader(19, -2)
-    @JvmField
+
     var anInt319: Int = 0
     var anInt320: Int = 0
 

@@ -2,26 +2,26 @@
 * Visit http://jode.sourceforge.net/
 */
 class MapSceneTile {
-    @JvmField
+
     var anInt1046: Int = 0
-    @JvmField
+
     var anInt1047: Int = 0
-    @JvmField
+
     var anInt1052: Int = 0
-    @JvmField
+
     var anInt1054: Int = 0
 
     companion object {
-        @JvmField
+
         var aWidgetDefinitionArray1048s: Array<WidgetDefinition?>? = arrayOfNulls<WidgetDefinition>(14)
-        @JvmField
+
         var anInt1049: Int = 0
-        @JvmField
+
         var aAudioResampler_1050: AudioResampler? = null
         var aConfigFlagUtil_1051: ConfigFlagUtil? = ConfigFlagUtil()
-        @JvmField
+
         var anInt1053: Int = 0
-        @JvmField
+
         var aBoxedIntHolder_1055: BoxedIntHolder? = null
 
         @JvmStatic

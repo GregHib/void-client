@@ -6,7 +6,7 @@ import WhirlpoolHash.Companion.method831
 object HslPaletteState {
     var anInt4170: Int = 0
     var anInt4171: Int = 0
-    @JvmField
+
     var aShortArray4172: ShortArray? = ShortArray(256)
 
     fun method2656(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int, i_3_: Int) {

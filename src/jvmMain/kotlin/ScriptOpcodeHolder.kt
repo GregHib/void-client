@@ -5,13 +5,13 @@ import java.util.*
 * Visit http://jode.sourceforge.net/
 */
 object ScriptOpcodeHolder {
-    @JvmField
+
     var anInt2336: Int = 0
     var anInt2337: Int = 0
     var aInboundPacketHeader_2338: InboundPacketHeader? = InboundPacketHeader(92, -1)
     var aConfigIdPair_2339: ConfigIdPair? = ConfigIdPair(14, 0)
     var anInt2340: Int = 0
-    @JvmField
+
     var aConfigIdPair_2341: ConfigIdPair? = ConfigIdPair(15, 4)
     var aConfigIdPair_2342: ConfigIdPair? = ConfigIdPair(16, -2)
     var aConfigIdPair_2343: ConfigIdPair? = ConfigIdPair(17, 0)
@@ -24,7 +24,7 @@ object ScriptOpcodeHolder {
     var aConfigIdPair_2350: ConfigIdPair? = ConfigIdPair(24, -1)
     var aConfigIdPair_2351: ConfigIdPair? = ConfigIdPair(26, 0)
     var aConfigIdPair_2352: ConfigIdPair? = ConfigIdPair(27, 0)
-    @JvmField
+
     var aConfigIdPair_2353: ConfigIdPair? = ConfigIdPair(28, -2)
     private var aConfigIdPairArray2354s: Array<ConfigIdPair?>? = arrayOfNulls<ConfigIdPair>(32)
 

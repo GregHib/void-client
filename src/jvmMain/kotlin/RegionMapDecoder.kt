@@ -4,16 +4,16 @@ import CellNoiseTextureNode.Companion.method3111
 * Visit http://jode.sourceforge.net/
 */
 object RegionMapDecoder {
-    @JvmField
+
     var aBoundsConstraintEntry_1512: BoundsConstraintEntry? = BoundsConstraintEntry("", 15)
-    @JvmField
+
     var anInt1513: Int = 0
-    @JvmField
+
     var anInt1514: Int = 0
-    @JvmField
+
     var anInt1515: Int = 0
     var aLong1516: Long = 0
-    @JvmField
+
     var regionTileY: Int = 0
     var anIntArray1518: IntArray? = IntArray(14)
 

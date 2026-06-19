@@ -2,19 +2,19 @@ import kotlin.math.pow
 import kotlin.random.Random
 
 class PerlinNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
-    @JvmField
+
     var anInt9149: Int = 1638
-    @JvmField
+
     var anInt9150: Int = 4
     private var aByteArray9152 = ByteArray(512)
     var anInt9156: Int = 0
-    @JvmField
+
     var anInt9158: Int = 4
     private var aShortArray9159: ShortArray? = null
-    @JvmField
+
     var aBoolean9160: Boolean = true
     private lateinit var aShortArray9162: ShortArray
-    @JvmField
+
     var anInt9164: Int = 4
     override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         var i_1_ = i
@@ -242,17 +242,17 @@ class PerlinNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9148: Int = 0
-        @JvmField
+
         var anInt9151: Int = 0
-        @JvmField
+
         var anInt9153: Int = 0
-        @JvmField
+
         var anInt9154: Int = 0
-        @JvmField
+
         var anInt9155: Int = 0
-        @JvmField
+
         var anInt9161: Int = 0
         var anIntArray2631: IntArray? = IntArray(4096)
         var anInt9139: Int = 0

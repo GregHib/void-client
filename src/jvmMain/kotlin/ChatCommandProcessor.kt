@@ -83,39 +83,39 @@ object ChatCommandProcessor {
     private var aWidgetComponent_1150: WidgetComponent? = null
     private var aMinimapTileEntry_1151: MinimapTileEntry? = null
     private var aStringArray1152: Array<String?>? = arrayOfNulls<String>(1000)
-    @JvmField
+
     var anInt1153: Int = 0
     private var anInt1154 = 0
     private var aStringArray1155: Array<String?>? = null
-    @JvmField
+
     var anInt1156: Int = 0
-    @JvmField
+
     var anInt1157: Int = 0
-    @JvmField
+
     var anInt1158: Int = 0
-    @JvmField
+
     var anInt1159: Int = 0
     private var aCalendar1160: Calendar?
     private var anIntArrayArray1161: Array<IntArray?>? = Array<IntArray?>(5) { IntArray(5000) }
-    @JvmField
+
     var anInt1162: Int = 0
-    @JvmField
+
     var anInt1163: Int = 0
     private var anIntArray1164: IntArray? = null
-    @JvmField
+
     var anInt1165: Int = 0
-    @JvmField
+
     var anInt1166: Int = 0
-    @JvmField
+
     var anInt1167: Int = 0
     private var aScanlineRasterFillerArray1168: Array<ScanlineRasterFiller?>?
     private var aWidgetComponent_1169: WidgetComponent? = null
     private var anInt1170 = 0
-    @JvmField
+
     var anInt1171: Int = 0
     private var anIntArray1172: IntArray? = IntArray(5)
     private var anInt1173 = 0
-    @JvmField
+
     var aLruByteCache_1174: LruByteCache?
     private var anIntArray1175: IntArray?
     private var aStringArray1176: Array<String>?

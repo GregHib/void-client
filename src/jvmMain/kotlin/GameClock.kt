@@ -6,19 +6,19 @@ import GlTexture2DRegion.Companion.method3553
 * Visit http://jode.sourceforge.net/
 */
 object GameClock {
-    @JvmField
+
     var anInt1110: Int = 0
-    @JvmField
+
     var anInt1111: Int = 0
-    @JvmField
+
     var anInt1112: Int = 0
-    @JvmField
+
     var anInt1113: Int = 0
-    @JvmField
+
     var aDoublyLinkedNodeList_1114: DoublyLinkedNodeList? = DoublyLinkedNodeList()
-    @JvmField
+
     var anInt1115: Int = 0
-    @JvmField
+
     var anIntArrayArrayArray1116: Array<Array<IntArray?>?>? = null
 
     @JvmStatic

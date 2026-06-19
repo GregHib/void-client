@@ -8,17 +8,17 @@ class InputStream_Sub1 : InputStream() {
     }
 
     companion object {
-        @JvmField
+
         var anInt71: Int = 0
-        @JvmField
+
         var anInt73: Int = 0
-        @JvmField
+
         var anInt74: Int = 0
-        @JvmField
+
         var aFontMetaRef_77: FontMetaRef?
-        @JvmField
+
         var anInt78: Int
-        @JvmField
+
         var aInboundPacketHeader_79: InboundPacketHeader?
 
         @JvmStatic

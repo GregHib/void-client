@@ -181,25 +181,25 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
     }
 
     companion object {
-        @JvmField
+
         var anInt6306: Int = 0
-        @JvmField
+
         var anInt6307: Int = 0
-        @JvmField
+
         var anInt6309: Int = 0
-        @JvmField
+
         var anInt6311: Int = 0
-        @JvmField
+
         var anInt6312: Int = 0
-        @JvmField
+
         var anInt6313: Int = 0
-        @JvmField
+
         var anInt6314: Int = 0
-        @JvmField
+
         var anInt6315: Int = 0
-        @JvmField
+
         var anInt6318: Int = 0
-        @JvmField
+
         var anInt6319: Int = 0
 
         @JvmStatic

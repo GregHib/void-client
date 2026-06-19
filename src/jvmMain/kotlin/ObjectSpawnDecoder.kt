@@ -7,20 +7,20 @@ import WorldMapAreaLabel.Companion.method3570
 */
 object ObjectSpawnDecoder {
     var aBoolean1801: Boolean = false
-    @JvmField
+
     var anInt1802: Int = 0
-    @JvmField
+
     var anInt1803: Int
-    @JvmField
+
     var anInt1804: Int = 0
-    @JvmField
+
     var anInt1805: Int = 0
     var aBooleanArray1806: BooleanArray? = BooleanArray(200)
-    @JvmField
+
     var anInt1807: Int = 0
-    @JvmField
+
     var aStringArray1808: Array<String?>?
-    @JvmField
+
     var anInt1809: Int = 0
 
     fun method3455(string: String?, i: Int): Boolean {

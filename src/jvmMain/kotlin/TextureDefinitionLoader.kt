@@ -3,10 +3,10 @@
 */
 class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_4_: Js5Archive?) {
     private var aLruByteCache_1963 = LruByteCache(64)
-    @JvmField
+
     var aJs5Archive_1965: Js5Archive? = null
     private val aJs5Archive_1971: Js5Archive?
-    @JvmField
+
     var aLruByteCache_1976: LruByteCache = LruByteCache(64)
     fun method1173(i: Byte, i_0_: Int): MapSceneIconDef? {
         anInt1964++
@@ -82,7 +82,7 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
 
     companion object {
         var anInt1964: Int = 0
-        @JvmField
+
         var aBoundsConstraintEntry_1966: BoundsConstraintEntry?
         var anInt1967: Int = 0
         var anInt1968: Int = 0
@@ -90,7 +90,7 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
         var anInt1972: Int = 0
         var anIntArray1973: IntArray? = intArrayOf(0, 1, 2, 3, 4, 5, 6, 14)
         var anIntArray1975: IntArray?
-        @JvmField
+
         var aSpriteArchiveLoader_1977: SpriteArchiveLoader? = null
 
 

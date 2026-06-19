@@ -64,10 +64,10 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
         var anInt2457: Int = 0
         var anInt2459: Int = 0
         var anInt2460: Int = 0
-        @JvmField
+
         var aBackgroundWorkerThread_2462: BackgroundWorkerThread? = null
         var anInt2463: Int = 0
-        @JvmField
+
         var anInt2464: Int = 0
         var anInt2465: Int = 0
         var anIntArray2466: IntArray? = IntArray(14)

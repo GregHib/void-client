@@ -20,31 +20,31 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
     private var aD3dSwapChainWrapper_9787: D3dSwapChainWrapper? = null
     var aHb9788: hb? = null
     private val aD3DLIGHT9789: D3DLIGHT
-    @JvmField
+
     var aD3DCAPS9791: D3DCAPS? = null
-    @JvmField
+
     var aBoolean9792: Boolean = false
     private var anIDirect3D9793: IDirect3D? = null
     private var anIDirect3DVertexShader9794: IDirect3DVertexShader? = null
     private var aClass209Array9795: Array<UnusedToStringStub?>?
     private var aD3DLIGHT9796: D3DLIGHT? = null
-    @JvmField
+
     var aBoolean9798: Boolean = false
     private val anInt9799: Int
     private var aD3DPRESENT_PARAMETERS9800: D3DPRESENT_PARAMETERS? = null
     private var aBoolean9801 = false
-    @JvmField
+
     var aBoolean9802: Boolean = false
-    @JvmField
+
     var aPixelBuffer9803: PixelBuffer? = null
     private val aBooleanArray9804: BooleanArray
     private var anIntArray9805: IntArray?
     private val aBooleanArray9806: BooleanArray
     private var anInt9807 = 0
     private val aD3DLIGHT9808: D3DLIGHT
-    @JvmField
+
     var anIDirect3DDevice9810: IDirect3DDevice? = null
-    @JvmField
+
     var aGeometryBuffer9811: GeometryBuffer? = null
 
     override fun method3928(i: Int) {

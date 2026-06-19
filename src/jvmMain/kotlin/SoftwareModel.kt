@@ -3615,9 +3615,9 @@ class SoftwareModel : AbstractModel {
 
     companion object {
         private var anInt5341: Int
-        @JvmField
+
         var anInt5346: Int = 4096
-        @JvmField
+
         var anInt5350: Int
 
         init {

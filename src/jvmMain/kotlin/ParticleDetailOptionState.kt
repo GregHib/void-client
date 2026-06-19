@@ -40,27 +40,27 @@ class ParticleDetailOptionState : GraphicsOptionState {
     }
 
     companion object {
-        @JvmField
+
         var aBoundsConstraintEntry_6018: BoundsConstraintEntry? = BoundsConstraintEntry("", 14)
-        @JvmField
+
         var anInt6019: Int = 0
-        @JvmField
+
         var anInt6020: Int = 0
-        @JvmField
+
         var anIntArray6021: IntArray? = null
-        @JvmField
+
         var anInt6022: Int = 0
-        @JvmField
+
         var anInt6023: Int = 0
-        @JvmField
+
         var anInt6024: Int = 0
-        @JvmField
+
         var anInt6025: Int = 0
-        @JvmField
+
         var anInt6026: Int = 0
-        @JvmField
+
         var anInt6027: Int = 0
-        @JvmField
+
         var anInt6028: Int = 0
 
         @JvmStatic

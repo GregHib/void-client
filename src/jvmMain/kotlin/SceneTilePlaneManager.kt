@@ -2,15 +2,15 @@
 * Visit http://jode.sourceforge.net/
 */
 object SceneTilePlaneManager {
-    @JvmField
+
     var anInt230: Int = 0
-    @JvmField
+
     var aWidgetNodeLink_231: WidgetNodeLink? = null
-    @JvmField
+
     var anInt232: Int = 0
-    @JvmField
+
     var aJs5Archive_233: Js5Archive? = null
-    @JvmField
+
     var anInt234: Int = 0
 
     @JvmStatic

@@ -169,46 +169,46 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
     }
 
     companion object {
-        @JvmField
+
         var anInt8860: Int = 0
         var anIntArray8862: IntArray?
-        @JvmField
+
         var anInt8863: Int = 0
-        @JvmField
+
         var anInt8864: Int = 0
-        @JvmField
+
         var anInt8865: Int = 0
-        @JvmField
+
         var aLong8866: Long
-        @JvmField
+
         var anInt8867: Int = 0
-        @JvmField
+
         var anInt8868: Int = 0
-        @JvmField
+
         var aDouble8869: Double = 0.0
-        @JvmField
+
         var aBoolean8870: Boolean = true
-        @JvmField
+
         var anInt8871: Int = 0
-        @JvmField
+
         var anInt8872: Int = 0
-        @JvmField
+
         var anInt8873: Int = 0
-        @JvmField
+
         var aBoolean8874: Boolean
-        @JvmField
+
         var anInt8875: Int = 0
-        @JvmField
+
         var anInt8876: Int = 0
-        @JvmField
+
         var anInt8877: Int = 0
-        @JvmField
+
         var anInt8878: Int = 0
-        @JvmField
+
         var anInt8880: Int = 0
-        @JvmField
+
         var anInt8881: Int = 0
-        @JvmField
+
         var anInt8882: Int = 0
         @JvmStatic
         fun method2830(i: Int) {

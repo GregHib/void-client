@@ -6,30 +6,30 @@ import kotlin.math.sqrt
 * Visit http://jode.sourceforge.net/
 */
 class SpotAnimVector {
-    @JvmField
+
     var anInt2289: Int = 0
-    @JvmField
+
     var anInt2290: Int = 0
-    @JvmField
+
     var anInt2291: Int = 0
-    @JvmField
+
     var anInt2292: Int = 0
-    @JvmField
+
     var anInt2294: Int = 0
-    @JvmField
+
     var anInt2296: Int = 0
-    @JvmField
+
     var anInt2297: Int = 0
-    @JvmField
+
     var anInt2298: Int = 0
-    @JvmField
+
     var anInt2299: Int = 0
-    @JvmField
+
     var aLong2301: Long = 0
     private var anInt2302 = 0
-    @JvmField
+
     var anInt2303: Int = 0
-    @JvmField
+
     var anInt2304: Int = 0
     private var aBoolean2308 = false
     private fun method1335(class348_sub49: ByteBuffer, i: Int, i_8_: Byte) {

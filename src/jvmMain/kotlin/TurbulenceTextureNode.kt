@@ -307,19 +307,19 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9308: Int = 0
-        @JvmField
+
         var anInt9309: Int = 0
-        @JvmField
+
         var anInt9313: Int
-        @JvmField
+
         var anInt9315: Int = 0
-        @JvmField
+
         var anInt9316: Int = 0
-        @JvmField
+
         var aClass348_Sub22Array9319: Array<NpcReference?>? = arrayOfNulls<NpcReference>(1024)
-        @JvmField
+
         var anInt9321: Int = 0
         @JvmStatic
         fun method3113(c: Char, bool: Boolean, string: String): Array<String?> {

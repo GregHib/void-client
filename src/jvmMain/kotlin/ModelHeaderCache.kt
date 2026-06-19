@@ -216,7 +216,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         var anInt3266: Int = 0
         var anInt3270: Int = 0
         var anInt3272: Int = 0
-        @JvmField
+
         var anIntArray3273: IntArray? = IntArray(5)
         var anInt3274: Int = 0
         var anInt3275: Int = 0
@@ -228,7 +228,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         var anInt3282: Int = 0
         var anInt3283: Int = 0
         var anInt3284: Int = 0
-        @JvmField
+
         var aServerConnectionInfo_3285: ServerConnectionInfo? = null
         fun method1929(i: Byte): Array<RgbColorPalette?> {
             if (i.toInt() != -19) method1933(null, null, false)

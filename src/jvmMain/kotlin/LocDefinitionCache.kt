@@ -7,7 +7,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
     var anInt3429: Int = 0
     private val aLruByteCache_3433 = LruByteCache(64)
     private val aJs5Archive_3442: Js5Archive?
-    @JvmField
+
     var anInt3447: Int = 0
     fun method2032(i: Int, i_3_: Int) {
         withLock(aLruByteCache_3433) {
@@ -67,22 +67,22 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
     companion object {
         private var aShortArray3430: ShortArray? = shortArrayOf(-1, -1, -1, -1, -1)
         var anInt3431: Int = 0
-        @JvmField
+
         var anIntArray3432: IntArray? = IntArray(500)
         var anInt3434: Int = 0
         var anInt3435: Int
         var anInt3436: Int = 0
         private var aShortArray3437: ShortArray?
-        @JvmField
+
         var aBooleanArray3438: BooleanArray?
-        @JvmField
+
         var anInt3439: Int = 16777215
         var anInt3440: Int = 0
-        @JvmField
+
         var anInt3441: Int = 0
-        @JvmField
+
         var aShortArrayArray3443: Array<ShortArray?>?
-        @JvmField
+
         var anInt3444: Int
         var anInt3445: Int = 0
         var anInt3446: Int = 0

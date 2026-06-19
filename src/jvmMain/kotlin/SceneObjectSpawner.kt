@@ -4,7 +4,7 @@ import ScrollingNoiseTexture.Companion.method560
 * Visit http://jode.sourceforge.net/
 */
 class SceneObjectSpawner internal constructor(bool: Boolean) {
-    @JvmField
+
     var aDoublyLinkedNodeList_1282: DoublyLinkedNodeList = DoublyLinkedNodeList()
     var aBoolean1283: Boolean = false
     fun method774(class318_sub4: SceneEntityModel, i: Int) {
@@ -60,19 +60,19 @@ class SceneObjectSpawner internal constructor(bool: Boolean) {
     }
 
     companion object {
-        @JvmField
+
         var anInt1278: Int = 0
-        @JvmField
+
         var aNamedIdRecord_1279: NamedIdRecord? = NamedIdRecord("LOCAL", 4)
-        @JvmField
+
         var anInt1280: Int = 0
-        @JvmField
+
         var anInt1284: Int = 0
-        @JvmField
+
         var anInt1285: Int = 0
-        @JvmField
+
         var aHostPingThread_1286: HostPingThread?
-        @JvmField
+
         var aFloat1287: Float = 1024.0f
         var anInt1288: Int = 0
 

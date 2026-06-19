@@ -5,13 +5,13 @@ abstract class TextureCubeProvider : CircleRasterizer() {
     abstract fun method2266(bool: Boolean): RenderableCubeTexture?
 
     companion object {
-        @JvmField
+
         var anInt6325: Int = 0
-        @JvmField
+
         var anInt6326: Int = 0
-        @JvmField
+
         var aBoolean6327: Boolean = false
-        @JvmField
+
         var aBufferedRandomAccessFile_6328: BufferedRandomAccessFile? = null
 
         @JvmStatic

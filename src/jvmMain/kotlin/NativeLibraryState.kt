@@ -4,14 +4,14 @@ import BlankTextureNode.Companion.method3098
 * Visit http://jode.sourceforge.net/
 */
 object NativeLibraryState {
-    @JvmField
+
     var anInt167: Int = 0
     var anIntArray168: IntArray? = intArrayOf(28, 35, 40, 44)
-    @JvmField
+
     var anInt169: Int = -1
-    @JvmField
+
     var anInt170: Int = 0
-    @JvmField
+
     var aRenderer171: Renderer? = null
 
     @JvmStatic

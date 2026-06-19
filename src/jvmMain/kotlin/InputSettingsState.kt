@@ -7,11 +7,11 @@ import java.io.IOException
  */
 object InputSettingsState {
     var anInt1758: Int = 0
-    @JvmField
+
     var shiftClick: Boolean = true
-    @JvmField
+
     var anInt1760: Int = 0
-    @JvmField
+
     var aString1761: String? = null
     var aInboundPacketHeader_1762: InboundPacketHeader? = null
 

@@ -2,23 +2,23 @@
 * Visit http://jode.sourceforge.net/
 */
 class NpcAnimationResolver {
-    @JvmField
+
     var anInt159: Int = 0
-    @JvmField
+
     var anInt160: Int = 0
-    @JvmField
+
     var anInt161: Int = 0
-    @JvmField
+
     var anInt162: Int = 0
 
     companion object {
-        @JvmField
+
         var anInt163: Int = 0
-        @JvmField
+
         var anIntArray164: IntArray? = intArrayOf(4, 4, 1, 2, 6, 4, 2, 44, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1)
-        @JvmField
+
         var aNamedIdRecord_165: NamedIdRecord? = null
-        @JvmField
+
         var anInt166: Int = 0
 
         @JvmStatic

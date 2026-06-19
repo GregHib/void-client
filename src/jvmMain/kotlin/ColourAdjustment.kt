@@ -6,17 +6,17 @@ import OpenGlTerrainTile.Companion.method4002
 * Visit http://jode.sourceforge.net/
 */
 class ColourAdjustment {
-    @JvmField
+
     var anInt847: Int = 0
-    @JvmField
+
     var anInt853: Int = 0
-    @JvmField
+
     var anInt854: Int = 0
-    @JvmField
+
     var anInt856: Int
-    @JvmField
+
     var anInt857: Int = 128
-    @JvmField
+
     var anInt858: Int
     fun method451(colourAdjustment_7_: ColourAdjustment, i: Byte) {
         this.anInt857 = colourAdjustment_7_.anInt857
@@ -51,20 +51,20 @@ class ColourAdjustment {
     }
 
     companion object {
-        @JvmField
+
         var anInt848: Int = 0
-        @JvmField
+
         var anInt849: Int = 0
-        @JvmField
+
         var anInt850: Int = 0
-        @JvmField
+
         var aShort851: Short
         var aCharArray852: CharArray? = charArrayOf('_', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9')
-        @JvmField
+
         var anInt855: Int = 0
-        @JvmField
+
         var anInt859: Int
-        @JvmField
+
         var anIntArray860: IntArray?
 
         @JvmStatic

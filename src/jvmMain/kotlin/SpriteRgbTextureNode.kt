@@ -24,11 +24,11 @@ class SpriteRgbTextureNode : SpriteTextureNode() {
     }
 
     companion object {
-        @JvmField
+
         var anInt10425: Int = 0
-        @JvmField
+
         var aJs5Archive_10426: Js5Archive? = null
-        @JvmField
+
         var anInt10427: Int = 0
 
         @JvmStatic

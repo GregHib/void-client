@@ -2,23 +2,23 @@
 * Visit http://jode.sourceforge.net/
 */
 public open class WorldMapLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) : ConfigTypeProvider {
-    @JvmField
+
     var anInt4959: Int = 0
-    @JvmField
+
     var anInt4961: Int = 0
-    @JvmField
+
     var anInt4963: Int = 0
-    @JvmField
+
     var anInt4965: Int = 0
-    @JvmField
+
     var anInt4966: Int = 0
-    @JvmField
+
     var aScreenAnchorAlignment_4968: ScreenAnchorAlignment? = null
-    @JvmField
+
     var anInt4970: Int = 0
-    @JvmField
+
     var anInt4971: Int = 0
-    @JvmField
+
     var aTileRenderState_4973: TileRenderState? = null
 
     override fun method51(i: Byte): ProjectileFactory? {
@@ -44,17 +44,17 @@ public open class WorldMapLabel(screenAnchorAlignment: ScreenAnchorAlignment?, t
     }
 
     companion object {
-        @JvmField
+
         var anInt4960: Int = 0
-        @JvmField
+
         var aFontDefinition_4962: FontDefinition? = null
-        @JvmField
+
         var anInt4964: Int = 0
-        @JvmField
+
         var anInt4967: Int = 0
-        @JvmField
+
         var anInt4969: Int = 0
-        @JvmField
+
         var aBoolean4972: Boolean = false
         @JvmStatic
         fun method3567(i: Int) {

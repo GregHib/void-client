@@ -1,17 +1,17 @@
 object AbstractTileShapeStatics {
-    @JvmField
+
     var anIntArray6547: IntArray? = null
-    @JvmField
+
     var anInt6551: Int = 0
-    @JvmField
+
     var anInt6555: Int = 0
-    @JvmField
+
     var aBoolean6558: Boolean = false
-    @JvmField
+
     var aMapSceneDefLoader_6559: MapSceneDefLoader? = null
-    @JvmField
+
     var anInt6560: Int = 0
-    @JvmField
+
     var aWidgetComponent_6561: WidgetComponent? = null
 
     @JvmStatic

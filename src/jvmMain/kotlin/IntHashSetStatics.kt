@@ -3,14 +3,14 @@ import Gl3dTexture.Companion.method249
 
 object IntHashSetStatics {
     var anInt3958: Int = 0
-    @JvmField
+
     var aClass348_Sub51_3959: DisplaySettingsConfig? = null
     var anInt3962: Int = 0
-    @JvmField
+
     var aClass348_Sub42_Sub12_3963: ContactEntry? = null
     var anInt3964: Int = 0
     var anInt3965: Int = 0
-    @JvmField
+
     var anInt3966: Int = 0
 
     @JvmStatic

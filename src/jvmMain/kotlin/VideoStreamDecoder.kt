@@ -304,7 +304,7 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
         var anInt4120: Int = 0
         var anInt4125: Int = 0
         var aInboundPacketHeader_4126: InboundPacketHeader? = InboundPacketHeader(5, 8)
-        @JvmField
+
         var aBoolean4127: Boolean = false
 
         @JvmStatic

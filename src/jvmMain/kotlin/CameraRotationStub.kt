@@ -11,19 +11,19 @@ class CameraRotationStub {
     }
 
     companion object {
-        @JvmField
+
         var anInt321: Int = 0
-        @JvmField
+
         var aJs5Archive_322: Js5Archive? = null
-        @JvmField
+
         var aWidgetComponent_323: WidgetComponent? = null
-        @JvmField
+
         var anInt324: Int = 0
-        @JvmField
+
         var anInt325: Int = -50
-        @JvmField
+
         var aRenderer326: Renderer? = null
-        @JvmField
+
         var anInt327: Int = 0
 
         @JvmStatic

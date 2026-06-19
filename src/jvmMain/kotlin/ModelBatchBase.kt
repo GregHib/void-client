@@ -3,19 +3,19 @@
  */
 abstract class ModelBatchBase {
     companion object {
-        @JvmField
+
         var aLruByteCache_1894: LruByteCache? = LruByteCache(5)
-        @JvmField
+
         var aHashtable_1895: Hashtable? = Hashtable(64)
-        @JvmField
+
         var anInt1896: Int = 0
-        @JvmField
+
         var aJs5Archive_1897: Js5Archive? = null
-        @JvmField
+
         var anInt1898: Int = 0
-        @JvmField
+
         var aBoolean1899: Boolean = false
-        @JvmField
+
         var aBoolean1900: Boolean = false
 
         @JvmStatic

@@ -152,7 +152,7 @@ class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, sof
     companion object {
         var anInt3004: Int = 0
         var anInt3005: Int = 0
-        @JvmField
+
         var anInt3006: Int = 0
         var anInt3007: Int = 0
         var anInt3012: Int = 0

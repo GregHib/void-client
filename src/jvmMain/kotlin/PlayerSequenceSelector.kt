@@ -2,19 +2,19 @@
 * Visit http://jode.sourceforge.net/
 */
 object PlayerSequenceSelector {
-    @JvmField
+
     var aSceneObjectSpawner_1208: SceneObjectSpawner?
-    @JvmField
+
     var anInt1209: Int = 0
-    @JvmField
+
     var aSceneObjectSpawner_1210: SceneObjectSpawner?
-    @JvmField
+
     var aBoolean1211: Boolean = false
-    @JvmField
+
     var aClass209_1212: UnusedToStringStub?
-    @JvmField
+
     var aRectangleRegion_1213: RectangleRegion?
-    @JvmField
+
     var aBooleanArray1214: BooleanArray?
 
     @JvmStatic

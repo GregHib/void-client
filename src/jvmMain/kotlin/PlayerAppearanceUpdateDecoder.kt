@@ -2,17 +2,17 @@
 * Visit http://jode.sourceforge.net/
 */
 internal object PlayerAppearanceUpdateDecoder {
-    @JvmField
+
     var anInt4539: Int = 0
-    @JvmField
+
     var aBoolean4540: Boolean = false
-    @JvmField
+
     var anInt4541: Int = 0
-    @JvmField
+
     var aBoolean4542: Boolean = false
-    @JvmField
+
     var aLruByteCache_4543: LruByteCache? = LruByteCache(8)
-    @JvmField
+
     var anInt4544: Int = -1
     var anInt4545: Int = -1
 

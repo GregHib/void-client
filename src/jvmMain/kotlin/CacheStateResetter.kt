@@ -2,11 +2,11 @@
 * Visit http://jode.sourceforge.net/
 */
 object CacheStateResetter {
-    @JvmField
+
     var aInboundPacketHeader_123: InboundPacketHeader? = InboundPacketHeader(110, 10)
-    @JvmField
+
     var anInt124: Int = 0
-    @JvmField
+
     var aServerConnectionInfo_125: ServerConnectionInfo? = null
 
     @JvmStatic

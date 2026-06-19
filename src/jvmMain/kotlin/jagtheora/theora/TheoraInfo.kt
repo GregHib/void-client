@@ -7,7 +7,7 @@ class TheoraInfo : SimplePeer() {
 
     private val versionSubMinor: Byte = 0
 
-    @JvmField
+
     var fpsNumerator: Int = 0
 
     private val pixelFormat = 0
@@ -24,17 +24,17 @@ class TheoraInfo : SimplePeer() {
 
     private val picHeight = 0
 
-    @JvmField
+
     var fpsDenominator: Int = 0
 
     private val versionMajor: Byte = 0
 
-    @JvmField
+
     var frameWidth: Int = 0
 
     private val aspectNumerator = 0
 
-    @JvmField
+
     var frameHeight: Int = 0
 
     init {

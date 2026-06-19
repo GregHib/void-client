@@ -36,23 +36,23 @@ class NoOpGraphicsOptionState : GraphicsOptionState {
     }
 
     companion object {
-        @JvmField
+
         var anInt6039: Int = 0
-        @JvmField
+
         var anInt6040: Int = 0
-        @JvmField
+
         var anInt6041: Int = 0
-        @JvmField
+
         var anInt6042: Int = 0
-        @JvmField
+
         var anInt6043: Int = 0
-        @JvmField
+
         var anInt6044: Int = 0
-        @JvmField
+
         var anInt6045: Int = 0
-        @JvmField
+
         var anInt6046: Int = 0
-        @JvmField
+
         var anInt6047: Int = 0
 
         @JvmStatic

@@ -141,37 +141,37 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
     }
 
     companion object {
-        @JvmField
+
         var anInt7393: Int = 0
-        @JvmField
+
         var aByteArray7394: ByteArray? = null
-        @JvmField
+
         var anInt7396: Int = 0
-        @JvmField
+
         var anIntArray7397: IntArray? = IntArray(4096)
-        @JvmField
+
         var aInboundPacketHeader_7398: InboundPacketHeader? = InboundPacketHeader(16, 6)
-        @JvmField
+
         var anInt7400: Int = 0
-        @JvmField
+
         var anInt7401: Int = 0
-        @JvmField
+
         var anInt7402: Int = 0
-        @JvmField
+
         var anInt7403: Int = 0
-        @JvmField
+
         var anInt7405: Int = 0
-        @JvmField
+
         var anInt7408: Int = 0
-        @JvmField
+
         var anInt7409: Int = 0
-        @JvmField
+
         var anInt7410: Int = 0
-        @JvmField
+
         var anInt7412: Int = 0
-        @JvmField
+
         var anInt7414: Int = 0
-        @JvmField
+
         var aLongHashTable_7415: LongHashTable? = LongHashTable(8)
 
         @JvmStatic

@@ -194,9 +194,9 @@ class ResourceLoaderThread : Runnable {
         var anInt3909: Int = 0
         var anInt3911: Int = 0
         var anInt3912: Int = 0
-        @JvmField
+
         var aWidgetComponent_3913: WidgetComponent? = null
-        @JvmField
+
         var anInt3918: Int = 1
         @JvmStatic
         fun method2317(i: Byte) {

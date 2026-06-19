@@ -6,13 +6,13 @@ import ProjectileSpawner.method1478
 object ClanChatRequestSender {
     var aFontMetaRef_3644: FontMetaRef? = FontMetaRef(42, 8)
     var anInt3645: Int = 0
-    @JvmField
+
     var anInt3647: Int = 0
-    @JvmField
+
     var aFontMetaRef_3648: FontMetaRef? = FontMetaRef(55, 4)
-    @JvmField
+
     var aFontDefinition_3649: FontDefinition? = null
-    @JvmField
+
     var anInt3650: Int = 0
 
     fun method2106(string: String?, i: Int) {

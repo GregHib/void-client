@@ -93,17 +93,17 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9425: Int = 0
-        @JvmField
+
         var anInt9426: Int = 0
-        @JvmField
+
         var aWidgetComponentArrayArray9427: Array<Array<WidgetComponent?>?>? = null
-        @JvmField
+
         var anInt9428: Int = 0
-        @JvmField
+
         var anInt9429: Int = 0
-        @JvmField
+
         var anInt9430: Int = 0
 
         @JvmStatic

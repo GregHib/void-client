@@ -1,7 +1,7 @@
 object AbstractGameSocketStatics {
-    @JvmField
+
     var anInt3132: Int = 0
-    @JvmField
+
     var aInboundPacketHeader_3133: InboundPacketHeader? = null
 
     @JvmStatic

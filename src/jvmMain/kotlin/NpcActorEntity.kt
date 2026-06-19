@@ -235,7 +235,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
         var anInt10069: Int = 0
         var anInt10070: Int = 0
         var anInt10072: Int = 0
-        @JvmField
+
         var anInt10073: Int = 0
         var anInt10074: Int = 0
         var anInt10075: Int = 0

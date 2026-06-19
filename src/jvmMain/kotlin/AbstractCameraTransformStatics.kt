@@ -1,18 +1,18 @@
 object AbstractCameraTransformStatics {
 
-    @JvmField
+
     var anIntArray1593: IntArray? = IntArray(1)
-    @JvmField
+
     var anInt1594: Int = 0
-    @JvmField
+
     var anInt1595: Int = 0
-    @JvmField
+
     var anInt1596: Int = 0
-    @JvmField
+
     var anInt1597: Int = 0
-    @JvmField
+
     var anInt1598: Int = 0
-    @JvmField
+
     var anInt1599: Int = 0
 
     @JvmStatic

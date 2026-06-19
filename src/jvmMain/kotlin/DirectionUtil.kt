@@ -2,14 +2,14 @@
 * Visit http://jode.sourceforge.net/
 */
 object DirectionUtil {
-    @JvmField
+
     var anInt1539: Int = 0
     var aInboundPacketHeader_1540: InboundPacketHeader? = InboundPacketHeader(113, 1)
-    @JvmField
+
     var aJs5Archive_1541: Js5Archive? = null
-    @JvmField
+
     var aScreenAnchorAlignment_1542: ScreenAnchorAlignment? = null
-    @JvmField
+
     var aClass348_Sub42_Sub17Array1543: Array<TextureMaterialGroup?>? = arrayOfNulls(14)
 
     @JvmStatic

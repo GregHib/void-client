@@ -8,16 +8,16 @@ import java.io.IOException
 import kotlin.math.sqrt
 
 class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134_: Int, i_135_: Int, `is`: Array<IntArray?>, is_136_: Array<IntArray?>?, i_137_: Int) : TerrainTile(i_134_, i_135_, i_137_, `is`) {
-    @JvmField
+
     var anIntArrayArrayArray8234: Array<Array<IntArray?>?>?
-    @JvmField
+
     var anInt8235: Int = 0
     private val aByteArrayArray8240: Array<ByteArray?>
     private var aClass348_Sub20ArrayArrayArray8243: Array<Array<Array<TextureTileRenderer?>?>?>?
     private var anIntArrayArrayArray8245: Array<Array<IntArray?>?>?
     private var anInt8246 = 0
     private var anIntArrayArrayArray8252: Array<Array<IntArray?>?>? = null
-    @JvmField
+
     var anIntArrayArrayArray8253: Array<Array<IntArray?>?>?
     private val aNodeDeque_8256 = NodeDeque()
     private var anInt8257 = 0
@@ -25,19 +25,19 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
     private val anInt8260: Int
     private val anInt8264: Int
     private var aSoftwareSpriteRaster_8266: SoftwareSpriteRaster? = null
-    @JvmField
+
     var aShortArrayArray8267: Array<ShortArray?>
-    @JvmField
+
     var anIntArrayArrayArray8268: Array<Array<IntArray?>?>?
-    @JvmField
+
     var aHa_Sub2_8272: OpenGlRenderer? = null
     private var aByteArrayArray8273: Array<ByteArray?>?
     private var aHoverActionEntry_8274: HoverActionEntry? = null
-    @JvmField
+
     var aHoverActionEntry_8275: HoverActionEntry? = null
-    @JvmField
+
     var aHoverActionEntry_8276: HoverActionEntry? = null
-    @JvmField
+
     var aHoverActionEntry_8277: HoverActionEntry? = null
     private var aHashtable_8278: Hashtable? = null
     private var anByteBufferReader_8279: ByteBufferReader? = null
@@ -760,49 +760,49 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
     }
 
     companion object {
-        @JvmField
+
         var anInt8236: Int = 0
-        @JvmField
+
         var anInt8237: Int = 0
-        @JvmField
+
         var anInt8238: Int = 0
-        @JvmField
+
         var anInt8239: Int = 0
-        @JvmField
+
         var aLinkedNodeListIterator_8241: LinkedNodeListIterator? = LinkedNodeListIterator()
-        @JvmField
+
         var anInt8242: Int = 0
-        @JvmField
+
         var anInt8244: Int = 0
-        @JvmField
+
         var anInt8247: Int = 0
-        @JvmField
+
         var anInt8248: Int = 0
-        @JvmField
+
         var anInt8249: Int = 0
-        @JvmField
+
         var anInt8250: Int = 0
-        @JvmField
+
         var anInt8251: Int = 0
-        @JvmField
+
         var anInt8254: Int = 0
-        @JvmField
+
         var anInt8255: Int = 0
-        @JvmField
+
         var anInt8259: Int = 0
-        @JvmField
+
         var anInt8261: Int = 0
-        @JvmField
+
         var anInt8262: Int = 0
-        @JvmField
+
         var anInt8263: Int = 0
-        @JvmField
+
         var aString8265: String? = null
-        @JvmField
+
         var anIntArray8269: IntArray?
-        @JvmField
+
         var anInt8270: Int = -1
-        @JvmField
+
         var anInt8271: Int = 0
         @JvmStatic
         fun method3999(i: Int, i_147_: Int, i_148_: Int): Boolean {

@@ -12,30 +12,30 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
     }
 
     companion object {
-        @JvmField
+
         var anInt4894: Int = 0
-        @JvmField
+
         var anInt4895: Int = 0
-        @JvmField
+
         var aBigInteger4896: BigInt? = BigInt("10001", 16)
-        @JvmField
+
         var anInt4897: Int = 0
-        @JvmField
+
         var anInt4898: Int = 0
-        @JvmField
+
         var anInt4900: Int = 0
-        @JvmField
+
         var aRectangleRegion_4901: RectangleRegion?
-        @JvmField
+
         var anInt4902: Int = 0
-        @JvmField
+
         var aBoolean4903: Boolean = false
-        @JvmField
+
         var aFrame4904: Frame? = null
-        @JvmField
+
         var aFontMetaRef_4905: FontMetaRef?
         var anIntArray4906: IntArray?
-        @JvmField
+
         var aFontMetaRef_4907: FontMetaRef?
 
         fun method490(i: Byte, class348_sub49: ByteBuffer): MinimapTileEntry {

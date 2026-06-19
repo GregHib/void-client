@@ -2,15 +2,15 @@
 * Visit http://jode.sourceforge.net/
 */
 class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : RenderNode() {
-    @JvmField
+
     var anInt10482: Int = 0
-    @JvmField
+
     var anInt10484: Int = 0
-    @JvmField
+
     var aByteArray10486: ByteArray
-    @JvmField
+
     var anInt10487: Int = 0
-    @JvmField
+
     var anInt10489: Int = 0
     fun method3292(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
         this.anInt10484 = i_1_
@@ -348,21 +348,21 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
     }
 
     companion object {
-        @JvmField
+
         var aJs5Archive_10480: Js5Archive? = null
-        @JvmField
+
         var anInt10481: Int = 0
-        @JvmField
+
         var anInt10483: Int = 0
-        @JvmField
+
         var anInt10485: Int = 0
-        @JvmField
+
         var aSmoothingBuffer_10488: SmoothingBuffer? = null
-        @JvmField
+
         var anInt10490: Int = 0
-        @JvmField
+
         var anInt10491: Int = 0
-        @JvmField
+
         var aNodeDeque_10492: NodeDeque? = NodeDeque()
 
         @JvmStatic

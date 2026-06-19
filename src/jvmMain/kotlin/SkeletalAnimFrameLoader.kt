@@ -8,7 +8,7 @@ class SkeletalAnimFrameLoader {
     private var aShortArray465: ShortArray? = null
     private var anIntArray472: IntArray? = null
     private var aShortArray474: ShortArray? = null
-    @JvmField
+
     var aModelDefinitionLoader_475: ModelDefinitionLoader? = null
     private lateinit var aShortArray477: ShortArray
     private lateinit var aShortArray480: ShortArray
@@ -140,33 +140,33 @@ class SkeletalAnimFrameLoader {
     }
 
     companion object {
-        @JvmField
+
         var anInt462: Int = 0
-        @JvmField
+
         var aLruByteCache_463: LruByteCache? = LruByteCache(8)
-        @JvmField
+
         var anInt466: Int = 0
-        @JvmField
+
         var anInt467: Int = 0
-        @JvmField
+
         var anInt468: Int = 0
-        @JvmField
+
         var anInt469: Int = 0
-        @JvmField
+
         var anInt470: Int = 0
-        @JvmField
+
         var anInt471: Int = 0
-        @JvmField
+
         var anInt473: Int = 0
-        @JvmField
+
         var aFrame476: Frame? = null
-        @JvmField
+
         var anInt478: Int = 0
-        @JvmField
+
         var anInt479: Int = 0
-        @JvmField
+
         var anInt481: Int
-        @JvmField
+
         var aLong482: Long = -1L
 
         @JvmStatic

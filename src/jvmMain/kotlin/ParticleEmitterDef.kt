@@ -5,15 +5,15 @@ import Texture2DProvider.Companion.method2259
 * Visit http://jode.sourceforge.net/
 */
 open class ParticleEmitterDef internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i_2_: Int, i_3_: Int) : ConfigTypeProvider {
-    @JvmField
+
     var anInt4950: Int = 0
-    @JvmField
+
     var anInt4951: Int = 0
-    @JvmField
+
     var aTileRenderState_4952: TileRenderState? = null
-    @JvmField
+
     var aScreenAnchorAlignment_4955: ScreenAnchorAlignment? = null
-    @JvmField
+
     var anInt4958: Int = 0
 
     override fun method51(i: Byte): ProjectileFactory? {
@@ -34,7 +34,7 @@ open class ParticleEmitterDef internal constructor(i: Int, screenAnchorAlignment
     }
 
     companion object {
-        @JvmField
+
         var aHudTabPanel_4953: HudTabPanel? = HudTabPanel("WIP", 2)
         var anInt4954: Int = 0
         var anInt4956: Int = 0

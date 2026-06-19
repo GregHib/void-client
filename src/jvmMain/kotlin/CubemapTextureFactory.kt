@@ -2,19 +2,19 @@
 * Visit http://jode.sourceforge.net/
 */
 class CubemapTextureFactory {
-    @JvmField
+
     var anInt4520: Int = 0
-    @JvmField
+
     var anInt4522: Int = 0
-    @JvmField
+
     var anInt4524: Int = 0
-    @JvmField
+
     var anInt4525: Int = 0
 
     companion object {
-        @JvmField
+
         var anInt4521: Int = 0
-        @JvmField
+
         var anInt4523: Int = 0
         @JvmStatic
         fun method3583(bool: Boolean, `is`: ByteArray?, i: Int, i_0_: Int, var_ha_Sub2: OpenGlRenderer?, i_1_: Int, i_2_: Int, i_3_: Int): GlTexture2DRegion? {

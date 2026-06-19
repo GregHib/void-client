@@ -3,26 +3,26 @@
 */
 class MultiFieldRecord : LinkedListNode() {
     var anInt6892: Int = 0
-    @JvmField
+
     var anInt6893: Int = -1
-    @JvmField
+
     var anInt6894: Int = 0
     var anInt6895: Int = 0
-    @JvmField
+
     var anInt6896: Int = 0
     var anInt6899: Int = 0
     var anInt6900: Int = 0
     var anInt6902: Int = 0
     var anInt6903: Int = 0
     var anInt6904: Int = 0
-    @JvmField
+
     var anInt6905: Int = 0
     var anInt6907: Int = 0
 
     companion object {
-        @JvmField
+
         var aMinimapPositionStateArray6897s: Array<MinimapPositionState?>? = arrayOfNulls<MinimapPositionState>(8)
-        @JvmField
+
         var aFloat6898: Float = 0.0f
         var anInt6901: Int = 0
         var anInt6906: Int = 0

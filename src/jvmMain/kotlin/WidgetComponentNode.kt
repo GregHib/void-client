@@ -40,21 +40,21 @@ open class WidgetComponentNode(js5Archive: Js5Archive?, particleEmitterDef: Part
     }
 
     companion object {
-        @JvmField
+
         var anInt4652: Int = 0
-        @JvmField
+
         var anInt4653: Int = 0
-        @JvmField
+
         var anIntArray4654: IntArray? = null
-        @JvmField
+
         var anInt4656: Int = 0
-        @JvmField
+
         var anInt4657: Int = 0
-        @JvmField
+
         var anInt4658: Int = 0
-        @JvmField
+
         var anInt4660: Int = 0
-        @JvmField
+
         var anInt4662: Int = 0
 
         fun method1115(i: Int, i_3_: Int, i_4_: Byte): Int {

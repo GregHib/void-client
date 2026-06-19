@@ -119,37 +119,37 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
     }
 
     companion object {
-        @JvmField
+
         var aRenderConfigFactory_9011: RenderConfigFactory? = RenderConfigFactory()
-        @JvmField
+
         var anInt9012: Int = 0
-        @JvmField
+
         var anInt9013: Int = 0
-        @JvmField
+
         var anInt9017: Int = 0
-        @JvmField
+
         var anInt9021: Int = 0
-        @JvmField
+
         var anInt9022: Int = 0
-        @JvmField
+
         var aDouble9023: Double = 0.0
-        @JvmField
+
         var anInt9025: Int = 0
-        @JvmField
+
         var anInt9026: Int = 0
-        @JvmField
+
         var aIsaacCipher_9029: IsaacCipher? = null
-        @JvmField
+
         var anInt9030: Int = 0
-        @JvmField
+
         var aConfigDefinitionLoader_9031: ConfigDefinitionLoader? = null
-        @JvmField
+
         var aJs5Archive_9033: Js5Archive? = null
-        @JvmField
+
         var aFontMetaRef_9034: FontMetaRef? = FontMetaRef(30, 4)
-        @JvmField
+
         var aLocTypeDefLoader_9036: LocTypeDefLoader? = null
-        @JvmField
+
         var aBoolean9038: Boolean = false
 
         @JvmStatic

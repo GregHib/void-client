@@ -84,15 +84,15 @@ class HostPingThread : Runnable {
 
     companion object {
         var anInt2257: Int = 0
-        @JvmField
+
         var aAbstractModelRendererArray2260: Array<AbstractModelRenderer?>? = null
-        @JvmField
+
         var aWorldListEntryArray2261: Array<WorldListEntry?>? = null
         var anInt2262: Int = 0
         var anInt2263: Int = 0
-        @JvmField
+
         var anInt2264: Int = 0
-        @JvmField
+
         var anInt2265: Int = method2253(1600, 124)
         var anInt2266: Int = 0
 

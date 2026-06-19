@@ -28,27 +28,27 @@ class MinimapPolygonDrawer internal constructor(private val anInt5246: Int, priv
     }
 
     companion object {
-        @JvmField
+
         var anInt5238: Int = 0
-        @JvmField
+
         var anInt5239: Int = 0
-        @JvmField
+
         var anInt5240: Int = 0
-        @JvmField
+
         var anIntArray5241: IntArray? = IntArray(14)
-        @JvmField
+
         var aColorArray5242: Array<Color?>? = arrayOf<Color?>(Color(16777215), Color(16777215), Color(16741381), Color(16741381))
-        @JvmField
+
         var anInt5244: Int = 0
-        @JvmField
+
         var anInt5248: Int = 0
-        @JvmField
+
         var anInt5251: Int = 0
-        @JvmField
+
         var anInt5252: Int = 0
-        @JvmField
+
         var anInt5253: Int = 0
-        @JvmField
+
         var anInt5254: Int = 0
 
         fun method465(i: Int) {

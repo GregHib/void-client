@@ -3,11 +3,11 @@
 */
 abstract class ShaderProgram : LinkedListNode() {
     companion object {
-        @JvmField
+
         var aRectangleRegion_7274: RectangleRegion? = RectangleRegion(10, 2, 2, 0)
-        @JvmField
+
         var anInt7275: Int = 0
-        @JvmField
+
         var anInt7276: Int = 0
 
         fun method3437(i: Int, i_0_: Int) {

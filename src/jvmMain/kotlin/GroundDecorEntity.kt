@@ -4,17 +4,17 @@ import Font.Companion.method2570
 * Visit http://jode.sourceforge.net/
 */
 abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, bool: Boolean, i_18_: Byte) : SceneEntity() {
-    @JvmField
+
     var aBoolean8741: Boolean
-    @JvmField
+
     var aShort8743: Short
-    @JvmField
+
     var aByte8745: Byte
-    @JvmField
+
     var aShort8747: Short
-    @JvmField
+
     var aShort8750: Short
-    @JvmField
+
     var aShort8751: Short
     override fun method2378(i: Int): Boolean {
         anInt8740++
@@ -147,29 +147,29 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
     }
 
     companion object {
-        @JvmField
+
         var anInt8739: Int = 0
-        @JvmField
+
         var anInt8740: Int = 0
-        @JvmField
+
         var anInt8742: Int = 0
-        @JvmField
+
         var aNodeDeque_8744: NodeDeque? = NodeDeque()
-        @JvmField
+
         var anInt8746: Int = 0
-        @JvmField
+
         var anInt8748: Int = 0
-        @JvmField
+
         var anInt8749: Int = 0
-        @JvmField
+
         var anInt8752: Int = 0
-        @JvmField
+
         var anInt8753: Int = 0
-        @JvmField
+
         var anInt8754: Int = 0
-        @JvmField
+
         var aJs5Archive_8755: Js5Archive? = null
-        @JvmField
+
         var aInboundPacketHeader_8756: InboundPacketHeader? = InboundPacketHeader(107, 6)
 
         @JvmStatic

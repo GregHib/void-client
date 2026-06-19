@@ -14,9 +14,9 @@ abstract class MinimapShapeDrawer(@JvmField var anInt864: Int, @JvmField var anI
     abstract fun method457(i: Int, i_4_: Int, i_5_: Int)
 
     companion object {
-        @JvmField
+
         var anInt861: Int = 0
-        @JvmField
+
         var aString863: String? = null
         @JvmStatic
         fun method458(i: Int) {

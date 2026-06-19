@@ -18,7 +18,7 @@ class MinimapAreaMarkerNode : HashLinkedListNode() {
     companion object {
         var aFontMetaRef_9687: FontMetaRef? = FontMetaRef(14, -1)
         var anInt9698: Int = 0
-        @JvmField
+
         var anInt9699: Int = 0
         var aMapTileShapeArray9700: Array<MapTileShape?>? = null
         var anInt9701: Int = 0

@@ -23,7 +23,7 @@ import kotlinx.coroutines.runBlocking
  */
 object ClientLoadStateMachine {
     var anInt2172: Int = 0
-    @JvmField
+
     var anInt2173: Int = 0
     var anInt2174: Int = 0
     var anInt2175: Int = 0

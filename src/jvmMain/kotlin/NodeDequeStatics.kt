@@ -1,10 +1,10 @@
 import java.awt.Canvas
 
 object NodeDequeStatics {
-    @JvmField
+
     var aJs5Archive_3323: Js5Archive? = null
     var anInt3324: Int = 0
-    @JvmField
+
     var aFont_3326: Font? = null
     var anObject3331: Any? = null
     var aModelLightingConfigArrayArray3335: Array<Array<ModelLightingConfig?>?>? = null

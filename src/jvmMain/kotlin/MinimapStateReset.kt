@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 object MinimapStateReset {
-    @JvmField
+
     var anInt1870: Int = 0
     var aInboundPacketHeader_1871: InboundPacketHeader? = InboundPacketHeader(52, -1)
     var anInt1872: Int = 0

@@ -3,9 +3,9 @@
 */
 object OrientationRotator {
     var anInt2044: Int = 0
-    @JvmField
+
     var aProjectileFactory_2045: ProjectileFactory? = ProjectileFactory(8, 1)
-    @JvmField
+
     var anInt2046: Int = 0
 
     @JvmStatic

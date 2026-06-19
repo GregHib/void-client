@@ -24,23 +24,23 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
     }
 
     companion object {
-        @JvmField
+
         var anIntArray60: IntArray?
-        @JvmField
+
         var anInt61: Int = 0
-        @JvmField
+
         var anInt62: Int = 0
-        @JvmField
+
         var anInt63: Int = 0
-        @JvmField
+
         var anInt65: Int = 0
-        @JvmField
+
         var anInt66: Int = 0
-        @JvmField
+
         var anInt67: Int = 0
-        @JvmField
+
         var anInt69: Int = 0
-        @JvmField
+
         var anInt70: Int = 0
 
         @JvmStatic

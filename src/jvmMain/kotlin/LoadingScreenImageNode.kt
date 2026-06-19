@@ -7,15 +7,15 @@ import MapRegionLoader.Companion.method749
 */
 class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?) : HashLinkedListNode() {
     companion object {
-        @JvmField
+
         var aBoolean9498: Boolean = false
         var anInt9500: Int = 0
-        @JvmField
+
         var anInt9501: Int
-        @JvmField
+
         var aShortArray9502: ShortArray?
         var aInboundPacketHeader_9503: InboundPacketHeader?
-        @JvmField
+
         var anInt9504: Int = 0
         var anIntArray9505: IntArray? = IntArray(3)
         var anInt9506: Int = 0

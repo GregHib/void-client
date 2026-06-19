@@ -6,12 +6,12 @@ import MapSceneRenderer.method384
 * Visit http://jode.sourceforge.net/
 */
 object HeightMapNoise {
-    @JvmField
+
     var aFontMetaRef_3825: FontMetaRef?
     var anInt3826: Int = 0
     var anInt3827: Int = 0
     var anInt3828: Int = 0
-    @JvmField
+
     var anInt3829: Int = -1
     var anInt3830: Int = 0
 

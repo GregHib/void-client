@@ -152,26 +152,26 @@ class ArbFogMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Mat
     }
 
     companion object {
-        @JvmField
+
         var anInt6184: Int = 0
-        @JvmField
+
         var anInt6185: Int = 0
-        @JvmField
+
         var anInt6186: Int = 0
         var anIntArray6189: IntArray? = IntArray(1)
-        @JvmField
+
         var anInt6190: Int = 0
-        @JvmField
+
         var anInt6191: Int = 0
-        @JvmField
+
         var anInt6192: Int = 0
-        @JvmField
+
         var anInt6195: Int = 0
-        @JvmField
+
         var aStringArray6200: Array<String?>? = null
-        @JvmField
+
         var aRgbColorPalette_6201: RgbColorPalette? = RgbColorPalette(9, 19)
-        @JvmField
+
         var anInt6202: Int = 0
 
         @JvmStatic

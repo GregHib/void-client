@@ -133,27 +133,27 @@ class SynthVoiceGroup internal constructor(private val aClass348_Sub16_Sub3_8852
     }
 
     companion object {
-        @JvmField
+
         var anInt8845: Int = 0
-        @JvmField
+
         var anInt8846: Int = 0
-        @JvmField
+
         var anInt8847: Int = 0
-        @JvmField
+
         var anInt8849: Int = 0
-        @JvmField
+
         var anInt8850: Int = 0
-        @JvmField
+
         var anInt8851: Int = 0
-        @JvmField
+
         var aRgbColorPalette_8853: RgbColorPalette? = RgbColorPalette(11, 8)
-        @JvmField
+
         var anInt8856: Int = 0
-        @JvmField
+
         var aFontMetaRef_8857: FontMetaRef? = FontMetaRef(54, 15)
-        @JvmField
+
         var anInt8858: Int = 0
-        @JvmField
+
         var anInt8859: Int = 0
 
         fun method2822(i: Int, class348_sub49_sub2: CipheredPacketBuffer, i_3_: Int) {

@@ -53,14 +53,13 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
         var anInt7054: Int = 0
         var anInt4459: Int = 0
         var anInt10084: Int = 0
-        
-        @JvmField
+
         var anInt8757: Int = 0
-        @JvmField
+
         var anInt8758: Int = 0
-        @JvmField
+
         var anInt8760: Int = 0
-        @JvmField
+
         var anInt8765: Int = 0
 
         var aBoolean9307: Boolean = true

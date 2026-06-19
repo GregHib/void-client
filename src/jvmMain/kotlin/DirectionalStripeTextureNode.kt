@@ -79,11 +79,11 @@ class DirectionalStripeTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var anIntArray9096: IntArray? = IntArray(2)
-        @JvmField
+
         var anInt9097: Int = 0
-        @JvmField
+
         var anInt9100: Int = 0
         var anInt9101: Int = -1
 

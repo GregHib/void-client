@@ -4,15 +4,15 @@ import ShadowQualityOptionState.Companion.method1791
 * Visit http://jode.sourceforge.net/
 */
 object SceneRegionState {
-    @JvmField
+
     var anInt193: Int = 0
-    @JvmField
+
     var anInt194: Int = 0
-    @JvmField
+
     var anInt195: Int = 0
-    @JvmField
+
     var aHudTabPanel_196: HudTabPanel? = null
-    @JvmField
+
     var anInt197: Int = 0
 
     @JvmStatic

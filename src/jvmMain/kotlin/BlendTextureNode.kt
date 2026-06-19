@@ -68,13 +68,13 @@ class BlendTextureNode : AbstractProceduralTextureNode(3, false) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9356: Int = 0
-        @JvmField
+
         var aClipboard9357: Clipboard? = null
-        @JvmField
+
         var anInt9358: Int = 0
-        @JvmField
+
         var anInt9359: Int = 0
 
         @JvmStatic

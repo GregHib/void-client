@@ -13,10 +13,10 @@ class ConfigFlagUtil {
         var anInt3229: Int = 0
         var anInt3230: Int = 0
         var anInt3231: Int = 0
-        @JvmField
+
         var aFontMetaRef_3232: FontMetaRef? = FontMetaRef(51, 3)
         var anInt3233: Int = 0
-        @JvmField
+
         var anInt3234: Int = 0
         var anInt3235: Int = 0
         var anInt3236: Int = 0

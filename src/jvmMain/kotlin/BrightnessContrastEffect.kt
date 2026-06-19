@@ -68,20 +68,20 @@ class BrightnessContrastEffect : AbstractProceduralTextureNode(1, false) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9174: Int = 0
-        @JvmField
+
         var anInt9177: Int = 0
-        @JvmField
+
         var anInt9178: Int = 0
-        @JvmField
+
         var anInt9179: Int = 0
         var aCacheLruCache_9180: CacheLruCache?
-        @JvmField
+
         var aBoolean9181: Boolean = false
-        @JvmField
+
         var anIntArray9183: IntArray?
-        @JvmField
+
         var aBoolean9184: Boolean
 
         @JvmStatic

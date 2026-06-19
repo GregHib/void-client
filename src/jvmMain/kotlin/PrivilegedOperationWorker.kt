@@ -28,22 +28,22 @@ import kotlin.concurrent.Volatile
  */
 class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String?, i_22_: Int, bool: Boolean) : Runnable {
     private var aNativeCursorCallback__3776: NativeCursorCallback? = null
-    @JvmField
+
     var aBoolean3777: Boolean = false
-    @JvmField
+
     var aRandomAccessFileOnDisk_3779: RandomAccessFileOnDisk? = null
-    @JvmField
+
     var aRandomAccessFileOnDisk_3785: RandomAccessFileOnDisk? = null
     private var anObject3787: Any? = null
-    @JvmField
+
     var aRandomAccessFileOnDisk_3788: RandomAccessFileOnDisk? = null
     private val job: Job
     private val dispatcher = Executors.newFixedThreadPool(1).asCoroutineDispatcher()
     private var anObject3791: Any? = null
     private var anObject3793: Any? = null
-    @JvmField
+
     var aBoolean3794: Boolean = false
-    @JvmField
+
     var aRandomAccessFileOnDiskArray3795: Array<RandomAccessFileOnDisk?>? = null
     private var aLinkedQueueNode_3797: LinkedQueueNode? = null
     private var aLinkedQueueNode_3798: LinkedQueueNode? = null
@@ -447,14 +447,14 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
 
     companion object {
         var aString3778: String? = null
-        @JvmField
+
         var aString3780: String? = null
 
         @Volatile
         private var aLong3781 = 0L
-        @JvmField
+
         var aString3782: String? = null
-        @JvmField
+
         var aMethod3783: Method? = null
         private var aString3784: String? = null
         var aMethod3786: Method? = null

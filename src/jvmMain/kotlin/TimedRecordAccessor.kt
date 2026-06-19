@@ -15,19 +15,19 @@ abstract class TimedRecordAccessor : LinkedListNode() {
     abstract fun method3315(i: Int): Int
 
     companion object {
-        @JvmField
+
         var anInt7102: Int = 1400
-        @JvmField
+
         var aTextureFormatInfo_7103: TextureFormatInfo? = TextureFormatInfo(3)
-        @JvmField
+
         var anInt7104: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_7105: InboundPacketHeader? = InboundPacketHeader(101, 20)
-        @JvmField
+
         var aInboundPacketHeader_7106: InboundPacketHeader? = InboundPacketHeader(36, -2)
-        @JvmField
+
         var aAbstractModelRendererArray7107: Array<AbstractModelRenderer?>? = null
-        @JvmField
+
         var aCollisionMapArray7108s: Array<CollisionMap?>? = arrayOfNulls<CollisionMap>(4)
 
         @JvmStatic

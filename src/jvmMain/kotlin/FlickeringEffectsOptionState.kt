@@ -38,31 +38,31 @@ class FlickeringEffectsOptionState : GraphicsOptionState {
     }
 
     companion object {
-        @JvmField
+
         var anInt5911: Int = 0
-        @JvmField
+
         var anInt5912: Int = 0
-        @JvmField
+
         var anInt5913: Int = 0
-        @JvmField
+
         var anInt5914: Int = 0
-        @JvmField
+
         var anInt5915: Int = 0
-        @JvmField
+
         var anInt5916: Int = 0
-        @JvmField
+
         var anInt5917: Int = 0
-        @JvmField
+
         var anInt5918: Int = 0
-        @JvmField
+
         var anInt5919: Int = 0
-        @JvmField
+
         var anInt5920: Int = 0
-        @JvmField
+
         var anIntArrayArray5921: Array<IntArray?>? = null
-        @JvmField
+
         var anInt5923: Int = 0
-        @JvmField
+
         var anInt5924: Int = 0
 
         @JvmStatic

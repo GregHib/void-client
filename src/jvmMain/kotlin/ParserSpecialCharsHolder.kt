@@ -5,7 +5,7 @@ object ParserSpecialCharsHolder {
     var aInboundPacketHeader_1901: InboundPacketHeader? = InboundPacketHeader(38, -1)
     var anInt1902: Int
     var aCharArray1903: CharArray? = charArrayOf('[', ']', '#')
-    @JvmField
+
     var aFontMetaRef_1904: FontMetaRef?
 
     @JvmStatic

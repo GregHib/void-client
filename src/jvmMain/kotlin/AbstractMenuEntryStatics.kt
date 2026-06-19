@@ -1,15 +1,15 @@
 object AbstractMenuEntryStatics {
-    @JvmField
+
     var aShort1700: Short = 256
-    @JvmField
+
     var anInt1701: Int = 0
-    @JvmField
+
     var aInboundPacketHeader_1702: InboundPacketHeader?
-    @JvmField
+
     var aAbstractModelRenderer_1706: AbstractModelRenderer? = null
-    @JvmField
+
     var anInt1710: Int = 0
-    @JvmField
+
     var aBoolean1712: Boolean = false
 
     /*synthetic*/

@@ -38,17 +38,17 @@ class TimedRecordAccessorB : TimedRecordAccessor() {
     }
 
     companion object {
-        @JvmField
+
         var anInt9731: Int = 0
-        @JvmField
+
         var anInt9732: Int = 0
-        @JvmField
+
         var anInt9735: Int = 0
-        @JvmField
+
         var anInt9737: Int = 0
-        @JvmField
+
         var anInt9738: Int = 0
-        @JvmField
+
         var anInt9740: Int = 0
 
         @JvmStatic

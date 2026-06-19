@@ -6,7 +6,7 @@ import CacheArchiveIndexLoader.Companion.method340
 class SceneEntityModel : SceneLinkedListNode() {
     var aBoolean6409: Boolean = false
     var aClass318_Sub1_6410: SceneEntity? = null
-    @JvmField
+
     var aClass318_Sub3Array6414: Array<SceneOcculder?>? = null
 
     fun method2504(i: Int, i_32_: Int, var_renderer: Renderer?, i_33_: Int): Boolean {
@@ -31,7 +31,7 @@ class SceneEntityModel : SceneLinkedListNode() {
     companion object {
         var anInt6407: Int = 0
         var anInt6408: Int = 0
-        @JvmField
+
         var anInt6411: Int = 0
         var anInt6412: Int = 0
         var anInt6413: Int = 0

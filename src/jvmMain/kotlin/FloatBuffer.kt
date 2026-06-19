@@ -31,11 +31,11 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
         var anInt9744: Int = 0
         var anInt9745: Int = 0
         var aBoolean9746: Boolean = true
-        @JvmField
+
         var anInt9747: Int = 0
         var aRectangleRegion_9748: RectangleRegion? = RectangleRegion(7, 0, 1, 1)
         var aFontMetaRef_9749: FontMetaRef?
-        @JvmField
+
         var anInt9750: Int
         var anInt9751: Int = 0
 

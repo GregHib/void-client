@@ -4,64 +4,64 @@ import CacheArchiveIndexLoader.Companion.method340
 * Visit http://jode.sourceforge.net/
 */
 class NpcType {
-    @JvmField
+
     var aByte1325: Byte
     var anInt1327: Int
     private var aShortArray1328: ShortArray? = null
-    @JvmField
+
     var anInt1329: Int = 32
     private var aByte1330: Byte = 0
-    @JvmField
+
     var aBoolean1331: Boolean = true
-    @JvmField
+
     var anInt1333: Int = -1
     var anInt1335: Int
-    @JvmField
+
     var anInt1336: Int
-    @JvmField
+
     var anInt1337: Int = 0
     var anInt1338: Int
-    @JvmField
+
     var aShort1339: Short
-    @JvmField
+
     var anInt1340: Int = 256
-    @JvmField
+
     var anIntArray1342: IntArray = intArrayOf()
     var anInt1343: Int
-    @JvmField
+
     var anInt1344: Int = 0
-    @JvmField
+
     var aBoolean1345: Boolean = false
     private var anInt1346 = 128
-    @JvmField
+
     var aByte1347: Byte
-    @JvmField
+
     var aBufferedMessageQueue_1348: BufferedMessageQueue? = null
     var aStringArray1349: Array<String?>
-    @JvmField
+
     var aShort1350: Short = 0
     private var aShortArray1352: ShortArray = shortArrayOf()
-    @JvmField
+
     var aByte1353: Byte
     private var anInt1354: Int
-    @JvmField
+
     var aByte1355: Byte
-    @JvmField
+
     var anInt1356: Int = 255
     private var anInt1358 = 128
     private var aByte1360: Byte = 0
     var anInt1361: Int
-    @JvmField
+
     var aBoolean1362: Boolean = false
-    @JvmField
+
     var anInt1363: Int = 256
     var anInt1364: Int
-    @JvmField
+
     var anInt1366: Int
     private var anInt1368: Int
-    @JvmField
+
     var aBoolean1369: Boolean = true
-    @JvmField
+
     var aBoolean1370: Boolean = false
     var anInt1371: Int
     var aString1372: String? = "null"
@@ -69,31 +69,31 @@ class NpcType {
     private var aByteArray1374: ByteArray? = null
     var anInt1375: Int
     private var aByte1376: Byte = 0
-    @JvmField
+
     var anIntArray1377: IntArray? = null
     private var anIntArray1380: IntArray? = null
-    @JvmField
+
     var aBoolean1381: Boolean = false
     var anInt1382: Int
-    @JvmField
+
     var anInt1383: Int
     var aByte1384: Byte
     var anInt1385: Int
     private var aHashtable_1386: Hashtable? = null
     private var anIntArrayArray1388: Array<IntArray?>? = null
-    @JvmField
+
     var anInt1390: Int
     private var aShortArray1391: ShortArray = shortArrayOf()
-    @JvmField
+
     var anInt1392: Int = 0
     private var aShortArray1393: ShortArray? = null
     var anInt1395: Int
-    @JvmField
+
     var aBoolean1396: Boolean = true
-    @JvmField
+
     var aBoolean1397: Boolean = true
     private var anInt1398 = 0
-    @JvmField
+
     var anInt1399: Int = 1
     var anInt1401: Int
     private var anIntArray1402: IntArray? = null
@@ -743,37 +743,37 @@ class NpcType {
     }
 
     companion object {
-        @JvmField
+
         var anInt1326: Int = 0
-        @JvmField
+
         var anInt1332: Int = 0
-        @JvmField
+
         var anInt1334: Int = 0
-        @JvmField
+
         var anInt1341: Int = 0
-        @JvmField
+
         var anInt1351: Int = 0
-        @JvmField
+
         var anInt1357: Int = 0
         var anInt1359: Int = 0
-        @JvmField
+
         var aAbstractModelRenderer_1365: AbstractModelRenderer? = null
-        @JvmField
+
         var aClient1367: Client? = null
-        @JvmField
+
         var anInt1378: Int = 0
-        @JvmField
+
         var anInt1379: Int = 0
         var anInt1387: Int = 0
-        @JvmField
+
         var anInt1389: Int = 0
-        @JvmField
+
         var anInt1394: Int = 0
-        @JvmField
+
         var anInt1400: Int = 0
-        @JvmField
+
         var anInt1403: Int = 0
-        @JvmField
+
         var anInt1404: Int = 0
         @JvmStatic
         fun method797(i: Int, i_29_: Int, i_30_: Byte) {

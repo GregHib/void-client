@@ -48,31 +48,31 @@ class RemoveRoofsOptionState : GraphicsOptionState {
     }
 
     companion object {
-        @JvmField
+
         var anInt6057: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_6058: InboundPacketHeader?
-        @JvmField
+
         var anInt6059: Int = 0
-        @JvmField
+
         var anInt6060: Int = 0
-        @JvmField
+
         var anIntArray6061: IntArray?
-        @JvmField
+
         var anIntArray6062: IntArray? = IntArray(3)
-        @JvmField
+
         var anInt6063: Int = 0
-        @JvmField
+
         var anInt6064: Int = 0
-        @JvmField
+
         var anInt6065: Int = 0
-        @JvmField
+
         var aClass318_Sub1Array6066: Array<SceneEntity?>? = null
-        @JvmField
+
         var anInt6067: Int = 0
-        @JvmField
+
         var anInt6068: Int = 0
-        @JvmField
+
         var anInt6069: Int = 0
 
         @JvmStatic

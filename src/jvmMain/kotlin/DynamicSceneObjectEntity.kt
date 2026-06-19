@@ -181,9 +181,9 @@ class DynamicSceneObjectEntity internal constructor(i: Int, i_3_: Int, i_4_: Int
         var anInt10188: Int = 0
         var anInt10192: Int = 0
         var anInt10193: Int = 0
-        @JvmField
+
         var aRectangleRegion_10194: RectangleRegion?
-        @JvmField
+
         var aStringArray10195: Array<String?>? = arrayOfNulls<String>(8)
         var anInt10197: Int = 0
         var anInt10198: Int = 0

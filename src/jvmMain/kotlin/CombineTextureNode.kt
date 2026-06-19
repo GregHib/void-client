@@ -366,24 +366,24 @@ class CombineTextureNode : AbstractProceduralTextureNode(2, false) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9222: Int = 0
-        @JvmField
+
         var anInt9223: Int = 0
-        @JvmField
+
         var anInt9224: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_9225: InboundPacketHeader?
-        @JvmField
+
         var anInt9227: Int = 0
-        @JvmField
+
         var anInt9228: Int = 0
 
         @Volatile
         var aBoolean9229: Boolean = true
-        @JvmField
+
         var anIntArray9230: IntArray? = intArrayOf(0, -1, 0, 1)
-        @JvmField
+
         var anInt9231: Int = 0
 
         @JvmStatic

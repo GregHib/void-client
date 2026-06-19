@@ -22,17 +22,17 @@ class GlShaderObjectHandle internal constructor(glRenderDevice: GlRenderDevice?,
     }
 
     companion object {
-        @JvmField
+
         var anInt514: Int = 0
-        @JvmField
+
         var aRgbColorPalette_515: RgbColorPalette? = RgbColorPalette(7, 7)
-        @JvmField
+
         var anInt516: Int = 0
-        @JvmField
+
         var aJs5Archive_518: Js5Archive? = null
-        @JvmField
+
         var aScriptCompilerThread_520: ScriptCompilerThread? = null
-        @JvmField
+
         var aSystemFontGlyphs_521: SystemFontGlyphs? = null
 
         @JvmStatic

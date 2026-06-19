@@ -64,9 +64,9 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
         var anInt4714: Int = 0
         var anInt4715: Int = 0
         var anInt4716: Int = 0
-        @JvmField
+
         var anInt4717: Int = 0
-        @JvmField
+
         var anInt4718: Int
 
         @JvmStatic

@@ -8,28 +8,28 @@ import NoiseTextureGenerator.Companion.method544
 */
 object ProjectileConfigUtil {
     var anInt387: Int = 0
-    @JvmField
+
     var anInt388: Int = 0
-    @JvmField
+
     var aHashtable_389: Hashtable? = Hashtable(4)
-    @JvmField
+
     var anInt390: Int = 0
-    @JvmField
+
     var anInt391: Int = 0
-    @JvmField
+
     var anInt392: Int = 0
-    @JvmField
+
     var anInt393: Int = 0
-    @JvmField
+
     var anInt394: Int = 0
-    @JvmField
+
     var aFontMetaRef_395: FontMetaRef? = FontMetaRef(49, 6)
-    @JvmField
+
     var anInt396: Int = -1
-    @JvmField
+
     var anInt397: Int = 0
     var aFontMetaRef_398: FontMetaRef? = FontMetaRef(23, 8)
-    @JvmField
+
     var aTileRenderState_399: TileRenderState? = TileRenderState()
 
     @JvmStatic

@@ -1,5 +1,5 @@
 open class ByteBuffer : LinkedListNode {
-    @JvmField
+
     var aByteArray7154: ByteArray?
     var anInt7197: Int
     fun readByteInverse(i: Byte): Int {

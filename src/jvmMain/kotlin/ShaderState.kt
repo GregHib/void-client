@@ -3,7 +3,7 @@
 */
 open class ShaderState : ShaderObject() {
     companion object {
-        @JvmField
+
         var anInt6513: Int = 0
         var aFloatArray6514: FloatArray? = FloatArray(4)
 

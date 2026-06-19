@@ -33,30 +33,30 @@ class WaterDetailOptionState : GraphicsOptionState {
     }
 
     companion object {
-        @JvmField
+
         var anInt5982: Int = 0
-        @JvmField
+
         var anInt5983: Int = 0
-        @JvmField
+
         var anInt5984: Int = 0
-        @JvmField
+
         var anInt5985: Int = 0
-        @JvmField
+
         var anInt5986: Int = 0
-        @JvmField
+
         var anInt5987: Int = 0
-        @JvmField
+
         var anInt5988: Int = 0
         var aConfigFlagUtil_5989: ConfigFlagUtil? = ConfigFlagUtil()
-        @JvmField
+
         var aModelLightingConfig_5990: ModelLightingConfig? = null
-        @JvmField
+
         var anIntArrayArray5991: Array<IntArray?>? = arrayOfNulls<IntArray>(6)
-        @JvmField
+
         var aInboundPacketHeader_5992: InboundPacketHeader? = InboundPacketHeader(17, 4)
-        @JvmField
+
         var anInt5994: Int = 0
-        @JvmField
+
         var aKeyboardLayoutCache_5995: KeyboardLayoutCache? = null
 
         @JvmStatic

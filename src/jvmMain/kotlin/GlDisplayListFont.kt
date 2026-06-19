@@ -32,15 +32,15 @@ class GlDisplayListFont internal constructor(var_ha_Sub2: OpenGlRenderer?, i: In
     }
 
     companion object {
-        @JvmField
+
         var anInt1104: Int = 0
-        @JvmField
+
         var anInt1105: Int = 0
-        @JvmField
+
         var anInt1106: Int = 0
-        @JvmField
+
         var anInt1107: Int = 0
-        @JvmField
+
         var anInt1108: Int = 0
         @JvmStatic
         fun method592(bool: Boolean, i: Byte, bool_0_: Boolean, i_1_: Int, i_2_: Int): Int {

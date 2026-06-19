@@ -23,23 +23,23 @@ class FireParticleStream : OutputStream() {
     }
 
     companion object {
-        @JvmField
+
         var anInt92: Int = 0
-        @JvmField
+
         var aRandom93: Random? = Random()
-        @JvmField
+
         var anInt94: Int = 0
-        @JvmField
+
         var anInt95: Int = 0
-        @JvmField
+
         var anInt96: Int = 0
-        @JvmField
+
         var aClass110_Sub1Array97: Array<MapLabelMenuEntry?>? = null
-        @JvmField
+
         var anInt98: Int = 0
-        @JvmField
+
         var anIntArray99: IntArray?
-        @JvmField
+
         var anIntArray100: IntArray? = intArrayOf(99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 120)
 
         @JvmStatic

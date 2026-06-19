@@ -411,7 +411,7 @@ class ParticleSortRenderer internal constructor() {
         var anInt3018: Int = 0
         var anInt3019: Int = 0
         var anInt3021: Int = 0
-        @JvmField
+
         var aLinkedNodeListIterator_3022: LinkedNodeListIterator? = LinkedNodeListIterator()
         var anInt3023: Int = 0
         @JvmStatic

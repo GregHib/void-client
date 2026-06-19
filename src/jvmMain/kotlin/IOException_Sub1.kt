@@ -2,17 +2,17 @@ import java.io.IOException
 
 class IOException_Sub1(string: String?) : IOException(string) {
     companion object {
-        @JvmField
+
         var aBoolean86: Boolean = false
-        @JvmField
+
         var anInt87: Int = 0
-        @JvmField
+
         var anInt88: Int = 0
-        @JvmField
+
         var anInt89: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_90: InboundPacketHeader? = InboundPacketHeader(42, -1)
-        @JvmField
+
         var anIntArray91: IntArray? = IntArray(8)
 
         @JvmStatic

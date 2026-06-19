@@ -6,7 +6,7 @@ import kotlin.math.sin
  * Class80
  */
 class SynthSoundGenerator {
-    @JvmField
+
     var anInt1407: Int = 0
     private var aEnvelopeInterpolator_1408: EnvelopeInterpolator? = null
     private val anIntArray1410 = IntArray(5)
@@ -18,7 +18,7 @@ class SynthSoundGenerator {
     private var aEnvelopeInterpolator_1418: EnvelopeInterpolator? = null
     private var aFormantSynthFilter_1419: FormantSynthFilter? = null
     private var aEnvelopeInterpolator_1420: EnvelopeInterpolator? = null
-    @JvmField
+
     var anInt1421: Int = 500
     private var anInt1422 = 100
     private var aEnvelopeInterpolator_1423: EnvelopeInterpolator? = null

@@ -49,7 +49,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
     companion object {
         var anInt4933: Int = 0
         var aHashtable_4934: Hashtable? = Hashtable(8)
-        @JvmField
+
         var aCircleRasterizer_4938: CircleRasterizer? = null
         var anInt4939: Int = 0
         var anInt4941: Int = 0

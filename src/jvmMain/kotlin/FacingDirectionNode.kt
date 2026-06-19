@@ -2,27 +2,27 @@ import kotlin.math.atan2
 
 class FacingDirectionNode internal constructor(@JvmField var aByteArray6657: ByteArray?) : LinkedListNode() {
     companion object {
-        @JvmField
+
         var aRenderer6654: Renderer? = null
-        @JvmField
+
         var anIntArray6655: IntArray? = null
-        @JvmField
+
         var aBooleanArrayArray6656: Array<BooleanArray?>? = null
         private var aShortArray6658: ShortArray?
-        @JvmField
+
         var anInt6659: Int = 0
-        @JvmField
+
         var aBufferPositionTracker_6660: BufferPositionTracker? = null
         private var aShortArray6661: ShortArray? = shortArrayOf(967, 20428, -21577, 11219, -10290)
-        @JvmField
+
         var anApplet6662: GameApplet? = null
         private var aShortArray6663: ShortArray? = shortArrayOf(957, 20418, -21587, 11209, -10300)
-        @JvmField
+
         var aShortArrayArray6664: Array<ShortArray?>?
         private var aShortArray6665: ShortArray?
-        @JvmField
+
         var anIntArray6666: IntArray?
-        @JvmField
+
         var anInt6667: Int = 0
 
         @JvmStatic

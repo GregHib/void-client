@@ -10,9 +10,9 @@ object NativeLibraryUnloader {
     var anInt2971: Int = 0
     var aInboundPacketHeader_2972: InboundPacketHeader? = InboundPacketHeader(49, 4)
     var anInt2973: Int = 0
-    @JvmField
+
     var aMapSceneTileArray2974: Array<MapSceneTile?>? = null
-    @JvmField
+
     var anInt2975: Int = 0
 
     @JvmStatic

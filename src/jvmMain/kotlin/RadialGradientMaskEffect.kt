@@ -52,11 +52,11 @@ class RadialGradientMaskEffect : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var anIntArray9185: IntArray? = IntArray(50)
-        @JvmField
+
         var anInt9186: Int = 0
-        @JvmField
+
         var anInt9188: Int = 0
 
         @JvmStatic

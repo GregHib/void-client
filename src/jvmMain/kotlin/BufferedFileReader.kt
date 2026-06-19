@@ -4,11 +4,11 @@ import java.io.*
  * Class374
  */
 internal object BufferedFileReader {
-    @JvmField
+
     var anInt4536: Int = 0
-    @JvmField
+
     var aRgbColorPalette_4537: RgbColorPalette? = RgbColorPalette(3, 2)
-    @JvmField
+
     var aBufferedRandomAccessFile_4538: BufferedRandomAccessFile? = null
 
     @JvmStatic

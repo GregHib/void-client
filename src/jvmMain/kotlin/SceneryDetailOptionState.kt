@@ -51,35 +51,35 @@ class SceneryDetailOptionState : GraphicsOptionState {
     internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     companion object {
-        @JvmField
+
         var anInt6084: Int = 0
-        @JvmField
+
         var anInt6085: Int = 0
-        @JvmField
+
         var anInt6086: Int = 0
-        @JvmField
+
         var anInt6087: Int = 0
-        @JvmField
+
         var anInt6088: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_6089: InboundPacketHeader? = InboundPacketHeader(41, 3)
-        @JvmField
+
         var anInt6090: Int = 0
-        @JvmField
+
         var anInt6091: Int = 0
-        @JvmField
+
         var anInt6092: Int = 0
-        @JvmField
+
         var aStringArrayArray6093: Array<Array<String?>?>? = arrayOf<Array<String?>?>(arrayOf<String?>("M1", "M2", "S1", "F"), arrayOf<String?>("M1", "M2", "M3", "S1", "S2", "F"), arrayOf<String?>("M1", "M2", "M3", "M4", "S1", "S2", "S3", "F"))
-        @JvmField
+
         var anInt6094: Int = 0
-        @JvmField
+
         var anInt6095: Int = 0
-        @JvmField
+
         var aLruByteCache_6096: LruByteCache? = LruByteCache(8)
-        @JvmField
+
         var aAbstractModelRenderer_6097: AbstractModelRenderer? = null
-        @JvmField
+
         var aCircleRasterizer_6098: CircleRasterizer? = null
 
         @JvmStatic

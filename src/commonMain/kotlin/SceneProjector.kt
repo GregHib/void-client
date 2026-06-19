@@ -2,9 +2,9 @@
 * Visit http://jode.sourceforge.net/
 */
 class SceneProjector internal constructor(string: String?, i: Int) {
-    @JvmField
+
     var aString2985: String? = null
-    @JvmField
+
     var anInt2987: Int = 0
     override fun toString(): String {
         anInt2989++

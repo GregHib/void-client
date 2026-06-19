@@ -176,29 +176,29 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9383: Int = 0
-        @JvmField
+
         var anInt9384: Int = 0
-        @JvmField
+
         var anInt9385: Int = 0
-        @JvmField
+
         var anInt9387: Int = 0
-        @JvmField
+
         var anInt9388: Int = 0
-        @JvmField
+
         var anInt9391: Int = 0
-        @JvmField
+
         var anInt9393: Int = 0
-        @JvmField
+
         var anInt9394: Int = 0
-        @JvmField
+
         var anInt9395: Int = 0
-        @JvmField
+
         var anInt9397: Int = 0
-        @JvmField
+
         var anInt9399: Int = -1
-        @JvmField
+
         var aBoolean9403: Boolean = false
 
         @JvmStatic

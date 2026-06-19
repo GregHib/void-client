@@ -26,17 +26,17 @@ class CachedRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
     }
 
     companion object {
-        @JvmField
+
         var aJs5Archive_8667: Js5Archive? = null
-        @JvmField
+
         var anInt8668: Int = 0
-        @JvmField
+
         var anInt8669: Int = 0
-        @JvmField
+
         var anInt8671: Int = 0
-        @JvmField
+
         var anInt8672: Int = 0
-        @JvmField
+
         var anInt8673: Int = 0
         @JvmStatic
         fun method565(i: Int, i_0_: Int, modelDefinition: ModelDefinition?, `is`: IntArray?): ParticleGeometry {

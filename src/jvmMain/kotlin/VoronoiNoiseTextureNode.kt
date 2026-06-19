@@ -200,17 +200,17 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9120: Int = 0
-        @JvmField
+
         var aBoolean9121: Boolean = false
-        @JvmField
+
         var anInt9123: Int = 0
-        @JvmField
+
         var anInt9126: Int = 0
-        @JvmField
+
         var anInt9127: Int = 0
-        @JvmField
+
         var aFontMetaRef_9130: FontMetaRef? = FontMetaRef(1, -1)
 
         @JvmStatic

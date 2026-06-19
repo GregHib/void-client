@@ -10,10 +10,10 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
     }
 
     companion object {
-        @JvmField
+
         var aShort2269: Short = 32767
         var anInt2271: Int = 0
-        @JvmField
+
         var anIntArray2272: IntArray? = null
         var anInt2273: Int = 0
         var anInt2274: Int = 0

@@ -1,7 +1,7 @@
 import jaclib.memory.heap.NativeHeap
 
 class NativeShaderProgram(i: Int) : ShaderProgram() {
-    @JvmField
+
     var aNativeHeap9770: NativeHeap
 
     init {
@@ -15,17 +15,17 @@ class NativeShaderProgram(i: Int) : ShaderProgram() {
     }
 
     companion object {
-        @JvmField
+
         var anInt9771: Int = 0
-        @JvmField
+
         var anInt9772: Int = 0
-        @JvmField
+
         var aCameraNodeList_9773: CameraNodeList? = CameraNodeList()
-        @JvmField
+
         var anInt9774: Int = 0
-        @JvmField
+
         var anInt9775: Int = -1
-        @JvmField
+
         var anInt9776: Int = 0
 
         @JvmStatic

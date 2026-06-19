@@ -84,23 +84,23 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     private var aBoolean9910 = false
     private var aBoolean9911 = false
     private var aBoolean9912 = false
-    @JvmField
+
     var aMapBuffer9913: MapBuffer = MapBuffer()
     private var aBoolean9914 = false
-    @JvmField
+
     var aMapBuffer9915: MapBuffer = MapBuffer()
     private var aString9916: String? = null
     private val aString9917: String
-    @JvmField
+
     var anInt9918: Int = 0
     private var aBoolean9919 = false
-    @JvmField
+
     var aBoolean9920: Boolean = false
-    @JvmField
+
     var aBoolean9921: Boolean = false
-    @JvmField
+
     var aBoolean9922: Boolean = false
-    @JvmField
+
     var aBoolean9923: Boolean = false
     private var anInt9924 = 0
     private var anInt9925 = 0
@@ -1197,177 +1197,177 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     }
 
     companion object {
-        @JvmField
+
         var anInt9812: Int = 0
-        @JvmField
+
         var anInt9813: Int = 0
-        @JvmField
+
         var anInt9814: Int = 0
-        @JvmField
+
         var anInt9815: Int = 0
-        @JvmField
+
         var anInt9816: Int = 0
-        @JvmField
+
         var anInt9817: Int = 0
-        @JvmField
+
         var anInt9818: Int = 0
-        @JvmField
+
         var anInt9819: Int = 0
-        @JvmField
+
         var anInt9820: Int = 0
-        @JvmField
+
         var anInt9821: Int = 0
-        @JvmField
+
         var anInt9822: Int = 0
-        @JvmField
+
         var anInt9823: Int = 0
-        @JvmField
+
         var anInt9824: Int = 0
-        @JvmField
+
         var anInt9825: Int = 0
-        @JvmField
+
         var anInt9826: Int = 0
-        @JvmField
+
         var anInt9827: Int = 0
-        @JvmField
+
         var anInt9828: Int = 0
-        @JvmField
+
         var anInt9829: Int = 0
-        @JvmField
+
         var anInt9830: Int = 0
-        @JvmField
+
         var anInt9831: Int = 0
-        @JvmField
+
         var anInt9832: Int = 0
-        @JvmField
+
         var anInt9833: Int = 0
-        @JvmField
+
         var anInt9834: Int = 0
-        @JvmField
+
         var anInt9835: Int = 0
-        @JvmField
+
         var anInt9836: Int = 0
-        @JvmField
+
         var anInt9837: Int = 0
-        @JvmField
+
         var anInt9838: Int = 0
-        @JvmField
+
         var anInt9839: Int = 0
-        @JvmField
+
         var anInt9840: Int = 0
-        @JvmField
+
         var anInt9841: Int = 0
-        @JvmField
+
         var anInt9842: Int = 0
-        @JvmField
+
         var anInt9843: Int = 0
-        @JvmField
+
         var anInt9844: Int = 0
-        @JvmField
+
         var anInt9845: Int = 0
-        @JvmField
+
         var anInt9846: Int = 0
-        @JvmField
+
         var anInt9847: Int = 0
-        @JvmField
+
         var anInt9848: Int = 0
-        @JvmField
+
         var anInt9849: Int = 0
-        @JvmField
+
         var anInt9850: Int = 0
-        @JvmField
+
         var anInt9851: Int = 0
-        @JvmField
+
         var anInt9852: Int = 0
-        @JvmField
+
         var anInt9853: Int = 0
-        @JvmField
+
         var anInt9854: Int = 0
-        @JvmField
+
         var anInt9855: Int = 0
-        @JvmField
+
         var anInt9857: Int = 0
-        @JvmField
+
         var anInt9858: Int = 0
-        @JvmField
+
         var anInt9859: Int = 0
-        @JvmField
+
         var aRectangleRegion_9860: RectangleRegion? = RectangleRegion(15, 0, 1, 0)
-        @JvmField
+
         var anInt9861: Int = 0
-        @JvmField
+
         var anInt9862: Int = 0
-        @JvmField
+
         var anInt9863: Int = 0
-        @JvmField
+
         var anInt9864: Int = 0
-        @JvmField
+
         var anInt9865: Int = 0
-        @JvmField
+
         var anInt9866: Int = 0
-        @JvmField
+
         var anInt9867: Int = 0
-        @JvmField
+
         var anInt9868: Int = 0
-        @JvmField
+
         var anInt9870: Int = 0
-        @JvmField
+
         var anInt9871: Int = 0
-        @JvmField
+
         var anInt9872: Int = 0
-        @JvmField
+
         var anInt9873: Int = 0
-        @JvmField
+
         var anInt9874: Int = 0
-        @JvmField
+
         var anInt9875: Int = 0
-        @JvmField
+
         var anInt9876: Int = 0
-        @JvmField
+
         var anInt9877: Int = 0
-        @JvmField
+
         var anInt9878: Int = 0
-        @JvmField
+
         var anInt9879: Int = 0
-        @JvmField
+
         var anInt9880: Int = 0
-        @JvmField
+
         var anInt9881: Int = 0
-        @JvmField
+
         var anInt9882: Int = 0
-        @JvmField
+
         var anInt9883: Int = 0
-        @JvmField
+
         var anInt9884: Int = 0
-        @JvmField
+
         var anInt9885: Int = 0
-        @JvmField
+
         var anInt9886: Int = 0
-        @JvmField
+
         var anInt9887: Int = 0
-        @JvmField
+
         var anInt9888: Int = 0
-        @JvmField
+
         var anInt9889: Int = 0
-        @JvmField
+
         var anInt9890: Int = 0
-        @JvmField
+
         var anInt9891: Int = 0
-        @JvmField
+
         var anInt9892: Int = 0
-        @JvmField
+
         var anInt9893: Int = 0
-        @JvmField
+
         var anInt9894: Int = 0
-        @JvmField
+
         var anInt9895: Int = 0
-        @JvmField
+
         var anInt9896: Int = 0
-        @JvmField
+
         var anInt9897: Int = 0
-        @JvmField
+
         var anInt9898: Int = 0
-        @JvmField
+
         var anInt9900: Int = 0
         @JvmStatic
         fun method3965(string: String?, i: Int, i_1_: Int) {

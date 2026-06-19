@@ -8,9 +8,9 @@ import java.awt.Color
 abstract class GlVertexBufferBase {
     private var anInt1921 = 0
     private val aBoolean1923: Boolean
-    @JvmField
+
     var aHa_Sub2_1927: OpenGlRenderer? = null
-    @JvmField
+
     var anInt1929: Int = 0
     private val anInt1930: Int
 
@@ -68,15 +68,15 @@ abstract class GlVertexBufferBase {
     }
 
     companion object {
-        @JvmField
+
         var anInt1922: Int = 0
-        @JvmField
+
         var anInt1924: Int = 0
-        @JvmField
+
         var anInt1925: Int = 0
-        @JvmField
+
         var anInt1926: Int = 0
-        @JvmField
+
         var aColorArray1928: Array<Color?>? = arrayOf<Color?>(Color(9179409), Color(3289650), Color(3289650), Color(3289650))
         @JvmStatic
         fun method1148(i: Int, i_0_: Int) {

@@ -95,17 +95,17 @@ class WidgetCache internal constructor(sceneProjector: SceneProjector?, i: Int, 
     }
 
     companion object {
-        @JvmField
+
         var anInt1483: Int = 0
-        @JvmField
+
         var anInt1484: Int = 0
-        @JvmField
+
         var anInt1485: Int = 0
-        @JvmField
+
         var anInt1486: Int = 0
-        @JvmField
+
         var anInt1489: Int = 0
-        @JvmField
+
         var anInt1490: Int = 0
         @JvmStatic
         fun method837(i: Int, bool: Boolean, i_3_: Int, i_4_: Int): Int {

@@ -16,7 +16,7 @@ class ClientMachineInfo : LinkedListNode {
     private val anInt6606 = 0
     private var aBoolean6607 = false
     private var aBoolean6608 = false
-    @JvmField
+
     var anInt6609: Int = 0
     private var aString6610: String? = null
     private var anInt6612 = 0
@@ -169,17 +169,17 @@ class ClientMachineInfo : LinkedListNode {
     }
 
     companion object {
-        @JvmField
+
         var anInt6593: Int = 0
-        @JvmField
+
         var anInt6600: Int = 0
-        @JvmField
+
         var aMediaStreamClient_6601: MediaStreamClient? = null
-        @JvmField
+
         var aObjectByteSerializerHolder_6602: ObjectByteSerializerHolder? = ObjectByteSerializerHolder()
-        @JvmField
+
         var anInt6611: Int = 0
-        @JvmField
+
         var anInt6615: Int = 0
         @JvmStatic
         fun method2748(i: Int) {

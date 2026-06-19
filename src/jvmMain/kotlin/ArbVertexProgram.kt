@@ -6,7 +6,7 @@ import jaggl.OpenGL.Companion.glProgramRawARB
 import kotlin.math.atan2
 
 class ArbVertexProgram(i: Int) : ShaderProgram() {
-    @JvmField
+
     var aNativeHeap9782: NativeHeap
     fun method3445(i: Int) {
         this.aNativeHeap9782.b()
@@ -19,17 +19,17 @@ class ArbVertexProgram(i: Int) : ShaderProgram() {
     }
 
     companion object {
-        @JvmField
+
         var anInt9777: Int = 0
-        @JvmField
+
         var anInt9778: Int = 0
-        @JvmField
+
         var anInt9779: Int = 0
-        @JvmField
+
         var regionTileX: Int = 0
-        @JvmField
+
         var aRectangleRegion_9781: RectangleRegion?
-        @JvmField
+
         var aBoolean9783: Boolean = false
 
         @JvmStatic

@@ -38,25 +38,25 @@ class BasicGlRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abst
     }
 
     companion object {
-        @JvmField
+
         var anInt7298: Int = 0
-        @JvmField
+
         var anIntArray7299: IntArray? = null
-        @JvmField
+
         var anInt7300: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_7301: InboundPacketHeader? = InboundPacketHeader(21, -1)
-        @JvmField
+
         var anInt7302: Int = 0
-        @JvmField
+
         var anInt7303: Int = 0
-        @JvmField
+
         var aBooleanArray7304: BooleanArray? = BooleanArray(100)
-        @JvmField
+
         var anInt7305: Int = 0
-        @JvmField
+
         var anInt7306: Int = 0
-        @JvmField
+
         var anInt7307: Int = 0
 
         @JvmStatic

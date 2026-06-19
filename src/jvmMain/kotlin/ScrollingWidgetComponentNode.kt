@@ -12,23 +12,23 @@ class ScrollingWidgetComponentNode internal constructor(js5Archive: Js5Archive?,
     }
 
     companion object {
-        @JvmField
+
         var aParticleEffectCache_8378: ParticleEffectCache? = null
-        @JvmField
+
         var anInt8379: Int = 0
-        @JvmField
+
         var anInt8380: Int = 0
-        @JvmField
+
         var anInt8381: Int = 0
-        @JvmField
+
         var anInt8382: Int = 0
         var aInboundPacketHeader_8384: InboundPacketHeader? = InboundPacketHeader(18, 0)
         var aInboundPacketHeader_8385: InboundPacketHeader?
-        @JvmField
+
         var aBoolean8386: Boolean = false
-        @JvmField
+
         var anInt8387: Int = 0
-        @JvmField
+
         var anInt8388: Int
 
         /*synthetic*/

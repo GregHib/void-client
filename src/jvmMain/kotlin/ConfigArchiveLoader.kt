@@ -29,7 +29,7 @@ import java.io.FileOutputStream
  */
 class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_1436: Js5Archive?
-    @JvmField
+
     var anInt1439: Int = 0
 
     init {
@@ -43,13 +43,13 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
     }
 
     companion object {
-        @JvmField
+
         var aJs5Archive_1434: Js5Archive? = null
-        @JvmField
+
         var anInt1435: Int = 0
-        @JvmField
+
         var anInt1437: Int = 0
-        @JvmField
+
         var anInt1438: Int = 0
         @JvmStatic
         fun method811(i: Byte) {

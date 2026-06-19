@@ -2,13 +2,13 @@
 * Visit http://jode.sourceforge.net/
 */
 object AnimationFrameState {
-    @JvmField
+
     var anInt1535: Int = 0
-    @JvmField
+
     var anInt1536: Int = 0
-    @JvmField
+
     var anInt1537: Int = 0
-    @JvmField
+
     var aJs5Archive_1538: Js5Archive? = null
 
     @JvmStatic

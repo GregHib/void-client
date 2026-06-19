@@ -15,11 +15,11 @@ abstract class MaterialPass internal constructor(var aHa_Sub2_3684: OpenGlRender
     abstract fun method2140(glTexture: GlTexture?, i: Byte, i_5_: Int)
 
     companion object {
-        @JvmField
+
         var anInt3681: Int = 0
-        @JvmField
+
         var anInt3682: Int = 0
-        @JvmField
+
         var aClass348_Sub2_3683: MidiFileBuilder? = null
         @JvmStatic
         fun method2135(i: Int) {

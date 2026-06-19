@@ -1,11 +1,11 @@
 import java.awt.Canvas
 
 object TerrainTileStatics {
-    @JvmField
+
     var aJs5Archive_4585: Js5Archive? = null
-    @JvmField
+
     var anInt4586: Int = 0
-    @JvmField
+
     var anInt4591: Int = 0
 
     @JvmStatic

@@ -20,13 +20,13 @@ class ParticleTileShape internal constructor(i: Int, i_3_: Int, i_4_: Int, i_5_:
     }
 
     companion object {
-        @JvmField
+
         var anInt8818: Int = 0
-        @JvmField
+
         var anInt8819: Int = 0
-        @JvmField
+
         var anInt8820: Int = 0
-        @JvmField
+
         var anInt8821: Int = 0
 
         @JvmStatic

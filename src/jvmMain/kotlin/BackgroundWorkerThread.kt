@@ -5,15 +5,15 @@ import kotlin.concurrent.Volatile
 * Visit http://jode.sourceforge.net/
 */
 class BackgroundWorkerThread : Runnable {
-    @JvmField
+
     @Volatile
     var aSoundChannelMixerArray3218s: Array<SoundChannelMixer?> = arrayOfNulls<SoundChannelMixer>(2)
 
-    @JvmField
+
     @Volatile
     var aBoolean3221: Boolean = false
 
-    @JvmField
+
     @Volatile
     var aBoolean3223: Boolean = false
     var aPrivilegedOperationWorker_3228: PrivilegedOperationWorker? = null
@@ -39,13 +39,13 @@ class BackgroundWorkerThread : Runnable {
 
     companion object {
         var anInt3219: Int = 0
-        @JvmField
+
         var anIntArray3220: IntArray? = null
         var anInt3222: Int = 0
         var anInt3224: Int = 0
-        @JvmField
+
         var aClass318_Sub1Array3226: Array<SceneEntity?>? = null
-        @JvmField
+
         var anInt3227: Int = 0
         fun method1909(i: Byte, string: String): String {
             var string = string

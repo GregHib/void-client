@@ -4,9 +4,9 @@
 abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archive, worldMapLabel: WorldMapLabel?) : Lifecycle {
     private var anInt4630 = 0
     private val aJs5Archive_4631: Js5Archive = js5Archive_15_
-    @JvmField
+
     var aJs5Archive_4632: Js5Archive? = null
-    @JvmField
+
     var aWorldMapLabel_4635: WorldMapLabel? = null
     private var aFont_4637: Font? = null
     private var aLong4640: Long = 0
@@ -78,21 +78,21 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
     }
 
     companion object {
-        @JvmField
+
         var anInt4627: Int = 0
-        @JvmField
+
         var anInt4628: Int = 0
-        @JvmField
+
         var anInt4629: Int = 0
-        @JvmField
+
         var anInt4633: Int = 0
-        @JvmField
+
         var anInt4634: Int = 0
-        @JvmField
+
         var anInt4638: Int = 0
-        @JvmField
+
         var anInt4639: Int = 0
-        @JvmField
+
         var anInt4641: Int = 0
 
         @JvmStatic

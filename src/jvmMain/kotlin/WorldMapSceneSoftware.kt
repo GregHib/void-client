@@ -820,10 +820,10 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
         var anInt5816: Int = 0
         var anInt5817: Int = 0
         var anInt5818: Int = 0
-        @JvmField
+
         var anInt5819: Int = 0
         var anInt5820: Int = 0
-        @JvmField
+
         var aTileRenderState_5821: TileRenderState? = TileRenderState()
         var anInt5822: Int = 0
         var anInt5823: Int = 0

@@ -1,11 +1,11 @@
 import java.util.*
 
 class StreamingResourceRequest : AsyncResourceRequest() {
-    @JvmField
+
     var aByte10449: Byte = 0
-    @JvmField
+
     var aClass348_Sub49_10453: ByteBuffer? = null
-    @JvmField
+
     var anInt10456: Int = 0
 
     override fun method3259(i: Int): ByteArray? {
@@ -23,19 +23,19 @@ class StreamingResourceRequest : AsyncResourceRequest() {
     }
 
     companion object {
-        @JvmField
+
         var anInt10447: Int = -1
-        @JvmField
+
         var anInt10448: Int = 0
-        @JvmField
+
         var aBoolean10450: Boolean = false
-        @JvmField
+
         var anInt10451: Int = 0
-        @JvmField
+
         var anInt10452: Int = 0
-        @JvmField
+
         var anInt10454: Int = 0
-        @JvmField
+
         var anInt10455: Int = 0
         @JvmStatic
         fun method3260(i: Int) {

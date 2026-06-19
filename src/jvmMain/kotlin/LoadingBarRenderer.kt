@@ -274,9 +274,9 @@ class LoadingBarRenderer : CursorController {
         var anInt5052: Int = 0
         var anInt5055: Int = 0
         var aFontMetaRef_5057: FontMetaRef? = FontMetaRef(10, -1)
-        @JvmField
+
         var aPlayerArray5058: Array<Player?>? = arrayOfNulls<Player>(2048)
-        @JvmField
+
         var aMapTileShapeArray5060: Array<MapTileShape?>? = null
         var anInt5061: Int = 0
 

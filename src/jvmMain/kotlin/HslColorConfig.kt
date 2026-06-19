@@ -5,22 +5,22 @@ import java.awt.Canvas
  * Class22
  */
 class HslColorConfig {
-    @JvmField
+
     var anInt331: Int = -1
-    @JvmField
+
     var anInt332: Int = 0
-    @JvmField
+
     var aBoolean334: Boolean = true
-    @JvmField
+
     var anInt335: Int = 0
-    @JvmField
+
     var anInt336: Int = 512
     private var anInt337 = 0
-    @JvmField
+
     var anInt341: Int = 0
-    @JvmField
+
     var aBoolean342: Boolean = true
-    @JvmField
+
     var anInt343: Int = 0
 
     fun method290(class348_sub49: ByteBuffer, i: Int) {
@@ -87,18 +87,18 @@ class HslColorConfig {
     }
 
     companion object {
-        @JvmField
+
         var anInt328: Int = 0
-        @JvmField
+
         var anInt329: Int = 0
         var aInboundPacketHeader_330: InboundPacketHeader? = InboundPacketHeader(65, -1)
-        @JvmField
+
         var anInt333: Int = 0
-        @JvmField
+
         var anInt338: Int = 0
-        @JvmField
+
         var anInt339: Int = 0
-        @JvmField
+
         var anInt340: Int = 0
         @JvmStatic
         fun method293(i: Byte) {

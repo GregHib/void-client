@@ -39,13 +39,13 @@ class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjecto
     }
 
     companion object {
-        @JvmField
+
         var anInt456: Int = 0
-        @JvmField
+
         var anInt457: Int = 0
-        @JvmField
+
         var anInt459: Int = 0
-        @JvmField
+
         var anInt461: Int = 0
 
         @JvmStatic

@@ -70,24 +70,24 @@ class SpriteArchiveLoader internal constructor(js5Archive: Js5Archive?, js5Archi
     }
 
     companion object {
-        @JvmField
+
         var anInt373: Int = 0
-        @JvmField
+
         var anInt375: Int = 0
-        @JvmField
+
         var anInt376: Int = 0
-        @JvmField
+
         var anInt378: Int = 0
-        @JvmField
+
         var anInt380: Int = 0
-        @JvmField
+
         var aNamedIdRecord_382: NamedIdRecord? = NamedIdRecord("WTQA", 2)
-        @JvmField
+
         var anInt383: Int
         var aBoolean384: Boolean = false
-        @JvmField
+
         var anInt385: Int = 0
-        @JvmField
+
         var anInt386: Int = 0
 
         @JvmStatic

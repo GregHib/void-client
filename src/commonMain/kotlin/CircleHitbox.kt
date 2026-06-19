@@ -45,9 +45,9 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
     }
 
     companion object {
-        @JvmField
+
         var anInt411: Int = 0
-        @JvmField
+
         var anInt415: Int = 0
     }
 }

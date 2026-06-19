@@ -7,13 +7,13 @@ import jaggl.OpenGL.Companion.glPixelStorei
 import jaggl.OpenGL.Companion.glTexImage3Dub
 
 class GlTexture3D : GlTexture {
-    @JvmField
+
     var anInt8522: Int = 0
-    @JvmField
+
     var anInt8523: Int = 0
     private var anInt8525 = -1
     private var anInt8528 = -1
-    @JvmField
+
     var anInt8529: Int = 0
 
     fun method1958(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
@@ -57,11 +57,11 @@ class GlTexture3D : GlTexture {
     }
 
     companion object {
-        @JvmField
+
         var anInt8524: Int = 0
-        @JvmField
+
         var anInt8526: Int = 0
-        @JvmField
+
         var aFontDefinition_8527: FontDefinition? = null
         @JvmStatic
         fun method1959(i: Int) {

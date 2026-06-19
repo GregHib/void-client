@@ -110,27 +110,27 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
     }
 
     companion object {
-        @JvmField
+
         var aSceneProjector_6262: SceneProjector? = SceneProjector("game3", 2)
-        @JvmField
+
         var anInt6263: Int = 0
-        @JvmField
+
         var anInt6264: Int = 0
-        @JvmField
+
         var anInt6265: Int = 0
-        @JvmField
+
         var anInt6267: Int = 0
-        @JvmField
+
         var anInt6269: Int = 0
-        @JvmField
+
         var aBooleanArray6270: BooleanArray? = null
-        @JvmField
+
         var anInt6271: Int = 0
-        @JvmField
+
         var anInt6273: Int = 0
-        @JvmField
+
         var anInt6275: Int = 0
-        @JvmField
+
         var aLong6276: Long = 0
 
         @JvmStatic

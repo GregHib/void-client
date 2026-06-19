@@ -89,34 +89,34 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private val aHashtable7577: Hashtable<Any?, Any?> = Hashtable<Any?, Any?>()
     private var aCanvas7626: Canvas? = null
     private var aLong7636: Long = 0
-    @JvmField
+
     var anInt7641: Int = 0
     private var anInt7645 = 0
     private var anOpenGL7664: OpenGL? = null
     var anInt7688: Int = 0
     private var aMinimapRenderer_7707: MinimapRenderer? = null
     private val aParticleSortRenderer_7711: ParticleSortRenderer
-    @JvmField
+
     var anInt7712: Int = 128
-    @JvmField
+
     var anInt7713: Int = 0
     private val aGlFramebufferBlitter_7720: GlFramebufferBlitter?
     private var aClass348_Sub5_Sub1_7721: GlBloomEffect? = null
     private val aTextureCache_7723: TextureCache
     private val aClass101_Sub3_7725: ProjectionCameraTransform
-    @JvmField
+
     var aClass101_Sub3_7729: ProjectionCameraTransform?
-    @JvmField
+
     var aNativeHeap7730: NativeHeap? = null
-    @JvmField
+
     var anInt7731: Int
     private val aNodeDeque_7732: NodeDeque
-    @JvmField
+
     var anInt7733: Int
     private var aBoolean7734: Boolean
-    @JvmField
+
     var anInt7735: Int = 0
-    @JvmField
+
     var aGlowPostProcessor_7736: GlowPostProcessor? = null
     private val anStagedInitializerArray7737: Array<StagedInitializer?>
     private var anInt7738: Int
@@ -128,9 +128,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private var aClass105_Sub2_7744: GlSpriteRenderer? = null
     private var anStagedInitializer_7745: StagedInitializer? = null
     private var anInt7746: Int
-    @JvmField
+
     var anInt7747: Int = 0
-    @JvmField
+
     var anInt7748: Int = 0
     private val aNodeDeque_7749: NodeDeque
     private var anInt7750 = 0
@@ -143,153 +143,153 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private var aLong7757: Long = 0
     private var aBoolean7758 = false
     private var aBoolean7759 = false
-    @JvmField
+
     var aClass101_Sub3_7760: ProjectionCameraTransform
     private var aBoolean7761 = false
     private var anInt7762 = 0
     private var aBoolean7763 = false
     private var anInt7764 = 0
     private var anInt7765 = 0
-    @JvmField
+
     var aClass101_Sub3_7766: ProjectionCameraTransform
-    @JvmField
+
     var aClass101_Sub3_7767: ProjectionCameraTransform
-    @JvmField
+
     var aFloat7768: Float = 0f
     private var aClass299_Sub1_7769: Texture2DProvider? = null
     private var anInt7770: Int
-    @JvmField
+
     var anInt7771: Int
-    @JvmField
+
     var anInt7772: Int = 0
     private var anInt7773: Int
     private val aBoolean7774: Boolean
-    @JvmField
+
     var aBoolean7775: Boolean = false
     private var aClass258_Sub3_Sub1_7776: GlTexture2DRegion? = null
-    @JvmField
+
     var anInt7777: Int = 0
-    @JvmField
+
     var aFrameBufferObject_7778: FrameBufferObject? = null
     private val aFloatArray7779: FloatArray
-    @JvmField
+
     var aClass64_Sub3_7780: OpenGlModel? = null
-    @JvmField
+
     var aFloat7781: Float
-    @JvmField
+
     var anInt7782: Int
-    @JvmField
+
     var aBoolean7783: Boolean = false
     private var aBoolean7784 = false
-    @JvmField
+
     var aClass64_Sub3_7785: OpenGlModel? = null
     private var aFloat7786: Float
     private var anInt7787: Int
-    @JvmField
+
     var anInt7788: Int = 0
     private var anInt7789 = 0
     private var aString7790: String? = null
-    @JvmField
+
     var aBoolean7791: Boolean = false
-    @JvmField
+
     var aFloat7792: Float = 0f
-    @JvmField
+
     var aBoolean7793: Boolean = false
-    @JvmField
+
     var anInt7794: Int
-    @JvmField
+
     var anInt7795: Int = 0
     private var anInt7796 = 0
     private var anByteBufferReader_7797: ByteBufferReader? = null
-    @JvmField
+
     var aClass348_Sub49_Sub1_7798: FloatBuffer?
     private var anInt7799 = 0
     private var aFloat7800: Float
     private var aBoolean7801 = false
-    @JvmField
+
     var aClass64_Sub3_7802: OpenGlModel? = null
-    @JvmField
+
     var aClass64_Sub3_7803: OpenGlModel? = null
     private var anInt7804: Int
     private var aBoolean7805 = false
-    @JvmField
+
     var anInt7806: Int
-    @JvmField
+
     var aBoolean7807: Boolean = false
     private var anInt7808: Int
-    @JvmField
+
     var anInt7809: Int
-    @JvmField
+
     var anInt7810: Int
     private val aFloatArray7811: FloatArray
-    @JvmField
+
     var anInt7812: Int = 0
     var anInt7813: Int
     private var anInt7814: Int
-    @JvmField
+
     var aBoolean7815: Boolean = false
-    @JvmField
+
     var aFloat7816: Float
     private var anByteArrayCodec_7817: ByteArrayCodec? = null
-    @JvmField
+
     var aBoolean7818: Boolean = false
     private var anInt7819 = 0
-    @JvmField
+
     var aBoolean7820: Boolean = false
-    @JvmField
+
     var aClass64_Sub3_7821: OpenGlModel? = null
     private var aBoolean7822 = false
-    @JvmField
+
     var aFloat7823: Float
     private var aFloat7824 = 0f
-    @JvmField
+
     var aFloatArray7825: FloatArray
-    @JvmField
+
     var anInt7826: Int
-    @JvmField
+
     var aClass258_Sub3_7827: GlTexture2D? = null
     private var aGlTextureArray7828: Array<GlTexture?>? = null
     private var aFloat7829: Float
-    @JvmField
+
     var aFloat7830: Float = 0f
-    @JvmField
+
     var aBoolean7831: Boolean = false
-    @JvmField
+
     var aFloat7832: Float
-    @JvmField
+
     var aHoverActionEntry_7833: HoverActionEntry? = null
-    @JvmField
+
     var aClass64_Sub3_7834: OpenGlModel? = null
-    @JvmField
+
     var aFloat7835: Float = 0f
-    @JvmField
+
     var aFloat7836: Float = 0f
-    @JvmField
+
     var aBoolean7837: Boolean = false
-    @JvmField
+
     var aClass64_Sub3_7838: OpenGlModel? = null
     private var anInt7839 = 0
-    @JvmField
+
     var aClass64_Sub3_7840: OpenGlModel? = null
-    @JvmField
+
     var aBoolean7841: Boolean = false
     private var aFloat7842 = 0f
     private var aBoolean7843 = false
-    @JvmField
+
     var aClass64_Sub3_7844: OpenGlModel? = null
     private var aString7845: String? = null
-    @JvmField
+
     var aBoolean7846: Boolean = false
-    @JvmField
+
     var aBoolean7847: Boolean = false
-    @JvmField
+
     var anInt7848: Int
-    @JvmField
+
     var aHoverActionEntry_7849: HoverActionEntry? = null
     private val aFloatArray7850: FloatArray
     private var aFloat7851: Float
     private var anByteBufferReader_7852: ByteBufferReader? = null
-    @JvmField
+
     var anInt7853: Int
     private var aFloat7854 = 0f
     private var anInt7855: Int
@@ -300,9 +300,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private var aBoolean7860 = false
     private var anInt7861: Int
     private var anInt7862 = 0
-    @JvmField
+
     var aBoolean7863: Boolean = false
-    @JvmField
+
     var aClass64_Sub3_7864: OpenGlModel? = null
     private var anInt7865 = 0
     private var aBoolean7866 = false
@@ -310,25 +310,25 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private var anInt7868: Int
     private var aBoolean7869 = false
     private var aBoolean7870: Boolean
-    @JvmField
+
     var aFloat7871: Float
-    @JvmField
+
     var aFloat7872: Float = 0f
     private var aBoolean7873 = false
-    @JvmField
+
     var aFloat7874: Float
-    @JvmField
+
     var aFloat7875: Float
     private var anInt7876 = 0
     private val aFloatArray7877: FloatArray
     private var anInt7878 = 0
-    @JvmField
+
     var aByteArray7879: ByteArray?
-    @JvmField
+
     var anIntArray7880: IntArray?
     private var anInt7881 = 0
     var anIntArray7882: IntArray?
-    @JvmField
+
     var anIntArray7883: IntArray?
 
     public override fun L(i: Int, i_0_: Int, i_1_: Int) {
@@ -3104,399 +3104,399 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     }
 
     companion object {
-        @JvmField
+
         var anInt7514: Int = 0
-        @JvmField
+
         var anInt7515: Int = 0
-        @JvmField
+
         var anInt7516: Int = 0
-        @JvmField
+
         var anInt7517: Int = 0
-        @JvmField
+
         var anInt7518: Int = 0
-        @JvmField
+
         var anInt7519: Int = 0
-        @JvmField
+
         var anInt7520: Int = 0
-        @JvmField
+
         var anInt7521: Int = 0
-        @JvmField
+
         var anInt7522: Int = 0
-        @JvmField
+
         var anInt7524: Int = 0
-        @JvmField
+
         var anInt7525: Int = 0
-        @JvmField
+
         var anInt7526: Int = 0
-        @JvmField
+
         var anInt7527: Int = 0
-        @JvmField
+
         var anInt7528: Int = 0
-        @JvmField
+
         var anInt7529: Int = 0
-        @JvmField
+
         var anInt7530: Int = 0
-        @JvmField
+
         var anInt7531: Int = 0
-        @JvmField
+
         var anInt7532: Int = 0
-        @JvmField
+
         var anInt7533: Int = 0
-        @JvmField
+
         var anInt7534: Int = 0
-        @JvmField
+
         var anInt7535: Int = 0
-        @JvmField
+
         var anInt7536: Int = 0
-        @JvmField
+
         var anInt7537: Int = 0
-        @JvmField
+
         var anInt7538: Int = 0
-        @JvmField
+
         var anInt7539: Int = 0
-        @JvmField
+
         var anInt7540: Int = 0
-        @JvmField
+
         var anInt7541: Int = 0
-        @JvmField
+
         var anInt7542: Int = 0
-        @JvmField
+
         var anInt7543: Int = 0
-        @JvmField
+
         var anInt7544: Int = 0
-        @JvmField
+
         var anInt7545: Int = 0
-        @JvmField
+
         var anInt7546: Int = 0
-        @JvmField
+
         var anInt7547: Int = 0
-        @JvmField
+
         var anInt7548: Int = 0
-        @JvmField
+
         var anInt7549: Int = 0
-        @JvmField
+
         var anInt7550: Int = 0
-        @JvmField
+
         var anInt7551: Int = 0
-        @JvmField
+
         var anInt7552: Int = 0
-        @JvmField
+
         var aFontMetaRef_7554: FontMetaRef? = FontMetaRef(52, 4)
-        @JvmField
+
         var anInt7555: Int = 0
-        @JvmField
+
         var anInt7556: Int = 0
-        @JvmField
+
         var anInt7557: Int = 0
-        @JvmField
+
         var anInt7558: Int = 0
-        @JvmField
+
         var anInt7559: Int = 0
-        @JvmField
+
         var anInt7560: Int = 0
-        @JvmField
+
         var anInt7561: Int = 0
-        @JvmField
+
         var anInt7562: Int = 0
-        @JvmField
+
         var anInt7563: Int = 0
-        @JvmField
+
         var anInt7564: Int = 0
-        @JvmField
+
         var anInt7565: Int = 0
-        @JvmField
+
         var anInt7566: Int = 0
-        @JvmField
+
         var anInt7567: Int = 0
-        @JvmField
+
         var anInt7568: Int = 0
-        @JvmField
+
         var anInt7569: Int = 0
-        @JvmField
+
         var anInt7570: Int = 0
-        @JvmField
+
         var anInt7571: Int = 0
-        @JvmField
+
         var anInt7572: Int = 0
-        @JvmField
+
         var anInt7573: Int = 0
-        @JvmField
+
         var anInt7574: Int = 0
-        @JvmField
+
         var anInt7576: Int = 0
-        @JvmField
+
         var anInt7578: Int = 0
-        @JvmField
+
         var anInt7579: Int = 0
-        @JvmField
+
         var anInt7580: Int = 0
-        @JvmField
+
         var anInt7581: Int = 0
-        @JvmField
+
         var anInt7582: Int = 0
-        @JvmField
+
         var anInt7583: Int = 0
-        @JvmField
+
         var anInt7584: Int = 0
-        @JvmField
+
         var anInt7585: Int = 0
-        @JvmField
+
         var anInt7586: Int = 0
-        @JvmField
+
         var anInt7587: Int = 0
-        @JvmField
+
         var anInt7588: Int = 0
-        @JvmField
+
         var anInt7589: Int = 0
-        @JvmField
+
         var anInt7590: Int = 0
-        @JvmField
+
         var anInt7591: Int = 0
-        @JvmField
+
         var anInt7592: Int = 0
-        @JvmField
+
         var anInt7593: Int = 0
-        @JvmField
+
         var anInt7594: Int = 0
-        @JvmField
+
         var anInt7595: Int = 0
-        @JvmField
+
         var anInt7596: Int = 0
-        @JvmField
+
         var anInt7597: Int = 0
-        @JvmField
+
         var anInt7598: Int = 0
-        @JvmField
+
         var anInt7599: Int = 0
-        @JvmField
+
         var anInt7600: Int = 0
-        @JvmField
+
         var anInt7601: Int = 0
-        @JvmField
+
         var anInt7602: Int = 0
-        @JvmField
+
         var anInt7603: Int = 0
-        @JvmField
+
         var anInt7604: Int = 0
-        @JvmField
+
         var anInt7605: Int = 0
-        @JvmField
+
         var anInt7606: Int = 0
-        @JvmField
+
         var anInt7607: Int = 0
-        @JvmField
+
         var anInt7608: Int = 0
-        @JvmField
+
         var anInt7609: Int = 0
-        @JvmField
+
         var anInt7610: Int = 0
-        @JvmField
+
         var anInt7611: Int = 0
-        @JvmField
+
         var anInt7612: Int = 0
-        @JvmField
+
         var anInt7613: Int = 0
-        @JvmField
+
         var anInt7614: Int = 0
-        @JvmField
+
         var anInt7615: Int = 0
-        @JvmField
+
         var anInt7616: Int = 0
-        @JvmField
+
         var anInt7617: Int = 0
-        @JvmField
+
         var anInt7618: Int = 0
-        @JvmField
+
         var anInt7619: Int = 0
-        @JvmField
+
         var anInt7620: Int = 0
-        @JvmField
+
         var anInt7621: Int = 0
-        @JvmField
+
         var anInt7622: Int = 0
-        @JvmField
+
         var anInt7623: Int = 0
-        @JvmField
+
         var anInt7624: Int = 0
-        @JvmField
+
         var anInt7625: Int = 0
-        @JvmField
+
         var anInt7627: Int = 0
-        @JvmField
+
         var anInt7628: Int = 0
-        @JvmField
+
         var anInt7629: Int = 0
-        @JvmField
+
         var anInt7630: Int = 0
-        @JvmField
+
         var anInt7631: Int = 0
-        @JvmField
+
         var anInt7632: Int = 0
-        @JvmField
+
         var anInt7633: Int = 0
-        @JvmField
+
         var anInt7634: Int = 0
-        @JvmField
+
         var anInt7635: Int = 0
-        @JvmField
+
         var anInt7637: Int = 0
-        @JvmField
+
         var anInt7638: Int = 0
-        @JvmField
+
         var anInt7639: Int = 0
-        @JvmField
+
         var anInt7640: Int = 0
-        @JvmField
+
         var anInt7642: Int = 0
-        @JvmField
+
         var anInt7643: Int = 0
-        @JvmField
+
         var anInt7644: Int = 0
-        @JvmField
+
         var anInt7646: Int = 0
-        @JvmField
+
         var anInt7647: Int = 0
-        @JvmField
+
         var anInt7648: Int = 0
-        @JvmField
+
         var anInt7649: Int = 0
-        @JvmField
+
         var anInt7650: Int = 0
-        @JvmField
+
         var anInt7651: Int = 0
-        @JvmField
+
         var anInt7652: Int = 0
-        @JvmField
+
         var anInt7653: Int = 0
-        @JvmField
+
         var anInt7654: Int = 0
-        @JvmField
+
         var anInt7655: Int = 0
-        @JvmField
+
         var anInt7656: Int = 0
-        @JvmField
+
         var anInt7657: Int = 0
-        @JvmField
+
         var anInt7658: Int = 0
-        @JvmField
+
         var anInt7659: Int = 0
-        @JvmField
+
         var anInt7660: Int = 0
-        @JvmField
+
         var anInt7661: Int = 0
-        @JvmField
+
         var anInt7662: Int = 0
-        @JvmField
+
         var anInt7663: Int = 0
-        @JvmField
+
         var anInt7665: Int = 0
-        @JvmField
+
         var anInt7666: Int = 503
-        @JvmField
+
         var anInt7667: Int = 0
-        @JvmField
+
         var anInt7668: Int = 0
-        @JvmField
+
         var anInt7669: Int = 0
-        @JvmField
+
         var anInt7670: Int = 0
-        @JvmField
+
         var anInt7671: Int = 0
-        @JvmField
+
         var anInt7672: Int = 0
-        @JvmField
+
         var anInt7673: Int = 0
-        @JvmField
+
         var anInt7674: Int = 0
-        @JvmField
+
         var anInt7675: Int = 0
-        @JvmField
+
         var anInt7676: Int = 0
-        @JvmField
+
         var anInt7677: Int = 0
-        @JvmField
+
         var anInt7678: Int = 0
-        @JvmField
+
         var anInt7679: Int = 0
-        @JvmField
+
         var anInt7680: Int = 0
-        @JvmField
+
         var anInt7681: Int = 0
-        @JvmField
+
         var anInt7682: Int = 0
-        @JvmField
+
         var anInt7683: Int = 0
-        @JvmField
+
         var anInt7684: Int = 0
-        @JvmField
+
         var anInt7685: Int = 0
-        @JvmField
+
         var anInt7686: Int = 0
-        @JvmField
+
         var anInt7687: Int = 0
-        @JvmField
+
         var anInt7689: Int = 0
-        @JvmField
+
         var anInt7690: Int = 0
-        @JvmField
+
         var anInt7691: Int = 0
-        @JvmField
+
         var anInt7692: Int = 0
-        @JvmField
+
         var anInt7693: Int = 0
-        @JvmField
+
         var anInt7694: Int = 0
-        @JvmField
+
         var anInt7695: Int = 0
-        @JvmField
+
         var anInt7696: Int = 0
-        @JvmField
+
         var anInt7697: Int = 0
-        @JvmField
+
         var anInt7698: Int = 0
-        @JvmField
+
         var anInt7699: Int = 0
-        @JvmField
+
         var anInt7700: Int = 0
-        @JvmField
+
         var anInt7701: Int = 0
-        @JvmField
+
         var anInt7702: Int = 0
-        @JvmField
+
         var anInt7703: Int = 0
-        @JvmField
+
         var anInt7704: Int = 0
-        @JvmField
+
         var anInt7705: Int = 0
-        @JvmField
+
         var anInt7706: Int = 0
-        @JvmField
+
         var anInt7708: Int = 0
-        @JvmField
+
         var anInt7709: Int = 0
-        @JvmField
+
         var anInt7710: Int = 0
-        @JvmField
+
         var anInt7714: Int = 0
-        @JvmField
+
         var aFontMetaRef_7715: FontMetaRef? = FontMetaRef(58, 4)
-        @JvmField
+
         var anInt7716: Int = 0
-        @JvmField
+
         var anInt7717: Int = 0
-        @JvmField
+
         var anInt7718: Int = 0
-        @JvmField
+
         var anInt7719: Int = 0
-        @JvmField
+
         var anInt7722: Int = 0
-        @JvmField
+
         var anInt7724: Int = 0
-        @JvmField
+
         var anInt7726: Int = 0
-        @JvmField
+
         var anInt7727: Int = 0
-        @JvmField
+
         var anInt7728: Int = 0
         @JvmStatic
         fun method3736(i: Byte) {

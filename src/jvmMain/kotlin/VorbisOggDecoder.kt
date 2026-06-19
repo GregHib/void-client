@@ -83,25 +83,25 @@ class VorbisOggDecoder internal constructor(oggstreamstate: OggStreamState) : Og
     }
 
     companion object {
-        @JvmField
+
         var anInt8989: Int = 0
-        @JvmField
+
         var anInt8990: Int = 0
-        @JvmField
+
         var anInt8991: Int = 0
-        @JvmField
+
         var aPrivilegedOperationWorker_8992: PrivilegedOperationWorker? = null
-        @JvmField
+
         var aByteArrayArray8996: Array<ByteArray?>? = null
-        @JvmField
+
         var anInt8997: Int = 0
-        @JvmField
+
         var anInt8998: Int = 0
-        @JvmField
+
         var anInt8999: Int = 0
-        @JvmField
+
         var anInt9003: Int = 0
-        @JvmField
+
         var anInt9004: Int = 0
         @JvmStatic
         fun method2967(i: Int, abstractModel: AbstractModel?, i_0_: Int, i_1_: Int, i_2_: Int): CircleHitbox? {

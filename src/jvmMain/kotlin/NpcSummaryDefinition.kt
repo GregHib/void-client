@@ -10,7 +10,7 @@ class NpcSummaryDefinition {
     companion object {
         var anInt1949: Int = 0
         var anInt1950: Int = 0
-        @JvmField
+
         var aBoolean1952: Boolean = false
         var anInt1955: Int = 0
 

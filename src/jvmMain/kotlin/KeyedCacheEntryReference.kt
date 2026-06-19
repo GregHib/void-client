@@ -7,9 +7,9 @@ abstract class KeyedCacheEntryReference internal constructor(@JvmField var anKey
     abstract fun method3206(i: Byte): Boolean
 
     companion object {
-        @JvmField
+
         var anInt9557: Int = 0
-        @JvmField
+
         var anIntArray9558: IntArray? = intArrayOf(3, 7, 15)
         @JvmStatic
         fun method3203(i: Int, i_0_: Byte, i_1_: Int): Boolean {

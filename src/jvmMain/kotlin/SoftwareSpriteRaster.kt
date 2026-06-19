@@ -11,12 +11,12 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
     private val anInt1612: Int
     private val anInt1613: Int
     private val aHa_Sub2_1616: OpenGlRenderer?
-    @JvmField
+
     var aByteArray1617: ByteArray
     private val anInt1618: Int
     private val aS_Sub2_1622: OpenGlTerrainTile?
     private var aTerrainTileGeometryArrayArray1623: Array<Array<TerrainTileGeometry?>>? = null
-    @JvmField
+
     var anInt1624: Int = 0
     private val anInt1625: Int
     fun method951(var_renderNode: RenderNode, i: Int, i_0_: Int, i_1_: Int) {
@@ -294,28 +294,28 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
     }
 
     companion object {
-        @JvmField
+
         var anInt1610: Int = 0
-        @JvmField
+
         var anInt1611: Int = 0
-        @JvmField
+
         var anInt1614: Int = 0
-        @JvmField
+
         var anInt1615: Int = 0
-        @JvmField
+
         var anInt1619: Int = 0
-        @JvmField
+
         var aScreenAnchorAlignment_1620: ScreenAnchorAlignment? = ScreenAnchorAlignment()
-        @JvmField
+
         var anInt1621: Int = 0
         var anIntArray1626: IntArray? = IntArray(1)
-        @JvmField
+
         var aJs5Archive_1627: Js5Archive? = null
-        @JvmField
+
         var anInt1628: Int = 0
-        @JvmField
+
         var anInt1629: Int = 0
-        @JvmField
+
         var anInt1630: Int = 0
 
         @JvmStatic

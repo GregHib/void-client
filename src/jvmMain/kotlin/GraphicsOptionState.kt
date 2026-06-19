@@ -31,29 +31,29 @@ abstract class GraphicsOptionState {
     }
 
     companion object {
-        @JvmField
+
         var anInt3134: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_3135: InboundPacketHeader? = InboundPacketHeader(108, 5)
-        @JvmField
+
         var anInt3137: Int = 0
-        @JvmField
+
         var anInt3139: Int = 0
-        @JvmField
+
         var anInt3140: Int = 0
-        @JvmField
+
         var anInt3141: Int = 0
-        @JvmField
+
         var anInt3142: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_3143: InboundPacketHeader?
-        @JvmField
+
         var aByteArray3144: ByteArray? = ByteArray(520)
-        @JvmField
+
         var aInboundPacketHeader_3145: InboundPacketHeader? = null
-        @JvmField
+
         var aJs5Archive_3146: Js5Archive? = null
-        @JvmField
+
         var aItemDefinitionLoader_3147: ItemDefinitionLoader? = null
 
         @JvmStatic

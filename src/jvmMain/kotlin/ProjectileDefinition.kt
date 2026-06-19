@@ -10,7 +10,7 @@ import GameClock.method596
 object ProjectileDefinition {
     var aInboundPacketHeader_3842: InboundPacketHeader?
     var anInt3843: Int = 0
-    @JvmField
+
     var anInt3844: Int = 1
     var anInt3845: Int = 0
     var anInt3846: Int = 0

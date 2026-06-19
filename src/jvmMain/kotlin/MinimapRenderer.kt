@@ -75,21 +75,21 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
     }
 
     companion object {
-        @JvmField
+
         var anInt1577: Int = 0
-        @JvmField
+
         var aBufferedRandomAccessFileArray1579: Array<BufferedRandomAccessFile?>? = arrayOfNulls(37)
-        @JvmField
+
         var anInt1580: Int = 0
-        @JvmField
+
         var anIntArray1583: IntArray? = IntArray(14)
-        @JvmField
+
         var aHashtable_1585: Hashtable? = Hashtable(16)
-        @JvmField
+
         var anInt1587: Int = 0
-        @JvmField
+
         var anInt1589: Int = 0
-        @JvmField
+
         var anInt1590: Int = 0
         var aBoxedIntHolder_1591: BoxedIntHolder? = BoxedIntHolder(1)
         @JvmStatic

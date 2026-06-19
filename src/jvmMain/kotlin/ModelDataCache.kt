@@ -4,15 +4,15 @@ import GlTexture2DRegion.Companion.method3553
 * Visit http://jode.sourceforge.net/
 */
 object ModelDataCache {
-    @JvmField
+
     var anInt354: Int = 0
-    @JvmField
+
     var aLruByteCache_355: LruByteCache? = LruByteCache(260)
-    @JvmField
+
     var anInt356: Int = 0
-    @JvmField
+
     var aClass318_Sub1_Sub3Array357: Array<GroundDecorEntity?>? = null
-    @JvmField
+
     var anInt359: Int = 0
 
     @JvmStatic

@@ -309,7 +309,7 @@ class ProceduralTextureGraph : HashLinkedListNode {
         var aDouble9531: Double = 0.0
         var anInt9532: Int = 0
         var aFontMetaRef_9533: FontMetaRef?
-        @JvmField
+
         var anCharStreamReaderArray9534s: Array<CharStreamReader?>? = arrayOfNulls<CharStreamReader>(128)
 
         @JvmStatic

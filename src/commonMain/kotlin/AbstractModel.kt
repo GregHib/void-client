@@ -5,7 +5,7 @@ import kotlin.math.min
 * Visit http://jode.sourceforge.net/
 */
 public abstract class AbstractModel {
-    @JvmField
+
     var aBoolean1124: Boolean = false
     abstract fun FA(i: Int)
 
@@ -429,23 +429,23 @@ public abstract class AbstractModel {
     abstract fun ba(var_renderNode: RenderNode?): RenderNode?
 
     companion object {
-        @JvmField
+
         var anInt1125: Int = 0
-        @JvmField
+
         var anInt1126: Int = 0
-        @JvmField
+
         var anInt1130: Int = 0
-        @JvmField
+
         var anInt1132: Int = 0
-        @JvmField
+
         var anInt1133: Int = 0
-        @JvmField
+
         var anInt1134: Int = 0
-        @JvmField
+
         var anInt1135: Int = 0
-        @JvmField
+
         var aFloat1136: Float = 0f
-        @JvmField
+
         var anInt1137: Int = 0
 
         @JvmStatic

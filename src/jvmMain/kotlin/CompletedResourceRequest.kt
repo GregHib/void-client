@@ -2,11 +2,11 @@
 * Visit http://jode.sourceforge.net/
 */
 class CompletedResourceRequest : AsyncResourceRequest() {
-    @JvmField
+
     var anInt10457: Int = 0
-    @JvmField
+
     var aIndexedFileCache_10458: IndexedFileCache? = null
-    @JvmField
+
     var aByteArray10461: ByteArray? = null
 
     override fun method3257(i: Int): Int {
@@ -24,15 +24,15 @@ class CompletedResourceRequest : AsyncResourceRequest() {
     }
 
     companion object {
-        @JvmField
+
         var anInt10459: Int = 0
-        @JvmField
+
         var anInt10460: Int = 0
-        @JvmField
+
         var anInt10463: Int = 0
-        @JvmField
+
         var anInt10464: Int = 0
-        @JvmField
+
         var aHashtable_10465: Hashtable? = Hashtable(16)
 
         @JvmStatic

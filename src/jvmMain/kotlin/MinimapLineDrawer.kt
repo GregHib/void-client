@@ -22,17 +22,17 @@ class MinimapLineDrawer internal constructor(private val anInt5255: Int, private
     }
 
     companion object {
-        @JvmField
+
         var anInt5256: Int = 0
-        @JvmField
+
         var anInt5257: Int = 0
-        @JvmField
+
         var anInt5260: Int = 0
-        @JvmField
+
         var anInt5261: Int = 0
-        @JvmField
+
         var aNanoTimer_5262: NanoTimer? = null
-        @JvmField
+
         var anInt5263: Int = 0
         @JvmStatic
         fun method471(i: Int) {

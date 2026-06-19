@@ -35,31 +35,31 @@ class DetailLevelOptionState : GraphicsOptionState {
     }
 
     companion object {
-        @JvmField
+
         var aFloorOverlayDefinitionArray6114: Array<FloorOverlayDefinition?>?
-        @JvmField
+
         var anInt6115: Int = 0
-        @JvmField
+
         var anInt6116: Int = 0
-        @JvmField
+
         var anInt6117: Int = 0
-        @JvmField
+
         var anInt6118: Int = 0
-        @JvmField
+
         var anInt6119: Int = 0
-        @JvmField
+
         var aFloat6120: Float = 1.0f
-        @JvmField
+
         var aInboundPacketHeader_6121: InboundPacketHeader?
-        @JvmField
+
         var anInt6122: Int = 0
-        @JvmField
+
         var anInt6123: Int = 0
-        @JvmField
+
         var anInt6124: Int = 0
-        @JvmField
+
         var anInt6125: Int = 0
-        @JvmField
+
         var anInt6126: Int = 0
 
         @JvmStatic

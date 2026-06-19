@@ -3,27 +3,27 @@
 * Visit http://jode.sourceforge.net/
 */
 class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: ScreenAnchorAlignment?, tileRenderState: TileRenderState?, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean) : ConfigTypeProvider {
-    @JvmField
+
     var anInt4913: Int = 0
-    @JvmField
+
     var aBoolean4914: Boolean = false
-    @JvmField
+
     var anInt4917: Int = 0
-    @JvmField
+
     var anInt4918: Int = 0
-    @JvmField
+
     var anInt4920: Int = 0
-    @JvmField
+
     var aScreenAnchorAlignment_4922: ScreenAnchorAlignment? = null
-    @JvmField
+
     var anInt4923: Int = 0
-    @JvmField
+
     var anInt4924: Int = 0
-    @JvmField
+
     var aTileRenderState_4925: TileRenderState? = null
-    @JvmField
+
     var anInt4928: Int = 0
-    @JvmField
+
     var anInt4929: Int = 0
     override fun method51(i: Byte): ProjectileFactory? {
         if (i <= 116) return null
@@ -50,18 +50,18 @@ class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: 
     }
 
     companion object {
-        @JvmField
+
         var aHashtable_4915: Hashtable?
-        @JvmField
+
         var anInt4916: Int = 0
         var anInt4919: Int = 0
-        @JvmField
+
         var aSystemFontGlyphs_4921: SystemFontGlyphs? = null
-        @JvmField
+
         var anInt4926: Int = 0
-        @JvmField
+
         var anInt4927: Int = 0
-        @JvmField
+
         var anInt4930: Int = 0
 
         @JvmStatic

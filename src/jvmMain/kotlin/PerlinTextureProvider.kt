@@ -84,25 +84,25 @@ class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {
     }
 
     companion object {
-        @JvmField
+
         var anInt5805: Int = 0
-        @JvmField
+
         var anInt5806: Int = 0
-        @JvmField
+
         var anInt5807: Int = 0
-        @JvmField
+
         var aTileRenderState_5808: TileRenderState? = TileRenderState()
-        @JvmField
+
         var anInt5809: Int = 0
-        @JvmField
+
         var anInt5810: Int = 0
-        @JvmField
+
         var anInt5811: Int = 0
-        @JvmField
+
         var anInt5812: Int = 100
-        @JvmField
+
         var aCollisionMapRegion_5813: CollisionMapRegion? = null
-        @JvmField
+
         var anInt5814: Int = 0
 
         @JvmStatic

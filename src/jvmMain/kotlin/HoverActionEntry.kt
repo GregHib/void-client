@@ -13,9 +13,9 @@ class HoverActionEntry internal constructor(var anByteBufferReader_1811: ByteBuf
     }
 
     companion object {
-        @JvmField
+
         var aSpriteStore_1813: SpriteStore? = null
-        @JvmField
+
         var aJs5Archive_1815: Js5Archive? = null
 
         @JvmStatic

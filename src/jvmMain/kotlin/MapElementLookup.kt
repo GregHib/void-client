@@ -38,7 +38,7 @@ class MapElementLookup {
     }
 
     companion object {
-        @JvmField
+
         var anInt4144: Int = -1
         var anInt4145: Int = 0
         var aJs5Archive_4147: Js5Archive? = null

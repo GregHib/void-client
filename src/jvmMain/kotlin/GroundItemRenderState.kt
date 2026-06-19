@@ -5,22 +5,22 @@ import NativeBufferHandle.Companion.method850
 * Visit http://jode.sourceforge.net/
 */
 object GroundItemRenderState {
-    @JvmField
+
     var anInt1656: Int = 0
-    @JvmField
+
     var aNamedIdRecord_1657: NamedIdRecord? = NamedIdRecord("WTWIP", 3)
-    @JvmField
+
     var anInt1658: Int = 0
-    @JvmField
+
     var anInt1659: Int = 0
-    @JvmField
+
     var anInt1660: Int = 0
     var aBoolean1661: Boolean = true
-    @JvmField
+
     var aTextureFormatInfo_1662: TextureFormatInfo? = TextureFormatInfo(4)
-    @JvmField
+
     var anInt1663: Int = 0
-    @JvmField
+
     var aAbstractModelRenderer_1664: AbstractModelRenderer? = null
 
     fun method1012(f: Float, f_0_: Float, f_1_: Float, f_2_: Float, i: Int, f_3_: Float, i_4_: Byte, f_5_: Float): Float {

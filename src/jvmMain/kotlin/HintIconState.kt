@@ -4,11 +4,11 @@ import java.awt.Rectangle
  * Class180
  */
 object HintIconState {
-    @JvmField
+
     var anIntArray2370: IntArray? = IntArray(13)
-    @JvmField
+
     var aRectangleArray2371: Array<Rectangle?>? = arrayOfNulls<Rectangle>(100)
-    @JvmField
+
     var aSingletonMarker_2372: SingletonMarker?
 
     @JvmStatic

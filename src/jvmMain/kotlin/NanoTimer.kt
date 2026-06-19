@@ -5,13 +5,13 @@ abstract class NanoTimer {
     abstract fun method446(i: Int): Long
 
     companion object {
-        @JvmField
+
         var aInboundPacketHeader_843: InboundPacketHeader?
-        @JvmField
+
         var anInt844: Int = 0
-        @JvmField
+
         var aBoolean845: Boolean = false
-        @JvmField
+
         var anInt846: Int = 0
 
         @JvmStatic

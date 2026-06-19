@@ -27,14 +27,14 @@ class ClickFeedbackTask internal constructor(private val aRsaVarbitHandler_4671:
     companion object {
         var anInt4663: Int = 0
         var anInt4664: Int = 0
-        @JvmField
+
         var anInt4665: Int = 0
         var anInt4666: Int = 0
         var anInt4667: Int = 0
         var anInt4668: Int = 0
-        @JvmField
+
         var anInt4669: Int = 0
-        @JvmField
+
         var anIntArray4670: IntArray? = IntArray(3)
         fun method1352(i: Int, i_0_: Int, i_1_: Int, i_2_: Byte) {
             var i_0_ = i_0_

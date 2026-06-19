@@ -43,7 +43,7 @@ class CameraOrModelTransform {
     companion object {
         var anIntArray4152: IntArray? = intArrayOf(4, 2, 1, 1, 2, 2, 3, 1, 3, 3, 3, 2, 0)
         var anInt4153: Int = 0
-        @JvmField
+
         var anInt4155: Int = -1
         var anInt4157: Int = 0
         var anInt4159: Int = 0

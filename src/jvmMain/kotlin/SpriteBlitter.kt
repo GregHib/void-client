@@ -4,13 +4,13 @@ import ChatMessageStream.Companion.method138
 * Visit http://jode.sourceforge.net/
 */
 object SpriteBlitter {
-    @JvmField
+
     var anInt1573: Int = 0
-    @JvmField
+
     var anIntArray1574: IntArray? = IntArray(3)
-    @JvmField
+
     var anInt1575: Int = 0
-    @JvmField
+
     var anInt1576: Int = 0
 
     @JvmStatic

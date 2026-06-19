@@ -2,9 +2,9 @@
 * Visit http://jode.sourceforge.net/
 */
 class MidiFileBuilder private constructor(class348_sub49: ByteBuffer) : LinkedListNode() {
-    @JvmField
+
     var aByteArray6564: ByteArray?
-    @JvmField
+
     var aHashtable_6565: Hashtable? = null
 
     fun method2733() {

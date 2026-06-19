@@ -1,23 +1,23 @@
 object TextureLoadExceptionStatics {
-    @JvmField
+
     var anInt4596: Int
-    @JvmField
+
     var anInt4597: Int = 0
-    @JvmField
+
     var anInt4598: Int = 0
-    @JvmField
+
     var aBoolean4599: Boolean
-    @JvmField
+
     var anInt4600: Int = 52
-    @JvmField
+
     var aFontMetaRef_4601: FontMetaRef?
-    @JvmField
+
     var aFloatArray4602: FloatArray?
-    @JvmField
+
     var anIntArray4603: IntArray? = null
-    @JvmField
+
     var aBoolean4604: Boolean
-    @JvmField
+
     var anInt4605: Int = 0
 
     @JvmStatic

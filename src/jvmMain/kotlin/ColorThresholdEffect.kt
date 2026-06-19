@@ -107,16 +107,16 @@ class ColorThresholdEffect : AbstractProceduralTextureNode(1, false) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9085: Int = 0
-        @JvmField
+
         var anInt9087: Int = 0
-        @JvmField
+
         var anInt9088: Int = 0
         var aFontMetaRef_9089: FontMetaRef? = FontMetaRef(2, 6)
-        @JvmField
+
         var aSpriteImage_9090: SpriteImage? = null
-        @JvmField
+
         var anInt9093: Int = 0
         @JvmStatic
         fun method3050(bool: Boolean) {

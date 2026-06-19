@@ -89,17 +89,17 @@ class DirectionalLightTextureNode : AbstractProceduralTextureNode(1, true) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9440: Int = 0
-        @JvmField
+
         var anInt9441: Int = 0
-        @JvmField
+
         var anInt9442: Int = 0
-        @JvmField
+
         var aServerConnectionInfo_9443: ServerConnectionInfo? = null
-        @JvmField
+
         var anInt9444: Int = 0
-        @JvmField
+
         var anInt9446: Int = 0
         @JvmStatic
         fun method3144(i: Byte) {

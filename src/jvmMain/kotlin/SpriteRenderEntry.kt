@@ -36,7 +36,7 @@ class SpriteRenderEntry internal constructor(widgetRedrawRegion: WidgetRedrawReg
         var anInt9703: Int = 0
         var anInt9708: Int = 0
         var anInt9709: Int = 0
-        @JvmField
+
         var aNodeDeque_9711: NodeDeque? = NodeDeque()
         var anInt9713: Int = 0
         var anIntArray9714: IntArray? = intArrayOf(1, 2, 4, 8)

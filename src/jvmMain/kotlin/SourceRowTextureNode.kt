@@ -11,13 +11,13 @@ class SourceRowTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var aNodeDeque_9111: NodeDeque? = NodeDeque()
-        @JvmField
+
         var anInt9112: Int = 0
-        @JvmField
+
         var aRenderConfig9113: RenderConfig? = null
-        @JvmField
+
         var anInt9115: Int = 0
 
         @JvmStatic

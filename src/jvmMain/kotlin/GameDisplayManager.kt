@@ -10,7 +10,7 @@ import java.awt.Container
  */
 object GameDisplayManager {
     var anInt10432: Int = 0
-    @JvmField
+
     var anInt2834: Int = 0
     var anInt2835: Int = 0
     var aFloat2836: Float = 0f

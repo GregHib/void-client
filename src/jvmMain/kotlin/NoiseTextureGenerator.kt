@@ -8,7 +8,7 @@ import kotlin.random.Random
  */
 abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
     private var aShortArray1069: ShortArray? = null
-    @JvmField
+
     var anInt1071: Int = 4
     private var anInt1074 = 4
     private var anInt1078 = 4
@@ -145,23 +145,23 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
     }
 
     companion object {
-        @JvmField
+
         var aInboundPacketHeader_1068: InboundPacketHeader? = InboundPacketHeader(35, 0)
-        @JvmField
+
         var anInt1070: Int = 0
-        @JvmField
+
         var anInt1072: Int = 0
-        @JvmField
+
         var anInt1073: Int = 0
-        @JvmField
+
         var anInt1075: Int = 0
-        @JvmField
+
         var anInt1076: Int = 0
-        @JvmField
+
         var anInt1077: Int = 0
-        @JvmField
+
         var anInt1080: Int = 0
-        @JvmField
+
         var aDouble1083: Double = 0.0
 
         @JvmStatic

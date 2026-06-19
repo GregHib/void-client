@@ -11,9 +11,9 @@ class NamedIdEntry internal constructor(@field:Volatile var aString6888: String?
     companion object {
         var aClass348_Sub42_Sub14_6885: InterfaceComponentGroup? = null
         var anInt6886: Int = 0
-        @JvmField
+
         var aShortArray6889: ShortArray?
-        @JvmField
+
         var anIntArray6890: IntArray? = IntArray(32)
         var aRgbColorPalette_6891: RgbColorPalette?
 

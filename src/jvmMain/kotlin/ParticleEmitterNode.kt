@@ -4,13 +4,13 @@ import direct.Direct3dModel
 * Visit http://jode.sourceforge.net/
 */
 class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @JvmField var anInt185: Int, @JvmField var anInt177: Int, @JvmField var anInt188: Int, @JvmField var anInt184: Int, @JvmField var anInt178: Int, @JvmField var anInt173: Int, @JvmField var aClass318_Sub1_172: SceneEntity?) {
-    @JvmField
+
     var aClass348_Sub16_Sub5_176: SampledVoice? = null
-    @JvmField
+
     var aAudioClipDefinition_183: AudioClipDefinition? = null
-    @JvmField
+
     var aClass348_Sub19_Sub1_189: PcmSampleData? = null
-    @JvmField
+
     var aClass348_Sub10_192: VorbisAudioDecoder? = null
 
     fun method220(i: Byte): Boolean {
@@ -20,21 +20,21 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
     }
 
     companion object {
-        @JvmField
+
         var anIntArrayArray174: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(0, 2), intArrayOf(0, 2), intArrayOf(0, 0, 2), intArrayOf(2, 0, 0), intArrayOf(0, 2, 0), intArrayOf(0, 0, 2), intArrayOf(0, 5, 1, 4), intArrayOf(0, 4, 4, 4), intArrayOf(4, 4, 4, 0), intArrayOf(6, 6, 6, 2, 2, 2), intArrayOf(2, 2, 2, 6, 6, 6), intArrayOf(0, 11, 6, 6, 6, 4), intArrayOf(0, 2), intArrayOf(0, 4, 4, 4), intArrayOf(0, 4, 4, 4))
-        @JvmField
+
         var anInt175: Int = 0
-        @JvmField
+
         var anInt181: Int = 0
-        @JvmField
+
         var anInt182: Int = 0
-        @JvmField
+
         var aSceneProjector_186: SceneProjector?
-        @JvmField
+
         var anIntArray187: IntArray? = intArrayOf(-1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048)
-        @JvmField
+
         var anInt190: Int = 0
-        @JvmField
+
         var aWidgetCache_191: WidgetCache? = null
         @JvmStatic
         fun method217(i: Byte): String? {

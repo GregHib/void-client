@@ -64,7 +64,7 @@ class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, 
         var aLong4367: Long = -1L
         var anInt4370: Int = 0
         var anInt4371: Int = 0
-        @JvmField
+
         var anInt4372: Int = 0
         fun method3470(i: Int) {
             if (i == 1) {

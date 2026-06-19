@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class NativeSprite(var_ha_Sub2: OpenGlRenderer?, i: Int, i_1_: Int, `is`: ByteArray?) : Sprite() {
-    @JvmField
+
     var aClass258_Sub3_Sub1_5193: GlTexture2DRegion? = null
 
     init {
@@ -15,7 +15,7 @@ class NativeSprite(var_ha_Sub2: OpenGlRenderer?, i: Int, i_1_: Int, `is`: ByteAr
     }
 
     companion object {
-        @JvmField
+
         var anIntArray5192: IntArray? = null
         @JvmStatic
         fun method161(i: Int) {

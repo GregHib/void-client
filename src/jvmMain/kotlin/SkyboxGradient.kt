@@ -7,7 +7,7 @@ object SkyboxGradient {
     var anInt3933: Int = 0
     var aProjectileFactory_3934: ProjectileFactory? = ProjectileFactory(2, 2)
     var aFloat3935: Float = 0f
-    @JvmField
+
     var anInt3936: Int = 0
     var anInt3937: Int = 0
 

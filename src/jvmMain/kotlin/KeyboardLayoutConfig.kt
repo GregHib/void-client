@@ -25,10 +25,10 @@ class KeyboardLayoutConfig {
 
     companion object {
         var anInt2129: Int = 0
-        @JvmField
+
         var aBoolean2130: Boolean
         var aFloatArray2131: FloatArray?
-        @JvmField
+
         var aBooleanArrayArray2133: Array<BooleanArray?>? = arrayOf<BooleanArray?>(
             booleanArrayOf(true, true, true, true, true, true, true, true, true, true, true, true, true),
             booleanArrayOf(true, true, true, false, false, false, true, true, false, false, false, false, true),

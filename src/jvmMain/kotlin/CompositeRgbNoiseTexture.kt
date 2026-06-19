@@ -22,18 +22,18 @@ class CompositeRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
     }
 
     companion object {
-        @JvmField
+
         var anInt8675: Int = 0
-        @JvmField
+
         var anInt8676: Int = 0
-        @JvmField
+
         var anInt8677: Int = 0
-        @JvmField
+
         var anInt8678: Int = 0
-        @JvmField
+
         var anInt8682: Int = 0
         var aInboundPacketHeader_8683: InboundPacketHeader? = InboundPacketHeader(100, -1)
-        @JvmField
+
         var anInt8685: Int = 0
 
         @JvmStatic

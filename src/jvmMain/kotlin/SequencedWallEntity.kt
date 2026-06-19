@@ -153,9 +153,9 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, npcConfi
         var anInt10160: Int = 0
         var anInt10161: Int = 0
         var anInt10162: Int = 0
-        @JvmField
+
         var anInt10163: Int = 0
-        @JvmField
+
         var anInt10164: Int = 0
         var anInt10165: Int = 0
         var anInt10166: Int = 0

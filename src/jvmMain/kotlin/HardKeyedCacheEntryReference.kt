@@ -24,15 +24,15 @@ class HardKeyedCacheEntryReference internal constructor(keyedComparable: KeyedCo
     }
 
     companion object {
-        @JvmField
+
         var anInt10439: Int = 0
-        @JvmField
+
         var anInt10441: Int = 0
-        @JvmField
+
         var aHashtable_10442: Hashtable?
-        @JvmField
+
         var anInt10443: Int = 2
-        @JvmField
+
         var anInt10445: Int = 0
 
         @JvmStatic

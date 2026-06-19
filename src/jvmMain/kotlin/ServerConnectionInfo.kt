@@ -7,15 +7,15 @@ import SceneObjectSpawner.Companion.method773
 * Visit http://jode.sourceforge.net/
 */
 class ServerConnectionInfo {
-    @JvmField
+
     var anInt2138: Int
     private var aBoolean2139 = false
-    @JvmField
+
     var anInt2143: Int = 0
     private var aBoolean2146 = true
-    @JvmField
+
     var aString2147: String? = null
-    @JvmField
+
     var anInt2148: Int = 43594
     fun method1259(i: Int) {
         if (i != 0) method1258(39, 119, 4)
@@ -54,7 +54,7 @@ class ServerConnectionInfo {
         var anIntArray2145: IntArray? = IntArray(25)
         var anInt2149: Int = 0
         var anInt2150: Int = 0
-        @JvmField
+
         var aBoolean2151: Boolean = false
 
         @JvmStatic

@@ -55,7 +55,7 @@ class TypedRecordTable {
         var anInt3692: Int = 0
         var anInt3693: Int = 0
         var anInt3694: Int = 0
-        @JvmField
+
         var anInt3695: Int = 0
 
         @JvmStatic

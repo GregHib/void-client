@@ -12,7 +12,7 @@ object ScreenBorderFiller {
     var anInt1958: Int = 0
     var aInboundPacketHeader_1959: InboundPacketHeader? = InboundPacketHeader(81, 6)
     var anInt1960: Int = 0
-    @JvmField
+
     var aFontMetaRef_1961: FontMetaRef? = FontMetaRef(77, -1)
 
     @Throws(ClientException::class)

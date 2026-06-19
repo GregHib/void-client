@@ -198,13 +198,13 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: N
         var anInt10121: Int = 0
         var anInt10122: Int = 0
         var anInt10123: Int = 0
-        @JvmField
+
         var aNodeDeque_10125: NodeDeque? = NodeDeque()
         var anInt10126: Int = 0
         var anInt10131: Int = 0
         var anInt10132: Int = 0
         var anInt10133: Int = 0
-        @JvmField
+
         var aFontMetaRef_10134: FontMetaRef? = FontMetaRef(62, 3)
         var anInt10135: Int = 0
         var anInt10136: Int = 0

@@ -120,9 +120,9 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
     companion object {
         var anInt2160: Int = 0
         var anInt2161: Int = 0
-        @JvmField
+
         var aBooleanArray2162: BooleanArray? = null
-        @JvmField
+
         var anIntArrayArray2165: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(2, 4, 6, 0), intArrayOf(0, 2, 3, 5, 6, 4), intArrayOf(0, 1, 4, 5), intArrayOf(4, 6, 0, 2), intArrayOf(2, 4, 0), intArrayOf(0, 2, 4), intArrayOf(6, 0, 1, 2, 4, 5), intArrayOf(0, 1, 2, 4, 6, 7), intArrayOf(4, 7, 6, 0), intArrayOf(0, 8, 6, 1, 9, 2, 9, 4), intArrayOf(2, 9, 4, 0, 8, 6), intArrayOf(2, 11, 3, 7, 10, 10, 6, 6), intArrayOf(2, 4, 6, 0))
         var anInt2166: Int = 0
         var anInt2167: Int = 0

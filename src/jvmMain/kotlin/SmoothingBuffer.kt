@@ -2,14 +2,14 @@
 * Visit http://jode.sourceforge.net/
 */
 class SmoothingBuffer internal constructor(@JvmField var anInt3241: Int) {
-    @JvmField
+
     var anIntArray3238: IntArray? = IntArray(this.anInt3241)
 
-    @JvmField
+
     var anIntArray3239: IntArray? = IntArray(this.anInt3241)
 
     companion object {
-        @JvmField
+
         var aFontMetaRef_3237: FontMetaRef? = FontMetaRef(80, 7)
         var aInboundPacketHeader_3240: InboundPacketHeader? = InboundPacketHeader(43, 4)
         var aFloat3242: Float = 0f

@@ -8,7 +8,7 @@ import Marker
 * NativeTextureHandle
 */
 class xa(i: Int, i_1_: Int) : Marker, Disposable {
-    @JvmField
+
     var nativeid: Long = 0L
 
     private external fun r(i: Int, i_0_: Int)

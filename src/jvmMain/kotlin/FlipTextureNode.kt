@@ -91,17 +91,17 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9141: Int = 0
-        @JvmField
+
         var anInt9142: Int = 0
-        @JvmField
+
         var anInt9143: Int = 0
-        @JvmField
+
         var aClass348_Sub42_Sub12_9144: ContactEntry? = null
-        @JvmField
+
         var anInt9145: Int = 0
-        @JvmField
+
         var anInt9146: Int = 0
 
         @JvmStatic

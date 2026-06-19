@@ -6,7 +6,7 @@ import kotlin.math.pow
 */
 class DisplayModeOptionState : GraphicsOptionState {
     private var aBoolean6110 = true
-    @JvmField
+
     var aBoolean6113: Boolean = false
 
     override fun method1714(i: Int, i_0_: Int): Int {
@@ -68,29 +68,29 @@ class DisplayModeOptionState : GraphicsOptionState {
     }
 
     companion object {
-        @JvmField
+
         var anInt6099: Int = 0
-        @JvmField
+
         var anInt6100: Int = 0
-        @JvmField
+
         var anInt6101: Int = 0
-        @JvmField
+
         var anInt6102: Int = 0
-        @JvmField
+
         var aClass318_Sub9_Sub2_Sub1Array6103: Array<ProjectileNode?>? = null
-        @JvmField
+
         var anInt6104: Int = 0
-        @JvmField
+
         var anInt6105: Int = 0
-        @JvmField
+
         var anInt6106: Int = 0
-        @JvmField
+
         var anInt6107: Int = 0
-        @JvmField
+
         var anInt6108: Int = 0
-        @JvmField
+
         var anInt6109: Int = 0
-        @JvmField
+
         var anInt6112: Int = 0
         @JvmStatic
         fun method1825(i: Int, i_3_: Int, i_4_: Int) {

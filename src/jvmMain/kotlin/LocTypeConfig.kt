@@ -9,16 +9,16 @@ class LocTypeConfig {
     var aBoolean3560: Boolean = false
     var aBoolean3561: Boolean = true
     var aLocDefinitionCache_3562: LocDefinitionCache? = null
-    @JvmField
+
     var anInt3563: Int = 0
     var anInt3564: Int = 8
     var aBoolean3566: Boolean = true
-    @JvmField
+
     var anInt3569: Int
     var anInt3570: Int = 512
     var anInt3573: Int = 0
     var anInt3574: Int = 127
-    @JvmField
+
     var anInt3575: Int
 
     fun method2067(i: Int) {
@@ -72,7 +72,7 @@ class LocTypeConfig {
     companion object {
         var anInt3565: Int = 0
         var anInt3567: Int = 0
-        @JvmField
+
         var aIndexedFileCache_3568: IndexedFileCache? = null
         var anInt3571: Int = 0
         var aCameraRotationStub_3572: CameraRotationStub? = CameraRotationStub()

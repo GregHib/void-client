@@ -7,9 +7,9 @@ import SpriteDrawTarget
 * NativeBillboardRenderer
 */
 class wa(var_oa: oa, var_j: j, var_xa: xa) : SpriteDrawTarget {
-    @JvmField
+
     var aJ4732: j
-    @JvmField
+
     var aXa4733: xa
     private var aLong4734 = 0L
 

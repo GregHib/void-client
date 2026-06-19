@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class LinkedNodeListIterator {
-    @JvmField
+
     var aClass348_Sub42_1647: HashLinkedListNode = HashLinkedListNode()
     private var aClass348_Sub42_1652: HashLinkedListNode? = null
     fun method1002(i: Int): Int {
@@ -77,17 +77,17 @@ class LinkedNodeListIterator {
     }
 
     companion object {
-        @JvmField
+
         var anInt1643: Int = 0
-        @JvmField
+
         var anInt1644: Int = 0
-        @JvmField
+
         var anInt1646: Int = 0
-        @JvmField
+
         var anInt1649: Int = 0
-        @JvmField
+
         var anInt1653: Int = 0
-        @JvmField
+
         var anInt1654: Int = 0
 
     }

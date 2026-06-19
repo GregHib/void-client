@@ -104,10 +104,10 @@ class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, 
         var anInt3041: Int = 0
         var anInt3042: Int = 0
         var anInt3043: Int = 0
-        @JvmField
+
         var aRectangleRegion_3044: RectangleRegion?
         var anInt3045: Int = 0
-        @JvmField
+
         var anInt3047: Int = 0
         var anInt3048: Int = 0
 

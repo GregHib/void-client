@@ -4,7 +4,7 @@ import java.io.IOException
 import java.net.Socket
 
 abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenGlRenderer) : LinkedListNode() {
-    @JvmField
+
     var aBoolean6621: Boolean = false
     abstract fun method2750(class258_sub3: GlTexture2D?, class258_sub3_0_: GlTexture2D?, i: Int, i_1_: Byte)
 
@@ -43,25 +43,25 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
     }
 
     companion object {
-        @JvmField
+
         var anInt6619: Int = 0
-        @JvmField
+
         var anInt6620: Int = 0
-        @JvmField
+
         var anInt6622: Int = 0
-        @JvmField
+
         var anInt6623: Int = 0
-        @JvmField
+
         var aByteArray6624: ByteArray? = ByteArray(2048)
-        @JvmField
+
         var anInt6625: Int = 0
-        @JvmField
+
         var anInt6626: Int = 0
-        @JvmField
+
         var aAbstractModelRenderer_6627: AbstractModelRenderer? = null
-        @JvmField
+
         var anInt6628: Int = 0
-        @JvmField
+
         var anInt6629: Int = 0
 
         @JvmStatic

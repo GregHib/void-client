@@ -164,20 +164,20 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var aInboundPacketHeader_9285: InboundPacketHeader? = InboundPacketHeader(104, 1)
-        @JvmField
+
         var anInt9289: Int = 0
-        @JvmField
+
         var anInt9290: Int = 0
-        @JvmField
+
         var anInt9292: Int = 0
-        @JvmField
+
         var anInt9295: Int = 0
-        @JvmField
+
         var anInt9296: Int = 0
         var aTextureFormatInfo_9303: TextureFormatInfo? = TextureFormatInfo(1)
-        @JvmField
+
         var aFontMetaRef_9304: FontMetaRef? = FontMetaRef(20, -1)
         @JvmStatic
         fun method3110(i: Int) {

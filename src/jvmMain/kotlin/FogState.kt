@@ -2,9 +2,9 @@
 * Visit http://jode.sourceforge.net/
 */
 object FogState {
-    @JvmField
+
     var anIntArray1432: IntArray? = null
-    @JvmField
+
     var anInt1433: Int = 0
 
     @JvmStatic

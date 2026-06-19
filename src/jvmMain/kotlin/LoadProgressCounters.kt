@@ -5,24 +5,24 @@ import NodeDequeHolder.Companion.method878
 * Visit http://jode.sourceforge.net/
 */
 class LoadProgressCounters {
-    @JvmField
+
     var anInt2445: Int = 0
-    @JvmField
+
     var anInt2448: Int = 0
-    @JvmField
+
     var anInt2451: Int = 0
-    @JvmField
+
     var anInt2454: Int = 0
-    @JvmField
+
     var anInt2455: Int = 0
-    @JvmField
+
     var anInt2456: Int = 0
 
     companion object {
-        @JvmField
+
         var anInt2446: Int = 0
         var anCursorControllerArray2447: Array<CursorController?>? = null
-        @JvmField
+
         var aKeyboardInputSource_2449: KeyboardInputSource? = null
         var anInt2450: Int = 0
         var anInt2452: Int = 0

@@ -78,13 +78,13 @@ class OggCacheStream private constructor(i: Int, js5Archive: Js5Archive, i_1_: I
 
     companion object {
         var aBoolean5265: Boolean = false
-        @JvmField
+
         var anInt5266: Int = 0
-        @JvmField
+
         var anInt5268: Int = 0
-        @JvmField
+
         var aNamedIdRecord_5271: NamedIdRecord? = NamedIdRecord("LIVE", 0)
-        @JvmField
+
         var anInt5273: Int = 0
         @JvmStatic
         fun method523(i: Int) {

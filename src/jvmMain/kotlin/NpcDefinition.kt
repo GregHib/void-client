@@ -5,67 +5,67 @@ class NpcDefinition {
     var anInt2901: Int = 0
     var anInt2904: Int = 0
     var anInt2905: Int
-    @JvmField
+
     var anIntArray2906: IntArray = intArrayOf()
     var anIntArray2907: IntArray? = null
     var anInt2908: Int = -1
     var anInt2909: Int
-    @JvmField
+
     var anIntArrayArray2910: Array<IntArray?>? = null
     var anInt2911: Int
-    @JvmField
+
     var anInt2912: Int = 0
-    @JvmField
+
     var aBoolean2913: Boolean = true
-    @JvmField
+
     var anInt2914: Int
     var anIntArray2915: IntArray? = null
     var anInt2916: Int
     var anInt2917: Int = 0
     var anInt2918: Int
-    @JvmField
+
     var anInt2919: Int
-    @JvmField
+
     var anInt2920: Int
     var anInt2922: Int
     var anInt2923: Int
-    @JvmField
+
     var anInt2924: Int
     private var aAbstractCameraTransformArray2925: Array<AbstractCameraTransform?>? = null
-    @JvmField
+
     var anInt2926: Int = 0
     var anInt2927: Int
     var anInt2928: Int
     var anIntArray2929: IntArray? = null
     private var anInt2930 = 0
-    @JvmField
+
     var anInt2932: Int = 0
     var anInt2934: Int
     var anInt2935: Int = 0
     var anInt2936: Int = 0
     var anInt2937: Int
     var anInt2938: Int
-    @JvmField
+
     var anIntArrayArray2939: Array<IntArray?>? = null
-    @JvmField
+
     var anInt2940: Int
-    @JvmField
+
     var anInt2941: Int = 0
     private val anInt2942: Int
-    @JvmField
+
     var anInt2943: Int = 0
     var anInt2945: Int
-    @JvmField
+
     var anInt2947: Int
     var anInt2948: Int = 0
-    @JvmField
+
     var anInt2949: Int
-    @JvmField
+
     var anInt2950: Int = 0
     var anInt2951: Int
     var anInt2953: Int
     var anInt2954: Int
-    @JvmField
+
     var anInt2958: Int
 
     fun method1618(var_renderer: Renderer, i: Int): Array<AbstractCameraTransform?>? {
@@ -275,11 +275,11 @@ class NpcDefinition {
         var anInt2933: Int = 0
         var aObjectByteSerializerHolder_2944: ObjectByteSerializerHolder?
         var anInt2952: Int = 0
-        @JvmField
+
         var anInt2955: Int
-        @JvmField
+
         var anInt2956: Int = 0
-        @JvmField
+
         var aDoublyLinkedNodeList_2957: DoublyLinkedNodeList?
         @JvmStatic
         fun method1619(i: Byte) {

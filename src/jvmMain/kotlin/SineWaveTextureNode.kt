@@ -67,13 +67,13 @@ class SineWaveTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9450: Int = 0
-        @JvmField
+
         var anInt9452: Int = 0
-        @JvmField
+
         var anInt9454: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_9456: InboundPacketHeader? = null
 
         @JvmStatic

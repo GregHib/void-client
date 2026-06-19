@@ -37,33 +37,33 @@ class RangedGraphicsOptionState : GraphicsOptionState {
     internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     companion object {
-        @JvmField
+
         var anInt5935: Int = 0
-        @JvmField
+
         var anInt5936: Int = 0
-        @JvmField
+
         var anInt5937: Int = 0
-        @JvmField
+
         var aFontMetaRef_5938: FontMetaRef? = FontMetaRef(0, 0)
-        @JvmField
+
         var anInt5939: Int = 0
-        @JvmField
+
         var anInt5940: Int = 0
-        @JvmField
+
         var anInt5941: Int = 0
-        @JvmField
+
         var anInt5942: Int = 0
-        @JvmField
+
         var anInt5943: Int = 1337
-        @JvmField
+
         var anInt5944: Int = 0
-        @JvmField
+
         var aFloat5945: Float = 0f
-        @JvmField
+
         var anInt5946: Int = 0
-        @JvmField
+
         var anInt5947: Int = 0
-        @JvmField
+
         var anInt5948: Int = 0
 
         fun method1760(i: Int, i_0_: Int, bool: Boolean, i_1_: Int, i_2_: Byte, i_3_: Int, i_4_: Int, i_5_: Int) {

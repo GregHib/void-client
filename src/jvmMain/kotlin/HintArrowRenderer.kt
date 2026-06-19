@@ -14,7 +14,7 @@ class HintArrowRenderer internal constructor(private val anInt1230: Int, private
     private var anInt1220 = 0
     private var aAbstractModelRenderer_1221: AbstractModelRenderer? = null
     private var anInt1231 = 0
-    @JvmField
+
     var anInt1232: Int = 0
 
     private fun method730(var_renderer: Renderer, hintArrowRenderer_0_: HintArrowRenderer?): Boolean {

@@ -103,7 +103,7 @@ class BufferedOutputStreamWorker internal constructor(private var anOutputStream
     }
 
     companion object {
-        @JvmField
+
         var aNodeDeque_2707: NodeDeque? = NodeDeque()
         var anInt2709: Int = 0
         var anInt2710: Int = 0

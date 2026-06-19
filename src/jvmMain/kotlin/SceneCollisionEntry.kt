@@ -10,7 +10,7 @@ class SceneCollisionEntry internal constructor(i: Int) {
     var aByte4399: Byte
     var aSceneCollisionEntry_4400: SceneCollisionEntry? = null
     var aShort4401: Short = 0
-    @JvmField
+
     var aClass318_Sub1_Sub1_4402: TileSceneEntity? = null
     var aClass318_Sub1_Sub4_4403: ActorEntity? = null
     var aClass318_Sub1_Sub4_4406: ActorEntity? = null

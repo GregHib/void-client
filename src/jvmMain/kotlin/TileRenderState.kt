@@ -29,7 +29,7 @@ class TileRenderState {
 
     companion object {
         var anInt4227: Int = 0
-        @JvmField
+
         var anInt4228: Int = 0
         var anInt4229: Int = 0
         var anInt4230: Int = 0
@@ -37,7 +37,7 @@ class TileRenderState {
         var anInt4232: Int = 0
         var anIntArrayArray4233: Array<IntArray?>? = arrayOfNulls<IntArray>(6)
         var aAbstractModelRendererArray4234: Array<AbstractModelRenderer?>? = null
-        @JvmField
+
         var anInt4235: Int
         var aModelDefinitionArray4236s: Array<ModelDefinition?>? = arrayOfNulls<ModelDefinition>(4)
         var anInt4237: Int = 0

@@ -5,9 +5,9 @@ import java.net.Socket
  * Class272
  */
 abstract class SocketFactory {
-    @JvmField
+
     var anInt3470: Int = 0
-    @JvmField
+
     var aString3476: String? = null
 
     @Throws(IOException::class)
@@ -21,15 +21,15 @@ abstract class SocketFactory {
     abstract fun method2050(i: Int): Socket?
 
     companion object {
-        @JvmField
+
         var anInt3471: Int = 0
-        @JvmField
+
         var anInt3472: Int = 0
-        @JvmField
+
         var anInt3473: Int = 0
-        @JvmField
+
         var anInt3474: Int = 0
-        @JvmField
+
         var anIntArray3475: IntArray? = intArrayOf(1, 4, 1, 2)
         @JvmStatic
         fun method2048(i: Int) {

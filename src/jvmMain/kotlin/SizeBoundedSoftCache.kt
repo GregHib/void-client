@@ -172,7 +172,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
         var anInt2310: Int = 0
         var anInt2313: Int = 0
         var anInt2314: Int = 0
-        @JvmField
+
         var aFontMetaRef_2315: FontMetaRef?
         var anInt2317: Int = 0
         var anInt2318: Int = 0
@@ -182,14 +182,14 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
         var anInt2322: Int = 0
         var anInt2323: Int = 0
         var anInt2325: Int = 0
-        @JvmField
+
         var aBooleanArray2326: BooleanArray? = BooleanArray(100)
-        @JvmField
+
         var aRsaPacketDecoder_2327: RsaPacketDecoder? = null
         var anInt2328: Int = 0
-        @JvmField
+
         var aBoolean2329: Boolean = false
-        @JvmField
+
         var anIntArray2330: IntArray? = null
 
         @JvmStatic

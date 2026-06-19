@@ -59,23 +59,23 @@ class WorldMapImageBuilder internal constructor(sceneProjector: SceneProjector?,
     }
 
     companion object {
-        @JvmField
+
         var anInt1138: Int = 0
-        @JvmField
+
         var anInt1139: Int = 0
-        @JvmField
+
         var anInt1140: Int = 0
-        @JvmField
+
         var anInt1142: Int = 0
-        @JvmField
+
         var anInt1143: Int = 0
-        @JvmField
+
         var aFontMetaRef_1144: FontMetaRef?
-        @JvmField
+
         var aClass110_Sub1Array1146: Array<MapLabelMenuEntry?>? = arrayOfNulls<MapLabelMenuEntry>(0)
-        @JvmField
+
         var anInt1147: Int = 0
-        @JvmField
+
         var aSceneCollisionEntryArrayArrayArray1148: Array<Array<Array<SceneCollisionEntry?>?>?>? = null
 
         @JvmStatic

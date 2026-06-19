@@ -11,13 +11,13 @@ abstract class KeyboardInputSource {
     abstract fun method2698(i: Int)
 
     companion object {
-        @JvmField
+
         var anInt4274: Int = 0
-        @JvmField
+
         var aBoolean4275: Boolean = false
-        @JvmField
+
         var anInt4276: Int = 0
-        @JvmField
+
         var anInt4277: Int = 0
 
         @JvmStatic

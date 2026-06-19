@@ -196,31 +196,31 @@ class LruByteCache @JvmOverloads internal constructor(private var anInt1086: Int
     }
 
     companion object {
-        @JvmField
+
         var anInt1085: Int = 0
-        @JvmField
+
         var anInt1087: Int = 0
-        @JvmField
+
         var anInt1090: Int = 0
-        @JvmField
+
         var anInt1091: Int = 0
-        @JvmField
+
         var anInt1092: Int = 0
-        @JvmField
+
         var anInt1093: Int = 0
-        @JvmField
+
         var anInt1094: Int = 0
-        @JvmField
+
         var anInt1095: Int = 0
-        @JvmField
+
         var anInt1096: Int = 0
-        @JvmField
+
         var anInt1097: Int = 0
-        @JvmField
+
         var anInt1099: Int = 0
-        @JvmField
+
         var anInt1101: Int = 0
-        @JvmField
+
         var anInt1102: Int = 0
 
         var aParticleEmitterFactory_5675: ParticleEmitterFactory? = method2118(((-42).toByte()).toByte())

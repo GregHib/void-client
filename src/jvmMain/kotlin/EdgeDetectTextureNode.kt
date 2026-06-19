@@ -36,19 +36,19 @@ class EdgeDetectTextureNode : AbstractProceduralTextureNode(1, true) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9166: Int = 0
-        @JvmField
+
         var anInt9168: Int = 0
-        @JvmField
+
         var anGameApplet_Frame_9169: GameAppletFrame? = null
-        @JvmField
+
         var anInt9170: Int = 0
-        @JvmField
+
         var aLruByteCache_9171: LruByteCache? = LruByteCache(4)
-        @JvmField
+
         var anInt9172: Int = 0
-        @JvmField
+
         var aFont_9173: Font? = null
 
         @JvmStatic

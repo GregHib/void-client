@@ -8,6 +8,6 @@ class D3DDISPLAYMODE {
 
     private val Height = 0
 
-    @JvmField
+
     var Format: Int = 0
 }

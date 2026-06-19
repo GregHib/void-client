@@ -1,24 +1,24 @@
 import kotlin.concurrent.Volatile
 
 object RenderNodeStatics {
-    @JvmField
+
     var aWidgetRedrawTracker_9716: WidgetRedrawTracker? = WidgetRedrawTracker()
-    @JvmField
+
     var anInt9717: Int = 0
-    @JvmField
+
     var aBooleanArray9718: BooleanArray? = null
-    @JvmField
+
     var aBoolean9719: Boolean = true
-    @JvmField
+
     var aAbstractCameraTransform_9720: AbstractCameraTransform? = null
-    @JvmField
+
     @Volatile
     var anInt9721: Int = -1
-    @JvmField
+
     var aBoolean9722: Boolean = false
-    @JvmField
+
     var anIntArrayArray9723: Array<IntArray?>?
-    @JvmField
+
     var anIntArray9724: IntArray? = null
 
     @JvmStatic

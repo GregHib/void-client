@@ -37,11 +37,11 @@ class TextureDefinitionCache internal constructor(i: Int, js5Archive: Js5Archive
     }
 
     companion object {
-        @JvmField
+
         var aHashtable_2959: Hashtable? = Hashtable(512)
         var anInt2962: Int = 0
         var anInt2963: Int = 0
-        @JvmField
+
         var anInt2964: Int = 64
         @JvmStatic
         fun method1624(i: Int) {

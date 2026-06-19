@@ -5,11 +5,11 @@ import kotlin.math.sqrt
 class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140_: Int, i_141_: Int, `is`: Array<IntArray?>, is_142_: Array<IntArray?>?, i_143_: Int) : TerrainTile(i_140_, i_141_, i_143_, `is`) {
     private val aNodeDeque_8286: NodeDeque
     private var anIntArrayArrayArray8291: Array<Array<IntArray?>?>?
-    @JvmField
+
     var anInt8294: Int = 0
-    @JvmField
+
     var anIntArrayArrayArray8296: Array<Array<IntArray?>?>?
-    @JvmField
+
     var aShortArrayArray8299: Array<ShortArray?>
     private var anInt8301 = 0
     private val anInt8302: Int
@@ -20,16 +20,16 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
     private var anIntArrayArrayArray8308: Array<Array<IntArray?>?>?
     private val anInt8311: Int
     private var aClass348_Sub3ArrayArrayArray8312: Array<Array<Array<ModelVertexColorBuffer?>?>?>?
-    @JvmField
+
     var anIntArrayArrayArray8313: Array<Array<IntArray?>?>?
     private var anIntArrayArrayArray8314: Array<Array<IntArray?>?>? = null
     private val aByteArrayArray8317: Array<ByteArray?>
-    @JvmField
+
     var anIntArrayArrayArray8321: Array<Array<IntArray?>?>?
-    @JvmField
+
     var aHa_Sub3_8322: NativeRenderer? = null
     private var aFloatArrayArray8323: Array<FloatArray?>?
-    @JvmField
+
     var aModelBatchBase_8324: ModelBatchBase? = null
     private var aHashtable_8325: Hashtable? = null
     private var anInterface5_Impl1_8326: VertexBufferResource? = null
@@ -759,41 +759,41 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
     }
 
     companion object {
-        @JvmField
+
         var anInt8287: Int = 0
-        @JvmField
+
         var anInt8288: Int = 0
-        @JvmField
+
         var anInt8289: Int = 0
-        @JvmField
+
         var anInt8290: Int = 0
-        @JvmField
+
         var anInt8292: Int = 0
-        @JvmField
+
         var anInt8293: Int = 0
-        @JvmField
+
         var anInt8295: Int = 0
-        @JvmField
+
         var anInt8297: Int = 0
-        @JvmField
+
         var anInt8298: Int = 0
-        @JvmField
+
         var anInt8300: Int = 0
-        @JvmField
+
         var anInt8304: Int = 0
-        @JvmField
+
         var anInt8309: Int = 0
-        @JvmField
+
         var anInt8310: Int = 0
-        @JvmField
+
         var anInt8315: Int = 0
-        @JvmField
+
         var anInt8316: Int = 0
-        @JvmField
+
         var anInt8318: Int = 0
-        @JvmField
+
         var anInt8319: Int = 0
-        @JvmField
+
         var aCameraRotationStub_8320: CameraRotationStub? = CameraRotationStub()
         @JvmStatic
         fun method4004(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) {

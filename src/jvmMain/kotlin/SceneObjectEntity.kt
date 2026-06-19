@@ -53,23 +53,23 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
     }
 
     companion object {
-        @JvmField
+
         var anInt8729: Int = 0
-        @JvmField
+
         var anInt8730: Int = 0
-        @JvmField
+
         var anInt8731: Int = 0
-        @JvmField
+
         var anInt8733: Int = 0
-        @JvmField
+
         var anInt8734: Int = 0
-        @JvmField
+
         var anInt8735: Int = 0
-        @JvmField
+
         var anInt8736: Int = 0
-        @JvmField
+
         var aTrigLookupTables_8737: TrigLookupTables? = TrigLookupTables()
-        @JvmField
+
         var anInt8738: Int = 0
 
         @JvmStatic

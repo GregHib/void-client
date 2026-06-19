@@ -8,7 +8,7 @@ import Disposable
 * NativeMatrix
 */
 class ja : AbstractCameraTransform(), Disposable {
-    @JvmField
+
     var nativeid: Long = 0
 
     private external fun la()

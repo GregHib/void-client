@@ -65,7 +65,7 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
     }
 
     companion object {
-        @JvmField
+
         var anInt2499: Int = 0
         var anInt2500: Int = 0
         var anInt2502: Int = 0
@@ -73,12 +73,12 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
         var anInt2504: Int = 0
         var anInt2505: Int = 0
         var anInt2506: Int = 0
-        @JvmField
+
         var aProjectileFactory_2507: ProjectileFactory? = ProjectileFactory(9, 2)
         var anInt2508: Int = 0
-        @JvmField
+
         var anIntArray2509: IntArray? = IntArray(2)
-        @JvmField
+
         var anInt2510: Int = 0
 
         fun method1405(i: Int, bool: Boolean, bool_0_: Boolean) {

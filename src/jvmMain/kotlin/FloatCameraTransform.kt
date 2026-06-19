@@ -2,27 +2,27 @@
 * Visit http://jode.sourceforge.net/
 */
 class FloatCameraTransform : AbstractCameraTransform() {
-    @JvmField
+
     var aFloat5691: Float = 0f
-    @JvmField
+
     var aFloat5700: Float = 0f
-    @JvmField
+
     var aFloat5704: Float = 0f
-    @JvmField
+
     var aFloat5708: Float = 0f
     var aFloat5710: Float = 0f
-    @JvmField
+
     var aFloat5711: Float = 0f
-    @JvmField
+
     var aFloat5716: Float = 0f
-    @JvmField
+
     var aFloat5722: Float = 0f
-    @JvmField
+
     var aFloat5724: Float = 0f
     var aFloat5729: Float = 0f
-    @JvmField
+
     var aFloat5732: Float = 0f
-    @JvmField
+
     var aFloat5736: Float = 0f
     override fun method902(i: Int) {
         this.aFloat5716 = 1.0f
@@ -623,90 +623,90 @@ class FloatCameraTransform : AbstractCameraTransform() {
     }
 
     companion object {
-        @JvmField
+
         var anInt5690: Int = 0
-        @JvmField
+
         var anInt5692: Int = 0
-        @JvmField
+
         var anInt5693: Int = 0
-        @JvmField
+
         var anInt5694: Int = 0
-        @JvmField
+
         var anInt5695: Int = 0
-        @JvmField
+
         var anInt5696: Int = 0
-        @JvmField
+
         var anInt5697: Int = 0
-        @JvmField
+
         var anInt5698: Int = 0
         var aFontMetaRef_5699: FontMetaRef?
-        @JvmField
+
         var anInt5701: Int = 0
-        @JvmField
+
         var anInt5702: Int = 0
-        @JvmField
+
         var anInt5703: Int = 0
-        @JvmField
+
         var anInt5705: Int = 0
-        @JvmField
+
         var anInt5706: Int = 0
-        @JvmField
+
         var anInt5707: Int = 0
-        @JvmField
+
         var anInt5709: Int = 0
-        @JvmField
+
         var anInt5712: Int = 0
-        @JvmField
+
         var anInt5713: Int = -1
-        @JvmField
+
         var anInt5714: Int = 0
-        @JvmField
+
         var anInt5715: Int = 0
-        @JvmField
+
         var anInt5717: Int = 0
-        @JvmField
+
         var anInt5718: Int = 0
-        @JvmField
+
         var anInt5719: Int = 0
-        @JvmField
+
         var anInt5720: Int = 0
-        @JvmField
+
         var anInt5721: Int = 0
-        @JvmField
+
         var anInt5723: Int = 0
-        @JvmField
+
         var anInt5725: Int = 0
-        @JvmField
+
         var anInt5726: Int = 0
-        @JvmField
+
         var anInt5727: Int = 0
-        @JvmField
+
         var anInt5728: Int = 0
-        @JvmField
+
         var anInt5730: Int = 0
-        @JvmField
+
         var anInt5731: Int = 0
-        @JvmField
+
         var anInt5733: Int = 0
-        @JvmField
+
         var anInt5734: Int = 0
-        @JvmField
+
         var anInt5735: Int = 0
-        @JvmField
+
         var anInt5737: Int = 0
-        @JvmField
+
         var anInt5738: Int = 0
-        @JvmField
+
         var anInt5739: Int = 0
-        @JvmField
+
         var anInt5740: Int = 0
-        @JvmField
+
         var anInt5741: Int = 0
         var aInboundPacketHeader_5742: InboundPacketHeader?
-        @JvmField
+
         var anInt5743: Int = 0
         var anInt5744: Int = 0
-        @JvmField
+
         var aLong5745: Long = 0
 
         fun method921(i: Byte, bool: Boolean) {

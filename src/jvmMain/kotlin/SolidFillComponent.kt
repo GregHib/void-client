@@ -22,31 +22,31 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
     }
 
     companion object {
-        @JvmField
+
         var anInt8353: Int = 0
-        @JvmField
+
         var anInt8354: Int = 0
-        @JvmField
+
         var anInt8355: Int = 0
-        @JvmField
+
         var aBoundsConstraintEntry_8356: BoundsConstraintEntry? = BoundsConstraintEntry("", 11)
-        @JvmField
+
         var anInt8357: Int = 0
-        @JvmField
+
         var anInt8358: Int = 0
-        @JvmField
+
         var anInt8359: Int = 0
-        @JvmField
+
         var anInt8360: Int = 0
-        @JvmField
+
         var aBooleanArrayArrayArray8361: Array<Array<BooleanArray?>?>? = null
-        @JvmField
+
         var anInt8362: Int = 0
-        @JvmField
+
         var anInt8363: Int = 0
-        @JvmField
+
         var anInt8364: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_8365: InboundPacketHeader? = InboundPacketHeader(30, -1)
 
         @JvmStatic

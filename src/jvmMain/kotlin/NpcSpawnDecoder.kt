@@ -2,13 +2,13 @@
 * Visit http://jode.sourceforge.net/
 */
 object NpcSpawnDecoder {
-    @JvmField
+
     var anInt1524: Int = 765
-    @JvmField
+
     var anSpriteDrawTargetArray1525: Array<SpriteDrawTarget?>? = null
-    @JvmField
+
     var anInt1526: Int = 0
-    @JvmField
+
     var anInt1527: Int = 0
     var aFloatArray1528: FloatArray? = floatArrayOf(0.0f, -1.0f, 0.0f, 0.0f)
 

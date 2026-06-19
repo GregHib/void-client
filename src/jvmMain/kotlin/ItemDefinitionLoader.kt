@@ -5,11 +5,11 @@ import java.io.File
  * Class166
  */
 class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_9_: Js5Archive?) {
-    @JvmField
+
     var aJs5Archive_2180: Js5Archive? = null
     private val aLruByteCache_2185 = LruByteCache(64)
     private val aJs5Archive_2188: Js5Archive?
-    @JvmField
+
     var aLruByteCache_2190: LruByteCache? = LruByteCache(2)
 
     fun method1283(i: Int) {
@@ -84,7 +84,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
         var aInboundPacketHeader_2183: InboundPacketHeader? = InboundPacketHeader(0, -1)
         var anInt2184: Int = 0
         var anInt2186: Int = 0
-        @JvmField
+
         var aNodeDeque_2187: NodeDeque? = NodeDeque()
         var anInt2189: Int = 0
         @JvmStatic

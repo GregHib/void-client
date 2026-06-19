@@ -38,19 +38,19 @@ class CameraDistanceOptionState : GraphicsOptionState {
     internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     companion object {
-        @JvmField
+
         var anInt5851: Int = 0
-        @JvmField
+
         var anInt5852: Int = 0
-        @JvmField
+
         var anInt5853: Int = 0
-        @JvmField
+
         var anInt5854: Int = 0
-        @JvmField
+
         var anInt5855: Int = 0
-        @JvmField
+
         var anInt5856: Int = 0
-        @JvmField
+
         var aAbstractModelRendererArray5857: Array<AbstractModelRenderer?>? = null
 
         @JvmStatic

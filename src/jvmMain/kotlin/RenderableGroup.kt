@@ -98,13 +98,13 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
         var anInt5009: Int = 0
         var aBoolean5013: Boolean = false
         var anInt5014: Int = 0
-        @JvmField
+
         var aFontMetaRef_5015: FontMetaRef?
-        @JvmField
+
         var anInt5016: Int = 0
         var aPrivilegedOperationWorker_5017: PrivilegedOperationWorker? = null
         var anInt5018: Int = 0
-        @JvmField
+
         var anInt5019: Int
 
         @JvmStatic

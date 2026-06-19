@@ -12,11 +12,11 @@ class TrigLookupTables {
     }
 
     companion object {
-        @JvmField
+
         var anInt1203: Int = 0
-        @JvmField
+
         var anInt1205: Int = 0
-        @JvmField
+
         var anInt1206: Int = 0
 
         @JvmStatic

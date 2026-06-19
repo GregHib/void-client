@@ -233,7 +233,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
         var anInt9977: Int = 0
         var anInt9978: Int = 0
         var anInt9979: Int = 0
-        @JvmField
+
         var anIntArray9981: IntArray? = IntArray(5)
         var anInt9982: Int = 0
         var anInt9984: Int = 0
@@ -245,7 +245,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
         var anInt9994: Int = 0
         var anInt9995: Int = 0
         var anInt9996: Int = 0
-        @JvmField
+
         var anInt9997: Int = 1
         var anInt9998: Int = 0
         var anInt10000: Int = 0

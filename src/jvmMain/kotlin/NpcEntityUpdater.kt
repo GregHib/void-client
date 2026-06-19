@@ -9,7 +9,7 @@ object NpcEntityUpdater {
     var anInt3651: Int = 0
     var aBoolean3652: Boolean = false
     var anInt3653: Int = 0
-    @JvmField
+
     var aHashtable_3654: Hashtable?
     var anInt3655: Int = 0
 

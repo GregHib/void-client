@@ -5,10 +5,10 @@ import JavaScriptBridge.method1617
 */
 object VideoAdChecker {
     var anInt3180: Int = 0
-    @JvmField
+
     var aCameraRotationStub_3181: CameraRotationStub? = CameraRotationStub()
     var aDouble3182: Double = 0.0
-    @JvmField
+
     var aJs5Archive_3183: Js5Archive? = null
     var anInt3184: Int = 0
 

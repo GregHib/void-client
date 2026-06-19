@@ -13,7 +13,7 @@ class ItemModelDefinition {
     private var anInt433: Int
     var anInt434: Int = 70
     var anInt435: Int
-    @JvmField
+
     var aModelDefinitionCache_438: ModelDefinitionCache? = null
     private var anInt439: Int
     var anInt444: Int = 16777215
@@ -144,28 +144,28 @@ class ItemModelDefinition {
     }
 
     companion object {
-        @JvmField
+
         var anInt427: Int = 0
-        @JvmField
+
         var anInt428: Int = 0
         var aCameraNodeList_430: CameraNodeList?
-        @JvmField
+
         var anInt432: Int = 0
-        @JvmField
+
         var anInt436: Int = 0
-        @JvmField
+
         var anInt437: Int = 0
-        @JvmField
+
         var anInt440: Int = 0
-        @JvmField
+
         var anInt441: Int = 0
-        @JvmField
+
         var anInt442: Int = 0
-        @JvmField
+
         var anInt443: Int = 1
-        @JvmField
+
         var anInt445: Int = 0
-        @JvmField
+
         var anInt446: Int = 0
 
         @JvmStatic

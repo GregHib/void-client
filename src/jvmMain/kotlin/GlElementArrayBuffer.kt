@@ -52,14 +52,14 @@ class GlElementArrayBuffer internal constructor(var_ha_Sub2: OpenGlRenderer?, i:
         var aConfigFlagUtil_4835: ConfigFlagUtil? = ConfigFlagUtil()
         var anInt4836: Int = 0
         var anInt4838: Int = 0
-        @JvmField
+
         var aServerConnectionInfo_4839: ServerConnectionInfo? = null
         var anInt4840: Int = 0
         var anInt4841: Int = 0
         var anInt4842: Int = 0
         var anInt4844: Int = 0
         private var aCharArray4845: CharArray? = CharArray(64)
-        @JvmField
+
         var aClass348_Sub42_Sub12_4846: ContactEntry? = null
 
         @JvmStatic

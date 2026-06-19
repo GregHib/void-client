@@ -21,11 +21,11 @@ class AsyncTaskHandle internal constructor(var aBoolean2574: Boolean) {
     companion object {
         var anInt2573: Int = 0
         var anInt2575: Int = 0
-        @JvmField
+
         var anInt2578: Int = 0
         var aShortArray2579: ShortArray? = null
         var anInt2580: Int = 0
-        @JvmField
+
         var anInt2581: Int = 0
 
         fun method1434(i: Int) {

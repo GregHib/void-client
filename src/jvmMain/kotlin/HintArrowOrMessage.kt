@@ -52,14 +52,14 @@ class HintArrowOrMessage internal constructor(i: Int, i_0_: Int, string: String?
     }
 
     companion object {
-        @JvmField
+
         var anInt2021: Int = 0
         var anInt2023: Int = 0
-        @JvmField
+
         var aSceneCollisionEntryArrayArrayArray2029: Array<Array<Array<SceneCollisionEntry?>?>?>? = null
-        @JvmField
+
         var aMapTileShapeArray2034: Array<MapTileShape?>? = null
-        @JvmField
+
         var anInt2035: Int = 0
         var anInt2036: Int = 0
 

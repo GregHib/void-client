@@ -188,21 +188,21 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
     }
 
     companion object {
-        @JvmField
+
         var aClass348_Sub49_8698: ByteBuffer? = null
-        @JvmField
+
         var anInt8699: Int = 0
-        @JvmField
+
         var anInt8700: Int = 0
-        @JvmField
+
         var anInt8702: Int = 0
-        @JvmField
+
         var anInt8703: Int = 0
-        @JvmField
+
         var anInt8704: Int = 0
-        @JvmField
+
         var anInt8705: Int = 0
-        @JvmField
+
         var aFontMetaRef_8706: FontMetaRef? = FontMetaRef(79, 3)
         @JvmStatic
         fun method2263(var_renderer: Renderer?, i: Int, i_4_: Int): AbstractModelRenderer? {

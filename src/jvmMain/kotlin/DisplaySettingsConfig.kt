@@ -3,31 +3,31 @@ import kotlin.math.max
 
 class DisplaySettingsConfig : LinkedListNode {
     var aClass239_Sub26_7215: DetailLevelOptionState? = null
-    @JvmField
+
     var aClass239_Sub20_7216: FogOptionState? = null
     var aClass239_Sub4_7220: LightingOptionState? = null
     private var aLoadingScreenState_7221: LoadingScreenState? = null
     var aClass239_Sub3_7222: ChatEffectsOptionState? = null
     var aClass239_Sub15_7224: TextureQualityOptionState? = null
     var aClass239_Sub6_7226: BrightnessOptionState? = null
-    @JvmField
+
     var aClass239_Sub8_7227: FlickeringEffectsOptionState? = null
     var aClass239_Sub2_7228: CameraDistanceOptionState? = null
     var aClass239_Sub29_7229: MultiLevelOptionState? = null
-    @JvmField
+
     var aClass239_Sub28_7230: TwoStateOptionState? = null
     var aClass239_Sub23_7231: AntialiasOptionState? = null
-    @JvmField
+
     var aClass239_Sub10_7232: RangedGraphicsOptionState? = null
     var aClass239_Sub26_7234: DetailLevelOptionState? = null
-    @JvmField
+
     var aClass239_Sub24_7235: SceneryDetailOptionState? = null
-    @JvmField
+
     var aClass239_Sub13_7236: GroundDecorOptionState? = null
-    @JvmField
+
     var aClass239_Sub7_7238: IdleAnimationsOptionState? = null
     var aClass239_Sub5_7240: SimpleToggleOptionState? = null
-    @JvmField
+
     var aClass239_Sub12_7243: BloomGraphicsOptionState? = null
     var aClass239_Sub26_7245: DetailLevelOptionState? = null
     var aClass239_Sub1_7246: BooleanGraphicsOptionState? = null
@@ -40,20 +40,20 @@ class DisplaySettingsConfig : LinkedListNode {
     var aClass239_Sub27_7255: DefaultGraphicsOptionState? = null
     var aClass239_Sub9_7256: CustomCursorsOptionState? = null
     var aClass239_Sub19_7257: NoOpGraphicsOptionState? = null
-    @JvmField
+
     var aClass239_Sub18_7259: LightDetailOptionState? = null
     var aClass239_Sub26_7260: DetailLevelOptionState? = null
-    @JvmField
+
     var aClass239_Sub27_7261: DefaultGraphicsOptionState? = null
-    @JvmField
+
     var aClass239_Sub17_7263: ParticleDetailOptionState? = null
     var aClass239_Sub14_7264: WaterDetailOptionState? = null
-    @JvmField
+
     var aClass239_Sub11_7265: BinaryGraphicsOptionState? = null
     private val aSceneProjector_7269: SceneProjector?
-    @JvmField
+
     var aClass239_Sub21_7270: RemoveRoofsOptionState? = null
-    @JvmField
+
     var aClass239_Sub25_7271: DisplayModeOptionState? = null
     var aClass239_Sub26_7272: DetailLevelOptionState? = null
     private fun method3421(i: Int, class348_sub49: ByteBuffer?, i_0_: Int) {
@@ -2935,10 +2935,10 @@ class DisplaySettingsConfig : LinkedListNode {
         var aClass318_Sub10Array7249: Array<SceneGraphContainer?>? = null
         var anInt7252: Int
         var anInt7258: Int = 0
-        @JvmField
+
         var aShortArrayArrayArray7262: Array<Array<ShortArray?>?>?
         var anInt7266: Int = 0
-        @JvmField
+
         var anInt7267: Int
         private var aShortArrayArray7268: Array<ShortArray?>?
 

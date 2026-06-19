@@ -6,14 +6,14 @@ import IdentKitRecolor.Companion.method204
 * Visit http://jode.sourceforge.net/
 */
 object NpcUpdateProcessor {
-    @JvmField
+
     var aRgbColorPalette_1519: RgbColorPalette?
-    @JvmField
+
     var anInt1520: Int = 0
     var anIntArray1521: IntArray? = intArrayOf(7, 8, 9, 10, 11, 12, 13, 15)
-    @JvmField
+
     var anInt1522: Int = 0
-    @JvmField
+
     var aConfigArchiveLoader_1523: ConfigArchiveLoader? = null
 
     fun method855(i: Int, i_0_: Int, i_1_: Int) {

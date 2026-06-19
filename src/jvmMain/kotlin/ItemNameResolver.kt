@@ -22,18 +22,18 @@ class ItemNameResolver : TextFormatter {
     }
 
     companion object {
-        @JvmField
+
         var anInt4996: Int = 0
-        @JvmField
+
         var aProjectileFactory_4997: ProjectileFactory? = ProjectileFactory(6, 1)
         var aInboundPacketHeader_4998: InboundPacketHeader?
-        @JvmField
+
         var anInt4999: Int = 0
-        @JvmField
+
         var aString5000: String? = null
-        @JvmField
+
         var aString5001: String? = null
-        @JvmField
+
         var aBoolean5002: Boolean = false
 
         @JvmStatic

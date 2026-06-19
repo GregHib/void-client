@@ -26,15 +26,15 @@ class NoiseTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9261: Int = 0
-        @JvmField
+
         var anInt9262: Int = 0
-        @JvmField
+
         var aHudTabPanel_9263: HudTabPanel? = HudTabPanel("RC", 1)
-        @JvmField
+
         var aClass348_Sub4_9264: ClientMachineInfo? = null
-        @JvmField
+
         var anInt9265: Int = 0
 
         @JvmStatic

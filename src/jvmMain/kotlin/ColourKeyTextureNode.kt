@@ -67,23 +67,23 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9345: Int = 0
-        @JvmField
+
         var anInt9346: Int = 0
-        @JvmField
+
         var anInt9348: Int = 0
-        @JvmField
+
         var anInt9349: Int = 0
-        @JvmField
+
         var anInt9350: Int = 0
-        @JvmField
+
         var aBooleanArray9351: BooleanArray?
-        @JvmField
+
         var aBoolean9352: Boolean = true
-        @JvmField
+
         var anInt9353: Int = 0
-        @JvmField
+
         var anInt9355: Int = 0
 
         @JvmStatic

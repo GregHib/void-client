@@ -164,29 +164,29 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
     }
 
     companion object {
-        @JvmField
+
         var anInt6214: Int = 0
-        @JvmField
+
         var anInt6215: Int = 0
-        @JvmField
+
         var anInt6216: Int = 0
-        @JvmField
+
         var anInt6217: Int = 0
-        @JvmField
+
         var aCalendar6221: Calendar? = Calendar.getInstance(TimeZone.getTimeZone("GMT"))
-        @JvmField
+
         var anInt6223: Int = 0
-        @JvmField
+
         var anInt6224: Int = 0
-        @JvmField
+
         var anInt6226: Int = 0
-        @JvmField
+
         var anInt6229: Int = 0
-        @JvmField
+
         var anInt6230: Int = 0
-        @JvmField
+
         var anInt6231: Int = 0
-        @JvmField
+
         var anInt6232: Int = 0
 
         @JvmStatic

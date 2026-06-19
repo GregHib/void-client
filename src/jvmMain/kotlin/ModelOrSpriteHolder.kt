@@ -4,21 +4,21 @@ import WaterMaterialPass.Companion.method2148
 * Visit http://jode.sourceforge.net/
 */
 class ModelOrSpriteHolder {
-    @JvmField
+
     var aRenderNode118: RenderNode? = null
-    @JvmField
+
     var aAbstractModel_119: AbstractModel? = null
 
     companion object {
-        @JvmField
+
         var anInt116: Int = 0
-        @JvmField
+
         var aTextureDefinitionLoader_117: TextureDefinitionLoader? = null
-        @JvmField
+
         var anInt120: Int = 0
-        @JvmField
+
         var anInt121: Int = 0
-        @JvmField
+
         var anInt122: Int = 0
 
         @JvmStatic

@@ -38,25 +38,25 @@ class BooleanGraphicsOptionState : GraphicsOptionState {
     }
 
     companion object {
-        @JvmField
+
         var anInt5841: Int = 0
-        @JvmField
+
         var anInt5842: Int = 0
-        @JvmField
+
         var anInt5843: Int = 0
-        @JvmField
+
         var anInt5844: Int = 0
-        @JvmField
+
         var anInt5845: Int = 0
-        @JvmField
+
         var anInt5846: Int = 0
-        @JvmField
+
         var aShortArrayArray5847: Array<ShortArray?>? = null
-        @JvmField
+
         var anInt5848: Int = 0
-        @JvmField
+
         var anInt5849: Int = 0
-        @JvmField
+
         var anInt5850: Int = 0
 
         @JvmStatic

@@ -4,13 +4,13 @@
 public class ClientException : Exception() {
     companion object {
 
-        @JvmField
+
         var anInt109: Int = 0
-        @JvmField
+
         var anIntArray110: IntArray? = IntArray(4096)
-        @JvmField
+
         var anIntArrayArray111: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(0, 2, 4, 6), intArrayOf(6, 0, 2, 4), intArrayOf(6, 0, 2), intArrayOf(2, 6, 0), intArrayOf(0, 2, 6), intArrayOf(6, 0, 2), intArrayOf(5, 6, 0, 1, 2, 4), intArrayOf(7, 2, 4, 4), intArrayOf(2, 4, 4, 7), intArrayOf(6, 6, 4, 0, 2, 2), intArrayOf(0, 2, 2, 6, 6, 4), intArrayOf(0, 2, 2, 4, 6, 6), intArrayOf(0, 2, 4, 6))
-        @JvmField
+
         var aModelHeaderCache_112: ModelHeaderCache? = null
 
 

@@ -46,13 +46,13 @@ class MapAreaDefinition {
 
     companion object {
         var anInt2521: Int = 0
-        @JvmField
+
         var anInt2523: Int = 0
-        @JvmField
+
         var anInt2524: Int = 0
         var aInboundPacketHeader_2527: InboundPacketHeader? = InboundPacketHeader(98, -2)
         var anInt2528: Int = 0
-        @JvmField
+
         var aBufferedMessageQueue_2529: BufferedMessageQueue? = null
         var anInt2532: Int = 0
         fun method1420(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, collisionMap: CollisionMap, i_13_: Int, i_14_: Int): Boolean {

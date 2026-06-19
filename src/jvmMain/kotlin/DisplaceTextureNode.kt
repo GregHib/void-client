@@ -69,17 +69,17 @@ class DisplaceTextureNode : AbstractProceduralTextureNode(3, false) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9131: Int = 0
-        @JvmField
+
         var anInt9132: Int = 0
-        @JvmField
+
         var anIntArray9135: IntArray? = null
-        @JvmField
+
         var anInt9136: Int = 0
-        @JvmField
+
         var anInt9137: Int = 0
-        @JvmField
+
         var anInt9138: Int = 0
 
         @JvmStatic

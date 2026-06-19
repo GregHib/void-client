@@ -3,19 +3,19 @@
 */
 class RegionTileNode internal constructor(@JvmField var anInt6649: Int, @JvmField var anInt6648: Int, @JvmField var anInt6645: Int, @JvmField var anInt6647: Int, @JvmField var anInt6642: Int, @JvmField var aBoolean6650: Boolean) : LinkedListNode() {
     companion object {
-        @JvmField
+
         var anInt6641: Int = 0
-        @JvmField
+
         var aSpriteImage_6643: SpriteImage? = null
-        @JvmField
+
         var aRenderConfigFactory_6644: RenderConfigFactory? = RenderConfigFactory()
-        @JvmField
+
         var anInt6646: Int = 0
-        @JvmField
+
         var aLong6651: Long = -1L
-        @JvmField
+
         var anInt6652: Int = 0
-        @JvmField
+
         var aCacheArchiveIndexLoader_6653: CacheArchiveIndexLoader? = null
 
         @JvmStatic

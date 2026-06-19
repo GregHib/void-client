@@ -262,7 +262,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
         var anInt6438: Int = 0
         var anInt6440: Int = 0
         var anInt6442: Int = 0
-        @JvmField
+
         var aFontMetaRef_6443: FontMetaRef? = FontMetaRef(68, 2)
         var anInt6445: Int = 0
         var anInt6448: Int = 0

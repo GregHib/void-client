@@ -7,57 +7,57 @@ import PlayerAppearanceUpdateDecoder.method3614
 * Visit http://jode.sourceforge.net/
 */
 class CharacterRenderState : LinkedListNode() {
-    @JvmField
+
     var anInt6668: Int = 0
-    @JvmField
+
     var anInt6670: Int = 0
-    @JvmField
+
     var aClass348_Sub16_Sub5_6673: SampledVoice? = null
-    @JvmField
+
     var aBoolean6674: Boolean = false
-    @JvmField
+
     var anInt6675: Int = 0
-    @JvmField
+
     var aClass348_Sub16_Sub5_6676: SampledVoice? = null
-    @JvmField
+
     var anInt6677: Int = 0
-    @JvmField
+
     var anInt6678: Int = 0
-    @JvmField
+
     var aPlayer_6679: Player? = null
-    @JvmField
+
     var anInt6680: Int = 0
-    @JvmField
+
     var anInt6681: Int = 0
     var aClass348_Sub10_6683: VorbisAudioDecoder? = null
-    @JvmField
+
     var aBoolean6684: Boolean = false
-    @JvmField
+
     var anInt6685: Int = 0
-    @JvmField
+
     var aClass348_Sub19_Sub1_6686: PcmSampleData? = null
-    @JvmField
+
     var anInt6687: Int = 0
-    @JvmField
+
     var aClass348_Sub10_6688: VorbisAudioDecoder? = null
-    @JvmField
+
     var anInt6689: Int = 0
-    @JvmField
+
     var aNpc_6691: Npc? = null
     var aClass348_Sub19_Sub1_6692: PcmSampleData? = null
-    @JvmField
+
     var anInt6693: Int = 0
-    @JvmField
+
     var anInt6694: Int = 0
-    @JvmField
+
     var aNpcConfig_6695: NpcConfig? = null
-    @JvmField
+
     var anInt6696: Int = 0
-    @JvmField
+
     var anIntArray6697: IntArray? = null
-    @JvmField
+
     var anInt6698: Int = 0
-    @JvmField
+
     var aBoolean6699: Boolean = false
 
     fun method2781(i: Byte) {
@@ -132,15 +132,15 @@ class CharacterRenderState : LinkedListNode() {
     }
 
     companion object {
-        @JvmField
+
         var anInt6669: Int = 0
-        @JvmField
+
         var anInt6671: Int = 0
-        @JvmField
+
         var anInt6672: Int = 0
-        @JvmField
+
         var anInt6682: Int = 0
-        @JvmField
+
         var anInt6690: Int = 0
 
         @JvmStatic

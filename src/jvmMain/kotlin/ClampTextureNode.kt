@@ -70,11 +70,11 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9468: Int = 0
-        @JvmField
+
         var anInt9472: Int = 0
-        @JvmField
+
         var anInt9476: Int = 0
     }
 }

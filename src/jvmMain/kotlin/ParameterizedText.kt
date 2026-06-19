@@ -12,7 +12,7 @@ class ParameterizedText : HashLinkedListNode() {
     private var aStringArray9564: Array<String?>? = null
     private lateinit var anIntArrayArray9565: Array<IntArray?>
     var anIntArray9566: IntArray? = null
-    @JvmField
+
     var aCompiledScriptCache_9567: CompiledScriptCache? = null
     private var anIntArray9574: IntArray? = null
     fun method3209(bool: Boolean) {
@@ -147,7 +147,7 @@ class ParameterizedText : HashLinkedListNode() {
         var anInt9568: Int = 0
         var anInt9569: Int = 0
         var anInt9570: Int = 0
-        @JvmField
+
         var aCircleRasterizer_9571: CircleRasterizer? = null
         var anIntArray9572: IntArray?
         var anInt9573: Int = 0

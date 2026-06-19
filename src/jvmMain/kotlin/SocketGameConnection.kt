@@ -57,25 +57,25 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
     }
 
     companion object {
-        @JvmField
+
         var anInt5828: Int = 0
-        @JvmField
+
         var anInt5829: Int = 0
-        @JvmField
+
         var anInt5830: Int = 0
-        @JvmField
+
         var anInt5831: Int = 0
-        @JvmField
+
         var anInt5832: Int = -1
-        @JvmField
+
         var anInt5833: Int = 0
-        @JvmField
+
         var anInt5835: Int = 0
-        @JvmField
+
         var anInt5838: Int = 0
-        @JvmField
+
         var anInt5839: Int = 0
-        @JvmField
+
         var aBoolean5840: Boolean = true
 
         @JvmStatic

@@ -24,11 +24,11 @@ class NativeBufferHandle internal constructor(glRenderDevice: GlRenderDevice?, l
     }
 
     companion object {
-        @JvmField
+
         var aLong1507: Long = 0
-        @JvmField
+
         var anInt1509: Int = 0
-        @JvmField
+
         var anInt1511: Int = 0
 
         @JvmStatic

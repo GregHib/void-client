@@ -22,18 +22,18 @@ class StaticNoiseTexture : GrayscaleNoiseTexture(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0
     }
 
     companion object {
-        @JvmField
+
         var anInt8659: Int = 0
-        @JvmField
+
         var anInt8661: Int = 0
-        @JvmField
+
         var aRgbColorPalette_8662: RgbColorPalette? = RgbColorPalette(6, 5)
         var anIntArray8663: IntArray? = IntArray(120)
-        @JvmField
+
         var aBoundsConstraintEntry_8664: BoundsConstraintEntry?
-        @JvmField
+
         var anInt8665: Int = 0
-        @JvmField
+
         var anIntArray8666: IntArray? = null
 
         @JvmStatic

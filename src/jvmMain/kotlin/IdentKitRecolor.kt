@@ -6,15 +6,15 @@ import WorldMapElement.Companion.method181
 * Visit http://jode.sourceforge.net/
 */
 class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_: Int, i_48_: Int, i_49_: Int, i_50_: Int, i_51_: Int, i_52_: Int, i_53_: Int, @JvmField var aBoolean145: Boolean, @JvmField var anInt154: Int) {
-    @JvmField
+
     var aShort143: Short
-    @JvmField
+
     var aShort146: Short
-    @JvmField
+
     var aByte148: Byte
-    @JvmField
+
     var aShort150: Short
-    @JvmField
+
     var aByte156: Byte
 
     init {
@@ -26,17 +26,17 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
     }
 
     companion object {
-        @JvmField
+
         var anInt147: Int = 0
-        @JvmField
+
         var anInt149: Int = 0
-        @JvmField
+
         var aBoxedIntHolder_151: BoxedIntHolder? = BoxedIntHolder(2)
-        @JvmField
+
         var anInt152: Int = 0
-        @JvmField
+
         var anInt153: Int = 0
-        @JvmField
+
         var anInt155: Int = 0
         @JvmStatic
         fun method203(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {

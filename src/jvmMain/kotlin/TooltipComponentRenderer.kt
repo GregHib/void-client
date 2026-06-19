@@ -42,17 +42,17 @@ class TooltipComponentRenderer internal constructor(js5Archive: Js5Archive?, js5
     }
 
     companion object {
-        @JvmField
+
         var anInt4642: Int = 0
-        @JvmField
+
         var aAbstractModelRenderer_4643: AbstractModelRenderer? = null
-        @JvmField
+
         var anInt4644: Int = 0
-        @JvmField
+
         var anInt4645: Int = 0
-        @JvmField
+
         var anInt4647: Int = 0
-        @JvmField
+
         var anIntArray4648: IntArray? = IntArray(14)
         @JvmStatic
         fun method716(i: Int) {

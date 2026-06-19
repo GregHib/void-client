@@ -48,11 +48,11 @@ class WaterTextureSet internal constructor(var_ha_Sub2: OpenGlRenderer) {
     }
 
     companion object {
-        @JvmField
+
         var aStringArray1441: Array<String?>? = arrayOfNulls<String>(200)
-        @JvmField
+
         var anInt1445: Int = 0
-        @JvmField
+
         var anInt1447: Int = 0
         @JvmStatic
         fun method815(bool: Boolean) {

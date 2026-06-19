@@ -1,6 +1,6 @@
 object HashLinkedListNodeStatics {
     var aModelOrSpriteHolder_7058: ModelOrSpriteHolder?
-    @JvmField
+
     var anInt7059: Int = 0
     var anInt7062: Int = 0
 

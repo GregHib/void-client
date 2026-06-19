@@ -4,7 +4,7 @@ import FlipTextureNode.Companion.method3064
 * Visit http://jode.sourceforge.net/
 */
 class ParticleAmountConfig {
-    @JvmField
+
     var anInt2125: Int = 0
     private fun method1251(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         if (i == 5) this.anInt2125 = class348_sub49.readUnsignedShort(842397944)

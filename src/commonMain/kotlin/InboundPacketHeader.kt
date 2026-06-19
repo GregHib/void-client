@@ -14,9 +14,9 @@ class InboundPacketHeader internal constructor(private var anInt1747: Int, var a
     }
 
     companion object {
-        @JvmField
+
         var anInt1746: Int = 0
-        @JvmField
+
         var anInt1750: Int = 0
         var aInboundPacketHeader_2285: InboundPacketHeader? = InboundPacketHeader(77, 4)
 

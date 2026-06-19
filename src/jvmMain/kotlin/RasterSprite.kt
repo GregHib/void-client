@@ -1,7 +1,7 @@
 class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprite() {
-    @JvmField
+
     var anIntArray5201: IntArray?
-    @JvmField
+
     var anIntArray5202: IntArray?
 
     init {
@@ -14,15 +14,15 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
     }
 
     companion object {
-        @JvmField
+
         var aFontMetaRef_5200: FontMetaRef? = FontMetaRef(13, 2)
-        @JvmField
+
         var anInt5203: Int = 0
-        @JvmField
+
         var aFontMetaRef_5204: FontMetaRef? = FontMetaRef(15, 8)
-        @JvmField
+
         var anInt5205: Int = 0
-        @JvmField
+
         var aJs5Archive_5207: Js5Archive? = null
 
         /*synthetic*/

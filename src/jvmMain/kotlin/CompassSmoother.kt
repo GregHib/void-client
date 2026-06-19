@@ -80,9 +80,9 @@ class CompassSmoother {
         var aInboundPacketHeader_3368: InboundPacketHeader? = InboundPacketHeader(112, 4)
         var anInt3369: Int = 0
         var aInboundPacketHeader_3371: InboundPacketHeader? = InboundPacketHeader(63, 5)
-        @JvmField
+
         var anInt3372: Int = 0
-        @JvmField
+
         var anInt3373: Int = 0
         var anInt3374: Int = 0
         var anInt3375: Int = 0

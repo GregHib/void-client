@@ -2,11 +2,11 @@
 * Visit http://jode.sourceforge.net/
 */
 class HitsplatDefinition {
-    @JvmField
+
     var anInt2016: Int = 0
-    @JvmField
+
     var anInt2019: Int = 0
-    @JvmField
+
     var anInt2020: Int = 0
 
     fun method1191(i: Int, class348_sub49: ByteBuffer) {
@@ -32,10 +32,10 @@ class HitsplatDefinition {
 
     companion object {
         var anInt2012: Int = 0
-        @JvmField
+
         var aLongArray2013: LongArray? = LongArray(10)
         var anInt2014: Int = 0
-        @JvmField
+
         var aJs5Archive_2015: Js5Archive? = null
         var anInt2017: Int = 0
         var anInt2018: Int = 0

@@ -4,13 +4,13 @@ import WorldMapAreaLabel.Companion.method3570
 * Visit http://jode.sourceforge.net/
 */
 object MapSceneRenderer {
-    @JvmField
+
     var anInt621: Int = 0
-    @JvmField
+
     var anInt622: Int = 0
-    @JvmField
+
     var anInt623: Int = 0
-    @JvmField
+
     var aAbstractCameraTransform_624: AbstractCameraTransform? = null
 
     @JvmStatic

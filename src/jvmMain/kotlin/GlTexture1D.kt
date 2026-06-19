@@ -29,21 +29,21 @@ class GlTexture1D internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_
     }
 
     companion object {
-        @JvmField
+
         var aInputTracker_8552: InputTracker? = null
-        @JvmField
+
         var aRectangleRegion_8553: RectangleRegion?
-        @JvmField
+
         var anInt8554: Int = 0
-        @JvmField
+
         var anInt8555: Int = 0
-        @JvmField
+
         var anIntArray8557: IntArray? = IntArray(500)
-        @JvmField
+
         var aBoolean8558: Boolean = false
-        @JvmField
+
         var anInt8559: Int = 0
-        @JvmField
+
         var aFloat8560: Float = 0f
 
         @JvmStatic

@@ -2,13 +2,13 @@
 * Visit http://jode.sourceforge.net/
 */
 object CharCountUtil {
-    @JvmField
+
     var aLruByteCache_225: LruByteCache? = LruByteCache(4)
-    @JvmField
+
     var anInt226: Int = 0
-    @JvmField
+
     var anInt227: Int = 0
-    @JvmField
+
     var anInt228: Int = 0
     var aInboundPacketHeader_229: InboundPacketHeader? = InboundPacketHeader(51, 17)
 

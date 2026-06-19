@@ -47,21 +47,21 @@ class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, move
     }
 
     companion object {
-        @JvmField
+
         var anInt8496: Int = 0
-        @JvmField
+
         var anInt8497: Int = 0
-        @JvmField
+
         var anInt8499: Int = 0
-        @JvmField
+
         var anInt8500: Int = 0
-        @JvmField
+
         var anInt8501: Int = 0
-        @JvmField
+
         var aTrigLookupTables_8503: TrigLookupTables? = TrigLookupTables()
-        @JvmField
+
         var anInt8506: Int = 0
-        @JvmField
+
         var anIntArray8507: IntArray? = intArrayOf(
             0,
             0,

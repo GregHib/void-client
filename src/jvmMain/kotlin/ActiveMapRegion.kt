@@ -2,9 +2,9 @@
 * Visit http://jode.sourceforge.net/
 */
 object ActiveMapRegion : MapRegionLoader() {
-    @JvmField
+
     var anInt5652: Int = 1
-    @JvmField
+
     var anInt5653: Int = 0
     var aFloat5654: Float = 1.0f
 

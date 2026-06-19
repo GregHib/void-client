@@ -34,19 +34,19 @@ class RangeThresholdTextureNode : AbstractProceduralTextureNode(1, true) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9102: Int = 0
-        @JvmField
+
         var aBoolean9103: Boolean = false
-        @JvmField
+
         var anInt9105: Int = 0
-        @JvmField
+
         var anInt9106: Int = 0
-        @JvmField
+
         var anInt9108: Int = 0
-        @JvmField
+
         var anInt9109: Int = 104
-        @JvmField
+
         var anInt9110: Int = 0
 
         fun method3054(bool: Boolean, i: Int, i_2_: Int) {

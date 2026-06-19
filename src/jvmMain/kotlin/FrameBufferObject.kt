@@ -189,7 +189,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
         var anInt4881: Int = 0
         var anInt4885: Int = 0
         var anInt4887: Int = 0
-        @JvmField
+
         var aBoolean4888: Boolean = false
         var anInt4889: Int
         var anInt4890: Int = 0

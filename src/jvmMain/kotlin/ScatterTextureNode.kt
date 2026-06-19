@@ -111,15 +111,15 @@ class ScatterTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9361: Int = 0
-        @JvmField
+
         var anInt9363: Int = 0
-        @JvmField
+
         var aJs5Archive_9365: Js5Archive? = null
-        @JvmField
+
         var anInt9366: Int = 0
-        @JvmField
+
         var anInt9370: Int = 0
 
         fun method3122(i: Byte): Array<NamedIdRecord?> {

@@ -3,57 +3,57 @@ import java.util.Hashtable
 import kotlin.math.atan2
 
 class Player : ProjectedGroundDecor() {
-    @JvmField
+
     var anInt10516: Int = 0
-    @JvmField
+
     var aBoolean10517: Boolean = false
-    @JvmField
+
     var anInt10519: Int
     private var anInt10520 = 0
-    @JvmField
+
     var aBoolean10521: Boolean = false
-    @JvmField
+
     var anInt10522: Int
-    @JvmField
+
     var anInt10524: Int
-    @JvmField
+
     var anInt10526: Int
-    @JvmField
+
     var anInt10531: Int = 0
-    @JvmField
+
     var anInt10535: Int
-    @JvmField
+
     var aCompositeNpcModelBuilder_10536: CompositeNpcModelBuilder? = null
-    @JvmField
+
     var aString10537: String? = null
     private var aByte10538: Byte
-    @JvmField
+
     var aBoolean10539: Boolean = false
-    @JvmField
+
     var anInt10540: Int
-    @JvmField
+
     var anInt10542: Int = 0
-    @JvmField
+
     var aString10544: String? = null
-    @JvmField
+
     var anInt10549: Int = 0
-    @JvmField
+
     var aBoolean10551: Boolean = false
     private var aByte10552: Byte
-    @JvmField
+
     var anInt10553: Int = 0
-    @JvmField
+
     var aBoolean10554: Boolean = false
     private var aByte10556: Byte
-    @JvmField
+
     var anInt10557: Int = 0
-    @JvmField
+
     var anInt10558: Int = 255
-    @JvmField
+
     var anInt10560: Int
-    @JvmField
+
     var anInt10561: Int
-    @JvmField
+
     var anInt10564: Int = 0
     override fun method2387(var_renderer: Renderer?, i: Int) {
         anInt10533++
@@ -629,53 +629,53 @@ class Player : ProjectedGroundDecor() {
     }
 
     companion object {
-        @JvmField
+
         var anInt10518: Int = 0
-        @JvmField
+
         var anInt10523: Int = 0
-        @JvmField
+
         var anInt10525: Int = 0
-        @JvmField
+
         var anInt10527: Int = 0
-        @JvmField
+
         var anInt10528: Int = 0
-        @JvmField
+
         var anInt10529: Int = 0
-        @JvmField
+
         var anInt10530: Int = 0
-        @JvmField
+
         var anInt10532: Int = 0
-        @JvmField
+
         var anInt10533: Int = 0
-        @JvmField
+
         var anInt10534: Int = 0
-        @JvmField
+
         var anInt10541: Int = 0
-        @JvmField
+
         var anInt10543: Int = 0
-        @JvmField
+
         var anInt10545: Int = 0
-        @JvmField
+
         var anInt10546: Int = 0
-        @JvmField
+
         var anInt10547: Int = 0
-        @JvmField
+
         var anInt10548: Int = 0
-        @JvmField
+
         var anInt10550: Int = 0
-        @JvmField
+
         var anInt10555: Int = 0
-        @JvmField
+
         var anInt10559: Int = 0
-        @JvmField
+
         var anInt10562: Int = 0
-        @JvmField
+
         var anInt10563: Int = 0
-        @JvmField
+
         var aHashtable10565: Hashtable<Any?, Any?>? = Hashtable<Any?, Any?>()
-        @JvmField
+
         var anIntArray10566: IntArray? = null
-        @JvmField
+
         var anInt10567: Int = -1
 
         @JvmStatic

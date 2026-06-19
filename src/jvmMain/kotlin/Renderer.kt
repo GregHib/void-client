@@ -6,7 +6,7 @@ import java.awt.Rectangle
 import java.util.*
 
 abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: RenderConfig?) {
-    @JvmField
+
     var anInt4567: Int
     abstract fun method3624(i: Int, i_0_: Int): Marker?
 
@@ -313,44 +313,44 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
     }
 
     companion object {
-        @JvmField
+
         var anInt4561: Int = 0
-        @JvmField
+
         var anInt4562: Int = 0
-        @JvmField
+
         var anInt4563: Int = 0
-        @JvmField
+
         var anInt4565: Int = 0
-        @JvmField
+
         var anInt4566: Int = 0
-        @JvmField
+
         var anInt4568: Int = 0
-        @JvmField
+
         var anInt4569: Int = 0
-        @JvmField
+
         var anInt4570: Int = 0
         var aFontMetaRef_4571: FontMetaRef?
-        @JvmField
+
         var anInt4572: Int = 0
-        @JvmField
+
         var anInt4573: Int = 0
-        @JvmField
+
         var anInt4574: Int = 0
-        @JvmField
+
         var anInt4575: Int = 0
-        @JvmField
+
         var anInt4576: Int = 0
-        @JvmField
+
         var anInt4577: Int = 0
-        @JvmField
+
         var anIntArray4578: IntArray? = IntArray(200)
-        @JvmField
+
         var anInt4580: Int = 0
-        @JvmField
+
         var anInt4581: Int = 0
-        @JvmField
+
         var aFloat4582: Float = 0f
-        @JvmField
+
         var anInt4583: Int = 0
 
         @JvmStatic

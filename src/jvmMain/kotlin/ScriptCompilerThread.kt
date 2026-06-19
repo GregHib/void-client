@@ -127,23 +127,23 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
     }
 
     companion object {
-        @JvmField
+
         var anInt1726: Int = 0
-        @JvmField
+
         var aSpriteImage_1727: SpriteImage? = null
-        @JvmField
+
         var anInt1728: Int = 0
-        @JvmField
+
         var anInt1729: Int = 0
-        @JvmField
+
         var anInt1731: Int = 0
-        @JvmField
+
         var anInt1732: Int = 0
-        @JvmField
+
         var anInt1735: Int = 0
-        @JvmField
+
         var anInt1736: Int = 0
-        @JvmField
+
         var anInt1737: Int = 0
         @JvmStatic
         fun method1052(i: Byte) {

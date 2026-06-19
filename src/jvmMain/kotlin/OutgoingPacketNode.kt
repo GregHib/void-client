@@ -23,7 +23,7 @@ class OutgoingPacketNode : LinkedListNode() {
         var anInt7121: Int = 0
         var anInt7123: Int = 0
         var aInboundPacketHeader_7124: InboundPacketHeader? = InboundPacketHeader(62, 4)
-        @JvmField
+
         var anInt7125: Int = 1406
 
         @JvmStatic

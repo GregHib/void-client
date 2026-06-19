@@ -96,27 +96,27 @@ class GlEnvMappedWaterPass internal constructor(glRenderDevice: GlRenderDevice, 
     }
 
     companion object {
-        @JvmField
+
         var anInt7366: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_7367: InboundPacketHeader? = InboundPacketHeader(37, 7)
-        @JvmField
+
         var anInt7368: Int = 0
-        @JvmField
+
         var anInt7370: Int = 0
-        @JvmField
+
         var aJs5Archive_7371: Js5Archive? = null
-        @JvmField
+
         var anInt7372: Int = 0
-        @JvmField
+
         var anInt7374: Int = 0
-        @JvmField
+
         var anInt7377: Int = 0
-        @JvmField
+
         var aStringArray7378: Array<String?>? = null
-        @JvmField
+
         var anInt7379: Int = 0
-        @JvmField
+
         var anInt7380: Int = 0
 
         @JvmStatic

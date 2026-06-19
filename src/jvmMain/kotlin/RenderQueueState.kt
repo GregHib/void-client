@@ -5,7 +5,7 @@ import NamedTimedNode.Companion.method2516
 * Visit http://jode.sourceforge.net/
 */
 object RenderQueueState : ShaderObject() {
-    @JvmField
+
     var aRenderConfigFactory_6519: RenderConfigFactory? = RenderConfigFactory()
     var anInt6520: Int = 0
     var anInt6521: Int = 0

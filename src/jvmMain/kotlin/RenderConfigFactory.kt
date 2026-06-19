@@ -5,12 +5,12 @@ class RenderConfigFactory {
     companion object {
         var anInt2976: Int = 0
         var anInt2977: Int = 0
-        @JvmField
+
         var aJs5Archive_2978: Js5Archive? = null
-        @JvmField
+
         var aLocDefinitionCache_2979: LocDefinitionCache? = null
         var anInt2980: Int = 0
-        @JvmField
+
         var aVarbitDefLoader_2981: VarbitDefLoader? = null
 
         fun method1631(bool: Boolean): BufferPositionTracker {

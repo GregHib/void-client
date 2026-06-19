@@ -5,11 +5,11 @@ import ScrollingNoiseTexture.Companion.method558
 * Visit http://jode.sourceforge.net/
 */
 object MinimapDrawController {
-    @JvmField
+
     var aParticleProcessor_1607: ParticleProcessor? = method558(96)
-    @JvmField
+
     var anInt1608: Int = 0
-    @JvmField
+
     var anInt1609: Int = 0
 
     @JvmStatic

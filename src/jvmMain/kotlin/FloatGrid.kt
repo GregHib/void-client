@@ -12,11 +12,11 @@ class FloatGrid internal constructor(var anInt4974: Int, var anInt4978: Int) : M
     }
 
     companion object {
-        @JvmField
+
         var aJs5Archive_4975: Js5Archive? = null
         var anInt4976: Int = 0
         var anInt4977: Int = 0
-        @JvmField
+
         var anInt4979: Int = 0
         @JvmStatic
         fun method1583(i: Byte) {

@@ -8,72 +8,72 @@ import CachedRgbNoiseTexture.Companion.method566
 */
 open class MapRegionLoader {
     companion object {
-        @JvmField
+
         var aJs5Archive_1237: Js5Archive? = null
-        @JvmField
+
         var aConfigDefinitionLoader_1238: ConfigDefinitionLoader? = null
         private var aLocDefinitionCache_1239: LocDefinitionCache? = null
         private var aParticleDefLoader_1240: ParticleDefLoader? = null
         private var aHashtable_1241: Hashtable? = Hashtable(16)
-        @JvmField
+
         var aTextureDefinitionLoader_1242: TextureDefinitionLoader? = null
-        @JvmField
+
         var aClass348_Sub42_Sub14_1243: InterfaceComponentGroup? = null
-        @JvmField
+
         var anVarResolver_1244: VarResolver? = null
-        @JvmField
+
         var aSeqDefinitionCache_1245: SeqDefinitionCache? = null
-        @JvmField
+
         var aSmoothingBuffer_1246: SmoothingBuffer? = null
-        @JvmField
+
         var aFloat1247: Float = 0f
         private var aByteArray1248: ByteArray?
-        @JvmField
+
         var aFloat1249: Float = 0f
-        @JvmField
+
         var anInt1250: Int
-        @JvmField
+
         var aByteArrayArrayArray1251: Array<Array<ByteArray?>?>? = null
         private var aShortArray1252: ShortArray?
-        @JvmField
+
         var anInt1253: Int = (Math.random() * 17.0).toInt() - 8
-        @JvmField
+
         var aNodeDeque_1254: NodeDeque?
-        @JvmField
+
         var anInt1255: Int = 0
         private var aByteArray1256: ByteArray? = null
-        @JvmField
+
         var anInt1257: Int = 0
         private var aByteArray1258: ByteArray? = null
-        @JvmField
+
         var anInt1259: Int = 0
         private var anIntArray1260: IntArray? = null
         private var aShortArray1261: ShortArray? = null
-        @JvmField
+
         var anInt1262: Int = 0
-        @JvmField
+
         var anInt1263: Int = 0
         private var aByteArray1264: ByteArray? = null
-        @JvmField
+
         var anInt1265: Int = 0
-        @JvmField
+
         var anInt1266: Int = 0
-        @JvmField
+
         var anInt1267: Int = 0
-        @JvmField
+
         var anInt1268: Int = 0
         private var aDoublyLinkedNodeListArrayArrayArray1269: Array<Array<Array<DoublyLinkedNodeList?>?>?>? = null
         private var aShortArray1270: ShortArray? = null
         private var aHashtable_1271: Hashtable? = null
-        @JvmField
+
         var anInt1272: Int = 0
         private var aByteArray1273: ByteArray? = null
-        @JvmField
+
         var anInt1274: Int = 0
         private var aByteArray1275: ByteArray? = null
-        @JvmField
+
         var anInt1276: Int = 0
-        @JvmField
+
         var anInt1277: Int = 0
 
         @JvmStatic

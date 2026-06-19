@@ -24,17 +24,17 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
     }
 
     companion object {
-        @JvmField
+
         var anInt8624: Int = 0
-        @JvmField
+
         var anInt8625: Int = 0
-        @JvmField
+
         var anInt8627: Int = 0
-        @JvmField
+
         var anInt8628: Int = 0
-        @JvmField
+
         var anInt8630: Int = 0
-        @JvmField
+
         var anInt8632: Int = 0
 
         @JvmStatic

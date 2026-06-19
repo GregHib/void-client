@@ -112,25 +112,25 @@ class WeaveTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9267: Int = 0
-        @JvmField
+
         var anInt9268: Int = 0
-        @JvmField
+
         var anInt9270: Int = 0
-        @JvmField
+
         var anInt9271: Int = 0
-        @JvmField
+
         var anInt9272: Int = 0
-        @JvmField
+
         var anInt9273: Int = 0
-        @JvmField
+
         var aProjectileFactory_9274: ProjectileFactory?
-        @JvmField
+
         var aStringArray9275: Array<String?>? = arrayOfNulls<String>(100)
-        @JvmField
+
         var anInt9282: Int = 0
-        @JvmField
+
         var aLongArray9283: LongArray?
 
         @JvmStatic

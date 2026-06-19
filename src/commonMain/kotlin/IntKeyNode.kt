@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class IntKeyNode : LinkedListNode {
-    @JvmField
+
     var anInt6976: Int = 0
 
     constructor()

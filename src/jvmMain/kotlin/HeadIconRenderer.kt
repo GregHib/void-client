@@ -19,7 +19,7 @@ class HeadIconRenderer {
         var anIntArray2062: IntArray? = IntArray(4)
         var anInt2063: Int = 0
         var anInt2064: Int = 0
-        @JvmField
+
         var anInt2065: Int = 0
         var anInt2066: Int = 0
         var aInboundPacketHeader_2068: InboundPacketHeader? = InboundPacketHeader(68, 6)

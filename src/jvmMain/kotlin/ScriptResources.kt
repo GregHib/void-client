@@ -4,7 +4,7 @@
 object ScriptResources {
     var aFontMetaRef_2638: FontMetaRef? = FontMetaRef(59, 8)
     var aTextureDefinitionCache_2639: TextureDefinitionCache? = null
-    @JvmField
+
     var aAbstractModelRendererArray2640: Array<AbstractModelRenderer?>? = null
 
     @JvmStatic

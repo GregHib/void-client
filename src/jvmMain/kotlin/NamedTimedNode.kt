@@ -4,9 +4,9 @@ import GameClock.method599
 * Visit http://jode.sourceforge.net/
 */
 class NamedTimedNode internal constructor(@JvmField var aString8783: String?, i: Int) : SceneListNode() {
-    @JvmField
+
     var aShort8786: Short
-    @JvmField
+
     var anInt8787: Int = (method599(-92) / 1000L).toInt()
 
     init {
@@ -16,7 +16,7 @@ class NamedTimedNode internal constructor(@JvmField var aString8783: String?, i:
     companion object {
         var anInt8782: Int = 0
         var aFloat8784: Float = 0f
-        @JvmField
+
         var anIntArray8785: IntArray? = null
         var anInt8788: Int = 0
 

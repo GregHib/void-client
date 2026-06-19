@@ -66,17 +66,17 @@ class GlShadowRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
     }
 
     companion object {
-        @JvmField
+
         var anInt7381: Int = 0
-        @JvmField
+
         var anInt7383: Int = 0
-        @JvmField
+
         var anInt7384: Int = 0
-        @JvmField
+
         var anInt7386: Int = 0
-        @JvmField
+
         var anInt7387: Int = 0
-        @JvmField
+
         var anInt7389: Int = 0
 
     }

@@ -7,7 +7,7 @@ import ChatCommandProcessor.method705
 object ItemActionPacketSender {
     var anInt2108: Int = 0
     var aFontMetaRef_2109: FontMetaRef? = FontMetaRef(19, -1)
-    @JvmField
+
     var aBoolean2110: Boolean = false
 
     @JvmStatic

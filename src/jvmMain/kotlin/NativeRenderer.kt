@@ -20,7 +20,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aLong7905: Long = 0
     private var aCanvas7910: Canvas? = null
     var anObject7919: Any? = null
-    @JvmField
+
     var aNativeInterface7924: NativeInterface? = null
     var aCanvas7925: Canvas? = null
     private var aNodeDeque_7927: NodeDeque? = NodeDeque()
@@ -38,9 +38,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aBoolean8069: Boolean = true
     var aClass101_Sub2_8074: FloatCameraTransform = FloatCameraTransform()
     var anInt8079: Int = 0
-    @JvmField
+
     var aClass101_Sub2_8080: FloatCameraTransform = FloatCameraTransform()
-    @JvmField
+
     var aClass101_Sub2_8082: FloatCameraTransform = FloatCameraTransform()
     var aClass101_Sub2_8083: FloatCameraTransform = FloatCameraTransform()
     private val aClass101_Sub2_8084 = FloatCameraTransform()
@@ -48,16 +48,16 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     lateinit var aRenderConfigFactoryArray8086: Array<RenderConfigFactory?>
     var aFloat8087: Float = 1.0f
     private var aStream8088: Stream?
-    @JvmField
+
     var aFloat8089: Float = 3584.0f
     var anInt8090: Int = 0
     var anInt8091: Int
     lateinit var aRenderConfigFactoryArray8092: Array<RenderConfigFactory?>
-    @JvmField
+
     var aFloat8093: Float = 1.0f
-    @JvmField
+
     var anInt8094: Int = 0
-    @JvmField
+
     var anInt8095: Int = 50
     var anInt8096: Int = 0
     private var aBoolean8097 = false
@@ -66,12 +66,12 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     private var anInt8100 = 0
     var aBoolean8101: Boolean = false
     var aFloatArray8102: FloatArray
-    @JvmField
+
     var aFloat8103: Float = 0f
     private var anInt8104: Int
     var anInt8105: Int = 0
     var anInt8106: Int = 0
-    @JvmField
+
     var anInt8107: Int = 3
     private var anInt8108 = 0
     var anInt8109: Int = 0
@@ -79,7 +79,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     private val aFloatArray8111: FloatArray
     private var aBoolean8112 = false
     lateinit var aConfigFlagUtilArray8113: Array<ConfigFlagUtil?>
-    @JvmField
+
     var anInt8114: Int = 0
     var aFloat8115: Float = 0f
     var aBoolean8116: Boolean = true
@@ -91,21 +91,21 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var anInt8122: Int = 0
     var aBoolean8123: Boolean = false
     var aBoolean8124: Boolean = true
-    @JvmField
+
     var anInt8125: Int = 8
-    @JvmField
+
     var aFloat8126: Float = 0f
     private var aBoolean8127 = false
     private var aFloat8128 = 0f
-    @JvmField
+
     var anInt8129: Int = 512
-    @JvmField
+
     var anInt8130: Int = 0
     lateinit var aClass101_Sub2Array8131: Array<FloatCameraTransform?>
     lateinit var aClass348_Sub1Array8132: Array<AbstractTileShape?>
-    @JvmField
+
     var anInt8133: Int = 0
-    @JvmField
+
     var anInt8134: Int = 512
     var aFloatArray8135: FloatArray
     private var aGroundDecorRenderer_8136: GroundDecorRenderer? = null
@@ -130,9 +130,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     private var aFloat8155 = 1.0f
     private var anInt8156 = 0
     private var aFloatArray8157: FloatArray
-    @JvmField
+
     var aFloat8158: Float = 0f
-    @JvmField
+
     var aBoolean8159: Boolean = false
     var aBoolean8160: Boolean = false
     private var anInt8161 = 0
@@ -143,7 +143,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     private var aFloat8166 = 0f
     private var anInt8167: Int
     var aFloat8168: Float
-    @JvmField
+
     var aFloat8169: Float = 3584.0f
     var aFloatArray8170: FloatArray
     private var aClass299_Sub2_8171: TextureCubeProvider? = null
@@ -153,7 +153,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var anInt8175: Int
     private var aBoolean8176 = false
     private var anInt8177: Int
-    @JvmField
+
     var anInt8178: Int = 0
     private var anInt8179: Int
     var aFloat8180: Float
@@ -161,43 +161,43 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     var aBoolean8182: Boolean = false
     var anInt8183: Int
     var aSingletonMarker_8184: SingletonMarker
-    @JvmField
+
     var aFloat8185: Float = 0f
     var aFloat8186: Float
-    @JvmField
+
     var aClass64_Sub2_8187: Direct3dModel? = null
-    @JvmField
+
     var aClass64_Sub2_8188: Direct3dModel? = null
-    @JvmField
+
     var aClass64_Sub2_8189: Direct3dModel? = null
     private var aModelBatchBase_8190: ModelBatchBase? = null
-    @JvmField
+
     var aModelBatchBase_8191: ModelBatchBase? = null
-    @JvmField
+
     var aClass64_Sub2_8192: Direct3dModel? = null
     private var anInterface5_Impl1_8193: VertexBufferResource? = null
-    @JvmField
+
     var aClass64_Sub2_8194: Direct3dModel? = null
     private var anInterface5_Impl2_8195: IndexBufferResource? = null
     private val aClass101_Sub2_8196: FloatCameraTransform
     private var aModelBatchBase_8197: ModelBatchBase? = null
-    @JvmField
+
     var aClass64_Sub2_8198: Direct3dModel? = null
-    @JvmField
+
     var aClass64_Sub2_8199: Direct3dModel? = null
-    @JvmField
+
     var aClass64_Sub2_8200: Direct3dModel? = null
     private var anInterface5_Impl1_8201: VertexBufferResource? = null
-    @JvmField
+
     var aModelBatchBase_8202: ModelBatchBase? = null
     private var anInterface5_Impl1_8203: VertexBufferResource? = null
     var aModelBatchBase_8204: ModelBatchBase? = null
     private var aModelBatchBase_8205: ModelBatchBase? = null
-    @JvmField
+
     var aClass64_Sub2_8206: Direct3dModel? = null
-    @JvmField
+
     var aClass64_Sub2_8207: Direct3dModel? = null
-    @JvmField
+
     var aModelBatchBase_8208: ModelBatchBase? = null
     var aBoolean8209: Boolean = false
     private val anInt8210 = 0
@@ -2533,355 +2533,355 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     }
 
     companion object {
-        @JvmField
+
         var anInt7884: Int = 0
-        @JvmField
+
         var anInt7885: Int = 0
-        @JvmField
+
         var anInt7886: Int = 0
-        @JvmField
+
         var anInt7887: Int = 0
-        @JvmField
+
         var anInt7888: Int = 0
-        @JvmField
+
         var anInt7889: Int = 0
-        @JvmField
+
         var anInt7890: Int = 0
-        @JvmField
+
         var anInt7892: Int = 0
-        @JvmField
+
         var anInt7893: Int = 0
-        @JvmField
+
         var anInt7894: Int = 0
-        @JvmField
+
         var anInt7895: Int = 0
-        @JvmField
+
         var anInt7896: Int = 0
-        @JvmField
+
         var anInt7897: Int = 0
-        @JvmField
+
         var anInt7898: Int = 0
-        @JvmField
+
         var anInt7899: Int = 0
-        @JvmField
+
         var anInt7900: Int = 0
-        @JvmField
+
         var anInt7901: Int = 0
-        @JvmField
+
         var anInt7902: Int = 0
-        @JvmField
+
         var anInt7903: Int = 0
-        @JvmField
+
         var anInt7904: Int = 0
-        @JvmField
+
         var anInt7906: Int = 0
-        @JvmField
+
         var anInt7907: Int = 0
-        @JvmField
+
         var anInt7908: Int = 0
-        @JvmField
+
         var anInt7909: Int = 0
-        @JvmField
+
         var anInt7911: Int = 0
-        @JvmField
+
         var anInt7912: Int = 0
-        @JvmField
+
         var anInt7913: Int = 0
-        @JvmField
+
         var anInt7914: Int = 0
-        @JvmField
+
         var anInt7915: Int = 0
-        @JvmField
+
         var anInt7916: Int = 0
-        @JvmField
+
         var anInt7917: Int = 0
-        @JvmField
+
         var anInt7918: Int = 0
-        @JvmField
+
         var anInt7920: Int = 0
-        @JvmField
+
         var anInt7921: Int = 0
-        @JvmField
+
         var anInt7922: Int = 0
-        @JvmField
+
         var anInt7923: Int = 0
-        @JvmField
+
         var anInt7926: Int = 0
-        @JvmField
+
         var anInt7928: Int = 0
-        @JvmField
+
         var anInt7929: Int = 0
-        @JvmField
+
         var anInt7930: Int = 0
-        @JvmField
+
         var anInt7932: Int = 0
-        @JvmField
+
         var anInt7933: Int = 0
-        @JvmField
+
         var anInt7934: Int = 0
-        @JvmField
+
         var anInt7935: Int = 0
-        @JvmField
+
         var anInt7936: Int = 0
-        @JvmField
+
         var anInt7938: Int = 0
-        @JvmField
+
         var anInt7939: Int = 0
-        @JvmField
+
         var anInt7940: Int = 0
-        @JvmField
+
         var anInt7941: Int = 0
-        @JvmField
+
         var anInt7942: Int = 0
-        @JvmField
+
         var anInt7943: Int = 0
-        @JvmField
+
         var anInt7944: Int = 0
-        @JvmField
+
         var anInt7945: Int = 0
-        @JvmField
+
         var anInt7946: Int = 0
-        @JvmField
+
         var anInt7947: Int = 0
-        @JvmField
+
         var anInt7948: Int = 0
-        @JvmField
+
         var anInt7949: Int = 0
-        @JvmField
+
         var anInt7950: Int = 0
-        @JvmField
+
         var anInt7951: Int = 0
-        @JvmField
+
         var anInt7952: Int = 0
-        @JvmField
+
         var anInt7953: Int = 0
-        @JvmField
+
         var anInt7954: Int = 0
-        @JvmField
+
         var anInt7955: Int = 0
-        @JvmField
+
         var anInt7956: Int = 0
-        @JvmField
+
         var anInt7957: Int = 0
-        @JvmField
+
         var anInt7959: Int = 0
-        @JvmField
+
         var anInt7960: Int = 0
-        @JvmField
+
         var anInt7961: Int = 0
-        @JvmField
+
         var anInt7963: Int = 0
-        @JvmField
+
         var anInt7964: Int = 0
-        @JvmField
+
         var anInt7965: Int = 0
-        @JvmField
+
         var anInt7966: Int = 0
-        @JvmField
+
         var anInt7967: Int = 0
-        @JvmField
+
         var anInt7968: Int = 0
-        @JvmField
+
         var anInt7969: Int = 0
-        @JvmField
+
         var anInt7970: Int = 0
-        @JvmField
+
         var anInt7971: Int = 0
-        @JvmField
+
         var anInt7972: Int = 0
-        @JvmField
+
         var anInt7973: Int = 0
-        @JvmField
+
         var anInt7975: Int = 0
-        @JvmField
+
         var anInt7976: Int = 0
-        @JvmField
+
         var anInt7977: Int = 0
-        @JvmField
+
         var anInt7978: Int = 0
-        @JvmField
+
         var anInt7979: Int = 0
-        @JvmField
+
         var anInt7980: Int = 0
-        @JvmField
+
         var anInt7981: Int = 0
-        @JvmField
+
         var anInt7982: Int = 0
-        @JvmField
+
         var anInt7983: Int = 0
-        @JvmField
+
         var anInt7984: Int = 0
-        @JvmField
+
         var anInt7985: Int = 0
-        @JvmField
+
         var anInt7986: Int = 0
-        @JvmField
+
         var anInt7988: Int = 0
-        @JvmField
+
         var anInt7989: Int = 0
-        @JvmField
+
         var anInt7990: Int = 0
-        @JvmField
+
         var anInt7991: Int = 0
-        @JvmField
+
         var anInt7992: Int = 0
-        @JvmField
+
         var anInt7993: Int = 0
-        @JvmField
+
         var anInt7994: Int = 0
-        @JvmField
+
         var anInt7995: Int = 0
-        @JvmField
+
         var anInt7996: Int = 0
-        @JvmField
+
         var anInt7997: Int = 0
-        @JvmField
+
         var anInt7998: Int = 0
-        @JvmField
+
         var anInt7999: Int = 0
-        @JvmField
+
         var anInt8000: Int = 0
-        @JvmField
+
         var anInt8001: Int
-        @JvmField
+
         var anInt8002: Int = 0
-        @JvmField
+
         var anInt8003: Int = 0
-        @JvmField
+
         var anInt8004: Int = 0
-        @JvmField
+
         var anInt8005: Int = 0
-        @JvmField
+
         var anInt8006: Int = 0
-        @JvmField
+
         var anInt8007: Int = 0
-        @JvmField
+
         var anInt8008: Int = 0
-        @JvmField
+
         var anInt8009: Int = 0
-        @JvmField
+
         var anInt8010: Int = 0
-        @JvmField
+
         var anInt8011: Int = 0
-        @JvmField
+
         var anInt8012: Int = 0
-        @JvmField
+
         var anInt8013: Int = 0
-        @JvmField
+
         var anInt8016: Int = 0
-        @JvmField
+
         var anInt8017: Int = 0
-        @JvmField
+
         var anInt8018: Int = 0
-        @JvmField
+
         var aStringArray8019: Array<String?>? = arrayOfNulls<String>(5)
-        @JvmField
+
         var anInt8021: Int = 0
-        @JvmField
+
         var anInt8022: Int = 0
-        @JvmField
+
         var anInt8023: Int = 0
-        @JvmField
+
         var anInt8024: Int = 0
-        @JvmField
+
         var anInt8025: Int = 0
-        @JvmField
+
         var anInt8026: Int = 0
-        @JvmField
+
         var anInt8027: Int = 0
-        @JvmField
+
         var anInt8028: Int = 0
-        @JvmField
+
         var anInt8029: Int = 0
-        @JvmField
+
         var anInt8030: Int = 0
-        @JvmField
+
         var anInt8031: Int = 0
-        @JvmField
+
         var anInt8032: Int = 0
-        @JvmField
+
         var anInt8033: Int = 0
-        @JvmField
+
         var anInt8034: Int = 0
-        @JvmField
+
         var anInt8035: Int = 0
-        @JvmField
+
         var anInt8036: Int = 0
-        @JvmField
+
         var anInt8037: Int = 0
-        @JvmField
+
         var anInt8038: Int = 0
-        @JvmField
+
         var anInt8040: Int = 0
-        @JvmField
+
         var anInt8041: Int = 0
-        @JvmField
+
         var anInt8042: Int = 0
-        @JvmField
+
         var anInt8043: Int = 0
-        @JvmField
+
         var anInt8044: Int = 0
-        @JvmField
+
         var anInt8045: Int = 0
-        @JvmField
+
         var anInt8046: Int = 0
-        @JvmField
+
         var anInt8047: Int = 0
-        @JvmField
+
         var anInt8048: Int = 0
-        @JvmField
+
         var anInt8049: Int = 0
-        @JvmField
+
         var anInt8050: Int = 0
-        @JvmField
+
         var anInt8051: Int = 0
-        @JvmField
+
         var anInt8052: Int = 0
-        @JvmField
+
         var anInt8053: Int = 0
-        @JvmField
+
         var anInt8054: Int = 0
-        @JvmField
+
         var anInt8055: Int = 0
-        @JvmField
+
         var anInt8056: Int = 0
-        @JvmField
+
         var anInt8057: Int = 0
-        @JvmField
+
         var anInt8058: Int = 0
-        @JvmField
+
         var anInt8059: Int = 0
-        @JvmField
+
         var anInt8060: Int = 0
-        @JvmField
+
         var anInt8061: Int = 0
-        @JvmField
+
         var anInt8064: Int = 0
-        @JvmField
+
         var anInt8065: Int = 0
-        @JvmField
+
         var anInt8066: Int = 0
-        @JvmField
+
         var anInt8067: Int = 0
-        @JvmField
+
         var anInt8068: Int = 0
-        @JvmField
+
         var anInt8070: Int = 0
-        @JvmField
+
         var anInt8071: Int = 0
-        @JvmField
+
         var anInt8072: Int = 0
-        @JvmField
+
         var anInt8073: Int = 0
-        @JvmField
+
         var anInt8075: Int = 0
-        @JvmField
+
         var anInt8076: Int = 0
-        @JvmField
+
         var anInt8077: Int = 0
-        @JvmField
+
         var anInt8078: Int = 0
-        @JvmField
+
         var anInt8081: Int = 0
 
         /*synthetic*/

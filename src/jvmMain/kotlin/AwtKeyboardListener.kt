@@ -180,37 +180,37 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
     }
 
     companion object {
-        @JvmField
+
         var anInt6525: Int = 0
-        @JvmField
+
         var anInt6526: Int = 0
-        @JvmField
+
         var anInt6527: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_6528: InboundPacketHeader? = InboundPacketHeader(14, 2)
-        @JvmField
+
         var anInt6529: Int = 0
-        @JvmField
+
         var anInt6530: Int = 0
-        @JvmField
+
         var anInt6531: Int = 0
-        @JvmField
+
         var anInt6532: Int = 0
-        @JvmField
+
         var anInt6533: Int = 0
-        @JvmField
+
         var anInt6534: Int = 0
-        @JvmField
+
         var anInt6535: Int = 0
-        @JvmField
+
         var anInt6536: Int = 0
-        @JvmField
+
         var anInt6537: Int = 0
-        @JvmField
+
         var anInt6538: Int = 0
-        @JvmField
+
         var anInt6539: Int = 0
-        @JvmField
+
         var anInt6540: Int = 0
         @JvmStatic
         fun method2703(i: Int, i_6_: Int, i_7_: Int, i_8_: Byte) {

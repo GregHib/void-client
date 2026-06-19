@@ -5,16 +5,16 @@ import java.awt.Frame
  * Class56
  */
 class ConnectionStateType private constructor(i: Int, localizedText: LocalizedText?, localizedText_5_: LocalizedText?, i_6_: Int, i_7_: Int, bool: Boolean, bool_8_: Boolean) {
-    @JvmField
+
     var aLocalizedText_1012: LocalizedText? = null
     var aBoolean1013: Boolean = false
     var aLocalizedText_1015: LocalizedText? = null
-    @JvmField
+
     var aBoolean1016: Boolean = false
     private val anInt1017: Int
-    @JvmField
+
     var anInt1021: Int = 0
-    @JvmField
+
     var anInt1025: Int = 0
 
     private constructor(i: Int, localizedText: LocalizedText?, i_0_: Int) : this(i, localizedText, localizedText, i_0_, i_0_, true, false)
@@ -47,57 +47,57 @@ class ConnectionStateType private constructor(i: Int, localizedText: LocalizedTe
     }
 
     companion object {
-        @JvmField
+
         var anInt1014: Int = 0
-        @JvmField
+
         var aConnectionStateType_1018: ConnectionStateType? = ConnectionStateType(0, LocalizedText.aLocalizedText_3499, LocalizedText.aLocalizedText_3499, 0, 1)
-        @JvmField
+
         var anInt1019: Int = 0
-        @JvmField
+
         var anInt1020: Int = 0
-        @JvmField
+
         var anInt1022: Int = 0
-        @JvmField
+
         var aConnectionStateType_1023: ConnectionStateType? = ConnectionStateType(1, LocalizedText.aLocalizedText_3499, 2)
-        @JvmField
+
         var aConnectionStateType_1024: ConnectionStateType? = ConnectionStateType(2, LocalizedText.aLocalizedText_3499, LocalizedText.aLocalizedText_3499, 2, 3)
-        @JvmField
+
         var aConnectionStateType_1026: ConnectionStateType? = ConnectionStateType(3, LocalizedText.aLocalizedText_3499, 3)
-        @JvmField
+
         var aConnectionStateType_1027: ConnectionStateType? = ConnectionStateType(4, LocalizedText.aLocalizedText_3499, LocalizedText.aLocalizedText_3499, 3, 4)
-        @JvmField
+
         var aConnectionStateType_1028: ConnectionStateType? = ConnectionStateType(5, LocalizedText.aLocalizedText_3499, 4)
-        @JvmField
+
         var aConnectionStateType_1029: ConnectionStateType? = ConnectionStateType(6, LocalizedText.aLocalizedText_3499, 4)
-        @JvmField
+
         var aConnectionStateType_1030: ConnectionStateType? = ConnectionStateType(7, LocalizedText.aLocalizedText_3499, LocalizedText.aLocalizedText_3499, 4, 5)
-        @JvmField
+
         var aConnectionStateType_1031: ConnectionStateType? = ConnectionStateType(8, LocalizedText.aLocalizedText_3499, LocalizedText.aLocalizedText_3499, 5, 98, true, true) //
-        @JvmField
+
         var aConnectionStateType_1032: ConnectionStateType? = ConnectionStateType(9, LocalizedText.aLocalizedText_3499, 99)
-        @JvmField
+
         var aConnectionStateType_1033: ConnectionStateType? = ConnectionStateType(10, LocalizedText.aLocalizedText_3499, 100)
-        @JvmField
+
         var aConnectionStateType_1034: ConnectionStateType? = ConnectionStateType(11, LocalizedText.aLocalizedText_3500, LocalizedText.aLocalizedText_3500, 0, 92, true, true)
-        @JvmField
+
         var aConnectionStateType_1035: ConnectionStateType? = ConnectionStateType(12, LocalizedText.aLocalizedText_3500, LocalizedText.aLocalizedText_3500, 92, 92)
         private var aConnectionStateType_1036: ConnectionStateType? = ConnectionStateType(13, LocalizedText.aLocalizedText_3500, LocalizedText.aLocalizedText_3500, 92, 93)
-        @JvmField
+
         var aConnectionStateType_1037: ConnectionStateType? = ConnectionStateType(14, LocalizedText.aLocalizedText_3500, LocalizedText.aLocalizedText_3500, 94, 95)
-        @JvmField
+
         var aConnectionStateType_1038: ConnectionStateType? = ConnectionStateType(15, LocalizedText.aLocalizedText_3500, LocalizedText.aLocalizedText_3500, 96, 97)
-        @JvmField
+
         var aConnectionStateType_1039: ConnectionStateType? = ConnectionStateType(16, LocalizedText.aLocalizedText_3500, 97)
-        @JvmField
+
         var aConnectionStateType_1040: ConnectionStateType? = ConnectionStateType(17, LocalizedText.aLocalizedText_3500, 97)
-        @JvmField
+
         var aConnectionStateType_1041: ConnectionStateType? = ConnectionStateType(18, LocalizedText.aLocalizedText_3500, 100)
-        @JvmField
+
         var aConnectionStateType_1042: ConnectionStateType? = ConnectionStateType(19, LocalizedText.aLocalizedText_3500, 100)
         var aConnectionStateType_1043: ConnectionStateType? = ConnectionStateType(20, LocalizedText.aLocalizedText_3500, 100)
-        @JvmField
+
         var anInt1044: Int = 0
-        @JvmField
+
         var anIntArray1045: IntArray? = IntArray(2)
 
         @JvmStatic

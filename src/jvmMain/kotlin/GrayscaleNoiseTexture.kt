@@ -67,28 +67,28 @@ open class GrayscaleNoiseTexture(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_2
     }
 
     companion object {
-        @JvmField
+
         var anInt5277: Int = 0
-        @JvmField
+
         var anInt5281: Int = 0
-        @JvmField
+
         var anInt5282: Int = 0
-        @JvmField
+
         var anInt5286: Int = 0
         var aFontMetaRef_5288: FontMetaRef? = FontMetaRef(7, 6)
-        @JvmField
+
         var anInt5291: Int = 0
-        @JvmField
+
         var anInt5292: Int = 0
         var anInt5293: Int = 0
-        @JvmField
+
         var aAbstractModelRendererArray5294: Array<AbstractModelRenderer?>? = null
-        @JvmField
+
         var anInt5295: Int = 0
         var aPrivilegedOperationWorker_5297: PrivilegedOperationWorker? = null
-        @JvmField
+
         var aFloat5299: Float = 0f
-        @JvmField
+
         var aBoolean5300: Boolean = false
 
         fun method551(i: Int, i_2_: Int, i_3_: Int, fs: FloatArray, i_4_: Int, i_5_: Int, i_6_: Int) {

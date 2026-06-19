@@ -9,17 +9,17 @@ class CameraNodeList {
 
     companion object {
         var aLong1739: Long = 0L
-        @JvmField
+
         var anInt1740: Int = 0
-        @JvmField
+
         var anInt1741: Int = 0
-        @JvmField
+
         var anInt1742: Int = 0
-        @JvmField
+
         var aJs5Archive_1743: Js5Archive? = null
-        @JvmField
+
         var aAbstractModelRendererArray1744: Array<AbstractModelRenderer?>? = null
-        @JvmField
+
         var anInt1745: Int = 100
 
         fun method1056(i: Int, i_0_: Int, c: Char): Int {

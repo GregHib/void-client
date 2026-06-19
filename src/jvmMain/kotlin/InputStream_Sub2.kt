@@ -9,16 +9,16 @@ class InputStream_Sub2 : InputStream() {
     }
 
     companion object {
-        @JvmField
+
         var anInt80: Int = 0
-        @JvmField
+
         var anInt81: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_82: InboundPacketHeader? = InboundPacketHeader(71, 7)
-        @JvmField
+
         var aDoublyLinkedNodeList_83: DoublyLinkedNodeList? = DoublyLinkedNodeList()
         var aFloatArray84: FloatArray? = FloatArray(4)
-        @JvmField
+
         var anInt85: Int = 0
 
         @JvmStatic

@@ -7,7 +7,7 @@ import ShadowQualityOptionState.Companion.method1788
 object SettingsCrcWriter {
     var anInt2121: Int = 0
     var anInt2122: Int = 0
-    @JvmField
+
     var aAbstractCameraTransform_2123: AbstractCameraTransform? = null
 
     fun method1244(i: Int, class348_sub49_sub2: CipheredPacketBuffer) {

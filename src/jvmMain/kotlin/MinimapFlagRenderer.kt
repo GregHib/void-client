@@ -12,16 +12,16 @@ import WhirlpoolHash.Companion.method1752
 * Visit http://jode.sourceforge.net/
 */
 object MinimapFlagRenderer {
-    @JvmField
+
     var anInt1794: Int
-    @JvmField
+
     var anInt1795: Int = 0
     var anInt1796: Int = 0
-    @JvmField
+
     var anInt1797: Int = 0
-    @JvmField
+
     var anInt1798: Int = 0
-    @JvmField
+
     var aAbstractModelRenderer_1800: AbstractModelRenderer? = null
 
     @JvmStatic

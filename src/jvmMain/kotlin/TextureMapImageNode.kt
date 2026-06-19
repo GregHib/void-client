@@ -72,15 +72,15 @@ class TextureMapImageNode : AbstractProceduralTextureNode(0, false) {
     }
 
     companion object {
-        @JvmField
+
         var anInt9373: Int = 0
-        @JvmField
+
         var anInt9376: Int = 0
-        @JvmField
+
         var anInt9378: Int = 0
-        @JvmField
+
         var anInt9381: Int = 0
-        @JvmField
+
         var anInt9382: Int = 0
 
         var anInt9371: Int = 0

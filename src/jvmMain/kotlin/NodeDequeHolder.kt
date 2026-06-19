@@ -5,23 +5,23 @@ import SphereMapMaterialPass.Companion.method2174
 * Visit http://jode.sourceforge.net/
 */
 class NodeDequeHolder {
-    @JvmField
+
     var aSceneNodeDeque_1569: SceneNodeDeque = SceneNodeDeque()
 
     companion object {
-        @JvmField
+
         var aClass348_Sub16_Sub3_1564: MidiSequencePlayer? = null
-        @JvmField
+
         var anInt1565: Int = 0
-        @JvmField
+
         var anIntArrayArray1566: Array<IntArray>? = arrayOf(intArrayOf(0, 2, 4, 6), intArrayOf(6, 0, 2, 3, 5, 3), intArrayOf(6, 0, 2, 4), intArrayOf(2, 5, 6, 1), intArrayOf(0, 2, 6), intArrayOf(6, 0, 2), intArrayOf(5, 6, 0, 1, 2, 4), intArrayOf(7, 7, 1, 2, 4, 6), intArrayOf(2, 4, 4, 7), intArrayOf(6, 6, 4, 0, 1, 1, 3, 3), intArrayOf(0, 2, 2, 6, 6, 4), intArrayOf(0, 2, 2, 3, 7, 0, 4, 3), intArrayOf(0, 2, 4, 6))
-        @JvmField
+
         var anInt1567: Int = 0
-        @JvmField
+
         var anInt1568: Int = 0
-        @JvmField
+
         var anInt1570: Int = 0
-        @JvmField
+
         var anInt1571: Int = 0
 
         fun method877(i: Int, i_0_: Int, i_1_: Byte): Boolean {

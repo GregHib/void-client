@@ -2,7 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 object ShaderStateVariant : ShaderState() {
-    @JvmField
+
     var aFontMetaRef_8798: FontMetaRef? = FontMetaRef(69, -1)
     var anInt8799: Int = 0
 

@@ -324,23 +324,23 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
     }
 
     companion object {
-        @JvmField
+
         var aFontMetaRef_9189: FontMetaRef? = FontMetaRef(28, 2)
-        @JvmField
+
         var anInt9190: Int = 0
-        @JvmField
+
         var anInt9191: Int = 0
-        @JvmField
+
         var anInt9192: Int = 0
-        @JvmField
+
         var anInt9193: Int = 0
-        @JvmField
+
         var aSeqDefinitionCache_9195: SeqDefinitionCache? = null
-        @JvmField
+
         var anInt9196: Int = 0
-        @JvmField
+
         var aInboundPacketHeader_9197: InboundPacketHeader? = InboundPacketHeader(61, -1)
-        @JvmField
+
         var anInt9198: Int = 0
         var anInt9200: Int = 0
 

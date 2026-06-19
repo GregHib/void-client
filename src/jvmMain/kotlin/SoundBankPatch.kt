@@ -394,13 +394,13 @@ class SoundBankPatch : LinkedListNode {
     }
 
     companion object {
-        @JvmField
+
         var aBoolean6788: Boolean = false
         var anInt6790: Int = 0
         var aLong6791: Long = 0L
         var anInt6794: Int = 0
         var anInt6801: Int = 0
-        @JvmField
+
         var aTextureAtlasStateArray6802s: Array<TextureAtlasState?>? = arrayOfNulls<TextureAtlasState>(2048)
         var anInt6803: Int = 0
 

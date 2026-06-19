@@ -14,9 +14,9 @@ import kotlin.math.abs
 * Visit http://jode.sourceforge.net/
 */
 class RegionSceneShifter : LinkedListNode() {
-    @JvmField
+
     var anInt7050: Int = 0
-    @JvmField
+
     var anInt7053: Int = 0
 
     companion object {

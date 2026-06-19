@@ -11,11 +11,11 @@ object FileIoUtil {
     var anInt4092: Int = 0
     var anInt4093: Int = 0
     var aFontMetaRef_4094: FontMetaRef? = FontMetaRef(47, 4)
-    @JvmField
+
     var anInt4095: Int = 0
-    @JvmField
+
     var anIntArray4096: IntArray? = IntArray(32)
-    @JvmField
+
     var anIntArray4097: IntArray? = IntArray(2)
     var aRgbColorPalette_4098: RgbColorPalette? = RgbColorPalette(4, 7)
 

@@ -8,20 +8,20 @@ import java.io.IOException
 */
 object RegionSceneLoader {
     var anInt3696: Int = 0
-    @JvmField
+
     var aBoolean3697: Boolean = false
     var anInt3698: Int = 0
-    @JvmField
+
     var anInt3699: Int
-    @JvmField
+
     var aByteArrayArrayArray3700: Array<Array<ByteArray?>?>? = null
-    @JvmField
+
     var aWidgetComponent_3701: WidgetComponent? = null
     var anInt3702: Int = 0
     var anInt3703: Int = 0
-    @JvmField
+
     var anInt3704: Int = 0
-    @JvmField
+
     var aNodeDeque_3705: NodeDeque? = null
 
     @JvmStatic

@@ -17,11 +17,11 @@ import withLock
 */
 class i : AbstractModel, Disposable {
     private val anOa5117: oa
-    @JvmField
+
     var aWidgetRedrawRegionArray5118: Array<WidgetRedrawRegion?>? = null
-    @JvmField
+
     var nativeid: Long = 0
-    @JvmField
+
     var aModelFacePriorityNodeArray5119: Array<ModelFacePriorityNode?>? = null
     private val aYa5120: ya?
 

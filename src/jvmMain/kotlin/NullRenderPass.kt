@@ -44,21 +44,21 @@ class NullRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abstrac
     }
 
     companion object {
-        @JvmField
+
         var anInt7277: Int = 0
-        @JvmField
+
         var anInt7278: Int = 0
-        @JvmField
+
         var anInt7279: Int = 0
-        @JvmField
+
         var anInt7280: Int = 0
-        @JvmField
+
         var anInt7282: Int = 0
-        @JvmField
+
         var anInt7283: Int = 0
-        @JvmField
+
         var anInt7284: Int = 0
-        @JvmField
+
         var anInt7285: Int = 0
 
 
