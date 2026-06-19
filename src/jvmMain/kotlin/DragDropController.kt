@@ -27,13 +27,14 @@ class DragDropController {
             if (bool != false) method2708(57)
         }
 
+        var anInt6392: Int = 0
         @JvmStatic
         fun method2708(i: Int) {
             ConfigFlagUtil.method1916(-9343, RegionSceneLoader.aWidgetComponent_3701!!)
             anInt4280++
-            SceneEntity.anInt6392++
+            DragDropController.anInt6392++
             if (!MinimapSquareDrawer.aBoolean5221 || !ScrollingWidgetComponentNode.aBoolean8386) {
-                if (SceneEntity.anInt6392 > 1) RegionSceneLoader.aWidgetComponent_3701 = null
+                if (DragDropController.anInt6392 > 1) RegionSceneLoader.aWidgetComponent_3701 = null
             } else {
                 var i_0_ = 0
                 var i_1_ = 0
@@ -53,7 +54,7 @@ class DragDropController {
                     val i_4_ = (-BoxBlurTextureNode.anInt9461 + (i_2_ - -CalendarUtil.aWidgetComponent_4130!!.anInt747))
                     val i_5_ = (-DragDropController.anInt558 + (i_3_ + CalendarUtil.aWidgetComponent_4130!!.anInt755))
                     if (GlTexture1D.aInputTracker_8552!!.method3593(94)) {
-                        if (RegionSceneLoader.aWidgetComponent_3701!!.anInt703 < SceneEntity.anInt6392) {
+                        if (RegionSceneLoader.aWidgetComponent_3701!!.anInt703 < DragDropController.anInt6392) {
                             val i_6_ = i_2_ + -NativeRenderer.anInt8001
                             val i_7_ = -GrayscaleEffect.anInt9203 + i_3_
                             if (RegionSceneLoader.aWidgetComponent_3701!!.anInt729 < i_6_ || (-RegionSceneLoader.aWidgetComponent_3701!!.anInt729 > i_6_) || (i_7_ > RegionSceneLoader.aWidgetComponent_3701!!.anInt729) || i_7_ < -RegionSceneLoader.aWidgetComponent_3701!!.anInt729) ParticleConfigParser.aBoolean3819 = true

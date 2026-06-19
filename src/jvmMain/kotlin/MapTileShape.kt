@@ -42,13 +42,13 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
         this.anIntArray4191[3] = i_23_
         this.anIntArray4191[1] = i_21_
         this.anIntArray4184[1] = i_25_
-        this.aShort4185 = (i_16_ shr Tooltip.anInt4459).toShort()
+        this.aShort4185 = (i_16_ shr ActorEntity.anInt4459).toShort()
         this.anIntArray4184[3] = i_27_
         this.anIntArray4184[0] = i_24_
         this.anIntArray4184[2] = i_26_
-        this.aShort4182 = (i_18_ shr Tooltip.anInt4459).toShort()
-        this.aShort4193 = (i_24_ shr Tooltip.anInt4459).toShort()
-        this.aShort4190 = (i_26_ shr Tooltip.anInt4459).toShort()
+        this.aShort4182 = (i_18_ shr ActorEntity.anInt4459).toShort()
+        this.aShort4193 = (i_24_ shr ActorEntity.anInt4459).toShort()
+        this.aShort4190 = (i_26_ shr ActorEntity.anInt4459).toShort()
         this.aShortArray4188 = ShortArray(4)
         this.aShortArray4183 = ShortArray(4)
         this.aShortArray4194 = ShortArray(4)
@@ -103,10 +103,10 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
                     if (i_10_ >= WhirlpoolHash.anInt3225) i_10_ = WhirlpoolHash.anInt3225 + -1
                     if (i_7_ < 0) i_7_ = 0
                     for (i_11_ in i_9_..i_10_) {
-                        val i_12_ = (ModelTransformParams.method3452(i_11_ + MaterialPass.anInt3682, (-15).toByte(), WhirlpoolHash.anInt3225) * WhirlpoolHash.anInt425)
+                        val i_12_ = (ModelDefinition.method3452(i_11_ + MaterialPass.anInt3682, (-15).toByte(), WhirlpoolHash.anInt3225) * WhirlpoolHash.anInt425)
                         var i_13_ = i_7_
                         while (i_8_ >= i_13_) {
-                            val i_14_ = (i_12_ + ModelTransformParams.method3452((SceneryDetailOptionState.anInt6095 + i_13_), (-15).toByte(), WhirlpoolHash.anInt425))
+                            val i_14_ = (i_12_ + ModelDefinition.method3452((SceneryDetailOptionState.anInt6095 + i_13_), (-15).toByte(), WhirlpoolHash.anInt425))
                             LocalPlayerState.anIntArray1909!![i_14_] = GroundDecorSceneEntity.anInt9997
                             i_13_++
                         }

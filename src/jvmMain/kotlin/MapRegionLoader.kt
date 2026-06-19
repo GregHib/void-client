@@ -1,4 +1,4 @@
-import SpriteStore.Companion.method303
+import SoundEnvelope.Companion.method303
 import SoundEngineInitializer.method353
 import WidgetComponent.Companion.method424
 import CachedRgbNoiseTexture.Companion.method566
@@ -526,8 +526,8 @@ open class MapRegionLoader {
                 if (i_110_ < 0) i_110_ = 0
                 else if (i_110_ > 127) i_110_ = 127
                 val i_111_ = (i_109_ + i_105_ and 0xfc00) + (i_109_ and 0x380) + i_110_
-                i_108_ = 0xffffff.inv() or (Crc64Hashable.anIntArray4983!![method303(method353(96, -119, i_111_), 30).toInt() and 0xffff])
-            } else if (i_107_ >= 0) i_108_ = (0xffffff.inv() or (Crc64Hashable.anIntArray4983!![(method303(method353(96, -85, (var_renderConfig.method3(i_107_, -6662)!!.aShort208).toInt()), 30)).toInt() and 0xffff]))
+                i_108_ = 0xffffff.inv() or (SoundEnvelope.anIntArray4983!![method303(method353(96, -119, i_111_), 30).toInt() and 0xffff])
+            } else if (i_107_ >= 0) i_108_ = (0xffffff.inv() or (SoundEnvelope.anIntArray4983!![(method303(method353(96, -85, (var_renderConfig.method3(i_107_, -6662)!!.aShort208).toInt()), 30)).toInt() and 0xffff]))
             else if (locTypeConfig.anInt3563 == -1) i_108_ = 0
             else {
                 val i_112_ = locTypeConfig.anInt3563
@@ -535,7 +535,7 @@ open class MapRegionLoader {
                 if (i_113_ < 0) i_113_ = 0
                 else if (i_113_ > 127) i_113_ = 127
                 val i_114_ = (i_112_ + i_105_ and 0xfc00) + (i_112_ and 0x380) + i_113_
-                i_108_ = 0xffffff.inv() or (Crc64Hashable.anIntArray4983!![method303(method353(96, -80, i_114_), 30).toInt() and 0xffff])
+                i_108_ = 0xffffff.inv() or (SoundEnvelope.anIntArray4983!![method303(method353(96, -80, i_114_), 30).toInt() and 0xffff])
             }
             return i_108_
         }
@@ -844,7 +844,7 @@ open class MapRegionLoader {
                                 else if (i_217_ > 127) i_217_ = 127
                                 val i_218_ = ((i_216_ + i and 0xfc00) + (i_216_ and 0x380) + i_217_)
                                 val i_219_: Int = i_201_ + i_212_ * anInt1259
-                                val i_220_ = (Crc64Hashable.anIntArray4983!![(method303(FloatBuffer.method3401(i_218_, 96, 76.toByte()), 30)).toInt() and 0xffff])
+                                val i_220_ = (SoundEnvelope.anIntArray4983!![(method303(FloatBuffer.method3401(i_218_, 96, 76.toByte()), 30)).toInt() and 0xffff])
                                 is_193_[i_219_] = (i_220_ shr 16 and 0xff).toByte()
                                 is_194_[i_219_] = (i_220_ and 0xffff).toShort()
                             }

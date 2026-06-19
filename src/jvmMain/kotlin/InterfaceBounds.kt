@@ -82,7 +82,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1219(7851)
             TheoraVideoStream.aLocTypeDefLoader_9036!!.method1404((-82).toByte())
             ProjectionCameraTransform.aEmoteDefCache_5764!!.method2601((-44).toByte())
-            CircleHitbox.aMapSceneCache_413!!.method822((-120).toByte())
+            Client.aMapSceneCache_413!!.method822((-120).toByte())
             HoverActionEntry.aSpriteStore_1813!!.method300((-123).toByte())
             AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1393((-13).toByte())
             GraphicsOptionState.aItemDefinitionLoader_3147!!.method1290(-8)

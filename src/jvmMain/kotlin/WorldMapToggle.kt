@@ -7,8 +7,6 @@ import java.awt.Canvas
  * Class306
  */
 object WorldMapToggle {
-    @JvmField
-    var anInt3872: Int = -1
     var anIntArray3873: IntArray? = IntArray(13)
     @JvmField
     var anInt3874: Int = 0

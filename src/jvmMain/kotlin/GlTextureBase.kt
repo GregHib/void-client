@@ -94,8 +94,8 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         var i_2_ = i_2_
         var i_3_ = i_3_
         anInt5100++
-        require(!(i_2_ > 0 && !AsyncTaskHandle.method1436(66, i_2_))) { "" }
-        require(!(i_3_ > 0 && !AsyncTaskHandle.method1436(i xor 0x1cb6, i_3_))) { "" }
+        require(!(i_2_ > 0 && !ModelDefinition.method1436(66, i_2_))) { "" }
+        require(!(i_3_ > 0 && !ModelDefinition.method1436(i xor 0x1cb6, i_3_))) { "" }
         val i_5_ = this.aTextureFormatInfo_5084!!.anInt3850
         var i_6_ = 0
         var i_7_ = min(i_2_, i_3_)
@@ -157,8 +157,8 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         var i = i
         var i_23_ = i_23_
         anInt5092++
-        require(!(i > 0 && !AsyncTaskHandle.method1436(-43, i))) { "" }
-        require(!(i_23_ > 0 && !AsyncTaskHandle.method1436(i_25_ xor 0xd2.inv(), i_23_))) { "" }
+        require(!(i > 0 && !ModelDefinition.method1436(-43, i))) { "" }
+        require(!(i_23_ > 0 && !ModelDefinition.method1436(i_25_ xor 0xd2.inv(), i_23_))) { "" }
         require(GroundItemRenderState.aTextureFormatInfo_1662 == this.aTextureFormatInfo_5084) { "" }
         var i_26_ = 0
         var i_27_ = min(i, i_23_)
@@ -246,8 +246,8 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         var i_49_ = i_49_
         var i_50_ = i_50_
         anInt5102++
-        require(!(i_49_ > 0 && !AsyncTaskHandle.method1436(100, i_49_))) { "" }
-        require(!(i_50_ > 0 && !AsyncTaskHandle.method1436(i_48_ + 109, i_50_))) { "" }
+        require(!(i_49_ > 0 && !ModelDefinition.method1436(100, i_49_))) { "" }
+        require(!(i_50_ > 0 && !ModelDefinition.method1436(i_48_ + 109, i_50_))) { "" }
         val i_51_ = this.aTextureFormatInfo_5084!!.anInt3850
         var i_52_ = 0
         if (i_48_ != 1) method228(107)
@@ -333,8 +333,6 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         @JvmField
         var aLong5089: Long = -1L
         @JvmField
-        var anIntArray5091: IntArray? = null
-        @JvmField
         var anInt5092: Int = 0
         @JvmField
         var anInt5094: Int = 0
@@ -376,7 +374,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         @JvmStatic
         fun method237(bool: Boolean) {
             if (bool != false) aLong5089 = -54L
-            anIntArray5091 = null
+            ActorEntity.anIntArray5091 = null
         }
         var aTextureFormatInfo_3977: TextureFormatInfo? = TextureFormatInfo(1)
     }

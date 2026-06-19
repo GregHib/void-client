@@ -825,8 +825,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         fun method2433() {
             if (WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 != null) {
                 for (i in WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!!.indices) {
-                    for (i_80_ in 0..<SpotAnimEntity.anInt6451) {
-                        for (i_81_ in 0..<RegionSceneShifter.anInt7054) {
+                    for (i_80_ in 0..<ActorEntity.anInt6451) {
+                        for (i_81_ in 0..<ActorEntity.anInt7054) {
                             if ((WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]) != null) WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]!!.method3485(true)
                             WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_] = null
                         }
@@ -837,8 +837,8 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             TerrainTileShape.aTerrainTileArray8801 = null
             if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) {
                 for (i in ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!!.indices) {
-                    for (i_82_ in 0..<SpotAnimEntity.anInt6451) {
-                        for (i_83_ in 0..<RegionSceneShifter.anInt7054) {
+                    for (i_82_ in 0..<ActorEntity.anInt6451) {
+                        for (i_83_ in 0..<ActorEntity.anInt7054) {
                             if ((ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!![i]!![i_82_]!![i_83_]) != null) ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!![i]!![i_82_]!![i_83_]!!.method3485(true)
                             ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!![i]!![i_82_]!![i_83_] = null
                         }
@@ -846,10 +846,10 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 }
             }
             ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = null
-            SoundCacheState.aTerrainTileArray4142 = null
+            ActorEntity.aTerrainTileArray4142 = null
             HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 = null
-            NativeSprite.aTerrainTileArray5191 = null
-            SpriteBlitter.aBooleanArrayArray1572 = null
+            ActorEntity.aTerrainTileArray5191 = null
+            ActorEntity.aBooleanArrayArray1572 = null
             FacingDirectionNode.aBooleanArrayArray6656 = null
             RefCountedHandle.anIntArray2272 = null
             OverlayColorTable.aBooleanArrayArrayArray1751 = null
@@ -870,11 +870,11 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 for (i in GlTexture3D.aClass318_Sub1Array3737!!.indices) GlTexture3D.aClass318_Sub1Array3737!![i] = null
                 LoadingScreenImageNode.anInt9504 = 0
             }
-            if (WaterDetailOptionState.aSoundEnvelopeArray5993 != null) {
-                for (i in 0..<CalendarUtil.anInt4135) WaterDetailOptionState.aSoundEnvelopeArray5993!![i] = null
+            if (SceneEntity.aSoundEnvelopeArray5993 != null) {
+                for (i in 0..<CalendarUtil.anInt4135) SceneEntity.aSoundEnvelopeArray5993!![i] = null
                 for (i in 0..<MapAreaDefinition.anInt2524) {
-                    for (i_84_ in 0..<SpotAnimEntity.anInt6451) {
-                        for (i_85_ in 0..<RegionSceneShifter.anInt7054) RenderbufferObject.aLongArrayArrayArray10431!![i]!![i_84_]!![i_85_] = 0L
+                    for (i_84_ in 0..<ActorEntity.anInt6451) {
+                        for (i_85_ in 0..<ActorEntity.anInt7054) SceneEntity.aLongArrayArrayArray10431!![i]!![i_84_]!![i_85_] = 0L
                     }
                 }
                 CalendarUtil.anInt4135 = 0

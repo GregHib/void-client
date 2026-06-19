@@ -5,7 +5,6 @@ import CubemapTextureGlSource.Companion.method2263
 import WorldMapAreaLabel.Companion.method3570
 import NoiseTextureGenerator.Companion.method544
 import FireParticleStream.Companion.method132
-import SceneEntity.Companion.method2385
 import kotlin.math.max
 import kotlin.math.min
 
@@ -28,14 +27,14 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_6_ = `is`[1]!!
             val is_7_ = `is`[2]!!
             if (aBoolean9140) {
-                for (i_8_ in 0..<ClampTextureNode.anInt9139) {
+                for (i_8_ in 0..<PerlinNoiseTextureNode.anInt9139) {
                     is_5_[i_8_] = is_2_[SimpleBinaryOptionState.anInt6076 + -i_8_]
                     is_6_[i_8_] = is_3_[SimpleBinaryOptionState.anInt6076 - i_8_]
                     is_7_[i_8_] = is_4_[-i_8_ + SimpleBinaryOptionState.anInt6076]
                 }
             } else {
                 var i_9_ = 0
-                while ((i_9_ < ClampTextureNode.anInt9139)) {
+                while ((i_9_ < PerlinNoiseTextureNode.anInt9139)) {
                     is_5_[i_9_] = is_2_[i_9_]
                     is_6_[i_9_] = is_3_[i_9_]
                     is_7_[i_9_] = is_4_[i_9_]
@@ -82,11 +81,11 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_76_ = this.method3048((if (aBoolean9147) TextureCubeProvider.anInt6325 - i else i), i_75_ + 633706082, 0)!!
             if (aBoolean9140) {
                 var i_77_ = 0
-                while ((i_77_ < ClampTextureNode.Companion.anInt9139)) {
+                while ((i_77_ < PerlinNoiseTextureNode.Companion.anInt9139)) {
                     `is`[i_77_] = is_76_[SimpleBinaryOptionState.anInt6076 + -i_77_]
                     i_77_++
                 }
-            } else ArrayCopyUtil.method1578(is_76_, 0, `is`, 0, ClampTextureNode.Companion.anInt9139)
+            } else ArrayCopyUtil.method1578(is_76_, 0, `is`, 0, PerlinNoiseTextureNode.Companion.anInt9139)
         }
         return `is`
     }
@@ -371,7 +370,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 }
                                             }
                                         } else if (class46.anInt774 == 5) {
-                                            if (class46.anInt705 >= 0) class46.method444(bool_15_, HoverActionEntry.aSpriteStore_1813, CircleHitbox.aMapSceneCache_413)!!.method2293(0, FacingDirectionNode.aRenderer6654!!, (-35).toByte(), i_24_, class46.anInt709, i_25_, (class46.anInt835 shl 3), (class46.anInt759 shl 3), 0, class46.anInt789)
+                                            if (class46.anInt705 >= 0) class46.method444(bool_15_, HoverActionEntry.aSpriteStore_1813, Client.aMapSceneCache_413)!!.method2293(0, FacingDirectionNode.aRenderer6654!!, (-35).toByte(), i_24_, class46.anInt709, i_25_, (class46.anInt835 shl 3), (class46.anInt759 shl 3), 0, class46.anInt789)
                                             else {
                                                 val abstractModelRenderer: AbstractModelRenderer?
                                                 if (class46.anInt812 != -1) {
@@ -569,6 +568,109 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
         }
 
 
+        var anInt6390: Int = 0
+        fun method2385(widgetComponent: WidgetComponent?, i: Int, var_sprite: Sprite?, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Byte, i_8_: Int, var_renderer: Renderer?) {
+            do {
+                try {
+                    anInt6390++
+                    val class42 = TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1225(i_4_, 98.toByte())
+                    if (i_7_ < -52) {
+                        if (class42 == null || !class42.aBoolean569 || !class42.method373((ProjectedGroundDecor.Companion.aVarpStore_10209!!), 69)) break
+                        if (class42.anIntArray591 != null) {
+                            val `is` = (IntArray(class42.anIntArray591!!.size))
+                            var i_9_ = 0
+                            while (`is`.size / 2 > i_9_) {
+                                val i_10_: Int
+                                if (WeaveTextureNode.anInt9282 != 4) i_10_ = 0x3fff and (OpenGlRenderNode.anInt10483 + CameraDistanceOptionState.aFloat3938.toInt())
+                                else i_10_ = CameraDistanceOptionState.aFloat3938.toInt() and 0x3fff
+                                var i_11_ = SpotAnimVector.anIntArray1207!![i_10_]
+                                var i_12_ = SpotAnimVector.anIntArray1204!![i_10_]
+                                if (WeaveTextureNode.anInt9282 != 4) {
+                                    i_11_ = (i_11_ * 256 / (FloatBuffer.anInt9750 + 256))
+                                    i_12_ = i_12_ * 256 / (256 + (FloatBuffer.anInt9750))
+                                }
+                                `is`[i_9_ * 2] = (((i_11_ * (((class42.anIntArray591!![i_9_ * 2 - -1]) * 4) + i_8_) + (i_5_ - -(4 * (class42.anIntArray591!![2 * i_9_]))) * i_12_) shr 14) + (i_6_ - -(widgetComponent!!.anInt709 / 2)))
+                                `is`[i_9_ * 2 - -1] = (-((((class42.anIntArray591!![1 + i_9_ * 2]) * 4 + i_8_) * i_12_ - (i_5_ - -((class42.anIntArray591!![i_9_ * 2]) * 4)) * i_11_) shr 14) + i + widgetComponent.anInt789 / 2)
+                                i_9_++
+                            }
+                            PolygonFiller.method2619(var_renderer!!, `is`, class42.anInt582, widgetComponent!!.anIntArray677, widgetComponent.anIntArray772!!)
+                            if (class42.anInt584 > 0) {
+                                var i_13_ = 0
+                                while ((i_13_ < -1 + `is`.size / 2)) {
+                                    var i_14_ = `is`[i_13_ * 2]
+                                    var i_15_ = `is`[1 + 2 * i_13_]
+                                    var i_16_ = `is`[2 + i_13_ * 2]
+                                    var i_17_ = `is`[1 + 2 * (i_13_ - -1)]
+                                    if (i_14_ <= i_16_) {
+                                        if (i_14_ == i_16_ && i_15_ > i_17_) {
+                                            val i_18_ = i_15_
+                                            i_15_ = i_17_
+                                            i_17_ = i_18_
+                                        }
+                                    } else {
+                                        val i_19_ = i_14_
+                                        i_14_ = i_16_
+                                        val i_20_ = i_15_
+                                        i_15_ = i_17_
+                                        i_16_ = i_19_
+                                        i_17_ = i_20_
+                                    }
+                                    var_renderer!!.method3703(i_14_, i_15_, i_16_, i_17_, (class42.anIntArray572[((class42.aByteArray564[i_13_]).toInt() and 0xff)]), 1, var_sprite, i_6_, i, class42.anInt584, class42.anInt575, (class42.anInt601))
+                                    i_13_++
+                                }
+                                var i_21_ = `is`[-2 + `is`.size]
+                                var i_22_ = `is`[-1 + `is`.size]
+                                var i_23_ = `is`[0]
+                                var i_24_ = `is`[1]
+                                if (i_23_ < i_21_) {
+                                    val i_25_ = i_21_
+                                    i_21_ = i_23_
+                                    val i_26_ = i_22_
+                                    i_22_ = i_24_
+                                    i_23_ = i_25_
+                                    i_24_ = i_26_
+                                } else if (i_21_ == i_23_ && i_22_ > i_24_) {
+                                    val i_27_ = i_22_
+                                    i_22_ = i_24_
+                                    i_24_ = i_27_
+                                }
+                                var_renderer!!.method3703(i_21_, i_22_, i_23_, i_24_, (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).size - 1)]).toInt() and 0xff]), 1, var_sprite, i_6_, i, class42.anInt584, class42.anInt575, class42.anInt601)
+                            } else {
+                                var i_28_ = 0
+                                while (-1 + `is`.size / 2 > i_28_) {
+                                    var_renderer!!.method3636(`is`[i_28_ * 2], `is`[2 * i_28_ + 1], `is`[2 * (i_28_ - -1)], `is`[2 * i_28_ + 3], (class42.anIntArray572[((class42.aByteArray564[i_28_]).toInt() and 0xff)]), 1, var_sprite, i_6_, i)
+                                    i_28_++
+                                }
+                                var_renderer!!.method3636(`is`[`is`.size + -2], `is`[-1 + `is`.size], `is`[0], `is`[1], (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).size + -1)]).toInt() and 0xff]), 1, var_sprite, i_6_, i)
+                            }
+                        }
+                        var abstractModelRenderer: AbstractModelRenderer? = null
+                        if (class42.anInt578 != -1) {
+                            abstractModelRenderer = class42.method374(false, var_renderer!!, 127.toByte())
+                            if (abstractModelRenderer != null) HeadIconRenderer.method1211(i, abstractModelRenderer, i_6_, widgetComponent, var_sprite, i_8_, 2, i_5_)
+                        }
+                        if (class42.aString597 == null) break
+                        var i_29_ = 0
+                        if (abstractModelRenderer != null) i_29_ = abstractModelRenderer.method969()
+                        var class324 = WorldMapRenderer.aFont_4684
+                        var class143 = GlTexture3D.aFontDefinition_8527
+                        if (class42.anInt576 == 1) {
+                            class324 = GameAppletFrame.aFont_20
+                            class143 = ParticleEmitterFactoryStatics.aFontDefinition_3179
+                        }
+                        if (class42.anInt576 == 2) {
+                            class143 = WorldMapLabel.aFontDefinition_4962
+                            class324 = NodeDequeStatics.aFont_3326
+                        }
+                        CameraOrModelTransform.method2650(class143, class42.anInt580, var_sprite, i_8_, i_6_, class42.aString597, i, class324, i_29_, widgetComponent, i_5_, 100)
+                    }
+                } catch (runtimeexception: RuntimeException) {
+                    throw TextureLoadException.method2929(runtimeexception, ("ga.KA(" + (if (widgetComponent != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
+                }
+                break
+            } while (false)
+        }
+
         var anInt1648: Int = 0
         fun method1007(widgetComponent: WidgetComponent?, var_renderer: Renderer?, i: Int, i_1_: Int, i_2_: Int) {
             try {
@@ -634,7 +736,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                         }
                         var i_22_ = 0
                         while ((i_22_ < ModelDefinitionLoader.anInt2057)) {
-                            val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_22_].toLong(), -6008)) as? NpcReference)
+                            val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_22_].toLong(), -6008)) as? NpcReference)
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 if (npc.method2445(((-126).toByte()).toByte()) && ((npc.plane) == (LocalPlayerState.aPlayer_1907!!.plane))) {

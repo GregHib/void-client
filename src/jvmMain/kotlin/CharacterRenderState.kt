@@ -146,9 +146,9 @@ class CharacterRenderState : LinkedListNode() {
         @JvmStatic
         fun method2778(class318_sub1: SceneEntity, bool: Boolean, `is`: Array<Array<ByteArray?>?>?, i: Int, i_0_: Byte): Boolean {
             if (!SpriteTextureNode.aBoolean9242) return false
-            var i_1_ = class318_sub1.x shr Tooltip.anInt4459
+            var i_1_ = class318_sub1.x shr ActorEntity.anInt4459
             var i_2_ = i_1_
-            var i_3_ = class318_sub1.y shr Tooltip.anInt4459
+            var i_3_ = class318_sub1.y shr ActorEntity.anInt4459
             var i_4_ = i_3_
             if (class318_sub1 is GroundDecorEntity) {
                 i_2_ = (class318_sub1.aShort8751).toInt()
@@ -160,7 +160,7 @@ class CharacterRenderState : LinkedListNode() {
                 for (i_6_ in i_3_..i_4_) {
                     if ((class318_sub1.aByte6376 < MapAreaDefinition.anInt2524) && i_5_ >= ByteArrayPool.anInt492 && i_5_ < ProjectileConfigUtil.anInt387 && i_6_ >= IntPair.anInt6974 && i_6_ < GrayscaleNoiseTexture.anInt5293) {
                         if ((`is` != null && class318_sub1.plane >= i && (`is`[class318_sub1.plane.toInt()]!![i_5_]!![i_6_]) == i_0_) || !class318_sub1.method2378(0) || class318_sub1.method2382((-79).toByte())) {
-                            if (!bool && i_5_ >= DisplayModeOptionState.anInt6111 - 16 && i_5_ <= DisplayModeOptionState.anInt6111 + 16 && i_6_ >= GlIndexBufferArb.anInt8502 - 16 && i_6_ <= GlIndexBufferArb.anInt8502 + 16) {
+                            if (!bool && i_5_ >= ActorEntity.anInt6111 - 16 && i_5_ <= ActorEntity.anInt6111 + 16 && i_6_ >= ActorEntity.anInt8502 - 16 && i_6_ <= ActorEntity.anInt8502 + 16) {
                                 if (VoronoiNoiseTextureNode.aBoolean9121) {
                                     MapElementDefinitionCache.aCacheIndexManagerArray3982!![NpcSummaryDefinition.anInt1949++]!!.method2361(-15481, class318_sub1)
                                     NpcSummaryDefinition.anInt1949 %= ActiveMapRegion.anInt5652

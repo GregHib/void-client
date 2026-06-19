@@ -70,7 +70,7 @@ object MapSceneRenderer {
                     i++
                 }
                 if (is_5_[0] != -1) {
-                    KeyboardLayoutCache.aParticleSystemRenderer_3304 = CircleHitbox.aMapSceneCache_413!!.method823(is_5_[2], is_5_[3], is_5_[1], -109, (HoverActionEntry.aSpriteStore_1813!!), is_5_[0])
+                    KeyboardLayoutCache.aParticleSystemRenderer_3304 = Client.aMapSceneCache_413!!.method823(is_5_[2], is_5_[3], is_5_[1], -109, (HoverActionEntry.aSpriteStore_1813!!), is_5_[0])
                     MapSceneDefLoader.anInt2481 = is_5_[4]
                 }
                 if (bool == false) break
@@ -101,7 +101,7 @@ object MapSceneRenderer {
         if (class357 != null) {
             class357.aClass318_Sub1_Sub5_4395 = class318_sub1_sub5
             class357.aClass318_Sub1_Sub5_4407 = class318_sub1_sub5_20_
-            val i_21_ = if (NativeSprite.aTerrainTileArray5191 == SoundCacheState.aTerrainTileArray4142) 1 else 0
+            val i_21_ = if (ActorEntity.aTerrainTileArray5191 == ActorEntity.aTerrainTileArray4142) 1 else 0
             if (class318_sub1_sub5.method2376(-62)) {
                 if (class318_sub1_sub5.method2377(122.toByte())) {
                     class318_sub1_sub5.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_21_]

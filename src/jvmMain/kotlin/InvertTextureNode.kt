@@ -17,7 +17,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_15_ = `is`[1]!!
             val is_16_ = `is`[2]!!
             var i_17_ = 0
-            while (ClampTextureNode.Companion.anInt9139 > i_17_) {
+            while (PerlinNoiseTextureNode.Companion.anInt9139 > i_17_) {
                 is_14_[i_17_] = -is_11_[i_17_] + 4096
                 is_15_[i_17_] = 4096 + -is_12_[i_17_]
                 is_16_[i_17_] = -is_13_[i_17_] + 4096
@@ -34,7 +34,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_19_ = this.method3048(i, 633706337, 0)!!
             var i_20_ = 0
-            while ((i_20_ < ClampTextureNode.Companion.anInt9139)) {
+            while ((i_20_ < PerlinNoiseTextureNode.Companion.anInt9139)) {
                 `is`[i_20_] = 4096 + -is_19_[i_20_]
                 i_20_++
             }
@@ -74,7 +74,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
             try {
                 if (i_3_.toInt() != 12) method3134(9)
                 anInt9418++
-                if (!var_ha_Sub2!!.aBoolean7793 && (!AsyncTaskHandle.method1436(-74, i_2_) || !AsyncTaskHandle.method1436(127, i_1_))) {
+                if (!var_ha_Sub2!!.aBoolean7793 && (!ModelDefinition.method1436(-74, i_2_) || !ModelDefinition.method1436(127, i_1_))) {
                     if (!var_ha_Sub2.aBoolean7837) return (GlTexture2DRegion(var_ha_Sub2, i_2_, i_1_, CacheArchiveIndexLoader.method340(i_2_, 108.toByte()), CacheArchiveIndexLoader.method340(i_1_, 108.toByte()), `is`))
                     return GlTexture2DRegion(var_ha_Sub2, 34037, i_2_, i_1_, bool, `is`, i_0_, i)
                 }

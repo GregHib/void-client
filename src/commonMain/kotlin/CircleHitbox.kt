@@ -22,7 +22,6 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
         anInt418 = i_9_ + anInt409
         anInt416 = i_4_ + anInt417
         anInt406 = anInt417 - -i
-        if (i_5_.toInt() != -4) aMapSceneCache_413 = null
     }
 
     fun method321(i: Int, i_14_: Int, i_15_: Int, i_16_: Int): Boolean {
@@ -46,32 +45,9 @@ class CircleHitbox internal constructor(private var anInt409: Int, private var a
     }
 
     companion object {
-        var anIntArray407: IntArray? = IntArray(1)
-        @JvmField
-        var anInt410: Int = 0
         @JvmField
         var anInt411: Int = 0
         @JvmField
-        var aMapSceneCache_413: MapSceneCache? = null
-        @JvmField
-        var anInt414: Int = 0
-        @JvmField
         var anInt415: Int = 0
-        fun method319(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int, i_3_: Int) {
-            if (i_1_.toInt() != -18) method322(73)
-            anInt414++
-            HslPaletteState.anInt4171 = i_2_
-            ParticleSystemRenderer.anInt3861 = i_0_
-            GlFramebufferBlitter.anInt282 = i
-            CircleDrawer.anInt2688 = i_3_
-        }
-
-        @JvmStatic
-        fun method322(i: Int) {
-            anIntArray407 = null
-            aMapSceneCache_413 = null
-            if (i != 1) method322(-112)
-        }
-
     }
 }

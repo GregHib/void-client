@@ -94,23 +94,11 @@ class ModelLightingConfig {
         @JvmField
         var aFontMetaRef_2539: FontMetaRef? = FontMetaRef(26, 7)
         var anInt2543: Int = 0
-        var anInt2550: Int = 0
         var anInt2553: Int = 0
         @JvmField
         var aRectangleArray2554: Array<Rectangle?>? = arrayOfNulls<Rectangle>(100)
         var aFloat2555: Float = 0f
 
-        fun method1422(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Boolean {
-            anInt2550++
-            SourceRowTextureNode.aAbstractCameraTransform_9114!!.method897(i_1_, i, i_0_, SequencedWallEntity.anIntArray10172!!)
-            val i_3_ = SequencedWallEntity.anIntArray10172!![2]
-            if (i_3_ < 50) return false
-            SequencedWallEntity.anIntArray10172!![2] = i_3_
-            SequencedWallEntity.anIntArray10172!![0] = (ScreenBorderFiller.anInt1962 * SequencedWallEntity.anIntArray10172!![0] / i_3_) + CollisionFlagQuery.anInt1202
-            SequencedWallEntity.anIntArray10172!![1] = (CipheredPacketBuffer.anInt9759 + (SequencedWallEntity.anIntArray10172!![1] * GlIndexBufferArb.anInt8498 / i_3_))
-            if (i_2_ != -7596) aRectangleArray2554 = null
-            return true
-        }
 
         @JvmStatic
         fun method1425(i: Byte, structConfig: StructConfig?, class348_sub21: CameraSplineNode?, i_5_: Int, var_renderer: Renderer?, i_6_: Int): Boolean {

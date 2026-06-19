@@ -141,9 +141,9 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             anInt3073 = -1
         }
         if (i > -126) return null
-        val var_s = NativeSprite.aTerrainTileArray5191!![aByte3067.toInt()]
+        val var_s = ActorEntity.aTerrainTileArray5191!![aByte3067.toInt()]
         val var_terrainTile_5_: TerrainTile?
-        if (!aBoolean3069) var_terrainTile_5_ = if (aByte3067 >= 3) null else NativeSprite.aTerrainTileArray5191!![1 + aByte3067]
+        if (!aBoolean3069) var_terrainTile_5_ = if (aByte3067 >= 3) null else ActorEntity.aTerrainTileArray5191!![1 + aByte3067]
         else var_terrainTile_5_ = TerrainTileShape.aTerrainTileArray8801!![0]
         var abstractModel: AbstractModel? = null
         if (aWidgetDefinition_3057 == null) {

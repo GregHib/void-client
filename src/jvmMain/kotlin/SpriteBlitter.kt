@@ -5,8 +5,6 @@ import ChatMessageStream.Companion.method138
 */
 object SpriteBlitter {
     @JvmField
-    var aBooleanArrayArray1572: Array<BooleanArray?>? = null
-    @JvmField
     var anInt1573: Int = 0
     @JvmField
     var anIntArray1574: IntArray? = IntArray(3)
@@ -82,7 +80,7 @@ object SpriteBlitter {
 
     @JvmStatic
     fun method883(i: Byte) {
-        aBooleanArrayArray1572 = null
+        ActorEntity.aBooleanArrayArray1572 = null
         anIntArray1574 = null
         val i_18_ = -74 / ((i - 17) / 46)
     }

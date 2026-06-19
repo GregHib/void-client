@@ -194,7 +194,7 @@ object ClientLoadStateMachine {
             ClientException.aModelHeaderCache_112 = ModelHeaderCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, ProjectionCameraTransform.aEmoteDefCache_5764, ScriptOpcodeHolder.aJs5Archive_2306, RasterSprite.aJs5Archive_5207)
             TheoraVideoStream.aLocTypeDefLoader_9036 = LocTypeDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             ParticleEmitterNode.aWidgetCache_191 = WidgetCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, OpenGlRenderNode.aJs5Archive_10480, ShortKeyNode.aJs5Archive_6909, TextureGenerator.aJs5Archive_2490)
-            CircleHitbox.aMapSceneCache_413 = MapSceneCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            Client.aMapSceneCache_413 = MapSceneCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             HoverActionEntry.aSpriteStore_1813 = SpriteStore(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             ConstantColourTextureNode.aMapElementDefinitionCache_9245 = MapElementDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, BufferedRandomAccessFile.aJs5Archive_1322, RasterSprite.aJs5Archive_5207)
             SpriteLoadValidator.aWorldMapImageBuilder_4787 = WorldMapImageBuilder(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
@@ -271,7 +271,7 @@ object ClientLoadStateMachine {
         }
         if (ConnectionStateType.aConnectionStateType_1041 == TimedTileQueueEntry.aConnectionStateType_9660) ByteBufferStatics.method3198(true, (-45).toByte())
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1042) {
-            NpcConfig.aResourceLoaderThread_897!!.method2319((-56).toByte())
+            ActorEntity.aResourceLoaderThread_897!!.method2319((-56).toByte())
             try {
                 runBlocking {
                     TerrainShadowBuilderGl2.job!!.join()
@@ -281,7 +281,7 @@ object ClientLoadStateMachine {
             }
             PerlinTextureProvider.aCollisionMapRegion_5813 = null
             SpriteRgbTextureNode.aJs5Archive_10426 = null
-            NpcConfig.aResourceLoaderThread_897 = null
+            ActorEntity.aResourceLoaderThread_897 = null
             LoadProgressCounters.anCursorControllerArray2447 = null
             TerrainShadowBuilderGl2.job = null
             ScrollTexMaterialPass.aJs5Archive_6277 = null

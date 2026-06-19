@@ -158,11 +158,11 @@ class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Ma
             anInt6292++
             if (bool) {
                 SpriteArchiveLoader.anInt383--
-                if (SpriteArchiveLoader.anInt383 == 0) ParticleEmitterNode.anIntArray179 = null
+                if (SpriteArchiveLoader.anInt383 == 0) SoundEnvelope.anIntArray179 = null
             }
             if (bool_6_) {
                 ColourKeyTextureNode.anInt9346--
-                if (ColourKeyTextureNode.anInt9346 == 0) Crc64Hashable.anIntArray4983 = null
+                if (ColourKeyTextureNode.anInt9346 == 0) SoundEnvelope.anIntArray4983 = null
             }
         }
     }

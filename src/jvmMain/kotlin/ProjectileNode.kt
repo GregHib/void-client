@@ -32,21 +32,21 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
     }
 
     fun method2522(var_renderer: Renderer?, l: Long) {
-        val i = this.anInt8791 shr 12 + Tooltip.anInt4459
-        val i_0_ = this.anInt8789 shr 12 + Tooltip.anInt4459
+        val i = this.anInt8791 shr 12 + ActorEntity.anInt4459
+        val i_0_ = this.anInt8789 shr 12 + ActorEntity.anInt4459
         val i_1_ = this.anInt8796 shr 12
-        if (i_1_ > 0 || i_1_ < -262144 || i < 0 || i >= SpotAnimEntity.Companion.anInt6451 || i_0_ < 0 || i_0_ >= RegionSceneShifter.anInt7054) method2520()
+        if (i_1_ > 0 || i_1_ < -262144 || i < 0 || i >= ActorEntity.anInt6451 || i_0_ < 0 || i_0_ >= ActorEntity.anInt7054) method2520()
         else {
             val class318_sub10 = (this.aClass318_Sub7_10419.aClass318_Sub10_6439)!!
             val class181 = (this.aClass318_Sub7_10419.aSpotAnimDefinition_6441)!!
-            val var_ses = NativeSprite.aTerrainTileArray5191
+            val var_ses = ActorEntity.aTerrainTileArray5191
             var i_2_ = class318_sub10.anInt6483
             var class357 = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![class318_sub10.anInt6483]!![i]!![i_0_])
             if (class357 != null) i_2_ = class357.aByte4399.toInt()
             val i_3_ = var_ses!![i_2_]!!.method3982((-86).toByte(), i_0_, i)
             val i_4_: Int
             if (i_2_ < MapAreaDefinition.anInt2524 - 1) i_4_ = var_ses[i_2_ + 1]!!.method3982((-86).toByte(), i_0_, i)
-            else i_4_ = i_3_ - (8 shl Tooltip.anInt4459)
+            else i_4_ = i_3_ - (8 shl ActorEntity.anInt4459)
             if (class181.aBoolean2397) {
                 if (class181.anInt2384 == -1 && i_1_ > i_3_) {
                     method2520()
@@ -71,7 +71,7 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
                 i_5_--
             }
             if (class181.aBoolean2376 && i_5_ == 0 && i_1_ > var_ses[0]!!.method3982((-86).toByte(), i_0_, i)) method2520()
-            else if (i_5_ == MapAreaDefinition.anInt2524 - 1 && (var_ses[i_5_]!!.method3982((-86).toByte(), i_0_, i) - i_1_ > 8 shl Tooltip.anInt4459)) method2520()
+            else if (i_5_ == MapAreaDefinition.anInt2524 - 1 && (var_ses[i_5_]!!.method3982((-86).toByte(), i_0_, i) - i_1_ > 8 shl ActorEntity.anInt4459)) method2520()
             else {
                 class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_5_]!![i]!![i_0_]
                 if (class357 == null) {

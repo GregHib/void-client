@@ -54,7 +54,7 @@ abstract class AsyncResourceRequest : HashLinkedListNode() {
             if (class357 != null) {
                 class357.aClass318_Sub1_Sub4_4406 = class318_sub1_sub4
                 class357.aClass318_Sub1_Sub4_4403 = class318_sub1_sub4_4_
-                val i_5_ = if (NativeSprite.aTerrainTileArray5191 == SoundCacheState.aTerrainTileArray4142) 1 else 0
+                val i_5_ = if (ActorEntity.aTerrainTileArray5191 == ActorEntity.aTerrainTileArray4142) 1 else 0
                 if (class318_sub1_sub4.method2376(-109)) {
                     if (class318_sub1_sub4.method2377(122.toByte())) {
                         class318_sub1_sub4.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_5_]

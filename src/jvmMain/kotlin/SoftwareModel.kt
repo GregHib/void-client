@@ -1,5 +1,5 @@
 import ParticleEmitterFactoryStatics.method1885
-import SpriteStore.Companion.method303
+import SoundEnvelope.Companion.method303
 import PcmStreamBuffer.Companion.method2832
 import CachedRgbNoiseTexture.Companion.method565
 import IdentKitRecolor.Companion.method206
@@ -390,7 +390,7 @@ class SoftwareModel : AbstractModel {
                 anIntArray5355[i_39_.toInt()].toFloat(),
                 anIntArray5355[i_40_.toInt()].toFloat(),
                 anIntArray5355[i_41_.toInt()].toFloat(),
-                (Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff])
+                (SoundEnvelope.anIntArray4983!![anIntArray5368!![i] and 0xffff])
             )
             else aShadowProjector_5383!!.method1022(
                 anIntArray5343[i_39_.toInt()].toFloat(),
@@ -680,7 +680,7 @@ class SoftwareModel : AbstractModel {
                     for (i_108_ in 0..<anInt5389) {
                         val class6 = aIdentKitRecolorArray5361!![i_108_]!!
                         val class350 = aModelTransformParamsArray5363!![i_108_]!!
-                        class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
+                        class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((SoundEnvelope.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
                     }
                 }
             }
@@ -1144,7 +1144,7 @@ class SoftwareModel : AbstractModel {
                     for (i_270_ in 0..<anInt5389) {
                         val class6 = aIdentKitRecolorArray5361!![i_270_]!!
                         val class350 = aModelTransformParamsArray5363!![i_270_]!!
-                        class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
+                        class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((SoundEnvelope.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
                     }
                 }
             }
@@ -1404,7 +1404,7 @@ class SoftwareModel : AbstractModel {
     }
 
     private fun method642(i: Int, i_305_: Short, i_306_: Int): Int {
-        var i_307_ = ParticleEmitterNode.anIntArray179!![method637(i, i_306_)]
+        var i_307_ = SoundEnvelope.anIntArray179!![method637(i, i_306_)]
         val class12 = aHa_Sub1_5353.aRenderConfig4579!!.method3(i_305_.toInt() and 0xffff, -6662)
         val i_308_ = class12!!.aByte201.toInt() and 0xff
         if (i_308_ != 0) {
@@ -1595,7 +1595,7 @@ class SoftwareModel : AbstractModel {
                 for (i_363_ in 0..<anInt5389) {
                     val class6 = aIdentKitRecolorArray5361!![i_363_]!!
                     val class350 = aModelTransformParamsArray5363!![i_363_]!!
-                    class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
+                    class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((SoundEnvelope.anIntArray4983!![method303((aShortArray5311!![(class6.anInt144)]).toInt() and 0xffff, 30).toInt() and 0xffff]) and 0xffffff))
                 }
             }
         } else if (i == 8) {
@@ -1862,7 +1862,7 @@ class SoftwareModel : AbstractModel {
             for (i_485_ in 0..<anInt5389) {
                 val class6 = aIdentKitRecolorArray5361!![i_485_]!!
                 val class350 = aModelTransformParamsArray5363!![i_485_]!!
-                class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303(((aShortArray5311!![class6.anInt144]).toInt() and 0xffff), 30).toInt()]) and 0xffffff))
+                class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((SoundEnvelope.anIntArray4983!![method303(((aShortArray5311!![class6.anInt144]).toInt() and 0xffff), 30).toInt()]) and 0xffffff))
             }
         }
         if (anInt5354 == 2) anInt5354 = 1
@@ -2085,7 +2085,7 @@ class SoftwareModel : AbstractModel {
         if (i_540_ == 3) {
             if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aParticleSystemState_5367!!.anInt2221 || i_564_ > aParticleSystemState_5367!!.anInt2221 || i_565_ > aParticleSystemState_5367!!.anInt2221) aShadowProjector_5383!!.aBoolean1671 = true
             if (aShortArray5388 == null || aShortArray5388!![i].toInt() == -1) {
-                if (anIntArray5366!![i] == -1) aShadowProjector_5383!!.method1018(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), (Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]))
+                if (anIntArray5366!![i] == -1) aShadowProjector_5383!!.method1018(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), (SoundEnvelope.anIntArray4983!![anIntArray5368!![i] and 0xffff]))
                 else aShadowProjector_5383!!.method1022(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), anIntArray5377[0].toFloat(), anIntArray5377[1].toFloat(), anIntArray5377[2].toFloat())
             } else {
                 var i_569_ = -16777216
@@ -2147,7 +2147,7 @@ class SoftwareModel : AbstractModel {
             if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aParticleSystemState_5367!!.anInt2221 || i_564_ > aParticleSystemState_5367!!.anInt2221 || i_565_ > aParticleSystemState_5367!!.anInt2221 || anIntArray5315[3] < 0 || anIntArray5315[3] > aParticleSystemState_5367!!.anInt2221) aShadowProjector_5383!!.aBoolean1671 = true
             if (aShortArray5388 == null || aShortArray5388!![i].toInt() == -1) {
                 if (anIntArray5366!![i] == -1) {
-                    val i_571_ = Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]
+                    val i_571_ = SoundEnvelope.anIntArray4983!![anIntArray5368!![i] and 0xffff]
                     aShadowProjector_5383!!.method1018(i_566_.toFloat(), i_567_.toFloat(), i_568_.toFloat(), i_563_.toFloat(), i_564_.toFloat(), i_565_.toFloat(), i_545_.toFloat(), i_546_.toFloat(), i_547_.toFloat(), i_571_)
                     aShadowProjector_5383!!.method1018(i_566_.toFloat(), i_568_.toFloat(), anIntArray5371[3].toFloat(), i_563_.toFloat(), i_565_.toFloat(), anIntArray5315[3].toFloat(), i_545_.toFloat(), i_546_.toFloat(), anIntArray5381[3].toFloat(), i_571_)
                 } else {
@@ -2576,7 +2576,7 @@ class SoftwareModel : AbstractModel {
             for (i_628_ in 0..<anInt5389) {
                 val class6 = aIdentKitRecolorArray5361!![i_628_]!!
                 val class350 = aModelTransformParamsArray5363!![i_628_]!!
-                class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((Crc64Hashable.anIntArray4983!![method303((aShortArray5311!![class6.anInt144]).toInt(), 30).toInt() and 0xffff]) and 0xffffff))
+                class350.anInt4313 = (class350.anInt4313 and 0xffffff.inv() or ((SoundEnvelope.anIntArray4983!![method303((aShortArray5311!![class6.anInt144]).toInt(), 30).toInt() and 0xffff]) and 0xffffff))
             }
         }
         if (anInt5354 == 2) anInt5354 = 1
@@ -3136,9 +3136,9 @@ class SoftwareModel : AbstractModel {
                     anIntArray5355[i_777_.toInt()].toFloat(),
                     anIntArray5355[i_778_.toInt()].toFloat(),
                     anIntArray5355[i_779_.toInt()].toFloat(),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_780_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_781_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_782_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
+                    method206((SoundEnvelope.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_780_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                    method206((SoundEnvelope.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_781_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                    method206((SoundEnvelope.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_782_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
                 )
                 else aShadowProjector_5383!!.method1027(
                     anIntArray5343[i_777_.toInt()].toFloat(),
@@ -3150,9 +3150,9 @@ class SoftwareModel : AbstractModel {
                     anIntArray5355[i_777_.toInt()].toFloat(),
                     anIntArray5355[i_778_.toInt()].toFloat(),
                     anIntArray5355[i_779_.toInt()].toFloat(),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_780_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5337!![i] and 0xffff]), (i_781_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                    method206((Crc64Hashable.anIntArray4983!![anIntArray5366!![i] and 0xffff]), (i_782_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
+                    method206((SoundEnvelope.anIntArray4983!![anIntArray5368!![i] and 0xffff]), (i_780_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                    method206((SoundEnvelope.anIntArray4983!![anIntArray5337!![i] and 0xffff]), (i_781_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                    method206((SoundEnvelope.anIntArray4983!![anIntArray5366!![i] and 0xffff]), (i_782_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
                 )
             } else {
                 var i_783_ = -16777216
@@ -3240,9 +3240,9 @@ class SoftwareModel : AbstractModel {
                             anIntArray5355[i_768_.toInt()].toFloat(),
                             anIntArray5355[i_769_.toInt()].toFloat(),
                             anIntArray5355[i_770_.toInt()].toFloat(),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_771_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_772_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_773_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
+                            method206((SoundEnvelope.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_771_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                            method206((SoundEnvelope.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_772_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                            method206((SoundEnvelope.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_773_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
                         )
                         else aShadowProjector_5383!!.method1027(
                             anIntArray5343[i_768_.toInt()].toFloat(),
@@ -3254,9 +3254,9 @@ class SoftwareModel : AbstractModel {
                             anIntArray5355[i_768_.toInt()].toFloat(),
                             anIntArray5355[i_769_.toInt()].toFloat(),
                             anIntArray5355[i_770_.toInt()].toFloat(),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_771_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5337!![i] and 0xffff)]), (i_772_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
-                            method206((Crc64Hashable.anIntArray4983!![(anIntArray5366!![i] and 0xffff)]), (i_773_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
+                            method206((SoundEnvelope.anIntArray4983!![(anIntArray5368!![i] and 0xffff)]), (i_771_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                            method206((SoundEnvelope.anIntArray4983!![(anIntArray5337!![i] and 0xffff)]), (i_772_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255),
+                            method206((SoundEnvelope.anIntArray4983!![(anIntArray5366!![i] and 0xffff)]), (i_773_ shl 24 or (aParticleSystemState_5367!!.anInt2192)), 255)
                         )
                     } else {
                         var i_775_ = -16777216
@@ -3415,7 +3415,7 @@ class SoftwareModel : AbstractModel {
             for (i_800_ in modelDefinition.aRectangleBoundsArray1832!!.indices) {
                 val class162 = modelDefinition.aRectangleBoundsArray1832!![i_800_]!!
                 val class189 = FileExistsCondition.method742(104, class162.anInt2153)
-                var i_801_ = ((Crc64Hashable.anIntArray4983!![(modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff]) and 0xffffff)
+                var i_801_ = ((SoundEnvelope.anIntArray4983!![(modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff]) and 0xffffff)
                 i_801_ = (i_801_ or (255 - (if (modelDefinition.aByteArray1834 != null) (modelDefinition.aByteArray1834!![class162.anInt2155]).toInt() and 0xff else 0) shl 24))
                 aIdentKitRecolorArray5361!![i_800_] = IdentKitRecolor(class162.anInt2155, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class162.anInt2158)
                 aModelTransformParamsArray5363!![i_800_] = ModelTransformParams(i_801_)

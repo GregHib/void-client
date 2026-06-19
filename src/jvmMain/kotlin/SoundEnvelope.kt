@@ -1,6 +1,4 @@
-import TextureDefinitionLoader.Companion.method1177
-import SpriteStore.Companion.method303
-import NpcType.Companion.method802
+import NullRenderPass.Companion.method3535
 
 /* Class211 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -211,7 +209,7 @@ class SoundEnvelope {
                                     } else break
                                     break@while_71_
                                 }
-                                i_40_ = (GlTexture3D.anIntArray3726!![i_41_] shr 1)
+                                i_40_ = (SoundEnvelope.anIntArray3726!![i_41_] shr 1)
                                 break@while_74_
                             } while (false)
                             i_40_ = i_41_ shr 10 shl 11
@@ -230,13 +228,13 @@ class SoundEnvelope {
     }
 
     protected constructor() {
-        if (GlTexture3D.anIntArray3726 == null) method1177(122.toByte())
+        if (SoundEnvelope.anIntArray3726 == null) method1177(122.toByte())
         method1542(32402)
     }
 
     internal constructor(var_renderer: Renderer?, class348_sub49: ByteBuffer?, i: Int) {
         try {
-            if (GlTexture3D.anIntArray3726 == null) method1177(122.toByte())
+            if (SoundEnvelope.anIntArray3726 == null) method1177(122.toByte())
             this.anInt2731 = class348_sub49!!.readUnsignedByte(255)
             this.aBoolean2737 = (0x8 and this.anInt2731) != 0
             this.aBoolean2749 = (this.anInt2731 and 0x10) != 0
@@ -257,8 +255,8 @@ class SoundEnvelope {
                 this.aShortArray2742!![i_48_] = WhirlpoolHash.method2057(i_51_, i_50_ shl 8).toShort()
                 i_48_++
             }
-            i_46_ = ((i_46_ shl Tooltip.anInt4459) + TheoraVideoStream.anInt9037)
-            val i_52_ = (if (ParticleEmitterNode.anIntArray179 == null) (Crc64Hashable.anIntArray4983!![method303(class348_sub49.readUnsignedShort(842397944), 30).toInt() and 0xffff]) else (ParticleEmitterNode.anIntArray179!![class348_sub49.readUnsignedShort(842397944)]))
+            i_46_ = ((i_46_ shl ActorEntity.anInt4459) + ActorEntity.anInt9037)
+            val i_52_ = (if (SoundEnvelope.anIntArray179 == null) (SoundEnvelope.anIntArray4983!![method303(class348_sub49.readUnsignedShort(842397944), 30).toInt() and 0xffff]) else (SoundEnvelope.anIntArray179!![class348_sub49.readUnsignedShort(842397944)]))
             val i_53_ = class348_sub49.readUnsignedByte(255)
             anInt2739 = (0xe0 and i_53_) shl 3
             this.anInt2734 = 0x1f and i_53_
@@ -270,107 +268,52 @@ class SoundEnvelope {
     }
 
     companion object {
-        var anInt2732: Int = 0
         var anInt2733: Int = 0
         var anInt2736: Int = 0
         var anInt2741: Int = 0
-        var anIntArray2744: IntArray? = IntArray(2)
-        var anInt2746: Int = 0
         var anInt2748: Int = 0
-        fun method1538(i: Int, i_0_: Byte, class348_sub49_sub2: CipheredPacketBuffer): Boolean {
-            anInt2732++
-            val i_1_ = class348_sub49_sub2.readBits((-24).toByte(), 2)
-            if (i_1_ == 0) {
-                if (class348_sub49_sub2.readBits((-24).toByte(), 1) != 0) method1538(i, 105.toByte(), class348_sub49_sub2)
-                val i_2_ = class348_sub49_sub2.readBits((-24).toByte(), 6)
-                val i_3_ = class348_sub49_sub2.readBits((-24).toByte(), 6)
-                val bool = (class348_sub49_sub2.readBits((-24).toByte(), 1) == 1)
-                if (bool) GlFramebufferBlitter.anIntArray279!![ProjectionCameraTransform.anInt5768++] = i
-                if (LoadingBarRenderer.aPlayerArray5058!![i] != null) throw RuntimeException("hr:lr")
-                val class359 = SoundBankPatch.aTextureAtlasStateArray6802s!![i]!!
-                val player = (Player().also { LoadingBarRenderer.aPlayerArray5058!![i] = it })
-                player.anInt10290 = i
-                if (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i] != null) player.method2452(84.toByte(), CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i]!!)
-                player.method2435((-108).toByte(), (class359.anInt4423), true)
-                player.anInt10275 = class359.anInt4425
-                val i_4_ = class359.anInt4420
-                val i_5_ = i_4_ shr 28
-                val i_6_ = (0x3fcd8e and i_4_) shr 14
-                val i_7_ = 0xff and i_4_
-                val i_8_ = -ArbVertexProgram.regionTileX + i_2_ + (i_6_ shl 6)
-                player.aBoolean10554 = class359.aBoolean4426
-                val i_9_ = -RegionMapDecoder.regionTileY + i_3_ + (i_7_ shl 6)
-                player.aByteArray10321!![0] = KeyboardLayoutCache.aByteArray3300!![i]
-                player.aByte6376 = i_5_.toByte()
-                player.plane = player.aByte6376
-                if (method802(i_9_, i_8_, true)) player.aByte6376++
-                player.method2449(i_9_, i_8_, 102.toByte())
-                player.aBoolean10539 = false
-                SoundBankPatch.aTextureAtlasStateArray6802s!![i] = null
-                return true
-            }
-            if (i_1_ == 1) {
-                val i_10_ = class348_sub49_sub2.readBits((-24).toByte(), 2)
-                val i_11_ = SoundBankPatch.aTextureAtlasStateArray6802s!![i]!!.anInt4420
-                SoundBankPatch.aTextureAtlasStateArray6802s!![i]!!.anInt4420 = (0xfffffff and i_11_) + (((i_11_ shr 28) + i_10_ and 0x3) shl 28)
-                return false
-            }
-            if (i_1_ == 2) {
-                val i_12_ = class348_sub49_sub2.readBits((-24).toByte(), 5)
-                val i_13_ = i_12_ shr 3
-                val i_14_ = 0x7 and i_12_
-                val i_15_ = SoundBankPatch.aTextureAtlasStateArray6802s!![i]!!.anInt4420
-                val i_16_ = 0x3 and i_13_ + (i_15_ shr 28)
-                var i_17_ = (i_15_ and 0x3fd366) shr 14
-                var i_18_ = 0xff and i_15_
-                if (i_14_ == 0) {
-                    i_17_--
-                    i_18_--
-                }
-                if (i_14_ == 1) i_18_--
-                if (i_14_ == 2) {
-                    i_18_--
-                    i_17_++
-                }
-                if (i_14_ == 3) i_17_--
-                if (i_14_ == 4) i_17_++
-                if (i_14_ == 5) {
-                    i_17_--
-                    i_18_++
-                }
-                if (i_14_ == 6) i_18_++
-                if (i_14_ == 7) {
-                    i_17_++
-                    i_18_++
-                }
-                SoundBankPatch.aTextureAtlasStateArray6802s!![i]!!.anInt4420 = i_18_ + ((i_16_ shl 28) + (i_17_ shl 14))
-                return false
-            }
-            val i_19_ = class348_sub49_sub2.readBits((-24).toByte(), 18)
-            val i_20_ = i_19_ shr 16
-            val i_21_ = 0xff and (i_19_ shr 8)
-            val i_22_ = 0xff and i_19_
-            val i_23_ = SoundBankPatch.aTextureAtlasStateArray6802s!![i]!!.anInt4420
-            val i_24_ = 0x3 and (i_23_ shr 28) - -i_20_
-            val i_25_ = i_21_ + (i_23_ shr 14) and 0xff
-            if (i_0_.toInt() != 105) anIntArray2744 = null
-            val i_26_ = 0xff and i_23_ + i_22_
-            SoundBankPatch.aTextureAtlasStateArray6802s!![i]!!.anInt4420 = i_26_ + (i_24_ shl 28) - -(i_25_ shl 14)
-            return false
+        var anIntArray3726: IntArray? = null
+        var anIntArray179: IntArray? = null
+        var anIntArray4983: IntArray? = null
+
+        var anInt362: Int = 0
+        fun method303(i: Int, i_3_: Int): Short {
+            anInt362++
+            val i_4_ = (i and 0xfe66) shr 10
+            var i_5_ = i shr 3 and 0x70
+            val i_6_ = i and 0x7f
+            i_5_ = (if (i_6_ <= 64) i_6_ * i_5_ shr 7 else i_5_ * (127 + -i_6_) shr 7)
+            val i_7_ = i_5_ + i_6_
+            val i_8_: Int
+            if (i_7_ != 0) i_8_ = (i_5_ shl 8) / i_7_
+            else i_8_ = i_5_ shl 1
+            val i_9_ = i_7_
+            if (i_3_ != 30) return 79.toShort()
+            return (i_9_ or (i_8_ shr 4 shl 7 or (i_4_ shl 10))).toShort()
         }
 
-        fun method1540(i: Int, i_31_: Int, i_32_: Int) {
-            anInt2746++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i_31_, 105.toByte(), 13)
-            class348_sub42_sub15.method3246(-25490)
-            class348_sub42_sub15.anInt9652 = i_32_
-            if (i >= -84) anIntArray2744 = null
+        var anInt1970: Int = 0
+        fun method1177(i: Byte) {
+            anIntArray3726 = method3533(127.toByte(), 2048, 4, 8, 0.4f, 35, true, 8)
+            if (i.toInt() == 122) anInt1970++
         }
 
-        @JvmStatic
-        fun method1543(i: Int) {
-            anIntArray2744 = null
-            if (i != -4524) WhirlpoolHash.anInt2747 = 24
+        var anInt7281: Int = 0
+        fun method3533(i: Byte, i_0_: Int, i_1_: Int, i_2_: Int, f: Float, i_3_: Int, bool: Boolean, i_4_: Int): IntArray {
+            anInt7281++
+            val `is` = IntArray(i_0_)
+            val class348_sub40_sub8 = PerlinNoiseTextureNode()
+            class348_sub40_sub8.anInt9149 = (f * 4096.0f).toInt()
+            class348_sub40_sub8.anInt9164 = i_4_
+            class348_sub40_sub8.anInt9150 = i_1_
+            class348_sub40_sub8.aBoolean9160 = bool
+            class348_sub40_sub8.anInt9158 = i_2_
+            class348_sub40_sub8.anInt9156 = i_3_
+            class348_sub40_sub8.method3044(110)
+            NpcType.method797(1, i_0_, 115.toByte())
+            class348_sub40_sub8.method3069(0, `is`, 115.toByte())
+            if (i < 89) method3535(72, -40)
+            return `is`
         }
     }
 }

@@ -25,8 +25,6 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
         @JvmField
         var anInt175: Int = 0
         @JvmField
-        var anIntArray179: IntArray? = null
-        @JvmField
         var anInt181: Int = 0
         @JvmField
         var anInt182: Int = 0
@@ -50,7 +48,7 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
         fun method218(i: Byte) {
             if (i < 101) Companion.method218((-85).toByte())
             anIntArray187 = null
-            anIntArray179 = null
+            SoundEnvelope.anIntArray179 = null
             aSceneProjector_186 = null
             aWidgetCache_191 = null
             anIntArrayArray174 = null

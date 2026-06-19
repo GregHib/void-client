@@ -584,24 +584,24 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
 
         fun method3241(i: Int, i_7_: Byte, var_renderer: Renderer) {
             anInt9637++
-            if (!TurbulenceTextureNode.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) ParameterizedText.Companion.anInt9577 = 0
+            if (!ActorEntity.aBoolean9307 || !ActorEntity.aBoolean351) ParameterizedText.Companion.anInt9577 = 0
             else {
                 if (ColourKeyTextureNode.aBoolean9352) ItemDefinition.aLong2789 = MinimapLineDrawer.aNanoTimer_5262!!.method446(1)
-                StructConfig.anInt562 = 0
-                TheoraVideoStream.anInt9039 = 0
+                ActorEntity.anInt562 = 0
+                ActorEntity.anInt9039 = 0
                 SourceRowTextureNode.anInt9112 = 0
                 val `is` = var_renderer.Y()
-                GlIndexBufferArb.anInt8498 = (`is`[3].toFloat() / 3.0f).toInt()
-                ScreenBorderFiller.anInt1962 = (`is`[2].toFloat() / 3.0f).toInt()
+                ActorEntity.anInt8498 = (`is`[3].toFloat() / 3.0f).toInt()
+                ActorEntity.anInt1962 = (`is`[2].toFloat() / 3.0f).toInt()
                 var_renderer.method3632(NormalMapTextureNode.anIntArray9436)
-                if ((WorldMapToggle.anInt3872 != (NormalMapTextureNode.anIntArray9436!![0].toFloat() / 3.0f).toInt()) || DrawListState.anInt1480 != (NormalMapTextureNode.anIntArray9436!![1].toFloat() / 3.0f).toInt()) {
+                if ((ActorEntity.anInt3872 != (NormalMapTextureNode.anIntArray9436!![0].toFloat() / 3.0f).toInt()) || DrawListState.anInt1480 != (NormalMapTextureNode.anIntArray9436!![1].toFloat() / 3.0f).toInt()) {
                     DrawListState.anInt1480 = (NormalMapTextureNode.anIntArray9436!![1].toFloat() / 3.0f).toInt()
-                    WorldMapToggle.anInt3872 = (NormalMapTextureNode.anIntArray9436!![0].toFloat() / 3.0f).toInt()
-                    CipheredPacketBuffer.anInt9759 = DrawListState.anInt1480 shr 1
-                    GlTextureBase.anIntArray5091 = IntArray(DrawListState.anInt1480 * WorldMapToggle.anInt3872)
-                    CollisionFlagQuery.anInt1202 = WorldMapToggle.anInt3872 shr 1
+                    ActorEntity.anInt3872 = (NormalMapTextureNode.anIntArray9436!![0].toFloat() / 3.0f).toInt()
+                    ActorEntity.anInt9759 = DrawListState.anInt1480 shr 1
+                    ActorEntity.anIntArray5091 = IntArray(DrawListState.anInt1480 * ActorEntity.anInt3872)
+                    ActorEntity.anInt1202 = ActorEntity.anInt3872 shr 1
                 }
-                SourceRowTextureNode.aAbstractCameraTransform_9114 = var_renderer.method3640()
+                ActorEntity.aAbstractCameraTransform_9114 = var_renderer.method3640()
                 ParameterizedText.Companion.anInt9577 = 0
                 var i_8_ = 0
                 while ( /**/DetailLevelOptionState.anInt6115 > i_8_) {
@@ -610,31 +610,31 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                 }
                 for (i_9_ in 0..<CollisionFlagQuery.anInt1200) SceneModelBuilder.method2498((MapElementDecor.aMapTileShapeArray10330!![i_9_]), var_renderer, (-127).toByte(), i)
                 for (i_10_ in 0..<PackedFlagsAccessor.anInt7101) SceneModelBuilder.method2498(LoadingBarRenderer.aMapTileShapeArray5060!![i_10_], var_renderer, (-128).toByte(), i)
-                NpcDefinition.anInt2946 = 0
+                ActorEntity.anInt2946 = 0
                 if (ParameterizedText.Companion.anInt9577 > 0) {
-                    val i_11_ = GlTextureBase.anIntArray5091!!.size
+                    val i_11_ = ActorEntity.anIntArray5091!!.size
                     val i_12_ = i_11_ + -i_11_ and 0x7
                     var i_13_ = 0
                     while (i_13_ < i_12_) {
-                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
-                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
-                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
-                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
-                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
-                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
-                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
-                        GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
+                        ActorEntity.anIntArray5091!![i_13_++] = 2147483647
+                        ActorEntity.anIntArray5091!![i_13_++] = 2147483647
+                        ActorEntity.anIntArray5091!![i_13_++] = 2147483647
+                        ActorEntity.anIntArray5091!![i_13_++] = 2147483647
+                        ActorEntity.anIntArray5091!![i_13_++] = 2147483647
+                        ActorEntity.anIntArray5091!![i_13_++] = 2147483647
+                        ActorEntity.anIntArray5091!![i_13_++] = 2147483647
+                        ActorEntity.anIntArray5091!![i_13_++] = 2147483647
                     }
-                    while (i_11_ > i_13_) GlTextureBase.anIntArray5091!![i_13_++] = 2147483647
-                    ModelTransformParams.anInt4319 = 1
+                    while (i_11_ > i_13_) ActorEntity.anIntArray5091!![i_13_++] = 2147483647
+                    ActorEntity.anInt4319 = 1
                     var i_14_ = 0
                     while ((i_14_ < ParameterizedText.Companion.anInt9577)) {
                         val mapTileShape: MapTileShape = MinimapAreaMarkerNode.Companion.aMapTileShapeArray9700!![i_14_]!!
-                        TextureMapImageNode.method3125(mapTileShape.aShortArray4194!![3].toInt(), mapTileShape.aShortArray4183!![0].toInt(), mapTileShape.aShortArray4194!![1].toInt(), mapTileShape.aShortArray4188!![3].toInt(), mapTileShape.aShortArray4188!![1].toInt(), (-105).toByte(), mapTileShape.aShortArray4183!![1].toInt(), mapTileShape.aShortArray4188!![0].toInt(), mapTileShape.aShortArray4194!![0].toInt(), mapTileShape.aShortArray4183!![3].toInt())
-                        TextureMapImageNode.method3125(mapTileShape.aShortArray4194!![3].toInt(), mapTileShape.aShortArray4183!![1].toInt(), mapTileShape.aShortArray4194!![2].toInt(), mapTileShape.aShortArray4188!![3].toInt(), mapTileShape.aShortArray4188!![2].toInt(), (-118).toByte(), mapTileShape.aShortArray4183!![2].toInt(), mapTileShape.aShortArray4188!![1].toInt(), mapTileShape.aShortArray4194!![1].toInt(), mapTileShape.aShortArray4183!![3].toInt())
+                        ActorEntity.method3125(mapTileShape.aShortArray4194!![3].toInt(), mapTileShape.aShortArray4183!![0].toInt(), mapTileShape.aShortArray4194!![1].toInt(), mapTileShape.aShortArray4188!![3].toInt(), mapTileShape.aShortArray4188!![1].toInt(), (-105).toByte(), mapTileShape.aShortArray4183!![1].toInt(), mapTileShape.aShortArray4188!![0].toInt(), mapTileShape.aShortArray4194!![0].toInt(), mapTileShape.aShortArray4183!![3].toInt())
+                        ActorEntity.method3125(mapTileShape.aShortArray4194!![3].toInt(), mapTileShape.aShortArray4183!![1].toInt(), mapTileShape.aShortArray4194!![2].toInt(), mapTileShape.aShortArray4188!![3].toInt(), mapTileShape.aShortArray4188!![2].toInt(), (-118).toByte(), mapTileShape.aShortArray4183!![2].toInt(), mapTileShape.aShortArray4188!![1].toInt(), mapTileShape.aShortArray4194!![1].toInt(), mapTileShape.aShortArray4183!![3].toInt())
                         i_14_++
                     }
-                    ModelTransformParams.anInt4319 = 2
+                    ActorEntity.anInt4319 = 2
                 }
                 if (ColourKeyTextureNode.aBoolean9352) GlslEnvMaterialPass.aLong6276 = (MinimapLineDrawer.aNanoTimer_5262!!.method446(1) + -ItemDefinition.aLong2789)
             }

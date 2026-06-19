@@ -27,7 +27,6 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
         var anInt9506: Int = 0
         var anInt9507: Int = 0
         var anInt9508: Int = 0
-        var anInt9509: Int = 0
 
         fun method3174(i: Int, i_0_: Int, i_1_: Int, bool: Boolean, i_2_: Byte, i_3_: Int) {
             var i = i
@@ -83,21 +82,6 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             WidgetComponentNode.anInt4656 = i_1_.toShort().toInt()
             LocalizedTextTriple.anInt3764 = i
             val i_11_ = -3 % ((-8 - i_2_) / 56)
-        }
-
-        fun method3175(i: Byte) {
-            if (!method3196(WorldMapRenderer.anInt4674, -114) && !method2672(WorldMapRenderer.anInt4674, -103)) {
-                val i_12_ = ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) shr 3)
-                val i_13_ = ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) shr 3)
-                if (i_12_ < 0 || GlCubemapLightPass.anInt7319 shr 3 <= i_12_ || i_13_ < 0 || (RangeThresholdTextureNode.anInt9109 shr 3 <= i_13_)) AwtKeyboardListener.method2703(0, GlCubemapLightPass.anInt7319 shr 4, (RangeThresholdTextureNode.anInt9109 shr 4), (-13).toByte())
-                else AwtKeyboardListener.method2703(5000, i_12_, i_13_, (-13).toByte())
-            } else AwtKeyboardListener.method2703(5000, GlslMaterialPass.anInt6246 shr 12, CompositeRgbNoiseTexture.anInt8685 shr 12, (-13).toByte())
-            anInt9509++
-            method3134(-1)
-            method2988(true)
-            val i_14_ = -8 % ((-30 - i) / 38)
-            method3126(98.toByte())
-            method1131(117)
         }
 
         @JvmStatic

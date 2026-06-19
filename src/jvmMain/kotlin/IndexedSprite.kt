@@ -27,11 +27,7 @@ class IndexedSprite : Sprite {
         @JvmField
         var anInt5194: Int = 0
         @JvmField
-        var anInt5195: Int = 0
-        @JvmField
         var aStringArray5197: Array<String?>? = arrayOfNulls<String>(100)
-        @JvmField
-        var anInt5198: Int = 0
         @JvmField
         var aServerConnectionInfo_5199: ServerConnectionInfo? = null
 
@@ -42,45 +38,7 @@ class IndexedSprite : Sprite {
             aServerConnectionInfo_5199 = null
         }
 
-        @JvmStatic
-        fun method163(i: Int): Int {
-            anInt5198++
-            if (i != 512) method165(122, 62, -125, 72, -74, 116, 43, 104.toByte(), 62, -115)
-            return NpcConfig.aResourceLoaderThread_897!!.method2325((-98).toByte())
-        }
 
-        @JvmStatic
-        fun method164(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int): Boolean {
-            anInt5195++
-            if (!TurbulenceTextureNode.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
-            if (NpcDefinition.anInt2946 < 100) return false
-            val i_3_ = TextureCache.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_]
-            if (i_3_ == -RandomAccessFileOnDisk.anInt3049) return false
-            if (RandomAccessFileOnDisk.anInt3049 == i_3_) return true
-            if (SoundCacheState.aTerrainTileArray4142 == NativeSprite.Companion.aTerrainTileArray5191) return false
-            val i_4_ = i_0_ shl Tooltip.anInt4459
-            val i_5_ = i_2_ shl Tooltip.anInt4459
-            if (i_1_.toInt() != -97) method163(-4)
-            if ((ScrollTexMaterialPass.method2169(i_4_ - -1, i_4_ - (-ArchiveFileConditionWrapper.anInt3465 - -1), 1 + i_5_, 1 + i_4_, -1 + (i_5_ - -ArchiveFileConditionWrapper.anInt3465), NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, i_0_), NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, 1 + i_0_), NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_), -1 + ArchiveFileConditionWrapper.anInt3465 + i_5_, false)) && (ScrollTexMaterialPass.method2169(
-                    1 + i_4_,
-                    ArchiveFileConditionWrapper.anInt3465 + (i_4_ + -1),
-                    i_5_ + 1,
-                    ArchiveFileConditionWrapper.anInt3465 + (i_4_ - 1),
-                    i_5_ + ArchiveFileConditionWrapper.anInt3465 - 1,
-                    NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_2_ - -1, 1 + i_0_),
-                    NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_ + 1),
-                    NativeSprite.Companion.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_),
-                    1 + i_5_,
-                    false
-                ))
-            ) {
-                TheoraVideoStream.anInt9039++
-                TextureCache.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = RandomAccessFileOnDisk.anInt3049
-                return true
-            }
-            TextureCache.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = -RandomAccessFileOnDisk.anInt3049
-            return false
-        }
 
         @JvmStatic
         fun method165(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Byte, i_13_: Int, i_14_: Int) {

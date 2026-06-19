@@ -112,7 +112,7 @@ class Npc : ProjectedGroundDecor() {
         val class101 = var_renderer!!.method3705()
         val i_20_ = this.aCompassSmoother_10217.method2019((-69).toByte())
         class101.method895(i_20_)
-        val class357 = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![this.plane.toInt()]!![this.x shr Tooltip.anInt4459]!![this.y shr Tooltip.anInt4459])
+        val class357 = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![this.plane.toInt()]!![this.x shr ActorEntity.anInt4459]!![this.y shr ActorEntity.anInt4459])
         if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null) {
             val i_21_ = (-class357.aClass318_Sub1_Sub1_4402!!.aShort8727 + this.anInt10274)
             this.anInt10274 = (this.anInt10274 - i_21_.toFloat() / 10.0f).toInt()

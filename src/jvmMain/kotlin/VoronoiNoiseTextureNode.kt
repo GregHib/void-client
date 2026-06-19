@@ -1,6 +1,6 @@
-import java.util.*
 import kotlin.math.max
 import kotlin.math.sqrt
+import kotlin.random.Random
 
 class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
     private var aShortArray9116 = ShortArray(512)
@@ -24,7 +24,7 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
 
     override fun method3044(i: Int) {
         if (i > 108) {
-            aByteArray9119 = Renderer.method3664(anInt9122, 124)
+            aByteArray9119 = PerlinNoiseTextureNode.method3664(anInt9122, 124)
             anInt9126++
             method3061(true)
         }
@@ -35,16 +35,16 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (i_0_ != 255) method3044(-57)
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_1_ = anInt9117 * LightDetailOptionState.anIntArray6035!![i] + 2048
+            val i_1_ = anInt9117 * PerlinNoiseTextureNode.anIntArray6035!![i] + 2048
             val i_2_ = i_1_ shr 12
             val i_3_ = 1 + i_2_
             var i_4_ = 0
-            while_140_@ while ( /**/ClampTextureNode.Companion.anInt9139 > i_4_) {
+            while_140_@ while ( /**/PerlinNoiseTextureNode.Companion.anInt9139 > i_4_) {
                 GlArrayBufferObject.anInt4715 = 2147483647
                 HintArrowOrMessage.anInt2023 = GlArrayBufferObject.anInt4715
                 GameDisplayManager.anInt2835 = HintArrowOrMessage.anInt2023
                 SpriteRenderEntry.anInt9715 = GameDisplayManager.anInt2835
-                val i_5_ = 2048 - -(SceneEffectMarker.anIntArray6432!![i_4_] * anInt9129)
+                val i_5_ = 2048 - -(PerlinNoiseTextureNode.anIntArray6432!![i_4_] * anInt9129)
                 val i_6_ = i_5_ shr 12
                 val i_7_ = i_6_ + 1
                 for (i_8_ in i_2_ + -1..i_3_) {

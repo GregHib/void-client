@@ -266,7 +266,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (WidgetRedrawTracker.anInt3931 != 0) MapSceneRenderer.method385(false, MapTileShape.aClass237_Sub1_4197, DragDropController.aByteArrayArray4281)
                     else TerrainTileShape.method2727((-65).toByte(), MapTileShape.aClass237_Sub1_4197, (DragDropController.aByteArrayArray4281))
                     GroundItemRenderState.method1015(GlCubemapLightPass.anInt7319 shr 4, (RangeThresholdTextureNode.anInt9109 shr 4), true)
-                    LoadingScreenImageNode.method3175((-77).toByte())
+                    Client.method3175((-77).toByte())
                     if (bool_25_) {
                         DoublyLinkedNodeList.method1879(true)
                         VarpStore.aClass237_Sub1_5067 = WorldMapSceneSoftware(1, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, true)
@@ -293,7 +293,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     InterfaceBounds.method2938(66.toByte())
                     if (TextureDefinitionCache.anInt2964 < 96) method2271(31268)
                     RegionSceneLoader.method2193(true, (-119).toByte())
-                    MapTileShape.aClass237_Sub1_4197!!.method1680(null, (-125).toByte(), (if (!bool_25_) null else (SoundCacheState.aTerrainTileArray4142!![0])), FacingDirectionNode.aRenderer6654)
+                    MapTileShape.aClass237_Sub1_4197!!.method1680(null, (-125).toByte(), (if (!bool_25_) null else (ActorEntity.aTerrainTileArray4142!![0])), FacingDirectionNode.aRenderer6654)
                     MapTileShape.aClass237_Sub1_4197!!.method1697(false, FacingDirectionNode.aRenderer6654, -36)
                     RegionSceneLoader.method2193(true, (-122).toByte())
                     if (bool_25_) {
@@ -330,7 +330,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     MapElementManager.method3514((-105).toByte())
                     InterfaceBounds.method2938(62.toByte())
                     FrameStatsReset.method1131(99)
-                    if (RsaVarbitHandler.aFrame4904 != null && PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null && WorldMapRenderer.anInt4674 == 11) {
+                    if (RsaVarbitHandler.aFrame4904 != null && Client.aAbstractGameSocket_9165 != null && WorldMapRenderer.anInt4674 == 11) {
                         RenderableEntry.anInt4335++
                         val class348_sub47 = method2148(FileIoUtil.aFontMetaRef_4094, (TheoraVideoStream.aIsaacCipher_9029), i xor 0x55.inv())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(108.toByte(), 1057001181)
@@ -353,7 +353,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (WorldMapRenderer.anInt4674 != 4) {
                         if (WorldMapRenderer.anInt4674 != 8) {
                             ByteBufferStatics.method3379(2, 10)
-                            if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
+                            if (Client.aAbstractGameSocket_9165 != null) {
                                 val class348_sub47 = method2148((RsaPacketDecoder.aFontMetaRef_4223), (TheoraVideoStream.aIsaacCipher_9029), -106)
                                 InterfaceComponentGroup.method3243(127, class348_sub47)
                             }

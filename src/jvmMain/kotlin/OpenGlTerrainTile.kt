@@ -246,7 +246,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                                     f_89_ = ((this.aHa_Sub2_8272!!.aFloatArray7825[2]) * f_78_ + (f_77_ * (this.aHa_Sub2_8272!!.aFloatArray7825[0]) + f_76_ * (this.aHa_Sub2_8272!!.aFloatArray7825[1])))
                                     f_89_ = ((this.aHa_Sub2_8272!!.aFloat7768) + (if (f_89_ > 0.0f) (this.aHa_Sub2_8272!!.aFloat7832) else (this.aHa_Sub2_8272!!.aFloat7871)) * f_89_)
                                 }
-                                i_75_ = (ParticleEmitterNode.anIntArray179!![0xff80 and i_69_ or i_90_])
+                                i_75_ = (SoundEnvelope.anIntArray179!![0xff80 and i_69_ or i_90_])
                             }
                             var linkedListNode: LinkedListNode? = null
                             if ((i_65_ and -1 + anInt8260) == 0 && (anInt8260 + -1 and i_66_) == 0) linkedListNode = hashtable.method3480(l, -6008)
@@ -257,7 +257,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                                     var i_93_ = (i_70_ and 0x7f) * i_74_ shr 7
                                     if (i_93_ < 2) i_93_ = 2
                                     else if (i_93_ > 126) i_93_ = 126
-                                    i_92_ = (ParticleEmitterNode.anIntArray179!![0xff80 and i_70_ or i_93_])
+                                    i_92_ = (SoundEnvelope.anIntArray179!![0xff80 and i_70_ or i_93_])
                                     if ((0x7 and this.anInt8235) == 0) {
                                         var f_94_ = ((this.aHa_Sub2_8272!!.aFloatArray7825[0]) * f_77_ + f_76_ * (this.aHa_Sub2_8272!!.aFloatArray7825[1]) + f_78_ * (this.aHa_Sub2_8272!!.aFloatArray7825[2]))
                                         f_94_ = ((if (f_89_ > 0.0f) (this.aHa_Sub2_8272!!.aFloat7832) else (this.aHa_Sub2_8272!!.aFloat7871)) * f_89_ + (this.aHa_Sub2_8272!!.aFloat7768))

@@ -151,8 +151,6 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wa
         @JvmField
         var anInt6280: Int = 0
         @JvmField
-        var anInt6281: Int = 0
-        @JvmField
         var anInt6282: Int = 0
         @JvmField
         var anInt6283: Int = 0
@@ -226,32 +224,5 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wa
             }
         }
 
-        @JvmStatic
-        fun method2169(i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, bool: Boolean): Boolean {
-            var i = i
-            var i_10_ = i_10_
-            var i_11_ = i_11_
-            var i_12_ = i_12_
-            var i_13_ = i_13_
-            var i_14_ = i_14_
-            var i_15_ = i_15_
-            var i_16_ = i_16_
-            var i_17_ = i_17_
-            anInt6281++
-            if (!ModelLightingConfig.method1422(i_16_, i_11_, i, -7596)) return false
-            i_16_ = SequencedWallEntity.anIntArray10172!![1]
-            i = SequencedWallEntity.anIntArray10172!![0]
-            i_11_ = SequencedWallEntity.anIntArray10172!![2]
-            if (!ModelLightingConfig.method1422(i_15_, i_17_, i_10_, -7596)) return false
-            i_10_ = SequencedWallEntity.anIntArray10172!![0]
-            i_17_ = SequencedWallEntity.anIntArray10172!![2]
-            i_15_ = SequencedWallEntity.anIntArray10172!![1]
-            if (!ModelLightingConfig.method1422(i_14_, i_13_, i_12_, -7596)) return false
-            i_13_ = SequencedWallEntity.anIntArray10172!![2]
-            if (bool != false) return false
-            i_14_ = SequencedWallEntity.anIntArray10172!![1]
-            i_12_ = SequencedWallEntity.anIntArray10172!![0]
-            return TextureMapImageNode.method3125(i_12_, i_16_, i_10_, i_13_, i_17_, (-76).toByte(), i_15_, i_11_, i, i_14_)
-        }
     }
 }

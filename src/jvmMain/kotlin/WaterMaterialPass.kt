@@ -298,9 +298,9 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
             run {
                 var i = 0
                 while (MapAreaDefinition.anInt2524 > i) {
-                    for (i_20_ in 0..<SpotAnimEntity.anInt6451) {
+                    for (i_20_ in 0..<ActorEntity.anInt6451) {
                         var i_21_ = 0
-                        while ((i_21_ < RegionSceneShifter.anInt7054)) {
+                        while ((i_21_ < ActorEntity.anInt7054)) {
                             val class357 = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_21_]!![i_20_])
                             if (class357 != null) {
                                 if (class357.aShort4398 > 0) class357.aShort4398 = (class357.aShort4398 * -1).toShort()
@@ -314,9 +314,9 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
             }
             var i = 0
             while (MapAreaDefinition.anInt2524 > i) {
-                for (i_22_ in 0..<SpotAnimEntity.anInt6451) {
+                for (i_22_ in 0..<ActorEntity.anInt6451) {
                     var i_23_ = 0
-                    while (RegionSceneShifter.anInt7054 > i_23_) {
+                    while (ActorEntity.anInt7054 > i_23_) {
                         val class357 = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_23_]!![i_22_])
                         if (class357 != null) {
                             val bool_24_ = ((HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i_23_]!![i_22_]) != null && (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i_23_]!![i_22_]!!.aSceneCollisionEntry_4400) != null)
@@ -334,8 +334,8 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                                     class357_29_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_23_]!![i_25_ + -1])
                                 }
                                 class357_29_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_23_]!![1 + i_26_])
-                                while (((RegionSceneShifter.anInt7054 > i_26_) && class357_29_ != null && class357_29_.aShort4409 < 0 && (class357_29_.aShort4409 == class357.aShort4409) && (class357.aShort4401 == class357_29_.aShort4401) && i_30_ == (TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_26_ - -1, i_23_)))) {
-                                    if ((RegionSceneShifter.anInt7054 > 1 + i_26_) && i_30_ != (TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_26_ + 2, i_23_))) break
+                                while (((ActorEntity.anInt7054 > i_26_) && class357_29_ != null && class357_29_.aShort4409 < 0 && (class357_29_.aShort4409 == class357.aShort4409) && (class357.aShort4401 == class357_29_.aShort4401) && i_30_ == (TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_26_ - -1, i_23_)))) {
+                                    if ((ActorEntity.anInt7054 > 1 + i_26_) && i_30_ != (TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_26_ + 2, i_23_))) break
                                     i_26_++
                                     class357_29_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_23_]!![i_26_ + 1])
                                 }
@@ -344,9 +344,9 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                                 val i_33_ = (class357.aShort4409 * i_31_ + i_32_)
                                 val i_34_ = (TerrainTileShape.aTerrainTileArray8801!![if (!bool_24_) i_27_ else i_27_ + 1]!!.method3982((-86).toByte(), 1 + i_26_, i_23_))
                                 val i_35_ = (i_34_ - -(i_31_ * class357.aShort4409))
-                                val i_36_ = i_23_ shl Tooltip.anInt4459
-                                val i_37_ = i_25_ shl Tooltip.anInt4459
-                                val i_38_ = (ArchiveFileConditionWrapper.anInt3465 + (i_26_ shl Tooltip.anInt4459))
+                                val i_36_ = i_23_ shl ActorEntity.anInt4459
+                                val i_37_ = i_25_ shl ActorEntity.anInt4459
+                                val i_38_ = (ActorEntity.anInt3465 + (i_26_ shl ActorEntity.anInt4459))
                                 MapElementDecor.aMapTileShapeArray10330!![CollisionFlagQuery.anInt1200++] = (MapTileShape(1, i_28_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, i_32_, i_34_, i_35_, i_33_, i_37_, i_38_, i_38_, i_37_))
                                 var i_39_ = i_27_
                                 while (i_28_ >= i_39_) {
@@ -372,8 +372,8 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                                     class357_45_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_41_ - 1]!![i_22_])
                                 }
                                 class357_45_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_42_ - -1]!![i_22_])
-                                while ((i_42_ < SpotAnimEntity.anInt6451 && class357_45_ != null && class357_45_.aShort4398 < 0 && (class357.aShort4398 == class357_45_.aShort4398) && (class357_45_.aShort4397 == class357.aShort4397) && ((TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_42_ + 1)) == i_46_))) {
-                                    if (SpotAnimEntity.anInt6451 > i_42_ + 1 && ((TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, 2 + i_42_)) != i_46_)) break
+                                while ((i_42_ < ActorEntity.anInt6451 && class357_45_ != null && class357_45_.aShort4398 < 0 && (class357.aShort4398 == class357_45_.aShort4398) && (class357_45_.aShort4397 == class357.aShort4397) && ((TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_42_ + 1)) == i_46_))) {
+                                    if (ActorEntity.anInt6451 > i_42_ + 1 && ((TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, 2 + i_42_)) != i_46_)) break
                                     i_42_++
                                     class357_45_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![1 + i_42_]!![i_22_])
                                 }
@@ -382,9 +382,9 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                                 val i_49_ = (i_48_ - -(i_47_ * class357.aShort4398))
                                 val i_50_ = (TerrainTileShape.aTerrainTileArray8801!![if (!bool_24_) i_43_ else 1 + i_43_]!!.method3982((-86).toByte(), i_22_, 1 + i_42_))
                                 val i_51_ = (class357.aShort4398 * i_47_ + i_50_)
-                                val i_52_ = i_41_ shl Tooltip.anInt4459
-                                val i_53_ = ((i_42_ shl Tooltip.anInt4459) + ArchiveFileConditionWrapper.anInt3465)
-                                val i_54_ = i_22_ shl Tooltip.anInt4459
+                                val i_52_ = i_41_ shl ActorEntity.anInt4459
+                                val i_53_ = ((i_42_ shl ActorEntity.anInt4459) + ActorEntity.anInt3465)
+                                val i_54_ = i_22_ shl ActorEntity.anInt4459
                                 MapElementDecor.aMapTileShapeArray10330!![CollisionFlagQuery.anInt1200++] = (MapTileShape(2, i_44_, i_52_, i_53_, i_53_, i_52_, i_48_, i_50_, i_51_, i_49_, i_54_ + class357.aShort4397, i_54_ + class357.aShort4397, class357.aShort4397 + i_54_, (i_54_ - -class357.aShort4397)))
                                 for (i_55_ in i_43_..i_44_) {
                                     var i_56_ = i_41_

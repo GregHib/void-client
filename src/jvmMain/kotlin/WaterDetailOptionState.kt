@@ -23,7 +23,6 @@ class WaterDetailOptionState : GraphicsOptionState {
 
     override fun method1710(i: Int): Int {
         anInt5982++
-        if (i != 20014) aSoundEnvelopeArray5993 = null
         return 2
     }
 
@@ -56,8 +55,6 @@ class WaterDetailOptionState : GraphicsOptionState {
         @JvmField
         var aIntRange_5992: IntRange? = IntRange(17, 4)
         @JvmField
-        var aSoundEnvelopeArray5993: Array<SoundEnvelope?>? = null
-        @JvmField
         var anInt5994: Int = 0
         @JvmField
         var aKeyboardLayoutCache_5995: KeyboardLayoutCache? = null
@@ -81,7 +78,7 @@ class WaterDetailOptionState : GraphicsOptionState {
             aConfigFlagUtil_5989 = null
             anIntArrayArray5991 = null
             aKeyboardLayoutCache_5995 = null
-            aSoundEnvelopeArray5993 = null
+            SceneEntity.aSoundEnvelopeArray5993 = null
             aModelLightingConfig_5990 = null
         }
 
@@ -99,7 +96,7 @@ class WaterDetailOptionState : GraphicsOptionState {
                 val class124 = ParticleConfigParser.method2277(0, RasterSprite.aJs5Archive_5207!!, AbstractFrameBufferSurface.anInt6923, -1)
                 val l = GameClock.method599(-88)
                 FacingDirectionNode.aRenderer6654!!.la()
-                SettingsCrcWriter.aAbstractCameraTransform_2123!!.method894(0, TheoraVideoStream.anInt9037, 0)
+                SettingsCrcWriter.aAbstractCameraTransform_2123!!.method894(0, ActorEntity.anInt9037, 0)
                 FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                 FacingDirectionNode.aRenderer6654!!.DA(dimension.width / 2, dimension.height / 2, 512, 512)
                 FacingDirectionNode.aRenderer6654!!.xa(1.0f)
@@ -112,7 +109,7 @@ class WaterDetailOptionState : GraphicsOptionState {
                     FacingDirectionNode.aRenderer6654!!.ya()
                     for (i_5_ in 15 downTo 0) {
                         for (i_6_ in 0..i_5_) {
-                            MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method894(((-(i_5_.toFloat() / 2.0f) + i_6_.toFloat()) * ArchiveFileConditionWrapper.anInt3465.toFloat()).toInt(), 0, (i_5_ + 1) * ArchiveFileConditionWrapper.anInt3465)
+                            MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method894(((-(i_5_.toFloat() / 2.0f) + i_6_.toFloat()) * ActorEntity.anInt3465.toFloat()).toInt(), 0, (i_5_ + 1) * ActorEntity.anInt3465)
                             i_3_++
                             class64.method615(MinimapSquareDrawer.aAbstractCameraTransform_5209, null, 0)
                             if (GameClock.method599(-105) + -l >= i_2_.toLong()) break@while_80_

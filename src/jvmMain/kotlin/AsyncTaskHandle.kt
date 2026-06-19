@@ -27,7 +27,6 @@ class AsyncTaskHandle internal constructor(var aBoolean2574: Boolean) {
         var anInt2580: Int = 0
         @JvmField
         var anInt2581: Int = 0
-        var anInt2582: Int = 0
 
         fun method1434(i: Int) {
             anInt2573++
@@ -53,13 +52,6 @@ class AsyncTaskHandle internal constructor(var aBoolean2574: Boolean) {
             }
             Client.method106()
             if (i == -14988) Client.method112()
-        }
-
-        @JvmStatic
-        fun method1436(i: Int, i_3_: Int): Boolean {
-            val i_4_ = 22 % ((i - 16) / 35)
-            anInt2582++
-            return i_3_ == (i_3_ and -i_3_)
         }
 
         @JvmStatic

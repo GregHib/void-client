@@ -14,10 +14,10 @@ class NoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         anInt9261++
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_4_ = LightDetailOptionState.anIntArray6035!![i]
+            val i_4_ = PerlinNoiseTextureNode.anIntArray6035!![i]
             var i_5_ = 0
-            while ((i_5_ < ClampTextureNode.Companion.anInt9139)) {
-                `is`[i_5_] = method3103(i_4_, SceneEffectMarker.anIntArray6432!![i_5_], 22) % 4096
+            while ((i_5_ < PerlinNoiseTextureNode.Companion.anInt9139)) {
+                `is`[i_5_] = method3103(i_4_, PerlinNoiseTextureNode.anIntArray6432!![i_5_], 22) % 4096
                 i_5_++
             }
         }

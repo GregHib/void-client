@@ -30,9 +30,9 @@ class DirectionalStripeTextureNode : AbstractProceduralTextureNode(0, true) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             var i_3_ = 0
-            while ( /**/i_3_ < ClampTextureNode.Companion.anInt9139) {
-                val i_4_ = SceneEffectMarker.anIntArray6432!![i_3_]
-                val i_5_ = LightDetailOptionState.anIntArray6035!![i]
+            while ( /**/i_3_ < PerlinNoiseTextureNode.Companion.anInt9139) {
+                val i_4_ = PerlinNoiseTextureNode.anIntArray6432!![i_3_]
+                val i_5_ = PerlinNoiseTextureNode.anIntArray6035!![i]
                 var i_6_ = anInt9099 * i_4_ shr 12
                 val i_7_ = anInt9095 * i_5_ shr 12
                 val i_8_ = i_4_ % (4096 / anInt9099) * anInt9099

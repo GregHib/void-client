@@ -10,8 +10,6 @@ object Tooltip {
     var anInt4457: Int = 0
     @JvmField
     var anInt4458: Int = -1
-    @JvmField
-    var anInt4459: Int = 0
     var aParticleDefLoader_4460: ParticleDefLoader? = null
 
     @JvmStatic
@@ -94,7 +92,7 @@ object Tooltip {
     var anInt642: Int = 0
     @Throws(ClientException::class)
     fun method395(i: Int) {
-        if (WhirlpoolHash.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
+        if (WhirlpoolHash.anInt7207 == 1) CameraRotationStub.aRenderer326!!.method3626(MapRegionLoaderThread.anInt4211, FireParticleStream.anInt9157)
         else CameraRotationStub.aRenderer326!!.method3626(0, 0)
         if (i >= 73) anInt642++
     }

@@ -1,5 +1,3 @@
-import NullRenderPass.Companion.method3533
-
 /* Class141 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -56,7 +54,6 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
     }
 
     fun method1176(i: Int, i_1_: Byte) {
-        if (i_1_ < 31) Companion.method1177((-119).toByte())
         withLock(aLruByteCache_1963) {
             aLruByteCache_1963.method578(2, i)
         }
@@ -90,20 +87,12 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
         var anInt1967: Int = 0
         var anInt1968: Int = 0
         var anInt1969: Int = 0
-        var anInt1970: Int = 0
         var anInt1972: Int = 0
         var anIntArray1973: IntArray? = intArrayOf(0, 1, 2, 3, 4, 5, 6, 14)
-        @JvmField
-        var anInt1974: Int = 0
         var anIntArray1975: IntArray?
         @JvmField
         var aSpriteArchiveLoader_1977: SpriteArchiveLoader? = null
 
-        @JvmStatic
-        fun method1177(i: Byte) {
-            GlTexture3D.anIntArray3726 = method3533(127.toByte(), 2048, 4, 8, 0.4f, 35, true, 8)
-            if (i.toInt() == 122) anInt1970++
-        }
 
         @JvmStatic
         fun method1179(i: Byte) {
@@ -111,7 +100,6 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
             aSpriteArchiveLoader_1977 = null
             anIntArray1973 = null
             aBoundsConstraintEntry_1966 = null
-            if (i >= -111) method1177(47.toByte())
         }
 
         init {

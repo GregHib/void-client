@@ -57,7 +57,7 @@ abstract class ModelBatchBase {
         @JvmStatic
         fun method1130(var_renderNode: RenderNode?, i: Int, i_1_: Int, i_2_: Int, bools: BooleanArray?): Boolean {
             var bool = false
-            if (NativeSprite.aTerrainTileArray5191 != SoundCacheState.aTerrainTileArray4142) {
+            if (ActorEntity.aTerrainTileArray5191 != ActorEntity.aTerrainTileArray4142) {
                 val i_3_ = TerrainTileShape.aTerrainTileArray8801!![i]!!.method3986(i_1_, i_2_, (-109).toByte())
                 var i_4_ = 0
                 while ( /**/i_4_ <= i) {

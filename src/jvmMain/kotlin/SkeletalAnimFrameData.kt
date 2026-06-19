@@ -21,8 +21,4 @@ class SkeletalAnimFrameData {
     @JvmField
     var anInt353: Int = 0
 
-    companion object {
-        @JvmField
-        var aBoolean351: Boolean = true
-    }
 }

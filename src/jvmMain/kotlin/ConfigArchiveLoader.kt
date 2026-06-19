@@ -9,7 +9,7 @@ import SocketFactory.Companion.method2049
 import WaterMaterialPass.Companion.method2148
 import CubemapTextureImplSource.Companion.method2271
 import SceneObjectEntity.Companion.method2405
-import ActorEntity.Companion.method2478
+import ArchiveResourceProvider.Companion.method2348
 import VorbisOggDecoder.Companion.method2972
 import TurbulenceTextureNode.Companion.method3113
 import GlTexture2DRegion.Companion.method3553
@@ -111,8 +111,8 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.equals("occlude", ignoreCase = true)) {
-                            TurbulenceTextureNode.aBoolean9307 = !TurbulenceTextureNode.aBoolean9307
-                            if (TurbulenceTextureNode.aBoolean9307) {
+                            ActorEntity.aBoolean9307 = !ActorEntity.aBoolean9307
+                            if (ActorEntity.aBoolean9307) {
                                 method94("Occlsion now on!", -102)
                                 return
                             } else method94("Occlsion now off!", -106)
@@ -192,7 +192,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         }
                         if (string.equals("breakcon", ignoreCase = true)) {
                             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2239(-95)
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1702(i + 123)
+                            Client.aAbstractGameSocket_9165!!.method1702(i + 123)
                             ClientMachineInfo.aMediaStreamClient_6601!!.method1898(true)
                             method94("Breaking new connections for 5 seconds", i + -4)
                             return
@@ -369,7 +369,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.equals("getheight", ignoreCase = true)) {
-                            method94(("Height: " + (NativeSprite.aTerrainTileArray5191!![(LocalPlayerState.aPlayer_1907!!.plane).toInt()]!!.method3982((-86).toByte(), (LocalPlayerState.aPlayer_1907!!.y) shr 9, (LocalPlayerState.aPlayer_1907!!.x) shr 9))), i.toInt() xor 0x1)
+                            method94(("Height: " + (ActorEntity.aTerrainTileArray5191!![(LocalPlayerState.aPlayer_1907!!.plane).toInt()]!!.method3982((-86).toByte(), (LocalPlayerState.aPlayer_1907!!.y) shr 9, (LocalPlayerState.aPlayer_1907!!.x) shr 9))), i.toInt() xor 0x1)
                             return
                         }
                         if (string.equals("resetminimap", ignoreCase = true)) {
@@ -702,6 +702,68 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("lba.B(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + bool_0_ + ',' + i + ')'))
             }
+        }
+        
+        var anInt8763: Int = 0
+        fun method2478(i: Int): Int {
+            if (i != 1000) return -103
+            anInt8763++
+            var bool = false
+            var bool_5_ = false
+            var bool_6_ = false
+            if (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3777 && !VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
+                bool = (NoiseTextureNode.aClass348_Sub4_9264!!.anInt6609) >= 512 || (NoiseTextureNode.aClass348_Sub4_9264!!.anInt6609) == 0
+                if (PrivilegedOperationWorker.aString3803.startsWith("win")) {
+                    bool_6_ = true
+                    bool_5_ = true
+                } else bool_5_ = true
+            }
+            if (ScreenAnchorAlignment.aBoolean2881) bool = false
+            if (VideoStreamDecoder.aBoolean4117) bool_5_ = false
+            if (AbstractTileShapeStatics.aBoolean6558) bool_6_ = false
+            if (!bool && !bool_5_ && !bool_6_) return method2348(-8454)
+            var i_7_ = -1
+            var i_8_ = -1
+            var i_9_ = -1
+            if (bool) {
+                try {
+                    i_7_ = method1781(2, -126, 1000)
+                } catch (exception: Exception) {
+                    /* empty */
+                }
+            }
+            do {
+                if (bool_6_) {
+                    try {
+                        i_9_ = method1781(3, -70, 1000)
+                        if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -33350) == 3) {
+                            val class365 = FacingDirectionNode.aRenderer6654!!.c()
+                            val l = (0xffffffffffffL and class365.aLong4471)
+                            val i_10_ = class365.anInt4476
+                            if (i_10_ == 4318) {
+                                bool_5_ = bool_5_ and (l >= 64425238954L)
+                                break
+                            } else if (i_10_ != 4098) break
+                            bool_5_ = bool_5_ and (l >= 60129613779L)
+                        }
+                    } catch (exception: Exception) {
+                        /* empty */
+                    }
+                }
+            } while (false)
+            if (bool_5_) {
+                try {
+                    i_8_ = method1781(1, i xor 0x3ab.inv(), 1000)
+                } catch (exception: Exception) {
+                    /* empty */
+                }
+            }
+            if (i_7_ == -1 && i_8_ == -1 && i_9_ == -1) return method2348(i + -9454)
+            i_9_ = (i_9_ * 1.1f).toInt()
+            i_8_ = (i_8_ * 1.1f).toInt()
+            if (i_7_ > i_9_ && i_8_ < i_7_) return SpriteRenderable.method454(i_7_, (-116).toByte())
+            if (i_9_ <= i_8_) return GameClock.method600((-59).toByte(), 1, i_8_)
+            return GameClock.method600((-80).toByte(), 3, i_9_)
         }
 
         fun method813(i: Int, i_25_: Int, i_26_: Int): ActorEntity? {

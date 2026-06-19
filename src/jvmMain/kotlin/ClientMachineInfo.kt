@@ -147,7 +147,7 @@ class ClientMachineInfo : LinkedListNode {
             anInt6612 = i_3_
             anInt6592 = TextureDefinitionCache.anInt2964
             if (anInt6616 <= 3) anInt6599 = 0
-            else anInt6599 = TextureMapImageNode.anInt9372
+            else anInt6599 = ActorEntity.anInt9372
             try {
                 val `is` = cPUInfo
                 if (`is` != null && `is`.size == 7) {

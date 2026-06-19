@@ -51,12 +51,12 @@ class NativeBufferHandle internal constructor(glRenderDevice: GlRenderDevice?, l
 
         @JvmStatic
         fun method850(class318_sub1_sub3: GroundDecorEntity, bool: Boolean): Boolean {
-            val bool_13_ = NativeSprite.aTerrainTileArray5191 == SoundCacheState.aTerrainTileArray4142
+            val bool_13_ = ActorEntity.aTerrainTileArray5191 == ActorEntity.aTerrainTileArray4142
             var i = 0
             var i_14_: Short = 0
             var i_15_: Byte = 0
             class318_sub1_sub3.method2409((-116).toByte())
-            if (class318_sub1_sub3.aShort8743 < 0 || class318_sub1_sub3.aShort8750 < 0 || (class318_sub1_sub3.aShort8751 >= SpotAnimEntity.anInt6451) || (class318_sub1_sub3.aShort8747 >= RegionSceneShifter.anInt7054)) return false
+            if (class318_sub1_sub3.aShort8743 < 0 || class318_sub1_sub3.aShort8750 < 0 || (class318_sub1_sub3.aShort8751 >= ActorEntity.anInt6451) || (class318_sub1_sub3.aShort8747 >= ActorEntity.anInt7054)) return false
             var i_16_: Short = 0
             for (i_17_ in class318_sub1_sub3.aShort8743..class318_sub1_sub3.aShort8751) {
                 for (i_18_ in class318_sub1_sub3.aShort8750..class318_sub1_sub3.aShort8747) {
@@ -95,7 +95,7 @@ class NativeBufferHandle internal constructor(glRenderDevice: GlRenderDevice?, l
             }
             if (bool) ModelDataCache.aClass318_Sub1_Sub3Array357!![DrawListState.anInt1477++] = class318_sub1_sub3
             else {
-                val i_22_ = if (NativeSprite.aTerrainTileArray5191 == SoundCacheState.aTerrainTileArray4142) 1 else 0
+                val i_22_ = if (ActorEntity.aTerrainTileArray5191 == ActorEntity.aTerrainTileArray4142) 1 else 0
                 if (class318_sub1_sub3.method2376(-118)) {
                     if (class318_sub1_sub3.method2377(122.toByte())) {
                         class318_sub1_sub3.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_22_]

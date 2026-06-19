@@ -778,19 +778,19 @@ class NpcType {
         @JvmStatic
         fun method797(i: Int, i_29_: Int, i_30_: Byte) {
             anInt1379++
-            if (ClampTextureNode.anInt9139 != i_29_) {
-                SceneEffectMarker.anIntArray6432 = IntArray(i_29_)
-                for (i_31_ in 0..<i_29_) SceneEffectMarker.anIntArray6432!![i_31_] = (i_31_ shl 12) / i_29_
+            if (PerlinNoiseTextureNode.anInt9139 != i_29_) {
+                PerlinNoiseTextureNode.anIntArray6432 = IntArray(i_29_)
+                for (i_31_ in 0..<i_29_) PerlinNoiseTextureNode.anIntArray6432!![i_31_] = (i_31_ shl 12) / i_29_
                 SimpleBinaryOptionState.anInt6076 = i_29_ + -1
-                ClampTextureNode.anInt9139 = i_29_
+                PerlinNoiseTextureNode.anInt9139 = i_29_
                 MediaStreamClient.anInt3201 = 32 * i_29_
             }
             if (i_30_ <= 108) aClient1367 = null
             if (FixedFunctionMaterialPass.anInt6212 != i) {
-                if (ClampTextureNode.anInt9139 != i) {
-                    LightDetailOptionState.anIntArray6035 = IntArray(i)
-                    for (i_32_ in 0..<i) LightDetailOptionState.anIntArray6035!![i_32_] = (i_32_ shl 12) / i
-                } else LightDetailOptionState.anIntArray6035 = SceneEffectMarker.anIntArray6432
+                if (PerlinNoiseTextureNode.anInt9139 != i) {
+                    PerlinNoiseTextureNode.anIntArray6035 = IntArray(i)
+                    for (i_32_ in 0..<i) PerlinNoiseTextureNode.anIntArray6035!![i_32_] = (i_32_ shl 12) / i
+                } else PerlinNoiseTextureNode.anIntArray6035 = PerlinNoiseTextureNode.anIntArray6432
                 FixedFunctionMaterialPass.anInt6212 = i
                 TextureCubeProvider.anInt6325 = -1 + i
             }

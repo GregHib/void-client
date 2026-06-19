@@ -1,7 +1,7 @@
 import java.io.File
-import java.util.*
 import kotlin.math.atan2
 import kotlin.math.pow
+import kotlin.random.Random
 
 /*
  * Class59
@@ -94,9 +94,9 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
                         val i_31_ = -4096 + i_24_
                         val i_32_ = aShortArray1082[i_30_].toInt()
                         val i_33_ = i_22_ + -4096
-                        val i_34_ = LoadingScreenState.anIntArray2631!![i_19_]
-                        val i_35_ = LoadingScreenState.anIntArray2631!![i_22_]
-                        val i_36_ = LoadingScreenState.anIntArray2631!![i_24_]
+                        val i_34_ = PerlinNoiseTextureNode.anIntArray2631!![i_19_]
+                        val i_35_ = PerlinNoiseTextureNode.anIntArray2631!![i_22_]
+                        val i_36_ = PerlinNoiseTextureNode.anIntArray2631!![i_24_]
                         val i_37_ = i_19_ + -4096
                         val i_38_ = aShortArray1082[i_29_].toInt()
                         val i_39_ = aShortArray1082[i_38_ + i_28_].toInt()

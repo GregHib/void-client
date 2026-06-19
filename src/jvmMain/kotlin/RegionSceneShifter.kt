@@ -25,8 +25,6 @@ class RegionSceneShifter : LinkedListNode() {
         var anInt7049: Int = 0
         var anInt7051: Int = 0
         var aIntRange_7052: IntRange? = IntRange(86, 6)
-        @JvmField
-        var anInt7054: Int = 0
         var anInt7055: Int = 0
 
         /*synthetic*/
@@ -78,7 +76,7 @@ class RegionSceneShifter : LinkedListNode() {
         fun method3155(i: Int) {
             aString7048 = null
             aIntRange_7052 = null
-            if (i != -5) anInt7054 = 110
+            if (i != -5) ActorEntity.anInt7054 = 110
         }
 
         fun method3156(bool: Boolean, string: String): Int {
@@ -146,7 +144,7 @@ class RegionSceneShifter : LinkedListNode() {
                                     npc.method2448(null, -2)
                                     bool_24_ = true
                                     class348_sub22.method2715(113.toByte())
-                                } else RgbColorPalette.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = (npc.anInt10290)
+                                } else Client.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = (npc.anInt10290)
                             }
                         }
                         i_27_++
@@ -265,7 +263,6 @@ class RegionSceneShifter : LinkedListNode() {
                     }
                 } else method2028(i_46_, class51, i_42_, var_renderer, i_48_, 126)
             }
-            if (bool != false) anInt7054 = 122
             renderTarget = (method1353(i_43_, i_45_, i_44_, (if (aClass7056 != null) aClass7056 else (RenderTarget::class.java.also { aClass7056 = it }))) as RenderTarget?)
             if (renderTarget != null) {
                 val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-88))

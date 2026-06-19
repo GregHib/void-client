@@ -150,11 +150,7 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
         @JvmField
         var aLocTypeDefLoader_9036: LocTypeDefLoader? = null
         @JvmField
-        var anInt9037: Int = 0
-        @JvmField
         var aBoolean9038: Boolean = false
-        @JvmField
-        var anInt9039: Int = 0
 
         @JvmStatic
         fun method2974(i: Int) {

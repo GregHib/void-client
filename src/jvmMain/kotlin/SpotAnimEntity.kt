@@ -267,8 +267,6 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
         var anInt6445: Int = 0
         var anInt6448: Int = 0
         var anInt6450: Int = 0
-        @JvmField
-        var anInt6451: Int = 0
         @JvmStatic
         fun method2508(i: Int) {
             if (i != 32767) method2512(null, null, 5)
@@ -277,7 +275,6 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
 
         fun method2509(i: Int, i_0_: Int, var_renderer: Renderer, i_1_: Int, i_2_: Int, bool: Boolean, i_3_: Int, i_4_: Int) {
             anInt6438++
-            if (bool != true) anInt6451 = -14
             var_renderer.method3675(i, (-125).toByte(), i_1_, i_0_, i_3_, i_2_)
             var_renderer.method3675(i - 2, (-125).toByte(), 1 + i_1_, 1 + i_0_, 16, i_4_)
             var_renderer.method3668(-2 + i, 18 + i_0_, i_4_, 1 + i_1_, -19 + i_3_, 115)
@@ -286,13 +283,12 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
         @JvmStatic
         fun method2510(js5Archive: Js5Archive?, class348_sub16_sub3: MidiSequencePlayer?, js5Archive_5_: Js5Archive?, bool: Boolean, soundChannelMixer: SoundChannelMixer?, js5Archive_6_: Js5Archive?): Boolean {
             try {
-                ActorEntity.aSoundChannelMixer_8764 = soundChannelMixer
+                GlslEnvMaterialPass.aSoundChannelMixer_8764 = soundChannelMixer
                 NodeDequeHolder.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                 MinimapTileEntry.aJs5Archive_611 = js5Archive
                 GlEnvMappedWaterPass.aJs5Archive_7371 = js5Archive_6_
                 MapElementLookup.aJs5Archive_4147 = js5Archive_5_
                 BasicGlRenderPass.anIntArray7299 = IntArray(16)
-                if (bool != false) anInt6451 = 71
                 anInt6442++
                 for (i in 0..15) BasicGlRenderPass.anIntArray7299!![i] = 255
                 return true

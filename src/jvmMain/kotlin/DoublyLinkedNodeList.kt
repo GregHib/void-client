@@ -125,10 +125,10 @@ class DoublyLinkedNodeList {
         fun method1879(bool: Boolean) {
             if (bool) {
                 HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 = ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082
-                NativeSprite.aTerrainTileArray5191 = SoundCacheState.aTerrainTileArray4142
+                ActorEntity.aTerrainTileArray5191 = ActorEntity.aTerrainTileArray4142
             } else {
                 HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 = WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148
-                NativeSprite.aTerrainTileArray5191 = TerrainTileShape.aTerrainTileArray8801
+                ActorEntity.aTerrainTileArray5191 = TerrainTileShape.aTerrainTileArray8801
             }
             MapAreaDefinition.anInt2524 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!!.size
         }

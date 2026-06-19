@@ -70,44 +70,44 @@ class GlTexture3D : GlTexture {
 
         @JvmStatic
         fun method1960(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, `is`: Array<Array<ByteArray?>?>?, is_15_: IntArray?, is_16_: IntArray?, is_17_: IntArray?, is_18_: IntArray?, is_19_: IntArray?, i_20_: Int, i_21_: Byte, i_22_: Int, i_23_: Int, bool: Boolean, bool_24_: Boolean, i_25_: Int, i_26_: Int, bool_27_: Boolean) {
-            SkeletalAnimFrameData.aBoolean351 = true
+            ActorEntity.aBoolean351 = true
             ProjectedGroundDecor.aBoolean10221 = NativeLibraryState.aRenderer171!!.method3704() > 0
             SpriteTextureNode.aBoolean9242 = bool_24_
-            DisplayModeOptionState.anInt6111 = i_12_ shr Tooltip.anInt4459
-            GlIndexBufferArb.anInt8502 = i_14_ shr Tooltip.anInt4459
-            TextureDefinitionLoader.anInt1974 = i_12_
-            BlendTextureNode.anInt9360 = i_14_
+            ActorEntity.anInt6111 = i_12_ shr ActorEntity.anInt4459
+            ActorEntity.anInt8502 = i_14_ shr ActorEntity.anInt4459
+            ActorEntity.anInt1974 = i_12_
+            ActorEntity.anInt9360 = i_14_
             TerrainTileGeometry.anInt3006 = i_13_
-            ByteArrayPool.anInt492 = DisplayModeOptionState.anInt6111 - NpcActorEntity.anInt10084
+            ByteArrayPool.anInt492 = ActorEntity.anInt6111 - ActorEntity.anInt10084
             if (ByteArrayPool.anInt492 < 0) {
                 AnimatedModelRenderer.anInt8412 = -ByteArrayPool.anInt492
                 ByteArrayPool.anInt492 = 0
             } else AnimatedModelRenderer.anInt8412 = 0
-            IntPair.anInt6974 = GlIndexBufferArb.anInt8502 - NpcActorEntity.anInt10084
+            IntPair.anInt6974 = ActorEntity.anInt8502 - ActorEntity.anInt10084
             if (IntPair.anInt6974 < 0) {
                 WorldMapRenderer.anInt4686 = -IntPair.anInt6974
                 IntPair.anInt6974 = 0
             } else WorldMapRenderer.anInt4686 = 0
-            ProjectileConfigUtil.anInt387 = DisplayModeOptionState.anInt6111 + NpcActorEntity.anInt10084
-            if (ProjectileConfigUtil.anInt387 > SpotAnimEntity.anInt6451) ProjectileConfigUtil.anInt387 = SpotAnimEntity.anInt6451
-            GrayscaleNoiseTexture.anInt5293 = GlIndexBufferArb.anInt8502 + NpcActorEntity.anInt10084
-            if (GrayscaleNoiseTexture.anInt5293 > RegionSceneShifter.anInt7054) GrayscaleNoiseTexture.anInt5293 = RegionSceneShifter.anInt7054
-            val bools = SpriteBlitter.aBooleanArrayArray1572
+            ProjectileConfigUtil.anInt387 = ActorEntity.anInt6111 + ActorEntity.anInt10084
+            if (ProjectileConfigUtil.anInt387 > ActorEntity.anInt6451) ProjectileConfigUtil.anInt387 = ActorEntity.anInt6451
+            GrayscaleNoiseTexture.anInt5293 = ActorEntity.anInt8502 + ActorEntity.anInt10084
+            if (GrayscaleNoiseTexture.anInt5293 > ActorEntity.anInt7054) GrayscaleNoiseTexture.anInt5293 = ActorEntity.anInt7054
+            val bools = ActorEntity.aBooleanArrayArray1572
             val bools_28_ = FacingDirectionNode.aBooleanArrayArray6656
             if (SpriteTextureNode.aBoolean9242) {
-                for (i_29_ in 0..<(NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2)) {
+                for (i_29_ in 0..<(ActorEntity.anInt10084 + ActorEntity.anInt10084 + 2)) {
                     var i_30_ = 0
                     var i_31_ = 0
-                    for (i_32_ in 0..<(NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2)) {
+                    for (i_32_ in 0..<(ActorEntity.anInt10084 + ActorEntity.anInt10084 + 2)) {
                         if (i_32_ > 1) RefCountedHandle.anIntArray2272!![i_32_ - 2] = i_30_
                         i_30_ = i_31_
-                        val i_33_ = (DisplayModeOptionState.anInt6111 - NpcActorEntity.anInt10084 + i_29_)
-                        val i_34_ = (GlIndexBufferArb.anInt8502 - NpcActorEntity.anInt10084 + i_32_)
-                        if (i_33_ >= 0 && i_34_ >= 0 && i_33_ < SpotAnimEntity.anInt6451 && i_34_ < RegionSceneShifter.anInt7054) {
-                            val i_35_ = i_33_ shl Tooltip.anInt4459
-                            val i_36_ = i_34_ shl Tooltip.anInt4459
-                            val i_37_ = (TerrainTileShape.aTerrainTileArray8801!![TerrainTileShape.aTerrainTileArray8801!!.size - 1]!!.method3982((-86).toByte(), i_34_, i_33_) - (1000 shl Tooltip.anInt4459 - 7))
-                            val i_38_ = (if (SoundCacheState.aTerrainTileArray4142 != null) (SoundCacheState.aTerrainTileArray4142!![0]!!.method3982((-86).toByte(), i_34_, i_33_) + ArchiveFileConditionWrapper.anInt3465) else (TerrainTileShape.aTerrainTileArray8801!![0]!!.method3982((-86).toByte(), i_34_, i_33_) + ArchiveFileConditionWrapper.anInt3465))
+                        val i_33_ = (ActorEntity.anInt6111 - ActorEntity.anInt10084 + i_29_)
+                        val i_34_ = (ActorEntity.anInt8502 - ActorEntity.anInt10084 + i_32_)
+                        if (i_33_ >= 0 && i_34_ >= 0 && i_33_ < ActorEntity.anInt6451 && i_34_ < ActorEntity.anInt7054) {
+                            val i_35_ = i_33_ shl ActorEntity.anInt4459
+                            val i_36_ = i_34_ shl ActorEntity.anInt4459
+                            val i_37_ = (TerrainTileShape.aTerrainTileArray8801!![TerrainTileShape.aTerrainTileArray8801!!.size - 1]!!.method3982((-86).toByte(), i_34_, i_33_) - (1000 shl ActorEntity.anInt4459 - 7))
+                            val i_38_ = (if (ActorEntity.aTerrainTileArray4142 != null) (ActorEntity.aTerrainTileArray4142!![0]!!.method3982((-86).toByte(), i_34_, i_33_) + ActorEntity.anInt3465) else (TerrainTileShape.aTerrainTileArray8801!![0]!!.method3982((-86).toByte(), i_34_, i_33_) + ActorEntity.anInt3465))
                             i_31_ = (if (i_25_ >= 0) NativeLibraryState.aRenderer171!!.r(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_, i_25_) else NativeLibraryState.aRenderer171!!.JA(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_))
                             FacingDirectionNode.aBooleanArrayArray6656!![i_29_]!![i_32_] = i_31_ == 0
                         } else {
@@ -116,13 +116,13 @@ class GlTexture3D : GlTexture {
                         }
                         if (i_29_ > 0 && i_32_ > 0) {
                             val i_39_ = (RefCountedHandle.anIntArray2272!![i_32_ - 1] and RefCountedHandle.anIntArray2272!![i_32_] and i_30_ and i_31_)
-                            SpriteBlitter.aBooleanArrayArray1572!![i_29_ - 1]!![i_32_ - 1] = i_39_ == 0
+                            ActorEntity.aBooleanArrayArray1572!![i_29_ - 1]!![i_32_ - 1] = i_39_ == 0
                         }
                     }
-                    RefCountedHandle.anIntArray2272!![(NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084)] = i_30_
-                    RefCountedHandle.anIntArray2272!![(NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)] = i_31_
+                    RefCountedHandle.anIntArray2272!![(ActorEntity.anInt10084 + ActorEntity.anInt10084)] = i_30_
+                    RefCountedHandle.anIntArray2272!![(ActorEntity.anInt10084 + ActorEntity.anInt10084 + 1)] = i_31_
                 }
-                if (i_25_ >= 0) SkeletalAnimFrameData.aBoolean351 = false
+                if (i_25_ >= 0) ActorEntity.aBoolean351 = false
                 else {
                     Player.anIntArray10566 = is_15_
                     BackgroundWorkerThread.anIntArray3220 = is_16_
@@ -132,17 +132,17 @@ class GlTexture3D : GlTexture {
                     InterfaceComponentGroup.method3241(i_20_, 39.toByte(), NativeLibraryState.aRenderer171!!)
                 }
             } else {
-                if (WorldMapIconLabel.aBooleanArrayArray8596 == null) WorldMapIconLabel.aBooleanArrayArray8596 = (Array<BooleanArray?>(SpotAnimEntity.anInt6451 + SpotAnimEntity.anInt6451 + 1) { BooleanArray((RegionSceneShifter.anInt7054 + SpotAnimEntity.anInt6451 + 1)) })
+                if (WorldMapIconLabel.aBooleanArrayArray8596 == null) WorldMapIconLabel.aBooleanArrayArray8596 = (Array<BooleanArray?>(ActorEntity.anInt6451 + ActorEntity.anInt6451 + 1) { BooleanArray((ActorEntity.anInt7054 + ActorEntity.anInt6451 + 1)) })
                 for (i_40_ in WorldMapIconLabel.aBooleanArrayArray8596!!.indices) {
                     for (i_41_ in WorldMapIconLabel.aBooleanArrayArray8596!![0]!!.indices) WorldMapIconLabel.aBooleanArrayArray8596!![i_40_]!![i_41_] = true
                 }
                 FacingDirectionNode.aBooleanArrayArray6656 = WorldMapIconLabel.aBooleanArrayArray8596
-                SpriteBlitter.aBooleanArrayArray1572 = WorldMapIconLabel.aBooleanArrayArray8596!!
+                ActorEntity.aBooleanArrayArray1572 = WorldMapIconLabel.aBooleanArrayArray8596!!
                 ByteArrayPool.anInt492 = 0
                 IntPair.anInt6974 = 0
-                ProjectileConfigUtil.anInt387 = SpotAnimEntity.anInt6451
-                GrayscaleNoiseTexture.anInt5293 = RegionSceneShifter.anInt7054
-                SkeletalAnimFrameData.aBoolean351 = false
+                ProjectileConfigUtil.anInt387 = ActorEntity.anInt6451
+                GrayscaleNoiseTexture.anInt5293 = ActorEntity.anInt7054
+                ActorEntity.aBoolean351 = false
             }
             DoublyLinkedNodeList.method1877(NativeLibraryState.aRenderer171, -69)
             if (!PlayerSequenceSelector.aSceneObjectSpawner_1208!!.aBoolean1283) {
@@ -155,7 +155,7 @@ class GlTexture3D : GlTexture {
                 }
             }
             if (ProjectedGroundDecor.aBoolean10221) {
-                for (i_42_ in 0..<CalendarUtil.anInt4135) WaterDetailOptionState.aSoundEnvelopeArray5993!![i_42_]!!.method1544(8688, bool, i)
+                for (i_42_ in 0..<CalendarUtil.anInt4135) SceneEntity.aSoundEnvelopeArray5993!![i_42_]!!.method1544(8688, bool, i)
             }
             if (VoronoiNoiseTextureNode.aBoolean9121) {
                 RsaVarbitHandler.anIntArray4906 = NativeLibraryState.aRenderer171!!.Y()
@@ -189,16 +189,15 @@ class GlTexture3D : GlTexture {
                 }
             }
             if (!SpriteTextureNode.aBoolean9242) {
-                SpriteBlitter.aBooleanArrayArray1572 = bools
+                ActorEntity.aBooleanArrayArray1572 = bools
                 FacingDirectionNode.aBooleanArrayArray6656 = bools_28_
             }
             DebugOverlayRenderer.method1884()
         }
-        var anIntArray3726: IntArray? = null
         var aClass318_Sub1Array3737: Array<SceneEntity?>? = null
         @JvmStatic
         fun method2199(i: Byte) {
-            anIntArray3726 = null
+            SoundEnvelope.anIntArray3726 = null
             aClass318_Sub1Array3737 = null
         }
     }

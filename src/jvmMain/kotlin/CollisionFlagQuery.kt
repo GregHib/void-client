@@ -31,8 +31,6 @@ class CollisionFlagQuery {
         @JvmField
         var anInt1200: Int = 0
         var aObjectByteSerializerHolder_1201: ObjectByteSerializerHolder? = ObjectByteSerializerHolder()
-        @JvmField
-        var anInt1202: Int = 0
 
         fun method720(i: Int, i_0_: Int) {
             anInt1193++

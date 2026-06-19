@@ -21,7 +21,7 @@ class CubemapTextureFactory {
             try {
                 anInt4521++
                 if (i_1_ > -17) return null
-                if (var_ha_Sub2!!.aBoolean7793 || AsyncTaskHandle.method1436(-58, i_3_) && AsyncTaskHandle.method1436(-68, i_0_)) return GlTexture2DRegion(var_ha_Sub2, 3553, i_2_, i_3_, i_0_, bool, `is`, i)
+                if (var_ha_Sub2!!.aBoolean7793 || ModelDefinition.method1436(-58, i_3_) && ModelDefinition.method1436(-68, i_0_)) return GlTexture2DRegion(var_ha_Sub2, 3553, i_2_, i_3_, i_0_, bool, `is`, i)
                 if (var_ha_Sub2.aBoolean7837) return GlTexture2DRegion(var_ha_Sub2, 34037, i_2_, i_3_, i_0_, bool, `is`, i)
                 return GlTexture2DRegion(var_ha_Sub2, i_2_, i_3_, i_0_, CacheArchiveIndexLoader.method340(i_3_, 108.toByte()), CacheArchiveIndexLoader.method340(i_0_, 108.toByte()), `is`, i)
             } catch (runtimeexception: RuntimeException) {

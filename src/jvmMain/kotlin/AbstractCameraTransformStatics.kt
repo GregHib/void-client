@@ -113,7 +113,7 @@ object AbstractCameraTransformStatics {
         try {
             anInt1594++
             if (i <= 42) method906(123)
-            if (var_ha_Sub2!!.aBoolean7793 || (AsyncTaskHandle.method1436(82, i_25_) && AsyncTaskHandle.method1436(81, i_26_))) return GlTexture2DRegion(var_ha_Sub2, 3553, i_24_, i_25_, i_26_)
+            if (var_ha_Sub2!!.aBoolean7793 || (ModelDefinition.method1436(82, i_25_) && ModelDefinition.method1436(81, i_26_))) return GlTexture2DRegion(var_ha_Sub2, 3553, i_24_, i_25_, i_26_)
             if (var_ha_Sub2.aBoolean7837) return GlTexture2DRegion(var_ha_Sub2, 34037, i_24_, i_25_, i_26_)
             return GlTexture2DRegion(var_ha_Sub2, i_24_, i_25_, i_26_, CacheArchiveIndexLoader.method340(i_25_, 108.toByte()), CacheArchiveIndexLoader.method340(i_26_, 108.toByte()))
         } catch (runtimeexception: RuntimeException) {

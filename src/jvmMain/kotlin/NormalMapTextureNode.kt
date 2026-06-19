@@ -40,7 +40,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_12_ = `is`[1]!!
             val is_13_ = `is`[2]!!
             var i_14_ = 0
-            while (ClampTextureNode.Companion.anInt9139 > i_14_) {
+            while (PerlinNoiseTextureNode.Companion.anInt9139 > i_14_) {
                 val i_15_ = (-is_8_[i_14_] + is_10_[i_14_]) * anInt9438
                 val i_16_ = (anInt9438 * (is_9_[1 + i_14_ and SimpleBinaryOptionState.anInt6076] - is_9_[SimpleBinaryOptionState.anInt6076 and -1 + i_14_]))
                 val i_17_ = i_16_ shr 12
@@ -99,9 +99,9 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
 
         @JvmStatic
         fun method3141(bool: Boolean, i: Byte) {
-            if (PerlinNoiseTextureNode.Companion.aAbstractGameSocket_9165 != null) {
-                PerlinNoiseTextureNode.Companion.aAbstractGameSocket_9165!!.method1700(36.toByte())
-                PerlinNoiseTextureNode.Companion.aAbstractGameSocket_9165 = null
+            if (Client.aAbstractGameSocket_9165 != null) {
+                Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                Client.aAbstractGameSocket_9165 = null
             }
             anInt9437++
             NpcDefinition.anInt2955 = 0

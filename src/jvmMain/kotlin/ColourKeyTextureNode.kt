@@ -19,7 +19,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_9_ = `is`[1]!!
             val is_10_ = `is`[2]!!
             var i_11_ = 0
-            while ((i_11_ < ClampTextureNode.Companion.anInt9139)) {
+            while ((i_11_ < PerlinNoiseTextureNode.Companion.anInt9139)) {
                 val i_12_ = is_5_[i_11_]
                 val i_13_ = is_7_[i_11_]
                 val i_14_ = is_6_[i_11_]

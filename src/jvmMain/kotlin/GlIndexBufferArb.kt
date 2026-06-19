@@ -52,15 +52,11 @@ class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, move
         @JvmField
         var anInt8497: Int = 0
         @JvmField
-        var anInt8498: Int = 0
-        @JvmField
         var anInt8499: Int = 0
         @JvmField
         var anInt8500: Int = 0
         @JvmField
         var anInt8501: Int = 0
-        @JvmField
-        var anInt8502: Int = 0
         @JvmField
         var aTrigLookupTables_8503: TrigLookupTables? = TrigLookupTables()
         @JvmField
@@ -593,7 +589,6 @@ class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, move
         @JvmStatic
         fun method2132(i: Int) {
             aTrigLookupTables_8503 = null
-            if (i >= -8) anInt8498 = -77
             anIntArray8507 = null
             ByteArrayPool.aByteArrayArray8505 = null
         }

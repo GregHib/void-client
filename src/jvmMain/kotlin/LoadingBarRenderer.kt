@@ -1,4 +1,4 @@
-import IndexedSprite.Companion.method163
+import ActorEntity.Companion.method163
 import java.awt.Color
 import java.awt.Font
 import java.awt.FontMetrics
@@ -161,8 +161,8 @@ class LoadingBarRenderer : CursorController {
             val graphics = ParticleSystemRenderer.aCanvas3869!!.getGraphics()
             if (graphics != null) {
                 try {
-                    val i_5_ = NpcConfig.aResourceLoaderThread_897!!.method2320(103.toByte())
-                    val string = NpcConfig.aResourceLoaderThread_897!!.method2318(-9324)
+                    val i_5_ = ActorEntity.aResourceLoaderThread_897!!.method2320(103.toByte())
+                    val string = ActorEntity.aResourceLoaderThread_897!!.method2318(-9324)
                     if (LoadingBarRenderer.anImage4249 == null) LoadingBarRenderer.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432))
                     val graphics_6_ = LoadingBarRenderer.anImage4249!!.getGraphics()
                     graphics_6_.clearRect(0, 0, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
@@ -254,7 +254,7 @@ class LoadingBarRenderer : CursorController {
 
     private fun method2219(i: Int) {
         anInt5031++
-        LoadingScreenState.method1455(NpcConfig.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884], NpcConfig.aResourceLoaderThread_897!!.method2318(-9324), (PerlinNoiseTextureNode.aColorArray9163!![UnderlayDefinition.anInt2884]), (-100).toByte(), MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884])
+        LoadingScreenState.method1455(ActorEntity.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884], ActorEntity.aResourceLoaderThread_897!!.method2318(-9324), (LoadingBarRenderer.aColorArray9163!![UnderlayDefinition.anInt2884]), (-100).toByte(), MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884])
         if (i != 33) method55(1.toByte())
     }
 
@@ -318,5 +318,6 @@ class LoadingBarRenderer : CursorController {
             anInt2569++
             FontMetaRef.aFont4329 = null
         }
+        var aColorArray9163: Array<Color?>? = arrayOf<Color?>(Color(9179409), Color(16777215), Color(16726277), Color(16726277))
     }
 }

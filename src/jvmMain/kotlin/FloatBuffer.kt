@@ -43,7 +43,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
             val i_4_ = if (bool) 1 else 0
             ProportionalScrollbarComponent.anInt9930 = 0
             LoadingScreenImageNode.anInt9504 = 0
-            RandomAccessFileOnDisk.anInt3049++
+            ActorEntity.anInt3049++
             if ((i_2_ and 0x2) == 0) {
                 var class318_sub1 = LinkedListNodeStatics.aClass318_Sub1Array4293!![i_4_]
                 while (class318_sub1 != null) {
@@ -98,10 +98,10 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
             if ((i_2_ and 0x2) == 0) {
                 for (i_7_ in DelegatingRenderCanvas.anInt67..<MapAreaDefinition.anInt2524) {
                     if (i_7_ >= i && `is` != null) {
-                        var i_8_ = SpriteBlitter.aBooleanArrayArray1572!!.size
-                        if ((ByteArrayPool.anInt492 + SpriteBlitter.aBooleanArrayArray1572!!.size) > SpotAnimEntity.anInt6451) i_8_ -= (ByteArrayPool.anInt492 + SpriteBlitter.aBooleanArrayArray1572!!.size - SpotAnimEntity.anInt6451)
-                        var i_9_ = SpriteBlitter.aBooleanArrayArray1572!![0]!!.size
-                        if ((IntPair.anInt6974 + SpriteBlitter.aBooleanArrayArray1572!![0]!!.size) > RegionSceneShifter.anInt7054) i_9_ -= (IntPair.anInt6974 + SpriteBlitter.aBooleanArrayArray1572!![0]!!.size - RegionSceneShifter.anInt7054)
+                        var i_8_ = ActorEntity.aBooleanArrayArray1572!!.size
+                        if ((ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size) > ActorEntity.anInt6451) i_8_ -= (ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size - ActorEntity.anInt6451)
+                        var i_9_ = ActorEntity.aBooleanArrayArray1572!![0]!!.size
+                        if ((IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size) > ActorEntity.anInt7054) i_9_ -= (IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size - ActorEntity.anInt7054)
                         var bools = FacingDirectionNode.aBooleanArrayArray6656
                         if (SpriteTextureNode.aBoolean9242) {
                             if (VoronoiNoiseTextureNode.aBoolean9121) bools = OverlayColorTable.aBooleanArrayArrayArray1751!![i_7_]
@@ -109,11 +109,11 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                                 val i_11_ = (i_10_ + ByteArrayPool.anInt492 - AnimatedModelRenderer.anInt8412)
                                 for (i_12_ in WorldMapRenderer.anInt4686..<i_9_) {
                                     bools!![i_10_]!![i_12_] = false
-                                    if (SpriteBlitter.aBooleanArrayArray1572!![i_10_]!![i_12_]) {
+                                    if (ActorEntity.aBooleanArrayArray1572!![i_10_]!![i_12_]) {
                                         val i_13_ = (i_12_ + IntPair.anInt6974 - WorldMapRenderer.anInt4686)
                                         for (i_14_ in i_7_ downTo 0) {
                                             if ((HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]) != null && (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]!!.aByte4399).toInt() == i_7_) {
-                                                bools[i_10_]!![i_12_] = (i_14_ < i || (`is`[i_14_]!![i_11_]!![i_13_]) != i_0_) && (!IndexedSprite.method164(i_7_, i_11_, (-97).toByte(), i_13_))
+                                                bools[i_10_]!![i_12_] = (i_14_ < i || (`is`[i_14_]!![i_11_]!![i_13_]) != i_0_) && (!ActorEntity.method164(i_7_, i_11_, (-97).toByte(), i_13_))
                                                 break
                                             }
                                         }
@@ -122,32 +122,32 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                             }
                         }
                         if (VoronoiNoiseTextureNode.aBoolean9121) {
-                            if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
-                            else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
+                            if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
+                            else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
                             for (i_15_ in 0..<Npc.anInt10503) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i_15_]!!.method2359(SceneModelBuilder(i_7_ + 1), -1)
-                        } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, NpcActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, false, i_1_, i_2_)
-                        else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, NpcActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, false, i_2_)
+                        } else if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, false, i_1_, i_2_)
+                        else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, false, i_2_)
                     } else {
-                        var i_16_ = SpriteBlitter.aBooleanArrayArray1572!!.size
-                        if ((ByteArrayPool.anInt492 + SpriteBlitter.aBooleanArrayArray1572!!.size) > SpotAnimEntity.anInt6451) i_16_ -= (ByteArrayPool.anInt492 + SpriteBlitter.aBooleanArrayArray1572!!.size - SpotAnimEntity.anInt6451)
-                        var i_17_ = SpriteBlitter.aBooleanArrayArray1572!![0]!!.size
-                        if ((IntPair.anInt6974 + SpriteBlitter.aBooleanArrayArray1572!![0]!!.size) > RegionSceneShifter.anInt7054) i_17_ -= (IntPair.anInt6974 + SpriteBlitter.aBooleanArrayArray1572!![0]!!.size - RegionSceneShifter.anInt7054)
+                        var i_16_ = ActorEntity.aBooleanArrayArray1572!!.size
+                        if ((ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size) > ActorEntity.anInt6451) i_16_ -= (ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size - ActorEntity.anInt6451)
+                        var i_17_ = ActorEntity.aBooleanArrayArray1572!![0]!!.size
+                        if ((IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size) > ActorEntity.anInt7054) i_17_ -= (IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size - ActorEntity.anInt7054)
                         var bools = FacingDirectionNode.aBooleanArrayArray6656
                         if (SpriteTextureNode.aBoolean9242) {
                             if (VoronoiNoiseTextureNode.aBoolean9121) bools = OverlayColorTable.aBooleanArrayArrayArray1751!![i_7_]
                             for (i_18_ in AnimatedModelRenderer.anInt8412..<i_16_) {
                                 val i_19_ = (i_18_ + ByteArrayPool.anInt492 - AnimatedModelRenderer.anInt8412)
                                 for (i_20_ in WorldMapRenderer.anInt4686..<i_17_) {
-                                    bools!![i_18_]!![i_20_] = (SpriteBlitter.aBooleanArrayArray1572!![i_18_]!![i_20_]) && !IndexedSprite.method164(i_7_, i_19_, (-97).toByte(), (i_20_ + (IntPair.anInt6974) - (WorldMapRenderer.anInt4686)))
+                                    bools!![i_18_]!![i_20_] = (ActorEntity.aBooleanArrayArray1572!![i_18_]!![i_20_]) && !ActorEntity.method164(i_7_, i_19_, (-97).toByte(), (i_20_ + (IntPair.anInt6974) - (WorldMapRenderer.anInt4686)))
                                 }
                             }
                         }
                         if (VoronoiNoiseTextureNode.aBoolean9121) {
-                            if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
-                            else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
+                            if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
+                            else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
                             for (i_21_ in 0..<Npc.anInt10503) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i_21_]!!.method2359(SceneModelBuilder(i_7_ + 1), -1)
-                        } else if (i_1_ >= 0) NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3984(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, NpcActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, true, i_1_, i_2_)
-                        else NativeSprite.aTerrainTileArray5191!![i_7_]!!.method3983(DisplayModeOptionState.anInt6111, GlIndexBufferArb.anInt8502, NpcActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, true, i_2_)
+                        } else if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, true, i_1_, i_2_)
+                        else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, true, i_2_)
                     }
                 }
             }

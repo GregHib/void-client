@@ -13,7 +13,7 @@ class GradientMapTextureNode : AbstractProceduralTextureNode(0, true) {
         anInt9328++
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_1_ = LightDetailOptionState.anIntArray6035!![i]
+            val i_1_ = PerlinNoiseTextureNode.anIntArray6035!![i]
             if (anInt9325 == 0) {
                 var i_7_ = 0
                 for (i_8_ in 0..<anInt9329) {
@@ -22,12 +22,12 @@ class GradientMapTextureNode : AbstractProceduralTextureNode(0, true) {
                         break
                     }
                 }
-                ArrayCopyUtil.method1579(`is`, 0, ClampTextureNode.Companion.anInt9139, i_7_)
+                ArrayCopyUtil.method1579(`is`, 0, PerlinNoiseTextureNode.Companion.anInt9139, i_7_)
             } else {
-                for (i_2_ in 0..<ClampTextureNode.Companion.anInt9139) {
+                for (i_2_ in 0..<PerlinNoiseTextureNode.Companion.anInt9139) {
                     var i_3_ = 0
                     var i_4_ = 0
-                    val i_5_ = SceneEffectMarker.anIntArray6432!![i_2_]
+                    val i_5_ = PerlinNoiseTextureNode.anIntArray6432!![i_2_]
                     var i_6_ = anInt9325
                     while_197_@ do {
                         do {

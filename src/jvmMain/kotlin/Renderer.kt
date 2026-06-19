@@ -320,8 +320,6 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
         @JvmField
         var anInt4563: Int = 0
         @JvmField
-        var anInt4564: Int = 0
-        @JvmField
         var anInt4565: Int = 0
         @JvmField
         var anInt4566: Int = 0
@@ -362,28 +360,6 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
             if (i_35_ == i_38_) WidgetComponentNode.method1116(i, i_37_, i_39_, i_38_, (-99).toByte())
             else if (WorldMapLabel.anInt4960 <= i_39_ + -i_38_ && CameraNodeList.anInt1745 >= i_39_ - -i_38_ && -i_35_ + i >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i + i_35_) method515(i_37_, i_39_, i, i_35_, i_38_, -122)
             else method1839(i_39_, i_35_, i, i_36_.toInt() xor 0x4a, i_37_, i_38_)
-        }
-
-        fun method3664(i: Int, i_88_: Int): ByteArray {
-            anInt4564++
-            if (i_88_ <= 21) anInt4583 = 60
-            var class348_sub42_sub3 = (HashTileShape.aCacheLruCache_8815!!.method2302(i.toLong(), (-120).toByte()) as LoadingScreenImageNode?)
-            if (class348_sub42_sub3 == null) {
-                val `is` = ByteArray(512)
-                val random = Random(i.toLong())
-                for (i_89_ in 0..254) `is`[i_89_] = i_89_.toByte()
-                for (i_90_ in 0..254) {
-                    val i_91_ = -i_90_ + 255
-                    val i_92_ = ModelDefinition.method1097(95.toByte(), i_91_, random)
-                    val i_93_ = `is`[i_92_]
-                    `is`[i_92_] = `is`[i_91_]
-                    `is`[511 + -i_90_] = i_93_
-                    `is`[i_91_] = `is`[511 + -i_90_]
-                }
-                class348_sub42_sub3 = LoadingScreenImageNode(`is`)
-                HashTileShape.aCacheLruCache_8815!!.method2305(i.toLong(), class348_sub42_sub3, -1)
-            }
-            return class348_sub42_sub3.aByteArray9499!!
         }
 
         @JvmStatic

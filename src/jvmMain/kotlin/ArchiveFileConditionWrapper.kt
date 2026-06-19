@@ -6,8 +6,6 @@ class ArchiveFileConditionWrapper {
 
     companion object {
         var anIntArray3464: IntArray? = IntArray(6)
-        @JvmField
-        var anInt3465: Int = 0
 
         @JvmStatic
         fun method2043(bool: Boolean) {

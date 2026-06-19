@@ -72,7 +72,7 @@ class DynamicSceneObjectEntity internal constructor(i: Int, i_3_: Int, i_4_: Int
     public override fun method2386(i: Int, var_renderer: Renderer?): SceneEntityModel {
         if (i != 1) method2386(60, null)
         anInt10179++
-        val class148 = method1449(this.plane.toInt(), (this.x shr Tooltip.anInt4459), (this.y shr Tooltip.anInt4459))
+        val class148 = method1449(this.plane.toInt(), (this.x shr ActorEntity.anInt4459), (this.y shr ActorEntity.anInt4459))
         if (class148 != null && class148.aClass318_Sub1_Sub3_2040!!.aBoolean8741) {
             val i_11_ = class148.aClass318_Sub1_Sub3_2040!!.method2394(true)
             if (this.anInt10196 != i_11_) {
@@ -87,7 +87,7 @@ class DynamicSceneObjectEntity internal constructor(i: Int, i_3_: Int, i_4_: Int
             val bool = false
             val bool_12_ = false
             val bool_13_ = false
-            val var_s = NativeSprite.aTerrainTileArray5191!![this.aByte6376.toInt()]
+            val var_s = ActorEntity.aTerrainTileArray5191!![this.aByte6376.toInt()]
             val i_14_ = anInt10184 shl 1
             val i_15_ = i_14_
             val i_16_ = -i_14_ / 2

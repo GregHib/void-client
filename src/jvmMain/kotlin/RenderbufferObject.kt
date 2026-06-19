@@ -98,39 +98,39 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             NativeLibraryState.aRenderer171 = var_renderer
             Npc.anInt10503 = i
             VoronoiNoiseTextureNode.aBoolean9121 = (Npc.anInt10503 > 1 && NativeLibraryState.aRenderer171!!.method3708())
-            Tooltip.anInt4459 = i_0_
-            ArchiveFileConditionWrapper.anInt3465 = 1 shl Tooltip.anInt4459
-            TheoraVideoStream.anInt9037 = ArchiveFileConditionWrapper.anInt3465 shr 1
-            sqrt(((TheoraVideoStream.anInt9037 * TheoraVideoStream.anInt9037) + (TheoraVideoStream.anInt9037 * TheoraVideoStream.anInt9037)).toDouble())
+            ActorEntity.anInt4459 = i_0_
+            ActorEntity.anInt3465 = 1 shl ActorEntity.anInt4459
+            ActorEntity.anInt9037 = ActorEntity.anInt3465 shr 1
+            sqrt(((ActorEntity.anInt9037 * ActorEntity.anInt9037) + (ActorEntity.anInt9037 * ActorEntity.anInt9037)).toDouble())
             MapAreaDefinition.anInt2524 = i_1_
-            SpotAnimEntity.anInt6451 = i_2_
-            RegionSceneShifter.anInt7054 = i_3_
-            NpcActorEntity.anInt10084 = i_4_
+            ActorEntity.anInt6451 = i_2_
+            ActorEntity.anInt7054 = i_3_
+            ActorEntity.anInt10084 = i_4_
             MinimapLineDrawer.aNanoTimer_5262 = method2826(15)
             method3309(-124)
-            WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 = (Array<Array<Array<SceneCollisionEntry?>?>?>(i_1_) { Array<Array<SceneCollisionEntry?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(RegionSceneShifter.anInt7054) } })
+            WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 = (Array<Array<Array<SceneCollisionEntry?>?>?>(i_1_) { Array<Array<SceneCollisionEntry?>?>(ActorEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(ActorEntity.anInt7054) } })
             TerrainTileShape.aTerrainTileArray8801 = arrayOfNulls<TerrainTile>(i_1_)
             if (bool) {
-                LoadingBarRenderer.anIntArrayArray4253 = Array<IntArray?>(SpotAnimEntity.anInt6451) { IntArray(RegionSceneShifter.anInt7054) }
-                HashTileShape.aByteArrayArray8816 = Array<ByteArray?>(SpotAnimEntity.anInt6451) { ByteArray(RegionSceneShifter.anInt7054) }
-                BooleanGraphicsOptionState.aShortArrayArray5847 = Array<ShortArray?>(SpotAnimEntity.anInt6451) { ShortArray(RegionSceneShifter.anInt7054) }
-                ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = (Array<Array<Array<SceneCollisionEntry?>?>?>(1) { Array<Array<SceneCollisionEntry?>?>(SpotAnimEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(RegionSceneShifter.anInt7054) } })
-                SoundCacheState.aTerrainTileArray4142 = arrayOfNulls<TerrainTile>(1)
+                LoadingBarRenderer.anIntArrayArray4253 = Array<IntArray?>(ActorEntity.anInt6451) { IntArray(ActorEntity.anInt7054) }
+                HashTileShape.aByteArrayArray8816 = Array<ByteArray?>(ActorEntity.anInt6451) { ByteArray(ActorEntity.anInt7054) }
+                BooleanGraphicsOptionState.aShortArrayArray5847 = Array<ShortArray?>(ActorEntity.anInt6451) { ShortArray(ActorEntity.anInt7054) }
+                ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = (Array<Array<Array<SceneCollisionEntry?>?>?>(1) { Array<Array<SceneCollisionEntry?>?>(ActorEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(ActorEntity.anInt7054) } })
+                ActorEntity.aTerrainTileArray4142 = arrayOfNulls<TerrainTile>(1)
             } else {
                 LoadingBarRenderer.anIntArrayArray4253 = null
                 HashTileShape.aByteArrayArray8816 = null
                 BooleanGraphicsOptionState.aShortArrayArray5847 = null
                 ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = null
-                SoundCacheState.aTerrainTileArray4142 = null
+                ActorEntity.aTerrainTileArray4142 = null
             }
             if (bool_5_) {
-                aLongArrayArrayArray10431 = Array<Array<LongArray?>?>(i_1_) { Array<LongArray?>(i_2_) { LongArray(i_3_) } }
-                WaterDetailOptionState.aSoundEnvelopeArray5993 = arrayOfNulls<SoundEnvelope>(65535)
+                SceneEntity.aLongArrayArrayArray10431 = Array<Array<LongArray?>?>(i_1_) { Array<LongArray?>(i_2_) { LongArray(i_3_) } }
+                SceneEntity.aSoundEnvelopeArray5993 = arrayOfNulls<SoundEnvelope>(65535)
                 RenderNodeStatics.aBooleanArray9718 = BooleanArray(65535)
                 CalendarUtil.anInt4135 = 0
             } else {
-                aLongArrayArrayArray10431 = null
-                WaterDetailOptionState.aSoundEnvelopeArray5993 = null
+                SceneEntity.aLongArrayArrayArray10431 = null
+                SceneEntity.aSoundEnvelopeArray5993 = null
                 RenderNodeStatics.aBooleanArray9718 = null
                 CalendarUtil.anInt4135 = 0
             }
@@ -144,12 +144,12 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             LoadingScreenImageNode.anInt9504 = 0
             ModelDataCache.aClass318_Sub1_Sub3Array357 = arrayOfNulls<GroundDecorEntity>(5000)
             DrawListState.anInt1477 = 0
-            SpriteBlitter.aBooleanArrayArray1572 = (Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) })
-            FacingDirectionNode.aBooleanArrayArray6656 = (Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2)) })
-            RefCountedHandle.anIntArray2272 = IntArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 2))
+            ActorEntity.aBooleanArrayArray1572 = (Array<BooleanArray?>((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 1)) { BooleanArray((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 1)) })
+            FacingDirectionNode.aBooleanArrayArray6656 = (Array<BooleanArray?>((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 2)) { BooleanArray((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 2)) })
+            RefCountedHandle.anIntArray2272 = IntArray((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 2))
             PlayerSequenceSelector.aSceneObjectSpawner_1208 = PlayerSequenceSelector.aSceneObjectSpawner_1210
             if (VoronoiNoiseTextureNode.aBoolean9121) {
-                OverlayColorTable.aBooleanArrayArrayArray1751 = (Array<Array<BooleanArray?>?>(i_1_) { Array<BooleanArray?>((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) { BooleanArray((NpcActorEntity.anInt10084 + NpcActorEntity.anInt10084 + 1)) } })
+                OverlayColorTable.aBooleanArrayArrayArray1751 = (Array<Array<BooleanArray?>?>(i_1_) { Array<BooleanArray?>((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 1)) { BooleanArray((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 1)) } })
                 SolidFillComponent.aBooleanArrayArrayArray8361 = arrayOfNulls<Array<BooleanArray?>>(i_1_)
                 if (NormalMapTextureNode.aSceneLoaderThreadArray9432 != null) method1978()
                 NormalMapTextureNode.aSceneLoaderThreadArray9432 = arrayOfNulls<SceneLoaderThread>(Npc.anInt10503)
@@ -179,6 +179,5 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             WidgetDefinition.anIntArray256 = IntArray(ActiveMapRegion.anInt5652 - 1)
             ParticleProcessor.anIntArray4271 = IntArray(ActiveMapRegion.anInt5652 - 1)
         }
-        var aLongArrayArrayArray10431: Array<Array<LongArray?>?>? = null
     }
 }

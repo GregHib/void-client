@@ -16,14 +16,14 @@ object CollisionMapAccessor {
     @JvmStatic
     fun method2064(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Int {
         anInt3549++
-        if (NativeSprite.aTerrainTileArray5191 == null) return 0
+        if (ActorEntity.aTerrainTileArray5191 == null) return 0
         val i_3_ = i shr 9
         val i_4_ = i_2_ shr 9
         if (i_3_ < 0 || i_4_ < 0 || i_3_ > -1 + GlCubemapLightPass.anInt7319 || (i_4_ > RangeThresholdTextureNode.anInt9109 + -1)) return 0
         var i_5_ = i_0_
         if (i_5_ < 3 && (GraphicsOptionState.aByteArrayArrayArray6962!![1]!![i_3_]!![i_4_].toInt() and 0x2) != 0) i_5_++
         if (i_1_ != 11219) aHashtable3548 = null
-        return NativeSprite.aTerrainTileArray5191!![i_5_]!!.method3986(i, i_2_, (-113).toByte())
+        return ActorEntity.aTerrainTileArray5191!![i_5_]!!.method3986(i, i_2_, (-113).toByte())
     }
 
     @JvmStatic

@@ -108,7 +108,7 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
                 if (RegionSceneLoader.aWidgetComponent_3701 == null && !ScrollbarComponent.aBoolean8335 && (widgetComponent != null && (method141(widgetComponent, ((-79).toByte()).toByte()) != null))) {
                     RegionSceneLoader.aWidgetComponent_3701 = widgetComponent
                     CalendarUtil.aWidgetComponent_4130 = method141(widgetComponent, ((-117).toByte()).toByte())
-                    SceneEntity.anInt6392 = 0
+                    DragDropController.anInt6392 = 0
                     ModelDefinitionCache.anInt2872 = i_5_
                     SceneEntityModel.anInt6411 = i
                     ParticleConfigParser.aBoolean3819 = false

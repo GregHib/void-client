@@ -327,7 +327,7 @@ class Player : ProjectedGroundDecor() {
         val class101 = var_renderer!!.method3705()
         val i_53_ = this.aCompassSmoother_10217.method2019((-126).toByte())
         class101.method895(i_53_)
-        val class357 = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![this.plane.toInt()]!![this.x shr Tooltip.anInt4459]!![this.y shr Tooltip.anInt4459])
+        val class357 = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![this.plane.toInt()]!![this.x shr ActorEntity.anInt4459]!![this.y shr ActorEntity.anInt4459])
         if (class357 == null || class357.aClass318_Sub1_Sub1_4402 == null) this.anInt10274 = (this.anInt10274 - this.anInt10274.toFloat() / 10.0f).toInt()
         else {
             val i_54_ = (this.anInt10274 + -(class357.aClass318_Sub1_Sub1_4402!!.aShort8727))

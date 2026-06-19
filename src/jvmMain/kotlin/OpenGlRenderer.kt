@@ -3556,7 +3556,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor
                 if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_322_]]!!)
                 else {
-                    class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as NpcReference).aNpc_6859!!)
+                    class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as NpcReference).aNpc_6859!!)
                     npcType = class318_sub1_sub3_sub3.aNpcType_10505!!
                     if (npcType.anIntArray1377 != null) {
                         npcType = npcType.method794((ProjectedGroundDecor.aVarpStore_10209!!), i_316_ + -3)
@@ -3715,7 +3715,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             var i_343_ = 0
                             while (class302s.size > i_343_) {
                                 val class302 = class302s[i_343_]
-                                if (class302 != null && class302.anInt3840 == 1 && (class302.anInt3833 == RgbColorPalette.anIntArray1233!![i_322_ - i_321_])) {
+                                if (class302 != null && class302.anInt3840 == 1 && (class302.anInt3833 == Client.anIntArray1233!![i_322_ - i_321_])) {
                                     val class105 = (CustomCursorsOptionState.aAbstractModelRendererArray5933!![class302.anInt3831])!!
                                     if (class105.method969() > i_342_) i_342_ = class105.method969()
                                     if (GlGroundShaderPass.anInt7396 % 20 < 10) {

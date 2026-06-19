@@ -879,8 +879,8 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                             }
                         }
                     }
-                    if (!IOException_Sub1.aBoolean86) method1683(var_renderer, if (i_180_ != 0) null else var_terrainTile, i_180_, 127.toByte(), `is`, NativeSprite.aTerrainTileArray5191!![i_180_], if (i_180_ != 0) null else var_terrainTile_179_)
-                    else method1676(if (i_180_ != 0) null else var_terrainTile, NativeSprite.aTerrainTileArray5191!![i_180_], -26833, if (i_180_ == 0) var_terrainTile_179_ else null, `is`, var_renderer, i_180_)
+                    if (!IOException_Sub1.aBoolean86) method1683(var_renderer, if (i_180_ != 0) null else var_terrainTile, i_180_, 127.toByte(), `is`, ActorEntity.aTerrainTileArray5191!![i_180_], if (i_180_ != 0) null else var_terrainTile_179_)
+                    else method1676(if (i_180_ != 0) null else var_terrainTile, ActorEntity.aTerrainTileArray5191!![i_180_], -26833, if (i_180_ == 0) var_terrainTile_179_ else null, `is`, var_renderer, i_180_)
                     aByteArrayArrayArray3113[i_180_] = null
                     aByteArrayArrayArray3123[i_180_] = null
                     aByteArrayArrayArray3126[i_180_] = null
@@ -893,7 +893,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 }
                 var i_196_ = 0
                 while ((this.anInt3130 > i_196_)) {
-                    NativeSprite.aTerrainTileArray5191!![i_196_]!!.YA()
+                    ActorEntity.aTerrainTileArray5191!![i_196_]!!.YA()
                     i_196_++
                 }
             }
@@ -1345,7 +1345,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
 
         fun method1686(i: Int) {
             val i_308_ = -110 / ((i - -74) / 44)
-            if (TextureMapImageNode.anInt9372 > 1) IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub17_7263), 4)
+            if (ActorEntity.anInt9372 > 1) IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub17_7263), 4)
             else IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub17_7263), 2)
             anInt3106++
         }

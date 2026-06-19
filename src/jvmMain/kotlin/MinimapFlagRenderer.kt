@@ -1,4 +1,4 @@
-import ScrollTexMaterialPass.Companion.method2169
+import ActorEntity.Companion.method2169
 import WhirlpoolHash.Companion.anInt1067
 import WhirlpoolHash.Companion.anInt3225
 import WhirlpoolHash.Companion.anInt425
@@ -21,8 +21,6 @@ object MinimapFlagRenderer {
     var anInt1797: Int = 0
     @JvmField
     var anInt1798: Int = 0
-    @JvmField
-    var anInt1799: Int = 0
     @JvmField
     var aAbstractModelRenderer_1800: AbstractModelRenderer? = null
 
@@ -93,31 +91,6 @@ object MinimapFlagRenderer {
                 GroundDecorSceneEntity.anInt9997 = 1
             }
             PcmStreamBuffer.aBoolean8870 = true
-        }
-    }
-
-    @JvmStatic
-    fun method1084(i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int): Boolean {
-        anInt1799++
-        val i_13_ = i_9_ - -i_7_
-        val i_14_ = i + i_10_
-        val i_15_ = i_8_ + i_11_
-        if (!method2169(i_9_, i_13_, i_8_, i_9_, i_15_, i_14_, i_14_, i_14_, i_15_, false)) return false
-        if (i_12_ != 18507) method1082(-107, false)
-        if (!method2169(i_9_, i_13_, i_8_, i_13_, i_15_, i_14_, i_14_, i_14_, i_8_, false)) return false
-        if (TextureDefinitionLoader.anInt1974 > i_9_) {
-            if (!method2169(i_9_, i_9_, i_15_, i_9_, i_15_, i_14_, i_14_, i_10_, i_8_, false)) return false
-            if (!method2169(i_9_, i_9_, i_15_, i_9_, i_8_, i_14_, i_10_, i_10_, i_8_, false)) return false
-        } else {
-            if (!method2169(i_13_, i_13_, i_15_, i_13_, i_15_, i_14_, i_14_, i_10_, i_8_, false)) return false
-            if (!method2169(i_13_, i_13_, i_15_, i_13_, i_8_, i_14_, i_10_, i_10_, i_8_, false)) return false
-        }
-        if (i_8_ >= BlendTextureNode.anInt9360) {
-            if (!method2169(i_9_, i_13_, i_15_, i_9_, i_15_, i_14_, i_14_, i_10_, i_15_, false)) return false
-            return method2169(i_9_, i_13_, i_15_, i_13_, i_15_, i_14_, i_10_, i_10_, i_15_, false)
-        } else {
-            if (!method2169(i_9_, i_13_, i_8_, i_9_, i_8_, i_14_, i_14_, i_10_, i_8_, false)) return false
-            return method2169(i_9_, i_13_, i_8_, i_13_, i_8_, i_14_, i_10_, i_10_, i_8_, false)
         }
     }
 

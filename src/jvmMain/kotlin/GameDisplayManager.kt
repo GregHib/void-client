@@ -74,7 +74,7 @@ object GameDisplayManager {
             }
             MinimapSquareDrawer.aBoolean5219 = i_2_ >= 2
             if (RenderNodeStatics.anInt9721 != -1) method1713(true, 520)
-            if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null && CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) method2145(-24498)
+            if (Client.aAbstractGameSocket_9165 != null && CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) method2145(-24498)
             for (i_5_ in 0..99) OpenGlModel.aBooleanArray2076!![i_5_] = true
             SpriteRenderable.aBoolean4726 = true
         }

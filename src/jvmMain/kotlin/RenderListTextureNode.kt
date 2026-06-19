@@ -8,7 +8,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
     private fun method3151(`is`: Array<IntArray?>?, i: Byte) {
         anInt9487++
         if (i.toInt() != -27) method3152(86)
-        val i_0_: Int = ClampTextureNode.anInt9139
+        val i_0_: Int = PerlinNoiseTextureNode.anInt9139
         val i_1_ = FixedFunctionMaterialPass.anInt6212
         NpcAppearanceFlags.method224((-40).toByte(), `is`)
         MultiFieldRecord.method3000(SimpleBinaryOptionState.anInt6076, 0, TextureCubeProvider.anInt6325, 0, i.toInt() xor 0x28)
@@ -77,7 +77,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
         val `is` = this.aImageFrameCache_7033!!.method2557(i_10_ + 1564598923, i)
         if (i_10_ != -1564599039) aTrigLookupTables_9485 = null
         if (this.aImageFrameCache_7033!!.aBoolean4035) {
-            val i_11_: Int = ClampTextureNode.anInt9139
+            val i_11_: Int = PerlinNoiseTextureNode.anInt9139
             val i_12_ = FixedFunctionMaterialPass.anInt6212
             val is_13_: Array<IntArray> = Array<IntArray>(i_12_) { IntArray(i_11_) }
             val is_14_ = this.aImageFrameCache_7033!!.method2553(0)!!
@@ -89,7 +89,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
                 val is_18_ = is_17_[0]!!
                 val is_19_ = is_17_[1]!!
                 val is_20_ = is_17_[2]!!
-                for (i_21_ in 0..<ClampTextureNode.anInt9139) {
+                for (i_21_ in 0..<PerlinNoiseTextureNode.anInt9139) {
                     val i_22_ = is_16_[i_21_]
                     is_20_[i_21_] = WhirlpoolHash.method1166(i_22_, 255) shl 4
                     is_19_[i_21_] = WhirlpoolHash.method1166(i_22_ shr 4, 4080)

@@ -1,5 +1,5 @@
-import java.awt.Color
 import kotlin.math.pow
+import kotlin.random.Random
 
 class PerlinNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
     @JvmField
@@ -79,11 +79,10 @@ class PerlinNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     public override fun method3044(i: Int) {
-        aByteArray9152 = Renderer.method3664(this.anInt9156, 95)
+        aByteArray9152 = method3664(this.anInt9156, 95)
         anInt9148++
         method3067((-98).toByte())
         var i_3_ = this.anInt9150 + -1
-        if (i < 108) aAbstractGameSocket_9165 = null
         while ( /**/i_3_ >= 1) {
             val i_4_ = aShortArray9159!![i_3_]
             if (i_4_ > 8) break
@@ -117,7 +116,7 @@ class PerlinNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
 
     fun method3069(i: Int, `is`: IntArray, i_8_: Byte) {
         anInt9161++
-        val i_9_ = (LightDetailOptionState.anIntArray6035!![i] * this.anInt9164)
+        val i_9_ = (anIntArray6035!![i] * this.anInt9164)
         if (i_8_ > 91) {
             if (this.anInt9150 == 1) {
                 val i_39_ = aShortArray9162[0].toInt() shl 12
@@ -130,20 +129,20 @@ class PerlinNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                 i_41_ = i_41_ and 0xfff
                 if (i_45_ >= i_43_) i_45_ = 0
                 val i_46_ = aByteArray9152[0xff and i_45_].toInt() and 0xff
-                val i_47_ = LoadingScreenState.anIntArray2631!![i_41_]
+                val i_47_ = anIntArray2631!![i_41_]
                 val i_48_ = aByteArray9152[0xff and i_44_].toInt() and 0xff
                 if (this.aBoolean9160) {
                     var i_52_ = 0
-                    while ((ClampTextureNode.Companion.anInt9139 > i_52_)) {
-                        val i_53_ = (this.anInt9158 * SceneEffectMarker.anIntArray6432!![i_52_])
+                    while ((anInt9139 > i_52_)) {
+                        val i_53_ = (this.anInt9158 * anIntArray6432!![i_52_])
                         var i_54_ = method3070(i_46_, i_41_, i_42_, i_53_ * i_39_ shr 12, i_47_, true, i_48_)
                         i_54_ = i_40_ * i_54_ shr 12
                         `is`[i_52_] = (i_54_ shr 1) + 2048
                         i_52_++
                     }
                 } else {
-                    for (i_49_ in 0..<ClampTextureNode.Companion.anInt9139) {
-                        val i_50_ = (this.anInt9158 * SceneEffectMarker.anIntArray6432!![i_49_])
+                    for (i_49_ in 0..<anInt9139) {
+                        val i_50_ = (this.anInt9158 * anIntArray6432!![i_49_])
                         val i_51_ = method3070(i_46_, i_41_, i_42_, i_39_ * i_50_ shr 12, i_47_, true, i_48_)
                         `is`[i_49_] = i_51_ * i_40_ shr 12
                     }
@@ -161,10 +160,10 @@ class PerlinNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                     i_12_ = i_12_ and 0xfff
                     val i_17_ = aByteArray9152[0xff and i_16_].toInt() and 0xff
                     val i_18_ = aByteArray9152[0xff and i_15_].toInt() and 0xff
-                    val i_19_ = LoadingScreenState.anIntArray2631!![i_12_]
+                    val i_19_ = anIntArray2631!![i_12_]
                     var i_20_ = 0
-                    while (ClampTextureNode.Companion.anInt9139 > i_20_) {
-                        val i_21_ = (SceneEffectMarker.anIntArray6432!![i_20_] * this.anInt9158)
+                    while (anInt9139 > i_20_) {
+                        val i_21_ = (anIntArray6432!![i_20_] * this.anInt9158)
                         val i_22_ = method3070(i_17_, i_12_, i_13_, i_11_ * i_21_ shr 12, i_19_, true, i_18_)
                         `is`[i_20_] = i_10_ * i_22_ shr 12
                         i_20_++
@@ -183,12 +182,12 @@ class PerlinNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                         i_25_ = i_25_ and 0xfff
                         if (i_29_ >= i_27_) i_29_ = 0
                         val i_30_ = aByteArray9152[i_28_ and 0xff].toInt() and 0xff
-                        val i_31_ = LoadingScreenState.anIntArray2631!![i_25_]
+                        val i_31_ = anIntArray2631!![i_25_]
                         val i_32_ = 0xff and aByteArray9152[i_29_ and 0xff].toInt()
                         if (this.aBoolean9160 && (this.anInt9150 - 1 == i_23_)) {
                             var i_33_ = 0
-                            while (ClampTextureNode.Companion.anInt9139 > i_33_) {
-                                val i_34_ = (SceneEffectMarker.anIntArray6432!![i_33_] * (this.anInt9158))
+                            while (anInt9139 > i_33_) {
+                                val i_34_ = (anIntArray6432!![i_33_] * (this.anInt9158))
                                 var i_35_ = method3070(i_32_, i_25_, i_26_, i_34_ * i_24_ shr 12, i_31_, true, i_30_)
                                 i_35_ = `is`[i_33_] - -(i_35_ * i_10_ shr 12)
                                 `is`[i_33_] = (i_35_ shr 1) + 2048
@@ -196,8 +195,8 @@ class PerlinNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                             }
                         } else {
                             var i_36_ = 0
-                            while ((i_36_ < ClampTextureNode.Companion.anInt9139)) {
-                                val i_37_ = (this.anInt9158 * SceneEffectMarker.anIntArray6432!![i_36_])
+                            while ((i_36_ < anInt9139)) {
+                                val i_37_ = (this.anInt9158 * anIntArray6432!![i_36_])
                                 val i_38_ = method3070(i_32_, i_25_, i_26_, i_37_ * i_24_ shr 12, i_31_, true, i_30_)
                                 `is`[i_36_] += i_10_ * i_38_ shr 12
                                 i_36_++
@@ -222,7 +221,7 @@ class PerlinNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         val i_62_ = -4096 + i_57_
         val i_63_ = i_55_ + -4096
         var i_64_ = 0x3 and aByteArray9152[i_59_ + i_60_].toInt()
-        val i_65_ = LoadingScreenState.anIntArray2631!![i_57_]
+        val i_65_ = anIntArray2631!![i_57_]
         var i_66_: Int
         if (i_64_ > 1) i_66_ = if (i_64_ == 2) i_57_ - i_55_ else -i_55_ + -i_57_
         else i_66_ = if (i_64_ != 0) i_55_ - i_57_ else i_57_ + i_55_
@@ -254,19 +253,46 @@ class PerlinNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         @JvmField
         var anInt9155: Int = 0
         @JvmField
-        var anInt9157: Int = 0
-        @JvmField
         var anInt9161: Int = 0
-        @JvmField
-        var aColorArray9163: Array<Color?>? = arrayOf<Color?>(Color(9179409), Color(16777215), Color(16726277), Color(16726277))
-        @JvmField
-        var aAbstractGameSocket_9165: AbstractGameSocket? = null
+        var anIntArray2631: IntArray? = IntArray(4096)
+        var anInt9139: Int = 0
+        var anIntArray6432: IntArray? = null
+        var anIntArray6035: IntArray? = null
 
-        @JvmStatic
-        fun method3068(i: Int) {
-            aColorArray9163 = null
-            if (i != 13715) aAbstractGameSocket_9165 = null
-            aAbstractGameSocket_9165 = null
+        init {
+            for (i in 0..4095) anIntArray2631!![i] = method1918(-3358, i)
+        }
+        var anInt3243: Int = 0
+        fun method1918(i: Int, i_0_: Int): Int {
+            if (i != -3358) return 126
+            anInt3243++
+            val i_1_ = i_0_ * (i_0_ * i_0_ shr 12) shr 12
+            val i_2_ = i_0_ * 6 + -61440
+            val i_3_ = 40960 - -(i_2_ * i_0_ shr 12)
+            return i_3_ * i_1_ shr 12
+        }
+
+        var aCacheLruCache_8815: CacheLruCache? = CacheLruCache(16)
+        var anInt4564: Int = 0
+        fun method3664(i: Int, i_88_: Int): ByteArray {
+            anInt4564++
+            var class348_sub42_sub3 = (aCacheLruCache_8815!!.method2302(i.toLong(), (-120).toByte()) as LoadingScreenImageNode?)
+            if (class348_sub42_sub3 == null) {
+                val `is` = ByteArray(512)
+                val random = Random(i.toLong())
+                for (i_89_ in 0..254) `is`[i_89_] = i_89_.toByte()
+                for (i_90_ in 0..254) {
+                    val i_91_ = -i_90_ + 255
+                    val i_92_ = ModelDefinition.method1097(95.toByte(), i_91_, random)
+                    val i_93_ = `is`[i_92_]
+                    `is`[i_92_] = `is`[i_91_]
+                    `is`[511 + -i_90_] = i_93_
+                    `is`[i_91_] = `is`[511 + -i_90_]
+                }
+                class348_sub42_sub3 = LoadingScreenImageNode(`is`)
+                aCacheLruCache_8815!!.method2305(i.toLong(), class348_sub42_sub3, -1)
+            }
+            return class348_sub42_sub3.aByteArray9499!!
         }
     }
 }

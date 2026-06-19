@@ -52,7 +52,7 @@ object NpcUpdateProcessor {
         if (i <= 47) aRgbColorPalette_1519 = null
         var i_4_ = 0
         while (ModelDefinitionLoader.anInt2057 > i_4_) {
-            if (NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_4_].toLong(), -6008) == null) throw RuntimeException("gnp2 pos:" + i_4_ + " size:" + ModelDefinitionLoader.anInt2057)
+            if (NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_4_].toLong(), -6008) == null) throw RuntimeException("gnp2 pos:" + i_4_ + " size:" + ModelDefinitionLoader.anInt2057)
             i_4_++
         }
         if (TerrainShadowBuilderGl2.anInt6930 - ModelDefinitionLoader.anInt2057 != 0) throw RuntimeException("gnp3 mis:" + (TerrainShadowBuilderGl2.anInt6930 - ModelDefinitionLoader.anInt2057))

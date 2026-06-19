@@ -274,8 +274,6 @@ class NpcDefinition {
         var aNpcDefinition_2931: NpcDefinition? = NpcDefinition()
         var anInt2933: Int = 0
         var aObjectByteSerializerHolder_2944: ObjectByteSerializerHolder?
-        @JvmField
-        var anInt2946: Int = 0
         var anInt2952: Int = 0
         @JvmField
         var anInt2955: Int

@@ -1,4 +1,3 @@
-import MinimapFlagRenderer.method1084
 
 /* Class125 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -74,13 +73,13 @@ class MinimapSpriteRenderer internal constructor(i: Int, screenAnchorAlignment: 
 
         fun method1110(i: Int, i_0_: Int, i_1_: Int, i_2_: Byte, i_3_: Int): Boolean {
             anInt4916++
-            if (!TurbulenceTextureNode.aBoolean9307 || !SkeletalAnimFrameData.aBoolean351) return false
-            if (NpcDefinition.anInt2946 < 100) return false
-            if (!IndexedSprite.method164(i_1_, i_3_, (-97).toByte(), i)) return false
-            val i_4_ = i_3_ shl Tooltip.anInt4459
-            val i_5_ = i shl Tooltip.anInt4459
+            if (!ActorEntity.aBoolean9307 || !ActorEntity.aBoolean351) return false
+            if (ActorEntity.anInt2946 < 100) return false
+            if (!ActorEntity.method164(i_1_, i_3_, (-97).toByte(), i)) return false
+            val i_4_ = i_3_ shl ActorEntity.anInt4459
+            val i_5_ = i shl ActorEntity.anInt4459
             if (i_2_.toInt() != -79) anInt4919 = 64
-            if (method1084(i_0_, ArchiveFileConditionWrapper.anInt3465, i_5_, i_4_, NativeSprite.aTerrainTileArray5191!![i_1_]!!.method3982((-86).toByte(), i, i_3_), ArchiveFileConditionWrapper.anInt3465, 18507)) {
+            if (ActorEntity.method1084(i_0_, ActorEntity.anInt3465, i_5_, i_4_, ActorEntity.aTerrainTileArray5191!![i_1_]!!.method3982((-86).toByte(), i, i_3_), ActorEntity.anInt3465, 18507)) {
                 SourceRowTextureNode.anInt9112++
                 return true
             }

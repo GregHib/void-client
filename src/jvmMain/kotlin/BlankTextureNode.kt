@@ -7,7 +7,7 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
     override fun method3042(i: Int, i_3_: Int): IntArray? {
         if (i_3_ != 255) aIntRange_9254 = null
         anInt9256++
-        return SceneEffectMarker.anIntArray6432
+        return PerlinNoiseTextureNode.anIntArray6432
     }
 
     companion object {

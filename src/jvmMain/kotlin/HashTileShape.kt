@@ -24,8 +24,6 @@ class HashTileShape internal constructor(i: Int, i_9_: Int, i_10_: Int, i_11_: I
         @JvmField
         var anInt8814: Int = 0
         @JvmField
-        var aCacheLruCache_8815: CacheLruCache? = CacheLruCache(16)
-        @JvmField
         var aByteArrayArray8816: Array<ByteArray?>? = null
         @JvmField
         var aIntRange_8817: IntRange? = IntRange(83, 2)
@@ -42,7 +40,7 @@ class HashTileShape internal constructor(i: Int, i_9_: Int, i_10_: Int, i_11_: I
         fun method2731(i: Byte) {
             aByteArrayArray8816 = null
             aNodeDeque_8810 = null
-            aCacheLruCache_8815 = null
+            PerlinNoiseTextureNode.aCacheLruCache_8815 = null
             aIntRange_8817 = null
         }
     }

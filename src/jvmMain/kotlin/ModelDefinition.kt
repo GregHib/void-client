@@ -1,5 +1,4 @@
-import java.awt.Canvas
-import java.util.*
+import kotlin.random.Random
 
 class ModelDefinition {
     var anIntArray1816: IntArray = intArrayOf()
@@ -1070,8 +1069,6 @@ class ModelDefinition {
         @JvmField
         var aJs5Archive_1848: Js5Archive? = null
         @JvmField
-        var anInt1850: Int = 0
-        @JvmField
         var anInt1854: Int = 0
         @JvmField
         var anInt1858: Int = 0
@@ -1092,22 +1089,24 @@ class ModelDefinition {
         fun method1097(i: Byte, i_20_: Int, random: Random): Int {
             anInt1861++
             require(i_20_ > 0)
-            if (AsyncTaskHandle.method1436(-19, i_20_)) return (i_20_.toLong() * (0xffffffffL and random.nextInt().toLong()) shr 32).toInt()
+            if (method1436(-19, i_20_)) return (i_20_.toLong() * (0xffffffffL and random.nextInt().toLong()) shr 32).toInt()
             val i_21_ = -2147483648 + -(4294967296L % i_20_.toLong()).toInt()
-            if (i < 78) aJs5Archive_1848 = null
             var i_22_: Int
             do i_22_ = random.nextInt() while (i_22_ >= i_21_)
-            return ModelTransformParams.method3452(i_22_, (-15).toByte(), i_20_)
+            return method3452(i_22_, (-15).toByte(), i_20_)
         }
 
-        @JvmStatic
-        fun method1108(i: Byte, canvas: Canvas) {
-            anInt1850++
-            val dimension = canvas.getSize()
-            if (i.toInt() != -99) method1096(57)
-            MinimapFlagRenderer.method828(38.toByte(), dimension.height, dimension.width)
-            if (WhirlpoolHash.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3643(canvas, WhirlpoolHash.anInt5283, WhirlpoolHash.anInt1651)
-            else CameraRotationStub.aRenderer326!!.method3643(canvas, WhirlpoolHash.anInt8854, WhirlpoolHash.anInt6008)
+        var anInt2582: Int = 0
+        fun method1436(i: Int, i_3_: Int): Boolean {
+            anInt2582++
+            return i_3_ == (i_3_ and -i_3_)
+        }
+
+        var anInt4315: Int = 0
+        fun method3452(i: Int, i_0_: Byte, i_1_: Int): Int {
+            anInt4315++
+            val i_2_ = i_1_ + -1 and (i shr 31)
+            return (i + (i ushr 31)) % i_1_ + i_2_
         }
     }
 }

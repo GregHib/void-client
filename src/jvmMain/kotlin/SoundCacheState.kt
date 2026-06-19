@@ -6,14 +6,12 @@ object SoundCacheState {
     var aLruByteCache_4139: LruByteCache?
     var anInt4140: Int = 0
     var anInt4141: Int = -1
-    @JvmField
-    var aTerrainTileArray4142: Array<TerrainTile?>? = null
     var anInt4143: Int
 
     @JvmStatic
     fun method2640(bool: Boolean) {
         aLruByteCache_4139 = null
-        aTerrainTileArray4142 = null
+        ActorEntity.aTerrainTileArray4142 = null
         if (bool != true) anInt4143 = 110
     }
 

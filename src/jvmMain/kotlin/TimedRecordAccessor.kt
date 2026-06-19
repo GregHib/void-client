@@ -32,12 +32,12 @@ abstract class TimedRecordAccessor : LinkedListNode() {
 
         @JvmStatic
         fun method3309(i: Int) {
-            TextureCache.anIntArrayArrayArray4356 = (Array<Array<IntArray?>?>(MapAreaDefinition.anInt2524) { Array<IntArray?>(1 + SpotAnimEntity.anInt6451) { IntArray(1 + RegionSceneShifter.anInt7054) } })
+            ActorEntity.anIntArrayArrayArray4356 = (Array<Array<IntArray?>?>(MapAreaDefinition.anInt2524) { Array<IntArray?>(1 + ActorEntity.anInt6451) { IntArray(1 + ActorEntity.anInt7054) } })
             anInt7104++
             PackedFlagsAccessor.anInt7101 = 0
-            SceneRegionState.anInt194 = ArchiveFileConditionWrapper.anInt3465
+            SceneRegionState.anInt194 = ActorEntity.anInt3465
             MapElementDecor.aMapTileShapeArray10330 = arrayOfNulls<MapTileShape>(2000)
-            OpenGlRenderer.anInt7714 = ArchiveFileConditionWrapper.anInt3465
+            OpenGlRenderer.anInt7714 = ActorEntity.anInt3465
             MinimapSquareDrawer.aBoolean5226 = false
             HintArrowOrMessage.aMapTileShapeArray2034 = arrayOfNulls<MapTileShape>(500)
             CollisionFlagQuery.anInt1200 = 0
@@ -46,12 +46,12 @@ abstract class TimedRecordAccessor : LinkedListNode() {
             if (i > -113) aTextureFormatInfo_7103 = null
             ParameterizedText.anInt9577 = 0
             MinimapAreaMarkerNode.aMapTileShapeArray9700 = arrayOfNulls<MapTileShape>(500)
-            TurbulenceTextureNode.aBoolean9307 = NativeLibraryState.aRenderer171 !is oa
+            ActorEntity.aBoolean9307 = NativeLibraryState.aRenderer171 !is oa
         }
 
         @JvmStatic
         fun method3313(i: Int, var_terrainTile: TerrainTile?) {
-            NativeSprite.aTerrainTileArray5191!![i] = var_terrainTile
+            ActorEntity.aTerrainTileArray5191!![i] = var_terrainTile
         }
 
         @JvmStatic

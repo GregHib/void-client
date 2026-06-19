@@ -264,8 +264,6 @@ class StructConfig {
 
     companion object {
         @JvmField
-        var anInt562: Int = 0
-        @JvmField
         var anInt563: Int = 0
         @JvmField
         var anInt571: Int = 0

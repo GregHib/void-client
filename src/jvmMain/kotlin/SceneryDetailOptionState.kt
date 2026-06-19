@@ -219,7 +219,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                     val i_36_ = (player.y + -(-1 + player.method2436(105.toByte()) shl 8))
                                     var i_37_ = 0
                                     while ((ModelDefinitionLoader.anInt2057 > i_37_)) {
-                                        val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_37_].toLong(), -6008)) as? NpcReference?)
+                                        val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_37_].toLong(), -6008)) as? NpcReference?)
                                         if (class348_sub22 != null) {
                                             val npc = (class348_sub22.aNpc_6859)!!
                                             if ((GlGroundShaderPass.anInt7396 != (npc.anInt10215)) && (npc.aBoolean10309)) {
@@ -263,7 +263,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         val i_45_ = ((npc.x) - ((-1 + npc.aNpcType_10505!!.anInt1399) shl 8))
                                         val i_46_ = ((npc.y) - (npc.aNpcType_10505!!.anInt1399 - 1 shl 8))
                                         for (i_47_ in 0..<ModelDefinitionLoader.anInt2057) {
-                                            val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_47_].toLong(), -6008)) as NpcReference?)
+                                            val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_47_].toLong(), -6008)) as NpcReference?)
                                             if (class348_sub22 != null) {
                                                 val npc_48_ = (class348_sub22.aNpc_6859)!!
                                                 if (((npc_48_.anInt10215) != GlGroundShaderPass.anInt7396) && (npc != npc_48_) && (npc_48_.aBoolean10309)) {

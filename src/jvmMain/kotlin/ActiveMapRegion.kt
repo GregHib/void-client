@@ -19,7 +19,7 @@ object ActiveMapRegion : MapRegionLoader() {
         val class357 = StringValueNode.method3321(i, i_1_, i_2_)
         if (class357 != null) {
             class357.aClass318_Sub1_Sub1_4402 = class318_sub1_sub1
-            val i_3_ = if (NativeSprite.aTerrainTileArray5191 == SoundCacheState.aTerrainTileArray4142) 1 else 0
+            val i_3_ = if (ActorEntity.aTerrainTileArray5191 == ActorEntity.aTerrainTileArray4142) 1 else 0
             if (class318_sub1_sub1.method2376(-93)) {
                 if (class318_sub1_sub1.method2377(122.toByte())) {
                     class318_sub1_sub1.aClass318_Sub1_6379 = BackgroundWorkerThread.aClass318_Sub1Array3226!![i_3_]

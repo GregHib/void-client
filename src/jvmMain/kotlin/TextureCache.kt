@@ -56,7 +56,6 @@ class TextureCache internal constructor(var_ha_Sub2: OpenGlRenderer?, var_render
     companion object {
         var anInt4352: Int = 0
         var anInt4353: Int = 0
-        var anIntArrayArrayArray4356: Array<Array<IntArray?>?>? = null
         var anInt4357: Int = 0
         var anInt4358: Int = 0
         var anInt4360: Int = 0
@@ -64,11 +63,11 @@ class TextureCache internal constructor(var_ha_Sub2: OpenGlRenderer?, var_render
 
         fun method3465(i: Int, i_0_: Int, mapTileShape: MapTileShape): Boolean {
             anInt4358++
-            SourceRowTextureNode.aAbstractCameraTransform_9114!!.method897(mapTileShape.anIntArray4187!![i], mapTileShape.anIntArray4191[i], mapTileShape.anIntArray4184[i], SequencedWallEntity.anIntArray10172!!)
-            val i_1_ = SequencedWallEntity.anIntArray10172!![2]
+            ActorEntity.aAbstractCameraTransform_9114!!.method897(mapTileShape.anIntArray4187!![i], mapTileShape.anIntArray4191[i], mapTileShape.anIntArray4184[i], ActorEntity.anIntArray10172!!)
+            val i_1_ = ActorEntity.anIntArray10172!![2]
             if (i_1_ < 50) return false
-            mapTileShape.aShortArray4194!![i] = (CollisionFlagQuery.anInt1202 + (SequencedWallEntity.anIntArray10172!![0] * ScreenBorderFiller.anInt1962 / i_1_)).toShort()
-            mapTileShape.aShortArray4183!![i] = ((GlIndexBufferArb.anInt8498 * SequencedWallEntity.anIntArray10172!![i_0_] / i_1_) + CipheredPacketBuffer.anInt9759).toShort()
+            mapTileShape.aShortArray4194!![i] = (ActorEntity.anInt1202 + (ActorEntity.anIntArray10172!![0] * ActorEntity.anInt1962 / i_1_)).toShort()
+            mapTileShape.aShortArray4183!![i] = ((ActorEntity.anInt8498 * ActorEntity.anIntArray10172!![i_0_] / i_1_) + ActorEntity.anInt9759).toShort()
             mapTileShape.aShortArray4188!![i] = i_1_.toShort()
             return true
         }
@@ -82,8 +81,7 @@ class TextureCache internal constructor(var_ha_Sub2: OpenGlRenderer?, var_render
 
         @JvmStatic
         fun method3468(i: Int) {
-            anIntArrayArrayArray4356 = null
-            if (i != -1401) anIntArrayArrayArray4356 = null
+            ActorEntity.anIntArrayArrayArray4356 = null
         }
     }
 }

@@ -95,8 +95,8 @@ open class GrayscaleNoiseTexture(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_2
             var i = i
             var i_5_ = i_5_
             anInt5277++
-            require(!(i_4_ < i && !AsyncTaskHandle.method1436(i_4_ + -23, i))) { "" }
-            require(!(i_5_ > 0 && !AsyncTaskHandle.method1436(56, i_5_))) { "" }
+            require(!(i_4_ < i && !ModelDefinition.method1436(i_4_ + -23, i))) { "" }
+            require(!(i_5_ > 0 && !ModelDefinition.method1436(56, i_5_))) { "" }
             val i_7_ = ParticleDefLoader.method1382(i_2_, -6409)
             var i_8_ = 0
             var i_9_ = min(i_5_, i)

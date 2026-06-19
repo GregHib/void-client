@@ -34,7 +34,6 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
         var anInt2627: Int = 0
         var anInt2628: Int = 0
         var anInt2630: Int = 0
-        var anIntArray2631: IntArray? = IntArray(4096)
         @JvmField
         var anIntArray2632: IntArray?
         @JvmField
@@ -73,7 +72,6 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         graphics_3_.fillRect(3 * i + (i_4_ - -2), 2 + i_5_, 300 - i * 3, 30)
                         graphics_3_.setFont(FontMetaRef.aFont4329)
                         graphics_3_.setColor(color_2_)
-                        if (i_1_ > -42) anIntArray2631 = null
                         graphics_3_.drawString(string, (i_4_ + (304 - string!!.length * 6) / 2), i_5_ + 22)
                         if (AsyncResourceRequest.aString9665 != null) {
                             graphics_3_.setFont(FontMetaRef.aFont4329)
@@ -127,13 +125,12 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
         fun method1461(i: Byte) {
             anIntArray2633 = null
             if (i <= 77) anIntArray2633 = null
-            anIntArray2631 = null
+            PerlinNoiseTextureNode.anIntArray2631 = null
             aRenderableEntryArray2636 = null
             anIntArray2632 = null
         }
 
         init {
-            for (i in 0..4095) anIntArray2631!![i] = SmoothingBuffer.method1918(-3358, i)
             anIntArray2632 = IntArray(32)
             anIntArray2633 = IntArray(32)
             aRenderableEntryArray2636 = null

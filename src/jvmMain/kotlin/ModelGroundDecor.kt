@@ -177,7 +177,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
         val var_terrainTile: TerrainTile?
         val var_terrainTile_21_: TerrainTile?
         if (aBoolean10017) {
-            var_terrainTile = SoundCacheState.aTerrainTileArray4142!![this.aByte6376.toInt()]
+            var_terrainTile = ActorEntity.aTerrainTileArray4142!![this.aByte6376.toInt()]
             var_terrainTile_21_ = TerrainTileShape.aTerrainTileArray8801!![0]
         } else {
             var_terrainTile = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376.toInt()])

@@ -276,7 +276,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         val i_16_ = i_12_ / 2 + i_11_
                         val i_17_ = i_14_ - -(i_13_ / 2) - 18 - i_15_
                         var_renderer.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0)
-                        var_renderer.method3628(-152 + i_16_, i_17_, 304, 34, PerlinNoiseTextureNode.aColorArray9163!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
+                        var_renderer.method3628(-152 + i_16_, i_17_, 304, 34, LoadingBarRenderer.aColorArray9163!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
                         var_renderer.aa(i_16_ - 150, 2 + i_17_, LinkedListNodeStatics.anInt4290 * 3, 30, GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
                         NodeDequeStatics.aFont_3326!!.method2575((-116).toByte(), i_16_, MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884]!!.getRGB(), LocalizedText.aLocalizedText_3501!!.method2063(ChatCommandProcessor.anInt6967, i + 551), -1, i_15_ + i_17_)
                     } else {

@@ -39,12 +39,12 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
                 do {
                     if (i_0_ == 0) {
                         if (bool) return 0
-                        return PerlinNoiseTextureNode.anInt9157
+                        return FireParticleStream.anInt9157
                     } else if (i_0_ != 1) {
                         if (i_0_ == 2) break
                         break@while_128_
                     }
-                    return PerlinNoiseTextureNode.anInt9157
+                    return FireParticleStream.anInt9157
                 } while (false)
                 return 0
             } while (false)

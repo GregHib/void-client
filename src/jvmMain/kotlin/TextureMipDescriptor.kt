@@ -1,5 +1,4 @@
 import WhirlpoolHash.Companion.method1166
-import AsyncTaskHandle.Companion.method1436
 import WhirlpoolHash.Companion.method2057
 import jaggl.OpenGL.Companion.glTexImage2Di
 import kotlin.math.min
@@ -30,8 +29,8 @@ class TextureMipDescriptor internal constructor(var anInt4342: Int, var anInt434
             var i_1_ = i_1_
             var i_3_ = i_3_
             anInt4345++
-            require(!(i_3_ > 0 && !method1436(-86, i_3_))) { "" }
-            require(!(i_1_ > 0 && !method1436(88, i_1_))) { "" }
+            require(!(i_3_ > 0 && !ModelDefinition.method1436(-86, i_3_))) { "" }
+            require(!(i_1_ > 0 && !ModelDefinition.method1436(88, i_1_))) { "" }
             require(i_4_ == 32993) { "" }
             var i_6_ = 0
             var i_7_ = min(i_1_, i_3_)

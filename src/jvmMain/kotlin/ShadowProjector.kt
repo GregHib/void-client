@@ -508,7 +508,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                         if (this.anInt1674 == 0) {
                             if (i_62_ > 0) {
                                 do {
-                                    i_61_ = Crc64Hashable.anIntArray4983!![f.toInt()]
+                                    i_61_ = SoundEnvelope.anIntArray4983!![f.toInt()]
                                     f += f_65_
                                     if (f_66_ < fs[++i]) {
                                         `is`[i] = i_61_
@@ -534,7 +534,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                             }
                             i_62_ = i_64_ - i_63_ and 0x3
                             if (i_62_ > 0) {
-                                i_61_ = Crc64Hashable.anIntArray4983!![f.toInt()]
+                                i_61_ = SoundEnvelope.anIntArray4983!![f.toInt()]
                                 do {
                                     if (f_66_ < fs[++i]) {
                                         `is`[i] = i_61_
@@ -548,7 +548,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                             val i_69_ = 256 - this.anInt1674
                             if (i_62_ > 0) {
                                 do {
-                                    i_61_ = Crc64Hashable.anIntArray4983!![f.toInt()]
+                                    i_61_ = SoundEnvelope.anIntArray4983!![f.toInt()]
                                     f += f_65_
                                     i_61_ = (((i_61_ and 0xff00ff) * i_69_ shr 8 and 0xff00ff) + ((i_61_ and 0xff00) * i_69_ shr 8 and 0xff00))
                                     if (f_66_ < fs[++i]) {
@@ -579,7 +579,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                             }
                             i_62_ = i_64_ - i_63_ and 0x3
                             if (i_62_ <= 0) break
-                            i_61_ = Crc64Hashable.anIntArray4983!![f.toInt()]
+                            i_61_ = SoundEnvelope.anIntArray4983!![f.toInt()]
                             i_61_ = (((i_61_ and 0xff00ff) * i_69_ shr 8 and 0xff00ff) + ((i_61_ and 0xff00) * i_69_ shr 8 and 0xff00))
                             do {
                                 if (f_66_ < fs[++i]) {
@@ -596,7 +596,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                     if (this.anInt1674 == 0) {
                         do {
                             if (f_66_ < fs[++i]) {
-                                `is`[i] = Crc64Hashable.anIntArray4983!![f.toInt()]
+                                `is`[i] = SoundEnvelope.anIntArray4983!![f.toInt()]
                                 fs[i] = f_66_
                             }
                             f_66_ += f_67_
@@ -608,7 +608,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                     val i_76_ = 256 - this.anInt1674
                     do {
                         if (f_66_ < fs[++i]) {
-                            i_61_ = Crc64Hashable.anIntArray4983!![f.toInt()]
+                            i_61_ = SoundEnvelope.anIntArray4983!![f.toInt()]
                             i_61_ = (((i_61_ and 0xff00ff) * i_76_ shr 8 and 0xff00ff) + ((i_61_ and 0xff00) * i_76_ shr 8 and 0xff00))
                             val i_77_ = `is`[i]
                             `is`[i] = (i_61_ + ((i_77_ and 0xff00ff) * i_75_ shr 8 and 0xff00ff) + ((i_77_ and 0xff00) * i_75_ shr 8 and 0xff00))
@@ -626,7 +626,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                         if (this.anInt1674 == 0) {
                             if (i_62_ > 0) {
                                 do {
-                                    i_61_ = Crc64Hashable.anIntArray4983!![f.toInt()]
+                                    i_61_ = SoundEnvelope.anIntArray4983!![f.toInt()]
                                     f += f_65_
                                     if (f_66_ < fs[++i]) `is`[i] = i_61_
                                     f_66_ += f_67_
@@ -640,7 +640,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                             }
                             i_62_ = i_64_ - i_63_ and 0x3
                             if (i_62_ > 0) {
-                                i_61_ = Crc64Hashable.anIntArray4983!![f.toInt()]
+                                i_61_ = SoundEnvelope.anIntArray4983!![f.toInt()]
                                 do {
                                     if (f_66_ < fs[++i]) `is`[i] = i_61_
                                     f_66_ += f_67_
@@ -651,7 +651,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                             val i_79_ = 256 - this.anInt1674
                             if (i_62_ > 0) {
                                 do {
-                                    i_61_ = Crc64Hashable.anIntArray4983!![f.toInt()]
+                                    i_61_ = SoundEnvelope.anIntArray4983!![f.toInt()]
                                     f += f_65_
                                     i_61_ = (((i_61_ and 0xff00ff) * i_79_ shr 8 and 0xff00ff) + ((i_61_ and 0xff00) * i_79_ shr 8 and 0xff00))
                                     if (f_66_ < fs[++i]) {
@@ -678,7 +678,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                             }
                             i_62_ = i_64_ - i_63_ and 0x3
                             if (i_62_ <= 0) break
-                            i_61_ = Crc64Hashable.anIntArray4983!![f.toInt()]
+                            i_61_ = SoundEnvelope.anIntArray4983!![f.toInt()]
                             i_61_ = (((i_61_ and 0xff00ff) * i_79_ shr 8 and 0xff00ff) + ((i_61_ and 0xff00) * i_79_ shr 8 and 0xff00))
                             do {
                                 if (f_66_ < fs[++i]) {
@@ -693,7 +693,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                     i_62_ = i_64_ - i_63_
                     if (this.anInt1674 == 0) {
                         do {
-                            if (f_66_ < fs[++i]) `is`[i] = Crc64Hashable.anIntArray4983!![f.toInt()]
+                            if (f_66_ < fs[++i]) `is`[i] = SoundEnvelope.anIntArray4983!![f.toInt()]
                             f_66_ += f_67_
                             f += f_65_
                         } while (--i_62_ > 0)
@@ -703,7 +703,7 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
                     val i_86_ = 256 - this.anInt1674
                     do {
                         if (f_66_ < fs[++i]) {
-                            i_61_ = Crc64Hashable.anIntArray4983!![f.toInt()]
+                            i_61_ = SoundEnvelope.anIntArray4983!![f.toInt()]
                             i_61_ = (((i_61_ and 0xff00ff) * i_86_ shr 8 and 0xff00ff) + ((i_61_ and 0xff00) * i_86_ shr 8 and 0xff00))
                             val i_87_ = `is`[i]
                             `is`[i] = (i_61_ + ((i_87_ and 0xff00ff) * i_85_ shr 8 and 0xff00ff) + ((i_87_ and 0xff00) * i_85_ shr 8 and 0xff00))
@@ -2470,9 +2470,9 @@ class ShadowProjector internal constructor(private val aHa_Sub1_1666: SoftwareRe
         var f_323_ = f_323_
         var f_324_ = f_324_
         if (aBoolean1675) {
-            aHa_Sub1_1666.method3645(f.toInt(), f_316_.toInt(), f_317_.toInt(), -8003, Crc64Hashable.anIntArray4983!![f_322_.toInt()], f_314_.toInt())
-            aHa_Sub1_1666.method3645(f_314_.toInt(), f_317_.toInt(), f_318_.toInt(), -8003, Crc64Hashable.anIntArray4983!![f_322_.toInt()], f_315_.toInt())
-            aHa_Sub1_1666.method3645(f_315_.toInt(), f_318_.toInt(), f_316_.toInt(), -8003, Crc64Hashable.anIntArray4983!![f_322_.toInt()], f.toInt())
+            aHa_Sub1_1666.method3645(f.toInt(), f_316_.toInt(), f_317_.toInt(), -8003, SoundEnvelope.anIntArray4983!![f_322_.toInt()], f_314_.toInt())
+            aHa_Sub1_1666.method3645(f_314_.toInt(), f_317_.toInt(), f_318_.toInt(), -8003, SoundEnvelope.anIntArray4983!![f_322_.toInt()], f_315_.toInt())
+            aHa_Sub1_1666.method3645(f_315_.toInt(), f_318_.toInt(), f_316_.toInt(), -8003, SoundEnvelope.anIntArray4983!![f_322_.toInt()], f.toInt())
         } else {
             val f_325_ = f_317_ - f_316_
             val f_326_ = f_314_ - f

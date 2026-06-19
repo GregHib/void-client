@@ -34,15 +34,15 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
     fun method183(i: Int): Int {
         anInt4633++
         if (i <= 16) this.aWorldMapLabel_4635 = null
-        val i_8_ = NpcConfig.aResourceLoaderThread_897!!.method2320(106.toByte())
+        val i_8_ = ActorEntity.aResourceLoaderThread_897!!.method2320(106.toByte())
         var i_9_ = 100 * i_8_
         if (anInt4630 != i_8_ || i_8_ == 0) {
             anInt4630 = i_8_
             aLong4640 = GameClock.method599(-125)
         } else {
-            val i_10_ = NpcConfig.aResourceLoaderThread_897!!.method2315(121.toByte())
+            val i_10_ = ActorEntity.aResourceLoaderThread_897!!.method2315(121.toByte())
             if (i_8_ < i_10_) {
-                val l = aLong4640 - NpcConfig.aResourceLoaderThread_897!!.method2323(0)
+                val l = aLong4640 - ActorEntity.aResourceLoaderThread_897!!.method2323(0)
                 if (l > 0L) {
                     val l_11_ = (i_10_ - i_8_).toLong() * (10000L * l / i_8_.toLong())
                     val l_12_ = (-aLong4640 + GameClock.method599(-89)) * 10000L
@@ -61,8 +61,8 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
             val i_14_ = ((this.aWorldMapLabel_4635!!.aTileRenderState_4973!!.method2679(OpenGlRenderer.anInt7666, this.aWorldMapLabel_4635!!.anInt4963, i.toInt() xor 0x60b.inv())) + this.aWorldMapLabel_4635!!.anInt4959)
             method178(i_13_, bool, (-84).toByte(), i_14_)
             method182(63, i_14_, i_13_, bool)
-            var string = NpcConfig.aResourceLoaderThread_897!!.method2318(i.toInt() xor 0x245b)
-            if (-aLong4640 + GameClock.method599(-100) > 10000L) string += " (" + NpcConfig.aResourceLoaderThread_897!!.method2324(i + 149)!!.method525(-117) + ")"
+            var string = ActorEntity.aResourceLoaderThread_897!!.method2318(i.toInt() xor 0x245b)
+            if (-aLong4640 + GameClock.method599(-100) > 10000L) string += " (" + ActorEntity.aResourceLoaderThread_897!!.method2324(i + 149)!!.method525(-117) + ")"
             aFont_4637!!.method2575(115.toByte(), (i_13_ + this.aWorldMapLabel_4635!!.anInt4971 / 2), this.aWorldMapLabel_4635!!.anInt4961, string, -1, (this.aWorldMapLabel_4635!!.anInt4966 + 4 + (i_14_ - -(this.aWorldMapLabel_4635!!.anInt4963 / 2))))
         }
     }

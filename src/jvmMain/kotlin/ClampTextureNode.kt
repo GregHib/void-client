@@ -38,7 +38,7 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_8_ = `is`[1]!!
             val is_9_ = `is`[2]!!
             var i_10_ = 0
-            while ((i_10_ < anInt9139)) {
+            while ((i_10_ < PerlinNoiseTextureNode.anInt9139)) {
                 val i_11_ = is_4_[i_10_]
                 val i_12_ = is_5_[i_10_]
                 val i_13_ = is_6_[i_10_]
@@ -60,7 +60,7 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_16_ = this.method3048(i, 633706337, 0)!!
-            for (i_17_ in 0..<anInt9139) {
+            for (i_17_ in 0..<PerlinNoiseTextureNode.anInt9139) {
                 val i_18_ = is_16_[i_17_]
                 if (anInt9474 > i_18_) `is`[i_17_] = anInt9474
                 else `is`[i_17_] = min(i_18_, anInt9470)
@@ -76,6 +76,5 @@ class ClampTextureNode : AbstractProceduralTextureNode(1, false) {
         var anInt9472: Int = 0
         @JvmField
         var anInt9476: Int = 0
-        var anInt9139: Int = 0
     }
 }

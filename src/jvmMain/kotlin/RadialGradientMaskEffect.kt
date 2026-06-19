@@ -8,10 +8,10 @@ class RadialGradientMaskEffect : AbstractProceduralTextureNode(0, true) {
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (i_0_ != 255) anIntArray9185 = null
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_1_ = LightDetailOptionState.anIntArray6035!![i]
+            val i_1_ = PerlinNoiseTextureNode.anIntArray6035!![i]
             var i_2_ = 0
-            while ((i_2_ < ClampTextureNode.Companion.anInt9139)) {
-                val i_3_ = SceneEffectMarker.anIntArray6432!![i_2_]
+            while ((i_2_ < PerlinNoiseTextureNode.Companion.anInt9139)) {
+                val i_3_ = PerlinNoiseTextureNode.anIntArray6432!![i_2_]
                 if (anInt9187 < i_3_ && 4096 - anInt9187 > i_3_ && i_1_ > 2048 + -anInt9187 && i_1_ < 2048 + anInt9187) {
                     var i_4_ = -i_3_ + 2048
                     i_4_ = if (i_4_ < 0) -i_4_ else i_4_

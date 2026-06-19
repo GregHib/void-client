@@ -14,15 +14,13 @@ object ScreenBorderFiller {
     var anInt1960: Int = 0
     @JvmField
     var aFontMetaRef_1961: FontMetaRef? = FontMetaRef(77, -1)
-    @JvmField
-    var anInt1962: Int = 0
 
     @Throws(ClientException::class)
     @JvmStatic
     fun method1168(i: Int, i_0_: Int, rectangles: Array<Rectangle?>?) {
         anInt1957++
         if (WhirlpoolHash.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3707(rectangles, i, 0, 0)
-        else CameraRotationStub.aRenderer326!!.method3707(rectangles, i, MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157)
+        else CameraRotationStub.aRenderer326!!.method3707(rectangles, i, MapRegionLoaderThread.anInt4211, FireParticleStream.anInt9157)
         if (i_0_ != 0) aFontMetaRef_1961 = null
     }
 

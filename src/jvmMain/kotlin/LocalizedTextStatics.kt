@@ -125,12 +125,12 @@ object LocalizedTextStatics {
             for (i_5_ in 0..<PackedFlagsAccessor.anInt7101) LoadingBarRenderer.aMapTileShapeArray5060!![i_5_] = null
             LoadingBarRenderer.aMapTileShapeArray5060 = null
         }
-        TextureCache.anIntArrayArrayArray4356 = null
+        ActorEntity.anIntArrayArrayArray4356 = null
         val i_6_ = 36 % ((-81 - i) / 38)
-        GlTextureBase.anIntArray5091 = null
+        ActorEntity.anIntArray5091 = null
         MinimapAreaMarkerNode.aMapTileShapeArray9700 = null
         DrawListState.anInt1480 = -1
-        WorldMapToggle.anInt3872 = DrawListState.anInt1480
+        ActorEntity.anInt3872 = DrawListState.anInt1480
     }
 
 

@@ -54,19 +54,19 @@ object DebugOverlayRenderer {
             Tooltip.aFont_4456!!.method2576(("Total Opaque Onscreen: " + ProportionalScrollbarComponent.anInt9930 + "/" + 10000), -256, i_1_ + 60, i, -16777216, -124)
             Tooltip.aFont_4456!!.method2576(("Total Trans Onscreen: " + LoadingScreenImageNode.anInt9504 + "/" + 5000), -256, i_1_ + 75, i, -16777216, -111)
             Tooltip.aFont_4456!!.method2576(("Occluders: " + (DetailLevelOptionState.anInt6115 + CollisionFlagQuery.anInt1200) + " Active: " + (ParameterizedText.anInt9577)), -256, i_1_ + 90, i, -16777216, -111)
-            Tooltip.aFont_4456!!.method2576(("Occluded: Ground:" + TheoraVideoStream.anInt9039 + " Walls: " + StructConfig.anInt562 + " CPs: " + SourceRowTextureNode.anInt9112 + " Pixels: " + NpcDefinition.anInt2946), -256, i_1_ + 105, i, -16777216, -115)
+            Tooltip.aFont_4456!!.method2576(("Occluded: Ground:" + ActorEntity.anInt9039 + " Walls: " + ActorEntity.anInt562 + " CPs: " + SourceRowTextureNode.anInt9112 + " Pixels: " + ActorEntity.anInt2946), -256, i_1_ + 105, i, -16777216, -115)
             Tooltip.aFont_4456!!.method2576(("Occlude Calc Took: " + (GlslEnvMaterialPass.aLong6276 / 1000L) + "us"), -256, i_1_ + 120, i, -16777216, -123)
-            if (InterfaceBounds.anInt6818 == 2 && GlTextureBase.anIntArray5091 != null) {
-                for (i_5_ in GlTextureBase.anIntArray5091!!.indices) {
-                    var f = GlTextureBase.anIntArray5091!![i_5_].toFloat()
+            if (InterfaceBounds.anInt6818 == 2 && ActorEntity.anIntArray5091 != null) {
+                for (i_5_ in ActorEntity.anIntArray5091!!.indices) {
+                    var f = ActorEntity.anIntArray5091!![i_5_].toFloat()
                     f /= 4194304.0f
                     if (f > 1.0f) f = 1.0f
                     f *= 255.0f
                     f = 255.0f - f
                     val i_6_ = f.toInt()
-                    GlTextureBase.anIntArray5091!![i_5_] = i_6_ or (i_6_ shl 8) or (i_6_ shl 16) or 0xffffff.inv()
+                    ActorEntity.anIntArray5091!![i_5_] = i_6_ or (i_6_ shl 8) or (i_6_ shl 16) or 0xffffff.inv()
                 }
-                val class105 = NativeLibraryState.aRenderer171!!.method3662(WorldMapToggle.anInt3872, GlTextureBase.anIntArray5091, 94.toByte(), 0, WorldMapToggle.anInt3872, DrawListState.anInt1480)
+                val class105 = NativeLibraryState.aRenderer171!!.method3662(ActorEntity.anInt3872, ActorEntity.anIntArray5091, 94.toByte(), 0, ActorEntity.anInt3872, DrawListState.anInt1480)
                 class105.method964(i, 170, 1, 0, 0)
             }
         }

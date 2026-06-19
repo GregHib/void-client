@@ -101,11 +101,11 @@ class FireParticleStream : OutputStream() {
                     }
                 }
                 if (GlslMaterialPass.anInt6246 < 0) GlslMaterialPass.anInt6246 = 0
-                if (-1 + (SpotAnimEntity.anInt6451 shl 9) < GlslMaterialPass.anInt6246) GlslMaterialPass.anInt6246 = -1 + (SpotAnimEntity.anInt6451 shl 9)
+                if (-1 + (ActorEntity.anInt6451 shl 9) < GlslMaterialPass.anInt6246) GlslMaterialPass.anInt6246 = -1 + (ActorEntity.anInt6451 shl 9)
                 if (CompositeRgbNoiseTexture.anInt8685 < 0) CompositeRgbNoiseTexture.anInt8685 = 0
-                if (CompositeRgbNoiseTexture.anInt8685 > (RegionSceneShifter.anInt7054 shl 9) + -1) CompositeRgbNoiseTexture.anInt8685 = (RegionSceneShifter.anInt7054 shl 9) - 1
+                if (CompositeRgbNoiseTexture.anInt8685 > (ActorEntity.anInt7054 shl 9) + -1) CompositeRgbNoiseTexture.anInt8685 = (ActorEntity.anInt7054 shl 9) - 1
                 CharCodeMap.method3225(114)
-                LoadingScreenImageNode.method3175((-107).toByte())
+                Client.method3175((-107).toByte())
                 FacingDirectionNode.aRenderer6654!!.KA(i_1_, i_3_, i_1_ - -i_0_, i_3_ + i_2_)
                 TextureDefinitionCache.method1626(1, true)
                 if (GrayscaleNoiseTexture.aBoolean5300) {
@@ -123,7 +123,7 @@ class FireParticleStream : OutputStream() {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(GlslMaterialPass.anInt6246, ParticleSystemRenderer.anInt3855, CompositeRgbNoiseTexture.anInt8685, -MinimapAreaMarkerNode.anInt9701 and 0x3fff, -WorldMapElement.anInt4638 and 0x3fff, 0x3fff and -MapTileShape.anInt4186)
                     FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                     FacingDirectionNode.aRenderer6654!!.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, TerrainChunkBuilder.anInt1550 shl 1, TerrainChunkBuilder.anInt1550 shl 1)
-                    CircleHitbox.method319(TerrainChunkBuilder.anInt1550 shl 1, TerrainChunkBuilder.anInt1550 shl 1, (-18).toByte(), i_1_ + i_0_ / 2, i_3_ + i_2_ / 2)
+                    method319(TerrainChunkBuilder.anInt1550 shl 1, TerrainChunkBuilder.anInt1550 shl 1, (-18).toByte(), i_1_ + i_0_ / 2, i_3_ + i_2_ / 2)
                     SpriteRenderEntry.method3282(0x3fff and -(MinimapAreaMarkerNode.anInt9701), CompositeRgbNoiseTexture.anInt8685, ParticleSystemRenderer.anInt3855, 0, -WorldMapElement.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -MapTileShape.anInt4186 and 0x3fff)
                     val i_16_ = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
                     if (GrayscaleNoiseTexture.aBoolean5300) {
@@ -414,16 +414,16 @@ class FireParticleStream : OutputStream() {
                                     ModelVertexColorBuffer.anInt6568 += i_34_
                                     ShaderObject.anInt4100 += i_33_
                                     ShortMatrixNode.aDouble9517 += d_37_
-                                    PerlinNoiseTextureNode.anInt9157 = (-ModelVertexColorBuffer.anInt6568 + i_26_ + WhirlpoolHash.anInt10444)
+                                    FireParticleStream.anInt9157 = (-ModelVertexColorBuffer.anInt6568 + i_26_ + WhirlpoolHash.anInt10444)
                                     MapRegionLoaderThread.anInt4211 = (-ShaderObject.anInt4100 + WhirlpoolHash.anInt2747 + i_25_)
                                     if (WhirlpoolHash.anInt7207 == 1) {
                                         SceneryDetailOptionState.anInt6095 += i_35_
                                         MaterialPass.anInt3682 += i_36_
                                         for (i_65_ in 0..<WhirlpoolHash.anInt3225) {
-                                            val i_66_ = ((ModelTransformParams.method3452(i_65_ - -MaterialPass.anInt3682, (-15).toByte(), WhirlpoolHash.anInt3225)) * WhirlpoolHash.anInt425)
+                                            val i_66_ = ((ModelDefinition.method3452(i_65_ - -MaterialPass.anInt3682, (-15).toByte(), WhirlpoolHash.anInt3225)) * WhirlpoolHash.anInt425)
                                             var i_67_ = 0
                                             while ((WhirlpoolHash.anInt425 > i_67_)) {
-                                                val i_68_ = ((ModelTransformParams.method3452(i_67_ + (SceneryDetailOptionState.anInt6095), (-15).toByte(), WhirlpoolHash.anInt425)) + i_66_)
+                                                val i_68_ = ((ModelDefinition.method3452(i_67_ + (SceneryDetailOptionState.anInt6095), (-15).toByte(), WhirlpoolHash.anInt425)) + i_66_)
                                                 val bool_69_ = (((i_38_ <= i_65_) && i_39_ + i_38_ > i_65_) || (i_65_ >= i_41_ && (i_65_ < i_41_ - -i_47_) && i_67_ >= i_40_ && (i_40_ - -i_42_ > i_67_)))
                                                 NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_68_]!!.method15(WhirlpoolHash.anInt1067 * i_67_, i_65_ * WhirlpoolHash.anInt4267, WhirlpoolHash.anInt1067, WhirlpoolHash.anInt4267, 0, 0, bool_69_, true)
                                                 i_67_++
@@ -433,14 +433,14 @@ class FireParticleStream : OutputStream() {
                                 }
                             } else {
                                 MapRegionLoaderThread.anInt4211 = i_27_
-                                PerlinNoiseTextureNode.anInt9157 = i_28_
+                                FireParticleStream.anInt9157 = i_28_
                                 if (WhirlpoolHash.anInt7207 == 2) ShortMatrixNode.aDouble9517 = -d
                             }
                         }
                         if (PcmStreamBuffer.aBoolean8870) {
                             CameraSplineNode.anInt6849 = i_5_
                             ConfigIdPair.anInt403 = i_6_
-                            PerlinNoiseTextureNode.anInt9157 = WhirlpoolHash.anInt10444
+                            FireParticleStream.anInt9157 = WhirlpoolHash.anInt10444
                             ShaderObject.anInt4100 = 0
                             MapRegionLoaderThread.anInt4211 = WhirlpoolHash.anInt2747
                             AnimatedModelRenderer.anInt8422 = i_4_
@@ -474,7 +474,7 @@ class FireParticleStream : OutputStream() {
                             if (WhirlpoolHash.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
                             if (WhirlpoolHash.anInt7207 == 1) method1469(-117)
                         }
-                        if (WhirlpoolHash.anInt7207 == 0) WidgetDefinition.anSpriteDrawTarget_252!!.method14(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, WhirlpoolHash.anInt5283, WhirlpoolHash.anInt1651, 0, 0, true, true)
+                        if (WhirlpoolHash.anInt7207 == 0) WidgetDefinition.anSpriteDrawTarget_252!!.method14(MapRegionLoaderThread.anInt4211, FireParticleStream.anInt9157, WhirlpoolHash.anInt5283, WhirlpoolHash.anInt1651, 0, 0, true, true)
                         GroundDecorSceneEntity.anInt9997++
                         RenderNodeStatics.method3284(true, ShortMatrixNode.aDouble9517)
                         ModelWallEntity.aDouble10120 = ShortMatrixNode.aDouble9517
@@ -486,7 +486,7 @@ class FireParticleStream : OutputStream() {
                             TextureHandle.anInt2590 = i_20_
                             anInt1879 = i_21_
                             AnimationFrameState.anInt1537 = (-MapRegionLoaderThread.anInt4211 + -ShaderObject.anInt4100 + (i_16_ + WhirlpoolHash.anInt2747))
-                            SceneTextLabel.anInt6417 = (-PerlinNoiseTextureNode.anInt9157 + (i_17_ + WhirlpoolHash.anInt10444 + -ModelVertexColorBuffer.anInt6568))
+                            SceneTextLabel.anInt6417 = (-FireParticleStream.anInt9157 + (i_17_ + WhirlpoolHash.anInt10444 + -ModelVertexColorBuffer.anInt6568))
                             CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
                         } else if (WhirlpoolHash.anInt7207 == 1) {
                             TextureHandle.anInt2590 = i_20_
@@ -494,7 +494,7 @@ class FireParticleStream : OutputStream() {
                             SceneTextLabel.anInt6417 = -ModelVertexColorBuffer.anInt6568 + i_17_
                             anInt1879 = i_21_
                             CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
-                            CameraRotationStub.aRenderer326!!.KA(MapRegionLoaderThread.anInt4211, PerlinNoiseTextureNode.anInt9157, (MapRegionLoaderThread.anInt4211 - -WhirlpoolHash.anInt5283), (WhirlpoolHash.anInt1651 + PerlinNoiseTextureNode.anInt9157))
+                            CameraRotationStub.aRenderer326!!.KA(MapRegionLoaderThread.anInt4211, FireParticleStream.anInt9157, (MapRegionLoaderThread.anInt4211 - -WhirlpoolHash.anInt5283), (WhirlpoolHash.anInt1651 + FireParticleStream.anInt9157))
                         }
                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, if (WhirlpoolHash.anInt7207 != 2) 2 else 0, WhirlpoolHash.anInt7207 == 1)
                         CameraRotationStub.aRenderer326!!.la()
@@ -514,5 +514,14 @@ class FireParticleStream : OutputStream() {
         var aSceneObjectSpawner_10436: SceneObjectSpawner? = SceneObjectSpawner(true)
         var anInt1879: Int = 0
 
+        var anInt414: Int = 0
+        fun method319(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int, i_3_: Int) {
+            anInt414++
+            HslPaletteState.anInt4171 = i_2_
+            ParticleSystemRenderer.anInt3861 = i_0_
+            GlFramebufferBlitter.anInt282 = i
+            CircleDrawer.anInt2688 = i_3_
+        }
+        var anInt9157: Int = 0
     }
 }

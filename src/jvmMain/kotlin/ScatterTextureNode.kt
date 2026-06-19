@@ -1,4 +1,4 @@
-import java.util.*
+import kotlin.random.Random
 
 class ScatterTextureNode : AbstractProceduralTextureNode(0, true) {
     private var anInt9362 = 2000
@@ -57,7 +57,7 @@ class ScatterTextureNode : AbstractProceduralTextureNode(0, true) {
             while (anInt9362 > i_5_) {
                 var i_6_ = (if (anInt9364 > 0) anInt9369 + ModelDefinition.method1097(92.toByte(), anInt9364, random) + -i_3_ else anInt9369)
                 i_6_ = i_6_ shr 4 and 0xff
-                var i_7_ = ModelDefinition.method1097(81.toByte(), ClampTextureNode.Companion.anInt9139, random)
+                var i_7_ = ModelDefinition.method1097(81.toByte(), PerlinNoiseTextureNode.Companion.anInt9139, random)
                 var i_8_ = ModelDefinition.method1097(123.toByte(), FixedFunctionMaterialPass.anInt6212, random)
                 var i_9_ = i_7_ - -(anInt9368 * WidgetComponentNode.anIntArray4654!![i_6_] shr 12)
                 var i_10_ = ((SceneObjectAnimator.anIntArray3068!![i_6_] * anInt9368 shr 12) + i_8_)

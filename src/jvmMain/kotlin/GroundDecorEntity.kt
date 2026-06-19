@@ -22,10 +22,10 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
         for (i_0_ in this.aShort8743..this.aShort8751) {
             var i_1_ = this.aShort8750.toInt()
             while ((i_1_ <= this.aShort8747)) {
-                val i_2_ = (-DisplayModeOptionState.anInt6111 + i_0_ + NpcActorEntity.anInt10084)
-                if (i_2_ >= 0 && (SpriteBlitter.aBooleanArrayArray1572!!.size > i_2_)) {
-                    val i_3_ = (NpcActorEntity.anInt10084 + (i_1_ - GlIndexBufferArb.anInt8502))
-                    if (i_3_ >= 0 && (SpriteBlitter.aBooleanArrayArray1572!!.size > i_3_) && SpriteBlitter.aBooleanArrayArray1572!![i_2_]!![i_3_]) return true
+                val i_2_ = (-ActorEntity.anInt6111 + i_0_ + ActorEntity.anInt10084)
+                if (i_2_ >= 0 && (ActorEntity.aBooleanArrayArray1572!!.size > i_2_)) {
+                    val i_3_ = (ActorEntity.anInt10084 + (i_1_ - ActorEntity.anInt8502))
+                    if (i_3_ >= 0 && (ActorEntity.aBooleanArrayArray1572!!.size > i_3_) && ActorEntity.aBooleanArrayArray1572!![i_2_]!![i_3_]) return true
                 }
                 i_1_++
             }
@@ -64,12 +64,12 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
         while_104_@ while ((i_20_ <= this.aShort8751)) {
             var i_21_ = this.aShort8750.toInt()
             while (this.aShort8747 >= i_21_) {
-                val l = (RenderbufferObject.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_20_]!![i_21_])
+                val l = (SceneEntity.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_20_]!![i_21_])
                 var l_22_ = 0L
                 while_103_@ while (l_22_ <= 48L) {
                     val i_23_ = (l ushr l_22_.toInt() and 0xffffL).toInt()
                     if (i_23_ <= 0) break
-                    val class211 = WaterDetailOptionState.aSoundEnvelopeArray5993!![-1 + i_23_]
+                    val class211 = SceneEntity.aSoundEnvelopeArray5993!![-1 + i_23_]
                     var i_24_ = 0
                     while (i_19_ > i_24_) {
                         if (class211!!.aClass348_Sub1_2745 === class348_sub1s!![i_24_]) {
@@ -89,8 +89,8 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
         val i_25_ = 17 % ((i - -14) / 61)
         for (i_26_ in i_19_..3) class348_sub1s!![i_26_] = null
         if (this.aByte8745.toInt() != 0) {
-            val i_27_ = (this.aShort8743 + -DisplayModeOptionState.anInt6111)
-            val i_28_ = (-GlIndexBufferArb.anInt8502 + this.aShort8750)
+            val i_27_ = (this.aShort8743 + -ActorEntity.anInt6111)
+            val i_28_ = (-ActorEntity.anInt8502 + this.aShort8750)
             val i_29_: Int
             val i_30_: Short
             val i_31_: Int
@@ -120,18 +120,18 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
             }
             var i_33_ = 0
             while_106_@ while ( /**/i_19_ > i_33_) {
-                var l = (RenderbufferObject.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_32_.toInt()]!![i_31_])
+                var l = (SceneEntity.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_32_.toInt()]!![i_31_])
                 while (l != 0L) {
-                    val class211 = (WaterDetailOptionState.aSoundEnvelopeArray5993!![(-1L + (l and 0xffffL)).toInt()])
+                    val class211 = (SceneEntity.aSoundEnvelopeArray5993!![(-1L + (l and 0xffffL)).toInt()])
                     l = l ushr 16
                     if (class211!!.aClass348_Sub1_2745 === class348_sub1s!![i_33_]) {
                         i_33_++
                         continue@while_106_
                     }
                 }
-                l = (RenderbufferObject.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_29_]!![i_30_.toInt()])
+                l = (SceneEntity.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_29_]!![i_30_.toInt()])
                 while (l != 0L) {
-                    val class211 = (WaterDetailOptionState.aSoundEnvelopeArray5993!![(-1L + (0xffffL and l)).toInt()])
+                    val class211 = (SceneEntity.aSoundEnvelopeArray5993!![(-1L + (0xffffL and l)).toInt()])
                     l = l ushr 16
                     if (class348_sub1s!![i_33_] === class211!!.aClass348_Sub1_2745) {
                         i_33_++

@@ -1,7 +1,7 @@
 import Gl2dTexture.Companion.method239
 import WorldListEntry.Companion.method285
 import TwoStateOptionState.Companion.method1843
-import java.util.*
+import kotlin.random.Random
 
 /*
  * Class111
@@ -35,7 +35,7 @@ class CollisionMapRegion internal constructor(sceneProjector: SceneProjector?, i
         }
         if (!aBooleanArray1725[i] || anIntArrayArray1724!![i]!!.size <= 1) return anIntArrayArray1724!![i]
         val i_9_ = if (i_8_ == (anInt1715.inv())) 0 else 1
-        val random = Random()
+        val random = Random
         val `is` = IntArray(anIntArrayArray1724!![i]!!.size)
         ArrayCopyUtil.method1578(anIntArrayArray1724!![i]!!, 0, `is`, 0, `is`.size)
         var i_10_ = i_9_

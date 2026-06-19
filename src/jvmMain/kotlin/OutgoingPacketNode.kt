@@ -3,7 +3,9 @@ import BooleanGraphicsOptionState.Companion.method1722
 import NpcReference.Companion.method2959
 import GlTexture2DRegion.Companion.method3553
 import GameClock.method599
+import ModelDefinition.Companion.method1096
 import RasterSprite.Companion.method166
+import java.awt.Canvas
 
 class OutgoingPacketNode : LinkedListNode() {
     var aClass348_Sub49_Sub2_7116: CipheredPacketBuffer? = null
@@ -71,13 +73,24 @@ class OutgoingPacketNode : LinkedListNode() {
                     if (!GrayscaleNoiseTexture.aBoolean5300) {
                         val dimension = ParticleSystemRenderer.aCanvas3869!!.getSize()
                         FacingDirectionNode.aRenderer6654!!.method3643(ParticleSystemRenderer.aCanvas3869, dimension.width, dimension.height)
-                    } else ModelDefinition.method1108((-99).toByte(), ParticleSystemRenderer.aCanvas3869!!)
+                    } else method1108((-99).toByte(), ParticleSystemRenderer.aCanvas3869!!)
                     FacingDirectionNode.aRenderer6654!!.method3677(ParticleSystemRenderer.aCanvas3869)
                 } else method3553(false, 100.toByte(), IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350))
                 anInt7123++
                 TextureCache.method3466(i + -1347)
                 PcmStreamBuffer.aBoolean8870 = true
             }
+        }
+
+        var anInt1850: Int = 0
+        @JvmStatic
+        fun method1108(i: Byte, canvas: Canvas) {
+            anInt1850++
+            val dimension = canvas.getSize()
+            if (i.toInt() != -99) method1096(57)
+            MinimapFlagRenderer.method828(38.toByte(), dimension.height, dimension.width)
+            if (WhirlpoolHash.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3643(canvas, WhirlpoolHash.anInt5283, WhirlpoolHash.anInt1651)
+            else CameraRotationStub.aRenderer326!!.method3643(canvas, WhirlpoolHash.anInt8854, WhirlpoolHash.anInt6008)
         }
     }
 }

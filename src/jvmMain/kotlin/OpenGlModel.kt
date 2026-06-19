@@ -203,7 +203,7 @@ class OpenGlModel : AbstractModel {
     private fun method680(i: Int, i_29_: Int, i_30_: Byte, i_31_: Short, i_32_: Int): Int {
         if (i != 19995) return -13
         anInt5582++
-        var i_33_ = (ParticleEmitterNode.anIntArray179!![ScanlineRasterFiller.method1384(i_32_, i xor 0x54b313bc, i_29_)])
+        var i_33_ = (SoundEnvelope.anIntArray179!![ScanlineRasterFiller.method1384(i_32_, i xor 0x54b313bc, i_29_)])
         if (i_31_.toInt() != -1) {
             val class12 = aHa_Sub2_5598!!.aRenderConfig4579!!.method3(i_31_.toInt() and 0xffff, -6662)
             val i_34_ = 0xff and class12!!.aByte201.toInt()
@@ -772,7 +772,7 @@ class OpenGlModel : AbstractModel {
             for (i_203_ in 0..<anInt5536) {
                 val class118 = aMapSceneTileDefinitionArray5621!![i_203_]!!
                 val class48 = aColourAdjustmentArray5596!![i_203_]!!
-                class48.anInt858 = ((0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
+                class48.anInt858 = ((0xffffff and (SoundEnvelope.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
             }
         }
         if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
@@ -1302,7 +1302,7 @@ class OpenGlModel : AbstractModel {
                 for (i_290_ in 0..<anInt5536) {
                     val class118 = aMapSceneTileDefinitionArray5621!![i_290_]!!
                     val class48 = aColourAdjustmentArray5596!![i_290_]!!
-                    class48.anInt858 = ((0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
+                    class48.anInt858 = ((0xffffff and (SoundEnvelope.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()])) or (class48.anInt858 and 0xffffff.inv()))
                 }
             }
             if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
@@ -1811,7 +1811,7 @@ class OpenGlModel : AbstractModel {
             for (i_383_ in 0..<anInt5536) {
                 val class118 = aMapSceneTileDefinitionArray5621!![i_383_]!!
                 val class48 = aColourAdjustmentArray5596!![i_383_]!!
-                class48.anInt858 = ((ParticleEmitterNode.anIntArray179!![(aShortArray5580!![class118.anInt1783].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class48.anInt858))
+                class48.anInt858 = ((SoundEnvelope.anIntArray179!![(aShortArray5580!![class118.anInt1783].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class48.anInt858))
             }
         }
         if (aHoverActionEntry_5610 != null) aHoverActionEntry_5610!!.anByteBufferReader_1811 = null
@@ -2137,7 +2137,7 @@ class OpenGlModel : AbstractModel {
                         while (anInt5536 > i_466_) {
                             val class118 = aMapSceneTileDefinitionArray5621!![i_466_]!!
                             val class48 = aColourAdjustmentArray5596!![i_466_]!!
-                            class48.anInt858 = (0xffffff and (ParticleEmitterNode.anIntArray179!![(aShortArray5580!![(class118.anInt1783)]).toInt() and 0xffff]) or (0xffffff.inv() and class48.anInt858))
+                            class48.anInt858 = (0xffffff and (SoundEnvelope.anIntArray179!![(aShortArray5580!![(class118.anInt1783)]).toInt() and 0xffff]) or (0xffffff.inv() and class48.anInt858))
                             i_466_++
                         }
                     }
@@ -2314,7 +2314,7 @@ class OpenGlModel : AbstractModel {
                 for (i_504_ in 0..<anInt5536) {
                     val class118 = aMapSceneTileDefinitionArray5621!![i_504_]!!
                     val class48 = aColourAdjustmentArray5596!![i_504_]!!
-                    class48.anInt858 = (((ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()]) and 0xffffff) or (class48.anInt858 and 0xffffff.inv()))
+                    class48.anInt858 = (((SoundEnvelope.anIntArray179!![0xffff and (aShortArray5580!![class118.anInt1783]).toInt()]) and 0xffffff) or (class48.anInt858 and 0xffffff.inv()))
                 }
             }
         } else if (i == 8) {
@@ -2833,7 +2833,7 @@ class OpenGlModel : AbstractModel {
                         while (anInt5536 > i_669_) {
                             val class118 = aMapSceneTileDefinitionArray5621!![i_669_]!!
                             val class48 = aColourAdjustmentArray5596!![i_669_]!!
-                            class48.anInt858 = (0xffffff and (ParticleEmitterNode.anIntArray179!![(aShortArray5580!![(class118.anInt1783)]).toInt() and 0xffff]) or (class48.anInt858 and 0xffffff.inv()))
+                            class48.anInt858 = (0xffffff and (SoundEnvelope.anIntArray179!![(aShortArray5580!![(class118.anInt1783)]).toInt() and 0xffff]) or (class48.anInt858 and 0xffffff.inv()))
                             i_669_++
                         }
                     }
@@ -3077,7 +3077,7 @@ class OpenGlModel : AbstractModel {
                             }
                         }
                         if (i_712_ == -1) throw RuntimeException()
-                        var i_714_ = ((ParticleEmitterNode.anIntArray179!![0xffff and (modelDefinition.aShortArray1862[class162.anInt2155]).toInt()]) and 0xffffff)
+                        var i_714_ = ((SoundEnvelope.anIntArray179!![0xffff and (modelDefinition.aShortArray1862[class162.anInt2155]).toInt()]) and 0xffffff)
                         i_714_ = i_714_ or (255 + -(if ((modelDefinition.aByteArray1834) == null) 0 else (modelDefinition.aByteArray1834!![(class162.anInt2155)])) shl 24)
                         aMapSceneTileDefinitionArray5621!![i_711_] = MapSceneTileDefinition(i_712_, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
                         aColourAdjustmentArray5596!![i_711_] = ColourAdjustment(i_714_)

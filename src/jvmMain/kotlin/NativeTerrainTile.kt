@@ -62,21 +62,21 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
         val `is` = this.anIntArrayArrayArray8321!![i_21_]!![i]!!
         val is_23_ = this.anIntArrayArrayArray8313!![i_21_]!![i]!!
         val i_24_ = `is`.size
-        if (CircleHitbox.anIntArray407!!.size < i_24_) {
-            CircleHitbox.anIntArray407 = IntArray(i_24_)
+        if (anIntArray407!!.size < i_24_) {
+            anIntArray407 = IntArray(i_24_)
             TerrainTileGeometry.anIntArray3014 = IntArray(i_24_)
         }
         for (i_25_ in 0..<i_24_) {
-            CircleHitbox.anIntArray407!![i_25_] = (`is`[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
+            anIntArray407!![i_25_] = (`is`[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
             TerrainTileGeometry.anIntArray3014!![i_25_] = (is_23_[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
         }
         var i_26_ = 0
         while (i_24_ > i_26_) {
-            val i_27_ = CircleHitbox.anIntArray407!![i_26_]
+            val i_27_ = anIntArray407!![i_26_]
             val i_28_ = TerrainTileGeometry.anIntArray3014!![i_26_++]
-            val i_29_ = CircleHitbox.anIntArray407!![i_26_]
+            val i_29_ = anIntArray407!![i_26_]
             val i_30_ = TerrainTileGeometry.anIntArray3014!![i_26_++]
-            val i_31_ = CircleHitbox.anIntArray407!![i_26_]
+            val i_31_ = anIntArray407!![i_26_]
             val i_32_ = TerrainTileGeometry.anIntArray3014!![i_26_++]
             if ((-((-i_29_ + i_31_) * (i_30_ - i_28_)) + (i_27_ - i_29_) * (i_30_ - i_32_)) > 0) var_r_Sub1.method3287(i_28_, i_22_ + -21622, i_27_, i_29_, i_30_, i_32_, i_31_)
         }
@@ -228,7 +228,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                                 var i_104_ = i_88_ * (i_83_ and 0x7f) shr 7
                                 if (i_104_ < 2) i_104_ = 2
                                 else if (i_104_ > 126) i_104_ = 126
-                                i_89_ = (ParticleEmitterNode.anIntArray179!![i_104_ or (i_83_ and 0xff80)])
+                                i_89_ = (SoundEnvelope.anIntArray179!![i_104_ or (i_83_ and 0xff80)])
                                 if ((this.anInt8294 and 0x7) == 0) {
                                     f_103_ = ((f_91_ * (this.aHa_Sub3_8322!!.aFloatArray8170[0])) + f_90_ * (this.aHa_Sub3_8322!!.aFloatArray8170[1]) + (this.aHa_Sub3_8322!!.aFloatArray8170[2]) * f_92_)
                                     f_103_ = ((f_103_ * (if (!(f_103_ > 0.0f)) (this.aHa_Sub3_8322!!.aFloat8186) else (this.aHa_Sub3_8322!!.aFloat8174))) + (this.aHa_Sub3_8322!!.aFloat8093))
@@ -244,7 +244,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
                                     if (i_107_ >= 2) {
                                         if (i_107_ > 126) i_107_ = 126
                                     } else i_107_ = 2
-                                    i_106_ = (ParticleEmitterNode.anIntArray179!![i_107_ or (i_84_ and 0xff80)])
+                                    i_106_ = (SoundEnvelope.anIntArray179!![i_107_ or (i_84_ and 0xff80)])
                                     if ((0x7 and this.anInt8294) == 0) {
                                         var f_108_ = ((this.aHa_Sub3_8322!!.aFloatArray8170[2]) * f_92_ + (f_90_ * (this.aHa_Sub3_8322!!.aFloatArray8170[1]) + ((this.aHa_Sub3_8322!!.aFloatArray8170[0]) * f_91_)))
                                         f_108_ = ((this.aHa_Sub3_8322!!.aFloat8093) + (if (f_103_ > 0.0f) (this.aHa_Sub3_8322!!.aFloat8174) else (this.aHa_Sub3_8322!!.aFloat8186)) * f_103_)
@@ -831,5 +831,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
             if (WhirlpoolHash.anInt7207 == 1) return MapRegionLoaderThread.anInt4211
             return 0
         }
+
+        var anIntArray407: IntArray? = IntArray(1)
     }
 }

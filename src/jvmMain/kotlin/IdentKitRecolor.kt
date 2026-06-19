@@ -90,7 +90,7 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                     TurbulenceTextureNode.aClass348_Sub22Array9319!![TerrainShadowBuilderGl2.anInt6930++] = class348_sub22
                 }
                 val npc = (class348_sub22.aNpc_6859)!!
-                RgbColorPalette.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_18_
+                Client.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_18_
                 npc.anInt10306 = NullOggStream.anInt9041
                 if ((npc.aNpcType_10505) != null && npc.aNpcType_10505!!.method793(0)) method181(true, npc)
                 val i_19_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 2)

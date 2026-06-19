@@ -6,7 +6,7 @@ class SourceRowTextureNode : AbstractProceduralTextureNode(0, true) {
         anInt9115++
         if (i_0_ != 255) aNodeDeque_9111 = null
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
-        if (this.aSpriteSheetCache_7032!!.aBoolean2570) ArrayCopyUtil.method1579(`is`, 0, ClampTextureNode.Companion.anInt9139, LightDetailOptionState.anIntArray6035!![i])
+        if (this.aSpriteSheetCache_7032!!.aBoolean2570) ArrayCopyUtil.method1579(`is`, 0, PerlinNoiseTextureNode.Companion.anInt9139, PerlinNoiseTextureNode.anIntArray6035!![i])
         return `is`
     }
 
@@ -18,14 +18,12 @@ class SourceRowTextureNode : AbstractProceduralTextureNode(0, true) {
         @JvmField
         var aRenderConfig9113: RenderConfig? = null
         @JvmField
-        var aAbstractCameraTransform_9114: AbstractCameraTransform? = null
-        @JvmField
         var anInt9115: Int = 0
 
         @JvmStatic
         fun method3057(i: Byte) {
             if (i > -32) method3058(-76, 25, -12)
-            aAbstractCameraTransform_9114 = null
+            ActorEntity.aAbstractCameraTransform_9114 = null
             aNodeDeque_9111 = null
             aRenderConfig9113 = null
         }

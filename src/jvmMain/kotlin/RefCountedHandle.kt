@@ -26,21 +26,21 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
         fun method1320() {
             for (i in 0..<CalendarUtil.anInt4135) {
                 if (!RenderNodeStatics.aBooleanArray9718!![i]) {
-                    val class211 = WaterDetailOptionState.aSoundEnvelopeArray5993!![i]
+                    val class211 = SceneEntity.aSoundEnvelopeArray5993!![i]
                     val class348_sub1 = class211!!.aClass348_Sub1_2745!!
                     val i_3_ = class211.anInt2731
-                    val i_4_ = (class348_sub1.method2723(-1) - TheoraVideoStream.anInt9037)
-                    val i_5_ = 1 + (2 * i_4_ shr Tooltip.anInt4459)
+                    val i_4_ = (class348_sub1.method2723(-1) - ActorEntity.anInt9037)
+                    val i_5_ = 1 + (2 * i_4_ shr ActorEntity.anInt4459)
                     var i_6_ = 0
                     val `is` = IntArray(i_5_ * i_5_)
-                    val i_7_ = (class348_sub1.method2724(-1) - i_4_ shr Tooltip.anInt4459)
-                    var i_8_ = (class348_sub1.method2717(79.toByte()) - i_4_ shr Tooltip.anInt4459)
-                    var i_9_ = (class348_sub1.method2717(113.toByte()) + i_4_ shr Tooltip.anInt4459)
+                    val i_7_ = (class348_sub1.method2724(-1) - i_4_ shr ActorEntity.anInt4459)
+                    var i_8_ = (class348_sub1.method2717(79.toByte()) - i_4_ shr ActorEntity.anInt4459)
+                    var i_9_ = (class348_sub1.method2717(113.toByte()) + i_4_ shr ActorEntity.anInt4459)
                     if (i_8_ < 0) {
                         i_6_ -= i_8_
                         i_8_ = 0
                     }
-                    if (i_9_ >= RegionSceneShifter.anInt7054) i_9_ = RegionSceneShifter.anInt7054 - 1
+                    if (i_9_ >= ActorEntity.anInt7054) i_9_ = ActorEntity.anInt7054 - 1
                     for (i_10_ in i_8_..i_9_) {
                         val i_11_ = class211.aShortArray2742!![i_6_].toInt()
                         val i_12_ = i_11_ ushr 8
@@ -51,7 +51,7 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
                             i_13_ -= i_14_
                             i_14_ = 0
                         }
-                        if (i_15_ >= SpotAnimEntity.anInt6451) i_15_ = SpotAnimEntity.anInt6451 - 1
+                        if (i_15_ >= ActorEntity.anInt6451) i_15_ = ActorEntity.anInt6451 - 1
                         for (i_16_ in i_14_..i_15_) {
                             var i_17_ = 1
                             val class318_sub1_sub3: GroundDecorEntity? = (ClickFeedbackTask.Companion.method1353(i_3_, i_16_, i_10_, (if (aClass2276 != null) aClass2276 else (GroundDecorEntity::class.java.also { aClass2276 = it }))))
@@ -97,7 +97,7 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
                         i_6_++
                     }
                     RenderNodeStatics.aBooleanArray9718!![i] = true
-                    NativeSprite.aTerrainTileArray5191!![i_3_]!!.method3981(class348_sub1, `is`)
+                    ActorEntity.aTerrainTileArray5191!![i_3_]!!.method3981(class348_sub1, `is`)
                 }
             }
         }
@@ -106,7 +106,7 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
             var i_35_ = i_35_
             val i_37_ = 4 / ((-51 - i) / 63)
             anInt2273++
-            if (NativeSprite.aTerrainTileArray5191 == null) return 0
+            if (ActorEntity.aTerrainTileArray5191 == null) return 0
             if (i_35_ < 3) {
                 val i_38_ = i_32_ shr 9
                 val i_39_ = i_33_ shr 9
@@ -125,7 +125,7 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
                 }
                 if (bool) i_35_++
             }
-            return NativeSprite.aTerrainTileArray5191!![i_35_]!!.method3986(i_32_, i_33_, 22.toByte())
+            return ActorEntity.aTerrainTileArray5191!![i_35_]!!.method3986(i_32_, i_33_, 22.toByte())
         }
 
         @JvmStatic

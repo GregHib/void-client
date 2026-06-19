@@ -164,15 +164,13 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, npcConfi
         var anInt10169: Int = 0
         var anInt10170: Int = 0
         var anInt10171: Int = 0
-        @JvmField
-        var anIntArray10172: IntArray? = IntArray(3)
 
         @JvmStatic
         fun method2492(i: Int) {
             if (i != 1) anInt10163 = -36
             aIntRange_10149 = null
             aIntRange_10168 = null
-            anIntArray10172 = null
+            ActorEntity.anIntArray10172 = null
         }
 
         fun method2493(var_ha_Sub2: OpenGlRenderer?, i: Int, managedGlResources: Array<ManagedGlResource?>?): GlShaderProgramHandle? {

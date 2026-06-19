@@ -30,7 +30,7 @@ import CubeMapMaterialPass.Companion.method2172
 import ItemModelDefinition.Companion.method326
 import TileSceneEntity.Companion.method2396
 import SceneObjectEntity.Companion.method2405
-import ActorEntity.Companion.method2478
+import ConfigArchiveLoader.Companion.method2478
 import WallEntity.Companion.method2487
 import Font.Companion.method2570
 import MidiSequencePlayer.Companion.method2839
@@ -1026,7 +1026,7 @@ object ChatCommandProcessor {
             }
             if (i == 5401) {
                 anInt1173 -= 2
-                SceneEffectMarker.aShortArray6428!![anIntArray1149!![anInt1173]] = method160(27076, anIntArray1149!![anInt1173 + 1]).toShort()
+                Client.aShortArray6428!![anIntArray1149!![anInt1173]] = method160(27076, anIntArray1149!![anInt1173 + 1]).toShort()
                 ClientException.aModelHeaderCache_112!!.method1930(-21804)
                 ClientException.aModelHeaderCache_112!!.method1936(-71)
                 MapAreaDefinition.aBufferedMessageQueue_2529!!.method2074(-118)
@@ -1397,9 +1397,9 @@ object ChatCommandProcessor {
             if (i == 5612) {
                 val i_144_ = anIntArray1149!![--anInt1173]
                 if (WorldMapRenderer.anInt4674 == 7 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
-                    if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
-                        PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
-                        PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
+                    if (Client.aAbstractGameSocket_9165 != null) {
+                        Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                        Client.aAbstractGameSocket_9165 = null
                     }
                     TextureLoadExceptionStatics.anInt4596 = i_144_
                     ByteBufferStatics.method3379(2, 9)
@@ -1416,9 +1416,9 @@ object ChatCommandProcessor {
                 val string = aStringArray1152!![anInt1170]!!
                 val string_145_ = aStringArray1152!![anInt1170 + 1]
                 if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
-                    if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
-                        PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
-                        PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
+                    if (Client.aAbstractGameSocket_9165 != null) {
+                        Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                        Client.aAbstractGameSocket_9165 = null
                     }
                     OpenGlModel.aString5600 = string
                     TextureGenerator.aString2496 = string_145_

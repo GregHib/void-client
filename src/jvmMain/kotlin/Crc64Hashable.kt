@@ -56,8 +56,6 @@ class Crc64Hashable : KeyedComparable {
 
     companion object {
         @JvmField
-        var anIntArray4983: IntArray? = null
-        @JvmField
         var aJs5Archive_4984: Js5Archive? = null
         @JvmField
         var anInt4985: Int = 0
@@ -75,7 +73,7 @@ class Crc64Hashable : KeyedComparable {
         fun method1112(i: Int) {
             if (i != 1) aSlotBindingArray4987 = null
             aJs5Archive_4984 = null
-            anIntArray4983 = null
+            SoundEnvelope.anIntArray4983 = null
             aSlotBindingArray4987 = null
         }
 

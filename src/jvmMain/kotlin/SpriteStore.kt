@@ -61,8 +61,6 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
         @JvmField
         var anInt361: Int = 0
         @JvmField
-        var anInt362: Int = 0
-        @JvmField
         var anInt363: Int = 0
         @JvmField
         var aFontMetaRef_364: FontMetaRef? = FontMetaRef(12, 3)
@@ -81,21 +79,6 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
         @JvmField
         var anInt372: Int = 0
 
-        @JvmStatic
-        fun method303(i: Int, i_3_: Int): Short {
-            anInt362++
-            val i_4_ = (i and 0xfe66) shr 10
-            var i_5_ = i shr 3 and 0x70
-            val i_6_ = i and 0x7f
-            i_5_ = (if (i_6_ <= 64) i_6_ * i_5_ shr 7 else i_5_ * (127 + -i_6_) shr 7)
-            val i_7_ = i_5_ + i_6_
-            val i_8_: Int
-            if (i_7_ != 0) i_8_ = (i_5_ shl 8) / i_7_
-            else i_8_ = i_5_ shl 1
-            val i_9_ = i_7_
-            if (i_3_ != 30) return 79.toShort()
-            return (i_9_ or (i_8_ shr 4 shl 7 or (i_4_ shl 10))).toShort()
-        }
 
         fun method304(i: Int, i_10_: Int, i_11_: Int) {
             anInt363++
@@ -108,7 +91,6 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
         @JvmStatic
         fun method305(i: Byte) {
             anIntArray369 = null
-            if (i.toInt() != 79) method303(-22, -13)
             aFontMetaRef_364 = null
             aAbstractModelRendererArray367 = null
         }

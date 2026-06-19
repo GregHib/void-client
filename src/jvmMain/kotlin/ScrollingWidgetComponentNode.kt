@@ -69,7 +69,7 @@ class ScrollingWidgetComponentNode internal constructor(js5Archive: Js5Archive?,
                 try {
                     val runtime = Runtime.getRuntime()
                     val integer = runtime.availableProcessors()
-                    TextureMapImageNode.anInt9372 = integer
+                    ActorEntity.anInt9372 = integer
                 } catch (throwable: Throwable) {
                     /* empty */
                 }

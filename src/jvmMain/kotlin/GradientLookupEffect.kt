@@ -32,7 +32,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
             val is_6_ = `is`[1]!!
             val is_7_ = `is`[2]!!
             var i_8_ = 0
-            while ((ClampTextureNode.Companion.anInt9139 > i_8_)) {
+            while ((PerlinNoiseTextureNode.Companion.anInt9139 > i_8_)) {
                 var i_9_ = is_4_[i_8_] shr 4
                 if (i_9_ < 0) i_9_ = 0
                 if (i_9_ > 256) i_9_ = 256

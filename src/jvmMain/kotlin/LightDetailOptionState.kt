@@ -12,14 +12,12 @@ class LightDetailOptionState : GraphicsOptionState {
     }
 
     override fun method1710(i: Int): Int {
-        if (i != 20014) anIntArray6035 = null
         anInt6029++
         return 1
     }
 
     fun method1800(i: Int): Int {
         anInt6031++
-        if (i != -32350) anIntArray6035 = null
         return this.anInt3138
     }
 
@@ -59,8 +57,6 @@ class LightDetailOptionState : GraphicsOptionState {
         @JvmField
         var anInt6034: Int = 0
         @JvmField
-        var anIntArray6035: IntArray? = null
-        @JvmField
         var anInt6036: Int = 0
         @JvmField
         var anInt6037: Int = 0
@@ -70,19 +66,19 @@ class LightDetailOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1799(i: Int) {
             val i_0_ = 51 / ((i - 33) / 40)
-            anIntArray6035 = null
+            PerlinNoiseTextureNode.anIntArray6035 = null
             aConfigFlagUtil_6030 = null
         }
 
         @JvmStatic
         @Throws(IOException::class)
         fun method1802(i: Int) {
-            if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null && IntPair.anInt6969 > 0) {
+            if (Client.aAbstractGameSocket_9165 != null && IntPair.anInt6969 > 0) {
                 var i_2_ = 0
                 while (true) {
                     val class348_sub47 = GrayscaleEffect.aNodeDeque_9201!!.method1995(i xor 0x4) as OutgoingPacketNode?
                     if (class348_sub47 == null) break
-                    PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1706(0, i xor 0x77, class348_sub47.anInt7119, (class348_sub47.aClass348_Sub49_Sub2_7116!!.aByteArray7154!!))
+                    Client.aAbstractGameSocket_9165!!.method1706(0, i xor 0x77, class348_sub47.anInt7119, (class348_sub47.aClass348_Sub49_Sub2_7116!!.aByteArray7154!!))
                     i_2_ += class348_sub47.anInt7119
                     IntPair.anInt6969 -= class348_sub47.anInt7119
                     class348_sub47.method2715(74.toByte())

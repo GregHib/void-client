@@ -549,16 +549,16 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
                     i_101_++
                 }
                 glLinkProgramARB(l)
-                glGetObjectParameterivARB(l, 35714, SoundEnvelope.anIntArray2744, 0)
-                if (SoundEnvelope.anIntArray2744!![0] == 0) {
-                    if (SoundEnvelope.anIntArray2744!![0] == 0) println("Shader linking failed:")
-                    glGetObjectParameterivARB(l, 35716, SoundEnvelope.anIntArray2744, 1)
-                    if (SoundEnvelope.anIntArray2744!![1] > 1) {
-                        val `is` = ByteArray(SoundEnvelope.anIntArray2744!![1])
-                        glGetInfoLogARB(l, SoundEnvelope.anIntArray2744!![1], SoundEnvelope.anIntArray2744, 0, `is`, 0)
+                glGetObjectParameterivARB(l, 35714, Font.anIntArray2744, 0)
+                if (Font.anIntArray2744!![0] == 0) {
+                    if (Font.anIntArray2744!![0] == 0) println("Shader linking failed:")
+                    glGetObjectParameterivARB(l, 35716, Font.anIntArray2744, 1)
+                    if (Font.anIntArray2744!![1] > 1) {
+                        val `is` = ByteArray(Font.anIntArray2744!![1])
+                        glGetInfoLogARB(l, Font.anIntArray2744!![1], Font.anIntArray2744, 0, `is`, 0)
                         println(String(`is`))
                     }
-                    if (SoundEnvelope.anIntArray2744!![0] == 0) {
+                    if (Font.anIntArray2744!![0] == 0) {
                         var i_102_ = 0
                         while (glShaderObjectHandles.size > i_102_) {
                             glDetachObjectARB(l, (glShaderObjectHandles[i_102_]!!.aLong517))
@@ -572,6 +572,11 @@ abstract class Font internal constructor(var_renderer: Renderer?, fontDefinition
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("da.M(" + (if (glRenderDevice != null) "{...}" else "null") + ',' + (if (glShaderObjectHandles != null) "{...}" else "null") + ',' + i + ')'))
             }
+        }
+        var anIntArray2744: IntArray? = IntArray(2)
+        fun method1543(i: Int) {
+            anIntArray2744 = null
+            if (i != -4524) WhirlpoolHash.anInt2747 = 24
         }
     }
 }

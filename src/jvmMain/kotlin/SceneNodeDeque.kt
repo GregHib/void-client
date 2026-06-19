@@ -139,6 +139,13 @@ class SceneNodeDeque {
             }
         }
 
+        fun method2479(i: Int) {
+            if (i == 19424) {
+                aBigInteger8762 = null
+                GlslEnvMaterialPass.aSoundChannelMixer_8764 = null
+            }
+        }
+        var aBigInteger8762: BigInt? = BigInt("10001", 16)
         @JvmStatic
         fun method843(i: Byte) {
             anInt1499++
@@ -148,9 +155,9 @@ class SceneNodeDeque {
                     if (GroundDecorSceneEntity.anInt9971 != 0) i_2_ = 2000
                     else i_2_ = 250
                     if (i_2_ < ++SceneRegionState.anInt197) {
-                        if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
+                        if (Client.aAbstractGameSocket_9165 != null) {
+                            Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                            Client.aAbstractGameSocket_9165 = null
                         }
                         if (GroundDecorSceneEntity.anInt9971 >= 3) {
                             NpcDefinition.anInt2955 = 0
@@ -171,7 +178,7 @@ class SceneNodeDeque {
                     if (NpcDefinition.anInt2955 == 2) {
                         if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 == 2) throw IOException()
                         if (FrameStatsReset.aLinkedQueueNode_5800!!.anInt1997 != 1) return
-                        PerlinNoiseTextureNode.aAbstractGameSocket_9165 = NullOggStream.method2982((((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
+                        Client.aAbstractGameSocket_9165 = NullOggStream.method2982((((FrameStatsReset.aLinkedQueueNode_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
                         FrameStatsReset.aLinkedQueueNode_5800 = null
                         method2739(0)
                         val class348_sub47 = ProjectileSpawner.method1478(true)
@@ -181,14 +188,14 @@ class SceneNodeDeque {
                         NpcDefinition.anInt2955 = 3
                     }
                     if (NpcDefinition.anInt2955 == 3) {
-                        if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 107)) return
-                        PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 0, (-118).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        if (!Client.aAbstractGameSocket_9165!!.method1705(1, 107)) return
+                        Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-118).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                         val i_3_ = ((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
                         if (i_3_ != 0) {
                             NpcDefinition.anInt2955 = 0
                             GlRectangleTexture.method254(i_3_, (-113).toByte())
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
+                            Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                            Client.aAbstractGameSocket_9165 = null
                             method1215(3.toByte())
                             return
                         }
@@ -208,7 +215,7 @@ class SceneNodeDeque {
                         class348_sub49.writeString((-5).toByte(), TextureGenerator.aString2496!!)
                         class348_sub49.writeLong(LoadProgressCounters.aLong6966, (-124).toByte())
                         class348_sub49.writeLong(ChatMessageStream.aLong108, (-112).toByte())
-                        class348_sub49.method3390(AbstractFrameBufferSurface.aBigInteger6921, (-76).toByte(), (ActorEntity.aBigInteger8762))
+                        class348_sub49.method3390(AbstractFrameBufferSurface.aBigInteger6921, (-76).toByte(), (SceneNodeDeque.aBigInteger8762))
                         method2739(0)
                         val class348_sub47 = ProjectileSpawner.method1478(true)
                         val class348_sub49_sub2 = (class348_sub47!!.aClass348_Sub49_Sub2_7116)!!
@@ -269,8 +276,8 @@ class SceneNodeDeque {
                         NpcDefinition.anInt2955 = 4
                     }
                     if (NpcDefinition.anInt2955 == 4) {
-                        if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 94)) return
-                        PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 0, (-117).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        if (!Client.aAbstractGameSocket_9165!!.method1705(1, 94)) return
+                        Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-117).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                         val i_11_ = ((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
                         if (i_11_ != 21) {
                             if (i_11_ == 29) NpcDefinition.anInt2955 = 13
@@ -286,13 +293,13 @@ class SceneNodeDeque {
                                             NpcDefinition.anInt2955 = 1
                                             GroundDecorSceneEntity.anInt9971++
                                             SceneRegionState.anInt197 = 0
-                                            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
-                                            PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
+                                            Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                                            Client.aAbstractGameSocket_9165 = null
                                         } else {
                                             NpcDefinition.anInt2955 = 0
                                             GlRectangleTexture.method254(i_11_, (-87).toByte())
-                                            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
-                                            PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
+                                            Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                                            Client.aAbstractGameSocket_9165 = null
                                             method1215(3.toByte())
                                             return
                                         }
@@ -314,29 +321,29 @@ class SceneNodeDeque {
                         method1802(0)
                         NpcDefinition.anInt2955 = 4
                     } else if (NpcDefinition.anInt2955 == 7) {
-                        if (PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 118)) {
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 0, (-109).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        if (Client.aAbstractGameSocket_9165!!.method1705(1, 118)) {
+                            Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-109).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             val i_12_ = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             NpcDefinition.anInt2955 = 0
                             SceneTileBounds.anInt1121 = (3 + i_12_) * 60
                             GlRectangleTexture.method254(21, (-95).toByte())
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
+                            Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                            Client.aAbstractGameSocket_9165 = null
                             method1215(3.toByte())
                         }
                     } else if (NpcDefinition.anInt2955 == 13) {
-                        if (PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 102)) {
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 0, (-128).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        if (Client.aAbstractGameSocket_9165!!.method1705(1, 102)) {
+                            Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-128).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             NpcDefinition.anInt2955 = 0
                             ConfigShortValueNode.anInt9541 = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             GlRectangleTexture.method254(29, (-97).toByte())
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
+                            Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                            Client.aAbstractGameSocket_9165 = null
                             method1215(3.toByte())
                         }
                     } else if (NpcDefinition.anInt2955 == 8) {
-                        if (PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 107)) {
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 0, (-107).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        if (Client.aAbstractGameSocket_9165!!.method1705(1, 107)) {
+                            Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-107).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             SceneObjectSpawner.Companion.anInt1288 = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             NpcDefinition.anInt2955 = 9
                         }
@@ -344,8 +351,8 @@ class SceneNodeDeque {
                         if (NpcDefinition.anInt2955 == 9) {
                             val class348_sub49_sub2 = CircleRasterizer.aClass348_Sub49_Sub2_3813
                             if (BloomGraphicsOptionState.anInt5969 == 2) {
-                                if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(SceneObjectSpawner.Companion.anInt1288, 93)) return
-                                PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(SceneObjectSpawner.Companion.anInt1288, 0, 60.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
+                                if (!Client.aAbstractGameSocket_9165!!.method1705(SceneObjectSpawner.Companion.anInt1288, 93)) return
+                                Client.aAbstractGameSocket_9165!!.method1701(SceneObjectSpawner.Companion.anInt1288, 0, 60.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
                                 class348_sub49_sub2.anInt7197 = 0
                                 AsyncTaskHandle.anInt2581 = class348_sub49_sub2.readUnsignedByte(255)
                                 MinimapSpriteRenderer.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
@@ -361,8 +368,8 @@ class SceneNodeDeque {
                                 ClientException.aModelHeaderCache_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
                                 MapAreaDefinition.aBufferedMessageQueue_2529!!.method2072(88.toByte(), ModelBatchBase.aBoolean1900)
                             } else {
-                                if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(SceneObjectSpawner.Companion.anInt1288, 107)) return
-                                PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(SceneObjectSpawner.Companion.anInt1288, 0, 85.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
+                                if (!Client.aAbstractGameSocket_9165!!.method1705(SceneObjectSpawner.Companion.anInt1288, 107)) return
+                                Client.aAbstractGameSocket_9165!!.method1701(SceneObjectSpawner.Companion.anInt1288, 0, 85.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
                                 class348_sub49_sub2.anInt7197 = 0
                                 AsyncTaskHandle.anInt2581 = class348_sub49_sub2.readUnsignedByte(255)
                                 MinimapSpriteRenderer.anInt4919 = class348_sub49_sub2.readUnsignedByte(255)
@@ -432,24 +439,24 @@ class SceneNodeDeque {
                             }
                         }
                         if (NpcDefinition.anInt2955 == 11) {
-                            if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(3, 94)) return
-                            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(3, 0, 11.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            if (!Client.aAbstractGameSocket_9165!!.method1705(3, 94)) return
+                            Client.aAbstractGameSocket_9165!!.method1701(3, 0, 11.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             NpcDefinition.anInt2955 = 12
                         }
                         if (NpcDefinition.anInt2955 == 12) {
                             val class348_sub49_sub2 = CircleRasterizer.aClass348_Sub49_Sub2_3813
                             class348_sub49_sub2!!.anInt7197 = 0
                             if (class348_sub49_sub2.method3404(-1510)) {
-                                if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 110)) return
-                                PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 3, (-127).toByte(), (class348_sub49_sub2.aByteArray7154!!))
+                                if (!Client.aAbstractGameSocket_9165!!.method1705(1, 110)) return
+                                Client.aAbstractGameSocket_9165!!.method1701(1, 3, (-127).toByte(), (class348_sub49_sub2.aByteArray7154!!))
                             }
                             ModelVertexColorBuffer.aIntRange_6584 = (method248(-11271)[class348_sub49_sub2.method3407(15295)])
                             RadialTextureNode.anInt9341 = class348_sub49_sub2.readUnsignedShort(842397944)
                             NpcDefinition.anInt2955 = 10
                         }
                         if (NpcDefinition.anInt2955 == 10) {
-                            if (PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(RadialTextureNode.anInt9341, 96)) {
-                                PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(RadialTextureNode.anInt9341, 0, 28.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            if (Client.aAbstractGameSocket_9165!!.method1705(RadialTextureNode.anInt9341, 96)) {
+                                Client.aAbstractGameSocket_9165!!.method1701(RadialTextureNode.anInt9341, 0, 28.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                                 NpcDefinition.anInt2955 = 0
                                 val i_13_ = RadialTextureNode.anInt9341
@@ -466,13 +473,13 @@ class SceneNodeDeque {
                             val i_14_ = -128 / (-i / 53)
                             if (NpcDefinition.anInt2955 == 14) {
                                 if (RadialTextureNode.anInt9341 == -2) {
-                                    if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(2, 106)) return
-                                    PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(2, 0, (-128).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                                    if (!Client.aAbstractGameSocket_9165!!.method1705(2, 106)) return
+                                    Client.aAbstractGameSocket_9165!!.method1701(2, 0, (-128).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                                     CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                                     RadialTextureNode.anInt9341 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                                 }
-                                if (PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(RadialTextureNode.anInt9341, 117)) {
-                                    PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(RadialTextureNode.anInt9341, 0, (-104).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                                if (Client.aAbstractGameSocket_9165!!.method1705(RadialTextureNode.anInt9341, 117)) {
+                                    Client.aAbstractGameSocket_9165!!.method1701(RadialTextureNode.anInt9341, 0, (-104).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                                     CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                                     val i_15_ = RadialTextureNode.anInt9341
                                     NpcDefinition.anInt2955 = 0
@@ -486,9 +493,9 @@ class SceneNodeDeque {
                         }
                     }
                 } catch (ioexception: IOException) {
-                    if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
-                        PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
-                        PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
+                    if (Client.aAbstractGameSocket_9165 != null) {
+                        Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
+                        Client.aAbstractGameSocket_9165 = null
                     }
                     if (GroundDecorSceneEntity.anInt9971 >= 3) {
                         NpcDefinition.anInt2955 = 0

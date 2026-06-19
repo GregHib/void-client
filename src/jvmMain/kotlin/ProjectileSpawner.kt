@@ -44,7 +44,7 @@ object ProjectileSpawner {
                 if (class348_sub34 == null) NpcEntityUpdater.method2110(i_3_, i_2_, i)
                 else {
                     var class318_sub1_sub2_sub1 = (NpcEntityUpdater.method2110(i_3_, i_2_, i) as? DynamicSceneObjectEntity?)
-                    if (class318_sub1_sub2_sub1 == null) class318_sub1_sub2_sub1 = (DynamicSceneObjectEntity(i_2_ shl 9, NativeSprite.aTerrainTileArray5191!![i_3_]!!.method3982((-86).toByte(), i, i_2_), i shl 9, i_3_, i_3_))
+                    if (class318_sub1_sub2_sub1 == null) class318_sub1_sub2_sub1 = (DynamicSceneObjectEntity(i_2_ shl 9, ActorEntity.aTerrainTileArray5191!![i_3_]!!.method3982((-86).toByte(), i, i_2_), i shl 9, i_3_, i_3_))
                     else {
                         class318_sub1_sub2_sub1.anInt10180 = -1
                         class318_sub1_sub2_sub1.anInt10189 = class318_sub1_sub2_sub1.anInt10180

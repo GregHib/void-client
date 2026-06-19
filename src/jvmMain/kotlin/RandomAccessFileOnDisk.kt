@@ -110,8 +110,6 @@ class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, 
         @JvmField
         var anInt3047: Int = 0
         var anInt3048: Int = 0
-        @JvmField
-        var anInt3049: Int = 0
 
         @JvmStatic
         fun method1659(i: Byte) {

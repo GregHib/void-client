@@ -24,7 +24,7 @@ class RangeThresholdTextureNode : AbstractProceduralTextureNode(1, true) {
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_4_ = this.method3048(i, 633706337, 0)!!
             var i_5_ = 0
-            while ((ClampTextureNode.anInt9139 > i_5_)) {
+            while ((PerlinNoiseTextureNode.anInt9139 > i_5_)) {
                 val i_6_ = is_4_[i_5_]
                 `is`[i_5_] = if (i_6_ >= anInt9104 && (i_6_ <= anInt9107)) 4096 else 0
                 i_5_++

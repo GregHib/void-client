@@ -747,8 +747,6 @@ class NpcConfig {
         @JvmField
         var anInt891: Int = 0
         @JvmField
-        var aResourceLoaderThread_897: ResourceLoaderThread? = null
-        @JvmField
         var anInt898: Int = 0
         @JvmField
         var anInt899: Int = 0
@@ -779,7 +777,7 @@ class NpcConfig {
             aStringArray932 = null
             if (i > -19) method486(-34)
             aAbstractCameraTransform_905 = null
-            aResourceLoaderThread_897 = null
+            ActorEntity.aResourceLoaderThread_897 = null
         }
     }
 }

@@ -51,7 +51,7 @@ object RegionSceneLoader {
             SceneRegionState.anInt193++
             if (i < -118 && (SceneRegionState.anInt193 >= 50 || bool)) {
                 SceneRegionState.anInt193 = 0
-                if (!AbstractMenuEntryStatics.aBoolean1712 && PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
+                if (!AbstractMenuEntryStatics.aBoolean1712 && Client.aAbstractGameSocket_9165 != null) {
                     IOException_Sub1.anInt88++
                     val class348_sub47 = method2148((RangedGraphicsOptionState.aFontMetaRef_5938), (TheoraVideoStream.aIsaacCipher_9029), -106)
                     InterfaceComponentGroup.method3243(122, class348_sub47)

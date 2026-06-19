@@ -12,7 +12,7 @@ class GrayscaleEffect : AbstractProceduralTextureNode(1, true) {
             val is_3_ = is_1_[1]!!
             val is_4_ = is_1_[2]!!
             var i_5_ = 0
-            while (ClampTextureNode.Companion.anInt9139 > i_5_) {
+            while (PerlinNoiseTextureNode.Companion.anInt9139 > i_5_) {
                 `is`[i_5_] = (is_2_[i_5_] - (-is_3_[i_5_] - is_4_[i_5_])) / 3
                 i_5_++
             }

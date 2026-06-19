@@ -154,7 +154,7 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
         val var_terrainTile_16_: TerrainTile?
         if (aBoolean10066) {
             var_terrainTile = TerrainTileShape.aTerrainTileArray8801!![0]
-            var_terrainTile_16_ = SoundCacheState.aTerrainTileArray4142!![this.aByte6376.toInt()]
+            var_terrainTile_16_ = ActorEntity.aTerrainTileArray4142!![this.aByte6376.toInt()]
         } else {
             var_terrainTile_16_ = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376.toInt()])
             if (this.aByte6376 < 3) var_terrainTile = (TerrainTileShape.aTerrainTileArray8801!![1 + this.aByte6376])
@@ -243,8 +243,6 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
         var anInt10078: Int = 0
         var anInt10080: Int = 0
         var anInt10083: Int = 0
-        @JvmField
-        var anInt10084: Int = 0
         var anInt10085: Int = 0
         var anInt10086: Int = 0
         var anInt10087: Int = 0

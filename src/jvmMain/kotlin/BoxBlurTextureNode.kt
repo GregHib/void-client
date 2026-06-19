@@ -37,7 +37,7 @@ class BoxBlurTextureNode : AbstractProceduralTextureNode(1, false) {
             var i_19_ = -anInt9463 + i
             while (i - -anInt9463 >= i_19_) {
                 val is_20_ = this.method3048(TextureCubeProvider.anInt6325 and i_19_, 633706337, 0)!!
-                val is_21_ = IntArray(ClampTextureNode.Companion.anInt9139)
+                val is_21_ = IntArray(PerlinNoiseTextureNode.Companion.anInt9139)
                 var i_22_ = 0
                 var i_23_ = -anInt9466
                 while (anInt9466 >= i_23_) {
@@ -45,7 +45,7 @@ class BoxBlurTextureNode : AbstractProceduralTextureNode(1, false) {
                     i_23_++
                 }
                 var i_24_ = 0
-                while (i_24_ < ClampTextureNode.Companion.anInt9139) {
+                while (i_24_ < PerlinNoiseTextureNode.Companion.anInt9139) {
                     is_21_[i_24_] = i_17_ * i_22_ shr 16
                     i_22_ -= (is_20_[-anInt9466 + i_24_ and SimpleBinaryOptionState.anInt6076])
                     i_24_++
@@ -55,7 +55,7 @@ class BoxBlurTextureNode : AbstractProceduralTextureNode(1, false) {
                 i_19_++
             }
             var i_25_ = 0
-            while (ClampTextureNode.Companion.anInt9139 > i_25_) {
+            while (PerlinNoiseTextureNode.Companion.anInt9139 > i_25_) {
                 var i_26_ = 0
                 var i_27_ = 0
                 while (i_14_ > i_27_) {
@@ -81,7 +81,7 @@ class BoxBlurTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_33_: Array<Array<IntArray?>?> = arrayOfNulls<Array<IntArray?>>(i_29_)
             for (i_34_ in i + -anInt9463..anInt9463 + i) {
                 val is_35_ = this.method3039(55.toByte(), TextureCubeProvider.anInt6325 and i_34_, 0)!!
-                val is_36_: Array<IntArray> = Array<IntArray>(3) { IntArray(ClampTextureNode.Companion.anInt9139) }
+                val is_36_: Array<IntArray> = Array<IntArray>(3) { IntArray(PerlinNoiseTextureNode.Companion.anInt9139) }
                 var i_37_ = 0
                 var i_38_ = 0
                 var i_39_ = 0
@@ -98,7 +98,7 @@ class BoxBlurTextureNode : AbstractProceduralTextureNode(1, false) {
                 val is_46_ = is_36_[1]
                 val is_47_ = is_36_[2]
                 var i_48_ = 0
-                while (ClampTextureNode.Companion.anInt9139 > i_48_) {
+                while (PerlinNoiseTextureNode.Companion.anInt9139 > i_48_) {
                     is_45_[i_48_] = i_37_ * i_32_ shr 16
                     is_46_[i_48_] = i_38_ * i_32_ shr 16
                     is_47_[i_48_] = i_39_ * i_32_ shr 16
@@ -118,7 +118,7 @@ class BoxBlurTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_51_ = `is`[1]!!
             val is_52_ = `is`[2]!!
             var i_53_ = 0
-            while (ClampTextureNode.Companion.anInt9139 > i_53_) {
+            while (PerlinNoiseTextureNode.Companion.anInt9139 > i_53_) {
                 var i_54_ = 0
                 var i_55_ = 0
                 var i_56_ = 0

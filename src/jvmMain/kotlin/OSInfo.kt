@@ -1,9 +1,8 @@
-import CircleHitbox.Companion.anInt410
-import CircleHitbox.Companion.anIntArray407
 import java.io.File
 import java.util.Locale
 
 object OSInfo {
+    var anInt410: Int = 0
     @JvmStatic
     fun method323(js5Archive: Js5Archive?, privilegedOperationWorker: PrivilegedOperationWorker?, i: Byte) {
         try {
@@ -16,7 +15,6 @@ object OSInfo {
                     if (aString6877!!.startsWith("mac")) RegionSceneShifter.aString7048 += "macos/"
                 } else RegionSceneShifter.aString7048 += "linux/"
             } else RegionSceneShifter.aString7048 += "windows/"
-            if (i.toInt() != 95) anIntArray407 = null
             if (!GrayscaleNoiseTexture.aPrivilegedOperationWorker_5297!!.aBoolean3794) {
                 if (!aString6876!!.startsWith("amd64") && !aString6876!!.startsWith("x86_64")) {
                     if (!aString6876!!.startsWith("i386") && !aString6876!!.startsWith("i486") && !aString6876!!.startsWith("i586") && !aString6876!!.startsWith("x86")) {

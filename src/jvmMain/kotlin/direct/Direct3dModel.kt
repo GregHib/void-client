@@ -122,7 +122,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     val f_1_ = (0.3333333f * ((anIntArray5519!![class353.anInt4344]) + (anIntArray5519!![class353.anInt4349]) + (anIntArray5519!![class353.anInt4339])).toFloat())
                     val f_2_ = (0.3333333f * ((anIntArray5429!![class353.anInt4339]) + (anIntArray5429!![class353.anInt4344]) + (anIntArray5429!![class353.anInt4349])).toFloat())
                     val f_3_ = (f_2_ * ShortMatrixNode.aFloat9516 + (OggMediaStream.aFloat1010 * f + f_1_ * DynamicSceneObjectEntity.aFloat10199) + ParticleProcessor.aFloat4268)
-                    val f_4_ = (BoundingBoxNode.aFloat6752 + (SceneEffectMarker.aFloat6430 * f_2_ + (TextureTileRenderer.aFloat6835 * f + f_1_ * BufferToggleState.aFloat3710)))
+                    val f_4_ = (BoundingBoxNode.aFloat6752 + (aFloat6430 * f_2_ + (TextureTileRenderer.aFloat6835 * f + f_1_ * BufferToggleState.aFloat3710)))
                     val f_5_ = WorldMapRenderer.aFloat4673 + (TextureMipDescriptor.aFloat4338 * f_1_ + f * RenderQueueState.aFloat6523 + f_2_ * Renderer.aFloat4582)
                     val f_6_ = ((1.0 / sqrt((f_5_ * f_5_ + (f_4_ * f_4_ + f_3_ * f_3_)).toDouble())).toFloat() * class353.anInt4347.toFloat())
                     val class101_sub2 = aHa_Sub3_5419!!.method3934(-96)
@@ -379,7 +379,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             TextureTileRenderer.aFloat6835 = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5736) + ((class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5708 * class101_sub2_34_.aFloat5722)))
             OggMediaStream.aFloat1010 = ((class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5736) + ((class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5708) + (class101_sub2.aFloat5711 * class101_sub2_34_.aFloat5711)))
             val f_36_ = (class101_sub2_34_.aFloat5724 + ((class101_sub2_34_.aFloat5716 * class101_sub2.aFloat5724) + ((class101_sub2_34_.aFloat5736 * class101_sub2.aFloat5729) + (class101_sub2.aFloat5710 * (class101_sub2_34_.aFloat5691)))))
-            SceneEffectMarker.aFloat6430 = ((class101_sub2_34_.aFloat5722 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5732))
+            aFloat6430 = ((class101_sub2_34_.aFloat5722 * class101_sub2.aFloat5732) + (class101_sub2.aFloat5704 * class101_sub2_34_.aFloat5708) + (class101_sub2.aFloat5716 * class101_sub2_34_.aFloat5732))
             TextureMipDescriptor.aFloat4338 = ((class101_sub2_34_.aFloat5691 * class101_sub2.aFloat5722) + (class101_sub2.aFloat5700 * class101_sub2_34_.aFloat5736) + (class101_sub2.aFloat5691 * class101_sub2_34_.aFloat5716))
             var bool_37_ = false
             var f_38_ = 3.4028235E38f
@@ -430,7 +430,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 val f_57_ = OpenGlTerrainTile.anIntArray8269!![i_56_].toFloat()
                 val f_58_ = MapElementManager.anIntArray4463!![i_56_].toFloat()
                 val f_59_ = ContactEntry.anIntArray9612!![i_56_].toFloat()
-                val f_60_ = (f_57_ * TextureTileRenderer.aFloat6835 + f_59_ * BufferToggleState.aFloat3710 + SceneEffectMarker.aFloat6430 * f_58_ + f_35_)
+                val f_60_ = (f_57_ * TextureTileRenderer.aFloat6835 + f_59_ * BufferToggleState.aFloat3710 + aFloat6430 * f_58_ + f_35_)
                 val f_61_ = (OggMediaStream.aFloat1010 * f_57_ + f_59_ * DynamicSceneObjectEntity.aFloat10199 + f_58_ * ShortMatrixNode.aFloat9516 + f)
                 var f_62_ = f_36_ + (f_58_ * Renderer.aFloat4582 + (TextureMipDescriptor.aFloat4338 * f_59_ + RenderQueueState.aFloat6523 * f_57_))
                 if (f_62_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
@@ -456,7 +456,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     val f_68_ = anIntArray5511!![i_65_].toFloat()
                     var f_69_ = (Renderer.aFloat4582 * f_66_ + (f_68_ * RenderQueueState.aFloat6523 + TextureMipDescriptor.aFloat4338 * f_67_) + f_36_)
                     val f_70_ = f + (DynamicSceneObjectEntity.aFloat10199 * f_67_ + OggMediaStream.aFloat1010 * f_68_ + f_66_ * ShortMatrixNode.aFloat9516)
-                    val f_71_ = (SceneEffectMarker.aFloat6430 * f_66_ + (f_68_ * TextureTileRenderer.aFloat6835 + BufferToggleState.aFloat3710 * f_67_) + f_35_)
+                    val f_71_ = (aFloat6430 * f_66_ + (f_68_ * TextureTileRenderer.aFloat6835 + BufferToggleState.aFloat3710 * f_67_) + f_35_)
                     if (f_69_ >= aHa_Sub3_5419!!.anInt8095.toFloat()) {
                         if (i_31_ > 0) f_69_ = i_31_.toFloat()
                         val i_72_ = (i_42_.toFloat() * f_70_ / f_69_ + (aHa_Sub3_5419!!.anInt8094).toFloat()).toInt()
@@ -757,7 +757,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 for (i_116_ in 0..<anInt5406) {
                     val class353 = aTextureMipDescriptorArray5524!![i_116_]!!
                     val class334 = aCameraOrModelTransformArray5442!![i_116_]!!
-                    class334.anInt4156 = ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class334.anInt4156))
+                    class334.anInt4156 = ((SoundEnvelope.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff or (0xffffff.inv() and class334.anInt4156))
                 }
             }
             method670(-109)
@@ -1315,7 +1315,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             if (class318_sub3 != null || aTextureMipDescriptorArray5524 != null) {
                                 OggMediaStream.aFloat1010 = (((class101_sub2.aFloat5700) * (class101_sub2_180_.aFloat5708)) + ((class101_sub2.aFloat5711) * class101_sub2_180_.aFloat5711) + ((class101_sub2.aFloat5704) * class101_sub2_180_.aFloat5736))
                                 ShortMatrixNode.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2_180_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5704)))
-                                SceneEffectMarker.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5722) * class101_sub2_180_.aFloat5732) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5716))
+                                aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5722) * class101_sub2_180_.aFloat5732) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5716))
                                 RenderQueueState.aFloat6523 = (((class101_sub2_180_.aFloat5736) * (class101_sub2.aFloat5716)) + (((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5708) + ((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5711))))
                                 TextureTileRenderer.aFloat6835 = (((class101_sub2_180_.aFloat5711) * (class101_sub2.aFloat5708)) + ((class101_sub2_180_.aFloat5708) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_180_.aFloat5736))
                                 Renderer.aFloat4582 = (((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5732) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5716)))
@@ -1324,10 +1324,10 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                 val i_192_ = anInt5467 + anInt5507 shr 1
                                 val i_193_ = anInt5418 + anInt5443 shr 1
                                 val i_194_ = (ParticleProcessor.aFloat4268 + (i_192_.toFloat() * OggMediaStream.aFloat1010) + ((DynamicSceneObjectEntity.aFloat10199) * anInt5461.toFloat()) + (i_193_.toFloat() * (ShortMatrixNode.aFloat9516))).toInt()
-                                val i_195_ = (BoundingBoxNode.aFloat6752 + (TextureTileRenderer.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * BufferToggleState.aFloat3710) + (SceneEffectMarker.aFloat6430 * i_193_.toFloat())).toInt()
+                                val i_195_ = (BoundingBoxNode.aFloat6752 + (TextureTileRenderer.aFloat6835 * i_192_.toFloat()) + (anInt5461.toFloat() * BufferToggleState.aFloat3710) + (aFloat6430 * i_193_.toFloat())).toInt()
                                 val i_196_ = ((anInt5461.toFloat() * TextureMipDescriptor.aFloat4338) + ((RenderQueueState.aFloat6523 * i_192_.toFloat()) + WorldMapRenderer.aFloat4673) + i_193_.toFloat() * Renderer.aFloat4582).toInt()
                                 val i_197_ = ((anInt5509.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (OggMediaStream.aFloat1010 * i_192_.toFloat())) + (ShortMatrixNode.aFloat9516 * i_193_.toFloat())).toInt()
-                                val i_198_ = ((SceneEffectMarker.aFloat6430 * i_193_.toFloat()) + (BoundingBoxNode.aFloat6752 + (TextureTileRenderer.aFloat6835 * i_192_.toFloat()) + (BufferToggleState.aFloat3710 * anInt5509.toFloat()))).toInt()
+                                val i_198_ = ((aFloat6430 * i_193_.toFloat()) + (BoundingBoxNode.aFloat6752 + (TextureTileRenderer.aFloat6835 * i_192_.toFloat()) + (BufferToggleState.aFloat3710 * anInt5509.toFloat()))).toInt()
                                 class318_sub3.anInt6402 = ((i_195_ * aHa_Sub3_5419!!.anInt8134 / i) + aHa_Sub3_5419!!.anInt8130)
                                 class318_sub3.anInt6405 = (aHa_Sub3_5419!!.anInt8094 - -(i_194_ * (aHa_Sub3_5419!!.anInt8129) / i))
                                 class318_sub3.anInt6404 = (aHa_Sub3_5419!!.anInt8130 - -(aHa_Sub3_5419!!.anInt8134 * i_198_ / i))
@@ -1674,7 +1674,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             while (anInt5406 > i_294_) {
                                 val class353 = aTextureMipDescriptorArray5524!![i_294_]!!
                                 val class334 = aCameraOrModelTransformArray5442!![i_294_]!!
-                                class334.anInt4156 = (0xffffff and (ParticleEmitterNode.anIntArray179!![(aShortArray5486!![(class353.anInt4342)]).toInt() and 0xffff]) or (0xffffff.inv() and class334.anInt4156))
+                                class334.anInt4156 = (0xffffff and (SoundEnvelope.anIntArray179!![(aShortArray5486!![(class353.anInt4342)]).toInt() and 0xffff]) or (0xffffff.inv() and class334.anInt4156))
                                 i_294_++
                             }
                         }
@@ -1789,7 +1789,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                         if (!(aHa_Sub3_5419!!.aFloat8185 <= f_318_ / f_309_) && !(f_317_ / f_309_ <= aHa_Sub3_5419!!.aFloat8103)) {
                             if (class318_sub3 != null || aTextureMipDescriptorArray5524 != null) {
                                 RenderQueueState.aFloat6523 = (((class101_sub2.aFloat5716) * (class101_sub2_307_.aFloat5736)) + ((class101_sub2_307_.aFloat5711 * (class101_sub2.aFloat5736)) + ((class101_sub2.aFloat5691) * (class101_sub2_307_.aFloat5708))))
-                                SceneEffectMarker.aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5716))
+                                aFloat6430 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5722)) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5716))
                                 OggMediaStream.aFloat1010 = (((class101_sub2.aFloat5704) * (class101_sub2_307_.aFloat5736)) + (((class101_sub2.aFloat5700) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5711))))
                                 ShortMatrixNode.aFloat9516 = (((class101_sub2.aFloat5711) * (class101_sub2_307_.aFloat5704)) + ((class101_sub2_307_.aFloat5732) * (class101_sub2.aFloat5700)) + ((class101_sub2.aFloat5704) * class101_sub2_307_.aFloat5716))
                                 TextureTileRenderer.aFloat6835 = (((class101_sub2.aFloat5708) * (class101_sub2_307_.aFloat5711)) + ((class101_sub2.aFloat5722) * class101_sub2_307_.aFloat5708) + ((class101_sub2.aFloat5732) * class101_sub2_307_.aFloat5736))
@@ -1801,7 +1801,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                 val i_320_ = anInt5507 - -anInt5467 shr 1
                                 val i_321_ = anInt5418 + anInt5443 shr 1
                                 val i_322_ = ((anInt5461.toFloat() * (DynamicSceneObjectEntity.aFloat10199)) + (ParticleProcessor.aFloat4268 + (OggMediaStream.aFloat1010 * i_320_.toFloat())) + (ShortMatrixNode.aFloat9516 * i_321_.toFloat())).toInt()
-                                val i_323_ = ((SceneEffectMarker.aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * TextureTileRenderer.aFloat6835) + BoundingBoxNode.aFloat6752 + (BufferToggleState.aFloat3710 * anInt5461.toFloat()))).toInt()
+                                val i_323_ = ((aFloat6430 * i_321_.toFloat()) + ((i_320_.toFloat() * TextureTileRenderer.aFloat6835) + BoundingBoxNode.aFloat6752 + (BufferToggleState.aFloat3710 * anInt5461.toFloat()))).toInt()
                                 val i_324_ = (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523) + (anInt5461.toFloat() * TextureMipDescriptor.aFloat4338) + i_321_.toFloat() * Renderer.aFloat4582).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_324_) bool = true
                                 else {
@@ -1809,7 +1809,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                     class318_sub3.anInt6405 = ((aHa_Sub3_5419!!.anInt8129 * i_322_ / i_324_) + (aHa_Sub3_5419!!.anInt8094))
                                 }
                                 val i_325_ = ((DynamicSceneObjectEntity.aFloat10199) * anInt5509.toFloat() + (ParticleProcessor.aFloat4268 + (OggMediaStream.aFloat1010 * i_320_.toFloat())) + (i_321_.toFloat() * (ShortMatrixNode.aFloat9516))).toInt()
-                                val i_326_ = ((BufferToggleState.aFloat3710 * anInt5509.toFloat()) + (BoundingBoxNode.aFloat6752 + (i_320_.toFloat() * (TextureTileRenderer.aFloat6835))) + (i_321_.toFloat() * SceneEffectMarker.aFloat6430)).toInt()
+                                val i_326_ = ((BufferToggleState.aFloat3710 * anInt5509.toFloat()) + (BoundingBoxNode.aFloat6752 + (i_320_.toFloat() * (TextureTileRenderer.aFloat6835))) + (i_321_.toFloat() * aFloat6430)).toInt()
                                 val i_327_ = ((anInt5509.toFloat() * TextureMipDescriptor.aFloat4338) + (WorldMapRenderer.aFloat4673 + (i_320_.toFloat() * RenderQueueState.aFloat6523)) + Renderer.aFloat4582 * i_321_.toFloat()).toInt()
                                 if (aHa_Sub3_5419!!.anInt8095 > i_327_) bool = true
                                 else {
@@ -1985,7 +1985,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             }
                         }
                         if (i_351_ == -1) throw RuntimeException()
-                        var i_353_ = (0xffffff and (ParticleEmitterNode.anIntArray179!![((modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff)]))
+                        var i_353_ = (0xffffff and (SoundEnvelope.anIntArray179!![((modelDefinition.aShortArray1862[class162.anInt2155]).toInt() and 0xffff)]))
                         i_353_ = (i_353_ or (-(if (modelDefinition.aByteArray1834 == null) 0 else (modelDefinition.aByteArray1834!![(class162.anInt2155)])) + 255 shl 24))
                         aTextureMipDescriptorArray5524!![i_350_] = TextureMipDescriptor(i_351_, (modelDefinition.aShortArray1863[class162.anInt2155]).toInt(), (modelDefinition.aShortArray1835!![class162.anInt2155]).toInt(), (modelDefinition.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
                         aCameraOrModelTransformArray5442!![i_350_] = CameraOrModelTransform(i_353_)
@@ -2633,7 +2633,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             for (i_530_ in 0..<anInt5406) {
                 val class353 = aTextureMipDescriptorArray5524!![i_530_]!!
                 val class334 = aCameraOrModelTransformArray5442!![i_530_]!!
-                class334.anInt4156 = ((ParticleEmitterNode.anIntArray179!![0xffff and aShortArray5486!![(class353.anInt4342)].toInt()]) and 0xffffff or (class334.anInt4156 and 0xffffff.inv()))
+                class334.anInt4156 = ((SoundEnvelope.anIntArray179!![0xffff and aShortArray5486!![(class353.anInt4342)].toInt()]) and 0xffffff or (class334.anInt4156 and 0xffffff.inv()))
             }
         }
         method670(-119)
@@ -2759,7 +2759,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             while (anInt5406 > i_568_) {
                 val class353 = aTextureMipDescriptorArray5524!![i_568_]!!
                 val class334 = aCameraOrModelTransformArray5442!![i_568_]!!
-                class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff))
+                class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((SoundEnvelope.anIntArray179!![(aShortArray5486!![class353.anInt4342].toInt() and 0xffff)]) and 0xffffff))
                 i_568_++
             }
         }
@@ -2817,7 +2817,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 for (i_576_ in 0..<anInt5406) {
                     val class353 = aTextureMipDescriptorArray5524!![i_576_]!!
                     val class334 = aCameraOrModelTransformArray5442!![i_576_]!!
-                    class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((ParticleEmitterNode.anIntArray179!![(aShortArray5486!![class353.anInt4342]).toInt() and 0xffff]) and 0xffffff))
+                    class334.anInt4156 = (class334.anInt4156 and 0xffffff.inv() or ((SoundEnvelope.anIntArray179!![(aShortArray5486!![class353.anInt4342]).toInt() and 0xffff]) and 0xffffff))
                 }
             }
             method670(-109)
@@ -3299,7 +3299,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             while (anInt5406 > i_751_) {
                                 val class353 = aTextureMipDescriptorArray5524!![i_751_]!!
                                 val class334 = aCameraOrModelTransformArray5442!![i_751_]!!
-                                class334.anInt4156 = ((class334.anInt4156 and 0xffffff.inv()) or (0xffffff and (ParticleEmitterNode.anIntArray179!![0xffff and (aShortArray5486!![(class353.anInt4342)]).toInt()])))
+                                class334.anInt4156 = ((class334.anInt4156 and 0xffffff.inv()) or (0xffffff and (SoundEnvelope.anIntArray179!![0xffff and (aShortArray5486!![(class353.anInt4342)]).toInt()])))
                                 i_751_++
                             }
                         }
@@ -3550,5 +3550,6 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             if (i_1_ <= 118) method3196(122, -41)
             return false
         }
+        var aFloat6430: Float = 0f
     }
 }

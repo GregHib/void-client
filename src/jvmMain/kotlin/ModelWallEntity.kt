@@ -141,7 +141,7 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: N
         val var_terrainTile: TerrainTile?
         val var_terrainTile_6_: TerrainTile?
         if (aBoolean10138) {
-            var_terrainTile = SoundCacheState.aTerrainTileArray4142!![this.aByte6376.toInt()]
+            var_terrainTile = ActorEntity.aTerrainTileArray4142!![this.aByte6376.toInt()]
             var_terrainTile_6_ = TerrainTileShape.aTerrainTileArray8801!![0]
         } else {
             var_terrainTile = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376.toInt()])

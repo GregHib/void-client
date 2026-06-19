@@ -148,8 +148,8 @@ class MapSceneCache internal constructor(sceneProjector: SceneProjector?, i: Int
 
         fun method824(i: Int) {
             DelegatingRenderCanvas.anInt67 = i
-            for (i_22_ in 0..<SpotAnimEntity.anInt6451) {
-                for (i_23_ in 0..<RegionSceneShifter.anInt7054) {
+            for (i_22_ in 0..<ActorEntity.anInt6451) {
+                for (i_23_ in 0..<ActorEntity.anInt7054) {
                     if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_22_]!![i_23_] == null) HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_22_]!![i_23_] = SceneCollisionEntry(i)
                 }
             }

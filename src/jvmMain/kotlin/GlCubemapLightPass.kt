@@ -277,7 +277,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                     }
                 }
                 if (bool_25_) {
-                    val i_35_ = NativeSprite.aTerrainTileArray5191!![1 + CompiledScriptCache.anInt4372]!!.method3982((-86).toByte(), i_22_, i_19_)
+                    val i_35_ = ActorEntity.aTerrainTileArray5191!![1 + CompiledScriptCache.anInt4372]!!.method3982((-86).toByte(), i_22_, i_19_)
                     if (i_35_ > FileIoUtil.anIntArray4097!![i_15_]) FileIoUtil.anIntArray4097!![i_15_] = i_35_
                     val i_36_ = i_19_ shl 9
                     if (i_36_ < LinkedListIterator.anIntArray2117!![i_15_]) LinkedListIterator.anIntArray2117!![i_15_] = i_36_

@@ -1,6 +1,6 @@
-import java.util.*
 import kotlin.math.max
 import kotlin.math.min
+import kotlin.random.Random
 
 class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
     private var anInt9306 = 0
@@ -16,7 +16,6 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
 
     override fun method3049(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
         anInt9308++
-        if (i_0_ != 31015) aBoolean9307 = true
         val i_1_ = i
         while_196_@ do {
             while_195_@ do {
@@ -85,10 +84,10 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
             val i_7_ = 88 % ((i - 57) / 55)
             val i_8_ = anInt9306 * anInt9314 shr 12
             val i_9_ = (anInt9306 - (if (i_8_ > 0) ModelDefinition.method1097(82.toByte(), i_8_, random) else 0))
-            if (ClampTextureNode.anInt9139 <= i_3_) i_3_ -= ClampTextureNode.anInt9139
+            if (PerlinNoiseTextureNode.anInt9139 <= i_3_) i_3_ -= PerlinNoiseTextureNode.anInt9139
             if (i_9_ <= 0) {
-                if (ClampTextureNode.anInt9139 < i_3_ + i_5_) {
-                    val i_10_: Int = ClampTextureNode.anInt9139 + -i_3_
+                if (PerlinNoiseTextureNode.anInt9139 < i_3_ + i_5_) {
+                    val i_10_: Int = PerlinNoiseTextureNode.anInt9139 + -i_3_
                     for (i_11_ in 0..<i_2_) {
                         val is_12_: IntArray = `is`!![i_11_ + i_4_]!!
                         ArrayCopyUtil.method1579(is_12_, i_3_, i_10_, i_6_)
@@ -127,9 +126,9 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                                 i_25_++
                             }
                         }
-                        if (ClampTextureNode.anInt9139 >= i_19_ + i_18_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_22_)
+                        if (PerlinNoiseTextureNode.anInt9139 >= i_19_ + i_18_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_22_)
                         else {
-                            val i_27_: Int = -i_18_ + ClampTextureNode.anInt9139
+                            val i_27_: Int = -i_18_ + PerlinNoiseTextureNode.anInt9139
                             ArrayCopyUtil.method1579(is_21_, i_18_, i_27_, i_22_)
                             ArrayCopyUtil.method1579(is_21_, 0, i_19_ - i_27_, i_22_)
                         }
@@ -154,9 +153,9 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                                     i_32_++
                                 }
                             }
-                            if (i_19_ + i_18_ <= ClampTextureNode.anInt9139) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_29_)
+                            if (i_19_ + i_18_ <= PerlinNoiseTextureNode.anInt9139) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_29_)
                             else {
-                                val i_34_: Int = -i_18_ + ClampTextureNode.anInt9139
+                                val i_34_: Int = -i_18_ + PerlinNoiseTextureNode.anInt9139
                                 ArrayCopyUtil.method1579(is_21_, i_18_, i_34_, i_29_)
                                 ArrayCopyUtil.method1579(is_21_, 0, -i_34_ + i_19_, i_29_)
                             }
@@ -165,9 +164,9 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                                 is_21_[(WhirlpoolHash.method1166(SimpleBinaryOptionState.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))] = i_6_ * i_35_ / i_16_
                                 is_21_[WhirlpoolHash.method1166(i_35_ + i_3_, (SimpleBinaryOptionState.anInt6076))] = is_21_[(WhirlpoolHash.method1166(SimpleBinaryOptionState.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))]
                             }
-                            if (ClampTextureNode.anInt9139 >= i_18_ - -i_19_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_6_)
+                            if (PerlinNoiseTextureNode.anInt9139 >= i_18_ - -i_19_) ArrayCopyUtil.method1579(is_21_, i_18_, i_19_, i_6_)
                             else {
-                                val i_36_: Int = -i_18_ + ClampTextureNode.anInt9139
+                                val i_36_: Int = -i_18_ + PerlinNoiseTextureNode.anInt9139
                                 ArrayCopyUtil.method1579(is_21_, i_18_, i_36_, i_6_)
                                 ArrayCopyUtil.method1579(is_21_, 0, i_19_ - i_36_, i_6_)
                             }
@@ -195,13 +194,13 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
             var bool_48_ = true
             var i_49_ = 0
             var i_50_ = 0
-            val i_51_: Int = anInt9317 * ClampTextureNode.anInt9139 shr 12
-            val i_52_: Int = ClampTextureNode.anInt9139 * anInt9320 shr 12
+            val i_51_: Int = anInt9317 * PerlinNoiseTextureNode.anInt9139 shr 12
+            val i_52_: Int = PerlinNoiseTextureNode.anInt9139 * anInt9320 shr 12
             val i_53_ = anInt9322 * FixedFunctionMaterialPass.anInt6212 shr 12
             val i_54_ = FixedFunctionMaterialPass.anInt6212 * anInt9323 shr 12
             if (i_54_ <= 1) return is_42_[i]
-            anInt9306 = ClampTextureNode.anInt9139 / 8 * anInt9311 shr 12
-            val i_55_: Int = 1 + ClampTextureNode.anInt9139 / i_51_
+            anInt9306 = PerlinNoiseTextureNode.anInt9139 / 8 * anInt9311 shr 12
+            val i_55_: Int = 1 + PerlinNoiseTextureNode.anInt9139 / i_51_
             var is_56_: Array<IntArray> = Array<IntArray>(i_55_) { IntArray(3) }
             var is_57_: Array<IntArray> = Array<IntArray>(i_55_) { IntArray(3) }
             val random = Random(anInt9318.toLong())
@@ -209,9 +208,9 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                 var i_58_ = i_51_ + ModelDefinition.method1097(106.toByte(), i_52_ - i_51_, random)
                 var i_59_ = (ModelDefinition.method1097(117.toByte(), -i_53_ + i_54_, random) + i_53_)
                 var i_60_ = i_46_ + i_58_
-                if (i_60_ > ClampTextureNode.anInt9139) {
-                    i_60_ = ClampTextureNode.anInt9139
-                    i_58_ = ClampTextureNode.anInt9139 - i_46_
+                if (i_60_ > PerlinNoiseTextureNode.anInt9139) {
+                    i_60_ = PerlinNoiseTextureNode.anInt9139
+                    i_58_ = PerlinNoiseTextureNode.anInt9139 - i_46_
                 }
                 var i_61_: Int
                 if (bool_48_) i_61_ = 0
@@ -220,8 +219,8 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                     val is_63_ = is_57_[i_47_]
                     var i_64_ = 0
                     var i_65_ = i_43_ + i_60_
-                    if (i_65_ < 0) i_65_ += ClampTextureNode.anInt9139
-                    if (i_65_ > ClampTextureNode.anInt9139) i_65_ -= ClampTextureNode.anInt9139
+                    if (i_65_ < 0) i_65_ += PerlinNoiseTextureNode.anInt9139
+                    if (i_65_ > PerlinNoiseTextureNode.anInt9139) i_65_ -= PerlinNoiseTextureNode.anInt9139
                     while (true) {
                         val is_66_ = is_57_[i_62_]
                         if (i_65_ >= is_66_[0] && is_66_[1] >= i_65_) break
@@ -231,8 +230,8 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                     i_61_ = is_63_[2]
                     if (i_62_ != i_47_) {
                         var i_67_ = i_46_ - -i_43_
-                        if (i_67_ < 0) i_67_ += ClampTextureNode.anInt9139
-                        if (ClampTextureNode.anInt9139 < i_67_) i_67_ -= ClampTextureNode.anInt9139
+                        if (i_67_ < 0) i_67_ += PerlinNoiseTextureNode.anInt9139
+                        if (PerlinNoiseTextureNode.anInt9139 < i_67_) i_67_ -= PerlinNoiseTextureNode.anInt9139
                         var i_68_ = 1
                         while (i_64_ >= i_68_) {
                             val is_69_ = is_57_[(i_68_ + i_47_) % i_49_]
@@ -253,7 +252,7 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                                         i_76_ = min(i_65_, i_74_)
                                     } else {
                                         i_75_ = max(i_67_, i_73_)
-                                        i_76_ = ClampTextureNode.anInt9139
+                                        i_76_ = PerlinNoiseTextureNode.anInt9139
                                     }
                                 } else {
                                     i_75_ = max(i_67_, i_73_)
@@ -267,7 +266,7 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                 }
                 if (FixedFunctionMaterialPass.anInt6212 >= i_59_ + i_61_) bool = false
                 else i_59_ = -i_61_ + FixedFunctionMaterialPass.anInt6212
-                if (i_60_ == ClampTextureNode.anInt9139) {
+                if (i_60_ == PerlinNoiseTextureNode.anInt9139) {
                     method3112(-59, i_59_, is_42_, random, i_46_ + i_44_, i_61_, i_58_)
                     if (bool) break
                     bool = true
@@ -281,13 +280,13 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
                     i_49_ = i_50_
                     i_45_ = i_44_
                     i_50_ = 0
-                    i_44_ = ModelDefinition.method1097(113.toByte(), ClampTextureNode.anInt9139, random)
+                    i_44_ = ModelDefinition.method1097(113.toByte(), PerlinNoiseTextureNode.anInt9139, random)
                     i_43_ = -i_45_ + i_44_
                     i_46_ = 0
                     var i_80_ = i_43_
-                    if (i_80_ < 0) i_80_ += ClampTextureNode.anInt9139
+                    if (i_80_ < 0) i_80_ += PerlinNoiseTextureNode.anInt9139
                     i_47_ = 0
-                    if (i_80_ > ClampTextureNode.anInt9139) i_80_ -= ClampTextureNode.anInt9139
+                    if (i_80_ > PerlinNoiseTextureNode.anInt9139) i_80_ -= PerlinNoiseTextureNode.anInt9139
                     bool_48_ = false
                     while (true) {
                         val is_81_ = is_57_[i_47_]
@@ -308,8 +307,6 @@ class TurbulenceTextureNode : AbstractProceduralTextureNode(0, true) {
     }
 
     companion object {
-        @JvmField
-        var aBoolean9307: Boolean = true
         @JvmField
         var anInt9308: Int = 0
         @JvmField

@@ -107,7 +107,6 @@ import BufferedOutputStreamWorker.Companion.method1525
 import UnusedToStringStub.Companion.method1529
 import CameraRotationStub.Companion.method288
 import VorbisFloorDecoder.Companion.method1536
-import SoundEnvelope.Companion.method1543
 import CompressedBlockDecoder.method1551
 import ItemDefinition.Companion.method1564
 import ParticleAmountCache.Companion.method1585
@@ -219,7 +218,6 @@ import CubemapTextureGlSource.Companion.method2265
 import TextureCubeProvider.Companion.method2268
 import CubemapTextureImplSource.Companion.method2272
 import CacheStateResetter.method176
-import CircleHitbox.Companion.method322
 import HeightMapNoise.method2281
 import ProjectileDefinition.method2286
 import ParticleSystemRenderer.Companion.method2294
@@ -230,7 +228,6 @@ import WidgetRedrawTracker.Companion.method2331
 import SkyboxGradient.method2333
 import ArchiveResourceProvider.Companion.method2344
 import CacheIndexManager.Companion.method2354
-import SceneEntity.Companion.method2389
 import SceneGraphContainer.Companion.method2527
 import TileSceneEntity.Companion.method2395
 import GroundDecorSceneEntity.Companion.method2400
@@ -241,7 +238,7 @@ import GroundDecorEntity.Companion.method2412
 import ModelGroundDecor.Companion.method2415
 import ProjectedGroundDecor.Companion.method2429
 import MapElementDecor.Companion.method2469
-import ActorEntity.Companion.method2479
+import SceneNodeDeque.Companion.method2479
 import WallEntity.Companion.method2484
 import WallEntity.Companion.method2485
 import ModelWallEntity.Companion.method2490
@@ -340,7 +337,6 @@ import RenderListTextureNode.Companion.method3152
 import VoronoiNoiseTextureNode.Companion.method3059
 import DisplaceTextureNode.Companion.method3062
 import FlipTextureNode.Companion.method3066
-import PerlinNoiseTextureNode.Companion.method3068
 import EdgeDetectTextureNode.Companion.method3071
 import RegionSceneShifter.Companion.method3155
 import ParamMap.Companion.method3165
@@ -459,7 +455,6 @@ import TrigLookupTables.Companion.method725
 import PlayerSequenceSelector.method728
 import PlayerSequenceSelector.method729
 import HintArrowRenderer.Companion.method731
-import RgbColorPalette.Companion.method744
 import MapRegionLoader.Companion.method746
 import IsaacCipher.Companion.method782
 import BufferedRandomAccessFile.Companion.method786
@@ -507,10 +502,14 @@ import ChatCommandProcessor.anIntArray3295
 import CompassSmoother.Companion.method2017
 import ConfigFlagUtil.Companion.method1916
 import FrameBufferObject.Companion.method1501
+import FrameStatsReset.Companion.method1131
 import Gl3dTexture.Companion.aIntRange_4027
+import HslAdjustTextureNode.Companion.method3126
 import HslAdjustTextureNode.Companion.method3127
 import MapArchiveSource.Companion.method1365
 import InputStream_Sub2.Companion.method128
+import InvertTextureNode.Companion.method3134
+import KaraokeSubtitleStream.Companion.method2988
 import MapLabelMenuEntry.Companion.method1041
 import MaterialPass.Companion.method2138
 import MultiLevelOptionState.Companion.method1851
@@ -661,7 +660,7 @@ class Client : GameAppletFrame() {
         HslPaletteState.aShortArray4172 = ShortArray(256)
         LoadingScreenImageNode.aShortArray9502 = HslPaletteState.aShortArray4172
         NamedIdEntry.aShortArray6889 = LoadingScreenImageNode.aShortArray9502
-        SceneEffectMarker.aShortArray6428 = NamedIdEntry.aShortArray6889
+        aShortArray6428 = NamedIdEntry.aShortArray6889
         if (Client.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) TextureLoadExceptionStatics.aBoolean4599 = false
         if (GlRectangleTexture.aSceneProjector_8638 == Client.aSceneProjector_10434) {
             InputSettingsState.shiftClick = true
@@ -908,7 +907,7 @@ class Client : GameAppletFrame() {
         method1298(-1)
         method3252(353)
         method445(i.toInt() xor 0x6e)
-        method1543(-4524)
+        Font.method1543(-4524)
         method2395(50.toByte())
         method2406(i.toInt() xor 0x12.inv())
         method2479(i + 19316)
@@ -950,7 +949,7 @@ class Client : GameAppletFrame() {
         method2191(0)
         ItemActionPacketSender.method1236((-110).toByte())
         method1463(25.toByte())
-        SceneEffectMarker.method2506((-46).toByte())
+        method2506((-46).toByte())
         method2469(true)
         method2640(true)
         method869(3)
@@ -1265,9 +1264,9 @@ class Client : GameAppletFrame() {
             method527(SkeletalAnimFrameLoader.aFrame476, VorbisOggDecoder.aPrivilegedOperationWorker_8992, false)
             SkeletalAnimFrameLoader.aFrame476 = null
         }
-        if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 != null) {
-            PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1700(36.toByte())
-            PerlinNoiseTextureNode.aAbstractGameSocket_9165 = null
+        if (Client.aAbstractGameSocket_9165 != null) {
+            Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
+            Client.aAbstractGameSocket_9165 = null
         }
         method1265(16)
         ClientMachineInfo.aMediaStreamClient_6601!!.method1901(i xor 0x44.inv())
@@ -1528,7 +1527,7 @@ class Client : GameAppletFrame() {
         }
         do {
             if (WorldMapRenderer.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) {
-                if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 == null) method3141(false, 11.toByte())
+                if (Client.aAbstractGameSocket_9165 == null) method3141(false, 11.toByte())
                 else {
                     SceneRegionState.anInt193++
                     if (SceneRegionState.anInt193 > 50) {
@@ -1877,7 +1876,7 @@ class Client : GameAppletFrame() {
             for (i_9_ in 0..<i_8_) {
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_9_ < i_7_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_9_]])
-                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_9_ - i_7_].toLong(), -6008) as NpcReference).aNpc_6859)
+                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_9_ - i_7_].toLong(), -6008) as NpcReference).aNpc_6859)
                 if (class318_sub1_sub3_sub3!!.plane.toInt() == i) {
                     class318_sub1_sub3_sub3.anInt10261 = 0
                     if ((class318_sub1_sub3_sub3.anInt10285) < 0) class318_sub1_sub3_sub3.aBoolean10309 = false
@@ -1937,7 +1936,7 @@ class Client : GameAppletFrame() {
         fun method106() {
             Js5Archive.anInt669 = 0
             for (i in 0..<ModelDefinitionLoader.anInt2057) {
-                val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i].toLong(), -6008) as NpcReference).aNpc_6859)
+                val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i].toLong(), -6008) as NpcReference).aNpc_6859)
                 if ((npc!!.aBoolean10309) && npc.method2425(-1) != -1) {
                     val i_20_ = ((npc.method2436(119.toByte()) - 1) * 256 + 252)
                     val i_21_ = (npc.x - i_20_) shr 9
@@ -2072,7 +2071,7 @@ class Client : GameAppletFrame() {
                                     }
                                     class348_sub36 = (HashTileShape.aNodeDeque_8810!!.method1990(71.toByte()) as WidgetActionEntry?)
                                 }
-                                if (SceneEntity.anInt6392 == 0) {
+                                if (DragDropController.anInt6392 == 0) {
                                     RegionSceneLoader.aWidgetComponent_3701 = null
                                     CalendarUtil.aWidgetComponent_4130 = null
                                 }
@@ -2501,7 +2500,7 @@ class Client : GameAppletFrame() {
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                             }
-                            if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, HoverActionEntry.aSpriteStore_1813, CircleHitbox.aMapSceneCache_413)!!.method2292(84, FacingDirectionNode.aRenderer6654!!, class46.anInt789)
+                            if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, HoverActionEntry.aSpriteStore_1813, aMapSceneCache_413)!!.method2292(84, FacingDirectionNode.aRenderer6654!!, class46.anInt789)
                             method273(class46, -2835)
                             if (class46.anInt774 == 0) {
                                 method107(widgetComponents, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)
@@ -2556,7 +2555,7 @@ class Client : GameAppletFrame() {
             for (i_93_ in 0..<i_92_) {
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_93_ < i) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_93_]])
-                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_93_ - i].toLong(), -6008) as NpcReference).aNpc_6859)
+                else class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_93_ - i].toLong(), -6008) as NpcReference).aNpc_6859)
                 if (class318_sub1_sub3_sub3!!.anInt10285 >= 0) {
                     val i_94_ = class318_sub1_sub3_sub3.method2436(74.toByte())
                     if ((i_94_ and 0x1) == 0) {
@@ -2600,7 +2599,7 @@ class Client : GameAppletFrame() {
                 }
             }
             for (i_115_ in 0..<ModelDefinitionLoader.anInt2057) {
-                val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_115_].toLong(), -6008) as NpcReference).aNpc_6859)
+                val npc = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_115_].toLong(), -6008) as NpcReference).aNpc_6859)
                 if (!npc!!.method2445((-4).toByte()) || !(npc.aNpcType_10505!!.method796(ProjectedGroundDecor.aVarpStore_10209!!, 18627))) npc.anInt10285 = -1
                 else {
                     npc.method2409((-118).toByte())
@@ -2646,7 +2645,7 @@ class Client : GameAppletFrame() {
             for (i_123_ in 0..<i_122_ + ModelDefinitionLoader.anInt2057) {
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_123_ < i_122_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`!![i_123_]])
-                else class318_sub1_sub3_sub3 = (NpcEntityUpdater.aHashtable_3654!!.method3480(RgbColorPalette.anIntArray1233!![i_123_ - i_122_].toLong(), -6008) as NpcReference).aNpc_6859
+                else class318_sub1_sub3_sub3 = (NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_123_ - i_122_].toLong(), -6008) as NpcReference).aNpc_6859
                 if (class318_sub1_sub3_sub3!!.plane.toInt() == i && (class318_sub1_sub3_sub3.anInt10285) >= 0) {
                     val i_124_ = class318_sub1_sub3_sub3.method2436(114.toByte())
                     if ((i_124_ and 0x1) == 0) {
@@ -2684,19 +2683,19 @@ class Client : GameAppletFrame() {
         @Throws(IOException::class)
         fun method3201(bool: Boolean): Boolean {
             anInt10430++
-            if (PerlinNoiseTextureNode.aAbstractGameSocket_9165 == null) return false
+            if (Client.aAbstractGameSocket_9165 == null) return false
             if (ModelVertexColorBuffer.aIntRange_6584 == null) {
                 if (GroundItemRenderState.aBoolean1661) {
-                    if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 119)) return false
-                    PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 0, 6.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                    if (!Client.aAbstractGameSocket_9165!!.method1705(1, 119)) return false
+                    Client.aAbstractGameSocket_9165!!.method1701(1, 0, 6.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                     StringCacheNode.anInt7213 = 0
                     GroundItemRenderState.aBoolean1661 = false
                     MinimapRectClipper.anInt221++
                 }
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                 if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3404(-1510)) {
-                    if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 119)) return false
-                    PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 1, 26.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                    if (!Client.aAbstractGameSocket_9165!!.method1705(1, 119)) return false
+                    Client.aAbstractGameSocket_9165!!.method1701(1, 1, 26.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                     MinimapRectClipper.anInt221++
                     StringCacheNode.anInt7213 = 0
                 }
@@ -2711,24 +2710,24 @@ class Client : GameAppletFrame() {
                 RadialTextureNode.anInt9341 = ModelVertexColorBuffer.aIntRange_6584!!.anInt1749
             }
             if (RadialTextureNode.anInt9341 == -1) {
-                if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(1, 116)) return false
-                PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(1, 0, (-118).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                if (!Client.aAbstractGameSocket_9165!!.method1705(1, 116)) return false
+                Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-118).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                 RadialTextureNode.anInt9341 = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                 MinimapRectClipper.anInt221++
                 StringCacheNode.anInt7213 = 0
             }
             if (RadialTextureNode.anInt9341 == -2) {
-                if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(2, 120)) return false
-                PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(2, 0, 127.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                if (!Client.aAbstractGameSocket_9165!!.method1705(2, 120)) return false
+                Client.aAbstractGameSocket_9165!!.method1701(2, 0, 127.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                 RadialTextureNode.anInt9341 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 MinimapRectClipper.anInt221 += 2
                 StringCacheNode.anInt7213 = 0
             }
             if (RadialTextureNode.anInt9341 > 0) {
-                if (!PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1705(RadialTextureNode.anInt9341, 104)) return false
+                if (!Client.aAbstractGameSocket_9165!!.method1705(RadialTextureNode.anInt9341, 104)) return false
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                PerlinNoiseTextureNode.aAbstractGameSocket_9165!!.method1701(RadialTextureNode.anInt9341, 0, (-123).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                Client.aAbstractGameSocket_9165!!.method1701(RadialTextureNode.anInt9341, 0, (-123).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                 MinimapRectClipper.anInt221 += RadialTextureNode.anInt9341
                 StringCacheNode.anInt7213 = 0
             }
@@ -2773,7 +2772,7 @@ class Client : GameAppletFrame() {
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == SceneEffectMarker.aIntRange_6424) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == aIntRange_6424) {
                 method128(NamedIdEntry.aRgbColorPalette_6891, 8.toByte())
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
@@ -3161,7 +3160,7 @@ class Client : GameAppletFrame() {
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == RgbColorPalette.aIntRange_1234) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == Client.aIntRange_1234) {
                 ModelDataCache.anInt359 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3369(125.toByte())
                 RangeThresholdTextureNode.aBoolean9103 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 ModelVertexColorBuffer.aIntRange_6584 = null
@@ -3316,7 +3315,7 @@ class Client : GameAppletFrame() {
                 val i_79_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-120)
                 val i_80_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(125)
                 WallSceneEntity.method2397((-125).toByte())
-                SoundEnvelope.method1540(-101, i, i_79_ + (i_80_ shl 16))
+                method1540(-101, i, i_79_ + (i_80_ shl 16))
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
@@ -4185,7 +4184,7 @@ class Client : GameAppletFrame() {
                 ModelVertexColorBuffer.aIntRange_6584 = null
                 return true
             }
-            if (ModelVertexColorBuffer.aIntRange_6584 == SceneEntity.aIntRange_6383) {
+            if (ModelVertexColorBuffer.aIntRange_6584 == aIntRange_6383) {
                 var i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 if (i == 65535) i = -1
                 val i_204_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
@@ -4417,7 +4416,7 @@ class Client : GameAppletFrame() {
         fun method3202(i: Byte) {
             Client.aSceneProjector_10434 = null
             if (i > 38) {
-                RenderbufferObject.aLongArrayArrayArray10431 = null
+                SceneEntity.aLongArrayArrayArray10431 = null
                 FireParticleStream.aSceneObjectSpawner_10436 = null
                 Client.aRgbColorPalette_10437 = null
             }
@@ -4468,7 +4467,7 @@ class Client : GameAppletFrame() {
             var i = 0
             if (bool != true) method3150(false)
             while ( /**/ModelDefinitionLoader.anInt2057 > i) {
-                val i_14_ = RgbColorPalette.anIntArray1233!![i]
+                val i_14_ = Client.anIntArray1233!![i]
                 val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_14_.toLong(), -6008) as NpcReference?)
                 if (class348_sub22 != null) {
                     val npc = (class348_sub22.aNpc_6859)!!
@@ -4918,7 +4917,7 @@ class Client : GameAppletFrame() {
                     else MinimapSquareDrawer.aBoolean5224 = false
                     method3027(33.toByte())
                     if (WorldMapRenderer.anInt4674 == 10) {
-                        LoadingScreenImageNode.method3175(55.toByte())
+                        Client.method3175(55.toByte())
                         method362(i + -11335)
                         method1501(-123)
                         StringCacheNode.anInt7213++
@@ -5307,11 +5306,67 @@ class Client : GameAppletFrame() {
         }
         var aNodeDeque_6978: NodeDeque? = NodeDeque()
 
+        var anInt8761: Int = 0
+        fun method2480(i: Int) {
+            if (i == -1) {
+                anInt8761++
+                Client.aNodeDeque_6978 = NodeDeque()
+            }
+        }
         @JvmStatic
         fun method3028(i: Int) {
             InputStream_Sub2.aRgbColorPalette_6977 = null
             ClientLoadStateMachine.aJs5Archive_6980 = null
             aNodeDeque_6978 = null
+        }
+        var aIntRange_6383: IntRange? = IntRange(11, 6)
+        fun method2389(i: Int) {
+            Client.aIntRange_6383 = null
+        }
+        var aMapSceneCache_413: MapSceneCache? = null
+        fun method322(i: Int) {
+            NativeTerrainTile.anIntArray407 = null
+            Client.aMapSceneCache_413 = null
+        }
+        var anInt2746: Int = 0
+        fun method1540(i: Int, i_31_: Int, i_32_: Int) {
+            anInt2746++
+            val class348_sub42_sub15 = NamedTimedNode.method2516(i_31_, 105.toByte(), 13)
+            class348_sub42_sub15.method3246(-25490)
+            class348_sub42_sub15.anInt9652 = i_32_
+        }
+        var aAbstractGameSocket_9165: AbstractGameSocket? = null
+        fun method3068(i: Int) {
+            LoadingBarRenderer.aColorArray9163 = null
+            Client.aAbstractGameSocket_9165 = null
+        }
+        var anIntArray1233: IntArray? = IntArray(1024)
+        var aIntRange_1234: IntRange? = IntRange(54, 4)
+        fun method744(i: Byte) {
+            Client.aIntRange_1234 = null
+            anIntArray1233 = null
+        }
+        var anInt9509: Int = 0
+        fun method3175(i: Byte) {
+            if (!method3196(WorldMapRenderer.anInt4674, -114) && !method2672(WorldMapRenderer.anInt4674, -103)) {
+                val i_12_ = ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) shr 3)
+                val i_13_ = ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) shr 3)
+                if (i_12_ < 0 || GlCubemapLightPass.anInt7319 shr 3 <= i_12_ || i_13_ < 0 || (RangeThresholdTextureNode.anInt9109 shr 3 <= i_13_)) AwtKeyboardListener.method2703(0, GlCubemapLightPass.anInt7319 shr 4, (RangeThresholdTextureNode.anInt9109 shr 4), (-13).toByte())
+                else AwtKeyboardListener.method2703(5000, i_12_, i_13_, (-13).toByte())
+            } else AwtKeyboardListener.method2703(5000, GlslMaterialPass.anInt6246 shr 12, CompositeRgbNoiseTexture.anInt8685 shr 12, (-13).toByte())
+            anInt9509++
+            method3134(-1)
+            method2988(true)
+            val i_14_ = -8 % ((-30 - i) / 38)
+            method3126(98.toByte())
+            method1131(117)
+        }
+        var aShortArray6428: ShortArray? = null
+        var aIntRange_6424: IntRange? = IntRange(82, 4)
+        fun method2506(i: Byte) {
+            aShortArray6428 = null
+            PerlinNoiseTextureNode.anIntArray6432 = null
+            aIntRange_6424 = null
         }
     }
 }

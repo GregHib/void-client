@@ -1,5 +1,5 @@
 import GraphicsOptionState.Companion.method1717
-import java.util.*
+import kotlin.random.Random
 
 class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
     private var anInt9284 = 1024
@@ -112,7 +112,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             var i_11_ = 0
             var i_12_: Int
-            i_12_ = anInt9293 + LightDetailOptionState.anIntArray6035!![i]
+            i_12_ = anInt9293 + PerlinNoiseTextureNode.anIntArray6035!![i]
             while (i_12_ < 0) {
                 i_12_ += 4096
             }
@@ -129,11 +129,11 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
             val i_15_ = anIntArray9297[i_11_ - 1]
             if (anInt9298 + i_15_ < i_12_ && i_12_ < i_14_ - anInt9298) {
                 var i_16_ = 0
-                while (ClampTextureNode.Companion.anInt9139 > i_16_) {
+                while (PerlinNoiseTextureNode.Companion.anInt9139 > i_16_) {
                     var i_17_ = 0
                     val i_18_ = if (!bool) -anInt9288 else anInt9288
                     var i_19_: Int
-                    i_19_ = (SceneEffectMarker.anIntArray6432!![i_16_] + (i_18_ * anInt9291 shr 12))
+                    i_19_ = (PerlinNoiseTextureNode.anIntArray6432!![i_16_] + (i_18_ * anInt9291 shr 12))
                     while (i_19_ < 0) {
                         i_19_ += 4096
                     }
@@ -151,7 +151,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                     else `is`[i_16_] = anIntArrayArray9286[i_13_]!![i_20_]
                     i_16_++
                 }
-            } else ArrayCopyUtil.method1579(`is`, 0, ClampTextureNode.Companion.anInt9139, 0)
+            } else ArrayCopyUtil.method1579(`is`, 0, PerlinNoiseTextureNode.Companion.anInt9139, 0)
         }
         if (i_10_ != 255) method3110(44)
         return `is`
