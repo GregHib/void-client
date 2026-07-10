@@ -1,0 +1,2 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+withLock,withLock,"lock: Any, block: () -> T","lock: Any, block: () -> T",high,"Top-level expect inline function (no enclosing class in this file; jvmMain/webMain provide actual implementations). Name and params are already meaningful/idiomatic (mirrors kotlin.concurrent.withLock) -- no rename needed. File itself is otherwise just this one declaration."
