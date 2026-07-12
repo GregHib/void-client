@@ -1,0 +1,7 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+isTheora,isTheora,,,high,"Native property getter. Checked in OggMediaStream.kt to detect the Theora video header/stream packet during ogg stream demuxing. Name already idiomatic."
+clear,clear,,,high,"External override of SimplePeer's abstract clear()/freeNative(). Releases the native ogg_packet struct held by this peer."
+data,data,,,high,"Native property getter returning the raw packet payload bytes (native ogg_packet.packet). Name already idiomatic."
+isHeader,isHeader,,,medium,"Private native property getter returning an Int (not Boolean, unlike the other is* getters here) -- likely a tri-state/bitflag header-type indicator (e.g. distinguishing identification/comment/setup header packets) rather than a plain boolean, hence the Int type and private visibility (probably consumed only internally by other native-side logic, not exposed to Kotlin callers). Never read from Kotlin code in this repo."
+isKeyFrame,isKeyFrame,,,high,"Native property getter returning Int (0/1) rather than Boolean. Compared with `== 1` at call sites (TheoraVideoStream.kt) to detect keyframe/intra-coded Theora video packets for seeking/sync logic. Name already idiomatic."
+isVorbis,isVorbis,,,high,"Native property getter. Checked in OggMediaStream.kt to detect the Vorbis audio header/stream packet during ogg stream demuxing. Name already idiomatic."

@@ -1,0 +1,2 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+method1351,clearStaticCaches,i: Int,unusedFlag: Int,high,"Object holder (marker/field-bag) whose sole method nulls out InboundPacketHeader.aInboundPacketHeader_2331/2335, aClass348_Sub26_2332 (NamedIdEntry), aClass348_Sub47Array2334 (300-entry OutgoingPacketNode pool) and aSystemFontGlyphs_2333 - a standard logout/teardown cache-clear routine. Param unused in body."

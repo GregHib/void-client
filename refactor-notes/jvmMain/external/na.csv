@@ -1,0 +1,4 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+w,dispose,bool: Boolean,fromFinalizer: Boolean,high,"Implements Disposable.w(bool); external native dispose. Class header names this NativeSpriteRenderer (extends Sprite)."
+finalize,finalize,(none),(none),high,"Standard finalizer; queues native disposal via RequestGate.method1947(0, this)."
+ma,nativeCreateSprite,"var_oa: oa?, var_ya: ya?, i: Int, i_0_: Int, `is`: IntArray?, is_1_: IntArray?","renderer: oa?, shaderProgram: ya?, width: Int, height: Int, pixels: IntArray?, palette: IntArray?",medium,"Private external called from init with the primary constructor's args. This exact constructor shape (oa, ya, i, i_2_, IntArray, IntArray) is used by oa.method3661 (return na(this, aYa5121, i, i_192_, `is`, is_193_)), which implements Renderer.method3661(i, i_82_, IntArray?, IntArray?): Sprite — strongly suggesting width, height, pixel data and a second int array (palette or alpha mask)."

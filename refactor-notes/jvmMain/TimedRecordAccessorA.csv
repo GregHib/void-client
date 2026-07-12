@@ -1,0 +1,6 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+method3310,getRecordValueA,i: Int,tag: Int,low,"Override of abstract TimedRecordAccessor.method3310/getRecordValueA (cross-referenced from this same batch's TimedRecordAccessor.csv - same naming-confidence caveats apply). Returns this.anInt9728. Decoy `if (tag < 50) return 113`."
+method3312,getRecordTimestamp,i: Byte,tag: Byte,medium,"Override of abstract TimedRecordAccessor.method3312/getRecordTimestamp (cross-referenced). Returns this.aLong9726. Decoy `if (tag > -79) method3308(-8.toByte())` (calls the sibling getRecordFlags override and discards its result)."
+method3311,getRecordValueB,i: Int,tag: Int,low,"Override of abstract TimedRecordAccessor.method3311/getRecordValueB (cross-referenced). Returns this.anInt9725. Leading `val i_0_ = 48 % ((tag - -61) / 40)` dead discarded-division local."
+method3315,getRecordValueC,i: Int,tag: Int,low,"Override of abstract TimedRecordAccessor.method3315/getRecordValueC (cross-referenced). Returns this.anInt9727. Decoy `if (tag != 0) return 57`."
+method3308,getRecordFlags,i: Byte,tag: Byte,low,"Override of abstract TimedRecordAccessor.method3308/getRecordFlags (cross-referenced). Returns this.anInt9729. Decoy `if (tag >= -126) return -80`."

@@ -1,0 +1,2 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+method2611,clearFontMetaIfBelowThreshold,i: Int,threshold: Int,medium,"Object singleton extending ShaderState. Body: `if (i < -121) aFontMetaRef_8798 = null` - clears the cached FontMetaRef field when the threshold param is below -121. NOT a decoy: the only call site, Client.kt:1190 `method2611(-123)`, passes -123 (< -121), so the clear does execute at runtime (functionally an unconditional clear given the single observed caller)."

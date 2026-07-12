@@ -83,14 +83,27 @@ Batches are assigned to subagents a handful at a time. Each agent:
 
 ## Status
 
-See `refactor-notes/progress.csv` for live status. 260/853 files done
-(batches 1-26): batches 1-6 (60 files, commonMain `Abstract*`/early-alphabet
-classes), batches 7-16 (100 files, remaining commonMain alphabet tail
-through `V*` and jvmMain `Abstract*` through `Camera*`), and batches 17-26
-(100 files, jvmMain `Cell*` through `Font*`, including the three largest
-files in the repo: `Client.kt` 5381 lines, `ChatCommandProcessor.kt` 5486
-lines, `DisplaySettingsConfig.kt` 5541 lines). Batches 27-86 (593 files)
-remain pending.
+See `refactor-notes/progress.csv` for live status. **853/853 files done —
+all 86 batches complete.** Batches 1-6 (60 files, commonMain
+`Abstract*`/early-alphabet classes), batches 7-16 (100 files, remaining
+commonMain alphabet tail through `V*` and jvmMain `Abstract*` through
+`Camera*`), batches 17-26 (100 files, jvmMain `Cell*` through `Font*`,
+including the three largest files in the repo: `Client.kt` 5381 lines,
+`ChatCommandProcessor.kt` 5486 lines, `DisplaySettingsConfig.kt` 5541
+lines), batches 27-46 (200 files, jvmMain `Font*`/`G*` through `N*`),
+batches 47-56 (100 files, jvmMain `Native*` through `RenderConfigFactory.kt`),
+batches 57-66 (100 files, jvmMain `RenderListTextureNode.kt` through
+`SpriteDefinition.kt`, i.e. `Render*`/`Rsa*`/`Scene*`/`Script*`/`Shader*`/
+`Skeletal*`/`Socket*`/`Software*`/`Sound*`/`Sprite*`), batches 67-76 (100
+files, jvmMain `SpriteImage.kt` through `WorldMapScene.kt`, i.e. remaining
+`Sprite*`/`Terrain*`/`Texture*`/`Tile*`/`Timed*`/`Vertex*`/`Vorbis*`/
+`Wall*`/`Water*`/`Widget*`/`WorldMap*`), and batches 77-86 (100 files, the
+vendored `jagtheora`/`jaclib`/`jagdx`/`jaggl`/`direct/sound` ports) are all
+done. Every `csv_output` path in `progress.csv` exists and is non-empty.
+
+This completes the analysis pass. The next step (out of scope here, per the
+"never rename in source files" rule above) is a future automated find/replace
+or IDE-refactor pass to apply the recommended names from the per-file CSVs.
 
 Notes for the next pass:
 - Several jvmMain "`*Statics`" companion files turned out to hold content
@@ -98,17 +111,75 @@ Notes for the next pass:
   statics into the wrong file) — flagged per-file in notes rather than
   forced into a false pairing. This "decompiler-merged wrong content"
   pattern is very common in jvmMain companion objects generally (not just
-  `*Statics` files) — expect it in most remaining jvmMain batches.
+  `*Statics` files, and not just companions — batches 51-56 found several
+  cases where a class's *instance* methods are unrelated to its name, e.g.
+  `ParticleEmitterNode.kt`'s instance methods are actually an audio/sound
+  channel node, and `ParticleSystemRenderer.kt`'s instance methods are a
+  minimap hint-arrow/compass overlay renderer) — expect it in most
+  remaining jvmMain batches.
 - A number of classes are legitimately empty (marker interfaces/pure field
-  bags) and have header-only CSVs — not errors.
+  bags) and have header-only CSVs — not errors (e.g. `Rectangle.kt` in
+  batch 56).
 - `ChatCommandProcessor.kt` is misleadingly named — it's actually the
   client's CS2 (ClientScript2) bytecode VM/interpreter, not a chat-command
   dispatcher (that logic lives in `ConfigArchiveLoader.kt`).
+- For OpenGL/Direct3D "twin" implementation classes (`OpenGlRenderer.kt` vs
+  `NativeRenderer.kt`, `OpenGlModel.kt` vs `SoftwareModel`/`AbstractModel`),
+  cross-referencing the already-documented sibling/abstract-parent CSV lets
+  most methods be named with high confidence by matching shared abstract
+  method signatures rather than re-deriving from scratch — reuse this
+  technique for remaining GL/D3D twins.
+- Confirmed dead/opaque-predicate code: `NodeDequeStatics.method1991`
+  (self-recursive tail call gated by a bool every real call site always
+  passes as `false`); `ParticleDetailOptionState.method1716` has
+  `if (anInt3138 < 0 && anInt3138 > 4)` — logically impossible, clamp never
+  runs, possibly a mangled `||`.
 - Recurring low-confidence spots worth a second look later: `TerrainTile.kt`
   (`U`/`method3978` tile-baking), `AbstractRenderPass.kt` (abstract methods
   with no live subclass to confirm), `ActorEntity.kt` companion rasterizer
   methods, `BoundingBoxNode.kt` unresolved data tables, `Client.kt`'s
   `method3201` (~1730-line packet dispatcher, only partially traced) and
-  `method107`/`method2991` (large dense dispatch/tick methods), and
+  `method107`/`method2991` (large dense dispatch/tick methods),
   `CompositeNpcModelBuilder.method1226` (21-param model builder, single
-  call site).
+  call site — also echoed by `Player.method2459`, a similarly composite
+  model builder), `OpenGlModel.kt`'s private GL geometry-cache helpers
+  (`method679/683/686/688/691`, inferred from call-site shape only), and
+  `ProjectionCameraTransform.kt`'s 12-float 3x3 rotation+translation matrix
+  (axis identity for the incremental-rotate/reset methods inferred
+  structurally, not independently confirmed).
+- Batches 57-66 findings: the "decompiler-merged wrong content" pattern now
+  also shows up on whole top-level `object`s, not just companions/instance
+  methods (`SoundCacheState.kt` is almost entirely unrelated widget/hint-icon
+  code). `SoftwareRenderer.kt` vs. the already-documented `OpenGlRenderer.kt`
+  (same abstract `Renderer` base) diverge behaviorally on several shared
+  method slots (`method3628`, `L`, `ra`, `b`, `method3631`, `method3663`) —
+  worth reconciling in a follow-up pass rather than trusting either csv's
+  name blindly. Two likely genuine bugs (not obfuscation artifacts) flagged:
+  `SimpleBinaryOptionState`'s explicit-value constructor drops its `i` param
+  when calling `super(...)`, unlike every sibling `*OptionState` class; and
+  `SoftwareFontPalette.method2592`'s row-advance line doubles `srcIndex`
+  instead of adding `srcRowSkip`, unlike the correct analogous line in
+  `SoftwareFontPlain.method2587`. More confirmed dead self-recursive decoys:
+  `SoundEnvelope.method1544`, `SpriteArchiveLoader.method311`,
+  `SceneTileBounds`'s single method, and `SpotAnimEntity.method2511` (whose
+  dead branch would NPE if ever taken).
+- Batches 67-76 findings: the class-name/content mismatch pattern kept
+  showing up hard — `SpriteArchiveLoader.kt` and `SpriteStore.kt` are audio-
+  sample/widget-text-config loaders despite their names; `VideoStreamDecoder.kt`
+  contains no video decoding (it's a terrain lightmap/heightmap streaming
+  builder); `VideoAdChecker.kt`'s real method is a terrain shading-index
+  packer; `WidgetDefinition.kt` is more likely a model/kit-part definition
+  for character customization than a UI widget record; `VorbisCommentHeader.kt`
+  actually decodes the libvorbis *mapping* header, not the comment header;
+  `TrackedGroundDecor.kt` (despite extending `GroundDecorEntity`) implements
+  ballistic-projectile motion and is almost certainly the real `Projectile`
+  class. `TerrainTileShape.kt` and its GL2/GL3 shadow-builder siblings turned
+  out to be a point-light/shadow-caster abstraction, not tile geometry.
+  Likely genuine bugs (not obfuscation artifacts): `TextureMipDescriptor.method3462`'s
+  decoy branch would NPE if ever triggered (passes null arrays into an
+  array-dereferencing sort). One naming inconsistency flagged between two
+  already-completed CSVs: `SceneObjectEntity.csv` calls a shared virtual slot
+  `renderWithTarget` while `GroundDecorSceneEntity.csv`'s implementation shows
+  it's actually `mergeNormals` — needs reconciliation in a later pass.
+  `WorldMapAreaLabel.method3570`'s `bool=true` branch was checked against all
+  15 call sites in the repo — every one passes `false` (confirmed dead).

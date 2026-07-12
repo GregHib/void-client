@@ -1,0 +1,3 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+method2772,resetWidgetComponentLayout,"i: Int, i_0_: Byte","groupId: Int, gate: Byte",medium,"JvmStatic: if the interface group is loaded (or lazily loads it via TextureLoaderUtil.method2547, same load-on-demand pattern as RSFont.method2570 in this batch) and gate>105, resets three layout fields (anInt795,anInt730,anInt841) on every WidgetComponent child in that group - looks like a 'reset all children to default layout/scroll position' utility."
+method2773,clearCaches,i: Int,unused: Int,high,"JvmStatic: nulls aSpriteImage_6643 and aRenderConfigFactory_6644 unconditionally; also nulls aCacheArchiveIndexLoader_6653 only when unused==0."

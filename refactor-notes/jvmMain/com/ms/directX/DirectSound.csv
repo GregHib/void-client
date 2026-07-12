@@ -1,0 +1,4 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+createSoundBuffer,createSoundBuffer,"dsbufferdesc: DSBufferDesc?, waveformatex: WaveFormatEx?",,high,"Empty stub (returns null) mirroring IDirectSound::CreateSoundBuffer(lpcDSBufferDesc, ppDSBuffer, pUnkOuter). The wave format is normally embedded inside DSBufferDesc.lpwfxFormat in the real COM struct, but this port passes it as a separate WaveFormatEx? param. Params/name already meaningful, no change needed."
+initialize,initialize,`object`: Any?,guid: Any?,medium,"Maps to IDirectSound::Initialize(REFGUID lpGuid) - selects a specific sound device GUID (null = default device). Empty stub body."
+setCooperativeLevel,setCooperativeLevel,"component: Component?, i: Int","window: Component?, level: Int",high,"Maps to IDirectSound::SetCooperativeLevel(hwnd, dwLevel) where dwLevel is one of DSSCL_NORMAL/PRIORITY/EXCLUSIVE/WRITEPRIMARY. Empty stub body."

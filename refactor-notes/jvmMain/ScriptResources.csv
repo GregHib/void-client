@@ -1,0 +1,2 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+method1463,disposeScriptResourceCaches,i: Byte,tag: Byte,high,"@JvmStatic, only method in the file. Nulls aFontMetaRef_2638, aAbstractModelRendererArray2640 and aTextureDefinitionCache_2639 - a straightforward resource-teardown/reset routine. `if (tag != 25) aAbstractModelRendererArray2640 = null` re-clears a field already cleared unconditionally above, so that branch is a no-op decoy regardless of tag's value. Only call site: Client.kt (imported, single reset call)."

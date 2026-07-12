@@ -1,0 +1,2 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+method1076,uploadData,"is: ByteArray?, i: Int","data: ByteArray?, size: Int",high,"Ensures the wrapped native buffer (aBuffer1792) exists and is at least `size` bytes, (re)allocating it from the owning renderer's native heap (aHa_Sub2_1793.aNativeHeap7730) when null or too small, then copies `data` into it via Buffer.a(data, 0, 0, size). Straightforward grow-and-copy upload helper; both constructors and NativeIndexBuffer.method11 delegate to it."

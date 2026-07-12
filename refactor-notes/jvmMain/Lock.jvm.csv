@@ -1,0 +1,2 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+withLock,withLock,"lock: Any, block: () -> T","lock: Any, block: () -> T",high,"Top-level `actual inline fun` (jvm actual for an expect declared elsewhere) wrapping Kotlin's `synchronized(lock, block)` with a `contract { callsInPlace(block, EXACTLY_ONCE) }`. Already clearly and idiomatically named - used throughout the codebase (e.g. MapElementDefinitionCache.kt, MapArchiveSource.kt) as a straightforward mutex-lock helper. No change needed."

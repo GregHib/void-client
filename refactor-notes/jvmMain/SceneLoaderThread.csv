@@ -1,0 +1,9 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+method2204,getIdleStartTime,(none),(none),medium,"Trivial getter for aLong3742, which is set to the current nanotime (MinimapLineDrawer.aNanoTimer_5262.method446(1)) right before the worker thread goes idle/waits in method2207."
+run,run,(none),(none),high,"Runnable.run() override: loops calling method2207 while aBoolean3745 (the running flag) is true."
+method2205,stop,(none),(none),high,"Sets both the paused flag (aBoolean3750) and running flag (aBoolean3745) to false/false and notifies the monitor — permanently stops the worker thread's loop."
+method2206,setCacheIndexManager,cacheIndexManager: CacheIndexManager?,cacheIndexManager: CacheIndexManager?,high,"Unregisters this thread as a listener from the old CacheIndexManager (method2356(null,...)) and registers it on the new one (method2356(this,...))."
+method2207,runLoadCycle,(none),(none),medium,"Private main worker-loop body. Waits while paused/idle; while active, pulls a work item from aCacheIndexManager_3743 (method2362) which is either a SceneEntity (render it directly via method2387 if ready, else draw a placeholder name/font label) or a SceneModelBuilder used here purely as a level-number holder (anInt6394, 1-4) to refresh terrain textures for that plane via ActorEntity's terrain-tile/overlay-color-table arrays. Ends by idling again while paused."
+method2208,pause,(none),(none),high,"Sets aBoolean3750 (paused flag) = true and notifies the monitor; the main loop's outer while(aBoolean3750 && aBoolean3745) then idles."
+method2209,resume,(none),(none),high,"Sets aBoolean3750 (paused flag) = false and notifies the monitor, resuming the main processing loop in method2207."
+method2210,isIdle,(none),(none),medium,"Returns true if no CacheIndexManager is attached, or if the thread isn't currently busy (!aBoolean3744) and the manager reports readiness (method2360(70))."

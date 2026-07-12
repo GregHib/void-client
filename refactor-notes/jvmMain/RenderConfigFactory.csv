@@ -1,0 +1,4 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+method1631,createBestAvailableTimer,bool: Boolean,unused: Boolean,high,"Companion: tries to construct a NanoTimerJagex (native high-res timer), falls back to NanoTimerSystem, then NanoTimerHighPrecision on further failure - a classic 'best available timer implementation' factory. Nulls aVarbitDefLoader_2981 as a decoy side-effect when unused is true."
+method1632,clearCaches,i: Int,unused: Int,high,"Companion: nulls aJs5Archive_2978, aVarbitDefLoader_2981, and aLocDefinitionCache_2979 unconditionally; computes an unused dead local from `unused`."
+method1633,checkFlagBit,"bool: Boolean, i: Int, i_2_: Int","unused: Boolean, unusedGate: Int, flags: Int",medium,"Companion: returns true if bit 0x400 is set in `flags`. Recurses into itself once with different literals when `unused` is true - decoy self-call, result discarded."

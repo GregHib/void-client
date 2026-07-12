@@ -1,0 +1,2 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+<init>,<init>,arg0: hb?,peerContext: hb?,high,"Sole member: primary constructor forwarding straight to `IUnknown(arg0)`. Pure opaque native-handle wrapper mirroring real `IDirect3DVertexShader9`. Constructed only by `IDirect3DDevice.b(arg0: ByteArray?): IDirect3DVertexShader?` (CreateVertexShader wrapper, IDirect3DDevice.kt:167) and passed as an opaque token into `IDirect3DDevice.SetVertexShader(arg0: IDirect3DVertexShader?)`, used in D3dRenderDevice.kt:245. No other methods/fields to rename."

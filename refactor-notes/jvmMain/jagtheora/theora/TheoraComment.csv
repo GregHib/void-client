@@ -1,0 +1,3 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+clear,clear,,,high,"External native destructor overriding SimplePeer.clear(); maps to libtheora th_comment_clear(tc)."
+init,initComment,,,high,"Companion-object protected external native constructor, called unqualified from the instance init block (`init(); check(!this.b())`) to allocate the native th_comment peer; maps to libtheora th_comment_init(tc). Renamed to avoid confusion with Kotlin's init{} block keyword, matching the initInfo/initBlock/initGranulePos pattern used across sibling jagtheora classes."

@@ -1,0 +1,7 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+getParameter,getParameter,name: String?,name: String?,high,"Interface mirroring the classic java.applet.Applet contract (this codebase runs both as a browser applet and a standalone app via GameAppletFrame). Already idiomatic; kept as-is."
+getCodeBase,getCodeBase,(none),(none),high,"Standard Applet.getCodeBase() contract method. Already idiomatic."
+getDocumentBase,getDocumentBase,(none),(none),high,"Standard Applet.getDocumentBase() contract method. Already idiomatic."
+destroy,destroy,(none),(none),high,"Standard Applet.destroy() lifecycle contract method. Already idiomatic."
+getPulseComponent,getPulseComponent,(none),(none),medium,"Not part of the standard java.applet.Applet API - returns the AWT Component used as the applet's render target/parent (implemented by GameAppletFrame itself and by the real browser-plugin bridge implementation, used via JagGlToolkitFactory.anApplet1530!!.getPulseComponent() as Container in GameAppletFrame.method87). Name already reasonably descriptive of its role as the host container; kept as-is."
+showDocument,showDocument,"url: URL?, target: String?","url: URL?, target: String?",high,"Standard Applet.showDocument-style navigation hook (used by GameAppletFrame.method82/method89 to redirect the browser page on error/logout). Already idiomatic."

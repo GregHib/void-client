@@ -1,0 +1,2 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+releasePeer,releasePeer,arg0: Long,peerHandle: Long,high,"External override of PeerReference.releasePeer - the actual native call that decrements the COM object's refcount / releases the native IUnknown pointer held at peerHandle. Name already meaningful (kept), likely preserved verbatim because it must match a JNI-registered native symbol."

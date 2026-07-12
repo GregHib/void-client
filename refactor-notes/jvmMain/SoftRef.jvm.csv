@@ -1,0 +1,2 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+get,get,(none),(none),high,"actual/expect implementation of SoftRef<T> (see refactor-notes/commonMain/SoftRef.csv for the expect declaration and usage context). Trivial delegation to java.lang.ref.SoftReference.get(); no obfuscated params to rename. File is otherwise a minimal JVM actual-class shim (constructor + one method), effectively a pure wrapper - nothing else to analyze."

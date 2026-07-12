@@ -1,0 +1,6 @@
+current_name,recommended_name,current_params,recommended_params,confidence,notes
+<init>,<init>,"i: Int, i_1_: Int","width: Int, height: Int",medium,"Forwards straight to native r(i, i_1_). Class is 'NativeTextureHandle' per decompiler comment and implements Marker + Disposable — constructor almost certainly allocates a native texture of the given width/height."
+r,createTexture,"i: Int, i_0_: Int","width: Int, height: Int",medium,"Private native method called once from init; native texture-allocation call."
+va,releaseTextureNative,"l: Long, bool: Boolean","handle: Long, force: Boolean",medium,"Private native method backing w/dispose."
+w,dispose,bool: Boolean,force: Boolean,high,"Implements Disposable.w; calls va(nativeid, bool)."
+finalize,finalize,,,high,"Same RequestGate.method1947(0, this) native-cleanup pattern as t.kt/ya.kt in this batch."
