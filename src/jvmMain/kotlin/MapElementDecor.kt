@@ -3,8 +3,8 @@ import TypedRecordTable.Companion.method2178
 import HeightMapNoise.method2278
 import ConfigVarProgress.Companion.method2312
 import ConnectionStateType.Companion.method527
-import MapRegionLoader.Companion.method751
-import MapRegionLoader.Companion.method758
+import MapRegionLoaderStatics.method751
+import MapRegionLoaderStatics.method758
 import ChatMessageStream.Companion.method136
 import java.awt.Frame
 
@@ -280,16 +280,16 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         var_renderer.aa(i_16_ - 150, 2 + i_17_, LinkedListNodeStatics.anInt4290 * 3, 30, GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
                         NodeDequeStatics.aRSFont_3326!!.method2575((-116).toByte(), i_16_, MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884]!!.getRGB(), LocalizedText.aLocalizedText_3501!!.method2063(ChatCommandProcessor.anInt6967, i + 551), -1, i_15_ + i_17_)
                     } else {
-                        val i_18_ = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / MapRegionLoader.aFloat1247).toInt())
-                        val i_19_ = ((i_13_.toFloat() / MapRegionLoader.aFloat1247).toInt() + DebugOverlayRenderer.anInt3170)
-                        val i_20_ = ((i_12_.toFloat() / MapRegionLoader.aFloat1247).toInt() + WidgetActionEntry.anInt6992)
-                        StaticNoiseTexture.anInt8665 = DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / MapRegionLoader.aFloat1247).toInt()
-                        LocConfigModelBuilder.anInt4509 = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / MapRegionLoader.aFloat1247).toInt())
-                        val i_21_ = (DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / MapRegionLoader.aFloat1247).toInt())
-                        LoadProgressCounters.anInt2446 = ((2 * i_13_).toFloat() / MapRegionLoader.aFloat1247).toInt()
-                        SpriteStore.anInt370 = ((i_12_ * 2).toFloat() / MapRegionLoader.aFloat1247).toInt()
-                        method751(i_18_ + MapRegionLoader.anInt1266, i_19_ + MapRegionLoader.anInt1263, i_20_ - -MapRegionLoader.anInt1266, MapRegionLoader.anInt1263 + i_21_, i_11_, i_14_, i_12_ + i_11_, i_13_ + i_14_ + 1)
-                        MapRegionLoader.method748(var_renderer)
+                        val i_18_ = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt())
+                        val i_19_ = ((i_13_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt() + DebugOverlayRenderer.anInt3170)
+                        val i_20_ = ((i_12_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt() + WidgetActionEntry.anInt6992)
+                        StaticNoiseTexture.anInt8665 = DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt()
+                        LocConfigModelBuilder.anInt4509 = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt())
+                        val i_21_ = (DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt())
+                        LoadProgressCounters.anInt2446 = ((2 * i_13_).toFloat() / MapRegionLoaderStatics.aFloat1247).toInt()
+                        SpriteStore.anInt370 = ((i_12_ * 2).toFloat() / MapRegionLoaderStatics.aFloat1247).toInt()
+                        method751(i_18_ + MapRegionLoaderStatics.anInt1266, i_19_ + MapRegionLoaderStatics.anInt1263, i_20_ - -MapRegionLoaderStatics.anInt1266, MapRegionLoaderStatics.anInt1263 + i_21_, i_11_, i_14_, i_12_ + i_11_, i_13_ + i_14_ + 1)
+                        MapRegionLoaderStatics.method748(var_renderer)
                         if (i.toInt() != -7) method2462(63, -7, -14)
                         val class262 = method758(var_renderer)
                         method2312(-13084, 0, class262, 0, var_renderer)

@@ -1,6 +1,6 @@
 import MinimapFlagRenderer.method1083
 import GlFramebufferBlitter.Companion.method282
-import MapRegionLoader.Companion.method749
+import MapRegionLoaderStatics.method749
 
 /* Class348_Sub42_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -87,15 +87,15 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
 
         @JvmStatic
         fun method3177(i: Int, bool: Boolean) {
-            if (!bool || MapRegionLoader.aClass348_Sub42_Sub14_1243 == null) GroundDecorOptionState.anInt5976 = -1
-            else GroundDecorOptionState.anInt5976 = (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9628)
+            if (!bool || MapRegionLoaderStatics.aClass348_Sub42_Sub14_1243 == null) GroundDecorOptionState.anInt5976 = -1
+            else GroundDecorOptionState.anInt5976 = (MapRegionLoaderStatics.aClass348_Sub42_Sub14_1243!!.anInt9628)
             anInt9500++
-            MapRegionLoader.aClass348_Sub42_Sub14_1243 = null
+            MapRegionLoaderStatics.aClass348_Sub42_Sub14_1243 = null
             HeapDiagnosticsHolder.aWidgetComponent_2249 = null
             LinkedListNodeStatics.anInt4290 = 0
             RegionSceneLoader.aNodeDeque_3705 = null
             method749()
-            MapRegionLoader.aNodeDeque_1254!!.method1996(127)
+            MapRegionLoaderStatics.aNodeDeque_1254!!.method1996(127)
             GlBufferObject.aSystemFontGlyphs_4754 = null
             HeapDiagnosticsHolder.aSystemFontGlyphs_2252 = null
             TooltipComponentRenderer.aAbstractModelRenderer_4643 = null
@@ -103,18 +103,18 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             PingHostListHolder.aSystemFontGlyphs_2333 = null
             ModelVertexColorBuffer.aSystemFontGlyphs_6581 = null
             GlShaderObjectHandle.aSystemFontGlyphs_521 = null
-            MapRegionLoader.aSmoothingBuffer_1246 = null
+            MapRegionLoaderStatics.aSmoothingBuffer_1246 = null
             GlRectangleTexture.aSystemFontGlyphs_8644 = null
             ColourAdjustment.anInt859 = -1
             if (i <= -44) {
                 TextureMetadataProvider.anInt4609 = -1
                 WorldMapRenderer.aSystemFontGlyphs_4672 = null
-                if (MapRegionLoader.aConfigDefinitionLoader_1238 != null) {
-                    MapRegionLoader.aConfigDefinitionLoader_1238!!.method1219(7851)
-                    MapRegionLoader.aConfigDefinitionLoader_1238!!.method1220((-100).toByte(), 64, 128)
+                if (MapRegionLoaderStatics.aConfigDefinitionLoader_1238 != null) {
+                    MapRegionLoaderStatics.aConfigDefinitionLoader_1238!!.method1219(7851)
+                    MapRegionLoaderStatics.aConfigDefinitionLoader_1238!!.method1220((-100).toByte(), 64, 128)
                 }
-                if (MapRegionLoader.aTextureDefinitionLoader_1242 != null) MapRegionLoader.aTextureDefinitionLoader_1242!!.method1178(64, 1, 64)
-                if (MapRegionLoader.aSeqDefinitionCache_1245 != null) MapRegionLoader.aSeqDefinitionCache_1245!!.method2014(64, true)
+                if (MapRegionLoaderStatics.aTextureDefinitionLoader_1242 != null) MapRegionLoaderStatics.aTextureDefinitionLoader_1242!!.method1178(64, 1, 64)
+                if (MapRegionLoaderStatics.aSeqDefinitionCache_1245 != null) MapRegionLoaderStatics.aSeqDefinitionCache_1245!!.method2014(64, true)
                 RenderConfigFactory.aVarbitDefLoader_2981!!.method1444(64, -124)
             }
         }

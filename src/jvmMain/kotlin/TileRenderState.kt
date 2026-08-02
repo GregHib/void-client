@@ -47,7 +47,7 @@ class TileRenderState {
             var i_1_ = i_1_
             var i_3_ = i_3_
             anInt4231++
-            val f = MapRegionLoader.anInt1267.toFloat() / MapRegionLoader.anInt1259.toFloat()
+            val f = MapRegionLoaderStatics.anInt1267.toFloat() / MapRegionLoaderStatics.anInt1259.toFloat()
             var i_4_ = i
             var i_5_ = i_0_
             if (f < 1.0f) i_5_ = (f * i.toFloat()).toInt()
@@ -55,8 +55,8 @@ class TileRenderState {
             i_1_ -= (i + -i_4_) / 2
             i_3_ -= (i_0_ + -i_5_) / 2
             ColourAdjustment.anInt859 = -1
-            DebugOverlayRenderer.anInt3170 = -(MapRegionLoader.anInt1267 * i_3_ / i_5_) + MapRegionLoader.anInt1267
-            WidgetActionEntry.anInt6992 = MapRegionLoader.anInt1259 * i_1_ / i_4_
+            DebugOverlayRenderer.anInt3170 = -(MapRegionLoaderStatics.anInt1267 * i_3_ / i_5_) + MapRegionLoaderStatics.anInt1267
+            WidgetActionEntry.anInt6992 = MapRegionLoaderStatics.anInt1259 * i_1_ / i_4_
             TextureMetadataProvider.anInt4609 = -1
             val i_6_ = 50 / ((-12 - i_2_) / 40)
             MenuActionNode.method2811(false)

@@ -841,7 +841,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
             if (structConfig == null) return false
             if (i != -4) return false
             if (!structConfig.aBoolean574) return false
-            if (!structConfig.method373(MapRegionLoader.anVarResolver_1244!!, i xor 0x2d.inv())) return false
+            if (!structConfig.method373(MapRegionLoaderStatics.anVarResolver_1244!!, i xor 0x2d.inv())) return false
             if (HeapInfoRecord.aHashtable_4934!!.method3480(structConfig.anInt581.toLong(), i xor 0x1774) != null) return false
             return HardKeyedCacheEntryReference.aHashtable_10442!!.method3480(structConfig.anInt596.toLong(), i + -6004) == null
         }

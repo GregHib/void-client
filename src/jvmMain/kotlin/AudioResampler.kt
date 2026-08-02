@@ -135,7 +135,7 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
         fun method1269(i: Int): InterfaceComponentGroup? {
             if (i != -17096) return null
             anInt2168++
-            return MapRegionLoader.aClass348_Sub42_Sub14_1243
+            return MapRegionLoaderStatics.aClass348_Sub42_Sub14_1243
         }
 
         fun method1271(i: Int) {

@@ -985,8 +985,8 @@ class MidiSequencePlayer : AudioStreamNode {
         @JvmStatic
         fun method2839(i: Int, i_0_: Int, i_1_: Int) {
             anInt8890++
-            TextureMetadataProvider.anInt4609 = i - MapRegionLoader.anInt1266
-            ColourAdjustment.anInt859 = i_1_ + -MapRegionLoader.anInt1263
+            TextureMetadataProvider.anInt4609 = i - MapRegionLoaderStatics.anInt1266
+            ColourAdjustment.anInt859 = i_1_ + -MapRegionLoaderStatics.anInt1263
             if (i_0_ != -17) method2839(-112, -58, -95)
         }
 

@@ -1,7 +1,7 @@
 import WhirlpoolHash.Companion.method1166
 import TwoStateOptionState.Companion.method1842
 import WhirlpoolHash.Companion.method2057
-import MapRegionLoader.Companion.method751
+import MapRegionLoaderStatics.method751
 import kotlin.math.max
 import kotlin.math.min
 
@@ -775,7 +775,7 @@ class CollisionMap {
                     var_renderer!!.KA(i_39_, i_41_, i_40_ + i_39_, i_41_ + i)
                     var_renderer.method3675(i_40_, (-125).toByte(), i_39_, i_41_, i, -16777216)
                     if (LinkedListNodeStatics.anInt4290 >= 100) {
-                        val f = (MapRegionLoader.anInt1267.toFloat() / MapRegionLoader.anInt1259.toFloat())
+                        val f = (MapRegionLoaderStatics.anInt1267.toFloat() / MapRegionLoaderStatics.anInt1259.toFloat())
                         var i_42_ = i_40_
                         var i_43_ = i
                         if (!(f < 1.0f)) i_42_ = (i.toFloat() / f).toInt()
@@ -783,16 +783,16 @@ class CollisionMap {
                         i_41_ += (-i_43_ + i) / 2
                         i_39_ += (i_40_ + -i_42_) / 2
                         if (TooltipComponentRenderer.aAbstractModelRenderer_4643 == null || i_40_ != TooltipComponentRenderer.aAbstractModelRenderer_4643!!.method971() || (TooltipComponentRenderer.aAbstractModelRenderer_4643!!.method969() != i)) {
-                            method751(MapRegionLoader.anInt1266, (MapRegionLoader.anInt1267 + MapRegionLoader.anInt1263), (MapRegionLoader.anInt1266 - -MapRegionLoader.anInt1259), MapRegionLoader.anInt1263, i_39_, i_41_, i_42_ + i_39_, i_43_ + i_41_)
-                            MapRegionLoader.method748(var_renderer)
+                            method751(MapRegionLoaderStatics.anInt1266, (MapRegionLoaderStatics.anInt1267 + MapRegionLoaderStatics.anInt1263), (MapRegionLoaderStatics.anInt1266 - -MapRegionLoaderStatics.anInt1259), MapRegionLoaderStatics.anInt1263, i_39_, i_41_, i_42_ + i_39_, i_43_ + i_41_)
+                            MapRegionLoaderStatics.method748(var_renderer)
                             TooltipComponentRenderer.aAbstractModelRenderer_4643 = var_renderer.method3683(i_39_, i_41_, i_42_, i_43_, false)
                         }
                         TooltipComponentRenderer.aAbstractModelRenderer_4643!!.method974(i_39_, i_41_)
-                        val i_44_ = SpriteStore.anInt370 * i_42_ / MapRegionLoader.anInt1259
-                        val i_45_ = i_43_ * LoadProgressCounters.anInt2446 / MapRegionLoader.anInt1267
-                        val i_46_ = i_39_ - -(i_42_ * LocConfigModelBuilder.anInt4509 / MapRegionLoader.anInt1259)
+                        val i_44_ = SpriteStore.anInt370 * i_42_ / MapRegionLoaderStatics.anInt1259
+                        val i_45_ = i_43_ * LoadProgressCounters.anInt2446 / MapRegionLoaderStatics.anInt1267
+                        val i_46_ = i_39_ - -(i_42_ * LocConfigModelBuilder.anInt4509 / MapRegionLoaderStatics.anInt1259)
                         if (bool != true) method3498(44, null, -27, -91, true, -26)
-                        val i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * StaticNoiseTexture.anInt8665 / MapRegionLoader.anInt1267)))
+                        val i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * StaticNoiseTexture.anInt8665 / MapRegionLoaderStatics.anInt1267)))
                         var i_48_ = -1996554240
                         if (GlRectangleTexture.aSceneProjector_8638 == Client.aSceneProjector_10434) i_48_ = -1996488705
                         var_renderer.aa(i_46_, i_47_, i_44_, i_45_, i_48_, 1)
@@ -801,21 +801,21 @@ class CollisionMap {
                         val i_49_: Int
                         if (ClientLoadStateMachine.anInt2173 <= 50) i_49_ = ClientLoadStateMachine.anInt2173 * 5
                         else i_49_ = -(5 * ClientLoadStateMachine.anInt2173) + 500
-                        var class348_sub21 = (MapRegionLoader.aNodeDeque_1254!!.method1995(4) as CameraSplineNode?)
+                        var class348_sub21 = (MapRegionLoaderStatics.aNodeDeque_1254!!.method1995(4) as CameraSplineNode?)
                         while (class348_sub21 != null) {
-                            val class42 = (MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 71.toByte()))
+                            val class42 = (MapRegionLoaderStatics.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 71.toByte()))
                             if (FlipTextureNode.method589(class42, -4)) {
                                 if (HslAdjustTextureNode.anInt9399 == (class348_sub21.anInt6847)) {
-                                    val i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / MapRegionLoader.anInt1259))
-                                    val i_51_ = (((MapRegionLoader.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / MapRegionLoader.anInt1267) + i_41_)
+                                    val i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / MapRegionLoaderStatics.anInt1259))
+                                    val i_51_ = (((MapRegionLoaderStatics.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / MapRegionLoaderStatics.anInt1267) + i_41_)
                                     var_renderer.method3675(4, (-125).toByte(), i_50_ - 2, -2 + i_51_, 4, (i_49_ shl 24 or 0xffff00))
                                 } else if (SkeletalAnimFrameLoader.anInt481 != -1 && (class42!!.anInt596 == SkeletalAnimFrameLoader.anInt481)) {
-                                    val i_52_ = (i_39_ - -((class348_sub21.anInt6852) * i_42_ / MapRegionLoader.anInt1259))
-                                    val i_53_ = i_41_ - -(i_43_ * (MapRegionLoader.anInt1267 + -(class348_sub21.anInt6851)) / MapRegionLoader.anInt1267)
+                                    val i_52_ = (i_39_ - -((class348_sub21.anInt6852) * i_42_ / MapRegionLoaderStatics.anInt1259))
+                                    val i_53_ = i_41_ - -(i_43_ * (MapRegionLoaderStatics.anInt1267 + -(class348_sub21.anInt6851)) / MapRegionLoaderStatics.anInt1267)
                                     var_renderer.method3675(4, (-125).toByte(), i_52_ + -2, -2 + i_53_, 4, (i_49_ shl 24 or 0xffff00))
                                 }
                             }
-                            class348_sub21 = MapRegionLoader.aNodeDeque_1254!!.method1990(126.toByte()) as CameraSplineNode?
+                            class348_sub21 = MapRegionLoaderStatics.aNodeDeque_1254!!.method1990(126.toByte()) as CameraSplineNode?
                         }
                     }
                 } catch (runtimeexception: RuntimeException) {

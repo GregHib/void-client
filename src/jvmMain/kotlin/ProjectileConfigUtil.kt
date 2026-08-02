@@ -39,11 +39,11 @@ object ProjectileConfigUtil {
             if (i != 50) {
                 if (i != 75) {
                     if (i != 100) {
-                        if (i == 200) MapRegionLoader.aFloat1249 = 16.0f
-                    } else MapRegionLoader.aFloat1249 = 8.0f
-                } else MapRegionLoader.aFloat1249 = 6.0f
-            } else MapRegionLoader.aFloat1249 = 4.0f
-        } else MapRegionLoader.aFloat1249 = 3.0f
+                        if (i == 200) MapRegionLoaderStatics.aFloat1249 = 16.0f
+                    } else MapRegionLoaderStatics.aFloat1249 = 8.0f
+                } else MapRegionLoaderStatics.aFloat1249 = 6.0f
+            } else MapRegionLoaderStatics.aFloat1249 = 4.0f
+        } else MapRegionLoaderStatics.aFloat1249 = 3.0f
         anInt397++
         ColourAdjustment.anInt859 = -1
         if (i_0_.toInt() != 56) anInt394 = 32

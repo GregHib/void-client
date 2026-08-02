@@ -14,7 +14,7 @@ import GameClock.method599
 import GraphicsOptionState.Companion.aByteArray3144
 import CacheArchiveIndexLoader.Companion.aItemDefinitionLoader_3147
 import WorldMapScene.Companion.method1709
-import MapRegionLoader.Companion.method752
+import MapRegionLoaderStatics.method752
 import NativeRenderer.Companion.method3886
 import NativeRenderer.Companion.method3896
 import jagex3.jagmisc.jagmisc.init

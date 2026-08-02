@@ -66,13 +66,13 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
         @JvmStatic
         fun method199(i: Int): CameraSplineNode? {
             anInt8369++
-            if (MapRegionLoader.aNodeDeque_1254 == null || RenderNodeStatics.aWidgetRedrawTracker_9716 == null) return null
-            RenderNodeStatics.aWidgetRedrawTracker_9716!!.method2328(MapRegionLoader.aNodeDeque_1254!!, 75)
+            if (MapRegionLoaderStatics.aNodeDeque_1254 == null || RenderNodeStatics.aWidgetRedrawTracker_9716 == null) return null
+            RenderNodeStatics.aWidgetRedrawTracker_9716!!.method2328(MapRegionLoaderStatics.aNodeDeque_1254!!, 75)
             val class348_sub21 = RenderNodeStatics.aWidgetRedrawTracker_9716!!.method2327((-53).toByte()) as CameraSplineNode?
             if (class348_sub21 == null) return null
-            val class42 = MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 50.toByte())
+            val class42 = MapRegionLoaderStatics.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 50.toByte())
             if (i != 1) anInt8370 = -75
-            if (class42 != null && class42.aBoolean609 && class42.method373(MapRegionLoader.anVarResolver_1244!!, 98)) return class348_sub21
+            if (class42 != null && class42.aBoolean609 && class42.method373(MapRegionLoaderStatics.anVarResolver_1244!!, 98)) return class348_sub21
             return method3479(-1)
         }
 
@@ -190,11 +190,11 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
         var anInt4378: Int = 0
         fun method3479(i: Int): CameraSplineNode? {
             anInt4378++
-            if (MapRegionLoader.aNodeDeque_1254 == null || RenderNodeStatics.aWidgetRedrawTracker_9716 == null) return null
+            if (MapRegionLoaderStatics.aNodeDeque_1254 == null || RenderNodeStatics.aWidgetRedrawTracker_9716 == null) return null
             var class348_sub21 = RenderNodeStatics.aWidgetRedrawTracker_9716!!.method2329(10) as CameraSplineNode?
             while (class348_sub21 != null) {
-                val class42 = MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 92.toByte())
-                if (class42 != null && class42.aBoolean609 && class42.method373(MapRegionLoader.anVarResolver_1244!!, 127)) return class348_sub21
+                val class42 = MapRegionLoaderStatics.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 92.toByte())
+                if (class42 != null && class42.aBoolean609 && class42.method373(MapRegionLoaderStatics.anVarResolver_1244!!, 127)) return class348_sub21
                 class348_sub21 = RenderNodeStatics.aWidgetRedrawTracker_9716!!.method2329(i xor 0xa.inv()) as CameraSplineNode?
             }
             return null

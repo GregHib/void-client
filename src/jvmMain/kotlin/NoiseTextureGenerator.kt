@@ -259,21 +259,21 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
                     }
                     var i_65_ = i_56_ / 2 + class348_sub21.anInt6853
                     var i_66_ = class348_sub21.anInt6855
-                    if (MapRegionLoader.anInt1272 - -i_56_ <= i_58_) {
-                        if (i_58_ > -i_56_ + MapRegionLoader.anInt1276) {
-                            i_58_ = -i_56_ + MapRegionLoader.anInt1276
-                            i_65_ = (-(i_56_ / 2) + MapRegionLoader.anInt1276 + (-i_57_ + -(i_61_ / 2) - 5))
+                    if (MapRegionLoaderStatics.anInt1272 - -i_56_ <= i_58_) {
+                        if (i_58_ > -i_56_ + MapRegionLoaderStatics.anInt1276) {
+                            i_58_ = -i_56_ + MapRegionLoaderStatics.anInt1276
+                            i_65_ = (-(i_56_ / 2) + MapRegionLoaderStatics.anInt1276 + (-i_57_ + -(i_61_ / 2) - 5))
                         }
                     } else {
-                        i_58_ = MapRegionLoader.anInt1272
-                        i_65_ = i_61_ / 2 + i_57_ + i_56_ / 2 + (MapRegionLoader.anInt1272 + 5)
+                        i_58_ = MapRegionLoaderStatics.anInt1272
+                        i_65_ = i_61_ / 2 + i_57_ + i_56_ / 2 + (MapRegionLoaderStatics.anInt1272 + 5)
                     }
-                    if (i_59_ < i_56_ + MapRegionLoader.anInt1262) {
-                        i_59_ = MapRegionLoader.anInt1262
-                        i_66_ = i_56_ / 2 + i_57_ + MapRegionLoader.anInt1262
-                    } else if (i_59_ > MapRegionLoader.anInt1268 + -i_56_) {
-                        i_59_ = -i_56_ + MapRegionLoader.anInt1268
-                        i_66_ = -(i_56_ / 2) + MapRegionLoader.anInt1268 - (i_57_ - -i_62_)
+                    if (i_59_ < i_56_ + MapRegionLoaderStatics.anInt1262) {
+                        i_59_ = MapRegionLoaderStatics.anInt1262
+                        i_66_ = i_56_ / 2 + i_57_ + MapRegionLoaderStatics.anInt1262
+                    } else if (i_59_ > MapRegionLoaderStatics.anInt1268 + -i_56_) {
+                        i_59_ = -i_56_ + MapRegionLoaderStatics.anInt1268
+                        i_66_ = -(i_56_ / 2) + MapRegionLoaderStatics.anInt1268 - (i_57_ - -i_62_)
                     }
                     val i_67_ = (32767.0 * (atan2((i_58_ - (class348_sub21.anInt6853)).toDouble(), (-(class348_sub21.anInt6855) + i_59_).toDouble()) / 3.141592653589793)).toInt() and 0xffff
                     class105.method981(i_56_.toFloat() / 2.0f + i_58_.toFloat(), i_56_.toFloat() / 2.0f + i_59_.toFloat(), 4096, i_67_)

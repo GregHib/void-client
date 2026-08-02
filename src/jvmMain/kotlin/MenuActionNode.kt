@@ -34,8 +34,8 @@ class MenuActionNode internal constructor(var anInt6773: Int, var aClass55_Sub1_
                 TextureMetadataProvider.anInt4609 = -1
                 ColourAdjustment.anInt859 = -1
             }
-            if (WidgetActionEntry.Companion.anInt6992 > MapRegionLoader.anInt1259) {
-                WidgetActionEntry.Companion.anInt6992 = MapRegionLoader.anInt1259
+            if (WidgetActionEntry.Companion.anInt6992 > MapRegionLoaderStatics.anInt1259) {
+                WidgetActionEntry.Companion.anInt6992 = MapRegionLoaderStatics.anInt1259
                 ColourAdjustment.anInt859 = -1
                 TextureMetadataProvider.anInt4609 = -1
             }
@@ -44,8 +44,8 @@ class MenuActionNode internal constructor(var anInt6773: Int, var aClass55_Sub1_
                 DebugOverlayRenderer.anInt3170 = 0
                 TextureMetadataProvider.anInt4609 = -1
             }
-            if (MapRegionLoader.anInt1267 < DebugOverlayRenderer.anInt3170) {
-                DebugOverlayRenderer.anInt3170 = MapRegionLoader.anInt1267
+            if (MapRegionLoaderStatics.anInt1267 < DebugOverlayRenderer.anInt3170) {
+                DebugOverlayRenderer.anInt3170 = MapRegionLoaderStatics.anInt1267
                 TextureMetadataProvider.anInt4609 = -1
                 ColourAdjustment.anInt859 = -1
             }

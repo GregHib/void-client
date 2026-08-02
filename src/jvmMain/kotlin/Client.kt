@@ -452,7 +452,7 @@ import TrigLookupTables.Companion.method725
 import PlayerSequenceSelector.method728
 import PlayerSequenceSelector.method729
 import HintArrowRenderer.Companion.method731
-import MapRegionLoader.Companion.method746
+import MapRegionLoaderStatics.method746
 import IsaacCipher.Companion.method782
 import BufferedRandomAccessFile.Companion.method786
 import NpcType.Companion.method804
@@ -2203,10 +2203,10 @@ class Client : GameAppletFrame() {
                                         HeapDiagnosticsHolder.aWidgetComponent_2249 = class46
                                         if (bool) ParticleEmitterFactoryStatics.aBoolean3174 = true
                                         if (bool_54_) {
-                                            val i_70_ = ((i_51_ + (class348_sub45!!.method3308((-127).toByte())) - i_43_ - ((class46.anInt709) / 2)).toDouble() * 2.0 / (MapRegionLoader.aFloat1247).toDouble()).toInt()
-                                            val i_71_ = -((i_52_ + (class348_sub45.method3311(-111)) - i_44_ - ((class46.anInt789) / 2)).toDouble() * 2.0 / (MapRegionLoader.aFloat1247).toDouble()).toInt()
-                                            val i_72_ = (WidgetActionEntry.anInt6992 + i_70_ + MapRegionLoader.anInt1266)
-                                            val i_73_ = (DebugOverlayRenderer.anInt3170 + i_71_ + MapRegionLoader.anInt1263)
+                                            val i_70_ = ((i_51_ + (class348_sub45!!.method3308((-127).toByte())) - i_43_ - ((class46.anInt709) / 2)).toDouble() * 2.0 / (MapRegionLoaderStatics.aFloat1247).toDouble()).toInt()
+                                            val i_71_ = -((i_52_ + (class348_sub45.method3311(-111)) - i_44_ - ((class46.anInt789) / 2)).toDouble() * 2.0 / (MapRegionLoaderStatics.aFloat1247).toDouble()).toInt()
+                                            val i_72_ = (WidgetActionEntry.anInt6992 + i_70_ + MapRegionLoaderStatics.anInt1266)
+                                            val i_73_ = (DebugOverlayRenderer.anInt3170 + i_71_ + MapRegionLoaderStatics.anInt1263)
                                             val class348_sub42_sub14 = method1269(-17096)
                                             if (class348_sub42_sub14 != null) {
                                                 val `is`: IntArray? = IntArray(3)
@@ -2234,8 +2234,8 @@ class Client : GameAppletFrame() {
                                             }
                                             if (HashLinkedListNodeStatics.anInt7059 == 2) {
                                                 SoundBankPatch.aBoolean6788 = true
-                                                OpenGlModel.method689((-59).toByte(), (ParticleDefLoader.anInt2464 + (((SceneEntityModel.anInt6411) - (GlTexture1D.aInputTracker_8552!!.method3597(true))).toDouble() * 2.0 / (MapRegionLoader.aFloat1249).toDouble()).toInt()))
-                                                method2170((OpenGlTerrainTile.anInt8237 - (((ModelDefinitionCache.anInt2872) - (GlTexture1D.aInputTracker_8552!!.method3594(83.toByte()))).toDouble() * 2.0 / (MapRegionLoader.aFloat1249).toDouble()).toInt()), 3.toByte())
+                                                OpenGlModel.method689((-59).toByte(), (ParticleDefLoader.anInt2464 + (((SceneEntityModel.anInt6411) - (GlTexture1D.aInputTracker_8552!!.method3597(true))).toDouble() * 2.0 / (MapRegionLoaderStatics.aFloat1249).toDouble()).toInt()))
+                                                method2170((OpenGlTerrainTile.anInt8237 - (((ModelDefinitionCache.anInt2872) - (GlTexture1D.aInputTracker_8552!!.method3594(83.toByte()))).toDouble() * 2.0 / (MapRegionLoaderStatics.aFloat1249).toDouble()).toInt()), 3.toByte())
                                             }
                                         } else {
                                             if (HashLinkedListNodeStatics.anInt7059 > 0 && !SoundBankPatch.aBoolean6788) {
