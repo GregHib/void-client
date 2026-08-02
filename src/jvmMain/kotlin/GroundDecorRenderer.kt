@@ -1,4 +1,4 @@
-import CircleRasterizer.Companion.method2253
+import CircleRasterizerObject.method2253
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.min
 

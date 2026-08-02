@@ -134,8 +134,8 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
                         }
                         if (GlWaterRenderPass.anInt7297 == 4) {
                             if (Client.aAbstractGameSocket_9165!!.method1705(1, 104)) {
-                                Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-116).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                                val i_11_ = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
+                                Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-116).toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                                val i_11_ = 0xff and (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                                 RenderableEntry.anInt4337 = i_11_
                                 GlWaterRenderPass.anInt7297 = 0
                                 Client.aAbstractGameSocket_9165!!.method1700(36.toByte())

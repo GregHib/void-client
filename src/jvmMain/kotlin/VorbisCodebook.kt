@@ -91,7 +91,7 @@ class VorbisCodebook {
             var i = 0
             var i_20_ = VorbisAudioDecoder.method2789(5) + 1
             while (i < anInt4518) {
-                val i_21_ = VorbisAudioDecoder.method2789(CircleRasterizer.method2253(anInt4518 - i, 126))
+                val i_21_ = VorbisAudioDecoder.method2789(CircleRasterizerObject.method2253(anInt4518 - i, 126))
                 for (i_22_ in 0..<i_21_) anIntArray4516[i++] = i_20_
                 i_20_++
             }

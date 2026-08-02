@@ -1,4 +1,4 @@
-import CircleRasterizer.Companion.method2253
+import CircleRasterizerObject.method2253
 import jagex3.jagmisc.jagmisc.ping
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

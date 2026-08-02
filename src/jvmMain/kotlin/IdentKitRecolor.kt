@@ -78,8 +78,8 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
         @JvmStatic
         fun method204(i: Int) {
             anInt155++
-            while (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3415(-62, RadialTextureNode.anInt9341) >= 15) {
-                val i_18_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 15)
+            while (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.method3415(-62, RadialTextureNode.anInt9341) >= 15) {
+                val i_18_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 15)
                 if (i_18_ == 32767) break
                 var bool = false
                 var class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_18_.toLong(), -6008) as NpcReference?)
@@ -95,23 +95,23 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                 Client.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_18_
                 npc.anInt10306 = NullOggStream.anInt9041
                 if ((npc.aNpcType_10505) != null && npc.aNpcType_10505!!.method793(0)) method181(true, npc)
-                val i_19_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 2)
-                val i_20_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
-                var i_21_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 5)
+                val i_19_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 2)
+                val i_20_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
+                var i_21_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 5)
                 if (i_21_ > 15) i_21_ -= 32
-                var i_22_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 5)
+                var i_22_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 5)
                 if (i_22_ > 15) i_22_ -= 32
-                val i_23_ = 0x3d01 and (4 + CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 3) shl 11)
-                val i_24_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
+                val i_23_ = 0x3d01 and (4 + CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 3) shl 11)
+                val i_24_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                 if (i_24_ == 1) MinimapRectClipper.anIntArray224!![AbstractCameraTransformStatics.anInt1597++] = i_18_
-                npc.method2448((MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 14), -1)), i xor 0x2b297815)
+                npc.method2448((MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 14), -1)), i xor 0x2b297815)
                 npc.method2434(111.toByte(), npc.aNpcType_10505!!.anInt1399)
                 npc.anInt10310 = (npc.aNpcType_10505!!.anInt1329) shl 3
                 if (bool) npc.method2435((-108).toByte(), i_23_, true)
                 npc.method2444((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) - -i_21_, i_20_ == 1, (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + i_22_, i + 724138125, npc.method2436(50.toByte()), i_19_)
                 if (npc.aNpcType_10505!!.method793(0)) IdentKitRecolor.method1614(979190089, npc, npc.plane.toInt(), (npc.anIntArray10317!![0]), (npc.anIntArray10320!![0]), null, null, 0)
             }
-            if (i == -724138005) CircleRasterizer.aClass348_Sub49_Sub2_3813!!.stopBitAccess(false)
+            if (i == -724138005) CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.stopBitAccess(false)
         }
 
         fun method205(i: Int, i_25_: Int, i_26_: Int, string: String?, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int) {

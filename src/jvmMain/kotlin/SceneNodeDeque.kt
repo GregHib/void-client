@@ -191,8 +191,8 @@ class SceneNodeDeque {
                     }
                     if (NpcDefinition.anInt2955 == 3) {
                         if (!Client.aAbstractGameSocket_9165!!.method1705(1, 107)) return
-                        Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-118).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                        val i_3_ = ((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
+                        Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-118).toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        val i_3_ = ((CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
                         if (i_3_ != 0) {
                             NpcDefinition.anInt2955 = 0
                             GlRectangleTexture.method254(i_3_, (-113).toByte())
@@ -201,7 +201,7 @@ class SceneNodeDeque {
                             method1215(3.toByte())
                             return
                         }
-                        CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+                        CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                         val class348_sub49 = ByteBuffer(518)
                         val `is` = IntArray(4)
                         `is`[0] = (Math.random() * 9.9999999E7).toInt()
@@ -274,13 +274,13 @@ class SceneNodeDeque {
                         method1802(0)
                         TheoraVideoStream.aIsaacCipher_9029 = IsaacCipher(`is`)
                         for (i_10_ in 0..3) `is`[i_10_] += 50
-                        CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3406(-111, `is`)
+                        CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.method3406(-111, `is`)
                         NpcDefinition.anInt2955 = 4
                     }
                     if (NpcDefinition.anInt2955 == 4) {
                         if (!Client.aAbstractGameSocket_9165!!.method1705(1, 94)) return
-                        Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-117).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                        val i_11_ = ((CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
+                        Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-117).toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        val i_11_ = ((CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
                         if (i_11_ != 21) {
                             if (i_11_ == 29) NpcDefinition.anInt2955 = 13
                             else {
@@ -324,8 +324,8 @@ class SceneNodeDeque {
                         NpcDefinition.anInt2955 = 4
                     } else if (NpcDefinition.anInt2955 == 7) {
                         if (Client.aAbstractGameSocket_9165!!.method1705(1, 118)) {
-                            Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-109).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                            val i_12_ = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
+                            Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-109).toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            val i_12_ = 0xff and (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             NpcDefinition.anInt2955 = 0
                             SceneTileBounds.anInt1121 = (3 + i_12_) * 60
                             GlRectangleTexture.method254(21, (-95).toByte())
@@ -335,9 +335,9 @@ class SceneNodeDeque {
                         }
                     } else if (NpcDefinition.anInt2955 == 13) {
                         if (Client.aAbstractGameSocket_9165!!.method1705(1, 102)) {
-                            Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-128).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-128).toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             NpcDefinition.anInt2955 = 0
-                            ConfigShortValueNode.anInt9541 = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
+                            ConfigShortValueNode.anInt9541 = 0xff and (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             GlRectangleTexture.method254(29, (-97).toByte())
                             Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
                             Client.aAbstractGameSocket_9165 = null
@@ -345,13 +345,13 @@ class SceneNodeDeque {
                         }
                     } else if (NpcDefinition.anInt2955 == 8) {
                         if (Client.aAbstractGameSocket_9165!!.method1705(1, 107)) {
-                            Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-107).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                            SceneObjectSpawner.Companion.anInt1288 = 0xff and (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
+                            Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-107).toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            SceneObjectSpawner.Companion.anInt1288 = 0xff and (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             NpcDefinition.anInt2955 = 9
                         }
                     } else {
                         if (NpcDefinition.anInt2955 == 9) {
-                            val class348_sub49_sub2 = CircleRasterizer.aClass348_Sub49_Sub2_3813
+                            val class348_sub49_sub2 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813
                             if (BloomGraphicsOptionState.anInt5969 == 2) {
                                 if (!Client.aAbstractGameSocket_9165!!.method1705(SceneObjectSpawner.Companion.anInt1288, 93)) return
                                 Client.aAbstractGameSocket_9165!!.method1701(SceneObjectSpawner.Companion.anInt1288, 0, 60.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
@@ -442,11 +442,11 @@ class SceneNodeDeque {
                         }
                         if (NpcDefinition.anInt2955 == 11) {
                             if (!Client.aAbstractGameSocket_9165!!.method1705(3, 94)) return
-                            Client.aAbstractGameSocket_9165!!.method1701(3, 0, 11.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            Client.aAbstractGameSocket_9165!!.method1701(3, 0, 11.toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             NpcDefinition.anInt2955 = 12
                         }
                         if (NpcDefinition.anInt2955 == 12) {
-                            val class348_sub49_sub2 = CircleRasterizer.aClass348_Sub49_Sub2_3813
+                            val class348_sub49_sub2 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813
                             class348_sub49_sub2!!.anInt7197 = 0
                             if (class348_sub49_sub2.method3404(-1510)) {
                                 if (!Client.aAbstractGameSocket_9165!!.method1705(1, 110)) return
@@ -458,17 +458,17 @@ class SceneNodeDeque {
                         }
                         if (NpcDefinition.anInt2955 == 10) {
                             if (Client.aAbstractGameSocket_9165!!.method1705(RadialTextureNode.anInt9341, 96)) {
-                                Client.aAbstractGameSocket_9165!!.method1701(RadialTextureNode.anInt9341, 0, 28.toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                                CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+                                Client.aAbstractGameSocket_9165!!.method1701(RadialTextureNode.anInt9341, 0, 28.toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                                CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                                 NpcDefinition.anInt2955 = 0
                                 val i_13_ = RadialTextureNode.anInt9341
                                 GlRectangleTexture.method254(2, (-124).toByte())
                                 FrameStatsReset.method1135(0)
-                                SimpleToggleOptionState.method1741(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 118.toByte())
+                                SimpleToggleOptionState.method1741(CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                 Renderer.anInt4581 = -1
                                 if (InboundPacketHeader.aInboundPacketHeader_6584 != InboundPacketHeader.aInboundPacketHeader_304) method3120(-92)
                                 else RegionMapDecoder.method853(99.toByte())
-                                if (i_13_ != CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("lswp pos:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_13_)
+                                if (i_13_ != CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("lswp pos:" + (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_13_)
                                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                             }
                         } else {
@@ -476,19 +476,19 @@ class SceneNodeDeque {
                             if (NpcDefinition.anInt2955 == 14) {
                                 if (RadialTextureNode.anInt9341 == -2) {
                                     if (!Client.aAbstractGameSocket_9165!!.method1705(2, 106)) return
-                                    Client.aAbstractGameSocket_9165!!.method1701(2, 0, (-128).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                                    CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                                    RadialTextureNode.anInt9341 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                                    Client.aAbstractGameSocket_9165!!.method1701(2, 0, (-128).toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                                    CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+                                    RadialTextureNode.anInt9341 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                                 }
                                 if (Client.aAbstractGameSocket_9165!!.method1705(RadialTextureNode.anInt9341, 117)) {
-                                    Client.aAbstractGameSocket_9165!!.method1701(RadialTextureNode.anInt9341, 0, (-104).toByte(), (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                                    CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+                                    Client.aAbstractGameSocket_9165!!.method1701(RadialTextureNode.anInt9341, 0, (-104).toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                                    CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                                     val i_15_ = RadialTextureNode.anInt9341
                                     NpcDefinition.anInt2955 = 0
                                     GlRectangleTexture.method254(15, (-120).toByte())
                                     WidgetRedrawTracker.method2330(86.toByte())
-                                    SimpleToggleOptionState.method1741(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 118.toByte())
-                                    if (i_15_ != (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197)) throw RuntimeException("lswpr pos:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_15_)
+                                    SimpleToggleOptionState.method1741(CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!, 118.toByte())
+                                    if (i_15_ != (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197)) throw RuntimeException("lswpr pos:" + (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_15_)
                                     InboundPacketHeader.aInboundPacketHeader_6584 = null
                                 }
                             }

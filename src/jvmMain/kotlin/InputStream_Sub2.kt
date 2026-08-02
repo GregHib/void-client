@@ -32,23 +32,23 @@ class InputStream_Sub2 : InputStream() {
             try {
                 anInt81++
                 if (rgbColorPalette == NamedIdEntry.aRgbColorPalette_6891) {
-                    val i_0_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-124).toByte())
+                    val i_0_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-124).toByte())
                     val i_1_ = i_0_ shr 2
                     val i_2_ = 0x3 and i_0_
                     val i_3_ = AnimationFrameTable.anIntArray487!![i_1_]
-                    val i_4_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    val i_5_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(65.toByte())
+                    val i_4_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    val i_5_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteAdd(65.toByte())
                     val i_6_ = BufferedMessageQueue.anInt3581 + (0x7 and (i_5_ shr 4))
                     val i_7_ = FileExistsCondition.anInt4786 - -(i_5_ and 0x7)
                     if (NpcEntityUpdater.method2112(126, WidgetRedrawTracker.anInt3931) || (i_6_ >= 0 && i_7_ >= 0 && GlCubemapLightPass.anInt7319 > i_6_ && (i_7_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_7_, -1, i_1_, i_3_, i_2_, i_4_, 121.toByte(), i_6_)
                 } else if (rgbColorPalette == RgbColorPalette.aRgbColorPalette_9475) {
-                    val i_8_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
+                    val i_8_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_9_ = BufferedMessageQueue.anInt3581 + ((0x7a and i_8_) shr 4)
                     val i_10_ = FileExistsCondition.anInt4786 - -(i_8_ and 0x7)
-                    val i_11_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    val i_12_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                    val i_13_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    val i_14_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
+                    val i_11_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    val i_12_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                    val i_13_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    val i_14_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
                     if (i_9_ >= 0 && i_10_ >= 0 && i_9_ < GlCubemapLightPass.anInt7319 && RangeThresholdTextureNode.anInt9109 > i_10_) {
                         val i_15_ = 512 * i_9_ - -256
                         val i_16_ = 256 + 512 * i_10_
@@ -58,17 +58,17 @@ class InputStream_Sub2 : InputStream() {
                         OpenGlRenderNode.aNodeDeque_10492!!.method1999(ChatScriptListNode(class318_sub1_sub3_sub4), -20180)
                     }
                 } else if (rgbColorPalette == NpcUpdateProcessor.aRgbColorPalette_1519) {
-                    val i_18_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                    val i_18_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_19_ = BufferedMessageQueue.anInt3581 - -(i_18_ shr 4 and 0x7)
                     val i_20_ = (0x7 and i_18_) + FileExistsCondition.anInt4786
-                    var i_21_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    var i_21_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if (i_21_ == 65535) i_21_ = -1
-                    val i_22_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
+                    val i_22_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_23_ = i_22_ shr 4 and 0xf
                     val i_24_ = 0x7 and i_22_
-                    val i_25_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                    val i_26_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                    val i_27_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
+                    val i_25_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                    val i_26_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                    val i_27_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
                     if (i_19_ >= 0 && i_20_ >= 0 && i_19_ < GlCubemapLightPass.anInt7319 && (i_20_ < RangeThresholdTextureNode.anInt9109)) {
                         val i_28_ = 1 + i_23_
                         if (((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) >= i_19_ + -i_28_) && i_28_ + i_19_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) && ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) >= -i_28_ + i_20_) && i_20_ + i_28_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) RangedGraphicsOptionState.method1760(
@@ -83,57 +83,57 @@ class InputStream_Sub2 : InputStream() {
                         )
                     }
                 } else if (rgbColorPalette == InputStream_Sub2.aRgbColorPalette_6977) {
-                    val i_29_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    val i_30_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                    val i_29_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    val i_30_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_29_).method478(i_30_, -31076)
                 } else if (SynthVoiceGroup.aRgbColorPalette_8853 == rgbColorPalette) {
-                    val i_31_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
+                    val i_31_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_32_ = BufferedMessageQueue.anInt3581 + ((i_31_ and 0x7b) shr 4)
                     val i_33_ = (i_31_ and 0x7) + FileExistsCondition.anInt4786
-                    var i_34_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    var i_34_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if (i_34_ == 65535) i_34_ = -1
-                    val i_35_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
+                    val i_35_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_36_ = 0xf and (i_35_ shr 4)
                     val i_37_ = 0x7 and i_35_
-                    val i_38_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                    val i_39_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
-                    val i_40_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    val i_38_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                    val i_39_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
+                    val i_40_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if (i_32_ >= 0 && i_33_ >= 0 && i_32_ < GlCubemapLightPass.anInt7319 && i_33_ < RangeThresholdTextureNode.anInt9109) {
                         val i_41_ = i_36_ + 1
                         if ((LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) >= i_32_ - i_41_ && (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) <= i_41_ + i_32_ && ((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) >= -i_41_ + i_33_) && (i_33_ - -i_41_ >= (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]))) method358(i_37_, (i_36_ + (i_33_ shl 8) + ((GradientLookupEffect.anInt9200 shl 24) + (i_32_ shl 16))), i_38_, i_39_, i_40_, i_34_, -29494)
                     }
                 } else if (SplashImageLoadable.aRgbColorPalette_4689 == rgbColorPalette) {
-                    var i_42_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                    var i_42_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                     if (i_42_ == 65535) i_42_ = -1
-                    val i_43_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(65.toByte())
+                    val i_43_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(65.toByte())
                     val i_44_ = ((i_43_ and 0x71) shr 4) + BufferedMessageQueue.anInt3581
                     val i_45_ = FileExistsCondition.anInt4786 + (i_43_ and 0x7)
-                    val i_46_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
+                    val i_46_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                     val i_47_ = i_46_ shr 2
                     val i_48_ = i_46_ and 0x3
                     val i_49_ = AnimationFrameTable.anIntArray487!![i_47_]
                     NativeRenderer.method3824(i_45_, i_42_, i_47_, i_44_, i_48_, 115, GradientLookupEffect.anInt9200, i_49_)
                 } else if (rgbColorPalette == ArbFogMaterialPass.aRgbColorPalette_6201) {
-                    val i_50_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                    val i_50_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     var i_51_ = (i_50_ shr 4 and 0xf) + BufferedMessageQueue.anInt3581 * 2
                     var i_52_ = (i_50_ and 0xf) + FileExistsCondition.anInt4786 * 2
-                    val i_53_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                    val i_53_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val bool = (0x1 and i_53_) != 0
                     val bool_54_ = (i_53_ and 0x2) != 0
                     val i_55_ = if (bool_54_) i_53_ shr 2 else -1
-                    var i_56_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-77) + i_51_)
-                    var i_57_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-88) + i_52_)
-                    val i_58_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
-                    val i_59_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
-                    val i_60_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
-                    var i_61_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                    var i_56_ = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByte(-77) + i_51_)
+                    var i_57_ = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByte(-88) + i_52_)
+                    val i_58_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShort(13638)
+                    val i_59_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShort(13638)
+                    val i_60_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
+                    var i_61_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     if (!bool_54_) i_61_ *= 4
                     else i_61_ = i_61_.toByte().toInt()
-                    var i_62_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7) * 4)
-                    val i_63_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
-                    val i_64_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    var i_65_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                    var i_66_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    var i_62_ = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7) * 4)
+                    val i_63_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
+                    val i_64_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    var i_65_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                    var i_66_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if (i_65_ == 255) i_65_ = -1
                     if (i_51_ >= 0 && i_52_ >= 0 && (i_51_ < 2 * GlCubemapLightPass.anInt7319) && (i_52_ < GlCubemapLightPass.anInt7319 * 2) && i_56_ >= 0 && i_57_ >= 0 && (i_56_ < RangeThresholdTextureNode.anInt9109 * 2) && 2 * RangeThresholdTextureNode.anInt9109 > i_57_ && i_60_ != 65535) {
                         i_57_ *= 256
@@ -165,8 +165,8 @@ class InputStream_Sub2 : InputStream() {
                         SpriteTextureNode.aNodeDeque_9240!!.method1999(ParticleEmitterListNode(class318_sub1_sub3_sub5), -20180)
                     }
                 } else if (rgbColorPalette == Client.aRgbColorPalette_10437) {
-                    val i_69_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-128)
-                    val i_70_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(31.toByte())
+                    val i_69_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-128)
+                    val i_70_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(31.toByte())
                     val i_71_ = FileExistsCondition.anInt4786 + (i_70_ and 0x7)
                     val i_72_ = RegionMapDecoder.regionTileY + i_71_
                     val i_73_ = BufferedMessageQueue.anInt3581 + (i_70_ shr 4 and 0x7)
@@ -185,9 +185,9 @@ class InputStream_Sub2 : InputStream() {
                         if (i_73_ >= 0 && i_71_ >= 0 && GlCubemapLightPass.anInt7319 > i_73_ && RangeThresholdTextureNode.anInt9109 > i_71_) ProjectileSpawner.method1479(i_71_, (-125).toByte(), i_73_, GradientLookupEffect.anInt9200)
                     }
                 } else if (StaticNoiseTexture.aRgbColorPalette_8662 == rgbColorPalette) {
-                    val i_75_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-                    val i_76_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-                    val i_77_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                    val i_75_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                    val i_76_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                    val i_77_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_78_ = FileExistsCondition.anInt4786 - -(0x7 and i_77_)
                     val i_79_ = i_78_ + RegionMapDecoder.regionTileY
                     val i_80_ = BufferedMessageQueue.anInt3581 - -((i_77_ and 0x79) shr 4)
@@ -198,25 +198,25 @@ class InputStream_Sub2 : InputStream() {
                         if (bool) ProjectileSpawner.method1479(i_78_, (-124).toByte(), i_80_, GradientLookupEffect.anInt9200)
                     }
                 } else if (rgbColorPalette == BufferedFileReader.aRgbColorPalette_4537) {
-                    val i_82_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd(83.toByte())
+                    val i_82_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteAdd(83.toByte())
                     val i_83_ = i_82_ shr 2
                     val i_84_ = 0x3 and i_82_
                     val i_85_ = AnimationFrameTable.anIntArray487!![i_83_]
-                    val i_86_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
+                    val i_86_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
                     val i_87_ = BufferedMessageQueue.anInt3581 + (i_86_ shr 4 and 0x7)
                     val i_88_ = FileExistsCondition.anInt4786 - -(0x7 and i_86_)
                     if (NpcEntityUpdater.method2112(i.toInt() xor 0x73, WidgetRedrawTracker.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && GlCubemapLightPass.anInt7319 > i_87_ && (i_88_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
                 } else {
                     if (i.toInt() != 8) InboundPacketHeader.aInboundPacketHeader_82 = null
                     if (GlShaderObjectHandle.aRgbColorPalette_515 == rgbColorPalette) {
-                        val i_89_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                        val i_89_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_90_ = FileExistsCondition.anInt4786 + (0x7 and i_89_)
                         val i_91_ = i_90_ + RegionMapDecoder.regionTileY
                         val i_92_ = (BufferedMessageQueue.anInt3581 - -((i_89_ and 0x7a) shr 4))
                         val i_93_ = ArbVertexProgram.regionTileX + i_92_
-                        val i_94_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                        val i_95_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
-                        val i_96_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                        val i_94_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                        val i_95_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
+                        val i_96_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         if (ModelBatchBase.aHashtable_1895 != null) {
                             val class348_sub37 = ((ModelBatchBase.aHashtable_1895!!.method3480((i_93_ or ((GradientLookupEffect.anInt9200 shl 28) or (i_91_ shl 14))).toLong(), -6008)) as HashTableContainer?)
                             if (class348_sub37 != null) {
@@ -234,14 +234,14 @@ class InputStream_Sub2 : InputStream() {
                             }
                         }
                     } else if (rgbColorPalette == FileIoUtil.aRgbColorPalette_4098) {
-                        val i_97_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-                        val i_98_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                        val i_97_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                        val i_98_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_99_ = (0x7 and i_98_) + FileExistsCondition.anInt4786
                         val i_100_ = RegionMapDecoder.regionTileY + i_99_
                         val i_101_ = BufferedMessageQueue.anInt3581 - -((i_98_ and 0x7b) shr 4)
                         val i_102_ = ArbVertexProgram.regionTileX + i_101_
-                        val i_103_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(-25)
-                        val i_104_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(123)
+                        val i_103_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAdd(-25)
+                        val i_104_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAdd(123)
                         if (i_104_ != CharCodeMap.anInt9591) {
                             val bool = (i_101_ >= 0 && i_99_ >= 0 && (i_101_ < GlCubemapLightPass.anInt7319) && (i_99_ < RangeThresholdTextureNode.anInt9109))
                             if (bool || NpcEntityUpdater.method2112(122, WidgetRedrawTracker.anInt3931)) {
@@ -250,21 +250,21 @@ class InputStream_Sub2 : InputStream() {
                             }
                         }
                     } else if (rgbColorPalette == RgbColorPalette.aRgbColorPalette_2157) {
-                        val i_105_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
+                        val i_105_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                         val bool = (0x80 and i_105_) != 0
                         var i_106_ = BufferedMessageQueue.anInt3581 - -(i_105_ shr 3 and 0x7)
                         var i_107_ = (0x7 and i_105_) + FileExistsCondition.anInt4786
-                        var i_108_ = i_106_ - -CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-94)
-                        var i_109_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByte(-87) + i_107_)
-                        val i_110_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShort(13638)
-                        val i_111_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
-                        var i_112_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) * 4)
-                        var i_113_ = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) * 4)
-                        val i_114_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
-                        val i_115_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
-                        var i_116_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                        var i_108_ = i_106_ - -CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByte(-94)
+                        var i_109_ = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByte(-87) + i_107_)
+                        val i_110_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShort(13638)
+                        val i_111_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
+                        var i_112_ = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) * 4)
+                        var i_113_ = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) * 4)
+                        val i_114_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
+                        val i_115_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
+                        var i_116_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         if (i_116_ == 255) i_116_ = -1
-                        var i_117_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                        var i_117_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         if (i_106_ >= 0 && i_107_ >= 0 && (i_106_ < GlCubemapLightPass.anInt7319) && i_107_ < RangeThresholdTextureNode.anInt9109 && i_108_ >= 0 && i_109_ >= 0 && GlCubemapLightPass.anInt7319 > i_108_ && (RangeThresholdTextureNode.anInt9109 > i_109_) && i_111_ != 65535) {
                             i_117_ = i_117_ shl 2
                             i_109_ = 256 + i_109_ * 512
@@ -278,14 +278,14 @@ class InputStream_Sub2 : InputStream() {
                             SpriteTextureNode.aNodeDeque_9240!!.method1999(ParticleEmitterListNode(class318_sub1_sub3_sub5), -20180)
                         }
                     } else if (TextureGenerator.aRgbColorPalette_2491 == rgbColorPalette) {
-                        CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                        val i_118_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
+                        CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                        val i_118_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                         val i_119_ = (i_118_ shr 4 and 0x7) + BufferedMessageQueue.anInt3581
                         val i_120_ = (0x7 and i_118_) + FileExistsCondition.anInt4786
-                        val i_121_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i.toInt() xor 0x3235f8f0)
-                        val i_122_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                        val i_123_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readMedium(-1)
-                        val string = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-126).toByte())
+                        val i_121_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i.toInt() xor 0x3235f8f0)
+                        val i_122_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                        val i_123_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readMedium(-1)
+                        val string = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readString((-126).toByte())
                         IdentKitRecolor.method205(i_121_, i_119_, i_123_, string, i_122_, -109, i_120_, GradientLookupEffect.anInt9200)
                     } else {
                         LinkedListIterator.method1242("T3 - " + rgbColorPalette, null, 15004)

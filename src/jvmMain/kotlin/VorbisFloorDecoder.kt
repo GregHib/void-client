@@ -1,4 +1,4 @@
-import CircleRasterizer.Companion.method2253
+import CircleRasterizerObject.method2253
 import VorbisAudioDecoder.Companion.method2788
 import VorbisAudioDecoder.Companion.method2789
 import kotlin.math.min

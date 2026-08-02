@@ -1,7 +1,7 @@
 import ItemActionPacketSender.method1237
 import FlickeringEffectsOptionState.Companion.method1753
 import WaterMaterialPass.Companion.method2148
-import CircleRasterizer.Companion.method2253
+import CircleRasterizerObject.method2253
 import ConfigVarProgress.Companion.method2307
 import FlipTextureNode.Companion.method3065
 import CharacterRenderState.Companion.method2780

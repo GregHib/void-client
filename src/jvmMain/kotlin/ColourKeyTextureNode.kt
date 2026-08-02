@@ -112,17 +112,17 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
         fun method3120(i: Int) {
             WidgetRedrawTracker.anInt3931 = 0
             anInt9345++
-            val i_15_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-118).toByte())
-            val i_16_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
-            val i_17_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-            val bool = (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte()) == 1)
+            val i_15_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-118).toByte())
+            val i_16_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
+            val i_17_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+            val bool = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte()) == 1)
 
             method2554((-45).toByte())
             CellNoiseTextureNode.Companion.method3111(111, i_15_)
-            var i_18_: Int = (-CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 + RadialTextureNode.Companion.anInt9341) / 16
+            var i_18_: Int = (-CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197 + RadialTextureNode.Companion.anInt9341) / 16
             BrightnessOptionState.anIntArrayArray5894 = Array<IntArray?>(i_18_) { IntArray(4) }
             for (i_19_ in 0..<i_18_) {
-                for (i_20_ in 0..3) BrightnessOptionState.anIntArrayArray5894!![i_19_]!![i_20_] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                for (i_20_ in 0..3) BrightnessOptionState.anIntArrayArray5894!![i_19_]!![i_20_] = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
             }
             VorbisOggDecoder.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_18_)
             RegionMapDecoder.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_18_)

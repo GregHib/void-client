@@ -48,7 +48,7 @@ object NpcUpdateProcessor {
             TerrainShadowBuilderGl2.anInt6930 = NpcEntityUpdater.aHashtable_3654!!.method3474(1)
             NpcEntityUpdater.aHashtable_3654!!.method3477(3, TurbulenceTextureNode.aClass348_Sub22Array9319!! as Array<LinkedListNode?>)
         }
-        if (RadialTextureNode.anInt9341 != CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("gnp1 pos:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + RadialTextureNode.anInt9341)
+        if (RadialTextureNode.anInt9341 != CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("gnp1 pos:" + (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + RadialTextureNode.anInt9341)
         if (i <= 47) aRgbColorPalette_1519 = null
         var i_4_ = 0
         while (ModelDefinitionLoader.anInt2057 > i_4_) {

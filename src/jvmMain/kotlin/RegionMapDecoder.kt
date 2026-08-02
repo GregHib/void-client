@@ -26,34 +26,34 @@ object RegionMapDecoder {
 
     fun method853(i: Byte) {
         anInt1515++
-        val i_0_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-        val i_1_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-121)
-        val bool = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 156) == 1
-        val i_2_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readShortAdd(i + -172)
-        WidgetRedrawTracker.anInt3931 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readByteAdd((-112).toByte())
+        val i_0_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+        val i_1_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-121)
+        val bool = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 156) == 1
+        val i_2_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAdd(i + -172)
+        WidgetRedrawTracker.anInt3931 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteAdd((-112).toByte())
         ColourKeyTextureNode.method2554((-45).toByte())
         method3111(125, i_0_)
-        CircleRasterizer.aClass348_Sub49_Sub2_3813!!.startBitAccess(-122)
+        CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.startBitAccess(-122)
         for (i_3_ in 0..3) {
             var i_4_ = 0
             while ((GlCubemapLightPass.anInt7319 shr 3 > i_4_)) {
                 var i_5_ = 0
                 while ((i_5_ < RangeThresholdTextureNode.anInt9109 shr 3)) {
-                    val i_6_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
+                    val i_6_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                     if (i_6_ != 1) GameClock.anIntArrayArrayArray1116!![i_3_]!![i_4_]!![i_5_] = -1
-                    else GameClock.anIntArrayArrayArray1116!![i_3_]!![i_4_]!![i_5_] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 26)
+                    else GameClock.anIntArrayArrayArray1116!![i_3_]!![i_4_]!![i_5_] = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 26)
                     i_5_++
                 }
                 i_4_++
             }
         }
-        CircleRasterizer.aClass348_Sub49_Sub2_3813!!.stopBitAccess(false)
-        var i_7_ = (-CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 + RadialTextureNode.anInt9341) / 16
+        CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.stopBitAccess(false)
+        var i_7_ = (-CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197 + RadialTextureNode.anInt9341) / 16
         BrightnessOptionState.anIntArrayArray5894 = Array<IntArray?>(i_7_) { IntArray(4) }
         var i_8_ = 0
         if (i.toInt() != 99) method852(-55)
         while ( /**/i_8_ < i_7_) {
-            for (i_9_ in 0..3) BrightnessOptionState.anIntArrayArray5894!![i_8_]!![i_9_] = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+            for (i_9_ in 0..3) BrightnessOptionState.anIntArrayArray5894!![i_8_]!![i_9_] = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
             i_8_++
         }
         AbstractCameraTransformStatics.anIntArray4031 = null

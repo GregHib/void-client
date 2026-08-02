@@ -78,7 +78,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FloatCameraTransform.anInt5719 = 0
             SequencedActorEntity.anInt10111 = 0
             GroundDecorSceneEntity.anInt9987 = 0
-            CircleRasterizer.anInt3814 = 0
+            CircleRasterizerObject.anInt3814 = 0
             NpcEntityUpdater.anInt3653 = 0
             Direct3dModel.anInt5488 = 0
             Js5Archive.anInt4354 = 0
@@ -4032,7 +4032,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7643 = 0
             MouseInputTracker.anInt7430 = 0
             NativeLibraryUnloader.anInt2971 = 0
-            CircleRasterizer.anInt3812 = 0
+            CircleRasterizerObject.anInt3812 = 0
             RandomAccessFileOnDisk.anInt3038 = 0
             OpenGlRenderer.anInt7691 = 0
             TrackedGroundDecor.anInt10405 = 0
