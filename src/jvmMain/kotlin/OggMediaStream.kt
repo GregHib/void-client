@@ -391,7 +391,7 @@ abstract class OggMediaStream(i: Int) {
             anInt1000++
             val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-94))
             if (class51.anInt875 == -1) return true
-            val class218 = ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1173(31.toByte(), class51.anInt875)
+            val class218 = ModelOrSpriteHolderStatics.aTextureDefinitionLoader_117!!.method1173(31.toByte(), class51.anInt875)
             if (i == class218!!.anInt2853) return true
             return class218.method1593(106)
         }

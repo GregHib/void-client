@@ -375,7 +375,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         if (string.equals("resetminimap", ignoreCase = true)) {
                             CameraRotationStubStatics.aJs5Archive_322!!.method405(i.toInt() xor 0x4e.inv())
                             CameraRotationStubStatics.aJs5Archive_322!!.method412(127.toByte())
-                            ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1175(125.toByte())
+                            ModelOrSpriteHolderStatics.aTextureDefinitionLoader_117!!.method1175(125.toByte())
                             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1219(7851)
                             method464(-1)
                             method94("Minimap reset", 70)
@@ -885,7 +885,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
             RenderConfigFactoryStatics.aVarbitDefLoader_2981!!.method1443(83)
             NormalMapGenerator.aParticleAmountCache_3453!!.method1590(0)
             OpenGlModel.aNpcDefinitionCache_5558!!.method1986((-91).toByte())
-            ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1174((-99).toByte())
+            ModelOrSpriteHolderStatics.aTextureDefinitionLoader_117!!.method1174((-99).toByte())
             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1222(true)
             TheoraVideoStream.aLocTypeDefLoader_9036!!.method1410(-27995)
             ProjectionCameraTransform.aEmoteDefCache_5764!!.method2602(0)

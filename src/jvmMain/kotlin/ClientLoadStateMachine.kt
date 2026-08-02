@@ -192,7 +192,7 @@ object ClientLoadStateMachine {
             AbstractTileShapeStatics.aMapSceneDefLoader_6559 = MapSceneDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             GradientLookupEffect.aSeqDefinitionCache_9195 = SeqDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, AnimationFrameState.aJs5Archive_1538, RasterSprite.aJs5Archive_5207)
             TheoraVideoStream.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)
-            ModelOrSpriteHolder.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)
+            ModelOrSpriteHolderStatics.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)
             MapAreaDefinition.aBufferedMessageQueue_2529 = BufferedMessageQueue(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, FloatGrid.aJs5Archive_4975, RasterSprite.aJs5Archive_5207)
             ClientExceptionStatics.aModelHeaderCache_112 = ModelHeaderCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, ProjectionCameraTransform.aEmoteDefCache_5764, ScriptOpcodeHolder.aJs5Archive_2306, RasterSprite.aJs5Archive_5207)
             TheoraVideoStream.aLocTypeDefLoader_9036 = LocTypeDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
@@ -230,7 +230,7 @@ object ClientLoadStateMachine {
             val i_12_ = (ParticleEmitterDefExt.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
-        if (ConnectionStateType.aConnectionStateType_1038 == TimedTileQueueEntry.aConnectionStateType_9660) method752(TerrainShadowBuilderGl2.aJs5Archive_6950, RenderConfigFactoryStatics.aLocDefinitionCache_2979, Tooltip.aParticleDefLoader_4460, GradientLookupEffect.aSeqDefinitionCache_9195, TheoraVideoStream.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, ProjectedGroundDecor.aVarpStore_10209)
+        if (ConnectionStateType.aConnectionStateType_1038 == TimedTileQueueEntry.aConnectionStateType_9660) method752(TerrainShadowBuilderGl2.aJs5Archive_6950, RenderConfigFactoryStatics.aLocDefinitionCache_2979, Tooltip.aParticleDefLoader_4460, GradientLookupEffect.aSeqDefinitionCache_9195, TheoraVideoStream.aConfigDefinitionLoader_9031, ModelOrSpriteHolderStatics.aTextureDefinitionLoader_117, ProjectedGroundDecor.aVarpStore_10209)
         if (ConnectionStateType.aConnectionStateType_1039 == TimedTileQueueEntry.aConnectionStateType_9660) {
             // TODO make cache edit to extend these or change id's
             IsaacCipher.anIntArray1303 = (IntArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))

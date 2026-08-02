@@ -1,5 +1,5 @@
 import RefCountedHandle.Companion.method1323
-import ModelOrSpriteHolder.Companion.method174
+import ModelOrSpriteHolderStatics.method174
 import NoiseTextureGenerator.Companion.method545
 import AnimationFrameState.method865
 import TerrainChunkBuilder.Companion.method876
@@ -138,7 +138,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             NormalMapGenerator.aParticleAmountCache_3453!!.method1587(5, i xor 0xeab)
             OpenGlModel.aNpcDefinitionCache_5558!!.method1984(119.toByte(), 5)
             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1224(5, (-98).toByte())
-            ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1176(5, 52.toByte())
+            ModelOrSpriteHolderStatics.aTextureDefinitionLoader_117!!.method1176(5, 52.toByte())
             ProjectionCameraTransform.aEmoteDefCache_5764!!.method2603(5, 11)
             TheoraVideoStream.aLocTypeDefLoader_9036!!.method1409(5, -20721)
             Client.aMapSceneCache_413!!.method819(74.toByte(), 5)

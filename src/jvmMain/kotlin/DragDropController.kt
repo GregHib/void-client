@@ -1,6 +1,6 @@
 import MatrixCameraTransform.Companion.method913
 import SceneTilePlaneManager.method260
-import ModelOrSpriteHolder.Companion.method173
+import ModelOrSpriteHolderStatics.method173
 import WallEntity.Companion.method2485
 import SolidFillComponent.Companion.method191
 import ChatCommandProcessor.method705

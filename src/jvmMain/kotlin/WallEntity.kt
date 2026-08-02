@@ -121,7 +121,7 @@ abstract class WallEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, i
             anInt8778++
             WidgetActionEntry.anInt6985 = 0
             if (i >= -91) anInt8775 = -63
-            return ModelOrSpriteHolder.method170(true)
+            return ModelOrSpriteHolderStatics.method170(true)
         }
     }
 }

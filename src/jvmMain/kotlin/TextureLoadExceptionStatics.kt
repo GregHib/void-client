@@ -56,7 +56,7 @@ object TextureLoadExceptionStatics {
         GlTexture2D.anInt8550 = 0
         RingBufferInputStream.anInt4559 = 0
         CacheArchiveIndex.method1072(js5Archive, (-107).toByte())
-        ModelOrSpriteHolder.method172(30284, js5Archive)
+        ModelOrSpriteHolderStatics.method172(30284, js5Archive)
     }
 
     @JvmStatic

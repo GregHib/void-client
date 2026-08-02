@@ -7,7 +7,7 @@ import GlCubeMapTexture.Companion.method243
 import GlCubeMapTexture.Companion.method244
 import SceneTilePlaneManager.method259
 import SceneTilePlaneManager.method262
-import ModelOrSpriteHolder.Companion.method170
+import ModelOrSpriteHolderStatics.method170
 import BooleanGraphicsOptionState.Companion.method1719
 import WaterDetailOptionState.Companion.method1781
 import TextureQualityOptionState.Companion.method1787
