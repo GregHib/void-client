@@ -156,7 +156,7 @@ import VideoAdChecker.method1889
 import MediaStreamClient.Companion.method1897
 import TileTransform.method1907
 import BackgroundWorkerThread.Companion.method1910
-import ConfigFlagUtil.Companion.method1912
+import ConfigFlagUtilStatics.method1912
 import SmoothingBuffer.Companion.method1917
 import EmoteDefinition.Companion.method1926
 import ModelHeaderCache.Companion.method1931
@@ -497,7 +497,7 @@ import GlVertexBufferArb.Companion.method2127
 import ByteBufferStatics.method1713
 import ChatCommandProcessor.anIntArray3295
 import CompassSmoother.Companion.method2017
-import ConfigFlagUtil.Companion.method1916
+import ConfigFlagUtilStatics.method1916
 import FrameBufferObject.Companion.method1501
 import FrameStatsReset.Companion.method1131
 import HslAdjustTextureNode.Companion.method3126
@@ -1366,7 +1366,7 @@ class Client : GameAppletFrame() {
             val string_30_ = this.getParameter("worldflags")
             if (string_30_ != null) {
                 try {
-                    ConfigFlagUtil.anInt3234 = string_30_.toInt()
+                    ConfigFlagUtilStatics.anInt3234 = string_30_.toInt()
                 } catch (exception: Exception) {
                     /* empty */
                 }
@@ -1999,7 +1999,7 @@ class Client : GameAppletFrame() {
                     ItemActionPacketSender.aBoolean2110 = true
                     FrameBufferObject.aBoolean4888 = ItemActionPacketSender.aBoolean2110
                     PlayerAppearanceUpdateDecoder.aBoolean4540 = false
-                    ConfigFlagUtil.anInt3234 = 0
+                    ConfigFlagUtilStatics.anInt3234 = 0
                     UnderlayDefinition.anInt2884 = (aSceneProjector_10434!!.anInt2987)
                     Renderer.anInt4583 = 0
                     Gl2dTexture.aString8605 = null
@@ -2793,11 +2793,11 @@ class Client : GameAppletFrame() {
                     MinimapSpriteRenderer.aHashtable_4915!!.method3483(102.toByte(), i.toLong(), class348_sub41)
                 }
                 var class46 = method2570(1512932720, i_9_)
-                if (class46 != null) ConfigFlagUtil.method1916(-9343, class46)
+                if (class46 != null) ConfigFlagUtilStatics.method1916(-9343, class46)
                 class46 = method2570(1512932720, i)
                 if (class46 != null) {
-                    ConfigFlagUtil.method1916(-9343, class46)
-                    ConfigFlagUtil.method1913(true, -123, class46)
+                    ConfigFlagUtilStatics.method1916(-9343, class46)
+                    ConfigFlagUtilStatics.method1913(true, -123, class46)
                 }
                 if (RenderNodeStatics.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNodeStatics.anInt9721, 1)
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
@@ -3407,7 +3407,7 @@ class Client : GameAppletFrame() {
                 val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i.toLong(), -6008) as RegionSceneShifter?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(true, false, class348_sub41, 2533)
                 if (SpriteRenderable.aWidgetComponent_4730 != null) {
-                    ConfigFlagUtil.method1916(-9343, SpriteRenderable.aWidgetComponent_4730!!)
+                    ConfigFlagUtilStatics.method1916(-9343, SpriteRenderable.aWidgetComponent_4730!!)
                     SpriteRenderable.aWidgetComponent_4730 = null
                 }
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
@@ -4941,7 +4941,7 @@ class Client : GameAppletFrame() {
                                     val class46 = method2570(1512932720, i_17_)
                                     if (class348_sub42_sub15.aString9654 != class46!!.aString792) {
                                         class46.aString792 = class348_sub42_sub15.aString9654
-                                        ConfigFlagUtil.method1916(-9343, class46)
+                                        ConfigFlagUtilStatics.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 4) {
                                     val class46 = method2570(1512932720, i_17_)
@@ -4952,7 +4952,7 @@ class Client : GameAppletFrame() {
                                         class46.anInt753 = i_19_
                                         class46.anInt770 = i_18_
                                         class46.anInt779 = i_20_
-                                        ConfigFlagUtil.method1916(-9343, class46)
+                                        ConfigFlagUtilStatics.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 5) {
                                     val class46 = method2570(i xor 0x5a2da9d8, i_17_)
@@ -4963,7 +4963,7 @@ class Client : GameAppletFrame() {
                                         class46.anInt730 = 1
                                         val class17 = (if (class46.anInt699 == -1) null else (ParticleEmitterNode.aWidgetCache_191!!.method835((class46.anInt699), 7)))
                                         if (class17 != null) method2017((class46.anInt795), class17, 30)
-                                        ConfigFlagUtil.method1916(-9343, class46)
+                                        ConfigFlagUtilStatics.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 6) {
                                     val i_21_ = (class348_sub42_sub15.anInt9652)
@@ -4974,14 +4974,14 @@ class Client : GameAppletFrame() {
                                     val class46 = method2570(1512932720, i_17_)
                                     if (class46!!.anInt749 != i_25_) {
                                         class46.anInt749 = i_25_
-                                        ConfigFlagUtil.method1916(-9343, class46)
+                                        ConfigFlagUtilStatics.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 7) {
                                     val class46 = method2570(1512932720, i_17_)
                                     val bool = (class348_sub42_sub15.anInt9652 == 1)
                                     if (!class46!!.aBoolean813 == bool) {
                                         class46.aBoolean813 = bool
-                                        ConfigFlagUtil.method1916(-9343, class46)
+                                        ConfigFlagUtilStatics.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 8) {
                                     val class46 = method2570(1512932720, i_17_)
@@ -4994,14 +4994,14 @@ class Client : GameAppletFrame() {
                                                 if ((class46.anInt842) > 0) class46.anInt716 = (32 * class46.anInt716 / (class46.anInt842))
                                             } else class46.anInt716 = ((class46.anInt716) * 32 / (class46.anInt796))
                                         }
-                                        ConfigFlagUtil.method1916(-9343, class46)
+                                        ConfigFlagUtilStatics.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 9) {
                                     val class46 = method2570(1512932720, i_17_)
                                     if ((class348_sub42_sub15.anInt9652 != class46!!.anInt812) || (class348_sub42_sub15.anInt9651 != class46.anInt781)) {
                                         class46.anInt781 = class348_sub42_sub15.anInt9651
                                         class46.anInt812 = class348_sub42_sub15.anInt9652
-                                        ConfigFlagUtil.method1916(-9343, class46)
+                                        ConfigFlagUtilStatics.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 10) {
                                     val class46 = method2570(1512932720, i_17_)
@@ -5009,7 +5009,7 @@ class Client : GameAppletFrame() {
                                         class46.anInt786 = (class348_sub42_sub15.anInt9651)
                                         class46.anInt808 = (class348_sub42_sub15.anInt9652)
                                         class46.anInt717 = (class348_sub42_sub15.anInt9650)
-                                        ConfigFlagUtil.method1916(-9343, class46)
+                                        ConfigFlagUtilStatics.method1916(-9343, class46)
                                     }
                                 } else if (i_16_ == 11) {
                                     val class46 = (method2570(1512932720, i_17_))
@@ -5019,7 +5019,7 @@ class Client : GameAppletFrame() {
                                     class46.aByte681 = 0.toByte()
                                     class46.anInt788 = (class348_sub42_sub15.anInt9652)
                                     class46.anInt800 = class46.anInt788
-                                    ConfigFlagUtil.method1916(-9343, class46)
+                                    ConfigFlagUtilStatics.method1916(-9343, class46)
                                 } else if (i_16_ == 12) {
                                     val class46 = (method2570(1512932720, i_17_))
                                     var i_26_ = (class348_sub42_sub15.anInt9652)
@@ -5055,7 +5055,7 @@ class Client : GameAppletFrame() {
                             if (ResourceLoaderThread.aWidgetComponent_3913 != null) {
                                 GroundItemRenderState.anInt1656++
                                 if (GroundItemRenderState.anInt1656 >= 15) {
-                                    ConfigFlagUtil.method1916(-9343, ResourceLoaderThread.aWidgetComponent_3913!!)
+                                    ConfigFlagUtilStatics.method1916(-9343, ResourceLoaderThread.aWidgetComponent_3913!!)
                                     ResourceLoaderThread.aWidgetComponent_3913 = null
                                 }
                             }

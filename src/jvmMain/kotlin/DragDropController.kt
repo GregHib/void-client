@@ -30,7 +30,7 @@ class DragDropController {
         var anInt6392: Int = 0
         @JvmStatic
         fun method2708(i: Int) {
-            ConfigFlagUtil.method1916(-9343, RegionSceneLoader.aWidgetComponent_3701!!)
+            ConfigFlagUtilStatics.method1916(-9343, RegionSceneLoader.aWidgetComponent_3701!!)
             anInt4280++
             DragDropController.anInt6392++
             if (!MinimapSquareDrawer.aBoolean5221 || !ScrollingWidgetComponentNode.aBoolean8386) {

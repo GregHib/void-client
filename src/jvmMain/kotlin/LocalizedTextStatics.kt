@@ -91,7 +91,7 @@ object LocalizedTextStatics {
             class348_sub41 = MinimapSpriteRenderer.aHashtable_4915!!.method3482(0) as RegionSceneShifter?
         }
         if (SpriteRenderable.aWidgetComponent_4730 != null) {
-            ConfigFlagUtil.method1916(-9343, SpriteRenderable.aWidgetComponent_4730!!)
+            ConfigFlagUtilStatics.method1916(-9343, SpriteRenderable.aWidgetComponent_4730!!)
             SpriteRenderable.aWidgetComponent_4730 = null
         }
     }

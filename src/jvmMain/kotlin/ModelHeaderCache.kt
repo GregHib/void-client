@@ -130,7 +130,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         if (itemDefinition != null) return itemDefinition
         val `is`: ByteArray?
         withLock(aJs5Archive_3267!!) {
-            `is` = aJs5Archive_3267.method410(-1860, method500(7, i_13_), ConfigFlagUtil.Companion.method1914(-23590, i_13_))
+            `is` = aJs5Archive_3267.method410(-1860, method500(7, i_13_), ConfigFlagUtilStatics.method1914(-23590, i_13_))
         }
         itemDefinition = ItemDefinition()
         itemDefinition.aModelHeaderCache_2761 = this

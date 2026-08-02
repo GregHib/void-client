@@ -2104,7 +2104,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 6510) {
-                anIntArray1149!![anInt1173++] = ConfigFlagUtil.anInt3234
+                anIntArray1149!![anInt1173++] = ConfigFlagUtilStatics.anInt3234
                 return
             }
         } else if (i >= 6700) {
@@ -2774,7 +2774,7 @@ object ChatCommandProcessor {
                 class46.aWidgetComponentArray798!![i_249_] = widgetComponent_251_
                 if (bool) aWidgetComponent_1169 = widgetComponent_251_
                 else aWidgetComponent_1150 = widgetComponent_251_
-                ConfigFlagUtil.method1916(-9343, class46)
+                ConfigFlagUtilStatics.method1916(-9343, class46)
                 return
             }
             if (i == 101) {
@@ -2785,13 +2785,13 @@ object ChatCommandProcessor {
                 }
                 val class46_252_ = method2570(1512932720, class46.anInt830)
                 class46_252_!!.aWidgetComponentArray798!![(class46.anInt704)] = null
-                ConfigFlagUtil.method1916(-9343, class46_252_)
+                ConfigFlagUtilStatics.method1916(-9343, class46_252_)
                 return
             }
             if (i == 102) {
                 val class46 = method2570(1512932720, anIntArray1149!![--anInt1173])
                 class46!!.aWidgetComponentArray798 = null
-                ConfigFlagUtil.method1916(-9343, class46)
+                ConfigFlagUtilStatics.method1916(-9343, class46)
                 return
             }
             if (i == 200) {
@@ -2900,7 +2900,7 @@ object ChatCommandProcessor {
                 else if (i_268_ > 5) i_268_ = 5
                 widgetComponent.aByte817 = i_267_.toByte()
                 widgetComponent.aByte681 = i_268_.toByte()
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 CollisionMapRegion.method1048(widgetComponent, 50)
                 if (widgetComponent.anInt704 == -1) ChatEffectsOptionState.method1733((-78).toByte(), widgetComponent.anInt830)
                 return
@@ -2919,16 +2919,16 @@ object ChatCommandProcessor {
                 else if (i_270_ > 4) i_270_ = 4
                 widgetComponent.aByte778 = i_269_.toByte()
                 widgetComponent.aByte724 = i_270_.toByte()
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 CollisionMapRegion.method1048(widgetComponent, 62)
-                if (widgetComponent.anInt774 == 0) ConfigFlagUtil.method1913(false, 36, widgetComponent)
+                if (widgetComponent.anInt774 == 0) ConfigFlagUtilStatics.method1913(false, 36, widgetComponent)
                 return
             }
             if (i == 1003) {
                 val bool_271_ = anIntArray1149!![--anInt1173] == 1
                 if (widgetComponent!!.aBoolean813 != bool_271_) {
                     widgetComponent.aBoolean813 = bool_271_
-                    ConfigFlagUtil.method1916(-9343, widgetComponent)
+                    ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 }
                 if (widgetComponent.anInt704 == -1) NamedIdEntry.method2999(90.toByte(), widgetComponent.anInt830)
                 return
@@ -2937,9 +2937,9 @@ object ChatCommandProcessor {
                 anInt1173 -= 2
                 widgetComponent!!.anInt710 = anIntArray1149!![anInt1173]
                 widgetComponent.anInt775 = anIntArray1149!![anInt1173 + 1]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 CollisionMapRegion.method1048(widgetComponent, 59)
-                if (widgetComponent.anInt774 == 0) ConfigFlagUtil.method1913(false, 49, widgetComponent)
+                if (widgetComponent.anInt774 == 0) ConfigFlagUtilStatics.method1913(false, 49, widgetComponent)
                 return
             }
             if (i == 1005) {
@@ -2960,54 +2960,54 @@ object ChatCommandProcessor {
                 widgetComponent.anInt755 = anIntArray1149!![anInt1173 + 1]
                 if (widgetComponent.anInt755 > (widgetComponent.anInt791 - widgetComponent.anInt789)) widgetComponent.anInt755 = (widgetComponent.anInt791 - widgetComponent.anInt789)
                 if (widgetComponent.anInt755 < 0) widgetComponent.anInt755 = 0
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 if (widgetComponent.anInt704 == -1) RenderQueueState.method2615(-91, widgetComponent.anInt830)
                 return
             }
             if (i == 1101) {
                 widgetComponent!!.anInt749 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 if (widgetComponent.anInt704 == -1) method1148(widgetComponent.anInt830, 6)
                 return
             }
             if (i == 1102) {
                 widgetComponent!!.aBoolean810 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1103) {
                 widgetComponent!!.anInt696 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1104) {
                 widgetComponent!!.anInt690 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1105) {
                 val i_272_ = anIntArray1149!![--anInt1173]
                 if (widgetComponent!!.anInt756 != i_272_) {
                     widgetComponent.anInt756 = i_272_
-                    ConfigFlagUtil.method1916(-9343, widgetComponent)
+                    ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 }
                 if (widgetComponent.anInt704 == -1) ProjectileSpawner.method1477(widgetComponent.anInt830, 14)
                 return
             }
             if (i == 1106) {
                 widgetComponent!!.anInt828 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1107) {
                 widgetComponent!!.aBoolean697 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1108) {
                 widgetComponent!!.anInt770 = 1
                 widgetComponent.anInt753 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 if (widgetComponent.anInt704 == -1) method3569(widgetComponent.anInt830, -125)
                 return
             }
@@ -3019,7 +3019,7 @@ object ChatCommandProcessor {
                 widgetComponent.anInt675 = anIntArray1149!![anInt1173 + 3]
                 widgetComponent.anInt717 = anIntArray1149!![anInt1173 + 4]
                 widgetComponent.anInt716 = anIntArray1149!![anInt1173 + 5]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 if (widgetComponent.anInt704 == -1) {
                     method1787(widgetComponent.anInt830, 8)
                     LoadingScreenState.method1459(widgetComponent.anInt830, 2)
@@ -3035,28 +3035,28 @@ object ChatCommandProcessor {
                     widgetComponent.anInt841 = 0
                     val class17 = (if (widgetComponent.anInt699 == -1) null else ParticleEmitterNode.aWidgetCache_191!!.method835(widgetComponent.anInt699, 7))
                     if (class17 != null) CompassSmoother.method2017(widgetComponent.anInt795, class17, 46)
-                    ConfigFlagUtil.method1916(-9343, widgetComponent)
+                    ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 }
                 if (widgetComponent.anInt704 == -1) OpenGlModel.method687((-117).toByte(), widgetComponent.anInt830)
                 return
             }
             if (i == 1111) {
                 widgetComponent!!.aBoolean689 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1112) {
                 val string = aStringArray1152!![--anInt1170]
                 if (string != widgetComponent!!.aString792) {
                     widgetComponent.aString792 = string
-                    ConfigFlagUtil.method1916(-9343, widgetComponent)
+                    ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 }
                 if (widgetComponent.anInt704 == -1) method3316(121, widgetComponent.anInt830)
                 return
             }
             if (i == 1113) {
                 widgetComponent!!.anInt702 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 if (widgetComponent.anInt704 == -1) ConfigVarProgress.method2311((-109).toByte(), widgetComponent.anInt830)
                 return
             }
@@ -3065,69 +3065,69 @@ object ChatCommandProcessor {
                 widgetComponent!!.anInt762 = anIntArray1149!![anInt1173]
                 widgetComponent.anInt700 = anIntArray1149!![anInt1173 + 1]
                 widgetComponent.anInt673 = anIntArray1149!![anInt1173 + 2]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1115) {
                 widgetComponent!!.aBoolean769 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1116) {
                 widgetComponent!!.anInt672 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1117) {
                 widgetComponent!!.anInt809 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1118) {
                 widgetComponent!!.aBoolean790 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1119) {
                 widgetComponent!!.aBoolean735 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1120) {
                 anInt1173 -= 2
                 widgetComponent!!.anInt698 = anIntArray1149!![anInt1173]
                 widgetComponent.anInt791 = anIntArray1149!![anInt1173 + 1]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
-                if (widgetComponent.anInt774 == 0) ConfigFlagUtil.method1913(false, 62, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
+                if (widgetComponent.anInt774 == 0) ConfigFlagUtilStatics.method1913(false, 62, widgetComponent)
                 return
             }
             if (i == 1122) {
                 widgetComponent!!.aBoolean745 = anIntArray1149!![--anInt1173] == 1
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1123) {
                 widgetComponent!!.anInt716 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 if (widgetComponent.anInt704 == -1) method1787(widgetComponent.anInt830, 8)
                 return
             }
             if (i == 1124) {
                 val i_274_ = anIntArray1149!![--anInt1173]
                 widgetComponent!!.aBoolean744 = i_274_ == 1
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1125) {
                 anInt1173 -= 2
                 widgetComponent!!.anInt688 = anIntArray1149!![anInt1173]
                 widgetComponent.anInt799 = anIntArray1149!![anInt1173 + 1]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1126) {
                 widgetComponent!!.anInt773 = anIntArray1149!![--anInt1173]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1127) {
@@ -3156,7 +3156,7 @@ object ChatCommandProcessor {
                 if ((widgetComponent!!.anInt774 == 5 || i != 1129) && (widgetComponent.anInt774 == 4 || i != 1130)) {
                     if (widgetComponent.anInt806 != i_278_) {
                         widgetComponent.anInt806 = i_278_
-                        ConfigFlagUtil.method1916(-9343, widgetComponent)
+                        ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                     }
                     if (widgetComponent.anInt704 == -1) GlowPostProcessor.method1415(widgetComponent.anInt830, 117)
                     return
@@ -3169,7 +3169,7 @@ object ChatCommandProcessor {
                 i -= 1000
                 widgetComponent = method2570(1512932720, anIntArray1149!![--anInt1173])
             } else widgetComponent = if (bool) aWidgetComponent_1169 else aWidgetComponent_1150
-            ConfigFlagUtil.method1916(-9343, widgetComponent!!)
+            ConfigFlagUtilStatics.method1916(-9343, widgetComponent!!)
             if (i == 1200 || i == 1205 || i == 1208 || i == 1209 || i == 1212 || i == 1213) {
                 anInt1173 -= 2
                 val i_279_ = anIntArray1149!![anInt1173]
@@ -3236,14 +3236,14 @@ object ChatCommandProcessor {
                 widgetComponent.anInt674 = anIntArray1149!![anInt1173 + 1]
                 widgetComponent.anInt733 = anIntArray1149!![anInt1173 + 2]
                 widgetComponent.anInt693 = anIntArray1149!![anInt1173 + 3]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1207) {
                 anInt1173 -= 2
                 widgetComponent!!.anInt759 = anIntArray1149!![anInt1173]
                 widgetComponent.anInt835 = anIntArray1149!![anInt1173 + 1]
-                ConfigFlagUtil.method1916(-9343, widgetComponent)
+                ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 return
             }
             if (i == 1210) {

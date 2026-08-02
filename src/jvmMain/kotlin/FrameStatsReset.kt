@@ -2980,7 +2980,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ChatEffectsOptionState.anInt5864 = 0
             ParticleConfigParser.anInt3816 = 0
             ResourceLoaderThread.anInt3904 = 0
-            ConfigFlagUtil.anInt3231 = 0
+            ConfigFlagUtilStatics.anInt3231 = 0
             MinimapAreaMarkerNode.anInt9698 = 0
             SceneObjectEntity.anInt8733 = 0
             ParticleSystemState.anInt2193 = 0
@@ -3028,7 +3028,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FlipTextureNode.anInt9142 = 0
             Hashtable.anInt4384 = 0
             VideoStreamDecoder.anInt4119 = 0
-            ConfigFlagUtil.anInt3233 = 0
+            ConfigFlagUtilStatics.anInt3233 = 0
             GameAppletFrame.anInt9 = 0
             VarpStore.anInt5072 = 0
             GameClock.anInt1112 = 0
@@ -3189,7 +3189,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SingletonMarker.anInt2600 = 0
             SocketStreamWorker.anInt2662 = 0
             ChatCommandProcessor.anInt1157 = 0
-            ConfigFlagUtil.anInt3235 = 0
+            ConfigFlagUtilStatics.anInt3235 = 0
             MapElementDefinitionCache.anInt3984 = 0
             VideoStreamDecoder.anInt4115 = 0
             StructConfig.anInt600 = 0
@@ -3283,7 +3283,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FloatCameraTransform.anInt5730 = 0
             NpcType.anInt1326 = 0
             SceneObjectAnimator.anInt3087 = 0
-            ConfigFlagUtil.anInt3229 = 0
+            ConfigFlagUtilStatics.anInt3229 = 0
             NativeRenderer.anInt8030 = 0
             WorldMapElement.anInt4641 = 0
             SkeletonSequenceLoader.anInt3877 = 0

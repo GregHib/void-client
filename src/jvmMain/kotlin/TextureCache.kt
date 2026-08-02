@@ -1,4 +1,4 @@
-import ConfigFlagUtil.Companion.method1915
+import ConfigFlagUtilStatics.method1915
 
 /* Class354 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -117,7 +117,7 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
                                     InterfaceComponentGroup.method3243(-112, class348_sub47)
                                 } else if (i == 6) {
                                     HuffmanCodec.anInt3768++
-                                    val class348_sub47 = (method2148(ConfigFlagUtil.aFontMetaRef_3232, TheoraVideoStream.aIsaacCipher_9029, -83))
+                                    val class348_sub47 = (method2148(ConfigFlagUtilStatics.aFontMetaRef_3232, TheoraVideoStream.aIsaacCipher_9029, -83))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-119, `is`[i_7_])
                                     InterfaceComponentGroup.method3243(i_5_ + 7281, class348_sub47)

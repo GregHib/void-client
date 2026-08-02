@@ -30,7 +30,7 @@ class MaterialTextureCache(var_ha_Sub3: NativeRenderer?, var_renderConfig: Rende
             interface18_impl3 = aHa_Sub3_4526.method3891(fs, i_1_, i_1_, GroundItemRenderState.aTextureFormatInfo_1662, -109, class12.aByte205.toInt() != 0)!!
         } else {
             val `is`: IntArray?
-            if (class12.anInt200 == 2 || !ConfigFlagUtil.method1915(4.toByte(), class12.aByte213.toInt())) `is` = aRenderConfig4528.method6(-21540, i_1_, 0.7f, i_0_, false, i_1_)
+            if (class12.anInt200 == 2 || !ConfigFlagUtilStatics.method1915(4.toByte(), class12.aByte213.toInt())) `is` = aRenderConfig4528.method6(-21540, i_1_, 0.7f, i_0_, false, i_1_)
             else `is` = aRenderConfig4528.method5(true, i_0_, 0.7f, i_1_, i_1_, 83)
             interface18_impl3 = aHa_Sub3_4526!!.method3839(i_1_, i_1_, -15137, class12.aByte205.toInt() != 0, `is`)!!
         }

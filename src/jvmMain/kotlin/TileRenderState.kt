@@ -1,6 +1,6 @@
 import LocTypeDefLoader.Companion.method1406
 import WaterDetailOptionState.Companion.method1779
-import ConfigFlagUtil.Companion.method1916
+import ConfigFlagUtilStatics.method1916
 import TextureCubeProvider.Companion.method2269
 import ProjectedGroundDecor.Companion.method2433
 import RingBufferInputStream.Companion.method3616

@@ -1,5 +1,5 @@
-import ConfigFlagUtil.Companion.method1913
-import ConfigFlagUtil.Companion.method1916
+import ConfigFlagUtilStatics.method1913
+import ConfigFlagUtilStatics.method1916
 import RSFont.Companion.method2570
 import RegionTileNode.Companion.method2772
 import ChatCommandProcessor.method703
