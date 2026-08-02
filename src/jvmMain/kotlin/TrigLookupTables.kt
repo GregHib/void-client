@@ -31,7 +31,7 @@ class TrigLookupTables {
             if (TimedTileQueueEntry.aConnectionStateType_9660 != null) {
                 val thread = ResourceLoaderThread()
                 ActorEntity.aResourceLoaderThread_897 = thread
-                ActorEntity.aResourceLoaderThread_897!!.method2316(TimedTileQueueEntry.aConnectionStateType_9660, TimedTileQueueEntry.aConnectionStateType_9660!!.aLocalizedText_1012!!.method2063(ChatCommandProcessor.anInt6967, 544), TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025, DataHolder.aLong3660, false)
+                ActorEntity.aResourceLoaderThread_897!!.method2316(TimedTileQueueEntry.aConnectionStateType_9660, TimedTileQueueEntry.aConnectionStateType_9660!!.aLocalizedText_1012!!.method2063(ChatCommandProcessor.anInt6967, 544), TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025, DataHolderStatics.aLong3660, false)
                 TerrainShadowBuilderGl2.job = GlobalScope.launch(Dispatchers.Default) { thread.run() }
             }
         }

@@ -186,8 +186,8 @@ import ItemNameResolver.Companion.method318
 import GroundDecorRenderer.Companion.method2104
 import ClanChatRequestSender.method2107
 import NpcEntityUpdater.method2111
-import DataHolder.Companion.method2113
-import DataHolder.Companion.method2114
+import DataHolderStatics.method2113
+import DataHolderStatics.method2114
 import ViewportTransform.Companion.method2117
 import GlBufferObject.Companion.method2124
 import GlIndexBufferArb.Companion.method2132

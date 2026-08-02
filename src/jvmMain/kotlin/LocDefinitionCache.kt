@@ -125,7 +125,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 val f = (-(((100 + -i_5_) * (100 - i_5_) * (-i_5_ + 100)).toFloat() / 1000000.0f) + 1.0f)
                 GlslMaterialPass.anInt6246 = (SequencedGroundDecor.anInt10047.toFloat() + f * (-SequencedGroundDecor.anInt10047 + GlslMaterialPass.anInt6246).toFloat()).toInt()
                 ParticleSystemRenderer.anInt3855 = ((-SpriteComponent.anInt8368 + ParticleSystemRenderer.anInt3855).toFloat() * f + SpriteComponent.anInt8368.toFloat()).toInt()
-                MinimapAreaMarkerNode.anInt9701 = (DataHolder.anInt3662.toFloat() + (MinimapAreaMarkerNode.anInt9701 - DataHolder.anInt3662).toFloat() * f).toInt()
+                MinimapAreaMarkerNode.anInt9701 = (DataHolderStatics.anInt3662.toFloat() + (MinimapAreaMarkerNode.anInt9701 - DataHolderStatics.anInt3662).toFloat() * f).toInt()
                 CompositeRgbNoiseTexture.anInt8685 = (TextureAtlasState.anInt4424.toFloat() + f * (-TextureAtlasState.anInt4424 + CompositeRgbNoiseTexture.anInt8685).toFloat()).toInt()
                 var i_8_ = WorldMapElement.anInt4638 - CameraConfigDefinition.anInt3253
                 if (i_8_ <= 8192) {

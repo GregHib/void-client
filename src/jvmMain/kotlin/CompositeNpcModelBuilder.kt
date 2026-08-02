@@ -514,7 +514,7 @@ class CompositeNpcModelBuilder {
     fun method1233(modelDefinitionLoader: ModelDefinitionLoader?, i: Int, i_112_: Int, i_113_: Int) {
         try {
             anInt2098++
-            val i_114_ = DataHolder.anIntArray3661!![i_113_]
+            val i_114_ = DataHolderStatics.anIntArray3661!![i_113_]
             if (modelDefinitionLoader!!.method1203(33.toByte(), i) != null) {
                 if (i_112_ != -1) aLong2094 = -53L
                 anIntArray2092!![i_114_] = WhirlpoolHash.method2057(i, -2147483648)

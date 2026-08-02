@@ -80,7 +80,7 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
             if (MaterialTypeMarker.aConnectionStateTypeArray6515 == null) {
                 MaterialTypeMarker.aConnectionStateTypeArray6515 = ConnectionStateType.Companion.method528(-91)
                 TimedTileQueueEntry.aConnectionStateType_9660 = MaterialTypeMarker.aConnectionStateTypeArray6515!![0]
-                DataHolder.aLong3660 = GameClock.method599(-119)
+                DataHolderStatics.aLong3660 = GameClock.method599(-119)
             }
             anInt4900++
             if (ActorEntity.aResourceLoaderThread_897 == null) TrigLookupTables.method726(116)
@@ -97,11 +97,11 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
                 Direct3dModel.aString5420 = class56.aLocalizedText_1015!!.method2063(ChatCommandProcessor.anInt6967, 544)
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Direct3dModel.aString5420 += class56.anInt1021.toString() + "%"
                 ConfigFlagUtilStatics.anInt3236 = class56.anInt1021
-                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolder.aLong3660 = GameClock.method599(-128)
+                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolderStatics.aLong3660 = GameClock.method599(-128)
             }
             if (bool == true) {
                 if (ActorEntity.aResourceLoaderThread_897 != null) {
-                    ActorEntity.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aConnectionStateType_9660), Direct3dModel.aString5420, ConfigFlagUtilStatics.anInt3236, DataHolder.aLong3660, false)
+                    ActorEntity.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aConnectionStateType_9660), Direct3dModel.aString5420, ConfigFlagUtilStatics.anInt3236, DataHolderStatics.aLong3660, false)
                     if (LoadProgressCounters.anCursorControllerArray2447 != null) {
                         var i_5_ = PlayerAppearanceUpdateDecoder.anInt4544 - -1
                         while ((LoadProgressCounters.anCursorControllerArray2447!!.size > i_5_)) {
