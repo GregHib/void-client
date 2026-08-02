@@ -2389,7 +2389,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 7002) {
-                    NanoTimer.method447((-59).toByte())
+                    NanoTimerStatics.method447((-59).toByte())
                     TextureTileRenderer.method2953((-124).toByte())
                     method243(37)
                     RenderNodeStatics.aBoolean9719 = false

@@ -2683,7 +2683,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TrackedGroundDecor.anInt10374 = 0
             CacheArchiveIndex.anInt1765 = 0
             Player.anInt10532 = 0
-            NanoTimer.anInt844 = 0
+            NanoTimerStatics.anInt844 = 0
             CacheArchiveIndex.anInt1777 = 0
             ObjectSpawnDecoder.anInt1809 = 0
             SoundBankPatch.anInt6801 = 0

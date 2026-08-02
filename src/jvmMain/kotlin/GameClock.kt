@@ -72,7 +72,7 @@ object GameClock {
                 }
             } else {
                 i_3_ = 3
-                NanoTimer.method447((-59).toByte())
+                NanoTimerStatics.method447((-59).toByte())
             }
         } else {
             PlayerUpdateDecoder.method1140(120)

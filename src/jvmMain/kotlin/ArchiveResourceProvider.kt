@@ -433,7 +433,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
                 if (i_7_ > 100) {
                     if (i_7_ <= 500) {
                         i_6_ = 3
-                        NanoTimer.method447((-59).toByte())
+                        NanoTimerStatics.method447((-59).toByte())
                     } else if (i_7_ <= 1000) {
                         i_6_ = 2
                         ServerConnectionInfo.method1263(true)

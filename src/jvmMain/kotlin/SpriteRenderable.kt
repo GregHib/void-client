@@ -81,7 +81,7 @@ class SpriteRenderable internal constructor(var_ha_Sub1: SoftwareRenderer?, abst
                 PlayerUpdateDecoder.method1140(73)
                 i_2_ = 4
             } else if (i > 5000) {
-                NanoTimer.method447((-59).toByte())
+                NanoTimerStatics.method447((-59).toByte())
                 i_2_ = 3
             } else if (i <= 2000) {
                 i_2_ = 1
