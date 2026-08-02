@@ -486,7 +486,7 @@ import NativeRenderNode.Companion.method3288
 import OpenGlRenderNode.Companion.method3295
 import OpenGlTerrainTile.Companion.method4000
 import NativeTerrainTile.Companion.method4006
-import ShaderProgram.Companion.method3438
+import ShaderProgramStatics.method3438
 import NativeShaderProgram.Companion.method3441
 import ArbVertexProgram.Companion.method3443
 import ArbVertexProgram.Companion.method3444
@@ -4155,7 +4155,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (InboundPacketHeader.aInboundPacketHeader_8817 == InboundPacketHeader.aInboundPacketHeader_6584) {
-                ShaderProgram.anInt7276 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(69.toByte())
+                ShaderProgramStatics.anInt7276 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(69.toByte())
                 BufferToggleState.anInt3713 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteAdd((-82).toByte())
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true

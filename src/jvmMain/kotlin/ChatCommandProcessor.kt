@@ -239,18 +239,18 @@ object ChatCommandProcessor {
     private fun method704(i: Int, bool: Boolean) {
         if (i < 5100) {
             if (i == 5000) {
-                anIntArray1149!![anInt1173++] = ShaderProgram.anInt7276
+                anIntArray1149!![anInt1173++] = ShaderProgramStatics.anInt7276
                 return
             }
             if (i == 5001) {
                 anInt1173 -= 3
-                ShaderProgram.anInt7276 = anIntArray1149!![anInt1173]
+                ShaderProgramStatics.anInt7276 = anIntArray1149!![anInt1173]
                 MapSceneTile.aBoxedIntHolder_1055 = WidgetTextConfig.method360((-57).toByte(), anIntArray1149!![anInt1173 + 1])
                 if (MapSceneTile.aBoxedIntHolder_1055 == null) MapSceneTile.aBoxedIntHolder_1055 = MinimapRenderer.aBoxedIntHolder_1591
                 BufferToggleState.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
                 val class348_sub47 = method2148(LongKeyNode.aFontMetaRef_6766, (TheoraVideoStream.aIsaacCipher_9029), -111)
-                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, ShaderProgram.anInt7276)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, ShaderProgramStatics.anInt7276)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, MapSceneTile.aBoxedIntHolder_1055!!.anInt2970)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, BufferToggleState.anInt3713)
                 InterfaceComponentGroup.method3243(-77, class348_sub47)

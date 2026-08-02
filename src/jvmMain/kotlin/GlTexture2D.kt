@@ -242,7 +242,7 @@ open class GlTexture2D : GlTexture {
 
         @JvmStatic
         fun method1968() {
-            ShaderProgram.method3437(1, MapAreaDefinition.anInt2524)
+            ShaderProgramStatics.method3437(1, MapAreaDefinition.anInt2524)
         }
 
         @JvmStatic

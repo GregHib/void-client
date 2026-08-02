@@ -3569,7 +3569,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == TextureQualityOptionState.anInt6006) || ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub1_sub3_sub3.plane))) {
                     ModelKeyBuilder.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, 100.toByte())
                     if (RemoveRoofsOptionState.anIntArray6062!![0] >= 0) {
-                        if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || ShaderProgram.anInt7276 == 0 || ShaderProgram.anInt7276 == 3 || (ShaderProgram.anInt7276 == 1 && (KeyEventNode.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && SceneNodeDeque.anInt1497 < ConfigVarProgress.anInt4814) {
+                        if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || ShaderProgramStatics.anInt7276 == 0 || ShaderProgramStatics.anInt7276 == 3 || (ShaderProgramStatics.anInt7276 == 1 && (KeyEventNode.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && SceneNodeDeque.anInt1497 < ConfigVarProgress.anInt4814) {
                             ConfigVarProgress.anIntArray4819!![SceneNodeDeque.anInt1497] = ((WorldMapLabel.aFontDefinition_4962!!.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2)
                             ConfigVarProgress.anIntArray4822!![SceneNodeDeque.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![0]
                             ConfigVarProgress.anIntArray4813!![SceneNodeDeque.anInt1497] = RemoveRoofsOptionState.anIntArray6062!![1]

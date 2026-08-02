@@ -1193,7 +1193,7 @@ class OpenGlModel : AbstractModel {
             anIntArray5644!![i] = anIntArray5644!![i] shl 4
         }
         ScreenAnchorAlignment.anInt2880 = 0
-        ShaderProgram.anInt7275 = 0
+        ShaderProgramStatics.anInt7275 = 0
         SpotAnimDefinition.anInt2398 = 0
         return true
     }
@@ -1899,7 +1899,7 @@ class OpenGlModel : AbstractModel {
                 SpotAnimDefinition.anInt2398 = 0
                 var i_391_ = 0
                 ScreenAnchorAlignment.anInt2880 = 0
-                ShaderProgram.anInt7275 = 0
+                ShaderProgramStatics.anInt7275 = 0
                 for (i_392_ in 0..<i_390_) {
                     val i_393_ = `is`[i_392_]
                     if (i_393_ < anIntArrayArray5539!!.size) {
@@ -1907,7 +1907,7 @@ class OpenGlModel : AbstractModel {
                         var i_395_ = 0
                         while ((i_395_ < is_394_.size)) {
                             val i_396_ = is_394_[i_395_]
-                            ShaderProgram.anInt7275 += anIntArray5543!![i_396_]
+                            ShaderProgramStatics.anInt7275 += anIntArray5543!![i_396_]
                             ScreenAnchorAlignment.anInt2880 += anIntArray5593!![i_396_]
                             i_391_++
                             SpotAnimDefinition.anInt2398 += anIntArray5644!![i_396_]
@@ -1918,10 +1918,10 @@ class OpenGlModel : AbstractModel {
                 if (i_391_ <= 0) {
                     ScreenAnchorAlignment.anInt2880 = i_387_
                     SpotAnimDefinition.anInt2398 = i_388_
-                    ShaderProgram.anInt7275 = i_386_
+                    ShaderProgramStatics.anInt7275 = i_386_
                 } else {
                     ScreenAnchorAlignment.anInt2880 = i_387_ + ScreenAnchorAlignment.anInt2880 / i_391_
-                    ShaderProgram.anInt7275 = ShaderProgram.anInt7275 / i_391_ + i_386_
+                    ShaderProgramStatics.anInt7275 = ShaderProgramStatics.anInt7275 / i_391_ + i_386_
                     SpotAnimDefinition.anInt2398 = i_388_ + SpotAnimDefinition.anInt2398 / i_391_
                 }
             } else if (i == 1) {
@@ -1952,7 +1952,7 @@ class OpenGlModel : AbstractModel {
                             var i_416_ = 0
                             while ((is_404_.size > i_416_)) {
                                 val i_417_ = is_404_[i_416_]
-                                anIntArray5543!![i_417_] -= ShaderProgram.anInt7275
+                                anIntArray5543!![i_417_] -= ShaderProgramStatics.anInt7275
                                 anIntArray5593!![i_417_] -= ScreenAnchorAlignment.anInt2880
                                 anIntArray5644!![i_417_] -= SpotAnimDefinition.anInt2398
                                 if (i_388_ != 0) {
@@ -1976,7 +1976,7 @@ class OpenGlModel : AbstractModel {
                                     anIntArray5644!![i_417_] = (16383 + (anIntArray5644!![i_417_] * i_425_ - (anIntArray5543!![i_417_] * i_424_))) shr 14
                                     anIntArray5543!![i_417_] = i_426_
                                 }
-                                anIntArray5543!![i_417_] += ShaderProgram.anInt7275
+                                anIntArray5543!![i_417_] += ShaderProgramStatics.anInt7275
                                 anIntArray5593!![i_417_] += ScreenAnchorAlignment.anInt2880
                                 anIntArray5644!![i_417_] += SpotAnimDefinition.anInt2398
                                 i_416_++
@@ -1985,7 +1985,7 @@ class OpenGlModel : AbstractModel {
                             var i_405_ = 0
                             while (is_404_.size > i_405_) {
                                 val i_406_ = is_404_[i_405_]
-                                anIntArray5543!![i_406_] -= ShaderProgram.anInt7275
+                                anIntArray5543!![i_406_] -= ShaderProgramStatics.anInt7275
                                 anIntArray5593!![i_406_] -= ScreenAnchorAlignment.anInt2880
                                 anIntArray5644!![i_406_] -= SpotAnimDefinition.anInt2398
                                 if (i_386_ != 0) {
@@ -2009,7 +2009,7 @@ class OpenGlModel : AbstractModel {
                                     anIntArray5644!![i_406_] = (anIntArray5644!![i_406_] * i_414_ + (-(i_413_ * anIntArray5543!![i_406_]) - -16383)) shr 14
                                     anIntArray5543!![i_406_] = i_415_
                                 }
-                                anIntArray5543!![i_406_] += ShaderProgram.anInt7275
+                                anIntArray5543!![i_406_] += ShaderProgramStatics.anInt7275
                                 anIntArray5593!![i_406_] += ScreenAnchorAlignment.anInt2880
                                 anIntArray5644!![i_406_] += SpotAnimDefinition.anInt2398
                                 i_405_++
@@ -2067,13 +2067,13 @@ class OpenGlModel : AbstractModel {
                         val is_447_ = anIntArrayArray5539!![i_446_]!!
                         for (i_448_ in is_447_.indices) {
                             val i_449_ = is_447_[i_448_]
-                            anIntArray5543!![i_449_] -= ShaderProgram.anInt7275
+                            anIntArray5543!![i_449_] -= ShaderProgramStatics.anInt7275
                             anIntArray5593!![i_449_] -= ScreenAnchorAlignment.anInt2880
                             anIntArray5644!![i_449_] -= SpotAnimDefinition.anInt2398
                             anIntArray5543!![i_449_] = i_386_ * anIntArray5543!![i_449_] shr 7
                             anIntArray5593!![i_449_] = anIntArray5593!![i_449_] * i_387_ shr 7
                             anIntArray5644!![i_449_] = anIntArray5644!![i_449_] * i_388_ shr 7
-                            anIntArray5543!![i_449_] += ShaderProgram.anInt7275
+                            anIntArray5543!![i_449_] += ShaderProgramStatics.anInt7275
                             anIntArray5593!![i_449_] += ScreenAnchorAlignment.anInt2880
                             anIntArray5644!![i_449_] += SpotAnimDefinition.anInt2398
                         }
@@ -2207,12 +2207,12 @@ class OpenGlModel : AbstractModel {
     public override fun P(i: Int, i_479_: Int, i_480_: Int, i_481_: Int) {
         anInt5567++
         if (i == 0) {
-            ShaderProgram.anInt7275 = 0
+            ShaderProgramStatics.anInt7275 = 0
             SpotAnimDefinition.anInt2398 = 0
             ScreenAnchorAlignment.anInt2880 = 0
             var i_482_ = 0
             for (i_483_ in 0..<anInt5557) {
-                ShaderProgram.anInt7275 += anIntArray5543!![i_483_]
+                ShaderProgramStatics.anInt7275 += anIntArray5543!![i_483_]
                 ScreenAnchorAlignment.anInt2880 += anIntArray5593!![i_483_]
                 i_482_++
                 SpotAnimDefinition.anInt2398 += anIntArray5644!![i_483_]
@@ -2220,10 +2220,10 @@ class OpenGlModel : AbstractModel {
             if (i_482_ <= 0) {
                 ScreenAnchorAlignment.anInt2880 = i_480_
                 SpotAnimDefinition.anInt2398 = i_481_
-                ShaderProgram.anInt7275 = i_479_
+                ShaderProgramStatics.anInt7275 = i_479_
             } else {
                 ScreenAnchorAlignment.anInt2880 = ScreenAnchorAlignment.anInt2880 / i_482_ - -i_480_
-                ShaderProgram.anInt7275 = i_479_ + ShaderProgram.anInt7275 / i_482_
+                ShaderProgramStatics.anInt7275 = i_479_ + ShaderProgramStatics.anInt7275 / i_482_
                 SpotAnimDefinition.anInt2398 = SpotAnimDefinition.anInt2398 / i_482_ + i_481_
             }
         } else if (i == 1) {
@@ -2234,7 +2234,7 @@ class OpenGlModel : AbstractModel {
             }
         } else if (i == 2) {
             for (i_485_ in 0..<anInt5557) {
-                anIntArray5543!![i_485_] -= ShaderProgram.anInt7275
+                anIntArray5543!![i_485_] -= ShaderProgramStatics.anInt7275
                 anIntArray5593!![i_485_] -= ScreenAnchorAlignment.anInt2880
                 anIntArray5644!![i_485_] -= SpotAnimDefinition.anInt2398
                 if (i_481_ != 0) {
@@ -2258,19 +2258,19 @@ class OpenGlModel : AbstractModel {
                     anIntArray5644!![i_485_] = (16383 + (-(anIntArray5543!![i_485_] * i_492_) + i_493_ * anIntArray5644!![i_485_]) shr 14)
                     anIntArray5543!![i_485_] = i_494_
                 }
-                anIntArray5543!![i_485_] += ShaderProgram.anInt7275
+                anIntArray5543!![i_485_] += ShaderProgramStatics.anInt7275
                 anIntArray5593!![i_485_] += ScreenAnchorAlignment.anInt2880
                 anIntArray5644!![i_485_] += SpotAnimDefinition.anInt2398
             }
         } else if (i == 3) {
             for (i_495_ in 0..<anInt5557) {
-                anIntArray5543!![i_495_] -= ShaderProgram.anInt7275
+                anIntArray5543!![i_495_] -= ShaderProgramStatics.anInt7275
                 anIntArray5593!![i_495_] -= ScreenAnchorAlignment.anInt2880
                 anIntArray5644!![i_495_] -= SpotAnimDefinition.anInt2398
                 anIntArray5543!![i_495_] = i_479_ * anIntArray5543!![i_495_] / 128
                 anIntArray5593!![i_495_] = i_480_ * anIntArray5593!![i_495_] / 128
                 anIntArray5644!![i_495_] = anIntArray5644!![i_495_] * i_481_ / 128
-                anIntArray5543!![i_495_] += ShaderProgram.anInt7275
+                anIntArray5543!![i_495_] += ShaderProgramStatics.anInt7275
                 anIntArray5593!![i_495_] += ScreenAnchorAlignment.anInt2880
                 anIntArray5644!![i_495_] += SpotAnimDefinition.anInt2398
             }
@@ -2421,7 +2421,7 @@ class OpenGlModel : AbstractModel {
                 i_512_ = i_512_ shl 4
                 i_510_ = i_510_ shl 4
                 var i_516_ = 0
-                ShaderProgram.anInt7275 = 0
+                ShaderProgramStatics.anInt7275 = 0
                 ScreenAnchorAlignment.anInt2880 = 0
                 SpotAnimDefinition.anInt2398 = 0
                 var i_517_ = 0
@@ -2432,7 +2432,7 @@ class OpenGlModel : AbstractModel {
                         for (i_520_ in is_519_.indices) {
                             val i_521_ = is_519_[i_520_]
                             if (aShortArray5608 == null || (i_513_ and aShortArray5608!![i_521_].toInt()) != 0) {
-                                ShaderProgram.anInt7275 += anIntArray5543!![i_521_]
+                                ShaderProgramStatics.anInt7275 += anIntArray5543!![i_521_]
                                 ScreenAnchorAlignment.anInt2880 += anIntArray5593!![i_521_]
                                 i_516_++
                                 SpotAnimDefinition.anInt2398 += anIntArray5644!![i_521_]
@@ -2442,11 +2442,11 @@ class OpenGlModel : AbstractModel {
                     i_517_++
                 }
                 if (i_516_ <= 0) {
-                    ShaderProgram.anInt7275 = i_510_
+                    ShaderProgramStatics.anInt7275 = i_510_
                     SpotAnimDefinition.anInt2398 = i_512_
                     ScreenAnchorAlignment.anInt2880 = i_511_
                 } else {
-                    ShaderProgram.anInt7275 = i_510_ + ShaderProgram.anInt7275 / i_516_
+                    ShaderProgramStatics.anInt7275 = i_510_ + ShaderProgramStatics.anInt7275 / i_516_
                     ScreenAnchorAlignment.anInt2880 = ScreenAnchorAlignment.anInt2880 / i_516_ - -i_511_
                     SpotAnimDefinition.anInt2398 = i_512_ + SpotAnimDefinition.anInt2398 / i_516_
                     StreamingResourceRequest.aBoolean10450 = true
@@ -2490,7 +2490,7 @@ class OpenGlModel : AbstractModel {
                             while (is_532_.size > i_533_) {
                                 val i_534_ = is_532_[i_533_]
                                 if (aShortArray5608 == null || ((i_513_ and aShortArray5608!![i_534_].toInt()) != 0)) {
-                                    anIntArray5543!![i_534_] -= ShaderProgram.anInt7275
+                                    anIntArray5543!![i_534_] -= ShaderProgramStatics.anInt7275
                                     anIntArray5593!![i_534_] -= ScreenAnchorAlignment.anInt2880
                                     anIntArray5644!![i_534_] -= SpotAnimDefinition.anInt2398
                                     if (i_512_ != 0) {
@@ -2514,7 +2514,7 @@ class OpenGlModel : AbstractModel {
                                         anIntArray5644!![i_534_] = ((16383 + ((anIntArray5644!![i_534_] * i_542_) + -(anIntArray5543!![i_534_] * i_541_))) shr 14)
                                         anIntArray5543!![i_534_] = i_543_
                                     }
-                                    anIntArray5543!![i_534_] += ShaderProgram.anInt7275
+                                    anIntArray5543!![i_534_] += ShaderProgramStatics.anInt7275
                                     anIntArray5593!![i_534_] += ScreenAnchorAlignment.anInt2880
                                     anIntArray5644!![i_534_] += SpotAnimDefinition.anInt2398
                                 }
@@ -2577,13 +2577,13 @@ class OpenGlModel : AbstractModel {
                     val i_566_ = is_514_[13] shl 4
                     val i_567_ = is_514_[14] shl 4
                     if (StreamingResourceRequest.aBoolean10450) {
-                        var i_568_ = ((ShaderProgram.anInt7275 * is_514_[0] - -(is_514_[3] * ScreenAnchorAlignment.anInt2880) - -(is_514_[6] * SpotAnimDefinition.anInt2398) - -8192) shr 14)
-                        var i_569_ = ((is_514_[1] * ShaderProgram.anInt7275 - -(ScreenAnchorAlignment.anInt2880 * is_514_[4]) - (-(is_514_[7] * SpotAnimDefinition.anInt2398) - 8192)) shr 14)
+                        var i_568_ = ((ShaderProgramStatics.anInt7275 * is_514_[0] - -(is_514_[3] * ScreenAnchorAlignment.anInt2880) - -(is_514_[6] * SpotAnimDefinition.anInt2398) - -8192) shr 14)
+                        var i_569_ = ((is_514_[1] * ShaderProgramStatics.anInt7275 - -(ScreenAnchorAlignment.anInt2880 * is_514_[4]) - (-(is_514_[7] * SpotAnimDefinition.anInt2398) - 8192)) shr 14)
                         i_568_ += i_565_
                         i_569_ += i_566_
-                        var i_570_ = (8192 + (SpotAnimDefinition.anInt2398 * is_514_[8] + is_514_[2] * ShaderProgram.anInt7275 + is_514_[5] * ScreenAnchorAlignment.anInt2880) shr 14)
+                        var i_570_ = (8192 + (SpotAnimDefinition.anInt2398 * is_514_[8] + is_514_[2] * ShaderProgramStatics.anInt7275 + is_514_[5] * ScreenAnchorAlignment.anInt2880) shr 14)
                         i_570_ += i_567_
-                        ShaderProgram.anInt7275 = i_568_
+                        ShaderProgramStatics.anInt7275 = i_568_
                         ScreenAnchorAlignment.anInt2880 = i_569_
                         SpotAnimDefinition.anInt2398 = i_570_
                         StreamingResourceRequest.aBoolean10450 = false
@@ -2606,10 +2606,10 @@ class OpenGlModel : AbstractModel {
                     is_571_[0] = (8192 + (i_575_ * i_579_ + i_576_ * i_574_) shr 14)
                     is_571_[7] = (8192 + i_574_ * i_578_ + i_577_ * i_575_ shr 14)
                     is_571_[2] = i_575_ * i_572_ - -8192 shr 14
-                    val i_580_ = ((is_571_[1] * -ScreenAnchorAlignment.anInt2880 + -ShaderProgram.anInt7275 * is_571_[0] - (-(-SpotAnimDefinition.anInt2398 * is_571_[2]) + -8192)) shr 14)
-                    val i_581_ = ((-ShaderProgram.anInt7275 * is_571_[3] + is_571_[4] * -ScreenAnchorAlignment.anInt2880 - -(is_571_[5] * -SpotAnimDefinition.anInt2398) + 8192) shr 14)
-                    val i_582_ = ((-SpotAnimDefinition.anInt2398 * is_571_[8] + (is_571_[6] * -ShaderProgram.anInt7275 - -(is_571_[7] * -ScreenAnchorAlignment.anInt2880)) - -8192) shr 14)
-                    val i_583_ = i_580_ - -ShaderProgram.anInt7275
+                    val i_580_ = ((is_571_[1] * -ScreenAnchorAlignment.anInt2880 + -ShaderProgramStatics.anInt7275 * is_571_[0] - (-(-SpotAnimDefinition.anInt2398 * is_571_[2]) + -8192)) shr 14)
+                    val i_581_ = ((-ShaderProgramStatics.anInt7275 * is_571_[3] + is_571_[4] * -ScreenAnchorAlignment.anInt2880 - -(is_571_[5] * -SpotAnimDefinition.anInt2398) + 8192) shr 14)
+                    val i_582_ = ((-SpotAnimDefinition.anInt2398 * is_571_[8] + (is_571_[6] * -ShaderProgramStatics.anInt7275 - -(is_571_[7] * -ScreenAnchorAlignment.anInt2880)) - -8192) shr 14)
+                    val i_583_ = i_580_ - -ShaderProgramStatics.anInt7275
                     val i_584_ = i_581_ - -ScreenAnchorAlignment.anInt2880
                     val i_585_ = SpotAnimDefinition.anInt2398 + i_582_
                     val is_586_ = IntArray(9)
@@ -2674,13 +2674,13 @@ class OpenGlModel : AbstractModel {
                             while ((i_651_ < is_650_.size)) {
                                 val i_652_ = is_650_[i_651_]
                                 if (aShortArray5608 == null || ((i_513_ and aShortArray5608!![i_652_].toInt()) != 0)) {
-                                    anIntArray5543!![i_652_] -= ShaderProgram.anInt7275
+                                    anIntArray5543!![i_652_] -= ShaderProgramStatics.anInt7275
                                     anIntArray5593!![i_652_] -= ScreenAnchorAlignment.anInt2880
                                     anIntArray5644!![i_652_] -= SpotAnimDefinition.anInt2398
                                     anIntArray5543!![i_652_] = (anIntArray5543!![i_652_] * i_510_ shr 7)
                                     anIntArray5593!![i_652_] = (anIntArray5593!![i_652_] * i_511_ shr 7)
                                     anIntArray5644!![i_652_] = (i_512_ * anIntArray5644!![i_652_] shr 7)
-                                    anIntArray5543!![i_652_] += ShaderProgram.anInt7275
+                                    anIntArray5543!![i_652_] += ShaderProgramStatics.anInt7275
                                     anIntArray5593!![i_652_] += ScreenAnchorAlignment.anInt2880
                                     anIntArray5644!![i_652_] += SpotAnimDefinition.anInt2398
                                 }
@@ -2697,24 +2697,24 @@ class OpenGlModel : AbstractModel {
                     val i_614_ = is_514_[13] shl 4
                     val i_615_ = is_514_[14] shl 4
                     if (StreamingResourceRequest.aBoolean10450) {
-                        var i_616_ = (8192 + (ShaderProgram.anInt7275 * is_514_[0] - -(ScreenAnchorAlignment.anInt2880 * is_514_[3]) - -(is_514_[6] * SpotAnimDefinition.anInt2398)) shr 14)
-                        var i_617_ = (8192 + (is_514_[7] * SpotAnimDefinition.anInt2398 + (ScreenAnchorAlignment.anInt2880 * is_514_[4] + is_514_[1] * ShaderProgram.anInt7275)) shr 14)
+                        var i_616_ = (8192 + (ShaderProgramStatics.anInt7275 * is_514_[0] - -(ScreenAnchorAlignment.anInt2880 * is_514_[3]) - -(is_514_[6] * SpotAnimDefinition.anInt2398)) shr 14)
+                        var i_617_ = (8192 + (is_514_[7] * SpotAnimDefinition.anInt2398 + (ScreenAnchorAlignment.anInt2880 * is_514_[4] + is_514_[1] * ShaderProgramStatics.anInt7275)) shr 14)
                         i_617_ += i_614_
-                        var i_618_ = ((is_514_[5] * ScreenAnchorAlignment.anInt2880 + ShaderProgram.anInt7275 * is_514_[2] + is_514_[8] * SpotAnimDefinition.anInt2398 - -8192) shr 14)
+                        var i_618_ = ((is_514_[5] * ScreenAnchorAlignment.anInt2880 + ShaderProgramStatics.anInt7275 * is_514_[2] + is_514_[8] * SpotAnimDefinition.anInt2398 - -8192) shr 14)
                         i_616_ += i_613_
                         ScreenAnchorAlignment.anInt2880 = i_617_
                         i_618_ += i_615_
-                        ShaderProgram.anInt7275 = i_616_
+                        ShaderProgramStatics.anInt7275 = i_616_
                         StreamingResourceRequest.aBoolean10450 = false
                         SpotAnimDefinition.anInt2398 = i_618_
                     }
                     val i_619_ = i_510_ shl 15 shr 7
                     val i_620_ = i_511_ shl 15 shr 7
                     val i_621_ = i_512_ shl 15 shr 7
-                    val i_622_ = -ShaderProgram.anInt7275 * i_619_ + 8192 shr 14
+                    val i_622_ = -ShaderProgramStatics.anInt7275 * i_619_ + 8192 shr 14
                     val i_623_ = i_620_ * -ScreenAnchorAlignment.anInt2880 + 8192 shr 14
                     val i_624_ = -SpotAnimDefinition.anInt2398 * i_621_ - -8192 shr 14
-                    val i_625_ = i_622_ + ShaderProgram.anInt7275
+                    val i_625_ = i_622_ + ShaderProgramStatics.anInt7275
                     val i_626_ = i_623_ - -ScreenAnchorAlignment.anInt2880
                     val i_627_ = SpotAnimDefinition.anInt2398 + i_624_
                     val is_628_ = IntArray(9)
