@@ -61,7 +61,7 @@ class FireParticleStream : OutputStream() {
                 AsyncTaskHandle.method1434(-14988)
                 if (!bool) NpcEntityUpdater.method2109(512)
                 GroundItemRenderState.method1014(-4)
-                LoadingScreenImageNode.method3174(i_1_, i_3_, i_0_, true, (-82).toByte(), i_2_)
+                LoadingScreenImageNodeStatics.method3174(i_1_, i_3_, i_0_, true, (-82).toByte(), i_2_)
                 i_3_ = RandomAccessFileOnDisk.anInt3047
                 i_1_ = LocalizedTextTriple.anInt3764
                 i_2_ = GroundDecorRenderer.anInt3643

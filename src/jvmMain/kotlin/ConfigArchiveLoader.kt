@@ -599,7 +599,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_21_)
                                 method243(37)
                                 RenderNodeStatics.aBoolean9719 = false
-                                LoadingScreenImageNode.method3179(i + 79)
+                                LoadingScreenImageNodeStatics.method3179(i + 79)
                                 if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350) == i_21_) {
                                     method94("Successfully changed ortho mode", -82)
                                     return
@@ -623,7 +623,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             Js5Archive.anInt666 = i_23_
                             PerlinTextureProvider.anInt5812 = Js5Archive.anInt666
                             method94("ortho tile size=" + i_23_, -70)
-                            LoadingScreenImageNode.method3179(0)
+                            LoadingScreenImageNodeStatics.method3179(0)
                             return
                         }
                         if (string == "orthocamlock") {

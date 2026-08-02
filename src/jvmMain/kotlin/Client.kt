@@ -351,7 +351,7 @@ import CompletedResourceRequest.Companion.method3263
 import ParticleEmitterListNode.Companion.method3274
 import MinimapAreaMarkerNode.Companion.method3278
 import SpriteRenderEntry.Companion.method3280
-import LoadingScreenImageNode.Companion.method3176
+import LoadingScreenImageNodeStatics.method3176
 import ShortMatrixNode.Companion.method3181
 import ChatScriptListNode.Companion.method3190
 import ChatCommandProcessor.method3199
@@ -654,8 +654,8 @@ class Client : GameAppletFrame() {
             DirectionalLightTextureNode.aServerConnectionInfo_9443!!.anInt2138 = 50000 - -DirectionalLightTextureNode.aServerConnectionInfo_9443!!.anInt2143
         }
         HslPaletteState.aShortArray4172 = ShortArray(256)
-        LoadingScreenImageNode.aShortArray9502 = HslPaletteState.aShortArray4172
-        NamedIdEntry.aShortArray6889 = LoadingScreenImageNode.aShortArray9502
+        LoadingScreenImageNodeStatics.aShortArray9502 = HslPaletteState.aShortArray4172
+        NamedIdEntry.aShortArray6889 = LoadingScreenImageNodeStatics.aShortArray9502
         aShortArray6428 = NamedIdEntry.aShortArray6889
         if (Client.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) TextureLoadExceptionStatics.aBoolean4599 = false
         if (GlRectangleTexture.aSceneProjector_8638 == Client.aSceneProjector_10434) {
@@ -2448,7 +2448,7 @@ class Client : GameAppletFrame() {
                                     }
                                     class46.anInt715 = EmoteDefCache.anInt4086
                                 }
-                                if ((LoadingScreenImageNode.anInt9501 > class46.anInt726) && (class46.anObjectArray820 != null)) {
+                                if ((LoadingScreenImageNodeStatics.anInt9501 > class46.anInt726) && (class46.anObjectArray820 != null)) {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aWidgetComponent_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray820

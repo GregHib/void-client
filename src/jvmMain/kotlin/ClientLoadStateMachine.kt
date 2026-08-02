@@ -100,7 +100,7 @@ object ClientLoadStateMachine {
                 }
             }
         }
-        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1026) LoadingScreenImageNode.method3178(SoftwareSpriteRaster.aJs5Archive_1627, -81, method184(1084489728), ScrollTexMaterialPass.aJs5Archive_6277)
+        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1026) LoadingScreenImageNodeStatics.method3178(SoftwareSpriteRaster.aJs5Archive_1627, -81, method184(1084489728), ScrollTexMaterialPass.aJs5Archive_6277)
         if (ConnectionStateType.aConnectionStateType_1027 == TimedTileQueueEntry.aConnectionStateType_9660) {
             val i_5_ = StringCacheNode.method3420(0)
             val i_6_ = method3256(2)
@@ -162,7 +162,7 @@ object ClientLoadStateMachine {
                 return ((i_8_ + -LocDefinitionCache.anInt3435) * 100 / (-LocDefinitionCache.anInt3435 + 100))
             }
             TexGenMaterialPass.method2159((-109).toByte(), CameraRotationStub.aJs5Archive_322!!)
-            LoadingScreenImageNode.method3178(SoftwareSpriteRaster.aJs5Archive_1627, -124, method184(i xor 0x40a46ff3.inv()), CameraRotationStub.aJs5Archive_322)
+            LoadingScreenImageNodeStatics.method3178(SoftwareSpriteRaster.aJs5Archive_1627, -124, method184(i xor 0x40a46ff3.inv()), CameraRotationStub.aJs5Archive_322)
         }
         if (ConnectionStateType.aConnectionStateType_1032 == TimedTileQueueEntry.aConnectionStateType_9660) {
             if (ParticleProcessor.anInt4270 == -1) ParticleProcessor.anInt4270 = CachedRgbNoiseTexture.aJs5Archive_8667!!.method417("scape main", 0)

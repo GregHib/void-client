@@ -530,7 +530,7 @@ class NpcType {
                     var i_80_ = 0
                     while ((i_80_ < aShortArray1328!!.size)) {
                         if (aByteArray1374 == null || aByteArray1374!!.size <= i_80_) abstractModel.ia(aShortArray1328!![i_80_], aShortArray1352[i_80_])
-                        else abstractModel.ia(aShortArray1328!![i_80_], (LoadingScreenImageNode.aShortArray9502!![aByteArray1374!![i_80_].toInt() and 0xff]))
+                        else abstractModel.ia(aShortArray1328!![i_80_], (LoadingScreenImageNodeStatics.aShortArray9502!![aByteArray1374!![i_80_].toInt() and 0xff]))
                         i_80_++
                     }
                 }
@@ -677,7 +677,7 @@ class NpcType {
                 if (aShortArray1328 != null) {
                     var i_104_ = 0
                     while ((aShortArray1328!!.size > i_104_)) {
-                        if (aByteArray1374 != null && aByteArray1374!!.size > i_104_) abstractModel.ia(aShortArray1328!![i_104_], (LoadingScreenImageNode.aShortArray9502!![0xff and aByteArray1374!![i_104_].toInt()]))
+                        if (aByteArray1374 != null && aByteArray1374!!.size > i_104_) abstractModel.ia(aShortArray1328!![i_104_], (LoadingScreenImageNodeStatics.aShortArray9502!![0xff and aByteArray1374!![i_104_].toInt()]))
                         else abstractModel.ia(aShortArray1328!![i_104_], aShortArray1352[i_104_])
                         i_104_++
                     }

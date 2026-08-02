@@ -27,7 +27,7 @@ class StringCacheNode : LinkedListNode {
             DisplaceTextureNode.anIntArray9135 = null
             anInt7210++
             if (i != 13022) method3418(-79)
-            LoadingScreenImageNode.aBoolean9498 = false
+            LoadingScreenImageNodeStatics.aBoolean9498 = false
             SplashImageLoadable.anIntArray4692 = null
             FacingDirectionNode.anIntArray6655 = null
         }

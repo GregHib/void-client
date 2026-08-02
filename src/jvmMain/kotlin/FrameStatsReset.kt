@@ -643,7 +643,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ItemDefinition.anInt2829 = 0
             ScrollbarComponent.anInt8345 = 0
             AbstractCameraTransformStatics.anInt1594 = 0
-            LoadingScreenImageNode.anInt9500 = 0
+            LoadingScreenImageNodeStatics.anInt9500 = 0
             ByteBuffer.anInt7170 = 0
             ItemDefinition.anInt2832 = 0
             BlankTextureNode.anInt9258 = 0
@@ -2478,7 +2478,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ByteBuffer.anInt7191 = 0
             MinimapTriangleDrawer.anInt5235 = 0
             OpenGlModel.anInt5636 = 0
-            LoadingScreenImageNode.anInt9507 = 0
+            LoadingScreenImageNodeStatics.anInt9507 = 0
             Player.anInt10545 = 0
             AbstractTileShape.anInt6563 = 0
             MidiSequencePlayer.anInt8903 = 0
@@ -3442,7 +3442,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ClientMachineInfo.anInt6615 = 0
             FontDefinition.anInt1978 = 0
             NamedIdRecord.anInt4468 = 0
-            LoadingScreenImageNode.anInt9508 = 0
+            LoadingScreenImageNodeStatics.anInt9508 = 0
             NativeRenderer.anInt7912 = 0
             RegionSceneShifter.anInt7055 = 0
             FlipTextureNode.anInt9146 = 0
@@ -3753,7 +3753,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WaterDetailOptionState.anInt5986 = 0
             BoxBlurTextureNode.anInt9462 = 0
             Hashtable.anInt4386 = 0
-            LoadingScreenImageNode.anInt9506 = 0
+            LoadingScreenImageNodeStatics.anInt9506 = 0
             ResourceLoaderThread.anInt3903 = 0
             AntialiasOptionState.anInt6083 = 0
             FogOptionState.anInt6051 = 0
@@ -4176,8 +4176,8 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             method773(true)
             WorldMapPolygonIconLabel.aBoolean10174 = true
             HslPaletteState.aShortArray4172 = ShortArray(256)
-            LoadingScreenImageNode.aShortArray9502 = HslPaletteState.aShortArray4172
-            NamedIdEntry.aShortArray6889 = LoadingScreenImageNode.aShortArray9502
+            LoadingScreenImageNodeStatics.aShortArray9502 = HslPaletteState.aShortArray4172
+            NamedIdEntry.aShortArray6889 = LoadingScreenImageNodeStatics.aShortArray9502
             Client.aShortArray6428 = NamedIdEntry.aShortArray6889
             LightingOptionState.aString5882 = LocalizedText.aLocalizedText_3509!!.method2063(ChatCommandProcessor.anInt6967, 544)
             IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7264, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(i + -32350))

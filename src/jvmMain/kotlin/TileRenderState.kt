@@ -145,7 +145,7 @@ class TileRenderState {
                     InterfaceBounds.method2938(127.toByte())
                     method369(-29776)
                     method3616(12639)
-                    LoadingScreenImageNode.method3177(-78, false)
+                    LoadingScreenImageNodeStatics.method3177(-78, false)
                     for (i_12_ in 0..2047) {
                         val player = (LoadingBarRenderer.aPlayerArray5058!![i_12_])
                         if (player != null) {

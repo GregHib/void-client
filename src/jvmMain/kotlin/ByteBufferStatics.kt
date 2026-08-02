@@ -9,7 +9,7 @@ import ChatEffectsOptionState.Companion.method1728
 import GraphicsOptionState.Companion.anInt3137
 import HeadIconRenderer.Companion.method1213
 import LoadProgressCounters.Companion.method1372
-import LoadingScreenImageNode.Companion.method3177
+import LoadingScreenImageNodeStatics.method3177
 import RsaPacketDecoder.Companion.method2672
 import SpriteBlitter.method882
 import SpriteRgbTextureNode.Companion.method3093

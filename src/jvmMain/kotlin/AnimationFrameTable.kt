@@ -11,7 +11,7 @@ object AnimationFrameTable {
     var anInt489: Int = 0
 
     fun method354(i: Int) {
-        LoadingScreenImageNode.aBoolean9498 = true
+        LoadingScreenImageNodeStatics.aBoolean9498 = true
         if (i != 2) method355(84)
         anInt488++
     }

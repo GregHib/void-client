@@ -67,7 +67,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     val i_14_ = ((var_s!!.method3982((-86).toByte(), i_13_, i_10_) + var_s.method3982((-86).toByte(), i_13_, i_11_) - (-var_s.method3982((-86).toByte(), i_12_, i_10_) - var_s.method3982((-86).toByte(), i_12_, i_11_))) shr 2)
                     val i_15_ = (i shl 9) - -(i_9_ shl 8)
                     val i_16_ = (i_8_ shl 8) + (i_5_ shl 9)
-                    val bool = (LoadingScreenImageNode.aBoolean9498 && !this.aBoolean3109 && class51.aBoolean906)
+                    val bool = (LoadingScreenImageNodeStatics.aBoolean9498 && !this.aBoolean3109 && class51.aBoolean906)
                     if (class51.method474(82.toByte())) IdentKitRecolor.method1614(979190089, null, i_0_, i_5_, i, null, class51, i_7_)
                     val bool_17_ = (i_6_ == -1 && class51.anInt868 == -1 && class51.anIntArray943 == null && class51.anIntArray945 == null && !class51.aBoolean929)
                     if (!SpriteRenderable.aBoolean4728 || ((!ScreenBorderFiller.method1172((-85).toByte(), i_4_) || class51.anInt955 == 1) && (!method1639(i_4_, i_3_ xor 0x3918) || class51.anInt955 != 0))) {
@@ -97,7 +97,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             }
                             if (method850(class318_sub1_sub3, false)) {
                                 if (class318_sub1_sub3_sub1 != null && class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(836, var_renderer)
-                                if (class51.aBoolean918 && LoadingScreenImageNode.aBoolean9498) {
+                                if (class51.aBoolean918 && LoadingScreenImageNodeStatics.aBoolean9498) {
                                     if (i_18_ > 30) i_18_ = 30
                                     var i_20_ = 0
                                     while ((i_20_ <= i_9_)) {
@@ -119,7 +119,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 if (class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(i_3_ + 786, var_renderer)
                             } else class318_sub1_sub3 = (SequencedGroundDecor(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i, i + (i_9_ - 1), i_5_, i_5_ - (-i_8_ - -1), i_4_, i_7_, i_6_))
                             method850(class318_sub1_sub3, false)
-                            if (LoadingScreenImageNode.aBoolean9498 && !this.aBoolean3109 && i_4_ >= 12 && i_4_ <= 17 && i_4_ != 13 && i_0_ > 0 && (class51.anInt955 != 0)) this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_] = (WhirlpoolHash.method2057((this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_]).toInt(), 4)).toByte()
+                            if (LoadingScreenImageNodeStatics.aBoolean9498 && !this.aBoolean3109 && i_4_ >= 12 && i_4_ <= 17 && i_4_ != 13 && i_0_ > 0 && (class51.anInt955 != 0)) this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_] = (WhirlpoolHash.method2057((this.aByteArrayArrayArray3108!![i_0_]!![i]!![i_5_]).toInt(), 4)).toByte()
                             if ((class51.anInt920 != 0) && collisionMap != null) collisionMap.method3505(!(class51.aBoolean876), i_9_, i_5_, true, i, (class51.aBoolean896), i_8_)
                         } else if (i_4_ == 0) {
                             var i_22_ = class51.anInt955
@@ -132,25 +132,25 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             } else class318_sub1_sub4 = (SequencedActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, null)
                             if (i_7_ == 0) {
-                                if (LoadingScreenImageNode.aBoolean9498 && class51.aBoolean918) {
+                                if (LoadingScreenImageNodeStatics.aBoolean9498 && class51.aBoolean918) {
                                     var_s.ka(i, i_5_, 50)
                                     var_s.ka(i, i_5_ - -1, 50)
                                 }
                                 if (i_22_ == 1 && !this.aBoolean3109) method1810(i, class51.anInt953, class51.anInt909, i_5_, i_3_ + -51, i_0_, 1)
                             } else if (i_7_ == 1) {
-                                if (LoadingScreenImageNode.aBoolean9498 && class51.aBoolean918) {
+                                if (LoadingScreenImageNodeStatics.aBoolean9498 && class51.aBoolean918) {
                                     var_s.ka(i, 1 + i_5_, 50)
                                     var_s.ka(1 + i, 1 + i_5_, 50)
                                 }
                                 if (i_22_ == 1 && !this.aBoolean3109) method1810(i, -class51.anInt953, class51.anInt909, 1 + i_5_, -1, i_0_, 2)
                             } else if (i_7_ == 2) {
-                                if (LoadingScreenImageNode.aBoolean9498 && class51.aBoolean918) {
+                                if (LoadingScreenImageNodeStatics.aBoolean9498 && class51.aBoolean918) {
                                     var_s.ka(i - -1, i_5_, 50)
                                     var_s.ka(1 + i, 1 + i_5_, 50)
                                 }
                                 if (i_22_ == 1 && !this.aBoolean3109) method1810(1 + i, -class51.anInt953, class51.anInt909, i_5_, i_3_ + -51, i_0_, 1)
                             } else if (i_7_ == 3) {
-                                if (LoadingScreenImageNode.aBoolean9498 && class51.aBoolean918) {
+                                if (LoadingScreenImageNodeStatics.aBoolean9498 && class51.aBoolean918) {
                                     var_s.ka(i, i_5_, 50)
                                     var_s.ka(1 + i, i_5_, 50)
                                 }
@@ -166,7 +166,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1
                             } else class318_sub1_sub4 = (SequencedActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, null)
-                            if (class51.aBoolean918 && LoadingScreenImageNode.aBoolean9498) {
+                            if (class51.aBoolean918 && LoadingScreenImageNodeStatics.aBoolean9498) {
                                 if (i_7_ == 0) var_s.ka(i, i_5_ + 1, 50)
                                 else if (i_7_ != 1) {
                                     if (i_7_ != 2) {
@@ -216,7 +216,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1
                             } else class318_sub1_sub4 = (SequencedActorEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_4_, i_7_, i_6_))
                             method3254(i_0_, i, i_5_, class318_sub1_sub4, null)
-                            if (class51.aBoolean918 && LoadingScreenImageNode.aBoolean9498) {
+                            if (class51.aBoolean918 && LoadingScreenImageNodeStatics.aBoolean9498) {
                                 if (i_7_ == 0) var_s.ka(i, 1 + i_5_, 50)
                                 else if (i_7_ == 1) var_s.ka(1 + i, 1 + i_5_, 50)
                                 else if (i_7_ != 2) {

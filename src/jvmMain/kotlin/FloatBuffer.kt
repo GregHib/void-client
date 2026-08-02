@@ -42,7 +42,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
         fun method3398(bool: Boolean, `is`: Array<Array<ByteArray?>?>?, i: Int, i_0_: Byte, i_1_: Int, i_2_: Int, bool_3_: Boolean) {
             val i_4_ = if (bool) 1 else 0
             ProportionalScrollbarComponent.anInt9930 = 0
-            LoadingScreenImageNode.anInt9504 = 0
+            LoadingScreenImageNodeStatics.anInt9504 = 0
             ActorEntity.anInt3049++
             if ((i_2_ and 0x2) == 0) {
                 var class318_sub1 = LinkedListNodeStatics.aClass318_Sub1Array4293!![i_4_]
@@ -60,7 +60,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                     while (class318_sub1 != null) {
                         if (!method2778(class318_sub1, bool, `is`, i, i_0_)) {
                             method4001(class318_sub1)
-                            if (class318_sub1.anInt6389 != -1) GlTexture3D.aClass318_Sub1Array3737!![LoadingScreenImageNode.anInt9504++] = class318_sub1
+                            if (class318_sub1.anInt6389 != -1) GlTexture3D.aClass318_Sub1Array3737!![LoadingScreenImageNodeStatics.anInt9504++] = class318_sub1
                         }
                         class318_sub1 = class318_sub1.aClass318_Sub1_6379
                     }
@@ -70,7 +70,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                     if (!method2778(class318_sub1, bool, `is`, i, i_0_)) {
                         if (class318_sub1.method2377(122.toByte())) {
                             method4001(class318_sub1)
-                            if (class318_sub1.anInt6389 != -1) GlTexture3D.aClass318_Sub1Array3737!![LoadingScreenImageNode.anInt9504++] = class318_sub1
+                            if (class318_sub1.anInt6389 != -1) GlTexture3D.aClass318_Sub1Array3737!![LoadingScreenImageNodeStatics.anInt9504++] = class318_sub1
                         } else {
                             method4001(class318_sub1)
                             if (class318_sub1.anInt6389 != -1) RemoveRoofsOptionState.aClass318_Sub1Array6066!![ProportionalScrollbarComponent.anInt9930++] = class318_sub1
@@ -83,7 +83,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                         if (!CharacterRenderState.method2778((ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!), bool, `is`, i, i_0_)) {
                             OpenGlTerrainTile.method4001(ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!)
                             if ((ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!.anInt6389) != -1) {
-                                if (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!.method2377(122.toByte())) GlTexture3D.aClass318_Sub1Array3737!![LoadingScreenImageNode.anInt9504++] = (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_])
+                                if (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_]!!.method2377(122.toByte())) GlTexture3D.aClass318_Sub1Array3737!![LoadingScreenImageNodeStatics.anInt9504++] = (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_])
                                 else RemoveRoofsOptionState.aClass318_Sub1Array6066!![ProportionalScrollbarComponent.anInt9930++] = (ModelDataCache.aClass318_Sub1_Sub3Array357!![i_5_])
                             }
                         }
@@ -151,9 +151,9 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                     }
                 }
             }
-            if (LoadingScreenImageNode.anInt9504 > 0) {
-                TooltipComponentRenderer.method718(GlTexture3D.aClass318_Sub1Array3737!!, 0, LoadingScreenImageNode.anInt9504 - 1)
-                for (i_22_ in 0..<LoadingScreenImageNode.anInt9504) MinimapRectClipper.method227(GlTexture3D.aClass318_Sub1Array3737!![i_22_]!!, true, bool_3_)
+            if (LoadingScreenImageNodeStatics.anInt9504 > 0) {
+                TooltipComponentRenderer.method718(GlTexture3D.aClass318_Sub1Array3737!!, 0, LoadingScreenImageNodeStatics.anInt9504 - 1)
+                for (i_22_ in 0..<LoadingScreenImageNodeStatics.anInt9504) MinimapRectClipper.method227(GlTexture3D.aClass318_Sub1Array3737!![i_22_]!!, true, bool_3_)
             }
         }
 

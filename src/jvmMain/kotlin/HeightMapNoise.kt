@@ -66,7 +66,7 @@ object HeightMapNoise {
 
     fun method2282(i: Int) {
         anInt3827++
-        LoadingScreenImageNode.method3177(i xor 0x315e, false)
+        LoadingScreenImageNodeStatics.method3177(i xor 0x315e, false)
         if (i == -12648) {
             if (CollisionMapRegion.anInt1720 >= 0 && CollisionMapRegion.anInt1720 != 0) {
                 method3553(false, 116.toByte(), CollisionMapRegion.anInt1720)

@@ -133,7 +133,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
             RenderNodeStatics.aBoolean9719 = false
             NativeLibraryUnloader.aMapSceneTileArray2974 = null
             TextureLoadExceptionStatics.aBoolean4604 = true
-            LoadingScreenImageNode.method3179(i_1_)
+            LoadingScreenImageNodeStatics.method3179(i_1_)
         }
 
         fun method2966(i: Int, i_4_: Int, bool: Boolean) {

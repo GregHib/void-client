@@ -868,7 +868,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             }
             if (GlTexture3D.aClass318_Sub1Array3737 != null) {
                 for (i in GlTexture3D.aClass318_Sub1Array3737!!.indices) GlTexture3D.aClass318_Sub1Array3737!![i] = null
-                LoadingScreenImageNode.anInt9504 = 0
+                LoadingScreenImageNodeStatics.anInt9504 = 0
             }
             if (SceneEntity.aSoundEnvelopeArray5993 != null) {
                 for (i in 0..<CalendarUtil.anInt4135) SceneEntity.aSoundEnvelopeArray5993!![i] = null

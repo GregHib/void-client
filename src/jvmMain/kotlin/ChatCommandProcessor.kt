@@ -1727,7 +1727,7 @@ object ChatCommandProcessor {
                     IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_161_)
                     method243(37)
                     RenderNodeStatics.aBoolean9719 = false
-                    LoadingScreenImageNode.method3179(0)
+                    LoadingScreenImageNodeStatics.method3179(0)
                 }
                 return
             }
@@ -1915,7 +1915,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 6203) {
-                LoadingScreenImageNode.method3174(0, 0, AbstractTileShapeStatics.aWidgetComponent_6561!!.anInt709, false, 74.toByte(), AbstractTileShapeStatics.aWidgetComponent_6561!!.anInt789)
+                LoadingScreenImageNodeStatics.method3174(0, 0, AbstractTileShapeStatics.aWidgetComponent_6561!!.anInt709, false, 74.toByte(), AbstractTileShapeStatics.aWidgetComponent_6561!!.anInt789)
                 anIntArray1149!![anInt1173++] = WidgetComponentNode.anInt4656
                 anIntArray1149!![anInt1173++] = GroundDecorRenderer.anInt3643
                 return
@@ -5325,7 +5325,7 @@ object ChatCommandProcessor {
     fun method830(i: Int, i_21_: Int, i_22_: Byte, bool: Boolean, i_23_: Int) {
         var bool = bool
         anInt1461++
-        LoadingScreenImageNode.method3179(0)
+        LoadingScreenImageNodeStatics.method3179(0)
         PcmStreamBuffer.aLong8866 = 0L
         val i_24_ = ContactEntry.method3229(-82)
         if (i_22_.toInt() == 102) {
