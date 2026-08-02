@@ -206,7 +206,7 @@ class LongKeyNode : LinkedListNode {
                                     if (renderTarget == null) renderTarget = ((method3135(i_39_, i_37_, i_38_)) as RenderTarget?)
                                     if (renderTarget != null) {
                                         val class51 = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-99)))
-                                        if (!class51.aBoolean942 || ModelBatchBase.aBoolean1900) {
+                                        if (!class51.aBoolean942 || ModelBatchBaseStatics.aBoolean1900) {
                                             var i_40_ = class51.anInt921
                                             if (class51.anIntArray945 != null) {
                                                 var i_41_ = 0

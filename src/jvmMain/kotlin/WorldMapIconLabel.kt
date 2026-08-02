@@ -49,8 +49,8 @@ public open class WorldMapIconLabel(screenAnchorAlignment: ScreenAnchorAlignment
                 ModelDataCache.aLruByteCache_355!!.method590(0)
             }
             anInt8598++
-            withLock(ModelBatchBase.aLruByteCache_1894!!) {
-                ModelBatchBase.aLruByteCache_1894!!.method590(0)
+            withLock(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+                ModelBatchBaseStatics.aLruByteCache_1894!!.method590(0)
             }
             if (i != -15326) method3573(-67)
         }

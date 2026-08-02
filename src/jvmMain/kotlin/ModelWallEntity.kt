@@ -1,4 +1,4 @@
-import ModelBatchBase.Companion.method1130
+import ModelBatchBaseStatics.method1130
 import WidgetNodeLink.Companion.method1197
 import HostPingThread.Companion.method1301
 import ParticleDetailOptionState.Companion.method1796

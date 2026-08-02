@@ -1,4 +1,4 @@
-import ModelBatchBase.Companion.method1128
+import ModelBatchBaseStatics.method1128
 import RangeThresholdTextureNode.Companion.method3055
 import jaggl.OpenGL.Companion.glGetTexImagei
 import jaggl.OpenGL.Companion.glPixelStorei

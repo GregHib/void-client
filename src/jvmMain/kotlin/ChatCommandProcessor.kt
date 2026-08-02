@@ -1,7 +1,7 @@
 import GameAppletFrame.Companion.method94
 import ParticleEmitterNode.Companion.method217
 import SceneRegionState.method222
-import ModelBatchBase.Companion.method1129
+import ModelBatchBaseStatics.method1129
 import GlVertexBufferBase.Companion.method1148
 import GlCubeMapTexture.Companion.method243
 import GlCubeMapTexture.Companion.method244
@@ -1982,11 +1982,11 @@ object ChatCommandProcessor {
             if (i == 6500) {
                 if (WorldMapRenderer.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || GlWaterRenderPass.anInt7297 != 0) anIntArray1149!![anInt1173++] = 1
                 else {
-                    if (ModelBatchBase.aBoolean1899) anIntArray1149!![anInt1173++] = 0
+                    if (ModelBatchBaseStatics.aBoolean1899) anIntArray1149!![anInt1173++] = 0
                     else {
                         if (WorldMapRenderer.aLong4683 > method599(-126) - 1000L) anIntArray1149!![anInt1173++] = 1
                         else {
-                            ModelBatchBase.aBoolean1899 = true
+                            ModelBatchBaseStatics.aBoolean1899 = true
                             val class348_sub47 = method2148((TheoraVideoStream.aFontMetaRef_9034), (TheoraVideoStream.aIsaacCipher_9029), -115)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(101.toByte(), ScrollbarComponent.anInt8349)
                             InterfaceComponentGroup.method3243(118, class348_sub47)
@@ -4007,7 +4007,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 3312) {
-                    anIntArray1149!![anInt1173++] = if (ModelBatchBase.aBoolean1900) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (ModelBatchBaseStatics.aBoolean1900) 1 else 0
                     return
                 }
                 if (i == 3313) {

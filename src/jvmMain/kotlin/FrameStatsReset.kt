@@ -1242,7 +1242,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MinimapRenderer.anInt1580 = 0
             ItemModelDefinition.anInt432 = 0
             Renderer.anInt4566 = 0
-            anInt1896 = 0
+            ModelBatchBaseStatics.anInt1896 = 0
             SequencedGroundDecor.anInt10038 = 0
             ConfigArchiveLoader.anInt8763 = 0
             NativeRenderer.anInt7942 = 0
@@ -1656,7 +1656,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DetailLevelOptionState.anInt6126 = 0
             TextureHandle.anInt2586 = 0
             WidgetCache.anInt1484 = 0
-            anInt1898 = 0
+            ModelBatchBaseStatics.anInt1898 = 0
             SimpleToggleOptionState.anInt5890 = 0
             ChatEffectsOptionState.anInt5870 = 0
             NativeRenderer.anInt8049 = 0
@@ -4124,7 +4124,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SpriteTextureNode.aNodeDeque_9240!!.method1996(112)
             OpenGlRenderNode.aNodeDeque_10492!!.method1996(109)
             NpcDefinition.aDoublyLinkedNodeList_2957!!.method1876((-45).toByte())
-            aHashtable_1895!!.method3481(0)
+            ModelBatchBaseStatics.aHashtable_1895!!.method3481(0)
             SpriteRenderEntry.aNodeDeque_9711 = NodeDeque()
             ProjectedGroundDecor.aVarpStore_10209!!.method1314(74.toByte())
             CalendarUtil.method2636(i + 69)

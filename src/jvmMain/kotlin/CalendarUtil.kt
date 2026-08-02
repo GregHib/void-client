@@ -58,8 +58,8 @@ object CalendarUtil {
             ModelDataCache.aLruByteCache_355!!.method587(-98)
         }
         anInt4136++
-        withLock(ModelBatchBase.aLruByteCache_1894!!) {
-            ModelBatchBase.aLruByteCache_1894!!.method587(i + 4530)
+        withLock(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+            ModelBatchBaseStatics.aLruByteCache_1894!!.method587(i + 4530)
         }
         if (i != -4631) anInt4135 = 37
     }

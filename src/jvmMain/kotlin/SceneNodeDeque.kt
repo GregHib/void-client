@@ -365,10 +365,10 @@ class SceneNodeDeque {
                                 CharCodeMap.anInt9591 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 FrameBufferObject.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 ModelDataCache.anInt359 = class348_sub49_sub2.method3369(125.toByte())
-                                ModelBatchBase.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                GradientLookupEffect.aSeqDefinitionCache_9195!!.method2004(ModelBatchBase.aBoolean1900, 25.toByte())
-                                ClientException.aModelHeaderCache_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
-                                MapAreaDefinition.aBufferedMessageQueue_2529!!.method2072(88.toByte(), ModelBatchBase.aBoolean1900)
+                                ModelBatchBaseStatics.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1
+                                GradientLookupEffect.aSeqDefinitionCache_9195!!.method2004(ModelBatchBaseStatics.aBoolean1900, 25.toByte())
+                                ClientException.aModelHeaderCache_112!!.method1934(11.toByte(), ModelBatchBaseStatics.aBoolean1900)
+                                MapAreaDefinition.aBufferedMessageQueue_2529!!.method2072(88.toByte(), ModelBatchBaseStatics.aBoolean1900)
                             } else {
                                 if (!Client.aAbstractGameSocket_9165!!.method1705(SceneObjectSpawner.Companion.anInt1288, 107)) return
                                 Client.aAbstractGameSocket_9165!!.method1701(SceneObjectSpawner.Companion.anInt1288, 0, 85.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))

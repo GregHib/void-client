@@ -132,7 +132,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             ModelDefinitionLoader.anInt2057 = 0
             NpcEntityUpdater.aHashtable_3654!!.method3481(i.toInt() xor 0xb)
             TerrainShadowBuilderGl2.anInt6930 = 0
-            ModelBatchBase.aHashtable_1895!!.method3481(0)
+            ModelBatchBaseStatics.aHashtable_1895!!.method3481(0)
             MinimapStateReset.method1122(0)
             GlArrayBufferObject.anInt4718 = 0
             ProjectedGroundDecor.aVarpStore_10209!!.method1314((-107).toByte())

@@ -189,7 +189,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             }
             if (OpenGlRenderNode.aSmoothingBuffer_10488 == null) {
                 if (NamedIdEntry.aClass348_Sub42_Sub14_6885 != null && (TerrainShadowBuilderGl2.aJs5Archive_6950!!.method400(-18308, (NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"))) {
-                    if (TerrainShadowBuilderGl2.aJs5Archive_6950!!.method413(100, (NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) OpenGlRenderNode.aSmoothingBuffer_10488 = SkeletonSequenceLoader.method2300(TerrainShadowBuilderGl2.aJs5Archive_6950, ((NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), ModelBatchBase.aBoolean1900, (-91).toByte())
+                    if (TerrainShadowBuilderGl2.aJs5Archive_6950!!.method413(100, (NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) OpenGlRenderNode.aSmoothingBuffer_10488 = SkeletonSequenceLoader.method2300(TerrainShadowBuilderGl2.aJs5Archive_6950, ((NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), ModelBatchBaseStatics.aBoolean1900, (-91).toByte())
                     else {
                         bool = false
                         LocDefinitionCache.anInt3441++

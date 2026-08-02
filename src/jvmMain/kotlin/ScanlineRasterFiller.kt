@@ -52,7 +52,7 @@ class ScanlineRasterFiller {
                     if (class110_sub1 != null) WorldMapImageBuilder.aClass110_Sub1Array1146!![i_2_++] = class110_sub1
                     i_3_++
                 }
-                ModelBatchBase.aBoolean1899 = false
+                ModelBatchBaseStatics.aBoolean1899 = false
                 WorldMapRenderer.aLong4683 = method599(-92)
                 CubemapTextureGlSource.aClass348_Sub49_8698 = null
             }

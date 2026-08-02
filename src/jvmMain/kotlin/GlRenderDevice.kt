@@ -728,7 +728,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val class68 = interface5_impl2!!.method25(51.toByte())
             val class285_sub2 = interface5_impl2 as GlIndexBufferArb
             class285_sub2.method2125(0)
-            glDrawElements(i_44_, i_45_, ModelBatchBase.method1128(-20, class68), (class285_sub2.method2122(27819) + (i_41_ * (class68!!.anInt1178)).toLong()))
+            glDrawElements(i_44_, i_45_, ModelBatchBaseStatics.method1128(-20, class68), (class285_sub2.method2122(27819) + (i_41_ * (class68!!.anInt1178)).toLong()))
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("bga.JC(" + (if (cameraRotationStub != null) "{...}" else "null") + ',' + i + ',' + (if (interface5_impl2 != null) "{...}" else "null") + ',' + i_40_ + ',' + i_41_ + ',' + i_42_ + ',' + i_43_ + ')'))
         }

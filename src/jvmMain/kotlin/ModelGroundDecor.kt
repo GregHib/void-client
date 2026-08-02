@@ -1,4 +1,4 @@
-import ModelBatchBase.Companion.method1130
+import ModelBatchBaseStatics.method1130
 import HostPingThread.Companion.method1301
 import VorbisOggDecoder.Companion.method2967
 import CharacterRenderState.Companion.method2782

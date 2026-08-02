@@ -394,7 +394,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                         if (LinkedListNodeStatics.anInt4290 == 60) {
                             if (MapRegionLoaderStatics.aJs5Archive_1237!!.method400(-18308, (MapRegionLoaderStatics.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) {
                                 if (!MapRegionLoaderStatics.aJs5Archive_1237!!.method413(100, (MapRegionLoaderStatics.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) return
-                                MapRegionLoaderStatics.aSmoothingBuffer_1246 = (SkeletonSequenceLoader.method2300(MapRegionLoaderStatics.aJs5Archive_1237, (MapRegionLoaderStatics.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements", ModelBatchBase.aBoolean1900, (-91).toByte()))
+                                MapRegionLoaderStatics.aSmoothingBuffer_1246 = (SkeletonSequenceLoader.method2300(MapRegionLoaderStatics.aJs5Archive_1237, (MapRegionLoaderStatics.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements", ModelBatchBaseStatics.aBoolean1900, (-91).toByte()))
                             } else MapRegionLoaderStatics.aSmoothingBuffer_1246 = SmoothingBuffer(0)
                             method761()
                             LinkedListNodeStatics.anInt4290 = 70

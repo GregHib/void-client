@@ -364,8 +364,8 @@ class CompositeNpcModelBuilder {
             }
             if (i != -402058072) aLong2094 = -101L
             var abstractModel: AbstractModel?
-            withLock(ModelBatchBase.aLruByteCache_1894!!) {
-                abstractModel = ModelBatchBase.aLruByteCache_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as AbstractModel?
+            withLock(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+                abstractModel = ModelBatchBaseStatics.aLruByteCache_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as AbstractModel?
             }
             if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_70_) != 0) {
                 if (abstractModel != null) i_70_ = var_renderer!!.method3679(i_70_, abstractModel.ua())
@@ -403,8 +403,8 @@ class CompositeNpcModelBuilder {
                     }
                 }
                 abstractModel.s(i_70_)
-                withLock(ModelBatchBase.aLruByteCache_1894!!) {
-                    ModelBatchBase.aLruByteCache_1894!!.method582(abstractModel, aLong2102, (-97).toByte())
+                withLock(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+                    ModelBatchBaseStatics.aLruByteCache_1894!!.method582(abstractModel, aLong2102, (-97).toByte())
                 }
             }
             if (widgetDefinition == null) return abstractModel
@@ -471,8 +471,8 @@ class CompositeNpcModelBuilder {
             }
             val l = i_95_.toLong() or ((i_93_ shl 16).toLong() or (i_92_.toLong() shl 32))
             var abstractModel: AbstractModel?
-            withLock(ModelBatchBase.aLruByteCache_1894!!) {
-                abstractModel = ModelBatchBase.aLruByteCache_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as AbstractModel?
+            withLock(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+                abstractModel = ModelBatchBaseStatics.aLruByteCache_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as AbstractModel?
             }
             if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_98_) != 0) {
                 if (abstractModel != null) i_98_ = var_renderer!!.method3679(i_98_, abstractModel.ua())
@@ -497,8 +497,8 @@ class CompositeNpcModelBuilder {
                     }
                 }
                 abstractModel.s(i_98_)
-                withLock(ModelBatchBase.aLruByteCache_1894!!) {
-                    ModelBatchBase.aLruByteCache_1894!!.method582(abstractModel, l, (-109).toByte())
+                withLock(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+                    ModelBatchBaseStatics.aLruByteCache_1894!!.method582(abstractModel, l, (-109).toByte())
                 }
             }
             if (widgetDefinition == null) return abstractModel
@@ -566,8 +566,8 @@ class CompositeNpcModelBuilder {
         fun method720(i: Int, i_0_: Int) {
             anInt1193++
             HeapDiagnosticsHolder.anInt2251 = i
-            withLock(ModelBatchBase.aLruByteCache_1894!!) {
-                ModelBatchBase.aLruByteCache_1894!!.method590(0)
+            withLock(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+                ModelBatchBaseStatics.aLruByteCache_1894!!.method590(0)
             }
             withLock(ModelDataCache.aLruByteCache_355!!) {
                 ModelDataCache.aLruByteCache_355!!.method590(0)

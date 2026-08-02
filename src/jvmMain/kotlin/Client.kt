@@ -31,7 +31,7 @@ import ScrollingWidgetComponentNode.Companion.method1120
 import MinimapStateReset.method1123
 import VarpStore.Companion.method1126
 import MinimapRectClipper.method225
-import ModelBatchBase.Companion.method1127
+import ModelBatchBaseStatics.method1127
 import FrameStatsReset.Companion.method1133
 import LocalPlayerState.method1137
 import PlayerUpdateDecoder.method1139
@@ -4064,7 +4064,7 @@ class Client : GameAppletFrame() {
                 GradientLookupEffect.anInt9200 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteAdd(126.toByte())
                 FileExistsCondition.anInt4786 = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 BufferedMessageQueue.anInt3581 = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
-                var class348_sub37 = ModelBatchBase.aHashtable_1895!!.method3484(0) as? HashTableContainer?
+                var class348_sub37 = ModelBatchBaseStatics.aHashtable_1895!!.method3484(0) as? HashTableContainer?
                 while (class348_sub37 != null) {
                     val i = ((class348_sub37.aLong4291 shr 28) and 0x3L).toInt()
                     val i_188_ = (class348_sub37.aLong4291 and 0x3fffL).toInt()
@@ -4075,7 +4075,7 @@ class Client : GameAppletFrame() {
                         class348_sub37.method2715(89.toByte())
                         if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < GlCubemapLightPass.anInt7319 && (i_191_ < RangeThresholdTextureNode.anInt9109)) ProjectileSpawner.method1479(i_191_, (-118).toByte(), i_189_, GradientLookupEffect.anInt9200)
                     }
-                    class348_sub37 = (ModelBatchBase.aHashtable_1895!!.method3482(0) as? HashTableContainer?)
+                    class348_sub37 = (ModelBatchBaseStatics.aHashtable_1895!!.method3482(0) as? HashTableContainer?)
                 }
                 var class348_sub27 = (SpriteRenderEntry.aNodeDeque_9711!!.method1995(4) as? MultiFieldRecord?)
                 while (class348_sub27 != null) {

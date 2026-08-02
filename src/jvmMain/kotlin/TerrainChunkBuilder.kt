@@ -239,8 +239,8 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
             withLock(ModelDataCache.aLruByteCache_355!!) {
                 ModelDataCache.aLruByteCache_355!!.method578(2, i)
             }
-            withLock(ModelBatchBase.aLruByteCache_1894!!) {
-                ModelBatchBase.aLruByteCache_1894!!.method578(2, i)
+            withLock(ModelBatchBaseStatics.aLruByteCache_1894!!) {
+                ModelBatchBaseStatics.aLruByteCache_1894!!.method578(2, i)
                 if (i_23_ != 0) method876(51, 108)
             }
         }

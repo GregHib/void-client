@@ -171,7 +171,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_72_ = RegionMapDecoder.regionTileY + i_71_
                     val i_73_ = BufferedMessageQueue.anInt3581 + (i_70_ shr 4 and 0x7)
                     val i_74_ = ArbVertexProgram.regionTileX + i_73_
-                    val class348_sub37 = ((ModelBatchBase.aHashtable_1895!!.method3480((i_72_ shl 14 or (GradientLookupEffect.anInt9200 shl 28) or i_74_).toLong(), -6008)) as HashTableContainer?)
+                    val class348_sub37 = ((ModelBatchBaseStatics.aHashtable_1895!!.method3480((i_72_ shl 14 or (GradientLookupEffect.anInt9200 shl 28) or i_74_).toLong(), -6008)) as HashTableContainer?)
                     if (class348_sub37 != null) {
                         var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1995(4) as IntPair?)
                         while (class348_sub34 != null) {
@@ -217,8 +217,8 @@ class InputStream_Sub2 : InputStream() {
                         val i_94_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         val i_95_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
                         val i_96_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                        if (ModelBatchBase.aHashtable_1895 != null) {
-                            val class348_sub37 = ((ModelBatchBase.aHashtable_1895!!.method3480((i_93_ or ((GradientLookupEffect.anInt9200 shl 28) or (i_91_ shl 14))).toLong(), -6008)) as HashTableContainer?)
+                        if (ModelBatchBaseStatics.aHashtable_1895 != null) {
+                            val class348_sub37 = ((ModelBatchBaseStatics.aHashtable_1895!!.method3480((i_93_ or ((GradientLookupEffect.anInt9200 shl 28) or (i_91_ shl 14))).toLong(), -6008)) as HashTableContainer?)
                             if (class348_sub37 != null) {
                                 var class348_sub34 = (class348_sub37.aNodeDeque_6998.method1995(4) as IntPair?)
                                 while (class348_sub34 != null) {
