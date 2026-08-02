@@ -14,7 +14,7 @@ object CacheStateResetter {
         RenderNodeStatics.aAbstractCameraTransform_9720 = null
         LocalPlayerState.anIntArray1909 = null
         NpcSpawnDecoder.anSpriteDrawTargetArray1525 = null
-        CameraRotationStub.aRenderer326 = null
+        CameraRotationStubStatics.aRenderer326 = null
         MapSceneRenderer.aAbstractCameraTransform_624 = null
         anInt124++
         val i_0_ = 9 / ((62 - i) / 47)

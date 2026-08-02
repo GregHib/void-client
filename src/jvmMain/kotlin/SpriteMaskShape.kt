@@ -482,7 +482,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             FogOptionState.anInt6048 = 2
                             SpriteArchiveLoader.anInt385 = i_73_
                             LinkedListNodeStatics.anInt4292 = 0
-                            CameraRotationStub.anInt321++
+                            CameraRotationStubStatics.anInt321++
                             val class348_sub47 = method2148((SpriteMaskShape.aFontMetaRef_9553), (TheoraVideoStream.aIsaacCipher_9029), -113)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, RegionMapDecoder.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(120, i_74_ + ArbVertexProgram.regionTileX)

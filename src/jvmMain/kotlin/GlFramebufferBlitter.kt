@@ -387,10 +387,10 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         @JvmStatic
         fun method282(i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Byte, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int) {
             anInt274++
-            CameraRotationStub.aRenderer326 = var_renderer
-            NpcConfig.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
-            MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
-            RenderNodeStatics.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
+            CameraRotationStubStatics.aRenderer326 = var_renderer
+            NpcConfig.aAbstractCameraTransform_905 = CameraRotationStubStatics.aRenderer326!!.method3654()
+            MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStubStatics.aRenderer326!!.method3654()
+            RenderNodeStatics.aAbstractCameraTransform_9720 = CameraRotationStubStatics.aRenderer326!!.method3654()
             WhirlpoolHash.anInt4784 = i_26_
             SceneryDetailOptionState.anInt6095 = 0
             if (i_22_ <= 64) anIntArray279 = null

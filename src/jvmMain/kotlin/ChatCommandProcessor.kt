@@ -1122,11 +1122,11 @@ object ChatCommandProcessor {
                 NpcType.anInt1387 = anIntArray1149!![anInt1173 + 8]
                 CharCodeMap.anInt9586 = anIntArray1149!![anInt1173 + 9]
                 SolidFillComponent.anInt8363 = anIntArray1149!![anInt1173 + 10]
-                CameraRotationStub.aJs5Archive_322!!.method421(false, HudTabPanel.anInt2996)
-                CameraRotationStub.aJs5Archive_322!!.method421(false, CombineTextureNode.anInt9231)
-                CameraRotationStub.aJs5Archive_322!!.method421(false, ProjectedGroundDecor.anInt10257)
-                CameraRotationStub.aJs5Archive_322!!.method421(false, SkyboxGradient.anInt3937)
-                CameraRotationStub.aJs5Archive_322!!.method421(false, NpcType.anInt1387)
+                CameraRotationStubStatics.aJs5Archive_322!!.method421(false, HudTabPanel.anInt2996)
+                CameraRotationStubStatics.aJs5Archive_322!!.method421(false, CombineTextureNode.anInt9231)
+                CameraRotationStubStatics.aJs5Archive_322!!.method421(false, ProjectedGroundDecor.anInt10257)
+                CameraRotationStubStatics.aJs5Archive_322!!.method421(false, SkyboxGradient.anInt3937)
+                CameraRotationStubStatics.aJs5Archive_322!!.method421(false, NpcType.anInt1387)
                 MapSceneCache.aAbstractModelRenderer_2309 = null
                 AbstractMenuEntryStatics.aAbstractModelRenderer_1706 = MapSceneCache.aAbstractModelRenderer_2309
                 TimedTileQueueEntry.aAbstractModelRenderer_9659 = AbstractMenuEntryStatics.aAbstractModelRenderer_1706

@@ -145,7 +145,7 @@ class GlTexture2DRegion : GlTexture2D {
             method2994(2)
             VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
             method3568(FacingDirectionNode.aRenderer6654, 4)
-            ModelHeaderCache.method1933(CameraRotationStub.aJs5Archive_322, FacingDirectionNode.aRenderer6654, true)
+            ModelHeaderCache.method1933(CameraRotationStubStatics.aJs5Archive_322, FacingDirectionNode.aRenderer6654, true)
             LocalizedTextStatics.method2061(-128)
             AbstractCameraTransformStatics.method901(CameraNodeListStatics.aAbstractModelRendererArray1744, 515880227)
             TextureCache.method3466(i xor 0x4f.inv())

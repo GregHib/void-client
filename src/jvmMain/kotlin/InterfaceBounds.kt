@@ -118,7 +118,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 AbstractCameraTransformStatics.aJs5Archive_7382!!.method412((-110).toByte())
                 CachedRgbNoiseTexture.aJs5Archive_8667!!.method412(64.toByte())
                 RasterSprite.aJs5Archive_5207!!.method412(120.toByte())
-                CameraRotationStub.aJs5Archive_322!!.method412(98.toByte())
+                CameraRotationStubStatics.aJs5Archive_322!!.method412(98.toByte())
                 WorldMapTextLabel.aJs5Archive_8589!!.method412(43.toByte())
                 SceneTilePlaneManager.aJs5Archive_233!!.method412(20.toByte())
                 TheoraVideoStream.aJs5Archive_9033!!.method412(89.toByte())

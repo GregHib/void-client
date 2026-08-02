@@ -88,7 +88,7 @@ object GroundItemRenderState {
         val class190 = NodeDequeStatics.aModelLightingConfigArrayArray3335!![i]!![i_20_]
         if (class190 != null) {
             GroundItemRenderState.anInt2601 = class190.anInt2535
-            CameraRotationStub.anInt325 = class190.anInt2538
+            CameraRotationStubStatics.anInt325 = class190.anInt2538
             ModelGroundDecor.anInt10023 = class190.anInt2548
         }
         method2988(bool)

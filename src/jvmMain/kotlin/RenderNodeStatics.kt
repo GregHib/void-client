@@ -27,7 +27,7 @@ object RenderNodeStatics {
         anInt9717++
         if (bool != true) method3285(10)
         MapSceneRenderer.aAbstractCameraTransform_624!!.method891(0, 0, d.toInt())
-        CameraRotationStub.aRenderer326!!.method3638(MapSceneRenderer.aAbstractCameraTransform_624)
+        CameraRotationStubStatics.aRenderer326!!.method3638(MapSceneRenderer.aAbstractCameraTransform_624)
     }
 
     @JvmStatic

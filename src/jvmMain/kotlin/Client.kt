@@ -105,7 +105,7 @@ import CircleDrawer.method1497
 import FrameBufferObject.Companion.method1499
 import BufferedOutputStreamWorker.Companion.method1525
 import HeadIconRenderer.Companion.method1529
-import CameraRotationStub.Companion.method288
+import CameraRotationStubStatics.method288
 import VorbisFloorDecoder.Companion.method1536
 import CompressedBlockDecoder.method1551
 import ItemDefinition.Companion.method1564

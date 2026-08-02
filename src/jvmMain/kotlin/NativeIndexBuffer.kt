@@ -119,7 +119,7 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
                         RenderableGroup.anIntArray5007
                     )
                     method226(RenderableGroup.anIntArray5007!![0], RenderableGroup.anIntArray5007!![2], RenderableGroup.anIntArray5007!![1], 0, RenderableGroup.anIntArray5007!![3])
-                } else if (CameraRotationStub.aWidgetComponent_323 != null && (Client.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186)) {
+                } else if (CameraRotationStubStatics.aWidgetComponent_323 != null && (Client.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186)) {
                     val i_1_ = (NodeDequeStatics.aRSFont_3326!!.method2571(-1, SpriteRenderEntry.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, TileRenderState.aAbstractModelRendererArray4234, 16 + SocketGameConnection.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, FireParticleStream.aRandom93))
                     method226(ConfigValueProvider.Companion.anInt4911 - -4, (WorldMapLabel.aFontDefinition_4962!!.method1183(true, string) + i_1_), SocketGameConnection.anInt5832, 0, 16)
                 }

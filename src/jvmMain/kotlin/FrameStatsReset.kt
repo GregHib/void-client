@@ -502,7 +502,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SpriteMaskShape.anInt4067 = 0
             DynamicSceneObjectEntity.anInt10192 = 0
             OpenGlRenderNode.anInt10485 = 0
-            CameraRotationStub.anInt321 = 0
+            CameraRotationStubStatics.anInt321 = 0
             GlRenderDevice.anInt9836 = 0
             SynthVoiceGroup.anInt8846 = 0
             RenderListTextureNode.anInt210 = 0
@@ -1819,7 +1819,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ModelDefinitionLoader.anInt2049 = 0
             NativeRenderer.anInt7990 = 0
             GrayscaleEffect.anInt9202 = 0
-            CameraRotationStub.anInt324 = 0
+            CameraRotationStubStatics.anInt324 = 0
             OutgoingPacketNode.anInt7120 = 0
             SizeBoundedSoftCache.anInt2318 = 0
             NativeRenderer.anInt8035 = 0

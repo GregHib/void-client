@@ -88,8 +88,8 @@ class OutgoingPacketNode : LinkedListNode() {
             val dimension = canvas.getSize()
             if (i.toInt() != -99) method1096(57)
             MinimapFlagRenderer.method828(38.toByte(), dimension.height, dimension.width)
-            if (WhirlpoolHash.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3643(canvas, WhirlpoolHash.anInt5283, WhirlpoolHash.anInt1651)
-            else CameraRotationStub.aRenderer326!!.method3643(canvas, WhirlpoolHash.anInt8854, WhirlpoolHash.anInt6008)
+            if (WhirlpoolHash.anInt7207 != 1) CameraRotationStubStatics.aRenderer326!!.method3643(canvas, WhirlpoolHash.anInt5283, WhirlpoolHash.anInt1651)
+            else CameraRotationStubStatics.aRenderer326!!.method3643(canvas, WhirlpoolHash.anInt8854, WhirlpoolHash.anInt6008)
         }
     }
 }

@@ -119,7 +119,7 @@ object ClientLoadStateMachine {
             for (i_7_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_7_] = method988(RangeThresholdTextureNode.anInt9109, 1, GlCubemapLightPass.anInt7319)
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1030) {
-            CameraRotationStub.aJs5Archive_322 = WorldMapTextLabel.method3571(false, 8, (-23).toByte(), 1)
+            CameraRotationStubStatics.aJs5Archive_322 = WorldMapTextLabel.method3571(false, 8, (-23).toByte(), 1)
             ShortKeyNode.aJs5Archive_6909 = WorldMapTextLabel.method3571(false, 0, (-23).toByte(), 1)
             TextureGenerator.aJs5Archive_2490 = WorldMapTextLabel.method3571(false, 1, (-23).toByte(), 1)
             DirectionUtil.aJs5Archive_1541 = WorldMapTextLabel.method3571(false, 2, (-23).toByte(), 1)
@@ -161,8 +161,8 @@ object ClientLoadStateMachine {
                 if (LocDefinitionCache.anInt3435 < 0) LocDefinitionCache.anInt3435 = i_8_
                 return ((i_8_ + -LocDefinitionCache.anInt3435) * 100 / (-LocDefinitionCache.anInt3435 + 100))
             }
-            TexGenMaterialPass.method2159((-109).toByte(), CameraRotationStub.aJs5Archive_322!!)
-            LoadingScreenImageNodeStatics.method3178(SoftwareSpriteRaster.aJs5Archive_1627, -124, method184(i xor 0x40a46ff3.inv()), CameraRotationStub.aJs5Archive_322)
+            TexGenMaterialPass.method2159((-109).toByte(), CameraRotationStubStatics.aJs5Archive_322!!)
+            LoadingScreenImageNodeStatics.method3178(SoftwareSpriteRaster.aJs5Archive_1627, -124, method184(i xor 0x40a46ff3.inv()), CameraRotationStubStatics.aJs5Archive_322)
         }
         if (ConnectionStateType.aConnectionStateType_1032 == TimedTileQueueEntry.aConnectionStateType_9660) {
             if (ParticleProcessor.anInt4270 == -1) ParticleProcessor.anInt4270 = CachedRgbNoiseTexture.aJs5Archive_8667!!.method417("scape main", 0)
@@ -179,20 +179,20 @@ object ClientLoadStateMachine {
         if (i != -28660) return 2
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1035) {
             if (AbstractFrameBufferSurface.anInt6923 != -1 && !RasterSprite.aJs5Archive_5207!!.method420(-10499, AbstractFrameBufferSurface.anInt6923, 0)) return 99
-            SourceRowTextureNode.aRenderConfig9113 = TextureMetadataProvider(KeyEventNode.aJs5Archive_4770, WorldMapTextLabel.aJs5Archive_8589, CameraRotationStub.aJs5Archive_322)
+            SourceRowTextureNode.aRenderConfig9113 = TextureMetadataProvider(KeyEventNode.aJs5Archive_4770, WorldMapTextLabel.aJs5Archive_8589, CameraRotationStubStatics.aJs5Archive_322)
             ProjectionCameraTransform.aEmoteDefCache_5764 = EmoteDefCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             OpenGlModel.aNpcDefinitionCache_5558 = NpcDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            CacheArchiveIndexLoader.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
+            CacheArchiveIndexLoader.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)
             RegionTileNode.aCacheArchiveIndexLoader_6653 = CacheArchiveIndexLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, VideoAdChecker.aJs5Archive_3183)
             RenderConfigFactoryStatics.aLocDefinitionCache_2979 = LocDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             Tooltip.aParticleDefLoader_4460 = ParticleDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            FileExistsCondition.aModelDefinitionCache_4782 = ModelDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
+            FileExistsCondition.aModelDefinitionCache_4782 = ModelDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)
             RadialTextureNode.aModelDefinitionLoader_9342 = ModelDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, RasterSprite.aJs5Archive_5207)
             ScrollingWidgetComponentNode.aParticleEffectCache_8378 = ParticleEffectCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             AbstractTileShapeStatics.aMapSceneDefLoader_6559 = MapSceneDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             GradientLookupEffect.aSeqDefinitionCache_9195 = SeqDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, AnimationFrameState.aJs5Archive_1538, RasterSprite.aJs5Archive_5207)
-            TheoraVideoStream.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
-            ModelOrSpriteHolder.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStub.aJs5Archive_322)
+            TheoraVideoStream.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)
+            ModelOrSpriteHolder.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)
             MapAreaDefinition.aBufferedMessageQueue_2529 = BufferedMessageQueue(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, FloatGrid.aJs5Archive_4975, RasterSprite.aJs5Archive_5207)
             ClientExceptionStatics.aModelHeaderCache_112 = ModelHeaderCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, ProjectionCameraTransform.aEmoteDefCache_5764, ScriptOpcodeHolder.aJs5Archive_2306, RasterSprite.aJs5Archive_5207)
             TheoraVideoStream.aLocTypeDefLoader_9036 = LocTypeDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
@@ -205,7 +205,7 @@ object ClientLoadStateMachine {
             WaterDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             RenderConfigFactoryStatics.aVarbitDefLoader_2981 = VarbitDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, MidiSequencePlayer.aJs5Archive_8926)
             NormalMapGenerator.aParticleAmountCache_3453 = ParticleAmountCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            WorldMapImageBuilder.method699(SoftwareSpriteRaster.aJs5Archive_1627, (-100).toByte(), ClientLoadStateMachine.aJs5Archive_6980, CameraRotationStub.aJs5Archive_322, RasterSprite.aJs5Archive_5207)
+            WorldMapImageBuilder.method699(SoftwareSpriteRaster.aJs5Archive_1627, (-100).toByte(), ClientLoadStateMachine.aJs5Archive_6980, CameraRotationStubStatics.aJs5Archive_322, RasterSprite.aJs5Archive_5207)
             method85(0, NodeDequeStatics.aJs5Archive_3323)
             ScriptResources.aTextureDefinitionCache_2639 = TextureDefinitionCache(ChatCommandProcessor.anInt6967, ModelBatchBaseStatics.aJs5Archive_1897, ConfigArchiveLoader.aJs5Archive_1434)
             BrightnessOptionState.aCompiledScriptCache_5900 = CompiledScriptCache(ChatCommandProcessor.anInt6967, ModelBatchBaseStatics.aJs5Archive_1897, ConfigArchiveLoader.aJs5Archive_1434, ItemNameResolver())
@@ -226,7 +226,7 @@ object ClientLoadStateMachine {
             NoiseTextureNode.aClass348_Sub4_9264 = ClientMachineInfo(true, VorbisOggDecoder.aPrivilegedOperationWorker_8992!!)
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1037) {
-            val i_11_ = (NpcReference.method2958(22388, CameraRotationStub.aJs5Archive_322!!) + CipheredPacketBuffer.method3405(2012104999, true))
+            val i_11_ = (NpcReference.method2958(22388, CameraRotationStubStatics.aJs5Archive_322!!) + CipheredPacketBuffer.method3405(2012104999, true))
             val i_12_ = (ParticleEmitterDefExt.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
@@ -250,7 +250,7 @@ object ClientLoadStateMachine {
             FloorOverlayDefinition.anInt970 = ClientLoadStateMachine.aJs5Archive_6980!!.method417("lobbyscreen", 0)
             AbstractCameraTransformStatics.aJs5Archive_7382!!.method404(0, true, false)
             CachedRgbNoiseTexture.aJs5Archive_8667!!.method404(0, true, true)
-            CameraRotationStub.aJs5Archive_322!!.method404(i + 28660, true, true)
+            CameraRotationStubStatics.aJs5Archive_322!!.method404(i + 28660, true, true)
             SoftwareSpriteRaster.aJs5Archive_1627!!.method404(0, true, true)
             SceneTilePlaneManager.aJs5Archive_233!!.method404(0, true, true)
             ClientLoadStateMachine.aJs5Archive_6980!!.method404(0, true, true)
@@ -268,7 +268,7 @@ object ClientLoadStateMachine {
             var bool = true
             for (i_14_ in (WarpTextureNode.aWidgetComponentArrayArray9427!![GlBufferObject.anInt4737])!!.indices) {
                 val widgetComponent: WidgetComponent = (WarpTextureNode.aWidgetComponentArrayArray9427!![GlBufferObject.anInt4737]!![i_14_])!!
-                if (widgetComponent.anInt774 == 5 && widgetComponent.anInt756 != -1 && !CameraRotationStub.aJs5Archive_322!!.method420(-10499, (widgetComponent.anInt756), 0)) bool = false
+                if (widgetComponent.anInt774 == 5 && widgetComponent.anInt756 != -1 && !CameraRotationStubStatics.aJs5Archive_322!!.method420(-10499, (widgetComponent.anInt756), 0)) bool = false
             }
             if (!bool) return 0
         }
@@ -299,7 +299,7 @@ object ClientLoadStateMachine {
             ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
             method3568(FacingDirectionNode.aRenderer6654, i xor 0x6ff7.inv())
-            ModelHeaderCache.method1933(CameraRotationStub.aJs5Archive_322, FacingDirectionNode.aRenderer6654, true)
+            ModelHeaderCache.method1933(CameraRotationStubStatics.aJs5Archive_322, FacingDirectionNode.aRenderer6654, true)
             AbstractCameraTransformStatics.method901(CameraNodeListStatics.aAbstractModelRendererArray1744, 515880227)
         }
         return method3063(false)

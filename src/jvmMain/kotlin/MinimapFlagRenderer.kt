@@ -53,10 +53,10 @@ object MinimapFlagRenderer {
     @JvmStatic
     fun method1083(var_renderer: Renderer?, i: Int, i_2_: Byte, i_3_: Int, i_4_: Int, i_5_: Int) {
         anInt1798++
-        CameraRotationStub.aRenderer326 = var_renderer
-        NpcConfig.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
-        MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
-        RenderNodeStatics.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
+        CameraRotationStubStatics.aRenderer326 = var_renderer
+        NpcConfig.aAbstractCameraTransform_905 = CameraRotationStubStatics.aRenderer326!!.method3654()
+        MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStubStatics.aRenderer326!!.method3654()
+        RenderNodeStatics.aAbstractCameraTransform_9720 = CameraRotationStubStatics.aRenderer326!!.method3654()
         WhirlpoolHash.anInt10444 = i_4_
         WhirlpoolHash.anInt7207 = 0
         WhirlpoolHash.anInt2747 = i
@@ -73,18 +73,18 @@ object MinimapFlagRenderer {
 
     fun method828(i: Byte, i_13_: Int, i_14_: Int) {
         anInt1467++
-        if (CameraRotationStub.aRenderer326 != null) {
+        if (CameraRotationStubStatics.aRenderer326 != null) {
             val i_15_ = anInt425
             val i_16_ = anInt3225
             method1752(-1, i_13_, i_14_)
             if (anInt7207 == 0) {
                 WidgetDefinition.anSpriteDrawTarget_252 = null
-                WidgetDefinition.anSpriteDrawTarget_252 = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665((anInt8854), anInt6008), CameraRotationStub.aRenderer326!!.method3624((anInt8854), anInt6008)))
+                WidgetDefinition.anSpriteDrawTarget_252 = (CameraRotationStubStatics.aRenderer326!!.method3634(CameraRotationStubStatics.aRenderer326!!.method3665((anInt8854), anInt6008), CameraRotationStubStatics.aRenderer326!!.method3624((anInt8854), anInt6008)))
             } else if (anInt7207 == 1 && (NpcSpawnDecoder.anSpriteDrawTargetArray1525 == null || i_15_ != anInt425 || i_16_ != anInt3225)) {
                 NpcSpawnDecoder.anSpriteDrawTargetArray1525 = arrayOfNulls<SpriteDrawTarget>(anInt3225 * anInt425)
                 var i_17_ = 0
                 while (NpcSpawnDecoder.anSpriteDrawTargetArray1525!!.size > i_17_) {
-                    NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_17_] = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665(anInt1067, anInt4267), CameraRotationStub.aRenderer326!!.method3624(anInt1067, anInt4267)))
+                    NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_17_] = (CameraRotationStubStatics.aRenderer326!!.method3634(CameraRotationStubStatics.aRenderer326!!.method3665(anInt1067, anInt4267), CameraRotationStubStatics.aRenderer326!!.method3624(anInt1067, anInt4267)))
                     i_17_++
                 }
                 LocalPlayerState.anIntArray1909 = IntArray(anInt425 * anInt3225)

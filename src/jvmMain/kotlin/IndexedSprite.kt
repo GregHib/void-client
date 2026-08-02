@@ -65,18 +65,18 @@ class IndexedSprite : Sprite {
 
         var anInt1642: Int = 0
         fun method1010(bool: Boolean, bool_42_: Boolean) {
-            RenderNodeStatics.aAbstractCameraTransform_9720!!.method898(CameraRotationStub.aRenderer326!!.method3640())
+            RenderNodeStatics.aAbstractCameraTransform_9720!!.method898(CameraRotationStubStatics.aRenderer326!!.method3640())
             anInt1642++
-            val `is` = CameraRotationStub.aRenderer326!!.Y()
+            val `is` = CameraRotationStubStatics.aRenderer326!!.Y()
             Gl3dTexture.anInt8630 = `is`[2]
             MediaStreamClient.anInt3202 = `is`[0]
             ProjectileConfigUtil.anInt394 = `is`[3]
             SimpleToggleOptionState.anInt5886 = `is`[1]
             if (bool_42_) {
-                CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, FireParticleStream.anInt1879)
+                CameraRotationStubStatics.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, FireParticleStream.anInt1879)
                 RenderNodeStatics.method3284(true, ModelWallEntity.aDouble10120)
             } else {
-                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
+                CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
                 RenderNodeStatics.method3284(true, GlCubeMapTexture.aDouble8621)
             }
         }

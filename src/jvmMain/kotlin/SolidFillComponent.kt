@@ -130,7 +130,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
         fun method198(widgetComponent: WidgetComponent?, bool: Boolean, i: Int, i_22_: Int) {
             SocketGameConnection.anInt5832 = i
             ConfigValueProvider.anInt4911 = i_22_
-            CameraRotationStub.aWidgetComponent_323 = widgetComponent
+            CameraRotationStubStatics.aWidgetComponent_323 = widgetComponent
             anInt8359++
             if (bool != false) anInt8363 = 112
         }

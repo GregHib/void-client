@@ -373,8 +373,8 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.equals("resetminimap", ignoreCase = true)) {
-                            CameraRotationStub.aJs5Archive_322!!.method405(i.toInt() xor 0x4e.inv())
-                            CameraRotationStub.aJs5Archive_322!!.method412(127.toByte())
+                            CameraRotationStubStatics.aJs5Archive_322!!.method405(i.toInt() xor 0x4e.inv())
+                            CameraRotationStubStatics.aJs5Archive_322!!.method412(127.toByte())
                             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1175(125.toByte())
                             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1219(7851)
                             method464(-1)

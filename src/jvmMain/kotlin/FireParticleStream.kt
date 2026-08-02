@@ -127,7 +127,7 @@ class FireParticleStream : OutputStream() {
                     SpriteRenderEntry.method3282(0x3fff and -(MinimapAreaMarkerNode.anInt9701), CompositeRgbNoiseTexture.anInt8685, ParticleSystemRenderer.anInt3855, 0, -WorldMapElement.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -MapTileShape.anInt4186 and 0x3fff)
                     val i_16_ = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
                     if (GrayscaleNoiseTexture.aBoolean5300) {
-                        CameraRotationStub.method289(-15902, 0x3fff and -WorldMapElement.anInt4638, -MapTileShape.anInt4186 and 0x3fff, (-MinimapAreaMarkerNode.anInt9701 and 0x3fff))
+                        CameraRotationStubStatics.method289(-15902, 0x3fff and -WorldMapElement.anInt4638, -MapTileShape.anInt4186 and 0x3fff, (-MinimapAreaMarkerNode.anInt9701 and 0x3fff))
                         method1634(
                             CharCodeMap.anIntArray1127,
                             -2,
@@ -228,7 +228,7 @@ class FireParticleStream : OutputStream() {
                 try {
                     anInt2982++
                     if (WhirlpoolHash.anInt7207 != -1) {
-                        val is_15_ = CameraRotationStub.aRenderer326!!.Y()
+                        val is_15_ = CameraRotationStubStatics.aRenderer326!!.Y()
                         val i_16_ = is_15_[0]
                         val i_17_ = is_15_[1]
                         val i_18_ = is_15_[2]
@@ -377,9 +377,9 @@ class FireParticleStream : OutputStream() {
                                         }
                                         class318_sub4 = (class243.method1878(122.toByte()) as SceneEntityModel?)
                                     }
-                                    if (WhirlpoolHash.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3687(WidgetDefinition.anSpriteDrawTarget_252)
-                                    CameraRotationStub.aRenderer326!!.F(-i_33_, -i_34_)
-                                    CameraRotationStub.aRenderer326!!.b(i_45_, i_48_, i_43_, i_50_, d_37_)
+                                    if (WhirlpoolHash.anInt7207 == 0) CameraRotationStubStatics.aRenderer326!!.method3687(WidgetDefinition.anSpriteDrawTarget_252)
+                                    CameraRotationStubStatics.aRenderer326!!.F(-i_33_, -i_34_)
+                                    CameraRotationStubStatics.aRenderer326!!.b(i_45_, i_48_, i_43_, i_50_, d_37_)
                                     RenderNodeStatics.method3284(true, (ShortMatrixNode.aDouble9517 + d_37_))
                                     GlCubeMapTexture.aDouble8621 = d_37_ + ShortMatrixNode.aDouble9517
                                     if (WhirlpoolHash.anInt7207 == 1) {
@@ -387,30 +387,30 @@ class FireParticleStream : OutputStream() {
                                         FireParticleStream.anInt95 = i_21_
                                         ConfigValueProvider.anInt4910 = -ShaderObjectStatics.anInt4100 + (i_16_ - i_33_)
                                         TexGenMaterialPass.anInt6255 = i_20_
-                                        CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
+                                        CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
                                     } else {
                                         TexGenMaterialPass.anInt6255 = i_20_
                                         ShaderStateVariant.anInt8799 = (-ModelVertexColorBuffer.anInt6568 + i_17_ - (-(WhirlpoolHash.anInt10444) - -i_34_))
                                         ConfigValueProvider.anInt4910 = (-ShaderObjectStatics.anInt4100 + i_16_ + (WhirlpoolHash.anInt2747 + -i_33_))
                                         FireParticleStream.anInt95 = i_21_
-                                        CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
+                                        CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
                                     }
                                     method1274(aSceneObjectSpawner_10436)
                                     if (i_51_ > 0) {
-                                        CameraRotationStub.aRenderer326!!.KA(0, i_49_, (WhirlpoolHash.anInt8854), i_51_ + i_49_)
-                                        CameraRotationStub.aRenderer326!!.ya()
-                                        CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
+                                        CameraRotationStubStatics.aRenderer326!!.KA(0, i_49_, (WhirlpoolHash.anInt8854), i_51_ + i_49_)
+                                        CameraRotationStubStatics.aRenderer326!!.ya()
+                                        CameraRotationStubStatics.aRenderer326!!.GA(IsaacCipher.anInt1290)
                                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
                                     }
                                     if (i_46_ > 0) {
-                                        CameraRotationStub.aRenderer326!!.KA(i_44_, i_53_, i_44_ - -i_46_, i_53_ + i_52_)
-                                        CameraRotationStub.aRenderer326!!.ya()
-                                        CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
+                                        CameraRotationStubStatics.aRenderer326!!.KA(i_44_, i_53_, i_44_ - -i_46_, i_53_ + i_52_)
+                                        CameraRotationStubStatics.aRenderer326!!.ya()
+                                        CameraRotationStubStatics.aRenderer326!!.GA(IsaacCipher.anInt1290)
                                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
                                     }
-                                    CameraRotationStub.aRenderer326!!.la()
+                                    CameraRotationStubStatics.aRenderer326!!.la()
                                     ParticleEffectCache.method2046()
-                                    if (WhirlpoolHash.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
+                                    if (WhirlpoolHash.anInt7207 == 0) CameraRotationStubStatics.aRenderer326!!.method3672()
                                     ModelVertexColorBuffer.anInt6568 += i_34_
                                     ShaderObjectStatics.anInt4100 += i_33_
                                     ShortMatrixNode.aDouble9517 += d_37_
@@ -446,24 +446,24 @@ class FireParticleStream : OutputStream() {
                             AnimatedModelRenderer.anInt8422 = i_4_
                             ModelVertexColorBuffer.anInt6568 = 0
                             ShortMatrixNode.aDouble9517 = 0.0
-                            if (WhirlpoolHash.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3687(WidgetDefinition.anSpriteDrawTarget_252)
-                            CameraRotationStub.aRenderer326!!.la()
-                            CameraRotationStub.aRenderer326!!.ya()
-                            CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
+                            if (WhirlpoolHash.anInt7207 == 0) CameraRotationStubStatics.aRenderer326!!.method3687(WidgetDefinition.anSpriteDrawTarget_252)
+                            CameraRotationStubStatics.aRenderer326!!.la()
+                            CameraRotationStubStatics.aRenderer326!!.ya()
+                            CameraRotationStubStatics.aRenderer326!!.GA(IsaacCipher.anInt1290)
                             NpcConfig.aAbstractCameraTransform_905!!.method903(AnimatedModelRenderer.anInt8422, ConfigIdPair.anInt403, CameraSplineNode.anInt6849, WorldMapAreaLabel.anInt8583, LocalizedTextTriple.anInt3760, ProjectileConfigUtil.anInt396)
-                            CameraRotationStub.aRenderer326!!.method3638(NpcConfig.aAbstractCameraTransform_905)
+                            CameraRotationStubStatics.aRenderer326!!.method3638(NpcConfig.aAbstractCameraTransform_905)
                             if (WhirlpoolHash.anInt7207 == 1) {
                                 ShaderStateVariant.anInt8799 = i_17_
                                 ConfigValueProvider.anInt4910 = i_16_
                                 FireParticleStream.anInt95 = i_21_
                                 TexGenMaterialPass.anInt6255 = i_20_
-                                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
+                                CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
                             } else {
                                 ConfigValueProvider.anInt4910 = i_16_ - -WhirlpoolHash.anInt2747
                                 ShaderStateVariant.anInt8799 = WhirlpoolHash.anInt10444 + i_17_
                                 TexGenMaterialPass.anInt6255 = i_20_
                                 FireParticleStream.anInt95 = i_21_
-                                CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
+                                CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
                             }
                             GlCubeMapTexture.aDouble8621 = 0.0
                             aSceneObjectSpawner_10436!!.method775(69.toByte())
@@ -471,7 +471,7 @@ class FireParticleStream : OutputStream() {
                             method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
                             ParticleEffectCache.method2046()
                             PcmStreamBuffer.aBoolean8870 = false
-                            if (WhirlpoolHash.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
+                            if (WhirlpoolHash.anInt7207 == 0) CameraRotationStubStatics.aRenderer326!!.method3672()
                             if (WhirlpoolHash.anInt7207 == 1) method1469(-117)
                         }
                         if (WhirlpoolHash.anInt7207 == 0) WidgetDefinition.anSpriteDrawTarget_252!!.method14(MapRegionLoaderThread.anInt4211, FireParticleStream.anInt9157, WhirlpoolHash.anInt5283, WhirlpoolHash.anInt1651, 0, 0, true, true)
@@ -480,25 +480,25 @@ class FireParticleStream : OutputStream() {
                         ModelWallEntity.aDouble10120 = ShortMatrixNode.aDouble9517
                         if (WhirlpoolHash.anInt7207 == 0 || WhirlpoolHash.anInt7207 == 2) {
                             if (WhirlpoolHash.anInt7207 == 2) {
-                                CameraRotationStub.aRenderer326!!.GA(IsaacCipher.anInt1290)
-                                CameraRotationStub.aRenderer326!!.ya()
+                                CameraRotationStubStatics.aRenderer326!!.GA(IsaacCipher.anInt1290)
+                                CameraRotationStubStatics.aRenderer326!!.ya()
                             }
                             TextureHandle.anInt2590 = i_20_
                             anInt1879 = i_21_
                             AnimationFrameState.anInt1537 = (-MapRegionLoaderThread.anInt4211 + -ShaderObjectStatics.anInt4100 + (i_16_ + WhirlpoolHash.anInt2747))
                             SceneTextLabel.anInt6417 = (-FireParticleStream.anInt9157 + (i_17_ + WhirlpoolHash.anInt10444 + -ModelVertexColorBuffer.anInt6568))
-                            CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
+                            CameraRotationStubStatics.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
                         } else if (WhirlpoolHash.anInt7207 == 1) {
                             TextureHandle.anInt2590 = i_20_
                             AnimationFrameState.anInt1537 = i_16_ + -ShaderObjectStatics.anInt4100
                             SceneTextLabel.anInt6417 = -ModelVertexColorBuffer.anInt6568 + i_17_
                             anInt1879 = i_21_
-                            CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
-                            CameraRotationStub.aRenderer326!!.KA(MapRegionLoaderThread.anInt4211, FireParticleStream.anInt9157, (MapRegionLoaderThread.anInt4211 - -WhirlpoolHash.anInt5283), (WhirlpoolHash.anInt1651 + FireParticleStream.anInt9157))
+                            CameraRotationStubStatics.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
+                            CameraRotationStubStatics.aRenderer326!!.KA(MapRegionLoaderThread.anInt4211, FireParticleStream.anInt9157, (MapRegionLoaderThread.anInt4211 - -WhirlpoolHash.anInt5283), (WhirlpoolHash.anInt1651 + FireParticleStream.anInt9157))
                         }
                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, if (WhirlpoolHash.anInt7207 != 2) 2 else 0, WhirlpoolHash.anInt7207 == 1)
-                        CameraRotationStub.aRenderer326!!.la()
-                        CameraRotationStub.aRenderer326!!.DA(i_16_, i_17_, i_18_, i_19_)
+                        CameraRotationStubStatics.aRenderer326!!.la()
+                        CameraRotationStubStatics.aRenderer326!!.DA(i_16_, i_17_, i_18_, i_19_)
                         if (i == -2) break
                         anInt2986 = -82
                     }
