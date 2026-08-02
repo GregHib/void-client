@@ -247,7 +247,7 @@ class FireParticleStream : OutputStream() {
                             val i_25_ = ((VideoAdChecker.aDouble3182 * i_22_.toDouble() + i_23_.toDouble() * MapElementDefinitionCache.aDouble3980 + i_24_.toDouble() * SceneCollisionEntry.aDouble4404) * i_20_.toDouble() / i_14_.toDouble()).toInt()
                             val i_26_ = (((i_24_.toDouble() * ProceduralTextureGraph.aDouble9531) + ((i_22_.toDouble() * TheoraVideoStream.aDouble9023) + (i_23_.toDouble() * LocalizedTextTriple.aDouble3761))) * i_21_.toDouble() / i_14_.toDouble()).toInt()
                             val d = (i_24_.toDouble() * PcmStreamBuffer.aDouble8869 + (MenuActionNode.aDouble6774 * i_23_.toDouble() + i_22_.toDouble() * NoiseTextureGenerator.aDouble1083))
-                            val i_27_ = i_25_ + WhirlpoolHash.anInt2747 - ShaderObject.anInt4100
+                            val i_27_ = i_25_ + WhirlpoolHash.anInt2747 - ShaderObjectStatics.anInt4100
                             val i_28_ = (WhirlpoolHash.anInt10444 + i_26_ + -ModelVertexColorBuffer.anInt6568)
                             val i_29_ = WhirlpoolHash.anInt5283 + i_27_
                             val i_30_ = WhirlpoolHash.anInt1651 + i_28_
@@ -385,13 +385,13 @@ class FireParticleStream : OutputStream() {
                                     if (WhirlpoolHash.anInt7207 == 1) {
                                         ShaderStateVariant.anInt8799 = (i_17_ + -ModelVertexColorBuffer.anInt6568 - i_34_)
                                         FireParticleStream.anInt95 = i_21_
-                                        ConfigValueProvider.anInt4910 = -ShaderObject.anInt4100 + (i_16_ - i_33_)
+                                        ConfigValueProvider.anInt4910 = -ShaderObjectStatics.anInt4100 + (i_16_ - i_33_)
                                         TexGenMaterialPass.anInt6255 = i_20_
                                         CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
                                     } else {
                                         TexGenMaterialPass.anInt6255 = i_20_
                                         ShaderStateVariant.anInt8799 = (-ModelVertexColorBuffer.anInt6568 + i_17_ - (-(WhirlpoolHash.anInt10444) - -i_34_))
-                                        ConfigValueProvider.anInt4910 = (-ShaderObject.anInt4100 + i_16_ + (WhirlpoolHash.anInt2747 + -i_33_))
+                                        ConfigValueProvider.anInt4910 = (-ShaderObjectStatics.anInt4100 + i_16_ + (WhirlpoolHash.anInt2747 + -i_33_))
                                         FireParticleStream.anInt95 = i_21_
                                         CameraRotationStub.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
                                     }
@@ -412,10 +412,10 @@ class FireParticleStream : OutputStream() {
                                     ParticleEffectCache.method2046()
                                     if (WhirlpoolHash.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
                                     ModelVertexColorBuffer.anInt6568 += i_34_
-                                    ShaderObject.anInt4100 += i_33_
+                                    ShaderObjectStatics.anInt4100 += i_33_
                                     ShortMatrixNode.aDouble9517 += d_37_
                                     FireParticleStream.anInt9157 = (-ModelVertexColorBuffer.anInt6568 + i_26_ + WhirlpoolHash.anInt10444)
-                                    MapRegionLoaderThread.anInt4211 = (-ShaderObject.anInt4100 + WhirlpoolHash.anInt2747 + i_25_)
+                                    MapRegionLoaderThread.anInt4211 = (-ShaderObjectStatics.anInt4100 + WhirlpoolHash.anInt2747 + i_25_)
                                     if (WhirlpoolHash.anInt7207 == 1) {
                                         SceneryDetailOptionState.anInt6095 += i_35_
                                         MaterialPass.anInt3682 += i_36_
@@ -441,7 +441,7 @@ class FireParticleStream : OutputStream() {
                             CameraSplineNode.anInt6849 = i_5_
                             ConfigIdPair.anInt403 = i_6_
                             FireParticleStream.anInt9157 = WhirlpoolHash.anInt10444
-                            ShaderObject.anInt4100 = 0
+                            ShaderObjectStatics.anInt4100 = 0
                             MapRegionLoaderThread.anInt4211 = WhirlpoolHash.anInt2747
                             AnimatedModelRenderer.anInt8422 = i_4_
                             ModelVertexColorBuffer.anInt6568 = 0
@@ -485,12 +485,12 @@ class FireParticleStream : OutputStream() {
                             }
                             TextureHandle.anInt2590 = i_20_
                             anInt1879 = i_21_
-                            AnimationFrameState.anInt1537 = (-MapRegionLoaderThread.anInt4211 + -ShaderObject.anInt4100 + (i_16_ + WhirlpoolHash.anInt2747))
+                            AnimationFrameState.anInt1537 = (-MapRegionLoaderThread.anInt4211 + -ShaderObjectStatics.anInt4100 + (i_16_ + WhirlpoolHash.anInt2747))
                             SceneTextLabel.anInt6417 = (-FireParticleStream.anInt9157 + (i_17_ + WhirlpoolHash.anInt10444 + -ModelVertexColorBuffer.anInt6568))
                             CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
                         } else if (WhirlpoolHash.anInt7207 == 1) {
                             TextureHandle.anInt2590 = i_20_
-                            AnimationFrameState.anInt1537 = i_16_ + -ShaderObject.anInt4100
+                            AnimationFrameState.anInt1537 = i_16_ + -ShaderObjectStatics.anInt4100
                             SceneTextLabel.anInt6417 = -ModelVertexColorBuffer.anInt6568 + i_17_
                             anInt1879 = i_21_
                             CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)

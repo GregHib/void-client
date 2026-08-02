@@ -65,8 +65,8 @@ class GlEnvMappedWaterPass internal constructor(glRenderDevice: GlRenderDevice, 
         try {
             aNormalMapGenerator_7375 = normalMapGenerator
             if (js5Archive != null && glRenderDevice!!.aBoolean9921 && glRenderDevice.aBoolean9922) {
-                val class39 = (ShaderObject.method2608(glRenderDevice, js5Archive.method391("gl", "environment_mapped_water_v", -29832), -108, 35633))
-                val class39_13_ = (ShaderObject.method2608(glRenderDevice, js5Archive.method391("gl", "environment_mapped_water_f", -29832), -122, 35632))
+                val class39 = (ShaderObjectStatics.method2608(glRenderDevice, js5Archive.method391("gl", "environment_mapped_water_v", -29832), -108, 35633))
+                val class39_13_ = (ShaderObjectStatics.method2608(glRenderDevice, js5Archive.method391("gl", "environment_mapped_water_f", -29832), -122, 35632))
                 aNativeBufferHandle_7369 = method2582(glRenderDevice, arrayOf<GlShaderObjectHandle?>(class39, class39_13_), -2113)
                 aBoolean7376 = (aNativeBufferHandle_7369 != null && aNormalMapGenerator_7375!!.method2041(120.toByte()))
             } else aBoolean7376 = false

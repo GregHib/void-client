@@ -493,7 +493,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RenderbufferObject.anInt8568 = 0
             SimpleToggleOptionState.anInt5893 = 0
             NativeRenderer.anInt8064 = 0
-            ShaderObject.anInt4101 = 0
+            ShaderObjectStatics.anInt4101 = 0
             AnimatedModelRenderer.anInt8420 = 0
             TerrainShadowBuilderGl2.anInt6931 = 0
             HostPingThread.anInt2266 = 0
@@ -621,7 +621,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CutsceneSequenceData.anInt8811 = 0
             GroundDecorSceneEntity.anInt9979 = 0
             FixedFunctionMaterialPass.anInt6203 = 0
-            ShaderObject.anInt4099 = 0
+            ShaderObjectStatics.anInt4099 = 0
             TextureHandle.anInt2583 = 0
             FileIoUtil.anInt4092 = 0
             WidgetDefinition.anInt257 = 0

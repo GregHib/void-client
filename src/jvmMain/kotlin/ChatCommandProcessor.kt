@@ -5136,7 +5136,7 @@ object ChatCommandProcessor {
                     else if (i_490_ == 39) anInt1170--
                     else if (i_490_ == 40) {
                         val i_497_ = is_489_[i_488_]
-                        val class348_sub42_sub19_498_ = ShaderObject.method2609(-114, i_497_)
+                        val class348_sub42_sub19_498_ = ShaderObjectStatics.method2609(-114, i_497_)
                         if (class348_sub42_sub19_498_ == null) throw RuntimeException()
                         val is_499_ = IntArray(class348_sub42_sub19_498_.anInt9688)
                         val strings = (arrayOfNulls<String>(class348_sub42_sub19_498_.anInt9689))
@@ -5243,7 +5243,7 @@ object ChatCommandProcessor {
     private fun method712(class348_sub36: WidgetActionEntry, i: Int) {
         val objects = class348_sub36.anObjectArray6987!!
         val i_515_ = (objects[0] as Int)
-        val class348_sub42_sub19 = ShaderObject.method2609(-122, i_515_)
+        val class348_sub42_sub19 = ShaderObjectStatics.method2609(-122, i_515_)
         if (class348_sub42_sub19 != null) {
             anIntArray1164 = (IntArray(class348_sub42_sub19.anInt9688))
             var i_516_ = 0
