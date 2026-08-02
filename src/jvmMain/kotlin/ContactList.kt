@@ -1,5 +1,5 @@
 import CollisionFlagQuery.Companion.aCollisionFlagQuery_1199
-import SceneModelBuilder.Companion.method2496
+import SceneModelBuilderStatics.method2496
 import ContactList.Companion.method721
 import kotlin.math.min
 import kotlin.math.pow

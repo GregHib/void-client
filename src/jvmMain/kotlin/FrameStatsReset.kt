@@ -659,7 +659,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SoftwareRenderer.anInt6638 = 0
             FloatCameraTransform.anInt5714 = 0
             OpenGlModel.anInt5635 = 0
-            SceneModelBuilder.anInt6396 = 0
+            SceneModelBuilderStatics.anInt6396 = 0
             GlRenderDevice.anInt9852 = 0
             WallSceneEntity.anInt9951 = 0
             TextureDefinitionCache.anInt2963 = 0
@@ -1286,7 +1286,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ModelWallEntity.anInt10133 = 0
             NativeRenderer.anInt7954 = 0
             SceneEntityModel.anInt6408 = 0
-            SceneModelBuilder.anInt6395 = 0
+            SceneModelBuilderStatics.anInt6395 = 0
             BufferedRandomAccessFile.anInt1316 = 0
             CompositeNpcModelBuilder.anInt2091 = 0
             LocTypeDefLoader.anInt2505 = 0
@@ -1900,7 +1900,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             HudTabPanel.anInt2991 = 0
             ResourceLoaderThread.anInt3912 = 0
             ActorEntity.anInt72 = 0
-            SceneModelBuilder.anInt6398 = 0
+            SceneModelBuilderStatics.anInt6398 = 0
             CharCodeMap.anInt9584 = 0
             WorldMapRenderer.anInt4677 = 0
             DisplaySettingsConfig.anInt7258 = 0
@@ -2658,7 +2658,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             AudioResampler.anInt2166 = 0
             StreamingResourceRequest.anInt10448 = 0
             SpriteSheetCache.anInt2566 = 0
-            SceneModelBuilder.anInt6397 = 0
+            SceneModelBuilderStatics.anInt6397 = 0
             GlRenderDevice.anInt9814 = 0
             GlFramebufferBlitter.anInt274 = 0
             OpenGlTerrainTile.anInt8255 = 0
@@ -2878,7 +2878,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7700 = 0
             WorldMapSceneSoftware.anInt3940 = 0
             SplashImageLoadable.anInt4696 = 0
-            SceneModelBuilder.anInt6399 = 0
+            SceneModelBuilderStatics.anInt6399 = 0
             Renderer.anInt4573 = 0
             NpcType.anInt1334 = 0
             FloatCameraTransform.anInt5725 = 0

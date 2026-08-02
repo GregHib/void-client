@@ -1,0 +1,236 @@
+import WhirlpoolHash.Companion.method1166
+import WidgetNodeLink.Companion.method1197
+import AudioResampler.Companion.method1273
+import PerlinTextureProvider.Companion.method1399
+import RemoveRoofsOptionState.Companion.method1813
+import WhirlpoolHash.Companion.method2057
+import ConfigVarProgress.Companion.method2308
+
+object SceneModelBuilderStatics {
+    var anIntArray6393: IntArray? = IntArray(8)
+    var anInt6395: Int = 0
+    var anInt6396: Int = 0
+    var anInt6397: Int = 0
+    var anInt6398: Int = 0
+    var anInt6399: Int = 0
+    var aHintArrowOrMessageArray6400s: Array<HintArrowOrMessage?>? = arrayOfNulls<HintArrowOrMessage>(100)
+
+    fun method2494(i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, class348_sub42_sub12: ContactEntry?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Byte, i_6_: Int, i_7_: Int, i_8_: Int) {
+        var i_4_ = i_4_
+        do {
+            try {
+                anInt6397++
+                if (i_5_ < 123) method2499(27, -8, -96, 71, 72, 72.toByte(), -82)
+                if (i_8_ > i_7_ && i_7_ + i_2_ > i_8_ && i_3_ > -13 + i_1_ && i_1_ + 3 > i_3_ && (class348_sub42_sub12!!.aBoolean9610)) i_4_ = i_0_
+                var `is`: IntArray? = null
+                if (!method1197(-12081, class348_sub42_sub12!!.anInt9608)) {
+                    if ((class348_sub42_sub12.anInt9599) == -1) {
+                        if (FixedFunctionWaterPass.method3549((class348_sub42_sub12.anInt9608), (-119).toByte())) {
+                            val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480((class348_sub42_sub12.aLong9605).toInt().toLong(), -6008)) as NpcReference?)
+                            if (class348_sub22 != null) {
+                                val npc = (class348_sub22.aNpc_6859)!!
+                                var class79 = (npc.aNpcType_10505)
+                                if (class79!!.anIntArray1377 != null) class79 = (class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1))
+                                if (class79 != null) `is` = class79.anIntArray1342
+                            }
+                        } else if (method1813(8806, (class348_sub42_sub12.anInt9608))) {
+                            val `object`: Any? = null
+                            var npcConfig: NpcConfig?
+                            if (class348_sub42_sub12.anInt9608 != 1001) npcConfig = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
+                            else npcConfig = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
+                            if (npcConfig.anIntArray945 != null) npcConfig = (npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte()))
+                            if (npcConfig != null) `is` = npcConfig.anIntArray917
+                        }
+                    } else `is` = ClientExceptionStatics.aModelHeaderCache_112!!.method1940(113, (class348_sub42_sub12.anInt9599)).anIntArray2772
+                } else `is` = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-67, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
+                var string = IntHashSetStatics.method2367(125.toByte(), class348_sub42_sub12)
+                if (`is` != null) string += method1273(`is`, true)
+                NodeDequeStatics.aRSFont_3326!!.method2567(i_1_, string, 116.toByte(), i_4_, 0, i_7_ - -3, TileRenderState.aAbstractModelRendererArray4234, SizeBoundedSoftCache.anIntArray2330)
+                if (!class348_sub42_sub12.aBoolean9597) break
+                SceneryDetailOptionState.aAbstractModelRenderer_6097!!.method974(WorldMapLabel.aFontDefinition_4962!!.method1183(true, string) + (i_7_ - -5), -12 + i_1_)
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, ("vo.C(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (class348_sub42_sub12 != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
+            }
+            break
+        } while (false)
+    }
+
+    @JvmStatic
+    fun method2495(i: Byte) {
+        if (i <= 110) anIntArray6393 = null
+        anIntArray6393 = null
+        aHintArrowOrMessageArray6400s = null
+    }
+
+    @JvmStatic
+    fun method2496(i: Int, i_9_: Int, bool: Boolean): Boolean {
+        if (bool != true) method2497(null, (-29).toByte(), null, 73)
+        anInt6396++
+        if (i >= 1000 && i_9_ < 1000) return true
+        if (i < 1000 && i_9_ < 1000) {
+            if (method2308(26.toByte(), i_9_)) return true
+            return !method2308(26.toByte(), i)
+        }
+        return i >= 1000 && i_9_ >= 1000
+    }
+
+    fun method2497(`is`: ByteArray?, i: Byte, string: String?, i_10_: Int): Int {
+        var i_10_ = i_10_
+        try {
+            anInt6399++
+            val i_11_ = i_10_
+            val i_12_ = string!!.length
+            var i_13_ = 0
+            if (i.toInt() != 0) method2496(21, -5, true)
+            while ( /**/i_12_ > i_13_) {
+                val i_14_ = method1399(7, string.get(i_13_))
+                val i_15_ = (if (i_12_ > i_13_ - -1) method1399(7, string.get(1 + i_13_)) else -1)
+                val i_16_ = (if (2 + i_13_ < i_12_) method1399(7, string.get(i_13_ + 2)) else -1)
+                val i_17_ = (if (i_12_ <= 3 + i_13_) -1 else method1399(7, string.get(i_13_ + 3)))
+                `is`!![i_10_++] = method2057(i_14_ shl 2, i_15_ ushr 4).toByte()
+                if (i_16_ == -1) break
+                `is`[i_10_++] = method2057((method1166(15, i_15_) shl 4), i_16_ ushr 2).toByte()
+                if (i_17_ == -1) break
+                `is`[i_10_++] = method2057((method1166(3, i_16_) shl 6), i_17_).toByte()
+                i_13_ += 4
+            }
+            return -i_11_ + i_10_
+        } catch (runtimeexception: RuntimeException) {
+            throw TextureLoadException.method2929(runtimeexception, ("vo.B(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_10_ + ')'))
+        }
+    }
+
+    @JvmStatic
+    fun method2498(mapTileShape: MapTileShape?, var_renderer: Renderer?, i: Byte, i_18_: Int) {
+        try {
+            anInt6395++
+            if (i > -101) anIntArray6393 = null
+            if (Player.anIntArray10566 != null && mapTileShape!!.aByte4181 >= i_18_) {
+                var i_19_ = 0
+                while ((i_19_ < Player.anIntArray10566!!.size)) {
+                    if ((Player.anIntArray10566!![i_19_] != -1000000) && (((Player.anIntArray10566!![i_19_]) >= mapTileShape.anIntArray4191[0]) || (mapTileShape.anIntArray4191[1] <= (Player.anIntArray10566!![i_19_])) || (mapTileShape.anIntArray4191[2] <= (Player.anIntArray10566!![i_19_])) || ((Player.anIntArray10566!![i_19_]) >= mapTileShape.anIntArray4191[3])) && ((mapTileShape.anIntArray4187!![0] <= StaticNoiseTexture.anIntArray8666!![i_19_]) || (mapTileShape.anIntArray4187!![1] <= StaticNoiseTexture.anIntArray8666!![i_19_]) || (mapTileShape.anIntArray4187!![2] <= StaticNoiseTexture.anIntArray8666!![i_19_]) || (StaticNoiseTexture.anIntArray8666!![i_19_] >= mapTileShape.anIntArray4187!![3])) && ((mapTileShape.anIntArray4187!![0] >= BackgroundWorkerThread.anIntArray3220!![i_19_]) || (BackgroundWorkerThread.anIntArray3220!![i_19_] <= mapTileShape.anIntArray4187!![1]) || (mapTileShape.anIntArray4187!![2] >= BackgroundWorkerThread.anIntArray3220!![i_19_]) || (BackgroundWorkerThread.anIntArray3220!![i_19_] <= mapTileShape.anIntArray4187!![3])) && ((CubemapTextureImplSource.anIntArray8712!![i_19_] >= mapTileShape.anIntArray4184[0]) || (CubemapTextureImplSource.anIntArray8712!![i_19_] >= mapTileShape.anIntArray4184[1]) || (mapTileShape.anIntArray4184[2] <= CubemapTextureImplSource.anIntArray8712!![i_19_]) || (CubemapTextureImplSource.anIntArray8712!![i_19_] >= mapTileShape.anIntArray4184[3])) && ((mapTileShape.anIntArray4184[0] >= Client.anIntArray5176!![i_19_]) || (mapTileShape.anIntArray4184[1] >= Client.anIntArray5176!![i_19_]) || (mapTileShape.anIntArray4184[2] >= Client.anIntArray5176!![i_19_]) || (mapTileShape.anIntArray4184[3] >= Client.anIntArray5176!![i_19_]))
+                    ) return
+                    i_19_++
+                }
+            }
+            if (mapTileShape!!.aByte4192.toInt() == 1) {
+                val i_20_: Int = (ActorEntity.anInt10084 + (-ActorEntity.anInt6111 + mapTileShape.aShort4185))
+                if (i_20_ >= 0 && i_20_ <= (ActorEntity.anInt10084 + ActorEntity.anInt10084)) {
+                    var i_21_: Int = (ActorEntity.anInt10084 + mapTileShape.aShort4193 - ActorEntity.anInt8502)
+                    if (i_21_ < 0) i_21_ = 0
+                    else if ((ActorEntity.anInt10084 + ActorEntity.anInt10084) < i_21_) return
+                    var i_22_: Int = (-ActorEntity.anInt8502 + (mapTileShape.aShort4190 - -ActorEntity.anInt10084))
+                    if ((ActorEntity.anInt10084 - -ActorEntity.anInt10084) < i_22_) i_22_ = (ActorEntity.anInt10084 - -ActorEntity.anInt10084)
+                    else if (i_22_ < 0) return
+                    var bool = false
+                    while (i_22_ >= i_21_) {
+                        if (ActorEntity.aBooleanArrayArray1572!![i_20_]!![i_21_++]) {
+                            bool = true
+                            break
+                        }
+                    }
+                    if (bool) {
+                        var f = (ActorEntity.anInt1974 - (mapTileShape.anIntArray4187!![0])).toFloat()
+                        if (f < 0.0f) f *= -1.0f
+                        if (!(f < SceneRegionState.anInt194.toFloat()) && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
+                    }
+                }
+            } else if (mapTileShape.aByte4192.toInt() == 2) {
+                val i_23_: Int = (ActorEntity.anInt10084 + (mapTileShape.aShort4193 - ActorEntity.anInt8502))
+                if (i_23_ >= 0 && i_23_ <= (ActorEntity.anInt10084 + ActorEntity.anInt10084)) {
+                    var i_24_: Int = (mapTileShape.aShort4185 + (-ActorEntity.anInt6111 + ActorEntity.anInt10084))
+                    if (i_24_ >= 0) {
+                        if (i_24_ > (ActorEntity.anInt10084 + ActorEntity.anInt10084)) return
+                    } else i_24_ = 0
+                    var i_25_: Int = (-ActorEntity.anInt6111 + (mapTileShape.aShort4182 - -ActorEntity.anInt10084))
+                    if ((ActorEntity.anInt10084 + ActorEntity.anInt10084) >= i_25_) {
+                        if (i_25_ < 0) return
+                    } else i_25_ = (ActorEntity.anInt10084 + ActorEntity.anInt10084)
+                    var bool = false
+                    while (i_24_ <= i_25_) {
+                        if (ActorEntity.aBooleanArrayArray1572!![i_24_++]!![i_23_]) {
+                            bool = true
+                            break
+                        }
+                    }
+                    if (bool) {
+                        var f = (ActorEntity.anInt9360 - (mapTileShape.anIntArray4184[0])).toFloat()
+                        if (f < 0.0f) f *= -1.0f
+                        if (!(f < SceneRegionState.anInt194.toFloat()) && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
+                    }
+                }
+            } else if (mapTileShape.aByte4192.toInt() == 16 || mapTileShape.aByte4192.toInt() == 8) {
+                val i_26_: Int = (ActorEntity.anInt10084 + (-ActorEntity.anInt6111 + mapTileShape.aShort4185))
+                if (i_26_ >= 0 && i_26_ <= (ActorEntity.anInt10084 - -ActorEntity.anInt10084)) {
+                    val i_27_: Int = (mapTileShape.aShort4193 + (-ActorEntity.anInt8502 - -ActorEntity.anInt10084))
+                    if (i_27_ >= 0 && ((ActorEntity.anInt10084 - -ActorEntity.anInt10084) >= i_27_) && ActorEntity.aBooleanArrayArray1572!![i_26_]!![i_27_]) {
+                        var f = (ActorEntity.anInt1974 - (mapTileShape.anIntArray4187!![0])).toFloat()
+                        if (f < 0.0f) f *= -1.0f
+                        var f_28_ = (ActorEntity.anInt9360 + -(mapTileShape.anIntArray4184[0])).toFloat()
+                        if (f_28_ < 0.0f) f_28_ *= -1.0f
+                        if ((!(f < SceneRegionState.anInt194.toFloat()) || !(SceneRegionState.anInt194.toFloat() > f_28_)) && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
+                    }
+                }
+            } else if (mapTileShape.aByte4192.toInt() == 4) {
+                val f = (-TerrainTileGeometry.anInt3006 + mapTileShape.anIntArray4191[0]).toFloat()
+                if (!(f <= OpenGlRenderer.anInt7714.toFloat())) {
+                    var i_29_: Int = (ActorEntity.anInt10084 + -ActorEntity.anInt8502 + mapTileShape.aShort4193)
+                    if (i_29_ >= 0) {
+                        if ((ActorEntity.anInt10084 + ActorEntity.anInt10084) < i_29_) return
+                    } else i_29_ = 0
+                    var i_30_: Int = (ActorEntity.anInt10084 + -ActorEntity.anInt8502 + mapTileShape.aShort4190)
+                    if (i_30_ <= (ActorEntity.anInt10084 + ActorEntity.anInt10084)) {
+                        if (i_30_ < 0) return
+                    } else i_30_ = (ActorEntity.anInt10084 - -ActorEntity.anInt10084)
+                    var i_31_: Int = (-ActorEntity.anInt6111 + (mapTileShape.aShort4185 + ActorEntity.anInt10084))
+                    if (i_31_ < 0) i_31_ = 0
+                    else if (i_31_ > (ActorEntity.anInt10084 + ActorEntity.anInt10084)) return
+                    var i_32_: Int = (ActorEntity.anInt10084 + mapTileShape.aShort4182 - ActorEntity.anInt6111)
+                    if ((ActorEntity.anInt10084 - -ActorEntity.anInt10084) < i_32_) i_32_ = (ActorEntity.anInt10084 + ActorEntity.anInt10084)
+                    else if (i_32_ < 0) return
+                    var bool = false
+                    while_102_@ for (i_33_ in i_31_..i_32_) {
+                        var i_34_ = i_29_
+                        while (i_30_ >= i_34_) {
+                            if (ActorEntity.aBooleanArrayArray1572!![i_33_]!![i_34_]) {
+                                bool = true
+                                break@while_102_
+                            }
+                            i_34_++
+                        }
+                    }
+                    if (bool && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
+                }
+            }
+        } catch (runtimeexception: RuntimeException) {
+            throw TextureLoadException.method2929(runtimeexception, ("vo.A(" + (if (mapTileShape != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_18_ + ')'))
+        }
+    }
+
+    fun method2499(i: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Byte, i_40_: Int): Boolean {
+        anInt6398++
+        if (!ActorEntity.aBoolean9307 || !ActorEntity.aBoolean351) return false
+        if (ActorEntity.anInt2946 < 100) return false
+        if (i_38_ == i_40_ && i_36_ == i_35_) {
+            if (!ActorEntity.method164(i, i_38_, (-97).toByte(), i_36_)) return false
+            val i_41_ = i_38_ shl ActorEntity.anInt4459
+            val i_42_ = i_36_ shl ActorEntity.anInt4459
+            if (ActorEntity.method1084(i_37_, ActorEntity.anInt3465, i_42_, i_41_, ActorEntity.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_36_, i_38_), ActorEntity.anInt3465, 18507)) {
+                SourceRowTextureNode.anInt9112++
+                return true
+            }
+            return false
+        }
+        if (i_39_ <= 101) method2499(66, -39, -55, 105, 96, 114.toByte(), -44)
+        for (i_43_ in i_38_..i_40_) {
+            for (i_44_ in i_36_..i_35_) {
+                if (ActorEntity.anIntArrayArrayArray4356!![i]!![i_43_]!![i_44_] == -ActorEntity.anInt3049) return false
+            }
+        }
+        val i_45_ = (i_38_ shl ActorEntity.anInt4459) + 1
+        val i_46_ = (i_36_ shl ActorEntity.anInt4459) + 2
+        if (!ActorEntity.method1084(i_37_, (1 + -i_38_ + i_40_) * ActorEntity.anInt3465, i_46_, i_45_, ActorEntity.aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_36_, i_38_), ActorEntity.anInt3465 * (i_35_ + -i_36_ + 1), 18507)) return false
+        SourceRowTextureNode.anInt9112++
+        return true
+    }
+}

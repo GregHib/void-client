@@ -36,7 +36,7 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
     override fun method2382(i: Byte): Boolean {
         anInt8748++
         if (i > -51) return true
-        return SceneModelBuilder.method2499(this.aByte6376.toInt(), this.aShort8747.toInt(), this.aShort8750.toInt(), this.method2394(true), this.aShort8743.toInt(), 116.toByte(), (this.aShort8751).toInt())
+        return SceneModelBuilderStatics.method2499(this.aByte6376.toInt(), this.aShort8747.toInt(), this.aShort8750.toInt(), this.method2394(true), this.aShort8743.toInt(), 116.toByte(), (this.aShort8751).toInt())
     }
 
     open fun method2409(i: Byte) {

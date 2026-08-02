@@ -124,7 +124,7 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
                 while (class348_sub42_sub13 != null) {
                     val i_21_ = i_10_ + (i_5_ + ProceduralTextureGraph.anInt9532 + 13 - -(16 * i_20_))
                     i_20_++
-                    if (class348_sub42_sub13.anInt9615 == 1) SceneModelBuilder.method2494(ProceduralTextureGraph.anInt9532 - -i_5_, 0xffffff.inv() or SolidFillComponent.anInt8363, i_21_, var_renderer, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry?), SceneTileBounds.anInt1117, i_12_, CharCodeMap.anInt9586 or 0xffffff.inv(), 125.toByte(), WorldMapSceneSoftware.anInt5819, anInt4717 - -i_4_, i_11_)
+                    if (class348_sub42_sub13.anInt9615 == 1) SceneModelBuilderStatics.method2494(ProceduralTextureGraph.anInt9532 - -i_5_, 0xffffff.inv() or SolidFillComponent.anInt8363, i_21_, var_renderer, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry?), SceneTileBounds.anInt1117, i_12_, CharCodeMap.anInt9586 or 0xffffff.inv(), 125.toByte(), WorldMapSceneSoftware.anInt5819, anInt4717 - -i_4_, i_11_)
                     else method2431(0xffffff.inv() or CharCodeMap.anInt9586, i_21_, class348_sub42_sub13, i_11_, SceneTileBounds.anInt1117, 0xffffff.inv() or SolidFillComponent.anInt8363, i_12_, var_renderer, ProceduralTextureGraph.anInt9532 - -i_5_, i xor 0x60, i_4_ + anInt4717, WorldMapSceneSoftware.anInt5819)
                     class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(111.toByte()) as ContactList?)
                 }
@@ -134,7 +134,7 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
                     while (class348_sub42_sub12 != null) {
                         val i_22_ = i_20_ * 16 + 13 + (InputTracker.anInt4534 + i_10_)
                         i_20_++
-                        SceneModelBuilder.method2494(InputTracker.anInt4534, SolidFillComponent.anInt8363 or 0xffffff.inv(), i_22_, var_renderer, class348_sub42_sub12, TerrainTileShape.anInt8806, i_12_, (CharCodeMap.anInt9586 or 0xffffff.inv()), 127.toByte(), ClickFeedbackTask.anInt4669, MinimapPolygonDrawer.anInt5252, i_11_)
+                        SceneModelBuilderStatics.method2494(InputTracker.anInt4534, SolidFillComponent.anInt8363 or 0xffffff.inv(), i_22_, var_renderer, class348_sub42_sub12, TerrainTileShape.anInt8806, i_12_, (CharCodeMap.anInt9586 or 0xffffff.inv()), 127.toByte(), ClickFeedbackTask.anInt4669, MinimapPolygonDrawer.anInt5252, i_11_)
                         class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(111.toByte()) as? ContactEntry?)
                     }
                     SoundCacheState.method2642(TerrainTileShape.anInt8806, InputTracker.anInt4534, true, MinimapPolygonDrawer.anInt5252, ClickFeedbackTask.anInt4669)
@@ -145,7 +145,7 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
                 while (class348_sub42_sub12 != null) {
                     val i_19_ = (i_7_ - -i_10_ - (-13 - (FileExistsCondition.anInt4776 + (-1 + -i_18_)) * 16))
                     i_18_++
-                    SceneModelBuilder.method2494(i_7_, 0xffffff.inv() or SolidFillComponent.anInt8363, i_19_, var_renderer, class348_sub42_sub12, i_8_, i_12_, (0xffffff.inv() or CharCodeMap.anInt9586), 125.toByte(), i_9_, i_6_, i_11_)
+                    SceneModelBuilderStatics.method2494(i_7_, 0xffffff.inv() or SolidFillComponent.anInt8363, i_19_, var_renderer, class348_sub42_sub12, i_8_, i_12_, (0xffffff.inv() or CharCodeMap.anInt9586), 125.toByte(), i_9_, i_6_, i_11_)
                     class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(71.toByte()) as? ContactEntry?
                 }
             }

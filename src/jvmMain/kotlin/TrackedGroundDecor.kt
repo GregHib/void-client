@@ -323,11 +323,11 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
         fun method2477(string: String?, string_37_: String?, i: Byte, i_38_: Int, string_39_: String?, string_40_: String?, i_41_: Int, i_42_: Int, string_43_: String?) {
             try {
                 anInt10382++
-                var hintArrowOrMessage: HintArrowOrMessage? = SceneModelBuilder.Companion.aHintArrowOrMessageArray6400s!![99]
-                for (i_44_ in 99 downTo 1) SceneModelBuilder.Companion.aHintArrowOrMessageArray6400s!![i_44_] = SceneModelBuilder.Companion.aHintArrowOrMessageArray6400s!![i_44_ + -1]
+                var hintArrowOrMessage: HintArrowOrMessage? = SceneModelBuilderStatics.aHintArrowOrMessageArray6400s!![99]
+                for (i_44_ in 99 downTo 1) SceneModelBuilderStatics.aHintArrowOrMessageArray6400s!![i_44_] = SceneModelBuilderStatics.aHintArrowOrMessageArray6400s!![i_44_ + -1]
                 if (hintArrowOrMessage == null) hintArrowOrMessage = HintArrowOrMessage(i_41_, i_42_, string_39_, string, string_43_, string_40_, i_38_, string_37_)
                 else hintArrowOrMessage.method1196(i_41_, i_42_, string_43_, string, string_40_, -18691, i_38_, string_39_, string_37_)
-                SceneModelBuilder.Companion.aHintArrowOrMessageArray6400s!![0] = hintArrowOrMessage
+                SceneModelBuilderStatics.aHintArrowOrMessageArray6400s!![0] = hintArrowOrMessage
                 LoadingScreenImageNodeStatics.anInt9501 = ResourceLoaderThread.anInt3918
                 if (i <= -109) NativeShaderProgram.anInt9774++
             } catch (runtimeexception: RuntimeException) {

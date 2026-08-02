@@ -23,7 +23,7 @@ object TerrainTileStatics {
     fun method3985(i: Int, i_29_: Int): HintArrowOrMessage? {
         anInt4591++
         if (i_29_ < 0 || i_29_ >= 100) return null
-        return SceneModelBuilder.aHintArrowOrMessageArray6400s!![i_29_]
+        return SceneModelBuilderStatics.aHintArrowOrMessageArray6400s!![i_29_]
     }
 
     @JvmStatic

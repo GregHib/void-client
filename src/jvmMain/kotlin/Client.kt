@@ -241,7 +241,7 @@ import WallEntity.Companion.method2484
 import WallEntity.Companion.method2485
 import ModelWallEntity.Companion.method2490
 import SequencedWallEntity.Companion.method2492
-import SceneModelBuilder.Companion.method2495
+import SceneModelBuilderStatics.method2495
 import SpotAnimEntity.Companion.method2508
 import NamedTimedNode.Companion.method2517
 import PositionedSceneNode.Companion.method2518

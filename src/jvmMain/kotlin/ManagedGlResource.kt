@@ -52,7 +52,7 @@ class ManagedGlResource internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Lo
             var bool = false
             var class348_sub42_sub13_1_ = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-85) as ContactList?)
             while (class348_sub42_sub13_1_ != null) {
-                if (SceneModelBuilder.method2496(class348_sub42_sub13_1_.method3235(-17937), class348_sub42_sub13.method3235(-17937), true)) {
+                if (SceneModelBuilderStatics.method2496(class348_sub42_sub13_1_.method3235(-17937), class348_sub42_sub13.method3235(-17937), true)) {
                     method721(class348_sub42_sub13_1_, class348_sub42_sub13, -1)
                     bool = true
                     break

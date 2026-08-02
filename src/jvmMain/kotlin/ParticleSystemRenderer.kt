@@ -141,7 +141,7 @@ class ParticleSystemRenderer internal constructor(private val anInt3858: Int, pr
         fun method2296(i: Int) {
             anInt3868++
             if (i < -46) {
-                for (i_22_ in 0..99) SceneModelBuilder.aHintArrowOrMessageArray6400s!![i_22_] = null
+                for (i_22_ in 0..99) SceneModelBuilderStatics.aHintArrowOrMessageArray6400s!![i_22_] = null
                 NativeShaderProgram.anInt9774 = 0
             }
         }

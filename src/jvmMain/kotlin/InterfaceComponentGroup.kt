@@ -605,11 +605,11 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                 ParameterizedText.Companion.anInt9577 = 0
                 var i_8_ = 0
                 while ( /**/DetailLevelOptionState.anInt6115 > i_8_) {
-                    SceneModelBuilder.method2498(HintArrowOrMessage.aMapTileShapeArray2034!![i_8_], var_renderer, (-112).toByte(), i)
+                    SceneModelBuilderStatics.method2498(HintArrowOrMessage.aMapTileShapeArray2034!![i_8_], var_renderer, (-112).toByte(), i)
                     i_8_++
                 }
-                for (i_9_ in 0..<CollisionFlagQuery.anInt1200) SceneModelBuilder.method2498((MapElementDecor.aMapTileShapeArray10330!![i_9_]), var_renderer, (-127).toByte(), i)
-                for (i_10_ in 0..<PackedFlagsAccessor.anInt7101) SceneModelBuilder.method2498(LoadingBarRenderer.aMapTileShapeArray5060!![i_10_], var_renderer, (-128).toByte(), i)
+                for (i_9_ in 0..<CollisionFlagQuery.anInt1200) SceneModelBuilderStatics.method2498((MapElementDecor.aMapTileShapeArray10330!![i_9_]), var_renderer, (-127).toByte(), i)
+                for (i_10_ in 0..<PackedFlagsAccessor.anInt7101) SceneModelBuilderStatics.method2498(LoadingBarRenderer.aMapTileShapeArray5060!![i_10_], var_renderer, (-128).toByte(), i)
                 ActorEntity.anInt2946 = 0
                 if (ParameterizedText.Companion.anInt9577 > 0) {
                     val i_11_ = ActorEntity.anIntArray5091!!.size

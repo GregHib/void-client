@@ -67,7 +67,7 @@ class HudTabPanel internal constructor(string: String?, @JvmField var anInt2995:
                     while (class348_sub42_sub13 != null) {
                         val i_9_ = (31 + i_4_ + ProceduralTextureGraph.anInt9532 + i_8_ * 16)
                         i_8_++
-                        if ((class348_sub42_sub13.anInt9615) == 1) SceneModelBuilder.method2494(i_4_ + ProceduralTextureGraph.anInt9532, -256, i_9_, var_renderer, ((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as ContactEntry?), SceneTileBounds.anInt1117, i_7_, -1, 124.toByte(), WorldMapSceneSoftware.anInt5819, GlArrayBufferObject.anInt4717 - -i_3_, i_6_)
+                        if ((class348_sub42_sub13.anInt9615) == 1) SceneModelBuilderStatics.method2494(i_4_ + ProceduralTextureGraph.anInt9532, -256, i_9_, var_renderer, ((class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as ContactEntry?), SceneTileBounds.anInt1117, i_7_, -1, 124.toByte(), WorldMapSceneSoftware.anInt5819, GlArrayBufferObject.anInt4717 - -i_3_, i_6_)
                         else method2431(-1, i_9_, class348_sub42_sub13, i_6_, SceneTileBounds.anInt1117, -256, i_7_, var_renderer, ProceduralTextureGraph.anInt9532 + i_4_, 126, GlArrayBufferObject.anInt4717 - -i_3_, WorldMapSceneSoftware.anInt5819)
                         class348_sub42_sub13 = (ParticleSortRenderer.Companion.aLinkedNodeListIterator_3022!!.method1003(44.toByte()) as? ContactList?)
                     }
@@ -79,7 +79,7 @@ class HudTabPanel internal constructor(string: String?, @JvmField var anInt2995:
                         while (class348_sub42_sub12 != null) {
                             val i_10_ = 31 + (InputTracker.anInt4534 + i_8_ * 16)
                             i_8_++
-                            SceneModelBuilder.method2494(InputTracker.anInt4534, -256, i_10_, var_renderer, class348_sub42_sub12, TerrainTileShape.anInt8806, i_7_, -1, 125.toByte(), ClickFeedbackTask.anInt4669, MinimapPolygonDrawer.anInt5252, i_6_)
+                            SceneModelBuilderStatics.method2494(InputTracker.anInt4534, -256, i_10_, var_renderer, class348_sub42_sub12, TerrainTileShape.anInt8806, i_7_, -1, 125.toByte(), ClickFeedbackTask.anInt4669, MinimapPolygonDrawer.anInt5252, i_6_)
                             class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(73.toByte()) as? ContactEntry?)
                         }
                         SoundCacheState.method2642(TerrainTileShape.anInt8806, InputTracker.anInt4534, true, MinimapPolygonDrawer.anInt5252, ClickFeedbackTask.anInt4669)
@@ -89,7 +89,7 @@ class HudTabPanel internal constructor(string: String?, @JvmField var anInt2995:
                     var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as? ContactEntry?)
                     while (class348_sub42_sub12 != null) {
                         val i_12_ = 31 + (i_4_ + ProceduralTextureGraph.anInt9532 - -((-i_11_ + -1 + FileExistsCondition.anInt4776) * 16))
-                        SceneModelBuilder.method2494(i_4_ + ProceduralTextureGraph.anInt9532, -256, i_12_, var_renderer, class348_sub42_sub12, SceneTileBounds.anInt1117, i_7_, -1, 124.toByte(), WorldMapSceneSoftware.anInt5819, GlArrayBufferObject.anInt4717 - -i_3_, i_6_)
+                        SceneModelBuilderStatics.method2494(i_4_ + ProceduralTextureGraph.anInt9532, -256, i_12_, var_renderer, class348_sub42_sub12, SceneTileBounds.anInt1117, i_7_, -1, 124.toByte(), WorldMapSceneSoftware.anInt5819, GlArrayBufferObject.anInt4717 - -i_3_, i_6_)
                         i_11_++
                         class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(55.toByte()) as? ContactEntry?
                     }
