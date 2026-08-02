@@ -1,4 +1,4 @@
-import ClientException.Companion.method141
+import ClientExceptionStatics.method141
 
 /* Class100 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

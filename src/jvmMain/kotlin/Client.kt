@@ -838,7 +838,7 @@ class Client : GameAppletFrame() {
         ClientLoadStateMachine.method1715(103)
         method852(6)
         method3518(i.toInt() xor 0x34)
-        ClientException.method140((-126).toByte())
+        ClientExceptionStatics.method140((-126).toByte())
         method158((-67).toByte())
         method3438(59.toByte())
         FontDefinition.method1180((-76).toByte())
@@ -2052,7 +2052,7 @@ class Client : GameAppletFrame() {
                             i_51_ = NativeTerrainTile.method4008((-128).toByte())
                             i_52_ = method260(false)
                         }
-                        if (class46 == RegionSceneLoader.aWidgetComponent_3701 && ClientException.method141(RegionSceneLoader.aWidgetComponent_3701!!, 125.toByte()) != null) {
+                        if (class46 == RegionSceneLoader.aWidgetComponent_3701 && ClientExceptionStatics.method141(RegionSceneLoader.aWidgetComponent_3701!!, 125.toByte()) != null) {
                             MinimapSquareDrawer.aBoolean5221 = true
                             NativeRenderer.anInt8001 = i_43_
                             GrayscaleEffect.anInt9203 = i_44_
@@ -2947,7 +2947,7 @@ class Client : GameAppletFrame() {
                 val i_29_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 WallSceneEntity.method2397((-128).toByte())
                 TrigLookupTables.method727((-63).toByte(), i_29_, i, i_28_)
-                val class213 = ClientException.aModelHeaderCache_112!!.method1940(-126, i)
+                val class213 = ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-126, i)
                 ObjectSpawnDecoder.method1085(class213.anInt2825, class213.anInt2787, (-59).toByte(), class213.anInt2781, i_28_)
                 SkeletalAnimFrameLoader.method350(class213.anInt2779, class213.anInt2826, 125, i_28_, class213.anInt2810)
                 InboundPacketHeader.aInboundPacketHeader_6584 = null

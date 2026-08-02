@@ -75,11 +75,11 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
         @JvmStatic
         fun method1202(i: Int) {
             anInt2052++
-            val `is` = IntArray(ClientException.aModelHeaderCache_112!!.anInt3271)
+            val `is` = IntArray(ClientExceptionStatics.aModelHeaderCache_112!!.anInt3271)
             var i_0_ = i
             var i_1_ = 0
-            while (ClientException.aModelHeaderCache_112!!.anInt3271 > i_1_) {
-                val class213 = ClientException.aModelHeaderCache_112!!.method1940(-104, i_1_)
+            while (ClientExceptionStatics.aModelHeaderCache_112!!.anInt3271 > i_1_) {
+                val class213 = ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-104, i_1_)
                 if (class213.anInt2815 >= 0 || class213.anInt2788 >= 0) `is`[i_0_++] = i_1_
                 i_1_++
             }

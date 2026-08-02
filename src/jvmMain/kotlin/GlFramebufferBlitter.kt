@@ -363,7 +363,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             do {
                 try {
                     anInt6385++
-                    val bool = ((ClientException.aModelHeaderCache_112!!.method1941(widgetComponent!!.anInt672, (-74).toByte(), widgetComponent.anInt812, widgetComponent.anInt781, 0xffffff.inv() or widgetComponent.anInt809, widgetComponent.anInt678, var_renderer, (if (!widgetComponent.aBoolean720) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)))) == null)
+                    val bool = ((ClientExceptionStatics.aModelHeaderCache_112!!.method1941(widgetComponent!!.anInt672, (-74).toByte(), widgetComponent.anInt812, widgetComponent.anInt781, 0xffffff.inv() or widgetComponent.anInt809, widgetComponent.anInt678, var_renderer, (if (!widgetComponent.aBoolean720) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)))) == null)
                     if (!bool) break
                     ProportionalScrollbarComponent.aNodeDeque_9931!!.method1999(RegionTileNode(widgetComponent.anInt812, widgetComponent.anInt781, widgetComponent.anInt672, (0xffffff.inv() or widgetComponent.anInt809), widgetComponent.anInt678, widgetComponent.aBoolean720), i xor 0x4ed2)
                     ConfigFlagUtil.method1916(-9343, widgetComponent)

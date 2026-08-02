@@ -66,8 +66,8 @@ object ScriptOpcodeHolder {
             var i_6_ = 0
             var i_7_ = 0
             if (bool_3_ != true) aConfigIdPair_2352 = null
-            while ( /**/i_7_ < ClientException.aModelHeaderCache_112!!.anInt3271) {
-                val class213 = ClientException.aModelHeaderCache_112!!.method1940(-74, i_7_)
+            while ( /**/i_7_ < ClientExceptionStatics.aModelHeaderCache_112!!.anInt3271) {
+                val class213 = ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-74, i_7_)
                 if ((!bool_1_ || class213.aBoolean2755) && class213.anInt2833 == -1 && class213.anInt2812 == -1 && class213.anInt2799 == 0 && class213.aString2795!!.lowercase(Locale.getDefault()).indexOf(string_2_) != -1) {
                     if (i_0_ != -1) {
                         if (bool) {
@@ -100,7 +100,7 @@ object ScriptOpcodeHolder {
             val strings = arrayOfNulls<String>(SceneObjectSpawner.anInt1285)
             var i_10_ = 0
             while (SceneObjectSpawner.anInt1285 > i_10_) {
-                strings[i_10_] = ClientException.aModelHeaderCache_112!!.method1940(123, `is`[i_10_].toInt()).aString2795
+                strings[i_10_] = ClientExceptionStatics.aModelHeaderCache_112!!.method1940(123, `is`[i_10_].toInt()).aString2795
                 i_10_++
             }
             MapSceneCache.method1333(AsyncTaskHandle.aShortArray2579, 26073, strings)

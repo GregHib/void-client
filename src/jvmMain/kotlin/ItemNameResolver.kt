@@ -10,7 +10,7 @@ class ItemNameResolver : TextFormatter {
                 return class117.method1074(l.toInt(), 91)
             }
             if (Texture2DProvider.aRectangleRegion_6321 == rectangleRegion || ShaderProgram.aRectangleRegion_7274 == rectangleRegion) {
-                val class213 = ClientException.aModelHeaderCache_112!!.method1940(i + -99, l.toInt())
+                val class213 = ClientExceptionStatics.aModelHeaderCache_112!!.method1940(i + -99, l.toInt())
                 return class213.aString2795
             }
             if (i != 1) method54(85, -41L, null, null)

@@ -41,12 +41,12 @@ class RenderableEntry {
                 ModelBatchBaseStatics.aHashtable_1895!!.method3483(50.toByte(), l, class348_sub37)
                 class348_sub37.aNodeDeque_6998.method1999(class348_sub34, -20180)
             } else {
-                var class213 = ClientException.aModelHeaderCache_112!!.method1940(i_2_ xor 0x72.inv(), (class348_sub34.anInt6973))
+                var class213 = ClientExceptionStatics.aModelHeaderCache_112!!.method1940(i_2_ xor 0x72.inv(), (class348_sub34.anInt6973))
                 var i_3_ = class213.anInt2819
                 if (i_2_ == (class213.anInt2820.inv())) i_3_ *= 1 + class348_sub34.anInt6971
                 var class348_sub34_4_ = class348_sub37.aNodeDeque_6998.method1995(i_2_ + 6) as IntPair?
                 while (class348_sub34_4_ != null) {
-                    class213 = (ClientException.aModelHeaderCache_112!!.method1940(104, class348_sub34_4_.anInt6973))
+                    class213 = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(104, class348_sub34_4_.anInt6973))
                     var i_5_ = class213.anInt2819
                     if (class213.anInt2820 == 1) i_5_ *= class348_sub34_4_.anInt6971 - -1
                     if (i_3_ > i_5_) {

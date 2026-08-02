@@ -162,7 +162,7 @@ class Player : ProjectedGroundDecor() {
                 if (i_18_ >= 32768) {
                     i_18_ = SpriteStore.anIntArray369!![-32768 + i_18_]
                     `is`[i_15_] = WhirlpoolHash.method2057(1073741824, i_18_)
-                    val i_19_ = (ClientException.aModelHeaderCache_112!!.method1940(-111, i_18_).anInt2827)
+                    val i_19_ = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-111, i_18_).anInt2827)
                     if (i_19_ != 0) this.anInt10542 = i_19_
                 } else `is`[i_15_] = WhirlpoolHash.method2057(-256 + i_18_, -2147483648)
             }
@@ -217,7 +217,7 @@ class Player : ProjectedGroundDecor() {
         if ((CharCodeMap.anInt9591 == this.anInt10290) && is_30_ != null) {
             for (i_31_ in is_20_.indices) {
                 if (is_20_[i_31_] != is_30_[i_31_]) {
-                    ClientException.aModelHeaderCache_112!!.method1936(72)
+                    ClientExceptionStatics.aModelHeaderCache_112!!.method1936(72)
                     break
                 }
             }
@@ -479,7 +479,7 @@ class Player : ProjectedGroundDecor() {
         val bool = (this.aByte10279.toInt() != 0 && (this.anInt10248 <= GlGroundShaderPass.anInt7396) && (GlGroundShaderPass.anInt7396 < this.anInt10250))
         if (bool) i = i or 0x80000
         val class64 =
-            (this.aCompositeNpcModelBuilder_10536!!.method1226(aVarpStore_10209, class17_71_, this.aLoadProgressCountersArray10308, true, ClientException.aModelHeaderCache_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, RadialTextureNode.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, MapAreaDefinition.aBufferedMessageQueue_2529, ParticleEmitterNode.aWidgetCache_191, this.anInt10245, this.anInt10267, this.anInt10203, OpenGlModel.aNpcDefinitionCache_5558).also { this.aAbstractModelArray10323[0] = it })
+            (this.aCompositeNpcModelBuilder_10536!!.method1226(aVarpStore_10209, class17_71_, this.aLoadProgressCountersArray10308, true, ClientExceptionStatics.aModelHeaderCache_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, RadialTextureNode.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, MapAreaDefinition.aBufferedMessageQueue_2529, ParticleEmitterNode.aWidgetCache_191, this.anInt10245, this.anInt10267, this.anInt10203, OpenGlModel.aNpcDefinitionCache_5558).also { this.aAbstractModelArray10323[0] = it })
         val i_75_ = MapArchiveSource.method2201(2121)
         if (TextureDefinitionCache.anInt2964 < 96 && i_75_ > 50) CubemapTextureImplSource.method2271(31268)
         val i_76_ = 3 % ((63 - i_69_) / 47)

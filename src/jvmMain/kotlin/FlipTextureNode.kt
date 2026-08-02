@@ -336,7 +336,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 var i_50_ = class46.anInt749
                                                 var string = (class46.aString792)
                                                 if (class46.anInt812 != -1) {
-                                                    val class213 = (ClientException.aModelHeaderCache_112!!.method1940(-67, (class46.anInt812)))
+                                                    val class213 = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-67, (class46.anInt812)))
                                                     string = (class213.aString2795)
                                                     if (string == null) string = "null"
                                                     if (((class213.anInt2820) == 1 || (class46.anInt781) != 1) && (class46.anInt781) != -1) string = ("<col=ff9040>" + string + "</col> x" + (method356(-127, (class46.anInt781))))
@@ -375,7 +375,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 val abstractModelRenderer: AbstractModelRenderer?
                                                 if (class46.anInt812 != -1) {
                                                     val class154 = (if (class46.aBoolean720) (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) else null)
-                                                    abstractModelRenderer = (ClientException.aModelHeaderCache_112!!.method1941((class46.anInt672), (-74).toByte(), (class46.anInt812), (class46.anInt781), (0xffffff.inv() or (class46.anInt809)), (class46.anInt678), FacingDirectionNode.aRenderer6654, class154))
+                                                    abstractModelRenderer = (ClientExceptionStatics.aModelHeaderCache_112!!.method1941((class46.anInt672), (-74).toByte(), (class46.anInt812), (class46.anInt781), (0xffffff.inv() or (class46.anInt809)), (class46.anInt678), FacingDirectionNode.aRenderer6654, class154))
                                                 } else if ((class46.anInt806) == -1) abstractModelRenderer = (class46.method443(FacingDirectionNode.aRenderer6654!!, (-57).toByte()))
                                                 else abstractModelRenderer = (method2263(FacingDirectionNode.aRenderer6654, 0, (class46.anInt806)))
                                                 if (abstractModelRenderer == null) {
@@ -416,7 +416,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                             var abstractModel: AbstractModel? = null
                                             var i_60_ = 0
                                             if (class46.anInt812 != -1) {
-                                                var class213 = (ClientException.aModelHeaderCache_112!!.method1940(103, (class46.anInt812)))
+                                                var class213 = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(103, (class46.anInt812)))
                                                 if (class213 != null) {
                                                     class213 = (class213.method1560((class46.anInt781), 97.toByte()))
                                                     val class17 = (if ((class46.anInt699) == -1) null else (ParticleEmitterNode.aWidgetCache_191!!.method835((class46.anInt699), 7)))
@@ -431,7 +431,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     val player = (LoadingBarRenderer.aPlayerArray5058!![i_61_])
                                                     val class17 = (if ((class46.anInt699) == -1) null else (ParticleEmitterNode.aWidgetCache_191!!.method835((class46.anInt699), 7)))
                                                     if ((player != null) && ((i_61_ == (CharCodeMap.anInt9591)) || ((class46.anInt779) == (ModelGroundDecor.method2418((player.aString10544!!), (-50).toByte()))))) abstractModel =
-                                                        (player.aCompositeNpcModelBuilder_10536!!.method1226((ProjectedGroundDecor.aVarpStore_10209), null, null, true, (ClientException.aModelHeaderCache_112), 0, class17, class46.anInt730, true, -1, null, 2048, (RadialTextureNode.Companion.aModelDefinitionLoader_9342), class46.anInt841, (FacingDirectionNode.aRenderer6654), (MapAreaDefinition.aBufferedMessageQueue_2529), (ParticleEmitterNode.aWidgetCache_191), 0, class46.anInt795, 0, (OpenGlModel.aNpcDefinitionCache_5558)))
+                                                        (player.aCompositeNpcModelBuilder_10536!!.method1226((ProjectedGroundDecor.aVarpStore_10209), null, null, true, (ClientExceptionStatics.aModelHeaderCache_112), 0, class17, class46.anInt730, true, -1, null, 2048, (RadialTextureNode.Companion.aModelDefinitionLoader_9342), class46.anInt841, (FacingDirectionNode.aRenderer6654), (MapAreaDefinition.aBufferedMessageQueue_2529), (ParticleEmitterNode.aWidgetCache_191), 0, class46.anInt795, 0, (OpenGlModel.aNpcDefinitionCache_5558)))
                                                 }
                                             } else if ((class46.anInt770) == 8 || (class46.anInt770) == 9) {
                                                 val class348_sub13 = (GlTexture1D.method1974((-123).toByte(), (class46.anInt753), false))
@@ -441,11 +441,11 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     abstractModel = (class348_sub13.method2803(class17, class154, (class46.anInt779), (class46.anInt795), (class46.anInt841), (class46.anInt730), 2048, FacingDirectionNode.aRenderer6654, (class46.anInt770) == 9, -1))
                                                 }
                                             } else if (class46.anInt699 == -1) {
-                                                abstractModel = (class46.method430((RadialTextureNode.Companion.aModelDefinitionLoader_9342), ParticleEmitterNode.aWidgetCache_191, 2048, FacingDirectionNode.aRenderer6654, -1, 0, (ClientException.aModelHeaderCache_112), (ProjectedGroundDecor.aVarpStore_10209), 255, (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536), null, (OpenGlModel.aNpcDefinitionCache_5558), (MapAreaDefinition.aBufferedMessageQueue_2529), -1))
+                                                abstractModel = (class46.method430((RadialTextureNode.Companion.aModelDefinitionLoader_9342), ParticleEmitterNode.aWidgetCache_191, 2048, FacingDirectionNode.aRenderer6654, -1, 0, (ClientExceptionStatics.aModelHeaderCache_112), (ProjectedGroundDecor.aVarpStore_10209), 255, (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536), null, (OpenGlModel.aNpcDefinitionCache_5558), (MapAreaDefinition.aBufferedMessageQueue_2529), -1))
                                                 if (abstractModel == null && (ContactList.aBoolean9616)) ConfigFlagUtil.method1916(-9343, class46)
                                             } else {
                                                 val class17 = (ParticleEmitterNode.aWidgetCache_191!!.method835((class46.anInt699), 7))
-                                                abstractModel = (class46.method430((RadialTextureNode.Companion.aModelDefinitionLoader_9342), ParticleEmitterNode.aWidgetCache_191, 2048, FacingDirectionNode.aRenderer6654, (class46.anInt795), (class46.anInt841), (ClientException.aModelHeaderCache_112), (ProjectedGroundDecor.aVarpStore_10209), 255, (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536), class17, (OpenGlModel.aNpcDefinitionCache_5558), (MapAreaDefinition.aBufferedMessageQueue_2529), (class46.anInt730)))
+                                                abstractModel = (class46.method430((RadialTextureNode.Companion.aModelDefinitionLoader_9342), ParticleEmitterNode.aWidgetCache_191, 2048, FacingDirectionNode.aRenderer6654, (class46.anInt795), (class46.anInt841), (ClientExceptionStatics.aModelHeaderCache_112), (ProjectedGroundDecor.aVarpStore_10209), 255, (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536), class17, (OpenGlModel.aNpcDefinitionCache_5558), (MapAreaDefinition.aBufferedMessageQueue_2529), (class46.anInt730)))
                                                 if (abstractModel == null && (ContactList.aBoolean9616)) ConfigFlagUtil.method1916(-9343, class46)
                                             }
                                             if (abstractModel != null) {
