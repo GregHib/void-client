@@ -118,7 +118,7 @@ import NpcDefinition.Companion.method1619
 import TextureDefinitionCache.Companion.method1624
 import BoxedIntHolder.Companion.method1627
 import NativeLibraryUnloader.method1628
-import RenderConfigFactory.Companion.method1632
+import RenderConfigFactoryStatics.method1632
 import HudTabPanel.Companion.method1641
 import TerrainTileGeometry.Companion.method1645
 import ParticleSortRenderer.Companion.method1653

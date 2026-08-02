@@ -67,7 +67,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
 
         fun method2938(i: Byte) {
             anInt6804++
-            RenderConfigFactory.aLocDefinitionCache_2979!!.method2037(10205)
+            RenderConfigFactoryStatics.aLocDefinitionCache_2979!!.method2037(10205)
             Tooltip.aParticleDefLoader_4460!!.method1381(true)
             RadialTextureNode.aModelDefinitionLoader_9342!!.method1206((-37).toByte())
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2012(-23828)
@@ -75,7 +75,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             ClientException.aModelHeaderCache_112!!.method1939(-110)
             ParticleEmitterNode.aWidgetCache_191!!.method834((-116).toByte())
             ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2546(60)
-            RenderConfigFactory.aVarbitDefLoader_2981!!.method1445(64)
+            RenderConfigFactoryStatics.aVarbitDefLoader_2981!!.method1445(64)
             NormalMapGenerator.aParticleAmountCache_3453!!.method1589(127.toByte())
             OpenGlModel.aNpcDefinitionCache_5558!!.method1985(0)
             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1175(125.toByte())

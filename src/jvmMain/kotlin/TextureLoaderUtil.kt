@@ -9,8 +9,8 @@ object TextureLoaderUtil {
     fun method2547(i: Int, i_0_: Byte): Boolean {
         anInt3993++
         if (AudioResampler.aBooleanArray2162!![i]) return true
-        if (!RenderConfigFactory.aJs5Archive_2978!!.method408((-124).toByte(), i)) return false
-        val i_1_ = RenderConfigFactory.aJs5Archive_2978!!.method407(0, i)
+        if (!RenderConfigFactoryStatics.aJs5Archive_2978!!.method408((-124).toByte(), i)) return false
+        val i_1_ = RenderConfigFactoryStatics.aJs5Archive_2978!!.method407(0, i)
         if (i_1_ == 0) {
             AudioResampler.aBooleanArray2162!![i] = true
             return true
@@ -19,7 +19,7 @@ object TextureLoaderUtil {
         var i_2_ = 0
         while (i_1_ > i_2_) {
             if (WarpTextureNode.aWidgetComponentArrayArray9427!![i]!![i_2_] == null) {
-                val `is` = RenderConfigFactory.aJs5Archive_2978!!.method410(i_0_.toInt() xor 0x717.inv(), i, i_2_)
+                val `is` = RenderConfigFactoryStatics.aJs5Archive_2978!!.method410(i_0_.toInt() xor 0x717.inv(), i, i_2_)
                 if (`is` != null) {
                     val widgetComponent = (WidgetComponent().also { WarpTextureNode.aWidgetComponentArrayArray9427!![i]!![i_2_] = it })
                     widgetComponent.anInt830 = i_2_ + (i shl 16)

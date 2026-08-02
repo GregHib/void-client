@@ -115,7 +115,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
                 }
                 if (MapRegionLoaderStatics.aTextureDefinitionLoader_1242 != null) MapRegionLoaderStatics.aTextureDefinitionLoader_1242!!.method1178(64, 1, 64)
                 if (MapRegionLoaderStatics.aSeqDefinitionCache_1245 != null) MapRegionLoaderStatics.aSeqDefinitionCache_1245!!.method2014(64, true)
-                RenderConfigFactory.aVarbitDefLoader_2981!!.method1444(64, -124)
+                RenderConfigFactoryStatics.aVarbitDefLoader_2981!!.method1444(64, -124)
             }
         }
 

@@ -1791,7 +1791,7 @@ class OpenGlModel : AbstractModel {
                 anIntArrayArray5539 = null
                 aShortArray5608 = null
             }
-            if (anIntArrayArray5627 != null && !RenderConfigFactory.method1633(false, anInt5648, anInt5556)) anIntArrayArray5627 = null
+            if (anIntArrayArray5627 != null && !RenderConfigFactoryStatics.method1633(false, anInt5648, anInt5556)) anIntArrayArray5627 = null
             if (anIntArray5626 != null && (anInt5648 and 0x800) == 0 && (anInt5648 and 0x40000) == 0) anIntArray5626 = null
         }
     }
@@ -3425,7 +3425,7 @@ class OpenGlModel : AbstractModel {
                 aFloatArray5552 = HudTabPanel.method1638(anInt5529, aFloatArray5552!!, -1)
                 aFloatArray5571 = HudTabPanel.method1638(anInt5529, aFloatArray5571!!, -1)
                 if (modelDefinition.anIntArray1868 != null && WidgetRedrawTracker.method2332(anInt5556, 125.toByte(), i)) anIntArrayArray5539 = modelDefinition.method1100(false, -42)
-                if (modelDefinition.aRectangleBoundsArray1832 != null && RenderConfigFactory.method1633(false, i, anInt5556)) anIntArrayArray5627 = modelDefinition.method1093((-69).toByte())
+                if (modelDefinition.aRectangleBoundsArray1832 != null && RenderConfigFactoryStatics.method1633(false, i, anInt5556)) anIntArrayArray5627 = modelDefinition.method1093((-69).toByte())
                 if (modelDefinition.anIntArray1824 == null || !method371(i, 256, anInt5556)) break
                 var i_817_ = 0
                 val is_818_ = IntArray(256)

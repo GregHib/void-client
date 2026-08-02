@@ -72,10 +72,10 @@ object SpriteBlitter {
     @JvmStatic
     fun method882(i: Byte) {
         if (i.toInt() != 11) method882(((-62).toByte()).toByte())
-        WarpTextureNode.aWidgetComponentArrayArray9427 = arrayOfNulls(RenderConfigFactory.aJs5Archive_2978!!.method414(-1))
+        WarpTextureNode.aWidgetComponentArrayArray9427 = arrayOfNulls(RenderConfigFactoryStatics.aJs5Archive_2978!!.method414(-1))
         anInt1573++
-        WorldMapTextLabel.aWidgetComponentArrayArray8584 = arrayOfNulls(RenderConfigFactory.aJs5Archive_2978!!.method414(-1))
-        AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactory.aJs5Archive_2978!!.method414(-1))
+        WorldMapTextLabel.aWidgetComponentArrayArray8584 = arrayOfNulls(RenderConfigFactoryStatics.aJs5Archive_2978!!.method414(-1))
+        AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactoryStatics.aJs5Archive_2978!!.method414(-1))
     }
 
     @JvmStatic

@@ -364,7 +364,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         fun method235(i: Int, i_46_: Byte) {
             anInt5087++
             if (i != -1 && AudioResampler.aBooleanArray2162!![i]) {
-                RenderConfigFactory.aJs5Archive_2978!!.method411(i, -120)
+                RenderConfigFactoryStatics.aJs5Archive_2978!!.method411(i, -120)
                 WarpTextureNode.aWidgetComponentArrayArray9427!![i] = null
                 WorldMapTextLabel.aWidgetComponentArrayArray8584!![i] = null
                 if (i_46_ <= -94) AudioResampler.aBooleanArray2162!![i] = false

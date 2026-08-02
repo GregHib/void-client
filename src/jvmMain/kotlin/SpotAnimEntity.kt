@@ -382,7 +382,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                         MapRegionLoaderStatics.aConfigDefinitionLoader_1238!!.method1220(73.toByte(), 256, 1024)
                         MapRegionLoaderStatics.aTextureDefinitionLoader_1242!!.method1178(256, 1, 256)
                         MapRegionLoaderStatics.aSeqDefinitionCache_1245!!.method2014(4096, true)
-                        RenderConfigFactory.aVarbitDefLoader_2981!!.method1444(256, 123)
+                        RenderConfigFactoryStatics.aVarbitDefLoader_2981!!.method1444(256, 123)
                         LinkedListNodeStatics.anInt4290 = 20
                     } else if (LinkedListNodeStatics.anInt4290 == 20) {
                         RegionSceneLoader.method2193(true, (-123).toByte())

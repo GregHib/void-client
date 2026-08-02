@@ -466,7 +466,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GraphicsOptionState.anInt3137 = 0
             HslAdjustTextureNode.anInt9395 = 0
             NoiseTextureGenerator.anInt1080 = 0
-            RenderConfigFactory.anInt2976 = 0
+            RenderConfigFactoryStatics.anInt2976 = 0
             OutgoingPacketNode.anInt1850 = 0
             BufferedMessageQueue.anInt3582 = 0
             OggCacheStream.anInt5268 = 0
@@ -668,7 +668,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RSFont.anInt4052 = 0
             InterfaceBounds.anInt6808 = 0
             ModelLightingConfig.anInt2543 = 0
-            RenderConfigFactory.anInt2977 = 0
+            RenderConfigFactoryStatics.anInt2977 = 0
             AbstractRenderPass.anInt4478 = 0
             FixedFunctionWaterPass.anInt7356 = 0
             VideoAdChecker.anInt3184 = 0
@@ -2733,7 +2733,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             IdleAnimationsOptionState.anInt5906 = 0
             SceneryDetailOptionState.anInt6090 = 0
             HudTabPanel.anInt2997 = 0
-            RenderConfigFactory.anInt2980 = 0
+            RenderConfigFactoryStatics.anInt2980 = 0
             GlTextureBase.anInt5094 = 0
             Player.anInt10528 = 0
             Direct3dModel.anInt5466 = 0

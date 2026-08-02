@@ -874,7 +874,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
         @JvmStatic
         fun method427(i: Int) {
             anInt837++
-            RenderConfigFactory.aLocDefinitionCache_2979!!.method2033(46.toByte())
+            RenderConfigFactoryStatics.aLocDefinitionCache_2979!!.method2033(46.toByte())
             Tooltip.aParticleDefLoader_4460!!.method1377(2)
             RadialTextureNode.aModelDefinitionLoader_9342!!.method1204(0)
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2006(88)
@@ -882,7 +882,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
             ClientException.aModelHeaderCache_112!!.method1938(126)
             ParticleEmitterNode.aWidgetCache_191!!.method838(7)
             ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2542(-101)
-            RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)
+            RenderConfigFactoryStatics.aVarbitDefLoader_2981!!.method1443(83)
             NormalMapGenerator.aParticleAmountCache_3453!!.method1590(0)
             OpenGlModel.aNpcDefinitionCache_5558!!.method1986((-91).toByte())
             ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1174((-99).toByte())

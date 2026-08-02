@@ -252,7 +252,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                                     if (class79.anInt1335 == i) i_17_ = class79.anInt1371
                                     if (i == 4) i_16_ = 60
                                     if (i == class79.anInt1385) i_17_ = class79.anInt1338
-                                    RenderConfigFactory.anInt2976++
+                                    RenderConfigFactoryStatics.anInt2976++
                                     MinimapPolygonDrawer.method466(false, "<col=ffff00>" + string, 0, (-93).toByte(), false, 0, -1, true, i_16_, npc.anInt10290.toLong(), strings[i], npc.anInt10290.toLong(), (if (!(strings[i].equals(LocalizedText.aLocalizedText_3506!!.method2063(ChatCommandProcessor.anInt6967, 544), ignoreCase = true))) i_17_ else class79.anInt1401))
                                 }
                             }

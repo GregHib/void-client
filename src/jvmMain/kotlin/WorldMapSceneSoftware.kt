@@ -26,7 +26,7 @@ import PositionedSceneNode.Companion.method2519
 /* Class237_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: Int, bool: Boolean) : WorldMapScene(i, i_114_, i_115_, bool, RenderConfigFactory.aLocDefinitionCache_2979, Tooltip.aParticleDefLoader_4460) {
+class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: Int, bool: Boolean) : WorldMapScene(i, i_114_, i_115_, bool, RenderConfigFactoryStatics.aLocDefinitionCache_2979, Tooltip.aParticleDefLoader_4460) {
     var anInt5824: Int = 99
     fun method1689(i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, collisionMap: CollisionMap?) {
         try {

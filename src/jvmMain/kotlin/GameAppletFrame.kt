@@ -334,7 +334,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 ScrollingWidgetComponentNode.method1119(false)
                 method87((-97).toByte())
                 method92(28740)
-                FacingDirectionNode.aBufferPositionTracker_6660 = RenderConfigFactory.method1631(false)
+                FacingDirectionNode.aBufferPositionTracker_6660 = RenderConfigFactoryStatics.method1631(false)
                 while (CameraNodeList.aLong1739 == 0L || (GameClock.method599(-124) < CameraNodeList.aLong1739)) {
                     FloatCameraTransform.anInt5744 = FacingDirectionNode.aBufferPositionTracker_6660!!.method1861(0, FileExistsCondition.aLong4783)
                     var i = 0

@@ -105,9 +105,9 @@ class WorldMapImageBuilder internal constructor(sceneProjector: SceneProjector?,
                 ScatterTextureNode.aJs5Archive_9365 = js5Archive_6_
                 anInt1147++
                 GroundDecorEntity.aJs5Archive_8755 = js5Archive_5_
-                RenderConfigFactory.aJs5Archive_2978 = js5Archive_4_
-                WarpTextureNode.aWidgetComponentArrayArray9427 = arrayOfNulls<Array<WidgetComponent?>>(RenderConfigFactory.aJs5Archive_2978!!.method414(-1))
-                AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactory.aJs5Archive_2978!!.method414(-1))
+                RenderConfigFactoryStatics.aJs5Archive_2978 = js5Archive_4_
+                WarpTextureNode.aWidgetComponentArrayArray9427 = arrayOfNulls<Array<WidgetComponent?>>(RenderConfigFactoryStatics.aJs5Archive_2978!!.method414(-1))
+                AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactoryStatics.aJs5Archive_2978!!.method414(-1))
                 val i_7_ = -72 % ((35 - i) / 41)
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("kb.F(" + (if (js5Archive != null) "{...}" else "null") + ',' + i + ',' + (if (js5Archive_4_ != null) "{...}" else "null") + ',' + (if (js5Archive_5_ != null) "{...}" else "null") + ',' + (if (js5Archive_6_ != null) "{...}" else "null") + ')'))

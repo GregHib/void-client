@@ -125,7 +125,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
 
         @JvmStatic
         fun method1416(i: Int) {
-            RenderConfigFactory.aLocDefinitionCache_2979!!.method2032(5, -101)
+            RenderConfigFactoryStatics.aLocDefinitionCache_2979!!.method2032(5, -101)
             anInt2515++
             Tooltip.aParticleDefLoader_4460!!.method1383(i xor 0x804c, 5)
             RadialTextureNode.aModelDefinitionLoader_9342!!.method1207(-17452, 5)
@@ -134,7 +134,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             ClientException.aModelHeaderCache_112!!.method1937(5, false)
             ParticleEmitterNode.aWidgetCache_191!!.method836(5, 93)
             ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2544(5, (-41).toByte())
-            RenderConfigFactory.aVarbitDefLoader_2981!!.method1442(5, 1.toByte())
+            RenderConfigFactoryStatics.aVarbitDefLoader_2981!!.method1442(5, 1.toByte())
             NormalMapGenerator.aParticleAmountCache_3453!!.method1587(5, i xor 0xeab)
             OpenGlModel.aNpcDefinitionCache_5558!!.method1984(119.toByte(), 5)
             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1224(5, (-98).toByte())
