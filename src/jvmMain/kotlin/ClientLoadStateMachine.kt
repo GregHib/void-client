@@ -131,7 +131,7 @@ object ClientLoadStateMachine {
             WorldMapTextLabel.aJs5Archive_8589 = WorldMapTextLabel.method3571(false, 9, (-23).toByte(), 1)
             SceneTilePlaneManager.aJs5Archive_233 = WorldMapTextLabel.method3571(false, 10, (-23).toByte(), 1)
             TheoraVideoStream.aJs5Archive_9033 = WorldMapTextLabel.method3571(false, 11, (-23).toByte(), 1)
-            CameraNodeList.aJs5Archive_1743 = WorldMapTextLabel.method3571(false, 12, (-23).toByte(), 1)
+            CameraNodeListStatics.aJs5Archive_1743 = WorldMapTextLabel.method3571(false, 12, (-23).toByte(), 1)
             LightingOptionState.aJs5Archive_5878 = WorldMapTextLabel.method3571(false, 14, (-23).toByte(), 1)
             HoverActionEntry.aJs5Archive_1815 = WorldMapTextLabel.method3571(false, 15, (-23).toByte(), 1)
             AnimationFrameState.aJs5Archive_1538 = WorldMapTextLabel.method3571(false, 16, (-23).toByte(), 1)
@@ -300,7 +300,7 @@ object ClientLoadStateMachine {
             VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
             method3568(FacingDirectionNode.aRenderer6654, i xor 0x6ff7.inv())
             ModelHeaderCache.method1933(CameraRotationStub.aJs5Archive_322, FacingDirectionNode.aRenderer6654, true)
-            AbstractCameraTransformStatics.method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
+            AbstractCameraTransformStatics.method901(CameraNodeListStatics.aAbstractModelRendererArray1744, 515880227)
         }
         return method3063(false)
     }

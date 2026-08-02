@@ -122,7 +122,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 WorldMapTextLabel.aJs5Archive_8589!!.method412(43.toByte())
                 SceneTilePlaneManager.aJs5Archive_233!!.method412(20.toByte())
                 TheoraVideoStream.aJs5Archive_9033!!.method412(89.toByte())
-                CameraNodeList.aJs5Archive_1743!!.method412((-125).toByte())
+                CameraNodeListStatics.aJs5Archive_1743!!.method412((-125).toByte())
                 SoftwareSpriteRaster.aJs5Archive_1627!!.method412((-117).toByte())
                 LightingOptionState.aJs5Archive_5878!!.method412(29.toByte())
                 HoverActionEntry.aJs5Archive_1815!!.method412(80.toByte())

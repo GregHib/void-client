@@ -38,10 +38,10 @@ class WorldMapPolygonIconLabel(screenAnchorAlignment: ScreenAnchorAlignment?, ti
             if (i_3_ <= WidgetTextConfig.anInt513 && i_2_ >= LocalPlayerState.anInt1910) {
                 val bool: Boolean
                 if (WorldMapLabel.Companion.anInt4960 <= i_4_) {
-                    if (i_4_ <= CameraNodeList.anInt1745) bool = true
+                    if (i_4_ <= CameraNodeListStatics.anInt1745) bool = true
                     else {
                         bool = false
-                        i_4_ = CameraNodeList.anInt1745
+                        i_4_ = CameraNodeListStatics.anInt1745
                     }
                 } else {
                     i_4_ = WorldMapLabel.Companion.anInt4960
@@ -51,8 +51,8 @@ class WorldMapPolygonIconLabel(screenAnchorAlignment: ScreenAnchorAlignment?, ti
                 if (WorldMapLabel.Companion.anInt4960 > i_0_) {
                     i_0_ = WorldMapLabel.Companion.anInt4960
                     bool_5_ = false
-                } else if (CameraNodeList.anInt1745 < i_0_) {
-                    i_0_ = CameraNodeList.anInt1745
+                } else if (CameraNodeListStatics.anInt1745 < i_0_) {
+                    i_0_ = CameraNodeListStatics.anInt1745
                     bool_5_ = false
                 } else bool_5_ = true
                 if (i_3_ < LocalPlayerState.anInt1910) i_3_ = LocalPlayerState.anInt1910

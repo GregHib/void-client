@@ -148,7 +148,7 @@ object ChatCommandProcessor {
         var i_7_ = boundsConstraintEntry.anInt5167 or (i shl 10)
         var class348_sub42_sub19 = (ChatCommandProcessor.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-91).toByte()) as MinimapAreaMarkerNode?)
         if (class348_sub42_sub19 != null) return class348_sub42_sub19
-        var `is` = (CameraNodeList.aJs5Archive_1743!!.method415(73.toByte(), CameraNodeList.aJs5Archive_1743!!.method423(i_7_, (-90).toByte())))
+        var `is` = (CameraNodeListStatics.aJs5Archive_1743!!.method415(73.toByte(), CameraNodeListStatics.aJs5Archive_1743!!.method423(i_7_, (-90).toByte())))
         if (`is` != null) {
             if (`is`.size <= 1) return null
             try {
@@ -163,7 +163,7 @@ object ChatCommandProcessor {
         i_7_ = boundsConstraintEntry.anInt5167 or (65536 + i_5_ shl 10)
         class348_sub42_sub19 = (ChatCommandProcessor.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-31).toByte()) as MinimapAreaMarkerNode?)
         if (class348_sub42_sub19 != null) return class348_sub42_sub19
-        `is` = (CameraNodeList.aJs5Archive_1743!!.method415(73.toByte(), CameraNodeList.aJs5Archive_1743!!.method423(i_7_, (-107).toByte())))
+        `is` = (CameraNodeListStatics.aJs5Archive_1743!!.method415(73.toByte(), CameraNodeListStatics.aJs5Archive_1743!!.method423(i_7_, (-107).toByte())))
         if (`is` != null) {
             if (`is`.size <= 1) return null
             try {
@@ -178,7 +178,7 @@ object ChatCommandProcessor {
         i_7_ = boundsConstraintEntry.anInt5167 or 0x3fffc00
         class348_sub42_sub19 = (ChatCommandProcessor.aCacheLruCache_4036!!.method2302(i_7_.toLong() shl 16, (-107).toByte()) as MinimapAreaMarkerNode?)
         if (class348_sub42_sub19 != null) return class348_sub42_sub19
-        `is` = (CameraNodeList.aJs5Archive_1743!!.method415(73.toByte(), CameraNodeList.aJs5Archive_1743!!.method423(i_7_, 104.toByte())))
+        `is` = (CameraNodeListStatics.aJs5Archive_1743!!.method415(73.toByte(), CameraNodeListStatics.aJs5Archive_1743!!.method423(i_7_, 104.toByte())))
         if (`is` != null) {
             if (`is`.size <= 1) return null
             try {
@@ -4743,7 +4743,7 @@ object ChatCommandProcessor {
                     val i_433_ = anIntArray1149!![anInt1173]
                     val i_434_ = anIntArray1149!![anInt1173 + 1]
                     val class143 = method1819(i_434_, 0, -123, SoftwareSpriteRaster.aJs5Archive_1627!!)
-                    anIntArray1149!![anInt1173++] = class143!!.method1190(CameraNodeList.aAbstractModelRendererArray1744, 1, string, i_433_)
+                    anIntArray1149!![anInt1173++] = class143!!.method1190(CameraNodeListStatics.aAbstractModelRendererArray1744, 1, string, i_433_)
                     return
                 }
                 if (i == 4109) {
@@ -4752,7 +4752,7 @@ object ChatCommandProcessor {
                     val i_435_ = anIntArray1149!![anInt1173]
                     val i_436_ = anIntArray1149!![anInt1173 + 1]
                     val class143 = method1819(i_436_, 0, -79, SoftwareSpriteRaster.aJs5Archive_1627!!)
-                    anIntArray1149!![anInt1173++] = class143!!.method1187(string, false, i_435_, CameraNodeList.aAbstractModelRendererArray1744)
+                    anIntArray1149!![anInt1173++] = class143!!.method1187(string, false, i_435_, CameraNodeListStatics.aAbstractModelRendererArray1744)
                     return
                 }
                 if (i == 4110) {
@@ -4863,7 +4863,7 @@ object ChatCommandProcessor {
                     val string = aStringArray1152!![--anInt1170]
                     val i_455_ = anIntArray1149!![--anInt1173]
                     val class143 = method1819(i_455_, 0, -114, SoftwareSpriteRaster.aJs5Archive_1627!!)
-                    anIntArray1149!![anInt1173++] = class143!!.method1186(string, CameraNodeList.aAbstractModelRendererArray1744, false)
+                    anIntArray1149!![anInt1173++] = class143!!.method1186(string, CameraNodeListStatics.aAbstractModelRendererArray1744, false)
                     return
                 }
             } else if (i < 4300) {

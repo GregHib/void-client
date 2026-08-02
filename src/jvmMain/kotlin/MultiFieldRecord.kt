@@ -30,7 +30,7 @@ class MultiFieldRecord : LinkedListNode() {
             WorldMapLabel.anInt4960 = i_2_
             val i_4_ = -89 / ((i_3_ - 78) / 44)
             WidgetTextConfig.anInt513 = i_1_
-            CameraNodeList.anInt1745 = i
+            CameraNodeListStatics.anInt1745 = i
             LocalPlayerState.anInt1910 = i_0_
             anInt6906++
         }

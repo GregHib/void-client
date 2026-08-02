@@ -71,8 +71,8 @@ class DefaultGraphicsOptionState : GraphicsOptionState {
             var i_17_ = i_10_ * (-3 + (i_6_ shl 1))
             var i_18_ = i_15_ * (i_5_ - -1)
             if (LocalPlayerState.anInt1910 <= i_1_ && WidgetTextConfig.anInt513 >= i_1_) {
-                val i_19_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i + i_4_, WorldMapLabel.anInt4960, -89)
-                val i_20_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_4_ + i, WorldMapLabel.anInt4960, -116)
+                val i_19_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i + i_4_, WorldMapLabel.anInt4960, -89)
+                val i_20_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, -i_4_ + i, WorldMapLabel.anInt4960, -116)
                 GlElementArrayBuffer.method1156(-27, i_19_, WidgetDefinition.anIntArrayArray255!![i_1_]!!, i_20_, i_3_)
             }
             var i_21_ = i_14_ * (i_6_ - 1)
@@ -101,8 +101,8 @@ class DefaultGraphicsOptionState : GraphicsOptionState {
                 val i_22_ = i_1_ + -i_6_
                 val i_23_ = i_6_ + i_1_
                 if (i_23_ >= LocalPlayerState.anInt1910 && i_22_ <= WidgetTextConfig.anInt513) {
-                    val i_24_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i + i_5_, WorldMapLabel.anInt4960, 86)
-                    val i_25_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_5_ + i, WorldMapLabel.anInt4960, 32)
+                    val i_24_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i + i_5_, WorldMapLabel.anInt4960, 86)
+                    val i_25_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, -i_5_ + i, WorldMapLabel.anInt4960, 32)
                     if (LocalPlayerState.anInt1910 <= i_22_) GlElementArrayBuffer.method1156(i_2_ + -26, i_24_, WidgetDefinition.anIntArrayArray255!![i_22_]!!, i_25_, i_3_)
                     if (WidgetTextConfig.anInt513 >= i_23_) GlElementArrayBuffer.method1156(-27, i_24_, WidgetDefinition.anIntArrayArray255!![i_23_]!!, i_25_, i_3_)
                 }

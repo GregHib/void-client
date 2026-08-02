@@ -16,7 +16,7 @@ import GroundItemRenderState.method1013
 import SceneRegionState.method221
 import MapLabelMenuEntry.Companion.method1040
 import CollisionMapRegion.Companion.method1047
-import CameraNodeList.Companion.method1057
+import CameraNodeListStatics.method1057
 import OverlayColorTable.method1061
 import InputSettingsState.method1062
 import CacheArchiveIndex.Companion.method1064

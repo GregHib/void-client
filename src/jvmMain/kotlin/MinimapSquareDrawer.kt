@@ -122,7 +122,7 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
         fun method2267(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
             anInt6324++
             if (i_6_ == i_0_) Npc.method2441(i_2_, i_6_, i_4_, -22728, i_5_, i_3_, i_1_)
-            else if (WorldMapLabel.anInt4960 > -i_6_ + i_1_ || i_6_ + i_1_ > CameraNodeList.anInt1745 || -i_0_ + i_5_ < LocalPlayerState.anInt1910 || i_0_ + i_5_ > WidgetTextConfig.anInt513) method3041(i_6_, i_1_, i_5_, i xor 0x2903.inv(), i_0_, i_3_, i_2_, i_4_)
+            else if (WorldMapLabel.anInt4960 > -i_6_ + i_1_ || i_6_ + i_1_ > CameraNodeListStatics.anInt1745 || -i_0_ + i_5_ < LocalPlayerState.anInt1910 || i_0_ + i_5_ > WidgetTextConfig.anInt513) method3041(i_6_, i_1_, i_5_, i xor 0x2903.inv(), i_0_, i_3_, i_2_, i_4_)
             else AbstractFrameBufferSurface.method3012(i_0_, i_3_, i_6_, i_2_, i_1_, (-117).toByte(), i_5_, i_4_)
         }
 
@@ -162,10 +162,10 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
             var i_42_ = i_33_ * (-1 + i_16_)
             if (i_6_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_6_) {
                 val `is` = WidgetDefinition.anIntArrayArray255!![i_6_]!!
-                val i_43_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_5_ + -i, WorldMapLabel.anInt4960, 77)
-                val i_44_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i + i_5_, WorldMapLabel.anInt4960, -68)
-                val i_45_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_5_ + -i_15_, WorldMapLabel.anInt4960, i_7_ + -115)
-                val i_46_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_5_ + i_15_, WorldMapLabel.anInt4960, 97)
+                val i_43_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i_5_ + -i, WorldMapLabel.anInt4960, 77)
+                val i_44_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i + i_5_, WorldMapLabel.anInt4960, -68)
+                val i_45_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i_5_ + -i_15_, WorldMapLabel.anInt4960, i_7_ + -115)
+                val i_46_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i_5_ + i_15_, WorldMapLabel.anInt4960, 97)
                 GlElementArrayBuffer.method1156(-27, i_45_, `is`, i_43_, i_10_)
                 GlElementArrayBuffer.method1156(-27, i_46_, `is`, i_45_, i_9_)
                 GlElementArrayBuffer.method1156(-27, i_44_, `is`, i_46_, i_10_)
@@ -218,11 +218,11 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
                 val i_47_ = -i_13_ + i_6_
                 val i_48_ = i_13_ + i_6_
                 if (i_48_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_47_) {
-                    val i_49_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_12_ + i_5_, WorldMapLabel.anInt4960, 36)
-                    val i_50_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_12_ + i_5_, WorldMapLabel.anInt4960, 97)
+                    val i_49_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i_12_ + i_5_, WorldMapLabel.anInt4960, 36)
+                    val i_50_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, -i_12_ + i_5_, WorldMapLabel.anInt4960, 97)
                     if (bool) {
-                        val i_51_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_5_ - -i_14_, WorldMapLabel.anInt4960, i_7_ xor 0x5c.inv())
-                        val i_52_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_14_ + i_5_, WorldMapLabel.anInt4960, 32)
+                        val i_51_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i_5_ - -i_14_, WorldMapLabel.anInt4960, i_7_ xor 0x5c.inv())
+                        val i_52_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, -i_14_ + i_5_, WorldMapLabel.anInt4960, 32)
                         if (LocalPlayerState.anInt1910 <= i_47_) {
                             val `is` = WidgetDefinition.anIntArrayArray255!![i_47_]!!
                             GlElementArrayBuffer.method1156(-27, i_52_, `is`, i_50_, i_10_)
@@ -249,7 +249,7 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
             anInt4575++
             if (i_36_.toInt() != -75) anInt4581 = 73
             if (i_35_ == i_38_) WidgetComponentNode.method1116(i, i_37_, i_39_, i_38_, (-99).toByte())
-            else if (WorldMapLabel.anInt4960 <= i_39_ + -i_38_ && CameraNodeList.anInt1745 >= i_39_ - -i_38_ && -i_35_ + i >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i + i_35_) method515(i_37_, i_39_, i, i_35_, i_38_, -122)
+            else if (WorldMapLabel.anInt4960 <= i_39_ + -i_38_ && CameraNodeListStatics.anInt1745 >= i_39_ - -i_38_ && -i_35_ + i >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i + i_35_) method515(i_37_, i_39_, i, i_35_, i_38_, -122)
             else method1839(i_39_, i_35_, i, i_36_.toInt() xor 0x4a, i_37_, i_38_)
         }
     }

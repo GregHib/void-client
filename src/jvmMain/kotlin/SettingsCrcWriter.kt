@@ -25,7 +25,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(90.toByte(), WorldMapTextLabel.aJs5Archive_8589!!.method389(-123))
         class348_sub49_sub2.writeInt(115.toByte(), SceneTilePlaneManager.aJs5Archive_233!!.method389(-113))
         class348_sub49_sub2.writeInt(94.toByte(), TheoraVideoStream.aJs5Archive_9033!!.method389(-113))
-        class348_sub49_sub2.writeInt(121.toByte(), CameraNodeList.aJs5Archive_1743!!.method389(-110))
+        class348_sub49_sub2.writeInt(121.toByte(), CameraNodeListStatics.aJs5Archive_1743!!.method389(-110))
         class348_sub49_sub2.writeInt(123.toByte(), SoftwareSpriteRaster.aJs5Archive_1627!!.method389(72))
         class348_sub49_sub2.writeInt(120.toByte(), LightingOptionState.aJs5Archive_5878!!.method389(37))
         class348_sub49_sub2.writeInt(115.toByte(), HoverActionEntry.aJs5Archive_1815!!.method389(-115))

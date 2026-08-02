@@ -209,7 +209,7 @@ class TerrainChunkBuilder internal constructor(var_ha_Sub3: NativeRenderer?, vid
         var anInt1557: Int = 0
         fun method872(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
             anInt1554++
-            if (i_5_ >= WorldMapLabel.anInt4960 && CameraNodeList.anInt1745 >= i_4_ && LocalPlayerState.anInt1910 <= i_2_ && WidgetTextConfig.anInt513 >= i_3_) {
+            if (i_5_ >= WorldMapLabel.anInt4960 && CameraNodeListStatics.anInt1745 >= i_4_ && LocalPlayerState.anInt1910 <= i_2_ && WidgetTextConfig.anInt513 >= i_3_) {
                 if (i_1_ == 1) ScanlineRasterFiller.method1388(i_2_, i, i_0_ + 107, i_4_, i_5_, i_3_)
                 else method849(i_1_, i_2_, i_5_, i_4_, i_3_, 100, i)
             } else if (i_1_ != 1) method535(i_5_, i_3_, i_1_, i_4_, i, i_2_, ((-106).toByte()).toByte())

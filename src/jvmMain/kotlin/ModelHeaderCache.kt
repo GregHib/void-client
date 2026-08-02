@@ -314,7 +314,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 spriteImages = SpriteImage.method1519(js5Archive, RangedGraphicsOptionState.anInt5948, 0)
                 BoxBlurTextureNode.aAbstractModelRendererArray9467 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) BoxBlurTextureNode.aAbstractModelRendererArray9467!![i] = var_renderer!!.method3691(spriteImages[i], true)
-                spriteImages = SpriteImage.method1519(js5Archive, CameraNodeList.anInt1742, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, CameraNodeListStatics.anInt1742, 0)
                 BoundingBoxNode.aAbstractModelRendererArray6742 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -327,11 +327,11 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                 WorldMapRenderer.aAbstractModelRendererArray4679 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) WorldMapRenderer.aAbstractModelRendererArray4679!![i] = var_renderer!!.method3691(spriteImages[i], true)
                 spriteImages = SpriteImage.method1519(js5Archive, TexGenMaterialPass.anInt9473, 0)
-                CameraNodeList.aAbstractModelRendererArray1744 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                CameraNodeListStatics.aAbstractModelRendererArray1744 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
                     while (spriteImages.size > i) {
-                        CameraNodeList.aAbstractModelRendererArray1744!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                        CameraNodeListStatics.aAbstractModelRendererArray1744!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }

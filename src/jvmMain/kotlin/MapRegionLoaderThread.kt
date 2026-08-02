@@ -112,9 +112,9 @@ class MapRegionLoaderThread : Runnable {
             if (i < WorldMapLabel.anInt4960) {
                 i_9_ = (i_7_ * WorldMapLabel.anInt4960 shr 12) + i_8_
                 i_10_ = WorldMapLabel.anInt4960
-            } else if (i > CameraNodeList.anInt1745) {
-                i_9_ = i_8_ - -(CameraNodeList.anInt1745 * i_7_ shr 12)
-                i_10_ = CameraNodeList.anInt1745
+            } else if (i > CameraNodeListStatics.anInt1745) {
+                i_9_ = i_8_ - -(CameraNodeListStatics.anInt1745 * i_7_ shr 12)
+                i_10_ = CameraNodeListStatics.anInt1745
             } else {
                 i_10_ = i
                 i_9_ = i_2_
@@ -123,12 +123,12 @@ class MapRegionLoaderThread : Runnable {
             var i_11_: Int
             var i_12_: Int
             if (WorldMapLabel.anInt4960 <= i_4_) {
-                if (CameraNodeList.anInt1745 >= i_4_) {
+                if (CameraNodeListStatics.anInt1745 >= i_4_) {
                     i_11_ = i_4_
                     i_12_ = i_3_
                 } else {
-                    i_11_ = CameraNodeList.anInt1745
-                    i_12_ = i_8_ + (CameraNodeList.anInt1745 * i_7_ shr 12)
+                    i_11_ = CameraNodeListStatics.anInt1745
+                    i_12_ = i_8_ + (CameraNodeListStatics.anInt1745 * i_7_ shr 12)
                 }
             } else {
                 i_11_ = WorldMapLabel.anInt4960

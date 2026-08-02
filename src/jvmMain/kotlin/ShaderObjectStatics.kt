@@ -43,7 +43,7 @@ object ShaderObjectStatics {
         anInt4101++
         var class348_sub42_sub19 = (ChatCommandProcessor.aCacheLruCache_4036!!.method2302(i_2_.toLong(), (-68).toByte()) as MinimapAreaMarkerNode?)
         if (class348_sub42_sub19 != null) return class348_sub42_sub19
-        val `is` = CameraNodeList.aJs5Archive_1743!!.method410(-1860, i_2_, 0)
+        val `is` = CameraNodeListStatics.aJs5Archive_1743!!.method410(-1860, i_2_, 0)
         if (`is` == null || `is`.size <= 1) return null
         try {
             class348_sub42_sub19 = method2502(`is`, -104)

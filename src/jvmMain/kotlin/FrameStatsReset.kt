@@ -1851,7 +1851,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             InvertTextureNode.anInt9417 = 0
             CacheLruCache.anInt3881 = 0
             AntialiasOptionState.anInt6079 = 0
-            CameraNodeList.anInt1740 = 0
+            CameraNodeListStatics.anInt1740 = 0
             Direct3dModel.anInt5469 = 0
             NativeRenderer.anInt7929 = 0
             SoundChannelMixer.anInt3598 = 0
@@ -3250,7 +3250,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FixedFunctionMaterialPass.anInt6206 = 0
             ProjectedGroundDecor.anInt10249 = 0
             MinimapRenderer.anInt1587 = 0
-            CameraNodeList.anInt1741 = 0
+            CameraNodeListStatics.anInt1741 = 0
             OpenGlTerrainTile.anInt8271 = 0
             ModelDefinition.anInt1858 = 0
             ByteBuffer.anInt7199 = 0

@@ -23,7 +23,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     fun stop() {
         anInt24++
-        if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) CameraNodeList.aLong1739 = GameClock.method599(-73) - -4000L
+        if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) CameraNodeListStatics.aLong1739 = GameClock.method599(-73) - -4000L
     }
 
     override fun getParameter(string: String?): String? {
@@ -280,7 +280,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     override fun destroy() {
         anInt21++
         if (EdgeDetectTextureNode.anGameApplet_Frame_9169 === this && !SpriteArchiveLoader.aBoolean384) {
-            CameraNodeList.aLong1739 = GameClock.method599(-108)
+            CameraNodeListStatics.aLong1739 = GameClock.method599(-108)
             TexGenMaterialPass.method2161(77.toByte(), 5000L)
             HudTabPanel.aPrivilegedOperationWorker_2993 = null
             method90(false, false)
@@ -335,7 +335,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 method87((-97).toByte())
                 method92(28740)
                 FacingDirectionNode.aBufferPositionTracker_6660 = RenderConfigFactoryStatics.method1631(false)
-                while (CameraNodeList.aLong1739 == 0L || (GameClock.method599(-124) < CameraNodeList.aLong1739)) {
+                while (CameraNodeListStatics.aLong1739 == 0L || (GameClock.method599(-124) < CameraNodeListStatics.aLong1739)) {
                     FloatCameraTransform.anInt5744 = FacingDirectionNode.aBufferPositionTracker_6660!!.method1861(0, FileExistsCondition.aLong4783)
                     var i = 0
                     while (FloatCameraTransform.anInt5744 > i) {
@@ -429,7 +429,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
 
     fun start() {
         anInt36++
-        if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) CameraNodeList.aLong1739 = 0L
+        if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) CameraNodeListStatics.aLong1739 = 0L
     }
 
     abstract fun method99(i: Byte)

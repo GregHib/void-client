@@ -81,8 +81,8 @@ class DirectionPath {
             val i_13_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i_11_, LocalPlayerState.anInt1910, 111)
             val i_14_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i_7_, LocalPlayerState.anInt1910, -104)
             if (i_12_ >= -62) Companion.method535(80, -63, -10, 41, -65, 39, (-89).toByte())
-            val i_15_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i, WorldMapLabel.anInt4960, -79)
-            val i_16_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_9_, WorldMapLabel.anInt4960, 92)
+            val i_15_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i, WorldMapLabel.anInt4960, -79)
+            val i_16_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i_9_, WorldMapLabel.anInt4960, 92)
             val i_17_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i_11_ + i_8_, LocalPlayerState.anInt1910, 32)
             val i_18_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, -i_8_ + i_7_, LocalPlayerState.anInt1910, 41)
             var i_19_ = i_13_
@@ -95,8 +95,8 @@ class DirectionPath {
                 GlElementArrayBuffer.method1156(-27, i_16_, WidgetDefinition.anIntArrayArray255!![i_20_]!!, i_15_, i_10_)
                 i_20_--
             }
-            val i_21_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_8_ + i, WorldMapLabel.anInt4960, 121)
-            val i_22_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, -i_8_ + i_9_, WorldMapLabel.anInt4960, -101)
+            val i_21_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i_8_ + i, WorldMapLabel.anInt4960, 121)
+            val i_22_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, -i_8_ + i_9_, WorldMapLabel.anInt4960, -101)
             for (i_23_ in i_17_..i_18_) {
                 val `is`: IntArray = WidgetDefinition.anIntArrayArray255!![i_23_]!!
                 GlElementArrayBuffer.method1156(-27, i_21_, `is`, i_15_, i_10_)
