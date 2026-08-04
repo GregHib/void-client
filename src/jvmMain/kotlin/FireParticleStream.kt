@@ -383,17 +383,17 @@ class FireParticleStream : OutputStream() {
                                     RenderNodeStatics.method3284(true, (ShortMatrixNode.aDouble9517 + d_37_))
                                     GlCubeMapTexture.aDouble8621 = d_37_ + ShortMatrixNode.aDouble9517
                                     if (WhirlpoolHash.anInt7207 == 1) {
-                                        ShaderStateVariant.anInt8799 = (i_17_ + -ModelVertexColorBuffer.anInt6568 - i_34_)
+                                        ShaderStateStatics.anInt8799 = (i_17_ + -ModelVertexColorBuffer.anInt6568 - i_34_)
                                         FireParticleStream.anInt95 = i_21_
                                         ConfigValueProvider.anInt4910 = -ShaderObjectStatics.anInt4100 + (i_16_ - i_33_)
                                         TexGenMaterialPass.anInt6255 = i_20_
-                                        CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
+                                        CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateStatics.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
                                     } else {
                                         TexGenMaterialPass.anInt6255 = i_20_
-                                        ShaderStateVariant.anInt8799 = (-ModelVertexColorBuffer.anInt6568 + i_17_ - (-(WhirlpoolHash.anInt10444) - -i_34_))
+                                        ShaderStateStatics.anInt8799 = (-ModelVertexColorBuffer.anInt6568 + i_17_ - (-(WhirlpoolHash.anInt10444) - -i_34_))
                                         ConfigValueProvider.anInt4910 = (-ShaderObjectStatics.anInt4100 + i_16_ + (WhirlpoolHash.anInt2747 + -i_33_))
                                         FireParticleStream.anInt95 = i_21_
-                                        CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateVariant.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
+                                        CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, (ShaderStateStatics.anInt8799), TexGenMaterialPass.anInt6255, (FireParticleStream.anInt95))
                                     }
                                     method1274(aSceneObjectSpawner_10436)
                                     if (i_51_ > 0) {
@@ -453,17 +453,17 @@ class FireParticleStream : OutputStream() {
                             NpcConfig.aAbstractCameraTransform_905!!.method903(AnimatedModelRenderer.anInt8422, ConfigIdPair.anInt403, CameraSplineNode.anInt6849, WorldMapAreaLabel.anInt8583, LocalizedTextTriple.anInt3760, ProjectileConfigUtil.anInt396)
                             CameraRotationStubStatics.aRenderer326!!.method3638(NpcConfig.aAbstractCameraTransform_905)
                             if (WhirlpoolHash.anInt7207 == 1) {
-                                ShaderStateVariant.anInt8799 = i_17_
+                                ShaderStateStatics.anInt8799 = i_17_
                                 ConfigValueProvider.anInt4910 = i_16_
                                 FireParticleStream.anInt95 = i_21_
                                 TexGenMaterialPass.anInt6255 = i_20_
-                                CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
+                                CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateStatics.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
                             } else {
                                 ConfigValueProvider.anInt4910 = i_16_ - -WhirlpoolHash.anInt2747
-                                ShaderStateVariant.anInt8799 = WhirlpoolHash.anInt10444 + i_17_
+                                ShaderStateStatics.anInt8799 = WhirlpoolHash.anInt10444 + i_17_
                                 TexGenMaterialPass.anInt6255 = i_20_
                                 FireParticleStream.anInt95 = i_21_
-                                CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
+                                CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateStatics.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
                             }
                             GlCubeMapTexture.aDouble8621 = 0.0
                             aSceneObjectSpawner_10436!!.method775(69.toByte())

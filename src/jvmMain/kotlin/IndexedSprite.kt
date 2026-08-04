@@ -76,7 +76,7 @@ class IndexedSprite : Sprite {
                 CameraRotationStubStatics.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, FireParticleStream.anInt1879)
                 RenderNodeStatics.method3284(true, ModelWallEntity.aDouble10120)
             } else {
-                CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateVariant.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
+                CameraRotationStubStatics.aRenderer326!!.DA(ConfigValueProvider.anInt4910, ShaderStateStatics.anInt8799, TexGenMaterialPass.anInt6255, FireParticleStream.anInt95)
                 RenderNodeStatics.method3284(true, GlCubeMapTexture.aDouble8621)
             }
         }

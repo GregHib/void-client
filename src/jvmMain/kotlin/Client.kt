@@ -251,8 +251,8 @@ import SystemFontGlyphs.Companion.method2562
 import RSFont.Companion.method2570
 import RSFont.Companion.method2572
 import SpriteMaskShape.Companion.method2597
-import ShaderState.Companion.method2610
-import ShaderStateVariant.method2611
+import ShaderStateStatics.method2610
+import ShaderStateStatics.method2611
 import MaterialTypeMarkerStatics.method2613
 import MaterialTypeVariant.method2614
 import RenderQueueState.method2617
@@ -1186,7 +1186,7 @@ class Client : GameAppletFrame() {
         method2124(0)
         method2132(-125)
         method1133(96)
-        method2610(true)
+        ShaderStateStatics.method2610(true)
         method2611(-123)
         method2617(93.toByte())
         method2614(i.toInt() xor 0x4d)
@@ -4859,7 +4859,7 @@ class Client : GameAppletFrame() {
                     }
                     if (CameraConfigDefinition.anInt3246 > 0) {
                         ColourKeyTextureNode.anInt9348++
-                        val class348_sub47 = method2148((ShaderStateVariant.aFontMetaRef_8798), (TheoraVideoStream.aIsaacCipher_9029), -111)
+                        val class348_sub47 = method2148((ShaderStateStatics.aFontMetaRef_8798), (TheoraVideoStream.aIsaacCipher_9029), -111)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * CameraConfigDefinition.anInt3246)
                         var i_13_ = 0
                         while ((i_13_ < CameraConfigDefinition.anInt3246)) {

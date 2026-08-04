@@ -1,7 +1,7 @@
 /* Class328_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object ShaderStateVariant : ShaderState() {
+object ShaderStateStatics : ShaderState() {
 
     var aFontMetaRef_8798: FontMetaRef? = FontMetaRef(69, -1)
     var anInt8799: Int = 0
@@ -9,5 +9,11 @@ object ShaderStateVariant : ShaderState() {
     @JvmStatic
     fun method2611(i: Int) {
         if (i < -121) aFontMetaRef_8798 = null
+    }
+
+    @JvmStatic
+    fun method2610(bool: Boolean) {
+        if (bool != true) method2610(false)
+        aFloatArray6514 = null
     }
 }
