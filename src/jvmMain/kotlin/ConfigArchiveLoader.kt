@@ -901,7 +901,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
             MapSceneRenderer.method386((-106).toByte())
             AudioResampler.method1271(0)
             TextureMipDescriptor.aLruByteCache_4346!!.method587(-108)
-            MaterialTypeMarker.aLruByteCache_6517!!.method587(-109)
+            MaterialTypeMarkerStatics.aLruByteCache_6517!!.method587(-109)
             TerrainTileShape.aLruByteCache_8807!!.method587(-113)
             SkeletalAnimFrameLoader.aLruByteCache_463!!.method587(-83)
             ChatCommandProcessor.aLruByteCache_1174!!.method587(-91)

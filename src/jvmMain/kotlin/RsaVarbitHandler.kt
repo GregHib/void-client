@@ -77,9 +77,9 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
 
         @JvmStatic
         fun method493(bool: Boolean) {
-            if (MaterialTypeMarker.aConnectionStateTypeArray6515 == null) {
-                MaterialTypeMarker.aConnectionStateTypeArray6515 = ConnectionStateType.Companion.method528(-91)
-                TimedTileQueueEntry.aConnectionStateType_9660 = MaterialTypeMarker.aConnectionStateTypeArray6515!![0]
+            if (MaterialTypeMarkerStatics.aConnectionStateTypeArray6515 == null) {
+                MaterialTypeMarkerStatics.aConnectionStateTypeArray6515 = ConnectionStateType.Companion.method528(-91)
+                TimedTileQueueEntry.aConnectionStateType_9660 = MaterialTypeMarkerStatics.aConnectionStateTypeArray6515!![0]
                 DataHolderStatics.aLong3660 = GameClock.method599(-119)
             }
             anInt4900++

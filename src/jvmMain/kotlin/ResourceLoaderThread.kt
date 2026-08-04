@@ -28,7 +28,7 @@ class ResourceLoaderThread : Runnable {
         if (i < 103) aLong3917 = -58L
         val i_0_ = aConnectionStateType_3916!!.method525(-118)
         if (aConnectionStateType_3916!!.aBoolean1016 && (anInt3915 < aConnectionStateType_3916!!.anInt1021)) return 1 + anInt3915
-        if (i_0_ < 0 || -1 + MaterialTypeMarker.aConnectionStateTypeArray6515!!.size <= i_0_) return 100
+        if (i_0_ < 0 || -1 + MaterialTypeMarkerStatics.aConnectionStateTypeArray6515!!.size <= i_0_) return 100
         if (aConnectionStateType_3916!!.anInt1025 == anInt3915) return aConnectionStateType_3916!!.anInt1021
         return aConnectionStateType_3916!!.anInt1025
     }

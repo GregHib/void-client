@@ -253,7 +253,7 @@ import RSFont.Companion.method2572
 import SpriteMaskShape.Companion.method2597
 import ShaderState.Companion.method2610
 import ShaderStateVariant.method2611
-import MaterialTypeMarker.Companion.method2613
+import MaterialTypeMarkerStatics.method2613
 import MaterialTypeVariant.method2614
 import RenderQueueState.method2617
 import PolygonFiller.method2621

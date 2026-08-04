@@ -255,7 +255,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SlotBinding.anInt3395 = 0
             CollisionFlagQuery.anInt1192 = 0
             OpenGlModel.anInt547 = 0
-            MaterialTypeMarker.anInt6516 = 0
+            MaterialTypeMarkerStatics.anInt6516 = 0
             Direct3dModel.anInt5484 = 0
             ItemDefinitionLoader.anInt2184 = 0
             Client.anInt5178 = 0
@@ -3624,7 +3624,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CollisionMap.anInt4440 = 0
             TwoStateOptionState.anInt6135 = 0
             GlEnvMappedWaterPass.anInt7368 = 0
-            MaterialTypeMarker.anInt6518 = 0
+            MaterialTypeMarkerStatics.anInt6518 = 0
             WidgetComponent.anInt736 = 0
             GlArrayBufferObject.anInt4712 = 0
             Direct3dModel.anInt5521 = 0

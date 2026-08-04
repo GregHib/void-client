@@ -3633,7 +3633,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                     if (i_333_ == -1) i_333_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2923)
                                 } else i_333_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2923)
                                 if (i_333_ != -1) {
-                                    var abstractModelRenderers = (MaterialTypeMarker.aLruByteCache_6517!!.method583(i_333_.toLong(), -45) as? Array<AbstractModelRenderer?>)
+                                    var abstractModelRenderers = (MaterialTypeMarkerStatics.aLruByteCache_6517!!.method583(i_333_.toLong(), -45) as? Array<AbstractModelRenderer?>)
                                     if (abstractModelRenderers == null) {
                                         val spriteImages = SpriteImage.method1519((CameraRotationStubStatics.aJs5Archive_322!!), i_333_, 0)
                                         if (spriteImages != null) {
@@ -3643,7 +3643,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 abstractModelRenderers[i_334_] = (FacingDirectionNode.aRenderer6654!!.method3691(spriteImages[i_334_], true))
                                                 i_334_++
                                             }
-                                            MaterialTypeMarker.aLruByteCache_6517!!.method582(abstractModelRenderers, i_333_.toLong(), (-101).toByte())
+                                            MaterialTypeMarkerStatics.aLruByteCache_6517!!.method582(abstractModelRenderers, i_333_.toLong(), (-101).toByte())
                                         }
                                     }
                                     if (abstractModelRenderers != null && abstractModelRenderers.size == 4) {
