@@ -73,7 +73,7 @@ import VarpStore.Companion.method1309
 import VarpStore.Companion.method1310
 import VarpStore.Companion.method1315
 import NpcCountAccessor.method1325
-import ObjectByteSerializerHolder.Companion.method1329
+import ObjectByteSerializerHolderStatics.method1329
 import SizeBoundedSoftCache.Companion.method1343
 import PingHostListHolder.method1351
 import ScriptOpcodeHolder.method1355
@@ -3790,7 +3790,7 @@ class Client : GameAppletFrame() {
                 val i = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShort(13638)
                 val i_143_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 WallSceneEntity.method2397((-126).toByte())
-                ObjectByteSerializerHolder.method1330(i, -19906, i_143_)
+                ObjectByteSerializerHolderStatics.method1330(i, -19906, i_143_)
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }

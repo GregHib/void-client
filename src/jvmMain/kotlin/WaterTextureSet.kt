@@ -36,12 +36,12 @@ class WaterTextureSet internal constructor(var_ha_Sub2: OpenGlRenderer) {
         } else {
             this.aClass258_Sub3Array1444 = arrayOfNulls<GlTexture2D>(16)
             for (i in 0..15) {
-                val `is` = ObjectByteSerializerHolder.method1331(97.toByte(), GlShaderProgramHandle.anObject4177, 2 * (128 * i) * 128, 32768)
+                val `is` = ObjectByteSerializerHolderStatics.method1331(97.toByte(), GlShaderProgramHandle.anObject4177, 2 * (128 * i) * 128, 32768)
                 this.aClass258_Sub3Array1444!![i] = GlTexture2D(var_ha_Sub2, 3553, 6410, 128, 128, true, `is`, 6410, false)
             }
             this.aClass258_Sub3Array1448 = arrayOfNulls<GlTexture2D>(16)
             for (i in 0..15) {
-                val `is` = ObjectByteSerializerHolder.method1331(110.toByte(), MapElementDefinitionCache.anObject3985, 2 * i * 16384, 32768)
+                val `is` = ObjectByteSerializerHolderStatics.method1331(110.toByte(), MapElementDefinitionCache.anObject3985, 2 * i * 16384, 32768)
                 this.aClass258_Sub3Array1448!![i] = GlTexture2D(var_ha_Sub2, 3553, 6410, 128, 128, true, `is`, 6410, false)
             }
         }

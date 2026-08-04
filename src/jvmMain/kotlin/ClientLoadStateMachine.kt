@@ -60,9 +60,9 @@ object ClientLoadStateMachine {
             val l = method599(i + 28559)
             if (SoundBankPatch.aLong6791 == 0L) SoundBankPatch.aLong6791 = l
             if (i_1_ > 16384 && -SoundBankPatch.aLong6791 + l < 5000) {
-                if (-ObjectByteSerializerHolder.aLong2286 + l > 1000L) {
+                if (-ObjectByteSerializerHolderStatics.aLong2286 + l > 1000L) {
                     System.gc()
-                    ObjectByteSerializerHolder.aLong2286 = l
+                    ObjectByteSerializerHolderStatics.aLong2286 = l
                 }
                 return 0
             }

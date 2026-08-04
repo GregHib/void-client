@@ -60,7 +60,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlslMaterialPass.anInt6245 = 0
             ParticleSortRenderer.anInt3021 = 0
             FileExistsCondition.anInt4781 = 0
-            ObjectByteSerializerHolder.anInt2283 = 0
+            ObjectByteSerializerHolderStatics.anInt2283 = 0
             GlVertexBufferArb.anInt8495 = 0
             GlCubemapLightPass.anInt7309 = 0
             DirectionalLightTextureNode.anInt9446 = 0
@@ -374,7 +374,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             BufferPositionTracker.anInt3149 = 0
             SpotAnimVector.anInt2300 = 0
             NativeRenderer.anInt8046 = 0
-            ObjectByteSerializerHolder.anInt2284 = 0
+            ObjectByteSerializerHolderStatics.anInt2284 = 0
             ProducerImageSurface.anInt9070 = i
             SoundEnvelope.anInt2748 = 0
             SequencedGroundDecor.anInt10059 = 0

@@ -1,4 +1,4 @@
-import ObjectByteSerializerHolder.Companion.method1331
+import ObjectByteSerializerHolderStatics.method1331
 import Js5Archive.Companion.method461
 import SolidFillComponent.Companion.method194
 import kotlin.math.sqrt
