@@ -713,7 +713,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt8057 = 0
             Player.anInt10530 = 0
             GlBloomEffect.anInt8834 = 0
-            TrigLookupTables.anInt1205 = 0
+            TrigLookupTablesStatics.anInt1205 = 0
             Gl2dTexture.anInt8613 = 0
             SpriteMaskShape.anInt4074 = 0
             TextureMetadataProvider.anInt4614 = 0
@@ -2485,7 +2485,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CollisionMap.anInt4434 = 0
             ProducerImageSurface.anInt9074 = 0
             BufferToggleState.anInt3715 = 0
-            TrigLookupTables.anInt1206 = 0
+            TrigLookupTablesStatics.anInt1206 = 0
             GlRenderDevice.anInt9879 = 0
             ParticleSortRenderer.anInt3016 = 0
             ProducerImageSurface.anInt9076 = 0

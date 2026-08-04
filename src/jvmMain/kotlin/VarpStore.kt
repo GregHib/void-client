@@ -4,7 +4,7 @@ import FixedFunctionWaterPass.Companion.method3548
 import WorldMapElement.Companion.method181
 import GameClock.method599
 import RegionMapDecoder.aByteArrayArray1887
-import TrigLookupTables.Companion.method726
+import TrigLookupTablesStatics.method726
 import NativeTerrainTile.Companion.method4004
 import kotlin.collections.set
 

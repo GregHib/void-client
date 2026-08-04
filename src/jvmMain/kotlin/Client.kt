@@ -448,7 +448,7 @@ import ChatCommandProcessor.method705
 import ChatCommandProcessor.method713
 import TooltipComponentRenderer.Companion.method716
 import D3dRenderDevice.Companion.method722
-import TrigLookupTables.Companion.method725
+import TrigLookupTablesStatics.method725
 import PlayerSequenceSelector.method728
 import PlayerSequenceSelector.method729
 import HintArrowRenderer.Companion.method731
@@ -2946,7 +2946,7 @@ class Client : GameAppletFrame() {
                 val i_28_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 val i_29_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 WallSceneEntity.method2397((-128).toByte())
-                TrigLookupTables.method727((-63).toByte(), i_29_, i, i_28_)
+                TrigLookupTablesStatics.method727((-63).toByte(), i_29_, i, i_28_)
                 val class213 = ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-126, i)
                 ObjectSpawnDecoder.method1085(class213.anInt2825, class213.anInt2787, (-59).toByte(), class213.anInt2781, i_28_)
                 SkeletalAnimFrameLoader.method350(class213.anInt2779, class213.anInt2826, 125, i_28_, class213.anInt2810)
