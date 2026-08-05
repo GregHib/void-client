@@ -298,7 +298,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 if (GlowPostProcessor.aBoolean2514) {
                                                     WorldMapRenderer.aRSFont_4684!!.method2569(("Polys: " + FacingDirectionNodeStatics.aRenderer6654!!.I() + " Models: " + FacingDirectionNodeStatics.aRenderer6654!!.M()), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
-                                                    WorldMapRenderer.aRSFont_4684!!.method2569(("Ls: " + ClickFeedbackTask.anInt4666 + " La: " + DrawListState.anInt1482 + " NPC: " + BoxedIntHolder.anInt2968 + " Pl: " + NativeShaderProgram.anInt9776), i_38_, -256, i_37_, -122, -1)
+                                                    WorldMapRenderer.aRSFont_4684!!.method2569(("Ls: " + ClickFeedbackTask.anInt4666 + " La: " + DrawListState.anInt1482 + " NPC: " + BoxedIntHolderStatics.anInt2968 + " Pl: " + NativeShaderProgram.anInt9776), i_38_, -256, i_37_, -122, -1)
                                                     MapLabelMenuEntry.method1042((-123).toByte())
                                                     i_38_ += 12
                                                 }

@@ -210,10 +210,10 @@ class FireParticleStream : OutputStream() {
                 CompiledScriptCache.anObject4366 = Js5Archive.method1357(`is`, false, 111.toByte())
             }
             anInt92++
-            if (BoxedIntHolder.anObject2969 == null) {
+            if (BoxedIntHolderStatics.anObject2969 == null) {
                 val class59_sub2_sub2 = CompositeRgbNoiseTexture()
                 val `is` = class59_sub2_sub2.method571(128, (-38).toByte(), 16, 128)
-                BoxedIntHolder.anObject2969 = Js5Archive.method1357(`is`, false, 106.toByte())
+                BoxedIntHolderStatics.anObject2969 = Js5Archive.method1357(`is`, false, 106.toByte())
             }
         }
 

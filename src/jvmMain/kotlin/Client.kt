@@ -116,7 +116,7 @@ import ModelDefinitionCache.Companion.method1604
 import HslColorConfig.Companion.method294
 import NpcDefinition.Companion.method1619
 import TextureDefinitionCache.Companion.method1624
-import BoxedIntHolder.Companion.method1627
+import BoxedIntHolderStatics.method1627
 import NativeLibraryUnloader.method1628
 import RenderConfigFactoryStatics.method1632
 import HudTabPanel.Companion.method1641

@@ -63,7 +63,7 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
             if (this.aBoolean3458) {
                 var `is` = method461(false, CompiledScriptCache.anObject4366, 53146732)
                 this.anInterface18_Impl1_3452 = aHa_Sub3_3457.method3872(16, 128, aTextureFormatInfo_2571, true, 128, `is`)
-                `is` = method461(false, BoxedIntHolder.anObject2969, 53146732)
+                `is` = method461(false, BoxedIntHolderStatics.anObject2969, 53146732)
                 aHa_Sub3_3457.method3872(16, 128, aTextureFormatInfo_2571, true, 128, `is`)
             } else {
                 this.anInterface18_Impl3Array3459 = arrayOfNulls<Renderable2dTexture>(16)
@@ -73,7 +73,7 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
                 }
                 anInterface18_Impl3Array3454 = arrayOfNulls<Renderable2dTexture>(16)
                 for (i in 0..15) {
-                    val `is` = method1331(120.toByte(), BoxedIntHolder.anObject2969, 128 * (128 * i) * 2, 32768)
+                    val `is` = method1331(120.toByte(), BoxedIntHolderStatics.anObject2969, 128 * (128 * i) * 2, 32768)
                     anInterface18_Impl3Array3454!![i] = aHa_Sub3_3457.method3944(`is`, 128, aTextureFormatInfo_2571, 2, true, 128)
                 }
             }
