@@ -277,8 +277,8 @@ import TileRenderState.Companion.method2677
 import TileRenderState.Companion.method2678
 import ParticleProcessor.Companion.method2693
 import AwtKeyboardListener.Companion.method2705
-import DragDropController.Companion.method2707
-import DragDropController.Companion.method2708
+import DragDropControllerStatics.method2707
+import DragDropControllerStatics.method2708
 import VorbisAudioDecoder.Companion.method2785
 import KeyEventNode.Companion.method2796
 import BoundingBoxNode.Companion.method2798
@@ -2067,7 +2067,7 @@ class Client : GameAppletFrame() {
                                     }
                                     class348_sub36 = (HashTileShape.aNodeDeque_8810!!.method1990(71.toByte()) as WidgetActionEntry?)
                                 }
-                                if (DragDropController.anInt6392 == 0) {
+                                if (DragDropControllerStatics.anInt6392 == 0) {
                                     RegionSceneLoader.aWidgetComponent_3701 = null
                                     CalendarUtil.aWidgetComponent_4130 = null
                                 }
@@ -2123,7 +2123,7 @@ class Client : GameAppletFrame() {
                             if (class46 == CalendarUtil.aWidgetComponent_4130) {
                                 ScrollingWidgetComponentNode.aBoolean8386 = true
                                 BoxBlurTextureNode.anInt9461 = i_43_
-                                DragDropController.anInt558 = i_44_
+                                DragDropControllerStatics.anInt558 = i_44_
                             }
                             if (class46.aBoolean682 || class46.anInt765 != 0) {
                                 if (bool && NodeDequeHolder.anInt1565 != 0 && (class46.anObjectArray803 != null)) {
@@ -2489,7 +2489,7 @@ class Client : GameAppletFrame() {
                                         HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     }
                                 }
-                                if (DragDropController.aBoolean4284 && (class46.anObjectArray687 != null)) {
+                                if (DragDropControllerStatics.aBoolean4284 && (class46.anObjectArray687 != null)) {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aWidgetComponent_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray687
@@ -4883,9 +4883,9 @@ class Client : GameAppletFrame() {
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), SceneObjectSpawner.aFloat1287.toInt() shr 3)
                         InterfaceComponentGroup.method3243(-31, class348_sub47)
                     }
-                    if (DragDropController.aBoolean4278 != SizeBoundedSoftCache.aBoolean2329) {
+                    if (DragDropControllerStatics.aBoolean4278 != SizeBoundedSoftCache.aBoolean2329) {
                         NormalMapGenerator.anInt3460++
-                        DragDropController.aBoolean4278 = SizeBoundedSoftCache.aBoolean2329
+                        DragDropControllerStatics.aBoolean4278 = SizeBoundedSoftCache.aBoolean2329
                         val class348_sub47 = method2148((InputStream_Sub1.aFontMetaRef_77), (TheoraVideoStream.aIsaacCipher_9029), i xor 0x2cc8.inv())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!SizeBoundedSoftCache.aBoolean2329) 0 else 1)
                         InterfaceComponentGroup.method3243(i + -11501, class348_sub47)

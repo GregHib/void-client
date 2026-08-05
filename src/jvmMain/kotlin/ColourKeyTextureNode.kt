@@ -132,7 +132,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             StringCacheNode.aByteArrayArray7212 = null
             RenderNodeStatics.anIntArray9724 = IntArray(i_18_)
             AbstractCameraTransformStatics.anIntArray4031 = null
-            DragDropController.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_18_)
+            DragDropControllerStatics.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_18_)
             if (i >= -47) anInt9349 = -54
             LocalizedTextTriple.anIntArray3759 = IntArray(i_18_)
             NullOggStream.anIntArray9042 = IntArray(i_18_)

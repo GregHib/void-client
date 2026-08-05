@@ -34,7 +34,7 @@ object AbstractCameraTransformStatics {
         NullOggStream.anIntArray9042 = IntArray(i_6_)
         RenderNodeStatics.anIntArray9724 = IntArray(i_6_)
         LocalizedTextTriple.anIntArray3759 = IntArray(i_6_)
-        DragDropController.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_6_)
+        DragDropControllerStatics.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_6_)
         GameAppletFrame.anIntArray38 = IntArray(i_6_)
         VorbisOggDecoder.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_6_)
         RegionMapDecoder.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_6_)

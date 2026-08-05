@@ -66,7 +66,7 @@ object RegionMapDecoder {
         VorbisOggDecoder.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_7_)
         RegionMapDecoder.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_7_)
         GlRectangleTexture.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_7_)
-        DragDropController.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_7_)
+        DragDropControllerStatics.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_7_)
         i_7_ = 0
         for (i_10_ in 0..3) {
             var i_11_ = 0

@@ -184,7 +184,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ParameterizedText.anInt9560 = 0
             RingBufferInputStream.anInt4553 = 0
             MapElementManager.anInt4465 = 0
-            DragDropController.anInt4280 = 0
+            DragDropControllerStatics.anInt4280 = 0
             CameraDistanceOptionState.anInt5854 = 0
             PcmStreamBuffer.anInt8881 = 0
             SequencedActorEntity.anInt10104 = 0
@@ -4098,7 +4098,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MouseInputTracker.anInt7457 = 0
             CompositeNpcModelBuilder.anInt2106 = 0
             DisplaceTextureNode.anInt9138 = 0
-            DragDropController.aBoolean4278 = true
+            DragDropControllerStatics.aBoolean4278 = true
             SizeBoundedSoftCache.aBoolean2329 = true
             Client.method2480(i.inv())
             var j = 0
