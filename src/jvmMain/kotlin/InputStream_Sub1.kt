@@ -41,7 +41,7 @@ class InputStream_Sub1 : InputStream() {
             InterfaceBounds.method2938(98.toByte())
             BloomGraphicsOptionState.method1772(28)
             System.gc()
-            FacingDirectionNode.aRenderer6654!!.ya()
+            FacingDirectionNodeStatics.aRenderer6654!!.ya()
         }
 
         init {

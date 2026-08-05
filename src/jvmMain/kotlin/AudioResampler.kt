@@ -159,7 +159,7 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
                     if (abstractModelRenderer == null) {
                         val spriteImage = SpriteImage.method1521(CameraRotationStubStatics.aJs5Archive_322!!, class321.anInt4000, 0)
                         if (spriteImage != null) {
-                            abstractModelRenderer = FacingDirectionNode.aRenderer6654!!.method3691(spriteImage, true)
+                            abstractModelRenderer = FacingDirectionNodeStatics.aRenderer6654!!.method3691(spriteImage, true)
                             SkeletalAnimFrameLoader.aLruByteCache_463!!.method582(abstractModelRenderer, class321.anInt4000.toLong(), (-127).toByte())
                         }
                     }

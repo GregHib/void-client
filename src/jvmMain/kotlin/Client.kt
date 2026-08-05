@@ -369,7 +369,7 @@ import StringCacheNode.Companion.method3418
 import DisplaySettingsConfig.Companion.method3430
 import GlBloomEffect.Companion.method2765
 import RegionTileNode.Companion.method2773
-import FacingDirectionNode.Companion.method2774
+import FacingDirectionNodeStatics.method2774
 import CharacterRenderState.Companion.method2780
 import FormantSynthFilter.Companion.method3450
 import LoadingBarRenderer.Companion.method3457
@@ -660,7 +660,7 @@ class Client : GameAppletFrame() {
         if (Client.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) TextureLoadExceptionStatics.aBoolean4599 = false
         if (GlRectangleTexture.aSceneProjector_8638 == Client.aSceneProjector_10434) {
             InputSettingsState.shiftClick = true
-            SpriteLoadValidator.aShortArrayArray4791 = FacingDirectionNode.aShortArrayArray6664
+            SpriteLoadValidator.aShortArrayArray4791 = FacingDirectionNodeStatics.aShortArrayArray6664
             LocDefinitionCache.anInt3439 = 16777215
             GlWaterRenderPass.aShortArrayArrayArray7290 = DisplaySettingsConfig.aShortArrayArrayArray7262
             LocDefinitionCache.anInt3444 = 0
@@ -1009,7 +1009,7 @@ class Client : GameAppletFrame() {
         SoundBankPatch.method2930((-87).toByte())
         method808()
         method1536()
-        FacingDirectionNode.method2775((-127).toByte())
+        FacingDirectionNodeStatics.method2775((-127).toByte())
         method2097()
         method1882(25365)
         method2981(false)
@@ -1255,7 +1255,7 @@ class Client : GameAppletFrame() {
         if (ScanlineRasterFiller.aBoolean2469) method2405(i + -110)
         anInt5170++
         method556(false)
-        if (FacingDirectionNode.aRenderer6654 != null) FacingDirectionNode.aRenderer6654!!.method3635(89.toByte())
+        if (FacingDirectionNodeStatics.aRenderer6654 != null) FacingDirectionNodeStatics.aRenderer6654!!.method3635(89.toByte())
         if (SkeletalAnimFrameLoader.aFrame476 != null) {
             method527(SkeletalAnimFrameLoader.aFrame476, VorbisOggDecoder.aPrivilegedOperationWorker_8992, false)
             SkeletalAnimFrameLoader.aFrame476 = null
@@ -1307,7 +1307,7 @@ class Client : GameAppletFrame() {
             DirectionalLightTextureNode.aServerConnectionInfo_9443 = ServerConnectionInfo()
             DirectionalLightTextureNode.aServerConnectionInfo_9443!!.anInt2143 = this.getParameter("demoid")!!.toInt()
             DirectionalLightTextureNode.aServerConnectionInfo_9443!!.aString2147 = this.getParameter("demoaddress")
-            NpcAnimationResolver.aNamedIdRecord_165 = (FacingDirectionNode.method2776((-93).toByte(), this.getParameter("modewhere")!!.toInt()))
+            NpcAnimationResolver.aNamedIdRecord_165 = (FacingDirectionNodeStatics.method2776((-93).toByte(), this.getParameter("modewhere")!!.toInt()))
             if (SceneObjectSpawner.aNamedIdRecord_1279 == NpcAnimationResolver.aNamedIdRecord_165) {
                 NpcAnimationResolver.aNamedIdRecord_165 = GroundItemRenderState.aNamedIdRecord_1657
             } else if (!method2354(NpcAnimationResolver.aNamedIdRecord_165, -1) && OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) {
@@ -1565,7 +1565,7 @@ class Client : GameAppletFrame() {
             method3260(66)
             LoadProgressCounters.aKeyboardInputSource_2449!!.method2695(67)
             GlTexture1D.aInputTracker_8552!!.method3589(0)
-            if (FacingDirectionNode.aRenderer6654 != null) FacingDirectionNode.aRenderer6654!!.method3646(method599(-74).toInt())
+            if (FacingDirectionNodeStatics.aRenderer6654 != null) FacingDirectionNodeStatics.aRenderer6654!!.method3646(method599(-74).toInt())
             method1315(93)
             CameraConfigDefinition.anInt3246 = 0
             MinimapAreaMarkerNode.anInt9699 = 0
@@ -1622,7 +1622,7 @@ class Client : GameAppletFrame() {
                 method113(112.toByte())
                 method843(67.toByte())
             }
-            method294(FacingDirectionNode.aRenderer6654, 0)
+            method294(FacingDirectionNodeStatics.aRenderer6654, 0)
             GroundDecorEntity.aNodeDeque_8744!!.method1997(8)
         }
     }
@@ -1656,7 +1656,7 @@ class Client : GameAppletFrame() {
             if (bool_118_ && RgbColorPalette.aBoolean1236 && ClientLoadStateMachine.aSoundChannelMixer_7042 != null) ClientLoadStateMachine.aSoundChannelMixer_7042!!.method2087(-115)
             if (WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) {
                 if ((PcmStreamBuffer.aLong8866 != 0L) && method599(-98) > PcmStreamBuffer.aLong8866) ChatCommandProcessor.method830(method3229(-128), LocTypeDefinition.anInt4005, 102.toByte(), false, RadialTextureNode.anInt9335)
-                else if (!FacingDirectionNode.aRenderer6654!!.method3655() && ProjectileSpawner.aBoolean2674) method3327(1406)
+                else if (!FacingDirectionNodeStatics.aRenderer6654!!.method3655() && ProjectileSpawner.aBoolean2674) method3327(1406)
             }
             if (SkeletalAnimFrameLoader.aFrame476 == null) {
                 val container: Container?
@@ -1672,7 +1672,7 @@ class Client : GameAppletFrame() {
                     i_119_ -= insets.top - -insets.bottom
                 }
                 if (i != SocketFactory.anInt3473 || i_119_ != NpcReference.anInt6857 || TextureLoadExceptionStatics.aBoolean4604) {
-                    if (FacingDirectionNode.aRenderer6654 == null || FacingDirectionNode.aRenderer6654!!.method3695()) method3556(false)
+                    if (FacingDirectionNodeStatics.aRenderer6654 == null || FacingDirectionNodeStatics.aRenderer6654!!.method3695()) method3556(false)
                     else {
                         NpcReference.anInt6857 = i_119_
                         SocketFactory.anInt3473 = i
@@ -1688,7 +1688,7 @@ class Client : GameAppletFrame() {
                 SpriteRenderable.aBoolean4726 = false
             }
             if (bool_120_) ScreenBorderFiller.method1170((-116).toByte())
-            if ((FacingDirectionNode.aRenderer6654 != null && FacingDirectionNode.aRenderer6654!!.method3655()) || method3229(-91) != 1) method3466(-77)
+            if ((FacingDirectionNodeStatics.aRenderer6654 != null && FacingDirectionNodeStatics.aRenderer6654!!.method3655()) || method3229(-91) != 1) method3466(-77)
             if (NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-113).toByte())) method1309(bool_120_, 117)
             else if (!method2114(WorldMapRenderer.anInt4674, bool)) {
                 if (!method3197(WorldMapRenderer.anInt4674, 56.toByte())) {
@@ -1696,14 +1696,14 @@ class Client : GameAppletFrame() {
                         if (AnimationFrameTable.anInt489 == 1) {
                             if (LocDefinitionCache.anInt3441 > StringValueNode.anInt7115) StringValueNode.anInt7115 = LocDefinitionCache.anInt3441
                             val i = ((-LocDefinitionCache.anInt3441 + StringValueNode.anInt7115) * 50 / StringValueNode.anInt7115)
-                            method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
+                            method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNodeStatics.aRenderer6654)
                         } else if (AnimationFrameTable.anInt489 == 2) {
                             if (ItemModelDefinition.anInt443 < CompositeNpcModelBuilder.anInt2101) ItemModelDefinition.anInt443 = CompositeNpcModelBuilder.anInt2101
                             val i = (((ItemModelDefinition.anInt443 - CompositeNpcModelBuilder.anInt2101) * 50 / ItemModelDefinition.anInt443) + 50)
-                            method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
-                        } else method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)), 2, FacingDirectionNode.aRenderer6654)
+                            method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNodeStatics.aRenderer6654)
+                        } else method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)), 2, FacingDirectionNodeStatics.aRenderer6654)
                     } else if (WorldMapRenderer.anInt4674 != 10) {
-                        if (WorldMapRenderer.anInt4674 == 13) method3511(false, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3497!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>" + (LocalizedText.aLocalizedText_3498!!.method2063(ChatCommandProcessor.anInt6967, 544))), 2, FacingDirectionNode.aRenderer6654)
+                        if (WorldMapRenderer.anInt4674 == 13) method3511(false, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3497!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>" + (LocalizedText.aLocalizedText_3498!!.method2063(ChatCommandProcessor.anInt6967, 544))), 2, FacingDirectionNodeStatics.aRenderer6654)
                     } else MinimapPositionState.method2284((-43).toByte(), l)
                 } else method1761(85)
             } else method1761(85)
@@ -1711,13 +1711,13 @@ class Client : GameAppletFrame() {
                 var i = 0
                 while (TerrainShadowBuilderGl3.anInt7008 > i) {
                     val rectangle = HintIconState.aRectangleArray2371!![i]
-                    if (SizeBoundedSoftCache.aBooleanArray2326!![i]) FacingDirectionNode.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65281, rectangle.x, rectangle.height, 46)
-                    else if (!LocDefinitionCache.aBooleanArray3438!![i]) FacingDirectionNode.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -16711936, rectangle.x, rectangle.height, 66)
-                    else FacingDirectionNode.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65536, rectangle.x, rectangle.height, 40)
+                    if (SizeBoundedSoftCache.aBooleanArray2326!![i]) FacingDirectionNodeStatics.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65281, rectangle.x, rectangle.height, 46)
+                    else if (!LocDefinitionCache.aBooleanArray3438!![i]) FacingDirectionNodeStatics.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -16711936, rectangle.x, rectangle.height, 66)
+                    else FacingDirectionNodeStatics.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65536, rectangle.x, rectangle.height, 40)
                     i++
                 }
             }
-            if (method3263(bool)) method207(FacingDirectionNode.aRenderer6654, 124.toByte())
+            if (method3263(bool)) method207(FacingDirectionNodeStatics.aRenderer6654, 124.toByte())
             if (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3794 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674) && NativeRenderer.anInt8045 == 0 && method3229(-85) == 1 && !bool_120_) {
                 var i = 0
                 var i_121_ = 0
@@ -1729,7 +1729,7 @@ class Client : GameAppletFrame() {
                     i_121_++
                 }
                 try {
-                    if (!GrayscaleNoiseTexture.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3657(ModelLightingConfig.aRectangleArray2554, i, 66)
+                    if (!GrayscaleNoiseTexture.aBoolean5300) FacingDirectionNodeStatics.aRenderer6654!!.method3657(ModelLightingConfig.aRectangleArray2554, i, 66)
                     else method1168(i, 0, ModelLightingConfig.aRectangleArray2554)
                 } catch (clientException_: ClientException) {
                     /* empty */
@@ -1742,7 +1742,7 @@ class Client : GameAppletFrame() {
                 }
                 try {
                     if (GrayscaleNoiseTexture.aBoolean5300) Tooltip.method395(107)
-                    else FacingDirectionNode.aRenderer6654!!.method3689(104.toByte())
+                    else FacingDirectionNodeStatics.aRenderer6654!!.method3689(104.toByte())
                 } catch (clientException_: ClientException) {
                     method1242((clientException_.message + " (Recovered) " + method81(79.toByte())), clientException_, 15004)
                     method3553(false, 113.toByte(), 0)
@@ -2142,10 +2142,10 @@ class Client : GameAppletFrame() {
                                 if (class46.anInt765 != 0) {
                                     if ((class46.anInt765 == RangedGraphicsOptionState.anInt5943) || (class46.anInt765 == WidgetRedrawTracker.anInt3932)) {
                                         AbstractTileShapeStatics.aWidgetComponent_6561 = class46
-                                        if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2292(123, FacingDirectionNode.aRenderer6654!!, class46.anInt789)
+                                        if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2292(123, FacingDirectionNodeStatics.aRenderer6654!!, class46.anInt789)
                                         if (class46.anInt765 == RangedGraphicsOptionState.anInt5943) {
                                             if (!ScrollbarComponent.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
-                                                SceneryDetailOptionState.method1823(FacingDirectionNode.aRenderer6654!!, i_38_, i_39_, (-50).toByte())
+                                                SceneryDetailOptionState.method1823(FacingDirectionNodeStatics.aRenderer6654!!, i_38_, i_39_, (-50).toByte())
                                                 var class318_sub6 = (InputStream_Sub2.aDoublyLinkedNodeList_83!!.method1872(8) as SceneEffectMarker?)
                                                 while (class318_sub6 != null) {
                                                     if (i_40_ >= (class318_sub6.anInt6429) && (i_40_ < (class318_sub6.anInt6426)) && (i_41_ >= (class318_sub6.anInt6427)) && (i_41_ < (class318_sub6.anInt6425))) {
@@ -2159,7 +2159,7 @@ class Client : GameAppletFrame() {
                                         }
                                     }
                                     if (class46.anInt765 == BufferToggleState.anInt3717) {
-                                        if (class46.method425((FacingDirectionNode.aRenderer6654!!), 3.toByte()) != null && (KeyboardLayoutCache.anInt3306 == 0 || KeyboardLayoutCache.anInt3306 == 3) && !ScrollbarComponent.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
+                                        if (class46.method425((FacingDirectionNodeStatics.aRenderer6654!!), 3.toByte()) != null && (KeyboardLayoutCache.anInt3306 == 0 || KeyboardLayoutCache.anInt3306 == 3) && !ScrollbarComponent.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
                                             var i_58_ = i_40_ - i_43_
                                             var i_59_ = i_41_ - i_44_
                                             val i_60_ = (class46.anIntArray677!![i_59_])
@@ -2496,7 +2496,7 @@ class Client : GameAppletFrame() {
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                             }
-                            if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, HoverActionEntry.aSpriteStore_1813, aMapSceneCache_413)!!.method2292(84, FacingDirectionNode.aRenderer6654!!, class46.anInt789)
+                            if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, HoverActionEntry.aSpriteStore_1813, aMapSceneCache_413)!!.method2292(84, FacingDirectionNodeStatics.aRenderer6654!!, class46.anInt789)
                             method273(class46, -2835)
                             if (class46.anInt774 == 0) {
                                 method107(widgetComponents, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)
@@ -5294,7 +5294,7 @@ class Client : GameAppletFrame() {
             anInt6975++
             if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && CompiledScriptCache.anInt4372 != ParticleSystemState.anInt2204) RegionSceneShifter.Companion.method3157(FileIoUtil.anInt4095, 123.toByte(), Renderer.anInt4581, 11, false)
             else {
-                StringValueNode.method3319(FacingDirectionNode.aRenderer6654, (-121).toByte())
+                StringValueNode.method3319(FacingDirectionNodeStatics.aRenderer6654, (-121).toByte())
                 if (TrackedGroundDecor.anInt10395 != CompiledScriptCache.anInt4372) EdgeDetectTextureNode.method3072((-96).toByte())
             }
         }

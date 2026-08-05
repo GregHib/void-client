@@ -44,7 +44,7 @@ object MapSceneRenderer {
                                         if ((i_13_ == (NullOggStream.anIntArray9042!![i_14_])) && `is`!![i_14_] != null) {
                                             val class348_sub49 = ByteBuffer(`is`[i_14_])
                                             class237_sub1.method1684(i_6_ * 8, i, -1, class348_sub49, i_12_, 8 * i_7_, i_11_, (TimedRecordAccessor.aCollisionMapArray7108s), i_10_, i_9_)
-                                            class237_sub1.method1696(class348_sub49, false, i_12_, i_11_, 8 * i_6_, i, i_10_, 8 * i_7_, FacingDirectionNode.aRenderer6654, if (is_5_[0] != -1) null else is_5_, i_9_)
+                                            class237_sub1.method1696(class348_sub49, false, i_12_, i_11_, 8 * i_6_, i, i_10_, 8 * i_7_, FacingDirectionNodeStatics.aRenderer6654, if (is_5_[0] != -1) null else is_5_, i_9_)
                                             break
                                         }
                                     }

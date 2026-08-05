@@ -102,7 +102,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                         if ((ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size) > ActorEntity.anInt6451) i_8_ -= (ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size - ActorEntity.anInt6451)
                         var i_9_ = ActorEntity.aBooleanArrayArray1572!![0]!!.size
                         if ((IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size) > ActorEntity.anInt7054) i_9_ -= (IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size - ActorEntity.anInt7054)
-                        var bools = FacingDirectionNode.aBooleanArrayArray6656
+                        var bools = FacingDirectionNodeStatics.aBooleanArrayArray6656
                         if (SpriteTextureNode.aBoolean9242) {
                             if (VoronoiNoiseTextureNode.aBoolean9121) bools = OverlayColorTable.aBooleanArrayArrayArray1751!![i_7_]
                             for (i_10_ in AnimatedModelRenderer.anInt8412..<i_8_) {
@@ -125,14 +125,14 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                             if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
                             else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
                             for (i_15_ in 0..<Npc.anInt10503) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i_15_]!!.method2359(SceneModelBuilder(i_7_ + 1), -1)
-                        } else if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, false, i_1_, i_2_)
-                        else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, false, i_2_)
+                        } else if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNodeStatics.aBooleanArrayArray6656!!, false, i_1_, i_2_)
+                        else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNodeStatics.aBooleanArrayArray6656!!, false, i_2_)
                     } else {
                         var i_16_ = ActorEntity.aBooleanArrayArray1572!!.size
                         if ((ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size) > ActorEntity.anInt6451) i_16_ -= (ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size - ActorEntity.anInt6451)
                         var i_17_ = ActorEntity.aBooleanArrayArray1572!![0]!!.size
                         if ((IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size) > ActorEntity.anInt7054) i_17_ -= (IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size - ActorEntity.anInt7054)
-                        var bools = FacingDirectionNode.aBooleanArrayArray6656
+                        var bools = FacingDirectionNodeStatics.aBooleanArrayArray6656
                         if (SpriteTextureNode.aBoolean9242) {
                             if (VoronoiNoiseTextureNode.aBoolean9121) bools = OverlayColorTable.aBooleanArrayArrayArray1751!![i_7_]
                             for (i_18_ in AnimatedModelRenderer.anInt8412..<i_16_) {
@@ -146,8 +146,8 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                             if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
                             else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
                             for (i_21_ in 0..<Npc.anInt10503) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i_21_]!!.method2359(SceneModelBuilder(i_7_ + 1), -1)
-                        } else if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, true, i_1_, i_2_)
-                        else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, true, i_2_)
+                        } else if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNodeStatics.aBooleanArrayArray6656!!, true, i_1_, i_2_)
+                        else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNodeStatics.aBooleanArrayArray6656!!, true, i_2_)
                     }
                 }
             }

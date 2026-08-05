@@ -49,8 +49,8 @@ class FireParticleStream : OutputStream() {
             var i_2_ = i_2_
             var i_3_ = i_3_
             anInt94++
-            if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) FacingDirectionNode.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
-            else if (LocalPlayerState.aPlayer_1907!!.x < 0 || (LocalPlayerState.aPlayer_1907!!.x >= GlCubemapLightPass.anInt7319 * 512) || LocalPlayerState.aPlayer_1907!!.y < 0 || (512 * RangeThresholdTextureNode.anInt9109 <= LocalPlayerState.aPlayer_1907!!.y)) FacingDirectionNode.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
+            if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) FacingDirectionNodeStatics.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
+            else if (LocalPlayerState.aPlayer_1907!!.x < 0 || (LocalPlayerState.aPlayer_1907!!.x >= GlCubemapLightPass.anInt7319 * 512) || LocalPlayerState.aPlayer_1907!!.y < 0 || (512 * RangeThresholdTextureNode.anInt9109 <= LocalPlayerState.aPlayer_1907!!.y)) FacingDirectionNodeStatics.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
             else {
                 TextureQualityOptionState.anInt6006++
                 if (LocalPlayerState.aPlayer_1907 != null && MediaStreamClient.anInt3203 == (LocalPlayerState.aPlayer_1907!!.x + -(256 * LocalPlayerState.aPlayer_1907!!.method2436(90.toByte())) - -256) shr 9 && TerrainChunkBuilder.anInt1548 == (LocalPlayerState.aPlayer_1907!!.y + 256 + -(256 * LocalPlayerState.aPlayer_1907!!.method2436(112.toByte()))) shr 9) {
@@ -106,23 +106,23 @@ class FireParticleStream : OutputStream() {
                 if (CompositeRgbNoiseTexture.anInt8685 > (ActorEntity.anInt7054 shl 9) + -1) CompositeRgbNoiseTexture.anInt8685 = (ActorEntity.anInt7054 shl 9) - 1
                 CharCodeMap.method3225(114)
                 Client.method3175((-107).toByte())
-                FacingDirectionNode.aRenderer6654!!.KA(i_1_, i_3_, i_1_ - -i_0_, i_3_ + i_2_)
+                FacingDirectionNodeStatics.aRenderer6654!!.KA(i_1_, i_3_, i_1_ - -i_0_, i_3_ + i_2_)
                 TextureDefinitionCache.method1626(1, true)
                 if (GrayscaleNoiseTexture.aBoolean5300) {
                     ProjectionCameraTransform.method941(124, LocTypeDefLoader.anInt2500)
                     if (LocalPlayerState.anInt1906 != PlayerAppearanceUpdateDecoder.anInt4545) PcmStreamBuffer.aBoolean8870 = true
                     PlayerAppearanceUpdateDecoder.anInt4545 = LocalPlayerState.anInt1906
                 } else {
-                    FacingDirectionNode.aRenderer6654!!.ya()
+                    FacingDirectionNodeStatics.aRenderer6654!!.ya()
                     val i_15_ = LocTypeDefLoader.anInt2500
-                    if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2293(MapSceneDefLoader.anInt2481 shl 3, FacingDirectionNode.aRenderer6654!!, (-72).toByte(), i_1_, i_0_, i_3_, WorldMapElement.anInt4638, MinimapAreaMarkerNode.anInt9701, i_15_, i_2_)
-                    else FacingDirectionNode.aRenderer6654!!.GA(i_15_)
+                    if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2293(MapSceneDefLoader.anInt2481 shl 3, FacingDirectionNodeStatics.aRenderer6654!!, (-72).toByte(), i_1_, i_0_, i_3_, WorldMapElement.anInt4638, MinimapAreaMarkerNode.anInt9701, i_15_, i_2_)
+                    else FacingDirectionNodeStatics.aRenderer6654!!.GA(i_15_)
                 }
                 WorldMapAreaLabel.method3570(false)
                 if (i >= 80) {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(GlslMaterialPass.anInt6246, ParticleSystemRenderer.anInt3855, CompositeRgbNoiseTexture.anInt8685, -MinimapAreaMarkerNode.anInt9701 and 0x3fff, -WorldMapElement.anInt4638 and 0x3fff, 0x3fff and -MapTileShape.anInt4186)
-                    FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
-                    FacingDirectionNode.aRenderer6654!!.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, TerrainChunkBuilder.anInt1550 shl 1, TerrainChunkBuilder.anInt1550 shl 1)
+                    FacingDirectionNodeStatics.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
+                    FacingDirectionNodeStatics.aRenderer6654!!.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, TerrainChunkBuilder.anInt1550 shl 1, TerrainChunkBuilder.anInt1550 shl 1)
                     method319(TerrainChunkBuilder.anInt1550 shl 1, TerrainChunkBuilder.anInt1550 shl 1, (-18).toByte(), i_1_ + i_0_ / 2, i_3_ + i_2_ / 2)
                     SpriteRenderEntry.method3282(0x3fff and -(MinimapAreaMarkerNode.anInt9701), CompositeRgbNoiseTexture.anInt8685, ParticleSystemRenderer.anInt3855, 0, -WorldMapElement.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -MapTileShape.anInt4186 and 0x3fff)
                     val i_16_ = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
@@ -184,8 +184,8 @@ class FireParticleStream : OutputStream() {
                     CompositeRgbNoiseTexture.anInt8685 = i_10_
                     if (SocketGameConnection.aBoolean5840 && ClientMachineInfo.aMediaStreamClient_6601!!.method1902(4) == 0) SocketGameConnection.aBoolean5840 = false
                     if (SocketGameConnection.aBoolean5840) {
-                        FacingDirectionNode.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
-                        Tooltip.method3511(false, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)), 2, FacingDirectionNode.aRenderer6654)
+                        FacingDirectionNodeStatics.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
+                        Tooltip.method3511(false, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)), 2, FacingDirectionNodeStatics.aRenderer6654)
                     }
                     TextureDefinitionCache.method1626(1, false)
                 }

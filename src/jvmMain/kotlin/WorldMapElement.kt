@@ -25,7 +25,7 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
         anInt4639++
         if (i == 10286) {
             val class143 = RangedGraphicsOptionState.method1766((-85).toByte(), (this.aWorldMapLabel_4635!!.anInt4965), aJs5Archive_4631)
-            aRSFont_4637 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aJs5Archive_4632!!, (this.aWorldMapLabel_4635!!.anInt4965)), true))
+            aRSFont_4637 = (FacingDirectionNodeStatics.aRenderer6654!!.method3686(class143, SpriteImage.method1523(this.aJs5Archive_4632!!, (this.aWorldMapLabel_4635!!.anInt4965)), true))
         }
     }
 

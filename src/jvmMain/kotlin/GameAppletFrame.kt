@@ -334,9 +334,9 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 ScrollingWidgetComponentNode.method1119(false)
                 method87((-97).toByte())
                 method92(28740)
-                FacingDirectionNode.aBufferPositionTracker_6660 = RenderConfigFactoryStatics.method1631(false)
+                FacingDirectionNodeStatics.aBufferPositionTracker_6660 = RenderConfigFactoryStatics.method1631(false)
                 while (CameraNodeListStatics.aLong1739 == 0L || (GameClock.method599(-124) < CameraNodeListStatics.aLong1739)) {
-                    FloatCameraTransform.anInt5744 = FacingDirectionNode.aBufferPositionTracker_6660!!.method1861(0, FileExistsCondition.aLong4783)
+                    FloatCameraTransform.anInt5744 = FacingDirectionNodeStatics.aBufferPositionTracker_6660!!.method1861(0, FileExistsCondition.aLong4783)
                     var i = 0
                     while (FloatCameraTransform.anInt5744 > i) {
                         method84(-1)
@@ -370,7 +370,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 TimingCounters.anInt4167 = 0
                 ParticleTileShape.anInt8818 = i_15_
                 EdgeDetectTextureNode.anGameApplet_Frame_9169 = this
-                FacingDirectionNode.anApplet6662 = JagGlToolkitFactory.anApplet1530
+                FacingDirectionNodeStatics.anApplet6662 = JagGlToolkitFactory.anApplet1530
                 VorbisOggDecoder.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i_17_, string, i_18_, JagGlToolkitFactory.anApplet1530 != null)
                 HudTabPanel.aPrivilegedOperationWorker_2993 = VorbisOggDecoder.aPrivilegedOperationWorker_8992
                 val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2236(this, -10240, 1)
@@ -398,7 +398,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             TimingCounters.anInt4167 = 0
             ModelResourceBundle.anInt7129 = 0
             ParticleTileShape.anInt8818 = i_21_
-            FacingDirectionNode.anApplet6662 = null
+            FacingDirectionNodeStatics.anApplet6662 = null
             RsaVarbitHandler.aFrame4904 = Frame()
             RsaVarbitHandler.aFrame4904!!.setTitle("Jagex")
             RsaVarbitHandler.aFrame4904!!.setResizable(true)

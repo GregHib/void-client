@@ -484,7 +484,7 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
                                     val i_60_ = i_59_ / 8 + (i_58_ / 8 shl 8)
                                     for (i_61_ in NullOggStream.anIntArray9042!!.indices) {
                                         if (i_60_ == (NullOggStream.anIntArray9042!![i_61_]) && `is`!![i_61_] != null) {
-                                            class237_sub1.method1692((i_58_ and 0x7) * 8, i_57_, `is`[i_61_], i_56_, (i_59_ and 0x7) * 8, FacingDirectionNode.aRenderer6654, 8 * i_54_, 8 * i_53_, i + 8219, TimedRecordAccessor.aCollisionMapArray7108s, i_52_)
+                                            class237_sub1.method1692((i_58_ and 0x7) * 8, i_57_, `is`[i_61_], i_56_, (i_59_ and 0x7) * 8, FacingDirectionNodeStatics.aRenderer6654, 8 * i_54_, 8 * i_53_, i + 8219, TimedRecordAccessor.aCollisionMapArray7108s, i_52_)
                                             break
                                         }
                                     }

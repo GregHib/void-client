@@ -33,7 +33,7 @@ abstract class BufferPositionTracker {
         fun method1857(i: Byte): Long {
             anInt3148++
             if (i.toInt() != -45) return -58L
-            return FacingDirectionNode.aBufferPositionTracker_6660!!.method1862(-18931)
+            return FacingDirectionNodeStatics.aBufferPositionTracker_6660!!.method1862(-18931)
         }
 
         @JvmStatic

@@ -1071,7 +1071,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7667 = 0
             NativeRenderer.anInt7940 = 0
             LocConfigModelBuilder.anInt4493 = 0
-            FacingDirectionNode.anInt6667 = 0
+            FacingDirectionNodeStatics.anInt6667 = 0
             BloomGraphicsOptionState.anInt5962 = 0
             WorldMapLabel.anInt4964 = 0
             FloatCameraTransform.anInt5692 = 0
@@ -1917,7 +1917,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             BrightnessOptionState.anInt5896 = 0
             Js5Archive.anInt8015 = 0
             OpenGlRenderNode.anInt10481 = 0
-            FacingDirectionNode.anInt6659 = 0
+            FacingDirectionNodeStatics.anInt6659 = 0
             AbstractModel.anInt1133 = 0
             ConfigShortValueNode.anInt9543 = 0
             MinimapPolygonDrawer.anInt5239 = 0

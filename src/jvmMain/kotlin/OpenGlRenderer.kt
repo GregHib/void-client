@@ -3600,7 +3600,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         abstractModelRendererS_326_ = arrayOfNulls<AbstractModelRenderer>(spriteImages.size)
                                         var i_327_ = 0
                                         while (spriteImages.size > i_327_) {
-                                            abstractModelRendererS_326_[i_327_] = (FacingDirectionNode.aRenderer6654!!.method3691(spriteImages[i_327_], true))
+                                            abstractModelRendererS_326_[i_327_] = (FacingDirectionNodeStatics.aRenderer6654!!.method3691(spriteImages[i_327_], true))
                                             i_327_++
                                         }
                                         TextureMipDescriptor.aLruByteCache_4346!!.method582(abstractModelRendererS_326_, i_324_.toLong(), (-94).toByte())
@@ -3617,9 +3617,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             val i_331_ = class105.method969()
                             if (class318_sub1_sub3_sub3.anInt10295 > 0 && i_330_ < 2) i_330_ = 2
                             class105.method974(i_329_, i_323_)
-                            FacingDirectionNode.aRenderer6654!!.T(i_329_, i_323_, i_330_ + i_329_, i_331_ + i_323_)
+                            FacingDirectionNodeStatics.aRenderer6654!!.T(i_329_, i_323_, i_330_ + i_329_, i_331_ + i_323_)
                             class105_328_.method974(i_329_, i_323_)
-                            FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i)
+                            FacingDirectionNodeStatics.aRenderer6654!!.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i)
                             MapTileShape.method2663(-5590, i_329_, i_329_ + class105.method966(), i_323_, i_323_ + i_331_)
                         } else i_323_ -= max((WorldMapLabel.aFontDefinition_4962!!.anInt1988), TimedRecordAccessor.aAbstractModelRendererArray7107!![0]!!.method969())
                         i_323_ -= 2
@@ -3640,7 +3640,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             abstractModelRenderers = arrayOfNulls<AbstractModelRenderer>(spriteImages.size)
                                             var i_334_ = 0
                                             while ((spriteImages.size > i_334_)) {
-                                                abstractModelRenderers[i_334_] = (FacingDirectionNode.aRenderer6654!!.method3691(spriteImages[i_334_], true))
+                                                abstractModelRenderers[i_334_] = (FacingDirectionNodeStatics.aRenderer6654!!.method3691(spriteImages[i_334_], true))
                                                 i_334_++
                                             }
                                             MaterialTypeMarkerStatics.aLruByteCache_6517!!.method582(abstractModelRenderers, i_333_.toLong(), (-101).toByte())
@@ -3662,9 +3662,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 i_323_ -= i_338_
                                 val i_339_ = (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ + -(class105.method971() shr 1)))
                                 class105.method974(i_339_, i_323_)
-                                FacingDirectionNode.aRenderer6654!!.T(i_339_, i_323_, i_339_ - -i_336_, i_323_ - -i_338_)
+                                FacingDirectionNodeStatics.aRenderer6654!!.T(i_339_, i_323_, i_339_ - -i_336_, i_323_ - -i_338_)
                                 class105_332_.method974(i_339_, i_323_)
-                                FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i - -i_315_)
+                                FacingDirectionNodeStatics.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i - -i_315_)
                                 MapTileShape.method2663(-5590, i_339_, class105.method966() + i_339_, i_323_, i_338_ + i_323_)
                                 i_323_ -= 2
                             }
@@ -3786,7 +3786,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         var i_372_ = 0
                                         var i_373_ = 0
                                         var i_374_ = 0
-                                        val class105_375_ = itemModelDefinition.method327((FacingDirectionNode.aRenderer6654!!), (-96).toByte())
+                                        val class105_375_ = itemModelDefinition.method327((FacingDirectionNodeStatics.aRenderer6654!!), (-96).toByte())
                                         if (class105_375_ != null) {
                                             i_355_ = class105_375_.method971()
                                             val i_376_ = class105_375_.method969()
@@ -3794,7 +3794,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             if (i_374_ < i_376_) i_374_ = i_376_
                                             i_359_ = HeadIconRenderer.anIntArray2062!![0]
                                         }
-                                        val class105_377_ = itemModelDefinition.method331((FacingDirectionNode.aRenderer6654!!), (-75).toByte())
+                                        val class105_377_ = itemModelDefinition.method331((FacingDirectionNodeStatics.aRenderer6654!!), (-75).toByte())
                                         if (class105_377_ != null) {
                                             i_356_ = class105_377_.method971()
                                             val i_378_ = class105_377_.method969()
@@ -3802,7 +3802,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             if (i_378_ > i_374_) i_374_ = i_378_
                                             i_360_ = HeadIconRenderer.anIntArray2062!![0]
                                         }
-                                        val class105_379_ = itemModelDefinition.method324((FacingDirectionNode.aRenderer6654!!), true)
+                                        val class105_379_ = itemModelDefinition.method324((FacingDirectionNodeStatics.aRenderer6654!!), true)
                                         if (class105_379_ != null) {
                                             i_357_ = class105_379_.method971()
                                             val i_380_ = class105_379_.method969()
@@ -3810,7 +3810,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             class105_379_.method984(HeadIconRenderer.anIntArray2062)
                                             i_361_ = HeadIconRenderer.anIntArray2062!![0]
                                         }
-                                        val class105_381_ = itemModelDefinition.method325((FacingDirectionNode.aRenderer6654!!), 105)
+                                        val class105_381_ = itemModelDefinition.method325((FacingDirectionNodeStatics.aRenderer6654!!), 105)
                                         if (class105_381_ != null) {
                                             i_358_ = class105_381_.method971()
                                             val i_382_ = class105_381_.method969()
@@ -3819,7 +3819,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             i_362_ = HeadIconRenderer.anIntArray2062!![0]
                                         }
                                         if (itemModelDefinition_349_ != null) {
-                                            abstractModelRenderer = (itemModelDefinition_349_.method327(FacingDirectionNode.aRenderer6654!!, 110.toByte()))
+                                            abstractModelRenderer = (itemModelDefinition_349_.method327(FacingDirectionNodeStatics.aRenderer6654!!, 110.toByte()))
                                             if (abstractModelRenderer != null) {
                                                 i_366_ = abstractModelRenderer.method971()
                                                 val i_383_ = abstractModelRenderer.method969()
@@ -3827,7 +3827,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 abstractModelRenderer.method984(HeadIconRenderer.anIntArray2062)
                                                 i_370_ = HeadIconRenderer.anIntArray2062!![0]
                                             }
-                                            abstractModelRenderer_363_ = (itemModelDefinition_349_.method331(FacingDirectionNode.aRenderer6654!!, (-80).toByte()))
+                                            abstractModelRenderer_363_ = (itemModelDefinition_349_.method331(FacingDirectionNodeStatics.aRenderer6654!!, (-80).toByte()))
                                             if (abstractModelRenderer_363_ != null) {
                                                 i_367_ = abstractModelRenderer_363_.method971()
                                                 val i_384_ = abstractModelRenderer_363_.method969()
@@ -3835,7 +3835,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 abstractModelRenderer_363_.method984(HeadIconRenderer.anIntArray2062)
                                                 i_371_ = HeadIconRenderer.anIntArray2062!![0]
                                             }
-                                            abstractModelRenderer_364_ = (itemModelDefinition_349_.method324(FacingDirectionNode.aRenderer6654!!, true))
+                                            abstractModelRenderer_364_ = (itemModelDefinition_349_.method324(FacingDirectionNodeStatics.aRenderer6654!!, true))
                                             if (abstractModelRenderer_364_ != null) {
                                                 i_368_ = abstractModelRenderer_364_.method971()
                                                 val i_385_ = abstractModelRenderer_364_.method969()
@@ -3843,7 +3843,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 if (i_385_ > i_374_) i_374_ = i_385_
                                                 i_372_ = HeadIconRenderer.anIntArray2062!![0]
                                             }
-                                            abstractModelRenderer_365_ = (itemModelDefinition_349_.method325(FacingDirectionNode.aRenderer6654!!, i_316_ xor 0x35))
+                                            abstractModelRenderer_365_ = (itemModelDefinition_349_.method325(FacingDirectionNodeStatics.aRenderer6654!!, i_316_ xor 0x35))
                                             if (abstractModelRenderer_365_ != null) {
                                                 i_369_ = abstractModelRenderer_365_.method971()
                                                 val i_386_ = abstractModelRenderer_365_.method969()
@@ -3858,8 +3858,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         var i_388_ = itemModelDefinition.anInt435
                                         var class143_389_ = GlTexture3D.aFontDefinition_8527
                                         if (i_388_ >= 0) {
-                                            val class324_390_ = GlTextureBase.method232((FacingDirectionNode.aRenderer6654), (-53).toByte(), true, i_388_)
-                                            val class143_391_ = (GlVertexBufferBase.method1151(-25411, FacingDirectionNode.aRenderer6654, i_388_))
+                                            val class324_390_ = GlTextureBase.method232((FacingDirectionNodeStatics.aRenderer6654), (-53).toByte(), true, i_388_)
+                                            val class143_391_ = (GlVertexBufferBase.method1151(-25411, FacingDirectionNodeStatics.aRenderer6654, i_388_))
                                             if (class324_390_ != null && class143_391_ != null) {
                                                 class324 = class324_390_
                                                 class143 = class143_391_
@@ -3868,8 +3868,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         if (itemModelDefinition_349_ != null) {
                                             i_388_ = (itemModelDefinition_349_.anInt435)
                                             if (i_388_ >= 0) {
-                                                val class324_392_ = (GlTextureBase.method232(FacingDirectionNode.aRenderer6654, (-53).toByte(), true, i_388_))
-                                                val class143_393_ = (GlVertexBufferBase.method1151(-25411, FacingDirectionNode.aRenderer6654, i_388_))
+                                                val class324_392_ = (GlTextureBase.method232(FacingDirectionNodeStatics.aRenderer6654, (-53).toByte(), true, i_388_))
+                                                val class143_393_ = (GlVertexBufferBase.method1151(-25411, FacingDirectionNodeStatics.aRenderer6654, i_388_))
                                                 if (class324_392_ != null && class143_393_ != null) {
                                                     class143_389_ = class143_393_
                                                     class324_387_ = class324_392_
@@ -4096,11 +4096,11 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 4) {
                         val i_453_ = ((150 + -ConfigVarProgress.anIntArray4812!![i_438_]) * (WorldMapLabel.aFontDefinition_4962!!.method1183(true, string) + 100) / 150)
-                        FacingDirectionNode.aRenderer6654!!.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_)
+                        FacingDirectionNodeStatics.aRenderer6654!!.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_)
                         i_444_ += 50 - i_453_
                         i_446_ += -i_453_ + 50
                         NodeDequeStatics.aRSFont_3326!!.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125)
-                        FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i + i_315_)
+                        FacingDirectionNodeStatics.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i + i_315_)
                     }
                     if (ConfigVarProgress.anIntArray4806!![i_438_] == 5) {
                         val i_454_ = 150 + -ConfigVarProgress.anIntArray4812!![i_438_]
@@ -4109,13 +4109,13 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             if (i_454_ > 125) i_455_ = i_454_ + -125
                         } else i_455_ = i_454_ - 25
                         val i_456_ = (WorldMapLabel.aFontDefinition_4962!!.anInt1993 + WorldMapLabel.aFontDefinition_4962!!.anInt1988)
-                        FacingDirectionNode.aRenderer6654!!.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i)
+                        FacingDirectionNodeStatics.aRenderer6654!!.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_447_ += i_455_
                         NodeDequeStatics.aRSFont_3326!!.method2575((-105).toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_))
                         i_445_ += i_455_
                         i_446_ -= i_443_ shr 1
-                        FacingDirectionNode.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i_315_ + i)
+                        FacingDirectionNodeStatics.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i_315_ + i)
                     }
                 } else {
                     i_444_ -= i_443_ shr 1
@@ -4138,7 +4138,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     if (abstractModelRenderer == null) {
                         val spriteImages = SpriteImage.method1519(CameraRotationStubStatics.aJs5Archive_322!!, i_9_, 0)
                         if (spriteImages == null) return
-                        abstractModelRenderer = FacingDirectionNode.aRenderer6654!!.method3691(spriteImages[0], true)
+                        abstractModelRenderer = FacingDirectionNodeStatics.aRenderer6654!!.method3691(spriteImages[0], true)
                         TerrainTileShape.aLruByteCache_8807!!.method582(abstractModelRenderer, i_9_.toLong(), (-115).toByte())
                     }
                     method165(class318_sub1_sub3_sub3_8_!!.plane.toInt(), i_5_, 0, i_3_ shr 1, class318_sub1_sub3_sub3_8_.x, class318_sub1_sub3_sub3_8_.method2436(126.toByte()) * 256, class318_sub1_sub3_sub3_8_.y, 92.toByte(), i_6_ shr 1, i_2_)
@@ -4148,7 +4148,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     i_11_ += 18 * (i % 4)
                     val i_12_ = -76 / ((i_1_ - 3) / 38)
                     abstractModelRenderer!!.method974(i_10_, i_11_)
-                    if (class318_sub1_sub3_sub3 === class318_sub1_sub3_sub3_8_) FacingDirectionNode.aRenderer6654!!.method3668(18, -1 + i_11_, -256, i_10_ - 1, 18, 57)
+                    if (class318_sub1_sub3_sub3 === class318_sub1_sub3_sub3_8_) FacingDirectionNodeStatics.aRenderer6654!!.method3668(18, -1 + i_11_, -256, i_10_ - 1, 18, 57)
                     MapTileShape.method2663(-5590, i_10_ + -1, 18 + i_10_, i_11_ + -1, i_11_ - -18)
                     val class318_sub6 = method3529(32564)
                     class318_sub6.anInt6426 = 16 + i_10_

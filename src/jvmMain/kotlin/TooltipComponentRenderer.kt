@@ -28,7 +28,7 @@ class TooltipComponentRenderer internal constructor(js5Archive: Js5Archive?, js5
     override fun method7(i: Int) {
         anInt4647++
         val class143 = RangedGraphicsOptionState.method1766((-45).toByte(), aHeapInfoRecord_4646!!.anInt4944, aJs5Archive_4651!!)
-        if (i == 10286) aRSFont_4649 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1523(aJs5Archive_4650!!, aHeapInfoRecord_4646.anInt4944), true))
+        if (i == 10286) aRSFont_4649 = (FacingDirectionNodeStatics.aRenderer6654!!.method3686(class143, SpriteImage.method1523(aJs5Archive_4650!!, aHeapInfoRecord_4646.anInt4944), true))
     }
 
     init {

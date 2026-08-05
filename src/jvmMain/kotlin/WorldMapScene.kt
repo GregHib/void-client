@@ -808,7 +808,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                     DisplaceTextureNode.anIntArray9135 = IntArray(this.anInt3114)
                     SplashImageLoadable.anIntArray4692 = IntArray(this.anInt3114)
                     anIntArray6878 = IntArray(this.anInt3114)
-                    FacingDirectionNode.anIntArray6655 = IntArray(this.anInt3114)
+                    FacingDirectionNodeStatics.anIntArray6655 = IntArray(this.anInt3114)
                 }
                 var i_180_ = 0
                 while (this.anInt3130 > i_180_) {
@@ -816,7 +816,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                     while (this.anInt3114 > i_181_) {
                         anIntArray6878!![i_181_] = 0
                         DisplaceTextureNode.anIntArray9135!![i_181_] = 0
-                        FacingDirectionNode.anIntArray6655!![i_181_] = 0
+                        FacingDirectionNodeStatics.anIntArray6655!![i_181_] = 0
                         SplashImageLoadable.anIntArray4692!![i_181_] = 0
                         NamedTimedNode.anIntArray8785!![i_181_] = 0
                         i_181_++
@@ -831,7 +831,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     val class22 = aParticleDefLoader_3120!!.method1380(true, -1 + i_185_)
                                     anIntArray6878!![i_183_] += class22!!.anInt341
                                     DisplaceTextureNode.anIntArray9135!![i_183_] += class22.anInt332
-                                    FacingDirectionNode.anIntArray6655!![i_183_] += class22.anInt335
+                                    FacingDirectionNodeStatics.anIntArray6655!![i_183_] += class22.anInt335
                                     SplashImageLoadable.anIntArray4692!![i_183_] += class22.anInt343
                                     NamedTimedNode.anIntArray8785!![i_183_]++
                                 }
@@ -843,7 +843,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     val class22 = aParticleDefLoader_3120!!.method1380(true, -1 + i_187_)
                                     anIntArray6878!![i_183_] -= class22!!.anInt341
                                     DisplaceTextureNode.anIntArray9135!![i_183_] -= class22.anInt332
-                                    FacingDirectionNode.anIntArray6655!![i_183_] -= class22.anInt335
+                                    FacingDirectionNodeStatics.anIntArray6655!![i_183_] -= class22.anInt335
                                     SplashImageLoadable.anIntArray4692!![i_183_] -= class22.anInt343
                                     NamedTimedNode.anIntArray8785!![i_183_]--
                                 }
@@ -860,7 +860,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                             while ((this.anInt3114 > i_193_)) {
                                 val i_194_ = 5 + i_193_
                                 if (i_194_ < this.anInt3114) {
-                                    i_190_ += (FacingDirectionNode.anIntArray6655!![i_194_])
+                                    i_190_ += (FacingDirectionNodeStatics.anIntArray6655!![i_194_])
                                     i_189_ += (DisplaceTextureNode.anIntArray9135!![i_194_])
                                     i_188_ += (anIntArray6878!![i_194_])
                                     i_192_ += (NamedTimedNode.anIntArray8785!![i_194_])
@@ -870,7 +870,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                 if (i_195_ >= 0) {
                                     i_191_ -= SplashImageLoadable.anIntArray4692!![i_195_]
                                     i_188_ -= (anIntArray6878!![i_195_])
-                                    i_190_ -= (FacingDirectionNode.anIntArray6655!![i_195_])
+                                    i_190_ -= (FacingDirectionNodeStatics.anIntArray6655!![i_195_])
                                     i_192_ -= (NamedTimedNode.anIntArray8785!![i_195_])
                                     i_189_ -= (DisplaceTextureNode.anIntArray9135!![i_195_])
                                 }

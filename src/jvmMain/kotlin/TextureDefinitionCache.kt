@@ -60,7 +60,7 @@ class TextureDefinitionCache internal constructor(i: Int, js5Archive: Js5Archive
                     i_1_ = i_1_ shl 1
                     i_2_ = -i_1_
                 }
-                FacingDirectionNode.aRenderer6654!!.f(i_2_, i_1_)
+                FacingDirectionNodeStatics.aRenderer6654!!.f(i_2_, i_1_)
             }
         }
     }

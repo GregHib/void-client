@@ -212,9 +212,9 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
                             }
                         }
                         ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (GameDisplayManager.anInt10432))
-                        if (FacingDirectionNode.aRenderer6654 != null) {
+                        if (FacingDirectionNodeStatics.aRenderer6654 != null) {
                             if (GrayscaleNoiseTexture.aBoolean5300) TerrainTileStatics.method3980(120, ParticleSystemRenderer.aCanvas3869!!)
-                            else FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
+                            else FacingDirectionNodeStatics.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
                         }
                         if (RsaVarbitHandler.aFrame4904 === container) {
                             val insets = RsaVarbitHandler.aFrame4904!!.getInsets()

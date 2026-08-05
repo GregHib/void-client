@@ -49,7 +49,7 @@ class MinimapPositionState {
                         if (WeaveTextureNode.anInt9282 == 4) method814(125.toByte(), l)
                     } else method119(-1, l)
                 }
-                OutgoingPacketNode.method3324(FacingDirectionNode.aRenderer6654, 83.toByte(), GlGroundShaderPass.anInt7396.toLong())
+                OutgoingPacketNode.method3324(FacingDirectionNodeStatics.aRenderer6654, 83.toByte(), GlGroundShaderPass.anInt7396.toLong())
                 if (RenderNodeStatics.anInt9721 != -1) method769(RenderNodeStatics.anInt9721, 118.toByte())
                 for (i_3_ in 0..<TerrainShadowBuilderGl3.anInt7008) {
                     if (OpenGlModel.aBooleanArray2076!![i_3_]) LocDefinitionCache.aBooleanArray3438!![i_3_] = true
@@ -63,8 +63,8 @@ class MinimapPositionState {
                     TerrainShadowBuilderGl3.anInt7008 = 0
                     method842(false)
                 }
-                FacingDirectionNode.aRenderer6654!!.la()
-                SpriteRenderEntry.method3281(46.toByte(), FacingDirectionNode.aRenderer6654!!)
+                FacingDirectionNodeStatics.aRenderer6654!!.la()
+                SpriteRenderEntry.method3281(46.toByte(), FacingDirectionNodeStatics.aRenderer6654!!)
                 var i_4_ = method1053(3112)
                 if (i_4_ == -1) i_4_ = Tooltip.anInt4458
                 if (i_4_ == -1) i_4_ = StreamingResourceRequest.anInt10447

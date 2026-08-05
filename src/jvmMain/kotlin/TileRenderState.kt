@@ -132,7 +132,7 @@ class TileRenderState {
         fun method2681(i: Int) {
             if (i == 9864) {
                 anInt4230++
-                if (FacingDirectionNode.aRenderer6654 != null) {
+                if (FacingDirectionNodeStatics.aRenderer6654 != null) {
                     if (GrayscaleNoiseTexture.aBoolean5300) method1406(true)
                     PlayerSequenceSelector.aSceneObjectSpawner_1208!!.method775(69.toByte())
                     method2433()
@@ -164,8 +164,8 @@ class TileRenderState {
                     }
                     MinimapSquareDrawer.aAbstractCameraTransform_5209 = null
                     SettingsCrcWriter.aAbstractCameraTransform_2123 = null
-                    FacingDirectionNode.aRenderer6654!!.method3635(64.toByte())
-                    FacingDirectionNode.aRenderer6654 = null
+                    FacingDirectionNodeStatics.aRenderer6654!!.method3635(64.toByte())
+                    FacingDirectionNodeStatics.aRenderer6654 = null
                 }
             }
         }

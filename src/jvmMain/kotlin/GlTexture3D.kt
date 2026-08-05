@@ -94,7 +94,7 @@ class GlTexture3D : GlTexture {
             GrayscaleNoiseTexture.anInt5293 = ActorEntity.anInt8502 + ActorEntity.anInt10084
             if (GrayscaleNoiseTexture.anInt5293 > ActorEntity.anInt7054) GrayscaleNoiseTexture.anInt5293 = ActorEntity.anInt7054
             val bools = ActorEntity.aBooleanArrayArray1572
-            val bools_28_ = FacingDirectionNode.aBooleanArrayArray6656
+            val bools_28_ = FacingDirectionNodeStatics.aBooleanArrayArray6656
             if (SpriteTextureNode.aBoolean9242) {
                 for (i_29_ in 0..<(ActorEntity.anInt10084 + ActorEntity.anInt10084 + 2)) {
                     var i_30_ = 0
@@ -110,10 +110,10 @@ class GlTexture3D : GlTexture {
                             val i_37_ = (TerrainTileShape.aTerrainTileArray8801!![TerrainTileShape.aTerrainTileArray8801!!.size - 1]!!.method3982((-86).toByte(), i_34_, i_33_) - (1000 shl ActorEntity.anInt4459 - 7))
                             val i_38_ = (if (ActorEntity.aTerrainTileArray4142 != null) (ActorEntity.aTerrainTileArray4142!![0]!!.method3982((-86).toByte(), i_34_, i_33_) + ActorEntity.anInt3465) else (TerrainTileShape.aTerrainTileArray8801!![0]!!.method3982((-86).toByte(), i_34_, i_33_) + ActorEntity.anInt3465))
                             i_31_ = (if (i_25_ >= 0) NativeLibraryState.aRenderer171!!.r(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_, i_25_) else NativeLibraryState.aRenderer171!!.JA(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_))
-                            FacingDirectionNode.aBooleanArrayArray6656!![i_29_]!![i_32_] = i_31_ == 0
+                            FacingDirectionNodeStatics.aBooleanArrayArray6656!![i_29_]!![i_32_] = i_31_ == 0
                         } else {
                             i_31_ = -1
-                            FacingDirectionNode.aBooleanArrayArray6656!![i_29_]!![i_32_] = false
+                            FacingDirectionNodeStatics.aBooleanArrayArray6656!![i_29_]!![i_32_] = false
                         }
                         if (i_29_ > 0 && i_32_ > 0) {
                             val i_39_ = (RefCountedHandle.anIntArray2272!![i_32_ - 1] and RefCountedHandle.anIntArray2272!![i_32_] and i_30_ and i_31_)
@@ -137,7 +137,7 @@ class GlTexture3D : GlTexture {
                 for (i_40_ in WorldMapIconLabel.aBooleanArrayArray8596!!.indices) {
                     for (i_41_ in WorldMapIconLabel.aBooleanArrayArray8596!![0]!!.indices) WorldMapIconLabel.aBooleanArrayArray8596!![i_40_]!![i_41_] = true
                 }
-                FacingDirectionNode.aBooleanArrayArray6656 = WorldMapIconLabel.aBooleanArrayArray8596
+                FacingDirectionNodeStatics.aBooleanArrayArray6656 = WorldMapIconLabel.aBooleanArrayArray8596
                 ActorEntity.aBooleanArrayArray1572 = WorldMapIconLabel.aBooleanArrayArray8596!!
                 ByteArrayPool.anInt492 = 0
                 IntPair.anInt6974 = 0
@@ -191,7 +191,7 @@ class GlTexture3D : GlTexture {
             }
             if (!SpriteTextureNode.aBoolean9242) {
                 ActorEntity.aBooleanArrayArray1572 = bools
-                FacingDirectionNode.aBooleanArrayArray6656 = bools_28_
+                FacingDirectionNodeStatics.aBooleanArrayArray6656 = bools_28_
             }
             DebugOverlayRenderer.method1884()
         }

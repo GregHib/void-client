@@ -40,7 +40,7 @@ class BufferToggleState internal constructor(var aBoolean3709: Boolean) {
             anInt3716++
             if (i.toInt() == -9) {
                 NoOpGraphicsOptionState.anInt6043 = NoOpGraphicsOptionState.anInt6043 shl 2
-                if (FacingDirectionNode.aRenderer6654!!.method3670()) NoOpGraphicsOptionState.anInt6043 += 512
+                if (FacingDirectionNodeStatics.aRenderer6654!!.method3670()) NoOpGraphicsOptionState.anInt6043 += 512
                 method1626(1, false)
             }
         }

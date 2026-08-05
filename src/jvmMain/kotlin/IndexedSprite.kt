@@ -51,14 +51,14 @@ class IndexedSprite : Sprite {
                 if (GrayscaleNoiseTexture.aBoolean5300) IndexedSprite.method1010(false, true)
                 else {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method891(i_10_, 0, 0)
-                    FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
+                    FacingDirectionNodeStatics.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                 }
-                if (!ParticleSystemRenderer.aBoolean3870) FacingDirectionNode.aRenderer6654!!.da(i_9_, i_15_, i_11_, RemoveRoofsOptionState.anIntArray6062)
-                else FacingDirectionNode.aRenderer6654!!.HA(i_9_, i_15_, i_11_, LocalPlayerState.anInt1906, RemoveRoofsOptionState.anIntArray6062)
+                if (!ParticleSystemRenderer.aBoolean3870) FacingDirectionNodeStatics.aRenderer6654!!.da(i_9_, i_15_, i_11_, RemoveRoofsOptionState.anIntArray6062)
+                else FacingDirectionNodeStatics.aRenderer6654!!.HA(i_9_, i_15_, i_11_, LocalPlayerState.anInt1906, RemoveRoofsOptionState.anIntArray6062)
                 if (GrayscaleNoiseTexture.aBoolean5300) GlVertexBufferArb.method2129(60.toByte())
                 else {
                     SettingsCrcWriter.aAbstractCameraTransform_2123!!.method891(-i_10_, 0, 0)
-                    FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
+                    FacingDirectionNodeStatics.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                 }
             }
         }

@@ -63,13 +63,13 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
             anInt6866++
             LocTypeDefLoader.method1406(true)
             if (i == 0) {
-                FacingDirectionNode.aRenderer6654 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350) * 2, ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.aJs5Archive_4796)
+                FacingDirectionNodeStatics.aRenderer6654 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350) * 2, ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.aJs5Archive_4796)
                 if (string != null) {
-                    FacingDirectionNode.aRenderer6654!!.GA(0)
+                    FacingDirectionNodeStatics.aRenderer6654!!.GA(0)
                     val class143 = method1819(WidgetDefinition.anInt235, 0, -117, SoftwareSpriteRaster.aJs5Archive_1627!!)
-                    val class324 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1519(CameraRotationStubStatics.aJs5Archive_322!!, WidgetDefinition.anInt235, 0), true))
+                    val class324 = (FacingDirectionNodeStatics.aRenderer6654!!.method3686(class143, SpriteImage.method1519(CameraRotationStubStatics.aJs5Archive_322!!, WidgetDefinition.anInt235, 0), true))
                     ScreenBorderFiller.method1170((-89).toByte())
-                    Tooltip.method3511(true, class324, class143, string, 2, FacingDirectionNode.aRenderer6654)
+                    Tooltip.method3511(true, class324, class143, string, 2, FacingDirectionNodeStatics.aRenderer6654)
                 }
             } else {
                 var var_renderer: Renderer? = null
@@ -82,7 +82,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
                     Tooltip.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
                 }
                 try {
-                    FacingDirectionNode.aRenderer6654 = SoftwareSpriteRaster.method958(true, i, SourceRowTextureNode.aRenderConfig9113, 2 * IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(i_1_ + -32350), ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.aJs5Archive_4796)
+                    FacingDirectionNodeStatics.aRenderer6654 = SoftwareSpriteRaster.method958(true, i, SourceRowTextureNode.aRenderConfig9113, 2 * IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(i_1_ + -32350), ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.aJs5Archive_4796)
                     if (string != null) {
                         var_renderer!!.GA(0)
                         val class143 = method1819(WidgetDefinition.anInt235, 0, -51, SoftwareSpriteRaster.aJs5Archive_1627!!)
@@ -90,7 +90,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
                         ScreenBorderFiller.method1170((-26).toByte())
                         Tooltip.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
                     }
-                    if (FacingDirectionNode.aRenderer6654!!.method3693()) {
+                    if (FacingDirectionNodeStatics.aRenderer6654!!.method3693()) {
                         var bool_2_ = true
                         try {
                             bool_2_ = (NoiseTextureNode.aClass348_Sub4_9264!!.anInt6609) > 256
@@ -98,9 +98,9 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
                             /* empty */
                         }
                         val var_shaderProgram: ShaderProgram?
-                        if (!bool_2_) var_shaderProgram = FacingDirectionNode.aRenderer6654!!.method3702(104857600)
-                        else var_shaderProgram = FacingDirectionNode.aRenderer6654!!.method3702(146800640)
-                        FacingDirectionNode.aRenderer6654!!.method3651(var_shaderProgram)
+                        if (!bool_2_) var_shaderProgram = FacingDirectionNodeStatics.aRenderer6654!!.method3702(104857600)
+                        else var_shaderProgram = FacingDirectionNodeStatics.aRenderer6654!!.method3702(146800640)
+                        FacingDirectionNodeStatics.aRenderer6654!!.method3651(var_shaderProgram)
                     }
                 } catch (throwable: Throwable) {
                     val i_3_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
@@ -121,14 +121,14 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
             IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1826(!bool, -142238264)
             IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271), i)
             ByteBufferStatics.method3354(i_1_ + -78)
-            FacingDirectionNode.aRenderer6654!!.method3650(10000)
-            FacingDirectionNode.aRenderer6654!!.X(32)
-            SettingsCrcWriter.aAbstractCameraTransform_2123 = FacingDirectionNode.aRenderer6654!!.method3654()
-            MinimapSquareDrawer.aAbstractCameraTransform_5209 = FacingDirectionNode.aRenderer6654!!.method3654()
+            FacingDirectionNodeStatics.aRenderer6654!!.method3650(10000)
+            FacingDirectionNodeStatics.aRenderer6654!!.X(32)
+            SettingsCrcWriter.aAbstractCameraTransform_2123 = FacingDirectionNodeStatics.aRenderer6654!!.method3654()
+            MinimapSquareDrawer.aAbstractCameraTransform_5209 = FacingDirectionNodeStatics.aRenderer6654!!.method3654()
             BufferToggleState.method2196((-9).toByte())
-            FacingDirectionNode.aRenderer6654!!.method3630(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub2_7228!!.method1726(-32350) == 1)
-            if (FacingDirectionNode.aRenderer6654!!.method3627()) WarpTextureNode.method3137(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) == 1, (-24).toByte())
-            TerrainChunkBuilder.method873(GlCubemapLightPass.anInt7319 shr 3, 21719, FacingDirectionNode.aRenderer6654, RangeThresholdTextureNode.anInt9109 shr 3)
+            FacingDirectionNodeStatics.aRenderer6654!!.method3630(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub2_7228!!.method1726(-32350) == 1)
+            if (FacingDirectionNodeStatics.aRenderer6654!!.method3627()) WarpTextureNode.method3137(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1771(-32350) == 1, (-24).toByte())
+            TerrainChunkBuilder.method873(GlCubemapLightPass.anInt7319 shr 3, 21719, FacingDirectionNodeStatics.aRenderer6654, RangeThresholdTextureNode.anInt9109 shr 3)
             SceneObjectSpawner.method773(true)
             RenderNodeStatics.aBoolean9719 = false
             NativeLibraryUnloader.aMapSceneTileArray2974 = null

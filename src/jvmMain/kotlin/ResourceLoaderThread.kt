@@ -67,22 +67,22 @@ class ResourceLoaderThread : Runnable {
                 if (anCursorController_3907 is LoadingBarRenderer) anCursorController_3907.method58(aBoolean3908, -104)
                 else {
                     val l_1_ = method599(-104)
-                    if (FacingDirectionNode.aRenderer6654 != null && anCursorController_3919 != null && anCursorController_3919!!.method55((-58).toByte()) != 0 && (aLong3914 >= l_1_ - anCursorController_3919!!.method55((-58).toByte()).toLong())) {
+                    if (FacingDirectionNodeStatics.aRenderer6654 != null && anCursorController_3919 != null && anCursorController_3919!!.method55((-58).toByte()) != 0 && (aLong3914 >= l_1_ - anCursorController_3919!!.method55((-58).toByte()).toLong())) {
                         var i = ((l_1_ + -aLong3914) * 255L / anCursorController_3919!!.method55((-58).toByte()).toLong()).toInt()
                         var i_2_ = -i + 255
                         i_2_ = 0xffffff or (i_2_ shl 24)
                         i = 0xffffff or (i shl 24)
                         ScreenBorderFiller.method1170((-121).toByte())
-                        FacingDirectionNode.aRenderer6654!!.GA(0)
-                        val class105 = (FacingDirectionNode.aRenderer6654!!.method3629(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432, true))
-                        FacingDirectionNode.aRenderer6654!!.method3681(class105!!, 0)
+                        FacingDirectionNodeStatics.aRenderer6654!!.GA(0)
+                        val class105 = (FacingDirectionNodeStatics.aRenderer6654!!.method3629(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432, true))
+                        FacingDirectionNodeStatics.aRenderer6654!!.method3681(class105!!, 0)
                         anCursorController_3919!!.method58(true, -126)
-                        FacingDirectionNode.aRenderer6654!!.method3672()
+                        FacingDirectionNodeStatics.aRenderer6654!!.method3672()
                         class105.method964(0, 0, 0, i_2_, 1)
-                        FacingDirectionNode.aRenderer6654!!.method3681(class105, 0)
-                        FacingDirectionNode.aRenderer6654!!.GA(0)
+                        FacingDirectionNodeStatics.aRenderer6654!!.method3681(class105, 0)
+                        FacingDirectionNodeStatics.aRenderer6654!!.GA(0)
                         anCursorController_3907.method58(true, -114)
-                        FacingDirectionNode.aRenderer6654!!.method3672()
+                        FacingDirectionNodeStatics.aRenderer6654!!.method3672()
                         class105.method964(0, 0, 0, i, 1)
                     } else {
                         if (anCursorController_3919 != null) {
@@ -92,12 +92,12 @@ class ResourceLoaderThread : Runnable {
                         }
                         if (aBoolean3908) {
                             ScreenBorderFiller.method1170((-64).toByte())
-                            if (FacingDirectionNode.aRenderer6654 != null) FacingDirectionNode.aRenderer6654!!.GA(0)
+                            if (FacingDirectionNodeStatics.aRenderer6654 != null) FacingDirectionNodeStatics.aRenderer6654!!.GA(0)
                         }
-                        anCursorController_3907.method58((aBoolean3908 || (FacingDirectionNode.aRenderer6654 != null && FacingDirectionNode.aRenderer6654!!.method3655())), -90)
+                        anCursorController_3907.method58((aBoolean3908 || (FacingDirectionNodeStatics.aRenderer6654 != null && FacingDirectionNodeStatics.aRenderer6654!!.method3655())), -90)
                     }
                     try {
-                        if (FacingDirectionNode.aRenderer6654 != null && anCursorController_3907 !is LoadingBarRenderer) FacingDirectionNode.aRenderer6654!!.method3689(57.toByte())
+                        if (FacingDirectionNodeStatics.aRenderer6654 != null && anCursorController_3907 !is LoadingBarRenderer) FacingDirectionNodeStatics.aRenderer6654!!.method3689(57.toByte())
                     } catch (clientException_: ClientException) {
                         method1242((clientException_.message + " (Recovered) " + NpcType.aClient1367!!.method81(80.toByte())), clientException_, 15004)
                         method3553(true, 114.toByte(), 0)
@@ -113,7 +113,7 @@ class ResourceLoaderThread : Runnable {
                 container.getSize()
                 if (RsaVarbitHandler.aFrame4904 === container) RsaVarbitHandler.aFrame4904!!.getInsets()
                 aBoolean3908 = false
-                if (FacingDirectionNode.aRenderer6654 != null && (anCursorController_3907 !is LoadingBarRenderer) && (aConnectionStateType_3916!!.method525(-112) < ConnectionStateType.aConnectionStateType_1041!!.method525(-127))) method3556(false)
+                if (FacingDirectionNodeStatics.aRenderer6654 != null && (anCursorController_3907 !is LoadingBarRenderer) && (aConnectionStateType_3916!!.method525(-112) < ConnectionStateType.aConnectionStateType_1041!!.method525(-127))) method3556(false)
             } catch (exception: Exception) {
                 return true
             }

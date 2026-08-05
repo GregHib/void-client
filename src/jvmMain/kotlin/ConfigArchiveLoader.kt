@@ -86,7 +86,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         return
                     }
                     if (string == "renderer") {
-                        val class365 = FacingDirectionNode.aRenderer6654!!.c()
+                        val class365 = FacingDirectionNodeStatics.aRenderer6654!!.c()
                         method94("Vendor: " + class365.anInt4476, 89)
                         method94("Name: " + (class365.aString4470), 71)
                         method94(("Version: " + (class365.anInt4475)), -110)
@@ -332,7 +332,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.startsWith("bloom")) {
-                            val bool_7_ = FacingDirectionNode.aRenderer6654!!.method3666()
+                            val bool_7_ = FacingDirectionNodeStatics.aRenderer6654!!.method3666()
                             if (WarpTextureNode.method3137(!bool_7_, (-24).toByte())) {
                                 if (bool_7_) {
                                     method94("Bloom disabled", i + -49)
@@ -382,7 +382,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.startsWith("mc")) {
-                            if (FacingDirectionNode.aRenderer6654!!.method3708()) {
+                            if (FacingDirectionNodeStatics.aRenderer6654!!.method3708()) {
                                 var i_8_ = string.substring(3).toInt()
                                 if (i_8_ >= 1) {
                                     if (i_8_ > 4) i_8_ = 4
@@ -423,7 +423,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         }
                         if (string == "renderprofile" || string == "rp") {
                             GlowPostProcessor.aBoolean2514 = !GlowPostProcessor.aBoolean2514
-                            FacingDirectionNode.aRenderer6654!!.method3647(GlowPostProcessor.aBoolean2514)
+                            FacingDirectionNodeStatics.aRenderer6654!!.method3647(GlowPostProcessor.aBoolean2514)
                             MapLabelMenuEntry.method1042(23.toByte())
                             method94(("showprofiling=" + GlowPostProcessor.aBoolean2514), 106)
                             return
@@ -556,7 +556,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         }
                         if (string.startsWith("texsize")) {
                             val i_18_ = string.substring(8).toInt()
-                            FacingDirectionNode.aRenderer6654!!.method3696(i_18_)
+                            FacingDirectionNodeStatics.aRenderer6654!!.method3696(i_18_)
                             return
                         }
                         if (string == "soundstreamcount") {
@@ -737,7 +737,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                     try {
                         i_9_ = method1781(3, -70, 1000)
                         if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -33350) == 3) {
-                            val class365 = FacingDirectionNode.aRenderer6654!!.c()
+                            val class365 = FacingDirectionNodeStatics.aRenderer6654!!.c()
                             val l = (0xffffffffffffL and class365.aLong4471)
                             val i_10_ = class365.anInt4476
                             if (i_10_ == 4318) {

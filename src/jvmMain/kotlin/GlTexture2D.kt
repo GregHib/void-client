@@ -262,7 +262,7 @@ open class GlTexture2D : GlTexture {
                     val is_60_ = IntArray(i_59_ * i_58_)
                     val pixelgrabber = PixelGrabber(image, 0, 0, i_58_, i_59_, is_60_, 0, i_58_)
                     pixelgrabber.grabPixels()
-                    return FacingDirectionNode.aRenderer6654!!.method3662(i_58_, is_60_, 94.toByte(), 0, i_58_, i_59_)
+                    return FacingDirectionNodeStatics.aRenderer6654!!.method3662(i_58_, is_60_, 94.toByte(), 0, i_58_, i_59_)
                 } catch (interruptedexception: InterruptedException) {
                     /* empty */
                 }

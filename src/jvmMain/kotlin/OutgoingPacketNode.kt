@@ -66,14 +66,14 @@ class OutgoingPacketNode : LinkedListNode() {
         @JvmStatic
         fun method3327(i: Int) {
             if (i == 1406) {
-                if (FacingDirectionNode.aRenderer6654!!.method3694()) {
-                    FacingDirectionNode.aRenderer6654!!.method3701(ParticleSystemRenderer.aCanvas3869)
+                if (FacingDirectionNodeStatics.aRenderer6654!!.method3694()) {
+                    FacingDirectionNodeStatics.aRenderer6654!!.method3701(ParticleSystemRenderer.aCanvas3869)
                     method2959(-1)
                     if (!GrayscaleNoiseTexture.aBoolean5300) {
                         val dimension = ParticleSystemRenderer.aCanvas3869!!.getSize()
-                        FacingDirectionNode.aRenderer6654!!.method3643(ParticleSystemRenderer.aCanvas3869, dimension.width, dimension.height)
+                        FacingDirectionNodeStatics.aRenderer6654!!.method3643(ParticleSystemRenderer.aCanvas3869, dimension.width, dimension.height)
                     } else method1108((-99).toByte(), ParticleSystemRenderer.aCanvas3869!!)
-                    FacingDirectionNode.aRenderer6654!!.method3677(ParticleSystemRenderer.aCanvas3869)
+                    FacingDirectionNodeStatics.aRenderer6654!!.method3677(ParticleSystemRenderer.aCanvas3869)
                 } else method3553(false, 100.toByte(), IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350))
                 anInt7123++
                 TextureCache.method3466(i + -1347)

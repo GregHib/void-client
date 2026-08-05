@@ -145,7 +145,7 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             ModelDataCache.aClass318_Sub1_Sub3Array357 = arrayOfNulls<GroundDecorEntity>(5000)
             DrawListState.anInt1477 = 0
             ActorEntity.aBooleanArrayArray1572 = (Array<BooleanArray?>((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 1)) { BooleanArray((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 1)) })
-            FacingDirectionNode.aBooleanArrayArray6656 = (Array<BooleanArray?>((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 2)) { BooleanArray((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 2)) })
+            FacingDirectionNodeStatics.aBooleanArrayArray6656 = (Array<BooleanArray?>((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 2)) { BooleanArray((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 2)) })
             RefCountedHandle.anIntArray2272 = IntArray((ActorEntity.anInt10084 + ActorEntity.anInt10084 + 2))
             PlayerSequenceSelector.aSceneObjectSpawner_1208 = PlayerSequenceSelector.aSceneObjectSpawner_1210
             if (VoronoiNoiseTextureNode.aBoolean9121) {

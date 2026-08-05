@@ -167,7 +167,7 @@ object ByteBufferStatics {
                     ClientMachineInfo.aMediaStreamClient_6601!!.method1892(i xor 0x4b.inv(), true)
                 }
             }
-            if (GroundDecorSceneEntity.method2402(i_71_, (-64).toByte()) || i_71_ == 13) FacingDirectionNode.aRenderer6654!!.method3673()
+            if (GroundDecorSceneEntity.method2402(i_71_, (-64).toByte()) || i_71_ == 13) FacingDirectionNodeStatics.aRenderer6654!!.method3673()
             WorldMapRenderer.anInt4674 = i_71_
         }
     }

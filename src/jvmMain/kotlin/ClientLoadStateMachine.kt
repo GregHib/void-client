@@ -111,8 +111,8 @@ object ClientLoadStateMachine {
                 if (LoadProgressCounters.anCursorControllerArray2447!![0]!!.method60(-19079) < 100) return 0
                 if (LoadProgressCounters.anCursorControllerArray2447!!.size > 1 && PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(86) && (LoadProgressCounters.anCursorControllerArray2447!![1]!!.method60(i + 9581) < 100)) return 0
             }
-            VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
-            method3568(FacingDirectionNode.aRenderer6654, 4)
+            VarpStore.method1311(5139, FacingDirectionNodeStatics.aRenderer6654!!)
+            method3568(FacingDirectionNodeStatics.aRenderer6654, 4)
             ByteBufferStatics.method3379(2, 1)
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1029) {
@@ -222,7 +222,7 @@ object ClientLoadStateMachine {
             } catch (throwable: Throwable) {
                 /* empty */
             }
-            FacingDirectionNode.aBufferPositionTracker_6660 = RenderConfigFactoryStatics.method1631(false)
+            FacingDirectionNodeStatics.aBufferPositionTracker_6660 = RenderConfigFactoryStatics.method1631(false)
             NoiseTextureNode.aClass348_Sub4_9264 = ClientMachineInfo(true, VorbisOggDecoder.aPrivilegedOperationWorker_8992!!)
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1037) {
@@ -297,9 +297,9 @@ object ClientLoadStateMachine {
             if (TheoraVideoStream.aBoolean9038) method3553(false, 108.toByte(), 0)
             else method3553(false, 102.toByte(), IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1829(-32350))
             ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
-            VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
-            method3568(FacingDirectionNode.aRenderer6654, i xor 0x6ff7.inv())
-            ModelHeaderCache.method1933(CameraRotationStubStatics.aJs5Archive_322, FacingDirectionNode.aRenderer6654, true)
+            VarpStore.method1311(5139, FacingDirectionNodeStatics.aRenderer6654!!)
+            method3568(FacingDirectionNodeStatics.aRenderer6654, i xor 0x6ff7.inv())
+            ModelHeaderCache.method1933(CameraRotationStubStatics.aJs5Archive_322, FacingDirectionNodeStatics.aRenderer6654, true)
             AbstractCameraTransformStatics.method901(CameraNodeListStatics.aAbstractModelRendererArray1744, 515880227)
         }
         return method3063(false)

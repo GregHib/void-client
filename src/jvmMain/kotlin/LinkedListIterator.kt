@@ -87,9 +87,9 @@ class LinkedListIterator {
                     string_4_ = TileRenderState.method2680("%40", true, "@", string_4_)
                     string_4_ = TileRenderState.method2680("%26", true, "&", string_4_)
                     string_4_ = TileRenderState.method2680("%23", true, "#", string_4_)
-                    if (FacingDirectionNode.anApplet6662 != null) {
+                    if (FacingDirectionNodeStatics.anApplet6662 != null) {
                         if (i != 15004) method1238(-69, 63, 124)
-                        val class144 = (HudTabPanel.aPrivilegedOperationWorker_2993!!.method2237(URL(FacingDirectionNode.anApplet6662!!.getCodeBase(), ("clienterror.ws?c=" + ParticleTileShape.anInt8818 + "&u=" + (if (OpenGlTerrainTile.aString8265 != null) OpenGlTerrainTile.aString8265 else NativeBufferHandle.aLong1507.toString()) + "&v1=" + PrivilegedOperationWorker.aString3782 + "&v2=" + PrivilegedOperationWorker.aString3796 + "&e=" + string_4_)), 8362))
+                        val class144 = (HudTabPanel.aPrivilegedOperationWorker_2993!!.method2237(URL(FacingDirectionNodeStatics.anApplet6662!!.getCodeBase(), ("clienterror.ws?c=" + ParticleTileShape.anInt8818 + "&u=" + (if (OpenGlTerrainTile.aString8265 != null) OpenGlTerrainTile.aString8265 else NativeBufferHandle.aLong1507.toString()) + "&v1=" + PrivilegedOperationWorker.aString3782 + "&v2=" + PrivilegedOperationWorker.aString3796 + "&e=" + string_4_)), 8362))
                         while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-123).toByte(), 1L)
                         if (class144.anInt1997 != 1) break
                         val datainputstream = class144.anObject1998 as DataInputStream?

@@ -199,7 +199,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
                 for (i_24_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_24_] = AnimatedModelRenderer.method988(RangeThresholdTextureNode.Companion.anInt9109, 1, GlCubemapLightPass.anInt7319)
                 RegionSceneLoader.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(GlCubemapLightPass.anInt7319) { ByteArray(RangeThresholdTextureNode.Companion.anInt9109) } })
                 method1717(19278, RangeThresholdTextureNode.Companion.anInt9109, GlCubemapLightPass.anInt7319, 4)
-                TerrainChunkBuilder.method873(GlCubemapLightPass.anInt7319 shr 3, 21719, FacingDirectionNode.aRenderer6654, RangeThresholdTextureNode.Companion.anInt9109 shr 3)
+                TerrainChunkBuilder.method873(GlCubemapLightPass.anInt7319 shr 3, 21719, FacingDirectionNodeStatics.aRenderer6654, RangeThresholdTextureNode.Companion.anInt9109 shr 3)
                 MenuActionNode.anInt6769 = i_23_
             }
         }

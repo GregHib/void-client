@@ -222,12 +222,12 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                 }
                 if (bool) {
-                    if (AnimationFrameTable.anInt489 != 0) Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
+                    if (AnimationFrameTable.anInt489 != 0) Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNodeStatics.aRenderer6654)
                     method3570(false)
                     InterfaceBounds.method2938(102.toByte())
                     method1772(i xor 0x41)
                     var bool_25_ = false
-                    if (FacingDirectionNode.aRenderer6654!!.method3639() && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2) {
+                    if (FacingDirectionNodeStatics.aRenderer6654!!.method3639() && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2) {
                         var i_26_ = 0
                         while ((i_26_ < DragDropController.aByteArrayArray4281!!.size)) {
                             if ((VorbisOggDecoder.aByteArrayArray8996!![i_26_] != null) || RegionMapDecoder.aByteArrayArray1887!![i_26_] != null) {
@@ -240,8 +240,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     var i_27_: Int
                     if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) i_27_ = NativeLibraryState.anIntArray168!![MenuActionNode.anInt6769]
                     else i_27_ = (CubeMapMaterialPass.anIntArray6296!![MenuActionNode.anInt6769])
-                    if (FacingDirectionNode.aRenderer6654!!.method3670()) i_27_++
-                    RenderbufferObject.method3171(FacingDirectionNode.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, i_27_, bool_25_, FacingDirectionNode.aRenderer6654!!.method3704() > 0)
+                    if (FacingDirectionNodeStatics.aRenderer6654!!.method3670()) i_27_++
+                    RenderbufferObject.method3171(FacingDirectionNodeStatics.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, i_27_, bool_25_, FacingDirectionNodeStatics.aRenderer6654!!.method3704() > 0)
                     TerrainShadowBuilderGl2.method3018(SequencedActorEntity.anInt10096)
                     if (SequencedActorEntity.anInt10096 != 0) ModelResourceBundle.method3328(WorldMapRenderer.aRSFont_4684)
                     else ModelResourceBundle.method3328(null)
@@ -278,10 +278,10 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                             RegionSceneLoader.method2193(true, (-125).toByte())
                         }
                         VarpStore.aClass237_Sub1_5067!!.method1679(0, 0, (MapTileShape.aClass237_Sub1_4197!!.anIntArrayArrayArray3122[0]!!))
-                        VarpStore.aClass237_Sub1_5067!!.method1685(FacingDirectionNode.aRenderer6654, null, 21407, null)
+                        VarpStore.aClass237_Sub1_5067!!.method1685(FacingDirectionNodeStatics.aRenderer6654, null, 21407, null)
                         DoublyLinkedNodeList.method1879(false)
                     }
-                    MapTileShape.aClass237_Sub1_4197!!.method1685(FacingDirectionNode.aRenderer6654, (if (!bool_25_) null else (VarpStore.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, TimedRecordAccessor.aCollisionMapArray7108s)
+                    MapTileShape.aClass237_Sub1_4197!!.method1685(FacingDirectionNodeStatics.aRenderer6654, (if (!bool_25_) null else (VarpStore.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, TimedRecordAccessor.aCollisionMapArray7108s)
                     if (WidgetRedrawTracker.anInt3931 == 0) {
                         RegionSceneLoader.method2193(true, (-128).toByte())
                         ObjectSpawnDecoder.method1090(GlRectangleTexture.aByteArrayArray8642, i + 65536, MapTileShape.aClass237_Sub1_4197)
@@ -293,8 +293,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     InterfaceBounds.method2938(66.toByte())
                     if (TextureDefinitionCache.anInt2964 < 96) method2271(31268)
                     RegionSceneLoader.method2193(true, (-119).toByte())
-                    MapTileShape.aClass237_Sub1_4197!!.method1680(null, (-125).toByte(), (if (!bool_25_) null else (ActorEntity.aTerrainTileArray4142!![0])), FacingDirectionNode.aRenderer6654)
-                    MapTileShape.aClass237_Sub1_4197!!.method1697(false, FacingDirectionNode.aRenderer6654, -36)
+                    MapTileShape.aClass237_Sub1_4197!!.method1680(null, (-125).toByte(), (if (!bool_25_) null else (ActorEntity.aTerrainTileArray4142!![0])), FacingDirectionNodeStatics.aRenderer6654)
+                    MapTileShape.aClass237_Sub1_4197!!.method1697(false, FacingDirectionNodeStatics.aRenderer6654, -36)
                     RegionSceneLoader.method2193(true, (-122).toByte())
                     if (bool_25_) {
                         DoublyLinkedNodeList.method1879(true)
@@ -303,8 +303,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         else ObjectSpawnDecoder.method1090((VorbisOggDecoder.aByteArrayArray8996), i + 65536, VarpStore.aClass237_Sub1_5067)
                         InterfaceBounds.method2938(73.toByte())
                         RegionSceneLoader.method2193(true, (-121).toByte())
-                        VarpStore.aClass237_Sub1_5067!!.method1680((TerrainTileShape.aTerrainTileArray8801!![0]), (-127).toByte(), null, (FacingDirectionNode.aRenderer6654))
-                        VarpStore.aClass237_Sub1_5067!!.method1697(true, FacingDirectionNode.aRenderer6654, i + -60)
+                        VarpStore.aClass237_Sub1_5067!!.method1680((TerrainTileShape.aTerrainTileArray8801!![0]), (-127).toByte(), null, (FacingDirectionNodeStatics.aRenderer6654))
+                        VarpStore.aClass237_Sub1_5067!!.method1697(true, FacingDirectionNodeStatics.aRenderer6654, i + -60)
                         RegionSceneLoader.method2193(true, (-126).toByte())
                         DoublyLinkedNodeList.method1879(false)
                     }

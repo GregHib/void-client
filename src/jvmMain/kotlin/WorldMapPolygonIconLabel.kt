@@ -90,7 +90,7 @@ class WorldMapPolygonIconLabel(screenAnchorAlignment: ScreenAnchorAlignment?, ti
             var abstractModelRenderer = ParticleProcessor.aLruByteCache_4273!!.method583(i.toLong(), -68) as AbstractModelRenderer?
             val i_11_ = -86 / ((55 - i_10_) / 51)
             if (abstractModelRenderer == null) {
-                if (ScrollTexMaterialPass.aBoolean6289) abstractModelRenderer = FacingDirectionNode.aRenderer6654!!.method3691(SpriteImage.method1512(js5Archive, i), true)
+                if (ScrollTexMaterialPass.aBoolean6289) abstractModelRenderer = FacingDirectionNodeStatics.aRenderer6654!!.method3691(SpriteImage.method1512(js5Archive, i), true)
                 else abstractModelRenderer = GlTexture2D.method1969(js5Archive.method415(73.toByte(), i)!!, -5901)
                 ParticleProcessor.aLruByteCache_4273!!.method582(abstractModelRenderer, i.toLong(), (-108).toByte())
             }

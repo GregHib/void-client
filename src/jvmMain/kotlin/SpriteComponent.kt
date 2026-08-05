@@ -9,8 +9,8 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
     public override fun method178(i: Int, bool: Boolean, i_0_: Byte, i_1_: Int) {
         if (i_0_ >= -6) method202(-4, null)
         anInt8376++
-        FacingDirectionNode.aRenderer6654!!.method3628(-2 + i, i_1_, 4 + this.aWorldMapLabel_4635!!.anInt4971, this.aWorldMapLabel_4635!!.anInt4963 + 2, ((this.aWorldMapLabel_4635 as WorldMapAreaLabel).anInt8580), 0)
-        FacingDirectionNode.aRenderer6654!!.method3628(i + -1, i_1_ + 1, this.aWorldMapLabel_4635!!.anInt4971 + 2, this.aWorldMapLabel_4635!!.anInt4963, 0, 0)
+        FacingDirectionNodeStatics.aRenderer6654!!.method3628(-2 + i, i_1_, 4 + this.aWorldMapLabel_4635!!.anInt4971, this.aWorldMapLabel_4635!!.anInt4963 + 2, ((this.aWorldMapLabel_4635 as WorldMapAreaLabel).anInt8580), 0)
+        FacingDirectionNodeStatics.aRenderer6654!!.method3628(i + -1, i_1_ + 1, this.aWorldMapLabel_4635!!.anInt4971 + 2, this.aWorldMapLabel_4635!!.anInt4963, 0, 0)
     }
 
     public override fun method8(i: Byte): Boolean {
@@ -33,10 +33,10 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
         val i_10_ = (this.method183(48) * this.aWorldMapLabel_4635!!.anInt4971 / 10000)
         val `is` = IntArray(4)
         val i_11_ = -50 % ((-20 - i) / 57)
-        FacingDirectionNode.aRenderer6654!!.K(`is`)
-        FacingDirectionNode.aRenderer6654!!.KA(i_9_, 2 + i_8_, i_9_ - -i_10_, i_8_ - -(this.aWorldMapLabel_4635!!.anInt4963))
+        FacingDirectionNodeStatics.aRenderer6654!!.K(`is`)
+        FacingDirectionNodeStatics.aRenderer6654!!.KA(i_9_, 2 + i_8_, i_9_ - -i_10_, i_8_ - -(this.aWorldMapLabel_4635!!.anInt4963))
         aAbstractModelRenderer_8366!!.method972(i_9_, 2 + i_8_, (this.aWorldMapLabel_4635!!.anInt4971), (this.aWorldMapLabel_4635!!.anInt4963))
-        FacingDirectionNode.aRenderer6654!!.KA(`is`[0], `is`[1], `is`[2], `is`[3])
+        FacingDirectionNodeStatics.aRenderer6654!!.KA(`is`[0], `is`[1], `is`[2], `is`[3])
     }
 
     companion object {

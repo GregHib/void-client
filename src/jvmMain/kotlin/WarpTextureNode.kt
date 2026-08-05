@@ -110,11 +110,11 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
         fun method3137(bool: Boolean, i: Byte): Boolean {
             var bool = bool
             anInt9426++
-            val bool_0_ = FacingDirectionNode.aRenderer6654!!.method3666()
+            val bool_0_ = FacingDirectionNodeStatics.aRenderer6654!!.method3666()
             if (i.toInt() != -24) return true
             if (!bool_0_ == !bool) return true
-            if (!bool) FacingDirectionNode.aRenderer6654!!.method3710()
-            else if (!FacingDirectionNode.aRenderer6654!!.method3671()) bool = false
+            if (!bool) FacingDirectionNodeStatics.aRenderer6654!!.method3710()
+            else if (!FacingDirectionNodeStatics.aRenderer6654!!.method3671()) bool = false
             if (bool_0_ == bool) return false
             IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub12_7243), if (bool) 1 else 0)
             GlCubeMapTexture.method243(37)

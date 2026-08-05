@@ -17,9 +17,9 @@ class SpriteRenderEntry internal constructor(widgetRedrawRegion: WidgetRedrawReg
         anInt9708++
         this.anInt9710 = (this.aWidgetRedrawRegion_9702!!.anInt4240)
         this.anInt9712 = (this.aWidgetRedrawRegion_9702!!.anInt4238)
-        if ((this.aWidgetRedrawRegion_9702!!.aAbstractCameraTransform_4252) != null) this.aWidgetRedrawRegion_9702!!.aAbstractCameraTransform_4252!!.method905((this.aSpotAnimVector_9704!!.anInt2291), (this.aSpotAnimVector_9704!!.anInt2290), (this.aSpotAnimVector_9704!!.anInt2294), FacingDirectionNode.anIntArray6666!!)
-        this.anInt9705 = FacingDirectionNode.anIntArray6666!![0]
-        this.anInt9707 = FacingDirectionNode.anIntArray6666!![i]
+        if ((this.aWidgetRedrawRegion_9702!!.aAbstractCameraTransform_4252) != null) this.aWidgetRedrawRegion_9702!!.aAbstractCameraTransform_4252!!.method905((this.aSpotAnimVector_9704!!.anInt2291), (this.aSpotAnimVector_9704!!.anInt2290), (this.aSpotAnimVector_9704!!.anInt2294), FacingDirectionNodeStatics.anIntArray6666!!)
+        this.anInt9705 = FacingDirectionNodeStatics.anIntArray6666!![0]
+        this.anInt9707 = FacingDirectionNodeStatics.anIntArray6666!![i]
     }
 
     init {

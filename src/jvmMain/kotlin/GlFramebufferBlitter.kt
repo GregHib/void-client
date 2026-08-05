@@ -350,10 +350,10 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         var anInt291: Int = 0
         fun method271(i: Int, widgetComponent: WidgetComponent, i_0_: Byte, i_1_: Int) {
             anInt278++
-            val var_aa = widgetComponent.method425(FacingDirectionNode.aRenderer6654!!, 19.toByte())
+            val var_aa = widgetComponent.method425(FacingDirectionNodeStatics.aRenderer6654!!, 19.toByte())
             if (var_aa != null) {
-                FacingDirectionNode.aRenderer6654!!.KA(i_1_, i, widgetComponent.anInt709 + i_1_, i - -widgetComponent.anInt789)
-                if (KeyboardLayoutCache.anInt3306 >= 3) FacingDirectionNode.aRenderer6654!!.A(-16777216, var_aa, i_1_, i)
+                FacingDirectionNodeStatics.aRenderer6654!!.KA(i_1_, i, widgetComponent.anInt709 + i_1_, i - -widgetComponent.anInt789)
+                if (KeyboardLayoutCache.anInt3306 >= 3) FacingDirectionNodeStatics.aRenderer6654!!.A(-16777216, var_aa, i_1_, i)
                 else NpcType.aAbstractModelRenderer_1365!!.method976((widgetComponent.anInt709.toFloat() / 2.0f + i_1_.toFloat()), i.toFloat() + widgetComponent.anInt789.toFloat() / 2.0f, 4096, (0x3fff and -CameraDistanceOptionState.aFloat3938.toInt()) shl 2, var_aa, i_1_, i)
             }
         }
@@ -376,7 +376,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         @JvmStatic
         fun method273(widgetComponent: WidgetComponent, i: Int) {
             anInt288++
-            if (widgetComponent.anInt774 == 5 && widgetComponent.anInt812 != -1) method2383(FacingDirectionNode.aRenderer6654, -2, widgetComponent)
+            if (widgetComponent.anInt774 == 5 && widgetComponent.anInt812 != -1) method2383(FacingDirectionNodeStatics.aRenderer6654, -2, widgetComponent)
         }
 
         @JvmStatic

@@ -8,7 +8,7 @@ import AbstractBloomEffect.Companion.method2755
 */
 class ClickFeedbackTask internal constructor(private val aRsaVarbitHandler_4671: RsaVarbitHandler) : Lifecycle {
     override fun method9(i: Byte, bool: Boolean) {
-        if (bool) FacingDirectionNode.aRenderer6654!!.aa(0, 0, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432, aRsaVarbitHandler_4671.anInt4899, 0)
+        if (bool) FacingDirectionNodeStatics.aRenderer6654!!.aa(0, 0, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432, aRsaVarbitHandler_4671.anInt4899, 0)
         anInt4668++
         if (i.toInt() != -49) anInt4666 = -20
     }

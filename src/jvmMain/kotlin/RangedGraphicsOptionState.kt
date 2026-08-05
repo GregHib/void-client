@@ -75,7 +75,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1761(i: Int) {
             anInt5935++
-            OutgoingPacketNode.method3324(FacingDirectionNode.aRenderer6654, 105.toByte(), GlGroundShaderPass.anInt7396.toLong())
+            OutgoingPacketNode.method3324(FacingDirectionNodeStatics.aRenderer6654, 105.toByte(), GlGroundShaderPass.anInt7396.toLong())
             if (i != 85) anInt5943 = -99
             if (RenderNodeStatics.anInt9721 != -1) ActiveMapRegion.method769(RenderNodeStatics.anInt9721, 118.toByte())
             var i_6_ = 0
@@ -90,8 +90,8 @@ class RangedGraphicsOptionState : GraphicsOptionState {
                 TerrainShadowBuilderGl3.anInt7008 = 0
                 SceneNodeDeque.method842(false)
             }
-            FacingDirectionNode.aRenderer6654!!.la()
-            SpriteRenderEntry.method3281(77.toByte(), FacingDirectionNode.aRenderer6654!!)
+            FacingDirectionNodeStatics.aRenderer6654!!.la()
+            SpriteRenderEntry.method3281(77.toByte(), FacingDirectionNodeStatics.aRenderer6654!!)
             var i_7_ = ScriptCompilerThread.method1053(3112)
             if (i_7_ == -1) i_7_ = Tooltip.anInt4458
             if (i_7_ == -1) i_7_ = StreamingResourceRequest.anInt10447

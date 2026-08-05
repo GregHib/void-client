@@ -2475,7 +2475,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 7205) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1806(108) && FacingDirectionNode.aRenderer6654!!.method3699()) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1806(108) && FacingDirectionNodeStatics.aRenderer6654!!.method3699()) 1 else 0
                     return
                 }
                 if (i == 7206) {
@@ -2487,7 +2487,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 7208) {
-                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1774(120) && FacingDirectionNode.aRenderer6654!!.method3627()) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1774(120) && FacingDirectionNodeStatics.aRenderer6654!!.method3627()) 1 else 0
                     return
                 }
                 if (i == 7209) {
@@ -2537,7 +2537,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 7305) {
                     val i_230_ = anIntArray1149!![--anInt1173]
-                    if (FacingDirectionNode.aRenderer6654!!.method3699()) {
+                    if (FacingDirectionNodeStatics.aRenderer6654!!.method3699()) {
                         anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1714(3, i_230_)
                         return
                     } else anIntArray1149!![anInt1173++] = 3
@@ -2555,7 +2555,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 7308) {
                     val i_233_ = anIntArray1149!![--anInt1173]
-                    if (FacingDirectionNode.aRenderer6654!!.method3627()) {
+                    if (FacingDirectionNodeStatics.aRenderer6654!!.method3627()) {
                         anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1714(3, i_233_)
                         return
                     } else anIntArray1149!![anInt1173++] = 3
@@ -5330,7 +5330,7 @@ object ChatCommandProcessor {
         val i_24_ = ContactEntry.method3229(-82)
         if (i_22_.toInt() == 102) {
             if (i == 3 || i_24_ == 3) bool = true
-            if (!FacingDirectionNode.aRenderer6654!!.method3695()) bool = true
+            if (!FacingDirectionNodeStatics.aRenderer6654!!.method3695()) bool = true
             GameDisplayManager.method1580((-125).toByte(), bool, i_21_, i_24_, i, i_23_)
         }
     }

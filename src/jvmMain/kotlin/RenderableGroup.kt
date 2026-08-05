@@ -10,8 +10,8 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
     private val anLifecycleArray5012: Array<Lifecycle?>
     override fun method57(i: Int) {
         anInt5004++
-        if (aRenderer5010 !== FacingDirectionNode.aRenderer6654) {
-            aRenderer5010 = FacingDirectionNode.aRenderer6654
+        if (aRenderer5010 !== FacingDirectionNodeStatics.aRenderer6654) {
+            aRenderer5010 = FacingDirectionNodeStatics.aRenderer6654
             aBoolean5011 = true
         }
         aRenderer5010!!.GA(0)

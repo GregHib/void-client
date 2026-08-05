@@ -29,7 +29,7 @@ class StringCacheNode : LinkedListNode {
             if (i != 13022) method3418(-79)
             LoadingScreenImageNodeStatics.aBoolean9498 = false
             SplashImageLoadable.anIntArray4692 = null
-            FacingDirectionNode.anIntArray6655 = null
+            FacingDirectionNodeStatics.anIntArray6655 = null
         }
 
         fun method3420(i: Int): Int {
