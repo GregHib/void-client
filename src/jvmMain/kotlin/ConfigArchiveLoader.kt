@@ -322,8 +322,8 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.equals("qa_op_test", ignoreCase = true)) {
-                            TextureCubeProvider.aBoolean6327 = true
-                            method94(("qa_op_test=" + (TextureCubeProvider.aBoolean6327)), -114)
+                            TextureCubeProviderStatics.aBoolean6327 = true
+                            method94(("qa_op_test=" + (TextureCubeProviderStatics.aBoolean6327)), -114)
                             return
                         }
                         if (string.equals("clipcomponents", ignoreCase = true)) {

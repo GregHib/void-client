@@ -222,7 +222,7 @@ class LocConfigModelBuilder {
             if (bool != true) method3560(68)
             if (!Client.method105(widgetComponent)!!.method3301(i, !bool) && widgetComponent.anObjectArray741 == null) return null
             if (widgetComponent.aStringArray833 == null || (i >= widgetComponent.aStringArray833!!.size) || widgetComponent.aStringArray833!![i] == null || widgetComponent.aStringArray833!![i]!!.trim { it <= ' ' }.length == 0) {
-                if (TextureCubeProvider.aBoolean6327) return "Hidden-" + i
+                if (TextureCubeProviderStatics.aBoolean6327) return "Hidden-" + i
                 return null
             }
             return widgetComponent.aStringArray833!![i]

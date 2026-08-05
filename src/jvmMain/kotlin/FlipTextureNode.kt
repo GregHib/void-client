@@ -19,7 +19,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
         anInt9141++
         val `is` = this.aImageFrameCache_7033!!.method2557(-119, i)!!
         if (this.aImageFrameCache_7033!!.aBoolean4035) {
-            val is_1_ = this.method3039(120.toByte(), (if (aBoolean9147) -i + TextureCubeProvider.anInt6325 else i), 0)!!
+            val is_1_ = this.method3039(120.toByte(), (if (aBoolean9147) -i + TextureCubeProviderStatics.anInt6325 else i), 0)!!
             val is_2_ = is_1_[0]!!
             val is_3_ = is_1_[1]!!
             val is_4_ = is_1_[2]!!
@@ -78,7 +78,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
         if (i_75_ != 255) aClass348_Sub42_Sub12_9144 = null
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val is_76_ = this.method3048((if (aBoolean9147) TextureCubeProvider.anInt6325 - i else i), i_75_ + 633706082, 0)!!
+            val is_76_ = this.method3048((if (aBoolean9147) TextureCubeProviderStatics.anInt6325 - i else i), i_75_ + 633706082, 0)!!
             if (aBoolean9140) {
                 var i_77_ = 0
                 while ((i_77_ < PerlinNoiseTextureNode.Companion.anInt9139)) {
@@ -136,7 +136,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                     i_27_ = SceneTilePlaneManager.method260(bool_15_)
                                 }
                                 var i_28_ = class46.anInt696
-                                if (TextureCubeProvider.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127
+                                if (TextureCubeProviderStatics.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127
                                 if (class46 == RegionSceneLoader.aWidgetComponent_3701) {
                                     if (i_16_ != -1412584499 && ((WidgetRedrawTracker.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
                                         SpriteLoadValidator.anInt4792 = i_10_

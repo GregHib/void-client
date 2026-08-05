@@ -83,7 +83,7 @@ class TwoStateOptionState : GraphicsOptionState {
             } else widgetComponent.anInt789 = widgetComponent.anInt728
             if (widgetComponent.aByte778.toInt() == 4) widgetComponent.anInt709 = (widgetComponent.anInt789 * widgetComponent.anInt710 / widgetComponent.anInt775)
             if (widgetComponent.aByte724.toInt() == 4) widgetComponent.anInt789 = (widgetComponent.anInt775 * widgetComponent.anInt709 / widgetComponent.anInt710)
-            if (TextureCubeProvider.aBoolean6327 && (Client.method105(widgetComponent)!!.anInt7098 != 0 || widgetComponent.anInt774 == 0)) {
+            if (TextureCubeProviderStatics.aBoolean6327 && (Client.method105(widgetComponent)!!.anInt7098 != 0 || widgetComponent.anInt774 == 0)) {
                 if (widgetComponent.anInt789 < 5 && widgetComponent.anInt709 < 5) {
                     widgetComponent.anInt789 = 5
                     widgetComponent.anInt709 = 5

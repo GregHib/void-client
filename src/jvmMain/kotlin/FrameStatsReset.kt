@@ -896,7 +896,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Direct3dModel.anInt5422 = 0
             FrameBufferObject.anInt4893 = 0
             OpenGlRenderer.anInt7655 = 0
-            TextureCubeProvider.anInt6326 = 0
+            TextureCubeProviderStatics.anInt6326 = 0
             WorldMapIconLabel.anInt8598 = 0
             GlRenderDevice.anInt9816 = 0
             VarbitDefLoader.anInt2593 = 0

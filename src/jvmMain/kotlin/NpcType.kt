@@ -792,7 +792,7 @@ class NpcType {
                     for (i_32_ in 0..<i) PerlinNoiseTextureNode.anIntArray6035!![i_32_] = (i_32_ shl 12) / i
                 } else PerlinNoiseTextureNode.anIntArray6035 = PerlinNoiseTextureNode.anIntArray6432
                 FixedFunctionMaterialPass.anInt6212 = i
-                TextureCubeProvider.anInt6325 = -1 + i
+                TextureCubeProviderStatics.anInt6325 = -1 + i
             }
         }
 

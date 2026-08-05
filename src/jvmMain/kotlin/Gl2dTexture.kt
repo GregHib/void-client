@@ -211,7 +211,7 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
                     else widgetComponent.anInt750 = ((i_4_ * widgetComponent.anInt739 shr 14) + (-widgetComponent.anInt789 + i_4_) / 2)
                 } else widgetComponent.anInt750 = widgetComponent.anInt739 * i_4_ shr 14
             } else widgetComponent.anInt750 = widgetComponent.anInt739
-            if (TextureCubeProvider.aBoolean6327 && (Client.method105(widgetComponent)!!.anInt7098 != 0 || widgetComponent.anInt774 == 0)) {
+            if (TextureCubeProviderStatics.aBoolean6327 && (Client.method105(widgetComponent)!!.anInt7098 != 0 || widgetComponent.anInt774 == 0)) {
                 if (widgetComponent.anInt750 < 0) widgetComponent.anInt750 = 0
                 else if (i_4_ < (widgetComponent.anInt789 + widgetComponent.anInt750)) widgetComponent.anInt750 = i_4_ - widgetComponent.anInt789
                 if (widgetComponent.anInt800 >= 0) {

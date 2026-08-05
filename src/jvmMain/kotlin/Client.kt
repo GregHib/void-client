@@ -213,7 +213,7 @@ import HuffmanCodec.Companion.method2228
 import PixelBlender.method2251
 import CircleRasterizerObject.method2254
 import CubemapTextureGlSource.Companion.method2265
-import TextureCubeProvider.Companion.method2268
+import TextureCubeProviderStatics.method2268
 import CubemapTextureImplSource.Companion.method2272
 import CacheStateResetter.method176
 import HeightMapNoise.method2281
@@ -681,10 +681,10 @@ class Client : GameAppletFrame() {
         GlTexture1D.aInputTracker_8552 = method2941(ParticleSystemRenderer.aCanvas3869, 0, true)
         //        try {
         if (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 != null) {
-            TextureCubeProvider.aBufferedRandomAccessFile_6328 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
+            TextureCubeProviderStatics.aBufferedRandomAccessFile_6328 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
             for (i_3_ in 0..36) MinimapRenderer.aBufferedRandomAccessFileArray1579!![i_3_] = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDiskArray3795!![i_3_]!!), 6000, 0)
             SceneObjectAnimator.aBufferedRandomAccessFile_3075 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
-            LocTypeConfig.aIndexedFileCache_3568 = IndexedFileCache(255, TextureCubeProvider.aBufferedRandomAccessFile_6328, SceneObjectAnimator.aBufferedRandomAccessFile_3075, 500000)
+            LocTypeConfig.aIndexedFileCache_3568 = IndexedFileCache(255, TextureCubeProviderStatics.aBufferedRandomAccessFile_6328, SceneObjectAnimator.aBufferedRandomAccessFile_3075, 500000)
             BufferedFileReader.aBufferedRandomAccessFile_4538 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779 = null
             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 = null
@@ -1272,7 +1272,7 @@ class Client : GameAppletFrame() {
             SceneObjectSpawner.aHostPingThread_1286 = null
         }
         try {
-            TextureCubeProvider.aBufferedRandomAccessFile_6328!!.method790((-62).toByte())
+            TextureCubeProviderStatics.aBufferedRandomAccessFile_6328!!.method790((-62).toByte())
             for (i_6_ in i..36) MinimapRenderer.aBufferedRandomAccessFileArray1579!![i_6_]!!.method790(118.toByte())
             SceneObjectAnimator.aBufferedRandomAccessFile_3075!!.method790((-84).toByte())
             BufferedFileReader.aBufferedRandomAccessFile_4538!!.method790(80.toByte())
@@ -2503,7 +2503,7 @@ class Client : GameAppletFrame() {
                                 if (class46.aWidgetComponentArray798 != null) Companion.method107(class46.aWidgetComponentArray798!!, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)
                                 val class348_sub41 = ((MinimapSpriteRenderer.aHashtable_4915!!.method3480(class46.anInt830.toLong(), -6008)) as RegionSceneShifter?)
                                 if (class348_sub41 != null) {
-                                    if ((Client.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) && (class348_sub41.anInt7053) == 0 && !ScrollbarComponent.aBoolean8335 && bool && !TextureCubeProvider.aBoolean6327) method661(105.toByte())
+                                    if ((Client.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) && (class348_sub41.anInt7053) == 0 && !ScrollbarComponent.aBoolean8335 && bool && !TextureCubeProviderStatics.aBoolean6327) method661(105.toByte())
                                     method1373(class348_sub41.anInt7050, i_43_, i_45_, i_47_, i_39_, i_38_, -1391, i_40_, i_48_, i_44_, i_41_, i_46_)
                                 }
                             }
@@ -2537,7 +2537,7 @@ class Client : GameAppletFrame() {
         }
 
         fun method111(widgetComponent: WidgetComponent): Boolean {
-            if (TextureCubeProvider.aBoolean6327) {
+            if (TextureCubeProviderStatics.aBoolean6327) {
                 if (method105(widgetComponent)!!.anInt7098 != 0) return false
                 if (widgetComponent.anInt774 == 0) return false
             }
