@@ -68,7 +68,7 @@ object FacingDirectionNodeStatics {
         anIntArray6666 = null
         aShortArray6663 = null
         anIntArray6655 = null
-        if (i > -123) Companion.method2776((-65).toByte(), -91)
+        if (i > -123) method2776((-65).toByte(), -91)
         aBufferPositionTracker_6660 = null
         aBooleanArrayArray6656 = null
         anApplet6662 = null
