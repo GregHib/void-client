@@ -3797,7 +3797,7 @@ object ChatCommandProcessor {
                 if (i == 3104) {
                     val string = aStringArray1152!![--anInt1170]!!
                     var i_304_ = 0
-                    if (method468(string, 73)) i_304_ = RegionSceneShifter.method3156(true, string)
+                    if (method468(string, 73)) i_304_ = RegionSceneShifterStatics.method3156(true, string)
                     anInt1163++
                     val class348_sub47 = method2148((LongKeyNode.aFontMetaRef_6764), (TheoraVideoStream.aIsaacCipher_9029), -112)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(102.toByte(), i_304_)

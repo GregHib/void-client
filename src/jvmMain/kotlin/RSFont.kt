@@ -51,7 +51,7 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
                                                     if (`is` != null) i_11_ = `is`[i_6_]
                                                     else i_11_ = 0
                                                     i_6_++
-                                                    val i_12_ = (RegionSceneShifter.method3156(true, (string_9_.substring(4))))
+                                                    val i_12_ = (RegionSceneShifterStatics.method3156(true, (string_9_.substring(4))))
                                                     val class105 = abstractModelRenderers!![i_12_]!!
                                                     val i_13_ = (if (is_0_ == null) class105.method980() else is_0_[i_12_])
                                                     class105.method964(i + i_10_, (-i_13_ + (aFontDefinition_4063!!.anInt1992) + (i_2_ - -i_11_)), 1, 0, 1)
@@ -360,7 +360,7 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
                                         else {
                                             if (string_111_.startsWith("img=")) {
                                                 try {
-                                                    val i_112_ = (RegionSceneShifter.method3156(true, (string_111_.substring(4))))
+                                                    val i_112_ = (RegionSceneShifterStatics.method3156(true, (string_111_.substring(4))))
                                                     val class105 = abstractModelRenderers!![i_112_]!!
                                                     val i_113_ = (if (`is` == null) class105.method980() else `is`[i_112_])
                                                     if (((ParamMap.anInt9492) and 0xffffff.inv()) != -16777216) class105.method964(i_106_, (-i_113_ + (aFontDefinition_4063!!.anInt1992) + i_103_), 0, (0xffffff or (0xffffff.inv() and (ParamMap.anInt9492))), 1)

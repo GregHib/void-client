@@ -299,7 +299,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         if (string!!.startsWith("setba")) {
                             if (string.length < 6) method94("Invalid buildarea value", i + -36)
                             else {
-                                val i_6_ = (RegionSceneShifter.method3156(true, string.substring(6)))
+                                val i_6_ = (RegionSceneShifterStatics.method3156(true, string.substring(6)))
                                 if (i_6_ < 0 || (LinkedListNodeStatics.method2710(-126, TextureDefinitionCache.anInt2964) < i_6_)) method94("Invalid buildarea value", 53)
                                 else {
                                     IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i_6_)
@@ -315,7 +315,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         if (string.startsWith("rect_debug")) {
                             if (string.length < 10) method94("Invalid rect_debug value", -94)
                             else {
-                                NativeRenderer.anInt8045 = RegionSceneShifter.method3156(true, string.substring(10).trim { it <= ' ' })
+                                NativeRenderer.anInt8045 = RegionSceneShifterStatics.method3156(true, string.substring(10).trim { it <= ' ' })
                                 method94(("rect_debug=" + NativeRenderer.anInt8045), -124)
                                 return
                             }
@@ -595,7 +595,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             val i_20_ = string.indexOf(' ')
                             if (i_20_ < 0) method94("Syntax: ortho <n>", 66)
                             else {
-                                val i_21_ = (RegionSceneShifter.method3156(true, string.substring(1 + i_20_)))
+                                val i_21_ = (RegionSceneShifterStatics.method3156(true, string.substring(1 + i_20_)))
                                 IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_21_)
                                 method243(37)
                                 RenderNodeStatics.aBoolean9719 = false
@@ -611,7 +611,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         if (string.startsWith("orthozoom ")) {
                             if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(i + -32271) == 0) method94("enable ortho mode first (use 'ortho <n>')", i + 182)
                             else {
-                                val i_22_ = (RegionSceneShifter.method3156(true, string.substring(string.indexOf(' ') - -1)))
+                                val i_22_ = (RegionSceneShifterStatics.method3156(true, string.substring(string.indexOf(' ') - -1)))
                                 LocalPlayerState.anInt1911 = i_22_
                                 method94(("orthozoom=" + LocalPlayerState.anInt1911), 68)
                                 return
@@ -619,7 +619,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.startsWith("orthotilesize ")) {
-                            val i_23_ = (RegionSceneShifter.method3156(true, string.substring(1 + string.indexOf(' '))))
+                            val i_23_ = (RegionSceneShifterStatics.method3156(true, string.substring(1 + string.indexOf(' '))))
                             Js5Archive.anInt666 = i_23_
                             PerlinTextureProvider.anInt5812 = Js5Archive.anInt666
                             method94("ortho tile size=" + i_23_, -70)
@@ -673,12 +673,12 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             ChatScriptListNode.method3189(0, strings)
                         }
                         if (string.startsWith("zoom ")) {
-                            val i_24_ = (RegionSceneShifter.method3156(true, string.substring(5))).toShort()
+                            val i_24_ = (RegionSceneShifterStatics.method3156(true, string.substring(5))).toShort()
                             if (i_24_ > 0) TextureLoaderUtil.aShort3992 = i_24_
                             return
                         }
                         if (string.startsWith("fps ") && (NpcAnimationResolver.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271)) {
-                            LocalizedTextTriple.method2222((RegionSceneShifter.method3156(true, string.substring(4))), (-124).toByte())
+                            LocalizedTextTriple.method2222((RegionSceneShifterStatics.method3156(true, string.substring(4))), (-124).toByte())
                             return
                         }
                     } catch (exception: Exception) {

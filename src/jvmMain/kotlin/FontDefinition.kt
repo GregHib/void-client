@@ -39,7 +39,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
                                             if (string_7_ != "reg") {
                                                 if (string_7_.startsWith("img=") && abstractModelRenderers != null) {
                                                     try {
-                                                        val i_8_ = (RegionSceneShifter.method3156(true, (string_7_.substring(4))))
+                                                        val i_8_ = (RegionSceneShifterStatics.method3156(true, (string_7_.substring(4))))
                                                         i_2_ = -1
                                                         i_3_ += (abstractModelRenderers[i_8_]!!.method966())
                                                         if (i_3_ > i) return (string_5_ + "...")
@@ -135,7 +135,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
                                             else {
                                                 if (string_20_.startsWith("img=") && abstractModelRenderers != null) {
                                                     try {
-                                                        val i_21_ = (RegionSceneShifter.method3156(true, (string_20_.substring(4))))
+                                                        val i_21_ = (RegionSceneShifterStatics.method3156(true, (string_20_.substring(4))))
                                                         i_16_ = -1
                                                         i_17_ += (abstractModelRenderers[i_21_]!!.method966())
                                                     } catch (exception: Exception) {
@@ -260,7 +260,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
                             i_32_ = 174
                         } else if (string_39_.startsWith("img=") && abstractModelRenderers != null) {
                             try {
-                                val i_40_ = (RegionSceneShifter.method3156(true, (string_39_.substring(4))))
+                                val i_40_ = (RegionSceneShifterStatics.method3156(true, (string_39_.substring(4))))
                                 i_32_ = -1
                                 i_37_ += abstractModelRenderers[i_40_]!!.method966()
                             } catch (exception: Exception) {

@@ -208,7 +208,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                             i_22_ = 10
                             i_21_ = 10
                         }
-                        bool = bool and RegionSceneShifter.method3154(GlCubemapLightPass.anInt7319, i_21_, (RangeThresholdTextureNode.anInt9109), i_22_, `is`, 39.toByte())
+                        bool = bool and RegionSceneShifterStatics.method3154(GlCubemapLightPass.anInt7319, i_21_, (RangeThresholdTextureNode.anInt9109), i_22_, `is`, 39.toByte())
                     }
                     `is` = VorbisOggDecoder.aByteArrayArray8996!![i_20_]
                     if (`is` != null) {
@@ -218,7 +218,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                             i_24_ = 10
                             i_23_ = 10
                         }
-                        bool = bool and RegionSceneShifter.method3154(GlCubemapLightPass.anInt7319, i_23_, (RangeThresholdTextureNode.anInt9109), i_24_, `is`, 39.toByte())
+                        bool = bool and RegionSceneShifterStatics.method3154(GlCubemapLightPass.anInt7319, i_23_, (RangeThresholdTextureNode.anInt9109), i_24_, `is`, 39.toByte())
                     }
                 }
                 if (bool) {

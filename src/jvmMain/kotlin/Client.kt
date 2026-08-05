@@ -336,7 +336,7 @@ import VoronoiNoiseTextureNode.Companion.method3059
 import DisplaceTextureNode.Companion.method3062
 import FlipTextureNode.Companion.method3066
 import EdgeDetectTextureNode.Companion.method3071
-import RegionSceneShifter.Companion.method3155
+import RegionSceneShifterStatics.method3155
 import ParamMap.Companion.method3165
 import ParameterizedText.Companion.method3217
 import CharCodeMap.Companion.method3220
@@ -5292,7 +5292,7 @@ class Client : GameAppletFrame() {
         var anInt6975: Int = 0
         fun method3027(i: Byte) {
             anInt6975++
-            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && CompiledScriptCache.anInt4372 != ParticleSystemState.anInt2204) RegionSceneShifter.Companion.method3157(FileIoUtil.anInt4095, 123.toByte(), Renderer.anInt4581, 11, false)
+            if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && CompiledScriptCache.anInt4372 != ParticleSystemState.anInt2204) RegionSceneShifterStatics.method3157(FileIoUtil.anInt4095, 123.toByte(), Renderer.anInt4581, 11, false)
             else {
                 StringValueNode.method3319(FacingDirectionNodeStatics.aRenderer6654, (-121).toByte())
                 if (TrackedGroundDecor.anInt10395 != CompiledScriptCache.anInt4372) EdgeDetectTextureNode.method3072((-96).toByte())

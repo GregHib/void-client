@@ -73,7 +73,7 @@ object AbstractCameraTransformStatics {
         val i_11_: Int
         if (WorldMapRenderer.anInt4674 != 3) i_11_ = 8
         else i_11_ = 4
-        RegionSceneShifter.method3157(i_5_, 123.toByte(), i_4_, i_11_, false)
+        RegionSceneShifterStatics.method3157(i_5_, 123.toByte(), i_4_, i_11_, false)
     }
     var anIntArray4031: IntArray? = null
 

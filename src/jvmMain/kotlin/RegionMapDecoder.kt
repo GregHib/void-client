@@ -100,7 +100,7 @@ object RegionMapDecoder {
                 i_11_++
             }
         }
-        RegionSceneShifter.method3157(i_1_, 124.toByte(), i_2_, 11, bool)
+        RegionSceneShifterStatics.method3157(i_1_, 124.toByte(), i_2_, 11, bool)
     }
 
     fun method854(i: Byte) {

@@ -6,23 +6,23 @@ object OSInfo {
     @JvmStatic
     fun method323(js5Archive: Js5Archive?, privilegedOperationWorker: PrivilegedOperationWorker?, i: Byte) {
         try {
-            RegionSceneShifter.aString7048 = ""
+            RegionSceneShifterStatics.aString7048 = ""
             GrayscaleNoiseTexture.aPrivilegedOperationWorker_5297 = privilegedOperationWorker
             anInt410++
             ParticleSystemState.aJs5Archive_2208 = js5Archive
             if (!aString6877!!.startsWith("win")) {
                 if (!aString6877!!.startsWith("linux")) {
-                    if (aString6877!!.startsWith("mac")) RegionSceneShifter.aString7048 += "macos/"
-                } else RegionSceneShifter.aString7048 += "linux/"
-            } else RegionSceneShifter.aString7048 += "windows/"
+                    if (aString6877!!.startsWith("mac")) RegionSceneShifterStatics.aString7048 += "macos/"
+                } else RegionSceneShifterStatics.aString7048 += "linux/"
+            } else RegionSceneShifterStatics.aString7048 += "windows/"
             if (!GrayscaleNoiseTexture.aPrivilegedOperationWorker_5297!!.aBoolean3794) {
                 if (!aString6876!!.startsWith("amd64") && !aString6876!!.startsWith("x86_64")) {
                     if (!aString6876!!.startsWith("i386") && !aString6876!!.startsWith("i486") && !aString6876!!.startsWith("i586") && !aString6876!!.startsWith("x86")) {
-                        if (!aString6876!!.startsWith("ppc")) RegionSceneShifter.aString7048 += "universal/"
-                        else RegionSceneShifter.aString7048 += "ppc/"
-                    } else RegionSceneShifter.aString7048 += "x86/"
-                } else RegionSceneShifter.aString7048 += "x86_64/"
-            } else RegionSceneShifter.aString7048 += "msjava/"
+                        if (!aString6876!!.startsWith("ppc")) RegionSceneShifterStatics.aString7048 += "universal/"
+                        else RegionSceneShifterStatics.aString7048 += "ppc/"
+                    } else RegionSceneShifterStatics.aString7048 += "x86/"
+                } else RegionSceneShifterStatics.aString7048 += "x86_64/"
+            } else RegionSceneShifterStatics.aString7048 += "msjava/"
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("hw.A(" + (if (js5Archive != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
         }

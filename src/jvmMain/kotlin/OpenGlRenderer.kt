@@ -1655,8 +1655,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         val strings = TurbulenceTextureNode.method3113(' ', true, string.replace('.', ' '))
         if (strings.size >= 2) {
             try {
-                val i_184_ = RegionSceneShifter.method3156(true, strings[0]!!)
-                val i_185_ = RegionSceneShifter.method3156(true, strings[1]!!)
+                val i_184_ = RegionSceneShifterStatics.method3156(true, strings[0]!!)
+                val i_185_ = RegionSceneShifterStatics.method3156(true, strings[1]!!)
                 anInt7789 = i_184_ * 10 - -i_185_
             } catch (numberformatexception: NumberFormatException) {
                 i_183_ = i_183_ or 0x4
@@ -3048,7 +3048,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         string = string.substring(2)
                                     }
                                     if (string.length >= 4 && (MinimapPolygonDrawer.method468(string.substring(0, 4), 47))) {
-                                        i_100_ = (RegionSceneShifter.method3156(true, string.substring(0, 4)))
+                                        i_100_ = (RegionSceneShifterStatics.method3156(true, string.substring(0, 4)))
                                         break
                                     }
                                 }

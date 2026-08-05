@@ -186,7 +186,7 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
             if (CollisionMapAccessor.aHashtable3548!!.containsKey(string)) return 100
             val string_52_ = CameraOrModelTransform.method2651(string, 3)
             if (string_52_ == null) return -1
-            val string_53_ = RegionSceneShifter.aString7048 + string_52_
+            val string_53_ = RegionSceneShifterStatics.aString7048 + string_52_
             if (!ParticleSystemState.aJs5Archive_2208!!.method422("", string_53_, -88)) return -1
             if (!ParticleSystemState.aJs5Archive_2208!!.method413(i xor 0x1d48, string_53_)) return ParticleSystemState.aJs5Archive_2208!!.method397(string_53_, 0)
             val `is` = ParticleSystemState.aJs5Archive_2208!!.method391(string_53_, "", -29832)

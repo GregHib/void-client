@@ -149,7 +149,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
                     i_22_++
                 }
             }
-            RegionSceneShifter.method3157(i_16_, 123.toByte(), i_17_, 11, bool)
+            RegionSceneShifterStatics.method3157(i_16_, 123.toByte(), i_17_, 11, bool)
         }
 
     }

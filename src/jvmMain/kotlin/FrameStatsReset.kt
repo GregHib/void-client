@@ -166,7 +166,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MapRegionLoaderThread.anInt4203 = 0
             MinimapPositionState.anInt3836 = 0
             OpenGlModel.anInt5562 = 0
-            RegionSceneShifter.anInt7047 = 0
+            RegionSceneShifterStatics.anInt7047 = 0
             LoadingScreenState.anInt2628 = 0
             HeapDiagnosticsHolder.anInt2253 = 0
             PcmStreamBuffer.anInt8865 = 0
@@ -2344,7 +2344,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SynthVoiceGroup.anInt8859 = 0
             MapArchiveSource.anInt2355 = 0
             NullRenderPass.anInt7277 = 0
-            RegionSceneShifter.anInt7049 = 0
+            RegionSceneShifterStatics.anInt7049 = 0
             CacheLruCache.anInt3879 = 0
             GlRenderDevice.anInt9889 = 0
             MenuActionNode.anInt6778 = 0
@@ -2625,7 +2625,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OggBitstreamDecoder.anInt6870 = 0
             TexGenMaterialPass.anInt6249 = 0
             NativeRenderer.anInt8044 = 0
-            RegionSceneShifter.anInt7051 = 0
+            RegionSceneShifterStatics.anInt7051 = 0
             NativeIndexBuffer.anInt4704 = 0
             Js5Archive.anInt651 = 0
             GlTexture.anInt4852 = 0
@@ -3444,7 +3444,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NamedIdRecord.anInt4468 = 0
             LoadingScreenImageNodeStatics.anInt9508 = 0
             NativeRenderer.anInt7912 = 0
-            RegionSceneShifter.anInt7055 = 0
+            RegionSceneShifterStatics.anInt7055 = 0
             FlipTextureNode.anInt9146 = 0
             ConfigVarProgress.anInt4820 = 0
             DelegatingRenderCanvas.anInt68 = 0

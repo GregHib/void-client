@@ -157,7 +157,7 @@ class LongKeyNode : LinkedListNode {
                                         if (i_5_ <= i_29_ && i_6_ <= i_30_ && method536(i_30_, false, i_29_, i, i_24_)) {
                                             var i_31_ = i_24_
                                             if (method802(i_30_, i_29_, true)) i_31_--
-                                            if (i_31_ >= 0) RegionSceneShifter.Companion.method3159(i_14_, ((-i_28_ + (TextureLoadExceptionStatics.anInt4600)) * 4 + i_19_ + -4), false, i_31_, i_30_, i_29_, var_renderer, 4 * i_27_ + i_18_, i_13_)
+                                            if (i_31_ >= 0) RegionSceneShifterStatics.method3159(i_14_, ((-i_28_ + (TextureLoadExceptionStatics.anInt4600)) * 4 + i_19_ + -4), false, i_31_, i_30_, i_29_, var_renderer, 4 * i_27_ + i_18_, i_13_)
                                         }
                                     }
                                 }
