@@ -154,7 +154,7 @@ object ClientLoadStateMachine {
         if (ConnectionStateType.aConnectionStateType_1031 == TimedTileQueueEntry.aConnectionStateType_9660) {
             var i_8_ = 0
             for (i_9_ in 0..36) {
-                if (MinimapRectClipper.aClass314_Sub1Array223!![i_9_] != null) i_8_ += (MinimapRectClipper.aClass314_Sub1Array223!![i_9_]!!.method2349(i + 28661) * NpcAnimationResolver.anIntArray164!![i_9_] / 100)
+                if (MinimapRectClipper.aClass314_Sub1Array223!![i_9_] != null) i_8_ += (MinimapRectClipper.aClass314_Sub1Array223!![i_9_]!!.method2349(i + 28661) * NpcAnimationResolverStatics.anIntArray164!![i_9_] / 100)
             }
             if (i_8_ != 100) {
                 if (LocDefinitionCache.anInt3435 < 0) LocDefinitionCache.anInt3435 = i_8_

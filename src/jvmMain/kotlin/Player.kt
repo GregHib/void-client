@@ -144,7 +144,7 @@ class Player : ProjectedGroundDecor() {
         this.anInt10540 = class348_sub49.readByte(-89).toInt()
         this.anInt10522 = class348_sub49.readByte(i.toInt() xor 0x1.inv()).toInt()
         this.aBoolean10551 = class348_sub49.readByte(i + -199).toInt() == 1
-        if (NpcAnimationResolver.aNamedIdRecord_165 == OggCacheStream.aNamedIdRecord_5271 && AsyncTaskHandle.anInt2581 >= 2) this.aBoolean10551 = false
+        if (NpcAnimationResolverStatics.aNamedIdRecord_165 == OggCacheStream.aNamedIdRecord_5271 && AsyncTaskHandle.anInt2581 >= 2) this.aBoolean10551 = false
         this.anInt10542 = 0
         var i_14_ = -1
         val `is` = IntArray(12)
@@ -483,7 +483,7 @@ class Player : ProjectedGroundDecor() {
         val i_75_ = MapArchiveSource.method2201(2121)
         if (TextureDefinitionCache.anInt2964 < 96 && i_75_ > 50) CubemapTextureImplSource.method2271(31268)
         val i_76_ = 3 % ((63 - i_69_) / 47)
-        if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165 && i_75_ < 50) {
+        if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolverStatics.aNamedIdRecord_165 && i_75_ < 50) {
             val i_77_: Int
             i_77_ = -i_75_ + 50
             while (ScrollingWidgetComponentNode.anInt8388 < i_77_) {
@@ -494,7 +494,7 @@ class Player : ProjectedGroundDecor() {
                 ScrollingWidgetComponentNode.anInt8388--
                 CacheLruCache.aByteArrayArray3882!![ScrollingWidgetComponentNode.anInt8388] = null
             }
-        } else if (NpcAnimationResolver.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271) {
+        } else if (NpcAnimationResolverStatics.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271) {
             ScrollingWidgetComponentNode.anInt8388 = 0
             CacheLruCache.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
         }

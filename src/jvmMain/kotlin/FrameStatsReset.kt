@@ -449,7 +449,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WallSceneEntity.anInt9964 = 0
             CubeMapMaterialPass.anInt6303 = 0
             CompiledScriptCache.anInt4370 = 0
-            NpcAnimationResolver.anInt163 = 0
+            NpcAnimationResolverStatics.anInt163 = 0
             ParticleEmitterNode.anInt175 = 0
             NativeRenderer.anInt8066 = 0
             OggMediaStream.anInt978 = 0

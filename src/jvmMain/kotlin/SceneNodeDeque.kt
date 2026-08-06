@@ -398,11 +398,11 @@ class SceneNodeDeque {
                                 IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 if (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 == 65535) IndexedSprite.aServerConnectionInfo_5199!!.anInt2143 = -1
                                 IndexedSprite.aServerConnectionInfo_5199!!.aString2147 = class348_sub49_sub2.method3371(-13487)
-                                if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) {
+                                if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolverStatics.aNamedIdRecord_165) {
                                     IndexedSprite.aServerConnectionInfo_5199!!.anInt2138 = (50000 + (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143))
                                     IndexedSprite.aServerConnectionInfo_5199!!.anInt2148 = (40000 + (IndexedSprite.aServerConnectionInfo_5199!!.anInt2143))
                                 }
-                                if (NpcAnimationResolver.aNamedIdRecord_165 != SceneObjectSpawner.Companion.aNamedIdRecord_1279 && ((CacheStateResetter.aServerConnectionInfo_125!!.method1264(94.toByte(), GlElementArrayBuffer.aServerConnectionInfo_4839)) || (CacheStateResetter.aServerConnectionInfo_125!!.method1264(112.toByte(), (DirectionalLightTextureNode.aServerConnectionInfo_9443))))) SpriteRenderEntry.method3283(114)
+                                if (NpcAnimationResolverStatics.aNamedIdRecord_165 != SceneObjectSpawner.Companion.aNamedIdRecord_1279 && ((CacheStateResetter.aServerConnectionInfo_125!!.method1264(94.toByte(), GlElementArrayBuffer.aServerConnectionInfo_4839)) || (CacheStateResetter.aServerConnectionInfo_125!!.method1264(112.toByte(), (DirectionalLightTextureNode.aServerConnectionInfo_9443))))) SpriteRenderEntry.method3283(114)
                             }
                             if ((!RangeThresholdTextureNode.aBoolean9103 || RsaVarbitHandler.aBoolean4903) && !FrameBufferObject.aBoolean4888) {
                                 try {
@@ -423,7 +423,7 @@ class SceneNodeDeque {
                                     }
                                 }
                             }
-                            if (NpcAnimationResolver.aNamedIdRecord_165 == OggCacheStream.aNamedIdRecord_5271) {
+                            if (NpcAnimationResolverStatics.aNamedIdRecord_165 == OggCacheStream.aNamedIdRecord_5271) {
                                 try {
                                     JavaScriptBridge.method1617(125.toByte(), JagGlToolkitFactory.anApplet1530, "loggedin")
                                 } catch (throwable: Throwable) {

@@ -138,9 +138,9 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
             if (bool != false) aLong6276 = -88L
             anInt6271++
             var string = "www"
-            if (FixedFunctionWaterPass.aNamedIdRecord_7361 != NpcAnimationResolver.aNamedIdRecord_165) {
-                if (NpcAnimationResolver.aNamedIdRecord_165 != SpriteArchiveLoader.aNamedIdRecord_382) {
-                    if (NpcAnimationResolver.aNamedIdRecord_165 == GroundItemRenderState.aNamedIdRecord_1657) string = "www-wtwip"
+            if (FixedFunctionWaterPass.aNamedIdRecord_7361 != NpcAnimationResolverStatics.aNamedIdRecord_165) {
+                if (NpcAnimationResolverStatics.aNamedIdRecord_165 != SpriteArchiveLoader.aNamedIdRecord_382) {
+                    if (NpcAnimationResolverStatics.aNamedIdRecord_165 == GroundItemRenderState.aNamedIdRecord_1657) string = "www-wtwip"
                 } else string = "www-wtqa"
             } else string = "www-wtrc"
             var string_2_ = ""

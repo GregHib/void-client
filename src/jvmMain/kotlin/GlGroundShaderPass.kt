@@ -206,7 +206,7 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
                             ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 - NpcSpawnDecoder.anInt1524) / 2
                             GameDisplayManager.anInt10432 = OpenGlRenderer.anInt7666
                         } else method2158(56.toByte())
-                        if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) {
+                        if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolverStatics.aNamedIdRecord_165) {
                             if (LocTypeDefinition.anInt4017 < 1024 && GameDisplayManager.anInt10432 < 768) {
                                 /* empty */
                             }

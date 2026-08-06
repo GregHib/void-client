@@ -1,4 +1,4 @@
-import NpcAnimationResolver.Companion.method214
+import NpcAnimationResolverStatics.method214
 import ProjectileFactory.Companion.aBoolean2895
 import WorldMapElement.Companion.method181
 

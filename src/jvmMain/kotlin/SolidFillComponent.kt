@@ -148,8 +148,8 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
                     class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(126.toByte()) as? ContactList?)
                 }
                 i_6_ += 8
-                i_7_ = 21 + 16 * NpcAnimationResolver.anInt166
-                WorldMapSceneSoftware.anInt5819 = (if (PlayerSequenceSelector.aBoolean1211) 26 else 22) + 16 * NpcAnimationResolver.anInt166
+                i_7_ = 21 + 16 * NpcAnimationResolverStatics.anInt166
+                WorldMapSceneSoftware.anInt5819 = (if (PlayerSequenceSelector.aBoolean1211) 26 else 22) + 16 * NpcAnimationResolverStatics.anInt166
             } else {
                 var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as? ContactEntry?)
                 while (class348_sub42_sub12 != null) {

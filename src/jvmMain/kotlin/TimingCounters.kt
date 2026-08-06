@@ -25,7 +25,7 @@ object TimingCounters {
                 else if ((class225.anInt2919 == class348_sub9.aNpc_6691!!.anInt10268) || (class225.anInt2920 == class348_sub9.aNpc_6691!!.anInt10268) || (class225.anInt2949 == class348_sub9.aNpc_6691!!.anInt10268) || (class348_sub9.aNpc_6691!!.anInt10268 == class225.anInt2914)) i_4_ = 2
                 else if ((class348_sub9.aNpc_6691!!.anInt10268 == class225.anInt2940) || (class225.anInt2924 == class348_sub9.aNpc_6691!!.anInt10268) || (class225.anInt2947 == class348_sub9.aNpc_6691!!.anInt10268) || (class348_sub9.aNpc_6691!!.anInt10268 == class225.anInt2958)) i_4_ = 3
                 if (class348_sub9.anInt6675 != i_4_) {
-                    val i_5_ = NpcAnimationResolver.method214((class348_sub9.aNpc_6691!!), -1)
+                    val i_5_ = NpcAnimationResolverStatics.method214((class348_sub9.aNpc_6691!!), -1)
                     var class79 = (class348_sub9.aNpc_6691!!.aNpcType_10505)
                     if (class79!!.anIntArray1377 != null) class79 = class79.method794((ProjectedGroundDecor.aVarpStore_10209!!), -1)
                     if (class79 == null || i_5_ == -1) {

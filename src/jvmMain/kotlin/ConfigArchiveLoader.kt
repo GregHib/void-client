@@ -102,7 +102,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                     method94((LocalizedText.aLocalizedText_3485!!.method2063(ChatCommandProcessor.anInt6967, 544)!!), -99)
                     return
                 }
-                if (NpcAnimationResolver.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271 || AsyncTaskHandle.anInt2581 >= 2) {
+                if (NpcAnimationResolverStatics.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271 || AsyncTaskHandle.anInt2581 >= 2) {
                     if (string.equals("errortest", ignoreCase = true)) throw RuntimeException()
                     if (string == "nativememerror") throw OutOfMemoryError("native(MPR")
                     try {
@@ -677,7 +677,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             if (i_24_ > 0) TextureLoaderUtil.aShort3992 = i_24_
                             return
                         }
-                        if (string.startsWith("fps ") && (NpcAnimationResolver.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271)) {
+                        if (string.startsWith("fps ") && (NpcAnimationResolverStatics.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271)) {
                             LocalizedTextTriple.method2222((RegionSceneShifterStatics.method3156(true, string.substring(4))), (-124).toByte())
                             return
                         }

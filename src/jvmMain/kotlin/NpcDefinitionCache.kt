@@ -167,7 +167,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                             if (ChatScriptListNode.aBoolean9535) {
                                 var i_17_ = -1
                                 var i_18_ = -1
-                                for (i_19_ in 0..<NpcAnimationResolver.anInt166) {
+                                for (i_19_ in 0..<NpcAnimationResolverStatics.anInt166) {
                                     if (PlayerSequenceSelector.aBoolean1211) {
                                         val i_21_ = (16 * i_19_ + 33 + ProceduralTextureGraph.anInt9532)
                                         if ((i_16_ > -13 + i_21_) && i_21_ + 4 > i_16_) {
@@ -234,7 +234,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     } else if (GlArrayBufferObject.anInt4717 <= i_23_ && (i_23_ <= GlArrayBufferObject.anInt4717 - -SceneTileBounds.anInt1117) && i_24_ >= ProceduralTextureGraph.anInt9532 && ((ProceduralTextureGraph.anInt9532 - -WorldMapSceneSoftware.anInt5819) >= i_24_)) {
                         if (ChatScriptListNode.aBoolean9535) {
                             var i_30_ = -1
-                            for (i_31_ in 0..<NpcAnimationResolver.anInt166) {
+                            for (i_31_ in 0..<NpcAnimationResolverStatics.anInt166) {
                                 if (PlayerSequenceSelector.aBoolean1211) {
                                     val i_33_ = (ProceduralTextureGraph.anInt9532 + 33 - -(i_31_ * 16))
                                     if (i_24_ > -13 + i_33_ && i_33_ + 4 > i_24_) {
