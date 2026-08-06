@@ -23,11 +23,11 @@ object NpcSpawnDecoder {
 
     fun method859(i: Int) {
         anInt1527++
-        val i_0_ = StringCacheNode.aByteArrayArray7212!!.size
+        val i_0_ = StringCacheNodeStatics.aByteArrayArray7212!!.size
         if (i < -125) {
             var i_1_ = 0
             while (i_0_ > i_1_) {
-                if (StringCacheNode.aByteArrayArray7212!![i_1_] != null) {
+                if (StringCacheNodeStatics.aByteArrayArray7212!![i_1_] != null) {
                     var i_2_ = -1
                     for (i_3_ in 0..<ProjectileConfigUtil.anInt388) {
                         if (LoadingBarRenderer.anIntArray4250!![i_3_] == NullOggStream.anIntArray9042!![i_1_]) {
@@ -39,9 +39,9 @@ object NpcSpawnDecoder {
                         LoadingBarRenderer.anIntArray4250!![ProjectileConfigUtil.anInt388] = NullOggStream.anIntArray9042!![i_1_]
                         i_2_ = ProjectileConfigUtil.anInt388++
                     }
-                    val class348_sub49 = ByteBuffer(StringCacheNode.aByteArrayArray7212!![i_1_])
+                    val class348_sub49 = ByteBuffer(StringCacheNodeStatics.aByteArrayArray7212!![i_1_])
                     var i_4_ = 0
-                    while (class348_sub49.anInt7197 < StringCacheNode.aByteArrayArray7212!![i_1_]!!.size) {
+                    while (class348_sub49.anInt7197 < StringCacheNodeStatics.aByteArrayArray7212!![i_1_]!!.size) {
                         if (i_4_ >= 511 || ModelDefinitionLoader.anInt2057 >= 1023) break
                         val i_5_ = i_2_ or (i_4_++ shl 6)
                         val i_6_ = class348_sub49.readUnsignedShort(842397944)

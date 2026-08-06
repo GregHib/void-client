@@ -101,7 +101,7 @@ object ClientLoadStateMachine {
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1026) LoadingScreenImageNodeStatics.method3178(SoftwareSpriteRaster.aJs5Archive_1627, -81, method184(1084489728), ScrollTexMaterialPass.aJs5Archive_6277)
         if (ConnectionStateType.aConnectionStateType_1027 == TimedTileQueueEntry.aConnectionStateType_9660) {
-            val i_5_ = StringCacheNode.method3420(0)
+            val i_5_ = StringCacheNodeStatics.method3420(0)
             val i_6_ = method3256(2)
             if (i_6_ > i_5_) return 100 * i_5_ / i_6_
         }

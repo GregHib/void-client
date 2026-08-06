@@ -992,7 +992,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlslEnvMaterialPass.anInt6265 = 0
             NativeRenderer.anInt7938 = 0
             GlRenderDevice.anInt9813 = 0
-            StringCacheNode.anInt7214 = 0
+            StringCacheNodeStatics.anInt7214 = 0
             SequencedGroundDecor.anInt10042 = 0
             IsaacCipher.anInt1300 = 0
             ModelVertexColorBuffer.anInt6576 = 0
@@ -3349,7 +3349,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ParticleEmitterFactoryStatics.anInt3178 = 0
             WidgetTextConfig.anInt509 = 0
             SequencedActorEntity.anInt10110 = 0
-            StringCacheNode.anInt7210 = 0
+            StringCacheNodeStatics.anInt7210 = 0
             GlRenderDevice.anInt9862 = 0
             ScrollingNoiseTexture.anInt8658 = 0
             ParticleSystemRenderer.anInt3868 = 0

@@ -67,7 +67,7 @@ class WidgetRedrawTracker {
                 CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                 InboundPacketHeader.aInboundPacketHeader_3133 = null
                 InboundPacketHeader.aInboundPacketHeader_3145 = null
-                StringCacheNode.anInt7213 = 0
+                StringCacheNodeStatics.anInt7213 = 0
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 RegionSceneLoader.anInt3699 = 0
                 method3153(0)

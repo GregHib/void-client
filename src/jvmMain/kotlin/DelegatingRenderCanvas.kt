@@ -178,9 +178,9 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         LocDefinitionCache.anInt3441++
                     }
                 }
-                if (AbstractCameraTransformStatics.anIntArray4031 != null && StringCacheNode.aByteArrayArray7212!![i_19_] == null && AbstractCameraTransformStatics.anIntArray4031!![i_19_] != -1) {
-                    StringCacheNode.aByteArrayArray7212!![i_19_] = (AbstractCameraTransformStatics.aJs5Archive_7382!!.method393(AbstractCameraTransformStatics.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
-                    if (StringCacheNode.aByteArrayArray7212!![i_19_] == null) {
+                if (AbstractCameraTransformStatics.anIntArray4031 != null && StringCacheNodeStatics.aByteArrayArray7212!![i_19_] == null && AbstractCameraTransformStatics.anIntArray4031!![i_19_] != -1) {
+                    StringCacheNodeStatics.aByteArrayArray7212!![i_19_] = (AbstractCameraTransformStatics.aJs5Archive_7382!!.method393(AbstractCameraTransformStatics.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
+                    if (StringCacheNodeStatics.aByteArrayArray7212!![i_19_] == null) {
                         bool = false
                         LocDefinitionCache.anInt3441++
                     }
@@ -285,7 +285,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (WidgetRedrawTracker.anInt3931 == 0) {
                         RegionSceneLoader.method2193(true, (-128).toByte())
                         ObjectSpawnDecoder.method1090(GlRectangleTexture.aByteArrayArray8642, i + 65536, MapTileShape.aClass237_Sub1_4197)
-                        if (StringCacheNode.aByteArrayArray7212 != null) NpcSpawnDecoder.method859(i xor 0x7e.inv())
+                        if (StringCacheNodeStatics.aByteArrayArray7212 != null) NpcSpawnDecoder.method859(i xor 0x7e.inv())
                     } else {
                         RegionSceneLoader.method2193(true, (-121).toByte())
                         ProjectionCameraTransform.method944(i + -8212, GlRectangleTexture.aByteArrayArray8642, MapTileShape.aClass237_Sub1_4197)
@@ -308,7 +308,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         RegionSceneLoader.method2193(true, (-126).toByte())
                         DoublyLinkedNodeList.method1879(false)
                     }
-                    StringCacheNode.method3419(13022)
+                    StringCacheNodeStatics.method3419(13022)
                     var i_29_ = MapTileShape.aClass237_Sub1_4197!!.anInt5824
                     if (i_29_ > CompiledScriptCache.anInt4372) i_29_ = CompiledScriptCache.anInt4372
                     if (i_29_ < -1 + CompiledScriptCache.anInt4372) i_29_ = CompiledScriptCache.anInt4372 - 1

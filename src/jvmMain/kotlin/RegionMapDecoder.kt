@@ -62,7 +62,7 @@ object RegionMapDecoder {
         NativeSprite.anIntArray5192 = IntArray(i_7_)
         NullOggStream.anIntArray9042 = IntArray(i_7_)
         LocalizedTextTriple.anIntArray3759 = IntArray(i_7_)
-        StringCacheNode.aByteArrayArray7212 = null
+        StringCacheNodeStatics.aByteArrayArray7212 = null
         VorbisOggDecoder.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_7_)
         RegionMapDecoder.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_7_)
         GlRectangleTexture.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_7_)

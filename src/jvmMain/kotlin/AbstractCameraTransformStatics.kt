@@ -27,7 +27,7 @@ object AbstractCameraTransformStatics {
         if (i.toInt() != -49) anInt1597 = 115
         var i_6_ = 18
         AbstractCameraTransformStatics.anIntArray4031 = IntArray(i_6_)
-        StringCacheNode.aByteArrayArray7212 = arrayOfNulls<ByteArray>(i_6_)
+        StringCacheNodeStatics.aByteArrayArray7212 = arrayOfNulls<ByteArray>(i_6_)
         BrightnessOptionState.anIntArrayArray5894 = Array<IntArray?>(i_6_) { IntArray(4) }
         NativeSprite.anIntArray5192 = IntArray(i_6_)
         GlRectangleTexture.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_6_)

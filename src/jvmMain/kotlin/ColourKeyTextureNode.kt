@@ -129,7 +129,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             NativeSprite.anIntArray5192 = IntArray(i_18_)
             GlRectangleTexture.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_18_)
             GameAppletFrame.anIntArray38 = IntArray(i_18_)
-            StringCacheNode.aByteArrayArray7212 = null
+            StringCacheNodeStatics.aByteArrayArray7212 = null
             RenderNodeStatics.anIntArray9724 = IntArray(i_18_)
             AbstractCameraTransformStatics.anIntArray4031 = null
             DragDropControllerStatics.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_18_)

@@ -162,7 +162,7 @@ class ParameterizedText : HashLinkedListNode() {
             method2739(0)
             RegionSceneLoader.anInt3699 = 0
             InboundPacketHeader.aInboundPacketHeader_9456 = null
-            StringCacheNode.anInt7213 = 0
+            StringCacheNodeStatics.anInt7213 = 0
             InboundPacketHeader.aInboundPacketHeader_3145 = null
             CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
             val i_3_ = -122 % ((i - 13) / 45)

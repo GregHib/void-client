@@ -364,7 +364,7 @@ import FloatBuffer.Companion.method3403
 import CipheredPacketBuffer.Companion.method3414
 import AbstractBloomEffect.Companion.method2757
 import AbstractBloomEffect.Companion.method2762
-import StringCacheNode.Companion.method3418
+import StringCacheNodeStatics.method3418
 import DisplaySettingsConfig.Companion.method3430
 import GlBloomEffect.Companion.method2765
 import RegionTileNode.Companion.method2773
@@ -2683,7 +2683,7 @@ class Client : GameAppletFrame() {
                 if (GroundItemRenderState.aBoolean1661) {
                     if (!Client.aAbstractGameSocket_9165!!.method1705(1, 119)) return false
                     Client.aAbstractGameSocket_9165!!.method1701(1, 0, 6.toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                    StringCacheNode.anInt7213 = 0
+                    StringCacheNodeStatics.anInt7213 = 0
                     GroundItemRenderState.aBoolean1661 = false
                     MinimapRectClipper.anInt221++
                 }
@@ -2692,7 +2692,7 @@ class Client : GameAppletFrame() {
                     if (!Client.aAbstractGameSocket_9165!!.method1705(1, 119)) return false
                     Client.aAbstractGameSocket_9165!!.method1701(1, 1, 26.toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                     MinimapRectClipper.anInt221++
-                    StringCacheNode.anInt7213 = 0
+                    StringCacheNodeStatics.anInt7213 = 0
                 }
                 GroundItemRenderState.aBoolean1661 = true
                 val class114s = Gl3dTexture.method248(-11271)
@@ -2709,7 +2709,7 @@ class Client : GameAppletFrame() {
                 Client.aAbstractGameSocket_9165!!.method1701(1, 0, (-118).toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                 RadialTextureNode.anInt9341 = 0xff and (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                 MinimapRectClipper.anInt221++
-                StringCacheNode.anInt7213 = 0
+                StringCacheNodeStatics.anInt7213 = 0
             }
             if (RadialTextureNode.anInt9341 == -2) {
                 if (!Client.aAbstractGameSocket_9165!!.method1705(2, 120)) return false
@@ -2717,14 +2717,14 @@ class Client : GameAppletFrame() {
                 CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                 RadialTextureNode.anInt9341 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 MinimapRectClipper.anInt221 += 2
-                StringCacheNode.anInt7213 = 0
+                StringCacheNodeStatics.anInt7213 = 0
             }
             if (RadialTextureNode.anInt9341 > 0) {
                 if (!Client.aAbstractGameSocket_9165!!.method1705(RadialTextureNode.anInt9341, 104)) return false
                 CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                 Client.aAbstractGameSocket_9165!!.method1701(RadialTextureNode.anInt9341, 0, (-123).toByte(), (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                 MinimapRectClipper.anInt221 += RadialTextureNode.anInt9341
-                StringCacheNode.anInt7213 = 0
+                StringCacheNodeStatics.anInt7213 = 0
             }
             InboundPacketHeader.aInboundPacketHeader_9456 = InboundPacketHeader.aInboundPacketHeader_3145
             InboundPacketHeader.aInboundPacketHeader_3145 = InboundPacketHeader.aInboundPacketHeader_3133
@@ -4913,8 +4913,8 @@ class Client : GameAppletFrame() {
                         Client.method3175(55.toByte())
                         method362(i + -11335)
                         method1501(-123)
-                        StringCacheNode.anInt7213++
-                        if (StringCacheNode.anInt7213 > 750) method2049(83)
+                        StringCacheNodeStatics.anInt7213++
+                        if (StringCacheNodeStatics.anInt7213 > 750) method2049(83)
                         else {
                             method349(i + -6692)
                             method3150(true)
