@@ -19,7 +19,7 @@ class SceneTileBounds {
         fun method601(i: Byte) {
             InboundPacketHeader.aInboundPacketHeader_1120 = null
             InboundPacketHeader.aInboundPacketHeader_1123 = null
-            if (i.toInt() != -85) Companion.method601((-70).toByte())
+            if (i.toInt() != -85) method601((-70).toByte())
         }
     }
 }
