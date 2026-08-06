@@ -119,7 +119,7 @@ object ClientLoadStateMachine {
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1030) {
             CameraRotationStubStatics.aJs5Archive_322 = WorldMapTextLabel.method3571(false, 8, (-23).toByte(), 1)
-            ShortKeyNode.aJs5Archive_6909 = WorldMapTextLabel.method3571(false, 0, (-23).toByte(), 1)
+            ShortKeyNodeStatics.aJs5Archive_6909 = WorldMapTextLabel.method3571(false, 0, (-23).toByte(), 1)
             TextureGenerator.aJs5Archive_2490 = WorldMapTextLabel.method3571(false, 1, (-23).toByte(), 1)
             DirectionUtil.aJs5Archive_1541 = WorldMapTextLabel.method3571(false, 2, (-23).toByte(), 1)
             ClientLoadStateMachine.aJs5Archive_6980 = WorldMapTextLabel.method3571(false, 3, (-23).toByte(), 1)
@@ -195,7 +195,7 @@ object ClientLoadStateMachine {
             MapAreaDefinition.aBufferedMessageQueue_2529 = BufferedMessageQueue(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, FloatGridStatics.aJs5Archive_4975, RasterSprite.aJs5Archive_5207)
             ClientExceptionStatics.aModelHeaderCache_112 = ModelHeaderCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, ProjectionCameraTransform.aEmoteDefCache_5764, ScriptOpcodeHolder.aJs5Archive_2306, RasterSprite.aJs5Archive_5207)
             TheoraVideoStream.aLocTypeDefLoader_9036 = LocTypeDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            ParticleEmitterNode.aWidgetCache_191 = WidgetCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, OpenGlRenderNode.aJs5Archive_10480, ShortKeyNode.aJs5Archive_6909, TextureGenerator.aJs5Archive_2490)
+            ParticleEmitterNode.aWidgetCache_191 = WidgetCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, OpenGlRenderNode.aJs5Archive_10480, ShortKeyNodeStatics.aJs5Archive_6909, TextureGenerator.aJs5Archive_2490)
             Client.aMapSceneCache_413 = MapSceneCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             HoverActionEntry.aSpriteStore_1813 = SpriteStore(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             ConstantColourTextureNode.aMapElementDefinitionCache_9245 = MapElementDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, BufferedRandomAccessFile.aJs5Archive_1322, RasterSprite.aJs5Archive_5207)
@@ -213,7 +213,7 @@ object ClientLoadStateMachine {
             ProjectedGroundDecor.aVarpStore_10209 = VarpStore()
             method3038(-1)
             TextureLoadExceptionStatics.method4011(i + 29684, ClientLoadStateMachine.aJs5Archive_3146)
-            ShortKeyNode.method3004(RasterSprite.aJs5Archive_5207, false, SourceRowTextureNode.aRenderConfig9113)
+            ShortKeyNodeStatics.method3004(RasterSprite.aJs5Archive_5207, false, SourceRowTextureNode.aRenderConfig9113)
             val huffmanCodec = HuffmanCodec(SceneTilePlaneManager.aJs5Archive_233!!.method391("huffman", "", -29832)!!)
             method3896(huffmanCodec, 13.toByte())
             try {

@@ -162,7 +162,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             HudTabPanel.anInt2990 = 0
             StringValueNode.anInt7114 = 0
             ScrollbarComponent.anInt8337 = 0
-            ShortKeyNode.anInt6910 = 0
+            ShortKeyNodeStatics.anInt6910 = 0
             MapRegionLoaderThread.anInt4203 = 0
             MinimapPositionState.anInt3836 = 0
             OpenGlModel.anInt5562 = 0

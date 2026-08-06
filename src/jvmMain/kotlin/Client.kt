@@ -296,7 +296,7 @@ import NullOggStream.Companion.method2981
 import KaraokeSubtitleStream.Companion.method2990
 import ImageBoxBlurScroller.Companion.method2996
 import MultiFieldRecord.Companion.method3001
-import ShortKeyNode.Companion.method3003
+import ShortKeyNodeStatics.method3003
 import ModelVertexColorBuffer.Companion.method2738
 import AbstractFrameBufferSurface.Companion.method3010
 import ProducerImageSurface.Companion.method3016
