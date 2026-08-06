@@ -131,7 +131,7 @@ object ByteBufferStatics {
                 DirectionUtil.aJs5Archive_1541!!.anInt634 = 2
                 VideoAdChecker.aJs5Archive_3183!!.anInt634 = 2
                 AnimationFrameState.aJs5Archive_1538!!.anInt634 = 2
-                FloatGrid.aJs5Archive_4975!!.anInt634 = 2
+                FloatGridStatics.aJs5Archive_4975!!.anInt634 = 2
                 ScriptOpcodeHolder.aJs5Archive_2306!!.anInt634 = 2
                 OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 2
                 BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 2
@@ -146,7 +146,7 @@ object ByteBufferStatics {
                 DirectionUtil.aJs5Archive_1541!!.anInt634 = 1
                 VideoAdChecker.aJs5Archive_3183!!.anInt634 = 1
                 AnimationFrameState.aJs5Archive_1538!!.anInt634 = 1
-                FloatGrid.aJs5Archive_4975!!.anInt634 = 1
+                FloatGridStatics.aJs5Archive_4975!!.anInt634 = 1
                 ScriptOpcodeHolder.aJs5Archive_2306!!.anInt634 = 1
                 OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 1
                 BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 1

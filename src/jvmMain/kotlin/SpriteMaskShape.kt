@@ -515,7 +515,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 LinkedListNodeStatics.anInt4292 = 0
                                 JagGlToolkitFactory.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
-                                FloatGrid.anInt4979++
+                                FloatGridStatics.anInt4979++
                                 FogOptionState.anInt6048 = 2
                                 val class348_sub47 = (method2148(ParticleEmitterListNode.aOutgoingPacketHeader_9684, TheoraVideoStream.aIsaacCipher_9029, -126))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(81, i_77_)

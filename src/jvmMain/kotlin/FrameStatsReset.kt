@@ -3124,7 +3124,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RadialTextureNode.anInt9337 = 0
             TurbulenceTextureNode.anInt9321 = 0
             ParticleAmountCache.anInt2840 = 0
-            FloatGrid.anInt4979 = 0
+            FloatGridStatics.anInt4979 = 0
             NativeTerrainTile.anInt8297 = 0
             ParticleEmitterDefExt.anInt8576 = 0
             DoublyLinkedNodeList.anInt3159 = 0
@@ -3800,7 +3800,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7959 = 0
             GroundDecorRenderer.anInt3634 = 0
             ProjectionCameraTransform.anInt5771 = 0
-            FloatGrid.anInt4977 = 0
+            FloatGridStatics.anInt4977 = 0
             WidgetComponentNode.anInt4657 = 0
             LocConfigModelBuilder.anInt4511 = 0
             NativeRenderer.anInt7934 = 0

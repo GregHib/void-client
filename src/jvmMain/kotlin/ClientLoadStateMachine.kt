@@ -135,7 +135,7 @@ object ClientLoadStateMachine {
             HoverActionEntry.aJs5Archive_1815 = WorldMapTextLabel.method3571(false, 15, (-23).toByte(), 1)
             AnimationFrameState.aJs5Archive_1538 = WorldMapTextLabel.method3571(false, 16, (-23).toByte(), 1)
             VideoAdChecker.aJs5Archive_3183 = WorldMapTextLabel.method3571(false, 17, (-23).toByte(), 1)
-            FloatGrid.aJs5Archive_4975 = WorldMapTextLabel.method3571(false, 18, (-23).toByte(), 1)
+            FloatGridStatics.aJs5Archive_4975 = WorldMapTextLabel.method3571(false, 18, (-23).toByte(), 1)
             ScriptOpcodeHolder.aJs5Archive_2306 = WorldMapTextLabel.method3571(false, 19, (-23).toByte(), 1)
             OpenGlRenderNode.aJs5Archive_10480 = WorldMapTextLabel.method3571(false, 20, (-23).toByte(), 1)
             BufferedRandomAccessFile.aJs5Archive_1322 = WorldMapTextLabel.method3571(false, 21, (-23).toByte(), 1)
@@ -192,7 +192,7 @@ object ClientLoadStateMachine {
             GradientLookupEffect.aSeqDefinitionCache_9195 = SeqDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, AnimationFrameState.aJs5Archive_1538, RasterSprite.aJs5Archive_5207)
             TheoraVideoStream.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)
             ModelOrSpriteHolderStatics.aTextureDefinitionLoader_117 = TextureDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)
-            MapAreaDefinition.aBufferedMessageQueue_2529 = BufferedMessageQueue(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, FloatGrid.aJs5Archive_4975, RasterSprite.aJs5Archive_5207)
+            MapAreaDefinition.aBufferedMessageQueue_2529 = BufferedMessageQueue(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, FloatGridStatics.aJs5Archive_4975, RasterSprite.aJs5Archive_5207)
             ClientExceptionStatics.aModelHeaderCache_112 = ModelHeaderCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, ProjectionCameraTransform.aEmoteDefCache_5764, ScriptOpcodeHolder.aJs5Archive_2306, RasterSprite.aJs5Archive_5207)
             TheoraVideoStream.aLocTypeDefLoader_9036 = LocTypeDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             ParticleEmitterNode.aWidgetCache_191 = WidgetCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, OpenGlRenderNode.aJs5Archive_10480, ShortKeyNode.aJs5Archive_6909, TextureGenerator.aJs5Archive_2490)
@@ -257,7 +257,7 @@ object ClientLoadStateMachine {
             MapElementDefinitionCache.aBoolean3988 = true
             VideoAdChecker.aJs5Archive_3183!!.anInt634 = 2
             AnimationFrameState.aJs5Archive_1538!!.anInt634 = 2
-            FloatGrid.aJs5Archive_4975!!.anInt634 = 2
+            FloatGridStatics.aJs5Archive_4975!!.anInt634 = 2
             ScriptOpcodeHolder.aJs5Archive_2306!!.anInt634 = 2
             OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 2
             BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 2

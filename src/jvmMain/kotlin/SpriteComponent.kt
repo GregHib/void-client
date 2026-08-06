@@ -110,7 +110,7 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-128).toByte(), 0)
                                     InterfaceComponentGroup.method3243(126, class348_sub47)
                                 } else if (i == 5) {
-                                    FloatGrid.anInt4979++
+                                    FloatGridStatics.anInt4979++
                                     val class348_sub47 = (method2148(ParticleEmitterListNode.aOutgoingPacketHeader_9684, TheoraVideoStream.aIsaacCipher_9029, -83))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(81, `is`[i_7_])
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)

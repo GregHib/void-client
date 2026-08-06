@@ -385,7 +385,7 @@ class SceneNodeDeque {
                                 FrameBufferObject.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 VarpStore.anInt5065 = class348_sub49_sub2.readInt((-126).toByte())
                                 ChatScriptListNode.aLinkedQueueNode_9536 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2232(116, VarpStore.anInt5065)
-                                FloatGrid.anInt4976 = class348_sub49_sub2.readUnsignedByte(255)
+                                FloatGridStatics.anInt4976 = class348_sub49_sub2.readUnsignedByte(255)
                                 FrameStatsReset.anInt5797 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 anInt6632 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 BufferToggleState.aBoolean3706 = class348_sub49_sub2.readUnsignedByte(255) == 1

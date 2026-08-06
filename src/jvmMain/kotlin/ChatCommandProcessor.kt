@@ -2343,7 +2343,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 6906) {
-                    anIntArray1149!![anInt1173++] = FloatGrid.anInt4976
+                    anIntArray1149!![anInt1173++] = FloatGridStatics.anInt4976
                     return
                 }
                 if (i == 6907) {

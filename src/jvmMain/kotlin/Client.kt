@@ -1117,7 +1117,7 @@ class Client : GameAppletFrame() {
         method3106(97.toByte())
         method3123(i + -108)
         method2996()
-        FloatGrid.method1584((-64).toByte())
+        FloatGridStatics.method1584((-64).toByte())
         method167(19612)
         method208(0.toByte())
         method3016(65280)
@@ -1421,7 +1421,7 @@ class Client : GameAppletFrame() {
         DisplaySettingsConfig.anInt7267++
         method198(null, false, -1, -1)
         method1343(-1, null, 1, -1)
-        FloatGrid.method1583((-73).toByte())
+        FloatGridStatics.method1583((-73).toByte())
         ResourceLoaderThread.anInt3918++
         var i_96_ = 0
         while (TerrainShadowBuilderGl2.anInt6930 > i_96_) {
@@ -5065,7 +5065,7 @@ class Client : GameAppletFrame() {
                             method198(null, false, -1, -1)
                             method1343(-1, null, 1, -1)
                             if (!RenderNodeStatics.aBoolean9722) Tooltip.anInt4458 = -1
-                            FloatGrid.method1583((-73).toByte())
+                            FloatGridStatics.method1583((-73).toByte())
                             ResourceLoaderThread.anInt3918++
                             if (WorldMapScene.aBoolean3103) {
                                 NodeDequeHolder.anInt1568++
