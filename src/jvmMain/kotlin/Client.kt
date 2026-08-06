@@ -379,7 +379,7 @@ import TextureCache.Companion.method3468
 import CompiledScriptCache.Companion.method3473
 import SceneCollisionEntry.Companion.method3487
 import ParticleGeometry.Companion.method3488
-import TextureAtlasState.Companion.method3491
+import TextureAtlasStateStatics.method3491
 import AnimationFrameTable.method355
 import CollisionMap.Companion.method3502
 import CollisionMap.Companion.method3508

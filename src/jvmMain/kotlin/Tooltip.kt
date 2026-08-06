@@ -1,6 +1,6 @@
 import MinimapRectClipper.method226
 import SceneTilePlaneManager.method260
-import TextureAtlasState.Companion.method3490
+import TextureAtlasStateStatics.method3490
 
 /* Class362 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

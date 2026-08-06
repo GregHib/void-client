@@ -208,20 +208,20 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                         if (sceneCollisionEntries[i_26_] != null && (0x8 and (GraphicsOptionState.aByteArrayArrayArray6962!![i_26_]!![i_19_]!![i_22_]).toInt()) == 0) {
                             if (bool_24_ && sceneCollisionEntries[i_26_]!![i_19_]!![i_22_] != null) {
                                 if ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406) != null) {
-                                    val i_27_ = TextureAtlasState.method3492(i_20_, 226)
+                                    val i_27_ = TextureAtlasStateStatics.method3492(i_20_, 226)
                                     if (((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_27_) || ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_27_ == (sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt()))) {
                                         i_26_++
                                         continue
                                     }
                                     if (i_21_ != 0) {
-                                        val i_28_ = TextureAtlasState.method3492(i_21_, 226)
+                                        val i_28_ = TextureAtlasStateStatics.method3492(i_21_, 226)
                                         if (((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_28_) || ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt() == i_28_))) {
                                             i_26_++
                                             continue
                                         }
                                     }
                                     if (i_23_ != 0) {
-                                        val i_29_ = TextureAtlasState.method3492(i_23_, 226)
+                                        val i_29_ = TextureAtlasStateStatics.method3492(i_23_, 226)
                                         if ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_29_ || ((sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_29_ == (sceneCollisionEntries[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt()))) {
                                             i_26_++
                                             continue

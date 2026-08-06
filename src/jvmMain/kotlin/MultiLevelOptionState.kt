@@ -92,7 +92,7 @@ class MultiLevelOptionState : GraphicsOptionState {
         fun method1851(i: Byte) {
             anInt6152++
             for (i_11_ in 0..4) MinimapStateReset.aBooleanArray2374!![i_11_] = false
-            TextureAtlasState.anInt4424 = CompositeRgbNoiseTexture.anInt8685
+            TextureAtlasStateStatics.anInt4424 = CompositeRgbNoiseTexture.anInt8685
             DataHolderStatics.anInt3662 = MinimapAreaMarkerNode.anInt9701
             SpriteComponent.anInt8368 = ParticleSystemRenderer.anInt3855
             FloatBuffer.anInt9751 = GlGroundShaderPass.anInt7396
