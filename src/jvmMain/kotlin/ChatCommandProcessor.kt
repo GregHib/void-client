@@ -1873,7 +1873,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 6147) {
-                anIntArray1149!![anInt1173++] = if (NoiseTextureNode.aClass348_Sub4_9264!!.anInt6609 < 512 || TheoraVideoStream.aBoolean9038 || NpcSummaryDefinition.aBoolean1952) 1 else 0
+                anIntArray1149!![anInt1173++] = if (NoiseTextureNode.aClass348_Sub4_9264!!.anInt6609 < 512 || TheoraVideoStream.aBoolean9038 || NpcSummaryDefinitionStatics.aBoolean1952) 1 else 0
                 return
             }
             if (i == 6148) {

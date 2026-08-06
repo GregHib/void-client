@@ -104,7 +104,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
                     }
                 } catch (throwable: Throwable) {
                     val i_3_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
-                    if (i_3_ == 2) NpcSummaryDefinition.aBoolean1952 = true
+                    if (i_3_ == 2) NpcSummaryDefinitionStatics.aBoolean1952 = true
                     IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271), 0)
                     method2965(string, i_3_, bool, i_1_)
                     return

@@ -28,7 +28,7 @@ object NpcUpdateProcessor {
         AbstractCameraTransformStatics.anInt1597 = 0
         anInt1522++
         NullOggStream.anInt9041++
-        NpcSummaryDefinition.method1165(1)
+        NpcSummaryDefinitionStatics.method1165(1)
         method204(-724138005)
         VarpStore.method1318(-65536)
         var bool = false

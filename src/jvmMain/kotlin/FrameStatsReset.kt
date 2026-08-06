@@ -1415,7 +1415,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MapElementLookup.anInt4149 = 0
             Client.anInt5173 = 0
             ItemNameResolver.anInt4996 = 0
-            NpcSummaryDefinition.anInt1955 = 0
+            NpcSummaryDefinitionStatics.anInt1955 = 0
             RandomAccessFileOnDisk.anInt3048 = 0
             BufferedMessageQueue.anInt3580 = 0
             RenderableEntry.anInt4330 = 0
@@ -2612,7 +2612,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7996 = 0
             LoadingScreenState.anInt2630 = 0
             ParticleEmitterListNode.anInt9686 = 0
-            NpcSummaryDefinition.anInt1950 = 0
+            NpcSummaryDefinitionStatics.anInt1950 = 0
             WorldMapImageBuilder.anInt1139 = 0
             OutgoingPacketNode.anInt7123 = 0
             MapLabelMenuEntry.anInt5789 = 0

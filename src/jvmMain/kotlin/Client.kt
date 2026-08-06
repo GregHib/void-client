@@ -554,7 +554,7 @@ class Client : GameAppletFrame() {
                 WorldMapRenderer.anInt4674 = 14
                 return
             }
-            if (ClientMachineInfo.aMediaStreamClient_6601!!.anInt3213 >= 4 && NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-81).toByte())) {
+            if (ClientMachineInfo.aMediaStreamClient_6601!!.anInt3213 >= 4 && NpcSummaryDefinitionStatics.method1167(WorldMapRenderer.anInt4674, (-81).toByte())) {
                 if (ClientMachineInfo.aMediaStreamClient_6601!!.anInt3214 != 7 && ClientMachineInfo.aMediaStreamClient_6601!!.anInt3214 != 9) {
                     if (ClientMachineInfo.aMediaStreamClient_6601!!.anInt3214 <= 0) this.method82(72, "js5io")
                     else if (AbstractFrameBufferSurface.aString6926 == null) this.method82(-116, "js5connect")
@@ -590,7 +590,7 @@ class Client : GameAppletFrame() {
                     Js5Archive.aLong667 = method599(-70)
                 }
                 if (NanoTimerStatics.anInt846 == 3) {
-                    if (NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-100).toByte()) || TextureHandle.aSocketStreamWorker_2589!!.method1467(83.toByte()) > 0) {
+                    if (NpcSummaryDefinitionStatics.method1167(WorldMapRenderer.anInt4674, (-100).toByte()) || TextureHandle.aSocketStreamWorker_2589!!.method1467(83.toByte()) > 0) {
                         val i_0_ = TextureHandle.aSocketStreamWorker_2589!!.method1473(0)
                         if (i_0_ != 0) {
                             method103(i_0_, 111.toByte())
@@ -603,7 +603,7 @@ class Client : GameAppletFrame() {
                     }
                 }
                 if (NanoTimerStatics.anInt846 == 4) {
-                    val bool = (NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-100).toByte()) || method3196(WorldMapRenderer.anInt4674, -87) || method2672(WorldMapRenderer.anInt4674, -127))
+                    val bool = (NpcSummaryDefinitionStatics.method1167(WorldMapRenderer.anInt4674, (-100).toByte()) || method3196(WorldMapRenderer.anInt4674, -87) || method2672(WorldMapRenderer.anInt4674, -127))
                     val class267s = method2029(105)
                     val class348_sub49 = ByteBuffer(class267s!!.size * 4)
                     TextureHandle.aSocketStreamWorker_2589!!.method1474(class348_sub49.aByteArray7154!!, 0, (-72).toByte(), (class348_sub49.aByteArray7154)!!.size)
@@ -1289,7 +1289,7 @@ class Client : GameAppletFrame() {
                 method114(i.toInt() xor 0x66)
             } catch (throwable: Throwable) {
                 method1242((throwable.message + " (Recovered) " + method81(115.toByte())), throwable, 15004)
-                NpcSummaryDefinition.aBoolean1952 = true
+                NpcSummaryDefinitionStatics.aBoolean1952 = true
                 method3553(false, 102.toByte(), 0)
             }
         } else method114(123)
@@ -1400,7 +1400,7 @@ class Client : GameAppletFrame() {
                 method116(true)
             } catch (throwable: Throwable) {
                 method1242((throwable.message + " (Recovered) " + method81(52.toByte())), throwable, 15004)
-                NpcSummaryDefinition.aBoolean1952 = true
+                NpcSummaryDefinitionStatics.aBoolean1952 = true
                 method3553(false, 123.toByte(), 0)
             }
         } else method116(true)
@@ -1601,7 +1601,7 @@ class Client : GameAppletFrame() {
                 class348_sub45 = GlTexture1D.aInputTracker_8552!!.method3596(0)
             }
             if (method3263(true)) method363(125)
-            if (NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-51).toByte())) {
+            if (NpcSummaryDefinitionStatics.method1167(WorldMapRenderer.anInt4674, (-51).toByte())) {
                 method493(true)
                 method867(true)
             } else if (GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-120).toByte())) method123(0)
@@ -1688,7 +1688,7 @@ class Client : GameAppletFrame() {
             }
             if (bool_120_) ScreenBorderFiller.method1170((-116).toByte())
             if ((FacingDirectionNodeStatics.aRenderer6654 != null && FacingDirectionNodeStatics.aRenderer6654!!.method3655()) || method3229(-91) != 1) method3466(-77)
-            if (NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-113).toByte())) method1309(bool_120_, 117)
+            if (NpcSummaryDefinitionStatics.method1167(WorldMapRenderer.anInt4674, (-113).toByte())) method1309(bool_120_, 117)
             else if (!method2114(WorldMapRenderer.anInt4674, bool)) {
                 if (!method3197(WorldMapRenderer.anInt4674, 56.toByte())) {
                     if (GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
@@ -1733,7 +1733,7 @@ class Client : GameAppletFrame() {
                 } catch (clientException_: ClientException) {
                     /* empty */
                 }
-            } else if (!NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-59).toByte())) {
+            } else if (!NpcSummaryDefinitionStatics.method1167(WorldMapRenderer.anInt4674, (-59).toByte())) {
                 var i = 0
                 while (TerrainShadowBuilderGl3.anInt7008 > i) {
                     LocDefinitionCache.aBooleanArray3438!![i] = false
