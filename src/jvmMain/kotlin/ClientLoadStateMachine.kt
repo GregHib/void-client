@@ -13,7 +13,6 @@ import ScrollbarComponent.Companion.method184
 import GameClock.method599
 import GraphicsOptionState.Companion.aByteArray3144
 import CacheArchiveIndexLoader.Companion.aItemDefinitionLoader_3147
-import WorldMapScene.Companion.method1709
 import MapRegionLoaderStatics.method752
 import NativeRenderer.Companion.method3886
 import NativeRenderer.Companion.method3896
@@ -34,7 +33,7 @@ object ClientLoadStateMachine {
     @JvmStatic
     fun method1277(i: Byte) {
         anInt2175++
-        FontMetaRef.aLruByteCache_4327!!.method590(i + -62)
+        OutgoingPacketHeader.aLruByteCache_4327!!.method590(i + -62)
         ParticleGeometry.aLruByteCache_4417!!.method590(0)
         SceneryDetailOptionState.aLruByteCache_6096!!.method590(0)
         if (i.toInt() != 62) method1277(43.toByte())

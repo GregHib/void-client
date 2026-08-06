@@ -202,7 +202,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
         var anInt2655: Int = 0
         var anInt2660: Int = 0
 
-        var aFontMetaRef_2661: FontMetaRef? = FontMetaRef(24, 7)
+        var aOutgoingPacketHeader_2661: OutgoingPacketHeader? = OutgoingPacketHeader(24, 7)
         var anInt2662: Int = 0
         var anInt2664: Int = 0
         var anInt2666: Int = 0
@@ -234,7 +234,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
             if (i >= 80) {
                 aLruByteCache_2671 = null
                 InboundPacketHeader.aInboundPacketHeader_2665 = null
-                aFontMetaRef_2661 = null
+                aOutgoingPacketHeader_2661 = null
             }
         }
 

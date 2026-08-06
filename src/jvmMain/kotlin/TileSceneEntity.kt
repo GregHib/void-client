@@ -7,7 +7,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
 
     var aShort8727: Short
     override fun method2382(i: Byte): Boolean {
-        if (i > -51) aFontMetaRef_8724 = null
+        if (i > -51) aOutgoingPacketHeader_8724 = null
         anInt8723++
         return ActorEntity.method164(this.aByte6376.toInt(), (this.x shr ActorEntity.anInt4459), (-97).toByte(), (this.y shr ActorEntity.anInt4459))
     }
@@ -28,7 +28,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
     }
 
     override fun method2378(i: Int): Boolean {
-        if (i != 0) aFontMetaRef_8724 = null
+        if (i != 0) aOutgoingPacketHeader_8724 = null
         anInt8721++
         return (ActorEntity.aBooleanArrayArray1572!![(ActorEntity.anInt10084 + -ActorEntity.anInt6111 + (this.x shr ActorEntity.anInt4459))]!![((this.y shr ActorEntity.anInt4459) + -ActorEntity.anInt8502 + ActorEntity.anInt10084)])
     }
@@ -41,7 +41,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
 
         var anInt8723: Int = 0
 
-        var aFontMetaRef_8724: FontMetaRef? = FontMetaRef(50, -1)
+        var aOutgoingPacketHeader_8724: OutgoingPacketHeader? = OutgoingPacketHeader(50, -1)
 
         var aFloat8725: Float = 0f
 
@@ -51,7 +51,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
 
         @JvmStatic
         fun method2395(i: Byte) {
-            aFontMetaRef_8724 = null
+            aOutgoingPacketHeader_8724 = null
             if (i.toInt() != 50) method2395(65.toByte())
         }
 

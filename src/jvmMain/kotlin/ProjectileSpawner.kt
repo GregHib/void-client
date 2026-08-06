@@ -26,7 +26,7 @@ object ProjectileSpawner {
         val class348_sub47 = ParticleConfigParser.method2273((-103).toByte())
         if (bool != true) return null
         class348_sub47!!.anInt7122 = 0
-        class348_sub47.aFontMetaRef_7118 = null
+        class348_sub47.aOutgoingPacketHeader_7118 = null
         class348_sub47.aClass348_Sub49_Sub2_7116 = CipheredPacketBuffer(5000)
         return class348_sub47
     }

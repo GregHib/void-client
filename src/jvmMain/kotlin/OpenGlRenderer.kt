@@ -3181,7 +3181,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
 
         var anInt7552: Int = 0
 
-        var aFontMetaRef_7554: FontMetaRef? = FontMetaRef(52, 4)
+        var aOutgoingPacketHeader_7554: OutgoingPacketHeader? = OutgoingPacketHeader(52, 4)
 
         var anInt7555: Int = 0
 
@@ -3479,7 +3479,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
 
         var anInt7714: Int = 0
 
-        var aFontMetaRef_7715: FontMetaRef? = FontMetaRef(58, 4)
+        var aOutgoingPacketHeader_7715: OutgoingPacketHeader? = OutgoingPacketHeader(58, 4)
 
         var anInt7716: Int = 0
 
@@ -3500,9 +3500,9 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         var anInt7728: Int = 0
         @JvmStatic
         fun method3736(i: Byte) {
-            aFontMetaRef_7554 = null
-            aFontMetaRef_7715 = null
-            if (i < 27) aFontMetaRef_7715 = null
+            aOutgoingPacketHeader_7554 = null
+            aOutgoingPacketHeader_7715 = null
+            if (i < 27) aOutgoingPacketHeader_7715 = null
         }
 
         @JvmStatic
@@ -3510,7 +3510,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             do {
                 try {
                     anInt7686++
-                    if (i.toInt() != 6) aFontMetaRef_7715 = null
+                    if (i.toInt() != 6) aOutgoingPacketHeader_7715 = null
                     if (class348_sub42_sub12 != null) {
                         SourceRowTextureNode.aNodeDeque_9111!!.method1999(class348_sub42_sub12, -20180)
                         FileExistsCondition.anInt4776++

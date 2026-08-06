@@ -146,7 +146,7 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
 
         var aJs5Archive_9033: Js5Archive? = null
 
-        var aFontMetaRef_9034: FontMetaRef? = FontMetaRef(30, 4)
+        var aOutgoingPacketHeader_9034: OutgoingPacketHeader? = OutgoingPacketHeader(30, 4)
 
         var aLocTypeDefLoader_9036: LocTypeDefLoader? = null
 
@@ -154,7 +154,7 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
 
         @JvmStatic
         fun method2974(i: Int) {
-            aFontMetaRef_9034 = null
+            aOutgoingPacketHeader_9034 = null
             if (i != 1) aRenderConfigFactory_9011 = null
             aJs5Archive_9033 = null
             aRenderConfigFactory_9011 = null

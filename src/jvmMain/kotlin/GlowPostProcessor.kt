@@ -96,7 +96,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
 
     companion object {
 
-        var aFontMetaRef_2512: FontMetaRef?
+        var aOutgoingPacketHeader_2512: OutgoingPacketHeader?
         var aBoolean2514: Boolean = false
         var anInt2515: Int = 0
         var anInt2516: Int = 0
@@ -108,7 +108,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
         @JvmStatic
         fun method1411(bool: Boolean) {
             if (bool != true) method1416(121)
-            aFontMetaRef_2512 = null
+            aOutgoingPacketHeader_2512 = null
         }
 
         fun method1412(i: Byte, i_0_: Int, i_1_: Int): Boolean {
@@ -168,7 +168,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
         }
 
         init {
-            aFontMetaRef_2512 = FontMetaRef(16, 7)
+            aOutgoingPacketHeader_2512 = OutgoingPacketHeader(16, 7)
         }
     }
 }

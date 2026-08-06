@@ -15,7 +15,7 @@ class InputStream_Sub1 : InputStream() {
 
         var anInt74: Int = 0
 
-        var aFontMetaRef_77: FontMetaRef?
+        var aOutgoingPacketHeader_77: OutgoingPacketHeader?
 
         var anInt78: Int
 
@@ -24,7 +24,7 @@ class InputStream_Sub1 : InputStream() {
         fun method124(i: Int) {
             WhirlpoolHash.aLongArrayArray75 = null
             if (i == 2) {
-                aFontMetaRef_77 = null
+                aOutgoingPacketHeader_77 = null
                 WhirlpoolHash.aLongArray76 = null
                 InboundPacketHeader.aInboundPacketHeader_79 = null
             }
@@ -45,7 +45,7 @@ class InputStream_Sub1 : InputStream() {
         }
 
         init {
-            aFontMetaRef_77 = FontMetaRef(8, 1)
+            aOutgoingPacketHeader_77 = OutgoingPacketHeader(8, 1)
             anInt78 = 0
         }
     }

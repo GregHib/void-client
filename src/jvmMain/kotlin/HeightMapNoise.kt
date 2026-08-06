@@ -7,7 +7,7 @@ import MapSceneRenderer.method384
 */
 object HeightMapNoise {
 
-    var aFontMetaRef_3825: FontMetaRef?
+    var aOutgoingPacketHeader_3825: OutgoingPacketHeader?
     var anInt3826: Int = 0
     var anInt3827: Int = 0
     var anInt3828: Int = 0
@@ -35,7 +35,7 @@ object HeightMapNoise {
     fun method2279(bool: Boolean, i: Int, i_14_: Int, i_15_: Int, i_16_: Int): Int {
         anInt3828++
         val i_17_ = i and 0xf
-        if (bool != true) aFontMetaRef_3825 = null
+        if (bool != true) aOutgoingPacketHeader_3825 = null
         val i_18_ = if (i_17_ < 8) i_16_ else i_15_
         val i_19_ = (if (i_17_ < 4) i_15_ else if (i_17_ == 12 || i_17_ == 14) i_16_ else i_14_)
         return ((if ((i_17_ and 0x1) != 0) -i_18_ else i_18_) - -(if ((0x2 and i_17_) == 0) i_19_ else -i_19_))
@@ -60,7 +60,7 @@ object HeightMapNoise {
 
     @JvmStatic
     fun method2281(i: Int) {
-        aFontMetaRef_3825 = null
+        aOutgoingPacketHeader_3825 = null
         if (i != 1) HeightMapNoise.method2278(-115, 106, (-74).toByte(), -75)
     }
 
@@ -76,6 +76,6 @@ object HeightMapNoise {
     }
 
     init {
-        aFontMetaRef_3825 = FontMetaRef(82, 18)
+        aOutgoingPacketHeader_3825 = OutgoingPacketHeader(82, 18)
     }
 }

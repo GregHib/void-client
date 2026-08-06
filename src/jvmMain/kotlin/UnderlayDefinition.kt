@@ -44,12 +44,12 @@ class UnderlayDefinition {
         var anInt2887: Int = 0
         var anInt2888: Int = 0
         var anInt2889: Int = 0
-        var aFontMetaRef_2892: FontMetaRef? = FontMetaRef(39, 8)
+        var aOutgoingPacketHeader_2892: OutgoingPacketHeader? = OutgoingPacketHeader(39, 8)
 
         @JvmStatic
         fun method1609(i: Byte) {
             if (i <= -71) {
-                aFontMetaRef_2892 = null
+                aOutgoingPacketHeader_2892 = null
                 aRectangleRegion_2885 = null
             }
         }

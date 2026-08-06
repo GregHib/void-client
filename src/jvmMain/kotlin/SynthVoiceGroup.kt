@@ -150,7 +150,7 @@ class SynthVoiceGroup internal constructor(private val aClass348_Sub16_Sub3_8852
 
         var anInt8856: Int = 0
 
-        var aFontMetaRef_8857: FontMetaRef? = FontMetaRef(54, 15)
+        var aOutgoingPacketHeader_8857: OutgoingPacketHeader? = OutgoingPacketHeader(54, 15)
 
         var anInt8858: Int = 0
 
@@ -171,7 +171,7 @@ class SynthVoiceGroup internal constructor(private val aClass348_Sub16_Sub3_8852
         @JvmStatic
         fun method2823(i: Int) {
             if (i != 0) method2823(33)
-            aFontMetaRef_8857 = null
+            aOutgoingPacketHeader_8857 = null
             aRgbColorPalette_8853 = null
         }
 

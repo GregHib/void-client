@@ -546,7 +546,7 @@
 "Class349","FormantSynthFilter","Reads filter coeffs from buffer; computes IIR coefficients via cos/pow","Audio formant/envelope synthesis filter"
 "Class35","SoundEngineInitializer","Static-only object; initializes audio devices/streams","Kotlin object; sound subsystem bootstrap"
 "Class350","ModelTransformParams","Instance: scale/rotate/translate ints; copy and clone methods","Mutable transform/orientation parameter holder"
-"Class351","FontMetaRef","Instance: two ints (id refs); toString throws","Lightweight id/handle pair; static font/name lookup helpers"
+"""Class351"",""OutgoingPacketHeader"",""Instance: two ints (id refs); toString throws"",""Lightweight id/handle pair; static font/name lookup helpers"""
 "Class352","RenderableEntry","Instance: Class324 + Class143 (drawable + font/def)","Static priority-queue insert"
 "Class353","TextureMipDescriptor","Instance: dims, shorts, byte, bool flags; static GL mipmap build","Texture metadata + downscaling via glTexImage2D"
 "Class354","TextureCache","Instance: ha_Sub2, d, Class60 LRU; loads/creates Class258_Sub3 textures","Per-device texture loader/cache from Class12 defs"

@@ -190,13 +190,13 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
         var anInt6232: Int = 0
 
         @JvmStatic
-        fun method2148(fontMetaRef: FontMetaRef?, isaacCipher: IsaacCipher?, i: Int): OutgoingPacketNode {
+        fun method2148(outgoingPacketHeader: OutgoingPacketHeader?, isaacCipher: IsaacCipher?, i: Int): OutgoingPacketNode {
             try {
                 anInt6230++
                 val class348_sub47 = ParticleConfigParser.method2273((-103).toByte())!!
                 if (i >= -80) aCalendar6221 = null
-                class348_sub47.anInt7122 = fontMetaRef!!.anInt4323
-                class348_sub47.aFontMetaRef_7118 = fontMetaRef
+                class348_sub47.anInt7122 = outgoingPacketHeader!!.anInt4323
+                class348_sub47.aOutgoingPacketHeader_7118 = outgoingPacketHeader
                 if (class348_sub47.anInt7122 != -1) {
                     if (class348_sub47.anInt7122 == -2) class348_sub47.aClass348_Sub49_Sub2_7116 = CipheredPacketBuffer(10000)
                     else if (class348_sub47.anInt7122 <= 18) class348_sub47.aClass348_Sub49_Sub2_7116 = CipheredPacketBuffer(20)
@@ -206,13 +206,13 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.method3416(-17, isaacCipher!!)
 
                 if (Loader.debug) {
-                    println("Encode packet " + class348_sub47.aFontMetaRef_7118!!.method3456(200))
+                    println("Encode packet " + class348_sub47.aOutgoingPacketHeader_7118!!.method3456(200))
                 }
-                class348_sub47.aClass348_Sub49_Sub2_7116!!.method3408(class348_sub47.aFontMetaRef_7118!!.method3456(200), 18676)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.method3408(class348_sub47.aOutgoingPacketHeader_7118!!.method3456(200), 18676)
                 class348_sub47.anInt7119 = 0
                 return class348_sub47
             } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("em.C(" + (if (fontMetaRef != null) "{...}" else "null") + ',' + (if (isaacCipher != null) "{...}" else "null") + ',' + i + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("em.C(" + (if (outgoingPacketHeader != null) "{...}" else "null") + ',' + (if (isaacCipher != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
 

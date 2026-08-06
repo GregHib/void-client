@@ -9,7 +9,7 @@ import java.awt.Canvas
 
 class OutgoingPacketNode : LinkedListNode() {
     var aClass348_Sub49_Sub2_7116: CipheredPacketBuffer? = null
-    var aFontMetaRef_7118: FontMetaRef? = null
+    var aOutgoingPacketHeader_7118: OutgoingPacketHeader? = null
     var anInt7119: Int = 0
     var anInt7122: Int = 0
     fun method3326(i: Byte) {

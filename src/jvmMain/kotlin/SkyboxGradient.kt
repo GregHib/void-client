@@ -21,7 +21,7 @@ object SkyboxGradient {
         MapElementDecor.anInt10340++
         if (i != 0) method2333(true)
         anInt3933++
-        val class348_sub47 = method2148(RasterSprite.aFontMetaRef_5200, TheoraVideoStream.aIsaacCipher_9029, i xor 0x53.inv())
+        val class348_sub47 = method2148(RasterSprite.aOutgoingPacketHeader_5200, TheoraVideoStream.aIsaacCipher_9029, i xor 0x53.inv())
         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), GlArrayBufferObject.anInt4718)
         InterfaceComponentGroup.method3243(118, class348_sub47)
     }

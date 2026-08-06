@@ -44,7 +44,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
 
         var anInt5937: Int = 0
 
-        var aFontMetaRef_5938: FontMetaRef? = FontMetaRef(0, 0)
+        var aOutgoingPacketHeader_5938: OutgoingPacketHeader? = OutgoingPacketHeader(0, 0)
 
         var anInt5939: Int = 0
 
@@ -110,7 +110,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1763(i: Int) {
-            aFontMetaRef_5938 = null
+            aOutgoingPacketHeader_5938 = null
             if (i != -15596) method1763(-92)
         }
 
@@ -134,7 +134,7 @@ class RangedGraphicsOptionState : GraphicsOptionState {
                 if (c.code >= 249 && c.code <= 252) return 'u'
                 if (c.code == 253 || c.code == 255) return 'y'
             }
-            if (i_15_ != 105) aFontMetaRef_5938 = null
+            if (i_15_ != 105) aOutgoingPacketHeader_5938 = null
             if (c.code == 338) return 'O'
             if (c.code == 339) return 'o'
             if (c.code == 376) return 'Y'

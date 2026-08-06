@@ -263,14 +263,14 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
         var anInt6440: Int = 0
         var anInt6442: Int = 0
 
-        var aFontMetaRef_6443: FontMetaRef? = FontMetaRef(68, 2)
+        var aOutgoingPacketHeader_6443: OutgoingPacketHeader? = OutgoingPacketHeader(68, 2)
         var anInt6445: Int = 0
         var anInt6448: Int = 0
         var anInt6450: Int = 0
         @JvmStatic
         fun method2508(i: Int) {
             if (i != 32767) method2512(null, null, 5)
-            aFontMetaRef_6443 = null
+            aOutgoingPacketHeader_6443 = null
         }
 
         fun method2509(i: Int, i_0_: Int, var_renderer: Renderer, i_1_: Int, i_2_: Int, bool: Boolean, i_3_: Int, i_4_: Int) {

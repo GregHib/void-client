@@ -21,7 +21,7 @@ class MinimapTileEntry {
 
         var anInt616: Int = 0
 
-        var aFontMetaRef_618: FontMetaRef? = FontMetaRef(5, 3)
+        var aOutgoingPacketHeader_618: OutgoingPacketHeader? = OutgoingPacketHeader(5, 3)
 
         var anIntArray619: IntArray? = intArrayOf(0, 1, 2, 2, 1, 1, 2, 3, 1, 3, 3, 4, 2, 0, 4)
 
@@ -29,7 +29,7 @@ class MinimapTileEntry {
 
         @JvmStatic
         fun method380(i: Int) {
-            aFontMetaRef_618 = null
+            aOutgoingPacketHeader_618 = null
             anIntArray619 = null
             if (i == 0) aJs5Archive_611 = null
         }

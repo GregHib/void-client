@@ -251,7 +251,6 @@ import SystemFontGlyphs.Companion.method2562
 import RSFont.Companion.method2570
 import RSFont.Companion.method2572
 import SpriteMaskShape.Companion.method2597
-import ShaderStateStatics.method2610
 import ShaderStateStatics.method2611
 import MaterialTypeMarkerStatics.method2613
 import MaterialTypeVariant.method2614
@@ -1528,7 +1527,7 @@ class Client : GameAppletFrame() {
                     SceneRegionState.anInt193++
                     if (SceneRegionState.anInt193 > 50) {
                         IOException_Sub1.anInt88++
-                        val class348_sub47 = method2148((RangedGraphicsOptionState.aFontMetaRef_5938), (TheoraVideoStream.aIsaacCipher_9029), -104)
+                        val class348_sub47 = method2148((RangedGraphicsOptionState.aOutgoingPacketHeader_5938), (TheoraVideoStream.aIsaacCipher_9029), -104)
                         method3243(-49, class348_sub47)
                     }
                     try {
@@ -4764,7 +4763,7 @@ class Client : GameAppletFrame() {
                 }
                 if (WorldMapRenderer.anInt4674 == 10) {
                     while (method2138(i xor 0x2ca2)) {
-                        val class348_sub47 = method2148(ScreenBorderFiller.aFontMetaRef_1961, (TheoraVideoStream.aIsaacCipher_9029), -92)
+                        val class348_sub47 = method2148(ScreenBorderFiller.aOutgoingPacketHeader_1961, (TheoraVideoStream.aIsaacCipher_9029), -92)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                         val i_1_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                         method3025(121.toByte(), (class348_sub47.aClass348_Sub49_Sub2_7116!!))
@@ -4773,7 +4772,7 @@ class Client : GameAppletFrame() {
                     }
                     if (LightingOptionState.aClass348_Sub26_5881 != null) {
                         if ((LightingOptionState.aClass348_Sub26_5881!!.anInt6887) != -1) {
-                            val class348_sub47 = method2148((GlCubemapLightPass.aFontMetaRef_7318), (TheoraVideoStream.aIsaacCipher_9029), -81)
+                            val class348_sub47 = method2148((GlCubemapLightPass.aOutgoingPacketHeader_7318), (TheoraVideoStream.aIsaacCipher_9029), -81)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), LightingOptionState.aClass348_Sub26_5881!!.anInt6887)
                             InterfaceComponentGroup.method3243(122, class348_sub47)
                             LightingOptionState.aClass348_Sub26_5881 = null
@@ -4799,7 +4798,7 @@ class Client : GameAppletFrame() {
                             if (OpenGlTerrainTile.anInt8270 != i_5_ || i_4_ != anInt4032) {
                                 if (class348_sub47 == null) {
                                     CollisionMap.anInt4450++
-                                    class348_sub47 = (method2148(CharCodeMap.aFontMetaRef_9590, TheoraVideoStream.aIsaacCipher_9029, -94))
+                                    class348_sub47 = (method2148(CharCodeMap.aOutgoingPacketHeader_9590, TheoraVideoStream.aIsaacCipher_9029, -94))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                                     i_2_ = class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197
                                 }
@@ -4852,14 +4851,14 @@ class Client : GameAppletFrame() {
                         if (class348_sub45.method3310(i xor 0x2cee) == 2) i_11_ = 1
                         val i_12_ = l.toInt()
                         ParticleEmitterNode.anInt182++
-                        val class348_sub47 = method2148(ProjectileConfigUtil.aFontMetaRef_395, (TheoraVideoStream.aIsaacCipher_9029), i + -11525)
+                        val class348_sub47 = method2148(ProjectileConfigUtil.aOutgoingPacketHeader_395, (TheoraVideoStream.aIsaacCipher_9029), i + -11525)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_12_ or (i_11_ shl 15))
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(121.toByte(), i_9_ shl 16 or i_10_)
                         InterfaceComponentGroup.method3243(25, class348_sub47)
                     }
                     if (CameraConfigDefinition.anInt3246 > 0) {
                         ColourKeyTextureNode.anInt9348++
-                        val class348_sub47 = method2148((ShaderStateStatics.aFontMetaRef_8798), (TheoraVideoStream.aIsaacCipher_9029), -111)
+                        val class348_sub47 = method2148((ShaderStateStatics.aOutgoingPacketHeader_8798), (TheoraVideoStream.aIsaacCipher_9029), -111)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * CameraConfigDefinition.anInt3246)
                         var i_13_ = 0
                         while ((i_13_ < CameraConfigDefinition.anInt3246)) {
@@ -4878,7 +4877,7 @@ class Client : GameAppletFrame() {
                         LightDetailOptionState.anInt6033++
                         WorldMapPolygonIconLabel.aBoolean10174 = false
                         HintArrowOrMessage.anInt2035 = 20
-                        val class348_sub47 = method2148(ClanChatRequestSender.aFontMetaRef_3648, (TheoraVideoStream.aIsaacCipher_9029), i + -11549)
+                        val class348_sub47 = method2148(ClanChatRequestSender.aOutgoingPacketHeader_3648, (TheoraVideoStream.aIsaacCipher_9029), i + -11549)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(i xor 0x3c4d, CameraDistanceOptionState.aFloat3938.toInt() shr 3)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), SceneObjectSpawner.aFloat1287.toInt() shr 3)
                         InterfaceComponentGroup.method3243(-31, class348_sub47)
@@ -4886,13 +4885,13 @@ class Client : GameAppletFrame() {
                     if (DragDropControllerStatics.aBoolean4278 != SizeBoundedSoftCache.aBoolean2329) {
                         NormalMapGenerator.anInt3460++
                         DragDropControllerStatics.aBoolean4278 = SizeBoundedSoftCache.aBoolean2329
-                        val class348_sub47 = method2148((InputStream_Sub1.aFontMetaRef_77), (TheoraVideoStream.aIsaacCipher_9029), i xor 0x2cc8.inv())
+                        val class348_sub47 = method2148((InputStream_Sub1.aOutgoingPacketHeader_77), (TheoraVideoStream.aIsaacCipher_9029), i xor 0x2cc8.inv())
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!SizeBoundedSoftCache.aBoolean2329) 0 else 1)
                         InterfaceComponentGroup.method3243(i + -11501, class348_sub47)
                     }
                     if (!RenderNodeStatics.aBoolean9719) {
                         GameClock.anInt1110++
-                        val class348_sub47 = method2148((FloatBuffer.aFontMetaRef_9743), (TheoraVideoStream.aIsaacCipher_9029), -113)
+                        val class348_sub47 = method2148((FloatBuffer.aOutgoingPacketHeader_9743), (TheoraVideoStream.aIsaacCipher_9029), -113)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                         val i_14_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                         val class348_sub49 = IntHashSetStatics.aClass348_Sub51_3959!!.method3427(i xor 0x2cb0)
@@ -5070,7 +5069,7 @@ class Client : GameAppletFrame() {
                             ResourceLoaderThread.anInt3918++
                             if (WorldMapScene.aBoolean3103) {
                                 NodeDequeHolder.anInt1568++
-                                val class348_sub47 = method2148((OpenGlRenderer.aFontMetaRef_7715), (TheoraVideoStream.aIsaacCipher_9029), i + -11525)
+                                val class348_sub47 = method2148((OpenGlRenderer.aOutgoingPacketHeader_7715), (TheoraVideoStream.aIsaacCipher_9029), i + -11525)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(117.toByte(), (InputStream_Sub2.anInt85 shl 14 or (ColourKeyTextureNode.anInt9349 shl 28) or NpcType.anInt1404))
                                 InterfaceComponentGroup.method3243(30, class348_sub47)
                                 WorldMapScene.aBoolean3103 = false
@@ -5165,7 +5164,7 @@ class Client : GameAppletFrame() {
                                 SceneRegionState.anInt193++
                                 if (SceneRegionState.anInt193 > 50) {
                                     IOException_Sub1.anInt88++
-                                    val class348_sub47 = (method2148(RangedGraphicsOptionState.aFontMetaRef_5938, TheoraVideoStream.aIsaacCipher_9029, -125))
+                                    val class348_sub47 = (method2148(RangedGraphicsOptionState.aOutgoingPacketHeader_5938, TheoraVideoStream.aIsaacCipher_9029, -125))
                                     InterfaceComponentGroup.method3243(i xor 0x2cc0.inv(), class348_sub47)
                                 }
                                 if (MultiLevelOptionState.aBoolean6147) {

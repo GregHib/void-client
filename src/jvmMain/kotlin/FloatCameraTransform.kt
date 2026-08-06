@@ -639,7 +639,7 @@ class FloatCameraTransform : AbstractCameraTransform() {
         var anInt5697: Int = 0
 
         var anInt5698: Int = 0
-        var aFontMetaRef_5699: FontMetaRef?
+        var aOutgoingPacketHeader_5699: OutgoingPacketHeader?
 
         var anInt5701: Int = 0
 
@@ -752,13 +752,13 @@ class FloatCameraTransform : AbstractCameraTransform() {
         @JvmStatic
         fun method925(i: Int) {
             if (i == -5997) {
-                aFontMetaRef_5699 = null
+                aOutgoingPacketHeader_5699 = null
                 InboundPacketHeader.aInboundPacketHeader_5742 = null
             }
         }
 
         init {
-            aFontMetaRef_5699 = FontMetaRef(53, -1)
+            aOutgoingPacketHeader_5699 = OutgoingPacketHeader(53, -1)
         }
     }
 }

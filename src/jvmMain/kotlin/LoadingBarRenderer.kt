@@ -1,5 +1,5 @@
 import ActorEntity.Companion.method163
-import FontMetaRef.Companion.aLruByteCache_4327
+import OutgoingPacketHeader.Companion.aLruByteCache_4327
 import java.awt.Color
 import java.awt.Font
 import java.awt.FontMetrics
@@ -273,7 +273,7 @@ class LoadingBarRenderer : CursorController {
         var anInt5049: Int = 0
         var anInt5052: Int = 0
         var anInt5055: Int = 0
-        var aFontMetaRef_5057: FontMetaRef? = FontMetaRef(10, -1)
+        var aOutgoingPacketHeader_5057: OutgoingPacketHeader? = OutgoingPacketHeader(10, -1)
 
         var aPlayerArray5058: Array<Player?>? = arrayOfNulls<Player>(2048)
 
@@ -282,7 +282,7 @@ class LoadingBarRenderer : CursorController {
 
         @JvmStatic
         fun method2214(i: Int) {
-            aFontMetaRef_5057 = null
+            aOutgoingPacketHeader_5057 = null
             if (i != 0) aPlayerArray5058 = null
             aMapTileShapeArray5060 = null
             aPlayerArray5058 = null

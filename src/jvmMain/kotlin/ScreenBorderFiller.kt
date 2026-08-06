@@ -12,7 +12,7 @@ object ScreenBorderFiller {
     var anInt1958: Int = 0
     var anInt1960: Int = 0
 
-    var aFontMetaRef_1961: FontMetaRef? = FontMetaRef(77, -1)
+    var aOutgoingPacketHeader_1961: OutgoingPacketHeader? = OutgoingPacketHeader(77, -1)
 
     @Throws(ClientException::class)
     @JvmStatic
@@ -20,14 +20,14 @@ object ScreenBorderFiller {
         anInt1957++
         if (WhirlpoolHash.anInt7207 != 1) CameraRotationStubStatics.aRenderer326!!.method3707(rectangles, i, 0, 0)
         else CameraRotationStubStatics.aRenderer326!!.method3707(rectangles, i, MapRegionLoaderThread.anInt4211, FireParticleStream.anInt9157)
-        if (i_0_ != 0) aFontMetaRef_1961 = null
+        if (i_0_ != 0) aOutgoingPacketHeader_1961 = null
     }
 
     @JvmStatic
     fun method1169(bool: Boolean) {
-        aFontMetaRef_1961 = null
+        aOutgoingPacketHeader_1961 = null
         InboundPacketHeader.aInboundPacketHeader_1959 = null
-        if (bool != false) aFontMetaRef_1961 = null
+        if (bool != false) aOutgoingPacketHeader_1961 = null
     }
 
     @JvmStatic

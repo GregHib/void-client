@@ -171,7 +171,7 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
 
         @JvmStatic
         fun method545(i: Int, i_49_: Int) {
-            FontMetaRef.aLruByteCache_4327!!.method578(2, i)
+            OutgoingPacketHeader.aLruByteCache_4327!!.method578(2, i)
             anInt1077++
             ParticleGeometry.aLruByteCache_4417!!.method578(2, i)
             if (i_49_ != -1) InboundPacketHeader.aInboundPacketHeader_1068 = null

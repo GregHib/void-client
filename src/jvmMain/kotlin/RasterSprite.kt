@@ -15,11 +15,11 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
 
     companion object {
 
-        var aFontMetaRef_5200: FontMetaRef? = FontMetaRef(13, 2)
+        var aOutgoingPacketHeader_5200: OutgoingPacketHeader? = OutgoingPacketHeader(13, 2)
 
         var anInt5203: Int = 0
 
-        var aFontMetaRef_5204: FontMetaRef? = FontMetaRef(15, 8)
+        var aOutgoingPacketHeader_5204: OutgoingPacketHeader? = OutgoingPacketHeader(15, 8)
 
         var anInt5205: Int = 0
 
@@ -38,8 +38,8 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
         @JvmStatic
         fun method167(i: Int) {
             if (i != 19612) method167(-70)
-            aFontMetaRef_5200 = null
-            aFontMetaRef_5204 = null
+            aOutgoingPacketHeader_5200 = null
+            aOutgoingPacketHeader_5204 = null
             SpriteSheetCache.aClass348_Sub6_5206 = null
             aJs5Archive_5207 = null
         }

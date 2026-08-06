@@ -161,7 +161,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
 
         var anInt7316: Int = 0
 
-        var aFontMetaRef_7318: FontMetaRef? = FontMetaRef(21, 2)
+        var aOutgoingPacketHeader_7318: OutgoingPacketHeader? = OutgoingPacketHeader(21, 2)
 
         var anInt7319: Int = 104
         var aBoolean7320: Boolean = false
@@ -178,7 +178,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
             InboundPacketHeader.aInboundPacketHeader_7323 = null
             InboundPacketHeader.aInboundPacketHeader_7324 = null
             aLinkedNodeListIterator_7325 = null
-            if (i.toInt() == 23) aFontMetaRef_7318 = null
+            if (i.toInt() == 23) aOutgoingPacketHeader_7318 = null
         }
 
         @JvmStatic
@@ -354,7 +354,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
         fun method3543(i: Byte) {
             anInt7309++
             if (i.toInt() == -89) {
-                FontMetaRef.aBoolean4328 = false
+                OutgoingPacketHeader.aBoolean4328 = false
                 TextureCache.method3466(i + 6)
             }
         }

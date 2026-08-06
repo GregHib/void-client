@@ -75,7 +75,7 @@ open class GrayscaleNoiseTexture(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_2
         var anInt5282: Int = 0
 
         var anInt5286: Int = 0
-        var aFontMetaRef_5288: FontMetaRef? = FontMetaRef(7, 6)
+        var aOutgoingPacketHeader_5288: OutgoingPacketHeader? = OutgoingPacketHeader(7, 6)
 
         var anInt5291: Int = 0
 
@@ -171,7 +171,7 @@ open class GrayscaleNoiseTexture(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_2
         @JvmStatic
         fun method553(i: Int) {
             aAbstractModelRendererArray5294 = null
-            aFontMetaRef_5288 = null
+            aOutgoingPacketHeader_5288 = null
             if (i != 0) aPrivilegedOperationWorker_5297 = null
             aPrivilegedOperationWorker_5297 = null
         }

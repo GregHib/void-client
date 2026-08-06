@@ -10,7 +10,7 @@ object TextureLoadExceptionStatics {
 
     var anInt4600: Int = 52
 
-    var aFontMetaRef_4601: FontMetaRef?
+    var aOutgoingPacketHeader_4601: OutgoingPacketHeader?
 
     var aFloatArray4602: FloatArray?
 
@@ -40,7 +40,7 @@ object TextureLoadExceptionStatics {
         if (i == -3) {
             anIntArray4603 = null
             aFloatArray4602 = null
-            aFontMetaRef_4601 = null
+            aOutgoingPacketHeader_4601 = null
         }
     }
 
@@ -105,6 +105,6 @@ object TextureLoadExceptionStatics {
         anInt4596 = -1
         aFloatArray4602 = FloatArray(4)
         aBoolean4604 = false
-        aFontMetaRef_4601 = FontMetaRef(65, 3)
+        aOutgoingPacketHeader_4601 = OutgoingPacketHeader(65, 3)
     }
 }

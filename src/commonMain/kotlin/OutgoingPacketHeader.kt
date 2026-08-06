@@ -1,7 +1,7 @@
 /*
  * Class351
  */
-class FontMetaRef internal constructor(private var anInt4326: Int, var anInt4323: Int) {
+class OutgoingPacketHeader internal constructor(private var anInt4326: Int, var anInt4323: Int) {
     override fun toString(): String {
         anInt4325++
         throw IllegalStateException()

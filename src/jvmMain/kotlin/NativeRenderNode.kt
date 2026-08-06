@@ -367,7 +367,7 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
 
         var anInt10476: Int = 0
 
-        var aFontMetaRef_10477: FontMetaRef? = FontMetaRef(22, 7)
+        var aOutgoingPacketHeader_10477: OutgoingPacketHeader? = OutgoingPacketHeader(22, 7)
 
         var anIntArray10478: IntArray? = IntArray(1)
 
@@ -377,7 +377,7 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
         fun method3288(i: Byte) {
             val i_14_ = 107 % ((i - 27) / 34)
             anIntArray10478 = null
-            aFontMetaRef_10477 = null
+            aOutgoingPacketHeader_10477 = null
             aNodeDeque_10479 = null
         }
 

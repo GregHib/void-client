@@ -806,7 +806,7 @@ class WidgetComponent {
         anInt819++
         ContactList.aBoolean9616 = false
         val l = ((this.anInt809.toLong() shl 40) + (((if (this.aBoolean790) 1L else 0L) shl 38) + ((this.anInt672.toLong() shl 36) + ((if (this.aBoolean745) 1L else 0L) shl 35))) + (this.anInt756.toLong() + ((if (!this.aBoolean735) 0L else 1L) shl 39)))
-        var abstractModelRenderer = FontMetaRef.aLruByteCache_4327!!.method583(l, -71) as AbstractModelRenderer?
+        var abstractModelRenderer = OutgoingPacketHeader.aLruByteCache_4327!!.method583(l, -71) as AbstractModelRenderer?
         if (i > -27) method434(true)
         if (abstractModelRenderer != null) return abstractModelRenderer
         val spriteImage = SpriteImage.method1521(GroundDecorEntity.aJs5Archive_8755!!, this.anInt756, 0)
@@ -822,7 +822,7 @@ class WidgetComponent {
         if (this.anInt672 >= 2) spriteImage.method1515(16777215)
         if (this.anInt809 != 0) spriteImage.method1511(0xffffff.inv() or this.anInt809)
         abstractModelRenderer = var_renderer.method3691(spriteImage, true)
-        FontMetaRef.aLruByteCache_4327!!.method580(31902, abstractModelRenderer, l, (abstractModelRenderer!!.method971() * abstractModelRenderer.method969() * 4))
+        OutgoingPacketHeader.aLruByteCache_4327!!.method580(31902, abstractModelRenderer, l, (abstractModelRenderer!!.method971() * abstractModelRenderer.method969() * 4))
         return abstractModelRenderer
     }
 

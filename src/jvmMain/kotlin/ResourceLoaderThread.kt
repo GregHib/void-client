@@ -182,7 +182,7 @@ class ResourceLoaderThread : Runnable {
 
     companion object {
         var anInt3897: Int = 0
-        var aFontMetaRef_3898: FontMetaRef? = FontMetaRef(11, 8)
+        var aOutgoingPacketHeader_3898: OutgoingPacketHeader? = OutgoingPacketHeader(11, 8)
         var anInt3899: Int = 0
         var anInt3900: Int = 0
         var anInt3901: Int = 0
@@ -201,7 +201,7 @@ class ResourceLoaderThread : Runnable {
         @JvmStatic
         fun method2317(i: Byte) {
             if (i > 50) {
-                aFontMetaRef_3898 = null
+                aOutgoingPacketHeader_3898 = null
                 aWidgetComponent_3913 = null
             }
         }

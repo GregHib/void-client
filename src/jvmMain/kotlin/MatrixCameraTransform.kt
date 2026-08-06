@@ -284,7 +284,7 @@ class MatrixCameraTransform : AbstractCameraTransform() {
 
         var anInt5676: Int = 0
 
-        var aFontMetaRef_5677: FontMetaRef? = FontMetaRef(56, 7)
+        var aOutgoingPacketHeader_5677: OutgoingPacketHeader? = OutgoingPacketHeader(56, 7)
 
         var anInt5679: Int = 0
 
@@ -306,7 +306,7 @@ class MatrixCameraTransform : AbstractCameraTransform() {
             aProjectileFactory_5689 = null
             aRenderConfig5684 = null
             LruByteCache.aParticleEmitterFactory_5675 = null
-            aFontMetaRef_5677 = null
+            aOutgoingPacketHeader_5677 = null
         }
 
         @JvmStatic

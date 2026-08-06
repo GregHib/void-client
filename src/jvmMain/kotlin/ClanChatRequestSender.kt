@@ -4,12 +4,12 @@ import ProjectileSpawner.method1478
 * Visit http://jode.sourceforge.net/
 */
 object ClanChatRequestSender {
-    var aFontMetaRef_3644: FontMetaRef? = FontMetaRef(42, 8)
+    var aOutgoingPacketHeader_3644: OutgoingPacketHeader? = OutgoingPacketHeader(42, 8)
     var anInt3645: Int = 0
 
     var anInt3647: Int = 0
 
-    var aFontMetaRef_3648: FontMetaRef? = FontMetaRef(55, 4)
+    var aOutgoingPacketHeader_3648: OutgoingPacketHeader? = OutgoingPacketHeader(55, 4)
 
     var aFontDefinition_3649: FontDefinition? = null
 
@@ -38,9 +38,9 @@ object ClanChatRequestSender {
 
     @JvmStatic
     fun method2107(i: Byte) {
-        aFontMetaRef_3648 = null
+        aOutgoingPacketHeader_3648 = null
         aFontDefinition_3649 = null
-        aFontMetaRef_3644 = null
+        aOutgoingPacketHeader_3644 = null
         if (i.toInt() != 77) ClanChatRequestSender.method2107((-107).toByte())
     }
 }

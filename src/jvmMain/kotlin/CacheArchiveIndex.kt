@@ -106,7 +106,7 @@ class CacheArchiveIndex {
 
         var anInt1765: Int = 0
 
-        var aFontMetaRef_1766: FontMetaRef? = FontMetaRef(74, -1)
+        var aOutgoingPacketHeader_1766: OutgoingPacketHeader? = OutgoingPacketHeader(74, -1)
 
         var anInt1768: Int = 0
 
@@ -128,8 +128,8 @@ class CacheArchiveIndex {
 
         @JvmStatic
         fun method1064(i: Int) {
-            if (i != -3) aFontMetaRef_1766 = null
-            aFontMetaRef_1766 = null
+            if (i != -3) aOutgoingPacketHeader_1766 = null
+            aOutgoingPacketHeader_1766 = null
         }
 
         @JvmStatic

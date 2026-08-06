@@ -539,7 +539,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
             ActorEntity.anInt8765++
             anInt9142++
             if (bool != false) method3065(-42, true, 43)
-            val class348_sub47 = method2148(ColorThresholdEffect.Companion.aFontMetaRef_9089, TheoraVideoStream.aIsaacCipher_9029, -97)
+            val class348_sub47 = method2148(ColorThresholdEffect.Companion.aOutgoingPacketHeader_9089, TheoraVideoStream.aIsaacCipher_9029, -97)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(52, i_74_)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntMiddle(i, 44.toByte())
             InterfaceComponentGroup.method3243(25, class348_sub47)

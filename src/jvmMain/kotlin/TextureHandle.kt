@@ -15,7 +15,7 @@ class TextureHandle internal constructor(private val aGlRenderDevice_2585: GlRen
         var anInt2583: Int = 0
         var anInt2586: Int = 0
 
-        var aFontMetaRef_2587: FontMetaRef? = FontMetaRef(38, 7)
+        var aOutgoingPacketHeader_2587: OutgoingPacketHeader? = OutgoingPacketHeader(38, 7)
         var anInt2588: Int = 0
 
         var aSocketStreamWorker_2589: SocketStreamWorker? = null
@@ -79,7 +79,7 @@ class TextureHandle internal constructor(private val aGlRenderDevice_2585: GlRen
         fun method1440(i: Int) {
             aSocketStreamWorker_2589 = null
             val i_4_ = -79 / ((i - -45) / 46)
-            aFontMetaRef_2587 = null
+            aOutgoingPacketHeader_2587 = null
         }
     }
 }

@@ -13,7 +13,7 @@ class WorldMapImageBuilder internal constructor(sceneProjector: SceneProjector?,
     }
 
     fun method695(bool: Boolean) {
-        if (bool != true) aFontMetaRef_1144 = null
+        if (bool != true) aOutgoingPacketHeader_1144 = null
         withLock(aLruByteCache_1145) {
             aLruByteCache_1145.method590(0)
         }
@@ -70,7 +70,7 @@ class WorldMapImageBuilder internal constructor(sceneProjector: SceneProjector?,
 
         var anInt1143: Int = 0
 
-        var aFontMetaRef_1144: FontMetaRef?
+        var aOutgoingPacketHeader_1144: OutgoingPacketHeader?
 
         var aClass110_Sub1Array1146: Array<MapLabelMenuEntry?>? = arrayOfNulls<MapLabelMenuEntry>(0)
 
@@ -93,7 +93,7 @@ class WorldMapImageBuilder internal constructor(sceneProjector: SceneProjector?,
 
         @JvmStatic
         fun method698(i: Int) {
-            aFontMetaRef_1144 = null
+            aOutgoingPacketHeader_1144 = null
             if (i != 2) aSceneCollisionEntryArrayArrayArray1148 = null
             aSceneCollisionEntryArrayArrayArray1148 = null
             aClass110_Sub1Array1146 = null
@@ -115,7 +115,7 @@ class WorldMapImageBuilder internal constructor(sceneProjector: SceneProjector?,
         }
 
         init {
-            aFontMetaRef_1144 = FontMetaRef(37, 2)
+            aOutgoingPacketHeader_1144 = OutgoingPacketHeader(37, 2)
         }
     }
 }

@@ -327,7 +327,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
         var anInt4569: Int = 0
 
         var anInt4570: Int = 0
-        var aFontMetaRef_4571: FontMetaRef?
+        var aOutgoingPacketHeader_4571: OutgoingPacketHeader?
 
         var anInt4572: Int = 0
 
@@ -353,12 +353,12 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
         fun method3680(i: Int) {
             if (i != -24016) anIntArray4578 = null
             anIntArray4578 = null
-            aFontMetaRef_4571 = null
+            aOutgoingPacketHeader_4571 = null
         }
 
 
         init {
-            aFontMetaRef_4571 = FontMetaRef(73, -1)
+            aOutgoingPacketHeader_4571 = OutgoingPacketHeader(73, -1)
         }
     }
 }

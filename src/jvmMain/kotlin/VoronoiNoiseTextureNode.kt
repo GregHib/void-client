@@ -211,11 +211,11 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
 
         var anInt9127: Int = 0
 
-        var aFontMetaRef_9130: FontMetaRef? = FontMetaRef(1, -1)
+        var aOutgoingPacketHeader_9130: OutgoingPacketHeader? = OutgoingPacketHeader(1, -1)
 
         @JvmStatic
         fun method3059(i: Int) {
-            aFontMetaRef_9130 = null
+            aOutgoingPacketHeader_9130 = null
             if (i >= -111) method3059(-83)
         }
 
@@ -223,7 +223,7 @@ class VoronoiNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         @JvmStatic
         fun method3060(i: Int, bool: Boolean): Int {
             anInt9128++
-            if (bool != true) aFontMetaRef_9130 = null
+            if (bool != true) aOutgoingPacketHeader_9130 = null
             return 0x7f and (i shr 11)
         }
     }

@@ -33,10 +33,10 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
 
         var aFrame4904: Frame? = null
 
-        var aFontMetaRef_4905: FontMetaRef?
+        var aOutgoingPacketHeader_4905: OutgoingPacketHeader?
         var anIntArray4906: IntArray?
 
-        var aFontMetaRef_4907: FontMetaRef?
+        var aOutgoingPacketHeader_4907: OutgoingPacketHeader?
 
         fun method490(i: Byte, class348_sub49: ByteBuffer): MinimapTileEntry {
             anInt4897++
@@ -65,8 +65,8 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
 
         @JvmStatic
         fun method492(i: Int) {
-            aFontMetaRef_4905 = null
-            aFontMetaRef_4907 = null
+            aOutgoingPacketHeader_4905 = null
+            aOutgoingPacketHeader_4907 = null
             aFrame4904 = null
             if (i < -17) {
                 aBigInteger4896 = null
@@ -133,8 +133,8 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
         init {
             aRectangleRegion_4901 = RectangleRegion(12, 0, 1, 0)
             anIntArray4906 = IntArray(4)
-            aFontMetaRef_4905 = FontMetaRef(44, 3)
-            aFontMetaRef_4907 = FontMetaRef(48, 11)
+            aOutgoingPacketHeader_4905 = OutgoingPacketHeader(44, 3)
+            aOutgoingPacketHeader_4907 = OutgoingPacketHeader(48, 11)
         }
     }
 }

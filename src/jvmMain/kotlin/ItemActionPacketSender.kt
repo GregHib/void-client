@@ -6,13 +6,13 @@ import ChatCommandProcessor.method705
 */
 object ItemActionPacketSender {
     var anInt2108: Int = 0
-    var aFontMetaRef_2109: FontMetaRef? = FontMetaRef(19, -1)
+    var aOutgoingPacketHeader_2109: OutgoingPacketHeader? = OutgoingPacketHeader(19, -1)
 
     var aBoolean2110: Boolean = false
 
     @JvmStatic
     fun method1236(i: Byte) {
-        aFontMetaRef_2109 = null
+        aOutgoingPacketHeader_2109 = null
     }
 
     @JvmStatic
@@ -31,7 +31,7 @@ object ItemActionPacketSender {
                     method705(class348_sub36)
                 }
             }
-            val class348_sub47 = method2148(aFontMetaRef_4266, TheoraVideoStream.aIsaacCipher_9029, -120)
+            val class348_sub47 = method2148(aOutgoingPacketHeader_4266, TheoraVideoStream.aIsaacCipher_9029, -120)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(100.toByte(), widgetComponent.anInt830)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(OrientationRotator.anInt2046, -4086)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-123, NativeLibraryState.anInt169)
@@ -41,5 +41,5 @@ object ItemActionPacketSender {
             InterfaceComponentGroup.method3243(-89, class348_sub47)
         }
     }
-    var aFontMetaRef_4266: FontMetaRef? = FontMetaRef(72, 16)
+    var aOutgoingPacketHeader_4266: OutgoingPacketHeader? = OutgoingPacketHeader(72, 16)
 }

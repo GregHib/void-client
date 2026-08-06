@@ -129,7 +129,7 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterTe
 
         var anInt6243: Int = 0
 
-        var aFontMetaRef_6244: FontMetaRef? = FontMetaRef(9, 8)
+        var aOutgoingPacketHeader_6244: OutgoingPacketHeader? = OutgoingPacketHeader(9, 8)
 
         var anInt6245: Int = 0
 
@@ -163,8 +163,8 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterTe
 
         @JvmStatic
         fun method2156(i: Int) {
-            aFontMetaRef_6244 = null
-            if (i <= 57) aFontMetaRef_6244 = null
+            aOutgoingPacketHeader_6244 = null
+            if (i <= 57) aOutgoingPacketHeader_6244 = null
         }
 
         @JvmStatic

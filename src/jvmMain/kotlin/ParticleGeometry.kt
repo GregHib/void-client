@@ -23,12 +23,12 @@ class ParticleGeometry internal constructor(`is`: IntArray?, is_1_: IntArray?, i
         var anInt4411: Int = 0
         var anInt4413: Int = 0
         var aLruByteCache_4417: LruByteCache? = LruByteCache(50)
-        var aFontMetaRef_4418: FontMetaRef? = FontMetaRef(33, 8)
+        var aOutgoingPacketHeader_4418: OutgoingPacketHeader? = OutgoingPacketHeader(33, 8)
 
         @JvmStatic
         fun method3488(i: Int) {
             if (i < 25) method3489(30)
-            aFontMetaRef_4418 = null
+            aOutgoingPacketHeader_4418 = null
             aLruByteCache_4417 = null
         }
 

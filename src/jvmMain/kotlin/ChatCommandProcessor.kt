@@ -249,7 +249,7 @@ object ChatCommandProcessor {
                 if (MapSceneTile.aBoxedIntHolder_1055 == null) MapSceneTile.aBoxedIntHolder_1055 = MinimapRenderer.aBoxedIntHolder_1591
                 BufferToggleState.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
-                val class348_sub47 = method2148(LongKeyNode.aFontMetaRef_6766, (TheoraVideoStream.aIsaacCipher_9029), -111)
+                val class348_sub47 = method2148(LongKeyNode.aOutgoingPacketHeader_6766, (TheoraVideoStream.aIsaacCipher_9029), -111)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, ShaderProgramStatics.anInt7276)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, MapSceneTile.aBoxedIntHolder_1055!!.anInt2970)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, BufferToggleState.anInt3713)
@@ -266,7 +266,7 @@ object ChatCommandProcessor {
                 if (string_8_ == null) string_8_ = ""
                 if (string_8_.length > 80) string_8_ = string_8_.substring(0, 80)
                 anInt1157++
-                val class348_sub47 = method2148(FontDefinition.aFontMetaRef_1987, (TheoraVideoStream.aIsaacCipher_9029), -117)
+                val class348_sub47 = method2148(FontDefinition.aOutgoingPacketHeader_1987, (TheoraVideoStream.aIsaacCipher_9029), -117)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, (method1745(string, -65) + 2 + method1745(string_8_, -65)))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeString((-5).toByte(), string)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, i_9_ - 1)
@@ -301,7 +301,7 @@ object ChatCommandProcessor {
             }
             if (i == 5006) {
                 val i_14_ = anIntArray1149!![--anInt1173]
-                val class348_sub47 = method2148(AbstractFrameBufferSurface.aFontMetaRef_6925, (TheoraVideoStream.aIsaacCipher_9029), -100)
+                val class348_sub47 = method2148(AbstractFrameBufferSurface.aOutgoingPacketHeader_6925, (TheoraVideoStream.aIsaacCipher_9029), -100)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_14_)
                 InterfaceComponentGroup.method3243(-70, class348_sub47)
                 return
@@ -317,7 +317,7 @@ object ChatCommandProcessor {
                 val string_15_ = aStringArray1152!![anInt1170 + 1]
                 if (AsyncTaskHandle.anInt2581 != 0 || ((!RangeThresholdTextureNode.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !MinimapTriangleDrawer.aBoolean5233)) {
                     anInt1159++
-                    val class348_sub47 = method2148((CellNoiseTextureNode.aFontMetaRef_9304), (TheoraVideoStream.aIsaacCipher_9029), -116)
+                    val class348_sub47 = method2148((CellNoiseTextureNode.aOutgoingPacketHeader_9304), (TheoraVideoStream.aIsaacCipher_9029), -116)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                     val i_16_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
@@ -486,7 +486,7 @@ object ChatCommandProcessor {
             }
             if (i == 5059) {
                 anInt1165++
-                val class348_sub47 = method2148(ChatCommandProcessor.aFontMetaRef_643, (TheoraVideoStream.aIsaacCipher_9029), -93)
+                val class348_sub47 = method2148(ChatCommandProcessor.aOutgoingPacketHeader_643, (TheoraVideoStream.aIsaacCipher_9029), -93)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_41_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
@@ -499,7 +499,7 @@ object ChatCommandProcessor {
             if (i == 5060) {
                 val string = aStringArray1152!![--anInt1170]
                 anInt1166++
-                val class348_sub47 = method2148(ItemActionPacketSender.aFontMetaRef_2109, (TheoraVideoStream.aIsaacCipher_9029), -89)
+                val class348_sub47 = method2148(ItemActionPacketSender.aOutgoingPacketHeader_2109, (TheoraVideoStream.aIsaacCipher_9029), -89)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_42_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
@@ -511,7 +511,7 @@ object ChatCommandProcessor {
             }
             if (i == 5061) {
                 anInt1165++
-                val class348_sub47 = method2148(ChatCommandProcessor.aFontMetaRef_643, (TheoraVideoStream.aIsaacCipher_9029), -104)
+                val class348_sub47 = method2148(ChatCommandProcessor.aOutgoingPacketHeader_643, (TheoraVideoStream.aIsaacCipher_9029), -104)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                 val i_43_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 1)
@@ -1013,7 +1013,7 @@ object ChatCommandProcessor {
                 val string_106_ = aStringArray1152!![anInt1170 + 1]!!
                 val i_107_ = anIntArray1149!![--anInt1173]
                 anInt1171++
-                val class348_sub47 = method2148((SpriteTextureNode.aFontMetaRef_9234), (TheoraVideoStream.aIsaacCipher_9029), -101)
+                val class348_sub47 = method2148((SpriteTextureNode.aOutgoingPacketHeader_9234), (TheoraVideoStream.aIsaacCipher_9029), -101)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (method1745(string, -65) + method1745(string_106_, -65) + 1))
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string_106_)
@@ -1987,7 +1987,7 @@ object ChatCommandProcessor {
                         if (WorldMapRenderer.aLong4683 > method599(-126) - 1000L) anIntArray1149!![anInt1173++] = 1
                         else {
                             ModelBatchBaseStatics.aBoolean1899 = true
-                            val class348_sub47 = method2148((TheoraVideoStream.aFontMetaRef_9034), (TheoraVideoStream.aIsaacCipher_9029), -115)
+                            val class348_sub47 = method2148((TheoraVideoStream.aOutgoingPacketHeader_9034), (TheoraVideoStream.aIsaacCipher_9029), -115)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(101.toByte(), ScrollbarComponent.anInt8349)
                             InterfaceComponentGroup.method3243(118, class348_sub47)
                             anIntArray1149!![anInt1173++] = 0
@@ -2724,7 +2724,7 @@ object ChatCommandProcessor {
                 }
             }
             anInt1158++
-            val class348_sub47 = method2148(CircleDrawer.aFontMetaRef_2686, TheoraVideoStream.aIsaacCipher_9029, -88)
+            val class348_sub47 = method2148(CircleDrawer.aOutgoingPacketHeader_2686, TheoraVideoStream.aIsaacCipher_9029, -88)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
             val i_243_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_241_)
@@ -3799,7 +3799,7 @@ object ChatCommandProcessor {
                     var i_304_ = 0
                     if (method468(string, 73)) i_304_ = RegionSceneShifterStatics.method3156(true, string)
                     anInt1163++
-                    val class348_sub47 = method2148((LongKeyNode.aFontMetaRef_6764), (TheoraVideoStream.aIsaacCipher_9029), -112)
+                    val class348_sub47 = method2148((LongKeyNode.aOutgoingPacketHeader_6764), (TheoraVideoStream.aIsaacCipher_9029), -112)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(102.toByte(), i_304_)
                     InterfaceComponentGroup.method3243(116, class348_sub47)
                     return
@@ -3807,7 +3807,7 @@ object ChatCommandProcessor {
                 if (i == 3105) {
                     val string = aStringArray1152!![--anInt1170]!!
                     anInt1162++
-                    val class348_sub47 = method2148(RsaPacketDecoder.aFontMetaRef_4225, (TheoraVideoStream.aIsaacCipher_9029), -96)
+                    val class348_sub47 = method2148(RsaPacketDecoder.aOutgoingPacketHeader_4225, (TheoraVideoStream.aIsaacCipher_9029), -96)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string.length + 1)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                     InterfaceComponentGroup.method3243(-81, class348_sub47)
@@ -3816,7 +3816,7 @@ object ChatCommandProcessor {
                 if (i == 3106) {
                     val string = aStringArray1152!![--anInt1170]!!
                     anInt1153++
-                    val class348_sub47 = method2148((VoronoiNoiseTextureNode.aFontMetaRef_9130), (TheoraVideoStream.aIsaacCipher_9029), -93)
+                    val class348_sub47 = method2148((VoronoiNoiseTextureNode.aOutgoingPacketHeader_9130), (TheoraVideoStream.aIsaacCipher_9029), -93)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string.length + 1)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                     InterfaceComponentGroup.method3243(35, class348_sub47)
@@ -3848,7 +3848,7 @@ object ChatCommandProcessor {
                 if (i == 3110) {
                     val i_311_ = anIntArray1149!![--anInt1173]
                     anInt1167++
-                    val class348_sub47 = method2148((GradientLookupEffect.aFontMetaRef_9189), (TheoraVideoStream.aIsaacCipher_9029), -121)
+                    val class348_sub47 = method2148((GradientLookupEffect.aOutgoingPacketHeader_9189), (TheoraVideoStream.aIsaacCipher_9029), -121)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_311_)
                     InterfaceComponentGroup.method3243(122, class348_sub47)
                     return
@@ -5343,10 +5343,10 @@ object ChatCommandProcessor {
         aLruByteCache_1174 = LruByteCache(4)
         anInt1177 = 0
     }
-    var aFontMetaRef_643: FontMetaRef? = FontMetaRef(3, -1)
+    var aOutgoingPacketHeader_643: OutgoingPacketHeader? = OutgoingPacketHeader(3, -1)
 
     fun method390(i: Byte) {
-        ChatCommandProcessor.aFontMetaRef_643 = null
+        ChatCommandProcessor.aOutgoingPacketHeader_643 = null
     }
 
     var anInt1128: Int = 0
@@ -5438,7 +5438,7 @@ object ChatCommandProcessor {
     fun method3199(i: Int) {
         InboundPacketHeader.aInboundPacketHeader_9550 = null
         InboundPacketHeader.aInboundPacketHeader_9552 = null
-        SpriteMaskShape.aFontMetaRef_9553 = null
+        SpriteMaskShape.aOutgoingPacketHeader_9553 = null
         ChatCommandProcessor.aString9554 = null
     }
     var anInt2560: Int = 0

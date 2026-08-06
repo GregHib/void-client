@@ -811,12 +811,12 @@ class NpcType {
             if (i != -3752) anInt1387 = 14
         }
         var aClass348_Sub42_Sub17Array9672: Array<TextureMaterialGroup?>? = arrayOfNulls<TextureMaterialGroup>(14)
-        var aFontMetaRef_9679: FontMetaRef? = FontMetaRef(27, 7)
+        var aOutgoingPacketHeader_9679: OutgoingPacketHeader? = OutgoingPacketHeader(27, 7)
         var anIntArrayArray9678: Array<IntArray?>? = null
         @JvmStatic
         fun method3269(bool: Boolean) {
             aClass348_Sub42_Sub17Array9672 = null
-            aFontMetaRef_9679 = null
+            aOutgoingPacketHeader_9679 = null
             anIntArrayArray9678 = null
             if (!bool) MapTileShape.method3270((-116).toByte())
         }

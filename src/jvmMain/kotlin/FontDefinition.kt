@@ -16,7 +16,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
             if (i >= method1186(string, abstractModelRenderers, false)) return string
             i -= method1186("...", null, false)
             var i_1_ = -1
-            if (i_0_ < 54) aFontMetaRef_1987 = null
+            if (i_0_ < 54) aOutgoingPacketHeader_1987 = null
             var i_2_ = -1
             var i_3_ = 0
             val i_4_ = string!!.length
@@ -77,7 +77,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
     }
 
     fun method1182(i: Int, i_10_: Byte, c: Char): Int {
-        if (i_10_ > -47) aFontMetaRef_1987 = null
+        if (i_10_ > -47) aOutgoingPacketHeader_1987 = null
         anInt1985++
         if (aByteArrayArray1979 != null) return aByteArrayArray1979!![i]!![c.code].toInt()
         return 0
@@ -383,19 +383,19 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
         var anInt1983: Int = 0
         var anInt1984: Int = 0
         var anInt1985: Int = 0
-        var aFontMetaRef_1987: FontMetaRef? = FontMetaRef(66, -1)
+        var aOutgoingPacketHeader_1987: OutgoingPacketHeader? = OutgoingPacketHeader(66, -1)
         var anInt1989: Int = 0
         var anInt1990: Int = 0
         var anInt1991: Int = 0
         @JvmStatic
         fun method1180(i: Byte) {
             if (i.toInt() != -76) method1180(27.toByte())
-            aFontMetaRef_1987 = null
+            aOutgoingPacketHeader_1987 = null
         }
 
         fun method1189(i: Int, i_41_: Int) {
             anInt1991++
-            if (i != -1) aFontMetaRef_1987 = null
+            if (i != -1) aOutgoingPacketHeader_1987 = null
             val class348_sub15 = (ProjectileConfigUtil.aHashtable_389!!.method3480(i_41_.toLong(), -6008) as? MenuActionNode?)
             if (class348_sub15 != null) {
                 class348_sub15.aBoolean6781 = !class348_sub15.aBoolean6781

@@ -99,31 +99,31 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
                                 bool = true
                                 if (i == 1) {
                                     WidgetComponentNode.anInt4657++
-                                    val class348_sub47 = (method2148(CustomCursorsOptionState.aFontMetaRef_5929, TheoraVideoStream.aIsaacCipher_9029, i_5_ + 7158))
+                                    val class348_sub47 = (method2148(CustomCursorsOptionState.aOutgoingPacketHeader_5929, TheoraVideoStream.aIsaacCipher_9029, i_5_ + 7158))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, `is`[i_7_])
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-75).toByte(), 0)
                                     InterfaceComponentGroup.method3243(i_5_ xor 0x1c2a, class348_sub47)
                                 } else if (i == 4) {
                                     NpcActorEntity.anInt10073++
-                                    val class348_sub47 = (method2148(RsaVarbitHandler.aFontMetaRef_4905, TheoraVideoStream.aIsaacCipher_9029, -88))
+                                    val class348_sub47 = (method2148(RsaVarbitHandler.aOutgoingPacketHeader_4905, TheoraVideoStream.aIsaacCipher_9029, -88))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), `is`[i_7_])
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-128).toByte(), 0)
                                     InterfaceComponentGroup.method3243(126, class348_sub47)
                                 } else if (i == 5) {
                                     FloatGrid.anInt4979++
-                                    val class348_sub47 = (method2148(ParticleEmitterListNode.aFontMetaRef_9684, TheoraVideoStream.aIsaacCipher_9029, -83))
+                                    val class348_sub47 = (method2148(ParticleEmitterListNode.aOutgoingPacketHeader_9684, TheoraVideoStream.aIsaacCipher_9029, -83))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(81, `is`[i_7_])
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                                     InterfaceComponentGroup.method3243(-112, class348_sub47)
                                 } else if (i == 6) {
                                     HuffmanCodec.anInt3768++
-                                    val class348_sub47 = (method2148(ConfigFlagUtilStatics.aFontMetaRef_3232, TheoraVideoStream.aIsaacCipher_9029, -83))
+                                    val class348_sub47 = (method2148(ConfigFlagUtilStatics.aOutgoingPacketHeader_3232, TheoraVideoStream.aIsaacCipher_9029, -83))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-119, `is`[i_7_])
                                     InterfaceComponentGroup.method3243(i_5_ + 7281, class348_sub47)
                                 } else if (i == 7) {
                                     WorldMapTextLabel.anInt8588++
-                                    val class348_sub47 = (method2148(ProceduralTextureGraph.aFontMetaRef_9533, TheoraVideoStream.aIsaacCipher_9029, -116))
+                                    val class348_sub47 = (method2148(ProceduralTextureGraph.aOutgoingPacketHeader_9533, TheoraVideoStream.aIsaacCipher_9029, -116))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(i_5_ xor 0x1c2c, `is`[i_7_])
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(92.toByte(), 0)
                                     InterfaceComponentGroup.method3243(127, class348_sub47)

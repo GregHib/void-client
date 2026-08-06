@@ -40,7 +40,7 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
         var anInt5211: Int = 0
 
         var anInt5216: Int = 0
-        var aFontMetaRef_5217: FontMetaRef?
+        var aOutgoingPacketHeader_5217: OutgoingPacketHeader?
 
         var anInt5218: Int = 0
 
@@ -63,7 +63,7 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
             aAbstractCameraTransform_5209 = null
             aBooleanArrayArray5225 = null
             aStringArray5223 = null
-            aFontMetaRef_5217 = null
+            aOutgoingPacketHeader_5217 = null
         }
 
 
@@ -99,7 +99,7 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
         }
 
         init {
-            aFontMetaRef_5217 = FontMetaRef(17, 8)
+            aOutgoingPacketHeader_5217 = OutgoingPacketHeader(17, 8)
             aBooleanArrayArray5225 = (arrayOf<BooleanArray?>(
                 BooleanArray(4),
                 booleanArrayOf(false, true, true, false),

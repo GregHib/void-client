@@ -100,12 +100,12 @@ class CharCodeMap : HashLinkedListNode() {
         var anInt9585: Int = 0
         var anInt9586: Int = 0
         var anInt9589: Int = 0
-        var aFontMetaRef_9590: FontMetaRef? = FontMetaRef(83, -1)
+        var aOutgoingPacketHeader_9590: OutgoingPacketHeader? = OutgoingPacketHeader(83, -1)
         var anInt9591: Int = -1
         @JvmStatic
         fun method3220(i: Byte) {
             if (i < 96) anInt9591 = 45
-            aFontMetaRef_9590 = null
+            aOutgoingPacketHeader_9590 = null
         }
 
         fun method3223() {

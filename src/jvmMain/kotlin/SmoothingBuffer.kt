@@ -10,12 +10,12 @@ class SmoothingBuffer internal constructor(@JvmField var anInt3241: Int) {
 
     companion object {
 
-        var aFontMetaRef_3237: FontMetaRef? = FontMetaRef(80, 7)
+        var aOutgoingPacketHeader_3237: OutgoingPacketHeader? = OutgoingPacketHeader(80, 7)
         var aFloat3242: Float = 0f
 
         @JvmStatic
         fun method1917(i: Int) {
-            aFontMetaRef_3237 = null
+            aOutgoingPacketHeader_3237 = null
             InboundPacketHeader.aInboundPacketHeader_3240 = null
         }
 

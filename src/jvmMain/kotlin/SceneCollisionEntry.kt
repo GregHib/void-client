@@ -35,9 +35,9 @@ class SceneCollisionEntry internal constructor(i: Int) {
     companion object {
         var anInt4392: Int = 0
         var anInt4393: Int = 0
-        var aFontMetaRef_4394: FontMetaRef? = FontMetaRef(6, -1)
+        var aOutgoingPacketHeader_4394: OutgoingPacketHeader? = OutgoingPacketHeader(6, -1)
         var aDouble4404: Double = 0.0
-        var aFontMetaRef_4405: FontMetaRef? = FontMetaRef(64, -1)
+        var aOutgoingPacketHeader_4405: OutgoingPacketHeader? = OutgoingPacketHeader(64, -1)
         var aLongArray4410: LongArray? = LongArray(100)
 
         fun method3486(i: Int, bool: Boolean, i_0_: Int, l: Long, i_1_: Int): String {
@@ -86,9 +86,9 @@ class SceneCollisionEntry internal constructor(i: Int) {
         @JvmStatic
         fun method3487(i: Int) {
             aLongArray4410 = null
-            aFontMetaRef_4394 = null
-            if (i >= -45) aFontMetaRef_4405 = null
-            aFontMetaRef_4405 = null
+            aOutgoingPacketHeader_4394 = null
+            if (i >= -45) aOutgoingPacketHeader_4405 = null
+            aOutgoingPacketHeader_4405 = null
         }
     }
 }

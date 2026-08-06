@@ -28,7 +28,7 @@ object NpcCountAccessor {
 
     fun method1328(i: Int) {
         if (i != -26162) anIntArray2280 = null
-        FontMetaRef.aLruByteCache_4327!!.method587(-118)
+        OutgoingPacketHeader.aLruByteCache_4327!!.method587(-118)
         anInt2281++
         ParticleGeometry.aLruByteCache_4417!!.method587(-89)
         SceneryDetailOptionState.aLruByteCache_6096!!.method587(-87)

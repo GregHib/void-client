@@ -50,7 +50,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
         var anInt6805: Int = 0
         var anInt6807: Int = 0
         var anInt6808: Int = 0
-        var aFontMetaRef_6814: FontMetaRef? = FontMetaRef(63, 3)
+        var aOutgoingPacketHeader_6814: OutgoingPacketHeader? = OutgoingPacketHeader(63, 3)
         var anInt6816: Int = 0
         var anInt6817: Int = 0
         var anInt6818: Int = 0
@@ -62,7 +62,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
 
         @JvmStatic
         fun method2936(i: Byte) {
-            if (i.toInt() == -25) aFontMetaRef_6814 = null
+            if (i.toInt() == -25) aOutgoingPacketHeader_6814 = null
         }
 
         fun method2938(i: Byte) {

@@ -173,7 +173,7 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
         var anInt2313: Int = 0
         var anInt2314: Int = 0
 
-        var aFontMetaRef_2315: FontMetaRef?
+        var aOutgoingPacketHeader_2315: OutgoingPacketHeader?
         var anInt2317: Int = 0
         var anInt2318: Int = 0
         var anInt2319: Int = 0
@@ -267,12 +267,12 @@ class SizeBoundedSoftCache internal constructor(private var anInt2311: Int) {
             anIntArray2330 = null
             aRsaPacketDecoder_2327 = null
             aBooleanArray2326 = null
-            aFontMetaRef_2315 = null
+            aOutgoingPacketHeader_2315 = null
             if (i > -103) aBooleanArray2326 = null
         }
 
         init {
-            aFontMetaRef_2315 = FontMetaRef(18, 3)
+            aOutgoingPacketHeader_2315 = OutgoingPacketHeader(18, 3)
         }
     }
 }

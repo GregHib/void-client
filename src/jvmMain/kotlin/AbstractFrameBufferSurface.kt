@@ -30,7 +30,7 @@ abstract class AbstractFrameBufferSurface : LinkedListNode() {
 
         var anInt6924: Int = 0
 
-        var aFontMetaRef_6925: FontMetaRef?
+        var aOutgoingPacketHeader_6925: OutgoingPacketHeader?
 
         var aString6926: String?
 
@@ -87,9 +87,9 @@ abstract class AbstractFrameBufferSurface : LinkedListNode() {
 
         @JvmStatic
         fun method3010(i: Int) {
-            aFontMetaRef_6925 = null
+            aOutgoingPacketHeader_6925 = null
             aBigInteger6921 = null
-            if (i != -1316) aFontMetaRef_6925 = null
+            if (i != -1316) aOutgoingPacketHeader_6925 = null
             aString6926 = null
         }
 
@@ -225,7 +225,7 @@ abstract class AbstractFrameBufferSurface : LinkedListNode() {
         init {
             aBigInteger6921 = Loader.LOGIN_SERVER_RSA_MODULUS
             aString6926 = null
-            aFontMetaRef_6925 = FontMetaRef(31, 1)
+            aOutgoingPacketHeader_6925 = OutgoingPacketHeader(31, 1)
         }
     }
 }

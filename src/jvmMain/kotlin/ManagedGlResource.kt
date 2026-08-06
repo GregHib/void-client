@@ -40,7 +40,7 @@ class ManagedGlResource internal constructor(var_ha_Sub2: OpenGlRenderer?, l: Lo
         fun method1867(i: Int) {
             anInt3155++
             SceneNodeDeque.anInt1498++
-            val class348_sub47 = method2148(TileSceneEntity.aFontMetaRef_8724, TheoraVideoStream.aIsaacCipher_9029, -99)
+            val class348_sub47 = method2148(TileSceneEntity.aOutgoingPacketHeader_8724, TheoraVideoStream.aIsaacCipher_9029, -99)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
             InterfaceComponentGroup.method3243(118, class348_sub47)
         }

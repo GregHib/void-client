@@ -1,5 +1,5 @@
-import FontMetaRef.Companion.aBoolean4328
-import FontMetaRef.Companion.anInt4324
+import OutgoingPacketHeader.Companion.aBoolean4328
+import OutgoingPacketHeader.Companion.anInt4324
 import WorldMapAreaLabel.Companion.method3570
 
 /* Class122 - Decompiled by JODE

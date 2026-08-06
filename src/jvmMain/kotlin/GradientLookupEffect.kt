@@ -325,7 +325,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
 
     companion object {
 
-        var aFontMetaRef_9189: FontMetaRef? = FontMetaRef(28, 2)
+        var aOutgoingPacketHeader_9189: OutgoingPacketHeader? = OutgoingPacketHeader(28, 2)
 
         var anInt9190: Int = 0
 
@@ -375,7 +375,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
 
         @JvmStatic
         fun method3077(i: Byte) {
-            aFontMetaRef_9189 = null
+            aOutgoingPacketHeader_9189 = null
             InboundPacketHeader.aInboundPacketHeader_9197 = null
             if (i.toInt() != -98) method3077(27.toByte())
             aSeqDefinitionCache_9195 = null

@@ -176,10 +176,10 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
         var anInt9296: Int = 0
         var aTextureFormatInfo_9303: TextureFormatInfo? = TextureFormatInfo(1)
 
-        var aFontMetaRef_9304: FontMetaRef? = FontMetaRef(20, -1)
+        var aOutgoingPacketHeader_9304: OutgoingPacketHeader? = OutgoingPacketHeader(20, -1)
         @JvmStatic
         fun method3110(i: Int) {
-            aFontMetaRef_9304 = null
+            aOutgoingPacketHeader_9304 = null
             aTextureFormatInfo_9303 = null
             if (i != -1633784916) aTextureFormatInfo_9303 = null
             InboundPacketHeader.aInboundPacketHeader_9285 = null

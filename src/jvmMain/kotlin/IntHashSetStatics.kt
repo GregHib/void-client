@@ -20,7 +20,7 @@ object IntHashSetStatics {
             if (method2066(106.toByte())) {
                 if (ArbFogMaterialPass.aStringArray6200 == null) method249(2)
                 HeapDiagnosticsHolder.anInt2254 = 0
-                FontMetaRef.aBoolean4328 = true
+                OutgoingPacketHeader.aBoolean4328 = true
             }
         }
     }

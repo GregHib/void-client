@@ -16,7 +16,7 @@ abstract class TextureGenerator {
 
         var aStringArray2494: Array<String?>?
 
-        var aFontMetaRef_2495: FontMetaRef?
+        var aOutgoingPacketHeader_2495: OutgoingPacketHeader?
 
         var aString2496: String?
 
@@ -29,8 +29,8 @@ abstract class TextureGenerator {
             aStringArray2494 = null
             anIntArray2497 = null
             aString2496 = null
-            aFontMetaRef_2495 = null
-            if (i != 25) aFontMetaRef_2495 = null
+            aOutgoingPacketHeader_2495 = null
+            if (i != 25) aOutgoingPacketHeader_2495 = null
         }
 
         @JvmStatic
@@ -61,7 +61,7 @@ abstract class TextureGenerator {
         init {
             aRgbColorPalette_2491 = RgbColorPalette(13, -1)
             aStringArray2494 = arrayOfNulls<String>(100)
-            aFontMetaRef_2495 = FontMetaRef(35, 5)
+            aOutgoingPacketHeader_2495 = OutgoingPacketHeader(35, 5)
             aString2496 = ""
             anIntArray2497 = IntArray(25)
         }
