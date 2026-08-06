@@ -11,8 +11,6 @@ internal object PlayerAppearanceUpdateDecoder {
 
     var aBoolean4542: Boolean = false
 
-    var aLruByteCache_4543: LruByteCache? = LruByteCache(8)
-
     var anInt4544: Int = -1
     var anInt4545: Int = -1
 
@@ -32,8 +30,8 @@ internal object PlayerAppearanceUpdateDecoder {
 
     @JvmStatic
     fun method3613(i: Int) {
-        if (i != 64) PlayerAppearanceUpdateDecoder.method3612(-7, null)
-        aLruByteCache_4543 = null
+        if (i != 64) method3612(-7, null)
+        NamedIdRecord.aLruByteCache_4543 = null
     }
 
     @JvmStatic
