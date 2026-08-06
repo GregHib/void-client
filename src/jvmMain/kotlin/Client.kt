@@ -52,7 +52,7 @@ import Gl3dTexture.Companion.method247
 import GlRectangleTexture.Companion.method251
 import CharCountUtil.method255
 import ModelDefinitionLoader.Companion.method1208
-import HeadIconRenderer.Companion.method1209
+import HeadIconRendererStatics.method1209
 import CompositeNpcModelBuilder.Companion.method1235
 import LinkedListIterator.Companion.method1239
 import LinkedListIterator.Companion.method1242
@@ -104,7 +104,7 @@ import MidiTrackReader.Companion.method1493
 import CircleDrawer.method1497
 import FrameBufferObject.Companion.method1499
 import BufferedOutputStreamWorker.Companion.method1525
-import HeadIconRenderer.Companion.method1529
+import HeadIconRendererStatics.method1529
 import CameraRotationStubStatics.method288
 import VorbisFloorDecoder.Companion.method1536
 import CompressedBlockDecoder.method1551
@@ -4104,7 +4104,7 @@ class Client : GameAppletFrame() {
                 val i_194_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-92).toByte())
                 var i_195_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-127)
                 if (i_195_ == 65535) i_195_ = -1
-                HeadIconRenderer.method1212(i_194_, i_195_, -1, i)
+                HeadIconRendererStatics.method1212(i_194_, i_195_, -1, i)
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }

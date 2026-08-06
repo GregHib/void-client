@@ -762,7 +762,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             HardKeyedCacheEntryReference.anInt10439 = 0
             WorldMapElement.anInt4634 = 0
             LinkedNodeListIterator.anInt1654 = 0
-            HeadIconRenderer.anInt2065 = 0
+            HeadIconRendererStatics.anInt2065 = 0
             HashLinkedListNodeStatics.anInt7062 = 0
             OpenGlRenderer.anInt7599 = 0
             SceneEntityModel.anInt6407 = 0
@@ -998,7 +998,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ModelVertexColorBuffer.anInt6576 = 0
             SpriteArchiveLoader.anInt378 = 0
             GlRenderDevice.anInt9827 = 0
-            HeadIconRenderer.anInt2063 = 0
+            HeadIconRendererStatics.anInt2063 = 0
             FlickeringEffectsOptionState.anInt5918 = 0
             HitsplatDefinition.anInt2012 = 0
             GlIndexBufferArb.anInt8506 = 0
@@ -2071,7 +2071,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             BlankTextureNode.anInt9256 = 0
             NativeRenderer.anInt7944 = 0
             AbstractCameraTransformStatics.anInt1596 = 0
-            HeadIconRenderer.anInt551 = 0
+            HeadIconRendererStatics.anInt551 = 0
             LocDefinitionCache.anInt3445 = 0
             ChatCommandProcessor.anInt1171 = 0
             ProjectedGroundDecor.anInt10235 = 0
@@ -2758,7 +2758,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RgbNoiseTexture.anInt5301 = 0
             SceneObjectEntity.anInt8735 = 0
             Player.anInt10525 = 0
-            HeadIconRenderer.anInt2066 = 0
+            HeadIconRendererStatics.anInt2066 = 0
             Gl3dTexture.anInt8627 = 0
             GlRenderDevice.anInt9886 = 0
             OggMediaStream.anInt1002 = 0
@@ -3106,7 +3106,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             LinkedListIterator.anInt2120 = 0
             MinimapSquareDrawer.anInt6324 = 0
             AudioMixerScheduler.anInt10462 = 0
-            HeadIconRenderer.anInt2064 = 0
+            HeadIconRendererStatics.anInt2064 = 0
             VarpStore.anInt5062 = 0
             ByteBuffer.anInt7196 = 0
             CalendarUtil.anInt4137 = 0
@@ -3920,7 +3920,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             UnderlayDefinition.anInt2889 = 0
             NativeRenderer.anInt7933 = 0
             NativeRenderer.anInt7898 = 0
-            HeadIconRenderer.anInt2059 = 0
+            HeadIconRendererStatics.anInt2059 = 0
             WallSceneEntity.anInt9954 = 0
             ModelWallEntity.anInt10144 = 0
             LoadProgressCounters.anInt2450 = 0

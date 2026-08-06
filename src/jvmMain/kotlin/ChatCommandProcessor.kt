@@ -3895,7 +3895,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 3201) {
-                    HeadIconRenderer.method1212(255, anIntArray1149!![--anInt1173], -1, 50)
+                    HeadIconRendererStatics.method1212(255, anIntArray1149!![--anInt1173], -1, 50)
                     return
                 }
                 if (i == 3202) {
@@ -3910,7 +3910,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3204) {
                     anInt1173 -= 3
-                    HeadIconRenderer.method1212(anIntArray1149!![anInt1173 + 1], anIntArray1149!![anInt1173], -1, anIntArray1149!![anInt1173 + 2])
+                    HeadIconRendererStatics.method1212(anIntArray1149!![anInt1173 + 1], anIntArray1149!![anInt1173], -1, anIntArray1149!![anInt1173 + 2])
                     return
                 }
                 if (i == 3205) {

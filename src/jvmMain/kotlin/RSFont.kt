@@ -218,8 +218,8 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
                                             if (string.startsWith("shad=")) ConnectionStateRefs.anInt320 = ((0xffffff.inv() and (ParamMap.anInt9492)) or (ColourAdjustment.method450(-20188, string.substring(5), 16)))
                                             else if (string == "shad") ConnectionStateRefs.anInt320 = (0xffffff.inv() and (ParamMap.anInt9492))
                                             else if (string != "/shad") {
-                                                if (string == "br") method2579((HeadIconRenderer.anInt2061), 117, (PerlinTextureProvider.anInt5807))
-                                            } else ConnectionStateRefs.anInt320 = HeadIconRenderer.anInt2061
+                                                if (string == "br") method2579((HeadIconRendererStatics.anInt2061), 117, (PerlinTextureProvider.anInt5807))
+                                            } else ConnectionStateRefs.anInt320 = HeadIconRendererStatics.anInt2061
                                         } else ConnectionStateRefs.anInt320 = 0
                                     } else DirectionalStripeTextureNode.anInt9101 = -1
                                 } else DirectionalStripeTextureNode.anInt9101 = (ParamMap.anInt9492 and 0xffffff.inv())
@@ -295,8 +295,8 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
         val i_87_ = -28 / ((56 - i_85_) / 49)
         anInt4053++
         Player.anInt10567 = -1
-        HeadIconRenderer.anInt2061 = i
-        ConnectionStateRefs.anInt320 = HeadIconRenderer.anInt2061
+        HeadIconRendererStatics.anInt2061 = i
+        ConnectionStateRefs.anInt320 = HeadIconRendererStatics.anInt2061
     }
 
     private fun method2580(string: String, i: Int, i_88_: Int) {

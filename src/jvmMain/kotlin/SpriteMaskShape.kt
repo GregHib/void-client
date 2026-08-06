@@ -836,7 +836,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             ParticleEmitterListNode.method3275(1, i_75_, i_74_)
                         }
                         if (i_76_ == 3) {
-                            HeadIconRenderer.anInt2065++
+                            HeadIconRendererStatics.anInt2065++
                             SpriteArchiveLoader.anInt385 = i_73_
                             LinkedListNodeStatics.anInt4292 = 0
                             FogOptionState.anInt6048 = 2

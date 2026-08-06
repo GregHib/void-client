@@ -647,7 +647,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                         var abstractModelRenderer: AbstractModelRenderer? = null
                         if (class42.anInt578 != -1) {
                             abstractModelRenderer = class42.method374(false, var_renderer!!, 127.toByte())
-                            if (abstractModelRenderer != null) HeadIconRenderer.method1211(i, abstractModelRenderer, i_6_, widgetComponent, var_sprite, i_8_, 2, i_5_)
+                            if (abstractModelRenderer != null) HeadIconRendererStatics.method1211(i, abstractModelRenderer, i_6_, widgetComponent, var_sprite, i_8_, 2, i_5_)
                         }
                         if (class42.aString597 == null) break
                         var i_29_ = 0
@@ -730,7 +730,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                 val i_19_ = (-RegionMapDecoder.regionTileY + ((class348_sub37.aLong4291) shr 14 and 0x3fffL).toInt())
                                 val i_20_ = -(i_4_ / 128) + (2 + i_18_ * 4)
                                 val i_21_ = -(i_3_ / 128) + (2 + i_19_ * 4)
-                                HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![0]), i, widgetComponent, var_aa, i_21_, i_2_ xor 0x59b2, i_20_)
+                                HeadIconRendererStatics.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![0]), i, widgetComponent, var_aa, i_21_, i_2_ xor 0x59b2, i_20_)
                             }
                             class348_sub37 = (ModelBatchBaseStatics.aHashtable_1895!!.method3482(0) as? HashTableContainer)
                         }
@@ -746,7 +746,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                         val i_23_ = (-(i_4_ / 128) + (npc.x) / 128)
                                         val i_24_ = ((npc.y) / 128 + -(i_3_ / 128))
                                         if (class79.anInt1383 != -1) method2385(widgetComponent, i_1_, var_aa, class79.anInt1383, i_23_, i, ((-73).toByte()).toByte(), i_24_, var_renderer)
-                                        else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![1]), i, widgetComponent, var_aa, i_24_, 2, i_23_)
+                                        else HeadIconRendererStatics.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![1]), i, widgetComponent, var_aa, i_24_, 2, i_23_)
                                     }
                                 }
                             }
@@ -781,11 +781,11 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                 if ((LocalPlayerState.aPlayer_1907!!.anInt10542) != 0 && (player.anInt10542 != 0) && (player.anInt10542 == (LocalPlayerState.aPlayer_1907!!.anInt10542))) bool_32_ = true
                                 if (!player.aBoolean10554) {
                                     if (!bool) {
-                                        if (bool_30_) HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![5]), i, widgetComponent, var_aa, i_28_, i_2_ + -22958, i_27_)
-                                        else if (!bool_32_) HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![2]), i, widgetComponent, var_aa, i_28_, 2, i_27_)
-                                        else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![4]), i, widgetComponent, var_aa, i_28_, 2, i_27_)
-                                    } else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![3]), i, widgetComponent, var_aa, i_28_, 2, i_27_)
-                                } else HeadIconRenderer.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![6]), i, widgetComponent, var_aa, i_28_, i_2_ + -22958, i_27_)
+                                        if (bool_30_) HeadIconRendererStatics.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![5]), i, widgetComponent, var_aa, i_28_, i_2_ + -22958, i_27_)
+                                        else if (!bool_32_) HeadIconRendererStatics.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![2]), i, widgetComponent, var_aa, i_28_, 2, i_27_)
+                                        else HeadIconRendererStatics.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![4]), i, widgetComponent, var_aa, i_28_, 2, i_27_)
+                                    } else HeadIconRendererStatics.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![3]), i, widgetComponent, var_aa, i_28_, 2, i_27_)
+                                } else HeadIconRendererStatics.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![6]), i, widgetComponent, var_aa, i_28_, i_2_ + -22958, i_27_)
                             }
                         }
                         val class302s = MultiFieldRecord.aMinimapPositionStateArray6897s
@@ -824,7 +824,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                             if (MediaStreamClient.anInt3203 != 0) {
                                 val i_40_ = (-(i_4_ / 128) + (MediaStreamClient.anInt3203 * 4 + 2) - (-(2 * LocalPlayerState.aPlayer_1907!!.method2436(77.toByte())) - -2))
                                 val i_41_ = (4 * TerrainChunkBuilder.anInt1548 - (-2 + i_3_ / 128) + (2 * (LocalPlayerState.aPlayer_1907!!.method2436(59.toByte()) - 1)))
-                                HeadIconRenderer.method1211(i_1_, (SpriteStore.aAbstractModelRendererArray367!![(if (!ModelKeyBuilder.aBoolean6759) 0 else 1)]), i, widgetComponent, var_aa, i_41_, 2, i_40_)
+                                HeadIconRendererStatics.method1211(i_1_, (SpriteStore.aAbstractModelRendererArray367!![(if (!ModelKeyBuilder.aBoolean6759) 0 else 1)]), i, widgetComponent, var_aa, i_41_, 2, i_40_)
                             }
                             if (!LocalPlayerState.aPlayer_1907!!.aBoolean10551) var_renderer.method3675(3, ((-125).toByte()).toByte(), -1 + (i - -((widgetComponent.anInt709) / 2)), -1 + ((widgetComponent.anInt789) / 2 + i_1_), 3, -1)
                         }

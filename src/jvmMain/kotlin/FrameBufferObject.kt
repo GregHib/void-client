@@ -295,11 +295,11 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
             anInt4890++
             if (RgbColorPalette.aBoolean1236 && !method1296(true)) {
                 if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1) {
-                    if (HeadIconRenderer.aClass348_Sub16_Sub3_2718 != null) method3086(2, HeadIconRenderer.aClass348_Sub16_Sub3_2718, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), CachedRgbNoiseTexture.aJs5Archive_8667, false, 0, SlotBinding.anInt3428)
+                    if (HeadIconRendererStatics.aClass348_Sub16_Sub3_2718 != null) method3086(2, HeadIconRendererStatics.aClass348_Sub16_Sub3_2718, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), CachedRgbNoiseTexture.aJs5Archive_8667, false, 0, SlotBinding.anInt3428)
                     else method2732(0, SlotBinding.anInt3428, false, 124, CachedRgbNoiseTexture.aJs5Archive_8667, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
                 }
                 RgbColorPalette.aBoolean1236 = false
-                HeadIconRenderer.aClass348_Sub16_Sub3_2718 = null
+                HeadIconRendererStatics.aClass348_Sub16_Sub3_2718 = null
             } else if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1 && !method1296(true)) {
                 anInt3973++
                 val class348_sub47 = method2148(OpenGlRenderer.aOutgoingPacketHeader_7554, TheoraVideoStream.aIsaacCipher_9029, -107)

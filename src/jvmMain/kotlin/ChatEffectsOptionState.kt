@@ -33,7 +33,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
     override fun method1716(bool: Boolean) {
         anInt5864++
         if (method1735(bool)) {
-            if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-97).toByte()) && !HeadIconRenderer.method1210((-94).toByte(), this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 1
+            if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-97).toByte()) && !HeadIconRendererStatics.method1210((-94).toByte(), this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 1
             if (this.aClass348_Sub51_3136.aClass239_Sub8_7254!!.method1751(-32350) == 1) this.anInt3138 = 1
         }
         if (this.anInt3138 == 3) this.anInt3138 = 2
@@ -44,7 +44,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
     override fun method1714(i: Int, i_24_: Int): Int {
         anInt5866++
         if (method576(i_24_, 29)) {
-            if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-97).toByte()) && !HeadIconRenderer.method1210((-113).toByte(), this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
+            if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-97).toByte()) && !HeadIconRendererStatics.method1210((-113).toByte(), this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
             if (this.aClass348_Sub51_3136.aClass239_Sub8_7254!!.method1751(-32350) == 1) return 3
         }
         if (i_24_ == i) return 3
