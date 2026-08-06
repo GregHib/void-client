@@ -51,7 +51,7 @@ class CompositeNpcModelBuilder {
                     val class17_18_ = widgetCache!!.method835((loadProgressCounters[i_17_]!!.anInt2454), 7)
                     if (class17_18_.anIntArray237 != null) {
                         bool_15_ = true
-                        MapSceneTile.aWidgetDefinitionArray1048s!![i_17_] = class17_18_
+                        MapSceneTileStatics.aWidgetDefinitionArray1048s!![i_17_] = class17_18_
                         val i_19_ = loadProgressCounters[i_17_]!!.anInt2451
                         val i_20_ = loadProgressCounters[i_17_]!!.anInt2455
                         var i_21_ = class17_18_.anIntArray237[i_19_]
@@ -272,7 +272,7 @@ class CompositeNpcModelBuilder {
             while (i_16_ > i_60_) {
                 DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_60_] = null
                 LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_60_] = null
-                MapSceneTile.aWidgetDefinitionArray1048s!![i_60_] = null
+                MapSceneTileStatics.aWidgetDefinitionArray1048s!![i_60_] = null
                 i_60_++
             }
             return class64_51_

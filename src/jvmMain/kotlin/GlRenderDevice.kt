@@ -236,7 +236,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         try {
             anInt9852++
             if (bool_2_ == false) {
-                glTexEnvi(8960, i + 34176, MapSceneTile.method531(101.toByte(), trigLookupTables))
+                glTexEnvi(8960, i + 34176, MapSceneTileStatics.method531(101.toByte(), trigLookupTables))
                 if (bool) glTexEnvi(8960, i + 34192, if (!bool_3_) 770 else 771)
                 else glTexEnvi(8960, i + 34192, if (!bool_3_) 768 else 769)
             }
@@ -957,7 +957,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     override fun method3829(trigLookupTables: TrigLookupTables?, i: Int, i_71_: Byte, bool: Boolean) {
         try {
             if (i_71_.toInt() == 80) {
-                glTexEnvi(8960, i + 34184, MapSceneTile.method531(123.toByte(), trigLookupTables))
+                glTexEnvi(8960, i + 34184, MapSceneTileStatics.method531(123.toByte(), trigLookupTables))
                 anInt9885++
                 glTexEnvi(8960, 34200 + i, if (bool) 771 else 770)
             }

@@ -421,7 +421,7 @@ import OggMediaStream.Companion.method518
 import OggCacheStream.Companion.method523
 import ConnectionStateType.Companion.method526
 import ConnectionStateType.Companion.method527
-import MapSceneTile.Companion.method530
+import MapSceneTileStatics.method530
 import NoiseTextureGenerator.Companion.method548
 import GrayscaleNoiseTexture.Companion.method553
 import ScrollingNoiseTexture.Companion.method556
@@ -3709,7 +3709,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (InboundPacketHeader.aInboundPacketHeader_1540 == InboundPacketHeader.aInboundPacketHeader_6584) {
-                MapSceneTile.aBoxedIntHolder_1055 = WidgetTextConfig.method360((-57).toByte(), CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255))
+                MapSceneTileStatics.aBoxedIntHolder_1055 = WidgetTextConfig.method360((-57).toByte(), CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255))
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }

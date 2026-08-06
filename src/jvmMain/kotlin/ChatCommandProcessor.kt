@@ -53,7 +53,7 @@ import WorldMapLabel.Companion.method3569
 import ColourAdjustment.Companion.method449
 import MinimapPolygonDrawer.Companion.method468
 import OggCacheStream.Companion.method524
-import MapSceneTile.Companion.method529
+import MapSceneTileStatics.method529
 import DirectionPath.Companion.method532
 import NoiseTextureGenerator.Companion.method544
 import CompositeRgbNoiseTexture.Companion.method572
@@ -245,13 +245,13 @@ object ChatCommandProcessor {
             if (i == 5001) {
                 anInt1173 -= 3
                 ShaderProgramStatics.anInt7276 = anIntArray1149!![anInt1173]
-                MapSceneTile.aBoxedIntHolder_1055 = WidgetTextConfig.method360((-57).toByte(), anIntArray1149!![anInt1173 + 1])
-                if (MapSceneTile.aBoxedIntHolder_1055 == null) MapSceneTile.aBoxedIntHolder_1055 = MinimapRenderer.aBoxedIntHolder_1591
+                MapSceneTileStatics.aBoxedIntHolder_1055 = WidgetTextConfig.method360((-57).toByte(), anIntArray1149!![anInt1173 + 1])
+                if (MapSceneTileStatics.aBoxedIntHolder_1055 == null) MapSceneTileStatics.aBoxedIntHolder_1055 = MinimapRenderer.aBoxedIntHolder_1591
                 BufferToggleState.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
                 val class348_sub47 = method2148(LongKeyNode.aOutgoingPacketHeader_6766, (TheoraVideoStream.aIsaacCipher_9029), -111)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, ShaderProgramStatics.anInt7276)
-                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, MapSceneTile.aBoxedIntHolder_1055!!.anInt2970)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, MapSceneTileStatics.aBoxedIntHolder_1055!!.anInt2970)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, BufferToggleState.anInt3713)
                 InterfaceComponentGroup.method3243(-77, class348_sub47)
                 return
@@ -292,9 +292,9 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5005) {
-                if (MapSceneTile.aBoxedIntHolder_1055 == null) anIntArray1149!![anInt1173++] = -1
+                if (MapSceneTileStatics.aBoxedIntHolder_1055 == null) anIntArray1149!![anInt1173++] = -1
                 else {
-                    anIntArray1149!![anInt1173++] = MapSceneTile.aBoxedIntHolder_1055!!.anInt2970
+                    anIntArray1149!![anInt1173++] = MapSceneTileStatics.aBoxedIntHolder_1055!!.anInt2970
                     return
                 }
                 return

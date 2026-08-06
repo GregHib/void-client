@@ -875,7 +875,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
             if (configFlagUtil == GlElementArrayBuffer.aConfigFlagUtil_4835) return 1
             if (configFlagUtil != LightDetailOptionState.aConfigFlagUtil_6030) {
                 if (configFlagUtil != GlCubemapLightPass.aConfigFlagUtil_9477) {
-                    if (MapSceneTile.aConfigFlagUtil_1051 == configFlagUtil) return 4
+                    if (MapSceneTileStatics.aConfigFlagUtil_1051 == configFlagUtil) return 4
                     if (configFlagUtil == WaterDetailOptionState.aConfigFlagUtil_5989) return 256
                 } else return 3
             } else return 2
