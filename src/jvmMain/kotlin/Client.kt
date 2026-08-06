@@ -397,7 +397,7 @@ import LocConfigModelBuilder.Companion.method3560
 import WorldMapLabel.Companion.method3567
 import WorldMapTextLabel.Companion.method3572
 import WorldMapIconLabel.Companion.method3574
-import CubemapTextureFactory.Companion.method3584
+import CubemapTextureFactoryStatics.method3584
 import MouseInputTracker.Companion.method3609
 import BufferedFileReader.method3611
 import PlayerAppearanceUpdateDecoder.method3613

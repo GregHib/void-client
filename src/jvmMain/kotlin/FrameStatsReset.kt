@@ -1081,7 +1081,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ItemDefinition.anInt2776 = 0
             TurbulenceTextureNode.anInt9309 = 0
             GlslEnvMaterialPass.anInt6269 = 0
-            CubemapTextureFactory.anInt4521 = 0
+            CubemapTextureFactoryStatics.anInt4521 = 0
             OpenGlModel.anInt5550 = 0
             NativeTerrainTile.anInt8319 = 0
             NativeRenderer.anInt7985 = 0
@@ -1391,7 +1391,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ScriptCompilerThread.anInt1737 = 0
             GlTexture.anInt4854 = 0
             JagGlToolkitFactory.anInt1529 = 0
-            CubemapTextureFactory.anInt4523 = 0
+            CubemapTextureFactoryStatics.anInt4523 = 0
             ProjectedGroundDecor.anInt10212 = 0
             OpenGlRenderer.anInt7718 = 0
             SynthVoiceGroup.anInt8858 = 0

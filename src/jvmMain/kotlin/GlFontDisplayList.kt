@@ -1,4 +1,4 @@
-import CubemapTextureFactory.Companion.method3583
+import CubemapTextureFactoryStatics.method3583
 import jaggl.OpenGL.Companion.glBegin
 import jaggl.OpenGL.Companion.glColor4ub
 import jaggl.OpenGL.Companion.glDisable
