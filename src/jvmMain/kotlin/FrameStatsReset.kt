@@ -160,7 +160,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CellNoiseTextureNode.anInt9295 = 0
             AbstractModel.anInt1132 = 0
             HudTabPanel.anInt2990 = 0
-            StringValueNode.anInt7114 = 0
+            StringValueNodeStatics.anInt7114 = 0
             ScrollbarComponent.anInt8337 = 0
             ShortKeyNodeStatics.anInt6910 = 0
             MapRegionLoaderThread.anInt4203 = 0
@@ -1796,7 +1796,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7576 = 0
             GameAppletFrame.anInt21 = 0
             ParticleDetailOptionState.anInt6022 = 0
-            StringValueNode.anInt7110 = 0
+            StringValueNodeStatics.anInt7110 = 0
             Js5Archive.anInt660 = 0
             OpenGlRenderer.anInt7560 = 0
             LongHashTable.anInt450 = 0
@@ -1911,7 +1911,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ScreenAnchorAlignment.anInt2882 = 0
             BufferPositionTracker.anInt3148 = 0
             Npc.anInt10502 = 0
-            StringValueNode.anInt7109 = 0
+            StringValueNodeStatics.anInt7109 = 0
             ViewportTransform.anInt3665 = 0
             FontDefinition.anInt1984 = 0
             BrightnessOptionState.anInt5896 = 0
@@ -2188,7 +2188,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ProjectileDefinition.anInt3845 = 0
             NativeRenderNode.anInt10473 = 0
             ParticleTileShape.anInt8821 = 0
-            StringValueNode.anInt7112 = 0
+            StringValueNodeStatics.anInt7112 = 0
             IndexedFileCache.anInt1934 = 0
             OpenGlRenderer.anInt7557 = 0
             NativeRenderer.anInt7965 = 0

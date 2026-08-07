@@ -106,7 +106,7 @@ class GlVertexBufferArb internal constructor(glRenderDevice: GlRenderDevice, boo
         @JvmStatic
         fun method2128(i: Int, class348_sub49: ByteBuffer): WorldMapPolygonIconLabel {
             anInt8495++
-            val class369_sub3 = StringValueNode.method3322(0, class348_sub49)
+            val class369_sub3 = StringValueNodeStatics.method3322(0, class348_sub49)
             val i_5_ = class348_sub49.readShort(13638)
             return (WorldMapPolygonIconLabel(class369_sub3.aScreenAnchorAlignment_4968, class369_sub3.aTileRenderState_4973, class369_sub3.anInt4970, class369_sub3.anInt4959, class369_sub3.anInt4971, class369_sub3.anInt4963, class369_sub3.anInt4966, class369_sub3.anInt4965, class369_sub3.anInt4961, class369_sub3.anInt8599, class369_sub3.anInt8595, class369_sub3.anInt8603, class369_sub3.anInt8602, class369_sub3.anInt8600, class369_sub3.anInt8597, i_5_))
         }

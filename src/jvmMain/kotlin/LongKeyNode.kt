@@ -67,7 +67,7 @@ class LongKeyNode : LinkedListNode {
             var class348_sub47: OutgoingPacketNode? = null
             if (i_4_ == 0) {
                 class348_sub47 = method2148(TextureGenerator.aOutgoingPacketHeader_2495, TheoraVideoStream.aIsaacCipher_9029, -100)
-                StringValueNode.anInt7112++
+                StringValueNodeStatics.anInt7112++
             }
             if (i_4_ == 1) {
                 class348_sub47 = method2148(HeightMapNoise.aOutgoingPacketHeader_3825, TheoraVideoStream.aIsaacCipher_9029, -93)

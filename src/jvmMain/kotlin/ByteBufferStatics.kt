@@ -139,7 +139,7 @@ object ByteBufferStatics {
             if (GroundDecorSceneEntity.method2402(i_71_, (-119).toByte())) {
                 ItemModelDefinition.anInt443 = 1
                 AnimationFrameTable.anInt489 = 0
-                StringValueNode.Companion.anInt7115 = 1
+                StringValueNodeStatics.anInt7115 = 1
                 CompositeNpcModelBuilder.anInt2101 = 0
                 LocDefinitionCache.anInt3441 = 0
                 method3177(-111, true)

@@ -111,7 +111,7 @@ class CharCodeMap : HashLinkedListNode() {
         fun method3223() {
             for (i in 0..<DrawListState.anInt1477) {
                 val class318_sub1_sub3 = ModelDataCache.aClass318_Sub1_Sub3Array357!![i]!!
-                StringValueNode.method3320(class318_sub1_sub3, true)
+                StringValueNodeStatics.method3320(class318_sub1_sub3, true)
                 ModelDataCache.aClass318_Sub1_Sub3Array357!![i] = null
             }
             DrawListState.anInt1477 = 0

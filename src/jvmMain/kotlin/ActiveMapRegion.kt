@@ -16,7 +16,7 @@ object ActiveMapRegion : MapRegionLoader() {
 
     @JvmStatic
     fun method770(i: Int, i_1_: Int, i_2_: Int, class318_sub1_sub1: TileSceneEntity) {
-        val class357 = StringValueNode.method3321(i, i_1_, i_2_)
+        val class357 = StringValueNodeStatics.method3321(i, i_1_, i_2_)
         if (class357 != null) {
             class357.aClass318_Sub1_Sub1_4402 = class318_sub1_sub1
             val i_3_ = if (ActorEntity.aTerrainTileArray5191 == ActorEntity.aTerrainTileArray4142) 1 else 0

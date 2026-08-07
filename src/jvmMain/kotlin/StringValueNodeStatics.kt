@@ -1,0 +1,85 @@
+import ParticleDefLoader.Companion.method1376
+import MapSceneDefLoader.Companion.method1394
+import LongKeyNode.Companion.method2808
+import java.io.IOException
+
+object StringValueNodeStatics {
+    var anInt7109: Int = 0
+    var anInt7110: Int = 0
+    var anInt7112: Int = 0
+    var anInt7114: Int = 0
+
+    var anInt7115: Int = 1
+
+    @JvmStatic
+    fun method3317(i: Byte) {
+        if (Texture2DProvider.aFileOutputStream6323 != null) {
+            try {
+                Texture2DProvider.aFileOutputStream6323!!.close()
+            } catch (ioexception: IOException) {
+                /* empty */
+            }
+        }
+        if (i > -33) method3321(-73, 3, 6)
+        anInt7110++
+        Texture2DProvider.aFileOutputStream6323 = null
+    }
+
+    @JvmStatic
+    fun method3318(i: Byte) {
+        InboundPacketHeader.aInboundPacketHeader_7113 = null
+    }
+
+    fun method3319(var_renderer: Renderer?, i: Byte) {
+        if (i > -108) method3321(19, 60, 108)
+        anInt7114++
+        if (((LocalPlayerState.aPlayer_1907!!.plane).toInt() != CameraOrModelTransform.anInt4155) && HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null) {
+            if (method2808((LocalPlayerState.aPlayer_1907!!.plane).toInt(), var_renderer, true)) CameraOrModelTransform.anInt4155 = LocalPlayerState.aPlayer_1907!!.plane.toInt()
+        }
+    }
+
+    fun method3320(class318_sub1_sub3: GroundDecorEntity, bool: Boolean) {
+        for (i in class318_sub1_sub3.aShort8743..class318_sub1_sub3.aShort8751) {
+            for (i_0_ in class318_sub1_sub3.aShort8750..class318_sub1_sub3.aShort8747) {
+                val class357 = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![class318_sub1_sub3.plane.toInt()]!![i]!![i_0_])
+                if (class357 != null) {
+                    var class148 = class357.aWidgetNodeLink_4396
+                    var widgetNodeLink_1_: WidgetNodeLink? = null
+                    while ( /**/class148 != null) {
+                        if (class148.aClass318_Sub1_Sub3_2040 === class318_sub1_sub3) {
+                            if (widgetNodeLink_1_ != null) widgetNodeLink_1_.aWidgetNodeLink_2038 = class148.aWidgetNodeLink_2038
+                            else class357.aWidgetNodeLink_4396 = class148.aWidgetNodeLink_2038
+                            class148.method1199((-106).toByte())
+                            break
+                        }
+                        widgetNodeLink_1_ = class148
+                        class148 = class148.aWidgetNodeLink_2038
+                    }
+                }
+            }
+        }
+        if (!bool) method1376(class318_sub1_sub3)
+    }
+
+    fun method3321(i: Int, i_2_: Int, i_3_: Int): SceneCollisionEntry? {
+        if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_2_]!![i_3_] == null) {
+            val bool = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i_2_]!![i_3_] != null && HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i_2_]!![i_3_]!!.aSceneCollisionEntry_4400 != null)
+            if (bool && i >= MapAreaDefinition.anInt2524 - 1) return null
+            method1394(i, i_2_, i_3_)
+        }
+        return HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_2_]!![i_3_]
+    }
+
+    fun method3322(i: Int, class348_sub49: ByteBuffer): WorldMapIconLabel {
+        anInt7109++
+        val class369 = PcmStreamBuffer.method2834((-125).toByte(), class348_sub49)
+        val i_4_ = class348_sub49.readUnsignedShort(i xor 0x3235f8f8)
+        val i_5_ = class348_sub49.readUnsignedShort(842397944)
+        if (i != 0) InboundPacketHeader.aInboundPacketHeader_7113 = null
+        val i_6_ = class348_sub49.readUnsignedShort(842397944)
+        val i_7_ = class348_sub49.readUnsignedShort(i + 842397944)
+        val i_8_ = class348_sub49.readUnsignedShort(842397944)
+        val i_9_ = class348_sub49.readUnsignedShort(842397944)
+        return WorldMapIconLabel(class369.aScreenAnchorAlignment_4968, class369.aTileRenderState_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_4_, i_5_, i_6_, i_7_, i_8_, i_9_)
+    }
+}

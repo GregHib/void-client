@@ -1048,7 +1048,7 @@ class Client : GameAppletFrame() {
         method2693(3)
         method3085(0)
         method3091(true)
-        StringValueNode.method3318((-80).toByte())
+        StringValueNodeStatics.method3318((-80).toByte())
         method3010(-1316)
         method453(-2001)
         method911(0)
@@ -1275,7 +1275,7 @@ class Client : GameAppletFrame() {
             for (i_6_ in i..36) MinimapRenderer.aBufferedRandomAccessFileArray1579!![i_6_]!!.method790(118.toByte())
             SceneObjectAnimator.aBufferedRandomAccessFile_3075!!.method790((-84).toByte())
             BufferedFileReader.aBufferedRandomAccessFile_4538!!.method790(80.toByte())
-            StringValueNode.method3317((-53).toByte())
+            StringValueNodeStatics.method3317((-53).toByte())
         } catch (exception: Exception) {
             /* empty */
         }
@@ -1693,8 +1693,8 @@ class Client : GameAppletFrame() {
                 if (!method3197(WorldMapRenderer.anInt4674, 56.toByte())) {
                     if (GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
                         if (AnimationFrameTable.anInt489 == 1) {
-                            if (LocDefinitionCache.anInt3441 > StringValueNode.anInt7115) StringValueNode.anInt7115 = LocDefinitionCache.anInt3441
-                            val i = ((-LocDefinitionCache.anInt3441 + StringValueNode.anInt7115) * 50 / StringValueNode.anInt7115)
+                            if (LocDefinitionCache.anInt3441 > StringValueNodeStatics.anInt7115) StringValueNodeStatics.anInt7115 = LocDefinitionCache.anInt3441
+                            val i = ((-LocDefinitionCache.anInt3441 + StringValueNodeStatics.anInt7115) * 50 / StringValueNodeStatics.anInt7115)
                             method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNodeStatics.aRenderer6654)
                         } else if (AnimationFrameTable.anInt489 == 2) {
                             if (ItemModelDefinition.anInt443 < CompositeNpcModelBuilder.anInt2101) ItemModelDefinition.anInt443 = CompositeNpcModelBuilder.anInt2101
@@ -5293,7 +5293,7 @@ class Client : GameAppletFrame() {
             anInt6975++
             if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && CompiledScriptCache.anInt4372 != ParticleSystemState.anInt2204) RegionSceneShifterStatics.method3157(FileIoUtil.anInt4095, 123.toByte(), Renderer.anInt4581, 11, false)
             else {
-                StringValueNode.method3319(FacingDirectionNodeStatics.aRenderer6654, (-121).toByte())
+                StringValueNodeStatics.method3319(FacingDirectionNodeStatics.aRenderer6654, (-121).toByte())
                 if (TrackedGroundDecor.anInt10395 != CompiledScriptCache.anInt4372) EdgeDetectTextureNode.method3072((-96).toByte())
             }
         }

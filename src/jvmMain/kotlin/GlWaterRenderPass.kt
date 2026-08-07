@@ -95,7 +95,7 @@ class GlWaterRenderPass internal constructor(glRenderDevice: GlRenderDevice, js5
 
         @JvmStatic
         fun method3536(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, class318_sub1_sub2: SceneObjectEntity) {
-            val class357 = StringValueNode.method3321(i, i_0_, i_1_)
+            val class357 = StringValueNodeStatics.method3321(i, i_0_, i_1_)
             if (class357 != null) {
                 class318_sub1_sub2.x = (i_0_ shl ActorEntity.anInt4459) + ActorEntity.anInt9037
                 class318_sub1_sub2.anInt6382 = i_2_

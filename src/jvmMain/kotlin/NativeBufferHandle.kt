@@ -60,7 +60,7 @@ class NativeBufferHandle internal constructor(glRenderDevice: GlRenderDevice?, l
             var i_16_: Short = 0
             for (i_17_ in class318_sub1_sub3.aShort8743..class318_sub1_sub3.aShort8751) {
                 for (i_18_ in class318_sub1_sub3.aShort8750..class318_sub1_sub3.aShort8747) {
-                    val class357 = StringValueNode.method3321(class318_sub1_sub3.plane.toInt(), i_17_, i_18_)
+                    val class357 = StringValueNodeStatics.method3321(class318_sub1_sub3.plane.toInt(), i_17_, i_18_)
                     if (class357 != null) {
                         val class148 = method3620(class318_sub1_sub3, 118)
                         var class148_19_ = class357.aWidgetNodeLink_4396

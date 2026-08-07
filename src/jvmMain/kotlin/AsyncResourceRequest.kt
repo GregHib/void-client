@@ -40,7 +40,7 @@ abstract class AsyncResourceRequest : HashLinkedListNode() {
                 while (class148 != null) {
                     val class318_sub1_sub3 = class148.aClass318_Sub1_Sub3_2040!!
                     if (var_class.isAssignableFrom(class318_sub1_sub3.javaClass) && (class318_sub1_sub3.aShort8743.toInt() == i_0_) && (class318_sub1_sub3.aShort8750.toInt() == i_1_)) {
-                        StringValueNode.method3320(class318_sub1_sub3, false)
+                        StringValueNodeStatics.method3320(class318_sub1_sub3, false)
                         break
                     }
                     class148 = class148.aWidgetNodeLink_2038
@@ -50,7 +50,7 @@ abstract class AsyncResourceRequest : HashLinkedListNode() {
 
         @JvmStatic
         fun method3254(i: Int, i_2_: Int, i_3_: Int, class318_sub1_sub4: ActorEntity, class318_sub1_sub4_4_: ActorEntity?) {
-            val class357 = StringValueNode.method3321(i, i_2_, i_3_)
+            val class357 = StringValueNodeStatics.method3321(i, i_2_, i_3_)
             if (class357 != null) {
                 class357.aClass318_Sub1_Sub4_4406 = class318_sub1_sub4
                 class357.aClass318_Sub1_Sub4_4403 = class318_sub1_sub4_4_
