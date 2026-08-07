@@ -16,8 +16,8 @@ object TextureAtlasStateStatics {
             else bool_0_ = false
         }
         if (ScriptCompilerThread.aSpriteImage_1727 == null) {
-            if (!CameraRotationStubStatics.aJs5Archive_322!!.method421(false, LocalizedTextTriple.anInt3762)) bool_0_ = false
-            else ScriptCompilerThread.aSpriteImage_1727 = SpriteImage.method1512(CameraRotationStubStatics.aJs5Archive_322!!, LocalizedTextTriple.anInt3762)
+            if (!CameraRotationStubStatics.aJs5Archive_322!!.method421(false, LocalizedTextTripleStatics.anInt3762)) bool_0_ = false
+            else ScriptCompilerThread.aSpriteImage_1727 = SpriteImage.method1512(CameraRotationStubStatics.aJs5Archive_322!!, LocalizedTextTripleStatics.anInt3762)
         }
         if (ClanChatRequestSender.aFontDefinition_3649 == null) {
             if (SoftwareSpriteRaster.aJs5Archive_1627!!.method421(false, ConnectionStateRefs.anInt317)) ClanChatRequestSender.aFontDefinition_3649 = RangedGraphicsOptionState.method1766((-89).toByte(), ConnectionStateRefs.anInt317, SoftwareSpriteRaster.aJs5Archive_1627!!)

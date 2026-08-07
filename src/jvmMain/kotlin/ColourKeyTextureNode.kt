@@ -134,7 +134,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             AbstractCameraTransformStatics.anIntArray4031 = null
             DragDropControllerStatics.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_18_)
             if (i >= -47) anInt9349 = -54
-            LocalizedTextTriple.anIntArray3759 = IntArray(i_18_)
+            LocalizedTextTripleStatics.anIntArray3759 = IntArray(i_18_)
             NullOggStream.anIntArray9042 = IntArray(i_18_)
             i_18_ = 0
             for (i_21_ in (-(GlCubemapLightPass.anInt7319 shr 4) + i_17_) / 8..(i_17_ + (GlCubemapLightPass.anInt7319 shr 4)) / 8) {
@@ -143,7 +143,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
                     NullOggStream.anIntArray9042!![i_18_] = i_22_ + (i_21_ shl 8)
                     NativeSprite.anIntArray5192!![i_18_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method417("m" + i_21_ + "_" + i_22_, 0)
                     GameAppletFrame.anIntArray38!![i_18_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method417("l" + i_21_ + "_" + i_22_, 0)
-                    LocalizedTextTriple.anIntArray3759!![i_18_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method417("um" + i_21_ + "_" + i_22_, 0)
+                    LocalizedTextTripleStatics.anIntArray3759!![i_18_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method417("um" + i_21_ + "_" + i_22_, 0)
                     RenderNodeStatics.anIntArray9724!![i_18_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method417("ul" + i_21_ + "_" + i_22_, 0)
                     i_18_++
                     i_22_++

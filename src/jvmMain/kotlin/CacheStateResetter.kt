@@ -9,7 +9,7 @@ object CacheStateResetter {
 
     @JvmStatic
     fun method175(i: Byte) {
-        LocalizedTextTriple.anInt3760 = -1
+        LocalizedTextTripleStatics.anInt3760 = -1
         WidgetDefinition.anSpriteDrawTarget_252 = null
         RenderNodeStatics.aAbstractCameraTransform_9720 = null
         LocalPlayerState.anIntArray1909 = null

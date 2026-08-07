@@ -19,9 +19,9 @@ object Tooltip {
         try {
             if (i != 2) aRSFont_4456 = null
             anInt4457++
-            val bool_0_ = !LocalizedTextTriple.aBoolean3763 || method3490(true)
+            val bool_0_ = !LocalizedTextTripleStatics.aBoolean3763 || method3490(true)
             if (bool_0_) {
-                if (LocalizedTextTriple.aBoolean3763 && bool_0_) {
+                if (LocalizedTextTripleStatics.aBoolean3763 && bool_0_) {
                     class143 = ClanChatRequestSender.aFontDefinition_3649
                     class324 = var_renderer!!.method3686(class143, (ProportionalScrollbarComponent.aSpriteImageArray9929), true)
                     var i_1_ = class143!!.method1187(string, false, 250, null)

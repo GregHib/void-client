@@ -660,7 +660,7 @@ object ConfigArchiveLoaderStatics {
                         return
                     }
                     if (string.startsWith("fps ") && (NpcAnimationResolverStatics.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271)) {
-                        LocalizedTextTriple.method2222((RegionSceneShifterStatics.method3156(true, string.substring(4))), (-124).toByte())
+                        LocalizedTextTripleStatics.method2222((RegionSceneShifterStatics.method3156(true, string.substring(4))), (-124).toByte())
                         return
                     }
                 } catch (exception: Exception) {

@@ -164,8 +164,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         bool = false
                     }
                 }
-                if (LocalizedTextTriple.anIntArray3759!![i_19_] != -1 && RegionMapDecoder.aByteArrayArray1887!![i_19_] == null) {
-                    RegionMapDecoder.aByteArrayArray1887!![i_19_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method410(-1860, LocalizedTextTriple.anIntArray3759!![i_19_], 0)
+                if (LocalizedTextTripleStatics.anIntArray3759!![i_19_] != -1 && RegionMapDecoder.aByteArrayArray1887!![i_19_] == null) {
+                    RegionMapDecoder.aByteArrayArray1887!![i_19_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method410(-1860, LocalizedTextTripleStatics.anIntArray3759!![i_19_], 0)
                     if (RegionMapDecoder.aByteArrayArray1887!![i_19_] == null) {
                         LocDefinitionCache.anInt3441++
                         bool = false

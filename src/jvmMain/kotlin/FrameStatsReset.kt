@@ -951,7 +951,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7917 = 0
             SceneRegionState.anInt195 = 0
             ProjectedGroundDecor.anInt10251 = 0
-            LocalizedTextTriple.anInt3757 = 0
+            LocalizedTextTripleStatics.anInt3757 = 0
             SequencedActorEntity.anInt10108 = 0
             SpriteComponent.anInt8372 = 0
             MouseInputTracker.anInt7428 = 0
@@ -2905,7 +2905,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MapElementDecor.anInt10343 = 0
             MediaStreamClient.anInt3187 = 0
             DefaultGraphicsOptionState.anInt6131 = 0
-            LocalizedTextTriple.anInt3752 = 0
+            LocalizedTextTripleStatics.anInt3752 = 0
             NativeRenderer.anInt7903 = 0
             BooleanGraphicsOptionState.anInt5843 = 0
             NativeRenderer.anInt7960 = 0
@@ -2916,7 +2916,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OutgoingPacketNode.anInt7121 = 0
             GlRenderDevice.anInt9848 = 0
             SceneObjectAnimator.anInt3058 = 0
-            LocalizedTextTriple.anInt3755 = 0
+            LocalizedTextTripleStatics.anInt3755 = 0
             ModelHeaderCache.anInt3282 = 0
             GlTextureBase.anInt5086 = 0
             HostPingThread.anInt2263 = 0

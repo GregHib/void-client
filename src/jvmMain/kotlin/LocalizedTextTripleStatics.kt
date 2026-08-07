@@ -1,0 +1,58 @@
+object LocalizedTextTripleStatics {
+    var anInt3752: Int = 0
+    var aClass348_Sub42_Sub17Array3753: Array<TextureMaterialGroup?>? = arrayOfNulls<TextureMaterialGroup>(14)
+    var anInt3755: Int = 0
+    var anInt3757: Int = 0
+    var anIntArray3759: IntArray? = null
+    var anInt3760: Int
+    var aDouble3761: Double = 0.0
+
+    var anInt3762: Int = 0
+
+    var aBoolean3763: Boolean = false
+
+    var anInt3764: Int
+
+    fun method2220(i: Int, i_0_: Int, i_1_: Int, i_2_: Byte): Int {
+        var i_0_ = i_0_
+        anInt3757++
+        if (i_2_.toInt() != 71) return -122
+        i_0_ = i_0_ and 0x3
+        if (i_0_ == 0) return i_1_
+        if (i_0_ == 1) return i
+        if (i_0_ == 2) return 7 + -i_1_
+        return 7 + -i
+    }
+
+    fun method2221(player: Player, i: Int) {
+        anInt3752++
+        if (i != -28482) aClass348_Sub42_Sub17Array3753 = null
+        val class348_sub9 = ((CompletedResourceRequest.aHashtable_10465!!.method3480(player.anInt10290.toLong(), -6008)) as CharacterRenderState?)
+        if (class348_sub9 != null) {
+            if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
+                SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
+                class348_sub9.aClass348_Sub16_Sub5_6676 = null
+            }
+            class348_sub9.method2715(82.toByte())
+        }
+    }
+
+    fun method2222(i: Int, i_3_: Byte) {
+        anInt3755++
+        FileExistsCondition.aLong4783 = 1000000000L / i.toLong()
+        if (i_3_.toInt() != -124) method2223(-83)
+    }
+
+    @JvmStatic
+    fun method2223(i: Int) {
+        aClass348_Sub42_Sub17Array3753 = null
+        anIntArray3759 = null
+        InboundPacketHeader.aInboundPacketHeader_3751 = null
+        if (i < 100) aBoolean3763 = false
+    }
+
+    init {
+        anInt3760 = -1
+        anInt3764 = 0
+    }
+}

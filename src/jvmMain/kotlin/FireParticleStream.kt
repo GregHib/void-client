@@ -63,7 +63,7 @@ class FireParticleStream : OutputStream() {
                 GroundItemRenderState.method1014(-4)
                 LoadingScreenImageNodeStatics.method3174(i_1_, i_3_, i_0_, true, (-82).toByte(), i_2_)
                 i_3_ = RandomAccessFileOnDisk.anInt3047
-                i_1_ = LocalizedTextTriple.anInt3764
+                i_1_ = LocalizedTextTripleStatics.anInt3764
                 i_2_ = GroundDecorRenderer.anInt3643
                 LocalPlayerState.anInt1906 = LocalPlayerState.anInt1911
                 i_0_ = WidgetComponentNode.anInt4656
@@ -245,7 +245,7 @@ class FireParticleStream : OutputStream() {
                             val i_23_ = i_6_ + -ConfigIdPair.anInt403
                             val i_24_ = -CameraSplineNode.anInt6849 + i_5_
                             val i_25_ = ((VideoAdChecker.aDouble3182 * i_22_.toDouble() + i_23_.toDouble() * MapElementDefinitionCache.aDouble3980 + i_24_.toDouble() * SceneCollisionEntry.aDouble4404) * i_20_.toDouble() / i_14_.toDouble()).toInt()
-                            val i_26_ = (((i_24_.toDouble() * ProceduralTextureGraph.aDouble9531) + ((i_22_.toDouble() * TheoraVideoStream.aDouble9023) + (i_23_.toDouble() * LocalizedTextTriple.aDouble3761))) * i_21_.toDouble() / i_14_.toDouble()).toInt()
+                            val i_26_ = (((i_24_.toDouble() * ProceduralTextureGraph.aDouble9531) + ((i_22_.toDouble() * TheoraVideoStream.aDouble9023) + (i_23_.toDouble() * LocalizedTextTripleStatics.aDouble3761))) * i_21_.toDouble() / i_14_.toDouble()).toInt()
                             val d = (i_24_.toDouble() * PcmStreamBuffer.aDouble8869 + (MenuActionNode.aDouble6774 * i_23_.toDouble() + i_22_.toDouble() * NoiseTextureGenerator.aDouble1083))
                             val i_27_ = i_25_ + WhirlpoolHash.anInt2747 - ShaderObjectStatics.anInt4100
                             val i_28_ = (WhirlpoolHash.anInt10444 + i_26_ + -ModelVertexColorBuffer.anInt6568)
@@ -450,7 +450,7 @@ class FireParticleStream : OutputStream() {
                             CameraRotationStubStatics.aRenderer326!!.la()
                             CameraRotationStubStatics.aRenderer326!!.ya()
                             CameraRotationStubStatics.aRenderer326!!.GA(IsaacCipher.anInt1290)
-                            NpcConfig.aAbstractCameraTransform_905!!.method903(AnimatedModelRenderer.anInt8422, ConfigIdPair.anInt403, CameraSplineNode.anInt6849, WorldMapAreaLabel.anInt8583, LocalizedTextTriple.anInt3760, ProjectileConfigUtil.anInt396)
+                            NpcConfig.aAbstractCameraTransform_905!!.method903(AnimatedModelRenderer.anInt8422, ConfigIdPair.anInt403, CameraSplineNode.anInt6849, WorldMapAreaLabel.anInt8583, LocalizedTextTripleStatics.anInt3760, ProjectileConfigUtil.anInt396)
                             CameraRotationStubStatics.aRenderer326!!.method3638(NpcConfig.aAbstractCameraTransform_905)
                             if (WhirlpoolHash.anInt7207 == 1) {
                                 ShaderStateStatics.anInt8799 = i_17_

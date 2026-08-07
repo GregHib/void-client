@@ -68,7 +68,7 @@ object LoadingScreenImageNodeStatics {
         RandomAccessFileOnDisk.anInt3047 = i_0_
         GroundDecorRenderer.anInt3643 = i_3_.toShort().toInt()
         WidgetComponentNode.anInt4656 = i_1_.toShort().toInt()
-        LocalizedTextTriple.anInt3764 = i
+        LocalizedTextTripleStatics.anInt3764 = i
         val i_11_ = -3 % ((-8 - i_2_) / 56)
     }
 

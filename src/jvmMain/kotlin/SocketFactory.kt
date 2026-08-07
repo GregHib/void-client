@@ -58,7 +58,7 @@ abstract class SocketFactory {
                 DefaultGraphicsOptionState.aTileRenderState_6128 = tileRenderState
                 DrawListState.anInt1479 = i
                 RegionTileNode.aSpriteImage_6643 = null
-                LocalizedTextTriple.anInt3762 = i_8_
+                LocalizedTextTripleStatics.anInt3762 = i_8_
                 ColorThresholdEffect.aSpriteImage_9090 = null
                 RegionSceneLoader.anInt3704 = i_3_
                 ConnectionStateRefs.anInt317 = i_5_
@@ -70,7 +70,7 @@ abstract class SocketFactory {
                 TerrainShadowBuilderGl2.anInt6938 = i_1_
                 TextureAtlasStateStatics.method3490(true)
                 val i_9_ = -77 % ((i_4_ - 29) / 34)
-                LocalizedTextTriple.aBoolean3763 = true
+                LocalizedTextTripleStatics.aBoolean3763 = true
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("uu.E(" + i + ',' + i_0_ + ',' + (if (screenAnchorAlignment != null) "{...}" else "null") + ',' + (if (tileRenderState != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'))
             }

@@ -207,7 +207,7 @@ import ParticleEmitterDefExt.Companion.method2190
 import RegionSceneLoader.method2191
 import MapArchiveSource.Companion.method2202
 import LoadingBarRenderer.Companion.method2214
-import LocalizedTextTriple.Companion.method2223
+import LocalizedTextTripleStatics.method2223
 import HuffmanCodec.Companion.method2225
 import HuffmanCodec.Companion.method2228
 import PixelBlender.method2251

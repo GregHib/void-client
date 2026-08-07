@@ -33,7 +33,7 @@ object AbstractCameraTransformStatics {
         GlRectangleTexture.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_6_)
         NullOggStream.anIntArray9042 = IntArray(i_6_)
         RenderNodeStatics.anIntArray9724 = IntArray(i_6_)
-        LocalizedTextTriple.anIntArray3759 = IntArray(i_6_)
+        LocalizedTextTripleStatics.anIntArray3759 = IntArray(i_6_)
         DragDropControllerStatics.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_6_)
         GameAppletFrame.anIntArray38 = IntArray(i_6_)
         VorbisOggDecoder.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_6_)
@@ -48,12 +48,12 @@ object AbstractCameraTransformStatics {
                 NativeSprite.anIntArray5192!![i_6_] = aJs5Archive_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
                 GameAppletFrame.anIntArray38!![i_6_] = aJs5Archive_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
                 AbstractCameraTransformStatics.anIntArray4031!![i_6_] = aJs5Archive_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
-                LocalizedTextTriple.anIntArray3759!![i_6_] = aJs5Archive_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
+                LocalizedTextTripleStatics.anIntArray3759!![i_6_] = aJs5Archive_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
                 RenderNodeStatics.anIntArray9724!![i_6_] = (aJs5Archive_7382!!.method417("ul" + i_7_ + "_" + i_8_, ModelDefinition.method2955(i.toInt(), -49)))
                 if (AbstractCameraTransformStatics.anIntArray4031!![i_6_] == -1) {
                     NativeSprite.anIntArray5192!![i_6_] = -1
                     GameAppletFrame.anIntArray38!![i_6_] = -1
-                    LocalizedTextTriple.anIntArray3759!![i_6_] = -1
+                    LocalizedTextTripleStatics.anIntArray3759!![i_6_] = -1
                     RenderNodeStatics.anIntArray9724!![i_6_] = -1
                 }
                 i_6_++
@@ -66,7 +66,7 @@ object AbstractCameraTransformStatics {
             AbstractCameraTransformStatics.anIntArray4031!![i_10_] = -1
             NativeSprite.anIntArray5192!![i_10_] = -1
             GameAppletFrame.anIntArray38!![i_10_] = -1
-            LocalizedTextTriple.anIntArray3759!![i_10_] = -1
+            LocalizedTextTripleStatics.anIntArray3759!![i_10_] = -1
             RenderNodeStatics.anIntArray9724!![i_10_] = -1
             i_10_++
         }
