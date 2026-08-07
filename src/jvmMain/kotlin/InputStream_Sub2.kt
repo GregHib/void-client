@@ -31,7 +31,7 @@ class InputStream_Sub2 : InputStream() {
         fun method128(rgbColorPalette: RgbColorPalette?, i: Byte) {
             try {
                 anInt81++
-                if (rgbColorPalette == NamedIdEntry.aRgbColorPalette_6891) {
+                if (rgbColorPalette == NamedIdEntryStatics.aRgbColorPalette_6891) {
                     val i_0_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-124).toByte())
                     val i_1_ = i_0_ shr 2
                     val i_2_ = 0x3 and i_0_

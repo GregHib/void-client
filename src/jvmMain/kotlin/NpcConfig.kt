@@ -294,7 +294,7 @@ class NpcConfig {
         if (aShortArray940 != null) {
             var i_28_ = 0
             while (aShortArray940!!.size > i_28_) {
-                if (aByteArray872 != null && aByteArray872!!.size > i_28_) class64_27_!!.ia(aShortArray940!![i_28_], (NamedIdEntry.aShortArray6889!![0xff and aByteArray872!![i_28_].toInt()]))
+                if (aByteArray872 != null && aByteArray872!!.size > i_28_) class64_27_!!.ia(aShortArray940!![i_28_], (NamedIdEntryStatics.aShortArray6889!![0xff and aByteArray872!![i_28_].toInt()]))
                 else class64_27_!!.ia(aShortArray940!![i_28_], aShortArray908[i_28_])
                 i_28_++
             }

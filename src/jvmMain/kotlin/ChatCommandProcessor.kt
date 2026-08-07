@@ -2930,7 +2930,7 @@ object ChatCommandProcessor {
                     widgetComponent.aBoolean813 = bool_271_
                     ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 }
-                if (widgetComponent.anInt704 == -1) NamedIdEntry.method2999(90.toByte(), widgetComponent.anInt830)
+                if (widgetComponent.anInt704 == -1) NamedIdEntryStatics.method2999(90.toByte(), widgetComponent.anInt830)
                 return
             }
             if (i == 1004) {

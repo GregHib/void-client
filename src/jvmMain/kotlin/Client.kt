@@ -654,8 +654,8 @@ class Client : GameAppletFrame() {
         }
         HslPaletteState.aShortArray4172 = ShortArray(256)
         LoadingScreenImageNodeStatics.aShortArray9502 = HslPaletteState.aShortArray4172
-        NamedIdEntry.aShortArray6889 = LoadingScreenImageNodeStatics.aShortArray9502
-        aShortArray6428 = NamedIdEntry.aShortArray6889
+        NamedIdEntryStatics.aShortArray6889 = LoadingScreenImageNodeStatics.aShortArray9502
+        aShortArray6428 = NamedIdEntryStatics.aShortArray6889
         if (Client.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) TextureLoadExceptionStatics.aBoolean4599 = false
         if (GlRectangleTexture.aSceneProjector_8638 == Client.aSceneProjector_10434) {
             InputSettingsState.shiftClick = true
@@ -759,7 +759,7 @@ class Client : GameAppletFrame() {
         method782(1)
         method3414(21515)
         HostPingThread.method1300((-128).toByte())
-        NamedIdEntry.method2998((-35).toByte())
+        NamedIdEntryStatics.method2998((-35).toByte())
         method3508(2)
         method1698(1)
         method3237(42.toByte())
@@ -2343,7 +2343,7 @@ class Client : GameAppletFrame() {
                                         HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     } else {
                                         while_224_@ for (i_74_ in class46.anInt738..<ScrollbarComponent.anInt8352) {
-                                            val i_75_ = (NamedIdEntry.anIntArray6890!![i_74_ and 0x1f])
+                                            val i_75_ = (NamedIdEntryStatics.anIntArray6890!![i_74_ and 0x1f])
                                             for (i_76_ in (class46.anIntArray818!!).indices) {
                                                 if ((class46.anIntArray818!![i_76_]) == i_75_) {
                                                     val class348_sub36 = WidgetActionEntry()
@@ -2768,7 +2768,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_6424) {
-                method128(NamedIdEntry.aRgbColorPalette_6891, 8.toByte())
+                method128(NamedIdEntryStatics.aRgbColorPalette_6891, 8.toByte())
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
@@ -4932,7 +4932,7 @@ class Client : GameAppletFrame() {
                                 if (i_16_ == 1) {
                                     IsaacCipher.anIntArray1303!![i_17_] = class348_sub42_sub15.anInt9652
                                     ScanlineRasterFiller.aBoolean2469 = ScanlineRasterFiller.aBoolean2469 or GlslEnvMaterialPass.aBooleanArray6270!![i_17_]
-                                    NamedIdEntry.Companion.anIntArray6890!![method1166(31, ScrollbarComponent.anInt8352++)] = i_17_
+                                    NamedIdEntryStatics.anIntArray6890!![method1166(31, ScrollbarComponent.anInt8352++)] = i_17_
                                 } else if (i_16_ == 2) {
                                     GlTextureCubeMap.aStringArray8532!![i_17_] = class348_sub42_sub15.aString9654
                                     RemoveRoofsOptionState.anIntArray6061!![method1166(HslAdjustTextureNode.anInt9385++, 31)] = i_17_

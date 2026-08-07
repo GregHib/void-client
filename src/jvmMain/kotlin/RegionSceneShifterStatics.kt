@@ -88,7 +88,7 @@ object RegionSceneShifterStatics {
             val i_19_ = RegionMapDecoder.regionTileY
             ArbVertexProgram.regionTileX = (-(GlCubemapLightPass.anInt7319 shr 4) + Renderer.anInt4581) * 8
             RegionMapDecoder.regionTileY = 8 * (FileIoUtil.anInt4095 - (RangeThresholdTextureNode.anInt9109 shr 4))
-            NamedIdEntry.Companion.aClass348_Sub42_Sub14_6885 = method766(Renderer.anInt4581 * 8, FileIoUtil.anInt4095 * 8)
+            NamedIdEntryStatics.aClass348_Sub42_Sub14_6885 = method766(Renderer.anInt4581 * 8, FileIoUtil.anInt4095 * 8)
             OpenGlRenderNode.aSmoothingBuffer_10488 = null
             val i_20_ = ArbVertexProgram.regionTileX - i_18_
             val i_21_ = -i_19_ + RegionMapDecoder.regionTileY

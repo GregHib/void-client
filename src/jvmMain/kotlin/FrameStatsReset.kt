@@ -2034,7 +2034,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ProjectionCameraTransform.anInt5763 = 0
             OpenGlRenderer.anInt7665 = 0
             FixedFunctionWaterPass.anInt7354 = 0
-            NamedIdEntry.anInt6886 = 0
+            NamedIdEntryStatics.anInt6886 = 0
             GlWaterRenderPass.anInt7286 = 0
             HudTabPanel.anInt2994 = 0
             MapAreaDefinition.anInt2532 = 0
@@ -4177,8 +4177,8 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WorldMapPolygonIconLabel.aBoolean10174 = true
             HslPaletteState.aShortArray4172 = ShortArray(256)
             LoadingScreenImageNodeStatics.aShortArray9502 = HslPaletteState.aShortArray4172
-            NamedIdEntry.aShortArray6889 = LoadingScreenImageNodeStatics.aShortArray9502
-            Client.aShortArray6428 = NamedIdEntry.aShortArray6889
+            NamedIdEntryStatics.aShortArray6889 = LoadingScreenImageNodeStatics.aShortArray9502
+            Client.aShortArray6428 = NamedIdEntryStatics.aShortArray6889
             LightingOptionState.aString5882 = LocalizedText.aLocalizedText_3509!!.method2063(ChatCommandProcessor.anInt6967, 544)
             IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7264, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(i + -32350))
             IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350))
