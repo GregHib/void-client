@@ -20,7 +20,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(93.toByte(), ClientLoadStateMachine.aJs5Archive_1878!!.method389(-104))
         class348_sub49_sub2.writeInt(90.toByte(), AbstractCameraTransformStatics.aJs5Archive_7382!!.method389(-122))
         class348_sub49_sub2.writeInt(92.toByte(), CachedRgbNoiseTexture.aJs5Archive_8667!!.method389(9))
-        class348_sub49_sub2.writeInt(90.toByte(), RasterSprite.aJs5Archive_5207!!.method389(120))
+        class348_sub49_sub2.writeInt(90.toByte(), RasterSpriteStatics.aJs5Archive_5207!!.method389(120))
         class348_sub49_sub2.writeInt(99.toByte(), CameraRotationStubStatics.aJs5Archive_322!!.method389(64))
         class348_sub49_sub2.writeInt(90.toByte(), WorldMapTextLabel.aJs5Archive_8589!!.method389(-123))
         class348_sub49_sub2.writeInt(115.toByte(), SceneTilePlaneManager.aJs5Archive_233!!.method389(-113))

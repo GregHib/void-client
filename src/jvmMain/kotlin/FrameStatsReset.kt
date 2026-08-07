@@ -103,7 +103,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7690 = 0
             Client.anInt9546 = 0
             ShadowQualityOptionState.anInt6017 = 0
-            RasterSprite.anInt5203 = 0
+            RasterSpriteStatics.anInt5203 = 0
             PerlinTextureProvider.anInt5810 = 0
             TexGenMaterialPass.anInt6251 = 0
             VarpStore.anInt5080 = 0
@@ -300,7 +300,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             PackedFlagsAccessor.anInt7096 = 0
             BinaryGraphicsOptionState.anInt5958 = 0
             MidiSequencePlayer.anInt8897 = 0
-            RasterSprite.anInt5205 = 0
+            RasterSpriteStatics.anInt5205 = 0
             TwoStateOptionState.anInt6139 = 0
             ByteBuffer.anInt7150 = 0
             WallSceneEntity.anInt9944 = 0

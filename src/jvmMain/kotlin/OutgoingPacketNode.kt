@@ -4,7 +4,7 @@ import NpcReference.Companion.method2959
 import GlTexture2DRegion.Companion.method3553
 import GameClock.method599
 import ModelDefinition.Companion.method1096
-import RasterSprite.Companion.method166
+import RasterSpriteStatics.method166
 import java.awt.Canvas
 
 class OutgoingPacketNode : LinkedListNode() {

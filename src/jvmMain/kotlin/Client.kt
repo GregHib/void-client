@@ -477,7 +477,7 @@ import InputStream_Sub2.Companion.method127
 import ChatMessageStream.Companion.method139
 import Player.Companion.method2458
 import NativeSprite.Companion.method161
-import RasterSprite.Companion.method167
+import RasterSpriteStatics.method167
 import Renderer.Companion.method3680
 import OpenGlRenderer.Companion.method3736
 import NativeRenderer.Companion.method3870
