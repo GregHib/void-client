@@ -268,7 +268,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                 val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * WidgetNodeLink.anIntArray2039!![i_7_], (CombineTextureNode.anIntArray9230!![i_7_]) * i_28_, i_4_, 4 + i_7_))
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1
-                            } else class318_sub1_sub5 = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, (FireParticleStream.anIntArray99!![i_7_] * i_28_), i_28_ * BoundsConstraintEntry.anIntArray5165!![i_7_], i_4_, 4 + i_7_, i_6_))
+                            } else class318_sub1_sub5 = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, (FireParticleStream.anIntArray99!![i_7_] * i_28_), i_28_ * BoundsConstraintEntryStatics.anIntArray5165!![i_7_], i_4_, 4 + i_7_, i_6_))
                             method388(i_0_, i, i_5_, class318_sub1_sub5, null)
                         } else if (i_4_ == 7) {
                             val i_29_ = 0x3 and 2 + i_7_
@@ -287,14 +287,14 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             val class318_sub1_sub5: WallEntity?
                             val class318_sub1_sub5_32_: WallEntity?
                             if (bool_17_) {
-                                val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (FireParticleStream.anIntArray99!![i_7_]), BoundsConstraintEntry.anIntArray5165!![i_7_] * i_31_, i_4_, 4 + i_7_))
+                                val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (FireParticleStream.anIntArray99!![i_7_]), BoundsConstraintEntryStatics.anIntArray5165!![i_7_] * i_31_, i_4_, 4 + i_7_))
                                 val class318_sub1_sub5_sub1_34_ = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, 4 + i_30_))
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_renderer)
                                 if (class318_sub1_sub5_sub1_34_.method38(i_3_ xor 0x4838.inv())) class318_sub1_sub5_sub1_34_.method44(836, var_renderer)
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1_34_
                                 class318_sub1_sub5_32_ = class318_sub1_sub5_sub1
                             } else {
-                                val class318_sub1_sub5_sub2 = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (FireParticleStream.anIntArray99!![i_7_]), i_31_ * BoundsConstraintEntry.anIntArray5165!![i_7_], i_4_, i_7_ - -4, i_6_))
+                                val class318_sub1_sub5_sub2 = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_31_ * (FireParticleStream.anIntArray99!![i_7_]), i_31_ * BoundsConstraintEntryStatics.anIntArray5165!![i_7_], i_4_, i_7_ - -4, i_6_))
                                 val class318_sub1_sub5_sub2_33_ = (SequencedWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, 0, 0, i_4_, i_30_ + 4, i_6_))
                                 class318_sub1_sub5_32_ = class318_sub1_sub5_sub2
                                 class318_sub1_sub5 = class318_sub1_sub5_sub2_33_

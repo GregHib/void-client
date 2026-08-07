@@ -371,7 +371,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 bool = false
             } else if (i_29_ == 128) {
                 bool = true
-                objectByteSerializerHolder = BoundsConstraintEntry.aObjectByteSerializerHolder_5169
+                objectByteSerializerHolder = BoundsConstraintEntryStatics.aObjectByteSerializerHolder_5169
                 bool_30_ = true
             } else {
                 bool_30_ = false

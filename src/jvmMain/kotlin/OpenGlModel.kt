@@ -894,7 +894,7 @@ class OpenGlModel : AbstractModel {
                     i_221_++
                 }
             } else class64_sub3_211_.aByteArray5542 = aByteArray5542
-            if (BoundsConstraintEntry.method2056(i, 108, anInt5556)) {
+            if (BoundsConstraintEntryStatics.method2056(i, 108, anInt5556)) {
                 class64_sub3_211_.aHoverActionEntry_5610 = class64_sub3_213_!!.aHoverActionEntry_5610
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x2).toByte()
                 class64_sub3_211_.aHoverActionEntry_5610!!.anByteBufferReader_1811 = aHoverActionEntry_5610!!.anByteBufferReader_1811
@@ -3675,7 +3675,7 @@ class OpenGlModel : AbstractModel {
         fun method724(i: Int, i_4_: Int, i_5_: Int): Boolean {
             anInt1191++
             if (i_5_ != 393216) method723(25, 30, (-113).toByte())
-            return method2352(124, i_4_, i) or ((0x60000 and i) != 0) || BoundsConstraintEntry.method2056(i, 90, i_4_) || method723(i, i_4_, (-120).toByte())
+            return method2352(124, i_4_, i) or ((0x60000 and i) != 0) || BoundsConstraintEntryStatics.method2056(i, 90, i_4_) || method723(i, i_4_, (-120).toByte())
         }
     }
 }

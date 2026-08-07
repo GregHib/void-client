@@ -1,5 +1,5 @@
 import ObjectSpawnDecoder.method1087
-import BoundsConstraintEntry.Companion.method2056
+import BoundsConstraintEntryStatics.method2056
 import kotlin.concurrent.Volatile
 
 /* Class315 - Decompiled by JODE

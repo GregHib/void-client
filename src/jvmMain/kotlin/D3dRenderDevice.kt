@@ -734,7 +734,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         } else if (this.aObjectByteSerializerHolder_8163 == D3dRenderDevice.aObjectByteSerializerHolder_1201) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 2)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 2)
-        } else if (BoundsConstraintEntry.aObjectByteSerializerHolder_5169 == this.aObjectByteSerializerHolder_8163) {
+        } else if (BoundsConstraintEntryStatics.aObjectByteSerializerHolder_5169 == this.aObjectByteSerializerHolder_8163) {
             this.anIDirect3DDevice9810!!.SetRenderState(19, 9)
             this.anIDirect3DDevice9810!!.SetRenderState(20, 2)
         }

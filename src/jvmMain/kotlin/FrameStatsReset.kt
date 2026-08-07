@@ -2606,7 +2606,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             AbstractProceduralTextureNode.anInt7039 = 0
             FloatCameraTransform.anInt5693 = 0
             Renderer.anInt4570 = 0
-            BoundsConstraintEntry.anInt5168 = 0
+            BoundsConstraintEntryStatics.anInt5168 = 0
             WorldMapScene.anInt3116 = 0
             NativeRenderer.anInt8036 = 0
             NativeRenderer.anInt7996 = 0
