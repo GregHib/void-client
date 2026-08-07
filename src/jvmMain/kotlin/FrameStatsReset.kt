@@ -901,7 +901,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9816 = 0
             VarbitDefLoader.anInt2593 = 0
             MatrixCameraTransform.anInt5656 = 0
-            MultiFieldRecord.anInt6906 = 0
+            MultiFieldRecordStatics.anInt6906 = 0
             NpcActorEntity.anInt10070 = 0
             RSFont.anInt4060 = 0
             ParticleDefLoader.anInt2465 = 0
@@ -1491,7 +1491,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TerrainShadowBuilderGl3.anInt7012 = 0
             DelegatingRenderCanvas.anInt63 = 0
             Crc64Hashable.anInt4988 = 0
-            MultiFieldRecord.anInt6901 = 0
+            MultiFieldRecordStatics.anInt6901 = 0
             MapRegionLoaderThread.anInt4198 = 0
             ByteBuffer.anInt7187 = 0
             DisplaySettingsConfig.anInt7237 = 0
@@ -4102,8 +4102,8 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SizeBoundedSoftCache.aBoolean2329 = true
             Client.method2480(i.inv())
             var j = 0
-            while (MultiFieldRecord.aMinimapPositionStateArray6897s!!.size > j) {
-                MultiFieldRecord.aMinimapPositionStateArray6897s!![j] = null
+            while (MultiFieldRecordStatics.aMinimapPositionStateArray6897s!!.size > j) {
+                MultiFieldRecordStatics.aMinimapPositionStateArray6897s!![j] = null
                 j++
             }
 

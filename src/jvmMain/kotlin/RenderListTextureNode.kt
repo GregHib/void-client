@@ -11,7 +11,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
         val i_0_: Int = PerlinNoiseTextureNode.anInt9139
         val i_1_ = FixedFunctionMaterialPass.anInt6212
         method224((-40).toByte(), `is`)
-        MultiFieldRecord.method3000(SimpleBinaryOptionState.anInt6076, 0, TextureCubeProviderStatics.anInt6325, 0, i.toInt() xor 0x28)
+        MultiFieldRecordStatics.method3000(SimpleBinaryOptionState.anInt6076, 0, TextureCubeProviderStatics.anInt6325, 0, i.toInt() xor 0x28)
         if (aMinimapShapeDrawerArray9481 != null) {
             var i_2_ = 0
             while (aMinimapShapeDrawerArray9481!!.size > i_2_) {

@@ -295,7 +295,7 @@ import TheoraVideoStream.Companion.method2974
 import NullOggStream.Companion.method2981
 import KaraokeSubtitleStream.Companion.method2990
 import ImageBoxBlurScroller.Companion.method2996
-import MultiFieldRecord.Companion.method3001
+import MultiFieldRecordStatics.method3001
 import ShortKeyNodeStatics.method3003
 import ModelVertexColorBuffer.Companion.method2738
 import AbstractFrameBufferSurface.Companion.method3010
@@ -2617,8 +2617,8 @@ class Client : GameAppletFrame() {
                     }
                 }
             }
-            for (i_117_ in MultiFieldRecord.aMinimapPositionStateArray6897s!!.indices) {
-                val class302 = MultiFieldRecord.aMinimapPositionStateArray6897s!![i_117_]
+            for (i_117_ in MultiFieldRecordStatics.aMinimapPositionStateArray6897s!!.indices) {
+                val class302 = MultiFieldRecordStatics.aMinimapPositionStateArray6897s!![i_117_]
                 if (class302 != null) {
                     if (class302.anInt3840 == 1) {
                         val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as NpcReference?)
@@ -3235,7 +3235,7 @@ class Client : GameAppletFrame() {
                 val i_76_ = i shr 5
                 val i_77_ = 0x1f and i
                 if (i_77_ == 0) {
-                    MultiFieldRecord.aMinimapPositionStateArray6897s!![i_76_] = null
+                    MultiFieldRecordStatics.aMinimapPositionStateArray6897s!![i_76_] = null
                     InboundPacketHeader.aInboundPacketHeader_6584 = null
                     return true
                 }
@@ -3276,7 +3276,7 @@ class Client : GameAppletFrame() {
                     }
                     minimapPositionState.anInt3834 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if (minimapPositionState.anInt3834 == 65535) minimapPositionState.anInt3834 = -1
-                    MultiFieldRecord.aMinimapPositionStateArray6897s!![i_76_] = minimapPositionState
+                    MultiFieldRecordStatics.aMinimapPositionStateArray6897s!![i_76_] = minimapPositionState
                 }
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
@@ -4906,7 +4906,7 @@ class Client : GameAppletFrame() {
                     }
                     if (!KeyboardLayoutConfig.aBoolean2130) CircleDrawer.aFloat2687 /= 2.0f
                     else KeyboardLayoutConfig.aBoolean2130 = false
-                    if (!MinimapSquareDrawer.aBoolean5224) MultiFieldRecord.Companion.aFloat6898 /= 2.0f
+                    if (!MinimapSquareDrawer.aBoolean5224) MultiFieldRecordStatics.aFloat6898 /= 2.0f
                     else MinimapSquareDrawer.aBoolean5224 = false
                     method3027(33.toByte())
                     if (WorldMapRenderer.anInt4674 == 10) {

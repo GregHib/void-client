@@ -123,8 +123,8 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             WidgetRedrawTracker.anInt3931 = 0
             WaterTextureSet.anInt1447 = WidgetRedrawTracker.anInt3931
             var i_3_ = 0
-            while ((i_3_ < MultiFieldRecord.aMinimapPositionStateArray6897s!!.size)) {
-                MultiFieldRecord.aMinimapPositionStateArray6897s!![i_3_] = null
+            while ((i_3_ < MultiFieldRecordStatics.aMinimapPositionStateArray6897s!!.size)) {
+                MultiFieldRecordStatics.aMinimapPositionStateArray6897s!![i_3_] = null
                 i_3_++
             }
             HashLinkedListNodeStatics.method3163((-114).toByte())

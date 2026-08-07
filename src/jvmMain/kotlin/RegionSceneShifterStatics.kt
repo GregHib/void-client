@@ -156,7 +156,7 @@ object RegionSceneShifterStatics {
                         player.y -= 512 * i_21_
                     }
                 }
-                val minimapPositionStates: Array<MinimapPositionState?> = MultiFieldRecord.Companion.aMinimapPositionStateArray6897s!!
+                val minimapPositionStates: Array<MinimapPositionState?> = MultiFieldRecordStatics.aMinimapPositionStateArray6897s!!
                 var i_32_ = 0
                 while (minimapPositionStates.size > i_32_) {
                     val class302 = minimapPositionStates[i_32_]

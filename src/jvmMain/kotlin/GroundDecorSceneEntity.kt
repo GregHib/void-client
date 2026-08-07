@@ -268,7 +268,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
         fun method2403(i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int) {
             anInt9977++
             if (i_10_ != 19206) method2402(-3, 46.toByte())
-            val class302s = MultiFieldRecord.aMinimapPositionStateArray6897s!!
+            val class302s = MultiFieldRecordStatics.aMinimapPositionStateArray6897s!!
             for (i_13_ in class302s.indices) {
                 val class302 = class302s[i_13_]
                 if (class302 != null && class302.anInt3840 == 2) {

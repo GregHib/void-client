@@ -67,7 +67,7 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
         @JvmStatic
         fun method2752(i: Int, i_2_: Int): RectangleRegion? {
             anInt6625++
-            val class138s = MultiFieldRecord.method3002((-97).toByte())
+            val class138s = MultiFieldRecordStatics.method3002((-97).toByte())
             var i_3_ = i_2_
             while (class138s.size > i_3_) {
                 if (i == class138s[i_3_]!!.anInt1941) return class138s[i_3_]

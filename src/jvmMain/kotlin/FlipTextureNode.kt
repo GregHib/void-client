@@ -788,7 +788,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                 } else HeadIconRendererStatics.method1211(i_1_, (BoundingBoxNode.aAbstractModelRendererArray6742!![6]), i, widgetComponent, var_aa, i_28_, i_2_ + -22958, i_27_)
                             }
                         }
-                        val class302s = MultiFieldRecord.aMinimapPositionStateArray6897s
+                        val class302s = MultiFieldRecordStatics.aMinimapPositionStateArray6897s
                         var i_33_ = 0
                         while ((i_33_ < class302s!!.size)) {
                             val class302 = class302s[i_33_]

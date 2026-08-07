@@ -72,7 +72,7 @@ class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, 
                 if (!MinimapSquareDrawer.aBoolean5224) {
                     MinimapSquareDrawer.aBoolean5224 = true
                     WorldMapPolygonIconLabel.aBoolean10174 = true
-                    MultiFieldRecord.aFloat6898 += (-12.0f - MultiFieldRecord.aFloat6898) / 2.0f
+                    MultiFieldRecordStatics.aFloat6898 += (-12.0f - MultiFieldRecordStatics.aFloat6898) / 2.0f
                 }
             }
         }

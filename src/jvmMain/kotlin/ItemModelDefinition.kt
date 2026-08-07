@@ -173,7 +173,7 @@ class ItemModelDefinition {
             anInt442++
             if (!MinimapSquareDrawer.aBoolean5224) {
                 WorldMapPolygonIconLabel.aBoolean10174 = true
-                MultiFieldRecord.aFloat6898 += (12.0f - MultiFieldRecord.aFloat6898) / 2.0f
+                MultiFieldRecordStatics.aFloat6898 += (12.0f - MultiFieldRecordStatics.aFloat6898) / 2.0f
                 MinimapSquareDrawer.aBoolean5224 = true
                 if (i.toInt() != 68) aCameraNodeList_430 = null
             }
