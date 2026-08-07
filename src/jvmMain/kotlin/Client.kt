@@ -97,7 +97,7 @@ import VarbitDefLoader.Companion.method1441
 import RenderableGroup.Companion.method1447
 import LoadingScreenState.Companion.method1461
 import ModelOrSpriteHolderStatics.method171
-import ConnectionStateRefs.method287
+import InboundPacketHeader.method287
 import ScriptResources.method1463
 import SocketStreamWorker.Companion.method1471
 import MidiTrackReader.Companion.method1493

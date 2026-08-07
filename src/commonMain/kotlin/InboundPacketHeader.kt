@@ -15,6 +15,14 @@ class InboundPacketHeader internal constructor(private var anInt1747: Int, var a
 
     companion object {
 
+        @JvmStatic
+        fun method287(i: Int) {
+            if (i == 51) {
+                aInboundPacketHeader_316 = null
+                aInboundPacketHeader_318 = null
+            }
+        }
+
         var anInt1746: Int = 0
 
         var anInt1750: Int = 0
