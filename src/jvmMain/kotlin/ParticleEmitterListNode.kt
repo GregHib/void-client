@@ -15,7 +15,7 @@ class ParticleEmitterListNode internal constructor(var aClass318_Sub1_Sub3_Sub5_
             if (i > -55) method3275(117, -54, 56)
             ClientLoadStateMachine.aSoundChannelMixer_7042!!.method2088(false, class348_sub16_sub3)
             anInt9681++
-            if (bool) method2510(ClientLoadStateMachine.aJs5Archive_1878, class348_sub16_sub3, LightingOptionState.aJs5Archive_5878, false, ClientLoadStateMachine.aSoundChannelMixer_7042, HoverActionEntry.aJs5Archive_1815)
+            if (bool) method2510(ClientLoadStateMachine.aJs5Archive_1878, class348_sub16_sub3, LightingOptionState.aJs5Archive_5878, false, ClientLoadStateMachine.aSoundChannelMixer_7042, HoverActionEntryStatics.aJs5Archive_1815)
         }
 
         @JvmStatic

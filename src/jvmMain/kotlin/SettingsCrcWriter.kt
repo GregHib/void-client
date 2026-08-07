@@ -28,7 +28,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(121.toByte(), CameraNodeListStatics.aJs5Archive_1743!!.method389(-110))
         class348_sub49_sub2.writeInt(123.toByte(), SoftwareSpriteRaster.aJs5Archive_1627!!.method389(72))
         class348_sub49_sub2.writeInt(120.toByte(), LightingOptionState.aJs5Archive_5878!!.method389(37))
-        class348_sub49_sub2.writeInt(115.toByte(), HoverActionEntry.aJs5Archive_1815!!.method389(-115))
+        class348_sub49_sub2.writeInt(115.toByte(), HoverActionEntryStatics.aJs5Archive_1815!!.method389(-115))
         class348_sub49_sub2.writeInt(126.toByte(), AnimationFrameState.aJs5Archive_1538!!.method389(104))
         class348_sub49_sub2.writeInt(93.toByte(), VideoAdChecker.aJs5Archive_3183!!.method389(28))
         class348_sub49_sub2.writeInt(115.toByte(), FloatGridStatics.aJs5Archive_4975!!.method389(-96))

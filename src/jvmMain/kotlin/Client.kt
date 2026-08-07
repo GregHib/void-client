@@ -23,7 +23,7 @@ import CacheArchiveIndex.Companion.method1064
 import MapSceneTileDefinition.Companion.method1075
 import MinimapFlagRenderer.method1081
 import ObjectSpawnDecoder.method1086
-import HoverActionEntry.Companion.method1091
+import HoverActionEntryStatics.method1091
 import ModelDefinition.Companion.method1096
 import Crc64Hashable.Companion.method1112
 import WidgetComponentNode.Companion.method1117
@@ -2495,7 +2495,7 @@ class Client : GameAppletFrame() {
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                             }
-                            if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, HoverActionEntry.aSpriteStore_1813, aMapSceneCache_413)!!.method2292(84, FacingDirectionNodeStatics.aRenderer6654!!, class46.anInt789)
+                            if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, HoverActionEntryStatics.aSpriteStore_1813, aMapSceneCache_413)!!.method2292(84, FacingDirectionNodeStatics.aRenderer6654!!, class46.anInt789)
                             method273(class46, -2835)
                             if (class46.anInt774 == 0) {
                                 method107(widgetComponents, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_)

@@ -142,7 +142,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             ProjectionCameraTransform.aEmoteDefCache_5764!!.method2603(5, 11)
             TheoraVideoStream.aLocTypeDefLoader_9036!!.method1409(5, -20721)
             Client.aMapSceneCache_413!!.method819(74.toByte(), 5)
-            HoverActionEntry.aSpriteStore_1813!!.method299(5, 16)
+            HoverActionEntryStatics.aSpriteStore_1813!!.method299(5, 16)
             AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1392(88, 5)
             CacheArchiveIndexLoader.aItemDefinitionLoader_3147!!.method1285(i, 8)
             SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method697(5, 26)

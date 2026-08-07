@@ -70,7 +70,7 @@ object MapSceneRenderer {
                     i++
                 }
                 if (is_5_[0] != -1) {
-                    KeyboardLayoutCache.aParticleSystemRenderer_3304 = Client.aMapSceneCache_413!!.method823(is_5_[2], is_5_[3], is_5_[1], -109, (HoverActionEntry.aSpriteStore_1813!!), is_5_[0])
+                    KeyboardLayoutCache.aParticleSystemRenderer_3304 = Client.aMapSceneCache_413!!.method823(is_5_[2], is_5_[3], is_5_[1], -109, (HoverActionEntryStatics.aSpriteStore_1813!!), is_5_[0])
                     MapSceneDefLoader.anInt2481 = is_5_[4]
                 }
                 if (bool == false) break

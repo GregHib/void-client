@@ -872,7 +872,7 @@ object ConfigArchiveLoaderStatics {
         TheoraVideoStream.aLocTypeDefLoader_9036!!.method1410(-27995)
         ProjectionCameraTransform.aEmoteDefCache_5764!!.method2602(0)
         Client.aMapSceneCache_413!!.method816(false)
-        HoverActionEntry.aSpriteStore_1813!!.method302(-797644856)
+        HoverActionEntryStatics.aSpriteStore_1813!!.method302(-797644856)
         AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1390(23)
         CacheArchiveIndexLoader.aItemDefinitionLoader_3147!!.method1283(1)
         SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method694(-1007)
