@@ -77,16 +77,16 @@ class TimedTileQueueEntry internal constructor(i: Int, i_2_: Int) : HashLinkedLi
                 val l = glCreateShaderObjectARB(i)
                 glShaderSourceARB(l, string)
                 glCompileShaderARB(l)
-                glGetObjectParameterivARB(l, 35713, (ShortMatrixNode.Companion.anIntArray9519), 0)
-                if (ShortMatrixNode.Companion.anIntArray9519!![0] == 0) {
-                    if (ShortMatrixNode.Companion.anIntArray9519!![0] == 0) println("Shader compile failed:")
-                    glGetObjectParameterivARB(l, 35716, (ShortMatrixNode.Companion.anIntArray9519), 1)
-                    if (ShortMatrixNode.Companion.anIntArray9519!![1] > 1) {
-                        val `is` = ByteArray(ShortMatrixNode.Companion.anIntArray9519!![1])
-                        glGetInfoLogARB(l, (ShortMatrixNode.Companion.anIntArray9519!![1]), ShortMatrixNode.Companion.anIntArray9519, 0, `is`, 0)
+                glGetObjectParameterivARB(l, 35713, (ShortMatrixNodeStatics.anIntArray9519), 0)
+                if (ShortMatrixNodeStatics.anIntArray9519!![0] == 0) {
+                    if (ShortMatrixNodeStatics.anIntArray9519!![0] == 0) println("Shader compile failed:")
+                    glGetObjectParameterivARB(l, 35716, (ShortMatrixNodeStatics.anIntArray9519), 1)
+                    if (ShortMatrixNodeStatics.anIntArray9519!![1] > 1) {
+                        val `is` = ByteArray(ShortMatrixNodeStatics.anIntArray9519!![1])
+                        glGetInfoLogARB(l, (ShortMatrixNodeStatics.anIntArray9519!![1]), ShortMatrixNodeStatics.anIntArray9519, 0, `is`, 0)
                         println(String(`is`))
                     }
-                    if (ShortMatrixNode.Companion.anIntArray9519!![0] == 0) {
+                    if (ShortMatrixNodeStatics.anIntArray9519!![0] == 0) {
                         glDeleteObjectARB(l)
                         return null
                     }

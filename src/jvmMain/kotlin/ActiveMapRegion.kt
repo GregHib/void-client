@@ -11,7 +11,7 @@ object ActiveMapRegion : MapRegionLoader() {
     @JvmStatic
     fun method769(i: Int, i_0_: Byte) {
         anInt5653++
-        if (i_0_ > 109 && TextureLoaderUtil.method2547(i, 84.toByte())) ShortMatrixNode.method3180(-1, (WarpTextureNode.aWidgetComponentArrayArray9427!![i]!!), 24235)
+        if (i_0_ > 109 && TextureLoaderUtil.method2547(i, 84.toByte())) ShortMatrixNodeStatics.method3180(-1, (WarpTextureNode.aWidgetComponentArrayArray9427!![i]!!), 24235)
     }
 
     @JvmStatic

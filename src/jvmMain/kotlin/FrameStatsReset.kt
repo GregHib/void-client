@@ -4061,7 +4061,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             LongHashTable.anInt449 = 0
             FlipTextureNode.anInt1103 = 0
             SoundEngineInitializer.anInt483 = 0
-            ShortMatrixNode.anInt9514 = 0
+            ShortMatrixNodeStatics.anInt9514 = 0
             FloatCameraTransform.anInt5731 = 0
             WallSceneEntity.anInt9943 = 0
             ScreenBorderFiller.anInt1958 = 0

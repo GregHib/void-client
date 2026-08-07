@@ -1114,7 +1114,7 @@ object ChatCommandProcessor {
                 CompassSmoother.anInt3376 = anIntArray1149!![anInt1173]
                 NpcConfig.anInt948 = anIntArray1149!![anInt1173 + 1]
                 CompassSmoother.anInt3374 = anIntArray1149!![anInt1173 + 2]
-                ShortMatrixNode.anInt9511 = anIntArray1149!![anInt1173 + 3]
+                ShortMatrixNodeStatics.anInt9511 = anIntArray1149!![anInt1173 + 3]
                 HudTabPanelStatics.anInt2996 = anIntArray1149!![anInt1173 + 4]
                 CombineTextureNode.anInt9231 = anIntArray1149!![anInt1173 + 5]
                 ProjectedGroundDecor.anInt10257 = anIntArray1149!![anInt1173 + 6]

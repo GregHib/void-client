@@ -351,7 +351,7 @@ import ParticleEmitterListNode.Companion.method3274
 import MinimapAreaMarkerNode.Companion.method3278
 import SpriteRenderEntry.Companion.method3280
 import LoadingScreenImageNodeStatics.method3176
-import ShortMatrixNode.Companion.method3181
+import ShortMatrixNodeStatics.method3181
 import ChatScriptListNode.Companion.method3190
 import ChatCommandProcessor.method3199
 import KeyedCacheEntryReference.Companion.method3204

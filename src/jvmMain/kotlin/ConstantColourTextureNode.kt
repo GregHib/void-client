@@ -187,7 +187,7 @@ class ConstantColourTextureNode private constructor(i: Int) : AbstractProcedural
             if (i_0_ != 0) throw RuntimeException("nsn1")
             class348_sub49_sub2.startBitAccess(i xor 0x5398.inv())
             var i_7_ = 0
-            while ((i_7_ < ShortMatrixNode.anInt9513)) {
+            while ((i_7_ < ShortMatrixNodeStatics.anInt9513)) {
                 val i_8_ = GlArrayBufferObject.anIntArray4709!![i_7_]
                 if ((0x1 and AbstractBloomEffect.aByteArray6624!![i_8_].toInt()) != 0) {
                     if (i_0_ > 0) {
@@ -208,7 +208,7 @@ class ConstantColourTextureNode private constructor(i: Int) : AbstractProcedural
                 if (i_0_ != 0) throw RuntimeException("nsn2")
                 class348_sub49_sub2.startBitAccess(36)
                 var i_10_ = 0
-                while ((ShortMatrixNode.anInt9513 > i_10_)) {
+                while ((ShortMatrixNodeStatics.anInt9513 > i_10_)) {
                     val i_11_ = GlArrayBufferObject.anIntArray4709!![i_10_]
                     if ((AbstractBloomEffect.aByteArray6624!![i_11_].toInt() and 0x1) == 0) {
                         if (i_0_ > 0) {
@@ -227,11 +227,11 @@ class ConstantColourTextureNode private constructor(i: Int) : AbstractProcedural
                 class348_sub49_sub2.stopBitAccess(false)
                 if (i_0_ != 0) throw RuntimeException("nsn3")
                 ShaderState.anInt6513 = 0
-                ShortMatrixNode.anInt9513 = 0
+                ShortMatrixNodeStatics.anInt9513 = 0
                 for (i_13_ in 1..2047) {
                     AbstractBloomEffect.aByteArray6624!![i_13_] = (AbstractBloomEffect.aByteArray6624!![i_13_].toInt() shr 1).toByte()
                     val player = LoadingBarRenderer.aPlayerArray5058!![i_13_]
-                    if (player == null) GlArrayBufferObject.anIntArray4709!![ShortMatrixNode.anInt9513++] = i_13_
+                    if (player == null) GlArrayBufferObject.anIntArray4709!![ShortMatrixNodeStatics.anInt9513++] = i_13_
                     else ScrollTexMaterialPass.anIntArray6290!![ShaderState.anInt6513++] = i_13_
                 }
             }

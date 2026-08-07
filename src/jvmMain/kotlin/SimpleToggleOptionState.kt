@@ -91,7 +91,7 @@ class SimpleToggleOptionState : GraphicsOptionState {
             ShaderState.anInt6513 = 0
             ScrollTexMaterialPass.anIntArray6290!![ShaderState.anInt6513++] = i_3_
             AbstractBloomEffect.aByteArray6624!![i_3_] = 0.toByte()
-            ShortMatrixNode.anInt9513 = 0
+            ShortMatrixNodeStatics.anInt9513 = 0
             for (i_8_ in 1..2047) {
                 if (i_8_ != i_3_) {
                     val i_9_ = class348_sub49_sub2.readBits((-24).toByte(), 18)
@@ -104,7 +104,7 @@ class SimpleToggleOptionState : GraphicsOptionState {
                     class359.anInt4420 = (i_11_ shl 14) + ((i_10_ shl 28) + i_12_)
                     class359.anInt4423 = 0
                     class359.anInt4425 = -1
-                    GlArrayBufferObject.anIntArray4709!![ShortMatrixNode.anInt9513++] = i_8_
+                    GlArrayBufferObject.anIntArray4709!![ShortMatrixNodeStatics.anInt9513++] = i_8_
                     AbstractBloomEffect.aByteArray6624!![i_8_] = 0.toByte()
                 }
             }

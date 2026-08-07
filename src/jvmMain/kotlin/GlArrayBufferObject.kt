@@ -91,7 +91,7 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
                 var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-73) as? ContactList?)
                 while (class348_sub42_sub13 != null) {
                     val i_16_ = 16 * i_15_ + i_7_ - (-i_10_ + -13)
-                    if (i_4_ + anInt4717 < i_11_ && i_11_ < SceneTileBounds.anInt1117 + (i_4_ + anInt4717) && i_12_ > -13 + i_16_ && i_16_ - -4 > i_12_ && ((class348_sub42_sub13.anInt9615) > 1 || (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry).aBoolean9610)) var_renderer.aa(anInt4717 + i_4_, -12 + i_16_, SceneTileBounds.anInt1117, 16, (255 + -ShortMatrixNode.anInt9511 shl 24) or CompassSmoother.anInt3374, 1)
+                    if (i_4_ + anInt4717 < i_11_ && i_11_ < SceneTileBounds.anInt1117 + (i_4_ + anInt4717) && i_12_ > -13 + i_16_ && i_16_ - -4 > i_12_ && ((class348_sub42_sub13.anInt9615) > 1 || (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry).aBoolean9610)) var_renderer.aa(anInt4717 + i_4_, -12 + i_16_, SceneTileBounds.anInt1117, 16, (255 + -ShortMatrixNodeStatics.anInt9511 shl 24) or CompassSmoother.anInt3374, 1)
                     i_15_++
                     class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(61.toByte()) as? ContactList?)
                 }
@@ -101,7 +101,7 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
                     var class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1011(-44) as? ContactEntry?)
                     while (class348_sub42_sub12 != null) {
                         val i_17_ = i_15_ * 16 + (InputTracker.anInt4534 + i_10_ - -13)
-                        if (MinimapPolygonDrawer.anInt5252 < i_11_ && (MinimapPolygonDrawer.anInt5252 - -TerrainTileShape.anInt8806) > i_11_ && -13 + i_17_ < i_12_ && i_17_ - -4 > i_12_ && (class348_sub42_sub12.aBoolean9610)) var_renderer.aa(MinimapPolygonDrawer.anInt5252, i_17_ - 12, TerrainTileShape.anInt8806, 16, (-ShortMatrixNode.anInt9511 + 255 shl 24) or CompassSmoother.anInt3374, 1)
+                        if (MinimapPolygonDrawer.anInt5252 < i_11_ && (MinimapPolygonDrawer.anInt5252 - -TerrainTileShape.anInt8806) > i_11_ && -13 + i_17_ < i_12_ && i_17_ - -4 > i_12_ && (class348_sub42_sub12.aBoolean9610)) var_renderer.aa(MinimapPolygonDrawer.anInt5252, i_17_ - 12, TerrainTileShape.anInt8806, 16, (-ShortMatrixNodeStatics.anInt9511 + 255 shl 24) or CompassSmoother.anInt3374, 1)
                         i_15_++
                         class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(71.toByte()) as? ContactEntry?)
                     }
@@ -112,7 +112,7 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
                 var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as? ContactEntry?)
                 while (class348_sub42_sub12 != null) {
                     val i_14_ = (16 * (-1 + (FileExistsCondition.anInt4776 - i_13_)) + 13 + (i_7_ + i_10_))
-                    if (i_11_ > anInt4717 - -i_4_ && anInt4717 + i_4_ - -SceneTileBounds.anInt1117 > i_11_ && i_12_ > i_14_ - 13 && 4 + i_14_ > i_12_ && (class348_sub42_sub12.aBoolean9610)) var_renderer.aa(i_4_ + anInt4717, -12 + i_14_, SceneTileBounds.anInt1117, 16, (255 + -ShortMatrixNode.anInt9511 shl 24) or CompassSmoother.anInt3374, 1)
+                    if (i_11_ > anInt4717 - -i_4_ && anInt4717 + i_4_ - -SceneTileBounds.anInt1117 > i_11_ && i_12_ > i_14_ - 13 && 4 + i_14_ > i_12_ && (class348_sub42_sub12.aBoolean9610)) var_renderer.aa(i_4_ + anInt4717, -12 + i_14_, SceneTileBounds.anInt1117, 16, (255 + -ShortMatrixNodeStatics.anInt9511 shl 24) or CompassSmoother.anInt3374, 1)
                     i_13_++
                     class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(101.toByte()) as? ContactEntry?
                 }

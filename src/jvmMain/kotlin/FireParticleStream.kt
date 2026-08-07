@@ -262,7 +262,7 @@ class FireParticleStream : OutputStream() {
                                     var i_36_ = 0
                                     var d_37_ = 0.0
                                     if (WhirlpoolHash.anInt7207 == 0) {
-                                        d_37_ = d + ShortMatrixNode.aDouble9517
+                                        d_37_ = d + ShortMatrixNodeStatics.aDouble9517
                                         i_33_ = i_31_
                                         i_34_ = i_32_
                                     } else if (WhirlpoolHash.anInt7207 == 1) {
@@ -270,7 +270,7 @@ class FireParticleStream : OutputStream() {
                                         i_36_ = i_32_ / WhirlpoolHash.anInt4267
                                         i_33_ = i_35_ * WhirlpoolHash.anInt1067
                                         i_34_ = i_36_ * WhirlpoolHash.anInt4267
-                                        d_37_ = ((d + ShortMatrixNode.aDouble9517) * (i_32_ * i_34_ + i_33_ * i_31_).toDouble() / (i_32_ * i_32_ + i_31_ * i_31_).toDouble())
+                                        d_37_ = ((d + ShortMatrixNodeStatics.aDouble9517) * (i_32_ * i_34_ + i_33_ * i_31_).toDouble() / (i_32_ * i_32_ + i_31_ * i_31_).toDouble())
                                     }
                                     d_37_ = -d_37_
                                     var i_38_ = 0
@@ -380,8 +380,8 @@ class FireParticleStream : OutputStream() {
                                     if (WhirlpoolHash.anInt7207 == 0) CameraRotationStubStatics.aRenderer326!!.method3687(WidgetDefinition.anSpriteDrawTarget_252)
                                     CameraRotationStubStatics.aRenderer326!!.F(-i_33_, -i_34_)
                                     CameraRotationStubStatics.aRenderer326!!.b(i_45_, i_48_, i_43_, i_50_, d_37_)
-                                    RenderNodeStatics.method3284(true, (ShortMatrixNode.aDouble9517 + d_37_))
-                                    GlCubeMapTexture.aDouble8621 = d_37_ + ShortMatrixNode.aDouble9517
+                                    RenderNodeStatics.method3284(true, (ShortMatrixNodeStatics.aDouble9517 + d_37_))
+                                    GlCubeMapTexture.aDouble8621 = d_37_ + ShortMatrixNodeStatics.aDouble9517
                                     if (WhirlpoolHash.anInt7207 == 1) {
                                         ShaderStateStatics.anInt8799 = (i_17_ + -ModelVertexColorBuffer.anInt6568 - i_34_)
                                         FireParticleStream.anInt95 = i_21_
@@ -413,7 +413,7 @@ class FireParticleStream : OutputStream() {
                                     if (WhirlpoolHash.anInt7207 == 0) CameraRotationStubStatics.aRenderer326!!.method3672()
                                     ModelVertexColorBuffer.anInt6568 += i_34_
                                     ShaderObjectStatics.anInt4100 += i_33_
-                                    ShortMatrixNode.aDouble9517 += d_37_
+                                    ShortMatrixNodeStatics.aDouble9517 += d_37_
                                     FireParticleStream.anInt9157 = (-ModelVertexColorBuffer.anInt6568 + i_26_ + WhirlpoolHash.anInt10444)
                                     MapRegionLoaderThread.anInt4211 = (-ShaderObjectStatics.anInt4100 + WhirlpoolHash.anInt2747 + i_25_)
                                     if (WhirlpoolHash.anInt7207 == 1) {
@@ -434,7 +434,7 @@ class FireParticleStream : OutputStream() {
                             } else {
                                 MapRegionLoaderThread.anInt4211 = i_27_
                                 FireParticleStream.anInt9157 = i_28_
-                                if (WhirlpoolHash.anInt7207 == 2) ShortMatrixNode.aDouble9517 = -d
+                                if (WhirlpoolHash.anInt7207 == 2) ShortMatrixNodeStatics.aDouble9517 = -d
                             }
                         }
                         if (PcmStreamBuffer.aBoolean8870) {
@@ -445,7 +445,7 @@ class FireParticleStream : OutputStream() {
                             MapRegionLoaderThread.anInt4211 = WhirlpoolHash.anInt2747
                             AnimatedModelRenderer.anInt8422 = i_4_
                             ModelVertexColorBuffer.anInt6568 = 0
-                            ShortMatrixNode.aDouble9517 = 0.0
+                            ShortMatrixNodeStatics.aDouble9517 = 0.0
                             if (WhirlpoolHash.anInt7207 == 0) CameraRotationStubStatics.aRenderer326!!.method3687(WidgetDefinition.anSpriteDrawTarget_252)
                             CameraRotationStubStatics.aRenderer326!!.la()
                             CameraRotationStubStatics.aRenderer326!!.ya()
@@ -476,8 +476,8 @@ class FireParticleStream : OutputStream() {
                         }
                         if (WhirlpoolHash.anInt7207 == 0) WidgetDefinition.anSpriteDrawTarget_252!!.method14(MapRegionLoaderThread.anInt4211, FireParticleStream.anInt9157, WhirlpoolHash.anInt5283, WhirlpoolHash.anInt1651, 0, 0, true, true)
                         GroundDecorSceneEntity.anInt9997++
-                        RenderNodeStatics.method3284(true, ShortMatrixNode.aDouble9517)
-                        ModelWallEntity.aDouble10120 = ShortMatrixNode.aDouble9517
+                        RenderNodeStatics.method3284(true, ShortMatrixNodeStatics.aDouble9517)
+                        ModelWallEntity.aDouble10120 = ShortMatrixNodeStatics.aDouble9517
                         if (WhirlpoolHash.anInt7207 == 0 || WhirlpoolHash.anInt7207 == 2) {
                             if (WhirlpoolHash.anInt7207 == 2) {
                                 CameraRotationStubStatics.aRenderer326!!.GA(IsaacCipher.anInt1290)
