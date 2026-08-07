@@ -73,14 +73,14 @@ class LightDetailOptionState : GraphicsOptionState {
         @JvmStatic
         @Throws(IOException::class)
         fun method1802(i: Int) {
-            if (Client.aAbstractGameSocket_9165 != null && IntPair.anInt6969 > 0) {
+            if (Client.aAbstractGameSocket_9165 != null && IntPairStatics.anInt6969 > 0) {
                 var i_2_ = 0
                 while (true) {
                     val class348_sub47 = GrayscaleEffect.aNodeDeque_9201!!.method1995(i xor 0x4) as OutgoingPacketNode?
                     if (class348_sub47 == null) break
                     Client.aAbstractGameSocket_9165!!.method1706(0, i xor 0x77, class348_sub47.anInt7119, (class348_sub47.aClass348_Sub49_Sub2_7116!!.aByteArray7154!!))
                     i_2_ += class348_sub47.anInt7119
-                    IntPair.anInt6969 -= class348_sub47.anInt7119
+                    IntPairStatics.anInt6969 -= class348_sub47.anInt7119
                     class348_sub47.method2715(74.toByte())
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.method3360((-69).toByte())
                     class348_sub47.method3326((-45).toByte())

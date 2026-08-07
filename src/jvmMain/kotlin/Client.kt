@@ -300,7 +300,7 @@ import ShortKeyNodeStatics.method3003
 import ModelVertexColorBuffer.Companion.method2738
 import AbstractFrameBufferSurface.Companion.method3010
 import ProducerImageSurface.Companion.method3016
-import IntPair.Companion.method3026
+import IntPairStatics.method3026
 import WidgetActionEntry.Companion.method3029
 import TerrainShadowBuilderGl3.Companion.method3035
 import ClientMachineInfo.Companion.method2748

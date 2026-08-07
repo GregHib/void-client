@@ -646,7 +646,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
             GrayscaleEffect.aNodeDeque_9201!!.method1999(class348_sub47, -20180)
             class348_sub47.anInt7119 = class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197
             class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 = 0
-            IntPair.anInt6969 += class348_sub47.anInt7119
+            IntPairStatics.anInt6969 += class348_sub47.anInt7119
             val i_17_ = -41 / ((i - 79) / 37)
         }
 

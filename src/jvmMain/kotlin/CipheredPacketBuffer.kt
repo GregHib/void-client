@@ -49,12 +49,12 @@ class CipheredPacketBuffer internal constructor(i: Int) : ByteBuffer(i) {
         anInt9754 += i_9_
         var i_12_ = 0
         while ( /**/i_11_ < i_9_) {
-            i_12_ += (this.aByteArray7154!![i_10_++].toInt() and IntPair.anIntArray6972!![i_11_]) shl i_9_ - i_11_
+            i_12_ += (this.aByteArray7154!![i_10_++].toInt() and IntPairStatics.anIntArray6972!![i_11_]) shl i_9_ - i_11_
             i_9_ -= i_11_
             i_11_ = 8
         }
-        if (i_11_ != i_9_) i_12_ += (this.aByteArray7154!![i_10_].toInt() shr i_11_ - i_9_) and IntPair.anIntArray6972!![i_9_]
-        else i_12_ += (IntPair.anIntArray6972!![i_11_] and this.aByteArray7154!![i_10_].toInt())
+        if (i_11_ != i_9_) i_12_ += (this.aByteArray7154!![i_10_].toInt() shr i_11_ - i_9_) and IntPairStatics.anIntArray6972!![i_9_]
+        else i_12_ += (IntPairStatics.anIntArray6972!![i_11_] and this.aByteArray7154!![i_10_].toInt())
         return i_12_
     }
 

@@ -84,10 +84,10 @@ class GlTexture3D : GlTexture {
                 AnimatedModelRenderer.anInt8412 = -ByteArrayPool.anInt492
                 ByteArrayPool.anInt492 = 0
             } else AnimatedModelRenderer.anInt8412 = 0
-            IntPair.anInt6974 = ActorEntity.anInt8502 - ActorEntity.anInt10084
-            if (IntPair.anInt6974 < 0) {
-                WorldMapRenderer.anInt4686 = -IntPair.anInt6974
-                IntPair.anInt6974 = 0
+            IntPairStatics.anInt6974 = ActorEntity.anInt8502 - ActorEntity.anInt10084
+            if (IntPairStatics.anInt6974 < 0) {
+                WorldMapRenderer.anInt4686 = -IntPairStatics.anInt6974
+                IntPairStatics.anInt6974 = 0
             } else WorldMapRenderer.anInt4686 = 0
             ProjectileConfigUtil.anInt387 = ActorEntity.anInt6111 + ActorEntity.anInt10084
             if (ProjectileConfigUtil.anInt387 > ActorEntity.anInt6451) ProjectileConfigUtil.anInt387 = ActorEntity.anInt6451
@@ -140,7 +140,7 @@ class GlTexture3D : GlTexture {
                 FacingDirectionNodeStatics.aBooleanArrayArray6656 = WorldMapIconLabel.aBooleanArrayArray8596
                 ActorEntity.aBooleanArrayArray1572 = WorldMapIconLabel.aBooleanArrayArray8596!!
                 ByteArrayPool.anInt492 = 0
-                IntPair.anInt6974 = 0
+                IntPairStatics.anInt6974 = 0
                 ProjectileConfigUtil.anInt387 = ActorEntity.anInt6451
                 GrayscaleNoiseTexture.anInt5293 = ActorEntity.anInt7054
                 ActorEntity.aBoolean351 = false

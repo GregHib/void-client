@@ -215,7 +215,7 @@ class ModelVertexColorBuffer internal constructor(private val aS_Sub3_6566: Nati
         fun method2739(i: Int) {
             GrayscaleEffect.aNodeDeque_9201!!.method1996(98)
             anInt6579++
-            IntPair.anInt6969 = i
+            IntPairStatics.anInt6969 = i
         }
 
         @JvmStatic

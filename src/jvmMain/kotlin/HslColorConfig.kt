@@ -117,15 +117,15 @@ class HslColorConfig {
                     }
                     TextureCache.method3466(i + -113)
                 } else {
-                    if (IntPair.aRenderer6968 == null) {
+                    if (IntPairStatics.aRenderer6968 == null) {
                         val canvas = Canvas()
                         canvas.setSize(36, 32)
-                        IntPair.aRenderer6968 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, 0, canvas, SpriteLoadValidator.aJs5Archive_4796)
-                        EdgeDetectTextureNode.aRSFont_9173 = (IntPair.aRenderer6968!!.method3686(method1819(ConnectionStateType.anInt1044, 0, -44, SoftwareSpriteRaster.aJs5Archive_1627!!), SpriteImage.method1519(CameraRotationStubStatics.aJs5Archive_322!!, ConnectionStateType.anInt1044, 0), true))
+                        IntPairStatics.aRenderer6968 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, 0, canvas, SpriteLoadValidator.aJs5Archive_4796)
+                        EdgeDetectTextureNode.aRSFont_9173 = (IntPairStatics.aRenderer6968!!.method3686(method1819(ConnectionStateType.anInt1044, 0, -44, SoftwareSpriteRaster.aJs5Archive_1627!!), SpriteImage.method1519(CameraRotationStubStatics.aJs5Archive_322!!, ConnectionStateType.anInt1044, 0), true))
                     }
                     var class348_sub7 = (ProportionalScrollbarComponent.aNodeDeque_9931!!.method1995(i + 4) as RegionTileNode?)
                     while (class348_sub7 != null) {
-                        ClientExceptionStatics.aModelHeaderCache_112!!.method1932(IntPair.aRenderer6968, class348_sub7.anInt6647, class348_sub7.anInt6648, EdgeDetectTextureNode.aRSFont_9173, (if (class348_sub7.aBoolean6650) (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) else null), class348_sub7.anInt6642, false, 83.toByte(), var_renderer, class348_sub7.anInt6649, false, class348_sub7.anInt6645)
+                        ClientExceptionStatics.aModelHeaderCache_112!!.method1932(IntPairStatics.aRenderer6968, class348_sub7.anInt6647, class348_sub7.anInt6648, EdgeDetectTextureNode.aRSFont_9173, (if (class348_sub7.aBoolean6650) (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536) else null), class348_sub7.anInt6642, false, 83.toByte(), var_renderer, class348_sub7.anInt6649, false, class348_sub7.anInt6645)
                         class348_sub7.method2715(21.toByte())
                         class348_sub7 = ProportionalScrollbarComponent.aNodeDeque_9931!!.method1990(118.toByte()) as RegionTileNode?
                     }

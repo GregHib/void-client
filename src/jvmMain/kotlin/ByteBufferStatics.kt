@@ -37,10 +37,10 @@ object ByteBufferStatics {
     }
 
     fun method3354(i: Int) {
-        if (IntPair.aRenderer6968 != null) {
-            IntPair.aRenderer6968!!.method3635((-44).toByte())
+        if (IntPairStatics.aRenderer6968 != null) {
+            IntPairStatics.aRenderer6968!!.method3635((-44).toByte())
             EdgeDetectTextureNode.aRSFont_9173 = null
-            IntPair.aRenderer6968 = null
+            IntPairStatics.aRenderer6968 = null
         }
         val i_37_ = -97 % ((i - -14) / 37)
         anInt7173++

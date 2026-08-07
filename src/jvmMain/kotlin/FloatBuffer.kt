@@ -101,7 +101,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                         var i_8_ = ActorEntity.aBooleanArrayArray1572!!.size
                         if ((ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size) > ActorEntity.anInt6451) i_8_ -= (ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size - ActorEntity.anInt6451)
                         var i_9_ = ActorEntity.aBooleanArrayArray1572!![0]!!.size
-                        if ((IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size) > ActorEntity.anInt7054) i_9_ -= (IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size - ActorEntity.anInt7054)
+                        if ((IntPairStatics.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size) > ActorEntity.anInt7054) i_9_ -= (IntPairStatics.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size - ActorEntity.anInt7054)
                         var bools = FacingDirectionNodeStatics.aBooleanArrayArray6656
                         if (SpriteTextureNode.aBoolean9242) {
                             if (VoronoiNoiseTextureNode.aBoolean9121) bools = OverlayColorTable.aBooleanArrayArrayArray1751!![i_7_]
@@ -110,7 +110,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                                 for (i_12_ in WorldMapRenderer.anInt4686..<i_9_) {
                                     bools!![i_10_]!![i_12_] = false
                                     if (ActorEntity.aBooleanArrayArray1572!![i_10_]!![i_12_]) {
-                                        val i_13_ = (i_12_ + IntPair.anInt6974 - WorldMapRenderer.anInt4686)
+                                        val i_13_ = (i_12_ + IntPairStatics.anInt6974 - WorldMapRenderer.anInt4686)
                                         for (i_14_ in i_7_ downTo 0) {
                                             if ((HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]) != null && (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i_14_]!![i_11_]!![i_13_]!!.aByte4399).toInt() == i_7_) {
                                                 bools[i_10_]!![i_12_] = (i_14_ < i || (`is`[i_14_]!![i_11_]!![i_13_]) != i_0_) && (!ActorEntity.method164(i_7_, i_11_, (-97).toByte(), i_13_))
@@ -131,14 +131,14 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                         var i_16_ = ActorEntity.aBooleanArrayArray1572!!.size
                         if ((ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size) > ActorEntity.anInt6451) i_16_ -= (ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size - ActorEntity.anInt6451)
                         var i_17_ = ActorEntity.aBooleanArrayArray1572!![0]!!.size
-                        if ((IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size) > ActorEntity.anInt7054) i_17_ -= (IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size - ActorEntity.anInt7054)
+                        if ((IntPairStatics.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size) > ActorEntity.anInt7054) i_17_ -= (IntPairStatics.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size - ActorEntity.anInt7054)
                         var bools = FacingDirectionNodeStatics.aBooleanArrayArray6656
                         if (SpriteTextureNode.aBoolean9242) {
                             if (VoronoiNoiseTextureNode.aBoolean9121) bools = OverlayColorTable.aBooleanArrayArrayArray1751!![i_7_]
                             for (i_18_ in AnimatedModelRenderer.anInt8412..<i_16_) {
                                 val i_19_ = (i_18_ + ByteArrayPool.anInt492 - AnimatedModelRenderer.anInt8412)
                                 for (i_20_ in WorldMapRenderer.anInt4686..<i_17_) {
-                                    bools!![i_18_]!![i_20_] = (ActorEntity.aBooleanArrayArray1572!![i_18_]!![i_20_]) && !ActorEntity.method164(i_7_, i_19_, (-97).toByte(), (i_20_ + (IntPair.anInt6974) - (WorldMapRenderer.anInt4686)))
+                                    bools!![i_18_]!![i_20_] = (ActorEntity.aBooleanArrayArray1572!![i_18_]!![i_20_]) && !ActorEntity.method164(i_7_, i_19_, (-97).toByte(), (i_20_ + (IntPairStatics.anInt6974) - (WorldMapRenderer.anInt4686)))
                                 }
                             }
                         }
