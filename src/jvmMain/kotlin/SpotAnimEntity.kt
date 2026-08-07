@@ -368,7 +368,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                             MapRegionLoaderStatics.aFloat1249 = MapRegionLoaderStatics.aFloat1247
                         }
                         MapRegionLoaderStatics.anInt1255 = MapRegionLoaderStatics.aFloat1247.toInt() shr 1
-                        MapRegionLoaderStatics.aByteArrayArrayArray1251 = SpriteMaskShape.method2596(MapRegionLoaderStatics.anInt1255, 12871)
+                        MapRegionLoaderStatics.aByteArrayArrayArray1251 = SpriteMaskShapeStatics.method2596(MapRegionLoaderStatics.anInt1255, 12871)
                         MenuActionNode.method2811(false)
                         method760()
                         RegionSceneLoader.aNodeDeque_3705 = NodeDeque()

@@ -499,7 +499,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             HostPingThread.anInt2266 = 0
             PerlinTextureProvider.anInt3942 = 0
             SceneObjectAnimator.anInt3076 = 0
-            SpriteMaskShape.anInt4067 = 0
+            SpriteMaskShapeStatics.anInt4067 = 0
             DynamicSceneObjectEntity.anInt10192 = 0
             OpenGlRenderNode.anInt10485 = 0
             CameraRotationStubStatics.anInt321 = 0
@@ -715,7 +715,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlBloomEffect.anInt8834 = 0
             TrigLookupTablesStatics.anInt1205 = 0
             Gl2dTexture.anInt8613 = 0
-            SpriteMaskShape.anInt4074 = 0
+            SpriteMaskShapeStatics.anInt4074 = 0
             TextureMetadataProvider.anInt4614 = 0
             ResourceLoaderThread.anInt3897 = 0
             MatrixCameraTransform.anInt5670 = 0
@@ -3429,7 +3429,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9849 = 0
             TimedTileQueueEntry.anInt9656 = 0
             OpenGlModel.anInt5637 = 0
-            SpriteMaskShape.anInt4066 = 0
+            SpriteMaskShapeStatics.anInt4066 = 0
             HeightMapNoise.anInt3828 = 0
             LinkedNodeListIterator.anInt1643 = 0
             LinkedNodeListIterator.anInt1653 = 0
@@ -3616,7 +3616,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MultiLevelOptionState.anInt6152 = 0
             GlShadowRenderPass.anInt7383 = 0
             Gl2dTexture.anInt8611 = 0
-            SpriteMaskShape.anInt4068 = 0
+            SpriteMaskShapeStatics.anInt4068 = 0
             ModelOrSpriteHolderStatics.anInt122 = 0
             RangeThresholdTextureNode.anInt9102 = 0
             ProjectionCameraTransform.anInt5752 = 0

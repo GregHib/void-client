@@ -110,13 +110,13 @@ object NativeLibraryUnloader {
             if (MapRegionLoaderStatics.aFloat1249 < MapRegionLoaderStatics.aFloat1247) MapRegionLoaderStatics.aFloat1247 = MapRegionLoaderStatics.aFloat1249
             MenuActionNode.method2811(false)
             MapRegionLoaderStatics.anInt1255 = MapRegionLoaderStatics.aFloat1247.toInt() shr 1
-            MapRegionLoaderStatics.aByteArrayArrayArray1251 = SpriteMaskShape.method2596(MapRegionLoaderStatics.anInt1255, 12871)
+            MapRegionLoaderStatics.aByteArrayArrayArray1251 = SpriteMaskShapeStatics.method2596(MapRegionLoaderStatics.anInt1255, 12871)
         } else if (MapRegionLoaderStatics.aFloat1247 > MapRegionLoaderStatics.aFloat1249) {
             MapRegionLoaderStatics.aFloat1247 -= (MapRegionLoaderStatics.aFloat1247.toDouble() / 30.0).toFloat()
             if (MapRegionLoaderStatics.aFloat1249 > MapRegionLoaderStatics.aFloat1247) MapRegionLoaderStatics.aFloat1247 = MapRegionLoaderStatics.aFloat1249
             MenuActionNode.method2811(false)
             MapRegionLoaderStatics.anInt1255 = MapRegionLoaderStatics.aFloat1247.toInt() shr 1
-            MapRegionLoaderStatics.aByteArrayArrayArray1251 = SpriteMaskShape.method2596(MapRegionLoaderStatics.anInt1255, i + 12871)
+            MapRegionLoaderStatics.aByteArrayArrayArray1251 = SpriteMaskShapeStatics.method2596(MapRegionLoaderStatics.anInt1255, i + 12871)
         }
         anInt2971++
         if (i != (TextureMetadataProvider.anInt4609.inv()) && ColourAdjustment.anInt859 != -1) {

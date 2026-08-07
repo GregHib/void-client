@@ -5438,7 +5438,7 @@ object ChatCommandProcessor {
     fun method3199(i: Int) {
         InboundPacketHeader.aInboundPacketHeader_9550 = null
         InboundPacketHeader.aInboundPacketHeader_9552 = null
-        SpriteMaskShape.aOutgoingPacketHeader_9553 = null
+        SpriteMaskShapeStatics.aOutgoingPacketHeader_9553 = null
         ChatCommandProcessor.aString9554 = null
     }
     var anInt2560: Int = 0

@@ -250,7 +250,7 @@ import AbstractCameraTransformStatics.method2555
 import SystemFontGlyphs.Companion.method2562
 import RSFont.Companion.method2570
 import RSFont.Companion.method2572
-import SpriteMaskShape.Companion.method2597
+import SpriteMaskShapeStatics.method2597
 import ShaderStateStatics.method2611
 import MaterialTypeMarkerStatics.method2613
 import MaterialTypeVariant.method2614
@@ -746,7 +746,7 @@ class Client : GameAppletFrame() {
         method1931(true)
         method1407(124.toByte())
         method825(i + -204)
-        SpriteMaskShape.method305(79.toByte())
+        SpriteMaskShapeStatics.method305(79.toByte())
         method2545(true)
         method698(i + -106)
         ConfigArchiveLoaderStatics.method811((-123).toByte())
@@ -986,7 +986,7 @@ class Client : GameAppletFrame() {
         ModelDataCache.method296((-99).toByte())
         method176(-1)
         IntHashSetStatics.method2366(true)
-        SpriteMaskShape.method2690(-124)
+        SpriteMaskShapeStatics.method2690(-124)
         method1551()
         TerrainChunkBuilder.method370(true)
         method3202(79.toByte())
