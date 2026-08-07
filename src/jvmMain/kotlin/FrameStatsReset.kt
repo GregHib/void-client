@@ -1433,7 +1433,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WallEntity.anInt8772 = 0
             PerlinNoiseTextureNode.anInt9151 = 0
             ColourAdjustment.anInt855 = 0
-            SceneTextLabel.anInt6423 = 0
+            SceneTextLabelStatics.anInt6423 = 0
             GameAppletFrame.anInt11 = 0
             CameraRotationStub.anInt327 = 0
             SpotAnimEntity.anInt6448 = 0

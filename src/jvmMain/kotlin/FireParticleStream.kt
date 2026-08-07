@@ -486,14 +486,14 @@ class FireParticleStream : OutputStream() {
                             TextureHandle.anInt2590 = i_20_
                             anInt1879 = i_21_
                             AnimationFrameState.anInt1537 = (-MapRegionLoaderThread.anInt4211 + -ShaderObjectStatics.anInt4100 + (i_16_ + WhirlpoolHash.anInt2747))
-                            SceneTextLabel.anInt6417 = (-FireParticleStream.anInt9157 + (i_17_ + WhirlpoolHash.anInt10444 + -ModelVertexColorBuffer.anInt6568))
-                            CameraRotationStubStatics.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
+                            SceneTextLabelStatics.anInt6417 = (-FireParticleStream.anInt9157 + (i_17_ + WhirlpoolHash.anInt10444 + -ModelVertexColorBuffer.anInt6568))
+                            CameraRotationStubStatics.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabelStatics.anInt6417, TextureHandle.anInt2590, anInt1879)
                         } else if (WhirlpoolHash.anInt7207 == 1) {
                             TextureHandle.anInt2590 = i_20_
                             AnimationFrameState.anInt1537 = i_16_ + -ShaderObjectStatics.anInt4100
-                            SceneTextLabel.anInt6417 = -ModelVertexColorBuffer.anInt6568 + i_17_
+                            SceneTextLabelStatics.anInt6417 = -ModelVertexColorBuffer.anInt6568 + i_17_
                             anInt1879 = i_21_
-                            CameraRotationStubStatics.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, anInt1879)
+                            CameraRotationStubStatics.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabelStatics.anInt6417, TextureHandle.anInt2590, anInt1879)
                             CameraRotationStubStatics.aRenderer326!!.KA(MapRegionLoaderThread.anInt4211, FireParticleStream.anInt9157, (MapRegionLoaderThread.anInt4211 - -WhirlpoolHash.anInt5283), (WhirlpoolHash.anInt1651 + FireParticleStream.anInt9157))
                         }
                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, if (WhirlpoolHash.anInt7207 != 2) 2 else 0, WhirlpoolHash.anInt7207 == 1)
