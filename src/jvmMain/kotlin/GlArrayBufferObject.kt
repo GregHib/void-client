@@ -111,7 +111,7 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
                 var i_13_ = 0
                 var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as? ContactEntry?)
                 while (class348_sub42_sub12 != null) {
-                    val i_14_ = (16 * (-1 + (FileExistsCondition.anInt4776 - i_13_)) + 13 + (i_7_ + i_10_))
+                    val i_14_ = (16 * (-1 + (FileExistsConditionStatics.anInt4776 - i_13_)) + 13 + (i_7_ + i_10_))
                     if (i_11_ > anInt4717 - -i_4_ && anInt4717 + i_4_ - -SceneTileBounds.anInt1117 > i_11_ && i_12_ > i_14_ - 13 && 4 + i_14_ > i_12_ && (class348_sub42_sub12.aBoolean9610)) var_renderer.aa(i_4_ + anInt4717, -12 + i_14_, SceneTileBounds.anInt1117, 16, (255 + -ShortMatrixNodeStatics.anInt9511 shl 24) or CompassSmoother.anInt3374, 1)
                     i_13_++
                     class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(101.toByte()) as? ContactEntry?
@@ -143,7 +143,7 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
                 var i_18_ = 0
                 var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as? ContactEntry?)
                 while (class348_sub42_sub12 != null) {
-                    val i_19_ = (i_7_ - -i_10_ - (-13 - (FileExistsCondition.anInt4776 + (-1 + -i_18_)) * 16))
+                    val i_19_ = (i_7_ - -i_10_ - (-13 - (FileExistsConditionStatics.anInt4776 + (-1 + -i_18_)) * 16))
                     i_18_++
                     SceneModelBuilderStatics.method2494(i_7_, 0xffffff.inv() or SolidFillComponent.anInt8363, i_19_, var_renderer, class348_sub42_sub12, i_8_, i_12_, (0xffffff.inv() or CharCodeMap.anInt9586), 125.toByte(), i_9_, i_6_, i_11_)
                     class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(71.toByte()) as? ContactEntry?

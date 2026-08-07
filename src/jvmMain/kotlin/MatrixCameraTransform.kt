@@ -320,7 +320,7 @@ class MatrixCameraTransform : AbstractCameraTransform() {
         fun method913(i: Byte): Boolean {
             if (i <= 115) return true
             anInt5679++
-            return FileExistsCondition.anInt4776 > 0
+            return FileExistsConditionStatics.anInt4776 > 0
         }
     }
 }

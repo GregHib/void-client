@@ -1016,7 +1016,7 @@ class Client : GameAppletFrame() {
         method3040(true)
         method2310(69.toByte())
         method2202(-17902)
-        FileExistsCondition.method741((-128).toByte())
+        FileExistsConditionStatics.method741((-128).toByte())
         method1159(112.toByte())
         ClickFeedbackTask.method1354((-22).toByte())
         method1853(48.toByte())
@@ -2238,7 +2238,7 @@ class Client : GameAppletFrame() {
                                             }
                                         } else {
                                             if (HashLinkedListNodeStatics.anInt7059 > 0 && !SoundBankPatch.aBoolean6788) {
-                                                if (((WallEntity.anInt8770 == 1) || method2485(-124)) && FileExistsCondition.anInt4776 > 2) method191(true, SceneEntityModel.anInt6411, ModelDefinitionCache.anInt2872)
+                                                if (((WallEntity.anInt8770 == 1) || method2485(-124)) && FileExistsConditionStatics.anInt4776 > 2) method191(true, SceneEntityModel.anInt6411, ModelDefinitionCache.anInt2872)
                                                 else if (method913(117.toByte())) method191(true, SceneEntityModel.anInt6411, ModelDefinitionCache.anInt2872)
                                             }
                                             HashLinkedListNodeStatics.anInt7059 = 0
@@ -2908,7 +2908,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_6089) {
-                FileExistsCondition.anInt4786 = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
+                FileExistsConditionStatics.anInt4786 = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 GradientLookupEffect.anInt9200 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteAdd((-84).toByte())
                 BufferedMessageQueue.anInt3581 = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.method3341(-8679).toInt() shl 3)
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
@@ -3552,7 +3552,7 @@ class Client : GameAppletFrame() {
             if (InboundPacketHeader.aInboundPacketHeader_3265 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 BufferedMessageQueue.anInt3581 = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 GradientLookupEffect.anInt9200 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(98.toByte())
-                FileExistsCondition.anInt4786 = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt() shl 3)
+                FileExistsConditionStatics.anInt4786 = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt() shl 3)
                 while ((CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197) < RadialTextureNode.anInt9341) {
                     val class74 = (ModelHeaderCache.method1929((-19).toByte())[CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)])
                     method128(class74, 8.toByte())
@@ -4061,7 +4061,7 @@ class Client : GameAppletFrame() {
             }
             if (InboundPacketHeader.aInboundPacketHeader_7015 == InboundPacketHeader.aInboundPacketHeader_6584) {
                 GradientLookupEffect.anInt9200 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteAdd(126.toByte())
-                FileExistsCondition.anInt4786 = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
+                FileExistsConditionStatics.anInt4786 = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 BufferedMessageQueue.anInt3581 = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480).toInt() shl 3)
                 var class348_sub37 = ModelBatchBaseStatics.aHashtable_1895!!.method3484(0) as? HashTableContainer?
                 while (class348_sub37 != null) {
@@ -4070,7 +4070,7 @@ class Client : GameAppletFrame() {
                     val i_189_ = i_188_ + -ArbVertexProgram.regionTileX
                     val i_190_ = (0x3fffL and (class348_sub37.aLong4291 shr 14)).toInt()
                     val i_191_ = -RegionMapDecoder.regionTileY + i_190_
-                    if (i == GradientLookupEffect.anInt9200 && BufferedMessageQueue.anInt3581 <= i_189_ && 8 + BufferedMessageQueue.anInt3581 > i_189_ && FileExistsCondition.anInt4786 <= i_191_ && FileExistsCondition.anInt4786 - -8 > i_191_) {
+                    if (i == GradientLookupEffect.anInt9200 && BufferedMessageQueue.anInt3581 <= i_189_ && 8 + BufferedMessageQueue.anInt3581 > i_189_ && FileExistsConditionStatics.anInt4786 <= i_191_ && FileExistsConditionStatics.anInt4786 - -8 > i_191_) {
                         class348_sub37.method2715(89.toByte())
                         if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < GlCubemapLightPass.anInt7319 && (i_191_ < RangeThresholdTextureNode.anInt9109)) ProjectileSpawner.method1479(i_191_, (-118).toByte(), i_189_, GradientLookupEffect.anInt9200)
                     }
@@ -4078,7 +4078,7 @@ class Client : GameAppletFrame() {
                 }
                 var class348_sub27 = (SpriteRenderEntry.aNodeDeque_9711!!.method1995(4) as? MultiFieldRecord?)
                 while (class348_sub27 != null) {
-                    if ((BufferedMessageQueue.anInt3581 <= class348_sub27.anInt6905) && (class348_sub27.anInt6905 < BufferedMessageQueue.anInt3581 - -8) && (class348_sub27.anInt6896 >= FileExistsCondition.anInt4786) && (class348_sub27.anInt6896 < FileExistsCondition.anInt4786 + 8) && (class348_sub27.anInt6899 == GradientLookupEffect.anInt9200)) class348_sub27.anInt6893 = 0
+                    if ((BufferedMessageQueue.anInt3581 <= class348_sub27.anInt6905) && (class348_sub27.anInt6905 < BufferedMessageQueue.anInt3581 - -8) && (class348_sub27.anInt6896 >= FileExistsConditionStatics.anInt4786) && (class348_sub27.anInt6896 < FileExistsConditionStatics.anInt4786 + 8) && (class348_sub27.anInt6899 == GradientLookupEffect.anInt9200)) class348_sub27.anInt6893 = 0
                     class348_sub27 = SpriteRenderEntry.aNodeDeque_9711!!.method1990(31.toByte()) as? MultiFieldRecord?
                 }
                 InboundPacketHeader.aInboundPacketHeader_6584 = null

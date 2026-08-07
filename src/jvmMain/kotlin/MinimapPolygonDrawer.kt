@@ -63,7 +63,7 @@ class MinimapPolygonDrawer internal constructor(private val anInt5246: Int, priv
             var i_8_ = i_8_
             try {
                 anInt5238++
-                if (!ScrollbarComponent.aBoolean8335 && FileExistsCondition.anInt4776 < 500) {
+                if (!ScrollbarComponent.aBoolean8335 && FileExistsConditionStatics.anInt4776 < 500) {
                     i_8_ = if (i_8_ != -1) i_8_ else Tooltip.anInt4458
                     if (i_0_ >= -65) method469(19.toByte())
                     val class348_sub42_sub12 = ContactEntry(string_6_, string, i_8_, i_5_, i_3_, l_7_, i_2_, i, bool_4_, bool, l, bool_1_)

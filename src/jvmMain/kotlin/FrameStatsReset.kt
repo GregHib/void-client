@@ -359,7 +359,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ByteBuffer.anInt7194 = 0
             ConstantColourTextureNode.anInt9248 = 0
             ProceduralTextureGraph.anInt9525 = 0
-            FileExistsCondition.anInt4773 = 0
+            FileExistsConditionStatics.anInt4773 = 0
             ItemModelDefinition.anInt427 = 0
             Client.anInt5183 = 0
             ActorEntity.anInt5198 = 0
@@ -2284,7 +2284,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlSpriteRenderer.anInt8441 = 0
             OpenGlRenderer.anInt7699 = 0
             AbstractModel.anInt1125 = 0
-            FileExistsCondition.anInt4775 = 0
+            FileExistsConditionStatics.anInt4775 = 0
             RSFont.anInt4065 = 0
             TextureQualityOptionState.anInt6004 = 0
             AbstractModel.anInt1134 = 0
@@ -3748,7 +3748,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CalendarUtil.anInt4131 = 0
             WorldMapImageBuilder.anInt1138 = 0
             RangeThresholdTextureNode.anInt9105 = 0
-            FileExistsCondition.anInt4777 = 0
+            FileExistsConditionStatics.anInt4777 = 0
             FrameBufferObject.anInt4866 = 0
             WaterDetailOptionState.anInt5986 = 0
             BoxBlurTextureNode.anInt9462 = 0

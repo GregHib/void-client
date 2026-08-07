@@ -127,7 +127,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         fun method1987(i: Int) {
             val i_12_ = 81 % ((i - -70) / 35)
             anInt3313++
-            if (!ScrollbarComponent.aBoolean8335) ChatScriptListNode.aBoolean9535 = ((SoundCacheState.anInt4143 != -1 && FileExistsCondition.anInt4776 >= SoundCacheState.anInt4143) || (GameDisplayManager.anInt10432 < 16 * FileExistsCondition.anInt4776 - -(if (!PlayerSequenceSelector.aBoolean1211) 22 else 26)))
+            if (!ScrollbarComponent.aBoolean8335) ChatScriptListNode.aBoolean9535 = ((SoundCacheState.anInt4143 != -1 && FileExistsConditionStatics.anInt4776 >= SoundCacheState.anInt4143) || (GameDisplayManager.anInt10432 < 16 * FileExistsConditionStatics.anInt4776 - -(if (!PlayerSequenceSelector.aBoolean1211) 22 else 26)))
             ItemDefinitionLoader.aNodeDeque_2187!!.method1996(103)
             aNodeDeque_9478!!.method1996(104)
             var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as ContactEntry?)
@@ -142,8 +142,8 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             }
             ItemDefinitionLoader.aNodeDeque_2187!!.method1988(SourceRowTextureNode.aNodeDeque_9111, (-115).toByte())
             aNodeDeque_9478!!.method1988(SourceRowTextureNode.aNodeDeque_9111, (-115).toByte())
-            if (FileExistsCondition.anInt4776 > 1) {
-                if (!InputSettingsState.shiftClick || !LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -122) || FileExistsCondition.anInt4776 <= 2) IntHashSetStatics.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295 as ContactEntry?)
+            if (FileExistsConditionStatics.anInt4776 > 1) {
+                if (!InputSettingsState.shiftClick || !LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -122) || FileExistsConditionStatics.anInt4776 <= 2) IntHashSetStatics.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295 as ContactEntry?)
                 else IntHashSetStatics.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295!!.aLinkedListNode_4295 as ContactEntry?)
                 GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295 as ContactEntry?)
             } else {
@@ -266,12 +266,12 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                         } else {
                             var i_35_ = -1
                             var i_36_ = 0
-                            while ((i_36_ < FileExistsCondition.anInt4776)) {
+                            while ((i_36_ < FileExistsConditionStatics.anInt4776)) {
                                 if (PlayerSequenceSelector.aBoolean1211) {
-                                    val i_37_ = (33 + ProceduralTextureGraph.anInt9532 + 16 * (FileExistsCondition.anInt4776 - (1 - -i_36_)))
+                                    val i_37_ = (33 + ProceduralTextureGraph.anInt9532 + 16 * (FileExistsConditionStatics.anInt4776 - (1 - -i_36_)))
                                     if (i_37_ - 13 < i_24_ && 4 + i_37_ > i_24_) i_35_ = i_36_
                                 } else {
-                                    val i_38_ = (ProceduralTextureGraph.anInt9532 + (31 - -((FileExistsCondition.anInt4776 - 1 - i_36_) * 16)))
+                                    val i_38_ = (ProceduralTextureGraph.anInt9532 + (31 - -((FileExistsConditionStatics.anInt4776 - 1 - i_36_) * 16)))
                                     if (i_38_ - 13 < i_24_ && (i_24_ < i_38_ - -3)) i_35_ = i_36_
                                 }
                                 i_36_++
@@ -294,8 +294,8 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     }
                 }
             } else {
-                if (i_14_ == 0 && ((WallEntity.anInt8770 == 1 && FileExistsCondition.anInt4776 > 2) || method2485(-100))) i_14_ = 2
-                if (i_14_ == 2 && FileExistsCondition.anInt4776 > 0 && class348_sub45 != null) {
+                if (i_14_ == 0 && ((WallEntity.anInt8770 == 1 && FileExistsConditionStatics.anInt4776 > 2) || method2485(-100))) i_14_ = 2
+                if (i_14_ == 2 && FileExistsConditionStatics.anInt4776 > 0 && class348_sub45 != null) {
                     if (RegionSceneLoader.aWidgetComponent_3701 == null && HashLinkedListNodeStatics.anInt7059 == 0) SolidFillComponent.method2291((-124).toByte(), class348_sub45.method3308((-127).toByte()), class348_sub45.method3311(-104))
                     else NpcEntityUpdater.anInt3655 = 2
                 }

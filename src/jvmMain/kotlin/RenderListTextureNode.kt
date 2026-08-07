@@ -134,7 +134,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
                 class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(51.toByte()) as ContactList?)
             }
             NpcAnimationResolverStatics.anInt166 = 0
-            FileExistsCondition.anInt4776 = i
+            FileExistsConditionStatics.anInt4776 = i
             SourceRowTextureNode.Companion.aNodeDeque_9111!!.method1996(125)
             ContactEntry.aHashtable_9603!!.method3481(0)
             ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1009(2110355138)

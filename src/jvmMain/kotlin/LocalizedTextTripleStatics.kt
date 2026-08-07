@@ -39,7 +39,7 @@ object LocalizedTextTripleStatics {
 
     fun method2222(i: Int, i_3_: Byte) {
         anInt3755++
-        FileExistsCondition.aLong4783 = 1000000000L / i.toLong()
+        FileExistsConditionStatics.aLong4783 = 1000000000L / i.toLong()
         if (i_3_.toInt() != -124) method2223(-83)
     }
 

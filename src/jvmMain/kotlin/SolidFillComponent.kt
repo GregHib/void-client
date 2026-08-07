@@ -158,8 +158,8 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
                     class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(69.toByte()) as? ContactEntry?
                 }
                 i_6_ += 8
-                WorldMapSceneSoftware.anInt5819 = (if (!PlayerSequenceSelector.aBoolean1211) 22 else 26) + 16 * FileExistsCondition.anInt4776
-                i_7_ = 21 + FileExistsCondition.anInt4776 * 16
+                WorldMapSceneSoftware.anInt5819 = (if (!PlayerSequenceSelector.aBoolean1211) 22 else 26) + 16 * FileExistsConditionStatics.anInt4776
+                i_7_ = 21 + FileExistsConditionStatics.anInt4776 * 16
             }
             var i_10_ = -(i_6_ / 2) + i_4_
             if (LocTypeDefinition.anInt4017 < i_6_ + i_10_) i_10_ = -i_6_ + LocTypeDefinition.anInt4017

@@ -3513,7 +3513,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     if (i.toInt() != 6) aOutgoingPacketHeader_7715 = null
                     if (class348_sub42_sub12 != null) {
                         SourceRowTextureNode.aNodeDeque_9111!!.method1999(class348_sub42_sub12, -20180)
-                        FileExistsCondition.anInt4776++
+                        FileExistsConditionStatics.anInt4776++
                         val `object`: Any? = null
                         var class348_sub42_sub13: ContactList?
                         if ((class348_sub42_sub12.aBoolean9611) || "" == class348_sub42_sub12.aString9601) {
@@ -3738,7 +3738,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                     i_344_++
                                     continue
                                 }
-                                itemModelDefinition = (FileExistsCondition.aModelDefinitionCache_4782!!.method1601(46, (class318_sub1_sub3_sub3.anIntArray10259[i_344_])))
+                                itemModelDefinition = (FileExistsConditionStatics.aModelDefinitionCache_4782!!.method1601(46, (class318_sub1_sub3_sub3.anIntArray10259[i_344_])))
                                 i_347_ = itemModelDefinition.anInt434
                             } else if (i_345_ < 0) {
                                 i_344_++
@@ -3746,7 +3746,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             }
                             val i_348_ = (class318_sub1_sub3_sub3.anIntArray10304[i_344_])
                             var itemModelDefinition_349_: ItemModelDefinition? = null
-                            if (i_348_ >= 0) itemModelDefinition_349_ = FileExistsCondition.aModelDefinitionCache_4782!!.method1601(46, i_348_)
+                            if (i_348_ >= 0) itemModelDefinition_349_ = FileExistsConditionStatics.aModelDefinitionCache_4782!!.method1601(46, i_348_)
                             if (-i_347_ + i_345_ <= GlGroundShaderPass.anInt7396) {
                                 val i_350_ = (class318_sub1_sub3_sub3.anIntArray10303[i_344_])
                                 if (i_350_ >= 0) {

@@ -3175,7 +3175,7 @@ object ChatCommandProcessor {
                 val i_279_ = anIntArray1149!![anInt1173]
                 val i_280_ = anIntArray1149!![anInt1173 + 1]
                 if (widgetComponent!!.anInt704 == -1) {
-                    FileExistsCondition.Companion.method743(9, widgetComponent.anInt830)
+                    FileExistsConditionStatics.method743(9, widgetComponent.anInt830)
                     method1787(widgetComponent.anInt830, 8)
                     LoadingScreenState.method1459(widgetComponent.anInt830, 2)
                 }

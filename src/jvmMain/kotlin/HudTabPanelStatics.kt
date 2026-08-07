@@ -71,7 +71,7 @@ object HudTabPanelStatics {
                 var i_11_ = 0
                 var class348_sub42_sub12 = (SourceRowTextureNode.aNodeDeque_9111!!.method1995(4) as? ContactEntry?)
                 while (class348_sub42_sub12 != null) {
-                    val i_12_ = 31 + (i_4_ + ProceduralTextureGraph.anInt9532 - -((-i_11_ + -1 + FileExistsCondition.anInt4776) * 16))
+                    val i_12_ = 31 + (i_4_ + ProceduralTextureGraph.anInt9532 - -((-i_11_ + -1 + FileExistsConditionStatics.anInt4776) * 16))
                     SceneModelBuilderStatics.method2494(i_4_ + ProceduralTextureGraph.anInt9532, -256, i_12_, var_renderer, class348_sub42_sub12, SceneTileBounds.anInt1117, i_7_, -1, 124.toByte(), WorldMapSceneSoftware.anInt5819, GlArrayBufferObject.anInt4717 - -i_3_, i_6_)
                     i_11_++
                     class348_sub42_sub12 = SourceRowTextureNode.aNodeDeque_9111!!.method1990(55.toByte()) as? ContactEntry?

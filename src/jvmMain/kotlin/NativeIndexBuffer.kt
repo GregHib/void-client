@@ -67,11 +67,11 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
         @JvmStatic
         fun method1077(var_renderer: Renderer?, i: Byte) {
             anInt4700++
-            if ((FileExistsCondition.anInt4776 >= 2 || RenderNodeStatics.aBoolean9722) && RegionSceneLoader.aWidgetComponent_3701 == null) {
+            if ((FileExistsConditionStatics.anInt4776 >= 2 || RenderNodeStatics.aBoolean9722) && RegionSceneLoader.aWidgetComponent_3701 == null) {
                 if (i >= -71) method1077(null, (-41).toByte())
                 var string: String?
-                if (RenderNodeStatics.aBoolean9722 && FileExistsCondition.anInt4776 < 2) string = (ItemNameResolver.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.anInt6967, 544) + ItemNameResolver.aString5000 + " ->")
-                else if (!InputSettingsState.shiftClick || !LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -121) || FileExistsCondition.anInt4776 <= 2) {
+                if (RenderNodeStatics.aBoolean9722 && FileExistsConditionStatics.anInt4776 < 2) string = (ItemNameResolver.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.anInt6967, 544) + ItemNameResolver.aString5000 + " ->")
+                else if (!InputSettingsState.shiftClick || !LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -121) || FileExistsConditionStatics.anInt4776 <= 2) {
                     val class348_sub42_sub12 = IntHashSetStatics.aClass348_Sub42_Sub12_3963
                     if (class348_sub42_sub12 == null) return
                     string = IntHashSetStatics.method2367((-52).toByte(), class348_sub42_sub12)
@@ -97,7 +97,7 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
                     } else `is` = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-73, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
                     if (`is` != null) string += AudioResampler.method1273(`is`, true)
                 } else string = IntHashSetStatics.method2367(125.toByte(), IntHashSetStatics.aClass348_Sub42_Sub12_3963!!)
-                if (FileExistsCondition.anInt4776 > 2) string += ("<col=ffffff> / " + (FileExistsCondition.anInt4776 - 2) + LocalizedText.aLocalizedText_3508!!.method2063(ChatCommandProcessor.anInt6967, 544))
+                if (FileExistsConditionStatics.anInt4776 > 2) string += ("<col=ffffff> / " + (FileExistsConditionStatics.anInt4776 - 2) + LocalizedText.aLocalizedText_3508!!.method2063(ChatCommandProcessor.anInt6967, 544))
                 if (WidgetActionEntry.aWidgetComponent_6990 != null) {
                     var class324 = WidgetActionEntry.aWidgetComponent_6990!!.method426(var_renderer, 68.toByte())
                     if (class324 == null) class324 = NodeDequeStatics.aRSFont_3326!!

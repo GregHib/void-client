@@ -208,12 +208,12 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
                 } else if (i_2_ > GlArrayBufferObject.anInt4717 && (i_2_ < GlArrayBufferObject.anInt4717 - -SceneTileBounds.anInt1117)) {
                     var i_14_ = -1
                     var i_15_ = 0
-                    while (FileExistsCondition.anInt4776 > i_15_) {
+                    while (FileExistsConditionStatics.anInt4776 > i_15_) {
                         if (PlayerSequenceSelector.aBoolean1211) {
-                            val i_17_ = ((-i_15_ + (-1 + FileExistsCondition.anInt4776)) * 16 + ProceduralTextureGraph.anInt9532 + 33)
+                            val i_17_ = ((-i_15_ + (-1 + FileExistsConditionStatics.anInt4776)) * 16 + ProceduralTextureGraph.anInt9532 + 33)
                             if (i_3_ > i_17_ - 13 && i_17_ + 3 >= i_3_) i_14_ = i_15_
                         } else {
-                            val i_16_ = 31 + (ProceduralTextureGraph.anInt9532 + (-i_15_ + (FileExistsCondition.anInt4776 - 1)) * 16)
+                            val i_16_ = 31 + (ProceduralTextureGraph.anInt9532 + (-i_15_ + (FileExistsConditionStatics.anInt4776 - 1)) * 16)
                             if (-13 + i_16_ < i_3_ && i_16_ + 3 >= i_3_) i_14_ = i_15_
                         }
                         i_15_++

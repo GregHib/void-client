@@ -609,7 +609,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             var i_109_ = -1
             var i_110_ = 0
             if (i_100_ >= 0) {
-                val class31 = FileExistsCondition.aModelDefinitionCache_4782!!.method1601(46, i_100_)
+                val class31 = FileExistsConditionStatics.aModelDefinitionCache_4782!!.method1601(46, i_100_)
                 i_109_ = class31.anInt431
                 i_110_ = class31.anInt434
             }

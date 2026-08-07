@@ -185,7 +185,7 @@ object ClientLoadStateMachine {
             RegionTileNodeStatics.aCacheArchiveIndexLoader_6653 = CacheArchiveIndexLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, VideoAdChecker.aJs5Archive_3183)
             RenderConfigFactoryStatics.aLocDefinitionCache_2979 = LocDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             Tooltip.aParticleDefLoader_4460 = ParticleDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            FileExistsCondition.aModelDefinitionCache_4782 = ModelDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)
+            FileExistsConditionStatics.aModelDefinitionCache_4782 = ModelDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)
             RadialTextureNode.aModelDefinitionLoader_9342 = ModelDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, RasterSpriteStatics.aJs5Archive_5207)
             ScrollingWidgetComponentNode.aParticleEffectCache_8378 = ParticleEffectCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             AbstractTileShapeStatics.aMapSceneDefLoader_6559 = MapSceneDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)

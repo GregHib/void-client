@@ -190,7 +190,7 @@ class CellNoiseTextureNode : AbstractProceduralTextureNode(0, true) {
             anInt9290++
             if (i_23_ != MenuActionNode.anInt6769) {
                 if (i < 18) aTextureFormatInfo_9303 = null
-                RangeThresholdTextureNode.Companion.anInt9109 = FileExistsCondition.anIntArray4780!![i_23_]
+                RangeThresholdTextureNode.Companion.anInt9109 = FileExistsConditionStatics.anIntArray4780!![i_23_]
                 GlCubemapLightPass.anInt7319 = RangeThresholdTextureNode.Companion.anInt9109
                 BufferToggleState.method2196((-9).toByte())
                 GameClock.anIntArrayArrayArray1116 = (Array<Array<IntArray?>?>(4) { Array<IntArray?>(GlCubemapLightPass.anInt7319 shr 3) { IntArray(RangeThresholdTextureNode.Companion.anInt9109 shr 3) } })
