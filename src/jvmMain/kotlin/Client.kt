@@ -749,7 +749,7 @@ class Client : GameAppletFrame() {
         SpriteMaskShape.method305(79.toByte())
         method2545(true)
         method698(i + -106)
-        ConfigArchiveLoader.method811((-123).toByte())
+        ConfigArchiveLoaderStatics.method811((-123).toByte())
         KeyboardLayoutCache.method1975((-15).toByte())
         method1441(18.toByte())
         method1585(-1)

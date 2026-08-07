@@ -175,7 +175,7 @@ class TexGenMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, water
             DualMaterialContainer.anInt1639 = js5Archive.method417("hitbar_default", 0)
             MouseInputTracker.anInt7429 = js5Archive.method417("timerbar_default", 0)
             Renderer.anInt4562 = js5Archive.method417("headicons_pk", 0)
-            ConfigArchiveLoader.anInt1435 = js5Archive.method417("headicons_prayer", 0)
+            ConfigArchiveLoaderStatics.anInt1435 = js5Archive.method417("headicons_prayer", 0)
             OverlayColorTable.anInt1756 = js5Archive.method417("hint_headicons", 0)
             TexGenMaterialPass.anInt3739 = js5Archive.method417("hint_mapmarkers", 0)
             DrawListState.anInt1481 = js5Archive.method417("mapflag", 0)

@@ -30,7 +30,7 @@ import CubeMapMaterialPass.Companion.method2172
 import ItemModelDefinition.Companion.method326
 import TileSceneEntity.Companion.method2396
 import SceneObjectEntity.Companion.method2405
-import ConfigArchiveLoader.Companion.method2478
+import ConfigArchiveLoaderStatics.method2478
 import WallEntity.Companion.method2487
 import RSFont.Companion.method2570
 import MidiSequencePlayer.Companion.method2839
@@ -1162,7 +1162,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5429) {
-                ConfigArchiveLoader.method812(aStringArray1152!![--anInt1170], false, false, (-79).toByte())
+                ConfigArchiveLoaderStatics.method812(aStringArray1152!![--anInt1170], false, false, (-79).toByte())
                 return
             }
             if (i == 5430) {

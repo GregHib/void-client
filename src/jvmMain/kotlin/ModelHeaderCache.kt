@@ -281,7 +281,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(js5Archive, ConfigArchiveLoader.anInt1435, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, ConfigArchiveLoaderStatics.anInt1435, 0)
                 CompassSmoother.aAbstractModelRendererArray3378 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0

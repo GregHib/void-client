@@ -364,7 +364,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
             try {
                 anInt7321++
                 val i_38_ = class348_sub49!!.anInt7197
-                val `is` = ConfigArchiveLoader.method2992(string, (-20).toByte())
+                val `is` = ConfigArchiveLoaderStatics.method2992(string, (-20).toByte())
                 val i_39_ = 1 % ((-6 - i) / 63)
                 class348_sub49.method3381(5537, `is`.size)
                 class348_sub49.anInt7197 += (NativeRenderer.aHuffmanCodec_1131!!.method2227(`is`.size, 0, class348_sub49.anInt7197, `is`, 103, class348_sub49.aByteArray7154))

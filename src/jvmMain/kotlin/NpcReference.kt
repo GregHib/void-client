@@ -27,7 +27,7 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
             if (js5Archive.method421(false, DualMaterialContainer.anInt1639)) i_2_++
             if (js5Archive.method421(false, MouseInputTracker.anInt7429)) i_2_++
             if (js5Archive.method421(false, Renderer.anInt4562)) i_2_++
-            if (js5Archive.method421(false, ConfigArchiveLoader.anInt1435)) i_2_++
+            if (js5Archive.method421(false, ConfigArchiveLoaderStatics.anInt1435)) i_2_++
             if (js5Archive.method421(false, OverlayColorTable.anInt1756)) i_2_++
             if (js5Archive.method421(false, TexGenMaterialPass.anInt3739)) i_2_++
             if (js5Archive.method421(false, DrawListState.anInt1481)) i_2_++

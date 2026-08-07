@@ -561,7 +561,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 ArbFogMaterialPass.aStringArray6200!![0] = string_11_ + ": " + strings[i_12_]
                 if (Texture2DProvider.aFileOutputStream6323 != null) {
                     try {
-                        Texture2DProvider.aFileOutputStream6323!!.write(ConfigArchiveLoader.method2992(((ArbFogMaterialPass.aStringArray6200!![0]) + "\n"), (-20).toByte()))
+                        Texture2DProvider.aFileOutputStream6323!!.write(ConfigArchiveLoaderStatics.method2992(((ArbFogMaterialPass.aStringArray6200!![0]) + "\n"), (-20).toByte()))
                     } catch (ioexception: IOException) {
                         /* empty */
                     }

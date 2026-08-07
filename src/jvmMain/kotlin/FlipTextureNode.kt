@@ -252,7 +252,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     if (i_40_ > 98304) {
                                                         i_41_ = -65536
                                                         if (ServerConnectionInfo.aBoolean2151) {
-                                                            ConfigArchiveLoader.method427(-35)
+                                                            ConfigArchiveLoaderStatics.method427(-35)
                                                             for (i_42_ in 0..9) System.gc()
                                                             i_40_ = (((runtime.totalMemory()) - (runtime.freeMemory())) / 1024L).toInt()
                                                             if (i_40_ > 65536) method544("WARNING: Memory usage over 64MB! Please inform whoever is responsible for the content/area you are using/in.", false, 4)

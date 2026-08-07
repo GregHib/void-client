@@ -2894,7 +2894,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) return
                 if (i_41_ == 0) {
                     val renderTarget = method3297(i_40_, i_37_, i) as RenderTarget?
-                    val renderTarget_42_ = ConfigArchiveLoader.method813(i_40_, i_37_, i) as RenderTarget?
+                    val renderTarget_42_ = ConfigArchiveLoaderStatics.method813(i_40_, i_37_, i) as RenderTarget?
                     if (renderTarget != null && i_36_ != 2) {
                         if (renderTarget is SequencedActorEntity) renderTarget.aSceneObjectAnimator_10115!!.method1671(262144, i_35_)
                         else MapSceneIconDef.method1591(i_37_, 89, i_41_, i_35_, renderTarget.method42(-76), i_36_, i, i_38_, i_40_)

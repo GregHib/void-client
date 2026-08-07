@@ -286,7 +286,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SpotAnimDefinition.anInt2378 = 0
             TrackedGroundDecor.anInt10404 = 0
             ScanlineRasterFiller.anInt2475 = 0
-            ConfigArchiveLoader.anInt1438 = 0
+            ConfigArchiveLoaderStatics.anInt1438 = 0
             DisplayModeOptionState.anInt6104 = 0
             ByteBuffer.anInt7172 = 0
             RingBufferInputStream.anInt4547 = 0
@@ -1244,7 +1244,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Renderer.anInt4566 = 0
             ModelBatchBaseStatics.anInt1896 = 0
             SequencedGroundDecor.anInt10038 = 0
-            ConfigArchiveLoader.anInt8763 = 0
+            ConfigArchiveLoaderStatics.anInt8763 = 0
             NativeRenderer.anInt7942 = 0
             MouseInputTracker.anInt7427 = 0
             OpenGlRenderer.anInt7578 = 0
@@ -1478,7 +1478,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MinimapLineDrawer.anInt5256 = 0
             NpcUpdateProcessor.anInt1522 = 0
             TerrainShadowBuilderGl2.anInt6941 = 0
-            ConfigArchiveLoader.anInt1437 = 0
+            ConfigArchiveLoaderStatics.anInt1437 = 0
             TextureCache.anInt4353 = 0
             NodeDeque.anInt3340 = 0
             Js5Archive.anInt5215 = 0
@@ -1707,7 +1707,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7605 = 0
             ByteBuffer.anInt7188 = 0
             OpenGlRenderer.anInt7587 = 0
-            ConfigArchiveLoader.anInt6873 = 0
+            ConfigArchiveLoaderStatics.anInt6873 = 0
             MapTileShape.anInt4189 = 0
             ProjectionCameraTransform.anInt5755 = 0
             Npc.anInt10501 = 0
@@ -2042,7 +2042,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             HuffmanCodec.anInt3765 = 0
             AbstractProceduralTextureNode.anInt7029 = 0
             GlRectangleTexture.anInt8635 = 0
-            ConfigArchiveLoader.anInt837 = 0
+            ConfigArchiveLoaderStatics.anInt837 = 0
             SphereMapMaterialPass.anInt6311 = 0
             NativeRenderer.anInt7943 = 0
             KeyEventNode.anInt4760 = 0
