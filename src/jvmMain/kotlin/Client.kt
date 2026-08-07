@@ -79,8 +79,8 @@ import PingHostListHolder.method1351
 import ScriptOpcodeHolder.method1355
 import GlFramebufferBlitter.Companion.method273
 import GlFramebufferBlitter.Companion.method277
-import LoadProgressCounters.Companion.method1373
-import LoadProgressCounters.Companion.method1375
+import LoadProgressCountersStatics.method1373
+import LoadProgressCountersStatics.method1375
 import ParticleDefLoader.Companion.method1378
 import ScanlineRasterFiller.Companion.method1386
 import MapSceneDefLoader.Companion.method1395
@@ -676,7 +676,7 @@ class Client : GameAppletFrame() {
         } catch (exception: Exception) {
             /* empty */
         }
-        LoadProgressCounters.aKeyboardInputSource_2449 = ModelVertexColorBuffer.method2743(ParticleSystemRenderer.aCanvas3869, (-124).toByte())
+        LoadProgressCountersStatics.aKeyboardInputSource_2449 = ModelVertexColorBuffer.method2743(ParticleSystemRenderer.aCanvas3869, (-124).toByte())
         GlTexture1D.aInputTracker_8552 = method2941(ParticleSystemRenderer.aCanvas3869, 0, true)
         //        try {
         if (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 != null) {
@@ -1562,13 +1562,13 @@ class Client : GameAppletFrame() {
             if (SizeBoundedSoftCache.aRsaPacketDecoder_2327 != null) SizeBoundedSoftCache.aRsaPacketDecoder_2327!!.method2670(0)
             method2228(0)
             method3260(66)
-            LoadProgressCounters.aKeyboardInputSource_2449!!.method2695(67)
+            LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2695(67)
             GlTexture1D.aInputTracker_8552!!.method3589(0)
             if (FacingDirectionNodeStatics.aRenderer6654 != null) FacingDirectionNodeStatics.aRenderer6654!!.method3646(method599(-74).toInt())
             method1315(93)
             CameraConfigDefinition.anInt3246 = 0
             MinimapAreaMarkerNode.anInt9699 = 0
-            var interface6 = LoadProgressCounters.aKeyboardInputSource_2449!!.method2697(0)
+            var interface6 = LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2697(0)
             while (interface6 != null) {
                 val i_109_ = interface6.method27(26276)
                 if (i_109_ == 2 || i_109_ == 3) {
@@ -1584,7 +1584,7 @@ class Client : GameAppletFrame() {
                     CacheLruCache.anCharStreamReaderArray3884s!![CameraConfigDefinition.anInt3246] = interface6
                     CameraConfigDefinition.anInt3246++
                 }
-                interface6 = LoadProgressCounters.aKeyboardInputSource_2449!!.method2697(0)
+                interface6 = LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2697(0)
             }
             NodeDequeHolder.anInt1565 = 0
             var class348_sub45 = GlTexture1D.aInputTracker_8552!!.method3596(0)
@@ -2090,14 +2090,14 @@ class Client : GameAppletFrame() {
                             if (class46.aByteArray746 != null && !method3263(true)) {
                                 var i_55_ = 0
                                 while ((i_55_ < class46.aByteArray746.size)) {
-                                    if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(class46.aByteArray746[i_55_].toInt(), -122)) {
+                                    if (!LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(class46.aByteArray746[i_55_].toInt(), -122)) {
                                         if (class46.anIntArray801 != null) class46.anIntArray801!![i_55_] = 0
                                     } else if ((class46.anIntArray801 == null) || (GlGroundShaderPass.anInt7396 >= (class46.anIntArray801!![i_55_]))) {
                                         val i_56_ = (class46.aByteArray832[i_55_])
-                                        if (i_56_.toInt() == 0 || (((i_56_.toInt() and 0x8) == 0 || (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(86, -124) && !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -123) && !(LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -122)))) && ((i_56_.toInt() and 0x2) == 0 || LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(86, -127)) && ((i_56_.toInt() and 0x1) == 0 || LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(
+                                        if (i_56_.toInt() == 0 || (((i_56_.toInt() and 0x8) == 0 || (!LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(86, -124) && !LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(82, -123) && !(LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -122)))) && ((i_56_.toInt() and 0x2) == 0 || LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(86, -127)) && ((i_56_.toInt() and 0x1) == 0 || LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(
                                                 82,
                                                 -124
-                                            )) && ((i_56_.toInt() and 0x4) == 0 || (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -126))))
+                                            )) && ((i_56_.toInt() and 0x4) == 0 || (LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -126))))
                                         ) {
                                             if (i_55_ < 10) method2780(-1, "", 122.toByte(), i_55_ + 1, class46.anInt830)
                                             else if (i_55_ == 10) {
@@ -2211,7 +2211,7 @@ class Client : GameAppletFrame() {
                                                 val `is`: IntArray? = IntArray(3)
                                                 class348_sub42_sub14.method3239(true, i_73_, i_72_, `is`!!)
                                                 if (`is` != null) {
-                                                    if (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -128) && (AsyncTaskHandle.anInt2581 > 0)) {
+                                                    if (LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(82, -128) && (AsyncTaskHandle.anInt2581 > 0)) {
                                                         method3502(`is`[2], 2, `is`[0], `is`[1])
                                                         continue
                                                     }
@@ -5112,7 +5112,7 @@ class Client : GameAppletFrame() {
                             }
                             if (HeapDiagnosticsHolder.aWidgetComponent_2249 == null) HashLinkedListNodeStatics.anInt7059 = 0
                             if (RegionSceneLoader.aWidgetComponent_3701 != null) method2708(-30206)
-                            if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, i xor 0x2cd5.inv()) && LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -121) && NodeDequeHolder.anInt1565 != 0) {
+                            if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(82, i xor 0x2cd5.inv()) && LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -121) && NodeDequeHolder.anInt1565 != 0) {
                                 var i_30_ = ((LocalPlayerState.aPlayer_1907!!.plane) - NodeDequeHolder.anInt1565)
                                 if (i_30_ >= 0) {
                                     if (i_30_ > 3) i_30_ = 3
@@ -5202,7 +5202,7 @@ class Client : GameAppletFrame() {
                         if ((class348_sub48.aLinkedQueueNodeArray7127!![i_0_]!!.anInt1997) == 0) bool = true
                     }
                 }
-                if (i < 37) LoadProgressCounters.aLong6966 = -3L
+                if (i < 37) LoadProgressCountersStatics.aLong6966 = -3L
                 if (!bool) {
                     val i_1_ = class348_sub49_sub2.anInt7197
                     class348_sub49_sub2.writeInt(94.toByte(), class348_sub48.anInt7130)

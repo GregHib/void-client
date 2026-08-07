@@ -74,7 +74,7 @@ class LongKeyNode : LinkedListNode {
                 ClickFeedbackTask.anInt4665++
             }
             class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i + RegionMapDecoder.regionTileY, 3.toByte())
-            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(78.toByte(), if (!LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -124)) 0 else 1)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(78.toByte(), if (!LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(82, -124)) 0 else 1)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-124, ArbVertexProgram.regionTileX + i_2_)
             MediaStreamClient.anInt3203 = i_2_
             if (i_3_ >= -88) aOutgoingPacketHeader_6764 = null

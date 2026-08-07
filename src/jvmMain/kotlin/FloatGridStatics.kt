@@ -1,5 +1,5 @@
 import SceneTilePlaneManager.method260
-import LoadProgressCounters.Companion.method1373
+import LoadProgressCountersStatics.method1373
 
 object FloatGridStatics {
     var aJs5Archive_4975: Js5Archive? = null

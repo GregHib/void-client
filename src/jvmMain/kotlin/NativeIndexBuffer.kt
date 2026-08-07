@@ -71,7 +71,7 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
                 if (i >= -71) method1077(null, (-41).toByte())
                 var string: String?
                 if (RenderNodeStatics.aBoolean9722 && FileExistsCondition.anInt4776 < 2) string = (ItemNameResolver.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.anInt6967, 544) + ItemNameResolver.aString5000 + " ->")
-                else if (!InputSettingsState.shiftClick || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -121) || FileExistsCondition.anInt4776 <= 2) {
+                else if (!InputSettingsState.shiftClick || !LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -121) || FileExistsCondition.anInt4776 <= 2) {
                     val class348_sub42_sub12 = IntHashSetStatics.aClass348_Sub42_Sub12_3963
                     if (class348_sub42_sub12 == null) return
                     string = IntHashSetStatics.method2367((-52).toByte(), class348_sub42_sub12)

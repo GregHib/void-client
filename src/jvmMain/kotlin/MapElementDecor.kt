@@ -286,7 +286,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         StaticNoiseTexture.anInt8665 = DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt()
                         LocConfigModelBuilder.anInt4509 = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt())
                         val i_21_ = (DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / MapRegionLoaderStatics.aFloat1247).toInt())
-                        LoadProgressCounters.anInt2446 = ((2 * i_13_).toFloat() / MapRegionLoaderStatics.aFloat1247).toInt()
+                        LoadProgressCountersStatics.anInt2446 = ((2 * i_13_).toFloat() / MapRegionLoaderStatics.aFloat1247).toInt()
                         SpriteStore.anInt370 = ((i_12_ * 2).toFloat() / MapRegionLoaderStatics.aFloat1247).toInt()
                         method751(i_18_ + MapRegionLoaderStatics.anInt1266, i_19_ + MapRegionLoaderStatics.anInt1263, i_20_ - -MapRegionLoaderStatics.anInt1266, MapRegionLoaderStatics.anInt1263 + i_21_, i_11_, i_14_, i_12_ + i_11_, i_13_ + i_14_ + 1)
                         MapRegionLoaderStatics.method748(var_renderer)

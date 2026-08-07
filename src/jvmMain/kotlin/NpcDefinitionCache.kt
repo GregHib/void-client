@@ -143,7 +143,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             ItemDefinitionLoader.aNodeDeque_2187!!.method1988(SourceRowTextureNode.aNodeDeque_9111, (-115).toByte())
             aNodeDeque_9478!!.method1988(SourceRowTextureNode.aNodeDeque_9111, (-115).toByte())
             if (FileExistsCondition.anInt4776 > 1) {
-                if (!InputSettingsState.shiftClick || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -122) || FileExistsCondition.anInt4776 <= 2) IntHashSetStatics.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295 as ContactEntry?)
+                if (!InputSettingsState.shiftClick || !LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -122) || FileExistsCondition.anInt4776 <= 2) IntHashSetStatics.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295 as ContactEntry?)
                 else IntHashSetStatics.aClass348_Sub42_Sub12_3963 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295!!.aLinkedListNode_4295 as ContactEntry?)
                 GlElementArrayBuffer.aClass348_Sub42_Sub12_4846 = (SourceRowTextureNode.aNodeDeque_9111!!.aLinkedListNode_3334.aLinkedListNode_4295 as ContactEntry?)
             } else {

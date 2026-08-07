@@ -45,7 +45,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
                 while_214_@ do {
                     do {
                         if (i_9_ == 0) {
-                            aMinimapShapeDrawerArray9481!![i_7_] = LoadProgressCounters.method1374(107, class348_sub49)
+                            aMinimapShapeDrawerArray9481!![i_7_] = LoadProgressCountersStatics.method1374(107, class348_sub49)
                             i_7_++
                             continue@while_216_
                         } else if (i_9_ != 1) {

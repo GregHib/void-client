@@ -8,7 +8,7 @@ import GlTextureBase.Companion.method235
 import ChatEffectsOptionState.Companion.method1728
 import GraphicsOptionState.Companion.anInt3137
 import HeadIconRendererStatics.method1213
-import LoadProgressCounters.Companion.method1372
+import LoadProgressCountersStatics.method1372
 import LoadingScreenImageNodeStatics.method3177
 import RsaPacketDecoder.Companion.method2672
 import SpriteBlitter.method882

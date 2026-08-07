@@ -215,7 +215,7 @@ class SceneNodeDeque {
                         class348_sub49.writeInt(127.toByte(), `is`[3])
                         class348_sub49.writeLong(0L, 70.toByte())
                         class348_sub49.writeString((-5).toByte(), TextureGenerator.aString2496!!)
-                        class348_sub49.writeLong(LoadProgressCounters.aLong6966, (-124).toByte())
+                        class348_sub49.writeLong(LoadProgressCountersStatics.aLong6966, (-124).toByte())
                         class348_sub49.writeLong(ChatMessageStream.aLong108, (-112).toByte())
                         class348_sub49.method3390(AbstractFrameBufferSurface.aBigInteger6921, (-76).toByte(), (SceneNodeDeque.aBigInteger8762))
                         method2739(0)

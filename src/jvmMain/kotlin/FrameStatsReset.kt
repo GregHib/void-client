@@ -2434,7 +2434,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GrayscaleNoiseTexture.anInt5282 = 0
             MapArchiveSource.anInt4805 = 0
             MediaStreamClient.anInt3189 = 0
-            LoadProgressCounters.anInt2452 = 0
+            LoadProgressCountersStatics.anInt2452 = 0
             BasicGlRenderPass.anInt7307 = 0
             SequencedGroundDecor.anInt10043 = 0
             GameDisplayManager.anInt2839 = 0
@@ -3095,7 +3095,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FixedFunctionWaterPass.anInt7357 = 0
             SequencedGroundDecor.anInt10057 = 0
             WallSceneEntity.anInt9961 = 0
-            LoadProgressCounters.anInt2453 = 0
+            LoadProgressCountersStatics.anInt2453 = 0
             MapAreaDefinition.anInt2528 = 0
             TextureQualityOptionState.anInt5998 = 0
             ChatEffectsOptionState.anInt5867 = 0
@@ -3923,7 +3923,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             HeadIconRendererStatics.anInt2059 = 0
             WallSceneEntity.anInt9954 = 0
             ModelWallEntity.anInt10144 = 0
-            LoadProgressCounters.anInt2450 = 0
+            LoadProgressCountersStatics.anInt2450 = 0
             ObjectSpawnDecoder.anInt1802 = 0
             WidgetComponentNode.anInt4658 = 0
             DoublyLinkedNodeList.anInt3161 = 0

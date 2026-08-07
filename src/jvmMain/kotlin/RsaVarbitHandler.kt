@@ -102,19 +102,19 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
             if (bool == true) {
                 if (ActorEntity.aResourceLoaderThread_897 != null) {
                     ActorEntity.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aConnectionStateType_9660), Direct3dModel.aString5420, ConfigFlagUtilStatics.anInt3236, DataHolderStatics.aLong3660, false)
-                    if (LoadProgressCounters.anCursorControllerArray2447 != null) {
+                    if (LoadProgressCountersStatics.anCursorControllerArray2447 != null) {
                         var i_5_ = PlayerAppearanceUpdateDecoder.anInt4544 - -1
-                        while ((LoadProgressCounters.anCursorControllerArray2447!!.size > i_5_)) {
-                            if (LoadProgressCounters.anCursorControllerArray2447!![i_5_]!!.method60(-19079) >= 100 && PlayerAppearanceUpdateDecoder.anInt4544 == -1 + i_5_ && WorldMapRenderer.anInt4674 >= 1 && ActorEntity.aResourceLoaderThread_897!!.method2322(0)) {
+                        while ((LoadProgressCountersStatics.anCursorControllerArray2447!!.size > i_5_)) {
+                            if (LoadProgressCountersStatics.anCursorControllerArray2447!![i_5_]!!.method60(-19079) >= 100 && PlayerAppearanceUpdateDecoder.anInt4544 == -1 + i_5_ && WorldMapRenderer.anInt4674 >= 1 && ActorEntity.aResourceLoaderThread_897!!.method2322(0)) {
                                 try {
-                                    LoadProgressCounters.anCursorControllerArray2447!![i_5_]!!.method57(117)
+                                    LoadProgressCountersStatics.anCursorControllerArray2447!![i_5_]!!.method57(117)
                                 } catch (exception: Exception) {
-                                    LoadProgressCounters.anCursorControllerArray2447 = null
+                                    LoadProgressCountersStatics.anCursorControllerArray2447 = null
                                     break
                                 }
-                                ActorEntity.aResourceLoaderThread_897!!.method2321(10559, LoadProgressCounters.anCursorControllerArray2447!![i_5_]!!)
+                                ActorEntity.aResourceLoaderThread_897!!.method2321(10559, LoadProgressCountersStatics.anCursorControllerArray2447!![i_5_]!!)
                                 PlayerAppearanceUpdateDecoder.anInt4544++
-                                if ((PlayerAppearanceUpdateDecoder.anInt4544 >= (-1 + LoadProgressCounters.anCursorControllerArray2447!!.size)) && LoadProgressCounters.anCursorControllerArray2447!!.size > 1) PlayerAppearanceUpdateDecoder.anInt4544 = if (!PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(26)) -1 else 0
+                                if ((PlayerAppearanceUpdateDecoder.anInt4544 >= (-1 + LoadProgressCountersStatics.anCursorControllerArray2447!!.size)) && LoadProgressCountersStatics.anCursorControllerArray2447!!.size > 1) PlayerAppearanceUpdateDecoder.anInt4544 = if (!PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(26)) -1 else 0
                             }
                             i_5_++
                         }

@@ -615,7 +615,7 @@ object ChatCommandProcessor {
             }
         } else if (i < 5200) {
             if (i == 5100) {
-                if (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(86, -121)) anIntArray1149!![anInt1173++] = 1
+                if (LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(86, -121)) anIntArray1149!![anInt1173++] = 1
                 else {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -623,7 +623,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5101) {
-                if (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -126)) anIntArray1149!![anInt1173++] = 1
+                if (LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(82, -126)) anIntArray1149!![anInt1173++] = 1
                 else {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -631,7 +631,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5102) {
-                if (LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -128)) anIntArray1149!![anInt1173++] = 1
+                if (LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -128)) anIntArray1149!![anInt1173++] = 1
                 else {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -672,7 +672,7 @@ object ChatCommandProcessor {
             }
             if (i == 5208) {
                 anIntArray1149!![anInt1173++] = SpriteStore.anInt370
-                anIntArray1149!![anInt1173++] = LoadProgressCounters.anInt2446
+                anIntArray1149!![anInt1173++] = LoadProgressCountersStatics.anInt2446
                 return
             }
             if (i == 5209) {
