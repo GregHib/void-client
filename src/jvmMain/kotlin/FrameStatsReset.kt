@@ -3429,7 +3429,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9849 = 0
             TimedTileQueueEntry.anInt9656 = 0
             OpenGlModel.anInt5637 = 0
-            SpriteMaskShapeStatics.anInt4066 = 0
+            SpriteMaskShape.anInt4066 = 0
             HeightMapNoise.anInt3828 = 0
             LinkedNodeListIterator.anInt1643 = 0
             LinkedNodeListIterator.anInt1653 = 0
