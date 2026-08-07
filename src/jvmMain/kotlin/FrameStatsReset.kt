@@ -3712,7 +3712,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NpcConfig.anInt910 = 0
             GlowPostProcessor.anInt2515 = 0
             ShadowQualityOptionState.anInt6016 = 0
-            ParticleGeometry.anInt4413 = 0
+            ParticleGeometryStatics.anInt4413 = 0
             ModelDefinition.anInt1838 = 0
             TheoraVideoStream.anInt9013 = 0
             MapSceneIconDef.anInt2849 = 0

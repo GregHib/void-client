@@ -98,7 +98,7 @@ object LongKeyNodeStatics {
                 i_12_++
             }
             GroundItemRenderState.aAbstractModelRenderer_1664 = var_renderer!!.method3662(512, `is`, 94.toByte(), 0, 512, 512)
-            ParticleGeometry.method3489(-3)
+            ParticleGeometryStatics.method3489(-3)
             val i_13_ = (((-10 + (238 + (20.0 * Math.random()).toInt()) shl 8) + (-10 + (Math.random() * 20.0).toInt() + 238 shl 16) - (-(Math.random() * 20.0).toInt() + -228)) or 0xffffff.inv())
             val i_14_ = (228 - -(20.0 * Math.random()).toInt() shl 16 or 0xffffff.inv())
             val i_15_ = ((8.0 * Math.random()).toInt() or ((8.0 * Math.random()).toInt() shl 16 or ((8.0 * Math.random()).toInt() shl 8)))

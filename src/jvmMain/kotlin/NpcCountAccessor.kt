@@ -30,7 +30,7 @@ object NpcCountAccessor {
         if (i != -26162) anIntArray2280 = null
         OutgoingPacketHeader.aLruByteCache_4327!!.method587(-118)
         anInt2281++
-        ParticleGeometry.aLruByteCache_4417!!.method587(-89)
+        ParticleGeometryStatics.aLruByteCache_4417!!.method587(-89)
         SceneryDetailOptionState.aLruByteCache_6096!!.method587(-87)
         EdgeDetectTextureNode.aLruByteCache_9171!!.method587(-95)
     }

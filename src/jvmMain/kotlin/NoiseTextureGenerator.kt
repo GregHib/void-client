@@ -173,7 +173,7 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
         fun method545(i: Int, i_49_: Int) {
             OutgoingPacketHeader.aLruByteCache_4327!!.method578(2, i)
             anInt1077++
-            ParticleGeometry.aLruByteCache_4417!!.method578(2, i)
+            ParticleGeometryStatics.aLruByteCache_4417!!.method578(2, i)
             if (i_49_ != -1) InboundPacketHeader.aInboundPacketHeader_1068 = null
             SceneryDetailOptionState.aLruByteCache_6096!!.method578(2, i)
             EdgeDetectTextureNode.aLruByteCache_9171!!.method578(i_49_ xor 0x2.inv(), i)

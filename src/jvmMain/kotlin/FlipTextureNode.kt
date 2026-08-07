@@ -412,7 +412,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 else MapTileShape.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                             }
                                         } else if (class46.anInt774 == 6) {
-                                            ParticleGeometry.method3489(115)
+                                            ParticleGeometryStatics.method3489(115)
                                             var abstractModel: AbstractModel? = null
                                             var i_60_ = 0
                                             if (class46.anInt812 != -1) {

@@ -13,7 +13,7 @@ object NpcSummaryDefinitionStatics {
             if (i_0_ < ModelDefinitionLoader.anInt2057) {
                 var i_1_ = i_0_
                 while (ModelDefinitionLoader.anInt2057 > i_1_) {
-                    ProportionalScrollbarComponent.anIntArray9932!![ParticleGeometry.anInt4411++] = Client.anIntArray1233!![i_1_]
+                    ProportionalScrollbarComponent.anIntArray9932!![ParticleGeometryStatics.anInt4411++] = Client.anIntArray1233!![i_1_]
                     i_1_++
                 }
             }
@@ -53,7 +53,7 @@ object NpcSummaryDefinitionStatics {
                         }
                         val i_11_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                         if (i_11_ == 1) MinimapRectClipper.anIntArray224!![AbstractCameraTransformStatics.anInt1597++] = i_3_
-                    } else if (i_5_ == 3) ProportionalScrollbarComponent.anIntArray9932!![ParticleGeometry.anInt4411++] = i_3_
+                    } else if (i_5_ == 3) ProportionalScrollbarComponent.anIntArray9932!![ParticleGeometryStatics.anInt4411++] = i_3_
                 }
             }
         }

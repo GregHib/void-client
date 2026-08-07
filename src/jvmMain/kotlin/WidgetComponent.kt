@@ -377,7 +377,7 @@ class WidgetComponent {
                 val i_25_ = i
                 if (widgetDefinition != null) i = i or widgetDefinition.method263(i_24_, 106, i_21_, true)
                 val l = (this.anInt753 + ((this.anInt770 shl 16) + (var_renderer!!.anInt4567 shl 29))).toLong()
-                var abstractModel = ParticleGeometry.aLruByteCache_4417!!.method583(l, -90) as AbstractModel?
+                var abstractModel = ParticleGeometryStatics.aLruByteCache_4417!!.method583(l, -90) as AbstractModel?
                 if (abstractModel == null || var_renderer.method3667(abstractModel.ua(), i) != 0) {
                     if (abstractModel != null) i = var_renderer.method3679(i, abstractModel.ua())
                     val class124 = ParticleConfigParser.method2277(0, (ScatterTextureNode.aJs5Archive_9365!!), this.anInt753, -1)
@@ -387,7 +387,7 @@ class WidgetComponent {
                     }
                     if (class124.anInt1830 < 13) class124.method1092(2, 114)
                     abstractModel = var_renderer.method3625(class124, i, Gl3dTexture.anInt8628, 64, 768)
-                    ParticleGeometry.aLruByteCache_4417!!.method582(abstractModel, l, (-125).toByte())
+                    ParticleGeometryStatics.aLruByteCache_4417!!.method582(abstractModel, l, (-125).toByte())
                 }
                 if (widgetDefinition != null) abstractModel = widgetDefinition.method269(-101, abstractModel, i_24_, i_22_, i, i_21_)
                 abstractModel!!.s(i_25_)
