@@ -47,7 +47,7 @@ class CubemapTexture2dSource internal constructor(private val aHa_Sub2_8693: Ope
                     ModelDefinition.aJs5Archive_1848 = js5Archive
                     DirectionPath.anInt1059 = i_7_
                     NpcActorEntity.anInt10074 = i
-                    KeyboardInputSource.aBoolean4275 = bool
+                    KeyboardInputSourceStatics.aBoolean4275 = bool
                     GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                     CacheIndexManager.anInt3971 = i_4_
                     anInt8687++

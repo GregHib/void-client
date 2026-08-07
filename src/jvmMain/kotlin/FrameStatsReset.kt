@@ -472,7 +472,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OggCacheStream.anInt5268 = 0
             DisplayModeOptionState.anInt6105 = 0
             SkeletalAnimFrameLoader.anInt470 = 0
-            KeyboardInputSource.anInt4277 = 0
+            KeyboardInputSourceStatics.anInt4277 = 0
             GameAppletFrame.anInt39 = 0
             OpenGlRenderer.anInt2567 = 0
             MapElementDecor.anInt10362 = 0

@@ -39,7 +39,7 @@ abstract class AbstractFrameBufferSurface : LinkedListNode() {
             NpcActorEntity.anInt10074 = -1
             GlBufferObject.aClass348_Sub16_Sub3_4743 = null
             anInt6922++
-            KeyboardInputSource.aBoolean4275 = false
+            KeyboardInputSourceStatics.aBoolean4275 = false
             ModelDefinition.aJs5Archive_1848 = null
             CacheIndexManager.anInt3971 = -1
             WaterDetailOptionState.anInt5994 = i

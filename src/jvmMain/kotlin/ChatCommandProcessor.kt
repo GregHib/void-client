@@ -966,7 +966,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5305) {
-                val i_100_ = KeyboardInputSource.anInt4276
+                val i_100_ = KeyboardInputSourceStatics.anInt4276
                 val i_101_ = FlickeringEffectsOptionState.anInt5911
                 var i_102_ = -1
                 val class57s = NamedTimedNode.method2515(1494)!!

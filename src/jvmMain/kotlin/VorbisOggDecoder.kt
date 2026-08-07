@@ -1,4 +1,4 @@
-import KeyboardInputSource.Companion.method2699
+import KeyboardInputSourceStatics.method2699
 import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggStreamState
 import jagtheora.vorbis.DSPState

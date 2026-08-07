@@ -70,7 +70,7 @@ object HeadIconRendererStatics {
     fun method368(i: Int, i_0_: Int, bool: Boolean, i_1_: Int, js5Archive: Js5Archive?, i_2_: Int, i_3_: Int) {
         anInt551++
         if (i_3_ > 0) {
-            KeyboardInputSource.aBoolean4275 = bool
+            KeyboardInputSourceStatics.aBoolean4275 = bool
             SpriteDefinition.anInt7068 = 1
             ModelDefinition.aJs5Archive_1848 = js5Archive
             NpcActorEntity.anInt10074 = i_1_

@@ -260,7 +260,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             i++
         }
         SpriteLoadValidator.anInt4795 = 0
-        KeyboardInputSource.anInt4274 = 0
+        KeyboardInputSourceStatics.anInt4274 = 0
         SpriteArchiveLoader.anInt386 = 0
         return true
     }
@@ -650,21 +650,21 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
         if (i == 0) {
             var i_94_ = 0
             SpriteLoadValidator.anInt4795 = 0
-            KeyboardInputSource.anInt4274 = 0
+            KeyboardInputSourceStatics.anInt4274 = 0
             SpriteArchiveLoader.anInt386 = 0
             for (i_95_ in 0..<anInt5433) {
                 SpriteLoadValidator.anInt4795 += anIntArray5511!![i_95_]
                 SpriteArchiveLoader.anInt386 += anIntArray5519!![i_95_]
-                KeyboardInputSource.anInt4274 += anIntArray5429!![i_95_]
+                KeyboardInputSourceStatics.anInt4274 += anIntArray5429!![i_95_]
                 i_94_++
             }
             if (i_94_ > 0) {
-                KeyboardInputSource.anInt4274 = i_93_ + KeyboardInputSource.anInt4274 / i_94_
+                KeyboardInputSourceStatics.anInt4274 = i_93_ + KeyboardInputSourceStatics.anInt4274 / i_94_
                 SpriteArchiveLoader.anInt386 = i_92_ + SpriteArchiveLoader.anInt386 / i_94_
                 SpriteLoadValidator.anInt4795 = i_91_ + SpriteLoadValidator.anInt4795 / i_94_
             } else {
                 SpriteArchiveLoader.anInt386 = i_92_
-                KeyboardInputSource.anInt4274 = i_93_
+                KeyboardInputSourceStatics.anInt4274 = i_93_
                 SpriteLoadValidator.anInt4795 = i_91_
             }
         } else if (i == 1) {
@@ -678,7 +678,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             while (anInt5433 > i_97_) {
                 anIntArray5511!![i_97_] -= SpriteLoadValidator.anInt4795
                 anIntArray5519!![i_97_] -= SpriteArchiveLoader.anInt386
-                anIntArray5429!![i_97_] -= KeyboardInputSource.anInt4274
+                anIntArray5429!![i_97_] -= KeyboardInputSourceStatics.anInt4274
                 if (i_93_ != 0) {
                     val i_98_ = SpotAnimVector.anIntArray1207!![i_93_]
                     val i_99_ = SpotAnimVector.anIntArray1204!![i_93_]
@@ -702,20 +702,20 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 }
                 anIntArray5511!![i_97_] += SpriteLoadValidator.anInt4795
                 anIntArray5519!![i_97_] += SpriteArchiveLoader.anInt386
-                anIntArray5429!![i_97_] += KeyboardInputSource.anInt4274
+                anIntArray5429!![i_97_] += KeyboardInputSourceStatics.anInt4274
                 i_97_++
             }
         } else if (i == 3) {
             for (i_107_ in 0..<anInt5433) {
                 anIntArray5511!![i_107_] -= SpriteLoadValidator.anInt4795
                 anIntArray5519!![i_107_] -= SpriteArchiveLoader.anInt386
-                anIntArray5429!![i_107_] -= KeyboardInputSource.anInt4274
+                anIntArray5429!![i_107_] -= KeyboardInputSourceStatics.anInt4274
                 anIntArray5511!![i_107_] = anIntArray5511!![i_107_] * i_91_ / 128
                 anIntArray5519!![i_107_] = anIntArray5519!![i_107_] * i_92_ / 128
                 anIntArray5429!![i_107_] = anIntArray5429!![i_107_] * i_93_ / 128
                 anIntArray5511!![i_107_] += SpriteLoadValidator.anInt4795
                 anIntArray5519!![i_107_] += SpriteArchiveLoader.anInt386
-                anIntArray5429!![i_107_] += KeyboardInputSource.anInt4274
+                anIntArray5429!![i_107_] += KeyboardInputSourceStatics.anInt4274
             }
         } else if (i == 5) {
             var i_108_ = 0
@@ -1425,7 +1425,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 SpriteArchiveLoader.anInt386 = 0
                 SpriteLoadValidator.anInt4795 = 0
                 var i_217_ = 0
-                KeyboardInputSource.anInt4274 = 0
+                KeyboardInputSourceStatics.anInt4274 = 0
                 for (i_218_ in 0..<i_216_) {
                     val i_219_ = `is`[i_218_]
                     if (i_219_ < anIntArrayArray5413!!.size) {
@@ -1434,18 +1434,18 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             val i_222_ = is_220_[i_221_]
                             SpriteLoadValidator.anInt4795 += anIntArray5511!![i_222_]
                             SpriteArchiveLoader.anInt386 += anIntArray5519!![i_222_]
-                            KeyboardInputSource.anInt4274 += anIntArray5429!![i_222_]
+                            KeyboardInputSourceStatics.anInt4274 += anIntArray5429!![i_222_]
                             i_217_++
                         }
                     }
                 }
                 if (i_217_ > 0) {
                     SpriteArchiveLoader.anInt386 = SpriteArchiveLoader.anInt386 / i_217_ - -i_213_
-                    KeyboardInputSource.anInt4274 = KeyboardInputSource.anInt4274 / i_217_ + i_214_
+                    KeyboardInputSourceStatics.anInt4274 = KeyboardInputSourceStatics.anInt4274 / i_217_ + i_214_
                     SpriteLoadValidator.anInt4795 = SpriteLoadValidator.anInt4795 / i_217_ - -i_212_
                 } else {
                     SpriteArchiveLoader.anInt386 = i_213_
-                    KeyboardInputSource.anInt4274 = i_214_
+                    KeyboardInputSourceStatics.anInt4274 = i_214_
                     SpriteLoadValidator.anInt4795 = i_212_
                 }
             } else if (i == 1) {
@@ -1479,7 +1479,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                 val i_232_ = is_230_[i_231_]
                                 anIntArray5511!![i_232_] -= SpriteLoadValidator.anInt4795
                                 anIntArray5519!![i_232_] -= SpriteArchiveLoader.anInt386
-                                anIntArray5429!![i_232_] -= KeyboardInputSource.anInt4274
+                                anIntArray5429!![i_232_] -= KeyboardInputSourceStatics.anInt4274
                                 if (i_214_ != 0) {
                                     val i_233_ = SpotAnimVector.anIntArray1207!![i_214_]
                                     val i_234_ = SpotAnimVector.anIntArray1204!![i_214_]
@@ -1503,7 +1503,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                 }
                                 anIntArray5511!![i_232_] += SpriteLoadValidator.anInt4795
                                 anIntArray5519!![i_232_] += SpriteArchiveLoader.anInt386
-                                anIntArray5429!![i_232_] += KeyboardInputSource.anInt4274
+                                anIntArray5429!![i_232_] += KeyboardInputSourceStatics.anInt4274
                                 i_231_++
                             }
                         } else {
@@ -1511,7 +1511,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                 val i_243_ = is_230_[i_242_]
                                 anIntArray5511!![i_243_] -= SpriteLoadValidator.anInt4795
                                 anIntArray5519!![i_243_] -= SpriteArchiveLoader.anInt386
-                                anIntArray5429!![i_243_] -= KeyboardInputSource.anInt4274
+                                anIntArray5429!![i_243_] -= KeyboardInputSourceStatics.anInt4274
                                 if (i_212_ != 0) {
                                     val i_244_ = SpotAnimVector.anIntArray1207!![i_212_]
                                     val i_245_ = SpotAnimVector.anIntArray1204!![i_212_]
@@ -1535,7 +1535,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                 }
                                 anIntArray5511!![i_243_] += SpriteLoadValidator.anInt4795
                                 anIntArray5519!![i_243_] += SpriteArchiveLoader.anInt386
-                                anIntArray5429!![i_243_] += KeyboardInputSource.anInt4274
+                                anIntArray5429!![i_243_] += KeyboardInputSourceStatics.anInt4274
                             }
                         }
                     }
@@ -1594,13 +1594,13 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             val i_275_ = is_273_[i_274_]
                             anIntArray5511!![i_275_] -= SpriteLoadValidator.anInt4795
                             anIntArray5519!![i_275_] -= SpriteArchiveLoader.anInt386
-                            anIntArray5429!![i_275_] -= KeyboardInputSource.anInt4274
+                            anIntArray5429!![i_275_] -= KeyboardInputSourceStatics.anInt4274
                             anIntArray5511!![i_275_] = (anIntArray5511!![i_275_] * i_212_ shr 7)
                             anIntArray5519!![i_275_] = anIntArray5519!![i_275_] * i_213_ shr 7
                             anIntArray5429!![i_275_] = i_214_ * anIntArray5429!![i_275_] shr 7
                             anIntArray5511!![i_275_] += SpriteLoadValidator.anInt4795
                             anIntArray5519!![i_275_] += SpriteArchiveLoader.anInt386
-                            anIntArray5429!![i_275_] += KeyboardInputSource.anInt4274
+                            anIntArray5429!![i_275_] += KeyboardInputSourceStatics.anInt4274
                             i_274_++
                         }
                     }
@@ -2879,7 +2879,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 i_592_ = i_592_ shl 4
                 SpriteArchiveLoader.anInt386 = 0
                 var i_596_ = 0
-                KeyboardInputSource.anInt4274 = 0
+                KeyboardInputSourceStatics.anInt4274 = 0
                 SpriteLoadValidator.anInt4795 = 0
                 var i_597_ = 0
                 while (i_595_ > i_597_) {
@@ -2892,7 +2892,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                             if (aShortArray5494 == null || (aShortArray5494!![i_601_].toInt() and i_593_) != 0) {
                                 SpriteLoadValidator.anInt4795 += anIntArray5511!![i_601_]
                                 SpriteArchiveLoader.anInt386 += anIntArray5519!![i_601_]
-                                KeyboardInputSource.anInt4274 += anIntArray5429!![i_601_]
+                                KeyboardInputSourceStatics.anInt4274 += anIntArray5429!![i_601_]
                                 i_596_++
                             }
                             i_600_++
@@ -2901,12 +2901,12 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     i_597_++
                 }
                 if (i_596_ > 0) {
-                    KeyboardInputSource.anInt4274 = KeyboardInputSource.anInt4274 / i_596_ - -i_592_
+                    KeyboardInputSourceStatics.anInt4274 = KeyboardInputSourceStatics.anInt4274 / i_596_ - -i_592_
                     OpenGlModel.aBoolean5609 = true
                     SpriteArchiveLoader.anInt386 = SpriteArchiveLoader.anInt386 / i_596_ + i_591_
                     SpriteLoadValidator.anInt4795 = i_590_ + SpriteLoadValidator.anInt4795 / i_596_
                 } else {
-                    KeyboardInputSource.anInt4274 = i_592_
+                    KeyboardInputSourceStatics.anInt4274 = i_592_
                     SpriteLoadValidator.anInt4795 = i_590_
                     SpriteArchiveLoader.anInt386 = i_591_
                 }
@@ -2951,7 +2951,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                 if (aShortArray5494 == null || ((aShortArray5494!![i_662_].toInt() and i_593_) != 0)) {
                                     anIntArray5511!![i_662_] -= SpriteLoadValidator.anInt4795
                                     anIntArray5519!![i_662_] -= SpriteArchiveLoader.anInt386
-                                    anIntArray5429!![i_662_] -= KeyboardInputSource.anInt4274
+                                    anIntArray5429!![i_662_] -= KeyboardInputSourceStatics.anInt4274
                                     if (i_592_ != 0) {
                                         val i_663_ = SpotAnimVector.anIntArray1207!![i_592_]
                                         val i_664_ = SpotAnimVector.anIntArray1204!![i_592_]
@@ -2975,7 +2975,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                     }
                                     anIntArray5511!![i_662_] += SpriteLoadValidator.anInt4795
                                     anIntArray5519!![i_662_] += SpriteArchiveLoader.anInt386
-                                    anIntArray5429!![i_662_] += KeyboardInputSource.anInt4274
+                                    anIntArray5429!![i_662_] += KeyboardInputSourceStatics.anInt4274
                                 }
                                 i_661_++
                             }
@@ -3033,16 +3033,16 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     val i_614_ = is_594_[13] shl 4
                     val i_615_ = is_594_[14] shl 4
                     if (OpenGlModel.aBoolean5609) {
-                        var i_616_ = ((is_594_[6] * KeyboardInputSource.anInt4274 + (SpriteLoadValidator.anInt4795 * is_594_[0] - -(SpriteArchiveLoader.anInt386 * is_594_[3])) + 8192) shr 14)
-                        var i_617_ = ((is_594_[7] * KeyboardInputSource.anInt4274 + (is_594_[1] * SpriteLoadValidator.anInt4795 - -(is_594_[4] * SpriteArchiveLoader.anInt386) + 8192)) shr 14)
+                        var i_616_ = ((is_594_[6] * KeyboardInputSourceStatics.anInt4274 + (SpriteLoadValidator.anInt4795 * is_594_[0] - -(SpriteArchiveLoader.anInt386 * is_594_[3])) + 8192) shr 14)
+                        var i_617_ = ((is_594_[7] * KeyboardInputSourceStatics.anInt4274 + (is_594_[1] * SpriteLoadValidator.anInt4795 - -(is_594_[4] * SpriteArchiveLoader.anInt386) + 8192)) shr 14)
                         i_616_ += i_613_
-                        var i_618_ = ((8192 + KeyboardInputSource.anInt4274 * is_594_[8] + SpriteLoadValidator.anInt4795 * is_594_[2] + SpriteArchiveLoader.anInt386 * is_594_[5]) shr 14)
+                        var i_618_ = ((8192 + KeyboardInputSourceStatics.anInt4274 * is_594_[8] + SpriteLoadValidator.anInt4795 * is_594_[2] + SpriteArchiveLoader.anInt386 * is_594_[5]) shr 14)
                         i_617_ += i_614_
                         i_618_ += i_615_
                         SpriteLoadValidator.anInt4795 = i_616_
                         SpriteArchiveLoader.anInt386 = i_617_
                         OpenGlModel.aBoolean5609 = false
-                        KeyboardInputSource.anInt4274 = i_618_
+                        KeyboardInputSourceStatics.anInt4274 = i_618_
                     }
                     val is_619_ = IntArray(9)
                     val i_620_ = SpotAnimVector.anIntArray1204!![i_590_]
@@ -3062,12 +3062,12 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     is_619_[2] = i_620_ * i_623_ + 8192 shr 14
                     is_619_[8] = i_622_ * i_620_ + 8192 shr 14
                     is_619_[3] = 8192 + i_625_ * i_620_ shr 14
-                    val i_628_ = ((-KeyboardInputSource.anInt4274 * is_619_[2] + is_619_[1] * -SpriteArchiveLoader.anInt386 + (is_619_[0] * -SpriteLoadValidator.anInt4795 + 8192)) shr 14)
-                    val i_629_ = ((8192 + -KeyboardInputSource.anInt4274 * is_619_[5] + (-SpriteLoadValidator.anInt4795 * is_619_[3] - -(is_619_[4] * -SpriteArchiveLoader.anInt386))) shr 14)
-                    val i_630_ = ((8192 + -KeyboardInputSource.anInt4274 * is_619_[8] + (-SpriteLoadValidator.anInt4795 * is_619_[6] + -SpriteArchiveLoader.anInt386 * is_619_[7])) shr 14)
+                    val i_628_ = ((-KeyboardInputSourceStatics.anInt4274 * is_619_[2] + is_619_[1] * -SpriteArchiveLoader.anInt386 + (is_619_[0] * -SpriteLoadValidator.anInt4795 + 8192)) shr 14)
+                    val i_629_ = ((8192 + -KeyboardInputSourceStatics.anInt4274 * is_619_[5] + (-SpriteLoadValidator.anInt4795 * is_619_[3] - -(is_619_[4] * -SpriteArchiveLoader.anInt386))) shr 14)
+                    val i_630_ = ((8192 + -KeyboardInputSourceStatics.anInt4274 * is_619_[8] + (-SpriteLoadValidator.anInt4795 * is_619_[6] + -SpriteArchiveLoader.anInt386 * is_619_[7])) shr 14)
                     val i_631_ = SpriteLoadValidator.anInt4795 + i_628_
                     val i_632_ = i_629_ + SpriteArchiveLoader.anInt386
-                    val i_633_ = i_630_ - -KeyboardInputSource.anInt4274
+                    val i_633_ = i_630_ - -KeyboardInputSourceStatics.anInt4274
                     val is_634_ = IntArray(9)
                     for (i_635_ in 0..2) {
                         for (i_636_ in 0..2) {
@@ -3132,13 +3132,13 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                                 if (aShortArray5494 == null || ((i_593_ and aShortArray5494!![i_694_].toInt()) != 0)) {
                                     anIntArray5511!![i_694_] -= SpriteLoadValidator.anInt4795
                                     anIntArray5519!![i_694_] -= SpriteArchiveLoader.anInt386
-                                    anIntArray5429!![i_694_] -= KeyboardInputSource.anInt4274
+                                    anIntArray5429!![i_694_] -= KeyboardInputSourceStatics.anInt4274
                                     anIntArray5511!![i_694_] = (i_590_ * anIntArray5511!![i_694_] shr 7)
                                     anIntArray5519!![i_694_] = (anIntArray5519!![i_694_] * i_591_ shr 7)
                                     anIntArray5429!![i_694_] = (i_592_ * anIntArray5429!![i_694_] shr 7)
                                     anIntArray5511!![i_694_] += SpriteLoadValidator.anInt4795
                                     anIntArray5519!![i_694_] += SpriteArchiveLoader.anInt386
-                                    anIntArray5429!![i_694_] += KeyboardInputSource.anInt4274
+                                    anIntArray5429!![i_694_] += KeyboardInputSourceStatics.anInt4274
                                 }
                                 i_693_++
                             }
@@ -3153,26 +3153,26 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                     val i_699_ = is_594_[13] shl 4
                     val i_700_ = is_594_[14] shl 4
                     if (OpenGlModel.aBoolean5609) {
-                        var i_701_ = ((KeyboardInputSource.anInt4274 * is_594_[6] + (SpriteLoadValidator.anInt4795 * is_594_[0] + (is_594_[3] * SpriteArchiveLoader.anInt386 + 8192))) shr 14)
-                        var i_702_ = (8192 + (SpriteLoadValidator.anInt4795 * is_594_[1] + (SpriteArchiveLoader.anInt386 * is_594_[4] - -(is_594_[7] * KeyboardInputSource.anInt4274))) shr 14)
+                        var i_701_ = ((KeyboardInputSourceStatics.anInt4274 * is_594_[6] + (SpriteLoadValidator.anInt4795 * is_594_[0] + (is_594_[3] * SpriteArchiveLoader.anInt386 + 8192))) shr 14)
+                        var i_702_ = (8192 + (SpriteLoadValidator.anInt4795 * is_594_[1] + (SpriteArchiveLoader.anInt386 * is_594_[4] - -(is_594_[7] * KeyboardInputSourceStatics.anInt4274))) shr 14)
                         i_701_ += i_698_
                         i_702_ += i_699_
-                        var i_703_ = ((8192 + is_594_[2] * SpriteLoadValidator.anInt4795 - -(is_594_[5] * SpriteArchiveLoader.anInt386) - -(KeyboardInputSource.anInt4274 * is_594_[8])) shr 14)
+                        var i_703_ = ((8192 + is_594_[2] * SpriteLoadValidator.anInt4795 - -(is_594_[5] * SpriteArchiveLoader.anInt386) - -(KeyboardInputSourceStatics.anInt4274 * is_594_[8])) shr 14)
                         i_703_ += i_700_
                         SpriteLoadValidator.anInt4795 = i_701_
                         SpriteArchiveLoader.anInt386 = i_702_
                         OpenGlModel.aBoolean5609 = false
-                        KeyboardInputSource.anInt4274 = i_703_
+                        KeyboardInputSourceStatics.anInt4274 = i_703_
                     }
                     val i_704_ = i_590_ shl 15 shr 7
                     val i_705_ = i_591_ shl 15 shr 7
                     val i_706_ = i_592_ shl 15 shr 7
                     val i_707_ = -SpriteLoadValidator.anInt4795 * i_704_ + 8192 shr 14
                     val i_708_ = 8192 + -SpriteArchiveLoader.anInt386 * i_705_ shr 14
-                    val i_709_ = 8192 + -KeyboardInputSource.anInt4274 * i_706_ shr 14
+                    val i_709_ = 8192 + -KeyboardInputSourceStatics.anInt4274 * i_706_ shr 14
                     val i_710_ = i_707_ + SpriteLoadValidator.anInt4795
                     val i_711_ = i_708_ + SpriteArchiveLoader.anInt386
-                    val i_712_ = KeyboardInputSource.anInt4274 + i_709_
+                    val i_712_ = KeyboardInputSourceStatics.anInt4274 + i_709_
                     val is_713_ = IntArray(9)
                     is_713_[0] = 8192 + i_704_ * is_594_[0] shr 14
                     is_713_[1] = is_594_[3] * i_704_ + 8192 shr 14

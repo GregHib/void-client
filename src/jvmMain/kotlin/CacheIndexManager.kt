@@ -101,7 +101,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
         fun method2355(i: Int, i_0_: Byte, bool: Boolean, js5Archive: Js5Archive?, i_1_: Int, i_2_: Int, i_3_: Int) {
             DirectionPath.anInt1059 = i
             anInt3948++
-            KeyboardInputSource.aBoolean4275 = bool
+            KeyboardInputSourceStatics.aBoolean4275 = bool
             GlBufferObject.aClass348_Sub16_Sub3_4743 = null
             NpcActorEntity.anInt10074 = i_1_
             WaterDetailOptionState.anInt5994 = i_3_
