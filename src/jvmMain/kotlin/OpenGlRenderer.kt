@@ -3591,7 +3591,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 i_324_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2909)
                                 if (player.aBoolean10554) i_325_ = 2
                             }
-                            var class105s = TimedRecordAccessor.aAbstractModelRendererArray7107
+                            var class105s = TimedRecordAccessorStatics.aAbstractModelRendererArray7107
                             if (i_324_ != -1) {
                                 var abstractModelRendererS_326_ = ((TextureMipDescriptor.aLruByteCache_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<AbstractModelRenderer?>?)
                                 if (abstractModelRendererS_326_ == null) {
@@ -3621,7 +3621,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             class105_328_.method974(i_329_, i_323_)
                             FacingDirectionNodeStatics.aRenderer6654!!.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i)
                             MapTileShape.method2663(-5590, i_329_, i_329_ + class105.method966(), i_323_, i_323_ + i_331_)
-                        } else i_323_ -= max((WorldMapLabel.aFontDefinition_4962!!.anInt1988), TimedRecordAccessor.aAbstractModelRendererArray7107!![0]!!.method969())
+                        } else i_323_ -= max((WorldMapLabel.aFontDefinition_4962!!.anInt1988), TimedRecordAccessorStatics.aAbstractModelRendererArray7107!![0]!!.method969())
                         i_323_ -= 2
                         if (!class318_sub1_sub3_sub3.aBoolean10309) {
                             if (class318_sub1_sub3_sub3.anInt10287 > GlGroundShaderPass.anInt7396) {

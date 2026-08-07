@@ -155,7 +155,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ProjectedGroundDecor.anInt10311 = 0
             NativeRenderer.anInt8026 = 0
             LocDefinitionCache.anInt3431 = 0
-            TimedRecordAccessor.anInt7104 = 0
+            TimedRecordAccessorStatics.anInt7104 = 0
             DataHolderStatics.anInt3656 = 0
             CellNoiseTextureNode.anInt9295 = 0
             AbstractModel.anInt1132 = 0

@@ -4,7 +4,7 @@ import LoadingScreenState.Companion.method1457
 import GlTexture2D.Companion.method1968
 import WallEntity.Companion.method2483
 import RSFont.Companion.method2570
-import TimedRecordAccessor.Companion.method3313
+import TimedRecordAccessorStatics.method3313
 import FixedFunctionWaterPass.Companion.method3547
 import WorldMapPolygonIconLabel.Companion.method3576
 import DirectionPath.Companion.method536

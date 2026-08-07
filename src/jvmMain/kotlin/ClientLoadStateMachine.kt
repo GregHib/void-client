@@ -115,7 +115,7 @@ object ClientLoadStateMachine {
             ByteBufferStatics.method3379(2, 1)
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1029) {
-            for (i_7_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_7_] = method988(RangeThresholdTextureNode.anInt9109, 1, GlCubemapLightPass.anInt7319)
+            for (i_7_ in 0..3) TimedRecordAccessorStatics.aCollisionMapArray7108s!![i_7_] = method988(RangeThresholdTextureNode.anInt9109, 1, GlCubemapLightPass.anInt7319)
         }
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1030) {
             CameraRotationStubStatics.aJs5Archive_322 = WorldMapTextLabel.method3571(false, 8, (-23).toByte(), 1)

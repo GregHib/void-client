@@ -1,7 +1,7 @@
 import DoublyLinkedNodeList.Companion.method1879
 import WalkingTypeUtil.method1978
 import SynthVoiceGroup.Companion.method2826
-import TimedRecordAccessor.Companion.method3309
+import TimedRecordAccessorStatics.method3309
 import jaggl.OpenGL.Companion.glBindRenderbufferEXT
 import jaggl.OpenGL.Companion.glFramebufferRenderbufferEXT
 import jaggl.OpenGL.Companion.glGenRenderbuffersEXT

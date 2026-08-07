@@ -848,7 +848,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         @JvmStatic
         fun method3958(i: Int, movementDirection: MovementDirection?, textureFormatInfo: TextureFormatInfo?): Int {
             if (movementDirection == MovementDirection.aMovementDirection_1183) {
-                if (TimedRecordAccessor.aTextureFormatInfo_7103 != textureFormatInfo) {
+                if (TimedRecordAccessorStatics.aTextureFormatInfo_7103 != textureFormatInfo) {
                     if (GroundItemRenderState.aTextureFormatInfo_1662 == textureFormatInfo) return 21
                     if (GlFontTextured.aTextureFormatInfo_9471 == textureFormatInfo) return 28
                     if (CellNoiseTextureNode.aTextureFormatInfo_9303 == textureFormatInfo) return 50

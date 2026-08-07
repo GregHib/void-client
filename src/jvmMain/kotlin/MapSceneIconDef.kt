@@ -79,11 +79,11 @@ class MapSceneIconDef {
                 var i_8_ = i_7_
                 if (i_8_ < 3 && method802(i_5_, i, true)) i_8_++
                 if ((IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && !method536(i_5_, false, i, ParticleSystemState.anInt2204, i_8_)) || HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) return
-                MapTileShape.aClass237_Sub1_4197!!.method1694((TimedRecordAccessor.aCollisionMapArray7108s!![i_7_]), i_1_, i_7_, FacingDirectionNodeStatics.aRenderer6654, i, i_5_, 106.toByte())
+                MapTileShape.aClass237_Sub1_4197!!.method1694((TimedRecordAccessorStatics.aCollisionMapArray7108s!![i_7_]), i_1_, i_7_, FacingDirectionNodeStatics.aRenderer6654, i, i_5_, 106.toByte())
                 if (i_3_ >= 0) {
                     val i_9_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350)
                     IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220), 1)
-                    MapTileShape.aClass237_Sub1_4197!!.method1689(i, i_7_, i_3_, FacingDirectionNodeStatics.aRenderer6654, i_8_, 50, i_4_, i_5_, i_2_, i_6_, (TimedRecordAccessor.aCollisionMapArray7108s!![i_7_]))
+                    MapTileShape.aClass237_Sub1_4197!!.method1689(i, i_7_, i_3_, FacingDirectionNodeStatics.aRenderer6654, i_8_, 50, i_4_, i_5_, i_2_, i_6_, (TimedRecordAccessorStatics.aCollisionMapArray7108s!![i_7_]))
                     IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220), i_9_)
                 }
             }
@@ -95,7 +95,7 @@ class MapSceneIconDef {
             val i_13_ = (player.anIntArray10320!![0])
             val i_14_ = (player.anIntArray10317!![0])
             if (i_13_ >= 0 && GlCubemapLightPass.anInt7319 > i_13_ && i_14_ >= 0 && i_14_ < RangeThresholdTextureNode.anInt9109 && (i_12_ >= 0 && i_12_ < GlCubemapLightPass.anInt7319 && i_10_ >= 0 && RangeThresholdTextureNode.anInt9109 > i_10_)) {
-                val i_15_ = (method574(i_12_, player.method2436(62.toByte()), 0, RadialGradientMaskEffect.anIntArray9185, true, 120.toByte(), -4, i_13_, i_14_, InterfaceComponentGroup.anIntArray9626, i_10_, (TimedRecordAccessor.aCollisionMapArray7108s!![(player.plane).toInt()]), 0, 0, 0))
+                val i_15_ = (method574(i_12_, player.method2436(62.toByte()), 0, RadialGradientMaskEffect.anIntArray9185, true, 120.toByte(), -4, i_13_, i_14_, InterfaceComponentGroup.anIntArray9626, i_10_, (TimedRecordAccessorStatics.aCollisionMapArray7108s!![(player.plane).toInt()]), 0, 0, 0))
                 if (i_15_ >= 1) {
                     if (i_11_ != 4) aNodeDeque_2859 = null
                     if (i_15_ <= 3) {

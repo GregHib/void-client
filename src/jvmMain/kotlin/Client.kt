@@ -357,7 +357,7 @@ import ChatCommandProcessor.method3199
 import KeyedCacheEntryReference.Companion.method3204
 import HardKeyedCacheEntryReference.Companion.method3208
 import SpriteDefinition.Companion.method3300
-import TimedRecordAccessor.Companion.method3314
+import TimedRecordAccessorStatics.method3314
 import OutgoingPacketNode.Companion.method3323
 import OutgoingPacketNode.Companion.method3327
 import FloatBuffer.Companion.method3403
@@ -1440,7 +1440,7 @@ class Client : GameAppletFrame() {
                             var i_102_ = i_100_ + (npc.anIntArray10317!![0])
                             if (i_102_ < 0) i_102_ = 0
                             else if ((-i_98_ + RangeThresholdTextureNode.anInt9109 - 1) < i_102_) i_102_ = (-i_98_ + RangeThresholdTextureNode.anInt9109 - 1)
-                            var i_103_ = (method574(i_101_, i_98_, i_98_, RadialGradientMaskEffect.anIntArray9185, true, 120.toByte(), -1, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), InterfaceComponentGroup.anIntArray9626, i_102_, (TimedRecordAccessor.aCollisionMapArray7108s!![(npc.plane).toInt()]), i_98_, 0, 0))
+                            var i_103_ = (method574(i_101_, i_98_, i_98_, RadialGradientMaskEffect.anIntArray9185, true, 120.toByte(), -1, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), InterfaceComponentGroup.anIntArray9626, i_102_, (TimedRecordAccessorStatics.aCollisionMapArray7108s!![(npc.plane).toInt()]), i_98_, 0, 0))
                             if (i_103_ > 0) {
                                 if (i_103_ > 9) i_103_ = 9
                                 var i_104_ = 0
@@ -2133,7 +2133,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray803
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
-                                if (RegionSceneLoader.aWidgetComponent_3701 != null || ScrollbarComponent.aBoolean8335 || ((class46.anInt765 != TimedRecordAccessor.anInt7102) && HashLinkedListNodeStatics.anInt7059 > 0)) {
+                                if (RegionSceneLoader.aWidgetComponent_3701 != null || ScrollbarComponent.aBoolean8335 || ((class46.anInt765 != TimedRecordAccessorStatics.anInt7102) && HashLinkedListNodeStatics.anInt7059 > 0)) {
                                     bool_54_ = false
                                     bool_53_ = false
                                     bool = false
@@ -2198,7 +2198,7 @@ class Client : GameAppletFrame() {
                                         }
                                         continue
                                     }
-                                    if (class46.anInt765 == TimedRecordAccessor.anInt7102) {
+                                    if (class46.anInt765 == TimedRecordAccessorStatics.anInt7102) {
                                         HeapDiagnosticsHolder.aWidgetComponent_2249 = class46
                                         if (bool) ParticleEmitterFactoryStatics.aBoolean3174 = true
                                         if (bool_54_) {

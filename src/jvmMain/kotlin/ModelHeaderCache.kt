@@ -255,11 +255,11 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                     }
                 }
                 spriteImages = SpriteImage.method1519(js5Archive, DualMaterialContainer.anInt1639, 0)
-                TimedRecordAccessor.aAbstractModelRendererArray7107 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                TimedRecordAccessorStatics.aAbstractModelRendererArray7107 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
                     while (spriteImages.size > i) {
-                        TimedRecordAccessor.aAbstractModelRendererArray7107!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                        TimedRecordAccessorStatics.aAbstractModelRendererArray7107!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }

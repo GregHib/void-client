@@ -107,7 +107,7 @@ class TileRenderState {
 
         @JvmStatic
         fun method369(i: Int) {
-            TimedRecordAccessor.aAbstractModelRendererArray7107 = null
+            TimedRecordAccessorStatics.aAbstractModelRendererArray7107 = null
             CameraDistanceOptionState.aAbstractModelRendererArray5857 = null
             BoundingBoxNode.aAbstractModelRendererArray6742 = null
             WorldMapRenderer.aAbstractModelRendererArray4679 = null

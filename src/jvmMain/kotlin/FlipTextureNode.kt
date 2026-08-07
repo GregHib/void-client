@@ -219,7 +219,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                             i_18_++
                                             continue
                                         }
-                                        if (class46.anInt765 == TimedRecordAccessor.anInt7102) {
+                                        if (class46.anInt765 == TimedRecordAccessorStatics.anInt7102) {
                                             MapElementDecor.method2464((-7).toByte(), i_24_, class46.anInt709, class46.anInt789, FacingDirectionNodeStatics.aRenderer6654, i_25_, SourceRowTextureNode.Companion.aRenderConfig9113)
                                             OpenGlModel.aBooleanArray2076!![i_23_] = true
                                             FacingDirectionNodeStatics.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)

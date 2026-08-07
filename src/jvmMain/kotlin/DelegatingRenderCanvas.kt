@@ -245,7 +245,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     TerrainShadowBuilderGl2.method3018(SequencedActorEntity.anInt10096)
                     if (SequencedActorEntity.anInt10096 != 0) ModelResourceBundle.method3328(WorldMapRenderer.aRSFont_4684)
                     else ModelResourceBundle.method3328(null)
-                    for (i_28_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_28_]!!.method3500(i xor 0x2bc)
+                    for (i_28_ in 0..3) TimedRecordAccessorStatics.aCollisionMapArray7108s!![i_28_]!!.method3500(i xor 0x2bc)
                     RsaVarbitHandler.method491((-86).toByte())
                     FloatCameraTransform.method921(99.toByte(), false)
                     method3936(i + i)
@@ -281,7 +281,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         VarpStore.aClass237_Sub1_5067!!.method1685(FacingDirectionNodeStatics.aRenderer6654, null, 21407, null)
                         DoublyLinkedNodeList.method1879(false)
                     }
-                    MapTileShape.aClass237_Sub1_4197!!.method1685(FacingDirectionNodeStatics.aRenderer6654, (if (!bool_25_) null else (VarpStore.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, TimedRecordAccessor.aCollisionMapArray7108s)
+                    MapTileShape.aClass237_Sub1_4197!!.method1685(FacingDirectionNodeStatics.aRenderer6654, (if (!bool_25_) null else (VarpStore.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, TimedRecordAccessorStatics.aCollisionMapArray7108s)
                     if (WidgetRedrawTracker.anInt3931 == 0) {
                         RegionSceneLoader.method2193(true, (-128).toByte())
                         ObjectSpawnDecoder.method1090(GlRectangleTexture.aByteArrayArray8642, i + 65536, MapTileShape.aClass237_Sub1_4197)
