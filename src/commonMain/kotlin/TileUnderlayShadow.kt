@@ -1,7 +1,7 @@
 /* Class318_Sub8 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class TileUnderlayShadow internal constructor(i: Int, i_0_: Int, var anInt6465: Int, i_2_: Int, i_3_: Int, var aShortArray6461: ShortArray?, var aByteArray6462: ByteArray?) : SceneLinkedListNode() {
+class TileUnderlayShadow(i: Int, i_0_: Int, var anInt6465: Int, i_2_: Int, i_3_: Int, var aShortArray6461: ShortArray?, var aByteArray6462: ByteArray?) : SceneLinkedListNode() {
     var aByte6460: Byte
     var aByte6463: Byte
     var aByte6464: Byte
