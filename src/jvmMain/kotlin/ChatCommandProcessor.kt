@@ -2089,7 +2089,7 @@ object ChatCommandProcessor {
                 val bool_171_ = anIntArray1149!![anInt1173 + 1] == 1
                 val i_172_ = anIntArray1149!![anInt1173 + 2]
                 val bool_173_ = anIntArray1149!![anInt1173 + 3] == 1
-                MinimapPositionState.method2283(bool_173_, 0, i_172_, i_170_, bool_171_)
+                MinimapPositionStateStatics.method2283(bool_173_, 0, i_172_, i_170_, bool_171_)
                 return
             }
             if (i == 6508) {

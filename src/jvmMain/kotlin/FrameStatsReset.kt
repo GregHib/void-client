@@ -164,7 +164,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ScrollbarComponent.anInt8337 = 0
             ShortKeyNodeStatics.anInt6910 = 0
             MapRegionLoaderThread.anInt4203 = 0
-            MinimapPositionState.anInt3836 = 0
+            MinimapPositionStateStatics.anInt3836 = 0
             OpenGlModel.anInt5562 = 0
             RegionSceneShifterStatics.anInt7047 = 0
             LoadingScreenState.anInt2628 = 0
@@ -2412,7 +2412,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SceneObjectEntity.anInt8729 = 0
             OpenGlRenderer.anInt7685 = 0
             PcmStreamBuffer.anInt8875 = 0
-            MinimapPositionState.anInt3841 = 0
+            MinimapPositionStateStatics.anInt3841 = 0
             SkeletalAnimFrameLoader.anInt467 = 0
             ByteBuffer.anInt7202 = 0
             OpenGlRenderer.anInt7547 = 0

@@ -1703,7 +1703,7 @@ class Client : GameAppletFrame() {
                         } else method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)), 2, FacingDirectionNodeStatics.aRenderer6654)
                     } else if (WorldMapRenderer.anInt4674 != 10) {
                         if (WorldMapRenderer.anInt4674 == 13) method3511(false, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3497!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>" + (LocalizedText.aLocalizedText_3498!!.method2063(ChatCommandProcessor.anInt6967, 544))), 2, FacingDirectionNodeStatics.aRenderer6654)
-                    } else MinimapPositionState.method2284((-43).toByte(), l)
+                    } else MinimapPositionStateStatics.method2284((-43).toByte(), l)
                 } else method1761(85)
             } else method1761(85)
             if (NativeRenderer.anInt8045 == 3) {
