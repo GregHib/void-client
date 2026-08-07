@@ -205,7 +205,7 @@ import CubeMapMaterialPass.Companion.method2171
 import ParticleEmitterDef.Companion.method2185
 import ParticleEmitterDefExt.Companion.method2190
 import RegionSceneLoader.method2191
-import MapArchiveSource.Companion.method2202
+import MapArchiveSourceStatics.method2202
 import LoadingBarRenderer.Companion.method2214
 import LocalizedTextTripleStatics.method2223
 import HuffmanCodec.Companion.method2225
@@ -501,7 +501,7 @@ import FrameBufferObject.Companion.method1501
 import FrameStatsReset.Companion.method1131
 import HslAdjustTextureNode.Companion.method3126
 import HslAdjustTextureNode.Companion.method3127
-import MapArchiveSource.Companion.method1365
+import MapArchiveSourceStatics.method1365
 import InputStream_Sub2.Companion.method128
 import InvertTextureNode.Companion.method3134
 import KaraokeSubtitleStream.Companion.method2988
@@ -1414,7 +1414,7 @@ class Client : GameAppletFrame() {
             }
             if (!ScrollbarComponent.aBoolean8335) method661(111.toByte())
             for (i_95_ in 0..99) {
-                if (!MapArchiveSource.method2203((-85).toByte())) break
+                if (!MapArchiveSourceStatics.method2203((-85).toByte())) break
             }
         }
         anInt5174++
@@ -4759,7 +4759,7 @@ class Client : GameAppletFrame() {
             } else {
                 if (!ScrollbarComponent.aBoolean8335) method661(95.toByte())
                 for (i_0_ in 0..99) {
-                    if (!MapArchiveSource.method2203((-52).toByte())) break
+                    if (!MapArchiveSourceStatics.method2203((-52).toByte())) break
                 }
                 if (WorldMapRenderer.anInt4674 == 10) {
                     while (method2138(i xor 0x2ca2)) {

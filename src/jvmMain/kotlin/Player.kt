@@ -480,7 +480,7 @@ class Player : ProjectedGroundDecor() {
         if (bool) i = i or 0x80000
         val class64 =
             (this.aCompositeNpcModelBuilder_10536!!.method1226(aVarpStore_10209, class17_71_, this.aLoadProgressCountersArray10308, true, ClientExceptionStatics.aModelHeaderCache_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, RadialTextureNode.aModelDefinitionLoader_9342, this.anInt10232, var_renderer, MapAreaDefinition.aBufferedMessageQueue_2529, ParticleEmitterNode.aWidgetCache_191, this.anInt10245, this.anInt10267, this.anInt10203, OpenGlModel.aNpcDefinitionCache_5558).also { this.aAbstractModelArray10323[0] = it })
-        val i_75_ = MapArchiveSource.method2201(2121)
+        val i_75_ = MapArchiveSourceStatics.method2201(2121)
         if (TextureDefinitionCache.anInt2964 < 96 && i_75_ > 50) CubemapTextureImplSource.method2271(31268)
         val i_76_ = 3 % ((63 - i_69_) / 47)
         if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolverStatics.aNamedIdRecord_165 && i_75_ < 50) {

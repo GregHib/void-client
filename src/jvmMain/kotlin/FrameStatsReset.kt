@@ -590,7 +590,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ModelDefinitionLoader.anInt2053 = 0
             CacheIndexManager.anInt3954 = 0
             MinimapDrawController.anInt1609 = 0
-            MapArchiveSource.anInt4802 = 0
+            MapArchiveSourceStatics.anInt4802 = 0
             MapSceneIconDef.anInt2850 = 0
             GlRenderDevice.anInt9864 = 0
             InboundPacketHeader.anInt1746 = 0
@@ -1201,7 +1201,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SoundCacheState.anInt4138 = 0
             CachedRgbNoiseTexture.anInt8673 = 0
             SceneEntityModel.anInt6412 = 0
-            MapArchiveSource.anInt4799 = 0
+            MapArchiveSourceStatics.anInt4799 = 0
             RemoveRoofsOptionState.anInt6065 = 0
             KeyEventNode.anInt4762 = 0
             OpenGlRenderer.anInt7595 = 0
@@ -2342,7 +2342,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FlipTextureNode.anInt6390 = 0
             InputStream_Sub1.anInt71 = 0
             SynthVoiceGroup.anInt8859 = 0
-            MapArchiveSource.anInt2355 = 0
+            MapArchiveSourceStatics.anInt2355 = 0
             NullRenderPass.anInt7277 = 0
             RegionSceneShifterStatics.anInt7049 = 0
             CacheLruCache.anInt3879 = 0
@@ -2432,7 +2432,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NpcConfig.anInt870 = 0
             CompassSmoother.anInt3369 = 0
             GrayscaleNoiseTexture.anInt5282 = 0
-            MapArchiveSource.anInt4805 = 0
+            MapArchiveSourceStatics.anInt4805 = 0
             MediaStreamClient.anInt3189 = 0
             LoadProgressCountersStatics.anInt2452 = 0
             BasicGlRenderPass.anInt7307 = 0

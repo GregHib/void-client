@@ -15,7 +15,7 @@ object MinimapStateReset {
         WeaveTextureNode.anInt9282 = 1
         NativeShaderProgram.anInt9775 = -1
         BloomGraphicsOptionState.anInt5973 = 0
-        MapArchiveSource.anInt4803 = -1
+        MapArchiveSourceStatics.anInt4803 = -1
         GlGroundShaderPass.anInt7403 = 0
     }
 

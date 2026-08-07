@@ -35,7 +35,7 @@ class OutgoingPacketNode : LinkedListNode() {
             do {
                 try {
                     ObjectSpawnDecoder.anInt1803 = 0
-                    MapArchiveSource.anInt4797 = SkyboxGradient.anInt3936
+                    MapArchiveSourceStatics.anInt4797 = SkyboxGradient.anInt3936
                     WallEntity.anInt8780 = 0
                     anInt7120++
                     SkyboxGradient.anInt3936 = 0

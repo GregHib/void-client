@@ -669,7 +669,7 @@ object ConfigArchiveLoaderStatics {
                 }
             }
             if (WorldMapRenderer.anInt4674 == 10) {
-                MapArchiveSource.anInt4799++
+                MapArchiveSourceStatics.anInt4799++
                 val class348_sub47 = method2148((FloatCameraTransform.aOutgoingPacketHeader_5699), (TheoraVideoStream.aIsaacCipher_9029), i.toInt() xor 0x24)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string!!.length + 3)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (bool) 1 else 0)

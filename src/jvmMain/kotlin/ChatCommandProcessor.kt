@@ -1233,9 +1233,9 @@ object ChatCommandProcessor {
                 CalendarUtil.anInt4133 = anIntArray1149!![anInt1173 + 3]
                 val i_134_ = anIntArray1149!![anInt1173 + 4]
                 if (i_134_ >= 2) throw RuntimeException()
-                MapArchiveSource.anInt4803 = i_134_
+                MapArchiveSourceStatics.anInt4803 = i_134_
                 val i_135_ = anIntArray1149!![anInt1173 + 5]
-                if (i_135_ + 1 >= (SpriteDefinition.anIntArrayArrayArray7079!![MapArchiveSource.anInt4803]!!).size shr 1) throw RuntimeException()
+                if (i_135_ + 1 >= (SpriteDefinition.anIntArrayArrayArray7079!![MapArchiveSourceStatics.anInt4803]!!).size shr 1) throw RuntimeException()
                 CompassSmoother.anInt3373 = i_135_
                 WeaveTextureNode.anInt9282 = 3
                 SequencedWallEntity.anInt10163 = -1

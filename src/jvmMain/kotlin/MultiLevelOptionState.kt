@@ -105,7 +105,7 @@ class MultiLevelOptionState : GraphicsOptionState {
             GlGroundShaderPass.anInt7403 = 0
             WeaveTextureNode.anInt9282 = 5
             NativeShaderProgram.anInt9775 = -1
-            MapArchiveSource.anInt4803 = -1
+            MapArchiveSourceStatics.anInt4803 = -1
         }
     }
 }
