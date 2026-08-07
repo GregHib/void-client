@@ -16,7 +16,7 @@ object FileExistsConditionStatics {
 
     @JvmStatic
     fun method741(i: Byte) {
-        aFloatArray4772 = null
+        FileExistsCondition.aFloatArray4772 = null
         anIntArray4780 = null
         if (i.toInt() != -128) method743(113, -98)
         InboundPacketHeader.aInboundPacketHeader_4779 = null
