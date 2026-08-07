@@ -344,7 +344,7 @@ import ContactEntry.Companion.method3229
 import InterfaceComponentGroup.Companion.method3237
 import InterfaceComponentGroup.Companion.method3243
 import TimedTileQueueEntry.Companion.method3247
-import AsyncResourceRequest.Companion.method3252
+import AsyncResourceRequestStatics.method3252
 import StreamingResourceRequest.Companion.method3260
 import CompletedResourceRequest.Companion.method3263
 import ParticleEmitterListNode.Companion.method3274
@@ -697,7 +697,7 @@ class Client : GameAppletFrame() {
 //            Class277.aClass137_3568 = null;
 //        }
         if (NpcAnimationResolverStatics.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271) PixelBlender.aBoolean3811 = true
-        AsyncResourceRequest.aString9665 = LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)
+        AsyncResourceRequestStatics.aString9665 = LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)
     }
 
     public override fun method91(i: Byte) {

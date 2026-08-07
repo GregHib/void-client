@@ -3604,7 +3604,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TextureMaterialGroup.anInt9676 = 0
             CubemapTextureImplSource.anInt8709 = 0
             GlRectangleTexture.anInt8649 = 0
-            AsyncResourceRequest.anInt9662 = 0
+            AsyncResourceRequestStatics.anInt9662 = 0
             DirectionalStripeTextureNode.anInt9100 = 0
             GlowPostProcessor.anInt2518 = 0
             MinimapSquareDrawer.anInt5211 = 0
@@ -3695,7 +3695,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NoiseTextureNode.anInt9261 = 0
             LocalizedTextStatics.anInt3477 = 0
             GlTextureBase.anInt5085 = 0
-            AsyncResourceRequest.anInt9668 = 0
+            AsyncResourceRequestStatics.anInt9668 = 0
             WallEntity.anInt8771 = 0
             NativeRenderer.anInt7916 = 0
             EdgeDetectTextureNode.anInt9168 = 0

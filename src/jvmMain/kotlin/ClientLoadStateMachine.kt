@@ -6,7 +6,7 @@ import ModelDefinitionLoader.Companion.method1202
 import OggBitstreamDecoder.Companion.method2965
 import ChatCommandProcessor.method3038
 import DisplaceTextureNode.Companion.method3063
-import AsyncResourceRequest.Companion.method3256
+import AsyncResourceRequestStatics.method3256
 import GlTexture2DRegion.Companion.method3553
 import WorldMapLabel.Companion.method3568
 import ScrollbarComponent.Companion.method184

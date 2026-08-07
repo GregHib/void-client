@@ -12,7 +12,7 @@ import KaraokeSubtitleStream.Companion.method2985
 import ColourKeyTextureNode.Companion.method3119
 import RangeThresholdTextureNode.Companion.method3056
 import EdgeDetectTextureNode.Companion.method3073
-import AsyncResourceRequest.Companion.method3258
+import AsyncResourceRequestStatics.method3258
 import AsyncTaskHandle
 import BufferToggleState
 import StreamingResourceRequest.Companion.method3262

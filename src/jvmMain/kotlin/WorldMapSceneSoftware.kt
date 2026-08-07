@@ -13,7 +13,7 @@ import MidiSequencePlayer.Companion.method2879
 import KaraokeSubtitleStream.Companion.method2987
 import InvertTextureNode.Companion.method3135
 import SourceRowTextureNode.Companion.method3058
-import AsyncResourceRequest.Companion.method3254
+import AsyncResourceRequestStatics.method3254
 import MapSceneRenderer.method388
 import DirectionPath.Companion.method536
 import SolidFillComponent.Companion.method192
@@ -546,7 +546,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     } else {
                         if (i != 1) {
                             if (i == 2) {
-                                AsyncResourceRequest.method3253(i_93_, i_94_, i_95_, ((if (WorldMapSceneSoftware.Companion.aClass5827 != null) WorldMapSceneSoftware.Companion.aClass5827 else (RenderTarget::class.java.also { WorldMapSceneSoftware.Companion.aClass5827 = it }))!!))
+                                AsyncResourceRequestStatics.method3253(i_93_, i_94_, i_95_, ((if (WorldMapSceneSoftware.Companion.aClass5827 != null) WorldMapSceneSoftware.Companion.aClass5827 else (RenderTarget::class.java.also { WorldMapSceneSoftware.Companion.aClass5827 = it }))!!))
                                 if (class51.anInt920 != 0 && (class51.anInt961 + i_94_ < this.anInt3117) && (i_95_ - -class51.anInt961 < this.anInt3114) && (class51.anInt926 + i_94_ < this.anInt3117) && (this.anInt3114 > (i_95_ + class51.anInt926))) collisionMap!!.method3509(i_98_, !class51.aBoolean876, class51.aBoolean896, i_94_, i_95_, class51.anInt926, 84, class51.anInt961)
                                 if (i_97_ != 9) break
                                 if ((0x1 and i_98_) != 0) method2987(i_93_, 16, i_95_, -3951, i_94_)

@@ -715,7 +715,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             } else if (cameraRotationStub == VideoAdChecker.aCameraRotationStub_3181) {
                 i_44_ = 4
                 i_45_ = i * 3
-            } else if (AsyncResourceRequest.aCameraRotationStub_9661 == cameraRotationStub) {
+            } else if (AsyncResourceRequestStatics.aCameraRotationStub_9661 == cameraRotationStub) {
                 i_44_ = 6
                 i_45_ = 2 + i
             } else if (cameraRotationStub == NativeTerrainTile.aCameraRotationStub_8320) {
@@ -807,7 +807,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             } else if (VideoAdChecker.aCameraRotationStub_3181 == cameraRotationStub) {
                 i_52_ = 4
                 i_51_ = i * 3
-            } else if (cameraRotationStub == AsyncResourceRequest.aCameraRotationStub_9661) {
+            } else if (cameraRotationStub == AsyncResourceRequestStatics.aCameraRotationStub_9661) {
                 i_52_ = 6
                 i_51_ = 2 + i
             } else if (NativeTerrainTile.aCameraRotationStub_8320 == cameraRotationStub) {

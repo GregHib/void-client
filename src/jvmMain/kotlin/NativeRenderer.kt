@@ -1225,7 +1225,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         method3926(75.toByte(), false)
         method3925(23, anInterface5_Impl1_8201, 0)
         method3862(0, aModelBatchBase_8190)
-        method3899(256, 0, AsyncResourceRequest.aCameraRotationStub_9661, true)
+        method3899(256, 0, AsyncResourceRequestStatics.aCameraRotationStub_9661, true)
         method3926(41.toByte(), true)
         method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)
         method3849(47.toByte(), 0, LoadingBarRenderer.aTrigLookupTables_4247)
@@ -2246,7 +2246,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     fun method3933(i: Int) {
         anInt7956++
         if (i >= -34) aClass299_Sub2_8171 = null
-        method3860(AsyncResourceRequest.aCameraRotationStub_9661, 2, 8)
+        method3860(AsyncResourceRequestStatics.aCameraRotationStub_9661, 2, 8)
     }
 
     override fun method3628(i: Int, i_268_: Int, i_269_: Int, i_270_: Int, i_271_: Int, i_272_: Int) {

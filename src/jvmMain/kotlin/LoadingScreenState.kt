@@ -73,10 +73,10 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         graphics_3_.setFont(LoadingBarRenderer.aFont4329)
                         graphics_3_.setColor(color_2_)
                         graphics_3_.drawString(string, (i_4_ + (304 - string!!.length * 6) / 2), i_5_ + 22)
-                        if (AsyncResourceRequest.aString9665 != null) {
+                        if (AsyncResourceRequestStatics.aString9665 != null) {
                             graphics_3_.setFont(LoadingBarRenderer.aFont4329)
                             graphics_3_.setColor(color_2_)
-                            graphics_3_.drawString(AsyncResourceRequest.aString9665, (LocTypeDefinition.anInt4017 / 2 - (AsyncResourceRequest.aString9665!!.length * 6 / 2)), -26 + GameDisplayManager.anInt10432 / 2)
+                            graphics_3_.drawString(AsyncResourceRequestStatics.aString9665, (LocTypeDefinition.anInt4017 / 2 - (AsyncResourceRequestStatics.aString9665!!.length * 6 / 2)), -26 + GameDisplayManager.anInt10432 / 2)
                         }
                         graphics.drawImage(LoadingBarRenderer.anImage4249, 0, 0, null)
                     } catch (exception: Exception) {
@@ -93,10 +93,10 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         graphics.fillRect(3 * i + 2 + i_6_, 2 + i_7_, -(i * 3) + 300, 30)
                         graphics.setFont(LoadingBarRenderer.aFont4329)
                         graphics.setColor(color_2_)
-                        if (AsyncResourceRequest.aString9665 != null) {
+                        if (AsyncResourceRequestStatics.aString9665 != null) {
                             graphics.setFont(LoadingBarRenderer.aFont4329)
                             graphics.setColor(color_2_)
-                            graphics.drawString(AsyncResourceRequest.aString9665, (LocTypeDefinition.anInt4017 / 2 + -(6 * AsyncResourceRequest.aString9665!!.length / 2)), GameDisplayManager.anInt10432 / 2 - 26)
+                            graphics.drawString(AsyncResourceRequestStatics.aString9665, (LocTypeDefinition.anInt4017 / 2 + -(6 * AsyncResourceRequestStatics.aString9665!!.length / 2)), GameDisplayManager.anInt10432 / 2 - 26)
                         }
                         graphics.drawString(string, i_6_ - -((304 + -(string!!.length * 6)) / 2), 22 + i_7_)
                     }

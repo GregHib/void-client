@@ -781,7 +781,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
             if (GlBloomEffect.aCameraRotationStub_8832 == cameraRotationStub) return 3
             if (LocTypeConfig.aCameraRotationStub_3572 == cameraRotationStub) return 1
             if (cameraRotationStub == VideoAdChecker.aCameraRotationStub_3181) return 4
-            if (AsyncResourceRequest.aCameraRotationStub_9661 == cameraRotationStub) return 6
+            if (AsyncResourceRequestStatics.aCameraRotationStub_9661 == cameraRotationStub) return 6
             if (cameraRotationStub == NativeTerrainTile.aCameraRotationStub_8320) return 5
             throw IllegalArgumentException("")
         }
