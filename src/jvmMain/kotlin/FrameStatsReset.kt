@@ -3033,7 +3033,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             VarpStore.anInt5072 = 0
             GameClock.anInt1112 = 0
             GameAppletFrame.anInt10 = 0
-            WorldListEntry.anInt309 = 0
+            WorldListEntryStatics.anInt309 = 0
             WorldMapScene.anInt3107 = 0
             OpenGlRenderer.anInt7539 = 0
             NpcDefinitionCache.anInt3316 = 0
@@ -3578,7 +3578,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WorldMapScene.anInt3102 = 0
             ModelGroundDecor.anInt10009 = 0
             Js5Archive.anInt638 = 0
-            WorldListEntry.anInt305 = 0
+            WorldListEntryStatics.anInt305 = 0
             TwoStateOptionState.anInt6134 = 0
             AbstractModel.anInt1130 = 0
             Client.anInt5187 = 0
@@ -3961,7 +3961,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ModelWallEntity.anInt10119 = 0
             Direct3dModel.anInt5483 = 0
             SpotAnimEntity.anInt6440 = 0
-            WorldListEntry.anInt307 = 0
+            WorldListEntryStatics.anInt307 = 0
             NativeRenderer.anInt7966 = 0
             SequencedActorEntity.anInt10099 = 0
             OpenGlRenderer.anInt7651 = 0

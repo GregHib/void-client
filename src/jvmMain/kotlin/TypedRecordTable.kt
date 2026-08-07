@@ -1,5 +1,5 @@
 import HeadIconRendererStatics.method1211
-import WorldListEntry.Companion.method285
+import WorldListEntryStatics.method285
 import java.util.zip.CRC32
 import kotlin.math.atan2
 import kotlin.math.cos

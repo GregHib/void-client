@@ -1,0 +1,16 @@
+/* Class19 - Decompiled by JODE
+* Visit http://jode.sourceforge.net/
+*/
+class WorldListEntry {
+
+    var aString306: String? = null
+
+    var anInt308: Int = 0
+
+    var aByte310: Byte = 0
+    var aString312: String? = null
+
+    var aString313: String? = null
+
+    var aString314: String? = null
+}

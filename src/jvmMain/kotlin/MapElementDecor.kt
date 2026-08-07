@@ -240,7 +240,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
             anInt10344++
             if (!privilegedOperationWorker.method2247(-4)) return null
             if (i_7_ == 0) {
-                val class57s = WorldListEntry.method286((-49).toByte(), privilegedOperationWorker)
+                val class57s = WorldListEntryStatics.method286((-49).toByte(), privilegedOperationWorker)
                 if (class57s == null) return null
                 var bool = false
                 var i_10_ = 0

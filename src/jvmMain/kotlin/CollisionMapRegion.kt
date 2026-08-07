@@ -1,5 +1,5 @@
 import Gl2dTexture.Companion.method239
-import WorldListEntry.Companion.method285
+import WorldListEntryStatics.method285
 import TwoStateOptionState.Companion.method1843
 import kotlin.random.Random
 

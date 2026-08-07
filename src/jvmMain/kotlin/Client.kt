@@ -89,7 +89,7 @@ import PerlinTextureProvider.Companion.method1400
 import LocTypeDefLoader.Companion.method1407
 import GlowPostProcessor.Companion.method1411
 import GlowPostProcessor.Companion.method1416
-import WorldListEntry.Companion.method284
+import WorldListEntryStatics.method284
 import ModelLightingConfig.Companion.method1426
 import AsyncTaskHandle.Companion.method1438
 import TextureHandle.Companion.method1440
