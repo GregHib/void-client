@@ -4,7 +4,7 @@ import WhirlpoolHash.Companion.method1166
 import OrientationRotator.method1201
 import SceneTilePlaneManager.method258
 import ClickFeedbackTask.Companion.method1353
-import HudTabPanel.Companion.method1639
+import HudTabPanelStatics.method1639
 import RemoveRoofsOptionState.Companion.method1810
 import GlTexture2D.Companion.method1966
 import ScrollTexMaterialPass.Companion.method2168

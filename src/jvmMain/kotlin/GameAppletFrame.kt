@@ -282,7 +282,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         if (EdgeDetectTextureNode.anGameApplet_Frame_9169 === this && !SpriteArchiveLoader.aBoolean384) {
             CameraNodeListStatics.aLong1739 = GameClock.method599(-108)
             TexGenMaterialPass.method2161(77.toByte(), 5000L)
-            HudTabPanel.aPrivilegedOperationWorker_2993 = null
+            HudTabPanelStatics.aPrivilegedOperationWorker_2993 = null
             method90(false, false)
         }
     }
@@ -372,7 +372,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 EdgeDetectTextureNode.anGameApplet_Frame_9169 = this
                 FacingDirectionNodeStatics.anApplet6662 = JagGlToolkitFactory.anApplet1530
                 VorbisOggDecoder.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i_17_, string, i_18_, JagGlToolkitFactory.anApplet1530 != null)
-                HudTabPanel.aPrivilegedOperationWorker_2993 = VorbisOggDecoder.aPrivilegedOperationWorker_8992
+                HudTabPanelStatics.aPrivilegedOperationWorker_2993 = VorbisOggDecoder.aPrivilegedOperationWorker_8992
                 val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2236(this, -10240, 1)
                 if (i_19_ != 50) anInt37 = -13
                 while (class144.anInt1997 == 0) TexGenMaterialPass.method2161((-126).toByte(), 10L)
@@ -408,7 +408,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
             RsaVarbitHandler.aFrame4904!!.setSize(insets.right + (insets.left + SocketFactory.anInt3473), (insets.bottom + (NpcReference.anInt6857 + insets.top)))
             VorbisOggDecoder.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i, string, i_22_, true)
-            HudTabPanel.aPrivilegedOperationWorker_2993 = VorbisOggDecoder.aPrivilegedOperationWorker_8992
+            HudTabPanelStatics.aPrivilegedOperationWorker_2993 = VorbisOggDecoder.aPrivilegedOperationWorker_8992
             val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2236(this, i_23_ + -33739, 1)
             while (class144.anInt1997 == 0) TexGenMaterialPass.method2161(21.toByte(), 10L)
         } catch (exception: Exception) {

@@ -45,8 +45,8 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
         fun method2270(i: Int, i_4_: Int, var_renderer: Renderer?, string: String?, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int) {
             try {
                 if (ChatMessageStream.aAbstractModelRenderer_106 == null || MinimapFlagRenderer.aAbstractModelRenderer_1800 == null) {
-                    if (CameraRotationStubStatics.aJs5Archive_322!!.method421(false, HudTabPanel.anInt2996) && CameraRotationStubStatics.aJs5Archive_322!!.method421(false, CombineTextureNode.anInt9231)) {
-                        ChatMessageStream.aAbstractModelRenderer_106 = (var_renderer!!.method3691(SpriteImage.method1521(CameraRotationStubStatics.aJs5Archive_322!!, HudTabPanel.anInt2996, 0), true))
+                    if (CameraRotationStubStatics.aJs5Archive_322!!.method421(false, HudTabPanelStatics.anInt2996) && CameraRotationStubStatics.aJs5Archive_322!!.method421(false, CombineTextureNode.anInt9231)) {
+                        ChatMessageStream.aAbstractModelRenderer_106 = (var_renderer!!.method3691(SpriteImage.method1521(CameraRotationStubStatics.aJs5Archive_322!!, HudTabPanelStatics.anInt2996, 0), true))
                         val spriteImage = SpriteImage.method1521(CameraRotationStubStatics.aJs5Archive_322!!, CombineTextureNode.anInt9231, 0)
                         MinimapFlagRenderer.aAbstractModelRenderer_1800 = var_renderer.method3691(spriteImage, true)
                         spriteImage!!.method1518()

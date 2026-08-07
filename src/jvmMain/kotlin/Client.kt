@@ -119,7 +119,7 @@ import TextureDefinitionCache.Companion.method1624
 import BoxedIntHolderStatics.method1627
 import NativeLibraryUnloader.method1628
 import RenderConfigFactoryStatics.method1632
-import HudTabPanel.Companion.method1641
+import HudTabPanelStatics.method1641
 import TerrainTileGeometry.Companion.method1645
 import ParticleSortRenderer.Companion.method1653
 import SceneObjectAnimator.Companion.method1673

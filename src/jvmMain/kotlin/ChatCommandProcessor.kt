@@ -1115,14 +1115,14 @@ object ChatCommandProcessor {
                 NpcConfig.anInt948 = anIntArray1149!![anInt1173 + 1]
                 CompassSmoother.anInt3374 = anIntArray1149!![anInt1173 + 2]
                 ShortMatrixNode.anInt9511 = anIntArray1149!![anInt1173 + 3]
-                HudTabPanel.anInt2996 = anIntArray1149!![anInt1173 + 4]
+                HudTabPanelStatics.anInt2996 = anIntArray1149!![anInt1173 + 4]
                 CombineTextureNode.anInt9231 = anIntArray1149!![anInt1173 + 5]
                 ProjectedGroundDecor.anInt10257 = anIntArray1149!![anInt1173 + 6]
                 SkyboxGradient.anInt3937 = anIntArray1149!![anInt1173 + 7]
                 NpcType.anInt1387 = anIntArray1149!![anInt1173 + 8]
                 CharCodeMap.anInt9586 = anIntArray1149!![anInt1173 + 9]
                 SolidFillComponent.anInt8363 = anIntArray1149!![anInt1173 + 10]
-                CameraRotationStubStatics.aJs5Archive_322!!.method421(false, HudTabPanel.anInt2996)
+                CameraRotationStubStatics.aJs5Archive_322!!.method421(false, HudTabPanelStatics.anInt2996)
                 CameraRotationStubStatics.aJs5Archive_322!!.method421(false, CombineTextureNode.anInt9231)
                 CameraRotationStubStatics.aJs5Archive_322!!.method421(false, ProjectedGroundDecor.anInt10257)
                 CameraRotationStubStatics.aJs5Archive_322!!.method421(false, SkyboxGradient.anInt3937)

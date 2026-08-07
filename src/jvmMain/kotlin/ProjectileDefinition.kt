@@ -1,6 +1,6 @@
 import GlArrayBufferObject.Companion.method1153
 import HeapInfoRecord.Companion.method1248
-import HudTabPanel.Companion.method1642
+import HudTabPanelStatics.method1642
 import WaterMaterialPass.Companion.method2148
 import GameClock.method596
 

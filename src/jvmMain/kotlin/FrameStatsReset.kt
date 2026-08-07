@@ -159,7 +159,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DataHolderStatics.anInt3656 = 0
             CellNoiseTextureNode.anInt9295 = 0
             AbstractModel.anInt1132 = 0
-            HudTabPanel.anInt2990 = 0
+            HudTabPanelStatics.anInt2990 = 0
             StringValueNodeStatics.anInt7114 = 0
             ScrollbarComponent.anInt8337 = 0
             ShortKeyNodeStatics.anInt6910 = 0
@@ -2036,7 +2036,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FixedFunctionWaterPass.anInt7354 = 0
             NamedIdEntryStatics.anInt6886 = 0
             GlWaterRenderPass.anInt7286 = 0
-            HudTabPanel.anInt2994 = 0
+            HudTabPanelStatics.anInt2994 = 0
             MapAreaDefinition.anInt2532 = 0
             Npc.anInt10514 = 0
             HuffmanCodec.anInt3765 = 0
@@ -2732,7 +2732,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RegionMapDecoder.anInt1513 = 0
             IdleAnimationsOptionState.anInt5906 = 0
             SceneryDetailOptionState.anInt6090 = 0
-            HudTabPanel.anInt2997 = 0
+            HudTabPanelStatics.anInt2997 = 0
             RenderConfigFactoryStatics.anInt2980 = 0
             GlTextureBase.anInt5094 = 0
             Player.anInt10528 = 0
