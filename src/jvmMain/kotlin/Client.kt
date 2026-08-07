@@ -289,7 +289,7 @@ import MidiSequencePlayer.Companion.method2871
 import InterfaceBounds.Companion.method2941
 import TerrainTileShape.Companion.method2728
 import TextureTileRenderer.Companion.method2950
-import CameraSplineNode.Companion.method2956
+import CameraSplineNodeStatics.method2956
 import OggBitstreamDecoder.Companion.method2962
 import TheoraVideoStream.Companion.method2974
 import NullOggStream.Companion.method2981
@@ -1466,7 +1466,7 @@ class Client : GameAppletFrame() {
         }
         if (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0) {
             if (WeaveTextureNode.anInt9282 == 2) method241(127.toByte())
-            else CameraSplineNode.method2954((-127).toByte())
+            else CameraSplineNodeStatics.method2954((-127).toByte())
             if (GlslMaterialPass.anInt6246 shr 9 < 14 || (GlslMaterialPass.anInt6246 shr 9 >= -14 + GlCubemapLightPass.anInt7319) || (CompositeRgbNoiseTexture.anInt8685 shr 9 < 14) || (RangeThresholdTextureNode.anInt9109 + -14 <= CompositeRgbNoiseTexture.anInt8685 shr 9)) AbstractCameraTransformStatics.method893((-49).toByte())
         }
         if (i.toInt() != 112) anInt5171 = 22
@@ -4349,11 +4349,11 @@ class Client : GameAppletFrame() {
                     ByteArrayPool.anInt496 = 0
                     MinimapShapeDrawer.aString863 = null
                     HostPingThread.aWorldListEntryArray2261 = null
-                    CameraSplineNode.aString6854 = null
+                    CameraSplineNodeStatics.aString6854 = null
                     InboundPacketHeader.aInboundPacketHeader_6584 = null
                     return true
                 }
-                CameraSplineNode.aString6854 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readString((-112).toByte())
+                CameraSplineNodeStatics.aString6854 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readString((-112).toByte())
                 var bool_233_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 if (bool_233_) CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readString(108.toByte())
                 val l = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readLong(-456577760)
@@ -4902,7 +4902,7 @@ class Client : GameAppletFrame() {
                     }
                     if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null) {
                         if (WeaveTextureNode.anInt9282 == 2) method241(127.toByte())
-                        else if (WeaveTextureNode.anInt9282 == 3) CameraSplineNode.Companion.method2954((-4).toByte())
+                        else if (WeaveTextureNode.anInt9282 == 3) CameraSplineNodeStatics.method2954((-4).toByte())
                     }
                     if (!KeyboardLayoutConfig.aBoolean2130) CircleDrawer.aFloat2687 /= 2.0f
                     else KeyboardLayoutConfig.aBoolean2130 = false

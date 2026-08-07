@@ -4415,10 +4415,10 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 3625) {
-                    if (CameraSplineNode.aString6854 == null) {
+                    if (CameraSplineNodeStatics.aString6854 == null) {
                         aStringArray1152!![anInt1170++] = ""
                         return
-                    } else aStringArray1152!![anInt1170++] = CameraSplineNode.aString6854
+                    } else aStringArray1152!![anInt1170++] = CameraSplineNodeStatics.aString6854
                     return
                 }
                 if (i == 3626) {

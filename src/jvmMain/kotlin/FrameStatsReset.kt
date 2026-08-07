@@ -3685,7 +3685,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WorldMapElement.anInt4639 = 0
             PackedFlagsAccessor.anInt7099 = 0
             ConnectionStateType.anInt1022 = 0
-            CameraSplineNode.anInt6856 = 0
+            CameraSplineNodeStatics.anInt6856 = 0
             Renderer.anInt4569 = 0
             MouseInputTracker.anInt7451 = 0
             MediaStreamClient.anInt3185 = 0
