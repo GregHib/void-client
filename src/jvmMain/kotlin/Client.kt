@@ -281,7 +281,7 @@ import DragDropControllerStatics.method2708
 import VorbisAudioDecoder.Companion.method2785
 import KeyEventNode.Companion.method2796
 import BoundingBoxNode.Companion.method2798
-import LongKeyNode.Companion.method2805
+import LongKeyNodeStatics.method2805
 import MenuActionNode.Companion.method2810
 import SynthVoiceGroup.Companion.method2823
 import PcmStreamBuffer.Companion.method2830

@@ -48,7 +48,7 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
         if (hitsplatDefinition != null) return hitsplatDefinition
         val `is`: ByteArray?
         withLock(aJs5Archive_2597!!) {
-            `is` = aJs5Archive_2597.method410(i_4_ xor 0x743, method1359(true, i), LongKeyNode.method2806(false, i))
+            `is` = aJs5Archive_2597.method410(i_4_ xor 0x743, method1359(true, i), LongKeyNodeStatics.method2806(false, i))
         }
         hitsplatDefinition = HitsplatDefinition()
         if (i_4_ != -1) return null

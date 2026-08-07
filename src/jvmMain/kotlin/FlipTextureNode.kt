@@ -708,7 +708,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                             class348_sub35 = ModelWallEntity.aNodeDeque_10125!!.method1990(92.toByte()) as? IntKeyNode
                         }
                         var i_14_ = 0
-                        while ((LongKeyNode.anInt9479 > i_14_)) {
+                        while ((LongKeyNodeStatics.anInt9479 > i_14_)) {
                             val i_15_ = (MenuActionNode.anIntArray6770!![i_14_] * 4 - -2 - i_4_ / 128)
                             val i_16_ = (-(i_3_ / 128) + BoxBlurTextureNode.anIntArray9458!![i_14_] * 4 - -2)
                             var npcConfig: NpcConfig? = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, SeqDefinitionCache.anIntArray3347!![i_14_]))

@@ -70,7 +70,7 @@ object ClientLoadStateMachine {
             if (SizeBoundedSoftCache.aRsaPacketDecoder_2327 == null) SizeBoundedSoftCache.aRsaPacketDecoder_2327 = RsaPacketDecoder(ClientMachineInfo.aMediaStreamClient_6601, GlShaderObjectHandle.aScriptCompilerThread_520, RsaVarbitHandler.aBigInteger4896, TimedTileQueueEntry.aBigInteger9657)
             if (!SizeBoundedSoftCache.aRsaPacketDecoder_2327!!.method2674(7)) return 0
             method2965(null, 0, true, 0)
-            ScrollTexMaterialPass.aBoolean6289 = !LongKeyNode.method2804((-63).toByte())
+            ScrollTexMaterialPass.aBoolean6289 = !LongKeyNodeStatics.method2804((-63).toByte())
             ScrollTexMaterialPass.aJs5Archive_6277 = WorldMapTextLabel.method3571(false, (if (ScrollTexMaterialPass.aBoolean6289) 34 else 32), (-23).toByte(), 1)
             SpriteRgbTextureNode.aJs5Archive_10426 = WorldMapTextLabel.method3571(false, 33, (-23).toByte(), 1)
             SoftwareSpriteRaster.aJs5Archive_1627 = WorldMapTextLabel.method3571(false, 13, (-23).toByte(), 1)

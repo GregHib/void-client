@@ -320,7 +320,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9812 = 0
             WidgetComponent.anInt783 = 0
             NativeRenderer.anInt8012 = 0
-            LongKeyNode.anInt6761 = 0
+            LongKeyNodeStatics.anInt6761 = 0
             WallEntity.anInt8774 = 0
             ModelDefinition.anInt1869 = 0
             GroundDecorSceneEntity.anInt9996 = 0
@@ -971,7 +971,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ChatEffectsOptionState.anInt5859 = 0
             ConfigDefinitionLoader.anInt2085 = 0
             OpenGlModel.anInt5534 = 0
-            LongKeyNode.anInt6765 = 0
+            LongKeyNodeStatics.anInt6765 = 0
             ModelGroundDecor.anInt10031 = 0
             CacheArchiveIndex.anInt1773 = 0
             GlWaterRenderPass.anInt7295 = 0
@@ -2206,7 +2206,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MapElementDecor.anInt10360 = 0
             Js5Archive.anInt641 = 0
             Client.anInt9509 = 0
-            LongKeyNode.anInt6763 = 0
+            LongKeyNodeStatics.anInt6763 = 0
             NpcType.anInt1389 = 0
             DirectionPath.anInt1063 = 0
             BrightnessTextureNode.anInt9218 = 0
@@ -3131,7 +3131,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CompositeNpcModelBuilder.anInt2099 = 0
             SphereMapMaterialPass.anInt6318 = 0
             TileSceneEntity.anInt8726 = 0
-            LongKeyNode.anInt6760 = 0
+            LongKeyNodeStatics.anInt6760 = 0
             GlRenderDevice.anInt9830 = 0
             NodeDeque.anInt3327 = 0
             AbstractCameraTransformStatics.anInt1599 = 0

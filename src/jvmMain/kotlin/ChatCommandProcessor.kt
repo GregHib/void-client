@@ -249,7 +249,7 @@ object ChatCommandProcessor {
                 if (MapSceneTileStatics.aBoxedIntHolder_1055 == null) MapSceneTileStatics.aBoxedIntHolder_1055 = MinimapRenderer.aBoxedIntHolder_1591
                 BufferToggleState.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
-                val class348_sub47 = method2148(LongKeyNode.aOutgoingPacketHeader_6766, (TheoraVideoStream.aIsaacCipher_9029), -111)
+                val class348_sub47 = method2148(LongKeyNodeStatics.aOutgoingPacketHeader_6766, (TheoraVideoStream.aIsaacCipher_9029), -111)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, ShaderProgramStatics.anInt7276)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, MapSceneTileStatics.aBoxedIntHolder_1055!!.anInt2970)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, BufferToggleState.anInt3713)
@@ -3799,7 +3799,7 @@ object ChatCommandProcessor {
                     var i_304_ = 0
                     if (method468(string, 73)) i_304_ = RegionSceneShifterStatics.method3156(true, string)
                     anInt1163++
-                    val class348_sub47 = method2148((LongKeyNode.aOutgoingPacketHeader_6764), (TheoraVideoStream.aIsaacCipher_9029), -112)
+                    val class348_sub47 = method2148((LongKeyNodeStatics.aOutgoingPacketHeader_6764), (TheoraVideoStream.aIsaacCipher_9029), -112)
                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(102.toByte(), i_304_)
                     InterfaceComponentGroup.method3243(116, class348_sub47)
                     return

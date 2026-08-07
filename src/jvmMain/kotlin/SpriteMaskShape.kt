@@ -455,7 +455,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                         val l = (class348_sub42_sub12.aLong9605)
                         if (i_76_ == 19) {
                             if (AsyncTaskHandle.anInt2581 <= 0 || !LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(82, -125) || !LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -126)) {
-                                val class348_sub47 = LongKeyNode.method2807(i_75_, i_74_, (-110).toByte(), i_77_)!!
+                                val class348_sub47 = LongKeyNodeStatics.method2807(i_75_, i_74_, (-110).toByte(), i_77_)!!
                                 if (i_77_ == 1) {
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, -1)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, -1)
