@@ -120,7 +120,7 @@ object ClientLoadStateMachine {
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1030) {
             CameraRotationStubStatics.aJs5Archive_322 = WorldMapTextLabel.method3571(false, 8, (-23).toByte(), 1)
             ShortKeyNodeStatics.aJs5Archive_6909 = WorldMapTextLabel.method3571(false, 0, (-23).toByte(), 1)
-            TextureGenerator.aJs5Archive_2490 = WorldMapTextLabel.method3571(false, 1, (-23).toByte(), 1)
+            TextureGeneratorStatics.aJs5Archive_2490 = WorldMapTextLabel.method3571(false, 1, (-23).toByte(), 1)
             DirectionUtil.aJs5Archive_1541 = WorldMapTextLabel.method3571(false, 2, (-23).toByte(), 1)
             ClientLoadStateMachine.aJs5Archive_6980 = WorldMapTextLabel.method3571(false, 3, (-23).toByte(), 1)
             ClientLoadStateMachine.aJs5Archive_1878 = WorldMapTextLabel.method3571(false, 4, (-23).toByte(), 1)
@@ -195,7 +195,7 @@ object ClientLoadStateMachine {
             MapAreaDefinition.aBufferedMessageQueue_2529 = BufferedMessageQueue(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, FloatGridStatics.aJs5Archive_4975, RasterSpriteStatics.aJs5Archive_5207)
             ClientExceptionStatics.aModelHeaderCache_112 = ModelHeaderCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, true, ProjectionCameraTransform.aEmoteDefCache_5764, ScriptOpcodeHolder.aJs5Archive_2306, RasterSpriteStatics.aJs5Archive_5207)
             TheoraVideoStream.aLocTypeDefLoader_9036 = LocTypeDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            ParticleEmitterNode.aWidgetCache_191 = WidgetCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, OpenGlRenderNode.aJs5Archive_10480, ShortKeyNodeStatics.aJs5Archive_6909, TextureGenerator.aJs5Archive_2490)
+            ParticleEmitterNode.aWidgetCache_191 = WidgetCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, OpenGlRenderNode.aJs5Archive_10480, ShortKeyNodeStatics.aJs5Archive_6909, TextureGeneratorStatics.aJs5Archive_2490)
             Client.aMapSceneCache_413 = MapSceneCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             HoverActionEntryStatics.aSpriteStore_1813 = SpriteStore(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             ConstantColourTextureNode.aMapElementDefinitionCache_9245 = MapElementDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, BufferedRandomAccessFile.aJs5Archive_1322, RasterSpriteStatics.aJs5Archive_5207)

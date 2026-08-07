@@ -26,9 +26,9 @@ object LocalPlayerState {
         try {
             anInt1908++
             OpenGlModel.aString5600 = string
-            TextureGenerator.aString2496 = string_0_
+            TextureGeneratorStatics.aString2496 = string_0_
             ProjectedGroundDecor.aBoolean10238 = bool
-            if (!ProjectedGroundDecor.aBoolean10238 && (OpenGlModel.aString5600 == "" || TextureGenerator.aString2496 == "")) GlRectangleTexture.method254(3, (-100).toByte())
+            if (!ProjectedGroundDecor.aBoolean10238 && (OpenGlModel.aString5600 == "" || TextureGeneratorStatics.aString2496 == "")) GlRectangleTexture.method254(3, (-100).toByte())
             else {
                 val i_1_ = 34 % ((16 - i) / 55)
                 if (BloomGraphicsOptionState.anInt5969 != 1) {

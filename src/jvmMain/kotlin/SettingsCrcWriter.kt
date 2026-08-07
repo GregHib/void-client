@@ -14,7 +14,7 @@ object SettingsCrcWriter {
         if (i < 10) aAbstractCameraTransform_2123 = null
         class348_sub49_sub2.writeInt(121.toByte(), ShortKeyNodeStatics.aJs5Archive_6909!!.method389(26))
         anInt2121++
-        class348_sub49_sub2.writeInt(112.toByte(), TextureGenerator.aJs5Archive_2490!!.method389(-106))
+        class348_sub49_sub2.writeInt(112.toByte(), TextureGeneratorStatics.aJs5Archive_2490!!.method389(-106))
         class348_sub49_sub2.writeInt(118.toByte(), DirectionUtil.aJs5Archive_1541!!.method389(-109))
         class348_sub49_sub2.writeInt(120.toByte(), ClientLoadStateMachine.aJs5Archive_6980!!.method389(-108))
         class348_sub49_sub2.writeInt(93.toByte(), ClientLoadStateMachine.aJs5Archive_1878!!.method389(-104))

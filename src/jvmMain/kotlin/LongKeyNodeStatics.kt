@@ -50,7 +50,7 @@ object LongKeyNodeStatics {
         anInt6761++
         var class348_sub47: OutgoingPacketNode? = null
         if (i_4_ == 0) {
-            class348_sub47 = method2148(TextureGenerator.aOutgoingPacketHeader_2495, TheoraVideoStream.aIsaacCipher_9029, -100)
+            class348_sub47 = method2148(TextureGeneratorStatics.aOutgoingPacketHeader_2495, TheoraVideoStream.aIsaacCipher_9029, -100)
             StringValueNodeStatics.anInt7112++
         }
         if (i_4_ == 1) {

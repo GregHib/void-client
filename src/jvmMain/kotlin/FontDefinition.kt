@@ -100,7 +100,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
         try {
             anInt1990++
             if (i_12_ == i) i_12_ = this.anInt1992
-            val i_14_ = method1188(string, intArrayOf(i_13_), TextureGenerator.aStringArray2494, 87.toByte(), abstractModelRenderers)
+            val i_14_ = method1188(string, intArrayOf(i_13_), TextureGeneratorStatics.aStringArray2494, 87.toByte(), abstractModelRenderers)
             val i_15_ = (-1 + i_14_) * i_12_
             return (this.anInt1988 + (i_15_ + this.anInt1993))
         } catch (runtimeexception: RuntimeException) {
@@ -166,12 +166,12 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
     fun method1187(string: String?, bool: Boolean, i: Int, abstractModelRenderers: Array<AbstractModelRenderer?>?): Int {
         try {
             anInt1984++
-            val i_22_ = method1188(string, intArrayOf(i), TextureGenerator.aStringArray2494, 87.toByte(), abstractModelRenderers)
+            val i_22_ = method1188(string, intArrayOf(i), TextureGeneratorStatics.aStringArray2494, 87.toByte(), abstractModelRenderers)
             var i_23_ = 0
             if (bool != false) this.anInt1988 = -58
             var i_24_ = 0
             while (i_22_ > i_24_) {
-                val i_25_ = method1186(TextureGenerator.aStringArray2494!![i_24_], abstractModelRenderers, false)
+                val i_25_ = method1186(TextureGeneratorStatics.aStringArray2494!![i_24_], abstractModelRenderers, false)
                 if (i_25_ > i_23_) i_23_ = i_25_
                 i_24_++
             }
@@ -319,7 +319,7 @@ class FontDefinition internal constructor(`is`: ByteArray?) {
         try {
             anInt1983++
             if (i != 1) this.anInt1992 = -13
-            return method1188(string, intArrayOf(i_42_), TextureGenerator.aStringArray2494, 87.toByte(), abstractModelRenderers)
+            return method1188(string, intArrayOf(i_42_), TextureGeneratorStatics.aStringArray2494, 87.toByte(), abstractModelRenderers)
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("oea.B(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_42_ + ')'))
         }

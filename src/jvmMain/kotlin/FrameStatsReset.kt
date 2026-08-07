@@ -2776,7 +2776,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GroundDecorSceneEntity.anInt9973 = 0
             WaterMaterialPass.anInt6216 = 0
             ConfigVarProgress.anInt4823 = 0
-            TextureGenerator.anInt2493 = 0
+            TextureGeneratorStatics.anInt2493 = 0
             DefaultGraphicsOptionState.anInt6132 = 0
             GlRenderDevice.anInt9838 = 0
             AwtKeyboardListener.anInt6538 = 0
@@ -4170,7 +4170,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             for (l1 in 0..24) {
                 ServerConnectionInfo.anIntArray2145!![l1] = 0
                 ChatCommandProcessor.anIntArray3295!![l1] = 0
-                TextureGenerator.anIntArray2497!![l1] = 0
+                TextureGeneratorStatics.anIntArray2497!![l1] = 0
             }
 
             method773(true)

@@ -258,7 +258,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     anInt3720 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
                     HuffmanCodec.aBoolean3767 = TextureDefinitionCache.anInt2964 >= 96
                     WorldMapLabel.aBoolean4972 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2
-                    TextureGenerator.aBoolean2492 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(i + -32350) == 1
+                    TextureGeneratorStatics.aBoolean2492 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(i + -32350) == 1
                     ChatMessageStream.anInt101 = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) -1 else ParticleSystemState.anInt2204
                     IOException_Sub1.aBoolean86 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1
                     NanoTimerStatics.aBoolean845 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i xor 0x7e5d.inv()) == 1

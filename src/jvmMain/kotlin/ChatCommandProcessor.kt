@@ -1336,7 +1336,7 @@ object ChatCommandProcessor {
                 val i_143_ = anIntArray1149!![--anInt1173]
                 if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
                     OpenGlModel.aString5600 = string
-                    TextureGenerator.aString2496 = string_142_
+                    TextureGeneratorStatics.aString2496 = string_142_
                     TextureLoadExceptionStatics.anInt4596 = i_143_
                     ByteBufferStatics.method3379(2, 6)
                     return
@@ -1418,7 +1418,7 @@ object ChatCommandProcessor {
                         Client.aAbstractGameSocket_9165 = null
                     }
                     OpenGlModel.aString5600 = string
-                    TextureGenerator.aString2496 = string_145_
+                    TextureGeneratorStatics.aString2496 = string_145_
                     ByteBufferStatics.method3379(2, 5)
                     return
                 }
@@ -3981,7 +3981,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3307) {
                     val i_326_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = TextureGenerator.anIntArray2497!![i_326_]
+                    anIntArray1149!![anInt1173++] = TextureGeneratorStatics.anIntArray2497!![i_326_]
                     return
                 }
                 if (i == 3308) {

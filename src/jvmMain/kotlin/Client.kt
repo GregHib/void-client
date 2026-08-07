@@ -84,7 +84,7 @@ import LoadProgressCountersStatics.method1375
 import ParticleDefLoader.Companion.method1378
 import ScanlineRasterFiller.Companion.method1386
 import MapSceneDefLoader.Companion.method1395
-import TextureGenerator.Companion.method1396
+import TextureGeneratorStatics.method1396
 import PerlinTextureProvider.Companion.method1400
 import LocTypeDefLoader.Companion.method1407
 import GlowPostProcessor.Companion.method1411
@@ -513,7 +513,7 @@ import ShadowQualityOptionState.Companion.method1788
 import SkeletalAnimFrameLoader.Companion.method349
 import SkyboxGradient.method2334
 import SocketFactory.Companion.method2049
-import TextureGenerator.Companion.method1397
+import TextureGeneratorStatics.method1397
 import TileSceneEntity.Companion.method2396
 import TwoStateOptionState.Companion.method1844
 import WhirlpoolHash.Companion.method1166
@@ -3714,7 +3714,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (InboundPacketHeader.aInboundPacketHeader_6058 == InboundPacketHeader.aInboundPacketHeader_6584) {
-                method128(TextureGenerator.aRgbColorPalette_2491, 8.toByte())
+                method128(TextureGeneratorStatics.aRgbColorPalette_2491, 8.toByte())
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
@@ -4248,7 +4248,7 @@ class Client : GameAppletFrame() {
                 val i = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(20.toByte())
                 val i_214_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 val i_215_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
-                TextureGenerator.anIntArray2497!![i_214_] = i_215_
+                TextureGeneratorStatics.anIntArray2497!![i_214_] = i_215_
                 ServerConnectionInfo.anIntArray2145!![i_214_] = i
                 anIntArray3295!![i_214_] = 1
                 val i_216_ = FireParticleStream.anIntArray100!![i_214_] + -1

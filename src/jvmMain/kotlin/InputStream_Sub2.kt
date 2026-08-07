@@ -277,7 +277,7 @@ class InputStream_Sub2 : InputStream() {
                             class318_sub1_sub3_sub5.method2471((-103).toByte(), CollisionMapAccessor.method2064(i_108_, (GradientLookupEffect.anInt9200), 11219, i_109_) + -i_113_, i_109_, i_114_ + GlGroundShaderPass.anInt7396, i_108_)
                             SpriteTextureNode.aNodeDeque_9240!!.method1999(ParticleEmitterListNode(class318_sub1_sub3_sub5), -20180)
                         }
-                    } else if (TextureGenerator.aRgbColorPalette_2491 == rgbColorPalette) {
+                    } else if (TextureGeneratorStatics.aRgbColorPalette_2491 == rgbColorPalette) {
                         CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         val i_118_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                         val i_119_ = (i_118_ shr 4 and 0x7) + BufferedMessageQueue.anInt3581

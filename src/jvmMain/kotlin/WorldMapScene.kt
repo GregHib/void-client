@@ -889,7 +889,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 }
                 if (!this.aBoolean3109) {
                     if (DelegatingRenderCanvas.anInt3720 != 0) method1968()
-                    if (TextureGenerator.aBoolean2492) method1320()
+                    if (TextureGeneratorStatics.aBoolean2492) method1320()
                 }
                 var i_196_ = 0
                 while ((this.anInt3130 > i_196_)) {
@@ -1264,14 +1264,14 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 var i_305_ = 0
                 var i_306_ = 0
                 if (!this.aBoolean3109) {
-                    if (TextureGenerator.aBoolean2492) i_305_ = i_305_ or 0x2
+                    if (TextureGeneratorStatics.aBoolean2492) i_305_ = i_305_ or 0x2
                     if (WorldMapLabel.aBoolean4972) i_306_ = i_306_ or 0x8
                     if (DelegatingRenderCanvas.anInt3720 != 0) {
                         if ((i_304_ == 0) or HuffmanCodec.aBoolean3767) i_306_ = i_306_ or 0x10
                         i_305_ = i_305_ or 0x1
                     }
                 }
-                if (TextureGenerator.aBoolean2492) i_306_ = i_306_ or 0x7
+                if (TextureGeneratorStatics.aBoolean2492) i_306_ = i_306_ or 0x7
                 if (!NanoTimerStatics.aBoolean845) i_306_ = i_306_ or 0x20
                 val is_307_ = (if (`is` == null || `is`.size <= i_304_) this.anIntArrayArrayArray3122[i_304_] else `is`[i_304_])
                 method3313(i_304_, var_renderer!!.method3648(this.anInt3117, this.anInt3114, (this.anIntArrayArrayArray3122[i_304_]!!), is_307_, 512, i_305_, i_306_))
