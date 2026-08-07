@@ -6,7 +6,7 @@ class ItemNameResolver : TextFormatter {
         try {
             anInt4996++
             if (RandomAccessFileOnDisk.aRectangleRegion_3044 == rectangleRegion) {
-                val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, `is`!![0])
+                val class117 = RegionTileNodeStatics.aCacheArchiveIndexLoader_6653!!.method337(true, `is`!![0])
                 return class117.method1074(l.toInt(), 91)
             }
             if (Texture2DProvider.aRectangleRegion_6321 == rectangleRegion || ShaderProgramStatics.aRectangleRegion_7274 == rectangleRegion) {
@@ -14,7 +14,7 @@ class ItemNameResolver : TextFormatter {
                 return class213.aString2795
             }
             if (i != 1) method54(85, -41L, null, null)
-            if (rectangleRegion == ProceduralTextureGraph.aRectangleRegion_9530 || rectangleRegion == FloatBuffer.aRectangleRegion_9748 || PlayerSequenceSelector.aRectangleRegion_1213 == rectangleRegion) return RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, `is`!![0]).method1074(l.toInt(), i xor 0x48)
+            if (rectangleRegion == ProceduralTextureGraph.aRectangleRegion_9530 || rectangleRegion == FloatBuffer.aRectangleRegion_9748 || PlayerSequenceSelector.aRectangleRegion_1213 == rectangleRegion) return RegionTileNodeStatics.aCacheArchiveIndexLoader_6653!!.method337(true, `is`!![0]).method1074(l.toInt(), i xor 0x48)
             return null
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("hu.A(" + i + ',' + l + ',' + (if (rectangleRegion != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))

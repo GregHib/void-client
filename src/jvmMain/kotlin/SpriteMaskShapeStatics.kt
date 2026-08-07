@@ -587,7 +587,7 @@ object SpriteMaskShapeStatics {
                             SpriteArchiveLoader.anInt385 = i_73_
                             val npc = (class348_sub22.aNpc_6859)!!
                             FogOptionState.anInt6048 = 2
-                            RegionTileNode.anInt6646++
+                            RegionTileNodeStatics.anInt6646++
                             val class348_sub47 = method2148((ParserSpecialCharsHolder.aOutgoingPacketHeader_1904), (TheoraVideoStream.aIsaacCipher_9029), -119)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, NativeLibraryState.anInt169)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(108.toByte(), OrientationRotator.anInt2046)

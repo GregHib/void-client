@@ -1286,7 +1286,7 @@ object ChatCommandProcessor {
                 if (i_138_ < 0) i_138_ = 0
                 else if (i_138_ >= RangeThresholdTextureNode.anInt9109) i_138_ = RangeThresholdTextureNode.anInt9109
                 OpenGlRenderer.anInt6633 = (i_137_ shl 9) + 256
-                RegionTileNode.anInt6652 = (i_138_ shl 9) + 256
+                RegionTileNodeStatics.anInt6652 = (i_138_ shl 9) + 256
                 WeaveTextureNode.anInt9282 = 4
                 SequencedWallEntity.anInt10163 = -1
                 NativeLibraryState.anInt167 = SequencedWallEntity.anInt10163
@@ -4185,7 +4185,7 @@ object ChatCommandProcessor {
                     anInt1173 -= 2
                     val i_348_ = anIntArray1149!![anInt1173]
                     val i_349_ = anIntArray1149!![anInt1173 + 1]
-                    val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, i_348_)
+                    val class117 = RegionTileNodeStatics.aCacheArchiveIndexLoader_6653!!.method337(true, i_348_)
                     aStringArray1152!![anInt1170++] = class117.method1074(i_349_, 124)
                     return
                 }
@@ -4195,7 +4195,7 @@ object ChatCommandProcessor {
                     val i_351_ = anIntArray1149!![anInt1173 + 1]
                     val i_352_ = anIntArray1149!![anInt1173 + 2]
                     val i_353_ = anIntArray1149!![anInt1173 + 3]
-                    val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, i_352_)
+                    val class117 = RegionTileNodeStatics.aCacheArchiveIndexLoader_6653!!.method337(true, i_352_)
                     if (class117.aChar1778.code != i_350_ || class117.aChar1779.code != i_351_) throw RuntimeException("C3408-1 " + i_352_ + "-" + i_353_)
                     if (i_351_ == 115) aStringArray1152!![anInt1170++] = class117.method1074(i_353_, 119)
                     else {
@@ -4210,7 +4210,7 @@ object ChatCommandProcessor {
                     val i_355_ = anIntArray1149!![anInt1173 + 1]
                     val i_356_ = anIntArray1149!![anInt1173 + 2]
                     if (i_355_ == -1) throw RuntimeException("C3409-2")
-                    val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, i_355_)
+                    val class117 = RegionTileNodeStatics.aCacheArchiveIndexLoader_6653!!.method337(true, i_355_)
                     if (class117.aChar1779.code != i_354_) throw RuntimeException("C3409-1")
                     anIntArray1149!![anInt1173++] = if (class117.method1067(true, i_356_)) 1 else 0
                     return
@@ -4219,14 +4219,14 @@ object ChatCommandProcessor {
                     val i_357_ = anIntArray1149!![--anInt1173]
                     val string = aStringArray1152!![--anInt1170]!!
                     if (i_357_ == -1) throw RuntimeException("C3410-2")
-                    val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, i_357_)
+                    val class117 = RegionTileNodeStatics.aCacheArchiveIndexLoader_6653!!.method337(true, i_357_)
                     if (class117.aChar1779 != 's') throw RuntimeException("C3410-1")
                     anIntArray1149!![anInt1173++] = if (class117.method1066(false, string)) 1 else 0
                     return
                 }
                 if (i == 3411) {
                     val i_358_ = anIntArray1149!![--anInt1173]
-                    val class117 = RegionTileNode.aCacheArchiveIndexLoader_6653!!.method337(true, i_358_)
+                    val class117 = RegionTileNodeStatics.aCacheArchiveIndexLoader_6653!!.method337(true, i_358_)
                     anIntArray1149!![anInt1173++] = class117.aHashtable_1767!!.method3474(1)
                     return
                 }

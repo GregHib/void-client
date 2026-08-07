@@ -11,8 +11,8 @@ object TextureAtlasStateStatics {
             if (!CameraRotationStubStatics.aJs5Archive_322!!.method421(false, FireParticleStream.anInt98)) bool_0_ = false
             else ColorThresholdEffect.aSpriteImage_9090 = SpriteImage.method1512(CameraRotationStubStatics.aJs5Archive_322!!, FireParticleStream.anInt98)
         }
-        if (RegionTileNode.aSpriteImage_6643 == null) {
-            if (CameraRotationStubStatics.aJs5Archive_322!!.method421(!bool, TerrainShadowBuilderGl2.anInt6938)) RegionTileNode.aSpriteImage_6643 = SpriteImage.method1512(CameraRotationStubStatics.aJs5Archive_322!!, TerrainShadowBuilderGl2.anInt6938)
+        if (RegionTileNodeStatics.aSpriteImage_6643 == null) {
+            if (CameraRotationStubStatics.aJs5Archive_322!!.method421(!bool, TerrainShadowBuilderGl2.anInt6938)) RegionTileNodeStatics.aSpriteImage_6643 = SpriteImage.method1512(CameraRotationStubStatics.aJs5Archive_322!!, TerrainShadowBuilderGl2.anInt6938)
             else bool_0_ = false
         }
         if (ScriptCompilerThread.aSpriteImage_1727 == null) {

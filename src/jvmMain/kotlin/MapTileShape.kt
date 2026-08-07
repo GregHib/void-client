@@ -1,7 +1,7 @@
 import ConfigFlagUtilStatics.method1913
 import ConfigFlagUtilStatics.method1916
 import RSFont.Companion.method2570
-import RegionTileNode.Companion.method2772
+import RegionTileNodeStatics.method2772
 import ChatCommandProcessor.method703
 import ParticleDetailOptionState.Companion.method1796
 import SpriteComponent.Companion.method202

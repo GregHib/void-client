@@ -313,7 +313,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
                 if (ParticleSystemState.aRenderConfigFactory_2207 == renderConfigFactory) return 8448
                 if (renderConfigFactory == MediaStreamClient.aRenderConfigFactory_3196) return 34165
                 if (TheoraVideoStream.aRenderConfigFactory_9011 == renderConfigFactory) return 260
-                if (renderConfigFactory == RegionTileNode.aRenderConfigFactory_6644) return 34023
+                if (renderConfigFactory == RegionTileNodeStatics.aRenderConfigFactory_6644) return 34023
             } else return 7681
             if (i.toInt() != 32) Companion.method3021((-21).toByte(), null)
             throw IllegalArgumentException()

@@ -26,7 +26,7 @@ object Tooltip {
                     class324 = var_renderer!!.method3686(class143, (ProportionalScrollbarComponent.aSpriteImageArray9929), true)
                     var i_1_ = class143!!.method1187(string, false, 250, null)
                     var i_2_ = class143.method1185(null, i xor 0x2, class143.anInt1992, 250, string)
-                    val i_3_ = RegionTileNode.aSpriteImage_6643!!.anInt2702
+                    val i_3_ = RegionTileNodeStatics.aSpriteImage_6643!!.anInt2702
                     val i_4_ = i_3_ + 4
                     i_2_ += 2 * i_4_
                     i_1_ += 2 * i_4_
@@ -47,14 +47,14 @@ object Tooltip {
                     ColorThresholdEffect.aSpriteImage_9090!!.method1518()
                     var_renderer.method3691(ColorThresholdEffect.aSpriteImage_9090, true)!!.method974(i_5_, -i_3_ + i_6_ - -i_2_)
                     ColorThresholdEffect.aSpriteImage_9090!!.method1514()
-                    var_renderer.method3691(RegionTileNode.aSpriteImage_6643, true)!!.method972(i_5_, (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696) + i_6_, i_3_, -(2 * (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696)) + i_2_)
-                    RegionTileNode.aSpriteImage_6643!!.method1520()
-                    var_renderer.method3691(RegionTileNode.aSpriteImage_6643, true)!!.method972((ColorThresholdEffect.aSpriteImage_9090!!.anInt2702) + i_5_, i_6_, -((ColorThresholdEffect.aSpriteImage_9090!!.anInt2702) * 2) + i_1_, i_3_)
-                    RegionTileNode.aSpriteImage_6643!!.method1520()
-                    var_renderer.method3691(RegionTileNode.aSpriteImage_6643, true)!!.method972(i_5_ - -i_1_ + -i_3_, (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696) + i_6_, i_3_, -(2 * (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696)) + i_2_)
-                    RegionTileNode.aSpriteImage_6643!!.method1520()
-                    var_renderer.method3691(RegionTileNode.aSpriteImage_6643, true)!!.method972((ColorThresholdEffect.aSpriteImage_9090!!.anInt2702) + i_5_, -i_3_ + i_6_ - -i_2_, -(2 * (ColorThresholdEffect.aSpriteImage_9090!!.anInt2702)) + i_1_, i_3_)
-                    RegionTileNode.aSpriteImage_6643!!.method1520()
+                    var_renderer.method3691(RegionTileNodeStatics.aSpriteImage_6643, true)!!.method972(i_5_, (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696) + i_6_, i_3_, -(2 * (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696)) + i_2_)
+                    RegionTileNodeStatics.aSpriteImage_6643!!.method1520()
+                    var_renderer.method3691(RegionTileNodeStatics.aSpriteImage_6643, true)!!.method972((ColorThresholdEffect.aSpriteImage_9090!!.anInt2702) + i_5_, i_6_, -((ColorThresholdEffect.aSpriteImage_9090!!.anInt2702) * 2) + i_1_, i_3_)
+                    RegionTileNodeStatics.aSpriteImage_6643!!.method1520()
+                    var_renderer.method3691(RegionTileNodeStatics.aSpriteImage_6643, true)!!.method972(i_5_ - -i_1_ + -i_3_, (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696) + i_6_, i_3_, -(2 * (ColorThresholdEffect.aSpriteImage_9090!!.anInt2696)) + i_2_)
+                    RegionTileNodeStatics.aSpriteImage_6643!!.method1520()
+                    var_renderer.method3691(RegionTileNodeStatics.aSpriteImage_6643, true)!!.method972((ColorThresholdEffect.aSpriteImage_9090!!.anInt2702) + i_5_, -i_3_ + i_6_ - -i_2_, -(2 * (ColorThresholdEffect.aSpriteImage_9090!!.anInt2702)) + i_1_, i_3_)
+                    RegionTileNodeStatics.aSpriteImage_6643!!.method1520()
                     class324!!.method2584(null, 0, -1, null, 0xffffff.inv() or DrawListState.anInt1479, 1, i_2_ + -(i_4_ * 2), null, i_6_ + i_4_, 0, 0, -(2 * i_4_) + i_1_, i_5_ + i_4_, false, 1, string)
                     method226(i_5_, i_1_, i_6_, i xor 0x2, i_2_)
                 } else {

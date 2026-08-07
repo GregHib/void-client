@@ -182,7 +182,7 @@ object ClientLoadStateMachine {
             ProjectionCameraTransform.aEmoteDefCache_5764 = EmoteDefCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             OpenGlModel.aNpcDefinitionCache_5558 = NpcDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             CacheArchiveIndexLoader.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)
-            RegionTileNode.aCacheArchiveIndexLoader_6653 = CacheArchiveIndexLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, VideoAdChecker.aJs5Archive_3183)
+            RegionTileNodeStatics.aCacheArchiveIndexLoader_6653 = CacheArchiveIndexLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, VideoAdChecker.aJs5Archive_3183)
             RenderConfigFactoryStatics.aLocDefinitionCache_2979 = LocDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             Tooltip.aParticleDefLoader_4460 = ParticleDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             FileExistsCondition.aModelDefinitionCache_4782 = ModelDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)

@@ -198,7 +198,7 @@ object RegionSceneShifterStatics {
                     CompositeRgbNoiseTexture.anInt8685 -= 512 * i_21_
                     if ((GlCubemapLightPass.anInt7319 < abs(i_20_)) || abs(i_21_) > RangeThresholdTextureNode.anInt9109) method773(true)
                 } else if (WeaveTextureNode.anInt9282 == 4) {
-                    RegionTileNode.anInt6652 -= i_21_ * 512
+                    RegionTileNodeStatics.anInt6652 -= i_21_ * 512
                     FrameStatsReset.anInt5799 -= i_20_ * 512
                     AsyncTaskHandle.anInt2578 -= 512 * i_21_
                     OpenGlRenderer.anInt6633 -= i_20_ * 512

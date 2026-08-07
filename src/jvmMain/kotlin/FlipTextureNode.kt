@@ -684,7 +684,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                         val i_5_: Int
                         val i_6_: Int
                         if (WeaveTextureNode.anInt9282 == 4) {
-                            i_3_ = RegionTileNode.anInt6652
+                            i_3_ = RegionTileNodeStatics.anInt6652
                             i_4_ = OpenGlRenderer.anInt6633
                             i_5_ = 4096
                             i_6_ = 0x3fff and -CameraDistanceOptionState.aFloat3938.toInt()

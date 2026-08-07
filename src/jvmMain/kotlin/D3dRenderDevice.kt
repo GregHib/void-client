@@ -791,7 +791,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
             if (ParticleSystemState.aRenderConfigFactory_2207 == renderConfigFactory) return 4
             if (MediaStreamClient.aRenderConfigFactory_3196 != renderConfigFactory) {
                 if (renderConfigFactory != TheoraVideoStream.aRenderConfigFactory_9011) {
-                    if (renderConfigFactory == RegionTileNode.aRenderConfigFactory_6644) return 10
+                    if (renderConfigFactory == RegionTileNodeStatics.aRenderConfigFactory_6644) return 10
                 } else return 7
             } else return 26
             if (i <= 16) method3955(-116, null)

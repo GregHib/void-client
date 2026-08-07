@@ -367,7 +367,7 @@ import AbstractBloomEffect.Companion.method2762
 import StringCacheNodeStatics.method3418
 import DisplaySettingsConfig.Companion.method3430
 import GlBloomEffect.Companion.method2765
-import RegionTileNode.Companion.method2773
+import RegionTileNodeStatics.method2773
 import FacingDirectionNodeStatics.method2774
 import CharacterRenderState.Companion.method2780
 import FormantSynthFilter.Companion.method3450
@@ -2180,7 +2180,7 @@ class Client : GameAppletFrame() {
                                                 val i_67_: Int
                                                 if (WeaveTextureNode.anInt9282 == 4) {
                                                     i_66_ = (OpenGlRenderer.anInt6633 shr 9) + (i_64_ shr 2)
-                                                    i_67_ = (RegionTileNode.anInt6652 shr 9) - (i_65_ shr 2)
+                                                    i_67_ = (RegionTileNodeStatics.anInt6652 shr 9) - (i_65_ shr 2)
                                                 } else {
                                                     val i_68_ = ((LocalPlayerState.aPlayer_1907!!.method2436(51.toByte())) - 1) * 256
                                                     i_66_ = ((LocalPlayerState.aPlayer_1907!!.x) - i_68_ shr 9) + (i_64_ shr 2)
@@ -4165,7 +4165,7 @@ class Client : GameAppletFrame() {
                 WallSceneEntity.method2397((-125).toByte())
                 if (i == 2) FrameStatsReset.method1134(92)
                 RenderNodeStatics.anInt9721 = i_202_
-                RegionTileNode.method2772(i_202_, 123.toByte())
+                RegionTileNodeStatics.method2772(i_202_, 123.toByte())
                 method1713(false, 520)
                 ChatCommandProcessor.method703(RenderNodeStatics.anInt9721)
                 for (i_203_ in 0..99) OpenGlModel.aBooleanArray2076!![i_203_] = true
@@ -4863,8 +4863,8 @@ class Client : GameAppletFrame() {
                         var i_13_ = 0
                         while ((i_13_ < CameraConfigDefinition.anInt3246)) {
                             val interface6 = CacheLruCache.anCharStreamReaderArray3884s!![i_13_]
-                            var l = ((interface6!!.method29((-29).toByte()) + -RegionTileNode.aLong6651) / 50L)
-                            RegionTileNode.aLong6651 = interface6.method29(106.toByte())
+                            var l = ((interface6!!.method29((-29).toByte()) + -RegionTileNodeStatics.aLong6651) / 50L)
+                            RegionTileNodeStatics.aLong6651 = interface6.method29(106.toByte())
                             if (l > 65535L) l = 65535L
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, interface6.method30(false))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), l.toInt())

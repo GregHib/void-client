@@ -2253,7 +2253,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SpriteTextureNode.anInt9239 = 0
             WeaveTextureNode.anInt9268 = 0
             TextureCache.anInt4352 = 0
-            RegionTileNode.anInt6646 = 0
+            RegionTileNodeStatics.anInt6646 = 0
             GameAppletFrame.anInt22 = 0
             BinaryGraphicsOptionState.anInt5953 = 0
             Direct3dModel.anInt5500 = 0
@@ -3760,7 +3760,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlTexture2D.anInt8541 = 0
             ArchiveResourceProvider.anInt6341 = 0
             SpotAnimEntity.anInt6438 = 0
-            RegionTileNode.anInt6641 = 0
+            RegionTileNodeStatics.anInt6641 = 0
             GlRenderDevice.anInt9871 = 0
             LocDefinitionCache.anInt3446 = 0
             RingBufferInputStream.anInt4549 = 0
