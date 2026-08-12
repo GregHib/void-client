@@ -170,8 +170,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             SimpleToggleOptionState.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_
         }
         anInt2071 = anInt2071 - -1 and 0x1f
-        if (ParticleAmountConfig.anInt2127++ > 50) {
-            ParticleAmountConfig.anInt2127 -= 50
+        if (ParticleAmountConfigStatics.anInt2127++ > 50) {
+            ParticleAmountConfigStatics.anInt2127 -= 50
             SpriteRenderable.aBoolean4726 = true
             ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
             ParticleSystemRenderer.aCanvas3869!!.setVisible(true)

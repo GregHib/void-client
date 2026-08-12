@@ -134,7 +134,7 @@ class SceneNodeDeque {
                 i = NativeTerrainTile.method4008((-124).toByte())
                 i_1_ = method260(false)
             }
-            ParticleAmountConfig.method1252(i_1_, RenderNodeStatics.anInt9721, i_1_, -1, i, i + LocTypeDefinition.anInt4017, i_1_ - -GameDisplayManager.anInt10432, 116.toByte(), i)
+            ParticleAmountConfigStatics.method1252(i_1_, RenderNodeStatics.anInt9721, i_1_, -1, i, i + LocTypeDefinition.anInt4017, i_1_ - -GameDisplayManager.anInt10432, 116.toByte(), i)
             if (SceneNodeDeque.aWidgetComponentArray1942 != null) {
                 method3064(i, SpriteLoadValidator.anInt4792, true, AbstractTileShapeStatics.anInt6555, i_1_, CalendarUtil.aWidgetComponent_4130!!.anInt760, i + LocTypeDefinition.anInt4017, false, SceneNodeDeque.aWidgetComponentArray1942, -1412584499, i_1_ - -GameDisplayManager.anInt10432)
                 SceneNodeDeque.aWidgetComponentArray1942 = null

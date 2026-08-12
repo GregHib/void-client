@@ -313,7 +313,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                         method3064(i_31_, -class46.anInt755 + i_25_, bool, i_24_ - class46.anInt747, i_32_, i_23_, i_34_, false, widgetComponents, class46.anInt830, i_33_)
                                         if (class46.aWidgetComponentArray798 != null) method3064(i_31_, -(class46.anInt755) + i_25_, bool, i_24_ - (class46.anInt747), i_32_, i_23_, i_34_, false, (class46.aWidgetComponentArray798), (class46.anInt830), i_33_)
                                         val class348_sub41 = ((MinimapSpriteRenderer.aHashtable_4915!!.method3480(class46.anInt830.toLong(), -6008)) as RegionSceneShifter?)
-                                        if (class348_sub41 != null) ParticleAmountConfig.method1252(i_25_, (class348_sub41.anInt7050), i_32_, i_23_, i_24_, i_34_, i_33_, 60.toByte(), i_31_)
+                                        if (class348_sub41 != null) ParticleAmountConfigStatics.method1252(i_25_, (class348_sub41.anInt7050), i_32_, i_23_, i_24_, i_34_, i_33_, 60.toByte(), i_31_)
                                         if ((class46.anInt765 == MaterialTextureCache.anInt4532) && FacingDirectionNodeStatics.aRenderer6654!!.method3666()) FacingDirectionNodeStatics.aRenderer6654!!.method3698()
                                         FacingDirectionNodeStatics.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                     }

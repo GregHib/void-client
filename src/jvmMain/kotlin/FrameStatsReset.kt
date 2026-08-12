@@ -4068,7 +4068,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WaterMaterialPass.anInt6232 = 0
             ParamMap.anInt9496 = 0
             OpenGlModel.anInt2984 = 0
-            ParticleAmountConfig.anInt2124 = 0
+            ParticleAmountConfigStatics.anInt2124 = 0
             OpenGlRenderer.anInt7572 = 0
             IOException_Sub1.anInt89 = 0
             TrackedGroundDecor.anInt10385 = 0
