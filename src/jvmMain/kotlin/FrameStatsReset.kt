@@ -2539,7 +2539,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7677 = 0
             SceneObjectSpawner.anInt1284 = 0
             LocConfigModelBuilder.anInt4495 = 0
-            LoadingScreenState.anInt2627 = 0
+            LoadingScreenStateStatics.anInt2627 = 0
             GlRenderDevice.anInt9874 = 0
             TheoraVideoStream.anInt9022 = 0
             CipheredPacketBuffer.anInt9755 = 0
@@ -3975,7 +3975,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Direct3dModel.anInt5454 = 0
             ChatEffectsOptionState.anInt5858 = 0
             GradientMapTextureNode.anInt9326 = 0
-            LoadingScreenState.anInt2637 = 0
+            LoadingScreenStateStatics.anInt2637 = 0
             SceneryDetailOptionState.anInt6092 = 0
             Gl2dTexture.anInt8608 = 0
             WorldMapSceneSoftware.anInt5823 = 0

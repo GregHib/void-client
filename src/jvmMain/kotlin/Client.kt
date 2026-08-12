@@ -95,7 +95,7 @@ import AsyncTaskHandle.Companion.method1438
 import TextureHandle.Companion.method1440
 import VarbitDefLoader.Companion.method1441
 import RenderableGroup.Companion.method1447
-import LoadingScreenState.Companion.method1461
+import LoadingScreenStateStatics.method1461
 import ModelOrSpriteHolderStatics.method171
 import InboundPacketHeader.Companion.method287
 import ScriptResources.method1463
@@ -2411,7 +2411,7 @@ class Client : GameAppletFrame() {
                                         HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     } else {
                                         while_227_@ for (i_83_ in class46.anInt723..<DualMaterialContainer.anInt1631) {
-                                            val i_84_ = (LoadingScreenState.anIntArray2633!![i_83_ and 0x1f])
+                                            val i_84_ = (LoadingScreenStateStatics.anIntArray2633!![i_83_ and 0x1f])
                                             for (i_85_ in (class46.anIntArray771!!).indices) {
                                                 if ((class46.anIntArray771!![i_85_]) == i_84_) {
                                                     val class348_sub36 = WidgetActionEntry()
@@ -2433,7 +2433,7 @@ class Client : GameAppletFrame() {
                                         HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     } else {
                                         while_228_@ for (i_86_ in class46.anInt715..<EmoteDefCache.anInt4086) {
-                                            val i_87_ = (LoadingScreenState.anIntArray2632!![i_86_ and 0x1f])
+                                            val i_87_ = (LoadingScreenStateStatics.anIntArray2632!![i_86_ and 0x1f])
                                             for (i_88_ in (class46.anIntArray731!!).indices) {
                                                 if ((class46.anIntArray731!![i_88_]) == i_87_) {
                                                     val class348_sub36 = WidgetActionEntry()
@@ -2968,7 +2968,7 @@ class Client : GameAppletFrame() {
                     val i_35_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAdd(-78)
                     DelegatingRenderCanvas.method121(i, -364570972, bool_31_, i_33_, i_34_, i_35_ - 1)
                 }
-                LoadingScreenState.anIntArray2633!![WhirlpoolHash.method1166(31, DualMaterialContainer.anInt1631++)] = i
+                LoadingScreenStateStatics.anIntArray2633!![WhirlpoolHash.method1166(31, DualMaterialContainer.anInt1631++)] = i
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
@@ -4257,7 +4257,7 @@ class Client : GameAppletFrame() {
                     if (StaticNoiseTexture.anIntArray8663!![i_217_] <= i_215_) anIntArray3295!![i_214_] = i_217_ - -2
                     i_217_++
                 }
-                LoadingScreenState.anIntArray2632!![WhirlpoolHash.method1166(31, EmoteDefCache.anInt4086++)] = i_214_
+                LoadingScreenStateStatics.anIntArray2632!![WhirlpoolHash.method1166(31, EmoteDefCache.anInt4086++)] = i_214_
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
@@ -4271,7 +4271,7 @@ class Client : GameAppletFrame() {
                 val i_218_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(70.toByte())
                 val bool_219_ = (0x1 and i_218_) == 1
                 RangeThresholdTextureNode.method3054(bool_219_, i, -128)
-                LoadingScreenState.anIntArray2633!![WhirlpoolHash.method1166(31, DualMaterialContainer.anInt1631++)] = i
+                LoadingScreenStateStatics.anIntArray2633!![WhirlpoolHash.method1166(31, DualMaterialContainer.anInt1631++)] = i
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
@@ -4289,7 +4289,7 @@ class Client : GameAppletFrame() {
                     }
                     DelegatingRenderCanvas.method121(i, -364570972, bool_221_, i_222_, i_224_, -1 + i_223_)
                 }
-                LoadingScreenState.anIntArray2633!![WhirlpoolHash.method1166(31, DualMaterialContainer.anInt1631++)] = i
+                LoadingScreenStateStatics.anIntArray2633!![WhirlpoolHash.method1166(31, DualMaterialContainer.anInt1631++)] = i
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }

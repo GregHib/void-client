@@ -255,7 +255,7 @@ class LoadingBarRenderer : CursorController {
 
     private fun method2219(i: Int) {
         anInt5031++
-        LoadingScreenState.method1455(ActorEntity.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884], ActorEntity.aResourceLoaderThread_897!!.method2318(-9324), (LoadingBarRenderer.aColorArray9163!![UnderlayDefinition.anInt2884]), (-100).toByte(), MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884])
+        LoadingScreenStateStatics.method1455(ActorEntity.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884], ActorEntity.aResourceLoaderThread_897!!.method2318(-9324), (LoadingBarRenderer.aColorArray9163!![UnderlayDefinition.anInt2884]), (-100).toByte(), MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884])
         if (i != 33) method55(1.toByte())
     }
 

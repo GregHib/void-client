@@ -159,7 +159,7 @@ class GlTexture2DRegion : GlTexture2D {
         var anInt6871: Int = 0
         fun method2994(i: Int) {
             anInt6871++
-            if (i == 2) LoadingScreenState.aRenderableEntryArray2636 = null
+            if (i == 2) LoadingScreenStateStatics.aRenderableEntryArray2636 = null
         }
     }
 }

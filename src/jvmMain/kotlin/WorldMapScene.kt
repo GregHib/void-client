@@ -1,6 +1,6 @@
 import RefCountedHandle.Companion.method1320
 import MapSceneDefLoader.Companion.method1394
-import LoadingScreenState.Companion.method1457
+import LoadingScreenStateStatics.method1457
 import GlTexture2D.Companion.method1968
 import WallEntity.Companion.method2483
 import RSFont.Companion.method2570

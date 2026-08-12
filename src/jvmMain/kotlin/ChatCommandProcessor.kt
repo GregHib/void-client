@@ -3022,7 +3022,7 @@ object ChatCommandProcessor {
                 ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 if (widgetComponent.anInt704 == -1) {
                     method1787(widgetComponent.anInt830, 8)
-                    LoadingScreenState.method1459(widgetComponent.anInt830, 2)
+                    LoadingScreenStateStatics.method1459(widgetComponent.anInt830, 2)
                 }
                 return
             }
@@ -3177,7 +3177,7 @@ object ChatCommandProcessor {
                 if (widgetComponent!!.anInt704 == -1) {
                     FileExistsConditionStatics.method743(9, widgetComponent.anInt830)
                     method1787(widgetComponent.anInt830, 8)
-                    LoadingScreenState.method1459(widgetComponent.anInt830, 2)
+                    LoadingScreenStateStatics.method1459(widgetComponent.anInt830, 2)
                 }
                 if (i_279_ == -1) {
                     widgetComponent.anInt770 = 1

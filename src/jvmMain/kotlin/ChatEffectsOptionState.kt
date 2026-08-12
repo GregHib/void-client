@@ -157,7 +157,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
                 if (i == -1) return null
                 if (AbstractTileShapeStatics.anIntArray6547 != null) {
                     for (i_26_ in AbstractTileShapeStatics.anIntArray6547!!.indices) {
-                        if (AbstractTileShapeStatics.anIntArray6547!![i_26_] == i) return LoadingScreenState.aRenderableEntryArray2636!![i_26_]
+                        if (AbstractTileShapeStatics.anIntArray6547!![i_26_] == i) return LoadingScreenStateStatics.aRenderableEntryArray2636!![i_26_]
                     }
                 }
                 var renderableEntry = SoundCacheState.aLruByteCache_4139!!.method583(i.toLong(), -92) as? RenderableEntry?
