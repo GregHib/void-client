@@ -3593,7 +3593,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             }
                             var class105s = TimedRecordAccessorStatics.aAbstractModelRendererArray7107
                             if (i_324_ != -1) {
-                                var abstractModelRendererS_326_ = ((TextureMipDescriptor.aLruByteCache_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<AbstractModelRenderer?>?)
+                                var abstractModelRendererS_326_ = ((TextureMipDescriptorStatics.aLruByteCache_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<AbstractModelRenderer?>?)
                                 if (abstractModelRendererS_326_ == null) {
                                     val spriteImages = SpriteImage.method1519(CameraRotationStubStatics.aJs5Archive_322!!, i_324_, 0)
                                     if (spriteImages != null) {
@@ -3603,7 +3603,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                             abstractModelRendererS_326_[i_327_] = (FacingDirectionNodeStatics.aRenderer6654!!.method3691(spriteImages[i_327_], true))
                                             i_327_++
                                         }
-                                        TextureMipDescriptor.aLruByteCache_4346!!.method582(abstractModelRendererS_326_, i_324_.toLong(), (-94).toByte())
+                                        TextureMipDescriptorStatics.aLruByteCache_4346!!.method582(abstractModelRendererS_326_, i_324_.toLong(), (-94).toByte())
                                     }
                                 }
                                 if (abstractModelRendererS_326_ != null && abstractModelRendererS_326_.size >= 2) class105s = abstractModelRendererS_326_

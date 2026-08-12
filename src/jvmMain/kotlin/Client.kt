@@ -373,7 +373,7 @@ import CharacterRenderState.Companion.method2780
 import FormantSynthFilter.Companion.method3450
 import LoadingBarRenderer.Companion.method3457
 import RenderableEntry.Companion.method3458
-import TextureMipDescriptor.Companion.method3462
+import TextureMipDescriptorStatics.method3462
 import TextureCache.Companion.method3466
 import TextureCache.Companion.method3468
 import CompiledScriptCache.Companion.method3473

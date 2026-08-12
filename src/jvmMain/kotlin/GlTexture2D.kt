@@ -102,7 +102,7 @@ open class GlTexture2D : GlTexture {
                 glPixelStorei(3314, 0)
                 this.method1955(false, (-123).toByte())
             } else {
-                TextureMipDescriptor.method3460(this.anInt4849, this.anInt4858, this.anInt8551, this.aHa_Sub2_4851.anInt7812, this.anInt8547, `is`!!, 32993, -103)
+                TextureMipDescriptorStatics.method3460(this.anInt4849, this.anInt4858, this.anInt8551, this.aHa_Sub2_4851.anInt7812, this.anInt8547, `is`!!, 32993, -103)
                 this.method1955(true, (-123).toByte())
             }
             this.method1957(9728, true)

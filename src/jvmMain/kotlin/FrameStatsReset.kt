@@ -690,7 +690,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7945 = 0
             CacheLruCache.anInt3885 = 0
             BlendTextureNode.anInt9359 = 0
-            TextureMipDescriptor.anInt4351 = 0
+            TextureMipDescriptorStatics.anInt4351 = 0
             GlTextureBase.anInt5104 = 0
             ArbFogMaterialPass.anInt6184 = 0
             WorldMapScene.anInt3105 = 0
@@ -3084,7 +3084,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TerrainShadowBuilderGl3.anInt7003 = 0
             AwtKeyboardListener.anInt6536 = 0
             TrackedGroundDecor.anInt10389 = 0
-            TextureMipDescriptor.anInt4345 = 0
+            TextureMipDescriptorStatics.anInt4345 = 0
             DisplaySettingsConfig.anInt7217 = 0
             ProjectionCameraTransform.anInt5778 = 0
             IdleAnimationsOptionState.anInt5910 = 0

@@ -152,7 +152,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             method174(50, -30742)
             method865(-8186, 5)
             method1323(5, 26603)
-            TextureMipDescriptor.aLruByteCache_4346!!.method578(i + -3, 5)
+            TextureMipDescriptorStatics.aLruByteCache_4346!!.method578(i + -3, 5)
             MaterialTypeMarkerStatics.aLruByteCache_6517!!.method578(2, 5)
             TerrainTileShape.aLruByteCache_8807!!.method578(i xor 0x7, 5)
             SkeletalAnimFrameLoader.aLruByteCache_463!!.method578(2, 5)

@@ -180,7 +180,7 @@ class MapRegionLoaderThread : Runnable {
             try {
                 if (i < -5) {
                     anInt4209++
-                    TextureMipDescriptor.method3461(0, objects, -1 + ls!!.size, ls, 9455)
+                    TextureMipDescriptorStatics.method3461(0, objects, -1 + ls!!.size, ls, 9455)
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("eaa.E(" + (if (objects != null) "{...}" else "null") + ',' + (if (ls != null) "{...}" else "null") + ',' + i + ')'))

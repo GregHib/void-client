@@ -47,7 +47,7 @@ class GlTextureCubeMap : GlTexture {
             this.anInt8538 = i_9_
             this.aHa_Sub2_4851.method3771((-77).toByte(), this)
             if (bool) {
-                for (i_10_ in 0..5) TextureMipDescriptor.method3460(i_10_ + 34069, this.anInt4858, i_9_, this.aHa_Sub2_4851.anInt7812, i_9_, `is`!![i_10_]!!, 32993, -83)
+                for (i_10_ in 0..5) TextureMipDescriptorStatics.method3460(i_10_ + 34069, this.anInt4858, i_9_, this.aHa_Sub2_4851.anInt7812, i_9_, `is`!![i_10_]!!, 32993, -83)
             } else {
                 for (i_11_ in 0..5) glTexImage2Di(i_11_ + 34069, 0, this.anInt4858, i_9_, i_9_, 0, 32993, (this.aHa_Sub2_4851.anInt7812), `is`!![i_11_], 0)
             }

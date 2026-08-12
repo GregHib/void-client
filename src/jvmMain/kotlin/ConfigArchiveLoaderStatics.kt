@@ -882,7 +882,7 @@ object ConfigArchiveLoaderStatics {
         method3102(22385)
         MapSceneRenderer.method386((-106).toByte())
         AudioResampler.method1271(0)
-        TextureMipDescriptor.aLruByteCache_4346!!.method587(-108)
+        TextureMipDescriptorStatics.aLruByteCache_4346!!.method587(-108)
         MaterialTypeMarkerStatics.aLruByteCache_6517!!.method587(-109)
         TerrainTileShape.aLruByteCache_8807!!.method587(-113)
         SkeletalAnimFrameLoader.aLruByteCache_463!!.method587(-83)
