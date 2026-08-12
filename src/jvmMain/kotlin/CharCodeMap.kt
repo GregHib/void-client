@@ -1,7 +1,7 @@
 import LinkedListIterator.Companion.method1242
 import CollisionMapAccessor.method2064
 import GlCubemapLightPass.Companion.method3542
-import MinimapSquareDrawer.Companion.method462
+import ByteBuffer.Companion.method462
 
 /* Class348_Sub42_Sub11 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

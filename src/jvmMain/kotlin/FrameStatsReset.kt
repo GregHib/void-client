@@ -2103,7 +2103,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CubemapTexture2dSource.anInt8692 = 0
             DisplaySettingsConfig.anInt7233 = 0
             MidiSequencePlayer.anInt8893 = 0
-            MinimapSquareDrawer.anInt5216 = 0
+            ByteBuffer.anInt5216 = 0
             Player.anInt10541 = 0
             ItemDefinitionLoader.anInt2179 = 0
             KaraokeSubtitleStream.anInt9052 = 0
@@ -2398,7 +2398,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7893 = 0
             DisplayModeOptionState.anInt6101 = 0
             FogOptionState.anInt6050 = 0
-            KeyboardLayoutConfig.anInt2134 = 0
+            KeyboardLayoutConfigStatics.anInt2134 = 0
             ParticleDetailOptionState.anInt6024 = 0
             VarpStore.anInt5077 = 0
             WidgetCache.anInt1490 = 0

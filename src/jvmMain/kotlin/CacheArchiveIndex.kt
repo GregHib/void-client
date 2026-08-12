@@ -1,5 +1,4 @@
 import CacheArchiveIndexLoader.Companion.method340
-import MinimapSquareDrawer.Companion.method462
 
 /* Class117 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -12,8 +11,8 @@ class CacheArchiveIndex {
     var aChar1778: Char = 0.toChar()
     var aChar1779: Char = 0.toChar()
     private fun method1065(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {
-        if (i_0_ == 1) this.aChar1778 = method462(class348_sub49.readByte(-91), -128)
-        else if (i_0_ == 2) this.aChar1779 = method462(class348_sub49.readByte(-119), -128)
+        if (i_0_ == 1) this.aChar1778 = ByteBuffer.method462(class348_sub49.readByte(-91), -128)
+        else if (i_0_ == 2) this.aChar1779 = ByteBuffer.method462(class348_sub49.readByte(-119), -128)
         else if (i_0_ == 3) aString1774 = class348_sub49.readString(86.toByte())
         else if (i_0_ == 4) anInt1764 = class348_sub49.readInt(((-126).toByte()).toByte())
         else if (i_0_ == 5 || i_0_ == 6) {

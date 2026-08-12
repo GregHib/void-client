@@ -1,4 +1,4 @@
-import MinimapSquareDrawer.Companion.method462
+import ByteBuffer.Companion.method462
 
 /* Class254 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

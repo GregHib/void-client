@@ -59,7 +59,7 @@ import LinkedListIterator.Companion.method1242
 import SettingsCrcWriter.method1246
 import HeapInfoRecord.Companion.method1249
 import SceneTilePlaneManager.method260
-import KeyboardLayoutConfig.Companion.method1254
+import KeyboardLayoutConfigStatics.method1254
 import ServerConnectionInfo.Companion.method1261
 import ClientLoadStateMachine.method1265
 import RgbColorPalette.Companion.method1267

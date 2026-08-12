@@ -39,7 +39,6 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
 
         var anInt5211: Int = 0
 
-        var anInt5216: Int = 0
         var aOutgoingPacketHeader_5217: OutgoingPacketHeader?
 
         var anInt5218: Int = 0
@@ -67,18 +66,6 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
         }
 
 
-        @JvmStatic
-        fun method462(i: Byte, i_20_: Int): Char {
-            anInt5216++
-            var i_21_ = 0xff and i.toInt()
-            require(i_21_ != 0) { "Non cp1252 character 0x" + i_21_.toString(16) + " provided" }
-            if (i_21_ >= 128 && i_21_ < 160) {
-                var i_22_ = ByteBuffer.aCharArray625!![i_21_ + -128].code
-                if (i_22_ == 0) i_22_ = 63
-                i_21_ = i_22_
-            }
-            return i_21_.toChar()
-        }
 
         @JvmStatic
         fun method463(class348_sub47: OutgoingPacketNode, bool: Boolean): IntArray {

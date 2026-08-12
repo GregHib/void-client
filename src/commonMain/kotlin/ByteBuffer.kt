@@ -741,6 +741,20 @@ open class ByteBuffer : LinkedListNode {
             return i_1_
         }
 
+        var anInt5216: Int = 0
+        @JvmStatic
+        fun method462(i: Byte, i_20_: Int): Char {
+            anInt5216++
+            var i_21_ = 0xff and i.toInt()
+            require(i_21_ != 0) { "Non cp1252 character 0x" + i_21_.toString(16) + " provided" }
+            if (i_21_ >= 128 && i_21_ < 160) {
+                var i_22_ = aCharArray625!![i_21_ + -128].code
+                if (i_22_ == 0) i_22_ = 63
+                i_21_ = i_22_
+            }
+            return i_21_.toChar()
+        }
+
         var anInt7349: Int = 0
         var aCharArray625: CharArray? = charArrayOf('\u20ac', '\u0000', '\u201a', '\u0192', '\u201e', '\u2026', '\u2020', '\u2021', '\u02c6', '\u2030', '\u0160', '\u2039', '\u0152', '\u0000', '\u017d', '\u0000', '\u0000', '\u2018', '\u2019', '\u201c', '\u201d', '\u2022', '\u2013', '\u2014', '\u02dc', '\u2122', '\u0161', '\u203a', '\u0153', '\u0000', '\u017e', '\u0178')
 

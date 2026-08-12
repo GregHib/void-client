@@ -578,7 +578,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 aShortArray5432 = null
                 anIntArrayArray5492 = null
             }
-            if (anIntArrayArray5413 != null && !KeyboardLayoutConfig.method1257(-83, anInt5472, anInt5463)) {
+            if (anIntArrayArray5413 != null && !KeyboardLayoutConfigStatics.method1257(-83, anInt5472, anInt5463)) {
                 anIntArrayArray5413 = null
                 aShortArray5494 = null
             }
@@ -2358,7 +2358,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 aByteArray5499 = method135(111.toByte(), aByteArray5499, anInt5475)
                 aFloatArray5476 = method3258(0, anInt5475, aFloatArray5476)
                 aFloatArray5506 = method3258(0, anInt5475, aFloatArray5506)
-                if (modelDefinition.anIntArray1868 != null && KeyboardLayoutConfig.method1257(-58, anInt5472, i)) anIntArrayArray5413 = modelDefinition.method1100(false, -20)
+                if (modelDefinition.anIntArray1868 != null && KeyboardLayoutConfigStatics.method1257(-58, anInt5472, i)) anIntArrayArray5413 = modelDefinition.method1100(false, -20)
                 if (modelDefinition.aRectangleBoundsArray1832 != null && IsaacCipher.method780(anInt5472, 0, i)) anIntArrayArray5412 = modelDefinition.method1093((-120).toByte())
                 if (modelDefinition.anIntArray1824 == null || !GlElementArrayBuffer.method1158(anInt5472, -1, i)) break
                 var i_459_ = 0

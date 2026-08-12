@@ -20,22 +20,22 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wa
         if ((0x1 and i) == 1) {
             if (aWaterTextureSet_6278!!.aBoolean1442) {
                 this.aHa_Sub2_3684.method3771((-83).toByte(), aWaterTextureSet_6278.aClass258_Sub1_1440)
-                KeyboardLayoutConfig.aFloatArray2131!![2] = 0.0f
-                KeyboardLayoutConfig.aFloatArray2131!![3] = ((this.aHa_Sub2_3684.anInt7735) % 4000).toFloat() / 4000.0f
-                KeyboardLayoutConfig.aFloatArray2131!![0] = 0.0f
-                KeyboardLayoutConfig.aFloatArray2131!![1] = 0.0f
-                glTexGenfv(8194, 9473, KeyboardLayoutConfig.aFloatArray2131, 0)
+                KeyboardLayoutConfigStatics.aFloatArray2131!![2] = 0.0f
+                KeyboardLayoutConfigStatics.aFloatArray2131!![3] = ((this.aHa_Sub2_3684.anInt7735) % 4000).toFloat() / 4000.0f
+                KeyboardLayoutConfigStatics.aFloatArray2131!![0] = 0.0f
+                KeyboardLayoutConfigStatics.aFloatArray2131!![1] = 0.0f
+                glTexGenfv(8194, 9473, KeyboardLayoutConfigStatics.aFloatArray2131, 0)
             } else {
                 val i_5_ = (16 * (this.aHa_Sub2_3684.anInt7735 % 4000) / 4000)
                 this.aHa_Sub2_3684.method3771((-95).toByte(), aWaterTextureSet_6278.aClass258_Sub3Array1444!![i_5_])
             }
         } else if (aWaterTextureSet_6278!!.aBoolean1442) {
             this.aHa_Sub2_3684.method3771((-126).toByte(), (aWaterTextureSet_6278.aClass258_Sub1_1440))
-            KeyboardLayoutConfig.aFloatArray2131!![0] = 0.0f
-            KeyboardLayoutConfig.aFloatArray2131!![2] = 0.0f
-            KeyboardLayoutConfig.aFloatArray2131!![1] = 0.0f
-            KeyboardLayoutConfig.aFloatArray2131!![3] = 0.0f
-            glTexGenfv(8194, 9473, KeyboardLayoutConfig.aFloatArray2131, 0)
+            KeyboardLayoutConfigStatics.aFloatArray2131!![0] = 0.0f
+            KeyboardLayoutConfigStatics.aFloatArray2131!![2] = 0.0f
+            KeyboardLayoutConfigStatics.aFloatArray2131!![1] = 0.0f
+            KeyboardLayoutConfigStatics.aFloatArray2131!![3] = 0.0f
+            glTexGenfv(8194, 9473, KeyboardLayoutConfigStatics.aFloatArray2131, 0)
         } else this.aHa_Sub2_3684.method3771((-110).toByte(), aWaterTextureSet_6278.aClass258_Sub3Array1444!![0])
         anInt6291++
     }
@@ -44,13 +44,13 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wa
         if (this.aHa_Sub2_3684.anInt7782 > 0) {
             val f = -0.5f / (this.aHa_Sub2_3684.anInt7782).toFloat()
             this.aHa_Sub2_3684.method3738(-15039, 1)
-            KeyboardLayoutConfig.aFloatArray2131!![3] = 0.25f + (this.aHa_Sub2_3684.aFloat7792) * f
-            KeyboardLayoutConfig.aFloatArray2131!![0] = 0.0f
-            KeyboardLayoutConfig.aFloatArray2131!![2] = f
-            KeyboardLayoutConfig.aFloatArray2131!![1] = 0.0f
+            KeyboardLayoutConfigStatics.aFloatArray2131!![3] = 0.25f + (this.aHa_Sub2_3684.aFloat7792) * f
+            KeyboardLayoutConfigStatics.aFloatArray2131!![0] = 0.0f
+            KeyboardLayoutConfigStatics.aFloatArray2131!![2] = f
+            KeyboardLayoutConfigStatics.aFloatArray2131!![1] = 0.0f
             glPushMatrix()
             glLoadIdentity()
-            glTexGenfv(8192, 9474, KeyboardLayoutConfig.aFloatArray2131, 0)
+            glTexGenfv(8192, 9474, KeyboardLayoutConfigStatics.aFloatArray2131, 0)
             glPopMatrix()
             this.aHa_Sub2_3684.method3744(this.aHa_Sub2_3684.anInt7782.toFloat(), 770, 0.5f)
             this.aHa_Sub2_3684.method3771((-99).toByte(), aClass258_Sub4_6285)
