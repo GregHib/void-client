@@ -120,7 +120,7 @@ class HslColorConfig {
                     if (IntPairStatics.aRenderer6968 == null) {
                         val canvas = Canvas()
                         canvas.setSize(36, 32)
-                        IntPairStatics.aRenderer6968 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, 0, canvas, SpriteLoadValidator.aJs5Archive_4796)
+                        IntPairStatics.aRenderer6968 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, 0, canvas, SpriteLoadValidatorStatics.aJs5Archive_4796)
                         EdgeDetectTextureNode.aRSFont_9173 = (IntPairStatics.aRenderer6968!!.method3686(method1819(ConnectionStateType.anInt1044, 0, -44, SoftwareSpriteRaster.aJs5Archive_1627!!), SpriteImage.method1519(CameraRotationStubStatics.aJs5Archive_322!!, ConnectionStateType.anInt1044, 0), true))
                     }
                     var class348_sub7 = (ProportionalScrollbarComponent.aNodeDeque_9931!!.method1995(i + 4) as RegionTileNode?)

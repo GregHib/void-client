@@ -139,7 +139,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                 if (TextureCubeProviderStatics.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127
                                 if (class46 == RegionSceneLoader.aWidgetComponent_3701) {
                                     if (i_16_ != -1412584499 && ((WidgetRedrawTracker.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
-                                        SpriteLoadValidator.anInt4792 = i_10_
+                                        SpriteLoadValidatorStatics.anInt4792 = i_10_
                                         AbstractTileShapeStatics.anInt6555 = i_11_
                                         SceneNodeDeque.aWidgetComponentArray1942 = widgetComponents
                                         i_18_++
@@ -233,7 +233,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                             i_18_++
                                             continue
                                         }
-                                        if (SpriteLoadValidator.anInt4793 == class46.anInt765) {
+                                        if (SpriteLoadValidatorStatics.anInt4793 == class46.anInt765) {
                                             if (PixelBlender.aBoolean3811 || GlowPostProcessor.aBoolean2514) {
                                                 val i_37_ = (class46.anInt709 + i_24_)
                                                 var i_38_ = 15 + i_25_

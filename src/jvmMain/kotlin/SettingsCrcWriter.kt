@@ -44,7 +44,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(96.toByte(), FixedFunctionWaterPass.aJs5Archive_7362!!.method389(-6))
         class348_sub49_sub2.writeInt(96.toByte(), NodeDequeStatics.aJs5Archive_3323!!.method389(-122))
         class348_sub49_sub2.writeInt(107.toByte(), Crc64Hashable.aJs5Archive_4984!!.method389(-107))
-        class348_sub49_sub2.writeInt(125.toByte(), SpriteLoadValidator.aJs5Archive_4796!!.method389(-118))
+        class348_sub49_sub2.writeInt(125.toByte(), SpriteLoadValidatorStatics.aJs5Archive_4796!!.method389(-118))
         class348_sub49_sub2.writeInt(90.toByte(), NpcCountAccessor.method1327(31))
         class348_sub49_sub2.writeInt(120.toByte(), method912(0))
         class348_sub49_sub2.writeInt(87.toByte(), HitsplatDefinition.aJs5Archive_2015!!.method389(-94))

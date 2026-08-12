@@ -63,7 +63,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
             anInt6866++
             LocTypeDefLoader.method1406(true)
             if (i == 0) {
-                FacingDirectionNodeStatics.aRenderer6654 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350) * 2, ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.aJs5Archive_4796)
+                FacingDirectionNodeStatics.aRenderer6654 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350) * 2, ParticleSystemRenderer.aCanvas3869, SpriteLoadValidatorStatics.aJs5Archive_4796)
                 if (string != null) {
                     FacingDirectionNodeStatics.aRenderer6654!!.GA(0)
                     val class143 = method1819(WidgetDefinition.anInt235, 0, -117, SoftwareSpriteRaster.aJs5Archive_1627!!)
@@ -74,7 +74,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
             } else {
                 var var_renderer: Renderer? = null
                 if (string != null) {
-                    var_renderer = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, 0, ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.aJs5Archive_4796)!!
+                    var_renderer = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, 0, ParticleSystemRenderer.aCanvas3869, SpriteLoadValidatorStatics.aJs5Archive_4796)!!
                     var_renderer.GA(0)
                     val class143 = method1819(WidgetDefinition.anInt235, 0, -115, SoftwareSpriteRaster.aJs5Archive_1627!!)
                     val class324 = var_renderer.method3686(class143, SpriteImage.method1519((CameraRotationStubStatics.aJs5Archive_322!!), WidgetDefinition.anInt235, 0), true)
@@ -82,7 +82,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
                     Tooltip.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
                 }
                 try {
-                    FacingDirectionNodeStatics.aRenderer6654 = SoftwareSpriteRaster.method958(true, i, SourceRowTextureNode.aRenderConfig9113, 2 * IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(i_1_ + -32350), ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.aJs5Archive_4796)
+                    FacingDirectionNodeStatics.aRenderer6654 = SoftwareSpriteRaster.method958(true, i, SourceRowTextureNode.aRenderConfig9113, 2 * IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(i_1_ + -32350), ParticleSystemRenderer.aCanvas3869, SpriteLoadValidatorStatics.aJs5Archive_4796)
                     if (string != null) {
                         var_renderer!!.GA(0)
                         val class143 = method1819(WidgetDefinition.anInt235, 0, -51, SoftwareSpriteRaster.aJs5Archive_1627!!)

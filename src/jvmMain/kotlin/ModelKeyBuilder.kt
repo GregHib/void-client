@@ -127,7 +127,7 @@ class ModelKeyBuilder : LinkedListNode() {
                 if (compositeNpcModelBuilder != null) {
                     for (i_39_ in 0..4) {
                         for (i_40_ in (GlWaterRenderPass.aShortArrayArrayArray7290)!!.indices) {
-                            if (compositeNpcModelBuilder.anIntArray2095!![i_39_] < (GlWaterRenderPass.aShortArrayArrayArray7290!![i_40_]!![i_39_])!!.size) abstractModel.ia((SpriteLoadValidator.aShortArrayArray4791!![i_40_]!![i_39_]), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_40_]!![i_39_]!![(compositeNpcModelBuilder.anIntArray2095!![i_39_])]))
+                            if (compositeNpcModelBuilder.anIntArray2095!![i_39_] < (GlWaterRenderPass.aShortArrayArrayArray7290!![i_40_]!![i_39_])!!.size) abstractModel.ia((SpriteLoadValidatorStatics.aShortArrayArray4791!![i_40_]!![i_39_]), (GlWaterRenderPass.aShortArrayArrayArray7290!![i_40_]!![i_39_]!![(compositeNpcModelBuilder.anIntArray2095!![i_39_])]))
                         }
                     }
                 }

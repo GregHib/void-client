@@ -37,7 +37,7 @@ import LocalPlayerState.method1137
 import PlayerUpdateDecoder.method1139
 import GlVertexBufferBase.Companion.method1149
 import GlArrayBufferObject.Companion.method1154
-import SpriteLoadValidator.Companion.method1159
+import SpriteLoadValidatorStatics.method1159
 import GlTextureBase.Companion.method237
 import ScreenBorderFiller.method1168
 import ScreenBorderFiller.method1169
@@ -659,15 +659,15 @@ class Client : GameAppletFrame() {
         if (Client.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186) TextureLoadExceptionStatics.aBoolean4599 = false
         if (GlRectangleTexture.aSceneProjector_8638 == Client.aSceneProjector_10434) {
             InputSettingsState.shiftClick = true
-            SpriteLoadValidator.aShortArrayArray4791 = FacingDirectionNodeStatics.aShortArrayArray6664
+            SpriteLoadValidatorStatics.aShortArrayArray4791 = FacingDirectionNodeStatics.aShortArrayArray6664
             LocDefinitionCache.anInt3439 = 16777215
             GlWaterRenderPass.aShortArrayArrayArray7290 = DisplaySettingsConfig.aShortArrayArrayArray7262
             LocDefinitionCache.anInt3444 = 0
         } else if (Client.aSceneProjector_10434 == CustomCursorsOptionState.aSceneProjector_5932) {
-            SpriteLoadValidator.aShortArrayArray4791 = LocDefinitionCache.aShortArrayArray3443
+            SpriteLoadValidatorStatics.aShortArrayArray4791 = LocDefinitionCache.aShortArrayArray3443
             GlWaterRenderPass.aShortArrayArrayArray7290 = ProjectedGroundDecor.aShortArrayArrayArray10253
         } else {
-            SpriteLoadValidator.aShortArrayArray4791 = InvertTextureNode.aShortArrayArray9424
+            SpriteLoadValidatorStatics.aShortArrayArray4791 = InvertTextureNode.aShortArrayArray9424
             GlWaterRenderPass.aShortArrayArrayArray7290 = BoundingBoxNode.aShortArrayArrayArray6736
         }
         CacheStateResetter.aServerConnectionInfo_125 = GlElementArrayBuffer.aServerConnectionInfo_4839

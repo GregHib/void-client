@@ -148,7 +148,7 @@ object ClientLoadStateMachine {
             FixedFunctionWaterPass.aJs5Archive_7362 = WorldMapTextLabel.method3571(true, 28, (-23).toByte(), 1)
             NodeDequeStatics.aJs5Archive_3323 = WorldMapTextLabel.method3571(false, 29, (-23).toByte(), 1)
             Crc64Hashable.aJs5Archive_4984 = WorldMapTextLabel.method3571(true, 30, (-23).toByte(), 1)
-            SpriteLoadValidator.aJs5Archive_4796 = WorldMapTextLabel.method3571(true, 31, (-23).toByte(), 1)
+            SpriteLoadValidatorStatics.aJs5Archive_4796 = WorldMapTextLabel.method3571(true, 31, (-23).toByte(), 1)
             HitsplatDefinition.aJs5Archive_2015 = WorldMapTextLabel.method3571(true, 36, (-23).toByte(), 2)
         }
         if (ConnectionStateType.aConnectionStateType_1031 == TimedTileQueueEntry.aConnectionStateType_9660) {
@@ -199,7 +199,7 @@ object ClientLoadStateMachine {
             Client.aMapSceneCache_413 = MapSceneCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             HoverActionEntryStatics.aSpriteStore_1813 = SpriteStore(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             ConstantColourTextureNode.aMapElementDefinitionCache_9245 = MapElementDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, BufferedRandomAccessFile.aJs5Archive_1322, RasterSpriteStatics.aJs5Archive_5207)
-            SpriteLoadValidator.aWorldMapImageBuilder_4787 = WorldMapImageBuilder(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            SpriteLoadValidatorStatics.aWorldMapImageBuilder_4787 = WorldMapImageBuilder(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             NpcUpdateProcessor.aConfigArchiveLoader_1523 = ConfigArchiveLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             WaterDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             RenderConfigFactoryStatics.aVarbitDefLoader_2981 = VarbitDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, MidiSequencePlayer.aJs5Archive_8926)
