@@ -1,5 +1,5 @@
 import TwoStateOptionState.Companion.method1847
-import MinimapShapeDrawer.Companion.method459
+import MinimapShapeDrawerStatics.method459
 import jaggl.OpenGL.Companion.glBindProgramARB
 import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable

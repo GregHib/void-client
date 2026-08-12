@@ -4316,14 +4316,14 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 3611) {
-                    if (MinimapShapeDrawer.aString863 == null) {
+                    if (MinimapShapeDrawerStatics.aString863 == null) {
                         aStringArray1152!![anInt1170++] = ""
                         return
-                    } else aStringArray1152!![anInt1170++] = SettingsCrcWriter.method1245(MinimapShapeDrawer.aString863!!, false)
+                    } else aStringArray1152!![anInt1170++] = SettingsCrcWriter.method1245(MinimapShapeDrawerStatics.aString863!!, false)
                     return
                 }
                 if (i == 3612) {
-                    if (MinimapShapeDrawer.aString863 == null) {
+                    if (MinimapShapeDrawerStatics.aString863 == null) {
                         anIntArray1149!![anInt1173++] = 0
                         return
                     } else anIntArray1149!![anInt1173++] = ByteArrayPool.anInt496
@@ -4331,7 +4331,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3613) {
                     val i_364_ = anIntArray1149!![--anInt1173]
-                    if (MinimapShapeDrawer.aString863 != null && i_364_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_364_]!!.aString314!!)
+                    if (MinimapShapeDrawerStatics.aString863 != null && i_364_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_364_]!!.aString314!!)
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -4340,7 +4340,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3614) {
                     val i_365_ = anIntArray1149!![--anInt1173]
-                    if (MinimapShapeDrawer.aString863 != null && i_365_ < ByteArrayPool.anInt496) anIntArray1149!![anInt1173++] = (HostPingThread.aWorldListEntryArray2261!![i_365_]!!.anInt308)
+                    if (MinimapShapeDrawerStatics.aString863 != null && i_365_ < ByteArrayPool.anInt496) anIntArray1149!![anInt1173++] = (HostPingThread.aWorldListEntryArray2261!![i_365_]!!.anInt308)
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4349,7 +4349,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3615) {
                     val i_366_ = anIntArray1149!![--anInt1173]
-                    if (MinimapShapeDrawer.aString863 != null && i_366_ < ByteArrayPool.anInt496) anIntArray1149!![anInt1173++] = (HostPingThread.aWorldListEntryArray2261!![i_366_]!!.aByte310).toInt()
+                    if (MinimapShapeDrawerStatics.aString863 != null && i_366_ < ByteArrayPool.anInt496) anIntArray1149!![anInt1173++] = (HostPingThread.aWorldListEntryArray2261!![i_366_]!!.aByte310).toInt()
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4423,7 +4423,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3626) {
                     val i_369_ = anIntArray1149!![--anInt1173]
-                    if (MinimapShapeDrawer.aString863 != null && i_369_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_369_]!!.aString313!!)
+                    if (MinimapShapeDrawerStatics.aString863 != null && i_369_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_369_]!!.aString313!!)
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -4461,7 +4461,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3632) {
                     val i_372_ = anIntArray1149!![--anInt1173]
-                    if (MinimapShapeDrawer.aString863 != null && i_372_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_372_]!!.aString306!!)
+                    if (MinimapShapeDrawerStatics.aString863 != null && i_372_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_372_]!!.aString306!!)
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return

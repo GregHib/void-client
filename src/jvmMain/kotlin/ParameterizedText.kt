@@ -169,7 +169,7 @@ class ParameterizedText : HashLinkedListNode() {
             InboundPacketHeader.aInboundPacketHeader_3133 = null
             method2296(-99)
             HslAdjustTextureNode.anInt9383 = 0
-            MinimapShapeDrawer.aString863 = null
+            MinimapShapeDrawerStatics.aString863 = null
             ByteArrayPool.anInt496 = 0
             HostPingThread.aWorldListEntryArray2261 = null
             MinimapSpriteRenderer.anInt4930 = 0

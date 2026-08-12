@@ -1375,7 +1375,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9839 = 0
             RenderQueueState.anInt6520 = 0
             GlRenderDevice.anInt9829 = 0
-            MinimapShapeDrawer.anInt861 = 0
+            MinimapShapeDrawerStatics.anInt861 = 0
             TrackedGroundDecor.anInt10380 = 0
             ScrollingWidgetComponentNode.anInt8380 = 0
             GlCubemapLightPass.anInt7314 = 0

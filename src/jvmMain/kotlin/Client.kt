@@ -410,7 +410,7 @@ import MapSceneRenderer.method387
 import NanoTimerStatics.method445
 import SpriteRenderable.Companion.method453
 import WorldMapElement.Companion.method180
-import MinimapShapeDrawer.Companion.method458
+import MinimapShapeDrawerStatics.method458
 import MinimapSquareDrawer.Companion.method460
 import MinimapLineDrawer.Companion.method471
 import NpcConfig.Companion.method486
@@ -4347,7 +4347,7 @@ class Client : GameAppletFrame() {
                 Client.anInt2986 = ResourceLoaderThread.anInt3918
                 if (RadialTextureNode.anInt9341 == 0) {
                     ByteArrayPool.anInt496 = 0
-                    MinimapShapeDrawer.aString863 = null
+                    MinimapShapeDrawerStatics.aString863 = null
                     HostPingThread.aWorldListEntryArray2261 = null
                     CameraSplineNodeStatics.aString6854 = null
                     InboundPacketHeader.aInboundPacketHeader_6584 = null
@@ -4357,7 +4357,7 @@ class Client : GameAppletFrame() {
                 var bool_233_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                 if (bool_233_) CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readString(108.toByte())
                 val l = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readLong(-456577760)
-                MinimapShapeDrawer.aString863 = ProjectileConfigUtil.method313(l, -104)
+                MinimapShapeDrawerStatics.aString863 = ProjectileConfigUtil.method313(l, -104)
                 ModelDefinitionCache.aByte2871 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByte(-90)
                 val i = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 if (i == 255) {
