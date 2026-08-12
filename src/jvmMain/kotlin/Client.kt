@@ -434,8 +434,8 @@ import ProportionalScrollbarComponent.Companion.method190
 import SolidFillComponent.Companion.method191
 import SolidFillComponent.Companion.method193
 import SolidFillComponent.Companion.method198
-import IdentKitRecolor.Companion.method207
-import IdentKitRecolor.Companion.method208
+import IdentKitRecolorStatics.method207
+import IdentKitRecolorStatics.method208
 import TerrainChunkBuilder.Companion.method584
 import GameClock.method598
 import GameClock.method599

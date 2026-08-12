@@ -113,7 +113,7 @@ class SceneNodeDeque {
         var anInt1504: Int = 0
         fun method841(i: Int): Array<BoxedIntHolder?> {
             anInt1504++
-            return (arrayOf<BoxedIntHolder?>(aBoxedIntHolder_2568, MinimapRenderer.aBoxedIntHolder_1591, IdentKitRecolor.aBoxedIntHolder_151))
+            return (arrayOf<BoxedIntHolder?>(aBoxedIntHolder_2568, MinimapRenderer.aBoxedIntHolder_1591, IdentKitRecolorStatics.aBoxedIntHolder_151))
         }
 
         var aBoxedIntHolder_2568: BoxedIntHolder? = BoxedIntHolder(0)

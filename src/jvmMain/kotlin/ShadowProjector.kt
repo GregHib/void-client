@@ -1,4 +1,4 @@
-import IdentKitRecolor.Companion.method206
+import IdentKitRecolorStatics.method206
 
 /* Class109 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

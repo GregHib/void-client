@@ -844,7 +844,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MidiSequencePlayer.anInt8948 = 0
             NativeRenderer.anInt7986 = 0
             SphereMapMaterialPass.anInt6319 = 0
-            IdentKitRecolor.anInt2898 = 0
+            IdentKitRecolorStatics.anInt2898 = 0
             ByteBufferStatics.anInt7201 = 0
             SeqDefinitionCache.anInt3358 = 0
             SoundChannelMixer.anInt3597 = 0
@@ -1190,7 +1190,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MapSceneRenderer.anInt622 = 0
             TextureMaterialGroup.anInt9677 = 0
             NoOpGraphicsOptionState.anInt6039 = 0
-            IdentKitRecolor.anInt155 = 0
+            IdentKitRecolorStatics.anInt155 = 0
             NativeRenderer.anInt7979 = 0
             CameraDistanceOptionState.anInt5853 = 0
             OpenGlRenderer.anInt7571 = 0
@@ -1928,7 +1928,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CubeMapMaterialPass.anInt6298 = 0
             BufferedFileReader.anInt4536 = 0
             ChatEffectsOptionState.anInt5863 = 0
-            IdentKitRecolor.anInt152 = 0
+            IdentKitRecolorStatics.anInt152 = 0
             ArbVertexProgram.anInt9777 = 0
             TwoStateOptionState.anInt6137 = 0
             ModelGroundDecor.anInt10029 = 0
@@ -1950,7 +1950,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SocketGameConnection.anInt5833 = 0
             MidiSequencePlayer.anInt8907 = 0
             MouseInputTracker.anInt7447 = 0
-            IdentKitRecolor.anInt153 = 0
+            IdentKitRecolorStatics.anInt153 = 0
             OpenGlModel.anInt5651 = 0
             CacheArchiveIndexLoader.anInt459 = 0
             DynamicSceneObjectEntity.anInt10197 = 0
@@ -2334,7 +2334,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             LocalizedText.anInt3479 = 0
             RenderbufferObject.anInt8570 = 0
             GlFramebufferBlitter.anInt283 = 0
-            IdentKitRecolor.anInt149 = 0
+            IdentKitRecolorStatics.anInt149 = 0
             ChatMessageStream.anInt103 = 0
             OggBitstreamDecoder.anInt6866 = 0
             OpenGlModel.anInt5622 = 0
@@ -3970,7 +3970,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ProjectionCameraTransform.anInt5748 = 0
             GlDisplayListFont.anInt1107 = 0
             SequencedActorEntity.anInt10112 = 0
-            IdentKitRecolor.anInt147 = 0
+            IdentKitRecolorStatics.anInt147 = 0
             GlVertexBufferArb.anInt8490 = 0
             Direct3dModel.anInt5454 = 0
             ChatEffectsOptionState.anInt5858 = 0

@@ -643,9 +643,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                             is_107_[i_206_].toFloat(),
                                             is_107_[i_207_].toFloat(),
                                             is_107_[i_208_].toFloat(),
-                                            (IdentKitRecolor.method206((class145.anIntArray2001!![i_206_]), (is_108_[i_206_] shl 24 or (particleSystemState.anInt2192)), 255)),
-                                            (IdentKitRecolor.method206((class145.anIntArray2001!![i_207_]), (is_108_[i_207_] shl 24 or (particleSystemState.anInt2192)), 255)),
-                                            (IdentKitRecolor.method206((class145.anIntArray2001!![i_208_]), (is_108_[i_208_] shl 24 or (particleSystemState.anInt2192)), 255))
+                                            (IdentKitRecolorStatics.method206((class145.anIntArray2001!![i_206_]), (is_108_[i_206_] shl 24 or (particleSystemState.anInt2192)), 255)),
+                                            (IdentKitRecolorStatics.method206((class145.anIntArray2001!![i_207_]), (is_108_[i_207_] shl 24 or (particleSystemState.anInt2192)), 255)),
+                                            (IdentKitRecolorStatics.method206((class145.anIntArray2001!![i_208_]), (is_108_[i_208_] shl 24 or (particleSystemState.anInt2192)), 255))
                                         )
                                         shadowProjector.anInt1674 = 0
                                     }
@@ -743,9 +743,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                             is_107_[i_220_].toFloat(),
                                             is_107_[i_221_].toFloat(),
                                             is_107_[i_222_].toFloat(),
-                                            (IdentKitRecolor.method206((class145.anIntArray2001!![i_220_]), (is_108_[i_220_] shl 24 or (particleSystemState.anInt2192)), 255)),
-                                            (IdentKitRecolor.method206((class145.anIntArray2001!![i_221_]), (is_108_[i_221_] shl 24 or (particleSystemState.anInt2192)), 255)),
-                                            (IdentKitRecolor.method206((class145.anIntArray2001!![i_222_]), (is_108_[i_222_] shl 24 or (particleSystemState.anInt2192)), 255))
+                                            (IdentKitRecolorStatics.method206((class145.anIntArray2001!![i_220_]), (is_108_[i_220_] shl 24 or (particleSystemState.anInt2192)), 255)),
+                                            (IdentKitRecolorStatics.method206((class145.anIntArray2001!![i_221_]), (is_108_[i_221_] shl 24 or (particleSystemState.anInt2192)), 255)),
+                                            (IdentKitRecolorStatics.method206((class145.anIntArray2001!![i_222_]), (is_108_[i_222_] shl 24 or (particleSystemState.anInt2192)), 255))
                                         )
                                         shadowProjector.anInt1674 = 0
                                     }
@@ -1021,9 +1021,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     f_119_.toInt().toFloat(),
                                     f_120_.toInt().toFloat(),
                                     f_118_.toInt().toFloat(),
-                                    (IdentKitRecolor.method206(class266.anInt3380, (i_116_ shl 24 or particleSystemState.anInt2192), 255)),
-                                    (IdentKitRecolor.method206(class266.anInt3381, (i_117_ shl 24 or particleSystemState.anInt2192), 255)),
-                                    (IdentKitRecolor.method206(class266.anInt3387, (i_115_ shl 24 or particleSystemState.anInt2192), 255))
+                                    (IdentKitRecolorStatics.method206(class266.anInt3380, (i_116_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (IdentKitRecolorStatics.method206(class266.anInt3381, (i_117_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (IdentKitRecolorStatics.method206(class266.anInt3387, (i_115_ shl 24 or particleSystemState.anInt2192), 255))
                                 )
                                 shadowProjector.anInt1674 = 0
                             }
@@ -1060,9 +1060,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     f.toInt().toFloat(),
                                     f_118_.toInt().toFloat(),
                                     f_120_.toInt().toFloat(),
-                                    (IdentKitRecolor.method206(class266.anInt3389, (i_114_ shl 24 or particleSystemState.anInt2192), 255)),
-                                    (IdentKitRecolor.method206(class266.anInt3387, (i_115_ shl 24 or particleSystemState.anInt2192), 255)),
-                                    (IdentKitRecolor.method206(class266.anInt3381, (i_117_ shl 24 or particleSystemState.anInt2192), 255))
+                                    (IdentKitRecolorStatics.method206(class266.anInt3389, (i_114_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (IdentKitRecolorStatics.method206(class266.anInt3387, (i_115_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (IdentKitRecolorStatics.method206(class266.anInt3381, (i_117_ shl 24 or particleSystemState.anInt2192), 255))
                                 )
                                 shadowProjector.anInt1674 = 0
                             }
@@ -1100,9 +1100,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     f_119_.toInt().toFloat(),
                                     f_120_.toInt().toFloat(),
                                     f_118_.toInt().toFloat(),
-                                    (IdentKitRecolor.method206(class266.anInt3380, (i_116_ shl 24 or particleSystemState.anInt2192), 255)),
-                                    (IdentKitRecolor.method206(class266.anInt3381, (i_117_ shl 24 or particleSystemState.anInt2192), 255)),
-                                    (IdentKitRecolor.method206(class266.anInt3387, (i_115_ shl 24 or particleSystemState.anInt2192), 255))
+                                    (IdentKitRecolorStatics.method206(class266.anInt3380, (i_116_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (IdentKitRecolorStatics.method206(class266.anInt3381, (i_117_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (IdentKitRecolorStatics.method206(class266.anInt3387, (i_115_ shl 24 or particleSystemState.anInt2192), 255))
                                 )
                                 shadowProjector.anInt1674 = 0
                             }
@@ -1139,9 +1139,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                     f.toInt().toFloat(),
                                     f_118_.toInt().toFloat(),
                                     f_120_.toInt().toFloat(),
-                                    (IdentKitRecolor.method206(class266.anInt3389, (i_114_ shl 24 or particleSystemState.anInt2192), 255)),
-                                    (IdentKitRecolor.method206(class266.anInt3387, (i_115_ shl 24 or particleSystemState.anInt2192), 255)),
-                                    (IdentKitRecolor.method206(class266.anInt3381, (i_117_ shl 24 or particleSystemState.anInt2192), 255))
+                                    (IdentKitRecolorStatics.method206(class266.anInt3389, (i_114_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (IdentKitRecolorStatics.method206(class266.anInt3387, (i_115_ shl 24 or particleSystemState.anInt2192), 255)),
+                                    (IdentKitRecolorStatics.method206(class266.anInt3381, (i_117_ shl 24 or particleSystemState.anInt2192), 255))
                                 )
                                 shadowProjector.anInt1674 = 0
                             }
@@ -1222,8 +1222,8 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                 shadowProjector.method1027(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, class266.anInt3389, class266.anInt3387, class266.anInt3381)
                             } else {
                                 val i_274_ = class266.anInt3388
-                                shadowProjector.method1027((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, IdentKitRecolor.method206(i_274_, (class266.anInt3380) and 0xffffff.inv(), 255), IdentKitRecolor.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255), IdentKitRecolor.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255))
-                                shadowProjector.method1027(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, IdentKitRecolor.method206(i_274_, (class266.anInt3389) and 0xffffff.inv(), 255), IdentKitRecolor.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255), IdentKitRecolor.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255))
+                                shadowProjector.method1027((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, IdentKitRecolorStatics.method206(i_274_, (class266.anInt3380) and 0xffffff.inv(), 255), IdentKitRecolorStatics.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255), IdentKitRecolorStatics.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255))
+                                shadowProjector.method1027(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, IdentKitRecolorStatics.method206(i_274_, (class266.anInt3389) and 0xffffff.inv(), 255), IdentKitRecolorStatics.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255), IdentKitRecolorStatics.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255))
                             }
                         } else if (aTerrainTileDataArrayArray8225!![i_271_]!![i_272_] != null) {
                             val class145 = aTerrainTileDataArrayArray8225!![i_271_]!![i_272_]!!
@@ -1253,9 +1253,9 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
                                         100.0f,
                                         100.0f,
                                         100.0f,
-                                        IdentKitRecolor.method206(i_286_, (-16777216 - ((class145.anIntArray2001!![i_277_]) and 0xffffff.inv())), 255),
-                                        IdentKitRecolor.method206(i_286_, (-16777216 - ((class145.anIntArray2001!![i_278_]) and 0xffffff.inv())), 255),
-                                        IdentKitRecolor.method206(i_286_, (-16777216 - ((class145.anIntArray2001!![i_279_]) and 0xffffff.inv())), 255)
+                                        IdentKitRecolorStatics.method206(i_286_, (-16777216 - ((class145.anIntArray2001!![i_277_]) and 0xffffff.inv())), 255),
+                                        IdentKitRecolorStatics.method206(i_286_, (-16777216 - ((class145.anIntArray2001!![i_278_]) and 0xffffff.inv())), 255),
+                                        IdentKitRecolorStatics.method206(i_286_, (-16777216 - ((class145.anIntArray2001!![i_279_]) and 0xffffff.inv())), 255)
                                     )
                                 } else if ((class145.aShortArray2008) != null && ((class145.aShortArray2008!![i_276_]).toInt() != -1)) {
                                     val i_287_ = (aHa_Sub1_8217.method3722(class145.aShortArray2008!![i_276_].toInt()))
