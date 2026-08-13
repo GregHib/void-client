@@ -8,7 +8,6 @@ object TileTransform {
     @JvmStatic
     fun method1907(i: Byte) {
         aCameraRotationStub_3217 = null
-        val i_0_ = -55 / ((i - -39) / 60)
     }
 
     fun method1908(i: Int, i_1_: Int, i_2_: Int, bool: Boolean, i_3_: Int, i_4_: Int, i_5_: Int): Int {
