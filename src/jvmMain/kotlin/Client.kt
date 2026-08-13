@@ -188,7 +188,7 @@ import ClanChatRequestSender.method2107
 import NpcEntityUpdater.method2111
 import DataHolderStatics.method2113
 import DataHolderStatics.method2114
-import ViewportTransform.Companion.method2117
+import ViewportTransformStatics.method2117
 import GlBufferObject.Companion.method2124
 import GlIndexBufferArb.Companion.method2132
 import MaterialPass.Companion.method2135

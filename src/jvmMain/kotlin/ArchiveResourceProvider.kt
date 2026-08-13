@@ -429,7 +429,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
                 GradientLookupEffect.method3076(0, true)
                 i_6_ = 1
             } else {
-                val i_7_ = ViewportTransform.method2116(-26584)
+                val i_7_ = ViewportTransformStatics.method2116(-26584)
                 if (i_7_ > 100) {
                     if (i_7_ <= 500) {
                         i_6_ = 3

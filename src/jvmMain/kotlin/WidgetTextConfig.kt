@@ -139,10 +139,10 @@ class WidgetTextConfig {
                 MinimapFlagRenderer.anInt1794 = -1
             }
             if (NodeDequeHolder.anInt1565 != 0) {
-                ViewportTransform.anInt3676 -= NodeDequeHolder.anInt1565 * 5
-                if (ViewportTransform.anInt3676 >= WorldMapTextLabel.anInt8587) ViewportTransform.anInt3676 = -1 + WorldMapTextLabel.anInt8587
+                ViewportTransformStatics.anInt3676 -= NodeDequeHolder.anInt1565 * 5
+                if (ViewportTransformStatics.anInt3676 >= WorldMapTextLabel.anInt8587) ViewportTransformStatics.anInt3676 = -1 + WorldMapTextLabel.anInt8587
                 NodeDequeHolder.anInt1565 = 0
-                if (ViewportTransform.anInt3676 < 0) ViewportTransform.anInt3676 = 0
+                if (ViewportTransformStatics.anInt3676 < 0) ViewportTransformStatics.anInt3676 = 0
             }
             if (i >= 124) {
                 var i_6_ = 0

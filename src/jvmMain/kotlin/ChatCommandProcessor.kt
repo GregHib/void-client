@@ -4131,7 +4131,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 3338) {
-                    anIntArray1149!![anInt1173++] = ViewportTransform.method2116(-26584)
+                    anIntArray1149!![anInt1173++] = ViewportTransformStatics.method2116(-26584)
                     return
                 }
                 if (i == 3339) {

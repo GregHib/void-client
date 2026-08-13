@@ -139,16 +139,16 @@ object IdentKitRecolorStatics {
                     val i_38_ = 342 + -MovementDirection.anInt1188
                     val i_39_ = (i_37_ * i_38_ / (-1 + (i_37_ - -WorldMapTextLabel.anInt8587)))
                     var i_40_ = 4
-                    if (WorldMapTextLabel.anInt8587 > 1) i_40_ += ((WorldMapTextLabel.anInt8587 + (-1 + -ViewportTransform.anInt3676)) * (i_38_ - i_39_) / (WorldMapTextLabel.anInt8587 + -1))
+                    if (WorldMapTextLabel.anInt8587 > 1) i_40_ += ((WorldMapTextLabel.anInt8587 + (-1 + -ViewportTransformStatics.anInt3676)) * (i_38_ - i_39_) / (WorldMapTextLabel.anInt8587 + -1))
                     var_renderer.aa(-16 + (LocTypeDefinition.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 2)
-                    var i_41_ = ViewportTransform.anInt3676
-                    while (((i_41_ < i_37_ + ViewportTransform.anInt3676) && WorldMapTextLabel.anInt8587 > i_41_)) {
+                    var i_41_ = ViewportTransformStatics.anInt3676
+                    while (((i_41_ < i_37_ + ViewportTransformStatics.anInt3676) && WorldMapTextLabel.anInt8587 > i_41_)) {
                         val strings = (TurbulenceTextureNode.method3113('\u0008', true, ArbFogMaterialPass.aStringArray6200!![i_41_]!!))
                         val i_42_ = (-16 + LocTypeDefinition.anInt4017 + -8) / strings.size
                         for (i_43_ in strings.indices) {
                             val i_44_ = i_42_ * i_43_ + 8
                             var_renderer.KA(i_35_ + i_44_, i_36_, i_42_ + i_35_ - (-i_44_ - -8), i_36_ + 350)
-                            GameAppletFrame.aRSFont_20!!.method2576(BackgroundWorkerThread.method1909(31.toByte(), strings[i_43_]!!), -1, (-((-ViewportTransform.anInt3676 + i_41_) * MovementDirection.anInt1188) + (-ProducerImageSurface.anInt9077 + i_36_ - (-350 - (-2 + -(ParticleEmitterFactoryStatics.aFontDefinition_3179!!.anInt1993))))), i_35_ + i_44_, -16777216, -110)
+                            GameAppletFrame.aRSFont_20!!.method2576(BackgroundWorkerThread.method1909(31.toByte(), strings[i_43_]!!), -1, (-((-ViewportTransformStatics.anInt3676 + i_41_) * MovementDirection.anInt1188) + (-ProducerImageSurface.anInt9077 + i_36_ - (-350 - (-2 + -(ParticleEmitterFactoryStatics.aFontDefinition_3179!!.anInt1993))))), i_35_ + i_44_, -16777216, -110)
                         }
                         i_41_++
                     }

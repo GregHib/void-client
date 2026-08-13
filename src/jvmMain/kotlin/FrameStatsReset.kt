@@ -1912,7 +1912,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             BufferPositionTracker.anInt3148 = 0
             Npc.anInt10502 = 0
             StringValueNodeStatics.anInt7109 = 0
-            ViewportTransform.anInt3665 = 0
+            ViewportTransformStatics.anInt3665 = 0
             FontDefinition.anInt1984 = 0
             BrightnessOptionState.anInt5896 = 0
             Js5Archive.anInt8015 = 0

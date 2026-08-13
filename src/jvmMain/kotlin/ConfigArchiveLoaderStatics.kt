@@ -54,7 +54,7 @@ object ConfigArchiveLoaderStatics {
                     return
                 }
                 if (string.equals("cls", ignoreCase = true)) {
-                    ViewportTransform.anInt3676 = 0
+                    ViewportTransformStatics.anInt3676 = 0
                     WorldMapTextLabel.anInt8587 = 0
                     return
                 }
@@ -503,7 +503,7 @@ object ConfigArchiveLoaderStatics {
                         return
                     }
                     if (string == "profilecpu") {
-                        method94((ViewportTransform.method2116(-26584).toString() + "ms"), 87)
+                        method94((ViewportTransformStatics.method2116(-26584).toString() + "ms"), 87)
                         return
                     }
                     if (string.startsWith("getclientvarpbit")) {

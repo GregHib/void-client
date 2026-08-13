@@ -568,7 +568,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 }
                 if (-1 + ArbFogMaterialPass.aStringArray6200!!.size > WorldMapTextLabel.anInt8587) {
                     WorldMapTextLabel.anInt8587++
-                    if (ViewportTransform.anInt3676 > 0) ViewportTransform.anInt3676++
+                    if (ViewportTransformStatics.anInt3676 > 0) ViewportTransformStatics.anInt3676++
                 }
             }
         }
