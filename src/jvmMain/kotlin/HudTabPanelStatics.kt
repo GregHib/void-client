@@ -55,17 +55,17 @@ object HudTabPanelStatics {
                     class348_sub42_sub13 = (ParticleSortRenderer.Companion.aLinkedNodeListIterator_3022!!.method1003(44.toByte()) as? ContactList?)
                 }
                 if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null) {
-                    SpotAnimEntity.method2509(TerrainTileShape.anInt8806, InputTracker.anInt4534, var_renderer, MinimapPolygonDrawer.anInt5252, i_5_, true, ClickFeedbackTask.anInt4669, -16777216)
+                    SpotAnimEntity.method2509(TerrainTileShapeStatics.anInt8806, InputTracker.anInt4534, var_renderer, MinimapPolygonDrawer.anInt5252, i_5_, true, ClickFeedbackTask.anInt4669, -16777216)
                     i_8_ = 0
                     NodeDequeStatics.aRSFont_3326!!.method2576(ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aString9617, i_5_, InputTracker.anInt4534 - -14, 3 + MinimapPolygonDrawer.anInt5252, -1, -126)
                     var class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1011(-84) as? ContactEntry?)
                     while (class348_sub42_sub12 != null) {
                         val i_10_ = 31 + (InputTracker.anInt4534 + i_8_ * 16)
                         i_8_++
-                        SceneModelBuilderStatics.method2494(InputTracker.anInt4534, -256, i_10_, var_renderer, class348_sub42_sub12, TerrainTileShape.anInt8806, i_7_, -1, 125.toByte(), ClickFeedbackTask.anInt4669, MinimapPolygonDrawer.anInt5252, i_6_)
+                        SceneModelBuilderStatics.method2494(InputTracker.anInt4534, -256, i_10_, var_renderer, class348_sub42_sub12, TerrainTileShapeStatics.anInt8806, i_7_, -1, 125.toByte(), ClickFeedbackTask.anInt4669, MinimapPolygonDrawer.anInt5252, i_6_)
                         class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(73.toByte()) as? ContactEntry?)
                     }
-                    SoundCacheState.method2642(TerrainTileShape.anInt8806, InputTracker.anInt4534, true, MinimapPolygonDrawer.anInt5252, ClickFeedbackTask.anInt4669)
+                    SoundCacheState.method2642(TerrainTileShapeStatics.anInt8806, InputTracker.anInt4534, true, MinimapPolygonDrawer.anInt5252, ClickFeedbackTask.anInt4669)
                 }
             } else {
                 var i_11_ = 0

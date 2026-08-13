@@ -3323,7 +3323,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MapLabelMenuEntry.anInt5793 = 0
             LongHashTable.anInt447 = 0
             ServerConnectionInfo.anInt2144 = 0
-            TerrainTileShape.anInt8802 = 0
+            TerrainTileShapeStatics.anInt8802 = 0
             GlTexture.anInt4862 = 0
             GlBloomEffect.anInt8831 = 0
             ProjectileConfigUtil.anInt391 = 0
@@ -3540,7 +3540,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RSFont.anInt4056 = 0
             SineWaveTextureNode.anInt9454 = 0
             ResourceLoaderThread.anInt3905 = 0
-            TerrainTileShape.anInt8804 = 0
+            TerrainTileShapeStatics.anInt8804 = 0
             WorldMapToggle.anInt3876 = 0
             NativeRenderer.anInt7928 = 0
             ScriptCompilerThread.anInt1736 = 0

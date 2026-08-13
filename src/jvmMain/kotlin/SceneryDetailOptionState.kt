@@ -135,7 +135,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                 TextureDefinitionCache.method1626(1, true)
                 if (i_10_ == 0) i_10_ = 1
                 if (i_9_ == 0) i_9_ = 1
-                if (TerrainTileShape.aTerrainTileArray8801 != null && (!RenderNodeStatics.aBoolean9722 || (0x40 and WidgetTextConfig.anInt500) != 0)) {
+                if (TerrainTileShapeStatics.aTerrainTileArray8801 != null && (!RenderNodeStatics.aBoolean9722 || (0x40 and WidgetTextConfig.anInt500) != 0)) {
                     var i_13_ = -1
                     var i_14_ = -1
                     val i_15_ = var_renderer.i()

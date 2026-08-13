@@ -133,7 +133,7 @@ object LongKeyNodeStatics {
                                 i_26_++
                             }
                         }
-                        TerrainTileShape.aTerrainTileArray8801!![i_24_]!!.method3987(0, 0, 1024, i_20_, i_21_, i_22_, i_23_, bools)
+                        TerrainTileShapeStatics.aTerrainTileArray8801!![i_24_]!!.method3987(0, 0, 1024, i_20_, i_21_, i_22_, i_23_, bools)
                         if (!PlayerAppearanceUpdateDecoder.aBoolean4542) {
                             for (i_27_ in -4..<TextureLoadExceptionStatics.anInt4600) {
                                 for (i_28_ in -4..<TextureLoadExceptionStatics.anInt4600) {

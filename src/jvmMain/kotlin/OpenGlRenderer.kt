@@ -4134,12 +4134,12 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 val i_9_ = class318_sub1_sub3_sub3!!.method2425(-1)
                 if (i_9_ != -1) {
                     val `object`: Any? = null
-                    var abstractModelRenderer = (TerrainTileShape.aLruByteCache_8807!!.method583(i_9_.toLong(), 118) as? AbstractModelRenderer?)
+                    var abstractModelRenderer = (TerrainTileShapeStatics.aLruByteCache_8807!!.method583(i_9_.toLong(), 118) as? AbstractModelRenderer?)
                     if (abstractModelRenderer == null) {
                         val spriteImages = SpriteImage.method1519(CameraRotationStubStatics.aJs5Archive_322!!, i_9_, 0)
                         if (spriteImages == null) return
                         abstractModelRenderer = FacingDirectionNodeStatics.aRenderer6654!!.method3691(spriteImages[0], true)
-                        TerrainTileShape.aLruByteCache_8807!!.method582(abstractModelRenderer, i_9_.toLong(), (-115).toByte())
+                        TerrainTileShapeStatics.aLruByteCache_8807!!.method582(abstractModelRenderer, i_9_.toLong(), (-115).toByte())
                     }
                     method165(class318_sub1_sub3_sub3_8_!!.plane.toInt(), i_5_, 0, i_3_ shr 1, class318_sub1_sub3_sub3_8_.x, class318_sub1_sub3_sub3_8_.method2436(126.toByte()) * 256, class318_sub1_sub3_sub3_8_.y, 92.toByte(), i_6_ shr 1, i_2_)
                     var i_10_ = i_7_ + (RemoveRoofsOptionState.anIntArray6062!![0] + -18)

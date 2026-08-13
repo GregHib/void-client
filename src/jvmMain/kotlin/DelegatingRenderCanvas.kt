@@ -264,14 +264,14 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     NanoTimerStatics.aBoolean845 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i xor 0x7e5d.inv()) == 1
                     MapTileShape.aClass237_Sub1_4197 = WorldMapSceneSoftware(4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, false)
                     if (WidgetRedrawTracker.anInt3931 != 0) MapSceneRenderer.method385(false, MapTileShape.aClass237_Sub1_4197, DragDropControllerStatics.aByteArrayArray4281)
-                    else TerrainTileShape.method2727((-65).toByte(), MapTileShape.aClass237_Sub1_4197, (DragDropControllerStatics.aByteArrayArray4281))
+                    else TerrainTileShapeStatics.method2727((-65).toByte(), MapTileShape.aClass237_Sub1_4197, (DragDropControllerStatics.aByteArrayArray4281))
                     GroundItemRenderState.method1015(GlCubemapLightPass.anInt7319 shr 4, (RangeThresholdTextureNode.anInt9109 shr 4), true)
                     Client.method3175((-77).toByte())
                     if (bool_25_) {
                         DoublyLinkedNodeList.method1879(true)
                         VarpStore.aClass237_Sub1_5067 = WorldMapSceneSoftware(1, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, true)
                         if (WidgetRedrawTracker.anInt3931 == 0) {
-                            TerrainTileShape.method2727((-44).toByte(), (VarpStore.aClass237_Sub1_5067), (RegionMapDecoder.aByteArrayArray1887))
+                            TerrainTileShapeStatics.method2727((-44).toByte(), (VarpStore.aClass237_Sub1_5067), (RegionMapDecoder.aByteArrayArray1887))
                             RegionSceneLoader.method2193(true, (-119).toByte())
                         } else {
                             MapSceneRenderer.method385(false, VarpStore.aClass237_Sub1_5067, RegionMapDecoder.aByteArrayArray1887)
@@ -303,7 +303,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         else ObjectSpawnDecoder.method1090((VorbisOggDecoder.aByteArrayArray8996), i + 65536, VarpStore.aClass237_Sub1_5067)
                         InterfaceBounds.method2938(73.toByte())
                         RegionSceneLoader.method2193(true, (-121).toByte())
-                        VarpStore.aClass237_Sub1_5067!!.method1680((TerrainTileShape.aTerrainTileArray8801!![0]), (-127).toByte(), null, (FacingDirectionNodeStatics.aRenderer6654))
+                        VarpStore.aClass237_Sub1_5067!!.method1680((TerrainTileShapeStatics.aTerrainTileArray8801!![0]), (-127).toByte(), null, (FacingDirectionNodeStatics.aRenderer6654))
                         VarpStore.aClass237_Sub1_5067!!.method1697(true, FacingDirectionNodeStatics.aRenderer6654, i + -60)
                         RegionSceneLoader.method2193(true, (-126).toByte())
                         DoublyLinkedNodeList.method1879(false)

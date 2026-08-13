@@ -8,7 +8,7 @@ object ShaderProgramStatics {
     fun method3437(i: Int, i_0_: Int) {
         var var_renderNode: RenderNode? = null
         for (i_1_ in i..<i_0_) {
-            val var_s = TerrainTileShape.aTerrainTileArray8801!![i_1_]
+            val var_s = TerrainTileShapeStatics.aTerrainTileArray8801!![i_1_]
             if (var_s != null) {
                 for (i_2_ in 0..<ActorEntity.anInt7054) {
                     for (i_3_ in 0..<ActorEntity.anInt6451) {
@@ -17,7 +17,7 @@ object ShaderProgramStatics {
                             val i_4_ = i_3_ shl ActorEntity.anInt4459
                             val i_5_ = i_2_ shl ActorEntity.anInt4459
                             for (i_6_ in i_1_ - 1 downTo 0) {
-                                val var_s_7_ = TerrainTileShape.aTerrainTileArray8801!![i_6_]
+                                val var_s_7_ = TerrainTileShapeStatics.aTerrainTileArray8801!![i_6_]
                                 if (var_s_7_ != null) {
                                     val i_8_ = (var_s.method3982((-86).toByte(), i_2_, i_3_) - var_s_7_.method3982((-86).toByte(), i_2_, i_3_))
                                     val i_9_ = (var_s.method3982((-86).toByte(), i_2_, i_3_ + 1) - var_s_7_.method3982((-86).toByte(), i_2_, i_3_ + 1))

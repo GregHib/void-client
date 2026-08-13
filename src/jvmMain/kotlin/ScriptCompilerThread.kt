@@ -182,7 +182,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
                                 class348_sub42_sub13 = (linkedListIterator.method1243(77.toByte()) as? ContactList)
                             }
                         }
-                    } else if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null && MinimapPolygonDrawer.anInt5252 < i_2_ && (TerrainTileShape.anInt8806 + MinimapPolygonDrawer.anInt5252) > i_2_) {
+                    } else if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null && MinimapPolygonDrawer.anInt5252 < i_2_ && (TerrainTileShapeStatics.anInt8806 + MinimapPolygonDrawer.anInt5252) > i_2_) {
                         var i_4_ = -1
                         var i_5_ = 0
                         while (((ManagedGlResource.aClass348_Sub42_Sub13_3152!!.anInt9615) > i_5_)) {

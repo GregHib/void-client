@@ -60,10 +60,10 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
         val var_terrainTile_5_: TerrainTile?
         if (aBoolean9983) {
             var_terrainTile = ActorEntity.aTerrainTileArray4142!![this.aByte6376.toInt()]
-            var_terrainTile_5_ = TerrainTileShape.aTerrainTileArray8801!![0]
+            var_terrainTile_5_ = TerrainTileShapeStatics.aTerrainTileArray8801!![0]
         } else {
-            var_terrainTile = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376.toInt()])
-            if (this.aByte6376 < 3) var_terrainTile_5_ = (TerrainTileShape.aTerrainTileArray8801!![1 + this.aByte6376])
+            var_terrainTile = (TerrainTileShapeStatics.aTerrainTileArray8801!![this.aByte6376.toInt()])
+            if (this.aByte6376 < 3) var_terrainTile_5_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![1 + this.aByte6376])
             else var_terrainTile_5_ = null
         }
         return class51.method476(var_renderer, var_terrainTile_5_, 22, i, this.x, bool, var_terrainTile, this.anInt6382, this.y, aByte9980.toInt(), 128)

@@ -97,15 +97,15 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
                 }
                 if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null) {
                     i_15_ = 0
-                    method2270(TerrainTileShape.anInt8806, MinimapPolygonDrawer.anInt5252, var_renderer, (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aString9617), false, InputTracker.anInt4534, ClickFeedbackTask.anInt4669, i_10_)
+                    method2270(TerrainTileShapeStatics.anInt8806, MinimapPolygonDrawer.anInt5252, var_renderer, (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aString9617), false, InputTracker.anInt4534, ClickFeedbackTask.anInt4669, i_10_)
                     var class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1011(-44) as? ContactEntry?)
                     while (class348_sub42_sub12 != null) {
                         val i_17_ = i_15_ * 16 + (InputTracker.anInt4534 + i_10_ - -13)
-                        if (MinimapPolygonDrawer.anInt5252 < i_11_ && (MinimapPolygonDrawer.anInt5252 - -TerrainTileShape.anInt8806) > i_11_ && -13 + i_17_ < i_12_ && i_17_ - -4 > i_12_ && (class348_sub42_sub12.aBoolean9610)) var_renderer.aa(MinimapPolygonDrawer.anInt5252, i_17_ - 12, TerrainTileShape.anInt8806, 16, (-ShortMatrixNodeStatics.anInt9511 + 255 shl 24) or CompassSmoother.anInt3374, 1)
+                        if (MinimapPolygonDrawer.anInt5252 < i_11_ && (MinimapPolygonDrawer.anInt5252 - -TerrainTileShapeStatics.anInt8806) > i_11_ && -13 + i_17_ < i_12_ && i_17_ - -4 > i_12_ && (class348_sub42_sub12.aBoolean9610)) var_renderer.aa(MinimapPolygonDrawer.anInt5252, i_17_ - 12, TerrainTileShapeStatics.anInt8806, 16, (-ShortMatrixNodeStatics.anInt9511 + 255 shl 24) or CompassSmoother.anInt3374, 1)
                         i_15_++
                         class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(71.toByte()) as? ContactEntry?)
                     }
-                    method826(i_10_, MinimapPolygonDrawer.anInt5252, TerrainTileShape.anInt8806, ClickFeedbackTask.anInt4669, 125, InputTracker.anInt4534, var_renderer)
+                    method826(i_10_, MinimapPolygonDrawer.anInt5252, TerrainTileShapeStatics.anInt8806, ClickFeedbackTask.anInt4669, 125, InputTracker.anInt4534, var_renderer)
                 }
             } else {
                 var i_13_ = 0
@@ -134,10 +134,10 @@ class GlArrayBufferObject : GlVertexBufferBase, ByteBufferReader {
                     while (class348_sub42_sub12 != null) {
                         val i_22_ = i_20_ * 16 + 13 + (InputTracker.anInt4534 + i_10_)
                         i_20_++
-                        SceneModelBuilderStatics.method2494(InputTracker.anInt4534, SolidFillComponent.anInt8363 or 0xffffff.inv(), i_22_, var_renderer, class348_sub42_sub12, TerrainTileShape.anInt8806, i_12_, (CharCodeMap.anInt9586 or 0xffffff.inv()), 127.toByte(), ClickFeedbackTask.anInt4669, MinimapPolygonDrawer.anInt5252, i_11_)
+                        SceneModelBuilderStatics.method2494(InputTracker.anInt4534, SolidFillComponent.anInt8363 or 0xffffff.inv(), i_22_, var_renderer, class348_sub42_sub12, TerrainTileShapeStatics.anInt8806, i_12_, (CharCodeMap.anInt9586 or 0xffffff.inv()), 127.toByte(), ClickFeedbackTask.anInt4669, MinimapPolygonDrawer.anInt5252, i_11_)
                         class348_sub42_sub12 = (ManagedGlResource.aClass348_Sub42_Sub13_3152!!.aLinkedNodeListIterator_9621.method1003(111.toByte()) as? ContactEntry?)
                     }
-                    SoundCacheState.method2642(TerrainTileShape.anInt8806, InputTracker.anInt4534, true, MinimapPolygonDrawer.anInt5252, ClickFeedbackTask.anInt4669)
+                    SoundCacheState.method2642(TerrainTileShapeStatics.anInt8806, InputTracker.anInt4534, true, MinimapPolygonDrawer.anInt5252, ClickFeedbackTask.anInt4669)
                 }
             } else {
                 var i_18_ = 0

@@ -144,7 +144,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         val var_s = ActorEntity.aTerrainTileArray5191!![aByte3067.toInt()]
         val var_terrainTile_5_: TerrainTile?
         if (!aBoolean3069) var_terrainTile_5_ = if (aByte3067 >= 3) null else ActorEntity.aTerrainTileArray5191!![1 + aByte3067]
-        else var_terrainTile_5_ = TerrainTileShape.aTerrainTileArray8801!![0]
+        else var_terrainTile_5_ = TerrainTileShapeStatics.aTerrainTileArray8801!![0]
         var abstractModel: AbstractModel? = null
         if (aWidgetDefinition_3057 == null) {
             if (aAbstractModel_3059 == null || i_4_ != (i_4_ and aAbstractModel_3059!!.ua()) || (anInt3053 != npcConfig.anInt941)) {

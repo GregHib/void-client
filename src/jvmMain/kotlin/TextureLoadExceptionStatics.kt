@@ -49,7 +49,7 @@ object TextureLoadExceptionStatics {
         anInt4598++
         if (i != 1024) method4012(null, 68.toByte())
         Client.anInt5171 = 0
-        TerrainTileShape.anInt8808 = 0
+        TerrainTileShapeStatics.anInt8808 = 0
         OpenGlModel.aDoublyLinkedNodeList_2077 = DoublyLinkedNodeList()
         DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103 = arrayOfNulls<ProjectileNode>(1024)
         DisplaySettingsConfig.aClass318_Sub10Array7249 = arrayOfNulls<SceneGraphContainer>((KeyedCacheEntryReference.anIntArray9558!![TextureQualityOptionState.anInt6637]) + 1)

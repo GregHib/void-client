@@ -128,7 +128,7 @@ class DoublyLinkedNodeList {
                 ActorEntity.aTerrainTileArray5191 = ActorEntity.aTerrainTileArray4142
             } else {
                 HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 = WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148
-                ActorEntity.aTerrainTileArray5191 = TerrainTileShape.aTerrainTileArray8801
+                ActorEntity.aTerrainTileArray5191 = TerrainTileShapeStatics.aTerrainTileArray8801
             }
             MapAreaDefinition.anInt2524 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!!.size
         }

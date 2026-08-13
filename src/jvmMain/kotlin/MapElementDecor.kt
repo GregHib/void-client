@@ -79,8 +79,8 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
         anInt10353++
         if (i_27_.toInt() != -82) return null
         val class368 = ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(122.toByte(), i)
-        val var_s = TerrainTileShape.aTerrainTileArray8801!![this.plane.toInt()]
-        val var_s_28_ = (if (this.aByte6376 < 3) (TerrainTileShape.aTerrainTileArray8801!![1 + this.aByte6376]) else null)
+        val var_s = TerrainTileShapeStatics.aTerrainTileArray8801!![this.plane.toInt()]
+        val var_s_28_ = (if (this.aByte6376 < 3) (TerrainTileShapeStatics.aTerrainTileArray8801!![1 + this.aByte6376]) else null)
         if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_renderer, anInt10350, this.x, -129, ParticleEmitterNode.aWidgetCache_191, var_s_28_, this.y, var_s)
         return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_renderer, -1, this.x, -129, ParticleEmitterNode.aWidgetCache_191, var_s_28_, this.y, var_s)
     }

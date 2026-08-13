@@ -153,11 +153,11 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, npcConfig: Np
         val var_terrainTile: TerrainTile?
         val var_terrainTile_16_: TerrainTile?
         if (aBoolean10066) {
-            var_terrainTile = TerrainTileShape.aTerrainTileArray8801!![0]
+            var_terrainTile = TerrainTileShapeStatics.aTerrainTileArray8801!![0]
             var_terrainTile_16_ = ActorEntity.aTerrainTileArray4142!![this.aByte6376.toInt()]
         } else {
-            var_terrainTile_16_ = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376.toInt()])
-            if (this.aByte6376 < 3) var_terrainTile = (TerrainTileShape.aTerrainTileArray8801!![1 + this.aByte6376])
+            var_terrainTile_16_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![this.aByte6376.toInt()])
+            if (this.aByte6376 < 3) var_terrainTile = (TerrainTileShapeStatics.aTerrainTileArray8801!![1 + this.aByte6376])
             else var_terrainTile = null
         }
         return class51.method476(var_renderer, var_terrainTile, aByte10079.toInt(), i, this.x, bool, var_terrainTile_16_, this.anInt6382, this.y, aByte10062.toInt(), i_15_ + 132)

@@ -53,10 +53,10 @@ object ModelBatchBaseStatics {
     fun method1130(var_renderNode: RenderNode?, i: Int, i_1_: Int, i_2_: Int, bools: BooleanArray?): Boolean {
         var bool = false
         if (ActorEntity.aTerrainTileArray5191 != ActorEntity.aTerrainTileArray4142) {
-            val i_3_ = TerrainTileShape.aTerrainTileArray8801!![i]!!.method3986(i_1_, i_2_, (-109).toByte())
+            val i_3_ = TerrainTileShapeStatics.aTerrainTileArray8801!![i]!!.method3986(i_1_, i_2_, (-109).toByte())
             var i_4_ = 0
             while ( /**/i_4_ <= i) {
-                val var_s = TerrainTileShape.aTerrainTileArray8801!![i_4_]
+                val var_s = TerrainTileShapeStatics.aTerrainTileArray8801!![i_4_]
                 if (var_s != null) {
                     val i_5_ = i_3_ - var_s.method3986(i_1_, i_2_, 72.toByte())
                     if (bools != null) {

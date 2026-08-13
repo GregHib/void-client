@@ -287,7 +287,7 @@ import SynthVoiceGroup.Companion.method2823
 import PcmStreamBuffer.Companion.method2830
 import MidiSequencePlayer.Companion.method2871
 import InterfaceBounds.Companion.method2941
-import TerrainTileShape.Companion.method2728
+import TerrainTileShapeStatics.method2728
 import TextureTileRenderer.Companion.method2950
 import CameraSplineNodeStatics.method2956
 import OggBitstreamDecoder.Companion.method2962

@@ -834,7 +834,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 }
             }
             WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 = null
-            TerrainTileShape.aTerrainTileArray8801 = null
+            TerrainTileShapeStatics.aTerrainTileArray8801 = null
             if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) {
                 for (i in ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!!.indices) {
                     for (i_82_ in 0..<ActorEntity.anInt6451) {

@@ -109,7 +109,7 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             MinimapLineDrawer.aNanoTimer_5262 = method2826(15)
             method3309(-124)
             WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 = (Array<Array<Array<SceneCollisionEntry?>?>?>(i_1_) { Array<Array<SceneCollisionEntry?>?>(ActorEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(ActorEntity.anInt7054) } })
-            TerrainTileShape.aTerrainTileArray8801 = arrayOfNulls<TerrainTile>(i_1_)
+            TerrainTileShapeStatics.aTerrainTileArray8801 = arrayOfNulls<TerrainTile>(i_1_)
             if (bool) {
                 LoadingBarRenderer.anIntArrayArray4253 = Array<IntArray?>(ActorEntity.anInt6451) { IntArray(ActorEntity.anInt7054) }
                 HashTileShapeStatics.aByteArrayArray8816 = Array<ByteArray?>(ActorEntity.anInt6451) { ByteArray(ActorEntity.anInt7054) }

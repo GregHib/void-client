@@ -42,7 +42,7 @@ object GroundItemRenderState {
             if (i_16_ > 0 && i_17_ > 0 && GlCubemapLightPass.anInt7319 > i_16_ && (i_17_ < RangeThresholdTextureNode.anInt9109)) {
                 var i_18_ = (LocalPlayerState.aPlayer_1907!!.plane).toInt()
                 if (i_18_ < 3 && ((GraphicsOptionState.aByteArrayArrayArray6962!![1]!![i_16_]!![i_17_]).toInt() and 0x2) != 0) i_18_++
-                val i_19_ = TerrainTileShape.aTerrainTileArray8801!![i_18_]!!.method3986(f_13_.toInt(), f_15_.toInt(), 109.toByte())
+                val i_19_ = TerrainTileShapeStatics.aTerrainTileArray8801!![i_18_]!!.method3986(f_13_.toInt(), f_15_.toInt(), 109.toByte())
                 if (f_14_ > i_19_.toFloat()) {
                     if (i < 2) return f_6_
                     return (f_6_ - 0.1f + method1012(f_11_, f_13_, f_12_, f_15_, i - 1, f_10_, 122.toByte(), f_14_) * 0.1f)

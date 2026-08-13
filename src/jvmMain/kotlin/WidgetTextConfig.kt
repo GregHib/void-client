@@ -297,7 +297,7 @@ class WidgetTextConfig {
                     i = (class318_sub1.x shr ActorEntity.anInt4459)
                     i_12_ = (class318_sub1.y shr ActorEntity.anInt4459)
                 }
-                NativeLibraryState.aRenderer171!!.EA((TerrainTileShape.aTerrainTileArray8801!![0]!!.method3986(class318_sub1.x, class318_sub1.y, (-118).toByte())), method3547(i, i_12_), method2483(i, i_12_), LoadingScreenStateStatics.method1457(i, i_12_))
+                NativeLibraryState.aRenderer171!!.EA((TerrainTileShapeStatics.aTerrainTileArray8801!![0]!!.method3986(class318_sub1.x, class318_sub1.y, (-118).toByte())), method3547(i, i_12_), method2483(i, i_12_), LoadingScreenStateStatics.method1457(i, i_12_))
             }
             val class318_sub4 = class318_sub1.method2386(1, NativeLibraryState.aRenderer171)
             if (class318_sub4 != null) {

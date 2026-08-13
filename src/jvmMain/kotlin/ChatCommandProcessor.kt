@@ -856,11 +856,11 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5228) {
-                TerrainTileShape.aBoolean8805 = anIntArray1149!![--anInt1173] == 1
+                TerrainTileShapeStatics.aBoolean8805 = anIntArray1149!![--anInt1173] == 1
                 return
             }
             if (i == 5229) {
-                anIntArray1149!![anInt1173++] = if (TerrainTileShape.aBoolean8805) 1 else 0
+                anIntArray1149!![anInt1173++] = if (TerrainTileShapeStatics.aBoolean8805) 1 else 0
                 return
             }
             if (i == 5230) {

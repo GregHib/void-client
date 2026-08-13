@@ -327,22 +327,22 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                                 val i_28_ = i
                                 var class357_29_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_23_]!![i_25_ + -1])
                                 val i_30_: Int
-                                i_30_ = (TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_23_))
-                                while ((i_25_ > 0 && class357_29_ != null && class357_29_.aShort4409 < 0 && (class357_29_.aShort4409 == class357.aShort4409) && (class357.aShort4401 == class357_29_.aShort4401) && ((TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), -1 + i_25_, i_23_)) == i_30_))) {
-                                    if (-1 + i_25_ > 0 && i_30_ != (TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_25_ + -2, i_23_))) break
+                                i_30_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_23_))
+                                while ((i_25_ > 0 && class357_29_ != null && class357_29_.aShort4409 < 0 && (class357_29_.aShort4409 == class357.aShort4409) && (class357.aShort4401 == class357_29_.aShort4401) && ((TerrainTileShapeStatics.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), -1 + i_25_, i_23_)) == i_30_))) {
+                                    if (-1 + i_25_ > 0 && i_30_ != (TerrainTileShapeStatics.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_25_ + -2, i_23_))) break
                                     i_25_--
                                     class357_29_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_23_]!![i_25_ + -1])
                                 }
                                 class357_29_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_23_]!![1 + i_26_])
-                                while (((ActorEntity.anInt7054 > i_26_) && class357_29_ != null && class357_29_.aShort4409 < 0 && (class357_29_.aShort4409 == class357.aShort4409) && (class357.aShort4401 == class357_29_.aShort4401) && i_30_ == (TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_26_ - -1, i_23_)))) {
-                                    if ((ActorEntity.anInt7054 > 1 + i_26_) && i_30_ != (TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_26_ + 2, i_23_))) break
+                                while (((ActorEntity.anInt7054 > i_26_) && class357_29_ != null && class357_29_.aShort4409 < 0 && (class357_29_.aShort4409 == class357.aShort4409) && (class357.aShort4401 == class357_29_.aShort4401) && i_30_ == (TerrainTileShapeStatics.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_26_ - -1, i_23_)))) {
+                                    if ((ActorEntity.anInt7054 > 1 + i_26_) && i_30_ != (TerrainTileShapeStatics.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_26_ + 2, i_23_))) break
                                     i_26_++
                                     class357_29_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_23_]!![i_26_ + 1])
                                 }
                                 val i_31_ = 1 + (-i_27_ + i_28_)
-                                val i_32_ = TerrainTileShape.aTerrainTileArray8801!![if (bool_24_) 1 + i_27_ else i_27_]!!.method3982((-86).toByte(), i_25_, i_23_)
+                                val i_32_ = TerrainTileShapeStatics.aTerrainTileArray8801!![if (bool_24_) 1 + i_27_ else i_27_]!!.method3982((-86).toByte(), i_25_, i_23_)
                                 val i_33_ = (class357.aShort4409 * i_31_ + i_32_)
-                                val i_34_ = (TerrainTileShape.aTerrainTileArray8801!![if (!bool_24_) i_27_ else i_27_ + 1]!!.method3982((-86).toByte(), 1 + i_26_, i_23_))
+                                val i_34_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![if (!bool_24_) i_27_ else i_27_ + 1]!!.method3982((-86).toByte(), 1 + i_26_, i_23_))
                                 val i_35_ = (i_34_ - -(i_31_ * class357.aShort4409))
                                 val i_36_ = i_23_ shl ActorEntity.anInt4459
                                 val i_37_ = i_25_ shl ActorEntity.anInt4459
@@ -365,22 +365,22 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                                 val i_44_ = i
                                 var class357_45_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_41_ - 1]!![i_22_])
                                 val i_46_: Int
-                                i_46_ = (TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_23_))
-                                while ((i_41_ > 0 && class357_45_ != null && class357_45_.aShort4398 < 0 && (class357.aShort4398 == class357_45_.aShort4398) && (class357.aShort4397 == class357_45_.aShort4397) && ((TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, -1 + i_41_)) == i_46_))) {
-                                    if (i_41_ + -1 > 0 && ((TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, -2 + i_41_)) != i_46_)) break
+                                i_46_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_23_))
+                                while ((i_41_ > 0 && class357_45_ != null && class357_45_.aShort4398 < 0 && (class357.aShort4398 == class357_45_.aShort4398) && (class357.aShort4397 == class357_45_.aShort4397) && ((TerrainTileShapeStatics.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, -1 + i_41_)) == i_46_))) {
+                                    if (i_41_ + -1 > 0 && ((TerrainTileShapeStatics.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, -2 + i_41_)) != i_46_)) break
                                     i_41_--
                                     class357_45_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_41_ - 1]!![i_22_])
                                 }
                                 class357_45_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_42_ - -1]!![i_22_])
-                                while ((i_42_ < ActorEntity.anInt6451 && class357_45_ != null && class357_45_.aShort4398 < 0 && (class357.aShort4398 == class357_45_.aShort4398) && (class357_45_.aShort4397 == class357.aShort4397) && ((TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_42_ + 1)) == i_46_))) {
-                                    if (ActorEntity.anInt6451 > i_42_ + 1 && ((TerrainTileShape.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, 2 + i_42_)) != i_46_)) break
+                                while ((i_42_ < ActorEntity.anInt6451 && class357_45_ != null && class357_45_.aShort4398 < 0 && (class357.aShort4398 == class357_45_.aShort4398) && (class357_45_.aShort4397 == class357.aShort4397) && ((TerrainTileShapeStatics.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, i_42_ + 1)) == i_46_))) {
+                                    if (ActorEntity.anInt6451 > i_42_ + 1 && ((TerrainTileShapeStatics.aTerrainTileArray8801!![i]!!.method3982((-86).toByte(), i_22_, 2 + i_42_)) != i_46_)) break
                                     i_42_++
                                     class357_45_ = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![1 + i_42_]!![i_22_])
                                 }
                                 val i_47_ = 1 + -i_43_ + i_44_
-                                val i_48_ = TerrainTileShape.aTerrainTileArray8801!![if (!bool_24_) i_43_ else 1 + i_43_]!!.method3982((-86).toByte(), i_22_, i_41_)
+                                val i_48_ = TerrainTileShapeStatics.aTerrainTileArray8801!![if (!bool_24_) i_43_ else 1 + i_43_]!!.method3982((-86).toByte(), i_22_, i_41_)
                                 val i_49_ = (i_48_ - -(i_47_ * class357.aShort4398))
-                                val i_50_ = (TerrainTileShape.aTerrainTileArray8801!![if (!bool_24_) i_43_ else 1 + i_43_]!!.method3982((-86).toByte(), i_22_, 1 + i_42_))
+                                val i_50_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![if (!bool_24_) i_43_ else 1 + i_43_]!!.method3982((-86).toByte(), i_22_, 1 + i_42_))
                                 val i_51_ = (class357.aShort4398 * i_47_ + i_50_)
                                 val i_52_ = i_41_ shl ActorEntity.anInt4459
                                 val i_53_ = ((i_42_ shl ActorEntity.anInt4459) + ActorEntity.anInt3465)

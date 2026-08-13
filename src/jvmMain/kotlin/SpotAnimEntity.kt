@@ -186,11 +186,11 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                                 (((((this.aSpotAnimDefinition_6441!!.anInt2410).toDouble() * Math.random()) + (this.aSpotAnimDefinition_6441!!.anInt2413).toDouble()).toInt() shl 24) or ((((Math.random() * (this.aSpotAnimDefinition_6441!!.anInt2433).toDouble()) + (this.aSpotAnimDefinition_6441!!.anInt2429).toDouble()).toInt() shl 16) or (((Math.random() * (this.aSpotAnimDefinition_6441!!.anInt2403).toDouble()) + (this.aSpotAnimDefinition_6441!!.anInt2390).toDouble()).toInt() shl 8) or (((this.aSpotAnimDefinition_6441!!.anInt2408).toDouble() * Math.random()) + (this.aSpotAnimDefinition_6441!!.anInt2399).toDouble()).toInt()))
                             var i_53_ = (this.aSpotAnimDefinition_6441!!.anInt2414)
                             if (!var_renderer!!.method3644() && !(this.aSpotAnimDefinition_6441!!.aBoolean2382)) i_53_ = -1
-                            if (Client.anInt5171 == TerrainTileShape.anInt8808) {
+                            if (Client.anInt5171 == TerrainTileShapeStatics.anInt8808) {
                                 val class318_sub9_sub2_sub1 = (ProjectileNode(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aSpotAnimDefinition_6441!!.aBoolean2435), (this.aSpotAnimDefinition_6441!!.aBoolean2430)))
                             } else {
-                                val class318_sub9_sub2_sub1 = (DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103!![TerrainTileShape.anInt8808])
-                                TerrainTileShape.anInt8808 = 0x3ff and 1 + TerrainTileShape.anInt8808
+                                val class318_sub9_sub2_sub1 = (DisplayModeOptionState.aClass318_Sub9_Sub2_Sub1Array6103!![TerrainTileShapeStatics.anInt8808])
+                                TerrainTileShapeStatics.anInt8808 = 0x3ff and 1 + TerrainTileShapeStatics.anInt8808
                                 class318_sub9_sub2_sub1!!.method2523(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aSpotAnimDefinition_6441!!.aBoolean2435), (this.aSpotAnimDefinition_6441!!.aBoolean2430))
                             }
                         }

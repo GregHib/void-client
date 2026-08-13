@@ -159,7 +159,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     val i_16_ = GlTexture1D.aInputTracker_8552!!.method3594(116.toByte())
                     var bool = false
                     if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null) {
-                        if (MinimapPolygonDrawer.anInt5252 + -10 > i_15_ || ((MinimapPolygonDrawer.anInt5252 - -TerrainTileShape.anInt8806 + 10) < i_15_) || -10 + InputTracker.anInt4534 > i_16_ || (ClickFeedbackTask.anInt4669 + InputTracker.anInt4534 + 10 < i_16_)) MinimapAreaMarkerNode.method3277((-48).toByte())
+                        if (MinimapPolygonDrawer.anInt5252 + -10 > i_15_ || ((MinimapPolygonDrawer.anInt5252 - -TerrainTileShapeStatics.anInt8806 + 10) < i_15_) || -10 + InputTracker.anInt4534 > i_16_ || (ClickFeedbackTask.anInt4669 + InputTracker.anInt4534 + 10 < i_16_)) MinimapAreaMarkerNode.method3277((-48).toByte())
                         else bool = true
                     }
                     if (!bool) {
@@ -204,7 +204,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 if (i_14_ == 0) {
                     val i_23_ = class348_sub45!!.method3308((-128).toByte())
                     val i_24_ = class348_sub45.method3311(33)
-                    if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null && MinimapPolygonDrawer.anInt5252 <= i_23_ && (TerrainTileShape.anInt8806 + MinimapPolygonDrawer.anInt5252 >= i_23_) && i_24_ >= InputTracker.anInt4534 && InputTracker.anInt4534 + ClickFeedbackTask.anInt4669 >= i_24_) {
+                    if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null && MinimapPolygonDrawer.anInt5252 <= i_23_ && (TerrainTileShapeStatics.anInt8806 + MinimapPolygonDrawer.anInt5252 >= i_23_) && i_24_ >= InputTracker.anInt4534 && InputTracker.anInt4534 + ClickFeedbackTask.anInt4669 >= i_24_) {
                         var i_25_ = -1
                         var i_26_ = 0
                         while ((ManagedGlResource.aClass348_Sub42_Sub13_3152!!.anInt9615 > i_26_)) {

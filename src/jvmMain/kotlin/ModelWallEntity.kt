@@ -142,10 +142,10 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: N
         val var_terrainTile_6_: TerrainTile?
         if (aBoolean10138) {
             var_terrainTile = ActorEntity.aTerrainTileArray4142!![this.aByte6376.toInt()]
-            var_terrainTile_6_ = TerrainTileShape.aTerrainTileArray8801!![0]
+            var_terrainTile_6_ = TerrainTileShapeStatics.aTerrainTileArray8801!![0]
         } else {
-            var_terrainTile = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376.toInt()])
-            if (this.aByte6376 < 3) var_terrainTile_6_ = (TerrainTileShape.aTerrainTileArray8801!![this.aByte6376 - -1])
+            var_terrainTile = (TerrainTileShapeStatics.aTerrainTileArray8801!![this.aByte6376.toInt()])
+            if (this.aByte6376 < 3) var_terrainTile_6_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![this.aByte6376 - -1])
             else var_terrainTile_6_ = null
         }
         return class51.method476(var_renderer, var_terrainTile_6_, aByte10145.toInt(), i_5_, this.x, bool, var_terrainTile, this.anInt6382, this.y, aByte10118.toInt(), 128)

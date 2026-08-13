@@ -119,7 +119,7 @@ class ConfigVarProgress internal constructor(private val aString4807: String?) :
                 try {
                     anInt4811++
                     RegionSceneLoader.aNodeDeque_3705!!.method1996(125)
-                    if (!TerrainTileShape.aBoolean8805) {
+                    if (!TerrainTileShapeStatics.aBoolean8805) {
                         var class348_sub21 = nodeDeque!!.method1995(4) as CameraSplineNode?
                         while (class348_sub21 != null) {
                             val class42 = (MapRegionLoaderStatics.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 82.toByte()))

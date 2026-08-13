@@ -1,4 +1,4 @@
-import TerrainTileShape.Companion.method2726
+import TerrainTileShapeStatics.method2726
 import kotlin.math.ceil
 import kotlin.math.cos
 import kotlin.math.floor

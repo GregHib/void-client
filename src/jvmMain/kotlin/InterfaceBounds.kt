@@ -145,7 +145,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 HitsplatDefinition.aJs5Archive_2015!!.method412((-122).toByte())
                 TextureMipDescriptorStatics.aLruByteCache_4346!!.method590(0)
                 MaterialTypeMarkerStatics.aLruByteCache_6517!!.method590(0)
-                TerrainTileShape.aLruByteCache_8807!!.method590(0)
+                TerrainTileShapeStatics.aLruByteCache_8807!!.method590(0)
                 SkeletalAnimFrameLoader.aLruByteCache_463!!.method590(0)
             }
         }
