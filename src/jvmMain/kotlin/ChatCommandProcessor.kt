@@ -3859,7 +3859,7 @@ object ChatCommandProcessor {
                     val i_313_ = anIntArray1149!![anInt1173 + 1]
                     val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i_312_.toLong(), -6008) as RegionSceneShifter?)
                     if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118((class348_sub41.anInt7050 != i_313_), true, class348_sub41, 2533)
-                    MapTileShape.method2661(i_313_, i_312_, 3, true, 2)
+                    MapTileShapeStatics.method2661(i_313_, i_312_, 3, true, 2)
                     return
                 }
                 if (i == 3112) {

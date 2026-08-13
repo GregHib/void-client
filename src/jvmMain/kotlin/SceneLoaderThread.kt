@@ -75,7 +75,7 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
                                     val i_2_ = (ActorEntity.anInt6111 - ActorEntity.anInt10084 + i_0_)
                                     val i_3_ = (ActorEntity.anInt8502 - ActorEntity.anInt10084 + i_1_)
                                     if (i_2_ >= 0 && i_2_ < var_s!!.anInt4587 && i_3_ >= 0 && i_3_ < var_s.anInt4590) {
-                                        NativeLibraryState.aRenderer171!!.H(i_2_ shl ActorEntity.anInt4459, var_s.method3982((-86).toByte(), i_3_, i_2_), i_3_ shl ActorEntity.anInt4459, anIntArray3747)
+                                        NativeLibraryState.aRenderer171!!.H(i_2_ shl MapTileShape.anInt4459, var_s.method3982((-86).toByte(), i_3_, i_2_), i_3_ shl MapTileShape.anInt4459, anIntArray3747)
                                         if (method2154(anIntArray3747[0]) == anInt3749 - 1) var_s.method3979(i_2_, i_3_)
                                     }
                                 }

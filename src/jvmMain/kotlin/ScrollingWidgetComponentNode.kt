@@ -43,7 +43,7 @@ class ScrollingWidgetComponentNode internal constructor(js5Archive: Js5Archive?,
                 ItemDefinitionLoader.method1288(i xor 0x9e2.inv(), i_3_)
                 val class46 = method2570(1512932720, i_4_)
                 if (class46 != null) ConfigFlagUtilStatics.method1916(-9343, class46)
-                MapTileShape.method3270(119.toByte())
+                MapTileShapeStatics.method3270(119.toByte())
                 if (!bool_2_ && RenderNodeStatics.anInt9721 != -1) BloomGraphicsOptionState.method1775((-8).toByte(), RenderNodeStatics.anInt9721, 1)
                 val mapElementLookup = MapElementLookup(MinimapSpriteRenderer.Companion.aHashtable_4915!!)
                 var class348_sub41_5_ = mapElementLookup.method2644(123.toByte()) as? RegionSceneShifter?

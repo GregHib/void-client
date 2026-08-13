@@ -264,7 +264,7 @@ import CameraOrModelTransform.Companion.method2653
 import CameraOrModelTransform.Companion.method2654
 import HslPaletteState.method2657
 import GlShaderProgramHandle.Companion.method2658
-import MapTileShape.Companion.method2662
+import MapTileShapeStatics.method2662
 import MapRegionLoaderThread.Companion.method2664
 import MapRegionLoaderThread.Companion.method2666
 import SkeletalAnimFrameLoader.Companion.method347
@@ -2902,7 +2902,7 @@ class Client : GameAppletFrame() {
                 MinimapStateReset.aBooleanArray2374!![i_23_] = true
                 CollisionMapAccessor.anIntArray3552!![i_23_] = i
                 ModelHeaderCache.anIntArray3273!![i_23_] = i_25_
-                MapTileShape.anIntArray4196!![i_23_] = i_26_
+                MapTileShapeStatics.anIntArray4196!![i_23_] = i_26_
                 GroundDecorSceneEntity.anIntArray9981!![i_23_] = i_24_
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
@@ -4022,7 +4022,7 @@ class Client : GameAppletFrame() {
                 WallSceneEntity.method2397((-125).toByte())
                 val class348_sub41 = (MinimapSpriteRenderer.aHashtable_4915!!.method3480(i_182_.toLong(), -6008) as RegionSceneShifter?)
                 if (class348_sub41 != null) ScrollingWidgetComponentNode.method1118(i != (class348_sub41.anInt7050), false, class348_sub41, 2533)
-                MapTileShape.method2661(i, i_182_, i_183_, false, 2)
+                MapTileShapeStatics.method2661(i, i_182_, i_183_, false, 2)
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }

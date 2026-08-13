@@ -255,7 +255,7 @@ class SoundEnvelope {
                 this.aShortArray2742!![i_48_] = WhirlpoolHash.method2057(i_51_, i_50_ shl 8).toShort()
                 i_48_++
             }
-            i_46_ = ((i_46_ shl ActorEntity.anInt4459) + ActorEntity.anInt9037)
+            i_46_ = ((i_46_ shl MapTileShape.anInt4459) + ActorEntity.anInt9037)
             val i_52_ = (if (SoundEnvelope.anIntArray179 == null) (SoundEnvelope.anIntArray4983!![method303(class348_sub49.readUnsignedShort(842397944), 30).toInt() and 0xffff]) else (SoundEnvelope.anIntArray179!![class348_sub49.readUnsignedShort(842397944)]))
             val i_53_ = class348_sub49.readUnsignedByte(255)
             anInt2739 = (0xe0 and i_53_) shl 3

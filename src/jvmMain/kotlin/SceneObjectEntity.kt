@@ -5,15 +5,15 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
     override fun method2382(i: Byte): Boolean {
         if (i > -51) return false
         anInt8733++
-        val class148 = RenderableGroup.method1449(this.plane.toInt(), (this.x shr ActorEntity.anInt4459), (this.y shr ActorEntity.anInt4459))
-        if (class148 == null || !class148.aClass318_Sub1_Sub3_2040!!.aBoolean8741) return ActorEntity.method164(this.plane.toInt(), (this.x shr ActorEntity.anInt4459), (-97).toByte(), (this.y shr ActorEntity.anInt4459))
-        return (MinimapSpriteRenderer.method1110(this.y shr ActorEntity.anInt4459, class148.aClass318_Sub1_Sub3_2040!!.method2394(true) + this.method2394(true), this.plane.toInt(), (-79).toByte(), this.x shr ActorEntity.anInt4459))
+        val class148 = RenderableGroup.method1449(this.plane.toInt(), (this.x shr MapTileShape.anInt4459), (this.y shr MapTileShape.anInt4459))
+        if (class148 == null || !class148.aClass318_Sub1_Sub3_2040!!.aBoolean8741) return ActorEntity.method164(this.plane.toInt(), (this.x shr MapTileShape.anInt4459), (-97).toByte(), (this.y shr MapTileShape.anInt4459))
+        return (MinimapSpriteRenderer.method1110(this.y shr MapTileShape.anInt4459, class148.aClass318_Sub1_Sub3_2040!!.method2394(true) + this.method2394(true), this.plane.toInt(), (-79).toByte(), this.x shr MapTileShape.anInt4459))
     }
 
     override fun method2378(i: Int): Boolean {
         if (i != 0) method2406(79)
         anInt8734++
-        return (ActorEntity.aBooleanArrayArray1572!![(ActorEntity.anInt10084 + -ActorEntity.anInt6111 + (this.x shr ActorEntity.anInt4459))]!![(ActorEntity.anInt10084 + (-ActorEntity.anInt8502 + (this.y shr ActorEntity.anInt4459)))])
+        return (ActorEntity.aBooleanArrayArray1572!![(ActorEntity.anInt10084 + -ActorEntity.anInt6111 + (this.x shr MapTileShape.anInt4459))]!![(ActorEntity.anInt10084 + (-ActorEntity.anInt8502 + (this.y shr MapTileShape.anInt4459)))])
     }
 
     override fun method2392(bool: Boolean) {
@@ -25,7 +25,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
     override fun method2384(class348_sub1s: Array<AbstractTileShape?>?, i: Int): Int {
         anInt8735++
         val i_2_ = -79 % ((-14 - i) / 61)
-        return this.method2390(class348_sub1s!!, (this.x shr ActorEntity.anInt4459), -2, (this.y shr ActorEntity.anInt4459))
+        return this.method2390(class348_sub1s!!, (this.x shr MapTileShape.anInt4459), -2, (this.y shr MapTileShape.anInt4459))
     }
 
     override fun method2388(i: Int): Boolean {

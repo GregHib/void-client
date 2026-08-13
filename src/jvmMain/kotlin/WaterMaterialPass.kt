@@ -344,9 +344,9 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                                 val i_33_ = (class357.aShort4409 * i_31_ + i_32_)
                                 val i_34_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![if (!bool_24_) i_27_ else i_27_ + 1]!!.method3982((-86).toByte(), 1 + i_26_, i_23_))
                                 val i_35_ = (i_34_ - -(i_31_ * class357.aShort4409))
-                                val i_36_ = i_23_ shl ActorEntity.anInt4459
-                                val i_37_ = i_25_ shl ActorEntity.anInt4459
-                                val i_38_ = (ActorEntity.anInt3465 + (i_26_ shl ActorEntity.anInt4459))
+                                val i_36_ = i_23_ shl MapTileShape.anInt4459
+                                val i_37_ = i_25_ shl MapTileShape.anInt4459
+                                val i_38_ = (ActorEntity.anInt3465 + (i_26_ shl MapTileShape.anInt4459))
                                 MapElementDecor.aMapTileShapeArray10330!![CollisionFlagQuery.anInt1200++] = (MapTileShape(1, i_28_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, class357.aShort4401 + i_36_, i_32_, i_34_, i_35_, i_33_, i_37_, i_38_, i_38_, i_37_))
                                 var i_39_ = i_27_
                                 while (i_28_ >= i_39_) {
@@ -382,9 +382,9 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                                 val i_49_ = (i_48_ - -(i_47_ * class357.aShort4398))
                                 val i_50_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![if (!bool_24_) i_43_ else 1 + i_43_]!!.method3982((-86).toByte(), i_22_, 1 + i_42_))
                                 val i_51_ = (class357.aShort4398 * i_47_ + i_50_)
-                                val i_52_ = i_41_ shl ActorEntity.anInt4459
-                                val i_53_ = ((i_42_ shl ActorEntity.anInt4459) + ActorEntity.anInt3465)
-                                val i_54_ = i_22_ shl ActorEntity.anInt4459
+                                val i_52_ = i_41_ shl MapTileShape.anInt4459
+                                val i_53_ = ((i_42_ shl MapTileShape.anInt4459) + ActorEntity.anInt3465)
+                                val i_54_ = i_22_ shl MapTileShape.anInt4459
                                 MapElementDecor.aMapTileShapeArray10330!![CollisionFlagQuery.anInt1200++] = (MapTileShape(2, i_44_, i_52_, i_53_, i_53_, i_52_, i_48_, i_50_, i_51_, i_49_, i_54_ + class357.aShort4397, i_54_ + class357.aShort4397, class357.aShort4397 + i_54_, (i_54_ - -class357.aShort4397)))
                                 for (i_55_ in i_43_..i_44_) {
                                     var i_56_ = i_41_

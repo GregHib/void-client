@@ -35,16 +35,16 @@ class MinimapAreaMarkerNode : HashLinkedListNode() {
                 if (soundEnvelope.aBoolean2737) i_0_ = MapAreaDefinition.anInt2524 - 1
                 for (i_1_ in i..i_0_) {
                     var i_2_ = 0
-                    var i_3_ = ((class348_sub1!!.method2717(89.toByte()) - class348_sub1.method2723(-1) + ActorEntity.anInt9037) shr ActorEntity.anInt4459)
+                    var i_3_ = ((class348_sub1!!.method2717(89.toByte()) - class348_sub1.method2723(-1) + ActorEntity.anInt9037) shr MapTileShape.anInt4459)
                     if (i_3_ < 0) {
                         i_2_ -= i_3_
                         i_3_ = 0
                     }
-                    var i_4_ = ((class348_sub1.method2717(122.toByte()) + class348_sub1.method2723(-1) - ActorEntity.anInt9037) shr ActorEntity.anInt4459)
+                    var i_4_ = ((class348_sub1.method2717(122.toByte()) + class348_sub1.method2723(-1) - ActorEntity.anInt9037) shr MapTileShape.anInt4459)
                     if (i_4_ >= ActorEntity.anInt7054) i_4_ = ActorEntity.anInt7054 - 1
                     for (i_5_ in i_3_..i_4_) {
                         val i_6_ = soundEnvelope.aShortArray2742!![i_2_++].toInt()
-                        var i_7_ = (((class348_sub1.method2724(-1) - class348_sub1.method2723(-1) + ActorEntity.anInt9037) shr ActorEntity.anInt4459) + (i_6_ ushr 8))
+                        var i_7_ = (((class348_sub1.method2724(-1) - class348_sub1.method2723(-1) + ActorEntity.anInt9037) shr MapTileShape.anInt4459) + (i_6_ ushr 8))
                         var i_8_ = i_7_ + (i_6_ and 0xff) - 1
                         if (i_7_ < 0) i_7_ = 0
                         if (i_8_ >= ActorEntity.anInt6451) i_8_ = ActorEntity.anInt6451 - 1

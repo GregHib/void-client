@@ -291,7 +291,7 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
             var i_26_ = i_24_ - WorldMapElement.anInt4638
             if (i_26_ > 8192) i_26_ -= 16384
             if (i_26_ < -8192) i_26_ += 16384
-            MapTileShape.anInt4186 = 0
+            MapTileShapeStatics.anInt4186 = 0
             if (i_26_ < 0 && i_25_ > 0 || i_26_ > 0 && i_25_ < 0) WorldMapElement.anInt4638 = i_24_
         }
 

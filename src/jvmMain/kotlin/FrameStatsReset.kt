@@ -86,7 +86,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9897 = 0
             DisplaceTextureNode.anInt9137 = 0
             SolidFillComponent.anInt8357 = 0
-            MapTileShape.anInt4195 = 0
+            MapTileShapeStatics.anInt4195 = 0
             ByteBuffer.anInt7349 = 0
             HashLinkedListNode.anInt7064 = 0
             Direct3dModel.anInt5468 = 0
@@ -1708,7 +1708,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ByteBuffer.anInt7188 = 0
             OpenGlRenderer.anInt7587 = 0
             ConfigArchiveLoaderStatics.anInt6873 = 0
-            MapTileShape.anInt4189 = 0
+            MapTileShapeStatics.anInt4189 = 0
             ProjectionCameraTransform.anInt5755 = 0
             Npc.anInt10501 = 0
             ModelOrSpriteHolderStatics.anInt120 = 0
@@ -2245,7 +2245,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9884 = 0
             AbstractMenuEntry.anInt1707 = 0
             SimpleBinaryOptionState.anInt6070 = 0
-            MapTileShape.anInt9680 = 0
+            MapTileShapeStatics.anInt9680 = 0
             ModelOrSpriteHolderStatics.anInt121 = 0
             GroundItemRenderState.anInt1660 = 0
             NativeRenderer.anInt8068 = 0

@@ -3620,7 +3620,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             FacingDirectionNodeStatics.aRenderer6654!!.T(i_329_, i_323_, i_330_ + i_329_, i_331_ + i_323_)
                             class105_328_.method974(i_329_, i_323_)
                             FacingDirectionNodeStatics.aRenderer6654!!.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i)
-                            MapTileShape.method2663(-5590, i_329_, i_329_ + class105.method966(), i_323_, i_323_ + i_331_)
+                            MapTileShapeStatics.method2663(-5590, i_329_, i_329_ + class105.method966(), i_323_, i_323_ + i_331_)
                         } else i_323_ -= max((WorldMapLabel.aFontDefinition_4962!!.anInt1988), TimedRecordAccessorStatics.aAbstractModelRendererArray7107!![0]!!.method969())
                         i_323_ -= 2
                         if (!class318_sub1_sub3_sub3.aBoolean10309) {
@@ -3665,7 +3665,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 FacingDirectionNodeStatics.aRenderer6654!!.T(i_339_, i_323_, i_339_ - -i_336_, i_323_ - -i_338_)
                                 class105_332_.method974(i_339_, i_323_)
                                 FacingDirectionNodeStatics.aRenderer6654!!.KA(i_317_, i, i_318_ + i_317_, i - -i_315_)
-                                MapTileShape.method2663(-5590, i_339_, class105.method966() + i_339_, i_323_, i_338_ + i_323_)
+                                MapTileShapeStatics.method2663(-5590, i_339_, class105.method966() + i_339_, i_323_, i_338_ + i_323_)
                                 i_323_ -= 2
                             }
                             if (i_322_ < i_321_) {
@@ -3674,21 +3674,21 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                     i_323_ -= 25
                                     val class105 = (WallSceneEntity.aAbstractModelRendererArray9959!![(player.anInt10540)])!!
                                     class105.method974((-12 + i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0])), i_323_)
-                                    MapTileShape.method2663(-5590, i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0] + -12), (i_317_ - -RemoveRoofsOptionState.anIntArray6062!![0] + (-12 + class105.method966())), i_323_, i_323_ + class105.method980())
+                                    MapTileShapeStatics.method2663(-5590, i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0] + -12), (i_317_ - -RemoveRoofsOptionState.anIntArray6062!![0] + (-12 + class105.method966())), i_323_, i_323_ + class105.method980())
                                     i_323_ -= 2
                                 }
                                 if (player.anInt10522 != -1) {
                                     i_323_ -= 25
                                     val class105 = (CompassSmoother.aAbstractModelRendererArray3378!![(player.anInt10522)])!!
                                     class105.method974((-12 + i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0])), i_323_)
-                                    MapTileShape.method2663(-5590, (-12 + RemoveRoofsOptionState.anIntArray6062!![0] + i_317_), (RemoveRoofsOptionState.anIntArray6062!![0] + i_317_ - (12 + -class105.method966())), i_323_, i_323_ - -class105.method980())
+                                    MapTileShapeStatics.method2663(-5590, (-12 + RemoveRoofsOptionState.anIntArray6062!![0] + i_317_), (RemoveRoofsOptionState.anIntArray6062!![0] + i_317_ - (12 + -class105.method966())), i_323_, i_323_ - -class105.method980())
                                     i_323_ -= 2
                                 }
                             } else if (npcType!!.anInt1375 >= 0 && (npcType.anInt1375 < CompassSmoother.aAbstractModelRendererArray3378!!.size)) {
                                 val class105 = (CompassSmoother.aAbstractModelRendererArray3378!![npcType.anInt1375])!!
                                 i_323_ -= 25
                                 class105.method974((i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0]) + -(class105.method971() shr 1)), i_323_)
-                                MapTileShape.method2663(-5590, (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1))), (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1)) + class105.method966()), i_323_, class105.method980() + i_323_)
+                                MapTileShapeStatics.method2663(-5590, (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1))), (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1)) + class105.method966()), i_323_, class105.method980() + i_323_)
                                 i_323_ -= 2
                             }
                         }
@@ -3703,7 +3703,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                         val class105 = (CustomCursorsOptionState.aAbstractModelRendererArray5933!![class302.anInt3831])!!
                                         if (i_340_ < class105.method969()) i_340_ = class105.method969()
                                         class105.method974(-12 + ((RemoveRoofsOptionState.anIntArray6062!![0]) + i_317_), (i_323_ + -class105.method969()))
-                                        MapTileShape.method2663(-5590, -12 + (i_317_ - -(RemoveRoofsOptionState.anIntArray6062!![0])), (i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0] + -12 - -class105.method966())), -class105.method969() + i_323_, (i_323_ + -class105.method969() - -class105.method980()))
+                                        MapTileShapeStatics.method2663(-5590, -12 + (i_317_ - -(RemoveRoofsOptionState.anIntArray6062!![0])), (i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0] + -12 - -class105.method966())), -class105.method969() + i_323_, (i_323_ + -class105.method969() - -class105.method980()))
                                     }
                                     i_341_++
                                 }
@@ -3720,7 +3720,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                     if (class105.method969() > i_342_) i_342_ = class105.method969()
                                     if (GlGroundShaderPass.anInt7396 % 20 < 10) {
                                         class105.method974((-12 + i_317_ + RemoveRoofsOptionState.anIntArray6062!![0]), i_323_ + -class105.method969())
-                                        MapTileShape.method2663(-5590, (-12 + i_317_ - -RemoveRoofsOptionState.anIntArray6062!![0]), (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ + -12) - -class105.method966()), -class105.method969() + i_323_, (-class105.method969() + (i_323_ - -class105.method980())))
+                                        MapTileShapeStatics.method2663(-5590, (-12 + i_317_ - -RemoveRoofsOptionState.anIntArray6062!![0]), (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ + -12) - -class105.method966()), -class105.method969() + i_323_, (-class105.method969() + (i_323_ - -class105.method980())))
                                     }
                                 }
                                 i_343_++
@@ -3995,7 +3995,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                                 class324_387_!!.method2576(string, (itemModelDefinition_349_.anInt444) or 0xffffff.inv(), i_423_, i_411_ + i_416_, 0, -119)
                                             }
                                         }
-                                        MapTileShape.method2663(-5590, i_416_, i_416_ + i_400_, i_418_, 1 + i_419_)
+                                        MapTileShapeStatics.method2663(-5590, i_416_, i_416_ + i_400_, i_418_, 1 + i_419_)
                                     }
                                 }
                             }
@@ -4122,7 +4122,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     i_446_ -= i_443_ shr 1
                     NodeDequeStatics.aRSFont_3326!!.method2575(118.toByte(), i_439_ + i_317_, -256, string, -16777216, i_440_ + i)
                 }
-                MapTileShape.method2663(i_316_ + -5592, i_444_, 1 + i_446_, i_445_, 1 + i_447_)
+                MapTileShapeStatics.method2663(i_316_ + -5592, i_444_, 1 + i_446_, i_445_, 1 + i_447_)
             }
         }
 
@@ -4149,7 +4149,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     val i_12_ = -76 / ((i_1_ - 3) / 38)
                     abstractModelRenderer!!.method974(i_10_, i_11_)
                     if (class318_sub1_sub3_sub3 === class318_sub1_sub3_sub3_8_) FacingDirectionNodeStatics.aRenderer6654!!.method3668(18, -1 + i_11_, -256, i_10_ - 1, 18, 57)
-                    MapTileShape.method2663(-5590, i_10_ + -1, 18 + i_10_, i_11_ + -1, i_11_ - -18)
+                    MapTileShapeStatics.method2663(-5590, i_10_ + -1, 18 + i_10_, i_11_ + -1, i_11_ - -18)
                     val class318_sub6 = method3529(32564)
                     class318_sub6.anInt6426 = 16 + i_10_
                     class318_sub6.anInt6427 = i_11_

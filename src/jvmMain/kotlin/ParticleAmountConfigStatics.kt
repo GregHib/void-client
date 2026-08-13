@@ -24,7 +24,7 @@ object ParticleAmountConfigStatics {
             else method3064(i_9_, i, i_4_ < 0, i_5_, i_3_, i_4_, i_6_, false, (WorldMapTextLabel.aWidgetComponentArrayArray8584!![i_2_]), -1, i_7_)
             if (i_8_ <= 58) anInt2127 = -84
             if (GrayscaleNoiseTexture.aBoolean5300) {
-                if (i_4_ >= 0 && CompletedResourceRequest.anInt10463 == 2) MapTileShape.method2663(-5590, FloorOverlayDefinition.anInt3941, FloorOverlayDefinition.anInt3939, GraphicsOptionState.anInt3142, ModelVertexColorBuffer.anInt6585)
+                if (i_4_ >= 0 && CompletedResourceRequest.anInt10463 == 2) MapTileShapeStatics.method2663(-5590, FloorOverlayDefinition.anInt3941, FloorOverlayDefinition.anInt3939, GraphicsOptionState.anInt3142, ModelVertexColorBuffer.anInt6585)
                 CompletedResourceRequest.anInt10463 = i_15_
                 FloorOverlayDefinition.anInt3939 = i_13_
                 GraphicsOptionState.anInt3142 = i_12_

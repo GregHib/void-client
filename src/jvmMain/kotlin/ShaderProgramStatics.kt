@@ -14,8 +14,8 @@ object ShaderProgramStatics {
                     for (i_3_ in 0..<ActorEntity.anInt6451) {
                         var_renderNode = var_s.fa(i_3_, i_2_, var_renderNode)
                         if (var_renderNode != null) {
-                            val i_4_ = i_3_ shl ActorEntity.anInt4459
-                            val i_5_ = i_2_ shl ActorEntity.anInt4459
+                            val i_4_ = i_3_ shl MapTileShape.anInt4459
+                            val i_5_ = i_2_ shl MapTileShape.anInt4459
                             for (i_6_ in i_1_ - 1 downTo 0) {
                                 val var_s_7_ = TerrainTileShapeStatics.aTerrainTileArray8801!![i_6_]
                                 if (var_s_7_ != null) {

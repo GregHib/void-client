@@ -133,7 +133,7 @@ object IdentKitRecolorStatics {
                 }
                 var_renderer!!.KA(i_35_, i_36_, LocTypeDefinition.anInt4017 + i_35_, i_36_ + 350)
                 var_renderer.aa(i_35_, i_36_, LocTypeDefinition.anInt4017, 350, 0x332277 or (HeapDiagnosticsHolder.anInt2254 shl 24), 1)
-                MapTileShape.method2663(-5590, i_35_, LocTypeDefinition.anInt4017 + i_35_, i_36_, i_36_ + 350)
+                MapTileShapeStatics.method2663(-5590, i_35_, LocTypeDefinition.anInt4017 + i_35_, i_36_, i_36_ + 350)
                 val i_37_ = 350 / MovementDirection.anInt1188
                 if (WorldMapTextLabel.anInt8587 > 0) {
                     val i_38_ = 342 + -MovementDirection.anInt1188

@@ -74,8 +74,8 @@ class GlTexture3D : GlTexture {
             ActorEntity.aBoolean351 = true
             ProjectedGroundDecor.aBoolean10221 = NativeLibraryState.aRenderer171!!.method3704() > 0
             SpriteTextureNode.aBoolean9242 = bool_24_
-            ActorEntity.anInt6111 = i_12_ shr ActorEntity.anInt4459
-            ActorEntity.anInt8502 = i_14_ shr ActorEntity.anInt4459
+            ActorEntity.anInt6111 = i_12_ shr MapTileShape.anInt4459
+            ActorEntity.anInt8502 = i_14_ shr MapTileShape.anInt4459
             ActorEntity.anInt1974 = i_12_
             ActorEntity.anInt9360 = i_14_
             TerrainTileGeometry.anInt3006 = i_13_
@@ -105,9 +105,9 @@ class GlTexture3D : GlTexture {
                         val i_33_ = (ActorEntity.anInt6111 - ActorEntity.anInt10084 + i_29_)
                         val i_34_ = (ActorEntity.anInt8502 - ActorEntity.anInt10084 + i_32_)
                         if (i_33_ >= 0 && i_34_ >= 0 && i_33_ < ActorEntity.anInt6451 && i_34_ < ActorEntity.anInt7054) {
-                            val i_35_ = i_33_ shl ActorEntity.anInt4459
-                            val i_36_ = i_34_ shl ActorEntity.anInt4459
-                            val i_37_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![TerrainTileShapeStatics.aTerrainTileArray8801!!.size - 1]!!.method3982((-86).toByte(), i_34_, i_33_) - (1000 shl ActorEntity.anInt4459 - 7))
+                            val i_35_ = i_33_ shl MapTileShape.anInt4459
+                            val i_36_ = i_34_ shl MapTileShape.anInt4459
+                            val i_37_ = (TerrainTileShapeStatics.aTerrainTileArray8801!![TerrainTileShapeStatics.aTerrainTileArray8801!!.size - 1]!!.method3982((-86).toByte(), i_34_, i_33_) - (1000 shl MapTileShape.anInt4459 - 7))
                             val i_38_ = (if (ActorEntity.aTerrainTileArray4142 != null) (ActorEntity.aTerrainTileArray4142!![0]!!.method3982((-86).toByte(), i_34_, i_33_) + ActorEntity.anInt3465) else (TerrainTileShapeStatics.aTerrainTileArray8801!![0]!!.method3982((-86).toByte(), i_34_, i_33_) + ActorEntity.anInt3465))
                             i_31_ = (if (i_25_ >= 0) NativeLibraryState.aRenderer171!!.r(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_, i_25_) else NativeLibraryState.aRenderer171!!.JA(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_))
                             FacingDirectionNodeStatics.aBooleanArrayArray6656!![i_29_]!![i_32_] = i_31_ == 0

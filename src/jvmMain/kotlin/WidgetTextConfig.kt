@@ -294,8 +294,8 @@ class WidgetTextConfig {
                     i = (class318_sub1.aShort8743).toInt()
                     i_12_ = class318_sub1.aShort8750.toInt()
                 } else {
-                    i = (class318_sub1.x shr ActorEntity.anInt4459)
-                    i_12_ = (class318_sub1.y shr ActorEntity.anInt4459)
+                    i = (class318_sub1.x shr MapTileShape.anInt4459)
+                    i_12_ = (class318_sub1.y shr MapTileShape.anInt4459)
                 }
                 NativeLibraryState.aRenderer171!!.EA((TerrainTileShapeStatics.aTerrainTileArray8801!![0]!!.method3986(class318_sub1.x, class318_sub1.y, (-118).toByte())), method3547(i, i_12_), method2483(i, i_12_), LoadingScreenStateStatics.method1457(i, i_12_))
             }
@@ -305,7 +305,7 @@ class WidgetTextConfig {
                     val class318_sub3s = class318_sub4.aClass318_Sub3Array6414!!
                     for (i in class318_sub3s.indices) {
                         val class318_sub3 = class318_sub3s[i]!!
-                        if (class318_sub3.aBoolean6401) MapTileShape.method2663(-5590, (class318_sub3.anInt6405 - class318_sub3.anInt6403), (class318_sub3.anInt6406 + class318_sub3.anInt6403), (class318_sub3.anInt6402 - class318_sub3.anInt6403), (class318_sub3.anInt6404 + class318_sub3.anInt6403))
+                        if (class318_sub3.aBoolean6401) MapTileShapeStatics.method2663(-5590, (class318_sub3.anInt6405 - class318_sub3.anInt6403), (class318_sub3.anInt6406 + class318_sub3.anInt6403), (class318_sub3.anInt6402 - class318_sub3.anInt6403), (class318_sub3.anInt6404 + class318_sub3.anInt6403))
                     }
                 }
                 if (class318_sub4.aBoolean6409) {

@@ -30,12 +30,12 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
                     val class348_sub1 = class211!!.aClass348_Sub1_2745!!
                     val i_3_ = class211.anInt2731
                     val i_4_ = (class348_sub1.method2723(-1) - ActorEntity.anInt9037)
-                    val i_5_ = 1 + (2 * i_4_ shr ActorEntity.anInt4459)
+                    val i_5_ = 1 + (2 * i_4_ shr MapTileShape.anInt4459)
                     var i_6_ = 0
                     val `is` = IntArray(i_5_ * i_5_)
-                    val i_7_ = (class348_sub1.method2724(-1) - i_4_ shr ActorEntity.anInt4459)
-                    var i_8_ = (class348_sub1.method2717(79.toByte()) - i_4_ shr ActorEntity.anInt4459)
-                    var i_9_ = (class348_sub1.method2717(113.toByte()) + i_4_ shr ActorEntity.anInt4459)
+                    val i_7_ = (class348_sub1.method2724(-1) - i_4_ shr MapTileShape.anInt4459)
+                    var i_8_ = (class348_sub1.method2717(79.toByte()) - i_4_ shr MapTileShape.anInt4459)
+                    var i_9_ = (class348_sub1.method2717(113.toByte()) + i_4_ shr MapTileShape.anInt4459)
                     if (i_8_ < 0) {
                         i_6_ -= i_8_
                         i_8_ = 0

@@ -372,7 +372,7 @@ class WidgetDefinition {
                 i_49_ = i_49_ * SpotAnimVector.anIntArray1204!![i_46_] shr 14
             }
             WorldMapElement.anInt4638 = i_37_
-            MapTileShape.anInt4186 = 0
+            MapTileShapeStatics.anInt4186 = 0
             CompositeRgbNoiseTexture.anInt8685 = i_38_ - i_49_
             ParticleSystemRenderer.anInt3855 = -i_48_ + i_36_
             GlslMaterialPass.anInt6246 = -i_47_ + i_41_

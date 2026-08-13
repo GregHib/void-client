@@ -98,8 +98,8 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             NativeLibraryState.aRenderer171 = var_renderer
             Npc.anInt10503 = i
             VoronoiNoiseTextureNode.aBoolean9121 = (Npc.anInt10503 > 1 && NativeLibraryState.aRenderer171!!.method3708())
-            ActorEntity.anInt4459 = i_0_
-            ActorEntity.anInt3465 = 1 shl ActorEntity.anInt4459
+            MapTileShape.anInt4459 = i_0_
+            ActorEntity.anInt3465 = 1 shl MapTileShape.anInt4459
             ActorEntity.anInt9037 = ActorEntity.anInt3465 shr 1
             sqrt(((ActorEntity.anInt9037 * ActorEntity.anInt9037) + (ActorEntity.anInt9037 * ActorEntity.anInt9037)).toDouble())
             MapAreaDefinition.anInt2524 = i_1_

@@ -2,8 +2,8 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
     var aShort8759: Short
     override fun method2384(class348_sub1s: Array<AbstractTileShape?>?, i: Int): Int {
         anInt8758++
-        val i_0_ = this.x shr anInt4459
-        val i_1_ = this.y shr anInt4459
+        val i_0_ = this.x shr MapTileShape.anInt4459
+        val i_1_ = this.y shr MapTileShape.anInt4459
         val i_2_ = -103 / ((i - -14) / 61)
         var i_3_ = 0
         if (anInt6111 == i_0_) i_3_++
@@ -26,7 +26,7 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
     override fun method2382(i: Byte): Boolean {
         if (i >= -51) return false
         anInt8760++
-        return method125((this.y shr anInt4459), (this.x shr anInt4459), this.aByte6376.toInt(), this, 120.toByte())
+        return method125((this.y shr MapTileShape.anInt4459), (this.x shr MapTileShape.anInt4459), this.aByte6376.toInt(), this, 120.toByte())
     }
 
     init {
@@ -41,7 +41,7 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
     override fun method2378(i: Int): Boolean {
         anInt8757++
         if (i != 0) method2378(-104)
-        return (aBooleanArrayArray1572!![(-anInt6111 + (this.x shr anInt4459) + anInt10084)]!![(anInt10084 + -anInt8502 + (this.y shr anInt4459))])
+        return (aBooleanArrayArray1572!![(-anInt6111 + (this.x shr MapTileShape.anInt4459) + anInt10084)]!![(anInt10084 + -anInt8502 + (this.y shr MapTileShape.anInt4459))])
     }
 
     companion object {
@@ -51,7 +51,6 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
         var anInt8502: Int = 0
         var anInt6451: Int = 0
         var anInt7054: Int = 0
-        var anInt4459: Int = 0
         var anInt10084: Int = 0
 
         var anInt8757: Int = 0
@@ -76,8 +75,8 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
             if (!aBoolean9307 || !aBoolean351) return false
             if (anInt2946 < 100) return false
             if (!method164(i_1_, i_0_, (-97).toByte(), i)) return false
-            val i_3_ = i_0_ shl anInt4459
-            val i_4_ = i shl anInt4459
+            val i_3_ = i_0_ shl MapTileShape.anInt4459
+            val i_4_ = i shl MapTileShape.anInt4459
             if (i_2_.toInt() != 120) return false
             val i_5_ = -1 + aTerrainTileArray5191!![i_1_]!!.method3982((-86).toByte(), i, i_0_)
             val i_6_ = i_5_ + class318_sub1_sub4!!.method2394(true)
@@ -607,8 +606,8 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
             if (i_3_ == -anInt3049) return false
             if (anInt3049 == i_3_) return true
             if (aTerrainTileArray4142 === aTerrainTileArray5191) return false
-            val i_4_ = i_0_ shl anInt4459
-            val i_5_ = i_2_ shl anInt4459
+            val i_4_ = i_0_ shl MapTileShape.anInt4459
+            val i_5_ = i_2_ shl MapTileShape.anInt4459
             if ((method2169(i_4_ - -1, i_4_ - (-anInt3465 - -1), 1 + i_5_, 1 + i_4_, -1 + (i_5_ - -anInt3465), aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, i_0_), aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), 1 + i_2_, 1 + i_0_), aTerrainTileArray5191!![i]!!.method3982((-86).toByte(), i_2_, i_0_), -1 + anInt3465 + i_5_, false)) && (method2169(
                     1 + i_4_,
                     anInt3465 + (i_4_ + -1),

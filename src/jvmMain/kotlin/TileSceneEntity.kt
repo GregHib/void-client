@@ -9,13 +9,13 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
     override fun method2382(i: Byte): Boolean {
         if (i > -51) aOutgoingPacketHeader_8724 = null
         anInt8723++
-        return ActorEntity.method164(this.aByte6376.toInt(), (this.x shr ActorEntity.anInt4459), (-97).toByte(), (this.y shr ActorEntity.anInt4459))
+        return ActorEntity.method164(this.aByte6376.toInt(), (this.x shr MapTileShape.anInt4459), (-97).toByte(), (this.y shr MapTileShape.anInt4459))
     }
 
     override fun method2384(class348_sub1s: Array<AbstractTileShape?>?, i: Int): Int {
         anInt8722++
         val i_0_ = 88 % ((i - -14) / 61)
-        return this.method2390(class348_sub1s!!, (this.x shr ActorEntity.anInt4459), -2, (this.y shr ActorEntity.anInt4459))
+        return this.method2390(class348_sub1s!!, (this.x shr MapTileShape.anInt4459), -2, (this.y shr MapTileShape.anInt4459))
     }
 
     init {
@@ -30,7 +30,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
     override fun method2378(i: Int): Boolean {
         if (i != 0) aOutgoingPacketHeader_8724 = null
         anInt8721++
-        return (ActorEntity.aBooleanArrayArray1572!![(ActorEntity.anInt10084 + -ActorEntity.anInt6111 + (this.x shr ActorEntity.anInt4459))]!![((this.y shr ActorEntity.anInt4459) + -ActorEntity.anInt8502 + ActorEntity.anInt10084)])
+        return (ActorEntity.aBooleanArrayArray1572!![(ActorEntity.anInt10084 + -ActorEntity.anInt6111 + (this.x shr MapTileShape.anInt4459))]!![((this.y shr MapTileShape.anInt4459) + -ActorEntity.anInt8502 + ActorEntity.anInt10084)])
     }
 
     companion object {
@@ -66,7 +66,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
             i_2_ = i_2_ shl 3
             if (WeaveTextureNode.anInt9282 == 2) {
                 WorldMapElement.anInt4638 = i_1_
-                MapTileShape.anInt4186 = i_2_
+                MapTileShapeStatics.anInt4186 = i_2_
                 MinimapAreaMarkerNode.anInt9701 = i
             }
             CameraDistanceOptionState.aFloat3938 = i_1_.toFloat()

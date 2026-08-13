@@ -146,9 +146,9 @@ class CharacterRenderState : LinkedListNode() {
         @JvmStatic
         fun method2778(class318_sub1: SceneEntity, bool: Boolean, `is`: Array<Array<ByteArray?>?>?, i: Int, i_0_: Byte): Boolean {
             if (!SpriteTextureNode.aBoolean9242) return false
-            var i_1_ = class318_sub1.x shr ActorEntity.anInt4459
+            var i_1_ = class318_sub1.x shr MapTileShape.anInt4459
             var i_2_ = i_1_
-            var i_3_ = class318_sub1.y shr ActorEntity.anInt4459
+            var i_3_ = class318_sub1.y shr MapTileShape.anInt4459
             var i_4_ = i_3_
             if (class318_sub1 is GroundDecorEntity) {
                 i_2_ = (class318_sub1.aShort8751).toInt()

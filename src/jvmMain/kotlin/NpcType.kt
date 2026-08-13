@@ -818,7 +818,7 @@ class NpcType {
             aClass348_Sub42_Sub17Array9672 = null
             aOutgoingPacketHeader_9679 = null
             anIntArrayArray9678 = null
-            if (!bool) MapTileShape.method3270((-116).toByte())
+            if (!bool) MapTileShapeStatics.method3270((-116).toByte())
         }
     }
 }

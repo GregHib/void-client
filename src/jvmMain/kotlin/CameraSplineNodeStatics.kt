@@ -55,7 +55,7 @@ object CameraSplineNodeStatics {
             val d = sqrt((f_21_ * f_21_ + f_23_ * f_23_).toDouble())
             MinimapAreaMarkerNode.anInt9701 = 0x3fff and (2607.5945876176133 * atan2(f_22_.toDouble(), d)).toInt()
             WorldMapElement.anInt4638 = 0x3fff and (2607.5945876176133 * -atan2(f_21_.toDouble(), f_23_.toDouble())).toInt()
-            MapTileShape.anInt4186 = ((SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (((-(SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![2 + i_1_]!![3])) * CacheArchiveIndex.anInt1780) shr 16))
+            MapTileShapeStatics.anInt4186 = ((SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (((-(SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![2 + i_1_]!![3])) * CacheArchiveIndex.anInt1780) shr 16))
         }
     }
 

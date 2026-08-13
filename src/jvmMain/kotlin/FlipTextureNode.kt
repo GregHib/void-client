@@ -199,7 +199,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 LocDefinitionCache.aBooleanArray3438!![i_23_] = true
                                                 FacingDirectionNodeStatics.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (GrayscaleNoiseTexture.aBoolean5300) {
-                                                    if (bool) MapTileShape.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
+                                                    if (bool) MapTileShapeStatics.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                                     else FloorOverlayDefinition.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
                                                 }
                                             }
@@ -213,7 +213,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 FacingDirectionNodeStatics.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (GrayscaleNoiseTexture.aBoolean5300) {
                                                     if (!bool) FloorOverlayDefinition.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
-                                                    else MapTileShape.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
+                                                    else MapTileShapeStatics.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                                 }
                                             }
                                             i_18_++
@@ -239,7 +239,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 var i_38_ = 15 + i_25_
                                                 if (GrayscaleNoiseTexture.aBoolean5300) {
                                                     if (!bool) FloorOverlayDefinition.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
-                                                    else MapTileShape.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
+                                                    else MapTileShapeStatics.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                                 }
                                                 if (PixelBlender.aBoolean3811) {
                                                     var i_39_ = -256
@@ -325,7 +325,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                             } else if (!class46.aBoolean810) FacingDirectionNodeStatics.aRenderer6654!!.method3628(i_24_, i_25_, class46.anInt709, class46.anInt789, (0xffffff and class46.anInt749 or (-(i_28_ and 0xff) + 255 shl 24)), 1)
                                             else FacingDirectionNodeStatics.aRenderer6654!!.aa(i_24_, i_25_, class46.anInt709, class46.anInt789, (0xffffff and class46.anInt749 or (-(0xff and i_28_) + 255 shl 24)), 1)
                                             if (GrayscaleNoiseTexture.aBoolean5300) {
-                                                if (bool) MapTileShape.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
+                                                if (bool) MapTileShapeStatics.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                                 else FloorOverlayDefinition.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
                                             }
                                         } else if (class46.anInt774 == 4) {
@@ -356,7 +356,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     if (SequencedGroundDecor.aBoolean10046) {
                                                         if (GrayscaleNoiseTexture.aBoolean5300) {
                                                             if (!bool) FloorOverlayDefinition.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
-                                                            else MapTileShape.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
+                                                            else MapTileShapeStatics.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                                         }
                                                     } else {
                                                         val class143 = (method1151(-25411, (FacingDirectionNodeStatics.aRenderer6654), (class46.anInt702)))
@@ -364,7 +364,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                         val i_52_ = (class143.method1185((CameraNodeListStatics.aAbstractModelRendererArray1744), 0, class46.anInt673, class46.anInt709, string))
                                                         if (GrayscaleNoiseTexture.aBoolean5300) {
                                                             if (!bool) FloorOverlayDefinition.method503(i_25_ + i_52_, i_24_, (-74).toByte(), (i_24_ - -i_51_), i_25_)
-                                                            else MapTileShape.method2663(-5590, i_24_, i_51_ + i_24_, i_25_, (i_25_ + i_52_))
+                                                            else MapTileShapeStatics.method2663(-5590, i_24_, i_51_ + i_24_, i_25_, (i_25_ + i_52_))
                                                         }
                                                     }
                                                 }
@@ -409,7 +409,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                             }
                                             if (GrayscaleNoiseTexture.aBoolean5300) {
                                                 if (!bool) FloorOverlayDefinition.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
-                                                else MapTileShape.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
+                                                else MapTileShapeStatics.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                             }
                                         } else if (class46.anInt774 == 6) {
                                             ParticleGeometryStatics.method3489(115)
@@ -495,7 +495,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 if (class46.aBoolean754) FacingDirectionNodeStatics.aRenderer6654!!.C(true)
                                             }
                                             if (GrayscaleNoiseTexture.aBoolean5300) {
-                                                if (bool) MapTileShape.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
+                                                if (bool) MapTileShapeStatics.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                                 else FloorOverlayDefinition.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
                                             }
                                         } else if (class46.anInt774 == 9) {
@@ -517,7 +517,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                             if (class46.anInt690 != 1) FacingDirectionNodeStatics.aRenderer6654!!.method3688(i_69_, i_68_, i_70_, i_71_, class46.anInt749, class46.anInt690, 0)
                                             else FacingDirectionNodeStatics.aRenderer6654!!.method3709(i_69_, i_68_, i_70_, i_71_, class46.anInt749, 0)
                                             if (GrayscaleNoiseTexture.aBoolean5300) {
-                                                if (bool) MapTileShape.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
+                                                if (bool) MapTileShapeStatics.method2663(-5590, i_19_, i_21_, i_20_, i_22_)
                                                 else FloorOverlayDefinition.method503(i_22_, i_19_, (-74).toByte(), i_21_, i_20_)
                                             }
                                         }
