@@ -42,7 +42,7 @@ class ClickFeedbackTask internal constructor(private val aRsaVarbitHandler_4671:
             if (i_2_.toInt() != -98) method1354(69.toByte())
             i_0_ = (i_0_ * IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) shr 8)
             if (i_0_ != 0 && i != -1) {
-                if (!RgbColorPalette.aBoolean1236 && SlotBinding.anInt3428 != -1 && method1296(true) && !FileIoUtil.method2605((-99).toByte())) {
+                if (!RgbColorPalette.aBoolean1236 && SlotBindingStatics.anInt3428 != -1 && method1296(true) && !FileIoUtil.method2605((-99).toByte())) {
                     HeadIconRendererStatics.aClass348_Sub16_Sub3_2718 = method943(false)
                     val class348_sub16_sub3 = NpcCountAccessor.method1326(HeadIconRendererStatics.aClass348_Sub16_Sub3_2718, i_2_.toInt() xor 0x68.inv())
                     ParticleEmitterListNode.method3273(true, -95, class348_sub16_sub3)

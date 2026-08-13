@@ -252,7 +252,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WidgetComponent.anInt766 = 0
             ConfigIdPair.anInt402 = 0
             SpriteDefinition.anInt7073 = 0
-            SlotBinding.anInt3395 = 0
+            SlotBindingStatics.anInt3395 = 0
             CollisionFlagQuery.anInt1192 = 0
             OpenGlModel.anInt547 = 0
             MaterialTypeMarkerStatics.anInt6516 = 0
@@ -2701,7 +2701,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt8053 = 0
             NpcCountAccessor.anInt2281 = 0
             OpenGlRenderer.anInt7537 = 0
-            SlotBinding.anInt3393 = 0
+            SlotBindingStatics.anInt3393 = 0
             ProjectileDefinition.anInt3846 = 0
             TerrainChunkBuilder.anInt1549 = 0
             MatrixCameraTransform.anInt5688 = 0

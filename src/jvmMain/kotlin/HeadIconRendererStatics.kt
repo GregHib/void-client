@@ -58,12 +58,12 @@ object HeadIconRendererStatics {
         anInt2059++
         i = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) * i shr 8
         if (i_14_ == i_13_ && !RgbColorPalette.aBoolean1236) method960(1)
-        else if (i_13_ != -1 && (i_13_ != SlotBinding.anInt3428 || !ParticleSystemState.method1296(true)) && i != 0 && !RgbColorPalette.aBoolean1236) {
+        else if (i_13_ != -1 && (i_13_ != SlotBindingStatics.anInt3428 || !ParticleSystemState.method1296(true)) && i != 0 && !RgbColorPalette.aBoolean1236) {
             method368(i, 18002, false, i_13_, CachedRgbNoiseTexture.aJs5Archive_8667, 0, i_15_)
             method3093(93)
         }
-        if (SlotBinding.anInt3428 != i_13_) aClass348_Sub16_Sub3_2718 = null
-        SlotBinding.anInt3428 = i_13_
+        if (SlotBindingStatics.anInt3428 != i_13_) aClass348_Sub16_Sub3_2718 = null
+        SlotBindingStatics.anInt3428 = i_13_
     }
 
     var anInt551: Int = 0

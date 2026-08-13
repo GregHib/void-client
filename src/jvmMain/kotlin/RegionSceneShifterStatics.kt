@@ -1,7 +1,7 @@
 import ClickFeedbackTask.Companion.method1353
 import DetailLevelOptionState.Companion.method1836
 import BackgroundWorkerThread.Companion.method1911
-import SlotBinding.Companion.method2028
+import SlotBindingStatics.method2028
 import MidiSequencePlayer.Companion.method2878
 import RenderListTextureNode.Companion.method3153
 import MinimapTriangleDrawer.Companion.method464

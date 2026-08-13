@@ -169,8 +169,8 @@ import WalkingTypeUtil.method1979
 import NpcDefinitionCache.Companion.method1980
 import NpcDefinitionCache.Companion.method1987
 import CompassSmoother.Companion.method2018
-import SlotBinding.Companion.method2026
-import SlotBinding.Companion.method2029
+import SlotBindingStatics.method2026
+import SlotBindingStatics.method2029
 import LocDefinitionCache.Companion.method2036
 import ProjectileConfigUtil.method315
 import ArchiveFileConditionWrapper.Companion.method2043

@@ -86,7 +86,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 FixedFunctionWaterPass.anInt7365 = 1
             }
             if (FixedFunctionWaterPass.anInt7365 == 1) {
-                Crc64Hashable.aSlotBindingArray4987 = SlotBinding.method2029(110)
+                Crc64Hashable.aSlotBindingArray4987 = SlotBindingStatics.method2029(110)
                 SlotBinding.aSlotBinding_3396!!.method2025(MapArchiveSource(FixedFunctionWaterPass.aJs5Archive_7362!!), false)
                 SlotBinding.aSlotBinding_3402!!.method2025(ConfigVarProgress("jaggl"), false)
                 SlotBinding.aSlotBinding_3403!!.method2025(ConfigVarProgress("jagdx"), false)

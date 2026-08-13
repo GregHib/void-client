@@ -113,7 +113,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             System.gc()
             method3007(2, 22684)
             RgbColorPalette.aBoolean1236 = false
-            SlotBinding.anInt3428 = -1
+            SlotBindingStatics.anInt3428 = -1
             SpriteRgbTextureNode.Companion.method3093(i + 79)
             FloatCameraTransform.method921(99.toByte(), true)
             RegionMapDecoder.regionTileY = 0

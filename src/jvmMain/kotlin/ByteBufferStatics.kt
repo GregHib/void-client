@@ -156,7 +156,7 @@ object ByteBufferStatics {
             val bool_72_ = (WorldMapRenderer.anInt4674 == 2 || method3196(WorldMapRenderer.anInt4674, -110) || method2672(WorldMapRenderer.anInt4674, -128))
             if (bool != bool_72_) {
                 if (bool) {
-                    SlotBinding.anInt3428 = ParticleProcessor.anInt4270
+                    SlotBindingStatics.anInt3428 = ParticleProcessor.anInt4270
                     if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350) != 0) {
                         method2355(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350), 50.toByte(), false, CachedRgbNoiseTexture.aJs5Archive_8667, ParticleProcessor.anInt4270, 0, 2)
                         method3093(i xor 0x66)
