@@ -403,33 +403,33 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             val i_54_ = i_48_ + (i_45_ shl i_30_)
             OpenGlTerrainTile.anIntArray8269!![0] = i_50_
             val i_55_ = (i_46_ shl i_30_) + i_49_
-            ContactEntry.anIntArray9612!![0] = i_51_
+            ContactEntryStatics.anIntArray9612!![0] = i_51_
             OpenGlTerrainTile.anIntArray8269!![1] = i_53_
             MapElementManager.anIntArray4463!![0] = i_52_
-            ContactEntry.anIntArray9612!![1] = i_51_
+            ContactEntryStatics.anIntArray9612!![1] = i_51_
             MapElementManager.anIntArray4463!![1] = i_52_
             OpenGlTerrainTile.anIntArray8269!![2] = i_50_
-            ContactEntry.anIntArray9612!![2] = i_54_
+            ContactEntryStatics.anIntArray9612!![2] = i_54_
             MapElementManager.anIntArray4463!![2] = i_52_
             OpenGlTerrainTile.anIntArray8269!![3] = i_53_
-            ContactEntry.anIntArray9612!![3] = i_54_
+            ContactEntryStatics.anIntArray9612!![3] = i_54_
             MapElementManager.anIntArray4463!![3] = i_52_
             OpenGlTerrainTile.anIntArray8269!![4] = i_50_
-            ContactEntry.anIntArray9612!![4] = i_51_
+            ContactEntryStatics.anIntArray9612!![4] = i_51_
             MapElementManager.anIntArray4463!![4] = i_55_
             OpenGlTerrainTile.anIntArray8269!![5] = i_53_
-            ContactEntry.anIntArray9612!![5] = i_51_
+            ContactEntryStatics.anIntArray9612!![5] = i_51_
             MapElementManager.anIntArray4463!![5] = i_55_
             OpenGlTerrainTile.anIntArray8269!![6] = i_50_
-            ContactEntry.anIntArray9612!![6] = i_54_
+            ContactEntryStatics.anIntArray9612!![6] = i_54_
             OpenGlTerrainTile.anIntArray8269!![7] = i_53_
             MapElementManager.anIntArray4463!![6] = i_55_
-            ContactEntry.anIntArray9612!![7] = i_54_
+            ContactEntryStatics.anIntArray9612!![7] = i_54_
             MapElementManager.anIntArray4463!![7] = i_55_
             for (i_56_ in 0..7) {
                 val f_57_ = OpenGlTerrainTile.anIntArray8269!![i_56_].toFloat()
                 val f_58_ = MapElementManager.anIntArray4463!![i_56_].toFloat()
-                val f_59_ = ContactEntry.anIntArray9612!![i_56_].toFloat()
+                val f_59_ = ContactEntryStatics.anIntArray9612!![i_56_].toFloat()
                 val f_60_ = (f_57_ * TextureTileRenderer.aFloat6835 + f_59_ * BufferToggleState.aFloat3710 + aFloat6430 * f_58_ + f_35_)
                 val f_61_ = (OggMediaStream.aFloat1010 * f_57_ + f_59_ * DynamicSceneObjectEntity.aFloat10199 + f_58_ * ShortMatrixNodeStatics.aFloat9516 + f)
                 var f_62_ = f_36_ + (f_58_ * Renderer.aFloat4582 + (TextureMipDescriptorStatics.aFloat4338 * f_59_ + RenderQueueState.aFloat6523 * f_57_))
@@ -3526,7 +3526,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             if (i < 92) method661(114.toByte())
             FileExistsConditionStatics.anInt4776 = 0
             SourceRowTextureNode.aNodeDeque_9111!!.method1996(115)
-            ContactEntry.aHashtable_9603!!.method3481(0)
+            ContactEntryStatics.aHashtable_9603!!.method3481(0)
             ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1009(2110355138)
             method3743(6.toByte(), FlipTextureNode.aClass348_Sub42_Sub12_9144)
         }

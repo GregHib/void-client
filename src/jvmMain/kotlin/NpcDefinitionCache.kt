@@ -111,7 +111,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         }
 
         fun method1982(i: Int, i_8_: Int, string: String) {
-            ContactEntry.anInt9594++
+            ContactEntryStatics.anInt9594++
             anInt3318++
             val class348_sub47 = method2148(CacheArchiveIndex.aOutgoingPacketHeader_1766, TheoraVideoStream.aIsaacCipher_9029, i + -107)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 1 - -method1745(string, -65))

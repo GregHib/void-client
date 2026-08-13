@@ -730,7 +730,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             PcmStreamBuffer.anInt8863 = 0
             OggCacheStream.anInt5266 = 0
             GlEnvMappedWaterPass.anInt7377 = 0
-            ContactEntry.anInt9596 = 0
+            ContactEntryStatics.anInt9596 = 0
             GroundDecorSceneEntity.anInt9992 = 0
             InterfaceBounds.anInt6805 = 0
             WidgetComponentNode.anInt4660 = 0
@@ -2157,7 +2157,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MapRegionLoaderThread.anInt4210 = 0
             Direct3dModel.anInt5441 = 0
             UnderlayDefinition.anInt2888 = 0
-            ContactEntry.anInt9594 = 0
+            ContactEntryStatics.anInt9594 = 0
             MultiLevelOptionState.anInt6146 = 0
             Npc.anInt10510 = 0
             AwtKeyboardListener.anInt6529 = 0
@@ -3905,7 +3905,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TwoStateOptionState.anInt6136 = 0
             OpenGlRenderer.anInt7683 = 0
             FixedFunctionWaterPass.anInt7358 = 0
-            ContactEntry.anInt9598 = 0
+            ContactEntryStatics.anInt9598 = 0
             SequencedActorEntity.anInt10105 = 0
             MapElementDecor.anInt10329 = 0
             ConstantColourTextureNode.anInt9251 = 0

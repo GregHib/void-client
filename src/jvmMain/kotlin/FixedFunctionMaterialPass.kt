@@ -82,7 +82,7 @@ class FixedFunctionMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer
             anInt6210++
             LocConfigModelBuilder.anInt4494++
             val class348_sub47: OutgoingPacketNode = WaterMaterialPass.Companion.method2148(GrayscaleNoiseTexture.aOutgoingPacketHeader_5288, TheoraVideoStream.aIsaacCipher_9029, -124)
-            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, ContactEntry.method3229(-96))
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, ContactEntryStatics.method3229(-96))
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), LocTypeDefinition.anInt4017)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), GameDisplayManager.anInt10432)
             if (i != -24498) aStringArray6205 = null

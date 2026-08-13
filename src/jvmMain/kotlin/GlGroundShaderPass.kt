@@ -200,7 +200,7 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
                             SocketFactory.anInt3473 -= insets.left - -insets.right
                             NpcReference.anInt6857 -= insets.bottom + insets.top
                         }
-                        if (ContactEntry.method3229(-86) == 1) {
+                        if (ContactEntryStatics.method3229(-86) == 1) {
                             LocTypeDefinition.anInt4017 = NpcSpawnDecoder.anInt1524
                             TimingCounters.anInt4167 = 0
                             ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 - NpcSpawnDecoder.anInt1524) / 2

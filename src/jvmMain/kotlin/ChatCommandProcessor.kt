@@ -981,7 +981,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5306) {
-                anIntArray1149!![anInt1173++] = ContactEntry.method3229(-126)
+                anIntArray1149!![anInt1173++] = ContactEntryStatics.method3229(-126)
                 return
             }
             if (i == 5307) {
@@ -1217,7 +1217,7 @@ object ChatCommandProcessor {
                 val i_129_ = anIntArray1149!![anInt1173 + 1]
                 val i_130_ = anIntArray1149!![anInt1173 + 2]
                 val i_131_ = anIntArray1149!![anInt1173 + 3]
-                ContactEntry.method3231(((i_128_ and 0x3fff) - RegionMapDecoder.regionTileY), ((i_128_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX), i_129_ shl 2, i_131_, i_130_, -128)
+                ContactEntryStatics.method3231(((i_128_ and 0x3fff) - RegionMapDecoder.regionTileY), ((i_128_ shr 14 and 0x3fff) - ArbVertexProgram.regionTileX), i_129_ shl 2, i_131_, i_130_, -128)
                 return
             }
             if (i == 5502) {
@@ -4381,14 +4381,14 @@ object ChatCommandProcessor {
                 if (i == 3621) {
                     if (MinimapSpriteRenderer.anInt4930 == 0) anIntArray1149!![anInt1173++] = -1
                     else {
-                        anIntArray1149!![anInt1173++] = ContactEntry.anInt9604
+                        anIntArray1149!![anInt1173++] = ContactEntryStatics.anInt9604
                         return
                     }
                     return
                 }
                 if (i == 3622) {
                     val i_367_ = anIntArray1149!![--anInt1173]
-                    if (MinimapSpriteRenderer.anInt4930 != 0 && i_367_ < ContactEntry.anInt9604) {
+                    if (MinimapSpriteRenderer.anInt4930 != 0 && i_367_ < ContactEntryStatics.anInt9604) {
                         aStringArray1152!![anInt1170++] = NpcConfig.aStringArray932!![i_367_]!!
                         if (WeaveTextureNode.aStringArray9275!![i_367_] != null) aStringArray1152!![anInt1170++] = (WeaveTextureNode.aStringArray9275!![i_367_]!!)
                         else aStringArray1152!![anInt1170++] = ""
@@ -4470,7 +4470,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3633) {
                     val i_373_ = anIntArray1149!![--anInt1173]
-                    if (MinimapSpriteRenderer.anInt4930 != 0 && i_373_ < ContactEntry.anInt9604) aStringArray1152!![anInt1170++] = ObjectSpawnDecoder.aStringArray1808!![i_373_]
+                    if (MinimapSpriteRenderer.anInt4930 != 0 && i_373_ < ContactEntryStatics.anInt9604) aStringArray1152!![anInt1170++] = ObjectSpawnDecoder.aStringArray1808!![i_373_]
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -5327,7 +5327,7 @@ object ChatCommandProcessor {
         anInt1461++
         LoadingScreenImageNodeStatics.method3179(0)
         PcmStreamBuffer.aLong8866 = 0L
-        val i_24_ = ContactEntry.method3229(-82)
+        val i_24_ = ContactEntryStatics.method3229(-82)
         if (i_22_.toInt() == 102) {
             if (i == 3 || i_24_ == 3) bool = true
             if (!FacingDirectionNodeStatics.aRenderer6654!!.method3695()) bool = true

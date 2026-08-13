@@ -136,7 +136,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
             NpcAnimationResolverStatics.anInt166 = 0
             FileExistsConditionStatics.anInt4776 = i
             SourceRowTextureNode.Companion.aNodeDeque_9111!!.method1996(125)
-            ContactEntry.aHashtable_9603!!.method3481(0)
+            ContactEntryStatics.aHashtable_9603!!.method3481(0)
             ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1009(2110355138)
             ScrollbarComponent.aBoolean8335 = false
         }

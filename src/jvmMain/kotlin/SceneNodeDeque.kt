@@ -127,7 +127,7 @@ class SceneNodeDeque {
         fun method842(bool: Boolean) {
             anInt1501++
             SceneNodeDeque.aWidgetComponentArray1942 = null
-            if (GrayscaleNoiseTexture.aBoolean5300 && ContactEntry.method3229(-82) != 1) method132(106, (WorldMapRenderer.anInt4674 == 3) || WorldMapRenderer.anInt4674 == 7, method3439(107), 0, PackedFlagsAccessor.method3306((-111).toByte()), 0)
+            if (GrayscaleNoiseTexture.aBoolean5300 && ContactEntryStatics.method3229(-82) != 1) method132(106, (WorldMapRenderer.anInt4674 == 3) || WorldMapRenderer.anInt4674 == 7, method3439(107), 0, PackedFlagsAccessor.method3306((-111).toByte()), 0)
             var i = 0
             var i_1_ = 0
             if (GrayscaleNoiseTexture.aBoolean5300) {
@@ -231,7 +231,7 @@ class SceneNodeDeque {
                             val i_7_ = class348_sub49_sub2.anInt7197
                             class348_sub49_sub2.writeString((-5).toByte(), OpenGlModel.aString5600!!)
                             class348_sub49_sub2.writeByte(false, (TextureLoadExceptionStatics.anInt4596))
-                            class348_sub49_sub2.writeByte(false, ContactEntry.method3229(-71))
+                            class348_sub49_sub2.writeByte(false, ContactEntryStatics.method3229(-71))
                             class348_sub49_sub2.writeShort(107.toByte(), LocTypeDefinition.anInt4017)
                             class348_sub49_sub2.writeShort(107.toByte(), GameDisplayManager.anInt10432)
                             class348_sub49_sub2.writeByte(false, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350))

@@ -133,14 +133,14 @@ class GlWaterRenderPass internal constructor(glRenderDevice: GlRenderDevice, js5
                 val string_8_ = method2127(2, string)
                 if (string_8_ != null) {
                     var i = 0
-                    while ((ContactEntry.anInt9604 > i)) {
+                    while ((ContactEntryStatics.anInt9604 > i)) {
                         var string_9_ = NpcConfig.aStringArray932!![i]
                         if (string_9_!!.startsWith("*")) string_9_ = string_9_.substring(1)
                         string_9_ = method2127(2, string_9_)
                         if (string_9_ != null && string_9_ == string_8_) {
-                            ContactEntry.anInt9604--
+                            ContactEntryStatics.anInt9604--
                             var i_10_ = i
-                            while (ContactEntry.anInt9604 > i_10_) {
+                            while (ContactEntryStatics.anInt9604 > i_10_) {
                                 NpcConfig.aStringArray932!![i_10_] = NpcConfig.aStringArray932!![i_10_ + 1]
                                 ObjectSpawnDecoder.aStringArray1808!![i_10_] = ObjectSpawnDecoder.aStringArray1808!![1 + i_10_]
                                 WeaveTextureNode.aStringArray9275!![i_10_] = (WeaveTextureNode.aStringArray9275!![1 + i_10_])

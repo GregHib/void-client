@@ -3521,16 +3521,16 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             NpcAnimationResolverStatics.anInt166++
                         } else {
                             val l = (class348_sub42_sub12.aLong9600)
-                            class348_sub42_sub13 = (ContactEntry.aHashtable_9603!!.method3480(l, -6008) as? ContactList?)
+                            class348_sub42_sub13 = (ContactEntryStatics.aHashtable_9603!!.method3480(l, -6008) as? ContactList?)
                             while (class348_sub42_sub13 != null) {
                                 if (class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601) break
-                                class348_sub42_sub13 = (ContactEntry.aHashtable_9603!!.method3476(true) as? ContactList?)
+                                class348_sub42_sub13 = (ContactEntryStatics.aHashtable_9603!!.method3476(true) as? ContactList?)
                             }
                             if (class348_sub42_sub13 == null) {
                                 class348_sub42_sub13 = (KeyboardLayoutCache.aLruByteCache_3301!!.method583(l, i.toInt() xor 0x3a) as? ContactList?)
                                 if (class348_sub42_sub13 != null && !(class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601)) class348_sub42_sub13 = null
                                 if (class348_sub42_sub13 == null) class348_sub42_sub13 = (ContactList(class348_sub42_sub12.aString9601))
-                                ContactEntry.aHashtable_9603!!.method3483(71.toByte(), l, class348_sub42_sub13)
+                                ContactEntryStatics.aHashtable_9603!!.method3483(71.toByte(), l, class348_sub42_sub13)
                                 NpcAnimationResolverStatics.anInt166++
                             }
                         }

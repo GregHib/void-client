@@ -110,12 +110,12 @@ object ProjectileConfigUtil {
     fun method317(string: String?, i: Int, bool: Boolean) {
         anInt391++
         if (string != null) {
-            if (ContactEntry.anInt9604 >= 100) method544((LocalizedText.aLocalizedText_3522!!.method2063(ChatCommandProcessor.anInt6967, 544)), false, 4)
+            if (ContactEntryStatics.anInt9604 >= 100) method544((LocalizedText.aLocalizedText_3522!!.method2063(ChatCommandProcessor.anInt6967, 544)), false, 4)
             else {
                 val string_6_ = method2127(2, string)
                 if (string_6_ != null) {
                     var i_7_ = 0
-                    while ((i_7_ < ContactEntry.anInt9604)) {
+                    while ((i_7_ < ContactEntryStatics.anInt9604)) {
                         val string_8_ = method2127(2, (NpcConfig.aStringArray932!![i_7_]))
                         if (string_8_ != null && string_8_ == string_6_) {
                             method544((string + (LocalizedText.aLocalizedText_3523!!.method2063(ChatCommandProcessor.anInt6967, 544))), false, 4)

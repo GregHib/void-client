@@ -27,7 +27,7 @@ object ObjectSpawnDecoder {
         anInt4324++
         if (string == null) return false
         var i_0_ = 0
-        while ((i_0_ < ContactEntry.anInt9604)) {
+        while ((i_0_ < ContactEntryStatics.anInt9604)) {
             if (string.equals(ObjectSpawnDecoder.aStringArray1808!![i_0_], ignoreCase = true)) return true
             if (string.equals(IndexedSprite.aStringArray5197!![i_0_], ignoreCase = true)) return true
             i_0_++

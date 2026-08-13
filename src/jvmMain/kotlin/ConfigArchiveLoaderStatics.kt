@@ -195,7 +195,7 @@ object ConfigArchiveLoaderStatics {
                     }
                     if (string.equals("wm1", ignoreCase = true)) {
                         ChatCommandProcessor.method830(1, -1, 102.toByte(), false, -1)
-                        if (ContactEntry.method3229(-61) == 1) {
+                        if (ContactEntryStatics.method3229(-61) == 1) {
                             method94("wm1 succeeded", -65)
                             return
                         } else method94("wm1 failed", i.toInt() xor 0x17.inv())
@@ -203,7 +203,7 @@ object ConfigArchiveLoaderStatics {
                     }
                     if (string.equals("wm2", ignoreCase = true)) {
                         ChatCommandProcessor.method830(2, -1, 102.toByte(), false, -1)
-                        if (ContactEntry.method3229(-119) == 2) method94("wm2 succeeded", -109)
+                        if (ContactEntryStatics.method3229(-119) == 2) method94("wm2 succeeded", -109)
                         else {
                             method94("wm2 failed", i + 154)
                             return
@@ -212,7 +212,7 @@ object ConfigArchiveLoaderStatics {
                     }
                     if (string.equals("wm3", ignoreCase = true)) {
                         ChatCommandProcessor.method830(3, 1024, 102.toByte(), false, 768)
-                        if (ContactEntry.method3229(i.toInt() xor 0x3d) == 3) method94("wm3 succeeded", 111)
+                        if (ContactEntryStatics.method3229(i.toInt() xor 0x3d) == 3) method94("wm3 succeeded", 111)
                         else {
                             method94("wm3 failed", 83)
                             return

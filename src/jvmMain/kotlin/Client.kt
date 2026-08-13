@@ -339,8 +339,8 @@ import RegionSceneShifterStatics.method3155
 import ParamMap.Companion.method3165
 import ParameterizedText.Companion.method3217
 import CharCodeMap.Companion.method3220
-import ContactEntry.Companion.method3228
-import ContactEntry.Companion.method3229
+import ContactEntryStatics.method3228
+import ContactEntryStatics.method3229
 import InterfaceComponentGroup.Companion.method3237
 import InterfaceComponentGroup.Companion.method3243
 import TimedTileQueueEntry.Companion.method3247
@@ -2745,7 +2745,7 @@ class Client : GameAppletFrame() {
                 if (string_6_ == "") string_6_ = string_5_
                 if (bool_3_) {
                     var i_7_ = 0
-                    while ((i_7_ < ContactEntry.anInt9604)) {
+                    while ((i_7_ < ContactEntryStatics.anInt9604)) {
                         if (ObjectSpawnDecoder.aStringArray1808!![i_7_] == string_6_) {
                             NpcConfig.aStringArray932!![i_7_] = string
                             ObjectSpawnDecoder.aStringArray1808!![i_7_] = string_4_
@@ -2756,12 +2756,12 @@ class Client : GameAppletFrame() {
                         i_7_++
                     }
                 } else {
-                    NpcConfig.aStringArray932!![ContactEntry.anInt9604] = string
-                    ObjectSpawnDecoder.aStringArray1808!![ContactEntry.anInt9604] = string_4_
-                    WeaveTextureNode.aStringArray9275!![(ContactEntry.anInt9604)] = string_5_
-                    IndexedSprite.aStringArray5197!![ContactEntry.anInt9604] = string_6_
-                    BasicGlRenderPass.aBooleanArray7304!![ContactEntry.anInt9604] = WhirlpoolHash.method1166(i, 2) == 2
-                    ContactEntry.anInt9604++
+                    NpcConfig.aStringArray932!![ContactEntryStatics.anInt9604] = string
+                    ObjectSpawnDecoder.aStringArray1808!![ContactEntryStatics.anInt9604] = string_4_
+                    WeaveTextureNode.aStringArray9275!![(ContactEntryStatics.anInt9604)] = string_5_
+                    IndexedSprite.aStringArray5197!![ContactEntryStatics.anInt9604] = string_6_
+                    BasicGlRenderPass.aBooleanArray7304!![ContactEntryStatics.anInt9604] = WhirlpoolHash.method1166(i, 2) == 2
+                    ContactEntryStatics.anInt9604++
                 }
                 Crc64Hashable.anInt4985 = ResourceLoaderThread.anInt3918
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
@@ -3519,7 +3519,7 @@ class Client : GameAppletFrame() {
                 val i_106_ = (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortLittle(!bool) shl 2)
                 val i_107_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                 WallSceneEntity.method2397((-125).toByte())
-                ContactEntry.method3231(i_104_, i, i_106_, i_107_, i_105_, -127)
+                ContactEntryStatics.method3231(i_104_, i, i_106_, i_107_, i_105_, -127)
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
@@ -3719,9 +3719,9 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (InboundPacketHeader.aInboundPacketHeader_2331 == InboundPacketHeader.aInboundPacketHeader_6584) {
-                ContactEntry.anInt9604 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                ContactEntryStatics.anInt9604 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 var i = 0
-                while (ContactEntry.anInt9604 > i) {
+                while (ContactEntryStatics.anInt9604 > i) {
                     NpcConfig.aStringArray932!![i] = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readString((-36).toByte())
                     ObjectSpawnDecoder.aStringArray1808!![i] = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readString(112.toByte())
                     if (ObjectSpawnDecoder.aStringArray1808!![i] == "") ObjectSpawnDecoder.aStringArray1808!![i] = NpcConfig.aStringArray932!![i]
