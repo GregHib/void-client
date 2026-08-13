@@ -2573,7 +2573,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TrackedGroundDecor.anInt10372 = 0
             CameraOrModelTransform.anInt4163 = 0
             OpenGlRenderer.anInt7570 = 0
-            ParticleTileShape.anInt8820 = 0
+            ParticleTileShapeStatics.anInt8820 = 0
             NpcDefinitionCache.anInt3322 = 0
             InboundPacketHeader.anInt1750 = 0
             Direct3dModel.anInt5448 = 0

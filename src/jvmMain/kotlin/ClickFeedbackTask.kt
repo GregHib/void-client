@@ -1,6 +1,6 @@
 import ProjectionCameraTransform.Companion.method943
 import ParticleSystemState.Companion.method1296
-import ParticleTileShape.Companion.method2732
+import ParticleTileShapeStatics.method2732
 import AbstractBloomEffect.Companion.method2755
 
 /* Class177 - Decompiled by JODE

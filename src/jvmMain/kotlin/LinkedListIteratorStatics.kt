@@ -53,7 +53,7 @@ object LinkedListIteratorStatics {
                     val class144 = (HudTabPanelStatics.aPrivilegedOperationWorker_2993!!.method2237(
                         URL(
                             FacingDirectionNodeStatics.anApplet6662!!.getCodeBase(),
-                            ("clienterror.ws?c=" + ParticleTileShape.anInt8818 + "&u=" + (if (OpenGlTerrainTile.aString8265 != null) OpenGlTerrainTile.aString8265 else NativeBufferHandle.aLong1507.toString()) + "&v1=" + PrivilegedOperationWorker.aString3782 + "&v2=" + PrivilegedOperationWorker.aString3796 + "&e=" + string_4_)
+                            ("clienterror.ws?c=" + ParticleTileShapeStatics.anInt8818 + "&u=" + (if (OpenGlTerrainTile.aString8265 != null) OpenGlTerrainTile.aString8265 else NativeBufferHandle.aLong1507.toString()) + "&v1=" + PrivilegedOperationWorker.aString3782 + "&v2=" + PrivilegedOperationWorker.aString3796 + "&e=" + string_4_)
                         ), 8362
                     ))
                     while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-123).toByte(), 1L)

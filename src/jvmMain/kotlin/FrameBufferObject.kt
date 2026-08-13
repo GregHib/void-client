@@ -1,6 +1,6 @@
 import ParticleSystemState.Companion.method1296
 import WaterMaterialPass.Companion.method2148
-import ParticleTileShape.Companion.method2732
+import ParticleTileShapeStatics.method2732
 import BrightnessTextureNode.Companion.method3086
 import jaggl.OpenGL.Companion.glBindFramebufferEXT
 import jaggl.OpenGL.Companion.glCheckFramebufferStatusEXT

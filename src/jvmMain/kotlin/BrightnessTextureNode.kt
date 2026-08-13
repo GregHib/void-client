@@ -1,4 +1,4 @@
-import ParticleTileShape.Companion.method2732
+import ParticleTileShapeStatics.method2732
 
 /* Class348_Sub40_Sub15 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

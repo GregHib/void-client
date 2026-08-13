@@ -368,7 +368,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 LocTypeDefinition.anInt4017 = i
                 SocketFactory.anInt3473 = LocTypeDefinition.anInt4017
                 TimingCounters.anInt4167 = 0
-                ParticleTileShape.anInt8818 = i_15_
+                ParticleTileShapeStatics.anInt8818 = i_15_
                 EdgeDetectTextureNode.anGameApplet_Frame_9169 = this
                 FacingDirectionNodeStatics.anApplet6662 = JagGlToolkitFactory.anApplet1530
                 VorbisOggDecoder.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i_17_, string, i_18_, JagGlToolkitFactory.anApplet1530 != null)
@@ -397,7 +397,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             EdgeDetectTextureNode.anGameApplet_Frame_9169 = this
             TimingCounters.anInt4167 = 0
             ModelResourceBundle.anInt7129 = 0
-            ParticleTileShape.anInt8818 = i_21_
+            ParticleTileShapeStatics.anInt8818 = i_21_
             FacingDirectionNodeStatics.anApplet6662 = null
             RsaVarbitHandler.aFrame4904 = Frame()
             RsaVarbitHandler.aFrame4904!!.setTitle("Jagex")

@@ -34,7 +34,7 @@ import ConfigArchiveLoaderStatics.method2478
 import WallEntity.Companion.method2487
 import RSFont.Companion.method2570
 import MidiSequencePlayer.Companion.method2839
-import ParticleTileShape.Companion.method2732
+import ParticleTileShapeStatics.method2732
 import VorbisOggDecoder.Companion.method2972
 import ClientMachineInfo.Companion.method2749
 import GradientLookupEffect.Companion.method3076
