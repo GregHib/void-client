@@ -1000,7 +1000,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9827 = 0
             HeadIconRendererStatics.anInt2063 = 0
             FlickeringEffectsOptionState.anInt5918 = 0
-            HitsplatDefinition.anInt2012 = 0
+            HitsplatDefinitionStatics.anInt2012 = 0
             GlIndexBufferArb.anInt8506 = 0
             HslColorConfig.anInt338 = 0
             OpenGlModel.anInt5641 = 0
@@ -1647,7 +1647,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             LocTypeDefLoader.anInt2502 = 0
             OpenGlRenderer.anInt7606 = 0
             CipheredPacketBuffer.anInt9766 = 0
-            HitsplatDefinition.anInt2017 = 0
+            HitsplatDefinitionStatics.anInt2017 = 0
             RenderableGroup.anInt5014 = 0
             OpenGlModel.anInt5582 = 0
             BinaryGraphicsOptionState.anInt5952 = 0

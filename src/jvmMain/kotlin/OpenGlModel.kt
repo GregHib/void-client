@@ -899,7 +899,7 @@ class OpenGlModel : AbstractModel {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x2).toByte()
                 class64_sub3_211_.aHoverActionEntry_5610!!.anByteBufferReader_1811 = aHoverActionEntry_5610!!.anByteBufferReader_1811
                 class64_sub3_211_.aHoverActionEntry_5610!!.aByte1812 = aHoverActionEntry_5610!!.aByte1812
-            } else if (HitsplatDefinition.method1193(anInt5556, i, true)) class64_sub3_211_.aHoverActionEntry_5610 = aHoverActionEntry_5610
+            } else if (HitsplatDefinitionStatics.method1193(anInt5556, i, true)) class64_sub3_211_.aHoverActionEntry_5610 = aHoverActionEntry_5610
             else class64_sub3_211_.aHoverActionEntry_5610 = null
             if (LinkedListIteratorStatics.method1241(anInt5556, i, -119)) {
                 if (class64_sub3_213_!!.aShortArray5564 != null && class64_sub3_213_.aShortArray5564!!.size >= anInt5529) {
@@ -2968,7 +2968,7 @@ class OpenGlModel : AbstractModel {
                 if (ParticleEmitterDef.method616(2, i, i_697_)) aHoverActionEntry_5605 = HoverActionEntry(null, 5126, 3, 0)
                 if (IndexedFileCache.method1163(i_697_, 78.toByte(), i)) aHoverActionEntry_5620 = HoverActionEntry(null, 5126, 2, 0)
                 if (method166(69.toByte(), i_697_, i)) aHoverActionEntry_5563 = HoverActionEntry(null, 5126, 3, 0)
-                if (HitsplatDefinition.method1193(i_697_, i, true)) aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
+                if (HitsplatDefinitionStatics.method1193(i_697_, i, true)) aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
                 if (LinkedListIteratorStatics.method1238(i, i_697_, -31)) aArchiveFileConditionWrapper_5575 = ArchiveFileConditionWrapper()
                 val var_renderConfig: RenderConfig = var_ha_Sub2!!.aRenderConfig4579!!
                 anIntArray5528 = IntArray(modelDefinition!!.anInt1821 + 1)

@@ -22,7 +22,6 @@ class HitsplatDefinition {
 
     private fun method1192(i: Int, class348_sub49: ByteBuffer, i_1_: Byte) {
         anInt2014++
-        if (i_1_.toInt() != 17) method1194(-80)
         if (i == 1) {
             this.anInt2019 = class348_sub49.readUnsignedShort(842397944)
             this.anInt2016 = class348_sub49.readUnsignedByte(255)
@@ -31,26 +30,7 @@ class HitsplatDefinition {
     }
 
     companion object {
-        var anInt2012: Int = 0
-
-        var aLongArray2013: LongArray? = LongArray(10)
-        var anInt2014: Int = 0
-
-        var aJs5Archive_2015: Js5Archive? = null
-        var anInt2017: Int = 0
         var anInt2018: Int = 0
-        @JvmStatic
-        fun method1193(i: Int, i_2_: Int, bool: Boolean): Boolean {
-            if (!bool) return true
-            anInt2017++
-            return (i_2_ and 0x800) != 0
-        }
-
-        @JvmStatic
-        fun method1194(i: Int) {
-            if (i != 10) method1193(91, -68, true)
-            aLongArray2013 = null
-            aJs5Archive_2015 = null
-        }
+        var anInt2014: Int = 0
     }
 }

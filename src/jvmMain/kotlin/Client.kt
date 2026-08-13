@@ -41,7 +41,7 @@ import SpriteLoadValidatorStatics.method1159
 import GlTextureBase.Companion.method237
 import ScreenBorderFiller.method1168
 import ScreenBorderFiller.method1169
-import HitsplatDefinition.Companion.method1194
+import HitsplatDefinitionStatics.method1194
 import HintArrowOrMessage.Companion.method1195
 import WidgetNodeLink.Companion.method1198
 import OrientationRotator.method1200

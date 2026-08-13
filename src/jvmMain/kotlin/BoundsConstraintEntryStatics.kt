@@ -1,5 +1,5 @@
 import ObjectSpawnDecoder.method1087
-import HitsplatDefinition.Companion.method1193
+import HitsplatDefinitionStatics.method1193
 import LinkedListIteratorStatics.method1241
 import BooleanGraphicsOptionState.Companion.method1722
 

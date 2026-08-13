@@ -184,9 +184,9 @@ class GlTexture3D : GlTexture {
                 method2290()
                 for (i_48_ in 0..<MapAreaDefinition.anInt2524) OverlayColorTable.aBooleanArrayArrayArray1751!![i_48_] = SolidFillComponent.aBooleanArrayArrayArray8361!![i_48_]!!
                 if (Npc.anInt10503 == 2) {
-                    if (HitsplatDefinition.aLongArray2013!![0] < HitsplatDefinition.aLongArray2013!![1]) {
+                    if (HitsplatDefinitionStatics.aLongArray2013!![0] < HitsplatDefinitionStatics.aLongArray2013!![1]) {
                         if (WidgetDefinition.anIntArray256!![0] + ParticleProcessor.anIntArray4271!![0] > BrightnessContrastEffect.anIntArray9183!![0]) ParticleProcessor.anIntArray4271!![0]++
-                    } else if ((HitsplatDefinition.aLongArray2013!![0] > HitsplatDefinition.aLongArray2013!![1]) && ((WidgetDefinition.anIntArray256!![0] + ParticleProcessor.anIntArray4271!![0]) < BrightnessContrastEffect.anIntArray9183!![2])) ParticleProcessor.anIntArray4271!![0]--
+                    } else if ((HitsplatDefinitionStatics.aLongArray2013!![0] > HitsplatDefinitionStatics.aLongArray2013!![1]) && ((WidgetDefinition.anIntArray256!![0] + ParticleProcessor.anIntArray4271!![0]) < BrightnessContrastEffect.anIntArray9183!![2])) ParticleProcessor.anIntArray4271!![0]--
                 }
             }
             if (!SpriteTextureNode.aBoolean9242) {
@@ -211,7 +211,7 @@ class GlTexture3D : GlTexture {
                             (NormalMapTextureNode.aSceneLoaderThreadArray9432!![i] as Object).notify()
                         }
                         bool = false
-                    } else HitsplatDefinition.aLongArray2013!![i] = NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2204()
+                    } else HitsplatDefinitionStatics.aLongArray2013!![i] = NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2204()
                 }
                 if (bool) break
                 try {
