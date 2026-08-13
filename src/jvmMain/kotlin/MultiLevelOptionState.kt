@@ -101,7 +101,7 @@ class MultiLevelOptionState : GraphicsOptionState {
             SequencedGroundDecor.anInt10047 = GlslMaterialPass.anInt6246
             val i_12_ = -99 % ((i - 11) / 56)
             BloomGraphicsOptionState.anInt5973 = 0
-            CameraConfigDefinition.anInt3253 = WorldMapElement.anInt4638
+            CameraConfigDefinitionStatics.anInt3253 = WorldMapElement.anInt4638
             GlGroundShaderPass.anInt7403 = 0
             WeaveTextureNode.anInt9282 = 5
             NativeShaderProgram.anInt9775 = -1

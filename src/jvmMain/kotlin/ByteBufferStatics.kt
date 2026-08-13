@@ -1,7 +1,7 @@
 import AbstractFrameBufferSurface.Companion.method3007
 import Client.Companion.method3196
 import CacheIndexManager.Companion.method2355
-import CameraConfigDefinition.Companion.method1922
+import CameraConfigDefinitionStatics.method1922
 import ChatCommandProcessor.method703
 import CombineTextureNode.Companion.method3088
 import GlTextureBase.Companion.method235

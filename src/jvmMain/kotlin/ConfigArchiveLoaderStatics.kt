@@ -520,7 +520,7 @@ object ConfigArchiveLoaderStatics {
                         val strings = (method3113(' ', true, string.substring(12)))
                         if (strings.size >= 2) {
                             val i_17_ = (if (strings.size > 2) strings[2]!!.toInt() else 0)
-                            CameraConfigDefinition.method1922(strings[1], i_17_, strings[0], true)
+                            CameraConfigDefinitionStatics.method1922(strings[1], i_17_, strings[0], true)
                             return
                         }
                     }

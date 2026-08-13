@@ -73,7 +73,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlTerrainTile.anInt8262 = 0
             ModelGroundDecor.anInt10004 = 0
             ImageFrameCache.anInt4018 = 0
-            CameraConfigDefinition.anInt3247 = 0
+            CameraConfigDefinitionStatics.anInt3247 = 0
             InputStream_Sub1.anInt73 = 0
             FloatCameraTransform.anInt5719 = 0
             SequencedActorEntity.anInt10111 = 0
@@ -2222,10 +2222,10 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NpcActorEntity.anInt10083 = 0
             GroundDecorEntity.anInt8740 = 0
             AbstractRenderPass.anInt4484 = 0
-            CameraConfigDefinition.anInt3250 = 0
+            CameraConfigDefinitionStatics.anInt3250 = 0
             GlBufferObject.anInt4752 = 0
             FireParticleStream.anInt96 = 0
-            CameraConfigDefinition.anInt3252 = 0
+            CameraConfigDefinitionStatics.anInt3252 = 0
             OpenGlRenderer.anInt7550 = 0
             IntHashSetStatics.anInt3965 = 0
             SequencedWallEntity.anInt10158 = 0

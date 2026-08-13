@@ -274,7 +274,7 @@ class WidgetTextConfig {
                     i_6_++
                 }
                 MinimapAreaMarkerNode.anInt9699 = 0
-                CameraConfigDefinition.anInt3246 = 0
+                CameraConfigDefinitionStatics.anInt3246 = 0
                 TextureCache.method3466(89)
             }
         }

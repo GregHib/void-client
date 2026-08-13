@@ -1566,7 +1566,7 @@ class Client : GameAppletFrame() {
             GlTexture1D.aInputTracker_8552!!.method3589(0)
             if (FacingDirectionNodeStatics.aRenderer6654 != null) FacingDirectionNodeStatics.aRenderer6654!!.method3646(method599(-74).toInt())
             method1315(93)
-            CameraConfigDefinition.anInt3246 = 0
+            CameraConfigDefinitionStatics.anInt3246 = 0
             MinimapAreaMarkerNode.anInt9699 = 0
             var interface6 = LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2697(0)
             while (interface6 != null) {
@@ -1580,9 +1580,9 @@ class Client : GameAppletFrame() {
                         }
                     } else if (!method3263(true)) IntHashSetStatics.method2363(-84)
                     else GlCubemapLightPass.method3543((-89).toByte())
-                } else if (i_109_ == 0 && CameraConfigDefinition.anInt3246 < 75) {
-                    CacheLruCache.anCharStreamReaderArray3884s!![CameraConfigDefinition.anInt3246] = interface6
-                    CameraConfigDefinition.anInt3246++
+                } else if (i_109_ == 0 && CameraConfigDefinitionStatics.anInt3246 < 75) {
+                    CacheLruCache.anCharStreamReaderArray3884s!![CameraConfigDefinitionStatics.anInt3246] = interface6
+                    CameraConfigDefinitionStatics.anInt3246++
                 }
                 interface6 = LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2697(0)
             }
@@ -4856,12 +4856,12 @@ class Client : GameAppletFrame() {
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(121.toByte(), i_9_ shl 16 or i_10_)
                         InterfaceComponentGroup.method3243(25, class348_sub47)
                     }
-                    if (CameraConfigDefinition.anInt3246 > 0) {
+                    if (CameraConfigDefinitionStatics.anInt3246 > 0) {
                         ColourKeyTextureNode.anInt9348++
                         val class348_sub47 = method2148((ShaderStateStatics.aOutgoingPacketHeader_8798), (TheoraVideoStream.aIsaacCipher_9029), -111)
-                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * CameraConfigDefinition.anInt3246)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * CameraConfigDefinitionStatics.anInt3246)
                         var i_13_ = 0
-                        while ((i_13_ < CameraConfigDefinition.anInt3246)) {
+                        while ((i_13_ < CameraConfigDefinitionStatics.anInt3246)) {
                             val interface6 = CacheLruCache.anCharStreamReaderArray3884s!![i_13_]
                             var l = ((interface6!!.method29((-29).toByte()) + -RegionTileNodeStatics.aLong6651) / 50L)
                             RegionTileNodeStatics.aLong6651 = interface6.method29(106.toByte())

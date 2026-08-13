@@ -91,7 +91,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
             anInt8353++
             if (i_3_ != -1922) aBoundsConstraintEntry_8356 = null
             val `is` = ByteArray(i * i_5_ * i_10_)
-            CameraConfigDefinition.method1919(i, f_8_, `is`, f_6_, 0, f_9_, textureGenerator, f_7_, i_4_, 119.toByte(), i_10_, f, i_5_)
+            CameraConfigDefinitionStatics.method1919(i, f_8_, `is`, f_6_, 0, f_9_, textureGenerator, f_7_, i_4_, 119.toByte(), i_10_, f, i_5_)
             return `is`
         }
 

@@ -127,11 +127,11 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                 ParticleSystemRenderer.anInt3855 = ((-SpriteComponent.anInt8368 + ParticleSystemRenderer.anInt3855).toFloat() * f + SpriteComponent.anInt8368.toFloat()).toInt()
                 MinimapAreaMarkerNode.anInt9701 = (DataHolderStatics.anInt3662.toFloat() + (MinimapAreaMarkerNode.anInt9701 - DataHolderStatics.anInt3662).toFloat() * f).toInt()
                 CompositeRgbNoiseTexture.anInt8685 = (TextureAtlasStateStatics.anInt4424.toFloat() + f * (-TextureAtlasStateStatics.anInt4424 + CompositeRgbNoiseTexture.anInt8685).toFloat()).toInt()
-                var i_8_ = WorldMapElement.anInt4638 - CameraConfigDefinition.anInt3253
+                var i_8_ = WorldMapElement.anInt4638 - CameraConfigDefinitionStatics.anInt3253
                 if (i_8_ <= 8192) {
                     if (i_8_ < -8192) i_8_ += 16384
                 } else i_8_ -= 16384
-                WorldMapElement.anInt4638 = (i_8_.toFloat() * f + CameraConfigDefinition.anInt3253.toFloat()).toInt()
+                WorldMapElement.anInt4638 = (i_8_.toFloat() * f + CameraConfigDefinitionStatics.anInt3253.toFloat()).toInt()
                 WorldMapElement.anInt4638 = WorldMapElement.anInt4638 and 0x3fff
             }
         }
