@@ -1,4 +1,4 @@
-import LinkedListIterator.Companion.method1242
+import LinkedListIteratorStatics.method1242
 import TexGenMaterialPass.Companion.method2161
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.runBlocking

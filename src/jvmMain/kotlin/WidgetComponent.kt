@@ -940,7 +940,7 @@ class WidgetComponent {
             BlankTextureNode.anIntArray9259 = IntArray(i)
             if (i_67_.toInt() == -61) {
                 ConnectionStateType.anIntArray1045 = IntArray(i)
-                LinkedListIterator.anIntArray2117 = IntArray(i)
+                LinkedListIteratorStatics.anIntArray2117 = IntArray(i)
                 anInt825++
                 CharCodeMap.anIntArray1127 = IntArray(i)
                 FileIoUtil.anIntArray4097 = IntArray(i)

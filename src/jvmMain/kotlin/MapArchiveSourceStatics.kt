@@ -1,4 +1,4 @@
-import LinkedListIterator.Companion.method1242
+import LinkedListIteratorStatics.method1242
 import NormalMapTextureNode.Companion.method3141
 import SocketFactory.Companion.method2049
 import java.io.IOException

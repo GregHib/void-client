@@ -346,7 +346,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                     WorldMapPolygonIconLabel.method3578((-42).toByte(), ParticleSystemRenderer.aCanvas3869, (VorbisOggDecoder.aPrivilegedOperationWorker_8992))
                 }
             } catch (throwable: Throwable) {
-                LinkedListIterator.method1242(method81(109.toByte()), throwable, 15004)
+                LinkedListIteratorStatics.method1242(method81(109.toByte()), throwable, 15004)
                 method82(123, "crash")
             } finally {
                 method90(true, false)
@@ -382,7 +382,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 else showDocument(getDocumentBase(), "_self")
             }
         } catch (throwable: Throwable) {
-            LinkedListIterator.method1242(null, throwable, 15004)
+            LinkedListIteratorStatics.method1242(null, throwable, 15004)
             method82(52, "crash")
         }
     }
@@ -412,7 +412,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2236(this, i_23_ + -33739, 1)
             while (class144.anInt1997 == 0) TexGenMaterialPass.method2161(21.toByte(), 10L)
         } catch (exception: Exception) {
-            LinkedListIterator.method1242(null, exception, i_23_ + -8495)
+            LinkedListIteratorStatics.method1242(null, exception, i_23_ + -8495)
         }
         anInt31++
     }

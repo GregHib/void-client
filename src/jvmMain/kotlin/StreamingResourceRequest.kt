@@ -47,7 +47,7 @@ class StreamingResourceRequest : AsyncResourceRequest() {
                     try {
                         class348_sub15.aClass55_Sub1_6768!!.method517(-2)
                     } catch (exception: Exception) {
-                        LinkedListIterator.method1242("TV: " + class348_sub15.anInt6773, exception, 15004)
+                        LinkedListIteratorStatics.method1242("TV: " + class348_sub15.anInt6773, exception, 15004)
                         OpenGlModel.method690(15.toByte(), (class348_sub15.anInt6773))
                     }
                     if (!class348_sub15.aBoolean6783 && !class348_sub15.aBoolean6781) {

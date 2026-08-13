@@ -277,7 +277,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                     val i_35_ = ActorEntity.aTerrainTileArray5191!![1 + CompiledScriptCache.anInt4372]!!.method3982((-86).toByte(), i_22_, i_19_)
                     if (i_35_ > FileIoUtil.anIntArray4097!![i_15_]) FileIoUtil.anIntArray4097!![i_15_] = i_35_
                     val i_36_ = i_19_ shl 9
-                    if (i_36_ < LinkedListIterator.anIntArray2117!![i_15_]) LinkedListIterator.anIntArray2117!![i_15_] = i_36_
+                    if (i_36_ < LinkedListIteratorStatics.anIntArray2117!![i_15_]) LinkedListIteratorStatics.anIntArray2117!![i_15_] = i_36_
                     else if (i_36_ > BlankTextureNode.anIntArray9259!![i_15_]) BlankTextureNode.anIntArray9259!![i_15_] = i_36_
                     val i_37_ = i_22_ shl 9
                     if (i_37_ >= CharCodeMap.anIntArray1127!![i_15_]) {
@@ -342,7 +342,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
             }
             if (FileIoUtil.anIntArray4097!![i_15_] != -1000000) {
                 FileIoUtil.anIntArray4097!![i_15_] += 40
-                LinkedListIterator.anIntArray2117!![i_15_] -= 512
+                LinkedListIteratorStatics.anIntArray2117!![i_15_] -= 512
                 BlankTextureNode.anIntArray9259!![i_15_] += 512
                 ConnectionStateType.anIntArray1045!![i_15_] += 512
                 CharCodeMap.anIntArray1127!![i_15_] -= 512

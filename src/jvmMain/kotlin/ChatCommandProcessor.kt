@@ -5221,7 +5221,7 @@ object ChatCommandProcessor {
                     i_514_--
                 }
                 stringbuffer.append("op: ").append(i_490_)
-                LinkedListIterator.method1242(stringbuffer.toString(), exception, 15004)
+                LinkedListIteratorStatics.method1242(stringbuffer.toString(), exception, 15004)
             } else {
                 method544(("Clientscript error in: " + class348_sub42_sub19.aString9690), false, 4)
                 val stringbuffer = StringBuffer(30)
@@ -5234,7 +5234,7 @@ object ChatCommandProcessor {
                 stringbuffer.append("Op: ").append(i_490_).append("\n")
                 val string = exception.message
                 if (string != null && string.length > 0) stringbuffer.append("Message: ").append(string).append("\n")
-                LinkedListIterator.method1242(stringbuffer.toString(), exception, 15004)
+                LinkedListIteratorStatics.method1242(stringbuffer.toString(), exception, 15004)
                 method94(stringbuffer.toString(), 90)
             }
         }

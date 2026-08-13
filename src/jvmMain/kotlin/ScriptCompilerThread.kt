@@ -90,7 +90,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
                     if (class348_sub42_sub16_sub2.anInt10457 == 3) class348_sub42_sub16_sub2.aByteArray10461 = (class348_sub42_sub16_sub2.aIndexedFileCache_10458!!.method1161(((-4).toByte()).toByte(), class348_sub42_sub16_sub2.aLong7057.toInt()))
                 } else class348_sub42_sub16_sub2.aIndexedFileCache_10458!!.method1160(class348_sub42_sub16_sub2.aByteArray10461!!.size, (class348_sub42_sub16_sub2.aLong7057).toInt(), class348_sub42_sub16_sub2.aByteArray10461, -7305)
             } catch (exception: Exception) {
-                LinkedListIterator.method1242(null, exception, 15004)
+                LinkedListIteratorStatics.method1242(null, exception, 15004)
             }
             class348_sub42_sub16_sub2!!.aBoolean9664 = false
         }

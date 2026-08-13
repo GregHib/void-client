@@ -54,8 +54,8 @@ import CharCountUtil.method255
 import ModelDefinitionLoader.Companion.method1208
 import HeadIconRendererStatics.method1209
 import CompositeNpcModelBuilder.Companion.method1235
-import LinkedListIterator.Companion.method1239
-import LinkedListIterator.Companion.method1242
+import LinkedListIteratorStatics.method1239
+import LinkedListIteratorStatics.method1242
 import SettingsCrcWriter.method1246
 import HeapInfoRecord.Companion.method1249
 import SceneTilePlaneManager.method260
@@ -4401,7 +4401,7 @@ class Client : GameAppletFrame() {
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
-            LinkedListIterator.method1242(("T1 - " + (if (InboundPacketHeader.aInboundPacketHeader_6584 == null) -1 else InboundPacketHeader.aInboundPacketHeader_6584!!.method1058(110.toByte())) + "," + (if (InboundPacketHeader.aInboundPacketHeader_3145 == null) -1 else InboundPacketHeader.aInboundPacketHeader_3145!!.method1058(127.toByte())) + "," + (if (InboundPacketHeader.aInboundPacketHeader_9456 == null) -1 else InboundPacketHeader.aInboundPacketHeader_9456!!.method1058(125.toByte())) + " - " + RadialTextureNode.anInt9341), null, 15004)
+            LinkedListIteratorStatics.method1242(("T1 - " + (if (InboundPacketHeader.aInboundPacketHeader_6584 == null) -1 else InboundPacketHeader.aInboundPacketHeader_6584!!.method1058(110.toByte())) + "," + (if (InboundPacketHeader.aInboundPacketHeader_3145 == null) -1 else InboundPacketHeader.aInboundPacketHeader_3145!!.method1058(127.toByte())) + "," + (if (InboundPacketHeader.aInboundPacketHeader_9456 == null) -1 else InboundPacketHeader.aInboundPacketHeader_9456!!.method1058(125.toByte())) + " - " + RadialTextureNode.anInt9341), null, 15004)
             NormalMapTextureNode.method3141(false, 11.toByte())
             return true
         }

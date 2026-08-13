@@ -288,7 +288,7 @@ class InputStream_Sub2 : InputStream() {
                         val string = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readString((-126).toByte())
                         IdentKitRecolorStatics.method205(i_121_, i_119_, i_123_, string, i_122_, -109, i_120_, GradientLookupEffect.anInt9200)
                     } else {
-                        LinkedListIterator.method1242("T3 - " + rgbColorPalette, null, 15004)
+                        LinkedListIteratorStatics.method1242("T3 - " + rgbColorPalette, null, 15004)
                         NormalMapTextureNode.method3141(false, 11.toByte())
                     }
                 }

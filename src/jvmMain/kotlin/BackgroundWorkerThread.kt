@@ -1,4 +1,4 @@
-import LinkedListIterator.Companion.method1242
+import LinkedListIteratorStatics.method1242
 import kotlin.concurrent.Volatile
 
 /* Class250 - Decompiled by JODE

@@ -1,4 +1,4 @@
-import LinkedListIterator.Companion.method1242
+import LinkedListIteratorStatics.method1242
 import CollisionMapAccessor.method2064
 import GlCubemapLightPass.Companion.method3542
 import ByteBuffer.Companion.method462
@@ -142,7 +142,7 @@ class CharCodeMap : HashLinkedListNode() {
                 if (CompiledScriptCache.anInt4372 != 3) {
                     for (i_9_ in 0..1) {
                         FileIoUtil.anIntArray4097!![i_9_] = -1000000
-                        LinkedListIterator.anIntArray2117!![i_9_] = 1000000
+                        LinkedListIteratorStatics.anIntArray2117!![i_9_] = 1000000
                         BlankTextureNode.anIntArray9259!![i_9_] = 0
                         CharCodeMap.anIntArray1127!![i_9_] = 1000000
                         ConnectionStateType.anIntArray1045!![i_9_] = 0

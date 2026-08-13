@@ -531,7 +531,7 @@ class AnimatedModelRenderer : AbstractModelRenderer {
 
         fun method989(i: Int, i_92_: Int, i_93_: Int): Boolean {
             anInt8401++
-            if (LinkedListIterator.method1241(i_93_, i, i_92_ xor 0x1fe) or ((0x10000 and i) != 0) || OutgoingPacketNode.method3325(i, i_93_, true)) return true
+            if (LinkedListIteratorStatics.method1241(i_93_, i, i_92_ xor 0x1fe) or ((0x10000 and i) != 0) || OutgoingPacketNode.method3325(i, i_93_, true)) return true
             if (i_92_ != -385) return false
             return (i_93_ and 0x37) == 0 && BoundsConstraintEntryStatics.method2056(i, 120, i_93_)
         }

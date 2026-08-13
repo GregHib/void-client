@@ -1205,7 +1205,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RemoveRoofsOptionState.anInt6065 = 0
             KeyEventNode.anInt4762 = 0
             OpenGlRenderer.anInt7595 = 0
-            LinkedListIterator.anInt2112 = 0
+            LinkedListIteratorStatics.anInt2112 = 0
             NpcActorEntity.anInt10072 = 0
             OpenGlRenderer.anInt7613 = 0
             OpenGlRenderer.anInt7708 = 0
@@ -2847,7 +2847,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DisplayModeOptionState.anInt6102 = 0
             ParameterizedText.anInt9561 = 0
             OpenGlModel.anInt5535 = 0
-            LinkedListIterator.anInt2116 = 0
+            LinkedListIteratorStatics.anInt2116 = 0
             NativeLibraryState.anInt170 = 0
             Npc.anInt10515 = 0
             ArchiveResourceProvider.anInt6356 = 0
@@ -3198,7 +3198,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7886 = 0
             TrackedGroundDecor.anInt10370 = 0
             WorldMapImageBuilder.anInt1142 = 0
-            LinkedListIterator.anInt2119 = 0
+            LinkedListIteratorStatics.anInt2119 = 0
             MapLabelMenuEntry.anInt5790 = 0
             NativeRenderer.anInt7926 = 0
             NativeRenderer.anInt7989 = 0

@@ -426,7 +426,7 @@ class OpenGlModel : AbstractModel {
                     val f_90_ = (((anIntArray5593!![class118.anInt1788]) + ((anIntArray5593!![class118.anInt1781]) + (anIntArray5593!![class118.anInt1782]))).toFloat() * 0.3333333f)
                     val f_91_ = (((anIntArray5644!![class118.anInt1788]) + (anIntArray5644!![class118.anInt1781]) + (anIntArray5644!![class118.anInt1782])).toFloat() * 0.3333333f)
                     val f_92_ = (ModelLightingConfig.aFloat2555 + (f_91_ * SkyboxGradient.aFloat3935 + (f_90_ * CubemapTexture2dSource.aFloat8696 + ParticleSystemState.aFloat2203 * f)))
-                    val f_93_ = (LinkedListIterator.aFloat2111 + (GameDisplayManager.aFloat2836 * f_91_ + (f_90_ * SmoothingBuffer.aFloat3242 + aFloat3943 * f)))
+                    val f_93_ = (LinkedListIteratorStatics.aFloat2111 + (GameDisplayManager.aFloat2836 * f_91_ + (f_90_ * SmoothingBuffer.aFloat3242 + aFloat3943 * f)))
                     val f_94_ = (f * NamedTimedNode.aFloat8784 + f_90_ * TextureLoaderUtil.aFloat3994 + f_91_ * CubeMapMaterialPass.aFloat6304 + SpriteRenderable.aFloat4720)
                     val f_95_ = ((1.0 / sqrt((f_94_ * f_94_ + (f_93_ * f_93_ + (f_92_ * f_92_))).toDouble())).toFloat() * class118.anInt1784.toFloat())
                     class101_sub3!!.method939(-f_94_ + f_94_ * f_95_, (class118.aShort1785 * class48.anInt856) shr 7, (-(f_92_ * f_95_) + (f_92_ + class48.anInt854.toFloat())), (class118.aShort1790 * class48.anInt857) shr 7, class48.anInt853, 90, (f_95_ * f_93_ + (-f_93_ + class48.anInt847.toFloat())))
@@ -901,7 +901,7 @@ class OpenGlModel : AbstractModel {
                 class64_sub3_211_.aHoverActionEntry_5610!!.aByte1812 = aHoverActionEntry_5610!!.aByte1812
             } else if (HitsplatDefinition.method1193(anInt5556, i, true)) class64_sub3_211_.aHoverActionEntry_5610 = aHoverActionEntry_5610
             else class64_sub3_211_.aHoverActionEntry_5610 = null
-            if (LinkedListIterator.method1241(anInt5556, i, -119)) {
+            if (LinkedListIteratorStatics.method1241(anInt5556, i, -119)) {
                 if (class64_sub3_213_!!.aShortArray5564 != null && class64_sub3_213_.aShortArray5564!!.size >= anInt5529) {
                     class64_sub3_211_.aShortArray5564 = class64_sub3_213_.aShortArray5564
                     class64_sub3_211_.aShortArray5583 = class64_sub3_213_.aShortArray5583
@@ -1014,7 +1014,7 @@ class OpenGlModel : AbstractModel {
                 if (bool_214_) class64_sub3_211_.aByte5581 = (class64_sub3_211_.aByte5581.toInt() or 0x10).toByte()
                 class64_sub3_211_.aArchiveFileConditionWrapper_5575 = class64_sub3_213_!!.aArchiveFileConditionWrapper_5575
                 class64_sub3_211_.aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463 = aArchiveFileConditionWrapper_5575!!.anByteArrayCodec_3463
-            } else if (!LinkedListIterator.method1238(i, anInt5556, -93)) class64_sub3_211_.aArchiveFileConditionWrapper_5575 = null
+            } else if (!LinkedListIteratorStatics.method1238(i, anInt5556, -93)) class64_sub3_211_.aArchiveFileConditionWrapper_5575 = null
             else class64_sub3_211_.aArchiveFileConditionWrapper_5575 = aArchiveFileConditionWrapper_5575
             if (method1637(anInt5556, 32768, i)) {
                 if (class64_sub3_213_!!.aShortArray5601 == null || class64_sub3_213_.aShortArray5601!!.size < anInt5632) {
@@ -1125,9 +1125,9 @@ class OpenGlModel : AbstractModel {
                     }
                     if (!(aHa_Sub2_5598.aFloat7835 <= f_243_ / i.toFloat()) && !(f_242_ / i.toFloat() <= aHa_Sub2_5598.aFloat7872)) {
                         SmoothingBuffer.aFloat3242 = ((class101_sub3.aFloat5769 * (class101_sub3_236_.aFloat5769)) + ((class101_sub3_236_.aFloat5750) * class101_sub3.aFloat5761) + ((class101_sub3_236_.aFloat5754) * (class101_sub3.aFloat5762)))
-                        LinkedListIterator.aFloat2111 = (class101_sub3.aFloat5772 + ((class101_sub3.aFloat5762 * (class101_sub3_236_.aFloat5751)) + (((class101_sub3.aFloat5769) * (class101_sub3_236_.aFloat5772)) + ((class101_sub3.aFloat5761) * (class101_sub3_236_.aFloat5747)))))
-                        val f_244_ = (SmoothingBuffer.aFloat3242 * aShort5591.toFloat() + LinkedListIterator.aFloat2111)
-                        val f_245_ = (LinkedListIterator.aFloat2111 + aShort5629.toFloat() * SmoothingBuffer.aFloat3242)
+                        LinkedListIteratorStatics.aFloat2111 = (class101_sub3.aFloat5772 + ((class101_sub3.aFloat5762 * (class101_sub3_236_.aFloat5751)) + (((class101_sub3.aFloat5769) * (class101_sub3_236_.aFloat5772)) + ((class101_sub3.aFloat5761) * (class101_sub3_236_.aFloat5747)))))
+                        val f_244_ = (SmoothingBuffer.aFloat3242 * aShort5591.toFloat() + LinkedListIteratorStatics.aFloat2111)
+                        val f_245_ = (LinkedListIteratorStatics.aFloat2111 + aShort5629.toFloat() * SmoothingBuffer.aFloat3242)
                         val f_246_: Float
                         val f_247_: Float
                         if (f_245_ < f_244_) {
@@ -1150,10 +1150,10 @@ class OpenGlModel : AbstractModel {
                                 val i_248_ = aShort5586 + aShort5540 shr 1
                                 val i_249_ = aShort5617 + aShort5646 shr 1
                                 val i_250_ = ((aShort5591.toFloat() * CubemapTexture2dSource.aFloat8696) + ((i_248_.toFloat() * ParticleSystemState.aFloat2203) + ModelLightingConfig.aFloat2555) + (SkyboxGradient.aFloat3935 * i_249_.toFloat())).toInt()
-                                val i_251_ = (LinkedListIterator.aFloat2111 + (i_248_.toFloat() * aFloat3943) + (SmoothingBuffer.aFloat3242 * aShort5591.toFloat()) + (GameDisplayManager.aFloat2836 * i_249_.toFloat())).toInt()
+                                val i_251_ = (LinkedListIteratorStatics.aFloat2111 + (i_248_.toFloat() * aFloat3943) + (SmoothingBuffer.aFloat3242 * aShort5591.toFloat()) + (GameDisplayManager.aFloat2836 * i_249_.toFloat())).toInt()
                                 val i_252_ = (SpriteRenderable.aFloat4720 + (i_248_.toFloat() * (NamedTimedNode.aFloat8784)) + (TextureLoaderUtil.aFloat3994 * aShort5591.toFloat()) + (CubeMapMaterialPass.aFloat6304 * i_249_.toFloat())).toInt()
                                 val i_253_ = ((SkyboxGradient.aFloat3935 * i_249_.toFloat()) + ((CubemapTexture2dSource.aFloat8696 * aShort5629.toFloat()) + (ModelLightingConfig.aFloat2555 + (ParticleSystemState.aFloat2203 * i_248_.toFloat())))).toInt()
-                                val i_254_ = (LinkedListIterator.aFloat2111 + (aFloat3943 * i_248_.toFloat()) + (SmoothingBuffer.aFloat3242 * aShort5629.toFloat()) + (i_249_.toFloat() * GameDisplayManager.aFloat2836)).toInt()
+                                val i_254_ = (LinkedListIteratorStatics.aFloat2111 + (aFloat3943 * i_248_.toFloat()) + (SmoothingBuffer.aFloat3242 * aShort5629.toFloat()) + (i_249_.toFloat() * GameDisplayManager.aFloat2836)).toInt()
                                 class318_sub3.anInt6405 = (aHa_Sub2_5598.anInt7853 - -(i_250_ * (aHa_Sub2_5598.anInt7771) / i))
                                 class318_sub3.anInt6402 = ((i_251_ * aHa_Sub2_5598.anInt7794 / i) + aHa_Sub2_5598.anInt7810)
                                 class318_sub3.anInt6404 = (aHa_Sub2_5598.anInt7810 + (i_254_ * aHa_Sub2_5598.anInt7794 / i))
@@ -1627,10 +1627,10 @@ class OpenGlModel : AbstractModel {
                         f_356_ = ((-aShort5634.toFloat() + f_354_) * aHa_Sub2_5598.anInt7771.toFloat())
                     }
                     if (!(aHa_Sub2_5598.aFloat7835 <= f_356_ / f_353_) && !(f_357_ / f_353_ <= aHa_Sub2_5598.aFloat7872)) {
-                        LinkedListIterator.aFloat2111 = ((class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5769) + ((class101_sub3_350_.aFloat5747) * class101_sub3.aFloat5761) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5751)) + class101_sub3.aFloat5772)
+                        LinkedListIteratorStatics.aFloat2111 = ((class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5769) + ((class101_sub3_350_.aFloat5747) * class101_sub3.aFloat5761) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5751)) + class101_sub3.aFloat5772)
                         SmoothingBuffer.aFloat3242 = ((class101_sub3.aFloat5761 * (class101_sub3_350_.aFloat5750)) + (class101_sub3.aFloat5769 * (class101_sub3_350_.aFloat5769)) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5754)))
-                        val f_358_ = (LinkedListIterator.aFloat2111 + SmoothingBuffer.aFloat3242 * aShort5591.toFloat())
-                        val f_359_ = (LinkedListIterator.aFloat2111 + aShort5629.toFloat() * SmoothingBuffer.aFloat3242)
+                        val f_358_ = (LinkedListIteratorStatics.aFloat2111 + SmoothingBuffer.aFloat3242 * aShort5591.toFloat())
+                        val f_359_ = (LinkedListIteratorStatics.aFloat2111 + aShort5629.toFloat() * SmoothingBuffer.aFloat3242)
                         val f_360_: Float
                         val f_361_: Float
                         if (f_358_ > f_359_) {
@@ -1655,14 +1655,14 @@ class OpenGlModel : AbstractModel {
                                 val i_363_ = aShort5540 - -aShort5586 shr 1
                                 val i_364_ = aShort5617 - -aShort5646 shr 1
                                 val i_365_ = ((i_364_.toFloat() * SkyboxGradient.aFloat3935) + ((ParticleSystemState.aFloat2203 * i_363_.toFloat()) + ModelLightingConfig.aFloat2555 + (aShort5591.toFloat() * (CubemapTexture2dSource.aFloat8696)))).toInt()
-                                val i_366_ = (LinkedListIterator.aFloat2111 + (i_363_.toFloat() * aFloat3943) + (aShort5591.toFloat() * SmoothingBuffer.aFloat3242) + (i_364_.toFloat() * GameDisplayManager.aFloat2836)).toInt()
+                                val i_366_ = (LinkedListIteratorStatics.aFloat2111 + (i_363_.toFloat() * aFloat3943) + (aShort5591.toFloat() * SmoothingBuffer.aFloat3242) + (i_364_.toFloat() * GameDisplayManager.aFloat2836)).toInt()
                                 val i_367_ = ((NamedTimedNode.aFloat8784 * i_363_.toFloat()) + SpriteRenderable.aFloat4720 + (TextureLoaderUtil.aFloat3994 * aShort5591.toFloat()) + (CubeMapMaterialPass.aFloat6304 * i_364_.toFloat())).toInt()
                                 if (aHa_Sub2_5598.anInt7826 <= i_367_) {
                                     class318_sub3.anInt6405 = (i_365_ * (aHa_Sub2_5598.anInt7771) / i_367_ + (aHa_Sub2_5598.anInt7853))
                                     class318_sub3.anInt6402 = (i_366_ * (aHa_Sub2_5598.anInt7794) / i_367_ + (aHa_Sub2_5598.anInt7810))
                                 } else bool = true
                                 val i_368_ = (ModelLightingConfig.aFloat2555 + (ParticleSystemState.aFloat2203 * i_363_.toFloat()) + (CubemapTexture2dSource.aFloat8696 * aShort5629.toFloat()) + (SkyboxGradient.aFloat3935 * i_364_.toFloat())).toInt()
-                                val i_369_ = ((i_364_.toFloat() * GameDisplayManager.aFloat2836) + ((SmoothingBuffer.aFloat3242 * aShort5629.toFloat()) + (LinkedListIterator.aFloat2111 + (aFloat3943 * i_363_.toFloat())))).toInt()
+                                val i_369_ = ((i_364_.toFloat() * GameDisplayManager.aFloat2836) + ((SmoothingBuffer.aFloat3242 * aShort5629.toFloat()) + (LinkedListIteratorStatics.aFloat2111 + (aFloat3943 * i_363_.toFloat())))).toInt()
                                 val i_370_ = ((CubeMapMaterialPass.aFloat6304 * i_364_.toFloat()) + ((i_363_.toFloat() * (NamedTimedNode.aFloat8784)) + SpriteRenderable.aFloat4720 + (aShort5629.toFloat() * TextureLoaderUtil.aFloat3994))).toInt()
                                 if (i_370_ >= aHa_Sub2_5598.anInt7826) {
                                     class318_sub3.anInt6406 = (i_368_ * (aHa_Sub2_5598.anInt7771) / i_370_ + (aHa_Sub2_5598.anInt7853))
@@ -2969,7 +2969,7 @@ class OpenGlModel : AbstractModel {
                 if (IndexedFileCache.method1163(i_697_, 78.toByte(), i)) aHoverActionEntry_5620 = HoverActionEntry(null, 5126, 2, 0)
                 if (method166(69.toByte(), i_697_, i)) aHoverActionEntry_5563 = HoverActionEntry(null, 5126, 3, 0)
                 if (HitsplatDefinition.method1193(i_697_, i, true)) aHoverActionEntry_5610 = HoverActionEntry(null, 5121, 4, 0)
-                if (LinkedListIterator.method1238(i, i_697_, -31)) aArchiveFileConditionWrapper_5575 = ArchiveFileConditionWrapper()
+                if (LinkedListIteratorStatics.method1238(i, i_697_, -31)) aArchiveFileConditionWrapper_5575 = ArchiveFileConditionWrapper()
                 val var_renderConfig: RenderConfig = var_ha_Sub2!!.aRenderConfig4579!!
                 anIntArray5528 = IntArray(modelDefinition!!.anInt1821 + 1)
                 val `is` = IntArray(modelDefinition.anInt1817)
@@ -3668,7 +3668,7 @@ class OpenGlModel : AbstractModel {
         fun method723(i: Int, i_2_: Int, i_3_: Byte): Boolean {
             anInt1196++
             if (i_3_ >= -66) return true
-            return (method2352(113, i_2_, i) and LinkedListIterator.method1238(i, i_2_, -29))
+            return (method2352(113, i_2_, i) and LinkedListIteratorStatics.method1238(i, i_2_, -29))
         }
 
         var anInt1191: Int = 0
