@@ -1,5 +1,5 @@
 import ModelGroundDecor.Companion.method2419
-import HashTileShape.Companion.method2729
+import HashTileShapeStatics.method2729
 
 /* Class319 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

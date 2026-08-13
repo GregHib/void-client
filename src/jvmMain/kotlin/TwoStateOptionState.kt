@@ -97,7 +97,7 @@ class TwoStateOptionState : GraphicsOptionState {
                 val class348_sub36 = WidgetActionEntry()
                 class348_sub36.aWidgetComponent_6989 = widgetComponent
                 class348_sub36.anObjectArray6987 = widgetComponent.anObjectArray727
-                HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
             }
         }
 

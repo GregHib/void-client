@@ -74,7 +74,7 @@ class NativeBufferHandle internal constructor(glRenderDevice: GlRenderDevice?, l
                         if (bool_13_ && (LoadingBarRenderer.anIntArrayArray4253!![i_17_]!![i_18_] and 0xffffff.inv()) != 0) {
                             i = LoadingBarRenderer.anIntArrayArray4253!![i_17_]!![i_18_]
                             i_14_ = BooleanGraphicsOptionState.aShortArrayArray5847!![i_17_]!![i_18_]
-                            i_15_ = (HashTileShape.aByteArrayArray8816!![i_17_]!![i_18_])
+                            i_15_ = (HashTileShapeStatics.aByteArrayArray8816!![i_17_]!![i_18_])
                         }
                         if (!bool && (class357.aClass318_Sub1_Sub1_4402 != null) && (class357.aClass318_Sub1_Sub1_4402!!.aShort8727) > i_16_) i_16_ = (class357.aClass318_Sub1_Sub1_4402!!.aShort8727)
                     }
@@ -87,7 +87,7 @@ class NativeBufferHandle internal constructor(glRenderDevice: GlRenderDevice?, l
                         if ((LoadingBarRenderer.anIntArrayArray4253!![i_20_]!![i_21_] and 0xffffff.inv()) == 0) {
                             LoadingBarRenderer.anIntArrayArray4253!![i_20_]!![i_21_] = i
                             BooleanGraphicsOptionState.aShortArrayArray5847!![i_20_]!![i_21_] = i_14_
-                            HashTileShape.aByteArrayArray8816!![i_20_]!![i_21_] = i_15_
+                            HashTileShapeStatics.aByteArrayArray8816!![i_20_]!![i_21_] = i_15_
                         }
                         i_21_++
                     }

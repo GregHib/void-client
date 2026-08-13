@@ -2821,7 +2821,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             BooleanGraphicsOptionState.anInt5844 = 0
             ItemDefinition.anInt2828 = 0
             Direct3dModel.anInt5437 = 0
-            HashTileShape.anInt8813 = 0
+            HashTileShapeStatics.anInt8813 = 0
             ModelWallEntity.anInt10143 = 0
             PcmStreamBuffer.anInt8868 = 0
             Js5Archive.anInt636 = 0

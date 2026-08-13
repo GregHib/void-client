@@ -1121,7 +1121,7 @@ class Client : GameAppletFrame() {
         method167(19612)
         method208(0.toByte())
         method3016(65280)
-        HashTileShape.method2731((-23).toByte())
+        HashTileShapeStatics.method2731((-23).toByte())
         method221(0)
         method1645(121)
         method953(9.toByte())
@@ -1495,7 +1495,7 @@ class Client : GameAppletFrame() {
             method705(class348_sub36)
         }
         while (true) {
-            val class348_sub36 = (HashTileShape.aNodeDeque_8810!!.method1997(i.toInt() xor 0x78) as WidgetActionEntry?)
+            val class348_sub36 = (HashTileShapeStatics.aNodeDeque_8810!!.method1997(i.toInt() xor 0x78) as WidgetActionEntry?)
             if (class348_sub36 == null) break
             val class46 = class348_sub36.aWidgetComponent_6989
             if (class46!!.anInt704 >= 0) {
@@ -2058,13 +2058,13 @@ class Client : GameAppletFrame() {
                         }
                         if (class46.aBoolean676 || i_45_ < i_47_ && i_46_ < i_48_) {
                             if (class46.aBoolean776 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
-                                var class348_sub36 = HashTileShape.aNodeDeque_8810!!.method1995(4) as WidgetActionEntry?
+                                var class348_sub36 = HashTileShapeStatics.aNodeDeque_8810!!.method1995(4) as WidgetActionEntry?
                                 while (class348_sub36 != null) {
                                     if (class348_sub36.aBoolean6993) {
                                         class348_sub36.method2715(65.toByte())
                                         class348_sub36.aWidgetComponent_6989!!.aBoolean737 = false
                                     }
-                                    class348_sub36 = (HashTileShape.aNodeDeque_8810!!.method1990(71.toByte()) as WidgetActionEntry?)
+                                    class348_sub36 = (HashTileShapeStatics.aNodeDeque_8810!!.method1990(71.toByte()) as WidgetActionEntry?)
                                 }
                                 if (DragDropControllerStatics.anInt6392 == 0) {
                                     RegionSceneLoader.aWidgetComponent_3701 = null
@@ -2131,7 +2131,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.aWidgetComponent_6989 = class46
                                     class348_sub36.anInt6995 = NodeDequeHolder.anInt1565
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray803
-                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                                 if (RegionSceneLoader.aWidgetComponent_3701 != null || ScrollbarComponent.aBoolean8335 || ((class46.anInt765 != TimedRecordAccessorStatics.anInt7102) && HashLinkedListNodeStatics.anInt7059 > 0)) {
                                     bool_54_ = false
@@ -2263,7 +2263,7 @@ class Client : GameAppletFrame() {
                                         class348_sub36.anInt6984 = (i_51_ + class348_sub45!!.method3308((-128).toByte()) - i_43_)
                                         class348_sub36.anInt6995 = (i_52_ + class348_sub45.method3311(-123) - i_44_)
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray763
-                                        HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                        HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     }
                                 }
                                 if (class46.aBoolean793 && bool_53_ && (class46.anObjectArray785 != null)) {
@@ -2273,7 +2273,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anInt6984 = i_51_ + GlTexture1D.aInputTracker_8552!!.method3597(true) - i_43_
                                     class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aInputTracker_8552!!.method3594(98.toByte()) - i_44_)
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray785
-                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                                 if (class46.aBoolean793 && !bool_53_) {
                                     class46.aBoolean793 = false
@@ -2294,7 +2294,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anInt6984 = i_51_ + GlTexture1D.aInputTracker_8552!!.method3597(true) - i_43_
                                     class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aInputTracker_8552!!.method3594(80.toByte()) - i_44_)
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray805
-                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                                 if (!class46.aBoolean737 && bool) {
                                     class46.aBoolean737 = true
@@ -2305,7 +2305,7 @@ class Client : GameAppletFrame() {
                                         class348_sub36.anInt6984 = (i_51_ + GlTexture1D.aInputTracker_8552!!.method3597(true) - i_43_)
                                         class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aInputTracker_8552!!.method3594(112.toByte()) - i_44_)
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray811
-                                        HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                        HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     }
                                 }
                                 if (class46.aBoolean737 && bool && (class46.anObjectArray839 != null)) {
@@ -2315,7 +2315,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anInt6984 = i_51_ + GlTexture1D.aInputTracker_8552!!.method3597(true) - i_43_
                                     class348_sub36.anInt6995 = (i_52_ + GlTexture1D.aInputTracker_8552!!.method3594(95.toByte()) - i_44_)
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray839
-                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                                 if (class46.aBoolean737 && !bool) {
                                     class46.aBoolean737 = false
@@ -2340,7 +2340,7 @@ class Client : GameAppletFrame() {
                                         val class348_sub36 = WidgetActionEntry()
                                         class348_sub36.aWidgetComponent_6989 = class46
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray685
-                                        HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                        HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     } else {
                                         while_224_@ for (i_74_ in class46.anInt738..<ScrollbarComponent.anInt8352) {
                                             val i_75_ = (NamedIdEntryStatics.anIntArray6890!![i_74_ and 0x1f])
@@ -2349,7 +2349,7 @@ class Client : GameAppletFrame() {
                                                     val class348_sub36 = WidgetActionEntry()
                                                     class348_sub36.aWidgetComponent_6989 = class46
                                                     class348_sub36.anObjectArray6987 = (class46.anObjectArray685)
-                                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                                     break@while_224_
                                                 }
                                             }
@@ -2362,7 +2362,7 @@ class Client : GameAppletFrame() {
                                         val class348_sub36 = WidgetActionEntry()
                                         class348_sub36.aWidgetComponent_6989 = class46
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray708
-                                        HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                        HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     } else {
                                         var i_77_ = class46.anInt814
                                         while_225_@ while ((i_77_ < HslAdjustTextureNode.anInt9385)) {
@@ -2372,7 +2372,7 @@ class Client : GameAppletFrame() {
                                                     val class348_sub36 = WidgetActionEntry()
                                                     class348_sub36.aWidgetComponent_6989 = class46
                                                     class348_sub36.anObjectArray6987 = (class46.anObjectArray708)
-                                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                                     break@while_225_
                                                 }
                                             }
@@ -2386,7 +2386,7 @@ class Client : GameAppletFrame() {
                                         val class348_sub36 = WidgetActionEntry()
                                         class348_sub36.aWidgetComponent_6989 = class46
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray777
-                                        HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                        HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     } else {
                                         while_226_@ for (i_80_ in class46.anInt725..<TypedRecordTable.anInt3695) {
                                             val i_81_ = (FileIoUtil.anIntArray4096!![i_80_ and 0x1f])
@@ -2395,7 +2395,7 @@ class Client : GameAppletFrame() {
                                                     val class348_sub36 = WidgetActionEntry()
                                                     class348_sub36.aWidgetComponent_6989 = class46
                                                     class348_sub36.anObjectArray6987 = (class46.anObjectArray777)
-                                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                                     break@while_226_
                                                 }
                                             }
@@ -2408,7 +2408,7 @@ class Client : GameAppletFrame() {
                                         val class348_sub36 = WidgetActionEntry()
                                         class348_sub36.aWidgetComponent_6989 = class46
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray751
-                                        HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                        HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     } else {
                                         while_227_@ for (i_83_ in class46.anInt723..<DualMaterialContainer.anInt1631) {
                                             val i_84_ = (LoadingScreenStateStatics.anIntArray2633!![i_83_ and 0x1f])
@@ -2417,7 +2417,7 @@ class Client : GameAppletFrame() {
                                                     val class348_sub36 = WidgetActionEntry()
                                                     class348_sub36.aWidgetComponent_6989 = class46
                                                     class348_sub36.anObjectArray6987 = (class46.anObjectArray751)
-                                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                                     break@while_227_
                                                 }
                                             }
@@ -2430,7 +2430,7 @@ class Client : GameAppletFrame() {
                                         val class348_sub36 = WidgetActionEntry()
                                         class348_sub36.aWidgetComponent_6989 = class46
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray671
-                                        HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                        HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     } else {
                                         while_228_@ for (i_86_ in class46.anInt715..<EmoteDefCache.anInt4086) {
                                             val i_87_ = (LoadingScreenStateStatics.anIntArray2632!![i_86_ and 0x1f])
@@ -2439,7 +2439,7 @@ class Client : GameAppletFrame() {
                                                     val class348_sub36 = WidgetActionEntry()
                                                     class348_sub36.aWidgetComponent_6989 = class46
                                                     class348_sub36.anObjectArray6987 = (class46.anObjectArray671)
-                                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                                     break@while_228_
                                                 }
                                             }
@@ -2451,31 +2451,31 @@ class Client : GameAppletFrame() {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aWidgetComponent_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray820
-                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                                 if ((Crc64Hashable.anInt4985 > class46.anInt726) && (class46.anObjectArray734 != null)) {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aWidgetComponent_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray734
-                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                                 if ((Client.anInt2986 > class46.anInt726) && (class46.anObjectArray761 != null)) {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aWidgetComponent_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray761
-                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                                 if ((MapAreaDefinition.anInt2523 > class46.anInt726) && (class46.anObjectArray807 != null)) {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aWidgetComponent_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray807
-                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                                 if ((TurbulenceTextureNode.anInt9313 > class46.anInt726) && (class46.anObjectArray836 != null)) {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aWidgetComponent_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray836
-                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                                 class46.anInt726 = ResourceLoaderThread.anInt3918
                                 if (class46.anObjectArray822 != null) {
@@ -2485,14 +2485,14 @@ class Client : GameAppletFrame() {
                                         class348_sub36.anInt6991 = ProceduralTextureGraph.anCharStreamReaderArray9534s!![i_89_]!!.method30(false)
                                         class348_sub36.anInt6982 = ProceduralTextureGraph.anCharStreamReaderArray9534s!![i_89_]!!.method28(39.toByte()).code
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray822
-                                        HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                        HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                     }
                                 }
                                 if (DragDropControllerStatics.aBoolean4284 && (class46.anObjectArray687 != null)) {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aWidgetComponent_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray687
-                                    HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                    HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
                             }
                             if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, HoverActionEntryStatics.aSpriteStore_1813, aMapSceneCache_413)!!.method2292(84, FacingDirectionNodeStatics.aRenderer6654!!, class46.anInt789)
@@ -5099,7 +5099,7 @@ class Client : GameAppletFrame() {
                                 method705(class348_sub36)
                             }
                             while (true) {
-                                val class348_sub36 = (HashTileShape.aNodeDeque_8810!!.method1997(i + -11424) as? WidgetActionEntry?)
+                                val class348_sub36 = (HashTileShapeStatics.aNodeDeque_8810!!.method1997(i + -11424) as? WidgetActionEntry?)
                                 if (class348_sub36 == null) break
                                 val class46 = (class348_sub36.aWidgetComponent_6989)!!
                                 if (class46.anInt704 >= 0) {

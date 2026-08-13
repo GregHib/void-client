@@ -112,13 +112,13 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             TerrainTileShape.aTerrainTileArray8801 = arrayOfNulls<TerrainTile>(i_1_)
             if (bool) {
                 LoadingBarRenderer.anIntArrayArray4253 = Array<IntArray?>(ActorEntity.anInt6451) { IntArray(ActorEntity.anInt7054) }
-                HashTileShape.aByteArrayArray8816 = Array<ByteArray?>(ActorEntity.anInt6451) { ByteArray(ActorEntity.anInt7054) }
+                HashTileShapeStatics.aByteArrayArray8816 = Array<ByteArray?>(ActorEntity.anInt6451) { ByteArray(ActorEntity.anInt7054) }
                 BooleanGraphicsOptionState.aShortArrayArray5847 = Array<ShortArray?>(ActorEntity.anInt6451) { ShortArray(ActorEntity.anInt7054) }
                 ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = (Array<Array<Array<SceneCollisionEntry?>?>?>(1) { Array<Array<SceneCollisionEntry?>?>(ActorEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(ActorEntity.anInt7054) } })
                 ActorEntity.aTerrainTileArray4142 = arrayOfNulls<TerrainTile>(1)
             } else {
                 LoadingBarRenderer.anIntArrayArray4253 = null
-                HashTileShape.aByteArrayArray8816 = null
+                HashTileShapeStatics.aByteArrayArray8816 = null
                 BooleanGraphicsOptionState.aShortArrayArray5847 = null
                 ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = null
                 ActorEntity.aTerrainTileArray4142 = null

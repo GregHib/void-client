@@ -78,7 +78,7 @@ object LoadingScreenStateStatics {
 
     @JvmStatic
     fun method1457(i: Int, i_8_: Int): Int {
-        if (HashTileShape.aByteArrayArray8816 != null) return HashTileShape.aByteArrayArray8816!![i]!![i_8_].toInt() and 0xff
+        if (HashTileShapeStatics.aByteArrayArray8816 != null) return HashTileShapeStatics.aByteArrayArray8816!![i]!![i_8_].toInt() and 0xff
         return 0
     }
 

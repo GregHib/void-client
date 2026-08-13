@@ -3604,7 +3604,7 @@ object ChatCommandProcessor {
                         class348_sub36.aWidgetComponent_6989 = widgetComponent
                         class348_sub36.anObjectArray6987 = widgetComponent.anObjectArray727
                         class348_sub36.anInt6988 = anInt1177 + 1
-                        HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                        HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                         return
                     }
                     return

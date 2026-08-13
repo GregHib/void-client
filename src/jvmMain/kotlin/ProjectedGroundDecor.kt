@@ -882,7 +882,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             MapElementManager.method3513(-120)
             PlayerSequenceSelector.aSceneObjectSpawner_1208 = PlayerSequenceSelector.aSceneObjectSpawner_1210
             PlayerSequenceSelector.aSceneObjectSpawner_1208!!.method775(69.toByte())
-            HashTileShape.aByteArrayArray8816 = null
+            HashTileShapeStatics.aByteArrayArray8816 = null
             LoadingBarRenderer.anIntArrayArray4253 = null
             BooleanGraphicsOptionState.aShortArrayArray5847 = null
             if (NormalMapTextureNode.aSceneLoaderThreadArray9432 != null) {
