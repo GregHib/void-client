@@ -259,7 +259,7 @@ import PolygonFiller.method2621
 import VideoStreamDecoder.Companion.method2631
 import CalendarUtil.method2637
 import SoundCacheState.method2640
-import MapElementLookup.Companion.method2645
+import MapElementLookupStatics.method2645
 import CameraOrModelTransform.Companion.method2653
 import CameraOrModelTransform.Companion.method2654
 import HslPaletteState.method2657
@@ -2192,7 +2192,7 @@ class Client : GameAppletFrame() {
                                                     else method2678(-2049)
                                                 } else {
                                                     if ((Client.aSceneProjector_10434) == (GlRectangleTexture.aSceneProjector_8638)) MinimapPolygonDrawer.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (LocalizedText.aLocalizedText_3510!!.method2063((ChatCommandProcessor.anInt6967), 544)), 1L, -1)
-                                                    MinimapPolygonDrawer.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, LightingOptionState.aString5882, 1L, MapElementLookup.anInt4144)
+                                                    MinimapPolygonDrawer.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, LightingOptionState.aString5882, 1L, MapElementLookupStatics.anInt4144)
                                                 }
                                             }
                                         }
@@ -2805,8 +2805,8 @@ class Client : GameAppletFrame() {
             if (bool != true) aSceneProjector_10434 = null
             if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1762) {
                 LightingOptionState.aString5882 = (if (RadialTextureNode.anInt9341 > 2) CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else LocalizedText.aLocalizedText_3509!!.method2063(ChatCommandProcessor.anInt6967, 544))
-                MapElementLookup.anInt4144 = (if (RadialTextureNode.anInt9341 <= 0) -1 else CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944))
-                if (MapElementLookup.anInt4144 == 65535) MapElementLookup.anInt4144 = -1
+                MapElementLookupStatics.anInt4144 = (if (RadialTextureNode.anInt9341 <= 0) -1 else CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944))
+                if (MapElementLookupStatics.anInt4144 == 65535) MapElementLookupStatics.anInt4144 = -1
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }

@@ -287,7 +287,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 NodeDequeHolder.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                 MinimapTileEntry.aJs5Archive_611 = js5Archive
                 GlEnvMappedWaterPass.aJs5Archive_7371 = js5Archive_6_
-                MapElementLookup.aJs5Archive_4147 = js5Archive_5_
+                MapElementLookupStatics.aJs5Archive_4147 = js5Archive_5_
                 BasicGlRenderPass.anIntArray7299 = IntArray(16)
                 anInt6442++
                 for (i in 0..15) BasicGlRenderPass.anIntArray7299!![i] = 255

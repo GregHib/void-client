@@ -555,7 +555,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         }
                                         i_102_++
                                     }
-                                    if (!this.aBoolean3109 && i_66_ == 0) MapElementLookup.method2643(i_71_, i_73_, class277.anInt3559, 8 * (class277.anInt3558), class277.anInt3574)
+                                    if (!this.aBoolean3109 && i_66_ == 0) MapElementLookupStatics.method2643(i_71_, i_73_, class277.anInt3559, 8 * (class277.anInt3558), class277.anInt3574)
                                     if (i_76_.toInt() != 12 && (class277.anInt3563 != -1) && class277.aBoolean3566) bool = true
                                 } else if (bool_94_) i_102_ += (ConstantColourTextureNode.anIntArray9249!![i_76_.toInt()])
                                 else if (!bool_75_) i_102_ += CameraOrModelTransform.anIntArray4152!![i_76_.toInt()]
@@ -1041,7 +1041,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                         i_235_++
                                         i_244_++
                                     }
-                                    if (!this.aBoolean3109 && i == 0) MapElementLookup.method2643(i_226_, i_227_, class277.anInt3559, (class277.anInt3558 * 8), class277.anInt3574)
+                                    if (!this.aBoolean3109 && i == 0) MapElementLookupStatics.method2643(i_226_, i_227_, class277.anInt3559, (class277.anInt3558 * 8), class277.anInt3574)
                                 }
                                 if (!bool) is_239_ = null
                                 if (class22 == null) {
