@@ -246,7 +246,7 @@ object ClientLoadStateMachine {
             }
             method1063(1)
             GlBufferObject.anInt4737 = ClientLoadStateMachine.aJs5Archive_6980!!.method417("loginscreen", i xor 0x6ff3.inv())
-            FloorOverlayDefinition.anInt970 = ClientLoadStateMachine.aJs5Archive_6980!!.method417("lobbyscreen", 0)
+            FloorOverlayDefinitionStatics.anInt970 = ClientLoadStateMachine.aJs5Archive_6980!!.method417("lobbyscreen", 0)
             AbstractCameraTransformStatics.aJs5Archive_7382!!.method404(0, true, false)
             CachedRgbNoiseTexture.aJs5Archive_8667!!.method404(0, true, true)
             CameraRotationStubStatics.aJs5Archive_322!!.method404(i + 28660, true, true)

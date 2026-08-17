@@ -436,7 +436,7 @@ class Player : ProjectedGroundDecor() {
         }
         if (!bool) string += this.aString10544
         else string += this.aString10537
-        if (FloorOverlayDefinition.aStringArray974 != null) string += FloorOverlayDefinition.aStringArray974!![aByte10552.toInt()]
+        if (FloorOverlayDefinitionStatics.aStringArray974 != null) string += FloorOverlayDefinitionStatics.aStringArray974!![aByte10552.toInt()]
         return string
     }
 

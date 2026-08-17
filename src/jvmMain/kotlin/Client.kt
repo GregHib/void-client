@@ -416,7 +416,7 @@ import MinimapLineDrawer.Companion.method471
 import NpcConfig.Companion.method486
 import RsaVarbitHandler.Companion.method492
 import RsaVarbitHandler.Companion.method493
-import FloorOverlayDefinition.Companion.method501
+import FloorOverlayDefinitionStatics.method501
 import OggMediaStream.Companion.method518
 import OggCacheStream.Companion.method523
 import ConnectionStateType.Companion.method526

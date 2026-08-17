@@ -1100,8 +1100,8 @@ object ChatCommandProcessor {
                     GlEnvMappedWaterPass.aStringArray7378!![i_121_] = string
                 }
                 if (string_120_.length > 0) {
-                    if (FloorOverlayDefinition.aStringArray974 == null) FloorOverlayDefinition.aStringArray974 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![Client.aSceneProjector_10434!!.anInt2987]))
-                    FloorOverlayDefinition.aStringArray974!![i_121_] = string_120_
+                    if (FloorOverlayDefinitionStatics.aStringArray974 == null) FloorOverlayDefinitionStatics.aStringArray974 = arrayOfNulls<String>((SocketFactory.anIntArray3475!![Client.aSceneProjector_10434!!.anInt2987]))
+                    FloorOverlayDefinitionStatics.aStringArray974!![i_121_] = string_120_
                 }
                 return
             }

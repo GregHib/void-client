@@ -113,7 +113,7 @@ object ByteBufferStatics {
                 ItemDefinition.aAbstractGameSocket_2773 = null
             }
             if (i_71_ == 3) method3198((GlBufferObject.anInt4737 != RenderNodeStatics.anInt9721), (-45).toByte())
-            if (i_71_ == 7) method1006((RenderNodeStatics.anInt9721 != FloorOverlayDefinition.anInt970), 102.toByte())
+            if (i_71_ == 7) method1006((RenderNodeStatics.anInt9721 != FloorOverlayDefinitionStatics.anInt970), 102.toByte())
             if (i_71_ == 5) {
                 if (NullOggStream.aString9043 == null) method1213(OpenGlModel.aString5600, TextureGeneratorStatics.aString2496, -124)
                 else method1372(-1)
@@ -190,7 +190,7 @@ object ByteBufferStatics {
             RenderNodeStatics.anInt9721 = -1
             MinimapSpriteRenderer.aHashtable_4915 = Hashtable(8)
             method882(11.toByte())
-            RenderNodeStatics.anInt9721 = FloorOverlayDefinition.anInt970
+            RenderNodeStatics.anInt9721 = FloorOverlayDefinitionStatics.anInt970
             method1713(false, 520)
             TextureCache.method3466(-119)
             method703(RenderNodeStatics.anInt9721)

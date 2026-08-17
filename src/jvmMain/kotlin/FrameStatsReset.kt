@@ -1595,7 +1595,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DisplayModeOptionState.anInt6108 = 0
             FixedFunctionMaterialPass.anInt6207 = 0
             LinkedListNode.anInt4297 = 0
-            FloorOverlayDefinition.anInt975 = 0
+            FloorOverlayDefinitionStatics.anInt975 = 0
             SpotAnimEntity.anInt6437 = 0
             FixedFunctionWaterPass.anInt7351 = 0
             GlCubemapLightPass.anInt7322 = 0
@@ -4011,7 +4011,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SoftwareSpriteRaster.anInt1614 = 0
             SceneListNode.anInt6467 = 0
             FontDefinition.anInt1985 = 0
-            FloorOverlayDefinition.anInt968 = 0
+            FloorOverlayDefinitionStatics.anInt968 = 0
             SimpleToggleOptionState.anInt5884 = 0
             LocTypeDefLoader.anInt2499 = 0
             ByteBuffer.anInt7141 = 0
