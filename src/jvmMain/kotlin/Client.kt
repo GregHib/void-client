@@ -158,7 +158,7 @@ import TileTransform.method1907
 import BackgroundWorkerThread.Companion.method1910
 import ConfigFlagUtilStatics.method1912
 import SmoothingBuffer.Companion.method1917
-import EmoteDefinition.Companion.method1926
+import EmoteDefinitionStatics.method1926
 import ModelHeaderCache.Companion.method1931
 import ChatCommandProcessor.method1944
 import GlTexture3D.Companion.method1959

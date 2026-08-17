@@ -198,7 +198,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ServerConnectionInfo.anInt2140 = 0
             Player.anInt10559 = 0
             TextureDefinitionLoader.anInt1969 = 0
-            EmoteDefinition.anInt3260 = 0
+            EmoteDefinitionStatics.anInt3260 = 0
             Gl2dTexture.anInt8609 = 0
             SceneEntityModel.anInt6413 = 0
             NpcType.anInt1351 = 0

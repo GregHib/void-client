@@ -1,5 +1,3 @@
-import ByteBuffer.Companion.method462
-
 /* Class254 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -30,27 +28,13 @@ class EmoteDefinition {
             if (i == 2) this.anInt3256 = class348_sub49.readInt((-126).toByte())
             else if (i == 4) this.aBoolean3261 = false
             else if (i == 5) this.aString3258 = class348_sub49.readString(91.toByte())
-        } else aChar3259 = method462(class348_sub49.readByte(-115), -128)
+        } else aChar3259 = ByteBuffer.method462(class348_sub49.readByte(-115), -128)
         if (bool != true) this.aBoolean3261 = true
     }
 
     companion object {
         var anInt3257: Int = 0
-        var anInt3260: Int = 0
         var anInt3262: Int = 0
         var anInt3263: Int = 0
-
-        @JvmStatic
-        fun method1926(i: Int) {
-            InboundPacketHeader.aInboundPacketHeader_3264 = null
-        }
-
-        @JvmStatic
-        fun method1928(i: Int, i_2_: Int, i_3_: Int): Int {
-            anInt3260++
-            val i_4_ = i_3_ ushr 31
-            if (i_2_ > 0) method1928(82, -44, -111)
-            return (i_3_ - -i_4_) / i + -i_4_
-        }
     }
 }

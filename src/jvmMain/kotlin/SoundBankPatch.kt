@@ -1,5 +1,5 @@
 import WhirlpoolHash.Companion.method1166
-import EmoteDefinition.Companion.method1928
+import EmoteDefinitionStatics.method1928
 import TypedRecordTable.Companion.method2178
 
 /* Class348_Sub17 - Decompiled by JODE
