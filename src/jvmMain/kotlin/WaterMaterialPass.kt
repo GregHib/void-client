@@ -193,7 +193,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
         fun method2148(outgoingPacketHeader: OutgoingPacketHeader?, isaacCipher: IsaacCipher?, i: Int): OutgoingPacketNode {
             try {
                 anInt6230++
-                val class348_sub47 = ParticleConfigParser.method2273((-103).toByte())!!
+                val class348_sub47 = ParticleConfigParserStatics.method2273((-103).toByte())!!
                 if (i >= -80) aCalendar6221 = null
                 class348_sub47.anInt7122 = outgoingPacketHeader!!.anInt4323
                 class348_sub47.aOutgoingPacketHeader_7118 = outgoingPacketHeader

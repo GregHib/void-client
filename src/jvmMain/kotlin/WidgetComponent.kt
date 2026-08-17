@@ -380,7 +380,7 @@ class WidgetComponent {
                 var abstractModel = ParticleGeometryStatics.aLruByteCache_4417!!.method583(l, -90) as AbstractModel?
                 if (abstractModel == null || var_renderer.method3667(abstractModel.ua(), i) != 0) {
                     if (abstractModel != null) i = var_renderer.method3679(i, abstractModel.ua())
-                    val class124 = ParticleConfigParser.method2277(0, (ScatterTextureNode.aJs5Archive_9365!!), this.anInt753, -1)
+                    val class124 = ParticleConfigParserStatics.method2277(0, (ScatterTextureNode.aJs5Archive_9365!!), this.anInt753, -1)
                     if (class124 == null) {
                         ContactList.aBoolean9616 = true
                         return null

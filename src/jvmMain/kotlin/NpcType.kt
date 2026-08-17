@@ -487,7 +487,7 @@ class NpcType {
                 for (i_72_ in anIntArray1402!!.indices) {
                     if (anIntArray1402!![i_72_] != -1) {
                         withLock(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
-                            modelDefinitions[i_72_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1402!![i_72_], -1)
+                            modelDefinitions[i_72_] = ParticleConfigParserStatics.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1402!![i_72_], -1)
                         }
                         if (modelDefinitions[i_72_] != null) {
                             if (modelDefinitions[i_72_]!!.anInt1830 < 13) modelDefinitions[i_72_]!!.method1092(2, 115)
@@ -658,7 +658,7 @@ class NpcType {
                 withLock(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
                     var i_102_ = 0
                     while ((anIntArray1380!!.size > i_102_)) {
-                        modelDefinitions[i_102_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1380!![i_102_], -1)
+                        modelDefinitions[i_102_] = ParticleConfigParserStatics.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1380!![i_102_], -1)
                         i_102_++
                     }
                 }

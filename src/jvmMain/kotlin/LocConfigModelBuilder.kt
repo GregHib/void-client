@@ -148,7 +148,7 @@ class LocConfigModelBuilder {
                 var i_34_ = i_33_
                 if (aShortArray4490 != null) i_34_ = i_34_ or 0x4000
                 if (aShortArray4499 != null) i_34_ = i_34_ or 0x8000
-                val class124 = ParticleConfigParser.method2277(0, (this.aMapElementDefinitionCache_4513!!.aJs5Archive_3981!!), anInt4506, -1)
+                val class124 = ParticleConfigParserStatics.method2277(0, (this.aMapElementDefinitionCache_4513!!.aJs5Archive_3981!!), anInt4506, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 114)
                 abstractModel = var_renderer!!.method3625(class124, i_34_, (this.aMapElementDefinitionCache_4513!!.anInt3991), 64 + anInt4489, anInt4512 - -850)

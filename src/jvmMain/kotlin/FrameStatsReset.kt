@@ -227,7 +227,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SpriteComponent.anInt8377 = 0
             NodeDeque.anInt3330 = 0
             ColourKeyTextureNode.anInt9353 = 0
-            ParticleConfigParser.anInt3824 = 0
+            ParticleConfigParserStatics.anInt3824 = 0
             RangedGraphicsOptionState.anInt5947 = 0
             CameraDistanceOptionState.anInt5855 = 0
             WarpTextureNode.anInt9425 = 0
@@ -585,7 +585,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SequencedGroundDecor.anInt10054 = 0
             NativeRenderer.anInt7909 = 0
             RemoveRoofsOptionState.anInt6064 = 0
-            ParticleConfigParser.anInt3815 = 0
+            ParticleConfigParserStatics.anInt3815 = 0
             GlCubemapLightPass.anInt7310 = 0
             ModelDefinitionLoader.anInt2053 = 0
             CacheIndexManager.anInt3954 = 0
@@ -2231,7 +2231,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SequencedWallEntity.anInt10158 = 0
             AbstractFrameBufferSurface.anInt6914 = 0
             DualMaterialContainer.anInt1634 = 0
-            ParticleConfigParser.anInt3820 = 0
+            ParticleConfigParserStatics.anInt3820 = 0
             GlRenderDevice.anInt9841 = 0
             OpenGlModel.anInt5569 = 0
             SceneryDetailOptionState.anInt6084 = 0
@@ -2978,7 +2978,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TypedRecordTable.anInt3686 = 0
             MediaStreamClient.anInt3191 = 0
             ChatEffectsOptionState.anInt5864 = 0
-            ParticleConfigParser.anInt3816 = 0
+            ParticleConfigParserStatics.anInt3816 = 0
             ResourceLoaderThread.anInt3904 = 0
             ConfigFlagUtilStatics.anInt3231 = 0
             MinimapAreaMarkerNode.anInt9698 = 0
