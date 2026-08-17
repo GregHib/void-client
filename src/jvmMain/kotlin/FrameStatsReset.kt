@@ -1134,7 +1134,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TextureFormatInfo.anInt3848 = 0
             WaterMaterialPass.anInt6215 = 0
             MinimapFlagRenderer.anInt1798 = 0
-            WidgetRedrawTracker.anInt3926 = 0
+            WidgetRedrawTrackerStatics.anInt3926 = 0
             SizeBoundedSoftCache.anInt2321 = 0
             ParticleEmitterDef.anInt4956 = 0
             OpenGlRenderer.anInt7556 = 0
@@ -3717,7 +3717,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TheoraVideoStream.anInt9013 = 0
             MapSceneIconDef.anInt2849 = 0
             GlIndexBufferArb.anInt8497 = 0
-            WidgetRedrawTracker.anInt3924 = 0
+            WidgetRedrawTrackerStatics.anInt3924 = 0
             TileTextureNode.anInt9413 = 0
             SequencedActorEntity.anInt10106 = 0
             SpriteComponent.anInt8371 = 0

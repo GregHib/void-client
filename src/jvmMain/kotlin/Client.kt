@@ -222,7 +222,7 @@ import ParticleSystemRenderer.Companion.method2294
 import ConfigVarProgress.Companion.method2310
 import ItemModelDefinition.Companion.method328
 import ResourceLoaderThread.Companion.method2317
-import WidgetRedrawTracker.Companion.method2331
+import WidgetRedrawTrackerStatics.method2331
 import SkyboxGradient.method2333
 import ArchiveResourceProvider.Companion.method2344
 import CacheIndexManager.Companion.method2354
@@ -2139,7 +2139,7 @@ class Client : GameAppletFrame() {
                                     bool = false
                                 }
                                 if (class46.anInt765 != 0) {
-                                    if ((class46.anInt765 == RangedGraphicsOptionState.anInt5943) || (class46.anInt765 == WidgetRedrawTracker.anInt3932)) {
+                                    if ((class46.anInt765 == RangedGraphicsOptionState.anInt5943) || (class46.anInt765 == WidgetRedrawTrackerStatics.anInt3932)) {
                                         AbstractTileShapeStatics.aWidgetComponent_6561 = class46
                                         if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2292(123, FacingDirectionNodeStatics.aRenderer6654!!, class46.anInt789)
                                         if (class46.anInt765 == RangedGraphicsOptionState.anInt5943) {

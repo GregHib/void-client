@@ -100,17 +100,17 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
         var anInt4030: Int = 0
         fun method2554(i: Byte) {
             anInt4030++
-            if (WidgetRedrawTracker.anInt3931 == 1 || WidgetRedrawTracker.anInt3931 == 3 || (WidgetRedrawTracker.anInt3931 != WaterTextureSet.anInt1447 && (WidgetRedrawTracker.anInt3931 == 0 || WaterTextureSet.anInt1447 == 0))) {
+            if (WidgetRedrawTrackerStatics.anInt3931 == 1 || WidgetRedrawTrackerStatics.anInt3931 == 3 || (WidgetRedrawTrackerStatics.anInt3931 != WaterTextureSet.anInt1447 && (WidgetRedrawTrackerStatics.anInt3931 == 0 || WaterTextureSet.anInt1447 == 0))) {
                 TerrainShadowBuilderGl2.anInt6930 = 0
                 ModelDefinitionLoader.anInt2057 = 0
                 NpcEntityUpdater.aHashtable_3654!!.method3481(0)
             }
-            WaterTextureSet.anInt1447 = WidgetRedrawTracker.anInt3931
+            WaterTextureSet.anInt1447 = WidgetRedrawTrackerStatics.anInt3931
         }
 
         @JvmStatic
         fun method3120(i: Int) {
-            WidgetRedrawTracker.anInt3931 = 0
+            WidgetRedrawTrackerStatics.anInt3931 = 0
             anInt9345++
             val i_15_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-118).toByte())
             val i_16_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)

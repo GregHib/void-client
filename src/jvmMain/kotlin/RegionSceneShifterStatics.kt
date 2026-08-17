@@ -170,10 +170,10 @@ object RegionSceneShifterStatics {
                 while (class348_sub27 != null) {
                     class348_sub27.anInt6896 -= i_21_
                     class348_sub27.anInt6905 -= i_20_
-                    if (WidgetRedrawTracker.anInt3931 != 4 && (class348_sub27.anInt6905 < 0 || class348_sub27.anInt6896 < 0 || (class348_sub27.anInt6905 >= GlCubemapLightPass.anInt7319) || (RangeThresholdTextureNode.anInt9109 <= (class348_sub27.anInt6896)))) class348_sub27.method2715(101.toByte())
+                    if (WidgetRedrawTrackerStatics.anInt3931 != 4 && (class348_sub27.anInt6905 < 0 || class348_sub27.anInt6896 < 0 || (class348_sub27.anInt6905 >= GlCubemapLightPass.anInt7319) || (RangeThresholdTextureNode.anInt9109 <= (class348_sub27.anInt6896)))) class348_sub27.method2715(101.toByte())
                     class348_sub27 = SpriteRenderEntry.aNodeDeque_9711!!.method1990(68.toByte()) as? MultiFieldRecord?
                 }
-                if (WidgetRedrawTracker.anInt3931 != 4) {
+                if (WidgetRedrawTrackerStatics.anInt3931 != 4) {
                     var class348_sub37 = (ModelBatchBaseStatics.aHashtable_1895!!.method3484(0) as? HashTableContainer?)
                     while (class348_sub37 != null) {
                         val i_33_ = (0x3fffL and class348_sub37.aLong4291).toInt()

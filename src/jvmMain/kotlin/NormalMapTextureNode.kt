@@ -120,8 +120,8 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             ArbVertexProgram.regionTileX = 0
             Renderer.anInt4581 = 0
             FileIoUtil.anInt4095 = 0
-            WidgetRedrawTracker.anInt3931 = 0
-            WaterTextureSet.anInt1447 = WidgetRedrawTracker.anInt3931
+            WidgetRedrawTrackerStatics.anInt3931 = 0
+            WaterTextureSet.anInt1447 = WidgetRedrawTrackerStatics.anInt3931
             var i_3_ = 0
             while ((i_3_ < MultiFieldRecordStatics.aMinimapPositionStateArray6897s!!.size)) {
                 MultiFieldRecordStatics.aMinimapPositionStateArray6897s!![i_3_] = null

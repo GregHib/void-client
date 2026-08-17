@@ -40,7 +40,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_5_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteAdd(65.toByte())
                     val i_6_ = BufferedMessageQueue.anInt3581 + (0x7 and (i_5_ shr 4))
                     val i_7_ = FileExistsConditionStatics.anInt4786 - -(i_5_ and 0x7)
-                    if (NpcEntityUpdater.method2112(126, WidgetRedrawTracker.anInt3931) || (i_6_ >= 0 && i_7_ >= 0 && GlCubemapLightPass.anInt7319 > i_6_ && (i_7_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_7_, -1, i_1_, i_3_, i_2_, i_4_, 121.toByte(), i_6_)
+                    if (NpcEntityUpdater.method2112(126, WidgetRedrawTrackerStatics.anInt3931) || (i_6_ >= 0 && i_7_ >= 0 && GlCubemapLightPass.anInt7319 > i_6_ && (i_7_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_7_, -1, i_1_, i_3_, i_2_, i_4_, 121.toByte(), i_6_)
                 } else if (rgbColorPalette == RgbColorPalette.aRgbColorPalette_9475) {
                     val i_8_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_9_ = BufferedMessageQueue.anInt3581 + ((0x7a and i_8_) shr 4)
@@ -193,7 +193,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_80_ = BufferedMessageQueue.anInt3581 - -((i_77_ and 0x79) shr 4)
                     val i_81_ = ArbVertexProgram.regionTileX - -i_80_
                     val bool = (i_80_ >= 0 && i_78_ >= 0 && GlCubemapLightPass.anInt7319 > i_80_ && RangeThresholdTextureNode.anInt9109 > i_78_)
-                    if (bool || NpcEntityUpdater.method2112(124, WidgetRedrawTracker.anInt3931)) {
+                    if (bool || NpcEntityUpdater.method2112(124, WidgetRedrawTrackerStatics.anInt3931)) {
                         RenderableEntry.method3459(IntPair(i_76_, i_75_), GradientLookupEffect.anInt9200, i_79_, i_81_, -2)
                         if (bool) ProjectileSpawner.method1479(i_78_, (-124).toByte(), i_80_, GradientLookupEffect.anInt9200)
                     }
@@ -205,7 +205,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_86_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
                     val i_87_ = BufferedMessageQueue.anInt3581 + (i_86_ shr 4 and 0x7)
                     val i_88_ = FileExistsConditionStatics.anInt4786 - -(0x7 and i_86_)
-                    if (NpcEntityUpdater.method2112(i.toInt() xor 0x73, WidgetRedrawTracker.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && GlCubemapLightPass.anInt7319 > i_87_ && (i_88_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
+                    if (NpcEntityUpdater.method2112(i.toInt() xor 0x73, WidgetRedrawTrackerStatics.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && GlCubemapLightPass.anInt7319 > i_87_ && (i_88_ < RangeThresholdTextureNode.anInt9109))) BoundingBoxNode.method2800(GradientLookupEffect.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
                 } else {
                     if (i.toInt() != 8) InboundPacketHeader.aInboundPacketHeader_82 = null
                     if (GlShaderObjectHandle.aRgbColorPalette_515 == rgbColorPalette) {
@@ -244,7 +244,7 @@ class InputStream_Sub2 : InputStream() {
                         val i_104_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAdd(123)
                         if (i_104_ != CharCodeMap.anInt9591) {
                             val bool = (i_101_ >= 0 && i_99_ >= 0 && (i_101_ < GlCubemapLightPass.anInt7319) && (i_99_ < RangeThresholdTextureNode.anInt9109))
-                            if (bool || NpcEntityUpdater.method2112(122, WidgetRedrawTracker.anInt3931)) {
+                            if (bool || NpcEntityUpdater.method2112(122, WidgetRedrawTrackerStatics.anInt3931)) {
                                 RenderableEntry.method3459(IntPair(i_103_, i_97_), GradientLookupEffect.anInt9200, i_100_, i_102_, i + -10)
                                 if (bool) ProjectileSpawner.method1479(i_99_, (-120).toByte(), i_101_, (GradientLookupEffect.anInt9200))
                             }

@@ -486,7 +486,7 @@ class SceneNodeDeque {
                                     val i_15_ = RadialTextureNode.anInt9341
                                     NpcDefinition.anInt2955 = 0
                                     GlRectangleTexture.method254(15, (-120).toByte())
-                                    WidgetRedrawTracker.method2330(86.toByte())
+                                    WidgetRedrawTrackerStatics.method2330(86.toByte())
                                     SimpleToggleOptionState.method1741(CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                     if (i_15_ != (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197)) throw RuntimeException("lswpr pos:" + (CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_15_)
                                     InboundPacketHeader.aInboundPacketHeader_6584 = null

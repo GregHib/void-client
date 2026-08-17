@@ -30,7 +30,7 @@ object RegionMapDecoder {
         val i_1_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-121)
         val bool = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 156) == 1
         val i_2_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAdd(i + -172)
-        WidgetRedrawTracker.anInt3931 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteAdd((-112).toByte())
+        WidgetRedrawTrackerStatics.anInt3931 = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readByteAdd((-112).toByte())
         ColourKeyTextureNode.method2554((-45).toByte())
         method3111(125, i_0_)
         CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.startBitAccess(-122)

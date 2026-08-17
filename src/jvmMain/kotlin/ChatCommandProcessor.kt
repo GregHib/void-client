@@ -3290,7 +3290,7 @@ object ChatCommandProcessor {
             }
             if (i == 1302) {
                 val i_284_ = anIntArray1149!![--anInt1173]
-                if (i_284_ == InputStream_Sub1.anInt78 || i_284_ == GrowableStringList.anInt2361 || i_284_ == WidgetRedrawTracker.anInt3930) {
+                if (i_284_ == InputStream_Sub1.anInt78 || i_284_ == GrowableStringList.anInt2361 || i_284_ == WidgetRedrawTrackerStatics.anInt3930) {
                     widgetComponent!!.anInt797 = i_284_
                     return
                 }
