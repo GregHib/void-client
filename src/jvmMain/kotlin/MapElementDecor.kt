@@ -2,7 +2,7 @@ import TexGenMaterialPass.Companion.method2161
 import TypedRecordTable.Companion.method2178
 import HeightMapNoise.method2278
 import ConfigVarProgress.Companion.method2312
-import ConnectionStateType.Companion.method527
+import ConnectionStateTypeStatics.method527
 import MapRegionLoaderStatics.method751
 import MapRegionLoaderStatics.method758
 import ChatMessageStream.Companion.method136

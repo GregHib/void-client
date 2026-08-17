@@ -3849,7 +3849,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SceneObjectAnimator.anInt3078 = 0
             ScrollingNoiseTexture.anInt8652 = 0
             FrameBufferObject.anInt4869 = 0
-            ConnectionStateType.anInt1014 = 0
+            ConnectionStateTypeStatics.anInt1014 = 0
             MidiSequencePlayer.anInt8912 = 0
             InputStream_Sub2.anInt490 = 0
             NpcConfig.anInt871 = 0
@@ -3990,7 +3990,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ScriptCompilerThread.anInt1732 = 0
             PlayerUpdateDecoder.anInt1912 = 0
             ModelWallEntity.anInt10140 = 0
-            ConnectionStateType.anInt1020 = 0
+            ConnectionStateTypeStatics.anInt1020 = 0
             IndexedFileCache.anInt1936 = 0
             VoronoiNoiseTextureNode.anInt9127 = 0
             WorldMapPolygonIconLabel.anInt10176 = 0

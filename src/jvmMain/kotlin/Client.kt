@@ -419,8 +419,8 @@ import RsaVarbitHandler.Companion.method493
 import FloorOverlayDefinitionStatics.method501
 import OggMediaStream.Companion.method518
 import OggCacheStream.Companion.method523
-import ConnectionStateType.Companion.method526
-import ConnectionStateType.Companion.method527
+import ConnectionStateTypeStatics.method526
+import ConnectionStateTypeStatics.method527
 import MapSceneTileStatics.method530
 import NoiseTextureGenerator.Companion.method548
 import GrayscaleNoiseTexture.Companion.method553

@@ -145,7 +145,7 @@ class CharCodeMap : HashLinkedListNode() {
                         LinkedListIteratorStatics.anIntArray2117!![i_9_] = 1000000
                         BlankTextureNode.anIntArray9259!![i_9_] = 0
                         CharCodeMap.anIntArray1127!![i_9_] = 1000000
-                        ConnectionStateType.anIntArray1045!![i_9_] = 0
+                        ConnectionStateTypeStatics.anIntArray1045!![i_9_] = 0
                     }
                     var i_10_ = (LocalPlayerState.aPlayer_1907!!.x)
                     var i_11_ = (LocalPlayerState.aPlayer_1907!!.y)

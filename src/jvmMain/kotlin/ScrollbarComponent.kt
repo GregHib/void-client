@@ -114,7 +114,7 @@ open class ScrollbarComponent(js5Archive: Js5Archive, js5Archive_0_: Js5Archive,
         fun method184(i: Int): IntArray {
             anInt8346++
             if (i != 1084489728) method189(33.toByte())
-            return (intArrayOf(ConnectionStateType.anInt1044, WidgetDefinition.anInt235, DualMaterialContainer.anInt3736))
+            return (intArrayOf(ConnectionStateTypeStatics.anInt1044, WidgetDefinition.anInt235, DualMaterialContainer.anInt3736))
         }
 
         @JvmStatic

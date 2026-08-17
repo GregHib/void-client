@@ -78,7 +78,7 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
         @JvmStatic
         fun method493(bool: Boolean) {
             if (MaterialTypeMarkerStatics.aConnectionStateTypeArray6515 == null) {
-                MaterialTypeMarkerStatics.aConnectionStateTypeArray6515 = ConnectionStateType.Companion.method528(-91)
+                MaterialTypeMarkerStatics.aConnectionStateTypeArray6515 = ConnectionStateTypeStatics.method528(-91)
                 TimedTileQueueEntry.aConnectionStateType_9660 = MaterialTypeMarkerStatics.aConnectionStateTypeArray6515!![0]
                 DataHolderStatics.aLong3660 = GameClock.method599(-119)
             }
@@ -90,7 +90,7 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
                 Direct3dModel.aString5420 = TimedTileQueueEntry.aConnectionStateType_9660!!.aLocalizedText_1012!!.method2063(ChatCommandProcessor.anInt6967, 544)
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016) ConfigFlagUtilStatics.anInt3236 = (i * ((TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1021) + -(TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025)) / 100 + (TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025))
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Direct3dModel.aString5420 += ConfigFlagUtilStatics.anInt3236.toString() + "%"
-            } else if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.Companion.aConnectionStateType_1043) {
+            } else if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateTypeStatics.aConnectionStateType_1043) {
                 ActorEntity.aResourceLoaderThread_897 = null
                 ByteBufferStatics.method3379(2, 3)
             } else {

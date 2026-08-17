@@ -66,7 +66,7 @@ class DualMaterialContainer internal constructor(js5Archive: Js5Archive?, js5Arc
         @JvmStatic
         fun method1001(js5Archive: Js5Archive, i: Int) {
             anInt1634++
-            ConnectionStateType.anInt1044 = js5Archive.method417("p11_full", i)
+            ConnectionStateTypeStatics.anInt1044 = js5Archive.method417("p11_full", i)
             WidgetDefinition.anInt235 = js5Archive.method417("p12_full", i)
             DualMaterialContainer.anInt3736 = js5Archive.method417("b12_full", 0)
         }

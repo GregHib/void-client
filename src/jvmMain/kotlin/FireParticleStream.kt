@@ -143,7 +143,7 @@ class FireParticleStream : OutputStream() {
                             LinkedListIteratorStatics.anIntArray2117,
                             BlankTextureNode.anIntArray9259,
                             i_16_,
-                            ConnectionStateType.anIntArray1045,
+                            ConnectionStateTypeStatics.anIntArray1045,
                             GlGroundShaderPass.anInt7396,
                             true,
                             LocalPlayerState.anInt1906
@@ -157,7 +157,7 @@ class FireParticleStream : OutputStream() {
                         FileIoUtil.anIntArray4097,
                         LinkedListIteratorStatics.anIntArray2117,
                         BlankTextureNode.anIntArray9259,
-                        ConnectionStateType.anIntArray1045,
+                        ConnectionStateTypeStatics.anIntArray1045,
                         CharCodeMap.anIntArray1127,
                         (LocalPlayerState.aPlayer_1907!!.plane) - -1,
                         i_16_,

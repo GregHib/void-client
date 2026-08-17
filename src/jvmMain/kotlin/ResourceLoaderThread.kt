@@ -113,7 +113,7 @@ class ResourceLoaderThread : Runnable {
                 container.getSize()
                 if (RsaVarbitHandler.aFrame4904 === container) RsaVarbitHandler.aFrame4904!!.getInsets()
                 aBoolean3908 = false
-                if (FacingDirectionNodeStatics.aRenderer6654 != null && (anCursorController_3907 !is LoadingBarRenderer) && (aConnectionStateType_3916!!.method525(-112) < ConnectionStateType.aConnectionStateType_1041!!.method525(-127))) method3556(false)
+                if (FacingDirectionNodeStatics.aRenderer6654 != null && (anCursorController_3907 !is LoadingBarRenderer) && (aConnectionStateType_3916!!.method525(-112) < ConnectionStateTypeStatics.aConnectionStateType_1041!!.method525(-127))) method3556(false)
             } catch (exception: Exception) {
                 return true
             }

@@ -281,7 +281,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                     else if (i_36_ > BlankTextureNode.anIntArray9259!![i_15_]) BlankTextureNode.anIntArray9259!![i_15_] = i_36_
                     val i_37_ = i_22_ shl 9
                     if (i_37_ >= CharCodeMap.anIntArray1127!![i_15_]) {
-                        if (ConnectionStateType.anIntArray1045!![i_15_] < i_37_) ConnectionStateType.anIntArray1045!![i_15_] = i_37_
+                        if (ConnectionStateTypeStatics.anIntArray1045!![i_15_] < i_37_) ConnectionStateTypeStatics.anIntArray1045!![i_15_] = i_37_
                     } else CharCodeMap.anIntArray1127!![i_15_] = i_37_
                 }
                 if (!bool_24_) {
@@ -344,7 +344,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                 FileIoUtil.anIntArray4097!![i_15_] += 40
                 LinkedListIteratorStatics.anIntArray2117!![i_15_] -= 512
                 BlankTextureNode.anIntArray9259!![i_15_] += 512
-                ConnectionStateType.anIntArray1045!![i_15_] += 512
+                ConnectionStateTypeStatics.anIntArray1045!![i_15_] += 512
                 CharCodeMap.anIntArray1127!![i_15_] -= 512
             }
             return true

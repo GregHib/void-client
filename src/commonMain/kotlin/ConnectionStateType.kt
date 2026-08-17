@@ -1,6 +1,3 @@
-import TexGenMaterialPass.Companion.method2161
-import java.awt.Frame
-
 /*
  * Class56
  */
@@ -48,13 +45,9 @@ class ConnectionStateType private constructor(i: Int, localizedText: LocalizedTe
 
     companion object {
 
-        var anInt1014: Int = 0
-
         var aConnectionStateType_1018: ConnectionStateType? = ConnectionStateType(0, LocalizedText.aLocalizedText_3499, LocalizedText.aLocalizedText_3499, 0, 1)
 
         var anInt1019: Int = 0
-
-        var anInt1020: Int = 0
 
         var anInt1022: Int = 0
 
@@ -81,7 +74,7 @@ class ConnectionStateType private constructor(i: Int, localizedText: LocalizedTe
         var aConnectionStateType_1034: ConnectionStateType? = ConnectionStateType(11, LocalizedText.aLocalizedText_3500, LocalizedText.aLocalizedText_3500, 0, 92, true, true)
 
         var aConnectionStateType_1035: ConnectionStateType? = ConnectionStateType(12, LocalizedText.aLocalizedText_3500, LocalizedText.aLocalizedText_3500, 92, 92)
-        private var aConnectionStateType_1036: ConnectionStateType? = ConnectionStateType(13, LocalizedText.aLocalizedText_3500, LocalizedText.aLocalizedText_3500, 92, 93)
+        var aConnectionStateType_1036: ConnectionStateType? = ConnectionStateType(13, LocalizedText.aLocalizedText_3500, LocalizedText.aLocalizedText_3500, 92, 93)
 
         var aConnectionStateType_1037: ConnectionStateType? = ConnectionStateType(14, LocalizedText.aLocalizedText_3500, LocalizedText.aLocalizedText_3500, 94, 95)
 
@@ -95,60 +88,5 @@ class ConnectionStateType private constructor(i: Int, localizedText: LocalizedTe
 
         var aConnectionStateType_1042: ConnectionStateType? = ConnectionStateType(19, LocalizedText.aLocalizedText_3500, 100)
         var aConnectionStateType_1043: ConnectionStateType? = ConnectionStateType(20, LocalizedText.aLocalizedText_3500, 100)
-
-        var anInt1044: Int = 0
-
-        var anIntArray1045: IntArray? = IntArray(2)
-
-        @JvmStatic
-        fun method526(i: Int) {
-            aConnectionStateType_1040 = null
-            aConnectionStateType_1032 = null
-            aConnectionStateType_1042 = null
-            aConnectionStateType_1038 = null
-            aConnectionStateType_1034 = null
-            aConnectionStateType_1027 = null
-            aConnectionStateType_1018 = null
-            aConnectionStateType_1026 = null
-            if (i > 42) {
-                aConnectionStateType_1039 = null
-                aConnectionStateType_1031 = null
-                aConnectionStateType_1043 = null
-                aConnectionStateType_1033 = null
-                aConnectionStateType_1024 = null
-                aConnectionStateType_1029 = null
-                aConnectionStateType_1023 = null
-                aConnectionStateType_1036 = null
-                anIntArray1045 = null
-                aConnectionStateType_1041 = null
-                aConnectionStateType_1030 = null
-                aConnectionStateType_1037 = null
-                aConnectionStateType_1028 = null
-                aConnectionStateType_1035 = null
-            }
-        }
-
-        @JvmStatic
-        fun method527(frame: Frame?, privilegedOperationWorker: PrivilegedOperationWorker?, bool: Boolean) {
-            try {
-                anInt1020++
-                while (true) {
-                    val class144 = privilegedOperationWorker!!.method2248(89.toByte(), frame)
-                    while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-124).toByte(), 10L)
-                    if (class144.anInt1997 == 1) break
-                    method2161(33.toByte(), 100L)
-                }
-                frame!!.setVisible(bool)
-                frame.dispose()
-            } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("jj.D(" + (if (frame != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ')'))
-            }
-        }
-
-        fun method528(i: Int): Array<ConnectionStateType?> {
-            anInt1014++
-            val i_4_ = 108 / ((i - 34) / 55)
-            return (arrayOf<ConnectionStateType?>(aConnectionStateType_1018, aConnectionStateType_1023, aConnectionStateType_1024, aConnectionStateType_1026, aConnectionStateType_1027, aConnectionStateType_1028, aConnectionStateType_1029, aConnectionStateType_1030, aConnectionStateType_1031, aConnectionStateType_1032, aConnectionStateType_1033, aConnectionStateType_1034, aConnectionStateType_1035, aConnectionStateType_1036, aConnectionStateType_1037, aConnectionStateType_1038, aConnectionStateType_1039, aConnectionStateType_1040, aConnectionStateType_1041, aConnectionStateType_1042, aConnectionStateType_1043))
-        }
     }
 }

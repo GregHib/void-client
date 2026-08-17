@@ -53,7 +53,7 @@ object ClientLoadStateMachine {
             }
         }
         anInt2174++
-        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1018) {
+        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateTypeStatics.aConnectionStateType_1018) {
             val runtime = Runtime.getRuntime()
             val i_1_ = ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L).toInt()
             val l = method599(i + 28559)
@@ -66,7 +66,7 @@ object ClientLoadStateMachine {
                 return 0
             }
         }
-        if (ConnectionStateType.aConnectionStateType_1023 == TimedTileQueueEntry.aConnectionStateType_9660) {
+        if (ConnectionStateTypeStatics.aConnectionStateType_1023 == TimedTileQueueEntry.aConnectionStateType_9660) {
             if (SizeBoundedSoftCache.aRsaPacketDecoder_2327 == null) SizeBoundedSoftCache.aRsaPacketDecoder_2327 = RsaPacketDecoder(ClientMachineInfo.aMediaStreamClient_6601, GlShaderObjectHandle.aScriptCompilerThread_520, RsaVarbitHandler.aBigInteger4896, TimedTileQueueEntry.aBigInteger9657)
             if (!SizeBoundedSoftCache.aRsaPacketDecoder_2327!!.method2674(7)) return 0
             method2965(null, 0, true, 0)
@@ -75,7 +75,7 @@ object ClientLoadStateMachine {
             SpriteRgbTextureNode.aJs5Archive_10426 = WorldMapTextLabel.method3571(false, 33, (-23).toByte(), 1)
             SoftwareSpriteRaster.aJs5Archive_1627 = WorldMapTextLabel.method3571(false, 13, (-23).toByte(), 1)
         }
-        if (ConnectionStateType.aConnectionStateType_1024 == TimedTileQueueEntry.aConnectionStateType_9660) {
+        if (ConnectionStateTypeStatics.aConnectionStateType_1024 == TimedTileQueueEntry.aConnectionStateType_9660) {
             val bool = SpriteRgbTextureNode.aJs5Archive_10426!!.method401(89)
             var i_2_ = MinimapRectClipper.aClass314_Sub1Array223!![33]!!.method2349(1)
             i_2_ = i_2_ + MinimapRectClipper.aClass314_Sub1Array223!![if (!ScrollTexMaterialPass.aBoolean6289) 32 else 34]!!.method2349(1)
@@ -99,13 +99,13 @@ object ClientLoadStateMachine {
                 }
             }
         }
-        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1026) LoadingScreenImageNodeStatics.method3178(SoftwareSpriteRaster.aJs5Archive_1627, -81, method184(1084489728), ScrollTexMaterialPass.aJs5Archive_6277)
-        if (ConnectionStateType.aConnectionStateType_1027 == TimedTileQueueEntry.aConnectionStateType_9660) {
+        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateTypeStatics.aConnectionStateType_1026) LoadingScreenImageNodeStatics.method3178(SoftwareSpriteRaster.aJs5Archive_1627, -81, method184(1084489728), ScrollTexMaterialPass.aJs5Archive_6277)
+        if (ConnectionStateTypeStatics.aConnectionStateType_1027 == TimedTileQueueEntry.aConnectionStateType_9660) {
             val i_5_ = StringCacheNodeStatics.method3420(0)
             val i_6_ = method3256(2)
             if (i_6_ > i_5_) return 100 * i_5_ / i_6_
         }
-        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1028) {
+        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateTypeStatics.aConnectionStateType_1028) {
             if (LoadProgressCountersStatics.anCursorControllerArray2447 != null && (LoadProgressCountersStatics.anCursorControllerArray2447!!.size > 0)) {
                 if (LoadProgressCountersStatics.anCursorControllerArray2447!![0]!!.method60(-19079) < 100) return 0
                 if (LoadProgressCountersStatics.anCursorControllerArray2447!!.size > 1 && PerlinTextureProvider.aCollisionMapRegion_5813!!.method1044(86) && (LoadProgressCountersStatics.anCursorControllerArray2447!![1]!!.method60(i + 9581) < 100)) return 0
@@ -114,10 +114,10 @@ object ClientLoadStateMachine {
             method3568(FacingDirectionNodeStatics.aRenderer6654, 4)
             ByteBufferStatics.method3379(2, 1)
         }
-        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1029) {
+        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateTypeStatics.aConnectionStateType_1029) {
             for (i_7_ in 0..3) TimedRecordAccessorStatics.aCollisionMapArray7108s!![i_7_] = method988(RangeThresholdTextureNode.anInt9109, 1, GlCubemapLightPass.anInt7319)
         }
-        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1030) {
+        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateTypeStatics.aConnectionStateType_1030) {
             CameraRotationStubStatics.aJs5Archive_322 = WorldMapTextLabel.method3571(false, 8, (-23).toByte(), 1)
             ShortKeyNodeStatics.aJs5Archive_6909 = WorldMapTextLabel.method3571(false, 0, (-23).toByte(), 1)
             TextureGeneratorStatics.aJs5Archive_2490 = WorldMapTextLabel.method3571(false, 1, (-23).toByte(), 1)
@@ -151,7 +151,7 @@ object ClientLoadStateMachine {
             SpriteLoadValidatorStatics.aJs5Archive_4796 = WorldMapTextLabel.method3571(true, 31, (-23).toByte(), 1)
             HitsplatDefinitionStatics.aJs5Archive_2015 = WorldMapTextLabel.method3571(true, 36, (-23).toByte(), 2)
         }
-        if (ConnectionStateType.aConnectionStateType_1031 == TimedTileQueueEntry.aConnectionStateType_9660) {
+        if (ConnectionStateTypeStatics.aConnectionStateType_1031 == TimedTileQueueEntry.aConnectionStateType_9660) {
             var i_8_ = 0
             for (i_9_ in 0..36) {
                 if (MinimapRectClipper.aClass314_Sub1Array223!![i_9_] != null) i_8_ += (MinimapRectClipper.aClass314_Sub1Array223!![i_9_]!!.method2349(i + 28661) * NpcAnimationResolverStatics.anIntArray164!![i_9_] / 100)
@@ -163,20 +163,20 @@ object ClientLoadStateMachine {
             TexGenMaterialPass.method2159((-109).toByte(), CameraRotationStubStatics.aJs5Archive_322!!)
             LoadingScreenImageNodeStatics.method3178(SoftwareSpriteRaster.aJs5Archive_1627, -124, method184(i xor 0x40a46ff3.inv()), CameraRotationStubStatics.aJs5Archive_322)
         }
-        if (ConnectionStateType.aConnectionStateType_1032 == TimedTileQueueEntry.aConnectionStateType_9660) {
+        if (ConnectionStateTypeStatics.aConnectionStateType_1032 == TimedTileQueueEntry.aConnectionStateType_9660) {
             if (ParticleProcessor.anInt4270 == -1) ParticleProcessor.anInt4270 = CachedRgbNoiseTexture.aJs5Archive_8667!!.method417("scape main", 0)
             method3290(56)
             ByteBufferStatics.method3379(2, 2)
         }
-        if (ConnectionStateType.aConnectionStateType_1033 == TimedTileQueueEntry.aConnectionStateType_9660) OSInfo.method323(Crc64Hashable.aJs5Archive_4984, VorbisOggDecoder.aPrivilegedOperationWorker_8992, 95.toByte())
-        if (ConnectionStateType.aConnectionStateType_1034 == TimedTileQueueEntry.aConnectionStateType_9660) {
+        if (ConnectionStateTypeStatics.aConnectionStateType_1033 == TimedTileQueueEntry.aConnectionStateType_9660) OSInfo.method323(Crc64Hashable.aJs5Archive_4984, VorbisOggDecoder.aPrivilegedOperationWorker_8992, 95.toByte())
+        if (ConnectionStateTypeStatics.aConnectionStateType_1034 == TimedTileQueueEntry.aConnectionStateType_9660) {
             val i_10_ = BinaryGraphicsOptionState.method1770((-25).toByte())
             if (i_10_ < 100) return i_10_
             SeqDefinitionCache.method2013(FixedFunctionWaterPass.aJs5Archive_7362!!.method415(73.toByte(), 1), 112.toByte())
             TextureLoadExceptionStatics.method4012(FixedFunctionWaterPass.aJs5Archive_7362!!.method415(73.toByte(), 3), (-111).toByte())
         }
         if (i != -28660) return 2
-        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1035) {
+        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateTypeStatics.aConnectionStateType_1035) {
             if (AbstractFrameBufferSurface.anInt6923 != -1 && !RasterSpriteStatics.aJs5Archive_5207!!.method420(-10499, AbstractFrameBufferSurface.anInt6923, 0)) return 99
             SourceRowTextureNode.aRenderConfig9113 = TextureMetadataProvider(KeyEventNodeStatics.aJs5Archive_4770, WorldMapTextLabel.aJs5Archive_8589, CameraRotationStubStatics.aJs5Archive_322)
             ProjectionCameraTransform.aEmoteDefCache_5764 = EmoteDefCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
@@ -224,12 +224,12 @@ object ClientLoadStateMachine {
             FacingDirectionNodeStatics.aBufferPositionTracker_6660 = RenderConfigFactoryStatics.method1631(false)
             NoiseTextureNode.aClass348_Sub4_9264 = ClientMachineInfo(true, VorbisOggDecoder.aPrivilegedOperationWorker_8992!!)
         }
-        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1037) {
+        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateTypeStatics.aConnectionStateType_1037) {
             val i_11_ = (NpcReference.method2958(22388, CameraRotationStubStatics.aJs5Archive_322!!) + CipheredPacketBuffer.method3405(2012104999, true))
             val i_12_ = (ParticleEmitterDefExt.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
-        if (ConnectionStateType.aConnectionStateType_1038 == TimedTileQueueEntry.aConnectionStateType_9660) method752(TerrainShadowBuilderGl2.aJs5Archive_6950, RenderConfigFactoryStatics.aLocDefinitionCache_2979, Tooltip.aParticleDefLoader_4460, GradientLookupEffect.aSeqDefinitionCache_9195, TheoraVideoStream.aConfigDefinitionLoader_9031, ModelOrSpriteHolderStatics.aTextureDefinitionLoader_117, ProjectedGroundDecor.aVarpStore_10209)
+        if (ConnectionStateTypeStatics.aConnectionStateType_1038 == TimedTileQueueEntry.aConnectionStateType_9660) method752(TerrainShadowBuilderGl2.aJs5Archive_6950, RenderConfigFactoryStatics.aLocDefinitionCache_2979, Tooltip.aParticleDefLoader_4460, GradientLookupEffect.aSeqDefinitionCache_9195, TheoraVideoStream.aConfigDefinitionLoader_9031, ModelOrSpriteHolderStatics.aTextureDefinitionLoader_117, ProjectedGroundDecor.aVarpStore_10209)
         if (ConnectionStateType.aConnectionStateType_1039 == TimedTileQueueEntry.aConnectionStateType_9660) {
             // TODO make cache edit to extend these or change id's
             IsaacCipher.anIntArray1303 = (IntArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
@@ -262,7 +262,7 @@ object ClientLoadStateMachine {
             OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 2
             BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 2
         }
-        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1040) {
+        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateTypeStatics.aConnectionStateType_1040) {
             if (!TextureLoaderUtil.method2547(GlBufferObject.anInt4737, 84.toByte())) return 0
             var bool = true
             for (i_14_ in (WarpTextureNode.aWidgetComponentArrayArray9427!![GlBufferObject.anInt4737])!!.indices) {
@@ -271,8 +271,8 @@ object ClientLoadStateMachine {
             }
             if (!bool) return 0
         }
-        if (ConnectionStateType.aConnectionStateType_1041 == TimedTileQueueEntry.aConnectionStateType_9660) ByteBufferStatics.method3198(true, (-45).toByte())
-        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1042) {
+        if (ConnectionStateTypeStatics.aConnectionStateType_1041 == TimedTileQueueEntry.aConnectionStateType_9660) ByteBufferStatics.method3198(true, (-45).toByte())
+        if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateTypeStatics.aConnectionStateType_1042) {
             ActorEntity.aResourceLoaderThread_897!!.method2319((-56).toByte())
             try {
                 runBlocking {
