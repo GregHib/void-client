@@ -279,7 +279,7 @@ import AwtKeyboardListener.Companion.method2705
 import DragDropControllerStatics.method2707
 import DragDropControllerStatics.method2708
 import VorbisAudioDecoder.Companion.method2785
-import KeyEventNode.Companion.method2796
+import KeyEventNodeStatics.method2796
 import BoundingBoxNode.Companion.method2798
 import LongKeyNodeStatics.method2805
 import MenuActionNode.Companion.method2810

@@ -4303,7 +4303,7 @@ object ChatCommandProcessor {
                 if (i == 3609) {
                     var string = aStringArray1152!![--anInt1170]!!
                     if (string.startsWith("<img=0>") || string.startsWith("<img=1>")) string = string.substring(7)
-                    anIntArray1149!![anInt1173++] = (if (KeyEventNode.method2797(string, (-63).toByte())) 1 else 0)
+                    anIntArray1149!![anInt1173++] = (if (KeyEventNodeStatics.method2797(string, (-63).toByte())) 1 else 0)
                     return
                 }
                 if (i == 3610) {

@@ -143,7 +143,7 @@ object ClientLoadStateMachine {
             TerrainShadowBuilderGl2.aJs5Archive_6950 = WorldMapTextLabel.method3571(true, 23, (-23).toByte(), 1)
             ModelBatchBaseStatics.aJs5Archive_1897 = WorldMapTextLabel.method3571(false, 24, (-23).toByte(), 1)
             ConfigArchiveLoaderStatics.aJs5Archive_1434 = WorldMapTextLabel.method3571(false, 25, (-23).toByte(), 1)
-            KeyEventNode.aJs5Archive_4770 = WorldMapTextLabel.method3571(true, 26, (-23).toByte(), 1)
+            KeyEventNodeStatics.aJs5Archive_4770 = WorldMapTextLabel.method3571(true, 26, (-23).toByte(), 1)
             ClientLoadStateMachine.aJs5Archive_3146 = WorldMapTextLabel.method3571(false, 27, (-23).toByte(), 1)
             FixedFunctionWaterPass.aJs5Archive_7362 = WorldMapTextLabel.method3571(true, 28, (-23).toByte(), 1)
             NodeDequeStatics.aJs5Archive_3323 = WorldMapTextLabel.method3571(false, 29, (-23).toByte(), 1)
@@ -178,7 +178,7 @@ object ClientLoadStateMachine {
         if (i != -28660) return 2
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1035) {
             if (AbstractFrameBufferSurface.anInt6923 != -1 && !RasterSpriteStatics.aJs5Archive_5207!!.method420(-10499, AbstractFrameBufferSurface.anInt6923, 0)) return 99
-            SourceRowTextureNode.aRenderConfig9113 = TextureMetadataProvider(KeyEventNode.aJs5Archive_4770, WorldMapTextLabel.aJs5Archive_8589, CameraRotationStubStatics.aJs5Archive_322)
+            SourceRowTextureNode.aRenderConfig9113 = TextureMetadataProvider(KeyEventNodeStatics.aJs5Archive_4770, WorldMapTextLabel.aJs5Archive_8589, CameraRotationStubStatics.aJs5Archive_322)
             ProjectionCameraTransform.aEmoteDefCache_5764 = EmoteDefCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             OpenGlModel.aNpcDefinitionCache_5558 = NpcDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             CacheArchiveIndexLoader.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541, CameraRotationStubStatics.aJs5Archive_322)

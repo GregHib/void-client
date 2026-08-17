@@ -39,7 +39,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(111.toByte(), TerrainShadowBuilderGl2.aJs5Archive_6950!!.method389(109))
         class348_sub49_sub2.writeInt(108.toByte(), ModelBatchBaseStatics.aJs5Archive_1897!!.method389(-106))
         class348_sub49_sub2.writeInt(102.toByte(), ConfigArchiveLoaderStatics.aJs5Archive_1434!!.method389(102))
-        class348_sub49_sub2.writeInt(113.toByte(), KeyEventNode.aJs5Archive_4770!!.method389(-122))
+        class348_sub49_sub2.writeInt(113.toByte(), KeyEventNodeStatics.aJs5Archive_4770!!.method389(-122))
         class348_sub49_sub2.writeInt(86.toByte(), ClientLoadStateMachine.aJs5Archive_3146!!.method389(97))
         class348_sub49_sub2.writeInt(96.toByte(), FixedFunctionWaterPass.aJs5Archive_7362!!.method389(-6))
         class348_sub49_sub2.writeInt(96.toByte(), NodeDequeStatics.aJs5Archive_3323!!.method389(-122))

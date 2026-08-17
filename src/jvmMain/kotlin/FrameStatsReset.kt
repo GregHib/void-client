@@ -2868,7 +2868,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9821 = 0
             SpotAnimEntity.anInt6445 = 0
             GlVertexBufferArb.anInt8494 = 0
-            KeyEventNode.anInt4763 = 0
+            KeyEventNodeStatics.anInt4763 = 0
             FrameBufferObject.anInt4885 = 0
             RemoveRoofsOptionState.anInt6060 = 0
             NpcActorEntity.anInt10087 = 0
