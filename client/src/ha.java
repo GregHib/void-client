@@ -303,7 +303,13 @@ abstract class ha {
         try {
             anInt4576++;
             if (i_170_ == i_171_) return Class348_Sub5.method2753(true, i_168_, i_169_, canvas, var_d);
-            if (i_171_ == 2) return Class306.method2297(-6, i_168_, var_d, canvas, i_169_);
+            if (i_171_ == 2) {
+                // Mode 2 is the sw3d-native-accelerated software renderer; the
+                // native doesn't exist on modern platforms, so fall back to
+                // the pure-Java software renderer instead of throwing.
+                if (Class348_Sub40_Sub19.method3098(-30282, "sw3d")) return Class306.method2297(-6, i_168_, var_d, canvas, i_169_);
+                return Class348_Sub5.method2753(true, i_168_, i_169_, canvas, var_d);
+            }
             if (i_171_ == 1) return Class262.method2000(3, i, canvas, var_d);
             if (i_171_ == 5) return Class93.method862(canvas, var_d, class45, 25542, i);
             if (i_171_ == 3) return Class96.method870(i, i_170_ ^ 0x4a31, var_d, class45, canvas);
