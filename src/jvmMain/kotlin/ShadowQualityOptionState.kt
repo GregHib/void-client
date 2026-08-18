@@ -154,8 +154,8 @@ class ShadowQualityOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1792(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Byte, i_16_: Int) {
             anInt6013++
-            val i_17_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i, LocalPlayerState.anInt1910, -90)
-            val i_18_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i_13_, LocalPlayerState.anInt1910, -94)
+            val i_17_ = WhirlpoolHash.method831(WidgetTextConfigStatics.anInt513, i, LocalPlayerState.anInt1910, -90)
+            val i_18_ = WhirlpoolHash.method831(WidgetTextConfigStatics.anInt513, i_13_, LocalPlayerState.anInt1910, -94)
             val i_19_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i_12_, WorldMapLabel.anInt4960, 77)
             val i_20_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i_14_, WorldMapLabel.anInt4960, 59)
             val i_21_ = -27 / ((i_15_ - -6) / 55)

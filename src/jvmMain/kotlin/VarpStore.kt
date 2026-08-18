@@ -144,7 +144,7 @@ class VarpStore : VarResolver {
 
         fun method1308(i: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Byte, i_18_: Int, i_19_: Int, i_20_: Int) {
             anInt5072++
-            if (WorldMapLabel.anInt4960 <= i_15_ && i_19_ <= CameraNodeListStatics.anInt1745 && i_14_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_20_) method1730(i_16_, i_20_, i_14_, i_19_, i, i_18_, -128, i_15_)
+            if (WorldMapLabel.anInt4960 <= i_15_ && i_19_ <= CameraNodeListStatics.anInt1745 && i_14_ >= LocalPlayerState.anInt1910 && WidgetTextConfigStatics.anInt513 >= i_20_) method1730(i_16_, i_20_, i_14_, i_19_, i, i_18_, -128, i_15_)
             else method4004(i_20_, i_19_, i_14_, i, i_18_, -80, i_15_, i_16_)
             if (i_17_ > -113) aClass237_Sub1_5067 = null
         }

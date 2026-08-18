@@ -66,7 +66,7 @@ class BasicGlRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abst
 
         @JvmStatic
         fun method3540(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, bool: Boolean) {
-            if (i_6_ >= WorldMapLabel.anInt4960 && CameraNodeListStatics.anInt1745 >= i_6_ && WorldMapLabel.anInt4960 <= i_5_ && CameraNodeListStatics.anInt1745 >= i_5_ && i_7_ >= WorldMapLabel.anInt4960 && i_7_ <= CameraNodeListStatics.anInt1745 && WorldMapLabel.anInt4960 <= i_9_ && CameraNodeListStatics.anInt1745 >= i_9_ && i >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i && i_2_ >= LocalPlayerState.anInt1910 && WidgetTextConfig.anInt513 >= i_2_ && LocalPlayerState.anInt1910 <= i_8_ && i_8_ <= WidgetTextConfig.anInt513 && LocalPlayerState.anInt1910 <= i_4_ && i_4_ <= WidgetTextConfig.anInt513) AbstractFrameBufferSurface.method3009(
+            if (i_6_ >= WorldMapLabel.anInt4960 && CameraNodeListStatics.anInt1745 >= i_6_ && WorldMapLabel.anInt4960 <= i_5_ && CameraNodeListStatics.anInt1745 >= i_5_ && i_7_ >= WorldMapLabel.anInt4960 && i_7_ <= CameraNodeListStatics.anInt1745 && WorldMapLabel.anInt4960 <= i_9_ && CameraNodeListStatics.anInt1745 >= i_9_ && i >= LocalPlayerState.anInt1910 && WidgetTextConfigStatics.anInt513 >= i && i_2_ >= LocalPlayerState.anInt1910 && WidgetTextConfigStatics.anInt513 >= i_2_ && LocalPlayerState.anInt1910 <= i_8_ && i_8_ <= WidgetTextConfigStatics.anInt513 && LocalPlayerState.anInt1910 <= i_4_ && i_4_ <= WidgetTextConfigStatics.anInt513) AbstractFrameBufferSurface.method3009(
                 i_2_,
                 i_8_,
                 i_5_,

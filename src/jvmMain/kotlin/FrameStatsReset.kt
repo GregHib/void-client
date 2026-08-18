@@ -812,7 +812,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SolidFillComponent.anInt8359 = 0
             SceneLinkedListNode.anInt3975 = 0
             NativeRenderer.anInt7956 = 0
-            WidgetTextConfig.anInt512 = 0
+            WidgetTextConfigStatics.anInt512 = 0
             BloomGraphicsOptionState.anInt5961 = 0
             BinaryGraphicsOptionState.anInt5954 = 0
             GlSpriteRenderer.anInt8445 = 0
@@ -2707,7 +2707,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MatrixCameraTransform.anInt5688 = 0
             ParameterizedText.anInt9576 = 0
             MapElementManager.anInt4464 = 0
-            WidgetTextConfig.anInt505 = 0
+            WidgetTextConfigStatics.anInt505 = 0
             TypedRecordTable.anInt3694 = 0
             ItemDefinition.anInt2754 = 0
             MapLabelMenuEntry.anInt5792 = 0
@@ -3347,7 +3347,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WorldMapSceneSoftware.anInt5825 = 0
             WallSceneEntity.anInt9953 = 0
             ParticleEmitterFactoryStatics.anInt3178 = 0
-            WidgetTextConfig.anInt509 = 0
+            WidgetTextConfigStatics.anInt509 = 0
             SequencedActorEntity.anInt10110 = 0
             StringCacheNodeStatics.anInt7210 = 0
             GlRenderDevice.anInt9862 = 0

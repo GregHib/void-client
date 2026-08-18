@@ -78,13 +78,13 @@ class DirectionPath {
         @JvmStatic
         fun method535(i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Byte) {
             anInt1062++
-            val i_13_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i_11_, LocalPlayerState.anInt1910, 111)
-            val i_14_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i_7_, LocalPlayerState.anInt1910, -104)
+            val i_13_ = WhirlpoolHash.method831(WidgetTextConfigStatics.anInt513, i_11_, LocalPlayerState.anInt1910, 111)
+            val i_14_ = WhirlpoolHash.method831(WidgetTextConfigStatics.anInt513, i_7_, LocalPlayerState.anInt1910, -104)
             if (i_12_ >= -62) Companion.method535(80, -63, -10, 41, -65, 39, (-89).toByte())
             val i_15_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i, WorldMapLabel.anInt4960, -79)
             val i_16_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i_9_, WorldMapLabel.anInt4960, 92)
-            val i_17_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i_11_ + i_8_, LocalPlayerState.anInt1910, 32)
-            val i_18_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, -i_8_ + i_7_, LocalPlayerState.anInt1910, 41)
+            val i_17_ = WhirlpoolHash.method831(WidgetTextConfigStatics.anInt513, i_11_ + i_8_, LocalPlayerState.anInt1910, 32)
+            val i_18_ = WhirlpoolHash.method831(WidgetTextConfigStatics.anInt513, -i_8_ + i_7_, LocalPlayerState.anInt1910, 41)
             var i_19_ = i_13_
             while (i_17_ > i_19_) {
                 GlElementArrayBuffer.method1156(-27, i_16_, WidgetDefinition.anIntArrayArray255!![i_19_]!!, i_15_, i_10_)

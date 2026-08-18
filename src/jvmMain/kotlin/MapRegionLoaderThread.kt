@@ -137,14 +137,14 @@ class MapRegionLoaderThread : Runnable {
             if (i_12_ < LocalPlayerState.anInt1910) {
                 i_11_ = (LocalPlayerState.anInt1910 + -i_8_ shl 12) / i_7_
                 i_12_ = LocalPlayerState.anInt1910
-            } else if (WidgetTextConfig.anInt513 < i_12_) {
-                i_11_ = (WidgetTextConfig.anInt513 - i_8_ shl 12) / i_7_
-                i_12_ = WidgetTextConfig.anInt513
+            } else if (WidgetTextConfigStatics.anInt513 < i_12_) {
+                i_11_ = (WidgetTextConfigStatics.anInt513 - i_8_ shl 12) / i_7_
+                i_12_ = WidgetTextConfigStatics.anInt513
             }
             if (LocalPlayerState.anInt1910 <= i_9_) {
-                if (WidgetTextConfig.anInt513 < i_9_) {
-                    i_10_ = (WidgetTextConfig.anInt513 - i_8_ shl 12) / i_7_
-                    i_9_ = WidgetTextConfig.anInt513
+                if (WidgetTextConfigStatics.anInt513 < i_9_) {
+                    i_10_ = (WidgetTextConfigStatics.anInt513 - i_8_ shl 12) / i_7_
+                    i_9_ = WidgetTextConfigStatics.anInt513
                 }
             } else {
                 i_10_ = (-i_8_ + LocalPlayerState.anInt1910 shl 12) / i_7_
@@ -165,7 +165,7 @@ class MapRegionLoaderThread : Runnable {
                 }
                 Tooltip.anInt4458 = widgetComponent.anInt695
                 ParticleEmitterFactoryStatics.anInt3176 = i
-                WidgetTextConfig.anInt500 = i_13_
+                WidgetTextConfigStatics.anInt500 = i_13_
                 HeightMapNoise.anInt3829 = widgetComponent.anInt812
                 RenderNodeStatics.aBoolean9722 = true
                 NativeLibraryState.anInt169 = widgetComponent.anInt704

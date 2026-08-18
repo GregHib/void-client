@@ -145,7 +145,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
             }
             if (bool) {
                 if (!(SlotBinding.aSlotBinding_3404!!.method2027(92) as ConfigVarProgress).method2313(102)) NpcType.aClient1367!!.method83(true)
-                if (!(SlotBinding.aSlotBinding_3407!!.method2027(i.toInt() xor 0x64.inv()) as ConfigVarProgress).method2313(103)) WidgetTextConfig.aBoolean510 = NpcType.aClient1367!!.method100(i.toInt() xor 0x12.inv())
+                if (!(SlotBinding.aSlotBinding_3407!!.method2027(i.toInt() xor 0x64.inv()) as ConfigVarProgress).method2313(103)) WidgetTextConfigStatics.aBoolean510 = NpcType.aClient1367!!.method100(i.toInt() xor 0x12.inv())
                 Crc64Hashable.aSlotBindingArray4987 = null
             }
             i_9_ -= GradientMapTextureNode.anInt9327

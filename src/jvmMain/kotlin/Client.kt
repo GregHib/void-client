@@ -402,7 +402,7 @@ import MouseInputTracker.Companion.method3609
 import BufferedFileReader.method3611
 import PlayerAppearanceUpdateDecoder.method3613
 import GlRenderDevice.Companion.method3968
-import WidgetTextConfig.Companion.method363
+import WidgetTextConfigStatics.method363
 import GlShaderObjectHandle.Companion.method367
 import NpcModelTransform.Companion.method177
 import MinimapTileEntry.Companion.method380
@@ -517,7 +517,7 @@ import TextureGeneratorStatics.method1397
 import TileSceneEntity.Companion.method2396
 import TwoStateOptionState.Companion.method1844
 import WhirlpoolHash.Companion.method1166
-import WidgetTextConfig.Companion.method362
+import WidgetTextConfigStatics.method362
 import java.awt.Canvas
 import java.awt.Component
 import java.awt.Container
@@ -2186,7 +2186,7 @@ class Client : GameAppletFrame() {
                                                     i_66_ = ((LocalPlayerState.aPlayer_1907!!.x) - i_68_ shr 9) + (i_64_ shr 2)
                                                     i_67_ = ((LocalPlayerState.aPlayer_1907!!.y) - i_68_ shr 9) - (i_65_ shr 2)
                                                 }
-                                                if (RenderNodeStatics.aBoolean9722 && ((WidgetTextConfig.anInt500 and 0x40) != 0)) {
+                                                if (RenderNodeStatics.aBoolean9722 && ((WidgetTextConfigStatics.anInt500 and 0x40) != 0)) {
                                                     val class46_69_ = (NpcReference.method2957(NativeLibraryState.anInt169, (-54).toByte(), OrientationRotator.anInt2046))
                                                     if (class46_69_ != null) MinimapPolygonDrawer.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), ItemNameResolver.aString5001, 1L, (FloatBuffer.anInt9747))
                                                     else method2678(-2049)
@@ -3709,7 +3709,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (InboundPacketHeader.aInboundPacketHeader_1540 == InboundPacketHeader.aInboundPacketHeader_6584) {
-                MapSceneTileStatics.aBoxedIntHolder_1055 = WidgetTextConfig.method360((-57).toByte(), CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255))
+                MapSceneTileStatics.aBoxedIntHolder_1055 = WidgetTextConfigStatics.method360((-57).toByte(), CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255))
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }

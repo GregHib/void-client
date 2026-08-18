@@ -47,7 +47,7 @@ class SpriteDefinition : LinkedListNode() {
             anInt7073++
             if (FileExistsConditionStatics.anInt4776 < 400) {
                 if (LocalPlayerState.aPlayer_1907 == player) {
-                    if (RenderNodeStatics.aBoolean9722 && (WidgetTextConfig.anInt500 and 0x10) != 0) {
+                    if (RenderNodeStatics.aBoolean9722 && (WidgetTextConfigStatics.anInt500 and 0x10) != 0) {
                         LongHashTable.anInt450++
                         MinimapPolygonDrawer.method466(false, (ItemNameResolver.aString5000 + " -> <col=ffffff>" + LocalizedText.aLocalizedText_3520!!.method2063(ChatCommandProcessor.anInt6967, 544)), 0, (-109).toByte(), false, 0, -1, true, 50, player.anInt10290.toLong(), ItemNameResolver.aString5001, 0L, FloatBuffer.Companion.anInt9747)
                     }
@@ -68,7 +68,7 @@ class SpriteDefinition : LinkedListNode() {
                         else string = (player.method2456(true, 255) + (if (bool_0_) (method250((LocalPlayerState.aPlayer_1907!!.anInt10516), true, (player.anInt10516))) else "<col=ffffff>") + " (" + string_5_ + player.anInt10516 + "+" + (-player.anInt10516 + player.anInt10557) + ")")
                     } else if (player.anInt10564 == -1) string = player.method2456(true, 255)
                     else string = (player.method2456(true, 255) + " (" + LocalizedText.aLocalizedText_3512!!.method2063(ChatCommandProcessor.anInt6967, 544) + player.anInt10564 + ")")
-                    if (RenderNodeStatics.aBoolean9722 && !bool && (0x8 and WidgetTextConfig.anInt500) != 0) {
+                    if (RenderNodeStatics.aBoolean9722 && !bool && (0x8 and WidgetTextConfigStatics.anInt500) != 0) {
                         MinimapPolygonDrawer.method466(false, ItemNameResolver.aString5000 + " -> <col=ffffff>" + string, 0, (-109).toByte(), false, 0, -1, true, 51, player.anInt10290.toLong(), ItemNameResolver.aString5001, player.anInt10290.toLong(), FloatBuffer.Companion.anInt9747)
                         TileRenderState.anInt4228++
                     }
@@ -88,7 +88,7 @@ class SpriteDefinition : LinkedListNode() {
                                     }
                                 }
                                 val i_8_ = (i_7_ + (CipheredPacketBuffer.Companion.aShortArray9768!![i_6_])).toShort()
-                                val i_9_ = (if (DelegatingRenderCanvas.anIntArray60!![i_6_] == -1) WidgetTextConfig.anInt506 else DelegatingRenderCanvas.anIntArray60!![i_6_])
+                                val i_9_ = (if (DelegatingRenderCanvas.anIntArray60!![i_6_] == -1) WidgetTextConfigStatics.anInt506 else DelegatingRenderCanvas.anIntArray60!![i_6_])
                                 MinimapPolygonDrawer.method466(false, "<col=ffffff>" + string, 0, (-105).toByte(), false, 0, -1, true, i_8_.toInt(), player.anInt10290.toLong(), (DynamicSceneObjectEntity.aStringArray10195!![i_6_]), player.anInt10290.toLong(), i_9_)
                                 DelegatingRenderCanvas.anInt69++
                             }

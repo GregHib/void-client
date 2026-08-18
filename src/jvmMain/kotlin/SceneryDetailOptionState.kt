@@ -135,7 +135,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                 TextureDefinitionCache.method1626(1, true)
                 if (i_10_ == 0) i_10_ = 1
                 if (i_9_ == 0) i_9_ = 1
-                if (TerrainTileShapeStatics.aTerrainTileArray8801 != null && (!RenderNodeStatics.aBoolean9722 || (0x40 and WidgetTextConfig.anInt500) != 0)) {
+                if (TerrainTileShapeStatics.aTerrainTileArray8801 != null && (!RenderNodeStatics.aBoolean9722 || (0x40 and WidgetTextConfigStatics.anInt500) != 0)) {
                     var i_13_ = -1
                     var i_14_ = -1
                     val i_15_ = var_renderer.i()
@@ -171,7 +171,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                         if (i_26_ < 3 && ((0x2 and (GraphicsOptionState.aByteArrayArrayArray6962!![1]!![i_24_ shr 9]!![i_25_ shr 9]).toInt()) != 0)) i_26_++
                     }
                     if (i_13_ != -1 && i_14_ != -1) {
-                        if (!RenderNodeStatics.aBoolean9722 || (0x40 and WidgetTextConfig.anInt500) == 0) {
+                        if (!RenderNodeStatics.aBoolean9722 || (0x40 and WidgetTextConfigStatics.anInt500) == 0) {
                             if (ObjectSpawnDecoder.aBoolean1801) MinimapPolygonDrawer.method466(false, "", i_14_, (-109).toByte(), true, i_13_, -1, true, 12, (i_14_ or (i_13_ shl 0)).toLong(), (LocalizedText.aLocalizedText_3510!!.method2063(ChatCommandProcessor.anInt6967, 544)), 0L, -1)
                             RenderableEntry.anInt4334++
                             MinimapPolygonDrawer.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), LightingOptionState.aString5882, 0L, MapElementLookupStatics.anInt4144)
@@ -309,7 +309,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         val class213 = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(79, (class348_sub34.anInt6973)))
                                         if (RenderNodeStatics.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) {
                                             val class254 = (if (ParticleEmitterFactoryStatics.anInt3176 != -1) (ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactoryStatics.anInt3176, 28364)) else null)
-                                            if ((WidgetTextConfig.anInt500 and 0x1) != 0 && (class254 == null || ((class254.anInt3256) != (class213.method1567((class254.anInt3256), 29, ParticleEmitterFactoryStatics.anInt3176))))) {
+                                            if ((WidgetTextConfigStatics.anInt500 and 0x1) != 0 && (class254 == null || ((class254.anInt3256) != (class213.method1567((class254.anInt3256), 29, ParticleEmitterFactoryStatics.anInt3176))))) {
                                                 TerrainChunkBuilder.anInt1555++
                                                 MinimapPolygonDrawer.method466(false, (ItemNameResolver.aString5000 + " -> <col=ff9040>" + (class213.aString2795)), i_32_, (-76).toByte(), false, i_33_, -1, true, 49, i_57_.toLong(), ItemNameResolver.aString5001, class348_sub34.anInt6973.toLong(), (FloatBuffer.anInt9747))
                                             }
@@ -320,7 +320,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                 if (strings != null && strings[i_58_] != null) {
                                                     var i_59_ = 0
                                                     if (i_58_ == 0) i_59_ = 21
-                                                    var i_60_ = WidgetTextConfig.anInt506
+                                                    var i_60_ = WidgetTextConfigStatics.anInt506
                                                     if (i_58_ == 1) i_59_ = 10
                                                     if (i_58_ == 2) i_59_ = 47
                                                     if (i_58_ == 3) i_59_ = 22
@@ -346,7 +346,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                 if (npcConfig != null) {
                                     if (RenderNodeStatics.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == (class318_sub4.aClass318_Sub1_6410!!.plane))) {
                                         val class254 = (if (ParticleEmitterFactoryStatics.anInt3176 != -1) (ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactoryStatics.anInt3176, 28364)) else null)
-                                        if (((0x4 and WidgetTextConfig.anInt500) != 0) && (class254 == null || ((class254.anInt3256) != (npcConfig.method487(ParticleEmitterFactoryStatics.anInt3176, (class254.anInt3256), 54))))) {
+                                        if (((0x4 and WidgetTextConfigStatics.anInt500) != 0) && (class254 == null || ((class254.anInt3256) != (npcConfig.method487(ParticleEmitterFactoryStatics.anInt3176, (class254.anInt3256), 54))))) {
                                             TrigLookupInit.anInt2877++
                                             MinimapPolygonDrawer.method466(false, (ItemNameResolver.aString5000 + " -> <col=00ffff>" + (npcConfig.aString884)), i_32_, (-94).toByte(), false, i_33_, -1, true, 2, renderTarget.hashCode().toLong(), ItemNameResolver.aString5001, (WeaveTextureNode.method3107(95.toByte(), renderTarget, i_32_, i_33_)), FloatBuffer.anInt9747)
                                         }
@@ -358,7 +358,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                 if (strings[i_61_] != null) {
                                                     var i_62_ = 0
                                                     if (i_61_ == 0) i_62_ = 3
-                                                    var i_63_ = WidgetTextConfig.anInt506
+                                                    var i_63_ = WidgetTextConfigStatics.anInt506
                                                     if (i_61_ == 1) i_62_ = 4
                                                     if (i_61_ == 2) i_62_ = 9
                                                     if (i_61_ == 3) i_62_ = 59

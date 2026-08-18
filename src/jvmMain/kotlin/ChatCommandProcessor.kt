@@ -245,7 +245,7 @@ object ChatCommandProcessor {
             if (i == 5001) {
                 anInt1173 -= 3
                 ShaderProgramStatics.anInt7276 = anIntArray1149!![anInt1173]
-                MapSceneTileStatics.aBoxedIntHolder_1055 = WidgetTextConfig.method360((-57).toByte(), anIntArray1149!![anInt1173 + 1])
+                MapSceneTileStatics.aBoxedIntHolder_1055 = WidgetTextConfigStatics.method360((-57).toByte(), anIntArray1149!![anInt1173 + 1])
                 if (MapSceneTileStatics.aBoxedIntHolder_1055 == null) MapSceneTileStatics.aBoxedIntHolder_1055 = MinimapRenderer.aBoxedIntHolder_1591
                 BufferToggleState.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
@@ -1146,7 +1146,7 @@ object ChatCommandProcessor {
             if (i == 5426) {
                 anInt1173 -= 2
                 StreamingResourceRequest.anInt10447 = anIntArray1149!![anInt1173]
-                WidgetTextConfig.anInt506 = anIntArray1149!![anInt1173 + 1]
+                WidgetTextConfigStatics.anInt506 = anIntArray1149!![anInt1173 + 1]
                 return
             }
             if (i == 5427) {

@@ -111,7 +111,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
             var i = i
             var i_14_ = i_14_
             if (bool != true) method192(null, -119, 63, 12)
-            if (LocalPlayerState.anInt1910 <= i_15_ && WidgetTextConfig.anInt513 >= i_15_) {
+            if (LocalPlayerState.anInt1910 <= i_15_ && WidgetTextConfigStatics.anInt513 >= i_15_) {
                 i_14_ = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i_14_, WorldMapLabel.anInt4960, 71)
                 i = WhirlpoolHash.method831(CameraNodeListStatics.anInt1745, i, WorldMapLabel.anInt4960, -87)
                 method223(i, i_13_, i_15_, i_14_, 39.toByte())
