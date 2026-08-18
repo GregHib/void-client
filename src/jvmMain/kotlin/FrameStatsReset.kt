@@ -1344,7 +1344,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SolidFillComponent.anInt8355 = 0
             SpriteRenderable.anInt4721 = 0
             GlBufferObject.anInt4735 = 0
-            VoronoiNoiseTextureNode.anInt9128 = 0
+            PackedFlagsAccessor.anInt9128 = 0
             OpenGlRenderer.anInt7602 = 0
             LocTypeDefinition.anInt3995 = 0
             HslAdjustTextureNode.anInt9394 = 0
