@@ -971,7 +971,7 @@ class Client : GameAppletFrame() {
         method2664(i.toInt() xor 0x6f)
         ProceduralTextureGraph.method3187((-52).toByte())
         method1064(-3)
-        MapAreaDefinition.method1421((-85).toByte())
+        MapAreaDefinitionStatics.method1421((-85).toByte())
         method3220(102.toByte())
         if (i.toInt() != 108) anInt5171 = -60
         method2962(-31055)
@@ -2465,7 +2465,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray761
                                     HashTileShapeStatics.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
                                 }
-                                if ((MapAreaDefinition.anInt2523 > class46.anInt726) && (class46.anObjectArray807 != null)) {
+                                if ((MapAreaDefinitionStatics.anInt2523 > class46.anInt726) && (class46.anObjectArray807 != null)) {
                                     val class348_sub36 = WidgetActionEntry()
                                     class348_sub36.aWidgetComponent_6989 = class46
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray807
@@ -3782,7 +3782,7 @@ class Client : GameAppletFrame() {
                     DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i] = FloorOverlayDefinition(CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!)
                 }
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
-                MapAreaDefinition.anInt2523 = ResourceLoaderThread.anInt3918
+                MapAreaDefinitionStatics.anInt2523 = ResourceLoaderThread.anInt3918
                 return true
             }
             if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1702) {

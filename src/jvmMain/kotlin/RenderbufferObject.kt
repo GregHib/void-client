@@ -102,7 +102,7 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             ActorEntity.anInt3465 = 1 shl MapTileShape.anInt4459
             ActorEntity.anInt9037 = ActorEntity.anInt3465 shr 1
             sqrt(((ActorEntity.anInt9037 * ActorEntity.anInt9037) + (ActorEntity.anInt9037 * ActorEntity.anInt9037)).toDouble())
-            MapAreaDefinition.anInt2524 = i_1_
+            MapAreaDefinitionStatics.anInt2524 = i_1_
             ActorEntity.anInt6451 = i_2_
             ActorEntity.anInt7054 = i_3_
             ActorEntity.anInt10084 = i_4_

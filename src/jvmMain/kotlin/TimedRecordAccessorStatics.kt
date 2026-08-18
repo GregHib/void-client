@@ -14,7 +14,7 @@ object TimedRecordAccessorStatics {
 
     @JvmStatic
     fun method3309(i: Int) {
-        ActorEntity.anIntArrayArrayArray4356 = (Array<Array<IntArray?>?>(MapAreaDefinition.anInt2524) { Array<IntArray?>(1 + ActorEntity.anInt6451) { IntArray(1 + ActorEntity.anInt7054) } })
+        ActorEntity.anIntArrayArrayArray4356 = (Array<Array<IntArray?>?>(MapAreaDefinitionStatics.anInt2524) { Array<IntArray?>(1 + ActorEntity.anInt6451) { IntArray(1 + ActorEntity.anInt7054) } })
         anInt7104++
         PackedFlagsAccessor.anInt7101 = 0
         SceneRegionState.anInt194 = ActorEntity.anInt3465

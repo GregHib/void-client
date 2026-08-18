@@ -871,7 +871,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
 
 
         fun method2686() {
-            for (i in DelegatingRenderCanvas.anInt67..<MapAreaDefinition.anInt2524) {
+            for (i in DelegatingRenderCanvas.anInt67..<MapAreaDefinitionStatics.anInt2524) {
                 for (i_8_ in 0..<ActorEntity.anInt6451) {
                     for (i_9_ in 0..<ActorEntity.anInt7054) {
                         val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_8_]!![i_9_]

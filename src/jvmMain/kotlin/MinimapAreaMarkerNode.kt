@@ -32,7 +32,7 @@ class MinimapAreaMarkerNode : HashLinkedListNode() {
                 var i = soundEnvelope.anInt2731
                 if (soundEnvelope.aBoolean2749) i = 0
                 var i_0_ = soundEnvelope.anInt2731
-                if (soundEnvelope.aBoolean2737) i_0_ = MapAreaDefinition.anInt2524 - 1
+                if (soundEnvelope.aBoolean2737) i_0_ = MapAreaDefinitionStatics.anInt2524 - 1
                 for (i_1_ in i..i_0_) {
                     var i_2_ = 0
                     var i_3_ = ((class348_sub1!!.method2717(89.toByte()) - class348_sub1.method2723(-1) + ActorEntity.anInt9037) shr MapTileShape.anInt4459)

@@ -81,7 +81,7 @@ object IdentKitRecolorStatics {
             val i_23_ = 0x3d01 and (4 + CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 3) shl 11)
             val i_24_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
             if (i_24_ == 1) MinimapRectClipper.anIntArray224!![AbstractCameraTransformStatics.anInt1597++] = i_18_
-            npc.method2448((MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 14), -1)), i xor 0x2b297815)
+            npc.method2448((MapAreaDefinitionStatics.aBufferedMessageQueue_2529!!.method2079(CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 14), -1)), i xor 0x2b297815)
             npc.method2434(111.toByte(), npc.aNpcType_10505!!.anInt1399)
             npc.anInt10310 = (npc.aNpcType_10505!!.anInt1329) shl 3
             if (bool) npc.method2435((-108).toByte(), i_23_, true)

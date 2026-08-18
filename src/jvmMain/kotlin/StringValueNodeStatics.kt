@@ -64,7 +64,7 @@ object StringValueNodeStatics {
     fun method3321(i: Int, i_2_: Int, i_3_: Int): SceneCollisionEntry? {
         if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_2_]!![i_3_] == null) {
             val bool = (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i_2_]!![i_3_] != null && HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![0]!![i_2_]!![i_3_]!!.aSceneCollisionEntry_4400 != null)
-            if (bool && i >= MapAreaDefinition.anInt2524 - 1) return null
+            if (bool && i >= MapAreaDefinitionStatics.anInt2524 - 1) return null
             method1394(i, i_2_, i_3_)
         }
         return HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_2_]!![i_3_]

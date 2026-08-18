@@ -4040,7 +4040,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ProjectionCameraTransform.anInt5758 = 0
             MinimapDrawController.anInt1608 = 0
             ByteBuffer.anInt7142 = 0
-            MapAreaDefinition.anInt2521 = 0
+            MapAreaDefinitionStatics.anInt2521 = 0
             GlTexture3D.anInt8526 = 0
             OpenGlRenderer.anInt7532 = 0
             BackgroundWorkerThread.anInt3224 = 0

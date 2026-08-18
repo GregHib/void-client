@@ -1026,7 +1026,7 @@ object ChatCommandProcessor {
                 Client.aShortArray6428!![anIntArray1149!![anInt1173]] = method160(27076, anIntArray1149!![anInt1173 + 1]).toShort()
                 ClientExceptionStatics.aModelHeaderCache_112!!.method1930(-21804)
                 ClientExceptionStatics.aModelHeaderCache_112!!.method1936(-71)
-                MapAreaDefinition.aBufferedMessageQueue_2529!!.method2074(-118)
+                MapAreaDefinitionStatics.aBufferedMessageQueue_2529!!.method2074(-118)
                 TextureCache.method3466(125)
                 return
             }
@@ -5010,9 +5010,9 @@ object ChatCommandProcessor {
                     val i_478_ = anIntArray1149!![anInt1173]
                     val i_479_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(i_479_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(i_478_, -1).method801(17.toByte(), i_479_, class254.aString3258))
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (MapAreaDefinitionStatics.aBufferedMessageQueue_2529!!.method2079(i_478_, -1).method801(17.toByte(), i_479_, class254.aString3258))
                     else {
-                        anIntArray1149!![anInt1173++] = (MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(i_478_, -1).method805(class254.anInt3256, i_479_, 48))
+                        anIntArray1149!![anInt1173++] = (MapAreaDefinitionStatics.aBufferedMessageQueue_2529!!.method2079(i_478_, -1).method805(class254.anInt3256, i_479_, 48))
                         return
                     }
                     return
@@ -5463,7 +5463,7 @@ object ChatCommandProcessor {
         method2420(i_0_, i)
         GradientLookupEffect.aSeqDefinitionCache_9195!!.method2009(i_0_, 109.toByte())
         ClientExceptionStatics.aModelHeaderCache_112!!.method1942(i_0_, (-125).toByte())
-        MapAreaDefinition.aBufferedMessageQueue_2529!!.method2073(-25032, i_0_)
+        MapAreaDefinitionStatics.aBufferedMessageQueue_2529!!.method2073(-25032, i_0_)
         ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2541(119, i_0_)
         method3535(i_0_, i.inv())
         NormalMapGenerator.method2040(i_0_, true)

@@ -872,7 +872,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             }
             if (SceneEntity.aSoundEnvelopeArray5993 != null) {
                 for (i in 0..<CalendarUtil.anInt4135) SceneEntity.aSoundEnvelopeArray5993!![i] = null
-                for (i in 0..<MapAreaDefinition.anInt2524) {
+                for (i in 0..<MapAreaDefinitionStatics.anInt2524) {
                     for (i_84_ in 0..<ActorEntity.anInt6451) {
                         for (i_85_ in 0..<ActorEntity.anInt7054) SceneEntity.aLongArrayArrayArray10431!![i]!![i_84_]!![i_85_] = 0L
                     }

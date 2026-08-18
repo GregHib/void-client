@@ -96,7 +96,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
             }
             if (ProjectedGroundDecor.aBoolean10221) NativeLibraryState.aRenderer171!!.method3642(0, null)
             if ((i_2_ and 0x2) == 0) {
-                for (i_7_ in DelegatingRenderCanvas.anInt67..<MapAreaDefinition.anInt2524) {
+                for (i_7_ in DelegatingRenderCanvas.anInt67..<MapAreaDefinitionStatics.anInt2524) {
                     if (i_7_ >= i && `is` != null) {
                         var i_8_ = ActorEntity.aBooleanArrayArray1572!!.size
                         if ((ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size) > ActorEntity.anInt6451) i_8_ -= (ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size - ActorEntity.anInt6451)

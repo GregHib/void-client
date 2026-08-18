@@ -71,7 +71,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
             Tooltip.aParticleDefLoader_4460!!.method1381(true)
             RadialTextureNode.aModelDefinitionLoader_9342!!.method1206((-37).toByte())
             GradientLookupEffect.aSeqDefinitionCache_9195!!.method2012(-23828)
-            MapAreaDefinition.aBufferedMessageQueue_2529!!.method2078(-6080)
+            MapAreaDefinitionStatics.aBufferedMessageQueue_2529!!.method2078(-6080)
             ClientExceptionStatics.aModelHeaderCache_112!!.method1939(-110)
             ParticleEmitterNode.aWidgetCache_191!!.method834((-116).toByte())
             ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2546(60)

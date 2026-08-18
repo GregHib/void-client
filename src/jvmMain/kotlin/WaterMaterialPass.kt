@@ -297,7 +297,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
             CollisionFlagQuery.anInt1200 = 0
             run {
                 var i = 0
-                while (MapAreaDefinition.anInt2524 > i) {
+                while (MapAreaDefinitionStatics.anInt2524 > i) {
                     for (i_20_ in 0..<ActorEntity.anInt6451) {
                         var i_21_ = 0
                         while ((i_21_ < ActorEntity.anInt7054)) {
@@ -313,7 +313,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                 }
             }
             var i = 0
-            while (MapAreaDefinition.anInt2524 > i) {
+            while (MapAreaDefinitionStatics.anInt2524 > i) {
                 for (i_22_ in 0..<ActorEntity.anInt6451) {
                     var i_23_ = 0
                     while (ActorEntity.anInt7054 > i_23_) {

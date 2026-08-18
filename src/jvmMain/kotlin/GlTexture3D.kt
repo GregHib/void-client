@@ -176,13 +176,13 @@ class GlTexture3D : GlTexture {
             }
             FloatBuffer.method3398(false, `is`, i_20_, i_21_, i_25_, i_26_, bool_27_)
             if (VoronoiNoiseTextureNode.aBoolean9121) {
-                for (i_46_ in 0..<MapAreaDefinition.anInt2524) SolidFillComponent.aBooleanArrayArrayArray8361!![i_46_] = OverlayColorTable.aBooleanArrayArrayArray1751!![i_46_]
+                for (i_46_ in 0..<MapAreaDefinitionStatics.anInt2524) SolidFillComponent.aBooleanArrayArrayArray8361!![i_46_] = OverlayColorTable.aBooleanArrayArrayArray1751!![i_46_]
                 method2131(0)
                 for (i_47_ in NormalMapTextureNode.aSceneLoaderThreadArray9432!!.indices) NormalMapTextureNode.aSceneLoaderThreadArray9432!![i_47_]!!.method2209()
             }
             if (VoronoiNoiseTextureNode.aBoolean9121) {
                 method2290()
-                for (i_48_ in 0..<MapAreaDefinition.anInt2524) OverlayColorTable.aBooleanArrayArrayArray1751!![i_48_] = SolidFillComponent.aBooleanArrayArrayArray8361!![i_48_]!!
+                for (i_48_ in 0..<MapAreaDefinitionStatics.anInt2524) OverlayColorTable.aBooleanArrayArrayArray1751!![i_48_] = SolidFillComponent.aBooleanArrayArrayArray8361!![i_48_]!!
                 if (Npc.anInt10503 == 2) {
                     if (HitsplatDefinitionStatics.aLongArray2013!![0] < HitsplatDefinitionStatics.aLongArray2013!![1]) {
                         if (WidgetDefinition.anIntArray256!![0] + ParticleProcessor.anIntArray4271!![0] > BrightnessContrastEffect.anIntArray9183!![0]) ParticleProcessor.anIntArray4271!![0]++
