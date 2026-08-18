@@ -260,8 +260,8 @@ import VideoStreamDecoder.Companion.method2631
 import CalendarUtil.method2637
 import SoundCacheState.method2640
 import MapElementLookupStatics.method2645
-import CameraOrModelTransform.Companion.method2653
-import CameraOrModelTransform.Companion.method2654
+import CameraOrModelTransformStatics.method2653
+import CameraOrModelTransformStatics.method2654
 import HslPaletteState.method2657
 import GlShaderProgramHandle.Companion.method2658
 import MapTileShapeStatics.method2662

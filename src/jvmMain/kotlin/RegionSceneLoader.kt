@@ -47,7 +47,7 @@ object RegionSceneLoader {
     fun method2193(bool: Boolean, i: Byte) {
         anInt3698++
         method3570(false)
-        if (CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) {
+        if (CameraOrModelTransformStatics.method2653(true, WorldMapRenderer.anInt4674)) {
             SceneRegionState.anInt193++
             if (i < -118 && (SceneRegionState.anInt193 >= 50 || bool)) {
                 SceneRegionState.anInt193 = 0

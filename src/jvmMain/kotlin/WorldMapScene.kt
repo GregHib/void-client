@@ -419,7 +419,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                 i_98_ = (if (class22 != null) DataHolderStatics.anIntArray3659!![i_76_.toInt()] else 0)
                             } else {
                                 i_98_ = (if (class22 == null) 0 else ParticleEmitterFactoryStatics.anIntArray3173!![i_76_.toInt()])
-                                i_100_ = (if (class277 == null) 0 else CameraOrModelTransform.anIntArray4152!![i_76_.toInt()])
+                                i_100_ = (if (class277 == null) 0 else CameraOrModelTransformStatics.anIntArray4152!![i_76_.toInt()])
                                 is_97_ = ViewportTransformStatics.anIntArrayArray3677!![i_76_.toInt()]!!
                                 is_99_ = (FogOptionState.anIntArrayArray6054!![i_76_.toInt()]!!)
                                 is_96_ = (ClientExceptionStatics.anIntArrayArray111!![i_76_.toInt()]!!)
@@ -558,7 +558,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     if (!this.aBoolean3109 && i_66_ == 0) MapElementLookupStatics.method2643(i_71_, i_73_, class277.anInt3559, 8 * (class277.anInt3558), class277.anInt3574)
                                     if (i_76_.toInt() != 12 && (class277.anInt3563 != -1) && class277.aBoolean3566) bool = true
                                 } else if (bool_94_) i_102_ += (ConstantColourTextureNode.anIntArray9249!![i_76_.toInt()])
-                                else if (!bool_75_) i_102_ += CameraOrModelTransform.anIntArray4152!![i_76_.toInt()]
+                                else if (!bool_75_) i_102_ += CameraOrModelTransformStatics.anIntArray4152!![i_76_.toInt()]
                                 else i_102_ += ColourAdjustment.anIntArray860!![i_76_.toInt()]
                                 if (class22 != null) {
                                     if (i_82_ == 0) i_82_ = i_79_
@@ -688,9 +688,9 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                                                 is_109_[i_103_] = (class22_134_!!.anInt331)
                                                                 is_110_[i_103_] = (class22_134_.anInt336)
                                                             }
-                                                            val i_153_ = (CameraOrModelTransform.method2652((`is`!![i_71_]!![i_73_]), (`is`[i_72_]!![i_73_]), 1, (i_146_ shl 7 shr 9)))
-                                                            val i_154_ = (CameraOrModelTransform.method2652((`is`[i_71_]!![i_74_]), (`is`[i_72_]!![i_74_]), 1, (i_146_ shl 7 shr 9)))
-                                                            is_108_[i_103_] = (CameraOrModelTransform.method2652(i_153_, i_154_, i + 26834, (i_145_ shl 7 shr 9)))
+                                                            val i_153_ = (CameraOrModelTransformStatics.method2652((`is`!![i_71_]!![i_73_]), (`is`[i_72_]!![i_73_]), 1, (i_146_ shl 7 shr 9)))
+                                                            val i_154_ = (CameraOrModelTransformStatics.method2652((`is`[i_71_]!![i_74_]), (`is`[i_72_]!![i_74_]), 1, (i_146_ shl 7 shr 9)))
+                                                            is_108_[i_103_] = (CameraOrModelTransformStatics.method2652(i_153_, i_154_, i + 26834, (i_145_ shl 7 shr 9)))
                                                         } else {
                                                             is_108_[i_103_] = (`is`!![i_72_]!![i_73_])
                                                             is_109_[i_103_] = (class22_136_!!.anInt331)

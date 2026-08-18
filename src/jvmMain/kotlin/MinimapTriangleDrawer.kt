@@ -50,7 +50,7 @@ class MinimapTriangleDrawer internal constructor(private var anInt5231: Int, pri
         @JvmStatic
         fun method464(i: Int) {
             anInt5229++
-            CameraOrModelTransform.anInt4155 = i
+            CameraOrModelTransformStatics.anInt4155 = i
             GroundItemRenderState.aAbstractModelRenderer_1664 = null
         }
     }

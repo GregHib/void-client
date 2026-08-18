@@ -662,7 +662,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                             class143 = WorldMapLabel.aFontDefinition_4962
                             class324 = NodeDequeStatics.aRSFont_3326
                         }
-                        CameraOrModelTransform.method2650(class143, class42.anInt580, var_sprite, i_8_, i_6_, class42.aString597, i, class324, i_29_, widgetComponent, i_5_, 100)
+                        CameraOrModelTransformStatics.method2650(class143, class42.anInt580, var_sprite, i_8_, i_6_, class42.aString597, i, class324, i_29_, widgetComponent, i_5_, 100)
                     }
                 } catch (runtimeexception: RuntimeException) {
                     throw TextureLoadException.method2929(runtimeexception, ("ga.KA(" + (if (widgetComponent != null) "{...}" else "null") + ',' + i + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')'))
@@ -725,7 +725,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                         var class348_sub37 = ModelBatchBaseStatics.aHashtable_1895!!.method3484(i_2_ xor 0x59b0) as? HashTableContainer
                         while (class348_sub37 != null) {
                             val i_17_ = (0x3L and ((class348_sub37.aLong4291) shr 28)).toInt()
-                            if (CameraOrModelTransform.anInt4155 == i_17_) {
+                            if (CameraOrModelTransformStatics.anInt4155 == i_17_) {
                                 val i_18_ = (-ArbVertexProgram.regionTileX + ((class348_sub37.aLong4291) and 0x3fffL).toInt())
                                 val i_19_ = (-RegionMapDecoder.regionTileY + ((class348_sub37.aLong4291) shr 14 and 0x3fffL).toInt())
                                 val i_20_ = -(i_4_ / 128) + (2 + i_18_ * 4)

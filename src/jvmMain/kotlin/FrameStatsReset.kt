@@ -462,7 +462,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlTerrainTile.anInt8238 = 0
             CacheIndexManager.anInt3951 = 0
             FloatCameraTransform.anInt5738 = 0
-            CameraOrModelTransform.anInt4157 = 0
+            CameraOrModelTransformStatics.anInt4157 = 0
             GraphicsOptionState.anInt3137 = 0
             HslAdjustTextureNode.anInt9395 = 0
             NoiseTextureGenerator.anInt1080 = 0
@@ -1487,7 +1487,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             AnimatedModelRenderer.anInt8402 = 0
             CubemapTextureImplSource.anInt8720 = 0
             MinimapFlagRenderer.anInt1467 = 0
-            CameraOrModelTransform.anInt4153 = 0
+            CameraOrModelTransformStatics.anInt4153 = 0
             TerrainShadowBuilderGl3.anInt7012 = 0
             DelegatingRenderCanvas.anInt63 = 0
             Crc64Hashable.anInt4988 = 0
@@ -2669,7 +2669,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             MatrixCameraTransform.anInt5674 = 0
             GradientLookupEffect.anInt9193 = 0
             NativeRenderer.anInt7890 = 0
-            CameraOrModelTransform.anInt4164 = 0
+            CameraOrModelTransformStatics.anInt4164 = 0
             ProjectileSpawner.anInt2675 = 0
             OpenGlRenderer.anInt7631 = 0
             NpcActorEntity.anInt10086 = 0
@@ -4090,7 +4090,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             BrightnessContrastEffect.anInt9174 = 0
             OpenGlRenderer.anInt7687 = 0
             AwtKeyboardListener.anInt6537 = 0
-            CameraOrModelTransform.anInt4160 = 0
+            CameraOrModelTransformStatics.anInt4160 = 0
             NativeRenderer.anInt7894 = 0
             TextureQualityOptionState.anInt5999 = 0
             GlRenderDevice.anInt9895 = 0

@@ -1576,7 +1576,7 @@ object ChatCommandProcessor {
                 val i_149_ = anIntArray1149!![--anInt1173]
                 val i_150_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!!!.method1838(-32350)
                 if (i_149_ != i_150_) {
-                    if (CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) {
+                    if (CameraOrModelTransformStatics.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_150_ == 0 && SlotBindingStatics.anInt3428 != -1) {
                             method2732(0, SlotBindingStatics.anInt3428, false, 94, (CachedRgbNoiseTexture.aJs5Archive_8667), i_149_)
                             method3093(87)
@@ -1695,7 +1695,7 @@ object ChatCommandProcessor {
                 val i_158_ = anIntArray1149!![--anInt1173]
                 val i_159_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350)
                 if (i_158_ != i_159_ && SlotBindingStatics.anInt3428 == ParticleProcessor.anInt4270) {
-                    if (!CameraOrModelTransform.method2653(true, WorldMapRenderer.anInt4674)) {
+                    if (!CameraOrModelTransformStatics.method2653(true, WorldMapRenderer.anInt4674)) {
                         if (i_159_ == 0) {
                             method2732(0, SlotBindingStatics.anInt3428, false, 127, (CachedRgbNoiseTexture.aJs5Archive_8667), i_158_)
                             method3093(118)

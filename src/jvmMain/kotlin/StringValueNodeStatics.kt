@@ -33,8 +33,8 @@ object StringValueNodeStatics {
     fun method3319(var_renderer: Renderer?, i: Byte) {
         if (i > -108) method3321(19, 60, 108)
         anInt7114++
-        if (((LocalPlayerState.aPlayer_1907!!.plane).toInt() != CameraOrModelTransform.anInt4155) && HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null) {
-            if (method2808((LocalPlayerState.aPlayer_1907!!.plane).toInt(), var_renderer, true)) CameraOrModelTransform.anInt4155 = LocalPlayerState.aPlayer_1907!!.plane.toInt()
+        if (((LocalPlayerState.aPlayer_1907!!.plane).toInt() != CameraOrModelTransformStatics.anInt4155) && HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 != null) {
+            if (method2808((LocalPlayerState.aPlayer_1907!!.plane).toInt(), var_renderer, true)) CameraOrModelTransformStatics.anInt4155 = LocalPlayerState.aPlayer_1907!!.plane.toInt()
         }
     }
 
