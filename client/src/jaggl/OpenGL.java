@@ -569,6 +569,7 @@ public class OpenGL {
     private static long mappedArrayAddr;
     private static long mappedElementAddr;
     private static final java.util.HashMap vboSize = new java.util.HashMap(); // buffer id -> data store size
+    private static final java.util.HashMap vboUsage = new java.util.HashMap(); // buffer id -> usage hint
 
     /** Called by jaclib.memory.heap.NativeHeap to register its arena. */
     public static synchronized void registerRange(long base, long size) {
@@ -924,9 +925,31 @@ public class OpenGL {
         trace("bind target=" + target + " buf=" + buffer);
         org.lwjgl.opengl.ARBVertexBufferObject.glBindBufferARB(target, buffer);
     }
-    private static void trackVboSize(int target, int size) {
+    private static void trackVboSize(int target, int size, int usage) {
         int bound = target == 34963 ? boundElementBuffer : target == 34962 ? boundArrayBuffer : 0;
-        if (bound != 0) vboSize.put(Integer.valueOf(bound), Integer.valueOf(size));
+        if (bound != 0) {
+            vboSize.put(Integer.valueOf(bound), Integer.valueOf(size));
+            vboUsage.put(Integer.valueOf(bound), Integer.valueOf(usage));
+        }
+    }
+
+    /**
+     * The engine rewrites dynamic buffers wholesale (always offset 0) with
+     * glBufferSubData while the GPU may still read last frame's data - an
+     * implicit-sync stall on modern drivers (2011 drivers tolerated it).
+     * Orphan the store first (BufferData NULL, same size = recycled from the
+     * driver's pool) so the write never blocks. Tail bytes beyond the write
+     * were already stale garbage by the engine's own convention.
+     */
+    private static void orphanForRewrite(int target, int offset) {
+        if (offset != 0) return;
+        int bound = target == 34963 ? boundElementBuffer : target == 34962 ? boundArrayBuffer : 0;
+        if (bound == 0) return;
+        Integer store = (Integer) vboSize.get(Integer.valueOf(bound));
+        Integer usage = (Integer) vboUsage.get(Integer.valueOf(bound));
+        if (store != null && usage != null) {
+            org.lwjgl.opengl.ARBVertexBufferObject.nglBufferDataARB(target, store.intValue(), 0L, usage.intValue());
+        }
     }
     // Every VBO data store is over-allocated by VBO_PAD bytes: the engine
     // sometimes issues draws whose indices span slightly more vertex data than
@@ -939,13 +962,13 @@ public class OpenGL {
     private static final int VBO_PAD = 512;
 
     public static final void glBufferDataARBa(int target, int size, long data, int usage) {
-        trackVboSize(target, size + VBO_PAD);
+        trackVboSize(target, size + VBO_PAD, usage);
         trace("bufferDataA target=" + target + " size=" + size + " src=0x" + Long.toHexString(data));
         org.lwjgl.opengl.ARBVertexBufferObject.nglBufferDataARB(target, (long) size + VBO_PAD, 0L, usage);
         if (data != 0L && size > 0) org.lwjgl.opengl.ARBVertexBufferObject.nglBufferSubDataARB(target, 0L, size, data);
     }
     public static final void glBufferDataARBub(int target, int size, byte[] data, int off, int usage) {
-        trackVboSize(target, size + VBO_PAD);
+        trackVboSize(target, size + VBO_PAD, usage);
         if (data == null) { // null = allocate/orphan storage without uploading
             org.lwjgl.opengl.ARBVertexBufferObject.nglBufferDataARB(target, (long) size + VBO_PAD, 0L, usage);
             return;
@@ -955,9 +978,14 @@ public class OpenGL {
         buf.clear(); // position 0, limit = size + VBO_PAD: upload the pad too
         try { org.lwjgl.opengl.ARBVertexBufferObject.glBufferDataARB(target, buf, usage); } finally { MemoryUtil.memFree(buf); }
     }
-    public static final void glBufferSubDataARBa(int target, int offset, int size, long data) { trace("bufferSubDataA target=" + target + " off=" + offset + " size=" + size + " src=0x" + Long.toHexString(data)); org.lwjgl.opengl.ARBVertexBufferObject.nglBufferSubDataARB(target, offset, size, data); }
+    public static final void glBufferSubDataARBa(int target, int offset, int size, long data) {
+        orphanForRewrite(target, offset);
+        trace("bufferSubDataA target=" + target + " off=" + offset + " size=" + size + " src=0x" + Long.toHexString(data));
+        org.lwjgl.opengl.ARBVertexBufferObject.nglBufferSubDataARB(target, offset, size, data);
+    }
     public static final void glBufferSubDataARBub(int target, int offset, int size, byte[] data, int off) {
         if (data == null) return;
+        orphanForRewrite(target, offset);
         ByteBuffer buf = wrap(data, off, size);
         try { org.lwjgl.opengl.ARBVertexBufferObject.glBufferSubDataARB(target, offset, buf); } finally { MemoryUtil.memFree(buf); }
     }
