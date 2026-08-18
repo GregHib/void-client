@@ -14,7 +14,7 @@ object RequestGate {
     @Synchronized
     fun method1946(i: Int) {
         anInt3298--
-        if (anInt3298 == 0) RequestGate.method1948((-109).toByte())
+        if (anInt3298 == 0) method1948((-109).toByte())
     }
 
     @Synchronized
