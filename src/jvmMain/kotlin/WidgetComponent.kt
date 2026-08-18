@@ -1,4 +1,3 @@
-import VoronoiNoiseTextureNode.Companion.method3060
 import kotlin.math.sqrt
 
 /* Class46 - Decompiled by JODE
@@ -625,7 +624,7 @@ class WidgetComponent {
         this.anInt797 = class348_sub49.readUnsignedByte(255)
         this.aString780 = class348_sub49.readString((-87).toByte())
         var i_52_ = -1
-        if (method3060(i_40_, bool) != 0) {
+        if (PackedFlagsAccessor.method3060(i_40_, bool) != 0) {
             i_52_ = class348_sub49.readUnsignedShort(842397944)
             this.anInt824 = class348_sub49.readUnsignedShort(842397944)
             if (i_52_ == 65535) i_52_ = -1

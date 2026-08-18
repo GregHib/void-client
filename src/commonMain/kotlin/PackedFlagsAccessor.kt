@@ -1,5 +1,3 @@
-import VoronoiNoiseTextureNode.Companion.method3060
-
 /* Class348_Sub44 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -56,6 +54,13 @@ class PackedFlagsAccessor internal constructor(@JvmField var anInt7098: Int, @Jv
             anInt7097++
             if (WhirlpoolHash.anInt7207 == 1) return WhirlpoolHash.anInt6008
             return WhirlpoolHash.anInt1651
+        }
+
+        var anInt9128: Int = 0
+        @JvmStatic
+        fun method3060(i: Int, bool: Boolean): Int {
+            anInt9128++
+            return 0x7f and (i shr 11)
         }
     }
 }
