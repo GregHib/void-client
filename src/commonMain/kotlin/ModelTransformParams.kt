@@ -47,6 +47,5 @@ class ModelTransformParams {
     companion object {
         var anInt4318: Int = 0
         var anInt4321: Int = 0
-
     }
 }
