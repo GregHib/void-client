@@ -1086,7 +1086,7 @@ final class ha_Sub2 extends ha {
         aBoolean7859 = false;
         aFloatArray7850 = new float[4];
         aFloat7851 = 1.0F;
-        this.anInt7826 = 50;
+        this.anInt7826 = Math.max(50, (int) (50 * Loader.RENDER_DISTANCE_MULTIPLIER));
         anInt7861 = 8448;
         this.anInt7813 = 0;
         this.anInt7856 = -1;
@@ -3501,6 +3501,10 @@ final class ha_Sub2 extends ha {
 
     final void f(int i, int i_458_) {
         anInt7606++;
+        // Depth precision is proportional to the near plane. The render
+        // distance mod stretches the far plane; scale the near plane with it
+        // so distant geometry keeps stock depth resolution (no z-fighting).
+        i = Math.max(i, (int) (i * Loader.RENDER_DISTANCE_MULTIPLIER));
         if (i != this.anInt7826 || anInt7814 != i_458_) {
             this.anInt7826 = i;
             anInt7814 = i_458_;
