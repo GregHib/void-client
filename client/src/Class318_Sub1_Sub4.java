@@ -57,7 +57,12 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
         if (!bool && !bool_5_ && !bool_6_) return Class314_Sub1.method2348(-8454);
         // A forced renderer (--gl/--software) makes the login-time renderer
         // auto-detect pointless - and its winner would override the force.
-        if (Loader.forcedGraphicsMode >= 0) return Class314_Sub1.method2348(-8454);
+        // The first call (login) consumes the force, so a later Auto-setup
+        // from the in-game display settings (same entry point) runs normally.
+        if (Loader.forcedGraphicsMode >= 0) {
+            Loader.consumeForcedGraphicsMode();
+            return Class314_Sub1.method2348(-8454);
+        }
         int i_7_ = -1;
         int i_8_ = -1;
         int i_9_ = -1;

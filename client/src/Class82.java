@@ -213,6 +213,7 @@ final class Class82 {
                             return;
                         }
                         if (string.equalsIgnoreCase("tk0")) {
+                            Loader.consumeForcedGraphicsMode(); // explicit choice overrides --gl/--software
                             Class367_Sub10.method3553(false, (byte) 104, 0);
                             if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 0) {
                                 Applet_Sub1.method94("Entered tk0", 101);
@@ -224,6 +225,7 @@ final class Class82 {
                             return;
                         }
                         if (string.equalsIgnoreCase("tk1")) {
+                            Loader.consumeForcedGraphicsMode(); // explicit choice overrides --gl/--software
                             Class367_Sub10.method3553(false, (byte) 109, 1);
                             if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 1) {
                                 Applet_Sub1.method94("Entered tk1", -65);
@@ -235,6 +237,7 @@ final class Class82 {
                             return;
                         }
                         if (string.equalsIgnoreCase("tk2")) {
+                            Loader.consumeForcedGraphicsMode(); // explicit choice overrides --gl/--software
                             Class367_Sub10.method3553(false, (byte) 115, 2);
                             if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 2) {
                                 Applet_Sub1.method94("Entered tk2", i + 151);
@@ -248,6 +251,7 @@ final class Class82 {
                             return;
                         }
                         if (string.equalsIgnoreCase("tk3")) {
+                            Loader.consumeForcedGraphicsMode(); // explicit choice overrides --gl/--software
                             Class367_Sub10.method3553(false, (byte) 107, 3);
                             if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 3) {
                                 Applet_Sub1.method94("Entered tk3", 78);
@@ -259,6 +263,7 @@ final class Class82 {
                             return;
                         }
                         if (string.equalsIgnoreCase("tk5")) {
+                            Loader.consumeForcedGraphicsMode(); // explicit choice overrides --gl/--software
                             Class367_Sub10.method3553(false, (byte) 113, 5);
                             if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(i ^ 0x7e13) == 5) {
                                 Applet_Sub1.method94("Entered tk5", -108);

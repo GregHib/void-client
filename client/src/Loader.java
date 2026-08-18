@@ -86,6 +86,24 @@ public class Loader extends Applet {
         l.doFrame();
     }
 
+    /**
+     * A --gl/--software force means "start with this renderer": it holds
+     * through boot and the login-time auto-detect benchmark, then the first
+     * explicit renderer event afterwards consumes it. While it is active,
+     * every graphics-mode preference read reports the forced mode
+     * (Class239_Sub25.method1829), which keeps the in-game display settings
+     * from ever seeing - or applying - a different choice; consuming syncs
+     * both stored preferences to the forced value first so reads stay
+     * consistent with the renderer that is actually running.
+     */
+    public static void consumeForcedGraphicsMode() {
+        int mode = forcedGraphicsMode;
+        if (mode < 0 || Class316.aClass348_Sub51_3959 == null) return;
+        forcedGraphicsMode = -1;
+        Class316.aClass348_Sub51_3959.method3429((byte) 74, Class316.aClass348_Sub51_3959.aClass239_Sub25_7251, mode);
+        Class316.aClass348_Sub51_3959.method3429((byte) 74, Class316.aClass348_Sub51_3959.aClass239_Sub25_7271, mode);
+    }
+
     @Override
     public void init() {
         doApplet();
